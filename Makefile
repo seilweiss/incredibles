@@ -19,7 +19,8 @@ OBJ_DIR := obj
 
 SRC_DIRS :=
 
-ASM_DIRS := asm
+ASM_DIRS := asm             \
+            asm/Core/x
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
