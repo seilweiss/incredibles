@@ -1,0 +1,28 @@
+# Ignore
+__pycache__
+*.pyc
+tools/mwcc_compiler/*.*
+tools/elf2dol
+obj/*
+obj-expected/*
+*.asm
+*.exe
+*.dol
+*.dump
+*.elf
+*.map
+*.ld
+*.i64
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+*.o
+*.cp
+.vscode
+.pragma
+inspect.s
+
+# Allow
+!tools/mwcc_compiler/README.md
