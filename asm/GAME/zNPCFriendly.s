@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global fire_config__4zNPC
+fire_config__4zNPC:
+	.skip 0x50
+
 .section .text
 
 .global __ct__Q24zNPC8npc_moveFv

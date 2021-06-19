@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global active_emitters__20$$2unnamed$$2xDecal_cpp$$2
+active_emitters__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x80
+
 .section .text
 
 .global __as__11RwMatrixTagFRC11RwMatrixTag

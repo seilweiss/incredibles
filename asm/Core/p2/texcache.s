@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global StandardRegions
+StandardRegions:
+	.skip 0x80
+.global TlutRegions
+TlutRegions:
+	.skip 0x80
+
 .section .text
 
 .global TexRegionCallback__FPC9_GXTexObj11_GXTexMapID

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global default_config__12zIncrediSlam
+default_config__12zIncrediSlam:
+	.skip 0xC8
+
 .section .text
 
 .global __nw__12zIncrediSlamFUl

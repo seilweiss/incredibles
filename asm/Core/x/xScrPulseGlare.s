@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global glare_mgr__28$$2unnamed$$2xScrPulseGlare_cpp$$2
+glare_mgr__28$$2unnamed$$2xScrPulseGlare_cpp$$2:
+	.skip 0x3600
+.global sStripVert$715
+sStripVert$715:
+	.skip 0x90
+
 .section .text
 
 .global init_pulse__28$$2unnamed$$2xScrPulseGlare_cpp$$2FRQ228$$2unnamed$$2xScrPulseGlare_cpp$$26xPulse

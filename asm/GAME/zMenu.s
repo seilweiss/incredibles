@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global corruptFiles
+corruptFiles:
+	.skip 0xC0
+
 .section .text
 
 .global zMenuDecrementIdleTimer__Fv

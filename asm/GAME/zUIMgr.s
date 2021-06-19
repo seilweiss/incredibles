@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global uiElements__20$$2unnamed$$2zUIMgr_cpp$$2
+uiElements__20$$2unnamed$$2zUIMgr_cpp$$2:
+	.skip 0x1000
+
 .section .text
 
 .global zUIMgrInit__FP6zScene

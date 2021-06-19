@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global globals
+globals:
+	.skip 0x630
+
 .section .text
 
 .global zMainSetPAL__Fv

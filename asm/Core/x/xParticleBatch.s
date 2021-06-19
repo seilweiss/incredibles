@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .bss
+
+.global systems__28$$2unnamed$$2xParticleBatch_cpp$$2
+systems__28$$2unnamed$$2xParticleBatch_cpp$$2:
+	.skip 0x2000
+.global buckets__28$$2unnamed$$2xParticleBatch_cpp$$2
+buckets__28$$2unnamed$$2xParticleBatch_cpp$$2:
+	.skip 0x3C00
+.global block_info_buffer__28$$2unnamed$$2xParticleBatch_cpp$$2
+block_info_buffer__28$$2unnamed$$2xParticleBatch_cpp$$2:
+	.skip 0x180
+
 .section .text
 
 .global add_tweaks__Q228$$2unnamed$$2xParticleBatch_cpp$$25tweakFv

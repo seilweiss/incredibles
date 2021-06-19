@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global grab_dust_config
+grab_dust_config:
+	.skip 0x4C
+.global ledge_dirt_config
+ledge_dirt_config:
+	.skip 0x4C
+
 .section .text
 
 .global StillCarried__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2FP4xEnt

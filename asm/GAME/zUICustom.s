@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global line_size__16zUICustomStatBox
+line_size__16zUICustomStatBox:
+	.skip 0x190
+
 .section .text
 
 .global Init__9zUICustomFv

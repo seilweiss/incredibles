@@ -1,5 +1,26 @@
 .include "macros.inc"
 
+.section .bss
+
+.global __atexit_funcs
+__atexit_funcs:
+	.skip 0x100
+.global protopool$192
+protopool$192:
+	.skip 0x38
+.global stderr_buff
+stderr_buff:
+	.skip 0x100
+.global stdout_buff
+stdout_buff:
+	.skip 0x100
+.global stdin_buff
+stdin_buff:
+	.skip 0x100
+.global signal_funcs
+signal_funcs:
+	.skip 0x18
+
 .section .text
 
 .global exit

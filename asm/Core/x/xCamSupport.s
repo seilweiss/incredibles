@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global prev_path$917
+prev_path$917:
+	.skip 0x18C
+.global ent_cache__25$$2unnamed$$2xCamSupport_cpp$$2
+ent_cache__25$$2unnamed$$2xCamSupport_cpp$$2:
+	.skip 0x204
+
 .section .text
 
 .global create__15xCamSupportPathFii

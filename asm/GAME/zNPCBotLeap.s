@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global default_config__Q24zNPC10light_dust
+default_config__Q24zNPC10light_dust:
+	.skip 0x50
+
 .section .text
 
 .global setup__Q24zNPC10light_dustFv

@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global warp_buffer__25$$2unnamed$$2xScreenWarp_cpp$$2
+warp_buffer__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x1800
+.global warp_lists__25$$2unnamed$$2xScreenWarp_cpp$$2
+warp_lists__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x120
+
 .section .text
 
 .global alloc_warp__25$$2unnamed$$2xScreenWarp_cpp$$2FQ211xScreenWarp9type_enum

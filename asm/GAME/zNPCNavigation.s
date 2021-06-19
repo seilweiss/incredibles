@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global record$1148
+record$1148:
+	.skip 0x50
+
 .section .text
 
 .global __ct__Q24zNPC4jumpFv

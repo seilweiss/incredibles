@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global record$1093
+record$1093:
+	.skip 0x78
+
 .section .text
 
 .global setup__Q25zDash12track_systemFv

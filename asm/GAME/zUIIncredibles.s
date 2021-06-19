@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sceneBaseDescription
+sceneBaseDescription:
+	.skip 0x100
+.global entries__5stats
+entries__5stats:
+	.skip 0xA50
+.global scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2
+scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x380
+.global unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2
+unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x48
+.global allsoaklevels
+allsoaklevels:
+	.skip 0x80
+
 .section .text
 
 .global reset__5statsFv

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global bulletmark_mgr
+bulletmark_mgr:
+	.skip 0x388
+
 .section .text
 
 .global zBulletMarkAsset_Init__FR5xBaseR9xDynAssetUl

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global cardwork
+cardwork:
+	.skip 0x14000
+
 .section .text
 
 .global iSGStartup__Fv

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global fragmentinfo
+fragmentinfo:
+	.skip 0xC
+
 .section .text
 
 .global __va_arg

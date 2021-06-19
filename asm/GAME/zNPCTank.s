@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .bss
+
+.global tread_emitter__22$$2unnamed$$2zNPCTank_cpp$$2
+tread_emitter__22$$2unnamed$$2zNPCTank_cpp$$2:
+	.skip 0x68
+.global dust_config__Q24zNPC10wheel_bone
+dust_config__Q24zNPC10wheel_bone:
+	.skip 0x4C
+.global cfg__Q24zNPC16shockwave_attack
+cfg__Q24zNPC16shockwave_attack:
+	.skip 0xC4
+
 .section .text
 
 .global add_wheel_bones__Q24zNPC10wheel_boneFPQ24zNPC6common

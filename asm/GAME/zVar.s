@@ -1,5 +1,32 @@
 .include "macros.inc"
 
+.section .bss
+
+.global buffer$1034
+buffer$1034:
+	.skip 0x80
+.global buffer$1039
+buffer$1039:
+	.skip 0x80
+.global buffer$1044
+buffer$1044:
+	.skip 0x80
+.global buffer$1049
+buffer$1049:
+	.skip 0x80
+.global buffer$1054
+buffer$1054:
+	.skip 0x80
+.global buffer$1059
+buffer$1059:
+	.skip 0x80
+.global buffer$1064
+buffer$1064:
+	.skip 0x80
+.global buffer$1069
+buffer$1069:
+	.skip 0x80
+
 .section .text
 
 .global zVarEntryCB_IsSignedIn__FPv

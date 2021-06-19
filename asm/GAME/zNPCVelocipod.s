@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global dust_config__Q24zNPC12hover_effect
+dust_config__Q24zNPC12hover_effect:
+	.skip 0x50
+
 .section .text
 
 .global setup__Q24zNPC9hover_bobFv

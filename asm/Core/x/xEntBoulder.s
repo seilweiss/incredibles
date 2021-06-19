@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sBoulderCollis
+sBoulderCollis:
+	.skip 0x600
+
 .section .text
 
 .global xEntBoulder_FitToModel__FP11xEntBoulder

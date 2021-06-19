@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global zSaveLoadGameTable
+zSaveLoadGameTable:
+	.skip 0x148
+
 .section .text
 
 .global WaitForPreviousPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fb

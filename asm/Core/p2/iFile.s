@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .bss
+
+.global tbuffer
+tbuffer:
+	.skip 0x1020
+.global file_queue
+file_queue:
+	.skip 0x70
+.global gHostPath
+gHostPath:
+	.skip 0x100
+
 .section .text
 
 .global iFileInit__Fv

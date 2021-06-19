@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global mPad
+mPad:
+	.skip 0x4E0
+
 .section .text
 
 .global xPadInit__Fv

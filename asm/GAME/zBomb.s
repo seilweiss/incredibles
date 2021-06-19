@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global dust_config__Q21z4bomb
+dust_config__Q21z4bomb:
+	.skip 0x4C
+.global ent_asset__Q21z4bomb
+ent_asset__Q21z4bomb:
+	.skip 0x54
+
 .section .text
 
 .global get_model__19$$2unnamed$$2zBomb_cpp$$2FPCc

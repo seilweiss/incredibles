@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .bss
+
+.global _rpMatFXMaterialDataFreeList
+_rpMatFXMaterialDataFreeList:
+	.skip 0x28
+.global FXStateCache
+FXStateCache:
+	.skip 0x10
+.global RegEntries
+RegEntries:
+	.skip 0xA0
+.global EffectRegEntries
+EffectRegEntries:
+	.skip 0xD0
+
 .section .text
 
 .global MatFXClose

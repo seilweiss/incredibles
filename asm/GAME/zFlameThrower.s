@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global flamethrower_config
+flamethrower_config:
+	.skip 0x48
+
 .section .text
 
 .global Init__19zFlameThrowerWidgetFR5xBaseR9xDynAssetUl

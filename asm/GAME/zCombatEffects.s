@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sparkSystem$1657
+sparkSystem$1657:
+	.skip 0x88
+.global rockSystem$1660
+rockSystem$1660:
+	.skip 0x5C
+.global bitsSystem$1663
+bitsSystem$1663:
+	.skip 0x5C
+
 .section .text
 
 .global setup__Q214zCombatEffects19SparkParticleSystemFv

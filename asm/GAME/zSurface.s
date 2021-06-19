@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sDefaultSurfaceProps
+sDefaultSurfaceProps:
+	.skip 0x118
+.global sDefaultSurfaceAsset
+sDefaultSurfaceAsset:
+	.skip 0x1B8
+
 .section .text
 
 .global zSurfaceInit__Fv

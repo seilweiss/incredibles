@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global camtex__24$$2unnamed$$2xModelWarp_cpp$$2
+camtex__24$$2unnamed$$2xModelWarp_cpp$$2:
+	.skip 0x50
+.global render_contexts__24$$2unnamed$$2xModelWarp_cpp$$2
+render_contexts__24$$2unnamed$$2xModelWarp_cpp$$2:
+	.skip 0x400
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2xModelWarp_cpp$$25tweakFv

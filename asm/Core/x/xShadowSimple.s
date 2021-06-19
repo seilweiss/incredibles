@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sShadVert
+sShadVert:
+	.skip 0x3600
+.global sShadRasters
+sShadRasters:
+	.skip 0x100
+
 .section .text
 
 .global shadowRayCB__FP14RpIntersectionP13RpWorldSectorP19RpCollisionTrianglefPv

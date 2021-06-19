@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global AramMgr
+AramMgr:
+	.skip 0x180
+
 .section .text
 
 .global iRwResourcesEmptyArena__Fv

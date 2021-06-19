@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global context__Q21z5laser
+context__Q21z5laser:
+	.skip 0x58
+
 .section .text
 
 .global zLaserLavaEmit__1zFfP18zTimeHandlerStruct

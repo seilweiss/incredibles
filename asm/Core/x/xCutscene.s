@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sActiveCutscene
+sActiveCutscene:
+	.skip 0x1A8
+.global sCutsceneFakeModel
+sCutsceneFakeModel:
+	.skip 0x500
+
 .section .text
 
 .global xCutscene_InitBegin__Fv

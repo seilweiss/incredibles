@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global default_config__12EnergyStream
+default_config__12EnergyStream:
+	.skip 0x50
+
 .section .text
 
 .global initRibbon__27$$2unnamed$$2zEnergyStream_cpp$$2FP9xFXRibbon

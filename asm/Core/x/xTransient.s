@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global space_tree__10xTransient
+space_tree__10xTransient:
+	.skip 0xD0
+
 .section .text
 
 .global scene_enter__10xTransientFRC4xBox

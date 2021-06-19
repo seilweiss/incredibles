@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global gSnd
+gSnd:
+	.skip 0x3390
+
 .section .text
 
 .global setup_faders__21$$2unnamed$$2xSndMgr_cpp$$2Fv

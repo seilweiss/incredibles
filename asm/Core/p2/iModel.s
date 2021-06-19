@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .bss
+
+.global gLastAtomicList
+gLastAtomicList:
+	.skip 0x400
+.global sMaterialColor
+sMaterialColor:
+	.skip 0x80
+.global sMaterialTexture
+sMaterialTexture:
+	.skip 0x80
+
 .section .text
 
 .global GetChildFrameHierarchy__FP7RwFramePv

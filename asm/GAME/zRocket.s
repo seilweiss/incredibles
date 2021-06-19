@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global rocket_jet_config__21$$2unnamed$$2zRocket_cpp$$2
+rocket_jet_config__21$$2unnamed$$2zRocket_cpp$$2:
+	.skip 0x4C
+.global default_config__Q21z17JetParticleSystem
+default_config__Q21z17JetParticleSystem:
+	.skip 0x4C
+
 .section .text
 
 .global setup__Q21z6rocketFv

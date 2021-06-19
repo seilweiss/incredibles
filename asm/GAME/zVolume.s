@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global gOccludeCalc
+gOccludeCalc:
+	.skip 0x320
+
 .section .text
 
 .global zVolumeInit__FP7zVolumeP12xVolumeAsset

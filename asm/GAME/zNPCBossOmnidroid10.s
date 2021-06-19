@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global claw_pound_config__Q24zNPC7Om10Arm
+claw_pound_config__Q24zNPC7Om10Arm:
+	.skip 0xC4
+.global body_pound_config__Q24zNPC4Om10
+body_pound_config__Q24zNPC4Om10:
+	.skip 0xC4
+
 .section .text
 
 .global SetupCollision__Q24zNPC10CollidableFRC4xBoxb

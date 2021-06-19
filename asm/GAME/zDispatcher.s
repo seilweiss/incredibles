@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global worlds__25$$2unnamed$$2zDispatcher_cpp$$2
+worlds__25$$2unnamed$$2zDispatcher_cpp$$2:
+	.skip 0x4D8
+
 .section .text
 
 .global zDispatcherParseINI__FP8xIniFile

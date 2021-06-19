@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global timehandler_mgr
+timehandler_mgr:
+	.skip 0xA08
+
 .section .text
 
 .global update__15zTimeHandlerMgrFf

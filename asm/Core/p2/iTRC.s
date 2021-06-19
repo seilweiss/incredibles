@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global textureBuffer
+textureBuffer:
+	.skip 0x120
+.global mMessage__8iTRCDisk
+mMessage__8iTRCDisk:
+	.skip 0x100
+
 .section .text
 
 .global GetRegion__Fv

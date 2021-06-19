@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global vertex$1100
+vertex$1100:
+	.skip 0x60
+
 .section .text
 
 .global DoInit__6zUIBoxFv

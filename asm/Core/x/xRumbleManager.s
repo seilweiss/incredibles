@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global rumbleManager$1174
+rumbleManager$1174:
+	.skip 0x148
+
 .section .text
 
 .global store__Q27xRumble7ManagerFPQ27xRumble7padInfoPCQ27xRumble11emitterBasePQ27xRumble14effectInternalfb

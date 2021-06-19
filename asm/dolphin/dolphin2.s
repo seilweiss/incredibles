@@ -1,5 +1,47 @@
 .include "macros.inc"
 
+.section .bss
+
+.global CommandList
+CommandList:
+	.skip 0x40
+.global AlarmForWA
+AlarmForWA:
+	.skip 0x28
+.global AlarmForTimeout
+AlarmForTimeout:
+	.skip 0x28
+.global AlarmForBreak
+AlarmForBreak:
+	.skip 0x28
+.global Prev
+Prev:
+	.skip 0xC
+.global Curr
+Curr:
+	.skip 0x24
+.global BB2
+BB2:
+	.skip 0x20
+.global CurrDiskID
+CurrDiskID:
+	.skip 0x20
+.global DummyCommandBlock
+DummyCommandBlock:
+	.skip 0x30
+.global ResetAlarm
+ResetAlarm:
+	.skip 0x28
+.global WaitingQueue
+WaitingQueue:
+	.skip 0x20
+.global bb2Buf
+bb2Buf:
+	.skip 0x40
+.global block$18
+block$18:
+	.skip 0x30
+
 .section .text
 
 .global __DVDInitWA

@@ -1,5 +1,149 @@
 .include "macros.inc"
 
+.section .bss
+
+.global __AXStackHead
+__AXStackHead:
+	.skip 0x80
+.global __AXStackTail
+__AXStackTail:
+	.skip 0x88
+.global __AXBufferAuxA
+__AXBufferAuxA:
+	.skip 0x1680
+.global __AXBufferAuxB
+__AXBufferAuxB:
+	.skip 0x1680
+.global __AXCommandList
+__AXCommandList:
+	.skip 0x600
+.global __AXOutBuffer
+__AXOutBuffer:
+	.skip 0x780
+.global __AXOutSBuffer
+__AXOutSBuffer:
+	.skip 0x280
+.global __AXDramImage
+__AXDramImage:
+	.skip 0x4000
+.global __AXDSPTask
+__AXDSPTask:
+	.skip 0x50
+.global __AXLocalProfile
+__AXLocalProfile:
+	.skip 0x50
+.global __AXStudio
+__AXStudio:
+	.skip 0x40
+.global __AXPB
+__AXPB:
+	.skip 0x3D00
+.global __AXITD
+__AXITD:
+	.skip 0x1000
+.global __AXUpdates
+__AXUpdates:
+	.skip 0x4000
+.global __AXVPB
+__AXVPB:
+	.skip 0x8B00
+.global __CARDBlock
+__CARDBlock:
+	.skip 0x220
+.global __CARDDiskNone
+__CARDDiskNone:
+	.skip 0x20
+.global Ecb
+Ecb:
+	.skip 0xC0
+.global FifoObj
+FifoObj:
+	.skip 0x80
+.global gxData
+gxData:
+	.skip 0x5B0
+.global __MIXChannel
+__MIXChannel:
+	.skip 0x278
+.global lbl_803C0008
+lbl_803C0008:
+	.skip 0x1598
+.global DriveInfo
+DriveInfo:
+	.skip 0x20
+.global DriveBlock
+DriveBlock:
+	.skip 0x30
+.global __OSErrorTable
+__OSErrorTable:
+	.skip 0x50
+.global Header
+Header:
+	.skip 0x20
+.global Scb
+Scb:
+	.skip 0x58
+.global RunQueue
+RunQueue:
+	.skip 0x100
+.global IdleThread
+IdleThread:
+	.skip 0x318
+.global DefaultThread
+DefaultThread:
+	.skip 0x318
+.global IdleContext
+IdleContext:
+	.skip 0x2C8
+.global Type_0
+Type_0:
+	.skip 0x10
+.global Origin
+Origin:
+	.skip 0x30
+.global CmdProbeDevice
+CmdProbeDevice:
+	.skip 0x10
+.global Packet
+Packet:
+	.skip 0x80
+.global Alarm
+Alarm:
+	.skip 0xA0
+.global TypeTime
+TypeTime:
+	.skip 0x20
+.global XferTime
+XferTime:
+	.skip 0x20
+.global TypeCallback
+TypeCallback:
+	.skip 0x40
+.global RDSTHandler
+RDSTHandler:
+	.skip 0x10
+.global InputBufferValid
+InputBufferValid:
+	.skip 0x10
+.global InputBuffer
+InputBuffer:
+	.skip 0x20
+.global InputBufferVcount
+InputBufferVcount:
+	.skip 0x10
+.global cmdFixDevice$327
+cmdFixDevice$327:
+	.skip 0x10
+.global regs
+regs:
+	.skip 0x78
+.global shdwRegs
+shdwRegs:
+	.skip 0x78
+.global HorVer
+HorVer:
+	.skip 0x58
+
 .section .text
 
 .global PPCMfmsr

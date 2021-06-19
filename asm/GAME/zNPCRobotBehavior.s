@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global context__Q24zNPC13physics_death
+context__Q24zNPC13physics_death:
+	.skip 0x54
+.global npc_robot_dust_config__4zNPC
+npc_robot_dust_config__4zNPC:
+	.skip 0x4C
+
 .section .text
 
 .global RobotDestroyCB__4zNPCFP4xEntPvb

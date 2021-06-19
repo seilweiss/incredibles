@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global electricity_config__4zNPC
+electricity_config__4zNPC:
+	.skip 0x48
+
 .section .text
 
 .global shield_event_wrapper__31$$2unnamed$$2zNPCMeleeShielded_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

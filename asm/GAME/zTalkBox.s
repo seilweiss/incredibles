@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global shared__22$$2unnamed$$2zTalkBox_cpp$$2
+shared__22$$2unnamed$$2zTalkBox_cpp$$2:
+	.skip 0x8698
+.global v$1236
+v$1236:
+	.skip 0x88
+
 .section .text
 
 .global speak_stop__22$$2unnamed$$2zTalkBox_cpp$$2Fv

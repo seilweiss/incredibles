@@ -1,5 +1,26 @@
 .include "macros.inc"
 
+.section .bss
+
+.global active_fonts__19$$2unnamed$$2xFont_cpp$$2
+active_fonts__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x6870
+.global vert_buffer__19$$2unnamed$$2xFont_cpp$$2
+vert_buffer__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x1680
+.global model_cache__19$$2unnamed$$2xFont_cpp$$2
+model_cache__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x60
+.global tl_cache__19$$2unnamed$$2xFont_cpp$$2
+tl_cache__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x8518
+.global arg_buffer$2010
+arg_buffer$2010:
+	.skip 0x100
+.global entry_buffer$2011
+entry_buffer$2011:
+	.skip 0x140
+
 .section .text
 
 .global find_bounds__19$$2unnamed$$2xFont_cpp$$2FPC10xColor_tagRC13basic_rect$$0i$$1i

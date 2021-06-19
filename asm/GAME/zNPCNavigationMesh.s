@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global visited$997
+visited$997:
+	.skip 0x3F8
+.global visited$1177
+visited$1177:
+	.skip 0x3F8
+
 .section .text
 
 .global initialize__Q24zNPC6circleFPQ24zNPC6common

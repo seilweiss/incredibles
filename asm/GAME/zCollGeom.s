@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sCollisionGeomTable
+sCollisionGeomTable:
+	.skip 0xA0
+
 .section .text
 
 .global zCollGeom_EntSetup__FP4xEnt

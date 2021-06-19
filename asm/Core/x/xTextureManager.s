@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global mgr$886
+mgr$886:
+	.skip 0x2030
+
 .section .text
 
 .global FreeMemory__20xInternalTextureNodeFv

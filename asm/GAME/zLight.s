@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sLight
+sLight:
+	.skip 0x80
+.global gTemporaryLights
+gTemporaryLights:
+	.skip 0x88
+
 .section .text
 
 .global zLightResetAll__FP4xEnv

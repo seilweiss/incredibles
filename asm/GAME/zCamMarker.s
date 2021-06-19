@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global static_cam_asset__24$$2unnamed$$2zCamMarker_cpp$$2
+static_cam_asset__24$$2unnamed$$2zCamMarker_cpp$$2:
+	.skip 0x88
+
 .section .text
 
 .global activate_camera__24$$2unnamed$$2zCamMarker_cpp$$2FRC9xCamAssetP4xEnt

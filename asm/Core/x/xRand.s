@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global state
+state:
+	.skip 0x9C0
+
 .section .text
 
 .global init_genrand__FUi

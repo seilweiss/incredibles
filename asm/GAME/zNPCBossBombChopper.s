@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global flash_config__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2
+flash_config__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2:
+	.skip 0x48
+
 .section .text
 
 .global get_default_light_kit__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2Fv

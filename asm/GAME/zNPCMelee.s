@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global dust_config__4zNPC
+dust_config__4zNPC:
+	.skip 0x50
+
 .section .text
 
 .global zNPC_ForceEffect__23$$2unnamed$$2zNPCMelee_cpp$$2FP9xAnimPlayPCc

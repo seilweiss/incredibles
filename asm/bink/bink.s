@@ -1,5 +1,44 @@
 .include "macros.inc"
 
+.section .bss
+
+.global lbl_803A5B4C
+lbl_803A5B4C:
+	.skip 0x100
+.global lbl_803A5C4C
+lbl_803A5C4C:
+	.skip 0x4
+.global lbl_803A5C50
+lbl_803A5C50:
+	.skip 0x4
+.global lbl_803A5C54
+lbl_803A5C54:
+	.skip 0x4
+.global lbl_803A5C58
+lbl_803A5C58:
+	.skip 0x4
+.global lbl_803A5C5C
+lbl_803A5C5C:
+	.skip 0x4
+.global lbl_803A5C60
+lbl_803A5C60:
+	.skip 0x4
+.global lbl_803A5C64
+lbl_803A5C64:
+	.skip 0x4
+.global lbl_803A5C68
+lbl_803A5C68:
+	.skip 0x4
+.global lbl_803A5C6C
+lbl_803A5C6C:
+	.skip 0x4
+.global lbl_803A5C70
+lbl_803A5C70:
+	.skip 0x4
+.global lbl_803A5C74
+lbl_803A5C74:
+	.skip 0x104
+
 .section .text
 
 .global mult64anddiv

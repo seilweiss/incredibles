@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global energy_config__Q24zNPC11energy_bone
+energy_config__Q24zNPC11energy_bone:
+	.skip 0x4C
+.global context__Q24zNPC11energy_bone
+context__Q24zNPC11energy_bone:
+	.skip 0x54
+
 .section .text
 
 .global setup__Q24zNPC14shrapnel_deathFv

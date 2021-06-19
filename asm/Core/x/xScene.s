@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sNearestBound
+sNearestBound:
+	.skip 0x50
+
 .section .text
 
 .global xSceneInit__FP6xSceneUsUsUsUs

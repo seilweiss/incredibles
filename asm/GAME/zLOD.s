@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sManagerList
+sManagerList:
+	.skip 0xB540
+
 .section .text
 
 .global AddToLODList__FP4xEnt

@@ -1,5 +1,29 @@
 .include "macros.inc"
 
+.section .bss
+
+.global FSOUND_Async_Stack
+FSOUND_Async_Stack:
+	.skip 0x4000
+.global chan$821
+chan$821:
+	.skip 0x80
+.global taskR$504
+taskR$504:
+	.skip 0x20
+.global taskL$503
+taskL$503:
+	.skip 0x20
+.global FSOUND_Output_GC_ArqRequestBuffer
+FSOUND_Output_GC_ArqRequestBuffer:
+	.skip 0x20
+.global FSOUND_Output_GC_AramPool
+FSOUND_Output_GC_AramPool:
+	.skip 0x40
+.global FSOUND_File_Queue
+FSOUND_File_Queue:
+	.skip 0x700
+
 .section .text
 
 .global FMUSIC_GetOpenState

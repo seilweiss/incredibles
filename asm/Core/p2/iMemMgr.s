@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global tempStack__21$$2unnamed$$2iMemMgr_cpp$$2
+tempStack__21$$2unnamed$$2iMemMgr_cpp$$2:
+	.skip 0x100
+.global memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2
+memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2:
+	.skip 0x128
+
 .section .text
 
 .global iMemClearStack__21$$2unnamed$$2iMemMgr_cpp$$2Fv

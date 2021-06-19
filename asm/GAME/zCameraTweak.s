@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sCamTweakList
+sCamTweakList:
+	.skip 0xA0
+
 .section .text
 
 .global zCameraTweak_LookPreCalc__FP13zCamTweakLookfff

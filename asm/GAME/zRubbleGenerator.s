@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global landDustConfig__30$$2unnamed$$2zRubbleGenerator_cpp$$2
+landDustConfig__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
+	.skip 0x4C
+.global fakeAsset$1311
+fakeAsset$1311:
+	.skip 0x5C
+
 .section .text
 
 .global RubbleEventWrapper__30$$2unnamed$$2zRubbleGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

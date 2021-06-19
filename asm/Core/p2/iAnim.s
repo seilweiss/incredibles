@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global g_iAnim_workBufferData
+g_iAnim_workBufferData:
+	.skip 0x4000
+
 .section .text
 
 .global iAnimInit__Fv

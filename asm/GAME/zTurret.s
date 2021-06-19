@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global turretCamera
+turretCamera:
+	.skip 0xC0
+
 .section .text
 
 .global Set2DVertex__21$$2unnamed$$2zTurret_cpp$$2FP18rwGameCube2DVertexffffff

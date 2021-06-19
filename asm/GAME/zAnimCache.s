@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global cachedEntry__24$$2unnamed$$2zAnimCache_cpp$$2
+cachedEntry__24$$2unnamed$$2zAnimCache_cpp$$2:
+	.skip 0x180
+.global cache__24$$2unnamed$$2zAnimCache_cpp$$2
+cache__24$$2unnamed$$2zAnimCache_cpp$$2:
+	.skip 0x7800
+
 .section .text
 
 .global fillInCache__24$$2unnamed$$2zAnimCache_cpp$$2FP15zAnimCacheEntryP8RpAtomicff

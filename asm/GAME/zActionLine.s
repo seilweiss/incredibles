@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sStripVert$1003
+sStripVert$1003:
+	.skip 0x90
+
 .section .text
 
 .global zActionLineInit__Fv

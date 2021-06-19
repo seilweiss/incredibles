@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .bss
+
+.global gxHeap
+gxHeap:
+	.skip 0x324
+.global scratch_stack__21$$2unnamed$$2xMemMgr_cpp$$2
+scratch_stack__21$$2unnamed$$2xMemMgr_cpp$$2:
+	.skip 0x10C
+.global scratch_buffer__21$$2unnamed$$2xMemMgr_cpp$$2
+scratch_buffer__21$$2unnamed$$2xMemMgr_cpp$$2:
+	.skip 0x4000
+
 .section .text
 
 .global xMemDebug_SoakLog__FPCc

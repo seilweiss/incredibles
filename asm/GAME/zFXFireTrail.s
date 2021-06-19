@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global default_config__10fire_trail
+default_config__10fire_trail:
+	.skip 0x48
+
 .section .text
 
 .global setup__10fire_trailFv

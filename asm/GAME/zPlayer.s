@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global chronos_effect_config
+chronos_effect_config:
+	.skip 0x48
+
 .section .text
 
 .global bound_update_wrapper__21$$2unnamed$$2zPlayer_cpp$$2FP4xEntP5xVec3

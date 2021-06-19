@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sinfoArray
+sinfoArray:
+	.skip 0x180
+
 .section .text
 
 .global iSndInit__Fv

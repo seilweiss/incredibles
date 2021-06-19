@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sMusicTrack
+sMusicTrack:
+	.skip 0x48
+
 .section .text
 
 .global _zMusicStart__FUiUi

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global global_cam__18$$2unnamed$$2zCam_cpp$$2
+global_cam__18$$2unnamed$$2zCam_cpp$$2:
+	.skip 0x120
+
 .section .text
 
 .global zCamSceneEnter__FR6zSceneRC7xMat4x3

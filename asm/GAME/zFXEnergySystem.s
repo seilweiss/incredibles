@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global default_config$936
+default_config$936:
+	.skip 0x78
+
 .section .text
 
 .global scene_setup__13energy_systemFv

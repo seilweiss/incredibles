@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global snapshotObj
+snapshotObj:
+	.skip 0x100
+
 .section .text
 
 .global zFilterAnglesSet__25$$2unnamed$$2zBulletTime_cpp$$2Ff

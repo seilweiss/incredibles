@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global ring_chain__19$$2unnamed$$2zDust_cpp$$2
+ring_chain__19$$2unnamed$$2zDust_cpp$$2:
+	.skip 0x80
+
 .section .text
 
 .global add_tweaks__Q219$$2unnamed$$2zDust_cpp$$25tweakFv

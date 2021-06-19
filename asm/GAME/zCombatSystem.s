@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global combatList__27$$2unnamed$$2zCombatSystem_cpp$$2
+combatList__27$$2unnamed$$2zCombatSystem_cpp$$2:
+	.skip 0x180
+
 .section .text
 
 .global zCombatSystemInit__Fv

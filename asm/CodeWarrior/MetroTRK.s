@@ -1,5 +1,65 @@
 .include "macros.inc"
 
+.section .bss
+
+.global gTRKEventQueue
+gTRKEventQueue:
+	.skip 0x28
+.global gTRKBigEndian
+gTRKBigEndian:
+	.skip 0x8
+.global gTRKMsgBufs
+gTRKMsgBufs:
+	.skip 0x19B0
+.global gTRKFramingState
+gTRKFramingState:
+	.skip 0x18
+.global IsTRKConnected
+IsTRKConnected:
+	.skip 0x8
+.global TRK_saved_exceptionID
+TRK_saved_exceptionID:
+	.skip 0x4
+.global gTRKState
+gTRKState:
+	.skip 0xA4
+.global gTRKCPUState
+gTRKCPUState:
+	.skip 0x430
+.global gTRKSaveState
+gTRKSaveState:
+	.skip 0x94
+.global TRKvalue128_temp
+TRKvalue128_temp:
+	.skip 0x14
+.global lc_base
+lc_base:
+	.skip 0x8
+.global TRK_mainError
+TRK_mainError:
+	.skip 0x8
+.global TRK_Use_BBA
+TRK_Use_BBA:
+	.skip 0x4
+.global _MetroTRK_Has_Framing
+_MetroTRK_Has_Framing:
+	.skip 0x4
+.global bUseSerialIO
+bUseSerialIO:
+	.skip 0x8
+.global gRecvBuf
+gRecvBuf:
+	.skip 0x800
+.global gRecvCB
+gRecvCB:
+	.skip 0x20
+.global gRecvBuf_0
+gRecvBuf_0:
+	.skip 0x500
+.global gRecvCB_0
+gRecvCB_0:
+	.skip 0x20
+
 .section .text
 
 .global TRKNubMainLoop

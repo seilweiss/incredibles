@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global presi__24$$2unnamed$$2zExplosion_cpp$$2
+presi__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x780
+
 .section .text
 
 .global find_decal_type__24$$2unnamed$$2zExplosion_cpp$$2FUi

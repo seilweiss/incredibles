@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global im_flames__19$$2unnamed$$2zFire_cpp$$2
+im_flames__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x100
+
 .section .text
 
 .global add_tweaks__Q219$$2unnamed$$2zFire_cpp$$25tweakFPCc

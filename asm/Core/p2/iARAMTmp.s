@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global activeTransfers
+activeTransfers:
+	.skip 0xC10
+
 .section .text
 
 .global transferDoneCB__FUl

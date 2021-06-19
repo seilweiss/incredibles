@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global camtex__24$$2unnamed$$2xModelBlur_cpp$$2
+camtex__24$$2unnamed$$2xModelBlur_cpp$$2:
+	.skip 0x48
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2xModelBlur_cpp$$25tweakFv

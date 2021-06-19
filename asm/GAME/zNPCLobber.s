@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global flash_config__4zNPC
+flash_config__4zNPC:
+	.skip 0x48
+
 .section .text
 
 .global get_lob_velocity__4zNPCFRC5xVec3RC5xVec3RC5xVec3ff

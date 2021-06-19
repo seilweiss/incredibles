@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global reticle
+reticle:
+	.skip 0x90
+
 .section .text
 
 .global zReticle_Init__Fv

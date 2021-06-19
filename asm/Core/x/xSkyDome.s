@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sSkyList
+sSkyList:
+	.skip 0x88
+
 .section .text
 
 .global xSkyDome_EmptyRender__FP4xEnt

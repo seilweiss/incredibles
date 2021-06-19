@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global dust_config
+dust_config:
+	.skip 0x50
+
 .section .text
 
 .global SetupRumbleEffects__27$$2unnamed$$2zCommonPlayer_cpp$$2FPCQ227$$2unnamed$$2zCommonPlayer_cpp$$212RumbleParamsi

@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .bss
+
+.global ringlist
+ringlist:
+	.skip 0x200
+.global gFXUVs
+gFXUVs:
+	.skip 0x80
+.global activities__9xFXRibbon
+activities__9xFXRibbon:
+	.skip 0x80
+.global binom_triangle
+binom_triangle:
+	.skip 0x840
+
 .section .text
 
 .global xFXInit__Fv

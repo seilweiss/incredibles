@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sGlare
+sGlare:
+	.skip 0x208
+.global sStripVert$1404
+sStripVert$1404:
+	.skip 0x90
+.global v$1567
+v$1567:
+	.skip 0x60
+.global sCameraFX
+sCameraFX:
+	.skip 0x2F8
+.global sFlare
+sFlare:
+	.skip 0x1800
+
 .section .text
 
 .global xScrFxInit__Fv

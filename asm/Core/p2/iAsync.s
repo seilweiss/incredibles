@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global asyncThread
+asyncThread:
+	.skip 0x318
+.global ThreadStack
+ThreadStack:
+	.skip 0x2000
+
 .section .text
 
 .global iAsyncStart__FPFPv_Pv

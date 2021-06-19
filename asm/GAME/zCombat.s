@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global zccombo
+zccombo:
+	.skip 0x218
+
 .section .text
 
 .global zCombatInit__Fv

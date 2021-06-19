@@ -1,5 +1,29 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sLFuncX
+sLFuncX:
+	.skip 0x140
+.global sLFuncY
+sLFuncY:
+	.skip 0x140
+.global sLFuncZ
+sLFuncZ:
+	.skip 0x140
+.global sLFuncVal
+sLFuncVal:
+	.skip 0x78
+.global sLFuncSlope
+sLFuncSlope:
+	.skip 0xF8
+.global sLFuncNew
+sLFuncNew:
+	.skip 0x160
+.global gLightningTweakAddInfo
+gLightningTweakAddInfo:
+	.skip 0x68
+
 .section .text
 
 .global Init__16zLightningWidgetFR5xBaseR9xDynAssetUl

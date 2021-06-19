@@ -1,5 +1,44 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sFragPool
+sFragPool:
+	.skip 0x5208
+.global sFirstFreeFrag
+sFirstFreeFrag:
+	.skip 0x8C
+.global sFirstActiveFrag
+sFirstActiveFrag:
+	.skip 0x8C
+.global sProjectileList
+sProjectileList:
+	.skip 0x8C
+.global sLightningList
+sLightningList:
+	.skip 0x8C
+.global sParticleList
+sParticleList:
+	.skip 0x8C
+.global sSoundList
+sSoundList:
+	.skip 0x8C
+.global sExplosionList
+sExplosionList:
+	.skip 0x8C
+.global sDistortionList
+sDistortionList:
+	.skip 0x8C
+.global sFireList
+sFireList:
+	.skip 0x8C
+.global sLightningAddInfo
+sLightningAddInfo:
+	.skip 0x68
+.global sCinProj
+sCinProj:
+	.skip 0x114
+
 .section .text
 
 .global zFrag_Alloc__F9zFragType

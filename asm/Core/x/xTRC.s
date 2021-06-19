@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global composed_message_text
+composed_message_text:
+	.skip 0x100
+
 .section .text
 
 .global xTRCInit__Fv

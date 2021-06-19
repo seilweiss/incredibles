@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .bss
+
+.global sJspGroupPairs__13zJSPExtraData
+sJspGroupPairs__13zJSPExtraData:
+	.skip 0xA0
+
 .section .text
 
 .global ShowAssociatedGroup__13zJSPExtraDataFUib

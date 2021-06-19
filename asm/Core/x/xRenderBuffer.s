@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .bss
+
+.global gRenderArr
+gRenderArr:
+	.skip 0x5280
+.global gRenderBuffer
+gRenderBuffer:
+	.skip 0x80
+
 .section .text
 
 .global xRenderBufferInit__Fv

@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .bss
+
+.global default_config__Q25zDash11water_spray
+default_config__Q25zDash11water_spray:
+	.skip 0x44
+.global dust_config__5zDash
+dust_config__5zDash:
+	.skip 0x4C
+.global fire_emit_config__5zDash
+fire_emit_config__5zDash:
+	.skip 0x48
+
 .section .text
 
 .global Init__12zTimedSplashFR5xBaseR9xDynAssetUl
