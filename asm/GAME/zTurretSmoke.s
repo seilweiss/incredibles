@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_136
+$$2stringBase0_136:
+	.incbin "baserom.dol", 0x2E6520, 0x20
+
 .section .text
 
 .global setup__18zTurretSmokeSystemFv

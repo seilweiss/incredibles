@@ -9,6 +9,12 @@ assetTypeHandlers:
 g_brainTable:
 	.incbin "baserom.dol", 0x301B08, 0x228
 
+.section .rodata
+
+.global $$2stringBase0_35
+$$2stringBase0_35:
+	.incbin "baserom.dol", 0x2D6E30, 0x4B8
+
 .section .text
 
 .global GetBrainID__FUiUi

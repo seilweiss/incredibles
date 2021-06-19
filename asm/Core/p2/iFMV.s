@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_27
+$$2stringBase0_27:
+	.incbin "baserom.dol", 0x2CF898, 0x18
+
 .section .text
 
 .global BigMovieAlloc__FUi

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_30
+$$2stringBase0_30:
+	.incbin "baserom.dol", 0x2CF950, 0x10
+
 .section .text
 
 .global MorphCommon__FP8RpAtomicP11RwMatrixTagPPsPsUifi

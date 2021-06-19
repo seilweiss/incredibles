@@ -9,6 +9,12 @@ $$21230:
 $$21912:
 	.incbin "baserom.dol", 0x30C2E8, 0x38
 
+.section .rodata
+
+.global $$2stringBase0_90
+$$2stringBase0_90:
+	.incbin "baserom.dol", 0x2E1428, 0x58
+
 .section .text
 
 .global genericPlatRender__FP4xEnt

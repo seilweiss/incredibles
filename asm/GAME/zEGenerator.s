@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_49
+$$2stringBase0_49:
+	.incbin "baserom.dol", 0x2D8B88, 0x10
+
 .section .text
 
 .global zEGenerator_Init__FPvPv

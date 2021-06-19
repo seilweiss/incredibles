@@ -12,6 +12,12 @@ __vt__Q24zNPC5Armor:
 __vt__39behavior_implementation$$0Q24zNPC6common$$1:
 	.incbin "baserom.dol", 0x307B00, 0x80
 
+.section .rodata
+
+.global $$2stringBase0_70
+$$2stringBase0_70:
+	.incbin "baserom.dol", 0x2DCCB0, 0xA0
+
 .section .text
 
 .global AddArmor__Q24zNPC5ArmorFPQ24zNPC6common

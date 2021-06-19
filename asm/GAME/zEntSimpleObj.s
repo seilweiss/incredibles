@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global hs01_hidden_entities__27$$2unnamed$$2zEntSimpleObj_cpp$$2
+hs01_hidden_entities__27$$2unnamed$$2zEntSimpleObj_cpp$$2:
+	.incbin "baserom.dol", 0x2D99A0, 0x3D8
+.global $$2stringBase0_53
+$$2stringBase0_53:
+	.incbin "baserom.dol", 0x2D9D78, 0x20
+
 .section .text
 
 .global CmpSimpleMgr__FPCvPCv

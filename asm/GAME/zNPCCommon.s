@@ -9,6 +9,15 @@ $$21645:
 __vt__Q24zNPC6common:
 	.incbin "baserom.dol", 0x30E818, 0xB8
 
+.section .rodata
+
+.global $$21625
+$$21625:
+	.incbin "baserom.dol", 0x2E3EB8, 0x80
+.global $$2stringBase0_110
+$$2stringBase0_110:
+	.incbin "baserom.dol", 0x2E3F38, 0xF8
+
 .section .text
 
 .global scale_model__24$$2unnamed$$2zNPCCommon_cpp$$2FP14xModelInstancef

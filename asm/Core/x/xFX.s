@@ -15,6 +15,12 @@ activities__9xFXRibbon:
 binom_triangle:
 	.skip 0x840
 
+.section .rodata
+
+.global $$2stringBase0_7
+$$2stringBase0_7:
+	.incbin "baserom.dol", 0x2CEC80, 0x20
+
 .section .text
 
 .global xFXInit__Fv

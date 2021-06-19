@@ -6,6 +6,12 @@
 cutsceneHackTable:
 	.incbin "baserom.dol", 0x304828, 0x1260
 
+.section .rodata
+
+.global $$2stringBase0_44
+$$2stringBase0_44:
+	.incbin "baserom.dol", 0x2D7C88, 0x2C8
+
 .section .text
 
 .global zCutsceneMgrGetHackTableSize__Fv

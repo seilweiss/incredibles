@@ -6,6 +6,12 @@
 AramMgr:
 	.skip 0x180
 
+.section .rodata
+
+.global $$2stringBase0_32
+$$2stringBase0_32:
+	.incbin "baserom.dol", 0x2D5D28, 0x418
+
 .section .text
 
 .global iRwResourcesEmptyArena__Fv

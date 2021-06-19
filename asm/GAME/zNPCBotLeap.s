@@ -30,6 +30,12 @@ __vt__Q24zNPC10door_close:
 __vt__Q24zNPC14movepoint_jump:
 	.incbin "baserom.dol", 0x3108CC, 0x9C
 
+.section .rodata
+
+.global $$2stringBase0_131
+$$2stringBase0_131:
+	.incbin "baserom.dol", 0x2E59B8, 0x360
+
 .section .text
 
 .global setup__Q24zNPC10light_dustFv

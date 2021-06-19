@@ -15,6 +15,12 @@ gTemporaryLights:
 sEffectFuncs:
 	.incbin "baserom.dol", 0x3075F0, 0x48
 
+.section .rodata
+
+.global $$2stringBase0_63
+$$2stringBase0_63:
+	.incbin "baserom.dol", 0x2DADE0, 0x10
+
 .section .text
 
 .global zLightResetAll__FP4xEnv

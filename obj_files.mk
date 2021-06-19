@@ -374,8 +374,7 @@ CTORS_O_FILES :=\
 DTORS_O_FILES :=\
 	$(OBJ_DIR)/asm/dtors.o
 
-RODATA_O_FILES :=\
-	$(OBJ_DIR)/asm/rodata.o
+RODATA_O_FILES :=
 
 DATA_O_FILES :=
 

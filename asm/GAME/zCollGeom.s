@@ -6,6 +6,12 @@
 sCollisionGeomTable:
 	.skip 0xA0
 
+.section .rodata
+
+.global $$2stringBase0_38
+$$2stringBase0_38:
+	.incbin "baserom.dol", 0x2D7440, 0x8
+
 .section .text
 
 .global zCollGeom_EntSetup__FP4xEnt

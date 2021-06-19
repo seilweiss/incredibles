@@ -741,6 +741,12 @@ $$2535_0:
 $$2736:
 	.incbin "baserom.dol", 0x328054, 0x1C
 
+.section .rodata
+
+.global ClampRegion
+ClampRegion:
+	.incbin "baserom.dol", 0x2ECA00, 0x10
+
 .section .text
 
 .global PPCMfmsr

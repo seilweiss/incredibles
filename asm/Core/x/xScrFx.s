@@ -18,6 +18,12 @@ sCameraFX:
 sFlare:
 	.skip 0x1800
 
+.section .rodata
+
+.global $$2stringBase0_22
+$$2stringBase0_22:
+	.incbin "baserom.dol", 0x2CF728, 0x30
+
 .section .text
 
 .global xScrFxInit__Fv

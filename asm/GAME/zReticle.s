@@ -6,6 +6,12 @@
 reticle:
 	.skip 0x90
 
+.section .rodata
+
+.global $$2stringBase0_114
+$$2stringBase0_114:
+	.incbin "baserom.dol", 0x2E44A0, 0x18
+
 .section .text
 
 .global zReticle_Init__Fv

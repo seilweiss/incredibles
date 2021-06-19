@@ -18,6 +18,18 @@ __vt__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1:
 __vt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1:
 	.incbin "baserom.dol", 0x30B6C4, 0xBC
 
+.section .rodata
+
+.global $$21532
+$$21532:
+	.incbin "baserom.dol", 0x2E0C20, 0x18C
+.global info$1550
+info$1550:
+	.incbin "baserom.dol", 0x2E0DAC, 0x21C
+.global $$2stringBase0_87
+$$2stringBase0_87:
+	.incbin "baserom.dol", 0x2E0FC8, 0x40
+
 .section .text
 
 .global zNPCTypes_StartupTypes__Fv

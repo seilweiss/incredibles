@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_158
+$$2stringBase0_158:
+	.incbin "baserom.dol", 0x2E9D80, 0x28
+
 .section .text
 
 .global add_tweaks__Q229$$2unnamed$$2zParticleCustom_cpp$$25tweakFv

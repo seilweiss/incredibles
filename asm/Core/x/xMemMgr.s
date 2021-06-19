@@ -12,6 +12,12 @@ scratch_stack__21$$2unnamed$$2xMemMgr_cpp$$2:
 scratch_buffer__21$$2unnamed$$2xMemMgr_cpp$$2:
 	.skip 0x4000
 
+.section .rodata
+
+.global $$2stringBase0_15
+$$2stringBase0_15:
+	.incbin "baserom.dol", 0x2CEDE8, 0x58
+
 .section .text
 
 .global xMemDebug_SoakLog__FPCc

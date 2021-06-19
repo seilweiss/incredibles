@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_117
+$$2stringBase0_117:
+	.incbin "baserom.dol", 0x2E4568, 0x88
+
 .section .text
 
 .global Setup__Q24zNPC6SensesFPQ24zNPC6common

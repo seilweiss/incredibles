@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_134
+$$2stringBase0_134:
+	.incbin "baserom.dol", 0x2E64C0, 0x40
+
 .section .text
 
 .global iExceptionMemCrash__FPCcUiPCc

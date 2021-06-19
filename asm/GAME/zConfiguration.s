@@ -6,6 +6,12 @@
 scene_player_map__28$$2unnamed$$2zConfiguration_cpp$$2:
 	.incbin "baserom.dol", 0x302428, 0x2400
 
+.section .rodata
+
+.global $$2stringBase0_43
+$$2stringBase0_43:
+	.incbin "baserom.dol", 0x2D7B08, 0x180
+
 .section .text
 
 .global zConfig_getPlayerEnumIdx__FUi

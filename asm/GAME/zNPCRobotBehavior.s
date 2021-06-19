@@ -63,6 +63,15 @@ __vt__Q24zNPC14timebomb_death:
 __vt__Q24zNPC11static_jump:
 	.incbin "baserom.dol", 0x30E678, 0x98
 
+.section .rodata
+
+.global burn_curve$1512
+burn_curve$1512:
+	.incbin "baserom.dol", 0x2E38C8, 0x54
+.global $$2stringBase0_108
+$$2stringBase0_108:
+	.incbin "baserom.dol", 0x2E391C, 0x4EC
+
 .section .text
 
 .global RobotDestroyCB__4zNPCFP4xEntPvb

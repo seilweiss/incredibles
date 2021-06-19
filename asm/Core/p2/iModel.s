@@ -12,6 +12,12 @@ sMaterialColor:
 sMaterialTexture:
 	.skip 0x80
 
+.section .rodata
+
+.global $$2stringBase0_29
+$$2stringBase0_29:
+	.incbin "baserom.dol", 0x2CF948, 0x8
+
 .section .text
 
 .global GetChildFrameHierarchy__FP7RwFramePv

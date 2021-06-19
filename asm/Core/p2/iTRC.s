@@ -33,6 +33,12 @@ diskFatalMessage:
 $$21000_0:
 	.incbin "baserom.dol", 0x300A90, 0x38
 
+.section .rodata
+
+.global $$2stringBase0_33
+$$2stringBase0_33:
+	.incbin "baserom.dol", 0x2D6140, 0xC70
+
 .section .text
 
 .global GetRegion__Fv

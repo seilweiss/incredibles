@@ -24,6 +24,12 @@ __vt__Q24zNPC10rocket_lob:
 __vt__Q24zNPC11fly_forward:
 	.incbin "baserom.dol", 0x30FA84, 0x7C
 
+.section .rodata
+
+.global $$2stringBase0_121
+$$2stringBase0_121:
+	.incbin "baserom.dol", 0x2E49C0, 0x118
+
 .section .text
 
 .global enter_state__Q24zNPC11fly_forwardFPC39behavior_implementation$$0Q24zNPC6common$$1

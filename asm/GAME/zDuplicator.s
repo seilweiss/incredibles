@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_48
+$$2stringBase0_48:
+	.incbin "baserom.dol", 0x2D8B70, 0x18
+
 .section .text
 
 .global update_wrapper__FP4xEntP6xScenef

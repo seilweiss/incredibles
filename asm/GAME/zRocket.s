@@ -9,6 +9,12 @@ rocket_jet_config__21$$2unnamed$$2zRocket_cpp$$2:
 default_config__Q21z17JetParticleSystem:
 	.skip 0x4C
 
+.section .rodata
+
+.global $$2stringBase0_122
+$$2stringBase0_122:
+	.incbin "baserom.dol", 0x2E4AD8, 0x80
+
 .section .text
 
 .global setup__Q21z6rocketFv

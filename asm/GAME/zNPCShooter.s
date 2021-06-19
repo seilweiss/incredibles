@@ -27,6 +27,12 @@ __vt__Q24zNPC13bone_behavior:
 __vt__Q24zNPC11firing_bone:
 	.incbin "baserom.dol", 0x30A4D0, 0x80
 
+.section .rodata
+
+.global $$2stringBase0_84
+$$2stringBase0_84:
+	.incbin "baserom.dol", 0x2E0270, 0x160
+
 .section .text
 
 .global MuzzleFlash_LevelInit__25$$2unnamed$$2zNPCShooter_cpp$$2Fv

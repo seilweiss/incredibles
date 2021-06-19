@@ -30,6 +30,33 @@ __vt__Q24zNPC4Om10:
 __vt__Q24zNPC8Om10Anim:
 	.incbin "baserom.dol", 0x310524, 0x7C
 
+.section .rodata
+
+.global bomb_shrap_cfg0__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2
+bomb_shrap_cfg0__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
+	.incbin "baserom.dol", 0x2E5040, 0x6C
+.global chunk_shrap_cfg0__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2
+chunk_shrap_cfg0__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
+	.incbin "baserom.dol", 0x2E50AC, 0x6C
+.global rubbleChunkTypes0__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2
+rubbleChunkTypes0__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
+	.incbin "baserom.dol", 0x2E5118, 0x180
+.global bomb_shrap_cfg1__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2
+bomb_shrap_cfg1__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
+	.incbin "baserom.dol", 0x2E5298, 0x6C
+.global chunk_shrap_cfg1__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2
+chunk_shrap_cfg1__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
+	.incbin "baserom.dol", 0x2E5304, 0x6C
+.global bomb_shrap_cfg2__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2
+bomb_shrap_cfg2__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
+	.incbin "baserom.dol", 0x2E5370, 0x6C
+.global chunk_shrap_cfg2__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2
+chunk_shrap_cfg2__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
+	.incbin "baserom.dol", 0x2E53DC, 0x6C
+.global $$2stringBase0_130
+$$2stringBase0_130:
+	.incbin "baserom.dol", 0x2E5448, 0x570
+
 .section .text
 
 .global SetupCollision__Q24zNPC10CollidableFRC4xBoxb

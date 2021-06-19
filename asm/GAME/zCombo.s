@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_147
+$$2stringBase0_147:
+	.incbin "baserom.dol", 0x2E6E88, 0x78
+
 .section .text
 
 .global zCombo_ParseINI__FP8xIniFile

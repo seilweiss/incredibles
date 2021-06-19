@@ -9,6 +9,15 @@ bounds$1106:
 __vt__13zVioletPlayer:
 	.incbin "baserom.dol", 0x30DCD8, 0x120
 
+.section .rodata
+
+.global headBones__27$$2unnamed$$2zVioletPlayer_cpp$$2
+headBones__27$$2unnamed$$2zVioletPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x2E3120, 0x74
+.global $$2stringBase0_104
+$$2stringBase0_104:
+	.incbin "baserom.dol", 0x2E3194, 0x1C4
+
 .section .text
 
 .global GetHeadBones__13zVioletPlayerFv

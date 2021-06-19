@@ -6,6 +6,12 @@
 __vt__7zUIText:
 	.incbin "baserom.dol", 0x30D850, 0x58
 
+.section .rodata
+
+.global $$2stringBase0_101
+$$2stringBase0_101:
+	.incbin "baserom.dol", 0x2E2B48, 0x8
+
 .section .text
 
 .global DoInit__7zUITextFv

@@ -18,6 +18,15 @@ $$22912:
 $$23178:
 	.incbin "baserom.dol", 0x30D2C8, 0x220
 
+.section .rodata
+
+.global dynamic_types__20$$2unnamed$$2zScene_cpp$$2
+dynamic_types__20$$2unnamed$$2zScene_cpp$$2:
+	.incbin "baserom.dol", 0x2E1D88, 0x438
+.global $$2stringBase0_93
+$$2stringBase0_93:
+	.incbin "baserom.dol", 0x2E21C0, 0x5E8
+
 .section .text
 
 .global zSceneIsLoadingPackFile__Fv

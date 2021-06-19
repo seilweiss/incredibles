@@ -18,6 +18,24 @@ $$21021:
 $$21040:
 	.incbin "baserom.dol", 0x2FC838, 0x30
 
+.section .rodata
+
+.global $$21560
+$$21560:
+	.incbin "baserom.dol", 0x2CEE50, 0x100
+.global $$21572
+$$21572:
+	.incbin "baserom.dol", 0x2CEF50, 0x80
+.global $$21655
+$$21655:
+	.incbin "baserom.dol", 0x2CEFD0, 0x100
+.global $$21753
+$$21753:
+	.incbin "baserom.dol", 0x2CF0D0, 0x204
+.global $$2stringBase0_17
+$$2stringBase0_17:
+	.incbin "baserom.dol", 0x2CF2D4, 0x94
+
 .section .text
 
 .global PKRGetReadFuncs__Fi

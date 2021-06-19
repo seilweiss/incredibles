@@ -12,6 +12,12 @@ zccombo:
 sBodySlamRing$1984:
 	.incbin "baserom.dol", 0x301E30, 0xC0
 
+.section .rodata
+
+.global $$2stringBase0_39
+$$2stringBase0_39:
+	.incbin "baserom.dol", 0x2D7448, 0x28
+
 .section .text
 
 .global zCombatInit__Fv

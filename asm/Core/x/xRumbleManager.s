@@ -6,6 +6,12 @@
 rumbleManager$1174:
 	.skip 0x148
 
+.section .rodata
+
+.global $$2stringBase0_19
+$$2stringBase0_19:
+	.incbin "baserom.dol", 0x2CF3A8, 0x10
+
 .section .text
 
 .global store__Q27xRumble7ManagerFPQ27xRumble7padInfoPCQ27xRumble11emitterBasePQ27xRumble14effectInternalfb

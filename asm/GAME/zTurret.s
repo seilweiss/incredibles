@@ -6,6 +6,12 @@
 turretCamera:
 	.skip 0xC0
 
+.section .rodata
+
+.global $$2stringBase0_99
+$$2stringBase0_99:
+	.incbin "baserom.dol", 0x2E2AF0, 0x50
+
 .section .text
 
 .global Set2DVertex__21$$2unnamed$$2zTurret_cpp$$2FP18rwGameCube2DVertexffffff

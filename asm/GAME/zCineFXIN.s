@@ -201,6 +201,27 @@ cinfx_ni01_velocipodin:
 cinfx_ni01_velocipodout:
 	.incbin "baserom.dol", 0x31B49C, 0x1BC
 
+.section .rodata
+
+.global record_om01_heli_escape__23$$2unnamed$$2zCineFXIN_cpp$$2
+record_om01_heli_escape__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x2E7248, 0xD90
+.global record_om01_frozone_chase__23$$2unnamed$$2zCineFXIN_cpp$$2
+record_om01_frozone_chase__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x2E7FD8, 0x420
+.global record_hs01_frozone__23$$2unnamed$$2zCineFXIN_cpp$$2
+record_hs01_frozone__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x2E83F8, 0x650
+.global record_hs01_elastigirl__23$$2unnamed$$2zCineFXIN_cpp$$2
+record_hs01_elastigirl__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x2E8A48, 0x280
+.global record_om03_opening__23$$2unnamed$$2zCineFXIN_cpp$$2
+record_om03_opening__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x2E8CC8, 0xA10
+.global $$2stringBase0_156
+$$2stringBase0_156:
+	.incbin "baserom.dol", 0x2E96D8, 0x690
+
 .section .text
 
 .global zCinFX_LightDust_Twk__FPCcP9NCINEntry

@@ -6,6 +6,12 @@
 global_cam__18$$2unnamed$$2zCam_cpp$$2:
 	.skip 0x120
 
+.section .rodata
+
+.global $$2stringBase0_36
+$$2stringBase0_36:
+	.incbin "baserom.dol", 0x2D72E8, 0x10
+
 .section .text
 
 .global zCamSceneEnter__FR6zSceneRC7xMat4x3

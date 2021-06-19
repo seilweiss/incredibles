@@ -42,6 +42,15 @@ __vt__Q24zNPC10flame_bone:
 __vt__Q24zNPC14shrapnel_death:
 	.incbin "baserom.dol", 0x308160, 0x80
 
+.section .rodata
+
+.global burn_curve$2260
+burn_curve$2260:
+	.incbin "baserom.dol", 0x2DCEA8, 0x54
+.global $$2stringBase0_72
+$$2stringBase0_72:
+	.incbin "baserom.dol", 0x2DCEFC, 0x554
+
 .section .text
 
 .global setup__Q24zNPC14shrapnel_deathFv

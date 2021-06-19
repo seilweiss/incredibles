@@ -18,6 +18,12 @@ zNPC_Omnidroid08_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
 initData__24$$2unnamed$$2zNPCCombat_cpp$$2:
 	.incbin "baserom.dol", 0x3088E8, 0xD8
 
+.section .rodata
+
+.global $$2stringBase0_75
+$$2stringBase0_75:
+	.incbin "baserom.dol", 0x2DF6D8, 0x120
+
 .section .text
 
 .global zNPCCombatInit__Fv

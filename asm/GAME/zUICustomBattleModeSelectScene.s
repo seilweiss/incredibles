@@ -9,6 +9,12 @@ __vt__38zUICustomBattleModeDescriptionScroller:
 __vt__37zUICustomBattleModeSelectSceneManager:
 	.incbin "baserom.dol", 0x315060, 0x50
 
+.section .rodata
+
+.global $$2stringBase0_152
+$$2stringBase0_152:
+	.incbin "baserom.dol", 0x2E7018, 0x100
+
 .section .text
 
 .global __ct__37zUICustomBattleModeSelectSceneManagerFP3zUI

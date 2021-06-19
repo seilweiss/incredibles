@@ -18,6 +18,12 @@ __vt__Q24zNPC10water_idle:
 __vt__Q24zNPC7bot_lob:
 	.incbin "baserom.dol", 0x30F5C4, 0x84
 
+.section .rodata
+
+.global $$2stringBase0_113
+$$2stringBase0_113:
+	.incbin "baserom.dol", 0x2E4318, 0x188
+
 .section .text
 
 .global runnable__Q24zNPC7bot_lobFf

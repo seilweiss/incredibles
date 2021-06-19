@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_148
+$$2stringBase0_148:
+	.incbin "baserom.dol", 0x2E6F00, 0x10
+
 .section .text
 
 .global load_model__27$$2unnamed$$2zRubbleSystem_cpp$$2FUif

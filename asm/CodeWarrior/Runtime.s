@@ -27,6 +27,45 @@ $$2903:
 __vt__Q23std13bad_exception:
 	.incbin "baserom.dol", 0x31B740, 0x10
 
+.section .rodata
+
+.global $$2223
+$$2223:
+	.incbin "baserom.dol", 0x2E9DA8, 0x10
+.global $$2227
+$$2227:
+	.incbin "baserom.dol", 0x2E9DB8, 0x10
+.global __constants
+__constants:
+	.incbin "baserom.dol", 0x2E9DC8, 0x18
+.global $$2504
+$$2504:
+	.incbin "baserom.dol", 0x2E9DE0, 0x14
+.global $$2505
+$$2505:
+	.incbin "baserom.dol", 0x2E9DF4, 0x28
+.global $$2506
+$$2506:
+	.incbin "baserom.dol", 0x2E9E1C, 0x18
+.global $$2902
+$$2902:
+	.incbin "baserom.dol", 0x2E9E34, 0x14
+.global $$2904
+$$2904:
+	.incbin "baserom.dol", 0x2E9E48, 0x10
+.global $$2906
+$$2906:
+	.incbin "baserom.dol", 0x2E9E58, 0x10
+.global $$2908
+$$2908:
+	.incbin "baserom.dol", 0x2E9E68, 0x10
+.global $$255
+$$255:
+	.incbin "baserom.dol", 0x2E9E78, 0x38
+.global $$256
+$$256:
+	.incbin "baserom.dol", 0x2E9EB0, 0x40
+
 .section .text
 
 .global __va_arg

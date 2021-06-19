@@ -6,6 +6,15 @@
 flamethrower_config:
 	.skip 0x48
 
+.section .rodata
+
+.global FTCfgDefault
+FTCfgDefault:
+	.incbin "baserom.dol", 0x2E4688, 0x80
+.global $$2stringBase0_120
+$$2stringBase0_120:
+	.incbin "baserom.dol", 0x2E4708, 0x2B8
+
 .section .text
 
 .global Init__19zFlameThrowerWidgetFR5xBaseR9xDynAssetUl

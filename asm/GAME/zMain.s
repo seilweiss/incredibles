@@ -15,6 +15,12 @@ $$21768:
 backGroundTexture$1866:
 	.incbin "baserom.dol", 0x307760, 0x78
 
+.section .rodata
+
+.global $$2stringBase0_65
+$$2stringBase0_65:
+	.incbin "baserom.dol", 0x2DAFF8, 0x528
+
 .section .text
 
 .global zMainSetPAL__Fv

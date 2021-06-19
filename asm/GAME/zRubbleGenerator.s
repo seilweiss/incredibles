@@ -9,6 +9,12 @@ landDustConfig__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
 fakeAsset$1311:
 	.skip 0x5C
 
+.section .rodata
+
+.global $$2stringBase0_145
+$$2stringBase0_145:
+	.incbin "baserom.dol", 0x2E6E58, 0x10
+
 .section .text
 
 .global RubbleEventWrapper__30$$2unnamed$$2zRubbleGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

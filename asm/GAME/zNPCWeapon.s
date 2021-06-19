@@ -12,6 +12,12 @@ default_config__Q24zNPC17ElectricitySystem:
 __vt__Q24zNPC6Weapon:
 	.incbin "baserom.dol", 0x30E8D0, 0x80
 
+.section .rodata
+
+.global $$2stringBase0_111
+$$2stringBase0_111:
+	.incbin "baserom.dol", 0x2E4030, 0xF8
+
 .section .text
 
 .global setup__Q24zNPC17ElectricitySystemFv

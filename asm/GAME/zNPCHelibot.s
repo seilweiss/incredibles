@@ -21,6 +21,12 @@ __vt__Q24zNPC11heli_attack:
 __vt__Q24zNPC16energy_glow_bone:
 	.incbin "baserom.dol", 0x31011C, 0x7C
 
+.section .rodata
+
+.global $$2stringBase0_128
+$$2stringBase0_128:
+	.incbin "baserom.dol", 0x2E4E58, 0x160
+
 .section .text
 
 .global setup__Q24zNPC16energy_glow_boneFv

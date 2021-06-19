@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2818
+$$2818:
+	.incbin "baserom.dol", 0x2E29B0, 0x120
+.global $$2stringBase0_97
+$$2stringBase0_97:
+	.incbin "baserom.dol", 0x2E2AD0, 0x10
+
 .section .text
 
 .global render_bk_fill__22$$2unnamed$$2zTextBox_cpp$$2FRC8ztextbox

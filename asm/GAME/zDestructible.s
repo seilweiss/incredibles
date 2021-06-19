@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$21190
+$$21190:
+	.incbin "baserom.dol", 0x2D8530, 0x5FC
+.global $$2stringBase0_46
+$$2stringBase0_46:
+	.incbin "baserom.dol", 0x2D8B2C, 0x24
+
 .section .text
 
 .global UpdateModelBound__27$$2unnamed$$2zDestructible_cpp$$2FP4xEntP14xModelInstanceb

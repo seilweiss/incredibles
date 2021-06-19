@@ -30,6 +30,12 @@ __vt__Q24zNPC12violet_enemy:
 __vt__Q24zNPC10activating:
 	.incbin "baserom.dol", 0x30F314, 0x7C
 
+.section .rodata
+
+.global $$2stringBase0_112
+$$2stringBase0_112:
+	.incbin "baserom.dol", 0x2E4128, 0x1F0
+
 .section .text
 
 .global setup__Q24zNPC10activatingFv

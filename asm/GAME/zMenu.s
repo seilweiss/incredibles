@@ -6,6 +6,12 @@
 corruptFiles:
 	.skip 0xC0
 
+.section .rodata
+
+.global $$2stringBase0_66
+$$2stringBase0_66:
+	.incbin "baserom.dol", 0x2DB520, 0x38
+
 .section .text
 
 .global zMenuDecrementIdleTimer__Fv

@@ -51,6 +51,12 @@ $$21303:
 $$21613:
 	.incbin "baserom.dol", 0x30D540, 0x30
 
+.section .rodata
+
+.global $$2stringBase0_95
+$$2stringBase0_95:
+	.incbin "baserom.dol", 0x2E2810, 0x10
+
 .section .text
 
 .global zFrag_Alloc__F9zFragType

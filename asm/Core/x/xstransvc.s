@@ -6,6 +6,12 @@
 g_xstdata:
 	.incbin "baserom.dol", 0x2FED28, 0x1148
 
+.section .rodata
+
+.global $$2stringBase0_24
+$$2stringBase0_24:
+	.incbin "baserom.dol", 0x2CF760, 0x10
+
 .section .text
 
 .global xSTIsLoaded__Fv

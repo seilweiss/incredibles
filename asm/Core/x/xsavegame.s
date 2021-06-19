@@ -12,6 +12,27 @@ g_leaders:
 $$21000:
 	.incbin "baserom.dol", 0x2FEB60, 0x38
 
+.section .rodata
+
+.global $$2724
+$$2724:
+	.incbin "baserom.dol", 0x2CF3B8, 0x100
+.global $$2733
+$$2733:
+	.incbin "baserom.dol", 0x2CF4B8, 0x100
+.global $$21008
+$$21008:
+	.incbin "baserom.dol", 0x2CF5B8, 0x58
+.global $$21016
+$$21016:
+	.incbin "baserom.dol", 0x2CF610, 0x58
+.global $$21174
+$$21174:
+	.incbin "baserom.dol", 0x2CF668, 0x74
+.global $$2stringBase0_20
+$$2stringBase0_20:
+	.incbin "baserom.dol", 0x2CF6DC, 0xC
+
 .section .text
 
 .global xSGStartup__Fv

@@ -6,6 +6,12 @@
 __vt__Q24zNPC10water_bone:
 	.incbin "baserom.dol", 0x30C230, 0x80
 
+.section .rodata
+
+.global $$2stringBase0_89
+$$2stringBase0_89:
+	.incbin "baserom.dol", 0x2E1410, 0x18
+
 .section .text
 
 .global setup__Q24zNPC10water_boneFv

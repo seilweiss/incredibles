@@ -48,6 +48,15 @@ __vt__Q212zIncrediBall4idle:
 __vt__Q212zIncrediBall20incrediball_behavior:
 	.incbin "baserom.dol", 0x307570, 0x80
 
+.section .rodata
+
+.global footstep_curve$2784
+footstep_curve$2784:
+	.incbin "baserom.dol", 0x2DA918, 0x54
+.global $$2stringBase0_61
+$$2stringBase0_61:
+	.incbin "baserom.dol", 0x2DA96C, 0x2AC
+
 .section .text
 
 .global choose_strength__Q212zIncrediBall20incrediball_behaviorFP9xAnimPlayP10xAnimState

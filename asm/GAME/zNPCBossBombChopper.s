@@ -33,6 +33,12 @@ __vt__Q24zNPC11chopper_lob:
 __vt__Q24zNPC25chopper_follow_movepoints:
 	.incbin "baserom.dol", 0x314B64, 0x8C
 
+.section .rodata
+
+.global $$2stringBase0_143
+$$2stringBase0_143:
+	.incbin "baserom.dol", 0x2E69B0, 0x498
+
 .section .text
 
 .global get_default_light_kit__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2Fv

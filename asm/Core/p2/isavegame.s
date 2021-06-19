@@ -24,6 +24,24 @@ $$22211:
 $$22533:
 	.incbin "baserom.dol", 0x3007DC, 0x3C
 
+.section .rodata
+
+.global $$21452
+$$21452:
+	.incbin "baserom.dol", 0x2CF960, 0x6C
+.global $$21453
+$$21453:
+	.incbin "baserom.dol", 0x2CF9CC, 0x6C
+.global $$21859
+$$21859:
+	.incbin "baserom.dol", 0x2CFA38, 0x200
+.global $$21975
+$$21975:
+	.incbin "baserom.dol", 0x2CFC38, 0x5C40
+.global $$2stringBase0_31
+$$2stringBase0_31:
+	.incbin "baserom.dol", 0x2D5878, 0x4B0
+
 .section .text
 
 .global iSGStartup__Fv

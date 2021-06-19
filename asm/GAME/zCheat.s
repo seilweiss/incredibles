@@ -6,6 +6,12 @@
 cheats__20$$2unnamed$$2zCheat_cpp$$2:
 	.incbin "baserom.dol", 0x301D30, 0x100
 
+.section .rodata
+
+.global $$2stringBase0_37
+$$2stringBase0_37:
+	.incbin "baserom.dol", 0x2D72F8, 0x148
+
 .section .text
 
 .global zCheatRemoveTimed__20$$2unnamed$$2zCheat_cpp$$2Fv

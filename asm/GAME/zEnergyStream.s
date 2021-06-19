@@ -6,6 +6,12 @@
 default_config__12EnergyStream:
 	.skip 0x50
 
+.section .rodata
+
+.global $$2stringBase0_140
+$$2stringBase0_140:
+	.incbin "baserom.dol", 0x2E6870, 0x18
+
 .section .text
 
 .global initRibbon__27$$2unnamed$$2zEnergyStream_cpp$$2FP9xFXRibbon

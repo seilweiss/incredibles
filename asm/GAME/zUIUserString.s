@@ -6,6 +6,12 @@
 __vt__13zUIUserString:
 	.incbin "baserom.dol", 0x30D8A8, 0x58
 
+.section .rodata
+
+.global $$2stringBase0_102
+$$2stringBase0_102:
+	.incbin "baserom.dol", 0x2E2B50, 0x18
+
 .section .text
 
 .global DoInit__13zUIUserStringFv

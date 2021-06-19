@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_14
+$$2stringBase0_14:
+	.incbin "baserom.dol", 0x2CEDE0, 0x8
+
 .section .text
 
 .global CountAtomicCB__FP8RpAtomicPv

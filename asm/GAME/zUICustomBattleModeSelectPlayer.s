@@ -6,6 +6,12 @@
 __vt__38zUICustomBattleModeSelectPlayerManager:
 	.incbin "baserom.dol", 0x315100, 0x50
 
+.section .rodata
+
+.global $$2stringBase0_154
+$$2stringBase0_154:
+	.incbin "baserom.dol", 0x2E7168, 0xD8
+
 .section .text
 
 .global zSystemMsgUIEnterScene__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2FP3zUIP3zUIUi

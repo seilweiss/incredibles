@@ -12,6 +12,12 @@ record$1148:
 __vt__Q24zNPC8npc_move:
 	.incbin "baserom.dol", 0x309E28, 0x98
 
+.section .rodata
+
+.global $$2stringBase0_81
+$$2stringBase0_81:
+	.incbin "baserom.dol", 0x2E0188, 0x50
+
 .section .text
 
 .global __ct__Q24zNPC4jumpFv

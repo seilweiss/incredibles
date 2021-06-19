@@ -9,6 +9,12 @@ $$21299:
 $$21397:
 	.incbin "baserom.dol", 0x306888, 0x20
 
+.section .rodata
+
+.global $$2stringBase0_51
+$$2stringBase0_51:
+	.incbin "baserom.dol", 0x2D9920, 0x50
+
 .section .text
 
 .global zEntInit__FP4zEntP9xEntAssetUi

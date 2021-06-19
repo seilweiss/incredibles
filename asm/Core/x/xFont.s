@@ -33,6 +33,12 @@ format_tags_buffer__19$$2unnamed$$2xFont_cpp$$2:
 tb$3746:
 	.incbin "baserom.dol", 0x2F0DE0, 0x78
 
+.section .rodata
+
+.global $$2stringBase0_6
+$$2stringBase0_6:
+	.incbin "baserom.dol", 0x2CEA80, 0x200
+
 .section .text
 
 .global find_bounds__19$$2unnamed$$2xFont_cpp$$2FPC10xColor_tagRC13basic_rect$$0i$$1i

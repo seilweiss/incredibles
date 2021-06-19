@@ -36,6 +36,12 @@ __vt__Q24zNPC12up_down_spin:
 __vt__Q24zNPC7up_down:
 	.incbin "baserom.dol", 0x30B3D4, 0x7C
 
+.section .rodata
+
+.global $$2stringBase0_86
+$$2stringBase0_86:
+	.incbin "baserom.dol", 0x2E0950, 0x2D0
+
 .section .text
 
 .global in_range__Q24zNPC7up_downFP15xAnimTransitionP11xAnimSingle

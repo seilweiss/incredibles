@@ -15,6 +15,12 @@ tb$1039:
 tb$1228:
 	.incbin "baserom.dol", 0x2FFF64, 0x74
 
+.section .rodata
+
+.global $$2stringBase0_25
+$$2stringBase0_25:
+	.incbin "baserom.dol", 0x2CF770, 0x110
+
 .section .text
 
 .global xTRCInit__Fv

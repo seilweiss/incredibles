@@ -36,6 +36,15 @@ vars__18$$2unnamed$$2zVar_cpp$$2:
 zVarEntryTable:
 	.incbin "baserom.dol", 0x30DA8C, 0x204
 
+.section .rodata
+
+.global $$21004
+$$21004:
+	.incbin "baserom.dol", 0x2E2B68, 0x100
+.global $$2stringBase0_103
+$$2stringBase0_103:
+	.incbin "baserom.dol", 0x2E2C68, 0x4B8
+
 .section .text
 
 .global zVarEntryCB_IsSignedIn__FPv

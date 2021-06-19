@@ -6,6 +6,15 @@
 zHitSourceCCs:
 	.incbin "baserom.dol", 0x306D70, 0x58
 
+.section .rodata
+
+.global zHitSourceMap
+zHitSourceMap:
+	.incbin "baserom.dol", 0x2DA760, 0xB0
+.global $$2stringBase0_59
+$$2stringBase0_59:
+	.incbin "baserom.dol", 0x2DA810, 0xB0
+
 .section .text
 
 .global getSourceCCIdx__FUi

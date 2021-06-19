@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_135
+$$2stringBase0_135:
+	.incbin "baserom.dol", 0x2E6500, 0x20
+
 .section .text
 
 .global create_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv

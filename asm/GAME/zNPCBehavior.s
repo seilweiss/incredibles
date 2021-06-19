@@ -12,6 +12,12 @@ __vt__Q24zNPC11take_damage:
 __vt__Q24zNPC4move:
 	.incbin "baserom.dol", 0x307C84, 0x7C
 
+.section .rodata
+
+.global $$2stringBase0_71
+$$2stringBase0_71:
+	.incbin "baserom.dol", 0x2DCD50, 0x158
+
 .section .text
 
 .global enter_state__39behavior_implementation$$0Q24zNPC6common$$1FPC39behavior_implementation$$0Q24zNPC6common$$1

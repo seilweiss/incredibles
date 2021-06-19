@@ -18,6 +18,12 @@ __vt__Q24zNPC11mine_charge:
 __vt__Q24zNPC12initial_anim:
 	.incbin "baserom.dol", 0x309DAC, 0x7C
 
+.section .rodata
+
+.global $$2stringBase0_80
+$$2stringBase0_80:
+	.incbin "baserom.dol", 0x2E00C0, 0xC8
+
 .section .text
 
 .global setup__Q24zNPC12initial_animFv

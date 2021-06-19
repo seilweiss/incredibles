@@ -30,6 +30,12 @@ gLightningTweakAddInfo:
 defaultWeightParam$1190:
 	.incbin "baserom.dol", 0x307680, 0xC0
 
+.section .rodata
+
+.global $$2stringBase0_64
+$$2stringBase0_64:
+	.incbin "baserom.dol", 0x2DADF0, 0x208
+
 .section .text
 
 .global Init__16zLightningWidgetFR5xBaseR9xDynAssetUl

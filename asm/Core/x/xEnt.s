@@ -12,6 +12,12 @@ $$21189:
 offs$2021:
 	.incbin "baserom.dol", 0x2EF0AC, 0x64
 
+.section .rodata
+
+.global $$2stringBase0_5
+$$2stringBase0_5:
+	.incbin "baserom.dol", 0x2CE9C8, 0xB8
+
 .section .text
 
 .global reset__Q218$$2unnamed$$2xEnt_cpp$$29anim_collFR4xEnt

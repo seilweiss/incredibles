@@ -78,6 +78,18 @@ __vt__19zUICustomSceneImage:
 __vt__23zUICustomNumberScroller:
 	.incbin "baserom.dol", 0x3144B0, 0x50
 
+.section .rodata
+
+.global $$22316
+$$22316:
+	.incbin "baserom.dol", 0x2E5F98, 0xF0
+.global $$22437
+$$22437:
+	.incbin "baserom.dol", 0x2E6088, 0x150
+.global $$2stringBase0_133
+$$2stringBase0_133:
+	.incbin "baserom.dol", 0x2E61D8, 0x2E8
+
 .section .text
 
 .global reset__5statsFv

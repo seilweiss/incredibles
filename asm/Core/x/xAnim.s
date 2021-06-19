@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2774
+$$2774:
+	.incbin "baserom.dol", 0x2CE6C0, 0x80
+.global $$2stringBase0
+$$2stringBase0:
+	.incbin "baserom.dol", 0x2CE740, 0x48
+
 .section .text
 
 .global _xSingleCompare__Fcc

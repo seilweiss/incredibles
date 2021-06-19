@@ -6,6 +6,12 @@
 default_config__10fire_trail:
 	.skip 0x48
 
+.section .rodata
+
+.global $$2stringBase0_150
+$$2stringBase0_150:
+	.incbin "baserom.dol", 0x2E6FE8, 0x18
+
 .section .text
 
 .global setup__10fire_trailFv

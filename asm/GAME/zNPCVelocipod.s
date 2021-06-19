@@ -66,6 +66,12 @@ __vt__Q24zNPC12hover_effect:
 __vt__Q24zNPC9hover_bob:
 	.incbin "baserom.dol", 0x30C1B4, 0x7C
 
+.section .rodata
+
+.global $$2stringBase0_88
+$$2stringBase0_88:
+	.incbin "baserom.dol", 0x2E1008, 0x408
+
 .section .text
 
 .global setup__Q24zNPC9hover_bobFv

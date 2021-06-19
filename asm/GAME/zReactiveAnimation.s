@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_124
+$$2stringBase0_124:
+	.incbin "baserom.dol", 0x2E4D48, 0x28
+
 .section .text
 
 .global AlwaysConditional__32$$2unnamed$$2zReactiveAnimation_cpp$$2FP15xAnimTransitionP11xAnimSinglePv

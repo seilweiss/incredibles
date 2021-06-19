@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global burn_ribbon_curve__24$$2unnamed$$2zLaserBeam_cpp$$2
+burn_ribbon_curve__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.incbin "baserom.dol", 0x2DAC18, 0x54
+.global $$21982
+$$21982:
+	.incbin "baserom.dol", 0x2DAC6C, 0x54
+.global $$21996
+$$21996:
+	.incbin "baserom.dol", 0x2DACC0, 0x54
+.global $$2stringBase0_62
+$$2stringBase0_62:
+	.incbin "baserom.dol", 0x2DAD14, 0xCC
+
 .section .text
 
 .global xDebugAddTweak__FPCcPCiiiPC14tweak_callbackPvUi

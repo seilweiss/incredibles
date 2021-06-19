@@ -9,6 +9,12 @@ bounds$2264:
 __vt__17zElastiGirlPlayer:
 	.incbin "baserom.dol", 0x306748, 0x120
 
+.section .rodata
+
+.global $$2stringBase0_50
+$$2stringBase0_50:
+	.incbin "baserom.dol", 0x2D8B98, 0xD88
+
 .section .text
 
 .global ParseIni__17zElastiGirlPlayerFv

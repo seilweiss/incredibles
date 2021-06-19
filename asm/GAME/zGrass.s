@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_115
+$$2stringBase0_115:
+	.incbin "baserom.dol", 0x2E44B8, 0x10
+
 .section .text
 
 .global add_tweaks__Q220$$2unnamed$$2zGrass_cpp$$25tweakFv

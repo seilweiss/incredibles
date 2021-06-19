@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_116
+$$2stringBase0_116:
+	.incbin "baserom.dol", 0x2E44C8, 0xA0
+
 .section .text
 
 .global zTurn_IntFloor__Ff

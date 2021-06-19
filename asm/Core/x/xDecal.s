@@ -6,6 +6,12 @@
 active_emitters__20$$2unnamed$$2xDecal_cpp$$2:
 	.skip 0x80
 
+.section .rodata
+
+.global $$2stringBase0_4
+$$2stringBase0_4:
+	.incbin "baserom.dol", 0x2CE960, 0x68
+
 .section .text
 
 .global __as__11RwMatrixTagFRC11RwMatrixTag

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_8
+$$2stringBase0_8:
+	.incbin "baserom.dol", 0x2CECA0, 0x18
+
 .section .text
 
 .global create__Q24xhud15block_allocatorFii

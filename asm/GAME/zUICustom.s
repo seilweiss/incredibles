@@ -42,6 +42,12 @@ __vt__18zUICustomStatImage:
 __vt__9zUICustom:
 	.incbin "baserom.dol", 0x313DA4, 0x54
 
+.section .rodata
+
+.global $$2stringBase0_132
+$$2stringBase0_132:
+	.incbin "baserom.dol", 0x2E5D18, 0x280
+
 .section .text
 
 .global Init__9zUICustomFv

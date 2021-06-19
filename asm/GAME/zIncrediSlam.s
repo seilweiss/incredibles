@@ -6,6 +6,15 @@
 default_config__12zIncrediSlam:
 	.skip 0xC8
 
+.section .rodata
+
+.global footstep_curve$1370
+footstep_curve$1370:
+	.incbin "baserom.dol", 0x2E3E08, 0x54
+.global $$2stringBase0_109
+$$2stringBase0_109:
+	.incbin "baserom.dol", 0x2E3E5C, 0x5C
+
 .section .text
 
 .global __nw__12zIncrediSlamFUl

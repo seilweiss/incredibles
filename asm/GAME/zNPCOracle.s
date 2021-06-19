@@ -15,6 +15,12 @@ __vt__Q24zNPC13oracle_charge:
 __vt__Q24zNPC11oracle_idle:
 	.incbin "baserom.dol", 0x30A08C, 0x7C
 
+.section .rodata
+
+.global $$2stringBase0_83
+$$2stringBase0_83:
+	.incbin "baserom.dol", 0x2E01E8, 0x88
+
 .section .text
 
 .global add_states__Q24zNPC11oracle_idleFP10xAnimTable

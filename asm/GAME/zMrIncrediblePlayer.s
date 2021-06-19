@@ -21,6 +21,15 @@ bounds$4011:
 __vt__19zMrIncrediblePlayer:
 	.incbin "baserom.dol", 0x30789C, 0x11C
 
+.section .rodata
+
+.global headBones__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+headBones__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x2DB558, 0x4C
+.global $$2stringBase0_67
+$$2stringBase0_67:
+	.incbin "baserom.dol", 0x2DB5A4, 0x168C
+
 .section .text
 
 .global StillCarried__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2FP4xEnt

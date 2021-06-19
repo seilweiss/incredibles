@@ -66,6 +66,83 @@ $$2348_2:
 $$2431:
 	.incbin "baserom.dol", 0x32AE0C, 0x44
 
+.section .rodata
+
+.section .rodata
+
+.global fix_pool_sizes
+fix_pool_sizes:
+	.incbin "baserom.dol", 0x2ED038, 0x18
+.global $$2stringBase0_159
+$$2stringBase0_159:
+	.incbin "baserom.dol", 0x2ED050, 0xE0
+.global $$2stringBase0_160
+$$2stringBase0_160:
+	.incbin "baserom.dol", 0x2ED130, 0x8
+.global $$2stringBase0_161
+$$2stringBase0_161:
+	.incbin "baserom.dol", 0x2ED138, 0x28
+.global $$247
+$$247:
+	.incbin "baserom.dol", 0x2ED160, 0x28
+.global $$2212
+$$2212:
+	.incbin "baserom.dol", 0x2ED188, 0x20
+.global $$2stringBase0_162
+$$2stringBase0_162:
+	.incbin "baserom.dol", 0x2ED1A8, 0x370
+.global $$247_0
+$$247_0:
+	.incbin "baserom.dol", 0x2ED518, 0x2C
+.global $$262
+$$262:
+	.incbin "baserom.dol", 0x2ED544, 0xC
+.global halF
+halF:
+	.incbin "baserom.dol", 0x2ED550, 0x10
+.global ln2HI
+ln2HI:
+	.incbin "baserom.dol", 0x2ED560, 0x10
+.global ln2LO
+ln2LO:
+	.incbin "baserom.dol", 0x2ED570, 0x10
+.global Zero
+Zero:
+	.incbin "baserom.dol", 0x2ED580, 0x10
+.global bp
+bp:
+	.incbin "baserom.dol", 0x2ED590, 0x10
+.global dp_h
+dp_h:
+	.incbin "baserom.dol", 0x2ED5A0, 0x10
+.global dp_l
+dp_l:
+	.incbin "baserom.dol", 0x2ED5B0, 0x10
+.global two_over_pi
+two_over_pi:
+	.incbin "baserom.dol", 0x2ED5C0, 0x108
+.global npio2_hw
+npio2_hw:
+	.incbin "baserom.dol", 0x2ED6C8, 0x80
+.global init_jk
+init_jk:
+	.incbin "baserom.dol", 0x2ED748, 0x10
+.global PIo2
+PIo2:
+	.incbin "baserom.dol", 0x2ED758, 0x40
+.global T
+T:
+	.incbin "baserom.dol", 0x2ED798, 0x68
+.global atanhi
+atanhi:
+	.incbin "baserom.dol", 0x2ED800, 0x20
+.global atanlo
+atanlo:
+	.incbin "baserom.dol", 0x2ED820, 0x20
+.global aT
+aT:
+	.incbin "baserom.dol", 0x2ED840, 0x58
+
 .section .text
 
 .global exit

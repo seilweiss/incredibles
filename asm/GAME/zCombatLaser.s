@@ -6,6 +6,15 @@
 context__Q21z5laser:
 	.skip 0x58
 
+.section .rodata
+
+.global burn_curve$1057
+burn_curve$1057:
+	.incbin "baserom.dol", 0x2D7558, 0x54
+.global $$2stringBase0_41
+$$2stringBase0_41:
+	.incbin "baserom.dol", 0x2D75AC, 0x7C
+
 .section .text
 
 .global zLaserLavaEmit__1zFfP18zTimeHandlerStruct

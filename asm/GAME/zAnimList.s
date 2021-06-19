@@ -6,6 +6,12 @@
 astnames:
 	.incbin "baserom.dol", 0x300AC8, 0x50
 
+.section .rodata
+
+.global $$2stringBase0_34
+$$2stringBase0_34:
+	.incbin "baserom.dol", 0x2D6DB0, 0x80
+
 .section .text
 
 .global AlwaysConditional__FP15xAnimTransitionP11xAnimSinglePv

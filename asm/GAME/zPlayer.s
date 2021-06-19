@@ -15,6 +15,12 @@ $$21529:
 __vt__7zPlayer:
 	.incbin "baserom.dol", 0x30C370, 0xE8
 
+.section .rodata
+
+.global $$2stringBase0_91
+$$2stringBase0_91:
+	.incbin "baserom.dol", 0x2E1480, 0x170
+
 .section .text
 
 .global bound_update_wrapper__21$$2unnamed$$2zPlayer_cpp$$2FP4xEntP5xVec3

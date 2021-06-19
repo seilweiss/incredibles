@@ -21,6 +21,15 @@ $$23559:
 __vt__13zCommonPlayer:
 	.incbin "baserom.dol", 0x30230C, 0x11C
 
+.section .rodata
+
+.global footstep_curve$3819
+footstep_curve$3819:
+	.incbin "baserom.dol", 0x2D7628, 0x54
+.global $$2stringBase0_42
+$$2stringBase0_42:
+	.incbin "baserom.dol", 0x2D767C, 0x48C
+
 .section .text
 
 .global SetupRumbleEffects__27$$2unnamed$$2zCommonPlayer_cpp$$2FPCQ227$$2unnamed$$2zCommonPlayer_cpp$$212RumbleParamsi

@@ -6,6 +6,12 @@
 im_flames__19$$2unnamed$$2zFire_cpp$$2:
 	.skip 0x100
 
+.section .rodata
+
+.global $$2stringBase0_55
+$$2stringBase0_55:
+	.incbin "baserom.dol", 0x2DA398, 0x38
+
 .section .text
 
 .global add_tweaks__Q219$$2unnamed$$2zFire_cpp$$25tweakFPCc

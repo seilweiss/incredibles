@@ -66,6 +66,12 @@ __vt__Q24zNPC4home:
 __vt__Q24zNPC6defend:
 	.incbin "baserom.dol", 0x3098B8, 0x98
 
+.section .rodata
+
+.global $$2stringBase0_78
+$$2stringBase0_78:
+	.incbin "baserom.dol", 0x2DF9C8, 0x5B0
+
 .section .text
 
 .global zNPC_ForceEffect__23$$2unnamed$$2zNPCMelee_cpp$$2FP9xAnimPlayPCc

@@ -18,6 +18,12 @@ __vt__Q24zNPC14shield_protect:
 __vt__Q24zNPC6shield:
 	.incbin "baserom.dol", 0x309AA0, 0xA8
 
+.section .rodata
+
+.global $$2stringBase0_79
+$$2stringBase0_79:
+	.incbin "baserom.dol", 0x2DFF78, 0x148
+
 .section .text
 
 .global shield_event_wrapper__31$$2unnamed$$2zNPCMeleeShielded_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

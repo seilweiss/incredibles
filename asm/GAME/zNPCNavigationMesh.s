@@ -9,6 +9,12 @@ visited$997:
 visited$1177:
 	.skip 0x3F8
 
+.section .rodata
+
+.global $$2stringBase0_82
+$$2stringBase0_82:
+	.incbin "baserom.dol", 0x2E01D8, 0x10
+
 .section .text
 
 .global initialize__Q24zNPC6circleFPQ24zNPC6common

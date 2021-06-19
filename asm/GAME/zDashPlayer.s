@@ -81,6 +81,15 @@ __vt__Q25zDash16friction_effects:
 __vt__Q25zDash6player:
 	.incbin "baserom.dol", 0x30654C, 0xEC
 
+.section .rodata
+
+.global headBones__Q25zDash25$$2unnamed$$2zDashPlayer_cpp$$2
+headBones__Q25zDash25$$2unnamed$$2zDashPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x2D7F50, 0x48
+.global $$2stringBase0_45
+$$2stringBase0_45:
+	.incbin "baserom.dol", 0x2D7F98, 0x598
+
 .section .text
 
 .global Init__12zTimedSplashFR5xBaseR9xDynAssetUl

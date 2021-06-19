@@ -12,6 +12,18 @@ __vt__Q24zNPC12pickup_react:
 __vt__Q24zNPC12melee_charge:
 	.incbin "baserom.dol", 0x30FCE0, 0x98
 
+.section .rodata
+
+.global scan_show_nodes__26$$2unnamed$$2zNPCMeleeBot_cpp$$2
+scan_show_nodes__26$$2unnamed$$2zNPCMeleeBot_cpp$$2:
+	.incbin "baserom.dol", 0x2E4B58, 0x54
+.global scan_hide_nodes__26$$2unnamed$$2zNPCMeleeBot_cpp$$2
+scan_hide_nodes__26$$2unnamed$$2zNPCMeleeBot_cpp$$2:
+	.incbin "baserom.dol", 0x2E4BAC, 0x54
+.global $$2stringBase0_123
+$$2stringBase0_123:
+	.incbin "baserom.dol", 0x2E4C00, 0x148
+
 .section .text
 
 .global add_tweaks__Q226$$2unnamed$$2zNPCMeleeBot_cpp$$215melee_bot_tweakFv

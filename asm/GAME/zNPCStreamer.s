@@ -6,6 +6,12 @@
 __vt__Q24zNPC10run_stream:
 	.incbin "baserom.dol", 0x314720, 0xA0
 
+.section .rodata
+
+.global $$2stringBase0_142
+$$2stringBase0_142:
+	.incbin "baserom.dol", 0x2E6910, 0xA0
+
 .section .text
 
 .global attack__Q24zNPC10run_streamFP15xAnimTransitionP11xAnimSingle

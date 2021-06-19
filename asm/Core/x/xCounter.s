@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_3
+$$2stringBase0_3:
+	.incbin "baserom.dol", 0x2CE938, 0x28
+
 .section .text
 
 .global add_tweaks__22$$2unnamed$$2xCounter_cpp$$2FR9_xCounter

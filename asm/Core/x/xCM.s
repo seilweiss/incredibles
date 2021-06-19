@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_2
+$$2stringBase0_2:
+	.incbin "baserom.dol", 0x2CE8C0, 0x78
+
 .section .text
 
 .global Decrypt__FPvUiPCvUi

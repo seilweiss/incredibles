@@ -15,6 +15,15 @@ __vt__Q24zNPC7CarStop:
 __vt__Q24zNPC11BrakeLights:
 	.incbin "baserom.dol", 0x3086E8, 0x80
 
+.section .rodata
+
+.global decalCurve$1693
+decalCurve$1693:
+	.incbin "baserom.dol", 0x2DF4A8, 0x54
+.global $$2stringBase0_74
+$$2stringBase0_74:
+	.incbin "baserom.dol", 0x2DF4FC, 0x1DC
+
 .section .text
 
 .global __cl__Q24zNPC20car_collide_callbackFR4xEnt

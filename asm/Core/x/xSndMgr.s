@@ -15,6 +15,12 @@ $$22470:
 $$22485:
 	.incbin "baserom.dol", 0x2FECBC, 0x24
 
+.section .rodata
+
+.global $$2stringBase0_23
+$$2stringBase0_23:
+	.incbin "baserom.dol", 0x2CF758, 0x8
+
 .section .text
 
 .global setup_faders__21$$2unnamed$$2xSndMgr_cpp$$2Fv

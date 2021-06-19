@@ -6,6 +6,12 @@
 __vt__Q24zNPC16NPCSmokeBehavior:
 	.incbin "baserom.dol", 0x3146A0, 0x80
 
+.section .rodata
+
+.global $$2stringBase0_141
+$$2stringBase0_141:
+	.incbin "baserom.dol", 0x2E6888, 0x88
+
 .section .text
 
 .global setup__Q24zNPC16NPCSmokeBehaviorFv

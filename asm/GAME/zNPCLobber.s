@@ -24,6 +24,12 @@ __vt__Q24zNPC9human_lob:
 __vt__Q24zNPC15human_throwable:
 	.incbin "baserom.dol", 0x308DA0, 0xB8
 
+.section .rodata
+
+.global $$2stringBase0_77
+$$2stringBase0_77:
+	.incbin "baserom.dol", 0x2DF8C0, 0x108
+
 .section .text
 
 .global get_lob_velocity__4zNPCFRC5xVec3RC5xVec3RC5xVec3ff

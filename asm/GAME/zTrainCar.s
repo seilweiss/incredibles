@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_98
+$$2stringBase0_98:
+	.incbin "baserom.dol", 0x2E2AE0, 0x10
+
 .section .text
 
 .global Alloc__Q211zFollowPath7segmentFRPQ211zFollowPath7segment

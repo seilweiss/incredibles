@@ -15,6 +15,12 @@ ent_asset__Q21z4bomb:
 __vt__Q21z4bomb:
 	.incbin "baserom.dol", 0x30F648, 0x50
 
+.section .rodata
+
+.global $$2stringBase0_118
+$$2stringBase0_118:
+	.incbin "baserom.dol", 0x2E45F0, 0x88
+
 .section .text
 
 .global get_model__19$$2unnamed$$2zBomb_cpp$$2FPCc

@@ -9,6 +9,12 @@ tempStack__21$$2unnamed$$2iMemMgr_cpp$$2:
 memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2:
 	.skip 0x128
 
+.section .rodata
+
+.global $$2stringBase0_28
+$$2stringBase0_28:
+	.incbin "baserom.dol", 0x2CF8B0, 0x98
+
 .section .text
 
 .global iMemClearStack__21$$2unnamed$$2iMemMgr_cpp$$2Fv

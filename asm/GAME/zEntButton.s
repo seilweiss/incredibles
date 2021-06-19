@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_52
+$$2stringBase0_52:
+	.incbin "baserom.dol", 0x2D9970, 0x30
+
 .section .text
 
 .global zEntButton_Init__FPvPv

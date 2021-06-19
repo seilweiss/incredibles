@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_146
+$$2stringBase0_146:
+	.incbin "baserom.dol", 0x2E6E68, 0x20
+
 .section .text
 
 .global __ct__Q24zHud9BossMeterFv

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_106
+$$2stringBase0_106:
+	.incbin "baserom.dol", 0x2E33F8, 0x2F0
+
 .section .text
 
 .global refresh_splash__21$$2unnamed$$2zSplash_cpp$$2FRQ221$$2unnamed$$2zSplash_cpp$$213splash_config

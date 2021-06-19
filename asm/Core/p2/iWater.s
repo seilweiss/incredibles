@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global bump_layers
+bump_layers:
+	.incbin "baserom.dol", 0x2E65B8, 0x60
+.global $$2stringBase0_138
+$$2stringBase0_138:
+	.incbin "baserom.dol", 0x2E6618, 0x30
+
 .section .text
 
 .global CreateDirectionalLight__Fv

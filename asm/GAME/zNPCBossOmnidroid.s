@@ -15,6 +15,66 @@ $$24521:
 __vt__17zNPCBossOmnidroid:
 	.incbin "baserom.dol", 0x30846C, 0xBC
 
+.section .rodata
+
+.global shrap_cfg__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak12rubble_chunk
+shrap_cfg__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak12rubble_chunk:
+	.incbin "baserom.dol", 0x2DD450, 0x6C
+.global shrap_cfg__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb
+shrap_cfg__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb:
+	.incbin "baserom.dol", 0x2DD4BC, 0x6C
+.global cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb4grab8shrapnel
+cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb4grab8shrapnel:
+	.incbin "baserom.dol", 0x2DD528, 0x6C
+.global curve0__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak12impact_decal
+curve0__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak12impact_decal:
+	.incbin "baserom.dol", 0x2DD594, 0x54
+.global curve__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5bolts12decal_player
+curve__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5bolts12decal_player:
+	.incbin "baserom.dol", 0x2DD5E8, 0x54
+.global curve__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5bolts9decal_env
+curve__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5bolts9decal_env:
+	.incbin "baserom.dol", 0x2DD63C, 0x54
+.global cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state7dervish4blur
+cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state7dervish4blur:
+	.incbin "baserom.dol", 0x2DD690, 0x48
+.global cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4ball4blur
+cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4ball4blur:
+	.incbin "baserom.dol", 0x2DD6D8, 0x48
+.global cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock4bomb
+cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock4bomb:
+	.incbin "baserom.dol", 0x2DD720, 0xB8
+.global cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock4bomb
+cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock4bomb:
+	.incbin "baserom.dol", 0x2DD7D8, 0xB8
+.global ensys_cfg__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4beam
+ensys_cfg__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4beam:
+	.incbin "baserom.dol", 0x2DD890, 0x74
+.global type0__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak13rubble_system
+type0__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak13rubble_system:
+	.incbin "baserom.dol", 0x2DD904, 0x180
+.global type1__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak13rubble_system
+type1__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak13rubble_system:
+	.incbin "baserom.dol", 0x2DDA84, 0x180
+.global standard_action_choices__17zNPCBossOmnidroid
+standard_action_choices__17zNPCBossOmnidroid:
+	.incbin "baserom.dol", 0x2DDC04, 0x90
+.global phase_action_choices__17zNPCBossOmnidroid
+phase_action_choices__17zNPCBossOmnidroid:
+	.incbin "baserom.dol", 0x2DDC94, 0xF00
+.global intermission_sequence__17zNPCBossOmnidroid
+intermission_sequence__17zNPCBossOmnidroid:
+	.incbin "baserom.dol", 0x2DEB94, 0x3C0
+.global historical_probabilities__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2
+historical_probabilities__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2:
+	.incbin "baserom.dol", 0x2DEF54, 0x280
+.global always_hidden_entities__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2
+always_hidden_entities__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2:
+	.incbin "baserom.dol", 0x2DF1D4, 0x54
+.global $$2stringBase0_73
+$$2stringBase0_73:
+	.incbin "baserom.dol", 0x2DF228, 0x280
+
 .section .text
 
 .global shuffle_list__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2FPUii

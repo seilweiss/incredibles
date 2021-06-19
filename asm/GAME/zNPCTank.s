@@ -66,6 +66,15 @@ __vt__Q24zNPC16shockwave_attack:
 __vt__Q24zNPC10wheel_bone:
 	.incbin "baserom.dol", 0x30ADFC, 0x7C
 
+.section .rodata
+
+.global FTCfgTank__22$$2unnamed$$2zNPCTank_cpp$$2
+FTCfgTank__22$$2unnamed$$2zNPCTank_cpp$$2:
+	.incbin "baserom.dol", 0x2E03D0, 0x80
+.global $$2stringBase0_85
+$$2stringBase0_85:
+	.incbin "baserom.dol", 0x2E0450, 0x500
+
 .section .text
 
 .global add_wheel_bones__Q24zNPC10wheel_boneFPQ24zNPC6common

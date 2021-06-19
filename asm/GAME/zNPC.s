@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_69
+$$2stringBase0_69:
+	.incbin "baserom.dol", 0x2DCC60, 0x50
+
 .section .text
 
 .global play_sound__Q24zNPC4baseFP17zAnimFxSoundGroup

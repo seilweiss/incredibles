@@ -204,6 +204,228 @@ pushamt:
 cursize:
 	.incbin "baserom.dol", 0x320990, 0x8
 
+.section .rodata
+
+.global lbl_802ECEF0
+lbl_802ECEF0:
+	.incbin "baserom.dol", 0x2E9EF0, 0x8
+.global lbl_802ECEF8
+lbl_802ECEF8:
+	.incbin "baserom.dol", 0x2E9EF8, 0x8
+.global lbl_802ECF00
+lbl_802ECF00:
+	.incbin "baserom.dol", 0x2E9F00, 0x8
+.global lbl_802ECF08
+lbl_802ECF08:
+	.incbin "baserom.dol", 0x2E9F08, 0x8
+.global lbl_802ECF10
+lbl_802ECF10:
+	.incbin "baserom.dol", 0x2E9F10, 0x8
+.global lbl_802ECF18
+lbl_802ECF18:
+	.incbin "baserom.dol", 0x2E9F18, 0x8
+.global lbl_802ECF20
+lbl_802ECF20:
+	.incbin "baserom.dol", 0x2E9F20, 0x8
+.global lbl_802ECF28
+lbl_802ECF28:
+	.incbin "baserom.dol", 0x2E9F28, 0x4
+.global lbl_802ECF2C
+lbl_802ECF2C:
+	.incbin "baserom.dol", 0x2E9F2C, 0x4
+.global lbl_802ECF30
+lbl_802ECF30:
+	.incbin "baserom.dol", 0x2E9F30, 0x4
+.global lbl_802ECF34
+lbl_802ECF34:
+	.incbin "baserom.dol", 0x2E9F34, 0x4
+.global lbl_802ECF38
+lbl_802ECF38:
+	.incbin "baserom.dol", 0x2E9F38, 0x14
+.global lbl_802ECF4C
+lbl_802ECF4C:
+	.incbin "baserom.dol", 0x2E9F4C, 0x14
+.global lbl_802ECF60
+lbl_802ECF60:
+	.incbin "baserom.dol", 0x2E9F60, 0x34
+.global lbl_802ECF94
+lbl_802ECF94:
+	.incbin "baserom.dol", 0x2E9F94, 0x10
+.global lbl_802ECFA4
+lbl_802ECFA4:
+	.incbin "baserom.dol", 0x2E9FA4, 0x1C
+.global lbl_802ECFC0
+lbl_802ECFC0:
+	.incbin "baserom.dol", 0x2E9FC0, 0x8
+.global lbl_802ECFC8
+lbl_802ECFC8:
+	.incbin "baserom.dol", 0x2E9FC8, 0x8
+.global lbl_802ECFD0
+lbl_802ECFD0:
+	.incbin "baserom.dol", 0x2E9FD0, 0x8
+.global lbl_802ECFD8
+lbl_802ECFD8:
+	.incbin "baserom.dol", 0x2E9FD8, 0x8
+.global lbl_802ECFE0
+lbl_802ECFE0:
+	.incbin "baserom.dol", 0x2E9FE0, 0x8
+.global lbl_802ECFE8
+lbl_802ECFE8:
+	.incbin "baserom.dol", 0x2E9FE8, 0x8
+.global lbl_802ECFF0
+lbl_802ECFF0:
+	.incbin "baserom.dol", 0x2E9FF0, 0x8
+.global lbl_802ECFF8
+lbl_802ECFF8:
+	.incbin "baserom.dol", 0x2E9FF8, 0x8
+.global lbl_802ED000
+lbl_802ED000:
+	.incbin "baserom.dol", 0x2EA000, 0x20
+.global huff4decode00align
+huff4decode00align:
+	.incbin "baserom.dol", 0x2EA020, 0x20
+.global huff4decode00
+huff4decode00:
+	.incbin "baserom.dol", 0x2EA040, 0x10
+.global huff4decode01
+huff4decode01:
+	.incbin "baserom.dol", 0x2EA050, 0x20
+.global huff4decode02
+huff4decode02:
+	.incbin "baserom.dol", 0x2EA070, 0x20
+.global huff4decode03
+huff4decode03:
+	.incbin "baserom.dol", 0x2EA090, 0x20
+.global huff4decode04
+huff4decode04:
+	.incbin "baserom.dol", 0x2EA0B0, 0x20
+.global huff4decode05
+huff4decode05:
+	.incbin "baserom.dol", 0x2EA0D0, 0x20
+.global huff4decode06
+huff4decode06:
+	.incbin "baserom.dol", 0x2EA0F0, 0x20
+.global huff4decode07
+huff4decode07:
+	.incbin "baserom.dol", 0x2EA110, 0x40
+.global huff4decode08
+huff4decode08:
+	.incbin "baserom.dol", 0x2EA150, 0x40
+.global huff4decode09
+huff4decode09:
+	.incbin "baserom.dol", 0x2EA190, 0x40
+.global huff4decode10
+huff4decode10:
+	.incbin "baserom.dol", 0x2EA1D0, 0x40
+.global huff4decode11
+huff4decode11:
+	.incbin "baserom.dol", 0x2EA210, 0x40
+.global huff4decode12
+huff4decode12:
+	.incbin "baserom.dol", 0x2EA250, 0x40
+.global huff4decode13
+huff4decode13:
+	.incbin "baserom.dol", 0x2EA290, 0x80
+.global huff4decode14
+huff4decode14:
+	.incbin "baserom.dol", 0x2EA310, 0x80
+.global huff4decode15
+huff4decode15:
+	.incbin "baserom.dol", 0x2EA390, 0x80
+.global huff4decodesalign
+huff4decodesalign:
+	.incbin "baserom.dol", 0x2EA410, 0x8
+.global huff4reads
+huff4reads:
+	.incbin "baserom.dol", 0x2EA418, 0x10
+.global rlelens
+rlelens:
+	.incbin "baserom.dol", 0x2EA428, 0x4
+.global mask2
+mask2:
+	.incbin "baserom.dol", 0x2EA42C, 0x40
+.global mask1
+mask1:
+	.incbin "baserom.dol", 0x2EA46C, 0x40
+.global mask4
+mask4:
+	.incbin "baserom.dol", 0x2EA4AC, 0x10
+.global mask3
+mask3:
+	.incbin "baserom.dol", 0x2EA4BC, 0x24
+.global lbl_802ED4E0
+lbl_802ED4E0:
+	.incbin "baserom.dol", 0x2EA4E0, 0x8
+.global lbl_802ED4E8
+lbl_802ED4E8:
+	.incbin "baserom.dol", 0x2EA4E8, 0x8
+.global lbl_802ED4F0
+lbl_802ED4F0:
+	.incbin "baserom.dol", 0x2EA4F0, 0x4
+.global lbl_802ED4F4
+lbl_802ED4F4:
+	.incbin "baserom.dol", 0x2EA4F4, 0x4
+.global lbl_802ED4F8
+lbl_802ED4F8:
+	.incbin "baserom.dol", 0x2EA4F8, 0x4
+.global lbl_802ED4FC
+lbl_802ED4FC:
+	.incbin "baserom.dol", 0x2EA4FC, 0x4
+.global lbl_802ED500
+lbl_802ED500:
+	.incbin "baserom.dol", 0x2EA500, 0x8
+.global lbl_802ED508
+lbl_802ED508:
+	.incbin "baserom.dol", 0x2EA508, 0x8
+.global lbl_802ED510
+lbl_802ED510:
+	.incbin "baserom.dol", 0x2EA510, 0x4
+.global lbl_802ED514
+lbl_802ED514:
+	.incbin "baserom.dol", 0x2EA514, 0x4
+.global lbl_802ED518
+lbl_802ED518:
+	.incbin "baserom.dol", 0x2EA518, 0x4
+.global lbl_802ED51C
+lbl_802ED51C:
+	.incbin "baserom.dol", 0x2EA51C, 0x4
+.global lbl_802ED520
+lbl_802ED520:
+	.incbin "baserom.dol", 0x2EA520, 0x4
+.global lbl_802ED524
+lbl_802ED524:
+	.incbin "baserom.dol", 0x2EA524, 0x4
+.global lbl_802ED528
+lbl_802ED528:
+	.incbin "baserom.dol", 0x2EA528, 0x4
+.global lbl_802ED52C
+lbl_802ED52C:
+	.incbin "baserom.dol", 0x2EA52C, 0x14
+.global ifiquantlevels8align
+ifiquantlevels8align:
+	.incbin "baserom.dol", 0x2EA540, 0x20
+.global ifiquantlevels8
+ifiquantlevels8:
+	.incbin "baserom.dol", 0x2EA560, 0x1000
+.global ifimquantlevels8align
+ifimquantlevels8align:
+	.incbin "baserom.dol", 0x2EB560, 0x20
+.global ifimquantlevels8
+ifimquantlevels8:
+	.incbin "baserom.dol", 0x2EB580, 0x1000
+.global zigzagalign
+zigzagalign:
+	.incbin "baserom.dol", 0x2EC580, 0x20
+.global zigzag
+zigzag:
+	.incbin "baserom.dol", 0x2EC5A0, 0x40
+.global patternsalign
+patternsalign:
+	.incbin "baserom.dol", 0x2EC5E0, 0x20
+.global patterns
+patterns:
+	.incbin "baserom.dol", 0x2EC600, 0x400
+
 .section .text
 
 .global mult64anddiv

@@ -6,6 +6,12 @@
 default_config$936:
 	.skip 0x78
 
+.section .rodata
+
+.global $$2stringBase0_151
+$$2stringBase0_151:
+	.incbin "baserom.dol", 0x2E7000, 0x18
+
 .section .text
 
 .global scene_setup__13energy_systemFv

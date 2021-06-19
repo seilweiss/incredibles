@@ -9,6 +9,12 @@ warp_buffer__25$$2unnamed$$2xScreenWarp_cpp$$2:
 warp_lists__25$$2unnamed$$2xScreenWarp_cpp$$2:
 	.skip 0x120
 
+.section .rodata
+
+.global $$2stringBase0_21
+$$2stringBase0_21:
+	.incbin "baserom.dol", 0x2CF6E8, 0x40
+
 .section .text
 
 .global alloc_warp__25$$2unnamed$$2xScreenWarp_cpp$$2FQ211xScreenWarp9type_enum

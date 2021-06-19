@@ -18,6 +18,21 @@ anim$1808:
 anim$1815:
 	.incbin "baserom.dol", 0x306968, 0x78
 
+.section .rodata
+
+.global decal_anim_impact__24$$2unnamed$$2zExplosion_cpp$$2
+decal_anim_impact__24$$2unnamed$$2zExplosion_cpp$$2:
+	.incbin "baserom.dol", 0x2D9D98, 0x54
+.global decal_anim_burn__24$$2unnamed$$2zExplosion_cpp$$2
+decal_anim_burn__24$$2unnamed$$2zExplosion_cpp$$2:
+	.incbin "baserom.dol", 0x2D9DEC, 0xC4
+.global decal_anim_plasma__24$$2unnamed$$2zExplosion_cpp$$2
+decal_anim_plasma__24$$2unnamed$$2zExplosion_cpp$$2:
+	.incbin "baserom.dol", 0x2D9EB0, 0x54
+.global $$2stringBase0_54
+$$2stringBase0_54:
+	.incbin "baserom.dol", 0x2D9F04, 0x494
+
 .section .text
 
 .global find_decal_type__24$$2unnamed$$2zExplosion_cpp$$2FUi

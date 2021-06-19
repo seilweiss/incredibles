@@ -18,6 +18,12 @@ __vt__Q24zNPC10buddy_anim:
 __vt__Q24zNPC4idle:
 	.incbin "baserom.dol", 0x308AF4, 0x7C
 
+.section .rodata
+
+.global $$2stringBase0_76
+$$2stringBase0_76:
+	.incbin "baserom.dol", 0x2DF7F8, 0xC8
+
 .section .text
 
 .global __ct__Q24zNPC8npc_moveFv

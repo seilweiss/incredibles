@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_1
+$$2stringBase0_1:
+	.incbin "baserom.dol", 0x2CE8A8, 0x18
+
 .section .text
 
 .global add_tweaks__Q218$$2unnamed$$2xCam_cpp$$25tweakFPCc

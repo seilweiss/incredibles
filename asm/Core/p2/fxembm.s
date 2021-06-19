@@ -1,5 +1,29 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2282
+$$2282:
+	.incbin "baserom.dol", 0x2E6648, 0x60
+.global $$2283
+$$2283:
+	.incbin "baserom.dol", 0x2E66A8, 0x78
+.global $$2284
+$$2284:
+	.incbin "baserom.dol", 0x2E6720, 0x50
+.global $$2285
+$$2285:
+	.incbin "baserom.dol", 0x2E6770, 0x50
+.global $$2286
+$$2286:
+	.incbin "baserom.dol", 0x2E67C0, 0x50
+.global $$2287
+$$2287:
+	.incbin "baserom.dol", 0x2E6810, 0x50
+.global $$2stringBase0_139
+$$2stringBase0_139:
+	.incbin "baserom.dol", 0x2E6860, 0x10
+
 .section .text
 
 .global CreateEMBMEffect__Fv

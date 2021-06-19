@@ -27,6 +27,15 @@ $$22403:
 $$22402:
 	.incbin "baserom.dol", 0x30C958, 0x30
 
+.section .rodata
+
+.global $$21936
+$$21936:
+	.incbin "baserom.dol", 0x2E15F0, 0x100
+.global $$2stringBase0_92
+$$2stringBase0_92:
+	.incbin "baserom.dol", 0x2E16F0, 0x698
+
 .section .text
 
 .global WaitForPreviousPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fb

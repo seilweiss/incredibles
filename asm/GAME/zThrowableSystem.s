@@ -6,6 +6,12 @@
 staticThrowableProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2:
 	.incbin "baserom.dol", 0x30FD78, 0xF0
 
+.section .rodata
+
+.global $$2stringBase0_127
+$$2stringBase0_127:
+	.incbin "baserom.dol", 0x2E4DB0, 0xA8
+
 .section .text
 
 .global UintCompare__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUi

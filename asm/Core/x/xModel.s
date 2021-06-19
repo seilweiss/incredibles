@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_16
+$$2stringBase0_16:
+	.incbin "baserom.dol", 0x2CEE40, 0x10
+
 .section .text
 
 .global xModelGetPipe__FP8RpAtomic

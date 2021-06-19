@@ -6,6 +6,12 @@
 __vt__8zUIModel:
 	.incbin "baserom.dol", 0x30D7F8, 0x58
 
+.section .rodata
+
+.global $$2stringBase0_100
+$$2stringBase0_100:
+	.incbin "baserom.dol", 0x2E2B40, 0x8
+
 .section .text
 
 .global DoInit__8zUIModelFv

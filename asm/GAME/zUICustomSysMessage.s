@@ -6,6 +6,12 @@
 __vt__26zUICustomSysMessageManager:
 	.incbin "baserom.dol", 0x3150B0, 0x50
 
+.section .rodata
+
+.global $$2stringBase0_153
+$$2stringBase0_153:
+	.incbin "baserom.dol", 0x2E7118, 0x50
+
 .section .text
 
 .global __ct__26zUICustomSysMessageManagerFP3zUI

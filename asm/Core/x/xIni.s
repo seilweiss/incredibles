@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_13
+$$2stringBase0_13:
+	.incbin "baserom.dol", 0x2CEDD0, 0x10
+
 .section .text
 
 .global TrimWhitespace__FPc

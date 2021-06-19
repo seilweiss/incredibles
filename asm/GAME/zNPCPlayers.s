@@ -18,6 +18,12 @@ __vt__Q24zNPC6player:
 __vt__Q24zNPC10health_hud:
 	.incbin "baserom.dol", 0x314E94, 0x7C
 
+.section .rodata
+
+.global $$2stringBase0_149
+$$2stringBase0_149:
+	.incbin "baserom.dol", 0x2E6F10, 0x30
+
 .section .text
 
 .global reset__Q24zNPC10health_hudFv

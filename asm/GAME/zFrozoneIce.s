@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global spike_appear_curve__25$$2unnamed$$2zFrozoneIce_cpp$$2
+spike_appear_curve__25$$2unnamed$$2zFrozoneIce_cpp$$2:
+	.incbin "baserom.dol", 0x2E6F40, 0x60
+.global spike_disappear_curve__25$$2unnamed$$2zFrozoneIce_cpp$$2
+spike_disappear_curve__25$$2unnamed$$2zFrozoneIce_cpp$$2:
+	.incbin "baserom.dol", 0x2E6FA0, 0x48
+
 .section .text
 
 .global add_tweaks__Q225$$2unnamed$$2zFrozoneIce_cpp$$25tweakFv

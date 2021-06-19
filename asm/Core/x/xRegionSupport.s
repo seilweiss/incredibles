@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_18
+$$2stringBase0_18:
+	.incbin "baserom.dol", 0x2CF368, 0x40
+
 .section .text
 
 .global xRegionCodeIsValid__FPCc

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_126
+$$2stringBase0_126:
+	.incbin "baserom.dol", 0x2E4D80, 0x30
+
 .section .text
 
 .global SceneSetup__7zPickupFv

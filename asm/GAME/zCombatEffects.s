@@ -27,6 +27,15 @@ $$21775:
 slam_land_cfg__28$$2unnamed$$2zCombatEffects_cpp$$2:
 	.incbin "baserom.dol", 0x3021B4, 0xAC
 
+.section .rodata
+
+.global proj_decal_curve$1613
+proj_decal_curve$1613:
+	.incbin "baserom.dol", 0x2D7470, 0x54
+.global $$2stringBase0_40
+$$2stringBase0_40:
+	.incbin "baserom.dol", 0x2D74C4, 0x94
+
 .section .text
 
 .global setup__Q214zCombatEffects19SparkParticleSystemFv

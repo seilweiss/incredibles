@@ -24,6 +24,15 @@ MatFXInfo:
 $$2924:
 	.incbin "baserom.dol", 0x32AF9C, 0x24
 
+.section .rodata
+
+.global $$2795
+$$2795:
+	.incbin "baserom.dol", 0x2EE0E0, 0x20
+.global $$2976
+$$2976:
+	.incbin "baserom.dol", 0x2EE100, 0x20
+
 .section .text
 
 .global MatFXClose

@@ -12,6 +12,12 @@ file_queue:
 gHostPath:
 	.skip 0x100
 
+.section .rodata
+
+.global $$2stringBase0_26
+$$2stringBase0_26:
+	.incbin "baserom.dol", 0x2CF880, 0x18
+
 .section .text
 
 .global iFileInit__Fv

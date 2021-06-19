@@ -15,6 +15,15 @@ v$1236:
 new_tags__22$$2unnamed$$2zTalkBox_cpp$$2:
 	.incbin "baserom.dol", 0x30D5C0, 0xF0
 
+.section .rodata
+
+.global signals$1350
+signals$1350:
+	.incbin "baserom.dol", 0x2E2820, 0x50
+.global $$2stringBase0_96
+$$2stringBase0_96:
+	.incbin "baserom.dol", 0x2E2870, 0x140
+
 .section .text
 
 .global speak_stop__22$$2unnamed$$2zTalkBox_cpp$$2Fv

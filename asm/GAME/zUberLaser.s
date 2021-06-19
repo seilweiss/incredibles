@@ -9,6 +9,12 @@ default_config__Q21z10uber_laser:
 $$21634:
 	.incbin "baserom.dol", 0x314680, 0x20
 
+.section .rodata
+
+.global $$2stringBase0_137
+$$2stringBase0_137:
+	.incbin "baserom.dol", 0x2E6540, 0x78
+
 .section .text
 
 .global load__10zUberLaserFR5xBaseR9xDynAssetUl

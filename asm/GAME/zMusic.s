@@ -6,6 +6,12 @@
 sMusicTrack:
 	.skip 0x48
 
+.section .rodata
+
+.global $$2stringBase0_68
+$$2stringBase0_68:
+	.incbin "baserom.dol", 0x2DCC30, 0x30
+
 .section .text
 
 .global _zMusicStart__FUiUi

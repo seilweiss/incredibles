@@ -12,6 +12,15 @@ g_xfload:
 g_xtraload:
 	.incbin "baserom.dol", 0x2EED00, 0x1E0
 
+.section .rodata
+
+.global $$2875
+$$2875:
+	.incbin "baserom.dol", 0x2CE788, 0x114
+.global $$2stringBase0_0
+$$2stringBase0_0:
+	.incbin "baserom.dol", 0x2CE89C, 0xC
+
 .section .text
 
 .global xBinioLoadCreate__FPCci

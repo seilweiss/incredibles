@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_56
+$$2stringBase0_56:
+	.incbin "baserom.dol", 0x2DA3D0, 0x18
+
 .section .text
 
 .global load__13zFlameEmitterFRCQ213zFlameEmitter10asset_type

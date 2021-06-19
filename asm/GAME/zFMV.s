@@ -6,6 +6,12 @@
 zFMVFileTable:
 	.incbin "baserom.dol", 0x3069E0, 0x1C8
 
+.section .rodata
+
+.global $$2stringBase0_57
+$$2stringBase0_57:
+	.incbin "baserom.dol", 0x2DA3E8, 0x1C8
+
 .section .text
 
 .global zFMVFileGetFile__F8eFMVFile

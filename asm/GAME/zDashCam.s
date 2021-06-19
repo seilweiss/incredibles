@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .rodata
+
+.global $$2stringBase0_107
+$$2stringBase0_107:
+	.incbin "baserom.dol", 0x2E36E8, 0x1E0
+
 .section .text
 
 .global init__Q25zDash13camera_splineFR5xBaseR9xDynAssetUl

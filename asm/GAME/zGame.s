@@ -6,6 +6,15 @@
 tb$2160:
 	.incbin "baserom.dol", 0x306BA8, 0x78
 
+.section .rodata
+
+.global $$22021
+$$22021:
+	.incbin "baserom.dol", 0x2DA5B0, 0x100
+.global $$2stringBase0_58
+$$2stringBase0_58:
+	.incbin "baserom.dol", 0x2DA6B0, 0xB0
+
 .section .text
 
 .global PickNextSoak__Fv
