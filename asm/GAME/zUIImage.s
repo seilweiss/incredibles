@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__8zUIImage
+__vt__8zUIImage:
+	.incbin "baserom.dol", 0x30D780, 0x58
+
 .section .text
 
 .global SetTexture__8zUIImageFUib

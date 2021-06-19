@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC17follow_movepoints
+__vt__Q24zNPC17follow_movepoints:
+	.incbin "baserom.dol", 0x307B80, 0x88
+.global __vt__Q24zNPC11take_damage
+__vt__Q24zNPC11take_damage:
+	.incbin "baserom.dol", 0x307C08, 0x7C
+.global __vt__Q24zNPC4move
+__vt__Q24zNPC4move:
+	.incbin "baserom.dol", 0x307C84, 0x7C
+
 .section .text
 
 .global enter_state__39behavior_implementation$$0Q24zNPC6common$$1FPC39behavior_implementation$$0Q24zNPC6common$$1

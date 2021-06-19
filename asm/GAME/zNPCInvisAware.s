@@ -1,5 +1,35 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC13security_bird
+__vt__Q24zNPC13security_bird:
+	.incbin "baserom.dol", 0x30EE60, 0xB8
+.global __vt__Q24zNPC5alarm
+__vt__Q24zNPC5alarm:
+	.incbin "baserom.dol", 0x30EF18, 0x7C
+.global __vt__Q24zNPC10violet_gun
+__vt__Q24zNPC10violet_gun:
+	.incbin "baserom.dol", 0x30EF94, 0xB8
+.global __vt__Q24zNPC13violet_patrol
+__vt__Q24zNPC13violet_patrol:
+	.incbin "baserom.dol", 0x30F04C, 0x98
+.global __vt__Q24zNPC13violet_attack
+__vt__Q24zNPC13violet_attack:
+	.incbin "baserom.dol", 0x30F0E4, 0x7C
+.global __vt__Q24zNPC12violet_shoot
+__vt__Q24zNPC12violet_shoot:
+	.incbin "baserom.dol", 0x30F160, 0x7C
+.global __vt__Q24zNPC6search
+__vt__Q24zNPC6search:
+	.incbin "baserom.dol", 0x30F1DC, 0x80
+.global __vt__Q24zNPC12violet_enemy
+__vt__Q24zNPC12violet_enemy:
+	.incbin "baserom.dol", 0x30F25C, 0xB8
+.global __vt__Q24zNPC10activating
+__vt__Q24zNPC10activating:
+	.incbin "baserom.dol", 0x30F314, 0x7C
+
 .section .text
 
 .global setup__Q24zNPC10activatingFv

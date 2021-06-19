@@ -18,6 +18,66 @@ unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2:
 allsoaklevels:
 	.skip 0x80
 
+.section .data
+
+.global MOVIE_MANAGER_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2
+MOVIE_MANAGER_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.incbin "baserom.dol", 0x313DF8, 0x6C
+.global newTags__28$$2unnamed$$2zUIIncredibles_cpp$$2
+newTags__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.incbin "baserom.dol", 0x313E64, 0x8C
+.global numbers$1463
+numbers$1463:
+	.incbin "baserom.dol", 0x313EF0, 0x4C
+.global translationTable$2798
+translationTable$2798:
+	.incbin "baserom.dol", 0x313F3C, 0x114
+.global __vt__23zUICustomArtworkManager
+__vt__23zUICustomArtworkManager:
+	.incbin "baserom.dol", 0x314050, 0x50
+.global __vt__21zUICustomMovieManager
+__vt__21zUICustomMovieManager:
+	.incbin "baserom.dol", 0x3140A0, 0x50
+.global __vt__29zUICustomSecretsScreenControl
+__vt__29zUICustomSecretsScreenControl:
+	.incbin "baserom.dol", 0x3140F0, 0x50
+.global __vt__23zUICustomControlOverlay
+__vt__23zUICustomControlOverlay:
+	.incbin "baserom.dol", 0x314140, 0x50
+.global __vt__18zUICustomWireframe
+__vt__18zUICustomWireframe:
+	.incbin "baserom.dol", 0x314190, 0x50
+.global __vt__20zUICustomPowerEffect
+__vt__20zUICustomPowerEffect:
+	.incbin "baserom.dol", 0x3141E0, 0x50
+.global __vt__15zUICustomStatic
+__vt__15zUICustomStatic:
+	.incbin "baserom.dol", 0x314230, 0x50
+.global __vt__18zUICustomSoundMode
+__vt__18zUICustomSoundMode:
+	.incbin "baserom.dol", 0x314280, 0x50
+.global __vt__15zUICustomVolume
+__vt__15zUICustomVolume:
+	.incbin "baserom.dol", 0x3142D0, 0x50
+.global __vt__28zUICustomDescriptionScroller
+__vt__28zUICustomDescriptionScroller:
+	.incbin "baserom.dol", 0x314320, 0x50
+.global __vt__20zUICustomMapScroller
+__vt__20zUICustomMapScroller:
+	.incbin "baserom.dol", 0x314370, 0x50
+.global __vt__21zUICustomLevelManager
+__vt__21zUICustomLevelManager:
+	.incbin "baserom.dol", 0x3143C0, 0x50
+.global __vt__20zUICustomCheckpoints
+__vt__20zUICustomCheckpoints:
+	.incbin "baserom.dol", 0x314410, 0x50
+.global __vt__19zUICustomSceneImage
+__vt__19zUICustomSceneImage:
+	.incbin "baserom.dol", 0x314460, 0x50
+.global __vt__23zUICustomNumberScroller
+__vt__23zUICustomNumberScroller:
+	.incbin "baserom.dol", 0x3144B0, 0x50
+
 .section .text
 
 .global reset__5statsFv

@@ -6,6 +6,12 @@
 zccombo:
 	.skip 0x218
 
+.section .data
+
+.global sBodySlamRing$1984
+sBodySlamRing$1984:
+	.incbin "baserom.dol", 0x301E30, 0xC0
+
 .section .text
 
 .global zCombatInit__Fv

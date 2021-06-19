@@ -6,6 +6,66 @@
 dust_config__Q24zNPC12hover_effect:
 	.skip 0x50
 
+.section .data
+
+.global __vt__Q24zNPC7monopod
+__vt__Q24zNPC7monopod:
+	.incbin "baserom.dol", 0x30B780, 0xB8
+.global __vt__Q24zNPC5viper
+__vt__Q24zNPC5viper:
+	.incbin "baserom.dol", 0x30B838, 0xBC
+.global __vt__Q24zNPC35bone_container$$0Q24zNPC10blade_bone$$1
+__vt__Q24zNPC35bone_container$$0Q24zNPC10blade_bone$$1:
+	.incbin "baserom.dol", 0x30B8F4, 0x7C
+.global __vt__Q24zNPC36bone_container$$0Q24zNPC11rocket_bone$$1
+__vt__Q24zNPC36bone_container$$0Q24zNPC11rocket_bone$$1:
+	.incbin "baserom.dol", 0x30B970, 0x7C
+.global __vt__Q24zNPC11rocket_bone
+__vt__Q24zNPC11rocket_bone:
+	.incbin "baserom.dol", 0x30B9EC, 0x7C
+.global __vt__Q24zNPC12spiral_death
+__vt__Q24zNPC12spiral_death:
+	.incbin "baserom.dol", 0x30BA68, 0x7C
+.global __vt__Q24zNPC10blade_bone
+__vt__Q24zNPC10blade_bone:
+	.incbin "baserom.dol", 0x30BAE4, 0x7C
+.global __vt__Q24zNPC9velocipod
+__vt__Q24zNPC9velocipod:
+	.incbin "baserom.dol", 0x30BB60, 0xBC
+.global __vt__Q24zNPC7missile
+__vt__Q24zNPC7missile:
+	.incbin "baserom.dol", 0x30BC1C, 0xBC
+.global __vt__Q24zNPC14dash_velocipod
+__vt__Q24zNPC14dash_velocipod:
+	.incbin "baserom.dol", 0x30BCD8, 0xBC
+.global __vt__Q24zNPC34flying_npc_generic$$0Q24zNPC6common$$1
+__vt__Q24zNPC34flying_npc_generic$$0Q24zNPC6common$$1:
+	.incbin "baserom.dol", 0x30BD94, 0xBC
+.global __vt__Q24zNPC18follow_spline_path
+__vt__Q24zNPC18follow_spline_path:
+	.incbin "baserom.dol", 0x30BE50, 0x7C
+.global __vt__Q24zNPC14in_range_shoot
+__vt__Q24zNPC14in_range_shoot:
+	.incbin "baserom.dol", 0x30BECC, 0x7C
+.global __vt__Q24zNPC21exclusive_spline_path
+__vt__Q24zNPC21exclusive_spline_path:
+	.incbin "baserom.dol", 0x30BF48, 0x7C
+.global __vt__Q24zNPC24follow_spline_path_tight
+__vt__Q24zNPC24follow_spline_path_tight:
+	.incbin "baserom.dol", 0x30BFC4, 0x7C
+.global __vt__Q24zNPC14collide_detect
+__vt__Q24zNPC14collide_detect:
+	.incbin "baserom.dol", 0x30C040, 0x7C
+.global __vt__Q24zNPC12marker_death
+__vt__Q24zNPC12marker_death:
+	.incbin "baserom.dol", 0x30C0BC, 0x7C
+.global __vt__Q24zNPC12hover_effect
+__vt__Q24zNPC12hover_effect:
+	.incbin "baserom.dol", 0x30C138, 0x7C
+.global __vt__Q24zNPC9hover_bob
+__vt__Q24zNPC9hover_bob:
+	.incbin "baserom.dol", 0x30C1B4, 0x7C
+
 .section .text
 
 .global setup__Q24zNPC9hover_bobFv

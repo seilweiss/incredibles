@@ -6,6 +6,33 @@
 flash_config__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2:
 	.skip 0x48
 
+.section .data
+
+.global __vt__Q24zNPC17boss_bomb_chopper
+__vt__Q24zNPC17boss_bomb_chopper:
+	.incbin "baserom.dol", 0x3147C0, 0xBC
+.global __vt__Q24zNPC11dummy_death
+__vt__Q24zNPC11dummy_death:
+	.incbin "baserom.dol", 0x31487C, 0x7C
+.global __vt__Q24zNPC44bone_container$$0Q24zNPC19flashing_light_bone$$1
+__vt__Q24zNPC44bone_container$$0Q24zNPC19flashing_light_bone$$1:
+	.incbin "baserom.dol", 0x3148F8, 0x7C
+.global __vt__Q24zNPC14chopper_damage
+__vt__Q24zNPC14chopper_damage:
+	.incbin "baserom.dol", 0x314974, 0x7C
+.global __vt__Q24zNPC13chopper_laser
+__vt__Q24zNPC13chopper_laser:
+	.incbin "baserom.dol", 0x3149F0, 0x7C
+.global __vt__Q24zNPC14chopper_rocket
+__vt__Q24zNPC14chopper_rocket:
+	.incbin "baserom.dol", 0x314A6C, 0x7C
+.global __vt__Q24zNPC11chopper_lob
+__vt__Q24zNPC11chopper_lob:
+	.incbin "baserom.dol", 0x314AE8, 0x7C
+.global __vt__Q24zNPC25chopper_follow_movepoints
+__vt__Q24zNPC25chopper_follow_movepoints:
+	.incbin "baserom.dol", 0x314B64, 0x8C
+
 .section .text
 
 .global get_default_light_kit__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2Fv

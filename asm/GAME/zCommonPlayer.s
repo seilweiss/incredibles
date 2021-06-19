@@ -6,6 +6,21 @@
 dust_config:
 	.skip 0x50
 
+.section .data
+
+.global $$22329
+$$22329:
+	.incbin "baserom.dol", 0x302260, 0x50
+.global $$23560
+$$23560:
+	.incbin "baserom.dol", 0x3022B0, 0x34
+.global $$23559
+$$23559:
+	.incbin "baserom.dol", 0x3022E4, 0x28
+.global __vt__13zCommonPlayer
+__vt__13zCommonPlayer:
+	.incbin "baserom.dol", 0x30230C, 0x11C
+
 .section .text
 
 .global SetupRumbleEffects__27$$2unnamed$$2zCommonPlayer_cpp$$2FPCQ227$$2unnamed$$2zCommonPlayer_cpp$$212RumbleParamsi

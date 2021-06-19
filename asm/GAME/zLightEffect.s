@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global sEffectInitFuncs
+sEffectInitFuncs:
+	.incbin "baserom.dol", 0x307638, 0x48
+
 .section .text
 
 .global zLightEffectSet__FP7_zLighti

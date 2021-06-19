@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC9melee_bot
+__vt__Q24zNPC9melee_bot:
+	.incbin "baserom.dol", 0x30FB90, 0xB8
+.global __vt__Q24zNPC12pickup_react
+__vt__Q24zNPC12pickup_react:
+	.incbin "baserom.dol", 0x30FC48, 0x98
+.global __vt__Q24zNPC12melee_charge
+__vt__Q24zNPC12melee_charge:
+	.incbin "baserom.dol", 0x30FCE0, 0x98
+
 .section .text
 
 .global add_tweaks__Q226$$2unnamed$$2zNPCMeleeBot_cpp$$215melee_bot_tweakFv

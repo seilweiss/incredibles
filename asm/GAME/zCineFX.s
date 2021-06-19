@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global g_cutmap
+g_cutmap:
+	.incbin "baserom.dol", 0x314F10, 0x100
+
 .section .text
 
 .global CanRenderNow__11NCINBeNoseyFv

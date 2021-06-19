@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$2709
+$$2709:
+	.incbin "baserom.dol", 0x30C458, 0xC8
+
 .section .text
 
 .global zRenderStateInit__Fv

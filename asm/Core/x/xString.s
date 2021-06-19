@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$21346
+$$21346:
+	.incbin "baserom.dol", 0x2FFE70, 0x30
+
 .section .text
 
 .global xStrHash__FPCc

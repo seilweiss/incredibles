@@ -21,6 +21,51 @@ stdin_buff:
 signal_funcs:
 	.skip 0x18
 
+.section .data
+
+.global __files
+__files:
+	.incbin "baserom.dol", 0x32A4E8, 0x140
+.global pow_10$416
+pow_10$416:
+	.incbin "baserom.dol", 0x32A628, 0x40
+.global $$21710
+$$21710:
+	.incbin "baserom.dol", 0x32A668, 0x128
+.global __ctype_map
+__ctype_map:
+	.incbin "baserom.dol", 0x32A790, 0x100
+.global __lower_map
+__lower_map:
+	.incbin "baserom.dol", 0x32A890, 0x100
+.global __upper_map
+__upper_map:
+	.incbin "baserom.dol", 0x32A990, 0x100
+.global __lconv
+__lconv:
+	.incbin "baserom.dol", 0x32AA90, 0x38
+.global $$21248
+$$21248:
+	.incbin "baserom.dol", 0x32AAC8, 0x84
+.global $$21307
+$$21307:
+	.incbin "baserom.dol", 0x32AB4C, 0x84
+.global $$21443
+$$21443:
+	.incbin "baserom.dol", 0x32ABD0, 0xE0
+.global $$21442
+$$21442:
+	.incbin "baserom.dol", 0x32ACB0, 0x48
+.global $$2721
+$$2721:
+	.incbin "baserom.dol", 0x32ACF8, 0xD0
+.global $$2348_2
+$$2348_2:
+	.incbin "baserom.dol", 0x32ADC8, 0x44
+.global $$2431
+$$2431:
+	.incbin "baserom.dol", 0x32AE0C, 0x44
+
 .section .text
 
 .global exit

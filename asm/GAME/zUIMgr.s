@@ -6,6 +6,12 @@
 uiElements__20$$2unnamed$$2zUIMgr_cpp$$2:
 	.skip 0x1000
 
+.section .data
+
+.global $$21182
+$$21182:
+	.incbin "baserom.dol", 0x30D7D8, 0x20
+
 .section .text
 
 .global zUIMgrInit__FP6zScene

@@ -6,6 +6,24 @@
 cardwork:
 	.skip 0x14000
 
+.section .data
+
+.global g_isgdata_MAIN
+g_isgdata_MAIN:
+	.incbin "baserom.dol", 0x3003D8, 0x280
+.global rotatebuf$964
+rotatebuf$964:
+	.incbin "baserom.dol", 0x300658, 0x100
+.global errmsgs$1546
+errmsgs$1546:
+	.incbin "baserom.dol", 0x300758, 0x58
+.global $$22211
+$$22211:
+	.incbin "baserom.dol", 0x3007B0, 0x2C
+.global $$22533
+$$22533:
+	.incbin "baserom.dol", 0x3007DC, 0x3C
+
 .section .text
 
 .global iSGStartup__Fv

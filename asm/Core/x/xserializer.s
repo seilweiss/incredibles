@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global g_tbl_onbit
+g_tbl_onbit:
+	.incbin "baserom.dol", 0x2FEB98, 0x80
+.global g_tbl_clear
+g_tbl_clear:
+	.incbin "baserom.dol", 0x2FEC18, 0x80
+
 .section .text
 
 .global xSerialStartup__FiP21st_SERIAL_PERCID_SIZE

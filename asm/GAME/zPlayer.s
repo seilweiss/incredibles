@@ -6,6 +6,15 @@
 chronos_effect_config:
 	.skip 0x48
 
+.section .data
+
+.global $$21529
+$$21529:
+	.incbin "baserom.dol", 0x30C320, 0x50
+.global __vt__7zPlayer
+__vt__7zPlayer:
+	.incbin "baserom.dol", 0x30C370, 0xE8
+
 .section .text
 
 .global bound_update_wrapper__21$$2unnamed$$2zPlayer_cpp$$2FP4xEntP5xVec3

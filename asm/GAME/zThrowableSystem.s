@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global staticThrowableProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2
+staticThrowableProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.incbin "baserom.dol", 0x30FD78, 0xF0
+
 .section .text
 
 .global UintCompare__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUi

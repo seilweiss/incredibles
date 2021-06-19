@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC10water_bone
+__vt__Q24zNPC10water_bone:
+	.incbin "baserom.dol", 0x30C230, 0x80
+
 .section .text
 
 .global setup__Q24zNPC10water_boneFv

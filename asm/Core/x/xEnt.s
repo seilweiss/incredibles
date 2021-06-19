@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$21161
+$$21161:
+	.incbin "baserom.dol", 0x2EEFC0, 0xA8
+.global $$21189
+$$21189:
+	.incbin "baserom.dol", 0x2EF068, 0x44
+.global offs$2021
+offs$2021:
+	.incbin "baserom.dol", 0x2EF0AC, 0x64
+
 .section .text
 
 .global reset__Q218$$2unnamed$$2xEnt_cpp$$29anim_collFR4xEnt

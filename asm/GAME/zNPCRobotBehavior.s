@@ -9,6 +9,60 @@ context__Q24zNPC13physics_death:
 npc_robot_dust_config__4zNPC:
 	.skip 0x4C
 
+.section .data
+
+.global __vt__Q24zNPC13charge_attack
+__vt__Q24zNPC13charge_attack:
+	.incbin "baserom.dol", 0x30DDF8, 0x98
+.global __vt__Q24zNPC9bone_spin
+__vt__Q24zNPC9bone_spin:
+	.incbin "baserom.dol", 0x30DE90, 0x7C
+.global __vt__Q24zNPC16player_hit_react
+__vt__Q24zNPC16player_hit_react:
+	.incbin "baserom.dol", 0x30DF0C, 0x98
+.global __vt__Q24zNPC5react
+__vt__Q24zNPC5react:
+	.incbin "baserom.dol", 0x30DFA4, 0x98
+.global __vt__Q24zNPC13patrol_return
+__vt__Q24zNPC13patrol_return:
+	.incbin "baserom.dol", 0x30E03C, 0x98
+.global __vt__Q24zNPC13random_patrol
+__vt__Q24zNPC13random_patrol:
+	.incbin "baserom.dol", 0x30E0D4, 0x98
+.global __vt__Q24zNPC9bot_sleep
+__vt__Q24zNPC9bot_sleep:
+	.incbin "baserom.dol", 0x30E16C, 0x7C
+.global __vt__Q24zNPC14engine_exhaust
+__vt__Q24zNPC14engine_exhaust:
+	.incbin "baserom.dol", 0x30E1E8, 0x80
+.global __vt__Q24zNPC7explode
+__vt__Q24zNPC7explode:
+	.incbin "baserom.dol", 0x30E268, 0x7C
+.global __vt__Q24zNPC19auto_orient_physics
+__vt__Q24zNPC19auto_orient_physics:
+	.incbin "baserom.dol", 0x30E2E4, 0x8C
+.global __vt__Q24zNPC12ball_physics
+__vt__Q24zNPC12ball_physics:
+	.incbin "baserom.dol", 0x30E370, 0x8C
+.global __vt__Q24zNPC15fall_swap_death
+__vt__Q24zNPC15fall_swap_death:
+	.incbin "baserom.dol", 0x30E3FC, 0x84
+.global __vt__Q24zNPC10fall_death
+__vt__Q24zNPC10fall_death:
+	.incbin "baserom.dol", 0x30E480, 0x84
+.global __vt__Q24zNPC12launch_death
+__vt__Q24zNPC12launch_death:
+	.incbin "baserom.dol", 0x30E504, 0x7C
+.global __vt__Q24zNPC13physics_death
+__vt__Q24zNPC13physics_death:
+	.incbin "baserom.dol", 0x30E580, 0x7C
+.global __vt__Q24zNPC14timebomb_death
+__vt__Q24zNPC14timebomb_death:
+	.incbin "baserom.dol", 0x30E5FC, 0x7C
+.global __vt__Q24zNPC11static_jump
+__vt__Q24zNPC11static_jump:
+	.incbin "baserom.dol", 0x30E678, 0x98
+
 .section .text
 
 .global RobotDestroyCB__4zNPCFP4xEntPvb

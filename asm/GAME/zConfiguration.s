@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global scene_player_map__28$$2unnamed$$2zConfiguration_cpp$$2
+scene_player_map__28$$2unnamed$$2zConfiguration_cpp$$2:
+	.incbin "baserom.dol", 0x302428, 0x2400
+
 .section .text
 
 .global zConfig_getPlayerEnumIdx__FUi

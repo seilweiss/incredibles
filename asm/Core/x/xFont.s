@@ -21,6 +21,18 @@ arg_buffer$2010:
 entry_buffer$2011:
 	.skip 0x140
 
+.section .data
+
+.global default_font_assets__19$$2unnamed$$2xFont_cpp$$2
+default_font_assets__19$$2unnamed$$2xFont_cpp$$2:
+	.incbin "baserom.dol", 0x2EF1F0, 0x7F0
+.global format_tags_buffer__19$$2unnamed$$2xFont_cpp$$2
+format_tags_buffer__19$$2unnamed$$2xFont_cpp$$2:
+	.incbin "baserom.dol", 0x2EF9E0, 0x1400
+.global tb$3746
+tb$3746:
+	.incbin "baserom.dol", 0x2F0DE0, 0x78
+
 .section .text
 
 .global find_bounds__19$$2unnamed$$2xFont_cpp$$2FPC10xColor_tagRC13basic_rect$$0i$$1i

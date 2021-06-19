@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$2838
+$$2838:
+	.incbin "baserom.dol", 0x2EEEE0, 0x70
+.global $$21017
+$$21017:
+	.incbin "baserom.dol", 0x2EEF50, 0x70
+
 .section .text
 
 .global xQuickCullForSphere__FP7xQCDataPC7xSphere

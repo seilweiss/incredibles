@@ -1,5 +1,26 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC7helibot
+__vt__Q24zNPC7helibot:
+	.incbin "baserom.dol", 0x30FE68, 0xBC
+.global __vt__Q24zNPC36bone_container$$0Q24zNPC11energy_bone$$1
+__vt__Q24zNPC36bone_container$$0Q24zNPC11energy_bone$$1:
+	.incbin "baserom.dol", 0x30FF24, 0x7C
+.global __vt__Q24zNPC41bone_container$$0Q24zNPC16energy_glow_bone$$1
+__vt__Q24zNPC41bone_container$$0Q24zNPC16energy_glow_bone$$1:
+	.incbin "baserom.dol", 0x30FFA0, 0x7C
+.global __vt__Q24zNPC15fall_turn_death
+__vt__Q24zNPC15fall_turn_death:
+	.incbin "baserom.dol", 0x31001C, 0x84
+.global __vt__Q24zNPC11heli_attack
+__vt__Q24zNPC11heli_attack:
+	.incbin "baserom.dol", 0x3100A0, 0x7C
+.global __vt__Q24zNPC16energy_glow_bone
+__vt__Q24zNPC16energy_glow_bone:
+	.incbin "baserom.dol", 0x31011C, 0x7C
+
 .section .text
 
 .global setup__Q24zNPC16energy_glow_boneFv

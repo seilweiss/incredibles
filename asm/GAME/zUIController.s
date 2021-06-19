@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__13zUIController
+__vt__13zUIController:
+	.incbin "baserom.dol", 0x310968, 0x58
+
 .section .text
 
 .global DoInit__13zUIControllerFv

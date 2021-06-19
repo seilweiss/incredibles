@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global bounds$1106
+bounds$1106:
+	.incbin "baserom.dol", 0x30DC90, 0x48
+.global __vt__13zVioletPlayer
+__vt__13zVioletPlayer:
+	.incbin "baserom.dol", 0x30DCD8, 0x120
+
 .section .text
 
 .global GetHeadBones__13zVioletPlayerFv

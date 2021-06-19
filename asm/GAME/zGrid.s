@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global special_models
+special_models:
+	.incbin "baserom.dol", 0x306C88, 0xE8
+
 .section .text
 
 .global hack_flag_shadows__FP6zScene

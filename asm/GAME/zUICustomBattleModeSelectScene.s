@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__38zUICustomBattleModeDescriptionScroller
+__vt__38zUICustomBattleModeDescriptionScroller:
+	.incbin "baserom.dol", 0x315010, 0x50
+.global __vt__37zUICustomBattleModeSelectSceneManager
+__vt__37zUICustomBattleModeSelectSceneManager:
+	.incbin "baserom.dol", 0x315060, 0x50
+
 .section .text
 
 .global __ct__37zUICustomBattleModeSelectSceneManagerFP3zUI

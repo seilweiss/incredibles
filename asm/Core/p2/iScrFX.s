@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global sMBD
+sMBD:
+	.incbin "baserom.dol", 0x300818, 0x80
+
 .section .text
 
 .global iScrFxInit__Fv

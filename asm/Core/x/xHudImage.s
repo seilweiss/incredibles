@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$21007
+$$21007:
+	.incbin "baserom.dol", 0x30FB00, 0x3C
+.global $$21153
+$$21153:
+	.incbin "baserom.dol", 0x30FB3C, 0x28
+.global $$21407
+$$21407:
+	.incbin "baserom.dol", 0x30FB64, 0x2C
+
 .section .text
 
 .global load__Q24xhud12image_widgetFR5xBaseR9xDynAssetUl

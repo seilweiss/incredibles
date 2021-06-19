@@ -6,6 +6,42 @@
 line_size__16zUICustomStatBox:
 	.skip 0x190
 
+.section .data
+
+.global $$21101
+$$21101:
+	.incbin "baserom.dol", 0x3109C0, 0x2C
+.global stat_strings__16zUICustomStatBox
+stat_strings__16zUICustomStatBox:
+	.incbin "baserom.dol", 0x3109EC, 0x3200
+.global $$21370
+$$21370:
+	.incbin "baserom.dol", 0x313BEC, 0x1C
+.global $$21398
+$$21398:
+	.incbin "baserom.dol", 0x313C08, 0x20
+.global $$21414
+$$21414:
+	.incbin "baserom.dol", 0x313C28, 0x1C
+.global $$21429
+$$21429:
+	.incbin "baserom.dol", 0x313C44, 0x20
+.global __vt__30zUICustomConditionallyDisabled
+__vt__30zUICustomConditionallyDisabled:
+	.incbin "baserom.dol", 0x313C64, 0x50
+.global __vt__23zUICustomImageSlideshow
+__vt__23zUICustomImageSlideshow:
+	.incbin "baserom.dol", 0x313CB4, 0x50
+.global __vt__16zUICustomStatBox
+__vt__16zUICustomStatBox:
+	.incbin "baserom.dol", 0x313D04, 0x50
+.global __vt__18zUICustomStatImage
+__vt__18zUICustomStatImage:
+	.incbin "baserom.dol", 0x313D54, 0x50
+.global __vt__9zUICustom
+__vt__9zUICustom:
+	.incbin "baserom.dol", 0x313DA4, 0x54
+
 .section .text
 
 .global Init__9zUICustomFv

@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global box_faces__31$$2unnamed$$2xCollideSphereBox_cpp$$2
+box_faces__31$$2unnamed$$2xCollideSphereBox_cpp$$2:
+	.incbin "baserom.dol", 0x30E950, 0x480
+.global box_edges__31$$2unnamed$$2xCollideSphereBox_cpp$$2
+box_edges__31$$2unnamed$$2xCollideSphereBox_cpp$$2:
+	.incbin "baserom.dol", 0x30EDD0, 0x90
+
 .section .text
 
 .global xSweptSphereToBox__FR12xSweptSphereRC4xBox

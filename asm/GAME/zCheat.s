@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global cheats__20$$2unnamed$$2zCheat_cpp$$2
+cheats__20$$2unnamed$$2zCheat_cpp$$2:
+	.incbin "baserom.dol", 0x301D30, 0x100
+
 .section .text
 
 .global zCheatRemoveTimed__20$$2unnamed$$2zCheat_cpp$$2Fv

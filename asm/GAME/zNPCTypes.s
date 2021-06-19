@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1
+__vt__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1:
+	.incbin "baserom.dol", 0x30B450, 0x7C
+.global __vt__Q24zNPC27stream$$0Q24zNPC10water_bone$$1
+__vt__Q24zNPC27stream$$0Q24zNPC10water_bone$$1:
+	.incbin "baserom.dol", 0x30B4CC, 0xA0
+.global __vt__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1
+__vt__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1:
+	.incbin "baserom.dol", 0x30B56C, 0xB8
+.global __vt__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1
+__vt__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1:
+	.incbin "baserom.dol", 0x30B624, 0xA0
+.global __vt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1
+__vt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1:
+	.incbin "baserom.dol", 0x30B6C4, 0xBC
+
 .section .text
 
 .global zNPCTypes_StartupTypes__Fv

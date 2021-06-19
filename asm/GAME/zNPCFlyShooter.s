@@ -1,5 +1,29 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC13flying_lobber
+__vt__Q24zNPC13flying_lobber:
+	.incbin "baserom.dol", 0x30F698, 0xBC
+.global __vt__Q24zNPC13flying_rocket
+__vt__Q24zNPC13flying_rocket:
+	.incbin "baserom.dol", 0x30F754, 0xBC
+.global __vt__Q24zNPC14flying_shooter
+__vt__Q24zNPC14flying_shooter:
+	.incbin "baserom.dol", 0x30F810, 0xBC
+.global __vt__Q24zNPC44flying_npc_generic$$0Q24zNPC15human_throwable$$1
+__vt__Q24zNPC44flying_npc_generic$$0Q24zNPC15human_throwable$$1:
+	.incbin "baserom.dol", 0x30F8CC, 0xBC
+.global __vt__Q24zNPC11flying_idle
+__vt__Q24zNPC11flying_idle:
+	.incbin "baserom.dol", 0x30F988, 0x7C
+.global __vt__Q24zNPC10rocket_lob
+__vt__Q24zNPC10rocket_lob:
+	.incbin "baserom.dol", 0x30FA04, 0x80
+.global __vt__Q24zNPC11fly_forward
+__vt__Q24zNPC11fly_forward:
+	.incbin "baserom.dol", 0x30FA84, 0x7C
+
 .section .text
 
 .global enter_state__Q24zNPC11fly_forwardFPC39behavior_implementation$$0Q24zNPC6common$$1

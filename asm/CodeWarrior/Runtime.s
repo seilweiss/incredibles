@@ -6,6 +6,27 @@
 fragmentinfo:
 	.skip 0xC
 
+.section .data
+
+.global __vt__Q23std9exception
+__vt__Q23std9exception:
+	.incbin "baserom.dol", 0x31B658, 0x10
+.global $$2458
+$$2458:
+	.incbin "baserom.dol", 0x31B668, 0x44
+.global $$2651
+$$2651:
+	.incbin "baserom.dol", 0x31B6AC, 0x44
+.global $$2814
+$$2814:
+	.incbin "baserom.dol", 0x31B6F0, 0x44
+.global $$2903
+$$2903:
+	.incbin "baserom.dol", 0x31B734, 0xC
+.global __vt__Q23std13bad_exception
+__vt__Q23std13bad_exception:
+	.incbin "baserom.dol", 0x31B740, 0x10
+
 .section .text
 
 .global __va_arg

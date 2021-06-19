@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global cutsceneHackTable
+cutsceneHackTable:
+	.incbin "baserom.dol", 0x304828, 0x1260
+
 .section .text
 
 .global zCutsceneMgrGetHackTableSize__Fv

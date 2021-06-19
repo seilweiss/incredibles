@@ -9,6 +9,30 @@ textureBuffer:
 mMessage__8iTRCDisk:
 	.skip 0x100
 
+.section .data
+
+.global diskNotIdentifiedMessage
+diskNotIdentifiedMessage:
+	.incbin "baserom.dol", 0x300898, 0x54
+.global diskCoverOpenMessage
+diskCoverOpenMessage:
+	.incbin "baserom.dol", 0x3008EC, 0x54
+.global diskNoDiskMessage
+diskNoDiskMessage:
+	.incbin "baserom.dol", 0x300940, 0x54
+.global diskWrongDiskMessage
+diskWrongDiskMessage:
+	.incbin "baserom.dol", 0x300994, 0x54
+.global diskRetryMessage
+diskRetryMessage:
+	.incbin "baserom.dol", 0x3009E8, 0x54
+.global diskFatalMessage
+diskFatalMessage:
+	.incbin "baserom.dol", 0x300A3C, 0x54
+.global $$21000_0
+$$21000_0:
+	.incbin "baserom.dol", 0x300A90, 0x38
+
 .section .text
 
 .global GetRegion__Fv

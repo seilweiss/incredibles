@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC19oracle_hover_effect
+__vt__Q24zNPC19oracle_hover_effect:
+	.incbin "baserom.dol", 0x309EC0, 0x7C
+.global __vt__Q24zNPC6oracle
+__vt__Q24zNPC6oracle:
+	.incbin "baserom.dol", 0x309F3C, 0xB8
+.global __vt__Q24zNPC13oracle_charge
+__vt__Q24zNPC13oracle_charge:
+	.incbin "baserom.dol", 0x309FF4, 0x98
+.global __vt__Q24zNPC11oracle_idle
+__vt__Q24zNPC11oracle_idle:
+	.incbin "baserom.dol", 0x30A08C, 0x7C
+
 .section .text
 
 .global add_states__Q24zNPC11oracle_idleFP10xAnimTable

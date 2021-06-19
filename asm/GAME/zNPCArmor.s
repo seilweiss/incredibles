@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .data
+
+.global tankArmorTranslation__4zNPC
+tankArmorTranslation__4zNPC:
+	.incbin "baserom.dol", 0x3079B8, 0xCC
+.global __vt__Q24zNPC5Armor
+__vt__Q24zNPC5Armor:
+	.incbin "baserom.dol", 0x307A84, 0x7C
+.global __vt__39behavior_implementation$$0Q24zNPC6common$$1
+__vt__39behavior_implementation$$0Q24zNPC6common$$1:
+	.incbin "baserom.dol", 0x307B00, 0x80
+
 .section .text
 
 .global AddArmor__Q24zNPC5ArmorFPQ24zNPC6common

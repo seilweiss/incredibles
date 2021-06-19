@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global offs$1001
+offs$1001:
+	.incbin "baserom.dol", 0x2F0E58, 0x60
+
 .section .text
 
 .global xGridBoundInit__FP10xGridBoundPv

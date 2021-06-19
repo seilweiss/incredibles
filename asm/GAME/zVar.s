@@ -27,6 +27,15 @@ buffer$1064:
 buffer$1069:
 	.skip 0x80
 
+.section .data
+
+.global vars__18$$2unnamed$$2zVar_cpp$$2
+vars__18$$2unnamed$$2zVar_cpp$$2:
+	.incbin "baserom.dol", 0x30D900, 0x18C
+.global zVarEntryTable
+zVarEntryTable:
+	.incbin "baserom.dol", 0x30DA8C, 0x204
+
 .section .text
 
 .global zVarEntryCB_IsSignedIn__FPv

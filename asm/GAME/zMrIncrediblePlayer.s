@@ -9,6 +9,18 @@ grab_dust_config:
 ledge_dirt_config:
 	.skip 0x4C
 
+.section .data
+
+.global $$22921
+$$22921:
+	.incbin "baserom.dol", 0x3077D8, 0x1C
+.global bounds$4011
+bounds$4011:
+	.incbin "baserom.dol", 0x3077F4, 0xA8
+.global __vt__19zMrIncrediblePlayer
+__vt__19zMrIncrediblePlayer:
+	.incbin "baserom.dol", 0x30789C, 0x11C
+
 .section .text
 
 .global StillCarried__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2FP4xEnt

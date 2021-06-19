@@ -6,6 +6,15 @@
 globals:
 	.skip 0x630
 
+.section .data
+
+.global $$21768
+$$21768:
+	.incbin "baserom.dol", 0x307740, 0x20
+.global backGroundTexture$1866
+backGroundTexture$1866:
+	.incbin "baserom.dol", 0x307760, 0x78
+
 .section .text
 
 .global zMainSetPAL__Fv

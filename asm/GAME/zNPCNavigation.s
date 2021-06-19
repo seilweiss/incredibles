@@ -6,6 +6,12 @@
 record$1148:
 	.skip 0x50
 
+.section .data
+
+.global __vt__Q24zNPC8npc_move
+__vt__Q24zNPC8npc_move:
+	.incbin "baserom.dol", 0x309E28, 0x98
+
 .section .text
 
 .global __ct__Q24zNPC4jumpFv

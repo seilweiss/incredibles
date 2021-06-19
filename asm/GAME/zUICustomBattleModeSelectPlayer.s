@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__38zUICustomBattleModeSelectPlayerManager
+__vt__38zUICustomBattleModeSelectPlayerManager:
+	.incbin "baserom.dol", 0x315100, 0x50
+
 .section .text
 
 .global zSystemMsgUIEnterScene__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2FP3zUIP3zUIUi

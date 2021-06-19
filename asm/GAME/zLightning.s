@@ -24,6 +24,12 @@ sLFuncNew:
 gLightningTweakAddInfo:
 	.skip 0x68
 
+.section .data
+
+.global defaultWeightParam$1190
+defaultWeightParam$1190:
+	.incbin "baserom.dol", 0x307680, 0xC0
+
 .section .text
 
 .global Init__16zLightningWidgetFR5xBaseR9xDynAssetUl

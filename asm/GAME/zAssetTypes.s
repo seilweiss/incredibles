@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global assetTypeHandlers
+assetTypeHandlers:
+	.incbin "baserom.dol", 0x300B18, 0xFF0
+.global g_brainTable
+g_brainTable:
+	.incbin "baserom.dol", 0x301B08, 0x228
+
 .section .text
 
 .global GetBrainID__FUiUi

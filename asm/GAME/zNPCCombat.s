@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .data
+
+.global zNPC_BadGuyMedium_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_BadGuyMedium_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x308768, 0x6C
+.global zNPC_Hench_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_Hench_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x3087D4, 0x6C
+.global zNPC_BadGuyShield_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_BadGuyShield_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x308840, 0x54
+.global zNPC_Omnidroid08_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_Omnidroid08_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x308894, 0x54
+.global initData__24$$2unnamed$$2zNPCCombat_cpp$$2
+initData__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x3088E8, 0xD8
+
 .section .text
 
 .global zNPCCombatInit__Fv

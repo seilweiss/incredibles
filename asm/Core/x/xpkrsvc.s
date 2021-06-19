@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .data
+
+.global g_pkr_read_funcmap_original
+g_pkr_read_funcmap_original:
+	.incbin "baserom.dol", 0x2F14C0, 0x44
+.global g_pkr_read_funcmap
+g_pkr_read_funcmap:
+	.incbin "baserom.dol", 0x2F1504, 0x44
+.global g_readdatainst
+g_readdatainst:
+	.incbin "baserom.dol", 0x2F1548, 0xB2C0
+.global $$21021
+$$21021:
+	.incbin "baserom.dol", 0x2FC808, 0x30
+.global $$21040
+$$21040:
+	.incbin "baserom.dol", 0x2FC838, 0x30
+
 .section .text
 
 .global PKRGetReadFuncs__Fi

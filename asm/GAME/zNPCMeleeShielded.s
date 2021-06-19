@@ -6,6 +6,18 @@
 electricity_config__4zNPC:
 	.skip 0x48
 
+.section .data
+
+.global __vt__Q24zNPC14melee_shielded
+__vt__Q24zNPC14melee_shielded:
+	.incbin "baserom.dol", 0x309950, 0xB8
+.global __vt__Q24zNPC14shield_protect
+__vt__Q24zNPC14shield_protect:
+	.incbin "baserom.dol", 0x309A08, 0x98
+.global __vt__Q24zNPC6shield
+__vt__Q24zNPC6shield:
+	.incbin "baserom.dol", 0x309AA0, 0xA8
+
 .section .text
 
 .global shield_event_wrapper__31$$2unnamed$$2zNPCMeleeShielded_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

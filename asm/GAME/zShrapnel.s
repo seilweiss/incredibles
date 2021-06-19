@@ -39,6 +39,18 @@ sLightningAddInfo:
 sCinProj:
 	.skip 0x114
 
+.section .data
+
+.global $$21196
+$$21196:
+	.incbin "baserom.dol", 0x30D4E8, 0x2C
+.global $$21303
+$$21303:
+	.incbin "baserom.dol", 0x30D514, 0x2C
+.global $$21613
+$$21613:
+	.incbin "baserom.dol", 0x30D540, 0x30
+
 .section .text
 
 .global zFrag_Alloc__F9zFragType

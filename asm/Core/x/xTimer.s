@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global sPauseTimerHash
+sPauseTimerHash:
+	.incbin "baserom.dol", 0x2FFEA0, 0x50
+
 .section .text
 
 .global GetRandomizedTime__FP11xTimerAsset

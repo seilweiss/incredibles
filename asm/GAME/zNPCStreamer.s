@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC10run_stream
+__vt__Q24zNPC10run_stream:
+	.incbin "baserom.dol", 0x314720, 0xA0
+
 .section .text
 
 .global attack__Q24zNPC10run_streamFP15xAnimTransitionP11xAnimSingle

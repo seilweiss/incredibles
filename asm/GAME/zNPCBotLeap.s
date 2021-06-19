@@ -6,6 +6,30 @@
 default_config__Q24zNPC10light_dust:
 	.skip 0x50
 
+.section .data
+
+.global __vt__Q24zNPC8bot_leap
+__vt__Q24zNPC8bot_leap:
+	.incbin "baserom.dol", 0x3105A0, 0xB8
+.global __vt__Q24zNPC13charge_energy
+__vt__Q24zNPC13charge_energy:
+	.incbin "baserom.dol", 0x310658, 0x80
+.global __vt__Q24zNPC11icbm_attack
+__vt__Q24zNPC11icbm_attack:
+	.incbin "baserom.dol", 0x3106D8, 0x7C
+.global __vt__Q24zNPC12icbm_missile
+__vt__Q24zNPC12icbm_missile:
+	.incbin "baserom.dol", 0x310754, 0x80
+.global __vt__Q24zNPC8bot_idle
+__vt__Q24zNPC8bot_idle:
+	.incbin "baserom.dol", 0x3107D4, 0x7C
+.global __vt__Q24zNPC10door_close
+__vt__Q24zNPC10door_close:
+	.incbin "baserom.dol", 0x310850, 0x7C
+.global __vt__Q24zNPC14movepoint_jump
+__vt__Q24zNPC14movepoint_jump:
+	.incbin "baserom.dol", 0x3108CC, 0x9C
+
 .section .text
 
 .global setup__Q24zNPC10light_dustFv

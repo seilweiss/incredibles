@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .data
+
+.global debris_cfg__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb
+debris_cfg__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb:
+	.incbin "baserom.dol", 0x3081E0, 0x44
+.global randomly_hidden_entities__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2
+randomly_hidden_entities__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2:
+	.incbin "baserom.dol", 0x308224, 0x22C
+.global $$24521
+$$24521:
+	.incbin "baserom.dol", 0x308450, 0x1C
+.global __vt__17zNPCBossOmnidroid
+__vt__17zNPCBossOmnidroid:
+	.incbin "baserom.dol", 0x30846C, 0xBC
+
 .section .text
 
 .global shuffle_list__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2FPUii

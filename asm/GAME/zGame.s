@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global tb$2160
+tb$2160:
+	.incbin "baserom.dol", 0x306BA8, 0x78
+
 .section .text
 
 .global PickNextSoak__Fv

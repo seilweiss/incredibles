@@ -6,6 +6,24 @@
 flash_config__4zNPC:
 	.skip 0x48
 
+.section .data
+
+.global __vt__Q24zNPC6lobber
+__vt__Q24zNPC6lobber:
+	.incbin "baserom.dol", 0x308B70, 0xB8
+.global __vt__Q24zNPC35firing_attack_generic$$0Q24zNPC4move$$1
+__vt__Q24zNPC35firing_attack_generic$$0Q24zNPC4move$$1:
+	.incbin "baserom.dol", 0x308C28, 0x7C
+.global __vt__Q24zNPC25lob_generic$$0Q24zNPC4move$$1
+__vt__Q24zNPC25lob_generic$$0Q24zNPC4move$$1:
+	.incbin "baserom.dol", 0x308CA4, 0x7C
+.global __vt__Q24zNPC9human_lob
+__vt__Q24zNPC9human_lob:
+	.incbin "baserom.dol", 0x308D20, 0x80
+.global __vt__Q24zNPC15human_throwable
+__vt__Q24zNPC15human_throwable:
+	.incbin "baserom.dol", 0x308DA0, 0xB8
+
 .section .text
 
 .global get_lob_velocity__4zNPCFRC5xVec3RC5xVec3RC5xVec3ff

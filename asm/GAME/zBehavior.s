@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__8behavior
+__vt__8behavior:
+	.incbin "baserom.dol", 0x30E710, 0x78
+.global __vt__16behavior_manager
+__vt__16behavior_manager:
+	.incbin "baserom.dol", 0x30E788, 0x50
+
 .section .text
 
 .global ErrorCB__FP15xAnimTransitionP11xAnimSinglePv

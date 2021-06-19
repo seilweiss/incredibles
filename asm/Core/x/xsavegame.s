@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .data
+
+.global g_xsgdata
+g_xsgdata:
+	.incbin "baserom.dol", 0x2FC968, 0x20F0
+.global g_leaders
+g_leaders:
+	.incbin "baserom.dol", 0x2FEA58, 0x108
+.global $$21000
+$$21000:
+	.incbin "baserom.dol", 0x2FEB60, 0x38
+
 .section .text
 
 .global xSGStartup__Fv

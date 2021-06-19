@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global astnames
+astnames:
+	.incbin "baserom.dol", 0x300AC8, 0x50
+
 .section .text
 
 .global AlwaysConditional__FP15xAnimTransitionP11xAnimSinglePv

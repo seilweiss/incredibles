@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$21645
+$$21645:
+	.incbin "baserom.dol", 0x30E7D8, 0x40
+.global __vt__Q24zNPC6common
+__vt__Q24zNPC6common:
+	.incbin "baserom.dol", 0x30E818, 0xB8
+
 .section .text
 
 .global scale_model__24$$2unnamed$$2zNPCCommon_cpp$$2FP14xModelInstancef

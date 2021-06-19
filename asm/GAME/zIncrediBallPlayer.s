@@ -1,5 +1,53 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q212zIncrediBall11incrediball
+__vt__Q212zIncrediBall11incrediball:
+	.incbin "baserom.dol", 0x306DC8, 0xEC
+.global __vt__48behavior_implementation$$0Q212zIncrediBall6player$$1
+__vt__48behavior_implementation$$0Q212zIncrediBall6player$$1:
+	.incbin "baserom.dol", 0x306EB4, 0x7C
+.global __vt__Q212zIncrediBall6player
+__vt__Q212zIncrediBall6player:
+	.incbin "baserom.dol", 0x306F30, 0xEC
+.global __vt__Q212zIncrediBall16incredimeter_hud
+__vt__Q212zIncrediBall16incredimeter_hud:
+	.incbin "baserom.dol", 0x30701C, 0x7C
+.global __vt__Q212zIncrediBall10sink_death
+__vt__Q212zIncrediBall10sink_death:
+	.incbin "baserom.dol", 0x307098, 0x7C
+.global __vt__Q212zIncrediBall12damage_death
+__vt__Q212zIncrediBall12damage_death:
+	.incbin "baserom.dol", 0x307114, 0x7C
+.global __vt__Q212zIncrediBall7physics
+__vt__Q212zIncrediBall7physics:
+	.incbin "baserom.dol", 0x307190, 0x7C
+.global __vt__Q212zIncrediBall4ball
+__vt__Q212zIncrediBall4ball:
+	.incbin "baserom.dol", 0x30720C, 0x7C
+.global __vt__Q212zIncrediBall5brake
+__vt__Q212zIncrediBall5brake:
+	.incbin "baserom.dol", 0x307288, 0x7C
+.global __vt__Q212zIncrediBall3hit
+__vt__Q212zIncrediBall3hit:
+	.incbin "baserom.dol", 0x307304, 0x7C
+.global __vt__Q212zIncrediBall5input
+__vt__Q212zIncrediBall5input:
+	.incbin "baserom.dol", 0x307380, 0x7C
+.global __vt__Q212zIncrediBall9catch_air
+__vt__Q212zIncrediBall9catch_air:
+	.incbin "baserom.dol", 0x3073FC, 0x7C
+.global __vt__Q212zIncrediBall8movement
+__vt__Q212zIncrediBall8movement:
+	.incbin "baserom.dol", 0x307478, 0x7C
+.global __vt__Q212zIncrediBall4idle
+__vt__Q212zIncrediBall4idle:
+	.incbin "baserom.dol", 0x3074F4, 0x7C
+.global __vt__Q212zIncrediBall20incrediball_behavior
+__vt__Q212zIncrediBall20incrediball_behavior:
+	.incbin "baserom.dol", 0x307570, 0x80
+
 .section .text
 
 .global choose_strength__Q212zIncrediBall20incrediball_behaviorFP9xAnimPlayP10xAnimState

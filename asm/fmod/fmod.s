@@ -24,6 +24,57 @@ FSOUND_Output_GC_AramPool:
 FSOUND_File_Queue:
 	.skip 0x700
 
+.section .data
+
+.global FSOUND_Listener_Pos
+FSOUND_Listener_Pos:
+	.incbin "baserom.dol", 0x328070, 0x30
+.global FSOUND_Listener_Vel
+FSOUND_Listener_Vel:
+	.incbin "baserom.dol", 0x3280A0, 0x30
+.global FSOUND_Listener_Front
+FSOUND_Listener_Front:
+	.incbin "baserom.dol", 0x3280D0, 0x30
+.global FSOUND_Listener_Top
+FSOUND_Listener_Top:
+	.incbin "baserom.dol", 0x328100, 0x30
+.global FSOUND_Listener_LastPos
+FSOUND_Listener_LastPos:
+	.incbin "baserom.dol", 0x328130, 0x30
+.global FSOUND_Listener_Right
+FSOUND_Listener_Right:
+	.incbin "baserom.dol", 0x328160, 0x30
+.global FSOUND_Device
+FSOUND_Device:
+	.incbin "baserom.dol", 0x328190, 0x2E0
+.global FSOUND_Output_GC_DbTable
+FSOUND_Output_GC_DbTable:
+	.incbin "baserom.dol", 0x328470, 0x400
+.global FSOUND_MixerTable
+FSOUND_MixerTable:
+	.incbin "baserom.dol", 0x328870, 0x2D8
+.global FSOUND_Output_GC
+FSOUND_Output_GC:
+	.incbin "baserom.dol", 0x328B48, 0x3C
+.global $$2937
+$$2937:
+	.incbin "baserom.dol", 0x328B84, 0x24
+.global FSOUND_3D_Reverb_Properties
+FSOUND_3D_Reverb_Properties:
+	.incbin "baserom.dol", 0x328BA8, 0x78
+.global FSOUND_Output_NoSound
+FSOUND_Output_NoSound:
+	.incbin "baserom.dol", 0x328C20, 0x40
+.global FSOUND_Software_PanTable
+FSOUND_Software_PanTable:
+	.incbin "baserom.dol", 0x328C60, 0x100
+.global $$21027
+$$21027:
+	.incbin "baserom.dol", 0x328D60, 0x34
+.global $$21026
+$$21026:
+	.incbin "baserom.dol", 0x328D94, 0x34
+
 .section .text
 
 .global FMUSIC_GetOpenState

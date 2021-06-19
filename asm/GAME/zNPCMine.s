@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC4mine
+__vt__Q24zNPC4mine:
+	.incbin "baserom.dol", 0x309B48, 0xB8
+.global __vt__Q24zNPC12mine_explode
+__vt__Q24zNPC12mine_explode:
+	.incbin "baserom.dol", 0x309C00, 0x7C
+.global __vt__Q24zNPC9mine_home
+__vt__Q24zNPC9mine_home:
+	.incbin "baserom.dol", 0x309C7C, 0x98
+.global __vt__Q24zNPC11mine_charge
+__vt__Q24zNPC11mine_charge:
+	.incbin "baserom.dol", 0x309D14, 0x98
+.global __vt__Q24zNPC12initial_anim
+__vt__Q24zNPC12initial_anim:
+	.incbin "baserom.dol", 0x309DAC, 0x7C
+
 .section .text
 
 .global setup__Q24zNPC12initial_animFv

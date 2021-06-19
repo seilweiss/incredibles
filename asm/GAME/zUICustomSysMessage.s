@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__26zUICustomSysMessageManager
+__vt__26zUICustomSysMessageManager:
+	.incbin "baserom.dol", 0x3150B0, 0x50
+
 .section .text
 
 .global __ct__26zUICustomSysMessageManagerFP3zUI

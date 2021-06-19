@@ -6,6 +6,12 @@
 sBoulderCollis:
 	.skip 0x600
 
+.section .data
+
+.global $$21886
+$$21886:
+	.incbin "baserom.dol", 0x2EF110, 0xC0
+
 .section .text
 
 .global xEntBoulder_FitToModel__FP11xEntBoulder

@@ -9,6 +9,39 @@ energy_config__Q24zNPC11energy_bone:
 context__Q24zNPC11energy_bone:
 	.skip 0x54
 
+.section .data
+
+.global __vt__Q24zNPC19flashing_light_bone
+__vt__Q24zNPC19flashing_light_bone:
+	.incbin "baserom.dol", 0x307D00, 0x7C
+.global __vt__Q24zNPC8aim_bone
+__vt__Q24zNPC8aim_bone:
+	.incbin "baserom.dol", 0x307D7C, 0x7C
+.global __vt__Q24zNPC11energy_bone
+__vt__Q24zNPC11energy_bone:
+	.incbin "baserom.dol", 0x307DF8, 0x7C
+.global __vt__Q24zNPC15uber_laser_bone
+__vt__Q24zNPC15uber_laser_bone:
+	.incbin "baserom.dol", 0x307E74, 0x7C
+.global __vt__Q24zNPC15auto_laser_bone
+__vt__Q24zNPC15auto_laser_bone:
+	.incbin "baserom.dol", 0x307EF0, 0x7C
+.global __vt__Q24zNPC10laser_bone
+__vt__Q24zNPC10laser_bone:
+	.incbin "baserom.dol", 0x307F6C, 0x7C
+.global __vt__Q24zNPC10flash_bone
+__vt__Q24zNPC10flash_bone:
+	.incbin "baserom.dol", 0x307FE8, 0x80
+.global __vt__Q24zNPC10glare_bone
+__vt__Q24zNPC10glare_bone:
+	.incbin "baserom.dol", 0x308068, 0x7C
+.global __vt__Q24zNPC10flame_bone
+__vt__Q24zNPC10flame_bone:
+	.incbin "baserom.dol", 0x3080E4, 0x7C
+.global __vt__Q24zNPC14shrapnel_death
+__vt__Q24zNPC14shrapnel_death:
+	.incbin "baserom.dol", 0x308160, 0x80
+
 .section .text
 
 .global setup__Q24zNPC14shrapnel_deathFv

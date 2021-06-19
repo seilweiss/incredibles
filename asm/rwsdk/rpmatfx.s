@@ -15,6 +15,15 @@ RegEntries:
 EffectRegEntries:
 	.skip 0xD0
 
+.section .data
+
+.global MatFXInfo
+MatFXInfo:
+	.incbin "baserom.dol", 0x32AF90, 0xC
+.global $$2924
+$$2924:
+	.incbin "baserom.dol", 0x32AF9C, 0x24
+
 .section .text
 
 .global MatFXClose

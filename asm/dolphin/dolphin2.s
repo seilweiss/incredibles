@@ -42,6 +42,63 @@ bb2Buf:
 block$18:
 	.skip 0x30
 
+.section .data
+
+.global $$2119
+$$2119:
+	.incbin "baserom.dol", 0x32A150, 0xC8
+.global $$2140
+$$2140:
+	.incbin "baserom.dol", 0x32A218, 0x38
+.global $$2239_0
+$$2239_0:
+	.incbin "baserom.dol", 0x32A250, 0x34
+.global $$2271_0
+$$2271_0:
+	.incbin "baserom.dol", 0x32A284, 0x2C
+.global $$21_12
+$$21_12:
+	.incbin "baserom.dol", 0x32A2B0, 0x48
+.global $$218
+$$218:
+	.incbin "baserom.dol", 0x32A2F8, 0xC
+.global $$224
+$$224:
+	.incbin "baserom.dol", 0x32A304, 0x34
+.global $$2344_0
+$$2344_0:
+	.incbin "baserom.dol", 0x32A338, 0x40
+.global ImmCommand
+ImmCommand:
+	.incbin "baserom.dol", 0x32A378, 0xC
+.global $$2768
+$$2768:
+	.incbin "baserom.dol", 0x32A384, 0x44
+.global $$2907
+$$2907:
+	.incbin "baserom.dol", 0x32A3C8, 0x34
+.global $$21011
+$$21011:
+	.incbin "baserom.dol", 0x32A3FC, 0x34
+.global ErrorTable
+ErrorTable:
+	.incbin "baserom.dol", 0x32A430, 0x48
+.global $$238
+$$238:
+	.incbin "baserom.dol", 0x32A478, 0x1C
+.global $$239
+$$239:
+	.incbin "baserom.dol", 0x32A494, 0x18
+.global $$240
+$$240:
+	.incbin "baserom.dol", 0x32A4AC, 0x14
+.global $$241
+$$241:
+	.incbin "baserom.dol", 0x32A4C0, 0x14
+.global $$244
+$$244:
+	.incbin "baserom.dol", 0x32A4D4, 0x14
+
 .section .text
 
 .global __DVDInitWA

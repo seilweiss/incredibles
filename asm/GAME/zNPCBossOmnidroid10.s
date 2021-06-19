@@ -9,6 +9,27 @@ claw_pound_config__Q24zNPC7Om10Arm:
 body_pound_config__Q24zNPC4Om10:
 	.skip 0xC4
 
+.section .data
+
+.global rubbleSystemConfig0__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2
+rubbleSystemConfig0__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
+	.incbin "baserom.dol", 0x310198, 0x90
+.global rubbleSystemConfig1__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2
+rubbleSystemConfig1__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
+	.incbin "baserom.dol", 0x310228, 0x90
+.global rubbleSystemConfig2__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2
+rubbleSystemConfig2__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
+	.incbin "baserom.dol", 0x3102B8, 0x90
+.global bomb_cfg__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2
+bomb_cfg__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
+	.incbin "baserom.dol", 0x310348, 0x114
+.global __vt__Q24zNPC4Om10
+__vt__Q24zNPC4Om10:
+	.incbin "baserom.dol", 0x31045C, 0xC8
+.global __vt__Q24zNPC8Om10Anim
+__vt__Q24zNPC8Om10Anim:
+	.incbin "baserom.dol", 0x310524, 0x7C
+
 .section .text
 
 .global SetupCollision__Q24zNPC10CollidableFRC4xBoxb

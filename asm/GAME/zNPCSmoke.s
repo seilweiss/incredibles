@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC16NPCSmokeBehavior
+__vt__Q24zNPC16NPCSmokeBehavior:
+	.incbin "baserom.dol", 0x3146A0, 0x80
+
 .section .text
 
 .global setup__Q24zNPC16NPCSmokeBehaviorFv

@@ -9,6 +9,12 @@ dust_config__Q21z4bomb:
 ent_asset__Q21z4bomb:
 	.skip 0x54
 
+.section .data
+
+.global __vt__Q21z4bomb
+__vt__Q21z4bomb:
+	.incbin "baserom.dol", 0x30F648, 0x50
+
 .section .text
 
 .global get_model__19$$2unnamed$$2zBomb_cpp$$2FPCc

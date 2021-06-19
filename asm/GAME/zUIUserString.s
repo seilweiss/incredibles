@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__13zUIUserString
+__vt__13zUIUserString:
+	.incbin "baserom.dol", 0x30D8A8, 0x58
+
 .section .text
 
 .global DoInit__13zUIUserStringFv

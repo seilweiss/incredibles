@@ -6,6 +6,12 @@
 default_config__Q24zNPC17ElectricitySystem:
 	.skip 0x48
 
+.section .data
+
+.global __vt__Q24zNPC6Weapon
+__vt__Q24zNPC6Weapon:
+	.incbin "baserom.dol", 0x30E8D0, 0x80
+
 .section .text
 
 .global setup__Q24zNPC17ElectricitySystemFv

@@ -1,5 +1,32 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC7shooter
+__vt__Q24zNPC7shooter:
+	.incbin "baserom.dol", 0x30A108, 0xB8
+.global __vt__Q24zNPC35bone_container$$0Q24zNPC10laser_bone$$1
+__vt__Q24zNPC35bone_container$$0Q24zNPC10laser_bone$$1:
+	.incbin "baserom.dol", 0x30A1C0, 0x7C
+.global __vt__Q24zNPC6strafe
+__vt__Q24zNPC6strafe:
+	.incbin "baserom.dol", 0x30A23C, 0x98
+.global __vt__Q24zNPC12strafe_shoot
+__vt__Q24zNPC12strafe_shoot:
+	.incbin "baserom.dol", 0x30A2D4, 0x80
+.global __vt__Q24zNPC10wait_shoot
+__vt__Q24zNPC10wait_shoot:
+	.incbin "baserom.dol", 0x30A354, 0x80
+.global __vt__Q24zNPC5shoot
+__vt__Q24zNPC5shoot:
+	.incbin "baserom.dol", 0x30A3D4, 0x80
+.global __vt__Q24zNPC13bone_behavior
+__vt__Q24zNPC13bone_behavior:
+	.incbin "baserom.dol", 0x30A454, 0x7C
+.global __vt__Q24zNPC11firing_bone
+__vt__Q24zNPC11firing_bone:
+	.incbin "baserom.dol", 0x30A4D0, 0x80
+
 .section .text
 
 .global MuzzleFlash_LevelInit__25$$2unnamed$$2zNPCShooter_cpp$$2Fv

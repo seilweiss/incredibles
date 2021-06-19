@@ -60,6 +60,33 @@ gRecvBuf_0:
 gRecvCB_0:
 	.skip 0x20
 
+.section .data
+
+.global $$2128
+$$2128:
+	.incbin "baserom.dol", 0x32AE50, 0x70
+.global $$2499
+$$2499:
+	.incbin "baserom.dol", 0x32AEC0, 0x1C
+.global $$2536
+$$2536:
+	.incbin "baserom.dol", 0x32AEDC, 0x1C
+.global gTRKRestoreFlags
+gTRKRestoreFlags:
+	.incbin "baserom.dol", 0x32AEF8, 0xC
+.global gTRKExceptionStatus
+gTRKExceptionStatus:
+	.incbin "baserom.dol", 0x32AF04, 0x10
+.global gTRKStepStatus
+gTRKStepStatus:
+	.incbin "baserom.dol", 0x32AF14, 0x14
+.global TRK_ISR_OFFSETS
+TRK_ISR_OFFSETS:
+	.incbin "baserom.dol", 0x32AF28, 0x40
+.global gDBCommTable
+gDBCommTable:
+	.incbin "baserom.dol", 0x32AF68, 0x28
+
 .section .text
 
 .global TRKNubMainLoop

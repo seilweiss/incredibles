@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$21237
+$$21237:
+	.incbin "baserom.dol", 0x306C20, 0x38
+
 .section .text
 
 .global zGameExtras_SceneInit__Fv

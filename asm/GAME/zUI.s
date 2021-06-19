@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$21464
+$$21464:
+	.incbin "baserom.dol", 0x30D6B0, 0x20
+.global __vt__3zUI
+__vt__3zUI:
+	.incbin "baserom.dol", 0x30D6D0, 0x58
+
 .section .text
 
 .global UIEventHandler__17$$2unnamed$$2zUI_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

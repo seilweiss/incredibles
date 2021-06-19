@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global g_hiploadinst
+g_hiploadinst:
+	.incbin "baserom.dol", 0x2F0EB8, 0x540
+
 .section .text
 
 .global get_HIPLFuncs__Fv

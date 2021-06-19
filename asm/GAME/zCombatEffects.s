@@ -12,6 +12,21 @@ rockSystem$1660:
 bitsSystem$1663:
 	.skip 0x5C
 
+.section .data
+
+.global hit_effects__28$$2unnamed$$2zCombatEffects_cpp$$2
+hit_effects__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.incbin "baserom.dol", 0x301EF0, 0x1E0
+.global decal_emitters__28$$2unnamed$$2zCombatEffects_cpp$$2
+decal_emitters__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.incbin "baserom.dol", 0x3020D0, 0x7C
+.global $$21775
+$$21775:
+	.incbin "baserom.dol", 0x30214C, 0x68
+.global slam_land_cfg__28$$2unnamed$$2zCombatEffects_cpp$$2
+slam_land_cfg__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.incbin "baserom.dol", 0x3021B4, 0xAC
+
 .section .text
 
 .global setup__Q214zCombatEffects19SparkParticleSystemFv

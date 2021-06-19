@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global zFMVFileTable
+zFMVFileTable:
+	.incbin "baserom.dol", 0x3069E0, 0x1C8
+
 .section .text
 
 .global zFMVFileGetFile__F8eFMVFile

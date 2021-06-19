@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$21299
+$$21299:
+	.incbin "baserom.dol", 0x306868, 0x20
+.global $$21397
+$$21397:
+	.incbin "baserom.dol", 0x306888, 0x20
+
 .section .text
 
 .global zEntInit__FP4zEntP9xEntAssetUi

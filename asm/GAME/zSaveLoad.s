@@ -6,6 +6,27 @@
 zSaveLoadGameTable:
 	.skip 0x148
 
+.section .data
+
+.global zSaveLoadUITable
+zSaveLoadUITable:
+	.incbin "baserom.dol", 0x30C520, 0x36C
+.global $$21924
+$$21924:
+	.incbin "baserom.dol", 0x30C88C, 0x34
+.global $$22334
+$$22334:
+	.incbin "baserom.dol", 0x30C8C0, 0x38
+.global $$22333
+$$22333:
+	.incbin "baserom.dol", 0x30C8F8, 0x28
+.global $$22403
+$$22403:
+	.incbin "baserom.dol", 0x30C920, 0x38
+.global $$22402
+$$22402:
+	.incbin "baserom.dol", 0x30C958, 0x30
+
 .section .text
 
 .global WaitForPreviousPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fb

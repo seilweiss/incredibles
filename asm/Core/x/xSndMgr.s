@@ -6,6 +6,15 @@
 gSnd:
 	.skip 0x3390
 
+.section .data
+
+.global $$22470
+$$22470:
+	.incbin "baserom.dol", 0x2FEC98, 0x24
+.global $$22485
+$$22485:
+	.incbin "baserom.dol", 0x2FECBC, 0x24
+
 .section .text
 
 .global setup_faders__21$$2unnamed$$2xSndMgr_cpp$$2Fv

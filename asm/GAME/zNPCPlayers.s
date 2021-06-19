@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC7frozone
+__vt__Q24zNPC7frozone:
+	.incbin "baserom.dol", 0x314BF0, 0xB8
+.global __vt__Q24zNPC10ice_effect
+__vt__Q24zNPC10ice_effect:
+	.incbin "baserom.dol", 0x314CA8, 0x7C
+.global __vt__Q24zNPC11incrediball
+__vt__Q24zNPC11incrediball:
+	.incbin "baserom.dol", 0x314D24, 0xB8
+.global __vt__Q24zNPC6player
+__vt__Q24zNPC6player:
+	.incbin "baserom.dol", 0x314DDC, 0xB8
+.global __vt__Q24zNPC10health_hud
+__vt__Q24zNPC10health_hud:
+	.incbin "baserom.dol", 0x314E94, 0x7C
+
 .section .text
 
 .global reset__Q24zNPC10health_hudFv

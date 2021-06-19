@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global default_config__Q21z10uber_laser
+default_config__Q21z10uber_laser:
+	.incbin "baserom.dol", 0x314500, 0x180
+.global $$21634
+$$21634:
+	.incbin "baserom.dol", 0x314680, 0x20
+
 .section .text
 
 .global load__10zUberLaserFR5xBaseR9xDynAssetUl

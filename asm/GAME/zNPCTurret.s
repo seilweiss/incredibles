@@ -1,5 +1,41 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC11spin_turret
+__vt__Q24zNPC11spin_turret:
+	.incbin "baserom.dol", 0x30AE78, 0xB8
+.global __vt__Q24zNPC6turret
+__vt__Q24zNPC6turret:
+	.incbin "baserom.dol", 0x30AF30, 0xB8
+.global __vt__Q24zNPC33bone_container$$0Q24zNPC9glow_bone$$1
+__vt__Q24zNPC33bone_container$$0Q24zNPC9glow_bone$$1:
+	.incbin "baserom.dol", 0x30AFE8, 0x7C
+.global __vt__Q24zNPC35bone_container$$0Q24zNPC10smoke_bone$$1
+__vt__Q24zNPC35bone_container$$0Q24zNPC10smoke_bone$$1:
+	.incbin "baserom.dol", 0x30B064, 0x7C
+.global __vt__Q24zNPC24turret_follow_movepoints
+__vt__Q24zNPC24turret_follow_movepoints:
+	.incbin "baserom.dol", 0x30B0E0, 0x88
+.global __vt__Q24zNPC10smoke_bone
+__vt__Q24zNPC10smoke_bone:
+	.incbin "baserom.dol", 0x30B168, 0x7C
+.global __vt__Q24zNPC9glow_bone
+__vt__Q24zNPC9glow_bone:
+	.incbin "baserom.dol", 0x30B1E4, 0x7C
+.global __vt__Q24zNPC22shoot_along_movepoints
+__vt__Q24zNPC22shoot_along_movepoints:
+	.incbin "baserom.dol", 0x30B260, 0x7C
+.global __vt__Q24zNPC12turret_alert
+__vt__Q24zNPC12turret_alert:
+	.incbin "baserom.dol", 0x30B2DC, 0x7C
+.global __vt__Q24zNPC12up_down_spin
+__vt__Q24zNPC12up_down_spin:
+	.incbin "baserom.dol", 0x30B358, 0x7C
+.global __vt__Q24zNPC7up_down
+__vt__Q24zNPC7up_down:
+	.incbin "baserom.dol", 0x30B3D4, 0x7C
+
 .section .text
 
 .global in_range__Q24zNPC7up_downFP15xAnimTransitionP11xAnimSingle

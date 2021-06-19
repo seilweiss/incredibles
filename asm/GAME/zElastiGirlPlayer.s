@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global bounds$2264
+bounds$2264:
+	.incbin "baserom.dol", 0x3066A0, 0xA8
+.global __vt__17zElastiGirlPlayer
+__vt__17zElastiGirlPlayer:
+	.incbin "baserom.dol", 0x306748, 0x120
+
 .section .text
 
 .global ParseIni__17zElastiGirlPlayerFv

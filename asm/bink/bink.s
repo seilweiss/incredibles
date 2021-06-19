@@ -39,6 +39,171 @@ lbl_803A5C70:
 lbl_803A5C74:
 	.skip 0x104
 
+.section .data
+
+.global starttime.195
+starttime.195:
+	.incbin "baserom.dol", 0x31B750, 0x8
+.global aram
+aram:
+	.incbin "baserom.dol", 0x31B758, 0x4
+.global lbl_8031E75C
+lbl_8031E75C:
+	.incbin "baserom.dol", 0x31B75C, 0x4
+.global sysopen
+sysopen:
+	.incbin "baserom.dol", 0x31B760, 0x4
+.global sndopen
+sndopen:
+	.incbin "baserom.dol", 0x31B764, 0x4
+.global numopensounds
+numopensounds:
+	.incbin "baserom.dol", 0x31B768, 0x4
+.global cb_bink_IO
+cb_bink_IO:
+	.incbin "baserom.dol", 0x31B76C, 0x4
+.global cb_bink_sound
+cb_bink_sound:
+	.incbin "baserom.dol", 0x31B770, 0x4
+.global ForceRate
+ForceRate:
+	.incbin "baserom.dol", 0x31B774, 0x4
+.global IOBufferSize
+IOBufferSize:
+	.incbin "baserom.dol", 0x31B778, 0x4
+.global Simulate
+Simulate:
+	.incbin "baserom.dol", 0x31B77C, 0x4
+.global TotTracks
+TotTracks:
+	.incbin "baserom.dol", 0x31B780, 0x4
+.global TrackNums
+TrackNums:
+	.incbin "baserom.dol", 0x31B784, 0x20
+.global UserOpen
+UserOpen:
+	.incbin "baserom.dol", 0x31B7A4, 0x4
+.global LogoData
+LogoData:
+	.incbin "baserom.dol", 0x31B7A8, 0x3A00
+.global usermalloc
+usermalloc:
+	.incbin "baserom.dol", 0x31F1A8, 0x4
+.global userfree
+userfree:
+	.incbin "baserom.dol", 0x31F1AC, 0x14
+.global clamp_a4
+clamp_a4:
+	.incbin "baserom.dol", 0x31F1C0, 0x4
+.global ytable
+ytable:
+	.incbin "baserom.dol", 0x31F1C4, 0x4
+.global clamp_r
+clamp_r:
+	.incbin "baserom.dol", 0x31F1C8, 0x4
+.global clamp_g
+clamp_g:
+	.incbin "baserom.dol", 0x31F1CC, 0x4
+.global clamp_b
+clamp_b:
+	.incbin "baserom.dol", 0x31F1D0, 0x4
+.global clamp_ytable
+clamp_ytable:
+	.incbin "baserom.dol", 0x31F1D4, 0x4
+.global clamptable
+clamptable:
+	.incbin "baserom.dol", 0x31F1D8, 0x8
+.global S
+S:
+	.incbin "baserom.dol", 0x31F1E0, 0x20
+.global lbl_80322200
+lbl_80322200:
+	.incbin "baserom.dol", 0x31F200, 0x4
+.global lbl_80322204
+lbl_80322204:
+	.incbin "baserom.dol", 0x31F204, 0x1C
+.global YUVTables
+YUVTables:
+	.incbin "baserom.dol", 0x31F220, 0x400
+.global lbl_80322620
+lbl_80322620:
+	.incbin "baserom.dol", 0x31F620, 0x400
+.global lbl_80322A20
+lbl_80322A20:
+	.incbin "baserom.dol", 0x31FA20, 0x400
+.global lbl_80322E20
+lbl_80322E20:
+	.incbin "baserom.dol", 0x31FE20, 0x400
+.global RGBshift
+RGBshift:
+	.incbin "baserom.dol", 0x320220, 0x30
+.global whichyuv
+whichyuv:
+	.incbin "baserom.dol", 0x320250, 0x4
+.global rgb_layout_16
+rgb_layout_16:
+	.incbin "baserom.dol", 0x320254, 0x4
+.global rgb_layout_high
+rgb_layout_high:
+	.incbin "baserom.dol", 0x320258, 0x4
+.global z2hsize
+z2hsize:
+	.incbin "baserom.dol", 0x32025C, 0x4
+.global z2hbuf1
+z2hbuf1:
+	.incbin "baserom.dol", 0x320260, 0x4
+.global z2hbuf2
+z2hbuf2:
+	.incbin "baserom.dol", 0x320264, 0x4
+.global donetables
+donetables:
+	.incbin "baserom.dol", 0x320268, 0x18
+.global blits32
+blits32:
+	.incbin "baserom.dol", 0x320280, 0x60
+.global blits32a
+blits32a:
+	.incbin "baserom.dol", 0x3202E0, 0x60
+.global blits16
+blits16:
+	.incbin "baserom.dol", 0x320340, 0x60
+.global blits16a4
+blits16a4:
+	.incbin "baserom.dol", 0x3203A0, 0x60
+.global blitsyuy2
+blitsyuy2:
+	.incbin "baserom.dol", 0x320400, 0x60
+.global rlelens_0
+rlelens_0:
+	.incbin "baserom.dol", 0x320460, 0x10
+.global bandtopfreq
+bandtopfreq:
+	.incbin "baserom.dol", 0x320470, 0x64
+.global Undecibel
+Undecibel:
+	.incbin "baserom.dol", 0x3204D4, 0x400
+.global invertbins
+invertbins:
+	.incbin "baserom.dol", 0x3208D4, 0x6C
+.global huff4decodes
+huff4decodes:
+	.incbin "baserom.dol", 0x320940, 0x40
+.global pushtot
+pushtot:
+	.incbin "baserom.dol", 0x320980, 0x4
+.global pushcur
+pushcur:
+	.incbin "baserom.dol", 0x320984, 0x4
+.global pushptr
+pushptr:
+	.incbin "baserom.dol", 0x320988, 0x4
+.global pushamt
+pushamt:
+	.incbin "baserom.dol", 0x32098C, 0x4
+.global cursize
+cursize:
+	.incbin "baserom.dol", 0x320990, 0x8
+
 .section .text
 
 .global mult64anddiv

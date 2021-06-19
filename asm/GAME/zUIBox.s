@@ -6,6 +6,12 @@
 vertex$1100:
 	.skip 0x60
 
+.section .data
+
+.global __vt__6zUIBox
+__vt__6zUIBox:
+	.incbin "baserom.dol", 0x30D728, 0x58
+
 .section .text
 
 .global DoInit__6zUIBoxFv

@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC3car
+__vt__Q24zNPC3car:
+	.incbin "baserom.dol", 0x308528, 0xB8
+.global __vt__Q24zNPC8CarDrive
+__vt__Q24zNPC8CarDrive:
+	.incbin "baserom.dol", 0x3085E0, 0x8C
+.global __vt__Q24zNPC7CarStop
+__vt__Q24zNPC7CarStop:
+	.incbin "baserom.dol", 0x30866C, 0x7C
+.global __vt__Q24zNPC11BrakeLights
+__vt__Q24zNPC11BrakeLights:
+	.incbin "baserom.dol", 0x3086E8, 0x80
+
 .section .text
 
 .global __cl__Q24zNPC20car_collide_callbackFR4xEnt

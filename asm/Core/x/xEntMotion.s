@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$21636
+$$21636:
+	.incbin "baserom.dol", 0x2EF1D0, 0x20
+
 .section .text
 
 .global xEntMotionInit__FP10xEntMotionP4xEntP15xEntMotionAsset

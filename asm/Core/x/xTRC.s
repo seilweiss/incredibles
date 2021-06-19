@@ -6,6 +6,15 @@
 composed_message_text:
 	.skip 0x100
 
+.section .data
+
+.global tb$1039
+tb$1039:
+	.incbin "baserom.dol", 0x2FFEF0, 0x74
+.global tb$1228
+tb$1228:
+	.incbin "baserom.dol", 0x2FFF64, 0x74
+
 .section .text
 
 .global xTRCInit__Fv

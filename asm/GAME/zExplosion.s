@@ -6,6 +6,18 @@
 presi__24$$2unnamed$$2zExplosion_cpp$$2:
 	.skip 0x780
 
+.section .data
+
+.global anim$1784
+anim$1784:
+	.incbin "baserom.dol", 0x3068A8, 0x60
+.global anim$1808
+anim$1808:
+	.incbin "baserom.dol", 0x306908, 0x60
+.global anim$1815
+anim$1815:
+	.incbin "baserom.dol", 0x306968, 0x78
+
 .section .text
 
 .global find_decal_type__24$$2unnamed$$2zExplosion_cpp$$2FUi

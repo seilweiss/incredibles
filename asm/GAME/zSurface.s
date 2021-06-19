@@ -9,6 +9,12 @@ sDefaultSurfaceProps:
 sDefaultSurfaceAsset:
 	.skip 0x1B8
 
+.section .data
+
+.global sMapper
+sMapper:
+	.incbin "baserom.dol", 0x30D570, 0x50
+
 .section .text
 
 .global zSurfaceInit__Fv

@@ -9,6 +9,12 @@ sLight:
 gTemporaryLights:
 	.skip 0x88
 
+.section .data
+
+.global sEffectFuncs
+sEffectFuncs:
+	.incbin "baserom.dol", 0x3075F0, 0x48
+
 .section .text
 
 .global zLightResetAll__FP4xEnv

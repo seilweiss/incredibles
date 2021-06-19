@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$2922
+$$2922:
+	.incbin "baserom.dol", 0x2FECE0, 0x48
+
 .section .text
 
 .global xSoundFXWillSendDone__FP8xSoundFX

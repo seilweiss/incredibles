@@ -6,6 +6,66 @@
 dust_config__4zNPC:
 	.skip 0x50
 
+.section .data
+
+.global __vt__Q24zNPC5melee
+__vt__Q24zNPC5melee:
+	.incbin "baserom.dol", 0x308E58, 0xB8
+.global __vt__Q24zNPC5carry
+__vt__Q24zNPC5carry:
+	.incbin "baserom.dol", 0x308F10, 0x7C
+.global __vt__Q24zNPC10projectile
+__vt__Q24zNPC10projectile:
+	.incbin "baserom.dol", 0x308F8C, 0x7C
+.global __vt__Q24zNPC13slow_approach
+__vt__Q24zNPC13slow_approach:
+	.incbin "baserom.dol", 0x309008, 0x98
+.global __vt__Q24zNPC12double_chase
+__vt__Q24zNPC12double_chase:
+	.incbin "baserom.dol", 0x3090A0, 0x98
+.global __vt__Q24zNPC5chase
+__vt__Q24zNPC5chase:
+	.incbin "baserom.dol", 0x309138, 0x98
+.global __vt__Q24zNPC10chase_base
+__vt__Q24zNPC10chase_base:
+	.incbin "baserom.dol", 0x3091D0, 0x98
+.global __vt__Q24zNPC9back_away
+__vt__Q24zNPC9back_away:
+	.incbin "baserom.dol", 0x309268, 0x98
+.global __vt__Q24zNPC5taunt
+__vt__Q24zNPC5taunt:
+	.incbin "baserom.dol", 0x309300, 0x98
+.global __vt__Q24zNPC7on_edge
+__vt__Q24zNPC7on_edge:
+	.incbin "baserom.dol", 0x309398, 0x98
+.global __vt__Q24zNPC5stuck
+__vt__Q24zNPC5stuck:
+	.incbin "baserom.dol", 0x309430, 0x98
+.global __vt__Q24zNPC10run_attack
+__vt__Q24zNPC10run_attack:
+	.incbin "baserom.dol", 0x3094C8, 0x7C
+.global __vt__Q24zNPC8bot_jump
+__vt__Q24zNPC8bot_jump:
+	.incbin "baserom.dol", 0x309544, 0x98
+.global __vt__Q24zNPC8npc_jump
+__vt__Q24zNPC8npc_jump:
+	.incbin "baserom.dol", 0x3095DC, 0x98
+.global __vt__Q24zNPC8scramble
+__vt__Q24zNPC8scramble:
+	.incbin "baserom.dol", 0x309674, 0x98
+.global __vt__Q24zNPC4busy
+__vt__Q24zNPC4busy:
+	.incbin "baserom.dol", 0x30970C, 0x7C
+.global __vt__Q24zNPC17patrol_movepoints
+__vt__Q24zNPC17patrol_movepoints:
+	.incbin "baserom.dol", 0x309788, 0x98
+.global __vt__Q24zNPC4home
+__vt__Q24zNPC4home:
+	.incbin "baserom.dol", 0x309820, 0x98
+.global __vt__Q24zNPC6defend
+__vt__Q24zNPC6defend:
+	.incbin "baserom.dol", 0x3098B8, 0x98
+
 .section .text
 
 .global zNPC_ForceEffect__23$$2unnamed$$2zNPCMelee_cpp$$2FP9xAnimPlayPCc

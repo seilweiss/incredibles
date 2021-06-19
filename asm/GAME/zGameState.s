@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$21040_0
+$$21040_0:
+	.incbin "baserom.dol", 0x306C58, 0x30
+
 .section .text
 
 .global zGameStateGet__Fv

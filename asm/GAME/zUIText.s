@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__7zUIText
+__vt__7zUIText:
+	.incbin "baserom.dol", 0x30D850, 0x58
+
 .section .text
 
 .global DoInit__7zUITextFv

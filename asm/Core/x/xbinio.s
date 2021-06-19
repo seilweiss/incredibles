@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .data
+
+.global g_loadinst
+g_loadinst:
+	.incbin "baserom.dol", 0x2EE120, 0x340
+.global g_xfload
+g_xfload:
+	.incbin "baserom.dol", 0x2EE460, 0x8A0
+.global g_xtraload
+g_xtraload:
+	.incbin "baserom.dol", 0x2EED00, 0x1E0
+
 .section .text
 
 .global xBinioLoadCreate__FPCci

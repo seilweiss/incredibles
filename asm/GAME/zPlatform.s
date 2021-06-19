@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$21230
+$$21230:
+	.incbin "baserom.dol", 0x30C2B0, 0x38
+.global $$21912
+$$21912:
+	.incbin "baserom.dol", 0x30C2E8, 0x38
+
 .section .text
 
 .global genericPlatRender__FP4xEnt

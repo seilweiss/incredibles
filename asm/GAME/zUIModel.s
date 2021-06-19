@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__8zUIModel
+__vt__8zUIModel:
+	.incbin "baserom.dol", 0x30D7F8, 0x58
+
 .section .text
 
 .global DoInit__8zUIModelFv

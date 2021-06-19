@@ -377,8 +377,7 @@ DTORS_O_FILES :=\
 RODATA_O_FILES :=\
 	$(OBJ_DIR)/asm/rodata.o
 
-DATA_O_FILES :=\
-	$(OBJ_DIR)/asm/data.o
+DATA_O_FILES :=
 
 BSS_O_FILES :=
 

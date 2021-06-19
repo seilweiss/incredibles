@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global g_crc32_table
+g_crc32_table:
+	.incbin "baserom.dol", 0x2FFFD8, 0x400
+
 .section .text
 
 .global xUtilStartup__Fv

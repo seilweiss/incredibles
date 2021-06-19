@@ -6,6 +6,18 @@
 fire_config__4zNPC:
 	.skip 0x50
 
+.section .data
+
+.global __vt__Q24zNPC8friendly
+__vt__Q24zNPC8friendly:
+	.incbin "baserom.dol", 0x3089C0, 0xB8
+.global __vt__Q24zNPC10buddy_anim
+__vt__Q24zNPC10buddy_anim:
+	.incbin "baserom.dol", 0x308A78, 0x7C
+.global __vt__Q24zNPC4idle
+__vt__Q24zNPC4idle:
+	.incbin "baserom.dol", 0x308AF4, 0x7C
+
 .section .text
 
 .global __ct__Q24zNPC8npc_moveFv

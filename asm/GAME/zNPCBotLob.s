@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .data
+
+.global __vt__Q24zNPC13bot_lob_water
+__vt__Q24zNPC13bot_lob_water:
+	.incbin "baserom.dol", 0x30F390, 0xB8
+.global __vt__Q24zNPC11water_death
+__vt__Q24zNPC11water_death:
+	.incbin "baserom.dol", 0x30F448, 0x7C
+.global __vt__Q24zNPC9water_lob
+__vt__Q24zNPC9water_lob:
+	.incbin "baserom.dol", 0x30F4C4, 0x84
+.global __vt__Q24zNPC10water_idle
+__vt__Q24zNPC10water_idle:
+	.incbin "baserom.dol", 0x30F548, 0x7C
+.global __vt__Q24zNPC7bot_lob
+__vt__Q24zNPC7bot_lob:
+	.incbin "baserom.dol", 0x30F5C4, 0x84
+
 .section .text
 
 .global runnable__Q24zNPC7bot_lobFf

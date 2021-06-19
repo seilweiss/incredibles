@@ -12,6 +12,60 @@ dust_config__Q24zNPC10wheel_bone:
 cfg__Q24zNPC16shockwave_attack:
 	.skip 0xC4
 
+.section .data
+
+.global __vt__Q24zNPC4tank
+__vt__Q24zNPC4tank:
+	.incbin "baserom.dol", 0x30A550, 0xB8
+.global __vt__Q24zNPC32bone_container$$0Q24zNPC8aim_bone$$1
+__vt__Q24zNPC32bone_container$$0Q24zNPC8aim_bone$$1:
+	.incbin "baserom.dol", 0x30A608, 0x7C
+.global __vt__Q24zNPC40bone_container$$0Q24zNPC15auto_laser_bone$$1
+__vt__Q24zNPC40bone_container$$0Q24zNPC15auto_laser_bone$$1:
+	.incbin "baserom.dol", 0x30A684, 0x7C
+.global __vt__Q24zNPC39firing_attack_generic$$0Q24zNPC8npc_move$$1
+__vt__Q24zNPC39firing_attack_generic$$0Q24zNPC8npc_move$$1:
+	.incbin "baserom.dol", 0x30A700, 0x98
+.global __vt__Q24zNPC29lob_generic$$0Q24zNPC8npc_move$$1
+__vt__Q24zNPC29lob_generic$$0Q24zNPC8npc_move$$1:
+	.incbin "baserom.dol", 0x30A798, 0x98
+.global __vt__Q24zNPC35bone_container$$0Q24zNPC10flame_bone$$1
+__vt__Q24zNPC35bone_container$$0Q24zNPC10flame_bone$$1:
+	.incbin "baserom.dol", 0x30A830, 0x7C
+.global __vt__Q24zNPC40bone_container$$0Q24zNPC15uber_laser_bone$$1
+__vt__Q24zNPC40bone_container$$0Q24zNPC15uber_laser_bone$$1:
+	.incbin "baserom.dol", 0x30A8AC, 0x7C
+.global __vt__Q24zNPC17tank_laser_system
+__vt__Q24zNPC17tank_laser_system:
+	.incbin "baserom.dol", 0x30A928, 0x8C
+.global __vt__Q24zNPC12laser_system
+__vt__Q24zNPC12laser_system:
+	.incbin "baserom.dol", 0x30A9B4, 0x7C
+.global __vt__Q24zNPC8tank_lob
+__vt__Q24zNPC8tank_lob:
+	.incbin "baserom.dol", 0x30AA30, 0xA8
+.global __vt__Q24zNPC17tank_flamethrower
+__vt__Q24zNPC17tank_flamethrower:
+	.incbin "baserom.dol", 0x30AAD8, 0xA8
+.global __vt__Q24zNPC9tank_beam
+__vt__Q24zNPC9tank_beam:
+	.incbin "baserom.dol", 0x30AB80, 0x8C
+.global __vt__Q24zNPC10laser_beam
+__vt__Q24zNPC10laser_beam:
+	.incbin "baserom.dol", 0x30AC0C, 0x7C
+.global __vt__Q24zNPC10tank_sleep
+__vt__Q24zNPC10tank_sleep:
+	.incbin "baserom.dol", 0x30AC88, 0x7C
+.global __vt__Q24zNPC12light_damage
+__vt__Q24zNPC12light_damage:
+	.incbin "baserom.dol", 0x30AD04, 0x7C
+.global __vt__Q24zNPC16shockwave_attack
+__vt__Q24zNPC16shockwave_attack:
+	.incbin "baserom.dol", 0x30AD80, 0x7C
+.global __vt__Q24zNPC10wheel_bone
+__vt__Q24zNPC10wheel_bone:
+	.incbin "baserom.dol", 0x30ADFC, 0x7C
+
 .section .text
 
 .global add_wheel_bones__Q24zNPC10wheel_boneFPQ24zNPC6common

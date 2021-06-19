@@ -6,6 +6,12 @@
 worlds__25$$2unnamed$$2zDispatcher_cpp$$2:
 	.skip 0x4D8
 
+.section .data
+
+.global $$21473
+$$21473:
+	.incbin "baserom.dol", 0x306638, 0x68
+
 .section .text
 
 .global zDispatcherParseINI__FP8xIniFile

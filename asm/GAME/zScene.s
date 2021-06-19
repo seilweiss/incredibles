@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .data
+
+.global sInitTable
+sInitTable:
+	.incbin "baserom.dol", 0x30C988, 0x3B8
+.global $$22433
+$$22433:
+	.incbin "baserom.dol", 0x30CD40, 0x1D8
+.global $$22518
+$$22518:
+	.incbin "baserom.dol", 0x30CF18, 0x1D8
+.global $$22912
+$$22912:
+	.incbin "baserom.dol", 0x30D0F0, 0x1D8
+.global $$23178
+$$23178:
+	.incbin "baserom.dol", 0x30D2C8, 0x220
+
 .section .text
 
 .global zSceneIsLoadingPackFile__Fv

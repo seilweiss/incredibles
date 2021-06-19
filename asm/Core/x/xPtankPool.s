@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .data
+
+.global groups__24$$2unnamed$$2xPtankPool_cpp$$2
+groups__24$$2unnamed$$2xPtankPool_cpp$$2:
+	.incbin "baserom.dol", 0x2FC868, 0xA8
+.global region_array
+region_array:
+	.incbin "baserom.dol", 0x2FC910, 0x58
+
 .section .text
 
 .global sort_buckets__24$$2unnamed$$2xPtankPool_cpp$$2FRQ224$$2unnamed$$2xPtankPool_cpp$$210group_data

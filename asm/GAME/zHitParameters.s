@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global zHitSourceCCs
+zHitSourceCCs:
+	.incbin "baserom.dol", 0x306D70, 0x58
+
 .section .text
 
 .global getSourceCCIdx__FUi

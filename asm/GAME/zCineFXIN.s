@@ -1,5 +1,206 @@
 .include "macros.inc"
 
+.section .data
+
+.global bv_hench3_fly_blade
+bv_hench3_fly_blade:
+	.incbin "baserom.dol", 0x315150, 0x60
+.global bv_hench4_fly_blade
+bv_hench4_fly_blade:
+	.incbin "baserom.dol", 0x3151B0, 0x60
+.global bv_helicopter_main_blade
+bv_helicopter_main_blade:
+	.incbin "baserom.dol", 0x315210, 0x60
+.global bv_helicopter_tail_blade
+bv_helicopter_tail_blade:
+	.incbin "baserom.dol", 0x315270, 0x60
+.global bv_helicopter_tail_blade_2
+bv_helicopter_tail_blade_2:
+	.incbin "baserom.dol", 0x3152D0, 0x60
+.global bv_boss_helicopter_main_blade
+bv_boss_helicopter_main_blade:
+	.incbin "baserom.dol", 0x315330, 0x60
+.global bv_boss_helicopter_tail_blade
+bv_boss_helicopter_tail_blade:
+	.incbin "baserom.dol", 0x315390, 0x60
+.global bv_boss_helicopter_tail_blade_2
+bv_boss_helicopter_tail_blade_2:
+	.incbin "baserom.dol", 0x3153F0, 0x60
+.global bv_police_helicopter_main_blade
+bv_police_helicopter_main_blade:
+	.incbin "baserom.dol", 0x315450, 0x60
+.global bv_police_helicopter_tail_blade
+bv_police_helicopter_tail_blade:
+	.incbin "baserom.dol", 0x3154B0, 0x60
+.global bv_police_helicopter_tail_blade_2
+bv_police_helicopter_tail_blade_2:
+	.incbin "baserom.dol", 0x315510, 0x60
+.global cinfx_om04_opening_bv_dust
+cinfx_om04_opening_bv_dust:
+	.incbin "baserom.dol", 0x315570, 0x4C
+.global cinfx_om04_opening_bv_bounce_dust
+cinfx_om04_opening_bv_bounce_dust:
+	.incbin "baserom.dol", 0x3155BC, 0x4C
+.global cinfx_om04_opening_bv
+cinfx_om04_opening_bv:
+	.incbin "baserom.dol", 0x315608, 0x5C8
+.global cinfx_om04_ending_bv
+cinfx_om04_ending_bv:
+	.incbin "baserom.dol", 0x315BD0, 0x250
+.global cinfx_om01_opening_dust
+cinfx_om01_opening_dust:
+	.incbin "baserom.dol", 0x315E20, 0x4C
+.global cinfx_om01_heli_escape
+cinfx_om01_heli_escape:
+	.incbin "baserom.dol", 0x315E6C, 0x5C8
+.global cinfx_om01_towers_dust
+cinfx_om01_towers_dust:
+	.incbin "baserom.dol", 0x316434, 0x4C
+.global cinfx_om01_frozone_chase
+cinfx_om01_frozone_chase:
+	.incbin "baserom.dol", 0x316480, 0x534
+.global cinfx_om01_opening
+cinfx_om01_opening:
+	.incbin "baserom.dol", 0x3169B4, 0x4A0
+.global cinfx_om01_towers
+cinfx_om01_towers:
+	.incbin "baserom.dol", 0x316E54, 0x40C
+.global cinfx_ld04_opening_dash_dust
+cinfx_ld04_opening_dash_dust:
+	.incbin "baserom.dol", 0x317260, 0x4C
+.global cinfx_ld04_opening_dash
+cinfx_ld04_opening_dash:
+	.incbin "baserom.dol", 0x3172AC, 0x250
+.global cinfx_ld04_ending_dash
+cinfx_ld04_ending_dash:
+	.incbin "baserom.dol", 0x3174FC, 0x254
+.global cinfx_hs01_incrediball_intro_ball
+cinfx_hs01_incrediball_intro_ball:
+	.incbin "baserom.dol", 0x317750, 0xC0
+.global cinfx_hs01_incrediball_intro
+cinfx_hs01_incrediball_intro:
+	.incbin "baserom.dol", 0x317810, 0x2E4
+.global cinfx_hs01_ending
+cinfx_hs01_ending:
+	.incbin "baserom.dol", 0x317AF4, 0x1BC
+.global cinfx_hs01_incrediball_ending_ball
+cinfx_hs01_incrediball_ending_ball:
+	.incbin "baserom.dol", 0x317CB0, 0xC0
+.global cinfx_hs01_incrediball_ending
+cinfx_hs01_incrediball_ending:
+	.incbin "baserom.dol", 0x317D70, 0x2E4
+.global cinfx_hs01_frozone
+cinfx_hs01_frozone:
+	.incbin "baserom.dol", 0x318054, 0x1BC
+.global cinfx_hs01_elastigirl_dust
+cinfx_hs01_elastigirl_dust:
+	.incbin "baserom.dol", 0x318210, 0x4C
+.global cinfx_hs01_elastigirl
+cinfx_hs01_elastigirl:
+	.incbin "baserom.dol", 0x31825C, 0x2E4
+.global cutmap$2140
+cutmap$2140:
+	.incbin "baserom.dol", 0x318540, 0x48
+.global cinfx_nj02_opening_dust
+cinfx_nj02_opening_dust:
+	.incbin "baserom.dol", 0x318588, 0x4C
+.global cinfx_nj02_turret_pickup_dust
+cinfx_nj02_turret_pickup_dust:
+	.incbin "baserom.dol", 0x3185D4, 0x4C
+.global cinfx_nj02_ending_dust
+cinfx_nj02_ending_dust:
+	.incbin "baserom.dol", 0x318620, 0x4C
+.global cinfx_nj02_rolling_omni_dust
+cinfx_nj02_rolling_omni_dust:
+	.incbin "baserom.dol", 0x31866C, 0x4C
+.global cinfx_nj02_opening_omni_dust
+cinfx_nj02_opening_omni_dust:
+	.incbin "baserom.dol", 0x3186B8, 0x4C
+.global cinfx_nj02_turret_pickup
+cinfx_nj02_turret_pickup:
+	.incbin "baserom.dol", 0x318704, 0x1BC
+.global cinfx_nj02_turret_dropoff
+cinfx_nj02_turret_dropoff:
+	.incbin "baserom.dol", 0x3188C0, 0x128
+.global cinfx_nj02_ending
+cinfx_nj02_ending:
+	.incbin "baserom.dol", 0x3189E8, 0x1BC
+.global cinfx_nj02_opening
+cinfx_nj02_opening:
+	.incbin "baserom.dol", 0x318BA4, 0x1BC
+.global cinfx_nj02_omni_trees
+cinfx_nj02_omni_trees:
+	.incbin "baserom.dol", 0x318D60, 0x378
+.global cutmap$2145
+cutmap$2145:
+	.incbin "baserom.dol", 0x3190D8, 0x48
+.global cinfx_ni03_opening_omni_dust3
+cinfx_ni03_opening_omni_dust3:
+	.incbin "baserom.dol", 0x319120, 0x4C
+.global cinfx_ni03_opening_omni
+cinfx_ni03_opening_omni:
+	.incbin "baserom.dol", 0x31916C, 0x2E4
+.global cinfx_ni03_ending
+cinfx_ni03_ending:
+	.incbin "baserom.dol", 0x319450, 0x128
+.global cinfx_ft01_dash_vine_dust
+cinfx_ft01_dash_vine_dust:
+	.incbin "baserom.dol", 0x319578, 0x4C
+.global cinfx_ft01_dash_vine
+cinfx_ft01_dash_vine:
+	.incbin "baserom.dol", 0x3195C4, 0x250
+.global cinfx_om03_opening
+cinfx_om03_opening:
+	.incbin "baserom.dol", 0x319814, 0x250
+.global cinfx_om03_ending
+cinfx_om03_ending:
+	.incbin "baserom.dol", 0x319A64, 0x2E4
+.global cinfx_om03_copter_ride_02
+cinfx_om03_copter_ride_02:
+	.incbin "baserom.dol", 0x319D48, 0x534
+.global cinfx_om03_copter_ride_01
+cinfx_om03_copter_ride_01:
+	.incbin "baserom.dol", 0x31A27C, 0x2E4
+.global cinfx_ft03_ending_ball
+cinfx_ft03_ending_ball:
+	.incbin "baserom.dol", 0x31A560, 0xC0
+.global cinfx_ft04_ending_dust
+cinfx_ft04_ending_dust:
+	.incbin "baserom.dol", 0x31A620, 0x4C
+.global cinfx_ft03_tower_fall
+cinfx_ft03_tower_fall:
+	.incbin "baserom.dol", 0x31A66C, 0x1BC
+.global cinfx_ft04_ending
+cinfx_ft04_ending:
+	.incbin "baserom.dol", 0x31A828, 0x1BC
+.global cinfx_rs01_opening_mr_i
+cinfx_rs01_opening_mr_i:
+	.incbin "baserom.dol", 0x31A9E4, 0x1BC
+.global cinfx_rs01_opening_elastigirl
+cinfx_rs01_opening_elastigirl:
+	.incbin "baserom.dol", 0x31ABA0, 0x1BC
+.global cinfx_nj01_opening_dust
+cinfx_nj01_opening_dust:
+	.incbin "baserom.dol", 0x31AD5C, 0x4C
+.global cinfx_nj01_opening
+cinfx_nj01_opening:
+	.incbin "baserom.dol", 0x31ADA8, 0x250
+.global cinfx_nj03_opening_hard_landing_dust
+cinfx_nj03_opening_hard_landing_dust:
+	.incbin "baserom.dol", 0x31AFF8, 0x4C
+.global cinfx_nj03_opening_omni_landing_dust
+cinfx_nj03_opening_omni_landing_dust:
+	.incbin "baserom.dol", 0x31B044, 0x4C
+.global cinfx_nj03_opening
+cinfx_nj03_opening:
+	.incbin "baserom.dol", 0x31B090, 0x2E4
+.global cinfx_ni01_velocipodin
+cinfx_ni01_velocipodin:
+	.incbin "baserom.dol", 0x31B374, 0x128
+.global cinfx_ni01_velocipodout
+cinfx_ni01_velocipodout:
+	.incbin "baserom.dol", 0x31B49C, 0x1BC
+
 .section .text
 
 .global zCinFX_LightDust_Twk__FPCcP9NCINEntry

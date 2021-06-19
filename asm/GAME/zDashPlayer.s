@@ -12,6 +12,75 @@ dust_config__5zDash:
 fire_emit_config__5zDash:
 	.skip 0x48
 
+.section .data
+
+.global __vt__Q25zDash4dash
+__vt__Q25zDash4dash:
+	.incbin "baserom.dol", 0x305A88, 0xEC
+.global __vt__40behavior_implementation$$0Q25zDash6player$$1
+__vt__40behavior_implementation$$0Q25zDash6player$$1:
+	.incbin "baserom.dol", 0x305B74, 0x7C
+.global __vt__Q25zDash5boost
+__vt__Q25zDash5boost:
+	.incbin "baserom.dol", 0x305BF0, 0x7C
+.global __vt__Q25zDash4loop
+__vt__Q25zDash4loop:
+	.incbin "baserom.dol", 0x305C6C, 0x80
+.global __vt__Q25zDash5water
+__vt__Q25zDash5water:
+	.incbin "baserom.dol", 0x305CEC, 0x80
+.global __vt__Q25zDash4trip
+__vt__Q25zDash4trip:
+	.incbin "baserom.dol", 0x305D6C, 0x80
+.global __vt__Q25zDash8airborne
+__vt__Q25zDash8airborne:
+	.incbin "baserom.dol", 0x305DEC, 0x80
+.global __vt__Q25zDash16incredimeter_hud
+__vt__Q25zDash16incredimeter_hud:
+	.incbin "baserom.dol", 0x305E6C, 0x7C
+.global __vt__Q25zDash4fall
+__vt__Q25zDash4fall:
+	.incbin "baserom.dol", 0x305EE8, 0x80
+.global __vt__Q25zDash5cheat
+__vt__Q25zDash5cheat:
+	.incbin "baserom.dol", 0x305F68, 0x7C
+.global __vt__Q25zDash14friction_death
+__vt__Q25zDash14friction_death:
+	.incbin "baserom.dol", 0x305FE4, 0x80
+.global __vt__Q25zDash8wall_hit
+__vt__Q25zDash8wall_hit:
+	.incbin "baserom.dol", 0x306064, 0x80
+.global __vt__Q25zDash5timer
+__vt__Q25zDash5timer:
+	.incbin "baserom.dol", 0x3060E4, 0x7C
+.global __vt__Q25zDash12chase_lasers
+__vt__Q25zDash12chase_lasers:
+	.incbin "baserom.dol", 0x306160, 0x7C
+.global __vt__Q25zDash4sink
+__vt__Q25zDash4sink:
+	.incbin "baserom.dol", 0x3061DC, 0x7C
+.global __vt__Q25zDash9car_check
+__vt__Q25zDash9car_check:
+	.incbin "baserom.dol", 0x306258, 0x7C
+.global __vt__Q25zDash3run
+__vt__Q25zDash3run:
+	.incbin "baserom.dol", 0x3062D4, 0x80
+.global __vt__Q25zDash4dust
+__vt__Q25zDash4dust:
+	.incbin "baserom.dol", 0x306354, 0x7C
+.global __vt__Q25zDash4jump
+__vt__Q25zDash4jump:
+	.incbin "baserom.dol", 0x3063D0, 0x80
+.global __vt__Q25zDash9dash_move
+__vt__Q25zDash9dash_move:
+	.incbin "baserom.dol", 0x306450, 0x80
+.global __vt__Q25zDash16friction_effects
+__vt__Q25zDash16friction_effects:
+	.incbin "baserom.dol", 0x3064D0, 0x7C
+.global __vt__Q25zDash6player
+__vt__Q25zDash6player:
+	.incbin "baserom.dol", 0x30654C, 0xEC
+
 .section .text
 
 .global Init__12zTimedSplashFR5xBaseR9xDynAssetUl

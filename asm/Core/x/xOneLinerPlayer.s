@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .data
+
+.global $$21144
+$$21144:
+	.incbin "baserom.dol", 0x2F13F8, 0xC8
+
 .section .text
 
 .global Age__9xOneLinerFf
