@@ -20,9 +20,14 @@ OBJ_DIR := obj
 SRC_DIRS :=
 
 ASM_DIRS := asm             \
-            asm/Core/x      \
+			asm/bink        \
+			asm/CodeWarrior \
 			asm/Core/p2     \
-			asm/GAME
+			asm/Core/x      \
+			asm/dolphin     \
+			asm/fmod        \
+			asm/GAME        \
+			asm/rwsdk
 
 # Inputs
 S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
@@ -38,8 +43,8 @@ MAP     := in.map
 include obj_files.mk
 
 O_FILES := $(INIT_O_FILES) $(EXTAB_O_FILES) $(EXTABINDEX_O_FILES) $(TEXT_O_FILES) \
-           $(CTORS_O_FILES) $(DTORS_O_FILES) $(RODATA_O_FILES) $(DATA_O_FILES)    \
-           $(BSS_O_FILES) $(SDATA_O_FILES) $(SBSS_O_FILES) $(SDATA2_O_FILES) 	  \
+		   $(CTORS_O_FILES) $(DTORS_O_FILES) $(RODATA_O_FILES) $(DATA_O_FILES)    \
+		   $(BSS_O_FILES) $(SDATA_O_FILES) $(SBSS_O_FILES) $(SDATA2_O_FILES) 	  \
 		   $(SBSS2_O_FILES)
 
 #-------------------------------------------------------------------------------
@@ -70,8 +75,8 @@ INCLUDES :=
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -w off -maxerrors 1 -nostdlib
 CFLAGS  := -g -DGAMECUBE -Cpp_exceptions off -proc gekko -fp hard -fp_contract on -O4,p -msgstyle gcc -maxerrors 1 \
-           -pragma "check_header_flags off" -RTTI off -pragma "force_active on" \
-           -str reuse,pool,readonly -char unsigned -enum int -use_lmw_stmw on -inline off -nostdinc -i- $(INCLUDES)
+		   -pragma "check_header_flags off" -RTTI off -pragma "force_active on" \
+		   -str reuse,pool,readonly -char unsigned -enum int -use_lmw_stmw on -inline off -nostdinc -i- $(INCLUDES)
 PPROCFLAGS := -fsymbol-fixup
 
 # elf2dol needs to know these in order to calculate sbss correctly.

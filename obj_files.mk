@@ -1,188 +1,396 @@
-INIT_O_FILES :=                                     \
-    $(OBJ_DIR)/asm/init.o
+INIT_O_FILES :=\
+	$(OBJ_DIR)/asm/init.o
 
-EXTAB_O_FILES :=                                    \
-    $(OBJ_DIR)/asm/extab.o
+EXTAB_O_FILES :=\
+	$(OBJ_DIR)/asm/extab.o
 
-EXTABINDEX_O_FILES :=                               \
-    $(OBJ_DIR)/asm/extabindex.o
+EXTABINDEX_O_FILES :=\
+	$(OBJ_DIR)/asm/extabindex.o
 
-TEXT_O_FILES :=                                     \
-    $(OBJ_DIR)/asm/Core/x/iCamera.o                 \
-	$(OBJ_DIR)/asm/Core/x/xAnim.o                   \
-	$(OBJ_DIR)/asm/Core/x/xBallPhysics.o            \
-	$(OBJ_DIR)/asm/Core/x/xBase.o                   \
-	$(OBJ_DIR)/asm/Core/x/xBehaveGoalSimple.o       \
-	$(OBJ_DIR)/asm/Core/x/xBehaveMgr.o              \
-	$(OBJ_DIR)/asm/Core/x/xbinio.o                  \
-	$(OBJ_DIR)/asm/Core/x/xBound.o                  \
-	$(OBJ_DIR)/asm/Core/x/xCam.o                    \
-	$(OBJ_DIR)/asm/Core/x/xCamFollow.o              \
-	$(OBJ_DIR)/asm/Core/x/xCamSupport.o             \
-	$(OBJ_DIR)/asm/Core/x/xClimate.o                \
-	$(OBJ_DIR)/asm/Core/x/xClumpColl.o                \
-	$(OBJ_DIR)/asm/Core/x/xCM.o                \
-	$(OBJ_DIR)/asm/Core/x/xCollide.o                \
-	$(OBJ_DIR)/asm/Core/x/xCollideFast.o                \
-	$(OBJ_DIR)/asm/Core/x/xColor.o                \
-	$(OBJ_DIR)/asm/Core/x/xCounter.o                \
-	$(OBJ_DIR)/asm/Core/x/xCurveAsset.o                \
-	$(OBJ_DIR)/asm/Core/x/xCutscene.o                \
-	$(OBJ_DIR)/asm/Core/x/xDebug.o                \
-	$(OBJ_DIR)/asm/Core/x/xDecal.o                \
-	$(OBJ_DIR)/asm/Core/x/xEnt.o                \
-	$(OBJ_DIR)/asm/Core/x/xEntBoulder.o                \
-	$(OBJ_DIR)/asm/Core/x/xEntDrive.o                \
-	$(OBJ_DIR)/asm/Core/x/xEntMotion.o                \
-	$(OBJ_DIR)/asm/Core/x/xEnv.o                \
-	$(OBJ_DIR)/asm/Core/x/xEvent.o                \
-	$(OBJ_DIR)/asm/Core/x/xFactory.o                \
-	$(OBJ_DIR)/asm/Core/x/xFFX.o                \
-	$(OBJ_DIR)/asm/Core/x/xFMV.o                \
-	$(OBJ_DIR)/asm/Core/x/xFog.o                \
-	$(OBJ_DIR)/asm/Core/x/xFont.o                \
-	$(OBJ_DIR)/asm/Core/x/xFX.o                \
-	$(OBJ_DIR)/asm/Core/x/xGrid.o                \
-	$(OBJ_DIR)/asm/Core/x/xGroup.o                \
-	$(OBJ_DIR)/asm/Core/x/xHierarchyBound.o                \
-	$(OBJ_DIR)/asm/Core/x/xhipio.o                \
-	$(OBJ_DIR)/asm/Core/x/xHud.o                \
-	$(OBJ_DIR)/asm/Core/x/xHudFontMeter.o                \
-	$(OBJ_DIR)/asm/Core/x/xHudMeter.o                \
-	$(OBJ_DIR)/asm/Core/x/xHudModel.o                \
-	$(OBJ_DIR)/asm/Core/x/xHudUnitMeter.o                \
-	$(OBJ_DIR)/asm/Core/x/xIni.o                \
-	$(OBJ_DIR)/asm/Core/x/xJaw.o                \
-	$(OBJ_DIR)/asm/Core/x/xJSP.o                \
-	$(OBJ_DIR)/asm/Core/x/xLaserBolt.o                \
-	$(OBJ_DIR)/asm/Core/x/xLightKit.o                \
-	$(OBJ_DIR)/asm/Core/x/xMath.o                \
-	$(OBJ_DIR)/asm/Core/x/xMath2.o                \
-	$(OBJ_DIR)/asm/Core/x/xMath3.o                \
-	$(OBJ_DIR)/asm/Core/x/xMemMgr.o                \
-	$(OBJ_DIR)/asm/Core/x/xModel.o                \
-	$(OBJ_DIR)/asm/Core/x/xModelBucket.o                \
-	$(OBJ_DIR)/asm/Core/x/xMorph.o                \
-	$(OBJ_DIR)/asm/Core/x/xMovePoint.o                \
-	$(OBJ_DIR)/asm/Core/x/xNavigationMeshAsset.o                \
-	$(OBJ_DIR)/asm/Core/x/xOneLinerManager.o                \
-	$(OBJ_DIR)/asm/Core/x/xOneLinerPlayer.o                \
-	$(OBJ_DIR)/asm/Core/x/xordarray.o                \
-	$(OBJ_DIR)/asm/Core/x/xPad.o                \
-	$(OBJ_DIR)/asm/Core/x/xParEmitter.o                \
-	$(OBJ_DIR)/asm/Core/x/xParSys.o                \
-	$(OBJ_DIR)/asm/Core/x/xPartition.o                \
-	$(OBJ_DIR)/asm/Core/x/xpkrsvc.o                \
-	$(OBJ_DIR)/asm/Core/x/xPtankPool.o                \
-	$(OBJ_DIR)/asm/Core/x/xQuickCull.o                \
-	$(OBJ_DIR)/asm/Core/x/xRand.o                \
-	$(OBJ_DIR)/asm/Core/x/xRegionSupport.o                \
-	$(OBJ_DIR)/asm/Core/x/xRenderState.o                \
-	$(OBJ_DIR)/asm/Core/x/xRMemData.o                \
-	$(OBJ_DIR)/asm/Core/x/xRumbleEmitter.o                \
-	$(OBJ_DIR)/asm/Core/x/xRumbleManager.o                \
-	$(OBJ_DIR)/asm/Core/x/xsavegame.o                \
-	$(OBJ_DIR)/asm/Core/x/xScene.o                \
-	$(OBJ_DIR)/asm/Core/x/xScreenWarp.o                \
-	$(OBJ_DIR)/asm/Core/x/xScrFx.o                \
-	$(OBJ_DIR)/asm/Core/x/xserializer.o                \
-	$(OBJ_DIR)/asm/Core/x/xShadow.o                \
-	$(OBJ_DIR)/asm/Core/x/xShadowSimple.o                \
-	$(OBJ_DIR)/asm/Core/x/xSkyDome.o                \
-	$(OBJ_DIR)/asm/Core/x/xSndMgr.o                \
-	$(OBJ_DIR)/asm/Core/x/xSoundFX.o                \
-	$(OBJ_DIR)/asm/Core/x/xSpacePartitionTree.o                \
-	$(OBJ_DIR)/asm/Core/x/xSpline.o                \
-	$(OBJ_DIR)/asm/Core/x/xSplineAsset.o                \
-	$(OBJ_DIR)/asm/Core/x/xstransvc.o                \
-	$(OBJ_DIR)/asm/Core/x/xString.o                \
-	$(OBJ_DIR)/asm/Core/x/xSubTitles.o                \
-	$(OBJ_DIR)/asm/Core/x/xSurface.o                \
-	$(OBJ_DIR)/asm/Core/x/xTextAsset.o                \
-	$(OBJ_DIR)/asm/Core/x/xTextureManager.o                \
-	$(OBJ_DIR)/asm/Core/x/xTimer.o                \
-	$(OBJ_DIR)/asm/Core/x/xTransient.o                \
-	$(OBJ_DIR)/asm/Core/x/xTRC.o                \
-	$(OBJ_DIR)/asm/Core/x/xUpdateCull.o                \
-	$(OBJ_DIR)/asm/Core/x/xutil.o                \
-	$(OBJ_DIR)/asm/Core/x/xVec3.o                \
-	$(OBJ_DIR)/asm/Core/x/xVolume.o                \
-	$(OBJ_DIR)/asm/Core/p2/iAnimSKB.o                \
-	$(OBJ_DIR)/asm/Core/p2/iAsync.o                \
-	$(OBJ_DIR)/asm/Core/p2/iCutscene.o                \
-	$(OBJ_DIR)/asm/Core/p2/iDraw.o                \
-	$(OBJ_DIR)/asm/Core/p2/iEnv.o                \
-	$(OBJ_DIR)/asm/Core/p2/iFile.o                \
-	$(OBJ_DIR)/asm/Core/p2/iFMV.o                \
-	$(OBJ_DIR)/asm/Core/p2/iFX.o                \
-	$(OBJ_DIR)/asm/Core/p2/iLight.o                \
-	$(OBJ_DIR)/asm/Core/p2/iMath.o                \
-	$(OBJ_DIR)/asm/Core/p2/iMath3.o                \
-	$(OBJ_DIR)/asm/Core/p2/iMemMgr.o                \
-	$(OBJ_DIR)/asm/Core/p2/iModel.o                \
-	$(OBJ_DIR)/asm/Core/p2/iMorph.o                \
-	$(OBJ_DIR)/asm/Core/p2/iPad.o                \
-	$(OBJ_DIR)/asm/Core/p2/isavegame.o                \
-	$(OBJ_DIR)/asm/Core/p2/iScrFX.o                \
-	$(OBJ_DIR)/asm/Core/p2/iSnd.o                \
-	$(OBJ_DIR)/asm/Core/p2/iSystem.o                \
-	$(OBJ_DIR)/asm/Core/p2/iTime.o                \
-	$(OBJ_DIR)/asm/Core/p2/iTRC.o                \
-	$(OBJ_DIR)/asm/Core/p2/iAnim.o                \
-	$(OBJ_DIR)/asm/GAME/zZipLine.o                \
-	$(OBJ_DIR)/asm/GAME/zAnimCache.o                \
-	$(OBJ_DIR)/asm/GAME/zAnimList.o                \
-	$(OBJ_DIR)/asm/GAME/zAssetTypes.o                \
-	$(OBJ_DIR)/asm/GAME/zBulletTime.o                \
-	$(OBJ_DIR)/asm/GAME/zCam.o                \
-	$(OBJ_DIR)/asm/GAME/zCameraFly.o                \
-	$(OBJ_DIR)/asm/GAME/zCameraTweak.o                \
-	$(OBJ_DIR)/asm/GAME/zCamFP.o                \
-	$(OBJ_DIR)/asm/GAME/zCamMarker.o                \
-	$(OBJ_DIR)/asm/GAME/zCamPlayer.o                \
-	$(OBJ_DIR)/asm/GAME/zCamSwing.o                \
-	$(OBJ_DIR)/asm/GAME/zCheat.o                \
-	$(OBJ_DIR)/asm/GAME/zCollGeom.o                \
-	$(OBJ_DIR)/asm/GAME/zCombat.o                \
-	$(OBJ_DIR)/asm/GAME/zCombatCombo.o                \
-	$(OBJ_DIR)/asm/GAME/zCombatEffects.o                \
-	$(OBJ_DIR)/asm/GAME/zCombatLaser.o                \
-	$(OBJ_DIR)/asm/GAME/zCombatSystem.o                \
-	$(OBJ_DIR)/asm/GAME/zCommonPlayer.o                \
-	$(OBJ_DIR)/asm/GAME/zConditional.o                \
-	$(OBJ_DIR)/asm/GAME/zConfiguration.o                \
-	$(OBJ_DIR)/asm/GAME/zCutsceneMgr.o                \
-	$(OBJ_DIR)/asm/GAME/zDashPlayer.o                \
-	$(OBJ_DIR)/asm/GAME/zDestructible.o                \
-	$(OBJ_DIR)/asm/GAME/zDispatcher.o                \
-	$(OBJ_DIR)/asm/GAME/zDuplicator.o                \
-	$(OBJ_DIR)/asm/GAME/zEGenerator.o                \
-	$(OBJ_DIR)/asm/GAME/zElastiGirlPlayer.o                \
-    $(OBJ_DIR)/asm/text.o
+TEXT_O_FILES :=\
+	$(OBJ_DIR)/asm/Core/x/iCamera.o\
+	$(OBJ_DIR)/asm/Core/x/xAnim.o\
+	$(OBJ_DIR)/asm/Core/x/xBallPhysics.o\
+	$(OBJ_DIR)/asm/Core/x/xBase.o\
+	$(OBJ_DIR)/asm/Core/x/xBehaveGoalSimple.o\
+	$(OBJ_DIR)/asm/Core/x/xBehaveMgr.o\
+	$(OBJ_DIR)/asm/Core/x/xbinio.o\
+	$(OBJ_DIR)/asm/Core/x/xBound.o\
+	$(OBJ_DIR)/asm/Core/x/xCam.o\
+	$(OBJ_DIR)/asm/Core/x/xCamFollow.o\
+	$(OBJ_DIR)/asm/Core/x/xCamSupport.o\
+	$(OBJ_DIR)/asm/Core/x/xClimate.o\
+	$(OBJ_DIR)/asm/Core/x/xClumpColl.o\
+	$(OBJ_DIR)/asm/Core/x/xCM.o\
+	$(OBJ_DIR)/asm/Core/x/xCollide.o\
+	$(OBJ_DIR)/asm/Core/x/xCollideFast.o\
+	$(OBJ_DIR)/asm/Core/x/xColor.o\
+	$(OBJ_DIR)/asm/Core/x/xCounter.o\
+	$(OBJ_DIR)/asm/Core/x/xCurveAsset.o\
+	$(OBJ_DIR)/asm/Core/x/xCutscene.o\
+	$(OBJ_DIR)/asm/Core/x/xDebug.o\
+	$(OBJ_DIR)/asm/Core/x/xDecal.o\
+	$(OBJ_DIR)/asm/Core/x/xEnt.o\
+	$(OBJ_DIR)/asm/Core/x/xEntBoulder.o\
+	$(OBJ_DIR)/asm/Core/x/xEntDrive.o\
+	$(OBJ_DIR)/asm/Core/x/xEntMotion.o\
+	$(OBJ_DIR)/asm/Core/x/xEnv.o\
+	$(OBJ_DIR)/asm/Core/x/xEvent.o\
+	$(OBJ_DIR)/asm/Core/x/xFactory.o\
+	$(OBJ_DIR)/asm/Core/x/xFFX.o\
+	$(OBJ_DIR)/asm/Core/x/xFMV.o\
+	$(OBJ_DIR)/asm/Core/x/xFog.o\
+	$(OBJ_DIR)/asm/Core/x/xFont.o\
+	$(OBJ_DIR)/asm/Core/x/xFX.o\
+	$(OBJ_DIR)/asm/Core/x/xGrid.o\
+	$(OBJ_DIR)/asm/Core/x/xGroup.o\
+	$(OBJ_DIR)/asm/Core/x/xHierarchyBound.o\
+	$(OBJ_DIR)/asm/Core/x/xhipio.o\
+	$(OBJ_DIR)/asm/Core/x/xHud.o\
+	$(OBJ_DIR)/asm/Core/x/xHudFontMeter.o\
+	$(OBJ_DIR)/asm/Core/x/xHudMeter.o\
+	$(OBJ_DIR)/asm/Core/x/xHudModel.o\
+	$(OBJ_DIR)/asm/Core/x/xHudUnitMeter.o\
+	$(OBJ_DIR)/asm/Core/x/xIni.o\
+	$(OBJ_DIR)/asm/Core/x/xJaw.o\
+	$(OBJ_DIR)/asm/Core/x/xJSP.o\
+	$(OBJ_DIR)/asm/Core/x/xLaserBolt.o\
+	$(OBJ_DIR)/asm/Core/x/xLightKit.o\
+	$(OBJ_DIR)/asm/Core/x/xMath.o\
+	$(OBJ_DIR)/asm/Core/x/xMath2.o\
+	$(OBJ_DIR)/asm/Core/x/xMath3.o\
+	$(OBJ_DIR)/asm/Core/x/xMemMgr.o\
+	$(OBJ_DIR)/asm/Core/x/xModel.o\
+	$(OBJ_DIR)/asm/Core/x/xModelBucket.o\
+	$(OBJ_DIR)/asm/Core/x/xMorph.o\
+	$(OBJ_DIR)/asm/Core/x/xMovePoint.o\
+	$(OBJ_DIR)/asm/Core/x/xNavigationMeshAsset.o\
+	$(OBJ_DIR)/asm/Core/x/xOneLinerManager.o\
+	$(OBJ_DIR)/asm/Core/x/xOneLinerPlayer.o\
+	$(OBJ_DIR)/asm/Core/x/xordarray.o\
+	$(OBJ_DIR)/asm/Core/x/xPad.o\
+	$(OBJ_DIR)/asm/Core/x/xParEmitter.o\
+	$(OBJ_DIR)/asm/Core/x/xParSys.o\
+	$(OBJ_DIR)/asm/Core/x/xPartition.o\
+	$(OBJ_DIR)/asm/Core/x/xpkrsvc.o\
+	$(OBJ_DIR)/asm/Core/x/xPtankPool.o\
+	$(OBJ_DIR)/asm/Core/x/xQuickCull.o\
+	$(OBJ_DIR)/asm/Core/x/xRand.o\
+	$(OBJ_DIR)/asm/Core/x/xRegionSupport.o\
+	$(OBJ_DIR)/asm/Core/x/xRenderState.o\
+	$(OBJ_DIR)/asm/Core/x/xRMemData.o\
+	$(OBJ_DIR)/asm/Core/x/xRumbleEmitter.o\
+	$(OBJ_DIR)/asm/Core/x/xRumbleManager.o\
+	$(OBJ_DIR)/asm/Core/x/xsavegame.o\
+	$(OBJ_DIR)/asm/Core/x/xScene.o\
+	$(OBJ_DIR)/asm/Core/x/xScreenWarp.o\
+	$(OBJ_DIR)/asm/Core/x/xScrFx.o\
+	$(OBJ_DIR)/asm/Core/x/xserializer.o\
+	$(OBJ_DIR)/asm/Core/x/xShadow.o\
+	$(OBJ_DIR)/asm/Core/x/xShadowSimple.o\
+	$(OBJ_DIR)/asm/Core/x/xSkyDome.o\
+	$(OBJ_DIR)/asm/Core/x/xSndMgr.o\
+	$(OBJ_DIR)/asm/Core/x/xSoundFX.o\
+	$(OBJ_DIR)/asm/Core/x/xSpacePartitionTree.o\
+	$(OBJ_DIR)/asm/Core/x/xSpline.o\
+	$(OBJ_DIR)/asm/Core/x/xSplineAsset.o\
+	$(OBJ_DIR)/asm/Core/x/xstransvc.o\
+	$(OBJ_DIR)/asm/Core/x/xString.o\
+	$(OBJ_DIR)/asm/Core/x/xSubTitles.o\
+	$(OBJ_DIR)/asm/Core/x/xSurface.o\
+	$(OBJ_DIR)/asm/Core/x/xTextAsset.o\
+	$(OBJ_DIR)/asm/Core/x/xTextureManager.o\
+	$(OBJ_DIR)/asm/Core/x/xTimer.o\
+	$(OBJ_DIR)/asm/Core/x/xTransient.o\
+	$(OBJ_DIR)/asm/Core/x/xTRC.o\
+	$(OBJ_DIR)/asm/Core/x/xUpdateCull.o\
+	$(OBJ_DIR)/asm/Core/x/xutil.o\
+	$(OBJ_DIR)/asm/Core/x/xVec3.o\
+	$(OBJ_DIR)/asm/Core/x/xVolume.o\
+	$(OBJ_DIR)/asm/Core/p2/iAnimSKB.o\
+	$(OBJ_DIR)/asm/Core/p2/iAsync.o\
+	$(OBJ_DIR)/asm/Core/p2/iCutscene.o\
+	$(OBJ_DIR)/asm/Core/p2/iDraw.o\
+	$(OBJ_DIR)/asm/Core/p2/iEnv.o\
+	$(OBJ_DIR)/asm/Core/p2/iFile.o\
+	$(OBJ_DIR)/asm/Core/p2/iFMV.o\
+	$(OBJ_DIR)/asm/Core/p2/iFX.o\
+	$(OBJ_DIR)/asm/Core/p2/iLight.o\
+	$(OBJ_DIR)/asm/Core/p2/iMath.o\
+	$(OBJ_DIR)/asm/Core/p2/iMath3.o\
+	$(OBJ_DIR)/asm/Core/p2/iMemMgr.o\
+	$(OBJ_DIR)/asm/Core/p2/iModel.o\
+	$(OBJ_DIR)/asm/Core/p2/iMorph.o\
+	$(OBJ_DIR)/asm/Core/p2/iPad.o\
+	$(OBJ_DIR)/asm/Core/p2/isavegame.o\
+	$(OBJ_DIR)/asm/Core/p2/iScrFX.o\
+	$(OBJ_DIR)/asm/Core/p2/iSnd.o\
+	$(OBJ_DIR)/asm/Core/p2/iSystem.o\
+	$(OBJ_DIR)/asm/Core/p2/iTime.o\
+	$(OBJ_DIR)/asm/Core/p2/iTRC.o\
+	$(OBJ_DIR)/asm/Core/p2/iAnim.o\
+	$(OBJ_DIR)/asm/GAME/zZipLine.o\
+	$(OBJ_DIR)/asm/GAME/zAnimCache.o\
+	$(OBJ_DIR)/asm/GAME/zAnimList.o\
+	$(OBJ_DIR)/asm/GAME/zAssetTypes.o\
+	$(OBJ_DIR)/asm/GAME/zBulletTime.o\
+	$(OBJ_DIR)/asm/GAME/zCam.o\
+	$(OBJ_DIR)/asm/GAME/zCameraFly.o\
+	$(OBJ_DIR)/asm/GAME/zCameraTweak.o\
+	$(OBJ_DIR)/asm/GAME/zCamFP.o\
+	$(OBJ_DIR)/asm/GAME/zCamMarker.o\
+	$(OBJ_DIR)/asm/GAME/zCamPlayer.o\
+	$(OBJ_DIR)/asm/GAME/zCamSwing.o\
+	$(OBJ_DIR)/asm/GAME/zCheat.o\
+	$(OBJ_DIR)/asm/GAME/zCollGeom.o\
+	$(OBJ_DIR)/asm/GAME/zCombat.o\
+	$(OBJ_DIR)/asm/GAME/zCombatCombo.o\
+	$(OBJ_DIR)/asm/GAME/zCombatEffects.o\
+	$(OBJ_DIR)/asm/GAME/zCombatLaser.o\
+	$(OBJ_DIR)/asm/GAME/zCombatSystem.o\
+	$(OBJ_DIR)/asm/GAME/zCommonPlayer.o\
+	$(OBJ_DIR)/asm/GAME/zConditional.o\
+	$(OBJ_DIR)/asm/GAME/zConfiguration.o\
+	$(OBJ_DIR)/asm/GAME/zCutsceneMgr.o\
+	$(OBJ_DIR)/asm/GAME/zDashPlayer.o\
+	$(OBJ_DIR)/asm/GAME/zDestructible.o\
+	$(OBJ_DIR)/asm/GAME/zDispatcher.o\
+	$(OBJ_DIR)/asm/GAME/zDuplicator.o\
+	$(OBJ_DIR)/asm/GAME/zEGenerator.o\
+	$(OBJ_DIR)/asm/GAME/zElastiGirlPlayer.o\
+	$(OBJ_DIR)/asm/GAME/zEnt.o\
+	$(OBJ_DIR)/asm/GAME/zEntButton.o\
+	$(OBJ_DIR)/asm/GAME/zEntHangable.o\
+	$(OBJ_DIR)/asm/GAME/zEntSimpleObj.o\
+	$(OBJ_DIR)/asm/GAME/zEntTrigger.o\
+	$(OBJ_DIR)/asm/GAME/zEnv.o\
+	$(OBJ_DIR)/asm/GAME/zExplosion.o\
+	$(OBJ_DIR)/asm/GAME/zFire.o\
+	$(OBJ_DIR)/asm/GAME/zFlameEmitter.o\
+	$(OBJ_DIR)/asm/GAME/zFMV.o\
+	$(OBJ_DIR)/asm/GAME/zFX.o\
+	$(OBJ_DIR)/asm/GAME/zFXRibbonPool.o\
+	$(OBJ_DIR)/asm/GAME/zGame.o\
+	$(OBJ_DIR)/asm/GAME/zGameExtras.o\
+	$(OBJ_DIR)/asm/GAME/zGameState.o\
+	$(OBJ_DIR)/asm/GAME/zGrapple.o\
+	$(OBJ_DIR)/asm/GAME/zGrid.o\
+	$(OBJ_DIR)/asm/GAME/zHangable.o\
+	$(OBJ_DIR)/asm/GAME/zHitParameters.o\
+	$(OBJ_DIR)/asm/GAME/zHud.o\
+	$(OBJ_DIR)/asm/GAME/zHudIncredimeter.o\
+	$(OBJ_DIR)/asm/GAME/zHudTextureFlasher.o\
+	$(OBJ_DIR)/asm/GAME/zIncrediBallPlayer.o\
+	$(OBJ_DIR)/asm/GAME/zKaboomMinigame.o\
+	$(OBJ_DIR)/asm/GAME/zLaserBeam.o\
+	$(OBJ_DIR)/asm/GAME/zLight.o\
+	$(OBJ_DIR)/asm/GAME/zLightEffect.o\
+	$(OBJ_DIR)/asm/GAME/zLightning.o\
+	$(OBJ_DIR)/asm/GAME/zLightWeight.o\
+	$(OBJ_DIR)/asm/GAME/zLOD.o\
+	$(OBJ_DIR)/asm/GAME/zMain.o\
+	$(OBJ_DIR)/asm/GAME/zMenu.o\
+	$(OBJ_DIR)/asm/GAME/zMovePoint.o\
+	$(OBJ_DIR)/asm/GAME/zMrIncrediblePlayer.o\
+	$(OBJ_DIR)/asm/GAME/zMusic.o\
+	$(OBJ_DIR)/asm/GAME/zNPC.o\
+	$(OBJ_DIR)/asm/GAME/zNPCArmor.o\
+	$(OBJ_DIR)/asm/GAME/zNPCBehavior.o\
+	$(OBJ_DIR)/asm/GAME/zNPCBehaviorFX.o\
+	$(OBJ_DIR)/asm/GAME/zNPCBossOmnidroid.o\
+	$(OBJ_DIR)/asm/GAME/zNPCCar.o\
+	$(OBJ_DIR)/asm/GAME/zNPCCombat.o\
+	$(OBJ_DIR)/asm/GAME/zNPCFriendly.o\
+	$(OBJ_DIR)/asm/GAME/zNPCLobber.o\
+	$(OBJ_DIR)/asm/GAME/zNPCMelee.o\
+	$(OBJ_DIR)/asm/GAME/zNPCMeleeShielded.o\
+	$(OBJ_DIR)/asm/GAME/zNPCMgr.o\
+	$(OBJ_DIR)/asm/GAME/zNPCMine.o\
+	$(OBJ_DIR)/asm/GAME/zNPCNavigation.o\
+	$(OBJ_DIR)/asm/GAME/zNPCNavigationMesh.o\
+	$(OBJ_DIR)/asm/GAME/zNPCOracle.o\
+	$(OBJ_DIR)/asm/GAME/zNPCShooter.o\
+	$(OBJ_DIR)/asm/GAME/zNPCTank.o\
+	$(OBJ_DIR)/asm/GAME/zNPCTurret.o\
+	$(OBJ_DIR)/asm/GAME/zNPCTypes.o\
+	$(OBJ_DIR)/asm/GAME/zNPCVelocipod.o\
+	$(OBJ_DIR)/asm/GAME/zNPCWaterhose.o\
+	$(OBJ_DIR)/asm/GAME/zPendulum.o\
+	$(OBJ_DIR)/asm/GAME/zPlatform.o\
+	$(OBJ_DIR)/asm/GAME/zPlayer.o\
+	$(OBJ_DIR)/asm/GAME/zPlayerBase.o\
+	$(OBJ_DIR)/asm/GAME/zPortal.o\
+	$(OBJ_DIR)/asm/GAME/zReference.o\
+	$(OBJ_DIR)/asm/GAME/zRenderState.o\
+	$(OBJ_DIR)/asm/GAME/zSaveLoad.o\
+	$(OBJ_DIR)/asm/GAME/zScene.o\
+	$(OBJ_DIR)/asm/GAME/zScript.o\
+	$(OBJ_DIR)/asm/GAME/zshell.o\
+	$(OBJ_DIR)/asm/GAME/zShrapnel.o\
+	$(OBJ_DIR)/asm/GAME/zSlideCamera.o\
+	$(OBJ_DIR)/asm/GAME/zSurface.o\
+	$(OBJ_DIR)/asm/GAME/zSymbol.o\
+	$(OBJ_DIR)/asm/GAME/zTalkBox.o\
+	$(OBJ_DIR)/asm/GAME/zTaskBox.o\
+	$(OBJ_DIR)/asm/GAME/zTextBox.o\
+	$(OBJ_DIR)/asm/GAME/zTrainCar.o\
+	$(OBJ_DIR)/asm/GAME/zTrainPath.o\
+	$(OBJ_DIR)/asm/GAME/zTransient.o\
+	$(OBJ_DIR)/asm/GAME/zTurret.o\
+	$(OBJ_DIR)/asm/GAME/zUI.o\
+	$(OBJ_DIR)/asm/GAME/zUIBox.o\
+	$(OBJ_DIR)/asm/GAME/zUIImage.o\
+	$(OBJ_DIR)/asm/GAME/zUIMgr.o\
+	$(OBJ_DIR)/asm/GAME/zUIModel.o\
+	$(OBJ_DIR)/asm/GAME/zUIText.o\
+	$(OBJ_DIR)/asm/GAME/zUIUserString.o\
+	$(OBJ_DIR)/asm/GAME/zVar.o\
+	$(OBJ_DIR)/asm/GAME/zVioletPlayer.o\
+	$(OBJ_DIR)/asm/GAME/zVolume.o\
+	$(OBJ_DIR)/asm/GAME/zWaterhose.o\
+	$(OBJ_DIR)/asm/GAME/zActionLine.o\
+	$(OBJ_DIR)/asm/Core/x/xCollideSpherePolygon.o\
+	$(OBJ_DIR)/asm/GAME/zAsync.o\
+	$(OBJ_DIR)/asm/Core/x/xParticleBatch.o\
+	$(OBJ_DIR)/asm/GAME/zSmoke.o\
+	$(OBJ_DIR)/asm/GAME/zSplash.o\
+	$(OBJ_DIR)/asm/GAME/zNPCNavigationMeshDriven.o\
+	$(OBJ_DIR)/asm/GAME/zDashCam.o\
+	$(OBJ_DIR)/asm/GAME/zNPCRobotBehavior.o\
+	$(OBJ_DIR)/asm/GAME/zIncrediSlam.o\
+	$(OBJ_DIR)/asm/Core/x/xScrPulseGlare.o\
+	$(OBJ_DIR)/asm/GAME/zBehavior.o\
+	$(OBJ_DIR)/asm/GAME/zWater.o\
+	$(OBJ_DIR)/asm/GAME/zIncrediBallCam.o\
+	$(OBJ_DIR)/asm/GAME/zTimeHandler.o\
+	$(OBJ_DIR)/asm/GAME/zBulletMarkAsset.o\
+	$(OBJ_DIR)/asm/Core/x/xCollideSweptSphere.o\
+	$(OBJ_DIR)/asm/GAME/zNPCCommon.o\
+	$(OBJ_DIR)/asm/Core/x/xScreenFade.o\
+	$(OBJ_DIR)/asm/GAME/zNPCWeapon.o\
+	$(OBJ_DIR)/asm/Core/x/xCollideSphereBox.o\
+	$(OBJ_DIR)/asm/GAME/zNPCInvisAware.o\
+	$(OBJ_DIR)/asm/GAME/zNPCBotLob.o\
+	$(OBJ_DIR)/asm/GAME/zDashTrack.o\
+	$(OBJ_DIR)/asm/GAME/zReticle.o\
+	$(OBJ_DIR)/asm/GAME/zGrass.o\
+	$(OBJ_DIR)/asm/Core/x/xFXCameraTexture.o\
+	$(OBJ_DIR)/asm/Core/x/xFXHighDynamicRange.o\
+	$(OBJ_DIR)/asm/Core/x/xCollideSpherePolygonUnprocessed.o\
+	$(OBJ_DIR)/asm/GAME/zInteraction.o\
+	$(OBJ_DIR)/asm/GAME/zNPCSenses.o\
+	$(OBJ_DIR)/asm/GAME/zBomb.o\
+	$(OBJ_DIR)/asm/GAME/zProgressScript.o\
+	$(OBJ_DIR)/asm/Core/x/xHudText.o\
+	$(OBJ_DIR)/asm/GAME/zFlameThrower.o\
+	$(OBJ_DIR)/asm/GAME/zNPCFlyShooter.o\
+	$(OBJ_DIR)/asm/GAME/zRocket.o\
+	$(OBJ_DIR)/asm/Core/x/xHudImage.o\
+	$(OBJ_DIR)/asm/GAME/zNPCMeleeBot.o\
+	$(OBJ_DIR)/asm/GAME/zReactiveAnimation.o\
+	$(OBJ_DIR)/asm/GAME/zDust.o\
+	$(OBJ_DIR)/asm/GAME/zHudDiskIndicator.o\
+	$(OBJ_DIR)/asm/Core/x/xProjectedTexture.o\
+	$(OBJ_DIR)/asm/GAME/zSpotlight.o\
+	$(OBJ_DIR)/asm/GAME/zPickup.o\
+	$(OBJ_DIR)/asm/GAME/zNPCGroup.o\
+	$(OBJ_DIR)/asm/GAME/zThrowableSystem.o\
+	$(OBJ_DIR)/asm/GAME/zNPCHelibot.o\
+	$(OBJ_DIR)/asm/GAME/zHudDashMeter.o\
+	$(OBJ_DIR)/asm/GAME/zNPCBossOmnidroid10.o\
+	$(OBJ_DIR)/asm/GAME/zNPCBotLeap.o\
+	$(OBJ_DIR)/asm/GAME/zUIController.o\
+	$(OBJ_DIR)/asm/Core/x/xLightVolume.o\
+	$(OBJ_DIR)/asm/GAME/zUICustom.o\
+	$(OBJ_DIR)/asm/GAME/zUIIncredibles.o\
+	$(OBJ_DIR)/asm/Core/x/xMemoryManager.o\
+	$(OBJ_DIR)/asm/Core/x/xMemoryManagerFixed.o\
+	$(OBJ_DIR)/asm/Core/x/xMemoryManagerGeneral.o\
+	$(OBJ_DIR)/asm/Core/p2/iException.o\
+	$(OBJ_DIR)/asm/GAME/zParticleGenerator.o\
+	$(OBJ_DIR)/asm/GAME/zParticleLocator.o\
+	$(OBJ_DIR)/asm/GAME/zParticleSystems.o\
+	$(OBJ_DIR)/asm/GAME/zParticleSystemWaterfall.o\
+	$(OBJ_DIR)/asm/GAME/zTurretSmoke.o\
+	$(OBJ_DIR)/asm/GAME/zUberLaser.o\
+	$(OBJ_DIR)/asm/GAME/zLoadingScreen.o\
+	$(OBJ_DIR)/asm/Core/x/xModelBlur.o\
+	$(OBJ_DIR)/asm/Core/p2/iWater.o\
+	$(OBJ_DIR)/asm/Core/p2/fxembm.o\
+	$(OBJ_DIR)/asm/Core/p2/fxmain.o\
+	$(OBJ_DIR)/asm/Core/p2/texcache.o\
+	$(OBJ_DIR)/asm/Core/p2/texconv.o\
+	$(OBJ_DIR)/asm/Core/p2/textures.o\
+	$(OBJ_DIR)/asm/GAME/zEnergyStream.o\
+	$(OBJ_DIR)/asm/GAME/zNPCSmoke.o\
+	$(OBJ_DIR)/asm/GAME/zNPCStreamer.o\
+	$(OBJ_DIR)/asm/GAME/zNPCBossBombChopper.o\
+	$(OBJ_DIR)/asm/GAME/zCameraRBand.o\
+	$(OBJ_DIR)/asm/GAME/zWireFrameAsset.o\
+	$(OBJ_DIR)/asm/GAME/zJSPExtraData.o\
+	$(OBJ_DIR)/asm/GAME/zRubbleGenerator.o\
+	$(OBJ_DIR)/asm/GAME/zParticleFXCommon.o\
+	$(OBJ_DIR)/asm/GAME/zHudBossMeter.o\
+	$(OBJ_DIR)/asm/Core/x/containers.o\
+	$(OBJ_DIR)/asm/Core/x/xFunctionGenerator.o\
+	$(OBJ_DIR)/asm/Core/x/xModelWarp.o\
+	$(OBJ_DIR)/asm/GAME/zCombo.o\
+	$(OBJ_DIR)/asm/GAME/zRubbleSystem.o\
+	$(OBJ_DIR)/asm/GAME/zNPCPlayers.o\
+	$(OBJ_DIR)/asm/GAME/zCineFXShared.o\
+	$(OBJ_DIR)/asm/GAME/zCineFX.o\
+	$(OBJ_DIR)/asm/GAME/zFrozoneIce.o\
+	$(OBJ_DIR)/asm/Core/x/xRenderBuffer.o\
+	$(OBJ_DIR)/asm/GAME/zFXFireTrail.o\
+	$(OBJ_DIR)/asm/GAME/zFXEnergySystem.o\
+	$(OBJ_DIR)/asm/GAME/zUICustomBattleModeSelectScene.o\
+	$(OBJ_DIR)/asm/GAME/zUICustomSysMessage.o\
+	$(OBJ_DIR)/asm/GAME/zUICustomBattleModeSelectPlayer.o\
+	$(OBJ_DIR)/asm/Core/p2/iARAMTmp.o\
+	$(OBJ_DIR)/asm/GAME/zCamPreset.o\
+	$(OBJ_DIR)/asm/GAME/zCineFXIN.o\
+	$(OBJ_DIR)/asm/GAME/zSparkEmitter.o\
+	$(OBJ_DIR)/asm/GAME/zToss.o\
+	$(OBJ_DIR)/asm/GAME/zHudFamilyMeter.o\
+	$(OBJ_DIR)/asm/Core/x/xIM.o\
+	$(OBJ_DIR)/asm/GAME/zParticleCustom.o\
+	$(OBJ_DIR)/asm/GAME/zShrapnelEmitter.o\
+	$(OBJ_DIR)/asm/GAME/zSmashRing.o\
+	$(OBJ_DIR)/asm/GAME/zTransientModel.o\
+	$(OBJ_DIR)/asm/GAME/zIncrediBallEffect.o\
+	$(OBJ_DIR)/asm/CodeWarrior/Runtime.o\
+	$(OBJ_DIR)/asm/bink/bink.o\
+	$(OBJ_DIR)/asm/dolphin/dolphin.o\
+	$(OBJ_DIR)/asm/fmod/fmod.o\
+	$(OBJ_DIR)/asm/rwsdk/rwsdk.o\
+	$(OBJ_DIR)/asm/dolphin/dolphin2.o\
+	$(OBJ_DIR)/asm/CodeWarrior/MSL_C.o\
+	$(OBJ_DIR)/asm/CodeWarrior/MetroTRK.o\
+	$(OBJ_DIR)/asm/rwsdk/rpmatfx.o
 
-CTORS_O_FILES :=                                    \
-    $(OBJ_DIR)/asm/ctors.o
+CTORS_O_FILES :=\
+	$(OBJ_DIR)/asm/ctors.o
 
-DTORS_O_FILES :=                                    \
-    $(OBJ_DIR)/asm/dtors.o
+DTORS_O_FILES :=\
+	$(OBJ_DIR)/asm/dtors.o
 
-RODATA_O_FILES :=                                   \
-    $(OBJ_DIR)/asm/rodata.o
+RODATA_O_FILES :=\
+	$(OBJ_DIR)/asm/rodata.o
 
-DATA_O_FILES :=                                     \
-    $(OBJ_DIR)/asm/data.o
+DATA_O_FILES :=\
+	$(OBJ_DIR)/asm/data.o
 
-BSS_O_FILES :=                                      \
-    $(OBJ_DIR)/asm/bss.o
+BSS_O_FILES :=\
+	$(OBJ_DIR)/asm/bss.o
 
-SDATA_O_FILES :=                                    \
-    $(OBJ_DIR)/asm/sdata.o
+SDATA_O_FILES :=\
+	$(OBJ_DIR)/asm/sdata.o
 
-SBSS_O_FILES :=                                     \
-    $(OBJ_DIR)/asm/sbss.o
+SBSS_O_FILES :=\
+	$(OBJ_DIR)/asm/sbss.o
 
-SDATA2_O_FILES :=                                   \
-    $(OBJ_DIR)/asm/sdata2.o
+SDATA2_O_FILES :=\
+	$(OBJ_DIR)/asm/sdata2.o
 
-SBSS2_O_FILES :=                                    \
-    $(OBJ_DIR)/asm/sbss2.o
+SBSS2_O_FILES :=\
+	$(OBJ_DIR)/asm/sbss2.o
