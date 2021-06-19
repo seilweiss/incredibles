@@ -6,6 +6,30 @@
 $$2stringBase0_135:
 	.incbin "baserom.dol", 0x2E6500, 0x20
 
+.section .sbss
+
+.global max_system_asset_size__32$$2unnamed$$2zParticleGenerator_cpp$$2
+max_system_asset_size__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+	.skip 0x4
+.global systems__32$$2unnamed$$2zParticleGenerator_cpp$$2
+systems__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+	.skip 0x4
+.global system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2
+system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+	.skip 0x1C
+.global system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2
+system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+	.skip 0x1C
+.global generators__32$$2unnamed$$2zParticleGenerator_cpp$$2
+generators__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+	.skip 0x4
+.global max_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2
+max_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+	.skip 0x4
+.global generators_used__32$$2unnamed$$2zParticleGenerator_cpp$$2
+generators_used__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global create_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv

@@ -12,6 +12,33 @@ corruptFiles:
 $$2stringBase0_66:
 	.incbin "baserom.dol", 0x2DB520, 0x38
 
+.section .sbss
+
+.global time_last
+time_last:
+	.skip 0x4
+.global time_current
+time_current:
+	.skip 0x4
+.global sAttractMode_timer
+sAttractMode_timer:
+	.skip 0x4
+.global sOneLiner_timer
+sOneLiner_timer:
+	.skip 0x4
+.global card
+card:
+	.skip 0x4
+.global sInMenu
+sInMenu:
+	.skip 0x4
+.global corruptFileCount
+corruptFileCount:
+	.skip 0x4
+.global sAllowAttract
+sAllowAttract:
+	.skip 0x4
+
 .section .text
 
 .global zMenuDecrementIdleTimer__Fv

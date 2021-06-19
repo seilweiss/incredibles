@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global total_it$1024
+total_it$1024:
+	.skip 0x4
+.global init$1025
+init$1025:
+	.skip 0x4
+
 .section .text
 
 .global find_span__Q21x5NURBSFf

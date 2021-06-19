@@ -6,6 +6,12 @@
 $$2stringBase0_157:
 	.incbin "baserom.dol", 0x2E9D68, 0x18
 
+.section .sbss
+
+.global fMinHealthBar__4zHud
+fMinHealthBar__4zHud:
+	.skip 0x8
+
 .section .text
 
 .global __ct__Q24zHud11FamilyMeterFv

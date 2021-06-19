@@ -90,6 +90,72 @@ $$22437:
 $$2stringBase0_133:
 	.incbin "baserom.dol", 0x2E61D8, 0x2E8
 
+.section .sbss
+
+.global APPLE_DEMO
+APPLE_DEMO:
+	.skip 0x4
+.global sceneBaseName
+sceneBaseName:
+	.skip 0x20
+.global entry_count__5stats
+entry_count__5stats:
+	.skip 0x4
+.global loadSceneID
+loadSceneID:
+	.skip 0x4
+.global SCENE_STATUS_BONUS__28$$2unnamed$$2zUIIncredibles_cpp$$2
+SCENE_STATUS_BONUS__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x4
+.global numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2
+numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x4
+.global latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2
+latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x4
+.global unlockCheatOn__28$$2unnamed$$2zUIIncredibles_cpp$$2
+unlockCheatOn__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x4
+.global unlockedMovies__28$$2unnamed$$2zUIIncredibles_cpp$$2
+unlockedMovies__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x28
+.global battleModeBonusCount__28$$2unnamed$$2zUIIncredibles_cpp$$2
+battleModeBonusCount__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x1
+.global isBM01__28$$2unnamed$$2zUIIncredibles_cpp$$2
+isBM01__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x3
+.global stageBeforeBattleMode__28$$2unnamed$$2zUIIncredibles_cpp$$2
+stageBeforeBattleMode__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x4
+.global sceneBaseImage__28$$2unnamed$$2zUIIncredibles_cpp$$2
+sceneBaseImage__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x20
+.global sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2
+sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x4
+.global sceneUnlockAll__28$$2unnamed$$2zUIIncredibles_cpp$$2
+sceneUnlockAll__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x4
+.global sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2
+sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x4
+.global sceneCheckPointHit__28$$2unnamed$$2zUIIncredibles_cpp$$2
+sceneCheckPointHit__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.skip 0x4
+.global buffer$1369
+buffer$1369:
+	.skip 0x30
+.global portal$3001
+portal$3001:
+	.skip 0x14
+.global portalAsset$3002
+portalAsset$3002:
+	.skip 0x18
+.global pause_type
+pause_type:
+	.skip 0x8
+
 .section .text
 
 .global reset__5statsFv

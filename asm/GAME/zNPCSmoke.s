@@ -12,6 +12,12 @@ __vt__Q24zNPC16NPCSmokeBehavior:
 $$2stringBase0_141:
 	.incbin "baserom.dol", 0x2E6888, 0x88
 
+.section .sbss
+
+.global texture__15zNPCSmokeSystem
+texture__15zNPCSmokeSystem:
+	.skip 0x8
+
 .section .text
 
 .global setup__Q24zNPC16NPCSmokeBehaviorFv

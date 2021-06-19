@@ -18,6 +18,12 @@ __vt__39behavior_implementation$$0Q24zNPC6common$$1:
 $$2stringBase0_70:
 	.incbin "baserom.dol", 0x2DCCB0, 0xA0
 
+.section .sbss
+
+.global numArmorNPC__Q24zNPC5Armor
+numArmorNPC__Q24zNPC5Armor:
+	.skip 0x8
+
 .section .text
 
 .global AddArmor__Q24zNPC5ArmorFPQ24zNPC6common

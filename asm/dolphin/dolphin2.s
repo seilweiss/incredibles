@@ -99,6 +99,147 @@ $$241:
 $$244:
 	.incbin "baserom.dol", 0x32A4D4, 0x14
 
+.section .sbss
+
+.global StopAtNextInt
+StopAtNextInt:
+	.skip 0x4
+.global LastLength
+LastLength:
+	.skip 0x4
+.global Callback_0
+Callback_0:
+	.skip 0x4
+.global ResetCoverCallback
+ResetCoverCallback:
+	.skip 0x4
+.global LastResetEnd
+LastResetEnd:
+	.skip 0x4
+.global lbl_803D1BDC
+lbl_803D1BDC:
+	.skip 0x4
+.global ResetOccurred
+ResetOccurred:
+	.skip 0x4
+.global WaitingCoverClose
+WaitingCoverClose:
+	.skip 0x4
+.global Breaking
+Breaking:
+	.skip 0x4
+.global WorkAroundType
+WorkAroundType:
+	.skip 0x4
+.global WorkAroundSeekLocation
+WorkAroundSeekLocation:
+	.skip 0x8
+.global LastReadFinished
+LastReadFinished:
+	.skip 0x4
+.global lbl_803D1BFC
+lbl_803D1BFC:
+	.skip 0x4
+.global LastReadIssued
+LastReadIssued:
+	.skip 0x4
+.global lbl_803D1C04
+lbl_803D1C04:
+	.skip 0x4
+.global LastCommandWasRead
+LastCommandWasRead:
+	.skip 0x4
+.global NextCommandNumber
+NextCommandNumber:
+	.skip 0x4
+.global BootInfo_0
+BootInfo_0:
+	.skip 0x4
+.global FstStart
+FstStart:
+	.skip 0x4
+.global FstStringStart
+FstStringStart:
+	.skip 0x4
+.global MaxEntryNum
+MaxEntryNum:
+	.skip 0x4
+.global currentDirectory
+currentDirectory:
+	.skip 0x4
+.global __DVDLongFileNameFlag
+__DVDLongFileNameFlag:
+	.skip 0x4
+.global __DVDThreadQueue
+__DVDThreadQueue:
+	.skip 0x8
+.global executing
+executing:
+	.skip 0x4
+.global IDShouldBe
+IDShouldBe:
+	.skip 0x4
+.global bootInfo
+bootInfo:
+	.skip 0x4
+.global PauseFlag
+PauseFlag:
+	.skip 0x4
+.global PausingFlag
+PausingFlag:
+	.skip 0x4
+.global AutoFinishing
+AutoFinishing:
+	.skip 0x4
+.global FatalErrorFlag
+FatalErrorFlag:
+	.skip 0x4
+.global CurrCommand
+CurrCommand:
+	.skip 0x4
+.global Canceling
+Canceling:
+	.skip 0x4
+.global CancelCallback
+CancelCallback:
+	.skip 0x4
+.global ResumeFromHere
+ResumeFromHere:
+	.skip 0x4
+.global CancelLastError
+CancelLastError:
+	.skip 0x4
+.global LastError
+LastError:
+	.skip 0x4
+.global NumInternalRetry
+NumInternalRetry:
+	.skip 0x4
+.global ResetRequired
+ResetRequired:
+	.skip 0x4
+.global FirstTimeInBootrom
+FirstTimeInBootrom:
+	.skip 0x4
+.global DVDInitialized
+DVDInitialized:
+	.skip 0x4
+.global LastState_0
+LastState_0:
+	.skip 0x4
+.global FatalFunc
+FatalFunc:
+	.skip 0x8
+.global status
+status:
+	.skip 0x4
+.global bb2
+bb2:
+	.skip 0x4
+.global idTmp
+idTmp:
+	.skip 0x8
+
 .section .text
 
 .global __DVDInitWA

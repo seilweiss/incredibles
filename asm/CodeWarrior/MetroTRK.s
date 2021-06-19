@@ -288,6 +288,18 @@ $$2348_0:
 $$2349_1:
 	.incbin "baserom.dol", 0x2EE0C8, 0x18
 
+.section .sbss
+
+.global gTRKInputPendingPtr
+gTRKInputPendingPtr:
+	.skip 0x8
+.global gIsInitialized
+gIsInitialized:
+	.skip 0x8
+.global gIsInitialized_0
+gIsInitialized_0:
+	.skip 0x8
+
 .section .text
 
 .global TRKNubMainLoop

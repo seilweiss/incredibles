@@ -12,6 +12,24 @@ g_xstdata:
 $$2stringBase0_24:
 	.incbin "baserom.dol", 0x2CF760, 0x10
 
+.section .sbss
+
+.global g_straninit
+g_straninit:
+	.skip 0x4
+.global g_pkrf
+g_pkrf:
+	.skip 0x4
+.global g_typeHandlers
+g_typeHandlers:
+	.skip 0x4
+.global fname$1114
+fname$1114:
+	.skip 0x40
+.global fname$1127
+fname$1127:
+	.skip 0x44
+
 .section .text
 
 .global xSTIsLoaded__Fv

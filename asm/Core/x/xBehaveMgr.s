@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global g_modinit
+g_modinit:
+	.skip 0x4
+.global g_behavmgr
+g_behavmgr:
+	.skip 0x4
+
 .section .text
 
 .global xBehaveMgr_Shutdown__Fv

@@ -18,6 +18,24 @@ scratch_buffer__21$$2unnamed$$2xMemMgr_cpp$$2:
 $$2stringBase0_15:
 	.incbin "baserom.dol", 0x2CEDE8, 0x58
 
+.section .sbss
+
+.global gMemInfo
+gMemInfo:
+	.skip 0x24
+.global gActiveHeap
+gActiveHeap:
+	.skip 0x4
+.global sMemBaseNotifyFunc
+sMemBaseNotifyFunc:
+	.skip 0x4
+.global scratch_mem_used
+scratch_mem_used:
+	.skip 0x4
+.global scratch_allocations__21$$2unnamed$$2xMemMgr_cpp$$2
+scratch_allocations__21$$2unnamed$$2xMemMgr_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global xMemDebug_SoakLog__FPCc

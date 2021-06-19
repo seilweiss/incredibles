@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global gFrameCount
+gFrameCount:
+	.skip 0x4
+.global gSceneFrameCount
+gSceneFrameCount:
+	.skip 0x4
+
 .section .text
 
 .global xprintf__FPCce

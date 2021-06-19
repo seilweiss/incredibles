@@ -6,6 +6,15 @@
 static_cam_asset__24$$2unnamed$$2zCamMarker_cpp$$2:
 	.skip 0x88
 
+.section .sbss
+
+.global activated__24$$2unnamed$$2zCamMarker_cpp$$2
+activated__24$$2unnamed$$2zCamMarker_cpp$$2:
+	.skip 0x4
+.global widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2
+widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global activate_camera__24$$2unnamed$$2zCamMarker_cpp$$2FRC9xCamAssetP4xEnt

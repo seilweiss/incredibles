@@ -12,6 +12,24 @@ cutsceneHackTable:
 $$2stringBase0_44:
 	.incbin "baserom.dol", 0x2D7C88, 0x2C8
 
+.section .sbss
+
+.global gCutsceneSkipOK
+gCutsceneSkipOK:
+	.skip 0x4
+.global ents_hidden
+ents_hidden:
+	.skip 0x1
+.global thisShouldAlwaysBeFalseItsJustToFoolTheStupidCompiler
+thisShouldAlwaysBeFalseItsJustToFoolTheStupidCompiler:
+	.skip 0x3
+.global doCineFX$1227
+doCineFX$1227:
+	.skip 0x4
+.global init$1228
+init$1228:
+	.skip 0x4
+
 .section .text
 
 .global zCutsceneMgrGetHackTableSize__Fv

@@ -24,6 +24,57 @@ sFlare:
 $$2stringBase0_22:
 	.incbin "baserom.dol", 0x2CF728, 0x30
 
+.section .sbss
+
+.global g_debugRenderSafeArea
+g_debugRenderSafeArea:
+	.skip 0x4
+.global mFade
+mFade:
+	.skip 0x18
+.global mLetterboxO
+mLetterboxO:
+	.skip 0x4
+.global mLetterboxTO
+mLetterboxTO:
+	.skip 0x4
+.global sLetterBoxSize
+sLetterBoxSize:
+	.skip 0x4
+.global sFullScreenGlareEnabled
+sFullScreenGlareEnabled:
+	.skip 0x4
+.global sFullScreenGlareTexturePtr
+sFullScreenGlareTexturePtr:
+	.skip 0x4
+.global sCameraFXMatOld
+sCameraFXMatOld:
+	.skip 0x40
+.global anycameraFXActive__20$$2unnamed$$2xScrFx_cpp$$2
+anycameraFXActive__20$$2unnamed$$2xScrFx_cpp$$2:
+	.skip 0x4
+.global SHAKE_FOREVER
+SHAKE_FOREVER:
+	.skip 0x4
+.global sFlareSource
+sFlareSource:
+	.skip 0x4
+.global sNumFlareSources
+sNumFlareSources:
+	.skip 0x4
+.global sNumFlares
+sNumFlares:
+	.skip 0x4
+.global gxFlareTexture
+gxFlareTexture:
+	.skip 0x4
+.global gxFlareFrame
+gxFlareFrame:
+	.skip 0x4
+.global dumpFlares
+dumpFlares:
+	.skip 0x4
+
 .section .text
 
 .global xScrFxInit__Fv

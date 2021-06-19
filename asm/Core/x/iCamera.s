@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global globalCamera
+globalCamera:
+	.skip 0x4
+.global sMainGameCamera
+sMainGameCamera:
+	.skip 0x4
+
 .section .text
 
 .global iCameraSetOrthoProjection__FP8RwCamerab

@@ -6,6 +6,36 @@
 $$2stringBase0_16:
 	.incbin "baserom.dol", 0x2CEE40, 0x10
 
+.section .sbss
+
+.global anim_coll_old_mt
+anim_coll_old_mt:
+	.skip 0x1C
+.global sxModelPoolList
+sxModelPoolList:
+	.skip 0x4
+.global subcamera
+subcamera:
+	.skip 0x4
+.global xModelPipeNumTables
+xModelPipeNumTables:
+	.skip 0x4
+.global xModelPipeCount
+xModelPipeCount:
+	.skip 0x40
+.global xModelPipeData
+xModelPipeData:
+	.skip 0x40
+.global xModelLookupCount
+xModelLookupCount:
+	.skip 0x4
+.global xModelLookupList
+xModelLookupList:
+	.skip 0x4
+.global xModelInstStaticAlloc
+xModelInstStaticAlloc:
+	.skip 0x4
+
 .section .text
 
 .global xModelGetPipe__FP8RpAtomic

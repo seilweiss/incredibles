@@ -6,6 +6,15 @@
 $$2stringBase0_136:
 	.incbin "baserom.dol", 0x2E6520, 0x20
 
+.section .sbss
+
+.global texture__18zTurretSmokeSystem
+texture__18zTurretSmokeSystem:
+	.skip 0x4
+.global systemID__26$$2unnamed$$2zTurretSmoke_cpp$$2
+systemID__26$$2unnamed$$2zTurretSmoke_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global setup__18zTurretSmokeSystemFv

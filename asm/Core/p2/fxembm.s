@@ -24,6 +24,15 @@ $$2287:
 $$2stringBase0_139:
 	.incbin "baserom.dol", 0x2E6860, 0x10
 
+.section .sbss
+
+.global EMBM
+EMBM:
+	.skip 0x14
+.global EnvMode
+EnvMode:
+	.skip 0x4
+
 .section .text
 
 .global CreateEMBMEffect__Fv

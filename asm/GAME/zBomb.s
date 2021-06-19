@@ -21,6 +21,30 @@ __vt__Q21z4bomb:
 $$2stringBase0_118:
 	.incbin "baserom.dol", 0x2E45F0, 0x88
 
+.section .sbss
+
+.global blur_config__Q21z4bomb
+blur_config__Q21z4bomb:
+	.skip 0x24
+.global smoke_config__Q21z4bomb
+smoke_config__Q21z4bomb:
+	.skip 0x38
+.global shrapnel__Q21z4bomb
+shrapnel__Q21z4bomb:
+	.skip 0x4
+.global bounce_group__Q21z4bomb
+bounce_group__Q21z4bomb:
+	.skip 0x4
+.global tick_group__Q21z4bomb
+tick_group__Q21z4bomb:
+	.skip 0x4
+.global warning_group__Q21z4bomb
+warning_group__Q21z4bomb:
+	.skip 0x4
+.global weak_bombs__Q21z4bomb
+weak_bombs__Q21z4bomb:
+	.skip 0x4
+
 .section .text
 
 .global get_model__19$$2unnamed$$2zBomb_cpp$$2FPCc

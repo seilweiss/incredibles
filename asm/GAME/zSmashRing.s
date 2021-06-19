@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global module__24$$2unnamed$$2zSmashRing_cpp$$2
+module__24$$2unnamed$$2zSmashRing_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2zSmashRing_cpp$$25tweakFv

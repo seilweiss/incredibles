@@ -18,6 +18,24 @@ offs$2021:
 $$2stringBase0_5:
 	.incbin "baserom.dol", 0x2CE9C8, 0xB8
 
+.section .sbss
+
+.global all_ents_box
+all_ents_box:
+	.skip 0x18
+.global all_ents_box_init
+all_ents_box_init:
+	.skip 0x4
+.global setMaterialTextureRestore
+setMaterialTextureRestore:
+	.skip 0x4
+.global k$2022
+k$2022:
+	.skip 0x4
+.global xent_entent
+xent_entent:
+	.skip 0x4
+
 .section .text
 
 .global reset__Q218$$2unnamed$$2xEnt_cpp$$29anim_collFR4xEnt

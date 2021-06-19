@@ -24,6 +24,45 @@ signals$1350:
 $$2stringBase0_96:
 	.incbin "baserom.dol", 0x2E2870, 0x140
 
+.section .sbss
+
+.global zero$1073
+zero$1073:
+	.skip 0x4
+.global music_fade__22$$2unnamed$$2zTalkBox_cpp$$2
+music_fade__22$$2unnamed$$2zTalkBox_cpp$$2:
+	.skip 0x4
+.global registered$1772
+registered$1772:
+	.skip 0x1
+.global init$1773
+init$1773:
+	.skip 0x1
+.global init$2309
+init$2309:
+	.skip 0x2
+.global start_state$2308
+start_state$2308:
+	.skip 0x8
+.global init$2312
+init$2312:
+	.skip 0x4
+.global next_state$2311
+next_state$2311:
+	.skip 0xC
+.global init$2315
+init$2315:
+	.skip 0x4
+.global wait_state$2314
+wait_state$2314:
+	.skip 0xC
+.global init$2318
+init$2318:
+	.skip 0x4
+.global stop_state$2317
+stop_state$2317:
+	.skip 0x8
+
 .section .text
 
 .global speak_stop__22$$2unnamed$$2zTalkBox_cpp$$2Fv

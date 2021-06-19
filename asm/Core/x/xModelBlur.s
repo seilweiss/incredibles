@@ -6,6 +6,24 @@
 camtex__24$$2unnamed$$2xModelBlur_cpp$$2:
 	.skip 0x48
 
+.section .sbss
+
+.global activity_buffer__10xModelBlur
+activity_buffer__10xModelBlur:
+	.skip 0x4
+.global activities__10xModelBlur
+activities__10xModelBlur:
+	.skip 0x18
+.global activities_used__10xModelBlur
+activities_used__10xModelBlur:
+	.skip 0x4
+.global FBSaveMem
+FBSaveMem:
+	.skip 0x4
+.global textureMem
+textureMem:
+	.skip 0x4
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2xModelBlur_cpp$$25tweakFv

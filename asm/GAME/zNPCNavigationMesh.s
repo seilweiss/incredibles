@@ -15,6 +15,24 @@ visited$1177:
 $$2stringBase0_82:
 	.incbin "baserom.dol", 0x2E01D8, 0x10
 
+.section .sbss
+
+.global _check_number$994
+_check_number$994:
+	.skip 0x4
+.global init$995
+init$995:
+	.skip 0x4
+.global _check_number$1174
+_check_number$1174:
+	.skip 0x4
+.global init$1175_0
+init$1175_0:
+	.skip 0x4
+.global our_point$1718
+our_point$1718:
+	.skip 0x8
+
 .section .text
 
 .global initialize__Q24zNPC6circleFPQ24zNPC6common

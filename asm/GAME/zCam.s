@@ -12,6 +12,24 @@ global_cam__18$$2unnamed$$2zCam_cpp$$2:
 $$2stringBase0_36:
 	.incbin "baserom.dol", 0x2D72E8, 0x10
 
+.section .sbss
+
+.global input_disabled__18$$2unnamed$$2zCam_cpp$$2
+input_disabled__18$$2unnamed$$2zCam_cpp$$2:
+	.skip 0x4
+.global mode_cams__18$$2unnamed$$2zCam_cpp$$2
+mode_cams__18$$2unnamed$$2zCam_cpp$$2:
+	.skip 0x4
+.global have_default_orientation__18$$2unnamed$$2zCam_cpp$$2
+have_default_orientation__18$$2unnamed$$2zCam_cpp$$2:
+	.skip 0x4
+.global follow_cam__18$$2unnamed$$2zCam_cpp$$2
+follow_cam__18$$2unnamed$$2zCam_cpp$$2:
+	.skip 0x4
+.global global_screen__18$$2unnamed$$2zCam_cpp$$2
+global_screen__18$$2unnamed$$2zCam_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global zCamSceneEnter__FR6zSceneRC7xMat4x3

@@ -36,6 +36,60 @@ $$21936:
 $$2stringBase0_92:
 	.incbin "baserom.dol", 0x2E16F0, 0x698
 
+.section .sbss
+
+.global saveSuccess
+saveSuccess:
+	.skip 0x4
+.global saveload_time_last
+saveload_time_last:
+	.skip 0x4
+.global saveload_time_current
+saveload_time_current:
+	.skip 0x4
+.global saveLoadPromptSel
+saveLoadPromptSel:
+	.skip 0x4
+.global badCard
+badCard:
+	.skip 0x4
+.global startSceneID
+startSceneID:
+	.skip 0x4
+.global sAvailable
+sAvailable:
+	.skip 0x4
+.global sNeeded
+sNeeded:
+	.skip 0x4
+.global sAccessType
+sAccessType:
+	.skip 0x4
+.global loadState__23$$2unnamed$$2zSaveLoad_cpp$$2
+loadState__23$$2unnamed$$2zSaveLoad_cpp$$2:
+	.skip 0x4
+.global saveState__23$$2unnamed$$2zSaveLoad_cpp$$2
+saveState__23$$2unnamed$$2zSaveLoad_cpp$$2:
+	.skip 0x8
+.global promptStartTime__23$$2unnamed$$2zSaveLoad_cpp$$2
+promptStartTime__23$$2unnamed$$2zSaveLoad_cpp$$2:
+	.skip 0x4
+.global lbl_803D0284
+lbl_803D0284:
+	.skip 0x4
+.global promptActive__23$$2unnamed$$2zSaveLoad_cpp$$2
+promptActive__23$$2unnamed$$2zSaveLoad_cpp$$2:
+	.skip 0x1
+.global promptExiting__23$$2unnamed$$2zSaveLoad_cpp$$2
+promptExiting__23$$2unnamed$$2zSaveLoad_cpp$$2:
+	.skip 0x1
+.global preAutoSaving
+preAutoSaving:
+	.skip 0x1
+.global autosaveErrorHack
+autosaveErrorHack:
+	.skip 0x5
+
 .section .text
 
 .global WaitForPreviousPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fb

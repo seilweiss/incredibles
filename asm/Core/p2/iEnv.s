@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global sBeginDrawFX
+sBeginDrawFX:
+	.skip 0x4
+.global sPipeWorld
+sPipeWorld:
+	.skip 0x4
+.global sPipeCamera
+sPipeCamera:
+	.skip 0x4
+.global lastEnv
+lastEnv:
+	.skip 0x4
+
 .section .text
 
 .global SetPipelineCB__FP8RpAtomicPv

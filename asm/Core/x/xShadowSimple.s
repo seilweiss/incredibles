@@ -9,6 +9,24 @@ sShadVert:
 sShadRasters:
 	.skip 0x100
 
+.section .sbss
+
+.global sCollQueue
+sCollQueue:
+	.skip 0x30
+.global xrsv
+xrsv:
+	.skip 0x2C
+.global sShadRaster
+sShadRaster:
+	.skip 0x4
+.global sShadVertCount
+sShadVertCount:
+	.skip 0x4
+.global sModelMat
+sModelMat:
+	.skip 0x4
+
 .section .text
 
 .global shadowRayCB__FP14RpIntersectionP13RpWorldSectorP19RpCollisionTrianglefPv

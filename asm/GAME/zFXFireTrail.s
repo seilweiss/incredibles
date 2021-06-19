@@ -12,6 +12,12 @@ default_config__10fire_trail:
 $$2stringBase0_150:
 	.incbin "baserom.dol", 0x2E6FE8, 0x18
 
+.section .sbss
+
+.global system_id__10fire_trail
+system_id__10fire_trail:
+	.skip 0x8
+
 .section .text
 
 .global setup__10fire_trailFv

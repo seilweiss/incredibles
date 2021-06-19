@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global g_modinit_0
+g_modinit_0:
+	.skip 0x4
+.global g_npcmgr
+g_npcmgr:
+	.skip 0x4
+
 .section .text
 
 .global zNPCMgrSelf__Fv

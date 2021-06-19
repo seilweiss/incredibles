@@ -9,6 +9,18 @@ asyncThread:
 ThreadStack:
 	.skip 0x2000
 
+.section .sbss
+
+.global asyncDirtyFrameList
+asyncDirtyFrameList:
+	.skip 0x8
+.global asyncSema
+asyncSema:
+	.skip 0xC
+.global needToLock
+needToLock:
+	.skip 0x4
+
 .section .text
 
 .global iAsyncStart__FPFPv_Pv

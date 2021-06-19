@@ -1,5 +1,26 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global energy_pulse_system
+energy_pulse_system:
+	.skip 0xC
+.global rubble_system
+rubble_system:
+	.skip 0xC
+.global flame_cone_system
+flame_cone_system:
+	.skip 0xC
+.global smoke_puff_system
+smoke_puff_system:
+	.skip 0xC
+.global lava_drip_system
+lava_drip_system:
+	.skip 0xC
+.global spark_system
+spark_system:
+	.skip 0xC
+
 .section .text
 
 .global zParticleFXCommon_EmitEnergyPulse__FfRC5xVec3RC5xVec3ffff
@@ -107,7 +128,7 @@ zParticleFXCommon_EmitRubble__FfRC5xVec3RC5xVec3ffffff:
 /* 801E0A20 001DD820  D0 21 00 68 */	stfs f1, 0x68(r1)
 /* 801E0A24 001DD824  38 81 00 08 */	addi r4, r1, 8
 /* 801E0A28 001DD828  38 A1 00 0C */	addi r5, r1, 0xc
-/* 801E0A2C 001DD82C  38 6D DB D4 */	addi r3, r13, _rubble_system-_SDA_BASE_
+/* 801E0A2C 001DD82C  38 6D DB D4 */	addi r3, r13, rubble_system-_SDA_BASE_
 /* 801E0A30 001DD830  48 00 07 11 */	bl Emit__221RegisterOnFirstEmitSystem$$0176zParticleEmitterConeSurface$$0144zParticleColorWhiteOpaque$$0114zParticleMoverGravity$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$412RubbleSystem$$1FRfRQ2176zParticleEmitterConeSurface$$0144zParticleColorWhiteOpaque$$0114zParticleMoverGravity$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitState
 /* 801E0A34 001DD834  E3 E1 00 A8 */	psq_l f31, 168(r1), 0, qr0
 /* 801E0A38 001DD838  CB E1 00 A0 */	lfd f31, 0xa0(r1)
@@ -297,7 +318,7 @@ zParticleFXCommon_SceneInit__Fv:
 /* 801E0CE8 001DDAE8  48 00 0E E1 */	bl __ct__17EnergyPulseSystemFv
 lbl_801E0CEC:
 /* 801E0CEC 001DDAEC  38 60 00 0C */	li r3, 0xc
-/* 801E0CF0 001DDAF0  38 8D DB D4 */	addi r4, r13, _rubble_system-_SDA_BASE_
+/* 801E0CF0 001DDAF0  38 8D DB D4 */	addi r4, r13, rubble_system-_SDA_BASE_
 /* 801E0CF4 001DDAF4  4B E5 C8 F1 */	bl __nw__FUlPv
 /* 801E0CF8 001DDAF8  28 03 00 00 */	cmplwi r3, 0
 /* 801E0CFC 001DDAFC  41 82 00 08 */	beq lbl_801E0D04
@@ -333,7 +354,7 @@ lbl_801E0D4C:
 lbl_801E0D64:
 /* 801E0D64 001DDB64  38 6D DB C8 */	addi r3, r13, energy_pulse_system-_SDA_BASE_
 /* 801E0D68 001DDB68  48 00 0B 0D */	bl SceneInit__263RegisterOnFirstEmitSystem$$0213zParticleUVStaticTile$$03$$43$$4183zParticleEmitterConeSurface$$0151zParticleColorWhiteFadeOut$$0120zParticleMoverLinearDecel$$091zParticleRadiusConst$$067zParticlePoolType$$030ptank_pool__pos_color_size_uv2$$413zParticleBase$$1$$1$$1$$1$$1$$1$$417EnergyPulseSystem$$1Fv
-/* 801E0D6C 001DDB6C  38 6D DB D4 */	addi r3, r13, _rubble_system-_SDA_BASE_
+/* 801E0D6C 001DDB6C  38 6D DB D4 */	addi r3, r13, rubble_system-_SDA_BASE_
 /* 801E0D70 001DDB70  48 00 0A D1 */	bl SceneInit__221RegisterOnFirstEmitSystem$$0176zParticleEmitterConeSurface$$0144zParticleColorWhiteOpaque$$0114zParticleMoverGravity$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$412RubbleSystem$$1Fv
 /* 801E0D74 001DDB74  38 6D DB E0 */	addi r3, r13, flame_cone_system-_SDA_BASE_
 /* 801E0D78 001DDB78  48 00 0A 95 */	bl SceneInit__228RegisterOnFirstEmitSystem$$0180zParticleEmitterConeVolume$$0149zParticleColorToBlackFadeOut$$0116zParticleMoverLinearVel$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$415FlameConeSystem$$1Fv
@@ -3146,7 +3167,7 @@ __sinit_zParticleFXCommon_cpp:
 /* 801E3370 001E0170  38 6D DB C8 */	addi r3, r13, energy_pulse_system-_SDA_BASE_
 /* 801E3374 001E0174  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801E3378 001E0178  4B FF E8 51 */	bl __ct__17EnergyPulseSystemFv
-/* 801E337C 001E017C  38 6D DB D4 */	addi r3, r13, _rubble_system-_SDA_BASE_
+/* 801E337C 001E017C  38 6D DB D4 */	addi r3, r13, rubble_system-_SDA_BASE_
 /* 801E3380 001E0180  4B FF E7 A9 */	bl __ct__12RubbleSystemFv
 /* 801E3384 001E0184  38 6D DB E0 */	addi r3, r13, flame_cone_system-_SDA_BASE_
 /* 801E3388 001E0188  4B FF E7 01 */	bl __ct__15FlameConeSystemFv

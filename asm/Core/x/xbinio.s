@@ -21,6 +21,12 @@ $$2875:
 $$2stringBase0_0:
 	.incbin "baserom.dol", 0x2CE89C, 0xC
 
+.section .sbss
+
+.global g_async_context
+g_async_context:
+	.skip 0x8
+
 .section .text
 
 .global xBinioLoadCreate__FPCci

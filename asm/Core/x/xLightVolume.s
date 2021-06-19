@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global activities__12xLightVolume
+activities__12xLightVolume:
+	.skip 0x4
+.global activities_used__12xLightVolume
+activities_used__12xLightVolume:
+	.skip 0x4
+
 .section .text
 
 .global scene_enter__12xLightVolumeFv

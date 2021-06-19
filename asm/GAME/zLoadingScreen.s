@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global show_stats
+show_stats:
+	.skip 0x8
+
 .section .text
 
 .global CustomStaticAllocator__28$$2unnamed$$2zLoadingScreen_cpp$$2FUiPv

@@ -1,5 +1,35 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global psize
+psize:
+	.skip 0x4
+.global pool
+pool:
+	.skip 0x4
+.global alist
+alist:
+	.skip 0x4
+.global shake_psize
+shake_psize:
+	.skip 0x4
+.global shake_pool
+shake_pool:
+	.skip 0x4
+.global shake_alist
+shake_alist:
+	.skip 0x4
+.global rot_match_psize
+rot_match_psize:
+	.skip 0x4
+.global rot_match_pool
+rot_match_pool:
+	.skip 0x4
+.global rot_match_alist
+rot_match_alist:
+	.skip 0x8
+
 .section .text
 
 .global xFFXPoolInit__FUi

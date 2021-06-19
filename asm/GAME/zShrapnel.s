@@ -57,6 +57,27 @@ $$21613:
 $$2stringBase0_95:
 	.incbin "baserom.dol", 0x2E2810, 0x10
 
+.section .sbss
+
+.global tmpMat
+tmpMat:
+	.skip 0x40
+.global sNumActiveFrags
+sNumActiveFrags:
+	.skip 0x4
+.global smoke_config
+smoke_config:
+	.skip 0x38
+.global sCinCB
+sCinCB:
+	.skip 0x4
+.global sCinFrag
+sCinFrag:
+	.skip 0x4
+.global sCinModel
+sCinModel:
+	.skip 0x4
+
 .section .text
 
 .global zFrag_Alloc__F9zFragType

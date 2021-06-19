@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global subtitleSize__24$$2unnamed$$2xSubTitles_cpp$$2
+subtitleSize__24$$2unnamed$$2xSubTitles_cpp$$2:
+	.skip 0x4
+.global m_pCurrentAsset__24$$2unnamed$$2xSubTitles_cpp$$2
+m_pCurrentAsset__24$$2unnamed$$2xSubTitles_cpp$$2:
+	.skip 0x4
+.global m_uLastTimeKey__24$$2unnamed$$2xSubTitles_cpp$$2
+m_uLastTimeKey__24$$2unnamed$$2xSubTitles_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global xSubTitlesInit__Fv

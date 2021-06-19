@@ -12,6 +12,12 @@ rumbleManager$1174:
 $$2stringBase0_19:
 	.incbin "baserom.dol", 0x2CF3A8, 0x10
 
+.section .sbss
+
+.global init$1175
+init$1175:
+	.skip 0x8
+
 .section .text
 
 .global store__Q27xRumble7ManagerFPQ27xRumble7padInfoPCQ27xRumble11emitterBasePQ27xRumble14effectInternalfb

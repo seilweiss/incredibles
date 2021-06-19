@@ -1,5 +1,26 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global sSwsGlobal
+sSwsGlobal:
+	.skip 0x8
+.global sSweptSphereEntFound
+sSweptSphereEntFound:
+	.skip 0x4
+.global sSweptSphereMover
+sSweptSphereMover:
+	.skip 0x4
+.global sSweptSphereCollType
+sSweptSphereCollType:
+	.skip 0x4
+.global sSweptSpherePenby
+sSweptSpherePenby:
+	.skip 0x4
+.global sSweptSphereIgnoreMovers
+sSweptSphereIgnoreMovers:
+	.skip 0x8
+
 .section .text
 
 .global Normalize__33$$2unnamed$$2xCollideSweptSphere_cpp$$2FR5xVec3

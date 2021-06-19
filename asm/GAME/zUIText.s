@@ -12,6 +12,18 @@ __vt__7zUIText:
 $$2stringBase0_101:
 	.incbin "baserom.dol", 0x2E2B48, 0x8
 
+.section .sbss
+
+.global isCJK__21$$2unnamed$$2zUIText_cpp$$2
+isCJK__21$$2unnamed$$2zUIText_cpp$$2:
+	.skip 0x4
+.global HSCALE__21$$2unnamed$$2zUIText_cpp$$2
+HSCALE__21$$2unnamed$$2zUIText_cpp$$2:
+	.skip 0x4
+.global VSCALE__21$$2unnamed$$2zUIText_cpp$$2
+VSCALE__21$$2unnamed$$2zUIText_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global DoInit__7zUITextFv

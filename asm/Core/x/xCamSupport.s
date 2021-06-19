@@ -9,6 +9,12 @@ prev_path$917:
 ent_cache__25$$2unnamed$$2xCamSupport_cpp$$2:
 	.skip 0x204
 
+.section .sbss
+
+.global ent_cache_size__25$$2unnamed$$2xCamSupport_cpp$$2
+ent_cache_size__25$$2unnamed$$2xCamSupport_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global create__15xCamSupportPathFii

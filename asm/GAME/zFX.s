@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global gFXSurfaceFlags
+gFXSurfaceFlags:
+	.skip 0x8
+.global ribbonCount__27$$2unnamed$$2zFXRibbonPool_cpp$$2
+ribbonCount__27$$2unnamed$$2zFXRibbonPool_cpp$$2:
+	.skip 0x4
+.global ribbonPool__27$$2unnamed$$2zFXRibbonPool_cpp$$2
+ribbonPool__27$$2unnamed$$2zFXRibbonPool_cpp$$2:
+	.skip 0x4
+.global ribbonInUse__27$$2unnamed$$2zFXRibbonPool_cpp$$2
+ribbonInUse__27$$2unnamed$$2zFXRibbonPool_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global zFXUpdate__Ff

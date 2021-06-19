@@ -21,6 +21,51 @@ backGroundTexture$1866:
 $$2stringBase0_65:
 	.incbin "baserom.dol", 0x2DAFF8, 0x528
 
+.section .sbss
+
+.global SECS_PER_VBLANK
+SECS_PER_VBLANK:
+	.skip 0x4
+.global SCENE_ID_MNU_INGAME
+SCENE_ID_MNU_INGAME:
+	.skip 0x4
+.global SCENE_ID_MNU_START
+SCENE_ID_MNU_START:
+	.skip 0x4
+.global GCN_DEMO_PARAM
+GCN_DEMO_PARAM:
+	.skip 0x4
+.global gVidMode
+gVidMode:
+	.skip 0x4
+.global ShortbreadCookieJar
+ShortbreadCookieJar:
+	.skip 0x4
+.global gCountryCodeCount__19$$2unnamed$$2zMain_cpp$$2
+gCountryCodeCount__19$$2unnamed$$2zMain_cpp$$2:
+	.skip 0x4
+.global gCountryCodes__19$$2unnamed$$2zMain_cpp$$2
+gCountryCodes__19$$2unnamed$$2zMain_cpp$$2:
+	.skip 0xC
+.global menuModeID$1445
+menuModeID$1445:
+	.skip 0x4
+.global init$1446
+init$1446:
+	.skip 0x4
+.global gameSceneID$1448
+gameSceneID$1448:
+	.skip 0x4
+.global init$1449
+init$1449:
+	.skip 0x4
+.global percentageDone
+percentageDone:
+	.skip 0x4
+.global init$1868
+init$1868:
+	.skip 0x4
+
 .section .text
 
 .global zMainSetPAL__Fv

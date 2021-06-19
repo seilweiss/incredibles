@@ -747,6 +747,627 @@ $$2736:
 ClampRegion:
 	.incbin "baserom.dol", 0x2ECA00, 0x10
 
+.section .sbss
+
+.global __AR_Callback
+__AR_Callback:
+	.skip 0x4
+.global __AR_Size
+__AR_Size:
+	.skip 0x4
+.global __AR_InternalSize
+__AR_InternalSize:
+	.skip 0x4
+.global __AR_ExpansionSize
+__AR_ExpansionSize:
+	.skip 0x4
+.global __AR_StackPointer
+__AR_StackPointer:
+	.skip 0x4
+.global __AR_FreeBlocks
+__AR_FreeBlocks:
+	.skip 0x4
+.global __AR_BlockLength
+__AR_BlockLength:
+	.skip 0x4
+.global __AR_init_flag
+__AR_init_flag:
+	.skip 0x4
+.global __ARQRequestQueueHi
+__ARQRequestQueueHi:
+	.skip 0x4
+.global __ARQRequestTailHi
+__ARQRequestTailHi:
+	.skip 0x4
+.global __ARQRequestQueueLo
+__ARQRequestQueueLo:
+	.skip 0x4
+.global __ARQRequestTailLo
+__ARQRequestTailLo:
+	.skip 0x4
+.global __ARQRequestPendingHi
+__ARQRequestPendingHi:
+	.skip 0x4
+.global __ARQRequestPendingLo
+__ARQRequestPendingLo:
+	.skip 0x4
+.global __ARQCallbackHi
+__ARQCallbackHi:
+	.skip 0x4
+.global __ARQCallbackLo
+__ARQCallbackLo:
+	.skip 0x4
+.global __ARQChunkSize
+__ARQChunkSize:
+	.skip 0x4
+.global __ARQ_init_flag
+__ARQ_init_flag:
+	.skip 0x4
+.global __AXCallbackStack
+__AXCallbackStack:
+	.skip 0x8
+.global __AXCallbackAuxA
+__AXCallbackAuxA:
+	.skip 0x4
+.global __AXCallbackAuxB
+__AXCallbackAuxB:
+	.skip 0x4
+.global __AXContextAuxA
+__AXContextAuxA:
+	.skip 0x4
+.global __AXContextAuxB
+__AXContextAuxB:
+	.skip 0x4
+.global __AXAuxADspWrite
+__AXAuxADspWrite:
+	.skip 0x4
+.global __AXAuxADspRead
+__AXAuxADspRead:
+	.skip 0x4
+.global __AXAuxBDspWrite
+__AXAuxBDspWrite:
+	.skip 0x4
+.global __AXAuxBDspRead
+__AXAuxBDspRead:
+	.skip 0x4
+.global __AXAuxDspWritePosition
+__AXAuxDspWritePosition:
+	.skip 0x4
+.global __AXAuxDspReadPosition
+__AXAuxDspReadPosition:
+	.skip 0x4
+.global __AXAuxDspWritePositionDpl2
+__AXAuxDspWritePositionDpl2:
+	.skip 0x4
+.global __AXAuxDspReadPositionDpl2
+__AXAuxDspReadPositionDpl2:
+	.skip 0x4
+.global __AXAuxCpuReadWritePosition
+__AXAuxCpuReadWritePosition:
+	.skip 0x8
+.global __AXCommandListPosition
+__AXCommandListPosition:
+	.skip 0x4
+.global __AXClWrite
+__AXClWrite:
+	.skip 0x4
+.global __AXCommandListCycles
+__AXCommandListCycles:
+	.skip 0x4
+.global __AXCompressor
+__AXCompressor:
+	.skip 0x4
+.global __AXClMode
+__AXClMode:
+	.skip 0x8
+.global __AXOutFrame
+__AXOutFrame:
+	.skip 0x4
+.global __AXAiDmaFrame
+__AXAiDmaFrame:
+	.skip 0x4
+.global __AXOutDspReady
+__AXOutDspReady:
+	.skip 0x8
+.global __AXOsTime
+__AXOsTime:
+	.skip 0x4
+.global lbl_803D1594
+lbl_803D1594:
+	.skip 0x4
+.global __AXUserFrameCallback
+__AXUserFrameCallback:
+	.skip 0x4
+.global __AXDSPInitFlag
+__AXDSPInitFlag:
+	.skip 0x4
+.global __AXDSPDoneFlag
+__AXDSPDoneFlag:
+	.skip 0x4
+.global __AXDebugSteppingMode
+__AXDebugSteppingMode:
+	.skip 0x4
+.global __AXOutThreadQueue
+__AXOutThreadQueue:
+	.skip 0x8
+.global __AXOutputBufferMode
+__AXOutputBufferMode:
+	.skip 0x8
+.global __AXSpbAL
+__AXSpbAL:
+	.skip 0x4
+.global __AXSpbAR
+__AXSpbAR:
+	.skip 0x4
+.global __AXSpbAS
+__AXSpbAS:
+	.skip 0x4
+.global __AXSpbAAL
+__AXSpbAAL:
+	.skip 0x4
+.global __AXSpbAAR
+__AXSpbAAR:
+	.skip 0x4
+.global __AXSpbAAS
+__AXSpbAAS:
+	.skip 0x4
+.global __AXSpbABL
+__AXSpbABL:
+	.skip 0x4
+.global __AXSpbABR
+__AXSpbABR:
+	.skip 0x4
+.global __AXSpbABS
+__AXSpbABS:
+	.skip 0x8
+.global __AXMaxDspCycles
+__AXMaxDspCycles:
+	.skip 0x4
+.global __AXRecDspCycles
+__AXRecDspCycles:
+	.skip 0x4
+.global __AXNumVoices
+__AXNumVoices:
+	.skip 0x8
+.global __AXProfile
+__AXProfile:
+	.skip 0x4
+.global __AXMaxProfiles
+__AXMaxProfiles:
+	.skip 0x4
+.global __AXCurrentProfile
+__AXCurrentProfile:
+	.skip 0x4
+.global __AXProfileInitialized
+__AXProfileInitialized:
+	.skip 0x4
+.global __AIS_Callback
+__AIS_Callback:
+	.skip 0x4
+.global __AID_Callback
+__AID_Callback:
+	.skip 0x4
+.global __CallbackStack
+__CallbackStack:
+	.skip 0x4
+.global __OldStack
+__OldStack:
+	.skip 0x4
+.global __AI_init_flag
+__AI_init_flag:
+	.skip 0x4
+.global __AID_Active
+__AID_Active:
+	.skip 0x4
+.global bound_32KHz
+bound_32KHz:
+	.skip 0x4
+.global lbl_803D161C
+lbl_803D161C:
+	.skip 0x4
+.global bound_48KHz
+bound_48KHz:
+	.skip 0x4
+.global lbl_803D1624
+lbl_803D1624:
+	.skip 0x4
+.global min_wait
+min_wait:
+	.skip 0x4
+.global lbl_803D162C
+lbl_803D162C:
+	.skip 0x4
+.global max_wait
+max_wait:
+	.skip 0x4
+.global lbl_803D1634
+lbl_803D1634:
+	.skip 0x4
+.global buffer
+buffer:
+	.skip 0x4
+.global lbl_803D163C
+lbl_803D163C:
+	.skip 0x4
+.global __CARDEncode
+__CARDEncode:
+	.skip 0x8
+.global __DBInterface
+__DBInterface:
+	.skip 0x4
+.global DBVerbose
+DBVerbose:
+	.skip 0x4
+.global __DSP_init_flag
+__DSP_init_flag:
+	.skip 0x8
+.global __DSP_rude_task_pending
+__DSP_rude_task_pending:
+	.skip 0x4
+.global __DSP_rude_task
+__DSP_rude_task:
+	.skip 0x4
+.global __DSP_tmp_task
+__DSP_tmp_task:
+	.skip 0x4
+.global __DSP_last_task
+__DSP_last_task:
+	.skip 0x4
+.global __DSP_first_task
+__DSP_first_task:
+	.skip 0x4
+.global __DSP_curr_task
+__DSP_curr_task:
+	.skip 0x4
+.global IDSerialPort1
+IDSerialPort1:
+	.skip 0x8
+.global Chan
+Chan:
+	.skip 0x4
+.global Dev
+Dev:
+	.skip 0x4
+.global Enabled
+Enabled:
+	.skip 0x4
+.global BarnacleEnabled
+BarnacleEnabled:
+	.skip 0x4
+.global __piReg
+__piReg:
+	.skip 0x4
+.global __cpReg
+__cpReg:
+	.skip 0x4
+.global __peReg
+__peReg:
+	.skip 0x4
+.global __memReg
+__memReg:
+	.skip 0x4
+.global peCount$35
+peCount$35:
+	.skip 0x8
+.global time$36
+time$36:
+	.skip 0x4
+.global lbl_803D16A4
+lbl_803D16A4:
+	.skip 0x4
+.global calledOnce$37
+calledOnce$37:
+	.skip 0x4
+.global resetFuncRegistered$70
+resetFuncRegistered$70:
+	.skip 0x4
+.global CPUFifo
+CPUFifo:
+	.skip 0x4
+.global GPFifo
+GPFifo:
+	.skip 0x4
+.global __GXCurrentThread
+__GXCurrentThread:
+	.skip 0x4
+.global CPGPLinked
+CPGPLinked:
+	.skip 0x4
+.global GXOverflowSuspendInProgress
+GXOverflowSuspendInProgress:
+	.skip 0x4
+.global BreakPointCB
+BreakPointCB:
+	.skip 0x4
+.global __GXOverflowCount
+__GXOverflowCount:
+	.skip 0x4
+.global __GXCurrentBP
+__GXCurrentBP:
+	.skip 0x4
+.global TokenCB
+TokenCB:
+	.skip 0x4
+.global DrawDoneCB
+DrawDoneCB:
+	.skip 0x4
+.global DrawDone
+DrawDone:
+	.skip 0x4
+.global FinishQueue
+FinishQueue:
+	.skip 0xC
+.global __MIXDvdStreamAttenCurrent
+__MIXDvdStreamAttenCurrent:
+	.skip 0x4
+.global __MIXDvdStreamAttenUser
+__MIXDvdStreamAttenUser:
+	.skip 0x4
+.global __MIXSoundMode
+__MIXSoundMode:
+	.skip 0x8
+.global BootInfo
+BootInfo:
+	.skip 0x4
+.global BI2DebugFlag
+BI2DebugFlag:
+	.skip 0x4
+.global BI2DebugFlagHolder
+BI2DebugFlagHolder:
+	.skip 0x4
+.global __OSIsGcam
+__OSIsGcam:
+	.skip 0x4
+.global ZeroF
+ZeroF:
+	.skip 0x8
+.global ZeroPS
+ZeroPS:
+	.skip 0x8
+.global AreWeInitialized
+AreWeInitialized:
+	.skip 0x4
+.global OSExceptionTable
+OSExceptionTable:
+	.skip 0x4
+.global __OSSavedRegionEnd
+__OSSavedRegionEnd:
+	.skip 0x4
+.global __OSSavedRegionStart
+__OSSavedRegionStart:
+	.skip 0x4
+.global __OSInIPL
+__OSInIPL:
+	.skip 0x8
+.global __OSStartTime
+__OSStartTime:
+	.skip 0x4
+.global lbl_803D1734
+lbl_803D1734:
+	.skip 0x4
+.global AlarmQueue
+AlarmQueue:
+	.skip 0x8
+.global HeapArray
+HeapArray:
+	.skip 0x4
+.global NumHeaps
+NumHeaps:
+	.skip 0x4
+.global ArenaStart
+ArenaStart:
+	.skip 0x4
+.global ArenaEnd
+ArenaEnd:
+	.skip 0x4
+.global __OSArenaHi
+__OSArenaHi:
+	.skip 0x8
+.global FontData
+FontData:
+	.skip 0x4
+.global SheetImage
+SheetImage:
+	.skip 0x4
+.global WidthTable
+WidthTable:
+	.skip 0x4
+.global CharsInSheet
+CharsInSheet:
+	.skip 0x4
+.global InterruptHandlerTable
+InterruptHandlerTable:
+	.skip 0x4
+.global __OSLastInterruptSrr0
+__OSLastInterruptSrr0:
+	.skip 0x4
+.global __OSLastInterrupt
+__OSLastInterrupt:
+	.skip 0x8
+.global __OSLastInterruptTime
+__OSLastInterruptTime:
+	.skip 0x4
+.global lbl_803D177C
+lbl_803D177C:
+	.skip 0x4
+.global SaveStart
+SaveStart:
+	.skip 0x4
+.global SaveEnd
+SaveEnd:
+	.skip 0x4
+.global Prepared
+Prepared:
+	.skip 0x8
+.global ResetFunctionQueue
+ResetFunctionQueue:
+	.skip 0x8
+.global bootThisDol
+bootThisDol:
+	.skip 0x8
+.global ResetCallback
+ResetCallback:
+	.skip 0x4
+.global Down
+Down:
+	.skip 0x4
+.global LastState
+LastState:
+	.skip 0x8
+.global HoldUp
+HoldUp:
+	.skip 0x4
+.global lbl_803D17B4
+lbl_803D17B4:
+	.skip 0x4
+.global HoldDown
+HoldDown:
+	.skip 0x4
+.global lbl_803D17BC
+lbl_803D17BC:
+	.skip 0x4
+.global RunQueueBits
+RunQueueBits:
+	.skip 0x4
+.global RunQueueHint
+RunQueueHint:
+	.skip 0x4
+.global Reschedule
+Reschedule:
+	.skip 0x8
+.global Debug_BBA
+Debug_BBA:
+	.skip 0x8
+.global Initialized
+Initialized:
+	.skip 0x4
+.global EnabledBits
+EnabledBits:
+	.skip 0x4
+.global ResettingBits
+ResettingBits:
+	.skip 0x4
+.global RecalibrateBits
+RecalibrateBits:
+	.skip 0x4
+.global WaitingBits
+WaitingBits:
+	.skip 0x4
+.global CheckingBits
+CheckingBits:
+	.skip 0x4
+.global PendingBits
+PendingBits:
+	.skip 0x4
+.global BarrelBits
+BarrelBits:
+	.skip 0x4
+.global SamplingCallback
+SamplingCallback:
+	.skip 0x4
+.global recalibrated$388
+recalibrated$388:
+	.skip 0x4
+.global __PADSpec
+__PADSpec:
+	.skip 0x8
+.global cmdTypeAndStatus$78
+cmdTypeAndStatus$78:
+	.skip 0x4
+.global cmdTypeAndStatus$372
+cmdTypeAndStatus$372:
+	.skip 0x4
+.global __PADFixBits
+__PADFixBits:
+	.skip 0x8
+.global SamplingRate
+SamplingRate:
+	.skip 0x8
+.global IsInitialized
+IsInitialized:
+	.skip 0x4
+.global retraceCount
+retraceCount:
+	.skip 0x4
+.global flushFlag
+flushFlag:
+	.skip 0x4
+.global retraceQueue
+retraceQueue:
+	.skip 0x8
+.global PreCB
+PreCB:
+	.skip 0x4
+.global PostCB
+PostCB:
+	.skip 0x4
+.global PositionCallback
+PositionCallback:
+	.skip 0x4
+.global encoderType
+encoderType:
+	.skip 0x4
+.global displayOffsetH
+displayOffsetH:
+	.skip 0x2
+.global displayOffsetV
+displayOffsetV:
+	.skip 0x2
+.global changeMode
+changeMode:
+	.skip 0x8
+.global changed
+changed:
+	.skip 0x4
+.global lbl_803D1854
+lbl_803D1854:
+	.skip 0x4
+.global shdwChangeMode
+shdwChangeMode:
+	.skip 0x8
+.global shdwChanged
+shdwChanged:
+	.skip 0x4
+.global lbl_803D1864
+lbl_803D1864:
+	.skip 0x4
+.global CurrTiming
+CurrTiming:
+	.skip 0x4
+.global CurrTvMode
+CurrTvMode:
+	.skip 0x4
+.global NextBufAddr
+NextBufAddr:
+	.skip 0x4
+.global CurrBufAddr
+CurrBufAddr:
+	.skip 0x4
+.global FBSet
+FBSet:
+	.skip 0x4
+.global message$343
+message$343:
+	.skip 0x4
+.global MTRCallback
+MTRCallback:
+	.skip 0x4
+.global DBGCallback
+DBGCallback:
+	.skip 0x4
+.global SendMailData
+SendMailData:
+	.skip 0x4
+.global RecvDataLeng
+RecvDataLeng:
+	.skip 0x4
+.global pEXIInputFlag
+pEXIInputFlag:
+	.skip 0x4
+.global EXIInputFlag
+EXIInputFlag:
+	.skip 0x4
+
 .section .text
 
 .global PPCMfmsr

@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global surfs
+surfs:
+	.skip 0x4
+.global nsurfs
+nsurfs:
+	.skip 0x4
+
 .section .text
 
 .global xSurfaceInit__FUs

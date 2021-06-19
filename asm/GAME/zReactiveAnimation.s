@@ -6,6 +6,30 @@
 $$2stringBase0_124:
 	.incbin "baserom.dol", 0x2E4D48, 0x28
 
+.section .sbss
+
+.global total_reactives__32$$2unnamed$$2zReactiveAnimation_cpp$$2
+total_reactives__32$$2unnamed$$2zReactiveAnimation_cpp$$2:
+	.skip 0x4
+.global genres__32$$2unnamed$$2zReactiveAnimation_cpp$$2
+genres__32$$2unnamed$$2zReactiveAnimation_cpp$$2:
+	.skip 0x4
+.global genres_size__32$$2unnamed$$2zReactiveAnimation_cpp$$2
+genres_size__32$$2unnamed$$2zReactiveAnimation_cpp$$2:
+	.skip 0x4
+.global activities__32$$2unnamed$$2zReactiveAnimation_cpp$$2
+activities__32$$2unnamed$$2zReactiveAnimation_cpp$$2:
+	.skip 0x4
+.global activities_size__32$$2unnamed$$2zReactiveAnimation_cpp$$2
+activities_size__32$$2unnamed$$2zReactiveAnimation_cpp$$2:
+	.skip 0x4
+.global activities_used__32$$2unnamed$$2zReactiveAnimation_cpp$$2
+activities_used__32$$2unnamed$$2zReactiveAnimation_cpp$$2:
+	.skip 0x4
+.global fire_props__32$$2unnamed$$2zReactiveAnimation_cpp$$2
+fire_props__32$$2unnamed$$2zReactiveAnimation_cpp$$2:
+	.skip 0x10
+
 .section .text
 
 .global AlwaysConditional__32$$2unnamed$$2zReactiveAnimation_cpp$$2FP15xAnimTransitionP11xAnimSinglePv

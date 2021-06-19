@@ -6,6 +6,21 @@
 sManagerList:
 	.skip 0xB540
 
+.section .sbss
+
+.global sLODTableCount
+sLODTableCount:
+	.skip 0x4
+.global sLODTableList
+sLODTableList:
+	.skip 0x4
+.global sManagerIndex
+sManagerIndex:
+	.skip 0x4
+.global sManagerCount
+sManagerCount:
+	.skip 0x4
+
 .section .text
 
 .global AddToLODList__FP4xEnt

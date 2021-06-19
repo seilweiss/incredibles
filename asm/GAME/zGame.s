@@ -15,6 +15,195 @@ $$22021:
 $$2stringBase0_58:
 	.incbin "baserom.dol", 0x2DA6B0, 0xB0
 
+.section .sbss
+
+.global sPlayerMarkerStartID
+sPlayerMarkerStartID:
+	.skip 0x4
+.global sGameOverTimer
+sGameOverTimer:
+	.skip 0x4
+.global sTimeElapsed
+sTimeElapsed:
+	.skip 0x4
+.global gRealTimeElapsed
+gRealTimeElapsed:
+	.skip 0x4
+.global sTimeLast
+sTimeLast:
+	.skip 0x4
+.global lbl_803CFB84
+lbl_803CFB84:
+	.skip 0x4
+.global sTimeCurrent
+sTimeCurrent:
+	.skip 0x4
+.global lbl_803CFB8C
+lbl_803CFB8C:
+	.skip 0x4
+.global gLevelChanged
+gLevelChanged:
+	.skip 0x4
+.global gExitAfterPause
+gExitAfterPause:
+	.skip 0x4
+.global g_hiphopReloadHIP
+g_hiphopReloadHIP:
+	.skip 0x4
+.global g_hiphopForcePortal
+g_hiphopForcePortal:
+	.skip 0x4
+.global gzAsyncSceneID
+gzAsyncSceneID:
+	.skip 0x4
+.global gSoak
+gSoak:
+	.skip 0x4
+.global soaklevels
+soaklevels:
+	.skip 0x4
+.global enableMenuMasher
+enableMenuMasher:
+	.skip 0x4
+.global enableSuperSoaker
+enableSuperSoaker:
+	.skip 0x4
+.global superSoakExtraPadOnInput
+superSoakExtraPadOnInput:
+	.skip 0x4
+.global superSoakExtraPadPressInput
+superSoakExtraPadPressInput:
+	.skip 0x4
+.global dummyPortalAsset
+dummyPortalAsset:
+	.skip 0x18
+.global dummyPortal
+dummyPortal:
+	.skip 0x14
+.global loadMeter
+loadMeter:
+	.skip 0x4
+.global soakidx$1311
+soakidx$1311:
+	.skip 0x4
+.global init$1312
+init$1312:
+	.skip 0x4
+.global soakcnt$1314
+soakcnt$1314:
+	.skip 0x4
+.global init$1315
+init$1315:
+	.skip 0x4
+.global soakdir$1317
+soakdir$1317:
+	.skip 0x4
+.global init$1318
+init$1318:
+	.skip 0x4
+.global justwrap$1320
+justwrap$1320:
+	.skip 0x4
+.global init$1321
+init$1321:
+	.skip 0x4
+.global sumtotal$1354
+sumtotal$1354:
+	.skip 0x4
+.global init$1355
+init$1355:
+	.skip 0x8
+.global t0
+t0:
+	.skip 0x4
+.global lbl_803CFC1C
+lbl_803CFC1C:
+	.skip 0x4
+.global t1
+t1:
+	.skip 0x4
+.global lbl_803CFC24
+lbl_803CFC24:
+	.skip 0x4
+.global w0
+w0:
+	.skip 0x4
+.global lbl_803CFC2C
+lbl_803CFC2C:
+	.skip 0x4
+.global w1
+w1:
+	.skip 0x4
+.global lbl_803CFC34
+lbl_803CFC34:
+	.skip 0x4
+.global gloop_time
+gloop_time:
+	.skip 0x4
+.global lbl_803CFC3C
+lbl_803CFC3C:
+	.skip 0x4
+.global gwait_time
+gwait_time:
+	.skip 0x4
+.global lbl_803CFC44
+lbl_803CFC44:
+	.skip 0x4
+.global gloop_ct
+gloop_ct:
+	.skip 0x4
+.global gloop_time_secs
+gloop_time_secs:
+	.skip 0x4
+.global gwait_time_secs
+gwait_time_secs:
+	.skip 0x4
+.global gloop_net_time_secs
+gloop_net_time_secs:
+	.skip 0x4
+.global sAttractMode_timer$1550
+sAttractMode_timer$1550:
+	.skip 0x4
+.global init$1551
+init$1551:
+	.skip 0x4
+.global sGameScreenTransCam
+sGameScreenTransCam:
+	.skip 0x4
+.global gWorld
+gWorld:
+	.skip 0x4
+.global DirectionalLight
+DirectionalLight:
+	.skip 0x4
+.global bgu1
+bgu1:
+	.skip 0x4
+.global bgv1
+bgv1:
+	.skip 0x4
+.global lastTime$2138
+lastTime$2138:
+	.skip 0x4
+.global init$2139
+init$2139:
+	.skip 0x4
+.global presentTime$2141
+presentTime$2141:
+	.skip 0x4
+.global init$2142
+init$2142:
+	.skip 0x4
+.global TXT_DEMO$2144
+TXT_DEMO$2144:
+	.skip 0x4
+.global init$2145
+init$2145:
+	.skip 0x1
+.global init$2163
+init$2163:
+	.skip 0x7
+
 .section .text
 
 .global PickNextSoak__Fv

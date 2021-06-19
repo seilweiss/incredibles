@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global g_I3
+g_I3:
+	.skip 0x40
+
 .section .text
 
 .global xMath3Init__Fv

@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global activities__30$$2unnamed$$2zParticleLocator_cpp$$2
+activities__30$$2unnamed$$2zParticleLocator_cpp$$2:
+	.skip 0x4
+.global activities_used__30$$2unnamed$$2zParticleLocator_cpp$$2
+activities_used__30$$2unnamed$$2zParticleLocator_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global alloc_activity__30$$2unnamed$$2zParticleLocator_cpp$$2Fv

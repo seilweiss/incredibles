@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global xmath_inited
+xmath_inited:
+	.skip 0x4
+.global xmath_exited
+xmath_exited:
+	.skip 0x4
+.global rndseed
+rndseed:
+	.skip 0xC
+.global lbl_803CEEFC
+lbl_803CEEFC:
+	.skip 0x4
+
 .section .text
 
 .global xMathInit__Fv

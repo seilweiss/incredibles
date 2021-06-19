@@ -15,6 +15,18 @@ default_config__Q21z17JetParticleSystem:
 $$2stringBase0_122:
 	.incbin "baserom.dol", 0x2E4AD8, 0x80
 
+.section .sbss
+
+.global shrapnel__Q21z6rocket
+shrapnel__Q21z6rocket:
+	.skip 0x4
+.global system_id__Q21z17JetParticleSystem
+system_id__Q21z17JetParticleSystem:
+	.skip 0x4
+.global default_config__Q21z11smoke_trail
+default_config__Q21z11smoke_trail:
+	.skip 0x38
+
 .section .text
 
 .global setup__Q21z6rocketFv

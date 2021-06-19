@@ -39,6 +39,15 @@ __vt__Q24zNPC25chopper_follow_movepoints:
 $$2stringBase0_143:
 	.incbin "baserom.dol", 0x2E69B0, 0x498
 
+.section .sbss
+
+.global smoke_settings__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2
+smoke_settings__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2:
+	.skip 0x38
+.global chopper__Q24zNPC17boss_bomb_chopper
+chopper__Q24zNPC17boss_bomb_chopper:
+	.skip 0x8
+
 .section .text
 
 .global get_default_light_kit__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2Fv

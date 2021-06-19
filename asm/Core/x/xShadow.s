@@ -1,5 +1,56 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global ShadowLight
+ShadowLight:
+	.skip 0x4
+.global SHADOW_BOTH
+SHADOW_BOTH:
+	.skip 0x4
+.global Im3DBuffer
+Im3DBuffer:
+	.skip 0x4
+.global Im3DBufferPos
+Im3DBufferPos:
+	.skip 0x4
+.global ShadowCamera
+ShadowCamera:
+	.skip 0x4
+.global ShadowCameraRaster
+ShadowCameraRaster:
+	.skip 0x4
+.global ShadowRenderRaster
+ShadowRenderRaster:
+	.skip 0x4
+.global gShadowObjectRadius
+gShadowObjectRadius:
+	.skip 0x4
+.global shadow_ent_count
+shadow_ent_count:
+	.skip 0x4
+.global sShadowCollJSP
+sShadowCollJSP:
+	.skip 0x4
+.global gc_saveraster
+gc_saveraster:
+	.skip 0x4
+.global sEntSelf
+sEntSelf:
+	.skip 0x4
+.global sMgrList
+sMgrList:
+	.skip 0x4
+.global sMgrCount
+sMgrCount:
+	.skip 0x4
+.global sMgrTotal
+sMgrTotal:
+	.skip 0x4
+.global sCacheList
+sCacheList:
+	.skip 0x4
+
 .section .text
 
 .global xShadowInit__Fv

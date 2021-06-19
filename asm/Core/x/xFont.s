@@ -39,6 +39,63 @@ tb$3746:
 $$2stringBase0_6:
 	.incbin "baserom.dol", 0x2CEA80, 0x200
 
+.section .sbss
+
+.global codepage_textures__19$$2unnamed$$2xFont_cpp$$2
+codepage_textures__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x40
+.global active_fonts_size__19$$2unnamed$$2xFont_cpp$$2
+active_fonts_size__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x4
+.global codepage_textures_size__19$$2unnamed$$2xFont_cpp$$2
+codepage_textures_size__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x4
+.global vert_buffer_used__19$$2unnamed$$2xFont_cpp$$2
+vert_buffer_used__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x4
+.global rcz__19$$2unnamed$$2xFont_cpp$$2
+rcz__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x4
+.global nsz__19$$2unnamed$$2xFont_cpp$$2
+nsz__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x4
+.global model_cache_inited__19$$2unnamed$$2xFont_cpp$$2
+model_cache_inited__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x4
+.global next_order$1242
+next_order$1242:
+	.skip 0x4
+.global init$1243
+init$1243:
+	.skip 0x4
+.global oldrs__19$$2unnamed$$2xFont_cpp$$2
+oldrs__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x24
+.global def_tex_args__19$$2unnamed$$2xFont_cpp$$2
+def_tex_args__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x34
+.global def_model_args__19$$2unnamed$$2xFont_cpp$$2
+def_model_args__19$$2unnamed$$2xFont_cpp$$2:
+	.skip 0x2C
+.global japanese_word_breaking__8xtextbox
+japanese_word_breaking__8xtextbox:
+	.skip 0x4
+.global TXT_WIP$3720
+TXT_WIP$3720:
+	.skip 0x4
+.global init$3721
+init$3721:
+	.skip 0x4
+.global wipTimer$3725
+wipTimer$3725:
+	.skip 0x4
+.global init$3726
+init$3726:
+	.skip 0x1
+.global init$3747
+init$3747:
+	.skip 0x3
+
 .section .text
 
 .global find_bounds__19$$2unnamed$$2xFont_cpp$$2FPC10xColor_tagRC13basic_rect$$0i$$1i

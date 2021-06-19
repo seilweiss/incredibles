@@ -15,6 +15,36 @@ burn_curve$1057:
 $$2stringBase0_41:
 	.incbin "baserom.dol", 0x2D75AC, 0x7C
 
+.section .sbss
+
+.global splash__Q21z5laser
+splash__Q21z5laser:
+	.skip 0x4
+.global laser_count__Q21z5laser
+laser_count__Q21z5laser:
+	.skip 0x4
+.global laser_raster__Q21z5laser
+laser_raster__Q21z5laser:
+	.skip 0x4
+.global vert__Q21z5laser
+vert__Q21z5laser:
+	.skip 0x4
+.global curve$1058
+curve$1058:
+	.skip 0x10
+.global oldsrcblend__1z
+oldsrcblend__1z:
+	.skip 0x4
+.global olddestblend__1z
+olddestblend__1z:
+	.skip 0x4
+.global oldcullmode__1z
+oldcullmode__1z:
+	.skip 0x4
+.global oldvertexalphaenable__1z
+oldvertexalphaenable__1z:
+	.skip 0x4
+
 .section .text
 
 .global zLaserLavaEmit__1zFfP18zTimeHandlerStruct

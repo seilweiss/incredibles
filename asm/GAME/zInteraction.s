@@ -6,6 +6,24 @@
 $$2stringBase0_116:
 	.incbin "baserom.dol", 0x2E44C8, 0xA0
 
+.section .sbss
+
+.global sGotoPointer
+sGotoPointer:
+	.skip 0x28
+.global sLogoAngle
+sLogoAngle:
+	.skip 0x4
+.global sLaunchReelInBeginBounce
+sLaunchReelInBeginBounce:
+	.skip 0x4
+.global turn_smoke_particle__26$$2unnamed$$2zInteraction_cpp$$2
+turn_smoke_particle__26$$2unnamed$$2zInteraction_cpp$$2:
+	.skip 0xC
+.global leaves_particle_system__26$$2unnamed$$2zInteraction_cpp$$2
+leaves_particle_system__26$$2unnamed$$2zInteraction_cpp$$2:
+	.skip 0xC
+
 .section .text
 
 .global zTurn_IntFloor__Ff

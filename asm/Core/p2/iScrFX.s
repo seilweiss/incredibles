@@ -6,6 +6,12 @@
 sMBD:
 	.incbin "baserom.dol", 0x300818, 0x80
 
+.section .sbss
+
+.global sMotionBlurEnabled
+sMotionBlurEnabled:
+	.skip 0x8
+
 .section .text
 
 .global iScrFxInit__Fv

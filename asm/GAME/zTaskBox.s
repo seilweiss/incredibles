@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global tcb__8ztaskbox
+tcb__8ztaskbox:
+	.skip 0x4
+.global shared__22$$2unnamed$$2zTaskBox_cpp$$2
+shared__22$$2unnamed$$2zTaskBox_cpp$$2:
+	.skip 0x4
+.global init$952
+init$952:
+	.skip 0x4
+.global tcb$951
+tcb$951:
+	.skip 0xC
+
 .section .text
 
 .global load__8ztaskboxFRCQ28ztaskbox10asset_type

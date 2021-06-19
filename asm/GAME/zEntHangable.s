@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global sChandelierHash
+sChandelierHash:
+	.skip 0x8
+
 .section .text
 
 .global zEntHangable_SetupFX__Fv

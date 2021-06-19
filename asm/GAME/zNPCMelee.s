@@ -72,6 +72,36 @@ __vt__Q24zNPC6defend:
 $$2stringBase0_78:
 	.incbin "baserom.dol", 0x2DF9C8, 0x5B0
 
+.section .sbss
+
+.global cfg$1350
+cfg$1350:
+	.skip 0x20
+.global sProjDrawCenter__4zNPC
+sProjDrawCenter__4zNPC:
+	.skip 0x1
+.global sProjDrawBounds__4zNPC
+sProjDrawBounds__4zNPC:
+	.skip 0x1
+.global sProjDrawVel__4zNPC
+sProjDrawVel__4zNPC:
+	.skip 0x1
+.global sProjDrawRotation__4zNPC
+sProjDrawRotation__4zNPC:
+	.skip 0x1
+.global sProjBlendSpeed__4zNPC
+sProjBlendSpeed__4zNPC:
+	.skip 0x4
+.global staticFlags__Q24zNPC10projectile
+staticFlags__Q24zNPC10projectile:
+	.skip 0x4
+.global rootOffset__Q24zNPC10projectile
+rootOffset__Q24zNPC10projectile:
+	.skip 0x30
+.global rootQuat__Q24zNPC10projectile
+rootQuat__Q24zNPC10projectile:
+	.skip 0x44
+
 .section .text
 
 .global zNPC_ForceEffect__23$$2unnamed$$2zNPCMelee_cpp$$2FP9xAnimPlayPCc

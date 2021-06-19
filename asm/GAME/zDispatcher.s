@@ -18,6 +18,36 @@ $$21473:
 $$2stringBase0_47:
 	.incbin "baserom.dol", 0x2D8B50, 0x20
 
+.section .sbss
+
+.global g_zdsp_init
+g_zdsp_init:
+	.skip 0x4
+.global currentWorld__25$$2unnamed$$2zDispatcher_cpp$$2
+currentWorld__25$$2unnamed$$2zDispatcher_cpp$$2:
+	.skip 0x2
+.global currentTask__25$$2unnamed$$2zDispatcher_cpp$$2
+currentTask__25$$2unnamed$$2zDispatcher_cpp$$2:
+	.skip 0x2
+.global currentPointer__25$$2unnamed$$2zDispatcher_cpp$$2
+currentPointer__25$$2unnamed$$2zDispatcher_cpp$$2:
+	.skip 0x4
+.global warned$1390
+warned$1390:
+	.skip 0x4
+.global init$1391
+init$1391:
+	.skip 0x4
+.global effectAsset$1404
+effectAsset$1404:
+	.skip 0x38
+.global init$1406
+init$1406:
+	.skip 0x4
+.global effect$1405
+effect$1405:
+	.skip 0x18
+
 .section .text
 
 .global zDispatcherParseINI__FP8xIniFile

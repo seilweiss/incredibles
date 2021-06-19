@@ -30,6 +30,27 @@ footstep_curve$3819:
 $$2stringBase0_42:
 	.incbin "baserom.dol", 0x2D767C, 0x48C
 
+.section .sbss
+
+.global smoke_settings
+smoke_settings:
+	.skip 0x38
+.global run_timer$1669
+run_timer$1669:
+	.skip 0x4
+.global init$1670
+init$1670:
+	.skip 0x1
+.global pushed_player_last_frame$1936
+pushed_player_last_frame$1936:
+	.skip 0x1
+.global init$1937
+init$1937:
+	.skip 0x2
+.global pushed_player_enemy_pos$1939
+pushed_player_enemy_pos$1939:
+	.skip 0x10
+
 .section .text
 
 .global SetupRumbleEffects__27$$2unnamed$$2zCommonPlayer_cpp$$2FPCQ227$$2unnamed$$2zCommonPlayer_cpp$$212RumbleParamsi

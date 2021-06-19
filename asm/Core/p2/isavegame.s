@@ -42,6 +42,57 @@ $$21975:
 $$2stringBase0_31:
 	.incbin "baserom.dol", 0x2D5878, 0x4B0
 
+.section .sbss
+
+.global g_isginit
+g_isginit:
+	.skip 0x4
+.global g_rawicon
+g_rawicon:
+	.skip 0x4
+.global g_rawbanr
+g_rawbanr:
+	.skip 0x4
+.global g_iconsize
+g_iconsize:
+	.skip 0x4
+.global g_banrsize
+g_banrsize:
+	.skip 0x4
+.global isMounted
+isMounted:
+	.skip 0x4
+.global rotate$965
+rotate$965:
+	.skip 0x4
+.global init$966
+init$966:
+	.skip 0x4
+.global callbackResult
+callbackResult:
+	.skip 0x4
+.global checkExInProgress
+checkExInProgress:
+	.skip 0x4
+.global ico_pal$1976
+ico_pal$1976:
+	.skip 0x4
+.global ico_desc$1977
+ico_desc$1977:
+	.skip 0x4
+.global i$1978
+i$1978:
+	.skip 0x4
+.global init$1979
+init$1979:
+	.skip 0x1
+.global cardCreateInProgress
+cardCreateInProgress:
+	.skip 0x1
+.global cardDeleteInProgress
+cardDeleteInProgress:
+	.skip 0x2
+
 .section .text
 
 .global iSGStartup__Fv

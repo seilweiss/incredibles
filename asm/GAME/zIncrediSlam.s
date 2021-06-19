@@ -15,6 +15,24 @@ footstep_curve$1370:
 $$2stringBase0_109:
 	.incbin "baserom.dol", 0x2E3E5C, 0x5C
 
+.section .sbss
+
+.global isStartOnKey__12zIncrediSlam
+isStartOnKey__12zIncrediSlam:
+	.skip 0x4
+.global tweakSlamWaveTextureID
+tweakSlamWaveTextureID:
+	.skip 0x4
+.global tweakSlamParticleTextureID
+tweakSlamParticleTextureID:
+	.skip 0x4
+.global old_rsB
+old_rsB:
+	.skip 0x28
+.global incrediSlamMgr__15zIncrediSlamMgr
+incrediSlamMgr__15zIncrediSlamMgr:
+	.skip 0x4
+
 .section .text
 
 .global __nw__12zIncrediSlamFUl

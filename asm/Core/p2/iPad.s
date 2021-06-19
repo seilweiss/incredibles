@@ -1,5 +1,32 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global sPadMotor
+sPadMotor:
+	.skip 0x10
+.global sPadCurrLevel
+sPadCurrLevel:
+	.skip 0x10
+.global sPadDeltaLevel
+sPadDeltaLevel:
+	.skip 0x10
+.global held_start$1014
+held_start$1014:
+	.skip 0x4
+.global lbl_803CF58C
+lbl_803CF58C:
+	.skip 0x4
+.global init$1015
+init$1015:
+	.skip 0x1
+.global held_through_reset$1017
+held_through_reset$1017:
+	.skip 0x1
+.global init$1018
+init$1018:
+	.skip 0x6
+
 .section .text
 
 .global iPadInit__Fv

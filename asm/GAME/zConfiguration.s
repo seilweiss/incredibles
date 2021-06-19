@@ -12,6 +12,12 @@ scene_player_map__28$$2unnamed$$2zConfiguration_cpp$$2:
 $$2stringBase0_43:
 	.incbin "baserom.dol", 0x2D7B08, 0x180
 
+.section .sbss
+
+.global scene_player_map_max__28$$2unnamed$$2zConfiguration_cpp$$2
+scene_player_map_max__28$$2unnamed$$2zConfiguration_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global zConfig_getPlayerEnumIdx__FUi

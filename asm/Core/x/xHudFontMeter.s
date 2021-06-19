@@ -6,6 +6,15 @@
 $$2stringBase0_9:
 	.incbin "baserom.dol", 0x2CECB8, 0x18
 
+.section .sbss
+
+.global myid$822
+myid$822:
+	.skip 0x4
+.global init$823
+init$823:
+	.skip 0x4
+
 .section .text
 
 .global load__Q24xhud17font_meter_widgetFR5xBaseR9xDynAssetUl

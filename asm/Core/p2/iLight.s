@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global gLightWorld
+gLightWorld:
+	.skip 0x8
+
 .section .text
 
 .global iLightInit__FP7RpWorld

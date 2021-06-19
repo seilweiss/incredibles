@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global gCurXEnv
+gCurXEnv:
+	.skip 0x8
+
 .section .text
 
 .global xEnvLoadJSPList__FP4xEnvi

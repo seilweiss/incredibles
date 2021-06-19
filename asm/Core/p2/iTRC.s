@@ -39,6 +39,87 @@ $$21000_0:
 $$2stringBase0_33:
 	.incbin "baserom.dol", 0x2D6140, 0xC70
 
+.section .sbss
+
+.global mFontData__7ROMFont
+mFontData__7ROMFont:
+	.skip 0x4
+.global mXFBs__7ROMFont
+mXFBs__7ROMFont:
+	.skip 0x8
+.global mCurrentFrameBuffer__7ROMFont
+mCurrentFrameBuffer__7ROMFont:
+	.skip 0x4
+.global mRenderMode__7ROMFont
+mRenderMode__7ROMFont:
+	.skip 0x4
+.global mFontMalloced__7ROMFont
+mFontMalloced__7ROMFont:
+	.skip 0x4
+.global mWasResetButtonPressed__11ResetButton
+mWasResetButtonPressed__11ResetButton:
+	.skip 0x4
+.global mDiscIded__11ResetButton
+mDiscIded__11ResetButton:
+	.skip 0x4
+.global mSndKill__11ResetButton
+mSndKill__11ResetButton:
+	.skip 0x4
+.global mMovieKillFunction__11ResetButton
+mMovieKillFunction__11ResetButton:
+	.skip 0x4
+.global mSndSuspend__8iTRCDisk
+mSndSuspend__8iTRCDisk:
+	.skip 0x4
+.global mSndResume__8iTRCDisk
+mSndResume__8iTRCDisk:
+	.skip 0x4
+.global mAsyncLoadSuspend__8iTRCDisk
+mAsyncLoadSuspend__8iTRCDisk:
+	.skip 0x4
+.global mAsyncLoadResume__8iTRCDisk
+mAsyncLoadResume__8iTRCDisk:
+	.skip 0x4
+.global mPadStopRumbling__8iTRCDisk
+mPadStopRumbling__8iTRCDisk:
+	.skip 0x4
+.global mMovieSuspendFunction__8iTRCDisk
+mMovieSuspendFunction__8iTRCDisk:
+	.skip 0x4
+.global mMovieResumeFunction__8iTRCDisk
+mMovieResumeFunction__8iTRCDisk:
+	.skip 0x4
+.global mMovieResetCallBack__8iTRCDisk
+mMovieResetCallBack__8iTRCDisk:
+	.skip 0x4
+.global gWasDiskError
+gWasDiskError:
+	.skip 0x4
+.global mInCriticalSection__8iTRCDisk
+mInCriticalSection__8iTRCDisk:
+	.skip 0x1
+.global mFModError__8iTRCDisk
+mFModError__8iTRCDisk:
+	.skip 0x1
+.global mInFModLockingCode__8iTRCDisk
+mInFModLockingCode__8iTRCDisk:
+	.skip 0x2
+.global mMainThread__8iTRCDisk
+mMainThread__8iTRCDisk:
+	.skip 0x4
+.global mMainPriority__8iTRCDisk
+mMainPriority__8iTRCDisk:
+	.skip 0x4
+.global mFModThread__8iTRCDisk
+mFModThread__8iTRCDisk:
+	.skip 0x4
+.global mFModPriority__8iTRCDisk
+mFModPriority__8iTRCDisk:
+	.skip 0x4
+.global mDiskErrorInHigherPriorityThread__8iTRCDisk
+mDiskErrorInHigherPriorityThread__8iTRCDisk:
+	.skip 0x8
+
 .section .text
 
 .global GetRegion__Fv

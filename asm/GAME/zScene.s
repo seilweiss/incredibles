@@ -27,6 +27,78 @@ dynamic_types__20$$2unnamed$$2zScene_cpp$$2:
 $$2stringBase0_93:
 	.incbin "baserom.dol", 0x2E21C0, 0x5E8
 
+.section .sbss
+
+.global pDiskIndicator
+pDiskIndicator:
+	.skip 0x4
+.global bytesNeeded
+bytesNeeded:
+	.skip 0x4
+.global availOnDisk
+availOnDisk:
+	.skip 0x4
+.global neededFiles
+neededFiles:
+	.skip 0x4
+.global offsetx
+offsetx:
+	.skip 0x4
+.global offsety
+offsety:
+	.skip 0x4
+.global enableScreenAdj
+enableScreenAdj:
+	.skip 0x4
+.global oldOffsetx
+oldOffsetx:
+	.skip 0x4
+.global oldOffsety
+oldOffsety:
+	.skip 0x4
+.global sLoadingPackFile
+sLoadingPackFile:
+	.skip 0x4
+.global gCurEnv
+gCurEnv:
+	.skip 0x4
+.global sPipeSceneAssetID
+sPipeSceneAssetID:
+	.skip 0x4
+.global gTransitionSceneID
+gTransitionSceneID:
+	.skip 0x4
+.global gInSceneResetOrInit
+gInSceneResetOrInit:
+	.skip 0x4
+.global gSceneUpdateTime
+gSceneUpdateTime:
+	.skip 0x4
+.global sOldPosPlayer
+sOldPosPlayer:
+	.skip 0xC
+.global sOldPosCamera
+sOldPosCamera:
+	.skip 0xC
+.global sSuddenMove
+sSuddenMove:
+	.skip 0x4
+.global sUITimers$3076
+sUITimers$3076:
+	.skip 0x28
+.global init$3077
+init$3077:
+	.skip 0x4
+.global init$3078
+init$3078:
+	.skip 0x4
+.global zSceneSpecialRender_numFuncs
+zSceneSpecialRender_numFuncs:
+	.skip 0x4
+.global scobj_idbps
+scobj_idbps:
+	.skip 0x4
+
 .section .text
 
 .global zSceneIsLoadingPackFile__Fv

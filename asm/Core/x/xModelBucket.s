@@ -1,5 +1,53 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global xModelBucketEnabled
+xModelBucketEnabled:
+	.skip 0x4
+.global sBucketDummyWorld
+sBucketDummyWorld:
+	.skip 0x4
+.global sBucketDummyCamera
+sBucketDummyCamera:
+	.skip 0x4
+.global sBucketCurr
+sBucketCurr:
+	.skip 0x4
+.global sBucketCount
+sBucketCount:
+	.skip 0x4
+.global sBucketList
+sBucketList:
+	.skip 0x4
+.global sBucketClipCullCurr
+sBucketClipCullCurr:
+	.skip 0x4
+.global sBucketClipCullCount
+sBucketClipCullCount:
+	.skip 0x4
+.global sBucketClipCullList
+sBucketClipCullList:
+	.skip 0x4
+.global sAlphaCurr
+sAlphaCurr:
+	.skip 0x4
+.global sAlphaStart
+sAlphaStart:
+	.skip 0x4
+.global sAlphaCount
+sAlphaCount:
+	.skip 0x4
+.global sAlphaList
+sAlphaList:
+	.skip 0x4
+.global sBucketOpaqueRenderStart
+sBucketOpaqueRenderStart:
+	.skip 0x4
+.global $$21274
+$$21274:
+	.skip 0x4
+
 .section .text
 
 .global compare_opaque_buckets__26$$2unnamed$$2xModelBucket_cpp$$2FPCvPCv

@@ -6,6 +6,24 @@
 special_models:
 	.incbin "baserom.dol", 0x306C88, 0xE8
 
+.section .sbss
+
+.global colls_grid
+colls_grid:
+	.skip 0x38
+.global colls_oso_grid
+colls_oso_grid:
+	.skip 0x38
+.global npcs_grid
+npcs_grid:
+	.skip 0x38
+.global grabbable_grid
+grabbable_grid:
+	.skip 0x38
+.global zGridInitted
+zGridInitted:
+	.skip 0x8
+
 .section .text
 
 .global hack_flag_shadows__FP6zScene

@@ -1,5 +1,38 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global sCollidingJSP
+sCollidingJSP:
+	.skip 0x4
+.global cb_capsule
+cb_capsule:
+	.skip 0x4
+.global cbray
+cbray:
+	.skip 0x24
+.global cbnumcs
+cbnumcs:
+	.skip 0x1
+.global cbmaxcs
+cbmaxcs:
+	.skip 0x1
+.global FLOOR
+FLOOR:
+	.skip 0x1
+.global NEXT2
+NEXT2:
+	.skip 0x1
+.global OTHER
+OTHER:
+	.skip 0x4
+.global cbisx_local
+cbisx_local:
+	.skip 0x1C
+.global cbath
+cbath:
+	.skip 0x8
+
 .section .text
 
 .global xSphereHitsSphere__FPC7xSpherePC7xSphereP7xCollis

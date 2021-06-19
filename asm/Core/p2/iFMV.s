@@ -6,6 +6,24 @@
 $$2stringBase0_27:
 	.incbin "baserom.dol", 0x2CF898, 0x18
 
+.section .sbss
+
+.global hBinkCurrMovie
+hBinkCurrMovie:
+	.skip 0x4
+.global sARAMtmp
+sARAMtmp:
+	.skip 0x4
+.global amt
+amt:
+	.skip 0x4
+.global movie_array
+movie_array:
+	.skip 0x4
+.global movie_asset_count
+movie_asset_count:
+	.skip 0x8
+
 .section .text
 
 .global BigMovieAlloc__FUi

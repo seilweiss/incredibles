@@ -12,6 +12,21 @@ __vt__26zUICustomSysMessageManager:
 $$2stringBase0_153:
 	.incbin "baserom.dol", 0x2E7118, 0x50
 
+.section .sbss
+
+.global gDontAutoMenu
+gDontAutoMenu:
+	.skip 0x1
+.global gSysMessageManager_active
+gSysMessageManager_active:
+	.skip 0x3
+.global pSysMessageManager
+pSysMessageManager:
+	.skip 0x4
+.global pSysMessageManager_Custom
+pSysMessageManager_Custom:
+	.skip 0x8
+
 .section .text
 
 .global __ct__26zUICustomSysMessageManagerFP3zUI

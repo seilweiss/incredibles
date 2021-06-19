@@ -12,6 +12,33 @@ cheats__20$$2unnamed$$2zCheat_cpp$$2:
 $$2stringBase0_37:
 	.incbin "baserom.dol", 0x2D72F8, 0x148
 
+.section .sbss
+
+.global gCheats
+gCheats:
+	.skip 0x2
+.global gCheatBouncyHenchmen
+gCheatBouncyHenchmen:
+	.skip 0x1
+.global gCheatExtraShrapnel
+gCheatExtraShrapnel:
+	.skip 0x1
+.global cheatTimer__20$$2unnamed$$2zCheat_cpp$$2
+cheatTimer__20$$2unnamed$$2zCheat_cpp$$2:
+	.skip 0x4
+.global discoTimer__20$$2unnamed$$2zCheat_cpp$$2
+discoTimer__20$$2unnamed$$2zCheat_cpp$$2:
+	.skip 0x4
+.global defaultConfig__20$$2unnamed$$2zCheat_cpp$$2
+defaultConfig__20$$2unnamed$$2zCheat_cpp$$2:
+	.skip 0x18
+.global system$localstatic3$get_system__Q21z26lightweight$$0Q21z5laser$$440$$1Fv
+system$localstatic3$get_system__Q21z26lightweight$$0Q21z5laser$$440$$1Fv:
+	.skip 0x4
+.global init$localstatic4$get_system__Q21z26lightweight$$0Q21z5laser$$440$$1Fv
+init$localstatic4$get_system__Q21z26lightweight$$0Q21z5laser$$440$$1Fv:
+	.skip 0x8
+
 .section .text
 
 .global zCheatRemoveTimed__20$$2unnamed$$2zCheat_cpp$$2Fv

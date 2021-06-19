@@ -6,6 +6,12 @@
 g_hiploadinst:
 	.incbin "baserom.dol", 0x2F0EB8, 0x540
 
+.section .sbss
+
+.global g_loadlock_0
+g_loadlock_0:
+	.skip 0x8
+
 .section .text
 
 .global get_HIPLFuncs__Fv

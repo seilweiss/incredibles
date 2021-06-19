@@ -24,6 +24,12 @@ __vt__Q24zNPC10health_hud:
 $$2stringBase0_149:
 	.incbin "baserom.dol", 0x2E6F10, 0x30
 
+.section .sbss
+
+.global the_ball__4zNPC
+the_ball__4zNPC:
+	.skip 0x8
+
 .section .text
 
 .global reset__Q24zNPC10health_hudFv

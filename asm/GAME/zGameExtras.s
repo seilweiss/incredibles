@@ -6,6 +6,30 @@
 $$21237:
 	.incbin "baserom.dol", 0x306C20, 0x38
 
+.section .sbss
+
+.global g_enableGameExtras
+g_enableGameExtras:
+	.skip 0x4
+.global g_currDay
+g_currDay:
+	.skip 0x4
+.global g_currMonth
+g_currMonth:
+	.skip 0x4
+.global g_gameExtraFlags
+g_gameExtraFlags:
+	.skip 0x4
+.global g_flg_chEnabled
+g_flg_chEnabled:
+	.skip 0x4
+.global sCheatTimer
+sCheatTimer:
+	.skip 0x4
+.global sCheatInputCount
+sCheatInputCount:
+	.skip 0x8
+
 .section .text
 
 .global zGameExtras_SceneInit__Fv

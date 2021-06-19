@@ -6,6 +6,18 @@
 g_cutmap:
 	.incbin "baserom.dol", 0x314F10, 0x100
 
+.section .sbss
+
+.global g_noz_ncin
+g_noz_ncin:
+	.skip 0x4
+.global init$1082
+init$1082:
+	.skip 0x4
+.global nozey_npc_cinematics$1081
+nozey_npc_cinematics$1081:
+	.skip 0x18
+
 .section .text
 
 .global CanRenderNow__11NCINBeNoseyFv

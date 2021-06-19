@@ -30,6 +30,15 @@ __vt__Q24zNPC15human_throwable:
 $$2stringBase0_77:
 	.incbin "baserom.dol", 0x2DF8C0, 0x108
 
+.section .sbss
+
+.global system$localstatic3$get_system__Q21z25lightweight$$0Q21z4bomb$$420$$1Fv
+system$localstatic3$get_system__Q21z25lightweight$$0Q21z4bomb$$420$$1Fv:
+	.skip 0x4
+.global init$localstatic4$get_system__Q21z25lightweight$$0Q21z4bomb$$420$$1Fv
+init$localstatic4$get_system__Q21z25lightweight$$0Q21z4bomb$$420$$1Fv:
+	.skip 0x4
+
 .section .text
 
 .global get_lob_velocity__4zNPCFRC5xVec3RC5xVec3RC5xVec3ff

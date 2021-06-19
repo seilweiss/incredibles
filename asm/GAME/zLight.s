@@ -21,6 +21,21 @@ sEffectFuncs:
 $$2stringBase0_63:
 	.incbin "baserom.dol", 0x2DADE0, 0x10
 
+.section .sbss
+
+.global sLightTotal
+sLightTotal:
+	.skip 0x4
+.global sLightPart
+sLightPart:
+	.skip 0x40
+.global sPartitionVolume
+sPartitionVolume:
+	.skip 0x4
+.global gNumTemporaryLights
+gNumTemporaryLights:
+	.skip 0x8
+
 .section .text
 
 .global zLightResetAll__FP4xEnv

@@ -6,6 +6,30 @@
 $$2stringBase0_126:
 	.incbin "baserom.dol", 0x2E4D80, 0x30
 
+.section .sbss
+
+.global PICKUP_FADE_DIST_SQR
+PICKUP_FADE_DIST_SQR:
+	.skip 0x4
+.global PICKUP_CULL_DIST_SQR
+PICKUP_CULL_DIST_SQR:
+	.skip 0x4
+.global table__7zPickup
+table__7zPickup:
+	.skip 0x4
+.global extras__7zPickup
+extras__7zPickup:
+	.skip 0x4
+.global extra_assets__7zPickup
+extra_assets__7zPickup:
+	.skip 0x4
+.global extras_used__7zPickup
+extras_used__7zPickup:
+	.skip 0x4
+.global extras_max__7zPickup
+extras_max__7zPickup:
+	.skip 0x8
+
 .section .text
 
 .global SceneSetup__7zPickupFv

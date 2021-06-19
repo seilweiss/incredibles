@@ -30,6 +30,24 @@ headBones__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
 $$2stringBase0_67:
 	.incbin "baserom.dol", 0x2DB5A4, 0x168C
 
+.section .sbss
+
+.global zipline_smoke_settings
+zipline_smoke_settings:
+	.skip 0x38
+.global desired_down$2228
+desired_down$2228:
+	.skip 0x4
+.global init$2229
+init$2229:
+	.skip 0x1
+.global no_down$2266
+no_down$2266:
+	.skip 0x1
+.global init$2267
+init$2267:
+	.skip 0x2
+
 .section .text
 
 .global StillCarried__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2FP4xEnt

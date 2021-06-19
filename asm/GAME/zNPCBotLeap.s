@@ -36,6 +36,27 @@ __vt__Q24zNPC14movepoint_jump:
 $$2stringBase0_131:
 	.incbin "baserom.dol", 0x2E59B8, 0x360
 
+.section .sbss
+
+.global need_setup__Q24zNPC10light_dust
+need_setup__Q24zNPC10light_dust:
+	.skip 0x4
+.global oldsrcblend__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2
+oldsrcblend__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2:
+	.skip 0x4
+.global olddestblend__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2
+olddestblend__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2:
+	.skip 0x4
+.global oldcullmode__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2
+oldcullmode__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2:
+	.skip 0x4
+.global laser_count__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2
+laser_count__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2:
+	.skip 0x4
+.global vert__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2
+vert__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global setup__Q24zNPC10light_dustFv

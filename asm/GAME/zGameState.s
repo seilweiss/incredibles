@@ -6,6 +6,15 @@
 $$21040_0:
 	.incbin "baserom.dol", 0x306C58, 0x30
 
+.section .sbss
+
+.global gGameMode
+gGameMode:
+	.skip 0x4
+.global gGameOstrich
+gGameOstrich:
+	.skip 0x4
+
 .section .text
 
 .global zGameStateGet__Fv

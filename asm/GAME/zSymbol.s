@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global map__Q21z6symbol
+map__Q21z6symbol:
+	.skip 0x8
+
 .section .text
 
 .global init__Q21z6symbolFv

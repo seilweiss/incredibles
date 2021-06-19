@@ -6,6 +6,12 @@
 offs$1001:
 	.incbin "baserom.dol", 0x2F0E58, 0x60
 
+.section .sbss
+
+.global k$1002
+k$1002:
+	.skip 0x8
+
 .section .text
 
 .global xGridBoundInit__FP10xGridBoundPv

@@ -33,6 +33,15 @@ $$21174:
 $$2stringBase0_20:
 	.incbin "baserom.dol", 0x2CF6DC, 0xC
 
+.section .sbss
+
+.global g_xsginit
+g_xsginit:
+	.skip 0x4
+.global g_autodata
+g_autodata:
+	.skip 0x14
+
 .section .text
 
 .global xSGStartup__Fv

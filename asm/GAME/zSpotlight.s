@@ -1,5 +1,32 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global flares__24$$2unnamed$$2zSpotlight_cpp$$2
+flares__24$$2unnamed$$2zSpotlight_cpp$$2:
+	.skip 0x4
+.global flares_used__24$$2unnamed$$2zSpotlight_cpp$$2
+flares_used__24$$2unnamed$$2zSpotlight_cpp$$2:
+	.skip 0x4
+.global cones__24$$2unnamed$$2zSpotlight_cpp$$2
+cones__24$$2unnamed$$2zSpotlight_cpp$$2:
+	.skip 0x4
+.global cones_used__24$$2unnamed$$2zSpotlight_cpp$$2
+cones_used__24$$2unnamed$$2zSpotlight_cpp$$2:
+	.skip 0x4
+.global light_cone_atomics__24$$2unnamed$$2zSpotlight_cpp$$2
+light_cone_atomics__24$$2unnamed$$2zSpotlight_cpp$$2:
+	.skip 0x4
+.global aura_cone_atomics__24$$2unnamed$$2zSpotlight_cpp$$2
+aura_cone_atomics__24$$2unnamed$$2zSpotlight_cpp$$2:
+	.skip 0x4
+.global light_cone_atomics_size__24$$2unnamed$$2zSpotlight_cpp$$2
+light_cone_atomics_size__24$$2unnamed$$2zSpotlight_cpp$$2:
+	.skip 0x4
+.global aura_cone_atomics_size__24$$2unnamed$$2zSpotlight_cpp$$2
+aura_cone_atomics_size__24$$2unnamed$$2zSpotlight_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2zSpotlight_cpp$$25tweakFv

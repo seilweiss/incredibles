@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global old_alpha_discard_value_gc
+old_alpha_discard_value_gc:
+	.skip 0x4
+.global alphaDiscardCurrentlySet
+alphaDiscardCurrentlySet:
+	.skip 0x4
+
 .section .text
 
 .global xRenderSceneEnter__Fv

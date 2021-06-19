@@ -12,6 +12,12 @@ default_config$936:
 $$2stringBase0_151:
 	.incbin "baserom.dol", 0x2E7000, 0x18
 
+.section .sbss
+
+.global need_setup__13energy_system
+need_setup__13energy_system:
+	.skip 0x8
+
 .section .text
 
 .global scene_setup__13energy_systemFv

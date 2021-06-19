@@ -90,6 +90,33 @@ headBones__Q25zDash25$$2unnamed$$2zDashPlayer_cpp$$2:
 $$2stringBase0_45:
 	.incbin "baserom.dol", 0x2D7F98, 0x598
 
+.section .sbss
+
+.global DASH_LEVEL
+DASH_LEVEL:
+	.skip 0x1
+.global in_tunnel$1589
+in_tunnel$1589:
+	.skip 0x1
+.global init$1590
+init$1590:
+	.skip 0x1
+.global need_setup__Q25zDash11water_spray
+need_setup__Q25zDash11water_spray:
+	.skip 0x1
+.global time_since_start__Q25zDash9dash_move
+time_since_start__Q25zDash9dash_move:
+	.skip 0x4
+.global system$localstatic3$get_system__Q21z27lightweight$$0Q21z6rocket$$420$$1Fv
+system$localstatic3$get_system__Q21z27lightweight$$0Q21z6rocket$$420$$1Fv:
+	.skip 0x4
+.global init$localstatic4$get_system__Q21z27lightweight$$0Q21z6rocket$$420$$1Fv
+init$localstatic4$get_system__Q21z27lightweight$$0Q21z6rocket$$420$$1Fv:
+	.skip 0x4
+.global WALL_HIT_FRICTION_ADD__5zDash
+WALL_HIT_FRICTION_ADD__5zDash:
+	.skip 0x8
+
 .section .text
 
 .global Init__12zTimedSplashFR5xBaseR9xDynAssetUl

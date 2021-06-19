@@ -9,6 +9,21 @@ $$21464:
 __vt__3zUI:
 	.incbin "baserom.dol", 0x30D6D0, 0x58
 
+.section .sbss
+
+.global staticAllocator__17$$2unnamed$$2zUI_cpp$$2
+staticAllocator__17$$2unnamed$$2zUI_cpp$$2:
+	.skip 0x4
+.global staticUser__17$$2unnamed$$2zUI_cpp$$2
+staticUser__17$$2unnamed$$2zUI_cpp$$2:
+	.skip 0x4
+.global signalHandler__17$$2unnamed$$2zUI_cpp$$2
+signalHandler__17$$2unnamed$$2zUI_cpp$$2:
+	.skip 0x4
+.global signalUser__17$$2unnamed$$2zUI_cpp$$2
+signalUser__17$$2unnamed$$2zUI_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global UIEventHandler__17$$2unnamed$$2zUI_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

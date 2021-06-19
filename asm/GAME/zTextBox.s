@@ -9,6 +9,12 @@ $$2818:
 $$2stringBase0_97:
 	.incbin "baserom.dol", 0x2E2AD0, 0x10
 
+.section .sbss
+
+.global head_active__22$$2unnamed$$2zTextBox_cpp$$2
+head_active__22$$2unnamed$$2zTextBox_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global render_bk_fill__22$$2unnamed$$2zTextBox_cpp$$2FRC8ztextbox

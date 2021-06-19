@@ -33,6 +33,72 @@ decal_anim_plasma__24$$2unnamed$$2zExplosion_cpp$$2:
 $$2stringBase0_54:
 	.incbin "baserom.dol", 0x2D9F04, 0x494
 
+.section .sbss
+
+.global decal_curve__24$$2unnamed$$2zExplosion_cpp$$2
+decal_curve__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x30
+.global motes__24$$2unnamed$$2zExplosion_cpp$$2
+motes__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global motes_used__24$$2unnamed$$2zExplosion_cpp$$2
+motes_used__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global streaks__24$$2unnamed$$2zExplosion_cpp$$2
+streaks__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global streaks_used__24$$2unnamed$$2zExplosion_cpp$$2
+streaks_used__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global streak_emitters__24$$2unnamed$$2zExplosion_cpp$$2
+streak_emitters__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global streak_emitters_used__24$$2unnamed$$2zExplosion_cpp$$2
+streak_emitters_used__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global streak_groups__24$$2unnamed$$2zExplosion_cpp$$2
+streak_groups__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global streak_groups_used__24$$2unnamed$$2zExplosion_cpp$$2
+streak_groups_used__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global sparks__24$$2unnamed$$2zExplosion_cpp$$2
+sparks__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global sparks_used__24$$2unnamed$$2zExplosion_cpp$$2
+sparks_used__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global spark_emitters__24$$2unnamed$$2zExplosion_cpp$$2
+spark_emitters__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global spark_emitters_used__24$$2unnamed$$2zExplosion_cpp$$2
+spark_emitters_used__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global spark_groups__24$$2unnamed$$2zExplosion_cpp$$2
+spark_groups__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global spark_groups_used__24$$2unnamed$$2zExplosion_cpp$$2
+spark_groups_used__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global ini_configs__24$$2unnamed$$2zExplosion_cpp$$2
+ini_configs__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global runtime_configs__24$$2unnamed$$2zExplosion_cpp$$2
+runtime_configs__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global materials__24$$2unnamed$$2zExplosion_cpp$$2
+materials__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global configs_size__24$$2unnamed$$2zExplosion_cpp$$2
+configs_size__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global materials_used__24$$2unnamed$$2zExplosion_cpp$$2
+materials_used__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+.global presi_size__24$$2unnamed$$2zExplosion_cpp$$2
+presi_size__24$$2unnamed$$2zExplosion_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global find_decal_type__24$$2unnamed$$2zExplosion_cpp$$2FUi

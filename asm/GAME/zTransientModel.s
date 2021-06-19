@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global module__29$$2unnamed$$2zTransientModel_cpp$$2
+module__29$$2unnamed$$2zTransientModel_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q229$$2unnamed$$2zTransientModel_cpp$$25tweakFv

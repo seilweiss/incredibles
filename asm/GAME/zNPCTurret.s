@@ -42,6 +42,15 @@ __vt__Q24zNPC7up_down:
 $$2stringBase0_86:
 	.incbin "baserom.dol", 0x2E0950, 0x2D0
 
+.section .sbss
+
+.global glow_sound_group__Q24zNPC12turret_alert
+glow_sound_group__Q24zNPC12turret_alert:
+	.skip 0x4
+.global config__Q24zNPC10smoke_bone
+config__Q24zNPC10smoke_bone:
+	.skip 0x3C
+
 .section .text
 
 .global in_range__Q24zNPC7up_downFP15xAnimTransitionP11xAnimSingle

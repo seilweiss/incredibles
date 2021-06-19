@@ -57,6 +57,18 @@ chunk_shrap_cfg2__Q24zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$2:
 $$2stringBase0_130:
 	.incbin "baserom.dol", 0x2E5448, 0x570
 
+.section .sbss
+
+.global stagePauseTimer__4zNPC
+stagePauseTimer__4zNPC:
+	.skip 0x4
+.global curHp__4zNPC
+curHp__4zNPC:
+	.skip 0x4
+.global gOm10Defeated__4zNPC
+gOm10Defeated__4zNPC:
+	.skip 0x8
+
 .section .text
 
 .global SetupCollision__Q24zNPC10CollidableFRC4xBoxb

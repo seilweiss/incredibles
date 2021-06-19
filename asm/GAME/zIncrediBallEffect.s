@@ -1,5 +1,41 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global mesh__32$$2unnamed$$2zIncrediBallEffect_cpp$$2
+mesh__32$$2unnamed$$2zIncrediBallEffect_cpp$$2:
+	.skip 0x30
+.global ball_mat__32$$2unnamed$$2zIncrediBallEffect_cpp$$2
+ball_mat__32$$2unnamed$$2zIncrediBallEffect_cpp$$2:
+	.skip 0x40
+.global energy_raster__32$$2unnamed$$2zIncrediBallEffect_cpp$$2
+energy_raster__32$$2unnamed$$2zIncrediBallEffect_cpp$$2:
+	.skip 0x4
+.global energy_spin__32$$2unnamed$$2zIncrediBallEffect_cpp$$2
+energy_spin__32$$2unnamed$$2zIncrediBallEffect_cpp$$2:
+	.skip 0x4
+.global damp_multiplier__32$$2unnamed$$2zIncrediBallEffect_cpp$$2
+damp_multiplier__32$$2unnamed$$2zIncrediBallEffect_cpp$$2:
+	.skip 0x4
+.global Aold__32$$2unnamed$$2zIncrediBallEffect_cpp$$2
+Aold__32$$2unnamed$$2zIncrediBallEffect_cpp$$2:
+	.skip 0x4
+.global Avel__32$$2unnamed$$2zIncrediBallEffect_cpp$$2
+Avel__32$$2unnamed$$2zIncrediBallEffect_cpp$$2:
+	.skip 0x4
+.global rows$1380
+rows$1380:
+	.skip 0x4
+.global init$1381
+init$1381:
+	.skip 0x4
+.global cols$1383
+cols$1383:
+	.skip 0x4
+.global init$1384
+init$1384:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q232$$2unnamed$$2zIncrediBallEffect_cpp$$25tweakFv

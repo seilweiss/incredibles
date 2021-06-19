@@ -9,6 +9,24 @@ $$2774:
 $$2stringBase0:
 	.incbin "baserom.dol", 0x2CE740, 0x48
 
+.section .sbss
+
+.global sxAnimTempTranPool
+sxAnimTempTranPool:
+	.skip 0x1C
+.global sxAnimTempStatePool
+sxAnimTempStatePool:
+	.skip 0x1C
+.global gxAnimUseGrowAlloc
+gxAnimUseGrowAlloc:
+	.skip 0x4
+.global tmpBuffer$2083
+tmpBuffer$2083:
+	.skip 0x4
+.global init$2084
+init$2084:
+	.skip 0x8
+
 .section .text
 
 .global _xSingleCompare__Fcc

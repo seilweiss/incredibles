@@ -6,6 +6,27 @@
 $$2stringBase0_30:
 	.incbin "baserom.dol", 0x2CF950, 0x10
 
+.section .sbss
+
+.global s_geom
+s_geom:
+	.skip 0x4
+.global s_tgt
+s_tgt:
+	.skip 0x4
+.global s_alloc
+s_alloc:
+	.skip 0x4
+.global s_vTemp
+s_vTemp:
+	.skip 0x4
+.global s_nTemp
+s_nTemp:
+	.skip 0x4
+.global s_numV
+s_numV:
+	.skip 0x4
+
 .section .text
 
 .global MorphCommon__FP8RpAtomicP11RwMatrixTagPPsPsUifi

@@ -21,6 +21,24 @@ __vt__7zPlayer:
 $$2stringBase0_91:
 	.incbin "baserom.dol", 0x2E1480, 0x170
 
+.section .sbss
+
+.global playerTalkData__7zPlayer
+playerTalkData__7zPlayer:
+	.skip 0x10
+.global drawLorez__21$$2unnamed$$2zPlayer_cpp$$2
+drawLorez__21$$2unnamed$$2zPlayer_cpp$$2:
+	.skip 0x4
+.global reactiveAnimSpeed
+reactiveAnimSpeed:
+	.skip 0x4
+.global debug_apply_depen$2804
+debug_apply_depen$2804:
+	.skip 0x1
+.global init$2805
+init$2805:
+	.skip 0x7
+
 .section .text
 
 .global bound_update_wrapper__21$$2unnamed$$2zPlayer_cpp$$2FP4xEntP5xVec3

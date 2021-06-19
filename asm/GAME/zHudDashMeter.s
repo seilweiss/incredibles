@@ -6,6 +6,12 @@
 $$2stringBase0_129:
 	.incbin "baserom.dol", 0x2E4FB8, 0x88
 
+.section .sbss
+
+.global pDashMeter__Q24zHud9DashMeter
+pDashMeter__Q24zHud9DashMeter:
+	.skip 0x8
+
 .section .text
 
 .global __ct__Q24zHud9DashMeterFv

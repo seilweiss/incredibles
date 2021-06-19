@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global zeroMemoryAddress__28$$2unnamed$$2xMemoryManager_cpp$$2
+zeroMemoryAddress__28$$2unnamed$$2xMemoryManager_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global Allocate__14xMemoryManagerFUiUi

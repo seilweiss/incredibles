@@ -6,6 +6,12 @@
 $$2709:
 	.incbin "baserom.dol", 0x30C458, 0xC8
 
+.section .sbss
+
+.global sRS
+sRS:
+	.skip 0x8
+
 .section .text
 
 .global zRenderStateInit__Fv

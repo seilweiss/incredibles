@@ -15,6 +15,24 @@ __vt__37zUICustomBattleModeSelectSceneManager:
 $$2stringBase0_152:
 	.incbin "baserom.dol", 0x2E7018, 0x100
 
+.section .sbss
+
+.global levelDescriptionBaseText__44$$2unnamed$$2zUICustomBattleModeSelectScene_cpp$$2
+levelDescriptionBaseText__44$$2unnamed$$2zUICustomBattleModeSelectScene_cpp$$2:
+	.skip 0x4
+.global pText__44$$2unnamed$$2zUICustomBattleModeSelectScene_cpp$$2
+pText__44$$2unnamed$$2zUICustomBattleModeSelectScene_cpp$$2:
+	.skip 0x4
+.global curr_content_sceneID
+curr_content_sceneID:
+	.skip 0x4
+.global bBattleSceneAvailable
+bBattleSceneAvailable:
+	.skip 0x1
+.global gBattleCheat
+gBattleCheat:
+	.skip 0x3
+
 .section .text
 
 .global __ct__37zUICustomBattleModeSelectSceneManagerFP3zUI

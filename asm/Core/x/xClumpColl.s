@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global xClumpColl_FilterFlagsAllMask
+xClumpColl_FilterFlagsAllMask:
+	.skip 0x8
+
 .section .text
 
 .global xClumpColl_SetFilterFlags__FUcUcUc

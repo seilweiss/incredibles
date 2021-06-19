@@ -24,6 +24,30 @@ scan_hide_nodes__26$$2unnamed$$2zNPCMeleeBot_cpp$$2:
 $$2stringBase0_123:
 	.incbin "baserom.dol", 0x2E4C00, 0x148
 
+.section .sbss
+
+.global model_atomics__26$$2unnamed$$2zNPCMeleeBot_cpp$$2
+model_atomics__26$$2unnamed$$2zNPCMeleeBot_cpp$$2:
+	.skip 0x4
+.global flat_laser_atomic__26$$2unnamed$$2zNPCMeleeBot_cpp$$2
+flat_laser_atomic__26$$2unnamed$$2zNPCMeleeBot_cpp$$2:
+	.skip 0x4
+.global scan_show_curve__26$$2unnamed$$2zNPCMeleeBot_cpp$$2
+scan_show_curve__26$$2unnamed$$2zNPCMeleeBot_cpp$$2:
+	.skip 0x10
+.global scan_hide_curve__26$$2unnamed$$2zNPCMeleeBot_cpp$$2
+scan_hide_curve__26$$2unnamed$$2zNPCMeleeBot_cpp$$2:
+	.skip 0x10
+.global scan_noise_group__Q24zNPC12melee_charge
+scan_noise_group__Q24zNPC12melee_charge:
+	.skip 0x4
+.global fx_buffer__Q24zNPC9melee_bot
+fx_buffer__Q24zNPC9melee_bot:
+	.skip 0x4
+.global fx_stack__Q24zNPC9melee_bot
+fx_stack__Q24zNPC9melee_bot:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q226$$2unnamed$$2zNPCMeleeBot_cpp$$215melee_bot_tweakFv

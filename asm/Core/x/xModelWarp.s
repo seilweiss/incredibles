@@ -9,6 +9,12 @@ camtex__24$$2unnamed$$2xModelWarp_cpp$$2:
 render_contexts__24$$2unnamed$$2xModelWarp_cpp$$2:
 	.skip 0x400
 
+.section .sbss
+
+.global render_contexts_size__24$$2unnamed$$2xModelWarp_cpp$$2
+render_contexts_size__24$$2unnamed$$2xModelWarp_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2xModelWarp_cpp$$25tweakFv

@@ -21,6 +21,39 @@ binom_triangle:
 $$2stringBase0_7:
 	.incbin "baserom.dol", 0x2CEC80, 0x20
 
+.section .sbss
+
+.global gAtomicRenderCallBack
+gAtomicRenderCallBack:
+	.skip 0x4
+.global MainLight
+MainLight:
+	.skip 0x4
+.global num_fx_atomics
+num_fx_atomics:
+	.skip 0x4
+.global g_matfx_frame
+g_matfx_frame:
+	.skip 0x4
+.global xfx_initted
+xfx_initted:
+	.skip 0x4
+.global xFXanimUVPipeline
+xFXanimUVPipeline:
+	.skip 0x4
+.global xFXanimUV2PTexture
+xFXanimUV2PTexture:
+	.skip 0x4
+.global joint_alloc__9xFXRibbon
+joint_alloc__9xFXRibbon:
+	.skip 0x1C
+.global activities_used__9xFXRibbon
+activities_used__9xFXRibbon:
+	.skip 0x4
+.global need_sort__9xFXRibbon
+need_sort__9xFXRibbon:
+	.skip 0x4
+
 .section .text
 
 .global xFXInit__Fv

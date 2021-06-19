@@ -12,6 +12,21 @@ $$21153:
 $$21407:
 	.incbin "baserom.dol", 0x30FB64, 0x2C
 
+.section .sbss
+
+.global myid$881
+myid$881:
+	.skip 0x4
+.global init$882
+init$882:
+	.skip 0x4
+.global fNearZ$936
+fNearZ$936:
+	.skip 0x4
+.global init$937
+init$937:
+	.skip 0x4
+
 .section .text
 
 .global load__Q24xhud12image_widgetFR5xBaseR9xDynAssetUl

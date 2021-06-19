@@ -12,6 +12,21 @@ uiElements__20$$2unnamed$$2zUIMgr_cpp$$2:
 $$21182:
 	.incbin "baserom.dol", 0x30D7D8, 0x20
 
+.section .sbss
+
+.global uiElementCount__20$$2unnamed$$2zUIMgr_cpp$$2
+uiElementCount__20$$2unnamed$$2zUIMgr_cpp$$2:
+	.skip 0x4
+.global uiHDREnabled__20$$2unnamed$$2zUIMgr_cpp$$2
+uiHDREnabled__20$$2unnamed$$2zUIMgr_cpp$$2:
+	.skip 0x4
+.global $$21285
+$$21285:
+	.skip 0x4
+.global $$21298
+$$21298:
+	.skip 0x4
+
 .section .text
 
 .global zUIMgrInit__FP6zScene

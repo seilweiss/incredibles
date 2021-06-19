@@ -33,6 +33,12 @@ __vt__Q24zNPC11firing_bone:
 $$2stringBase0_84:
 	.incbin "baserom.dol", 0x2E0270, 0x160
 
+.section .sbss
+
+.global muzzle_flash_system__25$$2unnamed$$2zNPCShooter_cpp$$2
+muzzle_flash_system__25$$2unnamed$$2zNPCShooter_cpp$$2:
+	.skip 0x10
+
 .section .text
 
 .global MuzzleFlash_LevelInit__25$$2unnamed$$2zNPCShooter_cpp$$2Fv

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global xqc_def_ctrl
+xqc_def_ctrl:
+	.skip 0x40
+
 .section .text
 
 .global xQuickCullInit__FP10xQCControlffffff

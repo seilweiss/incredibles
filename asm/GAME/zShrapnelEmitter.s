@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global module__30$$2unnamed$$2zShrapnelEmitter_cpp$$2
+module__30$$2unnamed$$2zShrapnelEmitter_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q230$$2unnamed$$2zShrapnelEmitter_cpp$$25tweakFv

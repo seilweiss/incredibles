@@ -24,6 +24,18 @@ __vt__Q24zNPC7bot_lob:
 $$2stringBase0_113:
 	.incbin "baserom.dol", 0x2E4318, 0x188
 
+.section .sbss
+
+.global proj_type__Q24zNPC7bot_lob
+proj_type__Q24zNPC7bot_lob:
+	.skip 0x4
+.global system$localstatic3$get_system__Q21z26lightweight$$0Q21z5shell$$415$$1Fv
+system$localstatic3$get_system__Q21z26lightweight$$0Q21z5shell$$415$$1Fv:
+	.skip 0x4
+.global init$localstatic4$get_system__Q21z26lightweight$$0Q21z5shell$$415$$1Fv
+init$localstatic4$get_system__Q21z26lightweight$$0Q21z5shell$$415$$1Fv:
+	.skip 0x8
+
 .section .text
 
 .global runnable__Q24zNPC7bot_lobFf

@@ -12,6 +12,21 @@ astnames:
 $$2stringBase0_34:
 	.incbin "baserom.dol", 0x2D6DB0, 0x80
 
+.section .sbss
+
+.global nals
+nals:
+	.skip 0x4
+.global aids
+aids:
+	.skip 0x4
+.global atbls
+atbls:
+	.skip 0x4
+.global anused
+anused:
+	.skip 0x4
+
 .section .text
 
 .global AlwaysConditional__FP15xAnimTransitionP11xAnimSinglePv

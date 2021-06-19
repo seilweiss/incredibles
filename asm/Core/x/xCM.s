@@ -6,6 +6,21 @@
 $$2stringBase0_2:
 	.incbin "baserom.dol", 0x2CE8C0, 0x78
 
+.section .sbss
+
+.global destX
+destX:
+	.skip 0x4
+.global destY
+destY:
+	.skip 0x4
+.global credits_data
+credits_data:
+	.skip 0x4
+.global credits_parentID
+credits_parentID:
+	.skip 0x4
+
 .section .text
 
 .global Decrypt__FPvUiPCvUi

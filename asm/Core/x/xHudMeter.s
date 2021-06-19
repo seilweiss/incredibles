@@ -6,6 +6,21 @@
 $$2stringBase0_10:
 	.incbin "baserom.dol", 0x2CECD0, 0x58
 
+.section .sbss
+
+.global registered$809
+registered$809:
+	.skip 0x1
+.global init$810
+init$810:
+	.skip 0x3
+.global myid$834
+myid$834:
+	.skip 0x4
+.global init$835
+init$835:
+	.skip 0x8
+
 .section .text
 
 .global __ct__Q24xhud12meter_widgetFRCQ24xhud11meter_asset

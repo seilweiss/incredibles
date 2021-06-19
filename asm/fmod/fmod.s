@@ -213,6 +213,141 @@ $$21090:
 $$2159:
 	.incbin "baserom.dol", 0x2ECEA8, 0x10
 
+.section .sbss
+
+.global FSOUND_ErrorNo
+FSOUND_ErrorNo:
+	.skip 0x4
+.global start$211
+start$211:
+	.skip 0x4
+.global end$212
+end$212:
+	.skip 0x4
+.global delta$213
+delta$213:
+	.skip 0x4
+.global FSOUND_3D_CurrentListener
+FSOUND_3D_CurrentListener:
+	.skip 0x8
+.global FSOUND_GC_PrepareForResetFlag
+FSOUND_GC_PrepareForResetFlag:
+	.skip 0x4
+.global auxa_effect
+auxa_effect:
+	.skip 0x4
+.global auxb_effect
+auxb_effect:
+	.skip 0x8
+.global FSOUND_Stream_UpdateBusy
+FSOUND_Stream_UpdateBusy:
+	.skip 0x1
+.global FSOUND_Stream_DSPBusy
+FSOUND_Stream_DSPBusy:
+	.skip 0x7
+.global FSOUND_Output_GC_AramBlockSet
+FSOUND_Output_GC_AramBlockSet:
+	.skip 0x4
+.global FSOUND_Output_GC_OutputChannel
+FSOUND_Output_GC_OutputChannel:
+	.skip 0x4
+.global FSOUND_Output_GC_NumDroppedVoices
+FSOUND_Output_GC_NumDroppedVoices:
+	.skip 0x4
+.global FSOUND_Output_GC_LibsInitialised
+FSOUND_Output_GC_LibsInitialised:
+	.skip 0x1
+.global FSOUND_Output_GC_ProcessVoices
+FSOUND_Output_GC_ProcessVoices:
+	.skip 0x3
+.global FSOUND_Output_GC_ArqRequestSema
+FSOUND_Output_GC_ArqRequestSema:
+	.skip 0x4
+.global FSOUND_Output_GC_OutputBufferStartBlock
+FSOUND_Output_GC_OutputBufferStartBlock:
+	.skip 0x4
+.global FSOUND_Output_GC_ZeroBufBlock
+FSOUND_Output_GC_ZeroBufBlock:
+	.skip 0x4
+.global FSOUND_Output_GC_MixSema
+FSOUND_Output_GC_MixSema:
+	.skip 0x4
+.global FSOUND_Output_GC_MixThreadRunning
+FSOUND_Output_GC_MixThreadRunning:
+	.skip 0x4
+.global chanindex$820
+chanindex$820:
+	.skip 0x4
+.global FSOUND_Output_GC_ZeroBufAddr
+FSOUND_Output_GC_ZeroBufAddr:
+	.skip 0x4
+.global FSOUND_Output_GC_OutputBuffer_OneChanBlock
+FSOUND_Output_GC_OutputBuffer_OneChanBlock:
+	.skip 0x4
+.global FSOUND_Output_GC_OutputBuffer_R1
+FSOUND_Output_GC_OutputBuffer_R1:
+	.skip 0x4
+.global FSOUND_Output_GC_OutputBuffer_R0
+FSOUND_Output_GC_OutputBuffer_R0:
+	.skip 0x4
+.global FSOUND_Output_GC_OutputBuffer_L1
+FSOUND_Output_GC_OutputBuffer_L1:
+	.skip 0x4
+.global FSOUND_Output_GC_OutputBuffer_L0
+FSOUND_Output_GC_OutputBuffer_L0:
+	.skip 0x4
+.global FSOUND_Output_GC_OutputBufferStart
+FSOUND_Output_GC_OutputBufferStart:
+	.skip 0x4
+.global FSOUND_Output_GC_LastCursorPos_R
+FSOUND_Output_GC_LastCursorPos_R:
+	.skip 0x4
+.global FSOUND_Output_GC_OutputChannelStarted
+FSOUND_Output_GC_OutputChannelStarted:
+	.skip 0x4
+.global FSOUND_Output_GC_AramLength
+FSOUND_Output_GC_AramLength:
+	.skip 0x4
+.global FSOUND_Output_GC_AramBase
+FSOUND_Output_GC_AramBase:
+	.skip 0x8
+.global FSOUND_MixerRampSteps
+FSOUND_MixerRampSteps:
+	.skip 0x8
+.global FSOUND_File_OpenCallback
+FSOUND_File_OpenCallback:
+	.skip 0x4
+.global FSOUND_File_CloseCallback
+FSOUND_File_CloseCallback:
+	.skip 0x4
+.global FSOUND_File_ReadCallback
+FSOUND_File_ReadCallback:
+	.skip 0x4
+.global FSOUND_File_SeekCallback
+FSOUND_File_SeekCallback:
+	.skip 0x4
+.global FSOUND_File_TellCallback
+FSOUND_File_TellCallback:
+	.skip 0x4
+.global FSOUND_File_ThreadRunning
+FSOUND_File_ThreadRunning:
+	.skip 0x4
+.global FSOUND_File_Sema
+FSOUND_File_Sema:
+	.skip 0x4
+.global FSOUND_File_EndSema
+FSOUND_File_EndSema:
+	.skip 0x4
+.global FSOUND_File_QueueCurrentMain
+FSOUND_File_QueueCurrentMain:
+	.skip 0x8
+.global FSOUND_Output_GC_UpdateDVDStatusCallback
+FSOUND_Output_GC_UpdateDVDStatusCallback:
+	.skip 0x4
+.global FSOUND_Output_GC_TempBuf
+FSOUND_Output_GC_TempBuf:
+	.skip 0x4
+
 .section .text
 
 .global FMUSIC_GetOpenState

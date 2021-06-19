@@ -12,6 +12,51 @@ staticThrowableProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2:
 $$2stringBase0_127:
 	.incbin "baserom.dol", 0x2E4DB0, 0xA8
 
+.section .sbss
+
+.global throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2
+throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.skip 0x4
+.global throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2
+throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.skip 0x4
+.global throwModelMapMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2
+throwModelMapMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.skip 0x4
+.global throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2
+throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.skip 0x4
+.global throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2
+throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.skip 0x4
+.global throwPropertiesMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2
+throwPropertiesMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.skip 0x4
+.global $$21332_0
+$$21332_0:
+	.skip 0x4
+.global runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2
+runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.skip 0x4
+.global addedTargets__30$$2unnamed$$2zThrowableSystem_cpp$$2
+addedTargets__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.skip 0x4
+.global addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2
+addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.skip 0x4
+.global additionalCollisionHandler__30$$2unnamed$$2zThrowableSystem_cpp$$2
+additionalCollisionHandler__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.skip 0x4
+.global $$21843
+$$21843:
+	.skip 0x4
+.global $$21860
+$$21860:
+	.skip 0x4
+.global lastTarget
+lastTarget:
+	.skip 0x4
+
 .section .text
 
 .global UintCompare__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUi

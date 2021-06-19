@@ -15,6 +15,39 @@ $$21634:
 $$2stringBase0_137:
 	.incbin "baserom.dol", 0x2E6540, 0x78
 
+.section .sbss
+
+.global ring_explosion__Q21z10uber_laser
+ring_explosion__Q21z10uber_laser:
+	.skip 0x4
+.global shoot_charge__Q21z10uber_laser
+shoot_charge__Q21z10uber_laser:
+	.skip 0x4
+.global shoot__Q21z10uber_laser
+shoot__Q21z10uber_laser:
+	.skip 0x4
+.global shoot_end__Q21z10uber_laser
+shoot_end__Q21z10uber_laser:
+	.skip 0x4
+.global explode__Q21z10uber_laser
+explode__Q21z10uber_laser:
+	.skip 0x4
+.global beam_raster__Q21z10uber_laser
+beam_raster__Q21z10uber_laser:
+	.skip 0x4
+.global vert__Q21z10uber_laser
+vert__Q21z10uber_laser:
+	.skip 0x4
+.global trail_type$1429
+trail_type$1429:
+	.skip 0x4
+.global init$1430
+init$1430:
+	.skip 0x4
+.global laser_count__1z
+laser_count__1z:
+	.skip 0x4
+
 .section .text
 
 .global load__10zUberLaserFR5xBaseR9xDynAssetUl

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global gSceneReset__21$$2unnamed$$2zScript_cpp$$2
+gSceneReset__21$$2unnamed$$2zScript_cpp$$2:
+	.skip 0x10
+
 .section .text
 
 .global zScriptInit__FPvPv

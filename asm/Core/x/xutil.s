@@ -6,6 +6,12 @@
 g_crc32_table:
 	.incbin "baserom.dol", 0x2FFFD8, 0x400
 
+.section .sbss
+
+.global g_xutilinit
+g_xutilinit:
+	.skip 0x8
+
 .section .text
 
 .global xUtilStartup__Fv

@@ -9,6 +9,18 @@ spike_appear_curve__25$$2unnamed$$2zFrozoneIce_cpp$$2:
 spike_disappear_curve__25$$2unnamed$$2zFrozoneIce_cpp$$2:
 	.incbin "baserom.dol", 0x2E6FA0, 0x48
 
+.section .sbss
+
+.global frodata__25$$2unnamed$$2zFrozoneIce_cpp$$2
+frodata__25$$2unnamed$$2zFrozoneIce_cpp$$2:
+	.skip 0x4
+.global $$21805
+$$21805:
+	.skip 0x4
+.global $$21807
+$$21807:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q225$$2unnamed$$2zFrozoneIce_cpp$$25tweakFv

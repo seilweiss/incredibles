@@ -9,6 +9,12 @@ g_tbl_onbit:
 g_tbl_clear:
 	.incbin "baserom.dol", 0x2FEC18, 0x80
 
+.section .sbss
+
+.global g_serinit
+g_serinit:
+	.skip 0x8
+
 .section .text
 
 .global xSerialStartup__FiP21st_SERIAL_PERCID_SIZE

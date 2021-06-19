@@ -6,6 +6,27 @@
 $$2stringBase0_14:
 	.incbin "baserom.dol", 0x2CEDE0, 0x8
 
+.section .sbss
+
+.global sCurrVert
+sCurrVert:
+	.skip 0x4
+.global sAtomicStartCount
+sAtomicStartCount:
+	.skip 0x4
+.global sAtomicStartVert
+sAtomicStartVert:
+	.skip 0x4
+.global sSplitList
+sSplitList:
+	.skip 0x4
+.global sSplitCurr
+sSplitCurr:
+	.skip 0x4
+.global sSplitLeaf
+sSplitLeaf:
+	.skip 0x4
+
 .section .text
 
 .global CountAtomicCB__FP8RpAtomicPv

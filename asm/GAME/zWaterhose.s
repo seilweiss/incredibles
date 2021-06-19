@@ -6,6 +6,111 @@
 $$2stringBase0_105:
 	.incbin "baserom.dol", 0x2E3358, 0xA0
 
+.section .sbss
+
+.global textureRaster__10zWaterhose
+textureRaster__10zWaterhose:
+	.skip 0x4
+.global particleTex__10zWaterhose
+particleTex__10zWaterhose:
+	.skip 0x4
+.global counter$1214
+counter$1214:
+	.skip 0x4
+.global init$1215
+init$1215:
+	.skip 0x4
+.global tweakWHcardTextureID
+tweakWHcardTextureID:
+	.skip 0x4
+.global tweakWHParticleTextureID
+tweakWHParticleTextureID:
+	.skip 0x4
+.global init$1373
+init$1373:
+	.skip 0x1
+.global init$1376
+init$1376:
+	.skip 0x3
+.global speed$1435
+speed$1435:
+	.skip 0x4
+.global init$1436
+init$1436:
+	.skip 0x4
+.global start$1438
+start$1438:
+	.skip 0x4
+.global init$1439
+init$1439:
+	.skip 0x4
+.global yOffset$1441
+yOffset$1441:
+	.skip 0x4
+.global init$1442
+init$1442:
+	.skip 0x4
+.global spread$1444
+spread$1444:
+	.skip 0x4
+.global life$1445
+life$1445:
+	.skip 0x4
+.global start$1622
+start$1622:
+	.skip 0x4
+.global init$1623
+init$1623:
+	.skip 0x4
+.global yOffset$1625
+yOffset$1625:
+	.skip 0x4
+.global init$1626
+init$1626:
+	.skip 0x4
+.global spread$1628
+spread$1628:
+	.skip 0x4
+.global init$1629
+init$1629:
+	.skip 0x4
+.global speed$1631
+speed$1631:
+	.skip 0x4
+.global init$1632
+init$1632:
+	.skip 0x4
+.global start$1658
+start$1658:
+	.skip 0x4
+.global init$1659
+init$1659:
+	.skip 0x4
+.global yOffset$1661
+yOffset$1661:
+	.skip 0x4
+.global init$1662
+init$1662:
+	.skip 0x4
+.global spread$1664
+spread$1664:
+	.skip 0x4
+.global init$1665
+init$1665:
+	.skip 0x4
+.global speed$1667
+speed$1667:
+	.skip 0x4
+.global init$1668
+init$1668:
+	.skip 0x4
+.global old_rs
+old_rs:
+	.skip 0x28
+.global waterhoseMgr__13zWaterhoseMgr
+waterhoseMgr__13zWaterhoseMgr:
+	.skip 0x4
+
 .section .text
 
 .global Init__16zWaterhoseWidgetFR5xBaseR9xDynAssetUl

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global cnt_fadesInProgress__Q210ScreenFade10GlobalData
+cnt_fadesInProgress__Q210ScreenFade10GlobalData:
+	.skip 0x8
+
 .section .text
 
 .global load__11xScreenFadeFRQ211xScreenFade10asset_type

@@ -9,6 +9,27 @@ hs01_hidden_entities__27$$2unnamed$$2zEntSimpleObj_cpp$$2:
 $$2stringBase0_53:
 	.incbin "baserom.dol", 0x2D9D78, 0x20
 
+.section .sbss
+
+.global sMgrCount_0
+sMgrCount_0:
+	.skip 0x4
+.global sMgrList_0
+sMgrList_0:
+	.skip 0x4
+.global sSimpleCustomCount
+sSimpleCustomCount:
+	.skip 0x4
+.global sSimpleCustomList
+sSimpleCustomList:
+	.skip 0x4
+.global system$localstatic3$get_system__Q21z25lightweight$$0Q21z4toss$$410$$1Fv
+system$localstatic3$get_system__Q21z25lightweight$$0Q21z4toss$$410$$1Fv:
+	.skip 0x4
+.global init$localstatic4$get_system__Q21z25lightweight$$0Q21z4toss$$410$$1Fv
+init$localstatic4$get_system__Q21z25lightweight$$0Q21z4toss$$410$$1Fv:
+	.skip 0x4
+
 .section .text
 
 .global CmpSimpleMgr__FPCvPCv

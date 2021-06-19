@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global wind_magnitude_time__20$$2unnamed$$2zSmoke_cpp$$2
+wind_magnitude_time__20$$2unnamed$$2zSmoke_cpp$$2:
+	.skip 0x4
+.global wind_yaw_time__20$$2unnamed$$2zSmoke_cpp$$2
+wind_yaw_time__20$$2unnamed$$2zSmoke_cpp$$2:
+	.skip 0x4
+.global wind_pitch_time__20$$2unnamed$$2zSmoke_cpp$$2
+wind_pitch_time__20$$2unnamed$$2zSmoke_cpp$$2:
+	.skip 0x4
+.global wind_delta__20$$2unnamed$$2zSmoke_cpp$$2
+wind_delta__20$$2unnamed$$2zSmoke_cpp$$2:
+	.skip 0xC
+.global batch_group__20$$2unnamed$$2zSmoke_cpp$$2
+batch_group__20$$2unnamed$$2zSmoke_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global update_particles__20$$2unnamed$$2zSmoke_cpp$$2FPUciR10ptank_poolfPv

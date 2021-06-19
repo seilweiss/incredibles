@@ -12,6 +12,12 @@ default_config__12EnergyStream:
 $$2stringBase0_140:
 	.incbin "baserom.dol", 0x2E6870, 0x18
 
+.section .sbss
+
+.global cfg$1011
+cfg$1011:
+	.skip 0x20
+
 .section .text
 
 .global initRibbon__27$$2unnamed$$2zEnergyStream_cpp$$2FP9xFXRibbon

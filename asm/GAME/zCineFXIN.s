@@ -222,6 +222,114 @@ record_om03_opening__23$$2unnamed$$2zCineFXIN_cpp$$2:
 $$2stringBase0_156:
 	.incbin "baserom.dol", 0x2E96D8, 0x690
 
+.section .sbss
+
+.global zCinFX_Incrediball_position
+zCinFX_Incrediball_position:
+	.skip 0x40
+.global current_incrediball
+current_incrediball:
+	.skip 0x4
+.global init$1818
+init$1818:
+	.skip 0x4
+.global spark_system$1817
+spark_system$1817:
+	.skip 0xC
+.global cinfx_om04_opening_bv_dust_settings
+cinfx_om04_opening_bv_dust_settings:
+	.skip 0x14
+.global cinfx_om04_opening_bv_smoke_1_settings
+cinfx_om04_opening_bv_smoke_1_settings:
+	.skip 0x14
+.global cinfx_om04_opening_bv_smoke_2_settings
+cinfx_om04_opening_bv_smoke_2_settings:
+	.skip 0x14
+.global cinfx_om04_opening_bv_bounce_1_dust_settings
+cinfx_om04_opening_bv_bounce_1_dust_settings:
+	.skip 0x14
+.global cinfx_om04_opening_bv_bounce_2_dust_settings
+cinfx_om04_opening_bv_bounce_2_dust_settings:
+	.skip 0x14
+.global cinfx_om04_ending_bv_helicopter_smoke_settings
+cinfx_om04_ending_bv_helicopter_smoke_settings:
+	.skip 0x14
+.global cinfx_om01_towers_smoke_settings
+cinfx_om01_towers_smoke_settings:
+	.skip 0x14
+.global cinfx_om01_towers_dust_settings
+cinfx_om01_towers_dust_settings:
+	.skip 0x14
+.global cinfx_om01_opening_dust_settings
+cinfx_om01_opening_dust_settings:
+	.skip 0x14
+.global cinfx_om01_opening_bv_rocket_1_smoke_settings
+cinfx_om01_opening_bv_rocket_1_smoke_settings:
+	.skip 0x14
+.global cinfx_om01_opening_bv_rocket_2_smoke_settings
+cinfx_om01_opening_bv_rocket_2_smoke_settings:
+	.skip 0x14
+.global cinfx_ld04_opening_dash_dust_settings
+cinfx_ld04_opening_dash_dust_settings:
+	.skip 0x14
+.global cinfx_ld04_opening_dash_smoke_settings
+cinfx_ld04_opening_dash_smoke_settings:
+	.skip 0x14
+.global cinfx_hs01_elastigirl_dust_settings
+cinfx_hs01_elastigirl_dust_settings:
+	.skip 0x14
+.global cinfx_nj02_opening_dust_settings
+cinfx_nj02_opening_dust_settings:
+	.skip 0x14
+.global cinfx_nj02_ending_dust_settings
+cinfx_nj02_ending_dust_settings:
+	.skip 0x14
+.global cinfx_nj02_turret_pickup_dust_settings
+cinfx_nj02_turret_pickup_dust_settings:
+	.skip 0x14
+.global cinfx_nj02_rolling_omni_dust_settings
+cinfx_nj02_rolling_omni_dust_settings:
+	.skip 0x14
+.global cinfx_nj02_opening_omni_dust_settings
+cinfx_nj02_opening_omni_dust_settings:
+	.skip 0x14
+.global cinfx_nj02_omni_trees_smoke_settings
+cinfx_nj02_omni_trees_smoke_settings:
+	.skip 0x14
+.global cinfx_ni03_opening_omni_dust1_settings
+cinfx_ni03_opening_omni_dust1_settings:
+	.skip 0x14
+.global cinfx_ni03_opening_omni_dust2_settings
+cinfx_ni03_opening_omni_dust2_settings:
+	.skip 0x14
+.global cinfx_ni03_opening_omni_dust3_settings
+cinfx_ni03_opening_omni_dust3_settings:
+	.skip 0x14
+.global cinfx_ft01_dash_vine_dust_settings
+cinfx_ft01_dash_vine_dust_settings:
+	.skip 0x14
+.global cinfx_ft04_ending_dust_settings
+cinfx_ft04_ending_dust_settings:
+	.skip 0x14
+.global cinfx_ft03_tower_fall_dust_settings
+cinfx_ft03_tower_fall_dust_settings:
+	.skip 0x14
+.global cinfx_nj01_opening_dust_settings
+cinfx_nj01_opening_dust_settings:
+	.skip 0x14
+.global cinfx_nj01_break_open_smoke_settings
+cinfx_nj01_break_open_smoke_settings:
+	.skip 0x14
+.global cinfx_nj03_opening_hard_landing_dust_settings
+cinfx_nj03_opening_hard_landing_dust_settings:
+	.skip 0x14
+.global cinfx_nj03_opening_omni_landing_dust_settings
+cinfx_nj03_opening_omni_landing_dust_settings:
+	.skip 0x14
+.global cinfx_ni01_damaged_velocipod_smoke_settings
+cinfx_ni01_damaged_velocipod_smoke_settings:
+	.skip 0x14
+
 .section .text
 
 .global zCinFX_LightDust_Twk__FPCcP9NCINEntry

@@ -12,6 +12,33 @@ turretCamera:
 $$2stringBase0_99:
 	.incbin "baserom.dol", 0x2E2AF0, 0x50
 
+.section .sbss
+
+.global baseFunc
+baseFunc:
+	.skip 0x4
+.global gunFunc
+gunFunc:
+	.skip 0x4
+.global oldPlayerPos
+oldPlayerPos:
+	.skip 0xC
+.global oldInnerTexFlashCB
+oldInnerTexFlashCB:
+	.skip 0x4
+.global oldInnerCallbackData
+oldInnerCallbackData:
+	.skip 0x4
+.global oldOuterTexFlashCB
+oldOuterTexFlashCB:
+	.skip 0x4
+.global oldOuterCallbackData
+oldOuterCallbackData:
+	.skip 0x4
+.global shootingStateAnims__7zTurret
+shootingStateAnims__7zTurret:
+	.skip 0xC
+
 .section .text
 
 .global Set2DVertex__21$$2unnamed$$2zTurret_cpp$$2FP18rwGameCube2DVertexffffff

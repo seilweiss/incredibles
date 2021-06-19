@@ -6,6 +6,30 @@
 snapshotObj:
 	.skip 0x100
 
+.section .sbss
+
+.global zBULLET_TIME_DEFAULT_ANGLE__25$$2unnamed$$2zBulletTime_cpp$$2
+zBULLET_TIME_DEFAULT_ANGLE__25$$2unnamed$$2zBulletTime_cpp$$2:
+	.skip 0x4
+.global zBULLET_TIME_ACTIVE_ANGLE__25$$2unnamed$$2zBulletTime_cpp$$2
+zBULLET_TIME_ACTIVE_ANGLE__25$$2unnamed$$2zBulletTime_cpp$$2:
+	.skip 0x4
+.global zCAMERA_TYPE__25$$2unnamed$$2zBulletTime_cpp$$2
+zCAMERA_TYPE__25$$2unnamed$$2zBulletTime_cpp$$2:
+	.skip 0x4
+.global btObj
+btObj:
+	.skip 0x18
+.global btCam
+btCam:
+	.skip 0x4
+.global filters_count__25$$2unnamed$$2zBulletTime_cpp$$2
+filters_count__25$$2unnamed$$2zBulletTime_cpp$$2:
+	.skip 0x4
+.global temp_count__25$$2unnamed$$2zBulletTime_cpp$$2
+temp_count__25$$2unnamed$$2zBulletTime_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global zFilterAnglesSet__25$$2unnamed$$2zBulletTime_cpp$$2Ff

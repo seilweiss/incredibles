@@ -6,6 +6,12 @@
 sJspGroupPairs__13zJSPExtraData:
 	.skip 0xA0
 
+.section .sbss
+
+.global sNumPairs__13zJSPExtraData
+sNumPairs__13zJSPExtraData:
+	.skip 0x8
+
 .section .text
 
 .global ShowAssociatedGroup__13zJSPExtraDataFUib

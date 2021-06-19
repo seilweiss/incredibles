@@ -9,6 +9,18 @@ groups__24$$2unnamed$$2xPtankPool_cpp$$2:
 region_array:
 	.incbin "baserom.dol", 0x2FC910, 0x58
 
+.section .sbss
+
+.global MAX_PTANKS__24$$2unnamed$$2xPtankPool_cpp$$2
+MAX_PTANKS__24$$2unnamed$$2xPtankPool_cpp$$2:
+	.skip 0x4
+.global inited__24$$2unnamed$$2xPtankPool_cpp$$2
+inited__24$$2unnamed$$2xPtankPool_cpp$$2:
+	.skip 0x4
+.global current_sequence_index__24$$2unnamed$$2xPtankPool_cpp$$2
+current_sequence_index__24$$2unnamed$$2xPtankPool_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global sort_buckets__24$$2unnamed$$2xPtankPool_cpp$$2FRQ224$$2unnamed$$2xPtankPool_cpp$$210group_data

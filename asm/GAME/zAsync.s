@@ -1,5 +1,29 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global cam__6zAsync
+cam__6zAsync:
+	.skip 0x4
+.global light__6zAsync
+light__6zAsync:
+	.skip 0x4
+.global frame__6zAsync
+frame__6zAsync:
+	.skip 0x4
+.global world__6zAsync
+world__6zAsync:
+	.skip 0x4
+.global screen__6zAsync
+screen__6zAsync:
+	.skip 0x4
+.global rot$982
+rot$982:
+	.skip 0x4
+.global init$983
+init$983:
+	.skip 0x8
+
 .section .text
 
 .global Init__6zAsyncFPQ26zAsync6Screen

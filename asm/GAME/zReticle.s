@@ -12,6 +12,24 @@ reticle:
 $$2stringBase0_114:
 	.incbin "baserom.dol", 0x2E44A0, 0x18
 
+.section .sbss
+
+.global sFadeSize
+sFadeSize:
+	.skip 0x40
+.global sDistSize
+sDistSize:
+	.skip 0x20
+.global nextReticle
+nextReticle:
+	.skip 0x4
+.global reticleRast
+reticleRast:
+	.skip 0x4
+.global sIconAngle
+sIconAngle:
+	.skip 0x8
+
 .section .text
 
 .global zReticle_Init__Fv

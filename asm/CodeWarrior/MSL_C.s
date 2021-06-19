@@ -68,8 +68,6 @@ $$2431:
 
 .section .rodata
 
-.section .rodata
-
 .global fix_pool_sizes
 fix_pool_sizes:
 	.incbin "baserom.dol", 0x2ED038, 0x18
@@ -142,6 +140,33 @@ atanlo:
 .global aT
 aT:
 	.incbin "baserom.dol", 0x2ED840, 0x58
+
+.section .sbss
+
+.global __aborting
+__aborting:
+	.skip 0x4
+.global __atexit_curr_func
+__atexit_curr_func:
+	.skip 0x4
+.global __stdio_exit
+__stdio_exit:
+	.skip 0x4
+.global __console_exit
+__console_exit:
+	.skip 0x4
+.global init$193
+init$193:
+	.skip 0x8
+.global errno
+errno:
+	.skip 0x8
+.global initialized$60
+initialized$60:
+	.skip 0x8
+.global zero
+zero:
+	.skip 0x8
 
 .section .text
 

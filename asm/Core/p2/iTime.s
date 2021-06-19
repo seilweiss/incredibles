@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global sStartupTime
+sStartupTime:
+	.skip 0x4
+.global lbl_803CF6BC
+lbl_803CF6BC:
+	.skip 0x4
+.global sGameTime
+sGameTime:
+	.skip 0x8
+
 .section .text
 
 .global iGetMinute__Fv

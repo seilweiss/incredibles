@@ -9,6 +9,33 @@ StandardRegions:
 TlutRegions:
 	.skip 0x80
 
+.section .sbss
+
+.global Mipmap32Regions
+Mipmap32Regions:
+	.skip 0x20
+.global CIRegions
+CIRegions:
+	.skip 0x20
+.global count$279
+count$279:
+	.skip 0x4
+.global init$280
+init$280:
+	.skip 0x4
+.global countCI$282
+countCI$282:
+	.skip 0x4
+.global init$283
+init$283:
+	.skip 0x4
+.global count32B$285
+count32B$285:
+	.skip 0x4
+.global init$286
+init$286:
+	.skip 0x4
+
 .section .text
 
 .global TexRegionCallback__FPC9_GXTexObj11_GXTexMapID

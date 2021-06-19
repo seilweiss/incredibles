@@ -6,6 +6,72 @@
 $$2stringBase0_106:
 	.incbin "baserom.dol", 0x2E33F8, 0x2F0
 
+.section .sbss
+
+.global cone_texture__21$$2unnamed$$2zSplash_cpp$$2
+cone_texture__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global splash_emitters__21$$2unnamed$$2zSplash_cpp$$2
+splash_emitters__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global splash_emitters_size__21$$2unnamed$$2zSplash_cpp$$2
+splash_emitters_size__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global plume_emitters__21$$2unnamed$$2zSplash_cpp$$2
+plume_emitters__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global plume_emitters_size__21$$2unnamed$$2zSplash_cpp$$2
+plume_emitters_size__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global bubble_emitters__21$$2unnamed$$2zSplash_cpp$$2
+bubble_emitters__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global bubble_emitters_size__21$$2unnamed$$2zSplash_cpp$$2
+bubble_emitters_size__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global chain_emitters__21$$2unnamed$$2zSplash_cpp$$2
+chain_emitters__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global chain_emitters_size__21$$2unnamed$$2zSplash_cpp$$2
+chain_emitters_size__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global mist_system_id__21$$2unnamed$$2zSplash_cpp$$2
+mist_system_id__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global ring_system_id__21$$2unnamed$$2zSplash_cpp$$2
+ring_system_id__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global streak_system_id__21$$2unnamed$$2zSplash_cpp$$2
+streak_system_id__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global plume_system_id__21$$2unnamed$$2zSplash_cpp$$2
+plume_system_id__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global trail_system_id__21$$2unnamed$$2zSplash_cpp$$2
+trail_system_id__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global drips_system_id__21$$2unnamed$$2zSplash_cpp$$2
+drips_system_id__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global planners__21$$2unnamed$$2zSplash_cpp$$2
+planners__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global type_mappings__21$$2unnamed$$2zSplash_cpp$$2
+type_mappings__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global types_size__21$$2unnamed$$2zSplash_cpp$$2
+types_size__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x4
+.global texture_ids__21$$2unnamed$$2zSplash_cpp$$2
+texture_ids__21$$2unnamed$$2zSplash_cpp$$2:
+	.skip 0x20
+.global $$21012
+$$21012:
+	.skip 0x4
+.global $$22013
+$$22013:
+	.skip 0x4
+
 .section .text
 
 .global refresh_splash__21$$2unnamed$$2zSplash_cpp$$2FRQ221$$2unnamed$$2zSplash_cpp$$213splash_config

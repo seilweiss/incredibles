@@ -36,6 +36,18 @@ __vt__Q24zNPC10activating:
 $$2stringBase0_112:
 	.incbin "baserom.dol", 0x2E4128, 0x1F0
 
+.section .sbss
+
+.global exclamation__28$$2unnamed$$2zNPCInvisAware_cpp$$2
+exclamation__28$$2unnamed$$2zNPCInvisAware_cpp$$2:
+	.skip 0x4
+.global question__28$$2unnamed$$2zNPCInvisAware_cpp$$2
+question__28$$2unnamed$$2zNPCInvisAware_cpp$$2:
+	.skip 0x4
+.global alert_counter__28$$2unnamed$$2zNPCInvisAware_cpp$$2
+alert_counter__28$$2unnamed$$2zNPCInvisAware_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global setup__Q24zNPC10activatingFv

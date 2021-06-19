@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global g_mvpt_list
+g_mvpt_list:
+	.skip 0x4
+.global g_mvpt_cnt
+g_mvpt_cnt:
+	.skip 0x4
+
 .section .text
 
 .global zMovePoint_GetMemPool__Fi

@@ -24,6 +24,18 @@ decalCurve$1693:
 $$2stringBase0_74:
 	.incbin "baserom.dol", 0x2DF4FC, 0x1DC
 
+.section .sbss
+
+.global quadBuffer__4zNPC
+quadBuffer__4zNPC:
+	.skip 0xC
+.global curve__Q24zNPC7CarStop
+curve__Q24zNPC7CarStop:
+	.skip 0x10
+.global smoke_config__4zNPC
+smoke_config__4zNPC:
+	.skip 0x3C
+
 .section .text
 
 .global __cl__Q24zNPC20car_collide_callbackFR4xEnt

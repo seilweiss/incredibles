@@ -6,6 +6,12 @@
 mgr$886:
 	.skip 0x2030
 
+.section .sbss
+
+.global init$887
+init$887:
+	.skip 0x8
+
 .section .text
 
 .global FreeMemory__20xInternalTextureNodeFv

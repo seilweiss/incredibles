@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global iWaterBumpTex
+iWaterBumpTex:
+	.skip 0x4
+.global iWaterEnvTex
+iWaterEnvTex:
+	.skip 0x4
+
 .section .text
 
 .global TexturesOpen__Fv

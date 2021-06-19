@@ -15,6 +15,21 @@ sDefaultSurfaceAsset:
 sMapper:
 	.incbin "baserom.dol", 0x30D570, 0x50
 
+.section .sbss
+
+.global zsps
+zsps:
+	.skip 0x4
+.global sMapperCount
+sMapperCount:
+	.skip 0x4
+.global sDefaultSurface
+sDefaultSurface:
+	.skip 0x28
+.global pDefaultSurface
+pDefaultSurface:
+	.skip 0x8
+
 .section .text
 
 .global zSurfaceInit__Fv

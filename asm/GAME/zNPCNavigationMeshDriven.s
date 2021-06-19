@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global driven_meshes__4zNPC
+driven_meshes__4zNPC:
+	.skip 0x8
+.global num_driven_meshes__4zNPC
+num_driven_meshes__4zNPC:
+	.skip 0x8
+
 .section .text
 
 .global Init__Q24zNPC22navigation_mesh_drivenFPQ24zNPC15navigation_meshi

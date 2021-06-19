@@ -27,6 +27,12 @@ __vt__Q24zNPC16energy_glow_bone:
 $$2stringBase0_128:
 	.incbin "baserom.dol", 0x2E4E58, 0x160
 
+.section .sbss
+
+.global system_id__Q24zNPC11glow_streak
+system_id__Q24zNPC11glow_streak:
+	.skip 0x8
+
 .section .text
 
 .global setup__Q24zNPC16energy_glow_boneFv

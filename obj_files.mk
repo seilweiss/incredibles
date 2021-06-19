@@ -383,8 +383,7 @@ BSS_O_FILES :=
 SDATA_O_FILES :=\
 	$(OBJ_DIR)/asm/sdata.o
 
-SBSS_O_FILES :=\
-	$(OBJ_DIR)/asm/sbss.o
+SBSS_O_FILES :=
 
 SDATA2_O_FILES :=\
 	$(OBJ_DIR)/asm/sdata2.o

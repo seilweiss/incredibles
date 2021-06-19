@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global system_count__Q21z19lightweight_manager
+system_count__Q21z19lightweight_manager:
+	.skip 0x4
+.global system__Q21z19lightweight_manager
+system__Q21z19lightweight_manager:
+	.skip 0x2C
+
 .section .text
 
 .global setup__Q21z19lightweight_managerFv

@@ -15,6 +15,30 @@ $$21996:
 $$2stringBase0_62:
 	.incbin "baserom.dol", 0x2DAD14, 0xCC
 
+.section .sbss
+
+.global fade_in_curve__24$$2unnamed$$2zLaserBeam_cpp$$2
+fade_in_curve__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.skip 0x30
+.global vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2
+vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.skip 0x4
+.global end_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2
+end_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.skip 0x4
+.global vert_indices_set__24$$2unnamed$$2zLaserBeam_cpp$$2
+vert_indices_set__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.skip 0x4
+.global brightening__24$$2unnamed$$2zLaserBeam_cpp$$2
+brightening__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.skip 0x4
+.global current_raster__24$$2unnamed$$2zLaserBeam_cpp$$2
+current_raster__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.skip 0x4
+.global additional_lasers__10zLaserBeam
+additional_lasers__10zLaserBeam:
+	.skip 0x4
+
 .section .text
 
 .global xDebugAddTweak__FPCcPCiiiPC14tweak_callbackPvUi

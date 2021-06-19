@@ -6,6 +6,42 @@
 $$2stringBase0_147:
 	.incbin "baserom.dol", 0x2E6E88, 0x78
 
+.section .sbss
+
+.global comboReward
+comboReward:
+	.skip 0x4
+.global comboNumRewards
+comboNumRewards:
+	.skip 0x4
+.global comboHUD
+comboHUD:
+	.skip 0x4
+.global comboLastCounter
+comboLastCounter:
+	.skip 0x4
+.global comboCounter
+comboCounter:
+	.skip 0x4
+.global comboMult
+comboMult:
+	.skip 0x4
+.global comboLastType
+comboLastType:
+	.skip 0x4
+.global comboHitsNextLevel
+comboHitsNextLevel:
+	.skip 0x4
+.global comboLevel
+comboLevel:
+	.skip 0x4
+.global comboTimer
+comboTimer:
+	.skip 0x4
+.global sComboIsPaused
+sComboIsPaused:
+	.skip 0x8
+
 .section .text
 
 .global zCombo_ParseINI__FP8xIniFile

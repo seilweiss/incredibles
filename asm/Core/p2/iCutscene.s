@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global read_sizzze
+read_sizzze:
+	.skip 0x8
+
 .section .text
 
 .global iCSSoundSetup__FP9xCutscene

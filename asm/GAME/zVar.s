@@ -45,6 +45,81 @@ $$21004:
 $$2stringBase0_103:
 	.incbin "baserom.dol", 0x2E2C68, 0x4B8
 
+.section .sbss
+
+.global bad_card_available
+bad_card_available:
+	.skip 0x4
+.global bad_card_needed
+bad_card_needed:
+	.skip 0x4
+.global buffer$980
+buffer$980:
+	.skip 0x40
+.global buffer$991
+buffer$991:
+	.skip 0xC
+.global buffer$996
+buffer$996:
+	.skip 0xC
+.global buffer$1079
+buffer$1079:
+	.skip 0xC
+.global buffer$1084
+buffer$1084:
+	.skip 0x20
+.global buffer$1095
+buffer$1095:
+	.skip 0xC
+.global buffer$1100
+buffer$1100:
+	.skip 0xC
+.global buffer$1105
+buffer$1105:
+	.skip 0x40
+.global buffer$1110
+buffer$1110:
+	.skip 0xC
+.global buffer$1115
+buffer$1115:
+	.skip 0x20
+.global buffer$1124
+buffer$1124:
+	.skip 0x20
+.global buffer$1129
+buffer$1129:
+	.skip 0x20
+.global buffer$1134
+buffer$1134:
+	.skip 0xC
+.global buffer$1143
+buffer$1143:
+	.skip 0x20
+.global buffer$1152
+buffer$1152:
+	.skip 0x20
+.global buffer$1157
+buffer$1157:
+	.skip 0x20
+.global buffer$1162
+buffer$1162:
+	.skip 0x30
+.global selSceneID__18$$2unnamed$$2zVar_cpp$$2
+selSceneID__18$$2unnamed$$2zVar_cpp$$2:
+	.skip 0x4
+.global buffer$1174
+buffer$1174:
+	.skip 0xC
+.global buffer$1179
+buffer$1179:
+	.skip 0xC
+.global buffer$1184
+buffer$1184:
+	.skip 0x8
+.global buffer$1189
+buffer$1189:
+	.skip 0x8
+
 .section .text
 
 .global zVarEntryCB_IsSignedIn__FPv

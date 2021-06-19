@@ -12,6 +12,33 @@ AramMgr:
 $$2stringBase0_32:
 	.incbin "baserom.dol", 0x2D5D28, 0x418
 
+.section .sbss
+
+.global sVideoMode
+sVideoMode:
+	.skip 0x18
+.global old_dsc
+old_dsc:
+	.skip 0x4
+.global deviceConfig
+deviceConfig:
+	.skip 0xC
+.global renderObject
+renderObject:
+	.skip 0x3C
+.global pARAMBaseAddressBink
+pARAMBaseAddressBink:
+	.skip 0x4
+.global ARAMBytesForBink
+ARAMBytesForBink:
+	.skip 0x4
+.global pARAMBaseAddressFMOD
+pARAMBaseAddressFMOD:
+	.skip 0x4
+.global ARAMBytesForFMOD
+ARAMBytesForFMOD:
+	.skip 0x8
+
 .section .text
 
 .global iRwResourcesEmptyArena__Fv

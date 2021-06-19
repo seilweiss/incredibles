@@ -6,6 +6,27 @@
 sinfoArray:
 	.skip 0x180
 
+.section .sbss
+
+.global sSndStaticBuffer
+sSndStaticBuffer:
+	.skip 0x4
+.global externStreamInfo
+externStreamInfo:
+	.skip 0x20
+.global sinfoArrayLoaded
+sinfoArrayLoaded:
+	.skip 0x4
+.global pTempStreams
+pTempStreams:
+	.skip 0x20
+.global sOldPauseState
+sOldPauseState:
+	.skip 0x8
+.global sOldVolume
+sOldVolume:
+	.skip 0x18
+
 .section .text
 
 .global iSndInit__Fv

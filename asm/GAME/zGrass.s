@@ -6,6 +6,12 @@
 $$2stringBase0_115:
 	.incbin "baserom.dol", 0x2E44B8, 0x10
 
+.section .sbss
+
+.global grass
+grass:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q220$$2unnamed$$2zGrass_cpp$$25tweakFv

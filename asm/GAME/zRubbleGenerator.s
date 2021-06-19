@@ -15,6 +15,21 @@ fakeAsset$1311:
 $$2stringBase0_145:
 	.incbin "baserom.dol", 0x2E6E58, 0x10
 
+.section .sbss
+
+.global numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2
+numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
+	.skip 0x4
+.global numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2
+numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
+	.skip 0x4
+.global rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2
+rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
+	.skip 0x4
+.global rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2
+rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global RubbleEventWrapper__30$$2unnamed$$2zRubbleGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

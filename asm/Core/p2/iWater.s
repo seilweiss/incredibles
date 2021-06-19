@@ -9,6 +9,45 @@ bump_layers:
 $$2stringBase0_138:
 	.incbin "baserom.dol", 0x2E6618, 0x30
 
+.section .sbss
+
+.global gGCwaterDisable
+gGCwaterDisable:
+	.skip 0x4
+.global iWaterDirectionalLight
+iWaterDirectionalLight:
+	.skip 0x4
+.global iWaterEMBM
+iWaterEMBM:
+	.skip 0x4
+.global bumpTex
+bumpTex:
+	.skip 0x4
+.global bumpRaster
+bumpRaster:
+	.skip 0x4
+.global saveCamera
+saveCamera:
+	.skip 0x4
+.global bumpCamera
+bumpCamera:
+	.skip 0x4
+.global clonedShadowCamera
+clonedShadowCamera:
+	.skip 0x4
+.global waterLightKit
+waterLightKit:
+	.skip 0x4
+.global waterObjects
+waterObjects:
+	.skip 0x20
+.global numWaterObjects
+numWaterObjects:
+	.skip 0x4
+.global defaultRenderCB
+defaultRenderCB:
+	.skip 0x8
+
 .section .text
 
 .global CreateDirectionalLight__Fv

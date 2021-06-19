@@ -6,6 +6,21 @@
 $$2stringBase0_8:
 	.incbin "baserom.dol", 0x2CECA0, 0x18
 
+.section .sbss
+
+.global motive_allocator__Q24xhud6widget
+motive_allocator__Q24xhud6widget:
+	.skip 0x10
+.global inited__4xhud
+inited__4xhud:
+	.skip 0x4
+.global myid$1171
+myid$1171:
+	.skip 0x4
+.global init$1172
+init$1172:
+	.skip 0x8
+
 .section .text
 
 .global create__Q24xhud15block_allocatorFii

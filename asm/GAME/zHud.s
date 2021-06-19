@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global init$1094
+init$1094:
+	.skip 0x4
+.global _instance$1093
+_instance$1093:
+	.skip 0xC
+
 .section .text
 
 .global EventHandlerFunc__18$$2unnamed$$2zHud_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

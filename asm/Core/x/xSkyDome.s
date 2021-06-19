@@ -6,6 +6,12 @@
 sSkyList:
 	.skip 0x88
 
+.section .sbss
+
+.global sSkyCount
+sSkyCount:
+	.skip 0x8
+
 .section .text
 
 .global xSkyDome_EmptyRender__FP4xEnt

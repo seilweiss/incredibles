@@ -6,6 +6,21 @@
 $$2stringBase0_60:
 	.incbin "baserom.dol", 0x2DA8C0, 0x58
 
+.section .sbss
+
+.global blueMeterUpLeft__4zHud
+blueMeterUpLeft__4zHud:
+	.skip 0x8
+.global blueMeterDownRight__4zHud
+blueMeterDownRight__4zHud:
+	.skip 0x8
+.global purpleMeterUpLeft__4zHud
+purpleMeterUpLeft__4zHud:
+	.skip 0x8
+.global purpleMeterDownRight__4zHud
+purpleMeterDownRight__4zHud:
+	.skip 0x8
+
 .section .text
 
 .global __ct__Q24zHud12IncredimeterFv

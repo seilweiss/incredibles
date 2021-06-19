@@ -18,6 +18,48 @@ sMaterialTexture:
 $$2stringBase0_29:
 	.incbin "baserom.dol", 0x2CF948, 0x8
 
+.section .sbss
+
+.global instance_world
+instance_world:
+	.skip 0x4
+.global instance_camera
+instance_camera:
+	.skip 0x4
+.global gLastAtomicCount
+gLastAtomicCount:
+	.skip 0x4
+.global sEmptyDirectionalLight
+sEmptyDirectionalLight:
+	.skip 0x10
+.global sEmptyAmbientLight
+sEmptyAmbientLight:
+	.skip 0x4
+.global num_models$1047
+num_models$1047:
+	.skip 0x4
+.global init$1048
+init$1048:
+	.skip 0x4
+.global draw_all$1297
+draw_all$1297:
+	.skip 0x4
+.global init$1298
+init$1298:
+	.skip 0x4
+.global sMaterialAlpha
+sMaterialAlpha:
+	.skip 0x20
+.global sMaterialIdx
+sMaterialIdx:
+	.skip 0x4
+.global sMaterialFlags
+sMaterialFlags:
+	.skip 0x4
+.global sLastMaterial
+sLastMaterial:
+	.skip 0x8
+
 .section .text
 
 .global GetChildFrameHierarchy__FP7RwFramePv

@@ -33,6 +33,33 @@ $$2795:
 $$2976:
 	.incbin "baserom.dol", 0x2EE100, 0x20
 
+.section .sbss
+
+.global MatFXMaterialDataOffset
+MatFXMaterialDataOffset:
+	.skip 0x4
+.global MatFXAtomicDataOffset
+MatFXAtomicDataOffset:
+	.skip 0x4
+.global MatFXWorldSectorDataOffset
+MatFXWorldSectorDataOffset:
+	.skip 0x8
+.global _rpGCMatFXVtxFmtNBT
+_rpGCMatFXVtxFmtNBT:
+	.skip 0x4
+.global _RpMatFXAtomicPipe
+_RpMatFXAtomicPipe:
+	.skip 0x4
+.global _RpMatFXWorldSectorPipe
+_RpMatFXWorldSectorPipe:
+	.skip 0x8
+.global _rpGameCubeMTEngineOffset
+_rpGameCubeMTEngineOffset:
+	.skip 0x8
+.global DummyDict
+DummyDict:
+	.skip 0x20
+
 .section .text
 
 .global MatFXClose

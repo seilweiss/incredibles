@@ -72,6 +72,12 @@ burn_curve$1512:
 $$2stringBase0_108:
 	.incbin "baserom.dol", 0x2E391C, 0x4EC
 
+.section .sbss
+
+.global curve$1513
+curve$1513:
+	.skip 0x10
+
 .section .text
 
 .global RobotDestroyCB__4zNPCFP4xEntPvb

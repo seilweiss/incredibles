@@ -36,6 +36,39 @@ proj_decal_curve$1613:
 $$2stringBase0_40:
 	.incbin "baserom.dol", 0x2D74C4, 0x94
 
+.section .sbss
+
+.global par_emitters__28$$2unnamed$$2zCombatEffects_cpp$$2
+par_emitters__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.skip 0xC
+.global proj_curve__28$$2unnamed$$2zCombatEffects_cpp$$2
+proj_curve__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.skip 0x10
+.global init$1658
+init$1658:
+	.skip 0x1
+.global init$1661
+init$1661:
+	.skip 0x1
+.global init$1664
+init$1664:
+	.skip 0x2
+.global slam_drop_ribbon__28$$2unnamed$$2zCombatEffects_cpp$$2
+slam_drop_ribbon__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.skip 0x10
+.global slam_drop_data__28$$2unnamed$$2zCombatEffects_cpp$$2
+slam_drop_data__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.skip 0xC
+.global slam_land_ribbon__28$$2unnamed$$2zCombatEffects_cpp$$2
+slam_land_ribbon__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.skip 0x30
+.global slam_land_data__28$$2unnamed$$2zCombatEffects_cpp$$2
+slam_land_data__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.skip 0x24
+.global cfg$1887
+cfg$1887:
+	.skip 0x20
+
 .section .text
 
 .global setup__Q214zCombatEffects19SparkParticleSystemFv

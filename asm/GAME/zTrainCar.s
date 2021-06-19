@@ -6,6 +6,15 @@
 $$2stringBase0_98:
 	.incbin "baserom.dol", 0x2E2AE0, 0x10
 
+.section .sbss
+
+.global walker__9zTrainCar
+walker__9zTrainCar:
+	.skip 0x4
+.global first_train_car__9zTrainCar
+first_train_car__9zTrainCar:
+	.skip 0x4
+
 .section .text
 
 .global Alloc__Q211zFollowPath7segmentFRPQ211zFollowPath7segment

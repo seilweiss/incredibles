@@ -6,6 +6,45 @@
 record$1093:
 	.skip 0x78
 
+.section .sbss
+
+.global visited__5zDash
+visited__5zDash:
+	.skip 0x4
+.global head__Q25zDash12track_system
+head__Q25zDash12track_system:
+	.skip 0x4
+.global current_track__Q25zDash12track_system
+current_track__Q25zDash12track_system:
+	.skip 0x4
+.global last_impulse__Q25zDash12track_system
+last_impulse__Q25zDash12track_system:
+	.skip 0xC
+.global no_tracks$971
+no_tracks$971:
+	.skip 0x1
+.global init$972
+init$972:
+	.skip 0x3
+.global castStackDepth__5zDash
+castStackDepth__5zDash:
+	.skip 0x4
+.global collision_count$1094
+collision_count$1094:
+	.skip 0x4
+.global _check_number$1418
+_check_number$1418:
+	.skip 0x4
+.global init$1419
+init$1419:
+	.skip 0x4
+.global _check_number$1518
+_check_number$1518:
+	.skip 0x4
+.global init$1519
+init$1519:
+	.skip 0x8
+
 .section .text
 
 .global setup__Q25zDash12track_systemFv

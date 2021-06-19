@@ -18,6 +18,21 @@ gHostPath:
 $$2stringBase0_26:
 	.incbin "baserom.dol", 0x2CF880, 0x18
 
+.section .sbss
+
+.global buffer32
+buffer32:
+	.skip 0x4
+.global iFileSyncAsyncReadActive
+iFileSyncAsyncReadActive:
+	.skip 0x4
+.global fopcount$704
+fopcount$704:
+	.skip 0x4
+.global init$705
+init$705:
+	.skip 0x4
+
 .section .text
 
 .global iFileInit__Fv

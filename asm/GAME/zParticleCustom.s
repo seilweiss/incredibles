@@ -6,6 +6,18 @@
 $$2stringBase0_158:
 	.incbin "baserom.dol", 0x2E9D80, 0x28
 
+.section .sbss
+
+.global particle_batch_group__29$$2unnamed$$2zParticleCustom_cpp$$2
+particle_batch_group__29$$2unnamed$$2zParticleCustom_cpp$$2:
+	.skip 0x8
+.global system_id__29$$2unnamed$$2zParticleCustom_cpp$$2
+system_id__29$$2unnamed$$2zParticleCustom_cpp$$2:
+	.skip 0x14
+.global dust_vel_decay__29$$2unnamed$$2zParticleCustom_cpp$$2
+dust_vel_decay__29$$2unnamed$$2zParticleCustom_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global add_tweaks__Q229$$2unnamed$$2zParticleCustom_cpp$$25tweakFv

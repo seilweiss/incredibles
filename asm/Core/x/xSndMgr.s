@@ -21,6 +21,27 @@ $$22485:
 $$2stringBase0_23:
 	.incbin "baserom.dol", 0x2CF758, 0x8
 
+.section .sbss
+
+.global m_eCurrentEffect
+m_eCurrentEffect:
+	.skip 0x4
+.global s_fCategoryVolume
+s_fCategoryVolume:
+	.skip 0x18
+.global s_fCategoryVolumeFade
+s_fCategoryVolumeFade:
+	.skip 0x18
+.global faders__21$$2unnamed$$2xSndMgr_cpp$$2
+faders__21$$2unnamed$$2xSndMgr_cpp$$2:
+	.skip 0xC
+.global gCurrSoundMemoryUsed
+gCurrSoundMemoryUsed:
+	.skip 0x4
+.global gHighwaterSoundMemoryUsed
+gHighwaterSoundMemoryUsed:
+	.skip 0x4
+
 .section .text
 
 .global setup_faders__21$$2unnamed$$2xSndMgr_cpp$$2Fv

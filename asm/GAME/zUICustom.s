@@ -48,6 +48,21 @@ __vt__9zUICustom:
 $$2stringBase0_132:
 	.incbin "baserom.dol", 0x2E5D18, 0x280
 
+.section .sbss
+
+.global pBattleSceneManager
+pBattleSceneManager:
+	.skip 0x4
+.global brain_id__16zUICustomStatBox
+brain_id__16zUICustomStatBox:
+	.skip 0x4
+.global stat_strings_count__16zUICustomStatBox
+stat_strings_count__16zUICustomStatBox:
+	.skip 0x4
+.global saved__16zUICustomStatBox
+saved__16zUICustomStatBox:
+	.skip 0x4
+
 .section .text
 
 .global Init__9zUICustomFv

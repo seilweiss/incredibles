@@ -6,6 +6,33 @@
 sNearestBound:
 	.skip 0x50
 
+.section .sbss
+
+.global g_xSceneCur
+g_xSceneCur:
+	.skip 0x4
+.global sBoxTestMat
+sBoxTestMat:
+	.skip 0x4
+.global sUseJSP
+sUseJSP:
+	.skip 0x4
+.global sTestOPtr
+sTestOPtr:
+	.skip 0x4
+.global sTestMPtr
+sTestMPtr:
+	.skip 0x4
+.global sNearestChk
+sNearestChk:
+	.skip 0x1
+.global sNearestCollType
+sNearestCollType:
+	.skip 0x3
+.global sSphereIsx
+sSphereIsx:
+	.skip 0x20
+
 .section .text
 
 .global xSceneInit__FP6xSceneUsUsUsUs

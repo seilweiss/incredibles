@@ -36,6 +36,42 @@ $$21753:
 $$2stringBase0_17:
 	.incbin "baserom.dol", 0x2CF2D4, 0x94
 
+.section .sbss
+
+.global g_hiprf
+g_hiprf:
+	.skip 0x4
+.global g_loadlock_1
+g_loadlock_1:
+	.skip 0x4
+.global pkr_sector_size
+pkr_sector_size:
+	.skip 0x4
+.global g_packinit
+g_packinit:
+	.skip 0x4
+.global g_memalloc_pair
+g_memalloc_pair:
+	.skip 0x4
+.global g_memalloc_runtot
+g_memalloc_runtot:
+	.skip 0x4
+.global g_memalloc_runfree
+g_memalloc_runfree:
+	.skip 0x4
+.global curpr$909
+curpr$909:
+	.skip 0x4
+.global init$910
+init$910:
+	.skip 0x4
+.global asynlay$912
+asynlay$912:
+	.skip 0x4
+.global init$913
+init$913:
+	.skip 0x8
+
 .section .text
 
 .global PKRGetReadFuncs__Fi

@@ -12,6 +12,36 @@ buckets__28$$2unnamed$$2xParticleBatch_cpp$$2:
 block_info_buffer__28$$2unnamed$$2xParticleBatch_cpp$$2:
 	.skip 0x180
 
+.section .sbss
+
+.global BUFFER_SIZE__28$$2unnamed$$2xParticleBatch_cpp$$2
+BUFFER_SIZE__28$$2unnamed$$2xParticleBatch_cpp$$2:
+	.skip 0x4
+.global head_free_block__28$$2unnamed$$2xParticleBatch_cpp$$2
+head_free_block__28$$2unnamed$$2xParticleBatch_cpp$$2:
+	.skip 0x4
+.global block_buffer__28$$2unnamed$$2xParticleBatch_cpp$$2
+block_buffer__28$$2unnamed$$2xParticleBatch_cpp$$2:
+	.skip 0x4
+.global systems_size__28$$2unnamed$$2xParticleBatch_cpp$$2
+systems_size__28$$2unnamed$$2xParticleBatch_cpp$$2:
+	.skip 0x4
+.global buckets_size__28$$2unnamed$$2xParticleBatch_cpp$$2
+buckets_size__28$$2unnamed$$2xParticleBatch_cpp$$2:
+	.skip 0x18
+.global $$21029
+$$21029:
+	.skip 0x4
+.global $$21035
+$$21035:
+	.skip 0x4
+.global $$21054
+$$21054:
+	.skip 0x4
+.global $$21295
+$$21295:
+	.skip 0x4
+
 .section .text
 
 .global add_tweaks__Q228$$2unnamed$$2xParticleBatch_cpp$$25tweakFv

@@ -15,6 +15,12 @@ $$21912:
 $$2stringBase0_90:
 	.incbin "baserom.dol", 0x2E1428, 0x58
 
+.section .sbss
+
+.global sRumbleBreakaway
+sRumbleBreakaway:
+	.skip 0x8
+
 .section .text
 
 .global genericPlatRender__FP4xEnt

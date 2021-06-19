@@ -18,6 +18,18 @@ sBodySlamRing$1984:
 $$2stringBase0_39:
 	.incbin "baserom.dol", 0x2D7448, 0x28
 
+.section .sbss
+
+.global hasAddedToCount__21$$2unnamed$$2zCombat_cpp$$2
+hasAddedToCount__21$$2unnamed$$2zCombat_cpp$$2:
+	.skip 0x4
+.global damage_info_stack__21$$2unnamed$$2zCombat_cpp$$2
+damage_info_stack__21$$2unnamed$$2zCombat_cpp$$2:
+	.skip 0x10
+.global damage_info_stack_count__21$$2unnamed$$2zCombat_cpp$$2
+damage_info_stack_count__21$$2unnamed$$2zCombat_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global zCombatInit__Fv

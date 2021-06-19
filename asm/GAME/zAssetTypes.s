@@ -15,6 +15,27 @@ g_brainTable:
 $$2stringBase0_35:
 	.incbin "baserom.dol", 0x2D6E30, 0x4B8
 
+.section .sbss
+
+.global initialized$1384
+initialized$1384:
+	.skip 0x1
+.global init$1385
+init$1385:
+	.skip 0x3
+.global sDummyEmptyJSP
+sDummyEmptyJSP:
+	.skip 0x2C
+.global sTempJSP
+sTempJSP:
+	.skip 0x4
+.global player$1722
+player$1722:
+	.skip 0x4
+.global init$1723
+init$1723:
+	.skip 0x8
+
 .section .text
 
 .global GetBrainID__FUiUi

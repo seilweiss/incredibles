@@ -12,6 +12,57 @@ im_flames__19$$2unnamed$$2zFire_cpp$$2:
 $$2stringBase0_55:
 	.incbin "baserom.dol", 0x2DA398, 0x38
 
+.section .sbss
+
+.global _enabled__5zFire
+_enabled__5zFire:
+	.skip 0x1
+.global frame_changed__5zFire
+frame_changed__5zFire:
+	.skip 0x3
+.global flames__5zFire
+flames__5zFire:
+	.skip 0x4
+.global flames_size__5zFire
+flames_size__5zFire:
+	.skip 0x4
+.global flames_used__5zFire
+flames_used__5zFire:
+	.skip 0x4
+.global face_texture__19$$2unnamed$$2zFire_cpp$$2
+face_texture__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x4
+.global floor_texture__19$$2unnamed$$2zFire_cpp$$2
+floor_texture__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x4
+.global anim_frame_time__19$$2unnamed$$2zFire_cpp$$2
+anim_frame_time__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x4
+.global anim_frame__19$$2unnamed$$2zFire_cpp$$2
+anim_frame__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x4
+.global im_flames_size__19$$2unnamed$$2zFire_cpp$$2
+im_flames_size__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x4
+.global last_brightness__19$$2unnamed$$2zFire_cpp$$2
+last_brightness__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x4
+.global last_background_glow__19$$2unnamed$$2zFire_cpp$$2
+last_background_glow__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x4
+.global smoke_emitter__19$$2unnamed$$2zFire_cpp$$2
+smoke_emitter__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x4
+.global wisp_texture__19$$2unnamed$$2zFire_cpp$$2
+wisp_texture__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x4
+.global wisp_system_id__19$$2unnamed$$2zFire_cpp$$2
+wisp_system_id__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x4
+.global spawn_explosion_type__19$$2unnamed$$2zFire_cpp$$2
+spawn_explosion_type__19$$2unnamed$$2zFire_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q219$$2unnamed$$2zFire_cpp$$25tweakFPCc

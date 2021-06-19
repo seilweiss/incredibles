@@ -1,5 +1,17 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global EffectNames
+EffectNames:
+	.skip 0x4
+.global Effects
+Effects:
+	.skip 0x4
+.global EffectIndex
+EffectIndex:
+	.skip 0x8
+
 .section .text
 
 .global MaterialSetupEffect__FP10RpMaterialPv

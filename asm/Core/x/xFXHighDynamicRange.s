@@ -1,5 +1,32 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global HDR_brightening
+HDR_brightening:
+	.skip 0x4
+.global background_glow_normal__33$$2unnamed$$2xFXHighDynamicRange_cpp$$2
+background_glow_normal__33$$2unnamed$$2xFXHighDynamicRange_cpp$$2:
+	.skip 0x4
+.global background_darken_normal__33$$2unnamed$$2xFXHighDynamicRange_cpp$$2
+background_darken_normal__33$$2unnamed$$2xFXHighDynamicRange_cpp$$2:
+	.skip 0x4
+.global background_glow__33$$2unnamed$$2xFXHighDynamicRange_cpp$$2
+background_glow__33$$2unnamed$$2xFXHighDynamicRange_cpp$$2:
+	.skip 0x18
+.global background_darken__33$$2unnamed$$2xFXHighDynamicRange_cpp$$2
+background_darken__33$$2unnamed$$2xFXHighDynamicRange_cpp$$2:
+	.skip 0x18
+.global hdr_dump_efb
+hdr_dump_efb:
+	.skip 0x4
+.global hdr_down_dst
+hdr_down_dst:
+	.skip 0x4
+.global texData
+texData:
+	.skip 0x24
+
 .section .text
 
 .global add_tweaks__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweakFv

@@ -6,6 +6,15 @@
 $$2stringBase0_144:
 	.incbin "baserom.dol", 0x2E6E48, 0x10
 
+.section .sbss
+
+.global rbCam
+rbCam:
+	.skip 0x4
+.global zRBAND_CAMERA_ACTIVE
+zRBAND_CAMERA_ACTIVE:
+	.skip 0x4
+
 .section .text
 
 .global zCameraRBandAsset_Init__FR5xBaseR9xDynAssetUl

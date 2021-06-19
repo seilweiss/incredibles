@@ -9,6 +9,18 @@ sActiveCutscene:
 sCutsceneFakeModel:
 	.skip 0x500
 
+.section .sbss
+
+.global sCutTocMax
+sCutTocMax:
+	.skip 0x4
+.global sCutsceneModelHackBuf
+sCutsceneModelHackBuf:
+	.skip 0x4
+.global cutscene_cam__23$$2unnamed$$2xCutscene_cpp$$2
+cutscene_cam__23$$2unnamed$$2xCutscene_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global xCutscene_InitBegin__Fv

@@ -15,6 +15,27 @@ __vt__17zElastiGirlPlayer:
 $$2stringBase0_50:
 	.incbin "baserom.dol", 0x2D8B98, 0xD88
 
+.section .sbss
+
+.global eEA_Head
+eEA_Head:
+	.skip 0x4
+.global atomicIndex
+atomicIndex:
+	.skip 0x4
+.global vertTag
+vertTag:
+	.skip 0x20
+.global sAmbientGreen
+sAmbientGreen:
+	.skip 0x4
+.global sAmbientBlue
+sAmbientBlue:
+	.skip 0x4
+.global sSpinMaxLag
+sSpinMaxLag:
+	.skip 0x8
+
 .section .text
 
 .global ParseIni__17zElastiGirlPlayerFv

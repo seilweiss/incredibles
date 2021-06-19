@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global all_junctions__18zTrainPathJunction
+all_junctions__18zTrainPathJunction:
+	.skip 0x4
+.global init_done
+init_done:
+	.skip 0x4
+
 .section .text
 
 .global AddJunction__18zTrainPathJunctionFP18zTrainPathJunction

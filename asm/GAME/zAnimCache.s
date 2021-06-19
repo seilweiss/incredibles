@@ -9,6 +9,15 @@ cachedEntry__24$$2unnamed$$2zAnimCache_cpp$$2:
 cache__24$$2unnamed$$2zAnimCache_cpp$$2:
 	.skip 0x7800
 
+.section .sbss
+
+.global cachedAnimations__24$$2unnamed$$2zAnimCache_cpp$$2
+cachedAnimations__24$$2unnamed$$2zAnimCache_cpp$$2:
+	.skip 0x4
+.global currentCacheIndex__24$$2unnamed$$2zAnimCache_cpp$$2
+currentCacheIndex__24$$2unnamed$$2zAnimCache_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global fillInCache__24$$2unnamed$$2zAnimCache_cpp$$2FP15zAnimCacheEntryP8RpAtomicff

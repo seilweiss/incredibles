@@ -12,6 +12,42 @@ active_emitters__20$$2unnamed$$2xDecal_cpp$$2:
 $$2stringBase0_4:
 	.incbin "baserom.dol", 0x2CE960, 0x68
 
+.section .sbss
+
+.global decals__20$$2unnamed$$2xDecal_cpp$$2
+decals__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x4
+.global render_list__20$$2unnamed$$2xDecal_cpp$$2
+render_list__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x4
+.global immediate_buffer__20$$2unnamed$$2xDecal_cpp$$2
+immediate_buffer__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x4
+.global immediate_free__20$$2unnamed$$2xDecal_cpp$$2
+immediate_free__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x4
+.global decals_used__20$$2unnamed$$2xDecal_cpp$$2
+decals_used__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x4
+.global decals_sorted__20$$2unnamed$$2xDecal_cpp$$2
+decals_sorted__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x4
+.global immediate_indices_used__20$$2unnamed$$2xDecal_cpp$$2
+immediate_indices_used__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x4
+.global immediate_verts_used__20$$2unnamed$$2xDecal_cpp$$2
+immediate_verts_used__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x4
+.global owner_groups__20$$2unnamed$$2xDecal_cpp$$2
+owner_groups__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x20
+.global old_zRenderState__20$$2unnamed$$2xDecal_cpp$$2
+old_zRenderState__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x4
+.global active_emitters_size__20$$2unnamed$$2xDecal_cpp$$2
+active_emitters_size__20$$2unnamed$$2xDecal_cpp$$2:
+	.skip 0x4
+
 .section .text
 
 .global __as__11RwMatrixTagFRC11RwMatrixTag

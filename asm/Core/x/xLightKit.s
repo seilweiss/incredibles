@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global gLastLightKit
+gLastLightKit:
+	.skip 0x8
+
 .section .text
 
 .global xLightKit_Prepare__FPv

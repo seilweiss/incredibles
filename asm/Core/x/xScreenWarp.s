@@ -15,6 +15,51 @@ warp_lists__25$$2unnamed$$2xScreenWarp_cpp$$2:
 $$2stringBase0_21:
 	.incbin "baserom.dol", 0x2CF6E8, 0x40
 
+.section .sbss
+
+.global uvmap_buffer__25$$2unnamed$$2xScreenWarp_cpp$$2
+uvmap_buffer__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global uvmap_uoffset__25$$2unnamed$$2xScreenWarp_cpp$$2
+uvmap_uoffset__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global uvmap_voffset__25$$2unnamed$$2xScreenWarp_cpp$$2
+uvmap_voffset__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global uvmap_uscale__25$$2unnamed$$2xScreenWarp_cpp$$2
+uvmap_uscale__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global uvmap_vscale__25$$2unnamed$$2xScreenWarp_cpp$$2
+uvmap_vscale__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global uvmap_udelta__25$$2unnamed$$2xScreenWarp_cpp$$2
+uvmap_udelta__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global uvmap_vdelta__25$$2unnamed$$2xScreenWarp_cpp$$2
+uvmap_vdelta__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global uvmap_xscale__25$$2unnamed$$2xScreenWarp_cpp$$2
+uvmap_xscale__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global uvmap_yscale__25$$2unnamed$$2xScreenWarp_cpp$$2
+uvmap_yscale__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global uvmap_xdelta__25$$2unnamed$$2xScreenWarp_cpp$$2
+uvmap_xdelta__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global uvmap_ydelta__25$$2unnamed$$2xScreenWarp_cpp$$2
+uvmap_ydelta__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global common_warp_ids__25$$2unnamed$$2xScreenWarp_cpp$$2
+common_warp_ids__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x18
+.global warp_stack__25$$2unnamed$$2xScreenWarp_cpp$$2
+warp_stack__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x4
+.global render_this_frame__25$$2unnamed$$2xScreenWarp_cpp$$2
+render_this_frame__25$$2unnamed$$2xScreenWarp_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global alloc_warp__25$$2unnamed$$2xScreenWarp_cpp$$2FQ211xScreenWarp9type_enum

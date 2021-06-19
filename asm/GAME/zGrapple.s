@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global sGrapplePoints
+sGrapplePoints:
+	.skip 0x4
+.global sNumGrapplePoints
+sNumGrapplePoints:
+	.skip 0x4
+
 .section .text
 
 .global zGrapple_Init__FR5xBaseR9xDynAssetUl

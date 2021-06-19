@@ -6,6 +6,12 @@
 combatList__27$$2unnamed$$2zCombatSystem_cpp$$2:
 	.skip 0x180
 
+.section .sbss
+
+.global currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2
+currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2:
+	.skip 0x8
+
 .section .text
 
 .global zCombatSystemInit__Fv

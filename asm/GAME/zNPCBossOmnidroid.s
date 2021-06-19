@@ -75,6 +75,15 @@ always_hidden_entities__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2:
 $$2stringBase0_73:
 	.incbin "baserom.dol", 0x2DF228, 0x280
 
+.section .sbss
+
+.global boss__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2
+boss__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2:
+	.skip 0x4
+.global fire_props$6776
+fire_props$6776:
+	.skip 0xC
+
 .section .text
 
 .global shuffle_list__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2FPUii

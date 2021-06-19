@@ -21,6 +21,33 @@ tb$1228:
 $$2stringBase0_25:
 	.incbin "baserom.dol", 0x2CF770, 0x110
 
+.section .sbss
+
+.global gTrcPad
+gTrcPad:
+	.skip 0x30
+.global gTrcDisk
+gTrcDisk:
+	.skip 0x8
+.global k_CONTROLLER_MISSING_MESSAGE
+k_CONTROLLER_MISSING_MESSAGE:
+	.skip 0x4
+.global k_CONTROLLER_INVALID_MESSAGE
+k_CONTROLLER_INVALID_MESSAGE:
+	.skip 0x4
+.global init$1041
+init$1041:
+	.skip 0x1
+.global is_controller_message
+is_controller_message:
+	.skip 0x3
+.global message_text
+message_text:
+	.skip 0x4
+.global init$1230
+init$1230:
+	.skip 0x8
+
 .section .text
 
 .global xTRCInit__Fv

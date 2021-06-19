@@ -6,6 +6,15 @@
 sStripVert$1003:
 	.skip 0x90
 
+.section .sbss
+
+.global sActionLine
+sActionLine:
+	.skip 0x20
+.global sActionLineRaster
+sActionLineRaster:
+	.skip 0x8
+
 .section .text
 
 .global zActionLineInit__Fv

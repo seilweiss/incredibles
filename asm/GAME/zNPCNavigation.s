@@ -18,6 +18,12 @@ __vt__Q24zNPC8npc_move:
 $$2stringBase0_81:
 	.incbin "baserom.dol", 0x2E0188, 0x50
 
+.section .sbss
+
+.global collision_count$1149
+collision_count$1149:
+	.skip 0x8
+
 .section .text
 
 .global __ct__Q24zNPC4jumpFv

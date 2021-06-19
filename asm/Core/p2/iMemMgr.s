@@ -15,6 +15,36 @@ memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2:
 $$2stringBase0_28:
 	.incbin "baserom.dol", 0x2CF8B0, 0x98
 
+.section .sbss
+
+.global tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2
+tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2:
+	.skip 0x4
+.global StackBase__21$$2unnamed$$2iMemMgr_cpp$$2
+StackBase__21$$2unnamed$$2iMemMgr_cpp$$2:
+	.skip 0x4
+.global StackSize__21$$2unnamed$$2iMemMgr_cpp$$2
+StackSize__21$$2unnamed$$2iMemMgr_cpp$$2:
+	.skip 0x4
+.global memInited
+memInited:
+	.skip 0x4
+.global the_heap
+the_heap:
+	.skip 0x4
+.global hiheap_start
+hiheap_start:
+	.skip 0x4
+.global hiheap_end
+hiheap_end:
+	.skip 0x4
+.global hiheap_size
+hiheap_size:
+	.skip 0x4
+.global sMemMgrEnableRenderWareMemoryHack
+sMemMgrEnableRenderWareMemoryHack:
+	.skip 0x8
+
 .section .text
 
 .global iMemClearStack__21$$2unnamed$$2iMemMgr_cpp$$2Fv

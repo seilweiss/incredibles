@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global sPlayerHangObj
+sPlayerHangObj:
+	.skip 0x4
+.global playerDPos
+playerDPos:
+	.skip 0xC
+.global sHangableObjects
+sHangableObjects:
+	.skip 0x4
+.global sNumHangableObjects
+sNumHangableObjects:
+	.skip 0x4
+
 .section .text
 
 .global zHangable_Init__FR5xBaseR9xDynAssetUl

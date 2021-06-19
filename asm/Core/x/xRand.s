@@ -6,6 +6,15 @@
 state:
 	.skip 0x9C0
 
+.section .sbss
+
+.global initf
+initf:
+	.skip 0x4
+.global next_1
+next_1:
+	.skip 0x4
+
 .section .text
 
 .global init_genrand__FUi

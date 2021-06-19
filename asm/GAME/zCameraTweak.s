@@ -6,6 +6,36 @@
 sCamTweakList:
 	.skip 0xA0
 
+.section .sbss
+
+.global sCamTweakCount
+sCamTweakCount:
+	.skip 0x4
+.global sCamTweakLerp
+sCamTweakLerp:
+	.skip 0x4
+.global sCamTweakTime
+sCamTweakTime:
+	.skip 0x4
+.global sCamTweakPitch
+sCamTweakPitch:
+	.skip 0x8
+.global sCamTweakDistMult
+sCamTweakDistMult:
+	.skip 0x8
+.global sCamTweakPitchCur
+sCamTweakPitchCur:
+	.skip 0x4
+.global sCamTweakDistMultCur
+sCamTweakDistMultCur:
+	.skip 0x4
+.global zcam_neartweak
+zcam_neartweak:
+	.skip 0xC
+.global zcam_fartweak
+zcam_fartweak:
+	.skip 0x10
+
 .section .text
 
 .global zCameraTweak_LookPreCalc__FP13zCamTweakLookfff

@@ -51,6 +51,42 @@ burn_curve$2260:
 $$2stringBase0_72:
 	.incbin "baserom.dol", 0x2DCEFC, 0x554
 
+.section .sbss
+
+.global system$localstatic3$get_system__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1Fv
+system$localstatic3$get_system__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1Fv:
+	.skip 0x4
+.global init$localstatic4$get_system__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1Fv
+init$localstatic4$get_system__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1Fv:
+	.skip 0x4
+.global default_config__Q24zNPC12muzzel_flash
+default_config__Q24zNPC12muzzel_flash:
+	.skip 0x24
+.global system_id__Q24zNPC12muzzel_flash
+system_id__Q24zNPC12muzzel_flash:
+	.skip 0x4
+.global system$localstatic3$get_system__Q21z31lightweight$$0Q21z10uber_laser$$45$$1Fv
+system$localstatic3$get_system__Q21z31lightweight$$0Q21z10uber_laser$$45$$1Fv:
+	.skip 0x4
+.global init$localstatic4$get_system__Q21z31lightweight$$0Q21z10uber_laser$$45$$1Fv
+init$localstatic4$get_system__Q21z31lightweight$$0Q21z10uber_laser$$45$$1Fv:
+	.skip 0x4
+.global system_id__Q228$$2unnamed$$2zNPCBehaviorFX_cpp$$219SparkParticleSystem
+system_id__Q228$$2unnamed$$2zNPCBehaviorFX_cpp$$219SparkParticleSystem:
+	.skip 0x4
+.global curve$2261
+curve$2261:
+	.skip 0x10
+.global system$localstatic3$get_system__Q21z30lightweight$$012EnergyStream$$412$$1Fv
+system$localstatic3$get_system__Q21z30lightweight$$012EnergyStream$$412$$1Fv:
+	.skip 0x4
+.global init$localstatic4$get_system__Q21z30lightweight$$012EnergyStream$$412$$1Fv
+init$localstatic4$get_system__Q21z30lightweight$$012EnergyStream$$412$$1Fv:
+	.skip 0x4
+.global quad_buffer__4zNPC
+quad_buffer__4zNPC:
+	.skip 0xC
+
 .section .text
 
 .global setup__Q24zNPC14shrapnel_deathFv

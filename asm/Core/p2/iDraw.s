@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sbss
+
+.global lastSetFBMSK
+lastSetFBMSK:
+	.skip 0x4
+.global xfb
+xfb:
+	.skip 0xC
+.global xfbDisp
+xfbDisp:
+	.skip 0x4
+.global xfbCopy
+xfbCopy:
+	.skip 0x4
+
 .section .text
 
 .global iDrawSetFBMSK__FUiUib

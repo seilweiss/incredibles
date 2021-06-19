@@ -12,6 +12,12 @@ sCollisionGeomTable:
 $$2stringBase0_38:
 	.incbin "baserom.dol", 0x2D7440, 0x8
 
+.section .sbss
+
+.global sCollisionGeomTableCount
+sCollisionGeomTableCount:
+	.skip 0x8
+
 .section .text
 
 .global zCollGeom_EntSetup__FP4xEnt

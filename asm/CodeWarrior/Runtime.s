@@ -66,6 +66,12 @@ $$255:
 $$256:
 	.incbin "baserom.dol", 0x2E9EB0, 0x40
 
+.section .sbss
+
+.global lbl_803D14D8
+lbl_803D14D8:
+	.skip 0x8
+
 .section .text
 
 .global __va_arg

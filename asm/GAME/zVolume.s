@@ -6,6 +6,24 @@
 gOccludeCalc:
 	.skip 0x320
 
+.section .sbss
+
+.global vols
+vols:
+	.skip 0x4
+.global nvols
+nvols:
+	.skip 0x4
+.global gOccludeCount
+gOccludeCount:
+	.skip 0x4
+.global gOccludeList
+gOccludeList:
+	.skip 0x28
+.global gOccludeCalcCount
+gOccludeCalcCount:
+	.skip 0x4
+
 .section .text
 
 .global zVolumeInit__FP7zVolumeP12xVolumeAsset

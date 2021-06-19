@@ -18,6 +18,24 @@ __vt__Q24zNPC6Weapon:
 $$2stringBase0_111:
 	.incbin "baserom.dol", 0x2E4030, 0xF8
 
+.section .sbss
+
+.global system_id__Q24zNPC17ElectricitySystem
+system_id__Q24zNPC17ElectricitySystem:
+	.skip 0x4
+.global texture__Q24zNPC17ElectricitySystem
+texture__Q24zNPC17ElectricitySystem:
+	.skip 0x4
+.global animExpanding__Q24zNPC6Weapon
+animExpanding__Q24zNPC6Weapon:
+	.skip 0x4
+.global animContracting__Q24zNPC6Weapon
+animContracting__Q24zNPC6Weapon:
+	.skip 0x4
+.global counter$1493
+counter$1493:
+	.skip 0x8
+
 .section .text
 
 .global setup__Q24zNPC17ElectricitySystemFv

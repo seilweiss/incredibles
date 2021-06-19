@@ -15,6 +15,39 @@ FTCfgDefault:
 $$2stringBase0_120:
 	.incbin "baserom.dol", 0x2E4708, 0x2B8
 
+.section .sbss
+
+.global system$localstatic3$get_system__Q21z30lightweight$$012flamethrower$$410$$1Fv
+system$localstatic3$get_system__Q21z30lightweight$$012flamethrower$$410$$1Fv:
+	.skip 0x4
+.global init$localstatic4$get_system__Q21z30lightweight$$012flamethrower$$410$$1Fv
+init$localstatic4$get_system__Q21z30lightweight$$012flamethrower$$410$$1Fv:
+	.skip 0x1
+.global draw_damage
+draw_damage:
+	.skip 0x3
+.global flameThrowerCollisionInfo
+flameThrowerCollisionInfo:
+	.skip 0x4
+.global lbl_803D0B6C
+lbl_803D0B6C:
+	.skip 0x4
+.global lbl_803D0B70
+lbl_803D0B70:
+	.skip 0xC
+.global particleTex
+particleTex:
+	.skip 0x4
+.global counter$1603
+counter$1603:
+	.skip 0x4
+.global init$1604
+init$1604:
+	.skip 0x4
+.global flameThrowerMgr__16zFlameThrowerMgr
+flameThrowerMgr__16zFlameThrowerMgr:
+	.skip 0x8
+
 .section .text
 
 .global Init__19zFlameThrowerWidgetFR5xBaseR9xDynAssetUl

@@ -6,6 +6,30 @@
 ring_chain__19$$2unnamed$$2zDust_cpp$$2:
 	.skip 0x80
 
+.section .sbss
+
+.global dirt_system_id__19$$2unnamed$$2zDust_cpp$$2
+dirt_system_id__19$$2unnamed$$2zDust_cpp$$2:
+	.skip 0x4
+.global ring_vel_decay__19$$2unnamed$$2zDust_cpp$$2
+ring_vel_decay__19$$2unnamed$$2zDust_cpp$$2:
+	.skip 0x4
+.global dirt_uvs__19$$2unnamed$$2zDust_cpp$$2
+dirt_uvs__19$$2unnamed$$2zDust_cpp$$2:
+	.skip 0x4
+.global refreshed_ring_chains__19$$2unnamed$$2zDust_cpp$$2
+refreshed_ring_chains__19$$2unnamed$$2zDust_cpp$$2:
+	.skip 0x4
+.global ring_chain_ang__19$$2unnamed$$2zDust_cpp$$2
+ring_chain_ang__19$$2unnamed$$2zDust_cpp$$2:
+	.skip 0x8
+.global activities_used__16zDustRingEmitter
+activities_used__16zDustRingEmitter:
+	.skip 0x4
+.global activities__16zDustRingEmitter
+activities__16zDustRingEmitter:
+	.skip 0x4
+
 .section .text
 
 .global add_tweaks__Q219$$2unnamed$$2zDust_cpp$$25tweakFv

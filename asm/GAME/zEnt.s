@@ -15,6 +15,15 @@ $$21397:
 $$2stringBase0_51:
 	.incbin "baserom.dol", 0x2D9920, 0x50
 
+.section .sbss
+
+.global model_id$localstatic3$checkpoint_collision_hack__FP4zEnt
+model_id$localstatic3$checkpoint_collision_hack__FP4zEnt:
+	.skip 0x4
+.global init$localstatic4$checkpoint_collision_hack__FP4zEnt
+init$localstatic4$checkpoint_collision_hack__FP4zEnt:
+	.skip 0x4
+
 .section .text
 
 .global zEntInit__FP4zEntP9xEntAssetUi

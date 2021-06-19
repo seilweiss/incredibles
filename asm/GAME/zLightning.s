@@ -36,6 +36,57 @@ defaultWeightParam$1190:
 $$2stringBase0_64:
 	.incbin "baserom.dol", 0x2DADF0, 0x208
 
+.section .sbss
+
+.global sLightning
+sLightning:
+	.skip 0x4
+.global sLightningRaster
+sLightningRaster:
+	.skip 0x4
+.global sLightningRasterBranch
+sLightningRasterBranch:
+	.skip 0x4
+.global sLightningParticleRaster
+sLightningParticleRaster:
+	.skip 0x4
+.global LIGHTNING_FADE_DIST_SQR
+LIGHTNING_FADE_DIST_SQR:
+	.skip 0x4
+.global LIGHTNING_CULL_DIST_SQR
+LIGHTNING_CULL_DIST_SQR:
+	.skip 0x4
+.global sLFuncEnd
+sLFuncEnd:
+	.skip 0x28
+.global sLFuncJerkTime
+sLFuncJerkTime:
+	.skip 0x4
+.global sLFuncUVOffset
+sLFuncUVOffset:
+	.skip 0x4
+.global sTweakStart
+sTweakStart:
+	.skip 0xC
+.global sTweakEnd
+sTweakEnd:
+	.skip 0xC
+.global sLightningStartCB
+sLightningStartCB:
+	.skip 0x28
+.global collisionInfo
+collisionInfo:
+	.skip 0x4
+.global lbl_803CFF14
+lbl_803CFF14:
+	.skip 0x4
+.global lbl_803CFF18
+lbl_803CFF18:
+	.skip 0x18
+.global posArray
+posArray:
+	.skip 0x8
+
 .section .text
 
 .global Init__16zLightningWidgetFR5xBaseR9xDynAssetUl
