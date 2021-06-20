@@ -24,6 +24,57 @@ sBasisBezier:
 sBasisHermite:
 	.incbin "baserom.dol", 0x32B550, 0x40
 
+.section .sdata2
+
+.global $$2790_0
+$$2790_0:
+	.incbin "baserom.dol", 0x32F588, 0x4
+.global $$2812_1
+$$2812_1:
+	.incbin "baserom.dol", 0x32F58C, 0x4
+.global $$2836_1
+$$2836_1:
+	.incbin "baserom.dol", 0x32F590, 0x8
+.global $$2837_0
+$$2837_0:
+	.incbin "baserom.dol", 0x32F598, 0x8
+.global $$2838_1
+$$2838_1:
+	.incbin "baserom.dol", 0x32F5A0, 0x8
+.global $$2839_2
+$$2839_2:
+	.incbin "baserom.dol", 0x32F5A8, 0x8
+.global $$2840_1
+$$2840_1:
+	.incbin "baserom.dol", 0x32F5B0, 0x8
+.global $$2841_2
+$$2841_2:
+	.incbin "baserom.dol", 0x32F5B8, 0x8
+.global $$2842_1
+$$2842_1:
+	.incbin "baserom.dol", 0x32F5C0, 0x8
+.global $$2843_0
+$$2843_0:
+	.incbin "baserom.dol", 0x32F5C8, 0x8
+.global $$2854_2
+$$2854_2:
+	.incbin "baserom.dol", 0x32F5D0, 0x4
+.global $$2855_3
+$$2855_3:
+	.incbin "baserom.dol", 0x32F5D4, 0x4
+.global $$2856_1
+$$2856_1:
+	.incbin "baserom.dol", 0x32F5D8, 0x4
+.global $$21054_2
+$$21054_2:
+	.incbin "baserom.dol", 0x32F5DC, 0x4
+.global $$21056_0
+$$21056_0:
+	.incbin "baserom.dol", 0x32F5E0, 0x8
+.global $$21058
+$$21058:
+	.incbin "baserom.dol", 0x32F5E8, 0x8
+
 .section .text
 
 .global Tridiag_Solve__FPfPfPfP5xVec3P5xVec3i

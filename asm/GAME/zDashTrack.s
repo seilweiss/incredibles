@@ -195,6 +195,60 @@ lbl_803D92A8:
 current_triangle__Q25zDash12track_system:
 	.incbin "baserom.dol", 0x32D230, 0x8
 
+.section .sdata2
+
+.global $$2977_0
+$$2977_0:
+	.incbin "baserom.dol", 0x332938, 0x4
+.global $$2978_1
+$$2978_1:
+	.incbin "baserom.dol", 0x33293C, 0x4
+.global $$21067_0
+$$21067_0:
+	.incbin "baserom.dol", 0x332940, 0x4
+.global $$21222_0
+$$21222_0:
+	.incbin "baserom.dol", 0x332944, 0x4
+.global $$21223_1
+$$21223_1:
+	.incbin "baserom.dol", 0x332948, 0x4
+.global $$21224
+$$21224:
+	.incbin "baserom.dol", 0x33294C, 0x4
+.global $$21225
+$$21225:
+	.incbin "baserom.dol", 0x332950, 0x4
+.global $$21294_0
+$$21294_0:
+	.incbin "baserom.dol", 0x332954, 0x4
+.global $$21295_2
+$$21295_2:
+	.incbin "baserom.dol", 0x332958, 0x4
+.global $$21354_3
+$$21354_3:
+	.incbin "baserom.dol", 0x33295C, 0x4
+.global lbl_803D5FA0
+lbl_803D5FA0:
+	.incbin "baserom.dol", 0x332960, 0x4
+.global lbl_803D5FA4
+lbl_803D5FA4:
+	.incbin "baserom.dol", 0x332964, 0x4
+.global $$21500_0
+$$21500_0:
+	.incbin "baserom.dol", 0x332968, 0x4
+.global $$21607_2
+$$21607_2:
+	.incbin "baserom.dol", 0x33296C, 0x4
+.global lbl_803D5FB0
+lbl_803D5FB0:
+	.incbin "baserom.dol", 0x332970, 0x4
+.global $$21630_0
+$$21630_0:
+	.incbin "baserom.dol", 0x332974, 0x4
+.global $$21631_0
+$$21631_0:
+	.incbin "baserom.dol", 0x332978, 0x8
+
 .section .text
 
 .global setup__Q25zDash12track_systemFv

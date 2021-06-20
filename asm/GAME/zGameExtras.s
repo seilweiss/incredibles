@@ -57,6 +57,21 @@ sCheatPressed:
 aid_sndList$1342:
 	.incbin "baserom.dol", 0x32BF90, 0x20
 
+.section .sdata2
+
+.global $$21162
+$$21162:
+	.incbin "baserom.dol", 0x3306F8, 0x4
+.global $$21334_0
+$$21334_0:
+	.incbin "baserom.dol", 0x3306FC, 0x4
+.global $$21335_1
+$$21335_1:
+	.incbin "baserom.dol", 0x330700, 0x8
+.global $$21380_0
+$$21380_0:
+	.incbin "baserom.dol", 0x330708, 0x8
+
 .section .text
 
 .global zGameExtras_SceneInit__Fv

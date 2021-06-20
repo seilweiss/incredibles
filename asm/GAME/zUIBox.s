@@ -12,6 +12,57 @@ vertex$1100:
 __vt__6zUIBox:
 	.incbin "baserom.dol", 0x30D728, 0x58
 
+.section .sdata2
+
+.global $$21002_3
+$$21002_3:
+	.incbin "baserom.dol", 0x332188, 0x4
+.global $$21081_0
+$$21081_0:
+	.incbin "baserom.dol", 0x33218C, 0x4
+.global $$21082_0
+$$21082_0:
+	.incbin "baserom.dol", 0x332190, 0x4
+.global $$21083_1
+$$21083_1:
+	.incbin "baserom.dol", 0x332194, 0x4
+.global $$21119_1
+$$21119_1:
+	.incbin "baserom.dol", 0x332198, 0x4
+.global lbl_803D57DC
+lbl_803D57DC:
+	.incbin "baserom.dol", 0x33219C, 0x4
+.global $$21172_0
+$$21172_0:
+	.incbin "baserom.dol", 0x3321A0, 0x4
+.global $$21173_0
+$$21173_0:
+	.incbin "baserom.dol", 0x3321A4, 0x4
+.global $$21174_3
+$$21174_3:
+	.incbin "baserom.dol", 0x3321A8, 0x4
+.global $$21175_2
+$$21175_2:
+	.incbin "baserom.dol", 0x3321AC, 0x4
+.global $$21176_3
+$$21176_3:
+	.incbin "baserom.dol", 0x3321B0, 0x4
+.global $$21177_4
+$$21177_4:
+	.incbin "baserom.dol", 0x3321B4, 0x4
+.global $$21178_1
+$$21178_1:
+	.incbin "baserom.dol", 0x3321B8, 0x4
+.global $$21179_0
+$$21179_0:
+	.incbin "baserom.dol", 0x3321BC, 0x4
+.global $$21182_2
+$$21182_2:
+	.incbin "baserom.dol", 0x3321C0, 0x8
+.global $$21185_1
+$$21185_1:
+	.incbin "baserom.dol", 0x3321C8, 0x8
+
 .section .text
 
 .global DoInit__6zUIBoxFv

@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2674
+$$2674:
+	.incbin "baserom.dol", 0x32EB10, 0x4
+.global $$2760_0
+$$2760_0:
+	.incbin "baserom.dol", 0x32EB14, 0x4
+.global $$2761
+$$2761:
+	.incbin "baserom.dol", 0x32EB18, 0x4
+.global $$2880_1
+$$2880_1:
+	.incbin "baserom.dol", 0x32EB1C, 0x4
+.global $$2881_0
+$$2881_0:
+	.incbin "baserom.dol", 0x32EB20, 0x8
+
 .section .text
 
 .global xEntDriveInit__FP9xEntDriveP4xEnt

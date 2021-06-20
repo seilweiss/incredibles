@@ -138,6 +138,27 @@ mRomFontScale__7ROMFont:
 mResetEnabled__11ResetButton:
 	.incbin "baserom.dol", 0x32B768, 0x8
 
+.section .sdata2
+
+.global $$2733_0
+$$2733_0:
+	.incbin "baserom.dol", 0x32F958, 0x4
+.global $$2734
+$$2734:
+	.incbin "baserom.dol", 0x32F95C, 0x4
+.global $$2736_1
+$$2736_1:
+	.incbin "baserom.dol", 0x32F960, 0x8
+.global $$2754
+$$2754:
+	.incbin "baserom.dol", 0x32F968, 0x4
+.global $$2808
+$$2808:
+	.incbin "baserom.dol", 0x32F96C, 0x4
+.global $$2819_3
+$$2819_3:
+	.incbin "baserom.dol", 0x32F970, 0x8
+
 .section .text
 
 .global GetRegion__Fv

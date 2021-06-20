@@ -60,6 +60,108 @@ __vt__Q21z27lightweight$$0Q21z6rocket$$420$$1:
 __vt__Q21z6rocket:
 	.incbin "baserom.dol", 0x32D448, 0x20
 
+.section .sdata2
+
+.global $$21273
+$$21273:
+	.incbin "baserom.dol", 0x332D38, 0x4
+.global $$21274_0
+$$21274_0:
+	.incbin "baserom.dol", 0x332D3C, 0x4
+.global $$21300_0
+$$21300_0:
+	.incbin "baserom.dol", 0x332D40, 0x4
+.global $$21301_2
+$$21301_2:
+	.incbin "baserom.dol", 0x332D44, 0x4
+.global $$21399_3
+$$21399_3:
+	.incbin "baserom.dol", 0x332D48, 0x4
+.global $$21400_1
+$$21400_1:
+	.incbin "baserom.dol", 0x332D4C, 0x4
+.global $$21401_0
+$$21401_0:
+	.incbin "baserom.dol", 0x332D50, 0x4
+.global $$21402_0
+$$21402_0:
+	.incbin "baserom.dol", 0x332D54, 0x4
+.global $$21415_4
+$$21415_4:
+	.incbin "baserom.dol", 0x332D58, 0x4
+.global $$21427_1
+$$21427_1:
+	.incbin "baserom.dol", 0x332D5C, 0x4
+.global $$21454
+$$21454:
+	.incbin "baserom.dol", 0x332D60, 0x4
+.global $$21462_0
+$$21462_0:
+	.incbin "baserom.dol", 0x332D64, 0x4
+.global lbl_803D63A8
+lbl_803D63A8:
+	.incbin "baserom.dol", 0x332D68, 0x4
+.global lbl_803D63AC
+lbl_803D63AC:
+	.incbin "baserom.dol", 0x332D6C, 0x4
+.global $$21466_2
+$$21466_2:
+	.incbin "baserom.dol", 0x332D70, 0x4
+.global lbl_803D63B4
+lbl_803D63B4:
+	.incbin "baserom.dol", 0x332D74, 0x4
+.global lbl_803D63B8
+lbl_803D63B8:
+	.incbin "baserom.dol", 0x332D78, 0x4
+.global $$21473_4
+$$21473_4:
+	.incbin "baserom.dol", 0x332D7C, 0x4
+.global $$21503_1
+$$21503_1:
+	.incbin "baserom.dol", 0x332D80, 0x4
+.global $$21523_2
+$$21523_2:
+	.incbin "baserom.dol", 0x332D84, 0x4
+.global $$21524_0
+$$21524_0:
+	.incbin "baserom.dol", 0x332D88, 0x4
+.global $$21525_3
+$$21525_3:
+	.incbin "baserom.dol", 0x332D8C, 0x4
+.global $$21526_1
+$$21526_1:
+	.incbin "baserom.dol", 0x332D90, 0x4
+.global $$21527_2
+$$21527_2:
+	.incbin "baserom.dol", 0x332D94, 0x4
+.global $$21528_3
+$$21528_3:
+	.incbin "baserom.dol", 0x332D98, 0x4
+.global $$21580_1
+$$21580_1:
+	.incbin "baserom.dol", 0x332D9C, 0x4
+.global $$21585_0
+$$21585_0:
+	.incbin "baserom.dol", 0x332DA0, 0x8
+.global $$21659_3
+$$21659_3:
+	.incbin "baserom.dol", 0x332DA8, 0x4
+.global $$21691_0
+$$21691_0:
+	.incbin "baserom.dol", 0x332DAC, 0x4
+.global $$21692_0
+$$21692_0:
+	.incbin "baserom.dol", 0x332DB0, 0x4
+.global $$21693_2
+$$21693_2:
+	.incbin "baserom.dol", 0x332DB4, 0x4
+.global $$21694_1
+$$21694_1:
+	.incbin "baserom.dol", 0x332DB8, 0x4
+.global $$21748
+$$21748:
+	.incbin "baserom.dol", 0x332DBC, 0x4
+
 .section .text
 
 .global setup__Q21z6rocketFv

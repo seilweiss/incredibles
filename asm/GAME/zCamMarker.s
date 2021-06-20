@@ -33,6 +33,21 @@ lbl_803D8A18:
 __vt__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidget:
 	.incbin "baserom.dol", 0x32B898, 0x28
 
+.section .sdata2
+
+.global $$2995_0
+$$2995_0:
+	.incbin "baserom.dol", 0x32FA90, 0x4
+.global $$21005
+$$21005:
+	.incbin "baserom.dol", 0x32FA94, 0x4
+.global $$21107
+$$21107:
+	.incbin "baserom.dol", 0x32FA98, 0x4
+.global $$21119
+$$21119:
+	.incbin "baserom.dol", 0x32FA9C, 0x4
+
 .section .text
 
 .global activate_camera__24$$2unnamed$$2zCamMarker_cpp$$2FRC9xCamAssetP4xEnt

@@ -195,6 +195,129 @@ sProjBoundResetSpeed__4zNPC:
 sProjNPCFallThru__4zNPC:
 	.incbin "baserom.dol", 0x32CE1C, 0x4
 
+.section .sdata2
+
+.global $$21296_0
+$$21296_0:
+	.incbin "baserom.dol", 0x331898, 0x4
+.global $$21297_0
+$$21297_0:
+	.incbin "baserom.dol", 0x33189C, 0x4
+.global $$21319_0
+$$21319_0:
+	.incbin "baserom.dol", 0x3318A0, 0x4
+.global ribbon_curve__23$$2unnamed$$2zNPCMelee_cpp$$2
+ribbon_curve__23$$2unnamed$$2zNPCMelee_cpp$$2:
+	.incbin "baserom.dol", 0x3318A4, 0x18
+.global $$21352_0
+$$21352_0:
+	.incbin "baserom.dol", 0x3318BC, 0x4
+.global $$21353_0
+$$21353_0:
+	.incbin "baserom.dol", 0x3318C0, 0x4
+.global $$21362
+$$21362:
+	.incbin "baserom.dol", 0x3318C4, 0x4
+.global $$21363_0
+$$21363_0:
+	.incbin "baserom.dol", 0x3318C8, 0x4
+.global $$21364_0
+$$21364_0:
+	.incbin "baserom.dol", 0x3318CC, 0x4
+.global $$21389_2
+$$21389_2:
+	.incbin "baserom.dol", 0x3318D0, 0x4
+.global $$21405_0
+$$21405_0:
+	.incbin "baserom.dol", 0x3318D4, 0x4
+.global $$21494_0
+$$21494_0:
+	.incbin "baserom.dol", 0x3318D8, 0x8
+.global $$21554_1
+$$21554_1:
+	.incbin "baserom.dol", 0x3318E0, 0x4
+.global $$21650_0
+$$21650_0:
+	.incbin "baserom.dol", 0x3318E4, 0x4
+.global $$21705_0
+$$21705_0:
+	.incbin "baserom.dol", 0x3318E8, 0x4
+.global $$21706
+$$21706:
+	.incbin "baserom.dol", 0x3318EC, 0x4
+.global $$21707_0
+$$21707_0:
+	.incbin "baserom.dol", 0x3318F0, 0x4
+.global $$21708
+$$21708:
+	.incbin "baserom.dol", 0x3318F4, 0x4
+.global $$21709
+$$21709:
+	.incbin "baserom.dol", 0x3318F8, 0x4
+.global $$21936_1
+$$21936_1:
+	.incbin "baserom.dol", 0x3318FC, 0x4
+.global $$21937_0
+$$21937_0:
+	.incbin "baserom.dol", 0x331900, 0x4
+.global $$21938_0
+$$21938_0:
+	.incbin "baserom.dol", 0x331904, 0x4
+.global $$21977_1
+$$21977_1:
+	.incbin "baserom.dol", 0x331908, 0x4
+.global $$22088_0
+$$22088_0:
+	.incbin "baserom.dol", 0x33190C, 0x4
+.global $$22089_0
+$$22089_0:
+	.incbin "baserom.dol", 0x331910, 0x4
+.global $$22151
+$$22151:
+	.incbin "baserom.dol", 0x331914, 0x4
+.global $$22152
+$$22152:
+	.incbin "baserom.dol", 0x331918, 0x4
+.global $$22269_0
+$$22269_0:
+	.incbin "baserom.dol", 0x33191C, 0x4
+.global $$22270_0
+$$22270_0:
+	.incbin "baserom.dol", 0x331920, 0x4
+.global $$22271
+$$22271:
+	.incbin "baserom.dol", 0x331924, 0x4
+.global $$22313
+$$22313:
+	.incbin "baserom.dol", 0x331928, 0x8
+.global $$22342_0
+$$22342_0:
+	.incbin "baserom.dol", 0x331930, 0x4
+.global $$22477
+$$22477:
+	.incbin "baserom.dol", 0x331934, 0x4
+.global $$22868
+$$22868:
+	.incbin "baserom.dol", 0x331938, 0x4
+.global $$22869
+$$22869:
+	.incbin "baserom.dol", 0x33193C, 0x4
+.global $$22870
+$$22870:
+	.incbin "baserom.dol", 0x331940, 0x4
+.global $$22871
+$$22871:
+	.incbin "baserom.dol", 0x331944, 0x4
+.global $$23130
+$$23130:
+	.incbin "baserom.dol", 0x331948, 0x4
+.global $$23131
+$$23131:
+	.incbin "baserom.dol", 0x33194C, 0x4
+.global $$23143
+$$23143:
+	.incbin "baserom.dol", 0x331950, 0x8
+
 .section .text
 
 .global zNPC_ForceEffect__23$$2unnamed$$2zNPCMelee_cpp$$2FP9xAnimPlayPCc

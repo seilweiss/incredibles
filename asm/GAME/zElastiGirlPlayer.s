@@ -225,6 +225,207 @@ sSpinYDrop:
 sSpinLevel:
 	.incbin "baserom.dol", 0x32BD50, 0x28
 
+.section .sdata2
+
+.global $$21170_0
+$$21170_0:
+	.incbin "baserom.dol", 0x3301A0, 0x4
+.global $$21171_0
+$$21171_0:
+	.incbin "baserom.dol", 0x3301A4, 0x4
+.global $$21193
+$$21193:
+	.incbin "baserom.dol", 0x3301A8, 0x4
+.global BOUND_OFFSET__31$$2unnamed$$2zElastiGirlPlayer_cpp$$2
+BOUND_OFFSET__31$$2unnamed$$2zElastiGirlPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x3301AC, 0xC
+.global $$21465_0
+$$21465_0:
+	.incbin "baserom.dol", 0x3301B8, 0x4
+.global $$21466_1
+$$21466_1:
+	.incbin "baserom.dol", 0x3301BC, 0x4
+.global $$21467_1
+$$21467_1:
+	.incbin "baserom.dol", 0x3301C0, 0x4
+.global $$21468_0
+$$21468_0:
+	.incbin "baserom.dol", 0x3301C4, 0x4
+.global $$21469_2
+$$21469_2:
+	.incbin "baserom.dol", 0x3301C8, 0x4
+.global $$21513_0
+$$21513_0:
+	.incbin "baserom.dol", 0x3301CC, 0x4
+.global $$21514_1
+$$21514_1:
+	.incbin "baserom.dol", 0x3301D0, 0x4
+.global $$21515_3
+$$21515_3:
+	.incbin "baserom.dol", 0x3301D4, 0x4
+.global $$21516_2
+$$21516_2:
+	.incbin "baserom.dol", 0x3301D8, 0x4
+.global $$21517_2
+$$21517_2:
+	.incbin "baserom.dol", 0x3301DC, 0x4
+.global $$21518_2
+$$21518_2:
+	.incbin "baserom.dol", 0x3301E0, 0x4
+.global $$21519_2
+$$21519_2:
+	.incbin "baserom.dol", 0x3301E4, 0x4
+.global $$21520_0
+$$21520_0:
+	.incbin "baserom.dol", 0x3301E8, 0x4
+.global $$21521_1
+$$21521_1:
+	.incbin "baserom.dol", 0x3301EC, 0x4
+.global $$21522_2
+$$21522_2:
+	.incbin "baserom.dol", 0x3301F0, 0x4
+.global $$21523_0
+$$21523_0:
+	.incbin "baserom.dol", 0x3301F4, 0x4
+.global $$21524
+$$21524:
+	.incbin "baserom.dol", 0x3301F8, 0x4
+.global $$21525_0
+$$21525_0:
+	.incbin "baserom.dol", 0x3301FC, 0x4
+.global $$21526_0
+$$21526_0:
+	.incbin "baserom.dol", 0x330200, 0x4
+.global $$21527_0
+$$21527_0:
+	.incbin "baserom.dol", 0x330204, 0x4
+.global $$21598
+$$21598:
+	.incbin "baserom.dol", 0x330208, 0x4
+.global $$21599
+$$21599:
+	.incbin "baserom.dol", 0x33020C, 0x4
+.global $$21687_0
+$$21687_0:
+	.incbin "baserom.dol", 0x330210, 0x4
+.global $$21688
+$$21688:
+	.incbin "baserom.dol", 0x330214, 0x4
+.global $$21722_0
+$$21722_0:
+	.incbin "baserom.dol", 0x330218, 0x4
+.global drivingLerpTable
+drivingLerpTable:
+	.incbin "baserom.dol", 0x33021C, 0x30
+.global reactionLerpTable
+reactionLerpTable:
+	.incbin "baserom.dol", 0x33024C, 0x30
+.global $$21789
+$$21789:
+	.incbin "baserom.dol", 0x33027C, 0x4
+.global $$21790
+$$21790:
+	.incbin "baserom.dol", 0x330280, 0x4
+.global $$21791_0
+$$21791_0:
+	.incbin "baserom.dol", 0x330284, 0x4
+.global $$21792
+$$21792:
+	.incbin "baserom.dol", 0x330288, 0x4
+.global $$21793
+$$21793:
+	.incbin "baserom.dol", 0x33028C, 0x4
+.global $$21794_0
+$$21794_0:
+	.incbin "baserom.dol", 0x330290, 0x4
+.global $$21795
+$$21795:
+	.incbin "baserom.dol", 0x330294, 0x4
+.global $$21796_0
+$$21796_0:
+	.incbin "baserom.dol", 0x330298, 0x4
+.global $$21841_0
+$$21841_0:
+	.incbin "baserom.dol", 0x33029C, 0x4
+.global $$21932
+$$21932:
+	.incbin "baserom.dol", 0x3302A0, 0x4
+.global $$21933
+$$21933:
+	.incbin "baserom.dol", 0x3302A4, 0x4
+.global $$21934
+$$21934:
+	.incbin "baserom.dol", 0x3302A8, 0x4
+.global $$21935
+$$21935:
+	.incbin "baserom.dol", 0x3302AC, 0x4
+.global $$21936_0
+$$21936_0:
+	.incbin "baserom.dol", 0x3302B0, 0x4
+.global $$21937
+$$21937:
+	.incbin "baserom.dol", 0x3302B4, 0x4
+.global $$21938
+$$21938:
+	.incbin "baserom.dol", 0x3302B8, 0x4
+.global $$21939
+$$21939:
+	.incbin "baserom.dol", 0x3302BC, 0x4
+.global $$21940
+$$21940:
+	.incbin "baserom.dol", 0x3302C0, 0x4
+.global $$22034
+$$22034:
+	.incbin "baserom.dol", 0x3302C4, 0x4
+.global $$22087
+$$22087:
+	.incbin "baserom.dol", 0x3302C8, 0x4
+.global headBones__31$$2unnamed$$2zElastiGirlPlayer_cpp$$2
+headBones__31$$2unnamed$$2zElastiGirlPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x3302CC, 0x3C
+.global $$22259
+$$22259:
+	.incbin "baserom.dol", 0x330308, 0x8
+.global $$22270
+$$22270:
+	.incbin "baserom.dol", 0x330310, 0x4
+.global $$22409
+$$22409:
+	.incbin "baserom.dol", 0x330314, 0x4
+.global $$22421
+$$22421:
+	.incbin "baserom.dol", 0x330318, 0x4
+.global $$22422
+$$22422:
+	.incbin "baserom.dol", 0x33031C, 0x4
+.global $$22573
+$$22573:
+	.incbin "baserom.dol", 0x330320, 0x4
+.global $$22761
+$$22761:
+	.incbin "baserom.dol", 0x330324, 0x4
+.global $$22773_0
+$$22773_0:
+	.incbin "baserom.dol", 0x330328, 0x4
+.global $$22994
+$$22994:
+	.incbin "baserom.dol", 0x33032C, 0x4
+.global $$23081_0
+$$23081_0:
+	.incbin "baserom.dol", 0x330330, 0x4
+.global $$23082_0
+$$23082_0:
+	.incbin "baserom.dol", 0x330334, 0x4
+.global $$23119
+$$23119:
+	.incbin "baserom.dol", 0x330338, 0x4
+.global $$23312
+$$23312:
+	.incbin "baserom.dol", 0x33033C, 0x4
+.global $$23313
+$$23313:
+	.incbin "baserom.dol", 0x330340, 0x8
+
 .section .text
 
 .global ParseIni__17zElastiGirlPlayerFv

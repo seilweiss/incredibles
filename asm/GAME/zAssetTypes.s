@@ -63,6 +63,21 @@ $$2839_0:
 $$2841_0:
 	.incbin "baserom.dol", 0x32B7CC, 0x4
 
+.section .sdata2
+
+.global $$22023_0
+$$22023_0:
+	.incbin "baserom.dol", 0x32F9F8, 0x4
+.global $$22024
+$$22024:
+	.incbin "baserom.dol", 0x32F9FC, 0x4
+.global $$22025
+$$22025:
+	.incbin "baserom.dol", 0x32FA00, 0x4
+.global $$22057
+$$22057:
+	.incbin "baserom.dol", 0x32FA04, 0x4
+
 .section .text
 
 .global GetBrainID__FUiUi

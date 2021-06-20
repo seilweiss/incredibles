@@ -39,6 +39,63 @@ __vt__12EnergyStream:
 __vt__Q21z30lightweight$$012EnergyStream$$412$$1:
 	.incbin "baserom.dol", 0x32DB28, 0x20
 
+.section .sdata2
+
+.global ribbon_curve__27$$2unnamed$$2zEnergyStream_cpp$$2
+ribbon_curve__27$$2unnamed$$2zEnergyStream_cpp$$2:
+	.incbin "baserom.dol", 0x3338F8, 0x18
+.global $$21013_4
+$$21013_4:
+	.incbin "baserom.dol", 0x333910, 0x4
+.global $$21014_1
+$$21014_1:
+	.incbin "baserom.dol", 0x333914, 0x4
+.global $$21034_1
+$$21034_1:
+	.incbin "baserom.dol", 0x333918, 0x4
+.global $$21035_5
+$$21035_5:
+	.incbin "baserom.dol", 0x33391C, 0x4
+.global $$21036_6
+$$21036_6:
+	.incbin "baserom.dol", 0x333920, 0x8
+.global $$21038_3
+$$21038_3:
+	.incbin "baserom.dol", 0x333928, 0x8
+.global $$21092_3
+$$21092_3:
+	.incbin "baserom.dol", 0x333930, 0x8
+.global $$21107_3
+$$21107_3:
+	.incbin "baserom.dol", 0x333938, 0x4
+.global $$21108_2
+$$21108_2:
+	.incbin "baserom.dol", 0x33393C, 0x4
+.global $$21109_2
+$$21109_2:
+	.incbin "baserom.dol", 0x333940, 0x4
+.global $$21110_1
+$$21110_1:
+	.incbin "baserom.dol", 0x333944, 0x4
+.global $$21111_1
+$$21111_1:
+	.incbin "baserom.dol", 0x333948, 0x4
+.global $$21112_1
+$$21112_1:
+	.incbin "baserom.dol", 0x33394C, 0x4
+.global $$21113_3
+$$21113_3:
+	.incbin "baserom.dol", 0x333950, 0x4
+.global $$21114
+$$21114:
+	.incbin "baserom.dol", 0x333954, 0x4
+.global $$21157_5
+$$21157_5:
+	.incbin "baserom.dol", 0x333958, 0x4
+.global $$21158_7
+$$21158_7:
+	.incbin "baserom.dol", 0x33395C, 0x4
+
 .section .text
 
 .global initRibbon__27$$2unnamed$$2zEnergyStream_cpp$$2FP9xFXRibbon

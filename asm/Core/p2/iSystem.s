@@ -54,6 +54,21 @@ myGXNtsc480IntDf:
 myGXPal528IntDf:
 	.incbin "baserom.dol", 0x32B6D4, 0x3C
 
+.section .sdata2
+
+.global $$21035_0
+$$21035_0:
+	.incbin "baserom.dol", 0x32F940, 0x4
+.global lbl_803D2F84
+lbl_803D2F84:
+	.incbin "baserom.dol", 0x32F944, 0x4
+.global lbl_803D2F88
+lbl_803D2F88:
+	.incbin "baserom.dol", 0x32F948, 0x4
+.global lbl_803D2F8C
+lbl_803D2F8C:
+	.incbin "baserom.dol", 0x32F94C, 0x4
+
 .section .text
 
 .global iRwResourcesEmptyArena__Fv

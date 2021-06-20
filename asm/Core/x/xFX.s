@@ -81,6 +81,66 @@ xFXanimUV2PTrans:
 xFXanimUV2PScale:
 	.incbin "baserom.dol", 0x32B1A0, 0x8
 
+.section .sdata2
+
+.global $$21016_1
+$$21016_1:
+	.incbin "baserom.dol", 0x32EE50, 0x4
+.global $$21215_0
+$$21215_0:
+	.incbin "baserom.dol", 0x32EE54, 0x4
+.global $$21216_0
+$$21216_0:
+	.incbin "baserom.dol", 0x32EE58, 0x8
+.global $$21220
+$$21220:
+	.incbin "baserom.dol", 0x32EE60, 0x8
+.global $$21258
+$$21258:
+	.incbin "baserom.dol", 0x32EE68, 0x4
+.global $$21380
+$$21380:
+	.incbin "baserom.dol", 0x32EE6C, 0x4
+.global $$21416
+$$21416:
+	.incbin "baserom.dol", 0x32EE70, 0x4
+.global lbl_803D24B4
+lbl_803D24B4:
+	.incbin "baserom.dol", 0x32EE74, 0x4
+.global lbl_803D24B8
+lbl_803D24B8:
+	.incbin "baserom.dol", 0x32EE78, 0x4
+.global $$21417
+$$21417:
+	.incbin "baserom.dol", 0x32EE7C, 0x4
+.global lbl_803D24C0
+lbl_803D24C0:
+	.incbin "baserom.dol", 0x32EE80, 0x4
+.global lbl_803D24C4
+lbl_803D24C4:
+	.incbin "baserom.dol", 0x32EE84, 0x4
+.global $$21419
+$$21419:
+	.incbin "baserom.dol", 0x32EE88, 0x4
+.global default_curve$1811
+default_curve$1811:
+	.incbin "baserom.dol", 0x32EE8C, 0x18
+.global $$21820
+$$21820:
+	.incbin "baserom.dol", 0x32EEA4, 0x4
+.global $$22107
+$$22107:
+	.incbin "baserom.dol", 0x32EEA8, 0x4
+.global $$22159
+$$22159:
+	.incbin "baserom.dol", 0x32EEAC, 0x4
+.global $$22224
+$$22224:
+	.incbin "baserom.dol", 0x32EEB0, 0x4
+.global lbl_803D24F4
+lbl_803D24F4:
+	.incbin "baserom.dol", 0x32EEB4, 0x4
+
 .section .text
 
 .global xFXInit__Fv

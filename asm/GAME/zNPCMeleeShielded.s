@@ -24,6 +24,81 @@ __vt__Q24zNPC6shield:
 $$2stringBase0_79:
 	.incbin "baserom.dol", 0x2DFF78, 0x148
 
+.section .sdata2
+
+.global $$21254_0
+$$21254_0:
+	.incbin "baserom.dol", 0x331958, 0x4
+.global lbl_803D4F9C
+lbl_803D4F9C:
+	.incbin "baserom.dol", 0x33195C, 0x4
+.global lbl_803D4FA0
+lbl_803D4FA0:
+	.incbin "baserom.dol", 0x331960, 0x4
+.global $$21255_3
+$$21255_3:
+	.incbin "baserom.dol", 0x331964, 0x4
+.global lbl_803D4FA8
+lbl_803D4FA8:
+	.incbin "baserom.dol", 0x331968, 0x4
+.global lbl_803D4FAC
+lbl_803D4FAC:
+	.incbin "baserom.dol", 0x33196C, 0x4
+.global $$21257_3
+$$21257_3:
+	.incbin "baserom.dol", 0x331970, 0x4
+.global $$21258_1
+$$21258_1:
+	.incbin "baserom.dol", 0x331974, 0x4
+.global $$21259
+$$21259:
+	.incbin "baserom.dol", 0x331978, 0x4
+.global $$21260_0
+$$21260_0:
+	.incbin "baserom.dol", 0x33197C, 0x4
+.global $$21261_1
+$$21261_1:
+	.incbin "baserom.dol", 0x331980, 0x4
+.global $$21262_1
+$$21262_1:
+	.incbin "baserom.dol", 0x331984, 0x4
+.global $$21263_2
+$$21263_2:
+	.incbin "baserom.dol", 0x331988, 0x4
+.global $$21278
+$$21278:
+	.incbin "baserom.dol", 0x33198C, 0x4
+.global $$21279
+$$21279:
+	.incbin "baserom.dol", 0x331990, 0x4
+.global $$21289_1
+$$21289_1:
+	.incbin "baserom.dol", 0x331994, 0x4
+.global $$21290_0
+$$21290_0:
+	.incbin "baserom.dol", 0x331998, 0x4
+.global $$21291_1
+$$21291_1:
+	.incbin "baserom.dol", 0x33199C, 0x4
+.global $$21333_2
+$$21333_2:
+	.incbin "baserom.dol", 0x3319A0, 0x4
+.global $$21338_0
+$$21338_0:
+	.incbin "baserom.dol", 0x3319A4, 0x4
+.global $$21351_0
+$$21351_0:
+	.incbin "baserom.dol", 0x3319A8, 0x4
+.global $$21386_2
+$$21386_2:
+	.incbin "baserom.dol", 0x3319AC, 0x4
+.global $$21391_3
+$$21391_3:
+	.incbin "baserom.dol", 0x3319B0, 0x4
+.global $$21392_3
+$$21392_3:
+	.incbin "baserom.dol", 0x3319B4, 0x4
+
 .section .text
 
 .global shield_event_wrapper__31$$2unnamed$$2zNPCMeleeShielded_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

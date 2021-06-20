@@ -21,6 +21,42 @@ next_1:
 left:
 	.incbin "baserom.dol", 0x32B388, 0x8
 
+.section .sdata2
+
+.global $$2641
+$$2641:
+	.incbin "baserom.dol", 0x32F290, 0x4
+.global lbl_803D28D4
+lbl_803D28D4:
+	.incbin "baserom.dol", 0x32F294, 0x4
+.global lbl_803D28D8
+lbl_803D28D8:
+	.incbin "baserom.dol", 0x32F298, 0x4
+.global lbl_803D28DC
+lbl_803D28DC:
+	.incbin "baserom.dol", 0x32F29C, 0x4
+.global $$2688
+$$2688:
+	.incbin "baserom.dol", 0x32F2A0, 0x8
+.global $$2690
+$$2690:
+	.incbin "baserom.dol", 0x32F2A8, 0x8
+.global $$2787
+$$2787:
+	.incbin "baserom.dol", 0x32F2B0, 0x4
+.global $$2788_0
+$$2788_0:
+	.incbin "baserom.dol", 0x32F2B4, 0x4
+.global $$2789
+$$2789:
+	.incbin "baserom.dol", 0x32F2B8, 0x4
+.global $$2790
+$$2790:
+	.incbin "baserom.dol", 0x32F2BC, 0x4
+.global $$2792
+$$2792:
+	.incbin "baserom.dol", 0x32F2C0, 0x8
+
 .section .text
 
 .global init_genrand__FUi

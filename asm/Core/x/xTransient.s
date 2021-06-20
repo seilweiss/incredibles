@@ -6,6 +6,15 @@
 space_tree__10xTransient:
 	.skip 0xD0
 
+.section .sdata2
+
+.global $$2848_1
+$$2848_1:
+	.incbin "baserom.dol", 0x32F6A0, 0x4
+.global $$2849_0
+$$2849_0:
+	.incbin "baserom.dol", 0x32F6A4, 0x4
+
 .section .text
 
 .global scene_enter__10xTransientFRC4xBox

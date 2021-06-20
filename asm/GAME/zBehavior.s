@@ -9,6 +9,15 @@ __vt__8behavior:
 __vt__16behavior_manager:
 	.incbin "baserom.dol", 0x30E788, 0x50
 
+.section .sdata2
+
+.global $$2905_1
+$$2905_1:
+	.incbin "baserom.dol", 0x332798, 0x4
+.global $$21168_1
+$$21168_1:
+	.incbin "baserom.dol", 0x33279C, 0x4
+
 .section .text
 
 .global ErrorCB__FP15xAnimTransitionP11xAnimSinglePv

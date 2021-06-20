@@ -27,6 +27,21 @@ sManagerCount:
 sLODFadeDistance:
 	.incbin "baserom.dol", 0x32C178, 0x8
 
+.section .sdata2
+
+.global $$21003_1
+$$21003_1:
+	.incbin "baserom.dol", 0x330AD0, 0x4
+.global $$21004_0
+$$21004_0:
+	.incbin "baserom.dol", 0x330AD4, 0x4
+.global $$21005_0
+$$21005_0:
+	.incbin "baserom.dol", 0x330AD8, 0x4
+.global $$21012_4
+$$21012_4:
+	.incbin "baserom.dol", 0x330ADC, 0x4
+
 .section .text
 
 .global AddToLODList__FP4xEnt

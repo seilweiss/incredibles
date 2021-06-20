@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2893
+$$2893:
+	.incbin "baserom.dol", 0x32F6E8, 0x8
+
 .section .text
 
 .global xUpdateCull_Swap__FP14xUpdateCullMgrUiUi

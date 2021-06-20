@@ -21,6 +21,24 @@ curr_content_playerID:
 texture_scene_loaded__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2:
 	.skip 0xC
 
+.section .sdata2
+
+.global battle_player_default__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2
+battle_player_default__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x333E00, 0x20
+.global $$21012_8
+$$21012_8:
+	.incbin "baserom.dol", 0x333E20, 0x4
+.global lbl_803D7464
+lbl_803D7464:
+	.incbin "baserom.dol", 0x333E24, 0x4
+.global lbl_803D7468
+lbl_803D7468:
+	.incbin "baserom.dol", 0x333E28, 0x4
+.global lbl_803D746C
+lbl_803D746C:
+	.incbin "baserom.dol", 0x333E2C, 0x4
+
 .section .text
 
 .global zSystemMsgUIEnterScene__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2FP3zUIP3zUIUi

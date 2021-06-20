@@ -378,6 +378,798 @@ __vt__Q217zNPCBossOmnidroid10state_type:
 __vt__Q217zNPCBossOmnidroid17death_action_type:
 	.incbin "baserom.dol", 0x32CBF0, 0x38
 
+.section .sdata2
+
+.global $$21222
+$$21222:
+	.incbin "baserom.dol", 0x330F90, 0x4
+.global $$21223
+$$21223:
+	.incbin "baserom.dol", 0x330F94, 0x4
+.global scale__Q231$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak
+scale__Q231$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak:
+	.incbin "baserom.dol", 0x330F98, 0x8
+.global max_health__Q231$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak
+max_health__Q231$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak:
+	.incbin "baserom.dol", 0x330FA0, 0x8
+.global use_simple_shadow__Q231$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak
+use_simple_shadow__Q231$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak:
+	.incbin "baserom.dol", 0x330FA8, 0x4
+.global play_death_animation__Q231$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak
+play_death_animation__Q231$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak:
+	.incbin "baserom.dol", 0x330FAC, 0x4
+.global props__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak4lava4burn
+props__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak4lava4burn:
+	.incbin "baserom.dol", 0x330FB0, 0xC
+.global offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision4body
+offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision4body:
+	.incbin "baserom.dol", 0x330FBC, 0xC
+.global offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision4head
+offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision4head:
+	.incbin "baserom.dol", 0x330FC8, 0x18
+.global segment_width__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision3leg
+segment_width__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision3leg:
+	.incbin "baserom.dol", 0x330FE0, 0x18
+.global segment_height__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision3leg
+segment_height__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision3leg:
+	.incbin "baserom.dol", 0x330FF8, 0x18
+.global scale__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision4claw
+scale__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision4claw:
+	.incbin "baserom.dol", 0x331010, 0xC
+.global offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision4claw
+offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision4claw:
+	.incbin "baserom.dol", 0x33101C, 0xC
+.global rotate__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision4claw
+rotate__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9collision4claw:
+	.incbin "baserom.dol", 0x331028, 0x30
+.global eye_offset__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads
+eye_offset__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads:
+	.incbin "baserom.dol", 0x331058, 0xC
+.global eye_surface_offset__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads
+eye_surface_offset__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads:
+	.incbin "baserom.dol", 0x331064, 0xC
+.global target_dist_min__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads
+target_dist_min__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads:
+	.incbin "baserom.dol", 0x331070, 0x8
+.global eye_bone__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads
+eye_bone__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads:
+	.incbin "baserom.dol", 0x331078, 0x8
+.global offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads5flare
+offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads5flare:
+	.incbin "baserom.dol", 0x331080, 0xC
+.global first_bone__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak4legs
+first_bone__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak4legs:
+	.incbin "baserom.dol", 0x33108C, 0x14
+.global target_offset__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak4legs
+target_offset__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak4legs:
+	.incbin "baserom.dol", 0x3310A0, 0xC
+.global damage_offset__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs
+damage_offset__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs:
+	.incbin "baserom.dol", 0x3310AC, 0x4
+.global lbl_803D46F0
+lbl_803D46F0:
+	.incbin "baserom.dol", 0x3310B0, 0x4
+.global lbl_803D46F4
+lbl_803D46F4:
+	.incbin "baserom.dol", 0x3310B4, 0x4
+.global offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs9blur_spin
+offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs9blur_spin:
+	.incbin "baserom.dol", 0x3310B8, 0x4
+.global lbl_803D46FC
+lbl_803D46FC:
+	.incbin "baserom.dol", 0x3310BC, 0x4
+.global lbl_803D4700
+lbl_803D4700:
+	.incbin "baserom.dol", 0x3310C0, 0x4
+.global offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs13ribbon_center
+offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs13ribbon_center:
+	.incbin "baserom.dol", 0x3310C4, 0x4
+.global lbl_803D4708
+lbl_803D4708:
+	.incbin "baserom.dol", 0x3310C8, 0x4
+.global lbl_803D470C
+lbl_803D470C:
+	.incbin "baserom.dol", 0x3310CC, 0x4
+.global curve__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs13ribbon_center
+curve__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs13ribbon_center:
+	.incbin "baserom.dol", 0x3310D0, 0x24
+.global offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs11ribbon_wake
+offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs11ribbon_wake:
+	.incbin "baserom.dol", 0x3310F4, 0xC
+.global curve__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs11ribbon_wake
+curve__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs11ribbon_wake:
+	.incbin "baserom.dol", 0x331100, 0x24
+.global shrap_models__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak12rubble_chunk
+shrap_models__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak12rubble_chunk:
+	.incbin "baserom.dol", 0x331124, 0xC
+.global scale__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb
+scale__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb:
+	.incbin "baserom.dol", 0x331130, 0x8
+.global shrap_models__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb
+shrap_models__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb:
+	.incbin "baserom.dol", 0x331138, 0xC
+.global debris_models__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb
+debris_models__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak11rubble_bomb:
+	.incbin "baserom.dol", 0x331144, 0x8
+.global curve1__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak12impact_decal
+curve1__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak12impact_decal:
+	.incbin "baserom.dol", 0x33114C, 0x38
+.global cfg__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak12impact_decal
+cfg__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak12impact_decal:
+	.incbin "baserom.dol", 0x331184, 0x38
+.global min_dist__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4jump
+min_dist__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4jump:
+	.incbin "baserom.dol", 0x3311BC, 0x8
+.global away_dist__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4jump
+away_dist__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4jump:
+	.incbin "baserom.dol", 0x3311C4, 0x8
+.global lifetime__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state7dervish4blur
+lifetime__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state7dervish4blur:
+	.incbin "baserom.dol", 0x3311CC, 0x8
+.global squeesh__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4ball
+squeesh__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4ball:
+	.incbin "baserom.dol", 0x3311D4, 0x18
+.global lifetime__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4ball4blur
+lifetime__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4ball4blur:
+	.incbin "baserom.dol", 0x3311EC, 0x8
+.global rock_offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock
+rock_offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock:
+	.incbin "baserom.dol", 0x3311F4, 0xC
+.global cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock10smash_ring
+cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock10smash_ring:
+	.incbin "baserom.dol", 0x331200, 0x34
+.global shrap_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock4grab
+shrap_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock4grab:
+	.incbin "baserom.dol", 0x331234, 0x28
+.global debris_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock4grab
+debris_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock4grab:
+	.incbin "baserom.dol", 0x33125C, 0x10
+.global puff_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock4grab
+puff_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock4grab:
+	.incbin "baserom.dol", 0x33126C, 0x10
+.global trail_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock4grab
+trail_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10smash_rock4grab:
+	.incbin "baserom.dol", 0x33127C, 0x10
+.global rock_offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock
+rock_offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock:
+	.incbin "baserom.dol", 0x33128C, 0xC
+.global cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock10smash_ring
+cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock10smash_ring:
+	.incbin "baserom.dol", 0x331298, 0x34
+.global shrap_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock4grab
+shrap_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock4grab:
+	.incbin "baserom.dol", 0x3312CC, 0x28
+.global debris_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock4grab
+debris_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock4grab:
+	.incbin "baserom.dol", 0x3312F4, 0x10
+.global puff_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock4grab
+puff_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock4grab:
+	.incbin "baserom.dol", 0x331304, 0x10
+.global trail_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock4grab
+trail_rate_curve__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10throw_rock4grab:
+	.incbin "baserom.dol", 0x331314, 0x10
+.global end_dist__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4beam
+end_dist__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4beam:
+	.incbin "baserom.dol", 0x331324, 0x8
+.global launch_radius__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4beam
+launch_radius__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4beam:
+	.incbin "baserom.dol", 0x33132C, 0x8
+.global offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4bolt
+offset__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state4bolt:
+	.incbin "baserom.dol", 0x331334, 0xC
+.global variant_phases
+variant_phases:
+	.incbin "baserom.dol", 0x331340, 0x8
+.global $$21383_1
+$$21383_1:
+	.incbin "baserom.dol", 0x331348, 0x4
+.global $$21428_0
+$$21428_0:
+	.incbin "baserom.dol", 0x33134C, 0x4
+.global $$21429_1
+$$21429_1:
+	.incbin "baserom.dol", 0x331350, 0x8
+.global $$21431
+$$21431:
+	.incbin "baserom.dol", 0x331358, 0x8
+.global $$21438_0
+$$21438_0:
+	.incbin "baserom.dol", 0x331360, 0x4
+.global $$21439_0
+$$21439_0:
+	.incbin "baserom.dol", 0x331364, 0x4
+.global $$21441_1
+$$21441_1:
+	.incbin "baserom.dol", 0x331368, 0x4
+.global $$21448_0
+$$21448_0:
+	.incbin "baserom.dol", 0x33136C, 0x4
+.global $$21488
+$$21488:
+	.incbin "baserom.dol", 0x331370, 0x8
+.global $$21569
+$$21569:
+	.incbin "baserom.dol", 0x331378, 0x4
+.global $$21659_1
+$$21659_1:
+	.incbin "baserom.dol", 0x33137C, 0x4
+.global $$21660_1
+$$21660_1:
+	.incbin "baserom.dol", 0x331380, 0x4
+.global $$21661_0
+$$21661_0:
+	.incbin "baserom.dol", 0x331384, 0x4
+.global $$21982_0
+$$21982_0:
+	.incbin "baserom.dol", 0x331388, 0x4
+.global $$22015_1
+$$22015_1:
+	.incbin "baserom.dol", 0x33138C, 0x4
+.global $$22016_0
+$$22016_0:
+	.incbin "baserom.dol", 0x331390, 0x4
+.global $$22017
+$$22017:
+	.incbin "baserom.dol", 0x331394, 0x4
+.global $$22040_0
+$$22040_0:
+	.incbin "baserom.dol", 0x331398, 0x4
+.global $$22068
+$$22068:
+	.incbin "baserom.dol", 0x33139C, 0x4
+.global $$22069
+$$22069:
+	.incbin "baserom.dol", 0x3313A0, 0x4
+.global $$22146
+$$22146:
+	.incbin "baserom.dol", 0x3313A4, 0x4
+.global $$22275
+$$22275:
+	.incbin "baserom.dol", 0x3313A8, 0x4
+.global $$22352_0
+$$22352_0:
+	.incbin "baserom.dol", 0x3313AC, 0x4
+.global $$22353_0
+$$22353_0:
+	.incbin "baserom.dol", 0x3313B0, 0x4
+.global $$22396
+$$22396:
+	.incbin "baserom.dol", 0x3313B4, 0x4
+.global $$22481
+$$22481:
+	.incbin "baserom.dol", 0x3313B8, 0x4
+.global $$22532
+$$22532:
+	.incbin "baserom.dol", 0x3313BC, 0x4
+.global $$22609
+$$22609:
+	.incbin "baserom.dol", 0x3313C0, 0x4
+.global $$22824
+$$22824:
+	.incbin "baserom.dol", 0x3313C4, 0x4
+.global $$22843
+$$22843:
+	.incbin "baserom.dol", 0x3313C8, 0x4
+.global $$22844
+$$22844:
+	.incbin "baserom.dol", 0x3313CC, 0x4
+.global $$22845
+$$22845:
+	.incbin "baserom.dol", 0x3313D0, 0x4
+.global $$22850
+$$22850:
+	.incbin "baserom.dol", 0x3313D4, 0x4
+.global health_pickup_types$3007
+health_pickup_types$3007:
+	.incbin "baserom.dol", 0x3313D8, 0x18
+.global power_pickup_types$3008
+power_pickup_types$3008:
+	.incbin "baserom.dol", 0x3313F0, 0x18
+.global $$23014
+$$23014:
+	.incbin "baserom.dol", 0x331408, 0x4
+.global $$23015
+$$23015:
+	.incbin "baserom.dol", 0x33140C, 0x4
+.global $$23016
+$$23016:
+	.incbin "baserom.dol", 0x331410, 0x4
+.global $$23017
+$$23017:
+	.incbin "baserom.dol", 0x331414, 0x4
+.global $$23018
+$$23018:
+	.incbin "baserom.dol", 0x331418, 0x4
+.global $$23019
+$$23019:
+	.incbin "baserom.dol", 0x33141C, 0x4
+.global $$23020
+$$23020:
+	.incbin "baserom.dol", 0x331420, 0x4
+.global $$23021
+$$23021:
+	.incbin "baserom.dol", 0x331424, 0x4
+.global $$23022
+$$23022:
+	.incbin "baserom.dol", 0x331428, 0x4
+.global $$23023
+$$23023:
+	.incbin "baserom.dol", 0x33142C, 0x4
+.global $$23024
+$$23024:
+	.incbin "baserom.dol", 0x331430, 0x4
+.global $$23025
+$$23025:
+	.incbin "baserom.dol", 0x331434, 0x4
+.global trail_curve$3034
+trail_curve$3034:
+	.incbin "baserom.dol", 0x331438, 0x18
+.global $$23037
+$$23037:
+	.incbin "baserom.dol", 0x331450, 0x4
+.global $$23038
+$$23038:
+	.incbin "baserom.dol", 0x331454, 0x4
+.global $$23039
+$$23039:
+	.incbin "baserom.dol", 0x331458, 0x4
+.global $$23040_0
+$$23040_0:
+	.incbin "baserom.dol", 0x33145C, 0x4
+.global $$23049
+$$23049:
+	.incbin "baserom.dol", 0x331460, 0x4
+.global $$23050
+$$23050:
+	.incbin "baserom.dol", 0x331464, 0x4
+.global $$23051
+$$23051:
+	.incbin "baserom.dol", 0x331468, 0x4
+.global $$23052
+$$23052:
+	.incbin "baserom.dol", 0x33146C, 0x4
+.global $$23053
+$$23053:
+	.incbin "baserom.dol", 0x331470, 0x4
+.global $$23065
+$$23065:
+	.incbin "baserom.dol", 0x331474, 0x4
+.global $$23066
+$$23066:
+	.incbin "baserom.dol", 0x331478, 0x4
+.global $$23117
+$$23117:
+	.incbin "baserom.dol", 0x33147C, 0x4
+.global $$23136
+$$23136:
+	.incbin "baserom.dol", 0x331480, 0x4
+.global $$23187
+$$23187:
+	.incbin "baserom.dol", 0x331484, 0x4
+.global $$23188
+$$23188:
+	.incbin "baserom.dol", 0x331488, 0x4
+.global $$23189
+$$23189:
+	.incbin "baserom.dol", 0x33148C, 0x4
+.global $$23190
+$$23190:
+	.incbin "baserom.dol", 0x331490, 0x4
+.global $$23191
+$$23191:
+	.incbin "baserom.dol", 0x331494, 0x4
+.global $$23192
+$$23192:
+	.incbin "baserom.dol", 0x331498, 0x4
+.global $$23193
+$$23193:
+	.incbin "baserom.dol", 0x33149C, 0x4
+.global $$23313_0
+$$23313_0:
+	.incbin "baserom.dol", 0x3314A0, 0x4
+.global $$23314
+$$23314:
+	.incbin "baserom.dol", 0x3314A4, 0x4
+.global $$23315
+$$23315:
+	.incbin "baserom.dol", 0x3314A8, 0x4
+.global $$23364_0
+$$23364_0:
+	.incbin "baserom.dol", 0x3314AC, 0x4
+.global $$23428
+$$23428:
+	.incbin "baserom.dol", 0x3314B0, 0x4
+.global $$23552_0
+$$23552_0:
+	.incbin "baserom.dol", 0x3314B4, 0x4
+.global $$23560_0
+$$23560_0:
+	.incbin "baserom.dol", 0x3314B8, 0x4
+.global $$23580
+$$23580:
+	.incbin "baserom.dol", 0x3314BC, 0x4
+.global $$23585
+$$23585:
+	.incbin "baserom.dol", 0x3314C0, 0x4
+.global curve_top$3831
+curve_top$3831:
+	.incbin "baserom.dol", 0x3314C4, 0x1C
+.global lbl_803D4B20
+lbl_803D4B20:
+	.incbin "baserom.dol", 0x3314E0, 0x4
+.global curve_bottom$3833
+curve_bottom$3833:
+	.incbin "baserom.dol", 0x3314E4, 0x1C
+.global lbl_803D4B40
+lbl_803D4B40:
+	.incbin "baserom.dol", 0x331500, 0x4
+.global card_pos$3960
+card_pos$3960:
+	.incbin "baserom.dol", 0x331504, 0x30
+.global card_uv$3961
+card_uv$3961:
+	.incbin "baserom.dol", 0x331534, 0x20
+.global $$23966
+$$23966:
+	.incbin "baserom.dol", 0x331554, 0x4
+.global $$23978
+$$23978:
+	.incbin "baserom.dol", 0x331558, 0x4
+.global $$24069
+$$24069:
+	.incbin "baserom.dol", 0x33155C, 0x4
+.global $$24070
+$$24070:
+	.incbin "baserom.dol", 0x331560, 0x4
+.global $$24071
+$$24071:
+	.incbin "baserom.dol", 0x331564, 0x4
+.global $$24271
+$$24271:
+	.incbin "baserom.dol", 0x331568, 0x4
+.global $$24406
+$$24406:
+	.incbin "baserom.dol", 0x33156C, 0x4
+.global $$24407
+$$24407:
+	.incbin "baserom.dol", 0x331570, 0x4
+.global $$24408
+$$24408:
+	.incbin "baserom.dol", 0x331574, 0x4
+.global $$24409
+$$24409:
+	.incbin "baserom.dol", 0x331578, 0x4
+.global $$24410
+$$24410:
+	.incbin "baserom.dol", 0x33157C, 0x4
+.global $$24411
+$$24411:
+	.incbin "baserom.dol", 0x331580, 0x4
+.global $$24412
+$$24412:
+	.incbin "baserom.dol", 0x331584, 0x4
+.global $$24413
+$$24413:
+	.incbin "baserom.dol", 0x331588, 0x4
+.global $$24414
+$$24414:
+	.incbin "baserom.dol", 0x33158C, 0x4
+.global $$24415
+$$24415:
+	.incbin "baserom.dol", 0x331590, 0x4
+.global $$24416
+$$24416:
+	.incbin "baserom.dol", 0x331594, 0x4
+.global $$24532
+$$24532:
+	.incbin "baserom.dol", 0x331598, 0x4
+.global $$24533
+$$24533:
+	.incbin "baserom.dol", 0x33159C, 0x4
+.global $$24550
+$$24550:
+	.incbin "baserom.dol", 0x3315A0, 0x4
+.global $$24660
+$$24660:
+	.incbin "baserom.dol", 0x3315A4, 0x4
+.global $$24661
+$$24661:
+	.incbin "baserom.dol", 0x3315A8, 0x4
+.global $$24702
+$$24702:
+	.incbin "baserom.dol", 0x3315AC, 0x4
+.global $$24716
+$$24716:
+	.incbin "baserom.dol", 0x3315B0, 0x4
+.global $$24729
+$$24729:
+	.incbin "baserom.dol", 0x3315B4, 0x4
+.global $$24781
+$$24781:
+	.incbin "baserom.dol", 0x3315B8, 0x4
+.global $$24810
+$$24810:
+	.incbin "baserom.dol", 0x3315BC, 0x4
+.global $$24822
+$$24822:
+	.incbin "baserom.dol", 0x3315C0, 0x4
+.global $$24835
+$$24835:
+	.incbin "baserom.dol", 0x3315C4, 0x4
+.global $$24836
+$$24836:
+	.incbin "baserom.dol", 0x3315C8, 0x4
+.global $$24837
+$$24837:
+	.incbin "baserom.dol", 0x3315CC, 0x4
+.global $$24900
+$$24900:
+	.incbin "baserom.dol", 0x3315D0, 0x4
+.global $$24913
+$$24913:
+	.incbin "baserom.dol", 0x3315D4, 0x4
+.global $$24914
+$$24914:
+	.incbin "baserom.dol", 0x3315D8, 0x4
+.global $$24922
+$$24922:
+	.incbin "baserom.dol", 0x3315DC, 0x4
+.global $$24923
+$$24923:
+	.incbin "baserom.dol", 0x3315E0, 0x4
+.global $$24931
+$$24931:
+	.incbin "baserom.dol", 0x3315E4, 0x4
+.global $$24932
+$$24932:
+	.incbin "baserom.dol", 0x3315E8, 0x4
+.global $$24933
+$$24933:
+	.incbin "baserom.dol", 0x3315EC, 0x4
+.global $$24979
+$$24979:
+	.incbin "baserom.dol", 0x3315F0, 0x4
+.global $$24980
+$$24980:
+	.incbin "baserom.dol", 0x3315F4, 0x4
+.global $$24981
+$$24981:
+	.incbin "baserom.dol", 0x3315F8, 0x4
+.global $$25006
+$$25006:
+	.incbin "baserom.dol", 0x3315FC, 0x4
+.global $$25051
+$$25051:
+	.incbin "baserom.dol", 0x331600, 0x4
+.global $$25112
+$$25112:
+	.incbin "baserom.dol", 0x331604, 0x4
+.global $$25113
+$$25113:
+	.incbin "baserom.dol", 0x331608, 0x4
+.global $$25154
+$$25154:
+	.incbin "baserom.dol", 0x33160C, 0x4
+.global $$25176
+$$25176:
+	.incbin "baserom.dol", 0x331610, 0x4
+.global $$25218
+$$25218:
+	.incbin "baserom.dol", 0x331614, 0x4
+.global lbl_803D4C58
+lbl_803D4C58:
+	.incbin "baserom.dol", 0x331618, 0x4
+.global lbl_803D4C5C
+lbl_803D4C5C:
+	.incbin "baserom.dol", 0x33161C, 0x4
+.global $$25234
+$$25234:
+	.incbin "baserom.dol", 0x331620, 0x4
+.global $$25235
+$$25235:
+	.incbin "baserom.dol", 0x331624, 0x4
+.global $$25278
+$$25278:
+	.incbin "baserom.dol", 0x331628, 0x4
+.global $$25279
+$$25279:
+	.incbin "baserom.dol", 0x33162C, 0x4
+.global $$25317
+$$25317:
+	.incbin "baserom.dol", 0x331630, 0x4
+.global $$25318
+$$25318:
+	.incbin "baserom.dol", 0x331634, 0x4
+.global $$25319
+$$25319:
+	.incbin "baserom.dol", 0x331638, 0x4
+.global $$25320
+$$25320:
+	.incbin "baserom.dol", 0x33163C, 0x4
+.global $$25321
+$$25321:
+	.incbin "baserom.dol", 0x331640, 0x4
+.global $$25322
+$$25322:
+	.incbin "baserom.dol", 0x331644, 0x4
+.global $$25359
+$$25359:
+	.incbin "baserom.dol", 0x331648, 0x4
+.global $$25400
+$$25400:
+	.incbin "baserom.dol", 0x33164C, 0x4
+.global $$25479
+$$25479:
+	.incbin "baserom.dol", 0x331650, 0x4
+.global $$25480
+$$25480:
+	.incbin "baserom.dol", 0x331654, 0x4
+.global $$25497
+$$25497:
+	.incbin "baserom.dol", 0x331658, 0x4
+.global $$25498
+$$25498:
+	.incbin "baserom.dol", 0x33165C, 0x4
+.global $$25539
+$$25539:
+	.incbin "baserom.dol", 0x331660, 0x4
+.global $$25540
+$$25540:
+	.incbin "baserom.dol", 0x331664, 0x4
+.global $$25541
+$$25541:
+	.incbin "baserom.dol", 0x331668, 0x4
+.global $$25565
+$$25565:
+	.incbin "baserom.dol", 0x33166C, 0x4
+.global $$25566
+$$25566:
+	.incbin "baserom.dol", 0x331670, 0x4
+.global $$25567
+$$25567:
+	.incbin "baserom.dol", 0x331674, 0x4
+.global $$25568
+$$25568:
+	.incbin "baserom.dol", 0x331678, 0x4
+.global $$25569
+$$25569:
+	.incbin "baserom.dol", 0x33167C, 0x4
+.global $$25607
+$$25607:
+	.incbin "baserom.dol", 0x331680, 0x4
+.global $$25804
+$$25804:
+	.incbin "baserom.dol", 0x331684, 0x4
+.global $$25805
+$$25805:
+	.incbin "baserom.dol", 0x331688, 0x4
+.global $$25813
+$$25813:
+	.incbin "baserom.dol", 0x33168C, 0x4
+.global $$25842
+$$25842:
+	.incbin "baserom.dol", 0x331690, 0x4
+.global $$25858
+$$25858:
+	.incbin "baserom.dol", 0x331694, 0x4
+.global $$25859
+$$25859:
+	.incbin "baserom.dol", 0x331698, 0x4
+.global $$25889
+$$25889:
+	.incbin "baserom.dol", 0x33169C, 0x4
+.global $$25907
+$$25907:
+	.incbin "baserom.dol", 0x3316A0, 0x4
+.global $$26004
+$$26004:
+	.incbin "baserom.dol", 0x3316A4, 0x4
+.global $$26005
+$$26005:
+	.incbin "baserom.dol", 0x3316A8, 0x4
+.global $$26006
+$$26006:
+	.incbin "baserom.dol", 0x3316AC, 0x4
+.global zero$6017
+zero$6017:
+	.incbin "baserom.dol", 0x3316B0, 0x4
+.global $$26032
+$$26032:
+	.incbin "baserom.dol", 0x3316B4, 0x4
+.global $$26098
+$$26098:
+	.incbin "baserom.dol", 0x3316B8, 0x4
+.global $$26099
+$$26099:
+	.incbin "baserom.dol", 0x3316BC, 0x4
+.global $$26122
+$$26122:
+	.incbin "baserom.dol", 0x3316C0, 0x4
+.global $$26182
+$$26182:
+	.incbin "baserom.dol", 0x3316C4, 0x4
+.global $$26208
+$$26208:
+	.incbin "baserom.dol", 0x3316C8, 0x4
+.global $$26209
+$$26209:
+	.incbin "baserom.dol", 0x3316CC, 0x4
+.global $$26210
+$$26210:
+	.incbin "baserom.dol", 0x3316D0, 0x4
+.global $$26215
+$$26215:
+	.incbin "baserom.dol", 0x3316D4, 0x4
+.global $$26261
+$$26261:
+	.incbin "baserom.dol", 0x3316D8, 0x4
+.global $$26262
+$$26262:
+	.incbin "baserom.dol", 0x3316DC, 0x4
+.global $$26300
+$$26300:
+	.incbin "baserom.dol", 0x3316E0, 0x4
+.global $$26477
+$$26477:
+	.incbin "baserom.dol", 0x3316E4, 0x4
+.global flare_nodes$6581
+flare_nodes$6581:
+	.incbin "baserom.dol", 0x3316E8, 0x3C
+.global $$26640
+$$26640:
+	.incbin "baserom.dol", 0x331724, 0x4
+.global $$26868
+$$26868:
+	.incbin "baserom.dol", 0x331728, 0x4
+.global $$26869
+$$26869:
+	.incbin "baserom.dol", 0x33172C, 0x4
+.global flare_nodes$6923
+flare_nodes$6923:
+	.incbin "baserom.dol", 0x331730, 0x28
+.global $$26963
+$$26963:
+	.incbin "baserom.dol", 0x331758, 0x4
+.global $$26964
+$$26964:
+	.incbin "baserom.dol", 0x33175C, 0x4
+.global $$26973
+$$26973:
+	.incbin "baserom.dol", 0x331760, 0x4
+.global $$27002
+$$27002:
+	.incbin "baserom.dol", 0x331764, 0x4
+.global $$27054
+$$27054:
+	.incbin "baserom.dol", 0x331768, 0x4
+.global $$27055
+$$27055:
+	.incbin "baserom.dol", 0x33176C, 0x4
+.global $$27065
+$$27065:
+	.incbin "baserom.dol", 0x331770, 0x4
+.global $$27076
+$$27076:
+	.incbin "baserom.dol", 0x331774, 0x4
+.global $$27096
+$$27096:
+	.incbin "baserom.dol", 0x331778, 0x4
+.global $$27127
+$$27127:
+	.incbin "baserom.dol", 0x33177C, 0x4
+.global $$27128
+$$27128:
+	.incbin "baserom.dol", 0x331780, 0x4
+.global $$27129
+$$27129:
+	.incbin "baserom.dol", 0x331784, 0x4
+.global $$27167
+$$27167:
+	.incbin "baserom.dol", 0x331788, 0x4
+.global $$27564
+$$27564:
+	.incbin "baserom.dol", 0x33178C, 0x4
+
 .section .text
 
 .global shuffle_list__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2FPUii

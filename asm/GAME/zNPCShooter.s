@@ -60,6 +60,84 @@ __vt__252RegisterOnFirstEmitSystem$$0178zParticleEmitterConeVolume$$0147zParticl
 __vt__Q225$$2unnamed$$2zNPCShooter_cpp$$212MuzzleSystem:
 	.incbin "baserom.dol", 0x32CE44, 0xC
 
+.section .sdata2
+
+.global $$21292_0
+$$21292_0:
+	.incbin "baserom.dol", 0x331AB0, 0x4
+.global $$21293
+$$21293:
+	.incbin "baserom.dol", 0x331AB4, 0x4
+.global $$21294
+$$21294:
+	.incbin "baserom.dol", 0x331AB8, 0x4
+.global $$21295_1
+$$21295_1:
+	.incbin "baserom.dol", 0x331ABC, 0x4
+.global $$21296_1
+$$21296_1:
+	.incbin "baserom.dol", 0x331AC0, 0x4
+.global $$21297_1
+$$21297_1:
+	.incbin "baserom.dol", 0x331AC4, 0x4
+.global $$21310_0
+$$21310_0:
+	.incbin "baserom.dol", 0x331AC8, 0x8
+.global $$21313_0
+$$21313_0:
+	.incbin "baserom.dol", 0x331AD0, 0x4
+.global $$21317_1
+$$21317_1:
+	.incbin "baserom.dol", 0x331AD4, 0x4
+.global $$21318_0
+$$21318_0:
+	.incbin "baserom.dol", 0x331AD8, 0x4
+.global $$21319_2
+$$21319_2:
+	.incbin "baserom.dol", 0x331ADC, 0x4
+.global $$21320_1
+$$21320_1:
+	.incbin "baserom.dol", 0x331AE0, 0x4
+.global $$21389_3
+$$21389_3:
+	.incbin "baserom.dol", 0x331AE4, 0x4
+.global $$21420_3
+$$21420_3:
+	.incbin "baserom.dol", 0x331AE8, 0x4
+.global $$21421_4
+$$21421_4:
+	.incbin "baserom.dol", 0x331AEC, 0x4
+.global $$21438_1
+$$21438_1:
+	.incbin "baserom.dol", 0x331AF0, 0x4
+.global $$21439_2
+$$21439_2:
+	.incbin "baserom.dol", 0x331AF4, 0x4
+.global $$21522_4
+$$21522_4:
+	.incbin "baserom.dol", 0x331AF8, 0x4
+.global $$21573
+$$21573:
+	.incbin "baserom.dol", 0x331AFC, 0x4
+.global $$21574
+$$21574:
+	.incbin "baserom.dol", 0x331B00, 0x4
+.global $$21588_0
+$$21588_0:
+	.incbin "baserom.dol", 0x331B04, 0x4
+.global $$21617_0
+$$21617_0:
+	.incbin "baserom.dol", 0x331B08, 0x4
+.global $$21668
+$$21668:
+	.incbin "baserom.dol", 0x331B0C, 0x4
+.global $$21683_0
+$$21683_0:
+	.incbin "baserom.dol", 0x331B10, 0x4
+.global $$21901
+$$21901:
+	.incbin "baserom.dol", 0x331B14, 0x4
+
 .section .text
 
 .global MuzzleFlash_LevelInit__25$$2unnamed$$2zNPCShooter_cpp$$2Fv

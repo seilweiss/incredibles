@@ -27,6 +27,15 @@ atbls:
 anused:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2686
+$$2686:
+	.incbin "baserom.dol", 0x32F9F0, 0x4
+.global $$2687
+$$2687:
+	.incbin "baserom.dol", 0x32F9F4, 0x4
+
 .section .text
 
 .global AlwaysConditional__FP15xAnimTransitionP11xAnimSinglePv

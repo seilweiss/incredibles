@@ -30,6 +30,39 @@ lbl_803D872C:
 lbl_803D8730:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21156
+$$21156:
+	.incbin "baserom.dol", 0x32F010, 0x4
+.global $$21157
+$$21157:
+	.incbin "baserom.dol", 0x32F014, 0x4
+.global $$21158
+$$21158:
+	.incbin "baserom.dol", 0x32F018, 0x4
+.global $$21192
+$$21192:
+	.incbin "baserom.dol", 0x32F01C, 0x4
+.global $$21415
+$$21415:
+	.incbin "baserom.dol", 0x32F020, 0x4
+.global $$21416_0
+$$21416_0:
+	.incbin "baserom.dol", 0x32F024, 0x4
+.global $$21417_0
+$$21417_0:
+	.incbin "baserom.dol", 0x32F028, 0x4
+.global $$21418
+$$21418:
+	.incbin "baserom.dol", 0x32F02C, 0x4
+.global $$21495_0
+$$21495_0:
+	.incbin "baserom.dol", 0x32F030, 0x8
+.global $$21675_0
+$$21675_0:
+	.incbin "baserom.dol", 0x32F038, 0x8
+
 .section .text
 
 .global init__17xLaserBoltEmitterFUlPCcb

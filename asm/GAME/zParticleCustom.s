@@ -18,6 +18,81 @@ system_id__29$$2unnamed$$2zParticleCustom_cpp$$2:
 dust_vel_decay__29$$2unnamed$$2zParticleCustom_cpp$$2:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2954_6
+$$2954_6:
+	.incbin "baserom.dol", 0x333F78, 0x4
+.global $$2955_4
+$$2955_4:
+	.incbin "baserom.dol", 0x333F7C, 0x4
+.global $$21071_3
+$$21071_3:
+	.incbin "baserom.dol", 0x333F80, 0x4
+.global $$21072_0
+$$21072_0:
+	.incbin "baserom.dol", 0x333F84, 0x4
+.global $$21106_1
+$$21106_1:
+	.incbin "baserom.dol", 0x333F88, 0x8
+.global $$21110_2
+$$21110_2:
+	.incbin "baserom.dol", 0x333F90, 0x8
+.global $$21111_2
+$$21111_2:
+	.incbin "baserom.dol", 0x333F98, 0x8
+.global $$21196_0
+$$21196_0:
+	.incbin "baserom.dol", 0x333FA0, 0x4
+.global $$21197_0
+$$21197_0:
+	.incbin "baserom.dol", 0x333FA4, 0x4
+.global $$21320_3
+$$21320_3:
+	.incbin "baserom.dol", 0x333FA8, 0x4
+.global $$21321_2
+$$21321_2:
+	.incbin "baserom.dol", 0x333FAC, 0x4
+.global $$21322_0
+$$21322_0:
+	.incbin "baserom.dol", 0x333FB0, 0x4
+.global $$21323_1
+$$21323_1:
+	.incbin "baserom.dol", 0x333FB4, 0x4
+.global $$21356_4
+$$21356_4:
+	.incbin "baserom.dol", 0x333FB8, 0x4
+.global $$21434_0
+$$21434_0:
+	.incbin "baserom.dol", 0x333FBC, 0x4
+.global $$21435_0
+$$21435_0:
+	.incbin "baserom.dol", 0x333FC0, 0x4
+.global $$21436_1
+$$21436_1:
+	.incbin "baserom.dol", 0x333FC4, 0x4
+.global $$21437_1
+$$21437_1:
+	.incbin "baserom.dol", 0x333FC8, 0x4
+.global $$21438_3
+$$21438_3:
+	.incbin "baserom.dol", 0x333FCC, 0x4
+.global $$21474_3
+$$21474_3:
+	.incbin "baserom.dol", 0x333FD0, 0x4
+.global $$21475
+$$21475:
+	.incbin "baserom.dol", 0x333FD4, 0x4
+.global $$21559_1
+$$21559_1:
+	.incbin "baserom.dol", 0x333FD8, 0x4
+.global $$21560_3
+$$21560_3:
+	.incbin "baserom.dol", 0x333FDC, 0x4
+.global $$21561_0
+$$21561_0:
+	.incbin "baserom.dol", 0x333FE0, 0x8
+
 .section .text
 
 .global add_tweaks__Q229$$2unnamed$$2zParticleCustom_cpp$$25tweakFv

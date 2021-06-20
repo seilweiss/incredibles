@@ -39,6 +39,33 @@ lbl_803D8938:
 lbl_803D893C:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$21000_2
+$$21000_2:
+	.incbin "baserom.dol", 0x32F7F0, 0x4
+.global lbl_803D2E34
+lbl_803D2E34:
+	.incbin "baserom.dol", 0x32F7F4, 0x4
+.global $$21157_0
+$$21157_0:
+	.incbin "baserom.dol", 0x32F7F8, 0x4
+.global $$21158_1
+$$21158_1:
+	.incbin "baserom.dol", 0x32F7FC, 0x4
+.global $$21159
+$$21159:
+	.incbin "baserom.dol", 0x32F800, 0x4
+.global $$21160_0
+$$21160_0:
+	.incbin "baserom.dol", 0x32F804, 0x4
+.global $$21163_0
+$$21163_0:
+	.incbin "baserom.dol", 0x32F808, 0x8
+.global $$21167
+$$21167:
+	.incbin "baserom.dol", 0x32F810, 0x8
+
 .section .text
 
 .global BigMovieAlloc__FUi

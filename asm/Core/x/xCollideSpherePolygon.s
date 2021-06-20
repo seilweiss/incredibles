@@ -1,5 +1,29 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2662
+$$2662:
+	.incbin "baserom.dol", 0x3323B8, 0x4
+.global $$2663
+$$2663:
+	.incbin "baserom.dol", 0x3323BC, 0x4
+.global $$2672
+$$2672:
+	.incbin "baserom.dol", 0x3323C0, 0x4
+.global $$2674_0
+$$2674_0:
+	.incbin "baserom.dol", 0x3323C4, 0x4
+.global $$2763
+$$2763:
+	.incbin "baserom.dol", 0x3323C8, 0x4
+.global $$2764
+$$2764:
+	.incbin "baserom.dol", 0x3323CC, 0x4
+.global $$2797
+$$2797:
+	.incbin "baserom.dol", 0x3323D0, 0x4
+
 .section .text
 
 .global xSweptSphereToPoint__FRC12xSweptSphereRC5xVec3R28xCollideSphereToPointResults

@@ -42,6 +42,12 @@ gNumTemporaryLights:
 sDefaultShadowVec:
 	.incbin "baserom.dol", 0x32C140, 0x10
 
+.section .sdata2
+
+.global $$21043_4
+$$21043_4:
+	.incbin "baserom.dol", 0x330A00, 0x8
+
 .section .text
 
 .global zLightResetAll__FP4xEnv

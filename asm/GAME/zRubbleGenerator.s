@@ -30,6 +30,45 @@ rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
 rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$21313_3
+$$21313_3:
+	.incbin "baserom.dol", 0x333A70, 0x4
+.global $$21368_2
+$$21368_2:
+	.incbin "baserom.dol", 0x333A74, 0x4
+.global $$21369_2
+$$21369_2:
+	.incbin "baserom.dol", 0x333A78, 0x4
+.global $$21370_2
+$$21370_2:
+	.incbin "baserom.dol", 0x333A7C, 0x4
+.global $$21371_0
+$$21371_0:
+	.incbin "baserom.dol", 0x333A80, 0x8
+.global $$21376_1
+$$21376_1:
+	.incbin "baserom.dol", 0x333A88, 0x8
+.global $$21393_2
+$$21393_2:
+	.incbin "baserom.dol", 0x333A90, 0x4
+.global $$21463_3
+$$21463_3:
+	.incbin "baserom.dol", 0x333A94, 0x4
+.global $$21464_2
+$$21464_2:
+	.incbin "baserom.dol", 0x333A98, 0x4
+.global $$21833_0
+$$21833_0:
+	.incbin "baserom.dol", 0x333A9C, 0x4
+.global $$21834_0
+$$21834_0:
+	.incbin "baserom.dol", 0x333AA0, 0x4
+.global $$21835_0
+$$21835_0:
+	.incbin "baserom.dol", 0x333AA4, 0x4
+
 .section .text
 
 .global RubbleEventWrapper__30$$2unnamed$$2zRubbleGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

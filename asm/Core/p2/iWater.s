@@ -57,6 +57,69 @@ waterTexID:
 enableWater:
 	.incbin "baserom.dol", 0x32DADC, 0x4
 
+.section .sdata2
+
+.global $$2961_1
+$$2961_1:
+	.incbin "baserom.dol", 0x333838, 0x4
+.global $$2986_0
+$$2986_0:
+	.incbin "baserom.dol", 0x33383C, 0x4
+.global $$2988_2
+$$2988_2:
+	.incbin "baserom.dol", 0x333840, 0x8
+.global $$21013_3
+$$21013_3:
+	.incbin "baserom.dol", 0x333848, 0x4
+.global $$21029_5
+$$21029_5:
+	.incbin "baserom.dol", 0x33384C, 0x4
+.global $$21031_2
+$$21031_2:
+	.incbin "baserom.dol", 0x333850, 0x8
+.global waterHackColor
+waterHackColor:
+	.incbin "baserom.dol", 0x333858, 0x10
+.global $$21162_0
+$$21162_0:
+	.incbin "baserom.dol", 0x333868, 0x4
+.global $$21163_1
+$$21163_1:
+	.incbin "baserom.dol", 0x33386C, 0x4
+.global $$21164_2
+$$21164_2:
+	.incbin "baserom.dol", 0x333870, 0x4
+.global $$21165_1
+$$21165_1:
+	.incbin "baserom.dol", 0x333874, 0x4
+.global $$21166_3
+$$21166_3:
+	.incbin "baserom.dol", 0x333878, 0x4
+.global $$21167_6
+$$21167_6:
+	.incbin "baserom.dol", 0x33387C, 0x4
+.global $$21168_4
+$$21168_4:
+	.incbin "baserom.dol", 0x333880, 0x4
+.global camscale
+camscale:
+	.incbin "baserom.dol", 0x333884, 0xC
+.global $$21261_3
+$$21261_3:
+	.incbin "baserom.dol", 0x333890, 0x4
+.global $$21262_3
+$$21262_3:
+	.incbin "baserom.dol", 0x333894, 0x4
+.global $$21263_5
+$$21263_5:
+	.incbin "baserom.dol", 0x333898, 0x4
+.global NJ02start
+NJ02start:
+	.incbin "baserom.dol", 0x33389C, 0xC
+.global $$21308_1
+$$21308_1:
+	.incbin "baserom.dol", 0x3338A8, 0x4
+
 .section .text
 
 .global CreateDirectionalLight__Fv

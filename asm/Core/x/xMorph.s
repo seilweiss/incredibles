@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2810
+$$2810:
+	.incbin "baserom.dol", 0x32F1B8, 0x8
+.global $$2812_0
+$$2812_0:
+	.incbin "baserom.dol", 0x32F1C0, 0x8
+
 .section .text
 
 .global xMorphSeqSetup__FPvPFUiPc_Pv

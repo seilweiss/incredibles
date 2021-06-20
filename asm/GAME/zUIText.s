@@ -24,6 +24,39 @@ HSCALE__21$$2unnamed$$2zUIText_cpp$$2:
 VSCALE__21$$2unnamed$$2zUIText_cpp$$2:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21051_1
+$$21051_1:
+	.incbin "baserom.dol", 0x332228, 0x4
+.global $$21052_0
+$$21052_0:
+	.incbin "baserom.dol", 0x33222C, 0x4
+.global $$21053_2
+$$21053_2:
+	.incbin "baserom.dol", 0x332230, 0x8
+.global $$21057_2
+$$21057_2:
+	.incbin "baserom.dol", 0x332238, 0x8
+.global $$21122_2
+$$21122_2:
+	.incbin "baserom.dol", 0x332240, 0x4
+.global $$21123_0
+$$21123_0:
+	.incbin "baserom.dol", 0x332244, 0x4
+.global $$21124
+$$21124:
+	.incbin "baserom.dol", 0x332248, 0x4
+.global $$21125_1
+$$21125_1:
+	.incbin "baserom.dol", 0x33224C, 0x4
+.global $$21183_2
+$$21183_2:
+	.incbin "baserom.dol", 0x332250, 0x4
+.global $$21184_2
+$$21184_2:
+	.incbin "baserom.dol", 0x332254, 0x4
+
 .section .text
 
 .global DoInit__7zUITextFv

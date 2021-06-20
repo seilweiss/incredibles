@@ -69,6 +69,48 @@ hdr_down_src:
 sizes:
 	.incbin "baserom.dol", 0x32D2C8, 0x28
 
+.section .sdata2
+
+.global $$21043_5
+$$21043_5:
+	.incbin "baserom.dol", 0x332A88, 0x8
+.global $$21045_1
+$$21045_1:
+	.incbin "baserom.dol", 0x332A90, 0x8
+.global $$21069_5
+$$21069_5:
+	.incbin "baserom.dol", 0x332A98, 0x8
+.global $$21071_1
+$$21071_1:
+	.incbin "baserom.dol", 0x332AA0, 0x8
+.global offsets$1115
+offsets$1115:
+	.incbin "baserom.dol", 0x332AA8, 0x1C
+.global lbl_803D6104
+lbl_803D6104:
+	.incbin "baserom.dol", 0x332AC4, 0x4
+.global $$21116_1
+$$21116_1:
+	.incbin "baserom.dol", 0x332AC8, 0x20
+.global $$21167_4
+$$21167_4:
+	.incbin "baserom.dol", 0x332AE8, 0x4
+.global $$21168_2
+$$21168_2:
+	.incbin "baserom.dol", 0x332AEC, 0x4
+.global $$21169_1
+$$21169_1:
+	.incbin "baserom.dol", 0x332AF0, 0x4
+.global $$21170_1
+$$21170_1:
+	.incbin "baserom.dol", 0x332AF4, 0x4
+.global $$21171_1
+$$21171_1:
+	.incbin "baserom.dol", 0x332AF8, 0x4
+.global $$21207_0
+$$21207_0:
+	.incbin "baserom.dol", 0x332AFC, 0x4
+
 .section .text
 
 .global add_tweaks__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweakFv

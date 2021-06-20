@@ -45,6 +45,90 @@ shootingStateAnims__7zTurret:
 __vt__13zTurretCamera:
 	.incbin "baserom.dol", 0x32D080, 0x28
 
+.section .sdata2
+
+.global $$21307_1
+$$21307_1:
+	.incbin "baserom.dol", 0x3320E8, 0x4
+.global $$21308
+$$21308:
+	.incbin "baserom.dol", 0x3320EC, 0x4
+.global $$21391_4
+$$21391_4:
+	.incbin "baserom.dol", 0x3320F0, 0x4
+.global $$21400_0
+$$21400_0:
+	.incbin "baserom.dol", 0x3320F4, 0x4
+.global $$21401
+$$21401:
+	.incbin "baserom.dol", 0x3320F8, 0x4
+.global $$21402
+$$21402:
+	.incbin "baserom.dol", 0x3320FC, 0x4
+.global $$21404
+$$21404:
+	.incbin "baserom.dol", 0x332100, 0x8
+.global $$21539_0
+$$21539_0:
+	.incbin "baserom.dol", 0x332108, 0x4
+.global $$21540
+$$21540:
+	.incbin "baserom.dol", 0x33210C, 0x4
+.global $$21541
+$$21541:
+	.incbin "baserom.dol", 0x332110, 0x4
+.global $$21542_1
+$$21542_1:
+	.incbin "baserom.dol", 0x332114, 0x4
+.global $$21543_2
+$$21543_2:
+	.incbin "baserom.dol", 0x332118, 0x4
+.global $$21544
+$$21544:
+	.incbin "baserom.dol", 0x33211C, 0x4
+.global $$21591
+$$21591:
+	.incbin "baserom.dol", 0x332120, 0x4
+.global $$21592
+$$21592:
+	.incbin "baserom.dol", 0x332124, 0x4
+.global $$21593_1
+$$21593_1:
+	.incbin "baserom.dol", 0x332128, 0x4
+.global $$21594_0
+$$21594_0:
+	.incbin "baserom.dol", 0x33212C, 0x4
+.global $$21595_0
+$$21595_0:
+	.incbin "baserom.dol", 0x332130, 0x4
+.global $$21654
+$$21654:
+	.incbin "baserom.dol", 0x332134, 0x4
+.global $$21655_2
+$$21655_2:
+	.incbin "baserom.dol", 0x332138, 0x4
+.global $$21753_0
+$$21753_0:
+	.incbin "baserom.dol", 0x33213C, 0x4
+.global $$21754_1
+$$21754_1:
+	.incbin "baserom.dol", 0x332140, 0x4
+.global $$21755_0
+$$21755_0:
+	.incbin "baserom.dol", 0x332144, 0x4
+.global $$21756_0
+$$21756_0:
+	.incbin "baserom.dol", 0x332148, 0x8
+.global $$21758_1
+$$21758_1:
+	.incbin "baserom.dol", 0x332150, 0x8
+.global $$21877
+$$21877:
+	.incbin "baserom.dol", 0x332158, 0x4
+.global $$21878_0
+$$21878_0:
+	.incbin "baserom.dol", 0x33215C, 0x4
+
 .section .text
 
 .global Set2DVertex__21$$2unnamed$$2zTurret_cpp$$2FP18rwGameCube2DVertexffffff

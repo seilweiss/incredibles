@@ -9,6 +9,33 @@ $$2816_1:
 lbl_803D88EC:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2703
+$$2703:
+	.incbin "baserom.dol", 0x32F560, 0x4
+.global $$2704
+$$2704:
+	.incbin "baserom.dol", 0x32F564, 0x4
+.global $$2839_1
+$$2839_1:
+	.incbin "baserom.dol", 0x32F568, 0x4
+.global $$2840_0
+$$2840_0:
+	.incbin "baserom.dol", 0x32F56C, 0x4
+.global $$2841_1
+$$2841_1:
+	.incbin "baserom.dol", 0x32F570, 0x4
+.global $$2842_0
+$$2842_0:
+	.incbin "baserom.dol", 0x32F574, 0x4
+.global $$2844_0
+$$2844_0:
+	.incbin "baserom.dol", 0x32F578, 0x8
+.global $$21011_2
+$$21011_2:
+	.incbin "baserom.dol", 0x32F580, 0x8
+
 .section .text
 
 .global add_tweaks__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$25tweakFv

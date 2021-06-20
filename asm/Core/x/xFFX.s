@@ -30,6 +30,12 @@ rot_match_pool:
 rot_match_alist:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2802
+$$2802:
+	.incbin "baserom.dol", 0x32EB78, 0x8
+
 .section .text
 
 .global xFFXPoolInit__FUi

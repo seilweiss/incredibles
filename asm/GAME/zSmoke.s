@@ -30,6 +30,63 @@ lbl_803D919C:
 lbl_803D91A0:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2981_3
+$$2981_3:
+	.incbin "baserom.dol", 0x332418, 0x4
+.global $$2982_2
+$$2982_2:
+	.incbin "baserom.dol", 0x33241C, 0x4
+.global $$21064_3
+$$21064_3:
+	.incbin "baserom.dol", 0x332420, 0x4
+.global $$21065_3
+$$21065_3:
+	.incbin "baserom.dol", 0x332424, 0x4
+.global $$21066_1
+$$21066_1:
+	.incbin "baserom.dol", 0x332428, 0x8
+.global $$21070_3
+$$21070_3:
+	.incbin "baserom.dol", 0x332430, 0x8
+.global $$21104_1
+$$21104_1:
+	.incbin "baserom.dol", 0x332438, 0x4
+.global $$21105_1
+$$21105_1:
+	.incbin "baserom.dol", 0x33243C, 0x4
+.global $$21117
+$$21117:
+	.incbin "baserom.dol", 0x332440, 0x4
+.global $$21118_0
+$$21118_0:
+	.incbin "baserom.dol", 0x332444, 0x4
+.global $$21119_3
+$$21119_3:
+	.incbin "baserom.dol", 0x332448, 0x4
+.global $$21120_1
+$$21120_1:
+	.incbin "baserom.dol", 0x33244C, 0x4
+.global $$21121_0
+$$21121_0:
+	.incbin "baserom.dol", 0x332450, 0x4
+.global $$21122_3
+$$21122_3:
+	.incbin "baserom.dol", 0x332454, 0x4
+.global $$21123_1
+$$21123_1:
+	.incbin "baserom.dol", 0x332458, 0x4
+.global $$21124_0
+$$21124_0:
+	.incbin "baserom.dol", 0x33245C, 0x4
+.global $$21125_2
+$$21125_2:
+	.incbin "baserom.dol", 0x332460, 0x8
+.global $$21214
+$$21214:
+	.incbin "baserom.dol", 0x332468, 0x8
+
 .section .text
 
 .global update_particles__20$$2unnamed$$2zSmoke_cpp$$2FPUciR10ptank_poolfPv

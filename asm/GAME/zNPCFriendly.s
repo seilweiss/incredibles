@@ -24,6 +24,33 @@ __vt__Q24zNPC4idle:
 $$2stringBase0_76:
 	.incbin "baserom.dol", 0x2DF7F8, 0xC8
 
+.section .sdata2
+
+.global $$21023_2
+$$21023_2:
+	.incbin "baserom.dol", 0x331808, 0x4
+.global $$21028_0
+$$21028_0:
+	.incbin "baserom.dol", 0x33180C, 0x4
+.global $$21036_3
+$$21036_3:
+	.incbin "baserom.dol", 0x331810, 0x4
+.global $$21145_0
+$$21145_0:
+	.incbin "baserom.dol", 0x331814, 0x4
+.global $$21154_0
+$$21154_0:
+	.incbin "baserom.dol", 0x331818, 0x4
+.global $$21186_3
+$$21186_3:
+	.incbin "baserom.dol", 0x33181C, 0x4
+.global $$21187_3
+$$21187_3:
+	.incbin "baserom.dol", 0x331820, 0x4
+.global $$21188_0
+$$21188_0:
+	.incbin "baserom.dol", 0x331824, 0x4
+
 .section .text
 
 .global __ct__Q24zNPC8npc_moveFv

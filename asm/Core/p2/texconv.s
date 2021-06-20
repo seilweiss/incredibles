@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2620
+$$2620:
+	.incbin "baserom.dol", 0x3338F0, 0x4
+.global $$2683_0
+$$2683_0:
+	.incbin "baserom.dol", 0x3338F4, 0x4
+
 .section .text
 
 .global ImageForwardDiff__FP7RwImagef

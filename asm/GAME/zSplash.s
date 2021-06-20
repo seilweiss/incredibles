@@ -93,6 +93,111 @@ texture_key_names__21$$2unnamed$$2zSplash_cpp$$2:
 cone_texture_repeats__21$$2unnamed$$2zSplash_cpp$$2:
 	.incbin "baserom.dol", 0x32D1A0, 0x8
 
+.section .sdata2
+
+.global ini_filename__21$$2unnamed$$2zSplash_cpp$$2
+ini_filename__21$$2unnamed$$2zSplash_cpp$$2:
+	.incbin "baserom.dol", 0x332470, 0xC
+.global $$21063_1
+$$21063_1:
+	.incbin "baserom.dol", 0x33247C, 0x4
+.global $$21069_4
+$$21069_4:
+	.incbin "baserom.dol", 0x332480, 0x4
+.global $$21070_4
+$$21070_4:
+	.incbin "baserom.dol", 0x332484, 0x4
+.global $$21071
+$$21071:
+	.incbin "baserom.dol", 0x332488, 0x4
+.global $$21072
+$$21072:
+	.incbin "baserom.dol", 0x33248C, 0x4
+.global $$21074_0
+$$21074_0:
+	.incbin "baserom.dol", 0x332490, 0x8
+.global $$21083_2
+$$21083_2:
+	.incbin "baserom.dol", 0x332498, 0x4
+.global $$21090_3
+$$21090_3:
+	.incbin "baserom.dol", 0x33249C, 0x4
+.global $$21351_1
+$$21351_1:
+	.incbin "baserom.dol", 0x3324A0, 0x8
+.global $$21482_0
+$$21482_0:
+	.incbin "baserom.dol", 0x3324A8, 0x4
+.global $$21623_1
+$$21623_1:
+	.incbin "baserom.dol", 0x3324AC, 0x4
+.global $$21624_0
+$$21624_0:
+	.incbin "baserom.dol", 0x3324B0, 0x4
+.global $$21625_1
+$$21625_1:
+	.incbin "baserom.dol", 0x3324B4, 0x4
+.global $$21652_0
+$$21652_0:
+	.incbin "baserom.dol", 0x3324B8, 0x4
+.global $$21699_0
+$$21699_0:
+	.incbin "baserom.dol", 0x3324BC, 0x4
+.global $$21700_0
+$$21700_0:
+	.incbin "baserom.dol", 0x3324C0, 0x4
+.global $$21701_0
+$$21701_0:
+	.incbin "baserom.dol", 0x3324C4, 0x4
+.global $$21788_2
+$$21788_2:
+	.incbin "baserom.dol", 0x3324C8, 0x4
+.global $$21820_3
+$$21820_3:
+	.incbin "baserom.dol", 0x3324CC, 0x4
+.global $$21821_2
+$$21821_2:
+	.incbin "baserom.dol", 0x3324D0, 0x4
+.global $$21822_1
+$$21822_1:
+	.incbin "baserom.dol", 0x3324D4, 0x4
+.global emitterColor
+emitterColor:
+	.incbin "baserom.dol", 0x3324D8, 0x4
+.global $$21862_0
+$$21862_0:
+	.incbin "baserom.dol", 0x3324DC, 0x4
+.global $$21863_0
+$$21863_0:
+	.incbin "baserom.dol", 0x3324E0, 0x4
+.global $$21864_0
+$$21864_0:
+	.incbin "baserom.dol", 0x3324E4, 0x4
+.global $$21865_0
+$$21865_0:
+	.incbin "baserom.dol", 0x3324E8, 0x4
+.global $$21866_0
+$$21866_0:
+	.incbin "baserom.dol", 0x3324EC, 0x4
+.global $$21867
+$$21867:
+	.incbin "baserom.dol", 0x3324F0, 0x4
+.global $$21868
+$$21868:
+	.incbin "baserom.dol", 0x3324F4, 0x4
+.global $$21869
+$$21869:
+	.incbin "baserom.dol", 0x3324F8, 0x4
+.global $$21964_1
+$$21964_1:
+	.incbin "baserom.dol", 0x3324FC, 0x4
+.global $$21965
+$$21965:
+	.incbin "baserom.dol", 0x332500, 0x4
+.global $$22031_0
+$$22031_0:
+	.incbin "baserom.dol", 0x332504, 0x4
+
 .section .text
 
 .global refresh_splash__21$$2unnamed$$2zSplash_cpp$$2FRQ221$$2unnamed$$2zSplash_cpp$$213splash_config

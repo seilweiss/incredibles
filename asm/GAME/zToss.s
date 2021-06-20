@@ -15,6 +15,18 @@ lbl_803D950C:
 __vt__Q21z4toss:
 	.incbin "baserom.dol", 0x32E300, 0x20
 
+.section .sdata2
+
+.global $$2820_3
+$$2820_3:
+	.incbin "baserom.dol", 0x333F18, 0x4
+.global $$2821_1
+$$2821_1:
+	.incbin "baserom.dol", 0x333F1C, 0x4
+.global $$2822_1
+$$2822_1:
+	.incbin "baserom.dol", 0x333F20, 0x8
+
 .section .text
 
 .global setup__Q21z4tossFv

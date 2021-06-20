@@ -9,6 +9,12 @@ sFMVVolumeScale:
 sxFMVPauseSoundCB:
 	.incbin "baserom.dol", 0x32B144, 0x4
 
+.section .sdata2
+
+.global $$2762_0
+$$2762_0:
+	.incbin "baserom.dol", 0x32EB80, 0x8
+
 .section .text
 
 .global xFMVPauseSound__Fb

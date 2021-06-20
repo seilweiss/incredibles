@@ -66,6 +66,108 @@ __vt__Q21z30lightweight$$012flamethrower$$410$$1:
 __vt__Q21z37lightweight_system$$012flamethrower$$410$$1:
 	.incbin "baserom.dol", 0x32D3E0, 0x28
 
+.section .sdata2
+
+.global $$21311_2
+$$21311_2:
+	.incbin "baserom.dol", 0x332C90, 0x4
+.global $$21312_0
+$$21312_0:
+	.incbin "baserom.dol", 0x332C94, 0x4
+.global $$21394_4
+$$21394_4:
+	.incbin "baserom.dol", 0x332C98, 0x4
+.global $$21411_0
+$$21411_0:
+	.incbin "baserom.dol", 0x332C9C, 0x4
+.global $$21412
+$$21412:
+	.incbin "baserom.dol", 0x332CA0, 0x4
+.global $$21413_0
+$$21413_0:
+	.incbin "baserom.dol", 0x332CA4, 0x4
+.global $$21414_1
+$$21414_1:
+	.incbin "baserom.dol", 0x332CA8, 0x4
+.global $$21415_3
+$$21415_3:
+	.incbin "baserom.dol", 0x332CAC, 0x4
+.global $$21416_2
+$$21416_2:
+	.incbin "baserom.dol", 0x332CB0, 0x4
+.global $$21417_1
+$$21417_1:
+	.incbin "baserom.dol", 0x332CB4, 0x4
+.global $$21418_1
+$$21418_1:
+	.incbin "baserom.dol", 0x332CB8, 0x4
+.global $$21419_3
+$$21419_3:
+	.incbin "baserom.dol", 0x332CBC, 0x4
+.global $$21420_5
+$$21420_5:
+	.incbin "baserom.dol", 0x332CC0, 0x4
+.global $$21421_5
+$$21421_5:
+	.incbin "baserom.dol", 0x332CC4, 0x4
+.global $$21436
+$$21436:
+	.incbin "baserom.dol", 0x332CC8, 0x4
+.global $$21449_2
+$$21449_2:
+	.incbin "baserom.dol", 0x332CCC, 0x4
+.global $$21513_4
+$$21513_4:
+	.incbin "baserom.dol", 0x332CD0, 0x4
+.global $$21675_3
+$$21675_3:
+	.incbin "baserom.dol", 0x332CD4, 0x4
+.global $$21676_2
+$$21676_2:
+	.incbin "baserom.dol", 0x332CD8, 0x4
+.global $$21677_2
+$$21677_2:
+	.incbin "baserom.dol", 0x332CDC, 0x4
+.global DO_COLLISION
+DO_COLLISION:
+	.incbin "baserom.dol", 0x332CE0, 0x4
+.global $$21692
+$$21692:
+	.incbin "baserom.dol", 0x332CE4, 0x4
+.global $$21693_1
+$$21693_1:
+	.incbin "baserom.dol", 0x332CE8, 0x4
+.global $$21694_0
+$$21694_0:
+	.incbin "baserom.dol", 0x332CEC, 0x4
+.global $$21695_1
+$$21695_1:
+	.incbin "baserom.dol", 0x332CF0, 0x4
+.global $$21743_0
+$$21743_0:
+	.incbin "baserom.dol", 0x332CF4, 0x4
+.global $$21744
+$$21744:
+	.incbin "baserom.dol", 0x332CF8, 0x8
+.global $$21746
+$$21746:
+	.incbin "baserom.dol", 0x332D00, 0x8
+.global $$21773_0
+$$21773_0:
+	.incbin "baserom.dol", 0x332D08, 0x4
+.global $$21774_0
+$$21774_0:
+	.incbin "baserom.dol", 0x332D0C, 0x4
+.global $$21893_0
+$$21893_0:
+	.incbin "baserom.dol", 0x332D10, 0x4
+.global $$21932_0
+$$21932_0:
+	.incbin "baserom.dol", 0x332D14, 0x4
+.global $$21948
+$$21948:
+	.incbin "baserom.dol", 0x332D18, 0x8
+
 .section .text
 
 .global Init__19zFlameThrowerWidgetFR5xBaseR9xDynAssetUl

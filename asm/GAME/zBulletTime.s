@@ -72,6 +72,42 @@ __vt__23zFilterAbstract$$05zQuat$$1:
 __vt__23zFilterAbstract$$05xVec3$$1:
 	.incbin "baserom.dol", 0x32B838, 0x10
 
+.section .sdata2
+
+.global $$2833_1
+$$2833_1:
+	.incbin "baserom.dol", 0x32FA08, 0x4
+.global $$2834_0
+$$2834_0:
+	.incbin "baserom.dol", 0x32FA0C, 0x4
+.global $$2856_2
+$$2856_2:
+	.incbin "baserom.dol", 0x32FA10, 0x4
+.global $$21102
+$$21102:
+	.incbin "baserom.dol", 0x32FA14, 0x4
+.global $$21103
+$$21103:
+	.incbin "baserom.dol", 0x32FA18, 0x4
+.global $$21104
+$$21104:
+	.incbin "baserom.dol", 0x32FA1C, 0x4
+.global $$21160_1
+$$21160_1:
+	.incbin "baserom.dol", 0x32FA20, 0x4
+.global $$21161_0
+$$21161_0:
+	.incbin "baserom.dol", 0x32FA24, 0x4
+.global $$21266
+$$21266:
+	.incbin "baserom.dol", 0x32FA28, 0x4
+.global $$21335
+$$21335:
+	.incbin "baserom.dol", 0x32FA2C, 0x4
+.global $$21425_0
+$$21425_0:
+	.incbin "baserom.dol", 0x32FA30, 0x8
+
 .section .text
 
 .global zFilterAnglesSet__25$$2unnamed$$2zBulletTime_cpp$$2Ff

@@ -84,6 +84,81 @@ sCinModel:
 sShrapnelTable:
 	.incbin "baserom.dol", 0x32CF78, 0x10
 
+.section .sdata2
+
+.global $$21037_3
+$$21037_3:
+	.incbin "baserom.dol", 0x331F48, 0x4
+.global $$21038_1
+$$21038_1:
+	.incbin "baserom.dol", 0x331F4C, 0x4
+.global $$21064_2
+$$21064_2:
+	.incbin "baserom.dol", 0x331F50, 0x4
+.global $$21065_2
+$$21065_2:
+	.incbin "baserom.dol", 0x331F54, 0x4
+.global $$21120_0
+$$21120_0:
+	.incbin "baserom.dol", 0x331F58, 0x4
+.global $$21121
+$$21121:
+	.incbin "baserom.dol", 0x331F5C, 0x4
+.global $$21122_1
+$$21122_1:
+	.incbin "baserom.dol", 0x331F60, 0x4
+.global $$21123
+$$21123:
+	.incbin "baserom.dol", 0x331F64, 0x4
+.global $$21150_4
+$$21150_4:
+	.incbin "baserom.dol", 0x331F68, 0x4
+.global $$21151_1
+$$21151_1:
+	.incbin "baserom.dol", 0x331F6C, 0x4
+.global $$21152_2
+$$21152_2:
+	.incbin "baserom.dol", 0x331F70, 0x4
+.global $$21153_4
+$$21153_4:
+	.incbin "baserom.dol", 0x331F74, 0x4
+.global $$21387_2
+$$21387_2:
+	.incbin "baserom.dol", 0x331F78, 0x4
+.global $$21389_4
+$$21389_4:
+	.incbin "baserom.dol", 0x331F7C, 0x4
+.global $$21407_0
+$$21407_0:
+	.incbin "baserom.dol", 0x331F80, 0x4
+.global $$21408_1
+$$21408_1:
+	.incbin "baserom.dol", 0x331F84, 0x4
+.global $$21556_0
+$$21556_0:
+	.incbin "baserom.dol", 0x331F88, 0x4
+.global $$21662
+$$21662:
+	.incbin "baserom.dol", 0x331F8C, 0x4
+.global $$21699
+$$21699:
+	.incbin "baserom.dol", 0x331F90, 0x4
+.global $$21700
+$$21700:
+	.incbin "baserom.dol", 0x331F94, 0x4
+.global $$21701
+$$21701:
+	.incbin "baserom.dol", 0x331F98, 0x4
+.global $$21702
+$$21702:
+	.incbin "baserom.dol", 0x331F9C, 0x4
+.global $$21703
+$$21703:
+	.incbin "baserom.dol", 0x331FA0, 0x4
+.global $$21992_0
+$$21992_0:
+	.incbin "baserom.dol", 0x331FA4, 0x4
+
 .section .text
 
 .global zFrag_Alloc__F9zFragType

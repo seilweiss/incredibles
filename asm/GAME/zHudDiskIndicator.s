@@ -12,6 +12,33 @@ $$2stringBase0_125:
 __vt__Q24zHud13DiskIndicator:
 	.incbin "baserom.dol", 0x32D4C0, 0x28
 
+.section .sdata2
+
+.global $$2859_0
+$$2859_0:
+	.incbin "baserom.dol", 0x332FA0, 0x4
+.global $$2860_0
+$$2860_0:
+	.incbin "baserom.dol", 0x332FA4, 0x4
+.global $$2874
+$$2874:
+	.incbin "baserom.dol", 0x332FA8, 0x4
+.global $$2875_1
+$$2875_1:
+	.incbin "baserom.dol", 0x332FAC, 0x4
+.global $$2876_1
+$$2876_1:
+	.incbin "baserom.dol", 0x332FB0, 0x4
+.global $$2877_1
+$$2877_1:
+	.incbin "baserom.dol", 0x332FB4, 0x4
+.global $$2878_1
+$$2878_1:
+	.incbin "baserom.dol", 0x332FB8, 0x4
+.global $$2879
+$$2879:
+	.incbin "baserom.dol", 0x332FBC, 0x4
+
 .section .text
 
 .global __ct__Q24zHud13DiskIndicatorFv

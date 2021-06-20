@@ -48,6 +48,18 @@ lbl_803D93B8:
 __vt__18zParticleGenerator:
 	.incbin "baserom.dol", 0x32D8E0, 0x18
 
+.section .sdata2
+
+.global $$21178_4
+$$21178_4:
+	.incbin "baserom.dol", 0x333620, 0x4
+.global $$21179_3
+$$21179_3:
+	.incbin "baserom.dol", 0x333624, 0x4
+.global $$21181_3
+$$21181_3:
+	.incbin "baserom.dol", 0x333628, 0x8
+
 .section .text
 
 .global create_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv

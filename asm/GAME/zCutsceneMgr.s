@@ -42,6 +42,12 @@ $$21270_0:
 demoDisableHackTable:
 	.incbin "baserom.dol", 0x32BB60, 0x20
 
+.section .sdata2
+
+.global $$21186_1
+$$21186_1:
+	.incbin "baserom.dol", 0x32FF18, 0x8
+
 .section .text
 
 .global zCutsceneMgrGetHackTableSize__Fv

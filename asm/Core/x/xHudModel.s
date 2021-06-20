@@ -21,6 +21,21 @@ init$851:
 __vt__Q24xhud12model_widget:
 	.incbin "baserom.dol", 0x32B268, 0x30
 
+.section .sdata2
+
+.global $$2822_0
+$$2822_0:
+	.incbin "baserom.dol", 0x32EFA0, 0x4
+.global $$2869
+$$2869:
+	.incbin "baserom.dol", 0x32EFA4, 0x4
+.global $$2888
+$$2888:
+	.incbin "baserom.dol", 0x32EFA8, 0x4
+.global $$2889
+$$2889:
+	.incbin "baserom.dol", 0x32EFAC, 0x4
+
 .section .text
 
 .global load__Q24xhud12model_widgetFR5xBaseR9xDynAssetUl

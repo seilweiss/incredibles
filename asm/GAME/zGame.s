@@ -252,6 +252,105 @@ bga:
 __vt__Q26zAsync6Screen:
 	.incbin "baserom.dol", 0x32BE08, 0x18
 
+.section .sdata2
+
+.global $$21147_1
+$$21147_1:
+	.incbin "baserom.dol", 0x330668, 0x4
+.global $$21148_1
+$$21148_1:
+	.incbin "baserom.dol", 0x33066C, 0x4
+.global $$21265
+$$21265:
+	.incbin "baserom.dol", 0x330670, 0x8
+.global $$21441_0
+$$21441_0:
+	.incbin "baserom.dol", 0x330678, 0x8
+.global $$21446
+$$21446:
+	.incbin "baserom.dol", 0x330680, 0x8
+.global $$21513_1
+$$21513_1:
+	.incbin "baserom.dol", 0x330688, 0x4
+.global $$21738_0
+$$21738_0:
+	.incbin "baserom.dol", 0x33068C, 0x4
+.global $$21739
+$$21739:
+	.incbin "baserom.dol", 0x330690, 0x4
+.global $$21740
+$$21740:
+	.incbin "baserom.dol", 0x330694, 0x4
+.global $$21741
+$$21741:
+	.incbin "baserom.dol", 0x330698, 0x4
+.global $$21742
+$$21742:
+	.incbin "baserom.dol", 0x33069C, 0x4
+.global $$21743
+$$21743:
+	.incbin "baserom.dol", 0x3306A0, 0x4
+.global $$21958_0
+$$21958_0:
+	.incbin "baserom.dol", 0x3306A4, 0x4
+.global $$21959_0
+$$21959_0:
+	.incbin "baserom.dol", 0x3306A8, 0x4
+.global $$21977_0
+$$21977_0:
+	.incbin "baserom.dol", 0x3306AC, 0x4
+.global $$21978
+$$21978:
+	.incbin "baserom.dol", 0x3306B0, 0x4
+.global $$21994_0
+$$21994_0:
+	.incbin "baserom.dol", 0x3306B4, 0x4
+.global $$22122
+$$22122:
+	.incbin "baserom.dol", 0x3306B8, 0x4
+.global $$22157
+$$22157:
+	.incbin "baserom.dol", 0x3306BC, 0x4
+.global $$22158
+$$22158:
+	.incbin "baserom.dol", 0x3306C0, 0x4
+.global $$22159_1
+$$22159_1:
+	.incbin "baserom.dol", 0x3306C4, 0x4
+.global lbl_803D3D08
+lbl_803D3D08:
+	.incbin "baserom.dol", 0x3306C8, 0x4
+.global lbl_803D3D0C
+lbl_803D3D0C:
+	.incbin "baserom.dol", 0x3306CC, 0x4
+.global lbl_803D3D10
+lbl_803D3D10:
+	.incbin "baserom.dol", 0x3306D0, 0x4
+.global $$22195
+$$22195:
+	.incbin "baserom.dol", 0x3306D4, 0x4
+.global $$22196
+$$22196:
+	.incbin "baserom.dol", 0x3306D8, 0x4
+.global $$22197
+$$22197:
+	.incbin "baserom.dol", 0x3306DC, 0x4
+.global $$22198
+$$22198:
+	.incbin "baserom.dol", 0x3306E0, 0x4
+.global $$22199
+$$22199:
+	.incbin "baserom.dol", 0x3306E4, 0x4
+.global $$22200
+$$22200:
+	.incbin "baserom.dol", 0x3306E8, 0x4
+.global $$22201
+$$22201:
+	.incbin "baserom.dol", 0x3306EC, 0x4
+.global $$22202
+$$22202:
+	.incbin "baserom.dol", 0x3306F0, 0x8
+
 .section .text
 
 .global PickNextSoak__Fv

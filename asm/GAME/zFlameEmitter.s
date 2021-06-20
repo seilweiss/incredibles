@@ -42,6 +42,30 @@ lbl_803D8C80:
 lbl_803D8C84:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2737_1
+$$2737_1:
+	.incbin "baserom.dol", 0x330640, 0x4
+.global $$2738_1
+$$2738_1:
+	.incbin "baserom.dol", 0x330644, 0x4
+.global $$21047_2
+$$21047_2:
+	.incbin "baserom.dol", 0x330648, 0x4
+.global $$21077
+$$21077:
+	.incbin "baserom.dol", 0x33064C, 0x4
+.global $$21078_0
+$$21078_0:
+	.incbin "baserom.dol", 0x330650, 0x4
+.global $$21255_1
+$$21255_1:
+	.incbin "baserom.dol", 0x330654, 0x4
+.global $$21257_1
+$$21257_1:
+	.incbin "baserom.dol", 0x330658, 0x8
+
 .section .text
 
 .global load__13zFlameEmitterFRCQ213zFlameEmitter10asset_type

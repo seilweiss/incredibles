@@ -12,6 +12,15 @@ $$2stringBase0_48:
 __vt__11zDuplicator:
 	.incbin "baserom.dol", 0x32BC58, 0x18
 
+.section .sdata2
+
+.global $$21026_1
+$$21026_1:
+	.incbin "baserom.dol", 0x330150, 0x4
+.global $$21148_0
+$$21148_0:
+	.incbin "baserom.dol", 0x330154, 0x4
+
 .section .text
 
 .global update_wrapper__FP4xEntP6xScenef

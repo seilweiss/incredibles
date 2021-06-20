@@ -54,6 +54,51 @@ alert_counter__28$$2unnamed$$2zNPCInvisAware_cpp$$2:
 hAlarmGroup__Q24zNPC13security_bird:
 	.incbin "baserom.dol", 0x32D200, 0x8
 
+.section .sdata2
+
+.global $$21389_5
+$$21389_5:
+	.incbin "baserom.dol", 0x3328D0, 0x4
+.global $$21398_1
+$$21398_1:
+	.incbin "baserom.dol", 0x3328D4, 0x4
+.global $$21399_2
+$$21399_2:
+	.incbin "baserom.dol", 0x3328D8, 0x4
+.global $$21410
+$$21410:
+	.incbin "baserom.dol", 0x3328DC, 0x4
+.global $$21415_1
+$$21415_1:
+	.incbin "baserom.dol", 0x3328E0, 0x4
+.global $$21449_1
+$$21449_1:
+	.incbin "baserom.dol", 0x3328E4, 0x4
+.global $$21450_0
+$$21450_0:
+	.incbin "baserom.dol", 0x3328E8, 0x4
+.global $$21509_0
+$$21509_0:
+	.incbin "baserom.dol", 0x3328EC, 0x4
+.global $$21531_2
+$$21531_2:
+	.incbin "baserom.dol", 0x3328F0, 0x4
+.global $$21657_0
+$$21657_0:
+	.incbin "baserom.dol", 0x3328F4, 0x4
+.global $$21676_1
+$$21676_1:
+	.incbin "baserom.dol", 0x3328F8, 0x4
+.global $$21677_1
+$$21677_1:
+	.incbin "baserom.dol", 0x3328FC, 0x4
+.global $$21678_2
+$$21678_2:
+	.incbin "baserom.dol", 0x332900, 0x4
+.global $$21679_1
+$$21679_1:
+	.incbin "baserom.dol", 0x332904, 0x4
+
 .section .text
 
 .global setup__Q24zNPC10activatingFv

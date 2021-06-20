@@ -66,6 +66,105 @@ sLiftBoneIndex:
 sLiftBoneOffset:
 	.incbin "baserom.dol", 0x32D320, 0x10
 
+.section .sdata2
+
+.global $$21042_0
+$$21042_0:
+	.incbin "baserom.dol", 0x332B18, 0x4
+.global $$21043_6
+$$21043_6:
+	.incbin "baserom.dol", 0x332B1C, 0x4
+.global $$21050_2
+$$21050_2:
+	.incbin "baserom.dol", 0x332B20, 0x4
+.global $$21083_4
+$$21083_4:
+	.incbin "baserom.dol", 0x332B24, 0x4
+.global $$21212_1
+$$21212_1:
+	.incbin "baserom.dol", 0x332B28, 0x4
+.global $$21213_0
+$$21213_0:
+	.incbin "baserom.dol", 0x332B2C, 0x4
+.global $$21214_0
+$$21214_0:
+	.incbin "baserom.dol", 0x332B30, 0x4
+.global $$21215_2
+$$21215_2:
+	.incbin "baserom.dol", 0x332B34, 0x4
+.global $$21238_1
+$$21238_1:
+	.incbin "baserom.dol", 0x332B38, 0x4
+.global $$21239_0
+$$21239_0:
+	.incbin "baserom.dol", 0x332B3C, 0x4
+.global $$21240_0
+$$21240_0:
+	.incbin "baserom.dol", 0x332B40, 0x4
+.global $$21284_1
+$$21284_1:
+	.incbin "baserom.dol", 0x332B44, 0x4
+.global $$21301_0
+$$21301_0:
+	.incbin "baserom.dol", 0x332B48, 0x4
+.global $$21332_7
+$$21332_7:
+	.incbin "baserom.dol", 0x332B4C, 0x4
+.global $$21333_7
+$$21333_7:
+	.incbin "baserom.dol", 0x332B50, 0x4
+.global $$21505_1
+$$21505_1:
+	.incbin "baserom.dol", 0x332B54, 0x4
+.global $$21506_1
+$$21506_1:
+	.incbin "baserom.dol", 0x332B58, 0x4
+.global $$21507_0
+$$21507_0:
+	.incbin "baserom.dol", 0x332B5C, 0x4
+.global $$21508_1
+$$21508_1:
+	.incbin "baserom.dol", 0x332B60, 0x4
+.global $$21509_1
+$$21509_1:
+	.incbin "baserom.dol", 0x332B64, 0x4
+.global $$21511
+$$21511:
+	.incbin "baserom.dol", 0x332B68, 0x8
+.global $$21513_3
+$$21513_3:
+	.incbin "baserom.dol", 0x332B70, 0x4
+.global $$21528_2
+$$21528_2:
+	.incbin "baserom.dol", 0x332B74, 0x4
+.global $$21639
+$$21639:
+	.incbin "baserom.dol", 0x332B78, 0x4
+.global $$21640_1
+$$21640_1:
+	.incbin "baserom.dol", 0x332B7C, 0x4
+.global $$21693_0
+$$21693_0:
+	.incbin "baserom.dol", 0x332B80, 0x4
+.global $$21738_2
+$$21738_2:
+	.incbin "baserom.dol", 0x332B84, 0x4
+.global $$21739_1
+$$21739_1:
+	.incbin "baserom.dol", 0x332B88, 0x4
+.global $$21740_1
+$$21740_1:
+	.incbin "baserom.dol", 0x332B8C, 0x4
+.global $$21741_0
+$$21741_0:
+	.incbin "baserom.dol", 0x332B90, 0x4
+.global $$21951
+$$21951:
+	.incbin "baserom.dol", 0x332B94, 0x4
+.global $$22044
+$$22044:
+	.incbin "baserom.dol", 0x332B98, 0x8
+
 .section .text
 
 .global zTurn_IntFloor__Ff

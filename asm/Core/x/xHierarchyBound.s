@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2833_0
+$$2833_0:
+	.incbin "baserom.dol", 0x32EEE8, 0x8
+
 .section .text
 
 .global xHierarchyBoundInit__FP15xHierarchyBoundPC23xHierarchyBoundInitDatafUif

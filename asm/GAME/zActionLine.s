@@ -15,6 +15,15 @@ sActionLine:
 sActionLineRaster:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2995_2
+$$2995_2:
+	.incbin "baserom.dol", 0x3323B0, 0x4
+.global $$21036_4
+$$21036_4:
+	.incbin "baserom.dol", 0x3323B4, 0x4
+
 .section .text
 
 .global zActionLineInit__Fv

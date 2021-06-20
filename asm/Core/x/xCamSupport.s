@@ -81,6 +81,51 @@ lbl_803D8524:
 lbl_803D8528:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2855_0
+$$2855_0:
+	.incbin "baserom.dol", 0x32E820, 0x4
+.global $$2902_0
+$$2902_0:
+	.incbin "baserom.dol", 0x32E824, 0x4
+.global $$2909
+$$2909:
+	.incbin "baserom.dol", 0x32E828, 0x4
+.global $$2911
+$$2911:
+	.incbin "baserom.dol", 0x32E82C, 0x4
+.global $$2913_0
+$$2913_0:
+	.incbin "baserom.dol", 0x32E830, 0x4
+.global $$2996
+$$2996:
+	.incbin "baserom.dol", 0x32E834, 0x4
+.global $$2997
+$$2997:
+	.incbin "baserom.dol", 0x32E838, 0x4
+.global $$21039
+$$21039:
+	.incbin "baserom.dol", 0x32E83C, 0x4
+.global $$21043
+$$21043:
+	.incbin "baserom.dol", 0x32E840, 0x8
+.global $$21088
+$$21088:
+	.incbin "baserom.dol", 0x32E848, 0x4
+.global $$21287
+$$21287:
+	.incbin "baserom.dol", 0x32E84C, 0x4
+.global $$21621
+$$21621:
+	.incbin "baserom.dol", 0x32E850, 0x4
+.global $$21622
+$$21622:
+	.incbin "baserom.dol", 0x32E854, 0x4
+.global $$21623
+$$21623:
+	.incbin "baserom.dol", 0x32E858, 0x8
+
 .section .text
 
 .global create__15xCamSupportPathFii

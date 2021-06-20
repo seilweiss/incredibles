@@ -6,6 +6,39 @@
 __vt__9zCamSwing:
 	.incbin "baserom.dol", 0x32B8E8, 0x28
 
+.section .sdata2
+
+.global $$2993_2
+$$2993_2:
+	.incbin "baserom.dol", 0x32FB40, 0x4
+.global $$2994_0
+$$2994_0:
+	.incbin "baserom.dol", 0x32FB44, 0x4
+.global $$2995_1
+$$2995_1:
+	.incbin "baserom.dol", 0x32FB48, 0x4
+.global $$2996_3
+$$2996_3:
+	.incbin "baserom.dol", 0x32FB4C, 0x4
+.global $$2997_2
+$$2997_2:
+	.incbin "baserom.dol", 0x32FB50, 0x4
+.global $$21011_3
+$$21011_3:
+	.incbin "baserom.dol", 0x32FB54, 0x4
+.global $$21012_2
+$$21012_2:
+	.incbin "baserom.dol", 0x32FB58, 0x4
+.global $$21013_0
+$$21013_0:
+	.incbin "baserom.dol", 0x32FB5C, 0x4
+.global $$21026_0
+$$21026_0:
+	.incbin "baserom.dol", 0x32FB60, 0x4
+.global $$21144_0
+$$21144_0:
+	.incbin "baserom.dol", 0x32FB64, 0x4
+
 .section .text
 
 .global create__9zCamSwingFv

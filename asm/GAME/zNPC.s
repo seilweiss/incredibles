@@ -12,6 +12,15 @@ $$2stringBase0_69:
 __vt__Q24zNPC4base:
 	.incbin "baserom.dol", 0x32C270, 0x38
 
+.section .sdata2
+
+.global $$21013_1
+$$21013_1:
+	.incbin "baserom.dol", 0x330E28, 0x4
+.global $$21029_1
+$$21029_1:
+	.incbin "baserom.dol", 0x330E2C, 0x4
+
 .section .text
 
 .global play_sound__Q24zNPC4baseFP17zAnimFxSoundGroup

@@ -54,6 +54,72 @@ active_emitters_size__20$$2unnamed$$2xDecal_cpp$$2:
 animix_labels__6xDecal:
 	.incbin "baserom.dol", 0x32B0E8, 0x18
 
+.section .sdata2
+
+.global $$21142
+$$21142:
+	.incbin "baserom.dol", 0x32E9B0, 0x4
+.global MAX_CLIPPED_VERTS__20$$2unnamed$$2xDecal_cpp$$2
+MAX_CLIPPED_VERTS__20$$2unnamed$$2xDecal_cpp$$2:
+	.incbin "baserom.dol", 0x32E9B4, 0x4
+.global $$21378_0
+$$21378_0:
+	.incbin "baserom.dol", 0x32E9B8, 0x4
+.global $$21386
+$$21386:
+	.incbin "baserom.dol", 0x32E9BC, 0x4
+.global $$21388
+$$21388:
+	.incbin "baserom.dol", 0x32E9C0, 0x4
+.global $$21892
+$$21892:
+	.incbin "baserom.dol", 0x32E9C4, 0x4
+.global $$22094
+$$22094:
+	.incbin "baserom.dol", 0x32E9C8, 0x4
+.global $$22308
+$$22308:
+	.incbin "baserom.dol", 0x32E9CC, 0x4
+.global $$22309
+$$22309:
+	.incbin "baserom.dol", 0x32E9D0, 0x4
+.global rwmodes$2325
+rwmodes$2325:
+	.incbin "baserom.dol", 0x32E9D4, 0xC
+.global CLIP_XLOWER__20$$2unnamed$$2xDecal_cpp$$2
+CLIP_XLOWER__20$$2unnamed$$2xDecal_cpp$$2:
+	.incbin "baserom.dol", 0x32E9E0, 0x4
+.global CLIP_XUPPER__20$$2unnamed$$2xDecal_cpp$$2
+CLIP_XUPPER__20$$2unnamed$$2xDecal_cpp$$2:
+	.incbin "baserom.dol", 0x32E9E4, 0x4
+.global CLIP_YLOWER__20$$2unnamed$$2xDecal_cpp$$2
+CLIP_YLOWER__20$$2unnamed$$2xDecal_cpp$$2:
+	.incbin "baserom.dol", 0x32E9E8, 0x4
+.global CLIP_YUPPER__20$$2unnamed$$2xDecal_cpp$$2
+CLIP_YUPPER__20$$2unnamed$$2xDecal_cpp$$2:
+	.incbin "baserom.dol", 0x32E9EC, 0x4
+.global CLIP_ZLOWER__20$$2unnamed$$2xDecal_cpp$$2
+CLIP_ZLOWER__20$$2unnamed$$2xDecal_cpp$$2:
+	.incbin "baserom.dol", 0x32E9F0, 0x4
+.global CLIP_ZUPPER__20$$2unnamed$$2xDecal_cpp$$2
+CLIP_ZUPPER__20$$2unnamed$$2xDecal_cpp$$2:
+	.incbin "baserom.dol", 0x32E9F4, 0x4
+.global $$22881
+$$22881:
+	.incbin "baserom.dol", 0x32E9F8, 0x4
+.global $$23324
+$$23324:
+	.incbin "baserom.dol", 0x32E9FC, 0x4
+.global $$23325
+$$23325:
+	.incbin "baserom.dol", 0x32EA00, 0x4
+.global $$23326
+$$23326:
+	.incbin "baserom.dol", 0x32EA04, 0x4
+.global $$23328
+$$23328:
+	.incbin "baserom.dol", 0x32EA08, 0x8
+
 .section .text
 
 .global __as__11RwMatrixTagFRC11RwMatrixTag

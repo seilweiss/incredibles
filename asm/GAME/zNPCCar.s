@@ -63,6 +63,99 @@ lbl_803D8E74:
 brakeTextureName__21$$2unnamed$$2zNPCCar_cpp$$2:
 	.incbin "baserom.dol", 0x32CC28, 0x8
 
+.section .sdata2
+
+.global brake_color__4zNPC
+brake_color__4zNPC:
+	.incbin "baserom.dol", 0x331790, 0x4
+.global $$21509
+$$21509:
+	.incbin "baserom.dol", 0x331794, 0x4
+.global $$21510_0
+$$21510_0:
+	.incbin "baserom.dol", 0x331798, 0x4
+.global $$21525_1
+$$21525_1:
+	.incbin "baserom.dol", 0x33179C, 0x4
+.global $$21589_1
+$$21589_1:
+	.incbin "baserom.dol", 0x3317A0, 0x4
+.global $$21590
+$$21590:
+	.incbin "baserom.dol", 0x3317A4, 0x4
+.global $$21671_1
+$$21671_1:
+	.incbin "baserom.dol", 0x3317A8, 0x4
+.global lbl_803D4DEC
+lbl_803D4DEC:
+	.incbin "baserom.dol", 0x3317AC, 0x4
+.global lbl_803D4DF0
+lbl_803D4DF0:
+	.incbin "baserom.dol", 0x3317B0, 0x4
+.global lbl_803D4DF4
+lbl_803D4DF4:
+	.incbin "baserom.dol", 0x3317B4, 0x4
+.global $$21682_0
+$$21682_0:
+	.incbin "baserom.dol", 0x3317B8, 0x4
+.global $$21695_0
+$$21695_0:
+	.incbin "baserom.dol", 0x3317BC, 0x4
+.global $$21711_0
+$$21711_0:
+	.incbin "baserom.dol", 0x3317C0, 0x4
+.global $$21712_1
+$$21712_1:
+	.incbin "baserom.dol", 0x3317C4, 0x4
+.global $$21754
+$$21754:
+	.incbin "baserom.dol", 0x3317C8, 0x4
+.global $$21786_0
+$$21786_0:
+	.incbin "baserom.dol", 0x3317CC, 0x4
+.global $$21787_1
+$$21787_1:
+	.incbin "baserom.dol", 0x3317D0, 0x4
+.global $$21788_1
+$$21788_1:
+	.incbin "baserom.dol", 0x3317D4, 0x4
+.global $$21789_2
+$$21789_2:
+	.incbin "baserom.dol", 0x3317D8, 0x4
+.global $$21790_2
+$$21790_2:
+	.incbin "baserom.dol", 0x3317DC, 0x4
+.global $$21791_2
+$$21791_2:
+	.incbin "baserom.dol", 0x3317E0, 0x4
+.global $$21792_2
+$$21792_2:
+	.incbin "baserom.dol", 0x3317E4, 0x4
+.global $$21793_2
+$$21793_2:
+	.incbin "baserom.dol", 0x3317E8, 0x4
+.global $$21794_3
+$$21794_3:
+	.incbin "baserom.dol", 0x3317EC, 0x4
+.global $$21818_0
+$$21818_0:
+	.incbin "baserom.dol", 0x3317F0, 0x4
+.global $$21819_2
+$$21819_2:
+	.incbin "baserom.dol", 0x3317F4, 0x4
+.global $$21823_0
+$$21823_0:
+	.incbin "baserom.dol", 0x3317F8, 0x4
+.global $$21899
+$$21899:
+	.incbin "baserom.dol", 0x3317FC, 0x4
+.global $$21900
+$$21900:
+	.incbin "baserom.dol", 0x331800, 0x4
+.global $$21930_0
+$$21930_0:
+	.incbin "baserom.dol", 0x331804, 0x4
+
 .section .text
 
 .global __cl__Q24zNPC20car_collide_callbackFR4xEnt

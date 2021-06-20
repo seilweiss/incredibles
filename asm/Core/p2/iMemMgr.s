@@ -51,6 +51,15 @@ sMemMgrEnableRenderWareMemoryHack:
 __vt__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMulti:
 	.incbin "baserom.dol", 0x32B5E8, 0x20
 
+.section .sdata2
+
+.global $$2727
+$$2727:
+	.incbin "baserom.dol", 0x32F848, 0x8
+.global $$2729
+$$2729:
+	.incbin "baserom.dol", 0x32F850, 0x4
+
 .section .text
 
 .global iMemClearStack__21$$2unnamed$$2iMemMgr_cpp$$2Fv

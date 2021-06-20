@@ -42,6 +42,33 @@ MAX_PTANKS_POS_COLOR_SIZE_ROT__24$$2unnamed$$2xPtankPool_cpp$$2:
 MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24$$2unnamed$$2xPtankPool_cpp$$2:
 	.incbin "baserom.dol", 0x32B384, 0x4
 
+.section .sdata2
+
+.global $$21078
+$$21078:
+	.incbin "baserom.dol", 0x32F250, 0x4
+.global lbl_803D2894
+lbl_803D2894:
+	.incbin "baserom.dol", 0x32F254, 0x4
+.global lbl_803D2898
+lbl_803D2898:
+	.incbin "baserom.dol", 0x32F258, 0x4
+.global lbl_803D289C
+lbl_803D289C:
+	.incbin "baserom.dol", 0x32F25C, 0x4
+.global $$21089_0
+$$21089_0:
+	.incbin "baserom.dol", 0x32F260, 0x4
+.global $$21090_0
+$$21090_0:
+	.incbin "baserom.dol", 0x32F264, 0x4
+.global $$21163
+$$21163:
+	.incbin "baserom.dol", 0x32F268, 0x8
+.global $$21165
+$$21165:
+	.incbin "baserom.dol", 0x32F270, 0x8
+
 .section .text
 
 .global sort_buckets__24$$2unnamed$$2xPtankPool_cpp$$2FRQ224$$2unnamed$$2xPtankPool_cpp$$210group_data

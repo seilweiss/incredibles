@@ -27,6 +27,12 @@ player_model_info__28$$2unnamed$$2zConfiguration_cpp$$2:
 player_lorez_model__28$$2unnamed$$2zConfiguration_cpp$$2:
 	.incbin "baserom.dol", 0x32BB34, 0x2C
 
+.section .sdata2
+
+.global player_tag__28$$2unnamed$$2zConfiguration_cpp$$2
+player_tag__28$$2unnamed$$2zConfiguration_cpp$$2:
+	.incbin "baserom.dol", 0x32FEE8, 0x30
+
 .section .text
 
 .global zConfig_getPlayerEnumIdx__FUi

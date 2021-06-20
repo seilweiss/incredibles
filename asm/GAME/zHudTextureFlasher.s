@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2859
+$$2859:
+	.incbin "baserom.dol", 0x330810, 0x4
+.global $$2889_1
+$$2889_1:
+	.incbin "baserom.dol", 0x330814, 0x4
+
 .section .text
 
 .global setup__Q24zHud14TextureFlasherFPQ24xhud12image_widgetUifff

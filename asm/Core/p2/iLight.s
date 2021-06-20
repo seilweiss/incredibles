@@ -6,6 +6,15 @@
 gLightWorld:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2612
+$$2612:
+	.incbin "baserom.dol", 0x32F818, 0x4
+.global $$2613_1
+$$2613_1:
+	.incbin "baserom.dol", 0x32F81C, 0x4
+
 .section .text
 
 .global iLightInit__FP7RpWorld

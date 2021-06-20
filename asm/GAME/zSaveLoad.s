@@ -138,6 +138,36 @@ sceneRead:
 g_promptUserSelection:
 	.incbin "baserom.dol", 0x32CF10, 0x8
 
+.section .sdata2
+
+.global $$21080
+$$21080:
+	.incbin "baserom.dol", 0x331E90, 0x4
+.global $$21150_3
+$$21150_3:
+	.incbin "baserom.dol", 0x331E94, 0x4
+.global $$21151_0
+$$21151_0:
+	.incbin "baserom.dol", 0x331E98, 0x4
+.global $$21152_1
+$$21152_1:
+	.incbin "baserom.dol", 0x331E9C, 0x4
+.global $$21153_3
+$$21153_3:
+	.incbin "baserom.dol", 0x331EA0, 0x8
+.global $$21155_0
+$$21155_0:
+	.incbin "baserom.dol", 0x331EA8, 0x8
+.global $$22085
+$$22085:
+	.incbin "baserom.dol", 0x331EB0, 0x4
+.global lbl_803D54F4
+lbl_803D54F4:
+	.incbin "baserom.dol", 0x331EB4, 0x4
+.global lbl_803D54F8
+lbl_803D54F8:
+	.incbin "baserom.dol", 0x331EB8, 0x8
+
 .section .text
 
 .global WaitForPreviousPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fb

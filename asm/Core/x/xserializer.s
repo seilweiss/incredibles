@@ -33,6 +33,18 @@ lbl_803D8898:
 g_xserdata:
 	.incbin "baserom.dol", 0x32B4B8, 0x28
 
+.section .sdata2
+
+.global $$21201_0
+$$21201_0:
+	.incbin "baserom.dol", 0x32F440, 0x4
+.global lbl_803D2A84
+lbl_803D2A84:
+	.incbin "baserom.dol", 0x32F444, 0x4
+.global lbl_803D2A88
+lbl_803D2A88:
+	.incbin "baserom.dol", 0x32F448, 0x8
+
 .section .text
 
 .global xSerialStartup__FiP21st_SERIAL_PERCID_SIZE

@@ -12,6 +12,60 @@ sBoulderCollis:
 $$21886:
 	.incbin "baserom.dol", 0x2EF110, 0xC0
 
+.section .sdata2
+
+.global $$21062
+$$21062:
+	.incbin "baserom.dol", 0x32EAA0, 0x4
+.global $$21063
+$$21063:
+	.incbin "baserom.dol", 0x32EAA4, 0x4
+.global $$21087
+$$21087:
+	.incbin "baserom.dol", 0x32EAA8, 0x4
+.global $$21088_0
+$$21088_0:
+	.incbin "baserom.dol", 0x32EAAC, 0x4
+.global $$21089
+$$21089:
+	.incbin "baserom.dol", 0x32EAB0, 0x4
+.global $$21133
+$$21133:
+	.incbin "baserom.dol", 0x32EAB4, 0x4
+.global $$21134
+$$21134:
+	.incbin "baserom.dol", 0x32EAB8, 0x4
+.global $$21245
+$$21245:
+	.incbin "baserom.dol", 0x32EABC, 0x14
+.global lbl_803D2110
+lbl_803D2110:
+	.incbin "baserom.dol", 0x32EAD0, 0x4
+.global $$21256
+$$21256:
+	.incbin "baserom.dol", 0x32EAD4, 0x18
+.global $$21525
+$$21525:
+	.incbin "baserom.dol", 0x32EAEC, 0x4
+.global $$21526
+$$21526:
+	.incbin "baserom.dol", 0x32EAF0, 0x4
+.global $$21527
+$$21527:
+	.incbin "baserom.dol", 0x32EAF4, 0x4
+.global $$21528
+$$21528:
+	.incbin "baserom.dol", 0x32EAF8, 0x4
+.global $$21529_0
+$$21529_0:
+	.incbin "baserom.dol", 0x32EAFC, 0x4
+.global $$21531
+$$21531:
+	.incbin "baserom.dol", 0x32EB00, 0x8
+.global $$21758
+$$21758:
+	.incbin "baserom.dol", 0x32EB08, 0x8
+
 .section .text
 
 .global xEntBoulder_FitToModel__FP11xEntBoulder

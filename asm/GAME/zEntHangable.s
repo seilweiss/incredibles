@@ -6,6 +6,15 @@
 sChandelierHash:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2967
+$$2967:
+	.incbin "baserom.dol", 0x330390, 0x4
+.global $$2968
+$$2968:
+	.incbin "baserom.dol", 0x330394, 0x4
+
 .section .text
 
 .global zEntHangable_SetupFX__Fv

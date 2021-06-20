@@ -72,6 +72,108 @@ __vt__Q31z12rubble_chunk12ball_physics:
 __vt__Q21z13rubble_system:
 	.incbin "baserom.dol", 0x32DCA8, 0x28
 
+.section .sdata2
+
+.global $$21352_2
+$$21352_2:
+	.incbin "baserom.dol", 0x333BC0, 0x4
+.global $$21353_1
+$$21353_1:
+	.incbin "baserom.dol", 0x333BC4, 0x4
+.global props__Q427$$2unnamed$$2zRubbleSystem_cpp$$25tweak12rubble_chunk4burn
+props__Q427$$2unnamed$$2zRubbleSystem_cpp$$25tweak12rubble_chunk4burn:
+	.incbin "baserom.dol", 0x333BC8, 0xC
+.global $$21393_3
+$$21393_3:
+	.incbin "baserom.dol", 0x333BD4, 0x4
+.global $$21414_2
+$$21414_2:
+	.incbin "baserom.dol", 0x333BD8, 0x4
+.global $$21415_5
+$$21415_5:
+	.incbin "baserom.dol", 0x333BDC, 0x4
+.global $$21417_2
+$$21417_2:
+	.incbin "baserom.dol", 0x333BE0, 0x8
+.global $$21424_2
+$$21424_2:
+	.incbin "baserom.dol", 0x333BE8, 0x4
+.global $$21425_3
+$$21425_3:
+	.incbin "baserom.dol", 0x333BEC, 0x4
+.global $$21439_3
+$$21439_3:
+	.incbin "baserom.dol", 0x333BF0, 0x8
+.global $$21522_6
+$$21522_6:
+	.incbin "baserom.dol", 0x333BF8, 0x4
+.global $$21523_3
+$$21523_3:
+	.incbin "baserom.dol", 0x333BFC, 0x4
+.global $$21647_0
+$$21647_0:
+	.incbin "baserom.dol", 0x333C00, 0x4
+.global $$21648
+$$21648:
+	.incbin "baserom.dol", 0x333C04, 0x4
+.global $$21649
+$$21649:
+	.incbin "baserom.dol", 0x333C08, 0x4
+.global $$21735_1
+$$21735_1:
+	.incbin "baserom.dol", 0x333C0C, 0x4
+.global $$21776_0
+$$21776_0:
+	.incbin "baserom.dol", 0x333C10, 0x4
+.global $$21816
+$$21816:
+	.incbin "baserom.dol", 0x333C14, 0x4
+.global $$21891_0
+$$21891_0:
+	.incbin "baserom.dol", 0x333C18, 0x4
+.global $$21941_1
+$$21941_1:
+	.incbin "baserom.dol", 0x333C1C, 0x4
+.global $$21993_0
+$$21993_0:
+	.incbin "baserom.dol", 0x333C20, 0x4
+.global $$22031_1
+$$22031_1:
+	.incbin "baserom.dol", 0x333C24, 0x4
+.global $$22032_0
+$$22032_0:
+	.incbin "baserom.dol", 0x333C28, 0x4
+.global $$22060_2
+$$22060_2:
+	.incbin "baserom.dol", 0x333C2C, 0x4
+.global $$22061_2
+$$22061_2:
+	.incbin "baserom.dol", 0x333C30, 0x4
+.global $$22069_1
+$$22069_1:
+	.incbin "baserom.dol", 0x333C34, 0x4
+.global $$22104
+$$22104:
+	.incbin "baserom.dol", 0x333C38, 0x4
+.global $$22125_0
+$$22125_0:
+	.incbin "baserom.dol", 0x333C3C, 0x4
+.global $$22187_0
+$$22187_0:
+	.incbin "baserom.dol", 0x333C40, 0x4
+.global $$22188_0
+$$22188_0:
+	.incbin "baserom.dol", 0x333C44, 0x4
+.global $$22338
+$$22338:
+	.incbin "baserom.dol", 0x333C48, 0x4
+.global $$22339
+$$22339:
+	.incbin "baserom.dol", 0x333C4C, 0x4
+.global $$22516_0
+$$22516_0:
+	.incbin "baserom.dol", 0x333C50, 0x8
+
 .section .text
 
 .global load_model__27$$2unnamed$$2zRubbleSystem_cpp$$2FUif

@@ -18,6 +18,36 @@ sCameraNearClip:
 sCameraFarClip:
 	.incbin "baserom.dol", 0x32AFC4, 0x4
 
+.section .sdata2
+
+.global $$2814_0
+$$2814_0:
+	.incbin "baserom.dol", 0x32E6E0, 0x4
+.global $$2875_0
+$$2875_0:
+	.incbin "baserom.dol", 0x32E6E4, 0x4
+.global $$2880
+$$2880:
+	.incbin "baserom.dol", 0x32E6E8, 0x4
+.global $$2881
+$$2881:
+	.incbin "baserom.dol", 0x32E6EC, 0x4
+.global $$2913
+$$2913:
+	.incbin "baserom.dol", 0x32E6F0, 0x4
+.global $$2914
+$$2914:
+	.incbin "baserom.dol", 0x32E6F4, 0x4
+.global $$2915
+$$2915:
+	.incbin "baserom.dol", 0x32E6F8, 0x8
+.global $$2945
+$$2945:
+	.incbin "baserom.dol", 0x32E700, 0x8
+.global $$21002
+$$21002:
+	.incbin "baserom.dol", 0x32E708, 0x8
+
 .section .text
 
 .global iCameraSetOrthoProjection__FP8RwCamerab

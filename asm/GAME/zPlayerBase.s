@@ -6,6 +6,12 @@
 sMemDepthJustHIPStartPlayer:
 	.incbin "baserom.dol", 0x32CEA0, 0x8
 
+.section .sdata2
+
+.global $$21230_0
+$$21230_0:
+	.incbin "baserom.dol", 0x331E80, 0x8
+
 .section .text
 
 .global zPlayerUpdate__FP4xEntP6xScenef

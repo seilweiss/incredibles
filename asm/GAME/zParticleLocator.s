@@ -9,6 +9,48 @@ activities__30$$2unnamed$$2zParticleLocator_cpp$$2:
 activities_used__30$$2unnamed$$2zParticleLocator_cpp$$2:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$21037_5
+$$21037_5:
+	.incbin "baserom.dol", 0x333630, 0x4
+.global $$21049_2
+$$21049_2:
+	.incbin "baserom.dol", 0x333634, 0x4
+.global $$21050_4
+$$21050_4:
+	.incbin "baserom.dol", 0x333638, 0x4
+.global $$21051_2
+$$21051_2:
+	.incbin "baserom.dol", 0x33363C, 0x4
+.global $$21052_1
+$$21052_1:
+	.incbin "baserom.dol", 0x333640, 0x8
+.global $$21054_5
+$$21054_5:
+	.incbin "baserom.dol", 0x333648, 0x8
+.global $$21062_4
+$$21062_4:
+	.incbin "baserom.dol", 0x333650, 0x4
+.global $$21104_2
+$$21104_2:
+	.incbin "baserom.dol", 0x333654, 0x4
+.global $$21167_5
+$$21167_5:
+	.incbin "baserom.dol", 0x333658, 0x4
+.global $$21168_3
+$$21168_3:
+	.incbin "baserom.dol", 0x33365C, 0x4
+.global $$21169_2
+$$21169_2:
+	.incbin "baserom.dol", 0x333660, 0x4
+.global setup_attach_table$1234
+setup_attach_table$1234:
+	.incbin "baserom.dol", 0x333664, 0xC
+.global setup_volume_table$1235
+setup_volume_table$1235:
+	.incbin "baserom.dol", 0x333670, 0x18
+
 .section .text
 
 .global alloc_activity__30$$2unnamed$$2zParticleLocator_cpp$$2Fv

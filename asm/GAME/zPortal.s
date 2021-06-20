@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$21000_5
+$$21000_5:
+	.incbin "baserom.dol", 0x331E88, 0x8
+
 .section .text
 
 .global zPortalInit__FPvPv

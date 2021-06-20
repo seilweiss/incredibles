@@ -33,6 +33,18 @@ bBattleSceneAvailable:
 gBattleCheat:
 	.skip 0x3
 
+.section .sdata2
+
+.global $$21265_3
+$$21265_3:
+	.incbin "baserom.dol", 0x333DE8, 0x4
+.global $$21287_0
+$$21287_0:
+	.incbin "baserom.dol", 0x333DEC, 0x4
+.global $$21288_3
+$$21288_3:
+	.incbin "baserom.dol", 0x333DF0, 0x8
+
 .section .text
 
 .global __ct__37zUICustomBattleModeSelectSceneManagerFP3zUI

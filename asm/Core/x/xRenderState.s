@@ -18,6 +18,15 @@ old_near_plane:
 old_far_plane:
 	.incbin "baserom.dol", 0x32B394, 0x4
 
+.section .sdata2
+
+.global $$2742
+$$2742:
+	.incbin "baserom.dol", 0x32F2C8, 0x4
+.global $$2749_0
+$$2749_0:
+	.incbin "baserom.dol", 0x32F2CC, 0x4
+
 .section .text
 
 .global xRenderSceneEnter__Fv

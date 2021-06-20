@@ -18,6 +18,15 @@ cachedAnimations__24$$2unnamed$$2zAnimCache_cpp$$2:
 currentCacheIndex__24$$2unnamed$$2zAnimCache_cpp$$2:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2888_0
+$$2888_0:
+	.incbin "baserom.dol", 0x32F9E8, 0x4
+.global $$2889_0
+$$2889_0:
+	.incbin "baserom.dol", 0x32F9EC, 0x4
+
 .section .text
 
 .global fillInCache__24$$2unnamed$$2zAnimCache_cpp$$2FP15zAnimCacheEntryP8RpAtomicff

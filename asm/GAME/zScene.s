@@ -129,6 +129,72 @@ scobj_size:
 nidbps:
 	.incbin "baserom.dol", 0x32CF30, 0x8
 
+.section .sdata2
+
+.global $$21344_0
+$$21344_0:
+	.incbin "baserom.dol", 0x331EC0, 0x4
+.global $$21345_1
+$$21345_1:
+	.incbin "baserom.dol", 0x331EC4, 0x4
+.global $$21714_0
+$$21714_0:
+	.incbin "baserom.dol", 0x331EC8, 0x4
+.global $$22240_0
+$$22240_0:
+	.incbin "baserom.dol", 0x331ECC, 0x4
+.global $$22241
+$$22241:
+	.incbin "baserom.dol", 0x331ED0, 0x4
+.global $$22341
+$$22341:
+	.incbin "baserom.dol", 0x331ED4, 0x4
+.global $$22342_2
+$$22342_2:
+	.incbin "baserom.dol", 0x331ED8, 0x4
+.global $$22908
+$$22908:
+	.incbin "baserom.dol", 0x331EDC, 0x4
+.global $$22909
+$$22909:
+	.incbin "baserom.dol", 0x331EE0, 0x4
+.global $$22910
+$$22910:
+	.incbin "baserom.dol", 0x331EE4, 0x4
+.global $$22911
+$$22911:
+	.incbin "baserom.dol", 0x331EE8, 0x4
+.global $$23167
+$$23167:
+	.incbin "baserom.dol", 0x331EEC, 0x4
+.global $$23168
+$$23168:
+	.incbin "baserom.dol", 0x331EF0, 0x4
+.global $$23169
+$$23169:
+	.incbin "baserom.dol", 0x331EF4, 0x4
+.global $$23170
+$$23170:
+	.incbin "baserom.dol", 0x331EF8, 0x4
+.global $$23171
+$$23171:
+	.incbin "baserom.dol", 0x331EFC, 0x4
+.global $$23172
+$$23172:
+	.incbin "baserom.dol", 0x331F00, 0x4
+.global $$23173
+$$23173:
+	.incbin "baserom.dol", 0x331F04, 0x4
+.global $$23174
+$$23174:
+	.incbin "baserom.dol", 0x331F08, 0x4
+.global $$23175
+$$23175:
+	.incbin "baserom.dol", 0x331F0C, 0x4
+.global $$23177
+$$23177:
+	.incbin "baserom.dol", 0x331F10, 0x8
+
 .section .text
 
 .global zSceneIsLoadingPackFile__Fv

@@ -6,6 +6,21 @@
 $$2stringBase0_155:
 	.incbin "baserom.dol", 0x2E7240, 0x8
 
+.section .sdata2
+
+.global $$21022_3
+$$21022_3:
+	.incbin "baserom.dol", 0x333E30, 0x4
+.global $$21050_5
+$$21050_5:
+	.incbin "baserom.dol", 0x333E34, 0x4
+.global $$21060_4
+$$21060_4:
+	.incbin "baserom.dol", 0x333E38, 0x4
+.global $$21103_2
+$$21103_2:
+	.incbin "baserom.dol", 0x333E3C, 0x4
+
 .section .text
 
 .global load__10zCamPresetFR5xBaseR9xDynAssetUl

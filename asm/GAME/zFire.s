@@ -123,6 +123,159 @@ lbl_803D8C24:
 lbl_803D8C28:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2737_0
+$$2737_0:
+	.incbin "baserom.dol", 0x330508, 0x4
+.global $$2738_0
+$$2738_0:
+	.incbin "baserom.dol", 0x33050C, 0x4
+.global short_card_info__5zFire
+short_card_info__5zFire:
+	.incbin "baserom.dol", 0x330510, 0x1C
+.global tall_card_info__5zFire
+tall_card_info__5zFire:
+	.incbin "baserom.dol", 0x33052C, 0x1C
+.global $$21111
+$$21111:
+	.incbin "baserom.dol", 0x330548, 0x8
+.global $$21132_1
+$$21132_1:
+	.incbin "baserom.dol", 0x330550, 0x8
+.global $$21150_0
+$$21150_0:
+	.incbin "baserom.dol", 0x330558, 0x4
+.global $$21158_3
+$$21158_3:
+	.incbin "baserom.dol", 0x33055C, 0x4
+.global $$21159_0
+$$21159_0:
+	.incbin "baserom.dol", 0x330560, 0x4
+.global $$21205
+$$21205:
+	.incbin "baserom.dol", 0x330564, 0x4
+.global $$21206
+$$21206:
+	.incbin "baserom.dol", 0x330568, 0x4
+.global $$21207
+$$21207:
+	.incbin "baserom.dol", 0x33056C, 0x4
+.global $$21208
+$$21208:
+	.incbin "baserom.dol", 0x330570, 0x4
+.global debug_props$1299
+debug_props$1299:
+	.incbin "baserom.dol", 0x330574, 0x8
+.global lbl_803D3BBC
+lbl_803D3BBC:
+	.incbin "baserom.dol", 0x33057C, 0x4
+.global $$21300
+$$21300:
+	.incbin "baserom.dol", 0x330580, 0x34
+.global $$21386_1
+$$21386_1:
+	.incbin "baserom.dol", 0x3305B4, 0x4
+.global $$21387_0
+$$21387_0:
+	.incbin "baserom.dol", 0x3305B8, 0x4
+.global $$21388_2
+$$21388_2:
+	.incbin "baserom.dol", 0x3305BC, 0x4
+.global $$21389_1
+$$21389_1:
+	.incbin "baserom.dol", 0x3305C0, 0x4
+.global $$21390_1
+$$21390_1:
+	.incbin "baserom.dol", 0x3305C4, 0x4
+.global $$21391_2
+$$21391_2:
+	.incbin "baserom.dol", 0x3305C8, 0x4
+.global $$21392_2
+$$21392_2:
+	.incbin "baserom.dol", 0x3305CC, 0x4
+.global $$21393
+$$21393:
+	.incbin "baserom.dol", 0x3305D0, 0x4
+.global $$21394
+$$21394:
+	.incbin "baserom.dol", 0x3305D4, 0x4
+.global $$21399_0
+$$21399_0:
+	.incbin "baserom.dol", 0x3305D8, 0x8
+.global $$21693
+$$21693:
+	.incbin "baserom.dol", 0x3305E0, 0x4
+.global $$21694
+$$21694:
+	.incbin "baserom.dol", 0x3305E4, 0x4
+.global $$21695
+$$21695:
+	.incbin "baserom.dol", 0x3305E8, 0x4
+.global $$21698_0
+$$21698_0:
+	.incbin "baserom.dol", 0x3305EC, 0x4
+.global $$21788_0
+$$21788_0:
+	.incbin "baserom.dol", 0x3305F0, 0x4
+.global $$21789_1
+$$21789_1:
+	.incbin "baserom.dol", 0x3305F4, 0x4
+.global $$21790_1
+$$21790_1:
+	.incbin "baserom.dol", 0x3305F8, 0x4
+.global $$21811_0
+$$21811_0:
+	.incbin "baserom.dol", 0x3305FC, 0x4
+.global $$21887
+$$21887:
+	.incbin "baserom.dol", 0x330600, 0x4
+.global $$21913_0
+$$21913_0:
+	.incbin "baserom.dol", 0x330604, 0x4
+.global $$21914_0
+$$21914_0:
+	.incbin "baserom.dol", 0x330608, 0x4
+.global $$21915_0
+$$21915_0:
+	.incbin "baserom.dol", 0x33060C, 0x4
+.global $$21927
+$$21927:
+	.incbin "baserom.dol", 0x330610, 0x4
+.global $$22004
+$$22004:
+	.incbin "baserom.dol", 0x330614, 0x4
+.global $$22005
+$$22005:
+	.incbin "baserom.dol", 0x330618, 0x4
+.global $$22006
+$$22006:
+	.incbin "baserom.dol", 0x33061C, 0x4
+.global $$22007
+$$22007:
+	.incbin "baserom.dol", 0x330620, 0x4
+.global $$22008
+$$22008:
+	.incbin "baserom.dol", 0x330624, 0x4
+.global $$22009_0
+$$22009_0:
+	.incbin "baserom.dol", 0x330628, 0x4
+.global $$22010
+$$22010:
+	.incbin "baserom.dol", 0x33062C, 0x4
+.global $$22011_0
+$$22011_0:
+	.incbin "baserom.dol", 0x330630, 0x4
+.global $$22012_1
+$$22012_1:
+	.incbin "baserom.dol", 0x330634, 0x4
+.global $$22013_0
+$$22013_0:
+	.incbin "baserom.dol", 0x330638, 0x4
+.global $$22014_0
+$$22014_0:
+	.incbin "baserom.dol", 0x33063C, 0x4
+
 .section .text
 
 .global add_tweaks__Q219$$2unnamed$$2zFire_cpp$$25tweakFPCc

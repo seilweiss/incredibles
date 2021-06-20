@@ -84,6 +84,54 @@ lbl_803D92F4:
 __vt__Q24xhud12image_widget:
 	.incbin "baserom.dol", 0x32D468, 0x28
 
+.section .sdata2
+
+.global $$2866_2
+$$2866_2:
+	.incbin "baserom.dol", 0x332DC0, 0x4
+.global $$2907_3
+$$2907_3:
+	.incbin "baserom.dol", 0x332DC4, 0x4
+.global $$2926
+$$2926:
+	.incbin "baserom.dol", 0x332DC8, 0x4
+.global $$2927
+$$2927:
+	.incbin "baserom.dol", 0x332DCC, 0x4
+.global $$2929
+$$2929:
+	.incbin "baserom.dol", 0x332DD0, 0x4
+.global $$21005_5
+$$21005_5:
+	.incbin "baserom.dol", 0x332DD4, 0x4
+.global $$21006_5
+$$21006_5:
+	.incbin "baserom.dol", 0x332DD8, 0x4
+.global $$21038_2
+$$21038_2:
+	.incbin "baserom.dol", 0x332DDC, 0x4
+.global $$21040_5
+$$21040_5:
+	.incbin "baserom.dol", 0x332DE0, 0x8
+.global $$21043_7
+$$21043_7:
+	.incbin "baserom.dol", 0x332DE8, 0x4
+.global $$21047_5
+$$21047_5:
+	.incbin "baserom.dol", 0x332DEC, 0x4
+.global $$21050_3
+$$21050_3:
+	.incbin "baserom.dol", 0x332DF0, 0x8
+.global $$21149_3
+$$21149_3:
+	.incbin "baserom.dol", 0x332DF8, 0x4
+.global $$21236_3
+$$21236_3:
+	.incbin "baserom.dol", 0x332DFC, 0x4
+.global $$21285_2
+$$21285_2:
+	.incbin "baserom.dol", 0x332E00, 0x8
+
 .section .text
 
 .global load__Q24xhud12image_widgetFR5xBaseR9xDynAssetUl

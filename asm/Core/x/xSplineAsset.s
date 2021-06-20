@@ -30,6 +30,48 @@ lbl_803D8910:
 lbl_803D8914:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2666
+$$2666:
+	.incbin "baserom.dol", 0x32F5F0, 0x8
+.global $$2668
+$$2668:
+	.incbin "baserom.dol", 0x32F5F8, 0x8
+.global $$2677_1
+$$2677_1:
+	.incbin "baserom.dol", 0x32F600, 0x4
+.global $$2679_0
+$$2679_0:
+	.incbin "baserom.dol", 0x32F604, 0x4
+.global $$2956
+$$2956:
+	.incbin "baserom.dol", 0x32F608, 0x4
+.global $$2957
+$$2957:
+	.incbin "baserom.dol", 0x32F60C, 0x4
+.global $$2958
+$$2958:
+	.incbin "baserom.dol", 0x32F610, 0x4
+.global $$2959
+$$2959:
+	.incbin "baserom.dol", 0x32F614, 0x4
+.global $$2960
+$$2960:
+	.incbin "baserom.dol", 0x32F618, 0x4
+.global $$2961_0
+$$2961_0:
+	.incbin "baserom.dol", 0x32F61C, 0x4
+.global $$2962
+$$2962:
+	.incbin "baserom.dol", 0x32F620, 0x4
+.global $$21047
+$$21047:
+	.incbin "baserom.dol", 0x32F624, 0x4
+.global $$21070_0
+$$21070_0:
+	.incbin "baserom.dol", 0x32F628, 0x8
+
 .section .text
 
 .global find_span__Q21x5NURBSFf

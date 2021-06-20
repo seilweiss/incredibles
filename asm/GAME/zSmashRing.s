@@ -6,6 +6,30 @@
 module__24$$2unnamed$$2zSmashRing_cpp$$2:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21141_1
+$$21141_1:
+	.incbin "baserom.dol", 0x334000, 0x4
+.global $$21142_2
+$$21142_2:
+	.incbin "baserom.dol", 0x334004, 0x4
+.global $$21196_1
+$$21196_1:
+	.incbin "baserom.dol", 0x334008, 0x4
+.global $$21209
+$$21209:
+	.incbin "baserom.dol", 0x33400C, 0x4
+.global $$21210_0
+$$21210_0:
+	.incbin "baserom.dol", 0x334010, 0x8
+.global $$21214_1
+$$21214_1:
+	.incbin "baserom.dol", 0x334018, 0x8
+.global $$21218_1
+$$21218_1:
+	.incbin "baserom.dol", 0x334020, 0x8
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2zSmashRing_cpp$$25tweakFv

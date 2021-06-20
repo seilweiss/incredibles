@@ -87,6 +87,45 @@ last_stat__16zUICustomStatBox:
 stat_cycle_sound:
 	.incbin "baserom.dol", 0x32D864, 0x4
 
+.section .sdata2
+
+.global $$21120_2
+$$21120_2:
+	.incbin "baserom.dol", 0x3334F8, 0x4
+.global $$21218_0
+$$21218_0:
+	.incbin "baserom.dol", 0x3334FC, 0x4
+.global $$21291_6
+$$21291_6:
+	.incbin "baserom.dol", 0x333500, 0x4
+.global $$21313_2
+$$21313_2:
+	.incbin "baserom.dol", 0x333504, 0x4
+.global $$21316_3
+$$21316_3:
+	.incbin "baserom.dol", 0x333508, 0x8
+.global $$21340_2
+$$21340_2:
+	.incbin "baserom.dol", 0x333510, 0x4
+.global $$21367_0
+$$21367_0:
+	.incbin "baserom.dol", 0x333514, 0x4
+.global $$21368_1
+$$21368_1:
+	.incbin "baserom.dol", 0x333518, 0x4
+.global $$21369_1
+$$21369_1:
+	.incbin "baserom.dol", 0x33351C, 0x4
+.global $$21397_1
+$$21397_1:
+	.incbin "baserom.dol", 0x333520, 0x4
+.global $$21412_0
+$$21412_0:
+	.incbin "baserom.dol", 0x333524, 0x4
+.global $$21413_1
+$$21413_1:
+	.incbin "baserom.dol", 0x333528, 0x8
+
 .section .text
 
 .global Init__9zUICustomFv

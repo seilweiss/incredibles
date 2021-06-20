@@ -27,6 +27,45 @@ __vt__9xCamBlend:
 __vt__4xCam:
 	.incbin "baserom.dol", 0x32AFF4, 0x24
 
+.section .sdata2
+
+.global $$2919
+$$2919:
+	.incbin "baserom.dol", 0x32E7C0, 0x4
+.global $$2920
+$$2920:
+	.incbin "baserom.dol", 0x32E7C4, 0x4
+.global $$21113
+$$21113:
+	.incbin "baserom.dol", 0x32E7C8, 0x4
+.global $$21160
+$$21160:
+	.incbin "baserom.dol", 0x32E7CC, 0x4
+.global $$21215
+$$21215:
+	.incbin "baserom.dol", 0x32E7D0, 0x4
+.global coord_table$1313
+coord_table$1313:
+	.incbin "baserom.dol", 0x32E7D4, 0x24
+.global orient_table$1314
+orient_table$1314:
+	.incbin "baserom.dol", 0x32E7F8, 0x10
+.global $$21378
+$$21378:
+	.incbin "baserom.dol", 0x32E808, 0x4
+.global $$21382
+$$21382:
+	.incbin "baserom.dol", 0x32E80C, 0x4
+.global $$21383
+$$21383:
+	.incbin "baserom.dol", 0x32E810, 0x8
+.global $$2866
+$$2866:
+	.incbin "baserom.dol", 0x32E818, 0x4
+.global $$2892
+$$2892:
+	.incbin "baserom.dol", 0x32E81C, 0x4
+
 .section .text
 
 .global add_tweaks__Q218$$2unnamed$$2xCam_cpp$$25tweakFPCc

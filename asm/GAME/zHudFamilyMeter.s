@@ -21,6 +21,69 @@ fMaxHealthBar__4zHud:
 __vt__Q24zHud11FamilyMeter:
 	.incbin "baserom.dol", 0x32E324, 0x2C
 
+.section .sdata2
+
+.global $$2883_1
+$$2883_1:
+	.incbin "baserom.dol", 0x333F28, 0x4
+.global $$2895_0
+$$2895_0:
+	.incbin "baserom.dol", 0x333F2C, 0x4
+.global $$2896_0
+$$2896_0:
+	.incbin "baserom.dol", 0x333F30, 0x4
+.global $$2897_0
+$$2897_0:
+	.incbin "baserom.dol", 0x333F34, 0x4
+.global $$2898_0
+$$2898_0:
+	.incbin "baserom.dol", 0x333F38, 0x4
+.global $$2899
+$$2899:
+	.incbin "baserom.dol", 0x333F3C, 0x4
+.global $$2900
+$$2900:
+	.incbin "baserom.dol", 0x333F40, 0x4
+.global $$2901
+$$2901:
+	.incbin "baserom.dol", 0x333F44, 0x4
+.global $$2902_2
+$$2902_2:
+	.incbin "baserom.dol", 0x333F48, 0x4
+.global $$2903_2
+$$2903_2:
+	.incbin "baserom.dol", 0x333F4C, 0x4
+.global $$2904_1
+$$2904_1:
+	.incbin "baserom.dol", 0x333F50, 0x4
+.global $$2905_3
+$$2905_3:
+	.incbin "baserom.dol", 0x333F54, 0x4
+.global $$2906_2
+$$2906_2:
+	.incbin "baserom.dol", 0x333F58, 0x4
+.global $$2907_4
+$$2907_4:
+	.incbin "baserom.dol", 0x333F5C, 0x4
+.global $$2908_1
+$$2908_1:
+	.incbin "baserom.dol", 0x333F60, 0x4
+.global $$2909_1
+$$2909_1:
+	.incbin "baserom.dol", 0x333F64, 0x4
+.global $$2954_5
+$$2954_5:
+	.incbin "baserom.dol", 0x333F68, 0x4
+.global $$2955_3
+$$2955_3:
+	.incbin "baserom.dol", 0x333F6C, 0x4
+.global $$2956_3
+$$2956_3:
+	.incbin "baserom.dol", 0x333F70, 0x4
+.global $$2957_3
+$$2957_3:
+	.incbin "baserom.dol", 0x333F74, 0x4
+
 .section .text
 
 .global __ct__Q24zHud11FamilyMeterFv

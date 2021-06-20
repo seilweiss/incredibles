@@ -60,6 +60,69 @@ lbl_803D93F8:
 sModelBlurEnabled__24$$2unnamed$$2xModelBlur_cpp$$2:
 	.incbin "baserom.dol", 0x32DAD0, 0x8
 
+.section .sdata2
+
+.global $$21019_1
+$$21019_1:
+	.incbin "baserom.dol", 0x333778, 0x4
+.global $$21020_4
+$$21020_4:
+	.incbin "baserom.dol", 0x33377C, 0x4
+.global $$21021_5
+$$21021_5:
+	.incbin "baserom.dol", 0x333780, 0x4
+.global cfg$1104
+cfg$1104:
+	.incbin "baserom.dol", 0x333784, 0x24
+.global $$21260_2
+$$21260_2:
+	.incbin "baserom.dol", 0x3337A8, 0x4
+.global $$21268_1
+$$21268_1:
+	.incbin "baserom.dol", 0x3337AC, 0x4
+.global $$21319_6
+$$21319_6:
+	.incbin "baserom.dol", 0x3337B0, 0x4
+.global $$21357
+$$21357:
+	.incbin "baserom.dol", 0x3337B4, 0x4
+.global $$21359_3
+$$21359_3:
+	.incbin "baserom.dol", 0x3337B8, 0x8
+.global $$21406_1
+$$21406_1:
+	.incbin "baserom.dol", 0x3337C0, 0x4
+.global $$21408_3
+$$21408_3:
+	.incbin "baserom.dol", 0x3337C4, 0x18
+.global lbl_803D6E1C
+lbl_803D6E1C:
+	.incbin "baserom.dol", 0x3337DC, 0x4
+.global $$21409_2
+$$21409_2:
+	.incbin "baserom.dol", 0x3337E0, 0x30
+.global $$21432
+$$21432:
+	.incbin "baserom.dol", 0x333810, 0x4
+.global $$21433
+$$21433:
+	.incbin "baserom.dol", 0x333814, 0x4
+.global $$21434
+$$21434:
+	.incbin "baserom.dol", 0x333818, 0x4
+.global $$21435
+$$21435:
+	.incbin "baserom.dol", 0x33381C, 0x4
+.global $$21436_0
+$$21436_0:
+	.incbin "baserom.dol", 0x333820, 0x8
+.global $$21437_0
+$$21437_0:
+	.incbin "baserom.dol", 0x333828, 0x8
+.global $$21438_2
+$$21438_2:
+	.incbin "baserom.dol", 0x333830, 0x8
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2xModelBlur_cpp$$25tweakFv

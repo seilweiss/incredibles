@@ -105,6 +105,72 @@ sDefaultLensFlareParams:
 sLensFlareParams:
 	.incbin "baserom.dol", 0x32B4B0, 0x8
 
+.section .sdata2
+
+.global $$21020_1
+$$21020_1:
+	.incbin "baserom.dol", 0x32F3D0, 0x4
+.global $$21021_2
+$$21021_2:
+	.incbin "baserom.dol", 0x32F3D4, 0x4
+.global $$21043_1
+$$21043_1:
+	.incbin "baserom.dol", 0x32F3D8, 0x8
+.global $$21093
+$$21093:
+	.incbin "baserom.dol", 0x32F3E0, 0x8
+.global $$21098
+$$21098:
+	.incbin "baserom.dol", 0x32F3E8, 0x4
+.global lbl_803D2A2C
+lbl_803D2A2C:
+	.incbin "baserom.dol", 0x32F3EC, 0x4
+.global $$21132_0
+$$21132_0:
+	.incbin "baserom.dol", 0x32F3F0, 0x8
+.global $$21203_0
+$$21203_0:
+	.incbin "baserom.dol", 0x32F3F8, 0x4
+.global $$21247
+$$21247:
+	.incbin "baserom.dol", 0x32F3FC, 0x4
+.global $$21268
+$$21268:
+	.incbin "baserom.dol", 0x32F400, 0x4
+.global $$21269
+$$21269:
+	.incbin "baserom.dol", 0x32F404, 0x4
+.global $$21384
+$$21384:
+	.incbin "baserom.dol", 0x32F408, 0x4
+.global $$21385
+$$21385:
+	.incbin "baserom.dol", 0x32F40C, 0x4
+.global $$21726
+$$21726:
+	.incbin "baserom.dol", 0x32F410, 0x4
+.global $$21727
+$$21727:
+	.incbin "baserom.dol", 0x32F414, 0x4
+.global $$21728
+$$21728:
+	.incbin "baserom.dol", 0x32F418, 0x4
+.global $$21956
+$$21956:
+	.incbin "baserom.dol", 0x32F41C, 0x4
+.global lbl_803D2A60
+lbl_803D2A60:
+	.incbin "baserom.dol", 0x32F420, 0x4
+.global $$21957
+$$21957:
+	.incbin "baserom.dol", 0x32F424, 0x14
+.global $$22561
+$$22561:
+	.incbin "baserom.dol", 0x32F438, 0x4
+.global $$22562
+$$22562:
+	.incbin "baserom.dol", 0x32F43C, 0x4
+
 .section .text
 
 .global xScrFxInit__Fv

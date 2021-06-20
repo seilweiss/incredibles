@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2638
+$$2638:
+	.incbin "baserom.dol", 0x32F1C8, 0x4
+.global $$2639
+$$2639:
+	.incbin "baserom.dol", 0x32F1CC, 0x4
+.global $$2700
+$$2700:
+	.incbin "baserom.dol", 0x32F1D0, 0x4
+.global $$2708
+$$2708:
+	.incbin "baserom.dol", 0x32F1D4, 0x4
+.global $$2709_0
+$$2709_0:
+	.incbin "baserom.dol", 0x32F1D8, 0x8
+
 .section .text
 
 .global xMovePointInit__FP10xMovePointP15xMovePointAsset

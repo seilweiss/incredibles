@@ -54,6 +54,87 @@ ribbon_curves__24$$2unnamed$$2zLaserBeam_cpp$$2:
 fade_value_labels__24$$2unnamed$$2zLaserBeam_cpp$$2:
 	.incbin "baserom.dol", 0x32C138, 0x8
 
+.section .sdata2
+
+.global blend_modes__24$$2unnamed$$2zLaserBeam_cpp$$2
+blend_modes__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.incbin "baserom.dol", 0x330918, 0x20
+.global fade_ribbon_curve__24$$2unnamed$$2zLaserBeam_cpp$$2
+fade_ribbon_curve__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.incbin "baserom.dol", 0x330938, 0x18
+.global fade_in_curve_immediate__24$$2unnamed$$2zLaserBeam_cpp$$2
+fade_in_curve_immediate__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.incbin "baserom.dol", 0x330950, 0x18
+.global fade_in_curve_linear__24$$2unnamed$$2zLaserBeam_cpp$$2
+fade_in_curve_linear__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.incbin "baserom.dol", 0x330968, 0x18
+.global fade_in_curve_overshoot__24$$2unnamed$$2zLaserBeam_cpp$$2
+fade_in_curve_overshoot__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.incbin "baserom.dol", 0x330980, 0x24
+.global $$21349
+$$21349:
+	.incbin "baserom.dol", 0x3309A4, 0x4
+.global $$21408_0
+$$21408_0:
+	.incbin "baserom.dol", 0x3309A8, 0x4
+.global $$21409_0
+$$21409_0:
+	.incbin "baserom.dol", 0x3309AC, 0x4
+.global $$21411
+$$21411:
+	.incbin "baserom.dol", 0x3309B0, 0x8
+.global $$21418_0
+$$21418_0:
+	.incbin "baserom.dol", 0x3309B8, 0x4
+.global $$21419_1
+$$21419_1:
+	.incbin "baserom.dol", 0x3309BC, 0x4
+.global $$21420_1
+$$21420_1:
+	.incbin "baserom.dol", 0x3309C0, 0x4
+.global $$21451_0
+$$21451_0:
+	.incbin "baserom.dol", 0x3309C4, 0x4
+.global $$21555_0
+$$21555_0:
+	.incbin "baserom.dol", 0x3309C8, 0x4
+.global $$21712_0
+$$21712_0:
+	.incbin "baserom.dol", 0x3309CC, 0x4
+.global $$21713_0
+$$21713_0:
+	.incbin "baserom.dol", 0x3309D0, 0x4
+.global $$21787_0
+$$21787_0:
+	.incbin "baserom.dol", 0x3309D4, 0x4
+.global $$21801_0
+$$21801_0:
+	.incbin "baserom.dol", 0x3309D8, 0x4
+.global $$21802_1
+$$21802_1:
+	.incbin "baserom.dol", 0x3309DC, 0x4
+.global $$21875
+$$21875:
+	.incbin "baserom.dol", 0x3309E0, 0x4
+.global lbl_803D4024
+lbl_803D4024:
+	.incbin "baserom.dol", 0x3309E4, 0x4
+.global lbl_803D4028
+lbl_803D4028:
+	.incbin "baserom.dol", 0x3309E8, 0x4
+.global $$21881
+$$21881:
+	.incbin "baserom.dol", 0x3309EC, 0x4
+.global lbl_803D4030
+lbl_803D4030:
+	.incbin "baserom.dol", 0x3309F0, 0x4
+.global lbl_803D4034
+lbl_803D4034:
+	.incbin "baserom.dol", 0x3309F4, 0x4
+.global $$22031
+$$22031:
+	.incbin "baserom.dol", 0x3309F8, 0x8
+
 .section .text
 
 .global xDebugAddTweak__FPCcPCiiiPC14tweak_callbackPvUi

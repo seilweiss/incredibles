@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2968_0
+$$2968_0:
+	.incbin "baserom.dol", 0x332C60, 0x8
+
 .section .text
 
 .global zProgressScript_Init__FPvPv

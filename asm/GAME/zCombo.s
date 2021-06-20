@@ -57,6 +57,24 @@ comboDisplayTime:
 comboFadeDir:
 	.incbin "baserom.dol", 0x32DC74, 0x4
 
+.section .sdata2
+
+.global $$21119_4
+$$21119_4:
+	.incbin "baserom.dol", 0x333BA8, 0x4
+.global $$21120_3
+$$21120_3:
+	.incbin "baserom.dol", 0x333BAC, 0x4
+.global $$21121_1
+$$21121_1:
+	.incbin "baserom.dol", 0x333BB0, 0x4
+.global $$21143_0
+$$21143_0:
+	.incbin "baserom.dol", 0x333BB4, 0x4
+.global $$21231
+$$21231:
+	.incbin "baserom.dol", 0x333BB8, 0x8
+
 .section .text
 
 .global zCombo_ParseINI__FP8xIniFile

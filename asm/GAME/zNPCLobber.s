@@ -54,6 +54,90 @@ lbl_803D8E7C:
 __vt__Q21z32lightweight_system$$0Q21z4bomb$$420$$1:
 	.incbin "baserom.dol", 0x32CD98, 0x28
 
+.section .sdata2
+
+.global $$21260
+$$21260:
+	.incbin "baserom.dol", 0x331828, 0x4
+.global $$21261_0
+$$21261_0:
+	.incbin "baserom.dol", 0x33182C, 0x4
+.global $$21262_0
+$$21262_0:
+	.incbin "baserom.dol", 0x331830, 0x4
+.global $$21263_1
+$$21263_1:
+	.incbin "baserom.dol", 0x331834, 0x4
+.global $$21264_0
+$$21264_0:
+	.incbin "baserom.dol", 0x331838, 0x4
+.global $$21265_1
+$$21265_1:
+	.incbin "baserom.dol", 0x33183C, 0x4
+.global $$21266_1
+$$21266_1:
+	.incbin "baserom.dol", 0x331840, 0x4
+.global $$21267
+$$21267:
+	.incbin "baserom.dol", 0x331844, 0x4
+.global $$21286_0
+$$21286_0:
+	.incbin "baserom.dol", 0x331848, 0x4
+.global $$21317
+$$21317:
+	.incbin "baserom.dol", 0x33184C, 0x4
+.global $$21343
+$$21343:
+	.incbin "baserom.dol", 0x331850, 0x4
+.global $$21413
+$$21413:
+	.incbin "baserom.dol", 0x331854, 0x4
+.global $$21414_0
+$$21414_0:
+	.incbin "baserom.dol", 0x331858, 0x4
+.global $$21439_1
+$$21439_1:
+	.incbin "baserom.dol", 0x33185C, 0x4
+.global lbl_803D4EA0
+lbl_803D4EA0:
+	.incbin "baserom.dol", 0x331860, 0x4
+.global lbl_803D4EA4
+lbl_803D4EA4:
+	.incbin "baserom.dol", 0x331864, 0x4
+.global $$21444
+$$21444:
+	.incbin "baserom.dol", 0x331868, 0x4
+.global $$21445
+$$21445:
+	.incbin "baserom.dol", 0x33186C, 0x4
+.global $$21446_1
+$$21446_1:
+	.incbin "baserom.dol", 0x331870, 0x4
+.global $$21447_1
+$$21447_1:
+	.incbin "baserom.dol", 0x331874, 0x4
+.global $$21448_1
+$$21448_1:
+	.incbin "baserom.dol", 0x331878, 0x4
+.global $$21449_0
+$$21449_0:
+	.incbin "baserom.dol", 0x33187C, 0x4
+.global $$21450
+$$21450:
+	.incbin "baserom.dol", 0x331880, 0x4
+.global $$21457
+$$21457:
+	.incbin "baserom.dol", 0x331884, 0x4
+.global $$21458
+$$21458:
+	.incbin "baserom.dol", 0x331888, 0x4
+.global $$21520_1
+$$21520_1:
+	.incbin "baserom.dol", 0x33188C, 0x4
+.global $$21521_3
+$$21521_3:
+	.incbin "baserom.dol", 0x331890, 0x8
+
 .section .text
 
 .global get_lob_velocity__4zNPCFRC5xVec3RC5xVec3RC5xVec3ff

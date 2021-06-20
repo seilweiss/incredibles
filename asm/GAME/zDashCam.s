@@ -12,6 +12,117 @@ $$2stringBase0_107:
 __vt__Q25zDash6camera:
 	.incbin "baserom.dol", 0x32D1A8, 0x28
 
+.section .sdata2
+
+.global $$21083_3
+$$21083_3:
+	.incbin "baserom.dol", 0x332518, 0x4
+.global $$21084_0
+$$21084_0:
+	.incbin "baserom.dol", 0x33251C, 0x4
+.global $$21085_0
+$$21085_0:
+	.incbin "baserom.dol", 0x332520, 0x4
+.global $$21086_0
+$$21086_0:
+	.incbin "baserom.dol", 0x332524, 0x4
+.global $$21087_2
+$$21087_2:
+	.incbin "baserom.dol", 0x332528, 0x4
+.global $$21088_2
+$$21088_2:
+	.incbin "baserom.dol", 0x33252C, 0x4
+.global $$21089_2
+$$21089_2:
+	.incbin "baserom.dol", 0x332530, 0x4
+.global $$21107_2
+$$21107_2:
+	.incbin "baserom.dol", 0x332534, 0x4
+.global $$21115_0
+$$21115_0:
+	.incbin "baserom.dol", 0x332538, 0x4
+.global lbl_803D5B7C
+lbl_803D5B7C:
+	.incbin "baserom.dol", 0x33253C, 0x4
+.global lbl_803D5B80
+lbl_803D5B80:
+	.incbin "baserom.dol", 0x332540, 0x4
+.global $$21129_1
+$$21129_1:
+	.incbin "baserom.dol", 0x332544, 0x4
+.global $$21166_2
+$$21166_2:
+	.incbin "baserom.dol", 0x332548, 0x4
+.global $$21177_5
+$$21177_5:
+	.incbin "baserom.dol", 0x33254C, 0x4
+.global $$21178_3
+$$21178_3:
+	.incbin "baserom.dol", 0x332550, 0x4
+.global $$21179_2
+$$21179_2:
+	.incbin "baserom.dol", 0x332554, 0x4
+.global $$21180_2
+$$21180_2:
+	.incbin "baserom.dol", 0x332558, 0x4
+.global $$21181_1
+$$21181_1:
+	.incbin "baserom.dol", 0x33255C, 0x4
+.global $$21182_4
+$$21182_4:
+	.incbin "baserom.dol", 0x332560, 0x4
+.global $$21183_4
+$$21183_4:
+	.incbin "baserom.dol", 0x332564, 0x4
+.global $$21184_4
+$$21184_4:
+	.incbin "baserom.dol", 0x332568, 0x4
+.global $$21185_3
+$$21185_3:
+	.incbin "baserom.dol", 0x33256C, 0x4
+.global $$21186_5
+$$21186_5:
+	.incbin "baserom.dol", 0x332570, 0x4
+.global $$21187_5
+$$21187_5:
+	.incbin "baserom.dol", 0x332574, 0x4
+.global $$21188_2
+$$21188_2:
+	.incbin "baserom.dol", 0x332578, 0x4
+.global $$21189_3
+$$21189_3:
+	.incbin "baserom.dol", 0x33257C, 0x4
+.global $$21190_1
+$$21190_1:
+	.incbin "baserom.dol", 0x332580, 0x4
+.global $$21191
+$$21191:
+	.incbin "baserom.dol", 0x332584, 0x4
+.global $$21248_1
+$$21248_1:
+	.incbin "baserom.dol", 0x332588, 0x4
+.global $$21249_1
+$$21249_1:
+	.incbin "baserom.dol", 0x33258C, 0x4
+.global $$21310_1
+$$21310_1:
+	.incbin "baserom.dol", 0x332590, 0x4
+.global $$21311_0
+$$21311_0:
+	.incbin "baserom.dol", 0x332594, 0x4
+.global $$21381
+$$21381:
+	.incbin "baserom.dol", 0x332598, 0x8
+.global $$21383_2
+$$21383_2:
+	.incbin "baserom.dol", 0x3325A0, 0x8
+.global $$21384_0
+$$21384_0:
+	.incbin "baserom.dol", 0x3325A8, 0x8
+.global $$21512
+$$21512:
+	.incbin "baserom.dol", 0x3325B0, 0x8
+
 .section .text
 
 .global init__Q25zDash13camera_splineFR5xBaseR9xDynAssetUl

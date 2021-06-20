@@ -39,6 +39,30 @@ g_localCode:
 g_localEnum:
 	.incbin "baserom.dol", 0x32B594, 0x4
 
+.section .sdata2
+
+.global $$2919_1
+$$2919_1:
+	.incbin "baserom.dol", 0x32F630, 0x4
+.global $$2920_0
+$$2920_0:
+	.incbin "baserom.dol", 0x32F634, 0x4
+.global $$2932_0
+$$2932_0:
+	.incbin "baserom.dol", 0x32F638, 0x4
+.global lbl_803D2C7C
+lbl_803D2C7C:
+	.incbin "baserom.dol", 0x32F63C, 0x4
+.global lbl_803D2C80
+lbl_803D2C80:
+	.incbin "baserom.dol", 0x32F640, 0x4
+.global $$2951
+$$2951:
+	.incbin "baserom.dol", 0x32F644, 0x4
+.global $$21126
+$$21126:
+	.incbin "baserom.dol", 0x32F648, 0x8
+
 .section .text
 
 .global xSTIsLoaded__Fv

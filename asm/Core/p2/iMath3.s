@@ -1,5 +1,35 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2642
+$$2642:
+	.incbin "baserom.dol", 0x32F820, 0x4
+.global $$2644
+$$2644:
+	.incbin "baserom.dol", 0x32F824, 0x4
+.global $$2645
+$$2645:
+	.incbin "baserom.dol", 0x32F828, 0x4
+.global $$2647
+$$2647:
+	.incbin "baserom.dol", 0x32F82C, 0x4
+.global $$2694
+$$2694:
+	.incbin "baserom.dol", 0x32F830, 0x4
+.global $$2695
+$$2695:
+	.incbin "baserom.dol", 0x32F834, 0x4
+.global $$21091_0
+$$21091_0:
+	.incbin "baserom.dol", 0x32F838, 0x4
+.global $$21092_0
+$$21092_0:
+	.incbin "baserom.dol", 0x32F83C, 0x4
+.global $$21093_0
+$$21093_0:
+	.incbin "baserom.dol", 0x32F840, 0x8
+
 .section .text
 
 .global iMath3Init__Fv

@@ -30,6 +30,42 @@ $$2stringBase0_80:
 splash_type__22$$2unnamed$$2zNPCMine_cpp$$2:
 	.incbin "baserom.dol", 0x32CE20, 0x8
 
+.section .sdata2
+
+.global $$21158_4
+$$21158_4:
+	.incbin "baserom.dol", 0x3319B8, 0x4
+.global $$21167_2
+$$21167_2:
+	.incbin "baserom.dol", 0x3319BC, 0x4
+.global $$21177_3
+$$21177_3:
+	.incbin "baserom.dol", 0x3319C0, 0x4
+.global $$21182_1
+$$21182_1:
+	.incbin "baserom.dol", 0x3319C4, 0x4
+.global $$21197
+$$21197:
+	.incbin "baserom.dol", 0x3319C8, 0x4
+.global $$21202_0
+$$21202_0:
+	.incbin "baserom.dol", 0x3319CC, 0x4
+.global $$21203_1
+$$21203_1:
+	.incbin "baserom.dol", 0x3319D0, 0x4
+.global $$21253_0
+$$21253_0:
+	.incbin "baserom.dol", 0x3319D4, 0x4
+.global $$21321_0
+$$21321_0:
+	.incbin "baserom.dol", 0x3319D8, 0x4
+.global $$21322
+$$21322:
+	.incbin "baserom.dol", 0x3319DC, 0x4
+.global $$21323
+$$21323:
+	.incbin "baserom.dol", 0x3319E0, 0x8
+
 .section .text
 
 .global setup__Q24zNPC12initial_animFv

@@ -12,6 +12,33 @@ offs$1001:
 k$1002:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2711
+$$2711:
+	.incbin "baserom.dol", 0x32EEB8, 0x4
+.global $$2712_0
+$$2712_0:
+	.incbin "baserom.dol", 0x32EEBC, 0x4
+.global $$2713
+$$2713:
+	.incbin "baserom.dol", 0x32EEC0, 0x8
+.global $$2716
+$$2716:
+	.incbin "baserom.dol", 0x32EEC8, 0x8
+.global $$2847_0
+$$2847_0:
+	.incbin "baserom.dol", 0x32EED0, 0x4
+.global $$2848_0
+$$2848_0:
+	.incbin "baserom.dol", 0x32EED4, 0x4
+.global $$2850_0
+$$2850_0:
+	.incbin "baserom.dol", 0x32EED8, 0x8
+.global $$21051
+$$21051:
+	.incbin "baserom.dol", 0x32EEE0, 0x8
+
 .section .text
 
 .global xGridBoundInit__FP10xGridBoundPv

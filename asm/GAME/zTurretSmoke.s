@@ -24,6 +24,60 @@ __vt__18zTurretSmokeSystem:
 __vt__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1:
 	.incbin "baserom.dol", 0x32DA58, 0x20
 
+.section .sdata2
+
+.global $$21304_3
+$$21304_3:
+	.incbin "baserom.dol", 0x3336E0, 0x4
+.global $$21305_1
+$$21305_1:
+	.incbin "baserom.dol", 0x3336E4, 0x4
+.global turretSmokeColor__26$$2unnamed$$2zTurretSmoke_cpp$$2
+turretSmokeColor__26$$2unnamed$$2zTurretSmoke_cpp$$2:
+	.incbin "baserom.dol", 0x3336E8, 0x4
+.global $$21329_5
+$$21329_5:
+	.incbin "baserom.dol", 0x3336EC, 0x4
+.global $$21330_4
+$$21330_4:
+	.incbin "baserom.dol", 0x3336F0, 0x4
+.global $$21381_0
+$$21381_0:
+	.incbin "baserom.dol", 0x3336F4, 0x4
+.global $$21382_1
+$$21382_1:
+	.incbin "baserom.dol", 0x3336F8, 0x4
+.global $$21383_4
+$$21383_4:
+	.incbin "baserom.dol", 0x3336FC, 0x4
+.global $$21384_2
+$$21384_2:
+	.incbin "baserom.dol", 0x333700, 0x4
+.global $$21385_2
+$$21385_2:
+	.incbin "baserom.dol", 0x333704, 0x4
+.global $$21386_6
+$$21386_6:
+	.incbin "baserom.dol", 0x333708, 0x4
+.global $$21387_4
+$$21387_4:
+	.incbin "baserom.dol", 0x33370C, 0x4
+.global $$21388_4
+$$21388_4:
+	.incbin "baserom.dol", 0x333710, 0x4
+.global $$21389_6
+$$21389_6:
+	.incbin "baserom.dol", 0x333714, 0x4
+.global $$21391_5
+$$21391_5:
+	.incbin "baserom.dol", 0x333718, 0x8
+.global $$21452_0
+$$21452_0:
+	.incbin "baserom.dol", 0x333720, 0x4
+.global $$21453_0
+$$21453_0:
+	.incbin "baserom.dol", 0x333724, 0x4
+
 .section .text
 
 .global setup__18zTurretSmokeSystemFv

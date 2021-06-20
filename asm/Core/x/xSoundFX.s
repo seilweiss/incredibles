@@ -6,6 +6,12 @@
 $$2922:
 	.incbin "baserom.dol", 0x2FECE0, 0x48
 
+.section .sdata2
+
+.global $$2924_0
+$$2924_0:
+	.incbin "baserom.dol", 0x32F558, 0x8
+
 .section .text
 
 .global xSoundFXWillSendDone__FP8xSoundFX

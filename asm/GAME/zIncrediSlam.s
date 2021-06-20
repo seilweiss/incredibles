@@ -33,6 +33,135 @@ old_rsB:
 incrediSlamMgr__15zIncrediSlamMgr:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$21324_0
+$$21324_0:
+	.incbin "baserom.dol", 0x332680, 0x4
+.global $$21325_1
+$$21325_1:
+	.incbin "baserom.dol", 0x332684, 0x4
+.global $$21326_0
+$$21326_0:
+	.incbin "baserom.dol", 0x332688, 0x4
+.global $$21327
+$$21327:
+	.incbin "baserom.dol", 0x33268C, 0x4
+.global $$21328_1
+$$21328_1:
+	.incbin "baserom.dol", 0x332690, 0x4
+.global $$21329_3
+$$21329_3:
+	.incbin "baserom.dol", 0x332694, 0x4
+.global $$21330_2
+$$21330_2:
+	.incbin "baserom.dol", 0x332698, 0x4
+.global $$21331_3
+$$21331_3:
+	.incbin "baserom.dol", 0x33269C, 0x4
+.global $$21332_6
+$$21332_6:
+	.incbin "baserom.dol", 0x3326A0, 0x4
+.global $$21333_6
+$$21333_6:
+	.incbin "baserom.dol", 0x3326A4, 0x4
+.global $$21334_2
+$$21334_2:
+	.incbin "baserom.dol", 0x3326A8, 0x4
+.global $$21335_2
+$$21335_2:
+	.incbin "baserom.dol", 0x3326AC, 0x4
+.global $$21336_1
+$$21336_1:
+	.incbin "baserom.dol", 0x3326B0, 0x4
+.global $$21337_0
+$$21337_0:
+	.incbin "baserom.dol", 0x3326B4, 0x4
+.global $$21338_1
+$$21338_1:
+	.incbin "baserom.dol", 0x3326B8, 0x4
+.global $$21339
+$$21339:
+	.incbin "baserom.dol", 0x3326BC, 0x4
+.global $$21340_0
+$$21340_0:
+	.incbin "baserom.dol", 0x3326C0, 0x4
+.global $$21341_0
+$$21341_0:
+	.incbin "baserom.dol", 0x3326C4, 0x4
+.global $$21342_0
+$$21342_0:
+	.incbin "baserom.dol", 0x3326C8, 0x4
+.global $$21442_0
+$$21442_0:
+	.incbin "baserom.dol", 0x3326CC, 0x4
+.global $$21443_1
+$$21443_1:
+	.incbin "baserom.dol", 0x3326D0, 0x4
+.global $$21470_3
+$$21470_3:
+	.incbin "baserom.dol", 0x3326D4, 0x4
+.global $$21514_3
+$$21514_3:
+	.incbin "baserom.dol", 0x3326D8, 0x4
+.global $$21515_5
+$$21515_5:
+	.incbin "baserom.dol", 0x3326DC, 0x4
+.global $$21516_3
+$$21516_3:
+	.incbin "baserom.dol", 0x3326E0, 0x4
+.global $$21517_3
+$$21517_3:
+	.incbin "baserom.dol", 0x3326E4, 0x4
+.global $$21518_3
+$$21518_3:
+	.incbin "baserom.dol", 0x3326E8, 0x4
+.global $$21519_3
+$$21519_3:
+	.incbin "baserom.dol", 0x3326EC, 0x4
+.global $$21520_2
+$$21520_2:
+	.incbin "baserom.dol", 0x3326F0, 0x4
+.global $$21654_0
+$$21654_0:
+	.incbin "baserom.dol", 0x3326F4, 0x4
+.global $$21655_3
+$$21655_3:
+	.incbin "baserom.dol", 0x3326F8, 0x4
+.global $$21656_1
+$$21656_1:
+	.incbin "baserom.dol", 0x3326FC, 0x4
+.global $$21657
+$$21657:
+	.incbin "baserom.dol", 0x332700, 0x4
+.global $$21658_0
+$$21658_0:
+	.incbin "baserom.dol", 0x332704, 0x4
+.global $$21659_2
+$$21659_2:
+	.incbin "baserom.dol", 0x332708, 0x4
+.global $$21660_3
+$$21660_3:
+	.incbin "baserom.dol", 0x33270C, 0x4
+.global $$21662_0
+$$21662_0:
+	.incbin "baserom.dol", 0x332710, 0x8
+.global $$21680_1
+$$21680_1:
+	.incbin "baserom.dol", 0x332718, 0x4
+.global $$21681_0
+$$21681_0:
+	.incbin "baserom.dol", 0x33271C, 0x4
+.global $$21682_1
+$$21682_1:
+	.incbin "baserom.dol", 0x332720, 0x24
+.global $$21730_1
+$$21730_1:
+	.incbin "baserom.dol", 0x332744, 0x4
+.global $$21770_2
+$$21770_2:
+	.incbin "baserom.dol", 0x332748, 0x8
+
 .section .text
 
 .global __nw__12zIncrediSlamFUl

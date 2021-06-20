@@ -57,6 +57,27 @@ zcam_far_h:
 zcam_far_pitch:
 	.incbin "baserom.dol", 0x32B86C, 0x4
 
+.section .sdata2
+
+.global $$2682_0
+$$2682_0:
+	.incbin "baserom.dol", 0x32FA58, 0x4
+.global $$2683
+$$2683:
+	.incbin "baserom.dol", 0x32FA5C, 0x4
+.global $$2751_1
+$$2751_1:
+	.incbin "baserom.dol", 0x32FA60, 0x4
+.global $$2752
+$$2752:
+	.incbin "baserom.dol", 0x32FA64, 0x4
+.global $$2786
+$$2786:
+	.incbin "baserom.dol", 0x32FA68, 0x8
+.global $$2848_2
+$$2848_2:
+	.incbin "baserom.dol", 0x32FA70, 0x8
+
 .section .text
 
 .global zCameraTweak_LookPreCalc__FP13zCamTweakLookfff

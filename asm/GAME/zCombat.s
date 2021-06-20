@@ -45,6 +45,42 @@ lbl_803D8AE8:
 lbl_803D8AEC:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$21211
+$$21211:
+	.incbin "baserom.dol", 0x32FBA8, 0x4
+.global $$21212_0
+$$21212_0:
+	.incbin "baserom.dol", 0x32FBAC, 0x4
+.global $$21628
+$$21628:
+	.incbin "baserom.dol", 0x32FBB0, 0x8
+.global $$21731
+$$21731:
+	.incbin "baserom.dol", 0x32FBB8, 0x4
+.global $$21732
+$$21732:
+	.incbin "baserom.dol", 0x32FBBC, 0x4
+.global $$21733
+$$21733:
+	.incbin "baserom.dol", 0x32FBC0, 0x4
+.global $$21757
+$$21757:
+	.incbin "baserom.dol", 0x32FBC4, 0x4
+.global $$21853
+$$21853:
+	.incbin "baserom.dol", 0x32FBC8, 0x4
+.global $$21854
+$$21854:
+	.incbin "baserom.dol", 0x32FBCC, 0x4
+.global $$21907_0
+$$21907_0:
+	.incbin "baserom.dol", 0x32FBD0, 0x4
+.global $$21997
+$$21997:
+	.incbin "baserom.dol", 0x32FBD4, 0x4
+
 .section .text
 
 .global zCombatInit__Fv

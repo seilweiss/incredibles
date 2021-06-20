@@ -30,6 +30,42 @@ lbl_803D9418:
 hChargeAttackGroup__Q24zNPC10run_stream:
 	.incbin "baserom.dol", 0x32DB58, 0x8
 
+.section .sdata2
+
+.global $$21227_0
+$$21227_0:
+	.incbin "baserom.dol", 0x3339B8, 0x4
+.global $$21259_0
+$$21259_0:
+	.incbin "baserom.dol", 0x3339BC, 0x4
+.global $$21260_3
+$$21260_3:
+	.incbin "baserom.dol", 0x3339C0, 0x4
+.global $$21261_4
+$$21261_4:
+	.incbin "baserom.dol", 0x3339C4, 0x4
+.global $$21319_7
+$$21319_7:
+	.incbin "baserom.dol", 0x3339C8, 0x4
+.global $$21328_3
+$$21328_3:
+	.incbin "baserom.dol", 0x3339CC, 0x4
+.global $$21347
+$$21347:
+	.incbin "baserom.dol", 0x3339D0, 0x4
+.global $$21348
+$$21348:
+	.incbin "baserom.dol", 0x3339D4, 0x4
+.global $$21349_0
+$$21349_0:
+	.incbin "baserom.dol", 0x3339D8, 0x4
+.global $$21383_5
+$$21383_5:
+	.incbin "baserom.dol", 0x3339DC, 0x4
+.global $$21413_2
+$$21413_2:
+	.incbin "baserom.dol", 0x3339E0, 0x8
+
 .section .text
 
 .global attack__Q24zNPC10run_streamFP15xAnimTransitionP11xAnimSingle

@@ -18,6 +18,24 @@ lbl_803D8494:
 $$2902_3:
 	.skip 0x30
 
+.section .sdata2
+
+.global $$2685
+$$2685:
+	.incbin "baserom.dol", 0x32E7A8, 0x4
+.global $$2751
+$$2751:
+	.incbin "baserom.dol", 0x32E7AC, 0x4
+.global $$2760
+$$2760:
+	.incbin "baserom.dol", 0x32E7B0, 0x4
+.global $$2762
+$$2762:
+	.incbin "baserom.dol", 0x32E7B4, 0x4
+.global $$21059
+$$21059:
+	.incbin "baserom.dol", 0x32E7B8, 0x8
+
 .section .text
 
 .global xQuickCullForSphere__FP7xQCDataPC7xSphere

@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2684
+$$2684:
+	.incbin "baserom.dol", 0x32E908, 0x4
+.global $$2685_0
+$$2685_0:
+	.incbin "baserom.dol", 0x32E90C, 0x4
+
 .section .text
 
 .global xRayHitsSphereFast__FPC5xRay3PC7xSphere

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2788
+$$2788:
+	.incbin "baserom.dol", 0x32EB88, 0x8
+
 .section .text
 
 .global xFogClearFog__Fv

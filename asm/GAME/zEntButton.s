@@ -18,6 +18,21 @@ sGreenMultiplier:
 sBlueMultiplier:
 	.incbin "baserom.dol", 0x32BD98, 0x8
 
+.section .sdata2
+
+.global $$21039_0
+$$21039_0:
+	.incbin "baserom.dol", 0x330380, 0x4
+.global $$21040_3
+$$21040_3:
+	.incbin "baserom.dol", 0x330384, 0x4
+.global $$21041
+$$21041:
+	.incbin "baserom.dol", 0x330388, 0x4
+.global $$21149_0
+$$21149_0:
+	.incbin "baserom.dol", 0x33038C, 0x4
+
 .section .text
 
 .global zEntButton_Init__FPvPv

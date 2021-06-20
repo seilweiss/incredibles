@@ -21,6 +21,42 @@ subtitleFontWidth__24$$2unnamed$$2xSubTitles_cpp$$2:
 subtitleFontHeight__24$$2unnamed$$2xSubTitles_cpp$$2:
 	.incbin "baserom.dol", 0x32B59C, 0x4
 
+.section .sdata2
+
+.global screen_bounds_2
+screen_bounds_2:
+	.incbin "baserom.dol", 0x32F650, 0x10
+.global $$2757
+$$2757:
+	.incbin "baserom.dol", 0x32F660, 0x4
+.global $$2758
+$$2758:
+	.incbin "baserom.dol", 0x32F664, 0x4
+.global $$2759
+$$2759:
+	.incbin "baserom.dol", 0x32F668, 0x4
+.global $$2760_1
+$$2760_1:
+	.incbin "baserom.dol", 0x32F66C, 0x4
+.global $$2801
+$$2801:
+	.incbin "baserom.dol", 0x32F670, 0x4
+.global $$2824
+$$2824:
+	.incbin "baserom.dol", 0x32F674, 0x4
+.global $$2825
+$$2825:
+	.incbin "baserom.dol", 0x32F678, 0x4
+.global $$2826
+$$2826:
+	.incbin "baserom.dol", 0x32F67C, 0x4
+.global $$2827
+$$2827:
+	.incbin "baserom.dol", 0x32F680, 0x4
+.global $$2828
+$$2828:
+	.incbin "baserom.dol", 0x32F684, 0x4
+
 .section .text
 
 .global xSubTitlesInit__Fv

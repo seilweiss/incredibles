@@ -48,6 +48,72 @@ streak_system_id__13energy_system:
 point_system_id__13energy_system:
 	.incbin "baserom.dol", 0x32DCFC, 0x4
 
+.section .sdata2
+
+.global $$2915_0
+$$2915_0:
+	.incbin "baserom.dol", 0x333D88, 0x4
+.global $$2916_0
+$$2916_0:
+	.incbin "baserom.dol", 0x333D8C, 0x4
+.global $$2951_2
+$$2951_2:
+	.incbin "baserom.dol", 0x333D90, 0x4
+.global $$2952_2
+$$2952_2:
+	.incbin "baserom.dol", 0x333D94, 0x4
+.global $$2953_1
+$$2953_1:
+	.incbin "baserom.dol", 0x333D98, 0x4
+.global $$2954_3
+$$2954_3:
+	.incbin "baserom.dol", 0x333D9C, 0x4
+.global $$2955_2
+$$2955_2:
+	.incbin "baserom.dol", 0x333DA0, 0x4
+.global $$2956_2
+$$2956_2:
+	.incbin "baserom.dol", 0x333DA4, 0x4
+.global $$2957_2
+$$2957_2:
+	.incbin "baserom.dol", 0x333DA8, 0x4
+.global $$2958_1
+$$2958_1:
+	.incbin "baserom.dol", 0x333DAC, 0x4
+.global $$2959_1
+$$2959_1:
+	.incbin "baserom.dol", 0x333DB0, 0x4
+.global $$2960_1
+$$2960_1:
+	.incbin "baserom.dol", 0x333DB4, 0x4
+.global $$2961_4
+$$2961_4:
+	.incbin "baserom.dol", 0x333DB8, 0x4
+.global $$2962_1
+$$2962_1:
+	.incbin "baserom.dol", 0x333DBC, 0x4
+.global $$21028_2
+$$21028_2:
+	.incbin "baserom.dol", 0x333DC0, 0x8
+.global $$21031_3
+$$21031_3:
+	.incbin "baserom.dol", 0x333DC8, 0x8
+.global $$21047_6
+$$21047_6:
+	.incbin "baserom.dol", 0x333DD0, 0x8
+.global $$21177_6
+$$21177_6:
+	.incbin "baserom.dol", 0x333DD8, 0x4
+.global $$21178_6
+$$21178_6:
+	.incbin "baserom.dol", 0x333DDC, 0x4
+.global $$21277_0
+$$21277_0:
+	.incbin "baserom.dol", 0x333DE0, 0x4
+.global $$21278_1
+$$21278_1:
+	.incbin "baserom.dol", 0x333DE4, 0x4
+
 .section .text
 
 .global scene_setup__13energy_systemFv

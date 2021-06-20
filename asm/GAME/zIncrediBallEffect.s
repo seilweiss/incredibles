@@ -36,6 +36,81 @@ cols$1383:
 init$1384:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2983_3
+$$2983_3:
+	.incbin "baserom.dol", 0x334050, 0x4
+.global lbl_803D7694
+lbl_803D7694:
+	.incbin "baserom.dol", 0x334054, 0x4
+.global lbl_803D7698
+lbl_803D7698:
+	.incbin "baserom.dol", 0x334058, 0x4
+.global $$2995_4
+$$2995_4:
+	.incbin "baserom.dol", 0x33405C, 0x4
+.global $$2996_5
+$$2996_5:
+	.incbin "baserom.dol", 0x334060, 0x4
+.global $$2997_4
+$$2997_4:
+	.incbin "baserom.dol", 0x334064, 0x4
+.global $$2998_2
+$$2998_2:
+	.incbin "baserom.dol", 0x334068, 0x8
+.global $$21000_9
+$$21000_9:
+	.incbin "baserom.dol", 0x334070, 0x8
+.global $$21075_0
+$$21075_0:
+	.incbin "baserom.dol", 0x334078, 0x4
+.global $$21076_0
+$$21076_0:
+	.incbin "baserom.dol", 0x33407C, 0x4
+.global $$21101_2
+$$21101_2:
+	.incbin "baserom.dol", 0x334080, 0x4
+.global $$21102_1
+$$21102_1:
+	.incbin "baserom.dol", 0x334084, 0x4
+.global $$21103_3
+$$21103_3:
+	.incbin "baserom.dol", 0x334088, 0x4
+.global $$21222_2
+$$21222_2:
+	.incbin "baserom.dol", 0x33408C, 0x4
+.global $$21223_2
+$$21223_2:
+	.incbin "baserom.dol", 0x334090, 0x4
+.global $$21224_0
+$$21224_0:
+	.incbin "baserom.dol", 0x334094, 0x4
+.global $$21225_0
+$$21225_0:
+	.incbin "baserom.dol", 0x334098, 0x4
+.global $$21226_0
+$$21226_0:
+	.incbin "baserom.dol", 0x33409C, 0x4
+.global $$21257_5
+$$21257_5:
+	.incbin "baserom.dol", 0x3340A0, 0x4
+.global $$21258_3
+$$21258_3:
+	.incbin "baserom.dol", 0x3340A4, 0x4
+.global $$21259_1
+$$21259_1:
+	.incbin "baserom.dol", 0x3340A8, 0x4
+.global $$21349_1
+$$21349_1:
+	.incbin "baserom.dol", 0x3340AC, 0x4
+.global $$21350
+$$21350:
+	.incbin "baserom.dol", 0x3340B0, 0x4
+.global $$21402_2
+$$21402_2:
+	.incbin "baserom.dol", 0x3340B4, 0x4
+
 .section .text
 
 .global add_tweaks__Q232$$2unnamed$$2zIncrediBallEffect_cpp$$25tweakFv

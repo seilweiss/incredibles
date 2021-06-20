@@ -24,6 +24,66 @@ texture__15zNPCSmokeSystem:
 __vt__15zNPCSmokeSystem:
 	.incbin "baserom.dol", 0x32DB48, 0x10
 
+.section .sdata2
+
+.global $$21304_4
+$$21304_4:
+	.incbin "baserom.dol", 0x333960, 0x4
+.global $$21305_2
+$$21305_2:
+	.incbin "baserom.dol", 0x333964, 0x4
+.global NPCSmokeColor
+NPCSmokeColor:
+	.incbin "baserom.dol", 0x333968, 0x4
+.global $$21325_2
+$$21325_2:
+	.incbin "baserom.dol", 0x33396C, 0x4
+.global $$21326_1
+$$21326_1:
+	.incbin "baserom.dol", 0x333970, 0x4
+.global $$21327_0
+$$21327_0:
+	.incbin "baserom.dol", 0x333974, 0x4
+.global $$21356_3
+$$21356_3:
+	.incbin "baserom.dol", 0x333978, 0x4
+.global lbl_803D6FBC
+lbl_803D6FBC:
+	.incbin "baserom.dol", 0x33397C, 0x4
+.global lbl_803D6FC0
+lbl_803D6FC0:
+	.incbin "baserom.dol", 0x333980, 0x8
+.global $$21360_0
+$$21360_0:
+	.incbin "baserom.dol", 0x333988, 0x8
+.global $$21391_6
+$$21391_6:
+	.incbin "baserom.dol", 0x333990, 0x4
+.global $$21425_2
+$$21425_2:
+	.incbin "baserom.dol", 0x333994, 0x4
+.global $$21426_2
+$$21426_2:
+	.incbin "baserom.dol", 0x333998, 0x4
+.global $$21427_4
+$$21427_4:
+	.incbin "baserom.dol", 0x33399C, 0x4
+.global $$21428_4
+$$21428_4:
+	.incbin "baserom.dol", 0x3339A0, 0x4
+.global $$21429_3
+$$21429_3:
+	.incbin "baserom.dol", 0x3339A4, 0x4
+.global $$21430_1
+$$21430_1:
+	.incbin "baserom.dol", 0x3339A8, 0x4
+.global $$21491
+$$21491:
+	.incbin "baserom.dol", 0x3339AC, 0x4
+.global $$21492
+$$21492:
+	.incbin "baserom.dol", 0x3339B0, 0x8
+
 .section .text
 
 .global setup__Q24zNPC16NPCSmokeBehaviorFv

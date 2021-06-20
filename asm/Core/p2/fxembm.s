@@ -45,6 +45,21 @@ BumpWidth:
 Shininess:
 	.incbin "baserom.dol", 0x32DAE8, 0x8
 
+.section .sdata2
+
+.global lbl_803D6EEC
+lbl_803D6EEC:
+	.incbin "baserom.dol", 0x3338AC, 0x4
+.global $$2288
+$$2288:
+	.incbin "baserom.dol", 0x3338B0, 0x1C
+.global lbl_803D6F0C
+lbl_803D6F0C:
+	.incbin "baserom.dol", 0x3338CC, 0x4
+.global $$2289_0
+$$2289_0:
+	.incbin "baserom.dol", 0x3338D0, 0x20
+
 .section .text
 
 .global CreateEMBMEffect__Fv

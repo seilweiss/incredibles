@@ -57,6 +57,117 @@ melee_bot_dust_config__26$$2unnamed$$2zNPCMeleeBot_cpp$$2:
 __vt__12xLightVolume:
 	.incbin "baserom.dol", 0x32D4A4, 0x14
 
+.section .sdata2
+
+.global light_color__Q326$$2unnamed$$2zNPCMeleeBot_cpp$$215melee_bot_tweak4scan
+light_color__Q326$$2unnamed$$2zNPCMeleeBot_cpp$$215melee_bot_tweak4scan:
+	.incbin "baserom.dol", 0x332E08, 0x4
+.global laser_color__Q326$$2unnamed$$2zNPCMeleeBot_cpp$$215melee_bot_tweak4scan
+laser_color__Q326$$2unnamed$$2zNPCMeleeBot_cpp$$215melee_bot_tweak4scan:
+	.incbin "baserom.dol", 0x332E0C, 0x4
+.global $$21270
+$$21270:
+	.incbin "baserom.dol", 0x332E10, 0x4
+.global $$21271
+$$21271:
+	.incbin "baserom.dol", 0x332E14, 0x4
+.global $$21295_3
+$$21295_3:
+	.incbin "baserom.dol", 0x332E18, 0x4
+.global $$21315_1
+$$21315_1:
+	.incbin "baserom.dol", 0x332E1C, 0x4
+.global $$21341_1
+$$21341_1:
+	.incbin "baserom.dol", 0x332E20, 0x4
+.global $$21383_3
+$$21383_3:
+	.incbin "baserom.dol", 0x332E24, 0x4
+.global $$21384_1
+$$21384_1:
+	.incbin "baserom.dol", 0x332E28, 0x4
+.global $$21427_2
+$$21427_2:
+	.incbin "baserom.dol", 0x332E2C, 0x4
+.global $$21428_2
+$$21428_2:
+	.incbin "baserom.dol", 0x332E30, 0x4
+.global physics_properties__Q24zNPC9melee_bot
+physics_properties__Q24zNPC9melee_bot:
+	.incbin "baserom.dol", 0x332E34, 0x2C
+.global $$21527_3
+$$21527_3:
+	.incbin "baserom.dol", 0x332E60, 0x4
+.global $$21544_1
+$$21544_1:
+	.incbin "baserom.dol", 0x332E64, 0x4
+.global $$21551_2
+$$21551_2:
+	.incbin "baserom.dol", 0x332E68, 0x4
+.global $$21552_1
+$$21552_1:
+	.incbin "baserom.dol", 0x332E6C, 0x4
+.global $$21553_2
+$$21553_2:
+	.incbin "baserom.dol", 0x332E70, 0x4
+.global $$21608_1
+$$21608_1:
+	.incbin "baserom.dol", 0x332E74, 0x4
+.global $$21785_0
+$$21785_0:
+	.incbin "baserom.dol", 0x332E78, 0x4
+.global $$21786_1
+$$21786_1:
+	.incbin "baserom.dol", 0x332E7C, 0x4
+.global $$21787_2
+$$21787_2:
+	.incbin "baserom.dol", 0x332E80, 0x4
+.global $$21788_4
+$$21788_4:
+	.incbin "baserom.dol", 0x332E84, 0x4
+.global $$21805_0
+$$21805_0:
+	.incbin "baserom.dol", 0x332E88, 0x4
+.global $$21841_1
+$$21841_1:
+	.incbin "baserom.dol", 0x332E8C, 0x4
+.global $$21842_0
+$$21842_0:
+	.incbin "baserom.dol", 0x332E90, 0x4
+.global $$21870
+$$21870:
+	.incbin "baserom.dol", 0x332E94, 0x4
+.global $$21902_0
+$$21902_0:
+	.incbin "baserom.dol", 0x332E98, 0x8
+.global $$21918
+$$21918:
+	.incbin "baserom.dol", 0x332EA0, 0x4
+.global $$21919
+$$21919:
+	.incbin "baserom.dol", 0x332EA4, 0x4
+.global $$21968
+$$21968:
+	.incbin "baserom.dol", 0x332EA8, 0x4
+.global $$21969
+$$21969:
+	.incbin "baserom.dol", 0x332EAC, 0x4
+.global $$21970
+$$21970:
+	.incbin "baserom.dol", 0x332EB0, 0x4
+.global $$21990
+$$21990:
+	.incbin "baserom.dol", 0x332EB4, 0x4
+.global lbl_803D64F8
+lbl_803D64F8:
+	.incbin "baserom.dol", 0x332EB8, 0x4
+.global lbl_803D64FC
+lbl_803D64FC:
+	.incbin "baserom.dol", 0x332EBC, 0x4
+.global $$22033_0
+$$22033_0:
+	.incbin "baserom.dol", 0x332EC0, 0x8
+
 .section .text
 
 .global add_tweaks__Q226$$2unnamed$$2zNPCMeleeBot_cpp$$215melee_bot_tweakFv

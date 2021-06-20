@@ -18,6 +18,27 @@ sMotionBlurEnabled:
 FLARE_SIZE:
 	.incbin "baserom.dol", 0x32B690, 0x8
 
+.section .sdata2
+
+.global $$2698
+$$2698:
+	.incbin "baserom.dol", 0x32F8E8, 0x8
+.global $$2700_0
+$$2700_0:
+	.incbin "baserom.dol", 0x32F8F0, 0x8
+.global $$2724_0
+$$2724_0:
+	.incbin "baserom.dol", 0x32F8F8, 0x8
+.global $$2788_1
+$$2788_1:
+	.incbin "baserom.dol", 0x32F900, 0x8
+.global $$2829
+$$2829:
+	.incbin "baserom.dol", 0x32F908, 0x4
+.global $$21047_0
+$$21047_0:
+	.incbin "baserom.dol", 0x32F90C, 0x4
+
 .section .text
 
 .global iScrFxInit__Fv

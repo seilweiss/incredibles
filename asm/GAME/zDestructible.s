@@ -51,6 +51,51 @@ RESPAWN_THRESHOLD__27$$2unnamed$$2zDestructible_cpp$$2:
 DOBJ_STD_BOUND_VAR__27$$2unnamed$$2zDestructible_cpp$$2:
 	.incbin "baserom.dol", 0x32BC48, 0x8
 
+.section .sdata2
+
+.global $$21146_0
+$$21146_0:
+	.incbin "baserom.dol", 0x3300C0, 0x4
+.global $$21147_0
+$$21147_0:
+	.incbin "baserom.dol", 0x3300C4, 0x4
+.global $$21176_1
+$$21176_1:
+	.incbin "baserom.dol", 0x3300C8, 0x18
+.global $$21180
+$$21180:
+	.incbin "baserom.dol", 0x3300E0, 0x8
+.global $$21227
+$$21227:
+	.incbin "baserom.dol", 0x3300E8, 0x4
+.global $$21480
+$$21480:
+	.incbin "baserom.dol", 0x3300EC, 0x4
+.global $$21481
+$$21481:
+	.incbin "baserom.dol", 0x3300F0, 0x8
+.global $$21484
+$$21484:
+	.incbin "baserom.dol", 0x3300F8, 0x8
+.global $$21536
+$$21536:
+	.incbin "baserom.dol", 0x330100, 0x4
+.global lbl_803D3744
+lbl_803D3744:
+	.incbin "baserom.dol", 0x330104, 0x4
+.global lbl_803D3748
+lbl_803D3748:
+	.incbin "baserom.dol", 0x330108, 0x4
+.global $$21553_0
+$$21553_0:
+	.incbin "baserom.dol", 0x33010C, 0x4
+.global $$21554
+$$21554:
+	.incbin "baserom.dol", 0x330110, 0x4
+.global $$21582_1
+$$21582_1:
+	.incbin "baserom.dol", 0x330114, 0x4
+
 .section .text
 
 .global UpdateModelBound__27$$2unnamed$$2zDestructible_cpp$$2FP4xEntP14xModelInstanceb

@@ -72,6 +72,12 @@ da_date$764:
 slotname$1200:
 	.incbin "baserom.dol", 0x32B400, 0x20
 
+.section .sdata2
+
+.global $$21009_0
+$$21009_0:
+	.incbin "baserom.dol", 0x32F308, 0x18
+
 .section .text
 
 .global xSGStartup__Fv

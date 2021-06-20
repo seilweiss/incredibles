@@ -42,6 +42,48 @@ lbl_803D8BB0:
 g_hash_xentanim:
 	.incbin "baserom.dol", 0x32BD78, 0x18
 
+.section .sdata2
+
+.global $$21093_1
+$$21093_1:
+	.incbin "baserom.dol", 0x330348, 0x4
+.global $$21094
+$$21094:
+	.incbin "baserom.dol", 0x33034C, 0x4
+.global $$21106
+$$21106:
+	.incbin "baserom.dol", 0x330350, 0x4
+.global $$21107_0
+$$21107_0:
+	.incbin "baserom.dol", 0x330354, 0x4
+.global $$21108_0
+$$21108_0:
+	.incbin "baserom.dol", 0x330358, 0x4
+.global $$21297
+$$21297:
+	.incbin "baserom.dol", 0x33035C, 0x4
+.global $$21550
+$$21550:
+	.incbin "baserom.dol", 0x330360, 0x4
+.global $$21551
+$$21551:
+	.incbin "baserom.dol", 0x330364, 0x4
+.global $$21552
+$$21552:
+	.incbin "baserom.dol", 0x330368, 0x4
+.global $$21553_1
+$$21553_1:
+	.incbin "baserom.dol", 0x33036C, 0x4
+.global $$21554_0
+$$21554_0:
+	.incbin "baserom.dol", 0x330370, 0x4
+.global $$21555
+$$21555:
+	.incbin "baserom.dol", 0x330374, 0x4
+.global $$21556
+$$21556:
+	.incbin "baserom.dol", 0x330378, 0x8
+
 .section .text
 
 .global zEntInit__FP4zEntP9xEntAssetUi

@@ -30,6 +30,15 @@ __vt__11BasicInform:
 __vt__25CUniqueAmountGreaterThanX:
 	.incbin "baserom.dol", 0x32B358, 0x18
 
+.section .sdata2
+
+.global $$21173
+$$21173:
+	.incbin "baserom.dol", 0x32F218, 0x4
+.global $$21212
+$$21212:
+	.incbin "baserom.dol", 0x32F21C, 0x4
+
 .section .text
 
 .global Age__9xOneLinerFf

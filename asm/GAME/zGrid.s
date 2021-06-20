@@ -24,6 +24,36 @@ grabbable_grid:
 zGridInitted:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2945_0
+$$2945_0:
+	.incbin "baserom.dol", 0x330710, 0x4
+.global $$2946
+$$2946:
+	.incbin "baserom.dol", 0x330714, 0x4
+.global $$2947
+$$2947:
+	.incbin "baserom.dol", 0x330718, 0x4
+.global $$2948
+$$2948:
+	.incbin "baserom.dol", 0x33071C, 0x4
+.global $$2949
+$$2949:
+	.incbin "baserom.dol", 0x330720, 0x4
+.global $$2950
+$$2950:
+	.incbin "baserom.dol", 0x330724, 0x4
+.global $$2951_0
+$$2951_0:
+	.incbin "baserom.dol", 0x330728, 0x4
+.global $$2952
+$$2952:
+	.incbin "baserom.dol", 0x33072C, 0x4
+.global $$2953
+$$2953:
+	.incbin "baserom.dol", 0x330730, 0x8
+
 .section .text
 
 .global hack_flag_shadows__FP6zScene

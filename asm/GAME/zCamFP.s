@@ -6,6 +6,24 @@
 __vt__6zCamFP:
 	.incbin "baserom.dol", 0x32B870, 0x28
 
+.section .sdata2
+
+.global $$21013
+$$21013:
+	.incbin "baserom.dol", 0x32FA78, 0x4
+.global $$21014
+$$21014:
+	.incbin "baserom.dol", 0x32FA7C, 0x4
+.global $$21057_0
+$$21057_0:
+	.incbin "baserom.dol", 0x32FA80, 0x4
+.global $$21058_1
+$$21058_1:
+	.incbin "baserom.dol", 0x32FA84, 0x4
+.global $$21059_2
+$$21059_2:
+	.incbin "baserom.dol", 0x32FA88, 0x8
+
 .section .text
 
 .global CopyPosFromPlayer__6zCamFPFP4xEnt

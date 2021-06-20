@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2653_1
+$$2653_1:
+	.incbin "baserom.dol", 0x3320E0, 0x8
+
 .section .text
 
 .global get_world_box__24$$2unnamed$$2zTransient_cpp$$2FR4xBox

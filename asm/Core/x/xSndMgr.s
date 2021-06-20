@@ -42,6 +42,78 @@ gCurrSoundMemoryUsed:
 gHighwaterSoundMemoryUsed:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$21049
+$$21049:
+	.incbin "baserom.dol", 0x32F4F8, 0x4
+.global $$21050
+$$21050:
+	.incbin "baserom.dol", 0x32F4FC, 0x4
+.global speedOfSound__11xSndGlobals
+speedOfSound__11xSndGlobals:
+	.incbin "baserom.dol", 0x32F500, 0x4
+.global $$21177_1
+$$21177_1:
+	.incbin "baserom.dol", 0x32F504, 0x4
+.global $$21178
+$$21178:
+	.incbin "baserom.dol", 0x32F508, 0x4
+.global $$21189_1
+$$21189_1:
+	.incbin "baserom.dol", 0x32F50C, 0x4
+.global $$21190_0
+$$21190_0:
+	.incbin "baserom.dol", 0x32F510, 0x4
+.global $$21234_1
+$$21234_1:
+	.incbin "baserom.dol", 0x32F514, 0x4
+.global $$21235
+$$21235:
+	.incbin "baserom.dol", 0x32F518, 0x4
+.global $$21236_0
+$$21236_0:
+	.incbin "baserom.dol", 0x32F51C, 0x4
+.global $$21256_1
+$$21256_1:
+	.incbin "baserom.dol", 0x32F520, 0x4
+.global $$21257_0
+$$21257_0:
+	.incbin "baserom.dol", 0x32F524, 0x4
+.global $$21363
+$$21363:
+	.incbin "baserom.dol", 0x32F528, 0x4
+.global $$21364
+$$21364:
+	.incbin "baserom.dol", 0x32F52C, 0x4
+.global $$21365
+$$21365:
+	.incbin "baserom.dol", 0x32F530, 0x4
+.global $$21366
+$$21366:
+	.incbin "baserom.dol", 0x32F534, 0x4
+.global $$21499
+$$21499:
+	.incbin "baserom.dol", 0x32F538, 0x4
+.global $$21684_0
+$$21684_0:
+	.incbin "baserom.dol", 0x32F53C, 0x4
+.global $$21685
+$$21685:
+	.incbin "baserom.dol", 0x32F540, 0x4
+.global $$21686_0
+$$21686_0:
+	.incbin "baserom.dol", 0x32F544, 0x4
+.global $$21687
+$$21687:
+	.incbin "baserom.dol", 0x32F548, 0x4
+.global $$22159_0
+$$22159_0:
+	.incbin "baserom.dol", 0x32F54C, 0x4
+.global $$22430
+$$22430:
+	.incbin "baserom.dol", 0x32F550, 0x8
+
 .section .text
 
 .global setup_faders__21$$2unnamed$$2xSndMgr_cpp$$2Fv

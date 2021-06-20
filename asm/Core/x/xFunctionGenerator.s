@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2877_2
+$$2877_2:
+	.incbin "baserom.dol", 0x333B98, 0x8
+
 .section .text
 
 .global FunctionGeneratorEventWrapper__32$$2unnamed$$2xFunctionGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

@@ -12,6 +12,120 @@ $$2stringBase0_146:
 __vt__Q24zHud9BossMeter:
 	.incbin "baserom.dol", 0x32DC40, 0x28
 
+.section .sdata2
+
+.global $$2883_0
+$$2883_0:
+	.incbin "baserom.dol", 0x333B00, 0x4
+.global $$2884_0
+$$2884_0:
+	.incbin "baserom.dol", 0x333B04, 0x4
+.global $$2885
+$$2885:
+	.incbin "baserom.dol", 0x333B08, 0x4
+.global $$2886
+$$2886:
+	.incbin "baserom.dol", 0x333B0C, 0x4
+.global $$2887
+$$2887:
+	.incbin "baserom.dol", 0x333B10, 0x4
+.global $$2888_1
+$$2888_1:
+	.incbin "baserom.dol", 0x333B14, 0x4
+.global $$2889_2
+$$2889_2:
+	.incbin "baserom.dol", 0x333B18, 0x4
+.global $$2890
+$$2890:
+	.incbin "baserom.dol", 0x333B1C, 0x4
+.global $$2891
+$$2891:
+	.incbin "baserom.dol", 0x333B20, 0x4
+.global $$2935_3
+$$2935_3:
+	.incbin "baserom.dol", 0x333B24, 0x4
+.global $$2936_3
+$$2936_3:
+	.incbin "baserom.dol", 0x333B28, 0x4
+.global $$2937_3
+$$2937_3:
+	.incbin "baserom.dol", 0x333B2C, 0x4
+.global $$2938_0
+$$2938_0:
+	.incbin "baserom.dol", 0x333B30, 0x4
+.global $$2939_1
+$$2939_1:
+	.incbin "baserom.dol", 0x333B34, 0x4
+.global $$2940_0
+$$2940_0:
+	.incbin "baserom.dol", 0x333B38, 0x4
+.global $$2941_2
+$$2941_2:
+	.incbin "baserom.dol", 0x333B3C, 0x4
+.global $$2942_0
+$$2942_0:
+	.incbin "baserom.dol", 0x333B40, 0x4
+.global $$2943
+$$2943:
+	.incbin "baserom.dol", 0x333B44, 0x4
+.global $$2944
+$$2944:
+	.incbin "baserom.dol", 0x333B48, 0x4
+.global $$2945_1
+$$2945_1:
+	.incbin "baserom.dol", 0x333B4C, 0x4
+.global $$2946_0
+$$2946_0:
+	.incbin "baserom.dol", 0x333B50, 0x4
+.global $$2947_0
+$$2947_0:
+	.incbin "baserom.dol", 0x333B54, 0x4
+.global $$2948_0
+$$2948_0:
+	.incbin "baserom.dol", 0x333B58, 0x4
+.global $$2949_0
+$$2949_0:
+	.incbin "baserom.dol", 0x333B5C, 0x4
+.global $$2950_0
+$$2950_0:
+	.incbin "baserom.dol", 0x333B60, 0x4
+.global $$2951_1
+$$2951_1:
+	.incbin "baserom.dol", 0x333B64, 0x4
+.global $$2952_1
+$$2952_1:
+	.incbin "baserom.dol", 0x333B68, 0x4
+.global $$2953_0
+$$2953_0:
+	.incbin "baserom.dol", 0x333B6C, 0x4
+.global $$2954_1
+$$2954_1:
+	.incbin "baserom.dol", 0x333B70, 0x4
+.global $$2955_0
+$$2955_0:
+	.incbin "baserom.dol", 0x333B74, 0x4
+.global $$2956_0
+$$2956_0:
+	.incbin "baserom.dol", 0x333B78, 0x4
+.global $$2957_1
+$$2957_1:
+	.incbin "baserom.dol", 0x333B7C, 0x4
+.global $$2958_0
+$$2958_0:
+	.incbin "baserom.dol", 0x333B80, 0x4
+.global $$2959_0
+$$2959_0:
+	.incbin "baserom.dol", 0x333B84, 0x4
+.global $$2960_0
+$$2960_0:
+	.incbin "baserom.dol", 0x333B88, 0x4
+.global $$2961_2
+$$2961_2:
+	.incbin "baserom.dol", 0x333B8C, 0x4
+.global $$2963_0
+$$2963_0:
+	.incbin "baserom.dol", 0x333B90, 0x8
+
 .section .text
 
 .global __ct__Q24zHud9BossMeterFv

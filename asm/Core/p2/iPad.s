@@ -36,6 +36,36 @@ g_rumblingThreshold:
 sPadData:
 	.incbin "baserom.dol", 0x32B60C, 0x34
 
+.section .sdata2
+
+.global $$2980
+$$2980:
+	.incbin "baserom.dol", 0x32F8B8, 0x4
+.global $$2981_0
+$$2981_0:
+	.incbin "baserom.dol", 0x32F8BC, 0x4
+.global $$2982
+$$2982:
+	.incbin "baserom.dol", 0x32F8C0, 0x4
+.global $$2983
+$$2983:
+	.incbin "baserom.dol", 0x32F8C4, 0x4
+.global $$2984_0
+$$2984_0:
+	.incbin "baserom.dol", 0x32F8C8, 0x4
+.global $$21038
+$$21038:
+	.incbin "baserom.dol", 0x32F8CC, 0x4
+.global $$21040_2
+$$21040_2:
+	.incbin "baserom.dol", 0x32F8D0, 0x8
+.global $$21064_0
+$$21064_0:
+	.incbin "baserom.dol", 0x32F8D8, 0x8
+.global $$21065_0
+$$21065_0:
+	.incbin "baserom.dol", 0x32F8E0, 0x8
+
 .section .text
 
 .global iPadInit__Fv

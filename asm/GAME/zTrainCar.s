@@ -21,6 +21,42 @@ first_train_car__9zTrainCar:
 spark_particle_batch_id__9zTrainCar:
 	.incbin "baserom.dol", 0x32D078, 0x8
 
+.section .sdata2
+
+.global $$21053_1
+$$21053_1:
+	.incbin "baserom.dol", 0x3320B0, 0x4
+.global $$21054_3
+$$21054_3:
+	.incbin "baserom.dol", 0x3320B4, 0x4
+.global $$21062_3
+$$21062_3:
+	.incbin "baserom.dol", 0x3320B8, 0x4
+.global $$21096
+$$21096:
+	.incbin "baserom.dol", 0x3320BC, 0x4
+.global $$21112
+$$21112:
+	.incbin "baserom.dol", 0x3320C0, 0x4
+.global $$21113_1
+$$21113_1:
+	.incbin "baserom.dol", 0x3320C4, 0x4
+.global $$21311
+$$21311:
+	.incbin "baserom.dol", 0x3320C8, 0x4
+.global $$21415_0
+$$21415_0:
+	.incbin "baserom.dol", 0x3320CC, 0x4
+.global $$21416_1
+$$21416_1:
+	.incbin "baserom.dol", 0x3320D0, 0x4
+.global $$21465_1
+$$21465_1:
+	.incbin "baserom.dol", 0x3320D4, 0x4
+.global $$21496_1
+$$21496_1:
+	.incbin "baserom.dol", 0x3320D8, 0x8
+
 .section .text
 
 .global Alloc__Q211zFollowPath7segmentFRPQ211zFollowPath7segment

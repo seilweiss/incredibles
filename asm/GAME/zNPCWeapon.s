@@ -42,6 +42,45 @@ counter$1493:
 need_setup__Q24zNPC17ElectricitySystem:
 	.incbin "baserom.dol", 0x32D1F8, 0x8
 
+.section .sdata2
+
+.global $$2934_0
+$$2934_0:
+	.incbin "baserom.dol", 0x332880, 0x4
+.global $$2935_2
+$$2935_2:
+	.incbin "baserom.dol", 0x332884, 0x4
+.global $$21232_1
+$$21232_1:
+	.incbin "baserom.dol", 0x332888, 0x4
+.global $$21233_0
+$$21233_0:
+	.incbin "baserom.dol", 0x33288C, 0x4
+.global $$21234_3
+$$21234_3:
+	.incbin "baserom.dol", 0x332890, 0x4
+.global $$21235_1
+$$21235_1:
+	.incbin "baserom.dol", 0x332894, 0x4
+.global $$21236_2
+$$21236_2:
+	.incbin "baserom.dol", 0x332898, 0x4
+.global $$21237_2
+$$21237_2:
+	.incbin "baserom.dol", 0x33289C, 0x4
+.global $$21282_1
+$$21282_1:
+	.incbin "baserom.dol", 0x3328A0, 0x4
+.global $$21283_0
+$$21283_0:
+	.incbin "baserom.dol", 0x3328A4, 0x4
+.global $$21289_4
+$$21289_4:
+	.incbin "baserom.dol", 0x3328A8, 0x8
+.global $$21420_4
+$$21420_4:
+	.incbin "baserom.dol", 0x3328B0, 0x8
+
 .section .text
 
 .global setup__Q24zNPC17ElectricitySystemFv

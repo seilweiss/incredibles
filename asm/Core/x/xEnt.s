@@ -57,6 +57,102 @@ nsn_angle:
 receive_models$1136:
 	.incbin "baserom.dol", 0x32B104, 0x3C
 
+.section .sdata2
+
+.global $$21065
+$$21065:
+	.incbin "baserom.dol", 0x32EA10, 0x4
+.global $$21066
+$$21066:
+	.incbin "baserom.dol", 0x32EA14, 0x4
+.global $$21219
+$$21219:
+	.incbin "baserom.dol", 0x32EA18, 0x4
+.global $$21237_0
+$$21237_0:
+	.incbin "baserom.dol", 0x32EA1C, 0x4
+.global $$21238
+$$21238:
+	.incbin "baserom.dol", 0x32EA20, 0x4
+.global $$21239
+$$21239:
+	.incbin "baserom.dol", 0x32EA24, 0x4
+.global $$21388_0
+$$21388_0:
+	.incbin "baserom.dol", 0x32EA28, 0x4
+.global $$21389
+$$21389:
+	.incbin "baserom.dol", 0x32EA2C, 0x4
+.global $$21390
+$$21390:
+	.incbin "baserom.dol", 0x32EA30, 0x4
+.global $$21391
+$$21391:
+	.incbin "baserom.dol", 0x32EA34, 0x4
+.global $$21392
+$$21392:
+	.incbin "baserom.dol", 0x32EA38, 0x4
+.global $$21494
+$$21494:
+	.incbin "baserom.dol", 0x32EA3C, 0x4
+.global $$21495
+$$21495:
+	.incbin "baserom.dol", 0x32EA40, 0x8
+.global $$21497
+$$21497:
+	.incbin "baserom.dol", 0x32EA48, 0x8
+.global $$21593
+$$21593:
+	.incbin "baserom.dol", 0x32EA50, 0x4
+.global $$21640
+$$21640:
+	.incbin "baserom.dol", 0x32EA54, 0x4
+.global $$21747
+$$21747:
+	.incbin "baserom.dol", 0x32EA58, 0x4
+.global $$21913
+$$21913:
+	.incbin "baserom.dol", 0x32EA5C, 0x4
+.global $$21914
+$$21914:
+	.incbin "baserom.dol", 0x32EA60, 0x4
+.global $$21915
+$$21915:
+	.incbin "baserom.dol", 0x32EA64, 0x4
+.global $$21916
+$$21916:
+	.incbin "baserom.dol", 0x32EA68, 0x4
+.global $$21994
+$$21994:
+	.incbin "baserom.dol", 0x32EA6C, 0x4
+.global $$22011
+$$22011:
+	.incbin "baserom.dol", 0x32EA70, 0x8
+.global $$22062
+$$22062:
+	.incbin "baserom.dol", 0x32EA78, 0x8
+.global $$22172
+$$22172:
+	.incbin "baserom.dol", 0x32EA80, 0x4
+.global $$22173
+$$22173:
+	.incbin "baserom.dol", 0x32EA84, 0x4
+.global $$22266
+$$22266:
+	.incbin "baserom.dol", 0x32EA88, 0x4
+.global $$22267
+$$22267:
+	.incbin "baserom.dol", 0x32EA8C, 0x4
+.global $$22268
+$$22268:
+	.incbin "baserom.dol", 0x32EA90, 0x4
+.global $$22269
+$$22269:
+	.incbin "baserom.dol", 0x32EA94, 0x4
+.global $$22491
+$$22491:
+	.incbin "baserom.dol", 0x32EA98, 0x8
+
 .section .text
 
 .global reset__Q218$$2unnamed$$2xEnt_cpp$$29anim_collFR4xEnt

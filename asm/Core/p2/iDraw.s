@@ -15,6 +15,27 @@ xfbDisp:
 xfbCopy:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2987
+$$2987:
+	.incbin "baserom.dol", 0x32F7B8, 0x4
+.global $$2988_0
+$$2988_0:
+	.incbin "baserom.dol", 0x32F7BC, 0x4
+.global $$2989_1
+$$2989_1:
+	.incbin "baserom.dol", 0x32F7C0, 0x4
+.global $$2990_1
+$$2990_1:
+	.incbin "baserom.dol", 0x32F7C4, 0x4
+.global $$2991_0
+$$2991_0:
+	.incbin "baserom.dol", 0x32F7C8, 0x8
+.global $$2993_0
+$$2993_0:
+	.incbin "baserom.dol", 0x32F7D0, 0x4
+
 .section .text
 
 .global iDrawSetFBMSK__FUiUib

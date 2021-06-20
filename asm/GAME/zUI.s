@@ -30,6 +30,30 @@ signalUser__17$$2unnamed$$2zUI_cpp$$2:
 bAllowInput__3zUI:
 	.incbin "baserom.dol", 0x32D0A8, 0x8
 
+.section .sdata2
+
+.global $$21134_2
+$$21134_2:
+	.incbin "baserom.dol", 0x332160, 0x4
+.global $$21289_3
+$$21289_3:
+	.incbin "baserom.dol", 0x332164, 0x4
+.global $$21458_0
+$$21458_0:
+	.incbin "baserom.dol", 0x332168, 0x4
+.global $$21459
+$$21459:
+	.incbin "baserom.dol", 0x33216C, 0x4
+.global $$21460_0
+$$21460_0:
+	.incbin "baserom.dol", 0x332170, 0x8
+.global $$21463_1
+$$21463_1:
+	.incbin "baserom.dol", 0x332178, 0x8
+.global $$21467_4
+$$21467_4:
+	.incbin "baserom.dol", 0x332180, 0x8
+
 .section .text
 
 .global UIEventHandler__17$$2unnamed$$2zUI_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

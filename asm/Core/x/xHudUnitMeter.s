@@ -30,6 +30,36 @@ tweak_anim_time_delta__Q24xhud27$$2unnamed$$2xHudUnitMeter_cpp$$2:
 __vt__Q24xhud17unit_meter_widget:
 	.incbin "baserom.dol", 0x32B29C, 0x2C
 
+.section .sdata2
+
+.global $$2903_1
+$$2903_1:
+	.incbin "baserom.dol", 0x32EFB0, 0x4
+.global $$2904_0
+$$2904_0:
+	.incbin "baserom.dol", 0x32EFB4, 0x4
+.global $$2941_0
+$$2941_0:
+	.incbin "baserom.dol", 0x32EFB8, 0x4
+.global lbl_803D25FC
+lbl_803D25FC:
+	.incbin "baserom.dol", 0x32EFBC, 0x4
+.global $$2978
+$$2978:
+	.incbin "baserom.dol", 0x32EFC0, 0x4
+.global $$2979
+$$2979:
+	.incbin "baserom.dol", 0x32EFC4, 0x4
+.global $$2981
+$$2981:
+	.incbin "baserom.dol", 0x32EFC8, 0x8
+.global $$21020
+$$21020:
+	.incbin "baserom.dol", 0x32EFD0, 0x4
+.global $$21021_0
+$$21021_0:
+	.incbin "baserom.dol", 0x32EFD4, 0x4
+
 .section .text
 
 .global load__Q24xhud17unit_meter_widgetFR5xBaseR9xDynAssetUl

@@ -36,6 +36,27 @@ tweak_pitch_scale__Q24xhud23$$2unnamed$$2xHudMeter_cpp$$2:
 __vt__Q24xhud12meter_widget:
 	.incbin "baserom.dol", 0x32B23C, 0x2C
 
+.section .sdata2
+
+.global $$2800
+$$2800:
+	.incbin "baserom.dol", 0x32EF88, 0x4
+.global $$2805
+$$2805:
+	.incbin "baserom.dol", 0x32EF8C, 0x4
+.global $$2818_1
+$$2818_1:
+	.incbin "baserom.dol", 0x32EF90, 0x4
+.global $$2819_1
+$$2819_1:
+	.incbin "baserom.dol", 0x32EF94, 0x4
+.global $$2820_1
+$$2820_1:
+	.incbin "baserom.dol", 0x32EF98, 0x4
+.global $$2821_0
+$$2821_0:
+	.incbin "baserom.dol", 0x32EF9C, 0x4
+
 .section .text
 
 .global __ct__Q24xhud12meter_widgetFRCQ24xhud11meter_asset

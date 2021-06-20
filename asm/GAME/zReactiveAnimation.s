@@ -45,6 +45,33 @@ lbl_803D9300:
 lbl_803D9304:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$21004_3
+$$21004_3:
+	.incbin "baserom.dol", 0x332EC8, 0x4
+.global $$21005_6
+$$21005_6:
+	.incbin "baserom.dol", 0x332ECC, 0x4
+.global $$21205_0
+$$21205_0:
+	.incbin "baserom.dol", 0x332ED0, 0x4
+.global $$21233_1
+$$21233_1:
+	.incbin "baserom.dol", 0x332ED4, 0x4
+.global $$21298_1
+$$21298_1:
+	.incbin "baserom.dol", 0x332ED8, 0x4
+.global $$21418_2
+$$21418_2:
+	.incbin "baserom.dol", 0x332EDC, 0x4
+.global $$21536_2
+$$21536_2:
+	.incbin "baserom.dol", 0x332EE0, 0x4
+.global $$21537_1
+$$21537_1:
+	.incbin "baserom.dol", 0x332EE4, 0x4
+
 .section .text
 
 .global AlwaysConditional__32$$2unnamed$$2zReactiveAnimation_cpp$$2FP15xAnimTransitionP11xAnimSinglePv

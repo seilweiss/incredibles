@@ -6,6 +6,15 @@
 gSceneReset__21$$2unnamed$$2zScript_cpp$$2:
 	.skip 0x10
 
+.section .sdata2
+
+.global $$2964_0
+$$2964_0:
+	.incbin "baserom.dol", 0x331F18, 0x4
+.global $$2999_1
+$$2999_1:
+	.incbin "baserom.dol", 0x331F1C, 0x4
+
 .section .text
 
 .global zScriptInit__FPvPv

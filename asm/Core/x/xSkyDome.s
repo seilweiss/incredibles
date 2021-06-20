@@ -18,6 +18,12 @@ sSkyCount:
 $$2775_0:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2807
+$$2807:
+	.incbin "baserom.dol", 0x32F4F0, 0x8
+
 .section .text
 
 .global xSkyDome_EmptyRender__FP4xEnt

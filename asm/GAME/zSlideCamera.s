@@ -6,6 +6,36 @@
 __vt__9zSlideCam:
 	.incbin "baserom.dol", 0x32CF88, 0x28
 
+.section .sdata2
+
+.global $$2860
+$$2860:
+	.incbin "baserom.dol", 0x331FA8, 0x4
+.global $$2865_0
+$$2865_0:
+	.incbin "baserom.dol", 0x331FAC, 0x4
+.global $$2866_0
+$$2866_0:
+	.incbin "baserom.dol", 0x331FB0, 0x4
+.global $$2867
+$$2867:
+	.incbin "baserom.dol", 0x331FB4, 0x4
+.global $$2868
+$$2868:
+	.incbin "baserom.dol", 0x331FB8, 0x4
+.global $$2932_1
+$$2932_1:
+	.incbin "baserom.dol", 0x331FBC, 0x4
+.global lbl_803D5600
+lbl_803D5600:
+	.incbin "baserom.dol", 0x331FC0, 0x4
+.global lbl_803D5604
+lbl_803D5604:
+	.incbin "baserom.dol", 0x331FC4, 0x4
+.global $$2937_2
+$$2937_2:
+	.incbin "baserom.dol", 0x331FC8, 0x8
+
 .section .text
 
 .global create__9zSlideCamFv

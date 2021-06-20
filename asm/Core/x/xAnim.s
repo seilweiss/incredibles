@@ -27,6 +27,48 @@ tmpBuffer$2083:
 init$2084:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2971
+$$2971:
+	.incbin "baserom.dol", 0x32E710, 0x4
+.global $$2972
+$$2972:
+	.incbin "baserom.dol", 0x32E714, 0x4
+.global $$2973
+$$2973:
+	.incbin "baserom.dol", 0x32E718, 0x8
+.global $$2975
+$$2975:
+	.incbin "baserom.dol", 0x32E720, 0x8
+.global $$21091
+$$21091:
+	.incbin "baserom.dol", 0x32E728, 0x8
+.global $$21187
+$$21187:
+	.incbin "baserom.dol", 0x32E730, 0x8
+.global $$21234
+$$21234:
+	.incbin "baserom.dol", 0x32E738, 0x4
+.global $$21255
+$$21255:
+	.incbin "baserom.dol", 0x32E73C, 0x4
+.global $$21332_1
+$$21332_1:
+	.incbin "baserom.dol", 0x32E740, 0x4
+.global $$21796
+$$21796:
+	.incbin "baserom.dol", 0x32E744, 0x4
+.global $$21819
+$$21819:
+	.incbin "baserom.dol", 0x32E748, 0x4
+.global $$22040
+$$22040:
+	.incbin "baserom.dol", 0x32E74C, 0x4
+.global $$22041
+$$22041:
+	.incbin "baserom.dol", 0x32E750, 0x8
+
 .section .text
 
 .global _xSingleCompare__Fcc

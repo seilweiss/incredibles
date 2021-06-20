@@ -21,6 +21,30 @@ sSweptSpherePenby:
 sSweptSphereIgnoreMovers:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2969
+$$2969:
+	.incbin "baserom.dol", 0x332830, 0x4
+.global $$2970
+$$2970:
+	.incbin "baserom.dol", 0x332834, 0x4
+.global $$2971_2
+$$2971_2:
+	.incbin "baserom.dol", 0x332838, 0x4
+.global $$2982_3
+$$2982_3:
+	.incbin "baserom.dol", 0x33283C, 0x4
+.global $$21059_4
+$$21059_4:
+	.incbin "baserom.dol", 0x332840, 0x4
+.global $$21619_3
+$$21619_3:
+	.incbin "baserom.dol", 0x332844, 0x4
+.global $$21765
+$$21765:
+	.incbin "baserom.dol", 0x332848, 0x8
+
 .section .text
 
 .global Normalize__33$$2unnamed$$2xCollideSweptSphere_cpp$$2FR5xVec3

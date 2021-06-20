@@ -63,6 +63,114 @@ lastTarget:
 sUseStrongVel__30$$2unnamed$$2zThrowableSystem_cpp$$2:
 	.incbin "baserom.dol", 0x32D530, 0x8
 
+.section .sdata2
+
+.global $$21351_2
+$$21351_2:
+	.incbin "baserom.dol", 0x333048, 0x4
+.global $$21352_1
+$$21352_1:
+	.incbin "baserom.dol", 0x33304C, 0x4
+.global $$21356_2
+$$21356_2:
+	.incbin "baserom.dol", 0x333050, 0x4
+.global $$21368_0
+$$21368_0:
+	.incbin "baserom.dol", 0x333054, 0x4
+.global $$21369_0
+$$21369_0:
+	.incbin "baserom.dol", 0x333058, 0x4
+.global $$21421_6
+$$21421_6:
+	.incbin "baserom.dol", 0x33305C, 0x4
+.global $$21422_1
+$$21422_1:
+	.incbin "baserom.dol", 0x333060, 0x4
+.global $$21423_1
+$$21423_1:
+	.incbin "baserom.dol", 0x333064, 0x4
+.global $$21424_1
+$$21424_1:
+	.incbin "baserom.dol", 0x333068, 0x4
+.global $$21425_1
+$$21425_1:
+	.incbin "baserom.dol", 0x33306C, 0x4
+.global $$21426_1
+$$21426_1:
+	.incbin "baserom.dol", 0x333070, 0x4
+.global $$21427_3
+$$21427_3:
+	.incbin "baserom.dol", 0x333074, 0x4
+.global $$21428_3
+$$21428_3:
+	.incbin "baserom.dol", 0x333078, 0x4
+.global $$21429_2
+$$21429_2:
+	.incbin "baserom.dol", 0x33307C, 0x4
+.global $$21430_0
+$$21430_0:
+	.incbin "baserom.dol", 0x333080, 0x4
+.global $$21447_2
+$$21447_2:
+	.incbin "baserom.dol", 0x333084, 0x4
+.global $$21468_1
+$$21468_1:
+	.incbin "baserom.dol", 0x333088, 0x4
+.global $$21469_4
+$$21469_4:
+	.incbin "baserom.dol", 0x33308C, 0x4
+.global nj02_hacked_targets__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2
+nj02_hacked_targets__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.incbin "baserom.dol", 0x333090, 0xC
+.global hacked_targets__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2
+hacked_targets__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.incbin "baserom.dol", 0x33309C, 0x10
+.global $$21645_0
+$$21645_0:
+	.incbin "baserom.dol", 0x3330AC, 0x4
+.global $$21646_0
+$$21646_0:
+	.incbin "baserom.dol", 0x3330B0, 0x4
+.global $$21647
+$$21647:
+	.incbin "baserom.dol", 0x3330B4, 0x4
+.global $$21905
+$$21905:
+	.incbin "baserom.dol", 0x3330B8, 0x4
+.global $$21926_0
+$$21926_0:
+	.incbin "baserom.dol", 0x3330BC, 0x4
+.global $$22064
+$$22064:
+	.incbin "baserom.dol", 0x3330C0, 0x4
+.global $$22065
+$$22065:
+	.incbin "baserom.dol", 0x3330C4, 0x4
+.global $$22066_0
+$$22066_0:
+	.incbin "baserom.dol", 0x3330C8, 0x4
+.global $$22136
+$$22136:
+	.incbin "baserom.dol", 0x3330CC, 0x4
+.global $$22202_0
+$$22202_0:
+	.incbin "baserom.dol", 0x3330D0, 0x4
+.global $$22215
+$$22215:
+	.incbin "baserom.dol", 0x3330D4, 0x4
+.global $$22230
+$$22230:
+	.incbin "baserom.dol", 0x3330D8, 0x4
+.global lbl_803D671C
+lbl_803D671C:
+	.incbin "baserom.dol", 0x3330DC, 0x4
+.global lbl_803D6720
+lbl_803D6720:
+	.incbin "baserom.dol", 0x3330E0, 0x4
+.global lbl_803D6724
+lbl_803D6724:
+	.incbin "baserom.dol", 0x3330E4, 0x4
+
 .section .text
 
 .global UintCompare__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUi

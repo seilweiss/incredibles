@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$21000_1
+$$21000_1:
+	.incbin "baserom.dol", 0x32F1E0, 0x4
+.global $$21009
+$$21009:
+	.incbin "baserom.dol", 0x32F1E4, 0x4
+.global $$21010_0
+$$21010_0:
+	.incbin "baserom.dol", 0x32F1E8, 0x4
+.global $$21011_0
+$$21011_0:
+	.incbin "baserom.dol", 0x32F1EC, 0x4
+.global $$21037_0
+$$21037_0:
+	.incbin "baserom.dol", 0x32F1F0, 0x8
+
 .section .text
 
 .global get_triangle__Q36xAsset15navigation_mesh8sub_meshCFRC5xVec3i

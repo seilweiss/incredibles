@@ -144,6 +144,21 @@ $$21003_4:
 var_tag$1220:
 	.incbin "baserom.dol", 0x32D0E0, 0x18
 
+.section .sdata2
+
+.global state_text$1074
+state_text$1074:
+	.incbin "baserom.dol", 0x332258, 0x10
+.global $$21318_1
+$$21318_1:
+	.incbin "baserom.dol", 0x332268, 0x4
+.global $$21319_3
+$$21319_3:
+	.incbin "baserom.dol", 0x33226C, 0x4
+.global $$21521_4
+$$21521_4:
+	.incbin "baserom.dol", 0x332270, 0x8
+
 .section .text
 
 .global zVarEntryCB_IsSignedIn__FPv

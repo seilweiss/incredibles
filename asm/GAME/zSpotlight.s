@@ -33,6 +33,45 @@ aura_cone_atomics_size__24$$2unnamed$$2zSpotlight_cpp$$2:
 __vt__Q210zSpotlight17light_volume_type:
 	.incbin "baserom.dol", 0x32D4E8, 0x18
 
+.section .sdata2
+
+.global $$21059_6
+$$21059_6:
+	.incbin "baserom.dol", 0x332FC0, 0x4
+.global $$21060_2
+$$21060_2:
+	.incbin "baserom.dol", 0x332FC4, 0x4
+.global $$21156_2
+$$21156_2:
+	.incbin "baserom.dol", 0x332FC8, 0x4
+.global $$21157_4
+$$21157_4:
+	.incbin "baserom.dol", 0x332FCC, 0x4
+.global $$21158_6
+$$21158_6:
+	.incbin "baserom.dol", 0x332FD0, 0x4
+.global $$21159_2
+$$21159_2:
+	.incbin "baserom.dol", 0x332FD4, 0x4
+.global $$21249_2
+$$21249_2:
+	.incbin "baserom.dol", 0x332FD8, 0x8
+.global $$21252_1
+$$21252_1:
+	.incbin "baserom.dol", 0x332FE0, 0x8
+.global $$21483
+$$21483:
+	.incbin "baserom.dol", 0x332FE8, 0x4
+.global $$21484_0
+$$21484_0:
+	.incbin "baserom.dol", 0x332FEC, 0x4
+.global $$21485
+$$21485:
+	.incbin "baserom.dol", 0x332FF0, 0x4
+.global $$21587_0
+$$21587_0:
+	.incbin "baserom.dol", 0x332FF4, 0x4
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2zSpotlight_cpp$$25tweakFv

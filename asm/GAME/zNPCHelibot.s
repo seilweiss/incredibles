@@ -69,6 +69,78 @@ min_y__Q24zNPC11glow_streak:
 color__Q24zNPC11glow_streak:
 	.incbin "baserom.dol", 0x32D560, 0x8
 
+.section .sdata2
+
+.global $$21297_3
+$$21297_3:
+	.incbin "baserom.dol", 0x3330E8, 0x4
+.global $$21298_3
+$$21298_3:
+	.incbin "baserom.dol", 0x3330EC, 0x4
+.global $$21306_1
+$$21306_1:
+	.incbin "baserom.dol", 0x3330F0, 0x4
+.global $$21334_4
+$$21334_4:
+	.incbin "baserom.dol", 0x3330F4, 0x4
+.global $$21335_4
+$$21335_4:
+	.incbin "baserom.dol", 0x3330F8, 0x4
+.global $$21336_2
+$$21336_2:
+	.incbin "baserom.dol", 0x3330FC, 0x4
+.global $$21340_1
+$$21340_1:
+	.incbin "baserom.dol", 0x333100, 0x8
+.global $$21354_5
+$$21354_5:
+	.incbin "baserom.dol", 0x333108, 0x4
+.global AIM_TARGET__4zNPC
+AIM_TARGET__4zNPC:
+	.incbin "baserom.dol", 0x33310C, 0xC
+.global $$21379_1
+$$21379_1:
+	.incbin "baserom.dol", 0x333118, 0x4
+.global $$21402_1
+$$21402_1:
+	.incbin "baserom.dol", 0x33311C, 0x4
+.global $$21473_5
+$$21473_5:
+	.incbin "baserom.dol", 0x333120, 0x4
+.global $$21539_2
+$$21539_2:
+	.incbin "baserom.dol", 0x333124, 0x4
+.global $$21540_1
+$$21540_1:
+	.incbin "baserom.dol", 0x333128, 0x4
+.global $$21556_1
+$$21556_1:
+	.incbin "baserom.dol", 0x33312C, 0x4
+.global $$21557_0
+$$21557_0:
+	.incbin "baserom.dol", 0x333130, 0x4
+.global $$21558
+$$21558:
+	.incbin "baserom.dol", 0x333134, 0x4
+.global $$21599_3
+$$21599_3:
+	.incbin "baserom.dol", 0x333138, 0x4
+.global physics_properties__Q24zNPC7helibot
+physics_properties__Q24zNPC7helibot:
+	.incbin "baserom.dol", 0x33313C, 0x2C
+.global $$21685_1
+$$21685_1:
+	.incbin "baserom.dol", 0x333168, 0x4
+.global $$21686_1
+$$21686_1:
+	.incbin "baserom.dol", 0x33316C, 0x4
+.global $$21687_1
+$$21687_1:
+	.incbin "baserom.dol", 0x333170, 0x4
+.global $$21771_1
+$$21771_1:
+	.incbin "baserom.dol", 0x333174, 0x4
+
 .section .text
 
 .global setup__Q24zNPC16energy_glow_boneFv

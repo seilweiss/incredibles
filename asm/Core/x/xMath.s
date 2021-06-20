@@ -15,6 +15,69 @@ rndseed:
 lbl_803CEEFC:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2854_1
+$$2854_1:
+	.incbin "baserom.dol", 0x32F048, 0x4
+.global $$2855_2
+$$2855_2:
+	.incbin "baserom.dol", 0x32F04C, 0x4
+.global $$2856_0
+$$2856_0:
+	.incbin "baserom.dol", 0x32F050, 0x4
+.global $$2857_0
+$$2857_0:
+	.incbin "baserom.dol", 0x32F054, 0x4
+.global $$2858_0
+$$2858_0:
+	.incbin "baserom.dol", 0x32F058, 0x4
+.global $$2863
+$$2863:
+	.incbin "baserom.dol", 0x32F05C, 0x4
+.global $$2865
+$$2865:
+	.incbin "baserom.dol", 0x32F060, 0x8
+.global $$2905
+$$2905:
+	.incbin "baserom.dol", 0x32F068, 0x8
+.global $$2923
+$$2923:
+	.incbin "baserom.dol", 0x32F070, 0x4
+.global $$2972_1
+$$2972_1:
+	.incbin "baserom.dol", 0x32F074, 0x4
+.global $$2999
+$$2999:
+	.incbin "baserom.dol", 0x32F078, 0x4
+.global $$21010
+$$21010:
+	.incbin "baserom.dol", 0x32F07C, 0x4
+.global $$21031
+$$21031:
+	.incbin "baserom.dol", 0x32F080, 0x4
+.global $$21116
+$$21116:
+	.incbin "baserom.dol", 0x32F084, 0x4
+.global $$21313
+$$21313:
+	.incbin "baserom.dol", 0x32F088, 0x4
+.global $$21396
+$$21396:
+	.incbin "baserom.dol", 0x32F08C, 0x4
+.global $$21514
+$$21514:
+	.incbin "baserom.dol", 0x32F090, 0x4
+.global $$21515
+$$21515:
+	.incbin "baserom.dol", 0x32F094, 0x4
+.global $$21516
+$$21516:
+	.incbin "baserom.dol", 0x32F098, 0x4
+.global $$21517
+$$21517:
+	.incbin "baserom.dol", 0x32F09C, 0x4
+
 .section .text
 
 .global xMathInit__Fv

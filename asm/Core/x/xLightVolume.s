@@ -15,6 +15,12 @@ activities_used__12xLightVolume:
 __vt__17xLightVolumeModel:
 	.incbin "baserom.dol", 0x32D850, 0x10
 
+.section .sdata2
+
+.global $$21069_7
+$$21069_7:
+	.incbin "baserom.dol", 0x3334F0, 0x8
+
 .section .text
 
 .global scene_enter__12xLightVolumeFv

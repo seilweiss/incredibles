@@ -39,6 +39,27 @@ lbl_803D8704:
 lbl_803D8708:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21186
+$$21186:
+	.incbin "baserom.dol", 0x32EFF0, 0x4
+.global $$21234_0
+$$21234_0:
+	.incbin "baserom.dol", 0x32EFF4, 0x4
+.global $$21236
+$$21236:
+	.incbin "baserom.dol", 0x32EFF8, 0x8
+.global $$21320
+$$21320:
+	.incbin "baserom.dol", 0x32F000, 0x4
+.global $$21521_0
+$$21521_0:
+	.incbin "baserom.dol", 0x32F004, 0x4
+.global $$21522
+$$21522:
+	.incbin "baserom.dol", 0x32F008, 0x8
+
 .section .text
 
 .global CountAtomicCB__FP8RpAtomicPv

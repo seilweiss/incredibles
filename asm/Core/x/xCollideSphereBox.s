@@ -9,6 +9,27 @@ box_faces__31$$2unnamed$$2xCollideSphereBox_cpp$$2:
 box_edges__31$$2unnamed$$2xCollideSphereBox_cpp$$2:
 	.incbin "baserom.dol", 0x30EDD0, 0x90
 
+.section .sdata2
+
+.global $$21088_3
+$$21088_3:
+	.incbin "baserom.dol", 0x3328B8, 0x4
+.global $$21089_3
+$$21089_3:
+	.incbin "baserom.dol", 0x3328BC, 0x4
+.global $$21093_3
+$$21093_3:
+	.incbin "baserom.dol", 0x3328C0, 0x4
+.global $$21094_0
+$$21094_0:
+	.incbin "baserom.dol", 0x3328C4, 0x4
+.global $$21098_0
+$$21098_0:
+	.incbin "baserom.dol", 0x3328C8, 0x4
+.global $$21101_1
+$$21101_1:
+	.incbin "baserom.dol", 0x3328CC, 0x4
+
 .section .text
 
 .global xSweptSphereToBox__FR12xSweptSphereRC4xBox

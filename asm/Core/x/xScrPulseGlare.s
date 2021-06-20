@@ -9,6 +9,57 @@ glare_mgr__28$$2unnamed$$2xScrPulseGlare_cpp$$2:
 sStripVert$715:
 	.skip 0x90
 
+.section .sdata2
+
+.global $$2654_0
+$$2654_0:
+	.incbin "baserom.dol", 0x332750, 0x4
+.global $$2655_0
+$$2655_0:
+	.incbin "baserom.dol", 0x332754, 0x4
+.global $$2656
+$$2656:
+	.incbin "baserom.dol", 0x332758, 0x4
+.global $$2657_0
+$$2657_0:
+	.incbin "baserom.dol", 0x33275C, 0x4
+.global $$2662_0
+$$2662_0:
+	.incbin "baserom.dol", 0x332760, 0x8
+.global $$2664_0
+$$2664_0:
+	.incbin "baserom.dol", 0x332768, 0x8
+.global $$2670
+$$2670:
+	.incbin "baserom.dol", 0x332770, 0x4
+.global $$2671
+$$2671:
+	.incbin "baserom.dol", 0x332774, 0x4
+.global $$2672_0
+$$2672_0:
+	.incbin "baserom.dol", 0x332778, 0x4
+.global $$2673
+$$2673:
+	.incbin "baserom.dol", 0x33277C, 0x4
+.global $$2674_1
+$$2674_1:
+	.incbin "baserom.dol", 0x332780, 0x4
+.global $$2687_0
+$$2687_0:
+	.incbin "baserom.dol", 0x332784, 0x4
+.global $$2827_0
+$$2827_0:
+	.incbin "baserom.dol", 0x332788, 0x4
+.global $$2828_0
+$$2828_0:
+	.incbin "baserom.dol", 0x33278C, 0x4
+.global $$2829_0
+$$2829_0:
+	.incbin "baserom.dol", 0x332790, 0x4
+.global $$2830
+$$2830:
+	.incbin "baserom.dol", 0x332794, 0x4
+
 .section .text
 
 .global init_pulse__28$$2unnamed$$2xScrPulseGlare_cpp$$2FRQ228$$2unnamed$$2xScrPulseGlare_cpp$$26xPulse

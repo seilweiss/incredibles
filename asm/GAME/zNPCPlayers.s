@@ -42,6 +42,33 @@ lbl_803D94A4:
 lbl_803D94A8:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21291_7
+$$21291_7:
+	.incbin "baserom.dol", 0x333C58, 0x8
+.global $$21341_2
+$$21341_2:
+	.incbin "baserom.dol", 0x333C60, 0x4
+.global $$21342_1
+$$21342_1:
+	.incbin "baserom.dol", 0x333C64, 0x4
+.global $$21371_1
+$$21371_1:
+	.incbin "baserom.dol", 0x333C68, 0x4
+.global $$21372_2
+$$21372_2:
+	.incbin "baserom.dol", 0x333C6C, 0x4
+.global $$21373_1
+$$21373_1:
+	.incbin "baserom.dol", 0x333C70, 0x4
+.global $$21374_2
+$$21374_2:
+	.incbin "baserom.dol", 0x333C74, 0x4
+.global $$21375_1
+$$21375_1:
+	.incbin "baserom.dol", 0x333C78, 0x8
+
 .section .text
 
 .global reset__Q24zNPC10health_hudFv

@@ -90,6 +90,51 @@ dtscale:
 credits_time:
 	.incbin "baserom.dol", 0x32B030, 0x8
 
+.section .sdata2
+
+.global screen_bounds
+screen_bounds:
+	.incbin "baserom.dol", 0x32E878, 0x10
+.global $$2876_0
+$$2876_0:
+	.incbin "baserom.dol", 0x32E888, 0x4
+.global $$2878
+$$2878:
+	.incbin "baserom.dol", 0x32E88C, 0x4
+.global $$2880_0
+$$2880_0:
+	.incbin "baserom.dol", 0x32E890, 0x4
+.global $$2902_1
+$$2902_1:
+	.incbin "baserom.dol", 0x32E894, 0x4
+.global $$2903_0
+$$2903_0:
+	.incbin "baserom.dol", 0x32E898, 0x8
+.global $$2919_0
+$$2919_0:
+	.incbin "baserom.dol", 0x32E8A0, 0x8
+.global $$21174_1
+$$21174_1:
+	.incbin "baserom.dol", 0x32E8A8, 0x4
+.global $$21175_0
+$$21175_0:
+	.incbin "baserom.dol", 0x32E8AC, 0x4
+.global $$21176_0
+$$21176_0:
+	.incbin "baserom.dol", 0x32E8B0, 0x4
+.global $$21177_0
+$$21177_0:
+	.incbin "baserom.dol", 0x32E8B4, 0x4
+.global $$21216
+$$21216:
+	.incbin "baserom.dol", 0x32E8B8, 0x8
+.global $$21218
+$$21218:
+	.incbin "baserom.dol", 0x32E8C0, 0x8
+.global $$21242
+$$21242:
+	.incbin "baserom.dol", 0x32E8C8, 0x8
+
 .section .text
 
 .global Decrypt__FPvUiPCvUi

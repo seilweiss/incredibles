@@ -21,6 +21,30 @@ init$948:
 __vt__Q24xhud11text_widget:
 	.incbin "baserom.dol", 0x32D368, 0x30
 
+.section .sdata2
+
+.global $$2905_2
+$$2905_2:
+	.incbin "baserom.dol", 0x332C68, 0x8
+.global $$2907_2
+$$2907_2:
+	.incbin "baserom.dol", 0x332C70, 0x8
+.global $$2922_0
+$$2922_0:
+	.incbin "baserom.dol", 0x332C78, 0x4
+.global $$2969_0
+$$2969_0:
+	.incbin "baserom.dol", 0x332C7C, 0x4
+.global $$2970_1
+$$2970_1:
+	.incbin "baserom.dol", 0x332C80, 0x4
+.global $$2971_4
+$$2971_4:
+	.incbin "baserom.dol", 0x332C84, 0x4
+.global $$21029_3
+$$21029_3:
+	.incbin "baserom.dol", 0x332C88, 0x8
+
 .section .text
 
 .global load__Q24xhud11text_widgetFR5xBaseR9xDynAssetUl

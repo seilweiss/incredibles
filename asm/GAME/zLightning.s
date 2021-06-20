@@ -117,6 +117,102 @@ sLFuncSlopeRange:
 sLFuncUVSpeed:
 	.incbin "baserom.dol", 0x32C170, 0x8
 
+.section .sdata2
+
+.global $$21035_2
+$$21035_2:
+	.incbin "baserom.dol", 0x330A48, 0x4
+.global $$21036_2
+$$21036_2:
+	.incbin "baserom.dol", 0x330A4C, 0x4
+.global $$21045_0
+$$21045_0:
+	.incbin "baserom.dol", 0x330A50, 0x4
+.global sNumStrips
+sNumStrips:
+	.incbin "baserom.dol", 0x330A54, 0x4
+.global $$21057_1
+$$21057_1:
+	.incbin "baserom.dol", 0x330A58, 0x4
+.global $$21058_2
+$$21058_2:
+	.incbin "baserom.dol", 0x330A5C, 0x4
+.global $$21059_3
+$$21059_3:
+	.incbin "baserom.dol", 0x330A60, 0x4
+.global $$21100
+$$21100:
+	.incbin "baserom.dol", 0x330A64, 0x4
+.global $$21101_0
+$$21101_0:
+	.incbin "baserom.dol", 0x330A68, 0x4
+.global $$21102_0
+$$21102_0:
+	.incbin "baserom.dol", 0x330A6C, 0x4
+.global $$21103_1
+$$21103_1:
+	.incbin "baserom.dol", 0x330A70, 0x4
+.global $$21104_0
+$$21104_0:
+	.incbin "baserom.dol", 0x330A74, 0x4
+.global $$21105_0
+$$21105_0:
+	.incbin "baserom.dol", 0x330A78, 0x4
+.global $$21106_0
+$$21106_0:
+	.incbin "baserom.dol", 0x330A7C, 0x4
+.global $$21107_1
+$$21107_1:
+	.incbin "baserom.dol", 0x330A80, 0x4
+.global $$21108_1
+$$21108_1:
+	.incbin "baserom.dol", 0x330A84, 0x4
+.global $$21109_1
+$$21109_1:
+	.incbin "baserom.dol", 0x330A88, 0x4
+.global $$21110
+$$21110:
+	.incbin "baserom.dol", 0x330A8C, 0x4
+.global $$21111_0
+$$21111_0:
+	.incbin "baserom.dol", 0x330A90, 0x8
+.global $$21113_0
+$$21113_0:
+	.incbin "baserom.dol", 0x330A98, 0x8
+.global $$21119_0
+$$21119_0:
+	.incbin "baserom.dol", 0x330AA0, 0x8
+.global $$21200_0
+$$21200_0:
+	.incbin "baserom.dol", 0x330AA8, 0x4
+.global $$21201_1
+$$21201_1:
+	.incbin "baserom.dol", 0x330AAC, 0x4
+.global $$21340
+$$21340:
+	.incbin "baserom.dol", 0x330AB0, 0x4
+.global $$21722_1
+$$21722_1:
+	.incbin "baserom.dol", 0x330AB4, 0x4
+.global $$21723
+$$21723:
+	.incbin "baserom.dol", 0x330AB8, 0x4
+.global $$21724_0
+$$21724_0:
+	.incbin "baserom.dol", 0x330ABC, 0x4
+.global $$21725
+$$21725:
+	.incbin "baserom.dol", 0x330AC0, 0x4
+.global $$21831
+$$21831:
+	.incbin "baserom.dol", 0x330AC4, 0x4
+.global $$21930
+$$21930:
+	.incbin "baserom.dol", 0x330AC8, 0x4
+.global $$21931
+$$21931:
+	.incbin "baserom.dol", 0x330ACC, 0x4
+
 .section .text
 
 .global Init__16zLightningWidgetFR5xBaseR9xDynAssetUl

@@ -54,6 +54,39 @@ modelDefaultPipe:
 lbl_803CB79C:
 	.incbin "baserom.dol", 0x32B2DC, 0x4
 
+.section .sdata2
+
+.global $$21019
+$$21019:
+	.incbin "baserom.dol", 0x32F168, 0x4
+.global $$21020_0
+$$21020_0:
+	.incbin "baserom.dol", 0x32F16C, 0x4
+.global $$21021_1
+$$21021_1:
+	.incbin "baserom.dol", 0x32F170, 0x4
+.global $$21022
+$$21022:
+	.incbin "baserom.dol", 0x32F174, 0x4
+.global $$21023
+$$21023:
+	.incbin "baserom.dol", 0x32F178, 0x8
+.global $$21025_0
+$$21025_0:
+	.incbin "baserom.dol", 0x32F180, 0x8
+.global $$21174_2
+$$21174_2:
+	.incbin "baserom.dol", 0x32F188, 0x4
+.global $$21219_0
+$$21219_0:
+	.incbin "baserom.dol", 0x32F18C, 0x4
+.global $$21309_0
+$$21309_0:
+	.incbin "baserom.dol", 0x32F190, 0x4
+.global $$21586
+$$21586:
+	.incbin "baserom.dol", 0x32F194, 0x4
+
 .section .text
 
 .global xModelGetPipe__FP8RpAtomic

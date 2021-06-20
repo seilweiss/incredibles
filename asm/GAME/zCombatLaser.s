@@ -63,6 +63,87 @@ __vt__Q21z5laser:
 __vt__Q21z26lightweight$$0Q21z5laser$$440$$1:
 	.incbin "baserom.dol", 0x32BAAC, 0x24
 
+.section .sdata2
+
+.global $$21046_0
+$$21046_0:
+	.incbin "baserom.dol", 0x32FCB8, 0x4
+.global $$21047_1
+$$21047_1:
+	.incbin "baserom.dol", 0x32FCBC, 0x4
+.global $$21062_2
+$$21062_2:
+	.incbin "baserom.dol", 0x32FCC0, 0x4
+.global $$21063_0
+$$21063_0:
+	.incbin "baserom.dol", 0x32FCC4, 0x4
+.global $$21064_1
+$$21064_1:
+	.incbin "baserom.dol", 0x32FCC8, 0x4
+.global $$21065_1
+$$21065_1:
+	.incbin "baserom.dol", 0x32FCCC, 0x4
+.global $$21066_0
+$$21066_0:
+	.incbin "baserom.dol", 0x32FCD0, 0x8
+.global $$21085
+$$21085:
+	.incbin "baserom.dol", 0x32FCD8, 0x8
+.global $$21103_0
+$$21103_0:
+	.incbin "baserom.dol", 0x32FCE0, 0x4
+.global $$21141
+$$21141:
+	.incbin "baserom.dol", 0x32FCE4, 0x4
+.global $$21142_0
+$$21142_0:
+	.incbin "baserom.dol", 0x32FCE8, 0x4
+.global $$21143
+$$21143:
+	.incbin "baserom.dol", 0x32FCEC, 0x4
+.global $$21144_1
+$$21144_1:
+	.incbin "baserom.dol", 0x32FCF0, 0x4
+.global $$21145
+$$21145:
+	.incbin "baserom.dol", 0x32FCF4, 0x4
+.global $$21146
+$$21146:
+	.incbin "baserom.dol", 0x32FCF8, 0x4
+.global $$21147
+$$21147:
+	.incbin "baserom.dol", 0x32FCFC, 0x4
+.global $$21148
+$$21148:
+	.incbin "baserom.dol", 0x32FD00, 0x4
+.global $$21149
+$$21149:
+	.incbin "baserom.dol", 0x32FD04, 0x4
+.global $$21150
+$$21150:
+	.incbin "baserom.dol", 0x32FD08, 0x4
+.global $$21367
+$$21367:
+	.incbin "baserom.dol", 0x32FD0C, 0x4
+.global $$21369
+$$21369:
+	.incbin "baserom.dol", 0x32FD10, 0x8
+.global $$21470_1
+$$21470_1:
+	.incbin "baserom.dol", 0x32FD18, 0x4
+.global $$21471_0
+$$21471_0:
+	.incbin "baserom.dol", 0x32FD1C, 0x4
+.global $$21472_0
+$$21472_0:
+	.incbin "baserom.dol", 0x32FD20, 0x4
+.global $$21473_1
+$$21473_1:
+	.incbin "baserom.dol", 0x32FD24, 0x4
+.global $$21474_0
+$$21474_0:
+	.incbin "baserom.dol", 0x32FD28, 0x8
+
 .section .text
 
 .global zLaserLavaEmit__1zFfP18zTimeHandlerStruct

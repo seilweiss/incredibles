@@ -54,6 +54,45 @@ effect$1405:
 g_zdsp_depot:
 	.incbin "baserom.dol", 0x32BC50, 0x8
 
+.section .sdata2
+
+.global $$21086
+$$21086:
+	.incbin "baserom.dol", 0x330118, 0x4
+.global $$21087_1
+$$21087_1:
+	.incbin "baserom.dol", 0x33011C, 0x4
+.global $$21379
+$$21379:
+	.incbin "baserom.dol", 0x330120, 0x4
+.global lbl_803D3764
+lbl_803D3764:
+	.incbin "baserom.dol", 0x330124, 0x4
+.global lbl_803D3768
+lbl_803D3768:
+	.incbin "baserom.dol", 0x330128, 0x4
+.global lbl_803D376C
+lbl_803D376C:
+	.incbin "baserom.dol", 0x33012C, 0x4
+.global $$21472_2
+$$21472_2:
+	.incbin "baserom.dol", 0x330130, 0x4
+.global $$21658
+$$21658:
+	.incbin "baserom.dol", 0x330134, 0x4
+.global $$21659
+$$21659:
+	.incbin "baserom.dol", 0x330138, 0x4
+.global $$21660
+$$21660:
+	.incbin "baserom.dol", 0x33013C, 0x4
+.global $$21661
+$$21661:
+	.incbin "baserom.dol", 0x330140, 0x8
+.global $$21664
+$$21664:
+	.incbin "baserom.dol", 0x330148, 0x8
+
 .section .text
 
 .global zDispatcherParseINI__FP8xIniFile

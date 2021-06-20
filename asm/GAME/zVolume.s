@@ -24,6 +24,12 @@ gOccludeList:
 gOccludeCalcCount:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$21056_3
+$$21056_3:
+	.incbin "baserom.dol", 0x3322C8, 0x8
+
 .section .text
 
 .global zVolumeInit__FP7zVolumeP12xVolumeAsset

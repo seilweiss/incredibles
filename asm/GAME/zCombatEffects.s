@@ -114,6 +114,135 @@ __vt__Q228$$2unnamed$$2zCombatEffects_cpp$$218BitsParticleSystem:
 __vt__Q214zCombatEffects19SparkParticleSystem:
 	.incbin "baserom.dol", 0x32BA60, 0x20
 
+.section .sdata2
+
+.global $$21304
+$$21304:
+	.incbin "baserom.dol", 0x32FBE0, 0x4
+.global $$21305
+$$21305:
+	.incbin "baserom.dol", 0x32FBE4, 0x4
+.global splash_curve__28$$2unnamed$$2zCombatEffects_cpp$$2
+splash_curve__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.incbin "baserom.dol", 0x32FBE8, 0x24
+.global $$21386_0
+$$21386_0:
+	.incbin "baserom.dol", 0x32FC0C, 0x4
+.global $$21387
+$$21387:
+	.incbin "baserom.dol", 0x32FC10, 0x4
+.global $$21388_1
+$$21388_1:
+	.incbin "baserom.dol", 0x32FC14, 0x4
+.global $$21389_0
+$$21389_0:
+	.incbin "baserom.dol", 0x32FC18, 0x4
+.global $$21390_0
+$$21390_0:
+	.incbin "baserom.dol", 0x32FC1C, 0x4
+.global $$21391_1
+$$21391_1:
+	.incbin "baserom.dol", 0x32FC20, 0x4
+.global $$21392_1
+$$21392_1:
+	.incbin "baserom.dol", 0x32FC24, 0x4
+.global $$21441
+$$21441:
+	.incbin "baserom.dol", 0x32FC28, 0x8
+.global $$21443_0
+$$21443_0:
+	.incbin "baserom.dol", 0x32FC30, 0x8
+.global $$21455
+$$21455:
+	.incbin "baserom.dol", 0x32FC38, 0x8
+.global $$21472
+$$21472:
+	.incbin "baserom.dol", 0x32FC40, 0x8
+.global $$21522_0
+$$21522_0:
+	.incbin "baserom.dol", 0x32FC48, 0x4
+.global $$21650
+$$21650:
+	.incbin "baserom.dol", 0x32FC4C, 0x4
+.global $$21750
+$$21750:
+	.incbin "baserom.dol", 0x32FC50, 0x4
+.global $$21751
+$$21751:
+	.incbin "baserom.dol", 0x32FC54, 0x4
+.global $$21756
+$$21756:
+	.incbin "baserom.dol", 0x32FC58, 0x4
+.global $$21757_0
+$$21757_0:
+	.incbin "baserom.dol", 0x32FC5C, 0x4
+.global $$21770
+$$21770:
+	.incbin "baserom.dol", 0x32FC60, 0x4
+.global $$21820_0
+$$21820_0:
+	.incbin "baserom.dol", 0x32FC64, 0x4
+.global $$21821
+$$21821:
+	.incbin "baserom.dol", 0x32FC68, 0x4
+.global $$22057_0
+$$22057_0:
+	.incbin "baserom.dol", 0x32FC6C, 0x4
+.global $$22066
+$$22066:
+	.incbin "baserom.dol", 0x32FC70, 0x4
+.global $$22121
+$$22121:
+	.incbin "baserom.dol", 0x32FC74, 0x4
+.global $$22165
+$$22165:
+	.incbin "baserom.dol", 0x32FC78, 0x4
+.global $$22235
+$$22235:
+	.incbin "baserom.dol", 0x32FC7C, 0x4
+.global $$22236
+$$22236:
+	.incbin "baserom.dol", 0x32FC80, 0x4
+.global $$22324
+$$22324:
+	.incbin "baserom.dol", 0x32FC84, 0x4
+.global $$22351
+$$22351:
+	.incbin "baserom.dol", 0x32FC88, 0x4
+.global $$22352
+$$22352:
+	.incbin "baserom.dol", 0x32FC8C, 0x4
+.global $$22353
+$$22353:
+	.incbin "baserom.dol", 0x32FC90, 0x4
+.global $$22354
+$$22354:
+	.incbin "baserom.dol", 0x32FC94, 0x4
+.global $$22355
+$$22355:
+	.incbin "baserom.dol", 0x32FC98, 0x4
+.global $$22371
+$$22371:
+	.incbin "baserom.dol", 0x32FC9C, 0x4
+.global $$22411
+$$22411:
+	.incbin "baserom.dol", 0x32FCA0, 0x4
+.global $$22412
+$$22412:
+	.incbin "baserom.dol", 0x32FCA4, 0x4
+.global $$22413
+$$22413:
+	.incbin "baserom.dol", 0x32FCA8, 0x4
+.global $$22414
+$$22414:
+	.incbin "baserom.dol", 0x32FCAC, 0x4
+.global $$22415
+$$22415:
+	.incbin "baserom.dol", 0x32FCB0, 0x4
+.global $$22416
+$$22416:
+	.incbin "baserom.dol", 0x32FCB4, 0x4
+
 .section .text
 
 .global setup__Q214zCombatEffects19SparkParticleSystemFv

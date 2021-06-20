@@ -6,6 +6,108 @@
 __vt__Q212zIncrediBall6camera:
 	.incbin "baserom.dol", 0x32D1D0, 0x28
 
+.section .sdata2
+
+.global $$2990_5
+$$2990_5:
+	.incbin "baserom.dol", 0x3327A0, 0x4
+.global $$2991_4
+$$2991_4:
+	.incbin "baserom.dol", 0x3327A4, 0x4
+.global $$2992_1
+$$2992_1:
+	.incbin "baserom.dol", 0x3327A8, 0x4
+.global $$2993_3
+$$2993_3:
+	.incbin "baserom.dol", 0x3327AC, 0x4
+.global $$2994_1
+$$2994_1:
+	.incbin "baserom.dol", 0x3327B0, 0x4
+.global $$2995_3
+$$2995_3:
+	.incbin "baserom.dol", 0x3327B4, 0x4
+.global $$2996_4
+$$2996_4:
+	.incbin "baserom.dol", 0x3327B8, 0x4
+.global $$2997_3
+$$2997_3:
+	.incbin "baserom.dol", 0x3327BC, 0x4
+.global $$2998_1
+$$2998_1:
+	.incbin "baserom.dol", 0x3327C0, 0x4
+.global $$2999_2
+$$2999_2:
+	.incbin "baserom.dol", 0x3327C4, 0x4
+.global $$21000_7
+$$21000_7:
+	.incbin "baserom.dol", 0x3327C8, 0x4
+.global $$21001_1
+$$21001_1:
+	.incbin "baserom.dol", 0x3327CC, 0x4
+.global $$21002_4
+$$21002_4:
+	.incbin "baserom.dol", 0x3327D0, 0x4
+.global $$21003_2
+$$21003_2:
+	.incbin "baserom.dol", 0x3327D4, 0x4
+.global $$21004_1
+$$21004_1:
+	.incbin "baserom.dol", 0x3327D8, 0x4
+.global $$21005_2
+$$21005_2:
+	.incbin "baserom.dol", 0x3327DC, 0x4
+.global $$21006_2
+$$21006_2:
+	.incbin "baserom.dol", 0x3327E0, 0x4
+.global $$21007_1
+$$21007_1:
+	.incbin "baserom.dol", 0x3327E4, 0x4
+.global $$21008_2
+$$21008_2:
+	.incbin "baserom.dol", 0x3327E8, 0x4
+.global $$21009_3
+$$21009_3:
+	.incbin "baserom.dol", 0x3327EC, 0x4
+.global $$21010_2
+$$21010_2:
+	.incbin "baserom.dol", 0x3327F0, 0x4
+.global $$21011_5
+$$21011_5:
+	.incbin "baserom.dol", 0x3327F4, 0x4
+.global $$21012_6
+$$21012_6:
+	.incbin "baserom.dol", 0x3327F8, 0x4
+.global $$21013_2
+$$21013_2:
+	.incbin "baserom.dol", 0x3327FC, 0x4
+.global $$21014_0
+$$21014_0:
+	.incbin "baserom.dol", 0x332800, 0x4
+.global $$21015_2
+$$21015_2:
+	.incbin "baserom.dol", 0x332804, 0x4
+.global $$21016_3
+$$21016_3:
+	.incbin "baserom.dol", 0x332808, 0x4
+.global $$21047_4
+$$21047_4:
+	.incbin "baserom.dol", 0x33280C, 0x4
+.global $$21070_5
+$$21070_5:
+	.incbin "baserom.dol", 0x332810, 0x4
+.global $$21125_3
+$$21125_3:
+	.incbin "baserom.dol", 0x332814, 0x4
+.global $$21127
+$$21127:
+	.incbin "baserom.dol", 0x332818, 0x8
+.global $$21128
+$$21128:
+	.incbin "baserom.dol", 0x332820, 0x8
+.global $$21240
+$$21240:
+	.incbin "baserom.dol", 0x332828, 0x8
+
 .section .text
 
 .global create__Q212zIncrediBall6cameraFv

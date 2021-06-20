@@ -6,6 +6,15 @@
 cnt_fadesInProgress__Q210ScreenFade10GlobalData:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21020_3
+$$21020_3:
+	.incbin "baserom.dol", 0x332878, 0x4
+.global $$21021_3
+$$21021_3:
+	.incbin "baserom.dol", 0x33287C, 0x4
+
 .section .text
 
 .global load__11xScreenFadeFRQ211xScreenFade10asset_type

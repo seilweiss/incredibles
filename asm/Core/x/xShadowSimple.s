@@ -27,6 +27,42 @@ sShadVertCount:
 sModelMat:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2751_0
+$$2751_0:
+	.incbin "baserom.dol", 0x32F4C0, 0x4
+.global $$2805_0
+$$2805_0:
+	.incbin "baserom.dol", 0x32F4C4, 0x4
+.global $$2806
+$$2806:
+	.incbin "baserom.dol", 0x32F4C8, 0x4
+.global $$2835_0
+$$2835_0:
+	.incbin "baserom.dol", 0x32F4CC, 0x4
+.global $$2836_0
+$$2836_0:
+	.incbin "baserom.dol", 0x32F4D0, 0x4
+.global $$21064
+$$21064:
+	.incbin "baserom.dol", 0x32F4D4, 0x4
+.global $$21105
+$$21105:
+	.incbin "baserom.dol", 0x32F4D8, 0x4
+.global $$21152
+$$21152:
+	.incbin "baserom.dol", 0x32F4DC, 0x4
+.global $$21295_0
+$$21295_0:
+	.incbin "baserom.dol", 0x32F4E0, 0x4
+.global $$21296
+$$21296:
+	.incbin "baserom.dol", 0x32F4E4, 0x4
+.global $$21299_0
+$$21299_0:
+	.incbin "baserom.dol", 0x32F4E8, 0x8
+
 .section .text
 
 .global shadowRayCB__FP14RpIntersectionP13RpWorldSectorP19RpCollisionTrianglefPv

@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2652_0
+$$2652_0:
+	.incbin "baserom.dol", 0x32EFD8, 0x4
+.global $$2653_0
+$$2653_0:
+	.incbin "baserom.dol", 0x32EFDC, 0x4
+.global $$2654
+$$2654:
+	.incbin "baserom.dol", 0x32EFE0, 0x4
+.global $$2655
+$$2655:
+	.incbin "baserom.dol", 0x32EFE4, 0x4
+.global $$2657
+$$2657:
+	.incbin "baserom.dol", 0x32EFE8, 0x8
+
 .section .text
 
 .global xJaw_FindData__FUi

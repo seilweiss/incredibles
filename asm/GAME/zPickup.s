@@ -36,6 +36,63 @@ extras_max__7zPickup:
 sPickupOrientation:
 	.incbin "baserom.dol", 0x32D500, 0x30
 
+.section .sdata2
+
+.global $$21207_1
+$$21207_1:
+	.incbin "baserom.dol", 0x332FF8, 0x4
+.global $$21208_0
+$$21208_0:
+	.incbin "baserom.dol", 0x332FFC, 0x4
+.global $$21237_3
+$$21237_3:
+	.incbin "baserom.dol", 0x333000, 0x4
+.global $$21288_2
+$$21288_2:
+	.incbin "baserom.dol", 0x333004, 0x4
+.global $$21343_0
+$$21343_0:
+	.incbin "baserom.dol", 0x333008, 0x8
+.global $$21359_2
+$$21359_2:
+	.incbin "baserom.dol", 0x333010, 0x4
+.global $$21395_1
+$$21395_1:
+	.incbin "baserom.dol", 0x333014, 0x4
+.global $$21396_1
+$$21396_1:
+	.incbin "baserom.dol", 0x333018, 0x4
+.global $$21397_0
+$$21397_0:
+	.incbin "baserom.dol", 0x33301C, 0x4
+.global $$21398_2
+$$21398_2:
+	.incbin "baserom.dol", 0x333020, 0x4
+.global $$21405_1
+$$21405_1:
+	.incbin "baserom.dol", 0x333024, 0x4
+.global $$21507_1
+$$21507_1:
+	.incbin "baserom.dol", 0x333028, 0x4
+.global $$21508_2
+$$21508_2:
+	.incbin "baserom.dol", 0x33302C, 0x4
+.global $$21571
+$$21571:
+	.incbin "baserom.dol", 0x333030, 0x4
+.global lbl_803D6674
+lbl_803D6674:
+	.incbin "baserom.dol", 0x333034, 0x4
+.global lbl_803D6678
+lbl_803D6678:
+	.incbin "baserom.dol", 0x333038, 0x4
+.global $$21576_1
+$$21576_1:
+	.incbin "baserom.dol", 0x33303C, 0x4
+.global $$21603_0
+$$21603_0:
+	.incbin "baserom.dol", 0x333040, 0x8
+
 .section .text
 
 .global SceneSetup__7zPickupFv

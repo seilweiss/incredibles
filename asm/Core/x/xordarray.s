@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2625
+$$2625:
+	.incbin "baserom.dol", 0x32F220, 0x8
+.global $$2627
+$$2627:
+	.incbin "baserom.dol", 0x32F228, 0x8
+
 .section .text
 
 .global XOrdInit__FP16st_XORDEREDARRAYii

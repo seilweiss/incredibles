@@ -99,6 +99,141 @@ MAX_EFFECT_ELEVATION__4zNPC:
 hFallingGroup__Q24zNPC8bot_leap:
 	.incbin "baserom.dol", 0x32D848, 0x8
 
+.section .sdata2
+
+.global $$21245_0
+$$21245_0:
+	.incbin "baserom.dol", 0x333438, 0x4
+.global $$21246
+$$21246:
+	.incbin "baserom.dol", 0x33343C, 0x4
+.global $$21247_1
+$$21247_1:
+	.incbin "baserom.dol", 0x333440, 0x4
+.global $$21248_2
+$$21248_2:
+	.incbin "baserom.dol", 0x333444, 0x4
+.global $$21249_3
+$$21249_3:
+	.incbin "baserom.dol", 0x333448, 0x4
+.global $$21250_1
+$$21250_1:
+	.incbin "baserom.dol", 0x33344C, 0x4
+.global $$21251_1
+$$21251_1:
+	.incbin "baserom.dol", 0x333450, 0x4
+.global $$21252_2
+$$21252_2:
+	.incbin "baserom.dol", 0x333454, 0x4
+.global $$21253_1
+$$21253_1:
+	.incbin "baserom.dol", 0x333458, 0x4
+.global $$21254_1
+$$21254_1:
+	.incbin "baserom.dol", 0x33345C, 0x4
+.global $$21302_2
+$$21302_2:
+	.incbin "baserom.dol", 0x333460, 0x4
+.global $$21303_2
+$$21303_2:
+	.incbin "baserom.dol", 0x333464, 0x4
+.global $$21304_2
+$$21304_2:
+	.incbin "baserom.dol", 0x333468, 0x8
+.global $$21309_2
+$$21309_2:
+	.incbin "baserom.dol", 0x333470, 0x8
+.global $$21321_1
+$$21321_1:
+	.incbin "baserom.dol", 0x333478, 0x4
+.global $$21420_6
+$$21420_6:
+	.incbin "baserom.dol", 0x33347C, 0x4
+.global $$21421_7
+$$21421_7:
+	.incbin "baserom.dol", 0x333480, 0x4
+.global $$21463_2
+$$21463_2:
+	.incbin "baserom.dol", 0x333484, 0x4
+.global $$21464_1
+$$21464_1:
+	.incbin "baserom.dol", 0x333488, 0x4
+.global $$21465_2
+$$21465_2:
+	.incbin "baserom.dol", 0x33348C, 0x4
+.global $$21466_3
+$$21466_3:
+	.incbin "baserom.dol", 0x333490, 0x4
+.global $$21467_5
+$$21467_5:
+	.incbin "baserom.dol", 0x333494, 0x4
+.global $$21468_2
+$$21468_2:
+	.incbin "baserom.dol", 0x333498, 0x4
+.global $$21469_5
+$$21469_5:
+	.incbin "baserom.dol", 0x33349C, 0x4
+.global $$21470_4
+$$21470_4:
+	.incbin "baserom.dol", 0x3334A0, 0x4
+.global $$21471_2
+$$21471_2:
+	.incbin "baserom.dol", 0x3334A4, 0x4
+.global $$21472_3
+$$21472_3:
+	.incbin "baserom.dol", 0x3334A8, 0x4
+.global $$21666_0
+$$21666_0:
+	.incbin "baserom.dol", 0x3334AC, 0x4
+.global $$21698_1
+$$21698_1:
+	.incbin "baserom.dol", 0x3334B0, 0x4
+.global $$21722_2
+$$21722_2:
+	.incbin "baserom.dol", 0x3334B4, 0x4
+.global $$21723_0
+$$21723_0:
+	.incbin "baserom.dol", 0x3334B8, 0x4
+.global $$21724_1
+$$21724_1:
+	.incbin "baserom.dol", 0x3334BC, 0x4
+.global $$21725_0
+$$21725_0:
+	.incbin "baserom.dol", 0x3334C0, 0x4
+.global $$21764
+$$21764:
+	.incbin "baserom.dol", 0x3334C4, 0x4
+.global $$21765_0
+$$21765_0:
+	.incbin "baserom.dol", 0x3334C8, 0x4
+.global $$21766
+$$21766:
+	.incbin "baserom.dol", 0x3334CC, 0x4
+.global $$21767
+$$21767:
+	.incbin "baserom.dol", 0x3334D0, 0x4
+.global $$21781
+$$21781:
+	.incbin "baserom.dol", 0x3334D4, 0x4
+.global $$21955
+$$21955:
+	.incbin "baserom.dol", 0x3334D8, 0x4
+.global $$21957_0
+$$21957_0:
+	.incbin "baserom.dol", 0x3334DC, 0x4
+.global $$22060_1
+$$22060_1:
+	.incbin "baserom.dol", 0x3334E0, 0x4
+.global $$22061_1
+$$22061_1:
+	.incbin "baserom.dol", 0x3334E4, 0x4
+.global $$22062_0
+$$22062_0:
+	.incbin "baserom.dol", 0x3334E8, 0x4
+.global $$22063
+$$22063:
+	.incbin "baserom.dol", 0x3334EC, 0x4
+
 .section .text
 
 .global setup__Q24zNPC10light_dustFv

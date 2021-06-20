@@ -63,6 +63,30 @@ $$2961_5:
 lbl_803D874C:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2935
+$$2935:
+	.incbin "baserom.dol", 0x32F198, 0x4
+.global $$2936_0
+$$2936_0:
+	.incbin "baserom.dol", 0x32F19C, 0x4
+.global $$21153_1
+$$21153_1:
+	.incbin "baserom.dol", 0x32F1A0, 0x4
+.global $$21154
+$$21154:
+	.incbin "baserom.dol", 0x32F1A4, 0x4
+.global $$21155
+$$21155:
+	.incbin "baserom.dol", 0x32F1A8, 0x4
+.global $$21156_0
+$$21156_0:
+	.incbin "baserom.dol", 0x32F1AC, 0x4
+.global $$21158_0
+$$21158_0:
+	.incbin "baserom.dol", 0x32F1B0, 0x8
+
 .section .text
 
 .global compare_opaque_buckets__26$$2unnamed$$2xModelBucket_cpp$$2FPCvPCv

@@ -78,6 +78,57 @@ __vt__Q21z10uber_laser:
 __vt__Q21z31lightweight$$0Q21z10uber_laser$$45$$1:
 	.incbin "baserom.dol", 0x32DA98, 0x20
 
+.section .sdata2
+
+.global $$21282_3
+$$21282_3:
+	.incbin "baserom.dol", 0x333728, 0x4
+.global $$21370_1
+$$21370_1:
+	.incbin "baserom.dol", 0x33372C, 0x4
+.global $$21374_1
+$$21374_1:
+	.incbin "baserom.dol", 0x333730, 0x4
+.global $$21381_1
+$$21381_1:
+	.incbin "baserom.dol", 0x333734, 0x4
+.global $$21408_2
+$$21408_2:
+	.incbin "baserom.dol", 0x333738, 0x4
+.global $$21416_3
+$$21416_3:
+	.incbin "baserom.dol", 0x33373C, 0x4
+.global $$21483_0
+$$21483_0:
+	.incbin "baserom.dol", 0x333740, 0x8
+.global $$21485_0
+$$21485_0:
+	.incbin "baserom.dol", 0x333748, 0x8
+.global $$21630_1
+$$21630_1:
+	.incbin "baserom.dol", 0x333750, 0x4
+.global $$21631_1
+$$21631_1:
+	.incbin "baserom.dol", 0x333754, 0x4
+.global $$21632
+$$21632:
+	.incbin "baserom.dol", 0x333758, 0x4
+.global $$21633_0
+$$21633_0:
+	.incbin "baserom.dol", 0x33375C, 0x4
+.global $$21699_1
+$$21699_1:
+	.incbin "baserom.dol", 0x333760, 0x4
+.global $$21700_1
+$$21700_1:
+	.incbin "baserom.dol", 0x333764, 0x4
+.global $$21701_1
+$$21701_1:
+	.incbin "baserom.dol", 0x333768, 0x8
+.global $$21704_0
+$$21704_0:
+	.incbin "baserom.dol", 0x333770, 0x8
+
 .section .text
 
 .global load__10zUberLaserFR5xBaseR9xDynAssetUl

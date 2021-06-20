@@ -30,6 +30,42 @@ init$983:
 $$2991_7:
 	.skip 0x8
 
+.section .sdata2
+
+.global lbl_803D5A14
+lbl_803D5A14:
+	.incbin "baserom.dol", 0x3323D4, 0x4
+.global $$2964_1
+$$2964_1:
+	.incbin "baserom.dol", 0x3323D8, 0x18
+.global $$2965_0
+$$2965_0:
+	.incbin "baserom.dol", 0x3323F0, 0x4
+.global lbl_803D5A34
+lbl_803D5A34:
+	.incbin "baserom.dol", 0x3323F4, 0x4
+.global lbl_803D5A38
+lbl_803D5A38:
+	.incbin "baserom.dol", 0x3323F8, 0x4
+.global $$2966
+$$2966:
+	.incbin "baserom.dol", 0x3323FC, 0x4
+.global lbl_803D5A40
+lbl_803D5A40:
+	.incbin "baserom.dol", 0x332400, 0x4
+.global lbl_803D5A44
+lbl_803D5A44:
+	.incbin "baserom.dol", 0x332404, 0x4
+.global lbl_803D5A48
+lbl_803D5A48:
+	.incbin "baserom.dol", 0x332408, 0x4
+.global $$21005_1
+$$21005_1:
+	.incbin "baserom.dol", 0x33240C, 0x4
+.global $$21006_1
+$$21006_1:
+	.incbin "baserom.dol", 0x332410, 0x8
+
 .section .text
 
 .global Init__6zAsyncFPQ26zAsync6Screen

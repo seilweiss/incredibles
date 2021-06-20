@@ -18,6 +18,66 @@ pDashMeter__Q24zHud9DashMeter:
 __vt__Q24zHud9DashMeter:
 	.incbin "baserom.dol", 0x32D568, 0x28
 
+.section .sdata2
+
+.global $$21021_4
+$$21021_4:
+	.incbin "baserom.dol", 0x333178, 0x4
+.global $$21022_2
+$$21022_2:
+	.incbin "baserom.dol", 0x33317C, 0x4
+.global $$21023_3
+$$21023_3:
+	.incbin "baserom.dol", 0x333180, 0x4
+.global $$21024_1
+$$21024_1:
+	.incbin "baserom.dol", 0x333184, 0x4
+.global $$21025_1
+$$21025_1:
+	.incbin "baserom.dol", 0x333188, 0x4
+.global $$21026_4
+$$21026_4:
+	.incbin "baserom.dol", 0x33318C, 0x4
+.global $$21027_2
+$$21027_2:
+	.incbin "baserom.dol", 0x333190, 0x4
+.global $$21028_1
+$$21028_1:
+	.incbin "baserom.dol", 0x333194, 0x4
+.global $$21029_4
+$$21029_4:
+	.incbin "baserom.dol", 0x333198, 0x4
+.global $$21030_0
+$$21030_0:
+	.incbin "baserom.dol", 0x33319C, 0x4
+.global $$21031_1
+$$21031_1:
+	.incbin "baserom.dol", 0x3331A0, 0x4
+.global $$21032_0
+$$21032_0:
+	.incbin "baserom.dol", 0x3331A4, 0x4
+.global $$21033_0
+$$21033_0:
+	.incbin "baserom.dol", 0x3331A8, 0x4
+.global $$21034_0
+$$21034_0:
+	.incbin "baserom.dol", 0x3331AC, 0x4
+.global $$21035_4
+$$21035_4:
+	.incbin "baserom.dol", 0x3331B0, 0x4
+.global $$21036_5
+$$21036_5:
+	.incbin "baserom.dol", 0x3331B4, 0x4
+.global $$21037_4
+$$21037_4:
+	.incbin "baserom.dol", 0x3331B8, 0x4
+.global $$21054_4
+$$21054_4:
+	.incbin "baserom.dol", 0x3331BC, 0x4
+.global $$21055_2
+$$21055_2:
+	.incbin "baserom.dol", 0x3331C0, 0x8
+
 .section .text
 
 .global __ct__Q24zHud9DashMeterFv

@@ -27,6 +27,12 @@ pSysMessageManager:
 pSysMessageManager_Custom:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2990_6
+$$2990_6:
+	.incbin "baserom.dol", 0x333DF8, 0x8
+
 .section .text
 
 .global __ct__26zUICustomSysMessageManagerFP3zUI

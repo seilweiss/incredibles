@@ -108,6 +108,186 @@ __vt__Q21z38lightweight_system$$0Q21z10uber_laser$$45$$1:
 __vt__Q21z43lightweight_system$$018zTurretSmokeSystem$$410$$1:
 	.incbin "baserom.dol", 0x32C324, 0x24
 
+.section .sdata2
+
+.global $$21341
+$$21341:
+	.incbin "baserom.dol", 0x330E98, 0x4
+.global lbl_803D44DC
+lbl_803D44DC:
+	.incbin "baserom.dol", 0x330E9C, 0x4
+.global lbl_803D44E0
+lbl_803D44E0:
+	.incbin "baserom.dol", 0x330EA0, 0x4
+.global $$21378_2
+$$21378_2:
+	.incbin "baserom.dol", 0x330EA4, 0x4
+.global $$21383_0
+$$21383_0:
+	.incbin "baserom.dol", 0x330EA8, 0x8
+.global $$21504
+$$21504:
+	.incbin "baserom.dol", 0x330EB0, 0x8
+.global $$21660_0
+$$21660_0:
+	.incbin "baserom.dol", 0x330EB8, 0x4
+.global $$21704
+$$21704:
+	.incbin "baserom.dol", 0x330EBC, 0x4
+.global $$21705
+$$21705:
+	.incbin "baserom.dol", 0x330EC0, 0x4
+.global $$21792_1
+$$21792_1:
+	.incbin "baserom.dol", 0x330EC4, 0x4
+.global $$21793_1
+$$21793_1:
+	.incbin "baserom.dol", 0x330EC8, 0x4
+.global $$21794_2
+$$21794_2:
+	.incbin "baserom.dol", 0x330ECC, 0x4
+.global $$21795_1
+$$21795_1:
+	.incbin "baserom.dol", 0x330ED0, 0x4
+.global $$21796_2
+$$21796_2:
+	.incbin "baserom.dol", 0x330ED4, 0x4
+.global $$21797_0
+$$21797_0:
+	.incbin "baserom.dol", 0x330ED8, 0x4
+.global $$21798_0
+$$21798_0:
+	.incbin "baserom.dol", 0x330EDC, 0x4
+.global $$21832
+$$21832:
+	.incbin "baserom.dol", 0x330EE0, 0x4
+.global $$21833
+$$21833:
+	.incbin "baserom.dol", 0x330EE4, 0x4
+.global $$21843_1
+$$21843_1:
+	.incbin "baserom.dol", 0x330EE8, 0x8
+.global $$21926
+$$21926:
+	.incbin "baserom.dol", 0x330EF0, 0x4
+.global lbl_803D4534
+lbl_803D4534:
+	.incbin "baserom.dol", 0x330EF4, 0x4
+.global lbl_803D4538
+lbl_803D4538:
+	.incbin "baserom.dol", 0x330EF8, 0x4
+.global $$21942
+$$21942:
+	.incbin "baserom.dol", 0x330EFC, 0x4
+.global $$21943
+$$21943:
+	.incbin "baserom.dol", 0x330F00, 0x4
+.global $$21944
+$$21944:
+	.incbin "baserom.dol", 0x330F04, 0x4
+.global $$21945_0
+$$21945_0:
+	.incbin "baserom.dol", 0x330F08, 0x4
+.global $$21992
+$$21992:
+	.incbin "baserom.dol", 0x330F0C, 0x4
+.global $$21993
+$$21993:
+	.incbin "baserom.dol", 0x330F10, 0x4
+.global $$22101
+$$22101:
+	.incbin "baserom.dol", 0x330F14, 0x4
+.global $$22263
+$$22263:
+	.incbin "baserom.dol", 0x330F18, 0x4
+.global $$22264
+$$22264:
+	.incbin "baserom.dol", 0x330F1C, 0x4
+.global $$22265
+$$22265:
+	.incbin "baserom.dol", 0x330F20, 0x4
+.global $$22266_0
+$$22266_0:
+	.incbin "baserom.dol", 0x330F24, 0x4
+.global $$22267_0
+$$22267_0:
+	.incbin "baserom.dol", 0x330F28, 0x4
+.global $$22268_0
+$$22268_0:
+	.incbin "baserom.dol", 0x330F2C, 0x4
+.global $$22368_0
+$$22368_0:
+	.incbin "baserom.dol", 0x330F30, 0x4
+.global $$22521
+$$22521:
+	.incbin "baserom.dol", 0x330F34, 0x4
+.global $$22556
+$$22556:
+	.incbin "baserom.dol", 0x330F38, 0x4
+.global $$22557
+$$22557:
+	.incbin "baserom.dol", 0x330F3C, 0x4
+.global $$22558
+$$22558:
+	.incbin "baserom.dol", 0x330F40, 0x4
+.global $$22601
+$$22601:
+	.incbin "baserom.dol", 0x330F44, 0x4
+.global lbl_803D4588
+lbl_803D4588:
+	.incbin "baserom.dol", 0x330F48, 0x4
+.global lbl_803D458C
+lbl_803D458C:
+	.incbin "baserom.dol", 0x330F4C, 0x4
+.global $$22717
+$$22717:
+	.incbin "baserom.dol", 0x330F50, 0x4
+.global lbl_803D4594
+lbl_803D4594:
+	.incbin "baserom.dol", 0x330F54, 0x4
+.global lbl_803D4598
+lbl_803D4598:
+	.incbin "baserom.dol", 0x330F58, 0x4
+.global $$22718
+$$22718:
+	.incbin "baserom.dol", 0x330F5C, 0x4
+.global lbl_803D45A0
+lbl_803D45A0:
+	.incbin "baserom.dol", 0x330F60, 0x4
+.global lbl_803D45A4
+lbl_803D45A4:
+	.incbin "baserom.dol", 0x330F64, 0x4
+.global $$22721
+$$22721:
+	.incbin "baserom.dol", 0x330F68, 0x4
+.global lbl_803D45AC
+lbl_803D45AC:
+	.incbin "baserom.dol", 0x330F6C, 0x4
+.global lbl_803D45B0
+lbl_803D45B0:
+	.incbin "baserom.dol", 0x330F70, 0x4
+.global $$22754
+$$22754:
+	.incbin "baserom.dol", 0x330F74, 0x4
+.global $$22755
+$$22755:
+	.incbin "baserom.dol", 0x330F78, 0x4
+.global $$22756
+$$22756:
+	.incbin "baserom.dol", 0x330F7C, 0x4
+.global $$22757
+$$22757:
+	.incbin "baserom.dol", 0x330F80, 0x4
+.global $$22758
+$$22758:
+	.incbin "baserom.dol", 0x330F84, 0x4
+.global $$22759
+$$22759:
+	.incbin "baserom.dol", 0x330F88, 0x4
+.global $$22829
+$$22829:
+	.incbin "baserom.dol", 0x330F8C, 0x4
+
 .section .text
 
 .global setup__Q24zNPC14shrapnel_deathFv

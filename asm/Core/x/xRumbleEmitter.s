@@ -15,6 +15,27 @@ __vt__Q27xRumble11emitterBase:
 __vt__Q27xRumble6effect:
 	.incbin "baserom.dol", 0x32B3CC, 0x14
 
+.section .sdata2
+
+.global $$2996_0
+$$2996_0:
+	.incbin "baserom.dol", 0x32F2D0, 0x4
+.global $$2997_0
+$$2997_0:
+	.incbin "baserom.dol", 0x32F2D4, 0x4
+.global $$2998
+$$2998:
+	.incbin "baserom.dol", 0x32F2D8, 0x4
+.global $$2999_0
+$$2999_0:
+	.incbin "baserom.dol", 0x32F2DC, 0x4
+.global $$21002_0
+$$21002_0:
+	.incbin "baserom.dol", 0x32F2E0, 0x8
+.global $$21083
+$$21083:
+	.incbin "baserom.dol", 0x32F2E8, 0x8
+
 .section .text
 
 .global emitter_EventCB__28$$2unnamed$$2xRumbleEmitter_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

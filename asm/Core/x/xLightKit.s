@@ -6,6 +6,15 @@
 gLastLightKit:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2815_0
+$$2815_0:
+	.incbin "baserom.dol", 0x32F040, 0x4
+.global $$2877
+$$2877:
+	.incbin "baserom.dol", 0x32F044, 0x4
+
 .section .text
 
 .global xLightKit_Prepare__FPv

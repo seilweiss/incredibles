@@ -33,6 +33,12 @@ $$21298:
 uiAnyActive__20$$2unnamed$$2zUIMgr_cpp$$2:
 	.incbin "baserom.dol", 0x32D0C0, 0x8
 
+.section .sdata2
+
+.global $$21308_0
+$$21308_0:
+	.incbin "baserom.dol", 0x332210, 0x8
+
 .section .text
 
 .global zUIMgrInit__FP6zScene

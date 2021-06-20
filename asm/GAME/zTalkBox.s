@@ -111,6 +111,30 @@ __vt__Q222$$2unnamed$$2zTalkBox_cpp$$215stop_state_type:
 __vt__Q28ztalkbox8callback:
 	.incbin "baserom.dol", 0x32D020, 0x18
 
+.section .sdata2
+
+.global positive$1183
+positive$1183:
+	.incbin "baserom.dol", 0x332000, 0x30
+.global negative$1185
+negative$1185:
+	.incbin "baserom.dol", 0x332030, 0x30
+.global $$21264_1
+$$21264_1:
+	.incbin "baserom.dol", 0x332060, 0x4
+.global $$21380_2
+$$21380_2:
+	.incbin "baserom.dol", 0x332064, 0x4
+.global $$21537
+$$21537:
+	.incbin "baserom.dol", 0x332068, 0x8
+.global $$21616_0
+$$21616_0:
+	.incbin "baserom.dol", 0x332070, 0x4
+.global $$21782
+$$21782:
+	.incbin "baserom.dol", 0x332074, 0x4
+
 .section .text
 
 .global speak_stop__22$$2unnamed$$2zTalkBox_cpp$$2Fv

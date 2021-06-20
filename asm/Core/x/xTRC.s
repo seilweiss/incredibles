@@ -48,6 +48,45 @@ message_text:
 init$1230:
 	.skip 0x8
 
+.section .sdata2
+
+.global screen_bounds_3
+screen_bounds_3:
+	.incbin "baserom.dol", 0x32F6A8, 0x10
+.global yellow
+yellow:
+	.incbin "baserom.dol", 0x32F6B8, 0x4
+.global $$21043_2
+$$21043_2:
+	.incbin "baserom.dol", 0x32F6BC, 0x4
+.global $$21057
+$$21057:
+	.incbin "baserom.dol", 0x32F6C0, 0x4
+.global $$21058_0
+$$21058_0:
+	.incbin "baserom.dol", 0x32F6C4, 0x4
+.global $$21059_0
+$$21059_0:
+	.incbin "baserom.dol", 0x32F6C8, 0x4
+.global $$21060
+$$21060:
+	.incbin "baserom.dol", 0x32F6CC, 0x4
+.global $$21061
+$$21061:
+	.incbin "baserom.dol", 0x32F6D0, 0x4
+.global $$21062_0
+$$21062_0:
+	.incbin "baserom.dol", 0x32F6D4, 0x4
+.global $$21069_1
+$$21069_1:
+	.incbin "baserom.dol", 0x32F6D8, 0x4
+.global $$21226
+$$21226:
+	.incbin "baserom.dol", 0x32F6DC, 0x4
+.global $$21232
+$$21232:
+	.incbin "baserom.dol", 0x32F6E0, 0x8
+
 .section .text
 
 .global xTRCInit__Fv

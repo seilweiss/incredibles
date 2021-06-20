@@ -21,6 +21,30 @@ __vt__Q24zNPC11oracle_idle:
 $$2stringBase0_83:
 	.incbin "baserom.dol", 0x2E01E8, 0x88
 
+.section .sdata2
+
+.global $$21257_4
+$$21257_4:
+	.incbin "baserom.dol", 0x331A90, 0x4
+.global $$21258_2
+$$21258_2:
+	.incbin "baserom.dol", 0x331A94, 0x4
+.global $$21263_3
+$$21263_3:
+	.incbin "baserom.dol", 0x331A98, 0x4
+.global $$21272_0
+$$21272_0:
+	.incbin "baserom.dol", 0x331A9C, 0x4
+.global $$21314
+$$21314:
+	.incbin "baserom.dol", 0x331AA0, 0x4
+.global $$21315
+$$21315:
+	.incbin "baserom.dol", 0x331AA4, 0x4
+.global $$21316_0
+$$21316_0:
+	.incbin "baserom.dol", 0x331AA8, 0x8
+
 .section .text
 
 .global add_states__Q24zNPC11oracle_idleFP10xAnimTable

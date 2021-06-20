@@ -60,6 +60,69 @@ __vt__218RegisterOnFirstEmitSystem$$0174zParticleEmitterConeVolume$$0143zParticl
 __vt__11SparkSystem:
 	.incbin "baserom.dol", 0x32DC34, 0xC
 
+.section .sdata2
+
+.global $$2920_1
+$$2920_1:
+	.incbin "baserom.dol", 0x333AA8, 0x4
+.global $$2921
+$$2921:
+	.incbin "baserom.dol", 0x333AAC, 0x4
+.global $$2977_2
+$$2977_2:
+	.incbin "baserom.dol", 0x333AB0, 0x4
+.global $$2978_2
+$$2978_2:
+	.incbin "baserom.dol", 0x333AB4, 0x4
+.global $$2991_5
+$$2991_5:
+	.incbin "baserom.dol", 0x333AB8, 0x8
+.global $$2993_4
+$$2993_4:
+	.incbin "baserom.dol", 0x333AC0, 0x4
+.global $$2994_2
+$$2994_2:
+	.incbin "baserom.dol", 0x333AC4, 0x4
+.global $$21005_7
+$$21005_7:
+	.incbin "baserom.dol", 0x333AC8, 0x4
+.global $$21006_6
+$$21006_6:
+	.incbin "baserom.dol", 0x333ACC, 0x4
+.global $$21010_4
+$$21010_4:
+	.incbin "baserom.dol", 0x333AD0, 0x4
+.global $$21011_6
+$$21011_6:
+	.incbin "baserom.dol", 0x333AD4, 0x4
+.global $$21012_7
+$$21012_7:
+	.incbin "baserom.dol", 0x333AD8, 0x4
+.global $$21161_2
+$$21161_2:
+	.incbin "baserom.dol", 0x333ADC, 0x4
+.global $$21184_5
+$$21184_5:
+	.incbin "baserom.dol", 0x333AE0, 0x4
+.global $$21232_2
+$$21232_2:
+	.incbin "baserom.dol", 0x333AE4, 0x4
+.global $$21233_2
+$$21233_2:
+	.incbin "baserom.dol", 0x333AE8, 0x4
+.global $$21234_4
+$$21234_4:
+	.incbin "baserom.dol", 0x333AEC, 0x4
+.global $$21235_2
+$$21235_2:
+	.incbin "baserom.dol", 0x333AF0, 0x4
+.global $$21394_5
+$$21394_5:
+	.incbin "baserom.dol", 0x333AF4, 0x4
+.global $$21397_2
+$$21397_2:
+	.incbin "baserom.dol", 0x333AF8, 0x8
+
 .section .text
 
 .global zParticleFXCommon_EmitEnergyPulse__FfRC5xVec3RC5xVec3ffff

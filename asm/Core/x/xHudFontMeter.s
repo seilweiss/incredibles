@@ -21,6 +21,27 @@ init$823:
 __vt__Q24xhud17font_meter_widget:
 	.incbin "baserom.dol", 0x32B208, 0x28
 
+.section .sdata2
+
+.global screen_bounds_1
+screen_bounds_1:
+	.incbin "baserom.dol", 0x32EF58, 0x10
+.global $$2853_0
+$$2853_0:
+	.incbin "baserom.dol", 0x32EF68, 0x4
+.global $$2854_0
+$$2854_0:
+	.incbin "baserom.dol", 0x32EF6C, 0x4
+.global $$2855_1
+$$2855_1:
+	.incbin "baserom.dol", 0x32EF70, 0x8
+.global $$2857
+$$2857:
+	.incbin "baserom.dol", 0x32EF78, 0x8
+.global $$2870
+$$2870:
+	.incbin "baserom.dol", 0x32EF80, 0x8
+
 .section .text
 
 .global load__Q24xhud17font_meter_widgetFR5xBaseR9xDynAssetUl

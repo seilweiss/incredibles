@@ -36,6 +36,60 @@ INCREDIPOWER_RECOVERY__27$$2unnamed$$2zVioletPlayer_cpp$$2:
 DEFAULT_INVISIBILITY_POWER__27$$2unnamed$$2zVioletPlayer_cpp$$2:
 	.incbin "baserom.dol", 0x32D108, 0x8
 
+.section .sdata2
+
+.global $$21090_2
+$$21090_2:
+	.incbin "baserom.dol", 0x332278, 0x4
+.global $$21112_0
+$$21112_0:
+	.incbin "baserom.dol", 0x33227C, 0x4
+.global $$21130_0
+$$21130_0:
+	.incbin "baserom.dol", 0x332280, 0x4
+.global $$21131_1
+$$21131_1:
+	.incbin "baserom.dol", 0x332284, 0x4
+.global $$21178_2
+$$21178_2:
+	.incbin "baserom.dol", 0x332288, 0x4
+.global $$21179_1
+$$21179_1:
+	.incbin "baserom.dol", 0x33228C, 0x4
+.global $$21180_1
+$$21180_1:
+	.incbin "baserom.dol", 0x332290, 0x4
+.global $$21181_0
+$$21181_0:
+	.incbin "baserom.dol", 0x332294, 0x4
+.global $$21182_3
+$$21182_3:
+	.incbin "baserom.dol", 0x332298, 0x4
+.global $$21183_3
+$$21183_3:
+	.incbin "baserom.dol", 0x33229C, 0x4
+.global $$21184_3
+$$21184_3:
+	.incbin "baserom.dol", 0x3322A0, 0x4
+.global $$21185_2
+$$21185_2:
+	.incbin "baserom.dol", 0x3322A4, 0x4
+.global $$21186_4
+$$21186_4:
+	.incbin "baserom.dol", 0x3322A8, 0x4
+.global $$21187_4
+$$21187_4:
+	.incbin "baserom.dol", 0x3322AC, 0x4
+.global $$21188_1
+$$21188_1:
+	.incbin "baserom.dol", 0x3322B0, 0x8
+.global $$21237_1
+$$21237_1:
+	.incbin "baserom.dol", 0x3322B8, 0x8
+.global $$21247_0
+$$21247_0:
+	.incbin "baserom.dol", 0x3322C0, 0x8
+
 .section .text
 
 .global GetHeadBones__13zVioletPlayerFv

@@ -459,6 +459,75 @@ __vt__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zPartic
 __vt__18CinSparkDiskSystem:
 	.incbin "baserom.dol", 0x32E2F4, 0xC
 
+.section .sdata2
+
+.global $$21327_1
+$$21327_1:
+	.incbin "baserom.dol", 0x333E40, 0x4
+.global $$21347_0
+$$21347_0:
+	.incbin "baserom.dol", 0x333E44, 0x4
+.global $$21406_2
+$$21406_2:
+	.incbin "baserom.dol", 0x333E48, 0x4
+.global $$21587_1
+$$21587_1:
+	.incbin "baserom.dol", 0x333E4C, 0x4
+.global $$21643_0
+$$21643_0:
+	.incbin "baserom.dol", 0x333E50, 0x4
+.global $$21652_1
+$$21652_1:
+	.incbin "baserom.dol", 0x333E54, 0x4
+.global $$21731_2
+$$21731_2:
+	.incbin "baserom.dol", 0x333E58, 0x4
+.global $$21760_0
+$$21760_0:
+	.incbin "baserom.dol", 0x333E5C, 0x4
+.global $$21839
+$$21839:
+	.incbin "baserom.dol", 0x333E60, 0x4
+.global $$21840
+$$21840:
+	.incbin "baserom.dol", 0x333E64, 0x4
+.global $$21851_0
+$$21851_0:
+	.incbin "baserom.dol", 0x333E68, 0x8
+.global $$21984
+$$21984:
+	.incbin "baserom.dol", 0x333E70, 0x4
+.global frotext_om01_heli_escape1__23$$2unnamed$$2zCineFXIN_cpp$$2
+frotext_om01_heli_escape1__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x333E74, 0xC
+.global frotext_om01_heli_escape2__23$$2unnamed$$2zCineFXIN_cpp$$2
+frotext_om01_heli_escape2__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x333E80, 0xC
+.global frotext_om01_heli_escape3__23$$2unnamed$$2zCineFXIN_cpp$$2
+frotext_om01_heli_escape3__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x333E8C, 0xC
+.global frotext_om01_frozone_chase1__23$$2unnamed$$2zCineFXIN_cpp$$2
+frotext_om01_frozone_chase1__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x333E98, 0xC
+.global frotext_om01_frozone_chase2__23$$2unnamed$$2zCineFXIN_cpp$$2
+frotext_om01_frozone_chase2__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x333EA4, 0xC
+.global frotext_hs01_frozone1__23$$2unnamed$$2zCineFXIN_cpp$$2
+frotext_hs01_frozone1__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x333EB0, 0xC
+.global frotext_hs01_frozone2__23$$2unnamed$$2zCineFXIN_cpp$$2
+frotext_hs01_frozone2__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x333EBC, 0xC
+.global frotext_hs01_elastigirl1__23$$2unnamed$$2zCineFXIN_cpp$$2
+frotext_hs01_elastigirl1__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x333EC8, 0xC
+.global frotext_hs01_elastigirl2__23$$2unnamed$$2zCineFXIN_cpp$$2
+frotext_hs01_elastigirl2__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x333ED4, 0xC
+.global frotext_om03_opening1__23$$2unnamed$$2zCineFXIN_cpp$$2
+frotext_om03_opening1__23$$2unnamed$$2zCineFXIN_cpp$$2:
+	.incbin "baserom.dol", 0x333EE0, 0x10
+
 .section .text
 
 .global zCinFX_LightDust_Twk__FPCcP9NCINEntry

@@ -60,6 +60,60 @@ need_setup__Q24zNPC5teeth:
 color__Q24zNPC5teeth:
 	.incbin "baserom.dol", 0x32C2CC, 0x4
 
+.section .sdata2
+
+.global $$21168_0
+$$21168_0:
+	.incbin "baserom.dol", 0x330E48, 0x4
+.global $$21220_0
+$$21220_0:
+	.incbin "baserom.dol", 0x330E4C, 0x4
+.global $$21236_1
+$$21236_1:
+	.incbin "baserom.dol", 0x330E50, 0x4
+.global $$21238_0
+$$21238_0:
+	.incbin "baserom.dol", 0x330E54, 0x4
+.global $$21255_2
+$$21255_2:
+	.incbin "baserom.dol", 0x330E58, 0x4
+.global $$21256_2
+$$21256_2:
+	.incbin "baserom.dol", 0x330E5C, 0x4
+.global $$21257_2
+$$21257_2:
+	.incbin "baserom.dol", 0x330E60, 0x4
+.global $$21258_0
+$$21258_0:
+	.incbin "baserom.dol", 0x330E64, 0x4
+.global $$21310
+$$21310:
+	.incbin "baserom.dol", 0x330E68, 0x4
+.global $$21320_0
+$$21320_0:
+	.incbin "baserom.dol", 0x330E6C, 0x4
+.global $$21321
+$$21321:
+	.incbin "baserom.dol", 0x330E70, 0x8
+.global $$21329_0
+$$21329_0:
+	.incbin "baserom.dol", 0x330E78, 0x8
+.global $$21345_0
+$$21345_0:
+	.incbin "baserom.dol", 0x330E80, 0x4
+.global $$21420_2
+$$21420_2:
+	.incbin "baserom.dol", 0x330E84, 0x4
+.global $$21421_3
+$$21421_3:
+	.incbin "baserom.dol", 0x330E88, 0x4
+.global $$21467_2
+$$21467_2:
+	.incbin "baserom.dol", 0x330E8C, 0x4
+.global $$21589_0
+$$21589_0:
+	.incbin "baserom.dol", 0x330E90, 0x8
+
 .section .text
 
 .global enter_state__39behavior_implementation$$0Q24zNPC6common$$1FPC39behavior_implementation$$0Q24zNPC6common$$1

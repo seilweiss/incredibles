@@ -12,6 +12,114 @@ $$2stringBase0_115:
 grass:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21004_2
+$$21004_2:
+	.incbin "baserom.dol", 0x3329B8, 0x4
+.global $$21005_3
+$$21005_3:
+	.incbin "baserom.dol", 0x3329BC, 0x4
+.global $$21006_3
+$$21006_3:
+	.incbin "baserom.dol", 0x3329C0, 0x4
+.global $$21007_2
+$$21007_2:
+	.incbin "baserom.dol", 0x3329C4, 0x4
+.global $$21138
+$$21138:
+	.incbin "baserom.dol", 0x3329C8, 0x4
+.global $$21139
+$$21139:
+	.incbin "baserom.dol", 0x3329CC, 0x4
+.global $$21265_2
+$$21265_2:
+	.incbin "baserom.dol", 0x3329D0, 0x4
+.global $$21266_2
+$$21266_2:
+	.incbin "baserom.dol", 0x3329D4, 0x4
+.global $$21267_1
+$$21267_1:
+	.incbin "baserom.dol", 0x3329D8, 0x8
+.global $$21269_0
+$$21269_0:
+	.incbin "baserom.dol", 0x3329E0, 0x8
+.global $$21275
+$$21275:
+	.incbin "baserom.dol", 0x3329E8, 0x8
+.global $$21282_2
+$$21282_2:
+	.incbin "baserom.dol", 0x3329F0, 0x4
+.global $$21375_0
+$$21375_0:
+	.incbin "baserom.dol", 0x3329F4, 0x4
+.global $$21376_0
+$$21376_0:
+	.incbin "baserom.dol", 0x3329F8, 0x4
+.global $$21377
+$$21377:
+	.incbin "baserom.dol", 0x3329FC, 0x4
+.global $$21445_0
+$$21445_0:
+	.incbin "baserom.dol", 0x332A00, 0x4
+.global $$21451_1
+$$21451_1:
+	.incbin "baserom.dol", 0x332A04, 0x4
+.global $$21503_0
+$$21503_0:
+	.incbin "baserom.dol", 0x332A08, 0x4
+.global $$21504_1
+$$21504_1:
+	.incbin "baserom.dol", 0x332A0C, 0x4
+.global $$21505_0
+$$21505_0:
+	.incbin "baserom.dol", 0x332A10, 0x4
+.global $$21506_0
+$$21506_0:
+	.incbin "baserom.dol", 0x332A14, 0x4
+.global $$21507
+$$21507:
+	.incbin "baserom.dol", 0x332A18, 0x4
+.global $$21788_3
+$$21788_3:
+	.incbin "baserom.dol", 0x332A1C, 0x4
+.global $$21923
+$$21923:
+	.incbin "baserom.dol", 0x332A20, 0x4
+.global $$21933_0
+$$21933_0:
+	.incbin "baserom.dol", 0x332A24, 0x4
+.global $$21934_0
+$$21934_0:
+	.incbin "baserom.dol", 0x332A28, 0x4
+.global $$21935_0
+$$21935_0:
+	.incbin "baserom.dol", 0x332A2C, 0x4
+.global $$21936_2
+$$21936_2:
+	.incbin "baserom.dol", 0x332A30, 0x4
+.global $$21937_1
+$$21937_1:
+	.incbin "baserom.dol", 0x332A34, 0x4
+.global $$21938_1
+$$21938_1:
+	.incbin "baserom.dol", 0x332A38, 0x4
+.global $$21939_0
+$$21939_0:
+	.incbin "baserom.dol", 0x332A3C, 0x4
+.global $$21940_0
+$$21940_0:
+	.incbin "baserom.dol", 0x332A40, 0x4
+.global $$21941_0
+$$21941_0:
+	.incbin "baserom.dol", 0x332A44, 0x4
+.global $$21942_0
+$$21942_0:
+	.incbin "baserom.dol", 0x332A48, 0x4
+.global $$21943_0
+$$21943_0:
+	.incbin "baserom.dol", 0x332A4C, 0x4
+
 .section .text
 
 .global add_tweaks__Q220$$2unnamed$$2zGrass_cpp$$25tweakFv

@@ -114,6 +114,51 @@ sMinDrawDist2:
 sMaxDrawAlpha:
 	.incbin "baserom.dol", 0x32D290, 0x8
 
+.section .sdata2
+
+.global $$2970_0
+$$2970_0:
+	.incbin "baserom.dol", 0x332980, 0x4
+.global $$2971_3
+$$2971_3:
+	.incbin "baserom.dol", 0x332984, 0x4
+.global $$2972_3
+$$2972_3:
+	.incbin "baserom.dol", 0x332988, 0x4
+.global $$2973_0
+$$2973_0:
+	.incbin "baserom.dol", 0x33298C, 0x4
+.global $$2974
+$$2974:
+	.incbin "baserom.dol", 0x332990, 0x4
+.global $$2983_1
+$$2983_1:
+	.incbin "baserom.dol", 0x332994, 0x4
+.global $$2984_2
+$$2984_2:
+	.incbin "baserom.dol", 0x332998, 0x4
+.global $$2985
+$$2985:
+	.incbin "baserom.dol", 0x33299C, 0x4
+.global $$21141_0
+$$21141_0:
+	.incbin "baserom.dol", 0x3329A0, 0x4
+.global $$21142_1
+$$21142_1:
+	.incbin "baserom.dol", 0x3329A4, 0x4
+.global $$21291_3
+$$21291_3:
+	.incbin "baserom.dol", 0x3329A8, 0x4
+.global $$21292_1
+$$21292_1:
+	.incbin "baserom.dol", 0x3329AC, 0x4
+.global $$21394_3
+$$21394_3:
+	.incbin "baserom.dol", 0x3329B0, 0x4
+.global $$21473_3
+$$21473_3:
+	.incbin "baserom.dol", 0x3329B4, 0x4
+
 .section .text
 
 .global zReticle_Init__Fv

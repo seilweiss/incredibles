@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2637
+$$2637:
+	.incbin "baserom.dol", 0x32F248, 0x8
+
 .section .text
 
 .global xPartitionReset__Fv

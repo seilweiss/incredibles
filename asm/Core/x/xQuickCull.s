@@ -6,6 +6,24 @@
 xqc_def_ctrl:
 	.skip 0x40
 
+.section .sdata2
+
+.global $$2603
+$$2603:
+	.incbin "baserom.dol", 0x32F278, 0x4
+.global $$2604
+$$2604:
+	.incbin "baserom.dol", 0x32F27C, 0x4
+.global $$2605
+$$2605:
+	.incbin "baserom.dol", 0x32F280, 0x4
+.global $$2606
+$$2606:
+	.incbin "baserom.dol", 0x32F284, 0x4
+.global $$2779
+$$2779:
+	.incbin "baserom.dol", 0x32F288, 0x8
+
 .section .text
 
 .global xQuickCullInit__FP10xQCControlffffff

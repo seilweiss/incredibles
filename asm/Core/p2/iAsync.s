@@ -27,6 +27,12 @@ needToLock:
 asyncThreadDone:
 	.incbin "baserom.dol", 0x32B5E0, 0x8
 
+.section .sdata2
+
+.global $$2675_0
+$$2675_0:
+	.incbin "baserom.dol", 0x32F7B0, 0x8
+
 .section .text
 
 .global iAsyncStart__FPFPv_Pv

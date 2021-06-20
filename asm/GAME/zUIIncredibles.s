@@ -189,6 +189,147 @@ lbl_803D93AC:
 BONUS_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2:
 	.incbin "baserom.dol", 0x32D868, 0x10
 
+.section .sdata2
+
+.global $$21275_0
+$$21275_0:
+	.incbin "baserom.dol", 0x333530, 0x4
+.global VOLUME_ACTIVE_COLOR__28$$2unnamed$$2zUIIncredibles_cpp$$2
+VOLUME_ACTIVE_COLOR__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.incbin "baserom.dol", 0x333534, 0x4
+.global $$21409_1
+$$21409_1:
+	.incbin "baserom.dol", 0x333538, 0x4
+.global $$21410_0
+$$21410_0:
+	.incbin "baserom.dol", 0x33353C, 0x4
+.global $$21482_1
+$$21482_1:
+	.incbin "baserom.dol", 0x333540, 0x4
+.global $$21572_0
+$$21572_0:
+	.incbin "baserom.dol", 0x333544, 0x4
+.global $$21573_0
+$$21573_0:
+	.incbin "baserom.dol", 0x333548, 0x4
+.global $$21574_0
+$$21574_0:
+	.incbin "baserom.dol", 0x33354C, 0x4
+.global $$21575_0
+$$21575_0:
+	.incbin "baserom.dol", 0x333550, 0x4
+.global $$21576_2
+$$21576_2:
+	.incbin "baserom.dol", 0x333554, 0x4
+.global $$21577_0
+$$21577_0:
+	.incbin "baserom.dol", 0x333558, 0x8
+.global $$21579_0
+$$21579_0:
+	.incbin "baserom.dol", 0x333560, 0x8
+.global $$21658_1
+$$21658_1:
+	.incbin "baserom.dol", 0x333568, 0x8
+.global $$21731_1
+$$21731_1:
+	.incbin "baserom.dol", 0x333570, 0x4
+.global $$21732_1
+$$21732_1:
+	.incbin "baserom.dol", 0x333574, 0x4
+.global $$21733_1
+$$21733_1:
+	.incbin "baserom.dol", 0x333578, 0x4
+.global $$21757_2
+$$21757_2:
+	.incbin "baserom.dol", 0x33357C, 0x4
+.global $$21850
+$$21850:
+	.incbin "baserom.dol", 0x333580, 0x8
+.global $$21851
+$$21851:
+	.incbin "baserom.dol", 0x333588, 0x8
+.global $$21906
+$$21906:
+	.incbin "baserom.dol", 0x333590, 0x4
+.global $$21907_2
+$$21907_2:
+	.incbin "baserom.dol", 0x333594, 0x4
+.global $$21908_0
+$$21908_0:
+	.incbin "baserom.dol", 0x333598, 0x4
+.global $$21909
+$$21909:
+	.incbin "baserom.dol", 0x33359C, 0x4
+.global $$21932_1
+$$21932_1:
+	.incbin "baserom.dol", 0x3335A0, 0x4
+.global $$22010_0
+$$22010_0:
+	.incbin "baserom.dol", 0x3335A4, 0x4
+.global $$22024_0
+$$22024_0:
+	.incbin "baserom.dol", 0x3335A8, 0x4
+.global $$22038
+$$22038:
+	.incbin "baserom.dol", 0x3335AC, 0x4
+.global $$22039
+$$22039:
+	.incbin "baserom.dol", 0x3335B0, 0x4
+.global $$22040_1
+$$22040_1:
+	.incbin "baserom.dol", 0x3335B4, 0x4
+.global $$22050
+$$22050:
+	.incbin "baserom.dol", 0x3335B8, 0x4
+.global $$22051
+$$22051:
+	.incbin "baserom.dol", 0x3335BC, 0x4
+.global $$22125
+$$22125:
+	.incbin "baserom.dol", 0x3335C0, 0x4
+.global $$22162
+$$22162:
+	.incbin "baserom.dol", 0x3335C4, 0x4
+.global $$22163
+$$22163:
+	.incbin "baserom.dol", 0x3335C8, 0x4
+.global $$22164
+$$22164:
+	.incbin "baserom.dol", 0x3335CC, 0x4
+.global $$22176
+$$22176:
+	.incbin "baserom.dol", 0x3335D0, 0x4
+.global $$22177
+$$22177:
+	.incbin "baserom.dol", 0x3335D4, 0x4
+.global $$22401
+$$22401:
+	.incbin "baserom.dol", 0x3335D8, 0x4
+.global $$22402_1
+$$22402_1:
+	.incbin "baserom.dol", 0x3335DC, 0x4
+.global $$22459
+$$22459:
+	.incbin "baserom.dol", 0x3335E0, 0x4
+.global $$22460
+$$22460:
+	.incbin "baserom.dol", 0x3335E4, 0x4
+.global $$22497
+$$22497:
+	.incbin "baserom.dol", 0x3335E8, 0x14
+.global lbl_803D6C3C
+lbl_803D6C3C:
+	.incbin "baserom.dol", 0x3335FC, 0x4
+.global $$22514
+$$22514:
+	.incbin "baserom.dol", 0x333600, 0x18
+.global SCENEFLAGS_COMPLETED__28$$2unnamed$$2zUIIncredibles_cpp$$2
+SCENEFLAGS_COMPLETED__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.incbin "baserom.dol", 0x333618, 0x4
+.global $$23146
+$$23146:
+	.incbin "baserom.dol", 0x33361C, 0x4
+
 .section .text
 
 .global reset__5statsFv

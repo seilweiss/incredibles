@@ -36,6 +36,21 @@ from$1046:
 to$1047:
 	.incbin "baserom.dol", 0x32D0D4, 0xC
 
+.section .sdata2
+
+.global $$21035_3
+$$21035_3:
+	.incbin "baserom.dol", 0x332218, 0x4
+.global $$21068_2
+$$21068_2:
+	.incbin "baserom.dol", 0x33221C, 0x4
+.global $$21069_3
+$$21069_3:
+	.incbin "baserom.dol", 0x332220, 0x4
+.global $$21070_2
+$$21070_2:
+	.incbin "baserom.dol", 0x332224, 0x4
+
 .section .text
 
 .global DoInit__8zUIModelFv

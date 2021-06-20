@@ -27,6 +27,42 @@ lbl_803D8A04:
 __vt__11zZipLineCam:
 	.incbin "baserom.dol", 0x32B778, 0x28
 
+.section .sdata2
+
+.global $$2933
+$$2933:
+	.incbin "baserom.dol", 0x32F9B8, 0x4
+.global $$2934
+$$2934:
+	.incbin "baserom.dol", 0x32F9BC, 0x4
+.global $$2935_1
+$$2935_1:
+	.incbin "baserom.dol", 0x32F9C0, 0x4
+.global $$2936_2
+$$2936_2:
+	.incbin "baserom.dol", 0x32F9C4, 0x4
+.global $$2937_1
+$$2937_1:
+	.incbin "baserom.dol", 0x32F9C8, 0x4
+.global $$2938
+$$2938:
+	.incbin "baserom.dol", 0x32F9CC, 0x4
+.global $$2939_0
+$$2939_0:
+	.incbin "baserom.dol", 0x32F9D0, 0x4
+.global $$2940
+$$2940:
+	.incbin "baserom.dol", 0x32F9D4, 0x4
+.global $$2941_1
+$$2941_1:
+	.incbin "baserom.dol", 0x32F9D8, 0x4
+.global $$2942
+$$2942:
+	.incbin "baserom.dol", 0x32F9DC, 0x4
+.global $$21006
+$$21006:
+	.incbin "baserom.dol", 0x32F9E0, 0x8
+
 .section .text
 
 .global zZipLineInit__FPvPv

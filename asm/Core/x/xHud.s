@@ -51,6 +51,57 @@ lbl_803D86F8:
 __vt__Q24xhud6widget:
 	.incbin "baserom.dol", 0x32B1E0, 0x28
 
+.section .sdata2
+
+.global known_types__Q24xhud18$$2unnamed$$2xHud_cpp$$2
+known_types__Q24xhud18$$2unnamed$$2xHud_cpp$$2:
+	.incbin "baserom.dol", 0x32EEF0, 0x28
+.global $$21087_0
+$$21087_0:
+	.incbin "baserom.dol", 0x32EF18, 0x4
+.global $$21200
+$$21200:
+	.incbin "baserom.dol", 0x32EF1C, 0x4
+.global $$21201
+$$21201:
+	.incbin "baserom.dol", 0x32EF20, 0x4
+.global $$21202
+$$21202:
+	.incbin "baserom.dol", 0x32EF24, 0x4
+.global $$21203
+$$21203:
+	.incbin "baserom.dol", 0x32EF28, 0x4
+.global $$21204
+$$21204:
+	.incbin "baserom.dol", 0x32EF2C, 0x4
+.global $$21210
+$$21210:
+	.incbin "baserom.dol", 0x32EF30, 0x4
+.global $$21255_0
+$$21255_0:
+	.incbin "baserom.dol", 0x32EF34, 0x4
+.global $$21256_0
+$$21256_0:
+	.incbin "baserom.dol", 0x32EF38, 0x4
+.global $$21257
+$$21257:
+	.incbin "baserom.dol", 0x32EF3C, 0x4
+.global $$21538
+$$21538:
+	.incbin "baserom.dol", 0x32EF40, 0x4
+.global $$21557
+$$21557:
+	.incbin "baserom.dol", 0x32EF44, 0x4
+.global lbl_803D2588
+lbl_803D2588:
+	.incbin "baserom.dol", 0x32EF48, 0x4
+.global lbl_803D258C
+lbl_803D258C:
+	.incbin "baserom.dol", 0x32EF4C, 0x4
+.global $$21567
+$$21567:
+	.incbin "baserom.dol", 0x32EF50, 0x8
+
 .section .text
 
 .global create__Q24xhud15block_allocatorFii

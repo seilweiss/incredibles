@@ -1,5 +1,35 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2948_1
+$$2948_1:
+	.incbin "baserom.dol", 0x333EF0, 0x4
+.global $$2954_4
+$$2954_4:
+	.incbin "baserom.dol", 0x333EF4, 0x4
+.global $$2982_4
+$$2982_4:
+	.incbin "baserom.dol", 0x333EF8, 0x4
+.global $$2983_2
+$$2983_2:
+	.incbin "baserom.dol", 0x333EFC, 0x4
+.global $$2984_3
+$$2984_3:
+	.incbin "baserom.dol", 0x333F00, 0x4
+.global $$2985_0
+$$2985_0:
+	.incbin "baserom.dol", 0x333F04, 0x4
+.global $$2987_0
+$$2987_0:
+	.incbin "baserom.dol", 0x333F08, 0x8
+.global $$21017_1
+$$21017_1:
+	.incbin "baserom.dol", 0x333F10, 0x4
+.global $$21018_1
+$$21018_1:
+	.incbin "baserom.dol", 0x333F14, 0x4
+
 .section .text
 
 .global zSparkSceneEnter__Fv

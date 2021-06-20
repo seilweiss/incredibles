@@ -81,6 +81,51 @@ $$21344_1:
 lbl_803D8984:
 	.skip 0x4
 
+.section .sdata2
+
+.global lbl_803D2E94
+lbl_803D2E94:
+	.incbin "baserom.dol", 0x32F854, 0x4
+.global $$21056_1
+$$21056_1:
+	.incbin "baserom.dol", 0x32F858, 0x18
+.global $$21170
+$$21170:
+	.incbin "baserom.dol", 0x32F870, 0x4
+.global $$21171
+$$21171:
+	.incbin "baserom.dol", 0x32F874, 0x4
+.global $$21172
+$$21172:
+	.incbin "baserom.dol", 0x32F878, 0x4
+.global $$21183_0
+$$21183_0:
+	.incbin "baserom.dol", 0x32F87C, 0x4
+.global $$21184_0
+$$21184_0:
+	.incbin "baserom.dol", 0x32F880, 0x4
+.global $$21523
+$$21523:
+	.incbin "baserom.dol", 0x32F884, 0x4
+.global $$21678_0
+$$21678_0:
+	.incbin "baserom.dol", 0x32F888, 0x8
+.global $$21685_0
+$$21685_0:
+	.incbin "baserom.dol", 0x32F890, 0x4
+.global $$21758_0
+$$21758_0:
+	.incbin "baserom.dol", 0x32F894, 0x4
+.global lbl_803D2ED8
+lbl_803D2ED8:
+	.incbin "baserom.dol", 0x32F898, 0x4
+.global $$22060
+$$22060:
+	.incbin "baserom.dol", 0x32F89C, 0x4
+.global $$22061
+$$22061:
+	.incbin "baserom.dol", 0x32F8A0, 0x8
+
 .section .text
 
 .global GetChildFrameHierarchy__FP7RwFramePv

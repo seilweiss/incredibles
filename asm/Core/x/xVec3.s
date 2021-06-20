@@ -1,5 +1,47 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global m_Null__5xVec3
+m_Null__5xVec3:
+	.incbin "baserom.dol", 0x32F6F8, 0x4
+.global lbl_803D2D3C
+lbl_803D2D3C:
+	.incbin "baserom.dol", 0x32F6FC, 0x4
+.global lbl_803D2D40
+lbl_803D2D40:
+	.incbin "baserom.dol", 0x32F700, 0x4
+.global m_UnitAxisX__5xVec3
+m_UnitAxisX__5xVec3:
+	.incbin "baserom.dol", 0x32F704, 0xC
+.global m_UnitAxisY__5xVec3
+m_UnitAxisY__5xVec3:
+	.incbin "baserom.dol", 0x32F710, 0x4
+.global lbl_803D2D54
+lbl_803D2D54:
+	.incbin "baserom.dol", 0x32F714, 0x4
+.global lbl_803D2D58
+lbl_803D2D58:
+	.incbin "baserom.dol", 0x32F718, 0x4
+.global m_UnitAxisZ__5xVec3
+m_UnitAxisZ__5xVec3:
+	.incbin "baserom.dol", 0x32F71C, 0x4
+.global lbl_803D2D60
+lbl_803D2D60:
+	.incbin "baserom.dol", 0x32F720, 0x4
+.global lbl_803D2D64
+lbl_803D2D64:
+	.incbin "baserom.dol", 0x32F724, 0x4
+.global $$2601
+$$2601:
+	.incbin "baserom.dol", 0x32F728, 0x4
+.global $$2602
+$$2602:
+	.incbin "baserom.dol", 0x32F72C, 0x4
+.global $$2603_0
+$$2603_0:
+	.incbin "baserom.dol", 0x32F730, 0x8
+
 .section .text
 
 .global xVec3Normalize__FP5xVec3PC5xVec3

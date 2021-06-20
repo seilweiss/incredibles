@@ -6,6 +6,12 @@
 zCOMBAT_COMBO_THRESHOLD:
 	.incbin "baserom.dol", 0x32B980, 0x8
 
+.section .sdata2
+
+.global $$2905_0
+$$2905_0:
+	.incbin "baserom.dol", 0x32FBD8, 0x8
+
 .section .text
 
 .global setEnabled__12zCombatComboFb

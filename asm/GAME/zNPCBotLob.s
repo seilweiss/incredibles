@@ -54,6 +54,41 @@ lbl_803D91E8:
 __vt__Q21z33lightweight_system$$0Q21z5shell$$415$$1:
 	.incbin "baserom.dol", 0x32D208, 0x28
 
+.section .sdata2
+.global $$21261_2
+$$21261_2:
+	.incbin "baserom.dol", 0x332908, 0x4
+.global $$21262_2
+$$21262_2:
+	.incbin "baserom.dol", 0x33290C, 0x4
+.global $$21263_4
+$$21263_4:
+	.incbin "baserom.dol", 0x332910, 0x4
+.global $$21267_0
+$$21267_0:
+	.incbin "baserom.dol", 0x332914, 0x4
+.global $$21301
+$$21301:
+	.incbin "baserom.dol", 0x332918, 0x4
+.global $$21319_4
+$$21319_4:
+	.incbin "baserom.dol", 0x33291C, 0x4
+.global $$21324_1
+$$21324_1:
+	.incbin "baserom.dol", 0x332920, 0x4
+.global $$21385_0
+$$21385_0:
+	.incbin "baserom.dol", 0x332924, 0x4
+.global $$21386_4
+$$21386_4:
+	.incbin "baserom.dol", 0x332928, 0x4
+.global $$21489
+$$21489:
+	.incbin "baserom.dol", 0x33292C, 0x4
+.global $$21536_1
+$$21536_1:
+	.incbin "baserom.dol", 0x332930, 0x8
+
 .section .text
 
 .global runnable__Q24zNPC7bot_lobFf

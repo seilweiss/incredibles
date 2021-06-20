@@ -69,6 +69,96 @@ common_warp_names__11xScreenWarp:
 common_warp_animate__11xScreenWarp:
 	.incbin "baserom.dol", 0x32B43C, 0x1C
 
+.section .sdata2
+
+.global $$21054_1
+$$21054_1:
+	.incbin "baserom.dol", 0x32F350, 0x4
+.global $$21129
+$$21129:
+	.incbin "baserom.dol", 0x32F354, 0x4
+.global $$21130
+$$21130:
+	.incbin "baserom.dol", 0x32F358, 0x4
+.global $$21131
+$$21131:
+	.incbin "baserom.dol", 0x32F35C, 0x4
+.global $$21132
+$$21132:
+	.incbin "baserom.dol", 0x32F360, 0x4
+.global $$21133_0
+$$21133_0:
+	.incbin "baserom.dol", 0x32F364, 0x4
+.global $$21134_0
+$$21134_0:
+	.incbin "baserom.dol", 0x32F368, 0x4
+.global $$21164
+$$21164:
+	.incbin "baserom.dol", 0x32F36C, 0x4
+.global $$21166
+$$21166:
+	.incbin "baserom.dol", 0x32F370, 0x8
+.global $$21215_1
+$$21215_1:
+	.incbin "baserom.dol", 0x32F378, 0x8
+.global $$21325
+$$21325:
+	.incbin "baserom.dol", 0x32F380, 0x4
+.global $$21358
+$$21358:
+	.incbin "baserom.dol", 0x32F384, 0x4
+.global $$21359
+$$21359:
+	.incbin "baserom.dol", 0x32F388, 0x4
+.global $$21391_0
+$$21391_0:
+	.incbin "baserom.dol", 0x32F38C, 0x4
+.global $$21392_0
+$$21392_0:
+	.incbin "baserom.dol", 0x32F390, 0x4
+.global $$21424_0
+$$21424_0:
+	.incbin "baserom.dol", 0x32F394, 0x4
+.global $$21425
+$$21425:
+	.incbin "baserom.dol", 0x32F398, 0x4
+.global $$21466
+$$21466:
+	.incbin "baserom.dol", 0x32F39C, 0x4
+.global $$21467
+$$21467:
+	.incbin "baserom.dol", 0x32F3A0, 0x4
+.global $$21468
+$$21468:
+	.incbin "baserom.dol", 0x32F3A4, 0x4
+.global $$21469
+$$21469:
+	.incbin "baserom.dol", 0x32F3A8, 0x4
+.global $$21473_0
+$$21473_0:
+	.incbin "baserom.dol", 0x32F3AC, 0x4
+.global $$21474
+$$21474:
+	.incbin "baserom.dol", 0x32F3B0, 0x4
+.global $$21514_0
+$$21514_0:
+	.incbin "baserom.dol", 0x32F3B4, 0x4
+.global $$21515_0
+$$21515_0:
+	.incbin "baserom.dol", 0x32F3B8, 0x4
+.global $$21516_0
+$$21516_0:
+	.incbin "baserom.dol", 0x32F3BC, 0x4
+.global $$21517_0
+$$21517_0:
+	.incbin "baserom.dol", 0x32F3C0, 0x4
+.global $$21518_0
+$$21518_0:
+	.incbin "baserom.dol", 0x32F3C4, 0x4
+.global $$21519_0
+$$21519_0:
+	.incbin "baserom.dol", 0x32F3C8, 0x8
+
 .section .text
 
 .global alloc_warp__25$$2unnamed$$2xScreenWarp_cpp$$2FQ211xScreenWarp9type_enum

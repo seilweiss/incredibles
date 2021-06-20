@@ -6,6 +6,30 @@
 module__29$$2unnamed$$2zTransientModel_cpp$$2:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2829_1
+$$2829_1:
+	.incbin "baserom.dol", 0x334028, 0x4
+.global $$2830_0
+$$2830_0:
+	.incbin "baserom.dol", 0x33402C, 0x4
+.global $$21283_2
+$$21283_2:
+	.incbin "baserom.dol", 0x334030, 0x4
+.global $$21284_3
+$$21284_3:
+	.incbin "baserom.dol", 0x334034, 0x4
+.global $$21362_1
+$$21362_1:
+	.incbin "baserom.dol", 0x334038, 0x8
+.global $$21435_1
+$$21435_1:
+	.incbin "baserom.dol", 0x334040, 0x8
+.global $$21532_2
+$$21532_2:
+	.incbin "baserom.dol", 0x334048, 0x8
+
 .section .text
 
 .global add_tweaks__Q229$$2unnamed$$2zTransientModel_cpp$$25tweakFv

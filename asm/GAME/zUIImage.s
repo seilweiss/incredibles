@@ -12,6 +12,48 @@ __vt__8zUIImage:
 modeTranslate$1060:
 	.incbin "baserom.dol", 0x32D0B0, 0x10
 
+.section .sdata2
+
+.global $$21026_3
+$$21026_3:
+	.incbin "baserom.dol", 0x3321D0, 0x4
+.global $$21152_3
+$$21152_3:
+	.incbin "baserom.dol", 0x3321D4, 0x4
+.global $$21153_5
+$$21153_5:
+	.incbin "baserom.dol", 0x3321D8, 0x4
+.global $$21154_2
+$$21154_2:
+	.incbin "baserom.dol", 0x3321DC, 0x4
+.global $$21155_1
+$$21155_1:
+	.incbin "baserom.dol", 0x3321E0, 0x4
+.global $$21156_1
+$$21156_1:
+	.incbin "baserom.dol", 0x3321E4, 0x4
+.global $$21157_2
+$$21157_2:
+	.incbin "baserom.dol", 0x3321E8, 0x4
+.global $$21158_5
+$$21158_5:
+	.incbin "baserom.dol", 0x3321EC, 0x4
+.global $$21159_1
+$$21159_1:
+	.incbin "baserom.dol", 0x3321F0, 0x4
+.global $$21160_2
+$$21160_2:
+	.incbin "baserom.dol", 0x3321F4, 0x4
+.global $$21161_1
+$$21161_1:
+	.incbin "baserom.dol", 0x3321F8, 0x8
+.global $$21164_1
+$$21164_1:
+	.incbin "baserom.dol", 0x332200, 0x8
+.global $$21167_3
+$$21167_3:
+	.incbin "baserom.dol", 0x332208, 0x8
+
 .section .text
 
 .global SetTexture__8zUIImageFUib

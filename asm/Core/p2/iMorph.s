@@ -27,6 +27,18 @@ s_nTemp:
 s_numV:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2725
+$$2725:
+	.incbin "baserom.dol", 0x32F8A8, 0x4
+.global $$2726
+$$2726:
+	.incbin "baserom.dol", 0x32F8AC, 0x4
+.global $$2728
+$$2728:
+	.incbin "baserom.dol", 0x32F8B0, 0x8
+
 .section .text
 
 .global MorphCommon__FP8RpAtomicP11RwMatrixTagPPsPsUifi

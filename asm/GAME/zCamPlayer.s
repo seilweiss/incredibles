@@ -153,6 +153,126 @@ lbl_803D8ADC:
 __vt__10zCamPlayer:
 	.incbin "baserom.dol", 0x32B8C0, 0x28
 
+.section .sdata2
+
+.global $$2988_1
+$$2988_1:
+	.incbin "baserom.dol", 0x32FAA0, 0x4
+.global $$2989_3
+$$2989_3:
+	.incbin "baserom.dol", 0x32FAA4, 0x4
+.global $$2990_4
+$$2990_4:
+	.incbin "baserom.dol", 0x32FAA8, 0x4
+.global $$2991_2
+$$2991_2:
+	.incbin "baserom.dol", 0x32FAAC, 0x4
+.global $$21015_1
+$$21015_1:
+	.incbin "baserom.dol", 0x32FAB0, 0x4
+.global $$21016_2
+$$21016_2:
+	.incbin "baserom.dol", 0x32FAB4, 0x4
+.global $$21017_0
+$$21017_0:
+	.incbin "baserom.dol", 0x32FAB8, 0x4
+.global $$21018
+$$21018:
+	.incbin "baserom.dol", 0x32FABC, 0x4
+.global $$21019_0
+$$21019_0:
+	.incbin "baserom.dol", 0x32FAC0, 0x4
+.global $$21020_2
+$$21020_2:
+	.incbin "baserom.dol", 0x32FAC4, 0x4
+.global $$21046
+$$21046:
+	.incbin "baserom.dol", 0x32FAC8, 0x4
+.global $$21055_0
+$$21055_0:
+	.incbin "baserom.dol", 0x32FACC, 0x4
+.global $$21116_0
+$$21116_0:
+	.incbin "baserom.dol", 0x32FAD0, 0x4
+.global $$21133_1
+$$21133_1:
+	.incbin "baserom.dol", 0x32FAD4, 0x4
+.global $$21219_1
+$$21219_1:
+	.incbin "baserom.dol", 0x32FAD8, 0x4
+.global $$21248_0
+$$21248_0:
+	.incbin "baserom.dol", 0x32FADC, 0x4
+.global $$21249
+$$21249:
+	.incbin "baserom.dol", 0x32FAE0, 0x4
+.global $$21250_0
+$$21250_0:
+	.incbin "baserom.dol", 0x32FAE4, 0x4
+.global $$21251_0
+$$21251_0:
+	.incbin "baserom.dol", 0x32FAE8, 0x4
+.global $$21252_0
+$$21252_0:
+	.incbin "baserom.dol", 0x32FAEC, 0x4
+.global $$21253
+$$21253:
+	.incbin "baserom.dol", 0x32FAF0, 0x4
+.global $$21263
+$$21263:
+	.incbin "baserom.dol", 0x32FAF4, 0x4
+.global $$21302
+$$21302:
+	.incbin "baserom.dol", 0x32FAF8, 0x4
+.global $$21342
+$$21342:
+	.incbin "baserom.dol", 0x32FAFC, 0x4
+.global $$21354_0
+$$21354_0:
+	.incbin "baserom.dol", 0x32FB00, 0x4
+.global $$21355_0
+$$21355_0:
+	.incbin "baserom.dol", 0x32FB04, 0x4
+.global $$21356
+$$21356:
+	.incbin "baserom.dol", 0x32FB08, 0x4
+.global $$21469_0
+$$21469_0:
+	.incbin "baserom.dol", 0x32FB0C, 0x4
+.global $$21470_0
+$$21470_0:
+	.incbin "baserom.dol", 0x32FB10, 0x4
+.global $$21510
+$$21510:
+	.incbin "baserom.dol", 0x32FB14, 0x4
+.global $$21581
+$$21581:
+	.incbin "baserom.dol", 0x32FB18, 0x4
+.global $$21582
+$$21582:
+	.incbin "baserom.dol", 0x32FB1C, 0x4
+.global $$21633
+$$21633:
+	.incbin "baserom.dol", 0x32FB20, 0x4
+.global $$21651
+$$21651:
+	.incbin "baserom.dol", 0x32FB24, 0x4
+.global $$21671_0
+$$21671_0:
+	.incbin "baserom.dol", 0x32FB28, 0x4
+.global $$21711
+$$21711:
+	.incbin "baserom.dol", 0x32FB2C, 0x4
+.global $$21712
+$$21712:
+	.incbin "baserom.dol", 0x32FB30, 0x4
+.global $$21713
+$$21713:
+	.incbin "baserom.dol", 0x32FB34, 0x4
+.global $$21714
+$$21714:
+	.incbin "baserom.dol", 0x32FB38, 0x8
+
 .section .text
 
 .global bound_sphere_xz__24$$2unnamed$$2zCamPlayer_cpp$$2FRfRfRfRfffffff

@@ -24,6 +24,51 @@ system_id__10fire_trail:
 need_setup__10fire_trail:
 	.incbin "baserom.dol", 0x32DCF0, 0x8
 
+.section .sdata2
+
+.global $$2891_0
+$$2891_0:
+	.incbin "baserom.dol", 0x333D40, 0x4
+.global $$2892_0
+$$2892_0:
+	.incbin "baserom.dol", 0x333D44, 0x4
+.global $$2893_0
+$$2893_0:
+	.incbin "baserom.dol", 0x333D48, 0x4
+.global $$2894
+$$2894:
+	.incbin "baserom.dol", 0x333D4C, 0x4
+.global $$2895
+$$2895:
+	.incbin "baserom.dol", 0x333D50, 0x4
+.global $$2896
+$$2896:
+	.incbin "baserom.dol", 0x333D54, 0x4
+.global $$2897
+$$2897:
+	.incbin "baserom.dol", 0x333D58, 0x4
+.global $$2898
+$$2898:
+	.incbin "baserom.dol", 0x333D5C, 0x4
+.global $$2954_2
+$$2954_2:
+	.incbin "baserom.dol", 0x333D60, 0x4
+.global $$2955_1
+$$2955_1:
+	.incbin "baserom.dol", 0x333D64, 0x4
+.global $$2956_1
+$$2956_1:
+	.incbin "baserom.dol", 0x333D68, 0x8
+.global $$2961_3
+$$2961_3:
+	.incbin "baserom.dol", 0x333D70, 0x8
+.global $$2994_3
+$$2994_3:
+	.incbin "baserom.dol", 0x333D78, 0x8
+.global $$21051_3
+$$21051_3:
+	.incbin "baserom.dol", 0x333D80, 0x8
+
 .section .text
 
 .global setup__10fire_trailFv

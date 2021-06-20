@@ -30,6 +30,138 @@ __vt__Q24zHud11hud_element:
 __vt__Q24zHud12Incredimeter:
 	.incbin "baserom.dol", 0x32C0E8, 0x28
 
+.section .sdata2
+
+.global $$21027_0
+$$21027_0:
+	.incbin "baserom.dol", 0x330760, 0x4
+.global $$21028
+$$21028:
+	.incbin "baserom.dol", 0x330764, 0x4
+.global $$21029_0
+$$21029_0:
+	.incbin "baserom.dol", 0x330768, 0x4
+.global $$21030
+$$21030:
+	.incbin "baserom.dol", 0x33076C, 0x4
+.global $$21031_0
+$$21031_0:
+	.incbin "baserom.dol", 0x330770, 0x4
+.global $$21032
+$$21032:
+	.incbin "baserom.dol", 0x330774, 0x4
+.global $$21033
+$$21033:
+	.incbin "baserom.dol", 0x330778, 0x4
+.global $$21034
+$$21034:
+	.incbin "baserom.dol", 0x33077C, 0x4
+.global $$21035_1
+$$21035_1:
+	.incbin "baserom.dol", 0x330780, 0x4
+.global $$21036_1
+$$21036_1:
+	.incbin "baserom.dol", 0x330784, 0x4
+.global $$21037_2
+$$21037_2:
+	.incbin "baserom.dol", 0x330788, 0x4
+.global $$21038_0
+$$21038_0:
+	.incbin "baserom.dol", 0x33078C, 0x4
+.global $$21039_1
+$$21039_1:
+	.incbin "baserom.dol", 0x330790, 0x4
+.global $$21040_4
+$$21040_4:
+	.incbin "baserom.dol", 0x330794, 0x4
+.global $$21041_0
+$$21041_0:
+	.incbin "baserom.dol", 0x330798, 0x4
+.global $$21042
+$$21042:
+	.incbin "baserom.dol", 0x33079C, 0x4
+.global $$21043_3
+$$21043_3:
+	.incbin "baserom.dol", 0x3307A0, 0x4
+.global $$21044
+$$21044:
+	.incbin "baserom.dol", 0x3307A4, 0x4
+.global $$21045
+$$21045:
+	.incbin "baserom.dol", 0x3307A8, 0x4
+.global $$21046_1
+$$21046_1:
+	.incbin "baserom.dol", 0x3307AC, 0x4
+.global $$21047_3
+$$21047_3:
+	.incbin "baserom.dol", 0x3307B0, 0x4
+.global $$21048
+$$21048:
+	.incbin "baserom.dol", 0x3307B4, 0x4
+.global $$21049_1
+$$21049_1:
+	.incbin "baserom.dol", 0x3307B8, 0x4
+.global $$21050_1
+$$21050_1:
+	.incbin "baserom.dol", 0x3307BC, 0x4
+.global $$21051_0
+$$21051_0:
+	.incbin "baserom.dol", 0x3307C0, 0x4
+.global $$21052
+$$21052:
+	.incbin "baserom.dol", 0x3307C4, 0x4
+.global $$21053_0
+$$21053_0:
+	.incbin "baserom.dol", 0x3307C8, 0x4
+.global $$21075
+$$21075:
+	.incbin "baserom.dol", 0x3307CC, 0x4
+.global $$21076
+$$21076:
+	.incbin "baserom.dol", 0x3307D0, 0x4
+.global $$21077_0
+$$21077_0:
+	.incbin "baserom.dol", 0x3307D4, 0x4
+.global $$21078_1
+$$21078_1:
+	.incbin "baserom.dol", 0x3307D8, 0x4
+.global $$21079
+$$21079:
+	.incbin "baserom.dol", 0x3307DC, 0x4
+.global $$21146_1
+$$21146_1:
+	.incbin "baserom.dol", 0x3307E0, 0x4
+.global $$21147_2
+$$21147_2:
+	.incbin "baserom.dol", 0x3307E4, 0x4
+.global $$21148_2
+$$21148_2:
+	.incbin "baserom.dol", 0x3307E8, 0x4
+.global $$21149_1
+$$21149_1:
+	.incbin "baserom.dol", 0x3307EC, 0x4
+.global $$21150_1
+$$21150_1:
+	.incbin "baserom.dol", 0x3307F0, 0x4
+.global $$21167_1
+$$21167_1:
+	.incbin "baserom.dol", 0x3307F4, 0x4
+.global $$21168
+$$21168:
+	.incbin "baserom.dol", 0x3307F8, 0x4
+.global $$21243
+$$21243:
+	.incbin "baserom.dol", 0x3307FC, 0x4
+.global $$21286
+$$21286:
+	.incbin "baserom.dol", 0x330800, 0x4
+.global $$21336_0
+$$21336_0:
+	.incbin "baserom.dol", 0x330804, 0x4
+.global $$21359_0
+$$21359_0:
+	.incbin "baserom.dol", 0x330808, 0x8
+
 .section .text
 
 .global __ct__Q24zHud12IncredimeterFv

@@ -6,6 +6,21 @@
 module__30$$2unnamed$$2zShrapnelEmitter_cpp$$2:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21079_0
+$$21079_0:
+	.incbin "baserom.dol", 0x333FE8, 0x4
+.global $$21080_1
+$$21080_1:
+	.incbin "baserom.dol", 0x333FEC, 0x4
+.global $$21166_4
+$$21166_4:
+	.incbin "baserom.dol", 0x333FF0, 0x8
+.global $$21245_1
+$$21245_1:
+	.incbin "baserom.dol", 0x333FF8, 0x8
+
 .section .text
 
 .global add_tweaks__Q230$$2unnamed$$2zShrapnelEmitter_cpp$$25tweakFv

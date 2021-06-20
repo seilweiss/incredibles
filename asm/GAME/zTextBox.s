@@ -27,6 +27,33 @@ new_tags__22$$2unnamed$$2zTextBox_cpp$$2:
 new_tags_size__22$$2unnamed$$2zTextBox_cpp$$2:
 	.incbin "baserom.dol", 0x32D074, 0x4
 
+.section .sdata2
+
+.global $$2798
+$$2798:
+	.incbin "baserom.dol", 0x332078, 0x4
+.global $$2799
+$$2799:
+	.incbin "baserom.dol", 0x33207C, 0x4
+.global $$2802_0
+$$2802_0:
+	.incbin "baserom.dol", 0x332080, 0x8
+.global $$2866_1
+$$2866_1:
+	.incbin "baserom.dol", 0x332088, 0x4
+.global xjlookup$879
+xjlookup$879:
+	.incbin "baserom.dol", 0x33208C, 0xC
+.global yjlookup$880
+yjlookup$880:
+	.incbin "baserom.dol", 0x332098, 0xC
+.global $$2906_1
+$$2906_1:
+	.incbin "baserom.dol", 0x3320A4, 0x4
+.global $$2907_1
+$$2907_1:
+	.incbin "baserom.dol", 0x3320A8, 0x8
+
 .section .text
 
 .global render_bk_fill__22$$2unnamed$$2zTextBox_cpp$$2FRC8ztextbox

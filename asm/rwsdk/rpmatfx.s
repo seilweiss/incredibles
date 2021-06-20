@@ -72,6 +72,87 @@ _rpMatFXMaterialDataFreeListPreallocBlocks:
 _rpMultiTextureModule:
 	.incbin "baserom.dol", 0x32E6C0, 0x20
 
+.section .sdata2
+
+.global $$2627_0
+$$2627_0:
+	.incbin "baserom.dol", 0x334DB0, 0x8
+.global $$2629
+$$2629:
+	.incbin "baserom.dol", 0x334DB8, 0x8
+.global $$21017_2
+$$21017_2:
+	.incbin "baserom.dol", 0x334DC0, 0x8
+.global opaqueWhite$272
+opaqueWhite$272:
+	.incbin "baserom.dol", 0x334DC8, 0x4
+.global opaqueBlack$273
+opaqueBlack$273:
+	.incbin "baserom.dol", 0x334DCC, 0x4
+.global $$2346_3
+$$2346_3:
+	.incbin "baserom.dol", 0x334DD0, 0x8
+.global $$2350_5
+$$2350_5:
+	.incbin "baserom.dol", 0x334DD8, 0x8
+.global $$2394_0
+$$2394_0:
+	.incbin "baserom.dol", 0x334DE0, 0x4
+.global $$2395_0
+$$2395_0:
+	.incbin "baserom.dol", 0x334DE4, 0x4
+.global $$2523
+$$2523:
+	.incbin "baserom.dol", 0x334DE8, 0x4
+.global $$2702
+$$2702:
+	.incbin "baserom.dol", 0x334DEC, 0x4
+.global $$2772
+$$2772:
+	.incbin "baserom.dol", 0x334DF0, 0x4
+.global $$2773
+$$2773:
+	.incbin "baserom.dol", 0x334DF4, 0x4
+.global $$21097_0
+$$21097_0:
+	.incbin "baserom.dol", 0x334DF8, 0x8
+.global $$2325
+$$2325:
+	.incbin "baserom.dol", 0x334E00, 0x4
+.global $$2326
+$$2326:
+	.incbin "baserom.dol", 0x334E04, 0x4
+.global $$2493
+$$2493:
+	.incbin "baserom.dol", 0x334E08, 0x4
+.global $$2494
+$$2494:
+	.incbin "baserom.dol", 0x334E0C, 0x4
+.global $$2274_0
+$$2274_0:
+	.incbin "baserom.dol", 0x334E10, 0x4
+.global lbl_803D8454
+lbl_803D8454:
+	.incbin "baserom.dol", 0x334E14, 0x4
+.global $$2275_0
+$$2275_0:
+	.incbin "baserom.dol", 0x334E18, 0x4
+.global lbl_803D845C
+lbl_803D845C:
+	.incbin "baserom.dol", 0x334E1C, 0x4
+.global $$2276_1
+$$2276_1:
+	.incbin "baserom.dol", 0x334E20, 0x4
+.global lbl_803D8464
+lbl_803D8464:
+	.incbin "baserom.dol", 0x334E24, 0x4
+.global $$2881_1
+$$2881_1:
+	.incbin "baserom.dol", 0x334E28, 0x8
+.global $$2883_3
+$$2883_3:
+	.incbin "baserom.dol", 0x334E30, 0x10
+
 .section .text
 
 .global MatFXClose

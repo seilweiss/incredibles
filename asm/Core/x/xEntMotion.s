@@ -18,6 +18,69 @@ lbl_803D8654:
 lbl_803D8658:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2906_0
+$$2906_0:
+	.incbin "baserom.dol", 0x32EB28, 0x4
+.global $$2907_0
+$$2907_0:
+	.incbin "baserom.dol", 0x32EB2C, 0x4
+.global $$2908_0
+$$2908_0:
+	.incbin "baserom.dol", 0x32EB30, 0x4
+.global $$2909_0
+$$2909_0:
+	.incbin "baserom.dol", 0x32EB34, 0x4
+.global $$2910_0
+$$2910_0:
+	.incbin "baserom.dol", 0x32EB38, 0x4
+.global $$21125
+$$21125:
+	.incbin "baserom.dol", 0x32EB3C, 0x4
+.global $$21250
+$$21250:
+	.incbin "baserom.dol", 0x32EB40, 0x4
+.global $$21251
+$$21251:
+	.incbin "baserom.dol", 0x32EB44, 0x4
+.global $$21292
+$$21292:
+	.incbin "baserom.dol", 0x32EB48, 0x4
+.global $$21351
+$$21351:
+	.incbin "baserom.dol", 0x32EB4C, 0x4
+.global $$21352
+$$21352:
+	.incbin "baserom.dol", 0x32EB50, 0x4
+.global $$21353
+$$21353:
+	.incbin "baserom.dol", 0x32EB54, 0x4
+.global $$21354
+$$21354:
+	.incbin "baserom.dol", 0x32EB58, 0x4
+.global $$21355
+$$21355:
+	.incbin "baserom.dol", 0x32EB5C, 0x4
+.global $$21451
+$$21451:
+	.incbin "baserom.dol", 0x32EB60, 0x4
+.global lbl_803D21A4
+lbl_803D21A4:
+	.incbin "baserom.dol", 0x32EB64, 0x4
+.global lbl_803D21A8
+lbl_803D21A8:
+	.incbin "baserom.dol", 0x32EB68, 0x4
+.global $$21470
+$$21470:
+	.incbin "baserom.dol", 0x32EB6C, 0x4
+.global $$21471
+$$21471:
+	.incbin "baserom.dol", 0x32EB70, 0x4
+.global $$21907
+$$21907:
+	.incbin "baserom.dol", 0x32EB74, 0x4
+
 .section .text
 
 .global xEntMotionInit__FP10xEntMotionP4xEntP15xEntMotionAsset

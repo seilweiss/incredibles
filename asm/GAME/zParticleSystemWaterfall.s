@@ -21,6 +21,63 @@ __vt__27zParticleGeneratorWaterfall:
 __vt__24zParticleSystemWaterfall:
 	.incbin "baserom.dol", 0x32DA04, 0x34
 
+.section .sdata2
+
+.global $$2999_3
+$$2999_3:
+	.incbin "baserom.dol", 0x333688, 0x4
+.global $$21000_8
+$$21000_8:
+	.incbin "baserom.dol", 0x33368C, 0x4
+.global $$21113_2
+$$21113_2:
+	.incbin "baserom.dol", 0x333690, 0x4
+.global $$21175_3
+$$21175_3:
+	.incbin "baserom.dol", 0x333694, 0x4
+.global $$21176_4
+$$21176_4:
+	.incbin "baserom.dol", 0x333698, 0x8
+.global $$21178_5
+$$21178_5:
+	.incbin "baserom.dol", 0x3336A0, 0x8
+.global $$21179_4
+$$21179_4:
+	.incbin "baserom.dol", 0x3336A8, 0x8
+.global $$21328_2
+$$21328_2:
+	.incbin "baserom.dol", 0x3336B0, 0x4
+.global $$21329_4
+$$21329_4:
+	.incbin "baserom.dol", 0x3336B4, 0x4
+.global $$21330_3
+$$21330_3:
+	.incbin "baserom.dol", 0x3336B8, 0x4
+.global $$21331_4
+$$21331_4:
+	.incbin "baserom.dol", 0x3336BC, 0x4
+.global $$21332_9
+$$21332_9:
+	.incbin "baserom.dol", 0x3336C0, 0x4
+.global $$21333_9
+$$21333_9:
+	.incbin "baserom.dol", 0x3336C4, 0x4
+.global $$21370_0
+$$21370_0:
+	.incbin "baserom.dol", 0x3336C8, 0x4
+.global $$21371
+$$21371:
+	.incbin "baserom.dol", 0x3336CC, 0x4
+.global $$21372_1
+$$21372_1:
+	.incbin "baserom.dol", 0x3336D0, 0x4
+.global $$21519_4
+$$21519_4:
+	.incbin "baserom.dol", 0x3336D4, 0x4
+.global $$21520_3
+$$21520_3:
+	.incbin "baserom.dol", 0x3336D8, 0x8
+
 .section .text
 
 .global __ct__30zParticleSystemWaterfallSplashFv

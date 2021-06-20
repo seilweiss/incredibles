@@ -15,6 +15,24 @@ lbl_803D8758:
 lbl_803D875C:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2993
+$$2993:
+	.incbin "baserom.dol", 0x32F1F8, 0x8
+.global $$21043_0
+$$21043_0:
+	.incbin "baserom.dol", 0x32F200, 0x8
+.global $$21069_0
+$$21069_0:
+	.incbin "baserom.dol", 0x32F208, 0x4
+.global $$21108
+$$21108:
+	.incbin "baserom.dol", 0x32F20C, 0x4
+.global $$21109
+$$21109:
+	.incbin "baserom.dol", 0x32F210, 0x8
+
 .section .text
 
 .global compare__FPCvPCv

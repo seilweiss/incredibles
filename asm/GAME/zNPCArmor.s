@@ -24,6 +24,21 @@ $$2stringBase0_70:
 numArmorNPC__Q24zNPC5Armor:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21355_1
+$$21355_1:
+	.incbin "baserom.dol", 0x330E30, 0x4
+.global $$21356_0
+$$21356_0:
+	.incbin "baserom.dol", 0x330E34, 0x4
+.global $$21358_0
+$$21358_0:
+	.incbin "baserom.dol", 0x330E38, 0x8
+.global $$21378_1
+$$21378_1:
+	.incbin "baserom.dol", 0x330E40, 0x8
+
 .section .text
 
 .global AddArmor__Q24zNPC5ArmorFPQ24zNPC6common

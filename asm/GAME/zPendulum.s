@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$21009_1
+$$21009_1:
+	.incbin "baserom.dol", 0x331D30, 0x4
+.global $$21010_1
+$$21010_1:
+	.incbin "baserom.dol", 0x331D34, 0x4
+.global $$21011_4
+$$21011_4:
+	.incbin "baserom.dol", 0x331D38, 0x4
+.global $$21012_5
+$$21012_5:
+	.incbin "baserom.dol", 0x331D3C, 0x4
+
 .section .text
 
 .global zPendulum_Init__FPvPv

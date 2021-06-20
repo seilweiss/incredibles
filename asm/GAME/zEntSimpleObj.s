@@ -51,6 +51,42 @@ __vt__Q21z25lightweight$$0Q21z4toss$$410$$1:
 __vt__Q21z32lightweight_system$$0Q21z4toss$$410$$1:
 	.incbin "baserom.dol", 0x32BDC0, 0x28
 
+.section .sdata2
+
+.global $$21333_0
+$$21333_0:
+	.incbin "baserom.dol", 0x330398, 0x4
+.global $$21334
+$$21334:
+	.incbin "baserom.dol", 0x33039C, 0x4
+.global $$21335_0
+$$21335_0:
+	.incbin "baserom.dol", 0x3303A0, 0x4
+.global $$21336
+$$21336:
+	.incbin "baserom.dol", 0x3303A4, 0x4
+.global $$21337
+$$21337:
+	.incbin "baserom.dol", 0x3303A8, 0x4
+.global $$21338
+$$21338:
+	.incbin "baserom.dol", 0x3303AC, 0x4
+.global $$21521_2
+$$21521_2:
+	.incbin "baserom.dol", 0x3303B0, 0x4
+.global lbl_803D39F4
+lbl_803D39F4:
+	.incbin "baserom.dol", 0x3303B4, 0x4
+.global lbl_803D39F8
+lbl_803D39F8:
+	.incbin "baserom.dol", 0x3303B8, 0x4
+.global rs01_hidden_entities__27$$2unnamed$$2zEntSimpleObj_cpp$$2
+rs01_hidden_entities__27$$2unnamed$$2zEntSimpleObj_cpp$$2:
+	.incbin "baserom.dol", 0x3303BC, 0x18
+.global hidden_entities__27$$2unnamed$$2zEntSimpleObj_cpp$$2
+hidden_entities__27$$2unnamed$$2zEntSimpleObj_cpp$$2:
+	.incbin "baserom.dol", 0x3303D4, 0x1C
+
 .section .text
 
 .global CmpSimpleMgr__FPCvPCv

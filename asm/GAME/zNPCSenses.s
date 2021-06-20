@@ -15,6 +15,39 @@ $$21070_7:
 lbl_803D92B4:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$21055_1
+$$21055_1:
+	.incbin "baserom.dol", 0x332BA0, 0x4
+.global $$21056_4
+$$21056_4:
+	.incbin "baserom.dol", 0x332BA4, 0x4
+.global $$21057_3
+$$21057_3:
+	.incbin "baserom.dol", 0x332BA8, 0x4
+.global $$21058_3
+$$21058_3:
+	.incbin "baserom.dol", 0x332BAC, 0x4
+.global $$21059_5
+$$21059_5:
+	.incbin "baserom.dol", 0x332BB0, 0x4
+.global $$21060_1
+$$21060_1:
+	.incbin "baserom.dol", 0x332BB4, 0x4
+.global $$21061_1
+$$21061_1:
+	.incbin "baserom.dol", 0x332BB8, 0x4
+.global $$21080_0
+$$21080_0:
+	.incbin "baserom.dol", 0x332BBC, 0x4
+.global $$21089_4
+$$21089_4:
+	.incbin "baserom.dol", 0x332BC0, 0x4
+.global $$21213_1
+$$21213_1:
+	.incbin "baserom.dol", 0x332BC4, 0x4
+
 .section .text
 
 .global Setup__Q24zNPC6SensesFPQ24zNPC6common

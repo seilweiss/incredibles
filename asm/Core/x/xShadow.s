@@ -81,6 +81,87 @@ sCastEnvironment:
 SHADOW_CACHE_MAX:
 	.incbin "baserom.dol", 0x32B508, 0x8
 
+.section .sdata2
+
+.global $$2935_0
+$$2935_0:
+	.incbin "baserom.dol", 0x32F450, 0x4
+.global $$21068_0
+$$21068_0:
+	.incbin "baserom.dol", 0x32F454, 0x4
+.global $$21118
+$$21118:
+	.incbin "baserom.dol", 0x32F458, 0x4
+.global $$21120
+$$21120:
+	.incbin "baserom.dol", 0x32F45C, 0x4
+.global $$21122
+$$21122:
+	.incbin "baserom.dol", 0x32F460, 0x4
+.global $$21515_1
+$$21515_1:
+	.incbin "baserom.dol", 0x32F464, 0x4
+.global $$21516_1
+$$21516_1:
+	.incbin "baserom.dol", 0x32F468, 0x4
+.global $$21517_1
+$$21517_1:
+	.incbin "baserom.dol", 0x32F46C, 0x4
+.global $$21518_1
+$$21518_1:
+	.incbin "baserom.dol", 0x32F470, 0x4
+.global $$21519_1
+$$21519_1:
+	.incbin "baserom.dol", 0x32F474, 0x4
+.global $$21545
+$$21545:
+	.incbin "baserom.dol", 0x32F478, 0x8
+.global $$21619
+$$21619:
+	.incbin "baserom.dol", 0x32F480, 0x8
+.global $$21655_0
+$$21655_0:
+	.incbin "baserom.dol", 0x32F488, 0x4
+.global $$21671
+$$21671:
+	.incbin "baserom.dol", 0x32F48C, 0x4
+.global $$21998
+$$21998:
+	.incbin "baserom.dol", 0x32F490, 0x4
+.global $$21999
+$$21999:
+	.incbin "baserom.dol", 0x32F494, 0x4
+.global $$22012
+$$22012:
+	.incbin "baserom.dol", 0x32F498, 0x4
+.global $$22023
+$$22023:
+	.incbin "baserom.dol", 0x32F49C, 0x4
+.global $$22342
+$$22342:
+	.incbin "baserom.dol", 0x32F4A0, 0x4
+.global $$22693
+$$22693:
+	.incbin "baserom.dol", 0x32F4A4, 0x4
+.global $$22694
+$$22694:
+	.incbin "baserom.dol", 0x32F4A8, 0x4
+.global $$22695
+$$22695:
+	.incbin "baserom.dol", 0x32F4AC, 0x4
+.global $$22696
+$$22696:
+	.incbin "baserom.dol", 0x32F4B0, 0x4
+.global $$22697
+$$22697:
+	.incbin "baserom.dol", 0x32F4B4, 0x4
+.global $$22794
+$$22794:
+	.incbin "baserom.dol", 0x32F4B8, 0x4
+.global $$22795
+$$22795:
+	.incbin "baserom.dol", 0x32F4BC, 0x4
+
 .section .text
 
 .global xShadowInit__Fv

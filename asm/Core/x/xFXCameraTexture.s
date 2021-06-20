@@ -1,5 +1,47 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2976_0
+$$2976_0:
+	.incbin "baserom.dol", 0x332A50, 0x4
+.global lbl_803D6094
+lbl_803D6094:
+	.incbin "baserom.dol", 0x332A54, 0x4
+.global $$21005_4
+$$21005_4:
+	.incbin "baserom.dol", 0x332A58, 0x4
+.global $$21006_4
+$$21006_4:
+	.incbin "baserom.dol", 0x332A5C, 0x4
+.global $$21007_3
+$$21007_3:
+	.incbin "baserom.dol", 0x332A60, 0x4
+.global $$21008_3
+$$21008_3:
+	.incbin "baserom.dol", 0x332A64, 0x4
+.global $$21010_3
+$$21010_3:
+	.incbin "baserom.dol", 0x332A68, 0x8
+.global $$21071_0
+$$21071_0:
+	.incbin "baserom.dol", 0x332A70, 0x4
+.global $$21090_4
+$$21090_4:
+	.incbin "baserom.dol", 0x332A74, 0x4
+.global $$21132_2
+$$21132_2:
+	.incbin "baserom.dol", 0x332A78, 0x4
+.global $$21146_2
+$$21146_2:
+	.incbin "baserom.dol", 0x332A7C, 0x4
+.global $$21291_4
+$$21291_4:
+	.incbin "baserom.dol", 0x332A80, 0x4
+.global $$21292_2
+$$21292_2:
+	.incbin "baserom.dol", 0x332A84, 0x4
+
 .section .text
 
 .global create__16xFXCameraTextureFiibii

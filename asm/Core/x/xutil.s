@@ -21,6 +21,15 @@ g_crc_needinit:
 buf$622:
 	.incbin "baserom.dol", 0x32B5A4, 0x3C
 
+.section .sdata2
+
+.global $$2819_2
+$$2819_2:
+	.incbin "baserom.dol", 0x32F6F0, 0x4
+.global $$2820_2
+$$2820_2:
+	.incbin "baserom.dol", 0x32F6F4, 0x4
+
 .section .text
 
 .global xUtilStartup__Fv

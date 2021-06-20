@@ -90,6 +90,24 @@ xClumpColl_FilterFlags:
 xClumpColl_FilterFlagsAllEqual:
 	.incbin "baserom.dol", 0x32B019, 0x7
 
+.section .sdata2
+
+.global $$21153_0
+$$21153_0:
+	.incbin "baserom.dol", 0x32E860, 0x4
+.global $$21288
+$$21288:
+	.incbin "baserom.dol", 0x32E864, 0x4
+.global $$21289
+$$21289:
+	.incbin "baserom.dol", 0x32E868, 0x4
+.global $$21290
+$$21290:
+	.incbin "baserom.dol", 0x32E86C, 0x4
+.global $$21291
+$$21291:
+	.incbin "baserom.dol", 0x32E870, 0x8
+
 .section .text
 
 .global xClumpColl_SetFilterFlags__FUcUcUc

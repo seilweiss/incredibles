@@ -63,6 +63,90 @@ __vt__12xBallPhysics:
 __vt__Q21z25lightweight$$0Q21z4bomb$$420$$1:
 	.incbin "baserom.dol", 0x32D348, 0x20
 
+.section .sdata2
+
+.global default_physics_properties__Q21z4bomb
+default_physics_properties__Q21z4bomb:
+	.incbin "baserom.dol", 0x332BC8, 0x2C
+.global $$21301_1
+$$21301_1:
+	.incbin "baserom.dol", 0x332BF4, 0x4
+.global $$21302_0
+$$21302_0:
+	.incbin "baserom.dol", 0x332BF8, 0x4
+.global $$21303_0
+$$21303_0:
+	.incbin "baserom.dol", 0x332BFC, 0x4
+.global $$21304_0
+$$21304_0:
+	.incbin "baserom.dol", 0x332C00, 0x4
+.global $$21309_1
+$$21309_1:
+	.incbin "baserom.dol", 0x332C04, 0x4
+.global $$21310_2
+$$21310_2:
+	.incbin "baserom.dol", 0x332C08, 0x4
+.global $$21311_1
+$$21311_1:
+	.incbin "baserom.dol", 0x332C0C, 0x4
+.global $$21312
+$$21312:
+	.incbin "baserom.dol", 0x332C10, 0x4
+.global $$21313_1
+$$21313_1:
+	.incbin "baserom.dol", 0x332C14, 0x4
+.global $$21314_0
+$$21314_0:
+	.incbin "baserom.dol", 0x332C18, 0x4
+.global $$21315_0
+$$21315_0:
+	.incbin "baserom.dol", 0x332C1C, 0x4
+.global $$21316_2
+$$21316_2:
+	.incbin "baserom.dol", 0x332C20, 0x4
+.global $$21317_2
+$$21317_2:
+	.incbin "baserom.dol", 0x332C24, 0x4
+.global $$21318_2
+$$21318_2:
+	.incbin "baserom.dol", 0x332C28, 0x4
+.global $$21319_5
+$$21319_5:
+	.incbin "baserom.dol", 0x332C2C, 0x4
+.global $$21320_2
+$$21320_2:
+	.incbin "baserom.dol", 0x332C30, 0x4
+.global $$21364_1
+$$21364_1:
+	.incbin "baserom.dol", 0x332C34, 0x4
+.global $$21385_1
+$$21385_1:
+	.incbin "baserom.dol", 0x332C38, 0x4
+.global $$21386_5
+$$21386_5:
+	.incbin "baserom.dol", 0x332C3C, 0x4
+.global $$21387_3
+$$21387_3:
+	.incbin "baserom.dol", 0x332C40, 0x4
+.global $$21415_2
+$$21415_2:
+	.incbin "baserom.dol", 0x332C44, 0x4
+.global $$21443_2
+$$21443_2:
+	.incbin "baserom.dol", 0x332C48, 0x4
+.global $$21444_0
+$$21444_0:
+	.incbin "baserom.dol", 0x332C4C, 0x4
+.global $$21445_1
+$$21445_1:
+	.incbin "baserom.dol", 0x332C50, 0x4
+.global $$21516_4
+$$21516_4:
+	.incbin "baserom.dol", 0x332C54, 0x4
+.global $$21534_0
+$$21534_0:
+	.incbin "baserom.dol", 0x332C58, 0x8
+
 .section .text
 
 .global get_model__19$$2unnamed$$2zBomb_cpp$$2FPCc

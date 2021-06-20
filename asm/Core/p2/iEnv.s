@@ -15,6 +15,15 @@ sPipeCamera:
 lastEnv:
 	.skip 0x4
 
+.section .sdata2
+
+.global lbl_803D2E14
+lbl_803D2E14:
+	.incbin "baserom.dol", 0x32F7D4, 0x4
+.global $$2989_2
+$$2989_2:
+	.incbin "baserom.dol", 0x32F7D8, 0x18
+
 .section .text
 
 .global SetPipelineCB__FP8RpAtomicPv

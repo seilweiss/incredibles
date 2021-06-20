@@ -18,6 +18,27 @@ $$2stringBase0_19:
 init$1175:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2988
+$$2988:
+	.incbin "baserom.dol", 0x32F2F0, 0x4
+.global $$2989_0
+$$2989_0:
+	.incbin "baserom.dol", 0x32F2F4, 0x4
+.global $$2990_0
+$$2990_0:
+	.incbin "baserom.dol", 0x32F2F8, 0x4
+.global $$2991
+$$2991:
+	.incbin "baserom.dol", 0x32F2FC, 0x4
+.global $$2996_1
+$$2996_1:
+	.incbin "baserom.dol", 0x32F300, 0x4
+.global $$21169
+$$21169:
+	.incbin "baserom.dol", 0x32F304, 0x4
+
 .section .text
 
 .global store__Q27xRumble7ManagerFPQ27xRumble7padInfoPCQ27xRumble11emitterBasePQ27xRumble14effectInternalfb

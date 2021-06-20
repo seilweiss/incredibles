@@ -21,6 +21,12 @@ months:
 dotw:
 	.incbin "baserom.dol", 0x32B740, 0x20
 
+.section .sdata2
+
+.global $$2607
+$$2607:
+	.incbin "baserom.dol", 0x32F950, 0x8
+
 .section .text
 
 .global iGetMinute__Fv

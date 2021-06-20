@@ -30,6 +30,36 @@ sDefaultSurface:
 pDefaultSurface:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21000_6
+$$21000_6:
+	.incbin "baserom.dol", 0x331FD0, 0x4
+.global $$21001_0
+$$21001_0:
+	.incbin "baserom.dol", 0x331FD4, 0x4
+.global $$21008_1
+$$21008_1:
+	.incbin "baserom.dol", 0x331FD8, 0x4
+.global $$21009_2
+$$21009_2:
+	.incbin "baserom.dol", 0x331FDC, 0x4
+.global $$21134_1
+$$21134_1:
+	.incbin "baserom.dol", 0x331FE0, 0x8
+.global $$21233
+$$21233:
+	.incbin "baserom.dol", 0x331FE8, 0x8
+.global $$21599_2
+$$21599_2:
+	.incbin "baserom.dol", 0x331FF0, 0x4
+.global $$21600_0
+$$21600_0:
+	.incbin "baserom.dol", 0x331FF4, 0x4
+.global $$21601_0
+$$21601_0:
+	.incbin "baserom.dol", 0x331FF8, 0x8
+
 .section .text
 
 .global zSurfaceInit__Fv

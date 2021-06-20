@@ -153,6 +153,129 @@ bounce__Q24zNPC10churn_rock:
 __vt__Q24zNPC11tank_attack:
 	.incbin "baserom.dol", 0x32CE7C, 0xC
 
+.section .sdata2
+
+.global tread_curve__22$$2unnamed$$2zNPCTank_cpp$$2
+tread_curve__22$$2unnamed$$2zNPCTank_cpp$$2:
+	.incbin "baserom.dol", 0x331B18, 0x18
+.global $$21502
+$$21502:
+	.incbin "baserom.dol", 0x331B30, 0x4
+.global $$21503
+$$21503:
+	.incbin "baserom.dol", 0x331B34, 0x4
+.global $$21504_0
+$$21504_0:
+	.incbin "baserom.dol", 0x331B38, 0x4
+.global $$21505
+$$21505:
+	.incbin "baserom.dol", 0x331B3C, 0x4
+.global $$21506
+$$21506:
+	.incbin "baserom.dol", 0x331B40, 0x8
+.global $$21508_0
+$$21508_0:
+	.incbin "baserom.dol", 0x331B48, 0x8
+.global $$21527_1
+$$21527_1:
+	.incbin "baserom.dol", 0x331B50, 0x4
+.global $$21566
+$$21566:
+	.incbin "baserom.dol", 0x331B54, 0x4
+.global $$21615_1
+$$21615_1:
+	.incbin "baserom.dol", 0x331B58, 0x4
+.global $$21638
+$$21638:
+	.incbin "baserom.dol", 0x331B5C, 0x4
+.global $$21652
+$$21652:
+	.incbin "baserom.dol", 0x331B60, 0x4
+.global $$21653
+$$21653:
+	.incbin "baserom.dol", 0x331B64, 0x4
+.global $$21670
+$$21670:
+	.incbin "baserom.dol", 0x331B68, 0x4
+.global $$21671_2
+$$21671_2:
+	.incbin "baserom.dol", 0x331B6C, 0x4
+.global $$21672
+$$21672:
+	.incbin "baserom.dol", 0x331B70, 0x4
+.global $$21673
+$$21673:
+	.incbin "baserom.dol", 0x331B74, 0x4
+.global $$21674_1
+$$21674_1:
+	.incbin "baserom.dol", 0x331B78, 0x4
+.global $$21675_2
+$$21675_2:
+	.incbin "baserom.dol", 0x331B7C, 0x4
+.global $$21676_0
+$$21676_0:
+	.incbin "baserom.dol", 0x331B80, 0x4
+.global $$21677_0
+$$21677_0:
+	.incbin "baserom.dol", 0x331B84, 0x4
+.global $$21678_1
+$$21678_1:
+	.incbin "baserom.dol", 0x331B88, 0x4
+.global $$21679_0
+$$21679_0:
+	.incbin "baserom.dol", 0x331B8C, 0x4
+.global $$21680_0
+$$21680_0:
+	.incbin "baserom.dol", 0x331B90, 0x4
+.global $$21707_1
+$$21707_1:
+	.incbin "baserom.dol", 0x331B94, 0x4
+.global $$21730_0
+$$21730_0:
+	.incbin "baserom.dol", 0x331B98, 0x4
+.global $$21883
+$$21883:
+	.incbin "baserom.dol", 0x331B9C, 0x4
+.global $$21967
+$$21967:
+	.incbin "baserom.dol", 0x331BA0, 0x4
+.global $$22060_0
+$$22060_0:
+	.incbin "baserom.dol", 0x331BA4, 0x4
+.global $$22061_0
+$$22061_0:
+	.incbin "baserom.dol", 0x331BA8, 0x4
+.global $$22195_0
+$$22195_0:
+	.incbin "baserom.dol", 0x331BAC, 0x4
+.global lbl_803D51F0
+lbl_803D51F0:
+	.incbin "baserom.dol", 0x331BB0, 0x4
+.global lbl_803D51F4
+lbl_803D51F4:
+	.incbin "baserom.dol", 0x331BB4, 0x4
+.global $$22200_0
+$$22200_0:
+	.incbin "baserom.dol", 0x331BB8, 0x4
+.global $$22204_0
+$$22204_0:
+	.incbin "baserom.dol", 0x331BBC, 0x4
+.global $$22206
+$$22206:
+	.incbin "baserom.dol", 0x331BC0, 0x4
+.global $$22447
+$$22447:
+	.incbin "baserom.dol", 0x331BC4, 0x4
+.global $$22452
+$$22452:
+	.incbin "baserom.dol", 0x331BC8, 0x4
+.global $$22592
+$$22592:
+	.incbin "baserom.dol", 0x331BCC, 0x4
+.global $$22628
+$$22628:
+	.incbin "baserom.dol", 0x331BD0, 0x8
+
 .section .text
 
 .global add_wheel_bones__Q24zNPC10wheel_boneFPQ24zNPC6common

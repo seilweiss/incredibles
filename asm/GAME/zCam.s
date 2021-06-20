@@ -39,6 +39,30 @@ current_mode__18$$2unnamed$$2zCam_cpp$$2:
 default_orientation__18$$2unnamed$$2zCam_cpp$$2:
 	.incbin "baserom.dol", 0x32B84C, 0xC
 
+.section .sdata2
+
+.global $$2990_3
+$$2990_3:
+	.incbin "baserom.dol", 0x32FA38, 0x4
+.global $$21008_0
+$$21008_0:
+	.incbin "baserom.dol", 0x32FA3C, 0x4
+.global $$21059_1
+$$21059_1:
+	.incbin "baserom.dol", 0x32FA40, 0x4
+.global $$21060_0
+$$21060_0:
+	.incbin "baserom.dol", 0x32FA44, 0x4
+.global $$21061_0
+$$21061_0:
+	.incbin "baserom.dol", 0x32FA48, 0x4
+.global $$21062_1
+$$21062_1:
+	.incbin "baserom.dol", 0x32FA4C, 0x4
+.global $$21109_0
+$$21109_0:
+	.incbin "baserom.dol", 0x32FA50, 0x8
+
 .section .text
 
 .global zCamSceneEnter__FR6zSceneRC7xMat4x3

@@ -21,6 +21,66 @@ $$2stringBase0_90:
 sRumbleBreakaway:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21152_0
+$$21152_0:
+	.incbin "baserom.dol", 0x331D40, 0x4
+.global $$21153_2
+$$21153_2:
+	.incbin "baserom.dol", 0x331D44, 0x4
+.global $$21154_1
+$$21154_1:
+	.incbin "baserom.dol", 0x331D48, 0x4
+.global $$21166_1
+$$21166_1:
+	.incbin "baserom.dol", 0x331D4C, 0x4
+.global $$21229
+$$21229:
+	.incbin "baserom.dol", 0x331D50, 0x4
+.global $$21323_0
+$$21323_0:
+	.incbin "baserom.dol", 0x331D54, 0x4
+.global $$21324
+$$21324:
+	.incbin "baserom.dol", 0x331D58, 0x4
+.global $$21325_0
+$$21325_0:
+	.incbin "baserom.dol", 0x331D5C, 0x4
+.global $$21326
+$$21326:
+	.incbin "baserom.dol", 0x331D60, 0x4
+.global $$21333_4
+$$21333_4:
+	.incbin "baserom.dol", 0x331D64, 0x4
+.global $$21631
+$$21631:
+	.incbin "baserom.dol", 0x331D68, 0x8
+.global $$21634_0
+$$21634_0:
+	.incbin "baserom.dol", 0x331D70, 0x8
+.global $$21770_1
+$$21770_1:
+	.incbin "baserom.dol", 0x331D78, 0x4
+.global $$21771_0
+$$21771_0:
+	.incbin "baserom.dol", 0x331D7C, 0x4
+.global $$21772_0
+$$21772_0:
+	.incbin "baserom.dol", 0x331D80, 0x4
+.global $$21911
+$$21911:
+	.incbin "baserom.dol", 0x331D84, 0x4
+.global $$21941
+$$21941:
+	.incbin "baserom.dol", 0x331D88, 0x4
+.global $$22221
+$$22221:
+	.incbin "baserom.dol", 0x331D8C, 0x4
+.global $$22222
+$$22222:
+	.incbin "baserom.dol", 0x331D90, 0x8
+
 .section .text
 
 .global genericPlatRender__FP4xEnt

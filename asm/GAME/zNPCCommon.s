@@ -30,6 +30,36 @@ lbl_803D91D4:
 lbl_803D91D8:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21092_2
+$$21092_2:
+	.incbin "baserom.dol", 0x332850, 0x4
+.global $$21093_2
+$$21093_2:
+	.incbin "baserom.dol", 0x332854, 0x4
+.global $$21316_1
+$$21316_1:
+	.incbin "baserom.dol", 0x332858, 0x4
+.global $$21394_2
+$$21394_2:
+	.incbin "baserom.dol", 0x33285C, 0x4
+.global $$21457_0
+$$21457_0:
+	.incbin "baserom.dol", 0x332860, 0x4
+.global $$21607_1
+$$21607_1:
+	.incbin "baserom.dol", 0x332864, 0x4
+.global $$21643
+$$21643:
+	.incbin "baserom.dol", 0x332868, 0x4
+.global $$21644
+$$21644:
+	.incbin "baserom.dol", 0x33286C, 0x4
+.global $$21660_4
+$$21660_4:
+	.incbin "baserom.dol", 0x332870, 0x8
+
 .section .text
 
 .global scale_model__24$$2unnamed$$2zNPCCommon_cpp$$2FP14xModelInstancef

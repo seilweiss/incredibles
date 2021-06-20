@@ -6,6 +6,48 @@
 sEffectInitFuncs:
 	.incbin "baserom.dol", 0x307638, 0x48
 
+.section .sdata2
+
+.global $$2952_0
+$$2952_0:
+	.incbin "baserom.dol", 0x330A08, 0x8
+.global $$2954_0
+$$2954_0:
+	.incbin "baserom.dol", 0x330A10, 0x8
+.global $$2975_0
+$$2975_0:
+	.incbin "baserom.dol", 0x330A18, 0x4
+.global $$21000_4
+$$21000_4:
+	.incbin "baserom.dol", 0x330A1C, 0x4
+.global $$21001
+$$21001:
+	.incbin "baserom.dol", 0x330A20, 0x4
+.global $$21002_2
+$$21002_2:
+	.incbin "baserom.dol", 0x330A24, 0x4
+.global $$21007_0
+$$21007_0:
+	.incbin "baserom.dol", 0x330A28, 0x4
+.global $$21012_3
+$$21012_3:
+	.incbin "baserom.dol", 0x330A2C, 0x4
+.global $$21088_1
+$$21088_1:
+	.incbin "baserom.dol", 0x330A30, 0x4
+.global $$21089_1
+$$21089_1:
+	.incbin "baserom.dol", 0x330A34, 0x4
+.global $$21090_1
+$$21090_1:
+	.incbin "baserom.dol", 0x330A38, 0x4
+.global $$21091_1
+$$21091_1:
+	.incbin "baserom.dol", 0x330A3C, 0x4
+.global $$21092_1
+$$21092_1:
+	.incbin "baserom.dol", 0x330A40, 0x8
+
 .section .text
 
 .global zLightEffectSet__FP7_zLighti

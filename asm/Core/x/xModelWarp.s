@@ -15,6 +15,15 @@ render_contexts__24$$2unnamed$$2xModelWarp_cpp$$2:
 render_contexts_size__24$$2unnamed$$2xModelWarp_cpp$$2:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2779_0
+$$2779_0:
+	.incbin "baserom.dol", 0x333BA0, 0x4
+.global $$2874_0
+$$2874_0:
+	.incbin "baserom.dol", 0x333BA4, 0x4
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2xModelWarp_cpp$$25tweakFv

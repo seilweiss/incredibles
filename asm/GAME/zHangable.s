@@ -15,6 +15,36 @@ sHangableObjects:
 sNumHangableObjects:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2967_0
+$$2967_0:
+	.incbin "baserom.dol", 0x330738, 0x4
+.global $$21022_1
+$$21022_1:
+	.incbin "baserom.dol", 0x33073C, 0x4
+.global $$21023_1
+$$21023_1:
+	.incbin "baserom.dol", 0x330740, 0x4
+.global $$21024_0
+$$21024_0:
+	.incbin "baserom.dol", 0x330744, 0x4
+.global $$21050_0
+$$21050_0:
+	.incbin "baserom.dol", 0x330748, 0x4
+.global $$21053
+$$21053:
+	.incbin "baserom.dol", 0x33074C, 0x4
+.global $$21187_2
+$$21187_2:
+	.incbin "baserom.dol", 0x330750, 0x4
+.global $$21188
+$$21188:
+	.incbin "baserom.dol", 0x330754, 0x4
+.global $$21189_2
+$$21189_2:
+	.incbin "baserom.dol", 0x330758, 0x8
+
 .section .text
 
 .global zHangable_Init__FR5xBaseR9xDynAssetUl

@@ -12,6 +12,51 @@ g_iAnim_workBufferData:
 g_iAnim_workBuffer:
 	.incbin "baserom.dol", 0x32B770, 0x8
 
+.section .sdata2
+
+.global $$2693
+$$2693:
+	.incbin "baserom.dol", 0x32F978, 0x4
+.global lbl_803D2FBC
+lbl_803D2FBC:
+	.incbin "baserom.dol", 0x32F97C, 0x4
+.global lbl_803D2FC0
+lbl_803D2FC0:
+	.incbin "baserom.dol", 0x32F980, 0x4
+.global lbl_803D2FC4
+lbl_803D2FC4:
+	.incbin "baserom.dol", 0x32F984, 0x4
+.global $$2990_2
+$$2990_2:
+	.incbin "baserom.dol", 0x32F988, 0x4
+.global $$2991_1
+$$2991_1:
+	.incbin "baserom.dol", 0x32F98C, 0x4
+.global $$2992
+$$2992:
+	.incbin "baserom.dol", 0x32F990, 0x4
+.global $$2993_1
+$$2993_1:
+	.incbin "baserom.dol", 0x32F994, 0x4
+.global $$2994
+$$2994:
+	.incbin "baserom.dol", 0x32F998, 0x4
+.global $$2995
+$$2995:
+	.incbin "baserom.dol", 0x32F99C, 0x4
+.global $$2996_2
+$$2996_2:
+	.incbin "baserom.dol", 0x32F9A0, 0x4
+.global $$2997_1
+$$2997_1:
+	.incbin "baserom.dol", 0x32F9A4, 0x4
+.global $$2998_0
+$$2998_0:
+	.incbin "baserom.dol", 0x32F9A8, 0x8
+.global $$21000_3
+$$21000_3:
+	.incbin "baserom.dol", 0x32F9B0, 0x8
+
 .section .text
 
 .global iAnimInit__Fv

@@ -57,6 +57,54 @@ __vt__Q21z23lightweight_system_base:
 __vt__Q21z33lightweight_system$$0Q21z5laser$$440$$1:
 	.incbin "baserom.dol", 0x32B95C, 0x24
 
+.section .sdata2
+
+.global $$21291_0
+$$21291_0:
+	.incbin "baserom.dol", 0x32FB68, 0x4
+.global $$21319
+$$21319:
+	.incbin "baserom.dol", 0x32FB6C, 0x4
+.global $$21354_1
+$$21354_1:
+	.incbin "baserom.dol", 0x32FB70, 0x4
+.global $$21372
+$$21372:
+	.incbin "baserom.dol", 0x32FB74, 0x4
+.global $$21373
+$$21373:
+	.incbin "baserom.dol", 0x32FB78, 0x4
+.global $$21374
+$$21374:
+	.incbin "baserom.dol", 0x32FB7C, 0x4
+.global $$21498
+$$21498:
+	.incbin "baserom.dol", 0x32FB80, 0x4
+.global $$21508
+$$21508:
+	.incbin "baserom.dol", 0x32FB84, 0x4
+.global $$21531_0
+$$21531_0:
+	.incbin "baserom.dol", 0x32FB88, 0x4
+.global $$21663
+$$21663:
+	.incbin "baserom.dol", 0x32FB8C, 0x4
+.global $$21734
+$$21734:
+	.incbin "baserom.dol", 0x32FB90, 0x4
+.global $$21735
+$$21735:
+	.incbin "baserom.dol", 0x32FB94, 0x4
+.global $$21736
+$$21736:
+	.incbin "baserom.dol", 0x32FB98, 0x4
+.global $$21737
+$$21737:
+	.incbin "baserom.dol", 0x32FB9C, 0x4
+.global $$21738
+$$21738:
+	.incbin "baserom.dol", 0x32FBA0, 0x8
+
 .section .text
 
 .global zCheatRemoveTimed__20$$2unnamed$$2zCheat_cpp$$2Fv

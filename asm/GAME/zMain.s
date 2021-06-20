@@ -108,6 +108,93 @@ sShowMenuOnBoot:
 g_xser_sizeinfo:
 	.incbin "baserom.dol", 0x32C198, 0x10
 
+.section .sdata2
+
+.global screen_bounds_4
+screen_bounds_4:
+	.incbin "baserom.dol", 0x330AE0, 0x10
+.global $$21148_3
+$$21148_3:
+	.incbin "baserom.dol", 0x330AF0, 0x4
+.global $$21149_2
+$$21149_2:
+	.incbin "baserom.dol", 0x330AF4, 0x4
+.global $$21150_2
+$$21150_2:
+	.incbin "baserom.dol", 0x330AF8, 0x4
+.global $$21151
+$$21151:
+	.incbin "baserom.dol", 0x330AFC, 0x4
+.global $$21261
+$$21261:
+	.incbin "baserom.dol", 0x330B00, 0x4
+.global $$21262
+$$21262:
+	.incbin "baserom.dol", 0x330B04, 0x4
+.global $$21263_0
+$$21263_0:
+	.incbin "baserom.dol", 0x330B08, 0x4
+.global $$21264
+$$21264:
+	.incbin "baserom.dol", 0x330B0C, 0x4
+.global $$21265_0
+$$21265_0:
+	.incbin "baserom.dol", 0x330B10, 0x4
+.global $$21266_0
+$$21266_0:
+	.incbin "baserom.dol", 0x330B14, 0x4
+.global $$21268_0
+$$21268_0:
+	.incbin "baserom.dol", 0x330B18, 0x8
+.global $$21272
+$$21272:
+	.incbin "baserom.dol", 0x330B20, 0x8
+.global $$21332_2
+$$21332_2:
+	.incbin "baserom.dol", 0x330B28, 0x4
+.global $$21333_1
+$$21333_1:
+	.incbin "baserom.dol", 0x330B2C, 0x4
+.global $$21394_0
+$$21394_0:
+	.incbin "baserom.dol", 0x330B30, 0x2
+.global lbl_803D4172
+lbl_803D4172:
+	.incbin "baserom.dol", 0x330B32, 0x2
+.global $$21395
+$$21395:
+	.incbin "baserom.dol", 0x330B34, 0x2
+.global lbl_803D4176
+lbl_803D4176:
+	.incbin "baserom.dol", 0x330B36, 0x2
+.global $$21428
+$$21428:
+	.incbin "baserom.dol", 0x330B38, 0x4
+.global $$21429_0
+$$21429_0:
+	.incbin "baserom.dol", 0x330B3C, 0x4
+.global $$21430
+$$21430:
+	.incbin "baserom.dol", 0x330B40, 0x4
+.global $$21543_1
+$$21543_1:
+	.incbin "baserom.dol", 0x330B44, 0x4
+.global $$21560_0
+$$21560_0:
+	.incbin "baserom.dol", 0x330B48, 0x4
+.global $$21597
+$$21597:
+	.incbin "baserom.dol", 0x330B4C, 0x4
+.global $$21598_0
+$$21598_0:
+	.incbin "baserom.dol", 0x330B50, 0x4
+.global $$21599_0
+$$21599_0:
+	.incbin "baserom.dol", 0x330B54, 0x4
+.global $$21865
+$$21865:
+	.incbin "baserom.dol", 0x330B58, 0x8
+
 .section .text
 
 .global zMainSetPAL__Fv

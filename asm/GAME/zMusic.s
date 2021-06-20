@@ -27,6 +27,30 @@ sMusic:
 gDialogueMusicLevel:
 	.incbin "baserom.dol", 0x32C268, 0x8
 
+.section .sdata2
+
+.global $$2877_0
+$$2877_0:
+	.incbin "baserom.dol", 0x330E08, 0x4
+.global $$2878_0
+$$2878_0:
+	.incbin "baserom.dol", 0x330E0C, 0x4
+.global $$2981_2
+$$2981_2:
+	.incbin "baserom.dol", 0x330E10, 0x4
+.global $$2982_1
+$$2982_1:
+	.incbin "baserom.dol", 0x330E14, 0x4
+.global $$2983_0
+$$2983_0:
+	.incbin "baserom.dol", 0x330E18, 0x4
+.global $$2984_1
+$$2984_1:
+	.incbin "baserom.dol", 0x330E1C, 0x4
+.global $$21131_0
+$$21131_0:
+	.incbin "baserom.dol", 0x330E20, 0x8
+
 .section .text
 
 .global _zMusicStart__FUiUi

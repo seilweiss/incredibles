@@ -60,6 +60,75 @@ shadVec$1472:
 __vt__Q223$$2unnamed$$2xCutscene_cpp$$212xCamCutscene:
 	.incbin "baserom.dol", 0x32B0C4, 0x24
 
+.section .sdata2
+
+.global $$2910
+$$2910:
+	.incbin "baserom.dol", 0x32E948, 0x4
+.global $$2989
+$$2989:
+	.incbin "baserom.dol", 0x32E94C, 0x4
+.global $$2990
+$$2990:
+	.incbin "baserom.dol", 0x32E950, 0x4
+.global $$21025
+$$21025:
+	.incbin "baserom.dol", 0x32E954, 0x4
+.global $$21036_0
+$$21036_0:
+	.incbin "baserom.dol", 0x32E958, 0x4
+.global $$21037
+$$21037:
+	.incbin "baserom.dol", 0x32E95C, 0x4
+.global $$21095
+$$21095:
+	.incbin "baserom.dol", 0x32E960, 0x4
+.global $$21097
+$$21097:
+	.incbin "baserom.dol", 0x32E964, 0x4
+.global $$21135
+$$21135:
+	.incbin "baserom.dol", 0x32E968, 0x8
+.global $$21309
+$$21309:
+	.incbin "baserom.dol", 0x32E970, 0x8
+.global $$21674
+$$21674:
+	.incbin "baserom.dol", 0x32E978, 0x4
+.global $$21675
+$$21675:
+	.incbin "baserom.dol", 0x32E97C, 0x4
+.global $$21676
+$$21676:
+	.incbin "baserom.dol", 0x32E980, 0x4
+.global $$21677
+$$21677:
+	.incbin "baserom.dol", 0x32E984, 0x4
+.global $$21678
+$$21678:
+	.incbin "baserom.dol", 0x32E988, 0x4
+.global $$21679
+$$21679:
+	.incbin "baserom.dol", 0x32E98C, 0x4
+.global $$21680
+$$21680:
+	.incbin "baserom.dol", 0x32E990, 0x4
+.global $$21681
+$$21681:
+	.incbin "baserom.dol", 0x32E994, 0x4
+.global $$21682
+$$21682:
+	.incbin "baserom.dol", 0x32E998, 0x4
+.global $$21683
+$$21683:
+	.incbin "baserom.dol", 0x32E99C, 0x4
+.global $$21684
+$$21684:
+	.incbin "baserom.dol", 0x32E9A0, 0x8
+.global $$21686
+$$21686:
+	.incbin "baserom.dol", 0x32E9A8, 0x8
+
 .section .text
 
 .global xCutscene_InitBegin__Fv

@@ -81,6 +81,273 @@ damageResponseSurface__27$$2unnamed$$2zCommonPlayer_cpp$$2:
 noMove$3351:
 	.incbin "baserom.dol", 0x32BAF0, 0x18
 
+.section .sdata2
+
+.global $$21408
+$$21408:
+	.incbin "baserom.dol", 0x32FD30, 0x4
+.global $$21409
+$$21409:
+	.incbin "baserom.dol", 0x32FD34, 0x4
+.global damageRumbleParameters__27$$2unnamed$$2zCommonPlayer_cpp$$2
+damageRumbleParameters__27$$2unnamed$$2zCommonPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32FD38, 0x18
+.global attackRumbleParameters__27$$2unnamed$$2zCommonPlayer_cpp$$2
+attackRumbleParameters__27$$2unnamed$$2zCommonPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32FD50, 0x18
+.global $$21464_0
+$$21464_0:
+	.incbin "baserom.dol", 0x32FD68, 0x4
+.global $$21465
+$$21465:
+	.incbin "baserom.dol", 0x32FD6C, 0x4
+.global $$21466_0
+$$21466_0:
+	.incbin "baserom.dol", 0x32FD70, 0x4
+.global $$21467_0
+$$21467_0:
+	.incbin "baserom.dol", 0x32FD74, 0x4
+.global $$21469_1
+$$21469_1:
+	.incbin "baserom.dol", 0x32FD78, 0x8
+.global $$21576
+$$21576:
+	.incbin "baserom.dol", 0x32FD80, 0x4
+.global $$21577
+$$21577:
+	.incbin "baserom.dol", 0x32FD84, 0x4
+.global $$21578
+$$21578:
+	.incbin "baserom.dol", 0x32FD88, 0x4
+.global $$21579
+$$21579:
+	.incbin "baserom.dol", 0x32FD8C, 0x4
+.global $$21580
+$$21580:
+	.incbin "baserom.dol", 0x32FD90, 0x4
+.global $$21581_0
+$$21581_0:
+	.incbin "baserom.dol", 0x32FD94, 0x4
+.global $$21582_0
+$$21582_0:
+	.incbin "baserom.dol", 0x32FD98, 0x4
+.global $$21583
+$$21583:
+	.incbin "baserom.dol", 0x32FD9C, 0x4
+.global $$21584
+$$21584:
+	.incbin "baserom.dol", 0x32FDA0, 0x4
+.global $$21585
+$$21585:
+	.incbin "baserom.dol", 0x32FDA4, 0x4
+.global $$21586_0
+$$21586_0:
+	.incbin "baserom.dol", 0x32FDA8, 0x4
+.global $$21587
+$$21587:
+	.incbin "baserom.dol", 0x32FDAC, 0x4
+.global $$21588
+$$21588:
+	.incbin "baserom.dol", 0x32FDB0, 0x4
+.global $$21589
+$$21589:
+	.incbin "baserom.dol", 0x32FDB4, 0x4
+.global $$21606
+$$21606:
+	.incbin "baserom.dol", 0x32FDB8, 0x4
+.global $$21607
+$$21607:
+	.incbin "baserom.dol", 0x32FDBC, 0x4
+.global $$21608
+$$21608:
+	.incbin "baserom.dol", 0x32FDC0, 0x4
+.global $$21609
+$$21609:
+	.incbin "baserom.dol", 0x32FDC4, 0x4
+.global $$21610
+$$21610:
+	.incbin "baserom.dol", 0x32FDC8, 0x4
+.global $$21697
+$$21697:
+	.incbin "baserom.dol", 0x32FDCC, 0x4
+.global $$21698
+$$21698:
+	.incbin "baserom.dol", 0x32FDD0, 0x4
+.global $$21791
+$$21791:
+	.incbin "baserom.dol", 0x32FDD4, 0x4
+.global $$21841
+$$21841:
+	.incbin "baserom.dol", 0x32FDD8, 0x4
+.global $$21842
+$$21842:
+	.incbin "baserom.dol", 0x32FDDC, 0x4
+.global $$21843_0
+$$21843_0:
+	.incbin "baserom.dol", 0x32FDE0, 0x4
+.global $$21862
+$$21862:
+	.incbin "baserom.dol", 0x32FDE4, 0x4
+.global $$21958
+$$21958:
+	.incbin "baserom.dol", 0x32FDE8, 0x4
+.global $$21959
+$$21959:
+	.incbin "baserom.dol", 0x32FDEC, 0x4
+.global $$21960
+$$21960:
+	.incbin "baserom.dol", 0x32FDF0, 0x4
+.global $$21961
+$$21961:
+	.incbin "baserom.dol", 0x32FDF4, 0x4
+.global $$21964
+$$21964:
+	.incbin "baserom.dol", 0x32FDF8, 0x4
+.global $$21996_0
+$$21996_0:
+	.incbin "baserom.dol", 0x32FDFC, 0x4
+.global $$22012_0
+$$22012_0:
+	.incbin "baserom.dol", 0x32FE00, 0x4
+.global lbl_803D3444
+lbl_803D3444:
+	.incbin "baserom.dol", 0x32FE04, 0x4
+.global lbl_803D3448
+lbl_803D3448:
+	.incbin "baserom.dol", 0x32FE08, 0x4
+.global lbl_803D344C
+lbl_803D344C:
+	.incbin "baserom.dol", 0x32FE0C, 0x4
+.global $$22117
+$$22117:
+	.incbin "baserom.dol", 0x32FE10, 0x4
+.global $$22118
+$$22118:
+	.incbin "baserom.dol", 0x32FE14, 0x4
+.global $$22134
+$$22134:
+	.incbin "baserom.dol", 0x32FE18, 0x8
+.global $$22138
+$$22138:
+	.incbin "baserom.dol", 0x32FE20, 0x8
+.global $$22166
+$$22166:
+	.incbin "baserom.dol", 0x32FE28, 0x4
+.global lbl_803D346C
+lbl_803D346C:
+	.incbin "baserom.dol", 0x32FE2C, 0x4
+.global lbl_803D3470
+lbl_803D3470:
+	.incbin "baserom.dol", 0x32FE30, 0x4
+.global $$22174
+$$22174:
+	.incbin "baserom.dol", 0x32FE34, 0x4
+.global $$22204
+$$22204:
+	.incbin "baserom.dol", 0x32FE38, 0x4
+.global $$22325
+$$22325:
+	.incbin "baserom.dol", 0x32FE3C, 0x4
+.global $$22402_0
+$$22402_0:
+	.incbin "baserom.dol", 0x32FE40, 0x18
+.global $$22403_0
+$$22403_0:
+	.incbin "baserom.dol", 0x32FE58, 0x4
+.global lbl_803D349C
+lbl_803D349C:
+	.incbin "baserom.dol", 0x32FE5C, 0x4
+.global lbl_803D34A0
+lbl_803D34A0:
+	.incbin "baserom.dol", 0x32FE60, 0x4
+.global $$22407
+$$22407:
+	.incbin "baserom.dol", 0x32FE64, 0x4
+.global $$22408
+$$22408:
+	.incbin "baserom.dol", 0x32FE68, 0x4
+.global $$22479
+$$22479:
+	.incbin "baserom.dol", 0x32FE6C, 0x4
+.global $$22480
+$$22480:
+	.incbin "baserom.dol", 0x32FE70, 0x4
+.global $$22634
+$$22634:
+	.incbin "baserom.dol", 0x32FE74, 0x4
+.global $$22773
+$$22773:
+	.incbin "baserom.dol", 0x32FE78, 0x4
+.global $$22856
+$$22856:
+	.incbin "baserom.dol", 0x32FE7C, 0x14
+.global $$23081
+$$23081:
+	.incbin "baserom.dol", 0x32FE90, 0x4
+.global $$23082
+$$23082:
+	.incbin "baserom.dol", 0x32FE94, 0x4
+.global $$23083
+$$23083:
+	.incbin "baserom.dol", 0x32FE98, 0x4
+.global $$23116
+$$23116:
+	.incbin "baserom.dol", 0x32FE9C, 0x4
+.global $$23545
+$$23545:
+	.incbin "baserom.dol", 0x32FEA0, 0x4
+.global $$23546
+$$23546:
+	.incbin "baserom.dol", 0x32FEA4, 0x4
+.global $$23547
+$$23547:
+	.incbin "baserom.dol", 0x32FEA8, 0x4
+.global $$23548
+$$23548:
+	.incbin "baserom.dol", 0x32FEAC, 0x4
+.global $$23549
+$$23549:
+	.incbin "baserom.dol", 0x32FEB0, 0x4
+.global $$23550
+$$23550:
+	.incbin "baserom.dol", 0x32FEB4, 0x4
+.global $$23551
+$$23551:
+	.incbin "baserom.dol", 0x32FEB8, 0x4
+.global $$23552
+$$23552:
+	.incbin "baserom.dol", 0x32FEBC, 0x4
+.global $$23553
+$$23553:
+	.incbin "baserom.dol", 0x32FEC0, 0x4
+.global $$23554
+$$23554:
+	.incbin "baserom.dol", 0x32FEC4, 0x4
+.global $$23555
+$$23555:
+	.incbin "baserom.dol", 0x32FEC8, 0x4
+.global $$23556
+$$23556:
+	.incbin "baserom.dol", 0x32FECC, 0x4
+.global $$23557
+$$23557:
+	.incbin "baserom.dol", 0x32FED0, 0x4
+.global $$23558
+$$23558:
+	.incbin "baserom.dol", 0x32FED4, 0x4
+.global $$23635
+$$23635:
+	.incbin "baserom.dol", 0x32FED8, 0x4
+.global $$23758
+$$23758:
+	.incbin "baserom.dol", 0x32FEDC, 0x4
+.global $$23759
+$$23759:
+	.incbin "baserom.dol", 0x32FEE0, 0x4
+.global $$23920
+$$23920:
+	.incbin "baserom.dol", 0x32FEE4, 0x4
+
 .section .text
 
 .global SetupRumbleEffects__27$$2unnamed$$2zCommonPlayer_cpp$$2FPCQ227$$2unnamed$$2zCommonPlayer_cpp$$212RumbleParamsi

@@ -6,6 +6,60 @@
 $$2stringBase0_49:
 	.incbin "baserom.dol", 0x2D8B88, 0x10
 
+.section .sdata2
+
+.global $$21002_1
+$$21002_1:
+	.incbin "baserom.dol", 0x330158, 0x4
+.global $$21003_0
+$$21003_0:
+	.incbin "baserom.dol", 0x33015C, 0x4
+.global $$21122_0
+$$21122_0:
+	.incbin "baserom.dol", 0x330160, 0x4
+.global $$21125_0
+$$21125_0:
+	.incbin "baserom.dol", 0x330164, 0x4
+.global $$21175_1
+$$21175_1:
+	.incbin "baserom.dol", 0x330168, 0x4
+.global $$21176_2
+$$21176_2:
+	.incbin "baserom.dol", 0x33016C, 0x4
+.global $$21177_2
+$$21177_2:
+	.incbin "baserom.dol", 0x330170, 0x4
+.global $$21178_0
+$$21178_0:
+	.incbin "baserom.dol", 0x330174, 0x4
+.global $$21179
+$$21179:
+	.incbin "baserom.dol", 0x330178, 0x4
+.global $$21180_0
+$$21180_0:
+	.incbin "baserom.dol", 0x33017C, 0x4
+.global $$21181
+$$21181:
+	.incbin "baserom.dol", 0x330180, 0x4
+.global $$21182_0
+$$21182_0:
+	.incbin "baserom.dol", 0x330184, 0x4
+.global $$21183_1
+$$21183_1:
+	.incbin "baserom.dol", 0x330188, 0x4
+.global $$21184_1
+$$21184_1:
+	.incbin "baserom.dol", 0x33018C, 0x4
+.global $$21185_0
+$$21185_0:
+	.incbin "baserom.dol", 0x330190, 0x4
+.global $$21186_2
+$$21186_2:
+	.incbin "baserom.dol", 0x330194, 0x4
+.global $$21187_1
+$$21187_1:
+	.incbin "baserom.dol", 0x330198, 0x8
+
 .section .text
 
 .global zEGenerator_Init__FPvPv

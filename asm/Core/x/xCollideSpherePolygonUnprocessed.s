@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2656_0
+$$2656_0:
+	.incbin "baserom.dol", 0x332B00, 0x4
+.global $$2657_1
+$$2657_1:
+	.incbin "baserom.dol", 0x332B04, 0x4
+.global $$2658
+$$2658:
+	.incbin "baserom.dol", 0x332B08, 0x4
+.global $$2872
+$$2872:
+	.incbin "baserom.dol", 0x332B0C, 0x4
+.global $$2873
+$$2873:
+	.incbin "baserom.dol", 0x332B10, 0x8
+
 .section .text
 
 .global normalize__32xCollideSpherePolygonUnprocessedFR5xVec3

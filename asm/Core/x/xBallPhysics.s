@@ -18,6 +18,66 @@ $$21156_3:
 lbl_803D8490:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2971_0
+$$2971_0:
+	.incbin "baserom.dol", 0x32E758, 0x4
+.global $$2972_0
+$$2972_0:
+	.incbin "baserom.dol", 0x32E75C, 0x4
+.global $$2984
+$$2984:
+	.incbin "baserom.dol", 0x32E760, 0x4
+.global $$21015_0
+$$21015_0:
+	.incbin "baserom.dol", 0x32E764, 0x4
+.global $$21016_0
+$$21016_0:
+	.incbin "baserom.dol", 0x32E768, 0x4
+.global $$21054_0
+$$21054_0:
+	.incbin "baserom.dol", 0x32E76C, 0x4
+.global $$21055
+$$21055:
+	.incbin "baserom.dol", 0x32E770, 0x4
+.global $$21056
+$$21056:
+	.incbin "baserom.dol", 0x32E774, 0x4
+.global $$21067
+$$21067:
+	.incbin "baserom.dol", 0x32E778, 0x4
+.global $$21068
+$$21068:
+	.incbin "baserom.dol", 0x32E77C, 0x4
+.global $$21069
+$$21069:
+	.incbin "baserom.dol", 0x32E780, 0x4
+.global $$21070
+$$21070:
+	.incbin "baserom.dol", 0x32E784, 0x4
+.global $$21092
+$$21092:
+	.incbin "baserom.dol", 0x32E788, 0x4
+.global $$21174_0
+$$21174_0:
+	.incbin "baserom.dol", 0x32E78C, 0x4
+.global $$21175
+$$21175:
+	.incbin "baserom.dol", 0x32E790, 0x4
+.global $$21176
+$$21176:
+	.incbin "baserom.dol", 0x32E794, 0x4
+.global $$21177
+$$21177:
+	.incbin "baserom.dol", 0x32E798, 0x4
+.global $$21254
+$$21254:
+	.incbin "baserom.dol", 0x32E79C, 0x4
+.global $$21284
+$$21284:
+	.incbin "baserom.dol", 0x32E7A0, 0x8
+
 .section .text
 
 .global reset_physics__12xBallPhysicsFv

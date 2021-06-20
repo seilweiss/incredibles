@@ -6,6 +6,18 @@
 sPauseTimerHash:
 	.incbin "baserom.dol", 0x2FFEA0, 0x50
 
+.section .sdata2
+
+.global $$2962_0
+$$2962_0:
+	.incbin "baserom.dol", 0x32F688, 0x8
+.global $$2964
+$$2964:
+	.incbin "baserom.dol", 0x32F690, 0x8
+.global $$21037_1
+$$21037_1:
+	.incbin "baserom.dol", 0x32F698, 0x8
+
 .section .text
 
 .global GetRandomizedTime__FP11xTimerAsset

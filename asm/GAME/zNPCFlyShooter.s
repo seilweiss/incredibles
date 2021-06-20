@@ -30,6 +30,24 @@ __vt__Q24zNPC11fly_forward:
 $$2stringBase0_121:
 	.incbin "baserom.dol", 0x2E49C0, 0x118
 
+.section .sdata2
+
+.global $$21285_1
+$$21285_1:
+	.incbin "baserom.dol", 0x332D20, 0x4
+.global $$21290_1
+$$21290_1:
+	.incbin "baserom.dol", 0x332D24, 0x4
+.global $$21291_5
+$$21291_5:
+	.incbin "baserom.dol", 0x332D28, 0x4
+.global $$21354_4
+$$21354_4:
+	.incbin "baserom.dol", 0x332D2C, 0x4
+.global $$21355_2
+$$21355_2:
+	.incbin "baserom.dol", 0x332D30, 0x8
+
 .section .text
 
 .global enter_state__Q24zNPC11fly_forwardFPC39behavior_implementation$$0Q24zNPC6common$$1

@@ -6,6 +6,24 @@
 mPad:
 	.skip 0x4E0
 
+.section .sdata2
+
+.global $$2936_1
+$$2936_1:
+	.incbin "baserom.dol", 0x32F230, 0x4
+.global $$2937_0
+$$2937_0:
+	.incbin "baserom.dol", 0x32F234, 0x4
+.global $$21011_1
+$$21011_1:
+	.incbin "baserom.dol", 0x32F238, 0x4
+.global $$21012_0
+$$21012_0:
+	.incbin "baserom.dol", 0x32F23C, 0x4
+.global $$21040_1
+$$21040_1:
+	.incbin "baserom.dol", 0x32F240, 0x8
+
 .section .text
 
 .global xPadInit__Fv

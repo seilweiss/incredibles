@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2971_1
+$$2971_1:
+	.incbin "baserom.dol", 0x3303F0, 0x4
+.global $$2972_2
+$$2972_2:
+	.incbin "baserom.dol", 0x3303F4, 0x4
+.global $$21049_0
+$$21049_0:
+	.incbin "baserom.dol", 0x3303F8, 0x4
+.global $$21074
+$$21074:
+	.incbin "baserom.dol", 0x3303FC, 0x4
+
 .section .text
 
 .global zEntTriggerInit__FPvPv

@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sdata2
+
+.global $$2677_0
+$$2677_0:
+	.incbin "baserom.dol", 0x32E930, 0x4
+.global $$2678_0
+$$2678_0:
+	.incbin "baserom.dol", 0x32E934, 0x4
+.global $$2681
+$$2681:
+	.incbin "baserom.dol", 0x32E938, 0x8
+.global $$2682
+$$2682:
+	.incbin "baserom.dol", 0x32E940, 0x8
+
 .section .text
 
 .global xCurveAssetEvaluate__FPC11xCurveAssetf

@@ -9,6 +9,18 @@ driven_meshes__4zNPC:
 num_driven_meshes__4zNPC:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$2916
+$$2916:
+	.incbin "baserom.dol", 0x332508, 0x4
+.global $$2917
+$$2917:
+	.incbin "baserom.dol", 0x33250C, 0x4
+.global $$2918
+$$2918:
+	.incbin "baserom.dol", 0x332510, 0x8
+
 .section .text
 
 .global Init__Q24zNPC22navigation_mesh_drivenFPQ24zNPC15navigation_meshi

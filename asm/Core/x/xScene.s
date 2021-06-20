@@ -45,6 +45,36 @@ lbl_803D8884:
 lbl_803D8888:
 	.skip 0x8
 
+.section .sdata2
+
+.global $$21183
+$$21183:
+	.incbin "baserom.dol", 0x32F320, 0x4
+.global $$21184
+$$21184:
+	.incbin "baserom.dol", 0x32F324, 0x4
+.global $$21185
+$$21185:
+	.incbin "baserom.dol", 0x32F328, 0x4
+.global $$21186_0
+$$21186_0:
+	.incbin "baserom.dol", 0x32F32C, 0x4
+.global $$21187_0
+$$21187_0:
+	.incbin "baserom.dol", 0x32F330, 0x8
+.global $$21189_0
+$$21189_0:
+	.incbin "baserom.dol", 0x32F338, 0x8
+.global $$21252
+$$21252:
+	.incbin "baserom.dol", 0x32F340, 0x4
+.global $$21593_0
+$$21593_0:
+	.incbin "baserom.dol", 0x32F344, 0x4
+.global $$21674_0
+$$21674_0:
+	.incbin "baserom.dol", 0x32F348, 0x8
+
 .section .text
 
 .global xSceneInit__FP6xSceneUsUsUsUs

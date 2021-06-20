@@ -15,6 +15,81 @@ gs_fTolerance:
 nxt$2145:
 	.incbin "baserom.dol", 0x32B2CC, 0xC
 
+.section .sdata2
+
+.global g_O3
+g_O3:
+	.incbin "baserom.dol", 0x32F0D0, 0x4
+.global lbl_803D2714
+lbl_803D2714:
+	.incbin "baserom.dol", 0x32F0D4, 0x4
+.global lbl_803D2718
+lbl_803D2718:
+	.incbin "baserom.dol", 0x32F0D8, 0x4
+.global g_X3
+g_X3:
+	.incbin "baserom.dol", 0x32F0DC, 0xC
+.global g_Y3
+g_Y3:
+	.incbin "baserom.dol", 0x32F0E8, 0x4
+.global lbl_803D272C
+lbl_803D272C:
+	.incbin "baserom.dol", 0x32F0EC, 0x4
+.global lbl_803D2730
+lbl_803D2730:
+	.incbin "baserom.dol", 0x32F0F0, 0x4
+.global g_Z3
+g_Z3:
+	.incbin "baserom.dol", 0x32F0F4, 0xC
+.global g_NX3
+g_NX3:
+	.incbin "baserom.dol", 0x32F100, 0xC
+.global g_NY3
+g_NY3:
+	.incbin "baserom.dol", 0x32F10C, 0xC
+.global g_NZ3
+g_NZ3:
+	.incbin "baserom.dol", 0x32F118, 0xC
+.global g_IQ
+g_IQ:
+	.incbin "baserom.dol", 0x32F124, 0x10
+.global $$2618_0
+$$2618_0:
+	.incbin "baserom.dol", 0x32F134, 0x4
+.global $$2784
+$$2784:
+	.incbin "baserom.dol", 0x32F138, 0x4
+.global $$21513
+$$21513:
+	.incbin "baserom.dol", 0x32F13C, 0x4
+.global $$21553
+$$21553:
+	.incbin "baserom.dol", 0x32F140, 0x4
+.global $$21656
+$$21656:
+	.incbin "baserom.dol", 0x32F144, 0x4
+.global $$21721
+$$21721:
+	.incbin "baserom.dol", 0x32F148, 0x4
+.global $$21722
+$$21722:
+	.incbin "baserom.dol", 0x32F14C, 0x4
+.global $$21729
+$$21729:
+	.incbin "baserom.dol", 0x32F150, 0x4
+.global $$21846
+$$21846:
+	.incbin "baserom.dol", 0x32F154, 0x4
+.global $$21847
+$$21847:
+	.incbin "baserom.dol", 0x32F158, 0x4
+.global $$22239
+$$22239:
+	.incbin "baserom.dol", 0x32F15C, 0x4
+.global $$22288
+$$22288:
+	.incbin "baserom.dol", 0x32F160, 0x8
+
 .section .text
 
 .global xMath3Init__Fv

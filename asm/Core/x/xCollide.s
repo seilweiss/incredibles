@@ -84,6 +84,48 @@ $$22469:
 lbl_803D860C:
 	.skip 0x4
 
+.section .sdata2
+
+.global $$2812
+$$2812:
+	.incbin "baserom.dol", 0x32E8D0, 0x4
+.global $$2961
+$$2961:
+	.incbin "baserom.dol", 0x32E8D4, 0x4
+.global $$2963
+$$2963:
+	.incbin "baserom.dol", 0x32E8D8, 0x4
+.global $$2965
+$$2965:
+	.incbin "baserom.dol", 0x32E8DC, 0x4
+.global $$21213
+$$21213:
+	.incbin "baserom.dol", 0x32E8E0, 0x4
+.global $$21421_0
+$$21421_0:
+	.incbin "baserom.dol", 0x32E8E4, 0x4
+.global $$21422
+$$21422:
+	.incbin "baserom.dol", 0x32E8E8, 0x4
+.global $$21423
+$$21423:
+	.incbin "baserom.dol", 0x32E8EC, 0x4
+.global $$21424
+$$21424:
+	.incbin "baserom.dol", 0x32E8F0, 0x4
+.global $$22019
+$$22019:
+	.incbin "baserom.dol", 0x32E8F4, 0x4
+.global $$22624
+$$22624:
+	.incbin "baserom.dol", 0x32E8F8, 0x4
+.global $$22943
+$$22943:
+	.incbin "baserom.dol", 0x32E8FC, 0x4
+.global $$22944
+$$22944:
+	.incbin "baserom.dol", 0x32E900, 0x8
+
 .section .text
 
 .global xSphereHitsSphere__FPC7xSpherePC7xSphereP7xCollis

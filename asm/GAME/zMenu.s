@@ -57,6 +57,33 @@ ONELINER_WAITTIME:
 holdTmr:
 	.incbin "baserom.dol", 0x32C1B8, 0x8
 
+.section .sdata2
+
+.global $$21083_0
+$$21083_0:
+	.incbin "baserom.dol", 0x330B60, 0x4
+.global $$21110_0
+$$21110_0:
+	.incbin "baserom.dol", 0x330B64, 0x4
+.global $$21328
+$$21328:
+	.incbin "baserom.dol", 0x330B68, 0x4
+.global $$21329
+$$21329:
+	.incbin "baserom.dol", 0x330B6C, 0x4
+.global $$21330
+$$21330:
+	.incbin "baserom.dol", 0x330B70, 0x4
+.global $$21331
+$$21331:
+	.incbin "baserom.dol", 0x330B74, 0x4
+.global $$21332_3
+$$21332_3:
+	.incbin "baserom.dol", 0x330B78, 0x8
+.global $$21334_1
+$$21334_1:
+	.incbin "baserom.dol", 0x330B80, 0x8
+
 .section .text
 
 .global zMenuDecrementIdleTimer__Fv

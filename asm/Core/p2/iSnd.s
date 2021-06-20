@@ -27,6 +27,42 @@ sOldPauseState:
 sOldVolume:
 	.skip 0x18
 
+.section .sdata2
+
+.global $$2977
+$$2977:
+	.incbin "baserom.dol", 0x32F910, 0x4
+.global $$2978_0
+$$2978_0:
+	.incbin "baserom.dol", 0x32F914, 0x4
+.global $$21419_0
+$$21419_0:
+	.incbin "baserom.dol", 0x32F918, 0x4
+.global $$21420
+$$21420:
+	.incbin "baserom.dol", 0x32F91C, 0x4
+.global $$21421_1
+$$21421_1:
+	.incbin "baserom.dol", 0x32F920, 0x4
+.global $$21422_0
+$$21422_0:
+	.incbin "baserom.dol", 0x32F924, 0x4
+.global $$21542
+$$21542:
+	.incbin "baserom.dol", 0x32F928, 0x4
+.global $$21543
+$$21543:
+	.incbin "baserom.dol", 0x32F92C, 0x4
+.global $$21545_0
+$$21545_0:
+	.incbin "baserom.dol", 0x32F930, 0x8
+.global $$21594
+$$21594:
+	.incbin "baserom.dol", 0x32F938, 0x4
+.global $$21595
+$$21595:
+	.incbin "baserom.dol", 0x32F93C, 0x4
+
 .section .text
 
 .global iSndInit__Fv

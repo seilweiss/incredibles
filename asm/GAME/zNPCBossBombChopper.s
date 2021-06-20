@@ -93,6 +93,96 @@ __vt__Q24zNPC10lob_attack:
 __vt__Q24zNPC14chopper_attack:
 	.incbin "baserom.dol", 0x32DB9C, 0x14
 
+.section .sdata2
+
+.global $$21304_5
+$$21304_5:
+	.incbin "baserom.dol", 0x3339E8, 0x4
+.global $$21305_3
+$$21305_3:
+	.incbin "baserom.dol", 0x3339EC, 0x4
+.global $$21310_3
+$$21310_3:
+	.incbin "baserom.dol", 0x3339F0, 0x4
+.global $$21318_3
+$$21318_3:
+	.incbin "baserom.dol", 0x3339F4, 0x4
+.global $$21334_5
+$$21334_5:
+	.incbin "baserom.dol", 0x3339F8, 0x4
+.global $$21393_1
+$$21393_1:
+	.incbin "baserom.dol", 0x3339FC, 0x4
+.global $$21419_4
+$$21419_4:
+	.incbin "baserom.dol", 0x333A00, 0x4
+.global $$21466_4
+$$21466_4:
+	.incbin "baserom.dol", 0x333A04, 0x4
+.global $$21521_6
+$$21521_6:
+	.incbin "baserom.dol", 0x333A08, 0x4
+.global $$21578_0
+$$21578_0:
+	.incbin "baserom.dol", 0x333A0C, 0x4
+.global $$21825
+$$21825:
+	.incbin "baserom.dol", 0x333A10, 0x4
+.global $$21932_2
+$$21932_2:
+	.incbin "baserom.dol", 0x333A14, 0x4
+.global $$21966
+$$21966:
+	.incbin "baserom.dol", 0x333A18, 0x4
+.global $$21967_0
+$$21967_0:
+	.incbin "baserom.dol", 0x333A1C, 0x4
+.global $$21968_0
+$$21968_0:
+	.incbin "baserom.dol", 0x333A20, 0x4
+.global $$22017_0
+$$22017_0:
+	.incbin "baserom.dol", 0x333A24, 0x4
+.global $$22186
+$$22186:
+	.incbin "baserom.dol", 0x333A28, 0x4
+.global $$22187
+$$22187:
+	.incbin "baserom.dol", 0x333A2C, 0x4
+.global $$22188
+$$22188:
+	.incbin "baserom.dol", 0x333A30, 0x4
+.global $$22189
+$$22189:
+	.incbin "baserom.dol", 0x333A34, 0x4
+.global $$22190
+$$22190:
+	.incbin "baserom.dol", 0x333A38, 0x4
+.global $$22191
+$$22191:
+	.incbin "baserom.dol", 0x333A3C, 0x4
+.global $$22192
+$$22192:
+	.incbin "baserom.dol", 0x333A40, 0x4
+.global $$22193
+$$22193:
+	.incbin "baserom.dol", 0x333A44, 0x4
+.global $$22194
+$$22194:
+	.incbin "baserom.dol", 0x333A48, 0x4
+.global $$22195_1
+$$22195_1:
+	.incbin "baserom.dol", 0x333A4C, 0x4
+.global $$22196_0
+$$22196_0:
+	.incbin "baserom.dol", 0x333A50, 0x4
+.global $$22273
+$$22273:
+	.incbin "baserom.dol", 0x333A54, 0x4
+.global $$22280
+$$22280:
+	.incbin "baserom.dol", 0x333A58, 0x18
+
 .section .text
 
 .global get_default_light_kit__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2Fv

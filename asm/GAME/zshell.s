@@ -15,6 +15,36 @@ __vt__Q21z26lightweight$$0Q21z5shell$$415$$1:
 __vt__Q21z5shell:
 	.incbin "baserom.dol", 0x32CF58, 0x20
 
+.section .sdata2
+
+.global $$21282_0
+$$21282_0:
+	.incbin "baserom.dol", 0x331F20, 0x4
+.global $$21283
+$$21283:
+	.incbin "baserom.dol", 0x331F24, 0x4
+.global $$21284_0
+$$21284_0:
+	.incbin "baserom.dol", 0x331F28, 0x4
+.global $$21329_1
+$$21329_1:
+	.incbin "baserom.dol", 0x331F2C, 0x4
+.global $$21330_0
+$$21330_0:
+	.incbin "baserom.dol", 0x331F30, 0x4
+.global $$21331_1
+$$21331_1:
+	.incbin "baserom.dol", 0x331F34, 0x4
+.global $$21365_0
+$$21365_0:
+	.incbin "baserom.dol", 0x331F38, 0x4
+.global lbl_803D557C
+lbl_803D557C:
+	.incbin "baserom.dol", 0x331F3C, 0x4
+.global lbl_803D5580
+lbl_803D5580:
+	.incbin "baserom.dol", 0x331F40, 0x8
+
 .section .text
 
 .global find_model__1zFPCcRUi
