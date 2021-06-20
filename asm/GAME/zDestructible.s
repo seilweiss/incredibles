@@ -9,6 +9,18 @@ $$21190:
 $$2stringBase0_46:
 	.incbin "baserom.dol", 0x2D8B2C, 0x24
 
+.section .sbss2
+
+.global $$21159_3
+$$21159_3:
+	.skip 0x4
+.global lbl_803D8B6C
+lbl_803D8B6C:
+	.skip 0x4
+.global lbl_803D8B70
+lbl_803D8B70:
+	.skip 0x4
+
 .section .text
 
 .global UpdateModelBound__27$$2unnamed$$2zDestructible_cpp$$2FP4xEntP14xModelInstanceb

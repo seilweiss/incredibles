@@ -120,6 +120,24 @@ buffer$1184:
 buffer$1189:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21001_4
+$$21001_4:
+	.skip 0x1C
+.global lbl_803D9124
+lbl_803D9124:
+	.skip 0x4
+.global $$21002_6
+$$21002_6:
+	.skip 0x1C
+.global lbl_803D9144
+lbl_803D9144:
+	.skip 0x4
+.global $$21003_4
+$$21003_4:
+	.skip 0x1C
+
 .section .text
 
 .global zVarEntryCB_IsSignedIn__FPv

@@ -51,6 +51,21 @@ init$1937:
 pushed_player_enemy_pos$1939:
 	.skip 0x10
 
+.section .sbss2
+
+.global $$24150
+$$24150:
+	.skip 0x4
+.global lbl_803D8B0C
+lbl_803D8B0C:
+	.skip 0x4
+.global lbl_803D8B10
+lbl_803D8B10:
+	.skip 0x4
+.global lbl_803D8B14
+lbl_803D8B14:
+	.skip 0x4
+
 .section .text
 
 .global SetupRumbleEffects__27$$2unnamed$$2zCommonPlayer_cpp$$2FPCQ227$$2unnamed$$2zCommonPlayer_cpp$$212RumbleParamsi

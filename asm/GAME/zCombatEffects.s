@@ -69,6 +69,27 @@ slam_land_data__28$$2unnamed$$2zCombatEffects_cpp$$2:
 cfg$1887:
 	.skip 0x20
 
+.section .sbss2
+
+.global $$21808
+$$21808:
+	.skip 0x4
+.global lbl_803D8AF4
+lbl_803D8AF4:
+	.skip 0x4
+.global lbl_803D8AF8
+lbl_803D8AF8:
+	.skip 0x4
+.global $$21809
+$$21809:
+	.skip 0x4
+.global lbl_803D8B00
+lbl_803D8B00:
+	.skip 0x4
+.global lbl_803D8B04
+lbl_803D8B04:
+	.skip 0x4
+
 .section .text
 
 .global setup__Q214zCombatEffects19SparkParticleSystemFv

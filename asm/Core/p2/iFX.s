@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sbss2
+
+.global $$2806_0
+$$2806_0:
+	.skip 0x30
+
 .section .text
 
 .global _iGCUVRenderCallback__FPvP18RxGameCubePipeData

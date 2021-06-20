@@ -330,6 +330,27 @@ cinfx_nj03_opening_omni_landing_dust_settings:
 cinfx_ni01_damaged_velocipod_smoke_settings:
 	.skip 0x14
 
+.section .sbss2
+
+.global $$21662_1
+$$21662_1:
+	.skip 0x4
+.global lbl_803D94F4
+lbl_803D94F4:
+	.skip 0x4
+.global lbl_803D94F8
+lbl_803D94F8:
+	.skip 0x4
+.global $$21664_1
+$$21664_1:
+	.skip 0x4
+.global lbl_803D9500
+lbl_803D9500:
+	.skip 0x4
+.global lbl_803D9504
+lbl_803D9504:
+	.skip 0x4
+
 .section .text
 
 .global zCinFX_LightDust_Twk__FPCcP9NCINEntry

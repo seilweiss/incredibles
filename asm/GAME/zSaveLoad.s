@@ -90,6 +90,18 @@ preAutoSaving:
 autosaveErrorHack:
 	.skip 0x5
 
+.section .sbss2
+
+.global $$21935_1
+$$21935_1:
+	.skip 0x1C
+.global lbl_803D90B4
+lbl_803D90B4:
+	.skip 0x4
+.global $$22457
+$$22457:
+	.skip 0x20
+
 .section .text
 
 .global WaitForPreviousPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fb

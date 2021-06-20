@@ -24,6 +24,144 @@ $$2stringBase0_81:
 collision_count$1149:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21177_8
+$$21177_8:
+	.skip 0x4
+.global lbl_803D8E9C
+lbl_803D8E9C:
+	.skip 0x4
+.global $$21184_7
+$$21184_7:
+	.skip 0x4
+.global lbl_803D8EA4
+lbl_803D8EA4:
+	.skip 0x4
+.global $$21250_2
+$$21250_2:
+	.skip 0x4
+.global lbl_803D8EAC
+lbl_803D8EAC:
+	.skip 0x4
+.global $$21268_2
+$$21268_2:
+	.skip 0x4
+.global lbl_803D8EB4
+lbl_803D8EB4:
+	.skip 0x4
+.global lbl_803D8EB8
+lbl_803D8EB8:
+	.skip 0x4
+.global $$21381_2
+$$21381_2:
+	.skip 0x4
+.global lbl_803D8EC0
+lbl_803D8EC0:
+	.skip 0x4
+.global $$21429_4
+$$21429_4:
+	.skip 0x4
+.global lbl_803D8EC8
+lbl_803D8EC8:
+	.skip 0x4
+.global $$21466_5
+$$21466_5:
+	.skip 0x4
+.global lbl_803D8ED0
+lbl_803D8ED0:
+	.skip 0x4
+.global lbl_803D8ED4
+lbl_803D8ED4:
+	.skip 0x4
+.global $$21473_6
+$$21473_6:
+	.skip 0x4
+.global lbl_803D8EDC
+lbl_803D8EDC:
+	.skip 0x4
+.global $$21477_1
+$$21477_1:
+	.skip 0x4
+.global lbl_803D8EE4
+lbl_803D8EE4:
+	.skip 0x4
+.global lbl_803D8EE8
+lbl_803D8EE8:
+	.skip 0x4
+.global $$21506_2
+$$21506_2:
+	.skip 0x4
+.global lbl_803D8EF0
+lbl_803D8EF0:
+	.skip 0x4
+.global $$21520_4
+$$21520_4:
+	.skip 0x4
+.global lbl_803D8EF8
+lbl_803D8EF8:
+	.skip 0x4
+.global $$21530_0
+$$21530_0:
+	.skip 0x4
+.global lbl_803D8F00
+lbl_803D8F00:
+	.skip 0x4
+.global $$21540_3
+$$21540_3:
+	.skip 0x4
+.global lbl_803D8F08
+lbl_803D8F08:
+	.skip 0x4
+.global $$21578_1
+$$21578_1:
+	.skip 0x4
+.global lbl_803D8F10
+lbl_803D8F10:
+	.skip 0x4
+.global $$21581_1
+$$21581_1:
+	.skip 0x4
+.global lbl_803D8F18
+lbl_803D8F18:
+	.skip 0x4
+.global $$21587_2
+$$21587_2:
+	.skip 0x4
+.global lbl_803D8F20
+lbl_803D8F20:
+	.skip 0x4
+.global $$21590_0
+$$21590_0:
+	.skip 0x4
+.global lbl_803D8F28
+lbl_803D8F28:
+	.skip 0x4
+.global $$21596_0
+$$21596_0:
+	.skip 0x4
+.global lbl_803D8F30
+lbl_803D8F30:
+	.skip 0x4
+.global $$21597_1
+$$21597_1:
+	.skip 0x4
+.global lbl_803D8F38
+lbl_803D8F38:
+	.skip 0x4
+.global $$21749_0
+$$21749_0:
+	.skip 0x4
+.global lbl_803D8F40
+lbl_803D8F40:
+	.skip 0x4
+.global $$21750_1
+$$21750_1:
+	.skip 0x4
+.global lbl_803D8F48
+lbl_803D8F48:
+	.skip 0x8
+
 .section .text
 
 .global __ct__Q24zNPC4jumpFv

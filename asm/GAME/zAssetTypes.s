@@ -36,6 +36,15 @@ player$1722:
 init$1723:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21553_3
+$$21553_3:
+	.skip 0x4
+.global lbl_803D8A0C
+lbl_803D8A0C:
+	.skip 0x4
+
 .section .text
 
 .global GetBrainID__FUiUi

@@ -111,6 +111,15 @@ old_rs:
 waterhoseMgr__13zWaterhoseMgr:
 	.skip 0x4
 
+.section .sbss2
+
+.global lbl_803D9164
+lbl_803D9164:
+	.skip 0x4
+.global $$2693_0
+$$2693_0:
+	.skip 0x28
+
 .section .text
 
 .global Init__16zWaterhoseWidgetFR5xBaseR9xDynAssetUl

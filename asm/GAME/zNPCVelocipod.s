@@ -72,6 +72,18 @@ __vt__Q24zNPC9hover_bob:
 $$2stringBase0_88:
 	.incbin "baserom.dol", 0x2E1008, 0x408
 
+.section .sbss2
+
+.global $$21388_5
+$$21388_5:
+	.skip 0x4
+.global lbl_803D905C
+lbl_803D905C:
+	.skip 0x4
+.global lbl_803D9060
+lbl_803D9060:
+	.skip 0x8
+
 .section .text
 
 .global setup__Q24zNPC9hover_bobFv

@@ -69,6 +69,66 @@ curHp__4zNPC:
 gOm10Defeated__4zNPC:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21897_0
+$$21897_0:
+	.skip 0x4
+.global lbl_803D930C
+lbl_803D930C:
+	.skip 0x4
+.global $$21924_1
+$$21924_1:
+	.skip 0x4
+.global lbl_803D9314
+lbl_803D9314:
+	.skip 0x4
+.global lbl_803D9318
+lbl_803D9318:
+	.skip 0x4
+.global $$21934_1
+$$21934_1:
+	.skip 0x4
+.global lbl_803D9320
+lbl_803D9320:
+	.skip 0x4
+.global $$22395
+$$22395:
+	.skip 0x4
+.global lbl_803D9328
+lbl_803D9328:
+	.skip 0x4
+.global lbl_803D932C
+lbl_803D932C:
+	.skip 0x4
+.global $$22454
+$$22454:
+	.skip 0x4
+.global lbl_803D9334
+lbl_803D9334:
+	.skip 0x4
+.global lbl_803D9338
+lbl_803D9338:
+	.skip 0x4
+.global $$22864
+$$22864:
+	.skip 0x4
+.global lbl_803D9340
+lbl_803D9340:
+	.skip 0x4
+.global lbl_803D9344
+lbl_803D9344:
+	.skip 0x4
+.global $$22865
+$$22865:
+	.skip 0x4
+.global lbl_803D934C
+lbl_803D934C:
+	.skip 0x4
+.global lbl_803D9350
+lbl_803D9350:
+	.skip 0x8
+
 .section .text
 
 .global SetupCollision__Q24zNPC10CollidableFRC4xBoxb

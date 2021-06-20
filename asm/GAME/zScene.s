@@ -99,6 +99,15 @@ zSceneSpecialRender_numFuncs:
 scobj_idbps:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$23484
+$$23484:
+	.skip 0x4
+.global $$23485
+$$23485:
+	.skip 0x4
+
 .section .text
 
 .global zSceneIsLoadingPackFile__Fv

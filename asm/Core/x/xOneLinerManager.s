@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sbss2
+
+.global $$21064_4
+$$21064_4:
+	.skip 0x4
+.global lbl_803D8754
+lbl_803D8754:
+	.skip 0x4
+.global lbl_803D8758
+lbl_803D8758:
+	.skip 0x4
+.global lbl_803D875C
+lbl_803D875C:
+	.skip 0x4
+
 .section .text
 
 .global compare__FPCvPCv

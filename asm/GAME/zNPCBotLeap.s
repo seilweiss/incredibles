@@ -57,6 +57,36 @@ laser_count__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2:
 vert__Q24zNPC25$$2unnamed$$2zNPCBotLeap_cpp$$2:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21607_3
+$$21607_3:
+	.skip 0x4
+.global lbl_803D935C
+lbl_803D935C:
+	.skip 0x4
+.global lbl_803D9360
+lbl_803D9360:
+	.skip 0x4
+.global $$21608_3
+$$21608_3:
+	.skip 0x4
+.global lbl_803D9368
+lbl_803D9368:
+	.skip 0x4
+.global lbl_803D936C
+lbl_803D936C:
+	.skip 0x4
+.global $$21683_2
+$$21683_2:
+	.skip 0x4
+.global lbl_803D9374
+lbl_803D9374:
+	.skip 0x4
+.global lbl_803D9378
+lbl_803D9378:
+	.skip 0x8
+
 .section .text
 
 .global setup__Q24zNPC10light_dustFv

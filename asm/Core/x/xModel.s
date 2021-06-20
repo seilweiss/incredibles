@@ -36,6 +36,15 @@ xModelLookupList:
 xModelInstStaticAlloc:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21610_2
+$$21610_2:
+	.skip 0x4
+.global lbl_803D873C
+lbl_803D873C:
+	.skip 0x4
+
 .section .text
 
 .global xModelGetPipe__FP8RpAtomic

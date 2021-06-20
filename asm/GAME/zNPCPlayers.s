@@ -30,6 +30,18 @@ $$2stringBase0_149:
 the_ball__4zNPC:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21365_1
+$$21365_1:
+	.skip 0x4
+.global lbl_803D94A4
+lbl_803D94A4:
+	.skip 0x4
+.global lbl_803D94A8
+lbl_803D94A8:
+	.skip 0x8
+
 .section .text
 
 .global reset__Q24zNPC10health_hudFv

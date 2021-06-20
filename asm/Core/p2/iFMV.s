@@ -24,6 +24,21 @@ movie_array:
 movie_asset_count:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21068_4
+$$21068_4:
+	.skip 0x4
+.global lbl_803D8934
+lbl_803D8934:
+	.skip 0x4
+.global lbl_803D8938
+lbl_803D8938:
+	.skip 0x4
+.global lbl_803D893C
+lbl_803D893C:
+	.skip 0x4
+
 .section .text
 
 .global BigMovieAlloc__FUi

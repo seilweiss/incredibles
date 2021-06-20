@@ -51,6 +51,15 @@ sMgrTotal:
 sCacheList:
 	.skip 0x4
 
+.section .sbss2
+
+.global lbl_803D889C
+lbl_803D889C:
+	.skip 0x4
+.global $$21140
+$$21140:
+	.skip 0x40
+
 .section .text
 
 .global xShadowInit__Fv

@@ -15,6 +15,72 @@ ent_cache__25$$2unnamed$$2xCamSupport_cpp$$2:
 ent_cache_size__25$$2unnamed$$2xCamSupport_cpp$$2:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21218_2
+$$21218_2:
+	.skip 0x4
+.global lbl_803D84DC
+lbl_803D84DC:
+	.skip 0x4
+.global lbl_803D84E0
+lbl_803D84E0:
+	.skip 0x4
+.global $$21405_2
+$$21405_2:
+	.skip 0x4
+.global lbl_803D84E8
+lbl_803D84E8:
+	.skip 0x4
+.global lbl_803D84EC
+lbl_803D84EC:
+	.skip 0x4
+.global $$21462_1
+$$21462_1:
+	.skip 0x4
+.global lbl_803D84F4
+lbl_803D84F4:
+	.skip 0x4
+.global lbl_803D84F8
+lbl_803D84F8:
+	.skip 0x4
+.global $$21465_3
+$$21465_3:
+	.skip 0x4
+.global lbl_803D8500
+lbl_803D8500:
+	.skip 0x4
+.global lbl_803D8504
+lbl_803D8504:
+	.skip 0x4
+.global $$21477_0
+$$21477_0:
+	.skip 0x4
+.global lbl_803D850C
+lbl_803D850C:
+	.skip 0x4
+.global lbl_803D8510
+lbl_803D8510:
+	.skip 0x4
+.global $$21478_0
+$$21478_0:
+	.skip 0x4
+.global lbl_803D8518
+lbl_803D8518:
+	.skip 0x4
+.global lbl_803D851C
+lbl_803D851C:
+	.skip 0x4
+.global $$21479_0
+$$21479_0:
+	.skip 0x4
+.global lbl_803D8524
+lbl_803D8524:
+	.skip 0x4
+.global lbl_803D8528
+lbl_803D8528:
+	.skip 0x8
+
 .section .text
 
 .global create__15xCamSupportPathFii

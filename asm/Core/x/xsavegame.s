@@ -42,6 +42,27 @@ g_xsginit:
 g_autodata:
 	.skip 0x14
 
+.section .sbss2
+
+.global lbl_803D87DC
+lbl_803D87DC:
+	.skip 0x4
+.global $$21015_3
+$$21015_3:
+	.skip 0x1C
+.global lbl_803D87FC
+lbl_803D87FC:
+	.skip 0x4
+.global $$21208_1
+$$21208_1:
+	.skip 0x3C
+.global lbl_803D883C
+lbl_803D883C:
+	.skip 0x4
+.global $$21311_3
+$$21311_3:
+	.skip 0x40
+
 .section .text
 
 .global xSGStartup__Fv

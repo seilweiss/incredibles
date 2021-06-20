@@ -6,6 +6,15 @@
 $$2stringBase0_117:
 	.incbin "baserom.dol", 0x2E4568, 0x88
 
+.section .sbss2
+
+.global $$21070_7
+$$21070_7:
+	.skip 0x4
+.global lbl_803D92B4
+lbl_803D92B4:
+	.skip 0x4
+
 .section .text
 
 .global Setup__Q24zNPC6SensesFPQ24zNPC6common

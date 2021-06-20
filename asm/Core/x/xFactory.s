@@ -1,5 +1,26 @@
 .include "macros.inc"
 
+.section .sbss2
+
+.global $$2663_0
+$$2663_0:
+	.skip 0x4
+.global lbl_803D8664
+lbl_803D8664:
+	.skip 0x4
+.global lbl_803D8668
+lbl_803D8668:
+	.skip 0x4
+.global $$2692
+$$2692:
+	.skip 0x4
+.global lbl_803D8670
+lbl_803D8670:
+	.skip 0x4
+.global lbl_803D8674
+lbl_803D8674:
+	.skip 0x4
+
 .section .text
 
 .global __ct__8xFactoryFi

@@ -6,6 +6,18 @@
 $$21636:
 	.incbin "baserom.dol", 0x2EF1D0, 0x20
 
+.section .sbss2
+
+.global $$21321_3
+$$21321_3:
+	.skip 0x4
+.global lbl_803D8654
+lbl_803D8654:
+	.skip 0x4
+.global lbl_803D8658
+lbl_803D8658:
+	.skip 0x8
+
 .section .text
 
 .global xEntMotionInit__FP10xEntMotionP4xEntP15xEntMotionAsset

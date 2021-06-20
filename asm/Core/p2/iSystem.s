@@ -39,6 +39,12 @@ pARAMBaseAddressFMOD:
 ARAMBytesForFMOD:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21053_3
+$$21053_3:
+	.skip 0x8
+
 .section .text
 
 .global iRwResourcesEmptyArena__Fv

@@ -21,6 +21,30 @@ myid$1171:
 init$1172:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21556_2
+$$21556_2:
+	.skip 0x4
+.global lbl_803D86E4
+lbl_803D86E4:
+	.skip 0x4
+.global lbl_803D86E8
+lbl_803D86E8:
+	.skip 0x4
+.global lbl_803D86EC
+lbl_803D86EC:
+	.skip 0x4
+.global $$21558_1
+$$21558_1:
+	.skip 0x4
+.global lbl_803D86F4
+lbl_803D86F4:
+	.skip 0x4
+.global lbl_803D86F8
+lbl_803D86F8:
+	.skip 0x8
+
 .section .text
 
 .global create__Q24xhud15block_allocatorFii

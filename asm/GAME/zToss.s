@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss2
+
+.global $$2802_1
+$$2802_1:
+	.skip 0x4
+.global lbl_803D950C
+lbl_803D950C:
+	.skip 0x4
+
 .section .text
 
 .global setup__Q21z4tossFv

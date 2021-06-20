@@ -39,6 +39,15 @@ system$localstatic3$get_system__Q21z25lightweight$$0Q21z4bomb$$420$$1Fv:
 init$localstatic4$get_system__Q21z25lightweight$$0Q21z4bomb$$420$$1Fv:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21401_1
+$$21401_1:
+	.skip 0x4
+.global lbl_803D8E7C
+lbl_803D8E7C:
+	.skip 0x4
+
 .section .text
 
 .global get_lob_velocity__4zNPCFRC5xVec3RC5xVec3RC5xVec3ff

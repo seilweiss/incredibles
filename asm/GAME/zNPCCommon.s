@@ -18,6 +18,18 @@ $$21625:
 $$2stringBase0_110:
 	.incbin "baserom.dol", 0x2E3F38, 0xF8
 
+.section .sbss2
+
+.global $$21294_1
+$$21294_1:
+	.skip 0x4
+.global lbl_803D91D4
+lbl_803D91D4:
+	.skip 0x4
+.global lbl_803D91D8
+lbl_803D91D8:
+	.skip 0x8
+
 .section .text
 
 .global scale_model__24$$2unnamed$$2zNPCCommon_cpp$$2FP14xModelInstancef

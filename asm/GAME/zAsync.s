@@ -24,6 +24,12 @@ rot$982:
 init$983:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$2991_7
+$$2991_7:
+	.skip 0x8
+
 .section .text
 
 .global Init__6zAsyncFPQ26zAsync6Screen

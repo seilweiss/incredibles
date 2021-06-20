@@ -18,6 +18,27 @@ $$2stringBase0_151:
 need_setup__13energy_system:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$2997_5
+$$2997_5:
+	.skip 0x4
+.global lbl_803D94DC
+lbl_803D94DC:
+	.skip 0x4
+.global lbl_803D94E0
+lbl_803D94E0:
+	.skip 0x4
+.global $$21064_5
+$$21064_5:
+	.skip 0x4
+.global lbl_803D94E8
+lbl_803D94E8:
+	.skip 0x4
+.global lbl_803D94EC
+lbl_803D94EC:
+	.skip 0x4
+
 .section .text
 
 .global scene_setup__13energy_systemFv

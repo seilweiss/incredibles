@@ -120,6 +120,12 @@ mFModPriority__8iTRCDisk:
 mDiskErrorInHigherPriorityThread__8iTRCDisk:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$2726_0
+$$2726_0:
+	.skip 0x8
+
 .section .text
 
 .global GetRegion__Fv

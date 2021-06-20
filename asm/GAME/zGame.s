@@ -204,6 +204,15 @@ init$2145:
 init$2163:
 	.skip 0x7
 
+.section .sbss2
+
+.global $$21351_4
+$$21351_4:
+	.skip 0x4
+.global lbl_803D8C8C
+lbl_803D8C8C:
+	.skip 0x4
+
 .section .text
 
 .global PickNextSoak__Fv

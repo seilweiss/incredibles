@@ -102,6 +102,24 @@ rootOffset__Q24zNPC10projectile:
 rootQuat__Q24zNPC10projectile:
 	.skip 0x44
 
+.section .sbss2
+
+.global $$21128_0
+$$21128_0:
+	.skip 0x4
+.global lbl_803D8E84
+lbl_803D8E84:
+	.skip 0x4
+.global $$21643_1
+$$21643_1:
+	.skip 0x4
+.global lbl_803D8E8C
+lbl_803D8E8C:
+	.skip 0x4
+.global lbl_803D8E90
+lbl_803D8E90:
+	.skip 0x8
+
 .section .text
 
 .global zNPC_ForceEffect__23$$2unnamed$$2zNPCMelee_cpp$$2FP9xAnimPlayPCc

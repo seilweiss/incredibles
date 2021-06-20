@@ -12,6 +12,18 @@ __vt__Q24zNPC10run_stream:
 $$2stringBase0_142:
 	.incbin "baserom.dol", 0x2E6910, 0xA0
 
+.section .sbss2
+
+.global $$21353_2
+$$21353_2:
+	.skip 0x4
+.global lbl_803D9414
+lbl_803D9414:
+	.skip 0x4
+.global lbl_803D9418
+lbl_803D9418:
+	.skip 0x8
+
 .section .text
 
 .global attack__Q24zNPC10run_streamFP15xAnimTransitionP11xAnimSingle

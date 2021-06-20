@@ -27,6 +27,18 @@ sSplitCurr:
 sSplitLeaf:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21192_1
+$$21192_1:
+	.skip 0x4
+.global lbl_803D8704
+lbl_803D8704:
+	.skip 0x4
+.global lbl_803D8708
+lbl_803D8708:
+	.skip 0x8
+
 .section .text
 
 .global CountAtomicCB__FP8RpAtomicPv

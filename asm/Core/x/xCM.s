@@ -21,6 +21,57 @@ credits_data:
 credits_parentID:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21057_4
+$$21057_4:
+	.skip 0x4
+.global lbl_803D8594
+lbl_803D8594:
+	.skip 0x4
+.global lbl_803D8598
+lbl_803D8598:
+	.skip 0x4
+.global lbl_803D859C
+lbl_803D859C:
+	.skip 0x4
+.global $$21061_3
+$$21061_3:
+	.skip 0x4
+.global lbl_803D85A4
+lbl_803D85A4:
+	.skip 0x4
+.global lbl_803D85A8
+lbl_803D85A8:
+	.skip 0x4
+.global lbl_803D85AC
+lbl_803D85AC:
+	.skip 0x4
+.global $$21073_1
+$$21073_1:
+	.skip 0x4
+.global lbl_803D85B4
+lbl_803D85B4:
+	.skip 0x4
+.global lbl_803D85B8
+lbl_803D85B8:
+	.skip 0x4
+.global lbl_803D85BC
+lbl_803D85BC:
+	.skip 0x4
+.global $$21076_1
+$$21076_1:
+	.skip 0x4
+.global lbl_803D85C4
+lbl_803D85C4:
+	.skip 0x4
+.global lbl_803D85C8
+lbl_803D85C8:
+	.skip 0x4
+.global lbl_803D85CC
+lbl_803D85CC:
+	.skip 0x4
+
 .section .text
 
 .global Decrypt__FPvUiPCvUi

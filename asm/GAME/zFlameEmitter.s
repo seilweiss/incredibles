@@ -6,6 +6,42 @@
 $$2stringBase0_56:
 	.incbin "baserom.dol", 0x2DA3D0, 0x18
 
+.section .sbss2
+
+.global lbl_803D8C2C
+lbl_803D8C2C:
+	.skip 0x4
+.global $$21174_4
+$$21174_4:
+	.skip 0x34
+.global $$21177_7
+$$21177_7:
+	.skip 0x4
+.global lbl_803D8C68
+lbl_803D8C68:
+	.skip 0x4
+.global lbl_803D8C6C
+lbl_803D8C6C:
+	.skip 0x4
+.global $$21178_7
+$$21178_7:
+	.skip 0x4
+.global lbl_803D8C74
+lbl_803D8C74:
+	.skip 0x4
+.global lbl_803D8C78
+lbl_803D8C78:
+	.skip 0x4
+.global $$21180_3
+$$21180_3:
+	.skip 0x4
+.global lbl_803D8C80
+lbl_803D8C80:
+	.skip 0x4
+.global lbl_803D8C84
+lbl_803D8C84:
+	.skip 0x4
+
 .section .text
 
 .global load__13zFlameEmitterFRCQ213zFlameEmitter10asset_type

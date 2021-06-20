@@ -9,6 +9,15 @@ $$2838:
 $$21017:
 	.incbin "baserom.dol", 0x2EEF50, 0x70
 
+.section .sbss2
+
+.global lbl_803D8494
+lbl_803D8494:
+	.skip 0x4
+.global $$2902_3
+$$2902_3:
+	.skip 0x30
+
 .section .text
 
 .global xQuickCullForSphere__FP7xQCDataPC7xSphere

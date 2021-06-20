@@ -30,6 +30,18 @@ system$localstatic3$get_system__Q21z25lightweight$$0Q21z4toss$$410$$1Fv:
 init$localstatic4$get_system__Q21z25lightweight$$0Q21z4toss$$410$$1Fv:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21522_7
+$$21522_7:
+	.skip 0x4
+.global lbl_803D8BBC
+lbl_803D8BBC:
+	.skip 0x4
+.global lbl_803D8BC0
+lbl_803D8BC0:
+	.skip 0x8
+
 .section .text
 
 .global CmpSimpleMgr__FPCvPCv

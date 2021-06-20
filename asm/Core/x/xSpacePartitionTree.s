@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sbss2
+
+.global $$2816_1
+$$2816_1:
+	.skip 0x4
+.global lbl_803D88EC
+lbl_803D88EC:
+	.skip 0x4
+
 .section .text
 
 .global add_tweaks__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$25tweakFv

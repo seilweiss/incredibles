@@ -48,6 +48,27 @@ init$1430:
 laser_count__1z:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21459_0
+$$21459_0:
+	.skip 0x4
+.global lbl_803D93C4
+lbl_803D93C4:
+	.skip 0x4
+.global lbl_803D93C8
+lbl_803D93C8:
+	.skip 0x4
+.global $$21677_3
+$$21677_3:
+	.skip 0x4
+.global lbl_803D93D0
+lbl_803D93D0:
+	.skip 0x4
+.global lbl_803D93D4
+lbl_803D93D4:
+	.skip 0x4
+
 .section .text
 
 .global load__10zUberLaserFR5xBaseR9xDynAssetUl

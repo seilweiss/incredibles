@@ -72,6 +72,30 @@ asynlay$912:
 init$913:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21593_2
+$$21593_2:
+	.skip 0x1C
+.global lbl_803D877C
+lbl_803D877C:
+	.skip 0x4
+.global $$21594_1
+$$21594_1:
+	.skip 0x1C
+.global lbl_803D879C
+lbl_803D879C:
+	.skip 0x4
+.global $$21595_1
+$$21595_1:
+	.skip 0x1C
+.global lbl_803D87BC
+lbl_803D87BC:
+	.skip 0x4
+.global $$21596
+$$21596:
+	.skip 0x1C
+
 .section .text
 
 .global PKRGetReadFuncs__Fi

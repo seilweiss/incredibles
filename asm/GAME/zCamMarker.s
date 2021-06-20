@@ -15,6 +15,18 @@ activated__24$$2unnamed$$2zCamMarker_cpp$$2:
 widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$2963_1
+$$2963_1:
+	.skip 0x4
+.global lbl_803D8A14
+lbl_803D8A14:
+	.skip 0x4
+.global lbl_803D8A18
+lbl_803D8A18:
+	.skip 0x8
+
 .section .text
 
 .global activate_camera__24$$2unnamed$$2zCamMarker_cpp$$2FRC9xCamAssetP4xEnt

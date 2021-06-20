@@ -57,6 +57,48 @@ footstep_curve$2784:
 $$2stringBase0_61:
 	.incbin "baserom.dol", 0x2DA96C, 0x2AC
 
+.section .sbss2
+
+.global $$21897
+$$21897:
+	.skip 0x4
+.global lbl_803D8C94
+lbl_803D8C94:
+	.skip 0x4
+.global lbl_803D8C98
+lbl_803D8C98:
+	.skip 0x4
+.global $$22129
+$$22129:
+	.skip 0x4
+.global lbl_803D8CA0
+lbl_803D8CA0:
+	.skip 0x4
+.global lbl_803D8CA4
+lbl_803D8CA4:
+	.skip 0x4
+.global $$22462
+$$22462:
+	.skip 0x24
+.global $$22530
+$$22530:
+	.skip 0x4
+.global lbl_803D8CD0
+lbl_803D8CD0:
+	.skip 0x4
+.global lbl_803D8CD4
+lbl_803D8CD4:
+	.skip 0x4
+.global $$22628_0
+$$22628_0:
+	.skip 0x4
+.global lbl_803D8CDC
+lbl_803D8CDC:
+	.skip 0x4
+.global lbl_803D8CE0
+lbl_803D8CE0:
+	.skip 0x8
+
 .section .text
 
 .global choose_strength__Q212zIncrediBall20incrediball_behaviorFP9xAnimPlayP10xAnimState

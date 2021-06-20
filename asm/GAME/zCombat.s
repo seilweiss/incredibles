@@ -30,6 +30,21 @@ damage_info_stack__21$$2unnamed$$2zCombat_cpp$$2:
 damage_info_stack_count__21$$2unnamed$$2zCombat_cpp$$2:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21619_4
+$$21619_4:
+	.skip 0x4
+.global lbl_803D8AE4
+lbl_803D8AE4:
+	.skip 0x4
+.global lbl_803D8AE8
+lbl_803D8AE8:
+	.skip 0x4
+.global lbl_803D8AEC
+lbl_803D8AEC:
+	.skip 0x4
+
 .section .text
 
 .global zCombatInit__Fv

@@ -1,5 +1,35 @@
 .include "macros.inc"
 
+.section .sbss2
+
+.global $$2757_0
+$$2757_0:
+	.skip 0x4
+.global lbl_803D8714
+lbl_803D8714:
+	.skip 0x4
+.global lbl_803D8718
+lbl_803D8718:
+	.skip 0x4
+.global $$21327_2
+$$21327_2:
+	.skip 0x4
+.global lbl_803D8720
+lbl_803D8720:
+	.skip 0x4
+.global lbl_803D8724
+lbl_803D8724:
+	.skip 0x4
+.global $$21328_5
+$$21328_5:
+	.skip 0x4
+.global lbl_803D872C
+lbl_803D872C:
+	.skip 0x4
+.global lbl_803D8730
+lbl_803D8730:
+	.skip 0x8
+
 .section .text
 
 .global init__17xLaserBoltEmitterFUlPCcb

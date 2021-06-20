@@ -33,6 +33,138 @@ init$1175_0:
 our_point$1718:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21008_4
+$$21008_4:
+	.skip 0x4
+.global lbl_803D8F54
+lbl_803D8F54:
+	.skip 0x4
+.global $$21009_4
+$$21009_4:
+	.skip 0x4
+.global lbl_803D8F5C
+lbl_803D8F5C:
+	.skip 0x4
+.global $$21018_2
+$$21018_2:
+	.skip 0x4
+.global lbl_803D8F64
+lbl_803D8F64:
+	.skip 0x4
+.global $$21019_2
+$$21019_2:
+	.skip 0x4
+.global lbl_803D8F6C
+lbl_803D8F6C:
+	.skip 0x4
+.global $$21034_2
+$$21034_2:
+	.skip 0x4
+.global lbl_803D8F74
+lbl_803D8F74:
+	.skip 0x4
+.global $$21125_4
+$$21125_4:
+	.skip 0x4
+.global lbl_803D8F7C
+lbl_803D8F7C:
+	.skip 0x4
+.global $$21186_6
+$$21186_6:
+	.skip 0x4
+.global lbl_803D8F84
+lbl_803D8F84:
+	.skip 0x4
+.global $$21187_6
+$$21187_6:
+	.skip 0x4
+.global lbl_803D8F8C
+lbl_803D8F8C:
+	.skip 0x4
+.global $$21188_3
+$$21188_3:
+	.skip 0x4
+.global lbl_803D8F94
+lbl_803D8F94:
+	.skip 0x4
+.global $$21210_1
+$$21210_1:
+	.skip 0x4
+.global lbl_803D8F9C
+lbl_803D8F9C:
+	.skip 0x4
+.global $$21211_0
+$$21211_0:
+	.skip 0x4
+.global lbl_803D8FA4
+lbl_803D8FA4:
+	.skip 0x4
+.global $$21212_2
+$$21212_2:
+	.skip 0x4
+.global lbl_803D8FAC
+lbl_803D8FAC:
+	.skip 0x4
+.global $$21267_2
+$$21267_2:
+	.skip 0x4
+.global lbl_803D8FB4
+lbl_803D8FB4:
+	.skip 0x4
+.global $$21360_1
+$$21360_1:
+	.skip 0x4
+.global lbl_803D8FBC
+lbl_803D8FBC:
+	.skip 0x4
+.global $$21361_0
+$$21361_0:
+	.skip 0x4
+.global lbl_803D8FC4
+lbl_803D8FC4:
+	.skip 0x4
+.global $$21413_3
+$$21413_3:
+	.skip 0x4
+.global lbl_803D8FCC
+lbl_803D8FCC:
+	.skip 0x4
+.global $$21435_2
+$$21435_2:
+	.skip 0x4
+.global lbl_803D8FD4
+lbl_803D8FD4:
+	.skip 0x4
+.global $$21449_3
+$$21449_3:
+	.skip 0x4
+.global lbl_803D8FDC
+lbl_803D8FDC:
+	.skip 0x4
+.global lbl_803D8FE0
+lbl_803D8FE0:
+	.skip 0x4
+.global $$21629_2
+$$21629_2:
+	.skip 0x4
+.global lbl_803D8FE8
+lbl_803D8FE8:
+	.skip 0x4
+.global $$21647_1
+$$21647_1:
+	.skip 0x4
+.global lbl_803D8FF0
+lbl_803D8FF0:
+	.skip 0x4
+.global $$21648_0
+$$21648_0:
+	.skip 0x4
+.global lbl_803D8FF8
+lbl_803D8FF8:
+	.skip 0x8
+
 .section .text
 
 .global initialize__Q24zNPC6circleFPQ24zNPC6common

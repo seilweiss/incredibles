@@ -93,6 +93,21 @@ cardCreateInProgress:
 cardDeleteInProgress:
 	.skip 0x2
 
+.section .sbss2
+
+.global $$21377_0
+$$21377_0:
+	.skip 0x28
+.global $$21565
+$$21565:
+	.skip 0x4
+.global lbl_803D89B4
+lbl_803D89B4:
+	.skip 0x4
+.global $$21912_0
+$$21912_0:
+	.skip 0x28
+
 .section .text
 
 .global iSGStartup__Fv

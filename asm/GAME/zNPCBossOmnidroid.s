@@ -84,6 +84,171 @@ boss__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2:
 fire_props$6776:
 	.skip 0xC
 
+.section .sbss2
+
+.global $$21484_1
+$$21484_1:
+	.skip 0x18
+.global $$22719
+$$22719:
+	.skip 0x2
+.global lbl_803D8D92
+lbl_803D8D92:
+	.skip 0x2
+.global $$22949
+$$22949:
+	.skip 0x4
+.global lbl_803D8D98
+lbl_803D8D98:
+	.skip 0x4
+.global lbl_803D8D9C
+lbl_803D8D9C:
+	.skip 0x4
+.global $$23165
+$$23165:
+	.skip 0x4
+.global lbl_803D8DA4
+lbl_803D8DA4:
+	.skip 0x4
+.global lbl_803D8DA8
+lbl_803D8DA8:
+	.skip 0x4
+.global $$24029
+$$24029:
+	.skip 0x4
+.global lbl_803D8DB0
+lbl_803D8DB0:
+	.skip 0x4
+.global lbl_803D8DB4
+lbl_803D8DB4:
+	.skip 0x4
+.global $$24045
+$$24045:
+	.skip 0x4
+.global lbl_803D8DBC
+lbl_803D8DBC:
+	.skip 0x4
+.global lbl_803D8DC0
+lbl_803D8DC0:
+	.skip 0x4
+.global $$24143
+$$24143:
+	.skip 0x4
+.global lbl_803D8DC8
+lbl_803D8DC8:
+	.skip 0x4
+.global lbl_803D8DCC
+lbl_803D8DCC:
+	.skip 0x4
+.global $$24830
+$$24830:
+	.skip 0x4
+.global lbl_803D8DD4
+lbl_803D8DD4:
+	.skip 0x4
+.global lbl_803D8DD8
+lbl_803D8DD8:
+	.skip 0x4
+.global $$24831
+$$24831:
+	.skip 0x4
+.global lbl_803D8DE0
+lbl_803D8DE0:
+	.skip 0x4
+.global lbl_803D8DE4
+lbl_803D8DE4:
+	.skip 0x4
+.global $$25204
+$$25204:
+	.skip 0x4
+.global lbl_803D8DEC
+lbl_803D8DEC:
+	.skip 0x4
+.global lbl_803D8DF0
+lbl_803D8DF0:
+	.skip 0x4
+.global $$25493
+$$25493:
+	.skip 0x4
+.global lbl_803D8DF8
+lbl_803D8DF8:
+	.skip 0x4
+.global lbl_803D8DFC
+lbl_803D8DFC:
+	.skip 0x4
+.global $$25507
+$$25507:
+	.skip 0x4
+.global lbl_803D8E04
+lbl_803D8E04:
+	.skip 0x4
+.global lbl_803D8E08
+lbl_803D8E08:
+	.skip 0x4
+.global $$26155
+$$26155:
+	.skip 0x4
+.global lbl_803D8E10
+lbl_803D8E10:
+	.skip 0x4
+.global lbl_803D8E14
+lbl_803D8E14:
+	.skip 0x4
+.global $$26156
+$$26156:
+	.skip 0x4
+.global lbl_803D8E1C
+lbl_803D8E1C:
+	.skip 0x4
+.global lbl_803D8E20
+lbl_803D8E20:
+	.skip 0x4
+.global $$26657
+$$26657:
+	.skip 0x4
+.global lbl_803D8E28
+lbl_803D8E28:
+	.skip 0x4
+.global lbl_803D8E2C
+lbl_803D8E2C:
+	.skip 0x4
+.global $$26754
+$$26754:
+	.skip 0x4
+.global lbl_803D8E34
+lbl_803D8E34:
+	.skip 0x4
+.global lbl_803D8E38
+lbl_803D8E38:
+	.skip 0x4
+.global $$26806
+$$26806:
+	.skip 0x4
+.global lbl_803D8E40
+lbl_803D8E40:
+	.skip 0x4
+.global lbl_803D8E44
+lbl_803D8E44:
+	.skip 0x4
+.global $$26807
+$$26807:
+	.skip 0x4
+.global lbl_803D8E4C
+lbl_803D8E4C:
+	.skip 0x4
+.global lbl_803D8E50
+lbl_803D8E50:
+	.skip 0x4
+.global $$27210
+$$27210:
+	.skip 0x4
+.global lbl_803D8E58
+lbl_803D8E58:
+	.skip 0x4
+.global lbl_803D8E5C
+lbl_803D8E5C:
+	.skip 0x4
+
 .section .text
 
 .global shuffle_list__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2FPUii

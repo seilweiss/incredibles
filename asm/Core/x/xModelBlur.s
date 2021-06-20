@@ -24,6 +24,36 @@ FBSaveMem:
 textureMem:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21300_3
+$$21300_3:
+	.skip 0x4
+.global $$21385_3
+$$21385_3:
+	.skip 0x4
+.global lbl_803D93E0
+lbl_803D93E0:
+	.skip 0x4
+.global lbl_803D93E4
+lbl_803D93E4:
+	.skip 0x4
+.global lbl_803D93E8
+lbl_803D93E8:
+	.skip 0x4
+.global $$21400_2
+$$21400_2:
+	.skip 0x4
+.global lbl_803D93F0
+lbl_803D93F0:
+	.skip 0x4
+.global lbl_803D93F4
+lbl_803D93F4:
+	.skip 0x4
+.global lbl_803D93F8
+lbl_803D93F8:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2xModelBlur_cpp$$25tweakFv

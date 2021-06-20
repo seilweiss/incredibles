@@ -66,6 +66,24 @@ percentageDone:
 init$1868:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21194
+$$21194:
+	.skip 0x4
+.global $$21549_0
+$$21549_0:
+	.skip 0x4
+.global $$21773_1
+$$21773_1:
+	.skip 0x4
+.global $$21778_0
+$$21778_0:
+	.skip 0x4
+.global $$21864_2
+$$21864_2:
+	.skip 0x8
+
 .section .text
 
 .global zMainSetPAL__Fv

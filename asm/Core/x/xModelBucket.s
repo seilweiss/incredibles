@@ -48,6 +48,21 @@ sBucketOpaqueRenderStart:
 $$21274:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$2954_7
+$$2954_7:
+	.skip 0x4
+.global lbl_803D8744
+lbl_803D8744:
+	.skip 0x4
+.global $$2961_5
+$$2961_5:
+	.skip 0x4
+.global lbl_803D874C
+lbl_803D874C:
+	.skip 0x4
+
 .section .text
 
 .global compare_opaque_buckets__26$$2unnamed$$2xModelBucket_cpp$$2FPCvPCv

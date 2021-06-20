@@ -12,6 +12,21 @@ __vt__8zUIModel:
 $$2stringBase0_100:
 	.incbin "baserom.dol", 0x2E2B40, 0x8
 
+.section .sbss2
+
+.global $$21048_0
+$$21048_0:
+	.skip 0x4
+.global lbl_803D90FC
+lbl_803D90FC:
+	.skip 0x4
+.global lbl_803D9100
+lbl_803D9100:
+	.skip 0x4
+.global lbl_803D9104
+lbl_803D9104:
+	.skip 0x4
+
 .section .text
 
 .global DoInit__8zUIModelFv

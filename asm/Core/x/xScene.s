@@ -33,6 +33,18 @@ sNearestCollType:
 sSphereIsx:
 	.skip 0x20
 
+.section .sbss2
+
+.global $$21597_0
+$$21597_0:
+	.skip 0x4
+.global lbl_803D8884
+lbl_803D8884:
+	.skip 0x4
+.global lbl_803D8888
+lbl_803D8888:
+	.skip 0x8
+
 .section .text
 
 .global xSceneInit__FP6xSceneUsUsUsUs

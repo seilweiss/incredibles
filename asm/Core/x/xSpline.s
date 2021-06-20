@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sbss2
+
+.global $$2911_0
+$$2911_0:
+	.skip 0x4
+.global lbl_803D88F4
+lbl_803D88F4:
+	.skip 0x4
+.global lbl_803D88F8
+lbl_803D88F8:
+	.skip 0x4
+.global lbl_803D88FC
+lbl_803D88FC:
+	.skip 0x4
+
 .section .text
 
 .global Tridiag_Solve__FPfPfPfP5xVec3P5xVec3i

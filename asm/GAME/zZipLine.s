@@ -1,5 +1,26 @@
 .include "macros.inc"
 
+.section .sbss2
+
+.global $$2991_6
+$$2991_6:
+	.skip 0x4
+.global lbl_803D89F4
+lbl_803D89F4:
+	.skip 0x4
+.global lbl_803D89F8
+lbl_803D89F8:
+	.skip 0x4
+.global $$21001_3
+$$21001_3:
+	.skip 0x4
+.global lbl_803D8A00
+lbl_803D8A00:
+	.skip 0x4
+.global lbl_803D8A04
+lbl_803D8A04:
+	.skip 0x4
+
 .section .text
 
 .global zZipLineInit__FPvPv

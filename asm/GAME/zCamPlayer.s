@@ -1,5 +1,152 @@
 .include "macros.inc"
 
+.section .sbss2
+
+.global $$21113_4
+$$21113_4:
+	.skip 0x4
+.global lbl_803D8A24
+lbl_803D8A24:
+	.skip 0x4
+.global lbl_803D8A28
+lbl_803D8A28:
+	.skip 0x4
+.global $$21146_3
+$$21146_3:
+	.skip 0x4
+.global lbl_803D8A30
+lbl_803D8A30:
+	.skip 0x4
+.global lbl_803D8A34
+lbl_803D8A34:
+	.skip 0x4
+.global $$21173_1
+$$21173_1:
+	.skip 0x4
+.global lbl_803D8A3C
+lbl_803D8A3C:
+	.skip 0x4
+.global lbl_803D8A40
+lbl_803D8A40:
+	.skip 0x4
+.global $$21306_2
+$$21306_2:
+	.skip 0x4
+.global lbl_803D8A48
+lbl_803D8A48:
+	.skip 0x4
+.global lbl_803D8A4C
+lbl_803D8A4C:
+	.skip 0x4
+.global $$21309_4
+$$21309_4:
+	.skip 0x4
+.global lbl_803D8A54
+lbl_803D8A54:
+	.skip 0x4
+.global lbl_803D8A58
+lbl_803D8A58:
+	.skip 0x4
+.global $$21351_3
+$$21351_3:
+	.skip 0x4
+.global lbl_803D8A60
+lbl_803D8A60:
+	.skip 0x4
+.global lbl_803D8A64
+lbl_803D8A64:
+	.skip 0x4
+.global $$21453_1
+$$21453_1:
+	.skip 0x4
+.global lbl_803D8A6C
+lbl_803D8A6C:
+	.skip 0x4
+.global lbl_803D8A70
+lbl_803D8A70:
+	.skip 0x4
+.global $$21567_0
+$$21567_0:
+	.skip 0x4
+.global lbl_803D8A78
+lbl_803D8A78:
+	.skip 0x4
+.global lbl_803D8A7C
+lbl_803D8A7C:
+	.skip 0x4
+.global $$21617_2
+$$21617_2:
+	.skip 0x4
+.global lbl_803D8A84
+lbl_803D8A84:
+	.skip 0x4
+.global lbl_803D8A88
+lbl_803D8A88:
+	.skip 0x4
+.global $$21642_1
+$$21642_1:
+	.skip 0x4
+.global lbl_803D8A90
+lbl_803D8A90:
+	.skip 0x4
+.global lbl_803D8A94
+lbl_803D8A94:
+	.skip 0x4
+.global $$21681_1
+$$21681_1:
+	.skip 0x4
+.global lbl_803D8A9C
+lbl_803D8A9C:
+	.skip 0x4
+.global lbl_803D8AA0
+lbl_803D8AA0:
+	.skip 0x4
+.global $$21682_3
+$$21682_3:
+	.skip 0x4
+.global lbl_803D8AA8
+lbl_803D8AA8:
+	.skip 0x4
+.global lbl_803D8AAC
+lbl_803D8AAC:
+	.skip 0x4
+.global $$21738_3
+$$21738_3:
+	.skip 0x4
+.global lbl_803D8AB4
+lbl_803D8AB4:
+	.skip 0x4
+.global lbl_803D8AB8
+lbl_803D8AB8:
+	.skip 0x4
+.global $$21751_0
+$$21751_0:
+	.skip 0x4
+.global lbl_803D8AC0
+lbl_803D8AC0:
+	.skip 0x4
+.global lbl_803D8AC4
+lbl_803D8AC4:
+	.skip 0x4
+.global $$21763
+$$21763:
+	.skip 0x4
+.global lbl_803D8ACC
+lbl_803D8ACC:
+	.skip 0x4
+.global lbl_803D8AD0
+lbl_803D8AD0:
+	.skip 0x4
+.global $$21797_1
+$$21797_1:
+	.skip 0x4
+.global lbl_803D8AD8
+lbl_803D8AD8:
+	.skip 0x4
+.global lbl_803D8ADC
+lbl_803D8ADC:
+	.skip 0x4
+
 .section .text
 
 .global bound_sphere_xz__24$$2unnamed$$2zCamPlayer_cpp$$2FRfRfRfRfffffff

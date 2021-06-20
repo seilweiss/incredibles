@@ -1,5 +1,26 @@
 .include "macros.inc"
 
+.section .sbss2
+
+.global $$21116_2
+$$21116_2:
+	.skip 0x4
+.global lbl_803D891C
+lbl_803D891C:
+	.skip 0x4
+.global lbl_803D8920
+lbl_803D8920:
+	.skip 0x4
+.global $$21117_0
+$$21117_0:
+	.skip 0x4
+.global lbl_803D8928
+lbl_803D8928:
+	.skip 0x4
+.global lbl_803D892C
+lbl_803D892C:
+	.skip 0x4
+
 .section .text
 
 .global iAnimEvalSKB__FP14iAnimSKBHeaderfUiP5xVec3P5xQuat

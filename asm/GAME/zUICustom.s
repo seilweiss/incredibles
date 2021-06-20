@@ -63,6 +63,21 @@ stat_strings_count__16zUICustomStatBox:
 saved__16zUICustomStatBox:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21213_2
+$$21213_2:
+	.skip 0x4
+.global lbl_803D9384
+lbl_803D9384:
+	.skip 0x4
+.global lbl_803D9388
+lbl_803D9388:
+	.skip 0x4
+.global lbl_803D938C
+lbl_803D938C:
+	.skip 0x4
+
 .section .text
 
 .global Init__9zUICustomFv

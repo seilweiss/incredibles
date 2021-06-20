@@ -36,6 +36,21 @@ sAmbientBlue:
 sSpinMaxLag:
 	.skip 0x8
 
+.section .sbss2
+
+.global lbl_803D8B74
+lbl_803D8B74:
+	.skip 0x4
+.global $$22177_0
+$$22177_0:
+	.skip 0x14
+.global lbl_803D8B8C
+lbl_803D8B8C:
+	.skip 0x4
+.global $$22806
+$$22806:
+	.skip 0x18
+
 .section .text
 
 .global ParseIni__17zElastiGirlPlayerFv

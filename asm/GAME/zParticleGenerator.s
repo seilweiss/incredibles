@@ -30,6 +30,18 @@ max_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2:
 generators_used__32$$2unnamed$$2zParticleGenerator_cpp$$2:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21175_4
+$$21175_4:
+	.skip 0x4
+.global lbl_803D93B4
+lbl_803D93B4:
+	.skip 0x4
+.global lbl_803D93B8
+lbl_803D93B8:
+	.skip 0x8
+
 .section .text
 
 .global create_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv

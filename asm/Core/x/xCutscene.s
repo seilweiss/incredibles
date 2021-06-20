@@ -21,6 +21,30 @@ sCutsceneModelHackBuf:
 cutscene_cam__23$$2unnamed$$2xCutscene_cpp$$2:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21342_2
+$$21342_2:
+	.skip 0x18
+.global $$21392_5
+$$21392_5:
+	.skip 0x4
+.global lbl_803D862C
+lbl_803D862C:
+	.skip 0x4
+.global lbl_803D8630
+lbl_803D8630:
+	.skip 0x4
+.global lbl_803D8634
+lbl_803D8634:
+	.skip 0x4
+.global $$21393_4
+$$21393_4:
+	.skip 0x4
+.global lbl_803D863C
+lbl_803D863C:
+	.skip 0x4
+
 .section .text
 
 .global xCutscene_InitBegin__Fv

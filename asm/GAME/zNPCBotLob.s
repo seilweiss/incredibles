@@ -36,6 +36,18 @@ system$localstatic3$get_system__Q21z26lightweight$$0Q21z5shell$$415$$1Fv:
 init$localstatic4$get_system__Q21z26lightweight$$0Q21z5shell$$415$$1Fv:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21363_2
+$$21363_2:
+	.skip 0x4
+.global lbl_803D91E4
+lbl_803D91E4:
+	.skip 0x4
+.global lbl_803D91E8
+lbl_803D91E8:
+	.skip 0x8
+
 .section .text
 
 .global runnable__Q24zNPC7bot_lobFf

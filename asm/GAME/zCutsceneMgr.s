@@ -30,6 +30,12 @@ doCineFX$1227:
 init$1228:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21270_0
+$$21270_0:
+	.skip 0x8
+
 .section .text
 
 .global zCutsceneMgrGetHackTableSize__Fv

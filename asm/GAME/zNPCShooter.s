@@ -39,6 +39,18 @@ $$2stringBase0_84:
 muzzle_flash_system__25$$2unnamed$$2zNPCShooter_cpp$$2:
 	.skip 0x10
 
+.section .sbss2
+
+.global $$21725_1
+$$21725_1:
+	.skip 0x4
+.global lbl_803D9004
+lbl_803D9004:
+	.skip 0x4
+.global lbl_803D9008
+lbl_803D9008:
+	.skip 0x8
+
 .section .text
 
 .global MuzzleFlash_LevelInit__25$$2unnamed$$2zNPCShooter_cpp$$2Fv

@@ -36,6 +36,18 @@ k$2022:
 xent_entent:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21882
+$$21882:
+	.skip 0x4
+.global lbl_803D8644
+lbl_803D8644:
+	.skip 0x4
+.global lbl_803D8648
+lbl_803D8648:
+	.skip 0x8
+
 .section .text
 
 .global reset__Q218$$2unnamed$$2xEnt_cpp$$29anim_collFR4xEnt

@@ -348,6 +348,15 @@ FSOUND_Output_GC_UpdateDVDStatusCallback:
 FSOUND_Output_GC_TempBuf:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$2663_1
+$$2663_1:
+	.skip 0x4
+.global lbl_803D9514
+lbl_803D9514:
+	.skip 0x4
+
 .section .text
 
 .global FMUSIC_GetOpenState

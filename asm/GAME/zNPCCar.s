@@ -36,6 +36,27 @@ curve__Q24zNPC7CarStop:
 smoke_config__4zNPC:
 	.skip 0x3C
 
+.section .sbss2
+
+.global $$21495_3
+$$21495_3:
+	.skip 0x4
+.global lbl_803D8E64
+lbl_803D8E64:
+	.skip 0x4
+.global $$21738_4
+$$21738_4:
+	.skip 0x4
+.global lbl_803D8E6C
+lbl_803D8E6C:
+	.skip 0x4
+.global lbl_803D8E70
+lbl_803D8E70:
+	.skip 0x4
+.global lbl_803D8E74
+lbl_803D8E74:
+	.skip 0x4
+
 .section .text
 
 .global __cl__Q24zNPC20car_collide_callbackFR4xEnt

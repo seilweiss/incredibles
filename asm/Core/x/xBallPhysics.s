@@ -1,5 +1,23 @@
 .include "macros.inc"
 
+.section .sbss2
+
+.global $$2455_1
+$$2455_1:
+	.skip 0x4
+.global lbl_803D8484
+lbl_803D8484:
+	.skip 0x4
+.global lbl_803D8488
+lbl_803D8488:
+	.skip 0x4
+.global $$21156_3
+$$21156_3:
+	.skip 0x4
+.global lbl_803D8490
+lbl_803D8490:
+	.skip 0x4
+
 .section .text
 
 .global reset_physics__12xBallPhysicsFv

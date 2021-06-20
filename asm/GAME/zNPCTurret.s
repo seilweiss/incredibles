@@ -51,6 +51,18 @@ glow_sound_group__Q24zNPC12turret_alert:
 config__Q24zNPC10smoke_bone:
 	.skip 0x3C
 
+.section .sbss2
+
+.global $$21356_5
+$$21356_5:
+	.skip 0x4
+.global lbl_803D904C
+lbl_803D904C:
+	.skip 0x4
+.global lbl_803D9050
+lbl_803D9050:
+	.skip 0x8
+
 .section .text
 
 .global in_range__Q24zNPC7up_downFP15xAnimTransitionP11xAnimSingle

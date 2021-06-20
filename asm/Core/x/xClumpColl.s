@@ -6,6 +6,81 @@
 xClumpColl_FilterFlagsAllMask:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$2750
+$$2750:
+	.skip 0x4
+.global lbl_803D8534
+lbl_803D8534:
+	.skip 0x4
+.global lbl_803D8538
+lbl_803D8538:
+	.skip 0x4
+.global $$2775
+$$2775:
+	.skip 0x4
+.global lbl_803D8540
+lbl_803D8540:
+	.skip 0x4
+.global lbl_803D8544
+lbl_803D8544:
+	.skip 0x4
+.global $$2796
+$$2796:
+	.skip 0x4
+.global lbl_803D854C
+lbl_803D854C:
+	.skip 0x4
+.global lbl_803D8550
+lbl_803D8550:
+	.skip 0x4
+.global $$2797_0
+$$2797_0:
+	.skip 0x4
+.global lbl_803D8558
+lbl_803D8558:
+	.skip 0x4
+.global lbl_803D855C
+lbl_803D855C:
+	.skip 0x4
+.global $$21026_5
+$$21026_5:
+	.skip 0x4
+.global lbl_803D8564
+lbl_803D8564:
+	.skip 0x4
+.global lbl_803D8568
+lbl_803D8568:
+	.skip 0x4
+.global $$21051_4
+$$21051_4:
+	.skip 0x4
+.global lbl_803D8570
+lbl_803D8570:
+	.skip 0x4
+.global lbl_803D8574
+lbl_803D8574:
+	.skip 0x4
+.global $$21072_1
+$$21072_1:
+	.skip 0x4
+.global lbl_803D857C
+lbl_803D857C:
+	.skip 0x4
+.global lbl_803D8580
+lbl_803D8580:
+	.skip 0x4
+.global $$21073_0
+$$21073_0:
+	.skip 0x4
+.global lbl_803D8588
+lbl_803D8588:
+	.skip 0x4
+.global lbl_803D858C
+lbl_803D858C:
+	.skip 0x4
+
 .section .text
 
 .global xClumpColl_SetFilterFlags__FUcUcUc

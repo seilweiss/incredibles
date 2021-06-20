@@ -15,6 +15,18 @@ g_tbl_clear:
 g_serinit:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21207_2
+$$21207_2:
+	.skip 0x4
+.global lbl_803D8894
+lbl_803D8894:
+	.skip 0x4
+.global lbl_803D8898
+lbl_803D8898:
+	.skip 0x4
+
 .section .text
 
 .global xSerialStartup__FiP21st_SERIAL_PERCID_SIZE

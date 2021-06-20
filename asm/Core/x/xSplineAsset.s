@@ -9,6 +9,27 @@ total_it$1024:
 init$1025:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$2892_1
+$$2892_1:
+	.skip 0x4
+.global lbl_803D8904
+lbl_803D8904:
+	.skip 0x4
+.global lbl_803D8908
+lbl_803D8908:
+	.skip 0x4
+.global $$2916_1
+$$2916_1:
+	.skip 0x4
+.global lbl_803D8910
+lbl_803D8910:
+	.skip 0x4
+.global lbl_803D8914
+lbl_803D8914:
+	.skip 0x4
+
 .section .text
 
 .global find_span__Q21x5NURBSFf

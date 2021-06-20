@@ -27,6 +27,57 @@ fNearZ$936:
 init$937:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21250_3
+$$21250_3:
+	.skip 0x4
+.global lbl_803D92BC
+lbl_803D92BC:
+	.skip 0x4
+.global $$21251_2
+$$21251_2:
+	.skip 0x4
+.global lbl_803D92C4
+lbl_803D92C4:
+	.skip 0x4
+.global $$21252_3
+$$21252_3:
+	.skip 0x4
+.global lbl_803D92CC
+lbl_803D92CC:
+	.skip 0x4
+.global $$21253_3
+$$21253_3:
+	.skip 0x4
+.global lbl_803D92D4
+lbl_803D92D4:
+	.skip 0x4
+.global $$21297_4
+$$21297_4:
+	.skip 0x4
+.global lbl_803D92DC
+lbl_803D92DC:
+	.skip 0x4
+.global $$21298_4
+$$21298_4:
+	.skip 0x4
+.global lbl_803D92E4
+lbl_803D92E4:
+	.skip 0x4
+.global $$21299_2
+$$21299_2:
+	.skip 0x4
+.global lbl_803D92EC
+lbl_803D92EC:
+	.skip 0x4
+.global $$21300_2
+$$21300_2:
+	.skip 0x4
+.global lbl_803D92F4
+lbl_803D92F4:
+	.skip 0x4
+
 .section .text
 
 .global load__Q24xhud12image_widgetFR5xBaseR9xDynAssetUl

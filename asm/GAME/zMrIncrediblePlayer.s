@@ -48,6 +48,60 @@ no_down$2266:
 init$2267:
 	.skip 0x2
 
+.section .sbss2
+
+.global $$22567
+$$22567:
+	.skip 0x4
+.global lbl_803D8D0C
+lbl_803D8D0C:
+	.skip 0x4
+.global lbl_803D8D10
+lbl_803D8D10:
+	.skip 0x4
+.global $$22568
+$$22568:
+	.skip 0x4
+.global lbl_803D8D18
+lbl_803D8D18:
+	.skip 0x4
+.global lbl_803D8D1C
+lbl_803D8D1C:
+	.skip 0x4
+.global $$23835
+$$23835:
+	.skip 0x4
+.global lbl_803D8D24
+lbl_803D8D24:
+	.skip 0x4
+.global lbl_803D8D28
+lbl_803D8D28:
+	.skip 0x4
+.global lbl_803D8D2C
+lbl_803D8D2C:
+	.skip 0x4
+.global $$24323
+$$24323:
+	.skip 0x4
+.global lbl_803D8D34
+lbl_803D8D34:
+	.skip 0x4
+.global lbl_803D8D38
+lbl_803D8D38:
+	.skip 0x4
+.global lbl_803D8D3C
+lbl_803D8D3C:
+	.skip 0x4
+.global $$24971
+$$24971:
+	.skip 0x14
+.global lbl_803D8D54
+lbl_803D8D54:
+	.skip 0x4
+.global $$25116
+$$25116:
+	.skip 0x18
+
 .section .text
 
 .global StillCarried__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2FP4xEnt

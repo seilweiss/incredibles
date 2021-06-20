@@ -21,6 +21,36 @@ $$21805:
 $$21807:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21240_1
+$$21240_1:
+	.skip 0x4
+.global lbl_803D94B4
+lbl_803D94B4:
+	.skip 0x4
+.global lbl_803D94B8
+lbl_803D94B8:
+	.skip 0x4
+.global $$21246_0
+$$21246_0:
+	.skip 0x4
+.global lbl_803D94C0
+lbl_803D94C0:
+	.skip 0x4
+.global lbl_803D94C4
+lbl_803D94C4:
+	.skip 0x4
+.global $$21672_0
+$$21672_0:
+	.skip 0x4
+.global lbl_803D94CC
+lbl_803D94CC:
+	.skip 0x4
+.global lbl_803D94D0
+lbl_803D94D0:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q225$$2unnamed$$2zFrozoneIce_cpp$$25tweakFv

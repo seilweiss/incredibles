@@ -156,6 +156,33 @@ portalAsset$3002:
 pause_type:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21613_2
+$$21613_2:
+	.skip 0x4
+.global lbl_803D9394
+lbl_803D9394:
+	.skip 0x4
+.global lbl_803D9398
+lbl_803D9398:
+	.skip 0x4
+.global lbl_803D939C
+lbl_803D939C:
+	.skip 0x4
+.global $$22644_0
+$$22644_0:
+	.skip 0x4
+.global lbl_803D93A4
+lbl_803D93A4:
+	.skip 0x4
+.global lbl_803D93A8
+lbl_803D93A8:
+	.skip 0x4
+.global lbl_803D93AC
+lbl_803D93AC:
+	.skip 0x4
+
 .section .text
 
 .global reset__5statsFv

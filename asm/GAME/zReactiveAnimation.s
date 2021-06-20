@@ -30,6 +30,21 @@ activities_used__32$$2unnamed$$2zReactiveAnimation_cpp$$2:
 fire_props__32$$2unnamed$$2zReactiveAnimation_cpp$$2:
 	.skip 0x10
 
+.section .sbss2
+
+.global $$21294_2
+$$21294_2:
+	.skip 0x4
+.global lbl_803D92FC
+lbl_803D92FC:
+	.skip 0x4
+.global lbl_803D9300
+lbl_803D9300:
+	.skip 0x4
+.global lbl_803D9304
+lbl_803D9304:
+	.skip 0x4
+
 .section .text
 
 .global AlwaysConditional__32$$2unnamed$$2zReactiveAnimation_cpp$$2FP15xAnimTransitionP11xAnimSinglePv

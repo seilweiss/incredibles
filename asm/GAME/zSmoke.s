@@ -18,6 +18,18 @@ wind_delta__20$$2unnamed$$2zSmoke_cpp$$2:
 batch_group__20$$2unnamed$$2zSmoke_cpp$$2:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21101_3
+$$21101_3:
+	.skip 0x4
+.global lbl_803D919C
+lbl_803D919C:
+	.skip 0x4
+.global lbl_803D91A0
+lbl_803D91A0:
+	.skip 0x8
+
 .section .text
 
 .global update_particles__20$$2unnamed$$2zSmoke_cpp$$2FPUciR10ptank_poolfPv

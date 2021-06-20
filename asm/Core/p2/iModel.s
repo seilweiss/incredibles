@@ -60,6 +60,27 @@ sMaterialFlags:
 sLastMaterial:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21004_4
+$$21004_4:
+	.skip 0x4
+.global lbl_803D8974
+lbl_803D8974:
+	.skip 0x4
+.global lbl_803D8978
+lbl_803D8978:
+	.skip 0x4
+.global lbl_803D897C
+lbl_803D897C:
+	.skip 0x4
+.global $$21344_1
+$$21344_1:
+	.skip 0x4
+.global lbl_803D8984
+lbl_803D8984:
+	.skip 0x4
+
 .section .text
 
 .global GetChildFrameHierarchy__FP7RwFramePv

@@ -6,6 +6,18 @@
 $$2stringBase0_1:
 	.incbin "baserom.dol", 0x2CE8A8, 0x18
 
+.section .sbss2
+
+.global $$2727_0
+$$2727_0:
+	.skip 0x4
+.global lbl_803D84CC
+lbl_803D84CC:
+	.skip 0x4
+.global lbl_803D84D0
+lbl_803D84D0:
+	.skip 0x8
+
 .section .text
 
 .global add_tweaks__Q218$$2unnamed$$2xCam_cpp$$25tweakFPCc

@@ -48,6 +48,36 @@ smoke_settings__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2:
 chopper__Q24zNPC17boss_bomb_chopper:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21338_3
+$$21338_3:
+	.skip 0x4
+.global lbl_803D9424
+lbl_803D9424:
+	.skip 0x4
+.global lbl_803D9428
+lbl_803D9428:
+	.skip 0x4
+.global $$21434_2
+$$21434_2:
+	.skip 0x4
+.global lbl_803D9430
+lbl_803D9430:
+	.skip 0x4
+.global lbl_803D9434
+lbl_803D9434:
+	.skip 0x4
+.global $$21608_4
+$$21608_4:
+	.skip 0x4
+.global lbl_803D943C
+lbl_803D943C:
+	.skip 0x4
+.global lbl_803D9440
+lbl_803D9440:
+	.skip 0x4
+
 .section .text
 
 .global get_default_light_kit__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2Fv

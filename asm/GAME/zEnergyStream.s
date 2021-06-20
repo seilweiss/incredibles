@@ -18,6 +18,18 @@ $$2stringBase0_140:
 cfg$1011:
 	.skip 0x20
 
+.section .sbss2
+
+.global $$21149_4
+$$21149_4:
+	.skip 0x4
+.global lbl_803D9404
+lbl_803D9404:
+	.skip 0x4
+.global lbl_803D9408
+lbl_803D9408:
+	.skip 0x8
+
 .section .text
 
 .global initRibbon__27$$2unnamed$$2zEnergyStream_cpp$$2FP9xFXRibbon

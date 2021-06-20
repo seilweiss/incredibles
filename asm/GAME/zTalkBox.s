@@ -63,6 +63,27 @@ init$2318:
 stop_state$2317:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21486
+$$21486:
+	.skip 0x4
+.global lbl_803D90E4
+lbl_803D90E4:
+	.skip 0x4
+.global lbl_803D90E8
+lbl_803D90E8:
+	.skip 0x4
+.global lbl_803D90EC
+lbl_803D90EC:
+	.skip 0x4
+.global $$21857
+$$21857:
+	.skip 0x4
+.global lbl_803D90F4
+lbl_803D90F4:
+	.skip 0x4
+
 .section .text
 
 .global speak_stop__22$$2unnamed$$2zTalkBox_cpp$$2Fv

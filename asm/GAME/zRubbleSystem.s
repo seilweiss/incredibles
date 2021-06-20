@@ -6,6 +6,60 @@
 $$2stringBase0_148:
 	.incbin "baserom.dol", 0x2E6F00, 0x10
 
+.section .sbss2
+
+.global lbl_803D9444
+lbl_803D9444:
+	.skip 0x4
+.global $$21435_3
+$$21435_3:
+	.skip 0x18
+.global $$21641_0
+$$21641_0:
+	.skip 0x4
+.global lbl_803D9464
+lbl_803D9464:
+	.skip 0x4
+.global lbl_803D9468
+lbl_803D9468:
+	.skip 0x4
+.global $$22090_0
+$$22090_0:
+	.skip 0x4
+.global lbl_803D9470
+lbl_803D9470:
+	.skip 0x4
+.global lbl_803D9474
+lbl_803D9474:
+	.skip 0x4
+.global $$22091_0
+$$22091_0:
+	.skip 0x4
+.global lbl_803D947C
+lbl_803D947C:
+	.skip 0x4
+.global lbl_803D9480
+lbl_803D9480:
+	.skip 0x4
+.global $$22092
+$$22092:
+	.skip 0x4
+.global lbl_803D9488
+lbl_803D9488:
+	.skip 0x4
+.global lbl_803D948C
+lbl_803D948C:
+	.skip 0x4
+.global $$22503
+$$22503:
+	.skip 0x4
+.global lbl_803D9494
+lbl_803D9494:
+	.skip 0x4
+.global lbl_803D9498
+lbl_803D9498:
+	.skip 0x8
+
 .section .text
 
 .global load_model__27$$2unnamed$$2zRubbleSystem_cpp$$2FUif

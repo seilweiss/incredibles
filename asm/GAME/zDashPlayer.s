@@ -117,6 +117,39 @@ init$localstatic4$get_system__Q21z27lightweight$$0Q21z6rocket$$420$$1Fv:
 WALL_HIT_FRICTION_ADD__5zDash:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21414_3
+$$21414_3:
+	.skip 0x4
+.global $$21735_2
+$$21735_2:
+	.skip 0x24
+.global $$22522
+$$22522:
+	.skip 0x4
+.global $$22614
+$$22614:
+	.skip 0x4
+.global lbl_803D8B50
+lbl_803D8B50:
+	.skip 0x4
+.global lbl_803D8B54
+lbl_803D8B54:
+	.skip 0x4
+.global $$23845
+$$23845:
+	.skip 0x4
+.global lbl_803D8B5C
+lbl_803D8B5C:
+	.skip 0x4
+.global $$23846
+$$23846:
+	.skip 0x4
+.global lbl_803D8B64
+lbl_803D8B64:
+	.skip 0x4
+
 .section .text
 
 .global Init__12zTimedSplashFR5xBaseR9xDynAssetUl

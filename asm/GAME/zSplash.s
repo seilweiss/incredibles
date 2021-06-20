@@ -72,6 +72,18 @@ $$21012:
 $$22013:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$22028
+$$22028:
+	.skip 0x4
+.global lbl_803D91AC
+lbl_803D91AC:
+	.skip 0x4
+.global lbl_803D91B0
+lbl_803D91B0:
+	.skip 0x8
+
 .section .text
 
 .global refresh_splash__21$$2unnamed$$2zSplash_cpp$$2FRQ221$$2unnamed$$2zSplash_cpp$$213splash_config

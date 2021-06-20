@@ -39,6 +39,12 @@ current_raster__24$$2unnamed$$2zLaserBeam_cpp$$2:
 additional_lasers__10zLaserBeam:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$22211_0
+$$22211_0:
+	.skip 0x8
+
 .section .text
 
 .global xDebugAddTweak__FPCcPCiiiPC14tweak_callbackPvUi

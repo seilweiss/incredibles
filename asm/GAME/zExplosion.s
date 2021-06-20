@@ -99,6 +99,24 @@ materials_used__24$$2unnamed$$2zExplosion_cpp$$2:
 presi_size__24$$2unnamed$$2zExplosion_cpp$$2:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21670_0
+$$21670_0:
+	.skip 0x4
+.global lbl_803D8BCC
+lbl_803D8BCC:
+	.skip 0x4
+.global $$22417
+$$22417:
+	.skip 0x4
+.global lbl_803D8BD4
+lbl_803D8BD4:
+	.skip 0x4
+.global lbl_803D8BD8
+lbl_803D8BD8:
+	.skip 0x8
+
 .section .text
 
 .global find_decal_type__24$$2unnamed$$2zExplosion_cpp$$2FUi

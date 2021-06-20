@@ -96,6 +96,63 @@ init$3726:
 init$3747:
 	.skip 0x3
 
+.section .sbss2
+
+.global $$2620_0
+$$2620_0:
+	.skip 0x4
+.global lbl_803D867C
+lbl_803D867C:
+	.skip 0x4
+.global $$21328_4
+$$21328_4:
+	.skip 0x4
+.global lbl_803D8684
+lbl_803D8684:
+	.skip 0x4
+.global lbl_803D8688
+lbl_803D8688:
+	.skip 0x4
+.global lbl_803D868C
+lbl_803D868C:
+	.skip 0x4
+.global $$21467_6
+$$21467_6:
+	.skip 0x4
+.global lbl_803D8694
+lbl_803D8694:
+	.skip 0x4
+.global lbl_803D8698
+lbl_803D8698:
+	.skip 0x4
+.global lbl_803D869C
+lbl_803D869C:
+	.skip 0x4
+.global $$21608_2
+$$21608_2:
+	.skip 0x20
+.global $$23421
+$$23421:
+	.skip 0x4
+.global lbl_803D86C4
+lbl_803D86C4:
+	.skip 0x4
+.global $$23745
+$$23745:
+	.skip 0x4
+.global lbl_803D86CC
+lbl_803D86CC:
+	.skip 0x4
+.global lbl_803D86D0
+lbl_803D86D0:
+	.skip 0x4
+.global lbl_803D86D4
+lbl_803D86D4:
+	.skip 0x4
+.global $$23779
+$$23779:
+	.skip 0x8
+
 .section .text
 
 .global find_bounds__19$$2unnamed$$2xFont_cpp$$2FPC10xColor_tagRC13basic_rect$$0i$$1i

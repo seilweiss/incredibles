@@ -78,6 +78,27 @@ $$2stringBase0_108:
 curve$1513:
 	.skip 0x10
 
+.section .sbss2
+
+.global $$22345_1
+$$22345_1:
+	.skip 0x4
+.global lbl_803D91BC
+lbl_803D91BC:
+	.skip 0x4
+.global $$22349
+$$22349:
+	.skip 0x4
+.global lbl_803D91C4
+lbl_803D91C4:
+	.skip 0x4
+.global $$22412_0
+$$22412_0:
+	.skip 0x4
+.global lbl_803D91CC
+lbl_803D91CC:
+	.skip 0x4
+
 .section .text
 
 .global RobotDestroyCB__4zNPCFP4xEntPvb

@@ -33,6 +33,57 @@ cbisx_local:
 cbath:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$22338_0
+$$22338_0:
+	.skip 0x4
+.global lbl_803D85D4
+lbl_803D85D4:
+	.skip 0x4
+.global $$22339_0
+$$22339_0:
+	.skip 0x4
+.global lbl_803D85DC
+lbl_803D85DC:
+	.skip 0x4
+.global $$22370_0
+$$22370_0:
+	.skip 0x4
+.global lbl_803D85E4
+lbl_803D85E4:
+	.skip 0x4
+.global $$22371_1
+$$22371_1:
+	.skip 0x4
+.global lbl_803D85EC
+lbl_803D85EC:
+	.skip 0x4
+.global $$22423
+$$22423:
+	.skip 0x4
+.global lbl_803D85F4
+lbl_803D85F4:
+	.skip 0x4
+.global $$22424
+$$22424:
+	.skip 0x4
+.global lbl_803D85FC
+lbl_803D85FC:
+	.skip 0x4
+.global $$22468
+$$22468:
+	.skip 0x4
+.global lbl_803D8604
+lbl_803D8604:
+	.skip 0x4
+.global $$22469
+$$22469:
+	.skip 0x4
+.global lbl_803D860C
+lbl_803D860C:
+	.skip 0x4
+
 .section .text
 
 .global xSphereHitsSphere__FPC7xSpherePC7xSphereP7xCollis

@@ -63,6 +63,66 @@ wisp_system_id__19$$2unnamed$$2zFire_cpp$$2:
 spawn_explosion_type__19$$2unnamed$$2zFire_cpp$$2:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21333_10
+$$21333_10:
+	.skip 0x4
+.global lbl_803D8BE4
+lbl_803D8BE4:
+	.skip 0x4
+.global lbl_803D8BE8
+lbl_803D8BE8:
+	.skip 0x4
+.global lbl_803D8BEC
+lbl_803D8BEC:
+	.skip 0x4
+.global $$21734_2
+$$21734_2:
+	.skip 0x4
+.global lbl_803D8BF4
+lbl_803D8BF4:
+	.skip 0x4
+.global lbl_803D8BF8
+lbl_803D8BF8:
+	.skip 0x4
+.global $$21735_3
+$$21735_3:
+	.skip 0x4
+.global lbl_803D8C00
+lbl_803D8C00:
+	.skip 0x4
+.global lbl_803D8C04
+lbl_803D8C04:
+	.skip 0x4
+.global $$21742_0
+$$21742_0:
+	.skip 0x4
+.global lbl_803D8C0C
+lbl_803D8C0C:
+	.skip 0x4
+.global lbl_803D8C10
+lbl_803D8C10:
+	.skip 0x4
+.global $$21906_0
+$$21906_0:
+	.skip 0x4
+.global lbl_803D8C18
+lbl_803D8C18:
+	.skip 0x4
+.global lbl_803D8C1C
+lbl_803D8C1C:
+	.skip 0x4
+.global $$21924_0
+$$21924_0:
+	.skip 0x4
+.global lbl_803D8C24
+lbl_803D8C24:
+	.skip 0x4
+.global lbl_803D8C28
+lbl_803D8C28:
+	.skip 0x4
+
 .section .text
 
 .global add_tweaks__Q219$$2unnamed$$2zFire_cpp$$25tweakFPCc

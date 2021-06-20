@@ -388,5 +388,4 @@ SBSS_O_FILES :=
 SDATA2_O_FILES :=\
 	$(OBJ_DIR)/asm/sdata2.o
 
-SBSS2_O_FILES :=\
-	$(OBJ_DIR)/asm/sbss2.o
+SBSS2_O_FILES :=

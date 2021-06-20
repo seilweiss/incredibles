@@ -39,6 +39,45 @@ debug_apply_depen$2804:
 init$2805:
 	.skip 0x7
 
+.section .sbss2
+
+.global $$21770_3
+$$21770_3:
+	.skip 0x4
+.global lbl_803D906C
+lbl_803D906C:
+	.skip 0x4
+.global lbl_803D9070
+lbl_803D9070:
+	.skip 0x4
+.global $$22800
+$$22800:
+	.skip 0x4
+.global lbl_803D9078
+lbl_803D9078:
+	.skip 0x4
+.global lbl_803D907C
+lbl_803D907C:
+	.skip 0x4
+.global $$22928
+$$22928:
+	.skip 0x4
+.global lbl_803D9084
+lbl_803D9084:
+	.skip 0x4
+.global lbl_803D9088
+lbl_803D9088:
+	.skip 0x4
+.global $$23152
+$$23152:
+	.skip 0x4
+.global lbl_803D9090
+lbl_803D9090:
+	.skip 0x4
+.global lbl_803D9094
+lbl_803D9094:
+	.skip 0x4
+
 .section .text
 
 .global bound_update_wrapper__21$$2unnamed$$2zPlayer_cpp$$2FP4xEntP5xVec3

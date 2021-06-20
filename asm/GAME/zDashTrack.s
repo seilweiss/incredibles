@@ -45,6 +45,150 @@ _check_number$1518:
 init$1519:
 	.skip 0x8
 
+.section .sbss2
+
+.global $$21016_4
+$$21016_4:
+	.skip 0x4
+.global lbl_803D91F4
+lbl_803D91F4:
+	.skip 0x4
+.global $$21051_5
+$$21051_5:
+	.skip 0x4
+.global lbl_803D91FC
+lbl_803D91FC:
+	.skip 0x4
+.global $$21054_6
+$$21054_6:
+	.skip 0x4
+.global lbl_803D9204
+lbl_803D9204:
+	.skip 0x4
+.global $$21055_3
+$$21055_3:
+	.skip 0x4
+.global lbl_803D920C
+lbl_803D920C:
+	.skip 0x4
+.global $$21090_5
+$$21090_5:
+	.skip 0x4
+.global lbl_803D9214
+lbl_803D9214:
+	.skip 0x4
+.global $$21173_2
+$$21173_2:
+	.skip 0x4
+.global lbl_803D921C
+lbl_803D921C:
+	.skip 0x4
+.global lbl_803D9220
+lbl_803D9220:
+	.skip 0x4
+.global $$21241
+$$21241:
+	.skip 0x4
+.global lbl_803D9228
+lbl_803D9228:
+	.skip 0x4
+.global $$21242_0
+$$21242_0:
+	.skip 0x4
+.global lbl_803D9230
+lbl_803D9230:
+	.skip 0x4
+.global $$21243_0
+$$21243_0:
+	.skip 0x4
+.global lbl_803D9238
+lbl_803D9238:
+	.skip 0x4
+.global $$21253_2
+$$21253_2:
+	.skip 0x4
+.global lbl_803D9240
+lbl_803D9240:
+	.skip 0x4
+.global $$21254_2
+$$21254_2:
+	.skip 0x4
+.global lbl_803D9248
+lbl_803D9248:
+	.skip 0x4
+.global $$21331_5
+$$21331_5:
+	.skip 0x4
+.global lbl_803D9250
+lbl_803D9250:
+	.skip 0x4
+.global $$21433_0
+$$21433_0:
+	.skip 0x4
+.global lbl_803D9258
+lbl_803D9258:
+	.skip 0x4
+.global $$21434_1
+$$21434_1:
+	.skip 0x4
+.global lbl_803D9260
+lbl_803D9260:
+	.skip 0x4
+.global $$21442_1
+$$21442_1:
+	.skip 0x4
+.global lbl_803D9268
+lbl_803D9268:
+	.skip 0x4
+.global $$21443_3
+$$21443_3:
+	.skip 0x4
+.global lbl_803D9270
+lbl_803D9270:
+	.skip 0x4
+.global $$21460_1
+$$21460_1:
+	.skip 0x4
+.global lbl_803D9278
+lbl_803D9278:
+	.skip 0x4
+.global $$21529_2
+$$21529_2:
+	.skip 0x4
+.global lbl_803D9280
+lbl_803D9280:
+	.skip 0x4
+.global $$21530_1
+$$21530_1:
+	.skip 0x4
+.global lbl_803D9288
+lbl_803D9288:
+	.skip 0x4
+.global $$21531_3
+$$21531_3:
+	.skip 0x4
+.global lbl_803D9290
+lbl_803D9290:
+	.skip 0x4
+.global $$21553_4
+$$21553_4:
+	.skip 0x4
+.global lbl_803D9298
+lbl_803D9298:
+	.skip 0x4
+.global $$21554_2
+$$21554_2:
+	.skip 0x4
+.global lbl_803D92A0
+lbl_803D92A0:
+	.skip 0x4
+.global $$21555_1
+$$21555_1:
+	.skip 0x4
+.global lbl_803D92A8
+lbl_803D92A8:
+	.skip 0x8
+
 .section .text
 
 .global setup__Q25zDash12track_systemFv

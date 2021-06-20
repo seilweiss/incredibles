@@ -24,6 +24,18 @@ model_id$localstatic3$checkpoint_collision_hack__FP4zEnt:
 init$localstatic4$checkpoint_collision_hack__FP4zEnt:
 	.skip 0x4
 
+.section .sbss2
+
+.global $$21492_0
+$$21492_0:
+	.skip 0x4
+.global lbl_803D8BAC
+lbl_803D8BAC:
+	.skip 0x4
+.global lbl_803D8BB0
+lbl_803D8BB0:
+	.skip 0x8
+
 .section .text
 
 .global zEntInit__FP4zEntP9xEntAssetUi

@@ -75,6 +75,51 @@ FTCfgTank__22$$2unnamed$$2zNPCTank_cpp$$2:
 $$2stringBase0_85:
 	.incbin "baserom.dol", 0x2E0450, 0x500
 
+.section .sbss2
+
+.global $$21648_1
+$$21648_1:
+	.skip 0x4
+.global lbl_803D9014
+lbl_803D9014:
+	.skip 0x4
+.global lbl_803D9018
+lbl_803D9018:
+	.skip 0x4
+.global $$21872
+$$21872:
+	.skip 0x4
+.global lbl_803D9020
+lbl_803D9020:
+	.skip 0x4
+.global $$22002
+$$22002:
+	.skip 0x4
+.global lbl_803D9028
+lbl_803D9028:
+	.skip 0x4
+.global lbl_803D902C
+lbl_803D902C:
+	.skip 0x4
+.global $$22033_1
+$$22033_1:
+	.skip 0x4
+.global lbl_803D9034
+lbl_803D9034:
+	.skip 0x4
+.global $$22155_0
+$$22155_0:
+	.skip 0x4
+.global lbl_803D903C
+lbl_803D903C:
+	.skip 0x4
+.global $$22386
+$$22386:
+	.skip 0x4
+.global lbl_803D9044
+lbl_803D9044:
+	.skip 0x4
+
 .section .text
 
 .global add_wheel_bones__Q24zNPC10wheel_boneFPQ24zNPC6common
