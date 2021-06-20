@@ -17,9 +17,9 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/asm/Core/x/xbinio.o\
 	$(OBJ_DIR)/asm/Core/x/xBound.o\
 	$(OBJ_DIR)/asm/Core/x/xCam.o\
-	$(OBJ_DIR)/asm/Core/x/xCamFollow.o\
+	$(OBJ_DIR)/src/Core/x/xCamFollow.o\
 	$(OBJ_DIR)/asm/Core/x/xCamSupport.o\
-	$(OBJ_DIR)/asm/Core/x/xClimate.o\
+	$(OBJ_DIR)/src/Core/x/xClimate.o\
 	$(OBJ_DIR)/asm/Core/x/xClumpColl.o\
 	$(OBJ_DIR)/asm/Core/x/xCM.o\
 	$(OBJ_DIR)/asm/Core/x/xCollide.o\
@@ -181,7 +181,7 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/asm/GAME/zHudIncredimeter.o\
 	$(OBJ_DIR)/asm/GAME/zHudTextureFlasher.o\
 	$(OBJ_DIR)/asm/GAME/zIncrediBallPlayer.o\
-	$(OBJ_DIR)/asm/GAME/zKaboomMinigame.o\
+	$(OBJ_DIR)/src/GAME/zKaboomMinigame.o\
 	$(OBJ_DIR)/asm/GAME/zLaserBeam.o\
 	$(OBJ_DIR)/asm/GAME/zLight.o\
 	$(OBJ_DIR)/asm/GAME/zLightEffect.o\

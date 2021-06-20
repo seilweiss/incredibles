@@ -18,7 +18,8 @@ TARGET_COL := wii
 OBJ_DIR := obj
 
 SRC_DIRS := src             \
-			src/Core/x
+			src/Core/x      \
+			src/GAME
 
 ASM_DIRS := asm             \
 			asm/bink        \
