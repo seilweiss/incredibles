@@ -26,6 +26,7 @@ $$2stringBase0_96:
 
 .section .sbss
 
+.balign 8
 .global zero$1073
 zero$1073:
 	.skip 0x4

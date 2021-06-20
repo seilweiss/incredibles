@@ -229,7 +229,7 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/asm/GAME/zShrapnel.o\
 	$(OBJ_DIR)/asm/GAME/zSlideCamera.o\
 	$(OBJ_DIR)/asm/GAME/zSurface.o\
-	$(OBJ_DIR)/asm/GAME/zSymbol.o\
+	$(OBJ_DIR)/src/GAME/zSymbol.o\
 	$(OBJ_DIR)/asm/GAME/zTalkBox.o\
 	$(OBJ_DIR)/asm/GAME/zTaskBox.o\
 	$(OBJ_DIR)/asm/GAME/zTextBox.o\
