@@ -48,6 +48,15 @@ lbl_803D8644:
 lbl_803D8648:
 	.skip 0x8
 
+.section .sdata
+
+.global nsn_angle
+nsn_angle:
+	.incbin "baserom.dol", 0x32B100, 0x4
+.global receive_models$1136
+receive_models$1136:
+	.incbin "baserom.dol", 0x32B104, 0x3C
+
 .section .text
 
 .global reset__Q218$$2unnamed$$2xEnt_cpp$$29anim_collFR4xEnt

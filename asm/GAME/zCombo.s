@@ -42,6 +42,21 @@ comboTimer:
 sComboIsPaused:
 	.skip 0x8
 
+.section .sdata
+
+.global comboMaxTime
+comboMaxTime:
+	.incbin "baserom.dol", 0x32DC68, 0x4
+.global comboInputMult
+comboInputMult:
+	.incbin "baserom.dol", 0x32DC6C, 0x4
+.global comboDisplayTime
+comboDisplayTime:
+	.incbin "baserom.dol", 0x32DC70, 0x4
+.global comboFadeDir
+comboFadeDir:
+	.incbin "baserom.dol", 0x32DC74, 0x4
+
 .section .text
 
 .global zCombo_ParseINI__FP8xIniFile

@@ -57,6 +57,12 @@ $$21860:
 lastTarget:
 	.skip 0x4
 
+.section .sdata
+
+.global sUseStrongVel__30$$2unnamed$$2zThrowableSystem_cpp$$2
+sUseStrongVel__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+	.incbin "baserom.dol", 0x32D530, 0x8
+
 .section .text
 
 .global UintCompare__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUi

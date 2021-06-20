@@ -57,6 +57,12 @@ lbl_803D8E70:
 lbl_803D8E74:
 	.skip 0x4
 
+.section .sdata
+
+.global brakeTextureName__21$$2unnamed$$2zNPCCar_cpp$$2
+brakeTextureName__21$$2unnamed$$2zNPCCar_cpp$$2:
+	.incbin "baserom.dol", 0x32CC28, 0x8
+
 .section .text
 
 .global __cl__Q24zNPC20car_collide_callbackFR4xEnt

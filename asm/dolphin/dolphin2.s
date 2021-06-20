@@ -240,6 +240,39 @@ bb2:
 idTmp:
 	.skip 0x8
 
+.section .sdata
+
+.global FirstRead
+FirstRead:
+	.incbin "baserom.dol", 0x32E630, 0x8
+.global $$2118
+$$2118:
+	.incbin "baserom.dol", 0x32E638, 0x8
+.global __DVDVersion
+__DVDVersion:
+	.incbin "baserom.dol", 0x32E640, 0x4
+.global autoInvalidation
+autoInvalidation:
+	.incbin "baserom.dol", 0x32E644, 0x4
+.global checkOptionalCommand
+checkOptionalCommand:
+	.incbin "baserom.dol", 0x32E648, 0x4
+.global $$223
+$$223:
+	.incbin "baserom.dol", 0x32E64C, 0x8
+.global DmaCommand
+DmaCommand:
+	.incbin "baserom.dol", 0x32E654, 0x4
+.global $$237
+$$237:
+	.incbin "baserom.dol", 0x32E658, 0x4
+.global $$242
+$$242:
+	.incbin "baserom.dol", 0x32E65C, 0x4
+.global $$243
+$$243:
+	.incbin "baserom.dol", 0x32E660, 0x8
+
 .section .text
 
 .global __DVDInitWA

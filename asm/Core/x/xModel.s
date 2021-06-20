@@ -45,6 +45,15 @@ $$21610_2:
 lbl_803D873C:
 	.skip 0x4
 
+.section .sdata
+
+.global modelDefaultPipe
+modelDefaultPipe:
+	.incbin "baserom.dol", 0x32B2D8, 0x4
+.global lbl_803CB79C
+lbl_803CB79C:
+	.incbin "baserom.dol", 0x32B2DC, 0x4
+
 .section .text
 
 .global xModelGetPipe__FP8RpAtomic

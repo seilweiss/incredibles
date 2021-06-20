@@ -21,6 +21,36 @@ lbl_803D8B6C:
 lbl_803D8B70:
 	.skip 0x4
 
+.section .sdata
+
+.global DEG_TO_RAD__27$$2unnamed$$2zDestructible_cpp$$2
+DEG_TO_RAD__27$$2unnamed$$2zDestructible_cpp$$2:
+	.incbin "baserom.dol", 0x32BC28, 0x4
+.global LAUNCH_ANGLE__27$$2unnamed$$2zDestructible_cpp$$2
+LAUNCH_ANGLE__27$$2unnamed$$2zDestructible_cpp$$2:
+	.incbin "baserom.dol", 0x32BC2C, 0x4
+.global LAUNCH_VEL__27$$2unnamed$$2zDestructible_cpp$$2
+LAUNCH_VEL__27$$2unnamed$$2zDestructible_cpp$$2:
+	.incbin "baserom.dol", 0x32BC30, 0x4
+.global DAMAGE_RADIUS__27$$2unnamed$$2zDestructible_cpp$$2
+DAMAGE_RADIUS__27$$2unnamed$$2zDestructible_cpp$$2:
+	.incbin "baserom.dol", 0x32BC34, 0x4
+.global MAX_TIME_NO_COLLISIONS__27$$2unnamed$$2zDestructible_cpp$$2
+MAX_TIME_NO_COLLISIONS__27$$2unnamed$$2zDestructible_cpp$$2:
+	.incbin "baserom.dol", 0x32BC38, 0x4
+.global HIT_TO_DESTROY_TIME__27$$2unnamed$$2zDestructible_cpp$$2
+HIT_TO_DESTROY_TIME__27$$2unnamed$$2zDestructible_cpp$$2:
+	.incbin "baserom.dol", 0x32BC3C, 0x4
+.global Y_VELOCITY__27$$2unnamed$$2zDestructible_cpp$$2
+Y_VELOCITY__27$$2unnamed$$2zDestructible_cpp$$2:
+	.incbin "baserom.dol", 0x32BC40, 0x4
+.global RESPAWN_THRESHOLD__27$$2unnamed$$2zDestructible_cpp$$2
+RESPAWN_THRESHOLD__27$$2unnamed$$2zDestructible_cpp$$2:
+	.incbin "baserom.dol", 0x32BC44, 0x4
+.global DOBJ_STD_BOUND_VAR__27$$2unnamed$$2zDestructible_cpp$$2
+DOBJ_STD_BOUND_VAR__27$$2unnamed$$2zDestructible_cpp$$2:
+	.incbin "baserom.dol", 0x32BC48, 0x8
+
 .section .text
 
 .global UpdateModelBound__27$$2unnamed$$2zDestructible_cpp$$2FP4xEntP14xModelInstanceb

@@ -15,6 +15,12 @@ myid$822:
 init$823:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__Q24xhud17font_meter_widget
+__vt__Q24xhud17font_meter_widget:
+	.incbin "baserom.dol", 0x32B208, 0x28
+
 .section .text
 
 .global load__Q24xhud17font_meter_widgetFR5xBaseR9xDynAssetUl

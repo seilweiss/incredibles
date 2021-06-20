@@ -33,6 +33,18 @@ EMBM:
 EnvMode:
 	.skip 0x4
 
+.section .sdata
+
+.global BumpHeight
+BumpHeight:
+	.incbin "baserom.dol", 0x32DAE0, 0x4
+.global BumpWidth
+BumpWidth:
+	.incbin "baserom.dol", 0x32DAE4, 0x4
+.global Shininess
+Shininess:
+	.incbin "baserom.dol", 0x32DAE8, 0x8
+
 .section .text
 
 .global CreateEMBMEffect__Fv

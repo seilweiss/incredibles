@@ -48,6 +48,12 @@ $$21401_1:
 lbl_803D8E7C:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__Q21z32lightweight_system$$0Q21z4bomb$$420$$1
+__vt__Q21z32lightweight_system$$0Q21z4bomb$$420$$1:
+	.incbin "baserom.dol", 0x32CD98, 0x28
+
 .section .text
 
 .global get_lob_velocity__4zNPCFRC5xVec3RC5xVec3RC5xVec3ff

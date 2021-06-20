@@ -24,6 +24,90 @@ initData__24$$2unnamed$$2zNPCCombat_cpp$$2:
 $$2stringBase0_75:
 	.incbin "baserom.dol", 0x2DF6D8, 0x120
 
+.section .sdata
+
+.global zNPC_Turret_Top_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_Turret_Top_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CC30, 0x18
+.global zNPC_Turret_Bunker_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_Turret_Bunker_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CC48, 0x18
+.global zNPC_Turret_Building_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_Turret_Building_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CC60, 0x18
+.global zNPC_Turret_Hoverpod_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_Turret_Hoverpod_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CC78, 0x18
+.global zNPC_Turret_Tower_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_Turret_Tower_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CC90, 0x18
+.global zNPC_Turret_Beach_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_Turret_Beach_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CCA8, 0x18
+.global zNPC_Velocipod_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_Velocipod_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CCC0, 0x18
+.global zNPC_BombVoyage_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_BombVoyage_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CCD8, 0x18
+.global zNPC_BombVoyageHeli_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
+zNPC_BombVoyageHeli_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CCF0, 0x18
+.global ZNPC_Default__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Default__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD08, 0x8
+.global ZNPC_BadGuyMedium__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_BadGuyMedium__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD10, 0x8
+.global ZNPC_BadGuyShield__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_BadGuyShield__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD18, 0x8
+.global ZNPC_BadGuyFat__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_BadGuyFat__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD20, 0x8
+.global ZNPC_Mine__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Mine__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD28, 0x8
+.global ZNPC_Oracle__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Oracle__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD30, 0x8
+.global ZNPC_Turret_Top__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Turret_Top__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD38, 0x8
+.global ZNPC_Turret_Bunker__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Turret_Bunker__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD40, 0x8
+.global ZNPC_Turret_Building__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Turret_Building__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD48, 0x8
+.global ZNPC_Turret_Hoverpod__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Turret_Hoverpod__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD50, 0x8
+.global ZNPC_Turret_Tower__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Turret_Tower__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD58, 0x8
+.global ZNPC_Turret_Beach__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Turret_Beach__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD60, 0x8
+.global ZNPC_Car__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Car__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD68, 0x8
+.global ZNPC_Lobber__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Lobber__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD70, 0x8
+.global ZNPC_Velocipod__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Velocipod__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD78, 0x8
+.global ZNPC_Omnidroid08__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_Omnidroid08__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD80, 0x8
+.global ZNPC_BombVoyage__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_BombVoyage__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD88, 0x8
+.global ZNPC_BombVoyageHeli__24$$2unnamed$$2zNPCCombat_cpp$$2
+ZNPC_BombVoyageHeli__24$$2unnamed$$2zNPCCombat_cpp$$2:
+	.incbin "baserom.dol", 0x32CD90, 0x8
+
 .section .text
 
 .global zNPCCombatInit__Fv

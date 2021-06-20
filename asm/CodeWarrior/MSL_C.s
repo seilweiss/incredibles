@@ -168,6 +168,45 @@ initialized$60:
 zero:
 	.skip 0x8
 
+.section .sdata
+
+.global $$2wstringBase0
+$$2wstringBase0:
+	.incbin "baserom.dol", 0x32E668, 0x8
+.global next_0
+next_0:
+	.incbin "baserom.dol", 0x32E670, 0x8
+.global n$210
+n$210:
+	.incbin "baserom.dol", 0x32E678, 0x4
+.global s$211
+s$211:
+	.incbin "baserom.dol", 0x32E67C, 0x4
+.global __float_nan
+__float_nan:
+	.incbin "baserom.dol", 0x32E680, 0x4
+.global __float_huge
+__float_huge:
+	.incbin "baserom.dol", 0x32E684, 0x4
+.global __double_min
+__double_min:
+	.incbin "baserom.dol", 0x32E688, 0x8
+.global __double_max
+__double_max:
+	.incbin "baserom.dol", 0x32E690, 0x8
+.global __double_huge
+__double_huge:
+	.incbin "baserom.dol", 0x32E698, 0x8
+.global __extended_min
+__extended_min:
+	.incbin "baserom.dol", 0x32E6A0, 0x8
+.global __extended_max
+__extended_max:
+	.incbin "baserom.dol", 0x32E6A8, 0x8
+.global __float_max
+__float_max:
+	.incbin "baserom.dol", 0x32E6B0, 0x8
+
 .section .text
 
 .global exit

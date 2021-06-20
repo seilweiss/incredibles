@@ -357,6 +357,42 @@ $$2663_1:
 lbl_803D9514:
 	.skip 0x4
 
+.section .sdata
+
+.global FSOUND_CurrentDevice
+FSOUND_CurrentDevice:
+	.incbin "baserom.dol", 0x32E4A8, 0x8
+.global FSOUND_3D_DopplerScale
+FSOUND_3D_DopplerScale:
+	.incbin "baserom.dol", 0x32E4B0, 0x4
+.global FSOUND_3D_DistanceScale
+FSOUND_3D_DistanceScale:
+	.incbin "baserom.dol", 0x32E4B4, 0x4
+.global FSOUND_3D_RolloffScale
+FSOUND_3D_RolloffScale:
+	.incbin "baserom.dol", 0x32E4B8, 0x4
+.global FSOUND_3D_NumListeners
+FSOUND_3D_NumListeners:
+	.incbin "baserom.dol", 0x32E4BC, 0x4
+.global FSOUND_Stream_HalfBufferSize
+FSOUND_Stream_HalfBufferSize:
+	.incbin "baserom.dol", 0x32E4C0, 0x8
+.global channel$4
+channel$4:
+	.incbin "baserom.dol", 0x32E4C8, 0x8
+.global FSOUND_Output_GC_MixThreadID
+FSOUND_Output_GC_MixThreadID:
+	.incbin "baserom.dol", 0x32E4D0, 0x8
+.global FSOUND_File_Thread
+FSOUND_File_Thread:
+	.incbin "baserom.dol", 0x32E4D8, 0x8
+.global FSOUND_Output_GC_DVDStatusCallback
+FSOUND_Output_GC_DVDStatusCallback:
+	.incbin "baserom.dol", 0x32E4E0, 0x4
+.global FSOUND_Output_GC_LastDVDStatus
+FSOUND_Output_GC_LastDVDStatus:
+	.incbin "baserom.dol", 0x32E4E4, 0x4
+
 .section .text
 
 .global FMUSIC_GetOpenState

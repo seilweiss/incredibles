@@ -54,6 +54,12 @@ lbl_803D93F4:
 lbl_803D93F8:
 	.skip 0x8
 
+.section .sdata
+
+.global sModelBlurEnabled__24$$2unnamed$$2xModelBlur_cpp$$2
+sModelBlurEnabled__24$$2unnamed$$2xModelBlur_cpp$$2:
+	.incbin "baserom.dol", 0x32DAD0, 0x8
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2xModelBlur_cpp$$25tweakFv

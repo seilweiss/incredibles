@@ -213,6 +213,45 @@ $$21351_4:
 lbl_803D8C8C:
 	.skip 0x4
 
+.section .sdata
+
+.global startPressed
+startPressed:
+	.incbin "baserom.dol", 0x32BDE8, 0x4
+.global SOAK_DELAY
+SOAK_DELAY:
+	.incbin "baserom.dol", 0x32BDEC, 0x4
+.global SOAK_DELAYRAND
+SOAK_DELAYRAND:
+	.incbin "baserom.dol", 0x32BDF0, 0x4
+.global soaktime
+soaktime:
+	.incbin "baserom.dol", 0x32BDF4, 0x4
+.global bgID
+bgID:
+	.incbin "baserom.dol", 0x32BDF8, 0x4
+.global bgu2
+bgu2:
+	.incbin "baserom.dol", 0x32BDFC, 0x4
+.global bgv2
+bgv2:
+	.incbin "baserom.dol", 0x32BE00, 0x4
+.global bgr
+bgr:
+	.incbin "baserom.dol", 0x32BE04, 0x1
+.global bgg
+bgg:
+	.incbin "baserom.dol", 0x32BE05, 0x1
+.global bgb
+bgb:
+	.incbin "baserom.dol", 0x32BE06, 0x1
+.global bga
+bga:
+	.incbin "baserom.dol", 0x32BE07, 0x1
+.global __vt__Q26zAsync6Screen
+__vt__Q26zAsync6Screen:
+	.incbin "baserom.dol", 0x32BE08, 0x18
+
 .section .text
 
 .global PickNextSoak__Fv

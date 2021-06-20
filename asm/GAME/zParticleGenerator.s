@@ -42,6 +42,12 @@ lbl_803D93B4:
 lbl_803D93B8:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__18zParticleGenerator
+__vt__18zParticleGenerator:
+	.incbin "baserom.dol", 0x32D8E0, 0x18
+
 .section .text
 
 .global create_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv

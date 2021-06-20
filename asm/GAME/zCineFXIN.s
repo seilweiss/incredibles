@@ -351,6 +351,114 @@ lbl_803D9500:
 lbl_803D9504:
 	.skip 0x4
 
+.section .sdata
+
+.global cinfx_om04_opening_bv_smoke
+cinfx_om04_opening_bv_smoke:
+	.incbin "baserom.dol", 0x32DD00, 0x38
+.global cinfx_om04_ending_bv_helicopter_smoke
+cinfx_om04_ending_bv_helicopter_smoke:
+	.incbin "baserom.dol", 0x32DD38, 0x38
+.global cinfx_om04_bomb_glow
+cinfx_om04_bomb_glow:
+	.incbin "baserom.dol", 0x32DD70, 0x2C
+.global cutmap$2094
+cutmap$2094:
+	.incbin "baserom.dol", 0x32DD9C, 0x24
+.global cinfx_om01_opening_bv_rocket_smoke
+cinfx_om01_opening_bv_rocket_smoke:
+	.incbin "baserom.dol", 0x32DDC0, 0x38
+.global cinfx_hs01_ending_smoke
+cinfx_hs01_ending_smoke:
+	.incbin "baserom.dol", 0x32DDF8, 0x38
+.global cinfx_om01_towers_smoke
+cinfx_om01_towers_smoke:
+	.incbin "baserom.dol", 0x32DE30, 0x38
+.global cinfx_om01_towers_helicopter_blur
+cinfx_om01_towers_helicopter_blur:
+	.incbin "baserom.dol", 0x32DE68, 0x3C
+.global om01_towers_sparks
+om01_towers_sparks:
+	.incbin "baserom.dol", 0x32DEA4, 0x2C
+.global cutmap$2099
+cutmap$2099:
+	.incbin "baserom.dol", 0x32DED0, 0x3C
+.global cinfx_ld04_opening_dash_blur
+cinfx_ld04_opening_dash_blur:
+	.incbin "baserom.dol", 0x32DF0C, 0x3C
+.global cinfx_ld04_opening_dash_smoke
+cinfx_ld04_opening_dash_smoke:
+	.incbin "baserom.dol", 0x32DF48, 0x38
+.global cutmap$2135
+cutmap$2135:
+	.incbin "baserom.dol", 0x32DF80, 0x24
+.global cinfx_hs01_incrediball_intro_rubble
+cinfx_hs01_incrediball_intro_rubble:
+	.incbin "baserom.dol", 0x32DFA4, 0x14
+.global cinfx_hs01_car_blur
+cinfx_hs01_car_blur:
+	.incbin "baserom.dol", 0x32DFB8, 0x3C
+.global cinfx_nj02_omni_trees_smoke
+cinfx_nj02_omni_trees_smoke:
+	.incbin "baserom.dol", 0x32DFF4, 0x38
+.global nj02_turret_pickup_sparks
+nj02_turret_pickup_sparks:
+	.incbin "baserom.dol", 0x32E02C, 0x2C
+.global cutmap$2150
+cutmap$2150:
+	.incbin "baserom.dol", 0x32E058, 0x24
+.global cinfx_ft01_dash_vine_blur
+cinfx_ft01_dash_vine_blur:
+	.incbin "baserom.dol", 0x32E07C, 0x3C
+.global cutmap$2155
+cutmap$2155:
+	.incbin "baserom.dol", 0x32E0B8, 0x18
+.global cutmap$2160
+cutmap$2160:
+	.incbin "baserom.dol", 0x32E0D0, 0x3C
+.global cutmap$2165
+cutmap$2165:
+	.incbin "baserom.dol", 0x32E10C, 0x24
+.global cinfx_rs01_opening_mr_i_blur
+cinfx_rs01_opening_mr_i_blur:
+	.incbin "baserom.dol", 0x32E130, 0x3C
+.global cinfx_rs01_opening_mr_i_violet
+cinfx_rs01_opening_mr_i_violet:
+	.incbin "baserom.dol", 0x32E16C, 0x10
+.global cutmap$2170
+cutmap$2170:
+	.incbin "baserom.dol", 0x32E17C, 0x18
+.global cutmap$2175
+cutmap$2175:
+	.incbin "baserom.dol", 0x32E194, 0x18
+.global cinfx_nj01_opening_blur
+cinfx_nj01_opening_blur:
+	.incbin "baserom.dol", 0x32E1AC, 0x3C
+.global cinfx_nj01_break_open_smoke
+cinfx_nj01_break_open_smoke:
+	.incbin "baserom.dol", 0x32E1E8, 0x38
+.global cutmap$2180
+cutmap$2180:
+	.incbin "baserom.dol", 0x32E220, 0x18
+.global cinfx_nj03_opening_blur
+cinfx_nj03_opening_blur:
+	.incbin "baserom.dol", 0x32E238, 0x3C
+.global cutmap$2185
+cutmap$2185:
+	.incbin "baserom.dol", 0x32E274, 0x18
+.global cinfx_ni01_damaged_velocipod_smoke
+cinfx_ni01_damaged_velocipod_smoke:
+	.incbin "baserom.dol", 0x32E28C, 0x38
+.global cutmap$2190
+cutmap$2190:
+	.incbin "baserom.dol", 0x32E2C4, 0x24
+.global __vt__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1
+__vt__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1:
+	.incbin "baserom.dol", 0x32E2E8, 0xC
+.global __vt__18CinSparkDiskSystem
+__vt__18CinSparkDiskSystem:
+	.incbin "baserom.dol", 0x32E2F4, 0xC
+
 .section .text
 
 .global zCinFX_LightDust_Twk__FPCcP9NCINEntry

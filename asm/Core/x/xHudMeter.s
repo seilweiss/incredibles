@@ -21,6 +21,21 @@ myid$834:
 init$835:
 	.skip 0x8
 
+.section .sdata
+
+.global tweak_accel__Q24xhud23$$2unnamed$$2xHudMeter_cpp$$2
+tweak_accel__Q24xhud23$$2unnamed$$2xHudMeter_cpp$$2:
+	.incbin "baserom.dol", 0x32B230, 0x4
+.global tweak_min_ping_time__Q24xhud23$$2unnamed$$2xHudMeter_cpp$$2
+tweak_min_ping_time__Q24xhud23$$2unnamed$$2xHudMeter_cpp$$2:
+	.incbin "baserom.dol", 0x32B234, 0x4
+.global tweak_pitch_scale__Q24xhud23$$2unnamed$$2xHudMeter_cpp$$2
+tweak_pitch_scale__Q24xhud23$$2unnamed$$2xHudMeter_cpp$$2:
+	.incbin "baserom.dol", 0x32B238, 0x4
+.global __vt__Q24xhud12meter_widget
+__vt__Q24xhud12meter_widget:
+	.incbin "baserom.dol", 0x32B23C, 0x2C
+
 .section .text
 
 .global __ct__Q24xhud12meter_widgetFRCQ24xhud11meter_asset

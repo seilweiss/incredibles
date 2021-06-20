@@ -27,6 +27,39 @@ $$21123_2:
 lbl_803D8D74:
 	.skip 0x4
 
+.section .sdata
+
+.global system_id__Q24zNPC5teeth
+system_id__Q24zNPC5teeth:
+	.incbin "baserom.dol", 0x32C2A8, 0x4
+.global rot_delta__Q24zNPC5teeth
+rot_delta__Q24zNPC5teeth:
+	.incbin "baserom.dol", 0x32C2AC, 0x4
+.global life__Q24zNPC5teeth
+life__Q24zNPC5teeth:
+	.incbin "baserom.dol", 0x32C2B0, 0x4
+.global fade_start__Q24zNPC5teeth
+fade_start__Q24zNPC5teeth:
+	.incbin "baserom.dol", 0x32C2B4, 0x4
+.global size__Q24zNPC5teeth
+size__Q24zNPC5teeth:
+	.incbin "baserom.dol", 0x32C2B8, 0x4
+.global speed__Q24zNPC5teeth
+speed__Q24zNPC5teeth:
+	.incbin "baserom.dol", 0x32C2BC, 0x4
+.global number__Q24zNPC5teeth
+number__Q24zNPC5teeth:
+	.incbin "baserom.dol", 0x32C2C0, 0x4
+.global gravity__Q24zNPC5teeth
+gravity__Q24zNPC5teeth:
+	.incbin "baserom.dol", 0x32C2C4, 0x4
+.global need_setup__Q24zNPC5teeth
+need_setup__Q24zNPC5teeth:
+	.incbin "baserom.dol", 0x32C2C8, 0x4
+.global color__Q24zNPC5teeth
+color__Q24zNPC5teeth:
+	.incbin "baserom.dol", 0x32C2CC, 0x4
+
 .section .text
 
 .global enter_state__39behavior_implementation$$0Q24zNPC6common$$1FPC39behavior_implementation$$0Q24zNPC6common$$1

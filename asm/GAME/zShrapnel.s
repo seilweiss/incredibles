@@ -78,6 +78,12 @@ sCinFrag:
 sCinModel:
 	.skip 0x4
 
+.section .sdata
+
+.global sShrapnelTable
+sShrapnelTable:
+	.incbin "baserom.dol", 0x32CF78, 0x10
+
 .section .text
 
 .global zFrag_Alloc__F9zFragType

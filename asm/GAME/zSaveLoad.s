@@ -102,6 +102,42 @@ lbl_803D90B4:
 $$22457:
 	.skip 0x20
 
+.section .sdata
+
+.global saveload_time_elapsed
+saveload_time_elapsed:
+	.incbin "baserom.dol", 0x32CEB0, 0x4
+.global currentCard
+currentCard:
+	.incbin "baserom.dol", 0x32CEB4, 0x4
+.global currentGame
+currentGame:
+	.incbin "baserom.dol", 0x32CEB8, 0x4
+.global dontPoll
+dontPoll:
+	.incbin "baserom.dol", 0x32CEBC, 0x4
+.global autoSaveCard
+autoSaveCard:
+	.incbin "baserom.dol", 0x32CEC0, 0x4
+.global prevSelectCard
+prevSelectCard:
+	.incbin "baserom.dol", 0x32CEC4, 0x4
+.global prevSelectGame
+prevSelectGame:
+	.incbin "baserom.dol", 0x32CEC8, 0x4
+.global sIsLoading__23$$2unnamed$$2zSaveLoad_cpp$$2
+sIsLoading__23$$2unnamed$$2zSaveLoad_cpp$$2:
+	.incbin "baserom.dol", 0x32CECC, 0x4
+.global currSceneStr
+currSceneStr:
+	.incbin "baserom.dol", 0x32CED0, 0x20
+.global sceneRead
+sceneRead:
+	.incbin "baserom.dol", 0x32CEF0, 0x20
+.global g_promptUserSelection
+g_promptUserSelection:
+	.incbin "baserom.dol", 0x32CF10, 0x8
+
 .section .text
 
 .global WaitForPreviousPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fb

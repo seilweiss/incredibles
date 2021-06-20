@@ -36,6 +36,12 @@ lbl_803D8BAC:
 lbl_803D8BB0:
 	.skip 0x8
 
+.section .sdata
+
+.global g_hash_xentanim
+g_hash_xentanim:
+	.incbin "baserom.dol", 0x32BD78, 0x18
+
 .section .text
 
 .global zEntInit__FP4zEntP9xEntAssetUi

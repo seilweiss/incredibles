@@ -6,6 +6,30 @@
 $$21144:
 	.incbin "baserom.dol", 0x2F13F8, 0xC8
 
+.section .sdata
+
+.global __vt__12CActiveEvent
+__vt__12CActiveEvent:
+	.incbin "baserom.dol", 0x32B2E0, 0x14
+.global __vt__13CTrueForYLong
+__vt__13CTrueForYLong:
+	.incbin "baserom.dol", 0x32B2F4, 0x14
+.global __vt__22CUniqueAmountLessThanX
+__vt__22CUniqueAmountLessThanX:
+	.incbin "baserom.dol", 0x32B308, 0x14
+.global __vt__18CXNumUniqueWithinY
+__vt__18CXNumUniqueWithinY:
+	.incbin "baserom.dol", 0x32B31C, 0x14
+.global __vt__21CHappensXTimesWithinY
+__vt__21CHappensXTimesWithinY:
+	.incbin "baserom.dol", 0x32B330, 0x14
+.global __vt__11BasicInform
+__vt__11BasicInform:
+	.incbin "baserom.dol", 0x32B344, 0x14
+.global __vt__25CUniqueAmountGreaterThanX
+__vt__25CUniqueAmountGreaterThanX:
+	.incbin "baserom.dol", 0x32B358, 0x18
+
 .section .text
 
 .global Age__9xOneLinerFf

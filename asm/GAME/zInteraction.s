@@ -24,6 +24,48 @@ turn_smoke_particle__26$$2unnamed$$2zInteraction_cpp$$2:
 leaves_particle_system__26$$2unnamed$$2zInteraction_cpp$$2:
 	.skip 0xC
 
+.section .sdata
+
+.global sAlphaUpRate_0
+sAlphaUpRate_0:
+	.incbin "baserom.dol", 0x32D2F0, 0x4
+.global sAlphaDownRate_0
+sAlphaDownRate_0:
+	.incbin "baserom.dol", 0x32D2F4, 0x4
+.global sMaxDrawDist2
+sMaxDrawDist2:
+	.incbin "baserom.dol", 0x32D2F8, 0x4
+.global sMinDrawAlpha
+sMinDrawAlpha:
+	.incbin "baserom.dol", 0x32D2FC, 0x4
+.global sMaxDrawAlpha_0
+sMaxDrawAlpha_0:
+	.incbin "baserom.dol", 0x32D300, 0x4
+.global sTurnStandDist
+sTurnStandDist:
+	.incbin "baserom.dol", 0x32D304, 0x4
+.global sTurnMinDot
+sTurnMinDot:
+	.incbin "baserom.dol", 0x32D308, 0x4
+.global sLaunchMaxDist2
+sLaunchMaxDist2:
+	.incbin "baserom.dol", 0x32D30C, 0x4
+.global sLaunchHalfYawRange
+sLaunchHalfYawRange:
+	.incbin "baserom.dol", 0x32D310, 0x4
+.global sLaunchFlipLength
+sLaunchFlipLength:
+	.incbin "baserom.dol", 0x32D314, 0x4
+.global sLaunchReelInBeginPull
+sLaunchReelInBeginPull:
+	.incbin "baserom.dol", 0x32D318, 0x4
+.global sLiftBoneIndex
+sLiftBoneIndex:
+	.incbin "baserom.dol", 0x32D31C, 0x4
+.global sLiftBoneOffset
+sLiftBoneOffset:
+	.incbin "baserom.dol", 0x32D320, 0x10
+
 .section .text
 
 .global zTurn_IntFloor__Ff

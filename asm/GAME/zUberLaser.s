@@ -69,6 +69,15 @@ lbl_803D93D0:
 lbl_803D93D4:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__Q21z10uber_laser
+__vt__Q21z10uber_laser:
+	.incbin "baserom.dol", 0x32DA78, 0x20
+.global __vt__Q21z31lightweight$$0Q21z10uber_laser$$45$$1
+__vt__Q21z31lightweight$$0Q21z10uber_laser$$45$$1:
+	.incbin "baserom.dol", 0x32DA98, 0x20
+
 .section .text
 
 .global load__10zUberLaserFR5xBaseR9xDynAssetUl

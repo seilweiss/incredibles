@@ -15,6 +15,12 @@ walker__9zTrainCar:
 first_train_car__9zTrainCar:
 	.skip 0x4
 
+.section .sdata
+
+.global spark_particle_batch_id__9zTrainCar
+spark_particle_batch_id__9zTrainCar:
+	.incbin "baserom.dol", 0x32D078, 0x8
+
 .section .text
 
 .global Alloc__Q211zFollowPath7segmentFRPQ211zFollowPath7segment

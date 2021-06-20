@@ -6,6 +6,12 @@
 $$2stringBase0_48:
 	.incbin "baserom.dol", 0x2D8B70, 0x18
 
+.section .sdata
+
+.global __vt__11zDuplicator
+__vt__11zDuplicator:
+	.incbin "baserom.dol", 0x32BC58, 0x18
+
 .section .text
 
 .global update_wrapper__FP4xEntP6xScenef

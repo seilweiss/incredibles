@@ -18,6 +18,15 @@ $$2stringBase0_43:
 scene_player_map_max__28$$2unnamed$$2zConfiguration_cpp$$2:
 	.skip 0x8
 
+.section .sdata
+
+.global player_model_info__28$$2unnamed$$2zConfiguration_cpp$$2
+player_model_info__28$$2unnamed$$2zConfiguration_cpp$$2:
+	.incbin "baserom.dol", 0x32BB08, 0x2C
+.global player_lorez_model__28$$2unnamed$$2zConfiguration_cpp$$2
+player_lorez_model__28$$2unnamed$$2zConfiguration_cpp$$2:
+	.incbin "baserom.dol", 0x32BB34, 0x2C
+
 .section .text
 
 .global zConfig_getPlayerEnumIdx__FUi

@@ -12,6 +12,15 @@ g_crc32_table:
 g_xutilinit:
 	.skip 0x8
 
+.section .sdata
+
+.global g_crc_needinit
+g_crc_needinit:
+	.incbin "baserom.dol", 0x32B5A0, 0x4
+.global buf$622
+buf$622:
+	.incbin "baserom.dol", 0x32B5A4, 0x3C
+
 .section .text
 
 .global xUtilStartup__Fv

@@ -15,6 +15,12 @@ myid$947:
 init$948:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__Q24xhud11text_widget
+__vt__Q24xhud11text_widget:
+	.incbin "baserom.dol", 0x32D368, 0x30
+
 .section .text
 
 .global load__Q24xhud11text_widgetFR5xBaseR9xDynAssetUl

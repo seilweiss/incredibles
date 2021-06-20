@@ -6,6 +6,12 @@
 g_iAnim_workBufferData:
 	.skip 0x4000
 
+.section .sdata
+
+.global g_iAnim_workBuffer
+g_iAnim_workBuffer:
+	.incbin "baserom.dol", 0x32B770, 0x8
+
 .section .text
 
 .global iAnimInit__Fv

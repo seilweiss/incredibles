@@ -78,6 +78,15 @@ lbl_803D9388:
 lbl_803D938C:
 	.skip 0x4
 
+.section .sdata
+
+.global last_stat__16zUICustomStatBox
+last_stat__16zUICustomStatBox:
+	.incbin "baserom.dol", 0x32D860, 0x4
+.global stat_cycle_sound
+stat_cycle_sound:
+	.incbin "baserom.dol", 0x32D864, 0x4
+
 .section .text
 
 .global Init__9zUICustomFv

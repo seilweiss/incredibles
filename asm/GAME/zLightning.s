@@ -87,6 +87,36 @@ lbl_803CFF18:
 posArray:
 	.skip 0x8
 
+.section .sdata
+
+.global sLFuncJerkFreq
+sLFuncJerkFreq:
+	.incbin "baserom.dol", 0x32C150, 0x4
+.global sLFuncShift
+sLFuncShift:
+	.incbin "baserom.dol", 0x32C154, 0x4
+.global sLFuncMinScale
+sLFuncMinScale:
+	.incbin "baserom.dol", 0x32C158, 0x4
+.global sLFuncMaxScale
+sLFuncMaxScale:
+	.incbin "baserom.dol", 0x32C15C, 0x4
+.global sLFuncScalePerLength
+sLFuncScalePerLength:
+	.incbin "baserom.dol", 0x32C160, 0x4
+.global sLFuncMinSpan
+sLFuncMinSpan:
+	.incbin "baserom.dol", 0x32C164, 0x4
+.global sLFuncSpanPerLength
+sLFuncSpanPerLength:
+	.incbin "baserom.dol", 0x32C168, 0x4
+.global sLFuncSlopeRange
+sLFuncSlopeRange:
+	.incbin "baserom.dol", 0x32C16C, 0x4
+.global sLFuncUVSpeed
+sLFuncUVSpeed:
+	.incbin "baserom.dol", 0x32C170, 0x8
+
 .section .text
 
 .global Init__16zLightningWidgetFR5xBaseR9xDynAssetUl

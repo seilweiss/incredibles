@@ -30,6 +30,15 @@ fname$1114:
 fname$1127:
 	.skip 0x44
 
+.section .sdata
+
+.global g_localCode
+g_localCode:
+	.incbin "baserom.dol", 0x32B590, 0x4
+.global g_localEnum
+g_localEnum:
+	.incbin "baserom.dol", 0x32B594, 0x4
+
 .section .text
 
 .global xSTIsLoaded__Fv

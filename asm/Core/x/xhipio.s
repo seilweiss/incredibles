@@ -12,6 +12,12 @@ g_hiploadinst:
 g_loadlock_0:
 	.skip 0x8
 
+.section .sdata
+
+.global g_map_HIPL_funcmap
+g_map_HIPL_funcmap:
+	.incbin "baserom.dol", 0x32B1A8, 0x38
+
 .section .text
 
 .global get_HIPLFuncs__Fv

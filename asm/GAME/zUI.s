@@ -24,6 +24,12 @@ signalHandler__17$$2unnamed$$2zUI_cpp$$2:
 signalUser__17$$2unnamed$$2zUI_cpp$$2:
 	.skip 0x4
 
+.section .sdata
+
+.global bAllowInput__3zUI
+bAllowInput__3zUI:
+	.incbin "baserom.dol", 0x32D0A8, 0x8
+
 .section .text
 
 .global UIEventHandler__17$$2unnamed$$2zUI_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

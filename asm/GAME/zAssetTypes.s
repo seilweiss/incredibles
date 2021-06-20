@@ -45,6 +45,24 @@ $$21553_3:
 lbl_803D8A0C:
 	.skip 0x4
 
+.section .sdata
+
+.global animTable
+animTable:
+	.incbin "baserom.dol", 0x32B7A0, 0x18
+.global tableFuncList
+tableFuncList:
+	.incbin "baserom.dol", 0x32B7B8, 0x4
+.global effectFuncList
+effectFuncList:
+	.incbin "baserom.dol", 0x32B7BC, 0xC
+.global $$2839_0
+$$2839_0:
+	.incbin "baserom.dol", 0x32B7C8, 0x4
+.global $$2841_0
+$$2841_0:
+	.incbin "baserom.dol", 0x32B7CC, 0x4
+
 .section .text
 
 .global GetBrainID__FUiUi

@@ -78,6 +78,12 @@ lbl_803D9090:
 lbl_803D9094:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__4jump
+__vt__4jump:
+	.incbin "baserom.dol", 0x32CE88, 0x18
+
 .section .text
 
 .global bound_update_wrapper__21$$2unnamed$$2zPlayer_cpp$$2FP4xEntP5xVec3

@@ -27,6 +27,39 @@ system_id__Q21z17JetParticleSystem:
 default_config__Q21z11smoke_trail:
 	.skip 0x38
 
+.section .sdata
+
+.global ROCKET_BOUND_RADIUS__1z
+ROCKET_BOUND_RADIUS__1z:
+	.incbin "baserom.dol", 0x32D408, 0x4
+.global ROCKET_ACCELERATION__1z
+ROCKET_ACCELERATION__1z:
+	.incbin "baserom.dol", 0x32D40C, 0x4
+.global flying_noise_group__Q21z6rocket
+flying_noise_group__Q21z6rocket:
+	.incbin "baserom.dol", 0x32D410, 0x4
+.global splash_soundgroup__Q21z6rocket
+splash_soundgroup__Q21z6rocket:
+	.incbin "baserom.dol", 0x32D414, 0x4
+.global splash__Q21z6rocket
+splash__Q21z6rocket:
+	.incbin "baserom.dol", 0x32D418, 0x4
+.global need_setup__Q21z17JetParticleSystem
+need_setup__Q21z17JetParticleSystem:
+	.incbin "baserom.dol", 0x32D41C, 0x4
+.global system_id__Q21z11smoke_trail
+system_id__Q21z11smoke_trail:
+	.incbin "baserom.dol", 0x32D420, 0x4
+.global need_setup__1z
+need_setup__1z:
+	.incbin "baserom.dol", 0x32D424, 0x4
+.global __vt__Q21z27lightweight$$0Q21z6rocket$$420$$1
+__vt__Q21z27lightweight$$0Q21z6rocket$$420$$1:
+	.incbin "baserom.dol", 0x32D428, 0x20
+.global __vt__Q21z6rocket
+__vt__Q21z6rocket:
+	.incbin "baserom.dol", 0x32D448, 0x20
+
 .section .text
 
 .global setup__Q21z6rocketFv

@@ -9,6 +9,15 @@ old_alpha_discard_value_gc:
 alphaDiscardCurrentlySet:
 	.skip 0x4
 
+.section .sdata
+
+.global old_near_plane
+old_near_plane:
+	.incbin "baserom.dol", 0x32B390, 0x4
+.global old_far_plane
+old_far_plane:
+	.incbin "baserom.dol", 0x32B394, 0x4
+
 .section .text
 
 .global xRenderSceneEnter__Fv

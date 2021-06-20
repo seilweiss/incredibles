@@ -48,6 +48,24 @@ init$1604:
 flameThrowerMgr__16zFlameThrowerMgr:
 	.skip 0x8
 
+.section .sdata
+
+.global length_modifier
+length_modifier:
+	.incbin "baserom.dol", 0x32D398, 0x4
+.global radius_modifier
+radius_modifier:
+	.incbin "baserom.dol", 0x32D39C, 0x4
+.global __vt__12flamethrower
+__vt__12flamethrower:
+	.incbin "baserom.dol", 0x32D3A0, 0x20
+.global __vt__Q21z30lightweight$$012flamethrower$$410$$1
+__vt__Q21z30lightweight$$012flamethrower$$410$$1:
+	.incbin "baserom.dol", 0x32D3C0, 0x20
+.global __vt__Q21z37lightweight_system$$012flamethrower$$410$$1
+__vt__Q21z37lightweight_system$$012flamethrower$$410$$1:
+	.incbin "baserom.dol", 0x32D3E0, 0x28
+
 .section .text
 
 .global Init__19zFlameThrowerWidgetFR5xBaseR9xDynAssetUl

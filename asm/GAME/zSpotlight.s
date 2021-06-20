@@ -27,6 +27,12 @@ light_cone_atomics_size__24$$2unnamed$$2zSpotlight_cpp$$2:
 aura_cone_atomics_size__24$$2unnamed$$2zSpotlight_cpp$$2:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__Q210zSpotlight17light_volume_type
+__vt__Q210zSpotlight17light_volume_type:
+	.incbin "baserom.dol", 0x32D4E8, 0x18
+
 .section .text
 
 .global add_tweaks__Q224$$2unnamed$$2zSpotlight_cpp$$25tweakFv

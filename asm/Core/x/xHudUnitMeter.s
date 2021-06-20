@@ -21,6 +21,15 @@ myid$926:
 init$927:
 	.skip 0x8
 
+.section .sdata
+
+.global tweak_anim_time_delta__Q24xhud27$$2unnamed$$2xHudUnitMeter_cpp$$2
+tweak_anim_time_delta__Q24xhud27$$2unnamed$$2xHudUnitMeter_cpp$$2:
+	.incbin "baserom.dol", 0x32B298, 0x4
+.global __vt__Q24xhud17unit_meter_widget
+__vt__Q24xhud17unit_meter_widget:
+	.incbin "baserom.dol", 0x32B29C, 0x2C
+
 .section .text
 
 .global load__Q24xhud17unit_meter_widgetFR5xBaseR9xDynAssetUl

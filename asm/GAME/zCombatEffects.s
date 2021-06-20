@@ -90,6 +90,30 @@ lbl_803D8B00:
 lbl_803D8B04:
 	.skip 0x4
 
+.section .sdata
+
+.global decal_config__28$$2unnamed$$2zCombatEffects_cpp$$2
+decal_config__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.incbin "baserom.dol", 0x32B988, 0x28
+.global slam_drop_cfg__28$$2unnamed$$2zCombatEffects_cpp$$2
+slam_drop_cfg__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.incbin "baserom.dol", 0x32B9B0, 0x38
+.global punch_streak_ribbon_curve__28$$2unnamed$$2zCombatEffects_cpp$$2
+punch_streak_ribbon_curve__28$$2unnamed$$2zCombatEffects_cpp$$2:
+	.incbin "baserom.dol", 0x32B9E8, 0x24
+.global __vt__Q228$$2unnamed$$2zCombatEffects_cpp$$218RockParticleSystem
+__vt__Q228$$2unnamed$$2zCombatEffects_cpp$$218RockParticleSystem:
+	.incbin "baserom.dol", 0x32BA0C, 0x1C
+.global __vt__Q214zCombatEffects14ParticleSystem
+__vt__Q214zCombatEffects14ParticleSystem:
+	.incbin "baserom.dol", 0x32BA28, 0x1C
+.global __vt__Q228$$2unnamed$$2zCombatEffects_cpp$$218BitsParticleSystem
+__vt__Q228$$2unnamed$$2zCombatEffects_cpp$$218BitsParticleSystem:
+	.incbin "baserom.dol", 0x32BA44, 0x1C
+.global __vt__Q214zCombatEffects19SparkParticleSystem
+__vt__Q214zCombatEffects19SparkParticleSystem:
+	.incbin "baserom.dol", 0x32BA60, 0x20
+
 .section .text
 
 .global setup__Q214zCombatEffects19SparkParticleSystemFv

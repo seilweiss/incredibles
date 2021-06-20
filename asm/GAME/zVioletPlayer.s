@@ -18,6 +18,24 @@ headBones__27$$2unnamed$$2zVioletPlayer_cpp$$2:
 $$2stringBase0_104:
 	.incbin "baserom.dol", 0x2E3194, 0x1C4
 
+.section .sdata
+
+.global INVIS_POWER_REQUIRED__27$$2unnamed$$2zVioletPlayer_cpp$$2
+INVIS_POWER_REQUIRED__27$$2unnamed$$2zVioletPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32D0F8, 0x4
+.global INVIS_POWER_INITIAL__27$$2unnamed$$2zVioletPlayer_cpp$$2
+INVIS_POWER_INITIAL__27$$2unnamed$$2zVioletPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32D0FC, 0x4
+.global INVIS_POWER_ONGOING__27$$2unnamed$$2zVioletPlayer_cpp$$2
+INVIS_POWER_ONGOING__27$$2unnamed$$2zVioletPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32D100, 0x4
+.global INCREDIPOWER_RECOVERY__27$$2unnamed$$2zVioletPlayer_cpp$$2
+INCREDIPOWER_RECOVERY__27$$2unnamed$$2zVioletPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32D104, 0x4
+.global DEFAULT_INVISIBILITY_POWER__27$$2unnamed$$2zVioletPlayer_cpp$$2
+DEFAULT_INVISIBILITY_POWER__27$$2unnamed$$2zVioletPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32D108, 0x8
+
 .section .text
 
 .global GetHeadBones__13zVioletPlayerFv

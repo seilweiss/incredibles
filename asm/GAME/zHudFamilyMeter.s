@@ -12,6 +12,15 @@ $$2stringBase0_157:
 fMinHealthBar__4zHud:
 	.skip 0x8
 
+.section .sdata
+
+.global fMaxHealthBar__4zHud
+fMaxHealthBar__4zHud:
+	.incbin "baserom.dol", 0x32E320, 0x4
+.global __vt__Q24zHud11FamilyMeter
+__vt__Q24zHud11FamilyMeter:
+	.incbin "baserom.dol", 0x32E324, 0x2C
+
 .section .text
 
 .global __ct__Q24zHud11FamilyMeterFv

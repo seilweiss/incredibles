@@ -78,6 +78,12 @@ $$21300_2:
 lbl_803D92F4:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__Q24xhud12image_widget
+__vt__Q24xhud12image_widget:
+	.incbin "baserom.dol", 0x32D468, 0x28
+
 .section .text
 
 .global load__Q24xhud12image_widgetFR5xBaseR9xDynAssetUl

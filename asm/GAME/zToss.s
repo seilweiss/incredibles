@@ -9,6 +9,12 @@ $$2802_1:
 lbl_803D950C:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__Q21z4toss
+__vt__Q21z4toss:
+	.incbin "baserom.dol", 0x32E300, 0x20
+
 .section .text
 
 .global setup__Q21z4tossFv

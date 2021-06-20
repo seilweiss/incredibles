@@ -1368,6 +1368,153 @@ pEXIInputFlag:
 EXIInputFlag:
 	.skip 0x4
 
+.section .sdata
+
+.global __ARVersion
+__ARVersion:
+	.incbin "baserom.dol", 0x32E378, 0x8
+.global __ARQVersion
+__ARQVersion:
+	.incbin "baserom.dol", 0x32E380, 0x8
+.global __AXVersion
+__AXVersion:
+	.incbin "baserom.dol", 0x32E388, 0x8
+.global axDspSlaveLength
+axDspSlaveLength:
+	.incbin "baserom.dol", 0x32E390, 0x8
+.global __AXFXAlloc
+__AXFXAlloc:
+	.incbin "baserom.dol", 0x32E398, 0x4
+.global __AXFXFree
+__AXFXFree:
+	.incbin "baserom.dol", 0x32E39C, 0x4
+.global __AIVersion
+__AIVersion:
+	.incbin "baserom.dol", 0x32E3A0, 0x8
+.global __CARDVersion
+__CARDVersion:
+	.incbin "baserom.dol", 0x32E3A8, 0x8
+.global next
+next:
+	.incbin "baserom.dol", 0x32E3B0, 0x8
+.global __CARDVendorID
+__CARDVendorID:
+	.incbin "baserom.dol", 0x32E3B8, 0x2
+.global __CARDPermMask
+__CARDPermMask:
+	.incbin "baserom.dol", 0x32E3BA, 0x6
+.global __DSPVersion
+__DSPVersion:
+	.incbin "baserom.dol", 0x32E3C0, 0x8
+.global __EXIVersion
+__EXIVersion:
+	.incbin "baserom.dol", 0x32E3C8, 0x8
+.global __GXVersion
+__GXVersion:
+	.incbin "baserom.dol", 0x32E3D0, 0x8
+.global tbl1$263
+tbl1$263:
+	.incbin "baserom.dol", 0x32E3D8, 0x4
+.global tbl2$264
+tbl2$264:
+	.incbin "baserom.dol", 0x32E3DC, 0x4
+.global tbl3$265
+tbl3$265:
+	.incbin "baserom.dol", 0x32E3E0, 0x8
+.global GXTexMode0Ids
+GXTexMode0Ids:
+	.incbin "baserom.dol", 0x32E3E8, 0x8
+.global GXTexMode1Ids
+GXTexMode1Ids:
+	.incbin "baserom.dol", 0x32E3F0, 0x8
+.global GXTexImage0Ids
+GXTexImage0Ids:
+	.incbin "baserom.dol", 0x32E3F8, 0x8
+.global GXTexImage1Ids
+GXTexImage1Ids:
+	.incbin "baserom.dol", 0x32E400, 0x8
+.global GXTexImage2Ids
+GXTexImage2Ids:
+	.incbin "baserom.dol", 0x32E408, 0x8
+.global GXTexImage3Ids
+GXTexImage3Ids:
+	.incbin "baserom.dol", 0x32E410, 0x8
+.global GXTexTlutIds
+GXTexTlutIds:
+	.incbin "baserom.dol", 0x32E418, 0x8
+.global GX2HWFiltConv
+GX2HWFiltConv:
+	.incbin "baserom.dol", 0x32E420, 0x8
+.global Unit01
+Unit01:
+	.incbin "baserom.dol", 0x32E428, 0x8
+.global __OSVersion
+__OSVersion:
+	.incbin "baserom.dol", 0x32E430, 0x4
+.global $$297_0
+$$297_0:
+	.incbin "baserom.dol", 0x32E434, 0x8
+.global $$2144
+$$2144:
+	.incbin "baserom.dol", 0x32E43C, 0x4
+.global __OSCurrHeap
+__OSCurrHeap:
+	.incbin "baserom.dol", 0x32E440, 0x8
+.global __OSArenaLo
+__OSArenaLo:
+	.incbin "baserom.dol", 0x32E448, 0x8
+.global __OSFpscrEnableBits
+__OSFpscrEnableBits:
+	.incbin "baserom.dol", 0x32E450, 0x4
+.global $$276_0
+$$276_0:
+	.incbin "baserom.dol", 0x32E454, 0x4
+.global fontEncode$80
+fontEncode$80:
+	.incbin "baserom.dol", 0x32E458, 0x8
+.global SwitchThreadCallback
+SwitchThreadCallback:
+	.incbin "baserom.dol", 0x32E460, 0x4
+.global $$2833
+$$2833:
+	.incbin "baserom.dol", 0x32E464, 0x4
+.global __PADVersion
+__PADVersion:
+	.incbin "baserom.dol", 0x32E468, 0x4
+.global ResettingChan
+ResettingChan:
+	.incbin "baserom.dol", 0x32E46C, 0x4
+.global XPatchBits
+XPatchBits:
+	.incbin "baserom.dol", 0x32E470, 0x4
+.global AnalogMode
+AnalogMode:
+	.incbin "baserom.dol", 0x32E474, 0x4
+.global Spec
+Spec:
+	.incbin "baserom.dol", 0x32E478, 0x4
+.global MakeStatus
+MakeStatus:
+	.incbin "baserom.dol", 0x32E47C, 0x4
+.global CmdReadOrigin
+CmdReadOrigin:
+	.incbin "baserom.dol", 0x32E480, 0x4
+.global CmdCalibrate
+CmdCalibrate:
+	.incbin "baserom.dol", 0x32E484, 0x4
+.global __SIVersion
+__SIVersion:
+	.incbin "baserom.dol", 0x32E488, 0x8
+.global __VIVersion
+__VIVersion:
+	.incbin "baserom.dol", 0x32E490, 0x4
+.global $$2534
+$$2534:
+	.incbin "baserom.dol", 0x32E494, 0xC
+.global SendCount
+SendCount:
+	.incbin "baserom.dol", 0x32E4A0, 0x8
+
 .section .text
 
 .global PPCMfmsr

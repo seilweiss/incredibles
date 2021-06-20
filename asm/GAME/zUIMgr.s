@@ -27,6 +27,12 @@ $$21285:
 $$21298:
 	.skip 0x4
 
+.section .sdata
+
+.global uiAnyActive__20$$2unnamed$$2zUIMgr_cpp$$2
+uiAnyActive__20$$2unnamed$$2zUIMgr_cpp$$2:
+	.incbin "baserom.dol", 0x32D0C0, 0x8
+
 .section .text
 
 .global zUIMgrInit__FP6zScene

@@ -51,6 +51,180 @@ lbl_803D8B8C:
 $$22806:
 	.skip 0x18
 
+.section .sdata
+
+.global eEA_Torso
+eEA_Torso:
+	.incbin "baserom.dol", 0x32BC70, 0x4
+.global eEA_LeftArm
+eEA_LeftArm:
+	.incbin "baserom.dol", 0x32BC74, 0x4
+.global eEA_LeftHand
+eEA_LeftHand:
+	.incbin "baserom.dol", 0x32BC78, 0x4
+.global eEA_RightArm
+eEA_RightArm:
+	.incbin "baserom.dol", 0x32BC7C, 0x4
+.global eEA_RightHand
+eEA_RightHand:
+	.incbin "baserom.dol", 0x32BC80, 0x4
+.global eEA_Hair
+eEA_Hair:
+	.incbin "baserom.dol", 0x32BC84, 0x4
+.global eEA_Count
+eEA_Count:
+	.incbin "baserom.dol", 0x32BC88, 0x4
+.global vertexIndex
+vertexIndex:
+	.incbin "baserom.dol", 0x32BC8C, 0x4
+.global sDrawRadius
+sDrawRadius:
+	.incbin "baserom.dol", 0x32BC90, 0x4
+.global sBaseAtOffset
+sBaseAtOffset:
+	.incbin "baserom.dol", 0x32BC94, 0x4
+.global sStepLengthFactor
+sStepLengthFactor:
+	.incbin "baserom.dol", 0x32BC98, 0x4
+.global sMinStepLength
+sMinStepLength:
+	.incbin "baserom.dol", 0x32BC9C, 0x4
+.global sMaxStepLength
+sMaxStepLength:
+	.incbin "baserom.dol", 0x32BCA0, 0x4
+.global sMinParamDist
+sMinParamDist:
+	.incbin "baserom.dol", 0x32BCA4, 0x4
+.global sMaxParamDist
+sMaxParamDist:
+	.incbin "baserom.dol", 0x32BCA8, 0x4
+.global sLimbSpeed
+sLimbSpeed:
+	.incbin "baserom.dol", 0x32BCAC, 0x4
+.global sMinFactorSpeed
+sMinFactorSpeed:
+	.incbin "baserom.dol", 0x32BCB0, 0x4
+.global sSectionRadius
+sSectionRadius:
+	.incbin "baserom.dol", 0x32BCB4, 0x4
+.global sMinU
+sMinU:
+	.incbin "baserom.dol", 0x32BCB8, 0x4
+.global sRangeU
+sRangeU:
+	.incbin "baserom.dol", 0x32BCBC, 0x4
+.global sMinV
+sMinV:
+	.incbin "baserom.dol", 0x32BCC0, 0x4
+.global sRangeV
+sRangeV:
+	.incbin "baserom.dol", 0x32BCC4, 0x4
+.global sAmbientRed
+sAmbientRed:
+	.incbin "baserom.dol", 0x32BCC8, 0x4
+.global sSwingRadius
+sSwingRadius:
+	.incbin "baserom.dol", 0x32BCCC, 0x4
+.global sSwingTargetRadius
+sSwingTargetRadius:
+	.incbin "baserom.dol", 0x32BCD0, 0x4
+.global sSwingReelTargetRadius
+sSwingReelTargetRadius:
+	.incbin "baserom.dol", 0x32BCD4, 0x4
+.global sPreSwingVelocity
+sPreSwingVelocity:
+	.incbin "baserom.dol", 0x32BCD8, 0x4
+.global sSwingSpringK
+sSwingSpringK:
+	.incbin "baserom.dol", 0x32BCDC, 0x4
+.global sSwingGravity
+sSwingGravity:
+	.incbin "baserom.dol", 0x32BCE0, 0x4
+.global sSwingInputMult
+sSwingInputMult:
+	.incbin "baserom.dol", 0x32BCE4, 0x4
+.global sForcedLerp
+sForcedLerp:
+	.incbin "baserom.dol", 0x32BCE8, 0x4
+.global sRetractVel
+sRetractVel:
+	.incbin "baserom.dol", 0x32BCEC, 0x4
+.global sMinHoldMag
+sMinHoldMag:
+	.incbin "baserom.dol", 0x32BCF0, 0x4
+.global sKickOutVel
+sKickOutVel:
+	.incbin "baserom.dol", 0x32BCF4, 0x4
+.global sKickUpVel
+sKickUpVel:
+	.incbin "baserom.dol", 0x32BCF8, 0x4
+.global sGrappleReticleRed
+sGrappleReticleRed:
+	.incbin "baserom.dol", 0x32BCFC, 0x1
+.global sGrappleReticleGreen
+sGrappleReticleGreen:
+	.incbin "baserom.dol", 0x32BCFD, 0x1
+.global sGrappleReticleBlue
+sGrappleReticleBlue:
+	.incbin "baserom.dol", 0x32BCFE, 0x2
+.global sRetractPos
+sRetractPos:
+	.incbin "baserom.dol", 0x32BD00, 0xC
+.global sNPCRotSpeed
+sNPCRotSpeed:
+	.incbin "baserom.dol", 0x32BD0C, 0x4
+.global sNPCPrefAng
+sNPCPrefAng:
+	.incbin "baserom.dol", 0x32BD10, 0x4
+.global sNPCTossForwardAng
+sNPCTossForwardAng:
+	.incbin "baserom.dol", 0x32BD14, 0x4
+.global sGrabRotSpeed
+sGrabRotSpeed:
+	.incbin "baserom.dol", 0x32BD18, 0x4
+.global sMaxTargetDist
+sMaxTargetDist:
+	.incbin "baserom.dol", 0x32BD1C, 0x4
+.global sMinTargetDist
+sMinTargetDist:
+	.incbin "baserom.dol", 0x32BD20, 0x4
+.global sMinTargetDot
+sMinTargetDot:
+	.incbin "baserom.dol", 0x32BD24, 0x4
+.global sStretchFactorAccel
+sStretchFactorAccel:
+	.incbin "baserom.dol", 0x32BD28, 0x4
+.global sStretchFactorMaxVel
+sStretchFactorMaxVel:
+	.incbin "baserom.dol", 0x32BD2C, 0x4
+.global sStretchFactorSubtract
+sStretchFactorSubtract:
+	.incbin "baserom.dol", 0x32BD30, 0x4
+.global sSpinPosSpringD
+sSpinPosSpringD:
+	.incbin "baserom.dol", 0x32BD34, 0x4
+.global sSpinPosSpringK
+sSpinPosSpringK:
+	.incbin "baserom.dol", 0x32BD38, 0x4
+.global sSpinMinRadius
+sSpinMinRadius:
+	.incbin "baserom.dol", 0x32BD3C, 0x4
+.global sSpinMinSpeed
+sSpinMinSpeed:
+	.incbin "baserom.dol", 0x32BD40, 0x4
+.global sSpinMaxSpeed
+sSpinMaxSpeed:
+	.incbin "baserom.dol", 0x32BD44, 0x4
+.global sSpinRampTime
+sSpinRampTime:
+	.incbin "baserom.dol", 0x32BD48, 0x4
+.global sSpinYDrop
+sSpinYDrop:
+	.incbin "baserom.dol", 0x32BD4C, 0x4
+.global sSpinLevel
+sSpinLevel:
+	.incbin "baserom.dol", 0x32BD50, 0x28
+
 .section .text
 
 .global ParseIni__17zElastiGirlPlayerFv

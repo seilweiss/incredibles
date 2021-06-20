@@ -30,6 +30,15 @@ lbl_803D9404:
 lbl_803D9408:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__12EnergyStream
+__vt__12EnergyStream:
+	.incbin "baserom.dol", 0x32DB08, 0x20
+.global __vt__Q21z30lightweight$$012EnergyStream$$412$$1
+__vt__Q21z30lightweight$$012EnergyStream$$412$$1:
+	.incbin "baserom.dol", 0x32DB28, 0x20
+
 .section .text
 
 .global initRibbon__27$$2unnamed$$2zEnergyStream_cpp$$2FP9xFXRibbon

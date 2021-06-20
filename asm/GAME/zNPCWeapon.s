@@ -36,6 +36,12 @@ animContracting__Q24zNPC6Weapon:
 counter$1493:
 	.skip 0x8
 
+.section .sdata
+
+.global need_setup__Q24zNPC17ElectricitySystem
+need_setup__Q24zNPC17ElectricitySystem:
+	.incbin "baserom.dol", 0x32D1F8, 0x8
+
 .section .text
 
 .global setup__Q24zNPC17ElectricitySystemFv

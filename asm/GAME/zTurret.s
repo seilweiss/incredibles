@@ -39,6 +39,12 @@ oldOuterCallbackData:
 shootingStateAnims__7zTurret:
 	.skip 0xC
 
+.section .sdata
+
+.global __vt__13zTurretCamera
+__vt__13zTurretCamera:
+	.incbin "baserom.dol", 0x32D080, 0x28
+
 .section .text
 
 .global Set2DVertex__21$$2unnamed$$2zTurret_cpp$$2FP18rwGameCube2DVertexffffff

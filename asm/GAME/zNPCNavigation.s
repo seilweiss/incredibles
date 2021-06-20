@@ -162,6 +162,15 @@ $$21750_1:
 lbl_803D8F48:
 	.skip 0x8
 
+.section .sdata
+
+.global left_normal
+left_normal:
+	.incbin "baserom.dol", 0x32CE28, 0x8
+.global right_normal
+right_normal:
+	.incbin "baserom.dol", 0x32CE30, 0x8
+
 .section .text
 
 .global __ct__Q24zNPC4jumpFv

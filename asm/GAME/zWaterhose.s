@@ -120,6 +120,30 @@ lbl_803D9164:
 $$2693_0:
 	.skip 0x28
 
+.section .sdata
+
+.global waterhoseCollisionInfo
+waterhoseCollisionInfo:
+	.incbin "baserom.dol", 0x32D110, 0x4
+.global lbl_803CD5D4
+lbl_803CD5D4:
+	.incbin "baserom.dol", 0x32D114, 0x4
+.global lbl_803CD5D8
+lbl_803CD5D8:
+	.incbin "baserom.dol", 0x32D118, 0x8
+.global lbl_803CD5E0
+lbl_803CD5E0:
+	.incbin "baserom.dol", 0x32D120, 0x4
+.global cb_change_texture$1372
+cb_change_texture$1372:
+	.incbin "baserom.dol", 0x32D124, 0x24
+.global lbl_803CD608
+lbl_803CD608:
+	.incbin "baserom.dol", 0x32D148, 0x4
+.global cb_change_textureB$1375
+cb_change_textureB$1375:
+	.incbin "baserom.dol", 0x32D14C, 0x2C
+
 .section .text
 
 .global Init__16zWaterhoseWidgetFR5xBaseR9xDynAssetUl

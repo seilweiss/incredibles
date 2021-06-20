@@ -33,6 +33,42 @@ $$2stringBase0_128:
 system_id__Q24zNPC11glow_streak:
 	.skip 0x8
 
+.section .sdata
+
+.global rot_delta__Q24zNPC11glow_streak
+rot_delta__Q24zNPC11glow_streak:
+	.incbin "baserom.dol", 0x32D538, 0x4
+.global life__Q24zNPC11glow_streak
+life__Q24zNPC11glow_streak:
+	.incbin "baserom.dol", 0x32D53C, 0x4
+.global start_alpha__Q24zNPC11glow_streak
+start_alpha__Q24zNPC11glow_streak:
+	.incbin "baserom.dol", 0x32D540, 0x4
+.global fade_start__Q24zNPC11glow_streak
+fade_start__Q24zNPC11glow_streak:
+	.incbin "baserom.dol", 0x32D544, 0x4
+.global size__Q24zNPC11glow_streak
+size__Q24zNPC11glow_streak:
+	.incbin "baserom.dol", 0x32D548, 0x4
+.global emit_rate__Q24zNPC11glow_streak
+emit_rate__Q24zNPC11glow_streak:
+	.incbin "baserom.dol", 0x32D54C, 0x4
+.global slow__Q24zNPC11glow_streak
+slow__Q24zNPC11glow_streak:
+	.incbin "baserom.dol", 0x32D550, 0x4
+.global horizontal_speed__Q24zNPC11glow_streak
+horizontal_speed__Q24zNPC11glow_streak:
+	.incbin "baserom.dol", 0x32D554, 0x4
+.global max_y__Q24zNPC11glow_streak
+max_y__Q24zNPC11glow_streak:
+	.incbin "baserom.dol", 0x32D558, 0x4
+.global min_y__Q24zNPC11glow_streak
+min_y__Q24zNPC11glow_streak:
+	.incbin "baserom.dol", 0x32D55C, 0x4
+.global color__Q24zNPC11glow_streak
+color__Q24zNPC11glow_streak:
+	.incbin "baserom.dol", 0x32D560, 0x8
+
 .section .text
 
 .global setup__Q24zNPC16energy_glow_boneFv

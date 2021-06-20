@@ -6,6 +6,18 @@
 $$2stringBase0_52:
 	.incbin "baserom.dol", 0x2D9970, 0x30
 
+.section .sdata
+
+.global sRedMultiplier
+sRedMultiplier:
+	.incbin "baserom.dol", 0x32BD90, 0x4
+.global sGreenMultiplier
+sGreenMultiplier:
+	.incbin "baserom.dol", 0x32BD94, 0x4
+.global sBlueMultiplier
+sBlueMultiplier:
+	.incbin "baserom.dol", 0x32BD98, 0x8
+
 .section .text
 
 .global zEntButton_Init__FPvPv

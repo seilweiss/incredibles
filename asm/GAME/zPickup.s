@@ -30,6 +30,12 @@ extras_used__7zPickup:
 extras_max__7zPickup:
 	.skip 0x8
 
+.section .sdata
+
+.global sPickupOrientation
+sPickupOrientation:
+	.incbin "baserom.dol", 0x32D500, 0x30
+
 .section .text
 
 .global SceneSetup__7zPickupFv

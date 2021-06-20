@@ -1,5 +1,20 @@
 .include "macros.inc"
 
+.section .sdata
+
+.global __vt__Q27xRumble16sphericalEmitter
+__vt__Q27xRumble16sphericalEmitter:
+	.incbin "baserom.dol", 0x32B398, 0x14
+.global __vt__Q27xRumble10boxEmitter
+__vt__Q27xRumble10boxEmitter:
+	.incbin "baserom.dol", 0x32B3AC, 0x10
+.global __vt__Q27xRumble11emitterBase
+__vt__Q27xRumble11emitterBase:
+	.incbin "baserom.dol", 0x32B3BC, 0x10
+.global __vt__Q27xRumble6effect
+__vt__Q27xRumble6effect:
+	.incbin "baserom.dol", 0x32B3CC, 0x14
+
 .section .text
 
 .global emitter_EventCB__28$$2unnamed$$2xRumbleEmitter_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi

@@ -21,6 +21,12 @@ asyncSema:
 needToLock:
 	.skip 0x4
 
+.section .sdata
+
+.global asyncThreadDone
+asyncThreadDone:
+	.incbin "baserom.dol", 0x32B5E0, 0x8
+
 .section .text
 
 .global iAsyncStart__FPFPv_Pv

@@ -48,6 +48,15 @@ numWaterObjects:
 defaultRenderCB:
 	.skip 0x8
 
+.section .sdata
+
+.global waterTexID
+waterTexID:
+	.incbin "baserom.dol", 0x32DAD8, 0x4
+.global enableWater
+enableWater:
+	.incbin "baserom.dol", 0x32DADC, 0x4
+
 .section .text
 
 .global CreateDirectionalLight__Fv

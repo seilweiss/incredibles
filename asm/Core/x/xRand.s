@@ -15,6 +15,12 @@ initf:
 next_1:
 	.skip 0x4
 
+.section .sdata
+
+.global left
+left:
+	.incbin "baserom.dol", 0x32B388, 0x8
+
 .section .text
 
 .global init_genrand__FUi

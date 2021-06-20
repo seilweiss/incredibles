@@ -120,6 +120,81 @@ lbl_803D8E8C:
 lbl_803D8E90:
 	.skip 0x8
 
+.section .sdata
+
+.global sProjBoundShift
+sProjBoundShift:
+	.incbin "baserom.dol", 0x32CDC0, 0x4
+.global sProjBlendTime__4zNPC
+sProjBlendTime__4zNPC:
+	.incbin "baserom.dol", 0x32CDC4, 0x4
+.global sProjBounceBouncy__4zNPC
+sProjBounceBouncy__4zNPC:
+	.incbin "baserom.dol", 0x32CDC8, 0x4
+.global sProjBounceTransBouncy__4zNPC
+sProjBounceTransBouncy__4zNPC:
+	.incbin "baserom.dol", 0x32CDCC, 0x4
+.global sProjFrictionBouncy__4zNPC
+sProjFrictionBouncy__4zNPC:
+	.incbin "baserom.dol", 0x32CDD0, 0x4
+.global sProjVelMultiplierBouncy__4zNPC
+sProjVelMultiplierBouncy__4zNPC:
+	.incbin "baserom.dol", 0x32CDD4, 0x4
+.global sProjAirResist__4zNPC
+sProjAirResist__4zNPC:
+	.incbin "baserom.dol", 0x32CDD8, 0x4
+.global sProjBounce__4zNPC
+sProjBounce__4zNPC:
+	.incbin "baserom.dol", 0x32CDDC, 0x4
+.global sProjBounceTrans__4zNPC
+sProjBounceTrans__4zNPC:
+	.incbin "baserom.dol", 0x32CDE0, 0x4
+.global sProjFriction__4zNPC
+sProjFriction__4zNPC:
+	.incbin "baserom.dol", 0x32CDE4, 0x4
+.global sProjLimbGrav__4zNPC
+sProjLimbGrav__4zNPC:
+	.incbin "baserom.dol", 0x32CDE8, 0x4
+.global sProjMaxAngAccel__4zNPC
+sProjMaxAngAccel__4zNPC:
+	.incbin "baserom.dol", 0x32CDEC, 0x4
+.global sProjMaxAngVel__4zNPC
+sProjMaxAngVel__4zNPC:
+	.incbin "baserom.dol", 0x32CDF0, 0x4
+.global sProjLerpSpeed__4zNPC
+sProjLerpSpeed__4zNPC:
+	.incbin "baserom.dol", 0x32CDF4, 0x4
+.global sProjMinVel2__4zNPC
+sProjMinVel2__4zNPC:
+	.incbin "baserom.dol", 0x32CDF8, 0x4
+.global sProjMinVelY__4zNPC
+sProjMinVelY__4zNPC:
+	.incbin "baserom.dol", 0x32CDFC, 0x4
+.global sProjNPCGravity__4zNPC
+sProjNPCGravity__4zNPC:
+	.incbin "baserom.dol", 0x32CE00, 0x4
+.global sProjNPCHeight__4zNPC
+sProjNPCHeight__4zNPC:
+	.incbin "baserom.dol", 0x32CE04, 0x4
+.global sProjNPCRadius__4zNPC
+sProjNPCRadius__4zNPC:
+	.incbin "baserom.dol", 0x32CE08, 0x4
+.global sProjThrowVelAngle__4zNPC
+sProjThrowVelAngle__4zNPC:
+	.incbin "baserom.dol", 0x32CE0C, 0x4
+.global sProjDropVelMag__4zNPC
+sProjDropVelMag__4zNPC:
+	.incbin "baserom.dol", 0x32CE10, 0x4
+.global sProjDropVelAngle__4zNPC
+sProjDropVelAngle__4zNPC:
+	.incbin "baserom.dol", 0x32CE14, 0x4
+.global sProjBoundResetSpeed__4zNPC
+sProjBoundResetSpeed__4zNPC:
+	.incbin "baserom.dol", 0x32CE18, 0x4
+.global sProjNPCFallThru__4zNPC
+sProjNPCFallThru__4zNPC:
+	.incbin "baserom.dol", 0x32CE1C, 0x4
+
 .section .text
 
 .global zNPC_ForceEffect__23$$2unnamed$$2zNPCMelee_cpp$$2FP9xAnimPlayPCc

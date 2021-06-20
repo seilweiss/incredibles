@@ -48,6 +48,12 @@ lbl_803D91E4:
 lbl_803D91E8:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__Q21z33lightweight_system$$0Q21z5shell$$415$$1
+__vt__Q21z33lightweight_system$$0Q21z5shell$$415$$1:
+	.incbin "baserom.dol", 0x32D208, 0x28
+
 .section .text
 
 .global runnable__Q24zNPC7bot_lobFf

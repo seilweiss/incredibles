@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata
+
+.global __vt__Q212zIncrediBall6camera
+__vt__Q212zIncrediBall6camera:
+	.incbin "baserom.dol", 0x32D1D0, 0x28
+
 .section .text
 
 .global create__Q212zIncrediBall6cameraFv

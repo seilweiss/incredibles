@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata
+
+.global __vt__9zCamSwing
+__vt__9zCamSwing:
+	.incbin "baserom.dol", 0x32B8E8, 0x28
+
 .section .text
 
 .global create__9zCamSwingFv

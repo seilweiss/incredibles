@@ -9,6 +9,12 @@ activities__12xLightVolume:
 activities_used__12xLightVolume:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__17xLightVolumeModel
+__vt__17xLightVolumeModel:
+	.incbin "baserom.dol", 0x32D850, 0x10
+
 .section .text
 
 .global scene_enter__12xLightVolumeFv

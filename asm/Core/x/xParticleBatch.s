@@ -42,6 +42,12 @@ $$21054:
 $$21295:
 	.skip 0x4
 
+.section .sdata
+
+.global BATCH_BLOCK_SIZE__28$$2unnamed$$2xParticleBatch_cpp$$2
+BATCH_BLOCK_SIZE__28$$2unnamed$$2xParticleBatch_cpp$$2:
+	.incbin "baserom.dol", 0x32D178, 0x8
+
 .section .text
 
 .global add_tweaks__Q228$$2unnamed$$2xParticleBatch_cpp$$25tweakFv

@@ -12,6 +12,15 @@ m_pCurrentAsset__24$$2unnamed$$2xSubTitles_cpp$$2:
 m_uLastTimeKey__24$$2unnamed$$2xSubTitles_cpp$$2:
 	.skip 0x8
 
+.section .sdata
+
+.global subtitleFontWidth__24$$2unnamed$$2xSubTitles_cpp$$2
+subtitleFontWidth__24$$2unnamed$$2xSubTitles_cpp$$2:
+	.incbin "baserom.dol", 0x32B598, 0x4
+.global subtitleFontHeight__24$$2unnamed$$2xSubTitles_cpp$$2
+subtitleFontHeight__24$$2unnamed$$2xSubTitles_cpp$$2:
+	.incbin "baserom.dol", 0x32B59C, 0x4
+
 .section .text
 
 .global xSubTitlesInit__Fv

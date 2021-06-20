@@ -87,6 +87,27 @@ init$localstatic4$get_system__Q21z30lightweight$$012EnergyStream$$412$$1Fv:
 quad_buffer__4zNPC:
 	.skip 0xC
 
+.section .sdata
+
+.global zNPC_PULSE_GLARE_SIZE__4zNPC
+zNPC_PULSE_GLARE_SIZE__4zNPC:
+	.incbin "baserom.dol", 0x32C2D0, 0x4
+.global zNPC_FLASH_GLARE_SIZE__4zNPC
+zNPC_FLASH_GLARE_SIZE__4zNPC:
+	.incbin "baserom.dol", 0x32C2D4, 0x4
+.global need_setup__Q24zNPC12muzzel_flash
+need_setup__Q24zNPC12muzzel_flash:
+	.incbin "baserom.dol", 0x32C2D8, 0x4
+.global __vt__Q21z37lightweight_system$$012EnergyStream$$412$$1
+__vt__Q21z37lightweight_system$$012EnergyStream$$412$$1:
+	.incbin "baserom.dol", 0x32C2DC, 0x24
+.global __vt__Q21z38lightweight_system$$0Q21z10uber_laser$$45$$1
+__vt__Q21z38lightweight_system$$0Q21z10uber_laser$$45$$1:
+	.incbin "baserom.dol", 0x32C300, 0x24
+.global __vt__Q21z43lightweight_system$$018zTurretSmokeSystem$$410$$1
+__vt__Q21z43lightweight_system$$018zTurretSmokeSystem$$410$$1:
+	.incbin "baserom.dol", 0x32C324, 0x24
+
 .section .text
 
 .global setup__Q24zNPC14shrapnel_deathFv

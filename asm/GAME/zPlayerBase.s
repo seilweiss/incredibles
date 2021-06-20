@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata
+
+.global sMemDepthJustHIPStartPlayer
+sMemDepthJustHIPStartPlayer:
+	.incbin "baserom.dol", 0x32CEA0, 0x8
+
 .section .text
 
 .global zPlayerUpdate__FP4xEntP6xScenef

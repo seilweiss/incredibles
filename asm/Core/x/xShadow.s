@@ -60,6 +60,27 @@ lbl_803D889C:
 $$21140:
 	.skip 0x40
 
+.section .sdata
+
+.global ShadowLightColor
+ShadowLightColor:
+	.incbin "baserom.dol", 0x32B4E0, 0x10
+.global SHADOW_CACHE_POLY_MAX
+SHADOW_CACHE_POLY_MAX:
+	.incbin "baserom.dol", 0x32B4F0, 0x4
+.global rscale
+rscale:
+	.incbin "baserom.dol", 0x32B4F4, 0x4
+.global gCamPos
+gCamPos:
+	.incbin "baserom.dol", 0x32B4F8, 0xC
+.global sCastEnvironment
+sCastEnvironment:
+	.incbin "baserom.dol", 0x32B504, 0x4
+.global SHADOW_CACHE_MAX
+SHADOW_CACHE_MAX:
+	.incbin "baserom.dol", 0x32B508, 0x8
+
 .section .text
 
 .global xShadowInit__Fv

@@ -147,6 +147,12 @@ lbl_803D8AD8:
 lbl_803D8ADC:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__10zCamPlayer
+__vt__10zCamPlayer:
+	.incbin "baserom.dol", 0x32B8C0, 0x28
+
 .section .text
 
 .global bound_sphere_xz__24$$2unnamed$$2zCamPlayer_cpp$$2FRfRfRfRfffffff

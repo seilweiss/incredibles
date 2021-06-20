@@ -30,6 +30,90 @@ reticleRast:
 sIconAngle:
 	.skip 0x8
 
+.section .sdata
+
+.global sAlpha
+sAlpha:
+	.incbin "baserom.dol", 0x32D238, 0x4
+.global sFadeInSpeed
+sFadeInSpeed:
+	.incbin "baserom.dol", 0x32D23C, 0x4
+.global sFadeOutSpeed
+sFadeOutSpeed:
+	.incbin "baserom.dol", 0x32D240, 0x4
+.global sMinDist
+sMinDist:
+	.incbin "baserom.dol", 0x32D244, 0x4
+.global sPulseAmp
+sPulseAmp:
+	.incbin "baserom.dol", 0x32D248, 0x4
+.global sPulseSpeed
+sPulseSpeed:
+	.incbin "baserom.dol", 0x32D24C, 0x4
+.global sRotSpeed
+sRotSpeed:
+	.incbin "baserom.dol", 0x32D250, 0x4
+.global sSwirlMaxU
+sSwirlMaxU:
+	.incbin "baserom.dol", 0x32D254, 0x4
+.global sSwirlMinU
+sSwirlMinU:
+	.incbin "baserom.dol", 0x32D258, 0x4
+.global sSwirlMaxV
+sSwirlMaxV:
+	.incbin "baserom.dol", 0x32D25C, 0x4
+.global sSwirlMinV
+sSwirlMinV:
+	.incbin "baserom.dol", 0x32D260, 0x4
+.global sSwirlRed
+sSwirlRed:
+	.incbin "baserom.dol", 0x32D264, 0x1
+.global sSwirlGreen
+sSwirlGreen:
+	.incbin "baserom.dol", 0x32D265, 0x1
+.global sSwirlBlue
+sSwirlBlue:
+	.incbin "baserom.dol", 0x32D266, 0x2
+.global sLetterMaxU
+sLetterMaxU:
+	.incbin "baserom.dol", 0x32D268, 0x4
+.global sLetterMinU
+sLetterMinU:
+	.incbin "baserom.dol", 0x32D26C, 0x4
+.global sLetterMaxV
+sLetterMaxV:
+	.incbin "baserom.dol", 0x32D270, 0x4
+.global sLetterMinV
+sLetterMinV:
+	.incbin "baserom.dol", 0x32D274, 0x4
+.global sLetterRed
+sLetterRed:
+	.incbin "baserom.dol", 0x32D278, 0x1
+.global sLetterGreen
+sLetterGreen:
+	.incbin "baserom.dol", 0x32D279, 0x1
+.global sLetterBlue
+sLetterBlue:
+	.incbin "baserom.dol", 0x32D27A, 0x2
+.global sXMult
+sXMult:
+	.incbin "baserom.dol", 0x32D27C, 0x4
+.global activeReticle
+activeReticle:
+	.incbin "baserom.dol", 0x32D280, 0x4
+.global sAlphaUpRate
+sAlphaUpRate:
+	.incbin "baserom.dol", 0x32D284, 0x4
+.global sAlphaDownRate
+sAlphaDownRate:
+	.incbin "baserom.dol", 0x32D288, 0x4
+.global sMinDrawDist2
+sMinDrawDist2:
+	.incbin "baserom.dol", 0x32D28C, 0x4
+.global sMaxDrawAlpha
+sMaxDrawAlpha:
+	.incbin "baserom.dol", 0x32D290, 0x8
+
 .section .text
 
 .global zReticle_Init__Fv

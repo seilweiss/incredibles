@@ -6,6 +6,18 @@
 zeroMemoryAddress__28$$2unnamed$$2xMemoryManager_cpp$$2:
 	.skip 0x8
 
+.section .sdata
+
+.global MEM_CLEAR_VALUE__28$$2unnamed$$2xMemoryManager_cpp$$2
+MEM_CLEAR_VALUE__28$$2unnamed$$2xMemoryManager_cpp$$2:
+	.incbin "baserom.dol", 0x32D878, 0x4
+.global MEM_DEALLOC_VALUE__28$$2unnamed$$2xMemoryManager_cpp$$2
+MEM_DEALLOC_VALUE__28$$2unnamed$$2xMemoryManager_cpp$$2:
+	.incbin "baserom.dol", 0x32D87C, 0x4
+.global __vt__14xMemoryManager
+__vt__14xMemoryManager:
+	.incbin "baserom.dol", 0x32D880, 0x20
+
 .section .text
 
 .global Allocate__14xMemoryManagerFUiUi

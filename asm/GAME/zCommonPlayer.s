@@ -66,6 +66,21 @@ lbl_803D8B10:
 lbl_803D8B14:
 	.skip 0x4
 
+.section .sdata
+
+.global null_xvec3$localstatic3$Pos__7zPickupFv
+null_xvec3$localstatic3$Pos__7zPickupFv:
+	.incbin "baserom.dol", 0x32BAD0, 0xC
+.global CENTER_OF_MASS_HEIGHT
+CENTER_OF_MASS_HEIGHT:
+	.incbin "baserom.dol", 0x32BADC, 0x4
+.global damageResponseSurface__27$$2unnamed$$2zCommonPlayer_cpp$$2
+damageResponseSurface__27$$2unnamed$$2zCommonPlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32BAE0, 0x10
+.global noMove$3351
+noMove$3351:
+	.incbin "baserom.dol", 0x32BAF0, 0x18
+
 .section .text
 
 .global SetupRumbleEffects__27$$2unnamed$$2zCommonPlayer_cpp$$2FPCQ227$$2unnamed$$2zCommonPlayer_cpp$$212RumbleParamsi

@@ -36,6 +36,12 @@ sPartitionVolume:
 gNumTemporaryLights:
 	.skip 0x8
 
+.section .sdata
+
+.global sDefaultShadowVec
+sDefaultShadowVec:
+	.incbin "baserom.dol", 0x32C140, 0x10
+
 .section .text
 
 .global zLightResetAll__FP4xEnv

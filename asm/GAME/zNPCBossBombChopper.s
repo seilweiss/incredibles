@@ -78,6 +78,21 @@ lbl_803D943C:
 lbl_803D9440:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__Q24zNPC13rocket_attack
+__vt__Q24zNPC13rocket_attack:
+	.incbin "baserom.dol", 0x32DB60, 0x14
+.global __vt__Q24zNPC12laser_attack
+__vt__Q24zNPC12laser_attack:
+	.incbin "baserom.dol", 0x32DB74, 0x14
+.global __vt__Q24zNPC10lob_attack
+__vt__Q24zNPC10lob_attack:
+	.incbin "baserom.dol", 0x32DB88, 0x14
+.global __vt__Q24zNPC14chopper_attack
+__vt__Q24zNPC14chopper_attack:
+	.incbin "baserom.dol", 0x32DB9C, 0x14
+
 .section .text
 
 .global get_default_light_kit__33$$2unnamed$$2zNPCBossBombChopper_cpp$$2Fv

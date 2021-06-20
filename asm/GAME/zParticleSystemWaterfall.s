@@ -1,5 +1,26 @@
 .include "macros.inc"
 
+.section .sdata
+
+.global __vt__33zParticleGeneratorWaterfallSplash
+__vt__33zParticleGeneratorWaterfallSplash:
+	.incbin "baserom.dol", 0x32D960, 0x14
+.global __vt__30zParticleSystemWaterfallSplash
+__vt__30zParticleSystemWaterfallSplash:
+	.incbin "baserom.dol", 0x32D974, 0x34
+.global __vt__31zParticleGeneratorWaterfallMist
+__vt__31zParticleGeneratorWaterfallMist:
+	.incbin "baserom.dol", 0x32D9A8, 0x14
+.global __vt__28zParticleSystemWaterfallMist
+__vt__28zParticleSystemWaterfallMist:
+	.incbin "baserom.dol", 0x32D9BC, 0x34
+.global __vt__27zParticleGeneratorWaterfall
+__vt__27zParticleGeneratorWaterfall:
+	.incbin "baserom.dol", 0x32D9F0, 0x14
+.global __vt__24zParticleSystemWaterfall
+__vt__24zParticleSystemWaterfall:
+	.incbin "baserom.dol", 0x32DA04, 0x34
+
 .section .text
 
 .global __ct__30zParticleSystemWaterfallSplashFv

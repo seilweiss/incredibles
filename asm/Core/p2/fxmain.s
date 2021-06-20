@@ -12,6 +12,15 @@ Effects:
 EffectIndex:
 	.skip 0x8
 
+.section .sdata
+
+.global FxFrameArray
+FxFrameArray:
+	.incbin "baserom.dol", 0x32DAF0, 0x8
+.global EffectOpenFunctions
+EffectOpenFunctions:
+	.incbin "baserom.dol", 0x32DAF8, 0x8
+
 .section .text
 
 .global MaterialSetupEffect__FP10RpMaterialPv

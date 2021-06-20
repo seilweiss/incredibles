@@ -24,6 +24,12 @@ __vt__Q24zNPC12initial_anim:
 $$2stringBase0_80:
 	.incbin "baserom.dol", 0x2E00C0, 0xC8
 
+.section .sdata
+
+.global splash_type__22$$2unnamed$$2zNPCMine_cpp$$2
+splash_type__22$$2unnamed$$2zNPCMine_cpp$$2:
+	.incbin "baserom.dol", 0x32CE20, 0x8
+
 .section .text
 
 .global setup__Q24zNPC12initial_animFv

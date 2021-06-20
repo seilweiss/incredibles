@@ -63,6 +63,15 @@ lbl_803D883C:
 $$21311_3:
 	.skip 0x40
 
+.section .sdata
+
+.global da_date$764
+da_date$764:
+	.incbin "baserom.dol", 0x32B3E0, 0x20
+.global slotname$1200
+slotname$1200:
+	.incbin "baserom.dol", 0x32B400, 0x20
+
 .section .text
 
 .global xSGStartup__Fv

@@ -45,6 +45,24 @@ oldcullmode__1z:
 oldvertexalphaenable__1z:
 	.skip 0x4
 
+.section .sdata
+
+.global laser_soundgroup__1z
+laser_soundgroup__1z:
+	.incbin "baserom.dol", 0x32BA80, 0x4
+.global laser_splash_soundgroup__1z
+laser_splash_soundgroup__1z:
+	.incbin "baserom.dol", 0x32BA84, 0x4
+.global impact_laser_soundgroup__1z
+impact_laser_soundgroup__1z:
+	.incbin "baserom.dol", 0x32BA88, 0x4
+.global __vt__Q21z5laser
+__vt__Q21z5laser:
+	.incbin "baserom.dol", 0x32BA8C, 0x20
+.global __vt__Q21z26lightweight$$0Q21z5laser$$440$$1
+__vt__Q21z26lightweight$$0Q21z5laser$$440$$1:
+	.incbin "baserom.dol", 0x32BAAC, 0x24
+
 .section .text
 
 .global zLaserLavaEmit__1zFfP18zTimeHandlerStruct

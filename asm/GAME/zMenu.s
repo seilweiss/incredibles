@@ -39,6 +39,24 @@ corruptFileCount:
 sAllowAttract:
 	.skip 0x4
 
+.section .sdata
+
+.global sFirstBoot
+sFirstBoot:
+	.incbin "baserom.dol", 0x32C1A8, 0x4
+.global time_elapsed
+time_elapsed:
+	.incbin "baserom.dol", 0x32C1AC, 0x4
+.global frozone_speaks
+frozone_speaks:
+	.incbin "baserom.dol", 0x32C1B0, 0x4
+.global ONELINER_WAITTIME
+ONELINER_WAITTIME:
+	.incbin "baserom.dol", 0x32C1B4, 0x4
+.global holdTmr
+holdTmr:
+	.incbin "baserom.dol", 0x32C1B8, 0x8
+
 .section .text
 
 .global zMenuDecrementIdleTimer__Fv

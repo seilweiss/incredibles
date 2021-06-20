@@ -6,6 +6,15 @@
 g_I3:
 	.skip 0x40
 
+.section .sdata
+
+.global gs_fTolerance
+gs_fTolerance:
+	.incbin "baserom.dol", 0x32B2C8, 0x4
+.global nxt$2145
+nxt$2145:
+	.incbin "baserom.dol", 0x32B2CC, 0xC
+
 .section .text
 
 .global xMath3Init__Fv

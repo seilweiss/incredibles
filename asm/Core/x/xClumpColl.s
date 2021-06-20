@@ -81,6 +81,15 @@ lbl_803D8588:
 lbl_803D858C:
 	.skip 0x4
 
+.section .sdata
+
+.global xClumpColl_FilterFlags
+xClumpColl_FilterFlags:
+	.incbin "baserom.dol", 0x32B018, 0x1
+.global xClumpColl_FilterFlagsAllEqual
+xClumpColl_FilterFlagsAllEqual:
+	.incbin "baserom.dol", 0x32B019, 0x7
+
 .section .text
 
 .global xClumpColl_SetFilterFlags__FUcUcUc

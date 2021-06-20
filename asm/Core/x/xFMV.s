@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sdata
+
+.global sFMVVolumeScale
+sFMVVolumeScale:
+	.incbin "baserom.dol", 0x32B140, 0x4
+.global sxFMVPauseSoundCB
+sxFMVPauseSoundCB:
+	.incbin "baserom.dol", 0x32B144, 0x4
+
 .section .text
 
 .global xFMVPauseSound__Fb

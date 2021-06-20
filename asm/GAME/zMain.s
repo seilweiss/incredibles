@@ -84,6 +84,30 @@ $$21778_0:
 $$21864_2:
 	.skip 0x8
 
+.section .sdata
+
+.global VBLANKS_PER_SEC
+VBLANKS_PER_SEC:
+	.incbin "baserom.dol", 0x32C180, 0x4
+.global FB_XRES
+FB_XRES:
+	.incbin "baserom.dol", 0x32C184, 0x4
+.global FB_YRES
+FB_YRES:
+	.incbin "baserom.dol", 0x32C188, 0x4
+.global FB_DEPTH
+FB_DEPTH:
+	.incbin "baserom.dol", 0x32C18C, 0x4
+.global xglobals
+xglobals:
+	.incbin "baserom.dol", 0x32C190, 0x4
+.global sShowMenuOnBoot
+sShowMenuOnBoot:
+	.incbin "baserom.dol", 0x32C194, 0x4
+.global g_xser_sizeinfo
+g_xser_sizeinfo:
+	.incbin "baserom.dol", 0x32C198, 0x10
+
 .section .text
 
 .global zMainSetPAL__Fv

@@ -75,6 +75,36 @@ gxFlareFrame:
 dumpFlares:
 	.skip 0x4
 
+.section .sdata
+
+.global sLetterBoxAlpha
+sLetterBoxAlpha:
+	.incbin "baserom.dol", 0x32B458, 0x4
+.global sFullScreenGlareDir
+sFullScreenGlareDir:
+	.incbin "baserom.dol", 0x32B45C, 0xC
+.global sFullScreenGlareIntensity
+sFullScreenGlareIntensity:
+	.incbin "baserom.dol", 0x32B468, 0x4
+.global sFullScreenGlareColor
+sFullScreenGlareColor:
+	.incbin "baserom.dol", 0x32B46C, 0x4
+.global sFullScreenGlareTextureID
+sFullScreenGlareTextureID:
+	.incbin "baserom.dol", 0x32B470, 0x4
+.global indices$1568
+indices$1568:
+	.incbin "baserom.dol", 0x32B474, 0x8
+.global sCameraFXTable
+sCameraFXTable:
+	.incbin "baserom.dol", 0x32B47C, 0x24
+.global sDefaultLensFlareParams
+sDefaultLensFlareParams:
+	.incbin "baserom.dol", 0x32B4A0, 0x10
+.global sLensFlareParams
+sLensFlareParams:
+	.incbin "baserom.dol", 0x32B4B0, 0x8
+
 .section .text
 
 .global xScrFxInit__Fv

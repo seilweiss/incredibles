@@ -6,6 +6,15 @@
 $$2stringBase0_94:
 	.incbin "baserom.dol", 0x2E27A8, 0x68
 
+.section .sdata
+
+.global __vt__Q21z26lightweight$$0Q21z5shell$$415$$1
+__vt__Q21z26lightweight$$0Q21z5shell$$415$$1:
+	.incbin "baserom.dol", 0x32CF38, 0x20
+.global __vt__Q21z5shell
+__vt__Q21z5shell:
+	.incbin "baserom.dol", 0x32CF58, 0x20
+
 .section .text
 
 .global find_model__1zFPCcRUi

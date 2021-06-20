@@ -84,6 +84,15 @@ lbl_803D91AC:
 lbl_803D91B0:
 	.skip 0x8
 
+.section .sdata
+
+.global texture_key_names__21$$2unnamed$$2zSplash_cpp$$2
+texture_key_names__21$$2unnamed$$2zSplash_cpp$$2:
+	.incbin "baserom.dol", 0x32D180, 0x20
+.global cone_texture_repeats__21$$2unnamed$$2zSplash_cpp$$2
+cone_texture_repeats__21$$2unnamed$$2zSplash_cpp$$2:
+	.incbin "baserom.dol", 0x32D1A0, 0x8
+
 .section .text
 
 .global refresh_splash__21$$2unnamed$$2zSplash_cpp$$2FRQ221$$2unnamed$$2zSplash_cpp$$213splash_config

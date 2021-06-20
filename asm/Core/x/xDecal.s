@@ -48,6 +48,12 @@ old_zRenderState__20$$2unnamed$$2xDecal_cpp$$2:
 active_emitters_size__20$$2unnamed$$2xDecal_cpp$$2:
 	.skip 0x4
 
+.section .sdata
+
+.global animix_labels__6xDecal
+animix_labels__6xDecal:
+	.incbin "baserom.dol", 0x32B0E8, 0x18
+
 .section .text
 
 .global __as__11RwMatrixTagFRC11RwMatrixTag

@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata
+
+.global zCOMBAT_COMBO_THRESHOLD
+zCOMBAT_COMBO_THRESHOLD:
+	.incbin "baserom.dol", 0x32B980, 0x8
+
 .section .text
 
 .global setEnabled__12zCombatComboFb

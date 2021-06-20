@@ -27,6 +27,15 @@ lbl_803D9100:
 lbl_803D9104:
 	.skip 0x4
 
+.section .sdata
+
+.global from$1046
+from$1046:
+	.incbin "baserom.dol", 0x32D0C8, 0xC
+.global to$1047
+to$1047:
+	.incbin "baserom.dol", 0x32D0D4, 0xC
+
 .section .text
 
 .global DoInit__8zUIModelFv

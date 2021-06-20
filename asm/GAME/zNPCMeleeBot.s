@@ -48,6 +48,15 @@ fx_buffer__Q24zNPC9melee_bot:
 fx_stack__Q24zNPC9melee_bot:
 	.skip 0x8
 
+.section .sdata
+
+.global melee_bot_dust_config__26$$2unnamed$$2zNPCMeleeBot_cpp$$2
+melee_bot_dust_config__26$$2unnamed$$2zNPCMeleeBot_cpp$$2:
+	.incbin "baserom.dol", 0x32D490, 0x14
+.global __vt__12xLightVolume
+__vt__12xLightVolume:
+	.incbin "baserom.dol", 0x32D4A4, 0x14
+
 .section .text
 
 .global add_tweaks__Q226$$2unnamed$$2zNPCMeleeBot_cpp$$215melee_bot_tweakFv

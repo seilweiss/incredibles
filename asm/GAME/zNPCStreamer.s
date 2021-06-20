@@ -24,6 +24,12 @@ lbl_803D9414:
 lbl_803D9418:
 	.skip 0x8
 
+.section .sdata
+
+.global hChargeAttackGroup__Q24zNPC10run_stream
+hChargeAttackGroup__Q24zNPC10run_stream:
+	.incbin "baserom.dol", 0x32DB58, 0x8
+
 .section .text
 
 .global attack__Q24zNPC10run_streamFP15xAnimTransitionP11xAnimSingle

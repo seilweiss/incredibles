@@ -45,6 +45,15 @@ additional_lasers__10zLaserBeam:
 $$22211_0:
 	.skip 0x8
 
+.section .sdata
+
+.global ribbon_curves__24$$2unnamed$$2zLaserBeam_cpp$$2
+ribbon_curves__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.incbin "baserom.dol", 0x32C128, 0x10
+.global fade_value_labels__24$$2unnamed$$2zLaserBeam_cpp$$2
+fade_value_labels__24$$2unnamed$$2zLaserBeam_cpp$$2:
+	.incbin "baserom.dol", 0x32C138, 0x8
+
 .section .text
 
 .global xDebugAddTweak__FPCcPCiiiPC14tweak_callbackPvUi

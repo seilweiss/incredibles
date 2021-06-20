@@ -60,6 +60,18 @@ lbl_803D9494:
 lbl_803D9498:
 	.skip 0x8
 
+.section .sdata
+
+.global cfg__Q427$$2unnamed$$2zRubbleSystem_cpp$$25tweak11rubble_bomb4blur
+cfg__Q427$$2unnamed$$2zRubbleSystem_cpp$$25tweak11rubble_bomb4blur:
+	.incbin "baserom.dol", 0x32DC78, 0x24
+.global __vt__Q31z12rubble_chunk12ball_physics
+__vt__Q31z12rubble_chunk12ball_physics:
+	.incbin "baserom.dol", 0x32DC9C, 0xC
+.global __vt__Q21z13rubble_system
+__vt__Q21z13rubble_system:
+	.incbin "baserom.dol", 0x32DCA8, 0x28
+
 .section .text
 
 .global load_model__27$$2unnamed$$2zRubbleSystem_cpp$$2FUif

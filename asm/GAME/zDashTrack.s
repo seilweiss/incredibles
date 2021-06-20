@@ -189,6 +189,12 @@ $$21555_1:
 lbl_803D92A8:
 	.skip 0x8
 
+.section .sdata
+
+.global current_triangle__Q25zDash12track_system
+current_triangle__Q25zDash12track_system:
+	.incbin "baserom.dol", 0x32D230, 0x8
+
 .section .text
 
 .global setup__Q25zDash12track_systemFv

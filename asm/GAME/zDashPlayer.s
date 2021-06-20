@@ -150,6 +150,54 @@ $$23846:
 lbl_803D8B64:
 	.skip 0x4
 
+.section .sdata
+
+.global MIN_DPOS_DIFF_PERCENT
+MIN_DPOS_DIFF_PERCENT:
+	.incbin "baserom.dol", 0x32BB80, 0x4
+.global system_id__Q25zDash11water_spray
+system_id__Q25zDash11water_spray:
+	.incbin "baserom.dol", 0x32BB84, 0x4
+.global dash_smoke__5zDash
+dash_smoke__5zDash:
+	.incbin "baserom.dol", 0x32BB88, 0x38
+.global DASH_ACCELERATION__5zDash
+DASH_ACCELERATION__5zDash:
+	.incbin "baserom.dol", 0x32BBC0, 0x4
+.global DASH_SLOW_ACCELERATION__5zDash
+DASH_SLOW_ACCELERATION__5zDash:
+	.incbin "baserom.dol", 0x32BBC4, 0x4
+.global DASH_DECELERATION__5zDash
+DASH_DECELERATION__5zDash:
+	.incbin "baserom.dol", 0x32BBC8, 0x4
+.global GRAVITY__Q25zDash9dash_move
+GRAVITY__Q25zDash9dash_move:
+	.incbin "baserom.dol", 0x32BBCC, 0x4
+.global LOOK_AHEAD__Q25zDash9dash_move
+LOOK_AHEAD__Q25zDash9dash_move:
+	.incbin "baserom.dol", 0x32BBD0, 0x4
+.global SPEED_FAST__Q25zDash9dash_move
+SPEED_FAST__Q25zDash9dash_move:
+	.incbin "baserom.dol", 0x32BBD4, 0x4
+.global SPEED_NORMAL__Q25zDash9dash_move
+SPEED_NORMAL__Q25zDash9dash_move:
+	.incbin "baserom.dol", 0x32BBD8, 0x4
+.global SPEED_SLOW__Q25zDash9dash_move
+SPEED_SLOW__Q25zDash9dash_move:
+	.incbin "baserom.dol", 0x32BBDC, 0x4
+.global MIN_SLOW_SPEED__5zDash
+MIN_SLOW_SPEED__5zDash:
+	.incbin "baserom.dol", 0x32BBE0, 0x4
+.global HIT_SPEED_SLOW__5zDash
+HIT_SPEED_SLOW__5zDash:
+	.incbin "baserom.dol", 0x32BBE4, 0x4
+.global __vt__Q21z34lightweight_system$$0Q21z6rocket$$420$$1
+__vt__Q21z34lightweight_system$$0Q21z6rocket$$420$$1:
+	.incbin "baserom.dol", 0x32BBE8, 0x24
+.global __vt__Q25zDash9dash_jump
+__vt__Q25zDash9dash_jump:
+	.incbin "baserom.dol", 0x32BC0C, 0x1C
+
 .section .text
 
 .global Init__12zTimedSplashFR5xBaseR9xDynAssetUl

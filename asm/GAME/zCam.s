@@ -30,6 +30,15 @@ follow_cam__18$$2unnamed$$2zCam_cpp$$2:
 global_screen__18$$2unnamed$$2zCam_cpp$$2:
 	.skip 0x8
 
+.section .sdata
+
+.global current_mode__18$$2unnamed$$2zCam_cpp$$2
+current_mode__18$$2unnamed$$2zCam_cpp$$2:
+	.incbin "baserom.dol", 0x32B848, 0x4
+.global default_orientation__18$$2unnamed$$2zCam_cpp$$2
+default_orientation__18$$2unnamed$$2zCam_cpp$$2:
+	.incbin "baserom.dol", 0x32B84C, 0xC
+
 .section .text
 
 .global zCamSceneEnter__FR6zSceneRC7xMat4x3

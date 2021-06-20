@@ -54,6 +54,33 @@ activities_used__9xFXRibbon:
 need_sort__9xFXRibbon:
 	.skip 0x4
 
+.section .sdata
+
+.global xFXanimUVRotMat0
+xFXanimUVRotMat0:
+	.incbin "baserom.dol", 0x32B168, 0x8
+.global xFXanimUVRotMat1
+xFXanimUVRotMat1:
+	.incbin "baserom.dol", 0x32B170, 0x8
+.global xFXanimUVTrans
+xFXanimUVTrans:
+	.incbin "baserom.dol", 0x32B178, 0x8
+.global xFXanimUVScale
+xFXanimUVScale:
+	.incbin "baserom.dol", 0x32B180, 0x8
+.global xFXanimUV2PRotMat0
+xFXanimUV2PRotMat0:
+	.incbin "baserom.dol", 0x32B188, 0x8
+.global xFXanimUV2PRotMat1
+xFXanimUV2PRotMat1:
+	.incbin "baserom.dol", 0x32B190, 0x8
+.global xFXanimUV2PTrans
+xFXanimUV2PTrans:
+	.incbin "baserom.dol", 0x32B198, 0x8
+.global xFXanimUV2PScale
+xFXanimUV2PScale:
+	.incbin "baserom.dol", 0x32B1A0, 0x8
+
 .section .text
 
 .global xFXInit__Fv

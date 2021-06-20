@@ -27,6 +27,12 @@ lbl_803D8A14:
 lbl_803D8A18:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidget
+__vt__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidget:
+	.incbin "baserom.dol", 0x32B898, 0x28
+
 .section .text
 
 .global activate_camera__24$$2unnamed$$2zCamMarker_cpp$$2FRC9xCamAssetP4xEnt

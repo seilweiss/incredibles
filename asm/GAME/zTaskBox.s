@@ -15,6 +15,12 @@ init$952:
 tcb$951:
 	.skip 0xC
 
+.section .sdata
+
+.global __vt__Q28ztaskbox13talk_callback
+__vt__Q28ztaskbox13talk_callback:
+	.incbin "baserom.dol", 0x32D038, 0x18
+
 .section .text
 
 .global load__8ztaskboxFRCQ28ztaskbox10asset_type

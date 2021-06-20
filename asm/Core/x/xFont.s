@@ -153,6 +153,21 @@ lbl_803D86D4:
 $$23779:
 	.skip 0x8
 
+.section .sdata
+
+.global default_font_texture__19$$2unnamed$$2xFont_cpp$$2
+default_font_texture__19$$2unnamed$$2xFont_cpp$$2:
+	.incbin "baserom.dol", 0x32B148, 0x8
+.global text_cb__8xtextbox
+text_cb__8xtextbox:
+	.incbin "baserom.dol", 0x32B150, 0xC
+.global format_tags__19$$2unnamed$$2xFont_cpp$$2
+format_tags__19$$2unnamed$$2xFont_cpp$$2:
+	.incbin "baserom.dol", 0x32B15C, 0x4
+.global format_tags_size__19$$2unnamed$$2xFont_cpp$$2
+format_tags_size__19$$2unnamed$$2xFont_cpp$$2:
+	.incbin "baserom.dol", 0x32B160, 0x8
+
 .section .text
 
 .global find_bounds__19$$2unnamed$$2xFont_cpp$$2FPC10xColor_tagRC13basic_rect$$0i$$1i

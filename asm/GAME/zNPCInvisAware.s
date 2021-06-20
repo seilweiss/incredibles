@@ -48,6 +48,12 @@ question__28$$2unnamed$$2zNPCInvisAware_cpp$$2:
 alert_counter__28$$2unnamed$$2zNPCInvisAware_cpp$$2:
 	.skip 0x8
 
+.section .sdata
+
+.global hAlarmGroup__Q24zNPC13security_bird
+hAlarmGroup__Q24zNPC13security_bird:
+	.incbin "baserom.dol", 0x32D200, 0x8
+
 .section .text
 
 .global setup__Q24zNPC10activatingFv

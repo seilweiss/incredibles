@@ -6,6 +6,12 @@
 __vt__8zUIImage:
 	.incbin "baserom.dol", 0x30D780, 0x58
 
+.section .sdata
+
+.global modeTranslate$1060
+modeTranslate$1060:
+	.incbin "baserom.dol", 0x32D0B0, 0x10
+
 .section .text
 
 .global SetTexture__8zUIImageFUib

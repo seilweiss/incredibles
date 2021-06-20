@@ -84,6 +84,33 @@ $$21857:
 lbl_803D90F4:
 	.skip 0x4
 
+.section .sdata
+
+.global new_tags_size__22$$2unnamed$$2zTalkBox_cpp$$2
+new_tags_size__22$$2unnamed$$2zTalkBox_cpp$$2:
+	.incbin "baserom.dol", 0x32CFB0, 0x4
+.global music_fade_delay__22$$2unnamed$$2zTalkBox_cpp$$2
+music_fade_delay__22$$2unnamed$$2zTalkBox_cpp$$2:
+	.incbin "baserom.dol", 0x32CFB4, 0x4
+.global __vt__Q222$$2unnamed$$2zTalkBox_cpp$$216start_state_type
+__vt__Q222$$2unnamed$$2zTalkBox_cpp$$216start_state_type:
+	.incbin "baserom.dol", 0x32CFB8, 0x14
+.global __vt__Q222$$2unnamed$$2zTalkBox_cpp$$215next_state_type
+__vt__Q222$$2unnamed$$2zTalkBox_cpp$$215next_state_type:
+	.incbin "baserom.dol", 0x32CFCC, 0x14
+.global __vt__Q222$$2unnamed$$2zTalkBox_cpp$$215wait_state_type
+__vt__Q222$$2unnamed$$2zTalkBox_cpp$$215wait_state_type:
+	.incbin "baserom.dol", 0x32CFE0, 0x14
+.global __vt__Q222$$2unnamed$$2zTalkBox_cpp$$210state_type
+__vt__Q222$$2unnamed$$2zTalkBox_cpp$$210state_type:
+	.incbin "baserom.dol", 0x32CFF4, 0x14
+.global __vt__Q222$$2unnamed$$2zTalkBox_cpp$$215stop_state_type
+__vt__Q222$$2unnamed$$2zTalkBox_cpp$$215stop_state_type:
+	.incbin "baserom.dol", 0x32D008, 0x18
+.global __vt__Q28ztalkbox8callback
+__vt__Q28ztalkbox8callback:
+	.incbin "baserom.dol", 0x32D020, 0x18
+
 .section .text
 
 .global speak_stop__22$$2unnamed$$2zTalkBox_cpp$$2Fv

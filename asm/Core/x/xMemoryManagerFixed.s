@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata
+
+.global __vt__19xMemoryManagerFixed
+__vt__19xMemoryManagerFixed:
+	.incbin "baserom.dol", 0x32D8A0, 0x20
+
 .section .text
 
 .global Init__19xMemoryManagerFixedFPvUiUi

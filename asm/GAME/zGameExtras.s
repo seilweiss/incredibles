@@ -30,6 +30,33 @@ sCheatTimer:
 sCheatInputCount:
 	.skip 0x8
 
+.section .sdata
+
+.global EGGEmpty
+EGGEmpty:
+	.incbin "baserom.dol", 0x32BE20, 0x10
+.global g_eggBasket
+g_eggBasket:
+	.incbin "baserom.dol", 0x32BE30, 0x20
+.global sCheatTestCheats
+sCheatTestCheats:
+	.incbin "baserom.dol", 0x32BE50, 0x40
+.global sCheatSwapCCLR
+sCheatSwapCCLR:
+	.incbin "baserom.dol", 0x32BE90, 0x40
+.global sCheatSwapCCUD
+sCheatSwapCCUD:
+	.incbin "baserom.dol", 0x32BED0, 0x40
+.global cheatList
+cheatList:
+	.incbin "baserom.dol", 0x32BF10, 0x40
+.global sCheatPressed
+sCheatPressed:
+	.incbin "baserom.dol", 0x32BF50, 0x40
+.global aid_sndList$1342
+aid_sndList$1342:
+	.incbin "baserom.dol", 0x32BF90, 0x20
+
 .section .text
 
 .global zGameExtras_SceneInit__Fv

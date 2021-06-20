@@ -21,6 +21,45 @@ lava_drip_system:
 spark_system:
 	.skip 0xC
 
+.section .sdata
+
+.global __vt__263RegisterOnFirstEmitSystem$$0213zParticleUVStaticTile$$03$$43$$4183zParticleEmitterConeSurface$$0151zParticleColorWhiteFadeOut$$0120zParticleMoverLinearDecel$$091zParticleRadiusConst$$067zParticlePoolType$$030ptank_pool__pos_color_size_uv2$$413zParticleBase$$1$$1$$1$$1$$1$$1$$417EnergyPulseSystem$$1
+__vt__263RegisterOnFirstEmitSystem$$0213zParticleUVStaticTile$$03$$43$$4183zParticleEmitterConeSurface$$0151zParticleColorWhiteFadeOut$$0120zParticleMoverLinearDecel$$091zParticleRadiusConst$$067zParticlePoolType$$030ptank_pool__pos_color_size_uv2$$413zParticleBase$$1$$1$$1$$1$$1$$1$$417EnergyPulseSystem$$1:
+	.incbin "baserom.dol", 0x32DBB0, 0xC
+.global __vt__17EnergyPulseSystem
+__vt__17EnergyPulseSystem:
+	.incbin "baserom.dol", 0x32DBBC, 0xC
+.global __vt__221RegisterOnFirstEmitSystem$$0176zParticleEmitterConeSurface$$0144zParticleColorWhiteOpaque$$0114zParticleMoverGravity$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$412RubbleSystem$$1
+__vt__221RegisterOnFirstEmitSystem$$0176zParticleEmitterConeSurface$$0144zParticleColorWhiteOpaque$$0114zParticleMoverGravity$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$412RubbleSystem$$1:
+	.incbin "baserom.dol", 0x32DBC8, 0xC
+.global __vt__12RubbleSystem
+__vt__12RubbleSystem:
+	.incbin "baserom.dol", 0x32DBD4, 0xC
+.global __vt__228RegisterOnFirstEmitSystem$$0180zParticleEmitterConeVolume$$0149zParticleColorToBlackFadeOut$$0116zParticleMoverLinearVel$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$415FlameConeSystem$$1
+__vt__228RegisterOnFirstEmitSystem$$0180zParticleEmitterConeVolume$$0149zParticleColorToBlackFadeOut$$0116zParticleMoverLinearVel$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$415FlameConeSystem$$1:
+	.incbin "baserom.dol", 0x32DBE0, 0xC
+.global __vt__15FlameConeSystem
+__vt__15FlameConeSystem:
+	.incbin "baserom.dol", 0x32DBEC, 0xC
+.global __vt__228RegisterOnFirstEmitSystem$$0180zParticleEmitterConeVolume$$0149zParticleColorToBlackFadeOut$$0116zParticleMoverLinearVel$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$415SmokePuffSystem$$1
+__vt__228RegisterOnFirstEmitSystem$$0180zParticleEmitterConeVolume$$0149zParticleColorToBlackFadeOut$$0116zParticleMoverLinearVel$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$415SmokePuffSystem$$1:
+	.incbin "baserom.dol", 0x32DBF8, 0xC
+.global __vt__15SmokePuffSystem
+__vt__15SmokePuffSystem:
+	.incbin "baserom.dol", 0x32DC04, 0xC
+.global __vt__225RegisterOnFirstEmitSystem$$0178zParticleEmitterConeVolume$$0147zParticleColorWhiteFadeOut$$0116zParticleMoverLinearVel$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$414LavaDripSystem$$1
+__vt__225RegisterOnFirstEmitSystem$$0178zParticleEmitterConeVolume$$0147zParticleColorWhiteFadeOut$$0116zParticleMoverLinearVel$$089zParticleRadiusPercent$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$414LavaDripSystem$$1:
+	.incbin "baserom.dol", 0x32DC10, 0xC
+.global __vt__14LavaDripSystem
+__vt__14LavaDripSystem:
+	.incbin "baserom.dol", 0x32DC1C, 0xC
+.global __vt__218RegisterOnFirstEmitSystem$$0174zParticleEmitterConeVolume$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$411SparkSystem$$1
+__vt__218RegisterOnFirstEmitSystem$$0174zParticleEmitterConeVolume$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$411SparkSystem$$1:
+	.incbin "baserom.dol", 0x32DC28, 0xC
+.global __vt__11SparkSystem
+__vt__11SparkSystem:
+	.incbin "baserom.dol", 0x32DC34, 0xC
+
 .section .text
 
 .global zParticleFXCommon_EmitEnergyPulse__FfRC5xVec3RC5xVec3ffff

@@ -183,6 +183,12 @@ lbl_803D93A8:
 lbl_803D93AC:
 	.skip 0x4
 
+.section .sdata
+
+.global BONUS_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2
+BONUS_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+	.incbin "baserom.dol", 0x32D868, 0x10
+
 .section .text
 
 .global reset__5statsFv

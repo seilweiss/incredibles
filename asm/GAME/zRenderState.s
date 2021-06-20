@@ -12,6 +12,12 @@ $$2709:
 sRS:
 	.skip 0x8
 
+.section .sdata
+
+.global sRSBits
+sRSBits:
+	.incbin "baserom.dol", 0x32CEA8, 0x8
+
 .section .text
 
 .global zRenderStateInit__Fv

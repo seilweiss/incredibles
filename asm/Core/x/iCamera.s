@@ -9,6 +9,15 @@ globalCamera:
 sMainGameCamera:
 	.skip 0x4
 
+.section .sdata
+
+.global sCameraNearClip
+sCameraNearClip:
+	.incbin "baserom.dol", 0x32AFC0, 0x4
+.global sCameraFarClip
+sCameraFarClip:
+	.incbin "baserom.dol", 0x32AFC4, 0x4
+
 .section .text
 
 .global iCameraSetOrthoProjection__FP8RwCamerab

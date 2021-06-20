@@ -108,6 +108,27 @@ $$23484:
 $$23485:
 	.skip 0x4
 
+.section .sdata
+
+.global ENABLE_HUD__14zPlayerGlobals
+ENABLE_HUD__14zPlayerGlobals:
+	.incbin "baserom.dol", 0x32CF18, 0x4
+.global sMemDepthSceneStart
+sMemDepthSceneStart:
+	.incbin "baserom.dol", 0x32CF1C, 0x4
+.global sMemDepthJustHIPStart
+sMemDepthJustHIPStart:
+	.incbin "baserom.dol", 0x32CF20, 0x4
+.global zSceneSpecialRender_curFunc
+zSceneSpecialRender_curFunc:
+	.incbin "baserom.dol", 0x32CF24, 0x8
+.global scobj_size
+scobj_size:
+	.incbin "baserom.dol", 0x32CF2C, 0x4
+.global nidbps
+nidbps:
+	.incbin "baserom.dol", 0x32CF30, 0x8
+
 .section .text
 
 .global zSceneIsLoadingPackFile__Fv

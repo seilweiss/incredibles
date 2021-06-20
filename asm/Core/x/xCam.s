@@ -18,6 +18,15 @@ lbl_803D84CC:
 lbl_803D84D0:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__9xCamBlend
+__vt__9xCamBlend:
+	.incbin "baserom.dol", 0x32AFD0, 0x24
+.global __vt__4xCam
+__vt__4xCam:
+	.incbin "baserom.dol", 0x32AFF4, 0x24
+
 .section .text
 
 .global add_tweaks__Q218$$2unnamed$$2xCam_cpp$$25tweakFPCc

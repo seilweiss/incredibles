@@ -138,6 +138,12 @@ lbl_803D9144:
 $$21003_4:
 	.skip 0x1C
 
+.section .sdata
+
+.global var_tag$1220
+var_tag$1220:
+	.incbin "baserom.dol", 0x32D0E0, 0x18
+
 .section .text
 
 .global zVarEntryCB_IsSignedIn__FPv

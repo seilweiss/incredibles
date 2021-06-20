@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata
+
+.global __vt__6zCamFP
+__vt__6zCamFP:
+	.incbin "baserom.dol", 0x32B870, 0x28
+
 .section .text
 
 .global CopyPosFromPlayer__6zCamFPFP4xEnt

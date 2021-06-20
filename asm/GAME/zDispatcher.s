@@ -48,6 +48,12 @@ init$1406:
 effect$1405:
 	.skip 0x18
 
+.section .sdata
+
+.global g_zdsp_depot
+g_zdsp_depot:
+	.incbin "baserom.dol", 0x32BC50, 0x8
+
 .section .text
 
 .global zDispatcherParseINI__FP8xIniFile

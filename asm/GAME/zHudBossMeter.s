@@ -6,6 +6,12 @@
 $$2stringBase0_146:
 	.incbin "baserom.dol", 0x2E6E68, 0x20
 
+.section .sdata
+
+.global __vt__Q24zHud9BossMeter
+__vt__Q24zHud9BossMeter:
+	.incbin "baserom.dol", 0x32DC40, 0x28
+
 .section .text
 
 .global __ct__Q24zHud9BossMeterFv

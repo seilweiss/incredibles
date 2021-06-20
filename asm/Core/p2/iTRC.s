@@ -126,6 +126,18 @@ mDiskErrorInHigherPriorityThread__8iTRCDisk:
 $$2726_0:
 	.skip 0x8
 
+.section .sdata
+
+.global mFirstFrame__7ROMFont
+mFirstFrame__7ROMFont:
+	.incbin "baserom.dol", 0x32B760, 0x4
+.global mRomFontScale__7ROMFont
+mRomFontScale__7ROMFont:
+	.incbin "baserom.dol", 0x32B764, 0x4
+.global mResetEnabled__11ResetButton
+mResetEnabled__11ResetButton:
+	.incbin "baserom.dol", 0x32B768, 0x8
+
 .section .text
 
 .global GetRegion__Fv

@@ -15,6 +15,12 @@ zHitSourceMap:
 $$2stringBase0_59:
 	.incbin "baserom.dol", 0x2DA810, 0xB0
 
+.section .sdata
+
+.global zHitTargetCCs
+zHitTargetCCs:
+	.incbin "baserom.dol", 0x32C0A0, 0x20
+
 .section .text
 
 .global getSourceCCIdx__FUi

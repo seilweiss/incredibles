@@ -6,6 +6,12 @@
 show_stats:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__14zLoadingScreen
+__vt__14zLoadingScreen:
+	.incbin "baserom.dol", 0x32DAB8, 0x18
+
 .section .text
 
 .global CustomStaticAllocator__28$$2unnamed$$2zLoadingScreen_cpp$$2FUiPv

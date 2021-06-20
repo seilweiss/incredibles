@@ -15,6 +15,57 @@ gGameMode:
 gGameOstrich:
 	.skip 0x4
 
+.section .sdata
+
+.global gGameState
+gGameState:
+	.incbin "baserom.dol", 0x32BFB0, 0x4
+.global sGameMode_DispatchTable
+sGameMode_DispatchTable:
+	.incbin "baserom.dol", 0x32BFB4, 0x30
+.global sGameState_DispatchTable
+sGameState_DispatchTable:
+	.incbin "baserom.dol", 0x32BFE4, 0x20
+.global sPauseState_DispatchTable
+sPauseState_DispatchTable:
+	.incbin "baserom.dol", 0x32C004, 0x8
+.global sSaveState_DispatchTable
+sSaveState_DispatchTable:
+	.incbin "baserom.dol", 0x32C00C, 0xC
+.global sOptionsState_DispatchTable
+sOptionsState_DispatchTable:
+	.incbin "baserom.dol", 0x32C018, 0x4
+.global sLoadState_DispatchTable
+sLoadState_DispatchTable:
+	.incbin "baserom.dol", 0x32C01C, 0xC
+.global sTitleState_DispatchTable
+sTitleState_DispatchTable:
+	.incbin "baserom.dol", 0x32C028, 0x8
+.global sIntroState_DispatchTable
+sIntroState_DispatchTable:
+	.incbin "baserom.dol", 0x32C030, 0x10
+.global sGameState_DoDispatchTable
+sGameState_DoDispatchTable:
+	.incbin "baserom.dol", 0x32C040, 0x20
+.global sPauseState_DoDispatchTable
+sPauseState_DoDispatchTable:
+	.incbin "baserom.dol", 0x32C060, 0x8
+.global sSaveState_DoDispatchTable
+sSaveState_DoDispatchTable:
+	.incbin "baserom.dol", 0x32C068, 0xC
+.global sOptionsState_DoDispatchTable
+sOptionsState_DoDispatchTable:
+	.incbin "baserom.dol", 0x32C074, 0x4
+.global sLoadState_DoDispatchTable
+sLoadState_DoDispatchTable:
+	.incbin "baserom.dol", 0x32C078, 0xC
+.global sTitleState_DoDispatchTable
+sTitleState_DoDispatchTable:
+	.incbin "baserom.dol", 0x32C084, 0x8
+.global sIntroState_DoDispatchTable
+sIntroState_DoDispatchTable:
+	.incbin "baserom.dol", 0x32C08C, 0x14
+
 .section .text
 
 .global zGameStateGet__Fv

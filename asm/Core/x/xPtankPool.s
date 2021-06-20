@@ -21,6 +21,27 @@ inited__24$$2unnamed$$2xPtankPool_cpp$$2:
 current_sequence_index__24$$2unnamed$$2xPtankPool_cpp$$2:
 	.skip 0x8
 
+.section .sdata
+
+.global MAX_PTANKS_COLOR_MAT__24$$2unnamed$$2xPtankPool_cpp$$2
+MAX_PTANKS_COLOR_MAT__24$$2unnamed$$2xPtankPool_cpp$$2:
+	.incbin "baserom.dol", 0x32B370, 0x4
+.global MAX_PTANKS_COLOR_MAT_UV2__24$$2unnamed$$2xPtankPool_cpp$$2
+MAX_PTANKS_COLOR_MAT_UV2__24$$2unnamed$$2xPtankPool_cpp$$2:
+	.incbin "baserom.dol", 0x32B374, 0x4
+.global MAX_PTANKS_POS_COLOR_SIZE__24$$2unnamed$$2xPtankPool_cpp$$2
+MAX_PTANKS_POS_COLOR_SIZE__24$$2unnamed$$2xPtankPool_cpp$$2:
+	.incbin "baserom.dol", 0x32B378, 0x4
+.global MAX_PTANKS_POS_COLOR_SIZE_UV2__24$$2unnamed$$2xPtankPool_cpp$$2
+MAX_PTANKS_POS_COLOR_SIZE_UV2__24$$2unnamed$$2xPtankPool_cpp$$2:
+	.incbin "baserom.dol", 0x32B37C, 0x4
+.global MAX_PTANKS_POS_COLOR_SIZE_ROT__24$$2unnamed$$2xPtankPool_cpp$$2
+MAX_PTANKS_POS_COLOR_SIZE_ROT__24$$2unnamed$$2xPtankPool_cpp$$2:
+	.incbin "baserom.dol", 0x32B380, 0x4
+.global MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24$$2unnamed$$2xPtankPool_cpp$$2
+MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24$$2unnamed$$2xPtankPool_cpp$$2:
+	.incbin "baserom.dol", 0x32B384, 0x4
+
 .section .text
 
 .global sort_buckets__24$$2unnamed$$2xPtankPool_cpp$$2FRQ224$$2unnamed$$2xPtankPool_cpp$$210group_data

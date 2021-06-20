@@ -18,6 +18,15 @@ init$1082:
 nozey_npc_cinematics$1081:
 	.skip 0x18
 
+.section .sdata
+
+.global __vt__9XCSNNosey
+__vt__9XCSNNosey:
+	.incbin "baserom.dol", 0x32DCD0, 0x10
+.global __vt__11NCINBeNosey
+__vt__11NCINBeNosey:
+	.incbin "baserom.dol", 0x32DCE0, 0x10
+
 .section .text
 
 .global CanRenderNow__11NCINBeNoseyFv

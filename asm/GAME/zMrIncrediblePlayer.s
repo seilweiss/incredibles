@@ -102,6 +102,108 @@ lbl_803D8D54:
 $$25116:
 	.skip 0x18
 
+.section .sdata
+
+.global ZIPLINE_DETECT_RADIUS__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_DETECT_RADIUS__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1C0, 0x4
+.global ZIPLINE_ANIMATION_MOVE_SPEED__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_ANIMATION_MOVE_SPEED__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1C4, 0x4
+.global ZIPLINE_MOVE_TO_POINT_SPEED__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_MOVE_TO_POINT_SPEED__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1C8, 0x4
+.global ZIPLINE_EXIT_SPEED__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_EXIT_SPEED__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1CC, 0x4
+.global ZIPLINE_MAX_VEL__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_MAX_VEL__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1D0, 0x4
+.global ZIPLINE_MIN_VEL__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_MIN_VEL__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1D4, 0x4
+.global ZIPLINE_RECOVER_TIME__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_RECOVER_TIME__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1D8, 0x4
+.global ZIPLINE_SWING_BLEND_TIME__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_SWING_BLEND_TIME__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1DC, 0x4
+.global ZIPLINE_SWING_TIME__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_SWING_TIME__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1E0, 0x4
+.global ZIPLINE_SWING_CENTER__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_SWING_CENTER__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1E4, 0x4
+.global ZIPLINE_HIT_DAMAGE_DYN__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_HIT_DAMAGE_DYN__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1E8, 0x4
+.global ZIPLINE_HIT_DAMAGE_STAT__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_HIT_DAMAGE_STAT__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1EC, 0x4
+.global ZIPLINE_HIT_DAMAGE_ENV__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_HIT_DAMAGE_ENV__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1F0, 0x4
+.global ZIPLINE_DISTANCE_CORRECT__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_DISTANCE_CORRECT__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1F4, 0x4
+.global ZIPLINE_FORCE_MODIFIER__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_FORCE_MODIFIER__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1F8, 0x4
+.global ZIPLINE_GRAVITY__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_GRAVITY__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C1FC, 0x4
+.global ZIPLINE_LEAN_SMOOTH_CONSTANT__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_LEAN_SMOOTH_CONSTANT__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C200, 0x4
+.global ZIPLINE_SWITCH_SPEED__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_SWITCH_SPEED__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C204, 0x4
+.global ZIPLINE_TURN_MAX__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_TURN_MAX__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C208, 0x4
+.global ZIPLINE_CAMERA_FOLLOW_DISTANCE__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_CAMERA_FOLLOW_DISTANCE__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C20C, 0x4
+.global ZIPLINE_CAMERA_BELOW_PLAYER__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_CAMERA_BELOW_PLAYER__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C210, 0x4
+.global ZIPLINE_CAMERA_TURN_SPEED_MOVING__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_CAMERA_TURN_SPEED_MOVING__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C214, 0x4
+.global ZIPLINE_CAMERA_TURN_SPEED_INITIAL__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+ZIPLINE_CAMERA_TURN_SPEED_INITIAL__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C218, 0x4
+.global RIGHTPALMBONE__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+RIGHTPALMBONE__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C21C, 0x4
+.global RIGHTPALMOFFSET__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+RIGHTPALMOFFSET__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C220, 0xC
+.global LEFTPALMBONE__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+LEFTPALMBONE__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C22C, 0x4
+.global LEFTPALMOFFSET__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+LEFTPALMOFFSET__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C230, 0xC
+.global LEDGE_NPC_BONE__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+LEDGE_NPC_BONE__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C23C, 0x4
+.global LEDGE_NPC_OFFSET__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+LEDGE_NPC_OFFSET__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C240, 0xC
+.global LEDGE_NPC_TOSS_AT__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+LEDGE_NPC_TOSS_AT__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C24C, 0x4
+.global LEDGE_NPC_TOSS_UP__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+LEDGE_NPC_TOSS_UP__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C250, 0x4
+.global LEDGE_NPC_TOSS_LEFT__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+LEDGE_NPC_TOSS_LEFT__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C254, 0x4
+.global GRABOFFSET__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2
+GRABOFFSET__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2:
+	.incbin "baserom.dol", 0x32C258, 0x10
+
 .section .text
 
 .global StillCarried__33$$2unnamed$$2zMrIncrediblePlayer_cpp$$2FP4xEnt

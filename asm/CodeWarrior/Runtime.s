@@ -72,6 +72,27 @@ $$256:
 lbl_803D14D8:
 	.skip 0x8
 
+.section .sdata
+
+.global __RTTI__Q23std9exception
+__RTTI__Q23std9exception:
+	.incbin "baserom.dol", 0x32E350, 0x8
+.global thandler__3std
+thandler__3std:
+	.incbin "baserom.dol", 0x32E358, 0x4
+.global uhandler__3std
+uhandler__3std:
+	.incbin "baserom.dol", 0x32E35C, 0x4
+.global fragmentID
+fragmentID:
+	.incbin "baserom.dol", 0x32E360, 0x8
+.global __RTTI__Q23std9exception_0
+__RTTI__Q23std9exception_0:
+	.incbin "baserom.dol", 0x32E368, 0x8
+.global __RTTI__Q23std13bad_exception
+__RTTI__Q23std13bad_exception:
+	.incbin "baserom.dol", 0x32E370, 0x8
+
 .section .text
 
 .global __va_arg

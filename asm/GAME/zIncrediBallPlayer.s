@@ -99,6 +99,12 @@ lbl_803D8CDC:
 lbl_803D8CE0:
 	.skip 0x8
 
+.section .sdata
+
+.global bounds$2330
+bounds$2330:
+	.incbin "baserom.dol", 0x32C110, 0x18
+
 .section .text
 
 .global choose_strength__Q212zIncrediBall20incrediball_behaviorFP9xAnimPlayP10xAnimState

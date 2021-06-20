@@ -12,6 +12,15 @@ lbl_803CF6BC:
 sGameTime:
 	.skip 0x8
 
+.section .sdata
+
+.global months
+months:
+	.incbin "baserom.dol", 0x32B710, 0x30
+.global dotw
+dotw:
+	.incbin "baserom.dol", 0x32B740, 0x20
+
 .section .text
 
 .global iGetMinute__Fv

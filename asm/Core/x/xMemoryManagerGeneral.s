@@ -1,5 +1,11 @@
 .include "macros.inc"
 
+.section .sdata
+
+.global __vt__21xMemoryManagerGeneral
+__vt__21xMemoryManagerGeneral:
+	.incbin "baserom.dol", 0x32D8C0, 0x20
+
 .section .text
 
 .global Init__21xMemoryManagerGeneralFPvUiQ221xMemoryManagerGeneral3DirQ221xMemoryManagerGeneral8Strategyb

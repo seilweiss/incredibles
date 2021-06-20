@@ -45,6 +45,24 @@ warning_group__Q21z4bomb:
 weak_bombs__Q21z4bomb:
 	.skip 0x4
 
+.section .sdata
+
+.global speed__Q21z4bomb
+speed__Q21z4bomb:
+	.incbin "baserom.dol", 0x32D330, 0x4
+.global bomb_model_name__1z
+bomb_model_name__1z:
+	.incbin "baserom.dol", 0x32D334, 0x4
+.global bomb_glow_name__1z
+bomb_glow_name__1z:
+	.incbin "baserom.dol", 0x32D338, 0x4
+.global __vt__12xBallPhysics
+__vt__12xBallPhysics:
+	.incbin "baserom.dol", 0x32D33C, 0xC
+.global __vt__Q21z25lightweight$$0Q21z4bomb$$420$$1
+__vt__Q21z25lightweight$$0Q21z4bomb$$420$$1:
+	.incbin "baserom.dol", 0x32D348, 0x20
+
 .section .text
 
 .global get_model__19$$2unnamed$$2zBomb_cpp$$2FPCc

@@ -21,6 +21,12 @@ sManagerIndex:
 sManagerCount:
 	.skip 0x4
 
+.section .sdata
+
+.global sLODFadeDistance
+sLODFadeDistance:
+	.incbin "baserom.dol", 0x32C178, 0x8
+
 .section .text
 
 .global AddToLODList__FP4xEnt

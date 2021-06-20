@@ -249,6 +249,135 @@ lbl_803D8E58:
 lbl_803D8E5C:
 	.skip 0x4
 
+.section .sdata
+
+.global hit_explosion__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads
+hit_explosion__Q331$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5heads:
+	.incbin "baserom.dol", 0x32C348, 0x10
+.global cfg__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs13ribbon_center
+cfg__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs13ribbon_center:
+	.incbin "baserom.dol", 0x32C358, 0x20
+.global cfg__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs11ribbon_wake
+cfg__Q431$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak9clawrangs11ribbon_wake:
+	.incbin "baserom.dol", 0x32C378, 0x20
+.global cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state9boomerang4blur
+cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state9boomerang4blur:
+	.incbin "baserom.dol", 0x32C398, 0x24
+.global cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10claw_swing4blur
+cfg__Q531$$2unnamed$$2zNPCBossOmnidroid_cpp$$25tweak5state10claw_swing4blur:
+	.incbin "baserom.dol", 0x32C3BC, 0x24
+.global __vt__Q217zNPCBossOmnidroid24intermission_action_type
+__vt__Q217zNPCBossOmnidroid24intermission_action_type:
+	.incbin "baserom.dol", 0x32C3E0, 0x34
+.global __vt__Q217zNPCBossOmnidroid21jump_away_action_type
+__vt__Q217zNPCBossOmnidroid21jump_away_action_type:
+	.incbin "baserom.dol", 0x32C414, 0x34
+.global __vt__Q217zNPCBossOmnidroid21jump_near_action_type
+__vt__Q217zNPCBossOmnidroid21jump_near_action_type:
+	.incbin "baserom.dol", 0x32C448, 0x34
+.global __vt__Q217zNPCBossOmnidroid23near_beatit_action_type
+__vt__Q217zNPCBossOmnidroid23near_beatit_action_type:
+	.incbin "baserom.dol", 0x32C47C, 0x34
+.global __vt__Q217zNPCBossOmnidroid20cooldown_action_type
+__vt__Q217zNPCBossOmnidroid20cooldown_action_type:
+	.incbin "baserom.dol", 0x32C4B0, 0x34
+.global __vt__Q217zNPCBossOmnidroid18beatit_action_type
+__vt__Q217zNPCBossOmnidroid18beatit_action_type:
+	.incbin "baserom.dol", 0x32C4E4, 0x34
+.global __vt__Q217zNPCBossOmnidroid16stab_action_type
+__vt__Q217zNPCBossOmnidroid16stab_action_type:
+	.incbin "baserom.dol", 0x32C518, 0x34
+.global __vt__Q217zNPCBossOmnidroid22claw_swing_action_type
+__vt__Q217zNPCBossOmnidroid22claw_swing_action_type:
+	.incbin "baserom.dol", 0x32C54C, 0x34
+.global __vt__Q217zNPCBossOmnidroid16bolt_action_type
+__vt__Q217zNPCBossOmnidroid16bolt_action_type:
+	.incbin "baserom.dol", 0x32C580, 0x34
+.global __vt__Q217zNPCBossOmnidroid16beam_action_type
+__vt__Q217zNPCBossOmnidroid16beam_action_type:
+	.incbin "baserom.dol", 0x32C5B4, 0x34
+.global __vt__Q217zNPCBossOmnidroid21boomerang_action_type
+__vt__Q217zNPCBossOmnidroid21boomerang_action_type:
+	.incbin "baserom.dol", 0x32C5E8, 0x34
+.global __vt__Q217zNPCBossOmnidroid22throw_rock_action_type
+__vt__Q217zNPCBossOmnidroid22throw_rock_action_type:
+	.incbin "baserom.dol", 0x32C61C, 0x34
+.global __vt__Q217zNPCBossOmnidroid22smash_rock_action_type
+__vt__Q217zNPCBossOmnidroid22smash_rock_action_type:
+	.incbin "baserom.dol", 0x32C650, 0x34
+.global __vt__Q217zNPCBossOmnidroid16ball_action_type
+__vt__Q217zNPCBossOmnidroid16ball_action_type:
+	.incbin "baserom.dol", 0x32C684, 0x34
+.global __vt__Q217zNPCBossOmnidroid19dervish_action_type
+__vt__Q217zNPCBossOmnidroid19dervish_action_type:
+	.incbin "baserom.dol", 0x32C6B8, 0x34
+.global __vt__Q217zNPCBossOmnidroid22bitch_slap_action_type
+__vt__Q217zNPCBossOmnidroid22bitch_slap_action_type:
+	.incbin "baserom.dol", 0x32C6EC, 0x34
+.global __vt__Q217zNPCBossOmnidroid15hit_action_type
+__vt__Q217zNPCBossOmnidroid15hit_action_type:
+	.incbin "baserom.dol", 0x32C720, 0x34
+.global __vt__Q217zNPCBossOmnidroid16jump_action_type
+__vt__Q217zNPCBossOmnidroid16jump_action_type:
+	.incbin "baserom.dol", 0x32C754, 0x34
+.global __vt__Q217zNPCBossOmnidroid16idle_action_type
+__vt__Q217zNPCBossOmnidroid16idle_action_type:
+	.incbin "baserom.dol", 0x32C788, 0x34
+.global __vt__Q217zNPCBossOmnidroid11action_type
+__vt__Q217zNPCBossOmnidroid11action_type:
+	.incbin "baserom.dol", 0x32C7BC, 0x34
+.global __vt__Q217zNPCBossOmnidroid16death_state_type
+__vt__Q217zNPCBossOmnidroid16death_state_type:
+	.incbin "baserom.dol", 0x32C7F0, 0x40
+.global __vt__Q217zNPCBossOmnidroid17beatit_state_type
+__vt__Q217zNPCBossOmnidroid17beatit_state_type:
+	.incbin "baserom.dol", 0x32C830, 0x40
+.global __vt__Q217zNPCBossOmnidroid15stab_state_type
+__vt__Q217zNPCBossOmnidroid15stab_state_type:
+	.incbin "baserom.dol", 0x32C870, 0x40
+.global __vt__Q217zNPCBossOmnidroid21claw_swing_state_type
+__vt__Q217zNPCBossOmnidroid21claw_swing_state_type:
+	.incbin "baserom.dol", 0x32C8B0, 0x40
+.global __vt__Q217zNPCBossOmnidroid15bolt_state_type
+__vt__Q217zNPCBossOmnidroid15bolt_state_type:
+	.incbin "baserom.dol", 0x32C8F0, 0x40
+.global __vt__Q217zNPCBossOmnidroid15beam_state_type
+__vt__Q217zNPCBossOmnidroid15beam_state_type:
+	.incbin "baserom.dol", 0x32C930, 0x40
+.global __vt__Q217zNPCBossOmnidroid20boomerang_state_type
+__vt__Q217zNPCBossOmnidroid20boomerang_state_type:
+	.incbin "baserom.dol", 0x32C970, 0x40
+.global __vt__Q217zNPCBossOmnidroid21throw_rock_state_type
+__vt__Q217zNPCBossOmnidroid21throw_rock_state_type:
+	.incbin "baserom.dol", 0x32C9B0, 0x40
+.global __vt__Q217zNPCBossOmnidroid21smash_rock_state_type
+__vt__Q217zNPCBossOmnidroid21smash_rock_state_type:
+	.incbin "baserom.dol", 0x32C9F0, 0x40
+.global __vt__Q217zNPCBossOmnidroid15ball_state_type
+__vt__Q217zNPCBossOmnidroid15ball_state_type:
+	.incbin "baserom.dol", 0x32CA30, 0x40
+.global __vt__Q217zNPCBossOmnidroid18dervish_state_type
+__vt__Q217zNPCBossOmnidroid18dervish_state_type:
+	.incbin "baserom.dol", 0x32CA70, 0x40
+.global __vt__Q217zNPCBossOmnidroid21bitch_slap_state_type
+__vt__Q217zNPCBossOmnidroid21bitch_slap_state_type:
+	.incbin "baserom.dol", 0x32CAB0, 0x40
+.global __vt__Q217zNPCBossOmnidroid14hit_state_type
+__vt__Q217zNPCBossOmnidroid14hit_state_type:
+	.incbin "baserom.dol", 0x32CAF0, 0x40
+.global __vt__Q217zNPCBossOmnidroid15jump_state_type
+__vt__Q217zNPCBossOmnidroid15jump_state_type:
+	.incbin "baserom.dol", 0x32CB30, 0x40
+.global __vt__Q217zNPCBossOmnidroid15idle_state_type
+__vt__Q217zNPCBossOmnidroid15idle_state_type:
+	.incbin "baserom.dol", 0x32CB70, 0x40
+.global __vt__Q217zNPCBossOmnidroid10state_type
+__vt__Q217zNPCBossOmnidroid10state_type:
+	.incbin "baserom.dol", 0x32CBB0, 0x40
+.global __vt__Q217zNPCBossOmnidroid17death_action_type
+__vt__Q217zNPCBossOmnidroid17death_action_type:
+	.incbin "baserom.dol", 0x32CBF0, 0x38
+
 .section .text
 
 .global shuffle_list__31$$2unnamed$$2zNPCBossOmnidroid_cpp$$2FPUii

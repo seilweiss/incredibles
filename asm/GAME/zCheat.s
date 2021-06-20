@@ -39,6 +39,24 @@ system$localstatic3$get_system__Q21z26lightweight$$0Q21z5laser$$440$$1Fv:
 init$localstatic4$get_system__Q21z26lightweight$$0Q21z5laser$$440$$1Fv:
 	.skip 0x8
 
+.section .sdata
+
+.global headScale__20$$2unnamed$$2zCheat_cpp$$2
+headScale__20$$2unnamed$$2zCheat_cpp$$2:
+	.incbin "baserom.dol", 0x32B910, 0x4
+.global targetHead__20$$2unnamed$$2zCheat_cpp$$2
+targetHead__20$$2unnamed$$2zCheat_cpp$$2:
+	.incbin "baserom.dol", 0x32B914, 0x4
+.global unlock_clear$1631
+unlock_clear$1631:
+	.incbin "baserom.dol", 0x32B918, 0x20
+.global __vt__Q21z23lightweight_system_base
+__vt__Q21z23lightweight_system_base:
+	.incbin "baserom.dol", 0x32B938, 0x24
+.global __vt__Q21z33lightweight_system$$0Q21z5laser$$440$$1
+__vt__Q21z33lightweight_system$$0Q21z5laser$$440$$1:
+	.incbin "baserom.dol", 0x32B95C, 0x24
+
 .section .text
 
 .global zCheatRemoveTimed__20$$2unnamed$$2zCheat_cpp$$2Fv

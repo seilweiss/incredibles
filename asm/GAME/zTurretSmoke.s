@@ -15,6 +15,15 @@ texture__18zTurretSmokeSystem:
 systemID__26$$2unnamed$$2zTurretSmoke_cpp$$2:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__18zTurretSmokeSystem
+__vt__18zTurretSmokeSystem:
+	.incbin "baserom.dol", 0x32DA38, 0x20
+.global __vt__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1
+__vt__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1:
+	.incbin "baserom.dol", 0x32DA58, 0x20
+
 .section .text
 
 .global setup__18zTurretSmokeSystemFv

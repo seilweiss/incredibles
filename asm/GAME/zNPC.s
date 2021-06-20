@@ -6,6 +6,12 @@
 $$2stringBase0_69:
 	.incbin "baserom.dol", 0x2DCC60, 0x50
 
+.section .sdata
+
+.global __vt__Q24zNPC4base
+__vt__Q24zNPC4base:
+	.incbin "baserom.dol", 0x32C270, 0x38
+
 .section .text
 
 .global play_sound__Q24zNPC4baseFP17zAnimFxSoundGroup

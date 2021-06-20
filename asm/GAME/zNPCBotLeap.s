@@ -87,6 +87,18 @@ lbl_803D9374:
 lbl_803D9378:
 	.skip 0x8
 
+.section .sdata
+
+.global system_id__Q24zNPC10light_dust
+system_id__Q24zNPC10light_dust:
+	.incbin "baserom.dol", 0x32D840, 0x4
+.global MAX_EFFECT_ELEVATION__4zNPC
+MAX_EFFECT_ELEVATION__4zNPC:
+	.incbin "baserom.dol", 0x32D844, 0x4
+.global hFallingGroup__Q24zNPC8bot_leap
+hFallingGroup__Q24zNPC8bot_leap:
+	.incbin "baserom.dol", 0x32D848, 0x8
+
 .section .text
 
 .global setup__Q24zNPC10light_dustFv

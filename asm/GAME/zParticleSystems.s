@@ -1,5 +1,14 @@
 .include "macros.inc"
 
+.section .sdata
+
+.global __vt__20zParticleSystemDummy
+__vt__20zParticleSystemDummy:
+	.incbin "baserom.dol", 0x32D8F8, 0x34
+.global __vt__15zParticleSystem
+__vt__15zParticleSystem:
+	.incbin "baserom.dol", 0x32D92C, 0x34
+
 .section .text
 
 .global zParticleSystemCreateAll__Fv

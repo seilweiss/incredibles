@@ -45,6 +45,12 @@ lbl_803D86F4:
 lbl_803D86F8:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__Q24xhud6widget
+__vt__Q24xhud6widget:
+	.incbin "baserom.dol", 0x32B1E0, 0x28
+
 .section .text
 
 .global create__Q24xhud15block_allocatorFii

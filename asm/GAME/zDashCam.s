@@ -6,6 +6,12 @@
 $$2stringBase0_107:
 	.incbin "baserom.dol", 0x2E36E8, 0x1E0
 
+.section .sdata
+
+.global __vt__Q25zDash6camera
+__vt__Q25zDash6camera:
+	.incbin "baserom.dol", 0x32D1A8, 0x28
+
 .section .text
 
 .global init__Q25zDash13camera_splineFR5xBaseR9xDynAssetUl

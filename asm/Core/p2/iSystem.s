@@ -45,6 +45,15 @@ ARAMBytesForFMOD:
 $$21053_3:
 	.skip 0x8
 
+.section .sdata
+
+.global myGXNtsc480IntDf
+myGXNtsc480IntDf:
+	.incbin "baserom.dol", 0x32B698, 0x3C
+.global myGXPal528IntDf
+myGXPal528IntDf:
+	.incbin "baserom.dol", 0x32B6D4, 0x3C
+
 .section .text
 
 .global iRwResourcesEmptyArena__Fv

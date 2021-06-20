@@ -21,6 +21,12 @@ lbl_803D8A00:
 lbl_803D8A04:
 	.skip 0x4
 
+.section .sdata
+
+.global __vt__11zZipLineCam
+__vt__11zZipLineCam:
+	.incbin "baserom.dol", 0x32B778, 0x28
+
 .section .text
 
 .global zZipLineInit__FPvPv

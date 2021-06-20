@@ -15,6 +15,15 @@ lbl_803D88F8:
 lbl_803D88FC:
 	.skip 0x4
 
+.section .sdata
+
+.global sBasisBezier
+sBasisBezier:
+	.incbin "baserom.dol", 0x32B510, 0x40
+.global sBasisHermite
+sBasisHermite:
+	.incbin "baserom.dol", 0x32B550, 0x40
+
 .section .text
 
 .global Tridiag_Solve__FPfPfPfP5xVec3P5xVec3i

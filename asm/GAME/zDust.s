@@ -30,6 +30,15 @@ activities_used__16zDustRingEmitter:
 activities__16zDustRingEmitter:
 	.skip 0x4
 
+.section .sdata
+
+.global texture_rows__Q319$$2unnamed$$2zDust_cpp$$25tweak4dirt
+texture_rows__Q319$$2unnamed$$2zDust_cpp$$25tweak4dirt:
+	.incbin "baserom.dol", 0x32D4B8, 0x4
+.global texture_columns__Q319$$2unnamed$$2zDust_cpp$$25tweak4dirt
+texture_columns__Q319$$2unnamed$$2zDust_cpp$$25tweak4dirt:
+	.incbin "baserom.dol", 0x32D4BC, 0x4
+
 .section .text
 
 .global add_tweaks__Q219$$2unnamed$$2zDust_cpp$$25tweakFv

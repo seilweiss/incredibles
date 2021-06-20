@@ -12,6 +12,12 @@ sMBD:
 sMotionBlurEnabled:
 	.skip 0x8
 
+.section .sdata
+
+.global FLARE_SIZE
+FLARE_SIZE:
+	.incbin "baserom.dol", 0x32B690, 0x8
+
 .section .text
 
 .global iScrFxInit__Fv

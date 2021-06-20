@@ -21,6 +21,15 @@ purpleMeterUpLeft__4zHud:
 purpleMeterDownRight__4zHud:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__Q24zHud11hud_element
+__vt__Q24zHud11hud_element:
+	.incbin "baserom.dol", 0x32C0C0, 0x28
+.global __vt__Q24zHud12Incredimeter
+__vt__Q24zHud12Incredimeter:
+	.incbin "baserom.dol", 0x32C0E8, 0x28
+
 .section .text
 
 .global __ct__Q24zHud12IncredimeterFv

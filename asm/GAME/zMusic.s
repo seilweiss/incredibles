@@ -21,6 +21,12 @@ spMusicGroup:
 sMusic:
 	.skip 0xC
 
+.section .sdata
+
+.global gDialogueMusicLevel
+gDialogueMusicLevel:
+	.incbin "baserom.dol", 0x32C268, 0x8
+
 .section .text
 
 .global _zMusicStart__FUiUi

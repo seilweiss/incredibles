@@ -45,6 +45,12 @@ hiheap_size:
 sMemMgrEnableRenderWareMemoryHack:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMulti
+__vt__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMulti:
+	.incbin "baserom.dol", 0x32B5E8, 0x20
+
 .section .text
 
 .global iMemClearStack__21$$2unnamed$$2iMemMgr_cpp$$2Fv

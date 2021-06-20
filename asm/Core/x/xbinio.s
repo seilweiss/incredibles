@@ -27,6 +27,12 @@ $$2stringBase0_0:
 g_async_context:
 	.skip 0x8
 
+.section .sdata
+
+.global g_loadlock
+g_loadlock:
+	.incbin "baserom.dol", 0x32AFC8, 0x8
+
 .section .text
 
 .global xBinioLoadCreate__FPCci

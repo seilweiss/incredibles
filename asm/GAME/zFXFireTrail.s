@@ -18,6 +18,12 @@ $$2stringBase0_150:
 system_id__10fire_trail:
 	.skip 0x8
 
+.section .sdata
+
+.global need_setup__10fire_trail
+need_setup__10fire_trail:
+	.incbin "baserom.dol", 0x32DCF0, 0x8
+
 .section .text
 
 .global setup__10fire_trailFv

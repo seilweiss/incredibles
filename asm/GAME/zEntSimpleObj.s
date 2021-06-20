@@ -42,6 +42,15 @@ lbl_803D8BBC:
 lbl_803D8BC0:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__Q21z25lightweight$$0Q21z4toss$$410$$1
+__vt__Q21z25lightweight$$0Q21z4toss$$410$$1:
+	.incbin "baserom.dol", 0x32BDA0, 0x20
+.global __vt__Q21z32lightweight_system$$0Q21z4toss$$410$$1
+__vt__Q21z32lightweight_system$$0Q21z4toss$$410$$1:
+	.incbin "baserom.dol", 0x32BDC0, 0x28
+
 .section .text
 
 .global CmpSimpleMgr__FPCvPCv

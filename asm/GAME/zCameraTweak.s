@@ -36,6 +36,27 @@ zcam_neartweak:
 zcam_fartweak:
 	.skip 0x10
 
+.section .sdata
+
+.global zcam_near_d
+zcam_near_d:
+	.incbin "baserom.dol", 0x32B858, 0x4
+.global zcam_near_h
+zcam_near_h:
+	.incbin "baserom.dol", 0x32B85C, 0x4
+.global zcam_near_pitch
+zcam_near_pitch:
+	.incbin "baserom.dol", 0x32B860, 0x4
+.global zcam_far_d
+zcam_far_d:
+	.incbin "baserom.dol", 0x32B864, 0x4
+.global zcam_far_h
+zcam_far_h:
+	.incbin "baserom.dol", 0x32B868, 0x4
+.global zcam_far_pitch
+zcam_far_pitch:
+	.incbin "baserom.dol", 0x32B86C, 0x4
+
 .section .text
 
 .global zCameraTweak_LookPreCalc__FP13zCamTweakLookfff

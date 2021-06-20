@@ -45,6 +45,21 @@ $$21393_4:
 lbl_803D863C:
 	.skip 0x4
 
+.section .sdata
+
+.global sCutTocCount
+sCutTocCount:
+	.incbin "baserom.dol", 0x32B038, 0x40
+.global sCutTocInfo
+sCutTocInfo:
+	.incbin "baserom.dol", 0x32B078, 0x40
+.global shadVec$1472
+shadVec$1472:
+	.incbin "baserom.dol", 0x32B0B8, 0xC
+.global __vt__Q223$$2unnamed$$2xCutscene_cpp$$212xCamCutscene
+__vt__Q223$$2unnamed$$2xCutscene_cpp$$212xCamCutscene:
+	.incbin "baserom.dol", 0x32B0C4, 0x24
+
 .section .text
 
 .global xCutscene_InitBegin__Fv

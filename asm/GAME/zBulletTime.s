@@ -30,6 +30,48 @@ filters_count__25$$2unnamed$$2zBulletTime_cpp$$2:
 temp_count__25$$2unnamed$$2zBulletTime_cpp$$2:
 	.skip 0x4
 
+.section .sdata
+
+.global zBULLET_TIME_CAMERA_TIMER__25$$2unnamed$$2zBulletTime_cpp$$2
+zBULLET_TIME_CAMERA_TIMER__25$$2unnamed$$2zBulletTime_cpp$$2:
+	.incbin "baserom.dol", 0x32B7D0, 0x4
+.global zBULLET_TIME_CAMERA_ORIGIN_OFFSET__25$$2unnamed$$2zBulletTime_cpp$$2
+zBULLET_TIME_CAMERA_ORIGIN_OFFSET__25$$2unnamed$$2zBulletTime_cpp$$2:
+	.incbin "baserom.dol", 0x32B7D4, 0x4
+.global CONST_DEG_TO_RAD__25$$2unnamed$$2zBulletTime_cpp$$2
+CONST_DEG_TO_RAD__25$$2unnamed$$2zBulletTime_cpp$$2:
+	.incbin "baserom.dol", 0x32B7D8, 0x4
+.global zSNAPSHOT_TIMER__25$$2unnamed$$2zBulletTime_cpp$$2
+zSNAPSHOT_TIMER__25$$2unnamed$$2zBulletTime_cpp$$2:
+	.incbin "baserom.dol", 0x32B7DC, 0x4
+.global bt_was_active__25$$2unnamed$$2zBulletTime_cpp$$2
+bt_was_active__25$$2unnamed$$2zBulletTime_cpp$$2:
+	.incbin "baserom.dol", 0x32B7E0, 0x1
+.global zBULLET_TIME_CAMERA
+zBULLET_TIME_CAMERA:
+	.incbin "baserom.dol", 0x32B7E1, 0x1
+.global zBULLET_TIME
+zBULLET_TIME:
+	.incbin "baserom.dol", 0x32B7E2, 0x2
+.global filter_angle__25$$2unnamed$$2zBulletTime_cpp$$2
+filter_angle__25$$2unnamed$$2zBulletTime_cpp$$2:
+	.incbin "baserom.dol", 0x32B7E4, 0xC
+.global __vt__17zBulletTimeCamera
+__vt__17zBulletTimeCamera:
+	.incbin "baserom.dol", 0x32B7F0, 0x24
+.global __vt__13zLinearFilter
+__vt__13zLinearFilter:
+	.incbin "baserom.dol", 0x32B814, 0xC
+.global __vt__17zQuaternionFilter
+__vt__17zQuaternionFilter:
+	.incbin "baserom.dol", 0x32B820, 0xC
+.global __vt__23zFilterAbstract$$05zQuat$$1
+__vt__23zFilterAbstract$$05zQuat$$1:
+	.incbin "baserom.dol", 0x32B82C, 0xC
+.global __vt__23zFilterAbstract$$05xVec3$$1
+__vt__23zFilterAbstract$$05xVec3$$1:
+	.incbin "baserom.dol", 0x32B838, 0x10
+
 .section .text
 
 .global zFilterAnglesSet__25$$2unnamed$$2zBulletTime_cpp$$2Ff

@@ -72,6 +72,24 @@ lbl_803D85C8:
 lbl_803D85CC:
 	.skip 0x4
 
+.section .sdata
+
+.global KEY
+KEY:
+	.incbin "baserom.dol", 0x32B020, 0x4
+.global destWidth
+destWidth:
+	.incbin "baserom.dol", 0x32B024, 0x4
+.global destHeight
+destHeight:
+	.incbin "baserom.dol", 0x32B028, 0x4
+.global dtscale
+dtscale:
+	.incbin "baserom.dol", 0x32B02C, 0x4
+.global credits_time
+credits_time:
+	.incbin "baserom.dol", 0x32B030, 0x8
+
 .section .text
 
 .global Decrypt__FPvUiPCvUi

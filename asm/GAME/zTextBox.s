@@ -15,6 +15,18 @@ $$2stringBase0_97:
 head_active__22$$2unnamed$$2zTextBox_cpp$$2:
 	.skip 0x8
 
+.section .sdata
+
+.global render_bk_table__22$$2unnamed$$2zTextBox_cpp$$2
+render_bk_table__22$$2unnamed$$2zTextBox_cpp$$2:
+	.incbin "baserom.dol", 0x32D050, 0x10
+.global new_tags__22$$2unnamed$$2zTextBox_cpp$$2
+new_tags__22$$2unnamed$$2zTextBox_cpp$$2:
+	.incbin "baserom.dol", 0x32D060, 0x14
+.global new_tags_size__22$$2unnamed$$2zTextBox_cpp$$2
+new_tags_size__22$$2unnamed$$2zTextBox_cpp$$2:
+	.incbin "baserom.dol", 0x32D074, 0x4
+
 .section .text
 
 .global render_bk_fill__22$$2unnamed$$2zTextBox_cpp$$2FRC8ztextbox

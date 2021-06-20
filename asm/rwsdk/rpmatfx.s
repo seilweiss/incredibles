@@ -60,6 +60,18 @@ _rpGameCubeMTEngineOffset:
 DummyDict:
 	.skip 0x20
 
+.section .sdata
+
+.global _rpMatFXMaterialDataFreeListBlockSize
+_rpMatFXMaterialDataFreeListBlockSize:
+	.incbin "baserom.dol", 0x32E6B8, 0x4
+.global _rpMatFXMaterialDataFreeListPreallocBlocks
+_rpMatFXMaterialDataFreeListPreallocBlocks:
+	.incbin "baserom.dol", 0x32E6BC, 0x4
+.global _rpMultiTextureModule
+_rpMultiTextureModule:
+	.incbin "baserom.dol", 0x32E6C0, 0x20
+
 .section .text
 
 .global MatFXClose

@@ -18,6 +18,12 @@ $$2stringBase0_141:
 texture__15zNPCSmokeSystem:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__15zNPCSmokeSystem
+__vt__15zNPCSmokeSystem:
+	.incbin "baserom.dol", 0x32DB48, 0x10
+
 .section .text
 
 .global setup__Q24zNPC16NPCSmokeBehaviorFv

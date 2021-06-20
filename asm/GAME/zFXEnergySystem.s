@@ -39,6 +39,15 @@ lbl_803D94E8:
 lbl_803D94EC:
 	.skip 0x4
 
+.section .sdata
+
+.global streak_system_id__13energy_system
+streak_system_id__13energy_system:
+	.incbin "baserom.dol", 0x32DCF8, 0x4
+.global point_system_id__13energy_system
+point_system_id__13energy_system:
+	.incbin "baserom.dol", 0x32DCFC, 0x4
+
 .section .text
 
 .global scene_setup__13energy_systemFv

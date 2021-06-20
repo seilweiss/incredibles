@@ -51,6 +51,15 @@ lbl_803D9004:
 lbl_803D9008:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__252RegisterOnFirstEmitSystem$$0178zParticleEmitterConeVolume$$0147zParticleColorWhiteFadeOut$$0116zParticleMoverLinearDecel$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$4Q225$$2unnamed$$2zNPCShooter_cpp$$212MuzzleSystem$$1
+__vt__252RegisterOnFirstEmitSystem$$0178zParticleEmitterConeVolume$$0147zParticleColorWhiteFadeOut$$0116zParticleMoverLinearDecel$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$4Q225$$2unnamed$$2zNPCShooter_cpp$$212MuzzleSystem$$1:
+	.incbin "baserom.dol", 0x32CE38, 0xC
+.global __vt__Q225$$2unnamed$$2zNPCShooter_cpp$$212MuzzleSystem
+__vt__Q225$$2unnamed$$2zNPCShooter_cpp$$212MuzzleSystem:
+	.incbin "baserom.dol", 0x32CE44, 0xC
+
 .section .text
 
 .global MuzzleFlash_LevelInit__25$$2unnamed$$2zNPCShooter_cpp$$2Fv

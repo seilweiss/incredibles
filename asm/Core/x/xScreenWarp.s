@@ -60,6 +60,15 @@ warp_stack__25$$2unnamed$$2xScreenWarp_cpp$$2:
 render_this_frame__25$$2unnamed$$2xScreenWarp_cpp$$2:
 	.skip 0x8
 
+.section .sdata
+
+.global common_warp_names__11xScreenWarp
+common_warp_names__11xScreenWarp:
+	.incbin "baserom.dol", 0x32B420, 0x1C
+.global common_warp_animate__11xScreenWarp
+common_warp_animate__11xScreenWarp:
+	.incbin "baserom.dol", 0x32B43C, 0x1C
+
 .section .text
 
 .global alloc_warp__25$$2unnamed$$2xScreenWarp_cpp$$2FQ211xScreenWarp9type_enum

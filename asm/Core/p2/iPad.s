@@ -27,6 +27,15 @@ held_through_reset$1017:
 init$1018:
 	.skip 0x6
 
+.section .sdata
+
+.global g_rumblingThreshold
+g_rumblingThreshold:
+	.incbin "baserom.dol", 0x32B608, 0x4
+.global sPadData
+sPadData:
+	.incbin "baserom.dol", 0x32B60C, 0x34
+
 .section .text
 
 .global iPadInit__Fv

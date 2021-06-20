@@ -27,6 +27,48 @@ hdr_down_dst:
 texData:
 	.skip 0x24
 
+.section .sdata
+
+.global overbrighten__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak
+overbrighten__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak:
+	.incbin "baserom.dol", 0x32D298, 0x4
+.global overbrighten_decay__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak
+overbrighten_decay__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak:
+	.incbin "baserom.dol", 0x32D29C, 0x4
+.global downsamples__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak
+downsamples__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak:
+	.incbin "baserom.dol", 0x32D2A0, 0x4
+.global blur_faster__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak
+blur_faster__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak:
+	.incbin "baserom.dol", 0x32D2A4, 0x4
+.global colorize_red__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak
+colorize_red__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak:
+	.incbin "baserom.dol", 0x32D2A8, 0x4
+.global colorize_green__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak
+colorize_green__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak:
+	.incbin "baserom.dol", 0x32D2AC, 0x4
+.global colorize_blue__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak
+colorize_blue__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak:
+	.incbin "baserom.dol", 0x32D2B0, 0x4
+.global colorize_alpha__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak
+colorize_alpha__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweak:
+	.incbin "baserom.dol", 0x32D2B4, 0x4
+.global enabled__33$$2unnamed$$2xFXHighDynamicRange_cpp$$2
+enabled__33$$2unnamed$$2xFXHighDynamicRange_cpp$$2:
+	.incbin "baserom.dol", 0x32D2B8, 0x4
+.global hdr_src
+hdr_src:
+	.incbin "baserom.dol", 0x32D2BC, 0x4
+.global hdr_dst
+hdr_dst:
+	.incbin "baserom.dol", 0x32D2C0, 0x4
+.global hdr_down_src
+hdr_down_src:
+	.incbin "baserom.dol", 0x32D2C4, 0x4
+.global sizes
+sizes:
+	.incbin "baserom.dol", 0x32D2C8, 0x28
+
 .section .text
 
 .global add_tweaks__Q233$$2unnamed$$2xFXHighDynamicRange_cpp$$25tweakFv

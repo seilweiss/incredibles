@@ -9,6 +9,15 @@ iWaterBumpTex:
 iWaterEnvTex:
 	.skip 0x4
 
+.section .sdata
+
+.global iWaterBumpTexID
+iWaterBumpTexID:
+	.incbin "baserom.dol", 0x32DB00, 0x4
+.global iWaterEnvTexID
+iWaterEnvTexID:
+	.incbin "baserom.dol", 0x32DB04, 0x4
+
 .section .text
 
 .global TexturesOpen__Fv

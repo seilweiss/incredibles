@@ -12,6 +12,12 @@ $$2stringBase0_129:
 pDashMeter__Q24zHud9DashMeter:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__Q24zHud9DashMeter
+__vt__Q24zHud9DashMeter:
+	.incbin "baserom.dol", 0x32D568, 0x28
+
 .section .text
 
 .global __ct__Q24zHud9DashMeterFv

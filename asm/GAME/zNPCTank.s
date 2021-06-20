@@ -120,6 +120,39 @@ $$22386:
 lbl_803D9044:
 	.skip 0x4
 
+.section .sdata
+
+.global system_id__Q24zNPC10churn_rock
+system_id__Q24zNPC10churn_rock:
+	.incbin "baserom.dol", 0x32CE50, 0x4
+.global life__Q24zNPC10churn_rock
+life__Q24zNPC10churn_rock:
+	.incbin "baserom.dol", 0x32CE54, 0x4
+.global fade_start__Q24zNPC10churn_rock
+fade_start__Q24zNPC10churn_rock:
+	.incbin "baserom.dol", 0x32CE58, 0x4
+.global min_size__Q24zNPC10churn_rock
+min_size__Q24zNPC10churn_rock:
+	.incbin "baserom.dol", 0x32CE5C, 0x4
+.global max_size__Q24zNPC10churn_rock
+max_size__Q24zNPC10churn_rock:
+	.incbin "baserom.dol", 0x32CE60, 0x4
+.global emit_rate__Q24zNPC10churn_rock
+emit_rate__Q24zNPC10churn_rock:
+	.incbin "baserom.dol", 0x32CE64, 0x4
+.global vel__Q24zNPC10churn_rock
+vel__Q24zNPC10churn_rock:
+	.incbin "baserom.dol", 0x32CE68, 0xC
+.global gravity__Q24zNPC10churn_rock
+gravity__Q24zNPC10churn_rock:
+	.incbin "baserom.dol", 0x32CE74, 0x4
+.global bounce__Q24zNPC10churn_rock
+bounce__Q24zNPC10churn_rock:
+	.incbin "baserom.dol", 0x32CE78, 0x4
+.global __vt__Q24zNPC11tank_attack
+__vt__Q24zNPC11tank_attack:
+	.incbin "baserom.dol", 0x32CE7C, 0xC
+
 .section .text
 
 .global add_wheel_bones__Q24zNPC10wheel_boneFPQ24zNPC6common

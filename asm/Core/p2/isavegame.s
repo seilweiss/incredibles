@@ -108,6 +108,18 @@ lbl_803D89B4:
 $$21912_0:
 	.skip 0x28
 
+.section .sdata
+
+.global ISG_GC_GAMENAME
+ISG_GC_GAMENAME:
+	.incbin "baserom.dol", 0x32B640, 0x4
+.global g_legalSectSize
+g_legalSectSize:
+	.incbin "baserom.dol", 0x32B644, 0xC
+.global datestr$1352
+datestr$1352:
+	.incbin "baserom.dol", 0x32B650, 0x40
+
 .section .text
 
 .global iSGStartup__Fv

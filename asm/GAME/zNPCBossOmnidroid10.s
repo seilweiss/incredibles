@@ -129,6 +129,78 @@ lbl_803D934C:
 lbl_803D9350:
 	.skip 0x8
 
+.section .sdata
+
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Stage1
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Stage1:
+	.incbin "baserom.dol", 0x32D590, 0x2C
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Stage2
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Stage2:
+	.incbin "baserom.dol", 0x32D5BC, 0x28
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$216GuardRemoteStage
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$216GuardRemoteStage:
+	.incbin "baserom.dol", 0x32D5E4, 0x2C
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Stage3
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Stage3:
+	.incbin "baserom.dol", 0x32D610, 0x2C
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$216MultiTargetStage
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$216MultiTargetStage:
+	.incbin "baserom.dol", 0x32D63C, 0x28
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Stage4
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Stage4:
+	.incbin "baserom.dol", 0x32D664, 0x28
+.global __vt__Q34zNPC4Om105Stage
+__vt__Q34zNPC4Om105Stage:
+	.incbin "baserom.dol", 0x32D68C, 0x28
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Stage5
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Stage5:
+	.incbin "baserom.dol", 0x32D6B4, 0x28
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$25Throw
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$25Throw:
+	.incbin "baserom.dol", 0x32D6DC, 0x1C
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$211LaserStrafe
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$211LaserStrafe:
+	.incbin "baserom.dol", 0x32D6F8, 0x1C
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$29UberLaser
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$29UberLaser:
+	.incbin "baserom.dol", 0x32D714, 0x1C
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$24Idle
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$24Idle:
+	.incbin "baserom.dol", 0x32D730, 0x1C
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$24Jump
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$24Jump:
+	.incbin "baserom.dol", 0x32D74C, 0x1C
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$210BellySmash
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$210BellySmash:
+	.incbin "baserom.dol", 0x32D768, 0x1C
+.global __vt__Q34zNPC4Om1010ActionBase
+__vt__Q34zNPC4Om1010ActionBase:
+	.incbin "baserom.dol", 0x32D784, 0x14
+.global __vt__Q34zNPC4Om106Action
+__vt__Q34zNPC4Om106Action:
+	.incbin "baserom.dol", 0x32D798, 0x1C
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$24Walk
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$24Walk:
+	.incbin "baserom.dol", 0x32D7B4, 0x1C
+.global __vt__32zThrowableSystemCollisionHandler
+__vt__32zThrowableSystemCollisionHandler:
+	.incbin "baserom.dol", 0x32D7D0, 0xC
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$25Stomp
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$25Stomp:
+	.incbin "baserom.dol", 0x32D7DC, 0x14
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Pierce
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$26Pierce:
+	.incbin "baserom.dol", 0x32D7F0, 0x14
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$24Step
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$24Step:
+	.incbin "baserom.dol", 0x32D804, 0x14
+.global __vt__Q34zNPC7Om10Arm6Action
+__vt__Q34zNPC7Om10Arm6Action:
+	.incbin "baserom.dol", 0x32D818, 0x14
+.global __vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$211GuardRemote
+__vt__Q34zNPC33$$2unnamed$$2zNPCBossOmnidroid10_cpp$$211GuardRemote:
+	.incbin "baserom.dol", 0x32D82C, 0x14
+
 .section .text
 
 .global SetupCollision__Q24zNPC10CollidableFRC4xBoxb
