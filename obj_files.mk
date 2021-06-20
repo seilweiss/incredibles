@@ -24,7 +24,7 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/asm/Core/x/xCM.o\
 	$(OBJ_DIR)/asm/Core/x/xCollide.o\
 	$(OBJ_DIR)/asm/Core/x/xCollideFast.o\
-	$(OBJ_DIR)/asm/Core/x/xColor.o\
+	$(OBJ_DIR)/src/Core/x/xColor.o\
 	$(OBJ_DIR)/asm/Core/x/xCounter.o\
 	$(OBJ_DIR)/asm/Core/x/xCurveAsset.o\
 	$(OBJ_DIR)/asm/Core/x/xCutscene.o\
