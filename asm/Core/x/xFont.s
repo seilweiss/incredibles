@@ -2325,11 +2325,11 @@ bounds__5xfontCFc:
 /* 80031930 0002E730  28 00 00 FF */	cmplwi r0, 0xff
 /* 80031934 0002E734  40 82 00 28 */	bne lbl_8003195C
 /* 80031938 0002E738  80 62 89 D0 */	lwz r3, m_Null__13basic_rect$$0f$$1-_SDA2_BASE_(r2)
-/* 8003193C 0002E73C  80 02 89 D4 */	lwz r0, lbl_803D26F4-_SDA2_BASE_(r2)
+/* 8003193C 0002E73C  80 02 89 D4 */	lwz r0, (m_Null__13basic_rect$$0f$$1+4)-_SDA2_BASE_(r2)
 /* 80031940 0002E740  90 7F 00 00 */	stw r3, 0(r31)
-/* 80031944 0002E744  80 62 89 D8 */	lwz r3, lbl_803D26F8-_SDA2_BASE_(r2)
+/* 80031944 0002E744  80 62 89 D8 */	lwz r3, (m_Null__13basic_rect$$0f$$1+8)-_SDA2_BASE_(r2)
 /* 80031948 0002E748  90 1F 00 04 */	stw r0, 4(r31)
-/* 8003194C 0002E74C  80 02 89 DC */	lwz r0, lbl_803D26FC-_SDA2_BASE_(r2)
+/* 8003194C 0002E74C  80 02 89 DC */	lwz r0, (m_Null__13basic_rect$$0f$$1+12)-_SDA2_BASE_(r2)
 /* 80031950 0002E750  90 7F 00 08 */	stw r3, 8(r31)
 /* 80031954 0002E754  90 1F 00 0C */	stw r0, 0xc(r31)
 /* 80031958 0002E758  48 00 00 78 */	b lbl_800319D0

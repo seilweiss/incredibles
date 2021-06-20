@@ -76,9 +76,10 @@ INCLUDES := -ir src -ir include -Iinclude -Iinclude/rwsdk
 
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -w off -maxerrors 1 -nostdlib
-CFLAGS  := -g -DGAMECUBE -Cpp_exceptions off -proc gekko -fp hard -fp_contract on -O4,p -msgstyle gcc -maxerrors 1 \
-		   -pragma "check_header_flags off" -RTTI off -pragma "force_active on" \
-		   -str reuse,pool,readonly -char unsigned -enum int -use_lmw_stmw on -inline off -nostdinc -i- $(INCLUDES)
+CFLAGS  := -g -O4,p -DGAMECUBE -Cpp_exceptions off -proc gekko -fp hard -fp_contract on -RTTI off \
+		   -str reuse,pool,readonly -char unsigned -enum int -use_lmw_stmw on -inline off -sdata2 16 \
+		   -pragma "check_header_flags off" -pragma "force_active on" \
+		   -msgstyle gcc -maxerrors 1 -nostdinc -i- $(INCLUDES)
 PPROCFLAGS := -fsymbol-fixup
 
 # elf2dol needs to know these in order to calculate sbss correctly.
