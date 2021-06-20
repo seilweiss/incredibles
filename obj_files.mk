@@ -290,7 +290,7 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/asm/GAME/zReactiveAnimation.o\
 	$(OBJ_DIR)/asm/GAME/zDust.o\
 	$(OBJ_DIR)/asm/GAME/zHudDiskIndicator.o\
-	$(OBJ_DIR)/asm/Core/x/xProjectedTexture.o\
+	$(OBJ_DIR)/src/Core/x/xProjectedTexture.o\
 	$(OBJ_DIR)/asm/GAME/zSpotlight.o\
 	$(OBJ_DIR)/asm/GAME/zPickup.o\
 	$(OBJ_DIR)/asm/GAME/zNPCGroup.o\

@@ -17,7 +17,8 @@ TARGET_COL := wii
 
 OBJ_DIR := obj
 
-SRC_DIRS :=
+SRC_DIRS := src             \
+			src/Core/x
 
 ASM_DIRS := asm             \
 			asm/bink        \
@@ -70,7 +71,7 @@ SHA1SUM := sha1sum
 ASMDIFF := ./asmdiff.sh
 
 # Options
-INCLUDES := 
+INCLUDES := -ir src -ir include -Iinclude
 
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -w off -maxerrors 1 -nostdlib
