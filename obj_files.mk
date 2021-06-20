@@ -326,7 +326,7 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/asm/GAME/zNPCStreamer.o\
 	$(OBJ_DIR)/asm/GAME/zNPCBossBombChopper.o\
 	$(OBJ_DIR)/asm/GAME/zCameraRBand.o\
-	$(OBJ_DIR)/asm/GAME/zWireFrameAsset.o\
+	$(OBJ_DIR)/src/GAME/zWireFrameAsset.o\
 	$(OBJ_DIR)/asm/GAME/zJSPExtraData.o\
 	$(OBJ_DIR)/asm/GAME/zRubbleGenerator.o\
 	$(OBJ_DIR)/asm/GAME/zParticleFXCommon.o\
