@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global xIMLock__FR14xIMLockContext9xIMFormati
@@ -192,3 +194,6 @@ lbl_801F41F4:
 /* 801F422C 001F102C  7C 08 03 A6 */	mtlr r0
 /* 801F4230 001F1030  38 21 00 30 */	addi r1, r1, 0x30
 /* 801F4234 001F1034  4E 80 00 20 */	blr 
+
+.endif
+

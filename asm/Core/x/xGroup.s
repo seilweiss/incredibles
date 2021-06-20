@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global xGroupInit__FPvPv
@@ -437,3 +439,6 @@ lbl_8003BB04:
 /* 8003BB24 00038924  90 03 00 18 */	stw r0, 0x18(r3)
 /* 8003BB28 00038928  7C A3 2B 78 */	mr r3, r5
 /* 8003BB2C 0003892C  4E 80 00 20 */	blr 
+
+.endif
+

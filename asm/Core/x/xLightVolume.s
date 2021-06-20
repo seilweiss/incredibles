@@ -17,9 +17,11 @@ __vt__17xLightVolumeModel:
 
 .section .sdata2
 
-.global $$21069_7
-$$21069_7:
+.global _esc__2_1069_7
+_esc__2_1069_7:
 	.incbin "baserom.dol", 0x3334F0, 0x8
+
+.if 0
 
 .section .text
 
@@ -208,7 +210,7 @@ render_single__17xLightVolumeModelFP14xModelInstanceUi:
 /* 801C5BAC 001C29AC  38 03 00 40 */	addi r0, r3, 0x40
 /* 801C5BB0 001C29B0  90 1F 00 08 */	stw r0, 8(r31)
 lbl_801C5BB4:
-/* 801C5BB4 001C29B4  C0 22 CE 10 */	lfs f1, $$21069_7-_SDA2_BASE_(r2)
+/* 801C5BB4 001C29B4  C0 22 CE 10 */	lfs f1, _esc__2_1069_7-_SDA2_BASE_(r2)
 /* 801C5BB8 001C29B8  C0 1A 00 58 */	lfs f0, 0x58(r26)
 /* 801C5BBC 001C29BC  83 9A 00 54 */	lwz r28, 0x54(r26)
 /* 801C5BC0 001C29C0  FC 01 00 00 */	fcmpu cr0, f1, f0
@@ -238,7 +240,7 @@ lbl_801C5BE4:
 /* 801C5C1C 001C2A1C  88 D9 00 10 */	lbz r6, 0x10(r25)
 /* 801C5C20 001C2A20  48 00 00 49 */	bl render_atomic__12xLightVolumeFP8RpAtomic10xColor_tagbUi
 lbl_801C5C24:
-/* 801C5C24 001C2A24  C0 22 CE 10 */	lfs f1, $$21069_7-_SDA2_BASE_(r2)
+/* 801C5C24 001C2A24  C0 22 CE 10 */	lfs f1, _esc__2_1069_7-_SDA2_BASE_(r2)
 /* 801C5C28 001C2A28  C0 1A 00 58 */	lfs f0, 0x58(r26)
 /* 801C5C2C 001C2A2C  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 801C5C30 001C2A30  41 82 00 10 */	beq lbl_801C5C40
@@ -264,3 +266,6 @@ render_all__12xLightVolumeFv:
 .global render_atomic__12xLightVolumeFP8RpAtomic10xColor_tagbUi
 render_atomic__12xLightVolumeFP8RpAtomic10xColor_tagbUi:
 /* 801C5C68 001C2A68  4E 80 00 20 */	blr 
+
+.endif
+

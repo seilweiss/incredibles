@@ -6,6 +6,8 @@
 gCurXEnv:
 	.skip 0x8
 
+.if 0
+
 .section .text
 
 .global xEnvLoadJSPList__FP4xEnvi
@@ -142,3 +144,6 @@ lbl_8002EE70:
 /* 8002EE78 0002BC78  7C 08 03 A6 */	mtlr r0
 /* 8002EE7C 0002BC7C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002EE80 0002BC80  4E 80 00 20 */	blr 
+
+.endif
+

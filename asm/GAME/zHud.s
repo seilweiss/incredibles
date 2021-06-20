@@ -2,17 +2,19 @@
 
 .section .sbss
 
-.global init$1094
-init$1094:
+.global init_esc__7_1094
+init_esc__7_1094:
 	.skip 0x4
-.global _instance$1093
-_instance$1093:
+.global _instance_esc__7_1093
+_instance_esc__7_1093:
 	.skip 0xC
+
+.if 0
 
 .section .text
 
-.global EventHandlerFunc__18$$2unnamed$$2zHud_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi
-EventHandlerFunc__18$$2unnamed$$2zHud_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi:
+.global EventHandlerFunc__18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi
+EventHandlerFunc__18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi:
 /* 800D1624 000CE424  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D1628 000CE428  7C 08 02 A6 */	mflr r0
 /* 800D162C 000CE42C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -36,9 +38,9 @@ handle_event__Q24zHud11hud_elementFP5xBaseUiPCfP5xBaseUi:
 init__Q24zHud11hud_elementFv:
 /* 800D1660 000CE460  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D1664 000CE464  7C 08 02 A6 */	mflr r0
-/* 800D1668 000CE468  3C 80 80 0D */	lis r4, EventHandlerFunc__18$$2unnamed$$2zHud_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi@ha
+/* 800D1668 000CE468  3C 80 80 0D */	lis r4, EventHandlerFunc__18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi@ha
 /* 800D166C 000CE46C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800D1670 000CE470  38 04 16 24 */	addi r0, r4, EventHandlerFunc__18$$2unnamed$$2zHud_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi@l
+/* 800D1670 000CE470  38 04 16 24 */	addi r0, r4, EventHandlerFunc__18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi@l
 /* 800D1674 000CE474  90 03 00 0C */	stw r0, 0xc(r3)
 /* 800D1678 000CE478  4B F3 AF 4D */	bl xBaseEnable__FP5xBase
 /* 800D167C 000CE47C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -304,16 +306,16 @@ instance__Q24zHud10hud_systemFv:
 /* 800D19A4 000CE7A4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D19A8 000CE7A8  7C 08 02 A6 */	mflr r0
 /* 800D19AC 000CE7AC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800D19B0 000CE7B0  88 0D C9 40 */	lbz r0, init$1094-_SDA_BASE_(r13)
+/* 800D19B0 000CE7B0  88 0D C9 40 */	lbz r0, init_esc__7_1094-_SDA_BASE_(r13)
 /* 800D19B4 000CE7B4  7C 00 07 75 */	extsb. r0, r0
 /* 800D19B8 000CE7B8  40 82 00 14 */	bne lbl_800D19CC
-/* 800D19BC 000CE7BC  38 6D C9 44 */	addi r3, r13, _instance$1093-_SDA_BASE_
+/* 800D19BC 000CE7BC  38 6D C9 44 */	addi r3, r13, _instance_esc__7_1093-_SDA_BASE_
 /* 800D19C0 000CE7C0  48 00 00 21 */	bl __ct__Q24zHud10hud_systemFv
 /* 800D19C4 000CE7C4  38 00 00 01 */	li r0, 1
-/* 800D19C8 000CE7C8  98 0D C9 40 */	stb r0, init$1094-_SDA_BASE_(r13)
+/* 800D19C8 000CE7C8  98 0D C9 40 */	stb r0, init_esc__7_1094-_SDA_BASE_(r13)
 lbl_800D19CC:
 /* 800D19CC 000CE7CC  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800D19D0 000CE7D0  38 6D C9 44 */	addi r3, r13, _instance$1093-_SDA_BASE_
+/* 800D19D0 000CE7D0  38 6D C9 44 */	addi r3, r13, _instance_esc__7_1093-_SDA_BASE_
 /* 800D19D4 000CE7D4  7C 08 03 A6 */	mtlr r0
 /* 800D19D8 000CE7D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D19DC 000CE7DC  4E 80 00 20 */	blr 
@@ -321,3 +323,6 @@ lbl_800D19CC:
 .global __ct__Q24zHud10hud_systemFv
 __ct__Q24zHud10hud_systemFv:
 /* 800D19E0 000CE7E0  4E 80 00 20 */	blr 
+
+.endif
+

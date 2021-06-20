@@ -17,8 +17,8 @@ sEffectFuncs:
 
 .section .rodata
 
-.global $$2stringBase0_63
-$$2stringBase0_63:
+.global _esc__2_stringBase0_63
+_esc__2_stringBase0_63:
 	.incbin "baserom.dol", 0x2DADE0, 0x10
 
 .section .sbss
@@ -44,9 +44,11 @@ sDefaultShadowVec:
 
 .section .sdata2
 
-.global $$21043_4
-$$21043_4:
+.global _esc__2_1043_4
+_esc__2_1043_4:
 	.incbin "baserom.dol", 0x330A00, 0x8
+
+.if 0
 
 .section .text
 
@@ -406,7 +408,7 @@ zLightUpdate__FP5xBaseP6xScenef:
 /* 800DD5B0 000DA3B0  80 A3 00 00 */	lwz r5, 0(r3)
 /* 800DD5B4 000DA3B4  38 81 00 08 */	addi r4, r1, 8
 /* 800DD5B8 000DA3B8  80 03 00 04 */	lwz r0, 4(r3)
-/* 800DD5BC 000DA3BC  C0 02 A3 20 */	lfs f0, $$21043_4-_SDA2_BASE_(r2)
+/* 800DD5BC 000DA3BC  C0 02 A3 20 */	lfs f0, _esc__2_1043_4-_SDA2_BASE_(r2)
 /* 800DD5C0 000DA3C0  90 01 00 0C */	stw r0, 0xc(r1)
 /* 800DD5C4 000DA3C4  C0 21 00 0C */	lfs f1, 0xc(r1)
 /* 800DD5C8 000DA3C8  90 A1 00 08 */	stw r5, 8(r1)
@@ -517,7 +519,7 @@ zLightAddLocal__FP4xEnt:
 /* 800DD740 000DA540  4B F4 94 E1 */	bl xEntGetPos__FPC4xEnt
 /* 800DD744 000DA544  80 83 00 00 */	lwz r4, 0(r3)
 /* 800DD748 000DA548  80 03 00 04 */	lwz r0, 4(r3)
-/* 800DD74C 000DA54C  C0 02 A3 20 */	lfs f0, $$21043_4-_SDA2_BASE_(r2)
+/* 800DD74C 000DA54C  C0 02 A3 20 */	lfs f0, _esc__2_1043_4-_SDA2_BASE_(r2)
 /* 800DD750 000DA550  90 01 00 0C */	stw r0, 0xc(r1)
 /* 800DD754 000DA554  C0 21 00 0C */	lfs f1, 0xc(r1)
 /* 800DD758 000DA558  90 81 00 08 */	stw r4, 8(r1)
@@ -542,7 +544,7 @@ zLightAddLocal__FP4xEnt:
 /* 800DD7A4 000DA5A4  4B F2 D9 05 */	bl __as__5xVec3FRC5xVec3
 lbl_800DD7A8:
 /* 800DD7A8 000DA5A8  80 7F 00 CC */	lwz r3, 0xcc(r31)
-/* 800DD7AC 000DA5AC  C0 22 A3 20 */	lfs f1, $$21043_4-_SDA2_BASE_(r2)
+/* 800DD7AC 000DA5AC  C0 22 A3 20 */	lfs f1, _esc__2_1043_4-_SDA2_BASE_(r2)
 /* 800DD7B0 000DA5B0  38 83 00 0C */	addi r4, r3, 0xc
 /* 800DD7B4 000DA5B4  4B F8 2C 5D */	bl xShadowSetLight__FP5xVec3P5xVec3f
 /* 800DD7B8 000DA5B8  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -585,8 +587,8 @@ zLightSetVolume__FP7zVolume:
 /* 800DD82C 000DA62C  90 0D C9 FC */	stw r0, sPartitionVolume-_SDA_BASE_(r13)
 /* 800DD830 000DA630  48 00 00 20 */	b lbl_800DD850
 lbl_800DD834:
-/* 800DD834 000DA634  3C 60 80 2E */	lis r3, $$2stringBase0_63@ha
-/* 800DD838 000DA638  38 63 DD E0 */	addi r3, r3, $$2stringBase0_63@l
+/* 800DD834 000DA634  3C 60 80 2E */	lis r3, _esc__2_stringBase0_63@ha
+/* 800DD838 000DA638  38 63 DD E0 */	addi r3, r3, _esc__2_stringBase0_63@l
 /* 800DD83C 000DA63C  4B F8 F3 E5 */	bl xStrHash__FPCc
 /* 800DD840 000DA640  80 1F 00 00 */	lwz r0, 0(r31)
 /* 800DD844 000DA644  7C 00 18 40 */	cmplw r0, r3
@@ -598,3 +600,6 @@ lbl_800DD850:
 /* 800DD858 000DA658  7C 08 03 A6 */	mtlr r0
 /* 800DD85C 000DA65C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800DD860 000DA660  4E 80 00 20 */	blr 
+
+.endif
+

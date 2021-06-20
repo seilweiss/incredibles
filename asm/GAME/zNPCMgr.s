@@ -9,6 +9,8 @@ g_modinit_0:
 g_npcmgr:
 	.skip 0x4
 
+.if 0
+
 .section .text
 
 .global zNPCMgrSelf__Fv
@@ -652,3 +654,6 @@ lbl_8012D28C:
 lbl_8012D298:
 /* 8012D298 0012A098  38 60 00 00 */	li r3, 0
 /* 8012D29C 0012A09C  4E 80 00 20 */	blr 
+
+.endif
+

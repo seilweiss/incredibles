@@ -8,18 +8,20 @@ zFMVFileTable:
 
 .section .rodata
 
-.global $$2stringBase0_57
-$$2stringBase0_57:
+.global _esc__2_stringBase0_57
+_esc__2_stringBase0_57:
 	.incbin "baserom.dol", 0x2DA3E8, 0x1C8
 
 .section .sdata2
 
-.global $$2981_1
-$$2981_1:
+.global _esc__2_981_1
+_esc__2_981_1:
 	.incbin "baserom.dol", 0x330660, 0x4
-.global $$2982_0
-$$2982_0:
+.global _esc__2_982_0
+_esc__2_982_0:
 	.incbin "baserom.dol", 0x330664, 0x4
+
+.if 0
 
 .section .text
 
@@ -88,7 +90,7 @@ zFMVPlay__FPCcUifUibbb:
 /* 800CC9D4 000C97D4  48 01 7A CD */	bl zMenuPause__Fb
 /* 800CC9D8 000C97D8  4B FA 16 C9 */	bl xSubTitlesGetSize__Fv
 /* 800CC9DC 000C97DC  FC 00 08 90 */	fmr f0, f1
-/* 800CC9E0 000C97E0  C0 22 9F 80 */	lfs f1, $$2981_1-_SDA2_BASE_(r2)
+/* 800CC9E0 000C97E0  C0 22 9F 80 */	lfs f1, _esc__2_981_1-_SDA2_BASE_(r2)
 /* 800CC9E4 000C97E4  FF E0 00 90 */	fmr f31, f0
 /* 800CC9E8 000C97E8  4B FA 16 B1 */	bl xSubTitlesSetSize__Ff
 /* 800CC9EC 000C97EC  4B F9 8A 41 */	bl xSndMgrGetEffect__Fv
@@ -110,10 +112,10 @@ zFMVPlay__FPCcUifUibbb:
 /* 800CCA2C 000C982C  4B F9 89 D1 */	bl xSndMgrSetEffect__F10xSndEffect
 /* 800CCA30 000C9830  FC 20 F8 90 */	fmr f1, f31
 /* 800CCA34 000C9834  4B FA 16 65 */	bl xSubTitlesSetSize__Ff
-/* 800CCA38 000C9838  C0 22 9F 84 */	lfs f1, $$2982_0-_SDA2_BASE_(r2)
+/* 800CCA38 000C9838  C0 22 9F 84 */	lfs f1, _esc__2_982_0-_SDA2_BASE_(r2)
 /* 800CCA3C 000C983C  38 60 00 00 */	li r3, 0
 /* 800CCA40 000C9840  4B F8 2F 55 */	bl xPadUpdate__Fif
-/* 800CCA44 000C9844  C0 22 9F 84 */	lfs f1, $$2982_0-_SDA2_BASE_(r2)
+/* 800CCA44 000C9844  C0 22 9F 84 */	lfs f1, _esc__2_982_0-_SDA2_BASE_(r2)
 /* 800CCA48 000C9848  38 60 00 00 */	li r3, 0
 /* 800CCA4C 000C984C  4B F8 2F 49 */	bl xPadUpdate__Fif
 /* 800CCA50 000C9850  38 60 00 00 */	li r3, 0
@@ -129,3 +131,6 @@ lbl_800CCA58:
 /* 800CCA74 000C9874  7C 08 03 A6 */	mtlr r0
 /* 800CCA78 000C9878  38 21 00 50 */	addi r1, r1, 0x50
 /* 800CCA7C 000C987C  4E 80 00 20 */	blr 
+
+.endif
+

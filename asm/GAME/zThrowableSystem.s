@@ -2,56 +2,56 @@
 
 .section .data
 
-.global staticThrowableProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2
-staticThrowableProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global staticThrowableProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+staticThrowableProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.incbin "baserom.dol", 0x30FD78, 0xF0
 
 .section .rodata
 
-.global $$2stringBase0_127
-$$2stringBase0_127:
+.global _esc__2_stringBase0_127
+_esc__2_stringBase0_127:
 	.incbin "baserom.dol", 0x2E4DB0, 0xA8
 
 .section .sbss
 
-.global throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2
-throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.skip 0x4
-.global throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2
-throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.skip 0x4
-.global throwModelMapMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2
-throwModelMapMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global throwModelMapMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+throwModelMapMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.skip 0x4
-.global throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2
-throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.skip 0x4
-.global throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2
-throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.skip 0x4
-.global throwPropertiesMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2
-throwPropertiesMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global throwPropertiesMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+throwPropertiesMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.skip 0x4
-.global $$21332_0
-$$21332_0:
+.global _esc__2_1332_0
+_esc__2_1332_0:
 	.skip 0x4
-.global runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2
-runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.skip 0x4
-.global addedTargets__30$$2unnamed$$2zThrowableSystem_cpp$$2
-addedTargets__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global addedTargets__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+addedTargets__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.skip 0x4
-.global addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2
-addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.skip 0x4
-.global additionalCollisionHandler__30$$2unnamed$$2zThrowableSystem_cpp$$2
-additionalCollisionHandler__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global additionalCollisionHandler__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+additionalCollisionHandler__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.skip 0x4
-.global $$21843
-$$21843:
+.global _esc__2_1843
+_esc__2_1843:
 	.skip 0x4
-.global $$21860
-$$21860:
+.global _esc__2_1860
+_esc__2_1860:
 	.skip 0x4
 .global lastTarget
 lastTarget:
@@ -59,107 +59,107 @@ lastTarget:
 
 .section .sdata
 
-.global sUseStrongVel__30$$2unnamed$$2zThrowableSystem_cpp$$2
-sUseStrongVel__30$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global sUseStrongVel__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+sUseStrongVel__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32D530, 0x8
 
 .section .sdata2
 
-.global $$21351_2
-$$21351_2:
+.global _esc__2_1351_2
+_esc__2_1351_2:
 	.incbin "baserom.dol", 0x333048, 0x4
-.global $$21352_1
-$$21352_1:
+.global _esc__2_1352_1
+_esc__2_1352_1:
 	.incbin "baserom.dol", 0x33304C, 0x4
-.global $$21356_2
-$$21356_2:
+.global _esc__2_1356_2
+_esc__2_1356_2:
 	.incbin "baserom.dol", 0x333050, 0x4
-.global $$21368_0
-$$21368_0:
+.global _esc__2_1368_0
+_esc__2_1368_0:
 	.incbin "baserom.dol", 0x333054, 0x4
-.global $$21369_0
-$$21369_0:
+.global _esc__2_1369_0
+_esc__2_1369_0:
 	.incbin "baserom.dol", 0x333058, 0x4
-.global $$21421_6
-$$21421_6:
+.global _esc__2_1421_6
+_esc__2_1421_6:
 	.incbin "baserom.dol", 0x33305C, 0x4
-.global $$21422_1
-$$21422_1:
+.global _esc__2_1422_1
+_esc__2_1422_1:
 	.incbin "baserom.dol", 0x333060, 0x4
-.global $$21423_1
-$$21423_1:
+.global _esc__2_1423_1
+_esc__2_1423_1:
 	.incbin "baserom.dol", 0x333064, 0x4
-.global $$21424_1
-$$21424_1:
+.global _esc__2_1424_1
+_esc__2_1424_1:
 	.incbin "baserom.dol", 0x333068, 0x4
-.global $$21425_1
-$$21425_1:
+.global _esc__2_1425_1
+_esc__2_1425_1:
 	.incbin "baserom.dol", 0x33306C, 0x4
-.global $$21426_1
-$$21426_1:
+.global _esc__2_1426_1
+_esc__2_1426_1:
 	.incbin "baserom.dol", 0x333070, 0x4
-.global $$21427_3
-$$21427_3:
+.global _esc__2_1427_3
+_esc__2_1427_3:
 	.incbin "baserom.dol", 0x333074, 0x4
-.global $$21428_3
-$$21428_3:
+.global _esc__2_1428_3
+_esc__2_1428_3:
 	.incbin "baserom.dol", 0x333078, 0x4
-.global $$21429_2
-$$21429_2:
+.global _esc__2_1429_2
+_esc__2_1429_2:
 	.incbin "baserom.dol", 0x33307C, 0x4
-.global $$21430_0
-$$21430_0:
+.global _esc__2_1430_0
+_esc__2_1430_0:
 	.incbin "baserom.dol", 0x333080, 0x4
-.global $$21447_2
-$$21447_2:
+.global _esc__2_1447_2
+_esc__2_1447_2:
 	.incbin "baserom.dol", 0x333084, 0x4
-.global $$21468_1
-$$21468_1:
+.global _esc__2_1468_1
+_esc__2_1468_1:
 	.incbin "baserom.dol", 0x333088, 0x4
-.global $$21469_4
-$$21469_4:
+.global _esc__2_1469_4
+_esc__2_1469_4:
 	.incbin "baserom.dol", 0x33308C, 0x4
-.global nj02_hacked_targets__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2
-nj02_hacked_targets__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global nj02_hacked_targets__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+nj02_hacked_targets__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333090, 0xC
-.global hacked_targets__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2
-hacked_targets__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2:
+.global hacked_targets__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
+hacked_targets__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.incbin "baserom.dol", 0x33309C, 0x10
-.global $$21645_0
-$$21645_0:
+.global _esc__2_1645_0
+_esc__2_1645_0:
 	.incbin "baserom.dol", 0x3330AC, 0x4
-.global $$21646_0
-$$21646_0:
+.global _esc__2_1646_0
+_esc__2_1646_0:
 	.incbin "baserom.dol", 0x3330B0, 0x4
-.global $$21647
-$$21647:
+.global _esc__2_1647
+_esc__2_1647:
 	.incbin "baserom.dol", 0x3330B4, 0x4
-.global $$21905
-$$21905:
+.global _esc__2_1905
+_esc__2_1905:
 	.incbin "baserom.dol", 0x3330B8, 0x4
-.global $$21926_0
-$$21926_0:
+.global _esc__2_1926_0
+_esc__2_1926_0:
 	.incbin "baserom.dol", 0x3330BC, 0x4
-.global $$22064
-$$22064:
+.global _esc__2_2064
+_esc__2_2064:
 	.incbin "baserom.dol", 0x3330C0, 0x4
-.global $$22065
-$$22065:
+.global _esc__2_2065
+_esc__2_2065:
 	.incbin "baserom.dol", 0x3330C4, 0x4
-.global $$22066_0
-$$22066_0:
+.global _esc__2_2066_0
+_esc__2_2066_0:
 	.incbin "baserom.dol", 0x3330C8, 0x4
-.global $$22136
-$$22136:
+.global _esc__2_2136
+_esc__2_2136:
 	.incbin "baserom.dol", 0x3330CC, 0x4
-.global $$22202_0
-$$22202_0:
+.global _esc__2_2202_0
+_esc__2_2202_0:
 	.incbin "baserom.dol", 0x3330D0, 0x4
-.global $$22215
-$$22215:
+.global _esc__2_2215
+_esc__2_2215:
 	.incbin "baserom.dol", 0x3330D4, 0x4
-.global $$22230
-$$22230:
+.global _esc__2_2230
+_esc__2_2230:
 	.incbin "baserom.dol", 0x3330D8, 0x4
 .global lbl_803D671C
 lbl_803D671C:
@@ -171,10 +171,12 @@ lbl_803D6720:
 lbl_803D6724:
 	.incbin "baserom.dol", 0x3330E4, 0x4
 
+.if 0
+
 .section .text
 
-.global UintCompare__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUi
-UintCompare__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUi:
+.global UintCompare__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUiUi
+UintCompare__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUiUi:
 /* 801B2EE0 001AFCE0  7C 03 20 40 */	cmplw r3, r4
 /* 801B2EE4 001AFCE4  40 81 00 0C */	ble lbl_801B2EF0
 /* 801B2EE8 001AFCE8  38 60 00 01 */	li r3, 1
@@ -185,8 +187,8 @@ lbl_801B2EF0:
 /* 801B2EF8 001AFCF8  7C 60 01 10 */	subfe r3, r0, r0
 /* 801B2EFC 001AFCFC  4E 80 00 20 */	blr 
 
-.global GetThrowableProperty__30$$2unnamed$$2zThrowableSystem_cpp$$2FUi
-GetThrowableProperty__30$$2unnamed$$2zThrowableSystem_cpp$$2FUi:
+.global GetThrowableProperty__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUi
+GetThrowableProperty__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUi:
 /* 801B2F00 001AFD00  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B2F04 001AFD04  7C 08 02 A6 */	mflr r0
 /* 801B2F08 001AFD08  90 01 00 14 */	stw r0, 0x14(r1)
@@ -197,23 +199,23 @@ GetThrowableProperty__30$$2unnamed$$2zThrowableSystem_cpp$$2FUi:
 /* 801B2F1C 001AFD1C  38 60 00 00 */	li r3, 0
 /* 801B2F20 001AFD20  48 00 00 58 */	b lbl_801B2F78
 lbl_801B2F24:
-/* 801B2F24 001AFD24  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B2F24 001AFD24  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B2F28 001AFD28  38 A1 00 08 */	addi r5, r1, 8
-/* 801B2F2C 001AFD2C  88 8D D8 38 */	lbz r4, $$21332_0-_SDA_BASE_(r13)
+/* 801B2F2C 001AFD2C  88 8D D8 38 */	lbz r4, _esc__2_1332_0-_SDA_BASE_(r13)
 /* 801B2F30 001AFD30  38 C1 00 0C */	addi r6, r1, 0xc
 /* 801B2F34 001AFD34  1C 00 00 0C */	mulli r0, r0, 0xc
-/* 801B2F38 001AFD38  80 6D D8 20 */	lwz r3, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B2F38 001AFD38  80 6D D8 20 */	lwz r3, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B2F3C 001AFD3C  98 81 00 0C */	stb r4, 0xc(r1)
 /* 801B2F40 001AFD40  7C 83 02 14 */	add r4, r3, r0
-/* 801B2F44 001AFD44  48 00 2A D9 */	bl binary_find$$0PQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMap$$4Ui$$4Q230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompare$$1__FPQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMapPQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMapRCUiQ230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompare
-/* 801B2F48 001AFD48  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B2F4C 001AFD4C  80 8D D8 20 */	lwz r4, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B2F44 001AFD44  48 00 2A D9 */	bl binary_find_esc__0_PQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMap_esc__4_Ui_esc__4_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompare_esc__1___FPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMapPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMapRCUiQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompare
+/* 801B2F48 001AFD48  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B2F4C 001AFD4C  80 8D D8 20 */	lwz r4, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B2F50 001AFD50  1C 00 00 0C */	mulli r0, r0, 0xc
 /* 801B2F54 001AFD54  7C 04 02 14 */	add r0, r4, r0
 /* 801B2F58 001AFD58  7C 03 00 40 */	cmplw r3, r0
 /* 801B2F5C 001AFD5C  41 82 00 18 */	beq lbl_801B2F74
 /* 801B2F60 001AFD60  80 03 00 04 */	lwz r0, 4(r3)
-/* 801B2F64 001AFD64  80 6D D8 2C */	lwz r3, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B2F64 001AFD64  80 6D D8 2C */	lwz r3, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B2F68 001AFD68  1C 00 00 44 */	mulli r0, r0, 0x44
 /* 801B2F6C 001AFD6C  7C 63 02 14 */	add r3, r3, r0
 /* 801B2F70 001AFD70  48 00 00 08 */	b lbl_801B2F78
@@ -225,23 +227,23 @@ lbl_801B2F78:
 /* 801B2F80 001AFD80  38 21 00 10 */	addi r1, r1, 0x10
 /* 801B2F84 001AFD84  4E 80 00 20 */	blr 
 
-.global GetMaxThrowDistance__30$$2unnamed$$2zThrowableSystem_cpp$$2Fff
-GetMaxThrowDistance__30$$2unnamed$$2zThrowableSystem_cpp$$2Fff:
+.global GetMaxThrowDistance__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_Fff
+GetMaxThrowDistance__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_Fff:
 /* 801B2F88 001AFD88  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801B2F8C 001AFD8C  7C 08 02 A6 */	mflr r0
 /* 801B2F90 001AFD90  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801B2F94 001AFD94  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 801B2F98 001AFD98  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 801B2F9C 001AFD9C  FF E0 08 90 */	fmr f31, f1
-/* 801B2FA0 001AFDA0  C0 22 C9 68 */	lfs f1, $$21351_2-_SDA2_BASE_(r2)
-/* 801B2FA4 001AFDA4  C0 02 C9 6C */	lfs f0, $$21352_1-_SDA2_BASE_(r2)
+/* 801B2FA0 001AFDA0  C0 22 C9 68 */	lfs f1, _esc__2_1351_2-_SDA2_BASE_(r2)
+/* 801B2FA4 001AFDA4  C0 02 C9 6C */	lfs f0, _esc__2_1352_1-_SDA2_BASE_(r2)
 /* 801B2FA8 001AFDA8  38 61 00 08 */	addi r3, r1, 8
 /* 801B2FAC 001AFDAC  EC 00 0F FA */	fmadds f0, f0, f31, f1
 /* 801B2FB0 001AFDB0  EC 01 00 32 */	fmuls f0, f1, f0
 /* 801B2FB4 001AFDB4  EC 20 10 24 */	fdivs f1, f0, f2
 /* 801B2FB8 001AFDB8  4B EB E7 51 */	bl xsqrtfast__FRff
 /* 801B2FBC 001AFDBC  C0 01 00 08 */	lfs f0, 8(r1)
-/* 801B2FC0 001AFDC0  C0 22 C9 6C */	lfs f1, $$21352_1-_SDA2_BASE_(r2)
+/* 801B2FC0 001AFDC0  C0 22 C9 6C */	lfs f1, _esc__2_1352_1-_SDA2_BASE_(r2)
 /* 801B2FC4 001AFDC4  EC 00 07 F2 */	fmuls f0, f0, f31
 /* 801B2FC8 001AFDC8  EC 21 00 32 */	fmuls f1, f1, f0
 /* 801B2FCC 001AFDCC  E3 E1 00 18 */	psq_l f31, 24(r1), 0, qr0
@@ -251,8 +253,8 @@ GetMaxThrowDistance__30$$2unnamed$$2zThrowableSystem_cpp$$2Fff:
 /* 801B2FDC 001AFDDC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801B2FE0 001AFDE0  4E 80 00 20 */	blr 
 
-.global AllocateThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntPC18zThrowableProperty
-AllocateThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntPC18zThrowableProperty:
+.global AllocateThrow__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FP4xEntPC18zThrowableProperty
+AllocateThrow__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FP4xEntPC18zThrowableProperty:
 /* 801B2FE4 001AFDE4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801B2FE8 001AFDE8  7C 08 02 A6 */	mflr r0
 /* 801B2FEC 001AFDEC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -262,7 +264,7 @@ AllocateThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntPC18zThrowableProper
 /* 801B2FFC 001AFDFC  40 82 00 14 */	bne lbl_801B3010
 /* 801B3000 001AFE00  80 7D 00 10 */	lwz r3, 0x10(r29)
 /* 801B3004 001AFE04  80 63 00 48 */	lwz r3, 0x48(r3)
-/* 801B3008 001AFE08  4B FF FE F9 */	bl GetThrowableProperty__30$$2unnamed$$2zThrowableSystem_cpp$$2FUi
+/* 801B3008 001AFE08  4B FF FE F9 */	bl GetThrowableProperty__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUi
 /* 801B300C 001AFE0C  7C 7E 1B 78 */	mr r30, r3
 lbl_801B3010:
 /* 801B3010 001AFE10  38 60 00 00 */	li r3, 0
@@ -276,8 +278,8 @@ lbl_801B3010:
 /* 801B3030 001AFE30  7D 89 03 A6 */	mtctr r12
 /* 801B3034 001AFE34  4E 80 04 21 */	bctrl 
 /* 801B3038 001AFE38  1C 1F 00 64 */	mulli r0, r31, 0x64
-/* 801B303C 001AFE3C  80 8D D8 3C */	lwz r4, runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3040 001AFE40  C0 02 C9 70 */	lfs f0, $$21356_2-_SDA2_BASE_(r2)
+/* 801B303C 001AFE3C  80 8D D8 3C */	lwz r4, runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3040 001AFE40  C0 02 C9 70 */	lfs f0, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B3044 001AFE44  38 7D 00 68 */	addi r3, r29, 0x68
 /* 801B3048 001AFE48  7F E4 02 14 */	add r31, r4, r0
 /* 801B304C 001AFE4C  93 BF 00 00 */	stw r29, 0(r31)
@@ -298,7 +300,7 @@ lbl_801B3010:
 /* 801B3088 001AFE88  38 60 00 01 */	li r3, 1
 /* 801B308C 001AFE8C  38 00 00 00 */	li r0, 0
 /* 801B3090 001AFE90  98 7F 00 60 */	stb r3, 0x60(r31)
-/* 801B3094 001AFE94  C0 02 C9 74 */	lfs f0, $$21368_0-_SDA2_BASE_(r2)
+/* 801B3094 001AFE94  C0 02 C9 74 */	lfs f0, _esc__2_1368_0-_SDA2_BASE_(r2)
 /* 801B3098 001AFE98  98 1F 00 61 */	stb r0, 0x61(r31)
 /* 801B309C 001AFE9C  D0 1F 00 54 */	stfs f0, 0x54(r31)
 /* 801B30A0 001AFEA0  88 1D 00 88 */	lbz r0, 0x88(r29)
@@ -330,7 +332,7 @@ lbl_801B30E8:
 /* 801B30FC 001AFEFC  38 BF 00 18 */	addi r5, r31, 0x18
 /* 801B3100 001AFF00  C0 3D 00 A4 */	lfs f1, 0xa4(r29)
 /* 801B3104 001AFF04  EC 63 00 28 */	fsubs f3, f3, f0
-/* 801B3108 001AFF08  C0 02 C9 78 */	lfs f0, $$21369_0-_SDA2_BASE_(r2)
+/* 801B3108 001AFF08  C0 02 C9 78 */	lfs f0, _esc__2_1369_0-_SDA2_BASE_(r2)
 /* 801B310C 001AFF0C  EC 22 08 28 */	fsubs f1, f2, f1
 /* 801B3110 001AFF10  EC 21 18 2A */	fadds f1, f1, f3
 /* 801B3114 001AFF14  EC 23 08 2A */	fadds f1, f3, f1
@@ -345,8 +347,8 @@ lbl_801B3124:
 /* 801B3134 001AFF34  38 21 00 20 */	addi r1, r1, 0x20
 /* 801B3138 001AFF38  4E 80 00 20 */	blr 
 
-.global CalcTrajectory__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPfb
-CalcTrajectory__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPfb:
+.global CalcTrajectory__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPfb
+CalcTrajectory__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPfb:
 /* 801B313C 001AFF3C  94 21 FF 30 */	stwu r1, -0xd0(r1)
 /* 801B3140 001AFF40  7C 08 02 A6 */	mflr r0
 /* 801B3144 001AFF44  90 01 00 D4 */	stw r0, 0xd4(r1)
@@ -380,14 +382,14 @@ CalcTrajectory__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowabl
 /* 801B31B4 001AFFB4  7F 25 CB 78 */	mr r5, r25
 /* 801B31B8 001AFFB8  38 61 00 08 */	addi r3, r1, 8
 /* 801B31BC 001AFFBC  4B E5 46 F1 */	bl xVec3Sub__FP5xVec3PC5xVec3PC5xVec3
-/* 801B31C0 001AFFC0  C0 02 C9 70 */	lfs f0, $$21356_2-_SDA2_BASE_(r2)
+/* 801B31C0 001AFFC0  C0 02 C9 70 */	lfs f0, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B31C4 001AFFC4  38 61 00 08 */	addi r3, r1, 8
 /* 801B31C8 001AFFC8  7C 64 1B 78 */	mr r4, r3
 /* 801B31CC 001AFFCC  D0 01 00 0C */	stfs f0, 0xc(r1)
 /* 801B31D0 001AFFD0  4B EB E4 51 */	bl xVec3Normalize__FP5xVec3PC5xVec3
-/* 801B31D4 001AFFD4  C0 02 C9 7C */	lfs f0, $$21421_6-_SDA2_BASE_(r2)
+/* 801B31D4 001AFFD4  C0 02 C9 7C */	lfs f0, _esc__2_1421_6-_SDA2_BASE_(r2)
 /* 801B31D8 001AFFD8  EF 98 06 32 */	fmuls f28, f24, f24
-/* 801B31DC 001AFFDC  C3 42 C9 70 */	lfs f26, $$21356_2-_SDA2_BASE_(r2)
+/* 801B31DC 001AFFDC  C3 42 C9 70 */	lfs f26, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B31E0 001AFFE0  3B E0 00 00 */	li r31, 0
 /* 801B31E4 001AFFE4  EC C0 F8 24 */	fdivs f6, f0, f31
 /* 801B31E8 001AFFE8  C0 9A 00 04 */	lfs f4, 4(r26)
@@ -398,9 +400,9 @@ CalcTrajectory__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowabl
 /* 801B31FC 001AFFFC  EF C4 10 28 */	fsubs f30, f4, f2
 /* 801B3200 001B0000  C0 59 00 00 */	lfs f2, 0(r25)
 /* 801B3204 001B0004  EC A1 00 28 */	fsubs f5, f1, f0
-/* 801B3208 001B0008  C0 22 C9 80 */	lfs f1, $$21422_1-_SDA2_BASE_(r2)
+/* 801B3208 001B0008  C0 22 C9 80 */	lfs f1, _esc__2_1422_1-_SDA2_BASE_(r2)
 /* 801B320C 001B000C  EC 83 10 28 */	fsubs f4, f3, f2
-/* 801B3210 001B0010  C0 02 C9 84 */	lfs f0, $$21423_1-_SDA2_BASE_(r2)
+/* 801B3210 001B0010  C0 02 C9 84 */	lfs f0, _esc__2_1423_1-_SDA2_BASE_(r2)
 /* 801B3214 001B0014  EC 65 01 72 */	fmuls f3, f5, f5
 /* 801B3218 001B0018  EC 5E 07 B2 */	fmuls f2, f30, f30
 /* 801B321C 001B001C  EF 7C F1 BC */	fnmsubs f27, f28, f6, f30
@@ -421,7 +423,7 @@ CalcTrajectory__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowabl
 lbl_801B3258:
 /* 801B3258 001B0058  4B E5 82 21 */	bl xsqrt__Ff
 /* 801B325C 001B005C  FC 60 D8 50 */	fneg f3, f27
-/* 801B3260 001B0060  C0 02 C9 68 */	lfs f0, $$21351_2-_SDA2_BASE_(r2)
+/* 801B3260 001B0060  C0 02 C9 68 */	lfs f0, _esc__2_1351_2-_SDA2_BASE_(r2)
 /* 801B3264 001B0064  EC 80 05 F2 */	fmuls f4, f0, f23
 /* 801B3268 001B0068  EC 43 08 2A */	fadds f2, f3, f1
 /* 801B326C 001B006C  EC 03 08 28 */	fsubs f0, f3, f1
@@ -434,7 +436,7 @@ lbl_801B3284:
 /* 801B3284 001B0084  FC 20 00 90 */	fmr f1, f0
 lbl_801B3288:
 /* 801B3288 001B0088  EF 3C 08 28 */	fsubs f25, f28, f1
-/* 801B328C 001B008C  C0 02 C9 88 */	lfs f0, $$21424_1-_SDA2_BASE_(r2)
+/* 801B328C 001B008C  C0 02 C9 88 */	lfs f0, _esc__2_1424_1-_SDA2_BASE_(r2)
 /* 801B3290 001B0090  FF 40 08 90 */	fmr f26, f1
 /* 801B3294 001B0094  FC 19 00 40 */	fcmpo cr0, f25, f0
 /* 801B3298 001B0098  40 80 00 0C */	bge lbl_801B32A4
@@ -447,15 +449,15 @@ lbl_801B32A4:
 /* 801B32B0 001B00B0  FF 40 00 90 */	fmr f26, f0
 /* 801B32B4 001B00B4  4B E5 81 C5 */	bl xsqrt__Ff
 /* 801B32B8 001B00B8  EC 5A C0 24 */	fdivs f2, f26, f24
-/* 801B32BC 001B00BC  C0 02 C9 8C */	lfs f0, $$21425_1-_SDA2_BASE_(r2)
+/* 801B32BC 001B00BC  C0 02 C9 8C */	lfs f0, _esc__2_1425_1-_SDA2_BASE_(r2)
 /* 801B32C0 001B00C0  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801B32C4 001B00C4  FF 20 08 90 */	fmr f25, f1
 /* 801B32C8 001B00C8  40 80 00 08 */	bge lbl_801B32D0
 /* 801B32CC 001B00CC  3B E0 00 01 */	li r31, 1
 lbl_801B32D0:
-/* 801B32D0 001B00D0  C0 22 C9 90 */	lfs f1, $$21426_1-_SDA2_BASE_(r2)
+/* 801B32D0 001B00D0  C0 22 C9 90 */	lfs f1, _esc__2_1426_1-_SDA2_BASE_(r2)
 /* 801B32D4 001B00D4  EC 5E 06 B2 */	fmuls f2, f30, f26
-/* 801B32D8 001B00D8  C0 02 C9 70 */	lfs f0, $$21356_2-_SDA2_BASE_(r2)
+/* 801B32D8 001B00D8  C0 02 C9 70 */	lfs f0, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B32DC 001B00DC  EC 3F 00 72 */	fmuls f1, f31, f1
 /* 801B32E0 001B00E0  EC 3A 08 BA */	fmadds f1, f26, f2, f1
 /* 801B32E4 001B00E4  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -465,20 +467,20 @@ lbl_801B32F0:
 /* 801B32F0 001B00F0  57 C0 06 3F */	clrlwi. r0, r30, 0x18
 /* 801B32F4 001B00F4  41 82 00 48 */	beq lbl_801B333C
 /* 801B32F8 001B00F8  EC 39 D0 24 */	fdivs f1, f25, f26
-/* 801B32FC 001B00FC  C0 02 C9 94 */	lfs f0, $$21427_3-_SDA2_BASE_(r2)
+/* 801B32FC 001B00FC  C0 02 C9 94 */	lfs f0, _esc__2_1427_3-_SDA2_BASE_(r2)
 /* 801B3300 001B0100  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B3304 001B0104  41 81 00 10 */	bgt lbl_801B3314
-/* 801B3308 001B0108  C0 02 C9 98 */	lfs f0, $$21428_3-_SDA2_BASE_(r2)
+/* 801B3308 001B0108  C0 02 C9 98 */	lfs f0, _esc__2_1428_3-_SDA2_BASE_(r2)
 /* 801B330C 001B010C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B3310 001B0110  40 80 00 0C */	bge lbl_801B331C
 lbl_801B3314:
 /* 801B3314 001B0114  38 60 00 00 */	li r3, 0
 /* 801B3318 001B0118  48 00 00 D0 */	b lbl_801B33E8
 lbl_801B331C:
-/* 801B331C 001B011C  C0 02 C9 9C */	lfs f0, $$21429_2-_SDA2_BASE_(r2)
+/* 801B331C 001B011C  C0 02 C9 9C */	lfs f0, _esc__2_1429_2-_SDA2_BASE_(r2)
 /* 801B3320 001B0120  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B3324 001B0124  40 80 00 18 */	bge lbl_801B333C
-/* 801B3328 001B0128  C0 02 C9 A0 */	lfs f0, $$21430_0-_SDA2_BASE_(r2)
+/* 801B3328 001B0128  C0 02 C9 A0 */	lfs f0, _esc__2_1430_0-_SDA2_BASE_(r2)
 /* 801B332C 001B012C  FC 1D 00 40 */	fcmpo cr0, f29, f0
 /* 801B3330 001B0130  40 80 00 0C */	bge lbl_801B333C
 /* 801B3334 001B0134  38 60 00 00 */	li r3, 0
@@ -492,12 +494,12 @@ lbl_801B333C:
 /* 801B3350 001B0150  4B E6 47 CD */	bl xVec3Cross__FP5xVec3PC5xVec3PC5xVec3
 /* 801B3354 001B0154  57 E0 06 3F */	clrlwi. r0, r31, 0x18
 /* 801B3358 001B0158  41 82 00 28 */	beq lbl_801B3380
-/* 801B335C 001B015C  C0 02 C9 8C */	lfs f0, $$21425_1-_SDA2_BASE_(r2)
+/* 801B335C 001B015C  C0 02 C9 8C */	lfs f0, _esc__2_1425_1-_SDA2_BASE_(r2)
 /* 801B3360 001B0160  38 7B 00 24 */	addi r3, r27, 0x24
 /* 801B3364 001B0164  38 81 00 08 */	addi r4, r1, 8
 /* 801B3368 001B0168  EC 20 06 32 */	fmuls f1, f0, f24
 /* 801B336C 001B016C  4B E5 63 E5 */	bl xVec3SMul__FP5xVec3PC5xVec3f
-/* 801B3370 001B0170  C0 02 C9 90 */	lfs f0, $$21426_1-_SDA2_BASE_(r2)
+/* 801B3370 001B0170  C0 02 C9 90 */	lfs f0, _esc__2_1426_1-_SDA2_BASE_(r2)
 /* 801B3374 001B0174  EC 00 06 32 */	fmuls f0, f0, f24
 /* 801B3378 001B0178  D0 1B 00 28 */	stfs f0, 0x28(r27)
 /* 801B337C 001B017C  48 00 00 18 */	b lbl_801B3394
@@ -518,7 +520,7 @@ lbl_801B3394:
 lbl_801B33B0:
 /* 801B33B0 001B01B0  28 1D 00 00 */	cmplwi r29, 0
 /* 801B33B4 001B01B4  41 82 00 28 */	beq lbl_801B33DC
-/* 801B33B8 001B01B8  C0 02 C9 70 */	lfs f0, $$21356_2-_SDA2_BASE_(r2)
+/* 801B33B8 001B01B8  C0 02 C9 70 */	lfs f0, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B33BC 001B01BC  FC 1A 00 00 */	fcmpu cr0, f26, f0
 /* 801B33C0 001B01C0  41 82 00 18 */	beq lbl_801B33D8
 /* 801B33C4 001B01C4  FC 20 E8 90 */	fmr f1, f29
@@ -557,8 +559,8 @@ lbl_801B33E8:
 /* 801B343C 001B023C  38 21 00 D0 */	addi r1, r1, 0xd0
 /* 801B3440 001B0240  4E 80 00 20 */	blr 
 
-.global CalcTrajectoryLob__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPf
-CalcTrajectoryLob__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPf:
+.global CalcTrajectoryLob__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPf
+CalcTrajectoryLob__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPf:
 /* 801B3444 001B0244  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 801B3448 001B0248  7C 08 02 A6 */	mflr r0
 /* 801B344C 001B024C  90 01 00 94 */	stw r0, 0x94(r1)
@@ -598,10 +600,10 @@ CalcTrajectoryLob__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrow
 lbl_801B34D4:
 /* 801B34D4 001B02D4  FC 20 28 90 */	fmr f1, f5
 lbl_801B34D8:
-/* 801B34D8 001B02D8  C0 02 C9 7C */	lfs f0, $$21421_6-_SDA2_BASE_(r2)
-/* 801B34DC 001B02DC  C0 42 C9 68 */	lfs f2, $$21351_2-_SDA2_BASE_(r2)
+/* 801B34D8 001B02D8  C0 02 C9 7C */	lfs f0, _esc__2_1421_6-_SDA2_BASE_(r2)
+/* 801B34DC 001B02DC  C0 42 C9 68 */	lfs f2, _esc__2_1351_2-_SDA2_BASE_(r2)
 /* 801B34E0 001B02E0  EC 20 08 2A */	fadds f1, f0, f1
-/* 801B34E4 001B02E4  C0 02 C9 A8 */	lfs f0, $$21468_1-_SDA2_BASE_(r2)
+/* 801B34E4 001B02E4  C0 02 C9 A8 */	lfs f0, _esc__2_1468_1-_SDA2_BASE_(r2)
 /* 801B34E8 001B02E8  EF 42 06 F2 */	fmuls f26, f2, f27
 /* 801B34EC 001B02EC  EC 00 07 F2 */	fmuls f0, f0, f31
 /* 801B34F0 001B02F0  EC 21 20 28 */	fsubs f1, f1, f4
@@ -613,7 +615,7 @@ lbl_801B34D8:
 lbl_801B3508:
 /* 801B3508 001B0308  FC 20 C8 90 */	fmr f1, f25
 /* 801B350C 001B030C  4B E5 7F 6D */	bl xsqrt__Ff
-/* 801B3510 001B0310  C0 02 C9 7C */	lfs f0, $$21421_6-_SDA2_BASE_(r2)
+/* 801B3510 001B0310  C0 02 C9 7C */	lfs f0, _esc__2_1421_6-_SDA2_BASE_(r2)
 /* 801B3514 001B0314  FC 40 08 90 */	fmr f2, f1
 /* 801B3518 001B0318  EC 3A CF 7C */	fnmsubs f1, f26, f29, f25
 /* 801B351C 001B031C  EF 60 D8 24 */	fdivs f27, f0, f27
@@ -634,7 +636,7 @@ lbl_801B3508:
 /* 801B3558 001B0358  48 00 00 8C */	b lbl_801B35E4
 lbl_801B355C:
 /* 801B355C 001B035C  EC 19 10 2A */	fadds f0, f25, f2
-/* 801B3560 001B0360  C0 22 C9 AC */	lfs f1, $$21469_4-_SDA2_BASE_(r2)
+/* 801B3560 001B0360  C0 22 C9 AC */	lfs f1, _esc__2_1469_4-_SDA2_BASE_(r2)
 /* 801B3564 001B0364  EC 01 00 32 */	fmuls f0, f1, f0
 /* 801B3568 001B0368  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801B356C 001B036C  40 80 00 0C */	bge lbl_801B3578
@@ -655,7 +657,7 @@ lbl_801B3594:
 lbl_801B35A0:
 /* 801B35A0 001B03A0  28 1D 00 00 */	cmplwi r29, 0
 /* 801B35A4 001B03A4  41 82 00 3C */	beq lbl_801B35E0
-/* 801B35A8 001B03A8  C0 02 C9 7C */	lfs f0, $$21421_6-_SDA2_BASE_(r2)
+/* 801B35A8 001B03A8  C0 02 C9 7C */	lfs f0, _esc__2_1421_6-_SDA2_BASE_(r2)
 /* 801B35AC 001B03AC  FC 40 D0 90 */	fmr f2, f26
 /* 801B35B0 001B03B0  38 7D 00 24 */	addi r3, r29, 0x24
 /* 801B35B4 001B03B4  EC 00 D8 24 */	fdivs f0, f0, f27
@@ -665,7 +667,7 @@ lbl_801B35A0:
 /* 801B35C4 001B03C4  EC 7F 06 B2 */	fmuls f3, f31, f26
 /* 801B35C8 001B03C8  4B E5 A2 11 */	bl assign__5xVec3Ffff
 /* 801B35CC 001B03CC  FC 20 D0 90 */	fmr f1, f26
-/* 801B35D0 001B03D0  C0 42 C9 70 */	lfs f2, $$21356_2-_SDA2_BASE_(r2)
+/* 801B35D0 001B03D0  C0 42 C9 70 */	lfs f2, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B35D4 001B03D4  FC 60 C8 50 */	fneg f3, f25
 /* 801B35D8 001B03D8  38 7D 00 48 */	addi r3, r29, 0x48
 /* 801B35DC 001B03DC  4B E5 A1 FD */	bl assign__5xVec3Ffff
@@ -692,8 +694,8 @@ lbl_801B35E4:
 /* 801B3628 001B0428  38 21 00 90 */	addi r1, r1, 0x90
 /* 801B362C 001B042C  4E 80 00 20 */	blr 
 
-.global CanHit__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FRC5xVec3RC5xVec3RC5xVec3fffbPfPf
-CanHit__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FRC5xVec3RC5xVec3RC5xVec3fffbPfPf:
+.global CanHit__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FRC5xVec3RC5xVec3RC5xVec3fffbPfPf
+CanHit__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FRC5xVec3RC5xVec3RC5xVec3fffbPfPf:
 /* 801B3630 001B0430  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 801B3634 001B0434  7C 08 02 A6 */	mflr r0
 /* 801B3638 001B0438  90 01 00 84 */	stw r0, 0x84(r1)
@@ -720,13 +722,13 @@ CanHit__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_
 /* 801B368C 001B048C  7F 45 D3 78 */	mr r5, r26
 /* 801B3690 001B0490  38 61 00 08 */	addi r3, r1, 8
 /* 801B3694 001B0494  4B E5 42 19 */	bl xVec3Sub__FP5xVec3PC5xVec3PC5xVec3
-/* 801B3698 001B0498  C0 02 C9 70 */	lfs f0, $$21356_2-_SDA2_BASE_(r2)
+/* 801B3698 001B0498  C0 02 C9 70 */	lfs f0, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B369C 001B049C  38 61 00 08 */	addi r3, r1, 8
 /* 801B36A0 001B04A0  D0 01 00 0C */	stfs f0, 0xc(r1)
 /* 801B36A4 001B04A4  48 00 1E C9 */	bl xVec3LengthFast__FPC5xVec3
 /* 801B36A8 001B04A8  FF C0 08 90 */	fmr f30, f1
-/* 801B36AC 001B04AC  C0 02 C9 A4 */	lfs f0, $$21447_2-_SDA2_BASE_(r2)
-/* 801B36B0 001B04B0  C0 42 C9 7C */	lfs f2, $$21421_6-_SDA2_BASE_(r2)
+/* 801B36AC 001B04AC  C0 02 C9 A4 */	lfs f0, _esc__2_1447_2-_SDA2_BASE_(r2)
+/* 801B36B0 001B04B0  C0 42 C9 7C */	lfs f2, _esc__2_1421_6-_SDA2_BASE_(r2)
 /* 801B36B4 001B04B4  38 61 00 08 */	addi r3, r1, 8
 /* 801B36B8 001B04B8  FC 00 F0 40 */	fcmpo cr0, f0, f30
 /* 801B36BC 001B04BC  40 81 00 08 */	ble lbl_801B36C4
@@ -754,7 +756,7 @@ lbl_801B36F0:
 /* 801B3708 001B0508  38 A0 00 00 */	li r5, 0
 /* 801B370C 001B050C  38 C0 00 00 */	li r6, 0
 /* 801B3710 001B0510  38 E0 00 00 */	li r7, 0
-/* 801B3714 001B0514  4B FF FD 31 */	bl CalcTrajectoryLob__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPf
+/* 801B3714 001B0514  4B FF FD 31 */	bl CalcTrajectoryLob__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPf
 /* 801B3718 001B0518  48 00 00 28 */	b lbl_801B3740
 lbl_801B371C:
 /* 801B371C 001B051C  FC 20 D8 90 */	fmr f1, f27
@@ -765,7 +767,7 @@ lbl_801B371C:
 /* 801B3730 001B0530  38 C0 00 00 */	li r6, 0
 /* 801B3734 001B0534  38 E0 00 00 */	li r7, 0
 /* 801B3738 001B0538  39 00 00 01 */	li r8, 1
-/* 801B373C 001B053C  4B FF FA 01 */	bl CalcTrajectory__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPfb
+/* 801B373C 001B053C  4B FF FA 01 */	bl CalcTrajectory__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPfb
 lbl_801B3740:
 /* 801B3740 001B0540  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801B3744 001B0544  41 82 00 24 */	beq lbl_801B3768
@@ -798,14 +800,14 @@ lbl_801B376C:
 /* 801B37A0 001B05A0  38 21 00 80 */	addi r1, r1, 0x80
 /* 801B37A4 001B05A4  4E 80 00 20 */	blr 
 
-.global hack_throw_target__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC4xEntRf
-hack_throw_target__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC4xEntRf:
+.global hack_throw_target__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC4xEntRf
+hack_throw_target__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC4xEntRf:
 /* 801B37A8 001B05A8  28 03 00 00 */	cmplwi r3, 0
 /* 801B37AC 001B05AC  4D 82 00 20 */	beqlr 
 /* 801B37B0 001B05B0  3C A0 80 38 */	lis r5, globals@ha
-/* 801B37B4 001B05B4  38 C2 C9 BC */	addi r6, r2, hacked_targets__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA2_BASE_
+/* 801B37B4 001B05B4  38 C2 C9 BC */	addi r6, r2, hacked_targets__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA2_BASE_
 /* 801B37B8 001B05B8  38 A5 2A 38 */	addi r5, r5, globals@l
-/* 801B37BC 001B05BC  80 02 C9 BC */	lwz r0, hacked_targets__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA2_BASE_(r2)
+/* 801B37BC 001B05BC  80 02 C9 BC */	lwz r0, hacked_targets__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA2_BASE_(r2)
 /* 801B37C0 001B05C0  80 A5 04 C8 */	lwz r5, 0x4c8(r5)
 /* 801B37C4 001B05C4  80 E3 00 00 */	lwz r7, 0(r3)
 /* 801B37C8 001B05C8  80 65 00 00 */	lwz r3, 0(r5)
@@ -822,7 +824,7 @@ lbl_801B37EC:
 /* 801B37F0 001B05F0  7C 05 18 2E */	lwzx r0, r5, r3
 /* 801B37F4 001B05F4  7C 07 00 40 */	cmplw r7, r0
 /* 801B37F8 001B05F8  40 82 00 1C */	bne lbl_801B3814
-/* 801B37FC 001B05FC  38 62 C9 BC */	addi r3, r2, hacked_targets__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA2_BASE_
+/* 801B37FC 001B05FC  38 62 C9 BC */	addi r3, r2, hacked_targets__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA2_BASE_
 /* 801B3800 001B0600  C0 24 00 00 */	lfs f1, 0(r4)
 /* 801B3804 001B0604  C0 03 00 0C */	lfs f0, 0xc(r3)
 /* 801B3808 001B0608  EC 01 00 2A */	fadds f0, f1, f0
@@ -833,8 +835,8 @@ lbl_801B3814:
 /* 801B3818 001B0618  42 00 FF D4 */	bdnz lbl_801B37EC
 /* 801B381C 001B061C  4E 80 00 20 */	blr 
 
-.global SafeCalcTrajectoryLob__30$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPf
-SafeCalcTrajectoryLob__30$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPf:
+.global SafeCalcTrajectoryLob__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPf
+SafeCalcTrajectoryLob__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPf:
 /* 801B3820 001B0620  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801B3824 001B0624  7C 08 02 A6 */	mflr r0
 /* 801B3828 001B0628  90 01 00 34 */	stw r0, 0x34(r1)
@@ -848,7 +850,7 @@ SafeCalcTrajectoryLob__30$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ff
 /* 801B3848 001B0648  7C BD 2B 78 */	mr r29, r5
 /* 801B384C 001B064C  7C DE 33 78 */	mr r30, r6
 /* 801B3850 001B0650  7C FF 3B 78 */	mr r31, r7
-/* 801B3854 001B0654  4B FF FB F1 */	bl CalcTrajectoryLob__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPf
+/* 801B3854 001B0654  4B FF FB F1 */	bl CalcTrajectoryLob__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPf
 /* 801B3858 001B0658  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801B385C 001B065C  41 82 00 0C */	beq lbl_801B3868
 /* 801B3860 001B0660  38 60 00 01 */	li r3, 1
@@ -862,7 +864,7 @@ lbl_801B3868:
 /* 801B387C 001B067C  7F C6 F3 78 */	mr r6, r30
 /* 801B3880 001B0680  7F E7 FB 78 */	mr r7, r31
 /* 801B3884 001B0684  39 00 00 00 */	li r8, 0
-/* 801B3888 001B0688  4B FF F8 B5 */	bl CalcTrajectory__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPfb
+/* 801B3888 001B0688  4B FF F8 B5 */	bl CalcTrajectory__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPfb
 /* 801B388C 001B068C  38 60 00 00 */	li r3, 0
 lbl_801B3890:
 /* 801B3890 001B0690  CB E1 00 28 */	lfd f31, 0x28(r1)
@@ -873,8 +875,8 @@ lbl_801B3890:
 /* 801B38A4 001B06A4  38 21 00 30 */	addi r1, r1, 0x30
 /* 801B38A8 001B06A8  4E 80 00 20 */	blr 
 
-.global DestroyThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FRQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowb
-DestroyThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FRQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowb:
+.global DestroyThrow__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowb
+DestroyThrow__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowb:
 /* 801B38AC 001B06AC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801B38B0 001B06B0  7C 08 02 A6 */	mflr r0
 /* 801B38B4 001B06B4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -920,8 +922,8 @@ lbl_801B3940:
 /* 801B394C 001B074C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801B3950 001B0750  4E 80 00 20 */	blr 
 
-.global LeadCalcTrajectory__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfbPf
-LeadCalcTrajectory__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfbPf:
+.global LeadCalcTrajectory__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfbPf
+LeadCalcTrajectory__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfbPf:
 /* 801B3954 001B0754  94 21 FF 20 */	stwu r1, -0xe0(r1)
 /* 801B3958 001B0758  7C 08 02 A6 */	mflr r0
 /* 801B395C 001B075C  90 01 00 E4 */	stw r0, 0xe4(r1)
@@ -945,12 +947,12 @@ LeadCalcTrajectory__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntP4xEntPC4xEntPC
 /* 801B39A4 001B07A4  7D 1D 43 78 */	mr r29, r8
 /* 801B39A8 001B07A8  7D 57 53 78 */	mr r23, r10
 /* 801B39AC 001B07AC  41 82 00 0C */	beq lbl_801B39B8
-/* 801B39B0 001B07B0  C0 02 C9 CC */	lfs f0, $$21645_0-_SDA2_BASE_(r2)
+/* 801B39B0 001B07B0  C0 02 C9 CC */	lfs f0, _esc__2_1645_0-_SDA2_BASE_(r2)
 /* 801B39B4 001B07B4  D0 1E 00 00 */	stfs f0, 0(r30)
 lbl_801B39B8:
 /* 801B39B8 001B07B8  28 1F 00 00 */	cmplwi r31, 0
 /* 801B39BC 001B07BC  41 82 00 0C */	beq lbl_801B39C8
-/* 801B39C0 001B07C0  C0 02 C9 70 */	lfs f0, $$21356_2-_SDA2_BASE_(r2)
+/* 801B39C0 001B07C0  C0 02 C9 70 */	lfs f0, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B39C4 001B07C4  D0 1F 00 00 */	stfs f0, 0(r31)
 lbl_801B39C8:
 /* 801B39C8 001B07C8  38 79 00 68 */	addi r3, r25, 0x68
@@ -964,12 +966,12 @@ lbl_801B39C8:
 /* 801B39E8 001B07E8  80 A1 00 3C */	lwz r5, 0x3c(r1)
 /* 801B39EC 001B07EC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 801B39F0 001B07F0  90 81 00 64 */	stw r4, 0x64(r1)
-/* 801B39F4 001B07F4  C0 02 C9 70 */	lfs f0, $$21356_2-_SDA2_BASE_(r2)
+/* 801B39F4 001B07F4  C0 02 C9 70 */	lfs f0, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B39F8 001B07F8  90 A1 00 60 */	stw r5, 0x60(r1)
 /* 801B39FC 001B07FC  90 01 00 68 */	stw r0, 0x68(r1)
 /* 801B3A00 001B0800  D0 01 00 64 */	stfs f0, 0x64(r1)
 /* 801B3A04 001B0804  4B E5 7B 21 */	bl length2__5xVec3CFv
-/* 801B3A08 001B0808  C0 02 C9 7C */	lfs f0, $$21421_6-_SDA2_BASE_(r2)
+/* 801B3A08 001B0808  C0 02 C9 7C */	lfs f0, _esc__2_1421_6-_SDA2_BASE_(r2)
 /* 801B3A0C 001B080C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B3A10 001B0810  40 80 00 4C */	bge lbl_801B3A5C
 /* 801B3A14 001B0814  28 1D 00 00 */	cmplwi r29, 0
@@ -981,12 +983,12 @@ lbl_801B39C8:
 /* 801B3A2C 001B082C  38 A1 00 60 */	addi r5, r1, 0x60
 /* 801B3A30 001B0830  38 82 8A 08 */	addi r4, r2, g_Y3-_SDA2_BASE_
 /* 801B3A34 001B0834  4B E6 40 E9 */	bl xVec3Cross__FP5xVec3PC5xVec3PC5xVec3
-/* 801B3A38 001B0838  C0 02 C9 D0 */	lfs f0, $$21646_0-_SDA2_BASE_(r2)
+/* 801B3A38 001B0838  C0 02 C9 D0 */	lfs f0, _esc__2_1646_0-_SDA2_BASE_(r2)
 /* 801B3A3C 001B083C  38 7D 00 24 */	addi r3, r29, 0x24
 /* 801B3A40 001B0840  38 81 00 60 */	addi r4, r1, 0x60
 /* 801B3A44 001B0844  EC 20 07 32 */	fmuls f1, f0, f28
 /* 801B3A48 001B0848  4B E5 5D 09 */	bl xVec3SMul__FP5xVec3PC5xVec3f
-/* 801B3A4C 001B084C  C0 02 C9 D4 */	lfs f0, $$21647-_SDA2_BASE_(r2)
+/* 801B3A4C 001B084C  C0 02 C9 D4 */	lfs f0, _esc__2_1647-_SDA2_BASE_(r2)
 /* 801B3A50 001B0850  EC 00 07 32 */	fmuls f0, f0, f28
 /* 801B3A54 001B0854  D0 1D 00 28 */	stfs f0, 0x28(r29)
 /* 801B3A58 001B0858  48 00 01 68 */	b lbl_801B3BC0
@@ -997,9 +999,9 @@ lbl_801B3A5C:
 /* 801B3A68 001B0868  3A E0 00 00 */	li r23, 0
 /* 801B3A6C 001B086C  80 1B 00 08 */	lwz r0, 8(r27)
 /* 801B3A70 001B0870  90 81 00 54 */	stw r4, 0x54(r1)
-/* 801B3A74 001B0874  C3 C2 C9 74 */	lfs f30, $$21368_0-_SDA2_BASE_(r2)
+/* 801B3A74 001B0874  C3 C2 C9 74 */	lfs f30, _esc__2_1368_0-_SDA2_BASE_(r2)
 /* 801B3A78 001B0878  90 61 00 58 */	stw r3, 0x58(r1)
-/* 801B3A7C 001B087C  C3 E2 C9 84 */	lfs f31, $$21423_1-_SDA2_BASE_(r2)
+/* 801B3A7C 001B087C  C3 E2 C9 84 */	lfs f31, _esc__2_1423_1-_SDA2_BASE_(r2)
 /* 801B3A80 001B0880  90 01 00 5C */	stw r0, 0x5c(r1)
 /* 801B3A84 001B0884  48 00 01 2C */	b lbl_801B3BB0
 lbl_801B3A88:
@@ -1014,7 +1016,7 @@ lbl_801B3A88:
 /* 801B3AA8 001B08A8  7F C6 F3 78 */	mr r6, r30
 /* 801B3AAC 001B08AC  38 81 00 54 */	addi r4, r1, 0x54
 /* 801B3AB0 001B08B0  38 E1 00 08 */	addi r7, r1, 8
-/* 801B3AB4 001B08B4  4B FF FD 6D */	bl SafeCalcTrajectoryLob__30$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPf
+/* 801B3AB4 001B08B4  4B FF FD 6D */	bl SafeCalcTrajectoryLob__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPf
 /* 801B3AB8 001B08B8  48 00 00 2C */	b lbl_801B3AE4
 lbl_801B3ABC:
 /* 801B3ABC 001B08BC  38 79 00 68 */	addi r3, r25, 0x68
@@ -1026,7 +1028,7 @@ lbl_801B3ABC:
 /* 801B3AD4 001B08D4  38 81 00 54 */	addi r4, r1, 0x54
 /* 801B3AD8 001B08D8  38 E1 00 08 */	addi r7, r1, 8
 /* 801B3ADC 001B08DC  39 00 00 00 */	li r8, 0
-/* 801B3AE0 001B08E0  4B FF F6 5D */	bl CalcTrajectory__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPfb
+/* 801B3AE0 001B08E0  4B FF F6 5D */	bl CalcTrajectory__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPfb
 lbl_801B3AE4:
 /* 801B3AE4 001B08E4  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801B3AE8 001B08E8  41 82 00 D8 */	beq lbl_801B3BC0
@@ -1104,23 +1106,23 @@ lbl_801B3BC0:
 
 .global zThrowableSystemAddTarget__FPC5xVec3Ucb
 zThrowableSystemAddTarget__FPC5xVec3Ucb:
-/* 801B3BF4 001B09F4  80 0D D8 44 */	lwz r0, addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3BF8 001B09F8  80 CD D8 40 */	lwz r6, addedTargets__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3BF4 001B09F4  80 0D D8 44 */	lwz r0, addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3BF8 001B09F8  80 CD D8 40 */	lwz r6, addedTargets__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3BFC 001B09FC  54 00 18 38 */	slwi r0, r0, 3
 /* 801B3C00 001B0A00  7C 66 01 2E */	stwx r3, r6, r0
-/* 801B3C04 001B0A04  80 0D D8 44 */	lwz r0, addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3C08 001B0A08  80 6D D8 40 */	lwz r3, addedTargets__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3C04 001B0A04  80 0D D8 44 */	lwz r0, addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3C08 001B0A08  80 6D D8 40 */	lwz r3, addedTargets__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3C0C 001B0A0C  54 00 18 38 */	slwi r0, r0, 3
 /* 801B3C10 001B0A10  7C 63 02 14 */	add r3, r3, r0
 /* 801B3C14 001B0A14  98 83 00 04 */	stb r4, 4(r3)
-/* 801B3C18 001B0A18  80 0D D8 44 */	lwz r0, addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3C1C 001B0A1C  80 6D D8 40 */	lwz r3, addedTargets__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3C18 001B0A18  80 0D D8 44 */	lwz r0, addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3C1C 001B0A1C  80 6D D8 40 */	lwz r3, addedTargets__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3C20 001B0A20  54 00 18 38 */	slwi r0, r0, 3
 /* 801B3C24 001B0A24  7C 63 02 14 */	add r3, r3, r0
 /* 801B3C28 001B0A28  98 A3 00 05 */	stb r5, 5(r3)
-/* 801B3C2C 001B0A2C  80 6D D8 44 */	lwz r3, addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3C2C 001B0A2C  80 6D D8 44 */	lwz r3, addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3C30 001B0A30  38 03 00 01 */	addi r0, r3, 1
-/* 801B3C34 001B0A34  90 0D D8 44 */	stw r0, addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3C34 001B0A34  90 0D D8 44 */	stw r0, addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3C38 001B0A38  4E 80 00 20 */	blr 
 
 .global zThrowableSystemRemoveTarget__FPC5xVec3
@@ -1129,8 +1131,8 @@ zThrowableSystemRemoveTarget__FPC5xVec3:
 /* 801B3C40 001B0A40  7C 08 02 A6 */	mflr r0
 /* 801B3C44 001B0A44  38 80 00 00 */	li r4, 0
 /* 801B3C48 001B0A48  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801B3C4C 001B0A4C  80 0D D8 44 */	lwz r0, addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3C50 001B0A50  80 CD D8 40 */	lwz r6, addedTargets__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3C4C 001B0A4C  80 0D D8 44 */	lwz r0, addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3C50 001B0A50  80 CD D8 40 */	lwz r6, addedTargets__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3C54 001B0A54  7C 09 03 A6 */	mtctr r0
 /* 801B3C58 001B0A58  2C 00 00 00 */	cmpwi r0, 0
 /* 801B3C5C 001B0A5C  40 81 00 38 */	ble lbl_801B3C94
@@ -1138,13 +1140,13 @@ lbl_801B3C60:
 /* 801B3C60 001B0A60  7C 06 20 2E */	lwzx r0, r6, r4
 /* 801B3C64 001B0A64  7C 00 18 40 */	cmplw r0, r3
 /* 801B3C68 001B0A68  40 82 00 24 */	bne lbl_801B3C8C
-/* 801B3C6C 001B0A6C  80 AD D8 44 */	lwz r5, addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3C6C 001B0A6C  80 AD D8 44 */	lwz r5, addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3C70 001B0A70  7C 66 22 14 */	add r3, r6, r4
 /* 801B3C74 001B0A74  38 85 FF FF */	addi r4, r5, -1
 /* 801B3C78 001B0A78  54 80 18 38 */	slwi r0, r4, 3
-/* 801B3C7C 001B0A7C  90 8D D8 44 */	stw r4, addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3C7C 001B0A7C  90 8D D8 44 */	stw r4, addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3C80 001B0A80  7C 86 02 14 */	add r4, r6, r0
-/* 801B3C84 001B0A84  48 00 00 21 */	bl swap$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$211PointTarget$$1__30$$2unnamed$$2zThrowableSystem_cpp$$2FRQ230$$2unnamed$$2zThrowableSystem_cpp$$211PointTargetRQ230$$2unnamed$$2zThrowableSystem_cpp$$211PointTarget
+/* 801B3C84 001B0A84  48 00 00 21 */	bl swap_esc__0_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTarget_esc__1___30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTargetRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTarget
 /* 801B3C88 001B0A88  48 00 00 0C */	b lbl_801B3C94
 lbl_801B3C8C:
 /* 801B3C8C 001B0A8C  38 84 00 08 */	addi r4, r4, 8
@@ -1155,8 +1157,8 @@ lbl_801B3C94:
 /* 801B3C9C 001B0A9C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801B3CA0 001B0AA0  4E 80 00 20 */	blr 
 
-.global swap$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$211PointTarget$$1__30$$2unnamed$$2zThrowableSystem_cpp$$2FRQ230$$2unnamed$$2zThrowableSystem_cpp$$211PointTargetRQ230$$2unnamed$$2zThrowableSystem_cpp$$211PointTarget
-swap$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$211PointTarget$$1__30$$2unnamed$$2zThrowableSystem_cpp$$2FRQ230$$2unnamed$$2zThrowableSystem_cpp$$211PointTargetRQ230$$2unnamed$$2zThrowableSystem_cpp$$211PointTarget:
+.global swap_esc__0_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTarget_esc__1___30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTargetRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTarget
+swap_esc__0_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTarget_esc__1___30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTargetRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTarget:
 /* 801B3CA4 001B0AA4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801B3CA8 001B0AA8  7C 08 02 A6 */	mflr r0
 /* 801B3CAC 001B0AAC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1166,18 +1168,18 @@ swap$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$211PointTarget$$1__30$$2unnamed$$2
 /* 801B3CBC 001B0ABC  80 03 00 04 */	lwz r0, 4(r3)
 /* 801B3CC0 001B0AC0  90 A1 00 08 */	stw r5, 8(r1)
 /* 801B3CC4 001B0AC4  90 01 00 0C */	stw r0, 0xc(r1)
-/* 801B3CC8 001B0AC8  48 00 00 25 */	bl __as__Q230$$2unnamed$$2zThrowableSystem_cpp$$211PointTargetFRCQ230$$2unnamed$$2zThrowableSystem_cpp$$211PointTarget
+/* 801B3CC8 001B0AC8  48 00 00 25 */	bl __as__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTargetFRCQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTarget
 /* 801B3CCC 001B0ACC  7F E3 FB 78 */	mr r3, r31
 /* 801B3CD0 001B0AD0  38 81 00 08 */	addi r4, r1, 8
-/* 801B3CD4 001B0AD4  48 00 00 19 */	bl __as__Q230$$2unnamed$$2zThrowableSystem_cpp$$211PointTargetFRCQ230$$2unnamed$$2zThrowableSystem_cpp$$211PointTarget
+/* 801B3CD4 001B0AD4  48 00 00 19 */	bl __as__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTargetFRCQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTarget
 /* 801B3CD8 001B0AD8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801B3CDC 001B0ADC  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 801B3CE0 001B0AE0  7C 08 03 A6 */	mtlr r0
 /* 801B3CE4 001B0AE4  38 21 00 20 */	addi r1, r1, 0x20
 /* 801B3CE8 001B0AE8  4E 80 00 20 */	blr 
 
-.global __as__Q230$$2unnamed$$2zThrowableSystem_cpp$$211PointTargetFRCQ230$$2unnamed$$2zThrowableSystem_cpp$$211PointTarget
-__as__Q230$$2unnamed$$2zThrowableSystem_cpp$$211PointTargetFRCQ230$$2unnamed$$2zThrowableSystem_cpp$$211PointTarget:
+.global __as__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTargetFRCQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTarget
+__as__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTargetFRCQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_11PointTarget:
 /* 801B3CEC 001B0AEC  80 04 00 00 */	lwz r0, 0(r4)
 /* 801B3CF0 001B0AF0  88 A4 00 04 */	lbz r5, 4(r4)
 /* 801B3CF4 001B0AF4  90 03 00 00 */	stw r0, 0(r3)
@@ -1193,10 +1195,10 @@ zThrowableSystemClearAddedTargets__Fv:
 /* 801B3D10 001B0B10  38 80 00 00 */	li r4, 0
 /* 801B3D14 001B0B14  38 A0 00 80 */	li r5, 0x80
 /* 801B3D18 001B0B18  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801B3D1C 001B0B1C  80 6D D8 40 */	lwz r3, addedTargets__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3D1C 001B0B1C  80 6D D8 40 */	lwz r3, addedTargets__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3D20 001B0B20  4B E8 E6 11 */	bl xMemorySetV32A32__FPvUiUi
 /* 801B3D24 001B0B24  38 00 00 00 */	li r0, 0
-/* 801B3D28 001B0B28  90 0D D8 44 */	stw r0, addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3D28 001B0B28  90 0D D8 44 */	stw r0, addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3D2C 001B0B2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801B3D30 001B0B30  7C 08 03 A6 */	mtlr r0
 /* 801B3D34 001B0B34  38 21 00 10 */	addi r1, r1, 0x10
@@ -1204,13 +1206,13 @@ zThrowableSystemClearAddedTargets__Fv:
 
 .global zThrowableSystemAddAdditionalCollisionHandler__FP32zThrowableSystemCollisionHandler
 zThrowableSystemAddAdditionalCollisionHandler__FP32zThrowableSystemCollisionHandler:
-/* 801B3D3C 001B0B3C  90 6D D8 48 */	stw r3, additionalCollisionHandler__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3D3C 001B0B3C  90 6D D8 48 */	stw r3, additionalCollisionHandler__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3D40 001B0B40  4E 80 00 20 */	blr 
 
 .global zThrowableSystemFindRunningThrow__FPC4xEnt
 zThrowableSystemFindRunningThrow__FPC4xEnt:
 /* 801B3D44 001B0B44  38 00 00 08 */	li r0, 8
-/* 801B3D48 001B0B48  80 AD D8 3C */	lwz r5, runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3D48 001B0B48  80 AD D8 3C */	lwz r5, runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3D4C 001B0B4C  38 C0 00 00 */	li r6, 0
 /* 801B3D50 001B0B50  38 80 00 00 */	li r4, 0
 /* 801B3D54 001B0B54  7C 09 03 A6 */	mtctr r0
@@ -1230,7 +1232,7 @@ lbl_801B3D6C:
 .global zThrowableSystemTimeToTarget__Fi
 zThrowableSystemTimeToTarget__Fi:
 /* 801B3D80 001B0B80  1C 03 00 64 */	mulli r0, r3, 0x64
-/* 801B3D84 001B0B84  80 6D D8 3C */	lwz r3, runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3D84 001B0B84  80 6D D8 3C */	lwz r3, runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3D88 001B0B88  7C 63 02 14 */	add r3, r3, r0
 /* 801B3D8C 001B0B8C  C0 23 00 0C */	lfs f1, 0xc(r3)
 /* 801B3D90 001B0B90  C0 03 00 08 */	lfs f0, 8(r3)
@@ -1246,16 +1248,16 @@ zThrowableSystemStartScenePrepare__Fv:
 /* 801B3DAC 001B0BAC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801B3DB0 001B0BB0  38 00 00 00 */	li r0, 0
 /* 801B3DB4 001B0BB4  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
-/* 801B3DB8 001B0BB8  90 0D D8 20 */	stw r0, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3DBC 001B0BBC  90 0D D8 24 */	stw r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3DC0 001B0BC0  90 0D D8 28 */	stw r0, throwModelMapMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3DC4 001B0BC4  90 0D D8 2C */	stw r0, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3DC8 001B0BC8  90 0D D8 30 */	stw r0, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3DCC 001B0BCC  90 0D D8 34 */	stw r0, throwPropertiesMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3DD0 001B0BD0  90 0D D8 48 */	stw r0, additionalCollisionHandler__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3DD4 001B0BD4  90 0D D8 3C */	stw r0, runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3DB8 001B0BB8  90 0D D8 20 */	stw r0, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3DBC 001B0BBC  90 0D D8 24 */	stw r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3DC0 001B0BC0  90 0D D8 28 */	stw r0, throwModelMapMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3DC4 001B0BC4  90 0D D8 2C */	stw r0, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3DC8 001B0BC8  90 0D D8 30 */	stw r0, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3DCC 001B0BCC  90 0D D8 34 */	stw r0, throwPropertiesMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3DD0 001B0BD0  90 0D D8 48 */	stw r0, additionalCollisionHandler__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3DD4 001B0BD4  90 0D D8 3C */	stw r0, runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3DD8 001B0BD8  4B E9 5D 89 */	bl xMemAlloc__FUiUii
-/* 801B3DDC 001B0BDC  90 6D D8 40 */	stw r3, addedTargets__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3DDC 001B0BDC  90 6D D8 40 */	stw r3, addedTargets__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3DE0 001B0BE0  4B FF FF 29 */	bl zThrowableSystemClearAddedTargets__Fv
 /* 801B3DE4 001B0BE4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801B3DE8 001B0BE8  7C 08 03 A6 */	mtlr r0
@@ -1264,7 +1266,7 @@ zThrowableSystemStartScenePrepare__Fv:
 
 .global zThrowableSystemUseStrongVel__Fb
 zThrowableSystemUseStrongVel__Fb:
-/* 801B3DF4 001B0BF4  98 6D A5 70 */	stb r3, sUseStrongVel__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3DF4 001B0BF4  98 6D A5 70 */	stb r3, sUseStrongVel__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3DF8 001B0BF8  4E 80 00 20 */	blr 
 
 .global zThrowableSystemAddBasicTypes__Fv
@@ -1278,11 +1280,11 @@ zThrowableSystemAddBasicTypes__Fv:
 /* 801B3E14 001B0C14  4B EB 85 39 */	bl xSTAssetCountByType__FUi
 /* 801B3E18 001B0C18  38 80 00 30 */	li r4, 0x30
 /* 801B3E1C 001B0C1C  38 00 00 90 */	li r0, 0x90
-/* 801B3E20 001B0C20  90 8D D8 34 */	stw r4, throwPropertiesMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3E20 001B0C20  90 8D D8 34 */	stw r4, throwPropertiesMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3E24 001B0C24  7C 7B 1B 78 */	mr r27, r3
 /* 801B3E28 001B0C28  3A E0 00 00 */	li r23, 0
 /* 801B3E2C 001B0C2C  3E C0 54 52 */	lis r22, 0x5452
-/* 801B3E30 001B0C30  90 0D D8 28 */	stw r0, throwModelMapMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3E30 001B0C30  90 0D D8 28 */	stw r0, throwModelMapMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3E34 001B0C34  48 00 00 3C */	b lbl_801B3E70
 lbl_801B3E38:
 /* 801B3E38 001B0C38  7E E4 BB 78 */	mr r4, r23
@@ -1291,42 +1293,42 @@ lbl_801B3E38:
 /* 801B3E44 001B0C44  4B EB 85 79 */	bl xSTFindAssetByType__FUiiPUi
 /* 801B3E48 001B0C48  80 03 00 0C */	lwz r0, 0xc(r3)
 /* 801B3E4C 001B0C4C  3A F7 00 01 */	addi r23, r23, 1
-/* 801B3E50 001B0C50  80 AD D8 28 */	lwz r5, throwModelMapMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3E50 001B0C50  80 AD D8 28 */	lwz r5, throwModelMapMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3E54 001B0C54  54 00 08 3C */	slwi r0, r0, 1
-/* 801B3E58 001B0C58  80 8D D8 34 */	lwz r4, throwPropertiesMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3E58 001B0C58  80 8D D8 34 */	lwz r4, throwPropertiesMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3E5C 001B0C5C  7C 05 02 14 */	add r0, r5, r0
-/* 801B3E60 001B0C60  90 0D D8 28 */	stw r0, throwModelMapMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3E60 001B0C60  90 0D D8 28 */	stw r0, throwModelMapMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3E64 001B0C64  80 03 00 0C */	lwz r0, 0xc(r3)
 /* 801B3E68 001B0C68  7C 04 02 14 */	add r0, r4, r0
-/* 801B3E6C 001B0C6C  90 0D D8 34 */	stw r0, throwPropertiesMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3E6C 001B0C6C  90 0D D8 34 */	stw r0, throwPropertiesMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801B3E70:
 /* 801B3E70 001B0C70  7C 17 D8 00 */	cmpw r23, r27
 /* 801B3E74 001B0C74  41 80 FF C4 */	blt lbl_801B3E38
-/* 801B3E78 001B0C78  80 0D D8 28 */	lwz r0, throwModelMapMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3E78 001B0C78  80 0D D8 28 */	lwz r0, throwModelMapMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3E7C 001B0C7C  38 60 00 00 */	li r3, 0
-/* 801B3E80 001B0C80  90 6D D8 24 */	stw r3, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3E80 001B0C80  90 6D D8 24 */	stw r3, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3E84 001B0C84  38 A0 00 00 */	li r5, 0
 /* 801B3E88 001B0C88  1C 80 00 0C */	mulli r4, r0, 0xc
 /* 801B3E8C 001B0C8C  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
 /* 801B3E90 001B0C90  4B E9 5C D1 */	bl xMemAlloc__FUiUii
-/* 801B3E94 001B0C94  80 0D D8 34 */	lwz r0, throwPropertiesMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3E94 001B0C94  80 0D D8 34 */	lwz r0, throwPropertiesMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3E98 001B0C98  38 C0 00 00 */	li r6, 0
-/* 801B3E9C 001B0C9C  90 6D D8 20 */	stw r3, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3E9C 001B0C9C  90 6D D8 20 */	stw r3, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3EA0 001B0CA0  38 A0 00 00 */	li r5, 0
 /* 801B3EA4 001B0CA4  1C 80 00 44 */	mulli r4, r0, 0x44
 /* 801B3EA8 001B0CA8  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
-/* 801B3EAC 001B0CAC  90 CD D8 30 */	stw r6, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3EAC 001B0CAC  90 CD D8 30 */	stw r6, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3EB0 001B0CB0  4B E9 5C B1 */	bl xMemAlloc__FUiUii
-/* 801B3EB4 001B0CB4  80 0D D8 34 */	lwz r0, throwPropertiesMaxCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3EB4 001B0CB4  80 0D D8 34 */	lwz r0, throwPropertiesMaxCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3EB8 001B0CB8  38 80 00 00 */	li r4, 0
-/* 801B3EBC 001B0CBC  90 6D D8 2C */	stw r3, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3EBC 001B0CBC  90 6D D8 2C */	stw r3, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3EC0 001B0CC0  1C A0 00 44 */	mulli r5, r0, 0x44
 /* 801B3EC4 001B0CC4  4B E8 E4 6D */	bl xMemorySetV32A32__FPvUiUi
-/* 801B3EC8 001B0CC8  3C 80 80 31 */	lis r4, staticThrowableProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2@ha
-/* 801B3ECC 001B0CCC  3C 60 80 2E */	lis r3, $$2stringBase0_127@ha
-/* 801B3ED0 001B0CD0  3B C4 2D 78 */	addi r30, r4, staticThrowableProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2@l
+/* 801B3EC8 001B0CC8  3C 80 80 31 */	lis r4, staticThrowableProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_@ha
+/* 801B3ECC 001B0CCC  3C 60 80 2E */	lis r3, _esc__2_stringBase0_127@ha
+/* 801B3ED0 001B0CD0  3B C4 2D 78 */	addi r30, r4, staticThrowableProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_@l
 /* 801B3ED4 001B0CD4  3B 20 00 00 */	li r25, 0
-/* 801B3ED8 001B0CD8  3B E3 7D B0 */	addi r31, r3, $$2stringBase0_127@l
+/* 801B3ED8 001B0CD8  3B E3 7D B0 */	addi r31, r3, _esc__2_stringBase0_127@l
 /* 801B3EDC 001B0CDC  3F 80 54 52 */	lis r28, 0x5452
 /* 801B3EE0 001B0CE0  48 00 02 CC */	b lbl_801B41AC
 lbl_801B3EE4:
@@ -1340,63 +1342,63 @@ lbl_801B3EE4:
 /* 801B3F00 001B0D00  48 00 02 9C */	b lbl_801B419C
 lbl_801B3F04:
 /* 801B3F04 001B0D04  7F 5D B2 14 */	add r26, r29, r22
-/* 801B3F08 001B0D08  88 0D A5 70 */	lbz r0, sUseStrongVel__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F08 001B0D08  88 0D A5 70 */	lbz r0, sUseStrongVel__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F0C 001B0D0C  80 7A 00 14 */	lwz r3, 0x14(r26)
 /* 801B3F10 001B0D10  28 00 00 00 */	cmplwi r0, 0
 /* 801B3F14 001B0D14  1C 03 00 28 */	mulli r0, r3, 0x28
 /* 801B3F18 001B0D18  7E FE 02 14 */	add r23, r30, r0
 /* 801B3F1C 001B0D1C  41 82 00 1C */	beq lbl_801B3F38
-/* 801B3F20 001B0D20  80 0D D8 30 */	lwz r0, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F20 001B0D20  80 0D D8 30 */	lwz r0, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F24 001B0D24  C0 17 00 04 */	lfs f0, 4(r23)
 /* 801B3F28 001B0D28  1C 00 00 44 */	mulli r0, r0, 0x44
-/* 801B3F2C 001B0D2C  80 6D D8 2C */	lwz r3, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F2C 001B0D2C  80 6D D8 2C */	lwz r3, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F30 001B0D30  7C 03 05 2E */	stfsx f0, r3, r0
 /* 801B3F34 001B0D34  48 00 00 18 */	b lbl_801B3F4C
 lbl_801B3F38:
-/* 801B3F38 001B0D38  80 0D D8 30 */	lwz r0, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F38 001B0D38  80 0D D8 30 */	lwz r0, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F3C 001B0D3C  C0 17 00 08 */	lfs f0, 8(r23)
 /* 801B3F40 001B0D40  1C 00 00 44 */	mulli r0, r0, 0x44
-/* 801B3F44 001B0D44  80 6D D8 2C */	lwz r3, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F44 001B0D44  80 6D D8 2C */	lwz r3, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F48 001B0D48  7C 03 05 2E */	stfsx f0, r3, r0
 lbl_801B3F4C:
-/* 801B3F4C 001B0D4C  80 6D D8 30 */	lwz r3, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F4C 001B0D4C  80 6D D8 30 */	lwz r3, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F50 001B0D50  38 1A 00 10 */	addi r0, r26, 0x10
 /* 801B3F54 001B0D54  C0 17 00 0C */	lfs f0, 0xc(r23)
 /* 801B3F58 001B0D58  1C 63 00 44 */	mulli r3, r3, 0x44
-/* 801B3F5C 001B0D5C  80 8D D8 2C */	lwz r4, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F5C 001B0D5C  80 8D D8 2C */	lwz r4, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F60 001B0D60  38 63 00 04 */	addi r3, r3, 4
 /* 801B3F64 001B0D64  7C 04 1D 2E */	stfsx f0, r4, r3
-/* 801B3F68 001B0D68  80 6D D8 30 */	lwz r3, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F68 001B0D68  80 6D D8 30 */	lwz r3, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F6C 001B0D6C  C0 17 00 10 */	lfs f0, 0x10(r23)
 /* 801B3F70 001B0D70  1C 63 00 44 */	mulli r3, r3, 0x44
-/* 801B3F74 001B0D74  80 8D D8 2C */	lwz r4, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F74 001B0D74  80 8D D8 2C */	lwz r4, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F78 001B0D78  38 63 00 08 */	addi r3, r3, 8
 /* 801B3F7C 001B0D7C  7C 04 1D 2E */	stfsx f0, r4, r3
-/* 801B3F80 001B0D80  80 6D D8 30 */	lwz r3, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F80 001B0D80  80 6D D8 30 */	lwz r3, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F84 001B0D84  C0 17 00 14 */	lfs f0, 0x14(r23)
 /* 801B3F88 001B0D88  1C 63 00 44 */	mulli r3, r3, 0x44
-/* 801B3F8C 001B0D8C  80 8D D8 2C */	lwz r4, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F8C 001B0D8C  80 8D D8 2C */	lwz r4, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F90 001B0D90  38 63 00 0C */	addi r3, r3, 0xc
 /* 801B3F94 001B0D94  7C 04 1D 2E */	stfsx f0, r4, r3
-/* 801B3F98 001B0D98  80 6D D8 30 */	lwz r3, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3F98 001B0D98  80 6D D8 30 */	lwz r3, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3F9C 001B0D9C  80 B7 00 18 */	lwz r5, 0x18(r23)
 /* 801B3FA0 001B0DA0  1C 63 00 44 */	mulli r3, r3, 0x44
-/* 801B3FA4 001B0DA4  80 8D D8 2C */	lwz r4, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3FA4 001B0DA4  80 8D D8 2C */	lwz r4, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3FA8 001B0DA8  38 63 00 10 */	addi r3, r3, 0x10
 /* 801B3FAC 001B0DAC  7C A4 19 2E */	stwx r5, r4, r3
-/* 801B3FB0 001B0DB0  80 6D D8 30 */	lwz r3, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3FB0 001B0DB0  80 6D D8 30 */	lwz r3, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3FB4 001B0DB4  80 B7 00 1C */	lwz r5, 0x1c(r23)
 /* 801B3FB8 001B0DB8  1C 63 00 44 */	mulli r3, r3, 0x44
-/* 801B3FBC 001B0DBC  80 8D D8 2C */	lwz r4, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3FBC 001B0DBC  80 8D D8 2C */	lwz r4, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3FC0 001B0DC0  38 63 00 18 */	addi r3, r3, 0x18
 /* 801B3FC4 001B0DC4  7C A4 19 2E */	stwx r5, r4, r3
-/* 801B3FC8 001B0DC8  80 6D D8 30 */	lwz r3, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3FCC 001B0DCC  80 8D D8 2C */	lwz r4, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3FC8 001B0DC8  80 6D D8 30 */	lwz r3, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3FCC 001B0DCC  80 8D D8 2C */	lwz r4, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3FD0 001B0DD0  1C 63 00 44 */	mulli r3, r3, 0x44
 /* 801B3FD4 001B0DD4  38 63 00 14 */	addi r3, r3, 0x14
 /* 801B3FD8 001B0DD8  7C 04 19 2E */	stwx r0, r4, r3
-/* 801B3FDC 001B0DDC  80 6D D8 30 */	lwz r3, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B3FE0 001B0DE0  80 8D D8 2C */	lwz r4, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B3FDC 001B0DDC  80 6D D8 30 */	lwz r3, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B3FE0 001B0DE0  80 8D D8 2C */	lwz r4, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B3FE4 001B0DE4  1C 63 00 44 */	mulli r3, r3, 0x44
 /* 801B3FE8 001B0DE8  38 63 00 1C */	addi r3, r3, 0x1c
 /* 801B3FEC 001B0DEC  7C 04 19 2E */	stwx r0, r4, r3
@@ -1408,8 +1410,8 @@ lbl_801B3F4C:
 lbl_801B4004:
 /* 801B4004 001B0E04  38 60 FF FF */	li r3, -1
 lbl_801B4008:
-/* 801B4008 001B0E08  80 0D D8 30 */	lwz r0, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B400C 001B0E0C  80 AD D8 2C */	lwz r5, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4008 001B0E08  80 0D D8 30 */	lwz r0, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B400C 001B0E0C  80 AD D8 2C */	lwz r5, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4010 001B0E10  1C 80 00 44 */	mulli r4, r0, 0x44
 /* 801B4014 001B0E14  38 04 00 24 */	addi r0, r4, 0x24
 /* 801B4018 001B0E18  7C 65 01 2E */	stwx r3, r5, r0
@@ -1421,15 +1423,15 @@ lbl_801B4008:
 lbl_801B4030:
 /* 801B4030 001B0E30  38 60 FF FF */	li r3, -1
 lbl_801B4034:
-/* 801B4034 001B0E34  80 0D D8 30 */	lwz r0, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B4038 001B0E38  80 AD D8 2C */	lwz r5, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4034 001B0E34  80 0D D8 30 */	lwz r0, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B4038 001B0E38  80 AD D8 2C */	lwz r5, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B403C 001B0E3C  1C 80 00 44 */	mulli r4, r0, 0x44
 /* 801B4040 001B0E40  38 04 00 24 */	addi r0, r4, 0x24
 /* 801B4044 001B0E44  7C 65 01 2E */	stwx r3, r5, r0
-/* 801B4048 001B0E48  80 0D D8 30 */	lwz r0, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4048 001B0E48  80 0D D8 30 */	lwz r0, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B404C 001B0E4C  80 B7 00 24 */	lwz r5, 0x24(r23)
 /* 801B4050 001B0E50  1C 60 00 44 */	mulli r3, r0, 0x44
-/* 801B4054 001B0E54  80 8D D8 2C */	lwz r4, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4054 001B0E54  80 8D D8 2C */	lwz r4, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4058 001B0E58  38 03 00 28 */	addi r0, r3, 0x28
 /* 801B405C 001B0E5C  7C A4 01 2E */	stwx r5, r4, r0
 /* 801B4060 001B0E60  80 7A 00 18 */	lwz r3, 0x18(r26)
@@ -1437,81 +1439,81 @@ lbl_801B4034:
 /* 801B4068 001B0E68  41 82 00 20 */	beq lbl_801B4088
 /* 801B406C 001B0E6C  38 80 00 00 */	li r4, 0
 /* 801B4070 001B0E70  4B EB 82 31 */	bl xSTFindAsset__FUiPUi
-/* 801B4074 001B0E74  80 0D D8 30 */	lwz r0, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B4078 001B0E78  80 AD D8 2C */	lwz r5, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4074 001B0E74  80 0D D8 30 */	lwz r0, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B4078 001B0E78  80 AD D8 2C */	lwz r5, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B407C 001B0E7C  1C 80 00 44 */	mulli r4, r0, 0x44
 /* 801B4080 001B0E80  38 04 00 20 */	addi r0, r4, 0x20
 /* 801B4084 001B0E84  7C 65 01 2E */	stwx r3, r5, r0
 lbl_801B4088:
-/* 801B4088 001B0E88  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4088 001B0E88  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B408C 001B0E8C  38 9F 00 84 */	addi r4, r31, 0x84
 /* 801B4090 001B0E90  80 BA 00 10 */	lwz r5, 0x10(r26)
 /* 801B4094 001B0E94  1C 00 00 0C */	mulli r0, r0, 0xc
-/* 801B4098 001B0E98  80 6D D8 20 */	lwz r3, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4098 001B0E98  80 6D D8 20 */	lwz r3, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B409C 001B0E9C  7C A3 01 2E */	stwx r5, r3, r0
-/* 801B40A0 001B0EA0  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B40A4 001B0EA4  80 CD D8 30 */	lwz r6, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B40A0 001B0EA0  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B40A4 001B0EA4  80 CD D8 30 */	lwz r6, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B40A8 001B0EA8  1C 60 00 0C */	mulli r3, r0, 0xc
-/* 801B40AC 001B0EAC  80 AD D8 20 */	lwz r5, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B40AC 001B0EAC  80 AD D8 20 */	lwz r5, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B40B0 001B0EB0  38 03 00 04 */	addi r0, r3, 4
 /* 801B40B4 001B0EB4  7C C5 01 2E */	stwx r6, r5, r0
-/* 801B40B8 001B0EB8  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B40B8 001B0EB8  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B40BC 001B0EBC  80 D7 00 00 */	lwz r6, 0(r23)
 /* 801B40C0 001B0EC0  1C 60 00 0C */	mulli r3, r0, 0xc
-/* 801B40C4 001B0EC4  80 AD D8 20 */	lwz r5, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B40C4 001B0EC4  80 AD D8 20 */	lwz r5, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B40C8 001B0EC8  38 03 00 08 */	addi r0, r3, 8
 /* 801B40CC 001B0ECC  7C C5 01 2E */	stwx r6, r5, r0
-/* 801B40D0 001B0ED0  80 6D D8 24 */	lwz r3, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B40D0 001B0ED0  80 6D D8 24 */	lwz r3, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B40D4 001B0ED4  38 03 00 01 */	addi r0, r3, 1
-/* 801B40D8 001B0ED8  90 0D D8 24 */	stw r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B40D8 001B0ED8  90 0D D8 24 */	stw r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B40DC 001B0EDC  80 7A 00 10 */	lwz r3, 0x10(r26)
 /* 801B40E0 001B0EE0  4B EB 8B D1 */	bl xStrHashCat__FUiPCc
-/* 801B40E4 001B0EE4  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B40E4 001B0EE4  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B40E8 001B0EE8  38 9F 00 89 */	addi r4, r31, 0x89
-/* 801B40EC 001B0EEC  80 AD D8 20 */	lwz r5, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B40EC 001B0EEC  80 AD D8 20 */	lwz r5, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B40F0 001B0EF0  1C 00 00 0C */	mulli r0, r0, 0xc
 /* 801B40F4 001B0EF4  7C 65 01 2E */	stwx r3, r5, r0
-/* 801B40F8 001B0EF8  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B40FC 001B0EFC  80 CD D8 30 */	lwz r6, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B40F8 001B0EF8  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B40FC 001B0EFC  80 CD D8 30 */	lwz r6, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4100 001B0F00  1C 60 00 0C */	mulli r3, r0, 0xc
-/* 801B4104 001B0F04  80 AD D8 20 */	lwz r5, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4104 001B0F04  80 AD D8 20 */	lwz r5, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4108 001B0F08  38 03 00 04 */	addi r0, r3, 4
 /* 801B410C 001B0F0C  7C C5 01 2E */	stwx r6, r5, r0
-/* 801B4110 001B0F10  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4110 001B0F10  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4114 001B0F14  80 D7 00 00 */	lwz r6, 0(r23)
 /* 801B4118 001B0F18  1C 60 00 0C */	mulli r3, r0, 0xc
-/* 801B411C 001B0F1C  80 AD D8 20 */	lwz r5, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B411C 001B0F1C  80 AD D8 20 */	lwz r5, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4120 001B0F20  38 03 00 08 */	addi r0, r3, 8
 /* 801B4124 001B0F24  7C C5 01 2E */	stwx r6, r5, r0
-/* 801B4128 001B0F28  80 6D D8 24 */	lwz r3, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4128 001B0F28  80 6D D8 24 */	lwz r3, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B412C 001B0F2C  38 03 00 01 */	addi r0, r3, 1
-/* 801B4130 001B0F30  90 0D D8 24 */	stw r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4130 001B0F30  90 0D D8 24 */	stw r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4134 001B0F34  80 7A 00 10 */	lwz r3, 0x10(r26)
 /* 801B4138 001B0F38  4B EB 8B 79 */	bl xStrHashCat__FUiPCc
-/* 801B413C 001B0F3C  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B413C 001B0F3C  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4140 001B0F40  3B 18 00 01 */	addi r24, r24, 1
-/* 801B4144 001B0F44  80 8D D8 20 */	lwz r4, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4144 001B0F44  80 8D D8 20 */	lwz r4, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4148 001B0F48  3A D6 00 14 */	addi r22, r22, 0x14
 /* 801B414C 001B0F4C  1C 00 00 0C */	mulli r0, r0, 0xc
 /* 801B4150 001B0F50  7C 64 01 2E */	stwx r3, r4, r0
-/* 801B4154 001B0F54  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B4158 001B0F58  80 AD D8 30 */	lwz r5, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4154 001B0F54  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B4158 001B0F58  80 AD D8 30 */	lwz r5, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B415C 001B0F5C  1C 60 00 0C */	mulli r3, r0, 0xc
-/* 801B4160 001B0F60  80 8D D8 20 */	lwz r4, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4160 001B0F60  80 8D D8 20 */	lwz r4, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4164 001B0F64  38 03 00 04 */	addi r0, r3, 4
 /* 801B4168 001B0F68  7C A4 01 2E */	stwx r5, r4, r0
-/* 801B416C 001B0F6C  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B416C 001B0F6C  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4170 001B0F70  80 B7 00 00 */	lwz r5, 0(r23)
 /* 801B4174 001B0F74  1C 60 00 0C */	mulli r3, r0, 0xc
-/* 801B4178 001B0F78  80 8D D8 20 */	lwz r4, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4178 001B0F78  80 8D D8 20 */	lwz r4, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B417C 001B0F7C  38 03 00 08 */	addi r0, r3, 8
 /* 801B4180 001B0F80  7C A4 01 2E */	stwx r5, r4, r0
-/* 801B4184 001B0F84  80 8D D8 24 */	lwz r4, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B4188 001B0F88  80 6D D8 30 */	lwz r3, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4184 001B0F84  80 8D D8 24 */	lwz r4, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B4188 001B0F88  80 6D D8 30 */	lwz r3, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B418C 001B0F8C  38 84 00 01 */	addi r4, r4, 1
 /* 801B4190 001B0F90  38 03 00 01 */	addi r0, r3, 1
-/* 801B4194 001B0F94  90 8D D8 24 */	stw r4, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B4198 001B0F98  90 0D D8 30 */	stw r0, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4194 001B0F94  90 8D D8 24 */	stw r4, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B4198 001B0F98  90 0D D8 30 */	stw r0, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801B419C:
 /* 801B419C 001B0F9C  80 1D 00 0C */	lwz r0, 0xc(r29)
 /* 801B41A0 001B0FA0  7C 18 00 40 */	cmplw r24, r0
@@ -1537,13 +1539,13 @@ zThrowableSystemRegister__FUiUifffffPFP4xEntP4xEntPC5xVec3PC5xVec3Pv_UiPvPFP4xEn
 /* 801B41E0 001B0FE0  7C 9F 23 78 */	mr r31, r4
 /* 801B41E4 001B0FE4  83 61 00 2C */	lwz r27, 0x2c(r1)
 /* 801B41E8 001B0FE8  83 81 00 30 */	lwz r28, 0x30(r1)
-/* 801B41EC 001B0FEC  80 0D D8 20 */	lwz r0, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B41EC 001B0FEC  80 0D D8 20 */	lwz r0, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B41F0 001B0FF0  28 00 00 00 */	cmplwi r0, 0
 /* 801B41F4 001B0FF4  41 82 01 00 */	beq lbl_801B42F4
-/* 801B41F8 001B0FF8  80 6D D8 30 */	lwz r3, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B41FC 001B0FFC  88 0D A5 70 */	lbz r0, sUseStrongVel__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B41F8 001B0FF8  80 6D D8 30 */	lwz r3, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B41FC 001B0FFC  88 0D A5 70 */	lbz r0, sUseStrongVel__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4200 001B1000  1C 63 00 44 */	mulli r3, r3, 0x44
-/* 801B4204 001B1004  80 8D D8 2C */	lwz r4, throwProperties__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4204 001B1004  80 8D D8 2C */	lwz r4, throwProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4208 001B1008  28 00 00 00 */	cmplwi r0, 0
 /* 801B420C 001B100C  7F A4 1A 14 */	add r29, r4, r3
 /* 801B4210 001B1010  41 82 00 0C */	beq lbl_801B421C
@@ -1588,29 +1590,29 @@ lbl_801B4290:
 /* 801B4290 001B1090  7F 84 E3 78 */	mr r4, r28
 lbl_801B4294:
 /* 801B4294 001B1094  4B E5 6E 15 */	bl __as__5xVec3FRC5xVec3
-/* 801B4298 001B1098  80 8D D8 30 */	lwz r4, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4298 001B1098  80 8D D8 30 */	lwz r4, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B429C 001B109C  7F C3 F3 78 */	mr r3, r30
 /* 801B42A0 001B10A0  7F E5 FB 78 */	mr r5, r31
-/* 801B42A4 001B10A4  48 00 00 65 */	bl InsertModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUiUi
-/* 801B42A8 001B10A8  3C 80 80 2E */	lis r4, $$2stringBase0_127@ha
+/* 801B42A4 001B10A4  48 00 00 65 */	bl InsertModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUiUiUi
+/* 801B42A8 001B10A8  3C 80 80 2E */	lis r4, _esc__2_stringBase0_127@ha
 /* 801B42AC 001B10AC  7F C3 F3 78 */	mr r3, r30
-/* 801B42B0 001B10B0  38 84 7D B0 */	addi r4, r4, $$2stringBase0_127@l
+/* 801B42B0 001B10B0  38 84 7D B0 */	addi r4, r4, _esc__2_stringBase0_127@l
 /* 801B42B4 001B10B4  38 84 00 84 */	addi r4, r4, 0x84
 /* 801B42B8 001B10B8  4B EB 89 F9 */	bl xStrHashCat__FUiPCc
-/* 801B42BC 001B10BC  80 8D D8 30 */	lwz r4, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B42BC 001B10BC  80 8D D8 30 */	lwz r4, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B42C0 001B10C0  7F E5 FB 78 */	mr r5, r31
-/* 801B42C4 001B10C4  48 00 00 45 */	bl InsertModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUiUi
-/* 801B42C8 001B10C8  3C 80 80 2E */	lis r4, $$2stringBase0_127@ha
+/* 801B42C4 001B10C4  48 00 00 45 */	bl InsertModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUiUiUi
+/* 801B42C8 001B10C8  3C 80 80 2E */	lis r4, _esc__2_stringBase0_127@ha
 /* 801B42CC 001B10CC  7F C3 F3 78 */	mr r3, r30
-/* 801B42D0 001B10D0  38 84 7D B0 */	addi r4, r4, $$2stringBase0_127@l
+/* 801B42D0 001B10D0  38 84 7D B0 */	addi r4, r4, _esc__2_stringBase0_127@l
 /* 801B42D4 001B10D4  38 84 00 89 */	addi r4, r4, 0x89
 /* 801B42D8 001B10D8  4B EB 89 D9 */	bl xStrHashCat__FUiPCc
-/* 801B42DC 001B10DC  80 8D D8 30 */	lwz r4, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B42DC 001B10DC  80 8D D8 30 */	lwz r4, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B42E0 001B10E0  7F E5 FB 78 */	mr r5, r31
-/* 801B42E4 001B10E4  48 00 00 25 */	bl InsertModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUiUi
-/* 801B42E8 001B10E8  80 6D D8 30 */	lwz r3, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B42E4 001B10E4  48 00 00 25 */	bl InsertModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUiUiUi
+/* 801B42E8 001B10E8  80 6D D8 30 */	lwz r3, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B42EC 001B10EC  38 03 00 01 */	addi r0, r3, 1
-/* 801B42F0 001B10F0  90 0D D8 30 */	stw r0, throwPropertiesCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B42F0 001B10F0  90 0D D8 30 */	stw r0, throwPropertiesCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801B42F4:
 /* 801B42F4 001B10F4  BB 41 00 08 */	lmw r26, 8(r1)
 /* 801B42F8 001B10F8  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -1618,18 +1620,18 @@ lbl_801B42F4:
 /* 801B4300 001B1100  38 21 00 20 */	addi r1, r1, 0x20
 /* 801B4304 001B1104  4E 80 00 20 */	blr 
 
-.global InsertModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUiUi
-InsertModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUiUi:
-/* 801B4308 001B1108  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B430C 001B110C  80 CD D8 20 */	lwz r6, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+.global InsertModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUiUiUi
+InsertModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUiUiUi:
+/* 801B4308 001B1108  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B430C 001B110C  80 CD D8 20 */	lwz r6, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4310 001B1110  1C 00 00 0C */	mulli r0, r0, 0xc
 /* 801B4314 001B1114  7C C6 02 14 */	add r6, r6, r0
 /* 801B4318 001B1118  90 66 00 00 */	stw r3, 0(r6)
 /* 801B431C 001B111C  90 86 00 04 */	stw r4, 4(r6)
 /* 801B4320 001B1120  90 A6 00 08 */	stw r5, 8(r6)
-/* 801B4324 001B1124  80 6D D8 24 */	lwz r3, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4324 001B1124  80 6D D8 24 */	lwz r3, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4328 001B1128  38 03 00 01 */	addi r0, r3, 1
-/* 801B432C 001B112C  90 0D D8 24 */	stw r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B432C 001B112C  90 0D D8 24 */	stw r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4330 001B1130  4E 80 00 20 */	blr 
 
 .global zThrowableSystemFinishScenePrepare__Fv
@@ -1638,10 +1640,10 @@ zThrowableSystemFinishScenePrepare__Fv:
 /* 801B4338 001B1138  7C 08 02 A6 */	mflr r0
 /* 801B433C 001B113C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801B4340 001B1140  BF 81 00 10 */	stmw r28, 0x10(r1)
-/* 801B4344 001B1144  80 6D D8 20 */	lwz r3, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4344 001B1144  80 6D D8 20 */	lwz r3, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4348 001B1148  28 03 00 00 */	cmplwi r3, 0
 /* 801B434C 001B114C  41 82 00 BC */	beq lbl_801B4408
-/* 801B4350 001B1150  80 8D D8 24 */	lwz r4, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4350 001B1150  80 8D D8 24 */	lwz r4, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4354 001B1154  38 A0 00 0C */	li r5, 0xc
 /* 801B4358 001B1158  38 C0 00 00 */	li r6, 0
 /* 801B435C 001B115C  4B EB C4 A1 */	bl quicksort_uint__FPvUlUlUl
@@ -1666,7 +1668,7 @@ lbl_801B4378:
 lbl_801B43A4:
 /* 801B43A4 001B11A4  80 7C 00 10 */	lwz r3, 0x10(r28)
 /* 801B43A8 001B11A8  80 63 00 48 */	lwz r3, 0x48(r3)
-/* 801B43AC 001B11AC  4B FF EB 55 */	bl GetThrowableProperty__30$$2unnamed$$2zThrowableSystem_cpp$$2FUi
+/* 801B43AC 001B11AC  4B FF EB 55 */	bl GetThrowableProperty__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUi
 /* 801B43B0 001B11B0  28 03 00 00 */	cmplwi r3, 0
 /* 801B43B4 001B11B4  41 82 00 20 */	beq lbl_801B43D4
 /* 801B43B8 001B11B8  A0 1C 00 1A */	lhz r0, 0x1a(r28)
@@ -1687,7 +1689,7 @@ lbl_801B43DC:
 /* 801B43EC 001B11EC  38 80 03 20 */	li r4, 0x320
 /* 801B43F0 001B11F0  38 A0 00 00 */	li r5, 0
 /* 801B43F4 001B11F4  4B E9 57 6D */	bl xMemAlloc__FUiUii
-/* 801B43F8 001B11F8  90 6D D8 3C */	stw r3, runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B43F8 001B11F8  90 6D D8 3C */	stw r3, runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B43FC 001B11FC  38 80 00 00 */	li r4, 0
 /* 801B4400 001B1200  38 A0 03 20 */	li r5, 0x320
 /* 801B4404 001B1204  4B E8 DF 2D */	bl xMemorySetV32A32__FPvUiUi
@@ -1703,10 +1705,10 @@ zThrowableSystemReset__Fv:
 /* 801B441C 001B121C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B4420 001B1220  7C 08 02 A6 */	mflr r0
 /* 801B4424 001B1224  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801B4428 001B1228  80 0D D8 20 */	lwz r0, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4428 001B1228  80 0D D8 20 */	lwz r0, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B442C 001B122C  28 00 00 00 */	cmplwi r0, 0
 /* 801B4430 001B1230  41 82 00 14 */	beq lbl_801B4444
-/* 801B4434 001B1234  80 6D D8 3C */	lwz r3, runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4434 001B1234  80 6D D8 3C */	lwz r3, runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4438 001B1238  38 80 00 00 */	li r4, 0
 /* 801B443C 001B123C  38 A0 03 20 */	li r5, 0x320
 /* 801B4440 001B1240  4B E8 DE F1 */	bl xMemorySetV32A32__FPvUiUi
@@ -1723,17 +1725,17 @@ zThrowableSystemGetAnimCode__FUi:
 /* 801B445C 001B125C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801B4460 001B1260  38 A1 00 08 */	addi r5, r1, 8
 /* 801B4464 001B1264  38 C1 00 0C */	addi r6, r1, 0xc
-/* 801B4468 001B1268  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B446C 001B126C  88 8D D8 4C */	lbz r4, $$21843-_SDA_BASE_(r13)
+/* 801B4468 001B1268  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B446C 001B126C  88 8D D8 4C */	lbz r4, _esc__2_1843-_SDA_BASE_(r13)
 /* 801B4470 001B1270  1C 00 00 0C */	mulli r0, r0, 0xc
-/* 801B4474 001B1274  80 ED D8 20 */	lwz r7, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4474 001B1274  80 ED D8 20 */	lwz r7, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4478 001B1278  90 61 00 08 */	stw r3, 8(r1)
 /* 801B447C 001B127C  7C E3 3B 78 */	mr r3, r7
 /* 801B4480 001B1280  98 81 00 0C */	stb r4, 0xc(r1)
 /* 801B4484 001B1284  7C 87 02 14 */	add r4, r7, r0
-/* 801B4488 001B1288  48 00 15 95 */	bl binary_find$$0PQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMap$$4Ui$$4Q230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompare$$1__FPQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMapPQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMapRCUiQ230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompare
-/* 801B448C 001B128C  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B4490 001B1290  80 8D D8 20 */	lwz r4, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4488 001B1288  48 00 15 95 */	bl binary_find_esc__0_PQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMap_esc__4_Ui_esc__4_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompare_esc__1___FPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMapPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMapRCUiQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompare
+/* 801B448C 001B128C  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B4490 001B1290  80 8D D8 20 */	lwz r4, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4494 001B1294  1C 00 00 0C */	mulli r0, r0, 0xc
 /* 801B4498 001B1298  7C 04 02 14 */	add r0, r4, r0
 /* 801B449C 001B129C  7C 03 00 40 */	cmplw r3, r0
@@ -1753,7 +1755,7 @@ zThrowableSystemGetProperty__FUi:
 /* 801B44C0 001B12C0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B44C4 001B12C4  7C 08 02 A6 */	mflr r0
 /* 801B44C8 001B12C8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801B44CC 001B12CC  4B FF EA 35 */	bl GetThrowableProperty__30$$2unnamed$$2zThrowableSystem_cpp$$2FUi
+/* 801B44CC 001B12CC  4B FF EA 35 */	bl GetThrowableProperty__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUi
 /* 801B44D0 001B12D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801B44D4 001B12D4  7C 08 03 A6 */	mtlr r0
 /* 801B44D8 001B12D8  38 21 00 10 */	addi r1, r1, 0x10
@@ -1766,17 +1768,17 @@ zThrowableSystemModelAdded__FUi:
 /* 801B44E8 001B12E8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801B44EC 001B12EC  38 A1 00 08 */	addi r5, r1, 8
 /* 801B44F0 001B12F0  38 C1 00 0C */	addi r6, r1, 0xc
-/* 801B44F4 001B12F4  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B44F8 001B12F8  88 8D D8 50 */	lbz r4, $$21860-_SDA_BASE_(r13)
+/* 801B44F4 001B12F4  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B44F8 001B12F8  88 8D D8 50 */	lbz r4, _esc__2_1860-_SDA_BASE_(r13)
 /* 801B44FC 001B12FC  1C 00 00 0C */	mulli r0, r0, 0xc
-/* 801B4500 001B1300  80 ED D8 20 */	lwz r7, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4500 001B1300  80 ED D8 20 */	lwz r7, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4504 001B1304  90 61 00 08 */	stw r3, 8(r1)
 /* 801B4508 001B1308  7C E3 3B 78 */	mr r3, r7
 /* 801B450C 001B130C  98 81 00 0C */	stb r4, 0xc(r1)
 /* 801B4510 001B1310  7C 87 02 14 */	add r4, r7, r0
-/* 801B4514 001B1314  48 00 15 09 */	bl binary_find$$0PQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMap$$4Ui$$4Q230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompare$$1__FPQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMapPQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMapRCUiQ230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompare
-/* 801B4518 001B1318  80 0D D8 24 */	lwz r0, throwModelMapCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
-/* 801B451C 001B131C  80 8D D8 20 */	lwz r4, throwModelMap__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4514 001B1314  48 00 15 09 */	bl binary_find_esc__0_PQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMap_esc__4_Ui_esc__4_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompare_esc__1___FPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMapPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMapRCUiQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompare
+/* 801B4518 001B1318  80 0D D8 24 */	lwz r0, throwModelMapCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801B451C 001B131C  80 8D D8 20 */	lwz r4, throwModelMap__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4520 001B1320  1C 00 00 0C */	mulli r0, r0, 0xc
 /* 801B4524 001B1324  7C 04 02 14 */	add r0, r4, r0
 /* 801B4528 001B1328  7C 63 00 50 */	subf r3, r3, r0
@@ -1800,7 +1802,7 @@ zThrowableSystemGetLaunchPointAngle__FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3:
 /* 801B4564 001B1364  7C FF 3B 78 */	mr r31, r7
 /* 801B4568 001B1368  80 64 00 10 */	lwz r3, 0x10(r4)
 /* 801B456C 001B136C  80 63 00 48 */	lwz r3, 0x48(r3)
-/* 801B4570 001B1370  4B FF E9 91 */	bl GetThrowableProperty__30$$2unnamed$$2zThrowableSystem_cpp$$2FUi
+/* 801B4570 001B1370  4B FF E9 91 */	bl GetThrowableProperty__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUi
 /* 801B4574 001B1374  38 00 00 00 */	li r0, 0
 /* 801B4578 001B1378  7C 67 1B 78 */	mr r7, r3
 /* 801B457C 001B137C  90 01 00 08 */	stw r0, 8(r1)
@@ -1814,7 +1816,7 @@ zThrowableSystemGetLaunchPointAngle__FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3:
 /* 801B459C 001B139C  39 21 00 10 */	addi r9, r1, 0x10
 /* 801B45A0 001B13A0  39 00 00 00 */	li r8, 0
 /* 801B45A4 001B13A4  39 40 00 00 */	li r10, 0
-/* 801B45A8 001B13A8  4B FF F3 AD */	bl LeadCalcTrajectory__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfbPf
+/* 801B45A8 001B13A8  4B FF F3 AD */	bl LeadCalcTrajectory__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfbPf
 /* 801B45AC 001B13AC  BB 61 00 1C */	lmw r27, 0x1c(r1)
 /* 801B45B0 001B13B0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801B45B4 001B13B4  C0 21 00 10 */	lfs f1, 0x10(r1)
@@ -1844,7 +1846,7 @@ zThrowableSystemCalcTrajectory__FP4xEntPC5xVec3ffPfPf:
 /* 801B4608 001B1408  7F E7 FB 78 */	mr r7, r31
 /* 801B460C 001B140C  38 A0 00 00 */	li r5, 0
 /* 801B4610 001B1410  39 00 00 00 */	li r8, 0
-/* 801B4614 001B1414  4B FF EB 29 */	bl CalcTrajectory__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfPfb
+/* 801B4614 001B1414  4B FF EB 29 */	bl CalcTrajectory__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfPfb
 /* 801B4618 001B1418  CB E1 00 28 */	lfd f31, 0x28(r1)
 /* 801B461C 001B141C  CB C1 00 20 */	lfd f30, 0x20(r1)
 /* 801B4620 001B1420  BB A1 00 14 */	lmw r29, 0x14(r1)
@@ -1867,28 +1869,28 @@ zThrowableSystemLaunchPoint__FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3b:
 /* 801B4658 001B1458  7D 1D 43 78 */	mr r29, r8
 /* 801B465C 001B145C  80 64 00 10 */	lwz r3, 0x10(r4)
 /* 801B4660 001B1460  80 63 00 48 */	lwz r3, 0x48(r3)
-/* 801B4664 001B1464  4B FF E8 9D */	bl GetThrowableProperty__30$$2unnamed$$2zThrowableSystem_cpp$$2FUi
+/* 801B4664 001B1464  4B FF E8 9D */	bl GetThrowableProperty__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUi
 /* 801B4668 001B1468  7C 60 1B 78 */	mr r0, r3
 /* 801B466C 001B146C  7F 23 CB 78 */	mr r3, r25
 /* 801B4670 001B1470  7C 1F 03 78 */	mr r31, r0
 /* 801B4674 001B1474  7F E4 FB 78 */	mr r4, r31
-/* 801B4678 001B1478  4B FF E9 6D */	bl AllocateThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntPC18zThrowableProperty
+/* 801B4678 001B1478  4B FF E9 6D */	bl AllocateThrow__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FP4xEntPC18zThrowableProperty
 /* 801B467C 001B147C  C0 1F 00 00 */	lfs f0, 0(r31)
 /* 801B4680 001B1480  7C 7E 1B 78 */	mr r30, r3
 /* 801B4684 001B1484  7F 43 D3 78 */	mr r3, r26
 /* 801B4688 001B1488  38 81 00 10 */	addi r4, r1, 0x10
 /* 801B468C 001B148C  D0 01 00 10 */	stfs f0, 0x10(r1)
-/* 801B4690 001B1490  4B FF F1 19 */	bl hack_throw_target__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC4xEntRf
+/* 801B4690 001B1490  4B FF F1 19 */	bl hack_throw_target__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC4xEntRf
 /* 801B4694 001B1494  7F 23 CB 78 */	mr r3, r25
 /* 801B4698 001B1498  4B ED 2F 81 */	bl xEntGetFrame__FPC4xEnt
-/* 801B469C 001B149C  C0 22 C9 8C */	lfs f1, $$21425_1-_SDA2_BASE_(r2)
+/* 801B469C 001B149C  C0 22 C9 8C */	lfs f1, _esc__2_1425_1-_SDA2_BASE_(r2)
 /* 801B46A0 001B14A0  7C 7F 1B 78 */	mr r31, r3
 /* 801B46A4 001B14A4  C0 01 00 10 */	lfs f0, 0x10(r1)
 /* 801B46A8 001B14A8  38 7E 00 24 */	addi r3, r30, 0x24
 /* 801B46AC 001B14AC  38 9F 00 20 */	addi r4, r31, 0x20
 /* 801B46B0 001B14B0  EC 21 00 32 */	fmuls f1, f1, f0
 /* 801B46B4 001B14B4  4B E5 72 15 */	bl xVec3ScaleC__FR5xVec3RC5xVec3f
-/* 801B46B8 001B14B8  C0 22 C9 90 */	lfs f1, $$21426_1-_SDA2_BASE_(r2)
+/* 801B46B8 001B14B8  C0 22 C9 90 */	lfs f1, _esc__2_1426_1-_SDA2_BASE_(r2)
 /* 801B46BC 001B14BC  38 61 00 14 */	addi r3, r1, 0x14
 /* 801B46C0 001B14C0  C0 01 00 10 */	lfs f0, 0x10(r1)
 /* 801B46C4 001B14C4  38 9F 00 10 */	addi r4, r31, 0x10
@@ -1898,7 +1900,7 @@ zThrowableSystemLaunchPoint__FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3b:
 /* 801B46D4 001B14D4  38 81 00 14 */	addi r4, r1, 0x14
 /* 801B46D8 001B14D8  4B E7 76 A1 */	bl xVec3AddTo__FR5xVec3RC5xVec3
 /* 801B46DC 001B14DC  38 1E 00 0C */	addi r0, r30, 0xc
-/* 801B46E0 001B14E0  C0 42 C9 A0 */	lfs f2, $$21430_0-_SDA2_BASE_(r2)
+/* 801B46E0 001B14E0  C0 42 C9 A0 */	lfs f2, _esc__2_1430_0-_SDA2_BASE_(r2)
 /* 801B46E4 001B14E4  90 01 00 08 */	stw r0, 8(r1)
 /* 801B46E8 001B14E8  7F 03 C3 78 */	mr r3, r24
 /* 801B46EC 001B14EC  7F 24 CB 78 */	mr r4, r25
@@ -1909,7 +1911,7 @@ zThrowableSystemLaunchPoint__FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3b:
 /* 801B4700 001B1500  7F C8 F3 78 */	mr r8, r30
 /* 801B4704 001B1504  7F AA EB 78 */	mr r10, r29
 /* 801B4708 001B1508  39 20 00 00 */	li r9, 0
-/* 801B470C 001B150C  4B FF F2 49 */	bl LeadCalcTrajectory__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3ffPQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowPfbPf
+/* 801B470C 001B150C  4B FF F2 49 */	bl LeadCalcTrajectory__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3ffPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowPfbPf
 /* 801B4710 001B1510  BB 01 00 20 */	lmw r24, 0x20(r1)
 /* 801B4714 001B1514  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 801B4718 001B1518  7C 08 03 A6 */	mtlr r0
@@ -1918,7 +1920,7 @@ zThrowableSystemLaunchPoint__FP4xEntP4xEntPC4xEntPC5xVec3PC5xVec3b:
 
 .global zThrowableSystemGetLaunchDirAngle__Fv
 zThrowableSystemGetLaunchDirAngle__Fv:
-/* 801B4724 001B1524  C0 22 C9 CC */	lfs f1, $$21645_0-_SDA2_BASE_(r2)
+/* 801B4724 001B1524  C0 22 C9 CC */	lfs f1, _esc__2_1645_0-_SDA2_BASE_(r2)
 /* 801B4728 001B1528  4E 80 00 20 */	blr 
 
 .global zThrowableSystemGetLaunchVelocity__FP4xEnt
@@ -1928,7 +1930,7 @@ zThrowableSystemGetLaunchVelocity__FP4xEnt:
 /* 801B4734 001B1534  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801B4738 001B1538  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 801B473C 001B153C  80 63 00 48 */	lwz r3, 0x48(r3)
-/* 801B4740 001B1540  4B FF E7 C1 */	bl GetThrowableProperty__30$$2unnamed$$2zThrowableSystem_cpp$$2FUi
+/* 801B4740 001B1540  4B FF E7 C1 */	bl GetThrowableProperty__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUi
 /* 801B4744 001B1544  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801B4748 001B1548  C0 23 00 00 */	lfs f1, 0(r3)
 /* 801B474C 001B154C  7C 08 03 A6 */	mtlr r0
@@ -1943,9 +1945,9 @@ zThrowableSystemLaunchDirection__FP4xEntPC5xVec3:
 /* 801B4764 001B1564  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801B4768 001B1568  7C 9E 23 78 */	mr r30, r4
 /* 801B476C 001B156C  38 80 00 00 */	li r4, 0
-/* 801B4770 001B1570  4B FF E8 75 */	bl AllocateThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntPC18zThrowableProperty
+/* 801B4770 001B1570  4B FF E8 75 */	bl AllocateThrow__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FP4xEntPC18zThrowableProperty
 /* 801B4774 001B1574  7C 7F 1B 78 */	mr r31, r3
-/* 801B4778 001B1578  C0 22 C9 8C */	lfs f1, $$21425_1-_SDA2_BASE_(r2)
+/* 801B4778 001B1578  C0 22 C9 8C */	lfs f1, _esc__2_1425_1-_SDA2_BASE_(r2)
 /* 801B477C 001B157C  80 A3 00 04 */	lwz r5, 4(r3)
 /* 801B4780 001B1580  7F C4 F3 78 */	mr r4, r30
 /* 801B4784 001B1584  38 7F 00 24 */	addi r3, r31, 0x24
@@ -1954,7 +1956,7 @@ zThrowableSystemLaunchDirection__FP4xEntPC5xVec3:
 /* 801B4790 001B1590  4B E5 4F C1 */	bl xVec3SMul__FP5xVec3PC5xVec3f
 /* 801B4794 001B1594  80 9F 00 04 */	lwz r4, 4(r31)
 /* 801B4798 001B1598  7F C5 F3 78 */	mr r5, r30
-/* 801B479C 001B159C  C0 22 C9 90 */	lfs f1, $$21426_1-_SDA2_BASE_(r2)
+/* 801B479C 001B159C  C0 22 C9 90 */	lfs f1, _esc__2_1426_1-_SDA2_BASE_(r2)
 /* 801B47A0 001B15A0  38 7F 00 48 */	addi r3, r31, 0x48
 /* 801B47A4 001B15A4  C0 04 00 00 */	lfs f0, 0(r4)
 /* 801B47A8 001B15A8  38 82 8A 08 */	addi r4, r2, g_Y3-_SDA2_BASE_
@@ -1962,7 +1964,7 @@ zThrowableSystemLaunchDirection__FP4xEntPC5xVec3:
 /* 801B47B0 001B15B0  D0 1F 00 28 */	stfs f0, 0x28(r31)
 /* 801B47B4 001B15B4  4B E6 33 69 */	bl xVec3Cross__FP5xVec3PC5xVec3PC5xVec3
 /* 801B47B8 001B15B8  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
-/* 801B47BC 001B15BC  C0 02 C9 D8 */	lfs f0, $$21905-_SDA2_BASE_(r2)
+/* 801B47BC 001B15BC  C0 02 C9 D8 */	lfs f0, _esc__2_1905-_SDA2_BASE_(r2)
 /* 801B47C0 001B15C0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801B47C4 001B15C4  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 801B47C8 001B15C8  80 63 00 0C */	lwz r3, 0xc(r3)
@@ -1983,29 +1985,29 @@ zThrowableSystemLaunchWithVelocity__FP4xEntPC5xVec3:
 /* 801B47F8 001B15F8  7C 9E 23 78 */	mr r30, r4
 /* 801B47FC 001B15FC  7C 7D 1B 78 */	mr r29, r3
 /* 801B4800 001B1600  38 80 00 00 */	li r4, 0
-/* 801B4804 001B1604  4B FF E7 E1 */	bl AllocateThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntPC18zThrowableProperty
+/* 801B4804 001B1604  4B FF E7 E1 */	bl AllocateThrow__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FP4xEntPC18zThrowableProperty
 /* 801B4808 001B1608  7C 7F 1B 78 */	mr r31, r3
 /* 801B480C 001B160C  7F C4 F3 78 */	mr r4, r30
 /* 801B4810 001B1610  38 7F 00 24 */	addi r3, r31, 0x24
 /* 801B4814 001B1614  4B EB CF 1D */	bl xVec3Copy__FP5xVec3PC5xVec3
 /* 801B4818 001B1618  C0 3E 00 00 */	lfs f1, 0(r30)
 /* 801B481C 001B161C  38 61 00 08 */	addi r3, r1, 8
-/* 801B4820 001B1620  C0 42 C9 70 */	lfs f2, $$21356_2-_SDA2_BASE_(r2)
+/* 801B4820 001B1620  C0 42 C9 70 */	lfs f2, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B4824 001B1624  C0 7E 00 08 */	lfs f3, 8(r30)
 /* 801B4828 001B1628  4B E5 5B 19 */	bl xVec3Init__FP5xVec3fff
 /* 801B482C 001B162C  38 61 00 08 */	addi r3, r1, 8
 /* 801B4830 001B1630  4B E5 BD DD */	bl xVec3Length__FPC5xVec3
-/* 801B4834 001B1634  C0 02 C9 A4 */	lfs f0, $$21447_2-_SDA2_BASE_(r2)
+/* 801B4834 001B1634  C0 02 C9 A4 */	lfs f0, _esc__2_1447_2-_SDA2_BASE_(r2)
 /* 801B4838 001B1638  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B483C 001B163C  40 80 00 1C */	bge lbl_801B4858
-/* 801B4840 001B1640  C0 42 C9 70 */	lfs f2, $$21356_2-_SDA2_BASE_(r2)
+/* 801B4840 001B1640  C0 42 C9 70 */	lfs f2, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B4844 001B1644  38 61 00 08 */	addi r3, r1, 8
-/* 801B4848 001B1648  C0 22 C9 7C */	lfs f1, $$21421_6-_SDA2_BASE_(r2)
+/* 801B4848 001B1648  C0 22 C9 7C */	lfs f1, _esc__2_1421_6-_SDA2_BASE_(r2)
 /* 801B484C 001B164C  FC 60 10 90 */	fmr f3, f2
 /* 801B4850 001B1650  4B E5 5A F1 */	bl xVec3Init__FP5xVec3fff
 /* 801B4854 001B1654  48 00 00 14 */	b lbl_801B4868
 lbl_801B4858:
-/* 801B4858 001B1658  C0 02 C9 7C */	lfs f0, $$21421_6-_SDA2_BASE_(r2)
+/* 801B4858 001B1658  C0 02 C9 7C */	lfs f0, _esc__2_1421_6-_SDA2_BASE_(r2)
 /* 801B485C 001B165C  38 61 00 08 */	addi r3, r1, 8
 /* 801B4860 001B1660  EC 20 08 24 */	fdivs f1, f0, f1
 /* 801B4864 001B1664  4B E5 30 21 */	bl xVec3SMulBy__FP5xVec3f
@@ -2014,14 +2016,14 @@ lbl_801B4868:
 /* 801B486C 001B166C  38 A1 00 08 */	addi r5, r1, 8
 /* 801B4870 001B1670  38 82 8A 08 */	addi r4, r2, g_Y3-_SDA2_BASE_
 /* 801B4874 001B1674  4B E6 32 A9 */	bl xVec3Cross__FP5xVec3PC5xVec3PC5xVec3
-/* 801B4878 001B1678  3C 60 80 2E */	lis r3, $$2stringBase0_127@ha
-/* 801B487C 001B167C  C0 22 C9 7C */	lfs f1, $$21421_6-_SDA2_BASE_(r2)
-/* 801B4880 001B1680  38 63 7D B0 */	addi r3, r3, $$2stringBase0_127@l
+/* 801B4878 001B1678  3C 60 80 2E */	lis r3, _esc__2_stringBase0_127@ha
+/* 801B487C 001B167C  C0 22 C9 7C */	lfs f1, _esc__2_1421_6-_SDA2_BASE_(r2)
+/* 801B4880 001B1680  38 63 7D B0 */	addi r3, r3, _esc__2_stringBase0_127@l
 /* 801B4884 001B1684  38 63 00 8F */	addi r3, r3, 0x8f
 /* 801B4888 001B1688  48 01 32 19 */	bl add__5statsFPCcf
 /* 801B488C 001B168C  93 AD D8 54 */	stw r29, lastTarget-_SDA_BASE_(r13)
 /* 801B4890 001B1690  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
-/* 801B4894 001B1694  C0 02 C9 D8 */	lfs f0, $$21905-_SDA2_BASE_(r2)
+/* 801B4894 001B1694  C0 02 C9 D8 */	lfs f0, _esc__2_1905-_SDA2_BASE_(r2)
 /* 801B4898 001B1698  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801B489C 001B169C  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 801B48A0 001B16A0  80 63 00 0C */	lwz r3, 0xc(r3)
@@ -2041,9 +2043,9 @@ zThrowableSystemDrop__FP4xEntPC5xVec3:
 /* 801B48CC 001B16CC  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801B48D0 001B16D0  7C 9E 23 78 */	mr r30, r4
 /* 801B48D4 001B16D4  38 80 00 00 */	li r4, 0
-/* 801B48D8 001B16D8  4B FF E7 0D */	bl AllocateThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FP4xEntPC18zThrowableProperty
+/* 801B48D8 001B16D8  4B FF E7 0D */	bl AllocateThrow__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FP4xEntPC18zThrowableProperty
 /* 801B48DC 001B16DC  7C 7F 1B 78 */	mr r31, r3
-/* 801B48E0 001B16E0  C0 22 C9 DC */	lfs f1, $$21926_0-_SDA2_BASE_(r2)
+/* 801B48E0 001B16E0  C0 22 C9 DC */	lfs f1, _esc__2_1926_0-_SDA2_BASE_(r2)
 /* 801B48E4 001B16E4  80 A3 00 04 */	lwz r5, 4(r3)
 /* 801B48E8 001B16E8  7F C4 F3 78 */	mr r4, r30
 /* 801B48EC 001B16EC  38 7F 00 24 */	addi r3, r31, 0x24
@@ -2052,9 +2054,9 @@ zThrowableSystemDrop__FP4xEntPC5xVec3:
 /* 801B48F8 001B16F8  4B E5 4E 59 */	bl xVec3SMul__FP5xVec3PC5xVec3f
 /* 801B48FC 001B16FC  80 7F 00 04 */	lwz r3, 4(r31)
 /* 801B4900 001B1700  38 00 00 01 */	li r0, 1
-/* 801B4904 001B1704  C0 42 C9 90 */	lfs f2, $$21426_1-_SDA2_BASE_(r2)
+/* 801B4904 001B1704  C0 42 C9 90 */	lfs f2, _esc__2_1426_1-_SDA2_BASE_(r2)
 /* 801B4908 001B1708  C0 23 00 00 */	lfs f1, 0(r3)
-/* 801B490C 001B170C  C0 02 C9 70 */	lfs f0, $$21356_2-_SDA2_BASE_(r2)
+/* 801B490C 001B170C  C0 02 C9 70 */	lfs f0, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B4910 001B1710  EC 22 00 72 */	fmuls f1, f2, f1
 /* 801B4914 001B1714  D0 3F 00 28 */	stfs f1, 0x28(r31)
 /* 801B4918 001B1718  D0 1F 00 14 */	stfs f0, 0x14(r31)
@@ -2073,20 +2075,20 @@ zThrowableSystemDestroy__FP4xEntb:
 /* 801B4940 001B1740  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 801B4944 001B1744  7C 7D 1B 78 */	mr r29, r3
 /* 801B4948 001B1748  7C 9E 23 78 */	mr r30, r4
-/* 801B494C 001B174C  80 0D D8 3C */	lwz r0, runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B494C 001B174C  80 0D D8 3C */	lwz r0, runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4950 001B1750  28 00 00 00 */	cmplwi r0, 0
 /* 801B4954 001B1754  41 82 00 78 */	beq lbl_801B49CC
 /* 801B4958 001B1758  4B FF F3 ED */	bl zThrowableSystemFindRunningThrow__FPC4xEnt
 /* 801B495C 001B175C  2C 03 FF FF */	cmpwi r3, -1
 /* 801B4960 001B1760  41 82 00 14 */	beq lbl_801B4974
 /* 801B4964 001B1764  1C 03 00 64 */	mulli r0, r3, 0x64
-/* 801B4968 001B1768  80 6D D8 3C */	lwz r3, runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4968 001B1768  80 6D D8 3C */	lwz r3, runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B496C 001B176C  38 80 00 00 */	li r4, 0
 /* 801B4970 001B1770  7C 83 01 2E */	stwx r4, r3, r0
 lbl_801B4974:
 /* 801B4974 001B1774  80 7D 00 10 */	lwz r3, 0x10(r29)
 /* 801B4978 001B1778  80 63 00 48 */	lwz r3, 0x48(r3)
-/* 801B497C 001B177C  4B FF E5 85 */	bl GetThrowableProperty__30$$2unnamed$$2zThrowableSystem_cpp$$2FUi
+/* 801B497C 001B177C  4B FF E5 85 */	bl GetThrowableProperty__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUi
 /* 801B4980 001B1780  7C 7F 1B 79 */	or. r31, r3, r3
 /* 801B4984 001B1784  41 82 00 48 */	beq lbl_801B49CC
 /* 801B4988 001B1788  81 9F 00 18 */	lwz r12, 0x18(r31)
@@ -2126,7 +2128,7 @@ zThrowableSystemUpdate__Ff:
 /* 801B4A00 001B1800  DB CC FF E0 */	stfd f30, -0x20(r12)
 /* 801B4A04 001B1804  F3 CC 0F E8 */	psq_st f30, -24(r12), 0, qr0
 /* 801B4A08 001B1808  BF 4C FF C8 */	stmw r26, -0x38(r12)
-/* 801B4A0C 001B180C  80 0D D8 3C */	lwz r0, runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4A0C 001B180C  80 0D D8 3C */	lwz r0, runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4A10 001B1810  FF E0 08 90 */	fmr f31, f1
 /* 801B4A14 001B1814  28 00 00 00 */	cmplwi r0, 0
 /* 801B4A18 001B1818  41 82 04 14 */	beq lbl_801B4E2C
@@ -2136,13 +2138,13 @@ zThrowableSystemUpdate__Ff:
 /* 801B4A28 001B1828  3B A0 00 00 */	li r29, 0
 /* 801B4A2C 001B182C  3B 60 00 00 */	li r27, 0
 lbl_801B4A30:
-/* 801B4A30 001B1830  80 0D D8 3C */	lwz r0, runningThrows__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4A30 001B1830  80 0D D8 3C */	lwz r0, runningThrows__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4A34 001B1834  7F 80 DA 14 */	add r28, r0, r27
 /* 801B4A38 001B1838  80 1C 00 00 */	lwz r0, 0(r28)
 /* 801B4A3C 001B183C  28 00 00 00 */	cmplwi r0, 0
 /* 801B4A40 001B1840  41 82 03 DC */	beq lbl_801B4E1C
 /* 801B4A44 001B1844  C0 3C 00 08 */	lfs f1, 8(r28)
-/* 801B4A48 001B1848  C0 02 C9 E0 */	lfs f0, $$22064-_SDA2_BASE_(r2)
+/* 801B4A48 001B1848  C0 02 C9 E0 */	lfs f0, _esc__2_2064-_SDA2_BASE_(r2)
 /* 801B4A4C 001B184C  EC 21 F8 2A */	fadds f1, f1, f31
 /* 801B4A50 001B1850  D0 3C 00 08 */	stfs f1, 8(r28)
 /* 801B4A54 001B1854  C0 3C 00 08 */	lfs f1, 8(r28)
@@ -2150,7 +2152,7 @@ lbl_801B4A30:
 /* 801B4A5C 001B185C  40 81 00 14 */	ble lbl_801B4A70
 /* 801B4A60 001B1860  7F 83 E3 78 */	mr r3, r28
 /* 801B4A64 001B1864  38 80 00 00 */	li r4, 0
-/* 801B4A68 001B1868  4B FF EE 45 */	bl DestroyThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FRQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowb
+/* 801B4A68 001B1868  4B FF EE 45 */	bl DestroyThrow__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowb
 /* 801B4A6C 001B186C  48 00 03 B0 */	b lbl_801B4E1C
 lbl_801B4A70:
 /* 801B4A70 001B1870  38 61 00 40 */	addi r3, r1, 0x40
@@ -2167,11 +2169,11 @@ lbl_801B4A70:
 /* 801B4A9C 001B189C  EC 00 00 72 */	fmuls f0, f0, f1
 /* 801B4AA0 001B18A0  80 62 89 F4 */	lwz r3, lbl_803D2714-_SDA2_BASE_(r2)
 /* 801B4AA4 001B18A4  80 02 89 F8 */	lwz r0, lbl_803D2718-_SDA2_BASE_(r2)
-/* 801B4AA8 001B18A8  C0 42 C9 90 */	lfs f2, $$21426_1-_SDA2_BASE_(r2)
+/* 801B4AA8 001B18A8  C0 42 C9 90 */	lfs f2, _esc__2_1426_1-_SDA2_BASE_(r2)
 /* 801B4AAC 001B18AC  EC 61 00 32 */	fmuls f3, f1, f0
 /* 801B4AB0 001B18B0  C0 21 00 44 */	lfs f1, 0x44(r1)
 /* 801B4AB4 001B18B4  90 81 00 34 */	stw r4, 0x34(r1)
-/* 801B4AB8 001B18B8  C0 02 C9 E4 */	lfs f0, $$22065-_SDA2_BASE_(r2)
+/* 801B4AB8 001B18B8  C0 02 C9 E4 */	lfs f0, _esc__2_2065-_SDA2_BASE_(r2)
 /* 801B4ABC 001B18BC  EC 23 08 BC */	fnmsubs f1, f3, f2, f1
 /* 801B4AC0 001B18C0  90 61 00 38 */	stw r3, 0x38(r1)
 /* 801B4AC4 001B18C4  90 01 00 3C */	stw r0, 0x3c(r1)
@@ -2180,7 +2182,7 @@ lbl_801B4A70:
 /* 801B4AD0 001B18D0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B4AD4 001B18D4  4C 41 13 82 */	cror 2, 1, 2
 /* 801B4AD8 001B18D8  40 82 00 14 */	bne lbl_801B4AEC
-/* 801B4ADC 001B18DC  C0 02 C9 A4 */	lfs f0, $$21447_2-_SDA2_BASE_(r2)
+/* 801B4ADC 001B18DC  C0 02 C9 A4 */	lfs f0, _esc__2_1447_2-_SDA2_BASE_(r2)
 /* 801B4AE0 001B18E0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B4AE4 001B18E4  4C 40 13 82 */	cror 2, 0, 2
 /* 801B4AE8 001B18E8  41 82 00 74 */	beq lbl_801B4B5C
@@ -2269,7 +2271,7 @@ lbl_801B4C14:
 /* 801B4C24 001B1A24  4B FD 2F A5 */	bl xSweptSphereToScene__FP12xSweptSphereP6xSceneP4xEntUci
 /* 801B4C28 001B1A28  7C 7A 1B 78 */	mr r26, r3
 lbl_801B4C2C:
-/* 801B4C2C 001B1A2C  80 6D D8 48 */	lwz r3, additionalCollisionHandler__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4C2C 001B1A2C  80 6D D8 48 */	lwz r3, additionalCollisionHandler__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4C30 001B1A30  28 03 00 00 */	cmplwi r3, 0
 /* 801B4C34 001B1A34  41 82 00 1C */	beq lbl_801B4C50
 /* 801B4C38 001B1A38  81 83 00 00 */	lwz r12, 0(r3)
@@ -2311,7 +2313,7 @@ lbl_801B4C78:
 /* 801B4CC0 001B1AC0  C0 41 00 F8 */	lfs f2, 0xf8(r1)
 /* 801B4CC4 001B1AC4  EC 61 00 28 */	fsubs f3, f1, f0
 /* 801B4CC8 001B1AC8  C0 3C 00 54 */	lfs f1, 0x54(r28)
-/* 801B4CCC 001B1ACC  C0 02 C9 E8 */	lfs f0, $$22066_0-_SDA2_BASE_(r2)
+/* 801B4CCC 001B1ACC  C0 02 C9 E8 */	lfs f0, _esc__2_2066_0-_SDA2_BASE_(r2)
 /* 801B4CD0 001B1AD0  EC 42 08 28 */	fsubs f2, f2, f1
 /* 801B4CD4 001B1AD4  EC 23 00 F2 */	fmuls f1, f3, f3
 /* 801B4CD8 001B1AD8  EC 22 08 BA */	fmadds f1, f2, f2, f1
@@ -2340,15 +2342,15 @@ lbl_801B4D00:
 /* 801B4D30 001B1B30  80 0D D8 54 */	lwz r0, lastTarget-_SDA_BASE_(r13)
 /* 801B4D34 001B1B34  7C 03 00 40 */	cmplw r3, r0
 /* 801B4D38 001B1B38  40 82 00 18 */	bne lbl_801B4D50
-/* 801B4D3C 001B1B3C  3C 60 80 2E */	lis r3, $$2stringBase0_127@ha
-/* 801B4D40 001B1B40  C0 22 C9 7C */	lfs f1, $$21421_6-_SDA2_BASE_(r2)
-/* 801B4D44 001B1B44  38 63 7D B0 */	addi r3, r3, $$2stringBase0_127@l
+/* 801B4D3C 001B1B3C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_127@ha
+/* 801B4D40 001B1B40  C0 22 C9 7C */	lfs f1, _esc__2_1421_6-_SDA2_BASE_(r2)
+/* 801B4D44 001B1B44  38 63 7D B0 */	addi r3, r3, _esc__2_stringBase0_127@l
 /* 801B4D48 001B1B48  38 63 00 96 */	addi r3, r3, 0x96
 /* 801B4D4C 001B1B4C  48 01 2D 55 */	bl add__5statsFPCcf
 lbl_801B4D50:
 /* 801B4D50 001B1B50  7F 83 E3 78 */	mr r3, r28
 /* 801B4D54 001B1B54  38 80 00 01 */	li r4, 1
-/* 801B4D58 001B1B58  4B FF EB 55 */	bl DestroyThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FRQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowb
+/* 801B4D58 001B1B58  4B FF EB 55 */	bl DestroyThrow__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowb
 /* 801B4D5C 001B1B5C  48 00 00 C0 */	b lbl_801B4E1C
 lbl_801B4D60:
 /* 801B4D60 001B1B60  38 7C 00 30 */	addi r3, r28, 0x30
@@ -2399,7 +2401,7 @@ lbl_801B4DE4:
 /* 801B4E0C 001B1C0C  40 80 00 10 */	bge lbl_801B4E1C
 /* 801B4E10 001B1C10  7F 83 E3 78 */	mr r3, r28
 /* 801B4E14 001B1C14  38 80 00 00 */	li r4, 0
-/* 801B4E18 001B1C18  4B FF EA 95 */	bl DestroyThrow__30$$2unnamed$$2zThrowableSystem_cpp$$2FRQ230$$2unnamed$$2zThrowableSystem_cpp$$212RunningThrowb
+/* 801B4E18 001B1C18  4B FF EA 95 */	bl DestroyThrow__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_12RunningThrowb
 lbl_801B4E1C:
 /* 801B4E1C 001B1C1C  3B BD 00 01 */	addi r29, r29, 1
 /* 801B4E20 001B1C20  3B 7B 00 64 */	addi r27, r27, 0x64
@@ -2430,13 +2432,13 @@ zThrowableSystemFindTargets__FPC4xEntPC5xVec3P22zThrowableSystemTargetPC4xEnti:
 /* 801B4E74 001B1C74  7C DD 33 78 */	mr r29, r6
 /* 801B4E78 001B1C78  7C FE 3B 78 */	mr r30, r7
 /* 801B4E7C 001B1C7C  80 63 00 48 */	lwz r3, 0x48(r3)
-/* 801B4E80 001B1C80  4B FF E0 81 */	bl GetThrowableProperty__30$$2unnamed$$2zThrowableSystem_cpp$$2FUi
+/* 801B4E80 001B1C80  4B FF E0 81 */	bl GetThrowableProperty__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUi
 /* 801B4E84 001B1C84  38 00 00 00 */	li r0, 0
 /* 801B4E88 001B1C88  7C 7F 1B 78 */	mr r31, r3
 /* 801B4E8C 001B1C8C  90 01 00 10 */	stw r0, 0x10(r1)
 /* 801B4E90 001B1C90  C0 23 00 00 */	lfs f1, 0(r3)
 /* 801B4E94 001B1C94  C0 43 00 0C */	lfs f2, 0xc(r3)
-/* 801B4E98 001B1C98  4B FF E0 F1 */	bl GetMaxThrowDistance__30$$2unnamed$$2zThrowableSystem_cpp$$2Fff
+/* 801B4E98 001B1C98  4B FF E0 F1 */	bl GetMaxThrowDistance__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_Fff
 /* 801B4E9C 001B1C9C  D0 21 00 20 */	stfs f1, 0x20(r1)
 /* 801B4EA0 001B1CA0  FC 20 08 18 */	frsp f1, f1
 /* 801B4EA4 001B1CA4  7F 64 DB 78 */	mr r4, r27
@@ -2456,24 +2458,24 @@ zThrowableSystemFindTargets__FPC4xEntPC5xVec3P22zThrowableSystemTargetPC4xEnti:
 /* 801B4EDC 001B1CDC  7F EA FB 78 */	mr r10, r31
 /* 801B4EE0 001B1CE0  38 61 00 24 */	addi r3, r1, 0x24
 /* 801B4EE4 001B1CE4  39 21 00 10 */	addi r9, r1, 0x10
-/* 801B4EE8 001B1CE8  48 00 01 F1 */	bl __ct__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindFPC4xEntPC4xEntP22zThrowableSystemTargetPC5xVec3iPiPC18zThrowableProperty
+/* 801B4EE8 001B1CE8  48 00 01 F1 */	bl __ct__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFindFPC4xEntPC4xEntP22zThrowableSystemTargetPC5xVec3iPiPC18zThrowableProperty
 /* 801B4EEC 001B1CEC  3B C0 00 00 */	li r30, 0
 /* 801B4EF0 001B1CF0  3B E0 00 00 */	li r31, 0
 /* 801B4EF4 001B1CF4  48 00 00 30 */	b lbl_801B4F24
 lbl_801B4EF8:
-/* 801B4EF8 001B1CF8  80 0D D8 40 */	lwz r0, addedTargets__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4EF8 001B1CF8  80 0D D8 40 */	lwz r0, addedTargets__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4EFC 001B1CFC  38 61 00 24 */	addi r3, r1, 0x24
-/* 801B4F00 001B1D00  C0 22 C9 EC */	lfs f1, $$22136-_SDA2_BASE_(r2)
+/* 801B4F00 001B1D00  C0 22 C9 EC */	lfs f1, _esc__2_2136-_SDA2_BASE_(r2)
 /* 801B4F04 001B1D04  38 80 00 00 */	li r4, 0
 /* 801B4F08 001B1D08  7C E0 FA 14 */	add r7, r0, r31
 /* 801B4F0C 001B1D0C  80 A7 00 00 */	lwz r5, 0(r7)
 /* 801B4F10 001B1D10  88 C7 00 04 */	lbz r6, 4(r7)
 /* 801B4F14 001B1D14  88 E7 00 05 */	lbz r7, 5(r7)
-/* 801B4F18 001B1D18  48 00 00 95 */	bl AddPossibleTarget__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindCFPC4xEntPC5xVec3Ucbf
+/* 801B4F18 001B1D18  48 00 00 95 */	bl AddPossibleTarget__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFindCFPC4xEntPC5xVec3Ucbf
 /* 801B4F1C 001B1D1C  3B DE 00 01 */	addi r30, r30, 1
 /* 801B4F20 001B1D20  3B FF 00 08 */	addi r31, r31, 8
 lbl_801B4F24:
-/* 801B4F24 001B1D24  80 0D D8 44 */	lwz r0, addedTargetsCount__30$$2unnamed$$2zThrowableSystem_cpp$$2-_SDA_BASE_(r13)
+/* 801B4F24 001B1D24  80 0D D8 44 */	lwz r0, addedTargetsCount__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801B4F28 001B1D28  7C 1E 00 00 */	cmpw r30, r0
 /* 801B4F2C 001B1D2C  41 80 FF CC */	blt lbl_801B4EF8
 /* 801B4F30 001B1D30  38 61 00 4C */	addi r3, r1, 0x4c
@@ -2483,24 +2485,24 @@ lbl_801B4F24:
 /* 801B4F40 001B1D40  38 C1 00 24 */	addi r6, r1, 0x24
 /* 801B4F44 001B1D44  7C 85 23 78 */	mr r5, r4
 /* 801B4F48 001B1D48  38 6D C8 40 */	addi r3, r13, colls_grid-_SDA_BASE_
-/* 801B4F4C 001B1D4C  48 00 07 01 */	bl xGridCheckBound$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFind$$1__FR5xGridRC6xBoundRC7xQCDataRQ230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFind
+/* 801B4F4C 001B1D4C  48 00 07 01 */	bl xGridCheckBound_esc__0_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFind_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFind
 /* 801B4F50 001B1D50  38 81 00 4C */	addi r4, r1, 0x4c
 /* 801B4F54 001B1D54  38 C1 00 24 */	addi r6, r1, 0x24
 /* 801B4F58 001B1D58  7C 85 23 78 */	mr r5, r4
 /* 801B4F5C 001B1D5C  38 6D C8 78 */	addi r3, r13, colls_oso_grid-_SDA_BASE_
-/* 801B4F60 001B1D60  48 00 06 ED */	bl xGridCheckBound$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFind$$1__FR5xGridRC6xBoundRC7xQCDataRQ230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFind
+/* 801B4F60 001B1D60  48 00 06 ED */	bl xGridCheckBound_esc__0_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFind_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFind
 /* 801B4F64 001B1D64  38 81 00 4C */	addi r4, r1, 0x4c
 /* 801B4F68 001B1D68  38 C1 00 24 */	addi r6, r1, 0x24
 /* 801B4F6C 001B1D6C  7C 85 23 78 */	mr r5, r4
 /* 801B4F70 001B1D70  38 6D C8 B0 */	addi r3, r13, npcs_grid-_SDA_BASE_
-/* 801B4F74 001B1D74  48 00 06 D9 */	bl xGridCheckBound$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFind$$1__FR5xGridRC6xBoundRC7xQCDataRQ230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFind
+/* 801B4F74 001B1D74  48 00 06 D9 */	bl xGridCheckBound_esc__0_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFind_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFind
 /* 801B4F78 001B1D78  88 01 00 0C */	lbz r0, 0xc(r1)
 /* 801B4F7C 001B1D7C  7F 83 E3 78 */	mr r3, r28
 /* 801B4F80 001B1D80  80 81 00 10 */	lwz r4, 0x10(r1)
 /* 801B4F84 001B1D84  38 C1 00 08 */	addi r6, r1, 8
 /* 801B4F88 001B1D88  98 01 00 08 */	stb r0, 8(r1)
 /* 801B4F8C 001B1D8C  38 A0 00 10 */	li r5, 0x10
-/* 801B4F90 001B1D90  48 00 07 B1 */	bl quicksort$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctor$$1__FPvUlUlQ230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctor
+/* 801B4F90 001B1D90  48 00 07 B1 */	bl quicksort_esc__0_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctor_esc__1___FPvUlUlQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctor
 /* 801B4F94 001B1D94  BB 41 00 98 */	lmw r26, 0x98(r1)
 /* 801B4F98 001B1D98  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 801B4F9C 001B1D9C  80 61 00 10 */	lwz r3, 0x10(r1)
@@ -2508,8 +2510,8 @@ lbl_801B4F24:
 /* 801B4FA4 001B1DA4  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 801B4FA8 001B1DA8  4E 80 00 20 */	blr 
 
-.global AddPossibleTarget__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindCFPC4xEntPC5xVec3Ucbf
-AddPossibleTarget__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindCFPC4xEntPC5xVec3Ucbf:
+.global AddPossibleTarget__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFindCFPC4xEntPC5xVec3Ucbf
+AddPossibleTarget__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFindCFPC4xEntPC5xVec3Ucbf:
 /* 801B4FAC 001B1DAC  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 801B4FB0 001B1DB0  7C 08 02 A6 */	mflr r0
 /* 801B4FB4 001B1DB4  90 01 00 44 */	stw r0, 0x44(r1)
@@ -2527,7 +2529,7 @@ AddPossibleTarget__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindCFPC4xEnt
 /* 801B4FE4 001B1DE4  7F 83 E3 78 */	mr r3, r28
 /* 801B4FE8 001B1DE8  D0 01 00 08 */	stfs f0, 8(r1)
 /* 801B4FEC 001B1DEC  38 81 00 08 */	addi r4, r1, 8
-/* 801B4FF0 001B1DF0  4B FF E7 B9 */	bl hack_throw_target__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FPC4xEntRf
+/* 801B4FF0 001B1DF0  4B FF E7 B9 */	bl hack_throw_target__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FPC4xEntRf
 /* 801B4FF4 001B1DF4  80 DB 00 24 */	lwz r6, 0x24(r27)
 /* 801B4FF8 001B1DF8  FC 60 F8 90 */	fmr f3, f31
 /* 801B4FFC 001B1DFC  80 BB 00 18 */	lwz r5, 0x18(r27)
@@ -2538,7 +2540,7 @@ AddPossibleTarget__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindCFPC4xEnt
 /* 801B5010 001B1E10  7F E6 FB 78 */	mr r6, r31
 /* 801B5014 001B1E14  38 E1 00 10 */	addi r7, r1, 0x10
 /* 801B5018 001B1E18  39 01 00 0C */	addi r8, r1, 0xc
-/* 801B501C 001B1E1C  4B FF E6 15 */	bl CanHit__Q230$$2unnamed$$2zThrowableSystem_cpp$$230$$2unnamed$$2zThrowableSystem_cpp$$2FRC5xVec3RC5xVec3RC5xVec3fffbPfPf
+/* 801B501C 001B1E1C  4B FF E6 15 */	bl CanHit__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FRC5xVec3RC5xVec3RC5xVec3fffbPfPf
 /* 801B5020 001B1E20  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801B5024 001B1E24  40 82 00 0C */	bne lbl_801B5030
 /* 801B5028 001B1E28  38 60 00 01 */	li r3, 1
@@ -2547,7 +2549,7 @@ lbl_801B5030:
 /* 801B5030 001B1E30  80 BB 00 20 */	lwz r5, 0x20(r27)
 /* 801B5034 001B1E34  80 DB 00 14 */	lwz r6, 0x14(r27)
 /* 801B5038 001B1E38  80 05 00 00 */	lwz r0, 0(r5)
-/* 801B503C 001B1E3C  C0 22 C9 68 */	lfs f1, $$21351_2-_SDA2_BASE_(r2)
+/* 801B503C 001B1E3C  C0 22 C9 68 */	lfs f1, _esc__2_1351_2-_SDA2_BASE_(r2)
 /* 801B5040 001B1E40  54 00 20 36 */	slwi r0, r0, 4
 /* 801B5044 001B1E44  80 9B 00 1C */	lwz r4, 0x1c(r27)
 /* 801B5048 001B1E48  7F A6 01 2E */	stwx r29, r6, r0
@@ -2588,8 +2590,8 @@ lbl_801B50BC:
 /* 801B50D0 001B1ED0  38 21 00 40 */	addi r1, r1, 0x40
 /* 801B50D4 001B1ED4  4E 80 00 20 */	blr 
 
-.global __ct__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindFPC4xEntPC4xEntP22zThrowableSystemTargetPC5xVec3iPiPC18zThrowableProperty
-__ct__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindFPC4xEntPC4xEntP22zThrowableSystemTargetPC5xVec3iPiPC18zThrowableProperty:
+.global __ct__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFindFPC4xEntPC4xEntP22zThrowableSystemTargetPC5xVec3iPiPC18zThrowableProperty
+__ct__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFindFPC4xEntPC4xEntP22zThrowableSystemTargetPC5xVec3iPiPC18zThrowableProperty:
 /* 801B50D8 001B1ED8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B50DC 001B1EDC  7C 08 02 A6 */	mflr r0
 /* 801B50E0 001B1EE0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -2618,7 +2620,7 @@ __ct__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindFPC4xEntPC4xEntP22zThr
 zThrowableSystemSmallCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv:
 /* 801B5134 001B1F34  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B5138 001B1F38  7C 08 02 A6 */	mflr r0
-/* 801B513C 001B1F3C  C0 22 C9 84 */	lfs f1, $$21423_1-_SDA2_BASE_(r2)
+/* 801B513C 001B1F3C  C0 22 C9 84 */	lfs f1, _esc__2_1423_1-_SDA2_BASE_(r2)
 /* 801B5140 001B1F40  39 00 00 0A */	li r8, 0xa
 /* 801B5144 001B1F44  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801B5148 001B1F48  48 00 00 15 */	bl zThrowableSystemGeneralCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pvfi
@@ -2644,20 +2646,20 @@ zThrowableSystemGeneralCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pvfi:
 /* 801B518C 001B1F8C  41 82 00 08 */	beq lbl_801B5194
 /* 801B5190 001B1F90  7C 1F 03 78 */	mr r31, r0
 lbl_801B5194:
-/* 801B5194 001B1F94  C0 22 C9 84 */	lfs f1, $$21423_1-_SDA2_BASE_(r2)
+/* 801B5194 001B1F94  C0 22 C9 84 */	lfs f1, _esc__2_1423_1-_SDA2_BASE_(r2)
 /* 801B5198 001B1F98  7C C4 33 78 */	mr r4, r6
 /* 801B519C 001B1F9C  38 61 00 10 */	addi r3, r1, 0x10
 /* 801B51A0 001B1FA0  4B E5 45 B1 */	bl xVec3SMul__FP5xVec3PC5xVec3f
-/* 801B51A4 001B1FA4  C0 02 C9 70 */	lfs f0, $$21356_2-_SDA2_BASE_(r2)
+/* 801B51A4 001B1FA4  C0 02 C9 70 */	lfs f0, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B51A8 001B1FA8  28 1E 00 00 */	cmplwi r30, 0
 /* 801B51AC 001B1FAC  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 801B51B0 001B1FB0  41 82 00 54 */	beq lbl_801B5204
 /* 801B51B4 001B1FB4  C0 3E 00 10 */	lfs f1, 0x10(r30)
-/* 801B51B8 001B1FB8  C0 02 C9 E4 */	lfs f0, $$22065-_SDA2_BASE_(r2)
+/* 801B51B8 001B1FB8  C0 02 C9 E4 */	lfs f0, _esc__2_2065-_SDA2_BASE_(r2)
 /* 801B51BC 001B1FBC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B51C0 001B1FC0  4C 41 13 82 */	cror 2, 1, 2
 /* 801B51C4 001B1FC4  40 82 00 14 */	bne lbl_801B51D8
-/* 801B51C8 001B1FC8  C0 02 C9 A4 */	lfs f0, $$21447_2-_SDA2_BASE_(r2)
+/* 801B51C8 001B1FC8  C0 02 C9 A4 */	lfs f0, _esc__2_1447_2-_SDA2_BASE_(r2)
 /* 801B51CC 001B1FCC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B51D0 001B1FD0  4C 40 13 82 */	cror 2, 0, 2
 /* 801B51D4 001B1FD4  41 82 00 30 */	beq lbl_801B5204
@@ -2666,7 +2668,7 @@ lbl_801B51D8:
 /* 801B51DC 001B1FDC  4B E5 62 79 */	bl length__5xVec3CFv
 /* 801B51E0 001B1FE0  FC 40 08 90 */	fmr f2, f1
 /* 801B51E4 001B1FE4  C0 3E 00 10 */	lfs f1, 0x10(r30)
-/* 801B51E8 001B1FE8  C0 62 C9 70 */	lfs f3, $$21356_2-_SDA2_BASE_(r2)
+/* 801B51E8 001B1FE8  C0 62 C9 70 */	lfs f3, _esc__2_1356_2-_SDA2_BASE_(r2)
 /* 801B51EC 001B1FEC  7F 63 DB 78 */	mr r3, r27
 /* 801B51F0 001B1FF0  7F A4 EB 78 */	mr r4, r29
 /* 801B51F4 001B1FF4  7F E6 FB 78 */	mr r6, r31
@@ -2702,7 +2704,7 @@ lbl_801B5244:
 zThrowableSystemMediumCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv:
 /* 801B525C 001B205C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B5260 001B2060  7C 08 02 A6 */	mflr r0
-/* 801B5264 001B2064  C0 22 C9 F0 */	lfs f1, $$22202_0-_SDA2_BASE_(r2)
+/* 801B5264 001B2064  C0 22 C9 F0 */	lfs f1, _esc__2_2202_0-_SDA2_BASE_(r2)
 /* 801B5268 001B2068  39 00 00 19 */	li r8, 0x19
 /* 801B526C 001B206C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801B5270 001B2070  4B FF FE ED */	bl zThrowableSystemGeneralCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pvfi
@@ -2715,7 +2717,7 @@ zThrowableSystemMediumCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv:
 zThrowableSystemLargeCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv:
 /* 801B5284 001B2084  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B5288 001B2088  7C 08 02 A6 */	mflr r0
-/* 801B528C 001B208C  C0 22 C9 90 */	lfs f1, $$21426_1-_SDA2_BASE_(r2)
+/* 801B528C 001B208C  C0 22 C9 90 */	lfs f1, _esc__2_1426_1-_SDA2_BASE_(r2)
 /* 801B5290 001B2090  39 00 00 32 */	li r8, 0x32
 /* 801B5294 001B2094  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801B5298 001B2098  4B FF FE C5 */	bl zThrowableSystemGeneralCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pvfi
@@ -2728,7 +2730,7 @@ zThrowableSystemLargeCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv:
 zThrowableSystemBotCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv:
 /* 801B52AC 001B20AC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B52B0 001B20B0  7C 08 02 A6 */	mflr r0
-/* 801B52B4 001B20B4  C0 22 C9 F4 */	lfs f1, $$22215-_SDA2_BASE_(r2)
+/* 801B52B4 001B20B4  C0 22 C9 F4 */	lfs f1, _esc__2_2215-_SDA2_BASE_(r2)
 /* 801B52B8 001B20B8  39 00 00 19 */	li r8, 0x19
 /* 801B52BC 001B20BC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801B52C0 001B20C0  4B FF FE 9D */	bl zThrowableSystemGeneralCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pvfi
@@ -2741,7 +2743,7 @@ zThrowableSystemBotCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv:
 zThrowableSystemLongmediumCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv:
 /* 801B52D4 001B20D4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B52D8 001B20D8  7C 08 02 A6 */	mflr r0
-/* 801B52DC 001B20DC  C0 22 C9 F0 */	lfs f1, $$22202_0-_SDA2_BASE_(r2)
+/* 801B52DC 001B20DC  C0 22 C9 F0 */	lfs f1, _esc__2_2202_0-_SDA2_BASE_(r2)
 /* 801B52E0 001B20E0  39 00 00 19 */	li r8, 0x19
 /* 801B52E4 001B20E4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801B52E8 001B20E8  4B FF FE 75 */	bl zThrowableSystemGeneralCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pvfi
@@ -2763,7 +2765,7 @@ zThrowableSystemDefaultDestroyCB__FP4xEntPvb:
 /* 801B531C 001B211C  80 1F 00 F0 */	lwz r0, 0xf0(r31)
 /* 801B5320 001B2120  28 00 00 00 */	cmplwi r0, 0
 /* 801B5324 001B2124  41 82 00 38 */	beq lbl_801B535C
-/* 801B5328 001B2128  81 02 C9 F8 */	lwz r8, $$22230-_SDA2_BASE_(r2)
+/* 801B5328 001B2128  81 02 C9 F8 */	lwz r8, _esc__2_2230-_SDA2_BASE_(r2)
 /* 801B532C 001B212C  38 A1 00 08 */	addi r5, r1, 8
 /* 801B5330 001B2130  80 E2 C9 FC */	lwz r7, lbl_803D671C-_SDA2_BASE_(r2)
 /* 801B5334 001B2134  38 80 00 3A */	li r4, 0x3a
@@ -2811,21 +2813,21 @@ lbl_801B53C0:
 /* 801B53CC 001B21CC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801B53D0 001B21D0  4E 80 00 20 */	blr 
 
-.global __cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompareCFUiRCQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMap
-__cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompareCFUiRCQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMap:
+.global __cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompareCFUiRCQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMap
+__cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompareCFUiRCQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMap:
 /* 801B53D4 001B21D4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B53D8 001B21D8  7C 08 02 A6 */	mflr r0
 /* 801B53DC 001B21DC  7C 83 23 78 */	mr r3, r4
 /* 801B53E0 001B21E0  80 85 00 00 */	lwz r4, 0(r5)
 /* 801B53E4 001B21E4  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801B53E8 001B21E8  4B FF DA F9 */	bl UintCompare__30$$2unnamed$$2zThrowableSystem_cpp$$2FUiUi
+/* 801B53E8 001B21E8  4B FF DA F9 */	bl UintCompare__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUiUi
 /* 801B53EC 001B21EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801B53F0 001B21F0  7C 08 03 A6 */	mtlr r0
 /* 801B53F4 001B21F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801B53F8 001B21F8  4E 80 00 20 */	blr 
 
-.global __cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctorCFPCvPCv
-__cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctorCFPCvPCv:
+.global __cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctorCFPCvPCv
+__cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctorCFPCvPCv:
 /* 801B53FC 001B21FC  88 64 00 0C */	lbz r3, 0xc(r4)
 /* 801B5400 001B2200  88 05 00 0C */	lbz r0, 0xc(r5)
 /* 801B5404 001B2204  7C 03 00 40 */	cmplw r3, r0
@@ -2850,8 +2852,8 @@ lbl_801B543C:
 /* 801B5444 001B2244  38 60 FF FF */	li r3, -1
 /* 801B5448 001B2248  4E 80 00 20 */	blr 
 
-.global __cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindCFR4xEnt
-__cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindCFR4xEnt:
+.global __cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFindCFR4xEnt
+__cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFindCFR4xEnt:
 /* 801B544C 001B224C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801B5450 001B2250  7C 08 02 A6 */	mflr r0
 /* 801B5454 001B2254  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2921,13 +2923,13 @@ lbl_801B5524:
 lbl_801B5534:
 /* 801B5534 001B2334  38 7F 00 68 */	addi r3, r31, 0x68
 /* 801B5538 001B2338  4B E7 02 E9 */	bl xBoundCenter__FP6xBound
-/* 801B553C 001B233C  C0 22 C9 EC */	lfs f1, $$22136-_SDA2_BASE_(r2)
+/* 801B553C 001B233C  C0 22 C9 EC */	lfs f1, _esc__2_2136-_SDA2_BASE_(r2)
 /* 801B5540 001B2340  7C 65 1B 78 */	mr r5, r3
 /* 801B5544 001B2344  7F C3 F3 78 */	mr r3, r30
 /* 801B5548 001B2348  7F E4 FB 78 */	mr r4, r31
 /* 801B554C 001B234C  7F A6 EB 78 */	mr r6, r29
 /* 801B5550 001B2350  38 E0 00 00 */	li r7, 0
-/* 801B5554 001B2354  4B FF FA 59 */	bl AddPossibleTarget__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindCFPC4xEntPC5xVec3Ucbf
+/* 801B5554 001B2354  4B FF FA 59 */	bl AddPossibleTarget__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFindCFPC4xEntPC5xVec3Ucbf
 lbl_801B5558:
 /* 801B5558 001B2358  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 801B555C 001B235C  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -3000,8 +3002,8 @@ xMat3x3RotC__FP7xMat3x3PC5xVec3f:
 /* 801B5644 001B2444  38 21 00 10 */	addi r1, r1, 0x10
 /* 801B5648 001B2448  4E 80 00 20 */	blr 
 
-.global xGridCheckBound$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFind$$1__FR5xGridRC6xBoundRC7xQCDataRQ230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFind
-xGridCheckBound$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFind$$1__FR5xGridRC6xBoundRC7xQCDataRQ230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFind:
+.global xGridCheckBound_esc__0_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFind_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFind
+xGridCheckBound_esc__0_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFind_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFind:
 /* 801B564C 001B244C  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 801B5650 001B2450  7C 08 02 A6 */	mflr r0
 /* 801B5654 001B2454  7C 89 23 78 */	mr r9, r4
@@ -3032,7 +3034,7 @@ lbl_801B56A4:
 /* 801B56B4 001B24B4  41 82 00 24 */	beq lbl_801B56D8
 /* 801B56B8 001B24B8  80 9F 00 00 */	lwz r4, 0(r31)
 /* 801B56BC 001B24BC  7F 83 E3 78 */	mr r3, r28
-/* 801B56C0 001B24C0  4B FF FD 8D */	bl __cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$210TargetFindCFR4xEnt
+/* 801B56C0 001B24C0  4B FF FD 8D */	bl __cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_10TargetFindCFR4xEnt
 /* 801B56C4 001B24C4  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801B56C8 001B24C8  40 82 00 10 */	bne lbl_801B56D8
 /* 801B56CC 001B24CC  38 61 00 18 */	addi r3, r1, 0x18
@@ -3068,8 +3070,8 @@ lbl_801B572C:
 /* 801B5738 001B2538  38 21 00 60 */	addi r1, r1, 0x60
 /* 801B573C 001B253C  4E 80 00 20 */	blr 
 
-.global quicksort$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctor$$1__FPvUlUlQ230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctor
-quicksort$$0Q230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctor$$1__FPvUlUlQ230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctor:
+.global quicksort_esc__0_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctor_esc__1___FPvUlUlQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctor
+quicksort_esc__0_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctor_esc__1___FPvUlUlQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctor:
 /* 801B5740 001B2540  94 21 FF 30 */	stwu r1, -0xd0(r1)
 /* 801B5744 001B2544  7C 08 02 A6 */	mflr r0
 /* 801B5748 001B2548  90 01 00 D4 */	stw r0, 0xd4(r1)
@@ -3111,7 +3113,7 @@ lbl_801B57C0:
 /* 801B57C4 001B25C4  7F 63 DB 78 */	mr r3, r27
 /* 801B57C8 001B25C8  7F 04 C3 78 */	mr r4, r24
 /* 801B57CC 001B25CC  7F 25 CB 78 */	mr r5, r25
-/* 801B57D0 001B25D0  4B FF FC 2D */	bl __cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctorCFPCvPCv
+/* 801B57D0 001B25D0  4B FF FC 2D */	bl __cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctorCFPCvPCv
 /* 801B57D4 001B25D4  2C 03 00 00 */	cmpwi r3, 0
 /* 801B57D8 001B25D8  41 81 FF B0 */	bgt lbl_801B5788
 lbl_801B57DC:
@@ -3154,7 +3156,7 @@ lbl_801B5848:
 /* 801B585C 001B265C  7F 63 DB 78 */	mr r3, r27
 /* 801B5860 001B2660  7F 24 CB 78 */	mr r4, r25
 /* 801B5864 001B2664  7F 05 C3 78 */	mr r5, r24
-/* 801B5868 001B2668  4B FF FB 95 */	bl __cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctorCFPCvPCv
+/* 801B5868 001B2668  4B FF FB 95 */	bl __cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctorCFPCvPCv
 /* 801B586C 001B266C  2C 03 00 00 */	cmpwi r3, 0
 /* 801B5870 001B2670  40 81 00 34 */	ble lbl_801B58A4
 /* 801B5874 001B2674  7E E3 BB 78 */	mr r3, r23
@@ -3175,7 +3177,7 @@ lbl_801B58A4:
 /* 801B58A4 001B26A4  7F 63 DB 78 */	mr r3, r27
 /* 801B58A8 001B26A8  7F A4 EB 78 */	mr r4, r29
 /* 801B58AC 001B26AC  7F 05 C3 78 */	mr r5, r24
-/* 801B58B0 001B26B0  4B FF FB 4D */	bl __cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctorCFPCvPCv
+/* 801B58B0 001B26B0  4B FF FB 4D */	bl __cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctorCFPCvPCv
 /* 801B58B4 001B26B4  2C 03 00 00 */	cmpwi r3, 0
 /* 801B58B8 001B26B8  40 81 00 34 */	ble lbl_801B58EC
 /* 801B58BC 001B26BC  7F A3 EB 78 */	mr r3, r29
@@ -3196,7 +3198,7 @@ lbl_801B58EC:
 /* 801B58EC 001B26EC  7F 63 DB 78 */	mr r3, r27
 /* 801B58F0 001B26F0  7E E4 BB 78 */	mr r4, r23
 /* 801B58F4 001B26F4  7F A5 EB 78 */	mr r5, r29
-/* 801B58F8 001B26F8  4B FF FB 05 */	bl __cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctorCFPCvPCv
+/* 801B58F8 001B26F8  4B FF FB 05 */	bl __cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctorCFPCvPCv
 /* 801B58FC 001B26FC  2C 03 00 00 */	cmpwi r3, 0
 /* 801B5900 001B2700  40 81 00 34 */	ble lbl_801B5934
 /* 801B5904 001B2704  7E E3 BB 78 */	mr r3, r23
@@ -3218,7 +3220,7 @@ lbl_801B5934:
 /* 801B5938 001B2738  7F 63 DB 78 */	mr r3, r27
 /* 801B593C 001B273C  7E E4 BB 78 */	mr r4, r23
 /* 801B5940 001B2740  7F A5 EB 78 */	mr r5, r29
-/* 801B5944 001B2744  4B FF FA B9 */	bl __cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctorCFPCvPCv
+/* 801B5944 001B2744  4B FF FA B9 */	bl __cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctorCFPCvPCv
 /* 801B5948 001B2748  2C 03 00 00 */	cmpwi r3, 0
 /* 801B594C 001B274C  41 80 FF E8 */	blt lbl_801B5934
 lbl_801B5950:
@@ -3226,7 +3228,7 @@ lbl_801B5950:
 /* 801B5954 001B2754  7F 63 DB 78 */	mr r3, r27
 /* 801B5958 001B2758  7F 04 C3 78 */	mr r4, r24
 /* 801B595C 001B275C  7F A5 EB 78 */	mr r5, r29
-/* 801B5960 001B2760  4B FF FA 9D */	bl __cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$221zThrowableSortFunctorCFPCvPCv
+/* 801B5960 001B2760  4B FF FA 9D */	bl __cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_21zThrowableSortFunctorCFPCvPCv
 /* 801B5964 001B2764  2C 03 00 00 */	cmpwi r3, 0
 /* 801B5968 001B2768  41 81 FF E8 */	bgt lbl_801B5950
 /* 801B596C 001B276C  7C 17 C0 40 */	cmplw r23, r24
@@ -3282,8 +3284,8 @@ lbl_801B5A08:
 /* 801B5A14 001B2814  38 21 00 D0 */	addi r1, r1, 0xd0
 /* 801B5A18 001B2818  4E 80 00 20 */	blr 
 
-.global binary_find$$0PQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMap$$4Ui$$4Q230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompare$$1__FPQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMapPQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMapRCUiQ230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompare
-binary_find$$0PQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMap$$4Ui$$4Q230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompare$$1__FPQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMapPQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMapRCUiQ230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompare:
+.global binary_find_esc__0_PQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMap_esc__4_Ui_esc__4_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompare_esc__1___FPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMapPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMapRCUiQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompare
+binary_find_esc__0_PQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMap_esc__4_Ui_esc__4_Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompare_esc__1___FPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMapPQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMapRCUiQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompare:
 /* 801B5A1C 001B281C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801B5A20 001B2820  7C 08 02 A6 */	mflr r0
 /* 801B5A24 001B2824  90 01 00 34 */	stw r0, 0x34(r1)
@@ -3304,7 +3306,7 @@ lbl_801B5A44:
 /* 801B5A5C 001B285C  1C 00 00 0C */	mulli r0, r0, 0xc
 /* 801B5A60 001B2860  7F B9 02 14 */	add r29, r25, r0
 /* 801B5A64 001B2864  7F A5 EB 78 */	mr r5, r29
-/* 801B5A68 001B2868  4B FF F9 6D */	bl __cl__Q230$$2unnamed$$2zThrowableSystem_cpp$$216BinaryMapCompareCFUiRCQ230$$2unnamed$$2zThrowableSystem_cpp$$217ThrowableModelMap
+/* 801B5A68 001B2868  4B FF F9 6D */	bl __cl__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_16BinaryMapCompareCFUiRCQ230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_17ThrowableModelMap
 /* 801B5A6C 001B286C  2C 03 00 00 */	cmpwi r3, 0
 /* 801B5A70 001B2870  40 80 00 0C */	bge lbl_801B5A7C
 /* 801B5A74 001B2874  7F BA EB 78 */	mr r26, r29
@@ -3328,3 +3330,6 @@ lbl_801B5AA0:
 /* 801B5AA8 001B28A8  7C 08 03 A6 */	mtlr r0
 /* 801B5AAC 001B28AC  38 21 00 30 */	addi r1, r1, 0x30
 /* 801B5AB0 001B28B0  4E 80 00 20 */	blr 
+
+.endif
+

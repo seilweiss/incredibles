@@ -11,29 +11,29 @@ zSaveLoadGameTable:
 .global zSaveLoadUITable
 zSaveLoadUITable:
 	.incbin "baserom.dol", 0x30C520, 0x36C
-.global $$21924
-$$21924:
+.global _esc__2_1924
+_esc__2_1924:
 	.incbin "baserom.dol", 0x30C88C, 0x34
-.global $$22334
-$$22334:
+.global _esc__2_2334
+_esc__2_2334:
 	.incbin "baserom.dol", 0x30C8C0, 0x38
-.global $$22333
-$$22333:
+.global _esc__2_2333
+_esc__2_2333:
 	.incbin "baserom.dol", 0x30C8F8, 0x28
-.global $$22403
-$$22403:
+.global _esc__2_2403
+_esc__2_2403:
 	.incbin "baserom.dol", 0x30C920, 0x38
-.global $$22402
-$$22402:
+.global _esc__2_2402
+_esc__2_2402:
 	.incbin "baserom.dol", 0x30C958, 0x30
 
 .section .rodata
 
-.global $$21936
-$$21936:
+.global _esc__2_1936
+_esc__2_1936:
 	.incbin "baserom.dol", 0x2E15F0, 0x100
-.global $$2stringBase0_92
-$$2stringBase0_92:
+.global _esc__2_stringBase0_92
+_esc__2_stringBase0_92:
 	.incbin "baserom.dol", 0x2E16F0, 0x698
 
 .section .sbss
@@ -65,23 +65,23 @@ sNeeded:
 .global sAccessType
 sAccessType:
 	.skip 0x4
-.global loadState__23$$2unnamed$$2zSaveLoad_cpp$$2
-loadState__23$$2unnamed$$2zSaveLoad_cpp$$2:
+.global loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_
+loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_:
 	.skip 0x4
-.global saveState__23$$2unnamed$$2zSaveLoad_cpp$$2
-saveState__23$$2unnamed$$2zSaveLoad_cpp$$2:
+.global saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_
+saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_:
 	.skip 0x8
-.global promptStartTime__23$$2unnamed$$2zSaveLoad_cpp$$2
-promptStartTime__23$$2unnamed$$2zSaveLoad_cpp$$2:
+.global promptStartTime__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_
+promptStartTime__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_:
 	.skip 0x4
 .global lbl_803D0284
 lbl_803D0284:
 	.skip 0x4
-.global promptActive__23$$2unnamed$$2zSaveLoad_cpp$$2
-promptActive__23$$2unnamed$$2zSaveLoad_cpp$$2:
+.global promptActive__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_
+promptActive__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_:
 	.skip 0x1
-.global promptExiting__23$$2unnamed$$2zSaveLoad_cpp$$2
-promptExiting__23$$2unnamed$$2zSaveLoad_cpp$$2:
+.global promptExiting__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_
+promptExiting__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_:
 	.skip 0x1
 .global preAutoSaving
 preAutoSaving:
@@ -92,14 +92,14 @@ autosaveErrorHack:
 
 .section .sbss2
 
-.global $$21935_1
-$$21935_1:
+.global _esc__2_1935_1
+_esc__2_1935_1:
 	.skip 0x1C
 .global lbl_803D90B4
 lbl_803D90B4:
 	.skip 0x4
-.global $$22457
-$$22457:
+.global _esc__2_2457
+_esc__2_2457:
 	.skip 0x20
 
 .section .sdata
@@ -125,8 +125,8 @@ prevSelectCard:
 .global prevSelectGame
 prevSelectGame:
 	.incbin "baserom.dol", 0x32CEC8, 0x4
-.global sIsLoading__23$$2unnamed$$2zSaveLoad_cpp$$2
-sIsLoading__23$$2unnamed$$2zSaveLoad_cpp$$2:
+.global sIsLoading__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_
+sIsLoading__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CECC, 0x4
 .global currSceneStr
 currSceneStr:
@@ -140,26 +140,26 @@ g_promptUserSelection:
 
 .section .sdata2
 
-.global $$21080
-$$21080:
+.global _esc__2_1080
+_esc__2_1080:
 	.incbin "baserom.dol", 0x331E90, 0x4
-.global $$21150_3
-$$21150_3:
+.global _esc__2_1150_3
+_esc__2_1150_3:
 	.incbin "baserom.dol", 0x331E94, 0x4
-.global $$21151_0
-$$21151_0:
+.global _esc__2_1151_0
+_esc__2_1151_0:
 	.incbin "baserom.dol", 0x331E98, 0x4
-.global $$21152_1
-$$21152_1:
+.global _esc__2_1152_1
+_esc__2_1152_1:
 	.incbin "baserom.dol", 0x331E9C, 0x4
-.global $$21153_3
-$$21153_3:
+.global _esc__2_1153_3
+_esc__2_1153_3:
 	.incbin "baserom.dol", 0x331EA0, 0x8
-.global $$21155_0
-$$21155_0:
+.global _esc__2_1155_0
+_esc__2_1155_0:
 	.incbin "baserom.dol", 0x331EA8, 0x8
-.global $$22085
-$$22085:
+.global _esc__2_2085
+_esc__2_2085:
 	.incbin "baserom.dol", 0x331EB0, 0x4
 .global lbl_803D54F4
 lbl_803D54F4:
@@ -168,10 +168,12 @@ lbl_803D54F4:
 lbl_803D54F8:
 	.incbin "baserom.dol", 0x331EB8, 0x8
 
+.if 0
+
 .section .text
 
-.global WaitForPreviousPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
-WaitForPreviousPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fb:
+.global WaitForPreviousPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
+WaitForPreviousPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb:
 /* 801519A8 0014E7A8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801519AC 0014E7AC  7C 08 02 A6 */	mflr r0
 /* 801519B0 0014E7B0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -188,24 +190,24 @@ lbl_801519D0:
 lbl_801519D4:
 /* 801519D4 0014E7D4  28 1F 00 00 */	cmplwi r31, 0
 /* 801519D8 0014E7D8  41 82 00 10 */	beq lbl_801519E8
-/* 801519DC 0014E7DC  88 0D CE 09 */	lbz r0, promptExiting__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801519DC 0014E7DC  88 0D CE 09 */	lbz r0, promptExiting__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801519E0 0014E7E0  28 00 00 00 */	cmplwi r0, 0
 /* 801519E4 0014E7E4  41 82 00 10 */	beq lbl_801519F4
 lbl_801519E8:
-/* 801519E8 0014E7E8  88 0D CE 08 */	lbz r0, promptActive__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801519E8 0014E7E8  88 0D CE 08 */	lbz r0, promptActive__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801519EC 0014E7EC  28 00 00 00 */	cmplwi r0, 0
 /* 801519F0 0014E7F0  40 82 FF E0 */	bne lbl_801519D0
 lbl_801519F4:
 /* 801519F4 0014E7F4  38 00 00 01 */	li r0, 1
-/* 801519F8 0014E7F8  98 0D CE 08 */	stb r0, promptActive__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801519F8 0014E7F8  98 0D CE 08 */	stb r0, promptActive__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801519FC 0014E7FC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80151A00 0014E800  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80151A04 0014E804  7C 08 03 A6 */	mtlr r0
 /* 80151A08 0014E808  38 21 00 10 */	addi r1, r1, 0x10
 /* 80151A0C 0014E80C  4E 80 00 20 */	blr 
 
-.global DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
-DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib:
+.global DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
+DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib:
 /* 80151A10 0014E810  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80151A14 0014E814  7C 08 02 A6 */	mflr r0
 /* 80151A18 0014E818  90 01 00 24 */	stw r0, 0x24(r1)
@@ -213,7 +215,7 @@ DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib:
 /* 80151A20 0014E820  7C 7F 1B 78 */	mr r31, r3
 /* 80151A24 0014E824  7C 9D 23 78 */	mr r29, r4
 /* 80151A28 0014E828  7C A3 2B 78 */	mr r3, r5
-/* 80151A2C 0014E82C  4B FF FF 7D */	bl WaitForPreviousPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 80151A2C 0014E82C  4B FF FF 7D */	bl WaitForPreviousPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 80151A30 0014E830  2C 1F 00 42 */	cmpwi r31, 0x42
 /* 80151A34 0014E834  3B C0 00 00 */	li r30, 0
 /* 80151A38 0014E838  41 82 00 24 */	beq lbl_80151A5C
@@ -227,32 +229,32 @@ lbl_80151A50:
 /* 80151A54 0014E854  41 82 00 5C */	beq lbl_80151AB0
 /* 80151A58 0014E858  48 00 00 70 */	b lbl_80151AC8
 lbl_80151A5C:
-/* 80151A5C 0014E85C  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80151A60 0014E860  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80151A5C 0014E85C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80151A60 0014E860  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80151A64 0014E864  38 63 05 1D */	addi r3, r3, 0x51d
 /* 80151A68 0014E868  4B F1 B1 B9 */	bl xStrHash__FPCc
 /* 80151A6C 0014E86C  48 00 8C 71 */	bl zSceneFindObject__FUi
 /* 80151A70 0014E870  7C 7E 1B 78 */	mr r30, r3
 /* 80151A74 0014E874  48 00 00 54 */	b lbl_80151AC8
 lbl_80151A78:
-/* 80151A78 0014E878  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80151A7C 0014E87C  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80151A78 0014E878  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80151A7C 0014E87C  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80151A80 0014E880  38 63 05 35 */	addi r3, r3, 0x535
 /* 80151A84 0014E884  4B F1 B1 9D */	bl xStrHash__FPCc
 /* 80151A88 0014E888  48 00 8C 55 */	bl zSceneFindObject__FUi
 /* 80151A8C 0014E88C  7C 7E 1B 78 */	mr r30, r3
 /* 80151A90 0014E890  48 00 00 38 */	b lbl_80151AC8
 lbl_80151A94:
-/* 80151A94 0014E894  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80151A98 0014E898  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80151A94 0014E894  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80151A98 0014E898  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80151A9C 0014E89C  38 63 05 51 */	addi r3, r3, 0x551
 /* 80151AA0 0014E8A0  4B F1 B1 81 */	bl xStrHash__FPCc
 /* 80151AA4 0014E8A4  48 00 8C 39 */	bl zSceneFindObject__FUi
 /* 80151AA8 0014E8A8  7C 7E 1B 78 */	mr r30, r3
 /* 80151AAC 0014E8AC  48 00 00 1C */	b lbl_80151AC8
 lbl_80151AB0:
-/* 80151AB0 0014E8B0  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80151AB4 0014E8B4  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80151AB0 0014E8B0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80151AB4 0014E8B4  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80151AB8 0014E8B8  38 63 05 6F */	addi r3, r3, 0x56f
 /* 80151ABC 0014E8BC  4B F1 B1 65 */	bl xStrHash__FPCc
 /* 80151AC0 0014E8C0  48 00 8C 1D */	bl zSceneFindObject__FUi
@@ -289,7 +291,7 @@ lbl_80151AFC:
 /* 80151B34 0014E934  40 82 00 10 */	bne lbl_80151B44
 /* 80151B38 0014E938  4B F3 07 8D */	bl iTimeGet__Fv
 /* 80151B3C 0014E93C  90 8D CE 04 */	stw r4, lbl_803D0284-_SDA_BASE_(r13)
-/* 80151B40 0014E940  90 6D CE 00 */	stw r3, promptStartTime__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80151B40 0014E940  90 6D CE 00 */	stw r3, promptStartTime__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_80151B44:
 /* 80151B44 0014E944  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 80151B48 0014E948  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -318,15 +320,15 @@ GetAsset__3zUICFv:
 /* 80151B80 0014E980  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 80151B84 0014E984  4E 80 00 20 */	blr 
 
-.global HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
-HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib:
+.global HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
+HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib:
 /* 80151B88 0014E988  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80151B8C 0014E98C  7C 08 02 A6 */	mflr r0
 /* 80151B90 0014E990  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80151B94 0014E994  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 80151B98 0014E998  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 80151B9C 0014E99C  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80151BA0 0014E9A0  88 0D CE 08 */	lbz r0, promptActive__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80151BA0 0014E9A0  88 0D CE 08 */	lbz r0, promptActive__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80151BA4 0014E9A4  7C 7F 1B 78 */	mr r31, r3
 /* 80151BA8 0014E9A8  28 00 00 00 */	cmplwi r0, 0
 /* 80151BAC 0014E9AC  41 82 00 54 */	beq lbl_80151C00
@@ -335,7 +337,7 @@ HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib:
 /* 80151BB8 0014E9B8  54 80 06 3F */	clrlwi. r0, r4, 0x18
 /* 80151BBC 0014E9BC  41 82 00 38 */	beq lbl_80151BF4
 /* 80151BC0 0014E9C0  4B F3 07 05 */	bl iTimeGet__Fv
-/* 80151BC4 0014E9C4  C3 E2 B7 B0 */	lfs f31, $$21080-_SDA2_BASE_(r2)
+/* 80151BC4 0014E9C4  C3 E2 B7 B0 */	lfs f31, _esc__2_1080-_SDA2_BASE_(r2)
 /* 80151BC8 0014E9C8  7C 65 1B 78 */	mr r5, r3
 /* 80151BCC 0014E9CC  48 00 00 10 */	b lbl_80151BDC
 lbl_80151BD0:
@@ -344,7 +346,7 @@ lbl_80151BD0:
 /* 80151BD8 0014E9D8  7C 65 1B 78 */	mr r5, r3
 lbl_80151BDC:
 /* 80151BDC 0014E9DC  7C 86 23 78 */	mr r6, r4
-/* 80151BE0 0014E9E0  80 6D CE 00 */	lwz r3, promptStartTime__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80151BE0 0014E9E0  80 6D CE 00 */	lwz r3, promptStartTime__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80151BE4 0014E9E4  80 8D CE 04 */	lwz r4, lbl_803D0284-_SDA_BASE_(r13)
 /* 80151BE8 0014E9E8  4B F3 07 55 */	bl iTimeDiffSec__Fxx
 /* 80151BEC 0014E9EC  FC 01 F8 40 */	fcmpo cr0, f1, f31
@@ -362,8 +364,8 @@ lbl_80151C00:
 /* 80151C14 0014EA14  38 21 00 20 */	addi r1, r1, 0x20
 /* 80151C18 0014EA18  4E 80 00 20 */	blr 
 
-.global WaitAndSpin__23$$2unnamed$$2zSaveLoad_cpp$$2Ff
-WaitAndSpin__23$$2unnamed$$2zSaveLoad_cpp$$2Ff:
+.global WaitAndSpin__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Ff
+WaitAndSpin__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Ff:
 /* 80151C1C 0014EA1C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80151C20 0014EA20  7C 08 02 A6 */	mflr r0
 /* 80151C24 0014EA24  90 01 00 24 */	stw r0, 0x24(r1)
@@ -394,27 +396,27 @@ lbl_80151C5C:
 /* 80151C80 0014EA80  38 21 00 20 */	addi r1, r1, 0x20
 /* 80151C84 0014EA84  4E 80 00 20 */	blr 
 
-.global UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
-UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb:
+.global UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
+UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb:
 /* 80151C88 0014EA88  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80151C8C 0014EA8C  7C 08 02 A6 */	mflr r0
-/* 80151C90 0014EA90  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80151C90 0014EA90  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80151C94 0014EA94  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80151C98 0014EA98  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 80151C9C 0014EA9C  7C 7C 1B 78 */	mr r28, r3
-/* 80151CA0 0014EAA0  38 64 46 F0 */	addi r3, r4, $$2stringBase0_92@l
+/* 80151CA0 0014EAA0  38 64 46 F0 */	addi r3, r4, _esc__2_stringBase0_92@l
 /* 80151CA4 0014EAA4  38 63 00 87 */	addi r3, r3, 0x87
 /* 80151CA8 0014EAA8  4B F1 AF 79 */	bl xStrHash__FPCc
 /* 80151CAC 0014EAAC  48 00 8A 31 */	bl zSceneFindObject__FUi
-/* 80151CB0 0014EAB0  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80151CB0 0014EAB0  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80151CB4 0014EAB4  7C 7D 1B 78 */	mr r29, r3
-/* 80151CB8 0014EAB8  38 64 46 F0 */	addi r3, r4, $$2stringBase0_92@l
+/* 80151CB8 0014EAB8  38 64 46 F0 */	addi r3, r4, _esc__2_stringBase0_92@l
 /* 80151CBC 0014EABC  38 63 00 9A */	addi r3, r3, 0x9a
 /* 80151CC0 0014EAC0  4B F1 AF 61 */	bl xStrHash__FPCc
 /* 80151CC4 0014EAC4  48 00 8A 19 */	bl zSceneFindObject__FUi
-/* 80151CC8 0014EAC8  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80151CC8 0014EAC8  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80151CCC 0014EACC  7C 7E 1B 78 */	mr r30, r3
-/* 80151CD0 0014EAD0  38 64 46 F0 */	addi r3, r4, $$2stringBase0_92@l
+/* 80151CD0 0014EAD0  38 64 46 F0 */	addi r3, r4, _esc__2_stringBase0_92@l
 /* 80151CD4 0014EAD4  38 63 00 AD */	addi r3, r3, 0xad
 /* 80151CD8 0014EAD8  4B F1 AF 49 */	bl xStrHash__FPCc
 /* 80151CDC 0014EADC  48 00 8A 01 */	bl zSceneFindObject__FUi
@@ -498,13 +500,13 @@ zSaveLoad_Tick__Fv:
 /* 80151DE4 0014EBE4  80 63 00 F8 */	lwz r3, 0x800000F8@l(r3)
 /* 80151DE8 0014EBE8  90 01 00 80 */	stw r0, 0x80(r1)
 /* 80151DEC 0014EBEC  54 60 F0 BE */	srwi r0, r3, 2
-/* 80151DF0 0014EBF0  C8 62 B7 C8 */	lfd f3, $$21155_0-_SDA2_BASE_(r2)
+/* 80151DF0 0014EBF0  C8 62 B7 C8 */	lfd f3, _esc__2_1155_0-_SDA2_BASE_(r2)
 /* 80151DF4 0014EBF4  90 01 00 84 */	stw r0, 0x84(r1)
-/* 80151DF8 0014EBF8  C0 82 B7 B4 */	lfs f4, $$21150_3-_SDA2_BASE_(r2)
+/* 80151DF8 0014EBF8  C0 82 B7 B4 */	lfs f4, _esc__2_1150_3-_SDA2_BASE_(r2)
 /* 80151DFC 0014EBFC  C8 01 00 80 */	lfd f0, 0x80(r1)
 /* 80151E00 0014EC00  C0 4D CD D4 */	lfs f2, saveload_time_last-_SDA_BASE_(r13)
 /* 80151E04 0014EC04  EC 60 18 28 */	fsubs f3, f0, f3
-/* 80151E08 0014EC08  C0 02 B7 B8 */	lfs f0, $$21151_0-_SDA2_BASE_(r2)
+/* 80151E08 0014EC08  C0 02 B7 B8 */	lfs f0, _esc__2_1151_0-_SDA2_BASE_(r2)
 /* 80151E0C 0014EC0C  EC 64 18 24 */	fdivs f3, f4, f3
 /* 80151E10 0014EC10  EC 63 00 72 */	fmuls f3, f3, f1
 /* 80151E14 0014EC14  EC 23 10 28 */	fsubs f1, f3, f2
@@ -516,7 +518,7 @@ zSaveLoad_Tick__Fv:
 /* 80151E2C 0014EC2C  D0 0D 9E F0 */	stfs f0, saveload_time_elapsed-_SDA_BASE_(r13)
 /* 80151E30 0014EC30  48 00 00 18 */	b lbl_80151E48
 lbl_80151E34:
-/* 80151E34 0014EC34  C0 02 B7 BC */	lfs f0, $$21152_1-_SDA2_BASE_(r2)
+/* 80151E34 0014EC34  C0 02 B7 BC */	lfs f0, _esc__2_1152_1-_SDA2_BASE_(r2)
 /* 80151E38 0014EC38  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80151E3C 0014EC3C  40 81 00 0C */	ble lbl_80151E48
 /* 80151E40 0014EC40  C0 0D CA F8 */	lfs f0, SECS_PER_VBLANK-_SDA_BASE_(r13)
@@ -565,7 +567,7 @@ lbl_80151ED4:
 /* 80151EE4 0014ECE4  42 00 FF F0 */	bdnz lbl_80151ED4
 /* 80151EE8 0014ECE8  C0 21 00 74 */	lfs f1, 0x74(r1)
 /* 80151EEC 0014ECEC  3C 60 80 38 */	lis r3, globals@ha
-/* 80151EF0 0014ECF0  C0 02 B7 C0 */	lfs f0, $$21153_3-_SDA2_BASE_(r2)
+/* 80151EF0 0014ECF0  C0 02 B7 C0 */	lfs f0, _esc__2_1153_3-_SDA2_BASE_(r2)
 /* 80151EF4 0014ECF4  80 83 2A 38 */	lwz r4, globals@l(r3)
 /* 80151EF8 0014ECF8  38 60 00 00 */	li r3, 0
 /* 80151EFC 0014ECFC  EC 01 00 2A */	fadds f0, f1, f0
@@ -631,14 +633,14 @@ lbl_80151F88:
 zSaveLoad_poll__Fi:
 /* 80151FE0 0014EDE0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80151FE4 0014EDE4  7C 08 02 A6 */	mflr r0
-/* 80151FE8 0014EDE8  C0 02 B7 B8 */	lfs f0, $$21151_0-_SDA2_BASE_(r2)
+/* 80151FE8 0014EDE8  C0 02 B7 B8 */	lfs f0, _esc__2_1151_0-_SDA2_BASE_(r2)
 /* 80151FEC 0014EDEC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80151FF0 0014EDF0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80151FF4 0014EDF4  7C 7F 1B 78 */	mr r31, r3
 /* 80151FF8 0014EDF8  C0 2D 9E FC */	lfs f1, dontPoll-_SDA_BASE_(r13)
 /* 80151FFC 0014EDFC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80152000 0014EE00  40 80 00 40 */	bge lbl_80152040
-/* 80152004 0014EE04  C0 02 B7 B4 */	lfs f0, $$21150_3-_SDA2_BASE_(r2)
+/* 80152004 0014EE04  C0 02 B7 B4 */	lfs f0, _esc__2_1150_3-_SDA2_BASE_(r2)
 /* 80152008 0014EE08  80 6D 9E F4 */	lwz r3, currentCard-_SDA_BASE_(r13)
 /* 8015200C 0014EE0C  D0 0D 9E FC */	stfs f0, dontPoll-_SDA_BASE_(r13)
 /* 80152010 0014EE10  48 00 0E A1 */	bl zSaveLoad_CardCheckSingle__Fi
@@ -756,22 +758,22 @@ zSaveLoadSGInit__F16en_SAVEGAME_MODE:
 /* 80152180 0014EF80  38 60 00 00 */	li r3, 0
 /* 80152184 0014EF84  4B FF FF 9D */	bl zSaveLoad_UIEvent__FiUi
 /* 80152188 0014EF88  38 60 00 00 */	li r3, 0
-/* 8015218C 0014EF8C  4B FF FA FD */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 8015218C 0014EF8C  4B FF FA FD */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 80152190 0014EF90  2C 1F 00 0A */	cmpwi r31, 0xa
 /* 80152194 0014EF94  40 82 00 18 */	bne lbl_801521AC
 /* 80152198 0014EF98  38 60 00 42 */	li r3, 0x42
 /* 8015219C 0014EF9C  38 80 00 27 */	li r4, 0x27
 /* 801521A0 0014EFA0  38 A0 00 00 */	li r5, 0
-/* 801521A4 0014EFA4  4B FF F8 6D */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 801521A4 0014EFA4  4B FF F8 6D */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 801521A8 0014EFA8  48 00 00 14 */	b lbl_801521BC
 lbl_801521AC:
 /* 801521AC 0014EFAC  38 60 00 42 */	li r3, 0x42
 /* 801521B0 0014EFB0  38 80 00 28 */	li r4, 0x28
 /* 801521B4 0014EFB4  38 A0 00 00 */	li r5, 0
-/* 801521B8 0014EFB8  4B FF F8 59 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 801521B8 0014EFB8  4B FF F8 59 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 lbl_801521BC:
-/* 801521BC 0014EFBC  C0 22 B7 B4 */	lfs f1, $$21150_3-_SDA2_BASE_(r2)
-/* 801521C0 0014EFC0  4B FF FA 5D */	bl WaitAndSpin__23$$2unnamed$$2zSaveLoad_cpp$$2Ff
+/* 801521BC 0014EFBC  C0 22 B7 B4 */	lfs f1, _esc__2_1150_3-_SDA2_BASE_(r2)
+/* 801521C0 0014EFC0  4B FF FA 5D */	bl WaitAndSpin__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Ff
 /* 801521C4 0014EFC4  7F E3 FB 78 */	mr r3, r31
 /* 801521C8 0014EFC8  4B F0 42 D9 */	bl xSGInit__F16en_SAVEGAME_MODE
 /* 801521CC 0014EFCC  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -789,7 +791,7 @@ zSaveLoadSGDone__FP17st_XSAVEGAME_DATA:
 /* 801521F0 0014EFF0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801521F4 0014EFF4  7C 7F 1B 78 */	mr r31, r3
 /* 801521F8 0014EFF8  38 60 00 42 */	li r3, 0x42
-/* 801521FC 0014EFFC  4B FF F9 8D */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 801521FC 0014EFFC  4B FF F9 8D */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152200 0014F000  7F E3 FB 78 */	mr r3, r31
 /* 80152204 0014F004  4B F0 43 91 */	bl xSGDone__FP17st_XSAVEGAME_DATA
 /* 80152208 0014F008  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1009,20 +1011,20 @@ zSaveLoad_CardPrompt__Fi:
 /* 801524AC 0014F2AC  7C 7F 1B 78 */	mr r31, r3
 /* 801524B0 0014F2B0  2C 1F 00 01 */	cmpwi r31, 1
 /* 801524B4 0014F2B4  40 82 00 10 */	bne lbl_801524C4
-/* 801524B8 0014F2B8  80 0D CD F4 */	lwz r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801524B8 0014F2B8  80 0D CD F4 */	lwz r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801524BC 0014F2BC  2C 00 00 00 */	cmpwi r0, 0
 /* 801524C0 0014F2C0  41 82 00 18 */	beq lbl_801524D8
 lbl_801524C4:
 /* 801524C4 0014F2C4  2C 1F 00 00 */	cmpwi r31, 0
 /* 801524C8 0014F2C8  40 82 00 50 */	bne lbl_80152518
-/* 801524CC 0014F2CC  80 0D CD F8 */	lwz r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801524CC 0014F2CC  80 0D CD F8 */	lwz r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801524D0 0014F2D0  2C 00 00 00 */	cmpwi r0, 0
 /* 801524D4 0014F2D4  40 82 00 44 */	bne lbl_80152518
 lbl_801524D8:
 /* 801524D8 0014F2D8  38 60 00 40 */	li r3, 0x40
 /* 801524DC 0014F2DC  38 80 00 11 */	li r4, 0x11
 /* 801524E0 0014F2E0  38 A0 00 01 */	li r5, 1
-/* 801524E4 0014F2E4  4B FF F5 2D */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 801524E4 0014F2E4  4B FF F5 2D */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 801524E8 0014F2E8  2C 1F 00 01 */	cmpwi r31, 1
 /* 801524EC 0014F2EC  38 60 00 16 */	li r3, 0x16
 /* 801524F0 0014F2F0  40 82 00 08 */	bne lbl_801524F8
@@ -1034,13 +1036,13 @@ lbl_801524F8:
 /* 80152504 0014F304  38 80 00 52 */	li r4, 0x52
 /* 80152508 0014F308  4B FF FC 19 */	bl zSaveLoad_UIEvent__FiUi
 /* 8015250C 0014F30C  38 60 00 00 */	li r3, 0
-/* 80152510 0014F310  4B FF F7 79 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 80152510 0014F310  4B FF F7 79 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 80152514 0014F314  48 00 00 40 */	b lbl_80152554
 lbl_80152518:
 /* 80152518 0014F318  38 60 00 40 */	li r3, 0x40
 /* 8015251C 0014F31C  38 80 00 11 */	li r4, 0x11
 /* 80152520 0014F320  38 A0 00 01 */	li r5, 1
-/* 80152524 0014F324  4B FF F4 ED */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152524 0014F324  4B FF F4 ED */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80152528 0014F328  2C 1F 00 01 */	cmpwi r31, 1
 /* 8015252C 0014F32C  38 60 00 16 */	li r3, 0x16
 /* 80152530 0014F330  40 82 00 08 */	bne lbl_80152538
@@ -1052,7 +1054,7 @@ lbl_80152538:
 /* 80152544 0014F344  38 80 00 52 */	li r4, 0x52
 /* 80152548 0014F348  4B FF FB D9 */	bl zSaveLoad_UIEvent__FiUi
 /* 8015254C 0014F34C  38 60 00 00 */	li r3, 0
-/* 80152550 0014F350  4B FF F7 39 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 80152550 0014F350  4B FF F7 39 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 lbl_80152554:
 /* 80152554 0014F354  38 00 FF FF */	li r0, -1
 /* 80152558 0014F358  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
@@ -1065,24 +1067,24 @@ lbl_80152564:
 /* 8015256C 0014F36C  41 82 FF F4 */	beq lbl_80152560
 /* 80152570 0014F370  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152574 0014F374  40 82 00 10 */	bne lbl_80152584
-/* 80152578 0014F378  80 0D CD F4 */	lwz r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80152578 0014F378  80 0D CD F4 */	lwz r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8015257C 0014F37C  2C 00 00 00 */	cmpwi r0, 0
 /* 80152580 0014F380  41 82 00 18 */	beq lbl_80152598
 lbl_80152584:
 /* 80152584 0014F384  2C 1F 00 00 */	cmpwi r31, 0
 /* 80152588 0014F388  40 82 00 20 */	bne lbl_801525A8
-/* 8015258C 0014F38C  80 0D CD F8 */	lwz r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 8015258C 0014F38C  80 0D CD F8 */	lwz r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80152590 0014F390  2C 00 00 00 */	cmpwi r0, 0
 /* 80152594 0014F394  40 82 00 14 */	bne lbl_801525A8
 lbl_80152598:
 /* 80152598 0014F398  38 60 00 40 */	li r3, 0x40
 /* 8015259C 0014F39C  38 80 00 01 */	li r4, 1
-/* 801525A0 0014F3A0  4B FF F5 E9 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 801525A0 0014F3A0  4B FF F5 E9 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 801525A4 0014F3A4  48 00 00 10 */	b lbl_801525B4
 lbl_801525A8:
 /* 801525A8 0014F3A8  38 60 00 40 */	li r3, 0x40
 /* 801525AC 0014F3AC  38 80 00 01 */	li r4, 1
-/* 801525B0 0014F3B0  4B FF F5 D9 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 801525B0 0014F3B0  4B FF F5 D9 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 lbl_801525B4:
 /* 801525B4 0014F3B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801525B8 0014F3B8  80 6D CD DC */	lwz r3, saveLoadPromptSel-_SDA_BASE_(r13)
@@ -1108,7 +1110,7 @@ lbl_801525F0:
 /* 801525F8 0014F3F8  38 60 00 44 */	li r3, 0x44
 /* 801525FC 0014F3FC  38 80 00 21 */	li r4, 0x21
 /* 80152600 0014F400  38 A0 00 00 */	li r5, 0
-/* 80152604 0014F404  4B FF F4 0D */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152604 0014F404  4B FF F4 0D */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80152608 0014F408  38 00 FF FF */	li r0, -1
 /* 8015260C 0014F40C  3B E0 00 02 */	li r31, 2
 /* 80152610 0014F410  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
@@ -1126,7 +1128,7 @@ lbl_80152630:
 /* 80152638 0014F438  41 82 FF E0 */	beq lbl_80152618
 /* 8015263C 0014F43C  38 60 00 44 */	li r3, 0x44
 /* 80152640 0014F440  38 80 00 01 */	li r4, 1
-/* 80152644 0014F444  4B FF F5 45 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 80152644 0014F444  4B FF F5 45 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152648 0014F448  2C 1E 00 01 */	cmpwi r30, 1
 /* 8015264C 0014F44C  38 60 00 16 */	li r3, 0x16
 /* 80152650 0014F450  40 82 00 08 */	bne lbl_80152658
@@ -1151,7 +1153,7 @@ zSaveLoad_CardPromptSpace__Fi:
 /* 8015268C 0014F48C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80152690 0014F490  7C 7F 1B 78 */	mr r31, r3
 /* 80152694 0014F494  38 60 00 41 */	li r3, 0x41
-/* 80152698 0014F498  4B FF F3 79 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152698 0014F498  4B FF F3 79 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 8015269C 0014F49C  2C 1F 00 01 */	cmpwi r31, 1
 /* 801526A0 0014F4A0  38 60 00 15 */	li r3, 0x15
 /* 801526A4 0014F4A4  40 82 00 08 */	bne lbl_801526AC
@@ -1177,7 +1179,7 @@ lbl_801526DC:
 /* 801526E4 0014F4E4  41 82 FF F4 */	beq lbl_801526D8
 /* 801526E8 0014F4E8  38 60 00 41 */	li r3, 0x41
 /* 801526EC 0014F4EC  38 80 00 01 */	li r4, 1
-/* 801526F0 0014F4F0  4B FF F4 99 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 801526F0 0014F4F0  4B FF F4 99 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 801526F4 0014F4F4  80 6D 9E F8 */	lwz r3, currentGame-_SDA_BASE_(r13)
 /* 801526F8 0014F4F8  2C 03 00 00 */	cmpwi r3, 0
 /* 801526FC 0014F4FC  41 80 00 10 */	blt lbl_8015270C
@@ -1202,7 +1204,7 @@ zSaveLoad_CardPromptGames__Fi:
 /* 80152738 0014F538  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8015273C 0014F53C  7C 7F 1B 78 */	mr r31, r3
 /* 80152740 0014F540  38 60 00 41 */	li r3, 0x41
-/* 80152744 0014F544  4B FF F2 CD */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152744 0014F544  4B FF F2 CD */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80152748 0014F548  2C 1F 00 01 */	cmpwi r31, 1
 /* 8015274C 0014F54C  38 60 00 16 */	li r3, 0x16
 /* 80152750 0014F550  40 82 00 08 */	bne lbl_80152758
@@ -1223,7 +1225,7 @@ lbl_80152778:
 /* 80152780 0014F580  41 82 FF EC */	beq lbl_8015276C
 /* 80152784 0014F584  38 60 00 41 */	li r3, 0x41
 /* 80152788 0014F588  38 80 00 01 */	li r4, 1
-/* 8015278C 0014F58C  4B FF F3 FD */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 8015278C 0014F58C  4B FF F3 FD */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152790 0014F590  80 6D 9E F4 */	lwz r3, currentCard-_SDA_BASE_(r13)
 /* 80152794 0014F594  38 80 00 51 */	li r4, 0x51
 /* 80152798 0014F598  38 63 00 04 */	addi r3, r3, 4
@@ -1243,12 +1245,12 @@ zSaveLoad_CardPromptGameSlotEmpty__Fv:
 /* 801527C4 0014F5C4  38 80 00 13 */	li r4, 0x13
 /* 801527C8 0014F5C8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801527CC 0014F5CC  38 A0 00 00 */	li r5, 0
-/* 801527D0 0014F5D0  4B FF F2 41 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 801527D0 0014F5D0  4B FF F2 41 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 801527D4 0014F5D4  38 60 00 15 */	li r3, 0x15
 /* 801527D8 0014F5D8  38 80 00 52 */	li r4, 0x52
 /* 801527DC 0014F5DC  4B FF F9 45 */	bl zSaveLoad_UIEvent__FiUi
 /* 801527E0 0014F5E0  38 60 00 00 */	li r3, 0
-/* 801527E4 0014F5E4  4B FF F4 A5 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 801527E4 0014F5E4  4B FF F4 A5 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 801527E8 0014F5E8  38 00 FF FF */	li r0, -1
 /* 801527EC 0014F5EC  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
 /* 801527F0 0014F5F0  48 00 00 10 */	b lbl_80152800
@@ -1262,7 +1264,7 @@ lbl_80152800:
 /* 80152808 0014F608  41 82 FF EC */	beq lbl_801527F4
 /* 8015280C 0014F60C  38 60 00 41 */	li r3, 0x41
 /* 80152810 0014F610  38 80 00 01 */	li r4, 1
-/* 80152814 0014F614  4B FF F3 75 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 80152814 0014F614  4B FF F3 75 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152818 0014F618  80 6D 9E F8 */	lwz r3, currentGame-_SDA_BASE_(r13)
 /* 8015281C 0014F61C  38 80 00 51 */	li r4, 0x51
 /* 80152820 0014F620  38 63 00 19 */	addi r3, r3, 0x19
@@ -1282,11 +1284,11 @@ zSaveLoad_CardPromptOverwrite__Fv:
 /* 8015284C 0014F64C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80152850 0014F650  4B FF F8 D1 */	bl zSaveLoad_UIEvent__FiUi
 /* 80152854 0014F654  38 60 00 00 */	li r3, 0
-/* 80152858 0014F658  4B FF F4 31 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 80152858 0014F658  4B FF F4 31 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 8015285C 0014F65C  38 60 00 44 */	li r3, 0x44
 /* 80152860 0014F660  38 80 00 22 */	li r4, 0x22
 /* 80152864 0014F664  38 A0 00 00 */	li r5, 0
-/* 80152868 0014F668  4B FF F1 A9 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152868 0014F668  4B FF F1 A9 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 8015286C 0014F66C  38 00 FF FF */	li r0, -1
 /* 80152870 0014F670  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
 /* 80152874 0014F674  48 00 00 10 */	b lbl_80152884
@@ -1300,7 +1302,7 @@ lbl_80152884:
 /* 8015288C 0014F68C  41 82 FF EC */	beq lbl_80152878
 /* 80152890 0014F690  38 60 00 44 */	li r3, 0x44
 /* 80152894 0014F694  38 80 00 01 */	li r4, 1
-/* 80152898 0014F698  4B FF F2 F1 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 80152898 0014F698  4B FF F2 F1 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 8015289C 0014F69C  80 6D 9E F8 */	lwz r3, currentGame-_SDA_BASE_(r13)
 /* 801528A0 0014F6A0  38 80 00 5E */	li r4, 0x5e
 /* 801528A4 0014F6A4  38 63 00 19 */	addi r3, r3, 0x19
@@ -1320,11 +1322,11 @@ zSaveLoad_CardPromptOverwriteDamaged__Fv:
 /* 801528D0 0014F6D0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801528D4 0014F6D4  4B FF F8 4D */	bl zSaveLoad_UIEvent__FiUi
 /* 801528D8 0014F6D8  38 60 00 00 */	li r3, 0
-/* 801528DC 0014F6DC  4B FF F3 AD */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 801528DC 0014F6DC  4B FF F3 AD */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 801528E0 0014F6E0  38 60 00 44 */	li r3, 0x44
 /* 801528E4 0014F6E4  38 80 00 23 */	li r4, 0x23
 /* 801528E8 0014F6E8  38 A0 00 00 */	li r5, 0
-/* 801528EC 0014F6EC  4B FF F1 25 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 801528EC 0014F6EC  4B FF F1 25 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 801528F0 0014F6F0  38 00 FF FF */	li r0, -1
 /* 801528F4 0014F6F4  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
 /* 801528F8 0014F6F8  48 00 00 10 */	b lbl_80152908
@@ -1338,7 +1340,7 @@ lbl_80152908:
 /* 80152910 0014F710  41 82 FF EC */	beq lbl_801528FC
 /* 80152914 0014F714  38 60 00 44 */	li r3, 0x44
 /* 80152918 0014F718  38 80 00 01 */	li r4, 1
-/* 8015291C 0014F71C  4B FF F2 6D */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 8015291C 0014F71C  4B FF F2 6D */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152920 0014F720  80 6D 9E F8 */	lwz r3, currentGame-_SDA_BASE_(r13)
 /* 80152924 0014F724  38 80 00 5E */	li r4, 0x5e
 /* 80152928 0014F728  38 63 00 19 */	addi r3, r3, 0x19
@@ -1363,7 +1365,7 @@ zSaveLoad_ErrorPrompt__Fi:
 /* 80152968 0014F768  38 80 00 2A */	li r4, 0x2a
 lbl_8015296C:
 /* 8015296C 0014F76C  38 A0 00 00 */	li r5, 0
-/* 80152970 0014F770  4B FF F0 A1 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152970 0014F770  4B FF F0 A1 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80152974 0014F774  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152978 0014F778  38 60 00 15 */	li r3, 0x15
 /* 8015297C 0014F77C  40 82 00 08 */	bne lbl_80152984
@@ -1372,7 +1374,7 @@ lbl_80152984:
 /* 80152984 0014F784  38 80 00 52 */	li r4, 0x52
 /* 80152988 0014F788  4B FF F7 99 */	bl zSaveLoad_UIEvent__FiUi
 /* 8015298C 0014F78C  38 60 00 00 */	li r3, 0
-/* 80152990 0014F790  4B FF F2 F9 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 80152990 0014F790  4B FF F2 F9 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 80152994 0014F794  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152998 0014F798  38 60 00 15 */	li r3, 0x15
 /* 8015299C 0014F79C  40 82 00 08 */	bne lbl_801529A4
@@ -1397,7 +1399,7 @@ lbl_801529D0:
 /* 801529D8 0014F7D8  41 82 FF F4 */	beq lbl_801529CC
 /* 801529DC 0014F7DC  38 60 00 41 */	li r3, 0x41
 /* 801529E0 0014F7E0  38 80 00 01 */	li r4, 1
-/* 801529E4 0014F7E4  4B FF F1 A5 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 801529E4 0014F7E4  4B FF F1 A5 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 801529E8 0014F7E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801529EC 0014F7EC  80 6D CD DC */	lwz r3, saveLoadPromptSel-_SDA_BASE_(r13)
 /* 801529F0 0014F7F0  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1415,7 +1417,7 @@ zSaveLoad_DamagedSaveGameErrorPrompt__Fi:
 /* 80152A14 0014F814  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80152A18 0014F818  7C 7F 1B 78 */	mr r31, r3
 /* 80152A1C 0014F81C  38 60 00 41 */	li r3, 0x41
-/* 80152A20 0014F820  4B FF EF F1 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152A20 0014F820  4B FF EF F1 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80152A24 0014F824  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152A28 0014F828  38 60 00 15 */	li r3, 0x15
 /* 80152A2C 0014F82C  40 82 00 08 */	bne lbl_80152A34
@@ -1424,7 +1426,7 @@ lbl_80152A34:
 /* 80152A34 0014F834  38 80 00 52 */	li r4, 0x52
 /* 80152A38 0014F838  4B FF F6 E9 */	bl zSaveLoad_UIEvent__FiUi
 /* 80152A3C 0014F83C  38 60 00 00 */	li r3, 0
-/* 80152A40 0014F840  4B FF F2 49 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 80152A40 0014F840  4B FF F2 49 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 80152A44 0014F844  38 00 FF FF */	li r0, -1
 /* 80152A48 0014F848  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
 /* 80152A4C 0014F84C  48 00 00 08 */	b lbl_80152A54
@@ -1436,7 +1438,7 @@ lbl_80152A54:
 /* 80152A5C 0014F85C  41 82 FF F4 */	beq lbl_80152A50
 /* 80152A60 0014F860  38 60 00 41 */	li r3, 0x41
 /* 80152A64 0014F864  38 80 00 01 */	li r4, 1
-/* 80152A68 0014F868  4B FF F1 21 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 80152A68 0014F868  4B FF F1 21 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152A6C 0014F86C  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152A70 0014F870  38 60 00 15 */	li r3, 0x15
 /* 80152A74 0014F874  40 82 00 08 */	bne lbl_80152A7C
@@ -1468,7 +1470,7 @@ zSaveLoad_CardWrongDeviceErrorPrompt__Fi:
 /* 80152ACC 0014F8CC  38 80 00 39 */	li r4, 0x39
 lbl_80152AD0:
 /* 80152AD0 0014F8D0  38 A0 00 00 */	li r5, 0
-/* 80152AD4 0014F8D4  4B FF EF 3D */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152AD4 0014F8D4  4B FF EF 3D */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80152AD8 0014F8D8  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152ADC 0014F8DC  38 60 00 15 */	li r3, 0x15
 /* 80152AE0 0014F8E0  40 82 00 08 */	bne lbl_80152AE8
@@ -1477,7 +1479,7 @@ lbl_80152AE8:
 /* 80152AE8 0014F8E8  38 80 00 52 */	li r4, 0x52
 /* 80152AEC 0014F8EC  4B FF F6 35 */	bl zSaveLoad_UIEvent__FiUi
 /* 80152AF0 0014F8F0  38 60 00 00 */	li r3, 0
-/* 80152AF4 0014F8F4  4B FF F1 95 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 80152AF4 0014F8F4  4B FF F1 95 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 80152AF8 0014F8F8  38 00 FF FF */	li r0, -1
 /* 80152AFC 0014F8FC  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
 /* 80152B00 0014F900  48 00 00 08 */	b lbl_80152B08
@@ -1489,7 +1491,7 @@ lbl_80152B08:
 /* 80152B10 0014F910  41 82 FF F4 */	beq lbl_80152B04
 /* 80152B14 0014F914  38 60 00 41 */	li r3, 0x41
 /* 80152B18 0014F918  38 80 00 01 */	li r4, 1
-/* 80152B1C 0014F91C  4B FF F0 6D */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 80152B1C 0014F91C  4B FF F0 6D */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152B20 0014F920  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152B24 0014F924  38 60 00 15 */	li r3, 0x15
 /* 80152B28 0014F928  40 82 00 08 */	bne lbl_80152B30
@@ -1522,7 +1524,7 @@ lbl_80152B80:
 /* 80152B80 0014F980  38 80 00 52 */	li r4, 0x52
 /* 80152B84 0014F984  4B FF F5 9D */	bl zSaveLoad_UIEvent__FiUi
 /* 80152B88 0014F988  38 60 00 00 */	li r3, 0
-/* 80152B8C 0014F98C  4B FF F0 FD */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 80152B8C 0014F98C  4B FF F0 FD */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 80152B90 0014F990  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152B94 0014F994  38 60 00 41 */	li r3, 0x41
 /* 80152B98 0014F998  38 80 00 38 */	li r4, 0x38
@@ -1530,7 +1532,7 @@ lbl_80152B80:
 /* 80152BA0 0014F9A0  38 80 00 37 */	li r4, 0x37
 lbl_80152BA4:
 /* 80152BA4 0014F9A4  38 A0 00 00 */	li r5, 0
-/* 80152BA8 0014F9A8  4B FF EE 69 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152BA8 0014F9A8  4B FF EE 69 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80152BAC 0014F9AC  38 00 FF FF */	li r0, -1
 /* 80152BB0 0014F9B0  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
 /* 80152BB4 0014F9B4  48 00 00 08 */	b lbl_80152BBC
@@ -1542,7 +1544,7 @@ lbl_80152BBC:
 /* 80152BC4 0014F9C4  41 82 FF F4 */	beq lbl_80152BB8
 /* 80152BC8 0014F9C8  38 60 00 41 */	li r3, 0x41
 /* 80152BCC 0014F9CC  38 80 00 01 */	li r4, 1
-/* 80152BD0 0014F9D0  4B FF EF B9 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 80152BD0 0014F9D0  4B FF EF B9 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152BD4 0014F9D4  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152BD8 0014F9D8  38 60 00 15 */	li r3, 0x15
 /* 80152BDC 0014F9DC  40 82 00 08 */	bne lbl_80152BE4
@@ -1575,11 +1577,11 @@ lbl_80152C34:
 /* 80152C34 0014FA34  38 80 00 52 */	li r4, 0x52
 /* 80152C38 0014FA38  4B FF F4 E9 */	bl zSaveLoad_UIEvent__FiUi
 /* 80152C3C 0014FA3C  38 60 00 00 */	li r3, 0
-/* 80152C40 0014FA40  4B FF F0 49 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 80152C40 0014FA40  4B FF F0 49 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 80152C44 0014FA44  38 60 00 41 */	li r3, 0x41
 /* 80152C48 0014FA48  38 80 00 35 */	li r4, 0x35
 /* 80152C4C 0014FA4C  38 A0 00 00 */	li r5, 0
-/* 80152C50 0014FA50  4B FF ED C1 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152C50 0014FA50  4B FF ED C1 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80152C54 0014FA54  38 00 FF FF */	li r0, -1
 /* 80152C58 0014FA58  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
 /* 80152C5C 0014FA5C  48 00 00 08 */	b lbl_80152C64
@@ -1591,7 +1593,7 @@ lbl_80152C64:
 /* 80152C6C 0014FA6C  41 82 FF F4 */	beq lbl_80152C60
 /* 80152C70 0014FA70  38 60 00 41 */	li r3, 0x41
 /* 80152C74 0014FA74  38 80 00 01 */	li r4, 1
-/* 80152C78 0014FA78  4B FF EF 11 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 80152C78 0014FA78  4B FF EF 11 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152C7C 0014FA7C  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152C80 0014FA80  38 60 00 15 */	li r3, 0x15
 /* 80152C84 0014FA84  40 82 00 08 */	bne lbl_80152C8C
@@ -1619,7 +1621,7 @@ zSaveLoad_CardYankedErrorPrompt__Fi:
 /* 80152CCC 0014FACC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80152CD0 0014FAD0  7C 7F 1B 78 */	mr r31, r3
 /* 80152CD4 0014FAD4  38 60 00 41 */	li r3, 0x41
-/* 80152CD8 0014FAD8  4B FF ED 39 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152CD8 0014FAD8  4B FF ED 39 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80152CDC 0014FADC  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152CE0 0014FAE0  38 60 00 16 */	li r3, 0x16
 /* 80152CE4 0014FAE4  40 82 00 08 */	bne lbl_80152CEC
@@ -1638,7 +1640,7 @@ lbl_80152D04:
 /* 80152D0C 0014FB0C  41 82 FF F4 */	beq lbl_80152D00
 /* 80152D10 0014FB10  38 60 00 41 */	li r3, 0x41
 /* 80152D14 0014FB14  38 80 00 01 */	li r4, 1
-/* 80152D18 0014FB18  4B FF EE 71 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 80152D18 0014FB18  4B FF EE 71 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152D1C 0014FB1C  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152D20 0014FB20  38 60 00 15 */	li r3, 0x15
 /* 80152D24 0014FB24  40 82 00 08 */	bne lbl_80152D2C
@@ -1670,7 +1672,7 @@ zSaveLoad_ErrorFormatPrompt__Fi:
 /* 80152D7C 0014FB7C  38 80 00 2C */	li r4, 0x2c
 lbl_80152D80:
 /* 80152D80 0014FB80  38 A0 00 00 */	li r5, 0
-/* 80152D84 0014FB84  4B FF EC 8D */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152D84 0014FB84  4B FF EC 8D */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80152D88 0014FB88  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152D8C 0014FB8C  38 60 00 16 */	li r3, 0x16
 /* 80152D90 0014FB90  40 82 00 08 */	bne lbl_80152D98
@@ -1689,7 +1691,7 @@ lbl_80152DB0:
 /* 80152DB8 0014FBB8  41 82 FF F4 */	beq lbl_80152DAC
 /* 80152DBC 0014FBBC  38 60 00 41 */	li r3, 0x41
 /* 80152DC0 0014FBC0  38 80 00 01 */	li r4, 1
-/* 80152DC4 0014FBC4  4B FF ED C5 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 80152DC4 0014FBC4  4B FF ED C5 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152DC8 0014FBC8  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152DCC 0014FBCC  38 60 00 15 */	li r3, 0x15
 /* 80152DD0 0014FBD0  40 82 00 08 */	bne lbl_80152DD8
@@ -1728,7 +1730,7 @@ lbl_80152E28:
 /* 80152E40 0014FC40  38 80 00 2D */	li r4, 0x2d
 lbl_80152E44:
 /* 80152E44 0014FC44  38 A0 00 00 */	li r5, 0
-/* 80152E48 0014FC48  4B FF EB C9 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80152E48 0014FC48  4B FF EB C9 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80152E4C 0014FC4C  38 00 FF FF */	li r0, -1
 /* 80152E50 0014FC50  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
 /* 80152E54 0014FC54  48 00 00 08 */	b lbl_80152E5C
@@ -1740,7 +1742,7 @@ lbl_80152E5C:
 /* 80152E64 0014FC64  41 82 FF F4 */	beq lbl_80152E58
 /* 80152E68 0014FC68  38 60 00 41 */	li r3, 0x41
 /* 80152E6C 0014FC6C  38 80 00 01 */	li r4, 1
-/* 80152E70 0014FC70  4B FF ED 19 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 80152E70 0014FC70  4B FF ED 19 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80152E74 0014FC74  2C 1F 00 01 */	cmpwi r31, 1
 /* 80152E78 0014FC78  38 60 00 15 */	li r3, 0x15
 /* 80152E7C 0014FC7C  40 82 00 08 */	bne lbl_80152E84
@@ -2679,9 +2681,9 @@ lbl_80153A7C:
 /* 80153A8C 0015088C  38 1F 00 01 */	addi r0, r31, 1
 /* 80153A90 00150890  28 00 00 0C */	cmplwi r0, 0xc
 /* 80153A94 00150894  41 81 00 9C */	bgt lbl_80153B30
-/* 80153A98 00150898  3C 60 80 31 */	lis r3, $$21924@ha
+/* 80153A98 00150898  3C 60 80 31 */	lis r3, _esc__2_1924@ha
 /* 80153A9C 0015089C  54 00 10 3A */	slwi r0, r0, 2
-/* 80153AA0 001508A0  38 63 F8 8C */	addi r3, r3, $$21924@l
+/* 80153AA0 001508A0  38 63 F8 8C */	addi r3, r3, _esc__2_1924@l
 /* 80153AA4 001508A4  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80153AA8 001508A8  7C 09 03 A6 */	mtctr r0
 /* 80153AAC 001508AC  4E 80 04 20 */	bctr 
@@ -2776,14 +2778,14 @@ lbl_80153BD0:
 lbl_80153BE8:
 /* 80153BE8 001509E8  38 80 00 52 */	li r4, 0x52
 /* 80153BEC 001509EC  4B FF E5 35 */	bl zSaveLoad_UIEvent__FiUi
-/* 80153BF0 001509F0  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80153BF4 001509F4  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80153BF0 001509F0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80153BF4 001509F4  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80153BF8 001509F8  38 63 00 63 */	addi r3, r3, 0x63
 /* 80153BFC 001509FC  4B F1 90 25 */	bl xStrHash__FPCc
 /* 80153C00 00150A00  48 00 6A DD */	bl zSceneFindObject__FUi
-/* 80153C04 00150A04  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153C04 00150A04  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153C08 00150A08  7C 7D 1B 78 */	mr r29, r3
-/* 80153C0C 00150A0C  38 64 46 F0 */	addi r3, r4, $$2stringBase0_92@l
+/* 80153C0C 00150A0C  38 64 46 F0 */	addi r3, r4, _esc__2_stringBase0_92@l
 /* 80153C10 00150A10  38 63 00 75 */	addi r3, r3, 0x75
 /* 80153C14 00150A14  4B F1 90 0D */	bl xStrHash__FPCc
 /* 80153C18 00150A18  48 00 6A C5 */	bl zSceneFindObject__FUi
@@ -2830,17 +2832,17 @@ lbl_80153C90:
 IsValidName__FPc:
 /* 80153CA4 00150AA4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80153CA8 00150AA8  7C 08 02 A6 */	mflr r0
-/* 80153CAC 00150AAC  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153CAC 00150AAC  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153CB0 00150AB0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80153CB4 00150AB4  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80153CB4 00150AB4  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80153CB8 00150AB8  38 84 05 AA */	addi r4, r4, 0x5aa
 /* 80153CBC 00150ABC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80153CC0 00150AC0  7C 7F 1B 78 */	mr r31, r3
 /* 80153CC4 00150AC4  48 16 86 4D */	bl strcmp
 /* 80153CC8 00150AC8  2C 03 00 00 */	cmpwi r3, 0
 /* 80153CCC 00150ACC  41 82 00 30 */	beq lbl_80153CFC
-/* 80153CD0 00150AD0  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80153CD4 00150AD4  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80153CD0 00150AD0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80153CD4 00150AD4  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80153CD8 00150AD8  38 63 05 AB */	addi r3, r3, 0x5ab
 /* 80153CDC 00150ADC  4B F1 8F 45 */	bl xStrHash__FPCc
 /* 80153CE0 00150AE0  38 80 00 00 */	li r4, 0
@@ -2880,9 +2882,9 @@ lbl_80153D44:
 /* 80153D4C 00150B4C  90 65 00 04 */	stw r3, 4(r5)
 /* 80153D50 00150B50  94 05 00 08 */	stwu r0, 8(r5)
 /* 80153D54 00150B54  42 00 FF F0 */	bdnz lbl_80153D44
-/* 80153D58 00150B58  3C 60 80 2E */	lis r3, $$21936@ha
+/* 80153D58 00150B58  3C 60 80 2E */	lis r3, _esc__2_1936@ha
 /* 80153D5C 00150B5C  38 00 00 20 */	li r0, 0x20
-/* 80153D60 00150B60  38 63 45 F0 */	addi r3, r3, $$21936@l
+/* 80153D60 00150B60  38 63 45 F0 */	addi r3, r3, _esc__2_1936@l
 /* 80153D64 00150B64  38 A1 00 64 */	addi r5, r1, 0x64
 /* 80153D68 00150B68  38 83 FF FC */	addi r4, r3, -4
 /* 80153D6C 00150B6C  7C 09 03 A6 */	mtctr r0
@@ -2892,8 +2894,8 @@ lbl_80153D70:
 /* 80153D78 00150B78  90 65 00 04 */	stw r3, 4(r5)
 /* 80153D7C 00150B7C  94 05 00 08 */	stwu r0, 8(r5)
 /* 80153D80 00150B80  42 00 FF F0 */	bdnz lbl_80153D70
-/* 80153D84 00150B84  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80153D88 00150B88  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80153D84 00150B84  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80153D88 00150B88  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80153D8C 00150B8C  38 63 05 AB */	addi r3, r3, 0x5ab
 /* 80153D90 00150B90  4B F1 8E 91 */	bl xStrHash__FPCc
 /* 80153D94 00150B94  38 80 00 00 */	li r4, 0
@@ -2919,11 +2921,11 @@ lbl_80153DD0:
 /* 80153DE0 00150BE0  3C 60 80 38 */	lis r3, zSaveLoadGameTable@ha
 /* 80153DE4 00150BE4  38 A0 00 2F */	li r5, 0x2f
 /* 80153DE8 00150BE8  38 03 3E 28 */	addi r0, r3, zSaveLoadGameTable@l
-/* 80153DEC 00150BEC  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153DEC 00150BEC  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153DF0 00150BF0  7C 60 F2 14 */	add r3, r0, r30
 /* 80153DF4 00150BF4  98 A1 00 4A */	stb r5, 0x4a(r1)
 /* 80153DF8 00150BF8  88 C3 00 48 */	lbz r6, 0x48(r3)
-/* 80153DFC 00150BFC  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80153DFC 00150BFC  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80153E00 00150C00  88 E3 00 49 */	lbz r7, 0x49(r3)
 /* 80153E04 00150C04  38 61 00 68 */	addi r3, r1, 0x68
 /* 80153E08 00150C08  38 84 05 C9 */	addi r4, r4, 0x5c9
@@ -2960,30 +2962,30 @@ lbl_80153E7C:
 /* 80153E80 00150C80  41 82 00 38 */	beq lbl_80153EB8
 /* 80153E84 00150C84  48 00 00 4C */	b lbl_80153ED0
 lbl_80153E88:
-/* 80153E88 00150C88  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153E88 00150C88  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153E8C 00150C8C  38 61 00 08 */	addi r3, r1, 8
-/* 80153E90 00150C90  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80153E90 00150C90  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80153E94 00150C94  38 84 05 D1 */	addi r4, r4, 0x5d1
 /* 80153E98 00150C98  48 16 86 5D */	bl strcpy
 /* 80153E9C 00150C9C  48 00 00 CC */	b lbl_80153F68
 lbl_80153EA0:
-/* 80153EA0 00150CA0  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153EA0 00150CA0  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153EA4 00150CA4  38 61 00 08 */	addi r3, r1, 8
-/* 80153EA8 00150CA8  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80153EA8 00150CA8  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80153EAC 00150CAC  38 84 05 D8 */	addi r4, r4, 0x5d8
 /* 80153EB0 00150CB0  48 16 86 45 */	bl strcpy
 /* 80153EB4 00150CB4  48 00 00 B4 */	b lbl_80153F68
 lbl_80153EB8:
-/* 80153EB8 00150CB8  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153EB8 00150CB8  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153EBC 00150CBC  38 61 00 08 */	addi r3, r1, 8
-/* 80153EC0 00150CC0  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80153EC0 00150CC0  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80153EC4 00150CC4  38 84 05 DD */	addi r4, r4, 0x5dd
 /* 80153EC8 00150CC8  48 16 86 2D */	bl strcpy
 /* 80153ECC 00150CCC  48 00 00 9C */	b lbl_80153F68
 lbl_80153ED0:
-/* 80153ED0 00150CD0  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153ED0 00150CD0  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153ED4 00150CD4  38 61 00 08 */	addi r3, r1, 8
-/* 80153ED8 00150CD8  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80153ED8 00150CD8  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80153EDC 00150CDC  38 84 05 E2 */	addi r4, r4, 0x5e2
 /* 80153EE0 00150CE0  48 16 86 15 */	bl strcpy
 /* 80153EE4 00150CE4  48 00 00 84 */	b lbl_80153F68
@@ -2999,39 +3001,39 @@ lbl_80153F00:
 /* 80153F04 00150D04  41 82 00 38 */	beq lbl_80153F3C
 /* 80153F08 00150D08  48 00 00 4C */	b lbl_80153F54
 lbl_80153F0C:
-/* 80153F0C 00150D0C  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153F0C 00150D0C  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153F10 00150D10  38 61 00 08 */	addi r3, r1, 8
-/* 80153F14 00150D14  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80153F14 00150D14  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80153F18 00150D18  38 84 05 D1 */	addi r4, r4, 0x5d1
 /* 80153F1C 00150D1C  48 16 85 D9 */	bl strcpy
 /* 80153F20 00150D20  48 00 00 48 */	b lbl_80153F68
 lbl_80153F24:
-/* 80153F24 00150D24  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153F24 00150D24  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153F28 00150D28  38 61 00 08 */	addi r3, r1, 8
-/* 80153F2C 00150D2C  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80153F2C 00150D2C  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80153F30 00150D30  38 84 05 E8 */	addi r4, r4, 0x5e8
 /* 80153F34 00150D34  48 16 85 C1 */	bl strcpy
 /* 80153F38 00150D38  48 00 00 30 */	b lbl_80153F68
 lbl_80153F3C:
-/* 80153F3C 00150D3C  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153F3C 00150D3C  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153F40 00150D40  38 61 00 08 */	addi r3, r1, 8
-/* 80153F44 00150D44  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80153F44 00150D44  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80153F48 00150D48  38 84 05 EE */	addi r4, r4, 0x5ee
 /* 80153F4C 00150D4C  48 16 85 A9 */	bl strcpy
 /* 80153F50 00150D50  48 00 00 18 */	b lbl_80153F68
 lbl_80153F54:
-/* 80153F54 00150D54  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153F54 00150D54  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153F58 00150D58  38 61 00 08 */	addi r3, r1, 8
-/* 80153F5C 00150D5C  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80153F5C 00150D5C  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80153F60 00150D60  38 84 05 F6 */	addi r4, r4, 0x5f6
 /* 80153F64 00150D64  48 16 85 91 */	bl strcpy
 lbl_80153F68:
 /* 80153F68 00150D68  3C 60 80 38 */	lis r3, zSaveLoadGameTable@ha
-/* 80153F6C 00150D6C  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80153F6C 00150D6C  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80153F70 00150D70  38 03 3E 28 */	addi r0, r3, zSaveLoadGameTable@l
 /* 80153F74 00150D74  80 FD 00 00 */	lwz r7, 0(r29)
 /* 80153F78 00150D78  7C 60 F2 14 */	add r3, r0, r30
-/* 80153F7C 00150D7C  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80153F7C 00150D7C  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80153F80 00150D80  80 A3 00 60 */	lwz r5, 0x60(r3)
 /* 80153F84 00150D84  7F E9 FB 78 */	mr r9, r31
 /* 80153F88 00150D88  38 61 00 68 */	addi r3, r1, 0x68
@@ -3065,8 +3067,8 @@ zSaveLoad_BuildName__FPcUli:
 /* 80153FE8 00150DE8  38 61 00 88 */	addi r3, r1, 0x88
 /* 80153FEC 00150DEC  7F 24 CB 78 */	mr r4, r25
 /* 80153FF0 00150DF0  4B FF FD 2D */	bl BuildIt__FPci
-/* 80153FF4 00150DF4  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80153FF8 00150DF8  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80153FF4 00150DF4  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80153FF8 00150DF8  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80153FFC 00150DFC  38 63 05 AB */	addi r3, r3, 0x5ab
 /* 80154000 00150E00  4B F1 8C 21 */	bl xStrHash__FPCc
 /* 80154004 00150E04  38 80 00 00 */	li r4, 0
@@ -3103,9 +3105,9 @@ lbl_80154070:
 /* 80154074 00150E74  41 80 FF BC */	blt lbl_80154030
 /* 80154078 00150E78  2C 1B 00 00 */	cmpwi r27, 0
 /* 8015407C 00150E7C  40 81 00 30 */	ble lbl_801540AC
-/* 80154080 00150E80  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80154080 00150E80  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80154084 00150E84  7E E3 BB 78 */	mr r3, r23
-/* 80154088 00150E88  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 80154088 00150E88  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 8015408C 00150E8C  7F 66 DB 78 */	mr r6, r27
 /* 80154090 00150E90  38 84 06 14 */	addi r4, r4, 0x614
 /* 80154094 00150E94  38 A1 00 88 */	addi r5, r1, 0x88
@@ -3163,8 +3165,8 @@ lbl_80154128:
 /* 80154144 00150F44  4B F0 28 E5 */	bl xSGGameIsEmpty__FP17st_XSAVEGAME_DATAi
 /* 80154148 00150F48  2C 03 00 00 */	cmpwi r3, 0
 /* 8015414C 00150F4C  41 82 00 5C */	beq lbl_801541A8
-/* 80154150 00150F50  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80154154 00150F54  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80154150 00150F50  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80154154 00150F54  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80154158 00150F58  38 63 06 1C */	addi r3, r3, 0x61c
 /* 8015415C 00150F5C  4B F1 8A C5 */	bl xStrHash__FPCc
 /* 80154160 00150F60  38 80 00 00 */	li r4, 0
@@ -3191,8 +3193,8 @@ lbl_801541A8:
 /* 801541B0 00150FB0  4B F2 AA 5D */	bl iSGIsGameCorrupt__FP13st_ISGSESSIONi
 /* 801541B4 00150FB4  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801541B8 00150FB8  41 82 00 5C */	beq lbl_80154214
-/* 801541BC 00150FBC  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 801541C0 00150FC0  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 801541BC 00150FBC  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 801541C0 00150FC0  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 801541C4 00150FC4  38 63 05 AB */	addi r3, r3, 0x5ab
 /* 801541C8 00150FC8  4B F1 8A 59 */	bl xStrHash__FPCc
 /* 801541CC 00150FCC  38 80 00 00 */	li r4, 0
@@ -3275,9 +3277,9 @@ lbl_80154298:
 /* 801542F8 001510F8  38 05 00 03 */	addi r0, r5, 3
 /* 801542FC 001510FC  90 1D 00 64 */	stw r0, 0x64(r29)
 /* 80154300 00151100  4B F0 28 89 */	bl xSGGameThumbIndex__FP17st_XSAVEGAME_DATAi
-/* 80154304 00151104  3C 80 80 2E */	lis r4, $$2stringBase0_92@ha
+/* 80154304 00151104  3C 80 80 2E */	lis r4, _esc__2_stringBase0_92@ha
 /* 80154308 00151108  98 7D 00 68 */	stb r3, 0x68(r29)
-/* 8015430C 0015110C  38 84 46 F0 */	addi r4, r4, $$2stringBase0_92@l
+/* 8015430C 0015110C  38 84 46 F0 */	addi r4, r4, _esc__2_stringBase0_92@l
 /* 80154310 00151110  3A FD 00 68 */	addi r23, r29, 0x68
 /* 80154314 00151114  7F A3 EB 78 */	mr r3, r29
 /* 80154318 00151118  38 84 05 AA */	addi r4, r4, 0x5aa
@@ -3471,7 +3473,7 @@ lbl_801545AC:
 /* 801545AC 001513AC  38 80 00 52 */	li r4, 0x52
 /* 801545B0 001513B0  4B FF DB 71 */	bl zSaveLoad_UIEvent__FiUi
 /* 801545B4 001513B4  38 60 00 01 */	li r3, 1
-/* 801545B8 001513B8  4B FF D6 D1 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 801545B8 001513B8  4B FF D6 D1 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 801545BC 001513BC  7F 83 E3 78 */	mr r3, r28
 lbl_801545C0:
 /* 801545C0 001513C0  BA E1 00 0C */	lmw r23, 0xc(r1)
@@ -3528,7 +3530,7 @@ zSaveLoadAutoSaveUpdate__Fv:
 /* 8015465C 0015145C  4B F1 85 BD */	bl xSTGetLocalizationEnum__Fv
 /* 80154660 00151460  2C 03 00 0B */	cmpwi r3, 0xb
 /* 80154664 00151464  40 82 00 64 */	bne lbl_801546C8
-/* 80154668 00151468  80 82 B7 D0 */	lwz r4, $$22085-_SDA2_BASE_(r2)
+/* 80154668 00151468  80 82 B7 D0 */	lwz r4, _esc__2_2085-_SDA2_BASE_(r2)
 /* 8015466C 0015146C  3B A1 00 10 */	addi r29, r1, 0x10
 /* 80154670 00151470  80 62 B7 D4 */	lwz r3, lbl_803D54F4-_SDA2_BASE_(r2)
 /* 80154674 00151474  3B C0 00 00 */	li r30, 0
@@ -3573,8 +3575,8 @@ lbl_801546C8:
 /* 80154700 00151500  40 80 00 08 */	bge lbl_80154708
 /* 80154704 00151504  48 00 00 2C */	b lbl_80154730
 lbl_80154708:
-/* 80154708 00151508  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 8015470C 0015150C  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80154708 00151508  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 8015470C 0015150C  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80154710 00151510  38 63 06 54 */	addi r3, r3, 0x654
 /* 80154714 00151514  4B F1 85 0D */	bl xStrHash__FPCc
 /* 80154718 00151518  48 00 5F C5 */	bl zSceneFindObject__FUi
@@ -3585,8 +3587,8 @@ lbl_80154708:
 /* 8015472C 0015152C  48 00 00 64 */	b lbl_80154790
 lbl_80154730:
 /* 80154730 00151530  38 00 00 01 */	li r0, 1
-/* 80154734 00151534  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80154738 00151538  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80154734 00151534  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80154738 00151538  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 8015473C 0015153C  98 0D CE 0B */	stb r0, autosaveErrorHack-_SDA_BASE_(r13)
 /* 80154740 00151540  38 63 06 54 */	addi r3, r3, 0x654
 /* 80154744 00151544  4B F1 84 DD */	bl xStrHash__FPCc
@@ -3596,8 +3598,8 @@ lbl_80154730:
 /* 80154754 00151554  38 80 00 04 */	li r4, 4
 /* 80154758 00151558  4B ED 55 59 */	bl zEntEvent__FP5xBaseUi
 lbl_8015475C:
-/* 8015475C 0015155C  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80154760 00151560  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 8015475C 0015155C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80154760 00151560  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80154764 00151564  38 63 06 67 */	addi r3, r3, 0x667
 /* 80154768 00151568  4B F1 84 B9 */	bl xStrHash__FPCc
 /* 8015476C 0015156C  48 00 5F 71 */	bl zSceneFindObject__FUi
@@ -4188,20 +4190,20 @@ zSaveLoad_LoadLoop__Fv:
 /* 80154F6C 00151D6C  38 80 00 00 */	li r4, 0
 /* 80154F70 00151D70  38 00 00 01 */	li r0, 1
 /* 80154F74 00151D74  3C 60 80 38 */	lis r3, globals@ha
-/* 80154F78 00151D78  98 8D CE 08 */	stb r4, promptActive__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80154F78 00151D78  98 8D CE 08 */	stb r4, promptActive__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80154F7C 00151D7C  3B E3 2A 38 */	addi r31, r3, globals@l
 /* 80154F80 00151D80  90 0D CD F0 */	stw r0, sAccessType-_SDA_BASE_(r13)
-/* 80154F84 00151D84  98 0D 9F 0C */	stb r0, sIsLoading__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
-/* 80154F88 00151D88  90 8D CD F4 */	stw r4, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80154F84 00151D84  98 0D 9F 0C */	stb r0, sIsLoading__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80154F88 00151D88  90 8D CD F4 */	stw r4, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80154F8C 00151D8C  48 00 02 48 */	b lbl_801551D4
 lbl_80154F90:
 /* 80154F90 00151D90  3B C0 FF FF */	li r30, -1
 /* 80154F94 00151D94  28 00 00 09 */	cmplwi r0, 9
 /* 80154F98 00151D98  93 CD 9F 50 */	stw r30, g_promptUserSelection-_SDA_BASE_(r13)
 /* 80154F9C 00151D9C  41 81 02 38 */	bgt lbl_801551D4
-/* 80154FA0 00151DA0  3C 60 80 31 */	lis r3, $$22333@ha
+/* 80154FA0 00151DA0  3C 60 80 31 */	lis r3, _esc__2_2333@ha
 /* 80154FA4 00151DA4  54 00 10 3A */	slwi r0, r0, 2
-/* 80154FA8 00151DA8  38 63 F8 F8 */	addi r3, r3, $$22333@l
+/* 80154FA8 00151DA8  38 63 F8 F8 */	addi r3, r3, _esc__2_2333@l
 /* 80154FAC 00151DAC  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80154FB0 00151DB0  7C 09 03 A6 */	mtctr r0
 /* 80154FB4 00151DB4  4E 80 04 20 */	bctr 
@@ -4227,7 +4229,7 @@ lbl_80154FE8:
 lbl_80154FF8:
 /* 80154FF8 00151DF8  38 00 00 08 */	li r0, 8
 /* 80154FFC 00151DFC  3B A0 00 00 */	li r29, 0
-/* 80155000 00151E00  90 0D CD F4 */	stw r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155000 00151E00  90 0D CD F4 */	stw r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155004 00151E04  48 00 00 10 */	b lbl_80155014
 lbl_80155008:
 /* 80155008 00151E08  4B FF D4 49 */	bl zSaveLoad_CardCount__Fv
@@ -4237,7 +4239,7 @@ lbl_80155014:
 /* 80155014 00151E14  57 A0 06 3F */	clrlwi. r0, r29, 0x18
 /* 80155018 00151E18  41 82 01 BC */	beq lbl_801551D4
 /* 8015501C 00151E1C  38 00 00 01 */	li r0, 1
-/* 80155020 00151E20  90 0D CD F4 */	stw r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155020 00151E20  90 0D CD F4 */	stw r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155024 00151E24  48 00 01 B0 */	b lbl_801551D4
 /* 80155028 00151E28  38 60 00 01 */	li r3, 1
 /* 8015502C 00151E2C  4B FF E9 11 */	bl zSaveLoad_CardPick__Fi
@@ -4256,49 +4258,49 @@ lbl_80155054:
 /* 8015505C 00151E5C  48 00 00 28 */	b lbl_80155084
 lbl_80155060:
 /* 80155060 00151E60  38 00 00 02 */	li r0, 2
-/* 80155064 00151E64  90 0D CD F4 */	stw r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155064 00151E64  90 0D CD F4 */	stw r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155068 00151E68  48 00 01 6C */	b lbl_801551D4
 lbl_8015506C:
 /* 8015506C 00151E6C  38 00 00 08 */	li r0, 8
-/* 80155070 00151E70  90 0D CD F4 */	stw r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155070 00151E70  90 0D CD F4 */	stw r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155074 00151E74  48 00 01 60 */	b lbl_801551D4
 lbl_80155078:
 /* 80155078 00151E78  38 00 00 00 */	li r0, 0
-/* 8015507C 00151E7C  90 0D CD F4 */	stw r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 8015507C 00151E7C  90 0D CD F4 */	stw r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155080 00151E80  48 00 01 54 */	b lbl_801551D4
 lbl_80155084:
 /* 80155084 00151E84  38 00 00 00 */	li r0, 0
-/* 80155088 00151E88  90 0D CD F4 */	stw r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155088 00151E88  90 0D CD F4 */	stw r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8015508C 00151E8C  48 00 01 48 */	b lbl_801551D4
 /* 80155090 00151E90  38 60 00 01 */	li r3, 1
 /* 80155094 00151E94  4B FF F0 39 */	bl zSaveLoad_GameSelect__Fi
 /* 80155098 00151E98  38 03 00 01 */	addi r0, r3, 1
 /* 8015509C 00151E9C  28 00 00 0D */	cmplwi r0, 0xd
 /* 801550A0 00151EA0  41 81 01 34 */	bgt lbl_801551D4
-/* 801550A4 00151EA4  3C 60 80 31 */	lis r3, $$22334@ha
+/* 801550A4 00151EA4  3C 60 80 31 */	lis r3, _esc__2_2334@ha
 /* 801550A8 00151EA8  54 00 10 3A */	slwi r0, r0, 2
-/* 801550AC 00151EAC  38 63 F8 C0 */	addi r3, r3, $$22334@l
+/* 801550AC 00151EAC  38 63 F8 C0 */	addi r3, r3, _esc__2_2334@l
 /* 801550B0 00151EB0  7C 03 00 2E */	lwzx r0, r3, r0
 /* 801550B4 00151EB4  7C 09 03 A6 */	mtctr r0
 /* 801550B8 00151EB8  4E 80 04 20 */	bctr 
 /* 801550BC 00151EBC  38 00 00 00 */	li r0, 0
 /* 801550C0 00151EC0  38 60 00 00 */	li r3, 0
-/* 801550C4 00151EC4  90 0D CD F4 */	stw r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801550C4 00151EC4  90 0D CD F4 */	stw r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801550C8 00151EC8  38 80 00 52 */	li r4, 0x52
 /* 801550CC 00151ECC  4B FF D0 55 */	bl zSaveLoad_UIEvent__FiUi
 /* 801550D0 00151ED0  38 60 00 00 */	li r3, 0
 /* 801550D4 00151ED4  38 80 00 04 */	li r4, 4
 /* 801550D8 00151ED8  4B FF D0 49 */	bl zSaveLoad_UIEvent__FiUi
 /* 801550DC 00151EDC  38 60 00 00 */	li r3, 0
-/* 801550E0 00151EE0  4B FF CB A9 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 801550E0 00151EE0  4B FF CB A9 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 801550E4 00151EE4  48 00 00 F0 */	b lbl_801551D4
 /* 801550E8 00151EE8  38 00 00 09 */	li r0, 9
-/* 801550EC 00151EEC  90 0D CD F4 */	stw r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801550EC 00151EEC  90 0D CD F4 */	stw r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801550F0 00151EF0  48 00 00 E4 */	b lbl_801551D4
 /* 801550F4 00151EF4  38 60 00 01 */	li r3, 1
 /* 801550F8 00151EF8  4B FF D8 4D */	bl zSaveLoad_ErrorPrompt__Fi
 /* 801550FC 00151EFC  38 00 00 01 */	li r0, 1
-/* 80155100 00151F00  90 0D CD F4 */	stw r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155100 00151F00  90 0D CD F4 */	stw r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155104 00151F04  48 00 00 D0 */	b lbl_801551D4
 /* 80155108 00151F08  38 60 00 02 */	li r3, 2
 /* 8015510C 00151F0C  4B F7 A9 D1 */	bl zGameModeSwitch__F9eGameMode
@@ -4311,9 +4313,9 @@ lbl_80155084:
 /* 80155128 00151F28  38 80 00 52 */	li r4, 0x52
 /* 8015512C 00151F2C  4B FF CF F5 */	bl zSaveLoad_UIEvent__FiUi
 /* 80155130 00151F30  38 60 00 00 */	li r3, 0
-/* 80155134 00151F34  4B FF CB 55 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 80155134 00151F34  4B FF CB 55 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 80155138 00151F38  38 00 00 06 */	li r0, 6
-/* 8015513C 00151F3C  90 0D CD F4 */	stw r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 8015513C 00151F3C  90 0D CD F4 */	stw r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155140 00151F40  48 00 00 94 */	b lbl_801551D4
 /* 80155144 00151F44  4B FF FC 11 */	bl zSaveLoad_LoadGame__Fv
 /* 80155148 00151F48  2C 03 00 07 */	cmpwi r3, 7
@@ -4326,17 +4328,17 @@ lbl_80155160:
 /* 80155160 00151F60  38 60 00 42 */	li r3, 0x42
 /* 80155164 00151F64  38 80 00 45 */	li r4, 0x45
 /* 80155168 00151F68  38 A0 00 00 */	li r5, 0
-/* 8015516C 00151F6C  4B FF C8 A5 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 8015516C 00151F6C  4B FF C8 A5 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80155170 00151F70  38 60 00 42 */	li r3, 0x42
 /* 80155174 00151F74  38 80 00 01 */	li r4, 1
-/* 80155178 00151F78  4B FF CA 11 */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 80155178 00151F78  4B FF CA 11 */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 8015517C 00151F7C  38 60 00 0B */	li r3, 0xb
 /* 80155180 00151F80  4B F7 A9 5D */	bl zGameModeSwitch__F9eGameMode
 /* 80155184 00151F84  38 60 00 00 */	li r3, 0
 /* 80155188 00151F88  4B F7 A8 5D */	bl zGameStateSwitch__Fi
 /* 8015518C 00151F8C  38 60 00 06 */	li r3, 6
 /* 80155190 00151F90  38 00 00 01 */	li r0, 1
-/* 80155194 00151F94  90 6D CD F4 */	stw r3, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155194 00151F94  90 6D CD F4 */	stw r3, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155198 00151F98  98 1F 04 99 */	stb r0, 0x499(r31)
 /* 8015519C 00151F9C  48 00 00 38 */	b lbl_801551D4
 lbl_801551A0:
@@ -4344,7 +4346,7 @@ lbl_801551A0:
 /* 801551A4 00151FA4  4B FF D8 5D */	bl zSaveLoad_DamagedSaveGameErrorPrompt__Fi
 /* 801551A8 00151FA8  38 60 00 02 */	li r3, 2
 /* 801551AC 00151FAC  38 00 FF FF */	li r0, -1
-/* 801551B0 00151FB0  90 6D CD F4 */	stw r3, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801551B0 00151FB0  90 6D CD F4 */	stw r3, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801551B4 00151FB4  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
 /* 801551B8 00151FB8  48 00 00 1C */	b lbl_801551D4
 lbl_801551BC:
@@ -4352,10 +4354,10 @@ lbl_801551BC:
 /* 801551C0 00151FC0  4B FF D7 85 */	bl zSaveLoad_ErrorPrompt__Fi
 /* 801551C4 00151FC4  38 60 00 01 */	li r3, 1
 /* 801551C8 00151FC8  38 00 FF FF */	li r0, -1
-/* 801551CC 00151FCC  90 6D CD F4 */	stw r3, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801551CC 00151FCC  90 6D CD F4 */	stw r3, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801551D0 00151FD0  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
 lbl_801551D4:
-/* 801551D4 00151FD4  80 0D CD F4 */	lwz r0, loadState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801551D4 00151FD4  80 0D CD F4 */	lwz r0, loadState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801551D8 00151FD8  2C 00 00 06 */	cmpwi r0, 6
 /* 801551DC 00151FDC  40 82 FD B4 */	bne lbl_80154F90
 /* 801551E0 00151FE0  88 1F 04 99 */	lbz r0, 0x499(r31)
@@ -4404,20 +4406,20 @@ zSaveLoad_SaveLoop__Fv:
 /* 8015527C 0015207C  4B FF CE A5 */	bl zSaveLoad_UIEvent__FiUi
 /* 80155280 00152080  38 00 00 00 */	li r0, 0
 /* 80155284 00152084  3C 60 80 38 */	lis r3, globals@ha
-/* 80155288 00152088  98 0D CE 08 */	stb r0, promptActive__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155288 00152088  98 0D CE 08 */	stb r0, promptActive__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8015528C 0015208C  3B E3 2A 38 */	addi r31, r3, globals@l
-/* 80155290 00152090  98 0D 9F 0C */	stb r0, sIsLoading__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155290 00152090  98 0D 9F 0C */	stb r0, sIsLoading__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155294 00152094  90 0D CD D0 */	stw r0, saveSuccess-_SDA_BASE_(r13)
-/* 80155298 00152098  90 0D CD F8 */	stw r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155298 00152098  90 0D CD F8 */	stw r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8015529C 0015209C  48 00 03 50 */	b lbl_801555EC
 lbl_801552A0:
 /* 801552A0 001520A0  3B C0 FF FF */	li r30, -1
 /* 801552A4 001520A4  28 00 00 0B */	cmplwi r0, 0xb
 /* 801552A8 001520A8  93 CD 9F 50 */	stw r30, g_promptUserSelection-_SDA_BASE_(r13)
 /* 801552AC 001520AC  41 81 03 40 */	bgt lbl_801555EC
-/* 801552B0 001520B0  3C 60 80 31 */	lis r3, $$22402@ha
+/* 801552B0 001520B0  3C 60 80 31 */	lis r3, _esc__2_2402@ha
 /* 801552B4 001520B4  54 00 10 3A */	slwi r0, r0, 2
-/* 801552B8 001520B8  38 63 F9 58 */	addi r3, r3, $$22402@l
+/* 801552B8 001520B8  38 63 F9 58 */	addi r3, r3, _esc__2_2402@l
 /* 801552BC 001520BC  7C 03 00 2E */	lwzx r0, r3, r0
 /* 801552C0 001520C0  7C 09 03 A6 */	mtctr r0
 /* 801552C4 001520C4  4E 80 04 20 */	bctr 
@@ -4443,7 +4445,7 @@ lbl_801552F8:
 lbl_80155308:
 /* 80155308 00152108  38 60 00 06 */	li r3, 6
 /* 8015530C 0015210C  38 00 00 07 */	li r0, 7
-/* 80155310 00152110  90 6D CD F8 */	stw r3, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155310 00152110  90 6D CD F8 */	stw r3, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155314 00152114  3B A0 00 00 */	li r29, 0
 /* 80155318 00152118  90 0D C8 30 */	stw r0, gGameMode-_SDA_BASE_(r13)
 /* 8015531C 0015211C  48 00 00 10 */	b lbl_8015532C
@@ -4455,7 +4457,7 @@ lbl_8015532C:
 /* 8015532C 0015212C  57 A0 06 3F */	clrlwi. r0, r29, 0x18
 /* 80155330 00152130  41 82 02 BC */	beq lbl_801555EC
 /* 80155334 00152134  38 00 00 01 */	li r0, 1
-/* 80155338 00152138  90 0D CD F8 */	stw r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155338 00152138  90 0D CD F8 */	stw r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8015533C 0015213C  48 00 02 B0 */	b lbl_801555EC
 /* 80155340 00152140  38 60 00 00 */	li r3, 0
 /* 80155344 00152144  4B FF E5 F9 */	bl zSaveLoad_CardPick__Fi
@@ -4471,7 +4473,7 @@ lbl_80155360:
 /* 80155368 00152168  48 00 00 78 */	b lbl_801553E0
 lbl_8015536C:
 /* 8015536C 0015216C  38 00 00 02 */	li r0, 2
-/* 80155370 00152170  90 0D CD F8 */	stw r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155370 00152170  90 0D CD F8 */	stw r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155374 00152174  48 00 02 78 */	b lbl_801555EC
 lbl_80155378:
 /* 80155378 00152178  80 7F 04 C8 */	lwz r3, 0x4c8(r31)
@@ -4481,7 +4483,7 @@ lbl_80155378:
 /* 80155388 00152188  41 82 00 38 */	beq lbl_801553C0
 /* 8015538C 0015218C  38 60 00 06 */	li r3, 6
 /* 80155390 00152190  38 00 00 07 */	li r0, 7
-/* 80155394 00152194  90 6D CD F8 */	stw r3, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155394 00152194  90 6D CD F8 */	stw r3, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155398 00152198  38 60 00 15 */	li r3, 0x15
 /* 8015539C 0015219C  38 80 00 04 */	li r4, 4
 /* 801553A0 001521A0  90 0D C8 30 */	stw r0, gGameMode-_SDA_BASE_(r13)
@@ -4490,21 +4492,21 @@ lbl_80155378:
 /* 801553AC 001521AC  38 80 00 52 */	li r4, 0x52
 /* 801553B0 001521B0  4B FF CD 71 */	bl zSaveLoad_UIEvent__FiUi
 /* 801553B4 001521B4  38 60 00 00 */	li r3, 0
-/* 801553B8 001521B8  4B FF C8 D1 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 801553B8 001521B8  4B FF C8 D1 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 801553BC 001521BC  48 00 02 30 */	b lbl_801555EC
 lbl_801553C0:
 /* 801553C0 001521C0  38 00 00 0B */	li r0, 0xb
-/* 801553C4 001521C4  90 0D CD F8 */	stw r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801553C4 001521C4  90 0D CD F8 */	stw r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801553C8 001521C8  48 00 02 24 */	b lbl_801555EC
 lbl_801553CC:
 /* 801553CC 001521CC  38 60 00 0A */	li r3, 0xa
 /* 801553D0 001521D0  38 00 00 00 */	li r0, 0
-/* 801553D4 001521D4  90 6D CD F8 */	stw r3, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801553D4 001521D4  90 6D CD F8 */	stw r3, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801553D8 001521D8  90 0D 9E F8 */	stw r0, currentGame-_SDA_BASE_(r13)
 /* 801553DC 001521DC  48 00 02 10 */	b lbl_801555EC
 lbl_801553E0:
 /* 801553E0 001521E0  38 00 00 00 */	li r0, 0
-/* 801553E4 001521E4  90 0D CD F8 */	stw r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801553E4 001521E4  90 0D CD F8 */	stw r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801553E8 001521E8  48 00 02 04 */	b lbl_801555EC
 /* 801553EC 001521EC  38 00 00 02 */	li r0, 2
 /* 801553F0 001521F0  38 60 00 00 */	li r3, 0
@@ -4513,15 +4515,15 @@ lbl_801553E0:
 /* 801553FC 001521FC  38 03 00 01 */	addi r0, r3, 1
 /* 80155400 00152200  28 00 00 0D */	cmplwi r0, 0xd
 /* 80155404 00152204  41 81 01 E8 */	bgt lbl_801555EC
-/* 80155408 00152208  3C 60 80 31 */	lis r3, $$22403@ha
+/* 80155408 00152208  3C 60 80 31 */	lis r3, _esc__2_2403@ha
 /* 8015540C 0015220C  54 00 10 3A */	slwi r0, r0, 2
-/* 80155410 00152210  38 63 F9 20 */	addi r3, r3, $$22403@l
+/* 80155410 00152210  38 63 F9 20 */	addi r3, r3, _esc__2_2403@l
 /* 80155414 00152214  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80155418 00152218  7C 09 03 A6 */	mtctr r0
 /* 8015541C 0015221C  4E 80 04 20 */	bctr 
 /* 80155420 00152220  38 60 00 00 */	li r3, 0
 /* 80155424 00152224  38 00 FF FF */	li r0, -1
-/* 80155428 00152228  90 6D CD F8 */	stw r3, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155428 00152228  90 6D CD F8 */	stw r3, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8015542C 0015222C  38 60 00 15 */	li r3, 0x15
 /* 80155430 00152230  38 80 00 52 */	li r4, 0x52
 /* 80155434 00152234  90 0D 9E F4 */	stw r0, currentCard-_SDA_BASE_(r13)
@@ -4530,22 +4532,22 @@ lbl_801553E0:
 /* 80155440 00152240  38 80 00 04 */	li r4, 4
 /* 80155444 00152244  4B FF CC DD */	bl zSaveLoad_UIEvent__FiUi
 /* 80155448 00152248  38 60 00 00 */	li r3, 0
-/* 8015544C 0015224C  4B FF C8 3D */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 8015544C 0015224C  4B FF C8 3D */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 /* 80155450 00152250  38 60 00 34 */	li r3, 0x34
 /* 80155454 00152254  38 80 00 04 */	li r4, 4
 /* 80155458 00152258  4B FF CC C9 */	bl zSaveLoad_UIEvent__FiUi
 /* 8015545C 0015225C  48 00 01 90 */	b lbl_801555EC
 /* 80155460 00152260  38 00 00 0A */	li r0, 0xa
-/* 80155464 00152264  90 0D CD F8 */	stw r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155464 00152264  90 0D CD F8 */	stw r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155468 00152268  48 00 01 84 */	b lbl_801555EC
 /* 8015546C 0015226C  38 60 00 00 */	li r3, 0
 /* 80155470 00152270  4B FF D4 D5 */	bl zSaveLoad_ErrorPrompt__Fi
 /* 80155474 00152274  38 00 00 01 */	li r0, 1
-/* 80155478 00152278  90 0D CD F8 */	stw r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155478 00152278  90 0D CD F8 */	stw r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8015547C 0015227C  48 00 01 70 */	b lbl_801555EC
 /* 80155480 00152280  38 60 00 0A */	li r3, 0xa
 /* 80155484 00152284  38 00 00 00 */	li r0, 0
-/* 80155488 00152288  90 6D CD F8 */	stw r3, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155488 00152288  90 6D CD F8 */	stw r3, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8015548C 0015228C  90 0D 9E F8 */	stw r0, currentGame-_SDA_BASE_(r13)
 /* 80155490 00152290  48 00 01 5C */	b lbl_801555EC
 /* 80155494 00152294  80 7F 04 C8 */	lwz r3, 0x4c8(r31)
@@ -4570,10 +4572,10 @@ lbl_801554BC:
 /* 801554DC 001522DC  38 80 00 52 */	li r4, 0x52
 /* 801554E0 001522E0  4B FF CC 41 */	bl zSaveLoad_UIEvent__FiUi
 /* 801554E4 001522E4  38 60 00 00 */	li r3, 0
-/* 801554E8 001522E8  4B FF C7 A1 */	bl UnselectGameSlot__23$$2unnamed$$2zSaveLoad_cpp$$2Fb
+/* 801554E8 001522E8  4B FF C7 A1 */	bl UnselectGameSlot__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 lbl_801554EC:
 /* 801554EC 001522EC  38 00 00 06 */	li r0, 6
-/* 801554F0 001522F0  90 0D CD F8 */	stw r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801554F0 001522F0  90 0D CD F8 */	stw r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801554F4 001522F4  48 00 00 F8 */	b lbl_801555EC
 /* 801554F8 001522F8  4B FF F5 85 */	bl zSaveLoad_SaveGame__Fv
 /* 801554FC 001522FC  2C 03 00 01 */	cmpwi r3, 1
@@ -4585,14 +4587,14 @@ lbl_801554EC:
 /* 80155514 00152314  4B FF CC 0D */	bl zSaveLoad_UIEvent__FiUi
 /* 80155518 00152318  38 00 00 01 */	li r0, 1
 /* 8015551C 0015231C  38 60 00 42 */	li r3, 0x42
-/* 80155520 00152320  90 0D CD F8 */	stw r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155520 00152320  90 0D CD F8 */	stw r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155524 00152324  38 80 00 43 */	li r4, 0x43
 /* 80155528 00152328  38 A0 00 00 */	li r5, 0
 /* 8015552C 0015232C  90 0D CD D0 */	stw r0, saveSuccess-_SDA_BASE_(r13)
-/* 80155530 00152330  4B FF C4 E1 */	bl DisplayPrompt__23$$2unnamed$$2zSaveLoad_cpp$$2FiUib
+/* 80155530 00152330  4B FF C4 E1 */	bl DisplayPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_FiUib
 /* 80155534 00152334  38 60 00 42 */	li r3, 0x42
 /* 80155538 00152338  38 80 00 01 */	li r4, 1
-/* 8015553C 0015233C  4B FF C6 4D */	bl HidePrompt__23$$2unnamed$$2zSaveLoad_cpp$$2Fib
+/* 8015553C 0015233C  4B FF C6 4D */	bl HidePrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fib
 /* 80155540 00152340  38 00 FF FF */	li r0, -1
 /* 80155544 00152344  80 7F 04 C8 */	lwz r3, 0x4c8(r31)
 /* 80155548 00152348  90 0D CD DC */	stw r0, saveLoadPromptSel-_SDA_BASE_(r13)
@@ -4600,8 +4602,8 @@ lbl_801554EC:
 /* 80155550 00152350  80 63 00 00 */	lwz r3, 0(r3)
 /* 80155554 00152354  7C 03 00 40 */	cmplw r3, r0
 /* 80155558 00152358  40 82 00 28 */	bne lbl_80155580
-/* 8015555C 0015235C  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80155560 00152360  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 8015555C 0015235C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80155560 00152360  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80155564 00152364  38 63 06 78 */	addi r3, r3, 0x678
 /* 80155568 00152368  4B F1 76 B9 */	bl xStrHash__FPCc
 /* 8015556C 0015236C  48 00 51 71 */	bl zSceneFindObject__FUi
@@ -4643,9 +4645,9 @@ lbl_801555DC:
 /* 801555E0 001523E0  4B FF D3 65 */	bl zSaveLoad_ErrorPrompt__Fi
 lbl_801555E4:
 /* 801555E4 001523E4  38 00 00 01 */	li r0, 1
-/* 801555E8 001523E8  90 0D CD F8 */	stw r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801555E8 001523E8  90 0D CD F8 */	stw r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801555EC:
-/* 801555EC 001523EC  80 0D CD F8 */	lwz r0, saveState__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 801555EC 001523EC  80 0D CD F8 */	lwz r0, saveState__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801555F0 001523F0  2C 00 00 06 */	cmpwi r0, 6
 /* 801555F4 001523F4  40 82 FC AC */	bne lbl_801552A0
 /* 801555F8 001523F8  38 00 00 00 */	li r0, 0
@@ -4769,12 +4771,12 @@ lbl_80155780:
 /* 80155788 00152588  48 00 00 1C */	b lbl_801557A4
 lbl_8015578C:
 /* 8015578C 0015258C  38 00 00 01 */	li r0, 1
-/* 80155790 00152590  98 0D CE 09 */	stb r0, promptExiting__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 80155790 00152590  98 0D CE 09 */	stb r0, promptExiting__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80155794 00152594  48 00 00 10 */	b lbl_801557A4
 lbl_80155798:
 /* 80155798 00152598  38 00 00 00 */	li r0, 0
-/* 8015579C 0015259C  98 0D CE 09 */	stb r0, promptExiting__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
-/* 801557A0 001525A0  98 0D CE 08 */	stb r0, promptActive__23$$2unnamed$$2zSaveLoad_cpp$$2-_SDA_BASE_(r13)
+/* 8015579C 0015259C  98 0D CE 09 */	stb r0, promptExiting__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801557A0 001525A0  98 0D CE 08 */	stb r0, promptActive__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801557A4:
 /* 801557A4 001525A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801557A8 001525A8  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -5039,8 +5041,8 @@ zSaveLoad_TriggerAutoSave__Fv:
 /* 80155B48 00152948  4B FF EC 65 */	bl zSaveLoad_DoAutoSave__Fv
 /* 80155B4C 0015294C  2C 03 00 00 */	cmpwi r3, 0
 /* 80155B50 00152950  40 80 00 38 */	bge lbl_80155B88
-/* 80155B54 00152954  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80155B58 00152958  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80155B54 00152954  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80155B58 00152958  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80155B5C 0015295C  38 63 06 67 */	addi r3, r3, 0x667
 /* 80155B60 00152960  4B F1 70 C1 */	bl xStrHash__FPCc
 /* 80155B64 00152964  48 00 4B 79 */	bl zSceneFindObject__FUi
@@ -5054,8 +5056,8 @@ lbl_80155B78:
 /* 80155B80 00152980  38 63 2A 38 */	addi r3, r3, globals@l
 /* 80155B84 00152984  98 03 04 99 */	stb r0, 0x499(r3)
 lbl_80155B88:
-/* 80155B88 00152988  3C 60 80 2E */	lis r3, $$2stringBase0_92@ha
-/* 80155B8C 0015298C  38 63 46 F0 */	addi r3, r3, $$2stringBase0_92@l
+/* 80155B88 00152988  3C 60 80 2E */	lis r3, _esc__2_stringBase0_92@ha
+/* 80155B8C 0015298C  38 63 46 F0 */	addi r3, r3, _esc__2_stringBase0_92@l
 /* 80155B90 00152990  38 63 06 54 */	addi r3, r3, 0x654
 /* 80155B94 00152994  4B F1 70 8D */	bl xStrHash__FPCc
 /* 80155B98 00152998  48 00 4B 45 */	bl zSceneFindObject__FUi
@@ -5071,3 +5073,6 @@ lbl_80155BB4:
 /* 80155BB8 001529B8  7C 08 03 A6 */	mtlr r0
 /* 80155BBC 001529BC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80155BC0 001529C0  4E 80 00 20 */	blr 
+
+.endif
+

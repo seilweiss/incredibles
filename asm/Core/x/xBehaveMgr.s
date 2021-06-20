@@ -9,6 +9,8 @@ g_modinit:
 g_behavmgr:
 	.skip 0x4
 
+.if 0
+
 .section .text
 
 .global xBehaveMgr_Shutdown__Fv
@@ -52,3 +54,6 @@ lbl_8000C6C0:
 /* 8000C6CC 000094CC  7C 08 03 A6 */	mtlr r0
 /* 8000C6D0 000094D0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8000C6D4 000094D4  4E 80 00 20 */	blr 
+
+.endif
+

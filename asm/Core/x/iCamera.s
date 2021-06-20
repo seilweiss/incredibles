@@ -20,33 +20,35 @@ sCameraFarClip:
 
 .section .sdata2
 
-.global $$2814_0
-$$2814_0:
+.global _esc__2_814_0
+_esc__2_814_0:
 	.incbin "baserom.dol", 0x32E6E0, 0x4
-.global $$2875_0
-$$2875_0:
+.global _esc__2_875_0
+_esc__2_875_0:
 	.incbin "baserom.dol", 0x32E6E4, 0x4
-.global $$2880
-$$2880:
+.global _esc__2_880
+_esc__2_880:
 	.incbin "baserom.dol", 0x32E6E8, 0x4
-.global $$2881
-$$2881:
+.global _esc__2_881
+_esc__2_881:
 	.incbin "baserom.dol", 0x32E6EC, 0x4
-.global $$2913
-$$2913:
+.global _esc__2_913
+_esc__2_913:
 	.incbin "baserom.dol", 0x32E6F0, 0x4
-.global $$2914
-$$2914:
+.global _esc__2_914
+_esc__2_914:
 	.incbin "baserom.dol", 0x32E6F4, 0x4
-.global $$2915
-$$2915:
+.global _esc__2_915
+_esc__2_915:
 	.incbin "baserom.dol", 0x32E6F8, 0x8
-.global $$2945
-$$2945:
+.global _esc__2_945
+_esc__2_945:
 	.incbin "baserom.dol", 0x32E700, 0x8
-.global $$21002
-$$21002:
+.global _esc__2_1002
+_esc__2_1002:
 	.incbin "baserom.dol", 0x32E708, 0x8
+
+.if 0
 
 .section .text
 
@@ -119,7 +121,7 @@ iCameraCreate__Fiii:
 /* 800058E8 000026E8  C0 2D 80 00 */	lfs f1, sCameraNearClip-_SDA_BASE_(r13)
 /* 800058EC 000026EC  7F E3 FB 78 */	mr r3, r31
 /* 800058F0 000026F0  48 28 D3 D1 */	bl RwCameraSetNearClipPlane
-/* 800058F4 000026F4  C0 02 80 00 */	lfs f0, $$2814_0-_SDA2_BASE_(r2)
+/* 800058F4 000026F4  C0 02 80 00 */	lfs f0, _esc__2_814_0-_SDA2_BASE_(r2)
 /* 800058F8 000026F8  7F E3 FB 78 */	mr r3, r31
 /* 800058FC 000026FC  38 81 00 0C */	addi r4, r1, 0xc
 /* 80005900 00002700  D0 01 00 0C */	stfs f0, 0xc(r1)
@@ -427,7 +429,7 @@ __as__7xMat3x3FRC7xMat3x3:
 
 .global iCameraGetAspectRatio__Fv
 iCameraGetAspectRatio__Fv:
-/* 80005CF8 00002AF8  C0 22 80 04 */	lfs f1, $$2875_0-_SDA2_BASE_(r2)
+/* 80005CF8 00002AF8  C0 22 80 04 */	lfs f1, _esc__2_875_0-_SDA2_BASE_(r2)
 /* 80005CFC 00002AFC  4E 80 00 20 */	blr 
 
 .global iCameraSetFOV__FP8RwCameraf
@@ -438,9 +440,9 @@ iCameraSetFOV__FP8RwCameraf:
 /* 80005D0C 00002B0C  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 80005D10 00002B10  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
 /* 80005D14 00002B14  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 80005D18 00002B18  C0 02 80 0C */	lfs f0, $$2881-_SDA2_BASE_(r2)
+/* 80005D18 00002B18  C0 02 80 0C */	lfs f0, _esc__2_881-_SDA2_BASE_(r2)
 /* 80005D1C 00002B1C  7C 7F 1B 78 */	mr r31, r3
-/* 80005D20 00002B20  C0 42 80 08 */	lfs f2, $$2880-_SDA2_BASE_(r2)
+/* 80005D20 00002B20  C0 42 80 08 */	lfs f2, _esc__2_880-_SDA2_BASE_(r2)
 /* 80005D24 00002B24  EC 00 00 72 */	fmuls f0, f0, f1
 /* 80005D28 00002B28  EC 22 00 32 */	fmuls f1, f2, f0
 /* 80005D2C 00002B2C  48 07 0B 45 */	bl itan__Ff
@@ -529,18 +531,18 @@ iCamGetViewMatrix__FP8RwCameraP7xMat4x3:
 
 .global iCameraSetNearFarClip__Fff
 iCameraSetNearFarClip__Fff:
-/* 80005E60 00002C60  C0 02 80 14 */	lfs f0, $$2914-_SDA2_BASE_(r2)
+/* 80005E60 00002C60  C0 02 80 14 */	lfs f0, _esc__2_914-_SDA2_BASE_(r2)
 /* 80005E64 00002C64  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80005E68 00002C68  4C 40 13 82 */	cror 2, 0, 2
 /* 80005E6C 00002C6C  40 82 00 08 */	bne lbl_80005E74
-/* 80005E70 00002C70  C0 22 80 10 */	lfs f1, $$2913-_SDA2_BASE_(r2)
+/* 80005E70 00002C70  C0 22 80 10 */	lfs f1, _esc__2_913-_SDA2_BASE_(r2)
 lbl_80005E74:
-/* 80005E74 00002C74  C0 02 80 14 */	lfs f0, $$2914-_SDA2_BASE_(r2)
+/* 80005E74 00002C74  C0 02 80 14 */	lfs f0, _esc__2_914-_SDA2_BASE_(r2)
 /* 80005E78 00002C78  D0 2D 80 00 */	stfs f1, sCameraNearClip-_SDA_BASE_(r13)
 /* 80005E7C 00002C7C  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 80005E80 00002C80  4C 40 13 82 */	cror 2, 0, 2
 /* 80005E84 00002C84  40 82 00 08 */	bne lbl_80005E8C
-/* 80005E88 00002C88  C0 42 80 18 */	lfs f2, $$2915-_SDA2_BASE_(r2)
+/* 80005E88 00002C88  C0 42 80 18 */	lfs f2, _esc__2_915-_SDA2_BASE_(r2)
 lbl_80005E8C:
 /* 80005E8C 00002C8C  D0 4D 80 04 */	stfs f2, sCameraFarClip-_SDA_BASE_(r13)
 /* 80005E90 00002C90  4E 80 00 20 */	blr 
@@ -567,7 +569,7 @@ lbl_80005EC4:
 /* 80005ED4 00002CD4  90 03 04 24 */	stw r0, 0x424(r3)
 /* 80005ED8 00002CD8  48 00 00 C8 */	b lbl_80005FA0
 lbl_80005EDC:
-/* 80005EDC 00002CDC  C0 02 80 14 */	lfs f0, $$2914-_SDA2_BASE_(r2)
+/* 80005EDC 00002CDC  C0 02 80 14 */	lfs f0, _esc__2_914-_SDA2_BASE_(r2)
 /* 80005EE0 00002CE0  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 80005EE4 00002CE4  41 82 00 18 */	beq lbl_80005EFC
 /* 80005EE8 00002CE8  80 AD 91 D0 */	lwz r5, xglobals-_SDA_BASE_(r13)
@@ -601,7 +603,7 @@ lbl_80005F30:
 /* 80005F50 00002D50  3C 00 43 30 */	lis r0, 0x4330
 /* 80005F54 00002D54  3C A0 80 00 */	lis r5, 0x800000F8@ha
 /* 80005F58 00002D58  90 01 00 08 */	stw r0, 8(r1)
-/* 80005F5C 00002D5C  C8 22 80 20 */	lfd f1, $$2945-_SDA2_BASE_(r2)
+/* 80005F5C 00002D5C  C8 22 80 20 */	lfd f1, _esc__2_945-_SDA2_BASE_(r2)
 /* 80005F60 00002D60  90 86 04 64 */	stw r4, 0x464(r6)
 /* 80005F64 00002D64  90 66 04 60 */	stw r3, 0x460(r6)
 /* 80005F68 00002D68  80 05 00 F8 */	lwz r0, 0x800000F8@l(r5)
@@ -682,18 +684,18 @@ iCameraUpdateFog__FP8RwCamerax:
 /* 80006078 00002E78  80 84 04 64 */	lwz r4, 0x464(r4)
 /* 8000607C 00002E7C  48 07 C2 C1 */	bl iTimeDiffSec__Fxx
 /* 80006080 00002E80  EC 41 F8 24 */	fdivs f2, f1, f31
-/* 80006084 00002E84  C0 02 80 00 */	lfs f0, $$2814_0-_SDA2_BASE_(r2)
-/* 80006088 00002E88  C0 22 80 14 */	lfs f1, $$2914-_SDA2_BASE_(r2)
+/* 80006084 00002E84  C0 02 80 00 */	lfs f0, _esc__2_814_0-_SDA2_BASE_(r2)
+/* 80006088 00002E88  C0 22 80 14 */	lfs f1, _esc__2_914-_SDA2_BASE_(r2)
 /* 8000608C 00002E8C  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 80006090 00002E90  40 80 00 08 */	bge lbl_80006098
 /* 80006094 00002E94  FC 00 10 90 */	fmr f0, f2
 lbl_80006098:
 /* 80006098 00002E98  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8000609C 00002E9C  40 81 00 0C */	ble lbl_800060A8
-/* 800060A0 00002EA0  C3 E2 80 14 */	lfs f31, $$2914-_SDA2_BASE_(r2)
+/* 800060A0 00002EA0  C3 E2 80 14 */	lfs f31, _esc__2_914-_SDA2_BASE_(r2)
 /* 800060A4 00002EA4  48 00 00 14 */	b lbl_800060B8
 lbl_800060A8:
-/* 800060A8 00002EA8  C3 E2 80 00 */	lfs f31, $$2814_0-_SDA2_BASE_(r2)
+/* 800060A8 00002EA8  C3 E2 80 00 */	lfs f31, _esc__2_814_0-_SDA2_BASE_(r2)
 /* 800060AC 00002EAC  FC 02 F8 40 */	fcmpo cr0, f2, f31
 /* 800060B0 00002EB0  40 80 00 08 */	bge lbl_800060B8
 /* 800060B4 00002EB4  FF E0 10 90 */	fmr f31, f2
@@ -744,10 +746,10 @@ lbl_800060B8:
 /* 80006164 00002F64  6C A5 80 00 */	xoris r5, r5, 0x8000
 /* 80006168 00002F68  91 01 00 1C */	stw r8, 0x1c(r1)
 /* 8000616C 00002F6C  7C 0C 00 50 */	subf r0, r12, r0
-/* 80006170 00002F70  C8 82 80 28 */	lfd f4, $$21002-_SDA2_BASE_(r2)
+/* 80006170 00002F70  C8 82 80 28 */	lfd f4, _esc__2_1002-_SDA2_BASE_(r2)
 /* 80006174 00002F74  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 80006178 00002F78  90 E1 00 18 */	stw r7, 0x18(r1)
-/* 8000617C 00002F7C  C8 62 80 20 */	lfd f3, $$2945-_SDA2_BASE_(r2)
+/* 8000617C 00002F7C  C8 62 80 20 */	lfd f3, _esc__2_945-_SDA2_BASE_(r2)
 /* 80006180 00002F80  C8 01 00 18 */	lfd f0, 0x18(r1)
 /* 80006184 00002F84  91 21 00 24 */	stw r9, 0x24(r1)
 /* 80006188 00002F88  EC 40 20 28 */	fsubs f2, f0, f4
@@ -824,10 +826,10 @@ lbl_800060B8:
 /* 800062A4 000030A4  6C A5 80 00 */	xoris r5, r5, 0x8000
 /* 800062A8 000030A8  91 01 00 7C */	stw r8, 0x7c(r1)
 /* 800062AC 000030AC  7C 0C 00 50 */	subf r0, r12, r0
-/* 800062B0 000030B0  C8 82 80 28 */	lfd f4, $$21002-_SDA2_BASE_(r2)
+/* 800062B0 000030B0  C8 82 80 28 */	lfd f4, _esc__2_1002-_SDA2_BASE_(r2)
 /* 800062B4 000030B4  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 800062B8 000030B8  90 E1 00 78 */	stw r7, 0x78(r1)
-/* 800062BC 000030BC  C8 62 80 20 */	lfd f3, $$2945-_SDA2_BASE_(r2)
+/* 800062BC 000030BC  C8 62 80 20 */	lfd f3, _esc__2_945-_SDA2_BASE_(r2)
 /* 800062C0 000030C0  C8 01 00 78 */	lfd f0, 0x78(r1)
 /* 800062C4 000030C4  91 21 00 84 */	stw r9, 0x84(r1)
 /* 800062C8 000030C8  EC 40 20 28 */	fsubs f2, f0, f4
@@ -879,7 +881,7 @@ lbl_800060B8:
 /* 80006380 00003180  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 80006384 00003184  98 01 00 0B */	stb r0, 0xb(r1)
 /* 80006388 00003188  48 00 00 4D */	bl __as__6RwRGBAFRC6RwRGBA
-/* 8000638C 0000318C  C0 02 80 00 */	lfs f0, $$2814_0-_SDA2_BASE_(r2)
+/* 8000638C 0000318C  C0 02 80 00 */	lfs f0, _esc__2_814_0-_SDA2_BASE_(r2)
 /* 80006390 00003190  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 80006394 00003194  40 82 00 24 */	bne lbl_800063B8
 /* 80006398 00003198  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
@@ -1071,3 +1073,6 @@ iCameraPerformRenderWareHack__FP8RwCamera:
 /* 8000661C 0000341C  7C 08 03 A6 */	mtlr r0
 /* 80006620 00003420  38 21 00 10 */	addi r1, r1, 0x10
 /* 80006624 00003424  4E 80 00 20 */	blr 
+
+.endif
+

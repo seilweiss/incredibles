@@ -6,6 +6,8 @@
 __vt__21xMemoryManagerGeneral:
 	.incbin "baserom.dol", 0x32D8C0, 0x20
 
+.if 0
+
 .section .text
 
 .global Init__21xMemoryManagerGeneralFPvUiQ221xMemoryManagerGeneral3DirQ221xMemoryManagerGeneral8Strategyb
@@ -28,7 +30,7 @@ Init__21xMemoryManagerGeneralFPvUiQ221xMemoryManagerGeneral3DirQ221xMemoryManage
 lbl_801CE25C:
 /* 801CE25C 001CB05C  7F 83 E3 78 */	mr r3, r28
 /* 801CE260 001CB060  38 9D FF F0 */	addi r4, r29, -16
-/* 801CE264 001CB064  48 00 0B 8D */	bl xMEMADVANCE$$0v$$1__FPvi
+/* 801CE264 001CB064  48 00 0B 8D */	bl xMEMADVANCE_esc__0_v_esc__1___FPvi
 lbl_801CE268:
 /* 801CE268 001CB068  90 7B 00 24 */	stw r3, 0x24(r27)
 /* 801CE26C 001CB06C  38 80 00 00 */	li r4, 0
@@ -282,7 +284,7 @@ lbl_801CE588:
 lbl_801CE5A0:
 /* 801CE5A0 001CB3A0  7F E3 FB 78 */	mr r3, r31
 /* 801CE5A4 001CB3A4  7C 9D 00 D0 */	neg r4, r29
-/* 801CE5A8 001CB3A8  48 00 08 51 */	bl xMEMADVANCE$$0Q221xMemoryManagerGeneral8FreeNode$$1__FPQ221xMemoryManagerGeneral8FreeNodei
+/* 801CE5A8 001CB3A8  48 00 08 51 */	bl xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral8FreeNode_esc__1___FPQ221xMemoryManagerGeneral8FreeNodei
 lbl_801CE5AC:
 /* 801CE5AC 001CB3AC  93 A3 00 00 */	stw r29, 0(r3)
 /* 801CE5B0 001CB3B0  38 63 00 10 */	addi r3, r3, 0x10
@@ -306,7 +308,7 @@ DoFree__21xMemoryManagerGeneralFPv:
 /* 801CE5E8 001CB3E8  2C 00 00 01 */	cmpwi r0, 1
 /* 801CE5EC 001CB3EC  40 82 00 0C */	bne lbl_801CE5F8
 /* 801CE5F0 001CB3F0  7F E4 FB 78 */	mr r4, r31
-/* 801CE5F4 001CB3F4  48 00 08 0D */	bl xMEMADVANCE$$0Q221xMemoryManagerGeneral13AllocatedNode$$1__FPQ221xMemoryManagerGeneral13AllocatedNodeUi
+/* 801CE5F4 001CB3F4  48 00 08 0D */	bl xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral13AllocatedNode_esc__1___FPQ221xMemoryManagerGeneral13AllocatedNodeUi
 lbl_801CE5F8:
 /* 801CE5F8 001CB3F8  38 00 00 00 */	li r0, 0
 /* 801CE5FC 001CB3FC  7C 64 1B 78 */	mr r4, r3
@@ -451,7 +453,7 @@ lbl_801CE7C8:
 /* 801CE7CC 001CB5CC  41 82 00 6C */	beq lbl_801CE838
 /* 801CE7D0 001CB5D0  7F E4 FB 78 */	mr r4, r31
 /* 801CE7D4 001CB5D4  38 7D 00 10 */	addi r3, r29, 0x10
-/* 801CE7D8 001CB5D8  48 00 06 29 */	bl xMEMADVANCE$$0Q221xMemoryManagerGeneral13AllocatedNode$$1__FPQ221xMemoryManagerGeneral13AllocatedNodeUi
+/* 801CE7D8 001CB5D8  48 00 06 29 */	bl xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral13AllocatedNode_esc__1___FPQ221xMemoryManagerGeneral13AllocatedNodeUi
 /* 801CE7DC 001CB5DC  7C 03 E0 40 */	cmplw r3, r28
 /* 801CE7E0 001CB5E0  40 82 00 58 */	bne lbl_801CE838
 /* 801CE7E4 001CB5E4  83 5C 00 08 */	lwz r26, 8(r28)
@@ -462,11 +464,11 @@ lbl_801CE7EC:
 /* 801CE7F4 001CB5F4  80 1E 00 08 */	lwz r0, 8(r30)
 /* 801CE7F8 001CB5F8  7F C3 F3 78 */	mr r3, r30
 /* 801CE7FC 001CB5FC  7C 80 00 D0 */	neg r4, r0
-/* 801CE800 001CB600  48 00 05 F9 */	bl xMEMADVANCE$$0Q221xMemoryManagerGeneral8FreeNode$$1__FPQ221xMemoryManagerGeneral8FreeNodei
+/* 801CE800 001CB600  48 00 05 F9 */	bl xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral8FreeNode_esc__1___FPQ221xMemoryManagerGeneral8FreeNodei
 /* 801CE804 001CB604  7C 75 1B 78 */	mr r21, r3
 /* 801CE808 001CB608  7F E4 FB 78 */	mr r4, r31
 /* 801CE80C 001CB60C  38 7D 00 10 */	addi r3, r29, 0x10
-/* 801CE810 001CB610  48 00 05 F1 */	bl xMEMADVANCE$$0Q221xMemoryManagerGeneral13AllocatedNode$$1__FPQ221xMemoryManagerGeneral13AllocatedNodeUi
+/* 801CE810 001CB610  48 00 05 F1 */	bl xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral13AllocatedNode_esc__1___FPQ221xMemoryManagerGeneral13AllocatedNodeUi
 /* 801CE814 001CB614  7C 03 A8 40 */	cmplw r3, r21
 /* 801CE818 001CB618  40 82 00 08 */	bne lbl_801CE820
 /* 801CE81C 001CB61C  83 7E 00 08 */	lwz r27, 8(r30)
@@ -565,7 +567,7 @@ lbl_801CE944:
 /* 801CE964 001CB764  40 82 00 5C */	bne lbl_801CE9C0
 /* 801CE968 001CB768  7F E3 FB 78 */	mr r3, r31
 /* 801CE96C 001CB76C  7F 04 C3 78 */	mr r4, r24
-/* 801CE970 001CB770  48 00 05 21 */	bl xMEMADVANCE$$0Q221xMemoryManagerGeneral8FreeNode$$1__FPQ221xMemoryManagerGeneral8FreeNodeUi
+/* 801CE970 001CB770  48 00 05 21 */	bl xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral8FreeNode_esc__1___FPQ221xMemoryManagerGeneral8FreeNodeUi
 /* 801CE974 001CB774  7C 75 1B 78 */	mr r21, r3
 /* 801CE978 001CB778  7F E4 FB 78 */	mr r4, r31
 /* 801CE97C 001CB77C  48 00 04 F1 */	bl __as__Q221xMemoryManagerGeneral8FreeNodeFRCQ221xMemoryManagerGeneral8FreeNode
@@ -650,14 +652,14 @@ lbl_801CEA68:
 /* 801CEA80 001CB880  7F 1B C3 78 */	mr r27, r24
 /* 801CEA84 001CB884  7F A3 EB 78 */	mr r3, r29
 /* 801CEA88 001CB888  7E A4 AB 78 */	mr r4, r21
-/* 801CEA8C 001CB88C  48 00 03 D9 */	bl xMEMADVANCE$$0Q221xMemoryManagerGeneral13AllocatedNode$$1__FPQ221xMemoryManagerGeneral13AllocatedNodei
+/* 801CEA8C 001CB88C  48 00 03 D9 */	bl xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral13AllocatedNode_esc__1___FPQ221xMemoryManagerGeneral13AllocatedNodei
 /* 801CEA90 001CB890  80 16 00 2C */	lwz r0, 0x2c(r22)
 /* 801CEA94 001CB894  7C 7A 1B 78 */	mr r26, r3
 /* 801CEA98 001CB898  2C 00 00 01 */	cmpwi r0, 1
 /* 801CEA9C 001CB89C  40 82 00 BC */	bne lbl_801CEB58
 /* 801CEAA0 001CB8A0  7F C3 F3 78 */	mr r3, r30
 /* 801CEAA4 001CB8A4  7E A4 AB 78 */	mr r4, r21
-/* 801CEAA8 001CB8A8  48 00 03 51 */	bl xMEMADVANCE$$0Q221xMemoryManagerGeneral8FreeNode$$1__FPQ221xMemoryManagerGeneral8FreeNodei
+/* 801CEAA8 001CB8A8  48 00 03 51 */	bl xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral8FreeNode_esc__1___FPQ221xMemoryManagerGeneral8FreeNodei
 /* 801CEAAC 001CB8AC  7C 78 1B 78 */	mr r24, r3
 /* 801CEAB0 001CB8B0  7F C4 F3 78 */	mr r4, r30
 /* 801CEAB4 001CB8B4  48 00 03 B9 */	bl __as__Q221xMemoryManagerGeneral8FreeNodeFRCQ221xMemoryManagerGeneral8FreeNode
@@ -708,7 +710,7 @@ lbl_801CEB2C:
 lbl_801CEB48:
 /* 801CEB48 001CB948  7F C3 F3 78 */	mr r3, r30
 /* 801CEB4C 001CB94C  7C 84 00 D0 */	neg r4, r4
-/* 801CEB50 001CB950  48 00 02 A9 */	bl xMEMADVANCE$$0Q221xMemoryManagerGeneral8FreeNode$$1__FPQ221xMemoryManagerGeneral8FreeNodei
+/* 801CEB50 001CB950  48 00 02 A9 */	bl xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral8FreeNode_esc__1___FPQ221xMemoryManagerGeneral8FreeNodei
 /* 801CEB54 001CB954  7C 7A 1B 78 */	mr r26, r3
 lbl_801CEB58:
 /* 801CEB58 001CB958  7F 43 D3 78 */	mr r3, r26
@@ -826,14 +828,14 @@ ShortenNode__21xMemoryManagerGeneralFPQ221xMemoryManagerGeneral13AllocatedNodeUi
 /* 801CECD0 001CBAD0  40 82 00 18 */	bne lbl_801CECE8
 /* 801CECD4 001CBAD4  7F 84 E3 78 */	mr r4, r28
 /* 801CECD8 001CBAD8  38 7B 00 10 */	addi r3, r27, 0x10
-/* 801CECDC 001CBADC  48 00 01 25 */	bl xMEMADVANCE$$0Q221xMemoryManagerGeneral13AllocatedNode$$1__FPQ221xMemoryManagerGeneral13AllocatedNodeUi
+/* 801CECDC 001CBADC  48 00 01 25 */	bl xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral13AllocatedNode_esc__1___FPQ221xMemoryManagerGeneral13AllocatedNodeUi
 /* 801CECE0 001CBAE0  7C 7D 1B 78 */	mr r29, r3
 /* 801CECE4 001CBAE4  48 00 00 28 */	b lbl_801CED0C
 lbl_801CECE8:
 /* 801CECE8 001CBAE8  7F 7D DB 78 */	mr r29, r27
 /* 801CECEC 001CBAEC  7F 63 DB 78 */	mr r3, r27
 /* 801CECF0 001CBAF0  7C 9C F0 50 */	subf r4, r28, r30
-/* 801CECF4 001CBAF4  48 00 01 0D */	bl xMEMADVANCE$$0Q221xMemoryManagerGeneral13AllocatedNode$$1__FPQ221xMemoryManagerGeneral13AllocatedNodeUi
+/* 801CECF4 001CBAF4  48 00 01 0D */	bl xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral13AllocatedNode_esc__1___FPQ221xMemoryManagerGeneral13AllocatedNodeUi
 /* 801CECF8 001CBAF8  7C 7B 1B 78 */	mr r27, r3
 /* 801CECFC 001CBAFC  7F A4 EB 78 */	mr r4, r29
 /* 801CED00 001CBB00  38 BC 00 10 */	addi r5, r28, 0x10
@@ -908,18 +910,18 @@ lbl_801CEDCC:
 /* 801CEDE8 001CBBE8  38 21 00 20 */	addi r1, r1, 0x20
 /* 801CEDEC 001CBBEC  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$0v$$1__FPvi
-xMEMADVANCE$$0v$$1__FPvi:
+.global xMEMADVANCE_esc__0_v_esc__1___FPvi
+xMEMADVANCE_esc__0_v_esc__1___FPvi:
 /* 801CEDF0 001CBBF0  7C 63 22 14 */	add r3, r3, r4
 /* 801CEDF4 001CBBF4  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$0Q221xMemoryManagerGeneral8FreeNode$$1__FPQ221xMemoryManagerGeneral8FreeNodei
-xMEMADVANCE$$0Q221xMemoryManagerGeneral8FreeNode$$1__FPQ221xMemoryManagerGeneral8FreeNodei:
+.global xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral8FreeNode_esc__1___FPQ221xMemoryManagerGeneral8FreeNodei
+xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral8FreeNode_esc__1___FPQ221xMemoryManagerGeneral8FreeNodei:
 /* 801CEDF8 001CBBF8  7C 63 22 14 */	add r3, r3, r4
 /* 801CEDFC 001CBBFC  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$0Q221xMemoryManagerGeneral13AllocatedNode$$1__FPQ221xMemoryManagerGeneral13AllocatedNodeUi
-xMEMADVANCE$$0Q221xMemoryManagerGeneral13AllocatedNode$$1__FPQ221xMemoryManagerGeneral13AllocatedNodeUi:
+.global xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral13AllocatedNode_esc__1___FPQ221xMemoryManagerGeneral13AllocatedNodeUi
+xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral13AllocatedNode_esc__1___FPQ221xMemoryManagerGeneral13AllocatedNodeUi:
 /* 801CEE00 001CBC00  7C 63 22 14 */	add r3, r3, r4
 /* 801CEE04 001CBC04  4E 80 00 20 */	blr 
 
@@ -953,8 +955,8 @@ __as__Q221xMemoryManagerGeneral13AllocatedNodeFRCQ221xMemoryManagerGeneral13Allo
 /* 801CEE5C 001CBC5C  90 03 00 0C */	stw r0, 0xc(r3)
 /* 801CEE60 001CBC60  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$0Q221xMemoryManagerGeneral13AllocatedNode$$1__FPQ221xMemoryManagerGeneral13AllocatedNodei
-xMEMADVANCE$$0Q221xMemoryManagerGeneral13AllocatedNode$$1__FPQ221xMemoryManagerGeneral13AllocatedNodei:
+.global xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral13AllocatedNode_esc__1___FPQ221xMemoryManagerGeneral13AllocatedNodei
+xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral13AllocatedNode_esc__1___FPQ221xMemoryManagerGeneral13AllocatedNodei:
 /* 801CEE64 001CBC64  7C 63 22 14 */	add r3, r3, r4
 /* 801CEE68 001CBC68  4E 80 00 20 */	blr 
 
@@ -970,8 +972,8 @@ __as__Q221xMemoryManagerGeneral8FreeNodeFRCQ221xMemoryManagerGeneral8FreeNode:
 /* 801CEE88 001CBC88  90 03 00 0C */	stw r0, 0xc(r3)
 /* 801CEE8C 001CBC8C  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$0Q221xMemoryManagerGeneral8FreeNode$$1__FPQ221xMemoryManagerGeneral8FreeNodeUi
-xMEMADVANCE$$0Q221xMemoryManagerGeneral8FreeNode$$1__FPQ221xMemoryManagerGeneral8FreeNodeUi:
+.global xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral8FreeNode_esc__1___FPQ221xMemoryManagerGeneral8FreeNodeUi
+xMEMADVANCE_esc__0_Q221xMemoryManagerGeneral8FreeNode_esc__1___FPQ221xMemoryManagerGeneral8FreeNodeUi:
 /* 801CEE90 001CBC90  7C 63 22 14 */	add r3, r3, r4
 /* 801CEE94 001CBC94  4E 80 00 20 */	blr 
 
@@ -989,3 +991,6 @@ lbl_801CEEB4:
 /* 801CEEB8 001CBCB8  38 04 FF F0 */	addi r0, r4, -16
 /* 801CEEBC 001CBCBC  7C 63 00 50 */	subf r3, r3, r0
 /* 801CEEC0 001CBCC0  4E 80 00 20 */	blr 
+
+.endif
+

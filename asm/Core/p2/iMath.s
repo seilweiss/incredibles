@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global isin__Ff
@@ -70,3 +72,6 @@ tanf__3stdFf:
 /* 800768A8 000736A8  7C 08 03 A6 */	mtlr r0
 /* 800768AC 000736AC  38 21 00 10 */	addi r1, r1, 0x10
 /* 800768B0 000736B0  4E 80 00 20 */	blr 
+
+.endif
+

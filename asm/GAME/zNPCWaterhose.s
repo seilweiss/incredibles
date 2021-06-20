@@ -8,9 +8,11 @@ __vt__Q24zNPC10water_bone:
 
 .section .rodata
 
-.global $$2stringBase0_89
-$$2stringBase0_89:
+.global _esc__2_stringBase0_89
+_esc__2_stringBase0_89:
 	.incbin "baserom.dol", 0x2E1410, 0x18
+
+.if 0
 
 .section .text
 
@@ -18,10 +20,10 @@ $$2stringBase0_89:
 setup__Q24zNPC10water_boneFv:
 /* 80145CB0 00142AB0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80145CB4 00142AB4  7C 08 02 A6 */	mflr r0
-/* 80145CB8 00142AB8  3C 80 80 2E */	lis r4, $$2stringBase0_89@ha
+/* 80145CB8 00142AB8  3C 80 80 2E */	lis r4, _esc__2_stringBase0_89@ha
 /* 80145CBC 00142ABC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80145CC0 00142AC0  38 00 00 00 */	li r0, 0
-/* 80145CC4 00142AC4  38 84 44 10 */	addi r4, r4, $$2stringBase0_89@l
+/* 80145CC4 00142AC4  38 84 44 10 */	addi r4, r4, _esc__2_stringBase0_89@l
 /* 80145CC8 00142AC8  90 03 00 4C */	stw r0, 0x4c(r3)
 /* 80145CCC 00142ACC  4B FB C3 A9 */	bl setup_base__Q24zNPC11firing_boneFPCc
 /* 80145CD0 00142AD0  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -163,8 +165,8 @@ lbl_80145E88:
 
 .global getName__Q24zNPC10water_boneFv
 getName__Q24zNPC10water_boneFv:
-/* 80145E98 00142C98  3C 60 80 2E */	lis r3, $$2stringBase0_89@ha
-/* 80145E9C 00142C9C  38 63 44 10 */	addi r3, r3, $$2stringBase0_89@l
+/* 80145E98 00142C98  3C 60 80 2E */	lis r3, _esc__2_stringBase0_89@ha
+/* 80145E9C 00142C9C  38 63 44 10 */	addi r3, r3, _esc__2_stringBase0_89@l
 /* 80145EA0 00142CA0  38 63 00 06 */	addi r3, r3, 6
 /* 80145EA4 00142CA4  4E 80 00 20 */	blr 
 
@@ -172,3 +174,6 @@ getName__Q24zNPC10water_boneFv:
 exclusive__Q24zNPC10water_boneFv:
 /* 80145EA8 00142CA8  38 60 00 00 */	li r3, 0
 /* 80145EAC 00142CAC  4E 80 00 20 */	blr 
+
+.endif
+

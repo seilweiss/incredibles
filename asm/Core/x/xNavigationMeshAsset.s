@@ -2,21 +2,23 @@
 
 .section .sdata2
 
-.global $$21000_1
-$$21000_1:
+.global _esc__2_1000_1
+_esc__2_1000_1:
 	.incbin "baserom.dol", 0x32F1E0, 0x4
-.global $$21009
-$$21009:
+.global _esc__2_1009
+_esc__2_1009:
 	.incbin "baserom.dol", 0x32F1E4, 0x4
-.global $$21010_0
-$$21010_0:
+.global _esc__2_1010_0
+_esc__2_1010_0:
 	.incbin "baserom.dol", 0x32F1E8, 0x4
-.global $$21011_0
-$$21011_0:
+.global _esc__2_1011_0
+_esc__2_1011_0:
 	.incbin "baserom.dol", 0x32F1EC, 0x4
-.global $$21037_0
-$$21037_0:
+.global _esc__2_1037_0
+_esc__2_1037_0:
 	.incbin "baserom.dol", 0x32F1F0, 0x8
+
+.if 0
 
 .section .text
 
@@ -45,7 +47,7 @@ get_triangle__Q36xAsset15navigation_mesh8sub_meshCFRC5xVec3i:
 /* 8004E17C 0004AF7C  C0 5B 00 08 */	lfs f2, 8(r27)
 /* 8004E180 0004AF80  7F 84 E3 78 */	mr r4, r28
 /* 8004E184 0004AF84  48 00 01 3D */	bl get_height__Q36xAsset15navigation_mesh8sub_meshCFiff
-/* 8004E188 0004AF88  C0 42 8B 00 */	lfs f2, $$21000_1-_SDA2_BASE_(r2)
+/* 8004E188 0004AF88  C0 42 8B 00 */	lfs f2, _esc__2_1000_1-_SDA2_BASE_(r2)
 /* 8004E18C 0004AF8C  C0 7B 00 04 */	lfs f3, 4(r27)
 /* 8004E190 0004AF90  EC 02 18 2A */	fadds f0, f2, f3
 /* 8004E194 0004AF94  FC 00 08 40 */	fcmpo cr0, f0, f1
@@ -75,7 +77,7 @@ lbl_8004E1BC:
 /* 8004E1EC 0004AFEC  C0 5B 00 08 */	lfs f2, 8(r27)
 /* 8004E1F0 0004AFF0  7F 84 E3 78 */	mr r4, r28
 /* 8004E1F4 0004AFF4  48 00 00 CD */	bl get_height__Q36xAsset15navigation_mesh8sub_meshCFiff
-/* 8004E1F8 0004AFF8  C0 42 8B 00 */	lfs f2, $$21000_1-_SDA2_BASE_(r2)
+/* 8004E1F8 0004AFF8  C0 42 8B 00 */	lfs f2, _esc__2_1000_1-_SDA2_BASE_(r2)
 /* 8004E1FC 0004AFFC  C0 7B 00 04 */	lfs f3, 4(r27)
 /* 8004E200 0004B000  EC 02 18 2A */	fadds f0, f2, f3
 /* 8004E204 0004B004  FC 00 08 40 */	fcmpo cr0, f0, f1
@@ -90,7 +92,7 @@ lbl_8004E220:
 /* 8004E224 0004B024  2C 1D 00 03 */	cmpwi r29, 3
 /* 8004E228 0004B028  41 80 FF 94 */	blt lbl_8004E1BC
 lbl_8004E22C:
-/* 8004E22C 0004B02C  C0 02 8B 00 */	lfs f0, $$21000_1-_SDA2_BASE_(r2)
+/* 8004E22C 0004B02C  C0 02 8B 00 */	lfs f0, _esc__2_1000_1-_SDA2_BASE_(r2)
 /* 8004E230 0004B030  3B 80 00 00 */	li r28, 0
 /* 8004E234 0004B034  C0 3B 00 04 */	lfs f1, 4(r27)
 /* 8004E238 0004B038  83 FA 00 20 */	lwz r31, 0x20(r26)
@@ -136,7 +138,7 @@ lbl_8004E29C:
 get_height__Q36xAsset15navigation_mesh8sub_meshCFiff:
 /* 8004E2C0 0004B0C0  2C 04 00 FF */	cmpwi r4, 0xff
 /* 8004E2C4 0004B0C4  40 82 00 0C */	bne lbl_8004E2D0
-/* 8004E2C8 0004B0C8  C0 22 8B 04 */	lfs f1, $$21009-_SDA2_BASE_(r2)
+/* 8004E2C8 0004B0C8  C0 22 8B 04 */	lfs f1, _esc__2_1009-_SDA2_BASE_(r2)
 /* 8004E2CC 0004B0CC  4E 80 00 20 */	blr 
 lbl_8004E2D0:
 /* 8004E2D0 0004B0D0  80 A3 00 1C */	lwz r5, 0x1c(r3)
@@ -147,7 +149,7 @@ lbl_8004E2D0:
 /* 8004E2E4 0004B0E4  88 64 00 01 */	lbz r3, 1(r4)
 /* 8004E2E8 0004B0E8  88 04 00 02 */	lbz r0, 2(r4)
 /* 8004E2EC 0004B0EC  1C 85 00 0C */	mulli r4, r5, 0xc
-/* 8004E2F0 0004B0F0  C0 02 8B 08 */	lfs f0, $$21010_0-_SDA2_BASE_(r2)
+/* 8004E2F0 0004B0F0  C0 02 8B 08 */	lfs f0, _esc__2_1010_0-_SDA2_BASE_(r2)
 /* 8004E2F4 0004B0F4  1C 63 00 0C */	mulli r3, r3, 0xc
 /* 8004E2F8 0004B0F8  7C 86 22 14 */	add r4, r6, r4
 /* 8004E2FC 0004B0FC  C0 A4 00 00 */	lfs f5, 0(r4)
@@ -170,7 +172,7 @@ lbl_8004E2D0:
 /* 8004E340 0004B140  FC 20 00 90 */	fmr f1, f0
 /* 8004E344 0004B144  4E 80 00 20 */	blr 
 lbl_8004E348:
-/* 8004E348 0004B148  C0 02 8B 0C */	lfs f0, $$21011_0-_SDA2_BASE_(r2)
+/* 8004E348 0004B148  C0 02 8B 0C */	lfs f0, _esc__2_1011_0-_SDA2_BASE_(r2)
 /* 8004E34C 0004B14C  EC 25 08 28 */	fsubs f1, f5, f1
 /* 8004E350 0004B150  C1 64 00 04 */	lfs f11, 4(r4)
 /* 8004E354 0004B154  EC 66 10 28 */	fsubs f3, f6, f2
@@ -202,7 +204,7 @@ in_triangle__Q36xAsset15navigation_mesh8sub_meshCFiRC5xVec3:
 /* 8004E3B0 0004B1B0  C1 25 00 08 */	lfs f9, 8(r5)
 /* 8004E3B4 0004B1B4  C1 45 00 00 */	lfs f10, 0(r5)
 /* 8004E3B8 0004B1B8  1C 63 00 0C */	mulli r3, r3, 0xc
-/* 8004E3BC 0004B1BC  C0 82 8B 10 */	lfs f4, $$21037_0-_SDA2_BASE_(r2)
+/* 8004E3BC 0004B1BC  C0 82 8B 10 */	lfs f4, _esc__2_1037_0-_SDA2_BASE_(r2)
 /* 8004E3C0 0004B1C0  7C 87 32 14 */	add r4, r7, r6
 /* 8004E3C4 0004B1C4  C0 A4 00 08 */	lfs f5, 8(r4)
 /* 8004E3C8 0004B1C8  7C 67 1A 14 */	add r3, r7, r3
@@ -303,3 +305,6 @@ lbl_8004E50C:
 /* 8004E514 0004B314  7C 08 03 A6 */	mtlr r0
 /* 8004E518 0004B318  38 21 00 20 */	addi r1, r1, 0x20
 /* 8004E51C 0004B31C  4E 80 00 20 */	blr 
+
+.endif
+

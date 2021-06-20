@@ -8,8 +8,8 @@ __vt__38zUICustomBattleModeSelectPlayerManager:
 
 .section .rodata
 
-.global $$2stringBase0_154
-$$2stringBase0_154:
+.global _esc__2_stringBase0_154
+_esc__2_stringBase0_154:
 	.incbin "baserom.dol", 0x2E7168, 0xD8
 
 .section .sbss
@@ -17,17 +17,17 @@ $$2stringBase0_154:
 .global curr_content_playerID
 curr_content_playerID:
 	.skip 0x4
-.global texture_scene_loaded__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2
-texture_scene_loaded__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2:
+.global texture_scene_loaded__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_
+texture_scene_loaded__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_:
 	.skip 0xC
 
 .section .sdata2
 
-.global battle_player_default__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2
-battle_player_default__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2:
+.global battle_player_default__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_
+battle_player_default__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333E00, 0x20
-.global $$21012_8
-$$21012_8:
+.global _esc__2_1012_8
+_esc__2_1012_8:
 	.incbin "baserom.dol", 0x333E20, 0x4
 .global lbl_803D7464
 lbl_803D7464:
@@ -39,10 +39,12 @@ lbl_803D7468:
 lbl_803D746C:
 	.incbin "baserom.dol", 0x333E2C, 0x4
 
+.if 0
+
 .section .text
 
-.global zSystemMsgUIEnterScene__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2FP3zUIP3zUIUi
-zSystemMsgUIEnterScene__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2FP3zUIP3zUIUi:
+.global zSystemMsgUIEnterScene__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_FP3zUIP3zUIUi
+zSystemMsgUIEnterScene__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_FP3zUIP3zUIUi:
 /* 801EFC3C 001ECA3C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801EFC40 001ECA40  7C 08 02 A6 */	mflr r0
 /* 801EFC44 001ECA44  90 01 00 34 */	stw r0, 0x34(r1)
@@ -53,7 +55,7 @@ zSystemMsgUIEnterScene__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2FP3
 /* 801EFC58 001ECA58  38 A0 02 FD */	li r5, 0x2fd
 /* 801EFC5C 001ECA5C  80 6D DC A4 */	lwz r3, pSysMessageManager-_SDA_BASE_(r13)
 /* 801EFC60 001ECA60  4B F7 87 B5 */	bl Signal__3zUIFP5xBaseUi
-/* 801EFC64 001ECA64  81 02 D7 40 */	lwz r8, $$21012_8-_SDA2_BASE_(r2)
+/* 801EFC64 001ECA64  81 02 D7 40 */	lwz r8, _esc__2_1012_8-_SDA2_BASE_(r2)
 /* 801EFC68 001ECA68  38 61 00 14 */	addi r3, r1, 0x14
 /* 801EFC6C 001ECA6C  80 E2 D7 44 */	lwz r7, lbl_803D7464-_SDA2_BASE_(r2)
 /* 801EFC70 001ECA70  38 81 00 10 */	addi r4, r1, 0x10
@@ -65,8 +67,8 @@ zSystemMsgUIEnterScene__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2FP3
 /* 801EFC88 001ECA88  90 C1 00 1C */	stw r6, 0x1c(r1)
 /* 801EFC8C 001ECA8C  90 01 00 20 */	stw r0, 0x20(r1)
 /* 801EFC90 001ECA90  4B E1 35 59 */	bl memcpy
-/* 801EFC94 001ECA94  3C 60 80 2F */	lis r3, $$2stringBase0_154@ha
-/* 801EFC98 001ECA98  38 63 A1 68 */	addi r3, r3, $$2stringBase0_154@l
+/* 801EFC94 001ECA94  3C 60 80 2F */	lis r3, _esc__2_stringBase0_154@ha
+/* 801EFC98 001ECA98  38 63 A1 68 */	addi r3, r3, _esc__2_stringBase0_154@l
 /* 801EFC9C 001ECA9C  38 63 00 17 */	addi r3, r3, 0x17
 /* 801EFCA0 001ECAA0  4B E7 CF 81 */	bl xStrHash__FPCc
 /* 801EFCA4 001ECAA4  38 80 00 00 */	li r4, 0
@@ -130,23 +132,23 @@ Init__38zUICustomBattleModeSelectPlayerManagerFv:
 /* 801EFD74 001ECB74  3C 7F 00 01 */	addis r3, r31, 1
 /* 801EFD78 001ECB78  38 00 00 00 */	li r0, 0
 /* 801EFD7C 001ECB7C  98 03 08 34 */	stb r0, 0x834(r3)
-/* 801EFD80 001ECB80  3C 60 80 2F */	lis r3, $$2stringBase0_154@ha
-/* 801EFD84 001ECB84  38 63 A1 68 */	addi r3, r3, $$2stringBase0_154@l
+/* 801EFD80 001ECB80  3C 60 80 2F */	lis r3, _esc__2_stringBase0_154@ha
+/* 801EFD84 001ECB84  38 63 A1 68 */	addi r3, r3, _esc__2_stringBase0_154@l
 /* 801EFD88 001ECB88  90 1F 00 0C */	stw r0, 0xc(r31)
 /* 801EFD8C 001ECB8C  38 63 00 35 */	addi r3, r3, 0x35
 /* 801EFD90 001ECB90  4B E7 CE 91 */	bl xStrHash__FPCc
 /* 801EFD94 001ECB94  4B F6 A9 49 */	bl zSceneFindObject__FUi
 /* 801EFD98 001ECB98  90 7F 00 0C */	stw r3, 0xc(r31)
 /* 801EFD9C 001ECB9C  38 00 00 00 */	li r0, 0
-/* 801EFDA0 001ECBA0  3C 60 80 2F */	lis r3, $$2stringBase0_154@ha
-/* 801EFDA4 001ECBA4  38 63 A1 68 */	addi r3, r3, $$2stringBase0_154@l
+/* 801EFDA0 001ECBA0  3C 60 80 2F */	lis r3, _esc__2_stringBase0_154@ha
+/* 801EFDA4 001ECBA4  38 63 A1 68 */	addi r3, r3, _esc__2_stringBase0_154@l
 /* 801EFDA8 001ECBA8  90 1F 00 18 */	stw r0, 0x18(r31)
 /* 801EFDAC 001ECBAC  38 63 00 50 */	addi r3, r3, 0x50
 /* 801EFDB0 001ECBB0  4B E7 CE 71 */	bl xStrHash__FPCc
 /* 801EFDB4 001ECBB4  4B F6 A9 29 */	bl zSceneFindObject__FUi
 /* 801EFDB8 001ECBB8  90 7F 00 18 */	stw r3, 0x18(r31)
-/* 801EFDBC 001ECBBC  3C 60 80 2F */	lis r3, $$2stringBase0_154@ha
-/* 801EFDC0 001ECBC0  38 63 A1 68 */	addi r3, r3, $$2stringBase0_154@l
+/* 801EFDBC 001ECBBC  3C 60 80 2F */	lis r3, _esc__2_stringBase0_154@ha
+/* 801EFDC0 001ECBC0  38 63 A1 68 */	addi r3, r3, _esc__2_stringBase0_154@l
 /* 801EFDC4 001ECBC4  38 00 00 00 */	li r0, 0
 /* 801EFDC8 001ECBC8  80 9F 00 18 */	lwz r4, 0x18(r31)
 /* 801EFDCC 001ECBCC  38 63 00 6C */	addi r3, r3, 0x6c
@@ -155,8 +157,8 @@ Init__38zUICustomBattleModeSelectPlayerManagerFv:
 /* 801EFDD8 001ECBD8  4B E7 CE 49 */	bl xStrHash__FPCc
 /* 801EFDDC 001ECBDC  4B F6 A9 01 */	bl zSceneFindObject__FUi
 /* 801EFDE0 001ECBE0  90 7F 00 1C */	stw r3, 0x1c(r31)
-/* 801EFDE4 001ECBE4  3C 60 80 2F */	lis r3, $$2stringBase0_154@ha
-/* 801EFDE8 001ECBE8  38 63 A1 68 */	addi r3, r3, $$2stringBase0_154@l
+/* 801EFDE4 001ECBE4  3C 60 80 2F */	lis r3, _esc__2_stringBase0_154@ha
+/* 801EFDE8 001ECBE8  38 63 A1 68 */	addi r3, r3, _esc__2_stringBase0_154@l
 /* 801EFDEC 001ECBEC  38 00 00 00 */	li r0, 0
 /* 801EFDF0 001ECBF0  80 9F 00 1C */	lwz r4, 0x1c(r31)
 /* 801EFDF4 001ECBF4  38 63 00 8D */	addi r3, r3, 0x8d
@@ -165,8 +167,8 @@ Init__38zUICustomBattleModeSelectPlayerManagerFv:
 /* 801EFE00 001ECC00  4B E7 CE 21 */	bl xStrHash__FPCc
 /* 801EFE04 001ECC04  4B F6 A8 D9 */	bl zSceneFindObject__FUi
 /* 801EFE08 001ECC08  90 7F 00 20 */	stw r3, 0x20(r31)
-/* 801EFE0C 001ECC0C  3C 60 80 2F */	lis r3, $$2stringBase0_154@ha
-/* 801EFE10 001ECC10  38 63 A1 68 */	addi r3, r3, $$2stringBase0_154@l
+/* 801EFE0C 001ECC0C  3C 60 80 2F */	lis r3, _esc__2_stringBase0_154@ha
+/* 801EFE10 001ECC10  38 63 A1 68 */	addi r3, r3, _esc__2_stringBase0_154@l
 /* 801EFE14 001ECC14  38 00 00 00 */	li r0, 0
 /* 801EFE18 001ECC18  80 9F 00 20 */	lwz r4, 0x20(r31)
 /* 801EFE1C 001ECC1C  38 63 00 AF */	addi r3, r3, 0xaf
@@ -232,7 +234,7 @@ lbl_801EFEE8:
 /* 801EFEF0 001ECCF0  40 80 02 48 */	bge lbl_801F0138
 /* 801EFEF4 001ECCF4  48 00 02 44 */	b lbl_801F0138
 lbl_801EFEF8:
-/* 801EFEF8 001ECCF8  88 0D DC B4 */	lbz r0, texture_scene_loaded__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2-_SDA_BASE_(r13)
+/* 801EFEF8 001ECCF8  88 0D DC B4 */	lbz r0, texture_scene_loaded__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801EFEFC 001ECCFC  28 00 00 00 */	cmplwi r0, 0
 /* 801EFF00 001ECD00  41 82 02 38 */	beq lbl_801F0138
 /* 801EFF04 001ECD04  3C 60 55 54 */	lis r3, 0x55545F54@ha
@@ -248,7 +250,7 @@ lbl_801EFEF8:
 /* 801EFF2C 001ECD2C  38 A0 00 00 */	li r5, 0
 /* 801EFF30 001ECD30  4B F7 B0 AD */	bl SetTexture__8zUIImageFUib
 /* 801EFF34 001ECD34  38 00 00 00 */	li r0, 0
-/* 801EFF38 001ECD38  98 0D DC B4 */	stb r0, texture_scene_loaded__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2-_SDA_BASE_(r13)
+/* 801EFF38 001ECD38  98 0D DC B4 */	stb r0, texture_scene_loaded__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801EFF3C 001ECD3C  48 00 01 FC */	b lbl_801F0138
 lbl_801EFF40:
 /* 801EFF40 001ECD40  80 7E 00 04 */	lwz r3, 4(r30)
@@ -260,7 +262,7 @@ lbl_801EFF40:
 /* 801EFF58 001ECD58  98 03 00 57 */	stb r0, 0x57(r3)
 /* 801EFF5C 001ECD5C  48 00 01 DC */	b lbl_801F0138
 lbl_801EFF60:
-/* 801EFF60 001ECD60  88 0D DC B4 */	lbz r0, texture_scene_loaded__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2-_SDA_BASE_(r13)
+/* 801EFF60 001ECD60  88 0D DC B4 */	lbz r0, texture_scene_loaded__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801EFF64 001ECD64  28 00 00 00 */	cmplwi r0, 0
 /* 801EFF68 001ECD68  41 82 01 D0 */	beq lbl_801F0138
 /* 801EFF6C 001ECD6C  3C 60 55 54 */	lis r3, 0x55545F54@ha
@@ -276,7 +278,7 @@ lbl_801EFF60:
 /* 801EFF94 001ECD94  38 A0 00 00 */	li r5, 0
 /* 801EFF98 001ECD98  4B F7 B0 45 */	bl SetTexture__8zUIImageFUib
 /* 801EFF9C 001ECD9C  38 00 00 00 */	li r0, 0
-/* 801EFFA0 001ECDA0  98 0D DC B4 */	stb r0, texture_scene_loaded__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2-_SDA_BASE_(r13)
+/* 801EFFA0 001ECDA0  98 0D DC B4 */	stb r0, texture_scene_loaded__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801EFFA4 001ECDA4  48 00 01 94 */	b lbl_801F0138
 lbl_801EFFA8:
 /* 801EFFA8 001ECDA8  3C BE 00 01 */	addis r5, r30, 1
@@ -385,7 +387,7 @@ lbl_801F00B4:
 /* 801F0128 001ECF28  7F E3 FB 78 */	mr r3, r31
 /* 801F012C 001ECF2C  80 AD DC 98 */	lwz r5, curr_content_sceneID-_SDA_BASE_(r13)
 /* 801F0130 001ECF30  80 9E 00 04 */	lwz r4, 4(r30)
-/* 801F0134 001ECF34  4B FF FB 09 */	bl zSystemMsgUIEnterScene__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2FP3zUIP3zUIUi
+/* 801F0134 001ECF34  4B FF FB 09 */	bl zSystemMsgUIEnterScene__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_FP3zUIP3zUIUi
 lbl_801F0138:
 /* 801F0138 001ECF38  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 801F013C 001ECF3C  38 60 00 01 */	li r3, 1
@@ -412,14 +414,14 @@ get_default_players__38zUICustomBattleModeSelectPlayerManagerFv:
 /* 801F0178 001ECF78  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801F017C 001ECF7C  BF 21 00 14 */	stmw r25, 0x14(r1)
 /* 801F0180 001ECF80  7C 79 1B 78 */	mr r25, r3
-/* 801F0184 001ECF84  3C 60 80 2F */	lis r3, $$2stringBase0_154@ha
+/* 801F0184 001ECF84  3C 60 80 2F */	lis r3, _esc__2_stringBase0_154@ha
 /* 801F0188 001ECF88  3B 60 00 00 */	li r27, 0
 /* 801F018C 001ECF8C  3F B9 00 01 */	addis r29, r25, 1
 /* 801F0190 001ECF90  3B E0 00 00 */	li r31, 0
-/* 801F0194 001ECF94  3B C3 A1 68 */	addi r30, r3, $$2stringBase0_154@l
+/* 801F0194 001ECF94  3B C3 A1 68 */	addi r30, r3, _esc__2_stringBase0_154@l
 lbl_801F0198:
 /* 801F0198 001ECF98  38 00 00 01 */	li r0, 1
-/* 801F019C 001ECF9C  3B 82 D7 20 */	addi r28, r2, battle_player_default__45$$2unnamed$$2zUICustomBattleModeSelectPlayer_cpp$$2-_SDA2_BASE_
+/* 801F019C 001ECF9C  3B 82 D7 20 */	addi r28, r2, battle_player_default__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_-_SDA2_BASE_
 /* 801F01A0 001ECFA0  98 1D 08 35 */	stb r0, 0x835(r29)
 /* 801F01A4 001ECFA4  7F 9C FA 14 */	add r28, r28, r31
 /* 801F01A8 001ECFA8  38 C0 00 00 */	li r6, 0
@@ -471,10 +473,10 @@ ShowRemoveButton__38zUICustomBattleModeSelectPlayerManagerFv:
 /* 801F0250 001ED050  2C 00 00 01 */	cmpwi r0, 1
 /* 801F0254 001ED054  40 82 00 64 */	bne lbl_801F02B8
 /* 801F0258 001ED058  3C A0 80 38 */	lis r5, globals@ha
-/* 801F025C 001ED05C  3C 80 80 2F */	lis r4, $$2stringBase0_154@ha
+/* 801F025C 001ED05C  3C 80 80 2F */	lis r4, _esc__2_stringBase0_154@ha
 /* 801F0260 001ED060  38 A5 2A 38 */	addi r5, r5, globals@l
 /* 801F0264 001ED064  80 C5 04 C8 */	lwz r6, 0x4c8(r5)
-/* 801F0268 001ED068  38 A4 A1 68 */	addi r5, r4, $$2stringBase0_154@l
+/* 801F0268 001ED068  38 A4 A1 68 */	addi r5, r4, _esc__2_stringBase0_154@l
 /* 801F026C 001ED06C  88 05 00 D4 */	lbz r0, 0xd4(r5)
 /* 801F0270 001ED070  80 C6 00 00 */	lwz r6, 0(r6)
 /* 801F0274 001ED074  7C 04 07 74 */	extsb r4, r0
@@ -577,9 +579,9 @@ UpdateImage__38zUICustomBattleModeSelectPlayerManagerFv:
 /* 801F03B8 001ED1B8  80 03 08 24 */	lwz r0, 0x824(r3)
 /* 801F03BC 001ED1BC  2C 00 00 00 */	cmpwi r0, 0
 /* 801F03C0 001ED1C0  41 82 00 84 */	beq lbl_801F0444
-/* 801F03C4 001ED1C4  3C 80 80 2F */	lis r4, $$2stringBase0_154@ha
+/* 801F03C4 001ED1C4  3C 80 80 2F */	lis r4, _esc__2_stringBase0_154@ha
 /* 801F03C8 001ED1C8  80 7F 00 10 */	lwz r3, 0x10(r31)
-/* 801F03CC 001ED1CC  38 84 A1 68 */	addi r4, r4, $$2stringBase0_154@l
+/* 801F03CC 001ED1CC  38 84 A1 68 */	addi r4, r4, _esc__2_stringBase0_154@l
 /* 801F03D0 001ED1D0  38 84 00 D7 */	addi r4, r4, 0xd7
 /* 801F03D4 001ED1D4  4B F6 17 85 */	bl SetText__7zUITextFPCc
 /* 801F03D8 001ED1D8  80 7F 00 10 */	lwz r3, 0x10(r31)
@@ -621,3 +623,6 @@ lbl_801F0444:
 IsForcePreUpdate__38zUICustomBattleModeSelectPlayerManagerFv:
 /* 801F0458 001ED258  38 60 00 01 */	li r3, 1
 /* 801F045C 001ED25C  4E 80 00 20 */	blr 
+
+.endif
+

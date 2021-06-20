@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global zReferenceInit__FR5xBaseR9xDynAssetUl
@@ -67,3 +69,6 @@ lbl_801509C8:
 /* 801509CC 0014D7CC  7C 08 03 A6 */	mtlr r0
 /* 801509D0 0014D7D0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801509D4 0014D7D4  4E 80 00 20 */	blr 
+
+.endif
+

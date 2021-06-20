@@ -11,12 +11,14 @@ __vt__16behavior_manager:
 
 .section .sdata2
 
-.global $$2905_1
-$$2905_1:
+.global _esc__2_905_1
+_esc__2_905_1:
 	.incbin "baserom.dol", 0x332798, 0x4
-.global $$21168_1
-$$21168_1:
+.global _esc__2_1168_1
+_esc__2_1168_1:
 	.incbin "baserom.dol", 0x33279C, 0x4
+
+.if 0
 
 .section .text
 
@@ -364,7 +366,7 @@ lbl_80183C6C:
 /* 80183CA8 00180AA8  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80183CAC 00180AAC  41 82 00 28 */	beq lbl_80183CD4
 /* 80183CB0 00180AB0  C0 3E 00 10 */	lfs f1, 0x10(r30)
-/* 80183CB4 00180AB4  C0 02 C0 B8 */	lfs f0, $$2905_1-_SDA2_BASE_(r2)
+/* 80183CB4 00180AB4  C0 02 C0 B8 */	lfs f0, _esc__2_905_1-_SDA2_BASE_(r2)
 /* 80183CB8 00180AB8  EC 21 F0 28 */	fsubs f1, f1, f30
 /* 80183CBC 00180ABC  D0 3E 00 10 */	stfs f1, 0x10(r30)
 /* 80183CC0 00180AC0  C0 3E 00 10 */	lfs f1, 0x10(r30)
@@ -380,7 +382,7 @@ lbl_80183CD4:
 /* 80183CE4 00180AE4  4E 80 04 21 */	bctrl 
 /* 80183CE8 00180AE8  C0 5E 00 10 */	lfs f2, 0x10(r30)
 /* 80183CEC 00180AEC  FF E0 08 90 */	fmr f31, f1
-/* 80183CF0 00180AF0  C0 02 C0 B8 */	lfs f0, $$2905_1-_SDA2_BASE_(r2)
+/* 80183CF0 00180AF0  C0 02 C0 B8 */	lfs f0, _esc__2_905_1-_SDA2_BASE_(r2)
 /* 80183CF4 00180AF4  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 80183CF8 00180AF8  4C 40 13 82 */	cror 2, 0, 2
 /* 80183CFC 00180AFC  40 82 00 18 */	bne lbl_80183D14
@@ -569,7 +571,7 @@ lbl_80183F64:
 /* 80183F70 00180D70  38 80 00 14 */	li r4, 0x14
 /* 80183F74 00180D74  38 A0 00 00 */	li r5, 0
 /* 80183F78 00180D78  4B EC 5B E9 */	bl xMemAlloc__FUiUii
-/* 80183F7C 00180D7C  C0 02 C0 B8 */	lfs f0, $$2905_1-_SDA2_BASE_(r2)
+/* 80183F7C 00180D7C  C0 02 C0 B8 */	lfs f0, _esc__2_905_1-_SDA2_BASE_(r2)
 /* 80183F80 00180D80  D0 03 00 10 */	stfs f0, 0x10(r3)
 /* 80183F84 00180D84  93 A3 00 0C */	stw r29, 0xc(r3)
 /* 80183F88 00180D88  9B C3 00 01 */	stb r30, 1(r3)
@@ -1050,7 +1052,7 @@ lbl_80184594:
 /* 801845A8 001813A8  38 60 00 00 */	li r3, 0
 /* 801845AC 001813AC  48 00 00 84 */	b lbl_80184630
 lbl_801845B0:
-/* 801845B0 001813B0  C0 02 C0 B8 */	lfs f0, $$2905_1-_SDA2_BASE_(r2)
+/* 801845B0 001813B0  C0 02 C0 B8 */	lfs f0, _esc__2_905_1-_SDA2_BASE_(r2)
 /* 801845B4 001813B4  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 801845B8 001813B8  4C 40 13 82 */	cror 2, 0, 2
 /* 801845BC 001813BC  40 82 00 0C */	bne lbl_801845C8
@@ -1113,7 +1115,7 @@ set_state__8behaviorFPCcfP14xModelInstance:
 lbl_8018467C:
 /* 8018467C 0018147C  38 60 00 00 */	li r3, 0
 /* 80184680 00181480  4B E8 27 6D */	bl xAnimTempTransitionAlloc__FPC15xAnimTransition
-/* 80184684 00181484  C0 02 C0 BC */	lfs f0, $$21168_1-_SDA2_BASE_(r2)
+/* 80184684 00181484  C0 02 C0 BC */	lfs f0, _esc__2_1168_1-_SDA2_BASE_(r2)
 /* 80184688 00181488  7C 7F 1B 78 */	mr r31, r3
 /* 8018468C 0018148C  7F A4 EB 78 */	mr r4, r29
 /* 80184690 00181490  EC 00 F8 24 */	fdivs f0, f0, f31
@@ -1157,7 +1159,7 @@ set_state__8behaviorFPCcffP14xModelInstance:
 lbl_80184718:
 /* 80184718 00181518  38 60 00 00 */	li r3, 0
 /* 8018471C 0018151C  4B E8 26 D1 */	bl xAnimTempTransitionAlloc__FPC15xAnimTransition
-/* 80184720 00181520  C0 02 C0 BC */	lfs f0, $$21168_1-_SDA2_BASE_(r2)
+/* 80184720 00181520  C0 02 C0 BC */	lfs f0, _esc__2_1168_1-_SDA2_BASE_(r2)
 /* 80184724 00181524  7C 7F 1B 78 */	mr r31, r3
 /* 80184728 00181528  7F A4 EB 78 */	mr r4, r29
 /* 8018472C 0018152C  EC 00 F0 24 */	fdivs f0, f0, f30
@@ -1187,3 +1189,6 @@ lbl_80184760:
 .global enter_state__8behaviorFPC8behavior
 enter_state__8behaviorFPC8behavior:
 /* 80184784 00181584  4E 80 00 20 */	blr 
+
+.endif
+

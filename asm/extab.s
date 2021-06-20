@@ -1,49 +1,49 @@
 .section extab_, "wa"  # 0x80005600 - 0x80005720
-.global $$2157
-$$2157:
+.global _esc__2_157
+_esc__2_157:
 	.incbin "baserom.dol", 0x2CE460, 0x28
-.global $$2182
-$$2182:
+.global _esc__2_182
+_esc__2_182:
 	.incbin "baserom.dol", 0x2CE488, 0x28
-.global $$2231
-$$2231:
+.global _esc__2_231
+_esc__2_231:
 	.incbin "baserom.dol", 0x2CE4B0, 0x18
-.global $$2239
-$$2239:
+.global _esc__2_239
+_esc__2_239:
 	.incbin "baserom.dol", 0x2CE4C8, 0x8
-.global $$2262
-$$2262:
+.global _esc__2_262
+_esc__2_262:
 	.incbin "baserom.dol", 0x2CE4D0, 0x18
-.global $$2346
-$$2346:
+.global _esc__2_346
+_esc__2_346:
 	.incbin "baserom.dol", 0x2CE4E8, 0x8
-.global $$2350
-$$2350:
+.global _esc__2_350
+_esc__2_350:
 	.incbin "baserom.dol", 0x2CE4F0, 0x8
-.global $$2355
-$$2355:
+.global _esc__2_355
+_esc__2_355:
 	.incbin "baserom.dol", 0x2CE4F8, 0x8
-.global $$2358
-$$2358:
+.global _esc__2_358
+_esc__2_358:
 	.incbin "baserom.dol", 0x2CE500, 0x8
-.global $$2348
-$$2348:
+.global _esc__2_348
+_esc__2_348:
 	.incbin "baserom.dol", 0x2CE508, 0x8
-.global $$2459
-$$2459:
+.global _esc__2_459
+_esc__2_459:
 	.incbin "baserom.dol", 0x2CE510, 0x14
-.global $$2507
-$$2507:
+.global _esc__2_507
+_esc__2_507:
 	.incbin "baserom.dol", 0x2CE524, 0x2C
-.global $$2515
-$$2515:
+.global _esc__2_515
+_esc__2_515:
 	.incbin "baserom.dol", 0x2CE550, 0x8
-.global $$2652
-$$2652:
+.global _esc__2_652
+_esc__2_652:
 	.incbin "baserom.dol", 0x2CE558, 0x14
-.global $$2815
-$$2815:
+.global _esc__2_815
+_esc__2_815:
 	.incbin "baserom.dol", 0x2CE56C, 0x8
-.global $$2883
-$$2883:
+.global _esc__2_883
+_esc__2_883:
 	.incbin "baserom.dol", 0x2CE574, 0xC

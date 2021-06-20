@@ -9,6 +9,8 @@ g_mvpt_list:
 g_mvpt_cnt:
 	.skip 0x4
 
+.if 0
+
 .section .text
 
 .global zMovePoint_GetMemPool__Fi
@@ -162,3 +164,6 @@ zMovePointGetPos__FPC10zMovePoint:
 /* 800E46DC 000E14DC  7C 08 03 A6 */	mtlr r0
 /* 800E46E0 000E14E0  38 21 00 10 */	addi r1, r1, 0x10
 /* 800E46E4 000E14E4  4E 80 00 20 */	blr 
+
+.endif
+

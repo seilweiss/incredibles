@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global load__10zWaterBodyFR5xBaseR9xDynAssetUl
@@ -88,3 +90,6 @@ lbl_8018487C:
 /* 80184880 00181680  7C 08 03 A6 */	mtlr r0
 /* 80184884 00181684  38 21 00 10 */	addi r1, r1, 0x10
 /* 80184888 00181688  4E 80 00 20 */	blr 
+
+.endif
+

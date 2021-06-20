@@ -2,21 +2,23 @@
 
 .section .sbss
 
-.global zeroMemoryAddress__28$$2unnamed$$2xMemoryManager_cpp$$2
-zeroMemoryAddress__28$$2unnamed$$2xMemoryManager_cpp$$2:
+.global zeroMemoryAddress__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_
+zeroMemoryAddress__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_:
 	.skip 0x8
 
 .section .sdata
 
-.global MEM_CLEAR_VALUE__28$$2unnamed$$2xMemoryManager_cpp$$2
-MEM_CLEAR_VALUE__28$$2unnamed$$2xMemoryManager_cpp$$2:
+.global MEM_CLEAR_VALUE__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_
+MEM_CLEAR_VALUE__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32D878, 0x4
-.global MEM_DEALLOC_VALUE__28$$2unnamed$$2xMemoryManager_cpp$$2
-MEM_DEALLOC_VALUE__28$$2unnamed$$2xMemoryManager_cpp$$2:
+.global MEM_DEALLOC_VALUE__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_
+MEM_DEALLOC_VALUE__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32D87C, 0x4
 .global __vt__14xMemoryManager
 __vt__14xMemoryManager:
 	.incbin "baserom.dol", 0x32D880, 0x20
+
+.if 0
 
 .section .text
 
@@ -30,7 +32,7 @@ Allocate__14xMemoryManagerFUiUi:
 /* 801CDBC4 001CA9C4  7C 7C 1B 78 */	mr r28, r3
 /* 801CDBC8 001CA9C8  7C BE 2B 78 */	mr r30, r5
 /* 801CDBCC 001CA9CC  40 82 00 0C */	bne lbl_801CDBD8
-/* 801CDBD0 001CA9D0  38 6D D9 A8 */	addi r3, r13, zeroMemoryAddress__28$$2unnamed$$2xMemoryManager_cpp$$2-_SDA_BASE_
+/* 801CDBD0 001CA9D0  38 6D D9 A8 */	addi r3, r13, zeroMemoryAddress__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_-_SDA_BASE_
 /* 801CDBD4 001CA9D4  48 00 00 C4 */	b lbl_801CDC98
 lbl_801CDBD8:
 /* 801CDBD8 001CA9D8  7F A3 EB 78 */	mr r3, r29
@@ -72,7 +74,7 @@ lbl_801CDC38:
 /* 801CDC64 001CAA64  57 C0 07 FF */	clrlwi. r0, r30, 0x1f
 /* 801CDC68 001CAA68  7C 7F 1B 78 */	mr r31, r3
 /* 801CDC6C 001CAA6C  40 82 00 10 */	bne lbl_801CDC7C
-/* 801CDC70 001CAA70  80 8D A8 B8 */	lwz r4, MEM_CLEAR_VALUE__28$$2unnamed$$2xMemoryManager_cpp$$2-_SDA_BASE_(r13)
+/* 801CDC70 001CAA70  80 8D A8 B8 */	lwz r4, MEM_CLEAR_VALUE__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CDC74 001CAA74  7F A5 EB 78 */	mr r5, r29
 /* 801CDC78 001CAA78  4B E7 46 B9 */	bl xMemorySetV32A32__FPvUiUi
 lbl_801CDC7C:
@@ -100,7 +102,7 @@ Free__14xMemoryManagerFPv:
 /* 801CDCBC 001CAABC  7C 9F 23 79 */	or. r31, r4, r4
 /* 801CDCC0 001CAAC0  7C 7E 1B 78 */	mr r30, r3
 /* 801CDCC4 001CAAC4  41 82 00 58 */	beq lbl_801CDD1C
-/* 801CDCC8 001CAAC8  38 0D D9 A8 */	addi r0, r13, zeroMemoryAddress__28$$2unnamed$$2xMemoryManager_cpp$$2-_SDA_BASE_
+/* 801CDCC8 001CAAC8  38 0D D9 A8 */	addi r0, r13, zeroMemoryAddress__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_-_SDA_BASE_
 /* 801CDCCC 001CAACC  7C 1F 00 40 */	cmplw r31, r0
 /* 801CDCD0 001CAAD0  40 82 00 08 */	bne lbl_801CDCD8
 /* 801CDCD4 001CAAD4  48 00 00 48 */	b lbl_801CDD1C
@@ -112,7 +114,7 @@ lbl_801CDCD8:
 /* 801CDCE8 001CAAE8  7F E4 FB 78 */	mr r4, r31
 /* 801CDCEC 001CAAEC  38 A1 00 08 */	addi r5, r1, 8
 /* 801CDCF0 001CAAF0  48 00 03 45 */	bl RemoveDebugBlock__14xMemoryManagerFPvPUi
-/* 801CDCF4 001CAAF4  80 8D A8 BC */	lwz r4, MEM_DEALLOC_VALUE__28$$2unnamed$$2xMemoryManager_cpp$$2-_SDA_BASE_(r13)
+/* 801CDCF4 001CAAF4  80 8D A8 BC */	lwz r4, MEM_DEALLOC_VALUE__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CDCF8 001CAAF8  7C 7F 1B 78 */	mr r31, r3
 /* 801CDCFC 001CAAFC  80 A1 00 08 */	lwz r5, 8(r1)
 /* 801CDD00 001CAB00  4B E7 46 31 */	bl xMemorySetV32A32__FPvUiUi
@@ -148,12 +150,12 @@ Reallocate__14xMemoryManagerFPvUiUi:
 lbl_801CDD64:
 /* 801CDD64 001CAB64  28 1D 00 00 */	cmplwi r29, 0
 /* 801CDD68 001CAB68  40 82 00 1C */	bne lbl_801CDD84
-/* 801CDD6C 001CAB6C  38 0D D9 A8 */	addi r0, r13, zeroMemoryAddress__28$$2unnamed$$2xMemoryManager_cpp$$2-_SDA_BASE_
+/* 801CDD6C 001CAB6C  38 0D D9 A8 */	addi r0, r13, zeroMemoryAddress__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_-_SDA_BASE_
 /* 801CDD70 001CAB70  7C 1F 00 40 */	cmplw r31, r0
 /* 801CDD74 001CAB74  41 82 00 08 */	beq lbl_801CDD7C
 /* 801CDD78 001CAB78  4B FF FF 35 */	bl Free__14xMemoryManagerFPv
 lbl_801CDD7C:
-/* 801CDD7C 001CAB7C  38 6D D9 A8 */	addi r3, r13, zeroMemoryAddress__28$$2unnamed$$2xMemoryManager_cpp$$2-_SDA_BASE_
+/* 801CDD7C 001CAB7C  38 6D D9 A8 */	addi r3, r13, zeroMemoryAddress__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_-_SDA_BASE_
 /* 801CDD80 001CAB80  48 00 00 BC */	b lbl_801CDE3C
 lbl_801CDD84:
 /* 801CDD84 001CAB84  48 00 03 5D */	bl IsDebugging__14xMemoryManagerCFv
@@ -217,7 +219,7 @@ GetBlockSize__14xMemoryManagerCFPv:
 /* 801CDE50 001CAC50  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CDE54 001CAC54  7C 08 02 A6 */	mflr r0
 /* 801CDE58 001CAC58  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801CDE5C 001CAC5C  38 0D D9 A8 */	addi r0, r13, zeroMemoryAddress__28$$2unnamed$$2xMemoryManager_cpp$$2-_SDA_BASE_
+/* 801CDE5C 001CAC5C  38 0D D9 A8 */	addi r0, r13, zeroMemoryAddress__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_-_SDA_BASE_
 /* 801CDE60 001CAC60  7C 04 00 40 */	cmplw r4, r0
 /* 801CDE64 001CAC64  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801CDE68 001CAC68  7C 7F 1B 78 */	mr r31, r3
@@ -320,7 +322,7 @@ SetupDebugBlock__14xMemoryManagerFPvUiPCcPCci:
 /* 801CDFA8 001CADA8  7D 1F 43 78 */	mr r31, r8
 /* 801CDFAC 001CADAC  7F 84 E3 78 */	mr r4, r28
 /* 801CDFB0 001CADB0  38 7B 00 20 */	addi r3, r27, 0x20
-/* 801CDFB4 001CADB4  48 00 01 1D */	bl xMEMADVANCE$$0Q214xMemoryManager21DebugAllocationHeader$$1__FPQ214xMemoryManager21DebugAllocationHeaderUi
+/* 801CDFB4 001CADB4  48 00 01 1D */	bl xMEMADVANCE_esc__0_Q214xMemoryManager21DebugAllocationHeader_esc__1___FPQ214xMemoryManager21DebugAllocationHeaderUi
 /* 801CDFB8 001CADB8  93 BB 00 00 */	stw r29, 0(r27)
 /* 801CDFBC 001CADBC  38 00 00 00 */	li r0, 0
 /* 801CDFC0 001CADC0  93 DB 00 08 */	stw r30, 8(r27)
@@ -367,7 +369,7 @@ RemoveDebugBlock__14xMemoryManagerFPvPUi:
 /* 801CE050 001CAE50  7C BE 2B 78 */	mr r30, r5
 /* 801CE054 001CAE54  7C C3 33 78 */	mr r3, r6
 /* 801CE058 001CAE58  80 84 FF EC */	lwz r4, -0x14(r4)
-/* 801CE05C 001CAE5C  48 00 00 7D */	bl xMEMADVANCE$$0v$$1__FPvUi_0
+/* 801CE05C 001CAE5C  48 00 00 7D */	bl xMEMADVANCE_esc__0_v_esc__1___FPvUi_0
 /* 801CE060 001CAE60  38 00 00 08 */	li r0, 8
 /* 801CE064 001CAE64  7C 09 03 A6 */	mtctr r0
 lbl_801CE068:
@@ -402,13 +404,13 @@ lbl_801CE0B8:
 /* 801CE0C8 001CAEC8  38 21 00 20 */	addi r1, r1, 0x20
 /* 801CE0CC 001CAECC  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$0Q214xMemoryManager21DebugAllocationHeader$$1__FPQ214xMemoryManager21DebugAllocationHeaderUi
-xMEMADVANCE$$0Q214xMemoryManager21DebugAllocationHeader$$1__FPQ214xMemoryManager21DebugAllocationHeaderUi:
+.global xMEMADVANCE_esc__0_Q214xMemoryManager21DebugAllocationHeader_esc__1___FPQ214xMemoryManager21DebugAllocationHeaderUi
+xMEMADVANCE_esc__0_Q214xMemoryManager21DebugAllocationHeader_esc__1___FPQ214xMemoryManager21DebugAllocationHeaderUi:
 /* 801CE0D0 001CAED0  7C 63 22 14 */	add r3, r3, r4
 /* 801CE0D4 001CAED4  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$0v$$1__FPvUi_0
-xMEMADVANCE$$0v$$1__FPvUi_0:
+.global xMEMADVANCE_esc__0_v_esc__1___FPvUi_0
+xMEMADVANCE_esc__0_v_esc__1___FPvUi_0:
 /* 801CE0D8 001CAED8  7C 63 22 14 */	add r3, r3, r4
 /* 801CE0DC 001CAEDC  4E 80 00 20 */	blr 
 
@@ -418,3 +420,6 @@ IsDebugging__14xMemoryManagerCFv:
 /* 801CE0E4 001CAEE4  30 03 FF FF */	addic r0, r3, -1
 /* 801CE0E8 001CAEE8  7C 60 19 10 */	subfe r3, r0, r3
 /* 801CE0EC 001CAEEC  4E 80 00 20 */	blr 
+
+.endif
+

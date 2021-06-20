@@ -6,6 +6,8 @@
 activeTransfers:
 	.skip 0xC10
 
+.if 0
+
 .section .text
 
 .global transferDoneCB__FUl
@@ -422,3 +424,6 @@ lbl_801F09D4:
 /* 801F09DC 001ED7DC  7C 08 03 A6 */	mtlr r0
 /* 801F09E0 001ED7E0  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F09E4 001ED7E4  4E 80 00 20 */	blr 
+
+.endif
+

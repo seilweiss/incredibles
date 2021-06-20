@@ -11,8 +11,8 @@ zHitSourceCCs:
 .global zHitSourceMap
 zHitSourceMap:
 	.incbin "baserom.dol", 0x2DA760, 0xB0
-.global $$2stringBase0_59
-$$2stringBase0_59:
+.global _esc__2_stringBase0_59
+_esc__2_stringBase0_59:
 	.incbin "baserom.dol", 0x2DA810, 0xB0
 
 .section .sdata
@@ -20,6 +20,8 @@ $$2stringBase0_59:
 .global zHitTargetCCs
 zHitTargetCCs:
 	.incbin "baserom.dol", 0x32C0A0, 0x20
+
+.if 0
 
 .section .text
 
@@ -61,3 +63,6 @@ lbl_800D1610:
 /* 800D1618 000CE418  7C 08 03 A6 */	mtlr r0
 /* 800D161C 000CE41C  38 21 00 20 */	addi r1, r1, 0x20
 /* 800D1620 000CE420  4E 80 00 20 */	blr 
+
+.endif
+

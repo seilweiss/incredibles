@@ -9,6 +9,8 @@ gRenderArr:
 gRenderBuffer:
 	.skip 0x80
 
+.if 0
+
 .section .text
 
 .global xRenderBufferInit__Fv
@@ -29,3 +31,6 @@ xRenderBufferInit__Fv:
 /* 801ECEA4 001E9CA4  90 66 00 04 */	stw r3, 4(r6)
 /* 801ECEA8 001E9CA8  90 06 00 08 */	stw r0, 8(r6)
 /* 801ECEAC 001E9CAC  4E 80 00 20 */	blr 
+
+.endif
+

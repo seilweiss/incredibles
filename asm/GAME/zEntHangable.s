@@ -8,12 +8,14 @@ sChandelierHash:
 
 .section .sdata2
 
-.global $$2967
-$$2967:
+.global _esc__2_967
+_esc__2_967:
 	.incbin "baserom.dol", 0x330390, 0x4
-.global $$2968
-$$2968:
+.global _esc__2_968
+_esc__2_968:
 	.incbin "baserom.dol", 0x330394, 0x4
+
+.if 0
 
 .section .text
 
@@ -36,11 +38,11 @@ HangableSetup__FP12zEntHangableP9xEntAsset:
 /* 800BF93C 000BC73C  90 0C 00 04 */	stw r0, 4(r12)
 /* 800BF940 000BC740  38 A5 FA C0 */	addi r5, r5, zEntHangable_Update__FP12zEntHangableP6xScenef@l
 /* 800BF944 000BC744  38 E4 00 50 */	addi r7, r4, 0x50
-/* 800BF948 000BC748  C0 22 9C B0 */	lfs f1, $$2967-_SDA2_BASE_(r2)
+/* 800BF948 000BC748  C0 22 9C B0 */	lfs f1, _esc__2_967-_SDA2_BASE_(r2)
 /* 800BF94C 000BC74C  93 EC FF FC */	stw r31, -4(r12)
 /* 800BF950 000BC750  7C 7F 1B 78 */	mr r31, r3
 /* 800BF954 000BC754  38 00 00 01 */	li r0, 1
-/* 800BF958 000BC758  C0 02 9C B4 */	lfs f0, $$2968-_SDA2_BASE_(r2)
+/* 800BF958 000BC758  C0 02 9C B4 */	lfs f0, _esc__2_968-_SDA2_BASE_(r2)
 /* 800BF95C 000BC75C  98 C3 00 19 */	stb r6, 0x19(r3)
 /* 800BF960 000BC760  3C 60 80 0C */	lis r3, zEntHangableEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi@ha
 /* 800BF964 000BC764  38 83 FA C8 */	addi r4, r3, zEntHangableEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi@l
@@ -240,7 +242,7 @@ lbl_800BFBDC:
 /* 800BFBF8 000BC9F8  80 1E 01 2C */	lwz r0, 0x12c(r30)
 /* 800BFBFC 000BC9FC  2C 00 00 00 */	cmpwi r0, 0
 /* 800BFC00 000BCA00  40 82 00 CC */	bne lbl_800BFCCC
-/* 800BFC04 000BCA04  C0 02 9C B4 */	lfs f0, $$2968-_SDA2_BASE_(r2)
+/* 800BFC04 000BCA04  C0 02 9C B4 */	lfs f0, _esc__2_968-_SDA2_BASE_(r2)
 /* 800BFC08 000BCA08  D0 1E 01 28 */	stfs f0, 0x128(r30)
 /* 800BFC0C 000BCA0C  48 00 00 C0 */	b lbl_800BFCCC
 lbl_800BFC10:
@@ -275,7 +277,7 @@ lbl_800BFC60:
 /* 800BFC6C 000BCA6C  28 03 00 00 */	cmplwi r3, 0
 /* 800BFC70 000BCA70  41 82 00 5C */	beq lbl_800BFCCC
 /* 800BFC74 000BCA74  C0 3C 00 00 */	lfs f1, 0(r28)
-/* 800BFC78 000BCA78  C0 02 9C B0 */	lfs f0, $$2967-_SDA2_BASE_(r2)
+/* 800BFC78 000BCA78  C0 02 9C B0 */	lfs f0, _esc__2_967-_SDA2_BASE_(r2)
 /* 800BFC7C 000BCA7C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800BFC80 000BCA80  4C 40 13 82 */	cror 2, 0, 2
 /* 800BFC84 000BCA84  40 82 00 1C */	bne lbl_800BFCA0
@@ -305,7 +307,7 @@ lbl_800BFCCC:
 /* 800BFCD8 000BCAD8  4B F5 0A 09 */	bl xEntIsVisible__FPC4xEnt
 /* 800BFCDC 000BCADC  28 03 00 00 */	cmplwi r3, 0
 /* 800BFCE0 000BCAE0  41 82 00 38 */	beq lbl_800BFD18
-/* 800BFCE4 000BCAE4  C0 02 9C B0 */	lfs f0, $$2967-_SDA2_BASE_(r2)
+/* 800BFCE4 000BCAE4  C0 02 9C B0 */	lfs f0, _esc__2_967-_SDA2_BASE_(r2)
 /* 800BFCE8 000BCAE8  D0 1E 00 F8 */	stfs f0, 0xf8(r30)
 /* 800BFCEC 000BCAEC  D0 1E 00 FC */	stfs f0, 0xfc(r30)
 /* 800BFCF0 000BCAF0  D0 1E 01 00 */	stfs f0, 0x100(r30)
@@ -394,3 +396,6 @@ lbl_800BFDF0:
 /* 800BFDF4 000BCBF4  7C 08 03 A6 */	mtlr r0
 /* 800BFDF8 000BCBF8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800BFDFC 000BCBFC  4E 80 00 20 */	blr 
+
+.endif
+

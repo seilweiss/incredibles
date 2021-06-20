@@ -20,9 +20,11 @@ lastEnv:
 .global lbl_803D2E14
 lbl_803D2E14:
 	.incbin "baserom.dol", 0x32F7D4, 0x4
-.global $$2989_2
-$$2989_2:
+.global _esc__2_989_2
+_esc__2_989_2:
 	.incbin "baserom.dol", 0x32F7D8, 0x18
+
+.if 0
 
 .section .text
 
@@ -655,3 +657,6 @@ lbl_80074708:
 /* 80074710 00071510  7C 08 03 A6 */	mtlr r0
 /* 80074714 00071514  38 21 00 10 */	addi r1, r1, 0x10
 /* 80074718 00071518  4E 80 00 20 */	blr 
+
+.endif
+

@@ -9,6 +9,8 @@ system_count__Q21z19lightweight_manager:
 system__Q21z19lightweight_manager:
 	.skip 0x2C
 
+.if 0
+
 .section .text
 
 .global setup__Q21z19lightweight_managerFv
@@ -226,3 +228,6 @@ register_lightweight__Q21z19lightweight_managerFPQ21z23lightweight_system_base:
 /* 800E03EC 000DD1EC  7C 64 29 2E */	stwx r3, r4, r5
 /* 800E03F0 000DD1F0  90 0D CA B8 */	stw r0, system_count__Q21z19lightweight_manager-_SDA_BASE_(r13)
 /* 800E03F4 000DD1F4  4E 80 00 20 */	blr 
+
+.endif
+

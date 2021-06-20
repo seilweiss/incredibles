@@ -38,65 +38,65 @@ WaitingQueue:
 .global bb2Buf
 bb2Buf:
 	.skip 0x40
-.global block$18
-block$18:
+.global block_esc__7_18
+block_esc__7_18:
 	.skip 0x30
 
 .section .data
 
-.global $$2119
-$$2119:
+.global _esc__2_119
+_esc__2_119:
 	.incbin "baserom.dol", 0x32A150, 0xC8
-.global $$2140
-$$2140:
+.global _esc__2_140
+_esc__2_140:
 	.incbin "baserom.dol", 0x32A218, 0x38
-.global $$2239_0
-$$2239_0:
+.global _esc__2_239_0
+_esc__2_239_0:
 	.incbin "baserom.dol", 0x32A250, 0x34
-.global $$2271_0
-$$2271_0:
+.global _esc__2_271_0
+_esc__2_271_0:
 	.incbin "baserom.dol", 0x32A284, 0x2C
-.global $$21_12
-$$21_12:
+.global _esc__2_1_12
+_esc__2_1_12:
 	.incbin "baserom.dol", 0x32A2B0, 0x48
-.global $$218
-$$218:
+.global _esc__2_18
+_esc__2_18:
 	.incbin "baserom.dol", 0x32A2F8, 0xC
-.global $$224
-$$224:
+.global _esc__2_24
+_esc__2_24:
 	.incbin "baserom.dol", 0x32A304, 0x34
-.global $$2344_0
-$$2344_0:
+.global _esc__2_344_0
+_esc__2_344_0:
 	.incbin "baserom.dol", 0x32A338, 0x40
 .global ImmCommand
 ImmCommand:
 	.incbin "baserom.dol", 0x32A378, 0xC
-.global $$2768
-$$2768:
+.global _esc__2_768
+_esc__2_768:
 	.incbin "baserom.dol", 0x32A384, 0x44
-.global $$2907
-$$2907:
+.global _esc__2_907
+_esc__2_907:
 	.incbin "baserom.dol", 0x32A3C8, 0x34
-.global $$21011
-$$21011:
+.global _esc__2_1011
+_esc__2_1011:
 	.incbin "baserom.dol", 0x32A3FC, 0x34
 .global ErrorTable
 ErrorTable:
 	.incbin "baserom.dol", 0x32A430, 0x48
-.global $$238
-$$238:
+.global _esc__2_38
+_esc__2_38:
 	.incbin "baserom.dol", 0x32A478, 0x1C
-.global $$239
-$$239:
+.global _esc__2_39
+_esc__2_39:
 	.incbin "baserom.dol", 0x32A494, 0x18
-.global $$240
-$$240:
+.global _esc__2_40
+_esc__2_40:
 	.incbin "baserom.dol", 0x32A4AC, 0x14
-.global $$241
-$$241:
+.global _esc__2_41
+_esc__2_41:
 	.incbin "baserom.dol", 0x32A4C0, 0x14
-.global $$244
-$$244:
+.global _esc__2_44
+_esc__2_44:
 	.incbin "baserom.dol", 0x32A4D4, 0x14
 
 .section .sbss
@@ -245,8 +245,8 @@ idTmp:
 .global FirstRead
 FirstRead:
 	.incbin "baserom.dol", 0x32E630, 0x8
-.global $$2118
-$$2118:
+.global _esc__2_118
+_esc__2_118:
 	.incbin "baserom.dol", 0x32E638, 0x8
 .global __DVDVersion
 __DVDVersion:
@@ -257,20 +257,20 @@ autoInvalidation:
 .global checkOptionalCommand
 checkOptionalCommand:
 	.incbin "baserom.dol", 0x32E648, 0x4
-.global $$223
-$$223:
+.global _esc__2_23
+_esc__2_23:
 	.incbin "baserom.dol", 0x32E64C, 0x8
 .global DmaCommand
 DmaCommand:
 	.incbin "baserom.dol", 0x32E654, 0x4
-.global $$237
-$$237:
+.global _esc__2_37
+_esc__2_37:
 	.incbin "baserom.dol", 0x32E658, 0x4
-.global $$242
-$$242:
+.global _esc__2_42
+_esc__2_42:
 	.incbin "baserom.dol", 0x32E65C, 0x4
-.global $$243
-$$243:
+.global _esc__2_43
+_esc__2_43:
 	.incbin "baserom.dol", 0x32E660, 0x8
 
 .section .text
@@ -1334,9 +1334,9 @@ DVDConvertPathToEntrynum:
 /* 802AF0BC 002ABEBC  94 21 FF B8 */	stwu r1, -0x48(r1)
 /* 802AF0C0 002ABEC0  BE 81 00 18 */	stmw r20, 0x18(r1)
 /* 802AF0C4 002ABEC4  7C 77 1B 78 */	mr r23, r3
-/* 802AF0C8 002ABEC8  3C 60 80 33 */	lis r3, $$2119@ha
+/* 802AF0C8 002ABEC8  3C 60 80 33 */	lis r3, _esc__2_119@ha
 /* 802AF0CC 002ABECC  3B 37 00 00 */	addi r25, r23, 0
-/* 802AF0D0 002ABED0  3B E3 D1 50 */	addi r31, r3, $$2119@l
+/* 802AF0D0 002ABED0  3B E3 D1 50 */	addi r31, r3, _esc__2_119@l
 /* 802AF0D4 002ABED4  83 4D E7 A0 */	lwz r26, currentDirectory-_SDA_BASE_(r13)
 lbl_802AF0D8:
 /* 802AF0D8 002ABED8  88 77 00 00 */	lbz r3, 0(r23)
@@ -1435,7 +1435,7 @@ lbl_802AF20C:
 /* 802AF214 002AC014  38 BF 00 00 */	addi r5, r31, 0
 /* 802AF218 002AC018  4C C6 31 82 */	crclr 6
 /* 802AF21C 002AC01C  38 D9 00 00 */	addi r6, r25, 0
-/* 802AF220 002AC020  38 6D B6 78 */	addi r3, r13, $$2118-_SDA_BASE_
+/* 802AF220 002AC020  38 6D B6 78 */	addi r3, r13, _esc__2_118-_SDA_BASE_
 /* 802AF224 002AC024  38 80 01 83 */	li r4, 0x183
 /* 802AF228 002AC028  4B F8 41 49 */	bl OSPanic
 /* 802AF22C 002AC02C  48 00 00 28 */	b lbl_802AF254
@@ -1609,9 +1609,9 @@ DVDOpen:
 /* 802AF444 002AC244  38 61 00 10 */	addi r3, r1, 0x10
 /* 802AF448 002AC248  38 80 00 80 */	li r4, 0x80
 /* 802AF44C 002AC24C  48 00 02 1D */	bl DVDGetCurrentDir
-/* 802AF450 002AC250  3C 60 80 33 */	lis r3, $$2140@ha
+/* 802AF450 002AC250  3C 60 80 33 */	lis r3, _esc__2_140@ha
 /* 802AF454 002AC254  4C C6 31 82 */	crclr 6
-/* 802AF458 002AC258  38 63 D2 18 */	addi r3, r3, $$2140@l
+/* 802AF458 002AC258  38 63 D2 18 */	addi r3, r3, _esc__2_140@l
 /* 802AF45C 002AC25C  38 9E 00 00 */	addi r4, r30, 0
 /* 802AF460 002AC260  38 A1 00 10 */	addi r5, r1, 0x10
 /* 802AF464 002AC264  4B F8 3E 8D */	bl OSReport
@@ -1842,10 +1842,10 @@ DVDReadAsyncPrio:
 /* 802AF75C 002AC55C  7C 1D 00 40 */	cmplw r29, r0
 /* 802AF760 002AC560  40 81 00 1C */	ble lbl_802AF77C
 lbl_802AF764:
-/* 802AF764 002AC564  3C 60 80 33 */	lis r3, $$2239_0@ha
+/* 802AF764 002AC564  3C 60 80 33 */	lis r3, _esc__2_239_0@ha
 /* 802AF768 002AC568  4C C6 31 82 */	crclr 6
-/* 802AF76C 002AC56C  38 A3 D2 50 */	addi r5, r3, $$2239_0@l
-/* 802AF770 002AC570  38 6D B6 78 */	addi r3, r13, $$2118-_SDA_BASE_
+/* 802AF76C 002AC56C  38 A3 D2 50 */	addi r5, r3, _esc__2_239_0@l
+/* 802AF770 002AC570  38 6D B6 78 */	addi r3, r13, _esc__2_118-_SDA_BASE_
 /* 802AF774 002AC574  38 80 02 EE */	li r4, 0x2ee
 /* 802AF778 002AC578  4B F8 3B F9 */	bl OSPanic
 lbl_802AF77C:
@@ -1856,10 +1856,10 @@ lbl_802AF77C:
 /* 802AF78C 002AC58C  7C 04 00 40 */	cmplw r4, r0
 /* 802AF790 002AC590  41 80 00 1C */	blt lbl_802AF7AC
 lbl_802AF794:
-/* 802AF794 002AC594  3C 60 80 33 */	lis r3, $$2239_0@ha
+/* 802AF794 002AC594  3C 60 80 33 */	lis r3, _esc__2_239_0@ha
 /* 802AF798 002AC598  4C C6 31 82 */	crclr 6
-/* 802AF79C 002AC59C  38 A3 D2 50 */	addi r5, r3, $$2239_0@l
-/* 802AF7A0 002AC5A0  38 6D B6 78 */	addi r3, r13, $$2118-_SDA_BASE_
+/* 802AF79C 002AC59C  38 A3 D2 50 */	addi r5, r3, _esc__2_239_0@l
+/* 802AF7A0 002AC5A0  38 6D B6 78 */	addi r3, r13, _esc__2_118-_SDA_BASE_
 /* 802AF7A4 002AC5A4  38 80 02 F4 */	li r4, 0x2f4
 /* 802AF7A8 002AC5A8  4B F8 3B C9 */	bl OSPanic
 lbl_802AF7AC:
@@ -1914,10 +1914,10 @@ DVDSeekAsyncPrio:
 /* 802AF850 002AC650  7C 1D 00 40 */	cmplw r29, r0
 /* 802AF854 002AC654  40 81 00 1C */	ble lbl_802AF870
 lbl_802AF858:
-/* 802AF858 002AC658  3C 60 80 33 */	lis r3, $$2271_0@ha
+/* 802AF858 002AC658  3C 60 80 33 */	lis r3, _esc__2_271_0@ha
 /* 802AF85C 002AC65C  4C C6 31 82 */	crclr 6
-/* 802AF860 002AC660  38 A3 D2 84 */	addi r5, r3, $$2271_0@l
-/* 802AF864 002AC664  38 6D B6 78 */	addi r3, r13, $$2118-_SDA_BASE_
+/* 802AF860 002AC660  38 A3 D2 84 */	addi r5, r3, _esc__2_271_0@l
+/* 802AF864 002AC664  38 6D B6 78 */	addi r3, r13, _esc__2_118-_SDA_BASE_
 /* 802AF868 002AC668  38 80 03 8B */	li r4, 0x38b
 /* 802AF86C 002AC66C  4B F8 3B 05 */	bl OSPanic
 lbl_802AF870:
@@ -1997,9 +1997,9 @@ DVDInit:
 /* 802AF96C 002AC76C  3C 03 1A E0 */	addis r0, r3, 0x1ae0
 /* 802AF970 002AC770  28 00 7C 22 */	cmplwi r0, 0x7c22
 /* 802AF974 002AC774  40 82 00 1C */	bne lbl_802AF990
-/* 802AF978 002AC778  3C 60 80 33 */	lis r3, $$218@ha
+/* 802AF978 002AC778  3C 60 80 33 */	lis r3, _esc__2_18@ha
 /* 802AF97C 002AC77C  4C C6 31 82 */	crclr 6
-/* 802AF980 002AC780  38 63 D2 F8 */	addi r3, r3, $$218@l
+/* 802AF980 002AC780  38 63 D2 F8 */	addi r3, r3, _esc__2_18@l
 /* 802AF984 002AC784  4B F8 39 6D */	bl OSReport
 /* 802AF988 002AC788  48 00 2D D9 */	bl __fstLoad
 /* 802AF98C 002AC78C  48 00 00 14 */	b lbl_802AF9A0
@@ -2032,10 +2032,10 @@ stateReadingFST:
 /* 802AF9E4 002AC7E4  80 64 00 3C */	lwz r3, 0x3c(r4)
 /* 802AF9E8 002AC7E8  7C 03 00 40 */	cmplw r3, r0
 /* 802AF9EC 002AC7EC  40 80 00 1C */	bge lbl_802AFA08
-/* 802AF9F0 002AC7F0  3C 60 80 33 */	lis r3, $$224@ha
+/* 802AF9F0 002AC7F0  3C 60 80 33 */	lis r3, _esc__2_24@ha
 /* 802AF9F4 002AC7F4  4C C6 31 82 */	crclr 6
-/* 802AF9F8 002AC7F8  38 A3 D3 04 */	addi r5, r3, $$224@l
-/* 802AF9FC 002AC7FC  38 6D B6 8C */	addi r3, r13, $$223-_SDA_BASE_
+/* 802AF9F8 002AC7F8  38 A3 D3 04 */	addi r5, r3, _esc__2_24@l
+/* 802AF9FC 002AC7FC  38 6D B6 8C */	addi r3, r13, _esc__2_23-_SDA_BASE_
 /* 802AFA00 002AC800  38 80 02 8A */	li r4, 0x28a
 /* 802AFA04 002AC804  4B F8 39 6D */	bl OSPanic
 lbl_802AFA08:
@@ -2866,10 +2866,10 @@ lbl_802B04EC:
 /* 802B051C 002AD31C  80 1F 00 00 */	lwz r0, 0(r31)
 /* 802B0520 002AD320  7C 03 00 40 */	cmplw r3, r0
 /* 802B0524 002AD324  40 80 00 1C */	bge lbl_802B0540
-/* 802B0528 002AD328  3C 60 80 33 */	lis r3, $$224@ha
+/* 802B0528 002AD328  3C 60 80 33 */	lis r3, _esc__2_24@ha
 /* 802B052C 002AD32C  4C C6 31 82 */	crclr 6
-/* 802B0530 002AD330  38 A3 D3 04 */	addi r5, r3, $$224@l
-/* 802B0534 002AD334  38 6D B6 8C */	addi r3, r13, $$223-_SDA_BASE_
+/* 802B0530 002AD330  38 A3 D3 04 */	addi r5, r3, _esc__2_24@l
+/* 802B0534 002AD334  38 6D B6 8C */	addi r3, r13, _esc__2_23-_SDA_BASE_
 /* 802B0538 002AD338  38 80 02 8A */	li r4, 0x28a
 /* 802B053C 002AD33C  4B F8 2E 35 */	bl OSPanic
 lbl_802B0540:
@@ -3346,8 +3346,8 @@ stateBusy:
 /* 802B0B94 002AD994  80 03 00 08 */	lwz r0, 8(r3)
 /* 802B0B98 002AD998  28 00 00 0F */	cmplwi r0, 0xf
 /* 802B0B9C 002AD99C  41 81 02 D4 */	bgt lbl_802B0E70
-/* 802B0BA0 002AD9A0  3C 60 80 33 */	lis r3, $$2344_0@ha
-/* 802B0BA4 002AD9A4  38 63 D3 38 */	addi r3, r3, $$2344_0@l
+/* 802B0BA0 002AD9A0  3C 60 80 33 */	lis r3, _esc__2_344_0@ha
+/* 802B0BA4 002AD9A4  38 63 D3 38 */	addi r3, r3, _esc__2_344_0@l
 /* 802B0BA8 002AD9A8  54 00 10 3A */	slwi r0, r0, 2
 /* 802B0BAC 002AD9AC  7C 03 00 2E */	lwzx r0, r3, r0
 /* 802B0BB0 002AD9B0  7C 09 03 A6 */	mtctr r0
@@ -4487,8 +4487,8 @@ DVDCancelAsync:
 /* 802B1B70 002AE970  38 04 00 01 */	addi r0, r4, 1
 /* 802B1B74 002AE974  28 00 00 0C */	cmplwi r0, 0xc
 /* 802B1B78 002AE978  41 81 02 20 */	bgt lbl_802B1D98
-/* 802B1B7C 002AE97C  3C 60 80 33 */	lis r3, $$2907@ha
-/* 802B1B80 002AE980  38 63 D3 C8 */	addi r3, r3, $$2907@l
+/* 802B1B7C 002AE97C  3C 60 80 33 */	lis r3, _esc__2_907@ha
+/* 802B1B80 002AE980  38 63 D3 C8 */	addi r3, r3, _esc__2_907@l
 /* 802B1B84 002AE984  54 00 10 3A */	slwi r0, r0, 2
 /* 802B1B88 002AE988  7C 03 00 2E */	lwzx r0, r3, r0
 /* 802B1B8C 002AE98C  7C 09 03 A6 */	mtctr r0
@@ -4823,8 +4823,8 @@ lbl_802B1FF0:
 /* 802B1FF0 002AEDF0  38 04 00 01 */	addi r0, r4, 1
 /* 802B1FF4 002AEDF4  28 00 00 0C */	cmplwi r0, 0xc
 /* 802B1FF8 002AEDF8  41 81 00 68 */	bgt lbl_802B2060
-/* 802B1FFC 002AEDFC  3C 80 80 33 */	lis r4, $$21011@ha
-/* 802B2000 002AEE00  38 84 D3 FC */	addi r4, r4, $$21011@l
+/* 802B1FFC 002AEDFC  3C 80 80 33 */	lis r4, _esc__2_1011@ha
+/* 802B2000 002AEE00  38 84 D3 FC */	addi r4, r4, _esc__2_1011@l
 /* 802B2004 002AEE04  54 00 10 3A */	slwi r0, r0, 2
 /* 802B2008 002AEE08  7C 04 00 2E */	lwzx r0, r4, r0
 /* 802B200C 002AEE0C  7C 09 03 A6 */	mtctr r0
@@ -5386,11 +5386,11 @@ lbl_802B274C:
 .global __fstLoad
 __fstLoad:
 /* 802B2760 002AF560  7C 08 02 A6 */	mflr r0
-/* 802B2764 002AF564  3C 60 80 33 */	lis r3, $$238@ha
+/* 802B2764 002AF564  3C 60 80 33 */	lis r3, _esc__2_38@ha
 /* 802B2768 002AF568  90 01 00 04 */	stw r0, 4(r1)
 /* 802B276C 002AF56C  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 802B2770 002AF570  93 E1 00 5C */	stw r31, 0x5c(r1)
-/* 802B2774 002AF574  3B E3 D4 78 */	addi r31, r3, $$238@l
+/* 802B2774 002AF574  3B E3 D4 78 */	addi r31, r3, _esc__2_38@l
 /* 802B2778 002AF578  93 C1 00 58 */	stw r30, 0x58(r1)
 /* 802B277C 002AF57C  93 A1 00 54 */	stw r29, 0x54(r1)
 /* 802B2780 002AF580  4B F7 FC 15 */	bl OSGetArenaHi
@@ -5403,10 +5403,10 @@ __fstLoad:
 /* 802B279C 002AF59C  90 6D E8 08 */	stw r3, idTmp-_SDA_BASE_(r13)
 /* 802B27A0 002AF5A0  90 0D E8 04 */	stw r0, bb2-_SDA_BASE_(r13)
 /* 802B27A4 002AF5A4  4B FF F2 05 */	bl DVDReset
-/* 802B27A8 002AF5A8  3C 60 80 3D */	lis r3, block$18@ha
+/* 802B27A8 002AF5A8  3C 60 80 3D */	lis r3, block_esc__7_18@ha
 /* 802B27AC 002AF5AC  80 8D E8 08 */	lwz r4, idTmp-_SDA_BASE_(r13)
 /* 802B27B0 002AF5B0  3C A0 80 2B */	lis r5, cb@ha
-/* 802B27B4 002AF5B4  38 63 81 78 */	addi r3, r3, block$18@l
+/* 802B27B4 002AF5B4  38 63 81 78 */	addi r3, r3, block_esc__7_18@l
 /* 802B27B8 002AF5B8  38 A5 26 88 */	addi r5, r5, cb@l
 /* 802B27BC 002AF5BC  4B FF EF 8D */	bl DVDReadDiskID
 lbl_802B27C0:
@@ -5425,7 +5425,7 @@ lbl_802B27C0:
 /* 802B27F0 002AF5F0  90 1E 00 3C */	stw r0, 0x3c(r30)
 /* 802B27F4 002AF5F4  80 8D E8 08 */	lwz r4, idTmp-_SDA_BASE_(r13)
 /* 802B27F8 002AF5F8  4B D5 09 F1 */	bl memcpy
-/* 802B27FC 002AF5FC  38 6D B6 98 */	addi r3, r13, $$237-_SDA_BASE_
+/* 802B27FC 002AF5FC  38 6D B6 98 */	addi r3, r13, _esc__2_37-_SDA_BASE_
 /* 802B2800 002AF600  4C C6 31 82 */	crclr 6
 /* 802B2804 002AF604  4B F8 0A ED */	bl OSReport
 /* 802B2808 002AF608  88 9D 00 00 */	lbz r4, 0(r29)
@@ -5457,15 +5457,15 @@ lbl_802B27C0:
 /* 802B2870 002AF670  88 1E 00 08 */	lbz r0, 8(r30)
 /* 802B2874 002AF674  28 00 00 00 */	cmplwi r0, 0
 /* 802B2878 002AF678  40 82 00 0C */	bne lbl_802B2884
-/* 802B287C 002AF67C  38 8D B6 9C */	addi r4, r13, $$242-_SDA_BASE_
+/* 802B287C 002AF67C  38 8D B6 9C */	addi r4, r13, _esc__2_42-_SDA_BASE_
 /* 802B2880 002AF680  48 00 00 08 */	b lbl_802B2888
 lbl_802B2884:
-/* 802B2884 002AF684  38 8D B6 A0 */	addi r4, r13, $$243-_SDA_BASE_
+/* 802B2884 002AF684  38 8D B6 A0 */	addi r4, r13, _esc__2_43-_SDA_BASE_
 lbl_802B2888:
 /* 802B2888 002AF688  4C C6 31 82 */	crclr 6
 /* 802B288C 002AF68C  38 7F 00 5C */	addi r3, r31, 0x5c
 /* 802B2890 002AF690  4B F8 0A 61 */	bl OSReport
-/* 802B2894 002AF694  38 6D B6 98 */	addi r3, r13, $$237-_SDA_BASE_
+/* 802B2894 002AF694  38 6D B6 98 */	addi r3, r13, _esc__2_37-_SDA_BASE_
 /* 802B2898 002AF698  4C C6 31 82 */	crclr 6
 /* 802B289C 002AF69C  4B F8 0A 55 */	bl OSReport
 /* 802B28A0 002AF6A0  80 6D E8 04 */	lwz r3, bb2-_SDA_BASE_(r13)

@@ -6,6 +6,8 @@
 __vt__19xMemoryManagerFixed:
 	.incbin "baserom.dol", 0x32D8A0, 0x20
 
+.if 0
+
 .section .text
 
 .global Init__19xMemoryManagerFixedFPvUiUi
@@ -86,7 +88,7 @@ InitMemory__19xMemoryManagerFixedFv:
 lbl_801CE1D4:
 /* 801CE1D4 001CAFD4  80 9D 00 2C */	lwz r4, 0x2c(r29)
 /* 801CE1D8 001CAFD8  7F E3 FB 78 */	mr r3, r31
-/* 801CE1DC 001CAFDC  48 00 00 3D */	bl xMEMADVANCE$$0Q219xMemoryManagerFixed11FixedHeader$$1__FPQ219xMemoryManagerFixed11FixedHeaderUi
+/* 801CE1DC 001CAFDC  48 00 00 3D */	bl xMEMADVANCE_esc__0_Q219xMemoryManagerFixed11FixedHeader_esc__1___FPQ219xMemoryManagerFixed11FixedHeaderUi
 /* 801CE1E0 001CAFE0  90 7F 00 00 */	stw r3, 0(r31)
 /* 801CE1E4 001CAFE4  3B DE 00 01 */	addi r30, r30, 1
 /* 801CE1E8 001CAFE8  83 FF 00 00 */	lwz r31, 0(r31)
@@ -103,7 +105,10 @@ lbl_801CE1EC:
 /* 801CE210 001CB010  38 21 00 20 */	addi r1, r1, 0x20
 /* 801CE214 001CB014  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$0Q219xMemoryManagerFixed11FixedHeader$$1__FPQ219xMemoryManagerFixed11FixedHeaderUi
-xMEMADVANCE$$0Q219xMemoryManagerFixed11FixedHeader$$1__FPQ219xMemoryManagerFixed11FixedHeaderUi:
+.global xMEMADVANCE_esc__0_Q219xMemoryManagerFixed11FixedHeader_esc__1___FPQ219xMemoryManagerFixed11FixedHeaderUi
+xMEMADVANCE_esc__0_Q219xMemoryManagerFixed11FixedHeader_esc__1___FPQ219xMemoryManagerFixed11FixedHeaderUi:
 /* 801CE218 001CB018  7C 63 22 14 */	add r3, r3, r4
 /* 801CE21C 001CB01C  4E 80 00 20 */	blr 
+
+.endif
+

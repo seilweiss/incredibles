@@ -2,8 +2,8 @@
 
 .section .sbss2
 
-.global $$2816_1
-$$2816_1:
+.global _esc__2_816_1
+_esc__2_816_1:
 	.skip 0x4
 .global lbl_803D88EC
 lbl_803D88EC:
@@ -11,35 +11,37 @@ lbl_803D88EC:
 
 .section .sdata2
 
-.global $$2703
-$$2703:
+.global _esc__2_703
+_esc__2_703:
 	.incbin "baserom.dol", 0x32F560, 0x4
-.global $$2704
-$$2704:
+.global _esc__2_704
+_esc__2_704:
 	.incbin "baserom.dol", 0x32F564, 0x4
-.global $$2839_1
-$$2839_1:
+.global _esc__2_839_1
+_esc__2_839_1:
 	.incbin "baserom.dol", 0x32F568, 0x4
-.global $$2840_0
-$$2840_0:
+.global _esc__2_840_0
+_esc__2_840_0:
 	.incbin "baserom.dol", 0x32F56C, 0x4
-.global $$2841_1
-$$2841_1:
+.global _esc__2_841_1
+_esc__2_841_1:
 	.incbin "baserom.dol", 0x32F570, 0x4
-.global $$2842_0
-$$2842_0:
+.global _esc__2_842_0
+_esc__2_842_0:
 	.incbin "baserom.dol", 0x32F574, 0x4
-.global $$2844_0
-$$2844_0:
+.global _esc__2_844_0
+_esc__2_844_0:
 	.incbin "baserom.dol", 0x32F578, 0x8
-.global $$21011_2
-$$21011_2:
+.global _esc__2_1011_2
+_esc__2_1011_2:
 	.incbin "baserom.dol", 0x32F580, 0x8
+
+.if 0
 
 .section .text
 
-.global add_tweaks__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$25tweakFv
-add_tweaks__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$25tweakFv:
+.global add_tweaks__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_5tweakFv
+add_tweaks__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_5tweakFv:
 /* 80067FD4 00064DD4  4E 80 00 20 */	blr 
 
 .global create__21xSpacePartitionTree2DFffffffi
@@ -92,7 +94,7 @@ create__21xSpacePartitionTree2DFffffffi:
 /* 8006808C 00064E8C  90 7E 00 94 */	stw r3, 0x94(r30)
 /* 80068090 00064E90  3C 00 43 30 */	lis r0, 0x4330
 /* 80068094 00064E94  38 80 00 01 */	li r4, 1
-/* 80068098 00064E98  C8 62 8E 98 */	lfd f3, $$2844_0-_SDA2_BASE_(r2)
+/* 80068098 00064E98  C8 62 8E 98 */	lfd f3, _esc__2_844_0-_SDA2_BASE_(r2)
 /* 8006809C 00064E9C  80 7E 00 94 */	lwz r3, 0x94(r30)
 /* 800680A0 00064EA0  90 01 00 10 */	stw r0, 0x10(r1)
 /* 800680A4 00064EA4  7C 83 18 30 */	slw r3, r4, r3
@@ -104,7 +106,7 @@ create__21xSpacePartitionTree2DFffffffi:
 /* 800680BC 00064EBC  80 7E 00 84 */	lwz r3, 0x84(r30)
 /* 800680C0 00064EC0  80 1E 00 90 */	lwz r0, 0x90(r30)
 /* 800680C4 00064EC4  6C 63 80 00 */	xoris r3, r3, 0x8000
-/* 800680C8 00064EC8  80 82 EB C8 */	lwz r4, $$2816_1-_SDA2_BASE_(r2)
+/* 800680C8 00064EC8  80 82 EB C8 */	lwz r4, _esc__2_816_1-_SDA2_BASE_(r2)
 /* 800680CC 00064ECC  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 800680D0 00064ED0  90 61 00 14 */	stw r3, 0x14(r1)
 /* 800680D4 00064ED4  80 62 EB CC */	lwz r3, lbl_803D88EC-_SDA2_BASE_(r2)
@@ -129,12 +131,12 @@ lbl_80068118:
 lbl_8006811C:
 /* 8006811C 00064F1C  D0 5E 00 10 */	stfs f2, 0x10(r30)
 /* 80068120 00064F20  3C 00 43 30 */	lis r0, 0x4330
-/* 80068124 00064F24  C0 22 8E 84 */	lfs f1, $$2704-_SDA2_BASE_(r2)
+/* 80068124 00064F24  C0 22 8E 84 */	lfs f1, _esc__2_704-_SDA2_BASE_(r2)
 /* 80068128 00064F28  38 7E 00 08 */	addi r3, r30, 8
 /* 8006812C 00064F2C  C0 1E 00 10 */	lfs f0, 0x10(r30)
 /* 80068130 00064F30  90 01 00 20 */	stw r0, 0x20(r1)
 /* 80068134 00064F34  EC 01 00 24 */	fdivs f0, f1, f0
-/* 80068138 00064F38  C8 42 8E 98 */	lfd f2, $$2844_0-_SDA2_BASE_(r2)
+/* 80068138 00064F38  C8 42 8E 98 */	lfd f2, _esc__2_844_0-_SDA2_BASE_(r2)
 /* 8006813C 00064F3C  90 01 00 28 */	stw r0, 0x28(r1)
 /* 80068140 00064F40  D0 1E 00 34 */	stfs f0, 0x34(r30)
 /* 80068144 00064F44  D0 3E 00 58 */	stfs f1, 0x58(r30)
@@ -152,9 +154,9 @@ lbl_8006811C:
 /* 80068174 00064F74  EC 23 00 72 */	fmuls f1, f3, f1
 /* 80068178 00064F78  EC 43 00 32 */	fmuls f2, f3, f0
 /* 8006817C 00064F7C  4B FA 81 CD */	bl assign__5xVec2Fff
-/* 80068180 00064F80  C0 22 8E 8C */	lfs f1, $$2840_0-_SDA2_BASE_(r2)
+/* 80068180 00064F80  C0 22 8E 8C */	lfs f1, _esc__2_840_0-_SDA2_BASE_(r2)
 /* 80068184 00064F84  4B FA 94 09 */	bl xlog__Ff
-/* 80068188 00064F88  C0 02 8E 88 */	lfs f0, $$2839_1-_SDA2_BASE_(r2)
+/* 80068188 00064F88  C0 02 8E 88 */	lfs f0, _esc__2_839_1-_SDA2_BASE_(r2)
 /* 8006818C 00064F8C  EC 00 08 24 */	fdivs f0, f0, f1
 /* 80068190 00064F90  D0 1E 00 80 */	stfs f0, 0x80(r30)
 /* 80068194 00064F94  C0 1E 00 10 */	lfs f0, 0x10(r30)
@@ -181,10 +183,10 @@ lbl_800681CC:
 lbl_800681E0:
 /* 800681E0 00064FE0  80 1E 00 7C */	lwz r0, 0x7c(r30)
 /* 800681E4 00064FE4  38 7E 00 14 */	addi r3, r30, 0x14
-/* 800681E8 00064FE8  C0 42 8E 90 */	lfs f2, $$2841_1-_SDA2_BASE_(r2)
+/* 800681E8 00064FE8  C0 42 8E 90 */	lfs f2, _esc__2_841_1-_SDA2_BASE_(r2)
 /* 800681EC 00064FEC  38 9E 00 38 */	addi r4, r30, 0x38
 /* 800681F0 00064FF0  54 00 10 3A */	slwi r0, r0, 2
-/* 800681F4 00064FF4  C0 22 8E 8C */	lfs f1, $$2840_0-_SDA2_BASE_(r2)
+/* 800681F4 00064FF4  C0 22 8E 8C */	lfs f1, _esc__2_840_0-_SDA2_BASE_(r2)
 /* 800681F8 00064FF8  7C 03 02 14 */	add r0, r3, r0
 /* 800681FC 00064FFC  38 BE 00 5C */	addi r5, r30, 0x5c
 /* 80068200 00065000  48 00 00 34 */	b lbl_80068234
@@ -222,10 +224,10 @@ lbl_80068234:
 /* 80068278 00065078  3C 00 43 30 */	lis r0, 0x4330
 /* 8006827C 0006507C  90 81 00 2C */	stw r4, 0x2c(r1)
 /* 80068280 00065080  38 80 00 00 */	li r4, 0
-/* 80068284 00065084  C8 22 8E 98 */	lfd f1, $$2844_0-_SDA2_BASE_(r2)
+/* 80068284 00065084  C8 22 8E 98 */	lfd f1, _esc__2_844_0-_SDA2_BASE_(r2)
 /* 80068288 00065088  38 A0 00 00 */	li r5, 0
 /* 8006828C 0006508C  90 01 00 28 */	stw r0, 0x28(r1)
-/* 80068290 00065090  C0 42 8E 94 */	lfs f2, $$2842_0-_SDA2_BASE_(r2)
+/* 80068290 00065090  C0 42 8E 94 */	lfs f2, _esc__2_842_0-_SDA2_BASE_(r2)
 /* 80068294 00065094  C8 01 00 28 */	lfd f0, 0x28(r1)
 /* 80068298 00065098  90 7E 00 B8 */	stw r3, 0xb8(r30)
 /* 8006829C 0006509C  EC 00 08 28 */	fsubs f0, f0, f1
@@ -252,7 +254,7 @@ lbl_80068234:
 /* 800682F0 000650F0  80 1E 00 C8 */	lwz r0, 0xc8(r30)
 /* 800682F4 000650F4  90 1E 00 B4 */	stw r0, 0xb4(r30)
 /* 800682F8 000650F8  48 00 00 91 */	bl clear__21xSpacePartitionTree2DFv
-/* 800682FC 000650FC  4B FF FC D9 */	bl add_tweaks__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$25tweakFv
+/* 800682FC 000650FC  4B FF FC D9 */	bl add_tweaks__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_5tweakFv
 /* 80068300 00065100  E3 E1 00 98 */	psq_l f31, 152(r1), 0, qr0
 /* 80068304 00065104  CB E1 00 90 */	lfd f31, 0x90(r1)
 /* 80068308 00065108  E3 C1 00 88 */	psq_l f30, 136(r1), 0, qr0
@@ -501,8 +503,8 @@ lbl_80068644:
 /* 80068648 00065448  40 82 FF F4 */	bne lbl_8006863C
 /* 8006864C 0006544C  4E 80 00 20 */	blr 
 
-.global __ct__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapperFPFPQ221xSpacePartitionTree2D10entry_dataPv_bPv
-__ct__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapperFPFPQ221xSpacePartitionTree2D10entry_dataPv_bPv:
+.global __ct__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapperFPFPQ221xSpacePartitionTree2D10entry_dataPv_bPv
+__ct__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapperFPFPQ221xSpacePartitionTree2D10entry_dataPv_bPv:
 /* 80068650 00065450  90 83 00 00 */	stw r4, 0(r3)
 /* 80068654 00065454  90 A3 00 04 */	stw r5, 4(r3)
 /* 80068658 00065458  4E 80 00 20 */	blr 
@@ -521,14 +523,14 @@ intersect_rect__21xSpacePartitionTree2DFffffPFPQ221xSpacePartitionTree2D10entry_
 /* 80068680 00065480  38 61 00 08 */	addi r3, r1, 8
 /* 80068684 00065484  FF C0 18 90 */	fmr f30, f3
 /* 80068688 00065488  FF E0 20 90 */	fmr f31, f4
-/* 8006868C 0006548C  4B FF FF C5 */	bl __ct__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapperFPFPQ221xSpacePartitionTree2D10entry_dataPv_bPv
+/* 8006868C 0006548C  4B FF FF C5 */	bl __ct__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapperFPFPQ221xSpacePartitionTree2D10entry_dataPv_bPv
 /* 80068690 00065490  FC 20 E0 90 */	fmr f1, f28
 /* 80068694 00065494  7F E3 FB 78 */	mr r3, r31
 /* 80068698 00065498  FC 40 E8 90 */	fmr f2, f29
 /* 8006869C 0006549C  38 81 00 08 */	addi r4, r1, 8
 /* 800686A0 000654A0  FC 60 F0 90 */	fmr f3, f30
 /* 800686A4 000654A4  FC 80 F8 90 */	fmr f4, f31
-/* 800686A8 000654A8  48 00 07 89 */	bl intersect_rect$$0Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper$$1__21xSpacePartitionTree2DFffffRQ233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper
+/* 800686A8 000654A8  48 00 07 89 */	bl intersect_rect_esc__0_Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper_esc__1___21xSpacePartitionTree2DFffffRQ233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper
 /* 800686AC 000654AC  39 61 00 40 */	addi r11, r1, 0x40
 /* 800686B0 000654B0  48 19 28 25 */	bl func_801FAED4
 /* 800686B4 000654B4  80 01 00 44 */	lwz r0, 0x44(r1)
@@ -645,7 +647,7 @@ lbl_80068834:
 /* 80068838 00065638  40 80 00 08 */	bge lbl_80068840
 /* 8006883C 0006563C  7C 7D 1B 78 */	mr r29, r3
 lbl_80068840:
-/* 80068840 00065640  C0 02 8E A0 */	lfs f0, $$21011_2-_SDA2_BASE_(r2)
+/* 80068840 00065640  C0 02 8E A0 */	lfs f0, _esc__2_1011_2-_SDA2_BASE_(r2)
 /* 80068844 00065644  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80068848 00065648  40 80 00 0C */	bge lbl_80068854
 /* 8006884C 0006564C  83 3B 00 7C */	lwz r25, 0x7c(r27)
@@ -663,7 +665,7 @@ lbl_80068854:
 /* 80068878 00065678  7C 19 03 78 */	mr r25, r0
 lbl_8006887C:
 /* 8006887C 0006567C  38 00 00 00 */	li r0, 0
-/* 80068880 00065680  CB 62 8E 98 */	lfd f27, $$2844_0-_SDA2_BASE_(r2)
+/* 80068880 00065680  CB 62 8E 98 */	lfd f27, _esc__2_844_0-_SDA2_BASE_(r2)
 /* 80068884 00065684  B0 1C 00 0A */	sth r0, 0xa(r28)
 /* 80068888 00065688  7F 58 D3 78 */	mr r24, r26
 /* 8006888C 0006568C  3F 40 43 30 */	lis r26, 0x4330
@@ -776,10 +778,10 @@ insert_internal__21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D10entry_dataP
 /* 80068A10 00065810  F2 81 00 C8 */	psq_st f20, 200(r1), 0, qr0
 /* 80068A14 00065814  BE E1 00 9C */	stmw r23, 0x9c(r1)
 /* 80068A18 00065818  7C 77 1B 78 */	mr r23, r3
-/* 80068A1C 0006581C  C3 E2 8E 80 */	lfs f31, $$2703-_SDA2_BASE_(r2)
+/* 80068A1C 0006581C  C3 E2 8E 80 */	lfs f31, _esc__2_703-_SDA2_BASE_(r2)
 /* 80068A20 00065820  80 63 00 B8 */	lwz r3, 0xb8(r3)
 /* 80068A24 00065824  7C 98 23 78 */	mr r24, r4
-/* 80068A28 00065828  C3 A2 8E 84 */	lfs f29, $$2704-_SDA2_BASE_(r2)
+/* 80068A28 00065828  C3 A2 8E 84 */	lfs f29, _esc__2_704-_SDA2_BASE_(r2)
 /* 80068A2C 0006582C  38 00 00 14 */	li r0, 0x14
 /* 80068A30 00065830  7C 63 C0 50 */	subf r3, r3, r24
 /* 80068A34 00065834  FE 80 08 90 */	fmr f20, f1
@@ -821,7 +823,7 @@ lbl_80068A6C:
 /* 80068AC0 000658C0  48 00 00 FC */	b lbl_80068BBC
 lbl_80068AC4:
 /* 80068AC4 000658C4  20 1E 00 04 */	subfic r0, r30, 4
-/* 80068AC8 000658C8  C8 22 8E 98 */	lfd f1, $$2844_0-_SDA2_BASE_(r2)
+/* 80068AC8 000658C8  C8 22 8E 98 */	lfd f1, _esc__2_844_0-_SDA2_BASE_(r2)
 /* 80068ACC 000658CC  3C 60 43 30 */	lis r3, 0x4330
 /* 80068AD0 000658D0  7C 09 03 A6 */	mtctr r0
 /* 80068AD4 000658D4  2C 1E 00 04 */	cmpwi r30, 4
@@ -1072,8 +1074,8 @@ free_children__21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cell:
 /* 80068E28 00065C28  90 03 00 AC */	stw r0, 0xac(r3)
 /* 80068E2C 00065C2C  4E 80 00 20 */	blr 
 
-.global intersect_rect$$0Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper$$1__21xSpacePartitionTree2DFffffRQ233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper
-intersect_rect$$0Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper$$1__21xSpacePartitionTree2DFffffRQ233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper:
+.global intersect_rect_esc__0_Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper_esc__1___21xSpacePartitionTree2DFffffRQ233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper
+intersect_rect_esc__0_Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper_esc__1___21xSpacePartitionTree2DFffffRQ233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper:
 /* 80068E30 00065C30  94 21 FF 40 */	stwu r1, -0xc0(r1)
 /* 80068E34 00065C34  7C 08 02 A6 */	mflr r0
 /* 80068E38 00065C38  90 01 00 C4 */	stw r0, 0xc4(r1)
@@ -1191,7 +1193,7 @@ lbl_80068FC4:
 /* 80068FC8 00065DC8  40 80 00 08 */	bge lbl_80068FD0
 /* 80068FCC 00065DCC  7C 9D 23 78 */	mr r29, r4
 lbl_80068FD0:
-/* 80068FD0 00065DD0  CB 62 8E 98 */	lfd f27, $$2844_0-_SDA2_BASE_(r2)
+/* 80068FD0 00065DD0  CB 62 8E 98 */	lfd f27, _esc__2_844_0-_SDA2_BASE_(r2)
 /* 80068FD4 00065DD4  7C 79 1B 78 */	mr r25, r3
 /* 80068FD8 00065DD8  3F 40 43 30 */	lis r26, 0x4330
 /* 80068FDC 00065DDC  48 00 00 A4 */	b lbl_80069080
@@ -1230,7 +1232,7 @@ lbl_80069014:
 /* 80069058 00065E58  EC 3C 08 28 */	fsubs f1, f28, f1
 /* 8006905C 00065E5C  EC 00 D8 28 */	fsubs f0, f0, f27
 /* 80069060 00065E60  EC 7E 00 28 */	fsubs f3, f30, f0
-/* 80069064 00065E64  48 00 00 A5 */	bl intersect_rect$$0Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper$$1__21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper
+/* 80069064 00065E64  48 00 00 A5 */	bl intersect_rect_esc__0_Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper_esc__1___21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper
 /* 80069068 00065E68  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8006906C 00065E6C  41 82 00 10 */	beq lbl_8006907C
 /* 80069070 00065E70  3B 18 00 01 */	addi r24, r24, 1
@@ -1262,8 +1264,8 @@ lbl_80069080:
 /* 800690CC 00065ECC  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 800690D0 00065ED0  4E 80 00 20 */	blr 
 
-.global __cl__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapperCFPQ221xSpacePartitionTree2D10entry_data
-__cl__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapperCFPQ221xSpacePartitionTree2D10entry_data:
+.global __cl__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapperCFPQ221xSpacePartitionTree2D10entry_data
+__cl__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapperCFPQ221xSpacePartitionTree2D10entry_data:
 /* 800690D4 00065ED4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800690D8 00065ED8  7C 08 02 A6 */	mflr r0
 /* 800690DC 00065EDC  81 83 00 00 */	lwz r12, 0(r3)
@@ -1278,11 +1280,11 @@ __cl__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapperCFPQ221xSpacePar
 /* 80069100 00065F00  38 21 00 10 */	addi r1, r1, 0x10
 /* 80069104 00065F04  4E 80 00 20 */	blr 
 
-.global intersect_rect$$0Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper$$1__21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper
-intersect_rect$$0Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper$$1__21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapper:
+.global intersect_rect_esc__0_Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper_esc__1___21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper
+intersect_rect_esc__0_Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper_esc__1___21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapper:
 /* 80069108 00065F08  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 8006910C 00065F0C  7C 08 02 A6 */	mflr r0
-/* 80069110 00065F10  C8 A2 8E 98 */	lfd f5, $$2844_0-_SDA2_BASE_(r2)
+/* 80069110 00065F10  C8 A2 8E 98 */	lfd f5, _esc__2_844_0-_SDA2_BASE_(r2)
 /* 80069114 00065F14  90 01 00 74 */	stw r0, 0x74(r1)
 /* 80069118 00065F18  3C 00 43 30 */	lis r0, 0x4330
 /* 8006911C 00065F1C  BE 41 00 38 */	stmw r18, 0x38(r1)
@@ -1335,7 +1337,7 @@ lbl_800691C4:
 /* 800691D0 00065FD0  A0 12 00 02 */	lhz r0, 2(r18)
 /* 800691D4 00065FD4  1C 00 00 14 */	mulli r0, r0, 0x14
 /* 800691D8 00065FD8  7C 99 02 14 */	add r4, r25, r0
-/* 800691DC 00065FDC  4B FF FE F9 */	bl __cl__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapperCFPQ221xSpacePartitionTree2D10entry_data
+/* 800691DC 00065FDC  4B FF FE F9 */	bl __cl__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapperCFPQ221xSpacePartitionTree2D10entry_data
 /* 800691E0 00065FE0  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 800691E4 00065FE4  40 82 00 0C */	bne lbl_800691F0
 /* 800691E8 00065FE8  38 60 00 00 */	li r3, 0
@@ -1381,7 +1383,7 @@ lbl_80069254:
 /* 80069270 00066070  41 82 00 20 */	beq lbl_80069290
 /* 80069274 00066074  B2 C4 00 08 */	sth r22, 8(r4)
 /* 80069278 00066078  7E A3 AB 78 */	mr r3, r21
-/* 8006927C 0006607C  4B FF FE 59 */	bl __cl__Q233$$2unnamed$$2xSpacePartitionTree_cpp$$213cb_fp_wrapperCFPQ221xSpacePartitionTree2D10entry_data
+/* 8006927C 0006607C  4B FF FE 59 */	bl __cl__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_13cb_fp_wrapperCFPQ221xSpacePartitionTree2D10entry_data
 /* 80069280 00066080  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80069284 00066084  40 82 00 0C */	bne lbl_80069290
 /* 80069288 00066088  38 60 00 00 */	li r3, 0
@@ -1445,3 +1447,6 @@ lbl_80069348:
 /* 80069350 00066150  7C 08 03 A6 */	mtlr r0
 /* 80069354 00066154  38 21 00 70 */	addi r1, r1, 0x70
 /* 80069358 00066158  4E 80 00 20 */	blr 
+
+.endif
+

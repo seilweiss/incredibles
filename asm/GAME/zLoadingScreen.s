@@ -12,10 +12,12 @@ show_stats:
 __vt__14zLoadingScreen:
 	.incbin "baserom.dol", 0x32DAB8, 0x18
 
+.if 0
+
 .section .text
 
-.global CustomStaticAllocator__28$$2unnamed$$2zLoadingScreen_cpp$$2FUiPv
-CustomStaticAllocator__28$$2unnamed$$2zLoadingScreen_cpp$$2FUiPv:
+.global CustomStaticAllocator__28_esc__2_unnamed_esc__2_zLoadingScreen_cpp_esc__2_FUiPv
+CustomStaticAllocator__28_esc__2_unnamed_esc__2_zLoadingScreen_cpp_esc__2_FUiPv:
 /* 801D4C90 001D1A90  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D4C94 001D1A94  7C 08 02 A6 */	mflr r0
 /* 801D4C98 001D1A98  90 01 00 14 */	stw r0, 0x14(r1)
@@ -28,8 +30,8 @@ CustomStaticAllocator__28$$2unnamed$$2zLoadingScreen_cpp$$2FUiPv:
 /* 801D4CB4 001D1AB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D4CB8 001D1AB8  4E 80 00 20 */	blr 
 
-.global CustomSignalHandler__28$$2unnamed$$2zLoadingScreen_cpp$$2FP3zUIUiUiPCfP5xBaseUiPv
-CustomSignalHandler__28$$2unnamed$$2zLoadingScreen_cpp$$2FP3zUIUiUiPCfP5xBaseUiPv:
+.global CustomSignalHandler__28_esc__2_unnamed_esc__2_zLoadingScreen_cpp_esc__2_FP3zUIUiUiPCfP5xBaseUiPv
+CustomSignalHandler__28_esc__2_unnamed_esc__2_zLoadingScreen_cpp_esc__2_FP3zUIUiUiPCfP5xBaseUiPv:
 /* 801D4CBC 001D1ABC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D4CC0 001D1AC0  7C 08 02 A6 */	mflr r0
 /* 801D4CC4 001D1AC4  7C AC 2B 78 */	mr r12, r5
@@ -67,8 +69,8 @@ Init__14zLoadingScreenFv:
 /* 801D4D2C 001D1B2C  38 00 00 00 */	li r0, 0
 /* 801D4D30 001D1B30  BF 61 00 1C */	stmw r27, 0x1c(r1)
 /* 801D4D34 001D1B34  7C 7B 1B 78 */	mr r27, r3
-/* 801D4D38 001D1B38  3C 60 80 1D */	lis r3, CustomStaticAllocator__28$$2unnamed$$2zLoadingScreen_cpp$$2FUiPv@ha
-/* 801D4D3C 001D1B3C  38 63 4C 90 */	addi r3, r3, CustomStaticAllocator__28$$2unnamed$$2zLoadingScreen_cpp$$2FUiPv@l
+/* 801D4D38 001D1B38  3C 60 80 1D */	lis r3, CustomStaticAllocator__28_esc__2_unnamed_esc__2_zLoadingScreen_cpp_esc__2_FUiPv@ha
+/* 801D4D3C 001D1B3C  38 63 4C 90 */	addi r3, r3, CustomStaticAllocator__28_esc__2_unnamed_esc__2_zLoadingScreen_cpp_esc__2_FUiPv@l
 /* 801D4D40 001D1B40  7F 64 DB 78 */	mr r4, r27
 /* 801D4D44 001D1B44  90 1B 00 C8 */	stw r0, 0xc8(r27)
 /* 801D4D48 001D1B48  4B F9 53 C9 */	bl zUISetCustomStaticAllocator__FPFUiPv_PvPv
@@ -204,9 +206,9 @@ lbl_801D4F1C:
 /* 801D4F2C 001D1D2C  38 60 00 00 */	li r3, 0
 /* 801D4F30 001D1D30  38 80 00 00 */	li r4, 0
 /* 801D4F34 001D1D34  4B F9 51 DD */	bl zUISetCustomStaticAllocator__FPFUiPv_PvPv
-/* 801D4F38 001D1D38  3C 60 80 1D */	lis r3, CustomSignalHandler__28$$2unnamed$$2zLoadingScreen_cpp$$2FP3zUIUiUiPCfP5xBaseUiPv@ha
+/* 801D4F38 001D1D38  3C 60 80 1D */	lis r3, CustomSignalHandler__28_esc__2_unnamed_esc__2_zLoadingScreen_cpp_esc__2_FP3zUIUiUiPCfP5xBaseUiPv@ha
 /* 801D4F3C 001D1D3C  7F 64 DB 78 */	mr r4, r27
-/* 801D4F40 001D1D40  38 63 4C BC */	addi r3, r3, CustomSignalHandler__28$$2unnamed$$2zLoadingScreen_cpp$$2FP3zUIUiUiPCfP5xBaseUiPv@l
+/* 801D4F40 001D1D40  38 63 4C BC */	addi r3, r3, CustomSignalHandler__28_esc__2_unnamed_esc__2_zLoadingScreen_cpp_esc__2_FP3zUIUiUiPCfP5xBaseUiPv@l
 /* 801D4F44 001D1D44  4B F9 51 D9 */	bl zUISetCustomSignalHandler__FPFP3zUIUiUiPCfP5xBaseUiPv_vPv
 /* 801D4F48 001D1D48  80 9B 00 44 */	lwz r4, 0x44(r27)
 /* 801D4F4C 001D1D4C  38 7B 00 04 */	addi r3, r27, 4
@@ -425,3 +427,6 @@ lbl_801D521C:
 /* 801D5224 001D2024  7C 08 03 A6 */	mtlr r0
 /* 801D5228 001D2028  38 21 00 30 */	addi r1, r1, 0x30
 /* 801D522C 001D202C  4E 80 00 20 */	blr 
+
+.endif
+

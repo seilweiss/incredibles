@@ -2,24 +2,26 @@
 
 .section .rodata
 
-.global $$2stringBase0_155
-$$2stringBase0_155:
+.global _esc__2_stringBase0_155
+_esc__2_stringBase0_155:
 	.incbin "baserom.dol", 0x2E7240, 0x8
 
 .section .sdata2
 
-.global $$21022_3
-$$21022_3:
+.global _esc__2_1022_3
+_esc__2_1022_3:
 	.incbin "baserom.dol", 0x333E30, 0x4
-.global $$21050_5
-$$21050_5:
+.global _esc__2_1050_5
+_esc__2_1050_5:
 	.incbin "baserom.dol", 0x333E34, 0x4
-.global $$21060_4
-$$21060_4:
+.global _esc__2_1060_4
+_esc__2_1060_4:
 	.incbin "baserom.dol", 0x333E38, 0x4
-.global $$21103_2
-$$21103_2:
+.global _esc__2_1103_2
+_esc__2_1103_2:
 	.incbin "baserom.dol", 0x333E3C, 0x4
+
+.if 0
 
 .section .text
 
@@ -81,7 +83,7 @@ find_preset__10zCamPresetFb:
 /* 801F0A84 001ED884  3C 80 80 38 */	lis r4, globals@ha
 /* 801F0A88 001ED888  7C 79 1B 78 */	mr r25, r3
 /* 801F0A8C 001ED88C  38 64 2A 38 */	addi r3, r4, globals@l
-/* 801F0A90 001ED890  C3 E2 D7 50 */	lfs f31, $$21022_3-_SDA2_BASE_(r2)
+/* 801F0A90 001ED890  C3 E2 D7 50 */	lfs f31, _esc__2_1022_3-_SDA2_BASE_(r2)
 /* 801F0A94 001ED894  80 83 04 C8 */	lwz r4, 0x4c8(r3)
 /* 801F0A98 001ED898  3B 83 05 C0 */	addi r28, r3, 0x5c0
 /* 801F0A9C 001ED89C  57 3F 06 3E */	clrlwi r31, r25, 0x18
@@ -205,13 +207,13 @@ lbl_801F0C38:
 /* 801F0C38 001EDA38  3C 03 BB A7 */	addis r0, r3, 0xbba7
 /* 801F0C3C 001EDA3C  28 00 4E 41 */	cmplwi r0, 0x4e41
 /* 801F0C40 001EDA40  40 82 00 40 */	bne lbl_801F0C80
-/* 801F0C44 001EDA44  3C 60 80 2F */	lis r3, $$2stringBase0_155@ha
-/* 801F0C48 001EDA48  38 63 A2 40 */	addi r3, r3, $$2stringBase0_155@l
+/* 801F0C44 001EDA44  3C 60 80 2F */	lis r3, _esc__2_stringBase0_155@ha
+/* 801F0C48 001EDA48  38 63 A2 40 */	addi r3, r3, _esc__2_stringBase0_155@l
 /* 801F0C4C 001EDA4C  4B E7 BF D5 */	bl xStrHash__FPCc
 /* 801F0C50 001EDA50  80 1F 00 08 */	lwz r0, 8(r31)
 /* 801F0C54 001EDA54  7C 00 18 40 */	cmplw r0, r3
 /* 801F0C58 001EDA58  40 82 00 28 */	bne lbl_801F0C80
-/* 801F0C5C 001EDA5C  C0 22 D7 54 */	lfs f1, $$21050_5-_SDA2_BASE_(r2)
+/* 801F0C5C 001EDA5C  C0 22 D7 54 */	lfs f1, _esc__2_1050_5-_SDA2_BASE_(r2)
 /* 801F0C60 001EDA60  7F A3 EB 78 */	mr r3, r29
 /* 801F0C64 001EDA64  C0 1F 00 1C */	lfs f0, 0x1c(r31)
 /* 801F0C68 001EDA68  38 9F 00 10 */	addi r4, r31, 0x10
@@ -240,7 +242,7 @@ at_checkpoint__10zCamPresetCFv:
 /* 801F0CB0 001EDAB0  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801F0CB4 001EDAB4  41 82 00 20 */	beq lbl_801F0CD4
 /* 801F0CB8 001EDAB8  3C 60 80 38 */	lis r3, globals@ha
-/* 801F0CBC 001EDABC  C0 22 D7 58 */	lfs f1, $$21060_4-_SDA2_BASE_(r2)
+/* 801F0CBC 001EDABC  C0 22 D7 58 */	lfs f1, _esc__2_1060_4-_SDA2_BASE_(r2)
 /* 801F0CC0 001EDAC0  38 63 2A 38 */	addi r3, r3, globals@l
 /* 801F0CC4 001EDAC4  38 81 00 0C */	addi r4, r1, 0xc
 /* 801F0CC8 001EDAC8  38 63 05 C0 */	addi r3, r3, 0x5c0
@@ -354,7 +356,7 @@ get_matrix__10zCamPresetCFR7xMat4x3:
 /* 801F0E34 001EDC34  4B FF FF 65 */	bl get_relative__10zCamPresetCFR5xVec3Rf
 /* 801F0E38 001EDC38  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801F0E3C 001EDC3C  41 82 00 34 */	beq lbl_801F0E70
-/* 801F0E40 001EDC40  C0 42 D7 5C */	lfs f2, $$21103_2-_SDA2_BASE_(r2)
+/* 801F0E40 001EDC40  C0 42 D7 5C */	lfs f2, _esc__2_1103_2-_SDA2_BASE_(r2)
 /* 801F0E44 001EDC44  38 61 00 20 */	addi r3, r1, 0x20
 /* 801F0E48 001EDC48  C0 21 00 10 */	lfs f1, 0x10(r1)
 /* 801F0E4C 001EDC4C  FC 60 10 90 */	fmr f3, f2
@@ -424,3 +426,6 @@ event_handler_callback__10zCamPresetFP5xBaseP5xBaseUiPCfP5xBaseUi:
 .global debug_init__10zCamPresetFv
 debug_init__10zCamPresetFv:
 /* 801F0F18 001EDD18  4E 80 00 20 */	blr 
+
+.endif
+

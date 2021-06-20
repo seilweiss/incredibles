@@ -29,14 +29,14 @@ diskRetryMessage:
 .global diskFatalMessage
 diskFatalMessage:
 	.incbin "baserom.dol", 0x300A3C, 0x54
-.global $$21000_0
-$$21000_0:
+.global _esc__2_1000_0
+_esc__2_1000_0:
 	.incbin "baserom.dol", 0x300A90, 0x38
 
 .section .rodata
 
-.global $$2stringBase0_33
-$$2stringBase0_33:
+.global _esc__2_stringBase0_33
+_esc__2_stringBase0_33:
 	.incbin "baserom.dol", 0x2D6140, 0xC70
 
 .section .sbss
@@ -122,8 +122,8 @@ mDiskErrorInHigherPriorityThread__8iTRCDisk:
 
 .section .sbss2
 
-.global $$2726_0
-$$2726_0:
+.global _esc__2_726_0
+_esc__2_726_0:
 	.skip 0x8
 
 .section .sdata
@@ -140,24 +140,26 @@ mResetEnabled__11ResetButton:
 
 .section .sdata2
 
-.global $$2733_0
-$$2733_0:
+.global _esc__2_733_0
+_esc__2_733_0:
 	.incbin "baserom.dol", 0x32F958, 0x4
-.global $$2734
-$$2734:
+.global _esc__2_734
+_esc__2_734:
 	.incbin "baserom.dol", 0x32F95C, 0x4
-.global $$2736_1
-$$2736_1:
+.global _esc__2_736_1
+_esc__2_736_1:
 	.incbin "baserom.dol", 0x32F960, 0x8
-.global $$2754
-$$2754:
+.global _esc__2_754
+_esc__2_754:
 	.incbin "baserom.dol", 0x32F968, 0x4
-.global $$2808
-$$2808:
+.global _esc__2_808
+_esc__2_808:
 	.incbin "baserom.dol", 0x32F96C, 0x4
-.global $$2819_3
-$$2819_3:
+.global _esc__2_819_3
+_esc__2_819_3:
 	.incbin "baserom.dol", 0x32F970, 0x8
+
+.if 0
 
 .section .text
 
@@ -350,7 +352,7 @@ InitDisplay__7ROMFontFP16_GXRenderModeObj:
 /* 800825EC 0007F3EC  BF C1 00 98 */	stmw r30, 0x98(r1)
 /* 800825F0 0007F3F0  7C 7E 1B 78 */	mr r30, r3
 /* 800825F4 0007F3F4  4B FF FE 61 */	bl InitFont__7ROMFontFv
-/* 800825F8 0007F3F8  80 02 EC C8 */	lwz r0, $$2726_0-_SDA2_BASE_(r2)
+/* 800825F8 0007F3F8  80 02 EC C8 */	lwz r0, _esc__2_726_0-_SDA2_BASE_(r2)
 /* 800825FC 0007F3FC  3B ED C2 4C */	addi r31, r13, mXFBs__7ROMFont-_SDA_BASE_
 /* 80082600 0007F400  3B FF 00 04 */	addi r31, r31, 4
 /* 80082604 0007F404  93 CD C2 58 */	stw r30, mRenderMode__7ROMFont-_SDA_BASE_(r13)
@@ -370,16 +372,16 @@ InitDisplay__7ROMFontFP16_GXRenderModeObj:
 /* 8008263C 0007F43C  48 1A 83 15 */	bl GXSetCopyClear
 /* 80082640 0007F440  80 CD C2 58 */	lwz r6, mRenderMode__7ROMFont-_SDA_BASE_(r13)
 /* 80082644 0007F444  3C 80 43 30 */	lis r4, 0x4330
-/* 80082648 0007F448  C0 22 92 78 */	lfs f1, $$2733_0-_SDA2_BASE_(r2)
+/* 80082648 0007F448  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
 /* 8008264C 0007F44C  38 61 00 40 */	addi r3, r1, 0x40
 /* 80082650 0007F450  A0 A6 00 06 */	lhz r5, 6(r6)
 /* 80082654 0007F454  A0 06 00 04 */	lhz r0, 4(r6)
 /* 80082658 0007F458  FC 60 08 90 */	fmr f3, f1
 /* 8008265C 0007F45C  90 A1 00 84 */	stw r5, 0x84(r1)
 /* 80082660 0007F460  FC A0 08 90 */	fmr f5, f1
-/* 80082664 0007F464  C8 82 92 80 */	lfd f4, $$2736_1-_SDA2_BASE_(r2)
+/* 80082664 0007F464  C8 82 92 80 */	lfd f4, _esc__2_736_1-_SDA2_BASE_(r2)
 /* 80082668 0007F468  90 81 00 80 */	stw r4, 0x80(r1)
-/* 8008266C 0007F46C  C0 C2 92 7C */	lfs f6, $$2734-_SDA2_BASE_(r2)
+/* 8008266C 0007F46C  C0 C2 92 7C */	lfs f6, _esc__2_734-_SDA2_BASE_(r2)
 /* 80082670 0007F470  C8 01 00 80 */	lfd f0, 0x80(r1)
 /* 80082674 0007F474  90 01 00 8C */	stw r0, 0x8c(r1)
 /* 80082678 0007F478  EC 40 20 28 */	fsubs f2, f0, f4
@@ -459,13 +461,13 @@ InitGX__7ROMFontFv:
 /* 80082788 0007F588  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8008278C 0007F58C  7C 08 02 A6 */	mflr r0
 /* 80082790 0007F590  3C 60 43 30 */	lis r3, 0x4330
-/* 80082794 0007F594  C0 22 92 78 */	lfs f1, $$2733_0-_SDA2_BASE_(r2)
+/* 80082794 0007F594  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
 /* 80082798 0007F598  90 01 00 24 */	stw r0, 0x24(r1)
-/* 8008279C 0007F59C  C8 82 92 80 */	lfd f4, $$2736_1-_SDA2_BASE_(r2)
+/* 8008279C 0007F59C  C8 82 92 80 */	lfd f4, _esc__2_736_1-_SDA2_BASE_(r2)
 /* 800827A0 0007F5A0  FC 40 08 90 */	fmr f2, f1
 /* 800827A4 0007F5A4  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 800827A8 0007F5A8  FC A0 08 90 */	fmr f5, f1
-/* 800827AC 0007F5AC  C0 C2 92 88 */	lfs f6, $$2754-_SDA2_BASE_(r2)
+/* 800827AC 0007F5AC  C0 C2 92 88 */	lfs f6, _esc__2_754-_SDA2_BASE_(r2)
 /* 800827B0 0007F5B0  80 AD C2 58 */	lwz r5, mRenderMode__7ROMFont-_SDA_BASE_(r13)
 /* 800827B4 0007F5B4  90 61 00 08 */	stw r3, 8(r1)
 /* 800827B8 0007F5B8  A0 85 00 04 */	lhz r4, 4(r5)
@@ -570,15 +572,15 @@ RenderBegin__7ROMFontFv:
 /* 80082920 0007F720  3C 80 43 30 */	lis r4, 0x4330
 /* 80082924 0007F724  A0 1F 00 06 */	lhz r0, 6(r31)
 /* 80082928 0007F728  90 A1 00 0C */	stw r5, 0xc(r1)
-/* 8008292C 0007F72C  C0 22 92 78 */	lfs f1, $$2733_0-_SDA2_BASE_(r2)
+/* 8008292C 0007F72C  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
 /* 80082930 0007F730  90 81 00 08 */	stw r4, 8(r1)
-/* 80082934 0007F734  C8 82 92 80 */	lfd f4, $$2736_1-_SDA2_BASE_(r2)
+/* 80082934 0007F734  C8 82 92 80 */	lfd f4, _esc__2_736_1-_SDA2_BASE_(r2)
 /* 80082938 0007F738  FC 40 08 90 */	fmr f2, f1
 /* 8008293C 0007F73C  C8 01 00 08 */	lfd f0, 8(r1)
 /* 80082940 0007F740  FC A0 08 90 */	fmr f5, f1
 /* 80082944 0007F744  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80082948 0007F748  EC 60 20 28 */	fsubs f3, f0, f4
-/* 8008294C 0007F74C  C0 C2 92 88 */	lfs f6, $$2754-_SDA2_BASE_(r2)
+/* 8008294C 0007F74C  C0 C2 92 88 */	lfs f6, _esc__2_754-_SDA2_BASE_(r2)
 /* 80082950 0007F750  90 81 00 10 */	stw r4, 0x10(r1)
 /* 80082954 0007F754  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 80082958 0007F758  EC 80 20 28 */	fsubs f4, f0, f4
@@ -589,15 +591,15 @@ lbl_80082964:
 /* 80082968 0007F768  3C 60 43 30 */	lis r3, 0x4330
 /* 8008296C 0007F76C  A0 1F 00 06 */	lhz r0, 6(r31)
 /* 80082970 0007F770  90 81 00 14 */	stw r4, 0x14(r1)
-/* 80082974 0007F774  C0 22 92 78 */	lfs f1, $$2733_0-_SDA2_BASE_(r2)
+/* 80082974 0007F774  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
 /* 80082978 0007F778  90 61 00 10 */	stw r3, 0x10(r1)
-/* 8008297C 0007F77C  C8 82 92 80 */	lfd f4, $$2736_1-_SDA2_BASE_(r2)
+/* 8008297C 0007F77C  C8 82 92 80 */	lfd f4, _esc__2_736_1-_SDA2_BASE_(r2)
 /* 80082980 0007F780  FC 40 08 90 */	fmr f2, f1
 /* 80082984 0007F784  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 80082988 0007F788  FC A0 08 90 */	fmr f5, f1
 /* 8008298C 0007F78C  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80082990 0007F790  EC 60 20 28 */	fsubs f3, f0, f4
-/* 80082994 0007F794  C0 C2 92 88 */	lfs f6, $$2754-_SDA2_BASE_(r2)
+/* 80082994 0007F794  C0 C2 92 88 */	lfs f6, _esc__2_754-_SDA2_BASE_(r2)
 /* 80082998 0007F798  90 61 00 08 */	stw r3, 8(r1)
 /* 8008299C 0007F79C  C8 01 00 08 */	lfd f0, 8(r1)
 /* 800829A0 0007F7A0  EC 80 20 28 */	fsubs f4, f0, f4
@@ -756,7 +758,7 @@ LoadTex__7ROMFontFPv:
 /* 80082BA0 0007F9A0  39 20 00 00 */	li r9, 0
 /* 80082BA4 0007F9A4  39 40 00 00 */	li r10, 0
 /* 80082BA8 0007F9A8  48 1A 8A 45 */	bl GXInitTexObj
-/* 80082BAC 0007F9AC  C0 22 92 78 */	lfs f1, $$2733_0-_SDA2_BASE_(r2)
+/* 80082BAC 0007F9AC  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
 /* 80082BB0 0007F9B0  38 61 00 08 */	addi r3, r1, 8
 /* 80082BB4 0007F9B4  38 80 00 01 */	li r4, 1
 /* 80082BB8 0007F9B8  38 A0 00 01 */	li r5, 1
@@ -770,9 +772,9 @@ LoadTex__7ROMFontFPv:
 /* 80082BD8 0007F9D8  38 61 00 08 */	addi r3, r1, 8
 /* 80082BDC 0007F9DC  38 80 00 00 */	li r4, 0
 /* 80082BE0 0007F9E0  48 1A 90 15 */	bl GXLoadTexObj
-/* 80082BE4 0007F9E4  C0 22 92 8C */	lfs f1, $$2808-_SDA2_BASE_(r2)
+/* 80082BE4 0007F9E4  C0 22 92 8C */	lfs f1, _esc__2_808-_SDA2_BASE_(r2)
 /* 80082BE8 0007F9E8  38 61 00 28 */	addi r3, r1, 0x28
-/* 80082BEC 0007F9EC  C0 62 92 88 */	lfs f3, $$2754-_SDA2_BASE_(r2)
+/* 80082BEC 0007F9EC  C0 62 92 88 */	lfs f3, _esc__2_754-_SDA2_BASE_(r2)
 /* 80082BF0 0007F9F0  FC 40 08 90 */	fmr f2, f1
 /* 80082BF4 0007F9F4  48 1A E0 4D */	bl PSMTXScale
 /* 80082BF8 0007F9F8  38 61 00 28 */	addi r3, r1, 0x28
@@ -813,7 +815,7 @@ DrawString__7ROMFontFiiPc:
 /* 80082C6C 0007FA6C  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
 /* 80082C70 0007FA70  BF 21 00 24 */	stmw r25, 0x24(r1)
 /* 80082C74 0007FA74  3C C0 80 37 */	lis r6, textureBuffer@ha
-/* 80082C78 0007FA78  CB E2 92 90 */	lfd f31, $$2819_3-_SDA2_BASE_(r2)
+/* 80082C78 0007FA78  CB E2 92 90 */	lfd f31, _esc__2_819_3-_SDA2_BASE_(r2)
 /* 80082C7C 0007FA7C  3B 86 99 C0 */	addi r28, r6, textureBuffer@l
 /* 80082C80 0007FA80  7C 99 23 78 */	mr r25, r4
 /* 80082C84 0007FA84  7C BA 2B 78 */	mr r26, r5
@@ -879,7 +881,7 @@ GetWidth__7ROMFontFPc:
 /* 80082D60 0007FB60  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
 /* 80082D64 0007FB64  BF A1 00 24 */	stmw r29, 0x24(r1)
 /* 80082D68 0007FB68  3C 80 80 37 */	lis r4, textureBuffer@ha
-/* 80082D6C 0007FB6C  CB E2 92 90 */	lfd f31, $$2819_3-_SDA2_BASE_(r2)
+/* 80082D6C 0007FB6C  CB E2 92 90 */	lfd f31, _esc__2_819_3-_SDA2_BASE_(r2)
 /* 80082D70 0007FB70  3B A0 00 00 */	li r29, 0
 /* 80082D74 0007FB74  3F E0 43 30 */	lis r31, 0x4330
 /* 80082D78 0007FB78  3B C4 99 C0 */	addi r30, r4, textureBuffer@l
@@ -934,21 +936,21 @@ DrawTextBox__7ROMFontFiiiiPc:
 /* 80082E28 0007FC28  7E E4 BB 78 */	mr r4, r23
 /* 80082E2C 0007FC2C  38 61 00 08 */	addi r3, r1, 8
 /* 80082E30 0007FC30  48 23 96 C5 */	bl strcpy
-/* 80082E34 0007FC34  3C 80 80 2E */	lis r4, $$2stringBase0_33@ha
+/* 80082E34 0007FC34  3C 80 80 2E */	lis r4, _esc__2_stringBase0_33@ha
 /* 80082E38 0007FC38  38 61 00 08 */	addi r3, r1, 8
-/* 80082E3C 0007FC3C  38 84 91 40 */	addi r4, r4, $$2stringBase0_33@l
+/* 80082E3C 0007FC3C  38 84 91 40 */	addi r4, r4, _esc__2_stringBase0_33@l
 /* 80082E40 0007FC40  38 84 0C 69 */	addi r4, r4, 0xc69
 /* 80082E44 0007FC44  48 23 93 21 */	bl strtok
-/* 80082E48 0007FC48  3C 80 80 2E */	lis r4, $$2stringBase0_33@ha
+/* 80082E48 0007FC48  3C 80 80 2E */	lis r4, _esc__2_stringBase0_33@ha
 /* 80082E4C 0007FC4C  7C 77 1B 78 */	mr r23, r3
-/* 80082E50 0007FC50  38 84 91 40 */	addi r4, r4, $$2stringBase0_33@l
+/* 80082E50 0007FC50  38 84 91 40 */	addi r4, r4, _esc__2_stringBase0_33@l
 /* 80082E54 0007FC54  38 64 0C 69 */	addi r3, r4, 0xc69
 /* 80082E58 0007FC58  4B FF FE F9 */	bl GetWidth__7ROMFontFPc
-/* 80082E5C 0007FC5C  3C 80 80 2E */	lis r4, $$2stringBase0_33@ha
+/* 80082E5C 0007FC5C  3C 80 80 2E */	lis r4, _esc__2_stringBase0_33@ha
 /* 80082E60 0007FC60  7C 7B 1B 78 */	mr r27, r3
 /* 80082E64 0007FC64  7F 59 D2 14 */	add r26, r25, r26
 /* 80082E68 0007FC68  7F 1C C2 14 */	add r24, r28, r24
-/* 80082E6C 0007FC6C  3B A4 91 40 */	addi r29, r4, $$2stringBase0_33@l
+/* 80082E6C 0007FC6C  3B A4 91 40 */	addi r29, r4, _esc__2_stringBase0_33@l
 /* 80082E70 0007FC70  48 00 00 54 */	b lbl_80082EC4
 lbl_80082E74:
 /* 80082E74 0007FC74  7E E3 BB 78 */	mr r3, r23
@@ -1280,10 +1282,10 @@ Shutdown__8iTRCDiskFv:
 DisplayErrorMessage__8iTRCDiskFv:
 /* 80083244 00080044  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80083248 00080048  7C 08 02 A6 */	mflr r0
-/* 8008324C 0008004C  3C 80 80 2E */	lis r4, $$2stringBase0_33@ha
+/* 8008324C 0008004C  3C 80 80 2E */	lis r4, _esc__2_stringBase0_33@ha
 /* 80083250 00080050  3C 60 80 37 */	lis r3, mMessage__8iTRCDisk@ha
 /* 80083254 00080054  90 01 00 24 */	stw r0, 0x24(r1)
-/* 80083258 00080058  38 84 91 40 */	addi r4, r4, $$2stringBase0_33@l
+/* 80083258 00080058  38 84 91 40 */	addi r4, r4, _esc__2_stringBase0_33@l
 /* 8008325C 0008005C  38 63 9A E0 */	addi r3, r3, mMessage__8iTRCDisk@l
 /* 80083260 00080060  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 80083264 00080064  38 84 00 3D */	addi r4, r4, 0x3d
@@ -1317,7 +1319,7 @@ lbl_800832B0:
 /* 800832CC 000800CC  41 82 00 08 */	beq lbl_800832D4
 /* 800832D0 000800D0  4B FF FC C9 */	bl CheckResetButton__11ResetButtonFv
 lbl_800832D4:
-/* 800832D4 000800D4  C0 22 92 78 */	lfs f1, $$2733_0-_SDA2_BASE_(r2)
+/* 800832D4 000800D4  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
 /* 800832D8 000800D8  38 60 00 00 */	li r3, 0
 /* 800832DC 000800DC  4B FC C6 B9 */	bl xPadUpdate__Fif
 /* 800832E0 000800E0  48 00 00 69 */	bl SetDVDState__8iTRCDiskFv
@@ -1362,9 +1364,9 @@ SetDVDState__8iTRCDiskFv:
 /* 80083360 00080160  38 1F 00 01 */	addi r0, r31, 1
 /* 80083364 00080164  28 00 00 0C */	cmplwi r0, 0xc
 /* 80083368 00080168  41 81 00 C8 */	bgt lbl_80083430
-/* 8008336C 0008016C  3C 60 80 30 */	lis r3, $$21000_0@ha
+/* 8008336C 0008016C  3C 60 80 30 */	lis r3, _esc__2_1000_0@ha
 /* 80083370 00080170  54 00 10 3A */	slwi r0, r0, 2
-/* 80083374 00080174  38 63 3A 90 */	addi r3, r3, $$21000_0@l
+/* 80083374 00080174  38 63 3A 90 */	addi r3, r3, _esc__2_1000_0@l
 /* 80083378 00080178  7C 03 00 2E */	lwzx r0, r3, r0
 /* 8008337C 0008017C  7C 09 03 A6 */	mtctr r0
 /* 80083380 00080180  4E 80 04 20 */	bctr 
@@ -1670,3 +1672,6 @@ lbl_8008377C:
 /* 80083780 00080580  7C 08 03 A6 */	mtlr r0
 /* 80083784 00080584  38 21 00 10 */	addi r1, r1, 0x10
 /* 80083788 00080588  4E 80 00 20 */	blr 
+
+.endif
+

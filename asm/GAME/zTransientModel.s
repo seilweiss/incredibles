@@ -2,42 +2,44 @@
 
 .section .sbss
 
-.global module__29$$2unnamed$$2zTransientModel_cpp$$2
-module__29$$2unnamed$$2zTransientModel_cpp$$2:
+.global module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_
+module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_:
 	.skip 0x8
 
 .section .sdata2
 
-.global $$2829_1
-$$2829_1:
+.global _esc__2_829_1
+_esc__2_829_1:
 	.incbin "baserom.dol", 0x334028, 0x4
-.global $$2830_0
-$$2830_0:
+.global _esc__2_830_0
+_esc__2_830_0:
 	.incbin "baserom.dol", 0x33402C, 0x4
-.global $$21283_2
-$$21283_2:
+.global _esc__2_1283_2
+_esc__2_1283_2:
 	.incbin "baserom.dol", 0x334030, 0x4
-.global $$21284_3
-$$21284_3:
+.global _esc__2_1284_3
+_esc__2_1284_3:
 	.incbin "baserom.dol", 0x334034, 0x4
-.global $$21362_1
-$$21362_1:
+.global _esc__2_1362_1
+_esc__2_1362_1:
 	.incbin "baserom.dol", 0x334038, 0x8
-.global $$21435_1
-$$21435_1:
+.global _esc__2_1435_1
+_esc__2_1435_1:
 	.incbin "baserom.dol", 0x334040, 0x8
-.global $$21532_2
-$$21532_2:
+.global _esc__2_1532_2
+_esc__2_1532_2:
 	.incbin "baserom.dol", 0x334048, 0x8
+
+.if 0
 
 .section .text
 
-.global add_tweaks__Q229$$2unnamed$$2zTransientModel_cpp$$25tweakFv
-add_tweaks__Q229$$2unnamed$$2zTransientModel_cpp$$25tweakFv:
+.global add_tweaks__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_5tweakFv
+add_tweaks__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_5tweakFv:
 /* 801F7CE0 001F4AE0  4E 80 00 20 */	blr 
 
-.global get_scene_parameters__29$$2unnamed$$2zTransientModel_cpp$$2FRiRi
-get_scene_parameters__29$$2unnamed$$2zTransientModel_cpp$$2FRiRi:
+.global get_scene_parameters__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_FRiRi
+get_scene_parameters__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_FRiRi:
 /* 801F7CE4 001F4AE4  3C C0 80 38 */	lis r6, globals@ha
 /* 801F7CE8 001F4AE8  3C A0 4E 4A */	lis r5, 0x4E4A3033@ha
 /* 801F7CEC 001F4AEC  38 C6 2A 38 */	addi r6, r6, globals@l
@@ -64,8 +66,8 @@ lbl_801F7D30:
 /* 801F7D38 001F4B38  90 04 00 00 */	stw r0, 0(r4)
 /* 801F7D3C 001F4B3C  4E 80 00 20 */	blr 
 
-.global __ct__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFiib
-__ct__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFiib:
+.global __ct__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFiib
+__ct__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFiib:
 /* 801F7D40 001F4B40  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F7D44 001F4B44  7C 08 02 A6 */	mflr r0
 /* 801F7D48 001F4B48  90 01 00 14 */	stw r0, 0x14(r1)
@@ -73,15 +75,15 @@ __ct__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFiib:
 /* 801F7D50 001F4B50  7C 7E 1B 78 */	mr r30, r3
 /* 801F7D54 001F4B54  7C BF 2B 78 */	mr r31, r5
 /* 801F7D58 001F4B58  38 7E 00 04 */	addi r3, r30, 4
-/* 801F7D5C 001F4B5C  48 00 12 F1 */	bl create__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fi
+/* 801F7D5C 001F4B5C  48 00 12 F1 */	bl create__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fi
 /* 801F7D60 001F4B60  7F E4 FB 78 */	mr r4, r31
 /* 801F7D64 001F4B64  38 7E 00 10 */	addi r3, r30, 0x10
 /* 801F7D68 001F4B68  38 A0 00 00 */	li r5, 0
-/* 801F7D6C 001F4B6C  48 00 12 B5 */	bl create__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FiPv
+/* 801F7D6C 001F4B6C  48 00 12 B5 */	bl create__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FiPv
 /* 801F7D70 001F4B70  7F C3 F3 78 */	mr r3, r30
-/* 801F7D74 001F4B74  48 00 00 29 */	bl reset__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFv
+/* 801F7D74 001F4B74  48 00 00 29 */	bl reset__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv
 /* 801F7D78 001F4B78  7F C3 F3 78 */	mr r3, r30
-/* 801F7D7C 001F4B7C  48 00 00 1D */	bl debug_init__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFv
+/* 801F7D7C 001F4B7C  48 00 00 1D */	bl debug_init__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv
 /* 801F7D80 001F4B80  7F C3 F3 78 */	mr r3, r30
 /* 801F7D84 001F4B84  BB C1 00 08 */	lmw r30, 8(r1)
 /* 801F7D88 001F4B88  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -89,23 +91,23 @@ __ct__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFiib:
 /* 801F7D90 001F4B90  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F7D94 001F4B94  4E 80 00 20 */	blr 
 
-.global debug_init__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFv
-debug_init__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFv:
+.global debug_init__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv
+debug_init__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv:
 /* 801F7D98 001F4B98  4E 80 00 20 */	blr 
 
-.global reset__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFv
-reset__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFv:
+.global reset__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv
+reset__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv:
 /* 801F7D9C 001F4B9C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F7DA0 001F4BA0  7C 08 02 A6 */	mflr r0
 /* 801F7DA4 001F4BA4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F7DA8 001F4BA8  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801F7DAC 001F4BAC  7C 7E 1B 78 */	mr r30, r3
 /* 801F7DB0 001F4BB0  38 7E 00 04 */	addi r3, r30, 4
-/* 801F7DB4 001F4BB4  48 00 13 6D */	bl begin__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
+/* 801F7DB4 001F4BB4  48 00 13 6D */	bl begin__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
 /* 801F7DB8 001F4BB8  7C 60 1B 78 */	mr r0, r3
 /* 801F7DBC 001F4BBC  38 7E 00 04 */	addi r3, r30, 4
 /* 801F7DC0 001F4BC0  7C 1F 03 78 */	mr r31, r0
-/* 801F7DC4 001F4BC4  48 00 13 49 */	bl end__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
+/* 801F7DC4 001F4BC4  48 00 13 49 */	bl end__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
 /* 801F7DC8 001F4BC8  38 00 00 00 */	li r0, 0
 /* 801F7DCC 001F4BCC  48 00 00 10 */	b lbl_801F7DDC
 lbl_801F7DD0:
@@ -116,21 +118,21 @@ lbl_801F7DDC:
 /* 801F7DDC 001F4BDC  7C 1F 18 40 */	cmplw r31, r3
 /* 801F7DE0 001F4BE0  40 82 FF F0 */	bne lbl_801F7DD0
 /* 801F7DE4 001F4BE4  38 7E 00 04 */	addi r3, r30, 4
-/* 801F7DE8 001F4BE8  48 00 13 19 */	bl clear__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
+/* 801F7DE8 001F4BE8  48 00 13 19 */	bl clear__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
 /* 801F7DEC 001F4BEC  48 00 00 18 */	b lbl_801F7E04
 lbl_801F7DF0:
 /* 801F7DF0 001F4BF0  38 7E 00 10 */	addi r3, r30, 0x10
-/* 801F7DF4 001F4BF4  48 00 13 05 */	bl begin__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1CFv
+/* 801F7DF4 001F4BF4  48 00 13 05 */	bl begin__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_CFv
 /* 801F7DF8 001F4BF8  7C 64 1B 78 */	mr r4, r3
 /* 801F7DFC 001F4BFC  7F C3 F3 78 */	mr r3, r30
-/* 801F7E00 001F4C00  48 00 01 CD */	bl destroy_instance__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
+/* 801F7E00 001F4C00  48 00 01 CD */	bl destroy_instance__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 lbl_801F7E04:
 /* 801F7E04 001F4C04  38 7E 00 10 */	addi r3, r30, 0x10
 /* 801F7E08 001F4C08  48 00 12 E1 */	bl empty__14pool_list_baseCFv
 /* 801F7E0C 001F4C0C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801F7E10 001F4C10  41 82 FF E0 */	beq lbl_801F7DF0
 /* 801F7E14 001F4C14  38 7E 00 10 */	addi r3, r30, 0x10
-/* 801F7E18 001F4C18  48 00 12 AD */	bl reset__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1Fv
+/* 801F7E18 001F4C18  48 00 12 AD */	bl reset__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_Fv
 /* 801F7E1C 001F4C1C  38 00 00 00 */	li r0, 0
 /* 801F7E20 001F4C20  90 1E 00 34 */	stw r0, 0x34(r30)
 /* 801F7E24 001F4C24  BB C1 00 08 */	lmw r30, 8(r1)
@@ -139,8 +141,8 @@ lbl_801F7E04:
 /* 801F7E30 001F4C30  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F7E34 001F4C34  4E 80 00 20 */	blr 
 
-.global update__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFf
-update__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFf:
+.global update__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFf
+update__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFf:
 /* 801F7E38 001F4C38  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 801F7E3C 001F4C3C  7C 08 02 A6 */	mflr r0
 /* 801F7E40 001F4C40  90 01 00 44 */	stw r0, 0x44(r1)
@@ -152,11 +154,11 @@ update__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFf:
 /* 801F7E58 001F4C58  FF C0 08 90 */	fmr f30, f1
 /* 801F7E5C 001F4C5C  7C 7D 1B 78 */	mr r29, r3
 /* 801F7E60 001F4C60  38 7D 00 04 */	addi r3, r29, 4
-/* 801F7E64 001F4C64  48 00 12 BD */	bl begin__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
+/* 801F7E64 001F4C64  48 00 12 BD */	bl begin__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
 /* 801F7E68 001F4C68  7C 60 1B 78 */	mr r0, r3
 /* 801F7E6C 001F4C6C  38 7D 00 04 */	addi r3, r29, 4
 /* 801F7E70 001F4C70  7C 1E 03 78 */	mr r30, r0
-/* 801F7E74 001F4C74  48 00 12 99 */	bl end__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
+/* 801F7E74 001F4C74  48 00 12 99 */	bl end__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
 /* 801F7E78 001F4C78  7C 7F 1B 78 */	mr r31, r3
 /* 801F7E7C 001F4C7C  48 00 00 14 */	b lbl_801F7E90
 lbl_801F7E80:
@@ -170,7 +172,7 @@ lbl_801F7E90:
 /* 801F7E98 001F4C98  80 9D 00 30 */	lwz r4, 0x30(r29)
 /* 801F7E9C 001F4C9C  3B C0 00 00 */	li r30, 0
 /* 801F7EA0 001F4CA0  83 FD 00 34 */	lwz r31, 0x34(r29)
-/* 801F7EA4 001F4CA4  C3 E2 D9 48 */	lfs f31, $$2829_1-_SDA2_BASE_(r2)
+/* 801F7EA4 001F4CA4  C3 E2 D9 48 */	lfs f31, _esc__2_829_1-_SDA2_BASE_(r2)
 /* 801F7EA8 001F4CA8  48 00 00 58 */	b lbl_801F7F00
 lbl_801F7EAC:
 /* 801F7EAC 001F4CAC  C0 04 00 08 */	lfs f0, 8(r4)
@@ -187,7 +189,7 @@ lbl_801F7EAC:
 /* 801F7ED8 001F4CD8  90 1D 00 30 */	stw r0, 0x30(r29)
 lbl_801F7EDC:
 /* 801F7EDC 001F4CDC  7F A3 EB 78 */	mr r3, r29
-/* 801F7EE0 001F4CE0  48 00 00 ED */	bl destroy_instance__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
+/* 801F7EE0 001F4CE0  48 00 00 ED */	bl destroy_instance__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 /* 801F7EE4 001F4CE4  80 BD 00 34 */	lwz r5, 0x34(r29)
 /* 801F7EE8 001F4CE8  7C 64 1B 78 */	mr r4, r3
 /* 801F7EEC 001F4CEC  38 05 FF FF */	addi r0, r5, -1
@@ -202,7 +204,7 @@ lbl_801F7F00:
 /* 801F7F04 001F4D04  41 80 FF A8 */	blt lbl_801F7EAC
 /* 801F7F08 001F4D08  FC 20 F0 90 */	fmr f1, f30
 /* 801F7F0C 001F4D0C  7F A3 EB 78 */	mr r3, r29
-/* 801F7F10 001F4D10  48 00 00 29 */	bl debug_update__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFf
+/* 801F7F10 001F4D10  48 00 00 29 */	bl debug_update__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFf
 /* 801F7F14 001F4D14  E3 E1 00 38 */	psq_l f31, 56(r1), 0, qr0
 /* 801F7F18 001F4D18  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 801F7F1C 001F4D1C  E3 C1 00 28 */	psq_l f30, 40(r1), 0, qr0
@@ -213,23 +215,23 @@ lbl_801F7F00:
 /* 801F7F30 001F4D30  38 21 00 40 */	addi r1, r1, 0x40
 /* 801F7F34 001F4D34  4E 80 00 20 */	blr 
 
-.global debug_update__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFf
-debug_update__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFf:
+.global debug_update__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFf
+debug_update__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFf:
 /* 801F7F38 001F4D38  4E 80 00 20 */	blr 
 
-.global render__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFv
-render__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFv:
+.global render__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv
+render__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv:
 /* 801F7F3C 001F4D3C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F7F40 001F4D40  7C 08 02 A6 */	mflr r0
 /* 801F7F44 001F4D44  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801F7F48 001F4D48  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 801F7F4C 001F4D4C  7C 7D 1B 78 */	mr r29, r3
 /* 801F7F50 001F4D50  38 7D 00 04 */	addi r3, r29, 4
-/* 801F7F54 001F4D54  48 00 11 CD */	bl begin__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
+/* 801F7F54 001F4D54  48 00 11 CD */	bl begin__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
 /* 801F7F58 001F4D58  7C 60 1B 78 */	mr r0, r3
 /* 801F7F5C 001F4D5C  38 7D 00 04 */	addi r3, r29, 4
 /* 801F7F60 001F4D60  7C 1E 03 78 */	mr r30, r0
-/* 801F7F64 001F4D64  48 00 11 A9 */	bl end__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
+/* 801F7F64 001F4D64  48 00 11 A9 */	bl end__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
 /* 801F7F68 001F4D68  7C 7F 1B 78 */	mr r31, r3
 /* 801F7F6C 001F4D6C  48 00 00 10 */	b lbl_801F7F7C
 lbl_801F7F70:
@@ -260,8 +262,8 @@ lbl_801F7FB0:
 /* 801F7FC4 001F4DC4  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F7FC8 001F4DC8  4E 80 00 20 */	blr 
 
-.global destroy_instance__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
-destroy_instance__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type:
+.global destroy_instance__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
+destroy_instance__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type:
 /* 801F7FCC 001F4DCC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F7FD0 001F4DD0  7C 08 02 A6 */	mflr r0
 /* 801F7FD4 001F4DD4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -279,15 +281,15 @@ lbl_801F7FFC:
 /* 801F8000 001F4E00  4B E5 26 2D */	bl xModelInstanceFree__FP14xModelInstance
 /* 801F8004 001F4E04  7F E4 FB 78 */	mr r4, r31
 /* 801F8008 001F4E08  38 7E 00 10 */	addi r3, r30, 0x10
-/* 801F800C 001F4E0C  48 00 11 1D */	bl erase__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
+/* 801F800C 001F4E0C  48 00 11 1D */	bl erase__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 /* 801F8010 001F4E10  BB C1 00 08 */	lmw r30, 8(r1)
 /* 801F8014 001F4E14  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F8018 001F4E18  7C 08 03 A6 */	mtlr r0
 /* 801F801C 001F4E1C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F8020 001F4E20  4E 80 00 20 */	blr 
 
-.global fade_away__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_typeff
-fade_away__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_typeff:
+.global fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_typeff
+fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_typeff:
 /* 801F8024 001F4E24  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F8028 001F4E28  7C 08 02 A6 */	mflr r0
 /* 801F802C 001F4E2C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -302,16 +304,16 @@ fade_away__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFPQ264pool_list$$
 /* 801F8050 001F4E50  2C 00 00 00 */	cmpwi r0, 0
 /* 801F8054 001F4E54  40 82 00 20 */	bne lbl_801F8074
 /* 801F8058 001F4E58  38 7E 00 10 */	addi r3, r30, 0x10
-/* 801F805C 001F4E5C  48 00 11 6D */	bl end__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1CFv
+/* 801F805C 001F4E5C  48 00 11 6D */	bl end__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_CFv
 /* 801F8060 001F4E60  7C 65 1B 78 */	mr r5, r3
 /* 801F8064 001F4E64  7F E4 FB 78 */	mr r4, r31
 /* 801F8068 001F4E68  38 7E 00 10 */	addi r3, r30, 0x10
-/* 801F806C 001F4E6C  48 00 10 DD */	bl move__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_typePQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
+/* 801F806C 001F4E6C  48 00 10 DD */	bl move__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_typePQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 /* 801F8070 001F4E70  48 00 00 10 */	b lbl_801F8080
 lbl_801F8074:
 /* 801F8074 001F4E74  80 BE 00 30 */	lwz r5, 0x30(r30)
 /* 801F8078 001F4E78  38 7E 00 10 */	addi r3, r30, 0x10
-/* 801F807C 001F4E7C  48 00 10 CD */	bl move__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_typePQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
+/* 801F807C 001F4E7C  48 00 10 CD */	bl move__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_typePQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 lbl_801F8080:
 /* 801F8080 001F4E80  93 FE 00 30 */	stw r31, 0x30(r30)
 /* 801F8084 001F4E84  80 7E 00 34 */	lwz r3, 0x34(r30)
@@ -336,8 +338,8 @@ lbl_801F80B8:
 /* 801F80CC 001F4ECC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F80D0 001F4ED0  4E 80 00 20 */	blr 
 
-.global fade_away__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
-fade_away__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type:
+.global fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
+fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type:
 /* 801F80D4 001F4ED4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F80D8 001F4ED8  7C 08 02 A6 */	mflr r0
 /* 801F80DC 001F4EDC  7C 86 23 78 */	mr r6, r4
@@ -362,10 +364,10 @@ lbl_801F8114:
 /* 801F8120 001F4F20  38 03 FF FF */	addi r0, r3, -1
 /* 801F8124 001F4F24  90 06 00 98 */	stw r0, 0x98(r6)
 /* 801F8128 001F4F28  80 A6 00 48 */	lwz r5, 0x48(r6)
-/* 801F812C 001F4F2C  80 6D DF B8 */	lwz r3, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F812C 001F4F2C  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F8130 001F4F30  C0 25 00 14 */	lfs f1, 0x14(r5)
 /* 801F8134 001F4F34  C0 46 00 A8 */	lfs f2, 0xa8(r6)
-/* 801F8138 001F4F38  4B FF FE ED */	bl fade_away__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_typeff
+/* 801F8138 001F4F38  4B FF FE ED */	bl fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_typeff
 /* 801F813C 001F4F3C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F8140 001F4F40  7F E3 FB 78 */	mr r3, r31
 /* 801F8144 001F4F44  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -380,12 +382,12 @@ zTransientModelSceneEnter__Fv:
 /* 801F815C 001F4F5C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F8160 001F4F60  38 61 00 0C */	addi r3, r1, 0xc
 /* 801F8164 001F4F64  38 81 00 08 */	addi r4, r1, 8
-/* 801F8168 001F4F68  4B FF FB 7D */	bl get_scene_parameters__29$$2unnamed$$2zTransientModel_cpp$$2FRiRi
+/* 801F8168 001F4F68  4B FF FB 7D */	bl get_scene_parameters__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_FRiRi
 /* 801F816C 001F4F6C  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 801F8170 001F4F70  2C 00 00 00 */	cmpwi r0, 0
 /* 801F8174 001F4F74  41 81 00 10 */	bgt lbl_801F8184
 /* 801F8178 001F4F78  38 00 00 00 */	li r0, 0
-/* 801F817C 001F4F7C  90 0D DF B8 */	stw r0, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F817C 001F4F7C  90 0D DF B8 */	stw r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F8180 001F4F80  48 00 00 34 */	b lbl_801F81B4
 lbl_801F8184:
 /* 801F8184 001F4F84  38 60 00 38 */	li r3, 0x38
@@ -397,15 +399,15 @@ lbl_801F8184:
 /* 801F819C 001F4F9C  80 81 00 0C */	lwz r4, 0xc(r1)
 /* 801F81A0 001F4FA0  38 C0 00 00 */	li r6, 0
 /* 801F81A4 001F4FA4  80 A1 00 08 */	lwz r5, 8(r1)
-/* 801F81A8 001F4FA8  4B FF FB 99 */	bl __ct__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFiib
+/* 801F81A8 001F4FA8  4B FF FB 99 */	bl __ct__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFiib
 /* 801F81AC 001F4FAC  7C 60 1B 78 */	mr r0, r3
 lbl_801F81B0:
-/* 801F81B0 001F4FB0  90 0D DF B8 */	stw r0, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F81B0 001F4FB0  90 0D DF B8 */	stw r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801F81B4:
-/* 801F81B4 001F4FB4  80 0D DF B8 */	lwz r0, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F81B4 001F4FB4  80 0D DF B8 */	lwz r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F81B8 001F4FB8  28 00 00 00 */	cmplwi r0, 0
 /* 801F81BC 001F4FBC  41 82 00 08 */	beq lbl_801F81C4
-/* 801F81C0 001F4FC0  4B FF FB 21 */	bl add_tweaks__Q229$$2unnamed$$2zTransientModel_cpp$$25tweakFv
+/* 801F81C0 001F4FC0  4B FF FB 21 */	bl add_tweaks__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_5tweakFv
 lbl_801F81C4:
 /* 801F81C4 001F4FC4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F81C8 001F4FC8  7C 08 03 A6 */	mtlr r0
@@ -414,7 +416,7 @@ lbl_801F81C4:
 
 .global zTransientModelSceneExit__Fv
 zTransientModelSceneExit__Fv:
-/* 801F81D4 001F4FD4  80 0D DF B8 */	lwz r0, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F81D4 001F4FD4  80 0D DF B8 */	lwz r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F81D8 001F4FD8  28 00 00 00 */	cmplwi r0, 0
 /* 801F81DC 001F4FDC  4E 80 00 20 */	blr 
 
@@ -423,10 +425,10 @@ zTransientModelReset__Fv:
 /* 801F81E0 001F4FE0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F81E4 001F4FE4  7C 08 02 A6 */	mflr r0
 /* 801F81E8 001F4FE8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F81EC 001F4FEC  80 6D DF B8 */	lwz r3, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F81EC 001F4FEC  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F81F0 001F4FF0  28 03 00 00 */	cmplwi r3, 0
 /* 801F81F4 001F4FF4  41 82 00 08 */	beq lbl_801F81FC
-/* 801F81F8 001F4FF8  4B FF FB A5 */	bl reset__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFv
+/* 801F81F8 001F4FF8  4B FF FB A5 */	bl reset__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv
 lbl_801F81FC:
 /* 801F81FC 001F4FFC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F8200 001F5000  7C 08 03 A6 */	mtlr r0
@@ -438,10 +440,10 @@ zTransientModelUpdate__Ff:
 /* 801F820C 001F500C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F8210 001F5010  7C 08 02 A6 */	mflr r0
 /* 801F8214 001F5014  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F8218 001F5018  80 6D DF B8 */	lwz r3, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F8218 001F5018  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F821C 001F501C  28 03 00 00 */	cmplwi r3, 0
 /* 801F8220 001F5020  41 82 00 08 */	beq lbl_801F8228
-/* 801F8224 001F5024  4B FF FC 15 */	bl update__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFf
+/* 801F8224 001F5024  4B FF FC 15 */	bl update__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFf
 lbl_801F8228:
 /* 801F8228 001F5028  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F822C 001F502C  7C 08 03 A6 */	mtlr r0
@@ -453,10 +455,10 @@ zTransientModelRender__Fv:
 /* 801F8238 001F5038  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F823C 001F503C  7C 08 02 A6 */	mflr r0
 /* 801F8240 001F5040  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F8244 001F5044  80 6D DF B8 */	lwz r3, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F8244 001F5044  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F8248 001F5048  28 03 00 00 */	cmplwi r3, 0
 /* 801F824C 001F504C  41 82 00 08 */	beq lbl_801F8254
-/* 801F8250 001F5050  4B FF FC ED */	bl render__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFv
+/* 801F8250 001F5050  4B FF FC ED */	bl render__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv
 lbl_801F8254:
 /* 801F8254 001F5054  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F8258 001F5058  7C 08 03 A6 */	mtlr r0
@@ -483,9 +485,9 @@ activate__22zTransientModelEmitterFRCQ222zTransientModelEmitter11config_type:
 /* 801F8288 001F5088  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801F828C 001F508C  7C 7E 1B 78 */	mr r30, r3
 /* 801F8290 001F5090  7C 9F 23 78 */	mr r31, r4
-/* 801F8294 001F5094  80 AD DF B8 */	lwz r5, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F8294 001F5094  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F8298 001F5098  38 65 00 04 */	addi r3, r5, 4
-/* 801F829C 001F509C  48 00 0F 35 */	bl full__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1CFv
+/* 801F829C 001F509C  48 00 0F 35 */	bl full__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_CFv
 /* 801F82A0 001F50A0  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801F82A4 001F50A4  40 82 00 38 */	bne lbl_801F82DC
 /* 801F82A8 001F50A8  7F C3 F3 78 */	mr r3, r30
@@ -518,12 +520,12 @@ set_config__22zTransientModelEmitterFRCQ222zTransientModelEmitter11config_type:
 /* 801F8304 001F5104  BF 61 00 0C */	stmw r27, 0xc(r1)
 /* 801F8308 001F5108  7C 7E 1B 78 */	mr r30, r3
 /* 801F830C 001F510C  EC 41 00 28 */	fsubs f2, f1, f0
-/* 801F8310 001F5110  C0 62 D9 50 */	lfs f3, $$21283_2-_SDA2_BASE_(r2)
+/* 801F8310 001F5110  C0 62 D9 50 */	lfs f3, _esc__2_1283_2-_SDA2_BASE_(r2)
 /* 801F8314 001F5114  C0 24 00 20 */	lfs f1, 0x20(r4)
 /* 801F8318 001F5118  C0 04 00 1C */	lfs f0, 0x1c(r4)
 /* 801F831C 001F511C  EC 43 00 B2 */	fmuls f2, f3, f2
 /* 801F8320 001F5120  EC 21 00 28 */	fsubs f1, f1, f0
-/* 801F8324 001F5124  C0 02 D9 48 */	lfs f0, $$2829_1-_SDA2_BASE_(r2)
+/* 801F8324 001F5124  C0 02 D9 48 */	lfs f0, _esc__2_829_1-_SDA2_BASE_(r2)
 /* 801F8328 001F5128  80 63 00 00 */	lwz r3, 0(r3)
 /* 801F832C 001F512C  EC 23 00 72 */	fmuls f1, f3, f1
 /* 801F8330 001F5130  90 83 00 48 */	stw r4, 0x48(r3)
@@ -537,29 +539,29 @@ set_config__22zTransientModelEmitterFRCQ222zTransientModelEmitter11config_type:
 /* 801F8350 001F5150  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F8354 001F5154  4C 40 13 82 */	cror 2, 0, 2
 /* 801F8358 001F5158  40 82 00 0C */	bne lbl_801F8364
-/* 801F835C 001F515C  C0 02 D9 54 */	lfs f0, $$21284_3-_SDA2_BASE_(r2)
+/* 801F835C 001F515C  C0 02 D9 54 */	lfs f0, _esc__2_1284_3-_SDA2_BASE_(r2)
 /* 801F8360 001F5160  48 00 00 0C */	b lbl_801F836C
 lbl_801F8364:
-/* 801F8364 001F5164  C0 02 D9 4C */	lfs f0, $$2830_0-_SDA2_BASE_(r2)
+/* 801F8364 001F5164  C0 02 D9 4C */	lfs f0, _esc__2_830_0-_SDA2_BASE_(r2)
 /* 801F8368 001F5168  EC 00 08 24 */	fdivs f0, f0, f1
 lbl_801F836C:
 /* 801F836C 001F516C  D0 05 00 A4 */	stfs f0, 0xa4(r5)
-/* 801F8370 001F5170  C0 02 D9 48 */	lfs f0, $$2829_1-_SDA2_BASE_(r2)
+/* 801F8370 001F5170  C0 02 D9 48 */	lfs f0, _esc__2_829_1-_SDA2_BASE_(r2)
 /* 801F8374 001F5174  80 BE 00 00 */	lwz r5, 0(r30)
 /* 801F8378 001F5178  80 65 00 48 */	lwz r3, 0x48(r5)
 /* 801F837C 001F517C  C0 23 00 14 */	lfs f1, 0x14(r3)
 /* 801F8380 001F5180  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F8384 001F5184  4C 40 13 82 */	cror 2, 0, 2
 /* 801F8388 001F5188  40 82 00 0C */	bne lbl_801F8394
-/* 801F838C 001F518C  C0 42 D9 54 */	lfs f2, $$21284_3-_SDA2_BASE_(r2)
+/* 801F838C 001F518C  C0 42 D9 54 */	lfs f2, _esc__2_1284_3-_SDA2_BASE_(r2)
 /* 801F8390 001F5190  48 00 00 0C */	b lbl_801F839C
 lbl_801F8394:
-/* 801F8394 001F5194  C0 02 D9 4C */	lfs f0, $$2830_0-_SDA2_BASE_(r2)
+/* 801F8394 001F5194  C0 02 D9 4C */	lfs f0, _esc__2_830_0-_SDA2_BASE_(r2)
 /* 801F8398 001F5198  EC 40 08 24 */	fdivs f2, f0, f1
 lbl_801F839C:
 /* 801F839C 001F519C  C0 04 00 24 */	lfs f0, 0x24(r4)
 /* 801F83A0 001F51A0  38 00 00 00 */	li r0, 0
-/* 801F83A4 001F51A4  C0 22 D9 4C */	lfs f1, $$2830_0-_SDA2_BASE_(r2)
+/* 801F83A4 001F51A4  C0 22 D9 4C */	lfs f1, _esc__2_830_0-_SDA2_BASE_(r2)
 /* 801F83A8 001F51A8  D0 45 00 A8 */	stfs f2, 0xa8(r5)
 /* 801F83AC 001F51AC  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 801F83B0 001F51B0  41 80 00 34 */	blt lbl_801F83E4
@@ -636,7 +638,7 @@ spawn__22zTransientModelEmitterFRC7xMat4x3f:
 /* 801F84A0 001F52A0  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
 /* 801F84A4 001F52A4  BF 41 00 28 */	stmw r26, 0x28(r1)
 /* 801F84A8 001F52A8  FF E0 08 90 */	fmr f31, f1
-/* 801F84AC 001F52AC  80 AD DF B8 */	lwz r5, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F84AC 001F52AC  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F84B0 001F52B0  7C 7B 1B 78 */	mr r27, r3
 /* 801F84B4 001F52B4  7C 9C 23 78 */	mr r28, r4
 /* 801F84B8 001F52B8  38 65 00 10 */	addi r3, r5, 0x10
@@ -652,7 +654,7 @@ spawn__22zTransientModelEmitterFRC7xMat4x3f:
 /* 801F84E0 001F52E0  7F 64 DB 78 */	mr r4, r27
 /* 801F84E4 001F52E4  38 61 00 08 */	addi r3, r1, 8
 /* 801F84E8 001F52E8  38 BC 00 30 */	addi r5, r28, 0x30
-/* 801F84EC 001F52EC  48 00 03 05 */	bl __ct__Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlapFP22zTransientModelEmitterRC5xVec3fi
+/* 801F84EC 001F52EC  48 00 03 05 */	bl __ct__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlapFP22zTransientModelEmitterRC5xVec3fi
 /* 801F84F0 001F52F0  80 9B 00 00 */	lwz r4, 0(r27)
 /* 801F84F4 001F52F4  3C 60 80 35 */	lis r3, space_tree__10xTransient@ha
 /* 801F84F8 001F52F8  C0 3C 00 30 */	lfs f1, 0x30(r28)
@@ -661,7 +663,7 @@ spawn__22zTransientModelEmitterFRC7xMat4x3f:
 /* 801F8504 001F5304  38 81 00 08 */	addi r4, r1, 8
 /* 801F8508 001F5308  C0 5C 00 38 */	lfs f2, 0x38(r28)
 /* 801F850C 001F530C  C0 65 00 08 */	lfs f3, 8(r5)
-/* 801F8510 001F5310  48 00 05 DD */	bl intersect_circle$$0Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap$$1__21xSpacePartitionTree2DFfffRQ229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap
+/* 801F8510 001F5310  48 00 05 DD */	bl intersect_circle_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap_esc__1___21xSpacePartitionTree2DFfffRQ229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap
 /* 801F8514 001F5314  80 01 00 1C */	lwz r0, 0x1c(r1)
 /* 801F8518 001F5318  2C 00 00 00 */	cmpwi r0, 0
 /* 801F851C 001F531C  40 81 02 B8 */	ble lbl_801F87D4
@@ -704,21 +706,21 @@ lbl_801F8550:
 /* 801F85A4 001F53A4  80 04 00 98 */	lwz r0, 0x98(r4)
 /* 801F85A8 001F53A8  7C 00 18 00 */	cmpw r0, r3
 /* 801F85AC 001F53AC  41 80 00 10 */	blt lbl_801F85BC
-/* 801F85B0 001F53B0  80 6D DF B8 */	lwz r3, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F85B0 001F53B0  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F85B4 001F53B4  80 A4 00 90 */	lwz r5, 0x90(r4)
-/* 801F85B8 001F53B8  4B FF FB 1D */	bl fade_away__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
+/* 801F85B8 001F53B8  4B FF FB 1D */	bl fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 lbl_801F85BC:
 /* 801F85BC 001F53BC  80 7B 00 00 */	lwz r3, 0(r27)
 /* 801F85C0 001F53C0  80 03 00 98 */	lwz r0, 0x98(r3)
 /* 801F85C4 001F53C4  2C 00 00 00 */	cmpwi r0, 0
 /* 801F85C8 001F53C8  40 82 00 34 */	bne lbl_801F85FC
-/* 801F85CC 001F53CC  80 6D DF B8 */	lwz r3, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F85CC 001F53CC  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F85D0 001F53D0  38 63 00 10 */	addi r3, r3, 0x10
-/* 801F85D4 001F53D4  48 00 0B F5 */	bl end__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1CFv
-/* 801F85D8 001F53D8  80 AD DF B8 */	lwz r5, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F85D4 001F53D4  48 00 0B F5 */	bl end__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_CFv
+/* 801F85D8 001F53D8  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F85DC 001F53DC  7C 64 1B 78 */	mr r4, r3
 /* 801F85E0 001F53E0  38 65 00 10 */	addi r3, r5, 0x10
-/* 801F85E4 001F53E4  48 00 0C 41 */	bl insert__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
+/* 801F85E4 001F53E4  48 00 0C 41 */	bl insert__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 /* 801F85E8 001F53E8  80 9B 00 00 */	lwz r4, 0(r27)
 /* 801F85EC 001F53EC  90 64 00 94 */	stw r3, 0x94(r4)
 /* 801F85F0 001F53F0  80 9B 00 00 */	lwz r4, 0(r27)
@@ -726,15 +728,15 @@ lbl_801F85BC:
 /* 801F85F8 001F53F8  48 00 00 20 */	b lbl_801F8618
 lbl_801F85FC:
 /* 801F85FC 001F53FC  80 63 00 94 */	lwz r3, 0x94(r3)
-/* 801F8600 001F5400  80 AD DF B8 */	lwz r5, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F8600 001F5400  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F8604 001F5404  80 83 00 04 */	lwz r4, 4(r3)
 /* 801F8608 001F5408  38 65 00 10 */	addi r3, r5, 0x10
-/* 801F860C 001F540C  48 00 0C 19 */	bl insert__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
+/* 801F860C 001F540C  48 00 0C 19 */	bl insert__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 /* 801F8610 001F5410  80 9B 00 00 */	lwz r4, 0(r27)
 /* 801F8614 001F5414  90 64 00 94 */	stw r3, 0x94(r4)
 lbl_801F8618:
 /* 801F8618 001F5418  80 9B 00 00 */	lwz r4, 0(r27)
-/* 801F861C 001F541C  C0 02 D9 48 */	lfs f0, $$2829_1-_SDA2_BASE_(r2)
+/* 801F861C 001F541C  C0 02 D9 48 */	lfs f0, _esc__2_829_1-_SDA2_BASE_(r2)
 /* 801F8620 001F5420  80 64 00 98 */	lwz r3, 0x98(r4)
 /* 801F8624 001F5424  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 801F8628 001F5428  38 03 00 01 */	addi r0, r3, 1
@@ -745,13 +747,13 @@ lbl_801F8618:
 /* 801F863C 001F543C  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 801F8640 001F5440  93 DF 00 10 */	stw r30, 0x10(r31)
 /* 801F8644 001F5444  40 82 00 10 */	bne lbl_801F8654
-/* 801F8648 001F5448  C0 02 D9 54 */	lfs f0, $$21284_3-_SDA2_BASE_(r2)
+/* 801F8648 001F5448  C0 02 D9 54 */	lfs f0, _esc__2_1284_3-_SDA2_BASE_(r2)
 /* 801F864C 001F544C  D0 1F 00 0C */	stfs f0, 0xc(r31)
 /* 801F8650 001F5450  48 00 00 28 */	b lbl_801F8678
 lbl_801F8654:
 /* 801F8654 001F5454  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 801F8658 001F5458  40 81 00 14 */	ble lbl_801F866C
-/* 801F865C 001F545C  C0 02 D9 4C */	lfs f0, $$2830_0-_SDA2_BASE_(r2)
+/* 801F865C 001F545C  C0 02 D9 4C */	lfs f0, _esc__2_830_0-_SDA2_BASE_(r2)
 /* 801F8660 001F5460  EC 00 F8 24 */	fdivs f0, f0, f31
 /* 801F8664 001F5464  D0 1F 00 0C */	stfs f0, 0xc(r31)
 /* 801F8668 001F5468  48 00 00 10 */	b lbl_801F8678
@@ -768,7 +770,7 @@ lbl_801F8678:
 /* 801F868C 001F548C  7F 84 E3 78 */	mr r4, r28
 /* 801F8690 001F5490  80 7F 00 10 */	lwz r3, 0x10(r31)
 /* 801F8694 001F5494  90 01 00 20 */	stw r0, 0x20(r1)
-/* 801F8698 001F5498  C8 42 D9 58 */	lfd f2, $$21362_1-_SDA2_BASE_(r2)
+/* 801F8698 001F5498  C8 42 D9 58 */	lfd f2, _esc__2_1362_1-_SDA2_BASE_(r2)
 /* 801F869C 001F549C  C8 01 00 20 */	lfd f0, 0x20(r1)
 /* 801F86A0 001F54A0  C0 3D 00 A0 */	lfs f1, 0xa0(r29)
 /* 801F86A4 001F54A4  EC 40 10 28 */	fsubs f2, f0, f2
@@ -801,7 +803,7 @@ lbl_801F8678:
 /* 801F8710 001F5510  3C 00 43 30 */	lis r0, 0x4330
 /* 801F8714 001F5514  80 9A 00 48 */	lwz r4, 0x48(r26)
 /* 801F8718 001F5518  90 61 00 24 */	stw r3, 0x24(r1)
-/* 801F871C 001F551C  C8 62 D9 58 */	lfd f3, $$21362_1-_SDA2_BASE_(r2)
+/* 801F871C 001F551C  C8 62 D9 58 */	lfd f3, _esc__2_1362_1-_SDA2_BASE_(r2)
 /* 801F8720 001F5520  90 01 00 20 */	stw r0, 0x20(r1)
 /* 801F8724 001F5524  C0 5A 00 9C */	lfs f2, 0x9c(r26)
 /* 801F8728 001F5528  C8 01 00 20 */	lfd f0, 0x20(r1)
@@ -858,8 +860,8 @@ lbl_801F87D4:
 /* 801F87E8 001F55E8  38 21 00 50 */	addi r1, r1, 0x50
 /* 801F87EC 001F55EC  4E 80 00 20 */	blr 
 
-.global __ct__Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlapFP22zTransientModelEmitterRC5xVec3fi
-__ct__Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlapFP22zTransientModelEmitterRC5xVec3fi:
+.global __ct__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlapFP22zTransientModelEmitterRC5xVec3fi
+__ct__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlapFP22zTransientModelEmitterRC5xVec3fi:
 /* 801F87F0 001F55F0  90 83 00 00 */	stw r4, 0(r3)
 /* 801F87F4 001F55F4  EC 01 00 72 */	fmuls f0, f1, f1
 /* 801F87F8 001F55F8  80 05 00 00 */	lwz r0, 0(r5)
@@ -883,7 +885,7 @@ update__22zTransientModelEmitterFf:
 /* 801F8834 001F5634  F3 C1 00 28 */	psq_st f30, 40(r1), 0, qr0
 /* 801F8838 001F5638  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 801F883C 001F563C  7C 7D 1B 78 */	mr r29, r3
-/* 801F8840 001F5640  C0 02 D9 48 */	lfs f0, $$2829_1-_SDA2_BASE_(r2)
+/* 801F8840 001F5640  C0 02 D9 48 */	lfs f0, _esc__2_829_1-_SDA2_BASE_(r2)
 /* 801F8844 001F5644  80 83 00 00 */	lwz r4, 0(r3)
 /* 801F8848 001F5648  FF C0 08 90 */	fmr f30, f1
 /* 801F884C 001F564C  3B E0 00 00 */	li r31, 0
@@ -902,9 +904,9 @@ lbl_801F886C:
 /* 801F887C 001F567C  FC 00 F8 40 */	fcmpo cr0, f0, f31
 /* 801F8880 001F5680  4C 41 13 82 */	cror 2, 1, 2
 /* 801F8884 001F5684  40 82 00 14 */	bne lbl_801F8898
-/* 801F8888 001F5688  80 6D DF B8 */	lwz r3, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F8888 001F5688  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F888C 001F568C  80 9D 00 00 */	lwz r4, 0(r29)
-/* 801F8890 001F5690  4B FF F8 45 */	bl fade_away__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
+/* 801F8890 001F5690  4B FF F8 45 */	bl fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 /* 801F8894 001F5694  48 00 00 08 */	b lbl_801F889C
 lbl_801F8898:
 /* 801F8898 001F5698  80 65 00 04 */	lwz r3, 4(r5)
@@ -978,21 +980,21 @@ lbl_801F895C:
 /* 801F8984 001F5784  EC 03 00 FA */	fmadds f0, f3, f3, f0
 /* 801F8988 001F5788  FC 00 E0 40 */	fcmpo cr0, f0, f28
 /* 801F898C 001F578C  40 81 00 1C */	ble lbl_801F89A8
-/* 801F8990 001F5790  80 6D DF B8 */	lwz r3, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F8990 001F5790  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F8994 001F5794  7F E5 FB 78 */	mr r5, r31
 /* 801F8998 001F5798  80 9C 00 00 */	lwz r4, 0(r28)
-/* 801F899C 001F579C  4B FF F7 39 */	bl fade_away__Q229$$2unnamed$$2zTransientModel_cpp$$211module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
+/* 801F899C 001F579C  4B FF F7 39 */	bl fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 /* 801F89A0 001F57A0  7C 7F 1B 78 */	mr r31, r3
 /* 801F89A4 001F57A4  48 00 00 38 */	b lbl_801F89DC
 lbl_801F89A8:
 /* 801F89A8 001F57A8  C0 5F 00 0C */	lfs f2, 0xc(r31)
 /* 801F89AC 001F57AC  C0 3F 00 08 */	lfs f1, 8(r31)
-/* 801F89B0 001F57B0  C0 02 D9 60 */	lfs f0, $$21435_1-_SDA2_BASE_(r2)
+/* 801F89B0 001F57B0  C0 02 D9 60 */	lfs f0, _esc__2_1435_1-_SDA2_BASE_(r2)
 /* 801F89B4 001F57B4  EC 22 00 72 */	fmuls f1, f2, f1
 /* 801F89B8 001F57B8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F89BC 001F57BC  4C 41 13 82 */	cror 2, 1, 2
 /* 801F89C0 001F57C0  40 82 00 18 */	bne lbl_801F89D8
-/* 801F89C4 001F57C4  C0 02 D9 4C */	lfs f0, $$2830_0-_SDA2_BASE_(r2)
+/* 801F89C4 001F57C4  C0 02 D9 4C */	lfs f0, _esc__2_830_0-_SDA2_BASE_(r2)
 /* 801F89C8 001F57C8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F89CC 001F57CC  40 81 00 08 */	ble lbl_801F89D4
 /* 801F89D0 001F57D0  FC 20 00 90 */	fmr f1, f0
@@ -1024,19 +1026,19 @@ alloc_activity__22zTransientModelEmitterFv:
 /* 801F8A1C 001F581C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F8A20 001F5820  7C 08 02 A6 */	mflr r0
 /* 801F8A24 001F5824  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F8A28 001F5828  80 6D DF B8 */	lwz r3, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F8A28 001F5828  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F8A2C 001F582C  38 63 00 04 */	addi r3, r3, 4
-/* 801F8A30 001F5830  48 00 08 2D */	bl push_back__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
-/* 801F8A34 001F5834  80 6D DF B8 */	lwz r3, module__29$$2unnamed$$2zTransientModel_cpp$$2-_SDA_BASE_(r13)
+/* 801F8A30 001F5830  48 00 08 2D */	bl push_back__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
+/* 801F8A34 001F5834  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801F8A38 001F5838  38 63 00 04 */	addi r3, r3, 4
-/* 801F8A3C 001F583C  48 00 08 09 */	bl back__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
+/* 801F8A3C 001F583C  48 00 08 09 */	bl back__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
 /* 801F8A40 001F5840  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F8A44 001F5844  7C 08 03 A6 */	mtlr r0
 /* 801F8A48 001F5848  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F8A4C 001F584C  4E 80 00 20 */	blr 
 
-.global __cl__Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlapFPQ221xSpacePartitionTree2D10entry_data
-__cl__Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlapFPQ221xSpacePartitionTree2D10entry_data:
+.global __cl__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlapFPQ221xSpacePartitionTree2D10entry_data
+__cl__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlapFPQ221xSpacePartitionTree2D10entry_data:
 /* 801F8A50 001F5850  80 04 00 04 */	lwz r0, 4(r4)
 /* 801F8A54 001F5854  2C 00 00 04 */	cmpwi r0, 4
 /* 801F8A58 001F5858  41 82 00 0C */	beq lbl_801F8A64
@@ -1080,8 +1082,8 @@ lbl_801F8ACC:
 /* 801F8AE4 001F58E4  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 801F8AE8 001F58E8  4E 80 00 20 */	blr 
 
-.global intersect_circle$$0Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap$$1__21xSpacePartitionTree2DFfffRQ229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap
-intersect_circle$$0Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap$$1__21xSpacePartitionTree2DFfffRQ229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap:
+.global intersect_circle_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap_esc__1___21xSpacePartitionTree2DFfffRQ229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap
+intersect_circle_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap_esc__1___21xSpacePartitionTree2DFfffRQ229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap:
 /* 801F8AEC 001F58EC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F8AF0 001F58F0  7C 08 02 A6 */	mflr r0
 /* 801F8AF4 001F58F4  FC A0 08 90 */	fmr f5, f1
@@ -1092,14 +1094,14 @@ intersect_circle$$0Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap$$1_
 /* 801F8B08 001F5908  EC 44 00 28 */	fsubs f2, f4, f0
 /* 801F8B0C 001F590C  EC 65 00 2A */	fadds f3, f5, f0
 /* 801F8B10 001F5910  EC 84 00 2A */	fadds f4, f4, f0
-/* 801F8B14 001F5914  48 00 00 15 */	bl intersect_rect$$0Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap$$1__21xSpacePartitionTree2DFffffRQ229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap
+/* 801F8B14 001F5914  48 00 00 15 */	bl intersect_rect_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap_esc__1___21xSpacePartitionTree2DFffffRQ229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap
 /* 801F8B18 001F5918  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F8B1C 001F591C  7C 08 03 A6 */	mtlr r0
 /* 801F8B20 001F5920  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F8B24 001F5924  4E 80 00 20 */	blr 
 
-.global intersect_rect$$0Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap$$1__21xSpacePartitionTree2DFffffRQ229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap
-intersect_rect$$0Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap$$1__21xSpacePartitionTree2DFffffRQ229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap:
+.global intersect_rect_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap_esc__1___21xSpacePartitionTree2DFffffRQ229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap
+intersect_rect_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap_esc__1___21xSpacePartitionTree2DFffffRQ229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap:
 /* 801F8B28 001F5928  94 21 FF 40 */	stwu r1, -0xc0(r1)
 /* 801F8B2C 001F592C  7C 08 02 A6 */	mflr r0
 /* 801F8B30 001F5930  90 01 00 C4 */	stw r0, 0xc4(r1)
@@ -1217,7 +1219,7 @@ lbl_801F8CBC:
 /* 801F8CC0 001F5AC0  40 80 00 08 */	bge lbl_801F8CC8
 /* 801F8CC4 001F5AC4  7C 9D 23 78 */	mr r29, r4
 lbl_801F8CC8:
-/* 801F8CC8 001F5AC8  CB 62 D9 68 */	lfd f27, $$21532_2-_SDA2_BASE_(r2)
+/* 801F8CC8 001F5AC8  CB 62 D9 68 */	lfd f27, _esc__2_1532_2-_SDA2_BASE_(r2)
 /* 801F8CCC 001F5ACC  7C 79 1B 78 */	mr r25, r3
 /* 801F8CD0 001F5AD0  3F 40 43 30 */	lis r26, 0x4330
 /* 801F8CD4 001F5AD4  48 00 00 A4 */	b lbl_801F8D78
@@ -1256,7 +1258,7 @@ lbl_801F8D0C:
 /* 801F8D50 001F5B50  EC 3C 08 28 */	fsubs f1, f28, f1
 /* 801F8D54 001F5B54  EC 00 D8 28 */	fsubs f0, f0, f27
 /* 801F8D58 001F5B58  EC 7E 00 28 */	fsubs f3, f30, f0
-/* 801F8D5C 001F5B5C  48 00 00 71 */	bl intersect_rect$$0Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap$$1__21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap
+/* 801F8D5C 001F5B5C  48 00 00 71 */	bl intersect_rect_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap_esc__1___21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap
 /* 801F8D60 001F5B60  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801F8D64 001F5B64  41 82 00 10 */	beq lbl_801F8D74
 /* 801F8D68 001F5B68  3B 18 00 01 */	addi r24, r24, 1
@@ -1288,11 +1290,11 @@ lbl_801F8D78:
 /* 801F8DC4 001F5BC4  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 801F8DC8 001F5BC8  4E 80 00 20 */	blr 
 
-.global intersect_rect$$0Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap$$1__21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap
-intersect_rect$$0Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap$$1__21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlap:
+.global intersect_rect_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap_esc__1___21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap
+intersect_rect_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap_esc__1___21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap:
 /* 801F8DCC 001F5BCC  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 801F8DD0 001F5BD0  7C 08 02 A6 */	mflr r0
-/* 801F8DD4 001F5BD4  C8 A2 D9 68 */	lfd f5, $$21532_2-_SDA2_BASE_(r2)
+/* 801F8DD4 001F5BD4  C8 A2 D9 68 */	lfd f5, _esc__2_1532_2-_SDA2_BASE_(r2)
 /* 801F8DD8 001F5BD8  90 01 00 74 */	stw r0, 0x74(r1)
 /* 801F8DDC 001F5BDC  3C 00 43 30 */	lis r0, 0x4330
 /* 801F8DE0 001F5BE0  BE 41 00 38 */	stmw r18, 0x38(r1)
@@ -1345,7 +1347,7 @@ lbl_801F8E88:
 /* 801F8E94 001F5C94  A0 12 00 02 */	lhz r0, 2(r18)
 /* 801F8E98 001F5C98  1C 00 00 14 */	mulli r0, r0, 0x14
 /* 801F8E9C 001F5C9C  7C 99 02 14 */	add r4, r25, r0
-/* 801F8EA0 001F5CA0  4B FF FB B1 */	bl __cl__Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlapFPQ221xSpacePartitionTree2D10entry_data
+/* 801F8EA0 001F5CA0  4B FF FB B1 */	bl __cl__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlapFPQ221xSpacePartitionTree2D10entry_data
 /* 801F8EA4 001F5CA4  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801F8EA8 001F5CA8  40 82 00 0C */	bne lbl_801F8EB4
 /* 801F8EAC 001F5CAC  38 60 00 00 */	li r3, 0
@@ -1391,7 +1393,7 @@ lbl_801F8F18:
 /* 801F8F34 001F5D34  41 82 00 20 */	beq lbl_801F8F54
 /* 801F8F38 001F5D38  B2 C4 00 08 */	sth r22, 8(r4)
 /* 801F8F3C 001F5D3C  7E A3 AB 78 */	mr r3, r21
-/* 801F8F40 001F5D40  4B FF FB 11 */	bl __cl__Q229$$2unnamed$$2zTransientModel_cpp$$216cb_check_overlapFPQ221xSpacePartitionTree2D10entry_data
+/* 801F8F40 001F5D40  4B FF FB 11 */	bl __cl__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlapFPQ221xSpacePartitionTree2D10entry_data
 /* 801F8F44 001F5D44  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801F8F48 001F5D48  40 82 00 0C */	bne lbl_801F8F54
 /* 801F8F4C 001F5D4C  38 60 00 00 */	li r3, 0
@@ -1456,8 +1458,8 @@ lbl_801F900C:
 /* 801F9018 001F5E18  38 21 00 70 */	addi r1, r1, 0x70
 /* 801F901C 001F5E1C  4E 80 00 20 */	blr 
 
-.global create__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FiPv
-create__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FiPv:
+.global create__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FiPv
+create__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FiPv:
 /* 801F9020 001F5E20  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F9024 001F5E24  7C 08 02 A6 */	mflr r0
 /* 801F9028 001F5E28  7C A6 2B 78 */	mr r6, r5
@@ -1470,8 +1472,8 @@ create__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instanc
 /* 801F9044 001F5E44  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F9048 001F5E48  4E 80 00 20 */	blr 
 
-.global create__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fi
-create__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fi:
+.global create__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fi
+create__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fi:
 /* 801F904C 001F5E4C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F9050 001F5E50  7C 08 02 A6 */	mflr r0
 /* 801F9054 001F5E54  38 A0 00 00 */	li r5, 0
@@ -1491,23 +1493,23 @@ create__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fi:
 /* 801F908C 001F5E8C  7C 65 1B 78 */	mr r5, r3
 /* 801F9090 001F5E90  7F C3 F3 78 */	mr r3, r30
 /* 801F9094 001F5E94  7F E4 FB 78 */	mr r4, r31
-/* 801F9098 001F5E98  48 00 00 19 */	bl create__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1FiPQ222zTransientModelEmitter13activity_data
+/* 801F9098 001F5E98  48 00 00 19 */	bl create__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_FiPQ222zTransientModelEmitter13activity_data
 /* 801F909C 001F5E9C  BB C1 00 08 */	lmw r30, 8(r1)
 /* 801F90A0 001F5EA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F90A4 001F5EA4  7C 08 03 A6 */	mtlr r0
 /* 801F90A8 001F5EA8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F90AC 001F5EAC  4E 80 00 20 */	blr 
 
-.global create__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1FiPQ222zTransientModelEmitter13activity_data
-create__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1FiPQ222zTransientModelEmitter13activity_data:
+.global create__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_FiPQ222zTransientModelEmitter13activity_data
+create__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_FiPQ222zTransientModelEmitter13activity_data:
 /* 801F90B0 001F5EB0  38 00 00 00 */	li r0, 0
 /* 801F90B4 001F5EB4  90 03 00 00 */	stw r0, 0(r3)
 /* 801F90B8 001F5EB8  90 83 00 04 */	stw r4, 4(r3)
 /* 801F90BC 001F5EBC  90 A3 00 08 */	stw r5, 8(r3)
 /* 801F90C0 001F5EC0  4E 80 00 20 */	blr 
 
-.global reset__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1Fv
-reset__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1Fv:
+.global reset__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_Fv
+reset__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_Fv:
 /* 801F90C4 001F5EC4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F90C8 001F5EC8  7C 08 02 A6 */	mflr r0
 /* 801F90CC 001F5ECC  38 80 00 1C */	li r4, 0x1c
@@ -1525,32 +1527,32 @@ empty__14pool_list_baseCFv:
 /* 801F90F0 001F5EF0  54 03 D9 7E */	srwi r3, r0, 5
 /* 801F90F4 001F5EF4  4E 80 00 20 */	blr 
 
-.global begin__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1CFv
-begin__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1CFv:
+.global begin__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_CFv
+begin__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_CFv:
 /* 801F90F8 001F5EF8  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 801F90FC 001F5EFC  4E 80 00 20 */	blr 
 
-.global clear__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
-clear__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv:
+.global clear__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
+clear__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv:
 /* 801F9100 001F5F00  38 00 00 00 */	li r0, 0
 /* 801F9104 001F5F04  90 03 00 00 */	stw r0, 0(r3)
 /* 801F9108 001F5F08  4E 80 00 20 */	blr 
 
-.global end__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
-end__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv:
+.global end__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
+end__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv:
 /* 801F910C 001F5F0C  80 03 00 00 */	lwz r0, 0(r3)
 /* 801F9110 001F5F10  80 63 00 08 */	lwz r3, 8(r3)
 /* 801F9114 001F5F14  1C 00 00 B0 */	mulli r0, r0, 0xb0
 /* 801F9118 001F5F18  7C 63 02 14 */	add r3, r3, r0
 /* 801F911C 001F5F1C  4E 80 00 20 */	blr 
 
-.global begin__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
-begin__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv:
+.global begin__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
+begin__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv:
 /* 801F9120 001F5F20  80 63 00 08 */	lwz r3, 8(r3)
 /* 801F9124 001F5F24  4E 80 00 20 */	blr 
 
-.global erase__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
-erase__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type:
+.global erase__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
+erase__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type:
 /* 801F9128 001F5F28  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F912C 001F5F2C  7C 08 02 A6 */	mflr r0
 /* 801F9130 001F5F30  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1560,8 +1562,8 @@ erase__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance
 /* 801F9140 001F5F40  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F9144 001F5F44  4E 80 00 20 */	blr 
 
-.global move__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_typePQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
-move__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_typePQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type:
+.global move__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_typePQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
+move__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_typePQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type:
 /* 801F9148 001F5F48  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F914C 001F5F4C  7C 08 02 A6 */	mflr r0
 /* 801F9150 001F5F50  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1601,22 +1603,22 @@ unlink__14pool_list_baseFPQ214pool_list_base9node_base:
 /* 801F91C0 001F5FC0  90 03 00 00 */	stw r0, 0(r3)
 /* 801F91C4 001F5FC4  4E 80 00 20 */	blr 
 
-.global end__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1CFv
-end__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1CFv:
+.global end__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_CFv
+end__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_CFv:
 /* 801F91C8 001F5FC8  38 63 00 10 */	addi r3, r3, 0x10
 /* 801F91CC 001F5FCC  4E 80 00 20 */	blr 
 
-.global full__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1CFv
-full__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1CFv:
+.global full__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_CFv
+full__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_CFv:
 /* 801F91D0 001F5FD0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F91D4 001F5FD4  7C 08 02 A6 */	mflr r0
 /* 801F91D8 001F5FD8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F91DC 001F5FDC  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801F91E0 001F5FE0  7C 7E 1B 78 */	mr r30, r3
-/* 801F91E4 001F5FE4  48 00 00 31 */	bl max_size__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1CFv
+/* 801F91E4 001F5FE4  48 00 00 31 */	bl max_size__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_CFv
 /* 801F91E8 001F5FE8  7C 7F 1B 78 */	mr r31, r3
 /* 801F91EC 001F5FEC  7F C3 F3 78 */	mr r3, r30
-/* 801F91F0 001F5FF0  48 00 00 2D */	bl size__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1CFv
+/* 801F91F0 001F5FF0  48 00 00 2D */	bl size__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_CFv
 /* 801F91F4 001F5FF4  7C 03 F8 50 */	subf r0, r3, r31
 /* 801F91F8 001F5FF8  7C 00 00 34 */	cntlzw r0, r0
 /* 801F91FC 001F5FFC  54 03 D9 7E */	srwi r3, r0, 5
@@ -1626,18 +1628,18 @@ full__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1CFv:
 /* 801F920C 001F600C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F9210 001F6010  4E 80 00 20 */	blr 
 
-.global max_size__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1CFv
-max_size__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1CFv:
+.global max_size__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_CFv
+max_size__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_CFv:
 /* 801F9214 001F6014  80 63 00 04 */	lwz r3, 4(r3)
 /* 801F9218 001F6018  4E 80 00 20 */	blr 
 
-.global size__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1CFv
-size__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1CFv:
+.global size__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_CFv
+size__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_CFv:
 /* 801F921C 001F601C  80 63 00 00 */	lwz r3, 0(r3)
 /* 801F9220 001F6020  4E 80 00 20 */	blr 
 
-.global insert__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type
-insert__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$1FPQ264pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instance$$19node_type:
+.global insert__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
+insert__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type:
 /* 801F9224 001F6024  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F9228 001F6028  7C 08 02 A6 */	mflr r0
 /* 801F922C 001F602C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1647,8 +1649,8 @@ insert__64pool_list$$0Q229$$2unnamed$$2zTransientModel_cpp$$218transient_instanc
 /* 801F923C 001F603C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F9240 001F6040  4E 80 00 20 */	blr 
 
-.global back__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
-back__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv:
+.global back__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
+back__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv:
 /* 801F9244 001F6044  80 83 00 00 */	lwz r4, 0(r3)
 /* 801F9248 001F6048  80 63 00 08 */	lwz r3, 8(r3)
 /* 801F924C 001F604C  38 04 FF FF */	addi r0, r4, -1
@@ -1656,9 +1658,12 @@ back__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv:
 /* 801F9254 001F6054  7C 63 02 14 */	add r3, r3, r0
 /* 801F9258 001F6058  4E 80 00 20 */	blr 
 
-.global push_back__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv
-push_back__54linear_pool$$0Q222zTransientModelEmitter13activity_data$$1Fv:
+.global push_back__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
+push_back__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv:
 /* 801F925C 001F605C  80 83 00 00 */	lwz r4, 0(r3)
 /* 801F9260 001F6060  38 04 00 01 */	addi r0, r4, 1
 /* 801F9264 001F6064  90 03 00 00 */	stw r0, 0(r3)
 /* 801F9268 001F6068  4E 80 00 20 */	blr 
+
+.endif
+

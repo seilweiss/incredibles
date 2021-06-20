@@ -2,38 +2,38 @@
 
 .section .rodata
 
-.global burn_ribbon_curve__24$$2unnamed$$2zLaserBeam_cpp$$2
-burn_ribbon_curve__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global burn_ribbon_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+burn_ribbon_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.incbin "baserom.dol", 0x2DAC18, 0x54
-.global $$21982
-$$21982:
+.global _esc__2_1982
+_esc__2_1982:
 	.incbin "baserom.dol", 0x2DAC6C, 0x54
-.global $$21996
-$$21996:
+.global _esc__2_1996
+_esc__2_1996:
 	.incbin "baserom.dol", 0x2DACC0, 0x54
-.global $$2stringBase0_62
-$$2stringBase0_62:
+.global _esc__2_stringBase0_62
+_esc__2_stringBase0_62:
 	.incbin "baserom.dol", 0x2DAD14, 0xCC
 
 .section .sbss
 
-.global fade_in_curve__24$$2unnamed$$2zLaserBeam_cpp$$2
-fade_in_curve__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global fade_in_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+fade_in_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.skip 0x30
-.global vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2
-vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.skip 0x4
-.global end_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2
-end_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global end_vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+end_vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.skip 0x4
-.global vert_indices_set__24$$2unnamed$$2zLaserBeam_cpp$$2
-vert_indices_set__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global vert_indices_set__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+vert_indices_set__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.skip 0x4
-.global brightening__24$$2unnamed$$2zLaserBeam_cpp$$2
-brightening__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global brightening__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+brightening__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.skip 0x4
-.global current_raster__24$$2unnamed$$2zLaserBeam_cpp$$2
-current_raster__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global current_raster__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+current_raster__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.skip 0x4
 .global additional_lasers__10zLaserBeam
 additional_lasers__10zLaserBeam:
@@ -41,80 +41,80 @@ additional_lasers__10zLaserBeam:
 
 .section .sbss2
 
-.global $$22211_0
-$$22211_0:
+.global _esc__2_2211_0
+_esc__2_2211_0:
 	.skip 0x8
 
 .section .sdata
 
-.global ribbon_curves__24$$2unnamed$$2zLaserBeam_cpp$$2
-ribbon_curves__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global ribbon_curves__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+ribbon_curves__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32C128, 0x10
-.global fade_value_labels__24$$2unnamed$$2zLaserBeam_cpp$$2
-fade_value_labels__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global fade_value_labels__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+fade_value_labels__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32C138, 0x8
 
 .section .sdata2
 
-.global blend_modes__24$$2unnamed$$2zLaserBeam_cpp$$2
-blend_modes__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global blend_modes__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+blend_modes__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.incbin "baserom.dol", 0x330918, 0x20
-.global fade_ribbon_curve__24$$2unnamed$$2zLaserBeam_cpp$$2
-fade_ribbon_curve__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global fade_ribbon_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+fade_ribbon_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.incbin "baserom.dol", 0x330938, 0x18
-.global fade_in_curve_immediate__24$$2unnamed$$2zLaserBeam_cpp$$2
-fade_in_curve_immediate__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global fade_in_curve_immediate__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+fade_in_curve_immediate__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.incbin "baserom.dol", 0x330950, 0x18
-.global fade_in_curve_linear__24$$2unnamed$$2zLaserBeam_cpp$$2
-fade_in_curve_linear__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global fade_in_curve_linear__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+fade_in_curve_linear__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.incbin "baserom.dol", 0x330968, 0x18
-.global fade_in_curve_overshoot__24$$2unnamed$$2zLaserBeam_cpp$$2
-fade_in_curve_overshoot__24$$2unnamed$$2zLaserBeam_cpp$$2:
+.global fade_in_curve_overshoot__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
+fade_in_curve_overshoot__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
 	.incbin "baserom.dol", 0x330980, 0x24
-.global $$21349
-$$21349:
+.global _esc__2_1349
+_esc__2_1349:
 	.incbin "baserom.dol", 0x3309A4, 0x4
-.global $$21408_0
-$$21408_0:
+.global _esc__2_1408_0
+_esc__2_1408_0:
 	.incbin "baserom.dol", 0x3309A8, 0x4
-.global $$21409_0
-$$21409_0:
+.global _esc__2_1409_0
+_esc__2_1409_0:
 	.incbin "baserom.dol", 0x3309AC, 0x4
-.global $$21411
-$$21411:
+.global _esc__2_1411
+_esc__2_1411:
 	.incbin "baserom.dol", 0x3309B0, 0x8
-.global $$21418_0
-$$21418_0:
+.global _esc__2_1418_0
+_esc__2_1418_0:
 	.incbin "baserom.dol", 0x3309B8, 0x4
-.global $$21419_1
-$$21419_1:
+.global _esc__2_1419_1
+_esc__2_1419_1:
 	.incbin "baserom.dol", 0x3309BC, 0x4
-.global $$21420_1
-$$21420_1:
+.global _esc__2_1420_1
+_esc__2_1420_1:
 	.incbin "baserom.dol", 0x3309C0, 0x4
-.global $$21451_0
-$$21451_0:
+.global _esc__2_1451_0
+_esc__2_1451_0:
 	.incbin "baserom.dol", 0x3309C4, 0x4
-.global $$21555_0
-$$21555_0:
+.global _esc__2_1555_0
+_esc__2_1555_0:
 	.incbin "baserom.dol", 0x3309C8, 0x4
-.global $$21712_0
-$$21712_0:
+.global _esc__2_1712_0
+_esc__2_1712_0:
 	.incbin "baserom.dol", 0x3309CC, 0x4
-.global $$21713_0
-$$21713_0:
+.global _esc__2_1713_0
+_esc__2_1713_0:
 	.incbin "baserom.dol", 0x3309D0, 0x4
-.global $$21787_0
-$$21787_0:
+.global _esc__2_1787_0
+_esc__2_1787_0:
 	.incbin "baserom.dol", 0x3309D4, 0x4
-.global $$21801_0
-$$21801_0:
+.global _esc__2_1801_0
+_esc__2_1801_0:
 	.incbin "baserom.dol", 0x3309D8, 0x4
-.global $$21802_1
-$$21802_1:
+.global _esc__2_1802_1
+_esc__2_1802_1:
 	.incbin "baserom.dol", 0x3309DC, 0x4
-.global $$21875
-$$21875:
+.global _esc__2_1875
+_esc__2_1875:
 	.incbin "baserom.dol", 0x3309E0, 0x4
 .global lbl_803D4024
 lbl_803D4024:
@@ -122,8 +122,8 @@ lbl_803D4024:
 .global lbl_803D4028
 lbl_803D4028:
 	.incbin "baserom.dol", 0x3309E8, 0x4
-.global $$21881
-$$21881:
+.global _esc__2_1881
+_esc__2_1881:
 	.incbin "baserom.dol", 0x3309EC, 0x4
 .global lbl_803D4030
 lbl_803D4030:
@@ -131,9 +131,11 @@ lbl_803D4030:
 .global lbl_803D4034
 lbl_803D4034:
 	.incbin "baserom.dol", 0x3309F4, 0x4
-.global $$22031
-$$22031:
+.global _esc__2_2031
+_esc__2_2031:
 	.incbin "baserom.dol", 0x3309F8, 0x8
+
+.if 0
 
 .section .text
 
@@ -141,27 +143,27 @@ $$22031:
 xDebugAddTweak__FPCcPCiiiPC14tweak_callbackPvUi:
 /* 800DA3EC 000D71EC  4E 80 00 20 */	blr 
 
-.global add_tweaks__Q224$$2unnamed$$2zLaserBeam_cpp$$25tweakFv
-add_tweaks__Q224$$2unnamed$$2zLaserBeam_cpp$$25tweakFv:
+.global add_tweaks__Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_5tweakFv
+add_tweaks__Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_5tweakFv:
 /* 800DA3F0 000D71F0  4E 80 00 20 */	blr 
 
-.global flush_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2Fv
-flush_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2Fv:
+.global flush_vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv
+flush_vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv:
 /* 800DA3F4 000D71F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800DA3F8 000D71F8  7C 08 02 A6 */	mflr r0
 /* 800DA3FC 000D71FC  3C 80 80 3A */	lis r4, gRenderBuffer@ha
 /* 800DA400 000D7200  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800DA404 000D7204  38 A4 4D F0 */	addi r5, r4, gRenderBuffer@l
 /* 800DA408 000D7208  38 00 00 24 */	li r0, 0x24
-/* 800DA40C 000D720C  80 6D C9 A0 */	lwz r3, vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DA40C 000D720C  80 6D C9 A0 */	lwz r3, vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DA410 000D7210  80 C5 00 04 */	lwz r6, 4(r5)
 /* 800DA414 000D7214  7C 66 18 50 */	subf r3, r6, r3
 /* 800DA418 000D7218  7C 83 03 D7 */	divw. r4, r3, r0
 /* 800DA41C 000D721C  40 81 00 84 */	ble lbl_800DA4A0
 /* 800DA420 000D7220  7C 80 0E 70 */	srawi r0, r4, 1
-/* 800DA424 000D7224  80 6D C9 A8 */	lwz r3, vert_indices_set__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DA424 000D7224  80 6D C9 A8 */	lwz r3, vert_indices_set__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DA428 000D7228  7D 04 02 14 */	add r8, r4, r0
-/* 800DA42C 000D722C  90 CD C9 A0 */	stw r6, vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DA42C 000D722C  90 CD C9 A0 */	stw r6, vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DA430 000D7230  7C 03 40 00 */	cmpw r3, r8
 /* 800DA434 000D7234  80 E5 00 00 */	lwz r7, 0(r5)
 /* 800DA438 000D7238  40 80 00 58 */	bge lbl_800DA490
@@ -187,9 +189,9 @@ lbl_800DA458:
 lbl_800DA484:
 /* 800DA484 000D7284  7C 06 48 40 */	cmplw r6, r9
 /* 800DA488 000D7288  40 82 FF D0 */	bne lbl_800DA458
-/* 800DA48C 000D728C  91 0D C9 A8 */	stw r8, vert_indices_set__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DA48C 000D728C  91 0D C9 A8 */	stw r8, vert_indices_set__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_800DA490:
-/* 800DA490 000D7290  80 6D C9 A0 */	lwz r3, vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DA490 000D7290  80 6D C9 A0 */	lwz r3, vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DA494 000D7294  38 A0 00 00 */	li r5, 0
 /* 800DA498 000D7298  38 C0 00 03 */	li r6, 3
 /* 800DA49C 000D729C  4B F4 70 5D */	bl xIMRenderIndexedLegacy__FPC18RxObjSpace3DVertexUiPC11RwMatrixTag15RwPrimitiveTypePCUsi
@@ -199,8 +201,8 @@ lbl_800DA4A0:
 /* 800DA4A8 000D72A8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800DA4AC 000D72AC  4E 80 00 20 */	blr 
 
-.global begin_render__24$$2unnamed$$2zLaserBeam_cpp$$2Fv
-begin_render__24$$2unnamed$$2zLaserBeam_cpp$$2Fv:
+.global begin_render__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv
+begin_render__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv:
 /* 800DA4B0 000D72B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800DA4B4 000D72B4  7C 08 02 A6 */	mflr r0
 /* 800DA4B8 000D72B8  38 60 00 20 */	li r3, 0x20
@@ -209,14 +211,14 @@ begin_render__24$$2unnamed$$2zLaserBeam_cpp$$2Fv:
 /* 800DA4C4 000D72C4  3C 60 80 3A */	lis r3, gRenderBuffer@ha
 /* 800DA4C8 000D72C8  38 00 00 00 */	li r0, 0
 /* 800DA4CC 000D72CC  38 63 4D F0 */	addi r3, r3, gRenderBuffer@l
-/* 800DA4D0 000D72D0  90 0D C9 A8 */	stw r0, vert_indices_set__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DA4D0 000D72D0  90 0D C9 A8 */	stw r0, vert_indices_set__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DA4D4 000D72D4  80 63 00 04 */	lwz r3, 4(r3)
-/* 800DA4D8 000D72D8  90 0D C9 B0 */	stw r0, current_raster__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DA4D8 000D72D8  90 0D C9 B0 */	stw r0, current_raster__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DA4DC 000D72DC  38 03 43 80 */	addi r0, r3, 0x4380
-/* 800DA4E0 000D72E0  90 6D C9 A0 */	stw r3, vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
-/* 800DA4E4 000D72E4  90 0D C9 A4 */	stw r0, end_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DA4E0 000D72E0  90 6D C9 A0 */	stw r3, vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
+/* 800DA4E4 000D72E4  90 0D C9 A4 */	stw r0, end_vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DA4E8 000D72E8  48 00 00 25 */	bl xFXHighDynamicRangeIsBright__Fv
-/* 800DA4EC 000D72EC  98 6D C9 AC */	stb r3, brightening__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DA4EC 000D72EC  98 6D C9 AC */	stb r3, brightening__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DA4F0 000D72F0  48 0B E2 91 */	bl xFXHighDynamicRangeGetBackgroundGlow__Fv
 /* 800DA4F4 000D72F4  38 80 00 00 */	li r4, 0
 /* 800DA4F8 000D72F8  48 0B E3 19 */	bl xFXHighDynamicRangeSetGlowClamp__Fib
@@ -230,12 +232,12 @@ xFXHighDynamicRangeIsBright__Fv:
 /* 800DA50C 000D730C  88 6D D5 B8 */	lbz r3, HDR_brightening-_SDA_BASE_(r13)
 /* 800DA510 000D7310  4E 80 00 20 */	blr 
 
-.global end_render__24$$2unnamed$$2zLaserBeam_cpp$$2Fv
-end_render__24$$2unnamed$$2zLaserBeam_cpp$$2Fv:
+.global end_render__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv
+end_render__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv:
 /* 800DA514 000D7314  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800DA518 000D7318  7C 08 02 A6 */	mflr r0
 /* 800DA51C 000D731C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800DA520 000D7320  4B FF FE D5 */	bl flush_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2Fv
+/* 800DA520 000D7320  4B FF FE D5 */	bl flush_vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv
 /* 800DA524 000D7324  48 0B E3 5D */	bl xFXHighDynamicRangeResetGlowClamp__Fv
 /* 800DA528 000D7328  38 60 00 00 */	li r3, 0
 /* 800DA52C 000D732C  38 80 00 00 */	li r4, 0
@@ -245,8 +247,8 @@ end_render__24$$2unnamed$$2zLaserBeam_cpp$$2Fv:
 /* 800DA53C 000D733C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800DA540 000D7340  4E 80 00 20 */	blr 
 
-.global entity_moves__24$$2unnamed$$2zLaserBeam_cpp$$2FR4xEnt
-entity_moves__24$$2unnamed$$2zLaserBeam_cpp$$2FR4xEnt:
+.global entity_moves__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FR4xEnt
+entity_moves__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FR4xEnt:
 /* 800DA544 000D7344  88 03 00 04 */	lbz r0, 4(r3)
 /* 800DA548 000D7348  28 00 00 0B */	cmplwi r0, 0xb
 /* 800DA54C 000D734C  41 82 00 0C */	beq lbl_800DA558
@@ -287,35 +289,35 @@ lbl_800DA5A8:
 scene_enter__10zLaserBeamFv:
 /* 800DA5BC 000D73BC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800DA5C0 000D73C0  7C 08 02 A6 */	mflr r0
-/* 800DA5C4 000D73C4  38 6D C9 70 */	addi r3, r13, fade_in_curve__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_
+/* 800DA5C4 000D73C4  38 6D C9 70 */	addi r3, r13, fade_in_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_
 /* 800DA5C8 000D73C8  38 80 00 02 */	li r4, 2
 /* 800DA5CC 000D73CC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800DA5D0 000D73D0  38 A2 A2 70 */	addi r5, r2, fade_in_curve_immediate__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA2_BASE_
+/* 800DA5D0 000D73D0  38 A2 A2 70 */	addi r5, r2, fade_in_curve_immediate__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA2_BASE_
 /* 800DA5D4 000D73D4  38 C0 00 02 */	li r6, 2
 /* 800DA5D8 000D73D8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800DA5DC 000D73DC  4B F6 A0 ED */	bl reset__14xResponseCurveFUiPCvUi
-/* 800DA5E0 000D73E0  38 6D C9 70 */	addi r3, r13, fade_in_curve__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_
+/* 800DA5E0 000D73E0  38 6D C9 70 */	addi r3, r13, fade_in_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_
 /* 800DA5E4 000D73E4  38 80 00 02 */	li r4, 2
-/* 800DA5E8 000D73E8  38 A2 A2 88 */	addi r5, r2, fade_in_curve_linear__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA2_BASE_
+/* 800DA5E8 000D73E8  38 A2 A2 88 */	addi r5, r2, fade_in_curve_linear__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA2_BASE_
 /* 800DA5EC 000D73EC  38 C0 00 02 */	li r6, 2
 /* 800DA5F0 000D73F0  38 63 00 10 */	addi r3, r3, 0x10
 /* 800DA5F4 000D73F4  4B F6 A0 D5 */	bl reset__14xResponseCurveFUiPCvUi
-/* 800DA5F8 000D73F8  3B ED C9 70 */	addi r31, r13, fade_in_curve__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_
+/* 800DA5F8 000D73F8  3B ED C9 70 */	addi r31, r13, fade_in_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_
 /* 800DA5FC 000D73FC  38 80 00 02 */	li r4, 2
 /* 800DA600 000D7400  3B FF 00 20 */	addi r31, r31, 0x20
-/* 800DA604 000D7404  38 A2 A2 A0 */	addi r5, r2, fade_in_curve_overshoot__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA2_BASE_
+/* 800DA604 000D7404  38 A2 A2 A0 */	addi r5, r2, fade_in_curve_overshoot__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA2_BASE_
 /* 800DA608 000D7408  7F E3 FB 78 */	mr r3, r31
 /* 800DA60C 000D740C  38 C0 00 03 */	li r6, 3
 /* 800DA610 000D7410  4B F6 A0 B9 */	bl reset__14xResponseCurveFUiPCvUi
-/* 800DA614 000D7414  3C 80 80 2E */	lis r4, $$2stringBase0_62@ha
+/* 800DA614 000D7414  3C 80 80 2E */	lis r4, _esc__2_stringBase0_62@ha
 /* 800DA618 000D7418  7F E3 FB 78 */	mr r3, r31
-/* 800DA61C 000D741C  38 84 DD 14 */	addi r4, r4, $$2stringBase0_62@l
-/* 800DA620 000D7420  38 AD 91 78 */	addi r5, r13, fade_value_labels__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_
+/* 800DA61C 000D741C  38 84 DD 14 */	addi r4, r4, _esc__2_stringBase0_62@l
+/* 800DA620 000D7420  38 AD 91 78 */	addi r5, r13, fade_value_labels__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_
 /* 800DA624 000D7424  38 84 00 98 */	addi r4, r4, 0x98
 /* 800DA628 000D7428  38 C0 00 00 */	li r6, 0
 /* 800DA62C 000D742C  38 E0 00 00 */	li r7, 0
 /* 800DA630 000D7430  4B FE D0 C1 */	bl add_tweaks__14xResponseCurveFPCcPPCcPC14tweak_callbackPv
-/* 800DA634 000D7434  4B FF FD BD */	bl add_tweaks__Q224$$2unnamed$$2zLaserBeam_cpp$$25tweakFv
+/* 800DA634 000D7434  4B FF FD BD */	bl add_tweaks__Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_5tweakFv
 /* 800DA638 000D7438  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800DA63C 000D743C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800DA640 000D7440  7C 08 03 A6 */	mtlr r0
@@ -496,7 +498,7 @@ render_all__10zLaserBeamFv:
 /* 800DA874 000D7674  7C 08 02 A6 */	mflr r0
 /* 800DA878 000D7678  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800DA87C 000D767C  BF C1 00 08 */	stmw r30, 8(r1)
-/* 800DA880 000D7680  4B FF FC 31 */	bl begin_render__24$$2unnamed$$2zLaserBeam_cpp$$2Fv
+/* 800DA880 000D7680  4B FF FC 31 */	bl begin_render__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv
 /* 800DA884 000D7684  3C 60 80 38 */	lis r3, globals@ha
 /* 800DA888 000D7688  38 63 2A 38 */	addi r3, r3, globals@l
 /* 800DA88C 000D768C  80 63 04 C8 */	lwz r3, 0x4c8(r3)
@@ -529,7 +531,7 @@ lbl_800DA8E0:
 lbl_800DA8E4:
 /* 800DA8E4 000D76E4  28 1F 00 00 */	cmplwi r31, 0
 /* 800DA8E8 000D76E8  40 82 FF E4 */	bne lbl_800DA8CC
-/* 800DA8EC 000D76EC  4B FF FC 29 */	bl end_render__24$$2unnamed$$2zLaserBeam_cpp$$2Fv
+/* 800DA8EC 000D76EC  4B FF FC 29 */	bl end_render__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv
 /* 800DA8F0 000D76F0  BB C1 00 08 */	lmw r30, 8(r1)
 /* 800DA8F4 000D76F4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800DA8F8 000D76F8  7C 08 03 A6 */	mtlr r0
@@ -592,7 +594,7 @@ setup__10zLaserBeamFv:
 /* 800DA9A8 000D77A8  28 00 00 00 */	cmplwi r0, 0
 /* 800DA9AC 000D77AC  41 82 00 18 */	beq lbl_800DA9C4
 /* 800DA9B0 000D77B0  38 00 00 00 */	li r0, 0
-/* 800DA9B4 000D77B4  C0 22 A2 C4 */	lfs f1, $$21349-_SDA2_BASE_(r2)
+/* 800DA9B4 000D77B4  C0 22 A2 C4 */	lfs f1, _esc__2_1349-_SDA2_BASE_(r2)
 /* 800DA9B8 000D77B8  98 1F 00 14 */	stb r0, 0x14(r31)
 /* 800DA9BC 000D77BC  7F E3 FB 78 */	mr r3, r31
 /* 800DA9C0 000D77C0  48 00 03 59 */	bl activate__10zLaserBeamFf
@@ -607,7 +609,7 @@ lbl_800DA9C4:
 reset__10zLaserBeamFv:
 /* 800DA9D8 000D77D8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800DA9DC 000D77DC  7C 08 02 A6 */	mflr r0
-/* 800DA9E0 000D77E0  C0 22 A2 C4 */	lfs f1, $$21349-_SDA2_BASE_(r2)
+/* 800DA9E0 000D77E0  C0 22 A2 C4 */	lfs f1, _esc__2_1349-_SDA2_BASE_(r2)
 /* 800DA9E4 000D77E4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800DA9E8 000D77E8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800DA9EC 000D77EC  7C 7F 1B 78 */	mr r31, r3
@@ -616,7 +618,7 @@ reset__10zLaserBeamFv:
 /* 800DA9F8 000D77F8  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 800DA9FC 000D77FC  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 800DAA00 000D7800  41 82 00 10 */	beq lbl_800DAA10
-/* 800DAA04 000D7804  C0 22 A2 C4 */	lfs f1, $$21349-_SDA2_BASE_(r2)
+/* 800DAA04 000D7804  C0 22 A2 C4 */	lfs f1, _esc__2_1349-_SDA2_BASE_(r2)
 /* 800DAA08 000D7808  7F E3 FB 78 */	mr r3, r31
 /* 800DAA0C 000D780C  48 00 03 0D */	bl activate__10zLaserBeamFf
 lbl_800DAA10:
@@ -668,7 +670,7 @@ lbl_800DAA98:
 /* 800DAAA0 000D78A0  C0 1F 00 38 */	lfs f0, 0x38(r31)
 /* 800DAAA4 000D78A4  C3 FF 00 38 */	lfs f31, 0x38(r31)
 /* 800DAAA8 000D78A8  EC 00 18 2A */	fadds f0, f0, f3
-/* 800DAAAC 000D78AC  C0 42 A2 C8 */	lfs f2, $$21408_0-_SDA2_BASE_(r2)
+/* 800DAAAC 000D78AC  C0 42 A2 C8 */	lfs f2, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DAAB0 000D78B0  D0 1F 00 38 */	stfs f0, 0x38(r31)
 /* 800DAAB4 000D78B4  80 7F 00 10 */	lwz r3, 0x10(r31)
 /* 800DAAB8 000D78B8  80 03 00 10 */	lwz r0, 0x10(r3)
@@ -697,7 +699,7 @@ lbl_800DAAFC:
 /* 800DAB0C 000D790C  28 00 00 08 */	cmplwi r0, 8
 /* 800DAB10 000D7910  40 81 00 1C */	ble lbl_800DAB2C
 /* 800DAB14 000D7914  38 00 00 08 */	li r0, 8
-/* 800DAB18 000D7918  C0 02 A2 CC */	lfs f0, $$21409_0-_SDA2_BASE_(r2)
+/* 800DAB18 000D7918  C0 02 A2 CC */	lfs f0, _esc__2_1409_0-_SDA2_BASE_(r2)
 /* 800DAB1C 000D791C  90 1F 03 0C */	stw r0, 0x30c(r31)
 /* 800DAB20 000D7920  C0 3F 00 38 */	lfs f1, 0x38(r31)
 /* 800DAB24 000D7924  EC 41 00 32 */	fmuls f2, f1, f0
@@ -710,7 +712,7 @@ lbl_800DAB34:
 /* 800DAB38 000D7938  3C 00 43 30 */	lis r0, 0x4330
 /* 800DAB3C 000D793C  90 01 00 08 */	stw r0, 8(r1)
 /* 800DAB40 000D7940  EC 22 F8 28 */	fsubs f1, f2, f31
-/* 800DAB44 000D7944  C8 82 A2 D0 */	lfd f4, $$21411-_SDA2_BASE_(r2)
+/* 800DAB44 000D7944  C8 82 A2 D0 */	lfd f4, _esc__2_1411-_SDA2_BASE_(r2)
 /* 800DAB48 000D7948  90 61 00 0C */	stw r3, 0xc(r1)
 /* 800DAB4C 000D794C  C0 1F 00 38 */	lfs f0, 0x38(r31)
 /* 800DAB50 000D7950  C8 61 00 08 */	lfd f3, 8(r1)
@@ -879,7 +881,7 @@ activate__10zLaserBeamFf:
 lbl_800DAD88:
 /* 800DAD88 000D7B88  98 9F 00 16 */	stb r4, 0x16(r31)
 /* 800DAD8C 000D7B8C  38 00 00 01 */	li r0, 1
-/* 800DAD90 000D7B90  C0 02 A2 E0 */	lfs f0, $$21420_1-_SDA2_BASE_(r2)
+/* 800DAD90 000D7B90  C0 02 A2 E0 */	lfs f0, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DAD94 000D7B94  7F E4 FB 78 */	mr r4, r31
 /* 800DAD98 000D7B98  90 1F 03 0C */	stw r0, 0x30c(r31)
 /* 800DAD9C 000D7B9C  38 61 00 14 */	addi r3, r1, 0x14
@@ -891,7 +893,7 @@ lbl_800DAD88:
 /* 800DADB4 000D7BB4  80 1F 00 1C */	lwz r0, 0x1c(r31)
 /* 800DADB8 000D7BB8  2C 00 00 01 */	cmpwi r0, 1
 /* 800DADBC 000D7BBC  40 82 00 2C */	bne lbl_800DADE8
-/* 800DADC0 000D7BC0  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DADC0 000D7BC0  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DADC4 000D7BC4  7F E3 FB 78 */	mr r3, r31
 /* 800DADC8 000D7BC8  48 00 08 CD */	bl next_point__10zLaserBeamFf
 /* 800DADCC 000D7BCC  38 7F 01 3C */	addi r3, r31, 0x13c
@@ -902,7 +904,7 @@ lbl_800DAD88:
 /* 800DADE0 000D7BE0  4B F3 02 C9 */	bl __as__5xVec3FRC5xVec3
 /* 800DADE4 000D7BE4  48 00 00 50 */	b lbl_800DAE34
 lbl_800DADE8:
-/* 800DADE8 000D7BE8  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DADE8 000D7BE8  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DADEC 000D7BEC  7F E3 FB 78 */	mr r3, r31
 /* 800DADF0 000D7BF0  48 00 0C E5 */	bl update_target__10zLaserBeamFf
 /* 800DADF4 000D7BF4  38 7F 01 3C */	addi r3, r31, 0x13c
@@ -933,13 +935,13 @@ lbl_800DAE4C:
 /* 800DAE50 000D7C50  2C 00 00 00 */	cmpwi r0, 0
 /* 800DAE54 000D7C54  41 82 00 58 */	beq lbl_800DAEAC
 lbl_800DAE58:
-/* 800DAE58 000D7C58  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DAE58 000D7C58  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DAE5C 000D7C5C  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 800DAE60 000D7C60  40 82 00 0C */	bne lbl_800DAE6C
 /* 800DAE64 000D7C64  80 7F 00 10 */	lwz r3, 0x10(r31)
 /* 800DAE68 000D7C68  C3 E3 00 44 */	lfs f31, 0x44(r3)
 lbl_800DAE6C:
-/* 800DAE6C 000D7C6C  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DAE6C 000D7C6C  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DAE70 000D7C70  FC 1F 08 40 */	fcmpo cr0, f31, f1
 /* 800DAE74 000D7C74  4C 40 13 82 */	cror 2, 0, 2
 /* 800DAE78 000D7C78  40 82 00 10 */	bne lbl_800DAE88
@@ -950,7 +952,7 @@ lbl_800DAE88:
 /* 800DAE88 000D7C88  80 1F 00 D8 */	lwz r0, 0xd8(r31)
 /* 800DAE8C 000D7C8C  2C 00 00 01 */	cmpwi r0, 1
 /* 800DAE90 000D7C90  41 82 00 1C */	beq lbl_800DAEAC
-/* 800DAE94 000D7C94  C0 02 A2 E0 */	lfs f0, $$21420_1-_SDA2_BASE_(r2)
+/* 800DAE94 000D7C94  C0 02 A2 E0 */	lfs f0, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DAE98 000D7C98  38 00 00 01 */	li r0, 1
 /* 800DAE9C 000D7C9C  90 1F 00 D8 */	stw r0, 0xd8(r31)
 /* 800DAEA0 000D7CA0  EC 00 F8 24 */	fdivs f0, f0, f31
@@ -978,13 +980,13 @@ deactivate__10zLaserBeamFf:
 /* 800DAEE8 000D7CE8  88 03 00 14 */	lbz r0, 0x14(r3)
 /* 800DAEEC 000D7CEC  28 00 00 00 */	cmplwi r0, 0
 /* 800DAEF0 000D7CF0  41 82 00 B0 */	beq lbl_800DAFA0
-/* 800DAEF4 000D7CF4  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DAEF4 000D7CF4  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DAEF8 000D7CF8  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 800DAEFC 000D7CFC  40 82 00 0C */	bne lbl_800DAF08
 /* 800DAF00 000D7D00  80 7F 00 10 */	lwz r3, 0x10(r31)
 /* 800DAF04 000D7D04  C3 E3 00 48 */	lfs f31, 0x48(r3)
 lbl_800DAF08:
-/* 800DAF08 000D7D08  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DAF08 000D7D08  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DAF0C 000D7D0C  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 800DAF10 000D7D10  4C 40 13 82 */	cror 2, 0, 2
 /* 800DAF14 000D7D14  40 82 00 14 */	bne lbl_800DAF28
@@ -1002,7 +1004,7 @@ lbl_800DAF28:
 /* 800DAF40 000D7D40  48 00 00 3C */	b lbl_800DAF7C
 lbl_800DAF44:
 /* 800DAF44 000D7D44  80 BF 00 10 */	lwz r5, 0x10(r31)
-/* 800DAF48 000D7D48  38 6D C9 70 */	addi r3, r13, fade_in_curve__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_
+/* 800DAF48 000D7D48  38 6D C9 70 */	addi r3, r13, fade_in_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_
 /* 800DAF4C 000D7D4C  C0 3F 00 DC */	lfs f1, 0xdc(r31)
 /* 800DAF50 000D7D50  38 81 00 08 */	addi r4, r1, 8
 /* 800DAF54 000D7D54  88 05 00 40 */	lbz r0, 0x40(r5)
@@ -1016,11 +1018,11 @@ lbl_800DAF44:
 /* 800DAF74 000D7D74  48 00 00 14 */	b lbl_800DAF88
 /* 800DAF78 000D7D78  48 00 00 28 */	b lbl_800DAFA0
 lbl_800DAF7C:
-/* 800DAF7C 000D7D7C  C0 02 A2 E0 */	lfs f0, $$21420_1-_SDA2_BASE_(r2)
+/* 800DAF7C 000D7D7C  C0 02 A2 E0 */	lfs f0, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DAF80 000D7D80  D0 1F 00 DC */	stfs f0, 0xdc(r31)
 /* 800DAF84 000D7D84  D0 1F 00 E0 */	stfs f0, 0xe0(r31)
 lbl_800DAF88:
-/* 800DAF88 000D7D88  C0 02 A2 C4 */	lfs f0, $$21349-_SDA2_BASE_(r2)
+/* 800DAF88 000D7D88  C0 02 A2 C4 */	lfs f0, _esc__2_1349-_SDA2_BASE_(r2)
 /* 800DAF8C 000D7D8C  38 00 00 02 */	li r0, 2
 /* 800DAF90 000D7D90  90 1F 00 D8 */	stw r0, 0xd8(r31)
 /* 800DAF94 000D7D94  EC 00 F8 24 */	fdivs f0, f0, f31
@@ -1054,7 +1056,7 @@ reload_asset__10zLaserBeamFv:
 /* 800DAFF4 000D7DF4  7F E3 FB 78 */	mr r3, r31
 /* 800DAFF8 000D7DF8  48 00 04 81 */	bl load_beam_raster__10zLaserBeamFv
 /* 800DAFFC 000D7DFC  80 7F 00 10 */	lwz r3, 0x10(r31)
-/* 800DB000 000D7E00  C0 02 A2 E8 */	lfs f0, $$21555_0-_SDA2_BASE_(r2)
+/* 800DB000 000D7E00  C0 02 A2 E8 */	lfs f0, _esc__2_1555_0-_SDA2_BASE_(r2)
 /* 800DB004 000D7E04  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 800DB008 000D7E08  54 00 07 FE */	clrlwi r0, r0, 0x1f
 /* 800DB00C 000D7E0C  98 1F 00 14 */	stb r0, 0x14(r31)
@@ -1116,7 +1118,7 @@ lbl_800DB0C0:
 /* 800DB0DC 000D7EDC  88 1F 00 15 */	lbz r0, 0x15(r31)
 /* 800DB0E0 000D7EE0  28 00 00 00 */	cmplwi r0, 0
 /* 800DB0E4 000D7EE4  40 82 00 4C */	bne lbl_800DB130
-/* 800DB0E8 000D7EE8  4B FF F4 5D */	bl entity_moves__24$$2unnamed$$2zLaserBeam_cpp$$2FR4xEnt
+/* 800DB0E8 000D7EE8  4B FF F4 5D */	bl entity_moves__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FR4xEnt
 /* 800DB0EC 000D7EEC  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 800DB0F0 000D7EF0  40 82 00 40 */	bne lbl_800DB130
 lbl_800DB0F4:
@@ -1124,7 +1126,7 @@ lbl_800DB0F4:
 /* 800DB0F8 000D7EF8  2C 00 00 02 */	cmpwi r0, 2
 /* 800DB0FC 000D7EFC  40 82 00 14 */	bne lbl_800DB110
 /* 800DB100 000D7F00  80 7F 00 40 */	lwz r3, 0x40(r31)
-/* 800DB104 000D7F04  4B FF F4 41 */	bl entity_moves__24$$2unnamed$$2zLaserBeam_cpp$$2FR4xEnt
+/* 800DB104 000D7F04  4B FF F4 41 */	bl entity_moves__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FR4xEnt
 /* 800DB108 000D7F08  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 800DB10C 000D7F0C  40 82 00 24 */	bne lbl_800DB130
 lbl_800DB110:
@@ -1144,7 +1146,7 @@ lbl_800DB130:
 /* 800DB13C 000D7F3C  88 1F 00 17 */	lbz r0, 0x17(r31)
 /* 800DB140 000D7F40  28 00 00 00 */	cmplwi r0, 0
 /* 800DB144 000D7F44  41 82 00 10 */	beq lbl_800DB154
-/* 800DB148 000D7F48  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DB148 000D7F48  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DB14C 000D7F4C  7F E3 FB 78 */	mr r3, r31
 /* 800DB150 000D7F50  4B FF F9 05 */	bl update_motion__10zLaserBeamFf
 lbl_800DB154:
@@ -1193,11 +1195,11 @@ refresh_ribbon__10zLaserBeamFv:
 /* 800DB1D8 000D7FD8  98 03 00 81 */	stb r0, 0x81(r3)
 lbl_800DB1DC:
 /* 800DB1DC 000D7FDC  80 7F 00 10 */	lwz r3, 0x10(r31)
-/* 800DB1E0 000D7FE0  38 C2 A2 38 */	addi r6, r2, blend_modes__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA2_BASE_
-/* 800DB1E4 000D7FE4  C0 02 A2 E4 */	lfs f0, $$21451_0-_SDA2_BASE_(r2)
+/* 800DB1E0 000D7FE0  38 C2 A2 38 */	addi r6, r2, blend_modes__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA2_BASE_
+/* 800DB1E4 000D7FE4  C0 02 A2 E4 */	lfs f0, _esc__2_1451_0-_SDA2_BASE_(r2)
 /* 800DB1E8 000D7FE8  38 00 00 00 */	li r0, 0
 /* 800DB1EC 000D7FEC  88 A3 00 81 */	lbz r5, 0x81(r3)
-/* 800DB1F0 000D7FF0  38 8D 91 68 */	addi r4, r13, ribbon_curves__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_
+/* 800DB1F0 000D7FF0  38 8D 91 68 */	addi r4, r13, ribbon_curves__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_
 /* 800DB1F4 000D7FF4  C0 23 00 78 */	lfs f1, 0x78(r3)
 /* 800DB1F8 000D7FF8  54 A7 1D 78 */	rlwinm r7, r5, 3, 0x15, 0x1c
 /* 800DB1FC 000D7FFC  D0 3F 00 A0 */	stfs f1, 0xa0(r31)
@@ -1245,7 +1247,7 @@ lbl_800DB280:
 load_attach_to__10zLaserBeamFUi:
 /* 800DB294 000D8094  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800DB298 000D8098  7C 08 02 A6 */	mflr r0
-/* 800DB29C 000D809C  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DB29C 000D809C  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DB2A0 000D80A0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 800DB2A4 000D80A4  38 00 00 00 */	li r0, 0
 /* 800DB2A8 000D80A8  BF A1 00 14 */	stmw r29, 0x14(r1)
@@ -1350,7 +1352,7 @@ lbl_800DB400:
 /* 800DB400 000D8200  7F E3 FB 78 */	mr r3, r31
 /* 800DB404 000D8204  48 00 00 21 */	bl load_target_direct__10zLaserBeamFv
 lbl_800DB408:
-/* 800DB408 000D8208  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DB408 000D8208  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DB40C 000D820C  D0 1F 00 38 */	stfs f0, 0x38(r31)
 /* 800DB410 000D8210  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800DB414 000D8214  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1369,9 +1371,9 @@ load_target_movepoint__10zLaserBeamFP10xMovePoint:
 /* 800DB430 000D8230  38 A0 00 01 */	li r5, 1
 /* 800DB434 000D8234  38 00 00 00 */	li r0, 0
 /* 800DB438 000D8238  90 A3 00 1C */	stw r5, 0x1c(r3)
-/* 800DB43C 000D823C  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DB43C 000D823C  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DB440 000D8240  90 83 00 40 */	stw r4, 0x40(r3)
-/* 800DB444 000D8244  C0 02 A2 E0 */	lfs f0, $$21420_1-_SDA2_BASE_(r2)
+/* 800DB444 000D8244  C0 02 A2 E0 */	lfs f0, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DB448 000D8248  90 03 00 44 */	stw r0, 0x44(r3)
 /* 800DB44C 000D824C  90 83 00 48 */	stw r4, 0x48(r3)
 /* 800DB450 000D8250  90 03 00 4C */	stw r0, 0x4c(r3)
@@ -1407,7 +1409,7 @@ load_beam_raster__10zLaserBeamFv:
 /* 800DB4B0 000D82B0  41 82 00 1C */	beq lbl_800DB4CC
 /* 800DB4B4 000D82B4  80 03 00 00 */	lwz r0, 0(r3)
 /* 800DB4B8 000D82B8  38 80 00 01 */	li r4, 1
-/* 800DB4BC 000D82BC  C0 22 A2 E0 */	lfs f1, $$21420_1-_SDA2_BASE_(r2)
+/* 800DB4BC 000D82BC  C0 22 A2 E0 */	lfs f1, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DB4C0 000D82C0  90 1F 00 C4 */	stw r0, 0xc4(r31)
 /* 800DB4C4 000D82C4  80 7F 00 C4 */	lwz r3, 0xc4(r31)
 /* 800DB4C8 000D82C8  48 0B D1 E9 */	bl xFXHighDynamicRangeTunePalette__FP8RwRasterfb
@@ -1436,7 +1438,7 @@ load_ribbon__10zLaserBeamFv:
 /* 800DB514 000D8314  28 03 00 00 */	cmplwi r3, 0
 /* 800DB518 000D8318  41 82 00 68 */	beq lbl_800DB580
 /* 800DB51C 000D831C  80 7F 00 10 */	lwz r3, 0x10(r31)
-/* 800DB520 000D8320  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DB520 000D8320  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DB524 000D8324  C0 03 00 78 */	lfs f0, 0x78(r3)
 /* 800DB528 000D8328  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 800DB52C 000D832C  4C 40 13 82 */	cror 2, 0, 2
@@ -1592,7 +1594,7 @@ lbl_800DB704:
 /* 800DB740 000D8540  48 00 01 40 */	b lbl_800DB880
 lbl_800DB744:
 /* 800DB744 000D8544  C0 1F 00 50 */	lfs f0, 0x50(r31)
-/* 800DB748 000D8548  C3 E2 A2 E0 */	lfs f31, $$21420_1-_SDA2_BASE_(r2)
+/* 800DB748 000D8548  C3 E2 A2 E0 */	lfs f31, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DB74C 000D854C  EC 00 08 2A */	fadds f0, f0, f1
 /* 800DB750 000D8550  D0 1F 00 50 */	stfs f0, 0x50(r31)
 /* 800DB754 000D8554  48 00 00 A4 */	b lbl_800DB7F8
@@ -1670,9 +1672,9 @@ lbl_800DB848:
 /* 800DB858 000D8658  FC 20 F8 90 */	fmr f1, f31
 /* 800DB85C 000D865C  4B F8 E7 8D */	bl xSpline3_EvalSeg__FP8xSpline3fUiP5xVec3
 /* 800DB860 000D8660  FC 20 F8 90 */	fmr f1, f31
-/* 800DB864 000D8664  C0 42 A2 EC */	lfs f2, $$21712_0-_SDA2_BASE_(r2)
-/* 800DB868 000D8668  C0 62 A2 F0 */	lfs f3, $$21713_0-_SDA2_BASE_(r2)
-/* 800DB86C 000D866C  4B F3 4A B5 */	bl range_limit$$0f$$1__Ffff
+/* 800DB864 000D8664  C0 42 A2 EC */	lfs f2, _esc__2_1712_0-_SDA2_BASE_(r2)
+/* 800DB868 000D8668  C0 62 A2 F0 */	lfs f3, _esc__2_1713_0-_SDA2_BASE_(r2)
+/* 800DB86C 000D866C  4B F3 4A B5 */	bl range_limit_esc__0_f_esc__1___Ffff
 /* 800DB870 000D8670  80 7F 00 4C */	lwz r3, 0x4c(r31)
 /* 800DB874 000D8674  38 BF 00 2C */	addi r5, r31, 0x2c
 /* 800DB878 000D8678  38 80 00 01 */	li r4, 1
@@ -1725,7 +1727,7 @@ apply_motion_direct__10zLaserBeamFffi:
 /* 800DB918 000D8718  F3 C1 00 28 */	psq_st f30, 40(r1), 0, qr0
 /* 800DB91C 000D871C  BF 61 00 0C */	stmw r27, 0xc(r1)
 /* 800DB920 000D8720  7C 7B 1B 78 */	mr r27, r3
-/* 800DB924 000D8724  C0 02 A2 EC */	lfs f0, $$21712_0-_SDA2_BASE_(r2)
+/* 800DB924 000D8724  C0 02 A2 EC */	lfs f0, _esc__2_1712_0-_SDA2_BASE_(r2)
 /* 800DB928 000D8728  C0 63 00 3C */	lfs f3, 0x3c(r3)
 /* 800DB92C 000D872C  FF E0 08 90 */	fmr f31, f1
 /* 800DB930 000D8730  FF C0 10 90 */	fmr f30, f2
@@ -1733,9 +1735,9 @@ apply_motion_direct__10zLaserBeamFffi:
 /* 800DB938 000D8738  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 800DB93C 000D873C  4C 40 13 82 */	cror 2, 0, 2
 /* 800DB940 000D8740  40 82 00 60 */	bne lbl_800DB9A0
-/* 800DB944 000D8744  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DB944 000D8744  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DB948 000D8748  38 7B 00 2C */	addi r3, r27, 0x2c
-/* 800DB94C 000D874C  C0 42 A2 E0 */	lfs f2, $$21420_1-_SDA2_BASE_(r2)
+/* 800DB94C 000D874C  C0 42 A2 E0 */	lfs f2, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DB950 000D8750  FC 60 08 90 */	fmr f3, f1
 /* 800DB954 000D8754  4B F3 1E 85 */	bl assign__5xVec3Ffff
 /* 800DB958 000D8758  38 7B 00 20 */	addi r3, r27, 0x20
@@ -1984,11 +1986,11 @@ lbl_800DBCAC:
 /* 800DBCB0 000D8AB0  54 00 05 EF */	rlwinm. r0, r0, 0, 0x17, 0x17
 /* 800DBCB4 000D8AB4  41 82 00 14 */	beq lbl_800DBCC8
 /* 800DBCB8 000D8AB8  4B F2 B6 6D */	bl xurand__Fv
-/* 800DBCBC 000D8ABC  C0 02 A2 F4 */	lfs f0, $$21787_0-_SDA2_BASE_(r2)
+/* 800DBCBC 000D8ABC  C0 02 A2 F4 */	lfs f0, _esc__2_1787_0-_SDA2_BASE_(r2)
 /* 800DBCC0 000D8AC0  EC 00 00 72 */	fmuls f0, f0, f1
 /* 800DBCC4 000D8AC4  48 00 00 08 */	b lbl_800DBCCC
 lbl_800DBCC8:
-/* 800DBCC8 000D8AC8  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DBCC8 000D8AC8  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 lbl_800DBCCC:
 /* 800DBCCC 000D8ACC  D0 1F 00 EC */	stfs f0, 0xec(r31)
 lbl_800DBCD0:
@@ -2014,15 +2016,15 @@ update_color_anim__10zLaserBeamFf:
 /* 800DBD10 000D8B10  40 80 00 08 */	bge lbl_800DBD18
 /* 800DBD14 000D8B14  48 00 00 30 */	b lbl_800DBD44
 lbl_800DBD18:
-/* 800DBD18 000D8B18  C0 62 A2 FC */	lfs f3, $$21802_1-_SDA2_BASE_(r2)
+/* 800DBD18 000D8B18  C0 62 A2 FC */	lfs f3, _esc__2_1802_1-_SDA2_BASE_(r2)
 /* 800DBD1C 000D8B1C  C0 43 00 84 */	lfs f2, 0x84(r3)
 /* 800DBD20 000D8B20  C0 1F 00 EC */	lfs f0, 0xec(r31)
 /* 800DBD24 000D8B24  EC 43 00 B2 */	fmuls f2, f3, f2
-/* 800DBD28 000D8B28  C0 62 A2 F8 */	lfs f3, $$21801_0-_SDA2_BASE_(r2)
+/* 800DBD28 000D8B28  C0 62 A2 F8 */	lfs f3, _esc__2_1801_0-_SDA2_BASE_(r2)
 /* 800DBD2C 000D8B2C  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 800DBD30 000D8B30  EC 23 00 2A */	fadds f1, f3, f0
 /* 800DBD34 000D8B34  4B F3 40 61 */	bl xrmod__Ff
-/* 800DBD38 000D8B38  C0 02 A2 F8 */	lfs f0, $$21801_0-_SDA2_BASE_(r2)
+/* 800DBD38 000D8B38  C0 02 A2 F8 */	lfs f0, _esc__2_1801_0-_SDA2_BASE_(r2)
 /* 800DBD3C 000D8B3C  EC 01 00 28 */	fsubs f0, f1, f0
 /* 800DBD40 000D8B40  D0 1F 00 EC */	stfs f0, 0xec(r31)
 lbl_800DBD44:
@@ -2065,7 +2067,7 @@ lbl_800DBDB0:
 /* 800DBDC4 000D8BC4  C0 23 00 EC */	lfs f1, 0xec(r3)
 /* 800DBDC8 000D8BC8  EF 80 F0 28 */	fsubs f28, f0, f30
 /* 800DBDCC 000D8BCC  4B F9 AA 1D */	bl isin__Ff
-/* 800DBDD0 000D8BD0  C0 02 A2 E4 */	lfs f0, $$21451_0-_SDA2_BASE_(r2)
+/* 800DBDD0 000D8BD0  C0 02 A2 E4 */	lfs f0, _esc__2_1451_0-_SDA2_BASE_(r2)
 /* 800DBDD4 000D8BD4  EC 00 00 7A */	fmadds f0, f0, f1, f0
 /* 800DBDD8 000D8BD8  EC 3D F8 3A */	fmadds f1, f29, f0, f31
 /* 800DBDDC 000D8BDC  EC 1C F0 3A */	fmadds f0, f28, f0, f30
@@ -2073,7 +2075,7 @@ lbl_800DBDB0:
 /* 800DBDE4 000D8BE4  D0 1F 00 00 */	stfs f0, 0(r31)
 /* 800DBDE8 000D8BE8  48 00 00 10 */	b lbl_800DBDF8
 lbl_800DBDEC:
-/* 800DBDEC 000D8BEC  C0 02 A2 E0 */	lfs f0, $$21420_1-_SDA2_BASE_(r2)
+/* 800DBDEC 000D8BEC  C0 02 A2 E0 */	lfs f0, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DBDF0 000D8BF0  D0 1E 00 00 */	stfs f0, 0(r30)
 /* 800DBDF4 000D8BF4  D0 1F 00 00 */	stfs f0, 0(r31)
 lbl_800DBDF8:
@@ -2106,20 +2108,20 @@ update_fade__10zLaserBeamFf:
 lbl_800DBE54:
 /* 800DBE54 000D8C54  C0 63 00 E0 */	lfs f3, 0xe0(r3)
 /* 800DBE58 000D8C58  C0 43 00 DC */	lfs f2, 0xdc(r3)
-/* 800DBE5C 000D8C5C  C0 02 A2 E0 */	lfs f0, $$21420_1-_SDA2_BASE_(r2)
+/* 800DBE5C 000D8C5C  C0 02 A2 E0 */	lfs f0, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DBE60 000D8C60  EC 23 10 7A */	fmadds f1, f3, f1, f2
 /* 800DBE64 000D8C64  D0 23 00 DC */	stfs f1, 0xdc(r3)
 /* 800DBE68 000D8C68  C0 23 00 DC */	lfs f1, 0xdc(r3)
 /* 800DBE6C 000D8C6C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800DBE70 000D8C70  4C 41 13 82 */	cror 2, 1, 2
 /* 800DBE74 000D8C74  40 82 00 84 */	bne lbl_800DBEF8
-/* 800DBE78 000D8C78  C0 22 A2 C4 */	lfs f1, $$21349-_SDA2_BASE_(r2)
+/* 800DBE78 000D8C78  C0 22 A2 C4 */	lfs f1, _esc__2_1349-_SDA2_BASE_(r2)
 /* 800DBE7C 000D8C7C  4B FF EE 9D */	bl activate__10zLaserBeamFf
 /* 800DBE80 000D8C80  48 00 00 78 */	b lbl_800DBEF8
 lbl_800DBE84:
 /* 800DBE84 000D8C84  C0 63 00 E4 */	lfs f3, 0xe4(r3)
 /* 800DBE88 000D8C88  C0 43 00 DC */	lfs f2, 0xdc(r3)
-/* 800DBE8C 000D8C8C  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DBE8C 000D8C8C  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DBE90 000D8C90  EC 43 10 7A */	fmadds f2, f3, f1, f2
 /* 800DBE94 000D8C94  D0 43 00 DC */	stfs f2, 0xdc(r3)
 /* 800DBE98 000D8C98  C0 63 00 E8 */	lfs f3, 0xe8(r3)
@@ -2133,20 +2135,20 @@ lbl_800DBE84:
 /* 800DBEB8 000D8CB8  D0 03 00 DC */	stfs f0, 0xdc(r3)
 lbl_800DBEBC:
 /* 800DBEBC 000D8CBC  C0 23 00 E0 */	lfs f1, 0xe0(r3)
-/* 800DBEC0 000D8CC0  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DBEC0 000D8CC0  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DBEC4 000D8CC4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800DBEC8 000D8CC8  4C 40 13 82 */	cror 2, 0, 2
 /* 800DBECC 000D8CCC  40 82 00 08 */	bne lbl_800DBED4
 /* 800DBED0 000D8CD0  D0 03 00 E0 */	stfs f0, 0xe0(r3)
 lbl_800DBED4:
-/* 800DBED4 000D8CD4  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DBED4 000D8CD4  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DBED8 000D8CD8  C0 03 00 DC */	lfs f0, 0xdc(r3)
 /* 800DBEDC 000D8CDC  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 800DBEE0 000D8CE0  40 82 00 18 */	bne lbl_800DBEF8
 /* 800DBEE4 000D8CE4  C0 03 00 E0 */	lfs f0, 0xe0(r3)
 /* 800DBEE8 000D8CE8  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 800DBEEC 000D8CEC  40 82 00 0C */	bne lbl_800DBEF8
-/* 800DBEF0 000D8CF0  C0 22 A2 C4 */	lfs f1, $$21349-_SDA2_BASE_(r2)
+/* 800DBEF0 000D8CF0  C0 22 A2 C4 */	lfs f1, _esc__2_1349-_SDA2_BASE_(r2)
 /* 800DBEF4 000D8CF4  4B FF EF D5 */	bl deactivate__10zLaserBeamFf
 lbl_800DBEF8:
 /* 800DBEF8 000D8CF8  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2172,7 +2174,7 @@ get_fade__10zLaserBeamFRfRf:
 /* 800DBF3C 000D8D3C  48 00 00 4C */	b lbl_800DBF88
 lbl_800DBF40:
 /* 800DBF40 000D8D40  80 A6 00 10 */	lwz r5, 0x10(r6)
-/* 800DBF44 000D8D44  38 6D C9 70 */	addi r3, r13, fade_in_curve__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_
+/* 800DBF44 000D8D44  38 6D C9 70 */	addi r3, r13, fade_in_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_
 /* 800DBF48 000D8D48  C0 26 00 DC */	lfs f1, 0xdc(r6)
 /* 800DBF4C 000D8D4C  38 81 00 08 */	addi r4, r1, 8
 /* 800DBF50 000D8D50  88 05 00 40 */	lbz r0, 0x40(r5)
@@ -2191,7 +2193,7 @@ lbl_800DBF74:
 /* 800DBF80 000D8D80  D0 1F 00 00 */	stfs f0, 0(r31)
 /* 800DBF84 000D8D84  48 00 00 10 */	b lbl_800DBF94
 lbl_800DBF88:
-/* 800DBF88 000D8D88  C0 02 A2 E0 */	lfs f0, $$21420_1-_SDA2_BASE_(r2)
+/* 800DBF88 000D8D88  C0 02 A2 E0 */	lfs f0, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DBF8C 000D8D8C  D0 1E 00 00 */	stfs f0, 0(r30)
 /* 800DBF90 000D8D90  D0 1F 00 00 */	stfs f0, 0(r31)
 lbl_800DBF94:
@@ -2224,9 +2226,9 @@ refresh_color__10zLaserBeamFv:
 /* 800DBFF0 000D8DF0  EC E3 00 B2 */	fmuls f7, f3, f2
 /* 800DBFF4 000D8DF4  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 800DBFF8 000D8DF8  EC C1 00 32 */	fmuls f6, f1, f0
-/* 800DBFFC 000D8DFC  C8 A2 A2 D0 */	lfd f5, $$21411-_SDA2_BASE_(r2)
+/* 800DBFFC 000D8DFC  C8 A2 A2 D0 */	lfd f5, _esc__2_1411-_SDA2_BASE_(r2)
 /* 800DC000 000D8E00  D0 E1 00 14 */	stfs f7, 0x14(r1)
-/* 800DC004 000D8E04  C0 82 A2 E4 */	lfs f4, $$21451_0-_SDA2_BASE_(r2)
+/* 800DC004 000D8E04  C0 82 A2 E4 */	lfs f4, _esc__2_1451_0-_SDA2_BASE_(r2)
 /* 800DC008 000D8E08  D0 C1 00 10 */	stfs f6, 0x10(r1)
 /* 800DC00C 000D8E0C  80 FF 00 10 */	lwz r7, 0x10(r31)
 /* 800DC010 000D8E10  90 C1 00 28 */	stw r6, 0x28(r1)
@@ -2303,7 +2305,7 @@ update_ribbon__10zLaserBeamFv:
 /* 800DC110 000D8F10  80 03 00 C0 */	lwz r0, 0xc0(r3)
 /* 800DC114 000D8F14  28 00 00 00 */	cmplwi r0, 0
 /* 800DC118 000D8F18  41 82 02 28 */	beq lbl_800DC340
-/* 800DC11C 000D8F1C  80 82 A3 00 */	lwz r4, $$21875-_SDA2_BASE_(r2)
+/* 800DC11C 000D8F1C  80 82 A3 00 */	lwz r4, _esc__2_1875-_SDA2_BASE_(r2)
 /* 800DC120 000D8F20  80 62 A3 04 */	lwz r3, lbl_803D4024-_SDA2_BASE_(r2)
 /* 800DC124 000D8F24  80 02 A3 08 */	lwz r0, lbl_803D4028-_SDA2_BASE_(r2)
 /* 800DC128 000D8F28  90 81 00 58 */	stw r4, 0x58(r1)
@@ -2322,7 +2324,7 @@ lbl_800DC150:
 /* 800DC158 000D8F58  7C 60 00 38 */	and r0, r3, r0
 /* 800DC15C 000D8F5C  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 800DC160 000D8F60  40 82 01 0C */	bne lbl_800DC26C
-/* 800DC164 000D8F64  80 E2 A3 0C */	lwz r7, $$21881-_SDA2_BASE_(r2)
+/* 800DC164 000D8F64  80 E2 A3 0C */	lwz r7, _esc__2_1881-_SDA2_BASE_(r2)
 /* 800DC168 000D8F68  38 61 00 28 */	addi r3, r1, 0x28
 /* 800DC16C 000D8F6C  80 C2 A3 10 */	lwz r6, lbl_803D4030-_SDA2_BASE_(r2)
 /* 800DC170 000D8F70  38 81 00 58 */	addi r4, r1, 0x58
@@ -2352,7 +2354,7 @@ lbl_800DC150:
 /* 800DC1D0 000D8FD0  80 7F 00 C0 */	lwz r3, 0xc0(r31)
 /* 800DC1D4 000D8FD4  38 A1 00 40 */	addi r5, r1, 0x40
 /* 800DC1D8 000D8FD8  C0 26 00 7C */	lfs f1, 0x7c(r6)
-/* 800DC1DC 000D8FDC  C0 42 A2 E0 */	lfs f2, $$21420_1-_SDA2_BASE_(r2)
+/* 800DC1DC 000D8FDC  C0 42 A2 E0 */	lfs f2, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DC1E0 000D8FE0  80 DF 00 C8 */	lwz r6, 0xc8(r31)
 /* 800DC1E4 000D8FE4  4B F5 C9 11 */	bl insert__9xFXRibbonFRC5xVec3RC5xVec3ffi
 lbl_800DC1E8:
@@ -2371,7 +2373,7 @@ lbl_800DC1E8:
 /* 800DC218 000D9018  90 61 00 08 */	stw r3, 8(r1)
 /* 800DC21C 000D901C  38 61 00 08 */	addi r3, r1, 8
 /* 800DC220 000D9020  90 81 00 0C */	stw r4, 0xc(r1)
-/* 800DC224 000D9024  4B F5 C9 FD */	bl __ml__Q236tier_queue$$0Q29xFXRibbon10joint_data$$18iteratorCFv
+/* 800DC224 000D9024  4B F5 C9 FD */	bl __ml__Q236tier_queue_esc__0_Q29xFXRibbon10joint_data_esc__1_8iteratorCFv
 /* 800DC228 000D9028  38 63 00 08 */	addi r3, r3, 8
 /* 800DC22C 000D902C  38 9F 01 3C */	addi r4, r31, 0x13c
 /* 800DC230 000D9030  4B F2 EE 79 */	bl __as__5xVec3FRC5xVec3
@@ -2382,7 +2384,7 @@ lbl_800DC238:
 /* 800DC240 000D9040  80 7F 00 C0 */	lwz r3, 0xc0(r31)
 /* 800DC244 000D9044  38 A1 00 40 */	addi r5, r1, 0x40
 /* 800DC248 000D9048  C0 26 00 7C */	lfs f1, 0x7c(r6)
-/* 800DC24C 000D904C  C0 42 A2 E0 */	lfs f2, $$21420_1-_SDA2_BASE_(r2)
+/* 800DC24C 000D904C  C0 42 A2 E0 */	lfs f2, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DC250 000D9050  80 DF 00 C8 */	lwz r6, 0xc8(r31)
 /* 800DC254 000D9054  4B F5 C8 A1 */	bl insert__9xFXRibbonFRC5xVec3RC5xVec3ffi
 lbl_800DC258:
@@ -2432,7 +2434,7 @@ lbl_800DC2C8:
 /* 800DC2F0 000D90F0  38 A1 00 34 */	addi r5, r1, 0x34
 /* 800DC2F4 000D90F4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800DC2F8 000D90F8  90 C1 00 34 */	stw r6, 0x34(r1)
-/* 800DC2FC 000D90FC  C0 42 A2 E0 */	lfs f2, $$21420_1-_SDA2_BASE_(r2)
+/* 800DC2FC 000D90FC  C0 42 A2 E0 */	lfs f2, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DC300 000D9100  90 61 00 38 */	stw r3, 0x38(r1)
 /* 800DC304 000D9104  90 01 00 3C */	stw r0, 0x3c(r1)
 /* 800DC308 000D9108  80 DF 00 10 */	lwz r6, 0x10(r31)
@@ -2497,7 +2499,7 @@ empty__9xFXRibbonCFv:
 /* 800DC3D0 000D91D0  48 00 00 0C */	b lbl_800DC3DC
 lbl_800DC3D4:
 /* 800DC3D4 000D91D4  38 63 00 08 */	addi r3, r3, 8
-/* 800DC3D8 000D91D8  4B F5 CA 75 */	bl empty__36tier_queue$$0Q29xFXRibbon10joint_data$$1CFv
+/* 800DC3D8 000D91D8  4B F5 CA 75 */	bl empty__36tier_queue_esc__0_Q29xFXRibbon10joint_data_esc__1_CFv
 lbl_800DC3DC:
 /* 800DC3DC 000D91DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800DC3E0 000D91E0  7C 08 03 A6 */	mtlr r0
@@ -2536,17 +2538,17 @@ store_motion__10zLaserBeamFRQ210zLaserBeam11motion_data:
 /* 800DC458 000D9258  90 81 00 30 */	stw r4, 0x30(r1)
 /* 800DC45C 000D925C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 800DC460 000D9260  4B F2 F0 C5 */	bl length2__5xVec3CFv
-/* 800DC464 000D9264  C0 02 A2 D8 */	lfs f0, $$21418_0-_SDA2_BASE_(r2)
+/* 800DC464 000D9264  C0 02 A2 D8 */	lfs f0, _esc__2_1418_0-_SDA2_BASE_(r2)
 /* 800DC468 000D9268  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800DC46C 000D926C  4C 41 13 82 */	cror 2, 1, 2
 /* 800DC470 000D9270  40 82 00 30 */	bne lbl_800DC4A0
-/* 800DC474 000D9274  C0 02 A2 DC */	lfs f0, $$21419_1-_SDA2_BASE_(r2)
+/* 800DC474 000D9274  C0 02 A2 DC */	lfs f0, _esc__2_1419_1-_SDA2_BASE_(r2)
 /* 800DC478 000D9278  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800DC47C 000D927C  4C 40 13 82 */	cror 2, 0, 2
 /* 800DC480 000D9280  40 82 00 20 */	bne lbl_800DC4A0
-/* 800DC484 000D9284  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DC484 000D9284  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DC488 000D9288  38 7F 00 1C */	addi r3, r31, 0x1c
-/* 800DC48C 000D928C  C0 42 A2 E0 */	lfs f2, $$21420_1-_SDA2_BASE_(r2)
+/* 800DC48C 000D928C  C0 42 A2 E0 */	lfs f2, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DC490 000D9290  FC 60 08 90 */	fmr f3, f1
 /* 800DC494 000D9294  D0 3F 00 38 */	stfs f1, 0x38(r31)
 /* 800DC498 000D9298  4B F3 13 41 */	bl assign__5xVec3Ffff
@@ -2555,7 +2557,7 @@ lbl_800DC4A0:
 /* 800DC4A0 000D92A0  4B F2 EF D9 */	bl xsqrt__Ff
 /* 800DC4A4 000D92A4  D0 3F 00 38 */	stfs f1, 0x38(r31)
 /* 800DC4A8 000D92A8  38 61 00 08 */	addi r3, r1, 8
-/* 800DC4AC 000D92AC  C0 22 A2 E0 */	lfs f1, $$21420_1-_SDA2_BASE_(r2)
+/* 800DC4AC 000D92AC  C0 22 A2 E0 */	lfs f1, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DC4B0 000D92B0  38 81 00 2C */	addi r4, r1, 0x2c
 /* 800DC4B4 000D92B4  C0 1F 00 38 */	lfs f0, 0x38(r31)
 /* 800DC4B8 000D92B8  EC 21 00 24 */	fdivs f1, f1, f0
@@ -2586,9 +2588,9 @@ collide__10zLaserBeamFRQ210zLaserBeam11motion_data:
 /* 800DC50C 000D930C  38 61 00 24 */	addi r3, r1, 0x24
 /* 800DC510 000D9310  38 9F 00 1C */	addi r4, r31, 0x1c
 /* 800DC514 000D9314  4B F2 EB 95 */	bl __as__5xVec3FRC5xVec3
-/* 800DC518 000D9318  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
-/* 800DC51C 000D931C  3C 60 80 2E */	lis r3, $$21982@ha
-/* 800DC520 000D9320  38 63 DC 6C */	addi r3, r3, $$21982@l
+/* 800DC518 000D9318  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
+/* 800DC51C 000D931C  3C 60 80 2E */	lis r3, _esc__2_1982@ha
+/* 800DC520 000D9320  38 63 DC 6C */	addi r3, r3, _esc__2_1982@l
 /* 800DC524 000D9324  38 A0 0C 00 */	li r5, 0xc00
 /* 800DC528 000D9328  D0 01 00 30 */	stfs f0, 0x30(r1)
 /* 800DC52C 000D932C  38 00 00 0A */	li r0, 0xa
@@ -2606,7 +2608,7 @@ lbl_800DC548:
 /* 800DC558 000D9358  42 00 FF F0 */	bdnz lbl_800DC548
 /* 800DC55C 000D935C  80 04 00 04 */	lwz r0, 4(r4)
 /* 800DC560 000D9360  3B A1 01 60 */	addi r29, r1, 0x160
-/* 800DC564 000D9364  C0 02 A3 18 */	lfs f0, $$22031-_SDA2_BASE_(r2)
+/* 800DC564 000D9364  C0 02 A3 18 */	lfs f0, _esc__2_2031-_SDA2_BASE_(r2)
 /* 800DC568 000D9368  38 A0 01 00 */	li r5, 0x100
 /* 800DC56C 000D936C  90 06 00 04 */	stw r0, 4(r6)
 /* 800DC570 000D9370  38 00 00 02 */	li r0, 2
@@ -2621,7 +2623,7 @@ lbl_800DC548:
 /* 800DC594 000D9394  7F 83 E3 78 */	mr r3, r28
 /* 800DC598 000D9398  38 81 01 6C */	addi r4, r1, 0x16c
 /* 800DC59C 000D939C  4B F3 10 CD */	bl xVec3Add__FP5xVec3PC5xVec3PC5xVec3
-/* 800DC5A0 000D93A0  C0 22 A2 E4 */	lfs f1, $$21451_0-_SDA2_BASE_(r2)
+/* 800DC5A0 000D93A0  C0 22 A2 E4 */	lfs f1, _esc__2_1451_0-_SDA2_BASE_(r2)
 /* 800DC5A4 000D93A4  7F 83 E3 78 */	mr r3, r28
 /* 800DC5A8 000D93A8  7F 84 E3 78 */	mr r4, r28
 /* 800DC5AC 000D93AC  4B F2 D1 A5 */	bl xVec3SMul__FP5xVec3PC5xVec3f
@@ -2633,7 +2635,7 @@ lbl_800DC548:
 /* 800DC5C4 000D93C4  54 00 06 F7 */	rlwinm. r0, r0, 0, 0x1b, 0x1b
 /* 800DC5C8 000D93C8  40 82 00 14 */	bne lbl_800DC5DC
 /* 800DC5CC 000D93CC  C0 23 00 4C */	lfs f1, 0x4c(r3)
-/* 800DC5D0 000D93D0  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DC5D0 000D93D0  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DC5D4 000D93D4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800DC5D8 000D93D8  40 81 01 14 */	ble lbl_800DC6EC
 lbl_800DC5DC:
@@ -2664,9 +2666,9 @@ lbl_800DC630:
 /* 800DC638 000D9438  80 03 02 48 */	lwz r0, 0x248(r3)
 /* 800DC63C 000D943C  2C 00 00 00 */	cmpwi r0, 0
 /* 800DC640 000D9440  40 81 00 AC */	ble lbl_800DC6EC
-/* 800DC644 000D9444  3C 60 80 2E */	lis r3, $$21996@ha
+/* 800DC644 000D9444  3C 60 80 2E */	lis r3, _esc__2_1996@ha
 /* 800DC648 000D9448  38 00 00 0A */	li r0, 0xa
-/* 800DC64C 000D944C  38 63 DC C0 */	addi r3, r3, $$21996@l
+/* 800DC64C 000D944C  38 63 DC C0 */	addi r3, r3, _esc__2_1996@l
 /* 800DC650 000D9450  38 A1 00 D8 */	addi r5, r1, 0xd8
 /* 800DC654 000D9454  38 83 FF FC */	addi r4, r3, -4
 /* 800DC658 000D9458  7C 09 03 A6 */	mtctr r0
@@ -2715,7 +2717,7 @@ lbl_800DC6EC:
 /* 800DC6F8 000D94F8  54 80 06 B5 */	rlwinm. r0, r4, 0, 0x1a, 0x1a
 /* 800DC6FC 000D94FC  40 82 00 14 */	bne lbl_800DC710
 /* 800DC700 000D9500  C0 23 00 50 */	lfs f1, 0x50(r3)
-/* 800DC704 000D9504  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DC704 000D9504  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DC708 000D9508  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800DC70C 000D950C  40 81 00 08 */	ble lbl_800DC714
 lbl_800DC710:
@@ -2727,7 +2729,7 @@ lbl_800DC714:
 /* 800DC720 000D9520  54 1C 06 3E */	clrlwi r28, r0, 0x18
 lbl_800DC724:
 /* 800DC724 000D9524  C0 23 00 54 */	lfs f1, 0x54(r3)
-/* 800DC728 000D9528  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DC728 000D9528  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DC72C 000D952C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800DC730 000D9530  40 81 00 0C */	ble lbl_800DC73C
 /* 800DC734 000D9534  63 80 00 04 */	ori r0, r28, 4
@@ -2740,7 +2742,7 @@ lbl_800DC73C:
 /* 800DC74C 000D954C  38 61 00 08 */	addi r3, r1, 8
 /* 800DC750 000D9550  38 81 00 18 */	addi r4, r1, 0x18
 /* 800DC754 000D9554  38 A1 01 7C */	addi r5, r1, 0x17c
-/* 800DC758 000D9558  48 00 00 E1 */	bl __ct__Q224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_entFR5xRay3R7xCollisUiUc
+/* 800DC758 000D9558  48 00 00 E1 */	bl __ct__Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_entFR5xRay3R7xCollisUiUc
 /* 800DC75C 000D955C  57 80 07 7D */	rlwinm. r0, r28, 0, 0x1d, 0x1e
 /* 800DC760 000D9560  57 9C 06 3E */	clrlwi r28, r28, 0x18
 /* 800DC764 000D9564  41 82 00 2C */	beq lbl_800DC790
@@ -2748,12 +2750,12 @@ lbl_800DC73C:
 /* 800DC76C 000D956C  38 C1 00 08 */	addi r6, r1, 8
 /* 800DC770 000D9570  7C 85 23 78 */	mr r5, r4
 /* 800DC774 000D9574  38 6D C8 40 */	addi r3, r13, colls_grid-_SDA_BASE_
-/* 800DC778 000D9578  48 00 07 75 */	bl xGridCheckBound$$0Q224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_ent$$1__FR5xGridRC6xBoundRC7xQCDataRQ224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_ent
+/* 800DC778 000D9578  48 00 07 75 */	bl xGridCheckBound_esc__0_Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_ent_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_ent
 /* 800DC77C 000D957C  38 81 01 30 */	addi r4, r1, 0x130
 /* 800DC780 000D9580  38 C1 00 08 */	addi r6, r1, 8
 /* 800DC784 000D9584  7C 85 23 78 */	mr r5, r4
 /* 800DC788 000D9588  38 6D C8 78 */	addi r3, r13, colls_oso_grid-_SDA_BASE_
-/* 800DC78C 000D958C  48 00 07 61 */	bl xGridCheckBound$$0Q224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_ent$$1__FR5xGridRC6xBoundRC7xQCDataRQ224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_ent
+/* 800DC78C 000D958C  48 00 07 61 */	bl xGridCheckBound_esc__0_Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_ent_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_ent
 lbl_800DC790:
 /* 800DC790 000D9590  57 80 07 39 */	rlwinm. r0, r28, 0, 0x1c, 0x1c
 /* 800DC794 000D9594  41 82 00 18 */	beq lbl_800DC7AC
@@ -2761,7 +2763,7 @@ lbl_800DC790:
 /* 800DC79C 000D959C  38 C1 00 08 */	addi r6, r1, 8
 /* 800DC7A0 000D95A0  7C 85 23 78 */	mr r5, r4
 /* 800DC7A4 000D95A4  38 6D C8 B0 */	addi r3, r13, npcs_grid-_SDA_BASE_
-/* 800DC7A8 000D95A8  48 00 07 45 */	bl xGridCheckBound$$0Q224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_ent$$1__FR5xGridRC6xBoundRC7xQCDataRQ224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_ent
+/* 800DC7A8 000D95A8  48 00 07 45 */	bl xGridCheckBound_esc__0_Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_ent_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_ent
 lbl_800DC7AC:
 /* 800DC7AC 000D95AC  80 7E 00 10 */	lwz r3, 0x10(r30)
 /* 800DC7B0 000D95B0  80 03 00 10 */	lwz r0, 0x10(r3)
@@ -2801,8 +2803,8 @@ lbl_800DC824:
 /* 800DC830 000D9630  38 21 01 E0 */	addi r1, r1, 0x1e0
 /* 800DC834 000D9634  4E 80 00 20 */	blr 
 
-.global __ct__Q224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_entFR5xRay3R7xCollisUiUc
-__ct__Q224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_entFR5xRay3R7xCollisUiUc:
+.global __ct__Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_entFR5xRay3R7xCollisUiUc
+__ct__Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_entFR5xRay3R7xCollisUiUc:
 /* 800DC838 000D9638  90 83 00 00 */	stw r4, 0(r3)
 /* 800DC83C 000D963C  90 A3 00 04 */	stw r5, 4(r3)
 /* 800DC840 000D9640  90 C3 00 08 */	stw r6, 8(r3)
@@ -2821,7 +2823,7 @@ apply_damage__10zLaserBeamFRCQ210zLaserBeam11motion_dataP4xEnt:
 /* 800DC868 000D9668  80 A4 00 1C */	lwz r5, 0x1c(r4)
 /* 800DC86C 000D966C  7C 9D 23 78 */	mr r29, r4
 /* 800DC870 000D9670  7C 7E 1B 78 */	mr r30, r3
-/* 800DC874 000D9674  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DC874 000D9674  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DC878 000D9678  38 61 00 28 */	addi r3, r1, 0x28
 /* 800DC87C 000D967C  38 82 90 18 */	addi r4, r2, m_Null__5xVec3-_SDA2_BASE_
 /* 800DC880 000D9680  90 C1 00 2C */	stw r6, 0x2c(r1)
@@ -2840,7 +2842,7 @@ apply_damage__10zLaserBeamFRCQ210zLaserBeam11motion_dataP4xEnt:
 /* 800DC8B4 000D96B4  28 00 00 03 */	cmplwi r0, 3
 /* 800DC8B8 000D96B8  40 82 01 3C */	bne lbl_800DC9F4
 /* 800DC8BC 000D96BC  80 7E 00 10 */	lwz r3, 0x10(r30)
-/* 800DC8C0 000D96C0  C0 42 A2 C8 */	lfs f2, $$21408_0-_SDA2_BASE_(r2)
+/* 800DC8C0 000D96C0  C0 42 A2 C8 */	lfs f2, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DC8C4 000D96C4  C0 03 00 4C */	lfs f0, 0x4c(r3)
 /* 800DC8C8 000D96C8  FC 00 10 40 */	fcmpo cr0, f0, f2
 /* 800DC8CC 000D96CC  40 81 01 7C */	ble lbl_800DCA48
@@ -2871,7 +2873,7 @@ apply_damage__10zLaserBeamFRCQ210zLaserBeam11motion_dataP4xEnt:
 /* 800DC930 000D9730  38 61 00 10 */	addi r3, r1, 0x10
 /* 800DC934 000D9734  38 81 00 1C */	addi r4, r1, 0x1c
 /* 800DC938 000D9738  4B F9 4E 0D */	bl xVec3Dot__FPC5xVec3PC5xVec3
-/* 800DC93C 000D973C  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DC93C 000D973C  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DC940 000D9740  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800DC944 000D9744  41 80 00 14 */	blt lbl_800DC958
 /* 800DC948 000D9748  80 7E 00 10 */	lwz r3, 0x10(r30)
@@ -2922,7 +2924,7 @@ lbl_800DC9B0:
 /* 800DC9F0 000D97F0  48 00 00 58 */	b lbl_800DCA48
 lbl_800DC9F4:
 /* 800DC9F4 000D97F4  80 7E 00 10 */	lwz r3, 0x10(r30)
-/* 800DC9F8 000D97F8  C0 02 A2 C8 */	lfs f0, $$21408_0-_SDA2_BASE_(r2)
+/* 800DC9F8 000D97F8  C0 02 A2 C8 */	lfs f0, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DC9FC 000D97FC  C0 23 00 54 */	lfs f1, 0x54(r3)
 /* 800DCA00 000D9800  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800DCA04 000D9804  40 81 00 44 */	ble lbl_800DCA48
@@ -2977,36 +2979,36 @@ render_beam_card__10zLaserBeamFRCQ210zLaserBeam11motion_data10xColor_tag:
 /* 800DCAB8 000D98B8  4B F3 B0 65 */	bl xVec3Cross__FP5xVec3PC5xVec3PC5xVec3
 /* 800DCABC 000D98BC  38 61 00 64 */	addi r3, r1, 0x64
 /* 800DCAC0 000D98C0  4B F2 EA 65 */	bl length2__5xVec3CFv
-/* 800DCAC4 000D98C4  C0 02 A2 D8 */	lfs f0, $$21418_0-_SDA2_BASE_(r2)
+/* 800DCAC4 000D98C4  C0 02 A2 D8 */	lfs f0, _esc__2_1418_0-_SDA2_BASE_(r2)
 /* 800DCAC8 000D98C8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800DCACC 000D98CC  4C 41 13 82 */	cror 2, 1, 2
 /* 800DCAD0 000D98D0  40 82 00 2C */	bne lbl_800DCAFC
-/* 800DCAD4 000D98D4  C0 02 A2 DC */	lfs f0, $$21419_1-_SDA2_BASE_(r2)
+/* 800DCAD4 000D98D4  C0 02 A2 DC */	lfs f0, _esc__2_1419_1-_SDA2_BASE_(r2)
 /* 800DCAD8 000D98D8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800DCADC 000D98DC  4C 40 13 82 */	cror 2, 0, 2
 /* 800DCAE0 000D98E0  40 82 00 1C */	bne lbl_800DCAFC
-/* 800DCAE4 000D98E4  C0 42 A2 C8 */	lfs f2, $$21408_0-_SDA2_BASE_(r2)
+/* 800DCAE4 000D98E4  C0 42 A2 C8 */	lfs f2, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DCAE8 000D98E8  38 61 00 64 */	addi r3, r1, 0x64
-/* 800DCAEC 000D98EC  C0 22 A2 E0 */	lfs f1, $$21420_1-_SDA2_BASE_(r2)
+/* 800DCAEC 000D98EC  C0 22 A2 E0 */	lfs f1, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DCAF0 000D98F0  FC 60 10 90 */	fmr f3, f2
 /* 800DCAF4 000D98F4  4B F3 0C E5 */	bl assign__5xVec3Ffff
 /* 800DCAF8 000D98F8  48 00 00 18 */	b lbl_800DCB10
 lbl_800DCAFC:
 /* 800DCAFC 000D98FC  4B F2 E9 7D */	bl xsqrt__Ff
-/* 800DCB00 000D9900  C0 02 A2 E0 */	lfs f0, $$21420_1-_SDA2_BASE_(r2)
+/* 800DCB00 000D9900  C0 02 A2 E0 */	lfs f0, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DCB04 000D9904  38 61 00 64 */	addi r3, r1, 0x64
 /* 800DCB08 000D9908  EC 20 08 24 */	fdivs f1, f0, f1
 /* 800DCB0C 000D990C  4B F2 ED 95 */	bl __amu__5xVec3Ff
 lbl_800DCB10:
 /* 800DCB10 000D9910  80 BD 00 10 */	lwz r5, 0x10(r29)
 /* 800DCB14 000D9914  38 61 00 40 */	addi r3, r1, 0x40
-/* 800DCB18 000D9918  C0 22 A2 E4 */	lfs f1, $$21451_0-_SDA2_BASE_(r2)
+/* 800DCB18 000D9918  C0 22 A2 E4 */	lfs f1, _esc__2_1451_0-_SDA2_BASE_(r2)
 /* 800DCB1C 000D991C  38 81 00 64 */	addi r4, r1, 0x64
 /* 800DCB20 000D9920  C0 05 00 5C */	lfs f0, 0x5c(r5)
 /* 800DCB24 000D9924  EC 21 00 32 */	fmuls f1, f1, f0
 /* 800DCB28 000D9928  4B F2 F2 41 */	bl __ml__5xVec3CFf
-/* 800DCB2C 000D992C  80 6D C9 A0 */	lwz r3, vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
-/* 800DCB30 000D9930  80 0D C9 A4 */	lwz r0, end_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DCB2C 000D992C  80 6D C9 A0 */	lwz r3, vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
+/* 800DCB30 000D9930  80 0D C9 A4 */	lwz r0, end_vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DCB34 000D9934  80 A1 00 40 */	lwz r5, 0x40(r1)
 /* 800DCB38 000D9938  80 81 00 44 */	lwz r4, 0x44(r1)
 /* 800DCB3C 000D993C  7C 03 00 40 */	cmplw r3, r0
@@ -3015,7 +3017,7 @@ lbl_800DCB10:
 /* 800DCB48 000D9948  90 81 00 50 */	stw r4, 0x50(r1)
 /* 800DCB4C 000D994C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 800DCB50 000D9950  40 82 00 08 */	bne lbl_800DCB58
-/* 800DCB54 000D9954  4B FF D8 A1 */	bl flush_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2Fv
+/* 800DCB54 000D9954  4B FF D8 A1 */	bl flush_vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv
 lbl_800DCB58:
 /* 800DCB58 000D9958  80 1F 00 00 */	lwz r0, 0(r31)
 /* 800DCB5C 000D995C  38 61 00 10 */	addi r3, r1, 0x10
@@ -3036,28 +3038,28 @@ lbl_800DCB58:
 /* 800DCB98 000D9998  38 9E 00 04 */	addi r4, r30, 4
 /* 800DCB9C 000D999C  38 A1 00 4C */	addi r5, r1, 0x4c
 /* 800DCBA0 000D99A0  4B F2 ED 51 */	bl __mi__5xVec3CFRC5xVec3
-/* 800DCBA4 000D99A4  80 6D C9 A0 */	lwz r3, vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DCBA4 000D99A4  80 6D C9 A0 */	lwz r3, vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DCBA8 000D99A8  38 81 00 34 */	addi r4, r1, 0x34
 /* 800DCBAC 000D99AC  38 A1 00 28 */	addi r5, r1, 0x28
 /* 800DCBB0 000D99B0  38 C1 00 1C */	addi r6, r1, 0x1c
 /* 800DCBB4 000D99B4  38 E1 00 10 */	addi r7, r1, 0x10
 /* 800DCBB8 000D99B8  39 01 00 0C */	addi r8, r1, 0xc
 /* 800DCBBC 000D99BC  39 21 00 08 */	addi r9, r1, 8
-/* 800DCBC0 000D99C0  48 00 00 25 */	bl set_beam_verts__24$$2unnamed$$2zLaserBeam_cpp$$2FP18RxObjSpace3DVertexRC5xVec3RC5xVec3RC5xVec3RC5xVec310xColor_tag10xColor_tag
-/* 800DCBC4 000D99C4  80 6D C9 A0 */	lwz r3, vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DCBC0 000D99C0  48 00 00 25 */	bl set_beam_verts__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FP18RxObjSpace3DVertexRC5xVec3RC5xVec3RC5xVec3RC5xVec310xColor_tag10xColor_tag
+/* 800DCBC4 000D99C4  80 6D C9 A0 */	lwz r3, vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DCBC8 000D99C8  38 03 00 90 */	addi r0, r3, 0x90
-/* 800DCBCC 000D99CC  90 0D C9 A0 */	stw r0, vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DCBCC 000D99CC  90 0D C9 A0 */	stw r0, vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DCBD0 000D99D0  BB A1 00 74 */	lmw r29, 0x74(r1)
 /* 800DCBD4 000D99D4  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 800DCBD8 000D99D8  7C 08 03 A6 */	mtlr r0
 /* 800DCBDC 000D99DC  38 21 00 80 */	addi r1, r1, 0x80
 /* 800DCBE0 000D99E0  4E 80 00 20 */	blr 
 
-.global set_beam_verts__24$$2unnamed$$2zLaserBeam_cpp$$2FP18RxObjSpace3DVertexRC5xVec3RC5xVec3RC5xVec3RC5xVec310xColor_tag10xColor_tag
-set_beam_verts__24$$2unnamed$$2zLaserBeam_cpp$$2FP18RxObjSpace3DVertexRC5xVec3RC5xVec3RC5xVec3RC5xVec310xColor_tag10xColor_tag:
+.global set_beam_verts__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FP18RxObjSpace3DVertexRC5xVec3RC5xVec3RC5xVec3RC5xVec310xColor_tag10xColor_tag
+set_beam_verts__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FP18RxObjSpace3DVertexRC5xVec3RC5xVec3RC5xVec3RC5xVec310xColor_tag10xColor_tag:
 /* 800DCBE4 000D99E4  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800DCBE8 000D99E8  7C 08 02 A6 */	mflr r0
-/* 800DCBEC 000D99EC  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DCBEC 000D99EC  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DCBF0 000D99F0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 800DCBF4 000D99F4  80 08 00 00 */	lwz r0, 0(r8)
 /* 800DCBF8 000D99F8  FC 40 08 90 */	fmr f2, f1
@@ -3070,39 +3072,39 @@ set_beam_verts__24$$2unnamed$$2zLaserBeam_cpp$$2FP18RxObjSpace3DVertexRC5xVec3RC
 /* 800DCC14 000D9A14  7D 3F 4B 78 */	mr r31, r9
 /* 800DCC18 000D9A18  38 A1 00 14 */	addi r5, r1, 0x14
 /* 800DCC1C 000D9A1C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800DCC20 000D9A20  48 00 00 79 */	bl set_vert__24$$2unnamed$$2zLaserBeam_cpp$$2FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag
+/* 800DCC20 000D9A20  48 00 00 79 */	bl set_vert__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag
 /* 800DCC24 000D9A24  80 1F 00 00 */	lwz r0, 0(r31)
 /* 800DCC28 000D9A28  7F 64 DB 78 */	mr r4, r27
-/* 800DCC2C 000D9A2C  C0 22 A2 C8 */	lfs f1, $$21408_0-_SDA2_BASE_(r2)
+/* 800DCC2C 000D9A2C  C0 22 A2 C8 */	lfs f1, _esc__2_1408_0-_SDA2_BASE_(r2)
 /* 800DCC30 000D9A30  38 7A 00 24 */	addi r3, r26, 0x24
 /* 800DCC34 000D9A34  90 01 00 10 */	stw r0, 0x10(r1)
 /* 800DCC38 000D9A38  38 A1 00 10 */	addi r5, r1, 0x10
-/* 800DCC3C 000D9A3C  C0 42 A2 E0 */	lfs f2, $$21420_1-_SDA2_BASE_(r2)
-/* 800DCC40 000D9A40  48 00 00 59 */	bl set_vert__24$$2unnamed$$2zLaserBeam_cpp$$2FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag
+/* 800DCC3C 000D9A3C  C0 42 A2 E0 */	lfs f2, _esc__2_1420_1-_SDA2_BASE_(r2)
+/* 800DCC40 000D9A40  48 00 00 59 */	bl set_vert__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag
 /* 800DCC44 000D9A44  80 1E 00 00 */	lwz r0, 0(r30)
 /* 800DCC48 000D9A48  7F 84 E3 78 */	mr r4, r28
-/* 800DCC4C 000D9A4C  C0 22 A2 E0 */	lfs f1, $$21420_1-_SDA2_BASE_(r2)
+/* 800DCC4C 000D9A4C  C0 22 A2 E0 */	lfs f1, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DCC50 000D9A50  38 7A 00 48 */	addi r3, r26, 0x48
 /* 800DCC54 000D9A54  90 01 00 0C */	stw r0, 0xc(r1)
 /* 800DCC58 000D9A58  38 A1 00 0C */	addi r5, r1, 0xc
-/* 800DCC5C 000D9A5C  C0 42 A2 C8 */	lfs f2, $$21408_0-_SDA2_BASE_(r2)
-/* 800DCC60 000D9A60  48 00 00 39 */	bl set_vert__24$$2unnamed$$2zLaserBeam_cpp$$2FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag
-/* 800DCC64 000D9A64  C0 22 A2 E0 */	lfs f1, $$21420_1-_SDA2_BASE_(r2)
+/* 800DCC5C 000D9A5C  C0 42 A2 C8 */	lfs f2, _esc__2_1408_0-_SDA2_BASE_(r2)
+/* 800DCC60 000D9A60  48 00 00 39 */	bl set_vert__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag
+/* 800DCC64 000D9A64  C0 22 A2 E0 */	lfs f1, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DCC68 000D9A68  7F A4 EB 78 */	mr r4, r29
 /* 800DCC6C 000D9A6C  80 1F 00 00 */	lwz r0, 0(r31)
 /* 800DCC70 000D9A70  38 7A 00 6C */	addi r3, r26, 0x6c
 /* 800DCC74 000D9A74  FC 40 08 90 */	fmr f2, f1
 /* 800DCC78 000D9A78  38 A1 00 08 */	addi r5, r1, 8
 /* 800DCC7C 000D9A7C  90 01 00 08 */	stw r0, 8(r1)
-/* 800DCC80 000D9A80  48 00 00 19 */	bl set_vert__24$$2unnamed$$2zLaserBeam_cpp$$2FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag
+/* 800DCC80 000D9A80  48 00 00 19 */	bl set_vert__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag
 /* 800DCC84 000D9A84  BB 41 00 18 */	lmw r26, 0x18(r1)
 /* 800DCC88 000D9A88  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 800DCC8C 000D9A8C  7C 08 03 A6 */	mtlr r0
 /* 800DCC90 000D9A90  38 21 00 30 */	addi r1, r1, 0x30
 /* 800DCC94 000D9A94  4E 80 00 20 */	blr 
 
-.global set_vert__24$$2unnamed$$2zLaserBeam_cpp$$2FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag
-set_vert__24$$2unnamed$$2zLaserBeam_cpp$$2FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag:
+.global set_vert__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag
+set_vert__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_FR18RxObjSpace3DVertexRC5xVec3ff10xColor_tag:
 /* 800DCC98 000D9A98  C0 04 00 00 */	lfs f0, 0(r4)
 /* 800DCC9C 000D9A9C  C0 64 00 04 */	lfs f3, 4(r4)
 /* 800DCCA0 000D9AA0  D0 03 00 00 */	stfs f0, 0(r3)
@@ -3132,24 +3134,24 @@ render__10zLaserBeamFv:
 /* 800DCCF4 000D9AF4  28 00 00 00 */	cmplwi r0, 0
 /* 800DCCF8 000D9AF8  41 82 01 58 */	beq lbl_800DCE50
 /* 800DCCFC 000D9AFC  80 7F 00 10 */	lwz r3, 0x10(r31)
-/* 800DCD00 000D9B00  88 0D C9 AC */	lbz r0, brightening__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DCD00 000D9B00  88 0D C9 AC */	lbz r0, brightening__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DCD04 000D9B04  88 83 00 73 */	lbz r4, 0x73(r3)
 /* 800DCD08 000D9B08  30 64 FF FF */	addic r3, r4, -1
 /* 800DCD0C 000D9B0C  7F A3 21 10 */	subfe r29, r3, r4
 /* 800DCD10 000D9B10  57 A3 06 3E */	clrlwi r3, r29, 0x18
 /* 800DCD14 000D9B14  7C 03 00 40 */	cmplw r3, r0
 /* 800DCD18 000D9B18  41 82 00 18 */	beq lbl_800DCD30
-/* 800DCD1C 000D9B1C  4B FF D6 D9 */	bl flush_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2Fv
+/* 800DCD1C 000D9B1C  4B FF D6 D9 */	bl flush_vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv
 /* 800DCD20 000D9B20  7F A3 EB 78 */	mr r3, r29
 /* 800DCD24 000D9B24  38 80 00 00 */	li r4, 0
 /* 800DCD28 000D9B28  4B F4 47 25 */	bl xFXHighDynamicRangeBrighten__Fbb
-/* 800DCD2C 000D9B2C  9B AD C9 AC */	stb r29, brightening__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DCD2C 000D9B2C  9B AD C9 AC */	stb r29, brightening__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_800DCD30:
-/* 800DCD30 000D9B30  80 6D C9 B0 */	lwz r3, current_raster__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DCD30 000D9B30  80 6D C9 B0 */	lwz r3, current_raster__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800DCD34 000D9B34  80 1F 00 C4 */	lwz r0, 0xc4(r31)
 /* 800DCD38 000D9B38  7C 03 00 40 */	cmplw r3, r0
 /* 800DCD3C 000D9B3C  41 82 00 28 */	beq lbl_800DCD64
-/* 800DCD40 000D9B40  4B FF D6 B5 */	bl flush_vert_buffer__24$$2unnamed$$2zLaserBeam_cpp$$2Fv
+/* 800DCD40 000D9B40  4B FF D6 B5 */	bl flush_vert_buffer__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_Fv
 /* 800DCD44 000D9B44  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
 /* 800DCD48 000D9B48  38 60 00 01 */	li r3, 1
 /* 800DCD4C 000D9B4C  80 9F 00 C4 */	lwz r4, 0xc4(r31)
@@ -3157,7 +3159,7 @@ lbl_800DCD30:
 /* 800DCD54 000D9B54  7D 89 03 A6 */	mtctr r12
 /* 800DCD58 000D9B58  4E 80 04 21 */	bctrl 
 /* 800DCD5C 000D9B5C  80 1F 00 C4 */	lwz r0, 0xc4(r31)
-/* 800DCD60 000D9B60  90 0D C9 B0 */	stw r0, current_raster__24$$2unnamed$$2zLaserBeam_cpp$$2-_SDA_BASE_(r13)
+/* 800DCD60 000D9B60  90 0D C9 B0 */	stw r0, current_raster__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_800DCD64:
 /* 800DCD64 000D9B64  80 7F 03 0C */	lwz r3, 0x30c(r31)
 /* 800DCD68 000D9B68  3C C0 43 30 */	lis r6, 0x4330
@@ -3167,15 +3169,15 @@ lbl_800DCD64:
 /* 800DCD78 000D9B78  3B C0 00 00 */	li r30, 0
 /* 800DCD7C 000D9B7C  88 9F 00 D2 */	lbz r4, 0xd2(r31)
 /* 800DCD80 000D9B80  90 C1 00 10 */	stw r6, 0x10(r1)
-/* 800DCD84 000D9B84  C8 82 A2 D0 */	lfd f4, $$21411-_SDA2_BASE_(r2)
+/* 800DCD84 000D9B84  C8 82 A2 D0 */	lfd f4, _esc__2_1411-_SDA2_BASE_(r2)
 /* 800DCD88 000D9B88  C8 01 00 10 */	lfd f0, 0x10(r1)
-/* 800DCD8C 000D9B8C  C0 22 A2 E0 */	lfs f1, $$21420_1-_SDA2_BASE_(r2)
+/* 800DCD8C 000D9B8C  C0 22 A2 E0 */	lfs f1, _esc__2_1420_1-_SDA2_BASE_(r2)
 /* 800DCD90 000D9B90  EC 00 20 28 */	fsubs f0, f0, f4
 /* 800DCD94 000D9B94  88 7F 00 D3 */	lbz r3, 0xd3(r31)
-/* 800DCD98 000D9B98  80 A2 EF C8 */	lwz r5, $$22211_0-_SDA2_BASE_(r2)
+/* 800DCD98 000D9B98  80 A2 EF C8 */	lwz r5, _esc__2_2211_0-_SDA2_BASE_(r2)
 /* 800DCD9C 000D9B9C  90 01 00 1C */	stw r0, 0x1c(r1)
 /* 800DCDA0 000D9BA0  EC A1 00 24 */	fdivs f5, f1, f0
-/* 800DCDA4 000D9BA4  C0 62 A2 E4 */	lfs f3, $$21451_0-_SDA2_BASE_(r2)
+/* 800DCDA4 000D9BA4  C0 62 A2 E4 */	lfs f3, _esc__2_1451_0-_SDA2_BASE_(r2)
 /* 800DCDA8 000D9BA8  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 800DCDAC 000D9BAC  88 1F 00 D4 */	lbz r0, 0xd4(r31)
 /* 800DCDB0 000D9BB0  C8 01 00 18 */	lfd f0, 0x18(r1)
@@ -3272,8 +3274,8 @@ cb_dispatch__10zLaserBeamFP5xBaseP5xBaseUiPCfP5xBaseUi:
 /* 800DCEE4 000D9CE4  38 21 00 10 */	addi r1, r1, 0x10
 /* 800DCEE8 000D9CE8  4E 80 00 20 */	blr 
 
-.global xGridCheckBound$$0Q224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_ent$$1__FR5xGridRC6xBoundRC7xQCDataRQ224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_ent
-xGridCheckBound$$0Q224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_ent$$1__FR5xGridRC6xBoundRC7xQCDataRQ224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_ent:
+.global xGridCheckBound_esc__0_Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_ent_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_ent
+xGridCheckBound_esc__0_Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_ent_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_ent:
 /* 800DCEEC 000D9CEC  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 800DCEF0 000D9CF0  7C 08 02 A6 */	mflr r0
 /* 800DCEF4 000D9CF4  7C 89 23 78 */	mr r9, r4
@@ -3304,7 +3306,7 @@ lbl_800DCF44:
 /* 800DCF54 000D9D54  41 82 00 24 */	beq lbl_800DCF78
 /* 800DCF58 000D9D58  80 9F 00 00 */	lwz r4, 0(r31)
 /* 800DCF5C 000D9D5C  7F 83 E3 78 */	mr r3, r28
-/* 800DCF60 000D9D60  48 00 00 81 */	bl __cl__Q224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_entFR4xEnt
+/* 800DCF60 000D9D60  48 00 00 81 */	bl __cl__Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_entFR4xEnt
 /* 800DCF64 000D9D64  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 800DCF68 000D9D68  40 82 00 10 */	bne lbl_800DCF78
 /* 800DCF6C 000D9D6C  38 61 00 18 */	addi r3, r1, 0x18
@@ -3340,8 +3342,8 @@ lbl_800DCFCC:
 /* 800DCFD8 000D9DD8  38 21 00 60 */	addi r1, r1, 0x60
 /* 800DCFDC 000D9DDC  4E 80 00 20 */	blr 
 
-.global __cl__Q224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_entFR4xEnt
-__cl__Q224$$2unnamed$$2zLaserBeam_cpp$$216cb_beam_hits_entFR4xEnt:
+.global __cl__Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_entFR4xEnt
+__cl__Q224_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_16cb_beam_hits_entFR4xEnt:
 /* 800DCFE0 000D9DE0  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 800DCFE4 000D9DE4  7C 08 02 A6 */	mflr r0
 /* 800DCFE8 000D9DE8  90 01 00 74 */	stw r0, 0x74(r1)
@@ -3427,3 +3429,6 @@ lbl_800DD100:
 /* 800DD108 000D9F08  7C 08 03 A6 */	mtlr r0
 /* 800DD10C 000D9F0C  38 21 00 70 */	addi r1, r1, 0x70
 /* 800DD110 000D9F10  4E 80 00 20 */	blr 
+
+.endif
+

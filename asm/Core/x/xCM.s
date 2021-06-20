@@ -2,8 +2,8 @@
 
 .section .rodata
 
-.global $$2stringBase0_2
-$$2stringBase0_2:
+.global _esc__2_stringBase0_2
+_esc__2_stringBase0_2:
 	.incbin "baserom.dol", 0x2CE8C0, 0x78
 
 .section .sbss
@@ -23,8 +23,8 @@ credits_parentID:
 
 .section .sbss2
 
-.global $$21057_4
-$$21057_4:
+.global _esc__2_1057_4
+_esc__2_1057_4:
 	.skip 0x4
 .global lbl_803D8594
 lbl_803D8594:
@@ -35,8 +35,8 @@ lbl_803D8598:
 .global lbl_803D859C
 lbl_803D859C:
 	.skip 0x4
-.global $$21061_3
-$$21061_3:
+.global _esc__2_1061_3
+_esc__2_1061_3:
 	.skip 0x4
 .global lbl_803D85A4
 lbl_803D85A4:
@@ -47,8 +47,8 @@ lbl_803D85A8:
 .global lbl_803D85AC
 lbl_803D85AC:
 	.skip 0x4
-.global $$21073_1
-$$21073_1:
+.global _esc__2_1073_1
+_esc__2_1073_1:
 	.skip 0x4
 .global lbl_803D85B4
 lbl_803D85B4:
@@ -59,8 +59,8 @@ lbl_803D85B8:
 .global lbl_803D85BC
 lbl_803D85BC:
 	.skip 0x4
-.global $$21076_1
-$$21076_1:
+.global _esc__2_1076_1
+_esc__2_1076_1:
 	.skip 0x4
 .global lbl_803D85C4
 lbl_803D85C4:
@@ -95,45 +95,47 @@ credits_time:
 .global screen_bounds
 screen_bounds:
 	.incbin "baserom.dol", 0x32E878, 0x10
-.global $$2876_0
-$$2876_0:
+.global _esc__2_876_0
+_esc__2_876_0:
 	.incbin "baserom.dol", 0x32E888, 0x4
-.global $$2878
-$$2878:
+.global _esc__2_878
+_esc__2_878:
 	.incbin "baserom.dol", 0x32E88C, 0x4
-.global $$2880_0
-$$2880_0:
+.global _esc__2_880_0
+_esc__2_880_0:
 	.incbin "baserom.dol", 0x32E890, 0x4
-.global $$2902_1
-$$2902_1:
+.global _esc__2_902_1
+_esc__2_902_1:
 	.incbin "baserom.dol", 0x32E894, 0x4
-.global $$2903_0
-$$2903_0:
+.global _esc__2_903_0
+_esc__2_903_0:
 	.incbin "baserom.dol", 0x32E898, 0x8
-.global $$2919_0
-$$2919_0:
+.global _esc__2_919_0
+_esc__2_919_0:
 	.incbin "baserom.dol", 0x32E8A0, 0x8
-.global $$21174_1
-$$21174_1:
+.global _esc__2_1174_1
+_esc__2_1174_1:
 	.incbin "baserom.dol", 0x32E8A8, 0x4
-.global $$21175_0
-$$21175_0:
+.global _esc__2_1175_0
+_esc__2_1175_0:
 	.incbin "baserom.dol", 0x32E8AC, 0x4
-.global $$21176_0
-$$21176_0:
+.global _esc__2_1176_0
+_esc__2_1176_0:
 	.incbin "baserom.dol", 0x32E8B0, 0x4
-.global $$21177_0
-$$21177_0:
+.global _esc__2_1177_0
+_esc__2_1177_0:
 	.incbin "baserom.dol", 0x32E8B4, 0x4
-.global $$21216
-$$21216:
+.global _esc__2_1216
+_esc__2_1216:
 	.incbin "baserom.dol", 0x32E8B8, 0x8
-.global $$21218
-$$21218:
+.global _esc__2_1218
+_esc__2_1218:
 	.incbin "baserom.dol", 0x32E8C0, 0x8
-.global $$21242
-$$21242:
+.global _esc__2_1242
+_esc__2_1242:
 	.incbin "baserom.dol", 0x32E8C8, 0x8
+
+.if 0
 
 .section .text
 
@@ -223,7 +225,7 @@ lbl_80015350:
 /* 80015354 00012154  28 00 00 18 */	cmplwi r0, 0x18
 /* 80015358 00012158  40 81 00 3C */	ble lbl_80015394
 /* 8001535C 0001215C  38 1F 00 18 */	addi r0, r31, 0x18
-/* 80015360 00012160  C0 02 81 A8 */	lfs f0, $$2876_0-_SDA2_BASE_(r2)
+/* 80015360 00012160  C0 02 81 A8 */	lfs f0, _esc__2_876_0-_SDA2_BASE_(r2)
 /* 80015364 00012164  90 1F 00 14 */	stw r0, 0x14(r31)
 /* 80015368 00012168  C0 3B 00 3C */	lfs f1, 0x3c(r27)
 /* 8001536C 0001216C  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -232,7 +234,7 @@ lbl_80015350:
 /* 80015378 00012178  D0 3B 00 3C */	stfs f1, 0x3c(r27)
 lbl_8001537C:
 /* 8001537C 0001217C  C0 3B 00 40 */	lfs f1, 0x40(r27)
-/* 80015380 00012180  C0 02 81 A8 */	lfs f0, $$2876_0-_SDA2_BASE_(r2)
+/* 80015380 00012180  C0 02 81 A8 */	lfs f0, _esc__2_876_0-_SDA2_BASE_(r2)
 /* 80015384 00012184  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80015388 00012188  40 81 00 0C */	ble lbl_80015394
 /* 8001538C 0001218C  48 00 00 69 */	bl NSCREENY__Ff
@@ -268,13 +270,13 @@ lbl_800153E0:
 
 .global NSCREENY__Ff
 NSCREENY__Ff:
-/* 800153F4 000121F4  C0 02 81 AC */	lfs f0, $$2878-_SDA2_BASE_(r2)
+/* 800153F4 000121F4  C0 02 81 AC */	lfs f0, _esc__2_878-_SDA2_BASE_(r2)
 /* 800153F8 000121F8  EC 20 00 72 */	fmuls f1, f0, f1
 /* 800153FC 000121FC  4E 80 00 20 */	blr 
 
 .global NSCREENX__Ff
 NSCREENX__Ff:
-/* 80015400 00012200  C0 02 81 B0 */	lfs f0, $$2880_0-_SDA2_BASE_(r2)
+/* 80015400 00012200  C0 02 81 B0 */	lfs f0, _esc__2_880_0-_SDA2_BASE_(r2)
 /* 80015404 00012204  EC 20 00 72 */	fmuls f1, f0, f1
 /* 80015408 00012208  4E 80 00 20 */	blr 
 
@@ -282,12 +284,12 @@ NSCREENX__Ff:
 Im2DRenderQuadAlpha__Fffffffff:
 /* 8001540C 0001220C  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 80015410 00012210  7C 08 02 A6 */	mflr r0
-/* 80015414 00012214  C0 E2 81 B4 */	lfs f7, $$2902_1-_SDA2_BASE_(r2)
+/* 80015414 00012214  C0 E2 81 B4 */	lfs f7, _esc__2_902_1-_SDA2_BASE_(r2)
 /* 80015418 00012218  38 60 00 04 */	li r3, 4
 /* 8001541C 0001221C  90 01 00 74 */	stw r0, 0x74(r1)
 /* 80015420 00012220  38 00 00 FF */	li r0, 0xff
 /* 80015424 00012224  EC A7 01 72 */	fmuls f5, f7, f5
-/* 80015428 00012228  C0 02 81 B8 */	lfs f0, $$2903_0-_SDA2_BASE_(r2)
+/* 80015428 00012228  C0 02 81 B8 */	lfs f0, _esc__2_903_0-_SDA2_BASE_(r2)
 /* 8001542C 0001222C  D0 21 00 08 */	stfs f1, 8(r1)
 /* 80015430 00012230  38 81 00 08 */	addi r4, r1, 8
 /* 80015434 00012234  EC E0 40 2A */	fadds f7, f0, f8
@@ -340,8 +342,8 @@ Im2DRenderQuadAlpha__Fffffffff:
 /* 800154F0 000122F0  38 21 00 70 */	addi r1, r1, 0x70
 /* 800154F4 000122F4  4E 80 00 20 */	blr 
 
-.global xCMScaleBounds__FR13basic_rect$$0f$$1
-xCMScaleBounds__FR13basic_rect$$0f$$1:
+.global xCMScaleBounds__FR13basic_rect_esc__0_f_esc__1_
+xCMScaleBounds__FR13basic_rect_esc__0_f_esc__1_:
 /* 800154F8 000122F8  C0 43 00 00 */	lfs f2, 0(r3)
 /* 800154FC 000122FC  C0 2D 80 64 */	lfs f1, destWidth-_SDA_BASE_(r13)
 /* 80015500 00012300  C0 0D B7 90 */	lfs f0, destX-_SDA_BASE_(r13)
@@ -394,7 +396,7 @@ xCMcolor_scale__F10xColor_tagf:
 /* 800155A4 000123A4  3C C0 43 30 */	lis r6, 0x4330
 /* 800155A8 000123A8  90 01 00 54 */	stw r0, 0x54(r1)
 /* 800155AC 000123AC  38 61 00 0C */	addi r3, r1, 0xc
-/* 800155B0 000123B0  C8 62 81 C0 */	lfd f3, $$2919_0-_SDA2_BASE_(r2)
+/* 800155B0 000123B0  C8 62 81 C0 */	lfd f3, _esc__2_919_0-_SDA2_BASE_(r2)
 /* 800155B4 000123B4  91 01 00 08 */	stw r8, 8(r1)
 /* 800155B8 000123B8  88 01 00 0B */	lbz r0, 0xb(r1)
 /* 800155BC 000123BC  90 C1 00 10 */	stw r6, 0x10(r1)
@@ -478,9 +480,9 @@ lbl_800156C8:
 /* 800156D4 000124D4  40 82 00 08 */	bne lbl_800156DC
 /* 800156D8 000124D8  4B FF FB AD */	bl xCMprep__FP12xCreditsData
 lbl_800156DC:
-/* 800156DC 000124DC  3C 60 80 2D */	lis r3, $$2stringBase0_2@ha
+/* 800156DC 000124DC  3C 60 80 2D */	lis r3, _esc__2_stringBase0_2@ha
 /* 800156E0 000124E0  FC 20 E0 90 */	fmr f1, f28
-/* 800156E4 000124E4  38 63 18 C0 */	addi r3, r3, $$2stringBase0_2@l
+/* 800156E4 000124E4  38 63 18 C0 */	addi r3, r3, _esc__2_stringBase0_2@l
 /* 800156E8 000124E8  38 63 00 5D */	addi r3, r3, 0x5d
 /* 800156EC 000124EC  4C C6 32 42 */	crset 6
 /* 800156F0 000124F0  48 00 8F 95 */	bl xprintf__FPCce
@@ -518,7 +520,7 @@ lbl_80015710:
 /* 80015768 00012568  FC 01 18 40 */	fcmpo cr0, f1, f3
 /* 8001576C 0001256C  40 81 00 0C */	ble lbl_80015778
 lbl_80015770:
-/* 80015770 00012570  C3 A2 81 C8 */	lfs f29, $$21174_1-_SDA2_BASE_(r2)
+/* 80015770 00012570  C3 A2 81 C8 */	lfs f29, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 80015774 00012574  48 00 00 60 */	b lbl_800157D4
 lbl_80015778:
 /* 80015778 00012578  FC 01 10 40 */	fcmpo cr0, f1, f2
@@ -545,7 +547,7 @@ lbl_800157A4:
 /* 800157C8 000125C8  EF A1 00 24 */	fdivs f29, f1, f0
 /* 800157CC 000125CC  48 00 00 08 */	b lbl_800157D4
 lbl_800157D0:
-/* 800157D0 000125D0  C3 A2 81 B8 */	lfs f29, $$2903_0-_SDA2_BASE_(r2)
+/* 800157D0 000125D0  C3 A2 81 B8 */	lfs f29, _esc__2_903_0-_SDA2_BASE_(r2)
 lbl_800157D4:
 /* 800157D4 000125D4  A0 1C 00 02 */	lhz r0, 2(r28)
 /* 800157D8 000125D8  2C 00 00 04 */	cmpwi r0, 4
@@ -594,7 +596,7 @@ lbl_80015834:
 /* 80015878 00012678  38 81 00 40 */	addi r4, r1, 0x40
 /* 8001587C 0001267C  90 A1 04 FC */	stw r5, 0x4fc(r1)
 /* 80015880 00012680  38 60 00 0A */	li r3, 0xa
-/* 80015884 00012684  C8 C2 81 C0 */	lfd f6, $$2919_0-_SDA2_BASE_(r2)
+/* 80015884 00012684  C8 C2 81 C0 */	lfd f6, _esc__2_919_0-_SDA2_BASE_(r2)
 /* 80015888 00012688  90 01 04 F8 */	stw r0, 0x4f8(r1)
 /* 8001588C 0001268C  C0 41 00 50 */	lfs f2, 0x50(r1)
 /* 80015890 00012690  C8 01 04 F8 */	lfd f0, 0x4f8(r1)
@@ -644,27 +646,27 @@ lbl_80015834:
 /* 80015940 00012740  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 80015944 00012744  7D 89 03 A6 */	mtctr r12
 /* 80015948 00012748  4E 80 04 21 */	bctrl 
-/* 8001594C 0001274C  C0 C2 81 C8 */	lfs f6, $$21174_1-_SDA2_BASE_(r2)
+/* 8001594C 0001274C  C0 C2 81 C8 */	lfs f6, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 80015950 00012750  FC A0 E8 90 */	fmr f5, f29
 /* 80015954 00012754  C0 21 00 50 */	lfs f1, 0x50(r1)
 /* 80015958 00012758  FD 00 30 90 */	fmr f8, f6
 /* 8001595C 0001275C  C0 41 00 48 */	lfs f2, 0x48(r1)
 /* 80015960 00012760  C0 61 00 4C */	lfs f3, 0x4c(r1)
 /* 80015964 00012764  C0 81 00 44 */	lfs f4, 0x44(r1)
-/* 80015968 00012768  C0 E2 81 CC */	lfs f7, $$21175_0-_SDA2_BASE_(r2)
+/* 80015968 00012768  C0 E2 81 CC */	lfs f7, _esc__2_1175_0-_SDA2_BASE_(r2)
 /* 8001596C 0001276C  4B FF FA A1 */	bl Im2DRenderQuadAlpha__Fffffffff
 /* 80015970 00012770  80 8D 91 C4 */	lwz r4, FB_XRES-_SDA_BASE_(r13)
 /* 80015974 00012774  3C 00 43 30 */	lis r0, 0x4330
 /* 80015978 00012778  80 AD 91 C8 */	lwz r5, FB_YRES-_SDA_BASE_(r13)
 /* 8001597C 0001277C  FC 20 E8 90 */	fmr f1, f29
-/* 80015980 00012780  C0 42 81 B8 */	lfs f2, $$2903_0-_SDA2_BASE_(r2)
+/* 80015980 00012780  C0 42 81 B8 */	lfs f2, _esc__2_903_0-_SDA2_BASE_(r2)
 /* 80015984 00012784  38 61 00 28 */	addi r3, r1, 0x28
 /* 80015988 00012788  C0 1C 00 44 */	lfs f0, 0x44(r28)
 /* 8001598C 0001278C  90 81 05 1C */	stw r4, 0x51c(r1)
 /* 80015990 00012790  EC 42 00 28 */	fsubs f2, f2, f0
-/* 80015994 00012794  C0 62 81 D0 */	lfs f3, $$21176_0-_SDA2_BASE_(r2)
+/* 80015994 00012794  C0 62 81 D0 */	lfs f3, _esc__2_1176_0-_SDA2_BASE_(r2)
 /* 80015998 00012798  90 01 05 18 */	stw r0, 0x518(r1)
-/* 8001599C 0001279C  C8 82 81 C0 */	lfd f4, $$2919_0-_SDA2_BASE_(r2)
+/* 8001599C 0001279C  C8 82 81 C0 */	lfd f4, _esc__2_919_0-_SDA2_BASE_(r2)
 /* 800159A0 000127A0  C8 01 05 18 */	lfd f0, 0x518(r1)
 /* 800159A4 000127A4  EF E3 00 B2 */	fmuls f31, f3, f2
 /* 800159A8 000127A8  90 A1 05 24 */	stw r5, 0x524(r1)
@@ -695,7 +697,7 @@ lbl_80015834:
 /* 80015A0C 0001280C  80 1C 00 30 */	lwz r0, 0x30(r28)
 /* 80015A10 00012810  90 01 00 28 */	stw r0, 0x28(r1)
 /* 80015A14 00012814  4B FF FB 85 */	bl xCMcolor_scale__F10xColor_tagf
-/* 80015A18 00012818  80 82 E8 70 */	lwz r4, $$21057_4-_SDA2_BASE_(r2)
+/* 80015A18 00012818  80 82 E8 70 */	lwz r4, _esc__2_1057_4-_SDA2_BASE_(r2)
 /* 80015A1C 0001281C  80 02 E8 74 */	lwz r0, lbl_803D8594-_SDA2_BASE_(r2)
 /* 80015A20 00012820  90 81 00 84 */	stw r4, 0x84(r1)
 /* 80015A24 00012824  80 82 E8 78 */	lwz r4, lbl_803D8598-_SDA2_BASE_(r2)
@@ -711,7 +713,7 @@ lbl_80015834:
 /* 80015A4C 0001284C  D0 01 00 8C */	stfs f0, 0x8c(r1)
 /* 80015A50 00012850  C0 1C 00 48 */	lfs f0, 0x48(r28)
 /* 80015A54 00012854  D0 01 00 90 */	stfs f0, 0x90(r1)
-/* 80015A58 00012858  4B FF FA A1 */	bl xCMScaleBounds__FR13basic_rect$$0f$$1
+/* 80015A58 00012858  4B FF FA A1 */	bl xCMScaleBounds__FR13basic_rect_esc__0_f_esc__1_
 /* 80015A5C 0001285C  80 62 82 3C */	lwz r3, g_BLACK-_SDA2_BASE_(r2)
 /* 80015A60 00012860  80 01 00 38 */	lwz r0, 0x38(r1)
 /* 80015A64 00012864  90 61 00 20 */	stw r3, 0x20(r1)
@@ -724,17 +726,17 @@ lbl_80015834:
 /* 80015A80 00012880  4B FF F9 81 */	bl NSCREENX__Ff
 /* 80015A84 00012884  C0 0D 80 64 */	lfs f0, destWidth-_SDA_BASE_(r13)
 /* 80015A88 00012888  FC 40 D8 90 */	fmr f2, f27
-/* 80015A8C 0001288C  C0 82 81 D4 */	lfs f4, $$21177_0-_SDA2_BASE_(r2)
+/* 80015A8C 0001288C  C0 82 81 D4 */	lfs f4, _esc__2_1177_0-_SDA2_BASE_(r2)
 /* 80015A90 00012890  38 61 01 24 */	addi r3, r1, 0x124
 /* 80015A94 00012894  EC 20 00 72 */	fmuls f1, f0, f1
 /* 80015A98 00012898  80 9C 00 2C */	lwz r4, 0x2c(r28)
 /* 80015A9C 0001289C  FC A0 20 90 */	fmr f5, f4
-/* 80015AA0 000128A0  C0 62 81 C8 */	lfs f3, $$21174_1-_SDA2_BASE_(r2)
+/* 80015AA0 000128A0  C0 62 81 C8 */	lfs f3, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 80015AA4 000128A4  38 A1 00 24 */	addi r5, r1, 0x24
 /* 80015AA8 000128A8  38 E1 00 20 */	addi r7, r1, 0x20
 /* 80015AAC 000128AC  38 C2 81 98 */	addi r6, r2, screen_bounds-_SDA2_BASE_
-/* 80015AB0 000128B0  48 00 06 E5 */	bl create__5xfontFUifff10xColor_tagRC13basic_rect$$0f$$110xColor_tagff
-/* 80015AB4 000128B4  C0 22 81 C8 */	lfs f1, $$21174_1-_SDA2_BASE_(r2)
+/* 80015AB0 000128B0  48 00 06 E5 */	bl create__5xfontFUifff10xColor_tagRC13basic_rect_esc__0_f_esc__1_10xColor_tagff
+/* 80015AB4 000128B4  C0 22 81 C8 */	lfs f1, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 80015AB8 000128B8  38 61 02 B0 */	addi r3, r1, 0x2b0
 /* 80015ABC 000128BC  38 81 01 24 */	addi r4, r1, 0x124
 /* 80015AC0 000128C0  38 A1 00 84 */	addi r5, r1, 0x84
@@ -742,7 +744,7 @@ lbl_80015834:
 /* 80015AC8 000128C8  38 C0 00 02 */	li r6, 2
 /* 80015ACC 000128CC  FC 60 08 90 */	fmr f3, f1
 /* 80015AD0 000128D0  FC 80 08 90 */	fmr f4, f1
-/* 80015AD4 000128D4  48 00 05 81 */	bl create__8xtextboxFRC5xfontRC13basic_rect$$0f$$1Uiffff
+/* 80015AD4 000128D4  48 00 05 81 */	bl create__8xtextboxFRC5xfontRC13basic_rect_esc__0_f_esc__1_Uiffff
 /* 80015AD8 000128D8  38 00 00 0E */	li r0, 0xe
 /* 80015ADC 000128DC  38 A1 04 7C */	addi r5, r1, 0x47c
 /* 80015AE0 000128E0  38 81 02 AC */	addi r4, r1, 0x2ac
@@ -781,14 +783,14 @@ lbl_80015B58:
 /* 80015B5C 0001295C  3C 00 43 30 */	lis r0, 0x4330
 /* 80015B60 00012960  80 AD 91 C8 */	lwz r5, FB_YRES-_SDA_BASE_(r13)
 /* 80015B64 00012964  FC 20 E8 90 */	fmr f1, f29
-/* 80015B68 00012968  C0 42 81 B8 */	lfs f2, $$2903_0-_SDA2_BASE_(r2)
+/* 80015B68 00012968  C0 42 81 B8 */	lfs f2, _esc__2_903_0-_SDA2_BASE_(r2)
 /* 80015B6C 0001296C  38 61 00 1C */	addi r3, r1, 0x1c
 /* 80015B70 00012970  C0 1C 00 24 */	lfs f0, 0x24(r28)
 /* 80015B74 00012974  90 81 05 34 */	stw r4, 0x534(r1)
 /* 80015B78 00012978  EC 42 00 28 */	fsubs f2, f2, f0
-/* 80015B7C 0001297C  C0 62 81 D0 */	lfs f3, $$21176_0-_SDA2_BASE_(r2)
+/* 80015B7C 0001297C  C0 62 81 D0 */	lfs f3, _esc__2_1176_0-_SDA2_BASE_(r2)
 /* 80015B80 00012980  90 01 05 30 */	stw r0, 0x530(r1)
-/* 80015B84 00012984  C8 82 81 C0 */	lfd f4, $$2919_0-_SDA2_BASE_(r2)
+/* 80015B84 00012984  C8 82 81 C0 */	lfd f4, _esc__2_919_0-_SDA2_BASE_(r2)
 /* 80015B88 00012988  C8 01 05 30 */	lfd f0, 0x530(r1)
 /* 80015B8C 0001298C  EF E3 00 B2 */	fmuls f31, f3, f2
 /* 80015B90 00012990  90 A1 05 2C */	stw r5, 0x52c(r1)
@@ -819,7 +821,7 @@ lbl_80015B58:
 /* 80015BF4 000129F4  80 1C 00 10 */	lwz r0, 0x10(r28)
 /* 80015BF8 000129F8  90 01 00 1C */	stw r0, 0x1c(r1)
 /* 80015BFC 000129FC  4B FF F9 9D */	bl xCMcolor_scale__F10xColor_tagf
-/* 80015C00 00012A00  80 82 E8 80 */	lwz r4, $$21061_3-_SDA2_BASE_(r2)
+/* 80015C00 00012A00  80 82 E8 80 */	lwz r4, _esc__2_1061_3-_SDA2_BASE_(r2)
 /* 80015C04 00012A04  80 02 E8 84 */	lwz r0, lbl_803D85A4-_SDA2_BASE_(r2)
 /* 80015C08 00012A08  90 81 00 74 */	stw r4, 0x74(r1)
 /* 80015C0C 00012A0C  80 82 E8 88 */	lwz r4, lbl_803D85A8-_SDA2_BASE_(r2)
@@ -835,7 +837,7 @@ lbl_80015B58:
 /* 80015C34 00012A34  D0 01 00 7C */	stfs f0, 0x7c(r1)
 /* 80015C38 00012A38  C0 1C 00 28 */	lfs f0, 0x28(r28)
 /* 80015C3C 00012A3C  D0 01 00 80 */	stfs f0, 0x80(r1)
-/* 80015C40 00012A40  4B FF F8 B9 */	bl xCMScaleBounds__FR13basic_rect$$0f$$1
+/* 80015C40 00012A40  4B FF F8 B9 */	bl xCMScaleBounds__FR13basic_rect_esc__0_f_esc__1_
 /* 80015C44 00012A44  80 62 82 3C */	lwz r3, g_BLACK-_SDA2_BASE_(r2)
 /* 80015C48 00012A48  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80015C4C 00012A4C  90 61 00 20 */	stw r3, 0x20(r1)
@@ -848,17 +850,17 @@ lbl_80015B58:
 /* 80015C68 00012A68  4B FF F7 99 */	bl NSCREENX__Ff
 /* 80015C6C 00012A6C  C0 0D 80 64 */	lfs f0, destWidth-_SDA_BASE_(r13)
 /* 80015C70 00012A70  FC 40 D8 90 */	fmr f2, f27
-/* 80015C74 00012A74  C0 82 81 D4 */	lfs f4, $$21177_0-_SDA2_BASE_(r2)
+/* 80015C74 00012A74  C0 82 81 D4 */	lfs f4, _esc__2_1177_0-_SDA2_BASE_(r2)
 /* 80015C78 00012A78  38 61 00 F4 */	addi r3, r1, 0xf4
 /* 80015C7C 00012A7C  EC 20 00 72 */	fmuls f1, f0, f1
 /* 80015C80 00012A80  80 9C 00 0C */	lwz r4, 0xc(r28)
 /* 80015C84 00012A84  FC A0 20 90 */	fmr f5, f4
-/* 80015C88 00012A88  C0 62 81 C8 */	lfs f3, $$21174_1-_SDA2_BASE_(r2)
+/* 80015C88 00012A88  C0 62 81 C8 */	lfs f3, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 80015C8C 00012A8C  38 A1 00 18 */	addi r5, r1, 0x18
 /* 80015C90 00012A90  38 E1 00 20 */	addi r7, r1, 0x20
 /* 80015C94 00012A94  38 C2 81 98 */	addi r6, r2, screen_bounds-_SDA2_BASE_
-/* 80015C98 00012A98  48 00 04 FD */	bl create__5xfontFUifff10xColor_tagRC13basic_rect$$0f$$110xColor_tagff
-/* 80015C9C 00012A9C  C0 22 81 C8 */	lfs f1, $$21174_1-_SDA2_BASE_(r2)
+/* 80015C98 00012A98  48 00 04 FD */	bl create__5xfontFUifff10xColor_tagRC13basic_rect_esc__0_f_esc__1_10xColor_tagff
+/* 80015C9C 00012A9C  C0 22 81 C8 */	lfs f1, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 80015CA0 00012AA0  38 61 02 3C */	addi r3, r1, 0x23c
 /* 80015CA4 00012AA4  38 81 00 F4 */	addi r4, r1, 0xf4
 /* 80015CA8 00012AA8  38 A1 00 74 */	addi r5, r1, 0x74
@@ -866,7 +868,7 @@ lbl_80015B58:
 /* 80015CB0 00012AB0  38 C0 00 02 */	li r6, 2
 /* 80015CB4 00012AB4  FC 60 08 90 */	fmr f3, f1
 /* 80015CB8 00012AB8  FC 80 08 90 */	fmr f4, f1
-/* 80015CBC 00012ABC  48 00 03 99 */	bl create__8xtextboxFRC5xfontRC13basic_rect$$0f$$1Uiffff
+/* 80015CBC 00012ABC  48 00 03 99 */	bl create__8xtextboxFRC5xfontRC13basic_rect_esc__0_f_esc__1_Uiffff
 /* 80015CC0 00012AC0  38 00 00 0E */	li r0, 0xe
 /* 80015CC4 00012AC4  38 A1 04 08 */	addi r5, r1, 0x408
 /* 80015CC8 00012AC8  38 81 02 38 */	addi r4, r1, 0x238
@@ -909,7 +911,7 @@ lbl_80015D40:
 /* 80015D48 00012B48  38 61 00 14 */	addi r3, r1, 0x14
 /* 80015D4C 00012B4C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80015D50 00012B50  4B FF F8 49 */	bl xCMcolor_scale__F10xColor_tagf
-/* 80015D54 00012B54  80 82 E8 90 */	lwz r4, $$21073_1-_SDA2_BASE_(r2)
+/* 80015D54 00012B54  80 82 E8 90 */	lwz r4, _esc__2_1073_1-_SDA2_BASE_(r2)
 /* 80015D58 00012B58  80 02 E8 94 */	lwz r0, lbl_803D85B4-_SDA2_BASE_(r2)
 /* 80015D5C 00012B5C  90 81 00 64 */	stw r4, 0x64(r1)
 /* 80015D60 00012B60  80 82 E8 98 */	lwz r4, lbl_803D85B8-_SDA2_BASE_(r2)
@@ -925,7 +927,7 @@ lbl_80015D40:
 /* 80015D88 00012B88  D0 01 00 6C */	stfs f0, 0x6c(r1)
 /* 80015D8C 00012B8C  C0 1C 00 28 */	lfs f0, 0x28(r28)
 /* 80015D90 00012B90  D0 01 00 70 */	stfs f0, 0x70(r1)
-/* 80015D94 00012B94  4B FF F7 65 */	bl xCMScaleBounds__FR13basic_rect$$0f$$1
+/* 80015D94 00012B94  4B FF F7 65 */	bl xCMScaleBounds__FR13basic_rect_esc__0_f_esc__1_
 /* 80015D98 00012B98  80 62 82 3C */	lwz r3, g_BLACK-_SDA2_BASE_(r2)
 /* 80015D9C 00012B9C  80 01 00 30 */	lwz r0, 0x30(r1)
 /* 80015DA0 00012BA0  90 61 00 20 */	stw r3, 0x20(r1)
@@ -938,17 +940,17 @@ lbl_80015D40:
 /* 80015DBC 00012BBC  4B FF F6 45 */	bl NSCREENX__Ff
 /* 80015DC0 00012BC0  C0 0D 80 64 */	lfs f0, destWidth-_SDA_BASE_(r13)
 /* 80015DC4 00012BC4  FC 40 D8 90 */	fmr f2, f27
-/* 80015DC8 00012BC8  C0 82 81 D4 */	lfs f4, $$21177_0-_SDA2_BASE_(r2)
+/* 80015DC8 00012BC8  C0 82 81 D4 */	lfs f4, _esc__2_1177_0-_SDA2_BASE_(r2)
 /* 80015DCC 00012BCC  38 61 00 C4 */	addi r3, r1, 0xc4
 /* 80015DD0 00012BD0  EC 20 00 72 */	fmuls f1, f0, f1
 /* 80015DD4 00012BD4  80 9C 00 0C */	lwz r4, 0xc(r28)
 /* 80015DD8 00012BD8  FC A0 20 90 */	fmr f5, f4
-/* 80015DDC 00012BDC  C0 62 81 C8 */	lfs f3, $$21174_1-_SDA2_BASE_(r2)
+/* 80015DDC 00012BDC  C0 62 81 C8 */	lfs f3, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 80015DE0 00012BE0  38 A1 00 10 */	addi r5, r1, 0x10
 /* 80015DE4 00012BE4  38 E1 00 20 */	addi r7, r1, 0x20
 /* 80015DE8 00012BE8  38 C2 81 98 */	addi r6, r2, screen_bounds-_SDA2_BASE_
-/* 80015DEC 00012BEC  48 00 03 A9 */	bl create__5xfontFUifff10xColor_tagRC13basic_rect$$0f$$110xColor_tagff
-/* 80015DF0 00012BF0  C0 22 81 C8 */	lfs f1, $$21174_1-_SDA2_BASE_(r2)
+/* 80015DEC 00012BEC  48 00 03 A9 */	bl create__5xfontFUifff10xColor_tagRC13basic_rect_esc__0_f_esc__1_10xColor_tagff
+/* 80015DF0 00012BF0  C0 22 81 C8 */	lfs f1, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 80015DF4 00012BF4  7F 26 CB 78 */	mr r6, r25
 /* 80015DF8 00012BF8  38 61 01 C8 */	addi r3, r1, 0x1c8
 /* 80015DFC 00012BFC  38 81 00 C4 */	addi r4, r1, 0xc4
@@ -956,7 +958,7 @@ lbl_80015D40:
 /* 80015E04 00012C04  38 A1 00 64 */	addi r5, r1, 0x64
 /* 80015E08 00012C08  FC 60 08 90 */	fmr f3, f1
 /* 80015E0C 00012C0C  FC 80 08 90 */	fmr f4, f1
-/* 80015E10 00012C10  48 00 02 45 */	bl create__8xtextboxFRC5xfontRC13basic_rect$$0f$$1Uiffff
+/* 80015E10 00012C10  48 00 02 45 */	bl create__8xtextboxFRC5xfontRC13basic_rect_esc__0_f_esc__1_Uiffff
 /* 80015E14 00012C14  38 00 00 0E */	li r0, 0xe
 /* 80015E18 00012C18  38 A1 03 94 */	addi r5, r1, 0x394
 /* 80015E1C 00012C1C  38 81 01 C4 */	addi r4, r1, 0x1c4
@@ -982,7 +984,7 @@ lbl_80015E24:
 /* 80015E68 00012C68  38 61 00 0C */	addi r3, r1, 0xc
 /* 80015E6C 00012C6C  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80015E70 00012C70  4B FF F7 29 */	bl xCMcolor_scale__F10xColor_tagf
-/* 80015E74 00012C74  80 82 E8 A0 */	lwz r4, $$21076_1-_SDA2_BASE_(r2)
+/* 80015E74 00012C74  80 82 E8 A0 */	lwz r4, _esc__2_1076_1-_SDA2_BASE_(r2)
 /* 80015E78 00012C78  80 02 E8 A4 */	lwz r0, lbl_803D85C4-_SDA2_BASE_(r2)
 /* 80015E7C 00012C7C  90 81 00 54 */	stw r4, 0x54(r1)
 /* 80015E80 00012C80  80 82 E8 A8 */	lwz r4, lbl_803D85C8-_SDA2_BASE_(r2)
@@ -998,7 +1000,7 @@ lbl_80015E24:
 /* 80015EA8 00012CA8  D0 01 00 5C */	stfs f0, 0x5c(r1)
 /* 80015EAC 00012CAC  C0 1C 00 48 */	lfs f0, 0x48(r28)
 /* 80015EB0 00012CB0  D0 01 00 60 */	stfs f0, 0x60(r1)
-/* 80015EB4 00012CB4  4B FF F6 45 */	bl xCMScaleBounds__FR13basic_rect$$0f$$1
+/* 80015EB4 00012CB4  4B FF F6 45 */	bl xCMScaleBounds__FR13basic_rect_esc__0_f_esc__1_
 /* 80015EB8 00012CB8  80 62 82 3C */	lwz r3, g_BLACK-_SDA2_BASE_(r2)
 /* 80015EBC 00012CBC  80 01 00 2C */	lwz r0, 0x2c(r1)
 /* 80015EC0 00012CC0  90 61 00 20 */	stw r3, 0x20(r1)
@@ -1011,17 +1013,17 @@ lbl_80015E24:
 /* 80015EDC 00012CDC  4B FF F5 25 */	bl NSCREENX__Ff
 /* 80015EE0 00012CE0  C0 0D 80 64 */	lfs f0, destWidth-_SDA_BASE_(r13)
 /* 80015EE4 00012CE4  FC 40 E8 90 */	fmr f2, f29
-/* 80015EE8 00012CE8  C0 82 81 D4 */	lfs f4, $$21177_0-_SDA2_BASE_(r2)
+/* 80015EE8 00012CE8  C0 82 81 D4 */	lfs f4, _esc__2_1177_0-_SDA2_BASE_(r2)
 /* 80015EEC 00012CEC  38 61 00 94 */	addi r3, r1, 0x94
 /* 80015EF0 00012CF0  EC 20 00 72 */	fmuls f1, f0, f1
 /* 80015EF4 00012CF4  80 9C 00 0C */	lwz r4, 0xc(r28)
 /* 80015EF8 00012CF8  FC A0 20 90 */	fmr f5, f4
-/* 80015EFC 00012CFC  C0 62 81 C8 */	lfs f3, $$21174_1-_SDA2_BASE_(r2)
+/* 80015EFC 00012CFC  C0 62 81 C8 */	lfs f3, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 80015F00 00012D00  38 A1 00 08 */	addi r5, r1, 8
 /* 80015F04 00012D04  38 E1 00 20 */	addi r7, r1, 0x20
 /* 80015F08 00012D08  38 C2 81 98 */	addi r6, r2, screen_bounds-_SDA2_BASE_
-/* 80015F0C 00012D0C  48 00 02 89 */	bl create__5xfontFUifff10xColor_tagRC13basic_rect$$0f$$110xColor_tagff
-/* 80015F10 00012D10  C0 22 81 C8 */	lfs f1, $$21174_1-_SDA2_BASE_(r2)
+/* 80015F0C 00012D0C  48 00 02 89 */	bl create__5xfontFUifff10xColor_tagRC13basic_rect_esc__0_f_esc__1_10xColor_tagff
+/* 80015F10 00012D10  C0 22 81 C8 */	lfs f1, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 80015F14 00012D14  7F 66 DB 78 */	mr r6, r27
 /* 80015F18 00012D18  38 61 01 54 */	addi r3, r1, 0x154
 /* 80015F1C 00012D1C  38 81 00 94 */	addi r4, r1, 0x94
@@ -1029,7 +1031,7 @@ lbl_80015E24:
 /* 80015F24 00012D24  38 A1 00 54 */	addi r5, r1, 0x54
 /* 80015F28 00012D28  FC 60 08 90 */	fmr f3, f1
 /* 80015F2C 00012D2C  FC 80 08 90 */	fmr f4, f1
-/* 80015F30 00012D30  48 00 01 25 */	bl create__8xtextboxFRC5xfontRC13basic_rect$$0f$$1Uiffff
+/* 80015F30 00012D30  48 00 01 25 */	bl create__8xtextboxFRC5xfontRC13basic_rect_esc__0_f_esc__1_Uiffff
 /* 80015F34 00012D34  38 00 00 0E */	li r0, 0xe
 /* 80015F38 00012D38  38 A1 03 20 */	addi r5, r1, 0x320
 /* 80015F3C 00012D3C  38 81 01 50 */	addi r4, r1, 0x150
@@ -1064,7 +1066,7 @@ lbl_80015F9C:
 /* 80015FA0 00012DA0  7C 7A F0 50 */	subf r3, r26, r30
 /* 80015FA4 00012DA4  7C 03 00 40 */	cmplw r3, r0
 /* 80015FA8 00012DA8  41 80 F7 54 */	blt lbl_800156FC
-/* 80015FAC 00012DAC  C0 02 81 C8 */	lfs f0, $$21174_1-_SDA2_BASE_(r2)
+/* 80015FAC 00012DAC  C0 02 81 C8 */	lfs f0, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 80015FB0 00012DB0  38 00 00 00 */	li r0, 0
 /* 80015FB4 00012DB4  FC 1C 00 40 */	fcmpo cr0, f28, f0
 /* 80015FB8 00012DB8  4C 41 13 82 */	cror 2, 1, 2
@@ -1112,8 +1114,8 @@ render__8xtextboxCFb:
 /* 8001604C 00012E4C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80016050 00012E50  4E 80 00 20 */	blr 
 
-.global create__8xtextboxFRC5xfontRC13basic_rect$$0f$$1Uiffff
-create__8xtextboxFRC5xfontRC13basic_rect$$0f$$1Uiffff:
+.global create__8xtextboxFRC5xfontRC13basic_rect_esc__0_f_esc__1_Uiffff
+create__8xtextboxFRC5xfontRC13basic_rect_esc__0_f_esc__1_Uiffff:
 /* 80016054 00012E54  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 80016058 00012E58  7C 08 02 A6 */	mflr r0
 /* 8001605C 00012E5C  90 01 00 B4 */	stw r0, 0xb4(r1)
@@ -1131,7 +1133,7 @@ create__8xtextboxFRC5xfontRC13basic_rect$$0f$$1Uiffff:
 /* 8001608C 00012E8C  48 00 00 A5 */	bl __as__5xfontFRC5xfont
 /* 80016090 00012E90  7F C4 F3 78 */	mr r4, r30
 /* 80016094 00012E94  38 61 00 38 */	addi r3, r1, 0x38
-/* 80016098 00012E98  48 00 00 75 */	bl __as__13basic_rect$$0f$$1FRC13basic_rect$$0f$$1
+/* 80016098 00012E98  48 00 00 75 */	bl __as__13basic_rect_esc__0_f_esc__1_FRC13basic_rect_esc__0_f_esc__1_
 /* 8001609C 00012E9C  38 C0 00 00 */	li r6, 0
 /* 800160A0 00012EA0  38 6D 81 90 */	addi r3, r13, text_cb__8xtextbox-_SDA_BASE_
 /* 800160A4 00012EA4  38 00 00 0E */	li r0, 0xe
@@ -1162,8 +1164,8 @@ lbl_800160D4:
 /* 80016104 00012F04  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80016108 00012F08  4E 80 00 20 */	blr 
 
-.global __as__13basic_rect$$0f$$1FRC13basic_rect$$0f$$1
-__as__13basic_rect$$0f$$1FRC13basic_rect$$0f$$1:
+.global __as__13basic_rect_esc__0_f_esc__1_FRC13basic_rect_esc__0_f_esc__1_
+__as__13basic_rect_esc__0_f_esc__1_FRC13basic_rect_esc__0_f_esc__1_:
 /* 8001610C 00012F0C  C0 24 00 00 */	lfs f1, 0(r4)
 /* 80016110 00012F10  C0 04 00 04 */	lfs f0, 4(r4)
 /* 80016114 00012F14  D0 23 00 00 */	stfs f1, 0(r3)
@@ -1202,8 +1204,8 @@ __as__5xfontFRC5xfont:
 /* 8001618C 00012F8C  90 03 00 2C */	stw r0, 0x2c(r3)
 /* 80016190 00012F90  4E 80 00 20 */	blr 
 
-.global create__5xfontFUifff10xColor_tagRC13basic_rect$$0f$$110xColor_tagff
-create__5xfontFUifff10xColor_tagRC13basic_rect$$0f$$110xColor_tagff:
+.global create__5xfontFUifff10xColor_tagRC13basic_rect_esc__0_f_esc__1_10xColor_tagff
+create__5xfontFUifff10xColor_tagRC13basic_rect_esc__0_f_esc__1_10xColor_tagff:
 /* 80016194 00012F94  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80016198 00012F98  7C 08 02 A6 */	mflr r0
 /* 8001619C 00012F9C  90 01 00 64 */	stw r0, 0x64(r1)
@@ -1224,7 +1226,7 @@ create__5xfontFUifff10xColor_tagRC13basic_rect$$0f$$110xColor_tagff:
 /* 800161D8 00012FD8  48 00 00 65 */	bl __as__10xColor_tagFRC10xColor_tag
 /* 800161DC 00012FDC  7F C4 F3 78 */	mr r4, r30
 /* 800161E0 00012FE0  38 61 00 28 */	addi r3, r1, 0x28
-/* 800161E4 00012FE4  4B FF FF 29 */	bl __as__13basic_rect$$0f$$1FRC13basic_rect$$0f$$1
+/* 800161E4 00012FE4  4B FF FF 29 */	bl __as__13basic_rect_esc__0_f_esc__1_FRC13basic_rect_esc__0_f_esc__1_
 /* 800161E8 00012FE8  7F E4 FB 78 */	mr r4, r31
 /* 800161EC 00012FEC  38 61 00 1C */	addi r3, r1, 0x1c
 /* 800161F0 00012FF0  48 00 00 4D */	bl __as__10xColor_tagFRC10xColor_tag
@@ -1285,9 +1287,9 @@ lbl_80016290:
 /* 800162AC 000130AC  38 63 00 80 */	addi r3, r3, 0x80
 /* 800162B0 000130B0  90 01 00 08 */	stw r0, 8(r1)
 /* 800162B4 000130B4  6C 60 80 00 */	xoris r0, r3, 0x8000
-/* 800162B8 000130B8  C8 42 81 E0 */	lfd f2, $$21218-_SDA2_BASE_(r2)
+/* 800162B8 000130B8  C8 42 81 E0 */	lfd f2, _esc__2_1218-_SDA2_BASE_(r2)
 /* 800162BC 000130BC  90 01 00 0C */	stw r0, 0xc(r1)
-/* 800162C0 000130C0  C0 02 81 D8 */	lfs f0, $$21216-_SDA2_BASE_(r2)
+/* 800162C0 000130C0  C0 02 81 D8 */	lfs f0, _esc__2_1216-_SDA2_BASE_(r2)
 /* 800162C4 000130C4  C8 21 00 08 */	lfd f1, 8(r1)
 /* 800162C8 000130C8  EC 21 10 28 */	fsubs f1, f1, f2
 /* 800162CC 000130CC  EC 01 00 32 */	fmuls f0, f1, f0
@@ -1298,13 +1300,13 @@ lbl_800162D8:
 /* 800162DC 000130DC  3C 00 43 30 */	lis r0, 0x4330
 /* 800162E0 000130E0  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 800162E4 000130E4  90 01 00 08 */	stw r0, 8(r1)
-/* 800162E8 000130E8  C8 42 81 E0 */	lfd f2, $$21218-_SDA2_BASE_(r2)
+/* 800162E8 000130E8  C8 42 81 E0 */	lfd f2, _esc__2_1218-_SDA2_BASE_(r2)
 /* 800162EC 000130EC  90 61 00 0C */	stw r3, 0xc(r1)
-/* 800162F0 000130F0  C0 62 81 D4 */	lfs f3, $$21177_0-_SDA2_BASE_(r2)
+/* 800162F0 000130F0  C0 62 81 D4 */	lfs f3, _esc__2_1177_0-_SDA2_BASE_(r2)
 /* 800162F4 000130F4  C8 01 00 08 */	lfd f0, 8(r1)
-/* 800162F8 000130F8  C0 22 81 D8 */	lfs f1, $$21216-_SDA2_BASE_(r2)
+/* 800162F8 000130F8  C0 22 81 D8 */	lfs f1, _esc__2_1216-_SDA2_BASE_(r2)
 /* 800162FC 000130FC  EC 40 10 28 */	fsubs f2, f0, f2
-/* 80016300 00013100  C0 02 81 B8 */	lfs f0, $$2903_0-_SDA2_BASE_(r2)
+/* 80016300 00013100  C0 02 81 B8 */	lfs f0, _esc__2_903_0-_SDA2_BASE_(r2)
 /* 80016304 00013104  EC 43 00 B2 */	fmuls f2, f3, f2
 /* 80016308 00013108  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 8001630C 0001310C  EF FF 00 32 */	fmuls f31, f31, f0
@@ -1364,7 +1366,7 @@ xCMstart__FP12xCreditsDatafP5xBase:
 /* 800163C4 000131C4  54 00 07 FA */	rlwinm r0, r0, 0, 0x1f, 0x1d
 /* 800163C8 000131C8  90 1E 00 0C */	stw r0, 0xc(r30)
 lbl_800163CC:
-/* 800163CC 000131CC  C0 02 81 C8 */	lfs f0, $$21174_1-_SDA2_BASE_(r2)
+/* 800163CC 000131CC  C0 02 81 C8 */	lfs f0, _esc__2_1174_1-_SDA2_BASE_(r2)
 /* 800163D0 000131D0  28 1F 00 00 */	cmplwi r31, 0
 /* 800163D4 000131D4  D0 0D 80 70 */	stfs f0, credits_time-_SDA_BASE_(r13)
 /* 800163D8 000131D8  41 82 00 0C */	beq lbl_800163E4
@@ -1387,7 +1389,7 @@ xCMstop__Fv:
 /* 8001640C 0001320C  41 82 00 28 */	beq lbl_80016434
 /* 80016410 00013210  80 6D B7 9C */	lwz r3, credits_parentID-_SDA_BASE_(r13)
 /* 80016414 00013214  38 00 00 00 */	li r0, 0
-/* 80016418 00013218  C0 02 81 E8 */	lfs f0, $$21242-_SDA2_BASE_(r2)
+/* 80016418 00013218  C0 02 81 E8 */	lfs f0, _esc__2_1242-_SDA2_BASE_(r2)
 /* 8001641C 0001321C  28 03 00 00 */	cmplwi r3, 0
 /* 80016420 00013220  90 0D B7 98 */	stw r0, credits_data-_SDA_BASE_(r13)
 /* 80016424 00013224  D0 0D 80 70 */	stfs f0, credits_time-_SDA_BASE_(r13)
@@ -1414,3 +1416,6 @@ xCMisRunning__Fv:
 /* 8001645C 0001325C  30 03 FF FF */	addic r0, r3, -1
 /* 80016460 00013260  7C 60 19 10 */	subfe r3, r0, r3
 /* 80016464 00013264  4E 80 00 20 */	blr 
+
+.endif
+

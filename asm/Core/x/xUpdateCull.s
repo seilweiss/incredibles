@@ -2,9 +2,11 @@
 
 .section .sdata2
 
-.global $$2893
-$$2893:
+.global _esc__2_893
+_esc__2_893:
 	.incbin "baserom.dol", 0x32F6E8, 0x8
+
+.if 0
 
 .section .text
 
@@ -160,7 +162,7 @@ lbl_8006FBB0:
 /* 8006FC10 0006CA10  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 8006FC14 0006CA14  48 00 00 18 */	b lbl_8006FC2C
 lbl_8006FC18:
-/* 8006FC18 0006CA18  C0 22 90 08 */	lfs f1, $$2893-_SDA2_BASE_(r2)
+/* 8006FC18 0006CA18  C0 22 90 08 */	lfs f1, _esc__2_893-_SDA2_BASE_(r2)
 /* 8006FC1C 0006CA1C  C0 01 00 08 */	lfs f0, 8(r1)
 /* 8006FC20 0006CA20  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8006FC24 0006CA24  7C 00 00 26 */	mfcr r0
@@ -711,3 +713,6 @@ lbl_80070374:
 /* 80070388 0006D188  7C 08 03 A6 */	mtlr r0
 /* 8007038C 0006D18C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80070390 0006D190  4E 80 00 20 */	blr 
+
+.endif
+

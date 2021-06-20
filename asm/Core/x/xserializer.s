@@ -17,8 +17,8 @@ g_serinit:
 
 .section .sbss2
 
-.global $$21207_2
-$$21207_2:
+.global _esc__2_1207_2
+_esc__2_1207_2:
 	.skip 0x4
 .global lbl_803D8894
 lbl_803D8894:
@@ -35,8 +35,8 @@ g_xserdata:
 
 .section .sdata2
 
-.global $$21201_0
-$$21201_0:
+.global _esc__2_1201_0
+_esc__2_1201_0:
 	.incbin "baserom.dol", 0x32F440, 0x4
 .global lbl_803D2A84
 lbl_803D2A84:
@@ -44,6 +44,8 @@ lbl_803D2A84:
 .global lbl_803D2A88
 lbl_803D2A88:
 	.incbin "baserom.dol", 0x32F448, 0x8
+
+.if 0
 
 .section .text
 
@@ -1091,7 +1093,7 @@ xSER_xsgclt_svproc_fill__FPvP17st_XSAVEGAME_DATAP25st_XSAVEGAME_WRITECONTEXT:
 /* 80060250 0005D050  7C A4 2B 78 */	mr r4, r5
 /* 80060254 0005D054  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80060258 0005D058  38 A1 00 08 */	addi r5, r1, 8
-/* 8006025C 0005D05C  80 C2 8D 60 */	lwz r6, $$21201_0-_SDA2_BASE_(r2)
+/* 8006025C 0005D05C  80 C2 8D 60 */	lwz r6, _esc__2_1201_0-_SDA2_BASE_(r2)
 /* 80060260 0005D060  80 E2 8D 64 */	lwz r7, lbl_803D2A84-_SDA2_BASE_(r2)
 /* 80060264 0005D064  88 02 8D 68 */	lbz r0, lbl_803D2A88-_SDA2_BASE_(r2)
 /* 80060268 0005D068  90 C1 00 08 */	stw r6, 8(r1)
@@ -1111,7 +1113,7 @@ xSER_xsgclt_ldproc_fill__FPvP17st_XSAVEGAME_DATAP24st_XSAVEGAME_READCONTEXTUii:
 /* 80060294 0005D094  7C 08 02 A6 */	mflr r0
 /* 80060298 0005D098  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8006029C 0005D09C  80 0D 84 F8 */	lwz r0, g_xserdata-_SDA_BASE_(r13)
-/* 800602A0 0005D0A0  80 E2 EB 70 */	lwz r7, $$21207_2-_SDA2_BASE_(r2)
+/* 800602A0 0005D0A0  80 E2 EB 70 */	lwz r7, _esc__2_1207_2-_SDA2_BASE_(r2)
 /* 800602A4 0005D0A4  80 C2 EB 74 */	lwz r6, lbl_803D8894-_SDA2_BASE_(r2)
 /* 800602A8 0005D0A8  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 800602AC 0005D0AC  88 62 EB 78 */	lbz r3, lbl_803D8898-_SDA2_BASE_(r2)
@@ -1133,3 +1135,6 @@ lbl_800602E0:
 /* 800602E4 0005D0E4  7C 08 03 A6 */	mtlr r0
 /* 800602E8 0005D0E8  38 21 00 20 */	addi r1, r1, 0x20
 /* 800602EC 0005D0EC  4E 80 00 20 */	blr 
+
+.endif
+

@@ -8,9 +8,11 @@ __vt__13zUIUserString:
 
 .section .rodata
 
-.global $$2stringBase0_102
-$$2stringBase0_102:
+.global _esc__2_stringBase0_102
+_esc__2_stringBase0_102:
 	.incbin "baserom.dol", 0x2E2B50, 0x18
+
+.if 0
 
 .section .text
 
@@ -221,9 +223,9 @@ lbl_8016DE20:
 /* 8016DE40 0016AC40  7C 83 01 AE */	stbx r4, r3, r0
 /* 8016DE44 0016AC44  48 00 00 B8 */	b lbl_8016DEFC
 lbl_8016DE48:
-/* 8016DE48 0016AC48  3C 80 80 2E */	lis r4, $$2stringBase0_102@ha
+/* 8016DE48 0016AC48  3C 80 80 2E */	lis r4, _esc__2_stringBase0_102@ha
 /* 8016DE4C 0016AC4C  80 7F 00 74 */	lwz r3, 0x74(r31)
-/* 8016DE50 0016AC50  38 84 5B 50 */	addi r4, r4, $$2stringBase0_102@l
+/* 8016DE50 0016AC50  38 84 5B 50 */	addi r4, r4, _esc__2_stringBase0_102@l
 /* 8016DE54 0016AC54  48 15 3D 5D */	bl stricmp
 /* 8016DE58 0016AC58  2C 03 00 00 */	cmpwi r3, 0
 /* 8016DE5C 0016AC5C  40 82 00 18 */	bne lbl_8016DE74
@@ -344,3 +346,6 @@ __ct__13zUIUserStringFv:
 /* 8016DFD4 0016ADD4  7C 08 03 A6 */	mtlr r0
 /* 8016DFD8 0016ADD8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8016DFDC 0016ADDC  4E 80 00 20 */	blr 
+
+.endif
+

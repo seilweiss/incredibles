@@ -2,18 +2,20 @@
 
 .section .sdata2
 
-.global $$2971_1
-$$2971_1:
+.global _esc__2_971_1
+_esc__2_971_1:
 	.incbin "baserom.dol", 0x3303F0, 0x4
-.global $$2972_2
-$$2972_2:
+.global _esc__2_972_2
+_esc__2_972_2:
 	.incbin "baserom.dol", 0x3303F4, 0x4
-.global $$21049_0
-$$21049_0:
+.global _esc__2_1049_0
+_esc__2_1049_0:
 	.incbin "baserom.dol", 0x3303F8, 0x4
-.global $$21074
-$$21074:
+.global _esc__2_1074
+_esc__2_1074:
 	.incbin "baserom.dol", 0x3303FC, 0x4
+
+.if 0
 
 .section .text
 
@@ -69,7 +71,7 @@ zEntTriggerInit__FP11zEntTriggerP9xEntAsset:
 /* 800C2394 000BF194  38 BE 00 1C */	addi r5, r30, 0x1c
 /* 800C2398 000BF198  7C 64 1B 78 */	mr r4, r3
 /* 800C239C 000BF19C  4B F4 55 11 */	bl xVec3Sub__FP5xVec3PC5xVec3PC5xVec3
-/* 800C23A0 000BF1A0  C0 22 9D 10 */	lfs f1, $$2971_1-_SDA2_BASE_(r2)
+/* 800C23A0 000BF1A0  C0 22 9D 10 */	lfs f1, _esc__2_971_1-_SDA2_BASE_(r2)
 /* 800C23A4 000BF1A4  38 61 00 08 */	addi r3, r1, 8
 /* 800C23A8 000BF1A8  38 81 00 14 */	addi r4, r1, 0x14
 /* 800C23AC 000BF1AC  38 A1 00 20 */	addi r5, r1, 0x20
@@ -85,7 +87,7 @@ zEntTriggerInit__FP11zEntTriggerP9xEntAsset:
 /* 800C23D4 000BF1D4  4B F4 B2 95 */	bl xVec3Add__FP5xVec3PC5xVec3PC5xVec3
 /* 800C23D8 000BF1D8  C0 21 00 20 */	lfs f1, 0x20(r1)
 /* 800C23DC 000BF1DC  C0 01 00 14 */	lfs f0, 0x14(r1)
-/* 800C23E0 000BF1E0  C0 42 9D 14 */	lfs f2, $$2972_2-_SDA2_BASE_(r2)
+/* 800C23E0 000BF1E0  C0 42 9D 14 */	lfs f2, _esc__2_972_2-_SDA2_BASE_(r2)
 /* 800C23E4 000BF1E4  EC 01 00 28 */	fsubs f0, f1, f0
 /* 800C23E8 000BF1E8  EC 02 00 32 */	fmuls f0, f2, f0
 /* 800C23EC 000BF1EC  D0 1D 00 E8 */	stfs f0, 0xe8(r29)
@@ -241,7 +243,7 @@ lbl_800C25F4:
 /* 800C260C 000BF40C  38 A1 00 CC */	addi r5, r1, 0xcc
 /* 800C2610 000BF410  4B FB 53 9D */	bl iBoxIsectVec__FPC4xBoxPC5xVec3P6xIsect
 /* 800C2614 000BF414  C0 21 00 D0 */	lfs f1, 0xd0(r1)
-/* 800C2618 000BF418  C0 02 9D 18 */	lfs f0, $$21049_0-_SDA2_BASE_(r2)
+/* 800C2618 000BF418  C0 02 9D 18 */	lfs f0, _esc__2_1049_0-_SDA2_BASE_(r2)
 /* 800C261C 000BF41C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800C2620 000BF420  4C 40 13 82 */	cror 2, 0, 2
 /* 800C2624 000BF424  7C 00 00 26 */	mfcr r0
@@ -259,7 +261,7 @@ lbl_800C2634:
 /* 800C2650 000BF450  D0 01 00 24 */	stfs f0, 0x24(r1)
 /* 800C2654 000BF454  4B FB 42 65 */	bl iSphereIsectVec__FPC7xSpherePC5xVec3P6xIsect
 /* 800C2658 000BF458  C0 21 00 A4 */	lfs f1, 0xa4(r1)
-/* 800C265C 000BF45C  C0 02 9D 18 */	lfs f0, $$21049_0-_SDA2_BASE_(r2)
+/* 800C265C 000BF45C  C0 02 9D 18 */	lfs f0, _esc__2_1049_0-_SDA2_BASE_(r2)
 /* 800C2660 000BF460  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800C2664 000BF464  4C 40 13 82 */	cror 2, 0, 2
 /* 800C2668 000BF468  7C 00 00 26 */	mfcr r0
@@ -279,7 +281,7 @@ lbl_800C2678:
 /* 800C269C 000BF49C  D0 01 00 44 */	stfs f0, 0x44(r1)
 /* 800C26A0 000BF4A0  4B FB 48 55 */	bl iCylinderIsectVec__FPC9xCylinderPC5xVec3P6xIsect
 /* 800C26A4 000BF4A4  C0 21 00 78 */	lfs f1, 0x78(r1)
-/* 800C26A8 000BF4A8  C0 02 9D 18 */	lfs f0, $$21049_0-_SDA2_BASE_(r2)
+/* 800C26A8 000BF4A8  C0 02 9D 18 */	lfs f0, _esc__2_1049_0-_SDA2_BASE_(r2)
 /* 800C26AC 000BF4AC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800C26B0 000BF4B0  4C 40 13 82 */	cror 2, 0, 2
 /* 800C26B4 000BF4B4  7C 00 00 26 */	mfcr r0
@@ -297,7 +299,7 @@ lbl_800C26C4:
 /* 800C26E0 000BF4E0  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 800C26E4 000BF4E4  4B FB 41 D5 */	bl iSphereIsectVec__FPC7xSpherePC5xVec3P6xIsect
 /* 800C26E8 000BF4E8  C0 21 00 4C */	lfs f1, 0x4c(r1)
-/* 800C26EC 000BF4EC  C0 02 9D 18 */	lfs f0, $$21049_0-_SDA2_BASE_(r2)
+/* 800C26EC 000BF4EC  C0 02 9D 18 */	lfs f0, _esc__2_1049_0-_SDA2_BASE_(r2)
 /* 800C26F0 000BF4F0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800C26F4 000BF4F4  4C 40 13 82 */	cror 2, 0, 2
 /* 800C26F8 000BF4F8  7C 00 00 26 */	mfcr r0
@@ -399,8 +401,8 @@ lbl_800C2844:
 /* 800C2844 000BF644  28 07 00 00 */	cmplwi r7, 0
 /* 800C2848 000BF648  41 82 00 58 */	beq lbl_800C28A0
 /* 800C284C 000BF64C  C0 46 00 00 */	lfs f2, 0(r6)
-/* 800C2850 000BF650  C0 02 9D 18 */	lfs f0, $$21049_0-_SDA2_BASE_(r2)
-/* 800C2854 000BF654  C0 22 9D 1C */	lfs f1, $$21074-_SDA2_BASE_(r2)
+/* 800C2850 000BF650  C0 02 9D 18 */	lfs f0, _esc__2_1049_0-_SDA2_BASE_(r2)
+/* 800C2854 000BF654  C0 22 9D 1C */	lfs f1, _esc__2_1074-_SDA2_BASE_(r2)
 /* 800C2858 000BF658  FC 02 00 00 */	fcmpu cr0, f2, f0
 /* 800C285C 000BF65C  41 82 00 08 */	beq lbl_800C2864
 /* 800C2860 000BF660  FC 20 10 90 */	fmr f1, f2
@@ -414,8 +416,8 @@ lbl_800C2878:
 /* 800C2878 000BF678  28 07 00 00 */	cmplwi r7, 0
 /* 800C287C 000BF67C  41 82 00 24 */	beq lbl_800C28A0
 /* 800C2880 000BF680  C0 46 00 00 */	lfs f2, 0(r6)
-/* 800C2884 000BF684  C0 02 9D 18 */	lfs f0, $$21049_0-_SDA2_BASE_(r2)
-/* 800C2888 000BF688  C0 22 9D 1C */	lfs f1, $$21074-_SDA2_BASE_(r2)
+/* 800C2884 000BF684  C0 02 9D 18 */	lfs f0, _esc__2_1049_0-_SDA2_BASE_(r2)
+/* 800C2888 000BF688  C0 22 9D 1C */	lfs f1, _esc__2_1074-_SDA2_BASE_(r2)
 /* 800C288C 000BF68C  FC 02 00 00 */	fcmpu cr0, f2, f0
 /* 800C2890 000BF690  41 82 00 08 */	beq lbl_800C2898
 /* 800C2894 000BF694  FC 20 10 90 */	fmr f1, f2
@@ -487,7 +489,7 @@ lbl_800C2920:
 /* 800C296C 000BF76C  7C 64 1B 78 */	mr r4, r3
 /* 800C2970 000BF770  38 A5 00 1C */	addi r5, r5, 0x1c
 /* 800C2974 000BF774  4B F4 4F 39 */	bl xVec3Sub__FP5xVec3PC5xVec3PC5xVec3
-/* 800C2978 000BF778  C0 22 9D 10 */	lfs f1, $$2971_1-_SDA2_BASE_(r2)
+/* 800C2978 000BF778  C0 22 9D 10 */	lfs f1, _esc__2_971_1-_SDA2_BASE_(r2)
 /* 800C297C 000BF77C  38 61 00 08 */	addi r3, r1, 8
 /* 800C2980 000BF780  38 81 00 14 */	addi r4, r1, 0x14
 /* 800C2984 000BF784  38 A1 00 20 */	addi r5, r1, 0x20
@@ -533,7 +535,7 @@ lbl_800C29F8:
 /* 800C2A10 000BF810  7F C3 F3 78 */	mr r3, r30
 /* 800C2A14 000BF814  38 9F 00 30 */	addi r4, r31, 0x30
 /* 800C2A18 000BF818  4B F4 88 4D */	bl dot__5xVec3CFRC5xVec3
-/* 800C2A1C 000BF81C  C0 02 9D 18 */	lfs f0, $$21049_0-_SDA2_BASE_(r2)
+/* 800C2A1C 000BF81C  C0 02 9D 18 */	lfs f0, _esc__2_1049_0-_SDA2_BASE_(r2)
 /* 800C2A20 000BF820  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800C2A24 000BF824  4C 40 13 82 */	cror 2, 0, 2
 /* 800C2A28 000BF828  40 82 00 0C */	bne lbl_800C2A34
@@ -600,3 +602,6 @@ xSphereHitsVCircle__FRC7xSphereRC5xVec3f:
 /* 800C2AF0 000BF8F0  7C 08 03 A6 */	mtlr r0
 /* 800C2AF4 000BF8F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 800C2AF8 000BF8F8  4E 80 00 20 */	blr 
+
+.endif
+

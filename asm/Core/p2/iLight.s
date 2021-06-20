@@ -8,12 +8,14 @@ gLightWorld:
 
 .section .sdata2
 
-.global $$2612
-$$2612:
+.global _esc__2_612
+_esc__2_612:
 	.incbin "baserom.dol", 0x32F818, 0x4
-.global $$2613_1
-$$2613_1:
+.global _esc__2_613_1
+_esc__2_613_1:
 	.incbin "baserom.dol", 0x32F81C, 0x4
+
+.if 0
 
 .section .text
 
@@ -83,8 +85,8 @@ lbl_8007658C:
 /* 800765A8 000733A8  48 21 E4 71 */	bl RwFrameUpdateObjects
 /* 800765AC 000733AC  93 DD 00 00 */	stw r30, 0(r29)
 /* 800765B0 000733B0  7F A3 EB 78 */	mr r3, r29
-/* 800765B4 000733B4  C0 22 91 38 */	lfs f1, $$2612-_SDA2_BASE_(r2)
-/* 800765B8 000733B8  C0 02 91 3C */	lfs f0, $$2613_1-_SDA2_BASE_(r2)
+/* 800765B4 000733B4  C0 22 91 38 */	lfs f1, _esc__2_612-_SDA2_BASE_(r2)
+/* 800765B8 000733B8  C0 02 91 3C */	lfs f0, _esc__2_613_1-_SDA2_BASE_(r2)
 /* 800765BC 000733BC  D0 3D 00 08 */	stfs f1, 8(r29)
 /* 800765C0 000733C0  D0 3D 00 0C */	stfs f1, 0xc(r29)
 /* 800765C4 000733C4  D0 3D 00 10 */	stfs f1, 0x10(r29)
@@ -252,3 +254,6 @@ lbl_800767DC:
 /* 800767DC 000735DC  80 63 00 04 */	lwz r3, 4(r3)
 /* 800767E0 000735E0  98 03 00 02 */	stb r0, 2(r3)
 /* 800767E4 000735E4  4E 80 00 20 */	blr 
+
+.endif
+

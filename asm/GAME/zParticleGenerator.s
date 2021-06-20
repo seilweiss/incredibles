@@ -2,38 +2,38 @@
 
 .section .rodata
 
-.global $$2stringBase0_135
-$$2stringBase0_135:
+.global _esc__2_stringBase0_135
+_esc__2_stringBase0_135:
 	.incbin "baserom.dol", 0x2E6500, 0x20
 
 .section .sbss
 
-.global max_system_asset_size__32$$2unnamed$$2zParticleGenerator_cpp$$2
-max_system_asset_size__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+.global max_system_asset_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_
+max_system_asset_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_:
 	.skip 0x4
-.global systems__32$$2unnamed$$2zParticleGenerator_cpp$$2
-systems__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+.global systems__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_
+systems__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_:
 	.skip 0x4
-.global system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2
-system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+.global system_handler_set__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_
+system_handler_set__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_:
 	.skip 0x1C
-.global system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2
-system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+.global system_handler_set_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_
+system_handler_set_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_:
 	.skip 0x1C
-.global generators__32$$2unnamed$$2zParticleGenerator_cpp$$2
-generators__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+.global generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_
+generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_:
 	.skip 0x4
-.global max_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2
-max_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+.global max_generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_
+max_generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_:
 	.skip 0x4
-.global generators_used__32$$2unnamed$$2zParticleGenerator_cpp$$2
-generators_used__32$$2unnamed$$2zParticleGenerator_cpp$$2:
+.global generators_used__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_
+generators_used__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_:
 	.skip 0x8
 
 .section .sbss2
 
-.global $$21175_4
-$$21175_4:
+.global _esc__2_1175_4
+_esc__2_1175_4:
 	.skip 0x4
 .global lbl_803D93B4
 lbl_803D93B4:
@@ -50,20 +50,22 @@ __vt__18zParticleGenerator:
 
 .section .sdata2
 
-.global $$21178_4
-$$21178_4:
+.global _esc__2_1178_4
+_esc__2_1178_4:
 	.incbin "baserom.dol", 0x333620, 0x4
-.global $$21179_3
-$$21179_3:
+.global _esc__2_1179_3
+_esc__2_1179_3:
 	.incbin "baserom.dol", 0x333624, 0x4
-.global $$21181_3
-$$21181_3:
+.global _esc__2_1181_3
+_esc__2_1181_3:
 	.incbin "baserom.dol", 0x333628, 0x8
+
+.if 0
 
 .section .text
 
-.global create_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv
-create_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv:
+.global create_handler_sets__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv
+create_handler_sets__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv:
 /* 801CEF18 001CBD18  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CEF1C 001CBD1C  7C 08 02 A6 */	mflr r0
 /* 801CEF20 001CBD20  39 40 00 00 */	li r10, 0
@@ -73,8 +75,8 @@ create_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv:
 /* 801CEF30 001CBD30  38 60 00 00 */	li r3, 0
 /* 801CEF34 001CBD34  38 C0 00 01 */	li r6, 1
 /* 801CEF38 001CBD38  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 801CEF3C 001CBD3C  38 8D D9 D4 */	addi r4, r13, system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
-/* 801CEF40 001CBD40  81 2D D9 B4 */	lwz r9, systems__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CEF3C 001CBD3C  38 8D D9 D4 */	addi r4, r13, system_handler_set_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
+/* 801CEF40 001CBD40  81 2D D9 B4 */	lwz r9, systems__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CEF44 001CBD44  39 09 00 10 */	addi r8, r9, 0x10
 /* 801CEF48 001CBD48  7C 09 03 A6 */	mtctr r0
 lbl_801CEF4C:
@@ -107,11 +109,11 @@ lbl_801CEF74:
 /* 801CEFA8 001CBDA8  38 00 00 07 */	li r0, 7
 /* 801CEFAC 001CBDAC  39 20 00 00 */	li r9, 0
 /* 801CEFB0 001CBDB0  38 80 00 00 */	li r4, 0
-/* 801CEFB4 001CBDB4  38 CD D9 B8 */	addi r6, r13, system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
+/* 801CEFB4 001CBDB4  38 CD D9 B8 */	addi r6, r13, system_handler_set__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
 /* 801CEFB8 001CBDB8  38 A0 00 01 */	li r5, 1
 /* 801CEFBC 001CBDBC  7C 09 03 A6 */	mtctr r0
 lbl_801CEFC0:
-/* 801CEFC0 001CBDC0  81 0D D9 B4 */	lwz r8, systems__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CEFC0 001CBDC0  81 0D D9 B4 */	lwz r8, systems__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CEFC4 001CBDC4  7C A7 48 30 */	slw r7, r5, r9
 /* 801CEFC8 001CBDC8  7C 66 21 2E */	stwx r3, r6, r4
 /* 801CEFCC 001CBDCC  7D 0A 43 78 */	mr r10, r8
@@ -139,12 +141,12 @@ lbl_801CF008:
 /* 801CF014 001CBE14  38 21 00 10 */	addi r1, r1, 0x10
 /* 801CF018 001CBE18  4E 80 00 20 */	blr 
 
-.global sort_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv
-sort_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv:
+.global sort_handler_sets__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv
+sort_handler_sets__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv:
 /* 801CF01C 001CBE1C  4E 80 00 20 */	blr 
 
-.global compare_generator_systems_function__32$$2unnamed$$2zParticleGenerator_cpp$$2FPCvPCv
-compare_generator_systems_function__32$$2unnamed$$2zParticleGenerator_cpp$$2FPCvPCv:
+.global compare_generator_systems_function__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_FPCvPCv
+compare_generator_systems_function__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_FPCvPCv:
 /* 801CF020 001CBE20  80 A3 00 00 */	lwz r5, 0(r3)
 /* 801CF024 001CBE24  80 C4 00 00 */	lwz r6, 0(r4)
 /* 801CF028 001CBE28  80 85 00 10 */	lwz r4, 0x10(r5)
@@ -159,20 +161,20 @@ lbl_801CF048:
 /* 801CF048 001CBE48  7C 66 28 50 */	subf r3, r6, r5
 /* 801CF04C 001CBE4C  4E 80 00 20 */	blr 
 
-.global sort_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv
-sort_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv:
+.global sort_generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv
+sort_generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv:
 /* 801CF050 001CBE50  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CF054 001CBE54  7C 08 02 A6 */	mflr r0
-/* 801CF058 001CBE58  3C 80 80 1D */	lis r4, compare_generator_systems_function__32$$2unnamed$$2zParticleGenerator_cpp$$2FPCvPCv@ha
+/* 801CF058 001CBE58  3C 80 80 1D */	lis r4, compare_generator_systems_function__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_FPCvPCv@ha
 /* 801CF05C 001CBE5C  38 A0 00 04 */	li r5, 4
 /* 801CF060 001CBE60  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801CF064 001CBE64  38 C4 F0 20 */	addi r6, r4, compare_generator_systems_function__32$$2unnamed$$2zParticleGenerator_cpp$$2FPCvPCv@l
-/* 801CF068 001CBE68  80 6D D9 F0 */	lwz r3, generators__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
-/* 801CF06C 001CBE6C  80 8D D9 F8 */	lwz r4, generators_used__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF064 001CBE64  38 C4 F0 20 */	addi r6, r4, compare_generator_systems_function__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_FPCvPCv@l
+/* 801CF068 001CBE68  80 6D D9 F0 */	lwz r3, generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CF06C 001CBE6C  80 8D D9 F8 */	lwz r4, generators_used__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF070 001CBE70  48 0E BD F9 */	bl qsort
-/* 801CF074 001CBE74  80 0D D9 F8 */	lwz r0, generators_used__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
-/* 801CF078 001CBE78  80 6D D9 B4 */	lwz r3, systems__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
-/* 801CF07C 001CBE7C  80 8D D9 F0 */	lwz r4, generators__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF074 001CBE74  80 0D D9 F8 */	lwz r0, generators_used__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CF078 001CBE78  80 6D D9 B4 */	lwz r3, systems__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CF07C 001CBE7C  80 8D D9 F0 */	lwz r4, generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF080 001CBE80  54 00 10 3A */	slwi r0, r0, 2
 /* 801CF084 001CBE84  7C 65 1B 78 */	mr r5, r3
 /* 801CF088 001CBE88  38 C3 00 10 */	addi r6, r3, 0x10
@@ -181,7 +183,7 @@ sort_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv:
 lbl_801CF094:
 /* 801CF094 001CBE94  7C 04 38 40 */	cmplw r4, r7
 /* 801CF098 001CBE98  41 82 00 7C */	beq lbl_801CF114
-/* 801CF09C 001CBE9C  80 6D D9 B4 */	lwz r3, systems__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF09C 001CBE9C  80 6D D9 B4 */	lwz r3, systems__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF0A0 001CBEA0  38 07 00 03 */	addi r0, r7, 3
 /* 801CF0A4 001CBEA4  7C 04 00 50 */	subf r0, r4, r0
 /* 801CF0A8 001CBEA8  7C 89 23 78 */	mr r9, r4
@@ -220,8 +222,8 @@ lbl_801CF114:
 /* 801CF11C 001CBF1C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801CF120 001CBF20  4E 80 00 20 */	blr 
 
-.global create_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv
-create_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv:
+.global create_generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv
+create_generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv:
 /* 801CF124 001CBF24  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801CF128 001CBF28  7C 08 02 A6 */	mflr r0
 /* 801CF12C 001CBF2C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -246,7 +248,7 @@ lbl_801CF160:
 /* 801CF174 001CBF74  7C 00 E8 40 */	cmplw r0, r29
 /* 801CF178 001CBF78  40 82 00 10 */	bne lbl_801CF188
 /* 801CF17C 001CBF7C  80 81 00 08 */	lwz r4, 8(r1)
-/* 801CF180 001CBF80  48 00 00 CD */	bl validate_asset__32$$2unnamed$$2zParticleGenerator_cpp$$2FRC14zParticleAsseti
+/* 801CF180 001CBF80  48 00 00 CD */	bl validate_asset__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_FRC14zParticleAsseti
 /* 801CF184 001CBF84  3B 9C 00 01 */	addi r28, r28, 1
 lbl_801CF188:
 /* 801CF188 001CBF88  3B 7B 00 01 */	addi r27, r27, 1
@@ -255,11 +257,11 @@ lbl_801CF18C:
 /* 801CF190 001CBF90  41 80 FF D0 */	blt lbl_801CF160
 /* 801CF194 001CBF94  38 1C 00 80 */	addi r0, r28, 0x80
 /* 801CF198 001CBF98  38 80 00 00 */	li r4, 0
-/* 801CF19C 001CBF9C  90 0D D9 F4 */	stw r0, max_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF19C 001CBF9C  90 0D D9 F4 */	stw r0, max_generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF1A0 001CBFA0  54 03 10 3A */	slwi r3, r0, 2
 /* 801CF1A4 001CBFA4  38 A0 00 00 */	li r5, 0
 /* 801CF1A8 001CBFA8  4B E5 28 29 */	bl __nwa__FUl14xMemStaticTypeUi
-/* 801CF1AC 001CBFAC  90 6D D9 F0 */	stw r3, generators__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF1AC 001CBFAC  90 6D D9 F0 */	stw r3, generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF1B0 001CBFB0  3B 80 00 00 */	li r28, 0
 /* 801CF1B4 001CBFB4  7C 7B 1B 78 */	mr r27, r3
 /* 801CF1B8 001CBFB8  3F E0 44 59 */	lis r31, 0x4459
@@ -274,7 +276,7 @@ lbl_801CF1C0:
 /* 801CF1D8 001CBFD8  40 82 00 3C */	bne lbl_801CF214
 /* 801CF1DC 001CBFDC  88 03 00 1F */	lbz r0, 0x1f(r3)
 /* 801CF1E0 001CBFE0  7C 64 1B 78 */	mr r4, r3
-/* 801CF1E4 001CBFE4  80 6D D9 B4 */	lwz r3, systems__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF1E4 001CBFE4  80 6D D9 B4 */	lwz r3, systems__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF1E8 001CBFE8  54 00 10 3A */	slwi r0, r0, 2
 /* 801CF1EC 001CBFEC  7C 63 00 2E */	lwzx r3, r3, r0
 /* 801CF1F0 001CBFF0  81 83 00 14 */	lwz r12, 0x14(r3)
@@ -291,20 +293,20 @@ lbl_801CF214:
 lbl_801CF218:
 /* 801CF218 001CC018  7C 1C F0 00 */	cmpw r28, r30
 /* 801CF21C 001CC01C  41 80 FF A4 */	blt lbl_801CF1C0
-/* 801CF220 001CC020  80 0D D9 F0 */	lwz r0, generators__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF220 001CC020  80 0D D9 F0 */	lwz r0, generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF224 001CC024  7C 00 D8 50 */	subf r0, r0, r27
 /* 801CF228 001CC028  7C 00 16 70 */	srawi r0, r0, 2
 /* 801CF22C 001CC02C  7C 00 01 94 */	addze r0, r0
-/* 801CF230 001CC030  90 0D D9 F8 */	stw r0, generators_used__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
-/* 801CF234 001CC034  4B FF FE 1D */	bl sort_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv
+/* 801CF230 001CC030  90 0D D9 F8 */	stw r0, generators_used__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CF234 001CC034  4B FF FE 1D */	bl sort_generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv
 /* 801CF238 001CC038  BB 61 00 1C */	lmw r27, 0x1c(r1)
 /* 801CF23C 001CC03C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801CF240 001CC040  7C 08 03 A6 */	mtlr r0
 /* 801CF244 001CC044  38 21 00 30 */	addi r1, r1, 0x30
 /* 801CF248 001CC048  4E 80 00 20 */	blr 
 
-.global validate_asset__32$$2unnamed$$2zParticleGenerator_cpp$$2FRC14zParticleAsseti
-validate_asset__32$$2unnamed$$2zParticleGenerator_cpp$$2FRC14zParticleAsseti:
+.global validate_asset__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_FRC14zParticleAsseti
+validate_asset__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_FRC14zParticleAsseti:
 /* 801CF24C 001CC04C  4E 80 00 20 */	blr 
 
 .global zParticleSceneEnter__Fv
@@ -316,10 +318,10 @@ zParticleSceneEnter__Fv:
 /* 801CF260 001CC060  48 00 16 E5 */	bl scene_enter__16zParticleLocatorFv
 /* 801CF264 001CC064  48 00 19 ED */	bl zParticleSystemCreateAll__Fv
 /* 801CF268 001CC068  3B E0 00 00 */	li r31, 0
-/* 801CF26C 001CC06C  90 6D D9 B4 */	stw r3, systems__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF26C 001CC06C  90 6D D9 B4 */	stw r3, systems__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF270 001CC070  7C 7E 1B 78 */	mr r30, r3
 /* 801CF274 001CC074  3B A3 00 10 */	addi r29, r3, 0x10
-/* 801CF278 001CC078  93 ED D9 B0 */	stw r31, max_system_asset_size__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF278 001CC078  93 ED D9 B0 */	stw r31, max_system_asset_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF27C 001CC07C  48 00 00 3C */	b lbl_801CF2B8
 lbl_801CF280:
 /* 801CF280 001CC080  80 7E 00 00 */	lwz r3, 0(r30)
@@ -331,19 +333,19 @@ lbl_801CF280:
 /* 801CF298 001CC098  81 8C 00 30 */	lwz r12, 0x30(r12)
 /* 801CF29C 001CC09C  7D 89 03 A6 */	mtctr r12
 /* 801CF2A0 001CC0A0  4E 80 04 21 */	bctrl 
-/* 801CF2A4 001CC0A4  80 0D D9 B0 */	lwz r0, max_system_asset_size__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF2A4 001CC0A4  80 0D D9 B0 */	lwz r0, max_system_asset_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF2A8 001CC0A8  7C 00 18 00 */	cmpw r0, r3
 /* 801CF2AC 001CC0AC  40 80 00 08 */	bge lbl_801CF2B4
-/* 801CF2B0 001CC0B0  90 6D D9 B0 */	stw r3, max_system_asset_size__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF2B0 001CC0B0  90 6D D9 B0 */	stw r3, max_system_asset_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801CF2B4:
 /* 801CF2B4 001CC0B4  3B DE 00 04 */	addi r30, r30, 4
 lbl_801CF2B8:
 /* 801CF2B8 001CC0B8  7C 1E E8 40 */	cmplw r30, r29
 /* 801CF2BC 001CC0BC  40 82 FF C4 */	bne lbl_801CF280
-/* 801CF2C0 001CC0C0  4B FF FC 59 */	bl create_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv
-/* 801CF2C4 001CC0C4  4B FF FD 59 */	bl sort_handler_sets__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv
-/* 801CF2C8 001CC0C8  80 0D D9 D4 */	lwz r0, system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
-/* 801CF2CC 001CC0CC  80 6D D9 B8 */	lwz r3, system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF2C0 001CC0C0  4B FF FC 59 */	bl create_handler_sets__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv
+/* 801CF2C4 001CC0C4  4B FF FD 59 */	bl sort_handler_sets__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv
+/* 801CF2C8 001CC0C8  80 0D D9 D4 */	lwz r0, system_handler_set_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CF2CC 001CC0CC  80 6D D9 B8 */	lwz r3, system_handler_set__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF2D0 001CC0D0  54 00 10 3A */	slwi r0, r0, 2
 /* 801CF2D4 001CC0D4  7C 7D 1B 78 */	mr r29, r3
 /* 801CF2D8 001CC0D8  7F C3 02 14 */	add r30, r3, r0
@@ -358,7 +360,7 @@ lbl_801CF2E0:
 lbl_801CF2F8:
 /* 801CF2F8 001CC0F8  7C 1D F0 40 */	cmplw r29, r30
 /* 801CF2FC 001CC0FC  40 82 FF E4 */	bne lbl_801CF2E0
-/* 801CF300 001CC100  4B FF FE 25 */	bl create_generators__32$$2unnamed$$2zParticleGenerator_cpp$$2Fv
+/* 801CF300 001CC100  4B FF FE 25 */	bl create_generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv
 /* 801CF304 001CC104  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 801CF308 001CC108  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801CF30C 001CC10C  7C 08 03 A6 */	mtlr r0
@@ -371,15 +373,15 @@ zParticleSceneExit__Fv:
 /* 801CF31C 001CC11C  7C 08 02 A6 */	mflr r0
 /* 801CF320 001CC120  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CF324 001CC124  BF C1 00 08 */	stmw r30, 8(r1)
-/* 801CF328 001CC128  80 0D D9 F8 */	lwz r0, generators_used__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
-/* 801CF32C 001CC12C  80 6D D9 F0 */	lwz r3, generators__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF328 001CC128  80 0D D9 F8 */	lwz r0, generators_used__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CF32C 001CC12C  80 6D D9 F0 */	lwz r3, generators__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF330 001CC130  54 00 10 3A */	slwi r0, r0, 2
 /* 801CF334 001CC134  7C 7F 1B 78 */	mr r31, r3
 /* 801CF338 001CC138  7F C3 02 14 */	add r30, r3, r0
 /* 801CF33C 001CC13C  48 00 00 30 */	b lbl_801CF36C
 lbl_801CF340:
 /* 801CF340 001CC140  80 9F 00 00 */	lwz r4, 0(r31)
-/* 801CF344 001CC144  80 AD D9 B4 */	lwz r5, systems__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801CF344 001CC144  80 AD D9 B4 */	lwz r5, systems__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CF348 001CC148  80 64 00 10 */	lwz r3, 0x10(r4)
 /* 801CF34C 001CC14C  88 03 00 1F */	lbz r0, 0x1f(r3)
 /* 801CF350 001CC150  54 00 10 3A */	slwi r0, r0, 2
@@ -392,8 +394,8 @@ lbl_801CF340:
 lbl_801CF36C:
 /* 801CF36C 001CC16C  7C 1F F0 40 */	cmplw r31, r30
 /* 801CF370 001CC170  40 82 FF D0 */	bne lbl_801CF340
-/* 801CF374 001CC174  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
-/* 801CF378 001CC178  38 8D D9 B8 */	addi r4, r13, system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
+/* 801CF374 001CC174  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
+/* 801CF378 001CC178  38 8D D9 B8 */	addi r4, r13, system_handler_set__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
 /* 801CF37C 001CC17C  80 03 00 04 */	lwz r0, 4(r3)
 /* 801CF380 001CC180  83 C4 00 04 */	lwz r30, 4(r4)
 /* 801CF384 001CC184  54 00 10 3A */	slwi r0, r0, 2
@@ -419,8 +421,8 @@ lbl_801CF3A8:
 zParticleSetup__Fv:
 /* 801CF3C4 001CC1C4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CF3C8 001CC1C8  7C 08 02 A6 */	mflr r0
-/* 801CF3CC 001CC1CC  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
-/* 801CF3D0 001CC1D0  38 8D D9 B8 */	addi r4, r13, system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
+/* 801CF3CC 001CC1CC  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
+/* 801CF3D0 001CC1D0  38 8D D9 B8 */	addi r4, r13, system_handler_set__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
 /* 801CF3D4 001CC1D4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CF3D8 001CC1D8  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801CF3DC 001CC1DC  80 03 00 08 */	lwz r0, 8(r3)
@@ -448,8 +450,8 @@ lbl_801CF408:
 zParticleReset__Fv:
 /* 801CF424 001CC224  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CF428 001CC228  7C 08 02 A6 */	mflr r0
-/* 801CF42C 001CC22C  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
-/* 801CF430 001CC230  38 8D D9 B8 */	addi r4, r13, system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
+/* 801CF42C 001CC22C  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
+/* 801CF430 001CC230  38 8D D9 B8 */	addi r4, r13, system_handler_set__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
 /* 801CF434 001CC234  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CF438 001CC238  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801CF43C 001CC23C  80 03 00 0C */	lwz r0, 0xc(r3)
@@ -477,8 +479,8 @@ lbl_801CF468:
 zParticleUpdate__Ff:
 /* 801CF484 001CC284  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801CF488 001CC288  7C 08 02 A6 */	mflr r0
-/* 801CF48C 001CC28C  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
-/* 801CF490 001CC290  38 8D D9 B8 */	addi r4, r13, system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
+/* 801CF48C 001CC28C  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
+/* 801CF490 001CC290  38 8D D9 B8 */	addi r4, r13, system_handler_set__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
 /* 801CF494 001CC294  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801CF498 001CC298  DB E1 00 18 */	stfd f31, 0x18(r1)
 /* 801CF49C 001CC29C  FF E0 08 90 */	fmr f31, f1
@@ -510,8 +512,8 @@ lbl_801CF4D4:
 zParticlePreRender__Fv:
 /* 801CF4F4 001CC2F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CF4F8 001CC2F8  7C 08 02 A6 */	mflr r0
-/* 801CF4FC 001CC2FC  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
-/* 801CF500 001CC300  38 8D D9 B8 */	addi r4, r13, system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
+/* 801CF4FC 001CC2FC  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
+/* 801CF500 001CC300  38 8D D9 B8 */	addi r4, r13, system_handler_set__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
 /* 801CF504 001CC304  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CF508 001CC308  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801CF50C 001CC30C  80 03 00 14 */	lwz r0, 0x14(r3)
@@ -539,8 +541,8 @@ lbl_801CF538:
 zParticleRender__Fv:
 /* 801CF554 001CC354  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CF558 001CC358  7C 08 02 A6 */	mflr r0
-/* 801CF55C 001CC35C  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
-/* 801CF560 001CC360  38 8D D9 B8 */	addi r4, r13, system_handler_set__32$$2unnamed$$2zParticleGenerator_cpp$$2-_SDA_BASE_
+/* 801CF55C 001CC35C  38 6D D9 D4 */	addi r3, r13, system_handler_set_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
+/* 801CF560 001CC360  38 8D D9 B8 */	addi r4, r13, system_handler_set__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_-_SDA_BASE_
 /* 801CF564 001CC364  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CF568 001CC368  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801CF56C 001CC36C  80 03 00 18 */	lwz r0, 0x18(r3)
@@ -734,10 +736,10 @@ perturb_dir__18zParticleGeneratorFR5xVec3f:
 /* 801CF7C4 001CC5C4  DB CC FF E0 */	stfd f30, -0x20(r12)
 /* 801CF7C8 001CC5C8  F3 CC 0F E8 */	psq_st f30, -24(r12), 0, qr0
 /* 801CF7CC 001CC5CC  93 EC FF DC */	stw r31, -0x24(r12)
-/* 801CF7D0 001CC5D0  C0 42 CF 40 */	lfs f2, $$21178_4-_SDA2_BASE_(r2)
+/* 801CF7D0 001CC5D0  C0 42 CF 40 */	lfs f2, _esc__2_1178_4-_SDA2_BASE_(r2)
 /* 801CF7D4 001CC5D4  7C 7F 1B 78 */	mr r31, r3
-/* 801CF7D8 001CC5D8  C0 02 CF 44 */	lfs f0, $$21179_3-_SDA2_BASE_(r2)
-/* 801CF7DC 001CC5DC  80 82 F6 90 */	lwz r4, $$21175_4-_SDA2_BASE_(r2)
+/* 801CF7D8 001CC5D8  C0 02 CF 44 */	lfs f0, _esc__2_1179_3-_SDA2_BASE_(r2)
+/* 801CF7DC 001CC5DC  80 82 F6 90 */	lwz r4, _esc__2_1175_4-_SDA2_BASE_(r2)
 /* 801CF7E0 001CC5E0  EF E2 00 72 */	fmuls f31, f2, f1
 /* 801CF7E4 001CC5E4  80 62 F6 94 */	lwz r3, lbl_803D93B4-_SDA2_BASE_(r2)
 /* 801CF7E8 001CC5E8  EF C0 00 72 */	fmuls f30, f0, f1
@@ -748,7 +750,7 @@ perturb_dir__18zParticleGeneratorFR5xVec3f:
 /* 801CF7FC 001CC5FC  4B E3 7B 69 */	bl xrand_RandomInt32__Fv
 /* 801CF800 001CC600  3C 00 43 30 */	lis r0, 0x4330
 /* 801CF804 001CC604  90 61 00 54 */	stw r3, 0x54(r1)
-/* 801CF808 001CC608  C8 22 CF 48 */	lfd f1, $$21181_3-_SDA2_BASE_(r2)
+/* 801CF808 001CC608  C8 22 CF 48 */	lfd f1, _esc__2_1181_3-_SDA2_BASE_(r2)
 /* 801CF80C 001CC60C  90 01 00 50 */	stw r0, 0x50(r1)
 /* 801CF810 001CC610  C8 01 00 50 */	lfd f0, 0x50(r1)
 /* 801CF814 001CC614  EC 00 08 28 */	fsubs f0, f0, f1
@@ -757,7 +759,7 @@ perturb_dir__18zParticleGeneratorFR5xVec3f:
 /* 801CF820 001CC620  4B E3 7B 45 */	bl xrand_RandomInt32__Fv
 /* 801CF824 001CC624  3C 00 43 30 */	lis r0, 0x4330
 /* 801CF828 001CC628  90 61 00 5C */	stw r3, 0x5c(r1)
-/* 801CF82C 001CC62C  C8 22 CF 48 */	lfd f1, $$21181_3-_SDA2_BASE_(r2)
+/* 801CF82C 001CC62C  C8 22 CF 48 */	lfd f1, _esc__2_1181_3-_SDA2_BASE_(r2)
 /* 801CF830 001CC630  90 01 00 58 */	stw r0, 0x58(r1)
 /* 801CF834 001CC634  C8 01 00 58 */	lfd f0, 0x58(r1)
 /* 801CF838 001CC638  EC 00 08 28 */	fsubs f0, f0, f1
@@ -766,7 +768,7 @@ perturb_dir__18zParticleGeneratorFR5xVec3f:
 /* 801CF844 001CC644  4B E3 7B 21 */	bl xrand_RandomInt32__Fv
 /* 801CF848 001CC648  3C 00 43 30 */	lis r0, 0x4330
 /* 801CF84C 001CC64C  90 61 00 64 */	stw r3, 0x64(r1)
-/* 801CF850 001CC650  C8 22 CF 48 */	lfd f1, $$21181_3-_SDA2_BASE_(r2)
+/* 801CF850 001CC650  C8 22 CF 48 */	lfd f1, _esc__2_1181_3-_SDA2_BASE_(r2)
 /* 801CF854 001CC654  38 61 00 20 */	addi r3, r1, 0x20
 /* 801CF858 001CC658  90 01 00 60 */	stw r0, 0x60(r1)
 /* 801CF85C 001CC65C  38 81 00 10 */	addi r4, r1, 0x10
@@ -792,8 +794,8 @@ perturb_dir__18zParticleGeneratorFR5xVec3f:
 
 .global type_name__14zParticleAssetFv
 type_name__14zParticleAssetFv:
-/* 801CF8AC 001CC6AC  3C 60 80 2F */	lis r3, $$2stringBase0_135@ha
-/* 801CF8B0 001CC6B0  38 63 95 00 */	addi r3, r3, $$2stringBase0_135@l
+/* 801CF8AC 001CC6AC  3C 60 80 2F */	lis r3, _esc__2_stringBase0_135@ha
+/* 801CF8B0 001CC6B0  38 63 95 00 */	addi r3, r3, _esc__2_stringBase0_135@l
 /* 801CF8B4 001CC6B4  4E 80 00 20 */	blr 
 
 .global scene_enter__15zParticleSystemFv
@@ -827,3 +829,6 @@ pre_render__15zParticleSystemFv:
 .global render__15zParticleSystemFv
 render__15zParticleSystemFv:
 /* 801CF8D4 001CC6D4  4E 80 00 20 */	blr 
+
+.endif
+

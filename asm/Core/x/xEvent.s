@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global zEntEvent__FPcUi
@@ -188,3 +190,6 @@ lbl_8002F0F0:
 /* 8002F0F8 0002BEF8  7C 08 03 A6 */	mtlr r0
 /* 8002F0FC 0002BEFC  38 21 00 30 */	addi r1, r1, 0x30
 /* 8002F100 0002BF00  4E 80 00 20 */	blr 
+
+.endif
+

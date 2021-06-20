@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global EventCB__Q24zNPC5groupFP5xBaseP5xBaseUiPCfP5xBaseUi
@@ -45,3 +47,6 @@ init__Q24zNPC5groupFR5xBaseR9xDynAssetUl:
 .global handle_event__Q24zNPC5groupFP5xBaseP5xBaseUiPCfP5xBaseUi
 handle_event__Q24zNPC5groupFP5xBaseP5xBaseUiPCfP5xBaseUi:
 /* 801B2EDC 001AFCDC  4E 80 00 20 */	blr 
+
+.endif
+

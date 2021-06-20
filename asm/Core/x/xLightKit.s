@@ -8,12 +8,14 @@ gLastLightKit:
 
 .section .sdata2
 
-.global $$2815_0
-$$2815_0:
+.global _esc__2_815_0
+_esc__2_815_0:
 	.incbin "baserom.dol", 0x32F040, 0x4
-.global $$2877
-$$2877:
+.global _esc__2_877
+_esc__2_877:
 	.incbin "baserom.dol", 0x32F044, 0x4
+
+.if 0
 
 .section .text
 
@@ -29,7 +31,7 @@ xLightKit_Prepare__FPv:
 /* 80043114 0003FF14  38 61 00 08 */	addi r3, r1, 8
 /* 80043118 0003FF18  4B FC 28 A5 */	bl __ct__18iAsyncLockRWSentryFv
 /* 8004311C 0003FF1C  38 1A 00 10 */	addi r0, r26, 0x10
-/* 80043120 0003FF20  C3 E2 89 60 */	lfs f31, $$2815_0-_SDA2_BASE_(r2)
+/* 80043120 0003FF20  C3 E2 89 60 */	lfs f31, _esc__2_815_0-_SDA2_BASE_(r2)
 /* 80043124 0003FF24  90 1A 00 0C */	stw r0, 0xc(r26)
 /* 80043128 0003FF28  7F 5D D3 78 */	mr r29, r26
 /* 8004312C 0003FF2C  7C 1C 03 78 */	mr r28, r0
@@ -77,8 +79,8 @@ lbl_800431B4:
 lbl_800431BC:
 /* 800431BC 0003FFBC  FC 40 18 90 */	fmr f2, f3
 lbl_800431C0:
-/* 800431C0 0003FFC0  C0 02 89 64 */	lfs f0, $$2877-_SDA2_BASE_(r2)
-/* 800431C4 0003FFC4  C0 22 89 60 */	lfs f1, $$2815_0-_SDA2_BASE_(r2)
+/* 800431C0 0003FFC0  C0 02 89 64 */	lfs f0, _esc__2_877-_SDA2_BASE_(r2)
+/* 800431C4 0003FFC4  C0 22 89 60 */	lfs f1, _esc__2_815_0-_SDA2_BASE_(r2)
 /* 800431C8 0003FFC8  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 800431CC 0003FFCC  40 81 00 08 */	ble lbl_800431D4
 /* 800431D0 0003FFD0  48 00 00 08 */	b lbl_800431D8
@@ -323,3 +325,6 @@ lbl_800434FC:
 /* 80043504 00040304  7C 08 03 A6 */	mtlr r0
 /* 80043508 00040308  38 21 00 20 */	addi r1, r1, 0x20
 /* 8004350C 0004030C  4E 80 00 20 */	blr 
+
+.endif
+

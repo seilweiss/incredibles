@@ -8,21 +8,23 @@ __vt__6zCamFP:
 
 .section .sdata2
 
-.global $$21013
-$$21013:
+.global _esc__2_1013
+_esc__2_1013:
 	.incbin "baserom.dol", 0x32FA78, 0x4
-.global $$21014
-$$21014:
+.global _esc__2_1014
+_esc__2_1014:
 	.incbin "baserom.dol", 0x32FA7C, 0x4
-.global $$21057_0
-$$21057_0:
+.global _esc__2_1057_0
+_esc__2_1057_0:
 	.incbin "baserom.dol", 0x32FA80, 0x4
-.global $$21058_1
-$$21058_1:
+.global _esc__2_1058_1
+_esc__2_1058_1:
 	.incbin "baserom.dol", 0x32FA84, 0x4
-.global $$21059_2
-$$21059_2:
+.global _esc__2_1059_2
+_esc__2_1059_2:
 	.incbin "baserom.dol", 0x32FA88, 0x8
+
+.if 0
 
 .section .text
 
@@ -114,10 +116,10 @@ CopyToPlayer__6zCamFPFP4xEnt:
 /* 80088A84 00085884  7C 64 1B 78 */	mr r4, r3
 /* 80088A88 00085888  80 7F 00 48 */	lwz r3, 0x48(r31)
 /* 80088A8C 0008588C  4B FE 8C A5 */	bl xVec3Copy__FP5xVec3PC5xVec3
-/* 80088A90 00085890  C0 22 93 98 */	lfs f1, $$21013-_SDA2_BASE_(r2)
+/* 80088A90 00085890  C0 22 93 98 */	lfs f1, _esc__2_1013-_SDA2_BASE_(r2)
 /* 80088A94 00085894  80 7F 00 48 */	lwz r3, 0x48(r31)
 /* 80088A98 00085898  FC 60 08 90 */	fmr f3, f1
-/* 80088A9C 0008589C  C0 42 93 9C */	lfs f2, $$21014-_SDA2_BASE_(r2)
+/* 80088A9C 0008589C  C0 42 93 9C */	lfs f2, _esc__2_1014-_SDA2_BASE_(r2)
 /* 80088AA0 000858A0  38 63 00 10 */	addi r3, r3, 0x10
 /* 80088AA4 000858A4  4B F8 18 9D */	bl xVec3Init__FP5xVec3fff
 /* 80088AA8 000858A8  80 9F 00 48 */	lwz r4, 0x48(r31)
@@ -170,7 +172,7 @@ start__6zCamFPFv:
 /* 80088B4C 0008594C  7F E3 FB 78 */	mr r3, r31
 /* 80088B50 00085950  80 84 04 C4 */	lwz r4, 0x4c4(r4)
 /* 80088B54 00085954  4B FF FE DD */	bl CopyYawFromPlayer__6zCamFPFP4xEnt
-/* 80088B58 00085958  C0 02 93 98 */	lfs f0, $$21013-_SDA2_BASE_(r2)
+/* 80088B58 00085958  C0 02 93 98 */	lfs f0, _esc__2_1013-_SDA2_BASE_(r2)
 /* 80088B5C 0008595C  38 00 00 81 */	li r0, 0x81
 /* 80088B60 00085960  D0 1F 00 98 */	stfs f0, 0x98(r31)
 /* 80088B64 00085964  98 1F 00 A4 */	stb r0, 0xa4(r31)
@@ -223,21 +225,21 @@ lbl_80088C00:
 /* 80088C04 00085A04  C0 1F 00 50 */	lfs f0, 0x50(r31)
 /* 80088C08 00085A08  C0 3F 00 94 */	lfs f1, 0x94(r31)
 /* 80088C0C 00085A0C  EC 42 00 32 */	fmuls f2, f2, f0
-/* 80088C10 00085A10  C0 02 93 A0 */	lfs f0, $$21057_0-_SDA2_BASE_(r2)
+/* 80088C10 00085A10  C0 02 93 A0 */	lfs f0, _esc__2_1057_0-_SDA2_BASE_(r2)
 /* 80088C14 00085A14  EC 3F 08 BC */	fnmsubs f1, f31, f2, f1
 /* 80088C18 00085A18  D0 3F 00 94 */	stfs f1, 0x94(r31)
 /* 80088C1C 00085A1C  C0 3F 00 94 */	lfs f1, 0x94(r31)
 /* 80088C20 00085A20  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80088C24 00085A24  40 81 00 14 */	ble lbl_80088C38
-/* 80088C28 00085A28  C0 02 93 A4 */	lfs f0, $$21058_1-_SDA2_BASE_(r2)
+/* 80088C28 00085A28  C0 02 93 A4 */	lfs f0, _esc__2_1058_1-_SDA2_BASE_(r2)
 /* 80088C2C 00085A2C  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80088C30 00085A30  D0 1F 00 94 */	stfs f0, 0x94(r31)
 /* 80088C34 00085A34  48 00 00 1C */	b lbl_80088C50
 lbl_80088C38:
-/* 80088C38 00085A38  C0 02 93 A8 */	lfs f0, $$21059_2-_SDA2_BASE_(r2)
+/* 80088C38 00085A38  C0 02 93 A8 */	lfs f0, _esc__2_1059_2-_SDA2_BASE_(r2)
 /* 80088C3C 00085A3C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80088C40 00085A40  40 80 00 10 */	bge lbl_80088C50
-/* 80088C44 00085A44  C0 02 93 A4 */	lfs f0, $$21058_1-_SDA2_BASE_(r2)
+/* 80088C44 00085A44  C0 02 93 A4 */	lfs f0, _esc__2_1058_1-_SDA2_BASE_(r2)
 /* 80088C48 00085A48  EC 01 00 2A */	fadds f0, f1, f0
 /* 80088C4C 00085A4C  D0 1F 00 94 */	stfs f0, 0x94(r31)
 lbl_80088C50:
@@ -268,3 +270,6 @@ lbl_80088C90:
 /* 80088CA8 00085AA8  7C 08 03 A6 */	mtlr r0
 /* 80088CAC 00085AAC  38 21 00 20 */	addi r1, r1, 0x20
 /* 80088CB0 00085AB0  4E 80 00 20 */	blr 
+
+.endif
+

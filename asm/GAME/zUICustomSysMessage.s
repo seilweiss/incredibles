@@ -8,8 +8,8 @@ __vt__26zUICustomSysMessageManager:
 
 .section .rodata
 
-.global $$2stringBase0_153
-$$2stringBase0_153:
+.global _esc__2_stringBase0_153
+_esc__2_stringBase0_153:
 	.incbin "baserom.dol", 0x2E7118, 0x50
 
 .section .sbss
@@ -29,9 +29,11 @@ pSysMessageManager_Custom:
 
 .section .sdata2
 
-.global $$2990_6
-$$2990_6:
+.global _esc__2_990_6
+_esc__2_990_6:
 	.incbin "baserom.dol", 0x333DF8, 0x8
+
+.if 0
 
 .section .text
 
@@ -47,7 +49,7 @@ __ct__26zUICustomSysMessageManagerFP3zUI:
 /* 801EF870 001EC670  3C 60 80 32 */	lis r3, __vt__26zUICustomSysMessageManager@ha
 /* 801EF874 001EC674  38 00 00 00 */	li r0, 0
 /* 801EF878 001EC678  38 63 80 B0 */	addi r3, r3, __vt__26zUICustomSysMessageManager@l
-/* 801EF87C 001EC67C  C0 02 D7 18 */	lfs f0, $$2990_6-_SDA2_BASE_(r2)
+/* 801EF87C 001EC67C  C0 02 D7 18 */	lfs f0, _esc__2_990_6-_SDA2_BASE_(r2)
 /* 801EF880 001EC680  90 7E 00 00 */	stw r3, 0(r30)
 /* 801EF884 001EC684  7F C3 F3 78 */	mr r3, r30
 /* 801EF888 001EC688  93 ED DC A4 */	stw r31, pSysMessageManager-_SDA_BASE_(r13)
@@ -77,25 +79,25 @@ Init__26zUICustomSysMessageManagerFv:
 /* 801EF8DC 001EC6DC  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 801EF8E0 001EC6E0  80 63 00 4C */	lwz r3, 0x4c(r3)
 /* 801EF8E4 001EC6E4  4B F6 AD F9 */	bl zSceneFindObject__FUi
-/* 801EF8E8 001EC6E8  3C 60 80 2F */	lis r3, $$2stringBase0_153@ha
-/* 801EF8EC 001EC6EC  38 63 A1 18 */	addi r3, r3, $$2stringBase0_153@l
+/* 801EF8E8 001EC6E8  3C 60 80 2F */	lis r3, _esc__2_stringBase0_153@ha
+/* 801EF8EC 001EC6EC  38 63 A1 18 */	addi r3, r3, _esc__2_stringBase0_153@l
 /* 801EF8F0 001EC6F0  4B E7 D3 31 */	bl xStrHash__FPCc
 /* 801EF8F4 001EC6F4  4B F6 AD E9 */	bl zSceneFindObject__FUi
-/* 801EF8F8 001EC6F8  3C 80 80 2F */	lis r4, $$2stringBase0_153@ha
+/* 801EF8F8 001EC6F8  3C 80 80 2F */	lis r4, _esc__2_stringBase0_153@ha
 /* 801EF8FC 001EC6FC  90 7F 00 30 */	stw r3, 0x30(r31)
-/* 801EF900 001EC700  38 64 A1 18 */	addi r3, r4, $$2stringBase0_153@l
+/* 801EF900 001EC700  38 64 A1 18 */	addi r3, r4, _esc__2_stringBase0_153@l
 /* 801EF904 001EC704  38 63 00 13 */	addi r3, r3, 0x13
 /* 801EF908 001EC708  4B E7 D3 19 */	bl xStrHash__FPCc
 /* 801EF90C 001EC70C  4B F6 AD D1 */	bl zSceneFindObject__FUi
-/* 801EF910 001EC710  3C 80 80 2F */	lis r4, $$2stringBase0_153@ha
+/* 801EF910 001EC710  3C 80 80 2F */	lis r4, _esc__2_stringBase0_153@ha
 /* 801EF914 001EC714  90 7F 00 38 */	stw r3, 0x38(r31)
-/* 801EF918 001EC718  38 64 A1 18 */	addi r3, r4, $$2stringBase0_153@l
+/* 801EF918 001EC718  38 64 A1 18 */	addi r3, r4, _esc__2_stringBase0_153@l
 /* 801EF91C 001EC71C  38 63 00 26 */	addi r3, r3, 0x26
 /* 801EF920 001EC720  4B E7 D3 01 */	bl xStrHash__FPCc
 /* 801EF924 001EC724  4B F6 AD B9 */	bl zSceneFindObject__FUi
-/* 801EF928 001EC728  3C 80 80 2F */	lis r4, $$2stringBase0_153@ha
+/* 801EF928 001EC728  3C 80 80 2F */	lis r4, _esc__2_stringBase0_153@ha
 /* 801EF92C 001EC72C  90 7F 00 34 */	stw r3, 0x34(r31)
-/* 801EF930 001EC730  38 64 A1 18 */	addi r3, r4, $$2stringBase0_153@l
+/* 801EF930 001EC730  38 64 A1 18 */	addi r3, r4, _esc__2_stringBase0_153@l
 /* 801EF934 001EC734  38 63 00 3A */	addi r3, r3, 0x3a
 /* 801EF938 001EC738  4B E7 D2 E9 */	bl xStrHash__FPCc
 /* 801EF93C 001EC73C  4B F6 AD A1 */	bl zSceneFindObject__FUi
@@ -316,3 +318,6 @@ lbl_801EFC30:
 lbl_801EFC34:
 /* 801EFC34 001ECA34  7C A3 2B 78 */	mr r3, r5
 /* 801EFC38 001ECA38  4E 80 00 20 */	blr 
+
+.endif
+

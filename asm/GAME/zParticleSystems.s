@@ -9,6 +9,8 @@ __vt__20zParticleSystemDummy:
 __vt__15zParticleSystem:
 	.incbin "baserom.dol", 0x32D92C, 0x34
 
+.if 0
+
 .section .text
 
 .global zParticleSystemCreateAll__Fv
@@ -98,3 +100,6 @@ create_generator__20zParticleSystemDummyFR14zParticleAsset:
 get_asset_size__20zParticleSystemDummyCFv:
 /* 801D0D68 001CDB68  38 60 00 00 */	li r3, 0
 /* 801D0D6C 001CDB6C  4E 80 00 20 */	blr 
+
+.endif
+

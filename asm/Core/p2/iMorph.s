@@ -2,8 +2,8 @@
 
 .section .rodata
 
-.global $$2stringBase0_30
-$$2stringBase0_30:
+.global _esc__2_stringBase0_30
+_esc__2_stringBase0_30:
 	.incbin "baserom.dol", 0x2CF950, 0x10
 
 .section .sbss
@@ -29,15 +29,17 @@ s_numV:
 
 .section .sdata2
 
-.global $$2725
-$$2725:
+.global _esc__2_725
+_esc__2_725:
 	.incbin "baserom.dol", 0x32F8A8, 0x4
-.global $$2726
-$$2726:
+.global _esc__2_726
+_esc__2_726:
 	.incbin "baserom.dol", 0x32F8AC, 0x4
-.global $$2728
-$$2728:
+.global _esc__2_728
+_esc__2_728:
 	.incbin "baserom.dol", 0x32F8B0, 0x8
+
+.if 0
 
 .section .text
 
@@ -299,7 +301,7 @@ lbl_8007B2C8:
 /* 8007B2D8 000780D8  90 61 00 24 */	stw r3, 0x24(r1)
 /* 8007B2DC 000780DC  80 6D C0 D4 */	lwz r3, s_numV-_SDA_BASE_(r13)
 /* 8007B2E0 000780E0  90 01 00 20 */	stw r0, 0x20(r1)
-/* 8007B2E4 000780E4  C8 22 91 D0 */	lfd f1, $$2728-_SDA2_BASE_(r2)
+/* 8007B2E4 000780E4  C8 22 91 D0 */	lfd f1, _esc__2_728-_SDA2_BASE_(r2)
 /* 8007B2E8 000780E8  1C A3 00 03 */	mulli r5, r3, 3
 /* 8007B2EC 000780EC  C8 01 00 20 */	lfd f0, 0x20(r1)
 /* 8007B2F0 000780F0  80 6D C0 CC */	lwz r3, s_vTemp-_SDA_BASE_(r13)
@@ -335,15 +337,15 @@ lbl_8007B34C:
 /* 8007B35C 0007815C  3C A0 43 30 */	lis r5, 0x4330
 /* 8007B360 00078160  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8007B364 00078164  38 C1 00 10 */	addi r6, r1, 0x10
-/* 8007B368 00078168  C8 22 91 D0 */	lfd f1, $$2728-_SDA2_BASE_(r2)
+/* 8007B368 00078168  C8 22 91 D0 */	lfd f1, _esc__2_728-_SDA2_BASE_(r2)
 /* 8007B36C 0007816C  38 80 00 00 */	li r4, 0
 /* 8007B370 00078170  90 A1 00 20 */	stw r5, 0x20(r1)
 /* 8007B374 00078174  80 0D C0 D4 */	lwz r0, s_numV-_SDA_BASE_(r13)
 /* 8007B378 00078178  C8 01 00 20 */	lfd f0, 0x20(r1)
-/* 8007B37C 0007817C  C0 42 91 CC */	lfs f2, $$2726-_SDA2_BASE_(r2)
+/* 8007B37C 0007817C  C0 42 91 CC */	lfs f2, _esc__2_726-_SDA2_BASE_(r2)
 /* 8007B380 00078180  1C A0 00 03 */	mulli r5, r0, 3
 /* 8007B384 00078184  EC 00 08 28 */	fsubs f0, f0, f1
-/* 8007B388 00078188  C0 22 91 C8 */	lfs f1, $$2725-_SDA2_BASE_(r2)
+/* 8007B388 00078188  C0 22 91 C8 */	lfs f1, _esc__2_725-_SDA2_BASE_(r2)
 /* 8007B38C 0007818C  38 05 00 07 */	addi r0, r5, 7
 /* 8007B390 00078190  EC 02 00 32 */	fmuls f0, f2, f0
 /* 8007B394 00078194  54 07 08 36 */	rlwinm r7, r0, 1, 0, 0x1b
@@ -363,7 +365,7 @@ lbl_8007B3BC:
 /* 8007B3C4 000781C4  6F 64 80 00 */	xoris r4, r27, 0x8000
 /* 8007B3C8 000781C8  3C 00 43 30 */	lis r0, 0x4330
 /* 8007B3CC 000781CC  90 81 00 24 */	stw r4, 0x24(r1)
-/* 8007B3D0 000781D0  C8 22 91 D0 */	lfd f1, $$2728-_SDA2_BASE_(r2)
+/* 8007B3D0 000781D0  C8 22 91 D0 */	lfd f1, _esc__2_728-_SDA2_BASE_(r2)
 /* 8007B3D4 000781D4  90 01 00 20 */	stw r0, 0x20(r1)
 /* 8007B3D8 000781D8  80 81 00 10 */	lwz r4, 0x10(r1)
 /* 8007B3DC 000781DC  C8 01 00 20 */	lfd f0, 0x20(r1)
@@ -462,11 +464,11 @@ iMorphOptimize__FP8RpAtomici:
 /* 8007B524 00078324  40 82 00 4C */	bne lbl_8007B570
 /* 8007B528 00078328  80 1F 00 14 */	lwz r0, 0x14(r31)
 /* 8007B52C 0007832C  38 9E 00 01 */	addi r4, r30, 1
-/* 8007B530 00078330  3C C0 80 2D */	lis r6, $$2stringBase0_30@ha
+/* 8007B530 00078330  3C C0 80 2D */	lis r6, _esc__2_stringBase0_30@ha
 /* 8007B534 00078334  7F E3 FB 78 */	mr r3, r31
 /* 8007B538 00078338  7C 04 01 D6 */	mullw r0, r4, r0
 /* 8007B53C 0007833C  38 A0 00 01 */	li r5, 1
-/* 8007B540 00078340  38 86 29 50 */	addi r4, r6, $$2stringBase0_30@l
+/* 8007B540 00078340  38 86 29 50 */	addi r4, r6, _esc__2_stringBase0_30@l
 /* 8007B544 00078344  1C C0 00 0C */	mulli r6, r0, 0xc
 /* 8007B548 00078348  38 C6 00 38 */	addi r6, r6, 0x38
 /* 8007B54C 0007834C  48 1E D3 DD */	bl RpGeometryAddUserDataArray
@@ -508,7 +510,7 @@ lbl_8007B5B0:
 FastS16unpack__FPfPsif:
 /* 8007B5C0 000783C0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8007B5C4 000783C4  38 C0 00 00 */	li r6, 0
-/* 8007B5C8 000783C8  C8 42 91 D0 */	lfd f2, $$2728-_SDA2_BASE_(r2)
+/* 8007B5C8 000783C8  C8 42 91 D0 */	lfd f2, _esc__2_728-_SDA2_BASE_(r2)
 /* 8007B5CC 000783CC  38 E0 00 00 */	li r7, 0
 /* 8007B5D0 000783D0  3C 00 43 30 */	lis r0, 0x4330
 /* 8007B5D4 000783D4  7C A9 03 A6 */	mtctr r5
@@ -534,7 +536,7 @@ lbl_8007B60C:
 FastS16weight2__FPfPPsPsif:
 /* 8007B614 00078414  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8007B618 00078418  3D 00 43 30 */	lis r8, 0x4330
-/* 8007B61C 0007841C  C8 62 91 D0 */	lfd f3, $$2728-_SDA2_BASE_(r2)
+/* 8007B61C 0007841C  C8 62 91 D0 */	lfd f3, _esc__2_728-_SDA2_BASE_(r2)
 /* 8007B620 00078420  A8 E5 00 00 */	lha r7, 0(r5)
 /* 8007B624 00078424  A8 05 00 02 */	lha r0, 2(r5)
 /* 8007B628 00078428  6C E5 80 00 */	xoris r5, r7, 0x8000
@@ -583,7 +585,7 @@ lbl_8007B6BC:
 FastS16weight4__FPfPPsPsif:
 /* 8007B6C4 000784C4  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8007B6C8 000784C8  3D 40 43 30 */	lis r10, 0x4330
-/* 8007B6CC 000784CC  C8 62 91 D0 */	lfd f3, $$2728-_SDA2_BASE_(r2)
+/* 8007B6CC 000784CC  C8 62 91 D0 */	lfd f3, _esc__2_728-_SDA2_BASE_(r2)
 /* 8007B6D0 000784D0  93 E1 00 2C */	stw r31, 0x2c(r1)
 /* 8007B6D4 000784D4  A8 05 00 00 */	lha r0, 0(r5)
 /* 8007B6D8 000784D8  A9 05 00 02 */	lha r8, 2(r5)
@@ -659,3 +661,6 @@ lbl_8007B7E8:
 /* 8007B7E8 000785E8  83 E1 00 2C */	lwz r31, 0x2c(r1)
 /* 8007B7EC 000785EC  38 21 00 30 */	addi r1, r1, 0x30
 /* 8007B7F0 000785F0  4E 80 00 20 */	blr 
+
+.endif
+

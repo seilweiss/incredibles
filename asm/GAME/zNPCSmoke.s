@@ -8,8 +8,8 @@ __vt__Q24zNPC16NPCSmokeBehavior:
 
 .section .rodata
 
-.global $$2stringBase0_141
-$$2stringBase0_141:
+.global _esc__2_stringBase0_141
+_esc__2_stringBase0_141:
 	.incbin "baserom.dol", 0x2E6888, 0x88
 
 .section .sbss
@@ -26,26 +26,26 @@ __vt__15zNPCSmokeSystem:
 
 .section .sdata2
 
-.global $$21304_4
-$$21304_4:
+.global _esc__2_1304_4
+_esc__2_1304_4:
 	.incbin "baserom.dol", 0x333960, 0x4
-.global $$21305_2
-$$21305_2:
+.global _esc__2_1305_2
+_esc__2_1305_2:
 	.incbin "baserom.dol", 0x333964, 0x4
 .global NPCSmokeColor
 NPCSmokeColor:
 	.incbin "baserom.dol", 0x333968, 0x4
-.global $$21325_2
-$$21325_2:
+.global _esc__2_1325_2
+_esc__2_1325_2:
 	.incbin "baserom.dol", 0x33396C, 0x4
-.global $$21326_1
-$$21326_1:
+.global _esc__2_1326_1
+_esc__2_1326_1:
 	.incbin "baserom.dol", 0x333970, 0x4
-.global $$21327_0
-$$21327_0:
+.global _esc__2_1327_0
+_esc__2_1327_0:
 	.incbin "baserom.dol", 0x333974, 0x4
-.global $$21356_3
-$$21356_3:
+.global _esc__2_1356_3
+_esc__2_1356_3:
 	.incbin "baserom.dol", 0x333978, 0x4
 .global lbl_803D6FBC
 lbl_803D6FBC:
@@ -53,36 +53,38 @@ lbl_803D6FBC:
 .global lbl_803D6FC0
 lbl_803D6FC0:
 	.incbin "baserom.dol", 0x333980, 0x8
-.global $$21360_0
-$$21360_0:
+.global _esc__2_1360_0
+_esc__2_1360_0:
 	.incbin "baserom.dol", 0x333988, 0x8
-.global $$21391_6
-$$21391_6:
+.global _esc__2_1391_6
+_esc__2_1391_6:
 	.incbin "baserom.dol", 0x333990, 0x4
-.global $$21425_2
-$$21425_2:
+.global _esc__2_1425_2
+_esc__2_1425_2:
 	.incbin "baserom.dol", 0x333994, 0x4
-.global $$21426_2
-$$21426_2:
+.global _esc__2_1426_2
+_esc__2_1426_2:
 	.incbin "baserom.dol", 0x333998, 0x4
-.global $$21427_4
-$$21427_4:
+.global _esc__2_1427_4
+_esc__2_1427_4:
 	.incbin "baserom.dol", 0x33399C, 0x4
-.global $$21428_4
-$$21428_4:
+.global _esc__2_1428_4
+_esc__2_1428_4:
 	.incbin "baserom.dol", 0x3339A0, 0x4
-.global $$21429_3
-$$21429_3:
+.global _esc__2_1429_3
+_esc__2_1429_3:
 	.incbin "baserom.dol", 0x3339A4, 0x4
-.global $$21430_1
-$$21430_1:
+.global _esc__2_1430_1
+_esc__2_1430_1:
 	.incbin "baserom.dol", 0x3339A8, 0x4
-.global $$21491
-$$21491:
+.global _esc__2_1491
+_esc__2_1491:
 	.incbin "baserom.dol", 0x3339AC, 0x4
-.global $$21492
-$$21492:
+.global _esc__2_1492
+_esc__2_1492:
 	.incbin "baserom.dol", 0x3339B0, 0x8
+
+.if 0
 
 .section .text
 
@@ -98,8 +100,8 @@ setup__Q24zNPC16NPCSmokeBehaviorFv:
 /* 801D9780 001D6580  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 801D9784 001D6584  4B FA F0 71 */	bl get_combat__Q24zNPC6commonFv
 /* 801D9788 001D6588  A8 A3 00 1C */	lha r5, 0x1c(r3)
-/* 801D978C 001D658C  3C 60 80 2F */	lis r3, $$2stringBase0_141@ha
-/* 801D9790 001D6590  38 83 98 88 */	addi r4, r3, $$2stringBase0_141@l
+/* 801D978C 001D658C  3C 60 80 2F */	lis r3, _esc__2_stringBase0_141@ha
+/* 801D9790 001D6590  38 83 98 88 */	addi r4, r3, _esc__2_stringBase0_141@l
 /* 801D9794 001D6594  38 00 00 0A */	li r0, 0xa
 /* 801D9798 001D6598  1C 65 00 07 */	mulli r3, r5, 7
 /* 801D979C 001D659C  38 BF 00 1C */	addi r5, r31, 0x1c
@@ -113,40 +115,40 @@ setup__Q24zNPC16NPCSmokeBehaviorFv:
 /* 801D97BC 001D65BC  38 00 00 00 */	li r0, 0
 /* 801D97C0 001D65C0  90 1F 00 1C */	stw r0, 0x1c(r31)
 lbl_801D97C4:
-/* 801D97C4 001D65C4  3C 80 80 2F */	lis r4, $$2stringBase0_141@ha
+/* 801D97C4 001D65C4  3C 80 80 2F */	lis r4, _esc__2_stringBase0_141@ha
 /* 801D97C8 001D65C8  80 7F 00 0C */	lwz r3, 0xc(r31)
-/* 801D97CC 001D65CC  38 84 98 88 */	addi r4, r4, $$2stringBase0_141@l
-/* 801D97D0 001D65D0  C0 22 D2 80 */	lfs f1, $$21304_4-_SDA2_BASE_(r2)
+/* 801D97CC 001D65CC  38 84 98 88 */	addi r4, r4, _esc__2_stringBase0_141@l
+/* 801D97D0 001D65D0  C0 22 D2 80 */	lfs f1, _esc__2_1304_4-_SDA2_BASE_(r2)
 /* 801D97D4 001D65D4  38 84 00 10 */	addi r4, r4, 0x10
 /* 801D97D8 001D65D8  38 BF 00 20 */	addi r5, r31, 0x20
 /* 801D97DC 001D65DC  4B F2 50 B1 */	bl get_parameter__Q24zNPC4baseFPCcPff
 /* 801D97E0 001D65E0  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801D97E4 001D65E4  40 82 00 0C */	bne lbl_801D97F0
-/* 801D97E8 001D65E8  C0 02 D2 8C */	lfs f0, $$21325_2-_SDA2_BASE_(r2)
+/* 801D97E8 001D65E8  C0 02 D2 8C */	lfs f0, _esc__2_1325_2-_SDA2_BASE_(r2)
 /* 801D97EC 001D65EC  D0 1F 00 20 */	stfs f0, 0x20(r31)
 lbl_801D97F0:
-/* 801D97F0 001D65F0  3C 80 80 2F */	lis r4, $$2stringBase0_141@ha
+/* 801D97F0 001D65F0  3C 80 80 2F */	lis r4, _esc__2_stringBase0_141@ha
 /* 801D97F4 001D65F4  80 7F 00 0C */	lwz r3, 0xc(r31)
-/* 801D97F8 001D65F8  38 84 98 88 */	addi r4, r4, $$2stringBase0_141@l
-/* 801D97FC 001D65FC  C0 22 D2 80 */	lfs f1, $$21304_4-_SDA2_BASE_(r2)
+/* 801D97F8 001D65F8  38 84 98 88 */	addi r4, r4, _esc__2_stringBase0_141@l
+/* 801D97FC 001D65FC  C0 22 D2 80 */	lfs f1, _esc__2_1304_4-_SDA2_BASE_(r2)
 /* 801D9800 001D6600  38 84 00 21 */	addi r4, r4, 0x21
 /* 801D9804 001D6604  38 BF 00 24 */	addi r5, r31, 0x24
 /* 801D9808 001D6608  4B F2 50 85 */	bl get_parameter__Q24zNPC4baseFPCcPff
 /* 801D980C 001D660C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801D9810 001D6610  40 82 00 0C */	bne lbl_801D981C
-/* 801D9814 001D6614  C0 02 D2 90 */	lfs f0, $$21326_1-_SDA2_BASE_(r2)
+/* 801D9814 001D6614  C0 02 D2 90 */	lfs f0, _esc__2_1326_1-_SDA2_BASE_(r2)
 /* 801D9818 001D6618  D0 1F 00 24 */	stfs f0, 0x24(r31)
 lbl_801D981C:
-/* 801D981C 001D661C  3C 80 80 2F */	lis r4, $$2stringBase0_141@ha
+/* 801D981C 001D661C  3C 80 80 2F */	lis r4, _esc__2_stringBase0_141@ha
 /* 801D9820 001D6620  80 7F 00 0C */	lwz r3, 0xc(r31)
-/* 801D9824 001D6624  38 84 98 88 */	addi r4, r4, $$2stringBase0_141@l
-/* 801D9828 001D6628  C0 22 D2 80 */	lfs f1, $$21304_4-_SDA2_BASE_(r2)
+/* 801D9824 001D6624  38 84 98 88 */	addi r4, r4, _esc__2_stringBase0_141@l
+/* 801D9828 001D6628  C0 22 D2 80 */	lfs f1, _esc__2_1304_4-_SDA2_BASE_(r2)
 /* 801D982C 001D662C  38 84 00 3D */	addi r4, r4, 0x3d
 /* 801D9830 001D6630  38 BF 00 28 */	addi r5, r31, 0x28
 /* 801D9834 001D6634  4B F2 50 59 */	bl get_parameter__Q24zNPC4baseFPCcPff
 /* 801D9838 001D6638  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801D983C 001D663C  40 82 00 0C */	bne lbl_801D9848
-/* 801D9840 001D6640  C0 02 D2 94 */	lfs f0, $$21327_0-_SDA2_BASE_(r2)
+/* 801D9840 001D6640  C0 02 D2 94 */	lfs f0, _esc__2_1327_0-_SDA2_BASE_(r2)
 /* 801D9844 001D6644  D0 1F 00 28 */	stfs f0, 0x28(r31)
 lbl_801D9848:
 /* 801D9848 001D6648  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -240,7 +242,7 @@ update__Q24zNPC16NPCSmokeBehaviorFf:
 /* 801D9958 001D6758  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 801D995C 001D675C  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
 /* 801D9960 001D6760  93 E1 00 3C */	stw r31, 0x3c(r1)
-/* 801D9964 001D6764  80 A2 D2 98 */	lwz r5, $$21356_3-_SDA2_BASE_(r2)
+/* 801D9964 001D6764  80 A2 D2 98 */	lwz r5, _esc__2_1356_3-_SDA2_BASE_(r2)
 /* 801D9968 001D6768  7C 7F 1B 78 */	mr r31, r3
 /* 801D996C 001D676C  80 82 D2 9C */	lwz r4, lbl_803D6FBC-_SDA2_BASE_(r2)
 /* 801D9970 001D6770  FF E0 08 90 */	fmr f31, f1
@@ -271,7 +273,7 @@ update__Q24zNPC16NPCSmokeBehaviorFf:
 /* 801D99D4 001D67D4  81 83 00 04 */	lwz r12, 4(r3)
 /* 801D99D8 001D67D8  90 C1 00 20 */	stw r6, 0x20(r1)
 /* 801D99DC 001D67DC  38 81 00 08 */	addi r4, r1, 8
-/* 801D99E0 001D67E0  C8 42 D2 A8 */	lfd f2, $$21360_0-_SDA2_BASE_(r2)
+/* 801D99E0 001D67E0  C8 42 D2 A8 */	lfd f2, _esc__2_1360_0-_SDA2_BASE_(r2)
 /* 801D99E4 001D67E4  38 A1 00 14 */	addi r5, r1, 0x14
 /* 801D99E8 001D67E8  C8 01 00 20 */	lfd f0, 0x20(r1)
 /* 801D99EC 001D67EC  90 01 00 2C */	stw r0, 0x2c(r1)
@@ -328,8 +330,8 @@ __ct__15zNPCSmokeSystemFfff:
 /* 801D9A94 001D6894  93 E1 00 3C */	stw r31, 0x3c(r1)
 /* 801D9A98 001D6898  7C 7F 1B 78 */	mr r31, r3
 /* 801D9A9C 001D689C  90 03 00 04 */	stw r0, 4(r3)
-/* 801D9AA0 001D68A0  3C 60 80 2F */	lis r3, $$2stringBase0_141@ha
-/* 801D9AA4 001D68A4  38 63 98 88 */	addi r3, r3, $$2stringBase0_141@l
+/* 801D9AA0 001D68A0  3C 60 80 2F */	lis r3, _esc__2_stringBase0_141@ha
+/* 801D9AA4 001D68A4  38 63 98 88 */	addi r3, r3, _esc__2_stringBase0_141@l
 /* 801D9AA8 001D68A8  D0 3F 00 28 */	stfs f1, 0x28(r31)
 /* 801D9AAC 001D68AC  38 63 00 58 */	addi r3, r3, 0x58
 /* 801D9AB0 001D68B0  D0 5F 00 2C */	stfs f2, 0x2c(r31)
@@ -392,8 +394,8 @@ Reset__15zNPCSmokeSystemFR5xVec3R5xVec3:
 /* 801D9B80 001D6980  7F E4 FB 78 */	mr r4, r31
 /* 801D9B84 001D6984  38 7E 00 14 */	addi r3, r30, 0x14
 /* 801D9B88 001D6988  4B E3 15 21 */	bl __as__5xVec3FRC5xVec3
-/* 801D9B8C 001D698C  C0 22 D2 80 */	lfs f1, $$21304_4-_SDA2_BASE_(r2)
-/* 801D9B90 001D6990  C0 02 D2 B0 */	lfs f0, $$21391_6-_SDA2_BASE_(r2)
+/* 801D9B8C 001D698C  C0 22 D2 80 */	lfs f1, _esc__2_1304_4-_SDA2_BASE_(r2)
+/* 801D9B90 001D6990  C0 02 D2 B0 */	lfs f0, _esc__2_1391_6-_SDA2_BASE_(r2)
 /* 801D9B94 001D6994  D0 3E 00 24 */	stfs f1, 0x24(r30)
 /* 801D9B98 001D6998  D0 1E 00 00 */	stfs f0, 0(r30)
 /* 801D9B9C 001D699C  BB C1 00 08 */	lmw r30, 8(r1)
@@ -434,18 +436,18 @@ update__15zNPCSmokeSystemFR5xVec3R5xVec3fff:
 /* 801D9C1C 001D6A1C  48 00 01 D8 */	b lbl_801D9DF4
 lbl_801D9C20:
 /* 801D9C20 001D6A20  EC 02 08 28 */	fsubs f0, f2, f1
-/* 801D9C24 001D6A24  C0 A2 D2 B8 */	lfs f5, $$21426_2-_SDA2_BASE_(r2)
-/* 801D9C28 001D6A28  C0 22 D2 B4 */	lfs f1, $$21425_2-_SDA2_BASE_(r2)
+/* 801D9C24 001D6A24  C0 A2 D2 B8 */	lfs f5, _esc__2_1426_2-_SDA2_BASE_(r2)
+/* 801D9C28 001D6A28  C0 22 D2 B4 */	lfs f1, _esc__2_1425_2-_SDA2_BASE_(r2)
 /* 801D9C2C 001D6A2C  3F 20 43 30 */	lis r25, 0x4330
-/* 801D9C30 001D6A30  C0 82 D2 84 */	lfs f4, $$21305_2-_SDA2_BASE_(r2)
+/* 801D9C30 001D6A30  C0 82 D2 84 */	lfs f4, _esc__2_1305_2-_SDA2_BASE_(r2)
 /* 801D9C34 001D6A34  EC 40 10 24 */	fdivs f2, f0, f2
 /* 801D9C38 001D6A38  C0 1A 00 24 */	lfs f0, 0x24(r26)
-/* 801D9C3C 001D6A3C  C3 82 D2 BC */	lfs f28, $$21427_4-_SDA2_BASE_(r2)
-/* 801D9C40 001D6A40  C3 A2 D2 94 */	lfs f29, $$21327_0-_SDA2_BASE_(r2)
-/* 801D9C44 001D6A44  C3 C2 D2 C4 */	lfs f30, $$21429_3-_SDA2_BASE_(r2)
-/* 801D9C48 001D6A48  C3 E2 D2 C8 */	lfs f31, $$21430_1-_SDA2_BASE_(r2)
+/* 801D9C3C 001D6A3C  C3 82 D2 BC */	lfs f28, _esc__2_1427_4-_SDA2_BASE_(r2)
+/* 801D9C40 001D6A40  C3 A2 D2 94 */	lfs f29, _esc__2_1327_0-_SDA2_BASE_(r2)
+/* 801D9C44 001D6A44  C3 C2 D2 C4 */	lfs f30, _esc__2_1429_3-_SDA2_BASE_(r2)
+/* 801D9C48 001D6A48  C3 E2 D2 C8 */	lfs f31, _esc__2_1430_1-_SDA2_BASE_(r2)
 /* 801D9C4C 001D6A4C  EC 45 08 BA */	fmadds f2, f5, f2, f1
-/* 801D9C50 001D6A50  CB 42 D2 A8 */	lfd f26, $$21360_0-_SDA2_BASE_(r2)
+/* 801D9C50 001D6A50  CB 42 D2 A8 */	lfd f26, _esc__2_1360_0-_SDA2_BASE_(r2)
 /* 801D9C54 001D6A54  EC 24 00 28 */	fsubs f1, f4, f0
 /* 801D9C58 001D6A58  EF 24 10 24 */	fdivs f25, f4, f2
 /* 801D9C5C 001D6A5C  EC 02 00 FA */	fmadds f0, f2, f3, f0
@@ -463,7 +465,7 @@ lbl_801D9C7C:
 /* 801D9C88 001D6A88  4B F9 B8 5D */	bl xParticleBatchEmit__FiiPPUc
 /* 801D9C8C 001D6A8C  7C 7F 1B 79 */	or. r31, r3, r3
 /* 801D9C90 001D6A90  40 82 00 10 */	bne lbl_801D9CA0
-/* 801D9C94 001D6A94  C0 02 D2 80 */	lfs f0, $$21304_4-_SDA2_BASE_(r2)
+/* 801D9C94 001D6A94  C0 02 D2 80 */	lfs f0, _esc__2_1304_4-_SDA2_BASE_(r2)
 /* 801D9C98 001D6A98  D0 1A 00 24 */	stfs f0, 0x24(r26)
 /* 801D9C9C 001D6A9C  48 00 01 58 */	b lbl_801D9DF4
 lbl_801D9CA0:
@@ -496,7 +498,7 @@ lbl_801D9CB0:
 /* 801D9D04 001D6B04  4B E2 D6 21 */	bl xurand__Fv
 /* 801D9D08 001D6B08  EC 01 E0 28 */	fsubs f0, f1, f28
 /* 801D9D0C 001D6B0C  80 A1 00 08 */	lwz r5, 8(r1)
-/* 801D9D10 001D6B10  C0 22 D2 C0 */	lfs f1, $$21428_4-_SDA2_BASE_(r2)
+/* 801D9D10 001D6B10  C0 22 D2 C0 */	lfs f1, _esc__2_1428_4-_SDA2_BASE_(r2)
 /* 801D9D14 001D6B14  7F 84 E3 78 */	mr r4, r28
 /* 801D9D18 001D6B18  38 61 00 0C */	addi r3, r1, 0xc
 /* 801D9D1C 001D6B1C  EC 1D 00 32 */	fmuls f0, f29, f0
@@ -591,7 +593,7 @@ Update__15zNPCSmokeSystemFPUciR10ptank_poolfPv:
 /* 801D9E60 001D6C60  1C 04 00 2C */	mulli r0, r4, 0x2c
 /* 801D9E64 001D6C64  7C 7B 1B 78 */	mr r27, r3
 /* 801D9E68 001D6C68  FF C0 08 90 */	fmr f30, f1
-/* 801D9E6C 001D6C6C  C3 E2 D2 80 */	lfs f31, $$21304_4-_SDA2_BASE_(r2)
+/* 801D9E6C 001D6C6C  C3 E2 D2 80 */	lfs f31, _esc__2_1304_4-_SDA2_BASE_(r2)
 /* 801D9E70 001D6C70  7F 7E DB 78 */	mr r30, r27
 /* 801D9E74 001D6C74  7C DC 33 78 */	mr r28, r6
 /* 801D9E78 001D6C78  7C BF 2B 78 */	mr r31, r5
@@ -624,7 +626,7 @@ lbl_801D9EDC:
 /* 801D9EDC 001D6CDC  7F C4 F3 78 */	mr r4, r30
 /* 801D9EE0 001D6CE0  38 61 00 14 */	addi r3, r1, 0x14
 /* 801D9EE4 001D6CE4  4B E3 A0 F9 */	bl __as__5RwV3dFRC5RwV3d
-/* 801D9EE8 001D6CE8  C0 02 D2 84 */	lfs f0, $$21305_2-_SDA2_BASE_(r2)
+/* 801D9EE8 001D6CE8  C0 02 D2 84 */	lfs f0, _esc__2_1305_2-_SDA2_BASE_(r2)
 /* 801D9EEC 001D6CEC  38 81 00 14 */	addi r4, r1, 0x14
 /* 801D9EF0 001D6CF0  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
 /* 801D9EF4 001D6CF4  D0 01 00 20 */	stfs f0, 0x20(r1)
@@ -639,14 +641,14 @@ lbl_801D9EDC:
 /* 801D9F18 001D6D18  4B E4 A5 A9 */	bl valid__10ptank_poolCFv
 /* 801D9F1C 001D6D1C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801D9F20 001D6D20  41 82 00 84 */	beq lbl_801D9FA4
-/* 801D9F24 001D6D24  C0 22 D2 CC */	lfs f1, $$21491-_SDA2_BASE_(r2)
+/* 801D9F24 001D6D24  C0 22 D2 CC */	lfs f1, _esc__2_1491-_SDA2_BASE_(r2)
 /* 801D9F28 001D6D28  C0 1C 00 2C */	lfs f0, 0x2c(r28)
 /* 801D9F2C 001D6D2C  C0 5E 00 24 */	lfs f2, 0x24(r30)
 /* 801D9F30 001D6D30  EC 01 00 32 */	fmuls f0, f1, f0
 /* 801D9F34 001D6D34  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801D9F38 001D6D38  40 80 00 24 */	bge lbl_801D9F5C
 /* 801D9F3C 001D6D3C  EC 02 00 24 */	fdivs f0, f2, f0
-/* 801D9F40 001D6D40  C0 22 D2 D0 */	lfs f1, $$21492-_SDA2_BASE_(r2)
+/* 801D9F40 001D6D40  C0 22 D2 D0 */	lfs f1, _esc__2_1492-_SDA2_BASE_(r2)
 /* 801D9F44 001D6D44  EC 01 00 32 */	fmuls f0, f1, f0
 /* 801D9F48 001D6D48  FC 00 00 1E */	fctiwz f0, f0
 /* 801D9F4C 001D6D4C  D8 01 00 28 */	stfd f0, 0x28(r1)
@@ -717,7 +719,10 @@ __as__Q215zNPCSmokeSystem16NPCSmokeParticleFRCQ215zNPCSmokeSystem16NPCSmokeParti
 
 .global getName__Q24zNPC16NPCSmokeBehaviorFv
 getName__Q24zNPC16NPCSmokeBehaviorFv:
-/* 801DA030 001D6E30  3C 60 80 2F */	lis r3, $$2stringBase0_141@ha
-/* 801DA034 001D6E34  38 63 98 88 */	addi r3, r3, $$2stringBase0_141@l
+/* 801DA030 001D6E30  3C 60 80 2F */	lis r3, _esc__2_stringBase0_141@ha
+/* 801DA034 001D6E34  38 63 98 88 */	addi r3, r3, _esc__2_stringBase0_141@l
 /* 801DA038 001D6E38  38 63 00 74 */	addi r3, r3, 0x74
 /* 801DA03C 001D6E3C  4E 80 00 20 */	blr 
+
+.endif
+

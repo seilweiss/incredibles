@@ -2,9 +2,11 @@
 
 .section .sdata2
 
-.global $$2833_0
-$$2833_0:
+.global _esc__2_833_0
+_esc__2_833_0:
 	.incbin "baserom.dol", 0x32EEE8, 0x8
+
+.if 0
 
 .section .text
 
@@ -131,7 +133,7 @@ xHierarchyBoundTest__FPC15xHierarchyBoundPC5xRay3PUsP6xIsectPSc:
 /* 8003BCE0 00038AE0  38 A1 00 08 */	addi r5, r1, 8
 /* 8003BCE4 00038AE4  48 03 AC 29 */	bl iSphereIsectRay__FPC7xSpherePC5xRay3P6xIsect
 /* 8003BCE8 00038AE8  C0 01 00 0C */	lfs f0, 0xc(r1)
-/* 8003BCEC 00038AEC  C3 E2 88 08 */	lfs f31, $$2833_0-_SDA2_BASE_(r2)
+/* 8003BCEC 00038AEC  C3 E2 88 08 */	lfs f31, _esc__2_833_0-_SDA2_BASE_(r2)
 /* 8003BCF0 00038AF0  FC 00 F8 40 */	fcmpo cr0, f0, f31
 /* 8003BCF4 00038AF4  40 81 00 0C */	ble lbl_8003BD00
 /* 8003BCF8 00038AF8  38 60 00 00 */	li r3, 0
@@ -243,3 +245,6 @@ lbl_8003BE50:
 /* 8003BE58 00038C58  7C 08 03 A6 */	mtlr r0
 /* 8003BE5C 00038C5C  38 21 00 30 */	addi r1, r1, 0x30
 /* 8003BE60 00038C60  4E 80 00 20 */	blr 
+
+.endif
+

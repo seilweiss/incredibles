@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global zConditionalInit__FPvPv
@@ -309,3 +311,6 @@ lbl_8009FA64:
 /* 8009FA6C 0009C86C  7C 08 03 A6 */	mtlr r0
 /* 8009FA70 0009C870  38 21 00 10 */	addi r1, r1, 0x10
 /* 8009FA74 0009C874  4E 80 00 20 */	blr 
+
+.endif
+

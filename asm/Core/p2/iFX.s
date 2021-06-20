@@ -2,9 +2,11 @@
 
 .section .sbss2
 
-.global $$2806_0
-$$2806_0:
+.global _esc__2_806_0
+_esc__2_806_0:
 	.skip 0x30
+
+.if 0
 
 .section .text
 
@@ -235,3 +237,6 @@ lbl_800764CC:
 /* 800764D4 000732D4  7C 08 03 A6 */	mtlr r0
 /* 800764D8 000732D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800764DC 000732DC  4E 80 00 20 */	blr 
+
+.endif
+

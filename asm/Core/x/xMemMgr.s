@@ -5,17 +5,17 @@
 .global gxHeap
 gxHeap:
 	.skip 0x324
-.global scratch_stack__21$$2unnamed$$2xMemMgr_cpp$$2
-scratch_stack__21$$2unnamed$$2xMemMgr_cpp$$2:
+.global scratch_stack__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_
+scratch_stack__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_:
 	.skip 0x10C
-.global scratch_buffer__21$$2unnamed$$2xMemMgr_cpp$$2
-scratch_buffer__21$$2unnamed$$2xMemMgr_cpp$$2:
+.global scratch_buffer__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_
+scratch_buffer__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_:
 	.skip 0x4000
 
 .section .rodata
 
-.global $$2stringBase0_15
-$$2stringBase0_15:
+.global _esc__2_stringBase0_15
+_esc__2_stringBase0_15:
 	.incbin "baserom.dol", 0x2CEDE8, 0x58
 
 .section .sbss
@@ -32,9 +32,11 @@ sMemBaseNotifyFunc:
 .global scratch_mem_used
 scratch_mem_used:
 	.skip 0x4
-.global scratch_allocations__21$$2unnamed$$2xMemMgr_cpp$$2
-scratch_allocations__21$$2unnamed$$2xMemMgr_cpp$$2:
+.global scratch_allocations__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_
+scratch_allocations__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_:
 	.skip 0x8
+
+.if 0
 
 .section .text
 
@@ -45,9 +47,9 @@ xMemDebug_SoakLog__FPCc:
 /* 8004974C 0004654C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80049750 00046550  48 02 F8 8D */	bl iMemMgrGetMinFreeSpace__Fv
 /* 80049754 00046554  7C 60 56 70 */	srawi r0, r3, 0xa
-/* 80049758 00046558  3C 60 80 2D */	lis r3, $$2stringBase0_15@ha
+/* 80049758 00046558  3C 60 80 2D */	lis r3, _esc__2_stringBase0_15@ha
 /* 8004975C 0004655C  7C 80 01 94 */	addze r4, r0
-/* 80049760 00046560  38 63 1D E8 */	addi r3, r3, $$2stringBase0_15@l
+/* 80049760 00046560  38 63 1D E8 */	addi r3, r3, _esc__2_stringBase0_15@l
 /* 80049764 00046564  38 84 A0 00 */	addi r4, r4, -24576
 /* 80049768 00046568  4C C6 31 82 */	crclr 6
 /* 8004976C 0004656C  48 26 F7 ED */	bl printf
@@ -401,9 +403,9 @@ lbl_80049C30:
 /* 80049C48 00046A48  48 02 F1 35 */	bl iMemMgrCheckCollisionWithMallocHeap__FPvUi
 /* 80049C4C 00046A4C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80049C50 00046A50  41 82 00 1C */	beq lbl_80049C6C
-/* 80049C54 00046A54  3C 60 80 2D */	lis r3, $$2stringBase0_15@ha
+/* 80049C54 00046A54  3C 60 80 2D */	lis r3, _esc__2_stringBase0_15@ha
 /* 80049C58 00046A58  80 9C 00 04 */	lwz r4, 4(r28)
-/* 80049C5C 00046A5C  38 63 1D E8 */	addi r3, r3, $$2stringBase0_15@l
+/* 80049C5C 00046A5C  38 63 1D E8 */	addi r3, r3, _esc__2_stringBase0_15@l
 /* 80049C60 00046A60  38 63 00 11 */	addi r3, r3, 0x11
 /* 80049C64 00046A64  4C C6 31 82 */	crclr 6
 /* 80049C68 00046A68  48 26 F2 F1 */	bl printf
@@ -747,8 +749,8 @@ lbl_8004A0B4:
 .global xMemScratchPush__FUiUi
 xMemScratchPush__FUiUi:
 /* 8004A0C0 00046EC0  28 04 00 04 */	cmplwi r4, 4
-/* 8004A0C4 00046EC4  3C A0 80 34 */	lis r5, scratch_buffer__21$$2unnamed$$2xMemMgr_cpp$$2@ha
-/* 8004A0C8 00046EC8  38 A5 06 90 */	addi r5, r5, scratch_buffer__21$$2unnamed$$2xMemMgr_cpp$$2@l
+/* 8004A0C4 00046EC4  3C A0 80 34 */	lis r5, scratch_buffer__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_@ha
+/* 8004A0C8 00046EC8  38 A5 06 90 */	addi r5, r5, scratch_buffer__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_@l
 /* 8004A0CC 00046ECC  40 80 00 08 */	bge lbl_8004A0D4
 /* 8004A0D0 00046ED0  38 80 00 04 */	li r4, 4
 lbl_8004A0D4:
@@ -764,28 +766,31 @@ lbl_8004A0D4:
 /* 8004A0F8 00046EF8  38 60 00 00 */	li r3, 0
 /* 8004A0FC 00046EFC  4E 80 00 20 */	blr 
 lbl_8004A100:
-/* 8004A100 00046F00  80 8D BA F0 */	lwz r4, scratch_allocations__21$$2unnamed$$2xMemMgr_cpp$$2-_SDA_BASE_(r13)
-/* 8004A104 00046F04  3C 60 80 34 */	lis r3, scratch_stack__21$$2unnamed$$2xMemMgr_cpp$$2@ha
+/* 8004A100 00046F00  80 8D BA F0 */	lwz r4, scratch_allocations__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8004A104 00046F04  3C 60 80 34 */	lis r3, scratch_stack__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_@ha
 /* 8004A108 00046F08  7C C6 00 50 */	subf r6, r6, r0
 /* 8004A10C 00046F0C  90 0D BA EC */	stw r0, scratch_mem_used-_SDA_BASE_(r13)
 /* 8004A110 00046F10  38 04 00 01 */	addi r0, r4, 1
 /* 8004A114 00046F14  54 85 08 3C */	slwi r5, r4, 1
-/* 8004A118 00046F18  38 83 05 84 */	addi r4, r3, scratch_stack__21$$2unnamed$$2xMemMgr_cpp$$2@l
-/* 8004A11C 00046F1C  90 0D BA F0 */	stw r0, scratch_allocations__21$$2unnamed$$2xMemMgr_cpp$$2-_SDA_BASE_(r13)
+/* 8004A118 00046F18  38 83 05 84 */	addi r4, r3, scratch_stack__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_@l
+/* 8004A11C 00046F1C  90 0D BA F0 */	stw r0, scratch_allocations__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8004A120 00046F20  7C E3 3B 78 */	mr r3, r7
 /* 8004A124 00046F24  7C C4 2B 2E */	sthx r6, r4, r5
 /* 8004A128 00046F28  4E 80 00 20 */	blr 
 
 .global xMemScratchPop__FPv
 xMemScratchPop__FPv:
-/* 8004A12C 00046F2C  80 8D BA F0 */	lwz r4, scratch_allocations__21$$2unnamed$$2xMemMgr_cpp$$2-_SDA_BASE_(r13)
-/* 8004A130 00046F30  3C 60 80 34 */	lis r3, scratch_stack__21$$2unnamed$$2xMemMgr_cpp$$2@ha
-/* 8004A134 00046F34  38 63 05 84 */	addi r3, r3, scratch_stack__21$$2unnamed$$2xMemMgr_cpp$$2@l
+/* 8004A12C 00046F2C  80 8D BA F0 */	lwz r4, scratch_allocations__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8004A130 00046F30  3C 60 80 34 */	lis r3, scratch_stack__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_@ha
+/* 8004A134 00046F34  38 63 05 84 */	addi r3, r3, scratch_stack__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_@l
 /* 8004A138 00046F38  80 0D BA EC */	lwz r0, scratch_mem_used-_SDA_BASE_(r13)
 /* 8004A13C 00046F3C  38 A4 FF FF */	addi r5, r4, -1
 /* 8004A140 00046F40  54 A4 08 3C */	slwi r4, r5, 1
-/* 8004A144 00046F44  90 AD BA F0 */	stw r5, scratch_allocations__21$$2unnamed$$2xMemMgr_cpp$$2-_SDA_BASE_(r13)
+/* 8004A144 00046F44  90 AD BA F0 */	stw r5, scratch_allocations__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8004A148 00046F48  7C 63 22 2E */	lhzx r3, r3, r4
 /* 8004A14C 00046F4C  7C 03 00 50 */	subf r0, r3, r0
 /* 8004A150 00046F50  90 0D BA EC */	stw r0, scratch_mem_used-_SDA_BASE_(r13)
 /* 8004A154 00046F54  4E 80 00 20 */	blr 
+
+.endif
+

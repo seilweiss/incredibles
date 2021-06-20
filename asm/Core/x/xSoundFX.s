@@ -2,15 +2,17 @@
 
 .section .data
 
-.global $$2922
-$$2922:
+.global _esc__2_922
+_esc__2_922:
 	.incbin "baserom.dol", 0x2FECE0, 0x48
 
 .section .sdata2
 
-.global $$2924_0
-$$2924_0:
+.global _esc__2_924_0
+_esc__2_924_0:
 	.incbin "baserom.dol", 0x32F558, 0x8
+
+.if 0
 
 .section .text
 
@@ -177,9 +179,9 @@ xSoundFXEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi:
 /* 80067D68 00064B68  7C DE 33 78 */	mr r30, r6
 /* 80067D6C 00064B6C  7C 9F 23 78 */	mr r31, r4
 /* 80067D70 00064B70  41 81 00 EC */	bgt lbl_80067E5C
-/* 80067D74 00064B74  3C 60 80 30 */	lis r3, $$2922@ha
+/* 80067D74 00064B74  3C 60 80 30 */	lis r3, _esc__2_922@ha
 /* 80067D78 00064B78  54 00 10 3A */	slwi r0, r0, 2
-/* 80067D7C 00064B7C  38 63 1C E0 */	addi r3, r3, $$2922@l
+/* 80067D7C 00064B7C  38 63 1C E0 */	addi r3, r3, _esc__2_922@l
 /* 80067D80 00064B80  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80067D84 00064B84  7C 09 03 A6 */	mtctr r0
 /* 80067D88 00064B88  4E 80 04 20 */	bctr 
@@ -201,7 +203,7 @@ xSoundFXEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi:
 /* 80067DC8 00064BC8  4B FD 3C 51 */	bl xrand_RandomChoice__FUi
 /* 80067DCC 00064BCC  3C 00 43 30 */	lis r0, 0x4330
 /* 80067DD0 00064BD0  90 61 00 0C */	stw r3, 0xc(r1)
-/* 80067DD4 00064BD4  C8 42 8E 78 */	lfd f2, $$2924_0-_SDA2_BASE_(r2)
+/* 80067DD4 00064BD4  C8 42 8E 78 */	lfd f2, _esc__2_924_0-_SDA2_BASE_(r2)
 /* 80067DD8 00064BD8  90 01 00 08 */	stw r0, 8(r1)
 /* 80067DDC 00064BDC  C0 1E 00 00 */	lfs f0, 0(r30)
 /* 80067DE0 00064BE0  C8 21 00 08 */	lfd f1, 8(r1)
@@ -353,3 +355,6 @@ lbl_80067FB0:
 lbl_80067FCC:
 /* 80067FCC 00064DCC  7C C3 33 78 */	mr r3, r6
 /* 80067FD0 00064DD0  4E 80 00 20 */	blr 
+
+.endif
+

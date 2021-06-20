@@ -2,8 +2,8 @@
 
 .section .data
 
-.global $$21040_0
-$$21040_0:
+.global _esc__2_1040_0
+_esc__2_1040_0:
 	.incbin "baserom.dol", 0x306C58, 0x30
 
 .section .sbss
@@ -65,6 +65,8 @@ sTitleState_DoDispatchTable:
 .global sIntroState_DoDispatchTable
 sIntroState_DoDispatchTable:
 	.incbin "baserom.dol", 0x32C08C, 0x14
+
+.if 0
 
 .section .text
 
@@ -247,9 +249,9 @@ lbl_800CFA24:
 /* 800CFA24 000CC824  80 0D C8 30 */	lwz r0, gGameMode-_SDA_BASE_(r13)
 /* 800CFA28 000CC828  28 00 00 0B */	cmplwi r0, 0xb
 /* 800CFA2C 000CC82C  41 81 00 88 */	bgt lbl_800CFAB4
-/* 800CFA30 000CC830  3C 60 80 31 */	lis r3, $$21040_0@ha
+/* 800CFA30 000CC830  3C 60 80 31 */	lis r3, _esc__2_1040_0@ha
 /* 800CFA34 000CC834  54 00 10 3A */	slwi r0, r0, 2
-/* 800CFA38 000CC838  38 63 9C 58 */	addi r3, r3, $$21040_0@l
+/* 800CFA38 000CC838  38 63 9C 58 */	addi r3, r3, _esc__2_1040_0@l
 /* 800CFA3C 000CC83C  7C 03 00 2E */	lwzx r0, r3, r0
 /* 800CFA40 000CC840  7C 09 03 A6 */	mtctr r0
 /* 800CFA44 000CC844  4E 80 04 20 */	bctr 
@@ -388,3 +390,6 @@ lbl_800CFC0C:
 /* 800CFC2C 000CCA2C  7C 08 03 A6 */	mtlr r0
 /* 800CFC30 000CCA30  38 21 00 10 */	addi r1, r1, 0x10
 /* 800CFC34 000CCA34  4E 80 00 20 */	blr 
+
+.endif
+

@@ -2,12 +2,14 @@
 
 .section .sdata2
 
-.global $$2684
-$$2684:
+.global _esc__2_684
+_esc__2_684:
 	.incbin "baserom.dol", 0x32E908, 0x4
-.global $$2685_0
-$$2685_0:
+.global _esc__2_685_0
+_esc__2_685_0:
 	.incbin "baserom.dol", 0x32E90C, 0x4
+
+.if 0
 
 .section .text
 
@@ -29,7 +31,7 @@ xRayHitsSphereFast__FPC5xRay3PC7xSphere:
 /* 8001BF84 00018D84  7C 64 1B 78 */	mr r4, r3
 /* 8001BF88 00018D88  48 05 57 BD */	bl xVec3Dot__FPC5xVec3PC5xVec3
 /* 8001BF8C 00018D8C  C0 7F 00 0C */	lfs f3, 0xc(r31)
-/* 8001BF90 00018D90  C0 02 82 28 */	lfs f0, $$2684-_SDA2_BASE_(r2)
+/* 8001BF90 00018D90  C0 02 82 28 */	lfs f0, _esc__2_684-_SDA2_BASE_(r2)
 /* 8001BF94 00018D94  EC 43 00 F2 */	fmuls f2, f3, f3
 /* 8001BF98 00018D98  EF E1 10 28 */	fsubs f31, f1, f2
 /* 8001BF9C 00018D9C  FC 1F 00 40 */	fcmpo cr0, f31, f0
@@ -42,7 +44,7 @@ lbl_8001BFB0:
 /* 8001BFB4 00018DB4  54 00 05 29 */	rlwinm. r0, r0, 0, 0x14, 0x14
 /* 8001BFB8 00018DB8  41 82 00 24 */	beq lbl_8001BFDC
 /* 8001BFBC 00018DBC  C0 3E 00 1C */	lfs f1, 0x1c(r30)
-/* 8001BFC0 00018DC0  C0 02 82 2C */	lfs f0, $$2685_0-_SDA2_BASE_(r2)
+/* 8001BFC0 00018DC0  C0 02 82 2C */	lfs f0, _esc__2_685_0-_SDA2_BASE_(r2)
 /* 8001BFC4 00018DC4  EC 00 08 FA */	fmadds f0, f0, f3, f1
 /* 8001BFC8 00018DC8  EC 01 00 32 */	fmuls f0, f1, f0
 /* 8001BFCC 00018DCC  FC 1F 00 40 */	fcmpo cr0, f31, f0
@@ -53,7 +55,7 @@ lbl_8001BFDC:
 /* 8001BFDC 00018DDC  38 61 00 08 */	addi r3, r1, 8
 /* 8001BFE0 00018DE0  38 9E 00 0C */	addi r4, r30, 0xc
 /* 8001BFE4 00018DE4  48 05 57 61 */	bl xVec3Dot__FPC5xVec3PC5xVec3
-/* 8001BFE8 00018DE8  C0 02 82 28 */	lfs f0, $$2684-_SDA2_BASE_(r2)
+/* 8001BFE8 00018DE8  C0 02 82 28 */	lfs f0, _esc__2_684-_SDA2_BASE_(r2)
 /* 8001BFEC 00018DEC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8001BFF0 00018DF0  4C 41 13 82 */	cror 2, 1, 2
 /* 8001BFF4 00018DF4  40 82 00 0C */	bne lbl_8001C000
@@ -86,7 +88,7 @@ xRayHitsBoxFast__FPC5xRay3PC4xBox:
 /* 8001C04C 00018E4C  48 05 BB AD */	bl iBoxIsectRay__FPC4xBoxPC5xRay3P6xIsect
 /* 8001C050 00018E50  C0 01 00 0C */	lfs f0, 0xc(r1)
 /* 8001C054 00018E54  38 00 00 00 */	li r0, 0
-/* 8001C058 00018E58  C0 22 82 28 */	lfs f1, $$2684-_SDA2_BASE_(r2)
+/* 8001C058 00018E58  C0 22 82 28 */	lfs f1, _esc__2_684-_SDA2_BASE_(r2)
 /* 8001C05C 00018E5C  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 8001C060 00018E60  4C 40 13 82 */	cror 2, 0, 2
 /* 8001C064 00018E64  41 82 00 14 */	beq lbl_8001C078
@@ -115,7 +117,7 @@ xRayHitsCylinderFast__FPC5xRay3PC9xCylinder:
 /* 8001C0AC 00018EAC  48 05 AF 09 */	bl iCylinderIsectRay__FPC9xCylinderPC5xRay3P6xIsect
 /* 8001C0B0 00018EB0  C0 01 00 0C */	lfs f0, 0xc(r1)
 /* 8001C0B4 00018EB4  38 00 00 00 */	li r0, 0
-/* 8001C0B8 00018EB8  C0 22 82 28 */	lfs f1, $$2684-_SDA2_BASE_(r2)
+/* 8001C0B8 00018EB8  C0 22 82 28 */	lfs f1, _esc__2_684-_SDA2_BASE_(r2)
 /* 8001C0BC 00018EBC  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 8001C0C0 00018EC0  4C 40 13 82 */	cror 2, 0, 2
 /* 8001C0C4 00018EC4  41 82 00 14 */	beq lbl_8001C0D8
@@ -203,3 +205,6 @@ lbl_8001C1D0:
 /* 8001C1E4 00018FE4  7C 08 03 A6 */	mtlr r0
 /* 8001C1E8 00018FE8  7D 41 53 78 */	mr r1, r10
 /* 8001C1EC 00018FEC  4E 80 00 20 */	blr 
+
+.endif
+

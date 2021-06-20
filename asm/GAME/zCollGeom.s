@@ -8,8 +8,8 @@ sCollisionGeomTable:
 
 .section .rodata
 
-.global $$2stringBase0_38
-$$2stringBase0_38:
+.global _esc__2_stringBase0_38
+_esc__2_stringBase0_38:
 	.incbin "baserom.dol", 0x2D7440, 0x8
 
 .section .sbss
@@ -17,6 +17,8 @@ $$2stringBase0_38:
 .global sCollisionGeomTableCount
 sCollisionGeomTableCount:
 	.skip 0x8
+
+.if 0
 
 .section .text
 
@@ -218,9 +220,9 @@ lbl_8008E4B0:
 /* 8008E4D8 0008B2D8  7C 03 C8 2E */	lwzx r0, r3, r25
 /* 8008E4DC 0008B2DC  28 00 00 00 */	cmplwi r0, 0
 /* 8008E4E0 0008B2E0  40 82 00 24 */	bne lbl_8008E504
-/* 8008E4E4 0008B2E4  3C 80 80 2E */	lis r4, $$2stringBase0_38@ha
+/* 8008E4E4 0008B2E4  3C 80 80 2E */	lis r4, _esc__2_stringBase0_38@ha
 /* 8008E4E8 0008B2E8  7F 03 C3 78 */	mr r3, r24
-/* 8008E4EC 0008B2EC  38 84 A4 40 */	addi r4, r4, $$2stringBase0_38@l
+/* 8008E4EC 0008B2EC  38 84 A4 40 */	addi r4, r4, _esc__2_stringBase0_38@l
 /* 8008E4F0 0008B2F0  4B FD E7 C1 */	bl xStrHashCat__FUiPCc
 /* 8008E4F4 0008B2F4  38 80 00 00 */	li r4, 0
 /* 8008E4F8 0008B2F8  4B FD DD A9 */	bl xSTFindAsset__FUiPUi
@@ -286,3 +288,6 @@ zCollGeom_CamDisable__FP4xEnt:
 /* 8008E5B4 0008B3B4  38 00 00 00 */	li r0, 0
 /* 8008E5B8 0008B3B8  90 03 00 30 */	stw r0, 0x30(r3)
 /* 8008E5BC 0008B3BC  4E 80 00 20 */	blr 
+
+.endif
+

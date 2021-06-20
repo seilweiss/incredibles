@@ -2,14 +2,16 @@
 
 .section .sdata2
 
-.global $$2877_2
-$$2877_2:
+.global _esc__2_877_2
+_esc__2_877_2:
 	.incbin "baserom.dol", 0x333B98, 0x8
+
+.if 0
 
 .section .text
 
-.global FunctionGeneratorEventWrapper__32$$2unnamed$$2xFunctionGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi
-FunctionGeneratorEventWrapper__32$$2unnamed$$2xFunctionGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi:
+.global FunctionGeneratorEventWrapper__32_esc__2_unnamed_esc__2_xFunctionGenerator_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi
+FunctionGeneratorEventWrapper__32_esc__2_unnamed_esc__2_xFunctionGenerator_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi:
 /* 801E4874 001E1674  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801E4878 001E1678  7C 08 02 A6 */	mflr r0
 /* 801E487C 001E167C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -32,9 +34,9 @@ __ct__18xFunctionGeneratorFPC23xFunctionGeneratorAsset:
 /* 801E48B4 001E16B4  7C 7E 1B 78 */	mr r30, r3
 /* 801E48B8 001E16B8  93 E3 00 10 */	stw r31, 0x10(r3)
 /* 801E48BC 001E16BC  4B E2 7B E5 */	bl xBaseInit__FP5xBasePC10xBaseAsset
-/* 801E48C0 001E16C0  3C 60 80 1E */	lis r3, FunctionGeneratorEventWrapper__32$$2unnamed$$2xFunctionGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi@ha
+/* 801E48C0 001E16C0  3C 60 80 1E */	lis r3, FunctionGeneratorEventWrapper__32_esc__2_unnamed_esc__2_xFunctionGenerator_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi@ha
 /* 801E48C4 001E16C4  38 9F 00 34 */	addi r4, r31, 0x34
-/* 801E48C8 001E16C8  38 63 48 74 */	addi r3, r3, FunctionGeneratorEventWrapper__32$$2unnamed$$2xFunctionGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi@l
+/* 801E48C8 001E16C8  38 63 48 74 */	addi r3, r3, FunctionGeneratorEventWrapper__32_esc__2_unnamed_esc__2_xFunctionGenerator_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi@l
 /* 801E48CC 001E16CC  38 00 00 00 */	li r0, 0
 /* 801E48D0 001E16D0  90 7E 00 0C */	stw r3, 0xc(r30)
 /* 801E48D4 001E16D4  7F C3 F3 78 */	mr r3, r30
@@ -287,7 +289,7 @@ lbl_801E4C34:
 Start__18xFunctionGeneratorFv:
 /* 801E4C44 001E1A44  80 A3 00 10 */	lwz r5, 0x10(r3)
 /* 801E4C48 001E1A48  38 80 00 00 */	li r4, 0
-/* 801E4C4C 001E1A4C  C0 02 D4 B8 */	lfs f0, $$2877_2-_SDA2_BASE_(r2)
+/* 801E4C4C 001E1A4C  C0 02 D4 B8 */	lfs f0, _esc__2_877_2-_SDA2_BASE_(r2)
 /* 801E4C50 001E1A50  38 00 00 01 */	li r0, 1
 /* 801E4C54 001E1A54  C0 25 00 10 */	lfs f1, 0x10(r5)
 /* 801E4C58 001E1A58  D0 23 00 18 */	stfs f1, 0x18(r3)
@@ -348,3 +350,6 @@ IsEnabled__18xFunctionGeneratorCFv:
 lbl_801E4D00:
 /* 801E4D00 001E1B00  7C 83 23 78 */	mr r3, r4
 /* 801E4D04 001E1B04  4E 80 00 20 */	blr 
+
+.endif
+

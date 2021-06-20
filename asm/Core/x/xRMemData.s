@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global __nw__10RyzMemDataFUliP10RyzMemGrow
@@ -49,3 +51,6 @@ lbl_80055430:
 .global __dl__10RyzMemDataFPv
 __dl__10RyzMemDataFPv:
 /* 80055458 00052258  4E 80 00 20 */	blr 
+
+.endif
+

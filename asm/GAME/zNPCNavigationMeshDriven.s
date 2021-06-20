@@ -11,15 +11,17 @@ num_driven_meshes__4zNPC:
 
 .section .sdata2
 
-.global $$2916
-$$2916:
+.global _esc__2_916
+_esc__2_916:
 	.incbin "baserom.dol", 0x332508, 0x4
-.global $$2917
-$$2917:
+.global _esc__2_917
+_esc__2_917:
 	.incbin "baserom.dol", 0x33250C, 0x4
-.global $$2918
-$$2918:
+.global _esc__2_918
+_esc__2_918:
 	.incbin "baserom.dol", 0x332510, 0x8
+
+.if 0
 
 .section .text
 
@@ -293,23 +295,23 @@ get_triangle_uv_pos__4zNPCFRfRfPC5xVec3PC5xVec3PC5xVec3RC5xVec3:
 /* 8017B634 00178434  EC 21 40 28 */	fsubs f1, f1, f8
 /* 8017B638 00178438  C0 67 00 08 */	lfs f3, 8(r7)
 /* 8017B63C 0017843C  EC 00 30 28 */	fsubs f0, f0, f6
-/* 8017B640 00178440  C0 82 BE 28 */	lfs f4, $$2916-_SDA2_BASE_(r2)
+/* 8017B640 00178440  C0 82 BE 28 */	lfs f4, _esc__2_916-_SDA2_BASE_(r2)
 /* 8017B644 00178444  EC 63 40 28 */	fsubs f3, f3, f8
 /* 8017B648 00178448  ED 22 00 72 */	fmuls f9, f2, f1
 /* 8017B64C 0017844C  EC A0 48 F8 */	fmsubs f5, f0, f3, f9
 /* 8017B650 00178450  FC 05 20 40 */	fcmpo cr0, f5, f4
 /* 8017B654 00178454  40 80 00 20 */	bge lbl_8017B674
-/* 8017B658 00178458  C0 82 BE 2C */	lfs f4, $$2917-_SDA2_BASE_(r2)
+/* 8017B658 00178458  C0 82 BE 2C */	lfs f4, _esc__2_917-_SDA2_BASE_(r2)
 /* 8017B65C 0017845C  FC 05 20 40 */	fcmpo cr0, f5, f4
 /* 8017B660 00178460  40 81 00 14 */	ble lbl_8017B674
-/* 8017B664 00178464  C0 02 BE 30 */	lfs f0, $$2918-_SDA2_BASE_(r2)
+/* 8017B664 00178464  C0 02 BE 30 */	lfs f0, _esc__2_918-_SDA2_BASE_(r2)
 /* 8017B668 00178468  D0 04 00 00 */	stfs f0, 0(r4)
 /* 8017B66C 0017846C  D0 03 00 00 */	stfs f0, 0(r3)
 /* 8017B670 00178470  4E 80 00 20 */	blr 
 lbl_8017B674:
 /* 8017B674 00178474  C0 88 00 00 */	lfs f4, 0(r8)
 /* 8017B678 00178478  C0 A8 00 08 */	lfs f5, 8(r8)
-/* 8017B67C 0017847C  C0 E2 BE 28 */	lfs f7, $$2916-_SDA2_BASE_(r2)
+/* 8017B67C 0017847C  C0 E2 BE 28 */	lfs f7, _esc__2_916-_SDA2_BASE_(r2)
 /* 8017B680 00178480  EC 84 30 28 */	fsubs f4, f4, f6
 /* 8017B684 00178484  EC A5 40 28 */	fsubs f5, f5, f8
 /* 8017B688 00178488  FC 00 38 40 */	fcmpo cr0, f0, f7
@@ -345,7 +347,7 @@ lbl_8017B6D4:
 /* 8017B6FC 001784FC  D0 03 00 00 */	stfs f0, 0(r3)
 /* 8017B700 00178500  4E 80 00 20 */	blr 
 lbl_8017B704:
-/* 8017B704 00178504  C0 C2 BE 2C */	lfs f6, $$2917-_SDA2_BASE_(r2)
+/* 8017B704 00178504  C0 C2 BE 2C */	lfs f6, _esc__2_917-_SDA2_BASE_(r2)
 /* 8017B708 00178508  FC 01 30 40 */	fcmpo cr0, f1, f6
 /* 8017B70C 0017850C  40 80 00 74 */	bge lbl_8017B780
 /* 8017B710 00178510  FC C0 08 50 */	fneg f6, f1
@@ -386,7 +388,7 @@ lbl_8017B780:
 /* 8017B794 00178594  D0 03 00 00 */	stfs f0, 0(r3)
 /* 8017B798 00178598  4E 80 00 20 */	blr 
 lbl_8017B79C:
-/* 8017B79C 0017859C  C0 C2 BE 2C */	lfs f6, $$2917-_SDA2_BASE_(r2)
+/* 8017B79C 0017859C  C0 C2 BE 2C */	lfs f6, _esc__2_917-_SDA2_BASE_(r2)
 /* 8017B7A0 001785A0  FC 00 30 40 */	fcmpo cr0, f0, f6
 /* 8017B7A4 001785A4  40 80 01 0C */	bge lbl_8017B8B0
 /* 8017B7A8 001785A8  FC 01 38 40 */	fcmpo cr0, f1, f7
@@ -473,7 +475,7 @@ lbl_8017B8C0:
 /* 8017B8D4 001786D4  D0 03 00 00 */	stfs f0, 0(r3)
 /* 8017B8D8 001786D8  4E 80 00 20 */	blr 
 lbl_8017B8DC:
-/* 8017B8DC 001786DC  C0 02 BE 30 */	lfs f0, $$2918-_SDA2_BASE_(r2)
+/* 8017B8DC 001786DC  C0 02 BE 30 */	lfs f0, _esc__2_918-_SDA2_BASE_(r2)
 /* 8017B8E0 001786E0  D0 04 00 00 */	stfs f0, 0(r4)
 /* 8017B8E4 001786E4  D0 03 00 00 */	stfs f0, 0(r3)
 /* 8017B8E8 001786E8  4E 80 00 20 */	blr 
@@ -868,3 +870,6 @@ get_triangle_verts__Q24zNPC15navigation_meshFiiRPC5xVec3RPC5xVec3RPC5xVec3:
 get_first_circle__Q24zNPC15navigation_meshFv:
 /* 8017BE5C 00178C5C  80 63 00 08 */	lwz r3, 8(r3)
 /* 8017BE60 00178C60  4E 80 00 20 */	blr 
+
+.endif
+

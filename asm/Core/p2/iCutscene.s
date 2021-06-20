@@ -6,6 +6,8 @@
 read_sizzze:
 	.skip 0x8
 
+.if 0
+
 .section .text
 
 .global iCSSoundSetup__FP9xCutscene
@@ -670,3 +672,6 @@ lbl_80073C48:
 /* 80073C50 00070A50  7C 08 03 A6 */	mtlr r0
 /* 80073C54 00070A54  38 21 00 20 */	addi r1, r1, 0x20
 /* 80073C58 00070A58  4E 80 00 20 */	blr 
+
+.endif
+

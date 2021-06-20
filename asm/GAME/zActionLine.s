@@ -2,8 +2,8 @@
 
 .section .bss
 
-.global sStripVert$1003
-sStripVert$1003:
+.global sStripVert_esc__7_1003
+sStripVert_esc__7_1003:
 	.skip 0x90
 
 .section .sbss
@@ -17,12 +17,14 @@ sActionLineRaster:
 
 .section .sdata2
 
-.global $$2995_2
-$$2995_2:
+.global _esc__2_995_2
+_esc__2_995_2:
 	.incbin "baserom.dol", 0x3323B0, 0x4
-.global $$21036_4
-$$21036_4:
+.global _esc__2_1036_4
+_esc__2_1036_4:
 	.incbin "baserom.dol", 0x3323B4, 0x4
+
+.if 0
 
 .section .text
 
@@ -59,7 +61,7 @@ lbl_801731E8:
 .global zActionLineUpdate__Ff
 zActionLineUpdate__Ff:
 /* 801731F8 0016FFF8  38 00 00 08 */	li r0, 8
-/* 801731FC 0016FFFC  C0 02 BC D0 */	lfs f0, $$2995_2-_SDA2_BASE_(r2)
+/* 801731FC 0016FFFC  C0 02 BC D0 */	lfs f0, _esc__2_995_2-_SDA2_BASE_(r2)
 /* 80173200 00170000  38 60 00 00 */	li r3, 0
 /* 80173204 00170004  38 8D D3 40 */	addi r4, r13, sActionLine-_SDA_BASE_
 /* 80173208 00170008  7C 09 03 A6 */	mtctr r0
@@ -89,10 +91,10 @@ lbl_8017324C:
 RenderActionLine__FP14_tagActionLine:
 /* 80173258 00170058  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8017325C 0017005C  7C 08 02 A6 */	mflr r0
-/* 80173260 00170060  3C 80 80 39 */	lis r4, sStripVert$1003@ha
-/* 80173264 00170064  C0 02 BC D0 */	lfs f0, $$2995_2-_SDA2_BASE_(r2)
+/* 80173260 00170060  3C 80 80 39 */	lis r4, sStripVert_esc__7_1003@ha
+/* 80173264 00170064  C0 02 BC D0 */	lfs f0, _esc__2_995_2-_SDA2_BASE_(r2)
 /* 80173268 00170068  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8017326C 0017006C  38 84 3A 10 */	addi r4, r4, sStripVert$1003@l
+/* 8017326C 0017006C  38 84 3A 10 */	addi r4, r4, sStripVert_esc__7_1003@l
 /* 80173270 00170070  7C 88 23 78 */	mr r8, r4
 /* 80173274 00170074  38 00 00 04 */	li r0, 4
 /* 80173278 00170078  38 80 00 00 */	li r4, 0
@@ -116,9 +118,9 @@ lbl_80173288:
 /* 801732BC 001700BC  98 A8 00 1B */	stb r5, 0x1b(r8)
 /* 801732C0 001700C0  39 08 00 24 */	addi r8, r8, 0x24
 /* 801732C4 001700C4  42 00 FF C4 */	bdnz lbl_80173288
-/* 801732C8 001700C8  3C 60 80 39 */	lis r3, sStripVert$1003@ha
-/* 801732CC 001700CC  C0 02 BC D4 */	lfs f0, $$21036_4-_SDA2_BASE_(r2)
-/* 801732D0 001700D0  38 63 3A 10 */	addi r3, r3, sStripVert$1003@l
+/* 801732C8 001700C8  3C 60 80 39 */	lis r3, sStripVert_esc__7_1003@ha
+/* 801732CC 001700CC  C0 02 BC D4 */	lfs f0, _esc__2_1036_4-_SDA2_BASE_(r2)
+/* 801732D0 001700D0  38 63 3A 10 */	addi r3, r3, sStripVert_esc__7_1003@l
 /* 801732D4 001700D4  38 80 00 04 */	li r4, 4
 /* 801732D8 001700D8  D0 03 00 64 */	stfs f0, 0x64(r3)
 /* 801732DC 001700DC  38 A0 00 00 */	li r5, 0
@@ -170,3 +172,6 @@ lbl_80173364:
 /* 8017337C 0017017C  7C 08 03 A6 */	mtlr r0
 /* 80173380 00170180  38 21 00 20 */	addi r1, r1, 0x20
 /* 80173384 00170184  4E 80 00 20 */	blr 
+
+.endif
+

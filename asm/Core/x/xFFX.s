@@ -32,9 +32,11 @@ rot_match_alist:
 
 .section .sdata2
 
-.global $$2802
-$$2802:
+.global _esc__2_802
+_esc__2_802:
 	.incbin "baserom.dol", 0x32EB78, 0x8
+
+.if 0
 
 .section .text
 
@@ -219,7 +221,7 @@ xFFXShakeUpdateEnt__FP4xEntP6xScenefPv:
 /* 8002F780 0002C580  FF E0 08 90 */	fmr f31, f1
 /* 8002F784 0002C584  EC 20 07 B2 */	fmuls f1, f0, f30
 /* 8002F788 0002C588  48 04 70 61 */	bl isin__Ff
-/* 8002F78C 0002C58C  C0 42 84 98 */	lfs f2, $$2802-_SDA2_BASE_(r2)
+/* 8002F78C 0002C58C  C0 42 84 98 */	lfs f2, _esc__2_802-_SDA2_BASE_(r2)
 /* 8002F790 0002C590  EF E1 07 F2 */	fmuls f31, f1, f31
 /* 8002F794 0002C594  C0 3F 00 14 */	lfs f1, 0x14(r31)
 /* 8002F798 0002C598  FC 02 08 00 */	fcmpu cr0, f2, f1
@@ -362,3 +364,6 @@ lbl_8002F948:
 /* 8002F96C 0002C76C  7C 08 03 A6 */	mtlr r0
 /* 8002F970 0002C770  38 21 00 10 */	addi r1, r1, 0x10
 /* 8002F974 0002C774  4E 80 00 20 */	blr 
+
+.endif
+

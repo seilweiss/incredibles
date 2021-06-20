@@ -14,15 +14,17 @@ sSkyCount:
 
 .section .sbss2
 
-.global $$2775_0
-$$2775_0:
+.global _esc__2_775_0
+_esc__2_775_0:
 	.skip 0x8
 
 .section .sdata2
 
-.global $$2807
-$$2807:
+.global _esc__2_807
+_esc__2_807:
 	.incbin "baserom.dol", 0x32F4F0, 0x8
+
+.if 0
 
 .section .text
 
@@ -170,10 +172,10 @@ xSkyDome_Render__Fv:
 /* 80064DB8 00061BB8  7F 63 DB 78 */	mr r3, r27
 /* 80064DBC 00061BBC  C3 FB 00 84 */	lfs f31, 0x84(r27)
 /* 80064DC0 00061BC0  48 22 DE 65 */	bl RwCameraEndUpdate
-/* 80064DC4 00061BC4  C0 22 8E 10 */	lfs f1, $$2807-_SDA2_BASE_(r2)
+/* 80064DC4 00061BC4  C0 22 8E 10 */	lfs f1, _esc__2_807-_SDA2_BASE_(r2)
 /* 80064DC8 00061BC8  7F 63 DB 78 */	mr r3, r27
 /* 80064DCC 00061BCC  48 22 DF B1 */	bl RwCameraSetFarClipPlane
-/* 80064DD0 00061BD0  80 02 EB C0 */	lwz r0, $$2775_0-_SDA2_BASE_(r2)
+/* 80064DD0 00061BD0  80 02 EB C0 */	lwz r0, _esc__2_775_0-_SDA2_BASE_(r2)
 /* 80064DD4 00061BD4  7F 63 DB 78 */	mr r3, r27
 /* 80064DD8 00061BD8  38 81 00 08 */	addi r4, r1, 8
 /* 80064DDC 00061BDC  38 A0 00 06 */	li r5, 6
@@ -275,3 +277,6 @@ lbl_80064F0C:
 /* 80064F44 00061D44  7C 08 03 A6 */	mtlr r0
 /* 80064F48 00061D48  38 21 00 50 */	addi r1, r1, 0x50
 /* 80064F4C 00061D4C  4E 80 00 20 */	blr 
+
+.endif
+

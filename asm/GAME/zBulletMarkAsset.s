@@ -6,6 +6,8 @@
 bulletmark_mgr:
 	.skip 0x388
 
+.if 0
+
 .section .text
 
 .global zBulletMarkAsset_Init__FR5xBaseR9xDynAssetUl
@@ -74,3 +76,6 @@ add__19zBulletMarkAssetMgrFP16zBulletMarkAsset:
 /* 80185B84 00182984  38 04 00 01 */	addi r0, r4, 1
 /* 80185B88 00182988  90 03 00 00 */	stw r0, 0(r3)
 /* 80185B8C 0018298C  4E 80 00 20 */	blr 
+
+.endif
+

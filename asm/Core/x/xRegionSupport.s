@@ -2,9 +2,11 @@
 
 .section .rodata
 
-.global $$2stringBase0_18
-$$2stringBase0_18:
+.global _esc__2_stringBase0_18
+_esc__2_stringBase0_18:
 	.incbin "baserom.dol", 0x2CF368, 0x40
+
+.if 0
 
 .section .text
 
@@ -40,3 +42,6 @@ lbl_80055170:
 /* 8005517C 00051F7C  7C 08 03 A6 */	mtlr r0
 /* 80055180 00051F80  38 21 00 20 */	addi r1, r1, 0x20
 /* 80055184 00051F84  4E 80 00 20 */	blr 
+
+.endif
+

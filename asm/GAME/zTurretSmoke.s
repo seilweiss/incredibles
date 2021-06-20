@@ -2,8 +2,8 @@
 
 .section .rodata
 
-.global $$2stringBase0_136
-$$2stringBase0_136:
+.global _esc__2_stringBase0_136
+_esc__2_stringBase0_136:
 	.incbin "baserom.dol", 0x2E6520, 0x20
 
 .section .sbss
@@ -11,8 +11,8 @@ $$2stringBase0_136:
 .global texture__18zTurretSmokeSystem
 texture__18zTurretSmokeSystem:
 	.skip 0x4
-.global systemID__26$$2unnamed$$2zTurretSmoke_cpp$$2
-systemID__26$$2unnamed$$2zTurretSmoke_cpp$$2:
+.global systemID__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_
+systemID__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_:
 	.skip 0x4
 
 .section .sdata
@@ -20,63 +20,65 @@ systemID__26$$2unnamed$$2zTurretSmoke_cpp$$2:
 .global __vt__18zTurretSmokeSystem
 __vt__18zTurretSmokeSystem:
 	.incbin "baserom.dol", 0x32DA38, 0x20
-.global __vt__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1
-__vt__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1:
+.global __vt__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_
+__vt__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_:
 	.incbin "baserom.dol", 0x32DA58, 0x20
 
 .section .sdata2
 
-.global $$21304_3
-$$21304_3:
+.global _esc__2_1304_3
+_esc__2_1304_3:
 	.incbin "baserom.dol", 0x3336E0, 0x4
-.global $$21305_1
-$$21305_1:
+.global _esc__2_1305_1
+_esc__2_1305_1:
 	.incbin "baserom.dol", 0x3336E4, 0x4
-.global turretSmokeColor__26$$2unnamed$$2zTurretSmoke_cpp$$2
-turretSmokeColor__26$$2unnamed$$2zTurretSmoke_cpp$$2:
+.global turretSmokeColor__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_
+turretSmokeColor__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_:
 	.incbin "baserom.dol", 0x3336E8, 0x4
-.global $$21329_5
-$$21329_5:
+.global _esc__2_1329_5
+_esc__2_1329_5:
 	.incbin "baserom.dol", 0x3336EC, 0x4
-.global $$21330_4
-$$21330_4:
+.global _esc__2_1330_4
+_esc__2_1330_4:
 	.incbin "baserom.dol", 0x3336F0, 0x4
-.global $$21381_0
-$$21381_0:
+.global _esc__2_1381_0
+_esc__2_1381_0:
 	.incbin "baserom.dol", 0x3336F4, 0x4
-.global $$21382_1
-$$21382_1:
+.global _esc__2_1382_1
+_esc__2_1382_1:
 	.incbin "baserom.dol", 0x3336F8, 0x4
-.global $$21383_4
-$$21383_4:
+.global _esc__2_1383_4
+_esc__2_1383_4:
 	.incbin "baserom.dol", 0x3336FC, 0x4
-.global $$21384_2
-$$21384_2:
+.global _esc__2_1384_2
+_esc__2_1384_2:
 	.incbin "baserom.dol", 0x333700, 0x4
-.global $$21385_2
-$$21385_2:
+.global _esc__2_1385_2
+_esc__2_1385_2:
 	.incbin "baserom.dol", 0x333704, 0x4
-.global $$21386_6
-$$21386_6:
+.global _esc__2_1386_6
+_esc__2_1386_6:
 	.incbin "baserom.dol", 0x333708, 0x4
-.global $$21387_4
-$$21387_4:
+.global _esc__2_1387_4
+_esc__2_1387_4:
 	.incbin "baserom.dol", 0x33370C, 0x4
-.global $$21388_4
-$$21388_4:
+.global _esc__2_1388_4
+_esc__2_1388_4:
 	.incbin "baserom.dol", 0x333710, 0x4
-.global $$21389_6
-$$21389_6:
+.global _esc__2_1389_6
+_esc__2_1389_6:
 	.incbin "baserom.dol", 0x333714, 0x4
-.global $$21391_5
-$$21391_5:
+.global _esc__2_1391_5
+_esc__2_1391_5:
 	.incbin "baserom.dol", 0x333718, 0x8
-.global $$21452_0
-$$21452_0:
+.global _esc__2_1452_0
+_esc__2_1452_0:
 	.incbin "baserom.dol", 0x333720, 0x4
-.global $$21453_0
-$$21453_0:
+.global _esc__2_1453_0
+_esc__2_1453_0:
 	.incbin "baserom.dol", 0x333724, 0x4
+
+.if 0
 
 .section .text
 
@@ -84,9 +86,9 @@ $$21453_0:
 setup__18zTurretSmokeSystemFv:
 /* 801D2DBC 001CFBBC  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801D2DC0 001CFBC0  7C 08 02 A6 */	mflr r0
-/* 801D2DC4 001CFBC4  3C 60 80 2F */	lis r3, $$2stringBase0_136@ha
+/* 801D2DC4 001CFBC4  3C 60 80 2F */	lis r3, _esc__2_stringBase0_136@ha
 /* 801D2DC8 001CFBC8  90 01 00 34 */	stw r0, 0x34(r1)
-/* 801D2DCC 001CFBCC  38 63 95 20 */	addi r3, r3, $$2stringBase0_136@l
+/* 801D2DCC 001CFBCC  38 63 95 20 */	addi r3, r3, _esc__2_stringBase0_136@l
 /* 801D2DD0 001CFBD0  4B E9 9E 51 */	bl xStrHash__FPCc
 /* 801D2DD4 001CFBD4  38 80 00 00 */	li r4, 0
 /* 801D2DD8 001CFBD8  4B E9 94 C9 */	bl xSTFindAsset__FUiPUi
@@ -94,7 +96,7 @@ setup__18zTurretSmokeSystemFv:
 /* 801D2DE0 001CFBE0  90 6D DA 08 */	stw r3, texture__18zTurretSmokeSystem-_SDA_BASE_(r13)
 /* 801D2DE4 001CFBE4  40 82 00 10 */	bne lbl_801D2DF4
 /* 801D2DE8 001CFBE8  38 00 FF FF */	li r0, -1
-/* 801D2DEC 001CFBEC  90 0D DA 0C */	stw r0, systemID__26$$2unnamed$$2zTurretSmoke_cpp$$2-_SDA_BASE_(r13)
+/* 801D2DEC 001CFBEC  90 0D DA 0C */	stw r0, systemID__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801D2DF0 001CFBF0  48 00 00 60 */	b lbl_801D2E50
 lbl_801D2DF4:
 /* 801D2DF4 001CFBF4  3C A0 80 1D */	lis r5, Update__18zTurretSmokeSystemFPUciR10ptank_poolfPv@ha
@@ -119,7 +121,7 @@ lbl_801D2DF4:
 /* 801D2E40 001CFC40  91 41 00 18 */	stw r10, 0x18(r1)
 /* 801D2E44 001CFC44  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801D2E48 001CFC48  4B FA 25 B5 */	bl xParticleBatchAddSystem__FRC20xParticleBatchSystem
-/* 801D2E4C 001CFC4C  90 6D DA 0C */	stw r3, systemID__26$$2unnamed$$2zTurretSmoke_cpp$$2-_SDA_BASE_(r13)
+/* 801D2E4C 001CFC4C  90 6D DA 0C */	stw r3, systemID__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801D2E50:
 /* 801D2E50 001CFC50  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801D2E54 001CFC54  7C 08 03 A6 */	mtlr r0
@@ -136,7 +138,7 @@ __ct__18zTurretSmokeSystemFR5xVec3R5xVec3:
 /* 801D2E74 001CFC74  7C 7D 1B 78 */	mr r29, r3
 /* 801D2E78 001CFC78  7C BF 2B 78 */	mr r31, r5
 /* 801D2E7C 001CFC7C  38 80 00 01 */	li r4, 1
-/* 801D2E80 001CFC80  48 00 04 ED */	bl __ct__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1Fb
+/* 801D2E80 001CFC80  48 00 04 ED */	bl __ct__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Fb
 /* 801D2E84 001CFC84  38 0D AA 78 */	addi r0, r13, __vt__18zTurretSmokeSystem-_SDA_BASE_
 /* 801D2E88 001CFC88  7F A3 EB 78 */	mr r3, r29
 /* 801D2E8C 001CFC8C  90 1D 00 08 */	stw r0, 8(r29)
@@ -158,7 +160,7 @@ __ct__18zTurretSmokeSystemFv:
 /* 801D2EC0 001CFCC0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801D2EC4 001CFCC4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801D2EC8 001CFCC8  7C 7F 1B 78 */	mr r31, r3
-/* 801D2ECC 001CFCCC  48 00 04 A1 */	bl __ct__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1Fb
+/* 801D2ECC 001CFCCC  48 00 04 A1 */	bl __ct__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Fb
 /* 801D2ED0 001CFCD0  38 0D AA 78 */	addi r0, r13, __vt__18zTurretSmokeSystem-_SDA_BASE_
 /* 801D2ED4 001CFCD4  7F E3 FB 78 */	mr r3, r31
 /* 801D2ED8 001CFCD8  90 1F 00 08 */	stw r0, 8(r31)
@@ -181,10 +183,10 @@ Reset__18zTurretSmokeSystemFR5xVec3R5xVec3:
 /* 801D2F10 001CFD10  7F E4 FB 78 */	mr r4, r31
 /* 801D2F14 001CFD14  38 7E 00 1C */	addi r3, r30, 0x1c
 /* 801D2F18 001CFD18  4B E3 81 91 */	bl __as__5xVec3FRC5xVec3
-/* 801D2F1C 001CFD1C  C0 02 D0 00 */	lfs f0, $$21304_3-_SDA2_BASE_(r2)
-/* 801D2F20 001CFD20  C0 22 D0 0C */	lfs f1, $$21329_5-_SDA2_BASE_(r2)
+/* 801D2F1C 001CFD1C  C0 02 D0 00 */	lfs f0, _esc__2_1304_3-_SDA2_BASE_(r2)
+/* 801D2F20 001CFD20  C0 22 D0 0C */	lfs f1, _esc__2_1329_5-_SDA2_BASE_(r2)
 /* 801D2F24 001CFD24  D0 1E 00 28 */	stfs f0, 0x28(r30)
-/* 801D2F28 001CFD28  C0 02 D0 10 */	lfs f0, $$21330_4-_SDA2_BASE_(r2)
+/* 801D2F28 001CFD28  C0 02 D0 10 */	lfs f0, _esc__2_1330_4-_SDA2_BASE_(r2)
 /* 801D2F2C 001CFD2C  D0 3E 00 0C */	stfs f1, 0xc(r30)
 /* 801D2F30 001CFD30  D0 1E 00 2C */	stfs f0, 0x2c(r30)
 /* 801D2F34 001CFD34  BB C1 00 08 */	lmw r30, 8(r1)
@@ -218,12 +220,12 @@ update__18zTurretSmokeSystemFf:
 /* 801D2F98 001CFD98  F2 E1 00 48 */	psq_st f23, 72(r1), 0, qr0
 /* 801D2F9C 001CFD9C  BF 61 00 2C */	stmw r27, 0x2c(r1)
 /* 801D2FA0 001CFDA0  7C 7C 1B 78 */	mr r28, r3
-/* 801D2FA4 001CFDA4  C0 02 D0 00 */	lfs f0, $$21304_3-_SDA2_BASE_(r2)
+/* 801D2FA4 001CFDA4  C0 02 D0 00 */	lfs f0, _esc__2_1304_3-_SDA2_BASE_(r2)
 /* 801D2FA8 001CFDA8  C0 43 00 2C */	lfs f2, 0x2c(r3)
 /* 801D2FAC 001CFDAC  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801D2FB0 001CFDB0  40 80 00 10 */	bge lbl_801D2FC0
 /* 801D2FB4 001CFDB4  38 80 00 00 */	li r4, 0
-/* 801D2FB8 001CFDB8  4B F3 35 ED */	bl set_used__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1Fb
+/* 801D2FB8 001CFDB8  4B F3 35 ED */	bl set_used__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Fb
 /* 801D2FBC 001CFDBC  48 00 01 D0 */	b lbl_801D318C
 lbl_801D2FC0:
 /* 801D2FC0 001CFDC0  EC 02 08 28 */	fsubs f0, f2, f1
@@ -231,35 +233,35 @@ lbl_801D2FC0:
 /* 801D2FC8 001CFDC8  80 0D DA 08 */	lwz r0, texture__18zTurretSmokeSystem-_SDA_BASE_(r13)
 /* 801D2FCC 001CFDCC  28 00 00 00 */	cmplwi r0, 0
 /* 801D2FD0 001CFDD0  41 82 01 BC */	beq lbl_801D318C
-/* 801D2FD4 001CFDD4  C0 62 D0 04 */	lfs f3, $$21305_1-_SDA2_BASE_(r2)
+/* 801D2FD4 001CFDD4  C0 62 D0 04 */	lfs f3, _esc__2_1305_1-_SDA2_BASE_(r2)
 /* 801D2FD8 001CFDD8  3F 60 43 30 */	lis r27, 0x4330
 /* 801D2FDC 001CFDDC  C0 1C 00 28 */	lfs f0, 0x28(r28)
-/* 801D2FE0 001CFDE0  C0 42 D0 14 */	lfs f2, $$21381_0-_SDA2_BASE_(r2)
+/* 801D2FE0 001CFDE0  C0 42 D0 14 */	lfs f2, _esc__2_1381_0-_SDA2_BASE_(r2)
 /* 801D2FE4 001CFDE4  EC 63 00 28 */	fsubs f3, f3, f0
-/* 801D2FE8 001CFDE8  C3 62 D0 18 */	lfs f27, $$21382_1-_SDA2_BASE_(r2)
+/* 801D2FE8 001CFDE8  C3 62 D0 18 */	lfs f27, _esc__2_1382_1-_SDA2_BASE_(r2)
 /* 801D2FEC 001CFDEC  EC 02 00 7A */	fmadds f0, f2, f1, f0
-/* 801D2FF0 001CFDF0  C3 82 D0 1C */	lfs f28, $$21383_4-_SDA2_BASE_(r2)
-/* 801D2FF4 001CFDF4  C3 A2 D0 24 */	lfs f29, $$21385_2-_SDA2_BASE_(r2)
+/* 801D2FF0 001CFDF0  C3 82 D0 1C */	lfs f28, _esc__2_1383_4-_SDA2_BASE_(r2)
+/* 801D2FF4 001CFDF4  C3 A2 D0 24 */	lfs f29, _esc__2_1385_2-_SDA2_BASE_(r2)
 /* 801D2FF8 001CFDF8  EF 43 10 24 */	fdivs f26, f3, f2
 /* 801D2FFC 001CFDFC  D0 1C 00 28 */	stfs f0, 0x28(r28)
-/* 801D3000 001CFE00  C3 C2 D0 28 */	lfs f30, $$21386_6-_SDA2_BASE_(r2)
+/* 801D3000 001CFE00  C3 C2 D0 28 */	lfs f30, _esc__2_1386_6-_SDA2_BASE_(r2)
 /* 801D3004 001CFE04  C0 1C 00 28 */	lfs f0, 0x28(r28)
-/* 801D3008 001CFE08  C3 E2 D0 2C */	lfs f31, $$21387_4-_SDA2_BASE_(r2)
-/* 801D300C 001CFE0C  C2 E2 D0 30 */	lfs f23, $$21388_4-_SDA2_BASE_(r2)
+/* 801D3008 001CFE08  C3 E2 D0 2C */	lfs f31, _esc__2_1387_4-_SDA2_BASE_(r2)
+/* 801D300C 001CFE0C  C2 E2 D0 30 */	lfs f23, _esc__2_1388_4-_SDA2_BASE_(r2)
 /* 801D3010 001CFE10  FC 00 00 1E */	fctiwz f0, f0
-/* 801D3014 001CFE14  C3 02 D0 34 */	lfs f24, $$21389_6-_SDA2_BASE_(r2)
-/* 801D3018 001CFE18  CB 22 D0 38 */	lfd f25, $$21391_5-_SDA2_BASE_(r2)
+/* 801D3014 001CFE14  C3 02 D0 34 */	lfs f24, _esc__2_1389_6-_SDA2_BASE_(r2)
+/* 801D3018 001CFE18  CB 22 D0 38 */	lfd f25, _esc__2_1391_5-_SDA2_BASE_(r2)
 /* 801D301C 001CFE1C  D8 01 00 18 */	stfd f0, 0x18(r1)
 /* 801D3020 001CFE20  83 C1 00 1C */	lwz r30, 0x1c(r1)
 /* 801D3024 001CFE24  48 00 01 60 */	b lbl_801D3184
 lbl_801D3028:
-/* 801D3028 001CFE28  80 6D DA 0C */	lwz r3, systemID__26$$2unnamed$$2zTurretSmoke_cpp$$2-_SDA_BASE_(r13)
+/* 801D3028 001CFE28  80 6D DA 0C */	lwz r3, systemID__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801D302C 001CFE2C  7F C4 F3 78 */	mr r4, r30
 /* 801D3030 001CFE30  38 A1 00 08 */	addi r5, r1, 8
 /* 801D3034 001CFE34  4B FA 24 B1 */	bl xParticleBatchEmit__FiiPPUc
 /* 801D3038 001CFE38  7C 7F 1B 79 */	or. r31, r3, r3
 /* 801D303C 001CFE3C  40 82 00 10 */	bne lbl_801D304C
-/* 801D3040 001CFE40  C0 02 D0 00 */	lfs f0, $$21304_3-_SDA2_BASE_(r2)
+/* 801D3040 001CFE40  C0 02 D0 00 */	lfs f0, _esc__2_1304_3-_SDA2_BASE_(r2)
 /* 801D3044 001CFE44  D0 1C 00 28 */	stfs f0, 0x28(r28)
 /* 801D3048 001CFE48  48 00 01 44 */	b lbl_801D318C
 lbl_801D304C:
@@ -271,7 +273,7 @@ lbl_801D305C:
 /* 801D305C 001CFE5C  7C 03 E8 40 */	cmplw r3, r29
 /* 801D3060 001CFE60  41 82 01 00 */	beq lbl_801D3160
 /* 801D3064 001CFE64  38 63 00 20 */	addi r3, r3, 0x20
-/* 801D3068 001CFE68  38 82 D0 08 */	addi r4, r2, turretSmokeColor__26$$2unnamed$$2zTurretSmoke_cpp$$2-_SDA2_BASE_
+/* 801D3068 001CFE68  38 82 D0 08 */	addi r4, r2, turretSmokeColor__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_-_SDA2_BASE_
 /* 801D306C 001CFE6C  4B E4 31 D1 */	bl __as__10xColor_tagFRC10xColor_tag
 /* 801D3070 001CFE70  4B E3 42 B5 */	bl xurand__Fv
 /* 801D3074 001CFE74  EC 1B 00 72 */	fmuls f0, f27, f1
@@ -290,7 +292,7 @@ lbl_801D305C:
 /* 801D30A8 001CFEA8  4B E3 42 7D */	bl xurand__Fv
 /* 801D30AC 001CFEAC  EC 01 D8 28 */	fsubs f0, f1, f27
 /* 801D30B0 001CFEB0  80 A1 00 08 */	lwz r5, 8(r1)
-/* 801D30B4 001CFEB4  C0 22 D0 20 */	lfs f1, $$21384_2-_SDA2_BASE_(r2)
+/* 801D30B4 001CFEB4  C0 22 D0 20 */	lfs f1, _esc__2_1384_2-_SDA2_BASE_(r2)
 /* 801D30B8 001CFEB8  38 61 00 0C */	addi r3, r1, 0xc
 /* 801D30BC 001CFEBC  38 9C 00 1C */	addi r4, r28, 0x1c
 /* 801D30C0 001CFEC0  EC 1C 00 32 */	fmuls f0, f28, f0
@@ -386,7 +388,7 @@ Update__18zTurretSmokeSystemFPUciR10ptank_poolfPv:
 /* 801D3208 001D0008  1C 04 00 2C */	mulli r0, r4, 0x2c
 /* 801D320C 001D000C  7C 7C 1B 78 */	mr r28, r3
 /* 801D3210 001D0010  FF C0 08 90 */	fmr f30, f1
-/* 801D3214 001D0014  C3 E2 D0 00 */	lfs f31, $$21304_3-_SDA2_BASE_(r2)
+/* 801D3214 001D0014  C3 E2 D0 00 */	lfs f31, _esc__2_1304_3-_SDA2_BASE_(r2)
 /* 801D3218 001D0018  7F 9E E3 78 */	mr r30, r28
 /* 801D321C 001D001C  7C BF 2B 78 */	mr r31, r5
 /* 801D3220 001D0020  7F BE 02 14 */	add r29, r30, r0
@@ -417,7 +419,7 @@ lbl_801D327C:
 /* 801D327C 001D007C  7F C4 F3 78 */	mr r4, r30
 /* 801D3280 001D0080  38 61 00 14 */	addi r3, r1, 0x14
 /* 801D3284 001D0084  4B E4 0D 59 */	bl __as__5RwV3dFRC5RwV3d
-/* 801D3288 001D0088  C0 02 D0 04 */	lfs f0, $$21305_1-_SDA2_BASE_(r2)
+/* 801D3288 001D0088  C0 02 D0 04 */	lfs f0, _esc__2_1305_1-_SDA2_BASE_(r2)
 /* 801D328C 001D008C  38 81 00 14 */	addi r4, r1, 0x14
 /* 801D3290 001D0090  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
 /* 801D3294 001D0094  D0 01 00 20 */	stfs f0, 0x20(r1)
@@ -433,11 +435,11 @@ lbl_801D327C:
 /* 801D32BC 001D00BC  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801D32C0 001D00C0  41 82 00 7C */	beq lbl_801D333C
 /* 801D32C4 001D00C4  C0 3E 00 24 */	lfs f1, 0x24(r30)
-/* 801D32C8 001D00C8  C0 02 D0 40 */	lfs f0, $$21452_0-_SDA2_BASE_(r2)
+/* 801D32C8 001D00C8  C0 02 D0 40 */	lfs f0, _esc__2_1452_0-_SDA2_BASE_(r2)
 /* 801D32CC 001D00CC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801D32D0 001D00D0  40 80 00 24 */	bge lbl_801D32F4
 /* 801D32D4 001D00D4  EC 01 00 24 */	fdivs f0, f1, f0
-/* 801D32D8 001D00D8  C0 22 D0 44 */	lfs f1, $$21453_0-_SDA2_BASE_(r2)
+/* 801D32D8 001D00D8  C0 22 D0 44 */	lfs f1, _esc__2_1453_0-_SDA2_BASE_(r2)
 /* 801D32DC 001D00DC  EC 01 00 32 */	fmuls f0, f1, f0
 /* 801D32E0 001D00E0  FC 00 00 1E */	fctiwz f0, f0
 /* 801D32E4 001D00E4  D8 01 00 28 */	stfd f0, 0x28(r1)
@@ -480,15 +482,15 @@ lbl_801D333C:
 /* 801D3364 001D0164  38 21 00 60 */	addi r1, r1, 0x60
 /* 801D3368 001D0168  4E 80 00 20 */	blr 
 
-.global __ct__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1Fb
-__ct__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1Fb:
-/* 801D336C 001D016C  38 0D AA 98 */	addi r0, r13, __vt__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1-_SDA_BASE_
+.global __ct__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Fb
+__ct__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Fb:
+/* 801D336C 001D016C  38 0D AA 98 */	addi r0, r13, __vt__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_-_SDA_BASE_
 /* 801D3370 001D0170  90 03 00 08 */	stw r0, 8(r3)
 /* 801D3374 001D0174  98 83 00 00 */	stb r4, 0(r3)
 /* 801D3378 001D0178  4E 80 00 20 */	blr 
 
-.global update__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1Ff
-update__Q21z36lightweight$$018zTurretSmokeSystem$$410$$1Ff:
+.global update__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Ff
+update__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Ff:
 /* 801D337C 001D017C  4E 80 00 20 */	blr 
 
 .global __as__Q218zTurretSmokeSystem19TurretSmokeParticleFRCQ218zTurretSmokeSystem19TurretSmokeParticle
@@ -516,3 +518,6 @@ __as__Q218zTurretSmokeSystem19TurretSmokeParticleFRCQ218zTurretSmokeSystem19Turr
 /* 801D33D0 001D01D0  D0 23 00 24 */	stfs f1, 0x24(r3)
 /* 801D33D4 001D01D4  D0 03 00 28 */	stfs f0, 0x28(r3)
 /* 801D33D8 001D01D8  4E 80 00 20 */	blr 
+
+.endif
+

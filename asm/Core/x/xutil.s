@@ -17,18 +17,20 @@ g_xutilinit:
 .global g_crc_needinit
 g_crc_needinit:
 	.incbin "baserom.dol", 0x32B5A0, 0x4
-.global buf$622
-buf$622:
+.global buf_esc__7_622
+buf_esc__7_622:
 	.incbin "baserom.dol", 0x32B5A4, 0x3C
 
 .section .sdata2
 
-.global $$2819_2
-$$2819_2:
+.global _esc__2_819_2
+_esc__2_819_2:
 	.incbin "baserom.dol", 0x32F6F0, 0x4
-.global $$2820_2
-$$2820_2:
+.global _esc__2_820_2
+_esc__2_820_2:
 	.incbin "baserom.dol", 0x32F6F4, 0x4
+
+.if 0
 
 .section .text
 
@@ -69,11 +71,11 @@ xUtil_idtag2string__FUii:
 /* 800703F8 0006D1F8  2C 1E 00 07 */	cmpwi r30, 7
 /* 800703FC 0006D1FC  41 80 00 0C */	blt lbl_80070408
 lbl_80070400:
-/* 80070400 0006D200  3B ED 85 E4 */	addi r31, r13, buf$622-_SDA_BASE_
+/* 80070400 0006D200  3B ED 85 E4 */	addi r31, r13, buf_esc__7_622-_SDA_BASE_
 /* 80070404 0006D204  48 00 00 10 */	b lbl_80070414
 lbl_80070408:
 /* 80070408 0006D208  1C 1E 00 0A */	mulli r0, r30, 0xa
-/* 8007040C 0006D20C  3B ED 85 E4 */	addi r31, r13, buf$622-_SDA_BASE_
+/* 8007040C 0006D20C  3B ED 85 E4 */	addi r31, r13, buf_esc__7_622-_SDA_BASE_
 /* 80070410 0006D210  7F FF 02 14 */	add r31, r31, r0
 lbl_80070414:
 /* 80070414 0006D214  38 00 00 01 */	li r0, 1
@@ -326,13 +328,13 @@ xUtil_yesno__Ff:
 /* 8007073C 0006D53C  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 80070740 0006D540  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 80070744 0006D544  FF E0 08 90 */	fmr f31, f1
-/* 80070748 0006D548  C0 02 90 10 */	lfs f0, $$2819_2-_SDA2_BASE_(r2)
+/* 80070748 0006D548  C0 02 90 10 */	lfs f0, _esc__2_819_2-_SDA2_BASE_(r2)
 /* 8007074C 0006D54C  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 80070750 0006D550  40 82 00 0C */	bne lbl_8007075C
 /* 80070754 0006D554  38 60 00 00 */	li r3, 0
 /* 80070758 0006D558  48 00 00 2C */	b lbl_80070784
 lbl_8007075C:
-/* 8007075C 0006D55C  C0 02 90 14 */	lfs f0, $$2820_2-_SDA2_BASE_(r2)
+/* 8007075C 0006D55C  C0 02 90 14 */	lfs f0, _esc__2_820_2-_SDA2_BASE_(r2)
 /* 80070760 0006D560  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 80070764 0006D564  40 82 00 0C */	bne lbl_80070770
 /* 80070768 0006D568  38 60 00 01 */	li r3, 1
@@ -362,22 +364,22 @@ quicksort_int__FPvUlUlUl:
 /* 800707B4 0006D5B4  7C BF 2B 78 */	mr r31, r5
 /* 800707B8 0006D5B8  7C C4 33 78 */	mr r4, r6
 /* 800707BC 0006D5BC  38 61 00 08 */	addi r3, r1, 8
-/* 800707C0 0006D5C0  48 00 00 35 */	bl __ct__Q219$$2unnamed$$2xutil_cpp$$216sort_int_functorFUl
+/* 800707C0 0006D5C0  48 00 00 35 */	bl __ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functorFUl
 /* 800707C4 0006D5C4  80 03 00 00 */	lwz r0, 0(r3)
 /* 800707C8 0006D5C8  7F A3 EB 78 */	mr r3, r29
 /* 800707CC 0006D5CC  7F C4 F3 78 */	mr r4, r30
 /* 800707D0 0006D5D0  7F E5 FB 78 */	mr r5, r31
 /* 800707D4 0006D5D4  90 01 00 0C */	stw r0, 0xc(r1)
 /* 800707D8 0006D5D8  38 C1 00 0C */	addi r6, r1, 0xc
-/* 800707DC 0006D5DC  48 00 0A D9 */	bl quicksort$$0Q219$$2unnamed$$2xutil_cpp$$216sort_int_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$216sort_int_functor
+/* 800707DC 0006D5DC  48 00 0A D9 */	bl quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functor
 /* 800707E0 0006D5E0  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 800707E4 0006D5E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800707E8 0006D5E8  7C 08 03 A6 */	mtlr r0
 /* 800707EC 0006D5EC  38 21 00 20 */	addi r1, r1, 0x20
 /* 800707F0 0006D5F0  4E 80 00 20 */	blr 
 
-.global __ct__Q219$$2unnamed$$2xutil_cpp$$216sort_int_functorFUl
-__ct__Q219$$2unnamed$$2xutil_cpp$$216sort_int_functorFUl:
+.global __ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functorFUl
+__ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functorFUl:
 /* 800707F4 0006D5F4  90 83 00 00 */	stw r4, 0(r3)
 /* 800707F8 0006D5F8  4E 80 00 20 */	blr 
 
@@ -392,22 +394,22 @@ quicksort_uint__FPvUlUlUl:
 /* 80070814 0006D614  7C BF 2B 78 */	mr r31, r5
 /* 80070818 0006D618  7C C4 33 78 */	mr r4, r6
 /* 8007081C 0006D61C  38 61 00 08 */	addi r3, r1, 8
-/* 80070820 0006D620  48 00 00 35 */	bl __ct__Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functorFUl
+/* 80070820 0006D620  48 00 00 35 */	bl __ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functorFUl
 /* 80070824 0006D624  80 03 00 00 */	lwz r0, 0(r3)
 /* 80070828 0006D628  7F A3 EB 78 */	mr r3, r29
 /* 8007082C 0006D62C  7F C4 F3 78 */	mr r4, r30
 /* 80070830 0006D630  7F E5 FB 78 */	mr r5, r31
 /* 80070834 0006D634  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80070838 0006D638  38 C1 00 0C */	addi r6, r1, 0xc
-/* 8007083C 0006D63C  48 00 07 9D */	bl quicksort$$0Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$217sort_uint_functor
+/* 8007083C 0006D63C  48 00 07 9D */	bl quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functor
 /* 80070840 0006D640  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 80070844 0006D644  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80070848 0006D648  7C 08 03 A6 */	mtlr r0
 /* 8007084C 0006D64C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80070850 0006D650  4E 80 00 20 */	blr 
 
-.global __ct__Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functorFUl
-__ct__Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functorFUl:
+.global __ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functorFUl
+__ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functorFUl:
 /* 80070854 0006D654  90 83 00 00 */	stw r4, 0(r3)
 /* 80070858 0006D658  4E 80 00 20 */	blr 
 
@@ -422,22 +424,22 @@ quicksort_float__FPvUlUlUl:
 /* 80070874 0006D674  7C BF 2B 78 */	mr r31, r5
 /* 80070878 0006D678  7C C4 33 78 */	mr r4, r6
 /* 8007087C 0006D67C  38 61 00 08 */	addi r3, r1, 8
-/* 80070880 0006D680  48 00 00 35 */	bl __ct__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorFUl
+/* 80070880 0006D680  48 00 00 35 */	bl __ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorFUl
 /* 80070884 0006D684  80 03 00 00 */	lwz r0, 0(r3)
 /* 80070888 0006D688  7F A3 EB 78 */	mr r3, r29
 /* 8007088C 0006D68C  7F C4 F3 78 */	mr r4, r30
 /* 80070890 0006D690  7F E5 FB 78 */	mr r5, r31
 /* 80070894 0006D694  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80070898 0006D698  38 C1 00 0C */	addi r6, r1, 0xc
-/* 8007089C 0006D69C  48 00 04 61 */	bl quicksort$$0Q219$$2unnamed$$2xutil_cpp$$218sort_float_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$218sort_float_functor
+/* 8007089C 0006D69C  48 00 04 61 */	bl quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor
 /* 800708A0 0006D6A0  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 800708A4 0006D6A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800708A8 0006D6A8  7C 08 03 A6 */	mtlr r0
 /* 800708AC 0006D6AC  38 21 00 20 */	addi r1, r1, 0x20
 /* 800708B0 0006D6B0  4E 80 00 20 */	blr 
 
-.global __ct__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorFUl
-__ct__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorFUl:
+.global __ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorFUl
+__ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorFUl:
 /* 800708B4 0006D6B4  90 83 00 00 */	stw r4, 0(r3)
 /* 800708B8 0006D6B8  4E 80 00 20 */	blr 
 
@@ -452,22 +454,22 @@ quicksort_istr__FPvUlUlUl:
 /* 800708D4 0006D6D4  7C BF 2B 78 */	mr r31, r5
 /* 800708D8 0006D6D8  7C C4 33 78 */	mr r4, r6
 /* 800708DC 0006D6DC  38 61 00 08 */	addi r3, r1, 8
-/* 800708E0 0006D6E0  48 00 00 35 */	bl __ct__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorFUl
+/* 800708E0 0006D6E0  48 00 00 35 */	bl __ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functorFUl
 /* 800708E4 0006D6E4  80 03 00 00 */	lwz r0, 0(r3)
 /* 800708E8 0006D6E8  7F A3 EB 78 */	mr r3, r29
 /* 800708EC 0006D6EC  7F C4 F3 78 */	mr r4, r30
 /* 800708F0 0006D6F0  7F E5 FB 78 */	mr r5, r31
 /* 800708F4 0006D6F4  90 01 00 0C */	stw r0, 0xc(r1)
 /* 800708F8 0006D6F8  38 C1 00 0C */	addi r6, r1, 0xc
-/* 800708FC 0006D6FC  48 00 01 25 */	bl quicksort$$0Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$217sort_istr_functor
+/* 800708FC 0006D6FC  48 00 01 25 */	bl quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functor
 /* 80070900 0006D700  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 80070904 0006D704  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80070908 0006D708  7C 08 03 A6 */	mtlr r0
 /* 8007090C 0006D70C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80070910 0006D710  4E 80 00 20 */	blr 
 
-.global __ct__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorFUl
-__ct__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorFUl:
+.global __ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functorFUl
+__ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functorFUl:
 /* 80070914 0006D714  90 83 00 00 */	stw r4, 0(r3)
 /* 80070918 0006D718  4E 80 00 20 */	blr 
 
@@ -482,22 +484,22 @@ isort_float__FPvUlUlUl:
 /* 80070934 0006D734  7C BF 2B 78 */	mr r31, r5
 /* 80070938 0006D738  7C C4 33 78 */	mr r4, r6
 /* 8007093C 0006D73C  38 61 00 08 */	addi r3, r1, 8
-/* 80070940 0006D740  4B FF FF 75 */	bl __ct__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorFUl
+/* 80070940 0006D740  4B FF FF 75 */	bl __ct__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorFUl
 /* 80070944 0006D744  80 03 00 00 */	lwz r0, 0(r3)
 /* 80070948 0006D748  7F A3 EB 78 */	mr r3, r29
 /* 8007094C 0006D74C  7F C4 F3 78 */	mr r4, r30
 /* 80070950 0006D750  7F E5 FB 78 */	mr r5, r31
 /* 80070954 0006D754  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80070958 0006D758  38 C1 00 0C */	addi r6, r1, 0xc
-/* 8007095C 0006D75C  48 00 00 19 */	bl isort$$0Q219$$2unnamed$$2xutil_cpp$$218sort_float_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$218sort_float_functor
+/* 8007095C 0006D75C  48 00 00 19 */	bl isort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor
 /* 80070960 0006D760  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 80070964 0006D764  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80070968 0006D768  7C 08 03 A6 */	mtlr r0
 /* 8007096C 0006D76C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80070970 0006D770  4E 80 00 20 */	blr 
 
-.global isort$$0Q219$$2unnamed$$2xutil_cpp$$218sort_float_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$218sort_float_functor
-isort$$0Q219$$2unnamed$$2xutil_cpp$$218sort_float_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$218sort_float_functor:
+.global isort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor
+isort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor:
 /* 80070974 0006D774  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80070978 0006D778  7C 08 02 A6 */	mflr r0
 /* 8007097C 0006D77C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -533,7 +535,7 @@ lbl_800709E0:
 /* 800709E4 0006D7E4  7F 63 DB 78 */	mr r3, r27
 /* 800709E8 0006D7E8  7F C4 F3 78 */	mr r4, r30
 /* 800709EC 0006D7EC  7F E5 FB 78 */	mr r5, r31
-/* 800709F0 0006D7F0  48 00 0B E1 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorCFPCvPCv
+/* 800709F0 0006D7F0  48 00 0B E1 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorCFPCvPCv
 /* 800709F4 0006D7F4  2C 03 00 00 */	cmpwi r3, 0
 /* 800709F8 0006D7F8  41 81 FF B0 */	bgt lbl_800709A8
 lbl_800709FC:
@@ -548,8 +550,8 @@ lbl_80070A04:
 /* 80070A18 0006D818  38 21 00 30 */	addi r1, r1, 0x30
 /* 80070A1C 0006D81C  4E 80 00 20 */	blr 
 
-.global quicksort$$0Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$217sort_istr_functor
-quicksort$$0Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$217sort_istr_functor:
+.global quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functor
+quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functor:
 /* 80070A20 0006D820  94 21 FF 30 */	stwu r1, -0xd0(r1)
 /* 80070A24 0006D824  7C 08 02 A6 */	mflr r0
 /* 80070A28 0006D828  90 01 00 D4 */	stw r0, 0xd4(r1)
@@ -591,7 +593,7 @@ lbl_80070AA0:
 /* 80070AA4 0006D8A4  7F 63 DB 78 */	mr r3, r27
 /* 80070AA8 0006D8A8  7F 04 C3 78 */	mr r4, r24
 /* 80070AAC 0006D8AC  7F 25 CB 78 */	mr r5, r25
-/* 80070AB0 0006D8B0  48 00 0B 45 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorCFPCvPCv
+/* 80070AB0 0006D8B0  48 00 0B 45 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functorCFPCvPCv
 /* 80070AB4 0006D8B4  2C 03 00 00 */	cmpwi r3, 0
 /* 80070AB8 0006D8B8  41 81 FF B0 */	bgt lbl_80070A68
 lbl_80070ABC:
@@ -634,7 +636,7 @@ lbl_80070B28:
 /* 80070B3C 0006D93C  7F 63 DB 78 */	mr r3, r27
 /* 80070B40 0006D940  7F 24 CB 78 */	mr r4, r25
 /* 80070B44 0006D944  7F 05 C3 78 */	mr r5, r24
-/* 80070B48 0006D948  48 00 0A AD */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorCFPCvPCv
+/* 80070B48 0006D948  48 00 0A AD */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functorCFPCvPCv
 /* 80070B4C 0006D94C  2C 03 00 00 */	cmpwi r3, 0
 /* 80070B50 0006D950  40 81 00 34 */	ble lbl_80070B84
 /* 80070B54 0006D954  7E E3 BB 78 */	mr r3, r23
@@ -655,7 +657,7 @@ lbl_80070B84:
 /* 80070B84 0006D984  7F 63 DB 78 */	mr r3, r27
 /* 80070B88 0006D988  7F A4 EB 78 */	mr r4, r29
 /* 80070B8C 0006D98C  7F 05 C3 78 */	mr r5, r24
-/* 80070B90 0006D990  48 00 0A 65 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorCFPCvPCv
+/* 80070B90 0006D990  48 00 0A 65 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functorCFPCvPCv
 /* 80070B94 0006D994  2C 03 00 00 */	cmpwi r3, 0
 /* 80070B98 0006D998  40 81 00 34 */	ble lbl_80070BCC
 /* 80070B9C 0006D99C  7F A3 EB 78 */	mr r3, r29
@@ -676,7 +678,7 @@ lbl_80070BCC:
 /* 80070BCC 0006D9CC  7F 63 DB 78 */	mr r3, r27
 /* 80070BD0 0006D9D0  7E E4 BB 78 */	mr r4, r23
 /* 80070BD4 0006D9D4  7F A5 EB 78 */	mr r5, r29
-/* 80070BD8 0006D9D8  48 00 0A 1D */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorCFPCvPCv
+/* 80070BD8 0006D9D8  48 00 0A 1D */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functorCFPCvPCv
 /* 80070BDC 0006D9DC  2C 03 00 00 */	cmpwi r3, 0
 /* 80070BE0 0006D9E0  40 81 00 34 */	ble lbl_80070C14
 /* 80070BE4 0006D9E4  7E E3 BB 78 */	mr r3, r23
@@ -698,7 +700,7 @@ lbl_80070C14:
 /* 80070C18 0006DA18  7F 63 DB 78 */	mr r3, r27
 /* 80070C1C 0006DA1C  7E E4 BB 78 */	mr r4, r23
 /* 80070C20 0006DA20  7F A5 EB 78 */	mr r5, r29
-/* 80070C24 0006DA24  48 00 09 D1 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorCFPCvPCv
+/* 80070C24 0006DA24  48 00 09 D1 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functorCFPCvPCv
 /* 80070C28 0006DA28  2C 03 00 00 */	cmpwi r3, 0
 /* 80070C2C 0006DA2C  41 80 FF E8 */	blt lbl_80070C14
 lbl_80070C30:
@@ -706,7 +708,7 @@ lbl_80070C30:
 /* 80070C34 0006DA34  7F 63 DB 78 */	mr r3, r27
 /* 80070C38 0006DA38  7F 04 C3 78 */	mr r4, r24
 /* 80070C3C 0006DA3C  7F A5 EB 78 */	mr r5, r29
-/* 80070C40 0006DA40  48 00 09 B5 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorCFPCvPCv
+/* 80070C40 0006DA40  48 00 09 B5 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functorCFPCvPCv
 /* 80070C44 0006DA44  2C 03 00 00 */	cmpwi r3, 0
 /* 80070C48 0006DA48  41 81 FF E8 */	bgt lbl_80070C30
 /* 80070C4C 0006DA4C  7C 17 C0 40 */	cmplw r23, r24
@@ -762,8 +764,8 @@ lbl_80070CE8:
 /* 80070CF4 0006DAF4  38 21 00 D0 */	addi r1, r1, 0xd0
 /* 80070CF8 0006DAF8  4E 80 00 20 */	blr 
 
-.global quicksort$$0Q219$$2unnamed$$2xutil_cpp$$218sort_float_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$218sort_float_functor
-quicksort$$0Q219$$2unnamed$$2xutil_cpp$$218sort_float_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$218sort_float_functor:
+.global quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor
+quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functor:
 /* 80070CFC 0006DAFC  94 21 FF 30 */	stwu r1, -0xd0(r1)
 /* 80070D00 0006DB00  7C 08 02 A6 */	mflr r0
 /* 80070D04 0006DB04  90 01 00 D4 */	stw r0, 0xd4(r1)
@@ -805,7 +807,7 @@ lbl_80070D7C:
 /* 80070D80 0006DB80  7F 63 DB 78 */	mr r3, r27
 /* 80070D84 0006DB84  7F 04 C3 78 */	mr r4, r24
 /* 80070D88 0006DB88  7F 25 CB 78 */	mr r5, r25
-/* 80070D8C 0006DB8C  48 00 08 45 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorCFPCvPCv
+/* 80070D8C 0006DB8C  48 00 08 45 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorCFPCvPCv
 /* 80070D90 0006DB90  2C 03 00 00 */	cmpwi r3, 0
 /* 80070D94 0006DB94  41 81 FF B0 */	bgt lbl_80070D44
 lbl_80070D98:
@@ -848,7 +850,7 @@ lbl_80070E04:
 /* 80070E18 0006DC18  7F 63 DB 78 */	mr r3, r27
 /* 80070E1C 0006DC1C  7F 24 CB 78 */	mr r4, r25
 /* 80070E20 0006DC20  7F 05 C3 78 */	mr r5, r24
-/* 80070E24 0006DC24  48 00 07 AD */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorCFPCvPCv
+/* 80070E24 0006DC24  48 00 07 AD */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorCFPCvPCv
 /* 80070E28 0006DC28  2C 03 00 00 */	cmpwi r3, 0
 /* 80070E2C 0006DC2C  40 81 00 34 */	ble lbl_80070E60
 /* 80070E30 0006DC30  7E E3 BB 78 */	mr r3, r23
@@ -869,7 +871,7 @@ lbl_80070E60:
 /* 80070E60 0006DC60  7F 63 DB 78 */	mr r3, r27
 /* 80070E64 0006DC64  7F A4 EB 78 */	mr r4, r29
 /* 80070E68 0006DC68  7F 05 C3 78 */	mr r5, r24
-/* 80070E6C 0006DC6C  48 00 07 65 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorCFPCvPCv
+/* 80070E6C 0006DC6C  48 00 07 65 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorCFPCvPCv
 /* 80070E70 0006DC70  2C 03 00 00 */	cmpwi r3, 0
 /* 80070E74 0006DC74  40 81 00 34 */	ble lbl_80070EA8
 /* 80070E78 0006DC78  7F A3 EB 78 */	mr r3, r29
@@ -890,7 +892,7 @@ lbl_80070EA8:
 /* 80070EA8 0006DCA8  7F 63 DB 78 */	mr r3, r27
 /* 80070EAC 0006DCAC  7E E4 BB 78 */	mr r4, r23
 /* 80070EB0 0006DCB0  7F A5 EB 78 */	mr r5, r29
-/* 80070EB4 0006DCB4  48 00 07 1D */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorCFPCvPCv
+/* 80070EB4 0006DCB4  48 00 07 1D */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorCFPCvPCv
 /* 80070EB8 0006DCB8  2C 03 00 00 */	cmpwi r3, 0
 /* 80070EBC 0006DCBC  40 81 00 34 */	ble lbl_80070EF0
 /* 80070EC0 0006DCC0  7E E3 BB 78 */	mr r3, r23
@@ -912,7 +914,7 @@ lbl_80070EF0:
 /* 80070EF4 0006DCF4  7F 63 DB 78 */	mr r3, r27
 /* 80070EF8 0006DCF8  7E E4 BB 78 */	mr r4, r23
 /* 80070EFC 0006DCFC  7F A5 EB 78 */	mr r5, r29
-/* 80070F00 0006DD00  48 00 06 D1 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorCFPCvPCv
+/* 80070F00 0006DD00  48 00 06 D1 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorCFPCvPCv
 /* 80070F04 0006DD04  2C 03 00 00 */	cmpwi r3, 0
 /* 80070F08 0006DD08  41 80 FF E8 */	blt lbl_80070EF0
 lbl_80070F0C:
@@ -920,7 +922,7 @@ lbl_80070F0C:
 /* 80070F10 0006DD10  7F 63 DB 78 */	mr r3, r27
 /* 80070F14 0006DD14  7F 04 C3 78 */	mr r4, r24
 /* 80070F18 0006DD18  7F A5 EB 78 */	mr r5, r29
-/* 80070F1C 0006DD1C  48 00 06 B5 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorCFPCvPCv
+/* 80070F1C 0006DD1C  48 00 06 B5 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorCFPCvPCv
 /* 80070F20 0006DD20  2C 03 00 00 */	cmpwi r3, 0
 /* 80070F24 0006DD24  41 81 FF E8 */	bgt lbl_80070F0C
 /* 80070F28 0006DD28  7C 17 C0 40 */	cmplw r23, r24
@@ -976,8 +978,8 @@ lbl_80070FC4:
 /* 80070FD0 0006DDD0  38 21 00 D0 */	addi r1, r1, 0xd0
 /* 80070FD4 0006DDD4  4E 80 00 20 */	blr 
 
-.global quicksort$$0Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$217sort_uint_functor
-quicksort$$0Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$217sort_uint_functor:
+.global quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functor
+quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functor:
 /* 80070FD8 0006DDD8  94 21 FF 30 */	stwu r1, -0xd0(r1)
 /* 80070FDC 0006DDDC  7C 08 02 A6 */	mflr r0
 /* 80070FE0 0006DDE0  90 01 00 D4 */	stw r0, 0xd4(r1)
@@ -1019,7 +1021,7 @@ lbl_80071058:
 /* 8007105C 0006DE5C  7F 63 DB 78 */	mr r3, r27
 /* 80071060 0006DE60  7F 04 C3 78 */	mr r4, r24
 /* 80071064 0006DE64  7F 25 CB 78 */	mr r5, r25
-/* 80071068 0006DE68  48 00 05 29 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functorCFPCvPCv
+/* 80071068 0006DE68  48 00 05 29 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functorCFPCvPCv
 /* 8007106C 0006DE6C  2C 03 00 00 */	cmpwi r3, 0
 /* 80071070 0006DE70  41 81 FF B0 */	bgt lbl_80071020
 lbl_80071074:
@@ -1062,7 +1064,7 @@ lbl_800710E0:
 /* 800710F4 0006DEF4  7F 63 DB 78 */	mr r3, r27
 /* 800710F8 0006DEF8  7F 24 CB 78 */	mr r4, r25
 /* 800710FC 0006DEFC  7F 05 C3 78 */	mr r5, r24
-/* 80071100 0006DF00  48 00 04 91 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functorCFPCvPCv
+/* 80071100 0006DF00  48 00 04 91 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functorCFPCvPCv
 /* 80071104 0006DF04  2C 03 00 00 */	cmpwi r3, 0
 /* 80071108 0006DF08  40 81 00 34 */	ble lbl_8007113C
 /* 8007110C 0006DF0C  7E E3 BB 78 */	mr r3, r23
@@ -1083,7 +1085,7 @@ lbl_8007113C:
 /* 8007113C 0006DF3C  7F 63 DB 78 */	mr r3, r27
 /* 80071140 0006DF40  7F A4 EB 78 */	mr r4, r29
 /* 80071144 0006DF44  7F 05 C3 78 */	mr r5, r24
-/* 80071148 0006DF48  48 00 04 49 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functorCFPCvPCv
+/* 80071148 0006DF48  48 00 04 49 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functorCFPCvPCv
 /* 8007114C 0006DF4C  2C 03 00 00 */	cmpwi r3, 0
 /* 80071150 0006DF50  40 81 00 34 */	ble lbl_80071184
 /* 80071154 0006DF54  7F A3 EB 78 */	mr r3, r29
@@ -1104,7 +1106,7 @@ lbl_80071184:
 /* 80071184 0006DF84  7F 63 DB 78 */	mr r3, r27
 /* 80071188 0006DF88  7E E4 BB 78 */	mr r4, r23
 /* 8007118C 0006DF8C  7F A5 EB 78 */	mr r5, r29
-/* 80071190 0006DF90  48 00 04 01 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functorCFPCvPCv
+/* 80071190 0006DF90  48 00 04 01 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functorCFPCvPCv
 /* 80071194 0006DF94  2C 03 00 00 */	cmpwi r3, 0
 /* 80071198 0006DF98  40 81 00 34 */	ble lbl_800711CC
 /* 8007119C 0006DF9C  7E E3 BB 78 */	mr r3, r23
@@ -1126,7 +1128,7 @@ lbl_800711CC:
 /* 800711D0 0006DFD0  7F 63 DB 78 */	mr r3, r27
 /* 800711D4 0006DFD4  7E E4 BB 78 */	mr r4, r23
 /* 800711D8 0006DFD8  7F A5 EB 78 */	mr r5, r29
-/* 800711DC 0006DFDC  48 00 03 B5 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functorCFPCvPCv
+/* 800711DC 0006DFDC  48 00 03 B5 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functorCFPCvPCv
 /* 800711E0 0006DFE0  2C 03 00 00 */	cmpwi r3, 0
 /* 800711E4 0006DFE4  41 80 FF E8 */	blt lbl_800711CC
 lbl_800711E8:
@@ -1134,7 +1136,7 @@ lbl_800711E8:
 /* 800711EC 0006DFEC  7F 63 DB 78 */	mr r3, r27
 /* 800711F0 0006DFF0  7F 04 C3 78 */	mr r4, r24
 /* 800711F4 0006DFF4  7F A5 EB 78 */	mr r5, r29
-/* 800711F8 0006DFF8  48 00 03 99 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functorCFPCvPCv
+/* 800711F8 0006DFF8  48 00 03 99 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functorCFPCvPCv
 /* 800711FC 0006DFFC  2C 03 00 00 */	cmpwi r3, 0
 /* 80071200 0006E000  41 81 FF E8 */	bgt lbl_800711E8
 /* 80071204 0006E004  7C 17 C0 40 */	cmplw r23, r24
@@ -1190,8 +1192,8 @@ lbl_800712A0:
 /* 800712AC 0006E0AC  38 21 00 D0 */	addi r1, r1, 0xd0
 /* 800712B0 0006E0B0  4E 80 00 20 */	blr 
 
-.global quicksort$$0Q219$$2unnamed$$2xutil_cpp$$216sort_int_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$216sort_int_functor
-quicksort$$0Q219$$2unnamed$$2xutil_cpp$$216sort_int_functor$$1__FPvUlUlQ219$$2unnamed$$2xutil_cpp$$216sort_int_functor:
+.global quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functor
+quicksort_esc__0_Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functor_esc__1___FPvUlUlQ219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functor:
 /* 800712B4 0006E0B4  94 21 FF 30 */	stwu r1, -0xd0(r1)
 /* 800712B8 0006E0B8  7C 08 02 A6 */	mflr r0
 /* 800712BC 0006E0BC  90 01 00 D4 */	stw r0, 0xd4(r1)
@@ -1233,7 +1235,7 @@ lbl_80071334:
 /* 80071338 0006E138  7F 63 DB 78 */	mr r3, r27
 /* 8007133C 0006E13C  7F 04 C3 78 */	mr r4, r24
 /* 80071340 0006E140  7F 25 CB 78 */	mr r5, r25
-/* 80071344 0006E144  48 00 02 79 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$216sort_int_functorCFPCvPCv
+/* 80071344 0006E144  48 00 02 79 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functorCFPCvPCv
 /* 80071348 0006E148  2C 03 00 00 */	cmpwi r3, 0
 /* 8007134C 0006E14C  41 81 FF B0 */	bgt lbl_800712FC
 lbl_80071350:
@@ -1276,7 +1278,7 @@ lbl_800713BC:
 /* 800713D0 0006E1D0  7F 63 DB 78 */	mr r3, r27
 /* 800713D4 0006E1D4  7F 24 CB 78 */	mr r4, r25
 /* 800713D8 0006E1D8  7F 05 C3 78 */	mr r5, r24
-/* 800713DC 0006E1DC  48 00 01 E1 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$216sort_int_functorCFPCvPCv
+/* 800713DC 0006E1DC  48 00 01 E1 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functorCFPCvPCv
 /* 800713E0 0006E1E0  2C 03 00 00 */	cmpwi r3, 0
 /* 800713E4 0006E1E4  40 81 00 34 */	ble lbl_80071418
 /* 800713E8 0006E1E8  7E E3 BB 78 */	mr r3, r23
@@ -1297,7 +1299,7 @@ lbl_80071418:
 /* 80071418 0006E218  7F 63 DB 78 */	mr r3, r27
 /* 8007141C 0006E21C  7F A4 EB 78 */	mr r4, r29
 /* 80071420 0006E220  7F 05 C3 78 */	mr r5, r24
-/* 80071424 0006E224  48 00 01 99 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$216sort_int_functorCFPCvPCv
+/* 80071424 0006E224  48 00 01 99 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functorCFPCvPCv
 /* 80071428 0006E228  2C 03 00 00 */	cmpwi r3, 0
 /* 8007142C 0006E22C  40 81 00 34 */	ble lbl_80071460
 /* 80071430 0006E230  7F A3 EB 78 */	mr r3, r29
@@ -1318,7 +1320,7 @@ lbl_80071460:
 /* 80071460 0006E260  7F 63 DB 78 */	mr r3, r27
 /* 80071464 0006E264  7E E4 BB 78 */	mr r4, r23
 /* 80071468 0006E268  7F A5 EB 78 */	mr r5, r29
-/* 8007146C 0006E26C  48 00 01 51 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$216sort_int_functorCFPCvPCv
+/* 8007146C 0006E26C  48 00 01 51 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functorCFPCvPCv
 /* 80071470 0006E270  2C 03 00 00 */	cmpwi r3, 0
 /* 80071474 0006E274  40 81 00 34 */	ble lbl_800714A8
 /* 80071478 0006E278  7E E3 BB 78 */	mr r3, r23
@@ -1340,7 +1342,7 @@ lbl_800714A8:
 /* 800714AC 0006E2AC  7F 63 DB 78 */	mr r3, r27
 /* 800714B0 0006E2B0  7E E4 BB 78 */	mr r4, r23
 /* 800714B4 0006E2B4  7F A5 EB 78 */	mr r5, r29
-/* 800714B8 0006E2B8  48 00 01 05 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$216sort_int_functorCFPCvPCv
+/* 800714B8 0006E2B8  48 00 01 05 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functorCFPCvPCv
 /* 800714BC 0006E2BC  2C 03 00 00 */	cmpwi r3, 0
 /* 800714C0 0006E2C0  41 80 FF E8 */	blt lbl_800714A8
 lbl_800714C4:
@@ -1348,7 +1350,7 @@ lbl_800714C4:
 /* 800714C8 0006E2C8  7F 63 DB 78 */	mr r3, r27
 /* 800714CC 0006E2CC  7F 04 C3 78 */	mr r4, r24
 /* 800714D0 0006E2D0  7F A5 EB 78 */	mr r5, r29
-/* 800714D4 0006E2D4  48 00 00 E9 */	bl __cl__Q219$$2unnamed$$2xutil_cpp$$216sort_int_functorCFPCvPCv
+/* 800714D4 0006E2D4  48 00 00 E9 */	bl __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functorCFPCvPCv
 /* 800714D8 0006E2D8  2C 03 00 00 */	cmpwi r3, 0
 /* 800714DC 0006E2DC  41 81 FF E8 */	bgt lbl_800714C4
 /* 800714E0 0006E2E0  7C 17 C0 40 */	cmplw r23, r24
@@ -1404,8 +1406,8 @@ lbl_8007157C:
 /* 80071588 0006E388  38 21 00 D0 */	addi r1, r1, 0xd0
 /* 8007158C 0006E38C  4E 80 00 20 */	blr 
 
-.global __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functorCFPCvPCv
-__cl__Q219$$2unnamed$$2xutil_cpp$$217sort_uint_functorCFPCvPCv:
+.global __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functorCFPCvPCv
+__cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_uint_functorCFPCvPCv:
 /* 80071590 0006E390  80 03 00 00 */	lwz r0, 0(r3)
 /* 80071594 0006E394  7C 64 00 2E */	lwzx r3, r4, r0
 /* 80071598 0006E398  7C 05 00 2E */	lwzx r0, r5, r0
@@ -1419,16 +1421,16 @@ lbl_800715AC:
 /* 800715B4 0006E3B4  7C 60 01 10 */	subfe r3, r0, r0
 /* 800715B8 0006E3B8  4E 80 00 20 */	blr 
 
-.global __cl__Q219$$2unnamed$$2xutil_cpp$$216sort_int_functorCFPCvPCv
-__cl__Q219$$2unnamed$$2xutil_cpp$$216sort_int_functorCFPCvPCv:
+.global __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functorCFPCvPCv
+__cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_16sort_int_functorCFPCvPCv:
 /* 800715BC 0006E3BC  80 03 00 00 */	lwz r0, 0(r3)
 /* 800715C0 0006E3C0  7C 65 00 2E */	lwzx r3, r5, r0
 /* 800715C4 0006E3C4  7C 04 00 2E */	lwzx r0, r4, r0
 /* 800715C8 0006E3C8  7C 63 00 50 */	subf r3, r3, r0
 /* 800715CC 0006E3CC  4E 80 00 20 */	blr 
 
-.global __cl__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorCFPCvPCv
-__cl__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorCFPCvPCv:
+.global __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorCFPCvPCv
+__cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_18sort_float_functorCFPCvPCv:
 /* 800715D0 0006E3D0  80 03 00 00 */	lwz r0, 0(r3)
 /* 800715D4 0006E3D4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800715D8 0006E3D8  7C 24 04 2E */	lfsx f1, r4, r0
@@ -1439,8 +1441,8 @@ __cl__Q219$$2unnamed$$2xutil_cpp$$218sort_float_functorCFPCvPCv:
 /* 800715EC 0006E3EC  38 21 00 10 */	addi r1, r1, 0x10
 /* 800715F0 0006E3F0  4E 80 00 20 */	blr 
 
-.global __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorCFPCvPCv
-__cl__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorCFPCvPCv:
+.global __cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functorCFPCvPCv
+__cl__Q219_esc__2_unnamed_esc__2_xutil_cpp_esc__2_17sort_istr_functorCFPCvPCv:
 /* 800715F4 0006E3F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800715F8 0006E3F8  7C 08 02 A6 */	mflr r0
 /* 800715FC 0006E3FC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1452,3 +1454,6 @@ __cl__Q219$$2unnamed$$2xutil_cpp$$217sort_istr_functorCFPCvPCv:
 /* 80071614 0006E414  7C 08 03 A6 */	mtlr r0
 /* 80071618 0006E418  38 21 00 10 */	addi r1, r1, 0x10
 /* 8007161C 0006E41C  4E 80 00 20 */	blr 
+
+.endif
+

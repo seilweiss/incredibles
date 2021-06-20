@@ -2,23 +2,23 @@
 
 .section .bss
 
-.global static_cam_asset__24$$2unnamed$$2zCamMarker_cpp$$2
-static_cam_asset__24$$2unnamed$$2zCamMarker_cpp$$2:
+.global static_cam_asset__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_
+static_cam_asset__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_:
 	.skip 0x88
 
 .section .sbss
 
-.global activated__24$$2unnamed$$2zCamMarker_cpp$$2
-activated__24$$2unnamed$$2zCamMarker_cpp$$2:
+.global activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_
+activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_:
 	.skip 0x4
-.global widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2
-widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2:
+.global widget_cam__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_
+widget_cam__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_:
 	.skip 0x4
 
 .section .sbss2
 
-.global $$2963_1
-$$2963_1:
+.global _esc__2_963_1
+_esc__2_963_1:
 	.skip 0x4
 .global lbl_803D8A14
 lbl_803D8A14:
@@ -29,64 +29,66 @@ lbl_803D8A18:
 
 .section .sdata
 
-.global __vt__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidget
-__vt__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidget:
+.global __vt__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidget
+__vt__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidget:
 	.incbin "baserom.dol", 0x32B898, 0x28
 
 .section .sdata2
 
-.global $$2995_0
-$$2995_0:
+.global _esc__2_995_0
+_esc__2_995_0:
 	.incbin "baserom.dol", 0x32FA90, 0x4
-.global $$21005
-$$21005:
+.global _esc__2_1005
+_esc__2_1005:
 	.incbin "baserom.dol", 0x32FA94, 0x4
-.global $$21107
-$$21107:
+.global _esc__2_1107
+_esc__2_1107:
 	.incbin "baserom.dol", 0x32FA98, 0x4
-.global $$21119
-$$21119:
+.global _esc__2_1119
+_esc__2_1119:
 	.incbin "baserom.dol", 0x32FA9C, 0x4
+
+.if 0
 
 .section .text
 
-.global activate_camera__24$$2unnamed$$2zCamMarker_cpp$$2FRC9xCamAssetP4xEnt
-activate_camera__24$$2unnamed$$2zCamMarker_cpp$$2FRC9xCamAssetP4xEnt:
+.global activate_camera__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_FRC9xCamAssetP4xEnt
+activate_camera__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_FRC9xCamAssetP4xEnt:
 /* 80088CB4 00085AB4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80088CB8 00085AB8  7C 08 02 A6 */	mflr r0
 /* 80088CBC 00085ABC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80088CC0 00085AC0  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80088CC4 00085AC4  7C 7E 1B 78 */	mr r30, r3
 /* 80088CC8 00085AC8  7C 9F 23 78 */	mr r31, r4
-/* 80088CCC 00085ACC  88 0D C3 90 */	lbz r0, activated__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80088CCC 00085ACC  88 0D C3 90 */	lbz r0, activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80088CD0 00085AD0  28 00 00 00 */	cmplwi r0, 0
 /* 80088CD4 00085AD4  40 82 00 24 */	bne lbl_80088CF8
-/* 80088CD8 00085AD8  C0 02 93 B0 */	lfs f0, $$2995_0-_SDA2_BASE_(r2)
+/* 80088CD8 00085AD8  C0 02 93 B0 */	lfs f0, _esc__2_995_0-_SDA2_BASE_(r2)
 /* 80088CDC 00085ADC  38 80 00 01 */	li r4, 1
-/* 80088CE0 00085AE0  80 6D C3 94 */	lwz r3, widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80088CE0 00085AE0  80 6D C3 94 */	lwz r3, widget_cam__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80088CE4 00085AE4  D0 03 00 A8 */	stfs f0, 0xa8(r3)
-/* 80088CE8 00085AE8  80 6D C3 94 */	lwz r3, widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80088CE8 00085AE8  80 6D C3 94 */	lwz r3, widget_cam__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80088CEC 00085AEC  4B FF F4 55 */	bl zCamAdd__FR4xCamb
 /* 80088CF0 00085AF0  38 00 00 01 */	li r0, 1
-/* 80088CF4 00085AF4  98 0D C3 90 */	stb r0, activated__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80088CF4 00085AF4  98 0D C3 90 */	stb r0, activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_80088CF8:
-/* 80088CF8 00085AF8  80 6D C3 94 */	lwz r3, widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80088CF8 00085AF8  80 6D C3 94 */	lwz r3, widget_cam__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80088CFC 00085AFC  7F C4 F3 78 */	mr r4, r30
-/* 80088D00 00085B00  C0 22 93 B0 */	lfs f1, $$2995_0-_SDA2_BASE_(r2)
+/* 80088D00 00085B00  C0 22 93 B0 */	lfs f1, _esc__2_995_0-_SDA2_BASE_(r2)
 /* 80088D04 00085B04  7F E5 FB 78 */	mr r5, r31
-/* 80088D08 00085B08  48 00 00 1D */	bl transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFPC9xCamAssetfP4xEnt
-/* 80088D0C 00085B0C  48 00 02 B1 */	bl debug_update__24$$2unnamed$$2zCamMarker_cpp$$2Fv
+/* 80088D08 00085B08  48 00 00 1D */	bl transition__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFPC9xCamAssetfP4xEnt
+/* 80088D0C 00085B0C  48 00 02 B1 */	bl debug_update__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_Fv
 /* 80088D10 00085B10  BB C1 00 08 */	lmw r30, 8(r1)
 /* 80088D14 00085B14  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80088D18 00085B18  7C 08 03 A6 */	mtlr r0
 /* 80088D1C 00085B1C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80088D20 00085B20  4E 80 00 20 */	blr 
 
-.global transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFPC9xCamAssetfP4xEnt
-transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFPC9xCamAssetfP4xEnt:
+.global transition__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFPC9xCamAssetfP4xEnt
+transition__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFPC9xCamAssetfP4xEnt:
 /* 80088D24 00085B24  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80088D28 00085B28  7C 08 02 A6 */	mflr r0
-/* 80088D2C 00085B2C  C0 02 93 B0 */	lfs f0, $$2995_0-_SDA2_BASE_(r2)
+/* 80088D2C 00085B2C  C0 02 93 B0 */	lfs f0, _esc__2_995_0-_SDA2_BASE_(r2)
 /* 80088D30 00085B30  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80088D34 00085B34  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80088D38 00085B38  93 E1 00 0C */	stw r31, 0xc(r1)
@@ -100,16 +102,16 @@ lbl_80088D50:
 lbl_80088D54:
 /* 80088D54 00085B54  D0 3F 00 CC */	stfs f1, 0xcc(r31)
 /* 80088D58 00085B58  7F E3 FB 78 */	mr r3, r31
-/* 80088D5C 00085B5C  C0 02 93 B0 */	lfs f0, $$2995_0-_SDA2_BASE_(r2)
+/* 80088D5C 00085B5C  C0 02 93 B0 */	lfs f0, _esc__2_995_0-_SDA2_BASE_(r2)
 /* 80088D60 00085B60  D0 1F 00 C8 */	stfs f0, 0xc8(r31)
 /* 80088D64 00085B64  D0 1F 01 04 */	stfs f0, 0x104(r31)
-/* 80088D68 00085B68  48 00 01 0D */	bl refresh_end_mat__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
+/* 80088D68 00085B68  48 00 01 0D */	bl refresh_end_mat__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
 /* 80088D6C 00085B6C  7F E3 FB 78 */	mr r3, r31
 /* 80088D70 00085B70  4B F8 5D 69 */	bl started__4xCamCFv
 /* 80088D74 00085B74  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80088D78 00085B78  41 82 00 0C */	beq lbl_80088D84
 /* 80088D7C 00085B7C  7F E3 FB 78 */	mr r3, r31
-/* 80088D80 00085B80  48 00 00 21 */	bl start_transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
+/* 80088D80 00085B80  48 00 00 21 */	bl start_transition__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
 lbl_80088D84:
 /* 80088D84 00085B84  38 00 00 01 */	li r0, 1
 /* 80088D88 00085B88  98 1F 00 C0 */	stb r0, 0xc0(r31)
@@ -119,11 +121,11 @@ lbl_80088D84:
 /* 80088D98 00085B98  38 21 00 10 */	addi r1, r1, 0x10
 /* 80088D9C 00085B9C  4E 80 00 20 */	blr 
 
-.global start_transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
-start_transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
+.global start_transition__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
+start_transition__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv:
 /* 80088DA0 00085BA0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80088DA4 00085BA4  7C 08 02 A6 */	mflr r0
-/* 80088DA8 00085BA8  C0 02 93 B0 */	lfs f0, $$2995_0-_SDA2_BASE_(r2)
+/* 80088DA8 00085BA8  C0 02 93 B0 */	lfs f0, _esc__2_995_0-_SDA2_BASE_(r2)
 /* 80088DAC 00085BAC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80088DB0 00085BB0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80088DB4 00085BB4  7C 7F 1B 78 */	mr r31, r3
@@ -131,7 +133,7 @@ start_transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
 /* 80088DBC 00085BBC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80088DC0 00085BC0  4C 40 13 82 */	cror 2, 0, 2
 /* 80088DC4 00085BC4  40 82 00 0C */	bne lbl_80088DD0
-/* 80088DC8 00085BC8  48 00 00 51 */	bl finish_transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
+/* 80088DC8 00085BC8  48 00 00 51 */	bl finish_transition__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
 /* 80088DCC 00085BCC  48 00 00 38 */	b lbl_80088E04
 lbl_80088DD0:
 /* 80088DD0 00085BD0  C0 1F 00 40 */	lfs f0, 0x40(r31)
@@ -143,7 +145,7 @@ lbl_80088DD0:
 /* 80088DE8 00085BE8  38 9F 00 94 */	addi r4, r31, 0x94
 /* 80088DEC 00085BEC  4B FA 5E 55 */	bl __as__5xQuatFRC5xQuat
 /* 80088DF0 00085BF0  80 7F 00 C4 */	lwz r3, 0xc4(r31)
-/* 80088DF4 00085BF4  C0 22 93 B4 */	lfs f1, $$21005-_SDA2_BASE_(r2)
+/* 80088DF4 00085BF4  C0 22 93 B4 */	lfs f1, _esc__2_1005-_SDA2_BASE_(r2)
 /* 80088DF8 00085BF8  C0 03 00 48 */	lfs f0, 0x48(r3)
 /* 80088DFC 00085BFC  EC 01 00 32 */	fmuls f0, f1, f0
 /* 80088E00 00085C00  D0 1F 00 D4 */	stfs f0, 0xd4(r31)
@@ -154,8 +156,8 @@ lbl_80088E04:
 /* 80088E10 00085C10  38 21 00 10 */	addi r1, r1, 0x10
 /* 80088E14 00085C14  4E 80 00 20 */	blr 
 
-.global finish_transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
-finish_transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
+.global finish_transition__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
+finish_transition__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv:
 /* 80088E18 00085C18  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80088E1C 00085C1C  7C 08 02 A6 */	mflr r0
 /* 80088E20 00085C20  90 01 00 14 */	stw r0, 0x14(r1)
@@ -165,7 +167,7 @@ finish_transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
 /* 80088E30 00085C30  4B F7 CE 11 */	bl __as__7xMat4x3FRC7xMat4x3
 /* 80088E34 00085C34  80 BF 00 C4 */	lwz r5, 0xc4(r31)
 /* 80088E38 00085C38  38 7F 00 74 */	addi r3, r31, 0x74
-/* 80088E3C 00085C3C  C0 22 93 B4 */	lfs f1, $$21005-_SDA2_BASE_(r2)
+/* 80088E3C 00085C3C  C0 22 93 B4 */	lfs f1, _esc__2_1005-_SDA2_BASE_(r2)
 /* 80088E40 00085C40  38 9F 00 30 */	addi r4, r31, 0x30
 /* 80088E44 00085C44  C0 05 00 48 */	lfs f0, 0x48(r5)
 /* 80088E48 00085C48  EC 01 00 32 */	fmuls f0, f1, f0
@@ -180,8 +182,8 @@ finish_transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
 /* 80088E6C 00085C6C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80088E70 00085C70  4E 80 00 20 */	blr 
 
-.global refresh_end_mat__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
-refresh_end_mat__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
+.global refresh_end_mat__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
+refresh_end_mat__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv:
 /* 80088E74 00085C74  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80088E78 00085C78  7C 08 02 A6 */	mflr r0
 /* 80088E7C 00085C7C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -205,7 +207,7 @@ refresh_end_mat__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
 /* 80088EC4 00085CC4  48 00 00 5C */	b lbl_80088F20
 lbl_80088EC8:
 /* 80088EC8 00085CC8  4B FF E7 51 */	bl xEntGetFrame__FPC4xEnt
-/* 80088ECC 00085CCC  80 C2 EC F0 */	lwz r6, $$2963_1-_SDA2_BASE_(r2)
+/* 80088ECC 00085CCC  80 C2 EC F0 */	lwz r6, _esc__2_963_1-_SDA2_BASE_(r2)
 /* 80088ED0 00085CD0  38 81 00 08 */	addi r4, r1, 8
 /* 80088ED4 00085CD4  80 A2 EC F4 */	lwz r5, lbl_803D8A14-_SDA2_BASE_(r2)
 /* 80088ED8 00085CD8  80 02 EC F8 */	lwz r0, lbl_803D8A18-_SDA2_BASE_(r2)
@@ -240,47 +242,47 @@ lbl_80088F20:
 /* 80088F48 00085D48  38 21 00 20 */	addi r1, r1, 0x20
 /* 80088F4C 00085D4C  4E 80 00 20 */	blr 
 
-.global deactivate_camera__24$$2unnamed$$2zCamMarker_cpp$$2Fbb
-deactivate_camera__24$$2unnamed$$2zCamMarker_cpp$$2Fbb:
+.global deactivate_camera__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_Fbb
+deactivate_camera__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_Fbb:
 /* 80088F50 00085D50  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80088F54 00085D54  7C 08 02 A6 */	mflr r0
 /* 80088F58 00085D58  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80088F5C 00085D5C  88 0D C3 90 */	lbz r0, activated__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80088F5C 00085D5C  88 0D C3 90 */	lbz r0, activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80088F60 00085D60  28 00 00 00 */	cmplwi r0, 0
 /* 80088F64 00085D64  41 82 00 3C */	beq lbl_80088FA0
 /* 80088F68 00085D68  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80088F6C 00085D6C  41 82 00 0C */	beq lbl_80088F78
-/* 80088F70 00085D70  C0 02 93 B0 */	lfs f0, $$2995_0-_SDA2_BASE_(r2)
+/* 80088F70 00085D70  C0 02 93 B0 */	lfs f0, _esc__2_995_0-_SDA2_BASE_(r2)
 /* 80088F74 00085D74  48 00 00 10 */	b lbl_80088F84
 lbl_80088F78:
-/* 80088F78 00085D78  80 AD C3 94 */	lwz r5, widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80088F78 00085D78  80 AD C3 94 */	lwz r5, widget_cam__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80088F7C 00085D7C  80 A5 00 C4 */	lwz r5, 0xc4(r5)
 /* 80088F80 00085D80  C0 05 00 4C */	lfs f0, 0x4c(r5)
 lbl_80088F84:
-/* 80088F84 00085D84  80 AD C3 94 */	lwz r5, widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80088F84 00085D84  80 AD C3 94 */	lwz r5, widget_cam__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80088F88 00085D88  D0 05 00 A8 */	stfs f0, 0xa8(r5)
-/* 80088F8C 00085D8C  80 AD C3 94 */	lwz r5, widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80088F8C 00085D8C  80 AD C3 94 */	lwz r5, widget_cam__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80088F90 00085D90  98 85 00 C1 */	stb r4, 0xc1(r5)
 /* 80088F94 00085D94  7C 64 1B 78 */	mr r4, r3
-/* 80088F98 00085D98  80 6D C3 94 */	lwz r3, widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80088F98 00085D98  80 6D C3 94 */	lwz r3, widget_cam__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80088F9C 00085D9C  4B FF F1 D5 */	bl zCamRemove__FR4xCamb
 lbl_80088FA0:
-/* 80088FA0 00085DA0  48 00 00 1D */	bl debug_update__24$$2unnamed$$2zCamMarker_cpp$$2Fv
+/* 80088FA0 00085DA0  48 00 00 1D */	bl debug_update__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_Fv
 /* 80088FA4 00085DA4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80088FA8 00085DA8  7C 08 03 A6 */	mtlr r0
 /* 80088FAC 00085DAC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80088FB0 00085DB0  4E 80 00 20 */	blr 
 
-.global add_tweak_stub__24$$2unnamed$$2zCamMarker_cpp$$2FR9xCamAsset
-add_tweak_stub__24$$2unnamed$$2zCamMarker_cpp$$2FR9xCamAsset:
+.global add_tweak_stub__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_FR9xCamAsset
+add_tweak_stub__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_FR9xCamAsset:
 /* 80088FB4 00085DB4  4E 80 00 20 */	blr 
 
-.global add_global_tweaks__24$$2unnamed$$2zCamMarker_cpp$$2Fv
-add_global_tweaks__24$$2unnamed$$2zCamMarker_cpp$$2Fv:
+.global add_global_tweaks__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_Fv
+add_global_tweaks__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_Fv:
 /* 80088FB8 00085DB8  4E 80 00 20 */	blr 
 
-.global debug_update__24$$2unnamed$$2zCamMarker_cpp$$2Fv
-debug_update__24$$2unnamed$$2zCamMarker_cpp$$2Fv:
+.global debug_update__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_Fv
+debug_update__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_Fv:
 /* 80088FBC 00085DBC  4E 80 00 20 */	blr 
 
 .global zCamMarkerSceneEnter__Fv
@@ -294,25 +296,25 @@ zCamMarkerSceneEnter__Fv:
 /* 80088FD8 00085DD8  4B F8 63 B9 */	bl __nw__FUl14xMemStaticTypeUi
 /* 80088FDC 00085DDC  7C 60 1B 79 */	or. r0, r3, r3
 /* 80088FE0 00085DE0  41 82 00 0C */	beq lbl_80088FEC
-/* 80088FE4 00085DE4  48 00 00 91 */	bl __ct__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
+/* 80088FE4 00085DE4  48 00 00 91 */	bl __ct__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
 /* 80088FE8 00085DE8  7C 60 1B 78 */	mr r0, r3
 lbl_80088FEC:
-/* 80088FEC 00085DEC  90 0D C3 94 */	stw r0, widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80088FEC 00085DEC  90 0D C3 94 */	stw r0, widget_cam__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80088FF0 00085DF0  7C 03 03 78 */	mr r3, r0
 /* 80088FF4 00085DF4  81 83 00 AC */	lwz r12, 0xac(r3)
 /* 80088FF8 00085DF8  81 8C 00 08 */	lwz r12, 8(r12)
 /* 80088FFC 00085DFC  7D 89 03 A6 */	mtctr r12
 /* 80089000 00085E00  4E 80 04 21 */	bctrl 
 /* 80089004 00085E04  38 00 00 00 */	li r0, 0
-/* 80089008 00085E08  98 0D C3 90 */	stb r0, activated__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
-/* 8008900C 00085E0C  4B FF FF AD */	bl add_global_tweaks__24$$2unnamed$$2zCamMarker_cpp$$2Fv
+/* 80089008 00085E08  98 0D C3 90 */	stb r0, activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008900C 00085E0C  4B FF FF AD */	bl add_global_tweaks__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_Fv
 /* 80089010 00085E10  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80089014 00085E14  7C 08 03 A6 */	mtlr r0
 /* 80089018 00085E18  38 21 00 10 */	addi r1, r1, 0x10
 /* 8008901C 00085E1C  4E 80 00 20 */	blr 
 
-.global create__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
-create__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
+.global create__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
+create__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv:
 /* 80089020 00085E20  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80089024 00085E24  7C 08 02 A6 */	mflr r0
 /* 80089028 00085E28  90 01 00 14 */	stw r0, 0x14(r1)
@@ -322,7 +324,7 @@ create__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
 /* 80089038 00085E38  38 60 00 00 */	li r3, 0
 /* 8008903C 00085E3C  38 00 00 C0 */	li r0, 0xc0
 /* 80089040 00085E40  90 7F 00 6C */	stw r3, 0x6c(r31)
-/* 80089044 00085E44  C0 02 93 B0 */	lfs f0, $$2995_0-_SDA2_BASE_(r2)
+/* 80089044 00085E44  C0 02 93 B0 */	lfs f0, _esc__2_995_0-_SDA2_BASE_(r2)
 /* 80089048 00085E48  90 7F 00 70 */	stw r3, 0x70(r31)
 /* 8008904C 00085E4C  98 7F 00 C0 */	stb r3, 0xc0(r31)
 /* 80089050 00085E50  90 7F 00 C4 */	stw r3, 0xc4(r31)
@@ -335,15 +337,15 @@ create__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
 /* 8008906C 00085E6C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80089070 00085E70  4E 80 00 20 */	blr 
 
-.global __ct__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
-__ct__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
+.global __ct__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
+__ct__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv:
 /* 80089074 00085E74  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80089078 00085E78  7C 08 02 A6 */	mflr r0
 /* 8008907C 00085E7C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80089080 00085E80  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80089084 00085E84  7C 7F 1B 78 */	mr r31, r3
 /* 80089088 00085E88  4B F8 62 FD */	bl __ct__4xCamFv
-/* 8008908C 00085E8C  38 0D 88 D8 */	addi r0, r13, __vt__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidget-_SDA_BASE_
+/* 8008908C 00085E8C  38 0D 88 D8 */	addi r0, r13, __vt__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidget-_SDA_BASE_
 /* 80089090 00085E90  7F E3 FB 78 */	mr r3, r31
 /* 80089094 00085E94  90 1F 00 AC */	stw r0, 0xac(r31)
 /* 80089098 00085E98  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -357,15 +359,15 @@ zCamMarkerReset__Fv:
 /* 800890AC 00085EAC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800890B0 00085EB0  7C 08 02 A6 */	mflr r0
 /* 800890B4 00085EB4  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800890B8 00085EB8  88 0D C3 90 */	lbz r0, activated__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 800890B8 00085EB8  88 0D C3 90 */	lbz r0, activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800890BC 00085EBC  28 00 00 00 */	cmplwi r0, 0
 /* 800890C0 00085EC0  41 82 00 10 */	beq lbl_800890D0
-/* 800890C4 00085EC4  80 6D C3 94 */	lwz r3, widget_cam__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 800890C4 00085EC4  80 6D C3 94 */	lwz r3, widget_cam__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800890C8 00085EC8  38 80 00 01 */	li r4, 1
 /* 800890CC 00085ECC  4B FF F0 A5 */	bl zCamRemove__FR4xCamb
 lbl_800890D0:
 /* 800890D0 00085ED0  38 00 00 00 */	li r0, 0
-/* 800890D4 00085ED4  98 0D C3 90 */	stb r0, activated__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 800890D4 00085ED4  98 0D C3 90 */	stb r0, activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800890D8 00085ED8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800890DC 00085EDC  7C 08 03 A6 */	mtlr r0
 /* 800890E0 00085EE0  38 21 00 10 */	addi r1, r1, 0x10
@@ -391,7 +393,7 @@ lbl_80089118:
 /* 80089120 00085F20  38 04 91 84 */	addi r0, r4, zCamMarkerEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi@l
 /* 80089124 00085F24  90 1E 00 0C */	stw r0, 0xc(r30)
 /* 80089128 00085F28  93 FE 00 10 */	stw r31, 0x10(r30)
-/* 8008912C 00085F2C  4B FF FE 89 */	bl add_tweak_stub__24$$2unnamed$$2zCamMarker_cpp$$2FR9xCamAsset
+/* 8008912C 00085F2C  4B FF FE 89 */	bl add_tweak_stub__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_FR9xCamAsset
 /* 80089130 00085F30  BB C1 00 08 */	lmw r30, 8(r1)
 /* 80089134 00085F34  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80089138 00085F38  7C 08 03 A6 */	mtlr r0
@@ -437,16 +439,16 @@ lbl_800891A8:
 lbl_800891B0:
 /* 800891B0 00085FB0  80 64 00 10 */	lwz r3, 0x10(r4)
 /* 800891B4 00085FB4  38 80 00 00 */	li r4, 0
-/* 800891B8 00085FB8  4B FF FA FD */	bl activate_camera__24$$2unnamed$$2zCamMarker_cpp$$2FRC9xCamAssetP4xEnt
+/* 800891B8 00085FB8  4B FF FA FD */	bl activate_camera__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_FRC9xCamAssetP4xEnt
 /* 800891BC 00085FBC  48 00 00 20 */	b lbl_800891DC
 lbl_800891C0:
-/* 800891C0 00085FC0  C0 22 93 B0 */	lfs f1, $$2995_0-_SDA2_BASE_(r2)
+/* 800891C0 00085FC0  C0 22 93 B0 */	lfs f1, _esc__2_995_0-_SDA2_BASE_(r2)
 /* 800891C4 00085FC4  38 60 00 01 */	li r3, 1
 /* 800891C8 00085FC8  C0 06 00 00 */	lfs f0, 0(r6)
 /* 800891CC 00085FCC  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 800891D0 00085FD0  7C 00 00 26 */	mfcr r0
 /* 800891D4 00085FD4  54 04 1F FE */	rlwinm r4, r0, 3, 0x1f, 0x1f
-/* 800891D8 00085FD8  4B FF FD 79 */	bl deactivate_camera__24$$2unnamed$$2zCamMarker_cpp$$2Fbb
+/* 800891D8 00085FD8  4B FF FD 79 */	bl deactivate_camera__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_Fbb
 lbl_800891DC:
 /* 800891DC 00085FDC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800891E0 00085FE0  7C 08 03 A6 */	mtlr r0
@@ -498,28 +500,28 @@ zStaticCameraAsset_EventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi:
 /* 80089274 00086074  40 80 00 08 */	bge lbl_8008927C
 /* 80089278 00086078  48 00 00 58 */	b lbl_800892D0
 lbl_8008927C:
-/* 8008927C 0008607C  3C 60 80 37 */	lis r3, static_cam_asset__24$$2unnamed$$2zCamMarker_cpp$$2@ha
+/* 8008927C 0008607C  3C 60 80 37 */	lis r3, static_cam_asset__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_@ha
 /* 80089280 00086080  C0 3F 00 10 */	lfs f1, 0x10(r31)
-/* 80089284 00086084  38 63 58 20 */	addi r3, r3, static_cam_asset__24$$2unnamed$$2zCamMarker_cpp$$2@l
+/* 80089284 00086084  38 63 58 20 */	addi r3, r3, static_cam_asset__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_@l
 /* 80089288 00086088  C0 5F 00 14 */	lfs f2, 0x14(r31)
 /* 8008928C 0008608C  C0 7F 00 18 */	lfs f3, 0x18(r31)
 /* 80089290 00086090  38 63 00 08 */	addi r3, r3, 8
 /* 80089294 00086094  4B F8 45 45 */	bl assign__5xVec3Ffff
-/* 80089298 00086098  3C 60 80 37 */	lis r3, static_cam_asset__24$$2unnamed$$2zCamMarker_cpp$$2@ha
+/* 80089298 00086098  3C 60 80 37 */	lis r3, static_cam_asset__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_@ha
 /* 8008929C 0008609C  C0 1F 00 1C */	lfs f0, 0x1c(r31)
-/* 800892A0 000860A0  38 63 58 20 */	addi r3, r3, static_cam_asset__24$$2unnamed$$2zCamMarker_cpp$$2@l
-/* 800892A4 000860A4  C0 22 93 B8 */	lfs f1, $$21107-_SDA2_BASE_(r2)
+/* 800892A0 000860A0  38 63 58 20 */	addi r3, r3, static_cam_asset__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_@l
+/* 800892A4 000860A4  C0 22 93 B8 */	lfs f1, _esc__2_1107-_SDA2_BASE_(r2)
 /* 800892A8 000860A8  D0 03 00 4C */	stfs f0, 0x4c(r3)
 /* 800892AC 000860AC  7F C4 F3 78 */	mr r4, r30
 /* 800892B0 000860B0  C0 1F 00 28 */	lfs f0, 0x28(r31)
 /* 800892B4 000860B4  EC 01 00 32 */	fmuls f0, f1, f0
 /* 800892B8 000860B8  D0 03 00 48 */	stfs f0, 0x48(r3)
-/* 800892BC 000860BC  4B FF F9 F9 */	bl activate_camera__24$$2unnamed$$2zCamMarker_cpp$$2FRC9xCamAssetP4xEnt
+/* 800892BC 000860BC  4B FF F9 F9 */	bl activate_camera__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_FRC9xCamAssetP4xEnt
 /* 800892C0 000860C0  48 00 00 10 */	b lbl_800892D0
 lbl_800892C4:
 /* 800892C4 000860C4  38 60 00 00 */	li r3, 0
 /* 800892C8 000860C8  38 80 00 00 */	li r4, 0
-/* 800892CC 000860CC  4B FF FC 85 */	bl deactivate_camera__24$$2unnamed$$2zCamMarker_cpp$$2Fbb
+/* 800892CC 000860CC  4B FF FC 85 */	bl deactivate_camera__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_Fbb
 lbl_800892D0:
 /* 800892D0 000860D0  BB C1 00 08 */	lmw r30, 8(r1)
 /* 800892D4 000860D4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -527,8 +529,8 @@ lbl_800892D0:
 /* 800892DC 000860DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 800892E0 000860E0  4E 80 00 20 */	blr 
 
-.global start__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
-start__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
+.global start__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
+start__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv:
 /* 800892E4 000860E4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800892E8 000860E8  7C 08 02 A6 */	mflr r0
 /* 800892EC 000860EC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -540,7 +542,7 @@ start__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
 /* 80089304 00086104  4B F7 C9 3D */	bl __as__7xMat4x3FRC7xMat4x3
 /* 80089308 00086108  38 60 00 01 */	li r3, 1
 /* 8008930C 0008610C  38 00 00 00 */	li r0, 0
-/* 80089310 00086110  98 6D C3 90 */	stb r3, activated__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80089310 00086110  98 6D C3 90 */	stb r3, activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80089314 00086114  38 7F 00 74 */	addi r3, r31, 0x74
 /* 80089318 00086118  38 9F 00 30 */	addi r4, r31, 0x30
 /* 8008931C 0008611C  98 1F 00 C1 */	stb r0, 0xc1(r31)
@@ -552,7 +554,7 @@ start__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
 /* 80089334 00086134  28 00 00 00 */	cmplwi r0, 0
 /* 80089338 00086138  41 82 00 0C */	beq lbl_80089344
 /* 8008933C 0008613C  7F E3 FB 78 */	mr r3, r31
-/* 80089340 00086140  4B FF FA 61 */	bl start_transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
+/* 80089340 00086140  4B FF FA 61 */	bl start_transition__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
 lbl_80089344:
 /* 80089344 00086144  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80089348 00086148  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -560,15 +562,15 @@ lbl_80089344:
 /* 80089350 00086150  38 21 00 10 */	addi r1, r1, 0x10
 /* 80089354 00086154  4E 80 00 20 */	blr 
 
-.global stop__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
-stop__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv:
+.global stop__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
+stop__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv:
 /* 80089358 00086158  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008935C 0008615C  7C 08 02 A6 */	mflr r0
 /* 80089360 00086160  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80089364 00086164  38 00 00 00 */	li r0, 0
 /* 80089368 00086168  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8008936C 0008616C  7C 7F 1B 78 */	mr r31, r3
-/* 80089370 00086170  98 0D C3 90 */	stb r0, activated__24$$2unnamed$$2zCamMarker_cpp$$2-_SDA_BASE_(r13)
+/* 80089370 00086170  98 0D C3 90 */	stb r0, activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80089374 00086174  98 03 00 C0 */	stb r0, 0xc0(r3)
 /* 80089378 00086178  90 03 01 08 */	stw r0, 0x108(r3)
 /* 8008937C 0008617C  4B F8 52 CD */	bl stop__4xCamFv
@@ -585,8 +587,8 @@ lbl_80089398:
 /* 800893A4 000861A4  38 21 00 10 */	addi r1, r1, 0x10
 /* 800893A8 000861A8  4E 80 00 20 */	blr 
 
-.global update__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFR6xScenef
-update__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFR6xScenef:
+.global update__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFR6xScenef
+update__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFR6xScenef:
 /* 800893AC 000861AC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800893B0 000861B0  7C 08 02 A6 */	mflr r0
 /* 800893B4 000861B4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -594,7 +596,7 @@ update__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFR6xScenef:
 /* 800893BC 000861BC  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 800893C0 000861C0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800893C4 000861C4  7C 7F 1B 78 */	mr r31, r3
-/* 800893C8 000861C8  C0 02 93 B0 */	lfs f0, $$2995_0-_SDA2_BASE_(r2)
+/* 800893C8 000861C8  C0 02 93 B0 */	lfs f0, _esc__2_995_0-_SDA2_BASE_(r2)
 /* 800893CC 000861CC  C0 43 00 CC */	lfs f2, 0xcc(r3)
 /* 800893D0 000861D0  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 800893D4 000861D4  4C 40 13 82 */	cror 2, 0, 2
@@ -602,14 +604,14 @@ update__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFR6xScenef:
 /* 800893DC 000861DC  C0 1F 00 C8 */	lfs f0, 0xc8(r31)
 /* 800893E0 000861E0  EC 00 08 2A */	fadds f0, f0, f1
 /* 800893E4 000861E4  D0 1F 00 C8 */	stfs f0, 0xc8(r31)
-/* 800893E8 000861E8  4B FF FA 8D */	bl refresh_end_mat__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
+/* 800893E8 000861E8  4B FF FA 8D */	bl refresh_end_mat__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
 /* 800893EC 000861EC  C0 3F 00 C8 */	lfs f1, 0xc8(r31)
 /* 800893F0 000861F0  C0 1F 00 CC */	lfs f0, 0xcc(r31)
 /* 800893F4 000861F4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800893F8 000861F8  4C 41 13 82 */	cror 2, 1, 2
 /* 800893FC 000861FC  40 82 00 10 */	bne lbl_8008940C
 /* 80089400 00086200  7F E3 FB 78 */	mr r3, r31
-/* 80089404 00086204  4B FF FA 15 */	bl finish_transition__Q224$$2unnamed$$2zCamMarker_cpp$$210zCamWidgetFv
+/* 80089404 00086204  4B FF FA 15 */	bl finish_transition__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
 /* 80089408 00086208  48 00 00 78 */	b lbl_80089480
 lbl_8008940C:
 /* 8008940C 0008620C  EC 21 00 24 */	fdivs f1, f1, f0
@@ -628,7 +630,7 @@ lbl_8008940C:
 /* 80089440 00086240  4B F8 6B 19 */	bl blend__4xCamFR5xVec3RC5xVec3RC5xVec3f
 /* 80089444 00086244  C0 5F 01 04 */	lfs f2, 0x104(r31)
 /* 80089448 00086248  38 7F 00 94 */	addi r3, r31, 0x94
-/* 8008944C 0008624C  C0 02 93 BC */	lfs f0, $$21119-_SDA2_BASE_(r2)
+/* 8008944C 0008624C  C0 02 93 BC */	lfs f0, _esc__2_1119-_SDA2_BASE_(r2)
 /* 80089450 00086250  38 9F 00 E4 */	addi r4, r31, 0xe4
 /* 80089454 00086254  EC 3F 10 28 */	fsubs f1, f31, f2
 /* 80089458 00086258  38 BF 00 F4 */	addi r5, r31, 0xf4
@@ -649,3 +651,6 @@ lbl_80089480:
 /* 80089490 00086290  7C 08 03 A6 */	mtlr r0
 /* 80089494 00086294  38 21 00 20 */	addi r1, r1, 0x20
 /* 80089498 00086298  4E 80 00 20 */	blr 
+
+.endif
+

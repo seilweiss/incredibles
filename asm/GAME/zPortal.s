@@ -2,9 +2,11 @@
 
 .section .sdata2
 
-.global $$21000_5
-$$21000_5:
+.global _esc__2_1000_5
+_esc__2_1000_5:
 	.incbin "baserom.dol", 0x331E88, 0x8
+
+.if 0
 
 .section .text
 
@@ -123,7 +125,7 @@ lbl_801508AC:
 /* 801508C4 0014D6C4  7C 04 00 40 */	cmplw r4, r0
 /* 801508C8 0014D6C8  40 82 00 28 */	bne lbl_801508F0
 lbl_801508CC:
-/* 801508CC 0014D6CC  C0 22 B7 A8 */	lfs f1, $$21000_5-_SDA2_BASE_(r2)
+/* 801508CC 0014D6CC  C0 22 B7 A8 */	lfs f1, _esc__2_1000_5-_SDA2_BASE_(r2)
 /* 801508D0 0014D6D0  7F C3 F3 78 */	mr r3, r30
 /* 801508D4 0014D6D4  C0 1F 00 00 */	lfs f0, 0(r31)
 /* 801508D8 0014D6D8  FC 01 00 00 */	fcmpu cr0, f1, f0
@@ -138,3 +140,6 @@ lbl_801508F0:
 /* 801508F8 0014D6F8  7C 08 03 A6 */	mtlr r0
 /* 801508FC 0014D6FC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80150900 0014D700  4E 80 00 20 */	blr 
+
+.endif
+

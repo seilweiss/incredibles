@@ -2,18 +2,20 @@
 
 .section .sbss
 
-.global gSceneReset__21$$2unnamed$$2zScript_cpp$$2
-gSceneReset__21$$2unnamed$$2zScript_cpp$$2:
+.global gSceneReset__21_esc__2_unnamed_esc__2_zScript_cpp_esc__2_
+gSceneReset__21_esc__2_unnamed_esc__2_zScript_cpp_esc__2_:
 	.skip 0x10
 
 .section .sdata2
 
-.global $$2964_0
-$$2964_0:
+.global _esc__2_964_0
+_esc__2_964_0:
 	.incbin "baserom.dol", 0x331F18, 0x4
-.global $$2999_1
-$$2999_1:
+.global _esc__2_999_1
+_esc__2_999_1:
 	.incbin "baserom.dol", 0x331F1C, 0x4
+
+.if 0
 
 .section .text
 
@@ -74,7 +76,7 @@ zScriptReset__FP8_zScript:
 /* 8015AE94 00157C94  7C 7F 1B 78 */	mr r31, r3
 /* 8015AE98 00157C98  80 83 00 10 */	lwz r4, 0x10(r3)
 /* 8015AE9C 00157C9C  4B EB 17 39 */	bl xBaseReset__FP5xBaseP10xBaseAsset
-/* 8015AEA0 00157CA0  C0 02 B8 38 */	lfs f0, $$2964_0-_SDA2_BASE_(r2)
+/* 8015AEA0 00157CA0  C0 02 B8 38 */	lfs f0, _esc__2_964_0-_SDA2_BASE_(r2)
 /* 8015AEA4 00157CA4  38 00 00 00 */	li r0, 0
 /* 8015AEA8 00157CA8  D0 1F 00 1C */	stfs f0, 0x1c(r31)
 /* 8015AEAC 00157CAC  80 7F 00 10 */	lwz r3, 0x10(r31)
@@ -146,18 +148,18 @@ lbl_8015AF7C:
 /* 8015AF84 00157D84  48 00 00 D0 */	b lbl_8015B054
 lbl_8015AF88:
 /* 8015AF88 00157D88  38 00 00 01 */	li r0, 1
-/* 8015AF8C 00157D8C  C0 22 B8 38 */	lfs f1, $$2964_0-_SDA2_BASE_(r2)
+/* 8015AF8C 00157D8C  C0 22 B8 38 */	lfs f1, _esc__2_964_0-_SDA2_BASE_(r2)
 /* 8015AF90 00157D90  98 1F 00 18 */	stb r0, 0x18(r31)
 /* 8015AF94 00157D94  C0 1F 00 1C */	lfs f0, 0x1c(r31)
 /* 8015AF98 00157D98  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 8015AF9C 00157D9C  40 82 00 B8 */	bne lbl_8015B054
-/* 8015AFA0 00157DA0  C0 42 B8 3C */	lfs f2, $$2999_1-_SDA2_BASE_(r2)
+/* 8015AFA0 00157DA0  C0 42 B8 3C */	lfs f2, _esc__2_999_1-_SDA2_BASE_(r2)
 /* 8015AFA4 00157DA4  7F E3 FB 78 */	mr r3, r31
 /* 8015AFA8 00157DA8  48 00 00 C1 */	bl zScriptExecuteEvents__FP8_zScriptff
 /* 8015AFAC 00157DAC  88 1F 00 18 */	lbz r0, 0x18(r31)
 /* 8015AFB0 00157DB0  28 00 00 01 */	cmplwi r0, 1
 /* 8015AFB4 00157DB4  40 82 00 A0 */	bne lbl_8015B054
-/* 8015AFB8 00157DB8  C0 02 B8 3C */	lfs f0, $$2999_1-_SDA2_BASE_(r2)
+/* 8015AFB8 00157DB8  C0 02 B8 3C */	lfs f0, _esc__2_999_1-_SDA2_BASE_(r2)
 /* 8015AFBC 00157DBC  D0 1F 00 1C */	stfs f0, 0x1c(r31)
 /* 8015AFC0 00157DC0  48 00 00 94 */	b lbl_8015B054
 lbl_8015AFC4:
@@ -196,7 +198,7 @@ lbl_8015B02C:
 /* 8015B034 00157E34  48 00 00 20 */	b lbl_8015B054
 lbl_8015B038:
 /* 8015B038 00157E38  38 00 00 01 */	li r0, 1
-/* 8015B03C 00157E3C  98 0D CE A0 */	stb r0, gSceneReset__21$$2unnamed$$2zScript_cpp$$2-_SDA_BASE_(r13)
+/* 8015B03C 00157E3C  98 0D CE A0 */	stb r0, gSceneReset__21_esc__2_unnamed_esc__2_zScript_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8015B040 00157E40  48 00 00 14 */	b lbl_8015B054
 lbl_8015B044:
 /* 8015B044 00157E44  28 06 00 00 */	cmplwi r6, 0
@@ -222,7 +224,7 @@ zScriptExecuteEvents__FP8_zScriptff:
 /* 8015B084 00157E84  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 8015B088 00157E88  38 00 00 00 */	li r0, 0
 /* 8015B08C 00157E8C  7C 7F 1B 78 */	mr r31, r3
-/* 8015B090 00157E90  98 0D CE A0 */	stb r0, gSceneReset__21$$2unnamed$$2zScript_cpp$$2-_SDA_BASE_(r13)
+/* 8015B090 00157E90  98 0D CE A0 */	stb r0, gSceneReset__21_esc__2_unnamed_esc__2_zScript_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8015B094 00157E94  FF C0 08 90 */	fmr f30, f1
 /* 8015B098 00157E98  FF E0 10 90 */	fmr f31, f2
 /* 8015B09C 00157E9C  80 63 00 10 */	lwz r3, 0x10(r3)
@@ -282,7 +284,7 @@ lbl_8015B144:
 /* 8015B168 00157F68  38 60 00 01 */	li r3, 1
 /* 8015B16C 00157F6C  48 00 00 48 */	b lbl_8015B1B4
 lbl_8015B170:
-/* 8015B170 00157F70  88 0D CE A0 */	lbz r0, gSceneReset__21$$2unnamed$$2zScript_cpp$$2-_SDA_BASE_(r13)
+/* 8015B170 00157F70  88 0D CE A0 */	lbz r0, gSceneReset__21_esc__2_unnamed_esc__2_zScript_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8015B174 00157F74  28 00 00 00 */	cmplwi r0, 0
 /* 8015B178 00157F78  41 82 00 14 */	beq lbl_8015B18C
 /* 8015B17C 00157F7C  38 60 00 01 */	li r3, 1
@@ -344,3 +346,6 @@ lbl_8015B22C:
 /* 8015B23C 0015803C  7C 08 03 A6 */	mtlr r0
 /* 8015B240 00158040  38 21 00 20 */	addi r1, r1, 0x20
 /* 8015B244 00158044  4E 80 00 20 */	blr 
+
+.endif
+

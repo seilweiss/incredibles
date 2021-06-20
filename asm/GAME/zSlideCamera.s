@@ -8,23 +8,23 @@ __vt__9zSlideCam:
 
 .section .sdata2
 
-.global $$2860
-$$2860:
+.global _esc__2_860
+_esc__2_860:
 	.incbin "baserom.dol", 0x331FA8, 0x4
-.global $$2865_0
-$$2865_0:
+.global _esc__2_865_0
+_esc__2_865_0:
 	.incbin "baserom.dol", 0x331FAC, 0x4
-.global $$2866_0
-$$2866_0:
+.global _esc__2_866_0
+_esc__2_866_0:
 	.incbin "baserom.dol", 0x331FB0, 0x4
-.global $$2867
-$$2867:
+.global _esc__2_867
+_esc__2_867:
 	.incbin "baserom.dol", 0x331FB4, 0x4
-.global $$2868
-$$2868:
+.global _esc__2_868
+_esc__2_868:
 	.incbin "baserom.dol", 0x331FB8, 0x4
-.global $$2932_1
-$$2932_1:
+.global _esc__2_932_1
+_esc__2_932_1:
 	.incbin "baserom.dol", 0x331FBC, 0x4
 .global lbl_803D5600
 lbl_803D5600:
@@ -32,9 +32,11 @@ lbl_803D5600:
 .global lbl_803D5604
 lbl_803D5604:
 	.incbin "baserom.dol", 0x331FC4, 0x4
-.global $$2937_2
-$$2937_2:
+.global _esc__2_937_2
+_esc__2_937_2:
 	.incbin "baserom.dol", 0x331FC8, 0x8
+
+.if 0
 
 .section .text
 
@@ -50,7 +52,7 @@ create__9zSlideCamFv:
 /* 8015E360 0015B160  38 00 00 80 */	li r0, 0x80
 /* 8015E364 0015B164  90 9F 00 6C */	stw r4, 0x6c(r31)
 /* 8015E368 0015B168  7F E3 FB 78 */	mr r3, r31
-/* 8015E36C 0015B16C  C0 02 B8 C8 */	lfs f0, $$2860-_SDA2_BASE_(r2)
+/* 8015E36C 0015B16C  C0 02 B8 C8 */	lfs f0, _esc__2_860-_SDA2_BASE_(r2)
 /* 8015E370 0015B170  90 9F 00 70 */	stw r4, 0x70(r31)
 /* 8015E374 0015B174  98 1F 00 A4 */	stb r0, 0xa4(r31)
 /* 8015E378 0015B178  D0 1F 00 A8 */	stfs f0, 0xa8(r31)
@@ -63,12 +65,12 @@ create__9zSlideCamFv:
 
 .global load_cfg__9zSlideCamFv
 load_cfg__9zSlideCamFv:
-/* 8015E394 0015B194  C0 22 B8 CC */	lfs f1, $$2865_0-_SDA2_BASE_(r2)
-/* 8015E398 0015B198  C0 02 B8 D0 */	lfs f0, $$2866_0-_SDA2_BASE_(r2)
+/* 8015E394 0015B194  C0 22 B8 CC */	lfs f1, _esc__2_865_0-_SDA2_BASE_(r2)
+/* 8015E398 0015B198  C0 02 B8 D0 */	lfs f0, _esc__2_866_0-_SDA2_BASE_(r2)
 /* 8015E39C 0015B19C  D0 23 00 C4 */	stfs f1, 0xc4(r3)
-/* 8015E3A0 0015B1A0  C0 22 B8 D4 */	lfs f1, $$2867-_SDA2_BASE_(r2)
+/* 8015E3A0 0015B1A0  C0 22 B8 D4 */	lfs f1, _esc__2_867-_SDA2_BASE_(r2)
 /* 8015E3A4 0015B1A4  D0 03 00 C8 */	stfs f0, 0xc8(r3)
-/* 8015E3A8 0015B1A8  C0 02 B8 D8 */	lfs f0, $$2868-_SDA2_BASE_(r2)
+/* 8015E3A8 0015B1A8  C0 02 B8 D8 */	lfs f0, _esc__2_868-_SDA2_BASE_(r2)
 /* 8015E3AC 0015B1AC  D0 23 00 CC */	stfs f1, 0xcc(r3)
 /* 8015E3B0 0015B1B0  D0 03 00 D0 */	stfs f0, 0xd0(r3)
 /* 8015E3B4 0015B1B4  4E 80 00 20 */	blr 
@@ -250,7 +252,7 @@ update__9zSlideCamFR6xScenef:
 /* 8015E638 0015B438  EC 44 10 28 */	fsubs f2, f4, f2
 /* 8015E63C 0015B43C  EC 63 00 28 */	fsubs f3, f3, f0
 /* 8015E640 0015B440  4B F2 91 15 */	bl xVec3Length__Ffff
-/* 8015E644 0015B444  C0 02 B8 E8 */	lfs f0, $$2937_2-_SDA2_BASE_(r2)
+/* 8015E644 0015B444  C0 02 B8 E8 */	lfs f0, _esc__2_937_2-_SDA2_BASE_(r2)
 /* 8015E648 0015B448  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8015E64C 0015B44C  40 81 00 34 */	ble lbl_8015E680
 /* 8015E650 0015B450  FC 20 F8 90 */	fmr f1, f31
@@ -266,7 +268,7 @@ update__9zSlideCamFR6xScenef:
 /* 8015E678 0015B478  38 81 00 14 */	addi r4, r1, 0x14
 /* 8015E67C 0015B47C  4B EA CA 2D */	bl __as__5xVec3FRC5xVec3
 lbl_8015E680:
-/* 8015E680 0015B480  80 C2 B8 DC */	lwz r6, $$2932_1-_SDA2_BASE_(r2)
+/* 8015E680 0015B480  80 C2 B8 DC */	lwz r6, _esc__2_932_1-_SDA2_BASE_(r2)
 /* 8015E684 0015B484  38 7F 00 10 */	addi r3, r31, 0x10
 /* 8015E688 0015B488  80 A2 B8 E0 */	lwz r5, lbl_803D5600-_SDA2_BASE_(r2)
 /* 8015E68C 0015B48C  38 81 00 20 */	addi r4, r1, 0x20
@@ -315,3 +317,6 @@ lbl_8015E680:
 /* 8015E738 0015B538  7C 08 03 A6 */	mtlr r0
 /* 8015E73C 0015B53C  38 21 00 50 */	addi r1, r1, 0x50
 /* 8015E740 0015B540  4E 80 00 20 */	blr 
+
+.endif
+

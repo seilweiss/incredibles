@@ -21,6 +21,8 @@ FxFrameArray:
 EffectOpenFunctions:
 	.incbin "baserom.dol", 0x32DAF8, 0x8
 
+.if 0
+
 .section .text
 
 .global MaterialSetupEffect__FP10RpMaterialPv
@@ -199,3 +201,6 @@ lbl_801D8390:
 /* 801D8398 001D5198  7C 08 03 A6 */	mtlr r0
 /* 801D839C 001D519C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D83A0 001D51A0  4E 80 00 20 */	blr 
+
+.endif
+

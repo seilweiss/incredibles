@@ -8,12 +8,14 @@ cnt_fadesInProgress__Q210ScreenFade10GlobalData:
 
 .section .sdata2
 
-.global $$21020_3
-$$21020_3:
+.global _esc__2_1020_3
+_esc__2_1020_3:
 	.incbin "baserom.dol", 0x332878, 0x4
-.global $$21021_3
-$$21021_3:
+.global _esc__2_1021_3
+_esc__2_1021_3:
 	.incbin "baserom.dol", 0x33287C, 0x4
+
+.if 0
 
 .section .text
 
@@ -49,27 +51,27 @@ lbl_80189DF0:
 /* 80189DFC 00186BFC  38 82 82 44 */	addi r4, r2, g_CLEAR-_SDA2_BASE_
 /* 80189E00 00186C00  4B E8 C4 3D */	bl __as__10xColor_tagFRC10xColor_tag
 /* 80189E04 00186C04  80 7E 00 10 */	lwz r3, 0x10(r30)
-/* 80189E08 00186C08  C0 02 C1 98 */	lfs f0, $$21020_3-_SDA2_BASE_(r2)
+/* 80189E08 00186C08  C0 02 C1 98 */	lfs f0, _esc__2_1020_3-_SDA2_BASE_(r2)
 /* 80189E0C 00186C0C  C0 23 00 14 */	lfs f1, 0x14(r3)
 /* 80189E10 00186C10  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80189E14 00186C14  40 80 00 0C */	bge lbl_80189E20
-/* 80189E18 00186C18  C0 02 C1 9C */	lfs f0, $$21021_3-_SDA2_BASE_(r2)
+/* 80189E18 00186C18  C0 02 C1 9C */	lfs f0, _esc__2_1021_3-_SDA2_BASE_(r2)
 /* 80189E1C 00186C1C  D0 03 00 14 */	stfs f0, 0x14(r3)
 lbl_80189E20:
 /* 80189E20 00186C20  80 7E 00 10 */	lwz r3, 0x10(r30)
-/* 80189E24 00186C24  C0 02 C1 98 */	lfs f0, $$21020_3-_SDA2_BASE_(r2)
+/* 80189E24 00186C24  C0 02 C1 98 */	lfs f0, _esc__2_1020_3-_SDA2_BASE_(r2)
 /* 80189E28 00186C28  C0 23 00 1C */	lfs f1, 0x1c(r3)
 /* 80189E2C 00186C2C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80189E30 00186C30  40 80 00 0C */	bge lbl_80189E3C
-/* 80189E34 00186C34  C0 02 C1 9C */	lfs f0, $$21021_3-_SDA2_BASE_(r2)
+/* 80189E34 00186C34  C0 02 C1 9C */	lfs f0, _esc__2_1021_3-_SDA2_BASE_(r2)
 /* 80189E38 00186C38  D0 03 00 1C */	stfs f0, 0x1c(r3)
 lbl_80189E3C:
 /* 80189E3C 00186C3C  80 7E 00 10 */	lwz r3, 0x10(r30)
-/* 80189E40 00186C40  C0 02 C1 98 */	lfs f0, $$21020_3-_SDA2_BASE_(r2)
+/* 80189E40 00186C40  C0 02 C1 98 */	lfs f0, _esc__2_1020_3-_SDA2_BASE_(r2)
 /* 80189E44 00186C44  C0 23 00 18 */	lfs f1, 0x18(r3)
 /* 80189E48 00186C48  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80189E4C 00186C4C  40 80 00 0C */	bge lbl_80189E58
-/* 80189E50 00186C50  C0 02 C1 9C */	lfs f0, $$21021_3-_SDA2_BASE_(r2)
+/* 80189E50 00186C50  C0 02 C1 9C */	lfs f0, _esc__2_1021_3-_SDA2_BASE_(r2)
 /* 80189E54 00186C54  D0 03 00 18 */	stfs f0, 0x18(r3)
 lbl_80189E58:
 /* 80189E58 00186C58  38 00 00 00 */	li r0, 0
@@ -83,7 +85,7 @@ lbl_80189E58:
 .global StartFade__11xScreenFadeFv
 StartFade__11xScreenFadeFv:
 /* 80189E74 00186C74  38 00 00 01 */	li r0, 1
-/* 80189E78 00186C78  C0 02 C1 98 */	lfs f0, $$21020_3-_SDA2_BASE_(r2)
+/* 80189E78 00186C78  C0 02 C1 98 */	lfs f0, _esc__2_1020_3-_SDA2_BASE_(r2)
 /* 80189E7C 00186C7C  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80189E80 00186C80  D0 03 00 20 */	stfs f0, 0x20(r3)
 /* 80189E84 00186C84  80 6D D4 C8 */	lwz r3, cnt_fadesInProgress__Q210ScreenFade10GlobalData-_SDA_BASE_(r13)
@@ -138,3 +140,6 @@ lbl_80189F10:
 /* 80189F14 00186D14  7C 08 03 A6 */	mtlr r0
 /* 80189F18 00186D18  38 21 00 10 */	addi r1, r1, 0x10
 /* 80189F1C 00186D1C  4E 80 00 20 */	blr 
+
+.endif
+

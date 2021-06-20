@@ -2,9 +2,11 @@
 
 .section .sdata2
 
-.global $$2788
-$$2788:
+.global _esc__2_788
+_esc__2_788:
 	.incbin "baserom.dol", 0x32EB88, 0x8
+
+.if 0
 
 .section .text
 
@@ -12,7 +14,7 @@ $$2788:
 xFogClearFog__Fv:
 /* 8002FBC0 0002C9C0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8002FBC4 0002C9C4  7C 08 02 A6 */	mflr r0
-/* 8002FBC8 0002C9C8  C0 22 84 A8 */	lfs f1, $$2788-_SDA2_BASE_(r2)
+/* 8002FBC8 0002C9C8  C0 22 84 A8 */	lfs f1, _esc__2_788-_SDA2_BASE_(r2)
 /* 8002FBCC 0002C9CC  38 60 00 00 */	li r3, 0
 /* 8002FBD0 0002C9D0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8002FBD4 0002C9D4  4B FD 62 C1 */	bl iCameraSetFogParams__FP10iFogParamsf
@@ -144,7 +146,7 @@ lbl_8002FD00:
 /* 8002FD74 0002CB74  4B FD 61 21 */	bl iCameraSetFogParams__FP10iFogParamsf
 /* 8002FD78 0002CB78  48 00 00 1C */	b lbl_8002FD94
 lbl_8002FD7C:
-/* 8002FD7C 0002CB7C  C0 22 84 A8 */	lfs f1, $$2788-_SDA2_BASE_(r2)
+/* 8002FD7C 0002CB7C  C0 22 84 A8 */	lfs f1, _esc__2_788-_SDA2_BASE_(r2)
 /* 8002FD80 0002CB80  38 60 00 00 */	li r3, 0
 /* 8002FD84 0002CB84  4B FD 61 11 */	bl iCameraSetFogParams__FP10iFogParamsf
 /* 8002FD88 0002CB88  48 00 00 0C */	b lbl_8002FD94
@@ -160,3 +162,6 @@ lbl_8002FD94:
 .global xFogUpdate__FP5xBaseP6xScenef
 xFogUpdate__FP5xBaseP6xScenef:
 /* 8002FDA4 0002CBA4  4E 80 00 20 */	blr 
+
+.endif
+

@@ -18,6 +18,8 @@ g_loadlock_0:
 g_map_HIPL_funcmap:
 	.incbin "baserom.dol", 0x32B1A8, 0x38
 
+.if 0
+
 .section .text
 
 .global get_HIPLFuncs__Fv
@@ -740,3 +742,6 @@ lbl_8003C7C4:
 /* 8003C7D0 000395D0  7C 08 03 A6 */	mtlr r0
 /* 8003C7D4 000395D4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8003C7D8 000395D8  4E 80 00 20 */	blr 
+
+.endif
+

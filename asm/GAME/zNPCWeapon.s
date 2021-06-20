@@ -14,8 +14,8 @@ __vt__Q24zNPC6Weapon:
 
 .section .rodata
 
-.global $$2stringBase0_111
-$$2stringBase0_111:
+.global _esc__2_stringBase0_111
+_esc__2_stringBase0_111:
 	.incbin "baserom.dol", 0x2E4030, 0xF8
 
 .section .sbss
@@ -32,8 +32,8 @@ animExpanding__Q24zNPC6Weapon:
 .global animContracting__Q24zNPC6Weapon
 animContracting__Q24zNPC6Weapon:
 	.skip 0x4
-.global counter$1493
-counter$1493:
+.global counter_esc__7_1493
+counter_esc__7_1493:
 	.skip 0x8
 
 .section .sdata
@@ -44,60 +44,62 @@ need_setup__Q24zNPC17ElectricitySystem:
 
 .section .sdata2
 
-.global $$2934_0
-$$2934_0:
+.global _esc__2_934_0
+_esc__2_934_0:
 	.incbin "baserom.dol", 0x332880, 0x4
-.global $$2935_2
-$$2935_2:
+.global _esc__2_935_2
+_esc__2_935_2:
 	.incbin "baserom.dol", 0x332884, 0x4
-.global $$21232_1
-$$21232_1:
+.global _esc__2_1232_1
+_esc__2_1232_1:
 	.incbin "baserom.dol", 0x332888, 0x4
-.global $$21233_0
-$$21233_0:
+.global _esc__2_1233_0
+_esc__2_1233_0:
 	.incbin "baserom.dol", 0x33288C, 0x4
-.global $$21234_3
-$$21234_3:
+.global _esc__2_1234_3
+_esc__2_1234_3:
 	.incbin "baserom.dol", 0x332890, 0x4
-.global $$21235_1
-$$21235_1:
+.global _esc__2_1235_1
+_esc__2_1235_1:
 	.incbin "baserom.dol", 0x332894, 0x4
-.global $$21236_2
-$$21236_2:
+.global _esc__2_1236_2
+_esc__2_1236_2:
 	.incbin "baserom.dol", 0x332898, 0x4
-.global $$21237_2
-$$21237_2:
+.global _esc__2_1237_2
+_esc__2_1237_2:
 	.incbin "baserom.dol", 0x33289C, 0x4
-.global $$21282_1
-$$21282_1:
+.global _esc__2_1282_1
+_esc__2_1282_1:
 	.incbin "baserom.dol", 0x3328A0, 0x4
-.global $$21283_0
-$$21283_0:
+.global _esc__2_1283_0
+_esc__2_1283_0:
 	.incbin "baserom.dol", 0x3328A4, 0x4
-.global $$21289_4
-$$21289_4:
+.global _esc__2_1289_4
+_esc__2_1289_4:
 	.incbin "baserom.dol", 0x3328A8, 0x8
-.global $$21420_4
-$$21420_4:
+.global _esc__2_1420_4
+_esc__2_1420_4:
 	.incbin "baserom.dol", 0x3328B0, 0x8
+
+.if 0
 
 .section .text
 
 .global setup__Q24zNPC17ElectricitySystemFv
 setup__Q24zNPC17ElectricitySystemFv:
 /* 80189F20 00186D20  3C 60 80 3A */	lis r3, default_config__Q24zNPC17ElectricitySystem@ha
-/* 80189F24 00186D24  C0 E2 C1 A8 */	lfs f7, $$21232_1-_SDA2_BASE_(r2)
+/* 80189F24 00186D24  C0 E2 C1 A8 */	lfs f7, _esc__2_1232_1-_SDA2_BASE_(r2)
 /* 80189F28 00186D28  38 83 DD A8 */	addi r4, r3, default_config__Q24zNPC17ElectricitySystem@l
-/* 80189F2C 00186D2C  C0 C2 C1 AC */	lfs f6, $$21233_0-_SDA2_BASE_(r2)
-/* 80189F30 00186D30  C0 22 C1 A4 */	lfs f1, $$2935_2-_SDA2_BASE_(r2)
+/* 80189F2C 00186D2C  C0 C2 C1 AC */	lfs f6, _esc__2_1233_0-_SDA2_BASE_(r2)
+/* 80189F30 00186D30  C0 22 C1 A4 */	lfs f1, _esc__2_935_2-_SDA2_BASE_(r2)
 /* 80189F34 00186D34  38 00 00 FF */	li r0, 0xff
-/* 80189F38 00186D38  C0 A2 C1 B0 */	lfs f5, $$21234_3-_SDA2_BASE_(r2)
+/* 80189F38 00186D38  C0 A2 C1 B0 */	lfs f5, _esc__2_1234_3-_SDA2_BASE_(r2)
 /* 80189F3C 00186D3C  38 A0 00 01 */	li r5, 1
-/* 80189F40 00186D40  C0 82 C1 B4 */	lfs f4, $$21235_1-_SDA2_BASE_(r2)
+/* 80189F40 00186D40  C0 82 C1 B4 */	lfs f4, _esc__2_1235_1-_SDA2_BASE_(r2)
 /* 80189F44 00186D44  38 60 00 74 */	li r3, 0x74
-/* 80189F48 00186D48  C0 42 C1 BC */	lfs f2, $$21237_2-_SDA2_BASE_(r2)
-/* 80189F4C 00186D4C  C0 62 C1 B8 */	lfs f3, $$21236_2-_SDA2_BASE_(r2)
-/* 80189F50 00186D50  C0 02 C1 A0 */	lfs f0, $$2934_0-_SDA2_BASE_(r2)
+/* 80189F48 00186D48  C0 42 C1 BC */	lfs f2, _esc__2_1237_2-_SDA2_BASE_(r2)
+/* 80189F4C 00186D4C  C0 62 C1 B8 */	lfs f3, _esc__2_1236_2-_SDA2_BASE_(r2)
+/* 80189F50 00186D50  C0 02 C1 A0 */	lfs f0, _esc__2_934_0-_SDA2_BASE_(r2)
 /* 80189F54 00186D54  98 AD A2 38 */	stb r5, need_setup__Q24zNPC17ElectricitySystem-_SDA_BASE_(r13)
 /* 80189F58 00186D58  D0 E4 00 00 */	stfs f7, 0(r4)
 /* 80189F5C 00186D5C  D0 E4 00 04 */	stfs f7, 4(r4)
@@ -125,10 +127,10 @@ setup__Q24zNPC17ElectricitySystemFv:
 scene_setup__Q24zNPC17ElectricitySystemFv:
 /* 80189FAC 00186DAC  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80189FB0 00186DB0  7C 08 02 A6 */	mflr r0
-/* 80189FB4 00186DB4  3C 60 80 2E */	lis r3, $$2stringBase0_111@ha
+/* 80189FB4 00186DB4  3C 60 80 2E */	lis r3, _esc__2_stringBase0_111@ha
 /* 80189FB8 00186DB8  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80189FBC 00186DBC  38 00 00 00 */	li r0, 0
-/* 80189FC0 00186DC0  38 63 70 30 */	addi r3, r3, $$2stringBase0_111@l
+/* 80189FC0 00186DC0  38 63 70 30 */	addi r3, r3, _esc__2_stringBase0_111@l
 /* 80189FC4 00186DC4  98 0D A2 38 */	stb r0, need_setup__Q24zNPC17ElectricitySystem-_SDA_BASE_(r13)
 /* 80189FC8 00186DC8  4B EE 2C 59 */	bl xStrHash__FPCc
 /* 80189FCC 00186DCC  38 80 00 00 */	li r4, 0
@@ -208,7 +210,7 @@ emit__Q24zNPC17ElectricitySystemFPC5xVec3PC5xVec3RffUcUcUcPCQ34zNPC17Electricity
 /* 8018A0DC 00186EDC  41 82 00 08 */	beq lbl_8018A0E4
 /* 8018A0E0 00186EE0  4B FF FE CD */	bl scene_setup__Q24zNPC17ElectricitySystemFv
 lbl_8018A0E4:
-/* 8018A0E4 00186EE4  C0 62 C1 A4 */	lfs f3, $$2935_2-_SDA2_BASE_(r2)
+/* 8018A0E4 00186EE4  C0 62 C1 A4 */	lfs f3, _esc__2_935_2-_SDA2_BASE_(r2)
 /* 8018A0E8 00186EE8  56 C3 44 2E */	rlwinm r3, r22, 8, 0x10, 0x17
 /* 8018A0EC 00186EEC  C0 3A 00 1C */	lfs f1, 0x1c(r26)
 /* 8018A0F0 00186EF0  57 A4 C0 0E */	slwi r4, r29, 0x18
@@ -216,24 +218,24 @@ lbl_8018A0E4:
 /* 8018A0F8 00186EF8  57 80 82 1E */	rlwinm r0, r28, 0x10, 8, 0xf
 /* 8018A0FC 00186EFC  EE E3 08 24 */	fdivs f23, f3, f1
 /* 8018A100 00186F00  C3 9A 00 18 */	lfs f28, 0x18(r26)
-/* 8018A104 00186F04  C0 02 C1 C0 */	lfs f0, $$21282_1-_SDA2_BASE_(r2)
+/* 8018A104 00186F04  C0 02 C1 C0 */	lfs f0, _esc__2_1282_1-_SDA2_BASE_(r2)
 /* 8018A108 00186F08  7F C0 22 14 */	add r30, r0, r4
 /* 8018A10C 00186F0C  C3 1A 00 08 */	lfs f24, 8(r26)
 /* 8018A110 00186F10  7F C3 F2 14 */	add r30, r3, r30
 /* 8018A114 00186F14  EC 41 25 7A */	fmadds f2, f1, f21, f4
 /* 8018A118 00186F18  C0 3A 00 0C */	lfs f1, 0xc(r26)
 /* 8018A11C 00186F1C  EC 63 20 28 */	fsubs f3, f3, f4
-/* 8018A120 00186F20  C3 22 C1 B4 */	lfs f25, $$21235_1-_SDA2_BASE_(r2)
+/* 8018A120 00186F20  C3 22 C1 B4 */	lfs f25, _esc__2_1235_1-_SDA2_BASE_(r2)
 /* 8018A124 00186F24  EF E0 E0 24 */	fdivs f31, f0, f28
 /* 8018A128 00186F28  C3 5A 00 44 */	lfs f26, 0x44(r26)
 /* 8018A12C 00186F2C  D0 59 00 00 */	stfs f2, 0(r25)
 /* 8018A130 00186F30  3E C0 43 30 */	lis r22, 0x4330
-/* 8018A134 00186F34  C3 62 C1 B0 */	lfs f27, $$21234_3-_SDA2_BASE_(r2)
+/* 8018A134 00186F34  C3 62 C1 B0 */	lfs f27, _esc__2_1234_3-_SDA2_BASE_(r2)
 /* 8018A138 00186F38  C0 19 00 00 */	lfs f0, 0(r25)
 /* 8018A13C 00186F3C  FC 00 00 1E */	fctiwz f0, f0
 /* 8018A140 00186F40  C3 DA 00 00 */	lfs f30, 0(r26)
 /* 8018A144 00186F44  EE C3 05 F2 */	fmuls f22, f3, f23
-/* 8018A148 00186F48  CA A2 C1 C8 */	lfd f21, $$21289_4-_SDA2_BASE_(r2)
+/* 8018A148 00186F48  CA A2 C1 C8 */	lfd f21, _esc__2_1289_4-_SDA2_BASE_(r2)
 /* 8018A14C 00186F4C  EF A1 C0 28 */	fsubs f29, f1, f24
 /* 8018A150 00186F50  D8 01 00 10 */	stfd f0, 0x10(r1)
 /* 8018A154 00186F54  83 A1 00 14 */	lwz r29, 0x14(r1)
@@ -245,7 +247,7 @@ lbl_8018A15C:
 /* 8018A168 00186F68  4B FE B3 7D */	bl xParticleBatchEmit__FiiPPUc
 /* 8018A16C 00186F6C  7C 7F 1B 79 */	or. r31, r3, r3
 /* 8018A170 00186F70  40 82 00 10 */	bne lbl_8018A180
-/* 8018A174 00186F74  C0 02 C1 A0 */	lfs f0, $$2934_0-_SDA2_BASE_(r2)
+/* 8018A174 00186F74  C0 02 C1 A0 */	lfs f0, _esc__2_934_0-_SDA2_BASE_(r2)
 /* 8018A178 00186F78  D0 19 00 00 */	stfs f0, 0(r25)
 /* 8018A17C 00186F7C  48 00 02 14 */	b lbl_8018A390
 lbl_8018A180:
@@ -303,9 +305,9 @@ lbl_8018A190:
 /* 8018A248 00187048  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 8018A24C 0018704C  3C 00 43 30 */	lis r0, 0x4330
 /* 8018A250 00187050  90 61 00 14 */	stw r3, 0x14(r1)
-/* 8018A254 00187054  C8 22 C1 C8 */	lfd f1, $$21289_4-_SDA2_BASE_(r2)
+/* 8018A254 00187054  C8 22 C1 C8 */	lfd f1, _esc__2_1289_4-_SDA2_BASE_(r2)
 /* 8018A258 00187058  90 01 00 10 */	stw r0, 0x10(r1)
-/* 8018A25C 0018705C  C0 42 C1 C4 */	lfs f2, $$21283_0-_SDA2_BASE_(r2)
+/* 8018A25C 0018705C  C0 42 C1 C4 */	lfs f2, _esc__2_1283_0-_SDA2_BASE_(r2)
 /* 8018A260 00187060  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 8018A264 00187064  80 61 00 08 */	lwz r3, 8(r1)
 /* 8018A268 00187068  EC 00 08 28 */	fsubs f0, f0, f1
@@ -320,9 +322,9 @@ lbl_8018A288:
 /* 8018A288 00187088  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 8018A28C 0018708C  3C 00 43 30 */	lis r0, 0x4330
 /* 8018A290 00187090  90 61 00 14 */	stw r3, 0x14(r1)
-/* 8018A294 00187094  C8 22 C1 C8 */	lfd f1, $$21289_4-_SDA2_BASE_(r2)
+/* 8018A294 00187094  C8 22 C1 C8 */	lfd f1, _esc__2_1289_4-_SDA2_BASE_(r2)
 /* 8018A298 00187098  90 01 00 10 */	stw r0, 0x10(r1)
-/* 8018A29C 0018709C  C0 42 C1 C4 */	lfs f2, $$21283_0-_SDA2_BASE_(r2)
+/* 8018A29C 0018709C  C0 42 C1 C4 */	lfs f2, _esc__2_1283_0-_SDA2_BASE_(r2)
 /* 8018A2A0 001870A0  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 8018A2A4 001870A4  80 61 00 08 */	lwz r3, 8(r1)
 /* 8018A2A8 001870A8  EC 00 08 28 */	fsubs f0, f0, f1
@@ -338,9 +340,9 @@ lbl_8018A2C4:
 /* 8018A2CC 001870CC  6C 83 80 00 */	xoris r3, r4, 0x8000
 /* 8018A2D0 001870D0  3C 00 43 30 */	lis r0, 0x4330
 /* 8018A2D4 001870D4  90 61 00 14 */	stw r3, 0x14(r1)
-/* 8018A2D8 001870D8  C8 22 C1 C8 */	lfd f1, $$21289_4-_SDA2_BASE_(r2)
+/* 8018A2D8 001870D8  C8 22 C1 C8 */	lfd f1, _esc__2_1289_4-_SDA2_BASE_(r2)
 /* 8018A2DC 001870DC  90 01 00 10 */	stw r0, 0x10(r1)
-/* 8018A2E0 001870E0  C0 42 C1 C4 */	lfs f2, $$21283_0-_SDA2_BASE_(r2)
+/* 8018A2E0 001870E0  C0 42 C1 C4 */	lfs f2, _esc__2_1283_0-_SDA2_BASE_(r2)
 /* 8018A2E4 001870E4  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 8018A2E8 001870E8  80 61 00 08 */	lwz r3, 8(r1)
 /* 8018A2EC 001870EC  EC 00 08 28 */	fsubs f0, f0, f1
@@ -355,9 +357,9 @@ lbl_8018A30C:
 /* 8018A30C 0018710C  6C 83 80 00 */	xoris r3, r4, 0x8000
 /* 8018A310 00187110  3C 00 43 30 */	lis r0, 0x4330
 /* 8018A314 00187114  90 61 00 14 */	stw r3, 0x14(r1)
-/* 8018A318 00187118  C8 22 C1 C8 */	lfd f1, $$21289_4-_SDA2_BASE_(r2)
+/* 8018A318 00187118  C8 22 C1 C8 */	lfd f1, _esc__2_1289_4-_SDA2_BASE_(r2)
 /* 8018A31C 0018711C  90 01 00 10 */	stw r0, 0x10(r1)
-/* 8018A320 00187120  C0 42 C1 C4 */	lfs f2, $$21283_0-_SDA2_BASE_(r2)
+/* 8018A320 00187120  C0 42 C1 C4 */	lfs f2, _esc__2_1283_0-_SDA2_BASE_(r2)
 /* 8018A324 00187124  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 8018A328 00187128  80 61 00 08 */	lwz r3, 8(r1)
 /* 8018A32C 0018712C  EC 00 08 28 */	fsubs f0, f0, f1
@@ -439,7 +441,7 @@ update__Q24zNPC17ElectricitySystemFPUciR10ptank_poolfPv:
 /* 8018A43C 0018723C  83 65 00 28 */	lwz r27, 0x28(r5)
 /* 8018A440 00187240  7F 19 02 14 */	add r24, r25, r0
 /* 8018A444 00187244  83 45 00 2C */	lwz r26, 0x2c(r5)
-/* 8018A448 00187248  C3 E2 C1 A0 */	lfs f31, $$2934_0-_SDA2_BASE_(r2)
+/* 8018A448 00187248  C3 E2 C1 A0 */	lfs f31, _esc__2_934_0-_SDA2_BASE_(r2)
 /* 8018A44C 0018724C  48 00 01 9C */	b lbl_8018A5E8
 lbl_8018A450:
 /* 8018A450 00187250  C0 19 00 0C */	lfs f0, 0xc(r25)
@@ -591,18 +593,18 @@ AddWeapon__Q24zNPC6WeaponFPQ24zNPC6commonRQ24zNPC10projectile:
 /* 8018A668 00187468  DB C1 01 00 */	stfd f30, 0x100(r1)
 /* 8018A66C 0018746C  F3 C1 01 08 */	psq_st f30, 264(r1), 0, qr0
 /* 8018A670 00187470  BF 01 00 E0 */	stmw r24, 0xe0(r1)
-/* 8018A674 00187474  3C C0 80 2E */	lis r6, $$2stringBase0_111@ha
+/* 8018A674 00187474  3C C0 80 2E */	lis r6, _esc__2_stringBase0_111@ha
 /* 8018A678 00187478  3C A0 80 3A */	lis r5, default_config__Q24zNPC17ElectricitySystem@ha
-/* 8018A67C 0018747C  38 C6 70 30 */	addi r6, r6, $$2stringBase0_111@l
+/* 8018A67C 0018747C  38 C6 70 30 */	addi r6, r6, _esc__2_stringBase0_111@l
 /* 8018A680 00187480  7C 79 1B 78 */	mr r25, r3
 /* 8018A684 00187484  38 05 DD A8 */	addi r0, r5, default_config__Q24zNPC17ElectricitySystem@l
 /* 8018A688 00187488  7C 9A 23 78 */	mr r26, r4
 /* 8018A68C 0018748C  7C 04 03 78 */	mr r4, r0
 /* 8018A690 00187490  38 66 00 0C */	addi r3, r6, 0xc
 /* 8018A694 00187494  4B FF F9 B1 */	bl add_tweaks__Q24zNPC17ElectricitySystemFPCcPQ34zNPC17ElectricitySystem6config
-/* 8018A698 00187498  3C 80 80 2E */	lis r4, $$2stringBase0_111@ha
+/* 8018A698 00187498  3C 80 80 2E */	lis r4, _esc__2_stringBase0_111@ha
 /* 8018A69C 0018749C  7F 23 CB 78 */	mr r3, r25
-/* 8018A6A0 001874A0  38 84 70 30 */	addi r4, r4, $$2stringBase0_111@l
+/* 8018A6A0 001874A0  38 84 70 30 */	addi r4, r4, _esc__2_stringBase0_111@l
 /* 8018A6A4 001874A4  38 A1 00 0C */	addi r5, r1, 0xc
 /* 8018A6A8 001874A8  38 84 00 1C */	addi r4, r4, 0x1c
 /* 8018A6AC 001874AC  38 C0 FF FF */	li r6, -1
@@ -613,9 +615,9 @@ AddWeapon__Q24zNPC6WeaponFPQ24zNPC6commonRQ24zNPC10projectile:
 /* 8018A6C0 001874C0  38 60 00 00 */	li r3, 0
 /* 8018A6C4 001874C4  48 00 02 A4 */	b lbl_8018A968
 lbl_8018A6C8:
-/* 8018A6C8 001874C8  3C 80 80 2E */	lis r4, $$2stringBase0_111@ha
+/* 8018A6C8 001874C8  3C 80 80 2E */	lis r4, _esc__2_stringBase0_111@ha
 /* 8018A6CC 001874CC  7F 23 CB 78 */	mr r3, r25
-/* 8018A6D0 001874D0  38 84 70 30 */	addi r4, r4, $$2stringBase0_111@l
+/* 8018A6D0 001874D0  38 84 70 30 */	addi r4, r4, _esc__2_stringBase0_111@l
 /* 8018A6D4 001874D4  38 A1 00 08 */	addi r5, r1, 8
 /* 8018A6D8 001874D8  38 84 00 28 */	addi r4, r4, 0x28
 /* 8018A6DC 001874DC  38 C0 00 00 */	li r6, 0
@@ -635,13 +637,13 @@ lbl_8018A710:
 /* 8018A710 00187510  7F 23 CB 78 */	mr r3, r25
 /* 8018A714 00187514  7F A4 EB 78 */	mr r4, r29
 /* 8018A718 00187518  38 A0 00 7F */	li r5, 0x7f
-/* 8018A71C 0018751C  48 00 08 45 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_13
+/* 8018A71C 0018751C  48 00 08 45 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_13
 /* 8018A720 00187520  3C 80 80 38 */	lis r4, globals@ha
-/* 8018A724 00187524  3C 60 80 2E */	lis r3, $$2stringBase0_111@ha
-/* 8018A728 00187528  C3 C2 C1 D0 */	lfs f30, $$21420_4-_SDA2_BASE_(r2)
+/* 8018A724 00187524  3C 60 80 2E */	lis r3, _esc__2_stringBase0_111@ha
+/* 8018A728 00187528  C3 C2 C1 D0 */	lfs f30, _esc__2_1420_4-_SDA2_BASE_(r2)
 /* 8018A72C 0018752C  3B C4 2A 38 */	addi r30, r4, globals@l
-/* 8018A730 00187530  C3 E2 C1 A0 */	lfs f31, $$2934_0-_SDA2_BASE_(r2)
-/* 8018A734 00187534  3B E3 70 30 */	addi r31, r3, $$2stringBase0_111@l
+/* 8018A730 00187530  C3 E2 C1 A0 */	lfs f31, _esc__2_934_0-_SDA2_BASE_(r2)
+/* 8018A734 00187534  3B E3 70 30 */	addi r31, r3, _esc__2_stringBase0_111@l
 /* 8018A738 00187538  3B 60 00 00 */	li r27, 0
 /* 8018A73C 0018753C  3B 00 00 00 */	li r24, 0
 lbl_8018A740:
@@ -713,7 +715,7 @@ lbl_8018A814:
 /* 8018A840 00187640  D3 FD 00 1C */	stfs f31, 0x1c(r29)
 /* 8018A844 00187644  4C C6 31 82 */	crclr 6
 /* 8018A848 00187648  48 12 E4 41 */	bl sprintf
-/* 8018A84C 0018764C  C0 22 C1 A4 */	lfs f1, $$2935_2-_SDA2_BASE_(r2)
+/* 8018A84C 0018764C  C0 22 C1 A4 */	lfs f1, _esc__2_935_2-_SDA2_BASE_(r2)
 /* 8018A850 00187650  7F 23 CB 78 */	mr r3, r25
 /* 8018A854 00187654  38 81 00 10 */	addi r4, r1, 0x10
 /* 8018A858 00187658  38 BD 00 20 */	addi r5, r29, 0x20
@@ -753,28 +755,28 @@ lbl_8018A8D0:
 /* 8018A8DC 001876DC  81 8C 00 44 */	lwz r12, 0x44(r12)
 /* 8018A8E0 001876E0  7D 89 03 A6 */	mtctr r12
 /* 8018A8E4 001876E4  4E 80 04 21 */	bctrl 
-/* 8018A8E8 001876E8  3C 60 80 2E */	lis r3, $$2stringBase0_111@ha
-/* 8018A8EC 001876EC  38 63 70 30 */	addi r3, r3, $$2stringBase0_111@l
+/* 8018A8E8 001876E8  3C 60 80 2E */	lis r3, _esc__2_stringBase0_111@ha
+/* 8018A8EC 001876EC  38 63 70 30 */	addi r3, r3, _esc__2_stringBase0_111@l
 /* 8018A8F0 001876F0  38 63 00 A9 */	addi r3, r3, 0xa9
 /* 8018A8F4 001876F4  4B EE 23 2D */	bl xStrHash__FPCc
 /* 8018A8F8 001876F8  38 80 00 00 */	li r4, 0
 /* 8018A8FC 001876FC  4B EE 19 A5 */	bl xSTFindAsset__FUiPUi
-/* 8018A900 00187700  3C 80 80 2E */	lis r4, $$2stringBase0_111@ha
+/* 8018A900 00187700  3C 80 80 2E */	lis r4, _esc__2_stringBase0_111@ha
 /* 8018A904 00187704  38 A0 00 00 */	li r5, 0
-/* 8018A908 00187708  38 84 70 30 */	addi r4, r4, $$2stringBase0_111@l
+/* 8018A908 00187708  38 84 70 30 */	addi r4, r4, _esc__2_stringBase0_111@l
 /* 8018A90C 0018770C  38 C0 00 00 */	li r6, 0
 /* 8018A910 00187710  38 84 00 C5 */	addi r4, r4, 0xc5
 /* 8018A914 00187714  4B E7 D1 8D */	bl xAnimFileNew__FPvPCcUiPP9xAnimFile
-/* 8018A918 00187718  3C 80 80 2E */	lis r4, $$2stringBase0_111@ha
+/* 8018A918 00187718  3C 80 80 2E */	lis r4, _esc__2_stringBase0_111@ha
 /* 8018A91C 0018771C  90 6D D4 D8 */	stw r3, animExpanding__Q24zNPC6Weapon-_SDA_BASE_(r13)
-/* 8018A920 00187720  38 64 70 30 */	addi r3, r4, $$2stringBase0_111@l
+/* 8018A920 00187720  38 64 70 30 */	addi r3, r4, _esc__2_stringBase0_111@l
 /* 8018A924 00187724  38 63 00 C6 */	addi r3, r3, 0xc6
 /* 8018A928 00187728  4B EE 22 F9 */	bl xStrHash__FPCc
 /* 8018A92C 0018772C  38 80 00 00 */	li r4, 0
 /* 8018A930 00187730  4B EE 19 71 */	bl xSTFindAsset__FUiPUi
-/* 8018A934 00187734  3C 80 80 2E */	lis r4, $$2stringBase0_111@ha
+/* 8018A934 00187734  3C 80 80 2E */	lis r4, _esc__2_stringBase0_111@ha
 /* 8018A938 00187738  38 A0 00 00 */	li r5, 0
-/* 8018A93C 0018773C  38 84 70 30 */	addi r4, r4, $$2stringBase0_111@l
+/* 8018A93C 0018773C  38 84 70 30 */	addi r4, r4, _esc__2_stringBase0_111@l
 /* 8018A940 00187740  38 C0 00 00 */	li r6, 0
 /* 8018A944 00187744  38 84 00 C5 */	addi r4, r4, 0xc5
 /* 8018A948 00187748  4B E7 D1 59 */	bl xAnimFileNew__FPvPCcUiPP9xAnimFile
@@ -845,7 +847,7 @@ init__Q24zNPC6WeaponFv:
 .global reset__Q24zNPC6WeaponFv
 reset__Q24zNPC6WeaponFv:
 /* 8018AA00 00187800  38 A0 00 00 */	li r5, 0
-/* 8018AA04 00187804  C0 02 C1 A4 */	lfs f0, $$2935_2-_SDA2_BASE_(r2)
+/* 8018AA04 00187804  C0 02 C1 A4 */	lfs f0, _esc__2_935_2-_SDA2_BASE_(r2)
 /* 8018AA08 00187808  98 A3 01 20 */	stb r5, 0x120(r3)
 /* 8018AA0C 0018780C  38 E0 00 00 */	li r7, 0
 /* 8018AA10 00187810  38 80 00 01 */	li r4, 1
@@ -879,7 +881,7 @@ lbl_8018AA64:
 /* 8018AA70 00187870  38 80 00 00 */	li r4, 0
 /* 8018AA74 00187874  38 00 00 01 */	li r0, 1
 /* 8018AA78 00187878  98 83 00 11 */	stb r4, 0x11(r3)
-/* 8018AA7C 0018787C  C0 02 C1 A0 */	lfs f0, $$2934_0-_SDA2_BASE_(r2)
+/* 8018AA7C 0018787C  C0 02 C1 A0 */	lfs f0, _esc__2_934_0-_SDA2_BASE_(r2)
 /* 8018AA80 00187880  98 03 00 10 */	stb r0, 0x10(r3)
 /* 8018AA84 00187884  98 03 00 12 */	stb r0, 0x12(r3)
 /* 8018AA88 00187888  D0 03 00 18 */	stfs f0, 0x18(r3)
@@ -1030,7 +1032,7 @@ lbl_8018AC74:
 /* 8018AC88 00187A88  C0 03 00 7C */	lfs f0, 0x7c(r3)
 /* 8018AC8C 00187A8C  80 7B 00 44 */	lwz r3, 0x44(r27)
 /* 8018AC90 00187A90  EC 21 00 24 */	fdivs f1, f1, f0
-/* 8018AC94 00187A94  C0 02 C1 A4 */	lfs f0, $$2935_2-_SDA2_BASE_(r2)
+/* 8018AC94 00187A94  C0 02 C1 A4 */	lfs f0, _esc__2_935_2-_SDA2_BASE_(r2)
 /* 8018AC98 00187A98  48 00 00 3C */	b lbl_8018ACD4
 lbl_8018AC9C:
 /* 8018AC9C 00187A9C  D0 23 00 2C */	stfs f1, 0x2c(r3)
@@ -1057,11 +1059,11 @@ lbl_8018ACE4:
 /* 8018ACE4 00187AE4  80 1E 00 14 */	lwz r0, 0x14(r30)
 /* 8018ACE8 00187AE8  7C 1F 00 00 */	cmpw r31, r0
 /* 8018ACEC 00187AEC  41 80 FE D8 */	blt lbl_8018ABC4
-/* 8018ACF0 00187AF0  80 8D D4 E0 */	lwz r4, counter$1493-_SDA_BASE_(r13)
+/* 8018ACF0 00187AF0  80 8D D4 E0 */	lwz r4, counter_esc__7_1493-_SDA_BASE_(r13)
 /* 8018ACF4 00187AF4  FC 20 F8 90 */	fmr f1, f31
 /* 8018ACF8 00187AF8  7F C3 F3 78 */	mr r3, r30
 /* 8018ACFC 00187AFC  38 04 00 01 */	addi r0, r4, 1
-/* 8018AD00 00187B00  90 0D D4 E0 */	stw r0, counter$1493-_SDA_BASE_(r13)
+/* 8018AD00 00187B00  90 0D D4 E0 */	stw r0, counter_esc__7_1493-_SDA_BASE_(r13)
 /* 8018AD04 00187B04  48 00 01 09 */	bl Animate__Q24zNPC6WeaponFf
 /* 8018AD08 00187B08  38 00 00 01 */	li r0, 1
 /* 8018AD0C 00187B0C  98 1E 00 13 */	stb r0, 0x13(r30)
@@ -1142,7 +1144,7 @@ runnable__Q24zNPC6WeaponFf:
 .global SetAnim__Q24zNPC6WeaponFP9xAnimFile
 SetAnim__Q24zNPC6WeaponFP9xAnimFile:
 /* 8018ADFC 00187BFC  90 83 00 24 */	stw r4, 0x24(r3)
-/* 8018AE00 00187C00  C0 02 C1 A0 */	lfs f0, $$2934_0-_SDA2_BASE_(r2)
+/* 8018AE00 00187C00  C0 02 C1 A0 */	lfs f0, _esc__2_934_0-_SDA2_BASE_(r2)
 /* 8018AE04 00187C04  D0 03 01 24 */	stfs f0, 0x124(r3)
 /* 8018AE08 00187C08  4E 80 00 20 */	blr 
 
@@ -1191,7 +1193,7 @@ Animate__Q24zNPC6WeaponFf:
 /* 8018AEAC 00187CAC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8018AEB0 00187CB0  4C 41 13 82 */	cror 2, 1, 2
 /* 8018AEB4 00187CB4  40 82 00 14 */	bne lbl_8018AEC8
-/* 8018AEB8 00187CB8  C0 02 C1 A0 */	lfs f0, $$2934_0-_SDA2_BASE_(r2)
+/* 8018AEB8 00187CB8  C0 02 C1 A0 */	lfs f0, _esc__2_934_0-_SDA2_BASE_(r2)
 /* 8018AEBC 00187CBC  38 00 00 00 */	li r0, 0
 /* 8018AEC0 00187CC0  D0 1E 01 24 */	stfs f0, 0x124(r30)
 /* 8018AEC4 00187CC4  90 1E 00 24 */	stw r0, 0x24(r30)
@@ -1238,22 +1240,22 @@ __as__Q34zNPC17ElectricitySystem8ParticleFRCQ34zNPC17ElectricitySystem8Particle:
 /* 8018AF58 00187D58  D0 03 00 38 */	stfs f0, 0x38(r3)
 /* 8018AF5C 00187D5C  4E 80 00 20 */	blr 
 
-.global add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_13
-add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_13:
+.global add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_13
+add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_13:
 /* 8018AF60 00187D60  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018AF64 00187D64  7C 08 02 A6 */	mflr r0
 /* 8018AF68 00187D68  7C A6 2B 78 */	mr r6, r5
 /* 8018AF6C 00187D6C  7C 65 1B 78 */	mr r5, r3
 /* 8018AF70 00187D70  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8018AF74 00187D74  38 63 01 40 */	addi r3, r3, 0x140
-/* 8018AF78 00187D78  48 00 00 15 */	bl add_behavior$$0Q24zNPC6common$$1__16behavior_managerFP39behavior_implementation$$0Q24zNPC6common$$1PQ24zNPC6commonSc_13
+/* 8018AF78 00187D78  48 00 00 15 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___16behavior_managerFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_PQ24zNPC6commonSc_13
 /* 8018AF7C 00187D7C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8018AF80 00187D80  7C 08 03 A6 */	mtlr r0
 /* 8018AF84 00187D84  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018AF88 00187D88  4E 80 00 20 */	blr 
 
-.global add_behavior$$0Q24zNPC6common$$1__16behavior_managerFP39behavior_implementation$$0Q24zNPC6common$$1PQ24zNPC6commonSc_13
-add_behavior$$0Q24zNPC6common$$1__16behavior_managerFP39behavior_implementation$$0Q24zNPC6common$$1PQ24zNPC6commonSc_13:
+.global add_behavior_esc__0_Q24zNPC6common_esc__1___16behavior_managerFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_PQ24zNPC6commonSc_13
+add_behavior_esc__0_Q24zNPC6common_esc__1___16behavior_managerFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_PQ24zNPC6commonSc_13:
 /* 8018AF8C 00187D8C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8018AF90 00187D90  7C 08 02 A6 */	mflr r0
 /* 8018AF94 00187D94  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1284,7 +1286,7 @@ __ct__Q24zNPC6WeaponFv:
 /* 8018AFEC 00187DEC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8018AFF0 00187DF0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8018AFF4 00187DF4  7C 7F 1B 78 */	mr r31, r3
-/* 8018AFF8 00187DF8  4B F7 3E 45 */	bl __ct__39behavior_implementation$$0Q24zNPC6common$$1Fv
+/* 8018AFF8 00187DF8  4B F7 3E 45 */	bl __ct__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Fv
 /* 8018AFFC 00187DFC  3C 80 80 31 */	lis r4, __vt__Q24zNPC6Weapon@ha
 /* 8018B000 00187E00  7F E3 FB 78 */	mr r3, r31
 /* 8018B004 00187E04  38 04 18 D0 */	addi r0, r4, __vt__Q24zNPC6Weapon@l
@@ -1297,8 +1299,8 @@ __ct__Q24zNPC6WeaponFv:
 
 .global getName__Q24zNPC6WeaponFv
 getName__Q24zNPC6WeaponFv:
-/* 8018B020 00187E20  3C 60 80 2E */	lis r3, $$2stringBase0_111@ha
-/* 8018B024 00187E24  38 63 70 30 */	addi r3, r3, $$2stringBase0_111@l
+/* 8018B020 00187E20  3C 60 80 2E */	lis r3, _esc__2_stringBase0_111@ha
+/* 8018B024 00187E24  38 63 70 30 */	addi r3, r3, _esc__2_stringBase0_111@l
 /* 8018B028 00187E28  38 63 00 E4 */	addi r3, r3, 0xe4
 /* 8018B02C 00187E2C  4E 80 00 20 */	blr 
 
@@ -1306,3 +1308,6 @@ getName__Q24zNPC6WeaponFv:
 exclusive__Q24zNPC6WeaponFv:
 /* 8018B030 00187E30  88 63 00 11 */	lbz r3, 0x11(r3)
 /* 8018B034 00187E34  4E 80 00 20 */	blr 
+
+.endif
+

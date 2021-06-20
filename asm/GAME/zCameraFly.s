@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global zCameraFly_Init__FR5xBaseR9xDynAssetUl
@@ -105,3 +107,6 @@ lbl_80088360:
 /* 80088364 00085164  7C 08 03 A6 */	mtlr r0
 /* 80088368 00085168  38 21 00 10 */	addi r1, r1, 0x10
 /* 8008836C 0008516C  4E 80 00 20 */	blr 
+
+.endif
+

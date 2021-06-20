@@ -2,33 +2,35 @@
 
 .section .data
 
-.global __vt__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1
-__vt__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1:
+.global __vt__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_
+__vt__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_:
 	.incbin "baserom.dol", 0x30B450, 0x7C
-.global __vt__Q24zNPC27stream$$0Q24zNPC10water_bone$$1
-__vt__Q24zNPC27stream$$0Q24zNPC10water_bone$$1:
+.global __vt__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_
+__vt__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_:
 	.incbin "baserom.dol", 0x30B4CC, 0xA0
-.global __vt__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1
-__vt__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1:
+.global __vt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_
+__vt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_:
 	.incbin "baserom.dol", 0x30B56C, 0xB8
-.global __vt__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1
-__vt__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1:
+.global __vt__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_
+__vt__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_:
 	.incbin "baserom.dol", 0x30B624, 0xA0
-.global __vt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1
-__vt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1:
+.global __vt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_
+__vt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_:
 	.incbin "baserom.dol", 0x30B6C4, 0xBC
 
 .section .rodata
 
-.global $$21532
-$$21532:
+.global _esc__2_1532
+_esc__2_1532:
 	.incbin "baserom.dol", 0x2E0C20, 0x18C
-.global info$1550
-info$1550:
+.global info_esc__7_1550
+info_esc__7_1550:
 	.incbin "baserom.dol", 0x2E0DAC, 0x21C
-.global $$2stringBase0_87
-$$2stringBase0_87:
+.global _esc__2_stringBase0_87
+_esc__2_stringBase0_87:
 	.incbin "baserom.dol", 0x2E0FC8, 0x40
+
+.if 0
 
 .section .text
 
@@ -44,9 +46,9 @@ zNPCTypes_ShutdownTypes__Fv:
 zNPCTypes_RegisterTypes__FP8xFactory:
 /* 8013F0B8 0013BEB8  94 21 FE 60 */	stwu r1, -0x1a0(r1)
 /* 8013F0BC 0013BEBC  7C 08 02 A6 */	mflr r0
-/* 8013F0C0 0013BEC0  3C 80 80 2E */	lis r4, $$21532@ha
+/* 8013F0C0 0013BEC0  3C 80 80 2E */	lis r4, _esc__2_1532@ha
 /* 8013F0C4 0013BEC4  90 01 01 A4 */	stw r0, 0x1a4(r1)
-/* 8013F0C8 0013BEC8  38 84 3C 20 */	addi r4, r4, $$21532@l
+/* 8013F0C8 0013BEC8  38 84 3C 20 */	addi r4, r4, _esc__2_1532@l
 /* 8013F0CC 0013BECC  38 00 00 31 */	li r0, 0x31
 /* 8013F0D0 0013BED0  38 C1 00 04 */	addi r6, r1, 4
 /* 8013F0D4 0013BED4  38 A4 FF FC */	addi r5, r4, -4
@@ -105,12 +107,12 @@ lobber_setup__Fv:
 
 .global zNPCTypesGetInfo__Fv
 zNPCTypesGetInfo__Fv:
-/* 8013F180 0013BF80  3C 60 80 2E */	lis r3, info$1550@ha
-/* 8013F184 0013BF84  38 63 3D AC */	addi r3, r3, info$1550@l
+/* 8013F180 0013BF80  3C 60 80 2E */	lis r3, info_esc__7_1550@ha
+/* 8013F184 0013BF84  38 63 3D AC */	addi r3, r3, info_esc__7_1550@l
 /* 8013F188 0013BF88  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC4Om10$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC4Om10$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC4Om10_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC4Om10_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F18C 0013BF8C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F190 0013BF90  7C 08 02 A6 */	mflr r0
 /* 8013F194 0013BF94  7C 85 23 78 */	mr r5, r4
@@ -133,8 +135,8 @@ lbl_8013F1C4:
 /* 8013F1D0 0013BFD0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F1D4 0013BFD4  4E 80 00 20 */	blr 
 
-.global create_npc$$017zNPCBossOmnidroid$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$017zNPCBossOmnidroid$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_17zNPCBossOmnidroid_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_17zNPCBossOmnidroid_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F1D8 0013BFD8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F1DC 0013BFDC  7C 08 02 A6 */	mflr r0
 /* 8013F1E0 0013BFE0  7C 85 23 78 */	mr r5, r4
@@ -158,8 +160,8 @@ lbl_8013F214:
 /* 8013F220 0013C020  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F224 0013C024  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC8bot_leap$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC8bot_leap$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC8bot_leap_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC8bot_leap_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F228 0013C028  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F22C 0013C02C  7C 08 02 A6 */	mflr r0
 /* 8013F230 0013C030  7C 85 23 78 */	mr r5, r4
@@ -182,8 +184,8 @@ lbl_8013F260:
 /* 8013F26C 0013C06C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F270 0013C070  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC13bot_lob_water$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC13bot_lob_water$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC13bot_lob_water_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC13bot_lob_water_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F274 0013C074  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F278 0013C078  7C 08 02 A6 */	mflr r0
 /* 8013F27C 0013C07C  7C 85 23 78 */	mr r5, r4
@@ -206,8 +208,8 @@ lbl_8013F2AC:
 /* 8013F2B8 0013C0B8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F2BC 0013C0BC  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC7helibot$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC7helibot$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC7helibot_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC7helibot_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F2C0 0013C0C0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F2C4 0013C0C4  7C 08 02 A6 */	mflr r0
 /* 8013F2C8 0013C0C8  7C 85 23 78 */	mr r5, r4
@@ -230,8 +232,8 @@ lbl_8013F2F8:
 /* 8013F304 0013C104  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F308 0013C108  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC5viper$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC5viper$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC5viper_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC5viper_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F30C 0013C10C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F310 0013C110  7C 08 02 A6 */	mflr r0
 /* 8013F314 0013C114  7C 85 23 78 */	mr r5, r4
@@ -254,8 +256,8 @@ lbl_8013F344:
 /* 8013F350 0013C150  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F354 0013C154  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC7missile$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC7missile$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC7missile_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC7missile_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F358 0013C158  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F35C 0013C15C  7C 08 02 A6 */	mflr r0
 /* 8013F360 0013C160  7C 85 23 78 */	mr r5, r4
@@ -278,8 +280,8 @@ lbl_8013F390:
 /* 8013F39C 0013C19C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F3A0 0013C1A0  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC14dash_velocipod$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC14dash_velocipod$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC14dash_velocipod_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC14dash_velocipod_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F3A4 0013C1A4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F3A8 0013C1A8  7C 08 02 A6 */	mflr r0
 /* 8013F3AC 0013C1AC  7C 85 23 78 */	mr r5, r4
@@ -302,8 +304,8 @@ lbl_8013F3DC:
 /* 8013F3E8 0013C1E8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F3EC 0013C1EC  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC9velocipod$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC9velocipod$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC9velocipod_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC9velocipod_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F3F0 0013C1F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F3F4 0013C1F4  7C 08 02 A6 */	mflr r0
 /* 8013F3F8 0013C1F8  7C 85 23 78 */	mr r5, r4
@@ -326,8 +328,8 @@ lbl_8013F428:
 /* 8013F434 0013C234  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F438 0013C238  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC6lobber$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC6lobber$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC6lobber_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC6lobber_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F43C 0013C23C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F440 0013C240  7C 08 02 A6 */	mflr r0
 /* 8013F444 0013C244  7C 85 23 78 */	mr r5, r4
@@ -350,8 +352,8 @@ lbl_8013F474:
 /* 8013F480 0013C280  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F484 0013C284  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC4tank$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC4tank$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC4tank_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC4tank_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F488 0013C288  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F48C 0013C28C  7C 08 02 A6 */	mflr r0
 /* 8013F490 0013C290  7C 85 23 78 */	mr r5, r4
@@ -374,8 +376,8 @@ lbl_8013F4C0:
 /* 8013F4CC 0013C2CC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F4D0 0013C2D0  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC14melee_shielded$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC14melee_shielded$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC14melee_shielded_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC14melee_shielded_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F4D4 0013C2D4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F4D8 0013C2D8  7C 08 02 A6 */	mflr r0
 /* 8013F4DC 0013C2DC  7C 85 23 78 */	mr r5, r4
@@ -398,8 +400,8 @@ lbl_8013F50C:
 /* 8013F518 0013C318  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F51C 0013C31C  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC8friendly$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC8friendly$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC8friendly_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC8friendly_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F520 0013C320  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F524 0013C324  7C 08 02 A6 */	mflr r0
 /* 8013F528 0013C328  7C 85 23 78 */	mr r5, r4
@@ -422,8 +424,8 @@ lbl_8013F558:
 /* 8013F564 0013C364  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F568 0013C368  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC3car$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC3car$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC3car_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC3car_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F56C 0013C36C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F570 0013C370  7C 08 02 A6 */	mflr r0
 /* 8013F574 0013C374  7C 85 23 78 */	mr r5, r4
@@ -446,8 +448,8 @@ lbl_8013F5A4:
 /* 8013F5B0 0013C3B0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F5B4 0013C3B4  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC13security_bird$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC13security_bird$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC13security_bird_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC13security_bird_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F5B8 0013C3B8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F5BC 0013C3BC  7C 08 02 A6 */	mflr r0
 /* 8013F5C0 0013C3C0  7C 85 23 78 */	mr r5, r4
@@ -470,8 +472,8 @@ lbl_8013F5F0:
 /* 8013F5FC 0013C3FC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F600 0013C400  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC10violet_gun$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC10violet_gun$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC10violet_gun_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC10violet_gun_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F604 0013C404  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F608 0013C408  7C 08 02 A6 */	mflr r0
 /* 8013F60C 0013C40C  7C 85 23 78 */	mr r5, r4
@@ -494,8 +496,8 @@ lbl_8013F63C:
 /* 8013F648 0013C448  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F64C 0013C44C  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC7frozone$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC7frozone$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC7frozone_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC7frozone_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F650 0013C450  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F654 0013C454  7C 08 02 A6 */	mflr r0
 /* 8013F658 0013C458  7C 85 23 78 */	mr r5, r4
@@ -518,8 +520,8 @@ lbl_8013F688:
 /* 8013F694 0013C494  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F698 0013C498  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC11incrediball$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC11incrediball$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC11incrediball_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC11incrediball_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F69C 0013C49C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F6A0 0013C4A0  7C 08 02 A6 */	mflr r0
 /* 8013F6A4 0013C4A4  7C 85 23 78 */	mr r5, r4
@@ -542,8 +544,8 @@ lbl_8013F6D4:
 /* 8013F6E0 0013C4E0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F6E4 0013C4E4  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC7monopod$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC7monopod$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC7monopod_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC7monopod_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F6E8 0013C4E8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F6EC 0013C4EC  7C 08 02 A6 */	mflr r0
 /* 8013F6F0 0013C4F0  7C 85 23 78 */	mr r5, r4
@@ -566,8 +568,8 @@ lbl_8013F720:
 /* 8013F72C 0013C52C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F730 0013C530  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC7shooter$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC7shooter$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC7shooter_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC7shooter_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F734 0013C534  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F738 0013C538  7C 08 02 A6 */	mflr r0
 /* 8013F73C 0013C53C  7C 85 23 78 */	mr r5, r4
@@ -590,8 +592,8 @@ lbl_8013F76C:
 /* 8013F778 0013C578  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F77C 0013C57C  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC13flying_lobber$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC13flying_lobber$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC13flying_lobber_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC13flying_lobber_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F780 0013C580  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F784 0013C584  7C 08 02 A6 */	mflr r0
 /* 8013F788 0013C588  7C 85 23 78 */	mr r5, r4
@@ -614,8 +616,8 @@ lbl_8013F7B8:
 /* 8013F7C4 0013C5C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F7C8 0013C5C8  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC14flying_shooter$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC14flying_shooter$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC14flying_shooter_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC14flying_shooter_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F7CC 0013C5CC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F7D0 0013C5D0  7C 08 02 A6 */	mflr r0
 /* 8013F7D4 0013C5D4  7C 85 23 78 */	mr r5, r4
@@ -638,8 +640,8 @@ lbl_8013F804:
 /* 8013F810 0013C610  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F814 0013C614  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC13flying_rocket$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC13flying_rocket$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC13flying_rocket_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC13flying_rocket_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F818 0013C618  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F81C 0013C61C  7C 08 02 A6 */	mflr r0
 /* 8013F820 0013C620  7C 85 23 78 */	mr r5, r4
@@ -662,8 +664,8 @@ lbl_8013F850:
 /* 8013F85C 0013C65C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F860 0013C660  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC6oracle$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC6oracle$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC6oracle_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC6oracle_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F864 0013C664  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F868 0013C668  7C 08 02 A6 */	mflr r0
 /* 8013F86C 0013C66C  7C 85 23 78 */	mr r5, r4
@@ -686,8 +688,8 @@ lbl_8013F89C:
 /* 8013F8A8 0013C6A8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F8AC 0013C6AC  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC4mine$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC4mine$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC4mine_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC4mine_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F8B0 0013C6B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F8B4 0013C6B4  7C 08 02 A6 */	mflr r0
 /* 8013F8B8 0013C6B8  7C 85 23 78 */	mr r5, r4
@@ -710,8 +712,8 @@ lbl_8013F8E8:
 /* 8013F8F4 0013C6F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F8F8 0013C6F8  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC11spin_turret$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC11spin_turret$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC11spin_turret_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC11spin_turret_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F8FC 0013C6FC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F900 0013C700  7C 08 02 A6 */	mflr r0
 /* 8013F904 0013C704  7C 85 23 78 */	mr r5, r4
@@ -734,8 +736,8 @@ lbl_8013F934:
 /* 8013F940 0013C740  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F944 0013C744  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC6turret$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC6turret$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC6turret_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC6turret_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F948 0013C748  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F94C 0013C74C  7C 08 02 A6 */	mflr r0
 /* 8013F950 0013C750  7C 85 23 78 */	mr r5, r4
@@ -758,8 +760,8 @@ lbl_8013F980:
 /* 8013F98C 0013C78C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F990 0013C790  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC9melee_bot$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC9melee_bot$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC9melee_bot_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC9melee_bot_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F994 0013C794  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F998 0013C798  7C 08 02 A6 */	mflr r0
 /* 8013F99C 0013C79C  7C 85 23 78 */	mr r5, r4
@@ -782,8 +784,8 @@ lbl_8013F9CC:
 /* 8013F9D8 0013C7D8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F9DC 0013C7DC  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC5melee$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC5melee$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC5melee_esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC5melee_esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013F9E0 0013C7E0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F9E4 0013C7E4  7C 08 02 A6 */	mflr r0
 /* 8013F9E8 0013C7E8  7C 85 23 78 */	mr r5, r4
@@ -806,8 +808,8 @@ lbl_8013FA18:
 /* 8013FA24 0013C824  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013FA28 0013C828  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1__esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1__esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013FA2C 0013C82C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013FA30 0013C830  7C 08 02 A6 */	mflr r0
 /* 8013FA34 0013C834  7C 85 23 78 */	mr r5, r4
@@ -817,7 +819,7 @@ create_npc$$0Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1$$1__4zNPCFiP10RyzMemGrow
 /* 8013FA44 0013C844  4B F1 59 81 */	bl __nw__10RyzMemDataFUliP10RyzMemGrow
 /* 8013FA48 0013C848  7C 64 1B 79 */	or. r4, r3, r3
 /* 8013FA4C 0013C84C  41 82 00 0C */	beq lbl_8013FA58
-/* 8013FA50 0013C850  48 00 00 29 */	bl __ct__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1Fv
+/* 8013FA50 0013C850  48 00 00 29 */	bl __ct__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_Fv
 /* 8013FA54 0013C854  7C 64 1B 78 */	mr r4, r3
 lbl_8013FA58:
 /* 8013FA58 0013C858  28 04 00 00 */	cmplwi r4, 0
@@ -830,17 +832,17 @@ lbl_8013FA64:
 /* 8013FA70 0013C870  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013FA74 0013C874  4E 80 00 20 */	blr 
 
-.global __ct__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1Fv
-__ct__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1Fv:
+.global __ct__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_Fv
+__ct__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_Fv:
 /* 8013FA78 0013C878  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013FA7C 0013C87C  7C 08 02 A6 */	mflr r0
 /* 8013FA80 0013C880  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8013FA84 0013C884  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8013FA88 0013C888  7C 7F 1B 78 */	mr r31, r3
 /* 8013FA8C 0013C88C  4B FE 3A E9 */	bl __ct__Q24zNPC15human_throwableFv
-/* 8013FA90 0013C890  3C 80 80 31 */	lis r4, __vt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1@ha
+/* 8013FA90 0013C890  3C 80 80 31 */	lis r4, __vt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_@ha
 /* 8013FA94 0013C894  38 7F 01 F0 */	addi r3, r31, 0x1f0
-/* 8013FA98 0013C898  38 04 E6 C4 */	addi r0, r4, __vt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1@l
+/* 8013FA98 0013C898  38 04 E6 C4 */	addi r0, r4, __vt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_@l
 /* 8013FA9C 0013C89C  90 1F 01 0C */	stw r0, 0x10c(r31)
 /* 8013FAA0 0013C8A0  4B FE 3A 41 */	bl __ct__Q24zNPC17patrol_movepointsFv
 /* 8013FAA4 0013C8A4  38 7F 02 34 */	addi r3, r31, 0x234
@@ -868,63 +870,63 @@ __ct__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1Fv:
 /* 8013FAFC 0013C8FC  38 7F 05 4C */	addi r3, r31, 0x54c
 /* 8013FB00 0013C900  4B FE 36 E1 */	bl __ct__Q24zNPC4homeFv
 /* 8013FB04 0013C904  38 7F 05 8C */	addi r3, r31, 0x58c
-/* 8013FB08 0013C908  48 00 01 81 */	bl __ct__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv
+/* 8013FB08 0013C908  48 00 01 81 */	bl __ct__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv
 /* 8013FB0C 0013C90C  7F E3 FB 78 */	mr r3, r31
 /* 8013FB10 0013C910  38 9F 02 98 */	addi r4, r31, 0x298
 /* 8013FB14 0013C914  38 A0 FF FF */	li r5, -1
-/* 8013FB18 0013C918  48 00 00 ED */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FB18 0013C918  48 00 00 ED */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FB1C 0013C91C  7F E3 FB 78 */	mr r3, r31
 /* 8013FB20 0013C920  38 9F 04 DC */	addi r4, r31, 0x4dc
 /* 8013FB24 0013C924  38 A0 FF FF */	li r5, -1
-/* 8013FB28 0013C928  48 00 00 DD */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FB28 0013C928  48 00 00 DD */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FB2C 0013C92C  7F E3 FB 78 */	mr r3, r31
 /* 8013FB30 0013C930  38 9F 04 A8 */	addi r4, r31, 0x4a8
 /* 8013FB34 0013C934  38 A0 FF FF */	li r5, -1
-/* 8013FB38 0013C938  48 00 00 CD */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FB38 0013C938  48 00 00 CD */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FB3C 0013C93C  7F E3 FB 78 */	mr r3, r31
 /* 8013FB40 0013C940  38 9F 05 10 */	addi r4, r31, 0x510
 /* 8013FB44 0013C944  38 A0 FF FF */	li r5, -1
-/* 8013FB48 0013C948  48 00 00 BD */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FB48 0013C948  48 00 00 BD */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FB4C 0013C94C  7F E3 FB 78 */	mr r3, r31
 /* 8013FB50 0013C950  38 9F 05 8C */	addi r4, r31, 0x58c
 /* 8013FB54 0013C954  38 A0 FF FF */	li r5, -1
-/* 8013FB58 0013C958  48 00 00 AD */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FB58 0013C958  48 00 00 AD */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FB5C 0013C95C  7F E3 FB 78 */	mr r3, r31
 /* 8013FB60 0013C960  38 9F 05 4C */	addi r4, r31, 0x54c
 /* 8013FB64 0013C964  38 A0 FF FF */	li r5, -1
-/* 8013FB68 0013C968  48 00 00 9D */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FB68 0013C968  48 00 00 9D */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FB6C 0013C96C  7F E3 FB 78 */	mr r3, r31
 /* 8013FB70 0013C970  38 9F 01 F0 */	addi r4, r31, 0x1f0
 /* 8013FB74 0013C974  38 A0 FF FF */	li r5, -1
-/* 8013FB78 0013C978  48 00 00 8D */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FB78 0013C978  48 00 00 8D */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FB7C 0013C97C  7F E3 FB 78 */	mr r3, r31
 /* 8013FB80 0013C980  38 9F 04 70 */	addi r4, r31, 0x470
 /* 8013FB84 0013C984  38 A0 FF FF */	li r5, -1
-/* 8013FB88 0013C988  48 00 00 7D */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FB88 0013C988  48 00 00 7D */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FB8C 0013C98C  7F E3 FB 78 */	mr r3, r31
 /* 8013FB90 0013C990  38 9F 02 5C */	addi r4, r31, 0x25c
 /* 8013FB94 0013C994  38 A0 FF FF */	li r5, -1
-/* 8013FB98 0013C998  48 00 00 6D */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FB98 0013C998  48 00 00 6D */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FB9C 0013C99C  7F E3 FB 78 */	mr r3, r31
 /* 8013FBA0 0013C9A0  38 9F 02 34 */	addi r4, r31, 0x234
 /* 8013FBA4 0013C9A4  38 A0 FF FF */	li r5, -1
-/* 8013FBA8 0013C9A8  48 00 00 5D */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FBA8 0013C9A8  48 00 00 5D */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FBAC 0013C9AC  7F E3 FB 78 */	mr r3, r31
 /* 8013FBB0 0013C9B0  38 9F 02 F0 */	addi r4, r31, 0x2f0
 /* 8013FBB4 0013C9B4  38 A0 FF FF */	li r5, -1
-/* 8013FBB8 0013C9B8  48 00 00 4D */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FBB8 0013C9B8  48 00 00 4D */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FBBC 0013C9BC  7F E3 FB 78 */	mr r3, r31
 /* 8013FBC0 0013C9C0  38 9F 04 30 */	addi r4, r31, 0x430
 /* 8013FBC4 0013C9C4  38 A0 FF FF */	li r5, -1
-/* 8013FBC8 0013C9C8  48 00 00 3D */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FBC8 0013C9C8  48 00 00 3D */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FBCC 0013C9CC  7F E3 FB 78 */	mr r3, r31
 /* 8013FBD0 0013C9D0  38 9F 02 CC */	addi r4, r31, 0x2cc
 /* 8013FBD4 0013C9D4  38 A0 FF FF */	li r5, -1
-/* 8013FBD8 0013C9D8  48 00 00 2D */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FBD8 0013C9D8  48 00 00 2D */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FBDC 0013C9DC  7F E3 FB 78 */	mr r3, r31
 /* 8013FBE0 0013C9E0  38 9F 03 20 */	addi r4, r31, 0x320
 /* 8013FBE4 0013C9E4  38 A0 FF FF */	li r5, -1
-/* 8013FBE8 0013C9E8  48 00 00 1D */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FBE8 0013C9E8  48 00 00 1D */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FBEC 0013C9EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8013FBF0 0013C9F0  7F E3 FB 78 */	mr r3, r31
 /* 8013FBF4 0013C9F4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -932,22 +934,22 @@ __ct__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1Fv:
 /* 8013FBFC 0013C9FC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013FC00 0013CA00  4E 80 00 20 */	blr 
 
-.global add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
-add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11:
+.global add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
+add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11:
 /* 8013FC04 0013CA04  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013FC08 0013CA08  7C 08 02 A6 */	mflr r0
 /* 8013FC0C 0013CA0C  7C A6 2B 78 */	mr r6, r5
 /* 8013FC10 0013CA10  7C 65 1B 78 */	mr r5, r3
 /* 8013FC14 0013CA14  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8013FC18 0013CA18  38 63 01 40 */	addi r3, r3, 0x140
-/* 8013FC1C 0013CA1C  48 00 00 15 */	bl add_behavior$$0Q24zNPC6common$$1__16behavior_managerFP39behavior_implementation$$0Q24zNPC6common$$1PQ24zNPC6commonSc_11
+/* 8013FC1C 0013CA1C  48 00 00 15 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___16behavior_managerFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_PQ24zNPC6commonSc_11
 /* 8013FC20 0013CA20  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8013FC24 0013CA24  7C 08 03 A6 */	mtlr r0
 /* 8013FC28 0013CA28  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013FC2C 0013CA2C  4E 80 00 20 */	blr 
 
-.global add_behavior$$0Q24zNPC6common$$1__16behavior_managerFP39behavior_implementation$$0Q24zNPC6common$$1PQ24zNPC6commonSc_11
-add_behavior$$0Q24zNPC6common$$1__16behavior_managerFP39behavior_implementation$$0Q24zNPC6common$$1PQ24zNPC6commonSc_11:
+.global add_behavior_esc__0_Q24zNPC6common_esc__1___16behavior_managerFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_PQ24zNPC6commonSc_11
+add_behavior_esc__0_Q24zNPC6common_esc__1___16behavior_managerFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_PQ24zNPC6commonSc_11:
 /* 8013FC30 0013CA30  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8013FC34 0013CA34  7C 08 02 A6 */	mflr r0
 /* 8013FC38 0013CA38  90 01 00 24 */	stw r0, 0x24(r1)
@@ -971,19 +973,19 @@ add_behavior$$0Q24zNPC6common$$1__16behavior_managerFP39behavior_implementation$
 /* 8013FC80 0013CA80  38 21 00 20 */	addi r1, r1, 0x20
 /* 8013FC84 0013CA84  4E 80 00 20 */	blr 
 
-.global __ct__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv
-__ct__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv:
+.global __ct__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv
+__ct__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv:
 /* 8013FC88 0013CA88  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013FC8C 0013CA8C  7C 08 02 A6 */	mflr r0
 /* 8013FC90 0013CA90  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8013FC94 0013CA94  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8013FC98 0013CA98  7C 7F 1B 78 */	mr r31, r3
 /* 8013FC9C 0013CA9C  48 00 00 31 */	bl __ct__Q24zNPC10run_streamFv
-/* 8013FCA0 0013CAA0  3C 80 80 31 */	lis r4, __vt__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1@ha
+/* 8013FCA0 0013CAA0  3C 80 80 31 */	lis r4, __vt__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_@ha
 /* 8013FCA4 0013CAA4  38 7F 00 5C */	addi r3, r31, 0x5c
-/* 8013FCA8 0013CAA8  38 04 E6 24 */	addi r0, r4, __vt__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1@l
+/* 8013FCA8 0013CAA8  38 04 E6 24 */	addi r0, r4, __vt__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_@l
 /* 8013FCAC 0013CAAC  90 1F 00 04 */	stw r0, 4(r31)
-/* 8013FCB0 0013CAB0  4B FF B7 09 */	bl __ct__Q24zNPC35bone_container$$0Q24zNPC10flame_bone$$1Fv
+/* 8013FCB0 0013CAB0  4B FF B7 09 */	bl __ct__Q24zNPC35bone_container_esc__0_Q24zNPC10flame_bone_esc__1_Fv
 /* 8013FCB4 0013CAB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8013FCB8 0013CAB8  7F E3 FB 78 */	mr r3, r31
 /* 8013FCBC 0013CABC  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1011,8 +1013,8 @@ __ct__Q24zNPC10run_streamFv:
 /* 8013FD08 0013CB08  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013FD0C 0013CB0C  4E 80 00 20 */	blr 
 
-.global create_npc$$0Q24zNPC29streamer$$0Q24zNPC10water_bone$$1$$1__4zNPCFiP10RyzMemGrowPv
-create_npc$$0Q24zNPC29streamer$$0Q24zNPC10water_bone$$1$$1__4zNPCFiP10RyzMemGrowPv:
+.global create_npc_esc__0_Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1__esc__1___4zNPCFiP10RyzMemGrowPv
+create_npc_esc__0_Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1__esc__1___4zNPCFiP10RyzMemGrowPv:
 /* 8013FD10 0013CB10  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013FD14 0013CB14  7C 08 02 A6 */	mflr r0
 /* 8013FD18 0013CB18  7C 85 23 78 */	mr r5, r4
@@ -1022,7 +1024,7 @@ create_npc$$0Q24zNPC29streamer$$0Q24zNPC10water_bone$$1$$1__4zNPCFiP10RyzMemGrow
 /* 8013FD28 0013CB28  4B F1 56 9D */	bl __nw__10RyzMemDataFUliP10RyzMemGrow
 /* 8013FD2C 0013CB2C  7C 64 1B 79 */	or. r4, r3, r3
 /* 8013FD30 0013CB30  41 82 00 0C */	beq lbl_8013FD3C
-/* 8013FD34 0013CB34  48 00 00 29 */	bl __ct__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1Fv
+/* 8013FD34 0013CB34  48 00 00 29 */	bl __ct__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_Fv
 /* 8013FD38 0013CB38  7C 64 1B 78 */	mr r4, r3
 lbl_8013FD3C:
 /* 8013FD3C 0013CB3C  28 04 00 00 */	cmplwi r4, 0
@@ -1035,17 +1037,17 @@ lbl_8013FD48:
 /* 8013FD54 0013CB54  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013FD58 0013CB58  4E 80 00 20 */	blr 
 
-.global __ct__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1Fv
-__ct__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1Fv:
+.global __ct__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_Fv
+__ct__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_Fv:
 /* 8013FD5C 0013CB5C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013FD60 0013CB60  7C 08 02 A6 */	mflr r0
 /* 8013FD64 0013CB64  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8013FD68 0013CB68  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8013FD6C 0013CB6C  7C 7F 1B 78 */	mr r31, r3
 /* 8013FD70 0013CB70  4B FE 38 05 */	bl __ct__Q24zNPC15human_throwableFv
-/* 8013FD74 0013CB74  3C 80 80 31 */	lis r4, __vt__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1@ha
+/* 8013FD74 0013CB74  3C 80 80 31 */	lis r4, __vt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_@ha
 /* 8013FD78 0013CB78  38 7F 01 F0 */	addi r3, r31, 0x1f0
-/* 8013FD7C 0013CB7C  38 04 E5 6C */	addi r0, r4, __vt__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1@l
+/* 8013FD7C 0013CB7C  38 04 E5 6C */	addi r0, r4, __vt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_@l
 /* 8013FD80 0013CB80  90 1F 01 0C */	stw r0, 0x10c(r31)
 /* 8013FD84 0013CB84  4B FE 37 5D */	bl __ct__Q24zNPC17patrol_movepointsFv
 /* 8013FD88 0013CB88  38 7F 02 34 */	addi r3, r31, 0x234
@@ -1073,63 +1075,63 @@ __ct__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1Fv:
 /* 8013FDE0 0013CBE0  38 7F 05 4C */	addi r3, r31, 0x54c
 /* 8013FDE4 0013CBE4  4B FE 33 FD */	bl __ct__Q24zNPC4homeFv
 /* 8013FDE8 0013CBE8  38 7F 05 8C */	addi r3, r31, 0x58c
-/* 8013FDEC 0013CBEC  48 00 00 FD */	bl __ct__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv
+/* 8013FDEC 0013CBEC  48 00 00 FD */	bl __ct__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv
 /* 8013FDF0 0013CBF0  7F E3 FB 78 */	mr r3, r31
 /* 8013FDF4 0013CBF4  38 9F 02 98 */	addi r4, r31, 0x298
 /* 8013FDF8 0013CBF8  38 A0 FF FF */	li r5, -1
-/* 8013FDFC 0013CBFC  4B FF FE 09 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FDFC 0013CBFC  4B FF FE 09 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FE00 0013CC00  7F E3 FB 78 */	mr r3, r31
 /* 8013FE04 0013CC04  38 9F 04 DC */	addi r4, r31, 0x4dc
 /* 8013FE08 0013CC08  38 A0 FF FF */	li r5, -1
-/* 8013FE0C 0013CC0C  4B FF FD F9 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FE0C 0013CC0C  4B FF FD F9 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FE10 0013CC10  7F E3 FB 78 */	mr r3, r31
 /* 8013FE14 0013CC14  38 9F 04 A8 */	addi r4, r31, 0x4a8
 /* 8013FE18 0013CC18  38 A0 FF FF */	li r5, -1
-/* 8013FE1C 0013CC1C  4B FF FD E9 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FE1C 0013CC1C  4B FF FD E9 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FE20 0013CC20  7F E3 FB 78 */	mr r3, r31
 /* 8013FE24 0013CC24  38 9F 05 10 */	addi r4, r31, 0x510
 /* 8013FE28 0013CC28  38 A0 FF FF */	li r5, -1
-/* 8013FE2C 0013CC2C  4B FF FD D9 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FE2C 0013CC2C  4B FF FD D9 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FE30 0013CC30  7F E3 FB 78 */	mr r3, r31
 /* 8013FE34 0013CC34  38 9F 05 8C */	addi r4, r31, 0x58c
 /* 8013FE38 0013CC38  38 A0 FF FF */	li r5, -1
-/* 8013FE3C 0013CC3C  4B FF FD C9 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FE3C 0013CC3C  4B FF FD C9 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FE40 0013CC40  7F E3 FB 78 */	mr r3, r31
 /* 8013FE44 0013CC44  38 9F 05 4C */	addi r4, r31, 0x54c
 /* 8013FE48 0013CC48  38 A0 FF FF */	li r5, -1
-/* 8013FE4C 0013CC4C  4B FF FD B9 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FE4C 0013CC4C  4B FF FD B9 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FE50 0013CC50  7F E3 FB 78 */	mr r3, r31
 /* 8013FE54 0013CC54  38 9F 01 F0 */	addi r4, r31, 0x1f0
 /* 8013FE58 0013CC58  38 A0 FF FF */	li r5, -1
-/* 8013FE5C 0013CC5C  4B FF FD A9 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FE5C 0013CC5C  4B FF FD A9 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FE60 0013CC60  7F E3 FB 78 */	mr r3, r31
 /* 8013FE64 0013CC64  38 9F 04 70 */	addi r4, r31, 0x470
 /* 8013FE68 0013CC68  38 A0 FF FF */	li r5, -1
-/* 8013FE6C 0013CC6C  4B FF FD 99 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FE6C 0013CC6C  4B FF FD 99 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FE70 0013CC70  7F E3 FB 78 */	mr r3, r31
 /* 8013FE74 0013CC74  38 9F 02 5C */	addi r4, r31, 0x25c
 /* 8013FE78 0013CC78  38 A0 FF FF */	li r5, -1
-/* 8013FE7C 0013CC7C  4B FF FD 89 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FE7C 0013CC7C  4B FF FD 89 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FE80 0013CC80  7F E3 FB 78 */	mr r3, r31
 /* 8013FE84 0013CC84  38 9F 02 34 */	addi r4, r31, 0x234
 /* 8013FE88 0013CC88  38 A0 FF FF */	li r5, -1
-/* 8013FE8C 0013CC8C  4B FF FD 79 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FE8C 0013CC8C  4B FF FD 79 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FE90 0013CC90  7F E3 FB 78 */	mr r3, r31
 /* 8013FE94 0013CC94  38 9F 02 F0 */	addi r4, r31, 0x2f0
 /* 8013FE98 0013CC98  38 A0 FF FF */	li r5, -1
-/* 8013FE9C 0013CC9C  4B FF FD 69 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FE9C 0013CC9C  4B FF FD 69 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FEA0 0013CCA0  7F E3 FB 78 */	mr r3, r31
 /* 8013FEA4 0013CCA4  38 9F 04 30 */	addi r4, r31, 0x430
 /* 8013FEA8 0013CCA8  38 A0 FF FF */	li r5, -1
-/* 8013FEAC 0013CCAC  4B FF FD 59 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FEAC 0013CCAC  4B FF FD 59 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FEB0 0013CCB0  7F E3 FB 78 */	mr r3, r31
 /* 8013FEB4 0013CCB4  38 9F 02 CC */	addi r4, r31, 0x2cc
 /* 8013FEB8 0013CCB8  38 A0 FF FF */	li r5, -1
-/* 8013FEBC 0013CCBC  4B FF FD 49 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FEBC 0013CCBC  4B FF FD 49 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FEC0 0013CCC0  7F E3 FB 78 */	mr r3, r31
 /* 8013FEC4 0013CCC4  38 9F 03 20 */	addi r4, r31, 0x320
 /* 8013FEC8 0013CCC8  38 A0 FF FF */	li r5, -1
-/* 8013FECC 0013CCCC  4B FF FD 39 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8013FECC 0013CCCC  4B FF FD 39 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 8013FED0 0013CCD0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8013FED4 0013CCD4  7F E3 FB 78 */	mr r3, r31
 /* 8013FED8 0013CCD8  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1137,19 +1139,19 @@ __ct__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1Fv:
 /* 8013FEE0 0013CCE0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013FEE4 0013CCE4  4E 80 00 20 */	blr 
 
-.global __ct__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv
-__ct__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv:
+.global __ct__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv
+__ct__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv:
 /* 8013FEE8 0013CCE8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013FEEC 0013CCEC  7C 08 02 A6 */	mflr r0
 /* 8013FEF0 0013CCF0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8013FEF4 0013CCF4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8013FEF8 0013CCF8  7C 7F 1B 78 */	mr r31, r3
 /* 8013FEFC 0013CCFC  4B FF FD D1 */	bl __ct__Q24zNPC10run_streamFv
-/* 8013FF00 0013CD00  3C 80 80 31 */	lis r4, __vt__Q24zNPC27stream$$0Q24zNPC10water_bone$$1@ha
+/* 8013FF00 0013CD00  3C 80 80 31 */	lis r4, __vt__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_@ha
 /* 8013FF04 0013CD04  38 7F 00 5C */	addi r3, r31, 0x5c
-/* 8013FF08 0013CD08  38 04 E4 CC */	addi r0, r4, __vt__Q24zNPC27stream$$0Q24zNPC10water_bone$$1@l
+/* 8013FF08 0013CD08  38 04 E4 CC */	addi r0, r4, __vt__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_@l
 /* 8013FF0C 0013CD0C  90 1F 00 04 */	stw r0, 4(r31)
-/* 8013FF10 0013CD10  48 00 00 1D */	bl __ct__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fv
+/* 8013FF10 0013CD10  48 00 00 1D */	bl __ct__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fv
 /* 8013FF14 0013CD14  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8013FF18 0013CD18  7F E3 FB 78 */	mr r3, r31
 /* 8013FF1C 0013CD1C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1157,17 +1159,17 @@ __ct__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv:
 /* 8013FF24 0013CD24  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013FF28 0013CD28  4E 80 00 20 */	blr 
 
-.global __ct__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fv
-__ct__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fv:
+.global __ct__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fv
+__ct__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fv:
 /* 8013FF2C 0013CD2C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013FF30 0013CD30  7C 08 02 A6 */	mflr r0
 /* 8013FF34 0013CD34  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8013FF38 0013CD38  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8013FF3C 0013CD3C  7C 7F 1B 78 */	mr r31, r3
-/* 8013FF40 0013CD40  4B FB EE FD */	bl __ct__39behavior_implementation$$0Q24zNPC6common$$1Fv
-/* 8013FF44 0013CD44  3C 80 80 31 */	lis r4, __vt__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1@ha
+/* 8013FF40 0013CD40  4B FB EE FD */	bl __ct__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Fv
+/* 8013FF44 0013CD44  3C 80 80 31 */	lis r4, __vt__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_@ha
 /* 8013FF48 0013CD48  7F E3 FB 78 */	mr r3, r31
-/* 8013FF4C 0013CD4C  38 04 E4 50 */	addi r0, r4, __vt__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1@l
+/* 8013FF4C 0013CD4C  38 04 E4 50 */	addi r0, r4, __vt__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_@l
 /* 8013FF50 0013CD50  90 1F 00 04 */	stw r0, 4(r31)
 /* 8013FF54 0013CD54  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8013FF58 0013CD58  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1177,8 +1179,8 @@ __ct__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fv:
 
 .global getName__Q24zNPC10run_streamFv
 getName__Q24zNPC10run_streamFv:
-/* 8013FF68 0013CD68  3C 60 80 2E */	lis r3, $$2stringBase0_87@ha
-/* 8013FF6C 0013CD6C  38 63 3F C8 */	addi r3, r3, $$2stringBase0_87@l
+/* 8013FF68 0013CD68  3C 60 80 2E */	lis r3, _esc__2_stringBase0_87@ha
+/* 8013FF6C 0013CD6C  38 63 3F C8 */	addi r3, r3, _esc__2_stringBase0_87@l
 /* 8013FF70 0013CD70  38 63 00 09 */	addi r3, r3, 9
 /* 8013FF74 0013CD74  4E 80 00 20 */	blr 
 
@@ -1197,11 +1199,11 @@ reset__Q24zNPC10run_streamFv:
 
 .global delay__Q24zNPC10run_streamFv
 delay__Q24zNPC10run_streamFv:
-/* 8013FFA0 0013CDA0  C0 22 B5 48 */	lfs f1, $$21964_0-_SDA2_BASE_(r2)
+/* 8013FFA0 0013CDA0  C0 22 B5 48 */	lfs f1, _esc__2_1964_0-_SDA2_BASE_(r2)
 /* 8013FFA4 0013CDA4  4E 80 00 20 */	blr 
 
-.global __dt__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1Fv
-__dt__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1Fv:
+.global __dt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_Fv
+__dt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_Fv:
 /* 8013FFA8 0013CDA8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013FFAC 0013CDAC  7C 08 02 A6 */	mflr r0
 /* 8013FFB0 0013CDB0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1209,9 +1211,9 @@ __dt__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1Fv:
 /* 8013FFB8 0013CDB8  7C 7E 1B 79 */	or. r30, r3, r3
 /* 8013FFBC 0013CDBC  7C 9F 23 78 */	mr r31, r4
 /* 8013FFC0 0013CDC0  41 82 00 28 */	beq lbl_8013FFE8
-/* 8013FFC4 0013CDC4  3C A0 80 31 */	lis r5, __vt__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1@ha
+/* 8013FFC4 0013CDC4  3C A0 80 31 */	lis r5, __vt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_@ha
 /* 8013FFC8 0013CDC8  38 80 00 00 */	li r4, 0
-/* 8013FFCC 0013CDCC  38 05 E5 6C */	addi r0, r5, __vt__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1@l
+/* 8013FFCC 0013CDCC  38 05 E5 6C */	addi r0, r5, __vt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_@l
 /* 8013FFD0 0013CDD0  90 1E 01 0C */	stw r0, 0x10c(r30)
 /* 8013FFD4 0013CDD4  4B FE 35 49 */	bl __dt__Q24zNPC15human_throwableFv
 /* 8013FFD8 0013CDD8  7F E0 07 35 */	extsh. r0, r31
@@ -1226,8 +1228,8 @@ lbl_8013FFE8:
 /* 8013FFF8 0013CDF8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013FFFC 0013CDFC  4E 80 00 20 */	blr 
 
-.global __dt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1Fv
-__dt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1Fv:
+.global __dt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_Fv
+__dt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_Fv:
 /* 80140000 0013CE00  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80140004 0013CE04  7C 08 02 A6 */	mflr r0
 /* 80140008 0013CE08  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1235,9 +1237,9 @@ __dt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1Fv:
 /* 80140010 0013CE10  7C 7E 1B 79 */	or. r30, r3, r3
 /* 80140014 0013CE14  7C 9F 23 78 */	mr r31, r4
 /* 80140018 0013CE18  41 82 00 28 */	beq lbl_80140040
-/* 8014001C 0013CE1C  3C A0 80 31 */	lis r5, __vt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1@ha
+/* 8014001C 0013CE1C  3C A0 80 31 */	lis r5, __vt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_@ha
 /* 80140020 0013CE20  38 80 00 00 */	li r4, 0
-/* 80140024 0013CE24  38 05 E6 C4 */	addi r0, r5, __vt__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1@l
+/* 80140024 0013CE24  38 05 E6 C4 */	addi r0, r5, __vt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_@l
 /* 80140028 0013CE28  90 1E 01 0C */	stw r0, 0x10c(r30)
 /* 8014002C 0013CE2C  4B FE 34 F1 */	bl __dt__Q24zNPC15human_throwableFv
 /* 80140030 0013CE30  7F E0 07 35 */	extsh. r0, r31
@@ -1252,8 +1254,8 @@ lbl_80140040:
 /* 80140050 0013CE50  38 21 00 10 */	addi r1, r1, 0x10
 /* 80140054 0013CE54  4E 80 00 20 */	blr 
 
-.global setup__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1Fv
-setup__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1Fv:
+.global setup__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_Fv
+setup__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_Fv:
 /* 80140058 0013CE58  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8014005C 0013CE5C  7C 08 02 A6 */	mflr r0
 /* 80140060 0013CE60  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1268,8 +1270,8 @@ setup__Q24zNPC29streamer$$0Q24zNPC10water_bone$$1Fv:
 /* 80140084 0013CE84  38 21 00 10 */	addi r1, r1, 0x10
 /* 80140088 0013CE88  4E 80 00 20 */	blr 
 
-.global setup__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1Fv
-setup__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1Fv:
+.global setup__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_Fv
+setup__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_Fv:
 /* 8014008C 0013CE8C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80140090 0013CE90  7C 08 02 A6 */	mflr r0
 /* 80140094 0013CE94  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1284,13 +1286,13 @@ setup__Q24zNPC29streamer$$0Q24zNPC10flame_bone$$1Fv:
 /* 801400B8 0013CEB8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801400BC 0013CEBC  4E 80 00 20 */	blr 
 
-.global runnable__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Ff
-runnable__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Ff:
+.global runnable__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Ff
+runnable__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Ff:
 /* 801400C0 0013CEC0  38 60 00 00 */	li r3, 0
 /* 801400C4 0013CEC4  4E 80 00 20 */	blr 
 
-.global init__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fv
-init__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fv:
+.global init__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fv
+init__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fv:
 /* 801400C8 0013CEC8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801400CC 0013CECC  7C 08 02 A6 */	mflr r0
 /* 801400D0 0013CED0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1336,7 +1338,7 @@ lbl_80140160:
 /* 80140164 0013CF64  38 A0 FF FF */	li r5, -1
 /* 80140168 0013CF68  80 7D 00 0C */	lwz r3, 0xc(r29)
 /* 8014016C 0013CF6C  7C 80 FA 14 */	add r4, r0, r31
-/* 80140170 0013CF70  4B FF FA 95 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 80140170 0013CF70  4B FF FA 95 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 80140174 0013CF74  80 1D 00 10 */	lwz r0, 0x10(r29)
 /* 80140178 0013CF78  38 9E 00 01 */	addi r4, r30, 1
 /* 8014017C 0013CF7C  7C 60 FA 14 */	add r3, r0, r31
@@ -1351,7 +1353,7 @@ lbl_80140160:
 /* 801401A0 0013CFA0  3B FF 00 50 */	addi r31, r31, 0x50
 lbl_801401A4:
 /* 801401A4 0013CFA4  7F A3 EB 78 */	mr r3, r29
-/* 801401A8 0013CFA8  48 00 00 21 */	bl size__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fv
+/* 801401A8 0013CFA8  48 00 00 21 */	bl size__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fv
 /* 801401AC 0013CFAC  7C 1E 18 00 */	cmpw r30, r3
 /* 801401B0 0013CFB0  41 80 FF B0 */	blt lbl_80140160
 lbl_801401B4:
@@ -1361,8 +1363,8 @@ lbl_801401B4:
 /* 801401C0 0013CFC0  38 21 00 20 */	addi r1, r1, 0x20
 /* 801401C4 0013CFC4  4E 80 00 20 */	blr 
 
-.global size__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fv
-size__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fv:
+.global size__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fv
+size__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fv:
 /* 801401C8 0013CFC8  80 63 00 14 */	lwz r3, 0x14(r3)
 /* 801401CC 0013CFCC  4E 80 00 20 */	blr 
 
@@ -1390,8 +1392,8 @@ __ct__Q24zNPC10water_boneFv:
 is_valid_bone__Q24zNPC10water_boneFPQ24zNPC6commoni:
 /* 80140214 0013D014  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80140218 0013D018  7C 08 02 A6 */	mflr r0
-/* 8014021C 0013D01C  3C A0 80 2E */	lis r5, $$2stringBase0_87@ha
-/* 80140220 0013D020  38 A5 3F C8 */	addi r5, r5, $$2stringBase0_87@l
+/* 8014021C 0013D01C  3C A0 80 2E */	lis r5, _esc__2_stringBase0_87@ha
+/* 80140220 0013D020  38 A5 3F C8 */	addi r5, r5, _esc__2_stringBase0_87@l
 /* 80140224 0013D024  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80140228 0013D028  38 A5 00 2C */	addi r5, r5, 0x2c
 /* 8014022C 0013D02C  4B FF 64 99 */	bl is_valid_bone__Q24zNPC13bone_behaviorFPQ24zNPC6commoniPCc
@@ -1400,8 +1402,8 @@ is_valid_bone__Q24zNPC10water_boneFPQ24zNPC6commoni:
 /* 80140238 0013D038  38 21 00 10 */	addi r1, r1, 0x10
 /* 8014023C 0013D03C  4E 80 00 20 */	blr 
 
-.global init__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv
-init__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv:
+.global init__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv
+init__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv:
 /* 80140240 0013D040  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80140244 0013D044  7C 08 02 A6 */	mflr r0
 /* 80140248 0013D048  38 A0 FF FF */	li r5, -1
@@ -1410,7 +1412,7 @@ init__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv:
 /* 80140254 0013D054  7C 7F 1B 78 */	mr r31, r3
 /* 80140258 0013D058  38 9F 00 5C */	addi r4, r31, 0x5c
 /* 8014025C 0013D05C  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 80140260 0013D060  4B FF F9 A5 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 80140260 0013D060  4B FF F9 A5 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 80140264 0013D064  38 7F 00 5C */	addi r3, r31, 0x5c
 /* 80140268 0013D068  81 9F 00 60 */	lwz r12, 0x60(r31)
 /* 8014026C 0013D06C  81 8C 00 3C */	lwz r12, 0x3c(r12)
@@ -1424,8 +1426,8 @@ init__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv:
 /* 8014028C 0013D08C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80140290 0013D090  4E 80 00 20 */	blr 
 
-.global turn_off__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv
-turn_off__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv:
+.global turn_off__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv
+turn_off__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv:
 /* 80140294 0013D094  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80140298 0013D098  7C 08 02 A6 */	mflr r0
 /* 8014029C 0013D09C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1436,12 +1438,12 @@ turn_off__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv:
 lbl_801402B0:
 /* 801402B0 0013D0B0  7F E4 FB 78 */	mr r4, r31
 /* 801402B4 0013D0B4  38 7E 00 5C */	addi r3, r30, 0x5c
-/* 801402B8 0013D0B8  48 00 00 31 */	bl __vc__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fi
+/* 801402B8 0013D0B8  48 00 00 31 */	bl __vc__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fi
 /* 801402BC 0013D0BC  48 00 5A A1 */	bl turn_off__Q24zNPC10water_boneFv
 /* 801402C0 0013D0C0  3B FF 00 01 */	addi r31, r31, 1
 lbl_801402C4:
 /* 801402C4 0013D0C4  38 7E 00 5C */	addi r3, r30, 0x5c
-/* 801402C8 0013D0C8  4B FF FF 01 */	bl size__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fv
+/* 801402C8 0013D0C8  4B FF FF 01 */	bl size__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fv
 /* 801402CC 0013D0CC  7C 1F 18 00 */	cmpw r31, r3
 /* 801402D0 0013D0D0  41 80 FF E0 */	blt lbl_801402B0
 /* 801402D4 0013D0D4  BB C1 00 08 */	lmw r30, 8(r1)
@@ -1450,15 +1452,15 @@ lbl_801402C4:
 /* 801402E0 0013D0E0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801402E4 0013D0E4  4E 80 00 20 */	blr 
 
-.global __vc__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fi
-__vc__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fi:
+.global __vc__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fi
+__vc__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fi:
 /* 801402E8 0013D0E8  1C 04 00 50 */	mulli r0, r4, 0x50
 /* 801402EC 0013D0EC  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 801402F0 0013D0F0  7C 63 02 14 */	add r3, r3, r0
 /* 801402F4 0013D0F4  4E 80 00 20 */	blr 
 
-.global turn_on__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv
-turn_on__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv:
+.global turn_on__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv
+turn_on__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv:
 /* 801402F8 0013D0F8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801402FC 0013D0FC  7C 08 02 A6 */	mflr r0
 /* 80140300 0013D100  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1469,12 +1471,12 @@ turn_on__Q24zNPC27stream$$0Q24zNPC10water_bone$$1Fv:
 lbl_80140314:
 /* 80140314 0013D114  7F E4 FB 78 */	mr r4, r31
 /* 80140318 0013D118  38 7E 00 5C */	addi r3, r30, 0x5c
-/* 8014031C 0013D11C  4B FF FF CD */	bl __vc__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fi
+/* 8014031C 0013D11C  4B FF FF CD */	bl __vc__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fi
 /* 80140320 0013D120  48 00 59 E1 */	bl turn_on__Q24zNPC10water_boneFv
 /* 80140324 0013D124  3B FF 00 01 */	addi r31, r31, 1
 lbl_80140328:
 /* 80140328 0013D128  38 7E 00 5C */	addi r3, r30, 0x5c
-/* 8014032C 0013D12C  4B FF FE 9D */	bl size__Q24zNPC35bone_container$$0Q24zNPC10water_bone$$1Fv
+/* 8014032C 0013D12C  4B FF FE 9D */	bl size__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fv
 /* 80140330 0013D130  7C 1F 18 00 */	cmpw r31, r3
 /* 80140334 0013D134  41 80 FF E0 */	blt lbl_80140314
 /* 80140338 0013D138  BB C1 00 08 */	lmw r30, 8(r1)
@@ -1483,8 +1485,8 @@ lbl_80140328:
 /* 80140344 0013D144  38 21 00 10 */	addi r1, r1, 0x10
 /* 80140348 0013D148  4E 80 00 20 */	blr 
 
-.global init__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv
-init__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv:
+.global init__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv
+init__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv:
 /* 8014034C 0013D14C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80140350 0013D150  7C 08 02 A6 */	mflr r0
 /* 80140354 0013D154  38 A0 FF FF */	li r5, -1
@@ -1493,7 +1495,7 @@ init__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv:
 /* 80140360 0013D160  7C 7F 1B 78 */	mr r31, r3
 /* 80140364 0013D164  38 9F 00 5C */	addi r4, r31, 0x5c
 /* 80140368 0013D168  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 8014036C 0013D16C  4B FF F8 99 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc_11
+/* 8014036C 0013D16C  4B FF F8 99 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc_11
 /* 80140370 0013D170  38 7F 00 5C */	addi r3, r31, 0x5c
 /* 80140374 0013D174  81 9F 00 60 */	lwz r12, 0x60(r31)
 /* 80140378 0013D178  81 8C 00 3C */	lwz r12, 0x3c(r12)
@@ -1507,8 +1509,8 @@ init__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv:
 /* 80140398 0013D198  38 21 00 10 */	addi r1, r1, 0x10
 /* 8014039C 0013D19C  4E 80 00 20 */	blr 
 
-.global turn_off__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv
-turn_off__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv:
+.global turn_off__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv
+turn_off__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv:
 /* 801403A0 0013D1A0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801403A4 0013D1A4  7C 08 02 A6 */	mflr r0
 /* 801403A8 0013D1A8  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1519,12 +1521,12 @@ turn_off__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv:
 lbl_801403BC:
 /* 801403BC 0013D1BC  7F E4 FB 78 */	mr r4, r31
 /* 801403C0 0013D1C0  38 7E 00 5C */	addi r3, r30, 0x5c
-/* 801403C4 0013D1C4  4B FF 87 99 */	bl __vc__Q24zNPC35bone_container$$0Q24zNPC10flame_bone$$1Fi
+/* 801403C4 0013D1C4  4B FF 87 99 */	bl __vc__Q24zNPC35bone_container_esc__0_Q24zNPC10flame_bone_esc__1_Fi
 /* 801403C8 0013D1C8  4B FC 12 15 */	bl turn_off__Q24zNPC10flame_boneFv
 /* 801403CC 0013D1CC  3B FF 00 01 */	addi r31, r31, 1
 lbl_801403D0:
 /* 801403D0 0013D1D0  38 7E 00 5C */	addi r3, r30, 0x5c
-/* 801403D4 0013D1D4  4B FF 82 F9 */	bl size__Q24zNPC35bone_container$$0Q24zNPC10flame_bone$$1Fv
+/* 801403D4 0013D1D4  4B FF 82 F9 */	bl size__Q24zNPC35bone_container_esc__0_Q24zNPC10flame_bone_esc__1_Fv
 /* 801403D8 0013D1D8  7C 1F 18 00 */	cmpw r31, r3
 /* 801403DC 0013D1DC  41 80 FF E0 */	blt lbl_801403BC
 /* 801403E0 0013D1E0  BB C1 00 08 */	lmw r30, 8(r1)
@@ -1533,8 +1535,8 @@ lbl_801403D0:
 /* 801403EC 0013D1EC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801403F0 0013D1F0  4E 80 00 20 */	blr 
 
-.global turn_on__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv
-turn_on__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv:
+.global turn_on__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv
+turn_on__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv:
 /* 801403F4 0013D1F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801403F8 0013D1F8  7C 08 02 A6 */	mflr r0
 /* 801403FC 0013D1FC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1545,12 +1547,12 @@ turn_on__Q24zNPC27stream$$0Q24zNPC10flame_bone$$1Fv:
 lbl_80140410:
 /* 80140410 0013D210  7F E4 FB 78 */	mr r4, r31
 /* 80140414 0013D214  38 7E 00 5C */	addi r3, r30, 0x5c
-/* 80140418 0013D218  4B FF 87 45 */	bl __vc__Q24zNPC35bone_container$$0Q24zNPC10flame_bone$$1Fi
+/* 80140418 0013D218  4B FF 87 45 */	bl __vc__Q24zNPC35bone_container_esc__0_Q24zNPC10flame_bone_esc__1_Fi
 /* 8014041C 0013D21C  4B FC 11 65 */	bl turn_on__Q24zNPC10flame_boneFv
 /* 80140420 0013D220  3B FF 00 01 */	addi r31, r31, 1
 lbl_80140424:
 /* 80140424 0013D224  38 7E 00 5C */	addi r3, r30, 0x5c
-/* 80140428 0013D228  4B FF 82 A5 */	bl size__Q24zNPC35bone_container$$0Q24zNPC10flame_bone$$1Fv
+/* 80140428 0013D228  4B FF 82 A5 */	bl size__Q24zNPC35bone_container_esc__0_Q24zNPC10flame_bone_esc__1_Fv
 /* 8014042C 0013D22C  7C 1F 18 00 */	cmpw r31, r3
 /* 80140430 0013D230  41 80 FF E0 */	blt lbl_80140410
 /* 80140434 0013D234  BB C1 00 08 */	lmw r30, 8(r1)
@@ -1558,3 +1560,6 @@ lbl_80140424:
 /* 8014043C 0013D23C  7C 08 03 A6 */	mtlr r0
 /* 80140440 0013D240  38 21 00 10 */	addi r1, r1, 0x10
 /* 80140444 0013D244  4E 80 00 20 */	blr 
+
+.endif
+

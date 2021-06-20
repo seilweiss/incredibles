@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global __dt__12xFactoryInstFv
@@ -28,3 +30,6 @@ __ct__12xFactoryInstFv:
 /* 8000C648 00009448  90 03 00 08 */	stw r0, 8(r3)
 /* 8000C64C 0000944C  90 03 00 04 */	stw r0, 4(r3)
 /* 8000C650 00009450  4E 80 00 20 */	blr 
+
+.endif
+

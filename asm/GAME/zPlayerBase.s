@@ -8,9 +8,11 @@ sMemDepthJustHIPStartPlayer:
 
 .section .sdata2
 
-.global $$21230_0
-$$21230_0:
+.global _esc__2_1230_0
+_esc__2_1230_0:
 	.incbin "baserom.dol", 0x331E80, 0x8
+
+.if 0
 
 .section .text
 
@@ -281,7 +283,7 @@ zPlayer_LoadCheckPoint__Fv:
 /* 801506AC 0014D4AC  38 82 90 30 */	addi r4, r2, m_UnitAxisY__5xVec3-_SDA2_BASE_
 /* 801506B0 0014D4B0  D0 1E 00 B8 */	stfs f0, 0xb8(r30)
 /* 801506B4 0014D4B4  4B EB A9 F5 */	bl __as__5xVec3FRC5xVec3
-/* 801506B8 0014D4B8  C0 42 B7 A0 */	lfs f2, $$21230_0-_SDA2_BASE_(r2)
+/* 801506B8 0014D4B8  C0 42 B7 A0 */	lfs f2, _esc__2_1230_0-_SDA2_BASE_(r2)
 /* 801506BC 0014D4BC  7F C3 F3 78 */	mr r3, r30
 /* 801506C0 0014D4C0  C0 3E 00 B8 */	lfs f1, 0xb8(r30)
 /* 801506C4 0014D4C4  FC 60 10 90 */	fmr f3, f2
@@ -322,3 +324,6 @@ lbl_80150704:
 /* 8015074C 0014D54C  7C 08 03 A6 */	mtlr r0
 /* 80150750 0014D550  38 21 00 20 */	addi r1, r1, 0x20
 /* 80150754 0014D554  4E 80 00 20 */	blr 
+
+.endif
+

@@ -17,24 +17,26 @@ xfbCopy:
 
 .section .sdata2
 
-.global $$2987
-$$2987:
+.global _esc__2_987
+_esc__2_987:
 	.incbin "baserom.dol", 0x32F7B8, 0x4
-.global $$2988_0
-$$2988_0:
+.global _esc__2_988_0
+_esc__2_988_0:
 	.incbin "baserom.dol", 0x32F7BC, 0x4
-.global $$2989_1
-$$2989_1:
+.global _esc__2_989_1
+_esc__2_989_1:
 	.incbin "baserom.dol", 0x32F7C0, 0x4
-.global $$2990_1
-$$2990_1:
+.global _esc__2_990_1
+_esc__2_990_1:
 	.incbin "baserom.dol", 0x32F7C4, 0x4
-.global $$2991_0
-$$2991_0:
+.global _esc__2_991_0
+_esc__2_991_0:
 	.incbin "baserom.dol", 0x32F7C8, 0x8
-.global $$2993_0
-$$2993_0:
+.global _esc__2_993_0
+_esc__2_993_0:
 	.incbin "baserom.dol", 0x32F7D0, 0x4
+
+.if 0
 
 .section .text
 
@@ -98,18 +100,18 @@ iDrawSetDisplayOffset__Fff:
 /* 80073D1C 00070B1C  3C 60 43 30 */	lis r3, 0x4330
 /* 80073D20 00070B20  80 0D 91 C8 */	lwz r0, FB_YRES-_SDA_BASE_(r13)
 /* 80073D24 00070B24  90 81 00 0C */	stw r4, 0xc(r1)
-/* 80073D28 00070B28  C8 A2 90 F0 */	lfd f5, $$2993_0-_SDA2_BASE_(r2)
+/* 80073D28 00070B28  C8 A2 90 F0 */	lfd f5, _esc__2_993_0-_SDA2_BASE_(r2)
 /* 80073D2C 00070B2C  90 61 00 08 */	stw r3, 8(r1)
-/* 80073D30 00070B30  C0 22 90 D8 */	lfs f1, $$2987-_SDA2_BASE_(r2)
+/* 80073D30 00070B30  C0 22 90 D8 */	lfs f1, _esc__2_987-_SDA2_BASE_(r2)
 /* 80073D34 00070B34  C8 01 00 08 */	lfd f0, 8(r1)
 /* 80073D38 00070B38  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80073D3C 00070B3C  EC 80 28 28 */	fsubs f4, f0, f5
-/* 80073D40 00070B40  C0 42 90 DC */	lfs f2, $$2988_0-_SDA2_BASE_(r2)
+/* 80073D40 00070B40  C0 42 90 DC */	lfs f2, _esc__2_988_0-_SDA2_BASE_(r2)
 /* 80073D44 00070B44  90 61 00 10 */	stw r3, 0x10(r1)
-/* 80073D48 00070B48  C0 02 90 E4 */	lfs f0, $$2990_1-_SDA2_BASE_(r2)
+/* 80073D48 00070B48  C0 02 90 E4 */	lfs f0, _esc__2_990_1-_SDA2_BASE_(r2)
 /* 80073D4C 00070B4C  C8 61 00 10 */	lfd f3, 0x10(r1)
 /* 80073D50 00070B50  EC 9E 09 3A */	fmadds f4, f30, f4, f1
-/* 80073D54 00070B54  C0 22 90 E0 */	lfs f1, $$2989_1-_SDA2_BASE_(r2)
+/* 80073D54 00070B54  C0 22 90 E0 */	lfs f1, _esc__2_989_1-_SDA2_BASE_(r2)
 /* 80073D58 00070B58  EC 63 28 28 */	fsubs f3, f3, f5
 /* 80073D5C 00070B5C  FC 04 00 40 */	fcmpo cr0, f4, f0
 /* 80073D60 00070B60  EC 7F 10 FA */	fmadds f3, f31, f3, f2
@@ -118,26 +120,26 @@ iDrawSetDisplayOffset__Fff:
 lbl_80073D6C:
 /* 80073D6C 00070B6C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80073D70 00070B70  40 81 00 0C */	ble lbl_80073D7C
-/* 80073D74 00070B74  C0 42 90 E0 */	lfs f2, $$2989_1-_SDA2_BASE_(r2)
+/* 80073D74 00070B74  C0 42 90 E0 */	lfs f2, _esc__2_989_1-_SDA2_BASE_(r2)
 /* 80073D78 00070B78  48 00 00 14 */	b lbl_80073D8C
 lbl_80073D7C:
-/* 80073D7C 00070B7C  C0 42 90 E4 */	lfs f2, $$2990_1-_SDA2_BASE_(r2)
+/* 80073D7C 00070B7C  C0 42 90 E4 */	lfs f2, _esc__2_990_1-_SDA2_BASE_(r2)
 /* 80073D80 00070B80  FC 04 10 40 */	fcmpo cr0, f4, f2
 /* 80073D84 00070B84  40 80 00 08 */	bge lbl_80073D8C
 /* 80073D88 00070B88  FC 40 20 90 */	fmr f2, f4
 lbl_80073D8C:
-/* 80073D8C 00070B8C  C0 02 90 E8 */	lfs f0, $$2991_0-_SDA2_BASE_(r2)
-/* 80073D90 00070B90  C0 22 90 E0 */	lfs f1, $$2989_1-_SDA2_BASE_(r2)
+/* 80073D8C 00070B8C  C0 02 90 E8 */	lfs f0, _esc__2_991_0-_SDA2_BASE_(r2)
+/* 80073D90 00070B90  C0 22 90 E0 */	lfs f1, _esc__2_989_1-_SDA2_BASE_(r2)
 /* 80073D94 00070B94  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 80073D98 00070B98  40 80 00 08 */	bge lbl_80073DA0
 /* 80073D9C 00070B9C  FC 00 18 90 */	fmr f0, f3
 lbl_80073DA0:
 /* 80073DA0 00070BA0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80073DA4 00070BA4  40 81 00 0C */	ble lbl_80073DB0
-/* 80073DA8 00070BA8  C0 02 90 E0 */	lfs f0, $$2989_1-_SDA2_BASE_(r2)
+/* 80073DA8 00070BA8  C0 02 90 E0 */	lfs f0, _esc__2_989_1-_SDA2_BASE_(r2)
 /* 80073DAC 00070BAC  48 00 00 14 */	b lbl_80073DC0
 lbl_80073DB0:
-/* 80073DB0 00070BB0  C0 02 90 E8 */	lfs f0, $$2991_0-_SDA2_BASE_(r2)
+/* 80073DB0 00070BB0  C0 02 90 E8 */	lfs f0, _esc__2_991_0-_SDA2_BASE_(r2)
 /* 80073DB4 00070BB4  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 80073DB8 00070BB8  40 80 00 08 */	bge lbl_80073DC0
 /* 80073DBC 00070BBC  FC 00 18 90 */	fmr f0, f3
@@ -225,3 +227,6 @@ iXFBalloc__FUi:
 lbl_80073EC0:
 /* 80073EC0 00070CC0  90 85 00 04 */	stw r4, 4(r5)
 /* 80073EC4 00070CC4  4E 80 00 20 */	blr 
+
+.endif
+

@@ -9,6 +9,8 @@ gFrameCount:
 gSceneFrameCount:
 	.skip 0x4
 
+.if 0
+
 .section .text
 
 .global xprintf__FPCce
@@ -58,3 +60,6 @@ xDrawTextInit__FUiUi:
 .global xDrawTextRender__Fv
 xDrawTextRender__Fv:
 /* 8001E6E8 0001B4E8  4E 80 00 20 */	blr 
+
+.endif
+

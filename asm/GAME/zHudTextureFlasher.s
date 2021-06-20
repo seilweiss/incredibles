@@ -2,12 +2,14 @@
 
 .section .sdata2
 
-.global $$2859
-$$2859:
+.global _esc__2_859
+_esc__2_859:
 	.incbin "baserom.dol", 0x330810, 0x4
-.global $$2889_1
-$$2889_1:
+.global _esc__2_889_1
+_esc__2_889_1:
 	.incbin "baserom.dol", 0x330814, 0x4
+
+.if 0
 
 .section .text
 
@@ -15,7 +17,7 @@ $$2889_1:
 setup__Q24zHud14TextureFlasherFPQ24xhud12image_widgetUifff:
 /* 800D39EC 000D07EC  FC 40 10 50 */	fneg f2, f2
 /* 800D39F0 000D07F0  D0 23 00 0C */	stfs f1, 0xc(r3)
-/* 800D39F4 000D07F4  C0 02 A1 30 */	lfs f0, $$2859-_SDA2_BASE_(r2)
+/* 800D39F4 000D07F4  C0 02 A1 30 */	lfs f0, _esc__2_859-_SDA2_BASE_(r2)
 /* 800D39F8 000D07F8  D0 43 00 10 */	stfs f2, 0x10(r3)
 /* 800D39FC 000D07FC  D0 63 00 14 */	stfs f3, 0x14(r3)
 /* 800D3A00 000D0800  D0 03 00 08 */	stfs f0, 8(r3)
@@ -48,7 +50,7 @@ update__Q24zHud14TextureFlasherFf:
 /* 800D3A54 000D0854  4E 80 04 21 */	bctrl 
 /* 800D3A58 000D0858  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 800D3A5C 000D085C  40 82 00 10 */	bne lbl_800D3A6C
-/* 800D3A60 000D0860  C0 02 A1 30 */	lfs f0, $$2859-_SDA2_BASE_(r2)
+/* 800D3A60 000D0860  C0 02 A1 30 */	lfs f0, _esc__2_859-_SDA2_BASE_(r2)
 /* 800D3A64 000D0864  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 800D3A68 000D0868  48 00 00 2C */	b lbl_800D3A94
 lbl_800D3A6C:
@@ -64,13 +66,13 @@ lbl_800D3A6C:
 /* 800D3A90 000D0890  D0 1F 00 08 */	stfs f0, 8(r31)
 lbl_800D3A94:
 /* 800D3A94 000D0894  C0 5F 00 08 */	lfs f2, 8(r31)
-/* 800D3A98 000D0898  C0 22 A1 30 */	lfs f1, $$2859-_SDA2_BASE_(r2)
+/* 800D3A98 000D0898  C0 22 A1 30 */	lfs f1, _esc__2_859-_SDA2_BASE_(r2)
 /* 800D3A9C 000D089C  FC 02 08 40 */	fcmpo cr0, f2, f1
 /* 800D3AA0 000D08A0  40 80 00 48 */	bge lbl_800D3AE8
 /* 800D3AA4 000D08A4  C0 1F 00 10 */	lfs f0, 0x10(r31)
 /* 800D3AA8 000D08A8  C0 7F 00 14 */	lfs f3, 0x14(r31)
 /* 800D3AAC 000D08AC  EC 02 00 28 */	fsubs f0, f2, f0
-/* 800D3AB0 000D08B0  C0 42 A1 34 */	lfs f2, $$2889_1-_SDA2_BASE_(r2)
+/* 800D3AB0 000D08B0  C0 42 A1 34 */	lfs f2, _esc__2_889_1-_SDA2_BASE_(r2)
 /* 800D3AB4 000D08B4  FC 03 08 40 */	fcmpo cr0, f3, f1
 /* 800D3AB8 000D08B8  40 81 00 18 */	ble lbl_800D3AD0
 /* 800D3ABC 000D08BC  EC 00 18 24 */	fdivs f0, f0, f3
@@ -80,7 +82,7 @@ lbl_800D3A94:
 lbl_800D3ACC:
 /* 800D3ACC 000D08CC  FC 40 00 90 */	fmr f2, f0
 lbl_800D3AD0:
-/* 800D3AD0 000D08D0  C0 02 A1 34 */	lfs f0, $$2889_1-_SDA2_BASE_(r2)
+/* 800D3AD0 000D08D0  C0 02 A1 34 */	lfs f0, _esc__2_889_1-_SDA2_BASE_(r2)
 /* 800D3AD4 000D08D4  80 7F 00 00 */	lwz r3, 0(r31)
 /* 800D3AD8 000D08D8  EC 20 10 28 */	fsubs f1, f0, f2
 /* 800D3ADC 000D08DC  80 9F 00 04 */	lwz r4, 4(r31)
@@ -90,7 +92,7 @@ lbl_800D3AE8:
 /* 800D3AE8 000D08E8  40 81 00 18 */	ble lbl_800D3B00
 /* 800D3AEC 000D08EC  80 7F 00 00 */	lwz r3, 0(r31)
 /* 800D3AF0 000D08F0  80 9F 00 04 */	lwz r4, 4(r31)
-/* 800D3AF4 000D08F4  C0 22 A1 34 */	lfs f1, $$2889_1-_SDA2_BASE_(r2)
+/* 800D3AF4 000D08F4  C0 22 A1 34 */	lfs f1, _esc__2_889_1-_SDA2_BASE_(r2)
 /* 800D3AF8 000D08F8  48 0D 56 ED */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 800D3AFC 000D08FC  48 00 00 10 */	b lbl_800D3B0C
 lbl_800D3B00:
@@ -126,3 +128,6 @@ lbl_800D3B54:
 /* 800D3B60 000D0960  4C 82 00 20 */	bnelr 
 /* 800D3B64 000D0964  D0 03 00 08 */	stfs f0, 8(r3)
 /* 800D3B68 000D0968  4E 80 00 20 */	blr 
+
+.endif
+

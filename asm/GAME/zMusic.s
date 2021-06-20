@@ -8,8 +8,8 @@ sMusicTrack:
 
 .section .rodata
 
-.global $$2stringBase0_68
-$$2stringBase0_68:
+.global _esc__2_stringBase0_68
+_esc__2_stringBase0_68:
 	.incbin "baserom.dol", 0x2DCC30, 0x30
 
 .section .sbss
@@ -29,27 +29,29 @@ gDialogueMusicLevel:
 
 .section .sdata2
 
-.global $$2877_0
-$$2877_0:
+.global _esc__2_877_0
+_esc__2_877_0:
 	.incbin "baserom.dol", 0x330E08, 0x4
-.global $$2878_0
-$$2878_0:
+.global _esc__2_878_0
+_esc__2_878_0:
 	.incbin "baserom.dol", 0x330E0C, 0x4
-.global $$2981_2
-$$2981_2:
+.global _esc__2_981_2
+_esc__2_981_2:
 	.incbin "baserom.dol", 0x330E10, 0x4
-.global $$2982_1
-$$2982_1:
+.global _esc__2_982_1
+_esc__2_982_1:
 	.incbin "baserom.dol", 0x330E14, 0x4
-.global $$2983_0
-$$2983_0:
+.global _esc__2_983_0
+_esc__2_983_0:
 	.incbin "baserom.dol", 0x330E18, 0x4
-.global $$2984_1
-$$2984_1:
+.global _esc__2_984_1
+_esc__2_984_1:
 	.incbin "baserom.dol", 0x330E1C, 0x4
-.global $$21131_0
-$$21131_0:
+.global _esc__2_1131_0
+_esc__2_1131_0:
 	.incbin "baserom.dol", 0x330E20, 0x8
+
+.if 0
 
 .section .text
 
@@ -174,8 +176,8 @@ lbl_800FD440:
 /* 800FD4AC 000FA2AC  90 0D CB A4 */	stw r0, sMusic-_SDA_BASE_(r13)
 /* 800FD4B0 000FA2B0  48 00 00 38 */	b lbl_800FD4E8
 lbl_800FD4B4:
-/* 800FD4B4 000FA2B4  3C 60 80 2E */	lis r3, $$2stringBase0_68@ha
-/* 800FD4B8 000FA2B8  38 63 FC 30 */	addi r3, r3, $$2stringBase0_68@l
+/* 800FD4B4 000FA2B4  3C 60 80 2E */	lis r3, _esc__2_stringBase0_68@ha
+/* 800FD4B8 000FA2B8  38 63 FC 30 */	addi r3, r3, _esc__2_stringBase0_68@l
 /* 800FD4BC 000FA2BC  4B FA 87 9D */	bl xSndMgrGetSoundGroup__FPc
 /* 800FD4C0 000FA2C0  7C 7F 1B 78 */	mr r31, r3
 /* 800FD4C4 000FA2C4  2C 1F FF FF */	cmpwi r31, -1
@@ -188,10 +190,10 @@ lbl_800FD4B4:
 /* 800FD4E0 000FA2E0  4B F6 94 CD */	bl xSndMgrGetSoundId__F15iSndGroupHandleUi
 /* 800FD4E4 000FA2E4  90 6D CB A4 */	stw r3, sMusic-_SDA_BASE_(r13)
 lbl_800FD4E8:
-/* 800FD4E8 000FA2E8  3C 60 80 2E */	lis r3, $$2stringBase0_68@ha
-/* 800FD4EC 000FA2EC  C0 22 A7 28 */	lfs f1, $$2877_0-_SDA2_BASE_(r2)
-/* 800FD4F0 000FA2F0  38 63 FC 30 */	addi r3, r3, $$2stringBase0_68@l
-/* 800FD4F4 000FA2F4  C0 42 A7 2C */	lfs f2, $$2878_0-_SDA2_BASE_(r2)
+/* 800FD4E8 000FA2E8  3C 60 80 2E */	lis r3, _esc__2_stringBase0_68@ha
+/* 800FD4EC 000FA2EC  C0 22 A7 28 */	lfs f1, _esc__2_877_0-_SDA2_BASE_(r2)
+/* 800FD4F0 000FA2F0  38 63 FC 30 */	addi r3, r3, _esc__2_stringBase0_68@l
+/* 800FD4F4 000FA2F4  C0 42 A7 2C */	lfs f2, _esc__2_878_0-_SDA2_BASE_(r2)
 /* 800FD4F8 000FA2F8  38 63 00 06 */	addi r3, r3, 6
 /* 800FD4FC 000FA2FC  38 8D 92 A8 */	addi r4, r13, gDialogueMusicLevel-_SDA_BASE_
 /* 800FD500 000FA300  38 A0 00 00 */	li r5, 0
@@ -230,8 +232,8 @@ lbl_800FD560:
 /* 800FD574 000FA374  80 03 00 24 */	lwz r0, 0x24(r3)
 /* 800FD578 000FA378  2C 00 FF FF */	cmpwi r0, -1
 /* 800FD57C 000FA37C  40 82 00 40 */	bne lbl_800FD5BC
-/* 800FD580 000FA380  C0 22 A7 30 */	lfs f1, $$2981_2-_SDA2_BASE_(r2)
-/* 800FD584 000FA384  C0 02 A7 34 */	lfs f0, $$2982_1-_SDA2_BASE_(r2)
+/* 800FD580 000FA380  C0 22 A7 30 */	lfs f1, _esc__2_981_2-_SDA2_BASE_(r2)
+/* 800FD584 000FA384  C0 02 A7 34 */	lfs f0, _esc__2_982_1-_SDA2_BASE_(r2)
 /* 800FD588 000FA388  D0 23 00 08 */	stfs f1, 8(r3)
 /* 800FD58C 000FA38C  D0 23 00 10 */	stfs f1, 0x10(r3)
 /* 800FD590 000FA390  D0 03 00 14 */	stfs f0, 0x14(r3)
@@ -285,7 +287,7 @@ lbl_800FD62C:
 /* 800FD640 000FA440  3B 5C 00 08 */	addi r26, r28, 8
 /* 800FD644 000FA444  C0 3C 00 10 */	lfs f1, 0x10(r28)
 /* 800FD648 000FA448  3B 7C 00 10 */	addi r27, r28, 0x10
-/* 800FD64C 000FA44C  C0 02 A7 38 */	lfs f0, $$2983_0-_SDA2_BASE_(r2)
+/* 800FD64C 000FA44C  C0 02 A7 38 */	lfs f0, _esc__2_983_0-_SDA2_BASE_(r2)
 /* 800FD650 000FA450  EC 22 08 28 */	fsubs f1, f2, f1
 /* 800FD654 000FA454  FC 20 0A 10 */	fabs f1, f1
 /* 800FD658 000FA458  FC 20 08 18 */	frsp f1, f1
@@ -296,27 +298,27 @@ lbl_800FD62C:
 /* 800FD66C 000FA46C  40 82 00 E0 */	bne lbl_800FD74C
 /* 800FD670 000FA470  C0 3C 00 18 */	lfs f1, 0x18(r28)
 /* 800FD674 000FA474  C0 5C 00 14 */	lfs f2, 0x14(r28)
-/* 800FD678 000FA478  C0 02 A7 34 */	lfs f0, $$2982_1-_SDA2_BASE_(r2)
+/* 800FD678 000FA478  C0 02 A7 34 */	lfs f0, _esc__2_982_1-_SDA2_BASE_(r2)
 /* 800FD67C 000FA47C  EC 3F 08 28 */	fsubs f1, f31, f1
 /* 800FD680 000FA480  FC 02 00 00 */	fcmpu cr0, f2, f0
 /* 800FD684 000FA484  41 82 00 0C */	beq lbl_800FD690
 /* 800FD688 000FA488  EC 61 10 24 */	fdivs f3, f1, f2
 /* 800FD68C 000FA48C  48 00 00 08 */	b lbl_800FD694
 lbl_800FD690:
-/* 800FD690 000FA490  C0 62 A7 30 */	lfs f3, $$2981_2-_SDA2_BASE_(r2)
+/* 800FD690 000FA490  C0 62 A7 30 */	lfs f3, _esc__2_981_2-_SDA2_BASE_(r2)
 lbl_800FD694:
-/* 800FD694 000FA494  C0 02 A7 30 */	lfs f0, $$2981_2-_SDA2_BASE_(r2)
+/* 800FD694 000FA494  C0 02 A7 30 */	lfs f0, _esc__2_981_2-_SDA2_BASE_(r2)
 /* 800FD698 000FA498  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 800FD69C 000FA49C  4C 41 13 82 */	cror 2, 1, 2
 /* 800FD6A0 000FA4A0  40 82 00 84 */	bne lbl_800FD724
 /* 800FD6A4 000FA4A4  C0 3B 00 00 */	lfs f1, 0(r27)
-/* 800FD6A8 000FA4A8  C0 02 A7 3C */	lfs f0, $$2984_1-_SDA2_BASE_(r2)
+/* 800FD6A8 000FA4A8  C0 02 A7 3C */	lfs f0, _esc__2_984_1-_SDA2_BASE_(r2)
 /* 800FD6AC 000FA4AC  D0 3A 00 00 */	stfs f1, 0(r26)
 /* 800FD6B0 000FA4B0  C0 3A 00 00 */	lfs f1, 0(r26)
 /* 800FD6B4 000FA4B4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800FD6B8 000FA4B8  4C 41 13 82 */	cror 2, 1, 2
 /* 800FD6BC 000FA4BC  40 82 00 58 */	bne lbl_800FD714
-/* 800FD6C0 000FA4C0  C0 02 A7 38 */	lfs f0, $$2983_0-_SDA2_BASE_(r2)
+/* 800FD6C0 000FA4C0  C0 02 A7 38 */	lfs f0, _esc__2_983_0-_SDA2_BASE_(r2)
 /* 800FD6C4 000FA4C4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800FD6C8 000FA4C8  4C 40 13 82 */	cror 2, 0, 2
 /* 800FD6CC 000FA4CC  40 82 00 48 */	bne lbl_800FD714
@@ -328,7 +330,7 @@ lbl_800FD694:
 /* 800FD6E4 000FA4E4  40 82 00 24 */	bne lbl_800FD708
 /* 800FD6E8 000FA4E8  80 7C 00 00 */	lwz r3, 0(r28)
 /* 800FD6EC 000FA4EC  38 80 00 00 */	li r4, 0
-/* 800FD6F0 000FA4F0  C0 22 A7 34 */	lfs f1, $$2982_1-_SDA2_BASE_(r2)
+/* 800FD6F0 000FA4F0  C0 22 A7 34 */	lfs f1, _esc__2_982_1-_SDA2_BASE_(r2)
 /* 800FD6F4 000FA4F4  4B F6 9D D5 */	bl xSndMgrSetVolume__F10iSndHandlefb
 /* 800FD6F8 000FA4F8  7F E3 FB 78 */	mr r3, r31
 /* 800FD6FC 000FA4FC  38 80 00 01 */	li r4, 1
@@ -362,7 +364,7 @@ lbl_800FD74C:
 /* 800FD75C 000FA55C  3B 1C 00 20 */	addi r24, r28, 0x20
 /* 800FD760 000FA560  C0 1C 00 18 */	lfs f0, 0x18(r28)
 /* 800FD764 000FA564  C0 5C 00 20 */	lfs f2, 0x20(r28)
-/* 800FD768 000FA568  C0 22 A7 34 */	lfs f1, $$2982_1-_SDA2_BASE_(r2)
+/* 800FD768 000FA568  C0 22 A7 34 */	lfs f1, _esc__2_982_1-_SDA2_BASE_(r2)
 /* 800FD76C 000FA56C  EC 1F 00 28 */	fsubs f0, f31, f0
 /* 800FD770 000FA570  FC 02 08 00 */	fcmpu cr0, f2, f1
 /* 800FD774 000FA574  41 82 00 64 */	beq lbl_800FD7D8
@@ -378,17 +380,17 @@ lbl_800FD74C:
 /* 800FD79C 000FA59C  D0 39 00 00 */	stfs f1, 0(r25)
 /* 800FD7A0 000FA5A0  1C 9A 00 24 */	mulli r4, r26, 0x24
 /* 800FD7A4 000FA5A4  38 03 31 C0 */	addi r0, r3, sMusicTrack@l
-/* 800FD7A8 000FA5A8  C0 02 A7 30 */	lfs f0, $$2981_2-_SDA2_BASE_(r2)
+/* 800FD7A8 000FA5A8  C0 02 A7 30 */	lfs f0, _esc__2_981_2-_SDA2_BASE_(r2)
 /* 800FD7AC 000FA5AC  7F 20 22 14 */	add r25, r0, r4
 /* 800FD7B0 000FA5B0  D0 19 00 10 */	stfs f0, 0x10(r25)
 /* 800FD7B4 000FA5B4  4B F8 4B B1 */	bl iTimeGetGame__Fv
 /* 800FD7B8 000FA5B8  D0 39 00 18 */	stfs f1, 0x18(r25)
 /* 800FD7BC 000FA5BC  7F 43 D3 78 */	mr r3, r26
-/* 800FD7C0 000FA5C0  C0 02 A7 34 */	lfs f0, $$2982_1-_SDA2_BASE_(r2)
+/* 800FD7C0 000FA5C0  C0 02 A7 34 */	lfs f0, _esc__2_982_1-_SDA2_BASE_(r2)
 /* 800FD7C4 000FA5C4  38 80 00 00 */	li r4, 0
 /* 800FD7C8 000FA5C8  D0 19 00 0C */	stfs f0, 0xc(r25)
 /* 800FD7CC 000FA5CC  4B FF FB B1 */	bl _zMusicPause__FUib
-/* 800FD7D0 000FA5D0  C0 02 A7 34 */	lfs f0, $$2982_1-_SDA2_BASE_(r2)
+/* 800FD7D0 000FA5D0  C0 02 A7 34 */	lfs f0, _esc__2_982_1-_SDA2_BASE_(r2)
 /* 800FD7D4 000FA5D4  D0 18 00 00 */	stfs f0, 0(r24)
 lbl_800FD7D8:
 /* 800FD7D8 000FA5D8  3B FF 00 01 */	addi r31, r31, 1
@@ -642,7 +644,7 @@ lbl_800FDB1C:
 lbl_800FDB34:
 /* 800FDB34 000FA934  1F 9F 00 24 */	mulli r28, r31, 0x24
 /* 800FDB38 000FA938  3C 60 80 38 */	lis r3, sMusicTrack@ha
-/* 800FDB3C 000FA93C  C0 02 A7 34 */	lfs f0, $$2982_1-_SDA2_BASE_(r2)
+/* 800FDB3C 000FA93C  C0 02 A7 34 */	lfs f0, _esc__2_982_1-_SDA2_BASE_(r2)
 /* 800FDB40 000FA940  38 03 31 C0 */	addi r0, r3, sMusicTrack@l
 /* 800FDB44 000FA944  7C 60 E2 14 */	add r3, r0, r28
 /* 800FDB48 000FA948  D0 03 00 08 */	stfs f0, 8(r3)
@@ -815,7 +817,7 @@ zMusicTempSongEvent__FPCfUi:
 /* 800FDDAC 000FABAC  4B FF FF 71 */	bl fabs__3stdFf
 /* 800FDDB0 000FABB0  FF 60 08 90 */	fmr f27, f1
 /* 800FDDB4 000FABB4  3C 60 80 38 */	lis r3, sMusicTrack@ha
-/* 800FDDB8 000FABB8  C3 E2 A7 34 */	lfs f31, $$2982_1-_SDA2_BASE_(r2)
+/* 800FDDB8 000FABB8  C3 E2 A7 34 */	lfs f31, _esc__2_982_1-_SDA2_BASE_(r2)
 /* 800FDDBC 000FABBC  3B C3 31 C0 */	addi r30, r3, sMusicTrack@l
 /* 800FDDC0 000FABC0  3B 80 00 00 */	li r28, 0
 /* 800FDDC4 000FABC4  3B E0 00 00 */	li r31, 0
@@ -842,7 +844,7 @@ lbl_800FDDF0:
 /* 800FDE10 000FAC10  28 00 00 00 */	cmplwi r0, 0
 /* 800FDE14 000FAC14  40 82 00 34 */	bne lbl_800FDE48
 /* 800FDE18 000FAC18  FC 40 E8 90 */	fmr f2, f29
-/* 800FDE1C 000FAC1C  C0 22 A7 34 */	lfs f1, $$2982_1-_SDA2_BASE_(r2)
+/* 800FDE1C 000FAC1C  C0 22 A7 34 */	lfs f1, _esc__2_982_1-_SDA2_BASE_(r2)
 /* 800FDE20 000FAC20  FC 60 D8 90 */	fmr f3, f27
 /* 800FDE24 000FAC24  7F 63 DB 78 */	mr r3, r27
 /* 800FDE28 000FAC28  FC 80 E0 90 */	fmr f4, f28
@@ -875,7 +877,7 @@ zMusicTempSongStopEvent__Fv:
 /* 800FDE84 000FAC84  3C 60 80 38 */	lis r3, sMusicTrack@ha
 /* 800FDE88 000FAC88  38 00 00 02 */	li r0, 2
 /* 800FDE8C 000FAC8C  38 83 31 C0 */	addi r4, r3, sMusicTrack@l
-/* 800FDE90 000FAC90  C0 02 A7 40 */	lfs f0, $$21131_0-_SDA2_BASE_(r2)
+/* 800FDE90 000FAC90  C0 02 A7 40 */	lfs f0, _esc__2_1131_0-_SDA2_BASE_(r2)
 /* 800FDE94 000FAC94  38 60 00 00 */	li r3, 0
 /* 800FDE98 000FAC98  7C 09 03 A6 */	mtctr r0
 lbl_800FDE9C:
@@ -891,3 +893,6 @@ lbl_800FDEBC:
 /* 800FDEBC 000FACBC  38 63 00 24 */	addi r3, r3, 0x24
 /* 800FDEC0 000FACC0  42 00 FF DC */	bdnz lbl_800FDE9C
 /* 800FDEC4 000FACC4  4E 80 00 20 */	blr 
+
+.endif
+

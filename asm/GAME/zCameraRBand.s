@@ -2,8 +2,8 @@
 
 .section .rodata
 
-.global $$2stringBase0_144
-$$2stringBase0_144:
+.global _esc__2_stringBase0_144
+_esc__2_stringBase0_144:
 	.incbin "baserom.dol", 0x2E6E48, 0x10
 
 .section .sbss
@@ -14,6 +14,8 @@ rbCam:
 .global zRBAND_CAMERA_ACTIVE
 zRBAND_CAMERA_ACTIVE:
 	.skip 0x4
+
+.if 0
 
 .section .text
 
@@ -56,9 +58,9 @@ lbl_801DED6C:
 /* 801DED78 001DBB78  81 8C 00 08 */	lwz r12, 8(r12)
 /* 801DED7C 001DBB7C  7D 89 03 A6 */	mtctr r12
 /* 801DED80 001DBB80  4E 80 04 21 */	bctrl 
-/* 801DED84 001DBB84  3C 80 80 2F */	lis r4, $$2stringBase0_144@ha
+/* 801DED84 001DBB84  3C 80 80 2F */	lis r4, _esc__2_stringBase0_144@ha
 /* 801DED88 001DBB88  80 6D DB A8 */	lwz r3, rbCam-_SDA_BASE_(r13)
-/* 801DED8C 001DBB8C  38 84 9E 48 */	addi r4, r4, $$2stringBase0_144@l
+/* 801DED8C 001DBB8C  38 84 9E 48 */	addi r4, r4, _esc__2_stringBase0_144@l
 /* 801DED90 001DBB90  4B F0 5F C9 */	bl add_tweaks__4xCamFPCc
 /* 801DED94 001DBB94  C0 1F 00 10 */	lfs f0, 0x10(r31)
 /* 801DED98 001DBB98  80 6D DB A8 */	lwz r3, rbCam-_SDA_BASE_(r13)
@@ -146,3 +148,6 @@ __ct__9zSlideCamFv:
 /* 801DEEBC 001DBCBC  7C 08 03 A6 */	mtlr r0
 /* 801DEEC0 001DBCC0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DEEC4 001DBCC4  4E 80 00 20 */	blr 
+
+.endif
+

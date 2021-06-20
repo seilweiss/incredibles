@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
@@ -17,3 +19,6 @@ lbl_801E9F10:
 /* 801E9F1C 001E6D1C  60 60 00 02 */	ori r0, r3, 2
 /* 801E9F20 001E6D20  90 04 00 90 */	stw r0, 0x90(r4)
 /* 801E9F24 001E6D24  4E 80 00 20 */	blr 
+
+.endif
+

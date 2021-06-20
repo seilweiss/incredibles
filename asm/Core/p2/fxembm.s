@@ -2,26 +2,26 @@
 
 .section .rodata
 
-.global $$2282
-$$2282:
+.global _esc__2_282
+_esc__2_282:
 	.incbin "baserom.dol", 0x2E6648, 0x60
-.global $$2283
-$$2283:
+.global _esc__2_283
+_esc__2_283:
 	.incbin "baserom.dol", 0x2E66A8, 0x78
-.global $$2284
-$$2284:
+.global _esc__2_284
+_esc__2_284:
 	.incbin "baserom.dol", 0x2E6720, 0x50
-.global $$2285
-$$2285:
+.global _esc__2_285
+_esc__2_285:
 	.incbin "baserom.dol", 0x2E6770, 0x50
-.global $$2286
-$$2286:
+.global _esc__2_286
+_esc__2_286:
 	.incbin "baserom.dol", 0x2E67C0, 0x50
-.global $$2287
-$$2287:
+.global _esc__2_287
+_esc__2_287:
 	.incbin "baserom.dol", 0x2E6810, 0x50
-.global $$2stringBase0_139
-$$2stringBase0_139:
+.global _esc__2_stringBase0_139
+_esc__2_stringBase0_139:
 	.incbin "baserom.dol", 0x2E6860, 0x10
 
 .section .sbss
@@ -50,15 +50,17 @@ Shininess:
 .global lbl_803D6EEC
 lbl_803D6EEC:
 	.incbin "baserom.dol", 0x3338AC, 0x4
-.global $$2288
-$$2288:
+.global _esc__2_288
+_esc__2_288:
 	.incbin "baserom.dol", 0x3338B0, 0x1C
 .global lbl_803D6F0C
 lbl_803D6F0C:
 	.incbin "baserom.dol", 0x3338CC, 0x4
-.global $$2289_0
-$$2289_0:
+.global _esc__2_289_0
+_esc__2_289_0:
 	.incbin "baserom.dol", 0x3338D0, 0x20
+
+.if 0
 
 .section .text
 
@@ -74,9 +76,9 @@ CreateEMBMEffect__Fv:
 /* 801D7B30 001D4930  38 E0 00 01 */	li r7, 1
 /* 801D7B34 001D4934  BF C1 02 68 */	stmw r30, 0x268(r1)
 /* 801D7B38 001D4938  48 0F 5C 29 */	bl RpGameCubeMTEffectCreate
-/* 801D7B3C 001D493C  3C 80 80 2F */	lis r4, $$2stringBase0_139@ha
+/* 801D7B3C 001D493C  3C 80 80 2F */	lis r4, _esc__2_stringBase0_139@ha
 /* 801D7B40 001D4940  7C 7E 1B 78 */	mr r30, r3
-/* 801D7B44 001D4944  38 84 98 60 */	addi r4, r4, $$2stringBase0_139@l
+/* 801D7B44 001D4944  38 84 98 60 */	addi r4, r4, _esc__2_stringBase0_139@l
 /* 801D7B48 001D4948  48 0F 9A AD */	bl RpMTEffectSetName
 /* 801D7B4C 001D494C  7F C3 F3 78 */	mr r3, r30
 /* 801D7B50 001D4950  48 0F 5D 99 */	bl RpGameCubeMTEffectGetConfig
@@ -84,10 +86,10 @@ CreateEMBMEffect__Fv:
 /* 801D7B58 001D4958  38 00 00 03 */	li r0, 3
 /* 801D7B5C 001D495C  90 03 00 00 */	stw r0, 0(r3)
 /* 801D7B60 001D4960  38 80 00 80 */	li r4, 0x80
-/* 801D7B64 001D4964  3C 60 80 2F */	lis r3, $$2282@ha
+/* 801D7B64 001D4964  3C 60 80 2F */	lis r3, _esc__2_282@ha
 /* 801D7B68 001D4968  38 00 00 FA */	li r0, 0xfa
 /* 801D7B6C 001D496C  98 9F 00 31 */	stb r4, 0x31(r31)
-/* 801D7B70 001D4970  38 63 96 48 */	addi r3, r3, $$2282@l
+/* 801D7B70 001D4970  38 63 96 48 */	addi r3, r3, _esc__2_282@l
 /* 801D7B74 001D4974  38 E0 00 C8 */	li r7, 0xc8
 /* 801D7B78 001D4978  38 C0 00 64 */	li r6, 0x64
 /* 801D7B7C 001D497C  B0 1F 00 0E */	sth r0, 0xe(r31)
@@ -147,9 +149,9 @@ lbl_801D7B98:
 /* 801D7C50 001D4A50  80 7F 00 40 */	lwz r3, 0x40(r31)
 /* 801D7C54 001D4A54  38 63 00 84 */	addi r3, r3, 0x84
 /* 801D7C58 001D4A58  4B E2 B5 91 */	bl memcpy
-/* 801D7C5C 001D4A5C  3C 60 80 2F */	lis r3, $$2283@ha
+/* 801D7C5C 001D4A5C  3C 60 80 2F */	lis r3, _esc__2_283@ha
 /* 801D7C60 001D4A60  38 00 00 0F */	li r0, 0xf
-/* 801D7C64 001D4A64  38 63 96 A8 */	addi r3, r3, $$2283@l
+/* 801D7C64 001D4A64  38 63 96 A8 */	addi r3, r3, _esc__2_283@l
 /* 801D7C68 001D4A68  38 A1 01 84 */	addi r5, r1, 0x184
 /* 801D7C6C 001D4A6C  38 83 FF FC */	addi r4, r3, -4
 /* 801D7C70 001D4A70  7C 09 03 A6 */	mtctr r0
@@ -173,10 +175,10 @@ lbl_801D7C74:
 /* 801D7CB4 001D4AB4  4B E2 B4 4D */	bl memset
 /* 801D7CB8 001D4AB8  80 9F 00 48 */	lwz r4, 0x48(r31)
 /* 801D7CBC 001D4ABC  39 00 00 01 */	li r8, 1
-/* 801D7CC0 001D4AC0  3C 60 80 2F */	lis r3, $$2284@ha
+/* 801D7CC0 001D4AC0  3C 60 80 2F */	lis r3, _esc__2_284@ha
 /* 801D7CC4 001D4AC4  38 E0 00 00 */	li r7, 0
 /* 801D7CC8 001D4AC8  91 04 00 00 */	stw r8, 0(r4)
-/* 801D7CCC 001D4ACC  38 63 97 20 */	addi r3, r3, $$2284@l
+/* 801D7CCC 001D4ACC  38 63 97 20 */	addi r3, r3, _esc__2_284@l
 /* 801D7CD0 001D4AD0  38 00 00 0A */	li r0, 0xa
 /* 801D7CD4 001D4AD4  38 A1 01 34 */	addi r5, r1, 0x134
 /* 801D7CD8 001D4AD8  80 DF 00 48 */	lwz r6, 0x48(r31)
@@ -204,9 +206,9 @@ lbl_801D7D24:
 /* 801D7D2C 001D4B2C  90 65 00 04 */	stw r3, 4(r5)
 /* 801D7D30 001D4B30  94 05 00 08 */	stwu r0, 8(r5)
 /* 801D7D34 001D4B34  42 00 FF F0 */	bdnz lbl_801D7D24
-/* 801D7D38 001D4B38  3C 60 80 2F */	lis r3, $$2285@ha
+/* 801D7D38 001D4B38  3C 60 80 2F */	lis r3, _esc__2_285@ha
 /* 801D7D3C 001D4B3C  38 00 00 0A */	li r0, 0xa
-/* 801D7D40 001D4B40  38 63 97 70 */	addi r3, r3, $$2285@l
+/* 801D7D40 001D4B40  38 63 97 70 */	addi r3, r3, _esc__2_285@l
 /* 801D7D44 001D4B44  38 A1 00 E4 */	addi r5, r1, 0xe4
 /* 801D7D48 001D4B48  38 83 FF FC */	addi r4, r3, -4
 /* 801D7D4C 001D4B4C  7C 09 03 A6 */	mtctr r0
@@ -216,9 +218,9 @@ lbl_801D7D50:
 /* 801D7D58 001D4B58  90 65 00 04 */	stw r3, 4(r5)
 /* 801D7D5C 001D4B5C  94 05 00 08 */	stwu r0, 8(r5)
 /* 801D7D60 001D4B60  42 00 FF F0 */	bdnz lbl_801D7D50
-/* 801D7D64 001D4B64  3C 60 80 2F */	lis r3, $$2286@ha
+/* 801D7D64 001D4B64  3C 60 80 2F */	lis r3, _esc__2_286@ha
 /* 801D7D68 001D4B68  38 00 00 0A */	li r0, 0xa
-/* 801D7D6C 001D4B6C  38 63 97 C0 */	addi r3, r3, $$2286@l
+/* 801D7D6C 001D4B6C  38 63 97 C0 */	addi r3, r3, _esc__2_286@l
 /* 801D7D70 001D4B70  38 A1 00 94 */	addi r5, r1, 0x94
 /* 801D7D74 001D4B74  38 83 FF FC */	addi r4, r3, -4
 /* 801D7D78 001D4B78  7C 09 03 A6 */	mtctr r0
@@ -228,9 +230,9 @@ lbl_801D7D7C:
 /* 801D7D84 001D4B84  90 65 00 04 */	stw r3, 4(r5)
 /* 801D7D88 001D4B88  94 05 00 08 */	stwu r0, 8(r5)
 /* 801D7D8C 001D4B8C  42 00 FF F0 */	bdnz lbl_801D7D7C
-/* 801D7D90 001D4B90  3C 60 80 2F */	lis r3, $$2287@ha
+/* 801D7D90 001D4B90  3C 60 80 2F */	lis r3, _esc__2_287@ha
 /* 801D7D94 001D4B94  38 00 00 0A */	li r0, 0xa
-/* 801D7D98 001D4B98  38 63 98 10 */	addi r3, r3, $$2287@l
+/* 801D7D98 001D4B98  38 63 98 10 */	addi r3, r3, _esc__2_287@l
 /* 801D7D9C 001D4B9C  38 A1 00 44 */	addi r5, r1, 0x44
 /* 801D7DA0 001D4BA0  38 83 FF FC */	addi r4, r3, -4
 /* 801D7DA4 001D4BA4  7C 09 03 A6 */	mtctr r0
@@ -481,3 +483,6 @@ lbl_801D811C:
 /* 801D8124 001D4F24  7C 08 03 A6 */	mtlr r0
 /* 801D8128 001D4F28  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D812C 001D4F2C  4E 80 00 20 */	blr 
+
+.endif
+

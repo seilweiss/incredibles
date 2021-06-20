@@ -2,8 +2,8 @@
 
 .section .rodata
 
-.global $$2stringBase0_69
-$$2stringBase0_69:
+.global _esc__2_stringBase0_69
+_esc__2_stringBase0_69:
 	.incbin "baserom.dol", 0x2DCC60, 0x50
 
 .section .sdata
@@ -14,12 +14,14 @@ __vt__Q24zNPC4base:
 
 .section .sdata2
 
-.global $$21013_1
-$$21013_1:
+.global _esc__2_1013_1
+_esc__2_1013_1:
 	.incbin "baserom.dol", 0x330E28, 0x4
-.global $$21029_1
-$$21029_1:
+.global _esc__2_1029_1
+_esc__2_1029_1:
 	.incbin "baserom.dol", 0x330E2C, 0x4
+
+.if 0
 
 .section .text
 
@@ -68,18 +70,18 @@ initialize_bounds__Q24zNPC4baseFf:
 /* 800FDF54 000FAD54  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
 /* 800FDF58 000FAD58  93 E1 00 2C */	stw r31, 0x2c(r1)
 /* 800FDF5C 000FAD5C  3C A0 00 01 */	lis r5, 0x0000FFFF@ha
-/* 800FDF60 000FAD60  3C 80 80 2E */	lis r4, $$2stringBase0_69@ha
+/* 800FDF60 000FAD60  3C 80 80 2E */	lis r4, _esc__2_stringBase0_69@ha
 /* 800FDF64 000FAD64  38 05 FF FF */	addi r0, r5, 0x0000FFFF@l
 /* 800FDF68 000FAD68  FF E0 08 90 */	fmr f31, f1
 /* 800FDF6C 000FAD6C  B0 03 00 E6 */	sth r0, 0xe6(r3)
 /* 800FDF70 000FAD70  7C 7F 1B 78 */	mr r31, r3
-/* 800FDF74 000FAD74  38 84 FC 60 */	addi r4, r4, $$2stringBase0_69@l
+/* 800FDF74 000FAD74  38 84 FC 60 */	addi r4, r4, _esc__2_stringBase0_69@l
 /* 800FDF78 000FAD78  38 A1 00 08 */	addi r5, r1, 8
 /* 800FDF7C 000FAD7C  38 C0 00 00 */	li r6, 0
 /* 800FDF80 000FAD80  48 00 08 85 */	bl get_parameter__Q24zNPC4baseFPCcPbb
-/* 800FDF84 000FAD84  3C 80 80 2E */	lis r4, $$2stringBase0_69@ha
+/* 800FDF84 000FAD84  3C 80 80 2E */	lis r4, _esc__2_stringBase0_69@ha
 /* 800FDF88 000FAD88  7F E3 FB 78 */	mr r3, r31
-/* 800FDF8C 000FAD8C  38 84 FC 60 */	addi r4, r4, $$2stringBase0_69@l
+/* 800FDF8C 000FAD8C  38 84 FC 60 */	addi r4, r4, _esc__2_stringBase0_69@l
 /* 800FDF90 000FAD90  38 BF 00 E4 */	addi r5, r31, 0xe4
 /* 800FDF94 000FAD94  38 84 00 0F */	addi r4, r4, 0xf
 /* 800FDF98 000FAD98  38 C0 FF FF */	li r6, -1
@@ -87,18 +89,18 @@ initialize_bounds__Q24zNPC4baseFf:
 /* 800FDFA0 000FADA0  88 01 00 08 */	lbz r0, 8(r1)
 /* 800FDFA4 000FADA4  28 00 00 00 */	cmplwi r0, 0
 /* 800FDFA8 000FADA8  40 82 00 6C */	bne lbl_800FE014
-/* 800FDFAC 000FADAC  3C 80 80 2E */	lis r4, $$2stringBase0_69@ha
+/* 800FDFAC 000FADAC  3C 80 80 2E */	lis r4, _esc__2_stringBase0_69@ha
 /* 800FDFB0 000FADB0  7F E3 FB 78 */	mr r3, r31
-/* 800FDFB4 000FADB4  38 84 FC 60 */	addi r4, r4, $$2stringBase0_69@l
+/* 800FDFB4 000FADB4  38 84 FC 60 */	addi r4, r4, _esc__2_stringBase0_69@l
 /* 800FDFB8 000FADB8  38 A1 00 1C */	addi r5, r1, 0x1c
 /* 800FDFBC 000FADBC  38 84 00 19 */	addi r4, r4, 0x19
 /* 800FDFC0 000FADC0  38 C2 89 F0 */	addi r6, r2, g_O3-_SDA2_BASE_
 /* 800FDFC4 000FADC4  48 00 09 2D */	bl get_parameter__Q24zNPC4baseFPCcP5xVec3RC5xVec3
 /* 800FDFC8 000FADC8  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 800FDFCC 000FADCC  41 82 00 48 */	beq lbl_800FE014
-/* 800FDFD0 000FADD0  3C 60 80 2E */	lis r3, $$2stringBase0_69@ha
-/* 800FDFD4 000FADD4  C0 22 A7 48 */	lfs f1, $$21013_1-_SDA2_BASE_(r2)
-/* 800FDFD8 000FADD8  38 83 FC 60 */	addi r4, r3, $$2stringBase0_69@l
+/* 800FDFD0 000FADD0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_69@ha
+/* 800FDFD4 000FADD4  C0 22 A7 48 */	lfs f1, _esc__2_1013_1-_SDA2_BASE_(r2)
+/* 800FDFD8 000FADD8  38 83 FC 60 */	addi r4, r3, _esc__2_stringBase0_69@l
 /* 800FDFDC 000FADDC  7F E3 FB 78 */	mr r3, r31
 /* 800FDFE0 000FADE0  38 84 00 25 */	addi r4, r4, 0x25
 /* 800FDFE4 000FADE4  38 A1 00 0C */	addi r5, r1, 0xc
@@ -114,16 +116,16 @@ initialize_bounds__Q24zNPC4baseFf:
 /* 800FE00C 000FAE0C  D0 1F 00 98 */	stfs f0, 0x98(r31)
 /* 800FE010 000FAE10  48 00 00 7C */	b lbl_800FE08C
 lbl_800FE014:
-/* 800FE014 000FAE14  3C 80 80 2E */	lis r4, $$2stringBase0_69@ha
+/* 800FE014 000FAE14  3C 80 80 2E */	lis r4, _esc__2_stringBase0_69@ha
 /* 800FE018 000FAE18  7F E3 FB 78 */	mr r3, r31
-/* 800FE01C 000FAE1C  38 84 FC 60 */	addi r4, r4, $$2stringBase0_69@l
+/* 800FE01C 000FAE1C  38 84 FC 60 */	addi r4, r4, _esc__2_stringBase0_69@l
 /* 800FE020 000FAE20  38 A1 00 1C */	addi r5, r1, 0x1c
 /* 800FE024 000FAE24  38 84 00 31 */	addi r4, r4, 0x31
 /* 800FE028 000FAE28  38 C2 89 F0 */	addi r6, r2, g_O3-_SDA2_BASE_
 /* 800FE02C 000FAE2C  48 00 08 C5 */	bl get_parameter__Q24zNPC4baseFPCcP5xVec3RC5xVec3
-/* 800FE030 000FAE30  3C 60 80 2E */	lis r3, $$2stringBase0_69@ha
-/* 800FE034 000FAE34  C0 22 A7 48 */	lfs f1, $$21013_1-_SDA2_BASE_(r2)
-/* 800FE038 000FAE38  38 83 FC 60 */	addi r4, r3, $$2stringBase0_69@l
+/* 800FE030 000FAE30  3C 60 80 2E */	lis r3, _esc__2_stringBase0_69@ha
+/* 800FE034 000FAE34  C0 22 A7 48 */	lfs f1, _esc__2_1013_1-_SDA2_BASE_(r2)
+/* 800FE038 000FAE38  38 83 FC 60 */	addi r4, r3, _esc__2_stringBase0_69@l
 /* 800FE03C 000FAE3C  7F E3 FB 78 */	mr r3, r31
 /* 800FE040 000FAE40  38 84 00 3D */	addi r4, r4, 0x3d
 /* 800FE044 000FAE44  38 A1 00 0C */	addi r5, r1, 0xc
@@ -179,7 +181,7 @@ change_bounds__Q24zNPC4baseFf5xVec3b:
 /* 800FE0FC 000FAEFC  C0 3F 00 98 */	lfs f1, 0x98(r31)
 /* 800FE100 000FAF00  38 9F 01 10 */	addi r4, r31, 0x110
 /* 800FE104 000FAF04  80 A5 00 54 */	lwz r5, 0x54(r5)
-/* 800FE108 000FAF08  C0 42 A7 4C */	lfs f2, $$21029_1-_SDA2_BASE_(r2)
+/* 800FE108 000FAF08  C0 42 A7 4C */	lfs f2, _esc__2_1029_1-_SDA2_BASE_(r2)
 /* 800FE10C 000FAF0C  C0 05 00 30 */	lfs f0, 0x30(r5)
 /* 800FE110 000FAF10  EC 01 00 28 */	fsubs f0, f1, f0
 /* 800FE114 000FAF14  D0 1F 00 98 */	stfs f0, 0x98(r31)
@@ -258,7 +260,7 @@ change_bounds__Q24zNPC4baseFf5xVec3b:
 /* 800FE238 000FB038  4B F1 5D A5 */	bl __as__5RwV3dFRC5RwV3d
 /* 800FE23C 000FB03C  C0 5F 00 9C */	lfs f2, 0x9c(r31)
 /* 800FE240 000FB040  C0 1F 00 A8 */	lfs f0, 0xa8(r31)
-/* 800FE244 000FB044  C0 22 A7 4C */	lfs f1, $$21029_1-_SDA2_BASE_(r2)
+/* 800FE244 000FB044  C0 22 A7 4C */	lfs f1, _esc__2_1029_1-_SDA2_BASE_(r2)
 /* 800FE248 000FB048  EC 42 00 28 */	fsubs f2, f2, f0
 /* 800FE24C 000FB04C  C0 1F 00 90 */	lfs f0, 0x90(r31)
 /* 800FE250 000FB050  EC 02 00 7A */	fmadds f0, f2, f1, f0
@@ -402,7 +404,7 @@ lbl_800FE42C:
 /* 800FE44C 000FB24C  C0 1F 00 A8 */	lfs f0, 0xa8(r31)
 /* 800FE450 000FB250  80 9F 00 48 */	lwz r4, 0x48(r31)
 /* 800FE454 000FB254  EC 01 00 28 */	fsubs f0, f1, f0
-/* 800FE458 000FB258  C0 22 A7 4C */	lfs f1, $$21029_1-_SDA2_BASE_(r2)
+/* 800FE458 000FB258  C0 22 A7 4C */	lfs f1, _esc__2_1029_1-_SDA2_BASE_(r2)
 /* 800FE45C 000FB25C  38 84 00 10 */	addi r4, r4, 0x10
 /* 800FE460 000FB260  EC 21 00 32 */	fmuls f1, f1, f0
 /* 800FE464 000FB264  4B F0 B2 B9 */	bl xVec3AddScaled__FP5xVec3PC5xVec3f
@@ -687,9 +689,9 @@ get_parameter__Q24zNPC4baseFPCcPbb:
 /* 800FE824 000FB624  48 00 01 51 */	bl get_parameter__Q24zNPC4baseFPCcPPCcPCc
 /* 800FE828 000FB628  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 800FE82C 000FB62C  41 82 00 44 */	beq lbl_800FE870
-/* 800FE830 000FB630  3C 80 80 2E */	lis r4, $$2stringBase0_69@ha
+/* 800FE830 000FB630  3C 80 80 2E */	lis r4, _esc__2_stringBase0_69@ha
 /* 800FE834 000FB634  80 61 00 08 */	lwz r3, 8(r1)
-/* 800FE838 000FB638  38 84 FC 60 */	addi r4, r4, $$2stringBase0_69@l
+/* 800FE838 000FB638  38 84 FC 60 */	addi r4, r4, _esc__2_stringBase0_69@l
 /* 800FE83C 000FB63C  3B E0 00 00 */	li r31, 0
 /* 800FE840 000FB640  38 84 00 48 */	addi r4, r4, 0x48
 /* 800FE844 000FB644  48 1C 33 6D */	bl stricmp
@@ -905,3 +907,6 @@ destroy__Q24zNPC4baseFv:
 CreateAnimTable__Q24zNPC4baseFP10xAnimTable:
 /* 800FEAC0 000FB8C0  38 60 00 00 */	li r3, 0
 /* 800FEAC4 000FB8C4  4E 80 00 20 */	blr 
+
+.endif
+

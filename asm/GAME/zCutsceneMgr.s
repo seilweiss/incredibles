@@ -8,8 +8,8 @@ cutsceneHackTable:
 
 .section .rodata
 
-.global $$2stringBase0_44
-$$2stringBase0_44:
+.global _esc__2_stringBase0_44
+_esc__2_stringBase0_44:
 	.incbin "baserom.dol", 0x2D7C88, 0x2C8
 
 .section .sbss
@@ -23,17 +23,17 @@ ents_hidden:
 .global thisShouldAlwaysBeFalseItsJustToFoolTheStupidCompiler
 thisShouldAlwaysBeFalseItsJustToFoolTheStupidCompiler:
 	.skip 0x3
-.global doCineFX$1227
-doCineFX$1227:
+.global doCineFX_esc__7_1227
+doCineFX_esc__7_1227:
 	.skip 0x4
-.global init$1228
-init$1228:
+.global init_esc__7_1228
+init_esc__7_1228:
 	.skip 0x4
 
 .section .sbss2
 
-.global $$21270_0
-$$21270_0:
+.global _esc__2_1270_0
+_esc__2_1270_0:
 	.skip 0x8
 
 .section .sdata
@@ -44,9 +44,11 @@ demoDisableHackTable:
 
 .section .sdata2
 
-.global $$21186_1
-$$21186_1:
+.global _esc__2_1186_1
+_esc__2_1186_1:
 	.incbin "baserom.dol", 0x32FF18, 0x8
+
+.if 0
 
 .section .text
 
@@ -431,7 +433,7 @@ lbl_800A03A8:
 /* 800A042C 0009D22C  C0 03 00 04 */	lfs f0, 4(r3)
 /* 800A0430 0009D230  D0 1F 00 1C */	stfs f0, 0x1c(r31)
 /* 800A0434 0009D234  41 82 00 14 */	beq lbl_800A0448
-/* 800A0438 0009D238  C0 22 98 38 */	lfs f1, $$21186_1-_SDA2_BASE_(r2)
+/* 800A0438 0009D238  C0 22 98 38 */	lfs f1, _esc__2_1186_1-_SDA2_BASE_(r2)
 /* 800A043C 0009D23C  C0 1E 00 04 */	lfs f0, 4(r30)
 /* 800A0440 0009D240  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 800A0444 0009D244  41 82 00 84 */	beq lbl_800A04C8
@@ -581,7 +583,7 @@ zCutsceneMgrUpdate__FP5xBaseP6xScenef:
 /* 800A0610 0009D410  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 800A0614 0009D414  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 800A0618 0009D418  BF C1 00 08 */	stmw r30, 8(r1)
-/* 800A061C 0009D41C  88 0D C5 34 */	lbz r0, init$1228-_SDA_BASE_(r13)
+/* 800A061C 0009D41C  88 0D C5 34 */	lbz r0, init_esc__7_1228-_SDA_BASE_(r13)
 /* 800A0620 0009D420  FF E0 08 90 */	fmr f31, f1
 /* 800A0624 0009D424  7C 7F 1B 78 */	mr r31, r3
 /* 800A0628 0009D428  7C 9E 23 78 */	mr r30, r4
@@ -589,8 +591,8 @@ zCutsceneMgrUpdate__FP5xBaseP6xScenef:
 /* 800A0630 0009D430  40 82 00 14 */	bne lbl_800A0644
 /* 800A0634 0009D434  38 60 00 00 */	li r3, 0
 /* 800A0638 0009D438  38 00 00 01 */	li r0, 1
-/* 800A063C 0009D43C  90 6D C5 30 */	stw r3, doCineFX$1227-_SDA_BASE_(r13)
-/* 800A0640 0009D440  98 0D C5 34 */	stb r0, init$1228-_SDA_BASE_(r13)
+/* 800A063C 0009D43C  90 6D C5 30 */	stw r3, doCineFX_esc__7_1227-_SDA_BASE_(r13)
+/* 800A0640 0009D440  98 0D C5 34 */	stb r0, init_esc__7_1228-_SDA_BASE_(r13)
 lbl_800A0644:
 /* 800A0644 0009D444  48 02 D9 35 */	bl zGameIsPaused__Fv
 /* 800A0648 0009D448  2C 03 00 00 */	cmpwi r3, 0
@@ -616,7 +618,7 @@ lbl_800A0684:
 /* 800A0694 0009D494  4B F7 C3 C1 */	bl xCutscene_Destroy__FP9xCutscene
 /* 800A0698 0009D498  2C 03 00 00 */	cmpwi r3, 0
 /* 800A069C 0009D49C  41 82 01 A8 */	beq lbl_800A0844
-/* 800A06A0 0009D4A0  80 0D C5 30 */	lwz r0, doCineFX$1227-_SDA_BASE_(r13)
+/* 800A06A0 0009D4A0  80 0D C5 30 */	lwz r0, doCineFX_esc__7_1227-_SDA_BASE_(r13)
 /* 800A06A4 0009D4A4  2C 00 00 00 */	cmpwi r0, 0
 /* 800A06A8 0009D4A8  41 82 00 14 */	beq lbl_800A06BC
 /* 800A06AC 0009D4AC  FC 20 F8 90 */	fmr f1, f31
@@ -626,7 +628,7 @@ lbl_800A0684:
 lbl_800A06BC:
 /* 800A06BC 0009D4BC  38 00 00 00 */	li r0, 0
 /* 800A06C0 0009D4C0  7F E3 FB 78 */	mr r3, r31
-/* 800A06C4 0009D4C4  90 0D C5 30 */	stw r0, doCineFX$1227-_SDA_BASE_(r13)
+/* 800A06C4 0009D4C4  90 0D C5 30 */	stw r0, doCineFX_esc__7_1227-_SDA_BASE_(r13)
 /* 800A06C8 0009D4C8  4B FF FF 35 */	bl zCutsceneMgrKillFX__FP12zCutsceneMgr
 /* 800A06CC 0009D4CC  38 00 00 00 */	li r0, 0
 /* 800A06D0 0009D4D0  3C 60 80 38 */	lis r3, globals@ha
@@ -641,16 +643,16 @@ lbl_800A06F0:
 /* 800A06F0 0009D4F0  80 03 00 3C */	lwz r0, 0x3c(r3)
 /* 800A06F4 0009D4F4  28 00 00 00 */	cmplwi r0, 0
 /* 800A06F8 0009D4F8  41 82 01 1C */	beq lbl_800A0814
-/* 800A06FC 0009D4FC  80 0D C5 30 */	lwz r0, doCineFX$1227-_SDA_BASE_(r13)
+/* 800A06FC 0009D4FC  80 0D C5 30 */	lwz r0, doCineFX_esc__7_1227-_SDA_BASE_(r13)
 /* 800A0700 0009D500  2C 00 00 00 */	cmpwi r0, 0
 /* 800A0704 0009D504  40 82 00 18 */	bne lbl_800A071C
 /* 800A0708 0009D508  FC 20 F8 90 */	fmr f1, f31
 /* 800A070C 0009D50C  7F C3 F3 78 */	mr r3, r30
 /* 800A0710 0009D510  7F E4 FB 78 */	mr r4, r31
 /* 800A0714 0009D514  48 14 9A 95 */	bl zCineFXCutscenePrep__FPC6xScenefPC12zCutsceneMgr
-/* 800A0718 0009D518  90 6D C5 30 */	stw r3, doCineFX$1227-_SDA_BASE_(r13)
+/* 800A0718 0009D518  90 6D C5 30 */	stw r3, doCineFX_esc__7_1227-_SDA_BASE_(r13)
 lbl_800A071C:
-/* 800A071C 0009D51C  80 0D C5 30 */	lwz r0, doCineFX$1227-_SDA_BASE_(r13)
+/* 800A071C 0009D51C  80 0D C5 30 */	lwz r0, doCineFX_esc__7_1227-_SDA_BASE_(r13)
 /* 800A0720 0009D520  2C 00 00 00 */	cmpwi r0, 0
 /* 800A0724 0009D524  41 82 00 14 */	beq lbl_800A0738
 /* 800A0728 0009D528  FC 20 F8 90 */	fmr f1, f31
@@ -670,7 +672,7 @@ lbl_800A0738:
 /* 800A075C 0009D55C  2C 03 00 00 */	cmpwi r3, 0
 /* 800A0760 0009D560  40 82 00 E4 */	bne lbl_800A0844
 lbl_800A0764:
-/* 800A0764 0009D564  80 0D C5 30 */	lwz r0, doCineFX$1227-_SDA_BASE_(r13)
+/* 800A0764 0009D564  80 0D C5 30 */	lwz r0, doCineFX_esc__7_1227-_SDA_BASE_(r13)
 /* 800A0768 0009D568  2C 00 00 00 */	cmpwi r0, 0
 /* 800A076C 0009D56C  41 82 00 14 */	beq lbl_800A0780
 /* 800A0770 0009D570  FC 20 F8 90 */	fmr f1, f31
@@ -679,7 +681,7 @@ lbl_800A0764:
 /* 800A077C 0009D57C  48 14 9A E5 */	bl zCineFXCutsceneDone__FPC6xScenefPC12zCutsceneMgr
 lbl_800A0780:
 /* 800A0780 0009D580  38 00 00 00 */	li r0, 0
-/* 800A0784 0009D584  90 0D C5 30 */	stw r0, doCineFX$1227-_SDA_BASE_(r13)
+/* 800A0784 0009D584  90 0D C5 30 */	stw r0, doCineFX_esc__7_1227-_SDA_BASE_(r13)
 /* 800A0788 0009D588  80 7F 00 14 */	lwz r3, 0x14(r31)
 /* 800A078C 0009D58C  4B F7 C2 C9 */	bl xCutscene_Destroy__FP9xCutscene
 /* 800A0790 0009D590  2C 03 00 00 */	cmpwi r3, 0
@@ -712,7 +714,7 @@ lbl_800A07D0:
 /* 800A07F4 0009D5F4  7F E4 FB 78 */	mr r4, r31
 /* 800A07F8 0009D5F8  38 A0 00 BF */	li r5, 0xbf
 /* 800A07FC 0009D5FC  4B F7 BD 51 */	bl zEntEvent__FP5xBaseP5xBaseUi
-/* 800A0800 0009D600  C0 22 98 38 */	lfs f1, $$21186_1-_SDA2_BASE_(r2)
+/* 800A0800 0009D600  C0 22 98 38 */	lfs f1, _esc__2_1186_1-_SDA2_BASE_(r2)
 /* 800A0804 0009D604  FC 40 08 90 */	fmr f2, f1
 /* 800A0808 0009D608  4B F6 56 59 */	bl iCameraSetNearFarClip__Fff
 /* 800A080C 0009D60C  48 00 00 38 */	b lbl_800A0844
@@ -729,7 +731,7 @@ lbl_800A0814:
 /* 800A0834 0009D634  7F C3 F3 78 */	mr r3, r30
 /* 800A0838 0009D638  7F E4 FB 78 */	mr r4, r31
 /* 800A083C 0009D63C  48 14 99 6D */	bl zCineFXCutscenePrep__FPC6xScenefPC12zCutsceneMgr
-/* 800A0840 0009D640  90 6D C5 30 */	stw r3, doCineFX$1227-_SDA_BASE_(r13)
+/* 800A0840 0009D640  90 6D C5 30 */	stw r3, doCineFX_esc__7_1227-_SDA_BASE_(r13)
 lbl_800A0844:
 /* 800A0844 0009D644  48 00 00 91 */	bl check_hide_entities__Fv
 lbl_800A0848:
@@ -760,9 +762,9 @@ zCutsceneMgr_Started__Fv:
 /* 800A089C 0009D69C  38 80 00 08 */	li r4, 8
 /* 800A08A0 0009D6A0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 800A08A4 0009D6A4  4B F8 94 0D */	bl zEntEvent__FP5xBaseUi
-/* 800A08A8 0009D6A8  80 02 ED F8 */	lwz r0, $$21270_0-_SDA2_BASE_(r2)
+/* 800A08A8 0009D6A8  80 02 ED F8 */	lwz r0, _esc__2_1270_0-_SDA2_BASE_(r2)
 /* 800A08AC 0009D6AC  38 61 00 08 */	addi r3, r1, 8
-/* 800A08B0 0009D6B0  C0 22 98 38 */	lfs f1, $$21186_1-_SDA2_BASE_(r2)
+/* 800A08B0 0009D6B0  C0 22 98 38 */	lfs f1, _esc__2_1186_1-_SDA2_BASE_(r2)
 /* 800A08B4 0009D6B4  7C 64 1B 78 */	mr r4, r3
 /* 800A08B8 0009D6B8  90 01 00 08 */	stw r0, 8(r1)
 /* 800A08BC 0009D6BC  38 A0 00 00 */	li r5, 0
@@ -842,3 +844,6 @@ lbl_800A09B4:
 /* 800A09BC 0009D7BC  7C 08 03 A6 */	mtlr r0
 /* 800A09C0 0009D7C0  38 21 00 10 */	addi r1, r1, 0x10
 /* 800A09C4 0009D7C4  4E 80 00 20 */	blr 
+
+.endif
+

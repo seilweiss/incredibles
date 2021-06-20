@@ -2,15 +2,17 @@
 
 .section .bss
 
-.global mgr$886
-mgr$886:
+.global mgr_esc__7_886
+mgr_esc__7_886:
 	.skip 0x2030
 
 .section .sbss
 
-.global init$887
-init$887:
+.global init_esc__7_887
+init_esc__7_887:
 	.skip 0x8
+
+.if 0
 
 .section .text
 
@@ -478,18 +480,18 @@ Get__15xTextureManagerFv:
 /* 8006E860 0006B660  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8006E864 0006B664  7C 08 02 A6 */	mflr r0
 /* 8006E868 0006B668  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8006E86C 0006B66C  88 0D BF 60 */	lbz r0, init$887-_SDA_BASE_(r13)
+/* 8006E86C 0006B66C  88 0D BF 60 */	lbz r0, init_esc__7_887-_SDA_BASE_(r13)
 /* 8006E870 0006B670  7C 00 07 75 */	extsb. r0, r0
 /* 8006E874 0006B674  40 82 00 18 */	bne lbl_8006E88C
-/* 8006E878 0006B678  3C 60 80 35 */	lis r3, mgr$886@ha
-/* 8006E87C 0006B67C  38 63 F8 F0 */	addi r3, r3, mgr$886@l
+/* 8006E878 0006B678  3C 60 80 35 */	lis r3, mgr_esc__7_886@ha
+/* 8006E87C 0006B67C  38 63 F8 F0 */	addi r3, r3, mgr_esc__7_886@l
 /* 8006E880 0006B680  48 00 00 25 */	bl __ct__15xTextureManagerFv
 /* 8006E884 0006B684  38 00 00 01 */	li r0, 1
-/* 8006E888 0006B688  98 0D BF 60 */	stb r0, init$887-_SDA_BASE_(r13)
+/* 8006E888 0006B688  98 0D BF 60 */	stb r0, init_esc__7_887-_SDA_BASE_(r13)
 lbl_8006E88C:
 /* 8006E88C 0006B68C  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 8006E890 0006B690  3C 60 80 35 */	lis r3, mgr$886@ha
-/* 8006E894 0006B694  38 63 F8 F0 */	addi r3, r3, mgr$886@l
+/* 8006E890 0006B690  3C 60 80 35 */	lis r3, mgr_esc__7_886@ha
+/* 8006E894 0006B694  38 63 F8 F0 */	addi r3, r3, mgr_esc__7_886@l
 /* 8006E898 0006B698  7C 08 03 A6 */	mtlr r0
 /* 8006E89C 0006B69C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8006E8A0 0006B6A0  4E 80 00 20 */	blr 
@@ -694,7 +696,7 @@ lbl_8006EB40:
 /* 8006EB44 0006B944  41 82 01 08 */	beq lbl_8006EC4C
 /* 8006EB48 0006B948  83 DA 00 08 */	lwz r30, 8(r26)
 /* 8006EB4C 0006B94C  80 7E 00 10 */	lwz r3, 0x10(r30)
-/* 8006EB50 0006B950  48 00 01 11 */	bl DiskSize__29$$2unnamed$$2xTextureManager_cpp$$2FUi
+/* 8006EB50 0006B950  48 00 01 11 */	bl DiskSize__29_esc__2_unnamed_esc__2_xTextureManager_cpp_esc__2_FUi
 /* 8006EB54 0006B954  7C 7D 1B 78 */	mr r29, r3
 /* 8006EB58 0006B958  54 7B 08 3C */	slwi r27, r3, 1
 /* 8006EB5C 0006B95C  48 00 00 18 */	b lbl_8006EB74
@@ -766,8 +768,8 @@ lbl_8006EC4C:
 /* 8006EC58 0006BA58  38 21 00 20 */	addi r1, r1, 0x20
 /* 8006EC5C 0006BA5C  4E 80 00 20 */	blr 
 
-.global DiskSize__29$$2unnamed$$2xTextureManager_cpp$$2FUi
-DiskSize__29$$2unnamed$$2xTextureManager_cpp$$2FUi:
+.global DiskSize__29_esc__2_unnamed_esc__2_xTextureManager_cpp_esc__2_FUi
+DiskSize__29_esc__2_unnamed_esc__2_xTextureManager_cpp_esc__2_FUi:
 /* 8006EC60 0006BA60  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8006EC64 0006BA64  7C 08 02 A6 */	mflr r0
 /* 8006EC68 0006BA68  90 01 00 14 */	stw r0, 0x14(r1)
@@ -814,7 +816,7 @@ clearNode__15xTextureManagerFP20xInternalTextureNode:
 /* 8006ECF4 0006BAF4  7C 7E 1B 78 */	mr r30, r3
 /* 8006ECF8 0006BAF8  7C 9F 23 78 */	mr r31, r4
 /* 8006ECFC 0006BAFC  80 64 00 10 */	lwz r3, 0x10(r4)
-/* 8006ED00 0006BB00  4B FF FF 61 */	bl DiskSize__29$$2unnamed$$2xTextureManager_cpp$$2FUi
+/* 8006ED00 0006BB00  4B FF FF 61 */	bl DiskSize__29_esc__2_unnamed_esc__2_xTextureManager_cpp_esc__2_FUi
 /* 8006ED04 0006BB04  80 9E 00 04 */	lwz r4, 4(r30)
 /* 8006ED08 0006BB08  38 00 00 00 */	li r0, 0
 /* 8006ED0C 0006BB0C  7C 63 20 50 */	subf r3, r3, r4
@@ -972,3 +974,6 @@ lbl_8006EF04:
 /* 8006EF1C 0006BD1C  7C 08 03 A6 */	mtlr r0
 /* 8006EF20 0006BD20  38 21 00 20 */	addi r1, r1, 0x20
 /* 8006EF24 0006BD24  4E 80 00 20 */	blr 
+
+.endif
+

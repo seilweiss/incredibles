@@ -5,8 +5,8 @@
 .global bump_layers
 bump_layers:
 	.incbin "baserom.dol", 0x2E65B8, 0x60
-.global $$2stringBase0_138
-$$2stringBase0_138:
+.global _esc__2_stringBase0_138
+_esc__2_stringBase0_138:
 	.incbin "baserom.dol", 0x2E6618, 0x30
 
 .section .sbss
@@ -59,66 +59,68 @@ enableWater:
 
 .section .sdata2
 
-.global $$2961_1
-$$2961_1:
+.global _esc__2_961_1
+_esc__2_961_1:
 	.incbin "baserom.dol", 0x333838, 0x4
-.global $$2986_0
-$$2986_0:
+.global _esc__2_986_0
+_esc__2_986_0:
 	.incbin "baserom.dol", 0x33383C, 0x4
-.global $$2988_2
-$$2988_2:
+.global _esc__2_988_2
+_esc__2_988_2:
 	.incbin "baserom.dol", 0x333840, 0x8
-.global $$21013_3
-$$21013_3:
+.global _esc__2_1013_3
+_esc__2_1013_3:
 	.incbin "baserom.dol", 0x333848, 0x4
-.global $$21029_5
-$$21029_5:
+.global _esc__2_1029_5
+_esc__2_1029_5:
 	.incbin "baserom.dol", 0x33384C, 0x4
-.global $$21031_2
-$$21031_2:
+.global _esc__2_1031_2
+_esc__2_1031_2:
 	.incbin "baserom.dol", 0x333850, 0x8
 .global waterHackColor
 waterHackColor:
 	.incbin "baserom.dol", 0x333858, 0x10
-.global $$21162_0
-$$21162_0:
+.global _esc__2_1162_0
+_esc__2_1162_0:
 	.incbin "baserom.dol", 0x333868, 0x4
-.global $$21163_1
-$$21163_1:
+.global _esc__2_1163_1
+_esc__2_1163_1:
 	.incbin "baserom.dol", 0x33386C, 0x4
-.global $$21164_2
-$$21164_2:
+.global _esc__2_1164_2
+_esc__2_1164_2:
 	.incbin "baserom.dol", 0x333870, 0x4
-.global $$21165_1
-$$21165_1:
+.global _esc__2_1165_1
+_esc__2_1165_1:
 	.incbin "baserom.dol", 0x333874, 0x4
-.global $$21166_3
-$$21166_3:
+.global _esc__2_1166_3
+_esc__2_1166_3:
 	.incbin "baserom.dol", 0x333878, 0x4
-.global $$21167_6
-$$21167_6:
+.global _esc__2_1167_6
+_esc__2_1167_6:
 	.incbin "baserom.dol", 0x33387C, 0x4
-.global $$21168_4
-$$21168_4:
+.global _esc__2_1168_4
+_esc__2_1168_4:
 	.incbin "baserom.dol", 0x333880, 0x4
 .global camscale
 camscale:
 	.incbin "baserom.dol", 0x333884, 0xC
-.global $$21261_3
-$$21261_3:
+.global _esc__2_1261_3
+_esc__2_1261_3:
 	.incbin "baserom.dol", 0x333890, 0x4
-.global $$21262_3
-$$21262_3:
+.global _esc__2_1262_3
+_esc__2_1262_3:
 	.incbin "baserom.dol", 0x333894, 0x4
-.global $$21263_5
-$$21263_5:
+.global _esc__2_1263_5
+_esc__2_1263_5:
 	.incbin "baserom.dol", 0x333898, 0x4
 .global NJ02start
 NJ02start:
 	.incbin "baserom.dol", 0x33389C, 0xC
-.global $$21308_1
-$$21308_1:
+.global _esc__2_1308_1
+_esc__2_1308_1:
 	.incbin "baserom.dol", 0x3338A8, 0x4
+
+.if 0
 
 .section .text
 
@@ -135,7 +137,7 @@ CreateDirectionalLight__Fv:
 /* 801D6D40 001D3B40  48 0B D7 AD */	bl RwFrameCreate
 /* 801D6D44 001D3B44  7C 7E 1B 79 */	or. r30, r3, r3
 /* 801D6D48 001D3B48  41 82 00 38 */	beq lbl_801D6D80
-/* 801D6D4C 001D3B4C  C0 02 D1 58 */	lfs f0, $$2961_1-_SDA2_BASE_(r2)
+/* 801D6D4C 001D3B4C  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
 /* 801D6D50 001D3B50  7F E3 FB 78 */	mr r3, r31
 /* 801D6D54 001D3B54  38 81 00 08 */	addi r4, r1, 8
 /* 801D6D58 001D3B58  D0 01 00 10 */	stfs f0, 0x10(r1)
@@ -194,11 +196,11 @@ iWaterBumpGenRenderLayer__FP8RwCameraP9RwTextureffUcf:
 /* 801D6E14 001D3C14  6C 84 80 00 */	xoris r4, r4, 0x8000
 /* 801D6E18 001D3C18  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 801D6E1C 001D3C1C  90 81 00 6C */	stw r4, 0x6c(r1)
-/* 801D6E20 001D3C20  C0 22 D1 5C */	lfs f1, $$2986_0-_SDA2_BASE_(r2)
+/* 801D6E20 001D3C20  C0 22 D1 5C */	lfs f1, _esc__2_986_0-_SDA2_BASE_(r2)
 /* 801D6E24 001D3C24  38 81 00 08 */	addi r4, r1, 8
 /* 801D6E28 001D3C28  90 61 00 74 */	stw r3, 0x74(r1)
 /* 801D6E2C 001D3C2C  38 60 00 04 */	li r3, 4
-/* 801D6E30 001D3C30  C8 62 D1 60 */	lfd f3, $$2988_2-_SDA2_BASE_(r2)
+/* 801D6E30 001D3C30  C8 62 D1 60 */	lfd f3, _esc__2_988_2-_SDA2_BASE_(r2)
 /* 801D6E34 001D3C34  38 A0 00 04 */	li r5, 4
 /* 801D6E38 001D3C38  90 C1 00 70 */	stw r6, 0x70(r1)
 /* 801D6E3C 001D3C3C  C8 41 00 68 */	lfd f2, 0x68(r1)
@@ -342,17 +344,17 @@ lbl_801D7028:
 /* 801D7028 001D3E28  80 6D B8 08 */	lwz r3, gFrameCount-_SDA_BASE_(r13)
 /* 801D702C 001D3E2C  3C 00 43 30 */	lis r0, 0x4330
 /* 801D7030 001D3E30  90 01 00 10 */	stw r0, 0x10(r1)
-/* 801D7034 001D3E34  C8 22 D1 70 */	lfd f1, $$21031_2-_SDA2_BASE_(r2)
+/* 801D7034 001D3E34  C8 22 D1 70 */	lfd f1, _esc__2_1031_2-_SDA2_BASE_(r2)
 /* 801D7038 001D3E38  90 61 00 14 */	stw r3, 0x14(r1)
-/* 801D703C 001D3E3C  C0 62 D1 6C */	lfs f3, $$21029_5-_SDA2_BASE_(r2)
+/* 801D703C 001D3E3C  C0 62 D1 6C */	lfs f3, _esc__2_1029_5-_SDA2_BASE_(r2)
 /* 801D7040 001D3E40  C8 01 00 10 */	lfd f0, 0x10(r1)
-/* 801D7044 001D3E44  C0 42 D1 58 */	lfs f2, $$2961_1-_SDA2_BASE_(r2)
+/* 801D7044 001D3E44  C0 42 D1 58 */	lfs f2, _esc__2_961_1-_SDA2_BASE_(r2)
 /* 801D7048 001D3E48  EC 00 08 28 */	fsubs f0, f0, f1
 /* 801D704C 001D3E4C  EC 23 00 32 */	fmuls f1, f3, f0
 /* 801D7050 001D3E50  4B E6 7F FD */	bl xfmod__Fff
 /* 801D7054 001D3E54  80 0D DA 84 */	lwz r0, clonedShadowCamera-_SDA_BASE_(r13)
 /* 801D7058 001D3E58  FF E0 08 90 */	fmr f31, f1
-/* 801D705C 001D3E5C  80 62 D1 68 */	lwz r3, $$21013_3-_SDA2_BASE_(r2)
+/* 801D705C 001D3E5C  80 62 D1 68 */	lwz r3, _esc__2_1013_3-_SDA2_BASE_(r2)
 /* 801D7060 001D3E60  28 00 00 00 */	cmplwi r0, 0
 /* 801D7064 001D3E64  90 61 00 08 */	stw r3, 8(r1)
 /* 801D7068 001D3E68  40 82 00 18 */	bne lbl_801D7080
@@ -535,12 +537,12 @@ iWaterSceneEnter__FP7RpWorld:
 /* 801D72B0 001D40B0  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 801D72B4 001D40B4  7C 08 02 A6 */	mflr r0
 /* 801D72B8 001D40B8  3C 80 80 38 */	lis r4, globals@ha
-/* 801D72BC 001D40BC  3C 60 80 2F */	lis r3, $$2stringBase0_138@ha
+/* 801D72BC 001D40BC  3C 60 80 2F */	lis r3, _esc__2_stringBase0_138@ha
 /* 801D72C0 001D40C0  90 01 00 64 */	stw r0, 0x64(r1)
 /* 801D72C4 001D40C4  38 00 00 00 */	li r0, 0
 /* 801D72C8 001D40C8  BF 41 00 48 */	stmw r26, 0x48(r1)
 /* 801D72CC 001D40CC  3B E4 2A 38 */	addi r31, r4, globals@l
-/* 801D72D0 001D40D0  3B C3 96 18 */	addi r30, r3, $$2stringBase0_138@l
+/* 801D72D0 001D40D0  3B C3 96 18 */	addi r30, r3, _esc__2_stringBase0_138@l
 /* 801D72D4 001D40D4  80 9F 04 C8 */	lwz r4, 0x4c8(r31)
 /* 801D72D8 001D40D8  80 64 02 4C */	lwz r3, 0x24c(r4)
 /* 801D72DC 001D40DC  83 84 04 80 */	lwz r28, 0x480(r4)
@@ -617,8 +619,8 @@ lbl_801D73BC:
 /* 801D73E0 001D41E0  41 82 00 6C */	beq lbl_801D744C
 /* 801D73E4 001D41E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801D73E8 001D41E8  38 81 00 08 */	addi r4, r1, 8
-/* 801D73EC 001D41EC  C0 02 D1 5C */	lfs f0, $$2986_0-_SDA2_BASE_(r2)
-/* 801D73F0 001D41F0  C0 22 D1 58 */	lfs f1, $$2961_1-_SDA2_BASE_(r2)
+/* 801D73EC 001D41EC  C0 02 D1 5C */	lfs f0, _esc__2_986_0-_SDA2_BASE_(r2)
+/* 801D73F0 001D41F0  C0 22 D1 58 */	lfs f1, _esc__2_961_1-_SDA2_BASE_(r2)
 /* 801D73F4 001D41F4  64 00 00 02 */	oris r0, r0, 2
 /* 801D73F8 001D41F8  60 00 00 03 */	ori r0, r0, 3
 /* 801D73FC 001D41FC  D0 01 00 18 */	stfs f0, 0x18(r1)
@@ -682,33 +684,33 @@ lbl_801D74CC:
 /* 801D74D4 001D42D4  40 80 00 40 */	bge lbl_801D7514
 /* 801D74D8 001D42D8  48 00 00 20 */	b lbl_801D74F8
 lbl_801D74DC:
-/* 801D74DC 001D42DC  C0 42 D1 88 */	lfs f2, $$21162_0-_SDA2_BASE_(r2)
-/* 801D74E0 001D42E0  C0 22 D1 8C */	lfs f1, $$21163_1-_SDA2_BASE_(r2)
-/* 801D74E4 001D42E4  C0 02 D1 58 */	lfs f0, $$2961_1-_SDA2_BASE_(r2)
+/* 801D74DC 001D42DC  C0 42 D1 88 */	lfs f2, _esc__2_1162_0-_SDA2_BASE_(r2)
+/* 801D74E0 001D42E0  C0 22 D1 8C */	lfs f1, _esc__2_1163_1-_SDA2_BASE_(r2)
+/* 801D74E4 001D42E4  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
 /* 801D74E8 001D42E8  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
 /* 801D74EC 001D42EC  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
 /* 801D74F0 001D42F0  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
 /* 801D74F4 001D42F4  48 00 00 54 */	b lbl_801D7548
 lbl_801D74F8:
-/* 801D74F8 001D42F8  C0 42 D1 90 */	lfs f2, $$21164_2-_SDA2_BASE_(r2)
-/* 801D74FC 001D42FC  C0 22 D1 94 */	lfs f1, $$21165_1-_SDA2_BASE_(r2)
-/* 801D7500 001D4300  C0 02 D1 58 */	lfs f0, $$2961_1-_SDA2_BASE_(r2)
+/* 801D74F8 001D42F8  C0 42 D1 90 */	lfs f2, _esc__2_1164_2-_SDA2_BASE_(r2)
+/* 801D74FC 001D42FC  C0 22 D1 94 */	lfs f1, _esc__2_1165_1-_SDA2_BASE_(r2)
+/* 801D7500 001D4300  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
 /* 801D7504 001D4304  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
 /* 801D7508 001D4308  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
 /* 801D750C 001D430C  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
 /* 801D7510 001D4310  48 00 00 38 */	b lbl_801D7548
 lbl_801D7514:
-/* 801D7514 001D4314  C0 42 D1 98 */	lfs f2, $$21166_3-_SDA2_BASE_(r2)
-/* 801D7518 001D4318  C0 22 D1 9C */	lfs f1, $$21167_6-_SDA2_BASE_(r2)
-/* 801D751C 001D431C  C0 02 D1 58 */	lfs f0, $$2961_1-_SDA2_BASE_(r2)
+/* 801D7514 001D4314  C0 42 D1 98 */	lfs f2, _esc__2_1166_3-_SDA2_BASE_(r2)
+/* 801D7518 001D4318  C0 22 D1 9C */	lfs f1, _esc__2_1167_6-_SDA2_BASE_(r2)
+/* 801D751C 001D431C  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
 /* 801D7520 001D4320  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
 /* 801D7524 001D4324  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
 /* 801D7528 001D4328  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
 /* 801D752C 001D432C  48 00 00 1C */	b lbl_801D7548
 lbl_801D7530:
-/* 801D7530 001D4330  C0 42 D1 98 */	lfs f2, $$21166_3-_SDA2_BASE_(r2)
-/* 801D7534 001D4334  C0 22 D1 A0 */	lfs f1, $$21168_4-_SDA2_BASE_(r2)
-/* 801D7538 001D4338  C0 02 D1 58 */	lfs f0, $$2961_1-_SDA2_BASE_(r2)
+/* 801D7530 001D4330  C0 42 D1 98 */	lfs f2, _esc__2_1166_3-_SDA2_BASE_(r2)
+/* 801D7534 001D4334  C0 22 D1 A0 */	lfs f1, _esc__2_1168_4-_SDA2_BASE_(r2)
+/* 801D7538 001D4338  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
 /* 801D753C 001D433C  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
 /* 801D7540 001D4340  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
 /* 801D7544 001D4344  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
@@ -779,7 +781,7 @@ iWaterUpdateEMBM__Ffi:
 /* 801D7618 001D4418  7C 03 18 40 */	cmplw r3, r3
 /* 801D761C 001D441C  7C 7E 1B 78 */	mr r30, r3
 /* 801D7620 001D4420  40 82 00 10 */	bne lbl_801D7630
-/* 801D7624 001D4424  C0 22 D1 58 */	lfs f1, $$2961_1-_SDA2_BASE_(r2)
+/* 801D7624 001D4424  C0 22 D1 58 */	lfs f1, _esc__2_961_1-_SDA2_BASE_(r2)
 /* 801D7628 001D4428  48 00 11 6D */	bl TextureDiffBumpRGBA8__FP9RwTexturef
 /* 801D762C 001D442C  48 00 00 10 */	b lbl_801D763C
 lbl_801D7630:
@@ -834,15 +836,15 @@ lbl_801D7654:
 /* 801D76E4 001D44E4  38 61 00 08 */	addi r3, r1, 8
 /* 801D76E8 001D44E8  80 04 00 0C */	lwz r0, 0xc(r4)
 /* 801D76EC 001D44EC  38 82 89 F0 */	addi r4, r2, g_O3-_SDA2_BASE_
-/* 801D76F0 001D44F0  C8 22 D1 70 */	lfd f1, $$21031_2-_SDA2_BASE_(r2)
+/* 801D76F0 001D44F0  C8 22 D1 70 */	lfd f1, _esc__2_1031_2-_SDA2_BASE_(r2)
 /* 801D76F4 001D44F4  90 01 00 1C */	stw r0, 0x1c(r1)
-/* 801D76F8 001D44F8  C0 62 D1 B0 */	lfs f3, $$21261_3-_SDA2_BASE_(r2)
+/* 801D76F8 001D44F8  C0 62 D1 B0 */	lfs f3, _esc__2_1261_3-_SDA2_BASE_(r2)
 /* 801D76FC 001D44FC  C8 01 00 18 */	lfd f0, 0x18(r1)
 /* 801D7700 001D4500  C0 8D AB 24 */	lfs f4, BumpWidth-_SDA_BASE_(r13)
 /* 801D7704 001D4504  EC 00 08 28 */	fsubs f0, f0, f1
 /* 801D7708 001D4508  80 BF 00 40 */	lwz r5, 0x40(r31)
-/* 801D770C 001D450C  C0 42 D1 B4 */	lfs f2, $$21262_3-_SDA2_BASE_(r2)
-/* 801D7710 001D4510  C0 22 D1 B8 */	lfs f1, $$21263_5-_SDA2_BASE_(r2)
+/* 801D770C 001D450C  C0 42 D1 B4 */	lfs f2, _esc__2_1262_3-_SDA2_BASE_(r2)
+/* 801D7710 001D4510  C0 22 D1 B8 */	lfs f1, _esc__2_1263_5-_SDA2_BASE_(r2)
 /* 801D7714 001D4514  EC 03 00 24 */	fdivs f0, f3, f0
 /* 801D7718 001D4518  EC 04 00 32 */	fmuls f0, f4, f0
 /* 801D771C 001D451C  D0 05 00 0C */	stfs f0, 0xc(r5)
@@ -867,7 +869,7 @@ lbl_801D7654:
 /* 801D7768 001D4568  80 AD DA 6C */	lwz r5, iWaterDirectionalLight-_SDA_BASE_(r13)
 /* 801D776C 001D456C  83 85 00 04 */	lwz r28, 4(r5)
 /* 801D7770 001D4570  4B E3 39 39 */	bl __as__5xVec3FRC5xVec3
-/* 801D7774 001D4574  C0 22 D1 58 */	lfs f1, $$2961_1-_SDA2_BASE_(r2)
+/* 801D7774 001D4574  C0 22 D1 58 */	lfs f1, _esc__2_961_1-_SDA2_BASE_(r2)
 /* 801D7778 001D4578  38 61 00 08 */	addi r3, r1, 8
 /* 801D777C 001D457C  38 82 8A 08 */	addi r4, r2, g_Y3-_SDA2_BASE_
 /* 801D7780 001D4580  4B E3 1F 9D */	bl xVec3AddScaled__FP5xVec3PC5xVec3f
@@ -1007,20 +1009,20 @@ lbl_801D7960:
 /* 801D7968 001D4768  4B E4 F2 B9 */	bl xEntGetPos__FPC4xEnt
 /* 801D796C 001D476C  38 82 D1 BC */	addi r4, r2, NJ02start-_SDA2_BASE_
 /* 801D7970 001D4770  4B E3 43 AD */	bl xVec3Dist2__FPC5xVec3PC5xVec3
-/* 801D7974 001D4774  C0 02 D1 C8 */	lfs f0, $$21308_1-_SDA2_BASE_(r2)
+/* 801D7974 001D4774  C0 02 D1 C8 */	lfs f0, _esc__2_1308_1-_SDA2_BASE_(r2)
 /* 801D7978 001D4778  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801D797C 001D477C  40 80 00 20 */	bge lbl_801D799C
-/* 801D7980 001D4780  C0 42 D1 90 */	lfs f2, $$21164_2-_SDA2_BASE_(r2)
-/* 801D7984 001D4784  C0 22 D1 94 */	lfs f1, $$21165_1-_SDA2_BASE_(r2)
-/* 801D7988 001D4788  C0 02 D1 58 */	lfs f0, $$2961_1-_SDA2_BASE_(r2)
+/* 801D7980 001D4780  C0 42 D1 90 */	lfs f2, _esc__2_1164_2-_SDA2_BASE_(r2)
+/* 801D7984 001D4784  C0 22 D1 94 */	lfs f1, _esc__2_1165_1-_SDA2_BASE_(r2)
+/* 801D7988 001D4788  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
 /* 801D798C 001D478C  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
 /* 801D7990 001D4790  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
 /* 801D7994 001D4794  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
 /* 801D7998 001D4798  48 00 00 1C */	b lbl_801D79B4
 lbl_801D799C:
-/* 801D799C 001D479C  C0 42 D1 98 */	lfs f2, $$21166_3-_SDA2_BASE_(r2)
-/* 801D79A0 001D47A0  C0 22 D1 A0 */	lfs f1, $$21168_4-_SDA2_BASE_(r2)
-/* 801D79A4 001D47A4  C0 02 D1 58 */	lfs f0, $$2961_1-_SDA2_BASE_(r2)
+/* 801D799C 001D479C  C0 42 D1 98 */	lfs f2, _esc__2_1166_3-_SDA2_BASE_(r2)
+/* 801D79A0 001D47A0  C0 22 D1 A0 */	lfs f1, _esc__2_1168_4-_SDA2_BASE_(r2)
+/* 801D79A4 001D47A4  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
 /* 801D79A8 001D47A8  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
 /* 801D79AC 001D47AC  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
 /* 801D79B0 001D47B0  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
@@ -1124,3 +1126,6 @@ lbl_801D7B00:
 /* 801D7B08 001D4908  7C 08 03 A6 */	mtlr r0
 /* 801D7B0C 001D490C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801D7B10 001D4910  4E 80 00 20 */	blr 
+
+.endif
+

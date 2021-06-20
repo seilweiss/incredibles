@@ -2,9 +2,11 @@
 
 .section .rodata
 
-.global $$2stringBase0_13
-$$2stringBase0_13:
+.global _esc__2_stringBase0_13
+_esc__2_stringBase0_13:
 	.incbin "baserom.dol", 0x2CEDD0, 0x10
+
+.if 0
 
 .section .text
 
@@ -142,22 +144,22 @@ lbl_8003F3C8:
 lbl_8003F460:
 /* 8003F460 0003C260  98 1A 00 00 */	stb r0, 0(r26)
 lbl_8003F464:
-/* 8003F464 0003C264  3C 80 80 2D */	lis r4, $$2stringBase0_13@ha
+/* 8003F464 0003C264  3C 80 80 2D */	lis r4, _esc__2_stringBase0_13@ha
 /* 8003F468 0003C268  7F 43 D3 78 */	mr r3, r26
-/* 8003F46C 0003C26C  38 84 1D D0 */	addi r4, r4, $$2stringBase0_13@l
+/* 8003F46C 0003C26C  38 84 1D D0 */	addi r4, r4, _esc__2_stringBase0_13@l
 /* 8003F470 0003C270  38 A1 00 08 */	addi r5, r1, 8
 /* 8003F474 0003C274  48 02 D8 75 */	bl xStrTok__FPcPCcPPc
 /* 8003F478 0003C278  28 03 00 00 */	cmplwi r3, 0
 /* 8003F47C 0003C27C  40 82 00 1C */	bne lbl_8003F498
-/* 8003F480 0003C280  3C 80 80 2D */	lis r4, $$2stringBase0_13@ha
+/* 8003F480 0003C280  3C 80 80 2D */	lis r4, _esc__2_stringBase0_13@ha
 /* 8003F484 0003C284  7F C3 F3 78 */	mr r3, r30
-/* 8003F488 0003C288  38 84 1D D0 */	addi r4, r4, $$2stringBase0_13@l
+/* 8003F488 0003C288  38 84 1D D0 */	addi r4, r4, _esc__2_stringBase0_13@l
 /* 8003F48C 0003C28C  38 A1 00 08 */	addi r5, r1, 8
 /* 8003F490 0003C290  48 02 D8 59 */	bl xStrTok__FPcPCcPPc
 /* 8003F494 0003C294  3B C0 00 00 */	li r30, 0
 lbl_8003F498:
-/* 8003F498 0003C298  3C 80 80 2D */	lis r4, $$2stringBase0_13@ha
-/* 8003F49C 0003C29C  3B 44 1D D0 */	addi r26, r4, $$2stringBase0_13@l
+/* 8003F498 0003C298  3C 80 80 2D */	lis r4, _esc__2_stringBase0_13@ha
+/* 8003F49C 0003C29C  3B 44 1D D0 */	addi r26, r4, _esc__2_stringBase0_13@l
 /* 8003F4A0 0003C2A0  48 00 01 A4 */	b lbl_8003F644
 lbl_8003F4A4:
 /* 8003F4A4 0003C2A4  4B FF FD FD */	bl TrimWhitespace__FPc
@@ -170,8 +172,8 @@ lbl_8003F4A4:
 /* 8003F4C0 0003C2C0  41 82 01 4C */	beq lbl_8003F60C
 /* 8003F4C4 0003C2C4  2C 04 00 5B */	cmpwi r4, 0x5b
 /* 8003F4C8 0003C2C8  40 82 00 88 */	bne lbl_8003F550
-/* 8003F4CC 0003C2CC  3C 80 80 2D */	lis r4, $$2stringBase0_13@ha
-/* 8003F4D0 0003C2D0  38 84 1D D0 */	addi r4, r4, $$2stringBase0_13@l
+/* 8003F4CC 0003C2CC  3C 80 80 2D */	lis r4, _esc__2_stringBase0_13@ha
+/* 8003F4D0 0003C2D0  38 84 1D D0 */	addi r4, r4, _esc__2_stringBase0_13@l
 /* 8003F4D4 0003C2D4  38 84 00 03 */	addi r4, r4, 3
 /* 8003F4D8 0003C2D8  48 00 01 8D */	bl strstr__3stdFPcPCc
 /* 8003F4DC 0003C2DC  28 03 00 00 */	cmplwi r3, 0
@@ -204,8 +206,8 @@ lbl_8003F4A4:
 /* 8003F548 0003C348  90 1C 00 04 */	stw r0, 4(r28)
 /* 8003F54C 0003C34C  48 00 00 C0 */	b lbl_8003F60C
 lbl_8003F550:
-/* 8003F550 0003C350  3C 80 80 2D */	lis r4, $$2stringBase0_13@ha
-/* 8003F554 0003C354  38 84 1D D0 */	addi r4, r4, $$2stringBase0_13@l
+/* 8003F550 0003C350  3C 80 80 2D */	lis r4, _esc__2_stringBase0_13@ha
+/* 8003F554 0003C354  38 84 1D D0 */	addi r4, r4, _esc__2_stringBase0_13@l
 /* 8003F558 0003C358  38 84 00 05 */	addi r4, r4, 5
 /* 8003F55C 0003C35C  48 00 01 09 */	bl strstr__3stdFPcPCc
 /* 8003F560 0003C360  7C 7D 1B 79 */	or. r29, r3, r3
@@ -218,9 +220,9 @@ lbl_8003F550:
 /* 8003F57C 0003C37C  88 03 00 00 */	lbz r0, 0(r3)
 /* 8003F580 0003C380  7C 00 07 75 */	extsb. r0, r0
 /* 8003F584 0003C384  41 82 00 88 */	beq lbl_8003F60C
-/* 8003F588 0003C388  3C 60 80 2D */	lis r3, $$2stringBase0_13@ha
+/* 8003F588 0003C388  3C 60 80 2D */	lis r3, _esc__2_stringBase0_13@ha
 /* 8003F58C 0003C38C  3B BD 00 01 */	addi r29, r29, 1
-/* 8003F590 0003C390  38 83 1D D0 */	addi r4, r3, $$2stringBase0_13@l
+/* 8003F590 0003C390  38 83 1D D0 */	addi r4, r3, _esc__2_stringBase0_13@l
 /* 8003F594 0003C394  7F A3 EB 78 */	mr r3, r29
 /* 8003F598 0003C398  38 84 00 07 */	addi r4, r4, 7
 /* 8003F59C 0003C39C  48 00 00 C9 */	bl strstr__3stdFPcPCc
@@ -261,9 +263,9 @@ lbl_8003F60C:
 /* 8003F620 0003C420  40 82 00 24 */	bne lbl_8003F644
 /* 8003F624 0003C424  28 1E 00 00 */	cmplwi r30, 0
 /* 8003F628 0003C428  41 82 00 1C */	beq lbl_8003F644
-/* 8003F62C 0003C42C  3C 80 80 2D */	lis r4, $$2stringBase0_13@ha
+/* 8003F62C 0003C42C  3C 80 80 2D */	lis r4, _esc__2_stringBase0_13@ha
 /* 8003F630 0003C430  7F C3 F3 78 */	mr r3, r30
-/* 8003F634 0003C434  38 84 1D D0 */	addi r4, r4, $$2stringBase0_13@l
+/* 8003F634 0003C434  38 84 1D D0 */	addi r4, r4, _esc__2_stringBase0_13@l
 /* 8003F638 0003C438  38 A1 00 08 */	addi r5, r1, 8
 /* 8003F63C 0003C43C  48 02 D6 AD */	bl xStrTok__FPcPCcPPc
 /* 8003F640 0003C440  3B C0 00 00 */	li r30, 0
@@ -493,3 +495,6 @@ lbl_8003F914:
 /* 8003F91C 0003C71C  7C 08 03 A6 */	mtlr r0
 /* 8003F920 0003C720  38 21 00 20 */	addi r1, r1, 0x20
 /* 8003F924 0003C724  4E 80 00 20 */	blr 
+
+.endif
+

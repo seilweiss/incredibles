@@ -29,9 +29,11 @@ asyncThreadDone:
 
 .section .sdata2
 
-.global $$2675_0
-$$2675_0:
+.global _esc__2_675_0
+_esc__2_675_0:
 	.incbin "baserom.dol", 0x32F7B0, 0x8
+
+.if 0
 
 .section .text
 
@@ -104,7 +106,7 @@ iAsyncBeginUpdate__Fv:
 /* 800731FC 0006FFFC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80073200 00070000  38 63 59 4E */	addi r3, r3, 0x4153594E@l
 /* 80073204 00070004  48 1B ED 31 */	bl OSCancelAlarms
-/* 80073208 00070008  C0 22 90 D0 */	lfs f1, $$2675_0-_SDA2_BASE_(r2)
+/* 80073208 00070008  C0 22 90 D0 */	lfs f1, _esc__2_675_0-_SDA2_BASE_(r2)
 /* 8007320C 0007000C  38 60 00 00 */	li r3, 0
 /* 80073210 00070010  4B FD C7 85 */	bl xPadUpdate__Fif
 /* 80073214 00070014  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -197,3 +199,6 @@ lbl_80073330:
 /* 80073334 00070134  7C 08 03 A6 */	mtlr r0
 /* 80073338 00070138  38 21 00 10 */	addi r1, r1, 0x10
 /* 8007333C 0007013C  4E 80 00 20 */	blr 
+
+.endif
+

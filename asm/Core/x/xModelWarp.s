@@ -2,36 +2,38 @@
 
 .section .bss
 
-.global camtex__24$$2unnamed$$2xModelWarp_cpp$$2
-camtex__24$$2unnamed$$2xModelWarp_cpp$$2:
+.global camtex__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_
+camtex__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_:
 	.skip 0x50
-.global render_contexts__24$$2unnamed$$2xModelWarp_cpp$$2
-render_contexts__24$$2unnamed$$2xModelWarp_cpp$$2:
+.global render_contexts__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_
+render_contexts__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_:
 	.skip 0x400
 
 .section .sbss
 
-.global render_contexts_size__24$$2unnamed$$2xModelWarp_cpp$$2
-render_contexts_size__24$$2unnamed$$2xModelWarp_cpp$$2:
+.global render_contexts_size__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_
+render_contexts_size__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_:
 	.skip 0x8
 
 .section .sdata2
 
-.global $$2779_0
-$$2779_0:
+.global _esc__2_779_0
+_esc__2_779_0:
 	.incbin "baserom.dol", 0x333BA0, 0x4
-.global $$2874_0
-$$2874_0:
+.global _esc__2_874_0
+_esc__2_874_0:
 	.incbin "baserom.dol", 0x333BA4, 0x4
+
+.if 0
 
 .section .text
 
-.global add_tweaks__Q224$$2unnamed$$2xModelWarp_cpp$$25tweakFv
-add_tweaks__Q224$$2unnamed$$2xModelWarp_cpp$$25tweakFv:
+.global add_tweaks__Q224_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_5tweakFv
+add_tweaks__Q224_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_5tweakFv:
 /* 801E4D08 001E1B08  4E 80 00 20 */	blr 
 
-.global destroy_render_context__24$$2unnamed$$2xModelWarp_cpp$$2FRQ224$$2unnamed$$2xModelWarp_cpp$$214render_context
-destroy_render_context__24$$2unnamed$$2xModelWarp_cpp$$2FRQ224$$2unnamed$$2xModelWarp_cpp$$214render_context:
+.global destroy_render_context__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_FRQ224_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_14render_context
+destroy_render_context__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_FRQ224_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_14render_context:
 /* 801E4D0C 001E1B0C  80 03 00 74 */	lwz r0, 0x74(r3)
 /* 801E4D10 001E1B10  80 83 00 70 */	lwz r4, 0x70(r3)
 /* 801E4D14 001E1B14  90 04 00 48 */	stw r0, 0x48(r4)
@@ -48,24 +50,24 @@ destroy_render_context__24$$2unnamed$$2xModelWarp_cpp$$2FRQ224$$2unnamed$$2xMode
 xModelWarpSceneEnter__Fv:
 /* 801E4D38 001E1B38  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801E4D3C 001E1B3C  7C 08 02 A6 */	mflr r0
-/* 801E4D40 001E1B40  3C 60 80 3A */	lis r3, camtex__24$$2unnamed$$2xModelWarp_cpp$$2@ha
+/* 801E4D40 001E1B40  3C 60 80 3A */	lis r3, camtex__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_@ha
 /* 801E4D44 001E1B44  38 80 02 00 */	li r4, 0x200
 /* 801E4D48 001E1B48  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801E4D4C 001E1B4C  38 63 F7 20 */	addi r3, r3, camtex__24$$2unnamed$$2xModelWarp_cpp$$2@l
+/* 801E4D4C 001E1B4C  38 63 F7 20 */	addi r3, r3, camtex__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_@l
 /* 801E4D50 001E1B50  38 A0 01 00 */	li r5, 0x100
 /* 801E4D54 001E1B54  38 C0 00 00 */	li r6, 0
 /* 801E4D58 001E1B58  38 E0 00 20 */	li r7, 0x20
 /* 801E4D5C 001E1B5C  39 00 00 20 */	li r8, 0x20
 /* 801E4D60 001E1B60  4B FB 1C F9 */	bl create__16xFXCameraTextureFiibii
 /* 801E4D64 001E1B64  80 02 82 44 */	lwz r0, g_CLEAR-_SDA2_BASE_(r2)
-/* 801E4D68 001E1B68  3C 60 80 3A */	lis r3, camtex__24$$2unnamed$$2xModelWarp_cpp$$2@ha
-/* 801E4D6C 001E1B6C  38 63 F7 20 */	addi r3, r3, camtex__24$$2unnamed$$2xModelWarp_cpp$$2@l
+/* 801E4D68 001E1B68  3C 60 80 3A */	lis r3, camtex__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_@ha
+/* 801E4D6C 001E1B6C  38 63 F7 20 */	addi r3, r3, camtex__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_@l
 /* 801E4D70 001E1B70  38 81 00 08 */	addi r4, r1, 8
 /* 801E4D74 001E1B74  90 01 00 08 */	stw r0, 8(r1)
 /* 801E4D78 001E1B78  4B FF 1F 05 */	bl set_background__16xFXCameraTextureF10xColor_tag
 /* 801E4D7C 001E1B7C  38 00 00 00 */	li r0, 0
-/* 801E4D80 001E1B80  90 0D DC 10 */	stw r0, render_contexts_size__24$$2unnamed$$2xModelWarp_cpp$$2-_SDA_BASE_(r13)
-/* 801E4D84 001E1B84  4B FF FF 85 */	bl add_tweaks__Q224$$2unnamed$$2xModelWarp_cpp$$25tweakFv
+/* 801E4D80 001E1B80  90 0D DC 10 */	stw r0, render_contexts_size__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801E4D84 001E1B84  4B FF FF 85 */	bl add_tweaks__Q224_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_5tweakFv
 /* 801E4D88 001E1B88  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801E4D8C 001E1B8C  7C 08 03 A6 */	mtlr r0
 /* 801E4D90 001E1B90  38 21 00 10 */	addi r1, r1, 0x10
@@ -75,26 +77,26 @@ xModelWarpSceneEnter__Fv:
 xModelWarpSceneExit__Fv:
 /* 801E4D98 001E1B98  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801E4D9C 001E1B9C  7C 08 02 A6 */	mflr r0
-/* 801E4DA0 001E1BA0  3C 60 80 3A */	lis r3, render_contexts__24$$2unnamed$$2xModelWarp_cpp$$2@ha
+/* 801E4DA0 001E1BA0  3C 60 80 3A */	lis r3, render_contexts__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_@ha
 /* 801E4DA4 001E1BA4  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801E4DA8 001E1BA8  38 63 F7 70 */	addi r3, r3, render_contexts__24$$2unnamed$$2xModelWarp_cpp$$2@l
+/* 801E4DA8 001E1BA8  38 63 F7 70 */	addi r3, r3, render_contexts__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_@l
 /* 801E4DAC 001E1BAC  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801E4DB0 001E1BB0  7C 7F 1B 78 */	mr r31, r3
-/* 801E4DB4 001E1BB4  80 0D DC 10 */	lwz r0, render_contexts_size__24$$2unnamed$$2xModelWarp_cpp$$2-_SDA_BASE_(r13)
+/* 801E4DB4 001E1BB4  80 0D DC 10 */	lwz r0, render_contexts_size__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E4DB8 001E1BB8  54 00 38 30 */	slwi r0, r0, 7
 /* 801E4DBC 001E1BBC  7F C3 02 14 */	add r30, r3, r0
 /* 801E4DC0 001E1BC0  48 00 00 10 */	b lbl_801E4DD0
 lbl_801E4DC4:
 /* 801E4DC4 001E1BC4  7F E3 FB 78 */	mr r3, r31
-/* 801E4DC8 001E1BC8  4B FF FF 45 */	bl destroy_render_context__24$$2unnamed$$2xModelWarp_cpp$$2FRQ224$$2unnamed$$2xModelWarp_cpp$$214render_context
+/* 801E4DC8 001E1BC8  4B FF FF 45 */	bl destroy_render_context__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_FRQ224_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_14render_context
 /* 801E4DCC 001E1BCC  3B FF 00 80 */	addi r31, r31, 0x80
 lbl_801E4DD0:
 /* 801E4DD0 001E1BD0  7C 1F F0 40 */	cmplw r31, r30
 /* 801E4DD4 001E1BD4  40 82 FF F0 */	bne lbl_801E4DC4
 /* 801E4DD8 001E1BD8  38 00 00 00 */	li r0, 0
-/* 801E4DDC 001E1BDC  3C 60 80 3A */	lis r3, camtex__24$$2unnamed$$2xModelWarp_cpp$$2@ha
-/* 801E4DE0 001E1BE0  90 0D DC 10 */	stw r0, render_contexts_size__24$$2unnamed$$2xModelWarp_cpp$$2-_SDA_BASE_(r13)
-/* 801E4DE4 001E1BE4  38 63 F7 20 */	addi r3, r3, camtex__24$$2unnamed$$2xModelWarp_cpp$$2@l
+/* 801E4DDC 001E1BDC  3C 60 80 3A */	lis r3, camtex__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_@ha
+/* 801E4DE0 001E1BE0  90 0D DC 10 */	stw r0, render_contexts_size__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801E4DE4 001E1BE4  38 63 F7 20 */	addi r3, r3, camtex__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_@l
 /* 801E4DE8 001E1BE8  4B FB 1F 41 */	bl destroy__16xFXCameraTextureFv
 /* 801E4DEC 001E1BEC  BB C1 00 08 */	lmw r30, 8(r1)
 /* 801E4DF0 001E1BF0  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -114,9 +116,9 @@ xModelWarpSphereMapUVsByNormals__FP5xVec2iPC5xVec3:
 /* 801E4E1C 001E1C1C  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 801E4E20 001E1C20  7C 7D 1B 78 */	mr r29, r3
 /* 801E4E24 001E1C24  54 80 18 38 */	slwi r0, r4, 3
-/* 801E4E28 001E1C28  C3 C2 D4 C4 */	lfs f30, $$2874_0-_SDA2_BASE_(r2)
+/* 801E4E28 001E1C28  C3 C2 D4 C4 */	lfs f30, _esc__2_874_0-_SDA2_BASE_(r2)
 /* 801E4E2C 001E1C2C  7C BE 2B 78 */	mr r30, r5
-/* 801E4E30 001E1C30  C3 E2 D4 C0 */	lfs f31, $$2779_0-_SDA2_BASE_(r2)
+/* 801E4E30 001E1C30  C3 E2 D4 C0 */	lfs f31, _esc__2_779_0-_SDA2_BASE_(r2)
 /* 801E4E34 001E1C34  7F FD 02 14 */	add r31, r29, r0
 /* 801E4E38 001E1C38  48 00 00 2C */	b lbl_801E4E64
 lbl_801E4E3C:
@@ -142,3 +144,6 @@ lbl_801E4E64:
 /* 801E4E84 001E1C84  7C 08 03 A6 */	mtlr r0
 /* 801E4E88 001E1C88  38 21 00 40 */	addi r1, r1, 0x40
 /* 801E4E8C 001E1C8C  4E 80 00 20 */	blr 
+
+.endif
+

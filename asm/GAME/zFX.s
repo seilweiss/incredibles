@@ -5,15 +5,17 @@
 .global gFXSurfaceFlags
 gFXSurfaceFlags:
 	.skip 0x8
-.global ribbonCount__27$$2unnamed$$2zFXRibbonPool_cpp$$2
-ribbonCount__27$$2unnamed$$2zFXRibbonPool_cpp$$2:
+.global ribbonCount__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_
+ribbonCount__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_:
 	.skip 0x4
-.global ribbonPool__27$$2unnamed$$2zFXRibbonPool_cpp$$2
-ribbonPool__27$$2unnamed$$2zFXRibbonPool_cpp$$2:
+.global ribbonPool__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_
+ribbonPool__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_:
 	.skip 0x4
-.global ribbonInUse__27$$2unnamed$$2zFXRibbonPool_cpp$$2
-ribbonInUse__27$$2unnamed$$2zFXRibbonPool_cpp$$2:
+.global ribbonInUse__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_
+ribbonInUse__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_:
 	.skip 0x8
+
+.if 0
 
 .section .text
 
@@ -59,3 +61,6 @@ zFX_SceneExit__FP7RpWorld:
 .global zFX_SceneReset__Fv
 zFX_SceneReset__Fv:
 /* 800CCAF8 000C98F8  4E 80 00 20 */	blr 
+
+.endif
+

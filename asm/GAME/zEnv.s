@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global zEnvInit__FPvPv
@@ -299,3 +301,6 @@ lbl_800C2EDC:
 /* 800C2EE0 000BFCE0  7C 08 03 A6 */	mtlr r0
 /* 800C2EE4 000BFCE4  38 21 00 10 */	addi r1, r1, 0x10
 /* 800C2EE8 000BFCE8  4E 80 00 20 */	blr 
+
+.endif
+

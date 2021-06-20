@@ -17,17 +17,17 @@ world__6zAsync:
 .global screen__6zAsync
 screen__6zAsync:
 	.skip 0x4
-.global rot$982
-rot$982:
+.global rot_esc__7_982
+rot_esc__7_982:
 	.skip 0x4
-.global init$983
-init$983:
+.global init_esc__7_983
+init_esc__7_983:
 	.skip 0x8
 
 .section .sbss2
 
-.global $$2991_7
-$$2991_7:
+.global _esc__2_991_7
+_esc__2_991_7:
 	.skip 0x8
 
 .section .sdata2
@@ -35,11 +35,11 @@ $$2991_7:
 .global lbl_803D5A14
 lbl_803D5A14:
 	.incbin "baserom.dol", 0x3323D4, 0x4
-.global $$2964_1
-$$2964_1:
+.global _esc__2_964_1
+_esc__2_964_1:
 	.incbin "baserom.dol", 0x3323D8, 0x18
-.global $$2965_0
-$$2965_0:
+.global _esc__2_965_0
+_esc__2_965_0:
 	.incbin "baserom.dol", 0x3323F0, 0x4
 .global lbl_803D5A34
 lbl_803D5A34:
@@ -47,8 +47,8 @@ lbl_803D5A34:
 .global lbl_803D5A38
 lbl_803D5A38:
 	.incbin "baserom.dol", 0x3323F8, 0x4
-.global $$2966
-$$2966:
+.global _esc__2_966
+_esc__2_966:
 	.incbin "baserom.dol", 0x3323FC, 0x4
 .global lbl_803D5A40
 lbl_803D5A40:
@@ -59,12 +59,14 @@ lbl_803D5A44:
 .global lbl_803D5A48
 lbl_803D5A48:
 	.incbin "baserom.dol", 0x332408, 0x4
-.global $$21005_1
-$$21005_1:
+.global _esc__2_1005_1
+_esc__2_1005_1:
 	.incbin "baserom.dol", 0x33240C, 0x4
-.global $$21006_1
-$$21006_1:
+.global _esc__2_1006_1
+_esc__2_1006_1:
 	.incbin "baserom.dol", 0x332410, 0x8
+
+.if 0
 
 .section .text
 
@@ -100,10 +102,10 @@ lbl_80174950:
 /* 80174960 00171760  42 00 FF F0 */	bdnz lbl_80174950
 /* 80174964 00171764  38 61 00 24 */	addi r3, r1, 0x24
 /* 80174968 00171768  48 10 13 E1 */	bl RpWorldCreate
-/* 8017496C 0017176C  80 82 BD 10 */	lwz r4, $$2965_0-_SDA2_BASE_(r2)
+/* 8017496C 0017176C  80 82 BD 10 */	lwz r4, _esc__2_965_0-_SDA2_BASE_(r2)
 /* 80174970 00171770  81 22 BD 14 */	lwz r9, lbl_803D5A34-_SDA2_BASE_(r2)
 /* 80174974 00171774  81 02 BD 18 */	lwz r8, lbl_803D5A38-_SDA2_BASE_(r2)
-/* 80174978 00171778  80 E2 BD 1C */	lwz r7, $$2966-_SDA2_BASE_(r2)
+/* 80174978 00171778  80 E2 BD 1C */	lwz r7, _esc__2_966-_SDA2_BASE_(r2)
 /* 8017497C 0017177C  80 C2 BD 20 */	lwz r6, lbl_803D5A40-_SDA2_BASE_(r2)
 /* 80174980 00171780  80 A2 BD 24 */	lwz r5, lbl_803D5A44-_SDA2_BASE_(r2)
 /* 80174984 00171784  80 02 BD 28 */	lwz r0, lbl_803D5A48-_SDA2_BASE_(r2)
@@ -195,19 +197,19 @@ RenderThread__6zAsyncFPv:
 /* 80174ABC 001718BC  DB C1 00 30 */	stfd f30, 0x30(r1)
 /* 80174AC0 001718C0  F3 C1 00 38 */	psq_st f30, 56(r1), 0, qr0
 /* 80174AC4 001718C4  BF 61 00 1C */	stmw r27, 0x1c(r1)
-/* 80174AC8 001718C8  88 0D D3 80 */	lbz r0, init$983-_SDA_BASE_(r13)
+/* 80174AC8 001718C8  88 0D D3 80 */	lbz r0, init_esc__7_983-_SDA_BASE_(r13)
 /* 80174ACC 001718CC  7C 00 07 75 */	extsb. r0, r0
 /* 80174AD0 001718D0  40 82 00 14 */	bne lbl_80174AE4
-/* 80174AD4 001718D4  C0 02 BD 2C */	lfs f0, $$21005_1-_SDA2_BASE_(r2)
+/* 80174AD4 001718D4  C0 02 BD 2C */	lfs f0, _esc__2_1005_1-_SDA2_BASE_(r2)
 /* 80174AD8 001718D8  38 00 00 01 */	li r0, 1
-/* 80174ADC 001718DC  98 0D D3 80 */	stb r0, init$983-_SDA_BASE_(r13)
-/* 80174AE0 001718E0  D0 0D D3 7C */	stfs f0, rot$982-_SDA_BASE_(r13)
+/* 80174ADC 001718DC  98 0D D3 80 */	stb r0, init_esc__7_983-_SDA_BASE_(r13)
+/* 80174AE0 001718E0  D0 0D D3 7C */	stfs f0, rot_esc__7_982-_SDA_BASE_(r13)
 lbl_80174AE4:
 /* 80174AE4 001718E4  4B F0 D7 E1 */	bl iTimeGet__Fv
 /* 80174AE8 001718E8  3C A0 80 38 */	lis r5, globals@ha
 /* 80174AEC 001718EC  38 00 00 01 */	li r0, 1
 /* 80174AF0 001718F0  3B C5 2A 38 */	addi r30, r5, globals@l
-/* 80174AF4 001718F4  C3 E2 BD 2C */	lfs f31, $$21005_1-_SDA2_BASE_(r2)
+/* 80174AF4 001718F4  C3 E2 BD 2C */	lfs f31, _esc__2_1005_1-_SDA2_BASE_(r2)
 /* 80174AF8 001718F8  98 1E 04 90 */	stb r0, 0x490(r30)
 /* 80174AFC 001718FC  7C 9C 23 78 */	mr r28, r4
 /* 80174B00 00171900  7C 7D 1B 78 */	mr r29, r3
@@ -225,9 +227,9 @@ lbl_80174B08:
 /* 80174B2C 0017192C  FF C0 08 90 */	fmr f30, f1
 /* 80174B30 00171930  FC 1F F0 00 */	fcmpu cr0, f31, f30
 /* 80174B34 00171934  40 82 00 08 */	bne lbl_80174B3C
-/* 80174B38 00171938  C3 C2 BD 30 */	lfs f30, $$21006_1-_SDA2_BASE_(r2)
+/* 80174B38 00171938  C3 C2 BD 30 */	lfs f30, _esc__2_1006_1-_SDA2_BASE_(r2)
 lbl_80174B3C:
-/* 80174B3C 0017193C  80 02 F4 70 */	lwz r0, $$2991_7-_SDA2_BASE_(r2)
+/* 80174B3C 0017193C  80 02 F4 70 */	lwz r0, _esc__2_991_7-_SDA2_BASE_(r2)
 /* 80174B40 00171940  7F 7C DB 78 */	mr r28, r27
 /* 80174B44 00171944  7F FD FB 78 */	mr r29, r31
 /* 80174B48 00171948  90 01 00 08 */	stw r0, 8(r1)
@@ -310,3 +312,6 @@ xMemScratchInUse__Fv:
 /* 80174C58 00171A58  30 03 FF FF */	addic r0, r3, -1
 /* 80174C5C 00171A5C  7C 60 19 10 */	subfe r3, r0, r3
 /* 80174C60 00171A60  4E 80 00 20 */	blr 
+
+.endif
+

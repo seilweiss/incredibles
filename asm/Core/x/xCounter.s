@@ -2,23 +2,25 @@
 
 .section .rodata
 
-.global $$2stringBase0_3
-$$2stringBase0_3:
+.global _esc__2_stringBase0_3
+_esc__2_stringBase0_3:
 	.incbin "baserom.dol", 0x2CE938, 0x28
+
+.if 0
 
 .section .text
 
-.global add_tweaks__22$$2unnamed$$2xCounter_cpp$$2FR9_xCounter
-add_tweaks__22$$2unnamed$$2xCounter_cpp$$2FR9_xCounter:
+.global add_tweaks__22_esc__2_unnamed_esc__2_xCounter_cpp_esc__2_FR9_xCounter
+add_tweaks__22_esc__2_unnamed_esc__2_xCounter_cpp_esc__2_FR9_xCounter:
 /* 8001C1F0 00018FF0  4E 80 00 20 */	blr 
 
 .global xCounterInit__Fv
 xCounterInit__Fv:
 /* 8001C1F4 00018FF4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8001C1F8 00018FF8  7C 08 02 A6 */	mflr r0
-/* 8001C1FC 00018FFC  3C 60 80 2D */	lis r3, $$2stringBase0_3@ha
+/* 8001C1FC 00018FFC  3C 60 80 2D */	lis r3, _esc__2_stringBase0_3@ha
 /* 8001C200 00019000  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8001C204 00019004  38 63 19 38 */	addi r3, r3, $$2stringBase0_3@l
+/* 8001C204 00019004  38 63 19 38 */	addi r3, r3, _esc__2_stringBase0_3@l
 /* 8001C208 00019008  4B FF 24 A5 */	bl xDebugRemoveTweak__FPCc
 /* 8001C20C 0001900C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8001C210 00019010  7C 08 03 A6 */	mtlr r0
@@ -65,7 +67,7 @@ lbl_8001C28C:
 /* 8001C294 00019094  98 1F 00 16 */	stb r0, 0x16(r31)
 /* 8001C298 00019098  A8 1E 00 08 */	lha r0, 8(r30)
 /* 8001C29C 0001909C  B0 1F 00 14 */	sth r0, 0x14(r31)
-/* 8001C2A0 000190A0  4B FF FF 51 */	bl add_tweaks__22$$2unnamed$$2xCounter_cpp$$2FR9_xCounter
+/* 8001C2A0 000190A0  4B FF FF 51 */	bl add_tweaks__22_esc__2_unnamed_esc__2_xCounter_cpp_esc__2_FR9_xCounter
 /* 8001C2A4 000190A4  BB C1 00 08 */	lmw r30, 8(r1)
 /* 8001C2A8 000190A8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8001C2AC 000190AC  7C 08 03 A6 */	mtlr r0
@@ -287,3 +289,6 @@ reset_flags__Q28xtextbox3jotFv:
 /* 8001C588 00019388  38 00 00 00 */	li r0, 0
 /* 8001C58C 0001938C  B0 03 00 08 */	sth r0, 8(r3)
 /* 8001C590 00019390  4E 80 00 20 */	blr 
+
+.endif
+

@@ -26,9 +26,11 @@ gOccludeCalcCount:
 
 .section .sdata2
 
-.global $$21056_3
-$$21056_3:
+.global _esc__2_1056_3
+_esc__2_1056_3:
 	.incbin "baserom.dol", 0x3322C8, 0x8
+
+.if 0
 
 .section .text
 
@@ -148,7 +150,7 @@ zVolume_OccludePrecalc__FP5xVec3:
 /* 80170328 0016D128  3C 80 80 39 */	lis r4, gOccludeCalc@ha
 /* 8017032C 0016D12C  90 0D D2 94 */	stw r0, gOccludeCalcCount-_SDA_BASE_(r13)
 /* 80170330 0016D130  7C 79 1B 78 */	mr r25, r3
-/* 80170334 0016D134  C3 E2 BB E8 */	lfs f31, $$21056_3-_SDA2_BASE_(r2)
+/* 80170334 0016D134  C3 E2 BB E8 */	lfs f31, _esc__2_1056_3-_SDA2_BASE_(r2)
 /* 80170338 0016D138  3B C1 00 6C */	addi r30, r1, 0x6c
 /* 8017033C 0016D13C  3B A1 00 78 */	addi r29, r1, 0x78
 /* 80170340 0016D140  3B 81 00 90 */	addi r28, r1, 0x90
@@ -423,3 +425,6 @@ lbl_80170720:
 /* 80170724 0016D524  7C 08 03 A6 */	mtlr r0
 /* 80170728 0016D528  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017072C 0016D52C  4E 80 00 20 */	blr 
+
+.endif
+

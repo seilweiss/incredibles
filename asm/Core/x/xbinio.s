@@ -14,11 +14,11 @@ g_xtraload:
 
 .section .rodata
 
-.global $$2875
-$$2875:
+.global _esc__2_875
+_esc__2_875:
 	.incbin "baserom.dol", 0x2CE788, 0x114
-.global $$2stringBase0_0
-$$2stringBase0_0:
+.global _esc__2_stringBase0_0
+_esc__2_stringBase0_0:
 	.incbin "baserom.dol", 0x2CE89C, 0xC
 
 .section .sbss
@@ -32,6 +32,8 @@ g_async_context:
 .global g_loadlock
 g_loadlock:
 	.incbin "baserom.dol", 0x32AFC8, 0x8
+
+.if 0
 
 .section .text
 
@@ -103,7 +105,7 @@ lbl_8000C744:
 /* 8000C7C8 000095C8  3D 80 80 01 */	lis r12, ReadIDoubles__FP15st_FILELOADINFOPdi@ha
 /* 8000C7CC 000095CC  90 1F 00 0C */	stw r0, 0xc(r31)
 /* 8000C7D0 000095D0  38 06 CC 34 */	addi r0, r6, ReadMDoubles__FP15st_FILELOADINFOPdi@l
-/* 8000C7D4 000095D4  3C 60 80 2D */	lis r3, $$2stringBase0_0@ha
+/* 8000C7D4 000095D4  3C 60 80 2D */	lis r3, _esc__2_stringBase0_0@ha
 /* 8000C7D8 000095D8  3D 60 80 01 */	lis r11, AsyncIRead__FP15st_FILELOADINFOiPcii@ha
 /* 8000C7DC 000095DC  90 FF 00 10 */	stw r7, 0x10(r31)
 /* 8000C7E0 000095E0  3D 40 80 01 */	lis r10, AsyncMRead__FP15st_FILELOADINFOiPcii@ha
@@ -111,7 +113,7 @@ lbl_8000C744:
 /* 8000C7E8 000095E8  3D 00 80 01 */	lis r8, SkipBytes__FP15st_FILELOADINFOi@ha
 /* 8000C7EC 000095EC  90 1F 00 14 */	stw r0, 0x14(r31)
 /* 8000C7F0 000095F0  38 04 CC A8 */	addi r0, r4, ReadILongs__FP15st_FILELOADINFOPii@l
-/* 8000C7F4 000095F4  38 83 18 9C */	addi r4, r3, $$2stringBase0_0@l
+/* 8000C7F4 000095F4  38 83 18 9C */	addi r4, r3, _esc__2_stringBase0_0@l
 /* 8000C7F8 000095F8  38 6C CD 40 */	addi r3, r12, ReadIDoubles__FP15st_FILELOADINFOPdi@l
 /* 8000C7FC 000095FC  90 BF 00 18 */	stw r5, 0x18(r31)
 /* 8000C800 00009600  39 89 CD D4 */	addi r12, r9, AsyncReadStatus__FP15st_FILELOADINFO@l
@@ -634,12 +636,12 @@ lbl_8000CE60:
 BFD_open__FPCcPCcUiiPvi:
 /* 8000CEAC 00009CAC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8000CEB0 00009CB0  7C 08 02 A6 */	mflr r0
-/* 8000CEB4 00009CB4  3C C0 80 2D */	lis r6, $$2stringBase0_0@ha
+/* 8000CEB4 00009CB4  3C C0 80 2D */	lis r6, _esc__2_stringBase0_0@ha
 /* 8000CEB8 00009CB8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8000CEBC 00009CBC  BF 41 00 08 */	stmw r26, 8(r1)
 /* 8000CEC0 00009CC0  7C 9B 23 78 */	mr r27, r4
 /* 8000CEC4 00009CC4  7C 7A 1B 78 */	mr r26, r3
-/* 8000CEC8 00009CC8  38 86 18 9C */	addi r4, r6, $$2stringBase0_0@l
+/* 8000CEC8 00009CC8  38 86 18 9C */	addi r4, r6, _esc__2_stringBase0_0@l
 /* 8000CECC 00009CCC  7C BF 2B 78 */	mr r31, r5
 /* 8000CED0 00009CD0  7C FC 3B 78 */	mr r28, r7
 /* 8000CED4 00009CD4  7D 1D 43 78 */	mr r29, r8
@@ -655,9 +657,9 @@ BFD_open__FPCcPCcUiiPvi:
 /* 8000CEFC 00009CFC  7F E0 22 14 */	add r31, r0, r4
 /* 8000CF00 00009D00  48 00 00 30 */	b lbl_8000CF30
 lbl_8000CF04:
-/* 8000CF04 00009D04  3C 80 80 2D */	lis r4, $$2stringBase0_0@ha
+/* 8000CF04 00009D04  3C 80 80 2D */	lis r4, _esc__2_stringBase0_0@ha
 /* 8000CF08 00009D08  7F 63 DB 78 */	mr r3, r27
-/* 8000CF0C 00009D0C  38 84 18 9C */	addi r4, r4, $$2stringBase0_0@l
+/* 8000CF0C 00009D0C  38 84 18 9C */	addi r4, r4, _esc__2_stringBase0_0@l
 /* 8000CF10 00009D10  38 84 00 03 */	addi r4, r4, 3
 /* 8000CF14 00009D14  48 2A F3 FD */	bl strcmp
 /* 8000CF18 00009D18  2C 03 00 00 */	cmpwi r3, 0
@@ -891,9 +893,9 @@ BFD_getLength__FP9tag_xFilePv:
 BFD_startSector__FPCci:
 /* 8000D230 0000A030  94 21 FE D0 */	stwu r1, -0x130(r1)
 /* 8000D234 0000A034  7C 08 02 A6 */	mflr r0
-/* 8000D238 0000A038  3C A0 80 2D */	lis r5, $$2875@ha
+/* 8000D238 0000A038  3C A0 80 2D */	lis r5, _esc__2_875@ha
 /* 8000D23C 0000A03C  90 01 01 34 */	stw r0, 0x134(r1)
-/* 8000D240 0000A040  38 A5 17 88 */	addi r5, r5, $$2875@l
+/* 8000D240 0000A040  38 A5 17 88 */	addi r5, r5, _esc__2_875@l
 /* 8000D244 0000A044  38 00 00 22 */	li r0, 0x22
 /* 8000D248 0000A048  38 E1 00 0C */	addi r7, r1, 0xc
 /* 8000D24C 0000A04C  38 C5 FF FC */	addi r6, r5, -4
@@ -1081,3 +1083,6 @@ xFileReadAsyncStatus__FiPi:
 /* 8000D498 0000A298  7C 08 03 A6 */	mtlr r0
 /* 8000D49C 0000A29C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8000D4A0 0000A2A0  4E 80 00 20 */	blr 
+
+.endif
+

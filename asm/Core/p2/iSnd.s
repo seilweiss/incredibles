@@ -29,39 +29,41 @@ sOldVolume:
 
 .section .sdata2
 
-.global $$2977
-$$2977:
+.global _esc__2_977
+_esc__2_977:
 	.incbin "baserom.dol", 0x32F910, 0x4
-.global $$2978_0
-$$2978_0:
+.global _esc__2_978_0
+_esc__2_978_0:
 	.incbin "baserom.dol", 0x32F914, 0x4
-.global $$21419_0
-$$21419_0:
+.global _esc__2_1419_0
+_esc__2_1419_0:
 	.incbin "baserom.dol", 0x32F918, 0x4
-.global $$21420
-$$21420:
+.global _esc__2_1420
+_esc__2_1420:
 	.incbin "baserom.dol", 0x32F91C, 0x4
-.global $$21421_1
-$$21421_1:
+.global _esc__2_1421_1
+_esc__2_1421_1:
 	.incbin "baserom.dol", 0x32F920, 0x4
-.global $$21422_0
-$$21422_0:
+.global _esc__2_1422_0
+_esc__2_1422_0:
 	.incbin "baserom.dol", 0x32F924, 0x4
-.global $$21542
-$$21542:
+.global _esc__2_1542
+_esc__2_1542:
 	.incbin "baserom.dol", 0x32F928, 0x4
-.global $$21543
-$$21543:
+.global _esc__2_1543
+_esc__2_1543:
 	.incbin "baserom.dol", 0x32F92C, 0x4
-.global $$21545_0
-$$21545_0:
+.global _esc__2_1545_0
+_esc__2_1545_0:
 	.incbin "baserom.dol", 0x32F930, 0x8
-.global $$21594
-$$21594:
+.global _esc__2_1594
+_esc__2_1594:
 	.incbin "baserom.dol", 0x32F938, 0x4
-.global $$21595
-$$21595:
+.global _esc__2_1595
+_esc__2_1595:
 	.incbin "baserom.dol", 0x32F93C, 0x4
+
+.if 0
 
 .section .text
 
@@ -98,7 +100,7 @@ lbl_8007FABC:
 /* 8007FAC4 0007C8C4  42 00 FF F8 */	bdnz lbl_8007FABC
 /* 8007FAC8 0007C8C8  48 00 25 3D */	bl iSystemARAMInit__Fv
 /* 8007FACC 0007C8CC  48 1C 15 71 */	bl FSOUND_GetVersion
-/* 8007FAD0 0007C8D0  C0 02 92 30 */	lfs f0, $$2977-_SDA2_BASE_(r2)
+/* 8007FAD0 0007C8D0  C0 02 92 30 */	lfs f0, _esc__2_977-_SDA2_BASE_(r2)
 /* 8007FAD4 0007C8D4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8007FAD8 0007C8D8  41 80 00 A0 */	blt lbl_8007FB78
 /* 8007FADC 0007C8DC  48 00 25 D1 */	bl iSystemARAMSizeForFMOD__Fv
@@ -130,7 +132,7 @@ lbl_8007FABC:
 /* 8007FB44 0007C944  48 1C 17 D1 */	bl FSOUND_Init
 /* 8007FB48 0007C948  7C 60 07 75 */	extsb. r0, r3
 /* 8007FB4C 0007C94C  41 82 00 2C */	beq lbl_8007FB78
-/* 8007FB50 0007C950  C0 22 92 34 */	lfs f1, $$2978_0-_SDA2_BASE_(r2)
+/* 8007FB50 0007C950  C0 22 92 34 */	lfs f1, _esc__2_978_0-_SDA2_BASE_(r2)
 /* 8007FB54 0007C954  48 1C 23 D9 */	bl FSOUND_3D_SetRolloffFactor
 /* 8007FB58 0007C958  48 1B 69 85 */	bl OSGetSoundMode
 /* 8007FB5C 0007C95C  28 03 00 00 */	cmplwi r3, 0
@@ -1189,21 +1191,21 @@ lbl_80080924:
 /* 80080968 0007D768  41 82 00 08 */	beq lbl_80080970
 /* 8008096C 0007D76C  48 00 00 20 */	b lbl_8008098C
 lbl_80080970:
-/* 80080970 0007D770  C0 22 92 38 */	lfs f1, $$21419_0-_SDA2_BASE_(r2)
-/* 80080974 0007D774  C0 42 92 3C */	lfs f2, $$21420-_SDA2_BASE_(r2)
-/* 80080978 0007D778  C0 62 92 34 */	lfs f3, $$2978_0-_SDA2_BASE_(r2)
-/* 8008097C 0007D77C  C0 82 92 40 */	lfs f4, $$21421_1-_SDA2_BASE_(r2)
-/* 80080980 0007D780  C0 A2 92 44 */	lfs f5, $$21422_0-_SDA2_BASE_(r2)
+/* 80080970 0007D770  C0 22 92 38 */	lfs f1, _esc__2_1419_0-_SDA2_BASE_(r2)
+/* 80080974 0007D774  C0 42 92 3C */	lfs f2, _esc__2_1420-_SDA2_BASE_(r2)
+/* 80080978 0007D778  C0 62 92 34 */	lfs f3, _esc__2_978_0-_SDA2_BASE_(r2)
+/* 8008097C 0007D77C  C0 82 92 40 */	lfs f4, _esc__2_1421_1-_SDA2_BASE_(r2)
+/* 80080980 0007D780  C0 A2 92 44 */	lfs f5, _esc__2_1422_0-_SDA2_BASE_(r2)
 /* 80080984 0007D784  48 1C 5F 5D */	bl FSOUND_AUXFX_SetReverbHiDpl2
 /* 80080988 0007D788  48 00 00 24 */	b lbl_800809AC
 lbl_8008098C:
-/* 8008098C 0007D78C  C0 62 92 34 */	lfs f3, $$2978_0-_SDA2_BASE_(r2)
+/* 8008098C 0007D78C  C0 62 92 34 */	lfs f3, _esc__2_978_0-_SDA2_BASE_(r2)
 /* 80080990 0007D790  38 60 00 00 */	li r3, 0
-/* 80080994 0007D794  C0 22 92 38 */	lfs f1, $$21419_0-_SDA2_BASE_(r2)
+/* 80080994 0007D794  C0 22 92 38 */	lfs f1, _esc__2_1419_0-_SDA2_BASE_(r2)
 /* 80080998 0007D798  FC A0 18 90 */	fmr f5, f3
-/* 8008099C 0007D79C  C0 42 92 3C */	lfs f2, $$21420-_SDA2_BASE_(r2)
-/* 800809A0 0007D7A0  C0 82 92 40 */	lfs f4, $$21421_1-_SDA2_BASE_(r2)
-/* 800809A4 0007D7A4  C0 C2 92 44 */	lfs f6, $$21422_0-_SDA2_BASE_(r2)
+/* 8008099C 0007D79C  C0 42 92 3C */	lfs f2, _esc__2_1420-_SDA2_BASE_(r2)
+/* 800809A0 0007D7A0  C0 82 92 40 */	lfs f4, _esc__2_1421_1-_SDA2_BASE_(r2)
+/* 800809A4 0007D7A4  C0 C2 92 44 */	lfs f6, _esc__2_1422_0-_SDA2_BASE_(r2)
 /* 800809A8 0007D7A8  48 1C 60 99 */	bl FSOUND_AUXFX_SetReverbHi
 lbl_800809AC:
 /* 800809AC 0007D7AC  3C 60 80 35 */	lis r3, gSnd@ha
@@ -1645,16 +1647,16 @@ xSndFreqFromXPitch__FfUi:
 /* 80080F9C 0007DD9C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80080FA0 0007DDA0  7C 08 02 A6 */	mflr r0
 /* 80080FA4 0007DDA4  FC 40 08 90 */	fmr f2, f1
-/* 80080FA8 0007DDA8  C0 02 92 4C */	lfs f0, $$21543-_SDA2_BASE_(r2)
+/* 80080FA8 0007DDA8  C0 02 92 4C */	lfs f0, _esc__2_1543-_SDA2_BASE_(r2)
 /* 80080FAC 0007DDAC  90 01 00 24 */	stw r0, 0x24(r1)
-/* 80080FB0 0007DDB0  C0 22 92 48 */	lfs f1, $$21542-_SDA2_BASE_(r2)
+/* 80080FB0 0007DDB0  C0 22 92 48 */	lfs f1, _esc__2_1542-_SDA2_BASE_(r2)
 /* 80080FB4 0007DDB4  EC 42 00 24 */	fdivs f2, f2, f0
 /* 80080FB8 0007DDB8  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 80080FBC 0007DDBC  7C 7F 1B 78 */	mr r31, r3
 /* 80080FC0 0007DDC0  4B F9 09 19 */	bl powf__3stdFff
 /* 80080FC4 0007DDC4  3C 00 43 30 */	lis r0, 0x4330
 /* 80080FC8 0007DDC8  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80080FCC 0007DDCC  C8 42 92 50 */	lfd f2, $$21545_0-_SDA2_BASE_(r2)
+/* 80080FCC 0007DDCC  C8 42 92 50 */	lfd f2, _esc__2_1545_0-_SDA2_BASE_(r2)
 /* 80080FD0 0007DDD0  90 01 00 08 */	stw r0, 8(r1)
 /* 80080FD4 0007DDD4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80080FD8 0007DDD8  C8 01 00 08 */	lfd f0, 8(r1)
@@ -1791,20 +1793,20 @@ lbl_8008116C:
 
 .global iSndVolFromX__Ff
 iSndVolFromX__Ff:
-/* 80081194 0007DF94  C0 02 92 40 */	lfs f0, $$21421_1-_SDA2_BASE_(r2)
+/* 80081194 0007DF94  C0 02 92 40 */	lfs f0, _esc__2_1421_1-_SDA2_BASE_(r2)
 /* 80081198 0007DF98  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008119C 0007DF9C  FC 01 00 40 */	fcmpo cr0, f1, f0
-/* 800811A0 0007DFA0  C0 62 92 58 */	lfs f3, $$21594-_SDA2_BASE_(r2)
-/* 800811A4 0007DFA4  C0 42 92 5C */	lfs f2, $$21595-_SDA2_BASE_(r2)
+/* 800811A0 0007DFA0  C0 62 92 58 */	lfs f3, _esc__2_1594-_SDA2_BASE_(r2)
+/* 800811A4 0007DFA4  C0 42 92 5C */	lfs f2, _esc__2_1595-_SDA2_BASE_(r2)
 /* 800811A8 0007DFA8  40 80 00 08 */	bge lbl_800811B0
 /* 800811AC 0007DFAC  FC 00 08 90 */	fmr f0, f1
 lbl_800811B0:
 /* 800811B0 0007DFB0  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 800811B4 0007DFB4  40 81 00 0C */	ble lbl_800811C0
-/* 800811B8 0007DFB8  C0 22 92 5C */	lfs f1, $$21595-_SDA2_BASE_(r2)
+/* 800811B8 0007DFB8  C0 22 92 5C */	lfs f1, _esc__2_1595-_SDA2_BASE_(r2)
 /* 800811BC 0007DFBC  48 00 00 18 */	b lbl_800811D4
 lbl_800811C0:
-/* 800811C0 0007DFC0  C0 02 92 40 */	lfs f0, $$21421_1-_SDA2_BASE_(r2)
+/* 800811C0 0007DFC0  C0 02 92 40 */	lfs f0, _esc__2_1421_1-_SDA2_BASE_(r2)
 /* 800811C4 0007DFC4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800811C8 0007DFC8  40 80 00 08 */	bge lbl_800811D0
 /* 800811CC 0007DFCC  48 00 00 08 */	b lbl_800811D4
@@ -1966,3 +1968,6 @@ lbl_800813B0:
 /* 800813C8 0007E1C8  7C 08 03 A6 */	mtlr r0
 /* 800813CC 0007E1CC  38 21 00 20 */	addi r1, r1, 0x20
 /* 800813D0 0007E1D0  4E 80 00 20 */	blr 
+
+.endif
+

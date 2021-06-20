@@ -2,15 +2,17 @@
 
 .section .bss
 
-.global combatList__27$$2unnamed$$2zCombatSystem_cpp$$2
-combatList__27$$2unnamed$$2zCombatSystem_cpp$$2:
+.global combatList__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_
+combatList__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_:
 	.skip 0x180
 
 .section .sbss
 
-.global currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2
-currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2:
+.global currentCombat__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_
+currentCombat__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_:
 	.skip 0x8
+
+.if 0
 
 .section .text
 
@@ -30,14 +32,14 @@ zCombatSystemReset__Fv:
 /* 80095224 00092024  3C 60 80 38 */	lis r3, globals@ha
 /* 80095228 00092028  38 00 00 00 */	li r0, 0
 /* 8009522C 0009202C  38 63 2A 38 */	addi r3, r3, globals@l
-/* 80095230 00092030  90 0D C4 C8 */	stw r0, currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2-_SDA_BASE_(r13)
+/* 80095230 00092030  90 0D C4 C8 */	stw r0, currentCombat__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80095234 00092034  90 03 06 1C */	stw r0, 0x61c(r3)
 /* 80095238 00092038  4E 80 00 20 */	blr 
 
 .global zCombatSystemFrameStart__Fv
 zCombatSystemFrameStart__Fv:
 /* 8009523C 0009203C  38 00 00 00 */	li r0, 0
-/* 80095240 00092040  90 0D C4 C8 */	stw r0, currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2-_SDA_BASE_(r13)
+/* 80095240 00092040  90 0D C4 C8 */	stw r0, currentCombat__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80095244 00092044  4E 80 00 20 */	blr 
 
 .global zCombatSystemUpdate__Ff
@@ -48,15 +50,15 @@ zCombatSystemUpdate__Ff:
 /* 80095254 00092054  DB E1 00 18 */	stfd f31, 0x18(r1)
 /* 80095258 00092058  FF E0 08 90 */	fmr f31, f1
 /* 8009525C 0009205C  BF 81 00 08 */	stmw r28, 8(r1)
-/* 80095260 00092060  80 0D C4 C8 */	lwz r0, currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2-_SDA_BASE_(r13)
+/* 80095260 00092060  80 0D C4 C8 */	lwz r0, currentCombat__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80095264 00092064  28 00 00 00 */	cmplwi r0, 0
 /* 80095268 00092068  41 82 00 58 */	beq lbl_800952C0
 /* 8009526C 0009206C  3C 80 80 38 */	lis r4, globals@ha
-/* 80095270 00092070  3C 60 80 37 */	lis r3, combatList__27$$2unnamed$$2zCombatSystem_cpp$$2@ha
+/* 80095270 00092070  3C 60 80 37 */	lis r3, combatList__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_@ha
 /* 80095274 00092074  38 A4 2A 38 */	addi r5, r4, globals@l
 /* 80095278 00092078  3B A0 00 00 */	li r29, 0
 /* 8009527C 0009207C  80 85 06 1C */	lwz r4, 0x61c(r5)
-/* 80095280 00092080  3B C3 5C F8 */	addi r30, r3, combatList__27$$2unnamed$$2zCombatSystem_cpp$$2@l
+/* 80095280 00092080  3B C3 5C F8 */	addi r30, r3, combatList__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_@l
 /* 80095284 00092084  3B E0 00 00 */	li r31, 0
 /* 80095288 00092088  38 04 00 01 */	addi r0, r4, 1
 /* 8009528C 0009208C  90 05 06 1C */	stw r0, 0x61c(r5)
@@ -71,7 +73,7 @@ lbl_80095294:
 /* 800952AC 000920AC  3B BD 00 01 */	addi r29, r29, 1
 /* 800952B0 000920B0  3B FF 00 04 */	addi r31, r31, 4
 lbl_800952B4:
-/* 800952B4 000920B4  80 0D C4 C8 */	lwz r0, currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2-_SDA_BASE_(r13)
+/* 800952B4 000920B4  80 0D C4 C8 */	lwz r0, currentCombat__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800952B8 000920B8  7C 1D 00 40 */	cmplw r29, r0
 /* 800952BC 000920BC  41 80 FF D8 */	blt lbl_80095294
 lbl_800952C0:
@@ -88,12 +90,12 @@ zCombatSystemRenderEffects__Fv:
 /* 800952DC 000920DC  7C 08 02 A6 */	mflr r0
 /* 800952E0 000920E0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 800952E4 000920E4  BF 81 00 10 */	stmw r28, 0x10(r1)
-/* 800952E8 000920E8  80 0D C4 C8 */	lwz r0, currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2-_SDA_BASE_(r13)
+/* 800952E8 000920E8  80 0D C4 C8 */	lwz r0, currentCombat__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800952EC 000920EC  28 00 00 00 */	cmplwi r0, 0
 /* 800952F0 000920F0  41 82 00 40 */	beq lbl_80095330
-/* 800952F4 000920F4  3C 60 80 37 */	lis r3, combatList__27$$2unnamed$$2zCombatSystem_cpp$$2@ha
+/* 800952F4 000920F4  3C 60 80 37 */	lis r3, combatList__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_@ha
 /* 800952F8 000920F8  3B A0 00 00 */	li r29, 0
-/* 800952FC 000920FC  3B C3 5C F8 */	addi r30, r3, combatList__27$$2unnamed$$2zCombatSystem_cpp$$2@l
+/* 800952FC 000920FC  3B C3 5C F8 */	addi r30, r3, combatList__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_@l
 /* 80095300 00092100  3B E0 00 00 */	li r31, 0
 /* 80095304 00092104  48 00 00 20 */	b lbl_80095324
 lbl_80095308:
@@ -105,7 +107,7 @@ lbl_80095308:
 /* 8009531C 0009211C  3B BD 00 01 */	addi r29, r29, 1
 /* 80095320 00092120  3B FF 00 04 */	addi r31, r31, 4
 lbl_80095324:
-/* 80095324 00092124  80 0D C4 C8 */	lwz r0, currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2-_SDA_BASE_(r13)
+/* 80095324 00092124  80 0D C4 C8 */	lwz r0, currentCombat__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80095328 00092128  7C 1D 00 40 */	cmplw r29, r0
 /* 8009532C 0009212C  41 80 FF DC */	blt lbl_80095308
 lbl_80095330:
@@ -138,14 +140,14 @@ lbl_80095384:
 /* 80095388 00092188  FC 20 F8 90 */	fmr f1, f31
 /* 8009538C 0009218C  7F E4 FB 78 */	mr r4, r31
 /* 80095390 00092190  4B FF 93 4D */	bl PreUpdate__7zCombatFP4xEntf
-/* 80095394 00092194  80 AD C4 C8 */	lwz r5, currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2-_SDA_BASE_(r13)
+/* 80095394 00092194  80 AD C4 C8 */	lwz r5, currentCombat__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80095398 00092198  28 05 00 60 */	cmplwi r5, 0x60
 /* 8009539C 0009219C  40 80 00 1C */	bge lbl_800953B8
-/* 800953A0 000921A0  3C 60 80 37 */	lis r3, combatList__27$$2unnamed$$2zCombatSystem_cpp$$2@ha
+/* 800953A0 000921A0  3C 60 80 37 */	lis r3, combatList__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_@ha
 /* 800953A4 000921A4  38 85 00 01 */	addi r4, r5, 1
 /* 800953A8 000921A8  54 A0 10 3A */	slwi r0, r5, 2
-/* 800953AC 000921AC  90 8D C4 C8 */	stw r4, currentCombat__27$$2unnamed$$2zCombatSystem_cpp$$2-_SDA_BASE_(r13)
-/* 800953B0 000921B0  38 63 5C F8 */	addi r3, r3, combatList__27$$2unnamed$$2zCombatSystem_cpp$$2@l
+/* 800953AC 000921AC  90 8D C4 C8 */	stw r4, currentCombat__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_-_SDA_BASE_(r13)
+/* 800953B0 000921B0  38 63 5C F8 */	addi r3, r3, combatList__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_@l
 /* 800953B4 000921B4  7F E3 01 2E */	stwx r31, r3, r0
 lbl_800953B8:
 /* 800953B8 000921B8  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -256,3 +258,6 @@ lbl_80095518:
 /* 80095520 00092320  7C 08 03 A6 */	mtlr r0
 /* 80095524 00092324  38 21 00 70 */	addi r1, r1, 0x70
 /* 80095528 00092328  4E 80 00 20 */	blr 
+
+.endif
+

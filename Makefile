@@ -18,6 +18,7 @@ TARGET_COL := wii
 OBJ_DIR := obj
 
 SRC_DIRS := src             \
+			src/Core/p2     \
 			src/Core/x      \
 			src/GAME
 

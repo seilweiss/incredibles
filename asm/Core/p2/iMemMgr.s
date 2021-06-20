@@ -2,29 +2,29 @@
 
 .section .bss
 
-.global tempStack__21$$2unnamed$$2iMemMgr_cpp$$2
-tempStack__21$$2unnamed$$2iMemMgr_cpp$$2:
+.global tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_
+tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_:
 	.skip 0x100
-.global memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2
-memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2:
+.global memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_
+memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_:
 	.skip 0x128
 
 .section .rodata
 
-.global $$2stringBase0_28
-$$2stringBase0_28:
+.global _esc__2_stringBase0_28
+_esc__2_stringBase0_28:
 	.incbin "baserom.dol", 0x2CF8B0, 0x98
 
 .section .sbss
 
-.global tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2
-tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2:
+.global tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_
+tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_:
 	.skip 0x4
-.global StackBase__21$$2unnamed$$2iMemMgr_cpp$$2
-StackBase__21$$2unnamed$$2iMemMgr_cpp$$2:
+.global StackBase__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_
+StackBase__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_:
 	.skip 0x4
-.global StackSize__21$$2unnamed$$2iMemMgr_cpp$$2
-StackSize__21$$2unnamed$$2iMemMgr_cpp$$2:
+.global StackSize__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_
+StackSize__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_:
 	.skip 0x4
 .global memInited
 memInited:
@@ -47,23 +47,25 @@ sMemMgrEnableRenderWareMemoryHack:
 
 .section .sdata
 
-.global __vt__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMulti
-__vt__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMulti:
+.global __vt__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMulti
+__vt__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMulti:
 	.incbin "baserom.dol", 0x32B5E8, 0x20
 
 .section .sdata2
 
-.global $$2727
-$$2727:
+.global _esc__2_727
+_esc__2_727:
 	.incbin "baserom.dol", 0x32F848, 0x8
-.global $$2729
-$$2729:
+.global _esc__2_729
+_esc__2_729:
 	.incbin "baserom.dol", 0x32F850, 0x4
+
+.if 0
 
 .section .text
 
-.global iMemClearStack__21$$2unnamed$$2iMemMgr_cpp$$2Fv
-iMemClearStack__21$$2unnamed$$2iMemMgr_cpp$$2Fv:
+.global iMemClearStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_Fv
+iMemClearStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_Fv:
 /* 80078130 00074F30  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078134 00074F34  7C 08 02 A6 */	mflr r0
 /* 80078138 00074F38  90 01 00 14 */	stw r0, 0x14(r1)
@@ -71,14 +73,14 @@ iMemClearStack__21$$2unnamed$$2iMemMgr_cpp$$2Fv:
 /* 80078140 00074F40  48 00 00 55 */	bl GetStackPointer__Fv
 /* 80078144 00074F44  7C 7F 1B 78 */	mr r31, r3
 /* 80078148 00074F48  48 1B C2 81 */	bl OSDisableInterrupts
-/* 8007814C 00074F4C  80 AD C0 3C */	lwz r5, StackBase__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
+/* 8007814C 00074F4C  80 AD C0 3C */	lwz r5, StackBase__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80078150 00074F50  7C 7E 1B 78 */	mr r30, r3
 /* 80078154 00074F54  38 80 00 77 */	li r4, 0x77
 /* 80078158 00074F58  38 65 00 04 */	addi r3, r5, 4
 /* 8007815C 00074F5C  7C A5 F8 50 */	subf r5, r5, r31
 /* 80078160 00074F60  4B F8 AF A1 */	bl memset
 /* 80078164 00074F64  3C 60 DE AE */	lis r3, 0xDEADBABE@ha
-/* 80078168 00074F68  80 8D C0 3C */	lwz r4, StackBase__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
+/* 80078168 00074F68  80 8D C0 3C */	lwz r4, StackBase__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
 /* 8007816C 00074F6C  38 03 BA BE */	addi r0, r3, 0xDEADBABE@l
 /* 80078170 00074F70  7F C3 F3 78 */	mr r3, r30
 /* 80078174 00074F74  90 04 00 00 */	stw r0, 0(r4)
@@ -95,8 +97,8 @@ GetStackPointer__Fv:
 /* 80078194 00074F94  7C 23 0B 78 */	mr r3, r1
 /* 80078198 00074F98  4E 80 00 20 */	blr 
 
-.global Init__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPvUiUiUiUiUiUiUib
-Init__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPvUiUiUiUiUiUiUib:
+.global Init__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFPvUiUiUiUiUiUiUib
+Init__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFPvUiUiUiUiUiUiUib:
 /* 8007819C 00074F9C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800781A0 00074FA0  7C 08 02 A6 */	mflr r0
 /* 800781A4 00074FA4  90 01 00 34 */	stw r0, 0x34(r1)
@@ -113,7 +115,7 @@ Init__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPvUiUiUiUiUiUiUib:
 /* 800781D0 00074FD0  48 15 5C D5 */	bl DoInit__14xMemoryManagerFPvUib
 /* 800781D4 00074FD4  7F 83 E3 78 */	mr r3, r28
 /* 800781D8 00074FD8  38 80 00 20 */	li r4, 0x20
-/* 800781DC 00074FDC  48 00 01 55 */	bl xMEMALIGN$$0Uc$$1__FPUcUi
+/* 800781DC 00074FDC  48 00 01 55 */	bl xMEMALIGN_esc__0_Uc_esc__1___FPUcUi
 /* 800781E0 00074FE0  90 7B 00 24 */	stw r3, 0x24(r27)
 /* 800781E4 00074FE4  38 00 00 00 */	li r0, 0
 /* 800781E8 00074FE8  7F 63 DB 78 */	mr r3, r27
@@ -128,7 +130,7 @@ Init__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPvUiUiUiUiUiUiUib:
 /* 8007820C 0007500C  7C 7A 1B 78 */	mr r26, r3
 /* 80078210 00075010  7F 23 CB 78 */	mr r3, r25
 /* 80078214 00075014  38 80 00 04 */	li r4, 4
-/* 80078218 00075018  48 00 01 19 */	bl xMEMALIGN$$0Uc$$1__FPUcUi
+/* 80078218 00075018  48 00 01 19 */	bl xMEMALIGN_esc__0_Uc_esc__1___FPUcUi
 /* 8007821C 0007501C  7C 64 1B 78 */	mr r4, r3
 /* 80078220 00075020  7E E5 BB 78 */	mr r5, r23
 /* 80078224 00075024  38 7B 00 30 */	addi r3, r27, 0x30
@@ -142,7 +144,7 @@ Init__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPvUiUiUiUiUiUiUib:
 /* 80078244 00075044  7C 7A 1B 78 */	mr r26, r3
 /* 80078248 00075048  7F 23 CB 78 */	mr r3, r25
 /* 8007824C 0007504C  38 80 00 08 */	li r4, 8
-/* 80078250 00075050  48 00 00 E1 */	bl xMEMALIGN$$0Uc$$1__FPUcUi
+/* 80078250 00075050  48 00 00 E1 */	bl xMEMALIGN_esc__0_Uc_esc__1___FPUcUi
 /* 80078254 00075054  7C 64 1B 78 */	mr r4, r3
 /* 80078258 00075058  7F 05 C3 78 */	mr r5, r24
 /* 8007825C 0007505C  38 7B 00 60 */	addi r3, r27, 0x60
@@ -156,7 +158,7 @@ Init__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPvUiUiUiUiUiUiUib:
 /* 8007827C 0007507C  7C 7A 1B 78 */	mr r26, r3
 /* 80078280 00075080  7F 23 CB 78 */	mr r3, r25
 /* 80078284 00075084  38 80 00 20 */	li r4, 0x20
-/* 80078288 00075088  48 00 00 A9 */	bl xMEMALIGN$$0Uc$$1__FPUcUi
+/* 80078288 00075088  48 00 00 A9 */	bl xMEMALIGN_esc__0_Uc_esc__1___FPUcUi
 /* 8007828C 0007508C  7C 64 1B 78 */	mr r4, r3
 /* 80078290 00075090  7F C5 F3 78 */	mr r5, r30
 /* 80078294 00075094  38 7B 00 90 */	addi r3, r27, 0x90
@@ -170,7 +172,7 @@ Init__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPvUiUiUiUiUiUiUib:
 /* 800782B4 000750B4  7C 7E 1B 78 */	mr r30, r3
 /* 800782B8 000750B8  7F 43 D3 78 */	mr r3, r26
 /* 800782BC 000750BC  38 80 00 30 */	li r4, 0x30
-/* 800782C0 000750C0  48 00 00 71 */	bl xMEMALIGN$$0Uc$$1__FPUcUi
+/* 800782C0 000750C0  48 00 00 71 */	bl xMEMALIGN_esc__0_Uc_esc__1___FPUcUi
 /* 800782C4 000750C4  7C 64 1B 78 */	mr r4, r3
 /* 800782C8 000750C8  7F E5 FB 78 */	mr r5, r31
 /* 800782CC 000750CC  38 7B 00 C0 */	addi r3, r27, 0xc0
@@ -179,7 +181,7 @@ Init__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPvUiUiUiUiUiUiUib:
 /* 800782D8 000750D8  38 7B 00 C0 */	addi r3, r27, 0xc0
 /* 800782DC 000750DC  48 00 00 45 */	bl GetArenaEnd__14xMemoryManagerCFv
 /* 800782E0 000750E0  38 80 00 20 */	li r4, 0x20
-/* 800782E4 000750E4  48 00 00 4D */	bl xMEMALIGN$$0Uc$$1__FPUcUi
+/* 800782E4 000750E4  48 00 00 4D */	bl xMEMALIGN_esc__0_Uc_esc__1___FPUcUi
 /* 800782E8 000750E8  7C 64 1B 78 */	mr r4, r3
 /* 800782EC 000750EC  38 7B 00 F0 */	addi r3, r27, 0xf0
 /* 800782F0 000750F0  7C 1C 20 50 */	subf r0, r28, r4
@@ -205,8 +207,8 @@ GetDebugDataSize__14xMemoryManagerCFv:
 /* 80078328 00075128  80 63 00 1C */	lwz r3, 0x1c(r3)
 /* 8007832C 0007512C  4E 80 00 20 */	blr 
 
-.global xMEMALIGN$$0Uc$$1__FPUcUi
-xMEMALIGN$$0Uc$$1__FPUcUi:
+.global xMEMALIGN_esc__0_Uc_esc__1___FPUcUi
+xMEMALIGN_esc__0_Uc_esc__1___FPUcUi:
 /* 80078330 00075130  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078334 00075134  7C 08 02 A6 */	mflr r0
 /* 80078338 00075138  90 01 00 14 */	stw r0, 0x14(r1)
@@ -223,8 +225,8 @@ xALIGN__FUiUi:
 /* 80078358 00075158  7C 03 20 78 */	andc r3, r0, r4
 /* 8007835C 0007515C  4E 80 00 20 */	blr 
 
-.global DoAllocate__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFUiUi
-DoAllocate__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFUiUi:
+.global DoAllocate__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFUiUi
+DoAllocate__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFUiUi:
 /* 80078360 00075160  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 80078364 00075164  7C 08 02 A6 */	mflr r0
 /* 80078368 00075168  90 01 00 B4 */	stw r0, 0xb4(r1)
@@ -304,39 +306,39 @@ lbl_80078470:
 /* 80078478 00075278  38 7F 00 F0 */	addi r3, r31, 0xf0
 /* 8007847C 0007527C  48 15 57 35 */	bl Allocate__14xMemoryManagerFUiUi
 /* 80078480 00075280  7C 7F 1B 78 */	mr r31, r3
-/* 80078484 00075284  48 00 00 B1 */	bl GetHeapTop__21$$2unnamed$$2iMemMgr_cpp$$2Fv
+/* 80078484 00075284  48 00 00 B1 */	bl GetHeapTop__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_Fv
 /* 80078488 00075288  7C 1F 18 40 */	cmplw r31, r3
 /* 8007848C 0007528C  40 80 00 88 */	bge lbl_80078514
-/* 80078490 00075290  48 00 00 A5 */	bl GetHeapTop__21$$2unnamed$$2iMemMgr_cpp$$2Fv
-/* 80078494 00075294  3C 80 80 2D */	lis r4, $$2stringBase0_28@ha
+/* 80078490 00075290  48 00 00 A5 */	bl GetHeapTop__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_Fv
+/* 80078494 00075294  3C 80 80 2D */	lis r4, _esc__2_stringBase0_28@ha
 /* 80078498 00075298  7C 65 1B 78 */	mr r5, r3
-/* 8007849C 0007529C  38 84 28 B0 */	addi r4, r4, $$2stringBase0_28@l
+/* 8007849C 0007529C  38 84 28 B0 */	addi r4, r4, _esc__2_stringBase0_28@l
 /* 800784A0 000752A0  7F E6 FB 78 */	mr r6, r31
 /* 800784A4 000752A4  7F C7 F3 78 */	mr r7, r30
 /* 800784A8 000752A8  38 61 00 08 */	addi r3, r1, 8
 /* 800784AC 000752AC  4C C6 31 82 */	crclr 6
 /* 800784B0 000752B0  48 24 07 D9 */	bl sprintf
-/* 800784B4 000752B4  3C 60 80 2D */	lis r3, $$2stringBase0_28@ha
+/* 800784B4 000752B4  3C 60 80 2D */	lis r3, _esc__2_stringBase0_28@ha
 /* 800784B8 000752B8  7F A4 EB 78 */	mr r4, r29
-/* 800784BC 000752BC  38 63 28 B0 */	addi r3, r3, $$2stringBase0_28@l
+/* 800784BC 000752BC  38 63 28 B0 */	addi r3, r3, _esc__2_stringBase0_28@l
 /* 800784C0 000752C0  38 A1 00 08 */	addi r5, r1, 8
 /* 800784C4 000752C4  38 63 00 3D */	addi r3, r3, 0x3d
 /* 800784C8 000752C8  48 15 69 FD */	bl iExceptionMemCrash__FPCcUiPCc
-/* 800784CC 000752CC  48 00 00 69 */	bl GetHeapTop__21$$2unnamed$$2iMemMgr_cpp$$2Fv
+/* 800784CC 000752CC  48 00 00 69 */	bl GetHeapTop__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_Fv
 /* 800784D0 000752D0  7C 63 F8 50 */	subf r3, r3, r31
 /* 800784D4 000752D4  3C 00 43 30 */	lis r0, 0x4330
 /* 800784D8 000752D8  90 61 00 8C */	stw r3, 0x8c(r1)
-/* 800784DC 000752DC  C8 42 91 70 */	lfd f2, $$2729-_SDA2_BASE_(r2)
+/* 800784DC 000752DC  C8 42 91 70 */	lfd f2, _esc__2_729-_SDA2_BASE_(r2)
 /* 800784E0 000752E0  90 01 00 88 */	stw r0, 0x88(r1)
-/* 800784E4 000752E4  C0 02 91 68 */	lfs f0, $$2727-_SDA2_BASE_(r2)
+/* 800784E4 000752E4  C0 02 91 68 */	lfs f0, _esc__2_727-_SDA2_BASE_(r2)
 /* 800784E8 000752E8  C8 21 00 88 */	lfd f1, 0x88(r1)
 /* 800784EC 000752EC  EC 21 10 28 */	fsubs f1, f1, f2
 /* 800784F0 000752F0  EF E1 00 32 */	fmuls f31, f1, f0
-/* 800784F4 000752F4  48 00 00 41 */	bl GetHeapTop__21$$2unnamed$$2iMemMgr_cpp$$2Fv
-/* 800784F8 000752F8  3C A0 80 2D */	lis r5, $$2stringBase0_28@ha
+/* 800784F4 000752F4  48 00 00 41 */	bl GetHeapTop__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_Fv
+/* 800784F8 000752F8  3C A0 80 2D */	lis r5, _esc__2_stringBase0_28@ha
 /* 800784FC 000752FC  FC 20 F8 90 */	fmr f1, f31
 /* 80078500 00075300  7C 83 F8 50 */	subf r4, r3, r31
-/* 80078504 00075304  38 65 28 B0 */	addi r3, r5, $$2stringBase0_28@l
+/* 80078504 00075304  38 65 28 B0 */	addi r3, r5, _esc__2_stringBase0_28@l
 /* 80078508 00075308  38 63 00 50 */	addi r3, r3, 0x50
 /* 8007850C 0007530C  4C C6 32 42 */	crset 6
 /* 80078510 00075310  48 1B AD E1 */	bl OSReport
@@ -351,15 +353,15 @@ lbl_80078518:
 /* 8007852C 0007532C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80078530 00075330  4E 80 00 20 */	blr 
 
-.global GetHeapTop__21$$2unnamed$$2iMemMgr_cpp$$2Fv
-GetHeapTop__21$$2unnamed$$2iMemMgr_cpp$$2Fv:
+.global GetHeapTop__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_Fv
+GetHeapTop__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_Fv:
 /* 80078534 00075334  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078538 00075338  7C 08 02 A6 */	mflr r0
 /* 8007853C 0007533C  3C 60 80 34 */	lis r3, gxHeap@ha
 /* 80078540 00075340  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80078544 00075344  38 03 02 60 */	addi r0, r3, gxHeap@l
 /* 80078548 00075348  80 8D BA E4 */	lwz r4, gActiveHeap-_SDA_BASE_(r13)
-/* 8007854C 0007534C  80 AD C0 38 */	lwz r5, tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
+/* 8007854C 0007534C  80 AD C0 38 */	lwz r5, tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80078550 00075350  1C 64 01 0C */	mulli r3, r4, 0x10c
 /* 80078554 00075354  28 05 00 00 */	cmplwi r5, 0
 /* 80078558 00075358  7C 80 1A 14 */	add r4, r0, r3
@@ -370,21 +372,21 @@ GetHeapTop__21$$2unnamed$$2iMemMgr_cpp$$2Fv:
 /* 8007856C 0007536C  7C 64 00 2E */	lwzx r3, r4, r0
 /* 80078570 00075370  48 00 00 20 */	b lbl_80078590
 lbl_80078574:
-/* 80078574 00075374  3C 60 80 35 */	lis r3, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078574 00075374  3C 60 80 35 */	lis r3, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078578 00075378  54 A4 18 38 */	slwi r4, r5, 3
-/* 8007857C 0007537C  38 03 4F 98 */	addi r0, r3, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 8007857C 0007537C  38 03 4F 98 */	addi r0, r3, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078580 00075380  7C 80 22 14 */	add r4, r0, r4
 /* 80078584 00075384  80 64 FF F8 */	lwz r3, -8(r4)
 /* 80078588 00075388  80 84 FF FC */	lwz r4, -4(r4)
-/* 8007858C 0007538C  48 00 00 15 */	bl xMEMADVANCE$$0v$$1__FPvUi
+/* 8007858C 0007538C  48 00 00 15 */	bl xMEMADVANCE_esc__0_v_esc__1___FPvUi
 lbl_80078590:
 /* 80078590 00075390  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80078594 00075394  7C 08 03 A6 */	mtlr r0
 /* 80078598 00075398  38 21 00 10 */	addi r1, r1, 0x10
 /* 8007859C 0007539C  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$0v$$1__FPvUi
-xMEMADVANCE$$0v$$1__FPvUi:
+.global xMEMADVANCE_esc__0_v_esc__1___FPvUi
+xMEMADVANCE_esc__0_v_esc__1___FPvUi:
 /* 800785A0 000753A0  7C 63 22 14 */	add r3, r3, r4
 /* 800785A4 000753A4  4E 80 00 20 */	blr 
 
@@ -393,8 +395,8 @@ GetElementSize__19xMemoryManagerFixedCFv:
 /* 800785A8 000753A8  80 63 00 2C */	lwz r3, 0x2c(r3)
 /* 800785AC 000753AC  4E 80 00 20 */	blr 
 
-.global DoReallocate__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPvUiUi
-DoReallocate__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPvUiUi:
+.global DoReallocate__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFPvUiUi
+DoReallocate__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFPvUiUi:
 /* 800785B0 000753B0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800785B4 000753B4  7C 08 02 A6 */	mflr r0
 /* 800785B8 000753B8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -500,8 +502,8 @@ lbl_80078720:
 /* 80078720 00075520  7C A3 2B 78 */	mr r3, r5
 /* 80078724 00075524  4E 80 00 20 */	blr 
 
-.global DoFree__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPv
-DoFree__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPv:
+.global DoFree__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFPv
+DoFree__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFPv:
 /* 80078728 00075528  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8007872C 0007552C  7C 08 02 A6 */	mflr r0
 /* 80078730 00075530  90 01 00 14 */	stw r0, 0x14(r1)
@@ -567,8 +569,8 @@ GetArenaStart__14xMemoryManagerCFv:
 /* 800787FC 000755FC  80 63 00 04 */	lwz r3, 4(r3)
 /* 80078800 00075600  4E 80 00 20 */	blr 
 
-.global DoGetBlockSize__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFPv
-DoGetBlockSize__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFPv:
+.global DoGetBlockSize__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFPv
+DoGetBlockSize__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFPv:
 /* 80078804 00075604  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078808 00075608  7C 08 02 A6 */	mflr r0
 /* 8007880C 0007560C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -628,8 +630,8 @@ lbl_800788C0:
 /* 800788CC 000756CC  38 21 00 10 */	addi r1, r1, 0x10
 /* 800788D0 000756D0  4E 80 00 20 */	blr 
 
-.global GetMinFreeSpace__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv
-GetMinFreeSpace__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv:
+.global GetMinFreeSpace__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv
+GetMinFreeSpace__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv:
 /* 800788D4 000756D4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800788D8 000756D8  7C 08 02 A6 */	mflr r0
 /* 800788DC 000756DC  3C 80 80 34 */	lis r4, gxHeap@ha
@@ -652,22 +654,22 @@ GetMinFreeSpace__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv:
 /* 80078920 00075720  38 21 00 10 */	addi r1, r1, 0x10
 /* 80078924 00075724  4E 80 00 20 */	blr 
 
-.global HandleOutOfMemory__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFUiUi
-HandleOutOfMemory__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFUiUi:
+.global HandleOutOfMemory__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFUiUi
+HandleOutOfMemory__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFUiUi:
 /* 80078928 00075728  94 21 FE F0 */	stwu r1, -0x110(r1)
 /* 8007892C 0007572C  7C 08 02 A6 */	mflr r0
-/* 80078930 00075730  3C 60 80 2D */	lis r3, $$2stringBase0_28@ha
+/* 80078930 00075730  3C 60 80 2D */	lis r3, _esc__2_stringBase0_28@ha
 /* 80078934 00075734  90 01 01 14 */	stw r0, 0x114(r1)
 /* 80078938 00075738  93 E1 01 0C */	stw r31, 0x10c(r1)
 /* 8007893C 0007573C  7C 9F 23 78 */	mr r31, r4
-/* 80078940 00075740  38 83 28 B0 */	addi r4, r3, $$2stringBase0_28@l
+/* 80078940 00075740  38 83 28 B0 */	addi r4, r3, _esc__2_stringBase0_28@l
 /* 80078944 00075744  38 61 00 08 */	addi r3, r1, 8
 /* 80078948 00075748  38 84 00 71 */	addi r4, r4, 0x71
 /* 8007894C 0007574C  4C C6 31 82 */	crclr 6
 /* 80078950 00075750  48 24 03 39 */	bl sprintf
-/* 80078954 00075754  3C 60 80 2D */	lis r3, $$2stringBase0_28@ha
+/* 80078954 00075754  3C 60 80 2D */	lis r3, _esc__2_stringBase0_28@ha
 /* 80078958 00075758  7F E4 FB 78 */	mr r4, r31
-/* 8007895C 0007575C  38 63 28 B0 */	addi r3, r3, $$2stringBase0_28@l
+/* 8007895C 0007575C  38 63 28 B0 */	addi r3, r3, _esc__2_stringBase0_28@l
 /* 80078960 00075760  38 A1 00 08 */	addi r5, r1, 8
 /* 80078964 00075764  38 63 00 7E */	addi r3, r3, 0x7e
 /* 80078968 00075768  48 15 65 5D */	bl iExceptionMemCrash__FPCcUiPCc
@@ -686,16 +688,16 @@ iMemInit__Fv:
 /* 80078990 00075790  88 0D C0 44 */	lbz r0, memInited-_SDA_BASE_(r13)
 /* 80078994 00075794  28 00 00 00 */	cmplwi r0, 0
 /* 80078998 00075798  40 82 01 68 */	bne lbl_80078B00
-/* 8007899C 0007579C  3C 80 80 35 */	lis r4, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 8007899C 0007579C  3C 80 80 35 */	lis r4, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 800789A0 000757A0  38 60 01 24 */	li r3, 0x124
-/* 800789A4 000757A4  38 84 50 98 */	addi r4, r4, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 800789A4 000757A4  38 84 50 98 */	addi r4, r4, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 800789A8 000757A8  4B FC 4C 3D */	bl __nw__FUlPv
 /* 800789AC 000757AC  28 03 00 00 */	cmplwi r3, 0
 /* 800789B0 000757B0  41 82 00 08 */	beq lbl_800789B8
-/* 800789B4 000757B4  48 00 01 A9 */	bl __ct__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFv
+/* 800789B4 000757B4  48 00 01 A9 */	bl __ct__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFv
 lbl_800789B8:
 /* 800789B8 000757B8  38 00 00 00 */	li r0, 0
-/* 800789BC 000757BC  90 0D C0 38 */	stw r0, tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
+/* 800789BC 000757BC  90 0D C0 38 */	stw r0, tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800789C0 000757C0  48 1B 99 DD */	bl OSGetArenaLo
 /* 800789C4 000757C4  38 03 00 1F */	addi r0, r3, 0x1f
 /* 800789C8 000757C8  54 00 00 34 */	rlwinm r0, r0, 0, 0, 0x1a
@@ -722,13 +724,13 @@ lbl_80078A14:
 /* 80078A18 00075818  48 23 9E B1 */	bl exit
 lbl_80078A1C:
 /* 80078A1C 0007581C  80 8D C0 4C */	lwz r4, hiheap_start-_SDA_BASE_(r13)
-/* 80078A20 00075820  3C 60 80 35 */	lis r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078A20 00075820  3C 60 80 35 */	lis r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078A24 00075824  80 CD C0 50 */	lwz r6, hiheap_end-_SDA_BASE_(r13)
 /* 80078A28 00075828  38 A0 03 52 */	li r5, 0x352
 /* 80078A2C 0007582C  3C 84 00 02 */	addis r4, r4, 2
 /* 80078A30 00075830  38 00 00 00 */	li r0, 0
 /* 80078A34 00075834  38 84 58 00 */	addi r4, r4, 0x5800
-/* 80078A38 00075838  38 63 50 98 */	addi r3, r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078A38 00075838  38 63 50 98 */	addi r3, r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078A3C 0007583C  7C C4 30 50 */	subf r6, r4, r6
 /* 80078A40 00075840  90 8D C0 4C */	stw r4, hiheap_start-_SDA_BASE_(r13)
 /* 80078A44 00075844  3C E0 00 08 */	lis r7, 8
@@ -740,27 +742,27 @@ lbl_80078A1C:
 /* 80078A5C 0007585C  90 A1 00 08 */	stw r5, 8(r1)
 /* 80078A60 00075860  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80078A64 00075864  80 AD C0 54 */	lwz r5, hiheap_size-_SDA_BASE_(r13)
-/* 80078A68 00075868  4B FF F7 35 */	bl Init__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFPvUiUiUiUiUiUiUib
-/* 80078A6C 0007586C  3C 60 80 35 */	lis r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
-/* 80078A70 00075870  38 63 50 98 */	addi r3, r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
-/* 80078A74 00075874  48 00 00 C5 */	bl GetHeapArenaStart__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv
-/* 80078A78 00075878  3C 80 80 35 */	lis r4, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078A68 00075868  4B FF F7 35 */	bl Init__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFPvUiUiUiUiUiUiUib
+/* 80078A6C 0007586C  3C 60 80 35 */	lis r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
+/* 80078A70 00075870  38 63 50 98 */	addi r3, r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
+/* 80078A74 00075874  48 00 00 C5 */	bl GetHeapArenaStart__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv
+/* 80078A78 00075878  3C 80 80 35 */	lis r4, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078A7C 0007587C  7C 7D 1B 78 */	mr r29, r3
-/* 80078A80 00075880  38 64 50 98 */	addi r3, r4, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
-/* 80078A84 00075884  48 00 00 91 */	bl GetHeapArenaEnd__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv
-/* 80078A88 00075888  3C 80 80 35 */	lis r4, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078A80 00075880  38 64 50 98 */	addi r3, r4, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
+/* 80078A84 00075884  48 00 00 91 */	bl GetHeapArenaEnd__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv
+/* 80078A88 00075888  3C 80 80 35 */	lis r4, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078A8C 0007588C  7C 7F 1B 78 */	mr r31, r3
-/* 80078A90 00075890  38 64 50 98 */	addi r3, r4, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
-/* 80078A94 00075894  48 00 00 A5 */	bl GetHeapArenaStart__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv
+/* 80078A90 00075890  38 64 50 98 */	addi r3, r4, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
+/* 80078A94 00075894  48 00 00 A5 */	bl GetHeapArenaStart__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv
 /* 80078A98 00075898  3C A0 80 3E */	lis r5, 0x803D9524@ha
 /* 80078A9C 0007589C  3C 80 80 3E */	lis r4, 0x803E1528@ha
 /* 80078AA0 000758A0  3B C5 95 24 */	addi r30, r5, 0x803D9524@l
 /* 80078AA4 000758A4  7F 83 F8 50 */	subf r28, r3, r31
 /* 80078AA8 000758A8  3B E4 15 28 */	addi r31, r4, 0x803E1528@l
-/* 80078AAC 000758AC  93 CD C0 3C */	stw r30, StackBase__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
+/* 80078AAC 000758AC  93 CD C0 3C */	stw r30, StackBase__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80078AB0 000758B0  7C 1E F8 50 */	subf r0, r30, r31
-/* 80078AB4 000758B4  90 0D C0 40 */	stw r0, StackSize__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
-/* 80078AB8 000758B8  4B FF F6 79 */	bl iMemClearStack__21$$2unnamed$$2iMemMgr_cpp$$2Fv
+/* 80078AB4 000758B4  90 0D C0 40 */	stw r0, StackSize__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80078AB8 000758B8  4B FF F6 79 */	bl iMemClearStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_Fv
 /* 80078ABC 000758BC  38 CD BA C0 */	addi r6, r13, gMemInfo-_SDA_BASE_
 /* 80078AC0 000758C0  38 60 08 20 */	li r3, 0x820
 /* 80078AC4 000758C4  7C 9F F0 50 */	subf r4, r31, r30
@@ -785,8 +787,8 @@ lbl_80078B00:
 /* 80078B0C 0007590C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80078B10 00075910  4E 80 00 20 */	blr 
 
-.global GetHeapArenaEnd__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv
-GetHeapArenaEnd__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv:
+.global GetHeapArenaEnd__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv
+GetHeapArenaEnd__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv:
 /* 80078B14 00075914  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078B18 00075918  7C 08 02 A6 */	mflr r0
 /* 80078B1C 0007591C  38 63 00 F0 */	addi r3, r3, 0xf0
@@ -797,8 +799,8 @@ GetHeapArenaEnd__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv:
 /* 80078B30 00075930  38 21 00 10 */	addi r1, r1, 0x10
 /* 80078B34 00075934  4E 80 00 20 */	blr 
 
-.global GetHeapArenaStart__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv
-GetHeapArenaStart__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv:
+.global GetHeapArenaStart__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv
+GetHeapArenaStart__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv:
 /* 80078B38 00075938  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078B3C 0007593C  7C 08 02 A6 */	mflr r0
 /* 80078B40 00075940  38 63 00 F0 */	addi r3, r3, 0xf0
@@ -809,15 +811,15 @@ GetHeapArenaStart__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv:
 /* 80078B54 00075954  38 21 00 10 */	addi r1, r1, 0x10
 /* 80078B58 00075958  4E 80 00 20 */	blr 
 
-.global __ct__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFv
-__ct__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFv:
+.global __ct__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFv
+__ct__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFv:
 /* 80078B5C 0007595C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078B60 00075960  7C 08 02 A6 */	mflr r0
 /* 80078B64 00075964  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80078B68 00075968  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80078B6C 0007596C  7C 7F 1B 78 */	mr r31, r3
 /* 80078B70 00075970  48 00 00 BD */	bl __ct__14xMemoryManagerFv
-/* 80078B74 00075974  38 0D 86 28 */	addi r0, r13, __vt__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMulti-_SDA_BASE_
+/* 80078B74 00075974  38 0D 86 28 */	addi r0, r13, __vt__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMulti-_SDA_BASE_
 /* 80078B78 00075978  38 7F 00 30 */	addi r3, r31, 0x30
 /* 80078B7C 0007597C  90 1F 00 00 */	stw r0, 0(r31)
 /* 80078B80 00075980  48 00 00 75 */	bl __ct__19xMemoryManagerFixedFv
@@ -917,9 +919,9 @@ lbl_80078CA0:
 /* 80078CAC 00075AAC  54 03 00 34 */	rlwinm r3, r0, 0, 0, 0x1a
 /* 80078CB0 00075AB0  38 63 FF F0 */	addi r3, r3, -16
 lbl_80078CB4:
-/* 80078CB4 00075AB4  3C A0 80 35 */	lis r5, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078CB4 00075AB4  3C A0 80 35 */	lis r5, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078CB8 00075AB8  7C 64 1B 78 */	mr r4, r3
-/* 80078CBC 00075ABC  38 65 50 98 */	addi r3, r5, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078CBC 00075ABC  38 65 50 98 */	addi r3, r5, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078CC0 00075AC0  38 A0 00 01 */	li r5, 1
 /* 80078CC4 00075AC4  48 15 4E ED */	bl Allocate__14xMemoryManagerFUiUi
 lbl_80078CC8:
@@ -940,9 +942,9 @@ iMemMgrRealloc__FPvUlUi:
 /* 80078CF4 00075AF4  54 05 00 34 */	rlwinm r5, r0, 0, 0, 0x1a
 /* 80078CF8 00075AF8  38 A5 FF F0 */	addi r5, r5, -16
 lbl_80078CFC:
-/* 80078CFC 00075AFC  3C C0 80 35 */	lis r6, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078CFC 00075AFC  3C C0 80 35 */	lis r6, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078D00 00075B00  7C 64 1B 78 */	mr r4, r3
-/* 80078D04 00075B04  38 66 50 98 */	addi r3, r6, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078D04 00075B04  38 66 50 98 */	addi r3, r6, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078D08 00075B08  38 C0 00 00 */	li r6, 0
 /* 80078D0C 00075B0C  48 15 50 25 */	bl Reallocate__14xMemoryManagerFPvUiUi
 /* 80078D10 00075B10  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -954,10 +956,10 @@ lbl_80078CFC:
 iMemMgrFree__FPv:
 /* 80078D20 00075B20  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078D24 00075B24  7C 08 02 A6 */	mflr r0
-/* 80078D28 00075B28  3C A0 80 35 */	lis r5, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078D28 00075B28  3C A0 80 35 */	lis r5, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078D2C 00075B2C  7C 64 1B 78 */	mr r4, r3
 /* 80078D30 00075B30  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80078D34 00075B34  38 65 50 98 */	addi r3, r5, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078D34 00075B34  38 65 50 98 */	addi r3, r5, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078D38 00075B38  48 15 4F 75 */	bl Free__14xMemoryManagerFPv
 /* 80078D3C 00075B3C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80078D40 00075B40  7C 08 03 A6 */	mtlr r0
@@ -969,10 +971,10 @@ iMemMgrCalloc__FUlUlUi:
 /* 80078D4C 00075B4C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078D50 00075B50  7C 08 02 A6 */	mflr r0
 /* 80078D54 00075B54  7C 83 21 D6 */	mullw r4, r3, r4
-/* 80078D58 00075B58  3C 60 80 35 */	lis r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078D58 00075B58  3C 60 80 35 */	lis r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078D5C 00075B5C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80078D60 00075B60  38 A0 00 01 */	li r5, 1
-/* 80078D64 00075B64  38 63 50 98 */	addi r3, r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078D64 00075B64  38 63 50 98 */	addi r3, r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078D68 00075B68  48 15 4E 49 */	bl Allocate__14xMemoryManagerFUiUi
 /* 80078D6C 00075B6C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80078D70 00075B70  7C 08 03 A6 */	mtlr r0
@@ -983,22 +985,22 @@ iMemMgrCalloc__FUlUlUi:
 iMemMgrCheckCollisionWithMallocHeap__FPvUi:
 /* 80078D7C 00075B7C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80078D80 00075B80  7C 08 02 A6 */	mflr r0
-/* 80078D84 00075B84  3C A0 80 35 */	lis r5, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078D84 00075B84  3C A0 80 35 */	lis r5, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078D88 00075B88  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80078D8C 00075B8C  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 80078D90 00075B90  7C 7C 1B 78 */	mr r28, r3
-/* 80078D94 00075B94  38 65 50 98 */	addi r3, r5, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078D94 00075B94  38 65 50 98 */	addi r3, r5, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078D98 00075B98  7C 9D 23 78 */	mr r29, r4
 /* 80078D9C 00075B9C  3B C0 00 00 */	li r30, 0
-/* 80078DA0 00075BA0  48 00 00 4D */	bl GetHeapCurrentEnd__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv
+/* 80078DA0 00075BA0  48 00 00 4D */	bl GetHeapCurrentEnd__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv
 /* 80078DA4 00075BA4  7C 7F 1B 78 */	mr r31, r3
 /* 80078DA8 00075BA8  7F 83 E3 78 */	mr r3, r28
 /* 80078DAC 00075BAC  7F A4 EB 78 */	mr r4, r29
-/* 80078DB0 00075BB0  4B FF F7 F1 */	bl xMEMADVANCE$$0v$$1__FPvUi
+/* 80078DB0 00075BB0  4B FF F7 F1 */	bl xMEMADVANCE_esc__0_v_esc__1___FPvUi
 /* 80078DB4 00075BB4  7C 03 F8 40 */	cmplw r3, r31
 /* 80078DB8 00075BB8  41 80 00 1C */	blt lbl_80078DD4
-/* 80078DBC 00075BBC  3C 60 80 35 */	lis r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
-/* 80078DC0 00075BC0  38 63 50 98 */	addi r3, r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078DBC 00075BBC  3C 60 80 35 */	lis r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
+/* 80078DC0 00075BC0  38 63 50 98 */	addi r3, r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078DC4 00075BC4  4B FF F5 5D */	bl GetArenaEnd__14xMemoryManagerCFv
 /* 80078DC8 00075BC8  7C 1C 18 40 */	cmplw r28, r3
 /* 80078DCC 00075BCC  40 80 00 08 */	bge lbl_80078DD4
@@ -1011,8 +1013,8 @@ lbl_80078DD4:
 /* 80078DE4 00075BE4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80078DE8 00075BE8  4E 80 00 20 */	blr 
 
-.global GetHeapCurrentEnd__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv
-GetHeapCurrentEnd__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv:
+.global GetHeapCurrentEnd__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv
+GetHeapCurrentEnd__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv:
 /* 80078DEC 00075BEC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078DF0 00075BF0  7C 08 02 A6 */	mflr r0
 /* 80078DF4 00075BF4  38 63 00 F0 */	addi r3, r3, 0xf0
@@ -1031,7 +1033,7 @@ iMemPushTemp__FUi:
 /* 80078E1C 00075C1C  38 03 00 0F */	addi r0, r3, 0xf
 /* 80078E20 00075C20  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80078E24 00075C24  54 1F 00 36 */	rlwinm r31, r0, 0, 0, 0x1b
-/* 80078E28 00075C28  80 8D C0 38 */	lwz r4, tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
+/* 80078E28 00075C28  80 8D C0 38 */	lwz r4, tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80078E2C 00075C2C  28 04 00 00 */	cmplwi r4, 0
 /* 80078E30 00075C30  41 82 00 48 */	beq lbl_80078E78
 /* 80078E34 00075C34  28 04 00 20 */	cmplwi r4, 0x20
@@ -1039,16 +1041,16 @@ iMemPushTemp__FUi:
 /* 80078E3C 00075C3C  38 60 00 00 */	li r3, 0
 /* 80078E40 00075C40  48 00 00 DC */	b lbl_80078F1C
 lbl_80078E44:
-/* 80078E44 00075C44  3C 60 80 35 */	lis r3, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078E44 00075C44  3C 60 80 35 */	lis r3, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078E48 00075C48  54 84 18 38 */	slwi r4, r4, 3
-/* 80078E4C 00075C4C  38 03 4F 98 */	addi r0, r3, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078E4C 00075C4C  38 03 4F 98 */	addi r0, r3, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078E50 00075C50  7C 80 22 14 */	add r4, r0, r4
 /* 80078E54 00075C54  80 64 FF F8 */	lwz r3, -8(r4)
 /* 80078E58 00075C58  80 84 FF FC */	lwz r4, -4(r4)
-/* 80078E5C 00075C5C  4B FF F7 45 */	bl xMEMADVANCE$$0v$$1__FPvUi
-/* 80078E60 00075C60  80 0D C0 38 */	lwz r0, tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
-/* 80078E64 00075C64  3C 80 80 35 */	lis r4, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@ha
-/* 80078E68 00075C68  38 84 4F 98 */	addi r4, r4, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078E5C 00075C5C  4B FF F7 45 */	bl xMEMADVANCE_esc__0_v_esc__1___FPvUi
+/* 80078E60 00075C60  80 0D C0 38 */	lwz r0, tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80078E64 00075C64  3C 80 80 35 */	lis r4, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
+/* 80078E68 00075C68  38 84 4F 98 */	addi r4, r4, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078E6C 00075C6C  54 00 18 38 */	slwi r0, r0, 3
 /* 80078E70 00075C70  7C 64 01 2E */	stwx r3, r4, r0
 /* 80078E74 00075C74  48 00 00 38 */	b lbl_80078EAC
@@ -1063,38 +1065,38 @@ lbl_80078E78:
 /* 80078E94 00075C94  1C 60 00 14 */	mulli r3, r0, 0x14
 /* 80078E98 00075C98  38 03 00 10 */	addi r0, r3, 0x10
 /* 80078E9C 00075C9C  7C 65 00 2E */	lwzx r3, r5, r0
-/* 80078EA0 00075CA0  48 00 00 91 */	bl xMEMALIGN$$0v$$1__FPvUi
-/* 80078EA4 00075CA4  3C 80 80 35 */	lis r4, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@ha
-/* 80078EA8 00075CA8  90 64 4F 98 */	stw r3, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@l(r4)
+/* 80078EA0 00075CA0  48 00 00 91 */	bl xMEMALIGN_esc__0_v_esc__1___FPvUi
+/* 80078EA4 00075CA4  3C 80 80 35 */	lis r4, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
+/* 80078EA8 00075CA8  90 64 4F 98 */	stw r3, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l(r4)
 lbl_80078EAC:
-/* 80078EAC 00075CAC  80 0D C0 38 */	lwz r0, tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
-/* 80078EB0 00075CB0  3C 60 80 35 */	lis r3, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@ha
-/* 80078EB4 00075CB4  38 63 4F 98 */	addi r3, r3, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078EAC 00075CAC  80 0D C0 38 */	lwz r0, tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80078EB0 00075CB0  3C 60 80 35 */	lis r3, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
+/* 80078EB4 00075CB4  38 63 4F 98 */	addi r3, r3, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078EB8 00075CB8  3B C3 00 04 */	addi r30, r3, 4
 /* 80078EBC 00075CBC  54 00 18 38 */	slwi r0, r0, 3
 /* 80078EC0 00075CC0  7F FE 01 2E */	stwx r31, r30, r0
 /* 80078EC4 00075CC4  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80078EC8 00075CC8  7C 9E 00 2E */	lwzx r4, r30, r0
-/* 80078ECC 00075CCC  4B FF F6 D5 */	bl xMEMADVANCE$$0v$$1__FPvUi
-/* 80078ED0 00075CD0  3C 80 80 35 */	lis r4, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078ECC 00075CCC  4B FF F6 D5 */	bl xMEMADVANCE_esc__0_v_esc__1___FPvUi
+/* 80078ED0 00075CD0  3C 80 80 35 */	lis r4, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078ED4 00075CD4  7C 7F 1B 78 */	mr r31, r3
-/* 80078ED8 00075CD8  38 64 50 98 */	addi r3, r4, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
-/* 80078EDC 00075CDC  4B FF FF 11 */	bl GetHeapCurrentEnd__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv
+/* 80078ED8 00075CD8  38 64 50 98 */	addi r3, r4, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
+/* 80078EDC 00075CDC  4B FF FF 11 */	bl GetHeapCurrentEnd__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv
 /* 80078EE0 00075CE0  7C 1F 18 40 */	cmplw r31, r3
 /* 80078EE4 00075CE4  40 81 00 1C */	ble lbl_80078F00
-/* 80078EE8 00075CE8  80 0D C0 38 */	lwz r0, tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
+/* 80078EE8 00075CE8  80 0D C0 38 */	lwz r0, tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80078EEC 00075CEC  38 80 00 00 */	li r4, 0
 /* 80078EF0 00075CF0  38 60 00 00 */	li r3, 0
 /* 80078EF4 00075CF4  54 00 18 38 */	slwi r0, r0, 3
 /* 80078EF8 00075CF8  7C 9E 01 2E */	stwx r4, r30, r0
 /* 80078EFC 00075CFC  48 00 00 20 */	b lbl_80078F1C
 lbl_80078F00:
-/* 80078F00 00075D00  80 AD C0 38 */	lwz r5, tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
-/* 80078F04 00075D04  3C 60 80 35 */	lis r3, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@ha
-/* 80078F08 00075D08  38 63 4F 98 */	addi r3, r3, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078F00 00075D00  80 AD C0 38 */	lwz r5, tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80078F04 00075D04  3C 60 80 35 */	lis r3, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
+/* 80078F08 00075D08  38 63 4F 98 */	addi r3, r3, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078F0C 00075D0C  38 85 00 01 */	addi r4, r5, 1
 /* 80078F10 00075D10  54 A0 18 38 */	slwi r0, r5, 3
-/* 80078F14 00075D14  90 8D C0 38 */	stw r4, tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
+/* 80078F14 00075D14  90 8D C0 38 */	stw r4, tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80078F18 00075D18  7C 63 00 2E */	lwzx r3, r3, r0
 lbl_80078F1C:
 /* 80078F1C 00075D1C  BB C1 00 08 */	lmw r30, 8(r1)
@@ -1103,8 +1105,8 @@ lbl_80078F1C:
 /* 80078F28 00075D28  38 21 00 10 */	addi r1, r1, 0x10
 /* 80078F2C 00075D2C  4E 80 00 20 */	blr 
 
-.global xMEMALIGN$$0v$$1__FPvUi
-xMEMALIGN$$0v$$1__FPvUi:
+.global xMEMALIGN_esc__0_v_esc__1___FPvUi
+xMEMALIGN_esc__0_v_esc__1___FPvUi:
 /* 80078F30 00075D30  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078F34 00075D34  7C 08 02 A6 */	mflr r0
 /* 80078F38 00075D38  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1116,9 +1118,9 @@ xMEMALIGN$$0v$$1__FPvUi:
 
 .global iMemPopTemp__FPv
 iMemPopTemp__FPv:
-/* 80078F50 00075D50  3C 80 80 35 */	lis r4, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@ha
-/* 80078F54 00075D54  81 2D C0 38 */	lwz r9, tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
-/* 80078F58 00075D58  39 04 4F 98 */	addi r8, r4, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078F50 00075D50  3C 80 80 35 */	lis r4, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
+/* 80078F54 00075D54  81 2D C0 38 */	lwz r9, tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80078F58 00075D58  39 04 4F 98 */	addi r8, r4, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078F5C 00075D5C  39 40 00 00 */	li r10, 0
 /* 80078F60 00075D60  38 80 00 00 */	li r4, 0
 /* 80078F64 00075D64  48 00 00 68 */	b lbl_80078FCC
@@ -1133,9 +1135,9 @@ lbl_80078F68:
 /* 80078F84 00075D84  7C 00 48 40 */	cmplw r0, r9
 /* 80078F88 00075D88  90 A6 00 04 */	stw r5, 4(r6)
 /* 80078F8C 00075D8C  40 82 00 38 */	bne lbl_80078FC4
-/* 80078F90 00075D90  3C A0 80 35 */	lis r5, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078F90 00075D90  3C A0 80 35 */	lis r5, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078F94 00075D94  39 29 FF FF */	addi r9, r9, -1
-/* 80078F98 00075D98  38 E5 4F 98 */	addi r7, r5, tempStack__21$$2unnamed$$2iMemMgr_cpp$$2@l
+/* 80078F98 00075D98  38 E5 4F 98 */	addi r7, r5, tempStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078F9C 00075D9C  55 25 18 38 */	slwi r5, r9, 3
 /* 80078FA0 00075DA0  48 00 00 0C */	b lbl_80078FAC
 lbl_80078FA4:
@@ -1154,17 +1156,17 @@ lbl_80078FC4:
 lbl_80078FCC:
 /* 80078FCC 00075DCC  7C 0A 48 40 */	cmplw r10, r9
 /* 80078FD0 00075DD0  41 80 FF 98 */	blt lbl_80078F68
-/* 80078FD4 00075DD4  91 2D C0 38 */	stw r9, tempCurrent__21$$2unnamed$$2iMemMgr_cpp$$2-_SDA_BASE_(r13)
+/* 80078FD4 00075DD4  91 2D C0 38 */	stw r9, tempCurrent__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80078FD8 00075DD8  4E 80 00 20 */	blr 
 
 .global iMemMgrGetMinFreeSpace__Fv
 iMemMgrGetMinFreeSpace__Fv:
 /* 80078FDC 00075DDC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80078FE0 00075DE0  7C 08 02 A6 */	mflr r0
-/* 80078FE4 00075DE4  3C 60 80 35 */	lis r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 80078FE4 00075DE4  3C 60 80 35 */	lis r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80078FE8 00075DE8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80078FEC 00075DEC  38 63 50 98 */	addi r3, r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
-/* 80078FF0 00075DF0  4B FF F8 E5 */	bl GetMinFreeSpace__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiCFv
+/* 80078FEC 00075DEC  38 63 50 98 */	addi r3, r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
+/* 80078FF0 00075DF0  4B FF F8 E5 */	bl GetMinFreeSpace__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv
 /* 80078FF4 00075DF4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80078FF8 00075DF8  7C 08 03 A6 */	mtlr r0
 /* 80078FFC 00075DFC  38 21 00 10 */	addi r1, r1, 0x10
@@ -1174,11 +1176,14 @@ iMemMgrGetMinFreeSpace__Fv:
 __sinit_iMemMgr_cpp:
 /* 80079004 00075E04  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80079008 00075E08  7C 08 02 A6 */	mflr r0
-/* 8007900C 00075E0C  3C 60 80 35 */	lis r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@ha
+/* 8007900C 00075E0C  3C 60 80 35 */	lis r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@ha
 /* 80079010 00075E10  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80079014 00075E14  38 63 50 98 */	addi r3, r3, memoryManager__21$$2unnamed$$2iMemMgr_cpp$$2@l
-/* 80079018 00075E18  4B FF FB 45 */	bl __ct__Q221$$2unnamed$$2iMemMgr_cpp$$218MemoryManagerMultiFv
+/* 80079014 00075E14  38 63 50 98 */	addi r3, r3, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
+/* 80079018 00075E18  4B FF FB 45 */	bl __ct__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFv
 /* 8007901C 00075E1C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80079020 00075E20  7C 08 03 A6 */	mtlr r0
 /* 80079024 00075E24  38 21 00 10 */	addi r1, r1, 0x10
 /* 80079028 00075E28  4E 80 00 20 */	blr 
+
+.endif
+

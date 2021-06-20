@@ -59,24 +59,26 @@ zcam_far_pitch:
 
 .section .sdata2
 
-.global $$2682_0
-$$2682_0:
+.global _esc__2_682_0
+_esc__2_682_0:
 	.incbin "baserom.dol", 0x32FA58, 0x4
-.global $$2683
-$$2683:
+.global _esc__2_683
+_esc__2_683:
 	.incbin "baserom.dol", 0x32FA5C, 0x4
-.global $$2751_1
-$$2751_1:
+.global _esc__2_751_1
+_esc__2_751_1:
 	.incbin "baserom.dol", 0x32FA60, 0x4
-.global $$2752
-$$2752:
+.global _esc__2_752
+_esc__2_752:
 	.incbin "baserom.dol", 0x32FA64, 0x4
-.global $$2786
-$$2786:
+.global _esc__2_786
+_esc__2_786:
 	.incbin "baserom.dol", 0x32FA68, 0x8
-.global $$2848_2
-$$2848_2:
+.global _esc__2_848_2
+_esc__2_848_2:
 	.incbin "baserom.dol", 0x32FA70, 0x8
+
+.if 0
 
 .section .text
 
@@ -210,7 +212,7 @@ lbl_80088528:
 lbl_80088534:
 /* 80088534 00085334  1C DF 00 14 */	mulli r6, r31, 0x14
 /* 80088538 00085338  3C 60 80 37 */	lis r3, sCamTweakList@ha
-/* 8008853C 0008533C  C0 42 93 80 */	lfs f2, $$2751_1-_SDA2_BASE_(r2)
+/* 8008853C 0008533C  C0 42 93 80 */	lfs f2, _esc__2_751_1-_SDA2_BASE_(r2)
 /* 80088540 00085340  38 63 57 80 */	addi r3, r3, sCamTweakList@l
 /* 80088544 00085344  7F C3 31 2E */	stwx r30, r3, r6
 /* 80088548 00085348  7C 63 32 14 */	add r3, r3, r6
@@ -219,10 +221,10 @@ lbl_80088534:
 /* 80088554 00085354  40 81 00 08 */	ble lbl_8008855C
 /* 80088558 00085358  FC 40 E8 90 */	fmr f2, f29
 lbl_8008855C:
-/* 8008855C 0008535C  C0 22 93 84 */	lfs f1, $$2752-_SDA2_BASE_(r2)
+/* 8008855C 0008535C  C0 22 93 84 */	lfs f1, _esc__2_752-_SDA2_BASE_(r2)
 /* 80088560 00085360  3C 60 80 37 */	lis r3, sCamTweakList@ha
 /* 80088564 00085364  38 03 57 80 */	addi r0, r3, sCamTweakList@l
-/* 80088568 00085368  C0 02 93 80 */	lfs f0, $$2751_1-_SDA2_BASE_(r2)
+/* 80088568 00085368  C0 02 93 80 */	lfs f0, _esc__2_751_1-_SDA2_BASE_(r2)
 /* 8008856C 0008536C  7C 60 32 14 */	add r3, r0, r6
 /* 80088570 00085370  EC 21 07 B2 */	fmuls f1, f1, f30
 /* 80088574 00085374  D0 43 00 08 */	stfs f2, 8(r3)
@@ -242,7 +244,7 @@ lbl_80088588:
 /* 800885A8 000853A8  40 82 00 5C */	bne lbl_80088604
 /* 800885AC 000853AC  C1 0D C3 54 */	lfs f8, sCamTweakLerp-_SDA_BASE_(r13)
 /* 800885B0 000853B0  38 6D C3 5C */	addi r3, r13, sCamTweakPitch-_SDA_BASE_
-/* 800885B4 000853B4  C0 C2 93 7C */	lfs f6, $$2683-_SDA2_BASE_(r2)
+/* 800885B4 000853B4  C0 C2 93 7C */	lfs f6, _esc__2_683-_SDA2_BASE_(r2)
 /* 800885B8 000853B8  38 8D C3 64 */	addi r4, r13, sCamTweakDistMult-_SDA_BASE_
 /* 800885BC 000853BC  C0 45 00 08 */	lfs f2, 8(r5)
 /* 800885C0 000853C0  EC 86 40 28 */	fsubs f4, f6, f8
@@ -313,7 +315,7 @@ lbl_80088694:
 /* 800886A4 000854A4  40 82 00 7C */	bne lbl_80088720
 /* 800886A8 000854A8  C0 CD C3 54 */	lfs f6, sCamTweakLerp-_SDA_BASE_(r13)
 /* 800886AC 000854AC  38 8D C3 5C */	addi r4, r13, sCamTweakPitch-_SDA_BASE_
-/* 800886B0 000854B0  C0 82 93 7C */	lfs f4, $$2683-_SDA2_BASE_(r2)
+/* 800886B0 000854B0  C0 82 93 7C */	lfs f4, _esc__2_683-_SDA2_BASE_(r2)
 /* 800886B4 000854B4  38 AD C3 64 */	addi r5, r13, sCamTweakDistMult-_SDA_BASE_
 /* 800886B8 000854B8  3C 60 80 37 */	lis r3, sCamTweakList@ha
 /* 800886BC 000854BC  C0 4D C3 5C */	lfs f2, sCamTweakPitch-_SDA_BASE_(r13)
@@ -339,7 +341,7 @@ lbl_80088694:
 /* 8008870C 0008550C  D0 0D C3 64 */	stfs f0, sCamTweakDistMult-_SDA_BASE_(r13)
 /* 80088710 00085510  48 00 00 10 */	b lbl_80088720
 lbl_80088714:
-/* 80088714 00085514  C0 02 93 78 */	lfs f0, $$2682_0-_SDA2_BASE_(r2)
+/* 80088714 00085514  C0 02 93 78 */	lfs f0, _esc__2_682_0-_SDA2_BASE_(r2)
 /* 80088718 00085518  D0 8D C3 64 */	stfs f4, sCamTweakDistMult-_SDA_BASE_(r13)
 /* 8008871C 0008551C  D0 0D C3 5C */	stfs f0, sCamTweakPitch-_SDA_BASE_(r13)
 lbl_80088720:
@@ -376,11 +378,11 @@ lbl_80088774:
 
 .global zCameraTweakGlobal_Reset__Fv
 zCameraTweakGlobal_Reset__Fv:
-/* 80088788 00085588  C0 42 93 78 */	lfs f2, $$2682_0-_SDA2_BASE_(r2)
+/* 80088788 00085588  C0 42 93 78 */	lfs f2, _esc__2_682_0-_SDA2_BASE_(r2)
 /* 8008878C 0008558C  38 00 00 00 */	li r0, 0
-/* 80088790 00085590  C0 22 93 7C */	lfs f1, $$2683-_SDA2_BASE_(r2)
+/* 80088790 00085590  C0 22 93 7C */	lfs f1, _esc__2_683-_SDA2_BASE_(r2)
 /* 80088794 00085594  38 8D C3 5C */	addi r4, r13, sCamTweakPitch-_SDA_BASE_
-/* 80088798 00085598  C0 02 93 88 */	lfs f0, $$2786-_SDA2_BASE_(r2)
+/* 80088798 00085598  C0 02 93 88 */	lfs f0, _esc__2_786-_SDA2_BASE_(r2)
 /* 8008879C 0008559C  38 6D C3 64 */	addi r3, r13, sCamTweakDistMult-_SDA_BASE_
 /* 800887A0 000855A0  90 0D C3 50 */	stw r0, sCamTweakCount-_SDA_BASE_(r13)
 /* 800887A4 000855A4  D0 4D C3 5C */	stfs f2, sCamTweakPitch-_SDA_BASE_(r13)
@@ -492,7 +494,7 @@ lbl_800888E4:
 /* 800888F8 000856F8  3C 00 43 30 */	lis r0, 0x4330
 /* 800888FC 000856FC  90 01 00 08 */	stw r0, 8(r1)
 /* 80088900 00085700  80 04 00 10 */	lwz r0, 0x10(r4)
-/* 80088904 00085704  C8 22 93 90 */	lfd f1, $$2848_2-_SDA2_BASE_(r2)
+/* 80088904 00085704  C8 22 93 90 */	lfd f1, _esc__2_848_2-_SDA2_BASE_(r2)
 /* 80088908 00085708  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 8008890C 0008570C  80 7F 00 00 */	lwz r3, 0(r31)
 /* 80088910 00085710  90 01 00 0C */	stw r0, 0xc(r1)
@@ -516,3 +518,6 @@ lbl_80088948:
 /* 80088950 00085750  7C 08 03 A6 */	mtlr r0
 /* 80088954 00085754  38 21 00 20 */	addi r1, r1, 0x20
 /* 80088958 00085758  4E 80 00 20 */	blr 
+
+.endif
+

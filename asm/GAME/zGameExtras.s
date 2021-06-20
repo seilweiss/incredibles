@@ -2,8 +2,8 @@
 
 .section .data
 
-.global $$21237
-$$21237:
+.global _esc__2_1237
+_esc__2_1237:
 	.incbin "baserom.dol", 0x306C20, 0x38
 
 .section .sbss
@@ -53,24 +53,26 @@ cheatList:
 .global sCheatPressed
 sCheatPressed:
 	.incbin "baserom.dol", 0x32BF50, 0x40
-.global aid_sndList$1342
-aid_sndList$1342:
+.global aid_sndList_esc__7_1342
+aid_sndList_esc__7_1342:
 	.incbin "baserom.dol", 0x32BF90, 0x20
 
 .section .sdata2
 
-.global $$21162
-$$21162:
+.global _esc__2_1162
+_esc__2_1162:
 	.incbin "baserom.dol", 0x3306F8, 0x4
-.global $$21334_0
-$$21334_0:
+.global _esc__2_1334_0
+_esc__2_1334_0:
 	.incbin "baserom.dol", 0x3306FC, 0x4
-.global $$21335_1
-$$21335_1:
+.global _esc__2_1335_1
+_esc__2_1335_1:
 	.incbin "baserom.dol", 0x330700, 0x8
-.global $$21380_0
-$$21380_0:
+.global _esc__2_1380_0
+_esc__2_1380_0:
 	.incbin "baserom.dol", 0x330708, 0x8
+
+.if 0
 
 .section .text
 
@@ -257,9 +259,9 @@ EGG_check_ExtrasFlags__FP7EGGItem:
 /* 800CF1C0 000CBFC0  80 0D C8 18 */	lwz r0, g_currMonth-_SDA_BASE_(r13)
 /* 800CF1C4 000CBFC4  28 00 00 0C */	cmplwi r0, 0xc
 /* 800CF1C8 000CBFC8  41 81 01 BC */	bgt lbl_800CF384
-/* 800CF1CC 000CBFCC  3C 60 80 31 */	lis r3, $$21237@ha
+/* 800CF1CC 000CBFCC  3C 60 80 31 */	lis r3, _esc__2_1237@ha
 /* 800CF1D0 000CBFD0  54 00 10 3A */	slwi r0, r0, 2
-/* 800CF1D4 000CBFD4  38 63 9C 20 */	addi r3, r3, $$21237@l
+/* 800CF1D4 000CBFD4  38 63 9C 20 */	addi r3, r3, _esc__2_1237@l
 /* 800CF1D8 000CBFD8  7C 03 00 2E */	lwzx r0, r3, r0
 /* 800CF1DC 000CBFDC  7C 09 03 A6 */	mtctr r0
 /* 800CF1E0 000CBFE0  4E 80 04 20 */	bctr 
@@ -496,7 +498,7 @@ lbl_800CF4F8:
 /* 800CF4F8 000CC2F8  54 C0 03 5D */	rlwinm. r0, r6, 0, 0xd, 0xe
 /* 800CF4FC 000CC2FC  40 82 00 2C */	bne lbl_800CF528
 /* 800CF500 000CC300  C0 2D C8 24 */	lfs f1, sCheatTimer-_SDA_BASE_(r13)
-/* 800CF504 000CC304  C0 02 A0 18 */	lfs f0, $$21162-_SDA2_BASE_(r2)
+/* 800CF504 000CC304  C0 02 A0 18 */	lfs f0, _esc__2_1162-_SDA2_BASE_(r2)
 /* 800CF508 000CC308  EC 21 F8 28 */	fsubs f1, f1, f31
 /* 800CF50C 000CC30C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800CF510 000CC310  D0 2D C8 24 */	stfs f1, sCheatTimer-_SDA_BASE_(r13)
@@ -519,7 +521,7 @@ lbl_800CF540:
 lbl_800CF54C:
 /* 800CF54C 000CC34C  2C 07 00 00 */	cmpwi r7, 0
 /* 800CF550 000CC350  41 82 00 28 */	beq lbl_800CF578
-/* 800CF554 000CC354  C0 02 A0 1C */	lfs f0, $$21334_0-_SDA2_BASE_(r2)
+/* 800CF554 000CC354  C0 02 A0 1C */	lfs f0, _esc__2_1334_0-_SDA2_BASE_(r2)
 /* 800CF558 000CC358  38 00 00 00 */	li r0, 0
 /* 800CF55C 000CC35C  90 0D C8 28 */	stw r0, sCheatInputCount-_SDA_BASE_(r13)
 /* 800CF560 000CC360  38 6D 8F 90 */	addi r3, r13, sCheatPressed-_SDA_BASE_
@@ -532,7 +534,7 @@ lbl_800CF578:
 /* 800CF578 000CC378  80 04 00 30 */	lwz r0, 0x30(r4)
 /* 800CF57C 000CC37C  54 03 03 5C */	rlwinm r3, r0, 0, 0xd, 0xe
 /* 800CF580 000CC380  4B FF FE C9 */	bl AddToCheatPressed__FUi
-/* 800CF584 000CC384  C0 02 A0 1C */	lfs f0, $$21334_0-_SDA2_BASE_(r2)
+/* 800CF584 000CC384  C0 02 A0 1C */	lfs f0, _esc__2_1334_0-_SDA2_BASE_(r2)
 /* 800CF588 000CC388  3B E0 00 00 */	li r31, 0
 /* 800CF58C 000CC38C  3B CD 8F 50 */	addi r30, r13, cheatList-_SDA_BASE_
 /* 800CF590 000CC390  D0 0D C8 24 */	stfs f0, sCheatTimer-_SDA_BASE_(r13)
@@ -566,7 +568,7 @@ lbl_800CF5E8:
 /* 800CF5F0 000CC3F0  40 82 FF A8 */	bne lbl_800CF598
 /* 800CF5F4 000CC3F4  2C 1F 00 00 */	cmpwi r31, 0
 /* 800CF5F8 000CC3F8  41 82 00 1C */	beq lbl_800CF614
-/* 800CF5FC 000CC3FC  C0 02 A0 20 */	lfs f0, $$21335_1-_SDA2_BASE_(r2)
+/* 800CF5FC 000CC3FC  C0 02 A0 20 */	lfs f0, _esc__2_1335_1-_SDA2_BASE_(r2)
 /* 800CF600 000CC400  38 6D 8F 90 */	addi r3, r13, sCheatPressed-_SDA_BASE_
 /* 800CF604 000CC404  38 80 00 00 */	li r4, 0
 /* 800CF608 000CC408  38 A0 00 40 */	li r5, 0x40
@@ -599,18 +601,18 @@ GEC_CheatFlagToggle__Fi:
 GEC_dfltSound__Fv:
 /* 800CF650 000CC450  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800CF654 000CC454  7C 08 02 A6 */	mflr r0
-/* 800CF658 000CC458  38 6D 8F D0 */	addi r3, r13, aid_sndList$1342-_SDA_BASE_
+/* 800CF658 000CC458  38 6D 8F D0 */	addi r3, r13, aid_sndList_esc__7_1342-_SDA_BASE_
 /* 800CF65C 000CC45C  38 80 00 07 */	li r4, 7
 /* 800CF660 000CC460  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800CF664 000CC464  38 A0 00 00 */	li r5, 0
-/* 800CF668 000CC468  48 00 00 15 */	bl xUtil_choose$$0Ui$$1__FPCUiiPCf
+/* 800CF668 000CC468  48 00 00 15 */	bl xUtil_choose_esc__0_Ui_esc__1___FPCUiiPCf
 /* 800CF66C 000CC46C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800CF670 000CC470  7C 08 03 A6 */	mtlr r0
 /* 800CF674 000CC474  38 21 00 10 */	addi r1, r1, 0x10
 /* 800CF678 000CC478  4E 80 00 20 */	blr 
 
-.global xUtil_choose$$0Ui$$1__FPCUiiPCf
-xUtil_choose$$0Ui$$1__FPCUiiPCf:
+.global xUtil_choose_esc__0_Ui_esc__1___FPCUiiPCf
+xUtil_choose_esc__0_Ui_esc__1___FPCUiiPCf:
 /* 800CF67C 000CC47C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800CF680 000CC480  7C 08 02 A6 */	mflr r0
 /* 800CF684 000CC484  90 01 00 34 */	stw r0, 0x34(r1)
@@ -634,7 +636,7 @@ lbl_800CF6B4:
 /* 800CF6C4 000CC4C4  6F A3 80 00 */	xoris r3, r29, 0x8000
 /* 800CF6C8 000CC4C8  3C 00 43 30 */	lis r0, 0x4330
 /* 800CF6CC 000CC4CC  90 61 00 0C */	stw r3, 0xc(r1)
-/* 800CF6D0 000CC4D0  C8 42 A0 28 */	lfd f2, $$21380_0-_SDA2_BASE_(r2)
+/* 800CF6D0 000CC4D0  C8 42 A0 28 */	lfd f2, _esc__2_1380_0-_SDA2_BASE_(r2)
 /* 800CF6D4 000CC4D4  90 01 00 08 */	stw r0, 8(r1)
 /* 800CF6D8 000CC4D8  C8 01 00 08 */	lfd f0, 8(r1)
 /* 800CF6DC 000CC4DC  EC 00 10 28 */	fsubs f0, f0, f2
@@ -644,7 +646,7 @@ lbl_800CF6B4:
 /* 800CF6EC 000CC4EC  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 800CF6F0 000CC4F0  48 00 00 54 */	b lbl_800CF744
 lbl_800CF6F4:
-/* 800CF6F4 000CC4F4  C0 42 A0 18 */	lfs f2, $$21162-_SDA2_BASE_(r2)
+/* 800CF6F4 000CC4F4  C0 42 A0 18 */	lfs f2, _esc__2_1162-_SDA2_BASE_(r2)
 /* 800CF6F8 000CC4F8  38 80 00 00 */	li r4, 0
 /* 800CF6FC 000CC4FC  38 60 00 00 */	li r3, 0
 /* 800CF700 000CC500  7F A9 03 A6 */	mtctr r29
@@ -716,3 +718,6 @@ GEC_cb_SwapCCUD__Fv:
 /* 800CF7CC 000CC5CC  7C 08 03 A6 */	mtlr r0
 /* 800CF7D0 000CC5D0  38 21 00 10 */	addi r1, r1, 0x10
 /* 800CF7D4 000CC5D4  4E 80 00 20 */	blr 
+
+.endif
+

@@ -9,6 +9,8 @@ sGrapplePoints:
 sNumGrapplePoints:
 	.skip 0x4
 
+.if 0
+
 .section .text
 
 .global zGrapple_Init__FR5xBaseR9xDynAssetUl
@@ -298,3 +300,6 @@ lbl_800CFFE4:
 /* 800CFFEC 000CCDEC  7C 08 03 A6 */	mtlr r0
 /* 800CFFF0 000CCDF0  38 21 00 10 */	addi r1, r1, 0x10
 /* 800CFFF4 000CCDF4  4E 80 00 20 */	blr 
+
+.endif
+

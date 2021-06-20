@@ -98,8 +98,8 @@ cinfx_hs01_elastigirl_dust:
 .global cinfx_hs01_elastigirl
 cinfx_hs01_elastigirl:
 	.incbin "baserom.dol", 0x31825C, 0x2E4
-.global cutmap$2140
-cutmap$2140:
+.global cutmap_esc__7_2140
+cutmap_esc__7_2140:
 	.incbin "baserom.dol", 0x318540, 0x48
 .global cinfx_nj02_opening_dust
 cinfx_nj02_opening_dust:
@@ -131,8 +131,8 @@ cinfx_nj02_opening:
 .global cinfx_nj02_omni_trees
 cinfx_nj02_omni_trees:
 	.incbin "baserom.dol", 0x318D60, 0x378
-.global cutmap$2145
-cutmap$2145:
+.global cutmap_esc__7_2145
+cutmap_esc__7_2145:
 	.incbin "baserom.dol", 0x3190D8, 0x48
 .global cinfx_ni03_opening_omni_dust3
 cinfx_ni03_opening_omni_dust3:
@@ -203,23 +203,23 @@ cinfx_ni01_velocipodout:
 
 .section .rodata
 
-.global record_om01_heli_escape__23$$2unnamed$$2zCineFXIN_cpp$$2
-record_om01_heli_escape__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global record_om01_heli_escape__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+record_om01_heli_escape__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x2E7248, 0xD90
-.global record_om01_frozone_chase__23$$2unnamed$$2zCineFXIN_cpp$$2
-record_om01_frozone_chase__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global record_om01_frozone_chase__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+record_om01_frozone_chase__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x2E7FD8, 0x420
-.global record_hs01_frozone__23$$2unnamed$$2zCineFXIN_cpp$$2
-record_hs01_frozone__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global record_hs01_frozone__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+record_hs01_frozone__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x2E83F8, 0x650
-.global record_hs01_elastigirl__23$$2unnamed$$2zCineFXIN_cpp$$2
-record_hs01_elastigirl__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global record_hs01_elastigirl__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+record_hs01_elastigirl__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x2E8A48, 0x280
-.global record_om03_opening__23$$2unnamed$$2zCineFXIN_cpp$$2
-record_om03_opening__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global record_om03_opening__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+record_om03_opening__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x2E8CC8, 0xA10
-.global $$2stringBase0_156
-$$2stringBase0_156:
+.global _esc__2_stringBase0_156
+_esc__2_stringBase0_156:
 	.incbin "baserom.dol", 0x2E96D8, 0x690
 
 .section .sbss
@@ -230,11 +230,11 @@ zCinFX_Incrediball_position:
 .global current_incrediball
 current_incrediball:
 	.skip 0x4
-.global init$1818
-init$1818:
+.global init_esc__7_1818
+init_esc__7_1818:
 	.skip 0x4
-.global spark_system$1817
-spark_system$1817:
+.global spark_system_esc__7_1817
+spark_system_esc__7_1817:
 	.skip 0xC
 .global cinfx_om04_opening_bv_dust_settings
 cinfx_om04_opening_bv_dust_settings:
@@ -332,8 +332,8 @@ cinfx_ni01_damaged_velocipod_smoke_settings:
 
 .section .sbss2
 
-.global $$21662_1
-$$21662_1:
+.global _esc__2_1662_1
+_esc__2_1662_1:
 	.skip 0x4
 .global lbl_803D94F4
 lbl_803D94F4:
@@ -341,8 +341,8 @@ lbl_803D94F4:
 .global lbl_803D94F8
 lbl_803D94F8:
 	.skip 0x4
-.global $$21664_1
-$$21664_1:
+.global _esc__2_1664_1
+_esc__2_1664_1:
 	.skip 0x4
 .global lbl_803D9500
 lbl_803D9500:
@@ -362,8 +362,8 @@ cinfx_om04_ending_bv_helicopter_smoke:
 .global cinfx_om04_bomb_glow
 cinfx_om04_bomb_glow:
 	.incbin "baserom.dol", 0x32DD70, 0x2C
-.global cutmap$2094
-cutmap$2094:
+.global cutmap_esc__7_2094
+cutmap_esc__7_2094:
 	.incbin "baserom.dol", 0x32DD9C, 0x24
 .global cinfx_om01_opening_bv_rocket_smoke
 cinfx_om01_opening_bv_rocket_smoke:
@@ -380,8 +380,8 @@ cinfx_om01_towers_helicopter_blur:
 .global om01_towers_sparks
 om01_towers_sparks:
 	.incbin "baserom.dol", 0x32DEA4, 0x2C
-.global cutmap$2099
-cutmap$2099:
+.global cutmap_esc__7_2099
+cutmap_esc__7_2099:
 	.incbin "baserom.dol", 0x32DED0, 0x3C
 .global cinfx_ld04_opening_dash_blur
 cinfx_ld04_opening_dash_blur:
@@ -389,8 +389,8 @@ cinfx_ld04_opening_dash_blur:
 .global cinfx_ld04_opening_dash_smoke
 cinfx_ld04_opening_dash_smoke:
 	.incbin "baserom.dol", 0x32DF48, 0x38
-.global cutmap$2135
-cutmap$2135:
+.global cutmap_esc__7_2135
+cutmap_esc__7_2135:
 	.incbin "baserom.dol", 0x32DF80, 0x24
 .global cinfx_hs01_incrediball_intro_rubble
 cinfx_hs01_incrediball_intro_rubble:
@@ -404,20 +404,20 @@ cinfx_nj02_omni_trees_smoke:
 .global nj02_turret_pickup_sparks
 nj02_turret_pickup_sparks:
 	.incbin "baserom.dol", 0x32E02C, 0x2C
-.global cutmap$2150
-cutmap$2150:
+.global cutmap_esc__7_2150
+cutmap_esc__7_2150:
 	.incbin "baserom.dol", 0x32E058, 0x24
 .global cinfx_ft01_dash_vine_blur
 cinfx_ft01_dash_vine_blur:
 	.incbin "baserom.dol", 0x32E07C, 0x3C
-.global cutmap$2155
-cutmap$2155:
+.global cutmap_esc__7_2155
+cutmap_esc__7_2155:
 	.incbin "baserom.dol", 0x32E0B8, 0x18
-.global cutmap$2160
-cutmap$2160:
+.global cutmap_esc__7_2160
+cutmap_esc__7_2160:
 	.incbin "baserom.dol", 0x32E0D0, 0x3C
-.global cutmap$2165
-cutmap$2165:
+.global cutmap_esc__7_2165
+cutmap_esc__7_2165:
 	.incbin "baserom.dol", 0x32E10C, 0x24
 .global cinfx_rs01_opening_mr_i_blur
 cinfx_rs01_opening_mr_i_blur:
@@ -425,11 +425,11 @@ cinfx_rs01_opening_mr_i_blur:
 .global cinfx_rs01_opening_mr_i_violet
 cinfx_rs01_opening_mr_i_violet:
 	.incbin "baserom.dol", 0x32E16C, 0x10
-.global cutmap$2170
-cutmap$2170:
+.global cutmap_esc__7_2170
+cutmap_esc__7_2170:
 	.incbin "baserom.dol", 0x32E17C, 0x18
-.global cutmap$2175
-cutmap$2175:
+.global cutmap_esc__7_2175
+cutmap_esc__7_2175:
 	.incbin "baserom.dol", 0x32E194, 0x18
 .global cinfx_nj01_opening_blur
 cinfx_nj01_opening_blur:
@@ -437,23 +437,23 @@ cinfx_nj01_opening_blur:
 .global cinfx_nj01_break_open_smoke
 cinfx_nj01_break_open_smoke:
 	.incbin "baserom.dol", 0x32E1E8, 0x38
-.global cutmap$2180
-cutmap$2180:
+.global cutmap_esc__7_2180
+cutmap_esc__7_2180:
 	.incbin "baserom.dol", 0x32E220, 0x18
 .global cinfx_nj03_opening_blur
 cinfx_nj03_opening_blur:
 	.incbin "baserom.dol", 0x32E238, 0x3C
-.global cutmap$2185
-cutmap$2185:
+.global cutmap_esc__7_2185
+cutmap_esc__7_2185:
 	.incbin "baserom.dol", 0x32E274, 0x18
 .global cinfx_ni01_damaged_velocipod_smoke
 cinfx_ni01_damaged_velocipod_smoke:
 	.incbin "baserom.dol", 0x32E28C, 0x38
-.global cutmap$2190
-cutmap$2190:
+.global cutmap_esc__7_2190
+cutmap_esc__7_2190:
 	.incbin "baserom.dol", 0x32E2C4, 0x24
-.global __vt__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1
-__vt__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1:
+.global __vt__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_
+__vt__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_:
 	.incbin "baserom.dol", 0x32E2E8, 0xC
 .global __vt__18CinSparkDiskSystem
 __vt__18CinSparkDiskSystem:
@@ -461,72 +461,74 @@ __vt__18CinSparkDiskSystem:
 
 .section .sdata2
 
-.global $$21327_1
-$$21327_1:
+.global _esc__2_1327_1
+_esc__2_1327_1:
 	.incbin "baserom.dol", 0x333E40, 0x4
-.global $$21347_0
-$$21347_0:
+.global _esc__2_1347_0
+_esc__2_1347_0:
 	.incbin "baserom.dol", 0x333E44, 0x4
-.global $$21406_2
-$$21406_2:
+.global _esc__2_1406_2
+_esc__2_1406_2:
 	.incbin "baserom.dol", 0x333E48, 0x4
-.global $$21587_1
-$$21587_1:
+.global _esc__2_1587_1
+_esc__2_1587_1:
 	.incbin "baserom.dol", 0x333E4C, 0x4
-.global $$21643_0
-$$21643_0:
+.global _esc__2_1643_0
+_esc__2_1643_0:
 	.incbin "baserom.dol", 0x333E50, 0x4
-.global $$21652_1
-$$21652_1:
+.global _esc__2_1652_1
+_esc__2_1652_1:
 	.incbin "baserom.dol", 0x333E54, 0x4
-.global $$21731_2
-$$21731_2:
+.global _esc__2_1731_2
+_esc__2_1731_2:
 	.incbin "baserom.dol", 0x333E58, 0x4
-.global $$21760_0
-$$21760_0:
+.global _esc__2_1760_0
+_esc__2_1760_0:
 	.incbin "baserom.dol", 0x333E5C, 0x4
-.global $$21839
-$$21839:
+.global _esc__2_1839
+_esc__2_1839:
 	.incbin "baserom.dol", 0x333E60, 0x4
-.global $$21840
-$$21840:
+.global _esc__2_1840
+_esc__2_1840:
 	.incbin "baserom.dol", 0x333E64, 0x4
-.global $$21851_0
-$$21851_0:
+.global _esc__2_1851_0
+_esc__2_1851_0:
 	.incbin "baserom.dol", 0x333E68, 0x8
-.global $$21984
-$$21984:
+.global _esc__2_1984
+_esc__2_1984:
 	.incbin "baserom.dol", 0x333E70, 0x4
-.global frotext_om01_heli_escape1__23$$2unnamed$$2zCineFXIN_cpp$$2
-frotext_om01_heli_escape1__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global frotext_om01_heli_escape1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+frotext_om01_heli_escape1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333E74, 0xC
-.global frotext_om01_heli_escape2__23$$2unnamed$$2zCineFXIN_cpp$$2
-frotext_om01_heli_escape2__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global frotext_om01_heli_escape2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+frotext_om01_heli_escape2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333E80, 0xC
-.global frotext_om01_heli_escape3__23$$2unnamed$$2zCineFXIN_cpp$$2
-frotext_om01_heli_escape3__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global frotext_om01_heli_escape3__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+frotext_om01_heli_escape3__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333E8C, 0xC
-.global frotext_om01_frozone_chase1__23$$2unnamed$$2zCineFXIN_cpp$$2
-frotext_om01_frozone_chase1__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global frotext_om01_frozone_chase1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+frotext_om01_frozone_chase1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333E98, 0xC
-.global frotext_om01_frozone_chase2__23$$2unnamed$$2zCineFXIN_cpp$$2
-frotext_om01_frozone_chase2__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global frotext_om01_frozone_chase2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+frotext_om01_frozone_chase2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333EA4, 0xC
-.global frotext_hs01_frozone1__23$$2unnamed$$2zCineFXIN_cpp$$2
-frotext_hs01_frozone1__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global frotext_hs01_frozone1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+frotext_hs01_frozone1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333EB0, 0xC
-.global frotext_hs01_frozone2__23$$2unnamed$$2zCineFXIN_cpp$$2
-frotext_hs01_frozone2__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global frotext_hs01_frozone2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+frotext_hs01_frozone2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333EBC, 0xC
-.global frotext_hs01_elastigirl1__23$$2unnamed$$2zCineFXIN_cpp$$2
-frotext_hs01_elastigirl1__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global frotext_hs01_elastigirl1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+frotext_hs01_elastigirl1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333EC8, 0xC
-.global frotext_hs01_elastigirl2__23$$2unnamed$$2zCineFXIN_cpp$$2
-frotext_hs01_elastigirl2__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global frotext_hs01_elastigirl2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+frotext_hs01_elastigirl2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333ED4, 0xC
-.global frotext_om03_opening1__23$$2unnamed$$2zCineFXIN_cpp$$2
-frotext_om03_opening1__23$$2unnamed$$2zCineFXIN_cpp$$2:
+.global frotext_om03_opening1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
+frotext_om03_opening1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333EE0, 0x10
+
+.if 0
 
 .section .text
 
@@ -555,7 +557,7 @@ lbl_801F0F3C:
 /* 801F0F50 001EDD50  40 82 00 1C */	bne lbl_801F0F6C
 /* 801F0F54 001EDD54  80 64 00 64 */	lwz r3, 0x64(r4)
 /* 801F0F58 001EDD58  38 00 00 01 */	li r0, 1
-/* 801F0F5C 001EDD5C  C0 02 D7 60 */	lfs f0, $$21327_1-_SDA2_BASE_(r2)
+/* 801F0F5C 001EDD5C  C0 02 D7 60 */	lfs f0, _esc__2_1327_1-_SDA2_BASE_(r2)
 /* 801F0F60 001EDD60  D0 03 00 00 */	stfs f0, 0(r3)
 /* 801F0F64 001EDD64  98 03 00 10 */	stb r0, 0x10(r3)
 /* 801F0F68 001EDD68  4E 80 00 20 */	blr 
@@ -564,12 +566,12 @@ lbl_801F0F6C:
 /* 801F0F70 001EDD70  40 82 00 1C */	bne lbl_801F0F8C
 /* 801F0F74 001EDD74  80 64 00 64 */	lwz r3, 0x64(r4)
 /* 801F0F78 001EDD78  38 00 00 01 */	li r0, 1
-/* 801F0F7C 001EDD7C  C0 02 D7 60 */	lfs f0, $$21327_1-_SDA2_BASE_(r2)
+/* 801F0F7C 001EDD7C  C0 02 D7 60 */	lfs f0, _esc__2_1327_1-_SDA2_BASE_(r2)
 /* 801F0F80 001EDD80  D0 03 00 00 */	stfs f0, 0(r3)
 /* 801F0F84 001EDD84  98 03 00 10 */	stb r0, 0x10(r3)
 /* 801F0F88 001EDD88  4E 80 00 20 */	blr 
 lbl_801F0F8C:
-/* 801F0F8C 001EDD8C  C0 02 D7 60 */	lfs f0, $$21327_1-_SDA2_BASE_(r2)
+/* 801F0F8C 001EDD8C  C0 02 D7 60 */	lfs f0, _esc__2_1327_1-_SDA2_BASE_(r2)
 /* 801F0F90 001EDD90  80 64 00 64 */	lwz r3, 0x64(r4)
 /* 801F0F94 001EDD94  D0 03 00 00 */	stfs f0, 0(r3)
 /* 801F0F98 001EDD98  4E 80 00 20 */	blr 
@@ -841,7 +843,7 @@ lbl_801F12DC:
 /* 801F1368 001EE168  4B E5 A6 F9 */	bl xModelSetLightKit__FP14xModelInstanceP9xLightKit
 lbl_801F136C:
 /* 801F136C 001EE16C  80 7F 00 28 */	lwz r3, 0x28(r31)
-/* 801F1370 001EE170  C0 02 D7 68 */	lfs f0, $$21406_2-_SDA2_BASE_(r2)
+/* 801F1370 001EE170  C0 02 D7 68 */	lfs f0, _esc__2_1406_2-_SDA2_BASE_(r2)
 /* 801F1374 001EE174  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 801F1378 001EE178  64 00 00 40 */	oris r0, r0, 0x40
 /* 801F137C 001EE17C  90 03 00 14 */	stw r0, 0x14(r3)
@@ -869,7 +871,7 @@ zCinFX_Bomb_Glow_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 /* 801F13C4 001EE1C4  83 E4 00 60 */	lwz r31, 0x60(r4)
 /* 801F13C8 001EE1C8  3C 60 80 38 */	lis r3, globals@ha
 /* 801F13CC 001EE1CC  38 63 2A 38 */	addi r3, r3, globals@l
-/* 801F13D0 001EE1D0  C0 02 D7 60 */	lfs f0, $$21327_1-_SDA2_BASE_(r2)
+/* 801F13D0 001EE1D0  C0 02 D7 60 */	lfs f0, _esc__2_1327_1-_SDA2_BASE_(r2)
 /* 801F13D4 001EE1D4  C0 5F 00 20 */	lfs f2, 0x20(r31)
 /* 801F13D8 001EE1D8  C0 23 04 7C */	lfs f1, 0x47c(r3)
 /* 801F13DC 001EE1DC  EC 22 08 28 */	fsubs f1, f2, f1
@@ -1137,7 +1139,7 @@ lbl_801F174C:
 /* 801F175C 001EE55C  EC 21 00 28 */	fsubs f1, f1, f0
 /* 801F1760 001EE560  FC 01 18 40 */	fcmpo cr0, f1, f3
 /* 801F1764 001EE564  40 80 00 24 */	bge lbl_801F1788
-/* 801F1768 001EE568  C0 42 D7 60 */	lfs f2, $$21327_1-_SDA2_BASE_(r2)
+/* 801F1768 001EE568  C0 42 D7 60 */	lfs f2, _esc__2_1327_1-_SDA2_BASE_(r2)
 /* 801F176C 001EE56C  FC 02 18 00 */	fcmpu cr0, f2, f3
 /* 801F1770 001EE570  41 82 00 18 */	beq lbl_801F1788
 /* 801F1774 001EE574  C0 1F 00 04 */	lfs f0, 4(r31)
@@ -1314,13 +1316,13 @@ lbl_801F19AC:
 /* 801F19C0 001EE7C0  EC 22 08 24 */	fdivs f1, f2, f1
 /* 801F19C4 001EE7C4  EC 21 20 3A */	fmadds f1, f1, f0, f4
 lbl_801F19C8:
-/* 801F19C8 001EE7C8  C0 02 D7 60 */	lfs f0, $$21327_1-_SDA2_BASE_(r2)
+/* 801F19C8 001EE7C8  C0 02 D7 60 */	lfs f0, _esc__2_1327_1-_SDA2_BASE_(r2)
 /* 801F19CC 001EE7CC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F19D0 001EE7D0  40 80 00 0C */	bge lbl_801F19DC
 /* 801F19D4 001EE7D4  FC 20 00 90 */	fmr f1, f0
 /* 801F19D8 001EE7D8  48 00 00 14 */	b lbl_801F19EC
 lbl_801F19DC:
-/* 801F19DC 001EE7DC  C0 02 D7 6C */	lfs f0, $$21587_1-_SDA2_BASE_(r2)
+/* 801F19DC 001EE7DC  C0 02 D7 6C */	lfs f0, _esc__2_1587_1-_SDA2_BASE_(r2)
 /* 801F19E0 001EE7E0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F19E4 001EE7E4  40 81 00 08 */	ble lbl_801F19EC
 /* 801F19E8 001EE7E8  FC 20 00 90 */	fmr f1, f0
@@ -1470,9 +1472,9 @@ zCinFX_Incrediball_Init__FP18incrediball_params:
 /* 801F1BC4 001EE9C4  4B E5 7F 9D */	bl xMemAlloc__FUiUii
 /* 801F1BC8 001EE9C8  90 7C 00 78 */	stw r3, 0x78(r28)
 lbl_801F1BCC:
-/* 801F1BCC 001EE9CC  C3 C2 D7 64 */	lfs f30, $$21347_0-_SDA2_BASE_(r2)
+/* 801F1BCC 001EE9CC  C3 C2 D7 64 */	lfs f30, _esc__2_1347_0-_SDA2_BASE_(r2)
 /* 801F1BD0 001EE9D0  3B C0 00 00 */	li r30, 0
-/* 801F1BD4 001EE9D4  C3 E2 D7 70 */	lfs f31, $$21643_0-_SDA2_BASE_(r2)
+/* 801F1BD4 001EE9D4  C3 E2 D7 70 */	lfs f31, _esc__2_1643_0-_SDA2_BASE_(r2)
 /* 801F1BD8 001EE9D8  3B 40 00 00 */	li r26, 0
 /* 801F1BDC 001EE9DC  3B 20 00 00 */	li r25, 0
 /* 801F1BE0 001EE9E0  3B A0 00 00 */	li r29, 0
@@ -1562,7 +1564,7 @@ lbl_801F1CE4:
 /* 801F1D10 001EEB10  38 8D BA 80 */	addi r4, r13, g_I3-_SDA_BASE_
 /* 801F1D14 001EEB14  93 BF 00 78 */	stw r29, 0x78(r31)
 /* 801F1D18 001EEB18  4B E1 3F 7D */	bl __as__7xMat3x3FRC7xMat3x3
-/* 801F1D1C 001EEB1C  C0 02 D7 74 */	lfs f0, $$21652_1-_SDA2_BASE_(r2)
+/* 801F1D1C 001EEB1C  C0 02 D7 74 */	lfs f0, _esc__2_1652_1-_SDA2_BASE_(r2)
 /* 801F1D20 001EEB20  38 6D DC C0 */	addi r3, r13, zCinFX_Incrediball_position-_SDA_BASE_
 /* 801F1D24 001EEB24  D0 03 00 30 */	stfs f0, 0x30(r3)
 lbl_801F1D28:
@@ -1602,7 +1604,7 @@ zCinFX_Incrediball_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiR
 /* 801F1DA0 001EEBA0  C0 3F 00 08 */	lfs f1, 8(r31)
 /* 801F1DA4 001EEBA4  C4 04 00 30 */	lfsu f0, 0x30(r4)
 /* 801F1DA8 001EEBA8  EC 42 08 2A */	fadds f2, f2, f1
-/* 801F1DAC 001EEBAC  C0 22 D7 74 */	lfs f1, $$21652_1-_SDA2_BASE_(r2)
+/* 801F1DAC 001EEBAC  C0 22 D7 74 */	lfs f1, _esc__2_1652_1-_SDA2_BASE_(r2)
 /* 801F1DB0 001EEBB0  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 801F1DB4 001EEBB4  D0 41 00 C4 */	stfs f2, 0xc4(r1)
 /* 801F1DB8 001EEBB8  41 82 01 B0 */	beq lbl_801F1F68
@@ -1698,7 +1700,7 @@ lbl_801F1F08:
 /* 801F1F0C 001EED0C  FC 40 18 50 */	fneg f2, f3
 /* 801F1F10 001EED10  C0 01 00 28 */	lfs f0, 0x28(r1)
 /* 801F1F14 001EED14  38 61 00 1C */	addi r3, r1, 0x1c
-/* 801F1F18 001EED18  80 C2 F7 D0 */	lwz r6, $$21662_1-_SDA2_BASE_(r2)
+/* 801F1F18 001EED18  80 C2 F7 D0 */	lwz r6, _esc__2_1662_1-_SDA2_BASE_(r2)
 /* 801F1F1C 001EED1C  38 80 00 00 */	li r4, 0
 /* 801F1F20 001EED20  80 A2 F7 D4 */	lwz r5, lbl_803D94F4-_SDA2_BASE_(r2)
 /* 801F1F24 001EED24  80 02 F7 D8 */	lwz r0, lbl_803D94F8-_SDA2_BASE_(r2)
@@ -1724,9 +1726,9 @@ lbl_801F1F68:
 lbl_801F1F70:
 /* 801F1F70 001EED70  C0 21 00 C4 */	lfs f1, 0xc4(r1)
 /* 801F1F74 001EED74  38 61 00 10 */	addi r3, r1, 0x10
-/* 801F1F78 001EED78  C0 02 D7 64 */	lfs f0, $$21347_0-_SDA2_BASE_(r2)
+/* 801F1F78 001EED78  C0 02 D7 64 */	lfs f0, _esc__2_1347_0-_SDA2_BASE_(r2)
 /* 801F1F7C 001EED7C  38 80 00 01 */	li r4, 1
-/* 801F1F80 001EED80  80 C2 F7 DC */	lwz r6, $$21664_1-_SDA2_BASE_(r2)
+/* 801F1F80 001EED80  80 C2 F7 DC */	lwz r6, _esc__2_1664_1-_SDA2_BASE_(r2)
 /* 801F1F84 001EED84  80 A2 F7 E0 */	lwz r5, lbl_803D9500-_SDA2_BASE_(r2)
 /* 801F1F88 001EED88  EC 21 00 28 */	fsubs f1, f1, f0
 /* 801F1F8C 001EED8C  80 02 F7 E4 */	lwz r0, lbl_803D9504-_SDA2_BASE_(r2)
@@ -1923,8 +1925,8 @@ lbl_801F2218:
 /* 801F223C 001EF03C  80 7F 00 54 */	lwz r3, 0x54(r31)
 /* 801F2240 001EF040  98 03 00 18 */	stb r0, 0x18(r3)
 /* 801F2244 001EF044  4B E1 50 E1 */	bl xurand__Fv
-/* 801F2248 001EF048  C0 42 D7 78 */	lfs f2, $$21731_2-_SDA2_BASE_(r2)
-/* 801F224C 001EF04C  C0 02 D7 7C */	lfs f0, $$21760_0-_SDA2_BASE_(r2)
+/* 801F2248 001EF048  C0 42 D7 78 */	lfs f2, _esc__2_1731_2-_SDA2_BASE_(r2)
+/* 801F224C 001EF04C  C0 02 D7 7C */	lfs f0, _esc__2_1760_0-_SDA2_BASE_(r2)
 /* 801F2250 001EF050  EC 21 10 28 */	fsubs f1, f1, f2
 /* 801F2254 001EF054  EC 00 00 72 */	fmuls f0, f0, f1
 /* 801F2258 001EF058  D0 1F 00 58 */	stfs f0, 0x58(r31)
@@ -2033,10 +2035,10 @@ lbl_801F23A0:
 zCinFX_Sparks_Once__FPC12zCutsceneMgrP9NCINEntry:
 /* 801F23B8 001EF1B8  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 801F23BC 001EF1BC  7C 08 02 A6 */	mflr r0
-/* 801F23C0 001EF1C0  C0 02 D7 80 */	lfs f0, $$21839-_SDA2_BASE_(r2)
+/* 801F23C0 001EF1C0  C0 02 D7 80 */	lfs f0, _esc__2_1839-_SDA2_BASE_(r2)
 /* 801F23C4 001EF1C4  90 01 00 74 */	stw r0, 0x74(r1)
 /* 801F23C8 001EF1C8  38 61 00 24 */	addi r3, r1, 0x24
-/* 801F23CC 001EF1CC  C0 22 D7 78 */	lfs f1, $$21731_2-_SDA2_BASE_(r2)
+/* 801F23CC 001EF1CC  C0 22 D7 78 */	lfs f1, _esc__2_1731_2-_SDA2_BASE_(r2)
 /* 801F23D0 001EF1D0  93 E1 00 6C */	stw r31, 0x6c(r1)
 /* 801F23D4 001EF1D4  83 E4 00 64 */	lwz r31, 0x64(r4)
 /* 801F23D8 001EF1D8  D0 01 00 0C */	stfs f0, 0xc(r1)
@@ -2048,7 +2050,7 @@ zCinFX_Sparks_Once__FPC12zCutsceneMgrP9NCINEntry:
 /* 801F23F0 001EF1F0  4B E1 8C B9 */	bl __as__5xVec3FRC5xVec3
 /* 801F23F4 001EF1F4  C0 3F 00 24 */	lfs f1, 0x24(r31)
 /* 801F23F8 001EF1F8  38 7F 00 0C */	addi r3, r31, 0xc
-/* 801F23FC 001EF1FC  C0 02 D7 84 */	lfs f0, $$21840-_SDA2_BASE_(r2)
+/* 801F23FC 001EF1FC  C0 02 D7 84 */	lfs f0, _esc__2_1840-_SDA2_BASE_(r2)
 /* 801F2400 001EF200  38 81 00 48 */	addi r4, r1, 0x48
 /* 801F2404 001EF204  D0 21 00 30 */	stfs f1, 0x30(r1)
 /* 801F2408 001EF208  38 A1 00 54 */	addi r5, r1, 0x54
@@ -2059,25 +2061,25 @@ zCinFX_Sparks_Once__FPC12zCutsceneMgrP9NCINEntry:
 /* 801F241C 001EF21C  38 61 00 3C */	addi r3, r1, 0x3c
 /* 801F2420 001EF220  38 9F 00 0C */	addi r4, r31, 0xc
 /* 801F2424 001EF224  4B E1 8C 85 */	bl __as__5xVec3FRC5xVec3
-/* 801F2428 001EF228  C0 02 D7 60 */	lfs f0, $$21327_1-_SDA2_BASE_(r2)
+/* 801F2428 001EF228  C0 02 D7 60 */	lfs f0, _esc__2_1327_1-_SDA2_BASE_(r2)
 /* 801F242C 001EF22C  D0 01 00 60 */	stfs f0, 0x60(r1)
 /* 801F2430 001EF230  C0 3F 00 1C */	lfs f1, 0x1c(r31)
 /* 801F2434 001EF234  4B E8 43 B5 */	bl isin__Ff
 /* 801F2438 001EF238  D0 21 00 64 */	stfs f1, 0x64(r1)
-/* 801F243C 001EF23C  88 0D DD 04 */	lbz r0, init$1818-_SDA_BASE_(r13)
+/* 801F243C 001EF23C  88 0D DD 04 */	lbz r0, init_esc__7_1818-_SDA_BASE_(r13)
 /* 801F2440 001EF240  C0 1F 00 18 */	lfs f0, 0x18(r31)
 /* 801F2444 001EF244  7C 00 07 75 */	extsb. r0, r0
 /* 801F2448 001EF248  D0 01 00 08 */	stfs f0, 8(r1)
 /* 801F244C 001EF24C  40 82 00 14 */	bne lbl_801F2460
-/* 801F2450 001EF250  38 6D DD 08 */	addi r3, r13, spark_system$1817-_SDA_BASE_
+/* 801F2450 001EF250  38 6D DD 08 */	addi r3, r13, spark_system_esc__7_1817-_SDA_BASE_
 /* 801F2454 001EF254  48 00 00 31 */	bl __ct__18CinSparkDiskSystemFv
 /* 801F2458 001EF258  38 00 00 01 */	li r0, 1
-/* 801F245C 001EF25C  98 0D DD 04 */	stb r0, init$1818-_SDA_BASE_(r13)
+/* 801F245C 001EF25C  98 0D DD 04 */	stb r0, init_esc__7_1818-_SDA_BASE_(r13)
 lbl_801F2460:
 /* 801F2460 001EF260  38 81 00 08 */	addi r4, r1, 8
 /* 801F2464 001EF264  38 A1 00 0C */	addi r5, r1, 0xc
-/* 801F2468 001EF268  38 6D DD 08 */	addi r3, r13, spark_system$1817-_SDA_BASE_
-/* 801F246C 001EF26C  48 00 07 29 */	bl Emit__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FRfRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitState
+/* 801F2468 001EF268  38 6D DD 08 */	addi r3, r13, spark_system_esc__7_1817-_SDA_BASE_
+/* 801F246C 001EF26C  48 00 07 29 */	bl Emit__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FRfRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState
 /* 801F2470 001EF270  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 801F2474 001EF274  83 E1 00 6C */	lwz r31, 0x6c(r1)
 /* 801F2478 001EF278  7C 08 03 A6 */	mtlr r0
@@ -2091,11 +2093,11 @@ __ct__18CinSparkDiskSystemFv:
 /* 801F248C 001EF28C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F2490 001EF290  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801F2494 001EF294  7C 7F 1B 78 */	mr r31, r3
-/* 801F2498 001EF298  48 00 08 BD */	bl __ct__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv
+/* 801F2498 001EF298  48 00 08 BD */	bl __ct__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv
 /* 801F249C 001EF29C  38 0D B3 34 */	addi r0, r13, __vt__18CinSparkDiskSystem-_SDA_BASE_
 /* 801F24A0 001EF2A0  7F E3 FB 78 */	mr r3, r31
 /* 801F24A4 001EF2A4  90 1F 00 08 */	stw r0, 8(r31)
-/* 801F24A8 001EF2A8  48 00 08 79 */	bl SceneInit__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv
+/* 801F24A8 001EF2A8  48 00 08 79 */	bl SceneInit__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv
 /* 801F24AC 001EF2AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F24B0 001EF2B0  7F E3 FB 78 */	mr r3, r31
 /* 801F24B4 001EF2B4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2116,16 +2118,16 @@ zCinFX_Rocket_Once__FPC12zCutsceneMgrP9NCINEntry:
 /* 801F24E4 001EF2E4  4B E1 9D F5 */	bl xVec3Sub__FR5xVec3RC5xVec3RC5xVec3
 /* 801F24E8 001EF2E8  38 61 00 08 */	addi r3, r1, 8
 /* 801F24EC 001EF2EC  4B E7 95 D9 */	bl xVec3NormalizeSafe__FR5xVec3
-/* 801F24F0 001EF2F0  C0 02 D7 60 */	lfs f0, $$21327_1-_SDA2_BASE_(r2)
+/* 801F24F0 001EF2F0  C0 02 D7 60 */	lfs f0, _esc__2_1327_1-_SDA2_BASE_(r2)
 /* 801F24F4 001EF2F4  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 801F24F8 001EF2F8  40 82 00 10 */	bne lbl_801F2508
 /* 801F24FC 001EF2FC  38 61 00 08 */	addi r3, r1, 8
 /* 801F2500 001EF300  38 9F 00 3C */	addi r4, r31, 0x3c
 /* 801F2504 001EF304  4B E1 8B A5 */	bl __as__5xVec3FRC5xVec3
 lbl_801F2508:
-/* 801F2508 001EF308  C0 22 D7 60 */	lfs f1, $$21327_1-_SDA2_BASE_(r2)
+/* 801F2508 001EF308  C0 22 D7 60 */	lfs f1, _esc__2_1327_1-_SDA2_BASE_(r2)
 /* 801F250C 001EF30C  38 61 00 14 */	addi r3, r1, 0x14
-/* 801F2510 001EF310  C0 42 D7 90 */	lfs f2, $$21984-_SDA2_BASE_(r2)
+/* 801F2510 001EF310  C0 42 D7 90 */	lfs f2, _esc__2_1984-_SDA2_BASE_(r2)
 /* 801F2514 001EF314  38 9F 00 48 */	addi r4, r31, 0x48
 /* 801F2518 001EF318  C0 7F 00 54 */	lfs f3, 0x54(r31)
 /* 801F251C 001EF31C  38 DF 00 30 */	addi r6, r31, 0x30
@@ -2133,7 +2135,7 @@ lbl_801F2508:
 /* 801F2524 001EF324  38 A0 00 00 */	li r5, 0
 /* 801F2528 001EF328  4B FB 27 6D */	bl __ct__Q21z6rocketFP5xVec3fP4xEntRC5xVec3RC5xVec3ff
 /* 801F252C 001EF32C  38 61 00 14 */	addi r3, r1, 0x14
-/* 801F2530 001EF330  4B EB 35 01 */	bl add__Q21z27lightweight$$0Q21z6rocket$$420$$1FRCQ21z6rocket
+/* 801F2530 001EF330  4B EB 35 01 */	bl add__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_FRCQ21z6rocket
 /* 801F2534 001EF334  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 801F2538 001EF338  83 E1 00 6C */	lwz r31, 0x6c(r1)
 /* 801F253C 001EF33C  7C 08 03 A6 */	mtlr r0
@@ -2144,7 +2146,7 @@ lbl_801F2508:
 zCinFX_Rubble_Once__FPC12zCutsceneMgrP9NCINEntry:
 /* 801F2548 001EF348  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F254C 001EF34C  7C 08 02 A6 */	mflr r0
-/* 801F2550 001EF350  C0 C2 D7 78 */	lfs f6, $$21731_2-_SDA2_BASE_(r2)
+/* 801F2550 001EF350  C0 C2 D7 78 */	lfs f6, _esc__2_1731_2-_SDA2_BASE_(r2)
 /* 801F2554 001EF354  38 64 00 30 */	addi r3, r4, 0x30
 /* 801F2558 001EF358  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F255C 001EF35C  FC E0 30 90 */	fmr f7, f6
@@ -2221,7 +2223,7 @@ zCinFX_Model_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi:
 /* 801F264C 001EF44C  38 61 00 50 */	addi r3, r1, 0x50
 /* 801F2650 001EF450  38 9D 00 48 */	addi r4, r29, 0x48
 /* 801F2654 001EF454  4B E5 5C 3D */	bl xMat3x3Euler__FP7xMat3x3PC5xVec3
-/* 801F2658 001EF458  C0 22 D7 60 */	lfs f1, $$21327_1-_SDA2_BASE_(r2)
+/* 801F2658 001EF458  C0 22 D7 60 */	lfs f1, _esc__2_1327_1-_SDA2_BASE_(r2)
 /* 801F265C 001EF45C  C0 1E 00 00 */	lfs f0, 0(r30)
 /* 801F2660 001EF460  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 801F2664 001EF464  41 82 00 14 */	beq lbl_801F2678
@@ -2248,7 +2250,7 @@ lbl_801F26AC:
 /* 801F26B0 001EF4B0  38 81 00 50 */	addi r4, r1, 0x50
 /* 801F26B4 001EF4B4  38 A1 00 10 */	addi r5, r1, 0x10
 /* 801F26B8 001EF4B8  4B E5 67 CD */	bl xMat4x3Mul__FP7xMat4x3PC7xMat4x3PC7xMat4x3
-/* 801F26BC 001EF4BC  C0 02 D7 60 */	lfs f0, $$21327_1-_SDA2_BASE_(r2)
+/* 801F26BC 001EF4BC  C0 02 D7 60 */	lfs f0, _esc__2_1327_1-_SDA2_BASE_(r2)
 /* 801F26C0 001EF4C0  C0 3E 00 00 */	lfs f1, 0(r30)
 /* 801F26C4 001EF4C4  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 801F26C8 001EF4C8  41 82 00 34 */	beq lbl_801F26FC
@@ -2281,7 +2283,7 @@ lbl_801F2704:
 zCineFX_Register_SceneOM04__Fv:
 /* 801F271C 001EF51C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2720 001EF520  7C 08 02 A6 */	mflr r0
-/* 801F2724 001EF524  38 6D AD DC */	addi r3, r13, cutmap$2094-_SDA_BASE_
+/* 801F2724 001EF524  38 6D AD DC */	addi r3, r13, cutmap_esc__7_2094-_SDA_BASE_
 /* 801F2728 001EF528  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F272C 001EF52C  4B FF 79 AD */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F2730 001EF530  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2393,14 +2395,14 @@ lbl_801F2888:
 /* 801F2898 001EF698  2C 00 00 54 */	cmpwi r0, 0x54
 /* 801F289C 001EF69C  40 82 00 1C */	bne lbl_801F28B8
 lbl_801F28A0:
-/* 801F28A0 001EF6A0  38 8D AF 10 */	addi r4, r13, cutmap$2099-_SDA_BASE_
+/* 801F28A0 001EF6A0  38 8D AF 10 */	addi r4, r13, cutmap_esc__7_2099-_SDA_BASE_
 /* 801F28A4 001EF6A4  38 00 00 03 */	li r0, 3
 /* 801F28A8 001EF6A8  80 64 00 1C */	lwz r3, 0x1c(r4)
 /* 801F28AC 001EF6AC  90 03 00 20 */	stw r0, 0x20(r3)
 /* 801F28B0 001EF6B0  80 64 00 1C */	lwz r3, 0x1c(r4)
 /* 801F28B4 001EF6B4  90 03 00 B4 */	stw r0, 0xb4(r3)
 lbl_801F28B8:
-/* 801F28B8 001EF6B8  38 6D AF 10 */	addi r3, r13, cutmap$2099-_SDA_BASE_
+/* 801F28B8 001EF6B8  38 6D AF 10 */	addi r3, r13, cutmap_esc__7_2099-_SDA_BASE_
 /* 801F28BC 001EF6BC  4B FF 78 1D */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F28C0 001EF6C0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F28C4 001EF6C4  7C 08 03 A6 */	mtlr r0
@@ -2411,7 +2413,7 @@ lbl_801F28B8:
 zCineFX_Register_SceneLD04__Fv:
 /* 801F28D0 001EF6D0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F28D4 001EF6D4  7C 08 02 A6 */	mflr r0
-/* 801F28D8 001EF6D8  38 6D AF C0 */	addi r3, r13, cutmap$2135-_SDA_BASE_
+/* 801F28D8 001EF6D8  38 6D AF C0 */	addi r3, r13, cutmap_esc__7_2135-_SDA_BASE_
 /* 801F28DC 001EF6DC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F28E0 001EF6E0  4B FF 77 F9 */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F28E4 001EF6E4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2423,9 +2425,9 @@ zCineFX_Register_SceneLD04__Fv:
 zCineFX_Register_SceneHS01__Fv:
 /* 801F28F4 001EF6F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F28F8 001EF6F8  7C 08 02 A6 */	mflr r0
-/* 801F28FC 001EF6FC  3C 60 80 32 */	lis r3, cutmap$2140@ha
+/* 801F28FC 001EF6FC  3C 60 80 32 */	lis r3, cutmap_esc__7_2140@ha
 /* 801F2900 001EF700  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F2904 001EF704  38 63 B5 40 */	addi r3, r3, cutmap$2140@l
+/* 801F2904 001EF704  38 63 B5 40 */	addi r3, r3, cutmap_esc__7_2140@l
 /* 801F2908 001EF708  4B FF 77 D1 */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F290C 001EF70C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F2910 001EF710  7C 08 03 A6 */	mtlr r0
@@ -2436,9 +2438,9 @@ zCineFX_Register_SceneHS01__Fv:
 zCineFX_Register_SceneNJ02__Fv:
 /* 801F291C 001EF71C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2920 001EF720  7C 08 02 A6 */	mflr r0
-/* 801F2924 001EF724  3C 60 80 32 */	lis r3, cutmap$2145@ha
+/* 801F2924 001EF724  3C 60 80 32 */	lis r3, cutmap_esc__7_2145@ha
 /* 801F2928 001EF728  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F292C 001EF72C  38 63 C0 D8 */	addi r3, r3, cutmap$2145@l
+/* 801F292C 001EF72C  38 63 C0 D8 */	addi r3, r3, cutmap_esc__7_2145@l
 /* 801F2930 001EF730  4B FF 77 A9 */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F2934 001EF734  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F2938 001EF738  7C 08 03 A6 */	mtlr r0
@@ -2449,7 +2451,7 @@ zCineFX_Register_SceneNJ02__Fv:
 zCineFX_Register_SceneNI03__Fv:
 /* 801F2944 001EF744  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2948 001EF748  7C 08 02 A6 */	mflr r0
-/* 801F294C 001EF74C  38 6D B0 98 */	addi r3, r13, cutmap$2150-_SDA_BASE_
+/* 801F294C 001EF74C  38 6D B0 98 */	addi r3, r13, cutmap_esc__7_2150-_SDA_BASE_
 /* 801F2950 001EF750  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F2954 001EF754  4B FF 77 85 */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F2958 001EF758  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2461,7 +2463,7 @@ zCineFX_Register_SceneNI03__Fv:
 zCineFX_Register_SceneFT01__Fv:
 /* 801F2968 001EF768  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F296C 001EF76C  7C 08 02 A6 */	mflr r0
-/* 801F2970 001EF770  38 6D B0 F8 */	addi r3, r13, cutmap$2155-_SDA_BASE_
+/* 801F2970 001EF770  38 6D B0 F8 */	addi r3, r13, cutmap_esc__7_2155-_SDA_BASE_
 /* 801F2974 001EF774  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F2978 001EF778  4B FF 77 61 */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F297C 001EF77C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2473,7 +2475,7 @@ zCineFX_Register_SceneFT01__Fv:
 zCineFX_Register_SceneOM03__Fv:
 /* 801F298C 001EF78C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2990 001EF790  7C 08 02 A6 */	mflr r0
-/* 801F2994 001EF794  38 6D B1 10 */	addi r3, r13, cutmap$2160-_SDA_BASE_
+/* 801F2994 001EF794  38 6D B1 10 */	addi r3, r13, cutmap_esc__7_2160-_SDA_BASE_
 /* 801F2998 001EF798  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F299C 001EF79C  4B FF 77 3D */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F29A0 001EF7A0  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2485,7 +2487,7 @@ zCineFX_Register_SceneOM03__Fv:
 zCineFX_Register_SceneFT03__Fv:
 /* 801F29B0 001EF7B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F29B4 001EF7B4  7C 08 02 A6 */	mflr r0
-/* 801F29B8 001EF7B8  38 6D B1 4C */	addi r3, r13, cutmap$2165-_SDA_BASE_
+/* 801F29B8 001EF7B8  38 6D B1 4C */	addi r3, r13, cutmap_esc__7_2165-_SDA_BASE_
 /* 801F29BC 001EF7BC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F29C0 001EF7C0  4B FF 77 19 */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F29C4 001EF7C4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2497,7 +2499,7 @@ zCineFX_Register_SceneFT03__Fv:
 zCineFX_Register_SceneRS01__Fv:
 /* 801F29D4 001EF7D4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F29D8 001EF7D8  7C 08 02 A6 */	mflr r0
-/* 801F29DC 001EF7DC  38 6D B1 BC */	addi r3, r13, cutmap$2170-_SDA_BASE_
+/* 801F29DC 001EF7DC  38 6D B1 BC */	addi r3, r13, cutmap_esc__7_2170-_SDA_BASE_
 /* 801F29E0 001EF7E0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F29E4 001EF7E4  4B FF 76 F5 */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F29E8 001EF7E8  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2509,7 +2511,7 @@ zCineFX_Register_SceneRS01__Fv:
 zCineFX_Register_SceneRS02__Fv:
 /* 801F29F8 001EF7F8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F29FC 001EF7FC  7C 08 02 A6 */	mflr r0
-/* 801F2A00 001EF800  38 6D B1 D4 */	addi r3, r13, cutmap$2175-_SDA_BASE_
+/* 801F2A00 001EF800  38 6D B1 D4 */	addi r3, r13, cutmap_esc__7_2175-_SDA_BASE_
 /* 801F2A04 001EF804  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F2A08 001EF808  4B FF 76 D1 */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F2A0C 001EF80C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2521,7 +2523,7 @@ zCineFX_Register_SceneRS02__Fv:
 zCineFX_Register_SceneNJ01__Fv:
 /* 801F2A1C 001EF81C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2A20 001EF820  7C 08 02 A6 */	mflr r0
-/* 801F2A24 001EF824  38 6D B2 60 */	addi r3, r13, cutmap$2180-_SDA_BASE_
+/* 801F2A24 001EF824  38 6D B2 60 */	addi r3, r13, cutmap_esc__7_2180-_SDA_BASE_
 /* 801F2A28 001EF828  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F2A2C 001EF82C  4B FF 76 AD */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F2A30 001EF830  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2533,7 +2535,7 @@ zCineFX_Register_SceneNJ01__Fv:
 zCineFX_Register_SceneNJ03__Fv:
 /* 801F2A40 001EF840  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2A44 001EF844  7C 08 02 A6 */	mflr r0
-/* 801F2A48 001EF848  38 6D B2 B4 */	addi r3, r13, cutmap$2185-_SDA_BASE_
+/* 801F2A48 001EF848  38 6D B2 B4 */	addi r3, r13, cutmap_esc__7_2185-_SDA_BASE_
 /* 801F2A4C 001EF84C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F2A50 001EF850  4B FF 76 89 */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F2A54 001EF854  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2545,7 +2547,7 @@ zCineFX_Register_SceneNJ03__Fv:
 zCineFX_Register_SceneNI01__Fv:
 /* 801F2A64 001EF864  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2A68 001EF868  7C 08 02 A6 */	mflr r0
-/* 801F2A6C 001EF86C  38 6D B3 04 */	addi r3, r13, cutmap$2190-_SDA_BASE_
+/* 801F2A6C 001EF86C  38 6D B3 04 */	addi r3, r13, cutmap_esc__7_2190-_SDA_BASE_
 /* 801F2A70 001EF870  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F2A74 001EF874  4B FF 76 65 */	bl zCineFXRegisterTable__FP7NCINMap
 /* 801F2A78 001EF878  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2571,7 +2573,7 @@ Register__18CinSparkDiskSystemFv:
 /* 801F2ABC 001EF8BC  38 A0 00 02 */	li r5, 2
 /* 801F2AC0 001EF8C0  38 C0 00 00 */	li r6, 0
 /* 801F2AC4 001EF8C4  38 E0 00 00 */	li r7, 0
-/* 801F2AC8 001EF8C8  48 00 02 F5 */	bl Register__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FUiUiiPvP9RwTexture
+/* 801F2AC8 001EF8C8  48 00 02 F5 */	bl Register__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FUiUiiPvP9RwTexture
 /* 801F2ACC 001EF8CC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F2AD0 001EF8D0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801F2AD4 001EF8D4  7C 08 03 A6 */	mtlr r0
@@ -2629,8 +2631,8 @@ xMat3x3MulScaleC__FR7xMat3x3f:
 /* 801F2B8C 001EF98C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F2B90 001EF990  4E 80 00 20 */	blr 
 
-.global Emit__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FRfRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitState
-Emit__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FRfRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitState:
+.global Emit__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FRfRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState
+Emit__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FRfRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState:
 /* 801F2B94 001EF994  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F2B98 001EF998  7C 08 02 A6 */	mflr r0
 /* 801F2B9C 001EF99C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2651,15 +2653,15 @@ lbl_801F2BD4:
 /* 801F2BD4 001EF9D4  7F A3 EB 78 */	mr r3, r29
 /* 801F2BD8 001EF9D8  7F C4 F3 78 */	mr r4, r30
 /* 801F2BDC 001EF9DC  7F E5 FB 78 */	mr r5, r31
-/* 801F2BE0 001EF9E0  48 00 00 19 */	bl Emit__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FRfRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitState
+/* 801F2BE0 001EF9E0  48 00 00 19 */	bl Emit__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FRfRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState
 /* 801F2BE4 001EF9E4  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 801F2BE8 001EF9E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801F2BEC 001EF9EC  7C 08 03 A6 */	mtlr r0
 /* 801F2BF0 001EF9F0  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F2BF4 001EF9F4  4E 80 00 20 */	blr 
 
-.global Emit__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FRfRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitState
-Emit__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FRfRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitState:
+.global Emit__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FRfRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState
+Emit__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FRfRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState:
 /* 801F2BF8 001EF9F8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2BFC 001EF9FC  7C 08 02 A6 */	mflr r0
 /* 801F2C00 001EFA00  90 01 00 14 */	stw r0, 0x14(r1)
@@ -2667,14 +2669,14 @@ Emit__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleCo
 /* 801F2C08 001EFA08  80 A3 00 00 */	lwz r5, 0(r3)
 /* 801F2C0C 001EFA0C  7C 83 23 78 */	mr r3, r4
 /* 801F2C10 001EFA10  7C 04 03 78 */	mr r4, r0
-/* 801F2C14 001EFA14  48 00 00 15 */	bl Emit__208zParticleSystemHelperEmitter$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$1FRfRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitStatei
+/* 801F2C14 001EFA14  48 00 00 15 */	bl Emit__208zParticleSystemHelperEmitter_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1_FRfRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitStatei
 /* 801F2C18 001EFA18  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F2C1C 001EFA1C  7C 08 03 A6 */	mtlr r0
 /* 801F2C20 001EFA20  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F2C24 001EFA24  4E 80 00 20 */	blr 
 
-.global Emit__208zParticleSystemHelperEmitter$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$1FRfRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitStatei
-Emit__208zParticleSystemHelperEmitter$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$1FRfRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitStatei:
+.global Emit__208zParticleSystemHelperEmitter_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1_FRfRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitStatei
+Emit__208zParticleSystemHelperEmitter_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1_FRfRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitStatei:
 /* 801F2C28 001EFA28  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 801F2C2C 001EFA2C  7C 08 02 A6 */	mflr r0
 /* 801F2C30 001EFA30  90 01 00 64 */	stw r0, 0x64(r1)
@@ -2683,9 +2685,9 @@ Emit__208zParticleSystemHelperEmitter$$0175zParticleEmitterConeSurface$$0143zPar
 /* 801F2C3C 001EFA3C  DB C1 00 40 */	stfd f30, 0x40(r1)
 /* 801F2C40 001EFA40  F3 C1 00 48 */	psq_st f30, 72(r1), 0, qr0
 /* 801F2C44 001EFA44  BF 01 00 20 */	stmw r24, 0x20(r1)
-/* 801F2C48 001EFA48  CB C2 D7 88 */	lfd f30, $$21851_0-_SDA2_BASE_(r2)
+/* 801F2C48 001EFA48  CB C2 D7 88 */	lfd f30, _esc__2_1851_0-_SDA2_BASE_(r2)
 /* 801F2C4C 001EFA4C  7C 78 1B 78 */	mr r24, r3
-/* 801F2C50 001EFA50  C3 E2 D7 64 */	lfs f31, $$21347_0-_SDA2_BASE_(r2)
+/* 801F2C50 001EFA50  C3 E2 D7 64 */	lfs f31, _esc__2_1347_0-_SDA2_BASE_(r2)
 /* 801F2C54 001EFA54  7C 99 23 78 */	mr r25, r4
 /* 801F2C58 001EFA58  7C BA 2B 78 */	mr r26, r5
 /* 801F2C5C 001EFA5C  3F C0 43 30 */	lis r30, 0x4330
@@ -2718,7 +2720,7 @@ lbl_801F2CBC:
 /* 801F2CC0 001EFAC0  7F 24 CB 78 */	mr r4, r25
 /* 801F2CC4 001EFAC4  7F 60 FA 14 */	add r27, r0, r31
 /* 801F2CC8 001EFAC8  7F 63 DB 78 */	mr r3, r27
-/* 801F2CCC 001EFACC  48 00 02 E9 */	bl emit__175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1FRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitState
+/* 801F2CCC 001EFACC  48 00 02 E9 */	bl emit__175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_FRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState
 /* 801F2CD0 001EFAD0  7F 63 DB 78 */	mr r3, r27
 /* 801F2CD4 001EFAD4  7F 24 CB 78 */	mr r4, r25
 /* 801F2CD8 001EFAD8  4B F4 10 A5 */	bl emit_uv__13zParticleBaseFRQ213zParticleBase9EmitState
@@ -2743,34 +2745,34 @@ lbl_801F2CFC:
 /* 801F2D18 001EFB18  38 21 00 60 */	addi r1, r1, 0x60
 /* 801F2D1C 001EFB1C  4E 80 00 20 */	blr 
 
-.global SceneInit__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv
-SceneInit__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv:
+.global SceneInit__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv
+SceneInit__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv:
 /* 801F2D20 001EFB20  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2D24 001EFB24  7C 08 02 A6 */	mflr r0
 /* 801F2D28 001EFB28  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F2D2C 001EFB2C  38 00 00 00 */	li r0, 0
 /* 801F2D30 001EFB30  98 03 00 04 */	stb r0, 4(r3)
-/* 801F2D34 001EFB34  48 00 00 15 */	bl Reset__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv
+/* 801F2D34 001EFB34  48 00 00 15 */	bl Reset__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv
 /* 801F2D38 001EFB38  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F2D3C 001EFB3C  7C 08 03 A6 */	mtlr r0
 /* 801F2D40 001EFB40  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F2D44 001EFB44  4E 80 00 20 */	blr 
 
-.global Reset__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv
-Reset__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv:
+.global Reset__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv
+Reset__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv:
 /* 801F2D48 001EFB48  38 00 FF FF */	li r0, -1
 /* 801F2D4C 001EFB4C  90 03 00 00 */	stw r0, 0(r3)
 /* 801F2D50 001EFB50  4E 80 00 20 */	blr 
 
-.global __ct__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv
-__ct__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv:
+.global __ct__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv
+__ct__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv:
 /* 801F2D54 001EFB54  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2D58 001EFB58  7C 08 02 A6 */	mflr r0
 /* 801F2D5C 001EFB5C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F2D60 001EFB60  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801F2D64 001EFB64  7C 7F 1B 78 */	mr r31, r3
-/* 801F2D68 001EFB68  48 00 00 25 */	bl __ct__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv
-/* 801F2D6C 001EFB6C  38 0D B3 28 */	addi r0, r13, __vt__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1-_SDA_BASE_
+/* 801F2D68 001EFB68  48 00 00 25 */	bl __ct__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv
+/* 801F2D6C 001EFB6C  38 0D B3 28 */	addi r0, r13, __vt__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_-_SDA_BASE_
 /* 801F2D70 001EFB70  7F E3 FB 78 */	mr r3, r31
 /* 801F2D74 001EFB74  90 1F 00 08 */	stw r0, 8(r31)
 /* 801F2D78 001EFB78  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2779,14 +2781,14 @@ __ct__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zPartic
 /* 801F2D84 001EFB84  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F2D88 001EFB88  4E 80 00 20 */	blr 
 
-.global __ct__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv
-__ct__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv:
+.global __ct__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv
+__ct__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv:
 /* 801F2D8C 001EFB8C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2D90 001EFB90  7C 08 02 A6 */	mflr r0
 /* 801F2D94 001EFB94  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F2D98 001EFB98  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801F2D9C 001EFB9C  7C 7F 1B 78 */	mr r31, r3
-/* 801F2DA0 001EFBA0  4B FF FF A9 */	bl Reset__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv
+/* 801F2DA0 001EFBA0  4B FF FF A9 */	bl Reset__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv
 /* 801F2DA4 001EFBA4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F2DA8 001EFBA8  7F E3 FB 78 */	mr r3, r31
 /* 801F2DAC 001EFBAC  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2794,8 +2796,8 @@ __ct__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleCo
 /* 801F2DB4 001EFBB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F2DB8 001EFBB8  4E 80 00 20 */	blr 
 
-.global Register__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FUiUiiPvP9RwTexture
-Register__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FUiUiiPvP9RwTexture:
+.global Register__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FUiUiiPvP9RwTexture
+Register__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FUiUiiPvP9RwTexture:
 /* 801F2DBC 001EFBBC  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 801F2DC0 001EFBC0  7C 08 02 A6 */	mflr r0
 /* 801F2DC4 001EFBC4  90 01 00 44 */	stw r0, 0x44(r1)
@@ -2807,14 +2809,14 @@ Register__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zPa
 /* 801F2DDC 001EFBDC  90 A1 00 14 */	stw r5, 0x14(r1)
 /* 801F2DE0 001EFBE0  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 801F2DE4 001EFBE4  90 E1 00 2C */	stw r7, 0x2c(r1)
-/* 801F2DE8 001EFBE8  48 00 00 5D */	bl Init__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FR20xParticleBatchSystem
+/* 801F2DE8 001EFBE8  48 00 00 5D */	bl Init__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FR20xParticleBatchSystem
 /* 801F2DEC 001EFBEC  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
 /* 801F2DF0 001EFBF0  38 80 00 10 */	li r4, 0x10
 /* 801F2DF4 001EFBF4  38 A0 00 00 */	li r5, 0
 /* 801F2DF8 001EFBF8  4B E5 6D 69 */	bl xMemAlloc__FUiUii
-/* 801F2DFC 001EFBFC  3C 80 80 1F */	lis r4, UnRegister__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FP226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1@ha
+/* 801F2DFC 001EFBFC  3C 80 80 1F */	lis r4, UnRegister__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FP226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_@ha
 /* 801F2E00 001EFC00  7F E6 FB 78 */	mr r6, r31
-/* 801F2E04 001EFC04  38 A4 2E 24 */	addi r5, r4, UnRegister__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FP226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1@l
+/* 801F2E04 001EFC04  38 A4 2E 24 */	addi r5, r4, UnRegister__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FP226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_@l
 /* 801F2E08 001EFC08  38 80 00 04 */	li r4, 4
 /* 801F2E0C 001EFC0C  4B E5 6F 81 */	bl xMemAllocFreeable__FPviPFPv_vPv
 /* 801F2E10 001EFC10  80 01 00 44 */	lwz r0, 0x44(r1)
@@ -2823,22 +2825,22 @@ Register__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zPa
 /* 801F2E1C 001EFC1C  38 21 00 40 */	addi r1, r1, 0x40
 /* 801F2E20 001EFC20  4E 80 00 20 */	blr 
 
-.global UnRegister__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FP226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1
-UnRegister__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FP226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1:
+.global UnRegister__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FP226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_
+UnRegister__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FP226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_:
 /* 801F2E24 001EFC24  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2E28 001EFC28  7C 08 02 A6 */	mflr r0
 /* 801F2E2C 001EFC2C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F2E30 001EFC30  4B FF FE F1 */	bl SceneInit__226RegisterOnFirstEmitSystem$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1Fv
+/* 801F2E30 001EFC30  4B FF FE F1 */	bl SceneInit__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_Fv
 /* 801F2E34 001EFC34  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F2E38 001EFC38  7C 08 03 A6 */	mtlr r0
 /* 801F2E3C 001EFC3C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F2E40 001EFC40  4E 80 00 20 */	blr 
 
-.global Init__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FR20xParticleBatchSystem
-Init__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$418CinSparkDiskSystem$$1FR20xParticleBatchSystem:
+.global Init__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FR20xParticleBatchSystem
+Init__222zParticleSystemHelper_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_18CinSparkDiskSystem_esc__1_FR20xParticleBatchSystem:
 /* 801F2E44 001EFC44  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2E48 001EFC48  7C 08 02 A6 */	mflr r0
-/* 801F2E4C 001EFC4C  3C A0 80 1F */	lis r5, Update__208zParticleSystemHelperEmitter$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$1FPUciR10ptank_poolfPv@ha
+/* 801F2E4C 001EFC4C  3C A0 80 1F */	lis r5, Update__208zParticleSystemHelperEmitter_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1_FPUciR10ptank_poolfPv@ha
 /* 801F2E50 001EFC50  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F2E54 001EFC54  38 00 00 02 */	li r0, 2
 /* 801F2E58 001EFC58  93 E1 00 0C */	stw r31, 0xc(r1)
@@ -2847,7 +2849,7 @@ Init__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleCo
 /* 801F2E64 001EFC64  90 04 00 00 */	stw r0, 0(r4)
 /* 801F2E68 001EFC68  38 00 00 40 */	li r0, 0x40
 /* 801F2E6C 001EFC6C  90 04 00 1C */	stw r0, 0x1c(r4)
-/* 801F2E70 001EFC70  38 05 2E 94 */	addi r0, r5, Update__208zParticleSystemHelperEmitter$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$1FPUciR10ptank_poolfPv@l
+/* 801F2E70 001EFC70  38 05 2E 94 */	addi r0, r5, Update__208zParticleSystemHelperEmitter_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1_FPUciR10ptank_poolfPv@l
 /* 801F2E74 001EFC74  90 04 00 20 */	stw r0, 0x20(r4)
 /* 801F2E78 001EFC78  4B F8 25 85 */	bl xParticleBatchAddSystem__FRC20xParticleBatchSystem
 /* 801F2E7C 001EFC7C  90 7F 00 00 */	stw r3, 0(r31)
@@ -2857,8 +2859,8 @@ Init__222zParticleSystemHelper$$0175zParticleEmitterConeSurface$$0143zParticleCo
 /* 801F2E8C 001EFC8C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F2E90 001EFC90  4E 80 00 20 */	blr 
 
-.global Update__208zParticleSystemHelperEmitter$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$1FPUciR10ptank_poolfPv
-Update__208zParticleSystemHelperEmitter$$0175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1$$1FPUciR10ptank_poolfPv:
+.global Update__208zParticleSystemHelperEmitter_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1_FPUciR10ptank_poolfPv
+Update__208zParticleSystemHelperEmitter_esc__0_175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1_FPUciR10ptank_poolfPv:
 /* 801F2E94 001EFC94  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 801F2E98 001EFC98  7C 08 02 A6 */	mflr r0
 /* 801F2E9C 001EFC9C  90 01 00 44 */	stw r0, 0x44(r1)
@@ -2880,7 +2882,7 @@ lbl_801F2EC8:
 lbl_801F2ED8:
 /* 801F2ED8 001EFCD8  FC 20 F8 90 */	fmr f1, f31
 /* 801F2EDC 001EFCDC  7F 63 DB 78 */	mr r3, r27
-/* 801F2EE0 001EFCE0  4B FF 03 C5 */	bl update_position__112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1Ff
+/* 801F2EE0 001EFCE0  4B FF 03 C5 */	bl update_position__112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1_Ff
 /* 801F2EE4 001EFCE4  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 801F2EE8 001EFCE8  28 00 00 01 */	cmplwi r0, 1
 /* 801F2EEC 001EFCEC  40 82 00 28 */	bne lbl_801F2F14
@@ -2917,11 +2919,11 @@ lbl_801F2F14:
 lbl_801F2F64:
 /* 801F2F64 001EFD64  7F 63 DB 78 */	mr r3, r27
 /* 801F2F68 001EFD68  7F C4 F3 78 */	mr r4, r30
-/* 801F2F6C 001EFD6C  4B FF 02 CD */	bl update_render__143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1FP26ptank_pool__pos_color_size
+/* 801F2F6C 001EFD6C  4B FF 02 CD */	bl update_render__143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1_FP26ptank_pool__pos_color_size
 /* 801F2F70 001EFD70  FC 20 F8 90 */	fmr f1, f31
 /* 801F2F74 001EFD74  7F 63 DB 78 */	mr r3, r27
 /* 801F2F78 001EFD78  7F C4 F3 78 */	mr r4, r30
-/* 801F2F7C 001EFD7C  4B F4 33 F9 */	bl update_uv__63zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1FfP26ptank_pool__pos_color_size
+/* 801F2F7C 001EFD7C  4B F4 33 F9 */	bl update_uv__63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1_FfP26ptank_pool__pos_color_size
 lbl_801F2F80:
 /* 801F2F80 001EFD80  3B 9C 00 01 */	addi r28, r28, 1
 /* 801F2F84 001EFD84  7C 1C D0 00 */	cmpw r28, r26
@@ -2939,8 +2941,8 @@ lbl_801F2F98:
 /* 801F2FAC 001EFDAC  38 21 00 40 */	addi r1, r1, 0x40
 /* 801F2FB0 001EFDB0  4E 80 00 20 */	blr 
 
-.global emit__175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1FRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitState
-emit__175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$1FRQ2175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1$$1$$19EmitState:
+.global emit__175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_FRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState
+emit__175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_FRQ2175zParticleEmitterConeSurface_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState:
 /* 801F2FB4 001EFDB4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F2FB8 001EFDB8  7C 08 02 A6 */	mflr r0
 /* 801F2FBC 001EFDBC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2950,8 +2952,8 @@ emit__175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParti
 /* 801F2FCC 001EFDCC  7C 7E 1B 78 */	mr r30, r3
 /* 801F2FD0 001EFDD0  7C 9F 23 78 */	mr r31, r4
 /* 801F2FD4 001EFDD4  4B E1 43 51 */	bl xurand__Fv
-/* 801F2FD8 001EFDD8  C0 42 D7 78 */	lfs f2, $$21731_2-_SDA2_BASE_(r2)
-/* 801F2FDC 001EFDDC  C0 02 D7 7C */	lfs f0, $$21760_0-_SDA2_BASE_(r2)
+/* 801F2FD8 001EFDD8  C0 42 D7 78 */	lfs f2, _esc__2_1731_2-_SDA2_BASE_(r2)
+/* 801F2FDC 001EFDDC  C0 02 D7 7C */	lfs f0, _esc__2_1760_0-_SDA2_BASE_(r2)
 /* 801F2FE0 001EFDE0  EC 21 10 28 */	fsubs f1, f1, f2
 /* 801F2FE4 001EFDE4  EF E0 00 72 */	fmuls f31, f0, f1
 /* 801F2FE8 001EFDE8  FC 20 F8 90 */	fmr f1, f31
@@ -2973,7 +2975,7 @@ emit__175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParti
 /* 801F3028 001EFE28  4B E1 8D A1 */	bl xVec3AddScaled__FR5xVec3RC5xVec3f
 /* 801F302C 001EFE2C  7F C3 F3 78 */	mr r3, r30
 /* 801F3030 001EFE30  7F E4 FB 78 */	mr r4, r31
-/* 801F3034 001EFE34  4B FE FD 19 */	bl emit__112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$1FRQ2112zParticleMoverGravity$$087zParticleRadiusConst$$063zParticlePoolType$$026ptank_pool__pos_color_size$$413zParticleBase$$1$$1$$19EmitState
+/* 801F3034 001EFE34  4B FE FD 19 */	bl emit__112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1_FRQ2112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1_9EmitState
 /* 801F3038 001EFE38  E3 E1 00 18 */	psq_l f31, 24(r1), 0, qr0
 /* 801F303C 001EFE3C  CB E1 00 10 */	lfd f31, 0x10(r1)
 /* 801F3040 001EFE40  BB C1 00 08 */	lmw r30, 8(r1)
@@ -2981,3 +2983,6 @@ emit__175zParticleEmitterConeSurface$$0143zParticleColorWhiteFadeOut$$0112zParti
 /* 801F3048 001EFE48  7C 08 03 A6 */	mtlr r0
 /* 801F304C 001EFE4C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F3050 001EFE50  4E 80 00 20 */	blr 
+
+.endif
+

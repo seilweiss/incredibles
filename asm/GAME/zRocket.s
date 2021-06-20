@@ -2,8 +2,8 @@
 
 .section .bss
 
-.global rocket_jet_config__21$$2unnamed$$2zRocket_cpp$$2
-rocket_jet_config__21$$2unnamed$$2zRocket_cpp$$2:
+.global rocket_jet_config__21_esc__2_unnamed_esc__2_zRocket_cpp_esc__2_
+rocket_jet_config__21_esc__2_unnamed_esc__2_zRocket_cpp_esc__2_:
 	.skip 0x4C
 .global default_config__Q21z17JetParticleSystem
 default_config__Q21z17JetParticleSystem:
@@ -11,8 +11,8 @@ default_config__Q21z17JetParticleSystem:
 
 .section .rodata
 
-.global $$2stringBase0_122
-$$2stringBase0_122:
+.global _esc__2_stringBase0_122
+_esc__2_stringBase0_122:
 	.incbin "baserom.dol", 0x2E4AD8, 0x80
 
 .section .sbss
@@ -53,8 +53,8 @@ system_id__Q21z11smoke_trail:
 .global need_setup__1z
 need_setup__1z:
 	.incbin "baserom.dol", 0x32D424, 0x4
-.global __vt__Q21z27lightweight$$0Q21z6rocket$$420$$1
-__vt__Q21z27lightweight$$0Q21z6rocket$$420$$1:
+.global __vt__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_
+__vt__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_:
 	.incbin "baserom.dol", 0x32D428, 0x20
 .global __vt__Q21z6rocket
 __vt__Q21z6rocket:
@@ -62,41 +62,41 @@ __vt__Q21z6rocket:
 
 .section .sdata2
 
-.global $$21273
-$$21273:
+.global _esc__2_1273
+_esc__2_1273:
 	.incbin "baserom.dol", 0x332D38, 0x4
-.global $$21274_0
-$$21274_0:
+.global _esc__2_1274_0
+_esc__2_1274_0:
 	.incbin "baserom.dol", 0x332D3C, 0x4
-.global $$21300_0
-$$21300_0:
+.global _esc__2_1300_0
+_esc__2_1300_0:
 	.incbin "baserom.dol", 0x332D40, 0x4
-.global $$21301_2
-$$21301_2:
+.global _esc__2_1301_2
+_esc__2_1301_2:
 	.incbin "baserom.dol", 0x332D44, 0x4
-.global $$21399_3
-$$21399_3:
+.global _esc__2_1399_3
+_esc__2_1399_3:
 	.incbin "baserom.dol", 0x332D48, 0x4
-.global $$21400_1
-$$21400_1:
+.global _esc__2_1400_1
+_esc__2_1400_1:
 	.incbin "baserom.dol", 0x332D4C, 0x4
-.global $$21401_0
-$$21401_0:
+.global _esc__2_1401_0
+_esc__2_1401_0:
 	.incbin "baserom.dol", 0x332D50, 0x4
-.global $$21402_0
-$$21402_0:
+.global _esc__2_1402_0
+_esc__2_1402_0:
 	.incbin "baserom.dol", 0x332D54, 0x4
-.global $$21415_4
-$$21415_4:
+.global _esc__2_1415_4
+_esc__2_1415_4:
 	.incbin "baserom.dol", 0x332D58, 0x4
-.global $$21427_1
-$$21427_1:
+.global _esc__2_1427_1
+_esc__2_1427_1:
 	.incbin "baserom.dol", 0x332D5C, 0x4
-.global $$21454
-$$21454:
+.global _esc__2_1454
+_esc__2_1454:
 	.incbin "baserom.dol", 0x332D60, 0x4
-.global $$21462_0
-$$21462_0:
+.global _esc__2_1462_0
+_esc__2_1462_0:
 	.incbin "baserom.dol", 0x332D64, 0x4
 .global lbl_803D63A8
 lbl_803D63A8:
@@ -104,8 +104,8 @@ lbl_803D63A8:
 .global lbl_803D63AC
 lbl_803D63AC:
 	.incbin "baserom.dol", 0x332D6C, 0x4
-.global $$21466_2
-$$21466_2:
+.global _esc__2_1466_2
+_esc__2_1466_2:
 	.incbin "baserom.dol", 0x332D70, 0x4
 .global lbl_803D63B4
 lbl_803D63B4:
@@ -113,54 +113,56 @@ lbl_803D63B4:
 .global lbl_803D63B8
 lbl_803D63B8:
 	.incbin "baserom.dol", 0x332D78, 0x4
-.global $$21473_4
-$$21473_4:
+.global _esc__2_1473_4
+_esc__2_1473_4:
 	.incbin "baserom.dol", 0x332D7C, 0x4
-.global $$21503_1
-$$21503_1:
+.global _esc__2_1503_1
+_esc__2_1503_1:
 	.incbin "baserom.dol", 0x332D80, 0x4
-.global $$21523_2
-$$21523_2:
+.global _esc__2_1523_2
+_esc__2_1523_2:
 	.incbin "baserom.dol", 0x332D84, 0x4
-.global $$21524_0
-$$21524_0:
+.global _esc__2_1524_0
+_esc__2_1524_0:
 	.incbin "baserom.dol", 0x332D88, 0x4
-.global $$21525_3
-$$21525_3:
+.global _esc__2_1525_3
+_esc__2_1525_3:
 	.incbin "baserom.dol", 0x332D8C, 0x4
-.global $$21526_1
-$$21526_1:
+.global _esc__2_1526_1
+_esc__2_1526_1:
 	.incbin "baserom.dol", 0x332D90, 0x4
-.global $$21527_2
-$$21527_2:
+.global _esc__2_1527_2
+_esc__2_1527_2:
 	.incbin "baserom.dol", 0x332D94, 0x4
-.global $$21528_3
-$$21528_3:
+.global _esc__2_1528_3
+_esc__2_1528_3:
 	.incbin "baserom.dol", 0x332D98, 0x4
-.global $$21580_1
-$$21580_1:
+.global _esc__2_1580_1
+_esc__2_1580_1:
 	.incbin "baserom.dol", 0x332D9C, 0x4
-.global $$21585_0
-$$21585_0:
+.global _esc__2_1585_0
+_esc__2_1585_0:
 	.incbin "baserom.dol", 0x332DA0, 0x8
-.global $$21659_3
-$$21659_3:
+.global _esc__2_1659_3
+_esc__2_1659_3:
 	.incbin "baserom.dol", 0x332DA8, 0x4
-.global $$21691_0
-$$21691_0:
+.global _esc__2_1691_0
+_esc__2_1691_0:
 	.incbin "baserom.dol", 0x332DAC, 0x4
-.global $$21692_0
-$$21692_0:
+.global _esc__2_1692_0
+_esc__2_1692_0:
 	.incbin "baserom.dol", 0x332DB0, 0x4
-.global $$21693_2
-$$21693_2:
+.global _esc__2_1693_2
+_esc__2_1693_2:
 	.incbin "baserom.dol", 0x332DB4, 0x4
-.global $$21694_1
-$$21694_1:
+.global _esc__2_1694_1
+_esc__2_1694_1:
 	.incbin "baserom.dol", 0x332DB8, 0x4
-.global $$21748
-$$21748:
+.global _esc__2_1748
+_esc__2_1748:
 	.incbin "baserom.dol", 0x332DBC, 0x4
+
+.if 0
 
 .section .text
 
@@ -168,37 +170,37 @@ $$21748:
 setup__Q21z6rocketFv:
 /* 801A43D4 001A11D4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A43D8 001A11D8  7C 08 02 A6 */	mflr r0
-/* 801A43DC 001A11DC  3C 60 80 2E */	lis r3, $$2stringBase0_122@ha
+/* 801A43DC 001A11DC  3C 60 80 2E */	lis r3, _esc__2_stringBase0_122@ha
 /* 801A43E0 001A11E0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801A43E4 001A11E4  38 63 7A D8 */	addi r3, r3, $$2stringBase0_122@l
+/* 801A43E4 001A11E4  38 63 7A D8 */	addi r3, r3, _esc__2_stringBase0_122@l
 /* 801A43E8 001A11E8  4B EC 88 39 */	bl xStrHash__FPCc
 /* 801A43EC 001A11EC  38 80 00 00 */	li r4, 0
 /* 801A43F0 001A11F0  4B EC 7E B1 */	bl xSTFindAsset__FUiPUi
-/* 801A43F4 001A11F4  3C 80 80 2E */	lis r4, $$2stringBase0_122@ha
+/* 801A43F4 001A11F4  3C 80 80 2E */	lis r4, _esc__2_stringBase0_122@ha
 /* 801A43F8 001A11F8  90 6D D7 10 */	stw r3, shrapnel__Q21z6rocket-_SDA_BASE_(r13)
-/* 801A43FC 001A11FC  38 64 7A D8 */	addi r3, r4, $$2stringBase0_122@l
+/* 801A43FC 001A11FC  38 64 7A D8 */	addi r3, r4, _esc__2_stringBase0_122@l
 /* 801A4400 001A1200  38 63 00 11 */	addi r3, r3, 0x11
 /* 801A4404 001A1204  4B F0 18 55 */	bl xSndMgrGetSoundGroup__FPc
 /* 801A4408 001A1208  3C 80 80 3A */	lis r4, default_config__Q21z17JetParticleSystem@ha
-/* 801A440C 001A120C  3C A0 80 3A */	lis r5, rocket_jet_config__21$$2unnamed$$2zRocket_cpp$$2@ha
+/* 801A440C 001A120C  3C A0 80 3A */	lis r5, rocket_jet_config__21_esc__2_unnamed_esc__2_zRocket_cpp_esc__2_@ha
 /* 801A4410 001A1210  90 6D A4 50 */	stw r3, flying_noise_group__Q21z6rocket-_SDA_BASE_(r13)
 /* 801A4414 001A1214  38 84 E0 2C */	addi r4, r4, default_config__Q21z17JetParticleSystem@l
-/* 801A4418 001A1218  38 65 DF E0 */	addi r3, r5, rocket_jet_config__21$$2unnamed$$2zRocket_cpp$$2@l
+/* 801A4418 001A1218  38 65 DF E0 */	addi r3, r5, rocket_jet_config__21_esc__2_unnamed_esc__2_zRocket_cpp_esc__2_@l
 /* 801A441C 001A121C  4B F7 D3 F1 */	bl __as__Q31z17JetParticleSystem6configFRCQ31z17JetParticleSystem6config
-/* 801A4420 001A1220  3C 60 80 3A */	lis r3, rocket_jet_config__21$$2unnamed$$2zRocket_cpp$$2@ha
-/* 801A4424 001A1224  C0 22 C6 58 */	lfs f1, $$21273-_SDA2_BASE_(r2)
-/* 801A4428 001A1228  38 63 DF E0 */	addi r3, r3, rocket_jet_config__21$$2unnamed$$2zRocket_cpp$$2@l
-/* 801A442C 001A122C  C0 02 C6 5C */	lfs f0, $$21274_0-_SDA2_BASE_(r2)
+/* 801A4420 001A1220  3C 60 80 3A */	lis r3, rocket_jet_config__21_esc__2_unnamed_esc__2_zRocket_cpp_esc__2_@ha
+/* 801A4424 001A1224  C0 22 C6 58 */	lfs f1, _esc__2_1273-_SDA2_BASE_(r2)
+/* 801A4428 001A1228  38 63 DF E0 */	addi r3, r3, rocket_jet_config__21_esc__2_unnamed_esc__2_zRocket_cpp_esc__2_@l
+/* 801A442C 001A122C  C0 02 C6 5C */	lfs f0, _esc__2_1274_0-_SDA2_BASE_(r2)
 /* 801A4430 001A1230  D0 23 00 44 */	stfs f1, 0x44(r3)
 /* 801A4434 001A1234  D0 03 00 38 */	stfs f0, 0x38(r3)
 /* 801A4438 001A1238  48 00 0A 59 */	bl setup__Q21z17JetParticleSystemFv
-/* 801A443C 001A123C  3C 60 80 2E */	lis r3, $$2stringBase0_122@ha
-/* 801A4440 001A1240  38 63 7A D8 */	addi r3, r3, $$2stringBase0_122@l
+/* 801A443C 001A123C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_122@ha
+/* 801A4440 001A1240  38 63 7A D8 */	addi r3, r3, _esc__2_stringBase0_122@l
 /* 801A4444 001A1244  38 63 00 1D */	addi r3, r3, 0x1d
 /* 801A4448 001A1248  4B F0 18 11 */	bl xSndMgrGetSoundGroup__FPc
-/* 801A444C 001A124C  3C 80 80 2E */	lis r4, $$2stringBase0_122@ha
+/* 801A444C 001A124C  3C 80 80 2E */	lis r4, _esc__2_stringBase0_122@ha
 /* 801A4450 001A1250  90 6D A4 54 */	stw r3, splash_soundgroup__Q21z6rocket-_SDA_BASE_(r13)
-/* 801A4454 001A1254  38 64 7A D8 */	addi r3, r4, $$2stringBase0_122@l
+/* 801A4454 001A1254  38 64 7A D8 */	addi r3, r4, _esc__2_stringBase0_122@l
 /* 801A4458 001A1258  38 63 00 30 */	addi r3, r3, 0x30
 /* 801A445C 001A125C  4B FD 69 F1 */	bl zSplashFindType__FPCc
 /* 801A4460 001A1260  90 6D A4 58 */	stw r3, splash__Q21z6rocket-_SDA_BASE_(r13)
@@ -229,13 +231,13 @@ collide__Q21z6rocketFRC5xVec3f:
 /* 801A44AC 001A12AC  7C 9C 23 78 */	mr r28, r4
 /* 801A44B0 001A12B0  38 7B 00 20 */	addi r3, r27, 0x20
 /* 801A44B4 001A12B4  4B E6 70 71 */	bl length2__5xVec3CFv
-/* 801A44B8 001A12B8  C0 02 C6 60 */	lfs f0, $$21300_0-_SDA2_BASE_(r2)
+/* 801A44B8 001A12B8  C0 02 C6 60 */	lfs f0, _esc__2_1300_0-_SDA2_BASE_(r2)
 /* 801A44BC 001A12BC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801A44C0 001A12C0  4C 41 13 82 */	cror 2, 1, 2
 /* 801A44C4 001A12C4  40 82 00 1C */	bne lbl_801A44E0
 /* 801A44C8 001A12C8  38 7B 00 20 */	addi r3, r27, 0x20
 /* 801A44CC 001A12CC  4B E6 70 59 */	bl length2__5xVec3CFv
-/* 801A44D0 001A12D0  C0 02 C6 64 */	lfs f0, $$21301_2-_SDA2_BASE_(r2)
+/* 801A44D0 001A12D0  C0 02 C6 64 */	lfs f0, _esc__2_1301_2-_SDA2_BASE_(r2)
 /* 801A44D4 001A12D4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801A44D8 001A12D8  4C 40 13 82 */	cror 2, 0, 2
 /* 801A44DC 001A12DC  41 82 01 20 */	beq lbl_801A45FC
@@ -375,25 +377,25 @@ lbl_801A4678:
 /* 801A46C8 001A14C8  38 61 00 98 */	addi r3, r1, 0x98
 /* 801A46CC 001A14CC  38 9E 00 20 */	addi r4, r30, 0x20
 /* 801A46D0 001A14D0  4B E6 6B 95 */	bl dot__5xVec3CFRC5xVec3
-/* 801A46D4 001A14D4  C0 02 C6 58 */	lfs f0, $$21273-_SDA2_BASE_(r2)
+/* 801A46D4 001A14D4  C0 02 C6 58 */	lfs f0, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A46D8 001A14D8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801A46DC 001A14DC  40 81 00 1C */	ble lbl_801A46F8
 /* 801A46E0 001A14E0  38 7F 00 3C */	addi r3, r31, 0x3c
 /* 801A46E4 001A14E4  4B EC 2D 69 */	bl xSndMgrStop__FR10iSndHandle
 /* 801A46E8 001A14E8  7F E3 FB 78 */	mr r3, r31
 /* 801A46EC 001A14EC  38 80 00 00 */	li r4, 0
-/* 801A46F0 001A14F0  4B F0 74 51 */	bl set_used__Q21z27lightweight$$0Q21z6rocket$$420$$1Fb
+/* 801A46F0 001A14F0  4B F0 74 51 */	bl set_used__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Fb
 /* 801A46F4 001A14F4  48 00 03 04 */	b lbl_801A49F8
 lbl_801A46F8:
 /* 801A46F8 001A14F8  C0 3F 00 10 */	lfs f1, 0x10(r31)
-/* 801A46FC 001A14FC  C0 02 C6 58 */	lfs f0, $$21273-_SDA2_BASE_(r2)
+/* 801A46FC 001A14FC  C0 02 C6 58 */	lfs f0, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A4700 001A1500  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801A4704 001A1504  40 80 00 1C */	bge lbl_801A4720
 /* 801A4708 001A1508  38 7F 00 3C */	addi r3, r31, 0x3c
 /* 801A470C 001A150C  4B EC 2D 41 */	bl xSndMgrStop__FR10iSndHandle
 /* 801A4710 001A1510  7F E3 FB 78 */	mr r3, r31
 /* 801A4714 001A1514  38 80 00 00 */	li r4, 0
-/* 801A4718 001A1518  4B F0 74 29 */	bl set_used__Q21z27lightweight$$0Q21z6rocket$$420$$1Fb
+/* 801A4718 001A1518  4B F0 74 29 */	bl set_used__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Fb
 /* 801A471C 001A151C  48 00 02 DC */	b lbl_801A49F8
 lbl_801A4720:
 /* 801A4720 001A1520  FC 20 F8 90 */	fmr f1, f31
@@ -405,7 +407,7 @@ lbl_801A4720:
 /* 801A4738 001A1538  38 81 00 8C */	addi r4, r1, 0x8c
 /* 801A473C 001A153C  4B FF FD 5D */	bl collide__Q21z6rocketFRC5xVec3f
 /* 801A4740 001A1540  7F E3 FB 78 */	mr r3, r31
-/* 801A4744 001A1544  4B F0 13 C5 */	bl is_used__Q21z27lightweight$$0Q21z6rocket$$420$$1CFv
+/* 801A4744 001A1544  4B F0 13 C5 */	bl is_used__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_CFv
 /* 801A4748 001A1548  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801A474C 001A154C  41 82 02 AC */	beq lbl_801A49F8
 /* 801A4750 001A1550  FC 20 F8 90 */	fmr f1, f31
@@ -419,11 +421,11 @@ lbl_801A4720:
 /* 801A4770 001A1570  4B E6 6C E5 */	bl length__5xVec3CFv
 /* 801A4774 001A1574  C0 5F 00 0C */	lfs f2, 0xc(r31)
 /* 801A4778 001A1578  FF C0 08 90 */	fmr f30, f1
-/* 801A477C 001A157C  C0 02 C6 60 */	lfs f0, $$21300_0-_SDA2_BASE_(r2)
+/* 801A477C 001A157C  C0 02 C6 60 */	lfs f0, _esc__2_1300_0-_SDA2_BASE_(r2)
 /* 801A4780 001A1580  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801A4784 001A1584  4C 41 13 82 */	cror 2, 1, 2
 /* 801A4788 001A1588  40 82 00 14 */	bne lbl_801A479C
-/* 801A478C 001A158C  C0 02 C6 64 */	lfs f0, $$21301_2-_SDA2_BASE_(r2)
+/* 801A478C 001A158C  C0 02 C6 64 */	lfs f0, _esc__2_1301_2-_SDA2_BASE_(r2)
 /* 801A4790 001A1590  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801A4794 001A1594  4C 40 13 82 */	cror 2, 0, 2
 /* 801A4798 001A1598  41 82 01 08 */	beq lbl_801A48A0
@@ -455,7 +457,7 @@ lbl_801A479C:
 /* 801A47FC 001A15FC  38 61 00 C8 */	addi r3, r1, 0xc8
 /* 801A4800 001A1600  38 9F 00 20 */	addi r4, r31, 0x20
 /* 801A4804 001A1604  4B E6 6A 61 */	bl dot__5xVec3CFRC5xVec3
-/* 801A4808 001A1608  C0 02 C6 58 */	lfs f0, $$21273-_SDA2_BASE_(r2)
+/* 801A4808 001A1608  C0 02 C6 58 */	lfs f0, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A480C 001A160C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801A4810 001A1610  40 81 00 90 */	ble lbl_801A48A0
 /* 801A4814 001A1614  38 7F 00 20 */	addi r3, r31, 0x20
@@ -477,7 +479,7 @@ lbl_801A479C:
 /* 801A4854 001A1654  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 801A4858 001A1658  4B E6 6B FD */	bl length__5xVec3CFv
 /* 801A485C 001A165C  FF A0 08 90 */	fmr f29, f1
-/* 801A4860 001A1660  C0 02 C6 68 */	lfs f0, $$21399_3-_SDA2_BASE_(r2)
+/* 801A4860 001A1660  C0 02 C6 68 */	lfs f0, _esc__2_1399_3-_SDA2_BASE_(r2)
 /* 801A4864 001A1664  FC 1D 00 40 */	fcmpo cr0, f29, f0
 /* 801A4868 001A1668  40 81 00 38 */	ble lbl_801A48A0
 /* 801A486C 001A166C  38 61 00 BC */	addi r3, r1, 0xbc
@@ -497,10 +499,10 @@ lbl_801A4888:
 lbl_801A48A0:
 /* 801A48A0 001A16A0  38 7F 00 20 */	addi r3, r31, 0x20
 /* 801A48A4 001A16A4  4B E6 6B B1 */	bl length__5xVec3CFv
-/* 801A48A8 001A16A8  C0 02 C6 6C */	lfs f0, $$21400_1-_SDA2_BASE_(r2)
+/* 801A48A8 001A16A8  C0 02 C6 6C */	lfs f0, _esc__2_1400_1-_SDA2_BASE_(r2)
 /* 801A48AC 001A16AC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801A48B0 001A16B0  40 81 00 50 */	ble lbl_801A4900
-/* 801A48B4 001A16B4  C0 42 C6 70 */	lfs f2, $$21401_0-_SDA2_BASE_(r2)
+/* 801A48B4 001A16B4  C0 42 C6 70 */	lfs f2, _esc__2_1401_0-_SDA2_BASE_(r2)
 /* 801A48B8 001A16B8  FC 01 10 40 */	fcmpo cr0, f1, f2
 /* 801A48BC 001A16BC  40 81 00 08 */	ble lbl_801A48C4
 /* 801A48C0 001A16C0  FC 40 08 90 */	fmr f2, f1
@@ -509,7 +511,7 @@ lbl_801A48C4:
 /* 801A48C8 001A16C8  EC 00 F7 FA */	fmadds f0, f0, f31, f30
 /* 801A48CC 001A16CC  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801A48D0 001A16D0  40 80 00 14 */	bge lbl_801A48E4
-/* 801A48D4 001A16D4  C0 02 C6 70 */	lfs f0, $$21401_0-_SDA2_BASE_(r2)
+/* 801A48D4 001A16D4  C0 02 C6 70 */	lfs f0, _esc__2_1401_0-_SDA2_BASE_(r2)
 /* 801A48D8 001A16D8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801A48DC 001A16DC  40 81 00 08 */	ble lbl_801A48E4
 /* 801A48E0 001A16E0  FC 00 08 90 */	fmr f0, f1
@@ -527,7 +529,7 @@ lbl_801A4900:
 /* 801A4908 001A1708  4B EC CE 29 */	bl xVec3Copy__FP5xVec3PC5xVec3
 /* 801A490C 001A170C  80 9F 00 30 */	lwz r4, 0x30(r31)
 /* 801A4910 001A1710  38 61 00 B0 */	addi r3, r1, 0xb0
-/* 801A4914 001A1714  C0 22 C6 74 */	lfs f1, $$21402_0-_SDA2_BASE_(r2)
+/* 801A4914 001A1714  C0 22 C6 74 */	lfs f1, _esc__2_1402_0-_SDA2_BASE_(r2)
 /* 801A4918 001A1718  80 84 00 54 */	lwz r4, 0x54(r4)
 /* 801A491C 001A171C  38 84 00 20 */	addi r4, r4, 0x20
 /* 801A4920 001A1720  4B E6 4D FD */	bl xVec3AddScaled__FP5xVec3PC5xVec3f
@@ -548,7 +550,7 @@ lbl_801A4900:
 /* 801A495C 001A175C  4B EC CD D5 */	bl xVec3Copy__FP5xVec3PC5xVec3
 /* 801A4960 001A1760  80 9F 00 30 */	lwz r4, 0x30(r31)
 /* 801A4964 001A1764  38 61 00 A4 */	addi r3, r1, 0xa4
-/* 801A4968 001A1768  C0 22 C6 58 */	lfs f1, $$21273-_SDA2_BASE_(r2)
+/* 801A4968 001A1768  C0 22 C6 58 */	lfs f1, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A496C 001A176C  80 84 00 54 */	lwz r4, 0x54(r4)
 /* 801A4970 001A1770  38 84 00 20 */	addi r4, r4, 0x20
 /* 801A4974 001A1774  4B E6 4D A9 */	bl xVec3AddScaled__FP5xVec3PC5xVec3f
@@ -564,11 +566,11 @@ lbl_801A4900:
 /* 801A499C 001A179C  38 84 00 20 */	addi r4, r4, 0x20
 /* 801A49A0 001A17A0  4B E6 AC 29 */	bl __mi__5xVec3CFv
 /* 801A49A4 001A17A4  80 81 00 14 */	lwz r4, 0x14(r1)
-/* 801A49A8 001A17A8  3C 60 80 3A */	lis r3, rocket_jet_config__21$$2unnamed$$2zRocket_cpp$$2@ha
+/* 801A49A8 001A17A8  3C 60 80 3A */	lis r3, rocket_jet_config__21_esc__2_unnamed_esc__2_zRocket_cpp_esc__2_@ha
 /* 801A49AC 001A17AC  80 E1 00 18 */	lwz r7, 0x18(r1)
 /* 801A49B0 001A17B0  FC 20 F8 90 */	fmr f1, f31
 /* 801A49B4 001A17B4  81 61 00 1C */	lwz r11, 0x1c(r1)
-/* 801A49B8 001A17B8  39 03 DF E0 */	addi r8, r3, rocket_jet_config__21$$2unnamed$$2zRocket_cpp$$2@l
+/* 801A49B8 001A17B8  39 03 DF E0 */	addi r8, r3, rocket_jet_config__21_esc__2_unnamed_esc__2_zRocket_cpp_esc__2_@l
 /* 801A49BC 001A17BC  81 41 00 A4 */	lwz r10, 0xa4(r1)
 /* 801A49C0 001A17C0  38 61 00 2C */	addi r3, r1, 0x2c
 /* 801A49C4 001A17C4  81 21 00 A8 */	lwz r9, 0xa8(r1)
@@ -609,13 +611,13 @@ detonate__Q21z6rocketFP12xSweptSphere:
 /* 801A4A40 001A1840  4B EC 2A 0D */	bl xSndMgrStop__FR10iSndHandle
 /* 801A4A44 001A1844  7F C3 F3 78 */	mr r3, r30
 /* 801A4A48 001A1848  38 80 00 00 */	li r4, 0
-/* 801A4A4C 001A184C  4B F0 70 F5 */	bl set_used__Q21z27lightweight$$0Q21z6rocket$$420$$1Fb
+/* 801A4A4C 001A184C  4B F0 70 F5 */	bl set_used__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Fb
 /* 801A4A50 001A1850  80 7E 00 2C */	lwz r3, 0x2c(r30)
 /* 801A4A54 001A1854  38 9E 00 14 */	addi r4, r30, 0x14
-/* 801A4A58 001A1858  C0 22 C6 80 */	lfs f1, $$21454-_SDA2_BASE_(r2)
+/* 801A4A58 001A1858  C0 22 C6 80 */	lfs f1, _esc__2_1454-_SDA2_BASE_(r2)
 /* 801A4A5C 001A185C  38 A0 00 0A */	li r5, 0xa
-/* 801A4A60 001A1860  C0 42 C6 70 */	lfs f2, $$21401_0-_SDA2_BASE_(r2)
-/* 801A4A64 001A1864  C0 62 C6 5C */	lfs f3, $$21274_0-_SDA2_BASE_(r2)
+/* 801A4A60 001A1860  C0 42 C6 70 */	lfs f2, _esc__2_1401_0-_SDA2_BASE_(r2)
+/* 801A4A64 001A1864  C0 62 C6 5C */	lfs f3, _esc__2_1274_0-_SDA2_BASE_(r2)
 /* 801A4A68 001A1868  4B F9 C2 75 */	bl sphere_damage__FP4xEntRC5xVec3fiff
 /* 801A4A6C 001A186C  28 1F 00 00 */	cmplwi r31, 0
 /* 801A4A70 001A1870  38 60 00 00 */	li r3, 0
@@ -677,7 +679,7 @@ set_model_matrix__Q21z6rocketCFv:
 /* 801A4B38 001A1938  38 7F 00 20 */	addi r3, r31, 0x20
 /* 801A4B3C 001A193C  38 82 8A 20 */	addi r4, r2, g_NX3-_SDA2_BASE_
 /* 801A4B40 001A1940  4B E6 6C ED */	bl safe_normalize__5xVec3FRC5xVec3
-/* 801A4B44 001A1944  80 C2 C6 84 */	lwz r6, $$21462_0-_SDA2_BASE_(r2)
+/* 801A4B44 001A1944  80 C2 C6 84 */	lwz r6, _esc__2_1462_0-_SDA2_BASE_(r2)
 /* 801A4B48 001A1948  38 7F 00 20 */	addi r3, r31, 0x20
 /* 801A4B4C 001A194C  80 A2 C6 88 */	lwz r5, lbl_803D63A8-_SDA2_BASE_(r2)
 /* 801A4B50 001A1950  38 81 00 50 */	addi r4, r1, 0x50
@@ -686,7 +688,7 @@ set_model_matrix__Q21z6rocketCFv:
 /* 801A4B5C 001A195C  90 A1 00 54 */	stw r5, 0x54(r1)
 /* 801A4B60 001A1960  90 01 00 58 */	stw r0, 0x58(r1)
 /* 801A4B64 001A1964  4B E6 67 01 */	bl dot__5xVec3CFRC5xVec3
-/* 801A4B68 001A1968  C0 02 C6 9C */	lfs f0, $$21473_4-_SDA2_BASE_(r2)
+/* 801A4B68 001A1968  C0 02 C6 9C */	lfs f0, _esc__2_1473_4-_SDA2_BASE_(r2)
 /* 801A4B6C 001A196C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801A4B70 001A1970  40 80 00 48 */	bge lbl_801A4BB8
 /* 801A4B74 001A1974  38 7F 00 20 */	addi r3, r31, 0x20
@@ -707,7 +709,7 @@ set_model_matrix__Q21z6rocketCFv:
 /* 801A4BB0 001A19B0  4B E6 6C 7D */	bl safe_normalize__5xVec3FRC5xVec3
 /* 801A4BB4 001A19B4  48 00 00 5C */	b lbl_801A4C10
 lbl_801A4BB8:
-/* 801A4BB8 001A19B8  80 C2 C6 90 */	lwz r6, $$21466_2-_SDA2_BASE_(r2)
+/* 801A4BB8 001A19B8  80 C2 C6 90 */	lwz r6, _esc__2_1466_2-_SDA2_BASE_(r2)
 /* 801A4BBC 001A19BC  38 7F 00 20 */	addi r3, r31, 0x20
 /* 801A4BC0 001A19C0  80 A2 C6 94 */	lwz r5, lbl_803D63B4-_SDA2_BASE_(r2)
 /* 801A4BC4 001A19C4  38 81 00 44 */	addi r4, r1, 0x44
@@ -795,9 +797,9 @@ __ct__Q21z6rocketFP5xVec3fP4xEntRC5xVec3RC5xVec3ff:
 /* 801A4CD4 001A1AD4  7C DE 33 78 */	mr r30, r6
 /* 801A4CD8 001A1AD8  7C FF 3B 78 */	mr r31, r7
 /* 801A4CDC 001A1ADC  38 80 00 01 */	li r4, 1
-/* 801A4CE0 001A1AE0  48 00 0F 15 */	bl __ct__Q21z27lightweight$$0Q21z6rocket$$420$$1Fb
+/* 801A4CE0 001A1AE0  48 00 0F 15 */	bl __ct__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Fb
 /* 801A4CE4 001A1AE4  38 0D A4 88 */	addi r0, r13, __vt__Q21z6rocket-_SDA_BASE_
-/* 801A4CE8 001A1AE8  C0 02 C6 A0 */	lfs f0, $$21503_1-_SDA2_BASE_(r2)
+/* 801A4CE8 001A1AE8  C0 02 C6 A0 */	lfs f0, _esc__2_1503_1-_SDA2_BASE_(r2)
 /* 801A4CEC 001A1AEC  90 1B 00 08 */	stw r0, 8(r27)
 /* 801A4CF0 001A1AF0  FC 20 F8 90 */	fmr f1, f31
 /* 801A4CF4 001A1AF4  80 DE 00 00 */	lwz r6, 0(r30)
@@ -815,7 +817,7 @@ __ct__Q21z6rocketFP5xVec3fP4xEntRC5xVec3RC5xVec3ff:
 /* 801A4D24 001A1B24  38 00 FF FF */	li r0, -1
 /* 801A4D28 001A1B28  80 81 00 0C */	lwz r4, 0xc(r1)
 /* 801A4D2C 001A1B2C  7F 63 DB 78 */	mr r3, r27
-/* 801A4D30 001A1B30  C0 02 C6 58 */	lfs f0, $$21273-_SDA2_BASE_(r2)
+/* 801A4D30 001A1B30  C0 02 C6 58 */	lfs f0, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A4D34 001A1B34  90 BB 00 20 */	stw r5, 0x20(r27)
 /* 801A4D38 001A1B38  90 9B 00 24 */	stw r4, 0x24(r27)
 /* 801A4D3C 001A1B3C  80 81 00 10 */	lwz r4, 0x10(r1)
@@ -847,10 +849,10 @@ __as__Q21z6rocketFRCQ21z6rocket:
 /* 801A4D98 001A1B98  7C 9F 23 78 */	mr r31, r4
 /* 801A4D9C 001A1B9C  7C 7E 1B 78 */	mr r30, r3
 /* 801A4DA0 001A1BA0  7F E3 FB 78 */	mr r3, r31
-/* 801A4DA4 001A1BA4  4B F0 0D 65 */	bl is_used__Q21z27lightweight$$0Q21z6rocket$$420$$1CFv
+/* 801A4DA4 001A1BA4  4B F0 0D 65 */	bl is_used__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_CFv
 /* 801A4DA8 001A1BA8  7C 64 1B 78 */	mr r4, r3
 /* 801A4DAC 001A1BAC  7F C3 F3 78 */	mr r3, r30
-/* 801A4DB0 001A1BB0  4B F0 6D 91 */	bl set_used__Q21z27lightweight$$0Q21z6rocket$$420$$1Fb
+/* 801A4DB0 001A1BB0  4B F0 6D 91 */	bl set_used__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Fb
 /* 801A4DB4 001A1BB4  38 7E 00 20 */	addi r3, r30, 0x20
 /* 801A4DB8 001A1BB8  38 9F 00 20 */	addi r4, r31, 0x20
 /* 801A4DBC 001A1BBC  4B E6 62 ED */	bl __as__5xVec3FRC5xVec3
@@ -882,12 +884,12 @@ __ct__Q21z6rocketFv:
 /* 801A4E18 001A1C18  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801A4E1C 001A1C1C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801A4E20 001A1C20  7C 7F 1B 78 */	mr r31, r3
-/* 801A4E24 001A1C24  48 00 0D D1 */	bl __ct__Q21z27lightweight$$0Q21z6rocket$$420$$1Fb
+/* 801A4E24 001A1C24  48 00 0D D1 */	bl __ct__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Fb
 /* 801A4E28 001A1C28  38 0D A4 88 */	addi r0, r13, __vt__Q21z6rocket-_SDA_BASE_
-/* 801A4E2C 001A1C2C  3C 60 80 2E */	lis r3, $$2stringBase0_122@ha
+/* 801A4E2C 001A1C2C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_122@ha
 /* 801A4E30 001A1C30  90 1F 00 08 */	stw r0, 8(r31)
 /* 801A4E34 001A1C34  38 00 FF FF */	li r0, -1
-/* 801A4E38 001A1C38  38 63 7A D8 */	addi r3, r3, $$2stringBase0_122@l
+/* 801A4E38 001A1C38  38 63 7A D8 */	addi r3, r3, _esc__2_stringBase0_122@l
 /* 801A4E3C 001A1C3C  90 1F 00 3C */	stw r0, 0x3c(r31)
 /* 801A4E40 001A1C40  38 63 00 43 */	addi r3, r3, 0x43
 /* 801A4E44 001A1C44  4B FB 64 A9 */	bl get_model__1zFPCc
@@ -914,23 +916,23 @@ __ct__Q21z6rocketFv:
 setup__Q21z17JetParticleSystemFv:
 /* 801A4E90 001A1C90  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A4E94 001A1C94  7C 08 02 A6 */	mflr r0
-/* 801A4E98 001A1C98  C0 22 C6 58 */	lfs f1, $$21273-_SDA2_BASE_(r2)
+/* 801A4E98 001A1C98  C0 22 C6 58 */	lfs f1, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A4E9C 001A1C9C  3C 60 80 3A */	lis r3, default_config__Q21z17JetParticleSystem@ha
 /* 801A4EA0 001A1CA0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801A4EA4 001A1CA4  38 83 E0 2C */	addi r4, r3, default_config__Q21z17JetParticleSystem@l
-/* 801A4EA8 001A1CA8  C1 62 C6 A4 */	lfs f11, $$21523_2-_SDA2_BASE_(r2)
+/* 801A4EA8 001A1CA8  C1 62 C6 A4 */	lfs f11, _esc__2_1523_2-_SDA2_BASE_(r2)
 /* 801A4EAC 001A1CAC  38 00 00 FF */	li r0, 0xff
-/* 801A4EB0 001A1CB0  C1 42 C6 A8 */	lfs f10, $$21524_0-_SDA2_BASE_(r2)
+/* 801A4EB0 001A1CB0  C1 42 C6 A8 */	lfs f10, _esc__2_1524_0-_SDA2_BASE_(r2)
 /* 801A4EB4 001A1CB4  FC 40 08 90 */	fmr f2, f1
-/* 801A4EB8 001A1CB8  C1 22 C6 A0 */	lfs f9, $$21503_1-_SDA2_BASE_(r2)
+/* 801A4EB8 001A1CB8  C1 22 C6 A0 */	lfs f9, _esc__2_1503_1-_SDA2_BASE_(r2)
 /* 801A4EBC 001A1CBC  FC 60 08 90 */	fmr f3, f1
-/* 801A4EC0 001A1CC0  C1 02 C6 AC */	lfs f8, $$21525_3-_SDA2_BASE_(r2)
+/* 801A4EC0 001A1CC0  C1 02 C6 AC */	lfs f8, _esc__2_1525_3-_SDA2_BASE_(r2)
 /* 801A4EC4 001A1CC4  38 64 00 40 */	addi r3, r4, 0x40
-/* 801A4EC8 001A1CC8  C0 E2 C6 70 */	lfs f7, $$21401_0-_SDA2_BASE_(r2)
-/* 801A4ECC 001A1CCC  C0 C2 C6 78 */	lfs f6, $$21415_4-_SDA2_BASE_(r2)
-/* 801A4ED0 001A1CD0  C0 A2 C6 B0 */	lfs f5, $$21526_1-_SDA2_BASE_(r2)
-/* 801A4ED4 001A1CD4  C0 82 C6 B4 */	lfs f4, $$21527_2-_SDA2_BASE_(r2)
-/* 801A4ED8 001A1CD8  C0 02 C6 B8 */	lfs f0, $$21528_3-_SDA2_BASE_(r2)
+/* 801A4EC8 001A1CC8  C0 E2 C6 70 */	lfs f7, _esc__2_1401_0-_SDA2_BASE_(r2)
+/* 801A4ECC 001A1CCC  C0 C2 C6 78 */	lfs f6, _esc__2_1415_4-_SDA2_BASE_(r2)
+/* 801A4ED0 001A1CD0  C0 A2 C6 B0 */	lfs f5, _esc__2_1526_1-_SDA2_BASE_(r2)
+/* 801A4ED4 001A1CD4  C0 82 C6 B4 */	lfs f4, _esc__2_1527_2-_SDA2_BASE_(r2)
+/* 801A4ED8 001A1CD8  C0 02 C6 B8 */	lfs f0, _esc__2_1528_3-_SDA2_BASE_(r2)
 /* 801A4EDC 001A1CDC  D1 64 00 00 */	stfs f11, 0(r4)
 /* 801A4EE0 001A1CE0  D1 64 00 04 */	stfs f11, 4(r4)
 /* 801A4EE4 001A1CE4  D1 44 00 08 */	stfs f10, 8(r4)
@@ -950,7 +952,7 @@ setup__Q21z17JetParticleSystemFv:
 /* 801A4F1C 001A1D1C  D0 04 00 38 */	stfs f0, 0x38(r4)
 /* 801A4F20 001A1D20  4B E6 88 B9 */	bl assign__5xVec3Ffff
 /* 801A4F24 001A1D24  3C 60 80 3A */	lis r3, default_config__Q21z17JetParticleSystem@ha
-/* 801A4F28 001A1D28  C0 02 C6 58 */	lfs f0, $$21273-_SDA2_BASE_(r2)
+/* 801A4F28 001A1D28  C0 02 C6 58 */	lfs f0, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A4F2C 001A1D2C  38 63 E0 2C */	addi r3, r3, default_config__Q21z17JetParticleSystem@l
 /* 801A4F30 001A1D30  38 00 00 01 */	li r0, 1
 /* 801A4F34 001A1D34  D0 03 00 3C */	stfs f0, 0x3c(r3)
@@ -964,8 +966,8 @@ setup__Q21z17JetParticleSystemFv:
 scene_setup__Q21z17JetParticleSystemFv:
 /* 801A4F4C 001A1D4C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801A4F50 001A1D50  7C 08 02 A6 */	mflr r0
-/* 801A4F54 001A1D54  3C 60 80 2E */	lis r3, $$2stringBase0_122@ha
-/* 801A4F58 001A1D58  38 63 7A D8 */	addi r3, r3, $$2stringBase0_122@l
+/* 801A4F54 001A1D54  3C 60 80 2E */	lis r3, _esc__2_stringBase0_122@ha
+/* 801A4F58 001A1D58  38 63 7A D8 */	addi r3, r3, _esc__2_stringBase0_122@l
 /* 801A4F5C 001A1D5C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801A4F60 001A1D60  38 63 00 58 */	addi r3, r3, 0x58
 /* 801A4F64 001A1D64  4B EC 7C BD */	bl xStrHash__FPCc
@@ -1058,12 +1060,12 @@ lbl_801A5058:
 /* 801A50AC 001A1EAC  7F 05 C3 78 */	mr r5, r24
 /* 801A50B0 001A1EB0  4B EA 3C 11 */	bl xMat3x3LMulVec__FP5xVec3PC7xMat3x3PC5xVec3
 lbl_801A50B4:
-/* 801A50B4 001A1EB4  C3 22 C6 58 */	lfs f25, $$21273-_SDA2_BASE_(r2)
+/* 801A50B4 001A1EB4  C3 22 C6 58 */	lfs f25, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A50B8 001A1EB8  3E C0 43 30 */	lis r22, 0x4330
-/* 801A50BC 001A1EBC  C3 C2 C6 7C */	lfs f30, $$21427_1-_SDA2_BASE_(r2)
-/* 801A50C0 001A1EC0  C3 E2 C6 BC */	lfs f31, $$21580_1-_SDA2_BASE_(r2)
-/* 801A50C4 001A1EC4  C3 42 C6 78 */	lfs f26, $$21415_4-_SDA2_BASE_(r2)
-/* 801A50C8 001A1EC8  CB 62 C6 C0 */	lfd f27, $$21585_0-_SDA2_BASE_(r2)
+/* 801A50BC 001A1EBC  C3 C2 C6 7C */	lfs f30, _esc__2_1427_1-_SDA2_BASE_(r2)
+/* 801A50C0 001A1EC0  C3 E2 C6 BC */	lfs f31, _esc__2_1580_1-_SDA2_BASE_(r2)
+/* 801A50C4 001A1EC4  C3 42 C6 78 */	lfs f26, _esc__2_1415_4-_SDA2_BASE_(r2)
+/* 801A50C8 001A1EC8  CB 62 C6 C0 */	lfd f27, _esc__2_1585_0-_SDA2_BASE_(r2)
 /* 801A50CC 001A1ECC  48 00 02 50 */	b lbl_801A531C
 lbl_801A50D0:
 /* 801A50D0 001A1ED0  80 6D D7 14 */	lwz r3, system_id__Q21z17JetParticleSystem-_SDA_BASE_(r13)
@@ -1072,7 +1074,7 @@ lbl_801A50D0:
 /* 801A50DC 001A1EDC  4B FD 04 09 */	bl xParticleBatchEmit__FiiPPUc
 /* 801A50E0 001A1EE0  7C 7F 1B 79 */	or. r31, r3, r3
 /* 801A50E4 001A1EE4  40 82 00 10 */	bne lbl_801A50F4
-/* 801A50E8 001A1EE8  C0 02 C6 58 */	lfs f0, $$21273-_SDA2_BASE_(r2)
+/* 801A50E8 001A1EE8  C0 02 C6 58 */	lfs f0, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A50EC 001A1EEC  D0 19 00 00 */	stfs f0, 0(r25)
 /* 801A50F0 001A1EF0  48 00 02 34 */	b lbl_801A5324
 lbl_801A50F4:
@@ -1154,7 +1156,7 @@ lbl_801A5104:
 /* 801A521C 001A201C  7F 04 C3 78 */	mr r4, r24
 /* 801A5220 001A2020  38 61 00 18 */	addi r3, r1, 0x18
 /* 801A5224 001A2024  4B E6 6B 45 */	bl __ml__5xVec3CFf
-/* 801A5228 001A2028  C0 22 C6 B4 */	lfs f1, $$21527_2-_SDA2_BASE_(r2)
+/* 801A5228 001A2028  C0 22 C6 B4 */	lfs f1, _esc__2_1527_2-_SDA2_BASE_(r2)
 /* 801A522C 001A202C  38 61 00 24 */	addi r3, r1, 0x24
 /* 801A5230 001A2030  38 81 00 18 */	addi r4, r1, 0x18
 /* 801A5234 001A2034  4B E6 6B 35 */	bl __ml__5xVec3CFf
@@ -1260,7 +1262,7 @@ update__Q21z17JetParticleSystemFPUciR10ptank_poolfPv:
 /* 801A5398 001A2198  1C 04 00 30 */	mulli r0, r4, 0x30
 /* 801A539C 001A219C  7C 7C 1B 78 */	mr r28, r3
 /* 801A53A0 001A21A0  FF C0 08 90 */	fmr f30, f1
-/* 801A53A4 001A21A4  C3 E2 C6 58 */	lfs f31, $$21273-_SDA2_BASE_(r2)
+/* 801A53A4 001A21A4  C3 E2 C6 58 */	lfs f31, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A53A8 001A21A8  7F 9E E3 78 */	mr r30, r28
 /* 801A53AC 001A21AC  7C BF 2B 78 */	mr r31, r5
 /* 801A53B0 001A21B0  7F BE 02 14 */	add r29, r30, r0
@@ -1280,7 +1282,7 @@ lbl_801A53B8:
 lbl_801A53E4:
 /* 801A53E4 001A21E4  38 7E 00 10 */	addi r3, r30, 0x10
 /* 801A53E8 001A21E8  4B E6 60 6D */	bl length__5xVec3CFv
-/* 801A53EC 001A21EC  C0 42 C6 58 */	lfs f2, $$21273-_SDA2_BASE_(r2)
+/* 801A53EC 001A21EC  C0 42 C6 58 */	lfs f2, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A53F0 001A21F0  FC 02 08 00 */	fcmpu cr0, f2, f1
 /* 801A53F4 001A21F4  41 82 00 3C */	beq lbl_801A5430
 /* 801A53F8 001A21F8  80 7E 00 2C */	lwz r3, 0x2c(r30)
@@ -1374,9 +1376,9 @@ lbl_801A5504:
 /* 801A5544 001A2344  C0 3E 00 20 */	lfs f1, 0x20(r30)
 /* 801A5548 001A2348  4B EE D9 01 */	bl SetRot__30ptank_pool__pos_color_size_rotFf
 /* 801A554C 001A234C  80 7E 00 2C */	lwz r3, 0x2c(r30)
-/* 801A5550 001A2350  C0 02 C6 58 */	lfs f0, $$21273-_SDA2_BASE_(r2)
+/* 801A5550 001A2350  C0 02 C6 58 */	lfs f0, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A5554 001A2354  C0 43 00 20 */	lfs f2, 0x20(r3)
-/* 801A5558 001A2358  C0 62 C6 78 */	lfs f3, $$21415_4-_SDA2_BASE_(r2)
+/* 801A5558 001A2358  C0 62 C6 78 */	lfs f3, _esc__2_1415_4-_SDA2_BASE_(r2)
 /* 801A555C 001A235C  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801A5560 001A2360  40 81 00 2C */	ble lbl_801A558C
 /* 801A5564 001A2364  C0 1E 00 1C */	lfs f0, 0x1c(r30)
@@ -1392,7 +1394,7 @@ lbl_801A5584:
 lbl_801A5588:
 /* 801A5588 001A2388  FC 60 00 90 */	fmr f3, f0
 lbl_801A558C:
-/* 801A558C 001A238C  C0 02 C6 C8 */	lfs f0, $$21659_3-_SDA2_BASE_(r2)
+/* 801A558C 001A238C  C0 02 C6 C8 */	lfs f0, _esc__2_1659_3-_SDA2_BASE_(r2)
 /* 801A5590 001A2390  80 7F 00 24 */	lwz r3, 0x24(r31)
 /* 801A5594 001A2394  EC 00 00 F2 */	fmuls f0, f0, f3
 /* 801A5598 001A2398  FC 00 00 1E */	fctiwz f0, f0
@@ -1428,15 +1430,15 @@ lbl_801A55C8:
 setup__Q21z11smoke_trailFv:
 /* 801A5600 001A2400  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A5604 001A2404  7C 08 02 A6 */	mflr r0
-/* 801A5608 001A2408  C0 22 C6 58 */	lfs f1, $$21273-_SDA2_BASE_(r2)
+/* 801A5608 001A2408  C0 22 C6 58 */	lfs f1, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A560C 001A240C  38 6D D7 18 */	addi r3, r13, default_config__Q21z11smoke_trail-_SDA_BASE_
 /* 801A5610 001A2410  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801A5614 001A2414  38 00 00 01 */	li r0, 1
-/* 801A5618 001A2418  C0 A2 C6 CC */	lfs f5, $$21691_0-_SDA2_BASE_(r2)
+/* 801A5618 001A2418  C0 A2 C6 CC */	lfs f5, _esc__2_1691_0-_SDA2_BASE_(r2)
 /* 801A561C 001A241C  38 8D D7 18 */	addi r4, r13, default_config__Q21z11smoke_trail-_SDA_BASE_
-/* 801A5620 001A2420  C0 02 C6 D4 */	lfs f0, $$21693_2-_SDA2_BASE_(r2)
+/* 801A5620 001A2420  C0 02 C6 D4 */	lfs f0, _esc__2_1693_2-_SDA2_BASE_(r2)
 /* 801A5624 001A2424  FC 40 08 90 */	fmr f2, f1
-/* 801A5628 001A2428  C0 82 C6 D0 */	lfs f4, $$21692_0-_SDA2_BASE_(r2)
+/* 801A5628 001A2428  C0 82 C6 D0 */	lfs f4, _esc__2_1692_0-_SDA2_BASE_(r2)
 /* 801A562C 001A242C  FC 60 08 90 */	fmr f3, f1
 /* 801A5630 001A2430  98 0D A4 64 */	stb r0, need_setup__1z-_SDA_BASE_(r13)
 /* 801A5634 001A2434  38 63 00 10 */	addi r3, r3, 0x10
@@ -1445,14 +1447,14 @@ setup__Q21z11smoke_trailFv:
 /* 801A5640 001A2440  D0 04 00 08 */	stfs f0, 8(r4)
 /* 801A5644 001A2444  D0 04 00 0C */	stfs f0, 0xc(r4)
 /* 801A5648 001A2448  4B E6 81 91 */	bl assign__5xVec3Ffff
-/* 801A564C 001A244C  C0 A2 C6 D8 */	lfs f5, $$21694_1-_SDA2_BASE_(r2)
+/* 801A564C 001A244C  C0 A2 C6 D8 */	lfs f5, _esc__2_1694_1-_SDA2_BASE_(r2)
 /* 801A5650 001A2450  38 6D D7 18 */	addi r3, r13, default_config__Q21z11smoke_trail-_SDA_BASE_
-/* 801A5654 001A2454  C0 82 C6 B0 */	lfs f4, $$21526_1-_SDA2_BASE_(r2)
+/* 801A5654 001A2454  C0 82 C6 B0 */	lfs f4, _esc__2_1526_1-_SDA2_BASE_(r2)
 /* 801A5658 001A2458  38 00 00 01 */	li r0, 1
-/* 801A565C 001A245C  C0 62 C6 B4 */	lfs f3, $$21527_2-_SDA2_BASE_(r2)
-/* 801A5660 001A2460  C0 42 C6 D4 */	lfs f2, $$21693_2-_SDA2_BASE_(r2)
-/* 801A5664 001A2464  C0 22 C6 7C */	lfs f1, $$21427_1-_SDA2_BASE_(r2)
-/* 801A5668 001A2468  C0 02 C6 78 */	lfs f0, $$21415_4-_SDA2_BASE_(r2)
+/* 801A565C 001A245C  C0 62 C6 B4 */	lfs f3, _esc__2_1527_2-_SDA2_BASE_(r2)
+/* 801A5660 001A2460  C0 42 C6 D4 */	lfs f2, _esc__2_1693_2-_SDA2_BASE_(r2)
+/* 801A5664 001A2464  C0 22 C6 7C */	lfs f1, _esc__2_1427_1-_SDA2_BASE_(r2)
+/* 801A5668 001A2468  C0 02 C6 78 */	lfs f0, _esc__2_1415_4-_SDA2_BASE_(r2)
 /* 801A566C 001A246C  D0 A3 00 1C */	stfs f5, 0x1c(r3)
 /* 801A5670 001A2470  D0 83 00 20 */	stfs f4, 0x20(r3)
 /* 801A5674 001A2474  D0 63 00 24 */	stfs f3, 0x24(r3)
@@ -1469,8 +1471,8 @@ setup__Q21z11smoke_trailFv:
 scene_setup__Q21z11smoke_trailFv:
 /* 801A5698 001A2498  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801A569C 001A249C  7C 08 02 A6 */	mflr r0
-/* 801A56A0 001A24A0  3C 60 80 2E */	lis r3, $$2stringBase0_122@ha
-/* 801A56A4 001A24A4  38 63 7A D8 */	addi r3, r3, $$2stringBase0_122@l
+/* 801A56A0 001A24A0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_122@ha
+/* 801A56A4 001A24A4  38 63 7A D8 */	addi r3, r3, _esc__2_stringBase0_122@l
 /* 801A56A8 001A24A8  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801A56AC 001A24AC  38 63 00 6E */	addi r3, r3, 0x6e
 /* 801A56B0 001A24B0  4B EC 75 71 */	bl xStrHash__FPCc
@@ -1514,7 +1516,7 @@ update__Q21z11smoke_trailFPUciR10ptank_poolfPv:
 /* 801A573C 001A253C  1C 04 00 30 */	mulli r0, r4, 0x30
 /* 801A5740 001A2540  7C 7C 1B 78 */	mr r28, r3
 /* 801A5744 001A2544  FF C0 08 90 */	fmr f30, f1
-/* 801A5748 001A2548  C3 E2 C6 58 */	lfs f31, $$21273-_SDA2_BASE_(r2)
+/* 801A5748 001A2548  C3 E2 C6 58 */	lfs f31, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A574C 001A254C  7F 9E E3 78 */	mr r30, r28
 /* 801A5750 001A2550  7C BF 2B 78 */	mr r31, r5
 /* 801A5754 001A2554  7F BE 02 14 */	add r29, r30, r0
@@ -1541,7 +1543,7 @@ lbl_801A5794:
 /* 801A57A0 001A25A0  4B E6 3F 7D */	bl xVec3AddScaled__FP5xVec3PC5xVec3f
 /* 801A57A4 001A25A4  80 7E 00 2C */	lwz r3, 0x2c(r30)
 /* 801A57A8 001A25A8  C0 5E 00 0C */	lfs f2, 0xc(r30)
-/* 801A57AC 001A25AC  C0 22 C6 7C */	lfs f1, $$21427_1-_SDA2_BASE_(r2)
+/* 801A57AC 001A25AC  C0 22 C6 7C */	lfs f1, _esc__2_1427_1-_SDA2_BASE_(r2)
 /* 801A57B0 001A25B0  C0 03 00 00 */	lfs f0, 0(r3)
 /* 801A57B4 001A25B4  C0 7E 00 04 */	lfs f3, 4(r30)
 /* 801A57B8 001A25B8  EC 02 00 7A */	fmadds f0, f2, f1, f0
@@ -1552,7 +1554,7 @@ lbl_801A57C8:
 /* 801A57C8 001A25C8  FC 00 18 90 */	fmr f0, f3
 lbl_801A57CC:
 /* 801A57CC 001A25CC  D0 1E 00 04 */	stfs f0, 4(r30)
-/* 801A57D0 001A25D0  C0 22 C6 BC */	lfs f1, $$21580_1-_SDA2_BASE_(r2)
+/* 801A57D0 001A25D0  C0 22 C6 BC */	lfs f1, _esc__2_1580_1-_SDA2_BASE_(r2)
 /* 801A57D4 001A25D4  80 7E 00 2C */	lwz r3, 0x2c(r30)
 /* 801A57D8 001A25D8  C0 1E 00 0C */	lfs f0, 0xc(r30)
 /* 801A57DC 001A25DC  C0 43 00 08 */	lfs f2, 8(r3)
@@ -1565,7 +1567,7 @@ lbl_801A57CC:
 /* 801A57F8 001A25F8  C0 1E 00 1C */	lfs f0, 0x1c(r30)
 /* 801A57FC 001A25FC  EC 21 00 2A */	fadds f1, f1, f0
 /* 801A5800 001A2600  4B E6 A5 95 */	bl xrmod__Ff
-/* 801A5804 001A2604  C0 02 C6 BC */	lfs f0, $$21580_1-_SDA2_BASE_(r2)
+/* 801A5804 001A2604  C0 02 C6 BC */	lfs f0, _esc__2_1580_1-_SDA2_BASE_(r2)
 /* 801A5808 001A2608  7F C4 F3 78 */	mr r4, r30
 /* 801A580C 001A260C  38 61 00 08 */	addi r3, r1, 8
 /* 801A5810 001A2610  EC 01 00 28 */	fsubs f0, f1, f0
@@ -1597,7 +1599,7 @@ lbl_801A5868:
 /* 801A5874 001A2674  C0 3E 00 1C */	lfs f1, 0x1c(r30)
 /* 801A5878 001A2678  7F E3 FB 78 */	mr r3, r31
 /* 801A587C 001A267C  4B EE D5 CD */	bl SetRot__30ptank_pool__pos_color_size_rotFf
-/* 801A5880 001A2680  C0 22 C6 C8 */	lfs f1, $$21659_3-_SDA2_BASE_(r2)
+/* 801A5880 001A2680  C0 22 C6 C8 */	lfs f1, _esc__2_1659_3-_SDA2_BASE_(r2)
 /* 801A5884 001A2684  C0 1E 00 24 */	lfs f0, 0x24(r30)
 /* 801A5888 001A2688  80 7F 00 24 */	lwz r3, 0x24(r31)
 /* 801A588C 001A268C  EC 01 00 32 */	fmuls f0, f1, f0
@@ -1697,12 +1699,12 @@ lbl_801A59E0:
 lbl_801A59E4:
 /* 801A59E4 001A27E4  C0 39 00 00 */	lfs f1, 0(r25)
 /* 801A59E8 001A27E8  3F 00 43 30 */	lis r24, 0x4330
-/* 801A59EC 001A27EC  C0 02 C6 78 */	lfs f0, $$21415_4-_SDA2_BASE_(r2)
+/* 801A59EC 001A27EC  C0 02 C6 78 */	lfs f0, _esc__2_1415_4-_SDA2_BASE_(r2)
 /* 801A59F0 001A27F0  EF A1 10 24 */	fdivs f29, f1, f2
-/* 801A59F4 001A27F4  C3 E2 C6 7C */	lfs f31, $$21427_1-_SDA2_BASE_(r2)
-/* 801A59F8 001A27F8  C3 22 C6 DC */	lfs f25, $$21748-_SDA2_BASE_(r2)
-/* 801A59FC 001A27FC  C3 42 C6 BC */	lfs f26, $$21580_1-_SDA2_BASE_(r2)
-/* 801A5A00 001A2800  CB 62 C6 C0 */	lfd f27, $$21585_0-_SDA2_BASE_(r2)
+/* 801A59F4 001A27F4  C3 E2 C6 7C */	lfs f31, _esc__2_1427_1-_SDA2_BASE_(r2)
+/* 801A59F8 001A27F8  C3 22 C6 DC */	lfs f25, _esc__2_1748-_SDA2_BASE_(r2)
+/* 801A59FC 001A27FC  C3 42 C6 BC */	lfs f26, _esc__2_1580_1-_SDA2_BASE_(r2)
+/* 801A5A00 001A2800  CB 62 C6 C0 */	lfd f27, _esc__2_1585_0-_SDA2_BASE_(r2)
 /* 801A5A04 001A2804  EC 22 0F 3A */	fmadds f1, f2, f28, f1
 /* 801A5A08 001A2808  EF C0 10 24 */	fdivs f30, f0, f2
 /* 801A5A0C 001A280C  D0 39 00 00 */	stfs f1, 0(r25)
@@ -1719,7 +1721,7 @@ lbl_801A5A28:
 /* 801A5A34 001A2834  4B FC FA B1 */	bl xParticleBatchEmit__FiiPPUc
 /* 801A5A38 001A2838  7C 7F 1B 79 */	or. r31, r3, r3
 /* 801A5A3C 001A283C  40 82 00 10 */	bne lbl_801A5A4C
-/* 801A5A40 001A2840  C0 02 C6 58 */	lfs f0, $$21273-_SDA2_BASE_(r2)
+/* 801A5A40 001A2840  C0 02 C6 58 */	lfs f0, _esc__2_1273-_SDA2_BASE_(r2)
 /* 801A5A44 001A2844  D0 19 00 00 */	stfs f0, 0(r25)
 /* 801A5A48 001A2848  48 00 01 58 */	b lbl_801A5BA0
 lbl_801A5A4C:
@@ -1835,31 +1837,31 @@ lbl_801A5BA0:
 /* 801A5BEC 001A29EC  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 801A5BF0 001A29F0  4E 80 00 20 */	blr 
 
-.global __ct__Q21z27lightweight$$0Q21z6rocket$$420$$1Fb
-__ct__Q21z27lightweight$$0Q21z6rocket$$420$$1Fb:
-/* 801A5BF4 001A29F4  38 0D A4 68 */	addi r0, r13, __vt__Q21z27lightweight$$0Q21z6rocket$$420$$1-_SDA_BASE_
+.global __ct__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Fb
+__ct__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Fb:
+/* 801A5BF4 001A29F4  38 0D A4 68 */	addi r0, r13, __vt__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_-_SDA_BASE_
 /* 801A5BF8 001A29F8  90 03 00 08 */	stw r0, 8(r3)
 /* 801A5BFC 001A29FC  98 83 00 00 */	stb r4, 0(r3)
 /* 801A5C00 001A2A00  4E 80 00 20 */	blr 
 
-.global render__Q21z27lightweight$$0Q21z6rocket$$420$$1CFv
-render__Q21z27lightweight$$0Q21z6rocket$$420$$1CFv:
+.global render__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_CFv
+render__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_CFv:
 /* 801A5C04 001A2A04  4E 80 00 20 */	blr 
 
-.global post_render_2d__Q21z27lightweight$$0Q21z6rocket$$420$$1CFv
-post_render_2d__Q21z27lightweight$$0Q21z6rocket$$420$$1CFv:
+.global post_render_2d__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_CFv
+post_render_2d__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_CFv:
 /* 801A5C08 001A2A08  4E 80 00 20 */	blr 
 
-.global post_render_3d__Q21z27lightweight$$0Q21z6rocket$$420$$1CFv
-post_render_3d__Q21z27lightweight$$0Q21z6rocket$$420$$1CFv:
+.global post_render_3d__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_CFv
+post_render_3d__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_CFv:
 /* 801A5C0C 001A2A0C  4E 80 00 20 */	blr 
 
-.global update__Q21z27lightweight$$0Q21z6rocket$$420$$1Ff
-update__Q21z27lightweight$$0Q21z6rocket$$420$$1Ff:
+.global update__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Ff
+update__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Ff:
 /* 801A5C10 001A2A10  4E 80 00 20 */	blr 
 
-.global destroy__Q21z27lightweight$$0Q21z6rocket$$420$$1Fv
-destroy__Q21z27lightweight$$0Q21z6rocket$$420$$1Fv:
+.global destroy__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Fv
+destroy__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_Fv:
 /* 801A5C14 001A2A14  4E 80 00 20 */	blr 
 
 .global __as__Q31z17JetParticleSystem8particleFRCQ31z17JetParticleSystem8particle
@@ -1917,3 +1919,6 @@ __as__Q31z11smoke_trail8particleFRCQ31z11smoke_trail8particle:
 /* 801A5CD4 001A2AD4  D0 03 00 28 */	stfs f0, 0x28(r3)
 /* 801A5CD8 001A2AD8  90 03 00 2C */	stw r0, 0x2c(r3)
 /* 801A5CDC 001A2ADC  4E 80 00 20 */	blr 
+
+.endif
+

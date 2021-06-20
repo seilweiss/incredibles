@@ -9,6 +9,8 @@ all_junctions__18zTrainPathJunction:
 init_done:
 	.skip 0x4
 
+.if 0
+
 .section .text
 
 .global AddJunction__18zTrainPathJunctionFP18zTrainPathJunction
@@ -219,3 +221,6 @@ Reset__18zTrainPathJunctionFv:
 /* 80166354 00163154  98 0D CF E4 */	stb r0, init_done-_SDA_BASE_(r13)
 /* 80166358 00163158  90 0D CF E0 */	stw r0, all_junctions__18zTrainPathJunction-_SDA_BASE_(r13)
 /* 8016635C 0016315C  4E 80 00 20 */	blr 
+
+.endif
+

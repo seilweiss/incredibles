@@ -6,6 +6,8 @@
 __vt__13zUIController:
 	.incbin "baserom.dol", 0x310968, 0x58
 
+.if 0
+
 .section .text
 
 .global DoInit__13zUIControllerFv
@@ -109,3 +111,6 @@ GetSortKey__13zUIControllerCFv:
 /* 801C5960 001C2760  7C 08 03 A6 */	mtlr r0
 /* 801C5964 001C2764  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C5968 001C2768  4E 80 00 20 */	blr 
+
+.endif
+

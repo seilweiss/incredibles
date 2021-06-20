@@ -2,8 +2,8 @@
 
 .section .sbss2
 
-.global $$2663_0
-$$2663_0:
+.global _esc__2_663_0
+_esc__2_663_0:
 	.skip 0x4
 .global lbl_803D8664
 lbl_803D8664:
@@ -11,8 +11,8 @@ lbl_803D8664:
 .global lbl_803D8668
 lbl_803D8668:
 	.skip 0x4
-.global $$2692
-$$2692:
+.global _esc__2_692
+_esc__2_692:
 	.skip 0x4
 .global lbl_803D8670
 lbl_803D8670:
@@ -20,6 +20,8 @@ lbl_803D8670:
 .global lbl_803D8674
 lbl_803D8674:
 	.skip 0x4
+
+.if 0
 
 .section .text
 
@@ -160,7 +162,7 @@ CreateItem__8xFactoryFiPvP10RyzMemGrow:
 /* 8002F2D0 0002C0D0  7C BC 2B 78 */	mr r28, r5
 /* 8002F2D4 0002C0D4  38 7F 00 04 */	addi r3, r31, 4
 /* 8002F2D8 0002C0D8  3B C0 00 00 */	li r30, 0
-/* 8002F2DC 0002C0DC  80 02 E9 40 */	lwz r0, $$2663_0-_SDA2_BASE_(r2)
+/* 8002F2DC 0002C0DC  80 02 E9 40 */	lwz r0, _esc__2_663_0-_SDA2_BASE_(r2)
 /* 8002F2E0 0002C0E0  81 02 E9 44 */	lwz r8, lbl_803D8664-_SDA2_BASE_(r2)
 /* 8002F2E4 0002C0E4  90 01 00 08 */	stw r0, 8(r1)
 /* 8002F2E8 0002C0E8  38 07 F4 E4 */	addi r0, r7, OrdTest_infotype__FPCvPv@l
@@ -259,7 +261,7 @@ DestroyItem__8xFactoryFP12xFactoryInst:
 /* 8002F414 0002C214  BF C1 00 18 */	stmw r30, 0x18(r1)
 /* 8002F418 0002C218  7C 9F 23 79 */	or. r31, r4, r4
 /* 8002F41C 0002C21C  7C 7E 1B 78 */	mr r30, r3
-/* 8002F420 0002C220  80 A2 E9 4C */	lwz r5, $$2692-_SDA2_BASE_(r2)
+/* 8002F420 0002C220  80 A2 E9 4C */	lwz r5, _esc__2_692-_SDA2_BASE_(r2)
 /* 8002F424 0002C224  80 82 E9 50 */	lwz r4, lbl_803D8670-_SDA2_BASE_(r2)
 /* 8002F428 0002C228  80 02 E9 54 */	lwz r0, lbl_803D8674-_SDA2_BASE_(r2)
 /* 8002F42C 0002C22C  90 A1 00 08 */	stw r5, 8(r1)
@@ -344,3 +346,6 @@ lbl_8002F528:
 lbl_8002F534:
 /* 8002F534 0002C334  38 60 00 00 */	li r3, 0
 /* 8002F538 0002C338  4E 80 00 20 */	blr 
+
+.endif
+

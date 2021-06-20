@@ -23,60 +23,62 @@ __vt__24zParticleSystemWaterfall:
 
 .section .sdata2
 
-.global $$2999_3
-$$2999_3:
+.global _esc__2_999_3
+_esc__2_999_3:
 	.incbin "baserom.dol", 0x333688, 0x4
-.global $$21000_8
-$$21000_8:
+.global _esc__2_1000_8
+_esc__2_1000_8:
 	.incbin "baserom.dol", 0x33368C, 0x4
-.global $$21113_2
-$$21113_2:
+.global _esc__2_1113_2
+_esc__2_1113_2:
 	.incbin "baserom.dol", 0x333690, 0x4
-.global $$21175_3
-$$21175_3:
+.global _esc__2_1175_3
+_esc__2_1175_3:
 	.incbin "baserom.dol", 0x333694, 0x4
-.global $$21176_4
-$$21176_4:
+.global _esc__2_1176_4
+_esc__2_1176_4:
 	.incbin "baserom.dol", 0x333698, 0x8
-.global $$21178_5
-$$21178_5:
+.global _esc__2_1178_5
+_esc__2_1178_5:
 	.incbin "baserom.dol", 0x3336A0, 0x8
-.global $$21179_4
-$$21179_4:
+.global _esc__2_1179_4
+_esc__2_1179_4:
 	.incbin "baserom.dol", 0x3336A8, 0x8
-.global $$21328_2
-$$21328_2:
+.global _esc__2_1328_2
+_esc__2_1328_2:
 	.incbin "baserom.dol", 0x3336B0, 0x4
-.global $$21329_4
-$$21329_4:
+.global _esc__2_1329_4
+_esc__2_1329_4:
 	.incbin "baserom.dol", 0x3336B4, 0x4
-.global $$21330_3
-$$21330_3:
+.global _esc__2_1330_3
+_esc__2_1330_3:
 	.incbin "baserom.dol", 0x3336B8, 0x4
-.global $$21331_4
-$$21331_4:
+.global _esc__2_1331_4
+_esc__2_1331_4:
 	.incbin "baserom.dol", 0x3336BC, 0x4
-.global $$21332_9
-$$21332_9:
+.global _esc__2_1332_9
+_esc__2_1332_9:
 	.incbin "baserom.dol", 0x3336C0, 0x4
-.global $$21333_9
-$$21333_9:
+.global _esc__2_1333_9
+_esc__2_1333_9:
 	.incbin "baserom.dol", 0x3336C4, 0x4
-.global $$21370_0
-$$21370_0:
+.global _esc__2_1370_0
+_esc__2_1370_0:
 	.incbin "baserom.dol", 0x3336C8, 0x4
-.global $$21371
-$$21371:
+.global _esc__2_1371
+_esc__2_1371:
 	.incbin "baserom.dol", 0x3336CC, 0x4
-.global $$21372_1
-$$21372_1:
+.global _esc__2_1372_1
+_esc__2_1372_1:
 	.incbin "baserom.dol", 0x3336D0, 0x4
-.global $$21519_4
-$$21519_4:
+.global _esc__2_1519_4
+_esc__2_1519_4:
 	.incbin "baserom.dol", 0x3336D4, 0x4
-.global $$21520_3
-$$21520_3:
+.global _esc__2_1520_3
+_esc__2_1520_3:
 	.incbin "baserom.dol", 0x3336D8, 0x8
+
+.if 0
 
 .section .text
 
@@ -220,7 +222,7 @@ update__24zParticleSystemWaterfallFf:
 /* 801D0F1C 001CDD1C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D0F20 001CDD20  7C 08 02 A6 */	mflr r0
 /* 801D0F24 001CDD24  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801D0F28 001CDD28  48 00 1B F9 */	bl update_generators$$027zParticleGeneratorWaterfall$$1__15zParticleSystemFf
+/* 801D0F28 001CDD28  48 00 1B F9 */	bl update_generators_esc__0_27zParticleGeneratorWaterfall_esc__1___15zParticleSystemFf
 /* 801D0F2C 001CDD2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801D0F30 001CDD30  7C 08 03 A6 */	mtlr r0
 /* 801D0F34 001CDD34  38 21 00 10 */	addi r1, r1, 0x10
@@ -251,7 +253,7 @@ update_particles__24zParticleSystemWaterfallFPUciR10ptank_poolfPv:
 /* 801D0F80 001CDD80  83 85 00 24 */	lwz r28, 0x24(r5)
 /* 801D0F84 001CDD84  7F 3A 02 14 */	add r25, r26, r0
 /* 801D0F88 001CDD88  83 65 00 28 */	lwz r27, 0x28(r5)
-/* 801D0F8C 001CDD8C  C3 C2 CF B0 */	lfs f30, $$21113_2-_SDA2_BASE_(r2)
+/* 801D0F8C 001CDD8C  C3 C2 CF B0 */	lfs f30, _esc__2_1113_2-_SDA2_BASE_(r2)
 /* 801D0F90 001CDD90  48 00 01 70 */	b lbl_801D1100
 lbl_801D0F94:
 /* 801D0F94 001CDD94  C0 3A 00 28 */	lfs f1, 0x28(r26)
@@ -437,7 +439,7 @@ update__27zParticleGeneratorWaterfallFf:
 /* 801D123C 001CE03C  3C 00 43 30 */	lis r0, 0x4330
 /* 801D1240 001CE040  90 61 00 1C */	stw r3, 0x1c(r1)
 /* 801D1244 001CE044  38 7F 00 28 */	addi r3, r31, 0x28
-/* 801D1248 001CE048  C8 22 CF C0 */	lfd f1, $$21178_5-_SDA2_BASE_(r2)
+/* 801D1248 001CE048  C8 22 CF C0 */	lfd f1, _esc__2_1178_5-_SDA2_BASE_(r2)
 /* 801D124C 001CE04C  90 01 00 18 */	stw r0, 0x18(r1)
 /* 801D1250 001CE050  C8 01 00 18 */	lfd f0, 0x18(r1)
 /* 801D1254 001CE054  EC 00 08 28 */	fsubs f0, f0, f1
@@ -470,7 +472,7 @@ lbl_801D1298:
 /* 801D12B8 001CE0B8  C0 1D 00 AC */	lfs f0, 0xac(r29)
 /* 801D12BC 001CE0BC  90 61 00 24 */	stw r3, 0x24(r1)
 /* 801D12C0 001CE0C0  EC 21 F0 28 */	fsubs f1, f1, f30
-/* 801D12C4 001CE0C4  C1 02 CF B4 */	lfs f8, $$21175_3-_SDA2_BASE_(r2)
+/* 801D12C4 001CE0C4  C1 02 CF B4 */	lfs f8, _esc__2_1175_3-_SDA2_BASE_(r2)
 /* 801D12C8 001CE0C8  FE 80 00 50 */	fneg f20, f0
 /* 801D12CC 001CE0CC  93 C1 00 20 */	stw r30, 0x20(r1)
 /* 801D12D0 001CE0D0  C3 BD 00 74 */	lfs f29, 0x74(r29)
@@ -481,14 +483,14 @@ lbl_801D1298:
 /* 801D12E4 001CE0E4  C3 3D 00 A0 */	lfs f25, 0xa0(r29)
 /* 801D12E8 001CE0E8  93 C1 00 28 */	stw r30, 0x28(r1)
 /* 801D12EC 001CE0EC  C0 1D 00 A4 */	lfs f0, 0xa4(r29)
-/* 801D12F0 001CE0F0  CB E2 CF C8 */	lfd f31, $$21179_4-_SDA2_BASE_(r2)
+/* 801D12F0 001CE0F0  CB E2 CF C8 */	lfd f31, _esc__2_1179_4-_SDA2_BASE_(r2)
 /* 801D12F4 001CE0F4  EF 68 00 72 */	fmuls f27, f8, f1
 /* 801D12F8 001CE0F8  C8 41 00 18 */	lfd f2, 0x18(r1)
 /* 801D12FC 001CE0FC  EC E0 C8 28 */	fsubs f7, f0, f25
 /* 801D1300 001CE100  C8 21 00 20 */	lfd f1, 0x20(r1)
 /* 801D1304 001CE104  C8 01 00 28 */	lfd f0, 0x28(r1)
 /* 801D1308 001CE108  EC A2 F8 28 */	fsubs f5, f2, f31
-/* 801D130C 001CE10C  C0 C2 CF B8 */	lfs f6, $$21176_4-_SDA2_BASE_(r2)
+/* 801D130C 001CE10C  C0 C2 CF B8 */	lfs f6, _esc__2_1176_4-_SDA2_BASE_(r2)
 /* 801D1310 001CE110  EC 81 F8 28 */	fsubs f4, f1, f31
 /* 801D1314 001CE114  EC 60 F8 28 */	fsubs f3, f0, f31
 /* 801D1318 001CE118  C3 9D 00 8C */	lfs f28, 0x8c(r29)
@@ -739,7 +741,7 @@ reset__27zParticleGeneratorWaterfallFv:
 /* 801D16B8 001CE4B8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801D16BC 001CE4BC  7C 7F 1B 78 */	mr r31, r3
 /* 801D16C0 001CE4C0  4B FF DF 81 */	bl reset__18zParticleGeneratorFv
-/* 801D16C4 001CE4C4  C0 02 CF A8 */	lfs f0, $$2999_3-_SDA2_BASE_(r2)
+/* 801D16C4 001CE4C4  C0 02 CF A8 */	lfs f0, _esc__2_999_3-_SDA2_BASE_(r2)
 /* 801D16C8 001CE4C8  38 7F 00 28 */	addi r3, r31, 0x28
 /* 801D16CC 001CE4CC  D0 1F 00 24 */	stfs f0, 0x24(r31)
 /* 801D16D0 001CE4D0  4B FF F2 D1 */	bl restart__16zParticleLocatorFv
@@ -855,7 +857,7 @@ update__28zParticleSystemWaterfallMistFf:
 /* 801D1838 001CE638  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D183C 001CE63C  7C 08 02 A6 */	mflr r0
 /* 801D1840 001CE640  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801D1844 001CE644  48 00 13 45 */	bl update_generators$$031zParticleGeneratorWaterfallMist$$1__15zParticleSystemFf
+/* 801D1844 001CE644  48 00 13 45 */	bl update_generators_esc__0_31zParticleGeneratorWaterfallMist_esc__1___15zParticleSystemFf
 /* 801D1848 001CE648  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801D184C 001CE64C  7C 08 03 A6 */	mtlr r0
 /* 801D1850 001CE650  38 21 00 10 */	addi r1, r1, 0x10
@@ -881,7 +883,7 @@ update_particles__28zParticleSystemWaterfallMistFPUciR10ptank_poolfPv:
 /* 801D1888 001CE688  1C 04 00 34 */	mulli r0, r4, 0x34
 /* 801D188C 001CE68C  7C 7C 1B 78 */	mr r28, r3
 /* 801D1890 001CE690  FF A0 08 90 */	fmr f29, f1
-/* 801D1894 001CE694  C3 E2 CF AC */	lfs f31, $$21000_8-_SDA2_BASE_(r2)
+/* 801D1894 001CE694  C3 E2 CF AC */	lfs f31, _esc__2_1000_8-_SDA2_BASE_(r2)
 /* 801D1898 001CE698  7F 9E E3 78 */	mr r30, r28
 /* 801D189C 001CE69C  7C BF 2B 78 */	mr r31, r5
 /* 801D18A0 001CE6A0  7F BE 02 14 */	add r29, r30, r0
@@ -906,7 +908,7 @@ lbl_801D18E0:
 /* 801D18E4 001CE6E4  38 61 00 08 */	addi r3, r1, 8
 /* 801D18E8 001CE6E8  C0 3E 00 08 */	lfs f1, 8(r30)
 /* 801D18EC 001CE6EC  38 81 00 18 */	addi r4, r1, 0x18
-/* 801D18F0 001CE6F0  C0 02 CF B0 */	lfs f0, $$21113_2-_SDA2_BASE_(r2)
+/* 801D18F0 001CE6F0  C0 02 CF B0 */	lfs f0, _esc__2_1113_2-_SDA2_BASE_(r2)
 /* 801D18F4 001CE6F4  EC 22 09 3A */	fmadds f1, f2, f4, f1
 /* 801D18F8 001CE6F8  D0 21 00 18 */	stfs f1, 0x18(r1)
 /* 801D18FC 001CE6FC  C0 5E 00 1C */	lfs f2, 0x1c(r30)
@@ -955,11 +957,11 @@ lbl_801D197C:
 /* 801D19A4 001CE7A4  38 9E 00 28 */	addi r4, r30, 0x28
 /* 801D19A8 001CE7A8  4B E4 48 95 */	bl __as__10xColor_tagFRC10xColor_tag
 /* 801D19AC 001CE7AC  EC 7E 07 B2 */	fmuls f3, f30, f30
-/* 801D19B0 001CE7B0  C0 02 CF D8 */	lfs f0, $$21330_3-_SDA2_BASE_(r2)
-/* 801D19B4 001CE7B4  C0 42 CF D4 */	lfs f2, $$21329_4-_SDA2_BASE_(r2)
-/* 801D19B8 001CE7B8  C0 82 CF D0 */	lfs f4, $$21328_2-_SDA2_BASE_(r2)
+/* 801D19B0 001CE7B0  C0 02 CF D8 */	lfs f0, _esc__2_1330_3-_SDA2_BASE_(r2)
+/* 801D19B4 001CE7B4  C0 42 CF D4 */	lfs f2, _esc__2_1329_4-_SDA2_BASE_(r2)
+/* 801D19B8 001CE7B8  C0 82 CF D0 */	lfs f4, _esc__2_1328_2-_SDA2_BASE_(r2)
 /* 801D19BC 001CE7BC  EC 20 00 F2 */	fmuls f1, f0, f3
-/* 801D19C0 001CE7C0  C0 02 CF AC */	lfs f0, $$21000_8-_SDA2_BASE_(r2)
+/* 801D19C0 001CE7C0  C0 02 CF AC */	lfs f0, _esc__2_1000_8-_SDA2_BASE_(r2)
 /* 801D19C4 001CE7C4  EC 7E 00 F2 */	fmuls f3, f30, f3
 /* 801D19C8 001CE7C8  EC 22 0F BA */	fmadds f1, f2, f30, f1
 /* 801D19CC 001CE7CC  EC 64 08 FA */	fmadds f3, f4, f3, f1
@@ -968,9 +970,9 @@ lbl_801D197C:
 /* 801D19D8 001CE7D8  88 7E 00 2B */	lbz r3, 0x2b(r30)
 /* 801D19DC 001CE7DC  3C 00 43 30 */	lis r0, 0x4330
 /* 801D19E0 001CE7E0  90 01 00 28 */	stw r0, 0x28(r1)
-/* 801D19E4 001CE7E4  C8 42 CF C8 */	lfd f2, $$21179_4-_SDA2_BASE_(r2)
+/* 801D19E4 001CE7E4  C8 42 CF C8 */	lfd f2, _esc__2_1179_4-_SDA2_BASE_(r2)
 /* 801D19E8 001CE7E8  90 61 00 2C */	stw r3, 0x2c(r1)
-/* 801D19EC 001CE7EC  C0 02 CF B0 */	lfs f0, $$21113_2-_SDA2_BASE_(r2)
+/* 801D19EC 001CE7EC  C0 02 CF B0 */	lfs f0, _esc__2_1113_2-_SDA2_BASE_(r2)
 /* 801D19F0 001CE7F0  C8 21 00 28 */	lfd f1, 0x28(r1)
 /* 801D19F4 001CE7F4  80 7F 00 24 */	lwz r3, 0x24(r31)
 /* 801D19F8 001CE7F8  EC 21 10 28 */	fsubs f1, f1, f2
@@ -982,21 +984,21 @@ lbl_801D197C:
 lbl_801D1A10:
 /* 801D1A10 001CE810  C0 5E 00 30 */	lfs f2, 0x30(r30)
 /* 801D1A14 001CE814  C0 3E 00 2C */	lfs f1, 0x2c(r30)
-/* 801D1A18 001CE818  C0 02 CF DC */	lfs f0, $$21331_4-_SDA2_BASE_(r2)
+/* 801D1A18 001CE818  C0 02 CF DC */	lfs f0, _esc__2_1331_4-_SDA2_BASE_(r2)
 /* 801D1A1C 001CE81C  EC 22 0F 7A */	fmadds f1, f2, f29, f1
 /* 801D1A20 001CE820  D0 3E 00 2C */	stfs f1, 0x2c(r30)
 /* 801D1A24 001CE824  C0 3E 00 2C */	lfs f1, 0x2c(r30)
 /* 801D1A28 001CE828  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801D1A2C 001CE82C  40 81 00 14 */	ble lbl_801D1A40
-/* 801D1A30 001CE830  C0 02 CF E0 */	lfs f0, $$21332_9-_SDA2_BASE_(r2)
+/* 801D1A30 001CE830  C0 02 CF E0 */	lfs f0, _esc__2_1332_9-_SDA2_BASE_(r2)
 /* 801D1A34 001CE834  EC 01 00 28 */	fsubs f0, f1, f0
 /* 801D1A38 001CE838  D0 1E 00 2C */	stfs f0, 0x2c(r30)
 /* 801D1A3C 001CE83C  48 00 00 1C */	b lbl_801D1A58
 lbl_801D1A40:
-/* 801D1A40 001CE840  C0 02 CF E4 */	lfs f0, $$21333_9-_SDA2_BASE_(r2)
+/* 801D1A40 001CE840  C0 02 CF E4 */	lfs f0, _esc__2_1333_9-_SDA2_BASE_(r2)
 /* 801D1A44 001CE844  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801D1A48 001CE848  40 80 00 10 */	bge lbl_801D1A58
-/* 801D1A4C 001CE84C  C0 02 CF E0 */	lfs f0, $$21332_9-_SDA2_BASE_(r2)
+/* 801D1A4C 001CE84C  C0 02 CF E0 */	lfs f0, _esc__2_1332_9-_SDA2_BASE_(r2)
 /* 801D1A50 001CE850  EC 01 00 2A */	fadds f0, f1, f0
 /* 801D1A54 001CE854  D0 1E 00 2C */	stfs f0, 0x2c(r30)
 lbl_801D1A58:
@@ -1090,19 +1092,19 @@ update__31zParticleGeneratorWaterfallMistFf:
 /* 801D1B9C 001CE99C  6F A3 80 00 */	xoris r3, r29, 0x8000
 /* 801D1BA0 001CE9A0  90 61 00 1C */	stw r3, 0x1c(r1)
 /* 801D1BA4 001CE9A4  38 7F 00 28 */	addi r3, r31, 0x28
-/* 801D1BA8 001CE9A8  C8 22 CF C0 */	lfd f1, $$21178_5-_SDA2_BASE_(r2)
+/* 801D1BA8 001CE9A8  C8 22 CF C0 */	lfd f1, _esc__2_1178_5-_SDA2_BASE_(r2)
 /* 801D1BAC 001CE9AC  38 81 00 0C */	addi r4, r1, 0xc
 /* 801D1BB0 001CE9B0  90 01 00 18 */	stw r0, 0x18(r1)
-/* 801D1BB4 001CE9B4  C8 82 CF C8 */	lfd f4, $$21179_4-_SDA2_BASE_(r2)
+/* 801D1BB4 001CE9B4  C8 82 CF C8 */	lfd f4, _esc__2_1179_4-_SDA2_BASE_(r2)
 /* 801D1BB8 001CE9B8  C8 01 00 18 */	lfd f0, 0x18(r1)
 /* 801D1BBC 001CE9BC  90 01 00 20 */	stw r0, 0x20(r1)
 /* 801D1BC0 001CE9C0  EC 20 08 28 */	fsubs f1, f0, f1
-/* 801D1BC4 001CE9C4  C0 02 CF B4 */	lfs f0, $$21175_3-_SDA2_BASE_(r2)
+/* 801D1BC4 001CE9C4  C0 02 CF B4 */	lfs f0, _esc__2_1175_3-_SDA2_BASE_(r2)
 /* 801D1BC8 001CE9C8  90 01 00 28 */	stw r0, 0x28(r1)
-/* 801D1BCC 001CE9CC  C1 22 CF B8 */	lfs f9, $$21176_4-_SDA2_BASE_(r2)
+/* 801D1BCC 001CE9CC  C1 22 CF B8 */	lfs f9, _esc__2_1176_4-_SDA2_BASE_(r2)
 /* 801D1BD0 001CE9D0  EC 22 08 28 */	fsubs f1, f2, f1
 /* 801D1BD4 001CE9D4  90 01 00 30 */	stw r0, 0x30(r1)
-/* 801D1BD8 001CE9D8  C0 A2 CF E8 */	lfs f5, $$21370_0-_SDA2_BASE_(r2)
+/* 801D1BD8 001CE9D8  C0 A2 CF E8 */	lfs f5, _esc__2_1370_0-_SDA2_BASE_(r2)
 /* 801D1BDC 001CE9DC  D0 3F 00 24 */	stfs f1, 0x24(r31)
 /* 801D1BE0 001CE9E0  80 FF 00 10 */	lwz r7, 0x10(r31)
 /* 801D1BE4 001CE9E4  88 07 00 9A */	lbz r0, 0x9a(r7)
@@ -1151,18 +1153,18 @@ update__31zParticleGeneratorWaterfallMistFf:
 /* 801D1C90 001CEA90  EE C0 00 F2 */	fmuls f22, f0, f3
 /* 801D1C94 001CEA94  D0 21 00 58 */	stfs f1, 0x58(r1)
 /* 801D1C98 001CEA98  4B FF EE ED */	bl get_center__16zParticleLocatorCFR5xVec3
-/* 801D1C9C 001CEA9C  C0 02 CF A8 */	lfs f0, $$2999_3-_SDA2_BASE_(r2)
+/* 801D1C9C 001CEA9C  C0 02 CF A8 */	lfs f0, _esc__2_999_3-_SDA2_BASE_(r2)
 /* 801D1CA0 001CEAA0  3F C0 43 30 */	lis r30, 0x4330
 /* 801D1CA4 001CEAA4  C2 81 00 0C */	lfs f20, 0xc(r1)
 /* 801D1CA8 001CEAA8  D8 01 00 78 */	stfd f0, 0x78(r1)
-/* 801D1CAC 001CEAAC  C0 02 CF EC */	lfs f0, $$21371-_SDA2_BASE_(r2)
+/* 801D1CAC 001CEAAC  C0 02 CF EC */	lfs f0, _esc__2_1371-_SDA2_BASE_(r2)
 /* 801D1CB0 001CEAB0  C2 61 00 14 */	lfs f19, 0x14(r1)
 /* 801D1CB4 001CEAB4  D8 01 00 80 */	stfd f0, 0x80(r1)
-/* 801D1CB8 001CEAB8  C0 02 CF DC */	lfs f0, $$21331_4-_SDA2_BASE_(r2)
-/* 801D1CBC 001CEABC  CB A2 CF C8 */	lfd f29, $$21179_4-_SDA2_BASE_(r2)
+/* 801D1CB8 001CEAB8  C0 02 CF DC */	lfs f0, _esc__2_1331_4-_SDA2_BASE_(r2)
+/* 801D1CBC 001CEABC  CB A2 CF C8 */	lfd f29, _esc__2_1179_4-_SDA2_BASE_(r2)
 /* 801D1CC0 001CEAC0  D8 01 00 88 */	stfd f0, 0x88(r1)
-/* 801D1CC4 001CEAC4  C0 02 CF F0 */	lfs f0, $$21372_1-_SDA2_BASE_(r2)
-/* 801D1CC8 001CEAC8  C3 C2 CF AC */	lfs f30, $$21000_8-_SDA2_BASE_(r2)
+/* 801D1CC4 001CEAC4  C0 02 CF F0 */	lfs f0, _esc__2_1372_1-_SDA2_BASE_(r2)
+/* 801D1CC8 001CEAC8  C3 C2 CF AC */	lfs f30, _esc__2_1000_8-_SDA2_BASE_(r2)
 /* 801D1CCC 001CEACC  D8 01 00 90 */	stfd f0, 0x90(r1)
 /* 801D1CD0 001CEAD0  48 00 02 10 */	b lbl_801D1EE0
 lbl_801D1CD4:
@@ -1278,7 +1280,7 @@ lbl_801D1E34:
 /* 801D1E80 001CEC80  ED D5 00 B2 */	fmuls f14, f21, f2
 /* 801D1E84 001CEC84  4C 40 13 82 */	cror 2, 0, 2
 /* 801D1E88 001CEC88  40 82 00 0C */	bne lbl_801D1E94
-/* 801D1E8C 001CEC8C  C3 E2 CF A8 */	lfs f31, $$2999_3-_SDA2_BASE_(r2)
+/* 801D1E8C 001CEC8C  C3 E2 CF A8 */	lfs f31, _esc__2_999_3-_SDA2_BASE_(r2)
 /* 801D1E90 001CEC90  48 00 00 0C */	b lbl_801D1E9C
 lbl_801D1E94:
 /* 801D1E94 001CEC94  4B E3 D6 ED */	bl xinvsqrt__Ff
@@ -1417,7 +1419,7 @@ reset__31zParticleGeneratorWaterfallMistFv:
 /* 801D2078 001CEE78  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801D207C 001CEE7C  7C 7F 1B 78 */	mr r31, r3
 /* 801D2080 001CEE80  4B FF D5 C1 */	bl reset__18zParticleGeneratorFv
-/* 801D2084 001CEE84  C0 02 CF A8 */	lfs f0, $$2999_3-_SDA2_BASE_(r2)
+/* 801D2084 001CEE84  C0 02 CF A8 */	lfs f0, _esc__2_999_3-_SDA2_BASE_(r2)
 /* 801D2088 001CEE88  38 7F 00 28 */	addi r3, r31, 0x28
 /* 801D208C 001CEE8C  D0 1F 00 24 */	stfs f0, 0x24(r31)
 /* 801D2090 001CEE90  4B FF E9 11 */	bl restart__16zParticleLocatorFv
@@ -1533,7 +1535,7 @@ update__30zParticleSystemWaterfallSplashFf:
 /* 801D21F8 001CEFF8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D21FC 001CEFFC  7C 08 02 A6 */	mflr r0
 /* 801D2200 001CF000  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801D2204 001CF004  48 00 09 ED */	bl update_generators$$033zParticleGeneratorWaterfallSplash$$1__15zParticleSystemFf
+/* 801D2204 001CF004  48 00 09 ED */	bl update_generators_esc__0_33zParticleGeneratorWaterfallSplash_esc__1___15zParticleSystemFf
 /* 801D2208 001CF008  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801D220C 001CF00C  7C 08 03 A6 */	mtlr r0
 /* 801D2210 001CF010  38 21 00 10 */	addi r1, r1, 0x10
@@ -1559,7 +1561,7 @@ update_particles__30zParticleSystemWaterfallSplashFPUciR10ptank_poolfPv:
 /* 801D2248 001CF048  1C 04 00 38 */	mulli r0, r4, 0x38
 /* 801D224C 001CF04C  7C 7C 1B 78 */	mr r28, r3
 /* 801D2250 001CF050  FF A0 08 90 */	fmr f29, f1
-/* 801D2254 001CF054  C3 E2 CF AC */	lfs f31, $$21000_8-_SDA2_BASE_(r2)
+/* 801D2254 001CF054  C3 E2 CF AC */	lfs f31, _esc__2_1000_8-_SDA2_BASE_(r2)
 /* 801D2258 001CF058  7F 9E E3 78 */	mr r30, r28
 /* 801D225C 001CF05C  7C BF 2B 78 */	mr r31, r5
 /* 801D2260 001CF060  7F BE 02 14 */	add r29, r30, r0
@@ -1587,7 +1589,7 @@ lbl_801D22A0:
 /* 801D22B0 001CF0B0  C0 5E 00 24 */	lfs f2, 0x24(r30)
 /* 801D22B4 001CF0B4  EC 61 01 7A */	fmadds f3, f1, f5, f0
 /* 801D22B8 001CF0B8  C0 1E 00 14 */	lfs f0, 0x14(r30)
-/* 801D22BC 001CF0BC  C0 22 CF B0 */	lfs f1, $$21113_2-_SDA2_BASE_(r2)
+/* 801D22BC 001CF0BC  C0 22 CF B0 */	lfs f1, _esc__2_1113_2-_SDA2_BASE_(r2)
 /* 801D22C0 001CF0C0  EC C2 07 BA */	fmadds f6, f2, f30, f0
 /* 801D22C4 001CF0C4  C0 1E 00 2C */	lfs f0, 0x2c(r30)
 /* 801D22C8 001CF0C8  EC 45 19 3A */	fmadds f2, f5, f4, f3
@@ -1645,13 +1647,13 @@ lbl_801D2364:
 /* 801D2390 001CF190  4B E4 3E AD */	bl __as__10xColor_tagFRC10xColor_tag
 /* 801D2394 001CF194  88 9E 00 33 */	lbz r4, 0x33(r30)
 /* 801D2398 001CF198  3C 00 43 30 */	lis r0, 0x4330
-/* 801D239C 001CF19C  C0 02 CF AC */	lfs f0, $$21000_8-_SDA2_BASE_(r2)
+/* 801D239C 001CF19C  C0 02 CF AC */	lfs f0, _esc__2_1000_8-_SDA2_BASE_(r2)
 /* 801D23A0 001CF1A0  7F E3 FB 78 */	mr r3, r31
 /* 801D23A4 001CF1A4  90 81 00 2C */	stw r4, 0x2c(r1)
-/* 801D23A8 001CF1A8  C8 62 CF C8 */	lfd f3, $$21179_4-_SDA2_BASE_(r2)
+/* 801D23A8 001CF1A8  C8 62 CF C8 */	lfd f3, _esc__2_1179_4-_SDA2_BASE_(r2)
 /* 801D23AC 001CF1AC  EC 20 F0 28 */	fsubs f1, f0, f30
 /* 801D23B0 001CF1B0  90 01 00 28 */	stw r0, 0x28(r1)
-/* 801D23B4 001CF1B4  C0 02 CF B0 */	lfs f0, $$21113_2-_SDA2_BASE_(r2)
+/* 801D23B4 001CF1B4  C0 02 CF B0 */	lfs f0, _esc__2_1113_2-_SDA2_BASE_(r2)
 /* 801D23B8 001CF1B8  C8 41 00 28 */	lfd f2, 0x28(r1)
 /* 801D23BC 001CF1BC  80 9F 00 24 */	lwz r4, 0x24(r31)
 /* 801D23C0 001CF1C0  EC 42 18 28 */	fsubs f2, f2, f3
@@ -1781,7 +1783,7 @@ update__33zParticleGeneratorWaterfallSplashFf:
 /* 801D258C 001CF38C  3C 00 43 30 */	lis r0, 0x4330
 /* 801D2590 001CF390  90 61 00 1C */	stw r3, 0x1c(r1)
 /* 801D2594 001CF394  38 7F 00 28 */	addi r3, r31, 0x28
-/* 801D2598 001CF398  C8 22 CF C0 */	lfd f1, $$21178_5-_SDA2_BASE_(r2)
+/* 801D2598 001CF398  C8 22 CF C0 */	lfd f1, _esc__2_1178_5-_SDA2_BASE_(r2)
 /* 801D259C 001CF39C  90 01 00 18 */	stw r0, 0x18(r1)
 /* 801D25A0 001CF3A0  C8 01 00 18 */	lfd f0, 0x18(r1)
 /* 801D25A4 001CF3A4  EC 00 08 28 */	fsubs f0, f0, f1
@@ -1799,7 +1801,7 @@ update__33zParticleGeneratorWaterfallSplashFf:
 /* 801D25D4 001CF3D4  EC 22 08 28 */	fsubs f1, f2, f1
 /* 801D25D8 001CF3D8  88 FE 00 94 */	lbz r7, 0x94(r30)
 /* 801D25DC 001CF3DC  EC 80 D8 28 */	fsubs f4, f0, f27
-/* 801D25E0 001CF3E0  C0 02 CF B4 */	lfs f0, $$21175_3-_SDA2_BASE_(r2)
+/* 801D25E0 001CF3E0  C0 02 CF B4 */	lfs f0, _esc__2_1175_3-_SDA2_BASE_(r2)
 /* 801D25E4 001CF3E4  D0 21 00 68 */	stfs f1, 0x68(r1)
 /* 801D25E8 001CF3E8  C0 7E 00 78 */	lfs f3, 0x78(r30)
 /* 801D25EC 001CF3EC  EC 20 01 32 */	fmuls f1, f0, f4
@@ -1808,9 +1810,9 @@ update__33zParticleGeneratorWaterfallSplashFf:
 /* 801D25F8 001CF3F8  C3 5E 00 8C */	lfs f26, 0x8c(r30)
 /* 801D25FC 001CF3FC  D0 21 00 7C */	stfs f1, 0x7c(r1)
 /* 801D2600 001CF400  EC 20 00 F2 */	fmuls f1, f0, f3
-/* 801D2604 001CF404  C8 82 CF C8 */	lfd f4, $$21179_4-_SDA2_BASE_(r2)
+/* 801D2604 001CF404  C8 82 CF C8 */	lfd f4, _esc__2_1179_4-_SDA2_BASE_(r2)
 /* 801D2608 001CF408  90 E1 00 24 */	stw r7, 0x24(r1)
-/* 801D260C 001CF40C  C0 C2 CF B8 */	lfs f6, $$21176_4-_SDA2_BASE_(r2)
+/* 801D260C 001CF40C  C0 C2 CF B8 */	lfs f6, _esc__2_1176_4-_SDA2_BASE_(r2)
 /* 801D2610 001CF410  D0 21 00 70 */	stfs f1, 0x70(r1)
 /* 801D2614 001CF414  C0 3E 00 90 */	lfs f1, 0x90(r30)
 /* 801D2618 001CF418  90 C1 00 20 */	stw r6, 0x20(r1)
@@ -1834,7 +1836,7 @@ update__33zParticleGeneratorWaterfallSplashFf:
 /* 801D2660 001CF460  EC 62 B8 28 */	fsubs f3, f2, f23
 /* 801D2664 001CF464  EC 81 20 28 */	fsubs f4, f1, f4
 /* 801D2668 001CF468  EC 26 01 72 */	fmuls f1, f6, f5
-/* 801D266C 001CF46C  C0 A2 CF F4 */	lfs f5, $$21519_4-_SDA2_BASE_(r2)
+/* 801D266C 001CF46C  C0 A2 CF F4 */	lfs f5, _esc__2_1519_4-_SDA2_BASE_(r2)
 /* 801D2670 001CF470  EE C0 00 F2 */	fmuls f22, f0, f3
 /* 801D2674 001CF474  EF 06 01 32 */	fmuls f24, f6, f4
 /* 801D2678 001CF478  D0 21 00 60 */	stfs f1, 0x60(r1)
@@ -1849,18 +1851,18 @@ update__33zParticleGeneratorWaterfallSplashFf:
 /* 801D269C 001CF49C  D0 01 00 74 */	stfs f0, 0x74(r1)
 /* 801D26A0 001CF4A0  D0 21 00 78 */	stfs f1, 0x78(r1)
 /* 801D26A4 001CF4A4  4B FF E4 E1 */	bl get_center__16zParticleLocatorCFR5xVec3
-/* 801D26A8 001CF4A8  C0 02 CF A8 */	lfs f0, $$2999_3-_SDA2_BASE_(r2)
+/* 801D26A8 001CF4A8  C0 02 CF A8 */	lfs f0, _esc__2_999_3-_SDA2_BASE_(r2)
 /* 801D26AC 001CF4AC  3F C0 43 30 */	lis r30, 0x4330
 /* 801D26B0 001CF4B0  C2 81 00 0C */	lfs f20, 0xc(r1)
 /* 801D26B4 001CF4B4  D8 01 00 80 */	stfd f0, 0x80(r1)
-/* 801D26B8 001CF4B8  C0 02 CF F8 */	lfs f0, $$21520_3-_SDA2_BASE_(r2)
+/* 801D26B8 001CF4B8  C0 02 CF F8 */	lfs f0, _esc__2_1520_3-_SDA2_BASE_(r2)
 /* 801D26BC 001CF4BC  C2 61 00 14 */	lfs f19, 0x14(r1)
 /* 801D26C0 001CF4C0  D8 01 00 88 */	stfd f0, 0x88(r1)
-/* 801D26C4 001CF4C4  C0 02 CF DC */	lfs f0, $$21331_4-_SDA2_BASE_(r2)
-/* 801D26C8 001CF4C8  CB A2 CF C8 */	lfd f29, $$21179_4-_SDA2_BASE_(r2)
+/* 801D26C4 001CF4C4  C0 02 CF DC */	lfs f0, _esc__2_1331_4-_SDA2_BASE_(r2)
+/* 801D26C8 001CF4C8  CB A2 CF C8 */	lfd f29, _esc__2_1179_4-_SDA2_BASE_(r2)
 /* 801D26CC 001CF4CC  D8 01 00 90 */	stfd f0, 0x90(r1)
-/* 801D26D0 001CF4D0  C0 02 CF F0 */	lfs f0, $$21372_1-_SDA2_BASE_(r2)
-/* 801D26D4 001CF4D4  C3 C2 CF AC */	lfs f30, $$21000_8-_SDA2_BASE_(r2)
+/* 801D26D0 001CF4D0  C0 02 CF F0 */	lfs f0, _esc__2_1372_1-_SDA2_BASE_(r2)
+/* 801D26D4 001CF4D4  C3 C2 CF AC */	lfs f30, _esc__2_1000_8-_SDA2_BASE_(r2)
 /* 801D26D8 001CF4D8  D8 01 00 98 */	stfd f0, 0x98(r1)
 /* 801D26DC 001CF4DC  48 00 01 E8 */	b lbl_801D28C4
 lbl_801D26E0:
@@ -1965,7 +1967,7 @@ lbl_801D2720:
 /* 801D2864 001CF664  ED D5 E0 BA */	fmadds f14, f21, f2, f28
 /* 801D2868 001CF668  4C 40 13 82 */	cror 2, 0, 2
 /* 801D286C 001CF66C  40 82 00 0C */	bne lbl_801D2878
-/* 801D2870 001CF670  C3 E2 CF A8 */	lfs f31, $$2999_3-_SDA2_BASE_(r2)
+/* 801D2870 001CF670  C3 E2 CF A8 */	lfs f31, _esc__2_999_3-_SDA2_BASE_(r2)
 /* 801D2874 001CF674  48 00 00 0C */	b lbl_801D2880
 lbl_801D2878:
 /* 801D2878 001CF678  4B E3 CD 09 */	bl xinvsqrt__Ff
@@ -2104,7 +2106,7 @@ reset__33zParticleGeneratorWaterfallSplashFv:
 /* 801D2A5C 001CF85C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801D2A60 001CF860  7C 7F 1B 78 */	mr r31, r3
 /* 801D2A64 001CF864  4B FF CB DD */	bl reset__18zParticleGeneratorFv
-/* 801D2A68 001CF868  C0 02 CF A8 */	lfs f0, $$2999_3-_SDA2_BASE_(r2)
+/* 801D2A68 001CF868  C0 02 CF A8 */	lfs f0, _esc__2_999_3-_SDA2_BASE_(r2)
 /* 801D2A6C 001CF86C  38 7F 00 28 */	addi r3, r31, 0x28
 /* 801D2A70 001CF870  D0 1F 00 24 */	stfs f0, 0x24(r31)
 /* 801D2A74 001CF874  4B FF DF 2D */	bl restart__16zParticleLocatorFv
@@ -2158,8 +2160,8 @@ deactivate__33zParticleGeneratorWaterfallSplashFv:
 /* 801D2B18 001CF918  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D2B1C 001CF91C  4E 80 00 20 */	blr 
 
-.global update_generators$$027zParticleGeneratorWaterfall$$1__15zParticleSystemFf
-update_generators$$027zParticleGeneratorWaterfall$$1__15zParticleSystemFf:
+.global update_generators_esc__0_27zParticleGeneratorWaterfall_esc__1___15zParticleSystemFf
+update_generators_esc__0_27zParticleGeneratorWaterfall_esc__1___15zParticleSystemFf:
 /* 801D2B20 001CF920  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801D2B24 001CF924  7C 08 02 A6 */	mflr r0
 /* 801D2B28 001CF928  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2190,8 +2192,8 @@ lbl_801D2B68:
 /* 801D2B80 001CF980  38 21 00 20 */	addi r1, r1, 0x20
 /* 801D2B84 001CF984  4E 80 00 20 */	blr 
 
-.global update_generators$$031zParticleGeneratorWaterfallMist$$1__15zParticleSystemFf
-update_generators$$031zParticleGeneratorWaterfallMist$$1__15zParticleSystemFf:
+.global update_generators_esc__0_31zParticleGeneratorWaterfallMist_esc__1___15zParticleSystemFf
+update_generators_esc__0_31zParticleGeneratorWaterfallMist_esc__1___15zParticleSystemFf:
 /* 801D2B88 001CF988  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801D2B8C 001CF98C  7C 08 02 A6 */	mflr r0
 /* 801D2B90 001CF990  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2222,8 +2224,8 @@ lbl_801D2BD0:
 /* 801D2BE8 001CF9E8  38 21 00 20 */	addi r1, r1, 0x20
 /* 801D2BEC 001CF9EC  4E 80 00 20 */	blr 
 
-.global update_generators$$033zParticleGeneratorWaterfallSplash$$1__15zParticleSystemFf
-update_generators$$033zParticleGeneratorWaterfallSplash$$1__15zParticleSystemFf:
+.global update_generators_esc__0_33zParticleGeneratorWaterfallSplash_esc__1___15zParticleSystemFf
+update_generators_esc__0_33zParticleGeneratorWaterfallSplash_esc__1___15zParticleSystemFf:
 /* 801D2BF0 001CF9F0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801D2BF4 001CF9F4  7C 08 02 A6 */	mflr r0
 /* 801D2BF8 001CF9F8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2354,3 +2356,6 @@ active__16zParticleLocatorCFv:
 /* 801D2DB0 001CFBB0  30 03 FF FF */	addic r0, r3, -1
 /* 801D2DB4 001CFBB4  7C 60 19 10 */	subfe r3, r0, r3
 /* 801D2DB8 001CFBB8  4E 80 00 20 */	blr 
+
+.endif
+

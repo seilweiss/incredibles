@@ -2,8 +2,8 @@
 
 .section .rodata
 
-.global $$2stringBase0_126
-$$2stringBase0_126:
+.global _esc__2_stringBase0_126
+_esc__2_stringBase0_126:
 	.incbin "baserom.dol", 0x2E4D80, 0x30
 
 .section .sbss
@@ -38,47 +38,47 @@ sPickupOrientation:
 
 .section .sdata2
 
-.global $$21207_1
-$$21207_1:
+.global _esc__2_1207_1
+_esc__2_1207_1:
 	.incbin "baserom.dol", 0x332FF8, 0x4
-.global $$21208_0
-$$21208_0:
+.global _esc__2_1208_0
+_esc__2_1208_0:
 	.incbin "baserom.dol", 0x332FFC, 0x4
-.global $$21237_3
-$$21237_3:
+.global _esc__2_1237_3
+_esc__2_1237_3:
 	.incbin "baserom.dol", 0x333000, 0x4
-.global $$21288_2
-$$21288_2:
+.global _esc__2_1288_2
+_esc__2_1288_2:
 	.incbin "baserom.dol", 0x333004, 0x4
-.global $$21343_0
-$$21343_0:
+.global _esc__2_1343_0
+_esc__2_1343_0:
 	.incbin "baserom.dol", 0x333008, 0x8
-.global $$21359_2
-$$21359_2:
+.global _esc__2_1359_2
+_esc__2_1359_2:
 	.incbin "baserom.dol", 0x333010, 0x4
-.global $$21395_1
-$$21395_1:
+.global _esc__2_1395_1
+_esc__2_1395_1:
 	.incbin "baserom.dol", 0x333014, 0x4
-.global $$21396_1
-$$21396_1:
+.global _esc__2_1396_1
+_esc__2_1396_1:
 	.incbin "baserom.dol", 0x333018, 0x4
-.global $$21397_0
-$$21397_0:
+.global _esc__2_1397_0
+_esc__2_1397_0:
 	.incbin "baserom.dol", 0x33301C, 0x4
-.global $$21398_2
-$$21398_2:
+.global _esc__2_1398_2
+_esc__2_1398_2:
 	.incbin "baserom.dol", 0x333020, 0x4
-.global $$21405_1
-$$21405_1:
+.global _esc__2_1405_1
+_esc__2_1405_1:
 	.incbin "baserom.dol", 0x333024, 0x4
-.global $$21507_1
-$$21507_1:
+.global _esc__2_1507_1
+_esc__2_1507_1:
 	.incbin "baserom.dol", 0x333028, 0x4
-.global $$21508_2
-$$21508_2:
+.global _esc__2_1508_2
+_esc__2_1508_2:
 	.incbin "baserom.dol", 0x33302C, 0x4
-.global $$21571
-$$21571:
+.global _esc__2_1571
+_esc__2_1571:
 	.incbin "baserom.dol", 0x333030, 0x4
 .global lbl_803D6674
 lbl_803D6674:
@@ -86,12 +86,14 @@ lbl_803D6674:
 .global lbl_803D6678
 lbl_803D6678:
 	.incbin "baserom.dol", 0x333038, 0x4
-.global $$21576_1
-$$21576_1:
+.global _esc__2_1576_1
+_esc__2_1576_1:
 	.incbin "baserom.dol", 0x33303C, 0x4
-.global $$21603_0
-$$21603_0:
+.global _esc__2_1603_0
+_esc__2_1603_0:
 	.incbin "baserom.dol", 0x333040, 0x8
+
+.if 0
 
 .section .text
 
@@ -99,17 +101,17 @@ $$21603_0:
 SceneSetup__7zPickupFv:
 /* 801B1884 001AE684  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801B1888 001AE688  7C 08 02 A6 */	mflr r0
-/* 801B188C 001AE68C  3C 60 80 2E */	lis r3, $$2stringBase0_126@ha
+/* 801B188C 001AE68C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_126@ha
 /* 801B1890 001AE690  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801B1894 001AE694  38 63 7D 80 */	addi r3, r3, $$2stringBase0_126@l
+/* 801B1894 001AE694  38 63 7D 80 */	addi r3, r3, _esc__2_stringBase0_126@l
 /* 801B1898 001AE698  4B EB B3 89 */	bl xStrHash__FPCc
 /* 801B189C 001AE69C  38 81 00 08 */	addi r4, r1, 8
 /* 801B18A0 001AE6A0  4B EB AA 01 */	bl xSTFindAsset__FUiPUi
 /* 801B18A4 001AE6A4  28 03 00 00 */	cmplwi r3, 0
 /* 801B18A8 001AE6A8  90 6D D8 08 */	stw r3, table__7zPickup-_SDA_BASE_(r13)
 /* 801B18AC 001AE6AC  41 82 00 18 */	beq lbl_801B18C4
-/* 801B18B0 001AE6B0  C0 22 C9 18 */	lfs f1, $$21207_1-_SDA2_BASE_(r2)
-/* 801B18B4 001AE6B4  C0 02 C9 1C */	lfs f0, $$21208_0-_SDA2_BASE_(r2)
+/* 801B18B0 001AE6B0  C0 22 C9 18 */	lfs f1, _esc__2_1207_1-_SDA2_BASE_(r2)
+/* 801B18B4 001AE6B4  C0 02 C9 1C */	lfs f0, _esc__2_1208_0-_SDA2_BASE_(r2)
 /* 801B18B8 001AE6B8  D0 2D D8 00 */	stfs f1, PICKUP_FADE_DIST_SQR-_SDA_BASE_(r13)
 /* 801B18BC 001AE6BC  D0 0D D8 04 */	stfs f0, PICKUP_CULL_DIST_SQR-_SDA_BASE_(r13)
 /* 801B18C0 001AE6C0  48 00 12 29 */	bl SetupExtras__7zPickupFv
@@ -267,7 +269,7 @@ Reset__7zPickupFv:
 /* 801B1AD8 001AE8D8  38 84 00 14 */	addi r4, r4, 0x14
 /* 801B1ADC 001AE8DC  4B E5 95 CD */	bl __as__5xVec3FRC5xVec3
 /* 801B1AE0 001AE8E0  80 7F 00 20 */	lwz r3, 0x20(r31)
-/* 801B1AE4 001AE8E4  C0 22 C9 20 */	lfs f1, $$21237_3-_SDA2_BASE_(r2)
+/* 801B1AE4 001AE8E4  C0 22 C9 20 */	lfs f1, _esc__2_1237_3-_SDA2_BASE_(r2)
 /* 801B1AE8 001AE8E8  38 63 00 58 */	addi r3, r3, 0x58
 /* 801B1AEC 001AE8EC  4B E5 95 AD */	bl __as__5xVec3Ff
 /* 801B1AF0 001AE8F0  80 7F 00 10 */	lwz r3, 0x10(r31)
@@ -360,7 +362,7 @@ TryBeGrabbedAll__7zPickupFv:
 /* 801B1C08 001AEA08  7C 7E 1B 78 */	mr r30, r3
 /* 801B1C0C 001AEA0C  48 00 00 34 */	b lbl_801B1C40
 lbl_801B1C10:
-/* 801B1C10 001AEA10  C0 22 C9 24 */	lfs f1, $$21288_2-_SDA2_BASE_(r2)
+/* 801B1C10 001AEA10  C0 22 C9 24 */	lfs f1, _esc__2_1288_2-_SDA2_BASE_(r2)
 /* 801B1C14 001AEA14  7F E3 FB 78 */	mr r3, r31
 /* 801B1C18 001AEA18  48 00 00 B1 */	bl IsNearPlayer__7zPickupCFf
 /* 801B1C1C 001AEA1C  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -556,9 +558,9 @@ lbl_801B1EB0:
 /* 801B1EB0 001AECB0  6F C3 80 00 */	xoris r3, r30, 0x8000
 /* 801B1EB4 001AECB4  3C 00 43 30 */	lis r0, 0x4330
 /* 801B1EB8 001AECB8  90 61 00 0C */	stw r3, 0xc(r1)
-/* 801B1EBC 001AECBC  3C 60 80 2E */	lis r3, $$2stringBase0_126@ha
-/* 801B1EC0 001AECC0  38 63 7D 80 */	addi r3, r3, $$2stringBase0_126@l
-/* 801B1EC4 001AECC4  C8 22 C9 28 */	lfd f1, $$21343_0-_SDA2_BASE_(r2)
+/* 801B1EBC 001AECBC  3C 60 80 2E */	lis r3, _esc__2_stringBase0_126@ha
+/* 801B1EC0 001AECC0  38 63 7D 80 */	addi r3, r3, _esc__2_stringBase0_126@l
+/* 801B1EC4 001AECC4  C8 22 C9 28 */	lfd f1, _esc__2_1343_0-_SDA2_BASE_(r2)
 /* 801B1EC8 001AECC8  90 01 00 08 */	stw r0, 8(r1)
 /* 801B1ECC 001AECCC  38 63 00 0C */	addi r3, r3, 0xc
 /* 801B1ED0 001AECD0  C8 01 00 08 */	lfd f0, 8(r1)
@@ -609,7 +611,7 @@ BeGrabbed__7zPickupFv:
 /* 801B1F70 001AED70  38 7F 00 2C */	addi r3, r31, 0x2c
 /* 801B1F74 001AED74  4B E5 91 35 */	bl __as__5xVec3FRC5xVec3
 /* 801B1F78 001AED78  38 00 00 02 */	li r0, 2
-/* 801B1F7C 001AED7C  C0 02 C9 20 */	lfs f0, $$21237_3-_SDA2_BASE_(r2)
+/* 801B1F7C 001AED7C  C0 02 C9 20 */	lfs f0, _esc__2_1237_3-_SDA2_BASE_(r2)
 /* 801B1F80 001AED80  90 1F 00 1C */	stw r0, 0x1c(r31)
 /* 801B1F84 001AED84  D0 1F 00 38 */	stfs f0, 0x38(r31)
 /* 801B1F88 001AED88  80 7F 00 10 */	lwz r3, 0x10(r31)
@@ -626,7 +628,7 @@ BeGrabbed__7zPickupFv:
 lbl_801B1FB4:
 /* 801B1FB4 001AEDB4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
 /* 801B1FB8 001AEDB8  38 80 00 1F */	li r4, 0x1f
-/* 801B1FBC 001AEDBC  C0 22 C9 30 */	lfs f1, $$21359_2-_SDA2_BASE_(r2)
+/* 801B1FBC 001AEDBC  C0 22 C9 30 */	lfs f1, _esc__2_1359_2-_SDA2_BASE_(r2)
 /* 801B1FC0 001AEDC0  38 A0 00 00 */	li r5, 0
 /* 801B1FC4 001AEDC4  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801B1FC8 001AEDC8  80 63 00 EC */	lwz r3, 0xec(r3)
@@ -686,7 +688,7 @@ lbl_801B204C:
 /* 801B208C 001AEE8C  41 82 00 54 */	beq lbl_801B20E0
 lbl_801B2090:
 /* 801B2090 001AEE90  C0 3F 00 38 */	lfs f1, 0x38(r31)
-/* 801B2094 001AEE94  C0 02 C9 34 */	lfs f0, $$21395_1-_SDA2_BASE_(r2)
+/* 801B2094 001AEE94  C0 02 C9 34 */	lfs f0, _esc__2_1395_1-_SDA2_BASE_(r2)
 /* 801B2098 001AEE98  EC 21 F0 2A */	fadds f1, f1, f30
 /* 801B209C 001AEE9C  D0 3F 00 38 */	stfs f1, 0x38(r31)
 /* 801B20A0 001AEEA0  C0 3F 00 38 */	lfs f1, 0x38(r31)
@@ -702,7 +704,7 @@ lbl_801B2090:
 /* 801B20C8 001AEEC8  48 00 00 FC */	b lbl_801B21C4
 lbl_801B20CC:
 /* 801B20CC 001AEECC  38 00 00 03 */	li r0, 3
-/* 801B20D0 001AEED0  C0 02 C9 38 */	lfs f0, $$21396_1-_SDA2_BASE_(r2)
+/* 801B20D0 001AEED0  C0 02 C9 38 */	lfs f0, _esc__2_1396_1-_SDA2_BASE_(r2)
 /* 801B20D4 001AEED4  90 1F 00 1C */	stw r0, 0x1c(r31)
 /* 801B20D8 001AEED8  D0 1F 00 38 */	stfs f0, 0x38(r31)
 /* 801B20DC 001AEEDC  48 00 00 E8 */	b lbl_801B21C4
@@ -735,18 +737,18 @@ lbl_801B20E0:
 /* 801B2144 001AEF44  4B E5 D3 E9 */	bl normalize__5xVec3Fv
 /* 801B2148 001AEF48  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 801B214C 001AEF4C  40 81 00 68 */	ble lbl_801B21B4
-/* 801B2150 001AEF50  C0 62 C9 34 */	lfs f3, $$21395_1-_SDA2_BASE_(r2)
+/* 801B2150 001AEF50  C0 62 C9 34 */	lfs f3, _esc__2_1395_1-_SDA2_BASE_(r2)
 /* 801B2154 001AEF54  C0 5F 00 38 */	lfs f2, 0x38(r31)
-/* 801B2158 001AEF58  C0 02 C9 20 */	lfs f0, $$21237_3-_SDA2_BASE_(r2)
+/* 801B2158 001AEF58  C0 02 C9 20 */	lfs f0, _esc__2_1237_3-_SDA2_BASE_(r2)
 /* 801B215C 001AEF5C  EC 43 10 28 */	fsubs f2, f3, f2
 /* 801B2160 001AEF60  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801B2164 001AEF64  40 81 00 0C */	ble lbl_801B2170
 /* 801B2168 001AEF68  EC 21 10 24 */	fdivs f1, f1, f2
 /* 801B216C 001AEF6C  48 00 00 08 */	b lbl_801B2174
 lbl_801B2170:
-/* 801B2170 001AEF70  C0 22 C9 3C */	lfs f1, $$21397_0-_SDA2_BASE_(r2)
+/* 801B2170 001AEF70  C0 22 C9 3C */	lfs f1, _esc__2_1397_0-_SDA2_BASE_(r2)
 lbl_801B2174:
-/* 801B2174 001AEF74  C0 02 C9 40 */	lfs f0, $$21398_2-_SDA2_BASE_(r2)
+/* 801B2174 001AEF74  C0 02 C9 40 */	lfs f0, _esc__2_1398_2-_SDA2_BASE_(r2)
 /* 801B2178 001AEF78  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B217C 001AEF7C  40 80 00 08 */	bge lbl_801B2184
 /* 801B2180 001AEF80  FC 20 00 90 */	fmr f1, f0
@@ -765,7 +767,7 @@ lbl_801B2184:
 /* 801B21B0 001AEFB0  48 00 00 14 */	b lbl_801B21C4
 lbl_801B21B4:
 /* 801B21B4 001AEFB4  38 00 00 03 */	li r0, 3
-/* 801B21B8 001AEFB8  C0 02 C9 20 */	lfs f0, $$21237_3-_SDA2_BASE_(r2)
+/* 801B21B8 001AEFB8  C0 02 C9 20 */	lfs f0, _esc__2_1237_3-_SDA2_BASE_(r2)
 /* 801B21BC 001AEFBC  90 1F 00 1C */	stw r0, 0x1c(r31)
 /* 801B21C0 001AEFC0  D0 1F 00 38 */	stfs f0, 0x38(r31)
 lbl_801B21C4:
@@ -858,7 +860,7 @@ Render__7zPickupFv:
 /* 801B22F0 001AF0F0  2C 03 00 00 */	cmpwi r3, 0
 /* 801B22F4 001AF0F4  40 82 03 40 */	bne lbl_801B2634
 /* 801B22F8 001AF0F8  80 7F 00 20 */	lwz r3, 0x20(r31)
-/* 801B22FC 001AF0FC  C0 22 C9 20 */	lfs f1, $$21237_3-_SDA2_BASE_(r2)
+/* 801B22FC 001AF0FC  C0 22 C9 20 */	lfs f1, _esc__2_1237_3-_SDA2_BASE_(r2)
 /* 801B2300 001AF100  38 63 00 58 */	addi r3, r3, 0x58
 /* 801B2304 001AF104  4B E7 4A BD */	bl assign__5xVec3Ff
 /* 801B2308 001AF108  80 1F 00 1C */	lwz r0, 0x1c(r31)
@@ -907,19 +909,19 @@ lbl_801B237C:
 /* 801B23A8 001AF1A8  4B E5 93 49 */	bl __apl__5xVec3FRC5xVec3
 lbl_801B23AC:
 /* 801B23AC 001AF1AC  C0 3F 00 38 */	lfs f1, 0x38(r31)
-/* 801B23B0 001AF1B0  C0 02 C9 34 */	lfs f0, $$21395_1-_SDA2_BASE_(r2)
+/* 801B23B0 001AF1B0  C0 02 C9 34 */	lfs f0, _esc__2_1395_1-_SDA2_BASE_(r2)
 /* 801B23B4 001AF1B4  80 7F 00 20 */	lwz r3, 0x20(r31)
 /* 801B23B8 001AF1B8  EF E1 00 24 */	fdivs f31, f1, f0
-/* 801B23BC 001AF1BC  C0 22 C9 48 */	lfs f1, $$21507_1-_SDA2_BASE_(r2)
-/* 801B23C0 001AF1C0  C0 02 C9 44 */	lfs f0, $$21405_1-_SDA2_BASE_(r2)
+/* 801B23BC 001AF1BC  C0 22 C9 48 */	lfs f1, _esc__2_1507_1-_SDA2_BASE_(r2)
+/* 801B23C0 001AF1C0  C0 02 C9 44 */	lfs f0, _esc__2_1405_1-_SDA2_BASE_(r2)
 /* 801B23C4 001AF1C4  38 63 00 58 */	addi r3, r3, 0x58
 /* 801B23C8 001AF1C8  EF FF 07 F2 */	fmuls f31, f31, f31
 /* 801B23CC 001AF1CC  EC 21 07 FA */	fmadds f1, f1, f31, f0
 /* 801B23D0 001AF1D0  4B E5 8C C9 */	bl __as__5xVec3Ff
-/* 801B23D4 001AF1D4  C0 42 C9 44 */	lfs f2, $$21405_1-_SDA2_BASE_(r2)
+/* 801B23D4 001AF1D4  C0 42 C9 44 */	lfs f2, _esc__2_1405_1-_SDA2_BASE_(r2)
 /* 801B23D8 001AF1D8  80 7F 00 20 */	lwz r3, 0x20(r31)
 /* 801B23DC 001AF1DC  EC 22 F8 28 */	fsubs f1, f2, f31
-/* 801B23E0 001AF1E0  C0 02 C9 20 */	lfs f0, $$21237_3-_SDA2_BASE_(r2)
+/* 801B23E0 001AF1E0  C0 02 C9 20 */	lfs f0, _esc__2_1237_3-_SDA2_BASE_(r2)
 /* 801B23E4 001AF1E4  D0 23 00 2C */	stfs f1, 0x2c(r3)
 /* 801B23E8 001AF1E8  80 7F 00 20 */	lwz r3, 0x20(r31)
 /* 801B23EC 001AF1EC  C0 23 00 5C */	lfs f1, 0x5c(r3)
@@ -949,7 +951,7 @@ lbl_801B2438:
 /* 801B2440 001AF240  3C 60 80 38 */	lis r3, globals@ha
 /* 801B2444 001AF244  C0 3F 00 18 */	lfs f1, 0x18(r31)
 /* 801B2448 001AF248  38 63 2A 38 */	addi r3, r3, globals@l
-/* 801B244C 001AF24C  C0 42 C9 20 */	lfs f2, $$21237_3-_SDA2_BASE_(r2)
+/* 801B244C 001AF24C  C0 42 C9 20 */	lfs f2, _esc__2_1237_3-_SDA2_BASE_(r2)
 /* 801B2450 001AF250  C0 03 04 7C */	lfs f0, 0x47c(r3)
 /* 801B2454 001AF254  EC 01 00 28 */	fsubs f0, f1, f0
 /* 801B2458 001AF258  D0 1F 00 18 */	stfs f0, 0x18(r31)
@@ -969,7 +971,7 @@ lbl_801B2474:
 /* 801B2488 001AF288  C0 04 00 0C */	lfs f0, 0xc(r4)
 /* 801B248C 001AF28C  C0 63 00 5C */	lfs f3, 0x5c(r3)
 /* 801B2490 001AF290  EC 01 00 24 */	fdivs f0, f1, f0
-/* 801B2494 001AF294  C0 22 C9 44 */	lfs f1, $$21405_1-_SDA2_BASE_(r2)
+/* 801B2494 001AF294  C0 22 C9 44 */	lfs f1, _esc__2_1405_1-_SDA2_BASE_(r2)
 /* 801B2498 001AF298  FC 03 10 00 */	fcmpu cr0, f3, f2
 /* 801B249C 001AF29C  EF E1 00 28 */	fsubs f31, f1, f0
 /* 801B24A0 001AF2A0  41 82 00 24 */	beq lbl_801B24C4
@@ -991,11 +993,11 @@ lbl_801B24C4:
 lbl_801B24DC:
 /* 801B24DC 001AF2DC  80 9F 00 10 */	lwz r4, 0x10(r31)
 /* 801B24E0 001AF2E0  38 61 00 38 */	addi r3, r1, 0x38
-/* 801B24E4 001AF2E4  C0 02 C9 44 */	lfs f0, $$21405_1-_SDA2_BASE_(r2)
+/* 801B24E4 001AF2E4  C0 02 C9 44 */	lfs f0, _esc__2_1405_1-_SDA2_BASE_(r2)
 /* 801B24E8 001AF2E8  C0 24 00 10 */	lfs f1, 0x10(r4)
 /* 801B24EC 001AF2EC  EC 3F 00 7A */	fmadds f1, f31, f1, f0
 /* 801B24F0 001AF2F0  4B E7 48 D1 */	bl assign__5xVec3Ff
-/* 801B24F4 001AF2F4  C0 02 C9 44 */	lfs f0, $$21405_1-_SDA2_BASE_(r2)
+/* 801B24F4 001AF2F4  C0 02 C9 44 */	lfs f0, _esc__2_1405_1-_SDA2_BASE_(r2)
 /* 801B24F8 001AF2F8  3C 60 80 38 */	lis r3, globals@ha
 /* 801B24FC 001AF2FC  80 BF 00 24 */	lwz r5, 0x24(r31)
 /* 801B2500 001AF300  38 83 2A 38 */	addi r4, r3, globals@l
@@ -1016,16 +1018,16 @@ lbl_801B24DC:
 /* 801B253C 001AF33C  C0 01 00 2C */	lfs f0, 0x2c(r1)
 /* 801B2540 001AF340  C0 21 00 34 */	lfs f1, 0x34(r1)
 /* 801B2544 001AF344  EC 40 00 32 */	fmuls f2, f0, f0
-/* 801B2548 001AF348  C0 02 C9 4C */	lfs f0, $$21508_2-_SDA2_BASE_(r2)
+/* 801B2548 001AF348  C0 02 C9 4C */	lfs f0, _esc__2_1508_2-_SDA2_BASE_(r2)
 /* 801B254C 001AF34C  EC 21 00 72 */	fmuls f1, f1, f1
 /* 801B2550 001AF350  90 61 00 30 */	stw r3, 0x30(r1)
-/* 801B2554 001AF354  C0 62 C9 20 */	lfs f3, $$21237_3-_SDA2_BASE_(r2)
+/* 801B2554 001AF354  C0 62 C9 20 */	lfs f3, _esc__2_1237_3-_SDA2_BASE_(r2)
 /* 801B2558 001AF358  EC 22 08 2A */	fadds f1, f2, f1
 /* 801B255C 001AF35C  D0 61 00 30 */	stfs f3, 0x30(r1)
 /* 801B2560 001AF360  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B2564 001AF364  41 80 00 D0 */	blt lbl_801B2634
 /* 801B2568 001AF368  4B E5 8F 11 */	bl xsqrt__Ff
-/* 801B256C 001AF36C  C0 02 C9 44 */	lfs f0, $$21405_1-_SDA2_BASE_(r2)
+/* 801B256C 001AF36C  C0 02 C9 44 */	lfs f0, _esc__2_1405_1-_SDA2_BASE_(r2)
 /* 801B2570 001AF370  C0 41 00 2C */	lfs f2, 0x2c(r1)
 /* 801B2574 001AF374  EC 60 08 24 */	fdivs f3, f0, f1
 /* 801B2578 001AF378  C0 01 00 34 */	lfs f0, 0x34(r1)
@@ -1047,7 +1049,7 @@ lbl_801B24DC:
 /* 801B25B8 001AF3B8  38 82 8A 08 */	addi r4, r2, g_Y3-_SDA2_BASE_
 /* 801B25BC 001AF3BC  4B E6 55 61 */	bl xVec3Cross__FP5xVec3PC5xVec3PC5xVec3
 /* 801B25C0 001AF3C0  80 7F 00 20 */	lwz r3, 0x20(r31)
-/* 801B25C4 001AF3C4  C0 02 C9 20 */	lfs f0, $$21237_3-_SDA2_BASE_(r2)
+/* 801B25C4 001AF3C4  C0 02 C9 20 */	lfs f0, _esc__2_1237_3-_SDA2_BASE_(r2)
 /* 801B25C8 001AF3C8  C0 23 00 5C */	lfs f1, 0x5c(r3)
 /* 801B25CC 001AF3CC  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 801B25D0 001AF3D0  41 82 00 0C */	beq lbl_801B25DC
@@ -1121,14 +1123,14 @@ lbl_801B26C0:
 /* 801B26C4 001AF4C4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801B26C8 001AF4C8  40 81 00 20 */	ble lbl_801B26E8
 /* 801B26CC 001AF4CC  EC 21 00 28 */	fsubs f1, f1, f0
-/* 801B26D0 001AF4D0  C0 42 C9 44 */	lfs f2, $$21405_1-_SDA2_BASE_(r2)
+/* 801B26D0 001AF4D0  C0 42 C9 44 */	lfs f2, _esc__2_1405_1-_SDA2_BASE_(r2)
 /* 801B26D4 001AF4D4  EC 03 00 28 */	fsubs f0, f3, f0
 /* 801B26D8 001AF4D8  EC 01 00 24 */	fdivs f0, f1, f0
 /* 801B26DC 001AF4DC  EC 02 00 28 */	fsubs f0, f2, f0
 /* 801B26E0 001AF4E0  D0 1F 00 00 */	stfs f0, 0(r31)
 /* 801B26E4 001AF4E4  48 00 00 0C */	b lbl_801B26F0
 lbl_801B26E8:
-/* 801B26E8 001AF4E8  C0 02 C9 44 */	lfs f0, $$21405_1-_SDA2_BASE_(r2)
+/* 801B26E8 001AF4E8  C0 02 C9 44 */	lfs f0, _esc__2_1405_1-_SDA2_BASE_(r2)
 /* 801B26EC 001AF4EC  D0 1F 00 00 */	stfs f0, 0(r31)
 lbl_801B26F0:
 /* 801B26F0 001AF4F0  38 60 00 00 */	li r3, 0
@@ -1196,9 +1198,9 @@ FlyToInterface__7zPickupFf:
 /* 801B27C0 001AF5C0  7C 7F 1B 78 */	mr r31, r3
 /* 801B27C4 001AF5C4  FF A0 08 90 */	fmr f29, f1
 /* 801B27C8 001AF5C8  C0 03 00 38 */	lfs f0, 0x38(r3)
-/* 801B27CC 001AF5CC  C0 42 C9 38 */	lfs f2, $$21396_1-_SDA2_BASE_(r2)
+/* 801B27CC 001AF5CC  C0 42 C9 38 */	lfs f2, _esc__2_1396_1-_SDA2_BASE_(r2)
 /* 801B27D0 001AF5D0  EC 20 E8 2A */	fadds f1, f0, f29
-/* 801B27D4 001AF5D4  C0 02 C9 20 */	lfs f0, $$21237_3-_SDA2_BASE_(r2)
+/* 801B27D4 001AF5D4  C0 02 C9 20 */	lfs f0, _esc__2_1237_3-_SDA2_BASE_(r2)
 /* 801B27D8 001AF5D8  D0 23 00 38 */	stfs f1, 0x38(r3)
 /* 801B27DC 001AF5DC  C0 23 00 38 */	lfs f1, 0x38(r3)
 /* 801B27E0 001AF5E0  EF C2 08 28 */	fsubs f30, f2, f1
@@ -1208,7 +1210,7 @@ FlyToInterface__7zPickupFf:
 /* 801B27F0 001AF5F0  4B FF F6 31 */	bl BeUsed__7zPickupFv
 /* 801B27F4 001AF5F4  48 00 00 C4 */	b lbl_801B28B8
 lbl_801B27F8:
-/* 801B27F8 001AF5F8  80 A2 C9 50 */	lwz r5, $$21571-_SDA2_BASE_(r2)
+/* 801B27F8 001AF5F8  80 A2 C9 50 */	lwz r5, _esc__2_1571-_SDA2_BASE_(r2)
 /* 801B27FC 001AF5FC  3C 60 80 38 */	lis r3, globals@ha
 /* 801B2800 001AF600  80 C2 C9 54 */	lwz r6, lbl_803D6674-_SDA2_BASE_(r2)
 /* 801B2804 001AF604  38 83 2A 38 */	addi r4, r3, globals@l
@@ -1248,11 +1250,11 @@ lbl_801B27F8:
 /* 801B288C 001AF68C  38 81 00 14 */	addi r4, r1, 0x14
 /* 801B2890 001AF690  4B E5 8E 61 */	bl __apl__5xVec3FRC5xVec3
 /* 801B2894 001AF694  C0 3F 00 38 */	lfs f1, 0x38(r31)
-/* 801B2898 001AF698  C0 02 C9 38 */	lfs f0, $$21396_1-_SDA2_BASE_(r2)
+/* 801B2898 001AF698  C0 02 C9 38 */	lfs f0, _esc__2_1396_1-_SDA2_BASE_(r2)
 /* 801B289C 001AF69C  80 7F 00 20 */	lwz r3, 0x20(r31)
 /* 801B28A0 001AF6A0  EC 21 00 24 */	fdivs f1, f1, f0
-/* 801B28A4 001AF6A4  C0 42 C9 5C */	lfs f2, $$21576_1-_SDA2_BASE_(r2)
-/* 801B28A8 001AF6A8  C0 02 C9 44 */	lfs f0, $$21405_1-_SDA2_BASE_(r2)
+/* 801B28A4 001AF6A4  C0 42 C9 5C */	lfs f2, _esc__2_1576_1-_SDA2_BASE_(r2)
+/* 801B28A8 001AF6A8  C0 02 C9 44 */	lfs f0, _esc__2_1405_1-_SDA2_BASE_(r2)
 /* 801B28AC 001AF6AC  38 63 00 58 */	addi r3, r3, 0x58
 /* 801B28B0 001AF6B0  EC 22 00 7A */	fmadds f1, f2, f1, f0
 /* 801B28B4 001AF6B4  4B E7 45 0D */	bl assign__5xVec3Ff
@@ -1278,7 +1280,7 @@ UpdateAll__7zPickupFf:
 /* 801B28F4 001AF6F4  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
 /* 801B28F8 001AF6F8  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 801B28FC 001AF6FC  FF E0 08 90 */	fmr f31, f1
-/* 801B2900 001AF700  C0 02 C9 60 */	lfs f0, $$21603_0-_SDA2_BASE_(r2)
+/* 801B2900 001AF700  C0 02 C9 60 */	lfs f0, _esc__2_1603_0-_SDA2_BASE_(r2)
 /* 801B2904 001AF704  38 6D A5 40 */	addi r3, r13, sPickupOrientation-_SDA_BASE_
 /* 801B2908 001AF708  38 8D A5 40 */	addi r4, r13, sPickupOrientation-_SDA_BASE_
 /* 801B290C 001AF70C  EC 20 07 F2 */	fmuls f1, f0, f31
@@ -1636,7 +1638,7 @@ Pos__7zPickupFv:
 /* 801B2DD8 001AFBD8  80 63 00 20 */	lwz r3, 0x20(r3)
 /* 801B2DDC 001AFBDC  28 03 00 00 */	cmplwi r3, 0
 /* 801B2DE0 001AFBE0  40 82 00 0C */	bne lbl_801B2DEC
-/* 801B2DE4 001AFBE4  38 6D 8B 10 */	addi r3, r13, null_xvec3$localstatic3$Pos__7zPickupFv-_SDA_BASE_
+/* 801B2DE4 001AFBE4  38 6D 8B 10 */	addi r3, r13, null_xvec3_esc__7_localstatic3_esc__7_Pos__7zPickupFv-_SDA_BASE_
 /* 801B2DE8 001AFBE8  4E 80 00 20 */	blr 
 lbl_801B2DEC:
 /* 801B2DEC 001AFBEC  80 63 00 54 */	lwz r3, 0x54(r3)
@@ -1657,8 +1659,8 @@ lbl_801B2E0C:
 
 .global type_name__Q27zPickup13InstanceAssetFv
 type_name__Q27zPickup13InstanceAssetFv:
-/* 801B2E18 001AFC18  3C 60 80 2E */	lis r3, $$2stringBase0_126@ha
-/* 801B2E1C 001AFC1C  38 63 7D 80 */	addi r3, r3, $$2stringBase0_126@l
+/* 801B2E18 001AFC18  3C 60 80 2E */	lis r3, _esc__2_stringBase0_126@ha
+/* 801B2E1C 001AFC1C  38 63 7D 80 */	addi r3, r3, _esc__2_stringBase0_126@l
 /* 801B2E20 001AFC20  38 63 00 13 */	addi r3, r3, 0x13
 /* 801B2E24 001AFC24  4E 80 00 20 */	blr 
 
@@ -1675,3 +1677,6 @@ xMat3x3Scale__FP7xMat3x3PC5xVec3:
 /* 801B2E48 001AFC48  7C 08 03 A6 */	mtlr r0
 /* 801B2E4C 001AFC4C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801B2E50 001AFC50  4E 80 00 20 */	blr 
+
+.endif
+

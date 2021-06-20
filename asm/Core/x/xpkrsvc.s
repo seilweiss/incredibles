@@ -11,29 +11,29 @@ g_pkr_read_funcmap:
 .global g_readdatainst
 g_readdatainst:
 	.incbin "baserom.dol", 0x2F1548, 0xB2C0
-.global $$21021
-$$21021:
+.global _esc__2_1021
+_esc__2_1021:
 	.incbin "baserom.dol", 0x2FC808, 0x30
-.global $$21040
-$$21040:
+.global _esc__2_1040
+_esc__2_1040:
 	.incbin "baserom.dol", 0x2FC838, 0x30
 
 .section .rodata
 
-.global $$21560
-$$21560:
+.global _esc__2_1560
+_esc__2_1560:
 	.incbin "baserom.dol", 0x2CEE50, 0x100
-.global $$21572
-$$21572:
+.global _esc__2_1572
+_esc__2_1572:
 	.incbin "baserom.dol", 0x2CEF50, 0x80
-.global $$21655
-$$21655:
+.global _esc__2_1655
+_esc__2_1655:
 	.incbin "baserom.dol", 0x2CEFD0, 0x100
-.global $$21753
-$$21753:
+.global _esc__2_1753
+_esc__2_1753:
 	.incbin "baserom.dol", 0x2CF0D0, 0x204
-.global $$2stringBase0_17
-$$2stringBase0_17:
+.global _esc__2_stringBase0_17
+_esc__2_stringBase0_17:
 	.incbin "baserom.dol", 0x2CF2D4, 0x94
 
 .section .sbss
@@ -59,42 +59,44 @@ g_memalloc_runtot:
 .global g_memalloc_runfree
 g_memalloc_runfree:
 	.skip 0x4
-.global curpr$909
-curpr$909:
+.global curpr_esc__7_909
+curpr_esc__7_909:
 	.skip 0x4
-.global init$910
-init$910:
+.global init_esc__7_910
+init_esc__7_910:
 	.skip 0x4
-.global asynlay$912
-asynlay$912:
+.global asynlay_esc__7_912
+asynlay_esc__7_912:
 	.skip 0x4
-.global init$913
-init$913:
+.global init_esc__7_913
+init_esc__7_913:
 	.skip 0x8
 
 .section .sbss2
 
-.global $$21593_2
-$$21593_2:
+.global _esc__2_1593_2
+_esc__2_1593_2:
 	.skip 0x1C
 .global lbl_803D877C
 lbl_803D877C:
 	.skip 0x4
-.global $$21594_1
-$$21594_1:
+.global _esc__2_1594_1
+_esc__2_1594_1:
 	.skip 0x1C
 .global lbl_803D879C
 lbl_803D879C:
 	.skip 0x4
-.global $$21595_1
-$$21595_1:
+.global _esc__2_1595_1
+_esc__2_1595_1:
 	.skip 0x1C
 .global lbl_803D87BC
 lbl_803D87BC:
 	.skip 0x4
-.global $$21596
-$$21596:
+.global _esc__2_1596
+_esc__2_1596:
 	.skip 0x1C
+
+.if 0
 
 .section .text
 
@@ -656,49 +658,49 @@ PKR_LoadStep_Async__Fv:
 /* 80050E08 0004DC08  7C 08 02 A6 */	mflr r0
 /* 80050E0C 0004DC0C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80050E10 0004DC10  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80050E14 0004DC14  88 0D BC 08 */	lbz r0, init$910-_SDA_BASE_(r13)
+/* 80050E14 0004DC14  88 0D BC 08 */	lbz r0, init_esc__7_910-_SDA_BASE_(r13)
 /* 80050E18 0004DC18  7C 00 07 75 */	extsb. r0, r0
 /* 80050E1C 0004DC1C  40 82 00 14 */	bne lbl_80050E30
 /* 80050E20 0004DC20  38 60 00 00 */	li r3, 0
 /* 80050E24 0004DC24  38 00 00 01 */	li r0, 1
-/* 80050E28 0004DC28  90 6D BC 04 */	stw r3, curpr$909-_SDA_BASE_(r13)
-/* 80050E2C 0004DC2C  98 0D BC 08 */	stb r0, init$910-_SDA_BASE_(r13)
+/* 80050E28 0004DC28  90 6D BC 04 */	stw r3, curpr_esc__7_909-_SDA_BASE_(r13)
+/* 80050E2C 0004DC2C  98 0D BC 08 */	stb r0, init_esc__7_910-_SDA_BASE_(r13)
 lbl_80050E30:
-/* 80050E30 0004DC30  88 0D BC 10 */	lbz r0, init$913-_SDA_BASE_(r13)
+/* 80050E30 0004DC30  88 0D BC 10 */	lbz r0, init_esc__7_913-_SDA_BASE_(r13)
 /* 80050E34 0004DC34  7C 00 07 75 */	extsb. r0, r0
 /* 80050E38 0004DC38  40 82 00 14 */	bne lbl_80050E4C
 /* 80050E3C 0004DC3C  38 60 00 00 */	li r3, 0
 /* 80050E40 0004DC40  38 00 00 01 */	li r0, 1
-/* 80050E44 0004DC44  90 6D BC 0C */	stw r3, asynlay$912-_SDA_BASE_(r13)
-/* 80050E48 0004DC48  98 0D BC 10 */	stb r0, init$913-_SDA_BASE_(r13)
+/* 80050E44 0004DC44  90 6D BC 0C */	stw r3, asynlay_esc__7_912-_SDA_BASE_(r13)
+/* 80050E48 0004DC48  98 0D BC 10 */	stb r0, init_esc__7_913-_SDA_BASE_(r13)
 lbl_80050E4C:
-/* 80050E4C 0004DC4C  80 0D BC 0C */	lwz r0, asynlay$912-_SDA_BASE_(r13)
+/* 80050E4C 0004DC4C  80 0D BC 0C */	lwz r0, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050E50 0004DC50  28 00 00 00 */	cmplwi r0, 0
 /* 80050E54 0004DC54  40 82 01 24 */	bne lbl_80050F78
-/* 80050E58 0004DC58  38 6D BC 04 */	addi r3, r13, curpr$909-_SDA_BASE_
-/* 80050E5C 0004DC5C  38 8D BC 0C */	addi r4, r13, asynlay$912-_SDA_BASE_
+/* 80050E58 0004DC58  38 6D BC 04 */	addi r3, r13, curpr_esc__7_909-_SDA_BASE_
+/* 80050E5C 0004DC5C  38 8D BC 0C */	addi r4, r13, asynlay_esc__7_912-_SDA_BASE_
 /* 80050E60 0004DC60  48 00 04 81 */	bl PKR_findNextLayerToLoad__FPP19st_PACKER_READ_DATAPP19st_PACKER_LTOC_NODE
-/* 80050E64 0004DC64  80 6D BC 0C */	lwz r3, asynlay$912-_SDA_BASE_(r13)
+/* 80050E64 0004DC64  80 6D BC 0C */	lwz r3, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050E68 0004DC68  28 03 00 00 */	cmplwi r3, 0
 /* 80050E6C 0004DC6C  41 82 00 F8 */	beq lbl_80050F64
 /* 80050E70 0004DC70  80 63 00 00 */	lwz r3, 0(r3)
 /* 80050E74 0004DC74  48 00 03 E5 */	bl PKR_layerLoadDest__F13en_LAYER_TYPE
 /* 80050E78 0004DC78  2C 03 00 00 */	cmpwi r3, 0
 /* 80050E7C 0004DC7C  41 82 00 C8 */	beq lbl_80050F44
-/* 80050E80 0004DC80  80 8D BC 0C */	lwz r4, asynlay$912-_SDA_BASE_(r13)
+/* 80050E80 0004DC80  80 8D BC 0C */	lwz r4, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050E84 0004DC84  80 04 00 20 */	lwz r0, 0x20(r4)
 /* 80050E88 0004DC88  2C 00 00 01 */	cmpwi r0, 1
 /* 80050E8C 0004DC8C  40 81 00 B8 */	ble lbl_80050F44
 /* 80050E90 0004DC90  80 04 00 08 */	lwz r0, 8(r4)
 /* 80050E94 0004DC94  2C 00 00 00 */	cmpwi r0, 0
 /* 80050E98 0004DC98  40 81 00 AC */	ble lbl_80050F44
-/* 80050E9C 0004DC9C  80 6D BC 04 */	lwz r3, curpr$909-_SDA_BASE_(r13)
+/* 80050E9C 0004DC9C  80 6D BC 04 */	lwz r3, curpr_esc__7_909-_SDA_BASE_(r13)
 /* 80050EA0 0004DCA0  48 00 01 DD */	bl PKR_LayerMemReserve__FP19st_PACKER_READ_DATAP19st_PACKER_LTOC_NODE
-/* 80050EA4 0004DCA4  80 8D BC 0C */	lwz r4, asynlay$912-_SDA_BASE_(r13)
+/* 80050EA4 0004DCA4  80 8D BC 0C */	lwz r4, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050EA8 0004DCA8  90 64 00 24 */	stw r3, 0x24(r4)
-/* 80050EAC 0004DCAC  80 6D BC 0C */	lwz r3, asynlay$912-_SDA_BASE_(r13)
+/* 80050EAC 0004DCAC  80 6D BC 0C */	lwz r3, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050EB0 0004DCB0  48 00 03 9D */	bl PKR_drv_guardLayer__FP19st_PACKER_LTOC_NODE
-/* 80050EB4 0004DCB4  80 8D BC 0C */	lwz r4, asynlay$912-_SDA_BASE_(r13)
+/* 80050EB4 0004DCB4  80 8D BC 0C */	lwz r4, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050EB8 0004DCB8  80 6D BB E8 */	lwz r3, g_hiprf-_SDA_BASE_(r13)
 /* 80050EBC 0004DCBC  80 84 00 04 */	lwz r4, 4(r4)
 /* 80050EC0 0004DCC0  81 83 00 2C */	lwz r12, 0x2c(r3)
@@ -708,7 +710,7 @@ lbl_80050E4C:
 /* 80050ED0 0004DCD0  7D 89 03 A6 */	mtctr r12
 /* 80050ED4 0004DCD4  4E 80 04 21 */	bctrl 
 /* 80050ED8 0004DCD8  80 6D BB E8 */	lwz r3, g_hiprf-_SDA_BASE_(r13)
-/* 80050EDC 0004DCDC  80 AD BC 0C */	lwz r5, asynlay$912-_SDA_BASE_(r13)
+/* 80050EDC 0004DCDC  80 AD BC 0C */	lwz r5, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050EE0 0004DCE0  81 83 00 14 */	lwz r12, 0x14(r3)
 /* 80050EE4 0004DCE4  80 7F 00 38 */	lwz r3, 0x38(r31)
 /* 80050EE8 0004DCE8  80 85 00 24 */	lwz r4, 0x24(r5)
@@ -717,50 +719,50 @@ lbl_80050E4C:
 /* 80050EF4 0004DCF4  4E 80 04 21 */	bctrl 
 /* 80050EF8 0004DCF8  2C 03 00 00 */	cmpwi r3, 0
 /* 80050EFC 0004DCFC  41 82 00 18 */	beq lbl_80050F14
-/* 80050F00 0004DD00  80 6D BC 0C */	lwz r3, asynlay$912-_SDA_BASE_(r13)
+/* 80050F00 0004DD00  80 6D BC 0C */	lwz r3, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050F04 0004DD04  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80050F08 0004DD08  64 00 01 00 */	oris r0, r0, 0x100
 /* 80050F0C 0004DD0C  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80050F10 0004DD10  48 00 00 2C */	b lbl_80050F3C
 lbl_80050F14:
-/* 80050F14 0004DD14  80 6D BC 04 */	lwz r3, curpr$909-_SDA_BASE_(r13)
-/* 80050F18 0004DD18  80 8D BC 0C */	lwz r4, asynlay$912-_SDA_BASE_(r13)
+/* 80050F14 0004DD14  80 6D BC 04 */	lwz r3, curpr_esc__7_909-_SDA_BASE_(r13)
+/* 80050F18 0004DD18  80 8D BC 0C */	lwz r4, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050F1C 0004DD1C  48 00 02 51 */	bl PKR_LayerMemRelease__FP19st_PACKER_READ_DATAP19st_PACKER_LTOC_NODE
-/* 80050F20 0004DD20  80 8D BC 0C */	lwz r4, asynlay$912-_SDA_BASE_(r13)
+/* 80050F20 0004DD20  80 8D BC 0C */	lwz r4, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050F24 0004DD24  38 00 00 00 */	li r0, 0
 /* 80050F28 0004DD28  80 64 00 14 */	lwz r3, 0x14(r4)
 /* 80050F2C 0004DD2C  54 63 02 0A */	rlwinm r3, r3, 0, 8, 5
 /* 80050F30 0004DD30  90 64 00 14 */	stw r3, 0x14(r4)
-/* 80050F34 0004DD34  90 0D BC 04 */	stw r0, curpr$909-_SDA_BASE_(r13)
-/* 80050F38 0004DD38  90 0D BC 0C */	stw r0, asynlay$912-_SDA_BASE_(r13)
+/* 80050F34 0004DD34  90 0D BC 04 */	stw r0, curpr_esc__7_909-_SDA_BASE_(r13)
+/* 80050F38 0004DD38  90 0D BC 0C */	stw r0, asynlay_esc__7_912-_SDA_BASE_(r13)
 lbl_80050F3C:
 /* 80050F3C 0004DD3C  38 60 00 01 */	li r3, 1
 /* 80050F40 0004DD40  48 00 01 28 */	b lbl_80051068
 lbl_80050F44:
-/* 80050F44 0004DD44  80 AD BC 0C */	lwz r5, asynlay$912-_SDA_BASE_(r13)
+/* 80050F44 0004DD44  80 AD BC 0C */	lwz r5, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050F48 0004DD48  38 00 00 00 */	li r0, 0
 /* 80050F4C 0004DD4C  38 60 00 01 */	li r3, 1
 /* 80050F50 0004DD50  80 85 00 14 */	lwz r4, 0x14(r5)
 /* 80050F54 0004DD54  64 84 02 00 */	oris r4, r4, 0x200
 /* 80050F58 0004DD58  90 85 00 14 */	stw r4, 0x14(r5)
-/* 80050F5C 0004DD5C  90 0D BC 0C */	stw r0, asynlay$912-_SDA_BASE_(r13)
+/* 80050F5C 0004DD5C  90 0D BC 0C */	stw r0, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050F60 0004DD60  48 00 01 08 */	b lbl_80051068
 lbl_80050F64:
 /* 80050F64 0004DD64  38 00 00 00 */	li r0, 0
 /* 80050F68 0004DD68  38 60 00 00 */	li r3, 0
-/* 80050F6C 0004DD6C  90 0D BC 04 */	stw r0, curpr$909-_SDA_BASE_(r13)
-/* 80050F70 0004DD70  90 0D BC 0C */	stw r0, asynlay$912-_SDA_BASE_(r13)
+/* 80050F6C 0004DD6C  90 0D BC 04 */	stw r0, curpr_esc__7_909-_SDA_BASE_(r13)
+/* 80050F70 0004DD70  90 0D BC 0C */	stw r0, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050F74 0004DD74  48 00 00 F4 */	b lbl_80051068
 lbl_80050F78:
 /* 80050F78 0004DD78  80 6D BB E8 */	lwz r3, g_hiprf-_SDA_BASE_(r13)
-/* 80050F7C 0004DD7C  80 8D BC 04 */	lwz r4, curpr$909-_SDA_BASE_(r13)
+/* 80050F7C 0004DD7C  80 8D BC 04 */	lwz r4, curpr_esc__7_909-_SDA_BASE_(r13)
 /* 80050F80 0004DD80  81 83 00 30 */	lwz r12, 0x30(r3)
 /* 80050F84 0004DD84  80 64 00 1C */	lwz r3, 0x1c(r4)
 /* 80050F88 0004DD88  7D 89 03 A6 */	mtctr r12
 /* 80050F8C 0004DD8C  4E 80 04 21 */	bctrl 
 /* 80050F90 0004DD90  2C 03 00 01 */	cmpwi r3, 1
 /* 80050F94 0004DD94  40 82 00 0C */	bne lbl_80050FA0
-/* 80050F98 0004DD98  80 6D BC 0C */	lwz r3, asynlay$912-_SDA_BASE_(r13)
+/* 80050F98 0004DD98  80 6D BC 0C */	lwz r3, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050F9C 0004DD9C  48 00 02 B5 */	bl PKR_drv_guardVerify__FP19st_PACKER_LTOC_NODE
 lbl_80050FA0:
 /* 80050FA0 0004DDA0  2C 03 00 00 */	cmpwi r3, 0
@@ -770,54 +772,54 @@ lbl_80050FA0:
 lbl_80050FB0:
 /* 80050FB0 0004DDB0  2C 03 00 01 */	cmpwi r3, 1
 /* 80050FB4 0004DDB4  40 82 00 68 */	bne lbl_8005101C
-/* 80050FB8 0004DDB8  80 6D BC 0C */	lwz r3, asynlay$912-_SDA_BASE_(r13)
+/* 80050FB8 0004DDB8  80 6D BC 0C */	lwz r3, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050FBC 0004DDBC  48 00 04 19 */	bl PKR_updateLayerAssets__FP19st_PACKER_LTOC_NODE
-/* 80050FC0 0004DDC0  80 6D BC 0C */	lwz r3, asynlay$912-_SDA_BASE_(r13)
+/* 80050FC0 0004DDC0  80 6D BC 0C */	lwz r3, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050FC4 0004DDC4  80 63 00 00 */	lwz r3, 0(r3)
 /* 80050FC8 0004DDC8  48 00 02 D9 */	bl PKR_layerTypeNeedsXForm__F13en_LAYER_TYPE
 /* 80050FCC 0004DDCC  2C 03 00 00 */	cmpwi r3, 0
 /* 80050FD0 0004DDD0  41 82 00 0C */	beq lbl_80050FDC
-/* 80050FD4 0004DDD4  80 6D BC 0C */	lwz r3, asynlay$912-_SDA_BASE_(r13)
+/* 80050FD4 0004DDD4  80 6D BC 0C */	lwz r3, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050FD8 0004DDD8  48 00 04 B1 */	bl PKR_xformLayerAssets__FP19st_PACKER_LTOC_NODE
 lbl_80050FDC:
-/* 80050FDC 0004DDDC  80 6D BC 0C */	lwz r3, asynlay$912-_SDA_BASE_(r13)
+/* 80050FDC 0004DDDC  80 6D BC 0C */	lwz r3, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050FE0 0004DDE0  80 63 00 00 */	lwz r3, 0(r3)
 /* 80050FE4 0004DDE4  48 00 02 75 */	bl PKR_layerLoadDest__F13en_LAYER_TYPE
 /* 80050FE8 0004DDE8  2C 03 00 03 */	cmpwi r3, 3
 /* 80050FEC 0004DDEC  40 82 00 10 */	bne lbl_80050FFC
-/* 80050FF0 0004DDF0  80 6D BC 04 */	lwz r3, curpr$909-_SDA_BASE_(r13)
-/* 80050FF4 0004DDF4  80 8D BC 0C */	lwz r4, asynlay$912-_SDA_BASE_(r13)
+/* 80050FF0 0004DDF0  80 6D BC 04 */	lwz r3, curpr_esc__7_909-_SDA_BASE_(r13)
+/* 80050FF4 0004DDF4  80 8D BC 0C */	lwz r4, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80050FF8 0004DDF8  48 00 01 75 */	bl PKR_LayerMemRelease__FP19st_PACKER_READ_DATAP19st_PACKER_LTOC_NODE
 lbl_80050FFC:
-/* 80050FFC 0004DDFC  80 AD BC 0C */	lwz r5, asynlay$912-_SDA_BASE_(r13)
+/* 80050FFC 0004DDFC  80 AD BC 0C */	lwz r5, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80051000 0004DE00  38 00 00 00 */	li r0, 0
 /* 80051004 0004DE04  38 60 00 01 */	li r3, 1
 /* 80051008 0004DE08  80 85 00 14 */	lwz r4, 0x14(r5)
 /* 8005100C 0004DE0C  64 84 02 00 */	oris r4, r4, 0x200
 /* 80051010 0004DE10  90 85 00 14 */	stw r4, 0x14(r5)
-/* 80051014 0004DE14  90 0D BC 0C */	stw r0, asynlay$912-_SDA_BASE_(r13)
+/* 80051014 0004DE14  90 0D BC 0C */	stw r0, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80051018 0004DE18  48 00 00 50 */	b lbl_80051068
 lbl_8005101C:
-/* 8005101C 0004DE1C  80 6D BC 0C */	lwz r3, asynlay$912-_SDA_BASE_(r13)
+/* 8005101C 0004DE1C  80 6D BC 0C */	lwz r3, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 80051020 0004DE20  80 63 00 00 */	lwz r3, 0(r3)
 /* 80051024 0004DE24  48 00 02 35 */	bl PKR_layerLoadDest__F13en_LAYER_TYPE
-/* 80051028 0004DE28  80 8D BC 0C */	lwz r4, asynlay$912-_SDA_BASE_(r13)
+/* 80051028 0004DE28  80 8D BC 0C */	lwz r4, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 8005102C 0004DE2C  80 04 00 24 */	lwz r0, 0x24(r4)
 /* 80051030 0004DE30  28 00 00 00 */	cmplwi r0, 0
 /* 80051034 0004DE34  41 82 00 14 */	beq lbl_80051048
 /* 80051038 0004DE38  2C 03 00 03 */	cmpwi r3, 3
 /* 8005103C 0004DE3C  40 82 00 0C */	bne lbl_80051048
-/* 80051040 0004DE40  80 6D BC 04 */	lwz r3, curpr$909-_SDA_BASE_(r13)
+/* 80051040 0004DE40  80 6D BC 04 */	lwz r3, curpr_esc__7_909-_SDA_BASE_(r13)
 /* 80051044 0004DE44  48 00 01 29 */	bl PKR_LayerMemRelease__FP19st_PACKER_READ_DATAP19st_PACKER_LTOC_NODE
 lbl_80051048:
-/* 80051048 0004DE48  80 AD BC 0C */	lwz r5, asynlay$912-_SDA_BASE_(r13)
+/* 80051048 0004DE48  80 AD BC 0C */	lwz r5, asynlay_esc__7_912-_SDA_BASE_(r13)
 /* 8005104C 0004DE4C  38 00 00 00 */	li r0, 0
 /* 80051050 0004DE50  38 60 00 01 */	li r3, 1
 /* 80051054 0004DE54  80 85 00 14 */	lwz r4, 0x14(r5)
 /* 80051058 0004DE58  54 84 02 0A */	rlwinm r4, r4, 0, 8, 5
 /* 8005105C 0004DE5C  90 85 00 14 */	stw r4, 0x14(r5)
-/* 80051060 0004DE60  90 0D BC 0C */	stw r0, asynlay$912-_SDA_BASE_(r13)
-/* 80051064 0004DE64  90 0D BC 04 */	stw r0, curpr$909-_SDA_BASE_(r13)
+/* 80051060 0004DE60  90 0D BC 0C */	stw r0, asynlay_esc__7_912-_SDA_BASE_(r13)
+/* 80051064 0004DE64  90 0D BC 04 */	stw r0, curpr_esc__7_909-_SDA_BASE_(r13)
 lbl_80051068:
 /* 80051068 0004DE68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8005106C 0004DE6C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -971,9 +973,9 @@ PKR_drv_guardVerify__FP19st_PACKER_LTOC_NODE:
 PKR_layerLoadDest__F13en_LAYER_TYPE:
 /* 80051258 0004E058  28 03 00 0B */	cmplwi r3, 0xb
 /* 8005125C 0004E05C  41 81 00 3C */	bgt lbl_80051298
-/* 80051260 0004E060  3C 80 80 30 */	lis r4, $$21021@ha
+/* 80051260 0004E060  3C 80 80 30 */	lis r4, _esc__2_1021@ha
 /* 80051264 0004E064  54 60 10 3A */	slwi r0, r3, 2
-/* 80051268 0004E068  38 64 F8 08 */	addi r3, r4, $$21021@l
+/* 80051268 0004E068  38 64 F8 08 */	addi r3, r4, _esc__2_1021@l
 /* 8005126C 0004E06C  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80051270 0004E070  7C 09 03 A6 */	mtctr r0
 /* 80051274 0004E074  4E 80 04 20 */	bctr 
@@ -993,9 +995,9 @@ lbl_80051298:
 PKR_layerTypeNeedsXForm__F13en_LAYER_TYPE:
 /* 800512A0 0004E0A0  28 03 00 0B */	cmplwi r3, 0xb
 /* 800512A4 0004E0A4  41 81 00 34 */	bgt lbl_800512D8
-/* 800512A8 0004E0A8  3C 80 80 30 */	lis r4, $$21040@ha
+/* 800512A8 0004E0A8  3C 80 80 30 */	lis r4, _esc__2_1040@ha
 /* 800512AC 0004E0AC  54 60 10 3A */	slwi r0, r3, 2
-/* 800512B0 0004E0B0  38 64 F8 38 */	addi r3, r4, $$21040@l
+/* 800512B0 0004E0B0  38 64 F8 38 */	addi r3, r4, _esc__2_1040@l
 /* 800512B4 0004E0B4  7C 03 00 2E */	lwzx r0, r3, r0
 /* 800512B8 0004E0B8  7C 09 03 A6 */	mtctr r0
 /* 800512BC 0004E0BC  4E 80 04 20 */	bctr 
@@ -2215,10 +2217,10 @@ LOD_r_PCNT__FP14st_HIPLOADDATAP19st_PACKER_READ_DATA:
 LOD_r_PCRT__FP14st_HIPLOADDATAP19st_PACKER_READ_DATA:
 /* 800522C0 0004F0C0  94 21 FE E0 */	stwu r1, -0x120(r1)
 /* 800522C4 0004F0C4  7C 08 02 A6 */	mflr r0
-/* 800522C8 0004F0C8  3C A0 80 2D */	lis r5, $$21560@ha
+/* 800522C8 0004F0C8  3C A0 80 2D */	lis r5, _esc__2_1560@ha
 /* 800522CC 0004F0CC  38 C0 00 00 */	li r6, 0
 /* 800522D0 0004F0D0  90 01 01 24 */	stw r0, 0x124(r1)
-/* 800522D4 0004F0D4  38 A5 1E 50 */	addi r5, r5, $$21560@l
+/* 800522D4 0004F0D4  38 A5 1E 50 */	addi r5, r5, _esc__2_1560@l
 /* 800522D8 0004F0D8  38 00 00 20 */	li r0, 0x20
 /* 800522DC 0004F0DC  BF C1 01 18 */	stmw r30, 0x118(r1)
 /* 800522E0 0004F0E0  7C 9F 23 78 */	mr r31, r4
@@ -2287,9 +2289,9 @@ LOD_r_PMOD__FP14st_HIPLOADDATAP19st_PACKER_READ_DATA:
 ValidatePlatform__FP14st_HIPLOADDATAP19st_PACKER_READ_DATAPcPcPcPc:
 /* 800523C0 0004F1C0  94 21 FF 60 */	stwu r1, -0xa0(r1)
 /* 800523C4 0004F1C4  7C 08 02 A6 */	mflr r0
-/* 800523C8 0004F1C8  3C 60 80 2D */	lis r3, $$21572@ha
+/* 800523C8 0004F1C8  3C 60 80 2D */	lis r3, _esc__2_1572@ha
 /* 800523CC 0004F1CC  90 01 00 A4 */	stw r0, 0xa4(r1)
-/* 800523D0 0004F1D0  38 63 1F 50 */	addi r3, r3, $$21572@l
+/* 800523D0 0004F1D0  38 63 1F 50 */	addi r3, r3, _esc__2_1572@l
 /* 800523D4 0004F1D4  38 00 00 10 */	li r0, 0x10
 /* 800523D8 0004F1D8  BF A1 00 94 */	stmw r29, 0x94(r1)
 /* 800523DC 0004F1DC  7C BD 2B 78 */	mr r29, r5
@@ -2304,18 +2306,18 @@ lbl_800523F4:
 /* 800523FC 0004F1FC  90 65 00 04 */	stw r3, 4(r5)
 /* 80052400 0004F200  94 05 00 08 */	stwu r0, 8(r5)
 /* 80052404 0004F204  42 00 FF F0 */	bdnz lbl_800523F4
-/* 80052408 0004F208  3C 60 80 2D */	lis r3, $$2stringBase0_17@ha
+/* 80052408 0004F208  3C 60 80 2D */	lis r3, _esc__2_stringBase0_17@ha
 /* 8005240C 0004F20C  7F A5 EB 78 */	mr r5, r29
-/* 80052410 0004F210  38 83 22 D4 */	addi r4, r3, $$2stringBase0_17@l
+/* 80052410 0004F210  38 83 22 D4 */	addi r4, r3, _esc__2_stringBase0_17@l
 /* 80052414 0004F214  7F C6 F3 78 */	mr r6, r30
 /* 80052418 0004F218  7F E8 FB 78 */	mr r8, r31
 /* 8005241C 0004F21C  38 61 00 08 */	addi r3, r1, 8
 /* 80052420 0004F220  38 84 00 5F */	addi r4, r4, 0x5f
 /* 80052424 0004F224  4C C6 31 82 */	crclr 6
 /* 80052428 0004F228  48 26 68 61 */	bl sprintf
-/* 8005242C 0004F22C  3C 80 80 2D */	lis r4, $$2stringBase0_17@ha
+/* 8005242C 0004F22C  3C 80 80 2D */	lis r4, _esc__2_stringBase0_17@ha
 /* 80052430 0004F230  7F A3 EB 78 */	mr r3, r29
-/* 80052434 0004F234  38 84 22 D4 */	addi r4, r4, $$2stringBase0_17@l
+/* 80052434 0004F234  38 84 22 D4 */	addi r4, r4, _esc__2_stringBase0_17@l
 /* 80052438 0004F238  38 84 00 6B */	addi r4, r4, 0x6b
 /* 8005243C 0004F23C  48 26 F7 75 */	bl stricmp
 /* 80052440 0004F240  7C 60 00 34 */	cntlzw r0, r3
@@ -2327,9 +2329,9 @@ lbl_80052454:
 /* 80052454 0004F254  48 00 00 B1 */	bl zMainIsNTSC__Fv
 /* 80052458 0004F258  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8005245C 0004F25C  41 82 00 24 */	beq lbl_80052480
-/* 80052460 0004F260  3C 80 80 2D */	lis r4, $$2stringBase0_17@ha
+/* 80052460 0004F260  3C 80 80 2D */	lis r4, _esc__2_stringBase0_17@ha
 /* 80052464 0004F264  7F C3 F3 78 */	mr r3, r30
-/* 80052468 0004F268  38 84 22 D4 */	addi r4, r4, $$2stringBase0_17@l
+/* 80052468 0004F268  38 84 22 D4 */	addi r4, r4, _esc__2_stringBase0_17@l
 /* 8005246C 0004F26C  38 84 00 6E */	addi r4, r4, 0x6e
 /* 80052470 0004F270  48 26 F7 41 */	bl stricmp
 /* 80052474 0004F274  7C 60 00 34 */	cntlzw r0, r3
@@ -2339,9 +2341,9 @@ lbl_80052480:
 /* 80052480 0004F280  48 00 00 71 */	bl zMainIsPAL__Fv
 /* 80052484 0004F284  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80052488 0004F288  41 82 00 20 */	beq lbl_800524A8
-/* 8005248C 0004F28C  3C 80 80 2D */	lis r4, $$2stringBase0_17@ha
+/* 8005248C 0004F28C  3C 80 80 2D */	lis r4, _esc__2_stringBase0_17@ha
 /* 80052490 0004F290  7F C3 F3 78 */	mr r3, r30
-/* 80052494 0004F294  38 84 22 D4 */	addi r4, r4, $$2stringBase0_17@l
+/* 80052494 0004F294  38 84 22 D4 */	addi r4, r4, _esc__2_stringBase0_17@l
 /* 80052498 0004F298  38 84 00 73 */	addi r4, r4, 0x73
 /* 8005249C 0004F29C  48 26 F7 15 */	bl stricmp
 /* 800524A0 0004F2A0  7C 60 00 34 */	cntlzw r0, r3
@@ -2352,9 +2354,9 @@ lbl_800524A8:
 /* 800524B0 0004F2B0  38 60 00 00 */	li r3, 0
 /* 800524B4 0004F2B4  48 00 00 28 */	b lbl_800524DC
 lbl_800524B8:
-/* 800524B8 0004F2B8  3C 80 80 2D */	lis r4, $$2stringBase0_17@ha
+/* 800524B8 0004F2B8  3C 80 80 2D */	lis r4, _esc__2_stringBase0_17@ha
 /* 800524BC 0004F2BC  7F E3 FB 78 */	mr r3, r31
-/* 800524C0 0004F2C0  38 84 22 D4 */	addi r4, r4, $$2stringBase0_17@l
+/* 800524C0 0004F2C0  38 84 22 D4 */	addi r4, r4, _esc__2_stringBase0_17@l
 /* 800524C4 0004F2C4  38 84 00 77 */	addi r4, r4, 0x77
 /* 800524C8 0004F2C8  48 26 F6 E9 */	bl stricmp
 /* 800524CC 0004F2CC  7C 60 00 34 */	cntlzw r0, r3
@@ -2458,9 +2460,9 @@ lbl_800525AC:
 /* 8005261C 0004F41C  4E 80 04 21 */	bctrl 
 /* 80052620 0004F420  2C 03 00 00 */	cmpwi r3, 0
 /* 80052624 0004F424  40 82 00 18 */	bne lbl_8005263C
-/* 80052628 0004F428  3C 80 80 2D */	lis r4, $$2stringBase0_17@ha
+/* 80052628 0004F428  3C 80 80 2D */	lis r4, _esc__2_stringBase0_17@ha
 /* 8005262C 0004F42C  38 61 00 08 */	addi r3, r1, 8
-/* 80052630 0004F430  38 84 22 D4 */	addi r4, r4, $$2stringBase0_17@l
+/* 80052630 0004F430  38 84 22 D4 */	addi r4, r4, _esc__2_stringBase0_17@l
 /* 80052634 0004F434  38 84 00 83 */	addi r4, r4, 0x83
 /* 80052638 0004F438  48 26 9E BD */	bl strcpy
 lbl_8005263C:
@@ -2754,10 +2756,10 @@ lbl_80052A24:
 LOD_r_ADBG__FP14st_HIPLOADDATAP19st_PACKER_READ_DATAP19st_PACKER_ATOC_NODE:
 /* 80052A3C 0004F83C  94 21 FE E0 */	stwu r1, -0x120(r1)
 /* 80052A40 0004F840  7C 08 02 A6 */	mflr r0
-/* 80052A44 0004F844  3C C0 80 2D */	lis r6, $$21655@ha
+/* 80052A44 0004F844  3C C0 80 2D */	lis r6, _esc__2_1655@ha
 /* 80052A48 0004F848  38 E0 00 00 */	li r7, 0
 /* 80052A4C 0004F84C  90 01 01 24 */	stw r0, 0x124(r1)
-/* 80052A50 0004F850  38 C6 1F D0 */	addi r6, r6, $$21655@l
+/* 80052A50 0004F850  38 C6 1F D0 */	addi r6, r6, _esc__2_1655@l
 /* 80052A54 0004F854  38 00 00 20 */	li r0, 0x20
 /* 80052A58 0004F858  BF A1 01 14 */	stmw r29, 0x114(r1)
 /* 80052A5C 0004F85C  7C 9E 23 78 */	mr r30, r4
@@ -3164,9 +3166,9 @@ lbl_80052FA8:
 PKR_bld_typecnt__FP19st_PACKER_READ_DATA:
 /* 80052FC0 0004FDC0  94 21 FD C0 */	stwu r1, -0x240(r1)
 /* 80052FC4 0004FDC4  7C 08 02 A6 */	mflr r0
-/* 80052FC8 0004FDC8  3C 80 80 2D */	lis r4, $$21753@ha
+/* 80052FC8 0004FDC8  3C 80 80 2D */	lis r4, _esc__2_1753@ha
 /* 80052FCC 0004FDCC  90 01 02 44 */	stw r0, 0x244(r1)
-/* 80052FD0 0004FDD0  38 84 20 D0 */	addi r4, r4, $$21753@l
+/* 80052FD0 0004FDD0  38 84 20 D0 */	addi r4, r4, _esc__2_1753@l
 /* 80052FD4 0004FDD4  38 00 00 40 */	li r0, 0x40
 /* 80052FD8 0004FDD8  38 A1 00 04 */	addi r5, r1, 4
 /* 80052FDC 0004FDDC  BE E1 02 1C */	stmw r23, 0x21c(r1)
@@ -3525,3 +3527,6 @@ lbl_80053458:
 /* 8005346C 0005026C  80 04 00 04 */	lwz r0, 4(r4)
 /* 80053470 00050270  90 05 00 04 */	stw r0, 4(r5)
 /* 80053474 00050274  4E 80 00 20 */	blr 
+
+.endif
+

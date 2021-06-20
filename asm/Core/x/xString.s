@@ -2,9 +2,11 @@
 
 .section .data
 
-.global $$21346
-$$21346:
+.global _esc__2_1346
+_esc__2_1346:
 	.incbin "baserom.dol", 0x2FFE70, 0x30
+
+.if 0
 
 .section .text
 
@@ -688,10 +690,10 @@ imemcmp__FPCvPCvUl:
 /* 8006D4A8 0006A2A8  48 00 00 34 */	b lbl_8006D4DC
 lbl_8006D4AC:
 /* 8006D4AC 0006A2AC  88 7E 00 00 */	lbz r3, 0(r30)
-/* 8006D4B0 0006A2B0  48 00 00 4D */	bl tolower__21$$2unnamed$$2xString_cpp$$2Fc
+/* 8006D4B0 0006A2B0  48 00 00 4D */	bl tolower__21_esc__2_unnamed_esc__2_xString_cpp_esc__2_Fc
 /* 8006D4B4 0006A2B4  7C 7F 1B 78 */	mr r31, r3
 /* 8006D4B8 0006A2B8  88 7D 00 00 */	lbz r3, 0(r29)
-/* 8006D4BC 0006A2BC  48 00 00 41 */	bl tolower__21$$2unnamed$$2xString_cpp$$2Fc
+/* 8006D4BC 0006A2BC  48 00 00 41 */	bl tolower__21_esc__2_unnamed_esc__2_xString_cpp_esc__2_Fc
 /* 8006D4C0 0006A2C0  7C 1F 18 00 */	cmpw r31, r3
 /* 8006D4C4 0006A2C4  41 82 00 0C */	beq lbl_8006D4D0
 /* 8006D4C8 0006A2C8  7C 63 F8 50 */	subf r3, r3, r31
@@ -711,20 +713,20 @@ lbl_8006D4E8:
 /* 8006D4F4 0006A2F4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8006D4F8 0006A2F8  4E 80 00 20 */	blr 
 
-.global tolower__21$$2unnamed$$2xString_cpp$$2Fc
-tolower__21$$2unnamed$$2xString_cpp$$2Fc:
+.global tolower__21_esc__2_unnamed_esc__2_xString_cpp_esc__2_Fc
+tolower__21_esc__2_unnamed_esc__2_xString_cpp_esc__2_Fc:
 /* 8006D4FC 0006A2FC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8006D500 0006A300  7C 08 02 A6 */	mflr r0
 /* 8006D504 0006A304  7C 63 07 74 */	extsb r3, r3
 /* 8006D508 0006A308  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8006D50C 0006A30C  48 00 00 15 */	bl tolower__21$$2unnamed$$2xString_cpp$$2Fi
+/* 8006D50C 0006A30C  48 00 00 15 */	bl tolower__21_esc__2_unnamed_esc__2_xString_cpp_esc__2_Fi
 /* 8006D510 0006A310  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006D514 0006A314  7C 08 03 A6 */	mtlr r0
 /* 8006D518 0006A318  38 21 00 10 */	addi r1, r1, 0x10
 /* 8006D51C 0006A31C  4E 80 00 20 */	blr 
 
-.global tolower__21$$2unnamed$$2xString_cpp$$2Fi
-tolower__21$$2unnamed$$2xString_cpp$$2Fi:
+.global tolower__21_esc__2_unnamed_esc__2_xString_cpp_esc__2_Fi
+tolower__21_esc__2_unnamed_esc__2_xString_cpp_esc__2_Fi:
 /* 8006D520 0006A320  54 60 FE B4 */	rlwinm r0, r3, 0x1f, 0x1a, 0x1a
 /* 8006D524 0006A324  7C 63 03 78 */	or r3, r3, r0
 /* 8006D528 0006A328  4E 80 00 20 */	blr 
@@ -837,9 +839,9 @@ lbl_8006D678:
 /* 8006D67C 0006A47C  7C C4 33 78 */	mr r4, r6
 /* 8006D680 0006A480  28 00 00 0B */	cmplwi r0, 0xb
 /* 8006D684 0006A484  41 81 06 78 */	bgt lbl_8006DCFC
-/* 8006D688 0006A488  3C C0 80 30 */	lis r6, $$21346@ha
+/* 8006D688 0006A488  3C C0 80 30 */	lis r6, _esc__2_1346@ha
 /* 8006D68C 0006A48C  54 00 10 3A */	slwi r0, r0, 2
-/* 8006D690 0006A490  38 C6 2E 70 */	addi r6, r6, $$21346@l
+/* 8006D690 0006A490  38 C6 2E 70 */	addi r6, r6, _esc__2_1346@l
 /* 8006D694 0006A494  7C 06 00 2E */	lwzx r0, r6, r0
 /* 8006D698 0006A498  7C 09 03 A6 */	mtctr r0
 /* 8006D69C 0006A49C  4E 80 04 20 */	bctr 
@@ -1323,3 +1325,6 @@ lbl_8006DD3C:
 lbl_8006DD50:
 /* 8006DD50 0006AB50  38 60 00 00 */	li r3, 0
 /* 8006DD54 0006AB54  4E 80 00 20 */	blr 
+
+.endif
+

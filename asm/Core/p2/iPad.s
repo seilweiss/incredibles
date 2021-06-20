@@ -11,20 +11,20 @@ sPadCurrLevel:
 .global sPadDeltaLevel
 sPadDeltaLevel:
 	.skip 0x10
-.global held_start$1014
-held_start$1014:
+.global held_start_esc__7_1014
+held_start_esc__7_1014:
 	.skip 0x4
 .global lbl_803CF58C
 lbl_803CF58C:
 	.skip 0x4
-.global init$1015
-init$1015:
+.global init_esc__7_1015
+init_esc__7_1015:
 	.skip 0x1
-.global held_through_reset$1017
-held_through_reset$1017:
+.global held_through_reset_esc__7_1017
+held_through_reset_esc__7_1017:
 	.skip 0x1
-.global init$1018
-init$1018:
+.global init_esc__7_1018
+init_esc__7_1018:
 	.skip 0x6
 
 .section .sdata
@@ -38,33 +38,35 @@ sPadData:
 
 .section .sdata2
 
-.global $$2980
-$$2980:
+.global _esc__2_980
+_esc__2_980:
 	.incbin "baserom.dol", 0x32F8B8, 0x4
-.global $$2981_0
-$$2981_0:
+.global _esc__2_981_0
+_esc__2_981_0:
 	.incbin "baserom.dol", 0x32F8BC, 0x4
-.global $$2982
-$$2982:
+.global _esc__2_982
+_esc__2_982:
 	.incbin "baserom.dol", 0x32F8C0, 0x4
-.global $$2983
-$$2983:
+.global _esc__2_983
+_esc__2_983:
 	.incbin "baserom.dol", 0x32F8C4, 0x4
-.global $$2984_0
-$$2984_0:
+.global _esc__2_984_0
+_esc__2_984_0:
 	.incbin "baserom.dol", 0x32F8C8, 0x4
-.global $$21038
-$$21038:
+.global _esc__2_1038
+_esc__2_1038:
 	.incbin "baserom.dol", 0x32F8CC, 0x4
-.global $$21040_2
-$$21040_2:
+.global _esc__2_1040_2
+_esc__2_1040_2:
 	.incbin "baserom.dol", 0x32F8D0, 0x8
-.global $$21064_0
-$$21064_0:
+.global _esc__2_1064_0
+_esc__2_1064_0:
 	.incbin "baserom.dol", 0x32F8D8, 0x8
-.global $$21065_0
-$$21065_0:
+.global _esc__2_1065_0
+_esc__2_1065_0:
 	.incbin "baserom.dol", 0x32F8E0, 0x8
+
+.if 0
 
 .section .text
 
@@ -134,27 +136,27 @@ iPadEnable__FP8_tagxPads:
 
 .global iPadConvStick__Ff
 iPadConvStick__Ff:
-/* 8007B8D8 000786D8  C0 02 91 D8 */	lfs f0, $$2980-_SDA2_BASE_(r2)
+/* 8007B8D8 000786D8  C0 02 91 D8 */	lfs f0, _esc__2_980-_SDA2_BASE_(r2)
 /* 8007B8DC 000786DC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8007B8E0 000786E0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8007B8E4 000786E4  40 81 00 0C */	ble lbl_8007B8F0
 /* 8007B8E8 000786E8  FC 20 00 90 */	fmr f1, f0
 /* 8007B8EC 000786EC  48 00 00 14 */	b lbl_8007B900
 lbl_8007B8F0:
-/* 8007B8F0 000786F0  C0 02 91 DC */	lfs f0, $$2981_0-_SDA2_BASE_(r2)
+/* 8007B8F0 000786F0  C0 02 91 DC */	lfs f0, _esc__2_981_0-_SDA2_BASE_(r2)
 /* 8007B8F4 000786F4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8007B8F8 000786F8  40 80 00 08 */	bge lbl_8007B900
 /* 8007B8FC 000786FC  FC 20 00 90 */	fmr f1, f0
 lbl_8007B900:
-/* 8007B900 00078700  C0 42 91 E0 */	lfs f2, $$2982-_SDA2_BASE_(r2)
-/* 8007B904 00078704  C0 02 91 E4 */	lfs f0, $$2983-_SDA2_BASE_(r2)
+/* 8007B900 00078700  C0 42 91 E0 */	lfs f2, _esc__2_982-_SDA2_BASE_(r2)
+/* 8007B904 00078704  C0 02 91 E4 */	lfs f0, _esc__2_983-_SDA2_BASE_(r2)
 /* 8007B908 00078708  EC 22 00 72 */	fmuls f1, f2, f1
 /* 8007B90C 0007870C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8007B910 00078710  40 81 00 0C */	ble lbl_8007B91C
 /* 8007B914 00078714  FC 20 00 90 */	fmr f1, f0
 /* 8007B918 00078718  48 00 00 14 */	b lbl_8007B92C
 lbl_8007B91C:
-/* 8007B91C 0007871C  C0 02 91 E8 */	lfs f0, $$2984_0-_SDA2_BASE_(r2)
+/* 8007B91C 0007871C  C0 02 91 E8 */	lfs f0, _esc__2_984_0-_SDA2_BASE_(r2)
 /* 8007B920 00078720  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8007B924 00078724  40 80 00 08 */	bge lbl_8007B92C
 /* 8007B928 00078728  FC 20 00 90 */	fmr f1, f0
@@ -356,7 +358,7 @@ lbl_8007BB5C:
 /* 8007BBFC 000789FC  3C 00 43 30 */	lis r0, 0x4330
 /* 8007BC00 00078A00  93 FE 00 00 */	stw r31, 0(r30)
 /* 8007BC04 00078A04  38 8D 86 4C */	addi r4, r13, sPadData-_SDA_BASE_
-/* 8007BC08 00078A08  C8 22 91 F0 */	lfd f1, $$21040_2-_SDA2_BASE_(r2)
+/* 8007BC08 00078A08  C8 22 91 F0 */	lfd f1, _esc__2_1040_2-_SDA2_BASE_(r2)
 /* 8007BC0C 00078A0C  A8 7D 00 44 */	lha r3, 0x44(r29)
 /* 8007BC10 00078A10  90 01 00 08 */	stw r0, 8(r1)
 /* 8007BC14 00078A14  1C 03 00 0C */	mulli r0, r3, 0xc
@@ -371,7 +373,7 @@ lbl_8007BB5C:
 /* 8007BC38 00078A38  98 7D 00 38 */	stb r3, 0x38(r29)
 /* 8007BC3C 00078A3C  3C 00 43 30 */	lis r0, 0x4330
 /* 8007BC40 00078A40  38 8D 86 4C */	addi r4, r13, sPadData-_SDA_BASE_
-/* 8007BC44 00078A44  C8 22 91 F0 */	lfd f1, $$21040_2-_SDA2_BASE_(r2)
+/* 8007BC44 00078A44  C8 22 91 F0 */	lfd f1, _esc__2_1040_2-_SDA2_BASE_(r2)
 /* 8007BC48 00078A48  A8 7D 00 44 */	lha r3, 0x44(r29)
 /* 8007BC4C 00078A4C  90 01 00 10 */	stw r0, 0x10(r1)
 /* 8007BC50 00078A50  1C 03 00 0C */	mulli r0, r3, 0xc
@@ -387,7 +389,7 @@ lbl_8007BB5C:
 /* 8007BC78 00078A78  3C 00 43 30 */	lis r0, 0x4330
 /* 8007BC7C 00078A7C  98 7D 00 39 */	stb r3, 0x39(r29)
 /* 8007BC80 00078A80  38 8D 86 4C */	addi r4, r13, sPadData-_SDA_BASE_
-/* 8007BC84 00078A84  C8 22 91 F0 */	lfd f1, $$21040_2-_SDA2_BASE_(r2)
+/* 8007BC84 00078A84  C8 22 91 F0 */	lfd f1, _esc__2_1040_2-_SDA2_BASE_(r2)
 /* 8007BC88 00078A88  A8 7D 00 44 */	lha r3, 0x44(r29)
 /* 8007BC8C 00078A8C  90 01 00 18 */	stw r0, 0x18(r1)
 /* 8007BC90 00078A90  1C 03 00 0C */	mulli r0, r3, 0xc
@@ -402,7 +404,7 @@ lbl_8007BB5C:
 /* 8007BCB4 00078AB4  98 7D 00 3A */	stb r3, 0x3a(r29)
 /* 8007BCB8 00078AB8  3C 00 43 30 */	lis r0, 0x4330
 /* 8007BCBC 00078ABC  38 8D 86 4C */	addi r4, r13, sPadData-_SDA_BASE_
-/* 8007BCC0 00078AC0  C8 22 91 F0 */	lfd f1, $$21040_2-_SDA2_BASE_(r2)
+/* 8007BCC0 00078AC0  C8 22 91 F0 */	lfd f1, _esc__2_1040_2-_SDA2_BASE_(r2)
 /* 8007BCC4 00078AC4  A8 7D 00 44 */	lha r3, 0x44(r29)
 /* 8007BCC8 00078AC8  90 01 00 20 */	stw r0, 0x20(r1)
 /* 8007BCCC 00078ACC  1C 03 00 0C */	mulli r0, r3, 0xc
@@ -428,21 +430,21 @@ lbl_8007BB5C:
 lbl_8007BD1C:
 /* 8007BD1C 00078B1C  7F A3 EB 78 */	mr r3, r29
 /* 8007BD20 00078B20  48 00 02 89 */	bl iPadUpdateRumble__FP8_tagxPad
-/* 8007BD24 00078B24  88 0D C1 10 */	lbz r0, init$1015-_SDA_BASE_(r13)
+/* 8007BD24 00078B24  88 0D C1 10 */	lbz r0, init_esc__7_1015-_SDA_BASE_(r13)
 /* 8007BD28 00078B28  7C 00 07 75 */	extsb. r0, r0
 /* 8007BD2C 00078B2C  40 82 00 18 */	bne lbl_8007BD44
 /* 8007BD30 00078B30  38 60 00 00 */	li r3, 0
 /* 8007BD34 00078B34  38 00 00 01 */	li r0, 1
 /* 8007BD38 00078B38  90 6D C1 0C */	stw r3, lbl_803CF58C-_SDA_BASE_(r13)
-/* 8007BD3C 00078B3C  90 6D C1 08 */	stw r3, held_start$1014-_SDA_BASE_(r13)
-/* 8007BD40 00078B40  98 0D C1 10 */	stb r0, init$1015-_SDA_BASE_(r13)
+/* 8007BD3C 00078B3C  90 6D C1 08 */	stw r3, held_start_esc__7_1014-_SDA_BASE_(r13)
+/* 8007BD40 00078B40  98 0D C1 10 */	stb r0, init_esc__7_1015-_SDA_BASE_(r13)
 lbl_8007BD44:
-/* 8007BD44 00078B44  88 0D C1 12 */	lbz r0, init$1018-_SDA_BASE_(r13)
+/* 8007BD44 00078B44  88 0D C1 12 */	lbz r0, init_esc__7_1018-_SDA_BASE_(r13)
 /* 8007BD48 00078B48  7C 00 07 75 */	extsb. r0, r0
 /* 8007BD4C 00078B4C  40 82 00 10 */	bne lbl_8007BD5C
 /* 8007BD50 00078B50  38 00 00 01 */	li r0, 1
-/* 8007BD54 00078B54  98 0D C1 11 */	stb r0, held_through_reset$1017-_SDA_BASE_(r13)
-/* 8007BD58 00078B58  98 0D C1 12 */	stb r0, init$1018-_SDA_BASE_(r13)
+/* 8007BD54 00078B54  98 0D C1 11 */	stb r0, held_through_reset_esc__7_1017-_SDA_BASE_(r13)
+/* 8007BD58 00078B58  98 0D C1 12 */	stb r0, init_esc__7_1018-_SDA_BASE_(r13)
 lbl_8007BD5C:
 /* 8007BD5C 00078B5C  A8 1D 00 44 */	lha r0, 0x44(r29)
 /* 8007BD60 00078B60  2C 00 00 00 */	cmpwi r0, 0
@@ -456,16 +458,16 @@ lbl_8007BD5C:
 /* 8007BD80 00078B80  54 60 DE 3F */	rlwinm. r0, r3, 0x1b, 0x18, 0x1f
 /* 8007BD84 00078B84  54 7D D9 7E */	srwi r29, r3, 5
 /* 8007BD88 00078B88  41 82 00 40 */	beq lbl_8007BDC8
-/* 8007BD8C 00078B8C  88 0D C1 11 */	lbz r0, held_through_reset$1017-_SDA_BASE_(r13)
+/* 8007BD8C 00078B8C  88 0D C1 11 */	lbz r0, held_through_reset_esc__7_1017-_SDA_BASE_(r13)
 /* 8007BD90 00078B90  28 00 00 00 */	cmplwi r0, 0
 /* 8007BD94 00078B94  40 82 00 34 */	bne lbl_8007BDC8
 /* 8007BD98 00078B98  48 00 65 2D */	bl iTimeGet__Fv
 /* 8007BD9C 00078B9C  7C 65 1B 78 */	mr r5, r3
 /* 8007BDA0 00078BA0  7C 86 23 78 */	mr r6, r4
-/* 8007BDA4 00078BA4  80 6D C1 08 */	lwz r3, held_start$1014-_SDA_BASE_(r13)
+/* 8007BDA4 00078BA4  80 6D C1 08 */	lwz r3, held_start_esc__7_1014-_SDA_BASE_(r13)
 /* 8007BDA8 00078BA8  80 8D C1 0C */	lwz r4, lbl_803CF58C-_SDA_BASE_(r13)
 /* 8007BDAC 00078BAC  48 00 65 91 */	bl iTimeDiffSec__Fxx
-/* 8007BDB0 00078BB0  C0 02 91 EC */	lfs f0, $$21038-_SDA2_BASE_(r2)
+/* 8007BDB0 00078BB0  C0 02 91 EC */	lfs f0, _esc__2_1038-_SDA2_BASE_(r2)
 /* 8007BDB4 00078BB4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8007BDB8 00078BB8  4C 41 13 82 */	cror 2, 1, 2
 /* 8007BDBC 00078BBC  40 82 00 28 */	bne lbl_8007BDE4
@@ -475,10 +477,10 @@ lbl_8007BDC8:
 /* 8007BDC8 00078BC8  48 00 64 FD */	bl iTimeGet__Fv
 /* 8007BDCC 00078BCC  57 A0 06 3F */	clrlwi. r0, r29, 0x18
 /* 8007BDD0 00078BD0  90 8D C1 0C */	stw r4, lbl_803CF58C-_SDA_BASE_(r13)
-/* 8007BDD4 00078BD4  90 6D C1 08 */	stw r3, held_start$1014-_SDA_BASE_(r13)
+/* 8007BDD4 00078BD4  90 6D C1 08 */	stw r3, held_start_esc__7_1014-_SDA_BASE_(r13)
 /* 8007BDD8 00078BD8  40 82 00 0C */	bne lbl_8007BDE4
 /* 8007BDDC 00078BDC  38 00 00 00 */	li r0, 0
-/* 8007BDE0 00078BE0  98 0D C1 11 */	stb r0, held_through_reset$1017-_SDA_BASE_(r13)
+/* 8007BDE0 00078BE0  98 0D C1 11 */	stb r0, held_through_reset_esc__7_1017-_SDA_BASE_(r13)
 lbl_8007BDE4:
 /* 8007BDE4 00078BE4  38 60 00 01 */	li r3, 1
 lbl_8007BDE8:
@@ -577,12 +579,12 @@ iPadStartRumble__FP8_tagxPadf:
 /* 8007BF28 00078D28  7C E4 01 2E */	stwx r7, r4, r0
 /* 8007BF2C 00078D2C  48 00 00 58 */	b lbl_8007BF84
 lbl_8007BF30:
-/* 8007BF30 00078D30  C8 02 92 00 */	lfd f0, $$21065_0-_SDA2_BASE_(r2)
+/* 8007BF30 00078D30  C8 02 92 00 */	lfd f0, _esc__2_1065_0-_SDA2_BASE_(r2)
 /* 8007BF34 00078D34  38 A0 00 00 */	li r5, 0
 /* 8007BF38 00078D38  A8 03 00 44 */	lha r0, 0x44(r3)
 /* 8007BF3C 00078D3C  38 8D C0 E8 */	addi r4, r13, sPadCurrLevel-_SDA_BASE_
 /* 8007BF40 00078D40  FC 00 08 2A */	fadd f0, f0, f1
-/* 8007BF44 00078D44  C8 22 91 F8 */	lfd f1, $$21064_0-_SDA2_BASE_(r2)
+/* 8007BF44 00078D44  C8 22 91 F8 */	lfd f1, _esc__2_1064_0-_SDA2_BASE_(r2)
 /* 8007BF48 00078D48  54 00 10 3A */	slwi r0, r0, 2
 /* 8007BF4C 00078D4C  38 CD C0 F8 */	addi r6, r13, sPadDeltaLevel-_SDA_BASE_
 /* 8007BF50 00078D50  7C A4 01 2E */	stwx r5, r4, r0
@@ -666,3 +668,6 @@ lbl_8007C058:
 .global iPadKill__Fv
 iPadKill__Fv:
 /* 8007C068 00078E68  4E 80 00 20 */	blr 
+
+.endif
+

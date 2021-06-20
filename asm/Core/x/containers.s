@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global push_front__14pool_list_baseFv
@@ -172,3 +174,6 @@ free__14pool_list_baseFPQ214pool_list_base9node_base:
 /* 801E4868 001E1668  90 04 00 04 */	stw r0, 4(r4)
 /* 801E486C 001E166C  90 83 00 18 */	stw r4, 0x18(r3)
 /* 801E4870 001E1670  4E 80 00 20 */	blr 
+
+.endif
+

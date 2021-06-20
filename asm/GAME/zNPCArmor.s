@@ -8,14 +8,14 @@ tankArmorTranslation__4zNPC:
 .global __vt__Q24zNPC5Armor
 __vt__Q24zNPC5Armor:
 	.incbin "baserom.dol", 0x307A84, 0x7C
-.global __vt__39behavior_implementation$$0Q24zNPC6common$$1
-__vt__39behavior_implementation$$0Q24zNPC6common$$1:
+.global __vt__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
+__vt__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_:
 	.incbin "baserom.dol", 0x307B00, 0x80
 
 .section .rodata
 
-.global $$2stringBase0_70
-$$2stringBase0_70:
+.global _esc__2_stringBase0_70
+_esc__2_stringBase0_70:
 	.incbin "baserom.dol", 0x2DCCB0, 0xA0
 
 .section .sbss
@@ -26,18 +26,20 @@ numArmorNPC__Q24zNPC5Armor:
 
 .section .sdata2
 
-.global $$21355_1
-$$21355_1:
+.global _esc__2_1355_1
+_esc__2_1355_1:
 	.incbin "baserom.dol", 0x330E30, 0x4
-.global $$21356_0
-$$21356_0:
+.global _esc__2_1356_0
+_esc__2_1356_0:
 	.incbin "baserom.dol", 0x330E34, 0x4
-.global $$21358_0
-$$21358_0:
+.global _esc__2_1358_0
+_esc__2_1358_0:
 	.incbin "baserom.dol", 0x330E38, 0x8
-.global $$21378_1
-$$21378_1:
+.global _esc__2_1378_1
+_esc__2_1378_1:
 	.incbin "baserom.dol", 0x330E40, 0x8
+
+.if 0
 
 .section .text
 
@@ -45,10 +47,10 @@ $$21378_1:
 AddArmor__Q24zNPC5ArmorFPQ24zNPC6common:
 /* 800FEAC8 000FB8C8  94 21 FF 00 */	stwu r1, -0x100(r1)
 /* 800FEACC 000FB8CC  7C 08 02 A6 */	mflr r0
-/* 800FEAD0 000FB8D0  3C 80 80 2E */	lis r4, $$2stringBase0_70@ha
+/* 800FEAD0 000FB8D0  3C 80 80 2E */	lis r4, _esc__2_stringBase0_70@ha
 /* 800FEAD4 000FB8D4  38 C0 FF FF */	li r6, -1
 /* 800FEAD8 000FB8D8  90 01 01 04 */	stw r0, 0x104(r1)
-/* 800FEADC 000FB8DC  38 84 FC B0 */	addi r4, r4, $$2stringBase0_70@l
+/* 800FEADC 000FB8DC  38 84 FC B0 */	addi r4, r4, _esc__2_stringBase0_70@l
 /* 800FEAE0 000FB8E0  38 A1 00 10 */	addi r5, r1, 0x10
 /* 800FEAE4 000FB8E4  BF 01 00 E0 */	stmw r24, 0xe0(r1)
 /* 800FEAE8 000FB8E8  7C 7C 1B 78 */	mr r28, r3
@@ -56,9 +58,9 @@ AddArmor__Q24zNPC5ArmorFPQ24zNPC6common:
 /* 800FEAF0 000FB8F0  80 01 00 10 */	lwz r0, 0x10(r1)
 /* 800FEAF4 000FB8F4  2C 00 FF FF */	cmpwi r0, -1
 /* 800FEAF8 000FB8F8  41 82 02 4C */	beq lbl_800FED44
-/* 800FEAFC 000FB8FC  3C 80 80 2E */	lis r4, $$2stringBase0_70@ha
+/* 800FEAFC 000FB8FC  3C 80 80 2E */	lis r4, _esc__2_stringBase0_70@ha
 /* 800FEB00 000FB900  7F 83 E3 78 */	mr r3, r28
-/* 800FEB04 000FB904  38 84 FC B0 */	addi r4, r4, $$2stringBase0_70@l
+/* 800FEB04 000FB904  38 84 FC B0 */	addi r4, r4, _esc__2_stringBase0_70@l
 /* 800FEB08 000FB908  38 A1 00 0C */	addi r5, r1, 0xc
 /* 800FEB0C 000FB90C  38 84 00 0B */	addi r4, r4, 0xb
 /* 800FEB10 000FB910  38 C0 00 00 */	li r6, 0
@@ -87,24 +89,24 @@ lbl_800FEB64:
 /* 800FEB64 000FB964  7F 83 E3 78 */	mr r3, r28
 /* 800FEB68 000FB968  7F E4 FB 78 */	mr r4, r31
 /* 800FEB6C 000FB96C  38 A0 00 7E */	li r5, 0x7e
-/* 800FEB70 000FB970  48 00 01 E9 */	bl add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc
-/* 800FEB74 000FB974  3C 80 80 2E */	lis r4, $$2stringBase0_70@ha
+/* 800FEB70 000FB970  48 00 01 E9 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc
+/* 800FEB74 000FB974  3C 80 80 2E */	lis r4, _esc__2_stringBase0_70@ha
 /* 800FEB78 000FB978  7F 83 E3 78 */	mr r3, r28
-/* 800FEB7C 000FB97C  38 84 FC B0 */	addi r4, r4, $$2stringBase0_70@l
+/* 800FEB7C 000FB97C  38 84 FC B0 */	addi r4, r4, _esc__2_stringBase0_70@l
 /* 800FEB80 000FB980  38 A1 00 08 */	addi r5, r1, 8
 /* 800FEB84 000FB984  38 84 00 19 */	addi r4, r4, 0x19
 /* 800FEB88 000FB988  38 C0 00 00 */	li r6, 0
 /* 800FEB8C 000FB98C  4B FF FD E9 */	bl get_parameter__Q24zNPC4baseFPCcPPCcPCc
-/* 800FEB90 000FB990  3C 60 80 2E */	lis r3, $$2stringBase0_70@ha
-/* 800FEB94 000FB994  38 63 FC B0 */	addi r3, r3, $$2stringBase0_70@l
+/* 800FEB90 000FB990  3C 60 80 2E */	lis r3, _esc__2_stringBase0_70@ha
+/* 800FEB94 000FB994  38 63 FC B0 */	addi r3, r3, _esc__2_stringBase0_70@l
 /* 800FEB98 000FB998  38 63 00 25 */	addi r3, r3, 0x25
 /* 800FEB9C 000FB99C  4B F6 E0 85 */	bl xStrHash__FPCc
 /* 800FEBA0 000FB9A0  4B F6 7E 69 */	bl xSndMgrGetSoundGroup__FUi
 /* 800FEBA4 000FB9A4  3C A0 80 38 */	lis r5, globals@ha
-/* 800FEBA8 000FB9A8  3C 80 80 2E */	lis r4, $$2stringBase0_70@ha
+/* 800FEBA8 000FB9A8  3C 80 80 2E */	lis r4, _esc__2_stringBase0_70@ha
 /* 800FEBAC 000FB9AC  90 7F 00 28 */	stw r3, 0x28(r31)
 /* 800FEBB0 000FB9B0  3B 25 2A 38 */	addi r25, r5, globals@l
-/* 800FEBB4 000FB9B4  3B 44 FC B0 */	addi r26, r4, $$2stringBase0_70@l
+/* 800FEBB4 000FB9B4  3B 44 FC B0 */	addi r26, r4, _esc__2_stringBase0_70@l
 /* 800FEBB8 000FB9B8  3B A0 00 00 */	li r29, 0
 /* 800FEBBC 000FB9BC  3B 60 00 00 */	li r27, 0
 lbl_800FEBC0:
@@ -170,9 +172,9 @@ lbl_800FEC3C:
 /* 800FECA8 000FBAA8  4B FF FC CD */	bl get_parameter__Q24zNPC4baseFPCcPPCcPCc
 /* 800FECAC 000FBAAC  4B FF FF 14 */	b lbl_800FEBC0
 lbl_800FECB0:
-/* 800FECB0 000FBAB0  3C 60 80 2E */	lis r3, $$2stringBase0_70@ha
+/* 800FECB0 000FBAB0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_70@ha
 /* 800FECB4 000FBAB4  93 BF 00 1C */	stw r29, 0x1c(r31)
-/* 800FECB8 000FBAB8  38 83 FC B0 */	addi r4, r3, $$2stringBase0_70@l
+/* 800FECB8 000FBAB8  38 83 FC B0 */	addi r4, r3, _esc__2_stringBase0_70@l
 /* 800FECBC 000FBABC  7F 83 E3 78 */	mr r3, r28
 /* 800FECC0 000FBAC0  38 84 00 53 */	addi r4, r4, 0x53
 /* 800FECC4 000FBAC4  38 BF 00 14 */	addi r5, r31, 0x14
@@ -194,8 +196,8 @@ lbl_800FECE4:
 /* 800FED00 000FBB00  2C 00 00 01 */	cmpwi r0, 1
 /* 800FED04 000FBB04  90 0D CB B0 */	stw r0, numArmorNPC__Q24zNPC5Armor-_SDA_BASE_(r13)
 /* 800FED08 000FBB08  40 82 00 3C */	bne lbl_800FED44
-/* 800FED0C 000FBB0C  3C 60 80 2E */	lis r3, $$2stringBase0_70@ha
-/* 800FED10 000FBB10  38 63 FC B0 */	addi r3, r3, $$2stringBase0_70@l
+/* 800FED0C 000FBB0C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_70@ha
+/* 800FED10 000FBB10  38 63 FC B0 */	addi r3, r3, _esc__2_stringBase0_70@l
 /* 800FED14 000FBB14  38 63 00 62 */	addi r3, r3, 0x62
 /* 800FED18 000FBB18  4B F6 DF 09 */	bl xStrHash__FPCc
 /* 800FED1C 000FBB1C  38 80 00 00 */	li r4, 0
@@ -215,22 +217,22 @@ lbl_800FED44:
 /* 800FED50 000FBB50  38 21 01 00 */	addi r1, r1, 0x100
 /* 800FED54 000FBB54  4E 80 00 20 */	blr 
 
-.global add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc
-add_behavior$$0Q24zNPC6common$$1__Q24zNPC6commonFP39behavior_implementation$$0Q24zNPC6common$$1Sc:
+.global add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc
+add_behavior_esc__0_Q24zNPC6common_esc__1___Q24zNPC6commonFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Sc:
 /* 800FED58 000FBB58  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800FED5C 000FBB5C  7C 08 02 A6 */	mflr r0
 /* 800FED60 000FBB60  7C A6 2B 78 */	mr r6, r5
 /* 800FED64 000FBB64  7C 65 1B 78 */	mr r5, r3
 /* 800FED68 000FBB68  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800FED6C 000FBB6C  38 63 01 40 */	addi r3, r3, 0x140
-/* 800FED70 000FBB70  48 00 00 15 */	bl add_behavior$$0Q24zNPC6common$$1__16behavior_managerFP39behavior_implementation$$0Q24zNPC6common$$1PQ24zNPC6commonSc
+/* 800FED70 000FBB70  48 00 00 15 */	bl add_behavior_esc__0_Q24zNPC6common_esc__1___16behavior_managerFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_PQ24zNPC6commonSc
 /* 800FED74 000FBB74  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800FED78 000FBB78  7C 08 03 A6 */	mtlr r0
 /* 800FED7C 000FBB7C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800FED80 000FBB80  4E 80 00 20 */	blr 
 
-.global add_behavior$$0Q24zNPC6common$$1__16behavior_managerFP39behavior_implementation$$0Q24zNPC6common$$1PQ24zNPC6commonSc
-add_behavior$$0Q24zNPC6common$$1__16behavior_managerFP39behavior_implementation$$0Q24zNPC6common$$1PQ24zNPC6commonSc:
+.global add_behavior_esc__0_Q24zNPC6common_esc__1___16behavior_managerFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_PQ24zNPC6commonSc
+add_behavior_esc__0_Q24zNPC6common_esc__1___16behavior_managerFP39behavior_implementation_esc__0_Q24zNPC6common_esc__1_PQ24zNPC6commonSc:
 /* 800FED84 000FBB84  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800FED88 000FBB88  7C 08 02 A6 */	mflr r0
 /* 800FED8C 000FBB8C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -254,8 +256,8 @@ add_behavior$$0Q24zNPC6common$$1__16behavior_managerFP39behavior_implementation$
 /* 800FEDD4 000FBBD4  38 21 00 20 */	addi r1, r1, 0x20
 /* 800FEDD8 000FBBD8  4E 80 00 20 */	blr 
 
-.global set_owner__39behavior_implementation$$0Q24zNPC6common$$1FP4xEnt
-set_owner__39behavior_implementation$$0Q24zNPC6common$$1FP4xEnt:
+.global set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt:
 /* 800FEDDC 000FBBDC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800FEDE0 000FBBE0  7C 08 02 A6 */	mflr r0
 /* 800FEDE4 000FBBE4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -273,7 +275,7 @@ __ct__Q24zNPC5ArmorFv:
 /* 800FEE08 000FBC08  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800FEE0C 000FBC0C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800FEE10 000FBC10  7C 7F 1B 78 */	mr r31, r3
-/* 800FEE14 000FBC14  48 00 00 29 */	bl __ct__39behavior_implementation$$0Q24zNPC6common$$1Fv
+/* 800FEE14 000FBC14  48 00 00 29 */	bl __ct__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Fv
 /* 800FEE18 000FBC18  3C 80 80 31 */	lis r4, __vt__Q24zNPC5Armor@ha
 /* 800FEE1C 000FBC1C  7F E3 FB 78 */	mr r3, r31
 /* 800FEE20 000FBC20  38 04 AA 84 */	addi r0, r4, __vt__Q24zNPC5Armor@l
@@ -284,17 +286,17 @@ __ct__Q24zNPC5ArmorFv:
 /* 800FEE34 000FBC34  38 21 00 10 */	addi r1, r1, 0x10
 /* 800FEE38 000FBC38  4E 80 00 20 */	blr 
 
-.global __ct__39behavior_implementation$$0Q24zNPC6common$$1Fv
-__ct__39behavior_implementation$$0Q24zNPC6common$$1Fv:
+.global __ct__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Fv
+__ct__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_Fv:
 /* 800FEE3C 000FBC3C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800FEE40 000FBC40  7C 08 02 A6 */	mflr r0
 /* 800FEE44 000FBC44  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800FEE48 000FBC48  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800FEE4C 000FBC4C  7C 7F 1B 78 */	mr r31, r3
 /* 800FEE50 000FBC50  4B FA BA 25 */	bl __ct__8behaviorFv
-/* 800FEE54 000FBC54  3C 80 80 31 */	lis r4, __vt__39behavior_implementation$$0Q24zNPC6common$$1@ha
+/* 800FEE54 000FBC54  3C 80 80 31 */	lis r4, __vt__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_@ha
 /* 800FEE58 000FBC58  7F E3 FB 78 */	mr r3, r31
-/* 800FEE5C 000FBC5C  38 04 AB 00 */	addi r0, r4, __vt__39behavior_implementation$$0Q24zNPC6common$$1@l
+/* 800FEE5C 000FBC5C  38 04 AB 00 */	addi r0, r4, __vt__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_@l
 /* 800FEE60 000FBC60  90 1F 00 04 */	stw r0, 4(r31)
 /* 800FEE64 000FBC64  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800FEE68 000FBC68  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -411,7 +413,7 @@ lbl_800FEF94:
 /* 800FEF98 000FBD98  38 00 00 00 */	li r0, 0
 /* 800FEF9C 000FBD9C  90 7F 00 18 */	stw r3, 0x18(r31)
 /* 800FEFA0 000FBDA0  38 64 00 14 */	addi r3, r4, 0x14
-/* 800FEFA4 000FBDA4  C0 22 A7 50 */	lfs f1, $$21355_1-_SDA2_BASE_(r2)
+/* 800FEFA4 000FBDA4  C0 22 A7 50 */	lfs f1, _esc__2_1355_1-_SDA2_BASE_(r2)
 /* 800FEFA8 000FBDA8  90 04 00 08 */	stw r0, 8(r4)
 /* 800FEFAC 000FBDAC  4B F0 FD 51 */	bl __adv__5xVec3Ff
 lbl_800FEFB0:
@@ -434,9 +436,9 @@ lbl_800FEFB0:
 /* 800FEFF0 000FBDF0  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 800FEFF4 000FBDF4  90 61 00 14 */	stw r3, 0x14(r1)
 /* 800FEFF8 000FBDF8  6C A3 80 00 */	xoris r3, r5, 0x8000
-/* 800FEFFC 000FBDFC  C8 62 A7 58 */	lfd f3, $$21358_0-_SDA2_BASE_(r2)
+/* 800FEFFC 000FBDFC  C8 62 A7 58 */	lfd f3, _esc__2_1358_0-_SDA2_BASE_(r2)
 /* 800FF000 000FBE00  90 81 00 10 */	stw r4, 0x10(r1)
-/* 800FF004 000FBE04  C0 02 A7 54 */	lfs f0, $$21356_0-_SDA2_BASE_(r2)
+/* 800FF004 000FBE04  C0 02 A7 54 */	lfs f0, _esc__2_1356_0-_SDA2_BASE_(r2)
 /* 800FF008 000FBE08  C8 21 00 10 */	lfd f1, 0x10(r1)
 /* 800FF00C 000FBE0C  90 01 00 1C */	stw r0, 0x1c(r1)
 /* 800FF010 000FBE10  EC 41 18 28 */	fsubs f2, f1, f3
@@ -460,7 +462,7 @@ lbl_800FEFB0:
 /* 800FF058 000FBE58  3C 00 43 30 */	lis r0, 0x4330
 /* 800FF05C 000FBE5C  90 01 00 28 */	stw r0, 0x28(r1)
 /* 800FF060 000FBE60  6C 60 80 00 */	xoris r0, r3, 0x8000
-/* 800FF064 000FBE64  C8 42 A7 58 */	lfd f2, $$21358_0-_SDA2_BASE_(r2)
+/* 800FF064 000FBE64  C8 42 A7 58 */	lfd f2, _esc__2_1358_0-_SDA2_BASE_(r2)
 /* 800FF068 000FBE68  90 01 00 2C */	stw r0, 0x2c(r1)
 /* 800FF06C 000FBE6C  C8 01 00 28 */	lfd f0, 0x28(r1)
 /* 800FF070 000FBE70  EC 00 10 28 */	fsubs f0, f0, f2
@@ -525,9 +527,9 @@ update__Q24zNPC5ArmorFf:
 /* 800FF138 000FBF38  28 00 00 00 */	cmplwi r0, 0
 /* 800FF13C 000FBF3C  41 82 00 38 */	beq lbl_800FF174
 /* 800FF140 000FBF40  81 83 00 04 */	lwz r12, 4(r3)
-/* 800FF144 000FBF44  3C 80 80 2E */	lis r4, $$2stringBase0_70@ha
-/* 800FF148 000FBF48  38 84 FC B0 */	addi r4, r4, $$2stringBase0_70@l
-/* 800FF14C 000FBF4C  C0 22 A7 60 */	lfs f1, $$21378_1-_SDA2_BASE_(r2)
+/* 800FF144 000FBF44  3C 80 80 2E */	lis r4, _esc__2_stringBase0_70@ha
+/* 800FF148 000FBF48  38 84 FC B0 */	addi r4, r4, _esc__2_stringBase0_70@l
+/* 800FF14C 000FBF4C  C0 22 A7 60 */	lfs f1, _esc__2_1378_1-_SDA2_BASE_(r2)
 /* 800FF150 000FBF50  81 8C 00 70 */	lwz r12, 0x70(r12)
 /* 800FF154 000FBF54  38 84 00 7C */	addi r4, r4, 0x7c
 /* 800FF158 000FBF58  38 A0 00 00 */	li r5, 0
@@ -660,8 +662,8 @@ runnable__Q24zNPC5ArmorFf:
 
 .global getName__Q24zNPC5ArmorFv
 getName__Q24zNPC5ArmorFv:
-/* 800FF30C 000FC10C  3C 60 80 2E */	lis r3, $$2stringBase0_70@ha
-/* 800FF310 000FC110  38 63 FC B0 */	addi r3, r3, $$2stringBase0_70@l
+/* 800FF30C 000FC10C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_70@ha
+/* 800FF310 000FC110  38 63 FC B0 */	addi r3, r3, _esc__2_stringBase0_70@l
 /* 800FF314 000FC114  38 63 00 8C */	addi r3, r3, 0x8c
 /* 800FF318 000FC118  4E 80 00 20 */	blr 
 
@@ -669,3 +671,6 @@ getName__Q24zNPC5ArmorFv:
 exclusive__Q24zNPC5ArmorFv:
 /* 800FF31C 000FC11C  88 63 00 12 */	lbz r3, 0x12(r3)
 /* 800FF320 000FC120  4E 80 00 20 */	blr 
+
+.endif
+

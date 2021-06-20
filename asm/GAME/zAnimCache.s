@@ -2,35 +2,37 @@
 
 .section .bss
 
-.global cachedEntry__24$$2unnamed$$2zAnimCache_cpp$$2
-cachedEntry__24$$2unnamed$$2zAnimCache_cpp$$2:
+.global cachedEntry__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_
+cachedEntry__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_:
 	.skip 0x180
-.global cache__24$$2unnamed$$2zAnimCache_cpp$$2
-cache__24$$2unnamed$$2zAnimCache_cpp$$2:
+.global cache__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_
+cache__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_:
 	.skip 0x7800
 
 .section .sbss
 
-.global cachedAnimations__24$$2unnamed$$2zAnimCache_cpp$$2
-cachedAnimations__24$$2unnamed$$2zAnimCache_cpp$$2:
+.global cachedAnimations__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_
+cachedAnimations__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_:
 	.skip 0x4
-.global currentCacheIndex__24$$2unnamed$$2zAnimCache_cpp$$2
-currentCacheIndex__24$$2unnamed$$2zAnimCache_cpp$$2:
+.global currentCacheIndex__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_
+currentCacheIndex__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_:
 	.skip 0x4
 
 .section .sdata2
 
-.global $$2888_0
-$$2888_0:
+.global _esc__2_888_0
+_esc__2_888_0:
 	.incbin "baserom.dol", 0x32F9E8, 0x4
-.global $$2889_0
-$$2889_0:
+.global _esc__2_889_0
+_esc__2_889_0:
 	.incbin "baserom.dol", 0x32F9EC, 0x4
+
+.if 0
 
 .section .text
 
-.global fillInCache__24$$2unnamed$$2zAnimCache_cpp$$2FP15zAnimCacheEntryP8RpAtomicff
-fillInCache__24$$2unnamed$$2zAnimCache_cpp$$2FP15zAnimCacheEntryP8RpAtomicff:
+.global fillInCache__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_FP15zAnimCacheEntryP8RpAtomicff
+fillInCache__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_FP15zAnimCacheEntryP8RpAtomicff:
 /* 80084584 00081384  54 2B 07 3E */	clrlwi r11, r1, 0x1c
 /* 80084588 00081388  7C 2C 0B 78 */	mr r12, r1
 /* 8008458C 0008138C  21 6B E8 B0 */	subfic r11, r11, -5968
@@ -45,7 +47,7 @@ fillInCache__24$$2unnamed$$2zAnimCache_cpp$$2FP15zAnimCacheEntryP8RpAtomicff:
 /* 800845B0 000813B0  F3 AC 0F D8 */	psq_st f29, -40(r12), 0, qr0
 /* 800845B4 000813B4  BF 8C FF C0 */	stmw r28, -0x40(r12)
 /* 800845B8 000813B8  FF A0 10 90 */	fmr f29, f2
-/* 800845BC 000813BC  C0 02 93 08 */	lfs f0, $$2888_0-_SDA2_BASE_(r2)
+/* 800845BC 000813BC  C0 02 93 08 */	lfs f0, _esc__2_888_0-_SDA2_BASE_(r2)
 /* 800845C0 000813C0  FF C0 08 90 */	fmr f30, f1
 /* 800845C4 000813C4  7C 7C 1B 78 */	mr r28, r3
 /* 800845C8 000813C8  7C 9D 23 78 */	mr r29, r4
@@ -55,15 +57,15 @@ fillInCache__24$$2unnamed$$2zAnimCache_cpp$$2FP15zAnimCacheEntryP8RpAtomicff:
 /* 800845D8 000813D8  C3 A3 00 10 */	lfs f29, 0x10(r3)
 lbl_800845DC:
 /* 800845DC 000813DC  EC 3D F0 28 */	fsubs f1, f29, f30
-/* 800845E0 000813E0  C0 02 93 0C */	lfs f0, $$2889_0-_SDA2_BASE_(r2)
+/* 800845E0 000813E0  C0 02 93 0C */	lfs f0, _esc__2_889_0-_SDA2_BASE_(r2)
 /* 800845E4 000813E4  EC 21 00 24 */	fdivs f1, f1, f0
 /* 800845E8 000813E8  4B F8 B8 31 */	bl ceilf__3stdFf
 /* 800845EC 000813EC  48 17 68 09 */	bl __cvt_fp2unsigned
-/* 800845F0 000813F0  80 0D C2 B4 */	lwz r0, currentCacheIndex__24$$2unnamed$$2zAnimCache_cpp$$2-_SDA_BASE_(r13)
+/* 800845F0 000813F0  80 0D C2 B4 */	lwz r0, currentCacheIndex__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800845F4 000813F4  3B E1 00 10 */	addi r31, r1, 0x10
-/* 800845F8 000813F8  C3 E2 93 0C */	lfs f31, $$2889_0-_SDA2_BASE_(r2)
+/* 800845F8 000813F8  C3 E2 93 0C */	lfs f31, _esc__2_889_0-_SDA2_BASE_(r2)
 /* 800845FC 000813FC  7C 00 1A 14 */	add r0, r0, r3
-/* 80084600 00081400  90 0D C2 B4 */	stw r0, currentCacheIndex__24$$2unnamed$$2zAnimCache_cpp$$2-_SDA_BASE_(r13)
+/* 80084600 00081400  90 0D C2 B4 */	stw r0, currentCacheIndex__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80084604 00081404  83 DC 00 00 */	lwz r30, 0(r28)
 /* 80084608 00081408  48 00 00 5C */	b lbl_80084664
 lbl_8008460C:
@@ -109,8 +111,8 @@ lbl_80084664:
 .global zAnimCacheClear__Fv
 zAnimCacheClear__Fv:
 /* 800846A0 000814A0  38 00 00 00 */	li r0, 0
-/* 800846A4 000814A4  90 0D C2 B0 */	stw r0, cachedAnimations__24$$2unnamed$$2zAnimCache_cpp$$2-_SDA_BASE_(r13)
-/* 800846A8 000814A8  90 0D C2 B4 */	stw r0, currentCacheIndex__24$$2unnamed$$2zAnimCache_cpp$$2-_SDA_BASE_(r13)
+/* 800846A4 000814A4  90 0D C2 B0 */	stw r0, cachedAnimations__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_-_SDA_BASE_(r13)
+/* 800846A8 000814A8  90 0D C2 B4 */	stw r0, currentCacheIndex__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_-_SDA_BASE_(r13)
 /* 800846AC 000814AC  4E 80 00 20 */	blr 
 
 .global zAnimCacheCreateData__FP17zAttackTableStateUiP9xAnimPlay
@@ -147,8 +149,8 @@ lbl_800846E8:
 /* 8008471C 0008151C  28 03 00 00 */	cmplwi r3, 0
 /* 80084720 00081520  41 82 00 CC */	beq lbl_800847EC
 /* 80084724 00081524  80 03 00 18 */	lwz r0, 0x18(r3)
-/* 80084728 00081528  3C 60 80 37 */	lis r3, cachedEntry__24$$2unnamed$$2zAnimCache_cpp$$2@ha
-/* 8008472C 0008152C  3A 63 DB E0 */	addi r19, r3, cachedEntry__24$$2unnamed$$2zAnimCache_cpp$$2@l
+/* 80084728 00081528  3C 60 80 37 */	lis r3, cachedEntry__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_@ha
+/* 8008472C 0008152C  3A 63 DB E0 */	addi r19, r3, cachedEntry__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_@l
 /* 80084730 00081530  3B 60 00 00 */	li r27, 0
 /* 80084734 00081534  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80084738 00081538  3A 80 00 00 */	li r20, 0
@@ -159,32 +161,32 @@ lbl_80084748:
 /* 80084748 00081548  3B 7B 00 01 */	addi r27, r27, 1
 /* 8008474C 0008154C  3A 94 00 0C */	addi r20, r20, 0xc
 lbl_80084750:
-/* 80084750 00081550  80 0D C2 B0 */	lwz r0, cachedAnimations__24$$2unnamed$$2zAnimCache_cpp$$2-_SDA_BASE_(r13)
+/* 80084750 00081550  80 0D C2 B0 */	lwz r0, cachedAnimations__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80084754 00081554  7C 1B 00 40 */	cmplw r27, r0
 /* 80084758 00081558  40 80 00 18 */	bge lbl_80084770
 /* 8008475C 0008155C  7C 73 A2 14 */	add r3, r19, r20
 /* 80084760 00081560  38 81 00 08 */	addi r4, r1, 8
-/* 80084764 00081564  48 00 00 DD */	bl __ne__24$$2unnamed$$2zAnimCache_cpp$$2FRC15zAnimCacheEntryRC15zAnimCacheEntry
+/* 80084764 00081564  48 00 00 DD */	bl __ne__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_FRC15zAnimCacheEntryRC15zAnimCacheEntry
 /* 80084768 00081568  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8008476C 0008156C  40 82 FF DC */	bne lbl_80084748
 lbl_80084770:
-/* 80084770 00081570  80 AD C2 B0 */	lwz r5, cachedAnimations__24$$2unnamed$$2zAnimCache_cpp$$2-_SDA_BASE_(r13)
+/* 80084770 00081570  80 AD C2 B0 */	lwz r5, cachedAnimations__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80084774 00081574  7C 1B 28 40 */	cmplw r27, r5
 /* 80084778 00081578  40 82 00 60 */	bne lbl_800847D8
 /* 8008477C 0008157C  28 05 00 20 */	cmplwi r5, 0x20
 /* 80084780 00081580  40 80 00 80 */	bge lbl_80084800
 /* 80084784 00081584  1C 9B 00 0C */	mulli r4, r27, 0xc
-/* 80084788 00081588  3C 60 80 37 */	lis r3, cachedEntry__24$$2unnamed$$2zAnimCache_cpp$$2@ha
+/* 80084788 00081588  3C 60 80 37 */	lis r3, cachedEntry__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_@ha
 /* 8008478C 0008158C  38 A5 00 01 */	addi r5, r5, 1
-/* 80084790 00081590  38 03 DB E0 */	addi r0, r3, cachedEntry__24$$2unnamed$$2zAnimCache_cpp$$2@l
-/* 80084794 00081594  90 AD C2 B0 */	stw r5, cachedAnimations__24$$2unnamed$$2zAnimCache_cpp$$2-_SDA_BASE_(r13)
+/* 80084790 00081590  38 03 DB E0 */	addi r0, r3, cachedEntry__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_@l
+/* 80084794 00081594  90 AD C2 B0 */	stw r5, cachedAnimations__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_-_SDA_BASE_(r13)
 /* 80084798 00081598  7E 40 22 14 */	add r18, r0, r4
 /* 8008479C 0008159C  7E 43 93 78 */	mr r3, r18
 /* 800847A0 000815A0  38 81 00 08 */	addi r4, r1, 8
 /* 800847A4 000815A4  48 00 00 81 */	bl __as__15zAnimCacheEntryFRC15zAnimCacheEntry
-/* 800847A8 000815A8  80 8D C2 B4 */	lwz r4, currentCacheIndex__24$$2unnamed$$2zAnimCache_cpp$$2-_SDA_BASE_(r13)
-/* 800847AC 000815AC  3C 60 80 37 */	lis r3, cache__24$$2unnamed$$2zAnimCache_cpp$$2@ha
-/* 800847B0 000815B0  38 03 DD 60 */	addi r0, r3, cache__24$$2unnamed$$2zAnimCache_cpp$$2@l
+/* 800847A8 000815A8  80 8D C2 B4 */	lwz r4, currentCacheIndex__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_-_SDA_BASE_(r13)
+/* 800847AC 000815AC  3C 60 80 37 */	lis r3, cache__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_@ha
+/* 800847B0 000815B0  38 03 DD 60 */	addi r0, r3, cache__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_@l
 /* 800847B4 000815B4  7E 43 93 78 */	mr r3, r18
 /* 800847B8 000815B8  1C 84 00 0C */	mulli r4, r4, 0xc
 /* 800847BC 000815BC  7C 00 22 14 */	add r0, r0, r4
@@ -193,11 +195,11 @@ lbl_80084770:
 /* 800847C8 000815C8  C0 3F 00 74 */	lfs f1, 0x74(r31)
 /* 800847CC 000815CC  80 84 00 10 */	lwz r4, 0x10(r4)
 /* 800847D0 000815D0  C0 5F 00 78 */	lfs f2, 0x78(r31)
-/* 800847D4 000815D4  4B FF FD B1 */	bl fillInCache__24$$2unnamed$$2zAnimCache_cpp$$2FP15zAnimCacheEntryP8RpAtomicff
+/* 800847D4 000815D4  4B FF FD B1 */	bl fillInCache__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_FP15zAnimCacheEntryP8RpAtomicff
 lbl_800847D8:
 /* 800847D8 000815D8  1C 9B 00 0C */	mulli r4, r27, 0xc
-/* 800847DC 000815DC  3C 60 80 37 */	lis r3, cachedEntry__24$$2unnamed$$2zAnimCache_cpp$$2@ha
-/* 800847E0 000815E0  38 03 DB E0 */	addi r0, r3, cachedEntry__24$$2unnamed$$2zAnimCache_cpp$$2@l
+/* 800847DC 000815DC  3C 60 80 37 */	lis r3, cachedEntry__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_@ha
+/* 800847E0 000815E0  38 03 DB E0 */	addi r0, r3, cachedEntry__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_@l
 /* 800847E4 000815E4  7C 00 22 14 */	add r0, r0, r4
 /* 800847E8 000815E8  7C 1F F1 2E */	stwx r0, r31, r30
 lbl_800847EC:
@@ -228,8 +230,8 @@ __as__15zAnimCacheEntryFRC15zAnimCacheEntry:
 /* 80084838 00081638  B0 03 00 08 */	sth r0, 8(r3)
 /* 8008483C 0008163C  4E 80 00 20 */	blr 
 
-.global __ne__24$$2unnamed$$2zAnimCache_cpp$$2FRC15zAnimCacheEntryRC15zAnimCacheEntry
-__ne__24$$2unnamed$$2zAnimCache_cpp$$2FRC15zAnimCacheEntryRC15zAnimCacheEntry:
+.global __ne__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_FRC15zAnimCacheEntryRC15zAnimCacheEntry
+__ne__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_FRC15zAnimCacheEntryRC15zAnimCacheEntry:
 /* 80084840 00081640  80 A3 00 04 */	lwz r5, 4(r3)
 /* 80084844 00081644  38 C0 00 00 */	li r6, 0
 /* 80084848 00081648  80 04 00 04 */	lwz r0, 4(r4)
@@ -244,3 +246,6 @@ lbl_80084864:
 lbl_80084868:
 /* 80084868 00081668  7C C3 33 78 */	mr r3, r6
 /* 8008486C 0008166C  4E 80 00 20 */	blr 
+
+.endif
+

@@ -2,9 +2,11 @@
 
 .section .sdata2
 
-.global $$2637
-$$2637:
+.global _esc__2_637
+_esc__2_637:
 	.incbin "baserom.dol", 0x32F248, 0x8
+
+.if 0
 
 .section .text
 
@@ -115,7 +117,7 @@ xPartitionVolume__FP13_tagPartitionP7xVolumeiii:
 /* 80050110 0004CF10  C0 1C 00 08 */	lfs f0, 8(r28)
 /* 80050114 0004CF14  EC 63 08 28 */	fsubs f3, f3, f1
 /* 80050118 0004CF18  90 01 00 08 */	stw r0, 8(r1)
-/* 8005011C 0004CF1C  C8 22 8B 68 */	lfd f1, $$2637-_SDA2_BASE_(r2)
+/* 8005011C 0004CF1C  C8 22 8B 68 */	lfd f1, _esc__2_637-_SDA2_BASE_(r2)
 /* 80050120 0004CF20  EC 42 00 28 */	fsubs f2, f2, f0
 /* 80050124 0004CF24  93 BC 00 24 */	stw r29, 0x24(r28)
 /* 80050128 0004CF28  93 DC 00 28 */	stw r30, 0x28(r28)
@@ -225,7 +227,7 @@ xPartitionWorld__FP13_tagPartitionP4xEnviii:
 /* 800502A4 0004D0A4  C0 1C 00 08 */	lfs f0, 8(r28)
 /* 800502A8 0004D0A8  EC 63 08 28 */	fsubs f3, f3, f1
 /* 800502AC 0004D0AC  90 01 00 08 */	stw r0, 8(r1)
-/* 800502B0 0004D0B0  C8 22 8B 68 */	lfd f1, $$2637-_SDA2_BASE_(r2)
+/* 800502B0 0004D0B0  C8 22 8B 68 */	lfd f1, _esc__2_637-_SDA2_BASE_(r2)
 /* 800502B4 0004D0B4  EC 42 00 28 */	fsubs f2, f2, f0
 /* 800502B8 0004D0B8  93 BC 00 24 */	stw r29, 0x24(r28)
 /* 800502BC 0004D0BC  93 DC 00 28 */	stw r30, 0x28(r28)
@@ -508,3 +510,6 @@ lbl_80050648:
 /* 8005067C 0004D47C  38 03 00 01 */	addi r0, r3, 1
 /* 80050680 0004D480  90 04 00 00 */	stw r0, 0(r4)
 /* 80050684 0004D484  4E 80 00 20 */	blr 
+
+.endif
+

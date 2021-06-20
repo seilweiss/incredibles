@@ -11,11 +11,11 @@ g_cutmap:
 .global g_noz_ncin
 g_noz_ncin:
 	.skip 0x4
-.global init$1082
-init$1082:
+.global init_esc__7_1082
+init_esc__7_1082:
 	.skip 0x4
-.global nozey_npc_cinematics$1081
-nozey_npc_cinematics$1081:
+.global nozey_npc_cinematics_esc__7_1081
+nozey_npc_cinematics_esc__7_1081:
 	.skip 0x18
 
 .section .sdata
@@ -26,6 +26,8 @@ __vt__9XCSNNosey:
 .global __vt__11NCINBeNosey
 __vt__11NCINBeNosey:
 	.incbin "baserom.dol", 0x32DCE0, 0x10
+
+.if 0
 
 .section .text
 
@@ -118,15 +120,15 @@ zCineFXStartup__Fv:
 /* 801EA048 001E6E48  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801EA04C 001E6E4C  7C 08 02 A6 */	mflr r0
 /* 801EA050 001E6E50  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801EA054 001E6E54  88 0D DC 54 */	lbz r0, init$1082-_SDA_BASE_(r13)
+/* 801EA054 001E6E54  88 0D DC 54 */	lbz r0, init_esc__7_1082-_SDA_BASE_(r13)
 /* 801EA058 001E6E58  7C 00 07 75 */	extsb. r0, r0
 /* 801EA05C 001E6E5C  40 82 00 14 */	bne lbl_801EA070
-/* 801EA060 001E6E60  38 6D DC 58 */	addi r3, r13, nozey_npc_cinematics$1081-_SDA_BASE_
+/* 801EA060 001E6E60  38 6D DC 58 */	addi r3, r13, nozey_npc_cinematics_esc__7_1081-_SDA_BASE_
 /* 801EA064 001E6E64  48 00 00 29 */	bl __ct__11NCINBeNoseyFv
 /* 801EA068 001E6E68  38 00 00 01 */	li r0, 1
-/* 801EA06C 001E6E6C  98 0D DC 54 */	stb r0, init$1082-_SDA_BASE_(r13)
+/* 801EA06C 001E6E6C  98 0D DC 54 */	stb r0, init_esc__7_1082-_SDA_BASE_(r13)
 lbl_801EA070:
-/* 801EA070 001E6E70  38 0D DC 58 */	addi r0, r13, nozey_npc_cinematics$1081-_SDA_BASE_
+/* 801EA070 001E6E70  38 0D DC 58 */	addi r0, r13, nozey_npc_cinematics_esc__7_1081-_SDA_BASE_
 /* 801EA074 001E6E74  90 0D DC 50 */	stw r0, g_noz_ncin-_SDA_BASE_(r13)
 /* 801EA078 001E6E78  48 00 04 45 */	bl AddTables__Fv
 /* 801EA07C 001E6E7C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -502,3 +504,6 @@ NoseyClear__9xCutsceneFv:
 NoseySet__9xCutsceneFP9XCSNNosey:
 /* 801EA534 001E7334  90 83 01 98 */	stw r4, 0x198(r3)
 /* 801EA538 001E7338  4E 80 00 20 */	blr 
+
+.endif
+

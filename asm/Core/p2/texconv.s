@@ -2,12 +2,14 @@
 
 .section .sdata2
 
-.global $$2620
-$$2620:
+.global _esc__2_620
+_esc__2_620:
 	.incbin "baserom.dol", 0x3338F0, 0x4
-.global $$2683_0
-$$2683_0:
+.global _esc__2_683_0
+_esc__2_683_0:
 	.incbin "baserom.dol", 0x3338F4, 0x4
+
+.if 0
 
 .section .text
 
@@ -56,7 +58,7 @@ lbl_801D8678:
 /* 801D8694 001D5494  48 0B CF 99 */	bl RwImageCreate
 /* 801D8698 001D5498  7C 7F 1B 78 */	mr r31, r3
 /* 801D869C 001D549C  48 0B D0 A1 */	bl RwImageAllocatePixels
-/* 801D86A0 001D54A0  C0 02 D2 10 */	lfs f0, $$2620-_SDA2_BASE_(r2)
+/* 801D86A0 001D54A0  C0 02 D2 10 */	lfs f0, _esc__2_620-_SDA2_BASE_(r2)
 /* 801D86A4 001D54A4  38 9B FF FF */	addi r4, r27, -1
 /* 801D86A8 001D54A8  80 18 00 14 */	lwz r0, 0x14(r24)
 /* 801D86AC 001D54AC  38 C0 00 00 */	li r6, 0
@@ -230,7 +232,7 @@ lbl_801D88E8:
 /* 801D88F4 001D56F4  7C 04 01 D6 */	mullw r0, r4, r0
 /* 801D88F8 001D56F8  7C 06 00 00 */	cmpw r6, r0
 /* 801D88FC 001D56FC  41 80 FF D4 */	blt lbl_801D88D0
-/* 801D8900 001D5700  C0 22 D2 14 */	lfs f1, $$2683_0-_SDA2_BASE_(r2)
+/* 801D8900 001D5700  C0 22 D2 14 */	lfs f1, _esc__2_683_0-_SDA2_BASE_(r2)
 /* 801D8904 001D5704  7F A3 EB 78 */	mr r3, r29
 /* 801D8908 001D5708  4B FF FD 01 */	bl ImageForwardDiff__FP7RwImagef
 /* 801D890C 001D570C  7C 60 1B 78 */	mr r0, r3
@@ -269,3 +271,6 @@ lbl_801D897C:
 /* 801D8984 001D5784  7C 08 03 A6 */	mtlr r0
 /* 801D8988 001D5788  38 21 00 20 */	addi r1, r1, 0x20
 /* 801D898C 001D578C  4E 80 00 20 */	blr 
+
+.endif
+

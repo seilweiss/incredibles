@@ -8,8 +8,8 @@ xClumpColl_FilterFlagsAllMask:
 
 .section .sbss2
 
-.global $$2750
-$$2750:
+.global _esc__2_750
+_esc__2_750:
 	.skip 0x4
 .global lbl_803D8534
 lbl_803D8534:
@@ -17,8 +17,8 @@ lbl_803D8534:
 .global lbl_803D8538
 lbl_803D8538:
 	.skip 0x4
-.global $$2775
-$$2775:
+.global _esc__2_775
+_esc__2_775:
 	.skip 0x4
 .global lbl_803D8540
 lbl_803D8540:
@@ -26,8 +26,8 @@ lbl_803D8540:
 .global lbl_803D8544
 lbl_803D8544:
 	.skip 0x4
-.global $$2796
-$$2796:
+.global _esc__2_796
+_esc__2_796:
 	.skip 0x4
 .global lbl_803D854C
 lbl_803D854C:
@@ -35,8 +35,8 @@ lbl_803D854C:
 .global lbl_803D8550
 lbl_803D8550:
 	.skip 0x4
-.global $$2797_0
-$$2797_0:
+.global _esc__2_797_0
+_esc__2_797_0:
 	.skip 0x4
 .global lbl_803D8558
 lbl_803D8558:
@@ -44,8 +44,8 @@ lbl_803D8558:
 .global lbl_803D855C
 lbl_803D855C:
 	.skip 0x4
-.global $$21026_5
-$$21026_5:
+.global _esc__2_1026_5
+_esc__2_1026_5:
 	.skip 0x4
 .global lbl_803D8564
 lbl_803D8564:
@@ -53,8 +53,8 @@ lbl_803D8564:
 .global lbl_803D8568
 lbl_803D8568:
 	.skip 0x4
-.global $$21051_4
-$$21051_4:
+.global _esc__2_1051_4
+_esc__2_1051_4:
 	.skip 0x4
 .global lbl_803D8570
 lbl_803D8570:
@@ -62,8 +62,8 @@ lbl_803D8570:
 .global lbl_803D8574
 lbl_803D8574:
 	.skip 0x4
-.global $$21072_1
-$$21072_1:
+.global _esc__2_1072_1
+_esc__2_1072_1:
 	.skip 0x4
 .global lbl_803D857C
 lbl_803D857C:
@@ -71,8 +71,8 @@ lbl_803D857C:
 .global lbl_803D8580
 lbl_803D8580:
 	.skip 0x4
-.global $$21073_0
-$$21073_0:
+.global _esc__2_1073_0
+_esc__2_1073_0:
 	.skip 0x4
 .global lbl_803D8588
 lbl_803D8588:
@@ -92,21 +92,23 @@ xClumpColl_FilterFlagsAllEqual:
 
 .section .sdata2
 
-.global $$21153_0
-$$21153_0:
+.global _esc__2_1153_0
+_esc__2_1153_0:
 	.incbin "baserom.dol", 0x32E860, 0x4
-.global $$21288
-$$21288:
+.global _esc__2_1288
+_esc__2_1288:
 	.incbin "baserom.dol", 0x32E864, 0x4
-.global $$21289
-$$21289:
+.global _esc__2_1289
+_esc__2_1289:
 	.incbin "baserom.dol", 0x32E868, 0x4
-.global $$21290
-$$21290:
+.global _esc__2_1290
+_esc__2_1290:
 	.incbin "baserom.dol", 0x32E86C, 0x4
-.global $$21291
-$$21291:
+.global _esc__2_1291
+_esc__2_1291:
 	.incbin "baserom.dol", 0x32E870, 0x8
+
+.if 0
 
 .section .text
 
@@ -446,7 +448,7 @@ lbl_8001394C:
 /* 8001396C 0001076C  80 01 00 08 */	lwz r0, 8(r1)
 /* 80013970 00010770  2C 00 00 00 */	cmpwi r0, 0
 /* 80013974 00010774  41 80 01 C0 */	blt lbl_80013B34
-/* 80013978 00010778  80 82 E8 10 */	lwz r4, $$2750-_SDA2_BASE_(r2)
+/* 80013978 00010778  80 82 E8 10 */	lwz r4, _esc__2_750-_SDA2_BASE_(r2)
 /* 8001397C 0001077C  80 62 E8 14 */	lwz r3, lbl_803D8534-_SDA2_BASE_(r2)
 /* 80013980 00010780  80 02 E8 18 */	lwz r0, lbl_803D8538-_SDA2_BASE_(r2)
 /* 80013984 00010784  90 81 00 44 */	stw r4, 0x44(r1)
@@ -575,7 +577,7 @@ lbl_80013B34:
 /* 80013B54 00010954  80 01 00 10 */	lwz r0, 0x10(r1)
 /* 80013B58 00010958  2C 00 00 00 */	cmpwi r0, 0
 /* 80013B5C 0001095C  40 80 01 C0 */	bge lbl_80013D1C
-/* 80013B60 00010960  80 82 E8 1C */	lwz r4, $$2775-_SDA2_BASE_(r2)
+/* 80013B60 00010960  80 82 E8 1C */	lwz r4, _esc__2_775-_SDA2_BASE_(r2)
 /* 80013B64 00010964  80 62 E8 20 */	lwz r3, lbl_803D8540-_SDA2_BASE_(r2)
 /* 80013B68 00010968  80 02 E8 24 */	lwz r0, lbl_803D8544-_SDA2_BASE_(r2)
 /* 80013B6C 0001096C  90 81 00 38 */	stw r4, 0x38(r1)
@@ -693,10 +695,10 @@ lbl_80013CAC:
 /* 80013D14 00010B14  48 00 02 C9 */	bl __as__5RwV3dFRC5RwV3d
 /* 80013D18 00010B18  48 00 02 A4 */	b lbl_80013FBC
 lbl_80013D1C:
-/* 80013D1C 00010B1C  80 E2 E8 28 */	lwz r7, $$2796-_SDA2_BASE_(r2)
+/* 80013D1C 00010B1C  80 E2 E8 28 */	lwz r7, _esc__2_796-_SDA2_BASE_(r2)
 /* 80013D20 00010B20  80 C2 E8 2C */	lwz r6, lbl_803D854C-_SDA2_BASE_(r2)
 /* 80013D24 00010B24  80 A2 E8 30 */	lwz r5, lbl_803D8550-_SDA2_BASE_(r2)
-/* 80013D28 00010B28  80 82 E8 34 */	lwz r4, $$2797_0-_SDA2_BASE_(r2)
+/* 80013D28 00010B28  80 82 E8 34 */	lwz r4, _esc__2_797_0-_SDA2_BASE_(r2)
 /* 80013D2C 00010B2C  80 62 E8 38 */	lwz r3, lbl_803D8558-_SDA2_BASE_(r2)
 /* 80013D30 00010B30  80 02 E8 3C */	lwz r0, lbl_803D855C-_SDA2_BASE_(r2)
 /* 80013D34 00010B34  90 E1 00 2C */	stw r7, 0x2c(r1)
@@ -918,7 +920,7 @@ xClumpColl_ForAllCapsuleLeafNodeIntersections__FP17xClumpCollBSPTreeP6RwLinefP21
 /* 8001403C 00010E3C  F3 E1 04 B8 */	psq_st f31, 1208(r1), 0, qr0
 /* 80014040 00010E40  BF 01 04 90 */	stmw r24, 0x490(r1)
 /* 80014044 00010E44  7C 79 1B 78 */	mr r25, r3
-/* 80014048 00010E48  C0 02 81 80 */	lfs f0, $$21153_0-_SDA2_BASE_(r2)
+/* 80014048 00010E48  C0 02 81 80 */	lfs f0, _esc__2_1153_0-_SDA2_BASE_(r2)
 /* 8001404C 00010E4C  81 03 00 04 */	lwz r8, 4(r3)
 /* 80014050 00010E50  38 00 00 00 */	li r0, 0
 /* 80014054 00010E54  EF E1 00 2A */	fadds f31, f1, f0
@@ -1087,7 +1089,7 @@ lbl_800142A4:
 /* 800142C4 000110C4  80 01 00 08 */	lwz r0, 8(r1)
 /* 800142C8 000110C8  2C 00 00 00 */	cmpwi r0, 0
 /* 800142CC 000110CC  41 80 01 C0 */	blt lbl_8001448C
-/* 800142D0 000110D0  80 82 E8 40 */	lwz r4, $$21026_5-_SDA2_BASE_(r2)
+/* 800142D0 000110D0  80 82 E8 40 */	lwz r4, _esc__2_1026_5-_SDA2_BASE_(r2)
 /* 800142D4 000110D4  80 62 E8 44 */	lwz r3, lbl_803D8564-_SDA2_BASE_(r2)
 /* 800142D8 000110D8  80 02 E8 48 */	lwz r0, lbl_803D8568-_SDA2_BASE_(r2)
 /* 800142DC 000110DC  90 81 00 44 */	stw r4, 0x44(r1)
@@ -1216,7 +1218,7 @@ lbl_8001448C:
 /* 800144AC 000112AC  80 01 00 10 */	lwz r0, 0x10(r1)
 /* 800144B0 000112B0  2C 00 00 00 */	cmpwi r0, 0
 /* 800144B4 000112B4  40 80 01 C0 */	bge lbl_80014674
-/* 800144B8 000112B8  80 82 E8 4C */	lwz r4, $$21051_4-_SDA2_BASE_(r2)
+/* 800144B8 000112B8  80 82 E8 4C */	lwz r4, _esc__2_1051_4-_SDA2_BASE_(r2)
 /* 800144BC 000112BC  80 62 E8 50 */	lwz r3, lbl_803D8570-_SDA2_BASE_(r2)
 /* 800144C0 000112C0  80 02 E8 54 */	lwz r0, lbl_803D8574-_SDA2_BASE_(r2)
 /* 800144C4 000112C4  90 81 00 38 */	stw r4, 0x38(r1)
@@ -1334,10 +1336,10 @@ lbl_80014604:
 /* 8001466C 0001146C  4B FF F9 71 */	bl __as__5RwV3dFRC5RwV3d
 /* 80014670 00011470  48 00 02 A4 */	b lbl_80014914
 lbl_80014674:
-/* 80014674 00011474  80 E2 E8 58 */	lwz r7, $$21072_1-_SDA2_BASE_(r2)
+/* 80014674 00011474  80 E2 E8 58 */	lwz r7, _esc__2_1072_1-_SDA2_BASE_(r2)
 /* 80014678 00011478  80 C2 E8 5C */	lwz r6, lbl_803D857C-_SDA2_BASE_(r2)
 /* 8001467C 0001147C  80 A2 E8 60 */	lwz r5, lbl_803D8580-_SDA2_BASE_(r2)
-/* 80014680 00011480  80 82 E8 64 */	lwz r4, $$21073_0-_SDA2_BASE_(r2)
+/* 80014680 00011480  80 82 E8 64 */	lwz r4, _esc__2_1073_0-_SDA2_BASE_(r2)
 /* 80014684 00011484  80 62 E8 68 */	lwz r3, lbl_803D8588-_SDA2_BASE_(r2)
 /* 80014688 00011488  80 02 E8 6C */	lwz r0, lbl_803D858C-_SDA2_BASE_(r2)
 /* 8001468C 0001148C  90 E1 00 2C */	stw r7, 0x2c(r1)
@@ -1541,7 +1543,7 @@ LeafNodeLinePolyIntersect__FP21xClumpCollBSPTrianglePv:
 /* 80014964 00011764  83 E4 00 4C */	lwz r31, 0x4c(r4)
 /* 80014968 00011768  3B 81 00 38 */	addi r28, r1, 0x38
 lbl_8001496C:
-/* 8001496C 0001176C  C3 E2 81 84 */	lfs f31, $$21288-_SDA2_BASE_(r2)
+/* 8001496C 0001176C  C3 E2 81 84 */	lfs f31, _esc__2_1288-_SDA2_BASE_(r2)
 /* 80014970 00011770  88 7D 00 04 */	lbz r3, 4(r29)
 /* 80014974 00011774  48 00 03 8D */	bl xClumpColl_IsCollidableTriangle__FUc
 /* 80014978 00011778  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -1560,7 +1562,7 @@ lbl_800149A0:
 lbl_800149A8:
 /* 800149A8 000117A8  C0 1A 00 00 */	lfs f0, 0(r26)
 /* 800149AC 000117AC  C0 9B 00 00 */	lfs f4, 0(r27)
-/* 800149B0 000117B0  C0 22 81 88 */	lfs f1, $$21289-_SDA2_BASE_(r2)
+/* 800149B0 000117B0  C0 22 81 88 */	lfs f1, _esc__2_1289-_SDA2_BASE_(r2)
 /* 800149B4 000117B4  ED 20 20 28 */	fsubs f9, f0, f4
 /* 800149B8 000117B8  D1 21 00 20 */	stfs f9, 0x20(r1)
 /* 800149BC 000117BC  C0 1A 00 04 */	lfs f0, 4(r26)
@@ -1625,7 +1627,7 @@ lbl_800149A8:
 /* 80014AA8 000118A8  EC 01 01 BA */	fmadds f0, f1, f6, f0
 /* 80014AAC 000118AC  EC 02 02 FA */	fmadds f0, f2, f11, f0
 lbl_80014AB0:
-/* 80014AB0 000118B0  C0 22 81 8C */	lfs f1, $$21290-_SDA2_BASE_(r2)
+/* 80014AB0 000118B0  C0 22 81 8C */	lfs f1, _esc__2_1290-_SDA2_BASE_(r2)
 /* 80014AB4 000118B4  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 80014AB8 000118B8  7C 00 00 26 */	mfcr r0
 /* 80014ABC 000118BC  54 00 17 FF */	rlwinm. r0, r0, 2, 0x1f, 0x1f
@@ -1634,7 +1636,7 @@ lbl_80014AB0:
 /* 80014AC8 000118C8  FC 60 00 50 */	fneg f3, f0
 /* 80014ACC 000118CC  C0 3B 00 04 */	lfs f1, 4(r27)
 /* 80014AD0 000118D0  38 00 00 00 */	li r0, 0
-/* 80014AD4 000118D4  C0 82 81 90 */	lfs f4, $$21291-_SDA2_BASE_(r2)
+/* 80014AD4 000118D4  C0 82 81 90 */	lfs f4, _esc__2_1291-_SDA2_BASE_(r2)
 /* 80014AD8 000118D8  ED 02 08 28 */	fsubs f8, f2, f1
 /* 80014ADC 000118DC  C0 BE 00 00 */	lfs f5, 0(r30)
 /* 80014AE0 000118E0  C0 5B 00 00 */	lfs f2, 0(r27)
@@ -1944,7 +1946,7 @@ lbl_80014E84:
 /* 80014F40 00011D40  EC 42 00 72 */	fmuls f2, f2, f1
 /* 80014F44 00011D44  93 81 00 24 */	stw r28, 0x24(r1)
 /* 80014F48 00011D48  EC 00 00 72 */	fmuls f0, f0, f1
-/* 80014F4C 00011D4C  C0 22 81 84 */	lfs f1, $$21288-_SDA2_BASE_(r2)
+/* 80014F4C 00011D4C  C0 22 81 84 */	lfs f1, _esc__2_1288-_SDA2_BASE_(r2)
 /* 80014F50 00011D50  D0 61 00 08 */	stfs f3, 8(r1)
 /* 80014F54 00011D54  D0 41 00 0C */	stfs f2, 0xc(r1)
 /* 80014F58 00011D58  D0 01 00 10 */	stfs f0, 0x10(r1)
@@ -2018,36 +2020,36 @@ lbl_80015008:
 /* 80015048 00011E48  90 01 00 B0 */	stw r0, 0xb0(r1)
 /* 8001504C 00011E4C  D0 01 00 7C */	stfs f0, 0x7c(r1)
 /* 80015050 00011E50  4B FF EF A9 */	bl __as__6RwLineFRC6RwLine
-/* 80015054 00011E54  C0 62 81 84 */	lfs f3, $$21288-_SDA2_BASE_(r2)
+/* 80015054 00011E54  C0 62 81 84 */	lfs f3, _esc__2_1288-_SDA2_BASE_(r2)
 /* 80015058 00011E58  C0 21 00 74 */	lfs f1, 0x74(r1)
 /* 8001505C 00011E5C  FC 03 08 00 */	fcmpu cr0, f3, f1
 /* 80015060 00011E60  41 82 00 0C */	beq lbl_8001506C
-/* 80015064 00011E64  C0 02 81 80 */	lfs f0, $$21153_0-_SDA2_BASE_(r2)
+/* 80015064 00011E64  C0 02 81 80 */	lfs f0, _esc__2_1153_0-_SDA2_BASE_(r2)
 /* 80015068 00011E68  EC 60 08 24 */	fdivs f3, f0, f1
 lbl_8001506C:
 /* 8001506C 00011E6C  C0 41 00 78 */	lfs f2, 0x78(r1)
 /* 80015070 00011E70  38 A1 00 80 */	addi r5, r1, 0x80
 /* 80015074 00011E74  C0 01 00 7C */	lfs f0, 0x7c(r1)
 /* 80015078 00011E78  EC 22 00 F2 */	fmuls f1, f2, f3
-/* 8001507C 00011E7C  C0 82 81 84 */	lfs f4, $$21288-_SDA2_BASE_(r2)
+/* 8001507C 00011E7C  C0 82 81 84 */	lfs f4, _esc__2_1288-_SDA2_BASE_(r2)
 /* 80015080 00011E80  EC 00 00 F2 */	fmuls f0, f0, f3
 /* 80015084 00011E84  FC 04 10 00 */	fcmpu cr0, f4, f2
 /* 80015088 00011E88  D0 21 00 80 */	stfs f1, 0x80(r1)
 /* 8001508C 00011E8C  D0 01 00 84 */	stfs f0, 0x84(r1)
 /* 80015090 00011E90  41 82 00 0C */	beq lbl_8001509C
-/* 80015094 00011E94  C0 02 81 80 */	lfs f0, $$21153_0-_SDA2_BASE_(r2)
+/* 80015094 00011E94  C0 02 81 80 */	lfs f0, _esc__2_1153_0-_SDA2_BASE_(r2)
 /* 80015098 00011E98  EC 80 10 24 */	fdivs f4, f0, f2
 lbl_8001509C:
 /* 8001509C 00011E9C  C0 01 00 74 */	lfs f0, 0x74(r1)
 /* 800150A0 00011EA0  C0 21 00 7C */	lfs f1, 0x7c(r1)
 /* 800150A4 00011EA4  EC 40 01 32 */	fmuls f2, f0, f4
-/* 800150A8 00011EA8  C0 62 81 84 */	lfs f3, $$21288-_SDA2_BASE_(r2)
+/* 800150A8 00011EA8  C0 62 81 84 */	lfs f3, _esc__2_1288-_SDA2_BASE_(r2)
 /* 800150AC 00011EAC  EC 01 01 32 */	fmuls f0, f1, f4
 /* 800150B0 00011EB0  FC 03 08 00 */	fcmpu cr0, f3, f1
 /* 800150B4 00011EB4  D0 41 00 88 */	stfs f2, 0x88(r1)
 /* 800150B8 00011EB8  D0 01 00 8C */	stfs f0, 0x8c(r1)
 /* 800150BC 00011EBC  41 82 00 0C */	beq lbl_800150C8
-/* 800150C0 00011EC0  C0 02 81 80 */	lfs f0, $$21153_0-_SDA2_BASE_(r2)
+/* 800150C0 00011EC0  C0 02 81 80 */	lfs f0, _esc__2_1153_0-_SDA2_BASE_(r2)
 /* 800150C4 00011EC4  EC 60 08 24 */	fdivs f3, f0, f1
 lbl_800150C8:
 /* 800150C8 00011EC8  C0 21 00 74 */	lfs f1, 0x74(r1)
@@ -2081,7 +2083,7 @@ lbl_80015100:
 /* 80015134 00011F34  EC 60 30 28 */	fsubs f3, f0, f6
 /* 80015138 00011F38  C0 01 00 48 */	lfs f0, 0x48(r1)
 /* 8001513C 00011F3C  EC 42 30 2A */	fadds f2, f2, f6
-/* 80015140 00011F40  C0 E2 81 90 */	lfs f7, $$21291-_SDA2_BASE_(r2)
+/* 80015140 00011F40  C0 E2 81 90 */	lfs f7, _esc__2_1291-_SDA2_BASE_(r2)
 /* 80015144 00011F44  EC 21 30 2A */	fadds f1, f1, f6
 /* 80015148 00011F48  D0 A1 00 4C */	stfs f5, 0x4c(r1)
 /* 8001514C 00011F4C  EC 00 30 2A */	fadds f0, f0, f6
@@ -2100,7 +2102,7 @@ lbl_80015178:
 /* 80015178 00011F78  D0 FF 00 0C */	stfs f7, 0xc(r31)
 /* 8001517C 00011F7C  3C 60 80 01 */	lis r3, LeafNodeSpherePolyIntersect__FP21xClumpCollBSPTrianglePv@ha
 /* 80015180 00011F80  38 A3 4D 30 */	addi r5, r3, LeafNodeSpherePolyIntersect__FP21xClumpCollBSPTrianglePv@l
-/* 80015184 00011F84  C0 22 81 80 */	lfs f1, $$21153_0-_SDA2_BASE_(r2)
+/* 80015184 00011F84  C0 22 81 80 */	lfs f1, _esc__2_1153_0-_SDA2_BASE_(r2)
 /* 80015188 00011F88  80 C1 00 08 */	lwz r6, 8(r1)
 /* 8001518C 00011F8C  38 E1 00 08 */	addi r7, r1, 8
 /* 80015190 00011F90  38 01 00 10 */	addi r0, r1, 0x10
@@ -2152,3 +2154,6 @@ __as__6RwBBoxFRC6RwBBox:
 /* 80015230 00012030  90 A3 00 10 */	stw r5, 0x10(r3)
 /* 80015234 00012034  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80015238 00012038  4E 80 00 20 */	blr 
+
+.endif
+

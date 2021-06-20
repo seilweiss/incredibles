@@ -29,39 +29,41 @@ sModelMat:
 
 .section .sdata2
 
-.global $$2751_0
-$$2751_0:
+.global _esc__2_751_0
+_esc__2_751_0:
 	.incbin "baserom.dol", 0x32F4C0, 0x4
-.global $$2805_0
-$$2805_0:
+.global _esc__2_805_0
+_esc__2_805_0:
 	.incbin "baserom.dol", 0x32F4C4, 0x4
-.global $$2806
-$$2806:
+.global _esc__2_806
+_esc__2_806:
 	.incbin "baserom.dol", 0x32F4C8, 0x4
-.global $$2835_0
-$$2835_0:
+.global _esc__2_835_0
+_esc__2_835_0:
 	.incbin "baserom.dol", 0x32F4CC, 0x4
-.global $$2836_0
-$$2836_0:
+.global _esc__2_836_0
+_esc__2_836_0:
 	.incbin "baserom.dol", 0x32F4D0, 0x4
-.global $$21064
-$$21064:
+.global _esc__2_1064
+_esc__2_1064:
 	.incbin "baserom.dol", 0x32F4D4, 0x4
-.global $$21105
-$$21105:
+.global _esc__2_1105
+_esc__2_1105:
 	.incbin "baserom.dol", 0x32F4D8, 0x4
-.global $$21152
-$$21152:
+.global _esc__2_1152
+_esc__2_1152:
 	.incbin "baserom.dol", 0x32F4DC, 0x4
-.global $$21295_0
-$$21295_0:
+.global _esc__2_1295_0
+_esc__2_1295_0:
 	.incbin "baserom.dol", 0x32F4E0, 0x4
-.global $$21296
-$$21296:
+.global _esc__2_1296
+_esc__2_1296:
 	.incbin "baserom.dol", 0x32F4E4, 0x4
-.global $$21299_0
-$$21299_0:
+.global _esc__2_1299_0
+_esc__2_1299_0:
 	.incbin "baserom.dol", 0x32F4E8, 0x8
+
+.if 0
 
 .section .text
 
@@ -96,7 +98,7 @@ lbl_80063924:
 /* 8006392C 0006072C  4C 41 13 82 */	cror 2, 1, 2
 /* 80063930 00060730  41 82 00 14 */	beq lbl_80063944
 /* 80063934 00060734  C0 23 00 04 */	lfs f1, 4(r3)
-/* 80063938 00060738  C0 02 8D E0 */	lfs f0, $$2751_0-_SDA2_BASE_(r2)
+/* 80063938 00060738  C0 02 8D E0 */	lfs f0, _esc__2_751_0-_SDA2_BASE_(r2)
 /* 8006393C 0006073C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80063940 00060740  40 80 00 0C */	bge lbl_8006394C
 lbl_80063944:
@@ -240,10 +242,10 @@ xShadowSimple_SceneCollide__FP18xShadowSimpleCachePC5xVec3f:
 /* 80063B1C 0006091C  90 01 00 74 */	stw r0, 0x74(r1)
 /* 80063B20 00060920  38 00 00 01 */	li r0, 1
 /* 80063B24 00060924  EC 02 08 28 */	fsubs f0, f2, f1
-/* 80063B28 00060928  C0 62 8D E8 */	lfs f3, $$2806-_SDA2_BASE_(r2)
+/* 80063B28 00060928  C0 62 8D E8 */	lfs f3, _esc__2_806-_SDA2_BASE_(r2)
 /* 80063B2C 0006092C  BF 61 00 5C */	stmw r27, 0x5c(r1)
 /* 80063B30 00060930  7C 7F 1B 78 */	mr r31, r3
-/* 80063B34 00060934  C0 82 8D E4 */	lfs f4, $$2805_0-_SDA2_BASE_(r2)
+/* 80063B34 00060934  C0 82 8D E4 */	lfs f4, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80063B38 00060938  EC 43 10 2A */	fadds f2, f3, f2
 /* 80063B3C 0006093C  3B A0 00 00 */	li r29, 0
 /* 80063B40 00060940  C0 64 00 00 */	lfs f3, 0(r4)
@@ -288,7 +290,7 @@ lbl_80063BCC:
 /* 80063BD0 000609D0  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 80063BD4 000609D4  7C 1B 00 00 */	cmpw r27, r0
 /* 80063BD8 000609D8  41 80 FF B8 */	blt lbl_80063B90
-/* 80063BDC 000609DC  C0 02 8D E4 */	lfs f0, $$2805_0-_SDA2_BASE_(r2)
+/* 80063BDC 000609DC  C0 02 8D E4 */	lfs f0, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80063BE0 000609E0  C0 3F 00 5C */	lfs f1, 0x5c(r31)
 /* 80063BE4 000609E4  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 80063BE8 000609E8  41 82 00 20 */	beq lbl_80063C08
@@ -323,7 +325,7 @@ lbl_80063C08:
 /* 80063C58 00060A58  38 6D C8 78 */	addi r3, r13, colls_oso_grid-_SDA_BASE_
 /* 80063C5C 00060A5C  4B FD 73 CD */	bl xGridCheckPosition__FP5xGridP5xVec3P7xQCDataPFP4xEntPv_iPv
 lbl_80063C60:
-/* 80063C60 00060A60  C0 02 8D E4 */	lfs f0, $$2805_0-_SDA2_BASE_(r2)
+/* 80063C60 00060A60  C0 02 8D E4 */	lfs f0, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80063C64 00060A64  C0 3F 00 60 */	lfs f1, 0x60(r31)
 /* 80063C68 00060A68  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 80063C6C 00060A6C  41 82 00 1C */	beq lbl_80063C88
@@ -337,7 +339,7 @@ lbl_80063C88:
 /* 80063C88 00060A88  C0 1F 00 5C */	lfs f0, 0x5c(r31)
 /* 80063C8C 00060A8C  D0 1F 00 60 */	stfs f0, 0x60(r31)
 lbl_80063C90:
-/* 80063C90 00060A90  C0 22 8D E4 */	lfs f1, $$2805_0-_SDA2_BASE_(r2)
+/* 80063C90 00060A90  C0 22 8D E4 */	lfs f1, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80063C94 00060A94  C0 1F 00 60 */	lfs f0, 0x60(r31)
 /* 80063C98 00060A98  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 80063C9C 00060A9C  41 82 00 38 */	beq lbl_80063CD4
@@ -386,7 +388,7 @@ xShadowSimple_CalcCorners__FP18xShadowSimpleCachePC7xMat4x3ff:
 /* 80063D2C 00060B2C  F3 C1 00 28 */	psq_st f30, 40(r1), 0, qr0
 /* 80063D30 00060B30  BF C1 00 18 */	stmw r30, 0x18(r1)
 /* 80063D34 00060B34  7C 7E 1B 78 */	mr r30, r3
-/* 80063D38 00060B38  C0 62 8D E4 */	lfs f3, $$2805_0-_SDA2_BASE_(r2)
+/* 80063D38 00060B38  C0 62 8D E4 */	lfs f3, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80063D3C 00060B3C  C0 03 00 60 */	lfs f0, 0x60(r3)
 /* 80063D40 00060B40  FF C0 08 90 */	fmr f30, f1
 /* 80063D44 00060B44  FF E0 10 90 */	fmr f31, f2
@@ -437,7 +439,7 @@ lbl_80063DA8:
 /* 80063DF4 00060BF4  48 00 00 24 */	b lbl_80063E18
 lbl_80063DF8:
 /* 80063DF8 00060BF8  ED 5E 07 F2 */	fmuls f10, f30, f31
-/* 80063DFC 00060BFC  C1 62 8D EC */	lfs f11, $$2835_0-_SDA2_BASE_(r2)
+/* 80063DFC 00060BFC  C1 62 8D EC */	lfs f11, _esc__2_835_0-_SDA2_BASE_(r2)
 /* 80063E00 00060C00  C0 3E 00 68 */	lfs f1, 0x68(r30)
 /* 80063E04 00060C04  FD A0 F0 90 */	fmr f13, f30
 /* 80063E08 00060C08  C0 1E 00 6C */	lfs f0, 0x6c(r30)
@@ -448,7 +450,7 @@ lbl_80063E18:
 /* 80063E18 00060C18  C1 3F 00 30 */	lfs f9, 0x30(r31)
 /* 80063E1C 00060C1C  C0 1F 00 38 */	lfs f0, 0x38(r31)
 /* 80063E20 00060C20  EC 29 50 2A */	fadds f1, f9, f10
-/* 80063E24 00060C24  C1 02 8D F0 */	lfs f8, $$2836_0-_SDA2_BASE_(r2)
+/* 80063E24 00060C24  C1 02 8D F0 */	lfs f8, _esc__2_836_0-_SDA2_BASE_(r2)
 /* 80063E28 00060C28  EC C0 58 2A */	fadds f6, f0, f11
 /* 80063E2C 00060C2C  EC A9 10 2A */	fadds f5, f9, f2
 /* 80063E30 00060C30  D0 3E 00 70 */	stfs f1, 0x70(r30)
@@ -493,7 +495,7 @@ lbl_80063EA4:
 
 .global xShadowSimple_AddVerts__FP18xShadowSimpleCache
 xShadowSimple_AddVerts__FP18xShadowSimpleCache:
-/* 80063EC8 00060CC8  C0 22 8D E4 */	lfs f1, $$2805_0-_SDA2_BASE_(r2)
+/* 80063EC8 00060CC8  C0 22 8D E4 */	lfs f1, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80063ECC 00060CCC  C0 03 00 60 */	lfs f0, 0x60(r3)
 /* 80063ED0 00060CD0  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 80063ED4 00060CD4  4D 82 00 20 */	beqlr 
@@ -613,8 +615,8 @@ lbl_8006406C:
 /* 80064084 00060E84  3C 60 80 35 */	lis r3, sShadVert@ha
 /* 80064088 00060E88  38 00 00 40 */	li r0, 0x40
 /* 8006408C 00060E8C  38 83 8D D8 */	addi r4, r3, sShadVert@l
-/* 80064090 00060E90  C0 22 8D F4 */	lfs f1, $$21064-_SDA2_BASE_(r2)
-/* 80064094 00060E94  C0 02 8D EC */	lfs f0, $$2835_0-_SDA2_BASE_(r2)
+/* 80064090 00060E90  C0 22 8D F4 */	lfs f1, _esc__2_1064-_SDA2_BASE_(r2)
+/* 80064094 00060E94  C0 02 8D EC */	lfs f0, _esc__2_835_0-_SDA2_BASE_(r2)
 /* 80064098 00060E98  38 60 00 00 */	li r3, 0
 /* 8006409C 00060E9C  7C 09 03 A6 */	mtctr r0
 lbl_800640A0:
@@ -676,7 +678,7 @@ xShadowSimple_CacheInit__FP18xShadowSimpleCacheP4xEntUc:
 /* 80064164 00060F64  38 80 00 00 */	li r4, 0
 /* 80064168 00060F68  38 A0 00 A4 */	li r5, 0xa4
 /* 8006416C 00060F6C  4B F9 EF 95 */	bl memset
-/* 80064170 00060F70  C0 02 8D E4 */	lfs f0, $$2805_0-_SDA2_BASE_(r2)
+/* 80064170 00060F70  C0 02 8D E4 */	lfs f0, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80064174 00060F74  38 00 00 01 */	li r0, 1
 /* 80064178 00060F78  D0 1D 00 5C */	stfs f0, 0x5c(r29)
 /* 8006417C 00060F7C  D0 1D 00 60 */	stfs f0, 0x60(r29)
@@ -772,7 +774,7 @@ xShadowSimple_Add__FP18xShadowSimpleCacheP4xEntff:
 /* 800642A8 000610A8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800642AC 000610AC  7C 08 02 A6 */	mflr r0
 /* 800642B0 000610B0  FC 60 10 90 */	fmr f3, f2
-/* 800642B4 000610B4  C0 42 8D F8 */	lfs f2, $$21105-_SDA2_BASE_(r2)
+/* 800642B4 000610B4  C0 42 8D F8 */	lfs f2, _esc__2_1105-_SDA2_BASE_(r2)
 /* 800642B8 000610B8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800642BC 000610BC  80 84 00 28 */	lwz r4, 0x28(r4)
 /* 800642C0 000610C0  88 A3 00 02 */	lbz r5, 2(r3)
@@ -956,13 +958,13 @@ xShadowSimple_CacheInit_Expert__FP18xShadowSimpleCacheP8RwRasterUc:
 /* 80064550 00061350  38 80 00 00 */	li r4, 0
 /* 80064554 00061354  38 A0 00 A4 */	li r5, 0xa4
 /* 80064558 00061358  4B F9 EB A9 */	bl memset
-/* 8006455C 0006135C  C0 42 8D E4 */	lfs f2, $$2805_0-_SDA2_BASE_(r2)
+/* 8006455C 0006135C  C0 42 8D E4 */	lfs f2, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80064560 00061360  38 60 00 03 */	li r3, 3
 /* 80064564 00061364  38 00 00 00 */	li r0, 0
-/* 80064568 00061368  C0 22 8D FC */	lfs f1, $$21152-_SDA2_BASE_(r2)
+/* 80064568 00061368  C0 22 8D FC */	lfs f1, _esc__2_1152-_SDA2_BASE_(r2)
 /* 8006456C 0006136C  D0 5D 00 5C */	stfs f2, 0x5c(r29)
 /* 80064570 00061370  28 1E 00 00 */	cmplwi r30, 0
-/* 80064574 00061374  C0 02 8D E8 */	lfs f0, $$2806-_SDA2_BASE_(r2)
+/* 80064574 00061374  C0 02 8D E8 */	lfs f0, _esc__2_806-_SDA2_BASE_(r2)
 /* 80064578 00061378  D0 5D 00 60 */	stfs f2, 0x60(r29)
 /* 8006457C 0006137C  B0 7D 00 00 */	sth r3, 0(r29)
 /* 80064580 00061380  9B FD 00 02 */	stb r31, 2(r29)
@@ -995,7 +997,7 @@ xShadowSimple_Add_Expert__FP18xShadowSimpleCachePC7xMat4x3Ucfff:
 /* 800645D8 000613D8  F3 A1 00 38 */	psq_st f29, 56(r1), 0, qr0
 /* 800645DC 000613DC  BF A1 00 24 */	stmw r29, 0x24(r1)
 /* 800645E0 000613E0  FF C0 08 90 */	fmr f30, f1
-/* 800645E4 000613E4  C0 02 8D EC */	lfs f0, $$2835_0-_SDA2_BASE_(r2)
+/* 800645E4 000613E4  C0 02 8D EC */	lfs f0, _esc__2_835_0-_SDA2_BASE_(r2)
 /* 800645E8 000613E8  7C 7E 1B 78 */	mr r30, r3
 /* 800645EC 000613EC  FF A0 10 90 */	fmr f29, f2
 /* 800645F0 000613F0  FF E0 18 90 */	fmr f31, f3
@@ -1006,7 +1008,7 @@ xShadowSimple_Add_Expert__FP18xShadowSimpleCachePC7xMat4x3Ucfff:
 /* 80064604 00061404  40 82 00 08 */	bne lbl_8006460C
 /* 80064608 00061408  D3 DE 00 24 */	stfs f30, 0x24(r30)
 lbl_8006460C:
-/* 8006460C 0006140C  C0 02 8D EC */	lfs f0, $$2835_0-_SDA2_BASE_(r2)
+/* 8006460C 0006140C  C0 02 8D EC */	lfs f0, _esc__2_835_0-_SDA2_BASE_(r2)
 /* 80064610 00061410  FC 1E 00 40 */	fcmpo cr0, f30, f0
 /* 80064614 00061414  40 80 00 18 */	bge lbl_8006462C
 /* 80064618 00061418  C0 3E 00 24 */	lfs f1, 0x24(r30)
@@ -1019,7 +1021,7 @@ lbl_8006462C:
 /* 80064630 00061430  54 60 07 FF */	clrlwi. r0, r3, 0x1f
 /* 80064634 00061434  41 82 00 6C */	beq lbl_800646A0
 /* 80064638 00061438  54 60 04 3C */	rlwinm r0, r3, 0, 0x10, 0x1e
-/* 8006463C 0006143C  C0 02 8D E4 */	lfs f0, $$2805_0-_SDA2_BASE_(r2)
+/* 8006463C 0006143C  C0 02 8D E4 */	lfs f0, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80064640 00061440  B0 1E 00 00 */	sth r0, 0(r30)
 /* 80064644 00061444  FC 20 E8 90 */	fmr f1, f29
 /* 80064648 00061448  7F C3 F3 78 */	mr r3, r30
@@ -1032,7 +1034,7 @@ lbl_8006462C:
 /* 80064664 00061464  38 7E 00 14 */	addi r3, r30, 0x14
 /* 80064668 00061468  38 9F 00 20 */	addi r4, r31, 0x20
 /* 8006466C 0006146C  4B FA 6A 3D */	bl __as__5xVec3FRC5xVec3
-/* 80064670 00061470  C0 22 8D E4 */	lfs f1, $$2805_0-_SDA2_BASE_(r2)
+/* 80064670 00061470  C0 22 8D E4 */	lfs f1, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80064674 00061474  C0 1E 00 60 */	lfs f0, 0x60(r30)
 /* 80064678 00061478  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 8006467C 0006147C  41 82 01 A0 */	beq lbl_8006481C
@@ -1099,7 +1101,7 @@ lbl_80064750:
 /* 80064758 00061558  48 00 02 8D */	bl XSSC_Add_NudgeItAndFudgeIt__FP18xShadowSimpleCachePC7xMat4x3
 /* 8006475C 0006155C  48 00 00 44 */	b lbl_800647A0
 lbl_80064760:
-/* 80064760 00061560  C0 22 8D E4 */	lfs f1, $$2805_0-_SDA2_BASE_(r2)
+/* 80064760 00061560  C0 22 8D E4 */	lfs f1, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80064764 00061564  C0 1E 00 60 */	lfs f0, 0x60(r30)
 /* 80064768 00061568  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 8006476C 0006156C  41 82 00 34 */	beq lbl_800647A0
@@ -1114,7 +1116,7 @@ lbl_80064784:
 /* 8006478C 0006158C  48 00 02 59 */	bl XSSC_Add_NudgeItAndFudgeIt__FP18xShadowSimpleCachePC7xMat4x3
 /* 80064790 00061590  28 1D 00 00 */	cmplwi r29, 0
 /* 80064794 00061594  41 82 00 0C */	beq lbl_800647A0
-/* 80064798 00061598  C0 02 8D E4 */	lfs f0, $$2805_0-_SDA2_BASE_(r2)
+/* 80064798 00061598  C0 02 8D E4 */	lfs f0, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 8006479C 0006159C  D0 1E 00 5C */	stfs f0, 0x5c(r30)
 lbl_800647A0:
 /* 800647A0 000615A0  28 1D 00 00 */	cmplwi r29, 0
@@ -1315,15 +1317,15 @@ XSSC_Add_NudgeItAndFudgeIt__FP18xShadowSimpleCachePC7xMat4x3:
 /* 80064A5C 0006185C  7C 64 1B 78 */	mr r4, r3
 /* 80064A60 00061860  48 00 CB C1 */	bl xVec3Normalize__FP5xVec3PC5xVec3
 /* 80064A64 00061864  C0 61 00 0C */	lfs f3, 0xc(r1)
-/* 80064A68 00061868  C0 82 8E 00 */	lfs f4, $$21295_0-_SDA2_BASE_(r2)
+/* 80064A68 00061868  C0 82 8E 00 */	lfs f4, _esc__2_1295_0-_SDA2_BASE_(r2)
 /* 80064A6C 0006186C  FC 03 20 40 */	fcmpo cr0, f3, f4
 /* 80064A70 00061870  7C 60 00 26 */	mfcr r3
 /* 80064A74 00061874  3C 00 43 30 */	lis r0, 0x4330
 /* 80064A78 00061878  54 63 17 FE */	rlwinm r3, r3, 2, 0x1f, 0x1f
 /* 80064A7C 0006187C  90 01 00 38 */	stw r0, 0x38(r1)
-/* 80064A80 00061880  C8 42 8E 08 */	lfd f2, $$21299_0-_SDA2_BASE_(r2)
+/* 80064A80 00061880  C8 42 8E 08 */	lfd f2, _esc__2_1299_0-_SDA2_BASE_(r2)
 /* 80064A84 00061884  90 61 00 3C */	stw r3, 0x3c(r1)
-/* 80064A88 00061888  C0 02 8D EC */	lfs f0, $$2835_0-_SDA2_BASE_(r2)
+/* 80064A88 00061888  C0 02 8D EC */	lfs f0, _esc__2_835_0-_SDA2_BASE_(r2)
 /* 80064A8C 0006188C  C8 21 00 38 */	lfd f1, 0x38(r1)
 /* 80064A90 00061890  FC 21 10 28 */	fsub f1, f1, f2
 /* 80064A94 00061894  FC 20 0A 10 */	fabs f1, f1
@@ -1345,7 +1347,7 @@ lbl_80064ACC:
 /* 80064AD0 000618D0  40 81 00 08 */	ble lbl_80064AD8
 /* 80064AD4 000618D4  48 00 00 08 */	b lbl_80064ADC
 lbl_80064AD8:
-/* 80064AD8 000618D8  C0 82 8E 04 */	lfs f4, $$21296-_SDA2_BASE_(r2)
+/* 80064AD8 000618D8  C0 82 8E 04 */	lfs f4, _esc__2_1296-_SDA2_BASE_(r2)
 lbl_80064ADC:
 /* 80064ADC 000618DC  C0 01 00 08 */	lfs f0, 8(r1)
 /* 80064AE0 000618E0  FC 00 00 50 */	fneg f0, f0
@@ -1360,7 +1362,7 @@ lbl_80064AFC:
 /* 80064B00 00061900  48 00 00 18 */	b lbl_80064B18
 lbl_80064B04:
 /* 80064B04 00061904  38 BE 00 2C */	addi r5, r30, 0x2c
-/* 80064B08 00061908  C0 22 8D E4 */	lfs f1, $$2805_0-_SDA2_BASE_(r2)
+/* 80064B08 00061908  C0 22 8D E4 */	lfs f1, _esc__2_805_0-_SDA2_BASE_(r2)
 /* 80064B0C 0006190C  C0 1E 00 2C */	lfs f0, 0x2c(r30)
 /* 80064B10 00061910  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 80064B14 00061914  41 82 00 BC */	beq lbl_80064BD0
@@ -1369,7 +1371,7 @@ lbl_80064B18:
 /* 80064B1C 0006191C  C0 BF 00 30 */	lfs f5, 0x30(r31)
 /* 80064B20 00061920  C0 5F 00 38 */	lfs f2, 0x38(r31)
 /* 80064B24 00061924  38 C0 00 00 */	li r6, 0
-/* 80064B28 00061928  C0 02 8E 00 */	lfs f0, $$21295_0-_SDA2_BASE_(r2)
+/* 80064B28 00061928  C0 02 8E 00 */	lfs f0, _esc__2_1295_0-_SDA2_BASE_(r2)
 /* 80064B2C 0006192C  38 60 00 00 */	li r3, 0
 /* 80064B30 00061930  7C 09 03 A6 */	mtctr r0
 lbl_80064B34:
@@ -1420,3 +1422,6 @@ lbl_80064BD0:
 /* 80064BD8 000619D8  7C 08 03 A6 */	mtlr r0
 /* 80064BDC 000619DC  38 21 00 50 */	addi r1, r1, 0x50
 /* 80064BE0 000619E0  4E 80 00 20 */	blr 
+
+.endif
+

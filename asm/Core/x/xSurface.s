@@ -9,6 +9,8 @@ surfs:
 nsurfs:
 	.skip 0x4
 
+.if 0
+
 .section .text
 
 .global xSurfaceInit__FUs
@@ -111,3 +113,6 @@ xSurfaceGetByIdx__FUs:
 lbl_8006E1C0:
 /* 8006E1C0 0006AFC0  38 60 00 00 */	li r3, 0
 /* 8006E1C4 0006AFC4  4E 80 00 20 */	blr 
+
+.endif
+

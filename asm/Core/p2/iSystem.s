@@ -8,8 +8,8 @@ AramMgr:
 
 .section .rodata
 
-.global $$2stringBase0_32
-$$2stringBase0_32:
+.global _esc__2_stringBase0_32
+_esc__2_stringBase0_32:
 	.incbin "baserom.dol", 0x2D5D28, 0x418
 
 .section .sbss
@@ -41,8 +41,8 @@ ARAMBytesForFMOD:
 
 .section .sbss2
 
-.global $$21053_3
-$$21053_3:
+.global _esc__2_1053_3
+_esc__2_1053_3:
 	.skip 0x8
 
 .section .sdata
@@ -56,8 +56,8 @@ myGXPal528IntDf:
 
 .section .sdata2
 
-.global $$21035_0
-$$21035_0:
+.global _esc__2_1035_0
+_esc__2_1035_0:
 	.incbin "baserom.dol", 0x32F940, 0x4
 .global lbl_803D2F84
 lbl_803D2F84:
@@ -68,6 +68,8 @@ lbl_803D2F88:
 .global lbl_803D2F8C
 lbl_803D2F8C:
 	.incbin "baserom.dol", 0x32F94C, 0x4
+
+.if 0
 
 .section .text
 
@@ -252,9 +254,9 @@ iSystemExit__Fv:
 /* 80081620 0007E420  4B FF 31 15 */	bl iFileExit__Fv
 /* 80081624 0007E424  48 00 0C 9D */	bl iTimeExit__Fv
 /* 80081628 0007E428  4B FC 82 19 */	bl xMemExit__Fv
-/* 8008162C 0007E42C  3C 60 80 2E */	lis r3, $$2stringBase0_32@ha
+/* 8008162C 0007E42C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_32@ha
 /* 80081630 0007E430  38 80 02 C1 */	li r4, 0x2c1
-/* 80081634 0007E434  38 A3 8D 28 */	addi r5, r3, $$2stringBase0_32@l
+/* 80081634 0007E434  38 A3 8D 28 */	addi r5, r3, _esc__2_stringBase0_32@l
 /* 80081638 0007E438  38 65 03 3A */	addi r3, r5, 0x33a
 /* 8008163C 0007E43C  38 A5 03 46 */	addi r5, r5, 0x346
 /* 80081640 0007E440  4C C6 31 82 */	crclr 6
@@ -322,7 +324,7 @@ iRenderWareInit1__Fv:
 /* 80081704 0007E504  3C A0 00 08 */	lis r5, 8
 /* 80081708 0007E508  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8008170C 0007E50C  38 61 00 08 */	addi r3, r1, 8
-/* 80081710 0007E510  81 02 92 60 */	lwz r8, $$21035_0-_SDA2_BASE_(r2)
+/* 80081710 0007E510  81 02 92 60 */	lwz r8, _esc__2_1035_0-_SDA2_BASE_(r2)
 /* 80081714 0007E514  80 E2 92 64 */	lwz r7, lbl_803D2F84-_SDA2_BASE_(r2)
 /* 80081718 0007E518  80 C2 92 68 */	lwz r6, lbl_803D2F88-_SDA2_BASE_(r2)
 /* 8008171C 0007E51C  80 02 92 6C */	lwz r0, lbl_803D2F8C-_SDA2_BASE_(r2)
@@ -435,7 +437,7 @@ lbl_80081864:
 /* 800818A4 0007E6A4  38 A0 00 00 */	li r5, 0
 /* 800818A8 0007E6A8  80 8D 91 C8 */	lwz r4, FB_YRES-_SDA_BASE_(r13)
 /* 800818AC 0007E6AC  4B F8 3F C1 */	bl iCameraCreate__Fiii
-/* 800818B0 0007E6B0  80 02 EC C0 */	lwz r0, $$21053_3-_SDA2_BASE_(r2)
+/* 800818B0 0007E6B0  80 02 EC C0 */	lwz r0, _esc__2_1053_3-_SDA2_BASE_(r2)
 /* 800818B4 0007E6B4  7C 7F 1B 78 */	mr r31, r3
 /* 800818B8 0007E6B8  38 81 00 08 */	addi r4, r1, 8
 /* 800818BC 0007E6BC  38 A0 00 03 */	li r5, 3
@@ -542,9 +544,9 @@ iSystemExitRWFailSafe__Fv:
 TextureRead__FPCcPCc:
 /* 80081A1C 0007E81C  94 21 FE E0 */	stwu r1, -0x120(r1)
 /* 80081A20 0007E820  7C 08 02 A6 */	mflr r0
-/* 80081A24 0007E824  3C A0 80 2E */	lis r5, $$2stringBase0_32@ha
+/* 80081A24 0007E824  3C A0 80 2E */	lis r5, _esc__2_stringBase0_32@ha
 /* 80081A28 0007E828  90 01 01 24 */	stw r0, 0x124(r1)
-/* 80081A2C 0007E82C  38 C5 8D 28 */	addi r6, r5, $$2stringBase0_32@l
+/* 80081A2C 0007E82C  38 C5 8D 28 */	addi r6, r5, _esc__2_stringBase0_32@l
 /* 80081A30 0007E830  BF A1 01 14 */	stmw r29, 0x114(r1)
 /* 80081A34 0007E834  7C 7D 1B 78 */	mr r29, r3
 /* 80081A38 0007E838  7C 9E 23 78 */	mr r30, r4
@@ -633,3 +635,6 @@ lbl_80081B40:
 /* 80081B44 0007E944  7C 08 03 A6 */	mtlr r0
 /* 80081B48 0007E948  38 21 00 10 */	addi r1, r1, 0x10
 /* 80081B4C 0007E94C  4E 80 00 20 */	blr 
+
+.endif
+

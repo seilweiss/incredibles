@@ -8,11 +8,11 @@ sceneBaseDescription:
 .global entries__5stats
 entries__5stats:
 	.skip 0xA50
-.global scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2
-scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x380
-.global unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2
-unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x48
 .global allsoaklevels
 allsoaklevels:
@@ -20,17 +20,17 @@ allsoaklevels:
 
 .section .data
 
-.global MOVIE_MANAGER_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2
-MOVIE_MANAGER_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global MOVIE_MANAGER_FMV_LIST__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+MOVIE_MANAGER_FMV_LIST__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.incbin "baserom.dol", 0x313DF8, 0x6C
-.global newTags__28$$2unnamed$$2zUIIncredibles_cpp$$2
-newTags__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global newTags__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+newTags__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.incbin "baserom.dol", 0x313E64, 0x8C
-.global numbers$1463
-numbers$1463:
+.global numbers_esc__7_1463
+numbers_esc__7_1463:
 	.incbin "baserom.dol", 0x313EF0, 0x4C
-.global translationTable$2798
-translationTable$2798:
+.global translationTable_esc__7_2798
+translationTable_esc__7_2798:
 	.incbin "baserom.dol", 0x313F3C, 0x114
 .global __vt__23zUICustomArtworkManager
 __vt__23zUICustomArtworkManager:
@@ -80,14 +80,14 @@ __vt__23zUICustomNumberScroller:
 
 .section .rodata
 
-.global $$22316
-$$22316:
+.global _esc__2_2316
+_esc__2_2316:
 	.incbin "baserom.dol", 0x2E5F98, 0xF0
-.global $$22437
-$$22437:
+.global _esc__2_2437
+_esc__2_2437:
 	.incbin "baserom.dol", 0x2E6088, 0x150
-.global $$2stringBase0_133
-$$2stringBase0_133:
+.global _esc__2_stringBase0_133
+_esc__2_stringBase0_133:
 	.incbin "baserom.dol", 0x2E61D8, 0x2E8
 
 .section .sbss
@@ -104,53 +104,53 @@ entry_count__5stats:
 .global loadSceneID
 loadSceneID:
 	.skip 0x4
-.global SCENE_STATUS_BONUS__28$$2unnamed$$2zUIIncredibles_cpp$$2
-SCENE_STATUS_BONUS__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global SCENE_STATUS_BONUS__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+SCENE_STATUS_BONUS__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x4
-.global numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2
-numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x4
-.global latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2
-latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x4
-.global unlockCheatOn__28$$2unnamed$$2zUIIncredibles_cpp$$2
-unlockCheatOn__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global unlockCheatOn__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+unlockCheatOn__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x4
-.global unlockedMovies__28$$2unnamed$$2zUIIncredibles_cpp$$2
-unlockedMovies__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global unlockedMovies__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+unlockedMovies__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x28
-.global battleModeBonusCount__28$$2unnamed$$2zUIIncredibles_cpp$$2
-battleModeBonusCount__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global battleModeBonusCount__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+battleModeBonusCount__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x1
-.global isBM01__28$$2unnamed$$2zUIIncredibles_cpp$$2
-isBM01__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global isBM01__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+isBM01__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x3
-.global stageBeforeBattleMode__28$$2unnamed$$2zUIIncredibles_cpp$$2
-stageBeforeBattleMode__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global stageBeforeBattleMode__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+stageBeforeBattleMode__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x4
-.global sceneBaseImage__28$$2unnamed$$2zUIIncredibles_cpp$$2
-sceneBaseImage__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global sceneBaseImage__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+sceneBaseImage__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x20
-.global sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2
-sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x4
-.global sceneUnlockAll__28$$2unnamed$$2zUIIncredibles_cpp$$2
-sceneUnlockAll__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global sceneUnlockAll__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+sceneUnlockAll__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x4
-.global sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2
-sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global sceneCheckPointTotal__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+sceneCheckPointTotal__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x4
-.global sceneCheckPointHit__28$$2unnamed$$2zUIIncredibles_cpp$$2
-sceneCheckPointHit__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global sceneCheckPointHit__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+sceneCheckPointHit__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.skip 0x4
-.global buffer$1369
-buffer$1369:
+.global buffer_esc__7_1369
+buffer_esc__7_1369:
 	.skip 0x30
-.global portal$3001
-portal$3001:
+.global portal_esc__7_3001
+portal_esc__7_3001:
 	.skip 0x14
-.global portalAsset$3002
-portalAsset$3002:
+.global portalAsset_esc__7_3002
+portalAsset_esc__7_3002:
 	.skip 0x18
 .global pause_type
 pause_type:
@@ -158,8 +158,8 @@ pause_type:
 
 .section .sbss2
 
-.global $$21613_2
-$$21613_2:
+.global _esc__2_1613_2
+_esc__2_1613_2:
 	.skip 0x4
 .global lbl_803D9394
 lbl_803D9394:
@@ -170,8 +170,8 @@ lbl_803D9398:
 .global lbl_803D939C
 lbl_803D939C:
 	.skip 0x4
-.global $$22644_0
-$$22644_0:
+.global _esc__2_2644_0
+_esc__2_2644_0:
 	.skip 0x4
 .global lbl_803D93A4
 lbl_803D93A4:
@@ -185,150 +185,152 @@ lbl_803D93AC:
 
 .section .sdata
 
-.global BONUS_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2
-BONUS_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global BONUS_FMV_LIST__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+BONUS_FMV_LIST__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32D868, 0x10
 
 .section .sdata2
 
-.global $$21275_0
-$$21275_0:
+.global _esc__2_1275_0
+_esc__2_1275_0:
 	.incbin "baserom.dol", 0x333530, 0x4
-.global VOLUME_ACTIVE_COLOR__28$$2unnamed$$2zUIIncredibles_cpp$$2
-VOLUME_ACTIVE_COLOR__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global VOLUME_ACTIVE_COLOR__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+VOLUME_ACTIVE_COLOR__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333534, 0x4
-.global $$21409_1
-$$21409_1:
+.global _esc__2_1409_1
+_esc__2_1409_1:
 	.incbin "baserom.dol", 0x333538, 0x4
-.global $$21410_0
-$$21410_0:
+.global _esc__2_1410_0
+_esc__2_1410_0:
 	.incbin "baserom.dol", 0x33353C, 0x4
-.global $$21482_1
-$$21482_1:
+.global _esc__2_1482_1
+_esc__2_1482_1:
 	.incbin "baserom.dol", 0x333540, 0x4
-.global $$21572_0
-$$21572_0:
+.global _esc__2_1572_0
+_esc__2_1572_0:
 	.incbin "baserom.dol", 0x333544, 0x4
-.global $$21573_0
-$$21573_0:
+.global _esc__2_1573_0
+_esc__2_1573_0:
 	.incbin "baserom.dol", 0x333548, 0x4
-.global $$21574_0
-$$21574_0:
+.global _esc__2_1574_0
+_esc__2_1574_0:
 	.incbin "baserom.dol", 0x33354C, 0x4
-.global $$21575_0
-$$21575_0:
+.global _esc__2_1575_0
+_esc__2_1575_0:
 	.incbin "baserom.dol", 0x333550, 0x4
-.global $$21576_2
-$$21576_2:
+.global _esc__2_1576_2
+_esc__2_1576_2:
 	.incbin "baserom.dol", 0x333554, 0x4
-.global $$21577_0
-$$21577_0:
+.global _esc__2_1577_0
+_esc__2_1577_0:
 	.incbin "baserom.dol", 0x333558, 0x8
-.global $$21579_0
-$$21579_0:
+.global _esc__2_1579_0
+_esc__2_1579_0:
 	.incbin "baserom.dol", 0x333560, 0x8
-.global $$21658_1
-$$21658_1:
+.global _esc__2_1658_1
+_esc__2_1658_1:
 	.incbin "baserom.dol", 0x333568, 0x8
-.global $$21731_1
-$$21731_1:
+.global _esc__2_1731_1
+_esc__2_1731_1:
 	.incbin "baserom.dol", 0x333570, 0x4
-.global $$21732_1
-$$21732_1:
+.global _esc__2_1732_1
+_esc__2_1732_1:
 	.incbin "baserom.dol", 0x333574, 0x4
-.global $$21733_1
-$$21733_1:
+.global _esc__2_1733_1
+_esc__2_1733_1:
 	.incbin "baserom.dol", 0x333578, 0x4
-.global $$21757_2
-$$21757_2:
+.global _esc__2_1757_2
+_esc__2_1757_2:
 	.incbin "baserom.dol", 0x33357C, 0x4
-.global $$21850
-$$21850:
+.global _esc__2_1850
+_esc__2_1850:
 	.incbin "baserom.dol", 0x333580, 0x8
-.global $$21851
-$$21851:
+.global _esc__2_1851
+_esc__2_1851:
 	.incbin "baserom.dol", 0x333588, 0x8
-.global $$21906
-$$21906:
+.global _esc__2_1906
+_esc__2_1906:
 	.incbin "baserom.dol", 0x333590, 0x4
-.global $$21907_2
-$$21907_2:
+.global _esc__2_1907_2
+_esc__2_1907_2:
 	.incbin "baserom.dol", 0x333594, 0x4
-.global $$21908_0
-$$21908_0:
+.global _esc__2_1908_0
+_esc__2_1908_0:
 	.incbin "baserom.dol", 0x333598, 0x4
-.global $$21909
-$$21909:
+.global _esc__2_1909
+_esc__2_1909:
 	.incbin "baserom.dol", 0x33359C, 0x4
-.global $$21932_1
-$$21932_1:
+.global _esc__2_1932_1
+_esc__2_1932_1:
 	.incbin "baserom.dol", 0x3335A0, 0x4
-.global $$22010_0
-$$22010_0:
+.global _esc__2_2010_0
+_esc__2_2010_0:
 	.incbin "baserom.dol", 0x3335A4, 0x4
-.global $$22024_0
-$$22024_0:
+.global _esc__2_2024_0
+_esc__2_2024_0:
 	.incbin "baserom.dol", 0x3335A8, 0x4
-.global $$22038
-$$22038:
+.global _esc__2_2038
+_esc__2_2038:
 	.incbin "baserom.dol", 0x3335AC, 0x4
-.global $$22039
-$$22039:
+.global _esc__2_2039
+_esc__2_2039:
 	.incbin "baserom.dol", 0x3335B0, 0x4
-.global $$22040_1
-$$22040_1:
+.global _esc__2_2040_1
+_esc__2_2040_1:
 	.incbin "baserom.dol", 0x3335B4, 0x4
-.global $$22050
-$$22050:
+.global _esc__2_2050
+_esc__2_2050:
 	.incbin "baserom.dol", 0x3335B8, 0x4
-.global $$22051
-$$22051:
+.global _esc__2_2051
+_esc__2_2051:
 	.incbin "baserom.dol", 0x3335BC, 0x4
-.global $$22125
-$$22125:
+.global _esc__2_2125
+_esc__2_2125:
 	.incbin "baserom.dol", 0x3335C0, 0x4
-.global $$22162
-$$22162:
+.global _esc__2_2162
+_esc__2_2162:
 	.incbin "baserom.dol", 0x3335C4, 0x4
-.global $$22163
-$$22163:
+.global _esc__2_2163
+_esc__2_2163:
 	.incbin "baserom.dol", 0x3335C8, 0x4
-.global $$22164
-$$22164:
+.global _esc__2_2164
+_esc__2_2164:
 	.incbin "baserom.dol", 0x3335CC, 0x4
-.global $$22176
-$$22176:
+.global _esc__2_2176
+_esc__2_2176:
 	.incbin "baserom.dol", 0x3335D0, 0x4
-.global $$22177
-$$22177:
+.global _esc__2_2177
+_esc__2_2177:
 	.incbin "baserom.dol", 0x3335D4, 0x4
-.global $$22401
-$$22401:
+.global _esc__2_2401
+_esc__2_2401:
 	.incbin "baserom.dol", 0x3335D8, 0x4
-.global $$22402_1
-$$22402_1:
+.global _esc__2_2402_1
+_esc__2_2402_1:
 	.incbin "baserom.dol", 0x3335DC, 0x4
-.global $$22459
-$$22459:
+.global _esc__2_2459
+_esc__2_2459:
 	.incbin "baserom.dol", 0x3335E0, 0x4
-.global $$22460
-$$22460:
+.global _esc__2_2460
+_esc__2_2460:
 	.incbin "baserom.dol", 0x3335E4, 0x4
-.global $$22497
-$$22497:
+.global _esc__2_2497
+_esc__2_2497:
 	.incbin "baserom.dol", 0x3335E8, 0x14
 .global lbl_803D6C3C
 lbl_803D6C3C:
 	.incbin "baserom.dol", 0x3335FC, 0x4
-.global $$22514
-$$22514:
+.global _esc__2_2514
+_esc__2_2514:
 	.incbin "baserom.dol", 0x333600, 0x18
-.global SCENEFLAGS_COMPLETED__28$$2unnamed$$2zUIIncredibles_cpp$$2
-SCENEFLAGS_COMPLETED__28$$2unnamed$$2zUIIncredibles_cpp$$2:
+.global SCENEFLAGS_COMPLETED__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
+SCENEFLAGS_COMPLETED__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.incbin "baserom.dol", 0x333618, 0x4
-.global $$23146
-$$23146:
+.global _esc__2_3146
+_esc__2_3146:
 	.incbin "baserom.dol", 0x33361C, 0x4
+
+.if 0
 
 .section .text
 
@@ -426,7 +428,7 @@ lbl_801C7BC8:
 /* 801C7BC8 001C49C8  80 0D D8 CC */	lwz r0, entry_count__5stats-_SDA_BASE_(r13)
 /* 801C7BCC 001C49CC  7C 1D 00 00 */	cmpw r29, r0
 /* 801C7BD0 001C49D0  41 80 FF C8 */	blt lbl_801C7B98
-/* 801C7BD4 001C49D4  C0 22 CE 50 */	lfs f1, $$21275_0-_SDA2_BASE_(r2)
+/* 801C7BD4 001C49D4  C0 22 CE 50 */	lfs f1, _esc__2_1275_0-_SDA2_BASE_(r2)
 lbl_801C7BD8:
 /* 801C7BD8 001C49D8  BB 81 00 10 */	lmw r28, 0x10(r1)
 /* 801C7BDC 001C49DC  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -464,7 +466,7 @@ lbl_801C7C38:
 /* 801C7C44 001C4A44  38 A3 00 01 */	addi r5, r3, 1
 /* 801C7C48 001C4A48  3C 60 80 3A */	lis r3, entries__5stats@ha
 /* 801C7C4C 001C4A4C  1C 05 00 84 */	mulli r0, r5, 0x84
-/* 801C7C50 001C4A50  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801C7C50 001C4A50  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801C7C54 001C4A54  38 83 E5 60 */	addi r4, r3, entries__5stats@l
 /* 801C7C58 001C4A58  90 AD D8 CC */	stw r5, entry_count__5stats-_SDA_BASE_(r13)
 /* 801C7C5C 001C4A5C  38 65 FF FF */	addi r3, r5, -1
@@ -477,8 +479,8 @@ lbl_801C7C68:
 /* 801C7C74 001C4A74  38 21 00 20 */	addi r1, r1, 0x20
 /* 801C7C78 001C4A78  4E 80 00 20 */	blr 
 
-.global GetSceneNumber__28$$2unnamed$$2zUIIncredibles_cpp$$2FPCcUiPb
-GetSceneNumber__28$$2unnamed$$2zUIIncredibles_cpp$$2FPCcUiPb:
+.global GetSceneNumber__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPCcUiPb
+GetSceneNumber__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPCcUiPb:
 /* 801C7C7C 001C4A7C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801C7C80 001C4A80  7C 08 02 A6 */	mflr r0
 /* 801C7C84 001C4A84  90 01 00 24 */	stw r0, 0x24(r1)
@@ -492,14 +494,14 @@ GetSceneNumber__28$$2unnamed$$2zUIIncredibles_cpp$$2FPCcUiPb:
 lbl_801C7CA4:
 /* 801C7CA4 001C4AA4  28 1B 00 07 */	cmplwi r27, 7
 /* 801C7CA8 001C4AA8  40 82 00 28 */	bne lbl_801C7CD0
-/* 801C7CAC 001C4AAC  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801C7CAC 001C4AAC  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801C7CB0 001C4AB0  7F 43 D3 78 */	mr r3, r26
-/* 801C7CB4 001C4AB4  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801C7CB4 001C4AB4  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801C7CB8 001C4AB8  38 A0 00 07 */	li r5, 7
 /* 801C7CBC 001C4ABC  4B EA 57 CD */	bl imemcmp__FPCvPCvUl
 /* 801C7CC0 001C4AC0  2C 03 00 00 */	cmpwi r3, 0
 /* 801C7CC4 001C4AC4  40 82 00 0C */	bne lbl_801C7CD0
-/* 801C7CC8 001C4AC8  80 6D D9 34 */	lwz r3, sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C7CC8 001C4AC8  80 6D D9 34 */	lwz r3, sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C7CCC 001C4ACC  48 00 01 04 */	b lbl_801C7DD0
 lbl_801C7CD0:
 /* 801C7CD0 001C4AD0  7F 5F D3 78 */	mr r31, r26
@@ -574,7 +576,7 @@ lbl_801C7DAC:
 lbl_801C7DBC:
 /* 801C7DBC 001C4BBC  A8 63 00 14 */	lha r3, 0x14(r3)
 lbl_801C7DC0:
-/* 801C7DC0 001C4BC0  80 0D D8 D8 */	lwz r0, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C7DC0 001C4BC0  80 0D D8 D8 */	lwz r0, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C7DC4 001C4BC4  7C 03 00 40 */	cmplw r3, r0
 /* 801C7DC8 001C4BC8  41 80 00 08 */	blt lbl_801C7DD0
 /* 801C7DCC 001C4BCC  38 60 00 00 */	li r3, 0
@@ -585,8 +587,8 @@ lbl_801C7DD0:
 /* 801C7DDC 001C4BDC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801C7DE0 001C4BE0  4E 80 00 20 */	blr 
 
-.global ParseTagSceneName__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
-ParseTagSceneName__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
+.global ParseTagSceneName__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+ParseTagSceneName__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
 /* 801C7DE4 001C4BE4  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 801C7DE8 001C4BE8  7C 08 02 A6 */	mflr r0
 /* 801C7DEC 001C4BEC  90 01 00 64 */	stw r0, 0x64(r1)
@@ -615,7 +617,7 @@ ParseTagSceneName__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtext
 lbl_801C7E48:
 /* 801C7E48 001C4C48  80 7E 00 18 */	lwz r3, 0x18(r30)
 /* 801C7E4C 001C4C4C  38 A0 00 00 */	li r5, 0
-/* 801C7E50 001C4C50  4B FF FE 2D */	bl GetSceneNumber__28$$2unnamed$$2zUIIncredibles_cpp$$2FPCcUiPb
+/* 801C7E50 001C4C50  4B FF FE 2D */	bl GetSceneNumber__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPCcUiPb
 /* 801C7E54 001C4C54  38 00 00 00 */	li r0, 0
 /* 801C7E58 001C4C58  7C 7E 1B 79 */	or. r30, r3, r3
 /* 801C7E5C 001C4C5C  90 1F 00 0C */	stw r0, 0xc(r31)
@@ -625,9 +627,9 @@ lbl_801C7E48:
 /* 801C7E6C 001C4C6C  80 63 04 C8 */	lwz r3, 0x4c8(r3)
 /* 801C7E70 001C4C70  80 63 00 00 */	lwz r3, 0(r3)
 /* 801C7E74 001C4C74  48 00 5D 0D */	bl SCENEIDSTR__FUiPc
-/* 801C7E78 001C4C78  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801C7E78 001C4C78  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801C7E7C 001C4C7C  38 61 00 14 */	addi r3, r1, 0x14
-/* 801C7E80 001C4C80  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801C7E80 001C4C80  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801C7E84 001C4C84  38 C1 00 0C */	addi r6, r1, 0xc
 /* 801C7E88 001C4C88  38 84 00 08 */	addi r4, r4, 8
 /* 801C7E8C 001C4C8C  38 AD D8 AC */	addi r5, r13, sceneBaseName-_SDA_BASE_
@@ -646,8 +648,8 @@ lbl_801C7EB8:
 /* 801C7EBC 001C4CBC  28 00 00 00 */	cmplwi r0, 0
 /* 801C7EC0 001C4CC0  40 82 00 24 */	bne lbl_801C7EE4
 /* 801C7EC4 001C4CC4  1C 9E 00 1C */	mulli r4, r30, 0x1c
-/* 801C7EC8 001C4CC8  3C 60 80 3A */	lis r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801C7ECC 001C4CCC  38 03 EF B0 */	addi r0, r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801C7EC8 001C4CC8  3C 60 80 3A */	lis r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801C7ECC 001C4CCC  38 03 EF B0 */	addi r0, r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801C7ED0 001C4CD0  7C 60 22 14 */	add r3, r0, r4
 /* 801C7ED4 001C4CD4  80 03 00 08 */	lwz r0, 8(r3)
 /* 801C7ED8 001C4CD8  90 1F 00 0C */	stw r0, 0xc(r31)
@@ -665,8 +667,8 @@ lbl_801C7EF4:
 /* 801C7F00 001C4D00  38 21 00 60 */	addi r1, r1, 0x60
 /* 801C7F04 001C4D04  4E 80 00 20 */	blr 
 
-.global ParseTagSceneDescription__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
-ParseTagSceneDescription__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
+.global ParseTagSceneDescription__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+ParseTagSceneDescription__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
 /* 801C7F08 001C4D08  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801C7F0C 001C4D0C  7C 08 02 A6 */	mflr r0
 /* 801C7F10 001C4D10  90 01 00 14 */	stw r0, 0x14(r1)
@@ -695,11 +697,11 @@ ParseTagSceneDescription__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotR
 lbl_801C7F6C:
 /* 801C7F6C 001C4D6C  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801C7F70 001C4D70  38 A0 00 00 */	li r5, 0
-/* 801C7F74 001C4D74  4B FF FD 09 */	bl GetSceneNumber__28$$2unnamed$$2zUIIncredibles_cpp$$2FPCcUiPb
+/* 801C7F74 001C4D74  4B FF FD 09 */	bl GetSceneNumber__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPCcUiPb
 /* 801C7F78 001C4D78  1C A3 00 1C */	mulli r5, r3, 0x1c
-/* 801C7F7C 001C4D7C  3C 80 80 3A */	lis r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801C7F7C 001C4D7C  3C 80 80 3A */	lis r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801C7F80 001C4D80  38 60 00 01 */	li r3, 1
-/* 801C7F84 001C4D84  38 04 EF B0 */	addi r0, r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801C7F84 001C4D84  38 04 EF B0 */	addi r0, r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801C7F88 001C4D88  7C 80 2A 14 */	add r4, r0, r5
 /* 801C7F8C 001C4D8C  80 04 00 0C */	lwz r0, 0xc(r4)
 /* 801C7F90 001C4D90  90 1E 00 0C */	stw r0, 0xc(r30)
@@ -715,8 +717,8 @@ lbl_801C7FA8:
 /* 801C7FB4 001C4DB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C7FB8 001C4DB8  4E 80 00 20 */	blr 
 
-.global ParseTagSceneStatus__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
-ParseTagSceneStatus__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
+.global ParseTagSceneStatus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+ParseTagSceneStatus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
 /* 801C7FBC 001C4DBC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801C7FC0 001C4DC0  7C 08 02 A6 */	mflr r0
 /* 801C7FC4 001C4DC4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -747,35 +749,35 @@ lbl_801C8020:
 /* 801C8024 001C4E24  80 7E 00 18 */	lwz r3, 0x18(r30)
 /* 801C8028 001C4E28  98 01 00 08 */	stb r0, 8(r1)
 /* 801C802C 001C4E2C  38 A1 00 08 */	addi r5, r1, 8
-/* 801C8030 001C4E30  4B FF FC 4D */	bl GetSceneNumber__28$$2unnamed$$2zUIIncredibles_cpp$$2FPCcUiPb
+/* 801C8030 001C4E30  4B FF FC 4D */	bl GetSceneNumber__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPCcUiPb
 /* 801C8034 001C4E34  1C 83 00 1C */	mulli r4, r3, 0x1c
 /* 801C8038 001C4E38  88 01 00 08 */	lbz r0, 8(r1)
-/* 801C803C 001C4E3C  3C A0 80 3A */	lis r5, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801C803C 001C4E3C  3C A0 80 3A */	lis r5, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801C8040 001C4E40  28 00 00 00 */	cmplwi r0, 0
-/* 801C8044 001C4E44  38 05 EF B0 */	addi r0, r5, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801C8044 001C4E44  38 05 EF B0 */	addi r0, r5, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801C8048 001C4E48  7C 80 22 14 */	add r4, r0, r4
 /* 801C804C 001C4E4C  88 A4 00 05 */	lbz r5, 5(r4)
 /* 801C8050 001C4E50  41 82 00 10 */	beq lbl_801C8060
 /* 801C8054 001C4E54  28 03 00 00 */	cmplwi r3, 0
 /* 801C8058 001C4E58  40 82 00 08 */	bne lbl_801C8060
-/* 801C805C 001C4E5C  88 AD D9 0C */	lbz r5, battleModeBonusCount__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C805C 001C4E5C  88 AD D9 0C */	lbz r5, battleModeBonusCount__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801C8060:
 /* 801C8060 001C4E60  28 05 00 00 */	cmplwi r5, 0
 /* 801C8064 001C4E64  41 82 00 2C */	beq lbl_801C8090
-/* 801C8068 001C4E68  80 8D D8 D4 */	lwz r4, SCENE_STATUS_BONUS__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801C806C 001C4E6C  38 6D D9 44 */	addi r3, r13, buffer$1369-_SDA_BASE_
+/* 801C8068 001C4E68  80 8D D8 D4 */	lwz r4, SCENE_STATUS_BONUS__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801C806C 001C4E6C  38 6D D9 44 */	addi r3, r13, buffer_esc__7_1369-_SDA_BASE_
 /* 801C8070 001C4E70  4C C6 31 82 */	crclr 6
 /* 801C8074 001C4E74  48 0F 0C 15 */	bl sprintf
-/* 801C8078 001C4E78  38 0D D9 44 */	addi r0, r13, buffer$1369-_SDA_BASE_
-/* 801C807C 001C4E7C  38 6D D9 44 */	addi r3, r13, buffer$1369-_SDA_BASE_
+/* 801C8078 001C4E78  38 0D D9 44 */	addi r0, r13, buffer_esc__7_1369-_SDA_BASE_
+/* 801C807C 001C4E7C  38 6D D9 44 */	addi r3, r13, buffer_esc__7_1369-_SDA_BASE_
 /* 801C8080 001C4E80  90 1F 00 0C */	stw r0, 0xc(r31)
 /* 801C8084 001C4E84  48 0F 45 29 */	bl strlen
 /* 801C8088 001C4E88  B0 7F 00 0A */	sth r3, 0xa(r31)
 /* 801C808C 001C4E8C  48 00 00 1C */	b lbl_801C80A8
 lbl_801C8090:
-/* 801C8090 001C4E90  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
+/* 801C8090 001C4E90  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
 /* 801C8094 001C4E94  38 00 00 00 */	li r0, 0
-/* 801C8098 001C4E98  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801C8098 001C4E98  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801C809C 001C4E9C  38 63 00 0E */	addi r3, r3, 0xe
 /* 801C80A0 001C4EA0  90 7F 00 0C */	stw r3, 0xc(r31)
 /* 801C80A4 001C4EA4  B0 1F 00 0A */	sth r0, 0xa(r31)
@@ -791,8 +793,8 @@ lbl_801C80B8:
 /* 801C80C4 001C4EC4  38 21 00 20 */	addi r1, r1, 0x20
 /* 801C80C8 001C4EC8  4E 80 00 20 */	blr 
 
-.global ParseTagLoadingSceneName__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
-ParseTagLoadingSceneName__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
+.global ParseTagLoadingSceneName__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+ParseTagLoadingSceneName__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
 /* 801C80CC 001C4ECC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801C80D0 001C4ED0  7C 08 02 A6 */	mflr r0
 /* 801C80D4 001C4ED4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -822,8 +824,8 @@ ParseTagLoadingSceneName__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotR
 /* 801C8134 001C4F34  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C8138 001C4F38  4E 80 00 20 */	blr 
 
-.global ParseTagIgnore__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
-ParseTagIgnore__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
+.global ParseTagIgnore__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+ParseTagIgnore__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
 /* 801C813C 001C4F3C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801C8140 001C4F40  7C 08 02 A6 */	mflr r0
 /* 801C8144 001C4F44  90 01 00 14 */	stw r0, 0x14(r1)
@@ -844,8 +846,8 @@ ParseTagIgnore__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextbox
 /* 801C8180 001C4F80  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C8184 001C4F84  4E 80 00 20 */	blr 
 
-.global ParseTagSpace__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
-ParseTagSpace__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
+.global ParseTagSpace__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+ParseTagSpace__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
 /* 801C8188 001C4F88  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801C818C 001C4F8C  7C 08 02 A6 */	mflr r0
 /* 801C8190 001C4F90  90 01 00 14 */	stw r0, 0x14(r1)
@@ -855,9 +857,9 @@ ParseTagSpace__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxR
 /* 801C81A0 001C4FA0  88 1F 00 08 */	lbz r0, 8(r31)
 /* 801C81A4 001C4FA4  38 C0 00 01 */	li r6, 1
 /* 801C81A8 001C4FA8  50 C0 36 72 */	rlwimi r0, r6, 6, 0x19, 0x19
-/* 801C81AC 001C4FAC  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
+/* 801C81AC 001C4FAC  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
 /* 801C81B0 001C4FB0  98 1F 00 08 */	stb r0, 8(r31)
-/* 801C81B4 001C4FB4  38 83 91 D8 */	addi r4, r3, $$2stringBase0_133@l
+/* 801C81B4 001C4FB4  38 83 91 D8 */	addi r4, r3, _esc__2_stringBase0_133@l
 /* 801C81B8 001C4FB8  38 60 00 01 */	li r3, 1
 /* 801C81BC 001C4FBC  88 BF 00 08 */	lbz r5, 8(r31)
 /* 801C81C0 001C4FC0  50 05 0E 30 */	rlwimi r5, r0, 1, 0x18, 0x18
@@ -874,11 +876,11 @@ ParseTagSpace__28$$2unnamed$$2zUIIncredibles_cpp$$2FRQ28xtextbox3jotRC8xtextboxR
 /* 801C81EC 001C4FEC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C81F0 001C4FF0  4E 80 00 20 */	blr 
 
-.global RenderQuadList__28$$2unnamed$$2zUIIncredibles_cpp$$2FP18rwGameCube2DVertexUi
-RenderQuadList__28$$2unnamed$$2zUIIncredibles_cpp$$2FP18rwGameCube2DVertexUi:
+.global RenderQuadList__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FP18rwGameCube2DVertexUi
+RenderQuadList__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FP18rwGameCube2DVertexUi:
 /* 801C81F4 001C4FF4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801C81F8 001C4FF8  7C 08 02 A6 */	mflr r0
-/* 801C81FC 001C4FFC  C0 22 CE 58 */	lfs f1, $$21409_1-_SDA2_BASE_(r2)
+/* 801C81FC 001C4FFC  C0 22 CE 58 */	lfs f1, _esc__2_1409_1-_SDA2_BASE_(r2)
 /* 801C8200 001C5000  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C8204 001C5004  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 801C8208 001C5008  7C 7C 1B 78 */	mr r28, r3
@@ -890,14 +892,14 @@ RenderQuadList__28$$2unnamed$$2zUIIncredibles_cpp$$2FP18rwGameCube2DVertexUi:
 /* 801C8220 001C5020  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 801C8224 001C5024  4C 40 13 82 */	cror 2, 0, 2
 /* 801C8228 001C5028  40 82 00 20 */	bne lbl_801C8248
-/* 801C822C 001C502C  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801C822C 001C502C  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801C8230 001C5030  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801C8234 001C5034  4C 41 13 82 */	cror 2, 1, 2
 /* 801C8238 001C5038  40 82 00 0C */	bne lbl_801C8244
 /* 801C823C 001C503C  FC 40 08 90 */	fmr f2, f1
 /* 801C8240 001C5040  48 00 00 08 */	b lbl_801C8248
 lbl_801C8244:
-/* 801C8244 001C5044  C0 42 CE 5C */	lfs f2, $$21410_0-_SDA2_BASE_(r2)
+/* 801C8244 001C5044  C0 42 CE 5C */	lfs f2, _esc__2_1410_0-_SDA2_BASE_(r2)
 lbl_801C8248:
 /* 801C8248 001C5048  57 A0 10 3A */	slwi r0, r29, 2
 /* 801C824C 001C504C  38 60 00 00 */	li r3, 0
@@ -932,8 +934,8 @@ lbl_801C829C:
 /* 801C82B0 001C50B0  38 21 00 20 */	addi r1, r1, 0x20
 /* 801C82B4 001C50B4  4E 80 00 20 */	blr 
 
-.global BreakString__28$$2unnamed$$2zUIIncredibles_cpp$$2FRPcPCc
-BreakString__28$$2unnamed$$2zUIIncredibles_cpp$$2FRPcPCc:
+.global BreakString__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRPcPCc
+BreakString__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRPcPCc:
 /* 801C82B8 001C50B8  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801C82BC 001C50BC  7C 08 02 A6 */	mflr r0
 /* 801C82C0 001C50C0  90 01 00 34 */	stw r0, 0x34(r1)
@@ -946,9 +948,9 @@ BreakString__28$$2unnamed$$2zUIIncredibles_cpp$$2FRPcPCc:
 lbl_801C82DC:
 /* 801C82DC 001C50DC  7F 43 D3 78 */	mr r3, r26
 /* 801C82E0 001C50E0  48 0F 42 CD */	bl strlen
-/* 801C82E4 001C50E4  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801C82E4 001C50E4  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801C82E8 001C50E8  7C 7F 1B 78 */	mr r31, r3
-/* 801C82EC 001C50EC  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801C82EC 001C50EC  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801C82F0 001C50F0  7F 43 D3 78 */	mr r3, r26
 /* 801C82F4 001C50F4  38 84 00 4E */	addi r4, r4, 0x4e
 /* 801C82F8 001C50F8  3B C0 FF FF */	li r30, -1
@@ -956,9 +958,9 @@ lbl_801C82DC:
 /* 801C8300 001C5100  48 0F 3D FD */	bl strstr
 /* 801C8304 001C5104  7C 7B 1B 79 */	or. r27, r3, r3
 /* 801C8308 001C5108  41 82 00 70 */	beq lbl_801C8378
-/* 801C830C 001C510C  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801C830C 001C510C  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801C8310 001C5110  7F DA D8 50 */	subf r30, r26, r27
-/* 801C8314 001C5114  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801C8314 001C5114  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801C8318 001C5118  38 A0 00 05 */	li r5, 5
 /* 801C831C 001C511C  38 84 00 52 */	addi r4, r4, 0x52
 /* 801C8320 001C5120  48 0F 3F B1 */	bl strncmp
@@ -1038,9 +1040,9 @@ lbl_801C8414:
 /* 801C8418 001C5218  88 1A 00 00 */	lbz r0, 0(r26)
 /* 801C841C 001C521C  7C 00 07 75 */	extsb. r0, r0
 /* 801C8420 001C5220  41 82 00 44 */	beq lbl_801C8464
-/* 801C8424 001C5224  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801C8424 001C5224  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801C8428 001C5228  80 79 00 00 */	lwz r3, 0(r25)
-/* 801C842C 001C522C  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801C842C 001C522C  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801C8430 001C5230  38 84 00 58 */	addi r4, r4, 0x58
 /* 801C8434 001C5234  48 0F 40 C1 */	bl strcpy
 /* 801C8438 001C5238  80 79 00 00 */	lwz r3, 0(r25)
@@ -1077,7 +1079,7 @@ __ct__23zUICustomNumberScrollerFP3zUI:
 /* 801C84A0 001C52A0  3C 60 80 31 */	lis r3, __vt__23zUICustomNumberScroller@ha
 /* 801C84A4 001C52A4  38 00 00 00 */	li r0, 0
 /* 801C84A8 001C52A8  38 63 74 B0 */	addi r3, r3, __vt__23zUICustomNumberScroller@l
-/* 801C84AC 001C52AC  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801C84AC 001C52AC  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801C84B0 001C52B0  90 7F 00 00 */	stw r3, 0(r31)
 /* 801C84B4 001C52B4  7F E3 FB 78 */	mr r3, r31
 /* 801C84B8 001C52B8  90 1F 00 88 */	stw r0, 0x88(r31)
@@ -1091,7 +1093,7 @@ __ct__23zUICustomNumberScrollerFP3zUI:
 .global Reset__23zUICustomNumberScrollerFv
 Reset__23zUICustomNumberScrollerFv:
 /* 801C84D4 001C52D4  38 00 00 00 */	li r0, 0
-/* 801C84D8 001C52D8  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801C84D8 001C52D8  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801C84DC 001C52DC  90 03 00 88 */	stw r0, 0x88(r3)
 /* 801C84E0 001C52E0  D0 03 00 8C */	stfs f0, 0x8c(r3)
 /* 801C84E4 001C52E4  4E 80 00 20 */	blr 
@@ -1100,7 +1102,7 @@ Reset__23zUICustomNumberScrollerFv:
 PreUpdate__23zUICustomNumberScrollerFf:
 /* 801C84E8 001C52E8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801C84EC 001C52EC  7C 08 02 A6 */	mflr r0
-/* 801C84F0 001C52F0  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801C84F0 001C52F0  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801C84F4 001C52F4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C84F8 001C52F8  BF 61 00 0C */	stmw r27, 0xc(r1)
 /* 801C84FC 001C52FC  7C 7C 1B 78 */	mr r28, r3
@@ -1108,20 +1110,20 @@ PreUpdate__23zUICustomNumberScrollerFf:
 /* 801C8504 001C5304  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801C8508 001C5308  4C 40 13 82 */	cror 2, 0, 2
 /* 801C850C 001C530C  40 82 00 A8 */	bne lbl_801C85B4
-/* 801C8510 001C5310  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
-/* 801C8514 001C5314  3C 60 80 31 */	lis r3, numbers$1463@ha
+/* 801C8510 001C5310  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
+/* 801C8514 001C5314  3C 60 80 31 */	lis r3, numbers_esc__7_1463@ha
 /* 801C8518 001C5318  3B DC 00 08 */	addi r30, r28, 8
 /* 801C851C 001C531C  3B A0 00 00 */	li r29, 0
-/* 801C8520 001C5320  3B E4 91 D8 */	addi r31, r4, $$2stringBase0_133@l
-/* 801C8524 001C5324  3B 63 6E F0 */	addi r27, r3, numbers$1463@l
+/* 801C8520 001C5320  3B E4 91 D8 */	addi r31, r4, _esc__2_stringBase0_133@l
+/* 801C8524 001C5324  3B 63 6E F0 */	addi r27, r3, numbers_esc__7_1463@l
 lbl_801C8528:
 /* 801C8528 001C5328  2C 1D 00 00 */	cmpwi r29, 0
 /* 801C852C 001C532C  7F C3 F3 78 */	mr r3, r30
 /* 801C8530 001C5330  38 9F 00 5C */	addi r4, r31, 0x5c
 /* 801C8534 001C5334  38 BF 00 0F */	addi r5, r31, 0xf
 /* 801C8538 001C5338  40 82 00 10 */	bne lbl_801C8548
-/* 801C853C 001C533C  3C A0 80 2F */	lis r5, $$2stringBase0_133@ha
-/* 801C8540 001C5340  38 A5 91 D8 */	addi r5, r5, $$2stringBase0_133@l
+/* 801C853C 001C533C  3C A0 80 2F */	lis r5, _esc__2_stringBase0_133@ha
+/* 801C8540 001C5340  38 A5 91 D8 */	addi r5, r5, _esc__2_stringBase0_133@l
 /* 801C8544 001C5344  38 A5 00 0E */	addi r5, r5, 0xe
 lbl_801C8548:
 /* 801C8548 001C5348  80 1C 00 88 */	lwz r0, 0x88(r28)
@@ -1149,7 +1151,7 @@ lbl_801C8548:
 /* 801C85A0 001C53A0  38 00 00 00 */	li r0, 0
 /* 801C85A4 001C53A4  90 1C 00 88 */	stw r0, 0x88(r28)
 lbl_801C85A8:
-/* 801C85A8 001C53A8  C0 02 CE 60 */	lfs f0, $$21482_1-_SDA2_BASE_(r2)
+/* 801C85A8 001C53A8  C0 02 CE 60 */	lfs f0, _esc__2_1482_1-_SDA2_BASE_(r2)
 /* 801C85AC 001C53AC  D0 1C 00 8C */	stfs f0, 0x8c(r28)
 /* 801C85B0 001C53B0  48 00 00 0C */	b lbl_801C85BC
 lbl_801C85B4:
@@ -1246,9 +1248,9 @@ UpdateTexture__19zUICustomSceneImageFv:
 /* 801C86D8 001C54D8  A8 63 00 14 */	lha r3, 0x14(r3)
 /* 801C86DC 001C54DC  48 00 00 08 */	b lbl_801C86E4
 lbl_801C86E0:
-/* 801C86E0 001C54E0  80 6D D9 34 */	lwz r3, sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C86E0 001C54E0  80 6D D9 34 */	lwz r3, sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801C86E4:
-/* 801C86E4 001C54E4  80 0D D8 D8 */	lwz r0, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C86E4 001C54E4  80 0D D8 D8 */	lwz r0, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C86E8 001C54E8  7C 03 00 40 */	cmplw r3, r0
 /* 801C86EC 001C54EC  40 81 00 08 */	ble lbl_801C86F4
 /* 801C86F0 001C54F0  38 60 00 00 */	li r3, 0
@@ -1260,12 +1262,12 @@ lbl_801C86F4:
 /* 801C8704 001C5504  80 63 04 C8 */	lwz r3, 0x4c8(r3)
 /* 801C8708 001C5508  80 63 00 00 */	lwz r3, 0(r3)
 /* 801C870C 001C550C  48 00 54 75 */	bl SCENEIDSTR__FUiPc
-/* 801C8710 001C5510  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801C8710 001C5510  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801C8714 001C5514  38 61 00 10 */	addi r3, r1, 0x10
-/* 801C8718 001C5518  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801C8718 001C5518  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801C871C 001C551C  38 C1 00 08 */	addi r6, r1, 8
 /* 801C8720 001C5520  38 84 00 08 */	addi r4, r4, 8
-/* 801C8724 001C5524  38 AD D9 14 */	addi r5, r13, sceneBaseImage__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_
+/* 801C8724 001C5524  38 AD D9 14 */	addi r5, r13, sceneBaseImage__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_
 /* 801C8728 001C5528  4C C6 31 82 */	crclr 6
 /* 801C872C 001C552C  48 0F 05 5D */	bl sprintf
 /* 801C8730 001C5530  38 61 00 10 */	addi r3, r1, 0x10
@@ -1278,10 +1280,10 @@ lbl_801C86F4:
 /* 801C874C 001C554C  48 00 00 24 */	b lbl_801C8770
 lbl_801C8750:
 /* 801C8750 001C5550  1C 03 00 1C */	mulli r0, r3, 0x1c
-/* 801C8754 001C5554  3C 80 80 3A */	lis r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801C8754 001C5554  3C 80 80 3A */	lis r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801C8758 001C5558  80 7F 00 04 */	lwz r3, 4(r31)
 /* 801C875C 001C555C  38 A0 00 00 */	li r5, 0
-/* 801C8760 001C5560  38 84 EF B0 */	addi r4, r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801C8760 001C5560  38 84 EF B0 */	addi r4, r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801C8764 001C5564  7C 84 02 14 */	add r4, r4, r0
 /* 801C8768 001C5568  80 84 00 14 */	lwz r4, 0x14(r4)
 /* 801C876C 001C556C  4B FA 28 71 */	bl SetTexture__8zUIImageFUib
@@ -1336,7 +1338,7 @@ PreRender__20zUICustomCheckpointsFv:
 /* 801C8808 001C5608  90 01 03 34 */	stw r0, 0x334(r1)
 /* 801C880C 001C560C  BF C1 03 28 */	stmw r30, 0x328(r1)
 /* 801C8810 001C5610  7C 7F 1B 78 */	mr r31, r3
-/* 801C8814 001C5614  80 0D D9 3C */	lwz r0, sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C8814 001C5614  80 0D D9 3C */	lwz r0, sceneCheckPointTotal__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C8818 001C5618  28 00 00 00 */	cmplwi r0, 0
 /* 801C881C 001C561C  40 82 00 0C */	bne lbl_801C8828
 /* 801C8820 001C5620  38 60 00 00 */	li r3, 0
@@ -1400,7 +1402,7 @@ lbl_801C8828:
 /* 801C8904 001C5704  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 801C8908 001C5708  7D 89 03 A6 */	mtctr r12
 /* 801C890C 001C570C  4E 80 04 21 */	bctrl 
-/* 801C8910 001C5710  80 0D D9 3C */	lwz r0, sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C8910 001C5710  80 0D D9 3C */	lwz r0, sceneCheckPointTotal__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C8914 001C5714  38 80 00 08 */	li r4, 8
 /* 801C8918 001C5718  28 00 00 08 */	cmplwi r0, 8
 /* 801C891C 001C571C  41 81 00 08 */	bgt lbl_801C8924
@@ -1412,22 +1414,22 @@ lbl_801C8924:
 /* 801C8930 001C5730  39 20 00 00 */	li r9, 0
 /* 801C8934 001C5734  C0 23 00 1C */	lfs f1, 0x1c(r3)
 /* 801C8938 001C5738  38 60 00 00 */	li r3, 0
-/* 801C893C 001C573C  C0 02 CE 64 */	lfs f0, $$21572_0-_SDA2_BASE_(r2)
+/* 801C893C 001C573C  C0 02 CE 64 */	lfs f0, _esc__2_1572_0-_SDA2_BASE_(r2)
 /* 801C8940 001C5740  90 E1 03 0C */	stw r7, 0x30c(r1)
 /* 801C8944 001C5744  EC 01 00 32 */	fmuls f0, f1, f0
-/* 801C8948 001C5748  C0 42 CE 6C */	lfs f2, $$21574_0-_SDA2_BASE_(r2)
+/* 801C8948 001C5748  C0 42 CE 6C */	lfs f2, _esc__2_1574_0-_SDA2_BASE_(r2)
 /* 801C894C 001C574C  90 01 03 08 */	stw r0, 0x308(r1)
-/* 801C8950 001C5750  C9 02 CE 80 */	lfd f8, $$21579_0-_SDA2_BASE_(r2)
+/* 801C8950 001C5750  C9 02 CE 80 */	lfd f8, _esc__2_1579_0-_SDA2_BASE_(r2)
 /* 801C8954 001C5754  C8 21 03 08 */	lfd f1, 0x308(r1)
 /* 801C8958 001C5758  EC 42 00 32 */	fmuls f2, f2, f0
-/* 801C895C 001C575C  C1 22 CE 68 */	lfs f9, $$21573_0-_SDA2_BASE_(r2)
+/* 801C895C 001C575C  C1 22 CE 68 */	lfs f9, _esc__2_1573_0-_SDA2_BASE_(r2)
 /* 801C8960 001C5760  EC 21 40 28 */	fsubs f1, f1, f8
 /* 801C8964 001C5764  80 AD 91 C8 */	lwz r5, FB_YRES-_SDA_BASE_(r13)
-/* 801C8968 001C5768  80 CD D9 40 */	lwz r6, sceneCheckPointHit__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801C896C 001C576C  C0 C2 CE 70 */	lfs f6, $$21575_0-_SDA2_BASE_(r2)
+/* 801C8968 001C5768  80 CD D9 40 */	lwz r6, sceneCheckPointHit__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801C896C 001C576C  C0 C2 CE 70 */	lfs f6, _esc__2_1575_0-_SDA2_BASE_(r2)
 /* 801C8970 001C5770  EC 62 00 72 */	fmuls f3, f2, f1
-/* 801C8974 001C5774  C0 42 CE 50 */	lfs f2, $$21275_0-_SDA2_BASE_(r2)
-/* 801C8978 001C5778  C0 22 CE 78 */	lfs f1, $$21577_0-_SDA2_BASE_(r2)
+/* 801C8974 001C5774  C0 42 CE 50 */	lfs f2, _esc__2_1275_0-_SDA2_BASE_(r2)
+/* 801C8978 001C5778  C0 22 CE 78 */	lfs f1, _esc__2_1577_0-_SDA2_BASE_(r2)
 /* 801C897C 001C577C  ED 49 00 F2 */	fmuls f10, f9, f3
 /* 801C8980 001C5780  7C 89 03 A6 */	mtctr r4
 /* 801C8984 001C5784  28 04 00 00 */	cmplwi r4, 0
@@ -1461,21 +1463,21 @@ lbl_801C898C:
 /* 801C89F0 001C57F0  EC 83 40 28 */	fsubs f4, f3, f8
 /* 801C89F4 001C57F4  EC A6 01 72 */	fmuls f5, f6, f5
 /* 801C89F8 001C57F8  41 80 00 10 */	blt lbl_801C8A08
-/* 801C89FC 001C57FC  C0 62 CE 74 */	lfs f3, $$21576_2-_SDA2_BASE_(r2)
+/* 801C89FC 001C57FC  C0 62 CE 74 */	lfs f3, _esc__2_1576_2-_SDA2_BASE_(r2)
 /* 801C8A00 001C5800  EC 63 02 F2 */	fmuls f3, f3, f11
 /* 801C8A04 001C5804  48 00 00 08 */	b lbl_801C8A0C
 lbl_801C8A08:
-/* 801C8A08 001C5808  C0 62 CE 50 */	lfs f3, $$21275_0-_SDA2_BASE_(r2)
+/* 801C8A08 001C5808  C0 62 CE 50 */	lfs f3, _esc__2_1275_0-_SDA2_BASE_(r2)
 lbl_801C8A0C:
 /* 801C8A0C 001C580C  EC 6C 18 2A */	fadds f3, f12, f3
 /* 801C8A10 001C5810  7C 09 30 40 */	cmplw r9, r6
 /* 801C8A14 001C5814  EC 64 00 F2 */	fmuls f3, f4, f3
 /* 801C8A18 001C5818  ED 66 00 F2 */	fmuls f11, f6, f3
 /* 801C8A1C 001C581C  41 80 00 0C */	blt lbl_801C8A28
-/* 801C8A20 001C5820  C0 62 CE 6C */	lfs f3, $$21574_0-_SDA2_BASE_(r2)
+/* 801C8A20 001C5820  C0 62 CE 6C */	lfs f3, _esc__2_1574_0-_SDA2_BASE_(r2)
 /* 801C8A24 001C5824  48 00 00 08 */	b lbl_801C8A2C
 lbl_801C8A28:
-/* 801C8A28 001C5828  C0 62 CE 78 */	lfs f3, $$21577_0-_SDA2_BASE_(r2)
+/* 801C8A28 001C5828  C0 62 CE 78 */	lfs f3, _esc__2_1577_0-_SDA2_BASE_(r2)
 lbl_801C8A2C:
 /* 801C8A2C 001C582C  39 01 00 08 */	addi r8, r1, 8
 /* 801C8A30 001C5830  EC 87 50 2A */	fadds f4, f7, f10
@@ -1523,7 +1525,7 @@ lbl_801C8A94:
 /* 801C8AD0 001C58D0  42 00 FF C4 */	bdnz lbl_801C8A94
 lbl_801C8AD4:
 /* 801C8AD4 001C58D4  38 61 00 08 */	addi r3, r1, 8
-/* 801C8AD8 001C58D8  4B FF F7 1D */	bl RenderQuadList__28$$2unnamed$$2zUIIncredibles_cpp$$2FP18rwGameCube2DVertexUi
+/* 801C8AD8 001C58D8  4B FF F7 1D */	bl RenderQuadList__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FP18rwGameCube2DVertexUi
 /* 801C8ADC 001C58DC  38 60 00 00 */	li r3, 0
 lbl_801C8AE0:
 /* 801C8AE0 001C58E0  BB C1 03 28 */	lmw r30, 0x328(r1)
@@ -1616,7 +1618,7 @@ lbl_801C8C04:
 /* 801C8C08 001C5A08  4B E7 2E 6D */	bl xGroupGetCount__FP6xGroup
 /* 801C8C0C 001C5A0C  7C 1D 18 40 */	cmplw r29, r3
 /* 801C8C10 001C5A10  41 80 FF C4 */	blt lbl_801C8BD4
-/* 801C8C14 001C5A14  80 0D D9 34 */	lwz r0, sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C8C14 001C5A14  80 0D D9 34 */	lwz r0, sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C8C18 001C5A18  38 60 00 80 */	li r3, 0x80
 /* 801C8C1C 001C5A1C  80 9C 00 10 */	lwz r4, 0x10(r28)
 /* 801C8C20 001C5A20  B0 04 00 14 */	sth r0, 0x14(r4)
@@ -1667,7 +1669,7 @@ lbl_801C8CB4:
 /* 801C8CB8 001C5AB8  38 A0 02 FD */	li r5, 0x2fd
 /* 801C8CBC 001C5ABC  80 9E 00 04 */	lwz r4, 4(r30)
 /* 801C8CC0 001C5AC0  4B F9 F7 55 */	bl Signal__3zUIFP5xBaseUi
-/* 801C8CC4 001C5AC4  80 02 F6 70 */	lwz r0, $$21613_2-_SDA2_BASE_(r2)
+/* 801C8CC4 001C5AC4  80 02 F6 70 */	lwz r0, _esc__2_1613_2-_SDA2_BASE_(r2)
 /* 801C8CC8 001C5AC8  3C 80 43 30 */	lis r4, 0x4330
 /* 801C8CCC 001C5ACC  80 C2 F6 74 */	lwz r6, lbl_803D9394-_SDA2_BASE_(r2)
 /* 801C8CD0 001C5AD0  80 A2 F6 78 */	lwz r5, lbl_803D9398-_SDA2_BASE_(r2)
@@ -1675,7 +1677,7 @@ lbl_801C8CB4:
 /* 801C8CD8 001C5AD8  90 01 00 10 */	stw r0, 0x10(r1)
 /* 801C8CDC 001C5ADC  80 0D D8 A8 */	lwz r0, APPLE_DEMO-_SDA_BASE_(r13)
 /* 801C8CE0 001C5AE0  90 C1 00 14 */	stw r6, 0x14(r1)
-/* 801C8CE4 001C5AE4  C8 22 CE 88 */	lfd f1, $$21658_1-_SDA2_BASE_(r2)
+/* 801C8CE4 001C5AE4  C8 22 CE 88 */	lfd f1, _esc__2_1658_1-_SDA2_BASE_(r2)
 /* 801C8CE8 001C5AE8  2C 00 00 00 */	cmpwi r0, 0
 /* 801C8CEC 001C5AEC  90 A1 00 18 */	stw r5, 0x18(r1)
 /* 801C8CF0 001C5AF0  90 61 00 1C */	stw r3, 0x1c(r1)
@@ -1701,8 +1703,8 @@ lbl_801C8CB4:
 /* 801C8D40 001C5B40  EC 00 08 28 */	fsubs f0, f0, f1
 /* 801C8D44 001C5B44  D0 01 00 10 */	stfs f0, 0x10(r1)
 lbl_801C8D48:
-/* 801C8D48 001C5B48  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801C8D4C 001C5B4C  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801C8D48 001C5B48  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801C8D4C 001C5B4C  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801C8D50 001C5B50  38 63 00 63 */	addi r3, r3, 0x63
 /* 801C8D54 001C5B54  4B EA 3E CD */	bl xStrHash__FPCc
 /* 801C8D58 001C5B58  38 80 00 00 */	li r4, 0
@@ -1738,8 +1740,8 @@ lbl_801C8DA0:
 lbl_801C8DCC:
 /* 801C8DCC 001C5BCC  38 00 00 00 */	li r0, 0
 /* 801C8DD0 001C5BD0  90 1E 00 18 */	stw r0, 0x18(r30)
-/* 801C8DD4 001C5BD4  80 6D D8 D8 */	lwz r3, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801C8DD8 001C5BD8  80 0D D8 DC */	lwz r0, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C8DD4 001C5BD4  80 6D D8 D8 */	lwz r3, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801C8DD8 001C5BD8  80 0D D8 DC */	lwz r0, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C8DDC 001C5BDC  38 63 FF FF */	addi r3, r3, -1
 /* 801C8DE0 001C5BE0  7C 00 18 00 */	cmpw r0, r3
 /* 801C8DE4 001C5BE4  40 80 00 08 */	bge lbl_801C8DEC
@@ -1754,7 +1756,7 @@ lbl_801C8DFC:
 /* 801C8E00 001C5C00  80 7E 00 14 */	lwz r3, 0x14(r30)
 /* 801C8E04 001C5C04  54 00 10 3A */	slwi r0, r0, 2
 /* 801C8E08 001C5C08  7C 83 01 2E */	stwx r4, r3, r0
-/* 801C8E0C 001C5C0C  80 0D D9 34 */	lwz r0, sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C8E0C 001C5C0C  80 0D D9 34 */	lwz r0, sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C8E10 001C5C10  7C 04 00 40 */	cmplw r4, r0
 /* 801C8E14 001C5C14  40 82 00 0C */	bne lbl_801C8E20
 /* 801C8E18 001C5C18  80 1E 00 18 */	lwz r0, 0x18(r30)
@@ -1923,7 +1925,7 @@ lbl_801C905C:
 /* 801C9078 001C5E78  B0 03 00 14 */	sth r0, 0x14(r3)
 /* 801C907C 001C5E7C  48 00 00 10 */	b lbl_801C908C
 lbl_801C9080:
-/* 801C9080 001C5E80  80 0D D9 34 */	lwz r0, sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C9080 001C5E80  80 0D D9 34 */	lwz r0, sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C9084 001C5E84  80 7E 00 10 */	lwz r3, 0x10(r30)
 /* 801C9088 001C5E88  B0 03 00 14 */	sth r0, 0x14(r3)
 lbl_801C908C:
@@ -1963,12 +1965,12 @@ lbl_801C90D0:
 /* 801C9100 001C5F00  38 03 00 01 */	addi r0, r3, 1
 lbl_801C9104:
 /* 801C9104 001C5F04  1C A0 00 1C */	mulli r5, r0, 0x1c
-/* 801C9108 001C5F08  3C 80 80 3A */	lis r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801C9108 001C5F08  3C 80 80 3A */	lis r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801C910C 001C5F0C  38 61 00 08 */	addi r3, r1, 8
-/* 801C9110 001C5F10  38 04 EF B0 */	addi r0, r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801C9110 001C5F10  38 04 EF B0 */	addi r0, r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801C9114 001C5F14  7C 80 2A 14 */	add r4, r0, r5
 /* 801C9118 001C5F18  80 84 00 08 */	lwz r4, 8(r4)
-/* 801C911C 001C5F1C  4B FF F1 9D */	bl BreakString__28$$2unnamed$$2zUIIncredibles_cpp$$2FRPcPCc
+/* 801C911C 001C5F1C  4B FF F1 9D */	bl BreakString__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRPcPCc
 /* 801C9120 001C5F20  80 BD 00 0C */	lwz r5, 0xc(r29)
 /* 801C9124 001C5F24  7C 64 1B 78 */	mr r4, r3
 /* 801C9128 001C5F28  7C 65 F8 2E */	lwzx r3, r5, r31
@@ -1980,8 +1982,8 @@ lbl_801C9104:
 /* 801C9140 001C5F40  48 00 00 2C */	b lbl_801C916C
 lbl_801C9144:
 /* 801C9144 001C5F44  80 BD 00 0C */	lwz r5, 0xc(r29)
-/* 801C9148 001C5F48  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801C914C 001C5F4C  38 83 91 D8 */	addi r4, r3, $$2stringBase0_133@l
+/* 801C9148 001C5F48  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801C914C 001C5F4C  38 83 91 D8 */	addi r4, r3, _esc__2_stringBase0_133@l
 /* 801C9150 001C5F50  7C 65 F8 2E */	lwzx r3, r5, r31
 /* 801C9154 001C5F54  38 84 00 0E */	addi r4, r4, 0xe
 /* 801C9158 001C5F58  4B F8 8A 01 */	bl SetText__7zUITextFPCc
@@ -2067,7 +2069,7 @@ lbl_801C9268:
 /* 801C926C 001C606C  48 00 02 21 */	bl SignalEffect__20zUICustomMapScrollerFv
 /* 801C9270 001C6070  C0 3F 00 14 */	lfs f1, 0x14(r31)
 /* 801C9274 001C6074  38 00 00 00 */	li r0, 0
-/* 801C9278 001C6078  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801C9278 001C6078  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801C927C 001C607C  D0 3F 00 0C */	stfs f1, 0xc(r31)
 /* 801C9280 001C6080  C0 3F 00 18 */	lfs f1, 0x18(r31)
 /* 801C9284 001C6084  D0 3F 00 10 */	stfs f1, 0x10(r31)
@@ -2140,12 +2142,12 @@ lbl_801C934C:
 /* 801C9364 001C6164  EC 1D 07 72 */	fmuls f0, f29, f29
 /* 801C9368 001C6168  EC 3E 07 BA */	fmadds f1, f30, f30, f0
 /* 801C936C 001C616C  4B E4 21 0D */	bl xsqrt__Ff
-/* 801C9370 001C6170  C0 02 CE 90 */	lfs f0, $$21731_1-_SDA2_BASE_(r2)
+/* 801C9370 001C6170  C0 02 CE 90 */	lfs f0, _esc__2_1731_1-_SDA2_BASE_(r2)
 /* 801C9374 001C6174  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801C9378 001C6178  40 80 00 2C */	bge lbl_801C93A4
-/* 801C937C 001C617C  C0 62 CE 6C */	lfs f3, $$21574_0-_SDA2_BASE_(r2)
+/* 801C937C 001C617C  C0 62 CE 6C */	lfs f3, _esc__2_1574_0-_SDA2_BASE_(r2)
 /* 801C9380 001C6180  C0 5F 00 1C */	lfs f2, 0x1c(r31)
-/* 801C9384 001C6184  C0 02 CE 94 */	lfs f0, $$21732_1-_SDA2_BASE_(r2)
+/* 801C9384 001C6184  C0 02 CE 94 */	lfs f0, _esc__2_1732_1-_SDA2_BASE_(r2)
 /* 801C9388 001C6188  EC 43 17 FC */	fnmsubs f2, f3, f31, f2
 /* 801C938C 001C618C  D0 5F 00 1C */	stfs f2, 0x1c(r31)
 /* 801C9390 001C6190  C0 5F 00 1C */	lfs f2, 0x1c(r31)
@@ -2154,9 +2156,9 @@ lbl_801C934C:
 /* 801C939C 001C619C  D0 1F 00 1C */	stfs f0, 0x1c(r31)
 /* 801C93A0 001C61A0  48 00 00 28 */	b lbl_801C93C8
 lbl_801C93A4:
-/* 801C93A4 001C61A4  C0 62 CE 6C */	lfs f3, $$21574_0-_SDA2_BASE_(r2)
+/* 801C93A4 001C61A4  C0 62 CE 6C */	lfs f3, _esc__2_1574_0-_SDA2_BASE_(r2)
 /* 801C93A8 001C61A8  C0 5F 00 1C */	lfs f2, 0x1c(r31)
-/* 801C93AC 001C61AC  C0 02 CE 98 */	lfs f0, $$21733_1-_SDA2_BASE_(r2)
+/* 801C93AC 001C61AC  C0 02 CE 98 */	lfs f0, _esc__2_1733_1-_SDA2_BASE_(r2)
 /* 801C93B0 001C61B0  EC 43 17 FA */	fmadds f2, f3, f31, f2
 /* 801C93B4 001C61B4  D0 5F 00 1C */	stfs f2, 0x1c(r31)
 /* 801C93B8 001C61B8  C0 5F 00 1C */	lfs f2, 0x1c(r31)
@@ -2198,7 +2200,7 @@ lbl_801C9424:
 /* 801C943C 001C623C  38 00 00 00 */	li r0, 0
 /* 801C9440 001C6240  98 1F 00 20 */	stb r0, 0x20(r31)
 lbl_801C9444:
-/* 801C9444 001C6244  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801C9444 001C6244  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801C9448 001C6248  D0 1F 00 1C */	stfs f0, 0x1c(r31)
 lbl_801C944C:
 /* 801C944C 001C624C  E3 E1 00 38 */	psq_l f31, 56(r1), 0, qr0
@@ -2242,11 +2244,11 @@ SignalEffect__20zUICustomMapScrollerFv:
 /* 801C94CC 001C62CC  A8 63 00 14 */	lha r3, 0x14(r3)
 /* 801C94D0 001C62D0  48 00 00 08 */	b lbl_801C94D8
 lbl_801C94D4:
-/* 801C94D4 001C62D4  80 6D D9 34 */	lwz r3, sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C94D4 001C62D4  80 6D D9 34 */	lwz r3, sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801C94D8:
 /* 801C94D8 001C62D8  2C 03 00 00 */	cmpwi r3, 0
 /* 801C94DC 001C62DC  41 80 00 10 */	blt lbl_801C94EC
-/* 801C94E0 001C62E0  80 0D D8 D8 */	lwz r0, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C94E0 001C62E0  80 0D D8 D8 */	lwz r0, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C94E4 001C62E4  7C 03 00 00 */	cmpw r3, r0
 /* 801C94E8 001C62E8  40 81 00 08 */	ble lbl_801C94F0
 lbl_801C94EC:
@@ -2254,22 +2256,22 @@ lbl_801C94EC:
 lbl_801C94F0:
 /* 801C94F0 001C62F0  1C 83 00 1C */	mulli r4, r3, 0x1c
 /* 801C94F4 001C62F4  3C 00 43 30 */	lis r0, 0x4330
-/* 801C94F8 001C62F8  3C 60 80 3A */	lis r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801C94F8 001C62F8  3C 60 80 3A */	lis r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801C94FC 001C62FC  83 FE 00 04 */	lwz r31, 4(r30)
 /* 801C9500 001C6300  90 01 00 08 */	stw r0, 8(r1)
-/* 801C9504 001C6304  38 63 EF B0 */	addi r3, r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801C9504 001C6304  38 63 EF B0 */	addi r3, r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801C9508 001C6308  7C A3 22 14 */	add r5, r3, r4
 /* 801C950C 001C630C  90 01 00 10 */	stw r0, 0x10(r1)
 /* 801C9510 001C6310  88 85 00 06 */	lbz r4, 6(r5)
 /* 801C9514 001C6314  7F E3 FB 78 */	mr r3, r31
 /* 801C9518 001C6318  88 05 00 07 */	lbz r0, 7(r5)
 /* 801C951C 001C631C  90 81 00 0C */	stw r4, 0xc(r1)
-/* 801C9520 001C6320  C8 62 CE 80 */	lfd f3, $$21579_0-_SDA2_BASE_(r2)
+/* 801C9520 001C6320  C8 62 CE 80 */	lfd f3, _esc__2_1579_0-_SDA2_BASE_(r2)
 /* 801C9524 001C6324  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801C9528 001C6328  C8 21 00 08 */	lfd f1, 8(r1)
 /* 801C952C 001C632C  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 801C9530 001C6330  EC 41 18 28 */	fsubs f2, f1, f3
-/* 801C9534 001C6334  C0 22 CE 9C */	lfs f1, $$21757_2-_SDA2_BASE_(r2)
+/* 801C9534 001C6334  C0 22 CE 9C */	lfs f1, _esc__2_1757_2-_SDA2_BASE_(r2)
 /* 801C9538 001C6338  EC 00 18 28 */	fsubs f0, f0, f3
 /* 801C953C 001C633C  EF C2 08 24 */	fdivs f30, f2, f1
 /* 801C9540 001C6340  EF A0 08 24 */	fdivs f29, f0, f1
@@ -2285,7 +2287,7 @@ lbl_801C94F0:
 /* 801C9568 001C6368  7F E3 FB 78 */	mr r3, r31
 /* 801C956C 001C636C  4B FA 1B 85 */	bl GetAsset__8zUIImageCFv
 /* 801C9570 001C6370  C0 23 00 68 */	lfs f1, 0x68(r3)
-/* 801C9574 001C6374  C0 02 CE 94 */	lfs f0, $$21732_1-_SDA2_BASE_(r2)
+/* 801C9574 001C6374  C0 02 CE 94 */	lfs f0, _esc__2_1732_1-_SDA2_BASE_(r2)
 /* 801C9578 001C6378  EC 41 F8 28 */	fsubs f2, f1, f31
 /* 801C957C 001C637C  EC 3C F0 3C */	fnmsubs f1, f28, f0, f30
 /* 801C9580 001C6380  EC 02 E8 3C */	fnmsubs f0, f2, f0, f29
@@ -2327,7 +2329,7 @@ __ct__28zUICustomDescriptionScrollerFP3zUI:
 Reset__28zUICustomDescriptionScrollerFv:
 /* 801C95FC 001C63FC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801C9600 001C6400  7C 08 02 A6 */	mflr r0
-/* 801C9604 001C6404  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801C9604 001C6404  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801C9608 001C6408  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801C960C 001C640C  38 00 00 00 */	li r0, 0
 /* 801C9610 001C6410  93 E1 00 0C */	stw r31, 0xc(r1)
@@ -2365,8 +2367,8 @@ lbl_801C9650:
 /* 801C968C 001C648C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801C9690 001C6490  4E 80 00 20 */	blr 
 
-.global descstrlen__28$$2unnamed$$2zUIIncredibles_cpp$$2FPCc
-descstrlen__28$$2unnamed$$2zUIIncredibles_cpp$$2FPCc:
+.global descstrlen__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPCc
+descstrlen__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPCc:
 /* 801C9694 001C6494  38 80 00 00 */	li r4, 0
 /* 801C9698 001C6498  38 A0 00 00 */	li r5, 0
 /* 801C969C 001C649C  48 00 00 58 */	b lbl_801C96F4
@@ -2402,8 +2404,8 @@ lbl_801C96F4:
 /* 801C9700 001C6500  7C 83 23 78 */	mr r3, r4
 /* 801C9704 001C6504  4E 80 00 20 */	blr 
 
-.global descstrncpy__28$$2unnamed$$2zUIIncredibles_cpp$$2FPcPCciPPcPPCc
-descstrncpy__28$$2unnamed$$2zUIIncredibles_cpp$$2FPcPCciPPcPPCc:
+.global descstrncpy__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPcPCciPPcPPCc
+descstrncpy__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPcPCciPPcPPCc:
 /* 801C9708 001C6508  39 20 00 00 */	li r9, 0
 /* 801C970C 001C650C  48 00 00 80 */	b lbl_801C978C
 lbl_801C9710:
@@ -2473,14 +2475,14 @@ PreUpdate__28zUICustomDescriptionScrollerFf:
 /* 801C97E4 001C65E4  88 03 01 94 */	lbz r0, 0x194(r3)
 /* 801C97E8 001C65E8  28 00 00 00 */	cmplwi r0, 0
 /* 801C97EC 001C65EC  41 82 01 60 */	beq lbl_801C994C
-/* 801C97F0 001C65F0  C0 22 CE A0 */	lfs f1, $$21850-_SDA2_BASE_(r2)
+/* 801C97F0 001C65F0  C0 22 CE A0 */	lfs f1, _esc__2_1850-_SDA2_BASE_(r2)
 /* 801C97F4 001C65F4  C0 1E 01 90 */	lfs f0, 0x190(r30)
 /* 801C97F8 001C65F8  80 7E 00 0C */	lwz r3, 0xc(r30)
 /* 801C97FC 001C65FC  EC 01 00 32 */	fmuls f0, f1, f0
 /* 801C9800 001C6600  FC 00 00 1E */	fctiwz f0, f0
 /* 801C9804 001C6604  D8 01 00 10 */	stfd f0, 0x10(r1)
 /* 801C9808 001C6608  83 E1 00 14 */	lwz r31, 0x14(r1)
-/* 801C980C 001C660C  4B FF FE 89 */	bl descstrlen__28$$2unnamed$$2zUIIncredibles_cpp$$2FPCc
+/* 801C980C 001C660C  4B FF FE 89 */	bl descstrlen__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPCc
 /* 801C9810 001C6610  38 1E 00 10 */	addi r0, r30, 0x10
 /* 801C9814 001C6614  7C 7D 1B 78 */	mr r29, r3
 /* 801C9818 001C6618  90 01 00 0C */	stw r0, 0xc(r1)
@@ -2495,9 +2497,9 @@ lbl_801C9830:
 /* 801C9838 001C6638  80 03 06 24 */	lwz r0, 0x624(r3)
 /* 801C983C 001C663C  2C 00 00 00 */	cmpwi r0, 0
 /* 801C9840 001C6640  40 82 00 2C */	bne lbl_801C986C
-/* 801C9844 001C6644  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801C9844 001C6644  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801C9848 001C6648  80 61 00 0C */	lwz r3, 0xc(r1)
-/* 801C984C 001C664C  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801C984C 001C664C  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801C9850 001C6650  38 84 00 81 */	addi r4, r4, 0x81
 /* 801C9854 001C6654  48 0F 2C A1 */	bl strcpy
 /* 801C9858 001C6658  80 61 00 0C */	lwz r3, 0xc(r1)
@@ -2525,20 +2527,20 @@ lbl_801C9890:
 /* 801C98A8 001C66A8  80 9E 00 0C */	lwz r4, 0xc(r30)
 /* 801C98AC 001C66AC  38 C1 00 0C */	addi r6, r1, 0xc
 /* 801C98B0 001C66B0  38 E1 00 08 */	addi r7, r1, 8
-/* 801C98B4 001C66B4  4B FF FE 55 */	bl descstrncpy__28$$2unnamed$$2zUIIncredibles_cpp$$2FPcPCciPPcPPCc
+/* 801C98B4 001C66B4  4B FF FE 55 */	bl descstrncpy__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPcPCciPPcPPCc
 lbl_801C98B8:
 /* 801C98B8 001C66B8  38 A0 00 06 */	li r5, 6
-/* 801C98BC 001C66BC  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
+/* 801C98BC 001C66BC  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
 /* 801C98C0 001C66C0  7C 1F 28 10 */	subfc r0, r31, r5
 /* 801C98C4 001C66C4  57 E4 0F FE */	srwi r4, r31, 0x1f
 /* 801C98C8 001C66C8  54 A0 0F FE */	srwi r0, r5, 0x1f
-/* 801C98CC 001C66CC  3B A3 91 D8 */	addi r29, r3, $$2stringBase0_133@l
+/* 801C98CC 001C66CC  3B A3 91 D8 */	addi r29, r3, _esc__2_stringBase0_133@l
 /* 801C98D0 001C66D0  7C 60 21 10 */	subfe r3, r0, r4
 /* 801C98D4 001C66D4  20 1F 00 06 */	subfic r0, r31, 6
 /* 801C98D8 001C66D8  7C 1F 18 78 */	andc r31, r0, r3
 /* 801C98DC 001C66DC  48 00 00 48 */	b lbl_801C9924
 lbl_801C98E0:
-/* 801C98E0 001C66E0  C8 22 CE A8 */	lfd f1, $$21851-_SDA2_BASE_(r2)
+/* 801C98E0 001C66E0  C8 22 CE A8 */	lfd f1, _esc__2_1851-_SDA2_BASE_(r2)
 /* 801C98E4 001C66E4  38 9D 00 90 */	addi r4, r29, 0x90
 /* 801C98E8 001C66E8  80 61 00 0C */	lwz r3, 0xc(r1)
 /* 801C98EC 001C66EC  FC 40 08 90 */	fmr f2, f1
@@ -2553,14 +2555,14 @@ lbl_801C98E0:
 /* 801C9910 001C6710  7C 60 1A 14 */	add r3, r0, r3
 /* 801C9914 001C6714  38 A0 00 01 */	li r5, 1
 /* 801C9918 001C6718  90 61 00 0C */	stw r3, 0xc(r1)
-/* 801C991C 001C671C  4B FF FD ED */	bl descstrncpy__28$$2unnamed$$2zUIIncredibles_cpp$$2FPcPCciPPcPPCc
+/* 801C991C 001C671C  4B FF FD ED */	bl descstrncpy__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FPcPCciPPcPPCc
 /* 801C9920 001C6720  3B FF 00 01 */	addi r31, r31, 1
 lbl_801C9924:
 /* 801C9924 001C6724  2C 1F 00 06 */	cmpwi r31, 6
 /* 801C9928 001C6728  41 80 FF B8 */	blt lbl_801C98E0
-/* 801C992C 001C672C  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801C992C 001C672C  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801C9930 001C6730  80 61 00 0C */	lwz r3, 0xc(r1)
-/* 801C9934 001C6734  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801C9934 001C6734  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801C9938 001C6738  38 84 00 A2 */	addi r4, r4, 0xa2
 /* 801C993C 001C673C  48 0F 2B B9 */	bl strcpy
 /* 801C9940 001C6740  C0 1E 01 90 */	lfs f0, 0x190(r30)
@@ -2581,29 +2583,29 @@ HandleEvent__28zUICustomDescriptionScrollerFP5xBaseUiPCfP5xBaseUi:
 /* 801C996C 001C676C  41 82 00 08 */	beq lbl_801C9974
 /* 801C9970 001C6770  48 00 00 74 */	b lbl_801C99E4
 lbl_801C9974:
-/* 801C9974 001C6774  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801C9974 001C6774  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801C9978 001C6778  38 00 00 00 */	li r0, 0
 /* 801C997C 001C677C  D0 03 01 90 */	stfs f0, 0x190(r3)
 /* 801C9980 001C6780  98 03 00 10 */	stb r0, 0x10(r3)
 /* 801C9984 001C6784  80 83 00 08 */	lwz r4, 8(r3)
 /* 801C9988 001C6788  28 04 00 00 */	cmplwi r4, 0
 /* 801C998C 001C678C  40 82 00 0C */	bne lbl_801C9998
-/* 801C9990 001C6790  80 8D D9 34 */	lwz r4, sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C9990 001C6790  80 8D D9 34 */	lwz r4, sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C9994 001C6794  48 00 00 08 */	b lbl_801C999C
 lbl_801C9998:
 /* 801C9998 001C6798  A8 84 00 14 */	lha r4, 0x14(r4)
 lbl_801C999C:
 /* 801C999C 001C679C  2C 04 00 00 */	cmpwi r4, 0
 /* 801C99A0 001C67A0  41 80 00 10 */	blt lbl_801C99B0
-/* 801C99A4 001C67A4  80 0D D8 D8 */	lwz r0, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801C99A4 001C67A4  80 0D D8 D8 */	lwz r0, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801C99A8 001C67A8  7C 04 00 00 */	cmpw r4, r0
 /* 801C99AC 001C67AC  41 80 00 08 */	blt lbl_801C99B4
 lbl_801C99B0:
 /* 801C99B0 001C67B0  38 80 00 00 */	li r4, 0
 lbl_801C99B4:
 /* 801C99B4 001C67B4  1C 04 00 1C */	mulli r0, r4, 0x1c
-/* 801C99B8 001C67B8  3C 80 80 3A */	lis r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801C99BC 001C67BC  38 84 EF B0 */	addi r4, r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801C99B8 001C67B8  3C 80 80 3A */	lis r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801C99BC 001C67BC  38 84 EF B0 */	addi r4, r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801C99C0 001C67C0  7C 84 02 14 */	add r4, r4, r0
 /* 801C99C4 001C67C4  80 04 00 0C */	lwz r0, 0xc(r4)
 /* 801C99C8 001C67C8  90 03 00 0C */	stw r0, 0xc(r3)
@@ -2696,23 +2698,23 @@ PreRender__15zUICustomVolumeFv:
 /* 801C9B08 001C6908  3C A0 43 30 */	lis r5, 0x4330
 /* 801C9B0C 001C690C  81 0D 91 C4 */	lwz r8, FB_XRES-_SDA_BASE_(r13)
 /* 801C9B10 001C6910  38 00 00 0B */	li r0, 0xb
-/* 801C9B14 001C6914  C0 A2 CE B4 */	lfs f5, $$21907_2-_SDA2_BASE_(r2)
+/* 801C9B14 001C6914  C0 A2 CE B4 */	lfs f5, _esc__2_1907_2-_SDA2_BASE_(r2)
 /* 801C9B18 001C6918  38 60 00 00 */	li r3, 0
 /* 801C9B1C 001C691C  C0 04 00 1C */	lfs f0, 0x1c(r4)
 /* 801C9B20 001C6920  38 80 00 00 */	li r4, 0
-/* 801C9B24 001C6924  C0 82 CE B0 */	lfs f4, $$21906-_SDA2_BASE_(r2)
+/* 801C9B24 001C6924  C0 82 CE B0 */	lfs f4, _esc__2_1906-_SDA2_BASE_(r2)
 /* 801C9B28 001C6928  EC 00 28 24 */	fdivs f0, f0, f5
-/* 801C9B2C 001C692C  C0 42 CE 74 */	lfs f2, $$21576_2-_SDA2_BASE_(r2)
-/* 801C9B30 001C6930  80 C2 CE 54 */	lwz r6, VOLUME_ACTIVE_COLOR__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA2_BASE_(r2)
+/* 801C9B2C 001C692C  C0 42 CE 74 */	lfs f2, _esc__2_1576_2-_SDA2_BASE_(r2)
+/* 801C9B30 001C6930  80 C2 CE 54 */	lwz r6, VOLUME_ACTIVE_COLOR__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA2_BASE_(r2)
 /* 801C9B34 001C6934  91 01 04 3C */	stw r8, 0x43c(r1)
-/* 801C9B38 001C6938  C9 42 CE 80 */	lfd f10, $$21579_0-_SDA2_BASE_(r2)
+/* 801C9B38 001C6938  C9 42 CE 80 */	lfd f10, _esc__2_1579_0-_SDA2_BASE_(r2)
 /* 801C9B3C 001C693C  90 A1 04 38 */	stw r5, 0x438(r1)
 /* 801C9B40 001C6940  C8 61 04 38 */	lfd f3, 0x438(r1)
 /* 801C9B44 001C6944  EC 85 20 7A */	fmadds f4, f5, f1, f4
 /* 801C9B48 001C6948  90 C1 00 08 */	stw r6, 8(r1)
 /* 801C9B4C 001C694C  EC 22 00 32 */	fmuls f1, f2, f0
 /* 801C9B50 001C6950  EC 43 50 28 */	fsubs f2, f3, f10
-/* 801C9B54 001C6954  C1 62 CE 68 */	lfs f11, $$21573_0-_SDA2_BASE_(r2)
+/* 801C9B54 001C6954  C1 62 CE 68 */	lfs f11, _esc__2_1573_0-_SDA2_BASE_(r2)
 /* 801C9B58 001C6958  FC 60 20 1E */	fctiwz f3, f4
 /* 801C9B5C 001C695C  80 DF 00 04 */	lwz r6, 4(r31)
 /* 801C9B60 001C6960  EC 22 00 72 */	fmuls f1, f2, f1
@@ -2722,10 +2724,10 @@ PreRender__15zUICustomVolumeFv:
 /* 801C9B70 001C6970  ED 8B 00 72 */	fmuls f12, f11, f1
 /* 801C9B74 001C6974  81 41 04 34 */	lwz r10, 0x434(r1)
 /* 801C9B78 001C6978  98 C1 00 0B */	stb r6, 0xb(r1)
-/* 801C9B7C 001C697C  C1 02 CE 70 */	lfs f8, $$21575_0-_SDA2_BASE_(r2)
-/* 801C9B80 001C6980  C0 C2 CE B8 */	lfs f6, $$21908_0-_SDA2_BASE_(r2)
-/* 801C9B84 001C6984  C0 A2 CE 78 */	lfs f5, $$21577_0-_SDA2_BASE_(r2)
-/* 801C9B88 001C6988  C0 82 CE BC */	lfs f4, $$21909-_SDA2_BASE_(r2)
+/* 801C9B7C 001C697C  C1 02 CE 70 */	lfs f8, _esc__2_1575_0-_SDA2_BASE_(r2)
+/* 801C9B80 001C6980  C0 C2 CE B8 */	lfs f6, _esc__2_1908_0-_SDA2_BASE_(r2)
+/* 801C9B84 001C6984  C0 A2 CE 78 */	lfs f5, _esc__2_1577_0-_SDA2_BASE_(r2)
+/* 801C9B88 001C6988  C0 82 CE BC */	lfs f4, _esc__2_1909-_SDA2_BASE_(r2)
 /* 801C9B8C 001C698C  7C 09 03 A6 */	mtctr r0
 lbl_801C9B90:
 /* 801C9B90 001C6990  90 61 04 4C */	stw r3, 0x44c(r1)
@@ -2819,7 +2821,7 @@ lbl_801C9C38:
 /* 801C9CE8 001C6AE8  42 00 FE A8 */	bdnz lbl_801C9B90
 /* 801C9CEC 001C6AEC  38 61 00 0C */	addi r3, r1, 0xc
 /* 801C9CF0 001C6AF0  38 80 00 0B */	li r4, 0xb
-/* 801C9CF4 001C6AF4  4B FF E5 01 */	bl RenderQuadList__28$$2unnamed$$2zUIIncredibles_cpp$$2FP18rwGameCube2DVertexUi
+/* 801C9CF4 001C6AF4  4B FF E5 01 */	bl RenderQuadList__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FP18rwGameCube2DVertexUi
 /* 801C9CF8 001C6AF8  38 60 00 00 */	li r3, 0
 /* 801C9CFC 001C6AFC  E3 E1 04 68 */	psq_l f31, 1128(r1), 0, qr0
 /* 801C9D00 001C6B00  80 01 04 74 */	lwz r0, 0x474(r1)
@@ -2849,8 +2851,8 @@ HandleEvent__15zUICustomVolumeFP5xBaseUiPCfP5xBaseUi:
 lbl_801C9D54:
 /* 801C9D54 001C6B54  48 00 00 BD */	bl GetVolume__15zUICustomVolumeCFv
 /* 801C9D58 001C6B58  FF E0 08 90 */	fmr f31, f1
-/* 801C9D5C 001C6B5C  C0 22 CE C0 */	lfs f1, $$21932_1-_SDA2_BASE_(r2)
-/* 801C9D60 001C6B60  C0 02 CE 78 */	lfs f0, $$21577_0-_SDA2_BASE_(r2)
+/* 801C9D5C 001C6B5C  C0 22 CE C0 */	lfs f1, _esc__2_1932_1-_SDA2_BASE_(r2)
+/* 801C9D60 001C6B60  C0 02 CE 78 */	lfs f0, _esc__2_1577_0-_SDA2_BASE_(r2)
 /* 801C9D64 001C6B64  EF DF 08 2A */	fadds f30, f31, f1
 /* 801C9D68 001C6B68  FC 1E 00 40 */	fcmpo cr0, f30, f0
 /* 801C9D6C 001C6B6C  40 81 00 08 */	ble lbl_801C9D74
@@ -2872,8 +2874,8 @@ lbl_801C9D98:
 lbl_801C9DA0:
 /* 801C9DA0 001C6BA0  48 00 00 71 */	bl GetVolume__15zUICustomVolumeCFv
 /* 801C9DA4 001C6BA4  FF E0 08 90 */	fmr f31, f1
-/* 801C9DA8 001C6BA8  C0 22 CE C0 */	lfs f1, $$21932_1-_SDA2_BASE_(r2)
-/* 801C9DAC 001C6BAC  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801C9DA8 001C6BA8  C0 22 CE C0 */	lfs f1, _esc__2_1932_1-_SDA2_BASE_(r2)
+/* 801C9DAC 001C6BAC  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801C9DB0 001C6BB0  EF DF 08 28 */	fsubs f30, f31, f1
 /* 801C9DB4 001C6BB4  FC 1E 00 40 */	fcmpo cr0, f30, f0
 /* 801C9DB8 001C6BB8  40 80 00 08 */	bge lbl_801C9DC0
@@ -3142,10 +3144,10 @@ __ct__15zUICustomStaticFP3zUI:
 Reset__15zUICustomStaticFv:
 /* 801CA124 001C6F24  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CA128 001C6F28  7C 08 02 A6 */	mflr r0
-/* 801CA12C 001C6F2C  C0 22 CE 98 */	lfs f1, $$21733_1-_SDA2_BASE_(r2)
+/* 801CA12C 001C6F2C  C0 22 CE 98 */	lfs f1, _esc__2_1733_1-_SDA2_BASE_(r2)
 /* 801CA130 001C6F30  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CA134 001C6F34  38 00 00 00 */	li r0, 0
-/* 801CA138 001C6F38  C0 42 CE C4 */	lfs f2, $$22010_0-_SDA2_BASE_(r2)
+/* 801CA138 001C6F38  C0 42 CE C4 */	lfs f2, _esc__2_2010_0-_SDA2_BASE_(r2)
 /* 801CA13C 001C6F3C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801CA140 001C6F40  7C 7F 1B 78 */	mr r31, r3
 /* 801CA144 001C6F44  90 03 00 08 */	stw r0, 8(r3)
@@ -3161,7 +3163,7 @@ Reset__15zUICustomStaticFv:
 PreUpdate__15zUICustomStaticFf:
 /* 801CA164 001C6F64  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CA168 001C6F68  7C 08 02 A6 */	mflr r0
-/* 801CA16C 001C6F6C  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801CA16C 001C6F6C  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CA170 001C6F70  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CA174 001C6F74  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801CA178 001C6F78  7C 7F 1B 78 */	mr r31, r3
@@ -3186,29 +3188,29 @@ lbl_801CA1B8:
 /* 801CA1C0 001C6FC0  48 00 00 48 */	b lbl_801CA208
 lbl_801CA1C4:
 /* 801CA1C4 001C6FC4  38 00 00 01 */	li r0, 1
-/* 801CA1C8 001C6FC8  C0 02 CE 60 */	lfs f0, $$21482_1-_SDA2_BASE_(r2)
+/* 801CA1C8 001C6FC8  C0 02 CE 60 */	lfs f0, _esc__2_1482_1-_SDA2_BASE_(r2)
 /* 801CA1CC 001C6FCC  90 1F 00 08 */	stw r0, 8(r31)
 /* 801CA1D0 001C6FD0  D0 1F 00 0C */	stfs f0, 0xc(r31)
 /* 801CA1D4 001C6FD4  48 00 00 4C */	b lbl_801CA220
 lbl_801CA1D8:
 /* 801CA1D8 001C6FD8  38 00 00 02 */	li r0, 2
-/* 801CA1DC 001C6FDC  C0 22 CE C8 */	lfs f1, $$22024_0-_SDA2_BASE_(r2)
+/* 801CA1DC 001C6FDC  C0 22 CE C8 */	lfs f1, _esc__2_2024_0-_SDA2_BASE_(r2)
 /* 801CA1E0 001C6FE0  90 1F 00 08 */	stw r0, 8(r31)
-/* 801CA1E4 001C6FE4  C0 42 CE 94 */	lfs f2, $$21732_1-_SDA2_BASE_(r2)
+/* 801CA1E4 001C6FE4  C0 42 CE 94 */	lfs f2, _esc__2_1732_1-_SDA2_BASE_(r2)
 /* 801CA1E8 001C6FE8  4B E9 D0 15 */	bl xrand_RandomFloatRange__Fff
 /* 801CA1EC 001C6FEC  D0 3F 00 0C */	stfs f1, 0xc(r31)
 /* 801CA1F0 001C6FF0  48 00 00 30 */	b lbl_801CA220
 lbl_801CA1F4:
 /* 801CA1F4 001C6FF4  38 00 00 03 */	li r0, 3
-/* 801CA1F8 001C6FF8  C0 02 CE 94 */	lfs f0, $$21732_1-_SDA2_BASE_(r2)
+/* 801CA1F8 001C6FF8  C0 02 CE 94 */	lfs f0, _esc__2_1732_1-_SDA2_BASE_(r2)
 /* 801CA1FC 001C6FFC  90 1F 00 08 */	stw r0, 8(r31)
 /* 801CA200 001C7000  D0 1F 00 0C */	stfs f0, 0xc(r31)
 /* 801CA204 001C7004  48 00 00 1C */	b lbl_801CA220
 lbl_801CA208:
 /* 801CA208 001C7008  38 00 00 00 */	li r0, 0
-/* 801CA20C 001C700C  C0 22 CE 98 */	lfs f1, $$21733_1-_SDA2_BASE_(r2)
+/* 801CA20C 001C700C  C0 22 CE 98 */	lfs f1, _esc__2_1733_1-_SDA2_BASE_(r2)
 /* 801CA210 001C7010  90 1F 00 08 */	stw r0, 8(r31)
-/* 801CA214 001C7014  C0 42 CE C4 */	lfs f2, $$22010_0-_SDA2_BASE_(r2)
+/* 801CA214 001C7014  C0 42 CE C4 */	lfs f2, _esc__2_2010_0-_SDA2_BASE_(r2)
 /* 801CA218 001C7018  4B E9 CF E5 */	bl xrand_RandomFloatRange__Fff
 /* 801CA21C 001C701C  D0 3F 00 0C */	stfs f1, 0xc(r31)
 lbl_801CA220:
@@ -3234,16 +3236,16 @@ PreApplyMotionFrame__15zUICustomStaticFP14zUIMotionFrame:
 /* 801CA260 001C7060  48 00 00 AC */	b lbl_801CA30C
 lbl_801CA264:
 /* 801CA264 001C7064  4B E8 4E A9 */	bl xrand_RandomFloat__Fv
-/* 801CA268 001C7068  C0 62 CE D0 */	lfs f3, $$22039-_SDA2_BASE_(r2)
-/* 801CA26C 001C706C  C0 42 CE 78 */	lfs f2, $$21577_0-_SDA2_BASE_(r2)
-/* 801CA270 001C7070  C0 02 CE CC */	lfs f0, $$22038-_SDA2_BASE_(r2)
+/* 801CA268 001C7068  C0 62 CE D0 */	lfs f3, _esc__2_2039-_SDA2_BASE_(r2)
+/* 801CA26C 001C706C  C0 42 CE 78 */	lfs f2, _esc__2_1577_0-_SDA2_BASE_(r2)
+/* 801CA270 001C7070  C0 02 CE CC */	lfs f0, _esc__2_2038-_SDA2_BASE_(r2)
 /* 801CA274 001C7074  EC 23 10 78 */	fmsubs f1, f3, f1, f2
 /* 801CA278 001C7078  EC 00 00 72 */	fmuls f0, f0, f1
 /* 801CA27C 001C707C  D0 1F 00 24 */	stfs f0, 0x24(r31)
 /* 801CA280 001C7080  4B E8 4E 8D */	bl xrand_RandomFloat__Fv
-/* 801CA284 001C7084  C0 42 CE D0 */	lfs f2, $$22039-_SDA2_BASE_(r2)
-/* 801CA288 001C7088  C0 62 CE 78 */	lfs f3, $$21577_0-_SDA2_BASE_(r2)
-/* 801CA28C 001C708C  C0 02 CE CC */	lfs f0, $$22038-_SDA2_BASE_(r2)
+/* 801CA284 001C7084  C0 42 CE D0 */	lfs f2, _esc__2_2039-_SDA2_BASE_(r2)
+/* 801CA288 001C7088  C0 62 CE 78 */	lfs f3, _esc__2_1577_0-_SDA2_BASE_(r2)
+/* 801CA28C 001C708C  C0 02 CE CC */	lfs f0, _esc__2_2038-_SDA2_BASE_(r2)
 /* 801CA290 001C7090  EC 22 18 78 */	fmsubs f1, f2, f1, f3
 /* 801CA294 001C7094  EC 00 00 72 */	fmuls f0, f0, f1
 /* 801CA298 001C7098  D0 1F 00 28 */	stfs f0, 0x28(r31)
@@ -3251,8 +3253,8 @@ lbl_801CA264:
 /* 801CA2A0 001C70A0  2C 00 00 01 */	cmpwi r0, 1
 /* 801CA2A4 001C70A4  40 82 00 30 */	bne lbl_801CA2D4
 /* 801CA2A8 001C70A8  C0 3E 00 0C */	lfs f1, 0xc(r30)
-/* 801CA2AC 001C70AC  C0 02 CE 94 */	lfs f0, $$21732_1-_SDA2_BASE_(r2)
-/* 801CA2B0 001C70B0  C0 42 CE D4 */	lfs f2, $$22040_1-_SDA2_BASE_(r2)
+/* 801CA2AC 001C70AC  C0 02 CE 94 */	lfs f0, _esc__2_1732_1-_SDA2_BASE_(r2)
+/* 801CA2B0 001C70B0  C0 42 CE D4 */	lfs f2, _esc__2_2040_1-_SDA2_BASE_(r2)
 /* 801CA2B4 001C70B4  EC 01 00 24 */	fdivs f0, f1, f0
 /* 801CA2B8 001C70B8  EC 03 00 28 */	fsubs f0, f3, f0
 /* 801CA2BC 001C70BC  EC 02 00 32 */	fmuls f0, f2, f0
@@ -3264,9 +3266,9 @@ lbl_801CA264:
 lbl_801CA2D4:
 /* 801CA2D4 001C70D4  2C 00 00 03 */	cmpwi r0, 3
 /* 801CA2D8 001C70D8  40 82 00 2C */	bne lbl_801CA304
-/* 801CA2DC 001C70DC  C0 42 CE D4 */	lfs f2, $$22040_1-_SDA2_BASE_(r2)
+/* 801CA2DC 001C70DC  C0 42 CE D4 */	lfs f2, _esc__2_2040_1-_SDA2_BASE_(r2)
 /* 801CA2E0 001C70E0  C0 3E 00 0C */	lfs f1, 0xc(r30)
-/* 801CA2E4 001C70E4  C0 02 CE 94 */	lfs f0, $$21732_1-_SDA2_BASE_(r2)
+/* 801CA2E4 001C70E4  C0 02 CE 94 */	lfs f0, _esc__2_1732_1-_SDA2_BASE_(r2)
 /* 801CA2E8 001C70E8  EC 22 00 72 */	fmuls f1, f2, f1
 /* 801CA2EC 001C70EC  EC 01 00 24 */	fdivs f0, f1, f0
 /* 801CA2F0 001C70F0  FC 00 00 1E */	fctiwz f0, f0
@@ -3306,15 +3308,15 @@ __ct__20zUICustomPowerEffectFP3zUI:
 Reset__20zUICustomPowerEffectFv:
 /* 801CA35C 001C715C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CA360 001C7160  7C 08 02 A6 */	mflr r0
-/* 801CA364 001C7164  C0 22 CE 98 */	lfs f1, $$21733_1-_SDA2_BASE_(r2)
+/* 801CA364 001C7164  C0 22 CE 98 */	lfs f1, _esc__2_1733_1-_SDA2_BASE_(r2)
 /* 801CA368 001C7168  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801CA36C 001C716C  C0 42 CE D8 */	lfs f2, $$22050-_SDA2_BASE_(r2)
+/* 801CA36C 001C716C  C0 42 CE D8 */	lfs f2, _esc__2_2050-_SDA2_BASE_(r2)
 /* 801CA370 001C7170  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801CA374 001C7174  7C 7F 1B 78 */	mr r31, r3
 /* 801CA378 001C7178  4B E9 CE 85 */	bl xrand_RandomFloatRange__Fff
 /* 801CA37C 001C717C  D0 3F 00 10 */	stfs f1, 0x10(r31)
-/* 801CA380 001C7180  C0 22 CE 98 */	lfs f1, $$21733_1-_SDA2_BASE_(r2)
-/* 801CA384 001C7184  C0 42 CE DC */	lfs f2, $$22051-_SDA2_BASE_(r2)
+/* 801CA380 001C7180  C0 22 CE 98 */	lfs f1, _esc__2_1733_1-_SDA2_BASE_(r2)
+/* 801CA384 001C7184  C0 42 CE DC */	lfs f2, _esc__2_2051-_SDA2_BASE_(r2)
 /* 801CA388 001C7188  4B E9 CE 75 */	bl xrand_RandomFloatRange__Fff
 /* 801CA38C 001C718C  D0 3F 00 08 */	stfs f1, 8(r31)
 /* 801CA390 001C7190  C0 1F 00 08 */	lfs f0, 8(r31)
@@ -3329,7 +3331,7 @@ Reset__20zUICustomPowerEffectFv:
 PreUpdate__20zUICustomPowerEffectFf:
 /* 801CA3AC 001C71AC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CA3B0 001C71B0  7C 08 02 A6 */	mflr r0
-/* 801CA3B4 001C71B4  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801CA3B4 001C71B4  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CA3B8 001C71B8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CA3BC 001C71BC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801CA3C0 001C71C0  7C 7F 1B 78 */	mr r31, r3
@@ -3341,7 +3343,7 @@ PreUpdate__20zUICustomPowerEffectFf:
 /* 801CA3D8 001C71D8  D0 1F 00 10 */	stfs f0, 0x10(r31)
 lbl_801CA3DC:
 /* 801CA3DC 001C71DC  C0 1F 00 10 */	lfs f0, 0x10(r31)
-/* 801CA3E0 001C71E0  C0 42 CE 50 */	lfs f2, $$21275_0-_SDA2_BASE_(r2)
+/* 801CA3E0 001C71E0  C0 42 CE 50 */	lfs f2, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CA3E4 001C71E4  FC 00 10 40 */	fcmpo cr0, f0, f2
 /* 801CA3E8 001C71E8  4C 40 13 82 */	cror 2, 0, 2
 /* 801CA3EC 001C71EC  40 82 00 48 */	bne lbl_801CA434
@@ -3352,12 +3354,12 @@ lbl_801CA3DC:
 /* 801CA400 001C7200  C0 1F 00 08 */	lfs f0, 8(r31)
 /* 801CA404 001C7204  FC 00 10 40 */	fcmpo cr0, f0, f2
 /* 801CA408 001C7208  40 80 00 2C */	bge lbl_801CA434
-/* 801CA40C 001C720C  C0 22 CE 98 */	lfs f1, $$21733_1-_SDA2_BASE_(r2)
-/* 801CA410 001C7210  C0 42 CE D8 */	lfs f2, $$22050-_SDA2_BASE_(r2)
+/* 801CA40C 001C720C  C0 22 CE 98 */	lfs f1, _esc__2_1733_1-_SDA2_BASE_(r2)
+/* 801CA410 001C7210  C0 42 CE D8 */	lfs f2, _esc__2_2050-_SDA2_BASE_(r2)
 /* 801CA414 001C7214  4B E9 CD E9 */	bl xrand_RandomFloatRange__Fff
 /* 801CA418 001C7218  D0 3F 00 10 */	stfs f1, 0x10(r31)
-/* 801CA41C 001C721C  C0 22 CE 98 */	lfs f1, $$21733_1-_SDA2_BASE_(r2)
-/* 801CA420 001C7220  C0 42 CE DC */	lfs f2, $$22051-_SDA2_BASE_(r2)
+/* 801CA41C 001C721C  C0 22 CE 98 */	lfs f1, _esc__2_1733_1-_SDA2_BASE_(r2)
+/* 801CA420 001C7220  C0 42 CE DC */	lfs f2, _esc__2_2051-_SDA2_BASE_(r2)
 /* 801CA424 001C7224  4B E9 CD D9 */	bl xrand_RandomFloatRange__Fff
 /* 801CA428 001C7228  D0 3F 00 08 */	stfs f1, 8(r31)
 /* 801CA42C 001C722C  C0 1F 00 08 */	lfs f0, 8(r31)
@@ -3400,7 +3402,7 @@ PostRender__20zUICustomPowerEffectFv:
 PreApplyMotionFrame__20zUICustomPowerEffectFP14zUIMotionFrame:
 /* 801CA49C 001C729C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CA4A0 001C72A0  7C 08 02 A6 */	mflr r0
-/* 801CA4A4 001C72A4  C0 22 CE 50 */	lfs f1, $$21275_0-_SDA2_BASE_(r2)
+/* 801CA4A4 001C72A4  C0 22 CE 50 */	lfs f1, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CA4A8 001C72A8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CA4AC 001C72AC  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801CA4B0 001C72B0  7C 7E 1B 78 */	mr r30, r3
@@ -3412,15 +3414,15 @@ PreApplyMotionFrame__20zUICustomPowerEffectFP14zUIMotionFrame:
 /* 801CA4C8 001C72C8  4B FA 0C 29 */	bl GetAsset__8zUIImageCFv
 /* 801CA4CC 001C72CC  C0 43 00 5C */	lfs f2, 0x5c(r3)
 /* 801CA4D0 001C72D0  C0 23 00 54 */	lfs f1, 0x54(r3)
-/* 801CA4D4 001C72D4  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801CA4D4 001C72D4  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CA4D8 001C72D8  EC 22 08 28 */	fsubs f1, f2, f1
 /* 801CA4DC 001C72DC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801CA4E0 001C72E0  40 80 00 10 */	bge lbl_801CA4F0
-/* 801CA4E4 001C72E4  C0 02 CE 78 */	lfs f0, $$21577_0-_SDA2_BASE_(r2)
+/* 801CA4E4 001C72E4  C0 02 CE 78 */	lfs f0, _esc__2_1577_0-_SDA2_BASE_(r2)
 /* 801CA4E8 001C72E8  EC 41 00 28 */	fsubs f2, f1, f0
 /* 801CA4EC 001C72EC  48 00 00 0C */	b lbl_801CA4F8
 lbl_801CA4F0:
-/* 801CA4F0 001C72F0  C0 02 CE 78 */	lfs f0, $$21577_0-_SDA2_BASE_(r2)
+/* 801CA4F0 001C72F0  C0 02 CE 78 */	lfs f0, _esc__2_1577_0-_SDA2_BASE_(r2)
 /* 801CA4F4 001C72F4  EC 41 00 2A */	fadds f2, f1, f0
 lbl_801CA4F8:
 /* 801CA4F8 001C72F8  C0 3E 00 0C */	lfs f1, 0xc(r30)
@@ -3470,9 +3472,9 @@ Init__18zUICustomWireframeFv:
 /* 801CA588 001C7388  DB C1 05 50 */	stfd f30, 0x550(r1)
 /* 801CA58C 001C738C  F3 C1 05 58 */	psq_st f30, 1368(r1), 0, qr0
 /* 801CA590 001C7390  BF A1 05 44 */	stmw r29, 0x544(r1)
-/* 801CA594 001C7394  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CA594 001C7394  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CA598 001C7398  7C 7F 1B 78 */	mr r31, r3
-/* 801CA59C 001C739C  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CA59C 001C739C  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CA5A0 001C73A0  38 61 01 3C */	addi r3, r1, 0x13c
 /* 801CA5A4 001C73A4  38 84 00 AE */	addi r4, r4, 0xae
 /* 801CA5A8 001C73A8  48 0F 1F 4D */	bl strcpy
@@ -3490,7 +3492,7 @@ Init__18zUICustomWireframeFv:
 /* 801CA5D8 001C73D8  98 A1 00 0B */	stb r5, 0xb(r1)
 /* 801CA5DC 001C73DC  98 01 00 0C */	stb r0, 0xc(r1)
 /* 801CA5E0 001C73E0  48 0F 1E A5 */	bl strcat
-/* 801CA5E4 001C73E4  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801CA5E4 001C73E4  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CA5E8 001C73E8  38 00 00 00 */	li r0, 0
 /* 801CA5EC 001C73EC  38 61 00 10 */	addi r3, r1, 0x10
 /* 801CA5F0 001C73F0  38 80 00 00 */	li r4, 0
@@ -3574,7 +3576,7 @@ lbl_801CA6FC:
 /* 801CA70C 001C750C  90 7F 00 0C */	stw r3, 0xc(r31)
 /* 801CA710 001C7510  80 7F 00 08 */	lwz r3, 8(r31)
 /* 801CA714 001C7514  48 01 47 B5 */	bl WireframeAssetSetupPointers__FP15zWireframeAsset
-/* 801CA718 001C7518  C3 E2 CE 50 */	lfs f31, $$21275_0-_SDA2_BASE_(r2)
+/* 801CA718 001C7518  C3 E2 CE 50 */	lfs f31, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CA71C 001C751C  3B A0 00 00 */	li r29, 0
 /* 801CA720 001C7520  3B C0 00 00 */	li r30, 0
 /* 801CA724 001C7524  FF C0 F8 90 */	fmr f30, f31
@@ -3609,8 +3611,8 @@ lbl_801CA784:
 /* 801CA788 001C7588  80 03 00 04 */	lwz r0, 4(r3)
 /* 801CA78C 001C758C  7C 1D 00 40 */	cmplw r29, r0
 /* 801CA790 001C7590  41 80 FF 9C */	blt lbl_801CA72C
-/* 801CA794 001C7594  C0 22 CE D0 */	lfs f1, $$22039-_SDA2_BASE_(r2)
-/* 801CA798 001C7598  C0 02 CE E0 */	lfs f0, $$22125-_SDA2_BASE_(r2)
+/* 801CA794 001C7594  C0 22 CE D0 */	lfs f1, _esc__2_2039-_SDA2_BASE_(r2)
+/* 801CA798 001C7598  C0 02 CE E0 */	lfs f0, _esc__2_2125-_SDA2_BASE_(r2)
 /* 801CA79C 001C759C  EC 41 07 F2 */	fmuls f2, f1, f31
 /* 801CA7A0 001C75A0  EC 21 07 B2 */	fmuls f1, f1, f30
 /* 801CA7A4 001C75A4  D0 5F 00 10 */	stfs f2, 0x10(r31)
@@ -3661,13 +3663,13 @@ lbl_801CA81C:
 lbl_801CA844:
 /* 801CA844 001C7644  D0 1D 00 1C */	stfs f0, 0x1c(r29)
 /* 801CA848 001C7648  3C 00 43 30 */	lis r0, 0x4330
-/* 801CA84C 001C764C  C0 42 CE E8 */	lfs f2, $$22163-_SDA2_BASE_(r2)
+/* 801CA84C 001C764C  C0 42 CE E8 */	lfs f2, _esc__2_2163-_SDA2_BASE_(r2)
 /* 801CA850 001C7650  C0 1D 00 18 */	lfs f0, 0x18(r29)
 /* 801CA854 001C7654  80 7D 00 08 */	lwz r3, 8(r29)
 /* 801CA858 001C7658  EC 00 10 24 */	fdivs f0, f0, f2
 /* 801CA85C 001C765C  90 01 00 20 */	stw r0, 0x20(r1)
-/* 801CA860 001C7660  C8 22 CE 88 */	lfd f1, $$21658_1-_SDA2_BASE_(r2)
-/* 801CA864 001C7664  C0 62 CE E4 */	lfs f3, $$22162-_SDA2_BASE_(r2)
+/* 801CA860 001C7660  C8 22 CE 88 */	lfd f1, _esc__2_1658_1-_SDA2_BASE_(r2)
+/* 801CA864 001C7664  C0 62 CE E4 */	lfs f3, _esc__2_2162-_SDA2_BASE_(r2)
 /* 801CA868 001C7668  83 E3 00 0C */	lwz r31, 0xc(r3)
 /* 801CA86C 001C766C  83 C3 00 10 */	lwz r30, 0x10(r3)
 /* 801CA870 001C7670  FC 00 00 1E */	fctiwz f0, f0
@@ -3685,20 +3687,20 @@ lbl_801CA844:
 /* 801CA8A0 001C76A0  FC 20 F0 90 */	fmr f1, f30
 /* 801CA8A4 001C76A4  4B EA BF 89 */	bl icos__Ff
 /* 801CA8A8 001C76A8  FF C0 08 90 */	fmr f30, f1
-/* 801CA8AC 001C76AC  C0 22 CE EC */	lfs f1, $$22164-_SDA2_BASE_(r2)
+/* 801CA8AC 001C76AC  C0 22 CE EC */	lfs f1, _esc__2_2164-_SDA2_BASE_(r2)
 /* 801CA8B0 001C76B0  4B EA BF 39 */	bl isin__Ff
 /* 801CA8B4 001C76B4  FF E0 08 90 */	fmr f31, f1
-/* 801CA8B8 001C76B8  C0 22 CE EC */	lfs f1, $$22164-_SDA2_BASE_(r2)
+/* 801CA8B8 001C76B8  C0 22 CE EC */	lfs f1, _esc__2_2164-_SDA2_BASE_(r2)
 /* 801CA8BC 001C76BC  4B EA BF 71 */	bl icos__Ff
 /* 801CA8C0 001C76C0  FC 00 E8 50 */	fneg f0, f29
-/* 801CA8C4 001C76C4  C1 42 CE 68 */	lfs f10, $$21573_0-_SDA2_BASE_(r2)
-/* 801CA8C8 001C76C8  C9 22 CE 80 */	lfd f9, $$21579_0-_SDA2_BASE_(r2)
+/* 801CA8C4 001C76C4  C1 42 CE 68 */	lfs f10, _esc__2_1573_0-_SDA2_BASE_(r2)
+/* 801CA8C8 001C76C8  C9 22 CE 80 */	lfd f9, _esc__2_1579_0-_SDA2_BASE_(r2)
 /* 801CA8CC 001C76CC  38 60 00 00 */	li r3, 0
-/* 801CA8D0 001C76D0  C0 E2 CE 94 */	lfs f7, $$21732_1-_SDA2_BASE_(r2)
+/* 801CA8D0 001C76D0  C0 E2 CE 94 */	lfs f7, _esc__2_1732_1-_SDA2_BASE_(r2)
 /* 801CA8D4 001C76D4  38 80 00 00 */	li r4, 0
-/* 801CA8D8 001C76D8  C0 C2 CE 70 */	lfs f6, $$21575_0-_SDA2_BASE_(r2)
+/* 801CA8D8 001C76D8  C0 C2 CE 70 */	lfs f6, _esc__2_1575_0-_SDA2_BASE_(r2)
 /* 801CA8DC 001C76DC  38 A0 00 00 */	li r5, 0
-/* 801CA8E0 001C76E0  C0 42 CE 50 */	lfs f2, $$21275_0-_SDA2_BASE_(r2)
+/* 801CA8E0 001C76E0  C0 42 CE 50 */	lfs f2, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CA8E4 001C76E4  3F 80 43 30 */	lis r28, 0x4330
 /* 801CA8E8 001C76E8  48 00 00 F8 */	b lbl_801CA9E0
 lbl_801CA8EC:
@@ -3865,9 +3867,9 @@ PreUpdate__18zUICustomWireframeFf:
 /* 801CAB58 001C7958  80 03 00 08 */	lwz r0, 8(r3)
 /* 801CAB5C 001C795C  28 00 00 00 */	cmplwi r0, 0
 /* 801CAB60 001C7960  41 82 00 58 */	beq lbl_801CABB8
-/* 801CAB64 001C7964  C0 62 CE F0 */	lfs f3, $$22176-_SDA2_BASE_(r2)
+/* 801CAB64 001C7964  C0 62 CE F0 */	lfs f3, _esc__2_2176-_SDA2_BASE_(r2)
 /* 801CAB68 001C7968  C0 03 00 18 */	lfs f0, 0x18(r3)
-/* 801CAB6C 001C796C  C0 42 CE F4 */	lfs f2, $$22177-_SDA2_BASE_(r2)
+/* 801CAB6C 001C796C  C0 42 CE F4 */	lfs f2, _esc__2_2177-_SDA2_BASE_(r2)
 /* 801CAB70 001C7970  EC 03 00 7A */	fmadds f0, f3, f1, f0
 /* 801CAB74 001C7974  D0 03 00 18 */	stfs f0, 0x18(r3)
 /* 801CAB78 001C7978  C0 63 00 18 */	lfs f3, 0x18(r3)
@@ -3876,7 +3878,7 @@ PreUpdate__18zUICustomWireframeFf:
 /* 801CAB84 001C7984  EC 03 10 24 */	fdivs f0, f3, f2
 /* 801CAB88 001C7988  3C 00 43 30 */	lis r0, 0x4330
 /* 801CAB8C 001C798C  90 01 00 10 */	stw r0, 0x10(r1)
-/* 801CAB90 001C7990  C8 22 CE 88 */	lfd f1, $$21658_1-_SDA2_BASE_(r2)
+/* 801CAB90 001C7990  C8 22 CE 88 */	lfd f1, _esc__2_1658_1-_SDA2_BASE_(r2)
 /* 801CAB94 001C7994  FC 00 00 1E */	fctiwz f0, f0
 /* 801CAB98 001C7998  D8 01 00 08 */	stfd f0, 8(r1)
 /* 801CAB9C 001C799C  80 01 00 0C */	lwz r0, 0xc(r1)
@@ -3924,16 +3926,16 @@ Init__23zUICustomControlOverlayFv:
 UpdatePlayerText__23zUICustomControlOverlayFv:
 /* 801CAC14 001C7A14  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CAC18 001C7A18  7C 08 02 A6 */	mflr r0
-/* 801CAC1C 001C7A1C  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
+/* 801CAC1C 001C7A1C  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
 /* 801CAC20 001C7A20  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801CAC24 001C7A24  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CAC24 001C7A24  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CAC28 001C7A28  38 63 00 BC */	addi r3, r3, 0xbc
 /* 801CAC2C 001C7A2C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801CAC30 001C7A30  4B EA 1F F1 */	bl xStrHash__FPCc
 /* 801CAC34 001C7A34  4B F8 FA A9 */	bl zSceneFindObject__FUi
-/* 801CAC38 001C7A38  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CAC38 001C7A38  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CAC3C 001C7A3C  7C 7F 1B 78 */	mr r31, r3
-/* 801CAC40 001C7A40  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CAC40 001C7A40  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CAC44 001C7A44  38 64 00 CF */	addi r3, r4, 0xcf
 /* 801CAC48 001C7A48  4B EA 1F D9 */	bl xStrHash__FPCc
 /* 801CAC4C 001C7A4C  38 80 00 00 */	li r4, 0
@@ -3941,14 +3943,14 @@ UpdatePlayerText__23zUICustomControlOverlayFv:
 /* 801CAC54 001C7A54  7C 64 1B 78 */	mr r4, r3
 /* 801CAC58 001C7A58  7F E3 FB 78 */	mr r3, r31
 /* 801CAC5C 001C7A5C  4B F8 6E FD */	bl SetText__7zUITextFPCc
-/* 801CAC60 001C7A60  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CAC64 001C7A64  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CAC60 001C7A60  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CAC64 001C7A64  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CAC68 001C7A68  38 63 00 E1 */	addi r3, r3, 0xe1
 /* 801CAC6C 001C7A6C  4B EA 1F B5 */	bl xStrHash__FPCc
 /* 801CAC70 001C7A70  4B F8 FA 6D */	bl zSceneFindObject__FUi
-/* 801CAC74 001C7A74  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CAC74 001C7A74  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CAC78 001C7A78  7C 7F 1B 78 */	mr r31, r3
-/* 801CAC7C 001C7A7C  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CAC7C 001C7A7C  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CAC80 001C7A80  38 64 00 F8 */	addi r3, r4, 0xf8
 /* 801CAC84 001C7A84  4B EA 1F 9D */	bl xStrHash__FPCc
 /* 801CAC88 001C7A88  38 80 00 00 */	li r4, 0
@@ -3956,14 +3958,14 @@ UpdatePlayerText__23zUICustomControlOverlayFv:
 /* 801CAC90 001C7A90  7C 64 1B 78 */	mr r4, r3
 /* 801CAC94 001C7A94  7F E3 FB 78 */	mr r3, r31
 /* 801CAC98 001C7A98  4B F8 6E C1 */	bl SetText__7zUITextFPCc
-/* 801CAC9C 001C7A9C  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CACA0 001C7AA0  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CAC9C 001C7A9C  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CACA0 001C7AA0  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CACA4 001C7AA4  38 63 01 0B */	addi r3, r3, 0x10b
 /* 801CACA8 001C7AA8  4B EA 1F 79 */	bl xStrHash__FPCc
 /* 801CACAC 001C7AAC  4B F8 FA 31 */	bl zSceneFindObject__FUi
-/* 801CACB0 001C7AB0  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CACB0 001C7AB0  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CACB4 001C7AB4  7C 7F 1B 78 */	mr r31, r3
-/* 801CACB8 001C7AB8  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CACB8 001C7AB8  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CACBC 001C7ABC  38 64 01 20 */	addi r3, r4, 0x120
 /* 801CACC0 001C7AC0  4B EA 1F 61 */	bl xStrHash__FPCc
 /* 801CACC4 001C7AC4  38 80 00 00 */	li r4, 0
@@ -3971,14 +3973,14 @@ UpdatePlayerText__23zUICustomControlOverlayFv:
 /* 801CACCC 001C7ACC  7C 64 1B 78 */	mr r4, r3
 /* 801CACD0 001C7AD0  7F E3 FB 78 */	mr r3, r31
 /* 801CACD4 001C7AD4  4B F8 6E 85 */	bl SetText__7zUITextFPCc
-/* 801CACD8 001C7AD8  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CACDC 001C7ADC  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CACD8 001C7AD8  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CACDC 001C7ADC  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CACE0 001C7AE0  38 63 01 31 */	addi r3, r3, 0x131
 /* 801CACE4 001C7AE4  4B EA 1F 3D */	bl xStrHash__FPCc
 /* 801CACE8 001C7AE8  4B F8 F9 F5 */	bl zSceneFindObject__FUi
-/* 801CACEC 001C7AEC  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CACEC 001C7AEC  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CACF0 001C7AF0  7C 7F 1B 78 */	mr r31, r3
-/* 801CACF4 001C7AF4  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CACF4 001C7AF4  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CACF8 001C7AF8  38 64 01 46 */	addi r3, r4, 0x146
 /* 801CACFC 001C7AFC  4B EA 1F 25 */	bl xStrHash__FPCc
 /* 801CAD00 001C7B00  38 80 00 00 */	li r4, 0
@@ -3986,14 +3988,14 @@ UpdatePlayerText__23zUICustomControlOverlayFv:
 /* 801CAD08 001C7B08  7C 64 1B 78 */	mr r4, r3
 /* 801CAD0C 001C7B0C  7F E3 FB 78 */	mr r3, r31
 /* 801CAD10 001C7B10  4B F8 6E 49 */	bl SetText__7zUITextFPCc
-/* 801CAD14 001C7B14  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CAD18 001C7B18  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CAD14 001C7B14  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CAD18 001C7B18  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CAD1C 001C7B1C  38 63 01 57 */	addi r3, r3, 0x157
 /* 801CAD20 001C7B20  4B EA 1F 01 */	bl xStrHash__FPCc
 /* 801CAD24 001C7B24  4B F8 F9 B9 */	bl zSceneFindObject__FUi
-/* 801CAD28 001C7B28  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CAD28 001C7B28  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CAD2C 001C7B2C  7C 7F 1B 78 */	mr r31, r3
-/* 801CAD30 001C7B30  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CAD30 001C7B30  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CAD34 001C7B34  38 64 01 69 */	addi r3, r4, 0x169
 /* 801CAD38 001C7B38  4B EA 1E E9 */	bl xStrHash__FPCc
 /* 801CAD3C 001C7B3C  38 80 00 00 */	li r4, 0
@@ -4001,14 +4003,14 @@ UpdatePlayerText__23zUICustomControlOverlayFv:
 /* 801CAD44 001C7B44  7C 64 1B 78 */	mr r4, r3
 /* 801CAD48 001C7B48  7F E3 FB 78 */	mr r3, r31
 /* 801CAD4C 001C7B4C  4B F8 6E 0D */	bl SetText__7zUITextFPCc
-/* 801CAD50 001C7B50  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CAD54 001C7B54  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CAD50 001C7B50  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CAD54 001C7B54  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CAD58 001C7B58  38 63 01 77 */	addi r3, r3, 0x177
 /* 801CAD5C 001C7B5C  4B EA 1E C5 */	bl xStrHash__FPCc
 /* 801CAD60 001C7B60  4B F8 F9 7D */	bl zSceneFindObject__FUi
-/* 801CAD64 001C7B64  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CAD64 001C7B64  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CAD68 001C7B68  7C 7F 1B 78 */	mr r31, r3
-/* 801CAD6C 001C7B6C  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CAD6C 001C7B6C  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CAD70 001C7B70  38 64 01 85 */	addi r3, r4, 0x185
 /* 801CAD74 001C7B74  4B EA 1E AD */	bl xStrHash__FPCc
 /* 801CAD78 001C7B78  38 80 00 00 */	li r4, 0
@@ -4016,14 +4018,14 @@ UpdatePlayerText__23zUICustomControlOverlayFv:
 /* 801CAD80 001C7B80  7C 64 1B 78 */	mr r4, r3
 /* 801CAD84 001C7B84  7F E3 FB 78 */	mr r3, r31
 /* 801CAD88 001C7B88  4B F8 6D D1 */	bl SetText__7zUITextFPCc
-/* 801CAD8C 001C7B8C  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CAD90 001C7B90  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CAD8C 001C7B8C  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CAD90 001C7B90  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CAD94 001C7B94  38 63 01 8F */	addi r3, r3, 0x18f
 /* 801CAD98 001C7B98  4B EA 1E 89 */	bl xStrHash__FPCc
 /* 801CAD9C 001C7B9C  4B F8 F9 41 */	bl zSceneFindObject__FUi
-/* 801CADA0 001C7BA0  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CADA0 001C7BA0  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CADA4 001C7BA4  7C 7F 1B 78 */	mr r31, r3
-/* 801CADA8 001C7BA8  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CADA8 001C7BA8  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CADAC 001C7BAC  38 64 01 9D */	addi r3, r4, 0x19d
 /* 801CADB0 001C7BB0  4B EA 1E 71 */	bl xStrHash__FPCc
 /* 801CADB4 001C7BB4  38 80 00 00 */	li r4, 0
@@ -4031,14 +4033,14 @@ UpdatePlayerText__23zUICustomControlOverlayFv:
 /* 801CADBC 001C7BBC  7C 64 1B 78 */	mr r4, r3
 /* 801CADC0 001C7BC0  7F E3 FB 78 */	mr r3, r31
 /* 801CADC4 001C7BC4  4B F8 6D 95 */	bl SetText__7zUITextFPCc
-/* 801CADC8 001C7BC8  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CADCC 001C7BCC  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CADC8 001C7BC8  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CADCC 001C7BCC  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CADD0 001C7BD0  38 63 01 A7 */	addi r3, r3, 0x1a7
 /* 801CADD4 001C7BD4  4B EA 1E 4D */	bl xStrHash__FPCc
 /* 801CADD8 001C7BD8  4B F8 F9 05 */	bl zSceneFindObject__FUi
-/* 801CADDC 001C7BDC  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CADDC 001C7BDC  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CADE0 001C7BE0  7C 7F 1B 78 */	mr r31, r3
-/* 801CADE4 001C7BE4  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CADE4 001C7BE4  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CADE8 001C7BE8  38 64 01 B5 */	addi r3, r4, 0x1b5
 /* 801CADEC 001C7BEC  4B EA 1E 35 */	bl xStrHash__FPCc
 /* 801CADF0 001C7BF0  38 80 00 00 */	li r4, 0
@@ -4046,14 +4048,14 @@ UpdatePlayerText__23zUICustomControlOverlayFv:
 /* 801CADF8 001C7BF8  7C 64 1B 78 */	mr r4, r3
 /* 801CADFC 001C7BFC  7F E3 FB 78 */	mr r3, r31
 /* 801CAE00 001C7C00  4B F8 6D 59 */	bl SetText__7zUITextFPCc
-/* 801CAE04 001C7C04  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CAE08 001C7C08  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CAE04 001C7C04  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CAE08 001C7C08  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CAE0C 001C7C0C  38 63 01 BF */	addi r3, r3, 0x1bf
 /* 801CAE10 001C7C10  4B EA 1E 11 */	bl xStrHash__FPCc
 /* 801CAE14 001C7C14  4B F8 F8 C9 */	bl zSceneFindObject__FUi
-/* 801CAE18 001C7C18  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CAE18 001C7C18  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CAE1C 001C7C1C  7C 7F 1B 78 */	mr r31, r3
-/* 801CAE20 001C7C20  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CAE20 001C7C20  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CAE24 001C7C24  38 64 01 CD */	addi r3, r4, 0x1cd
 /* 801CAE28 001C7C28  4B EA 1D F9 */	bl xStrHash__FPCc
 /* 801CAE2C 001C7C2C  38 80 00 00 */	li r4, 0
@@ -4061,14 +4063,14 @@ UpdatePlayerText__23zUICustomControlOverlayFv:
 /* 801CAE34 001C7C34  7C 64 1B 78 */	mr r4, r3
 /* 801CAE38 001C7C38  7F E3 FB 78 */	mr r3, r31
 /* 801CAE3C 001C7C3C  4B F8 6D 1D */	bl SetText__7zUITextFPCc
-/* 801CAE40 001C7C40  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CAE44 001C7C44  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CAE40 001C7C40  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CAE44 001C7C44  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CAE48 001C7C48  38 63 01 D7 */	addi r3, r3, 0x1d7
 /* 801CAE4C 001C7C4C  4B EA 1D D5 */	bl xStrHash__FPCc
 /* 801CAE50 001C7C50  4B F8 F8 8D */	bl zSceneFindObject__FUi
-/* 801CAE54 001C7C54  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CAE54 001C7C54  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CAE58 001C7C58  7C 7F 1B 78 */	mr r31, r3
-/* 801CAE5C 001C7C5C  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CAE5C 001C7C5C  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CAE60 001C7C60  38 64 01 E9 */	addi r3, r4, 0x1e9
 /* 801CAE64 001C7C64  4B EA 1D BD */	bl xStrHash__FPCc
 /* 801CAE68 001C7C68  38 80 00 00 */	li r4, 0
@@ -4127,9 +4129,9 @@ RenderLines__23zUICustomControlOverlayFv:
 /* 801CAF14 001C7D14  DB C1 0A 00 */	stfd f30, 0xa00(r1)
 /* 801CAF18 001C7D18  F3 C1 0A 08 */	psq_st f30, -1528(r1), 0, qr0
 /* 801CAF1C 001C7D1C  BE E1 09 DC */	stmw r23, 0x9dc(r1)
-/* 801CAF20 001C7D20  3C 80 80 2F */	lis r4, $$22316@ha
+/* 801CAF20 001C7D20  3C 80 80 2F */	lis r4, _esc__2_2316@ha
 /* 801CAF24 001C7D24  38 00 00 1E */	li r0, 0x1e
-/* 801CAF28 001C7D28  38 84 8F 98 */	addi r4, r4, $$22316@l
+/* 801CAF28 001C7D28  38 84 8F 98 */	addi r4, r4, _esc__2_2316@l
 /* 801CAF2C 001C7D2C  7C 7B 1B 78 */	mr r27, r3
 /* 801CAF30 001C7D30  38 A1 00 54 */	addi r5, r1, 0x54
 /* 801CAF34 001C7D34  38 84 FF FC */	addi r4, r4, -4
@@ -4142,7 +4144,7 @@ lbl_801CAF3C:
 /* 801CAF4C 001C7D4C  42 00 FF F0 */	bdnz lbl_801CAF3C
 /* 801CAF50 001C7D50  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
 /* 801CAF54 001C7D54  3B C0 00 00 */	li r30, 0
-/* 801CAF58 001C7D58  C0 22 CE 58 */	lfs f1, $$21409_1-_SDA2_BASE_(r2)
+/* 801CAF58 001C7D58  C0 22 CE 58 */	lfs f1, _esc__2_1409_1-_SDA2_BASE_(r2)
 /* 801CAF5C 001C7D5C  3B 20 00 00 */	li r25, 0
 /* 801CAF60 001C7D60  C3 C3 00 18 */	lfs f30, 0x18(r3)
 /* 801CAF64 001C7D64  3B A0 00 00 */	li r29, 0
@@ -4152,16 +4154,16 @@ lbl_801CAF3C:
 /* 801CAF74 001C7D74  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 801CAF78 001C7D78  4C 40 13 82 */	cror 2, 0, 2
 /* 801CAF7C 001C7D7C  40 82 00 20 */	bne lbl_801CAF9C
-/* 801CAF80 001C7D80  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801CAF80 001C7D80  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CAF84 001C7D84  FC 1E 00 40 */	fcmpo cr0, f30, f0
 /* 801CAF88 001C7D88  4C 41 13 82 */	cror 2, 1, 2
 /* 801CAF8C 001C7D8C  40 82 00 0C */	bne lbl_801CAF98
 /* 801CAF90 001C7D90  FF C0 08 90 */	fmr f30, f1
 /* 801CAF94 001C7D94  48 00 00 08 */	b lbl_801CAF9C
 lbl_801CAF98:
-/* 801CAF98 001C7D98  C3 C2 CE 5C */	lfs f30, $$21410_0-_SDA2_BASE_(r2)
+/* 801CAF98 001C7D98  C3 C2 CE 5C */	lfs f30, _esc__2_1410_0-_SDA2_BASE_(r2)
 lbl_801CAF9C:
-/* 801CAF9C 001C7D9C  C3 E2 CE F8 */	lfs f31, $$22401-_SDA2_BASE_(r2)
+/* 801CAF9C 001C7D9C  C3 E2 CE F8 */	lfs f31, _esc__2_2401-_SDA2_BASE_(r2)
 /* 801CAFA0 001C7DA0  3B 80 00 00 */	li r28, 0
 /* 801CAFA4 001C7DA4  3B 00 00 00 */	li r24, 0
 /* 801CAFA8 001C7DA8  48 00 04 A8 */	b lbl_801CB450
@@ -4186,16 +4188,16 @@ lbl_801CAFAC:
 /* 801CAFF0 001C7DF0  38 61 00 34 */	addi r3, r1, 0x34
 /* 801CAFF4 001C7DF4  90 E1 09 BC */	stw r7, 0x9bc(r1)
 /* 801CAFF8 001C7DF8  38 81 00 40 */	addi r4, r1, 0x40
-/* 801CAFFC 001C7DFC  C0 42 CE 50 */	lfs f2, $$21275_0-_SDA2_BASE_(r2)
+/* 801CAFFC 001C7DFC  C0 42 CE 50 */	lfs f2, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CB000 001C7E00  38 A1 00 4C */	addi r5, r1, 0x4c
 /* 801CB004 001C7E04  90 C1 09 B8 */	stw r6, 0x9b8(r1)
-/* 801CB008 001C7E08  C8 C2 CE 80 */	lfd f6, $$21579_0-_SDA2_BASE_(r2)
+/* 801CB008 001C7E08  C8 C2 CE 80 */	lfd f6, _esc__2_1579_0-_SDA2_BASE_(r2)
 /* 801CB00C 001C7E0C  C8 01 09 B8 */	lfd f0, 0x9b8(r1)
 /* 801CB010 001C7E10  90 01 09 C4 */	stw r0, 0x9c4(r1)
 /* 801CB014 001C7E14  EC 20 30 28 */	fsubs f1, f0, f6
-/* 801CB018 001C7E18  C0 E2 CE 68 */	lfs f7, $$21573_0-_SDA2_BASE_(r2)
+/* 801CB018 001C7E18  C0 E2 CE 68 */	lfs f7, _esc__2_1573_0-_SDA2_BASE_(r2)
 /* 801CB01C 001C7E1C  90 C1 09 C0 */	stw r6, 0x9c0(r1)
-/* 801CB020 001C7E20  C0 82 CE 70 */	lfs f4, $$21575_0-_SDA2_BASE_(r2)
+/* 801CB020 001C7E20  C0 82 CE 70 */	lfs f4, _esc__2_1575_0-_SDA2_BASE_(r2)
 /* 801CB024 001C7E24  C8 01 09 C0 */	lfd f0, 0x9c0(r1)
 /* 801CB028 001C7E28  EC 61 00 F2 */	fmuls f3, f1, f3
 /* 801CB02C 001C7E2C  90 E1 09 CC */	stw r7, 0x9cc(r1)
@@ -4236,7 +4238,7 @@ lbl_801CAFAC:
 /* 801CB0B8 001C7EB8  38 61 00 34 */	addi r3, r1, 0x34
 /* 801CB0BC 001C7EBC  7C 64 1B 78 */	mr r4, r3
 /* 801CB0C0 001C7EC0  4B EA 65 61 */	bl xVec3Normalize__FP5xVec3PC5xVec3
-/* 801CB0C4 001C7EC4  C0 22 CE FC */	lfs f1, $$22402_1-_SDA2_BASE_(r2)
+/* 801CB0C4 001C7EC4  C0 22 CE FC */	lfs f1, _esc__2_2402_1-_SDA2_BASE_(r2)
 /* 801CB0C8 001C7EC8  38 61 00 34 */	addi r3, r1, 0x34
 /* 801CB0CC 001C7ECC  4B E3 C7 B9 */	bl xVec3SMulBy__FP5xVec3f
 /* 801CB0D0 001C7ED0  C0 81 00 4C */	lfs f4, 0x4c(r1)
@@ -4317,7 +4319,7 @@ lbl_801CAFAC:
 /* 801CB1FC 001C7FFC  3B 5A 00 02 */	addi r26, r26, 2
 /* 801CB200 001C8000  98 EB 00 0F */	stb r7, 0xf(r11)
 lbl_801CB204:
-/* 801CB204 001C8004  C0 02 CE F8 */	lfs f0, $$22401-_SDA2_BASE_(r2)
+/* 801CB204 001C8004  C0 02 CE F8 */	lfs f0, _esc__2_2401-_SDA2_BASE_(r2)
 /* 801CB208 001C8008  C0 BF 00 10 */	lfs f5, 0x10(r31)
 /* 801CB20C 001C800C  FC 00 28 00 */	fcmpu cr0, f0, f5
 /* 801CB210 001C8010  41 82 02 38 */	beq lbl_801CB448
@@ -4330,10 +4332,10 @@ lbl_801CB204:
 /* 801CB22C 001C802C  38 61 00 10 */	addi r3, r1, 0x10
 /* 801CB230 001C8030  90 E1 09 D4 */	stw r7, 0x9d4(r1)
 /* 801CB234 001C8034  38 81 00 1C */	addi r4, r1, 0x1c
-/* 801CB238 001C8038  C0 82 CE 50 */	lfs f4, $$21275_0-_SDA2_BASE_(r2)
+/* 801CB238 001C8038  C0 82 CE 50 */	lfs f4, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CB23C 001C803C  38 A1 00 28 */	addi r5, r1, 0x28
 /* 801CB240 001C8040  90 C1 09 D0 */	stw r6, 0x9d0(r1)
-/* 801CB244 001C8044  C9 02 CE 80 */	lfd f8, $$21579_0-_SDA2_BASE_(r2)
+/* 801CB244 001C8044  C9 02 CE 80 */	lfd f8, _esc__2_1579_0-_SDA2_BASE_(r2)
 /* 801CB248 001C8048  C8 01 09 D0 */	lfd f0, 0x9d0(r1)
 /* 801CB24C 001C804C  90 01 09 CC */	stw r0, 0x9cc(r1)
 /* 801CB250 001C8050  EC 60 40 28 */	fsubs f3, f0, f8
@@ -4342,11 +4344,11 @@ lbl_801CB204:
 /* 801CB25C 001C805C  C0 1F 00 0C */	lfs f0, 0xc(r31)
 /* 801CB260 001C8060  C8 21 09 C8 */	lfd f1, 0x9c8(r1)
 /* 801CB264 001C8064  EC 63 01 72 */	fmuls f3, f3, f5
-/* 801CB268 001C8068  C1 22 CE 68 */	lfs f9, $$21573_0-_SDA2_BASE_(r2)
+/* 801CB268 001C8068  C1 22 CE 68 */	lfs f9, _esc__2_1573_0-_SDA2_BASE_(r2)
 /* 801CB26C 001C806C  EC 21 40 28 */	fsubs f1, f1, f8
 /* 801CB270 001C8070  90 E1 09 C4 */	stw r7, 0x9c4(r1)
 /* 801CB274 001C8074  EC E9 00 F2 */	fmuls f7, f9, f3
-/* 801CB278 001C8078  C0 C2 CE 70 */	lfs f6, $$21575_0-_SDA2_BASE_(r2)
+/* 801CB278 001C8078  C0 C2 CE 70 */	lfs f6, _esc__2_1575_0-_SDA2_BASE_(r2)
 /* 801CB27C 001C807C  90 C1 09 C0 */	stw r6, 0x9c0(r1)
 /* 801CB280 001C8080  EC A1 02 B2 */	fmuls f5, f1, f10
 /* 801CB284 001C8084  C8 21 09 C0 */	lfd f1, 0x9c0(r1)
@@ -4382,7 +4384,7 @@ lbl_801CB204:
 /* 801CB2FC 001C80FC  38 61 00 10 */	addi r3, r1, 0x10
 /* 801CB300 001C8100  7C 64 1B 78 */	mr r4, r3
 /* 801CB304 001C8104  4B EA 63 1D */	bl xVec3Normalize__FP5xVec3PC5xVec3
-/* 801CB308 001C8108  C0 22 CE FC */	lfs f1, $$22402_1-_SDA2_BASE_(r2)
+/* 801CB308 001C8108  C0 22 CE FC */	lfs f1, _esc__2_2402_1-_SDA2_BASE_(r2)
 /* 801CB30C 001C810C  38 61 00 10 */	addi r3, r1, 0x10
 /* 801CB310 001C8110  4B E3 C5 75 */	bl xVec3SMulBy__FP5xVec3f
 /* 801CB314 001C8114  C0 81 00 28 */	lfs f4, 0x28(r1)
@@ -4611,9 +4613,9 @@ PreRender__29zUICustomSecretsScreenControlFv:
 /* 801CB648 001C8448  48 00 02 30 */	b lbl_801CB878
 lbl_801CB64C:
 /* 801CB64C 001C844C  C0 46 00 1C */	lfs f2, 0x1c(r6)
-/* 801CB650 001C8450  3C 60 80 2F */	lis r3, $$22437@ha
-/* 801CB654 001C8454  C0 22 CF 00 */	lfs f1, $$22459-_SDA2_BASE_(r2)
-/* 801CB658 001C8458  38 63 90 88 */	addi r3, r3, $$22437@l
+/* 801CB650 001C8450  3C 60 80 2F */	lis r3, _esc__2_2437@ha
+/* 801CB654 001C8454  C0 22 CF 00 */	lfs f1, _esc__2_2459-_SDA2_BASE_(r2)
+/* 801CB658 001C8458  38 63 90 88 */	addi r3, r3, _esc__2_2437@l
 /* 801CB65C 001C845C  C0 06 00 20 */	lfs f0, 0x20(r6)
 /* 801CB660 001C8460  38 00 00 2A */	li r0, 0x2a
 /* 801CB664 001C8464  ED 02 00 72 */	fmuls f8, f2, f1
@@ -4630,42 +4632,42 @@ lbl_801CB680:
 /* 801CB68C 001C848C  94 05 00 08 */	stwu r0, 8(r5)
 /* 801CB690 001C8490  42 00 FF F0 */	bdnz lbl_801CB680
 /* 801CB694 001C8494  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
-/* 801CB698 001C8498  C0 22 CE 58 */	lfs f1, $$21409_1-_SDA2_BASE_(r2)
+/* 801CB698 001C8498  C0 22 CE 58 */	lfs f1, _esc__2_1409_1-_SDA2_BASE_(r2)
 /* 801CB69C 001C849C  C3 E3 00 18 */	lfs f31, 0x18(r3)
 /* 801CB6A0 001C84A0  FC 00 FA 10 */	fabs f0, f31
 /* 801CB6A4 001C84A4  FC 00 00 18 */	frsp f0, f0
 /* 801CB6A8 001C84A8  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 801CB6AC 001C84AC  4C 40 13 82 */	cror 2, 0, 2
 /* 801CB6B0 001C84B0  40 82 00 20 */	bne lbl_801CB6D0
-/* 801CB6B4 001C84B4  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801CB6B4 001C84B4  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CB6B8 001C84B8  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 801CB6BC 001C84BC  4C 41 13 82 */	cror 2, 1, 2
 /* 801CB6C0 001C84C0  40 82 00 0C */	bne lbl_801CB6CC
 /* 801CB6C4 001C84C4  FF E0 08 90 */	fmr f31, f1
 /* 801CB6C8 001C84C8  48 00 00 08 */	b lbl_801CB6D0
 lbl_801CB6CC:
-/* 801CB6CC 001C84CC  C3 E2 CE 5C */	lfs f31, $$21410_0-_SDA2_BASE_(r2)
+/* 801CB6CC 001C84CC  C3 E2 CE 5C */	lfs f31, _esc__2_1410_0-_SDA2_BASE_(r2)
 lbl_801CB6D0:
 /* 801CB6D0 001C84D0  A0 09 00 0C */	lhz r0, 0xc(r9)
 /* 801CB6D4 001C84D4  3C C0 43 30 */	lis r6, 0x4330
 /* 801CB6D8 001C84D8  80 ED 91 C4 */	lwz r7, FB_XRES-_SDA_BASE_(r13)
-/* 801CB6DC 001C84DC  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
+/* 801CB6DC 001C84DC  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
 /* 801CB6E0 001C84E0  81 0D 91 C8 */	lwz r8, FB_YRES-_SDA_BASE_(r13)
 /* 801CB6E4 001C84E4  1C 00 00 0C */	mulli r0, r0, 0xc
 /* 801CB6E8 001C84E8  90 E1 01 BC */	stw r7, 0x1bc(r1)
 /* 801CB6EC 001C84EC  38 81 00 68 */	addi r4, r1, 0x68
 /* 801CB6F0 001C84F0  38 A1 00 6C */	addi r5, r1, 0x6c
-/* 801CB6F4 001C84F4  C0 02 CF 04 */	lfs f0, $$22460-_SDA2_BASE_(r2)
+/* 801CB6F4 001C84F4  C0 02 CF 04 */	lfs f0, _esc__2_2460-_SDA2_BASE_(r2)
 /* 801CB6F8 001C84F8  90 C1 01 B8 */	stw r6, 0x1b8(r1)
 /* 801CB6FC 001C84FC  7C 64 04 2E */	lfsx f3, r4, r0
 /* 801CB700 001C8500  38 81 00 70 */	addi r4, r1, 0x70
 /* 801CB704 001C8504  7C 45 04 2E */	lfsx f2, r5, r0
-/* 801CB708 001C8508  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CB708 001C8508  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CB70C 001C850C  7C 24 04 2E */	lfsx f1, r4, r0
 /* 801CB710 001C8510  EC A8 20 FA */	fmadds f5, f8, f3, f4
 /* 801CB714 001C8514  91 01 01 C4 */	stw r8, 0x1c4(r1)
 /* 801CB718 001C8518  EC 69 30 BA */	fmadds f3, f9, f2, f6
-/* 801CB71C 001C851C  C8 E2 CE 80 */	lfd f7, $$21579_0-_SDA2_BASE_(r2)
+/* 801CB71C 001C851C  C8 E2 CE 80 */	lfd f7, _esc__2_1579_0-_SDA2_BASE_(r2)
 /* 801CB720 001C8520  EC 48 00 72 */	fmuls f2, f8, f1
 /* 801CB724 001C8524  90 C1 01 C0 */	stw r6, 0x1c0(r1)
 /* 801CB728 001C8528  C8 81 01 B8 */	lfd f4, 0x1b8(r1)
@@ -4677,10 +4679,10 @@ lbl_801CB6D0:
 /* 801CB740 001C8540  EC 80 38 28 */	fsubs f4, f0, f7
 /* 801CB744 001C8544  90 C1 01 C8 */	stw r6, 0x1c8(r1)
 /* 801CB748 001C8548  EC A6 01 72 */	fmuls f5, f6, f5
-/* 801CB74C 001C854C  C0 C2 CE 68 */	lfs f6, $$21573_0-_SDA2_BASE_(r2)
+/* 801CB74C 001C854C  C0 C2 CE 68 */	lfs f6, _esc__2_1573_0-_SDA2_BASE_(r2)
 /* 801CB750 001C8550  C8 01 01 C8 */	lfd f0, 0x1c8(r1)
 /* 801CB754 001C8554  EC 64 00 F2 */	fmuls f3, f4, f3
-/* 801CB758 001C8558  C0 82 CE 70 */	lfs f4, $$21575_0-_SDA2_BASE_(r2)
+/* 801CB758 001C8558  C0 82 CE 70 */	lfs f4, _esc__2_1575_0-_SDA2_BASE_(r2)
 /* 801CB75C 001C855C  EC A6 01 72 */	fmuls f5, f6, f5
 /* 801CB760 001C8560  ED 04 00 F2 */	fmuls f8, f4, f3
 /* 801CB764 001C8564  91 01 01 D4 */	stw r8, 0x1d4(r1)
@@ -4810,12 +4812,12 @@ lbl_801CB924:
 /* 801CB928 001C8728  28 03 00 1A */	cmplwi r3, 0x1a
 /* 801CB92C 001C872C  40 80 00 40 */	bge lbl_801CB96C
 /* 801CB930 001C8730  38 03 00 41 */	addi r0, r3, 0x41
-/* 801CB934 001C8734  C0 42 CE 50 */	lfs f2, $$21275_0-_SDA2_BASE_(r2)
+/* 801CB934 001C8734  C0 42 CE 50 */	lfs f2, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CB938 001C8738  6C 03 80 00 */	xoris r3, r0, 0x8000
 /* 801CB93C 001C873C  3C 00 43 30 */	lis r0, 0x4330
 /* 801CB940 001C8740  90 61 00 0C */	stw r3, 0xc(r1)
 /* 801CB944 001C8744  FC 60 10 90 */	fmr f3, f2
-/* 801CB948 001C8748  C8 22 CE 88 */	lfd f1, $$21658_1-_SDA2_BASE_(r2)
+/* 801CB948 001C8748  C8 22 CE 88 */	lfd f1, _esc__2_1658_1-_SDA2_BASE_(r2)
 /* 801CB94C 001C874C  FC 80 10 90 */	fmr f4, f2
 /* 801CB950 001C8750  90 01 00 08 */	stw r0, 8(r1)
 /* 801CB954 001C8754  38 80 00 B3 */	li r4, 0xb3
@@ -4826,7 +4828,7 @@ lbl_801CB924:
 /* 801CB968 001C8768  48 00 00 7C */	b lbl_801CB9E4
 lbl_801CB96C:
 /* 801CB96C 001C876C  40 82 00 24 */	bne lbl_801CB990
-/* 801CB970 001C8770  C0 22 CE 50 */	lfs f1, $$21275_0-_SDA2_BASE_(r2)
+/* 801CB970 001C8770  C0 22 CE 50 */	lfs f1, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CB974 001C8774  38 80 00 B7 */	li r4, 0xb7
 /* 801CB978 001C8778  80 7A 00 08 */	lwz r3, 8(r26)
 /* 801CB97C 001C877C  FC 40 08 90 */	fmr f2, f1
@@ -4837,7 +4839,7 @@ lbl_801CB96C:
 lbl_801CB990:
 /* 801CB990 001C8790  28 03 00 1B */	cmplwi r3, 0x1b
 /* 801CB994 001C8794  40 82 00 50 */	bne lbl_801CB9E4
-/* 801CB998 001C8798  C0 22 CE 50 */	lfs f1, $$21275_0-_SDA2_BASE_(r2)
+/* 801CB998 001C8798  C0 22 CE 50 */	lfs f1, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CB99C 001C879C  38 80 00 B4 */	li r4, 0xb4
 /* 801CB9A0 001C87A0  80 7A 00 08 */	lwz r3, 8(r26)
 /* 801CB9A4 001C87A4  FC 40 08 90 */	fmr f2, f1
@@ -4850,7 +4852,7 @@ lbl_801CB9B8:
 /* 801CB9BC 001C87BC  81 8C 00 10 */	lwz r12, 0x10(r12)
 /* 801CB9C0 001C87C0  7D 89 03 A6 */	mtctr r12
 /* 801CB9C4 001C87C4  4E 80 04 21 */	bctrl 
-/* 801CB9C8 001C87C8  C0 22 CE 50 */	lfs f1, $$21275_0-_SDA2_BASE_(r2)
+/* 801CB9C8 001C87C8  C0 22 CE 50 */	lfs f1, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CB9CC 001C87CC  38 80 00 D2 */	li r4, 0xd2
 /* 801CB9D0 001C87D0  80 7A 00 08 */	lwz r3, 8(r26)
 /* 801CB9D4 001C87D4  FC 40 08 90 */	fmr f2, f1
@@ -4883,7 +4885,7 @@ Reset__29zUICustomSecretsScreenControlFv:
 changeFocusX__29zUICustomSecretsScreenControlFi:
 /* 801CBA28 001C8828  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801CBA2C 001C882C  38 00 00 03 */	li r0, 3
-/* 801CBA30 001C8830  38 C2 CF 04 */	addi r6, r2, $$22460-_SDA2_BASE_
+/* 801CBA30 001C8830  38 C2 CF 04 */	addi r6, r2, _esc__2_2460-_SDA2_BASE_
 /* 801CBA34 001C8834  38 E1 00 04 */	addi r7, r1, 4
 /* 801CBA38 001C8838  7C 09 03 A6 */	mtctr r0
 lbl_801CBA3C:
@@ -5076,9 +5078,9 @@ lbl_801CBC98:
 zUIIncrediblesUnlock__F13UnlockFeature:
 /* 801CBCC8 001C8AC8  2C 03 00 00 */	cmpwi r3, 0
 /* 801CBCCC 001C8ACC  4C 82 00 20 */	bnelr 
-/* 801CBCD0 001C8AD0  80 ED D8 D8 */	lwz r7, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801CBCD4 001C8AD4  3C 60 80 3A */	lis r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801CBCD8 001C8AD8  38 A3 EF B0 */	addi r5, r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CBCD0 001C8AD0  80 ED D8 D8 */	lwz r7, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CBCD4 001C8AD4  3C 60 80 3A */	lis r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801CBCD8 001C8AD8  38 A3 EF B0 */	addi r5, r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CBCDC 001C8ADC  38 C0 00 01 */	li r6, 1
 /* 801CBCE0 001C8AE0  38 07 FF FF */	addi r0, r7, -1
 /* 801CBCE4 001C8AE4  38 60 00 1C */	li r3, 0x1c
@@ -5092,19 +5094,19 @@ lbl_801CBCF4:
 /* 801CBD00 001C8B00  42 00 FF F4 */	bdnz lbl_801CBCF4
 lbl_801CBD04:
 /* 801CBD04 001C8B04  38 00 00 01 */	li r0, 1
-/* 801CBD08 001C8B08  90 ED D8 DC */	stw r7, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801CBD0C 001C8B0C  98 0D D8 E0 */	stb r0, unlockCheatOn__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CBD08 001C8B08  90 ED D8 DC */	stw r7, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CBD0C 001C8B0C  98 0D D8 E0 */	stb r0, unlockCheatOn__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CBD10 001C8B10  4E 80 00 20 */	blr 
 
 .global zUIIncrediblesAdvanceStage__Fv
 zUIIncrediblesAdvanceStage__Fv:
-/* 801CBD14 001C8B14  80 AD D8 D8 */	lwz r5, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CBD14 001C8B14  80 AD D8 D8 */	lwz r5, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CBD18 001C8B18  3C 60 80 38 */	lis r3, globals@ha
 /* 801CBD1C 001C8B1C  38 83 2A 38 */	addi r4, r3, globals@l
-/* 801CBD20 001C8B20  3C 60 80 3A */	lis r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CBD20 001C8B20  3C 60 80 3A */	lis r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CBD24 001C8B24  38 05 FF FF */	addi r0, r5, -1
 /* 801CBD28 001C8B28  81 24 04 C8 */	lwz r9, 0x4c8(r4)
-/* 801CBD2C 001C8B2C  38 E3 EF B0 */	addi r7, r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CBD2C 001C8B2C  38 E3 EF B0 */	addi r7, r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CBD30 001C8B30  39 40 00 01 */	li r10, 1
 /* 801CBD34 001C8B34  38 60 00 1C */	li r3, 0x1c
 /* 801CBD38 001C8B38  7C 09 03 A6 */	mtctr r0
@@ -5128,12 +5130,12 @@ lbl_801CBD44:
 /* 801CBD7C 001C8B7C  7C C0 03 78 */	or r0, r6, r0
 /* 801CBD80 001C8B80  7C 08 00 40 */	cmplw r8, r0
 /* 801CBD84 001C8B84  40 82 00 3C */	bne lbl_801CBDC0
-/* 801CBD88 001C8B88  3C 80 80 3A */	lis r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801CBD8C 001C8B8C  80 CD D8 DC */	lwz r6, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801CBD90 001C8B90  38 84 EF B0 */	addi r4, r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CBD88 001C8B88  3C 80 80 3A */	lis r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801CBD8C 001C8B8C  80 CD D8 DC */	lwz r6, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CBD90 001C8B90  38 84 EF B0 */	addi r4, r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CBD94 001C8B94  38 0A 00 01 */	addi r0, r10, 1
 /* 801CBD98 001C8B98  7C A4 1A 14 */	add r5, r4, r3
-/* 801CBD9C 001C8B9C  80 62 CF 38 */	lwz r3, SCENEFLAGS_COMPLETED__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA2_BASE_(r2)
+/* 801CBD9C 001C8B9C  80 62 CF 38 */	lwz r3, SCENEFLAGS_COMPLETED__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA2_BASE_(r2)
 /* 801CBDA0 001C8BA0  80 85 00 18 */	lwz r4, 0x18(r5)
 /* 801CBDA4 001C8BA4  7C 06 00 00 */	cmpw r6, r0
 /* 801CBDA8 001C8BA8  7C 83 1B 78 */	or r3, r4, r3
@@ -5141,7 +5143,7 @@ lbl_801CBD44:
 /* 801CBDB0 001C8BB0  40 81 00 08 */	ble lbl_801CBDB8
 /* 801CBDB4 001C8BB4  7C C0 33 78 */	mr r0, r6
 lbl_801CBDB8:
-/* 801CBDB8 001C8BB8  90 0D D8 DC */	stw r0, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CBDB8 001C8BB8  90 0D D8 DC */	stw r0, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CBDBC 001C8BBC  4E 80 00 20 */	blr 
 lbl_801CBDC0:
 /* 801CBDC0 001C8BC0  39 4A 00 01 */	addi r10, r10, 1
@@ -5196,8 +5198,8 @@ lbl_801CBE48:
 /* 801CBE68 001C8C68  93 DF 01 90 */	stw r30, 0x190(r31)
 /* 801CBE6C 001C8C6C  48 00 00 38 */	b lbl_801CBEA4
 lbl_801CBE70:
-/* 801CBE70 001C8C70  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CBE74 001C8C74  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CBE70 001C8C70  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CBE74 001C8C74  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CBE78 001C8C78  38 63 02 06 */	addi r3, r3, 0x206
 /* 801CBE7C 001C8C7C  4B EA 0D A5 */	bl xStrHash__FPCc
 /* 801CBE80 001C8C80  80 9E 00 10 */	lwz r4, 0x10(r30)
@@ -5285,11 +5287,11 @@ lbl_801CBF8C:
 /* 801CBFA0 001C8DA0  48 00 02 E8 */	b lbl_801CC288
 lbl_801CBFA4:
 /* 801CBFA4 001C8DA4  39 00 00 00 */	li r8, 0
-/* 801CBFA8 001C8DA8  3C 60 80 31 */	lis r3, MOVIE_MANAGER_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CBFA8 001C8DA8  3C 60 80 31 */	lis r3, MOVIE_MANAGER_FMV_LIST__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CBFAC 001C8DAC  91 1F 01 A4 */	stw r8, 0x1a4(r31)
 /* 801CBFB0 001C8DB0  38 00 00 1B */	li r0, 0x1b
-/* 801CBFB4 001C8DB4  38 E3 6D F8 */	addi r7, r3, MOVIE_MANAGER_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
-/* 801CBFB8 001C8DB8  38 CD D8 E4 */	addi r6, r13, unlockedMovies__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_
+/* 801CBFB4 001C8DB4  38 E3 6D F8 */	addi r7, r3, MOVIE_MANAGER_FMV_LIST__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
+/* 801CBFB8 001C8DB8  38 CD D8 E4 */	addi r6, r13, unlockedMovies__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_
 /* 801CBFBC 001C8DBC  91 1F 01 9C */	stw r8, 0x19c(r31)
 /* 801CBFC0 001C8DC0  7C 09 03 A6 */	mtctr r0
 lbl_801CBFC4:
@@ -5448,7 +5450,7 @@ lbl_801CC1E8:
 /* 801CC1F8 001C8FF8  93 DF 01 A0 */	stw r30, 0x1a0(r31)
 /* 801CC1FC 001C8FFC  80 7F 01 94 */	lwz r3, 0x194(r31)
 /* 801CC200 001C9000  4B F9 F1 29 */	bl StopMovie__8zUIImageFv
-/* 801CC204 001C9004  81 02 F6 80 */	lwz r8, $$22644_0-_SDA2_BASE_(r2)
+/* 801CC204 001C9004  81 02 F6 80 */	lwz r8, _esc__2_2644_0-_SDA2_BASE_(r2)
 /* 801CC208 001C9008  3C 00 43 30 */	lis r0, 0x4330
 /* 801CC20C 001C900C  81 22 F6 84 */	lwz r9, lbl_803D93A4-_SDA2_BASE_(r2)
 /* 801CC210 001C9010  38 C1 00 08 */	addi r6, r1, 8
@@ -5458,7 +5460,7 @@ lbl_801CC1E8:
 /* 801CC220 001C9020  38 E0 00 00 */	li r7, 0
 /* 801CC224 001C9024  91 01 00 08 */	stw r8, 8(r1)
 /* 801CC228 001C9028  39 00 00 00 */	li r8, 0
-/* 801CC22C 001C902C  C8 22 CE 80 */	lfd f1, $$21579_0-_SDA2_BASE_(r2)
+/* 801CC22C 001C902C  C8 22 CE 80 */	lfd f1, _esc__2_1579_0-_SDA2_BASE_(r2)
 /* 801CC230 001C9030  91 21 00 0C */	stw r9, 0xc(r1)
 /* 801CC234 001C9034  90 81 00 10 */	stw r4, 0x10(r1)
 /* 801CC238 001C9038  90 61 00 14 */	stw r3, 0x14(r1)
@@ -5512,9 +5514,9 @@ lbl_801CC2CC:
 /* 801CC2DC 001C90DC  40 80 00 7C */	bge lbl_801CC358
 /* 801CC2E0 001C90E0  80 9D 01 98 */	lwz r4, 0x198(r29)
 /* 801CC2E4 001C90E4  54 60 10 3A */	slwi r0, r3, 2
-/* 801CC2E8 001C90E8  3C A0 80 2F */	lis r5, $$2stringBase0_133@ha
+/* 801CC2E8 001C90E8  3C A0 80 2F */	lis r5, _esc__2_stringBase0_133@ha
 /* 801CC2EC 001C90EC  38 61 00 0C */	addi r3, r1, 0xc
-/* 801CC2F0 001C90F0  38 C5 91 D8 */	addi r6, r5, $$2stringBase0_133@l
+/* 801CC2F0 001C90F0  38 C5 91 D8 */	addi r6, r5, _esc__2_stringBase0_133@l
 /* 801CC2F4 001C90F4  7C A4 00 2E */	lwzx r5, r4, r0
 /* 801CC2F8 001C90F8  38 86 02 0F */	addi r4, r6, 0x20f
 /* 801CC2FC 001C90FC  4C C6 31 82 */	crclr 6
@@ -5525,13 +5527,13 @@ lbl_801CC2CC:
 /* 801CC310 001C9110  4B EA 1E B9 */	bl xTextFindString__FUiPUi
 /* 801CC314 001C9114  28 03 00 00 */	cmplwi r3, 0
 /* 801CC318 001C9118  40 82 00 10 */	bne lbl_801CC328
-/* 801CC31C 001C911C  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CC320 001C9120  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CC31C 001C911C  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CC320 001C9120  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CC324 001C9124  38 63 00 0E */	addi r3, r3, 0xe
 lbl_801CC328:
 /* 801CC328 001C9128  7C 64 1B 78 */	mr r4, r3
 /* 801CC32C 001C912C  38 61 00 08 */	addi r3, r1, 8
-/* 801CC330 001C9130  4B FF BF 89 */	bl BreakString__28$$2unnamed$$2zUIIncredibles_cpp$$2FRPcPCc
+/* 801CC330 001C9130  4B FF BF 89 */	bl BreakString__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRPcPCc
 /* 801CC334 001C9134  80 BD 00 0C */	lwz r5, 0xc(r29)
 /* 801CC338 001C9138  7C 64 1B 78 */	mr r4, r3
 /* 801CC33C 001C913C  7C 65 F8 2E */	lwzx r3, r5, r31
@@ -5543,8 +5545,8 @@ lbl_801CC328:
 /* 801CC354 001C9154  48 00 00 2C */	b lbl_801CC380
 lbl_801CC358:
 /* 801CC358 001C9158  80 BD 00 0C */	lwz r5, 0xc(r29)
-/* 801CC35C 001C915C  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CC360 001C9160  38 83 91 D8 */	addi r4, r3, $$2stringBase0_133@l
+/* 801CC35C 001C915C  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CC360 001C9160  38 83 91 D8 */	addi r4, r3, _esc__2_stringBase0_133@l
 /* 801CC364 001C9164  7C 65 F8 2E */	lwzx r3, r5, r31
 /* 801CC368 001C9168  38 84 00 0E */	addi r4, r4, 0xe
 /* 801CC36C 001C916C  4B F8 57 ED */	bl SetText__7zUITextFPCc
@@ -5591,9 +5593,9 @@ UpdateMovie__21zUICustomMovieManagerFv:
 /* 801CC3F4 001C91F4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801CC3F8 001C91F8  93 E1 00 2C */	stw r31, 0x2c(r1)
 /* 801CC3FC 001C91FC  7C 7F 1B 78 */	mr r31, r3
-/* 801CC400 001C9200  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
+/* 801CC400 001C9200  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
 /* 801CC404 001C9204  80 1F 01 A4 */	lwz r0, 0x1a4(r31)
-/* 801CC408 001C9208  38 83 91 D8 */	addi r4, r3, $$2stringBase0_133@l
+/* 801CC408 001C9208  38 83 91 D8 */	addi r4, r3, _esc__2_stringBase0_133@l
 /* 801CC40C 001C920C  80 BF 01 98 */	lwz r5, 0x198(r31)
 /* 801CC410 001C9210  38 61 00 08 */	addi r3, r1, 8
 /* 801CC414 001C9214  54 00 10 3A */	slwi r0, r0, 2
@@ -5720,7 +5722,7 @@ lbl_801CC5B4:
 /* 801CC5BC 001C93BC  7C 1C 18 40 */	cmplw r28, r3
 /* 801CC5C0 001C93C0  41 80 FF AC */	blt lbl_801CC56C
 /* 801CC5C4 001C93C4  38 00 00 00 */	li r0, 0
-/* 801CC5C8 001C93C8  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801CC5C8 001C93C8  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CC5CC 001C93CC  90 1F 00 24 */	stw r0, 0x24(r31)
 /* 801CC5D0 001C93D0  90 1F 00 28 */	stw r0, 0x28(r31)
 /* 801CC5D4 001C93D4  90 1F 00 20 */	stw r0, 0x20(r31)
@@ -5767,7 +5769,7 @@ lbl_801CC65C:
 /* 801CC660 001C9460  41 82 03 28 */	beq lbl_801CC988
 /* 801CC664 001C9464  48 00 03 48 */	b lbl_801CC9AC
 lbl_801CC668:
-/* 801CC668 001C9468  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801CC668 001C9468  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CC66C 001C946C  38 00 00 00 */	li r0, 0
 /* 801CC670 001C9470  D0 1F 00 2C */	stfs f0, 0x2c(r31)
 /* 801CC674 001C9474  98 1F 00 31 */	stb r0, 0x31(r31)
@@ -5775,7 +5777,7 @@ lbl_801CC668:
 /* 801CC67C 001C947C  48 00 03 30 */	b lbl_801CC9AC
 lbl_801CC680:
 /* 801CC680 001C9480  38 00 00 00 */	li r0, 0
-/* 801CC684 001C9484  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801CC684 001C9484  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CC688 001C9488  90 1F 00 24 */	stw r0, 0x24(r31)
 /* 801CC68C 001C948C  90 1F 00 20 */	stw r0, 0x20(r31)
 /* 801CC690 001C9490  90 1F 00 28 */	stw r0, 0x28(r31)
@@ -5795,8 +5797,8 @@ lbl_801CC6B8:
 /* 801CC6C0 001C94C0  7C 04 00 40 */	cmplw r4, r0
 /* 801CC6C4 001C94C4  40 82 00 F0 */	bne lbl_801CC7B4
 /* 801CC6C8 001C94C8  80 1F 00 28 */	lwz r0, 0x28(r31)
-/* 801CC6CC 001C94CC  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CC6D0 001C94D0  38 83 91 D8 */	addi r4, r3, $$2stringBase0_133@l
+/* 801CC6CC 001C94CC  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CC6D0 001C94D0  38 83 91 D8 */	addi r4, r3, _esc__2_stringBase0_133@l
 /* 801CC6D4 001C94D4  38 61 00 08 */	addi r3, r1, 8
 /* 801CC6D8 001C94D8  7C 00 F2 14 */	add r0, r0, r30
 /* 801CC6DC 001C94DC  90 1F 00 24 */	stw r0, 0x24(r31)
@@ -5806,9 +5808,9 @@ lbl_801CC6B8:
 /* 801CC6EC 001C94EC  7F E3 FB 78 */	mr r3, r31
 /* 801CC6F0 001C94F0  38 81 00 08 */	addi r4, r1, 8
 /* 801CC6F4 001C94F4  48 00 04 B9 */	bl AddArtworkIndex__23zUICustomArtworkManagerFPci
-/* 801CC6F8 001C94F8  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CC6F8 001C94F8  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CC6FC 001C94FC  38 61 00 28 */	addi r3, r1, 0x28
-/* 801CC700 001C9500  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CC700 001C9500  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CC704 001C9504  38 84 02 47 */	addi r4, r4, 0x247
 /* 801CC708 001C9508  48 0E FD ED */	bl strcpy
 /* 801CC70C 001C950C  80 BF 00 24 */	lwz r5, 0x24(r31)
@@ -5842,8 +5844,8 @@ lbl_801CC75C:
 /* 801CC778 001C9578  80 1F 00 1C */	lwz r0, 0x1c(r31)
 /* 801CC77C 001C957C  28 00 00 00 */	cmplwi r0, 0
 /* 801CC780 001C9580  40 82 00 14 */	bne lbl_801CC794
-/* 801CC784 001C9584  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CC788 001C9588  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CC784 001C9584  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CC788 001C9588  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CC78C 001C958C  38 03 00 0E */	addi r0, r3, 0xe
 /* 801CC790 001C9590  90 1F 00 1C */	stw r0, 0x1c(r31)
 lbl_801CC794:
@@ -5882,7 +5884,7 @@ lbl_801CC7C0:
 /* 801CC808 001C9608  48 00 01 A4 */	b lbl_801CC9AC
 lbl_801CC80C:
 /* 801CC80C 001C960C  C0 3F 00 2C */	lfs f1, 0x2c(r31)
-/* 801CC810 001C9610  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801CC810 001C9610  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CC814 001C9614  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801CC818 001C9618  40 81 00 14 */	ble lbl_801CC82C
 /* 801CC81C 001C961C  38 00 00 01 */	li r0, 1
@@ -5890,7 +5892,7 @@ lbl_801CC80C:
 /* 801CC824 001C9624  98 1F 00 31 */	stb r0, 0x31(r31)
 /* 801CC828 001C9628  48 00 01 84 */	b lbl_801CC9AC
 lbl_801CC82C:
-/* 801CC82C 001C962C  C0 02 CE 94 */	lfs f0, $$21732_1-_SDA2_BASE_(r2)
+/* 801CC82C 001C962C  C0 02 CE 94 */	lfs f0, _esc__2_1732_1-_SDA2_BASE_(r2)
 /* 801CC830 001C9630  D0 1F 00 2C */	stfs f0, 0x2c(r31)
 /* 801CC834 001C9634  80 9F 00 28 */	lwz r4, 0x28(r31)
 /* 801CC838 001C9638  2C 04 00 00 */	cmpwi r4, 0
@@ -5931,7 +5933,7 @@ lbl_801CC8A8:
 /* 801CC8C0 001C96C0  48 00 00 EC */	b lbl_801CC9AC
 lbl_801CC8C4:
 /* 801CC8C4 001C96C4  C0 3F 00 2C */	lfs f1, 0x2c(r31)
-/* 801CC8C8 001C96C8  C0 02 CE 50 */	lfs f0, $$21275_0-_SDA2_BASE_(r2)
+/* 801CC8C8 001C96C8  C0 02 CE 50 */	lfs f0, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CC8CC 001C96CC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801CC8D0 001C96D0  40 81 00 18 */	ble lbl_801CC8E8
 /* 801CC8D4 001C96D4  38 60 00 00 */	li r3, 0
@@ -5940,7 +5942,7 @@ lbl_801CC8C4:
 /* 801CC8E0 001C96E0  98 1F 00 31 */	stb r0, 0x31(r31)
 /* 801CC8E4 001C96E4  48 00 00 C8 */	b lbl_801CC9AC
 lbl_801CC8E8:
-/* 801CC8E8 001C96E8  C0 02 CE 94 */	lfs f0, $$21732_1-_SDA2_BASE_(r2)
+/* 801CC8E8 001C96E8  C0 02 CE 94 */	lfs f0, _esc__2_1732_1-_SDA2_BASE_(r2)
 /* 801CC8EC 001C96EC  D0 1F 00 2C */	stfs f0, 0x2c(r31)
 /* 801CC8F0 001C96F0  80 9F 00 28 */	lwz r4, 0x28(r31)
 /* 801CC8F4 001C96F4  80 1F 00 08 */	lwz r0, 8(r31)
@@ -6005,7 +6007,7 @@ lbl_801CC9B0:
 PreUpdate__23zUICustomArtworkManagerFf:
 /* 801CC9C4 001C97C4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CC9C8 001C97C8  7C 08 02 A6 */	mflr r0
-/* 801CC9CC 001C97CC  C0 42 CE 50 */	lfs f2, $$21275_0-_SDA2_BASE_(r2)
+/* 801CC9CC 001C97CC  C0 42 CE 50 */	lfs f2, _esc__2_1275_0-_SDA2_BASE_(r2)
 /* 801CC9D0 001C97D0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CC9D4 001C97D4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801CC9D8 001C97D8  7C 7F 1B 78 */	mr r31, r3
@@ -6083,11 +6085,11 @@ lbl_801CCAC8:
 UpdateImages__23zUICustomArtworkManagerFv:
 /* 801CCADC 001C98DC  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 801CCAE0 001C98E0  7C 08 02 A6 */	mflr r0
-/* 801CCAE4 001C98E4  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CCAE4 001C98E4  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CCAE8 001C98E8  90 01 00 44 */	stw r0, 0x44(r1)
 /* 801CCAEC 001C98EC  BF 61 00 2C */	stmw r27, 0x2c(r1)
 /* 801CCAF0 001C98F0  7C 7B 1B 78 */	mr r27, r3
-/* 801CCAF4 001C98F4  3B C4 91 D8 */	addi r30, r4, $$2stringBase0_133@l
+/* 801CCAF4 001C98F4  3B C4 91 D8 */	addi r30, r4, _esc__2_stringBase0_133@l
 /* 801CCAF8 001C98F8  3B A0 00 00 */	li r29, 0
 /* 801CCAFC 001C98FC  3B E0 00 00 */	li r31, 0
 /* 801CCB00 001C9900  48 00 00 4C */	b lbl_801CCB4C
@@ -6148,11 +6150,11 @@ AddArtworkIndex__23zUICustomArtworkManagerFPci:
 /* 801CCBC0 001C99C0  7C BE 2B 78 */	mr r30, r5
 /* 801CCBC4 001C99C4  7F E3 FB 78 */	mr r3, r31
 /* 801CCBC8 001C99C8  48 0E F9 E5 */	bl strlen
-/* 801CCBCC 001C99CC  3C 80 80 31 */	lis r4, translationTable$2798@ha
+/* 801CCBCC 001C99CC  3C 80 80 31 */	lis r4, translationTable_esc__7_2798@ha
 /* 801CCBD0 001C99D0  2C 1E 00 00 */	cmpwi r30, 0
 /* 801CCBD4 001C99D4  57 C0 10 3A */	slwi r0, r30, 2
 /* 801CCBD8 001C99D8  7F FF 1A 14 */	add r31, r31, r3
-/* 801CCBDC 001C99DC  38 64 6F 3C */	addi r3, r4, translationTable$2798@l
+/* 801CCBDC 001C99DC  38 64 6F 3C */	addi r3, r4, translationTable_esc__7_2798@l
 /* 801CCBE0 001C99E0  7C A3 00 2E */	lwzx r5, r3, r0
 /* 801CCBE4 001C99E4  40 82 00 0C */	bne lbl_801CCBF0
 /* 801CCBE8 001C99E8  38 00 00 00 */	li r0, 0
@@ -6176,28 +6178,28 @@ lbl_801CCC14:
 /* 801CCC24 001C9A24  40 80 00 20 */	bge lbl_801CCC44
 /* 801CCC28 001C9A28  48 00 00 34 */	b lbl_801CCC5C
 lbl_801CCC2C:
-/* 801CCC2C 001C9A2C  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CCC2C 001C9A2C  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CCC30 001C9A30  7F E3 FB 78 */	mr r3, r31
-/* 801CCC34 001C9A34  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CCC34 001C9A34  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CCC38 001C9A38  38 84 02 71 */	addi r4, r4, 0x271
 /* 801CCC3C 001C9A3C  48 0E F8 B9 */	bl strcpy
 /* 801CCC40 001C9A40  48 00 00 78 */	b lbl_801CCCB8
 lbl_801CCC44:
-/* 801CCC44 001C9A44  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CCC44 001C9A44  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CCC48 001C9A48  7F E3 FB 78 */	mr r3, r31
-/* 801CCC4C 001C9A4C  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CCC4C 001C9A4C  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CCC50 001C9A50  38 84 02 74 */	addi r4, r4, 0x274
 /* 801CCC54 001C9A54  48 0E F8 A1 */	bl strcpy
 /* 801CCC58 001C9A58  48 00 00 60 */	b lbl_801CCCB8
 lbl_801CCC5C:
-/* 801CCC5C 001C9A5C  3C 60 80 3A */	lis r3, unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801CCC60 001C9A60  38 63 F3 30 */	addi r3, r3, unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CCC5C 001C9A5C  3C 60 80 3A */	lis r3, unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801CCC60 001C9A60  38 63 F3 30 */	addi r3, r3, unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CCC64 001C9A64  7C 03 00 AE */	lbzx r0, r3, r0
 /* 801CCC68 001C9A68  28 00 00 00 */	cmplwi r0, 0
 /* 801CCC6C 001C9A6C  41 82 00 20 */	beq lbl_801CCC8C
-/* 801CCC70 001C9A70  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CCC70 001C9A70  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CCC74 001C9A74  7F E3 FB 78 */	mr r3, r31
-/* 801CCC78 001C9A78  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CCC78 001C9A78  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CCC7C 001C9A7C  38 84 02 7A */	addi r4, r4, 0x27a
 /* 801CCC80 001C9A80  4C C6 31 82 */	crclr 6
 /* 801CCC84 001C9A84  48 0E C0 05 */	bl sprintf
@@ -6206,8 +6208,8 @@ lbl_801CCC8C:
 /* 801CCC8C 001C9A8C  57 C4 0F FE */	srwi r4, r30, 0x1f
 /* 801CCC90 001C9A90  57 C0 07 FE */	clrlwi r0, r30, 0x1f
 /* 801CCC94 001C9A94  7C 00 22 78 */	xor r0, r0, r4
-/* 801CCC98 001C9A98  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CCC9C 001C9A9C  38 C3 91 D8 */	addi r6, r3, $$2stringBase0_133@l
+/* 801CCC98 001C9A98  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CCC9C 001C9A9C  38 C3 91 D8 */	addi r6, r3, _esc__2_stringBase0_133@l
 /* 801CCCA0 001C9AA0  7F E3 FB 78 */	mr r3, r31
 /* 801CCCA4 001C9AA4  7C A4 00 50 */	subf r5, r4, r0
 /* 801CCCA8 001C9AA8  38 86 02 7D */	addi r4, r6, 0x27d
@@ -6221,8 +6223,8 @@ lbl_801CCCB8:
 /* 801CCCC4 001C9AC4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801CCCC8 001C9AC8  4E 80 00 20 */	blr 
 
-.global zUIIncrediblesIsBattleMode__28$$2unnamed$$2zUIIncredibles_cpp$$2FUi
-zUIIncrediblesIsBattleMode__28$$2unnamed$$2zUIIncredibles_cpp$$2FUi:
+.global zUIIncrediblesIsBattleMode__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FUi
+zUIIncrediblesIsBattleMode__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FUi:
 /* 801CCCCC 001C9ACC  54 63 00 1E */	rlwinm r3, r3, 0, 0, 0xf
 /* 801CCCD0 001C9AD0  3C 00 42 4D */	lis r0, 0x424d
 /* 801CCCD4 001C9AD4  7C 03 00 50 */	subf r0, r3, r0
@@ -6234,43 +6236,43 @@ zUIIncrediblesIsBattleMode__28$$2unnamed$$2zUIIncredibles_cpp$$2FUi:
 zUIIncrediblesInitINI__FP8xIniFile:
 /* 801CCCE4 001C9AE4  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 801CCCE8 001C9AE8  7C 08 02 A6 */	mflr r0
-/* 801CCCEC 001C9AEC  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CCCEC 001C9AEC  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CCCF0 001C9AF0  38 A0 00 00 */	li r5, 0
 /* 801CCCF4 001C9AF4  90 01 00 74 */	stw r0, 0x74(r1)
-/* 801CCCF8 001C9AF8  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
+/* 801CCCF8 001C9AF8  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
 /* 801CCCFC 001C9AFC  38 84 02 83 */	addi r4, r4, 0x283
 /* 801CCD00 001C9B00  BE 81 00 40 */	stmw r20, 0x40(r1)
 /* 801CCD04 001C9B04  7C 7F 1B 78 */	mr r31, r3
 /* 801CCD08 001C9B08  4B E7 2A 3D */	bl xIniGetInt__FP8xIniFilePCci
 /* 801CCD0C 001C9B0C  30 03 FF FF */	addic r0, r3, -1
-/* 801CCD10 001C9B10  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CCD10 001C9B10  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CCD14 001C9B14  7C 00 19 10 */	subfe r0, r0, r3
-/* 801CCD18 001C9B18  3C A0 80 3A */	lis r5, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801CCD1C 001C9B1C  38 84 91 D8 */	addi r4, r4, $$2stringBase0_133@l
-/* 801CCD20 001C9B20  98 0D D9 38 */	stb r0, sceneUnlockAll__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801CCD24 001C9B24  38 65 EF B0 */	addi r3, r5, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CCD18 001C9B18  3C A0 80 3A */	lis r5, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801CCD1C 001C9B1C  38 84 91 D8 */	addi r4, r4, _esc__2_stringBase0_133@l
+/* 801CCD20 001C9B20  98 0D D9 38 */	stb r0, sceneUnlockAll__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CCD24 001C9B24  38 65 EF B0 */	addi r3, r5, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CCD28 001C9B28  38 84 02 8D */	addi r4, r4, 0x28d
 /* 801CCD2C 001C9B2C  48 0E F7 C9 */	bl strcpy
 /* 801CCD30 001C9B30  80 AD D8 A8 */	lwz r5, APPLE_DEMO-_SDA_BASE_(r13)
-/* 801CCD34 001C9B34  3C C0 80 3A */	lis r6, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801CCD38 001C9B38  3B 66 EF B0 */	addi r27, r6, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CCD34 001C9B34  3C C0 80 3A */	lis r6, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801CCD38 001C9B38  3B 66 EF B0 */	addi r27, r6, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CCD3C 001C9B3C  38 E0 00 01 */	li r7, 1
 /* 801CCD40 001C9B40  30 05 FF FF */	addic r0, r5, -1
 /* 801CCD44 001C9B44  38 C0 00 00 */	li r6, 0
 /* 801CCD48 001C9B48  7C A0 29 10 */	subfe r5, r0, r5
 /* 801CCD4C 001C9B4C  3C 60 80 3A */	lis r3, allsoaklevels@ha
 /* 801CCD50 001C9B50  38 05 00 01 */	addi r0, r5, 1
-/* 801CCD54 001C9B54  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CCD54 001C9B54  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CCD58 001C9B58  90 FB 00 18 */	stw r7, 0x18(r27)
 /* 801CCD5C 001C9B5C  3B A1 00 08 */	addi r29, r1, 8
 /* 801CCD60 001C9B60  3B C3 F3 78 */	addi r30, r3, allsoaklevels@l
-/* 801CCD64 001C9B64  3B 84 91 D8 */	addi r28, r4, $$2stringBase0_133@l
+/* 801CCD64 001C9B64  3B 84 91 D8 */	addi r28, r4, _esc__2_stringBase0_133@l
 /* 801CCD68 001C9B68  98 DB 00 06 */	stb r6, 6(r27)
 /* 801CCD6C 001C9B6C  3A E0 00 01 */	li r23, 1
 /* 801CCD70 001C9B70  3A C0 00 04 */	li r22, 4
 /* 801CCD74 001C9B74  3A A0 00 1C */	li r21, 0x1c
 /* 801CCD78 001C9B78  98 DB 00 07 */	stb r6, 7(r27)
-/* 801CCD7C 001C9B7C  90 0D D8 D8 */	stw r0, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CCD7C 001C9B7C  90 0D D8 D8 */	stw r0, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801CCD80:
 /* 801CCD80 001C9B80  7E E5 BB 78 */	mr r5, r23
 /* 801CCD84 001C9B84  38 61 00 18 */	addi r3, r1, 0x18
@@ -6393,17 +6395,17 @@ lbl_801CCED4:
 /* 801CCF10 001C9D10  3A D6 00 04 */	addi r22, r22, 4
 /* 801CCF14 001C9D14  3A B5 00 1C */	addi r21, r21, 0x1c
 /* 801CCF18 001C9D18  93 43 FF FC */	stw r26, -4(r3)
-/* 801CCF1C 001C9D1C  90 0D D8 D8 */	stw r0, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CCF1C 001C9D1C  90 0D D8 D8 */	stw r0, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CCF20 001C9D20  4B FF FE 60 */	b lbl_801CCD80
 lbl_801CCF24:
-/* 801CCF24 001C9D24  80 0D D8 D8 */	lwz r0, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CCF24 001C9D24  80 0D D8 D8 */	lwz r0, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CCF28 001C9D28  3C 80 80 3A */	lis r4, allsoaklevels@ha
-/* 801CCF2C 001C9D2C  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
+/* 801CCF2C 001C9D2C  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
 /* 801CCF30 001C9D30  38 C0 00 00 */	li r6, 0
 /* 801CCF34 001C9D34  38 84 F3 78 */	addi r4, r4, allsoaklevels@l
 /* 801CCF38 001C9D38  54 00 10 3A */	slwi r0, r0, 2
 /* 801CCF3C 001C9D3C  7C 84 02 14 */	add r4, r4, r0
-/* 801CCF40 001C9D40  38 A3 91 D8 */	addi r5, r3, $$2stringBase0_133@l
+/* 801CCF40 001C9D40  38 A3 91 D8 */	addi r5, r3, _esc__2_stringBase0_133@l
 /* 801CCF44 001C9D44  90 C4 FF FC */	stw r6, -4(r4)
 /* 801CCF48 001C9D48  7F E3 FB 78 */	mr r3, r31
 /* 801CCF4C 001C9D4C  38 85 02 9C */	addi r4, r5, 0x29c
@@ -6412,9 +6414,9 @@ lbl_801CCF24:
 /* 801CCF58 001C9D58  7C 64 1B 78 */	mr r4, r3
 /* 801CCF5C 001C9D5C  38 6D D8 AC */	addi r3, r13, sceneBaseName-_SDA_BASE_
 /* 801CCF60 001C9D60  48 0E F5 95 */	bl strcpy
-/* 801CCF64 001C9D64  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CCF64 001C9D64  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CCF68 001C9D68  7F E3 FB 78 */	mr r3, r31
-/* 801CCF6C 001C9D6C  38 A4 91 D8 */	addi r5, r4, $$2stringBase0_133@l
+/* 801CCF6C 001C9D6C  38 A4 91 D8 */	addi r5, r4, _esc__2_stringBase0_133@l
 /* 801CCF70 001C9D70  38 85 02 AA */	addi r4, r5, 0x2aa
 /* 801CCF74 001C9D74  38 A5 00 0E */	addi r5, r5, 0xe
 /* 801CCF78 001C9D78  4B E7 28 89 */	bl xIniGetString__FP8xIniFilePCcPCc
@@ -6422,14 +6424,14 @@ lbl_801CCF24:
 /* 801CCF80 001C9D80  7C 64 1B 78 */	mr r4, r3
 /* 801CCF84 001C9D84  38 65 E4 60 */	addi r3, r5, sceneBaseDescription@l
 /* 801CCF88 001C9D88  48 0E F5 6D */	bl strcpy
-/* 801CCF8C 001C9D8C  3C 80 80 2F */	lis r4, $$2stringBase0_133@ha
+/* 801CCF8C 001C9D8C  3C 80 80 2F */	lis r4, _esc__2_stringBase0_133@ha
 /* 801CCF90 001C9D90  7F E3 FB 78 */	mr r3, r31
-/* 801CCF94 001C9D94  38 A4 91 D8 */	addi r5, r4, $$2stringBase0_133@l
+/* 801CCF94 001C9D94  38 A4 91 D8 */	addi r5, r4, _esc__2_stringBase0_133@l
 /* 801CCF98 001C9D98  38 85 02 BF */	addi r4, r5, 0x2bf
 /* 801CCF9C 001C9D9C  38 A5 00 0E */	addi r5, r5, 0xe
 /* 801CCFA0 001C9DA0  4B E7 28 61 */	bl xIniGetString__FP8xIniFilePCcPCc
 /* 801CCFA4 001C9DA4  7C 64 1B 78 */	mr r4, r3
-/* 801CCFA8 001C9DA8  38 6D D9 14 */	addi r3, r13, sceneBaseImage__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_
+/* 801CCFA8 001C9DA8  38 6D D9 14 */	addi r3, r13, sceneBaseImage__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_
 /* 801CCFAC 001C9DAC  48 0E F5 49 */	bl strcpy
 /* 801CCFB0 001C9DB0  BA 81 00 40 */	lmw r20, 0x40(r1)
 /* 801CCFB4 001C9DB4  80 01 00 74 */	lwz r0, 0x74(r1)
@@ -6441,10 +6443,10 @@ lbl_801CCF24:
 zUIIncrediblesStartup__Fv:
 /* 801CCFC4 001C9DC4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CCFC8 001C9DC8  7C 08 02 A6 */	mflr r0
-/* 801CCFCC 001C9DCC  3C 60 80 31 */	lis r3, newTags__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CCFCC 001C9DCC  3C 60 80 31 */	lis r3, newTags__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CCFD0 001C9DD0  38 80 00 07 */	li r4, 7
 /* 801CCFD4 001C9DD4  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801CCFD8 001C9DD8  38 63 6E 64 */	addi r3, r3, newTags__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CCFD8 001C9DD8  38 63 6E 64 */	addi r3, r3, newTags__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CCFDC 001C9DDC  4B E6 A2 99 */	bl register_tags__8xtextboxFPCQ28xtextbox8tag_typeUl
 /* 801CCFE0 001C9DE0  48 00 03 05 */	bl zUIIncrediblesResetGame__Fv
 /* 801CCFE4 001C9DE4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -6457,14 +6459,14 @@ zUIIncrediblesInit__Fv:
 /* 801CCFF4 001C9DF4  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 801CCFF8 001C9DF8  7C 08 02 A6 */	mflr r0
 /* 801CCFFC 001C9DFC  3C 60 80 38 */	lis r3, globals@ha
-/* 801CD000 001C9E00  3C A0 80 2F */	lis r5, $$2stringBase0_133@ha
+/* 801CD000 001C9E00  3C A0 80 2F */	lis r5, _esc__2_stringBase0_133@ha
 /* 801CD004 001C9E04  90 01 00 74 */	stw r0, 0x74(r1)
-/* 801CD008 001C9E08  3C 80 80 3A */	lis r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CD008 001C9E08  3C 80 80 3A */	lis r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CD00C 001C9E0C  BF 01 00 50 */	stmw r24, 0x50(r1)
 /* 801CD010 001C9E10  3B A3 2A 38 */	addi r29, r3, globals@l
 /* 801CD014 001C9E14  3C 60 80 3A */	lis r3, sceneBaseDescription@ha
-/* 801CD018 001C9E18  3B C5 91 D8 */	addi r30, r5, $$2stringBase0_133@l
-/* 801CD01C 001C9E1C  3B E4 EF B0 */	addi r31, r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD018 001C9E18  3B C5 91 D8 */	addi r30, r5, _esc__2_stringBase0_133@l
+/* 801CD01C 001C9E1C  3B E4 EF B0 */	addi r31, r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD020 001C9E20  3B 40 00 00 */	li r26, 0
 /* 801CD024 001C9E24  3B 03 E4 60 */	addi r24, r3, sceneBaseDescription@l
 /* 801CD028 001C9E28  3B 20 00 00 */	li r25, 0
@@ -6488,8 +6490,8 @@ lbl_801CD034:
 /* 801CD06C 001C9E6C  80 1C 00 08 */	lwz r0, 8(r28)
 /* 801CD070 001C9E70  28 00 00 00 */	cmplwi r0, 0
 /* 801CD074 001C9E74  40 82 00 14 */	bne lbl_801CD088
-/* 801CD078 001C9E78  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CD07C 001C9E7C  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CD078 001C9E78  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CD07C 001C9E7C  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CD080 001C9E80  38 03 00 0E */	addi r0, r3, 0xe
 /* 801CD084 001C9E84  90 04 00 00 */	stw r0, 0(r4)
 lbl_801CD088:
@@ -6511,8 +6513,8 @@ lbl_801CD088:
 /* 801CD0C4 001C9EC4  80 1C 00 0C */	lwz r0, 0xc(r28)
 /* 801CD0C8 001C9EC8  28 00 00 00 */	cmplwi r0, 0
 /* 801CD0CC 001C9ECC  40 82 00 14 */	bne lbl_801CD0E0
-/* 801CD0D0 001C9ED0  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
-/* 801CD0D4 001C9ED4  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CD0D0 001C9ED0  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
+/* 801CD0D4 001C9ED4  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CD0D8 001C9ED8  38 03 00 0E */	addi r0, r3, 0xe
 /* 801CD0DC 001C9EDC  90 04 00 00 */	stw r0, 0(r4)
 lbl_801CD0E0:
@@ -6521,7 +6523,7 @@ lbl_801CD0E0:
 /* 801CD0E8 001C9EE8  38 61 00 0C */	addi r3, r1, 0xc
 /* 801CD0EC 001C9EEC  38 9E 00 08 */	addi r4, r30, 8
 /* 801CD0F0 001C9EF0  B0 1C 00 12 */	sth r0, 0x12(r28)
-/* 801CD0F4 001C9EF4  38 AD D9 14 */	addi r5, r13, sceneBaseImage__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_
+/* 801CD0F4 001C9EF4  38 AD D9 14 */	addi r5, r13, sceneBaseImage__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_
 /* 801CD0F8 001C9EF8  4C C6 31 82 */	crclr 6
 /* 801CD0FC 001C9EFC  48 0E BB 8D */	bl sprintf
 /* 801CD100 001C9F00  38 61 00 0C */	addi r3, r1, 0xc
@@ -6530,14 +6532,14 @@ lbl_801CD0E0:
 /* 801CD10C 001C9F0C  3B 5A 00 01 */	addi r26, r26, 1
 /* 801CD110 001C9F10  3B 39 00 1C */	addi r25, r25, 0x1c
 lbl_801CD114:
-/* 801CD114 001C9F14  80 AD D8 D8 */	lwz r5, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD114 001C9F14  80 AD D8 D8 */	lwz r5, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD118 001C9F18  7C 1A 28 00 */	cmpw r26, r5
 /* 801CD11C 001C9F1C  41 80 FF 18 */	blt lbl_801CD034
 /* 801CD120 001C9F20  38 80 00 00 */	li r4, 0
-/* 801CD124 001C9F24  3C 60 80 3A */	lis r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CD124 001C9F24  3C 60 80 3A */	lis r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CD128 001C9F28  38 05 FF FF */	addi r0, r5, -1
-/* 801CD12C 001C9F2C  90 8D D9 34 */	stw r4, sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801CD130 001C9F30  39 23 EF B0 */	addi r9, r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD12C 001C9F2C  90 8D D9 34 */	stw r4, sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CD130 001C9F30  39 23 EF B0 */	addi r9, r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD134 001C9F34  80 7D 04 C8 */	lwz r3, 0x4c8(r29)
 /* 801CD138 001C9F38  39 40 00 01 */	li r10, 1
 /* 801CD13C 001C9F3C  38 80 00 1C */	li r4, 0x1c
@@ -6562,12 +6564,12 @@ lbl_801CD14C:
 /* 801CD184 001C9F84  7C E0 03 78 */	or r0, r7, r0
 /* 801CD188 001C9F88  7C 08 00 40 */	cmplw r8, r0
 /* 801CD18C 001C9F8C  40 82 00 20 */	bne lbl_801CD1AC
-/* 801CD190 001C9F90  80 0D D8 DC */	lwz r0, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD190 001C9F90  80 0D D8 DC */	lwz r0, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD194 001C9F94  7D 44 07 34 */	extsh r4, r10
-/* 801CD198 001C9F98  90 8D D9 34 */	stw r4, sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD198 001C9F98  90 8D D9 34 */	stw r4, sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD19C 001C9F9C  7C 0A 00 00 */	cmpw r10, r0
 /* 801CD1A0 001C9FA0  40 81 00 18 */	ble lbl_801CD1B8
-/* 801CD1A4 001C9FA4  91 4D D8 DC */	stw r10, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD1A4 001C9FA4  91 4D D8 DC */	stw r10, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD1A8 001C9FA8  48 00 00 10 */	b lbl_801CD1B8
 lbl_801CD1AC:
 /* 801CD1AC 001C9FAC  39 4A 00 01 */	addi r10, r10, 1
@@ -6581,9 +6583,9 @@ lbl_801CD1B8:
 /* 801CD1C8 001C9FC8  7C 85 20 50 */	subf r4, r5, r4
 /* 801CD1CC 001C9FCC  28 03 00 00 */	cmplwi r3, 0
 /* 801CD1D0 001C9FD0  7C 84 00 34 */	cntlzw r4, r4
-/* 801CD1D4 001C9FD4  90 0D D9 40 */	stw r0, sceneCheckPointHit__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD1D4 001C9FD4  90 0D D9 40 */	stw r0, sceneCheckPointHit__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD1D8 001C9FD8  54 80 D9 7E */	srwi r0, r4, 5
-/* 801CD1DC 001C9FDC  98 0D D9 0D */	stb r0, isBM01__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD1DC 001C9FDC  98 0D D9 0D */	stb r0, isBM01__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD1E0 001C9FE0  41 82 00 24 */	beq lbl_801CD204
 /* 801CD1E4 001C9FE4  80 63 04 E8 */	lwz r3, 0x4e8(r3)
 /* 801CD1E8 001C9FE8  28 03 00 00 */	cmplwi r3, 0
@@ -6591,12 +6593,12 @@ lbl_801CD1B8:
 /* 801CD1F0 001C9FF0  88 03 00 3C */	lbz r0, 0x3c(r3)
 /* 801CD1F4 001C9FF4  28 00 00 00 */	cmplwi r0, 0
 /* 801CD1F8 001C9FF8  41 82 00 0C */	beq lbl_801CD204
-/* 801CD1FC 001C9FFC  90 0D D9 3C */	stw r0, sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD1FC 001C9FFC  90 0D D9 3C */	stw r0, sceneCheckPointTotal__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD200 001CA000  48 00 00 D0 */	b lbl_801CD2D0
 lbl_801CD204:
 /* 801CD204 001CA004  38 00 00 00 */	li r0, 0
 /* 801CD208 001CA008  38 C0 00 00 */	li r6, 0
-/* 801CD20C 001CA00C  90 0D D9 3C */	stw r0, sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD20C 001CA00C  90 0D D9 3C */	stw r0, sceneCheckPointTotal__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD210 001CA010  38 60 00 00 */	li r3, 0
 /* 801CD214 001CA014  48 00 00 54 */	b lbl_801CD268
 lbl_801CD218:
@@ -6611,9 +6613,9 @@ lbl_801CD22C:
 /* 801CD234 001CA034  7C 05 02 2E */	lhzx r0, r5, r0
 /* 801CD238 001CA038  28 00 00 C2 */	cmplwi r0, 0xc2
 /* 801CD23C 001CA03C  40 82 00 10 */	bne lbl_801CD24C
-/* 801CD240 001CA040  80 AD D9 3C */	lwz r5, sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD240 001CA040  80 AD D9 3C */	lwz r5, sceneCheckPointTotal__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD244 001CA044  38 05 00 01 */	addi r0, r5, 1
-/* 801CD248 001CA048  90 0D D9 3C */	stw r0, sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD248 001CA048  90 0D D9 3C */	stw r0, sceneCheckPointTotal__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801CD24C:
 /* 801CD24C 001CA04C  39 08 00 01 */	addi r8, r8, 1
 /* 801CD250 001CA050  38 84 00 20 */	addi r4, r4, 0x20
@@ -6641,9 +6643,9 @@ lbl_801CD294:
 /* 801CD298 001CA098  38 E7 00 20 */	addi r7, r7, 0x20
 /* 801CD29C 001CA09C  28 00 00 C2 */	cmplwi r0, 0xc2
 /* 801CD2A0 001CA0A0  40 82 00 10 */	bne lbl_801CD2B0
-/* 801CD2A4 001CA0A4  80 6D D9 3C */	lwz r3, sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD2A4 001CA0A4  80 6D D9 3C */	lwz r3, sceneCheckPointTotal__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD2A8 001CA0A8  38 03 00 01 */	addi r0, r3, 1
-/* 801CD2AC 001CA0AC  90 0D D9 3C */	stw r0, sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD2AC 001CA0AC  90 0D D9 3C */	stw r0, sceneCheckPointTotal__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801CD2B0:
 /* 801CD2B0 001CA0B0  39 08 00 01 */	addi r8, r8, 1
 lbl_801CD2B4:
@@ -6664,13 +6666,13 @@ lbl_801CD2D0:
 
 .global zUIIncrediblesResetGame__Fv
 zUIIncrediblesResetGame__Fv:
-/* 801CD2E4 001CA0E4  81 0D D8 D8 */	lwz r8, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD2E4 001CA0E4  81 0D D8 D8 */	lwz r8, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD2E8 001CA0E8  38 A0 00 00 */	li r5, 0
-/* 801CD2EC 001CA0EC  3C 60 80 3A */	lis r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801CD2F0 001CA0F0  98 AD D8 E0 */	stb r5, unlockCheatOn__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD2EC 001CA0EC  3C 60 80 3A */	lis r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801CD2F0 001CA0F0  98 AD D8 E0 */	stb r5, unlockCheatOn__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD2F4 001CA0F4  38 08 FF FF */	addi r0, r8, -1
-/* 801CD2F8 001CA0F8  88 ED D9 38 */	lbz r7, sceneUnlockAll__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801CD2FC 001CA0FC  38 83 EF B0 */	addi r4, r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD2F8 001CA0F8  88 ED D9 38 */	lbz r7, sceneUnlockAll__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CD2FC 001CA0FC  38 83 EF B0 */	addi r4, r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD300 001CA100  38 60 00 1C */	li r3, 0x1c
 /* 801CD304 001CA104  7C 09 03 A6 */	mtctr r0
 /* 801CD308 001CA108  2C 08 00 01 */	cmpwi r8, 1
@@ -6686,16 +6688,16 @@ lbl_801CD310:
 lbl_801CD32C:
 /* 801CD32C 001CA12C  38 80 00 00 */	li r4, 0
 /* 801CD330 001CA130  38 00 00 28 */	li r0, 0x28
-/* 801CD334 001CA134  38 6D D8 E4 */	addi r3, r13, unlockedMovies__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_
-/* 801CD338 001CA138  98 8D D9 0C */	stb r4, battleModeBonusCount__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD334 001CA134  38 6D D8 E4 */	addi r3, r13, unlockedMovies__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_
+/* 801CD338 001CA138  98 8D D9 0C */	stb r4, battleModeBonusCount__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD33C 001CA13C  7C 09 03 A6 */	mtctr r0
 lbl_801CD340:
 /* 801CD340 001CA140  98 E3 00 00 */	stb r7, 0(r3)
 /* 801CD344 001CA144  38 63 00 01 */	addi r3, r3, 1
 /* 801CD348 001CA148  42 00 FF F8 */	bdnz lbl_801CD340
-/* 801CD34C 001CA14C  3C 60 80 3A */	lis r3, unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CD34C 001CA14C  3C 60 80 3A */	lis r3, unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CD350 001CA150  38 00 00 46 */	li r0, 0x46
-/* 801CD354 001CA154  38 63 F3 30 */	addi r3, r3, unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD354 001CA154  38 63 F3 30 */	addi r3, r3, unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD358 001CA158  7C 09 03 A6 */	mtctr r0
 lbl_801CD35C:
 /* 801CD35C 001CA15C  98 E3 00 00 */	stb r7, 0(r3)
@@ -6706,20 +6708,20 @@ lbl_801CD35C:
 /* 801CD370 001CA170  41 82 00 08 */	beq lbl_801CD378
 /* 801CD374 001CA174  7D 00 43 78 */	mr r0, r8
 lbl_801CD378:
-/* 801CD378 001CA178  90 0D D8 DC */	stw r0, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD378 001CA178  90 0D D8 DC */	stw r0, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD37C 001CA17C  4E 80 00 20 */	blr 
 
 .global zUIIncrediblesSceneSetup__Fv
 zUIIncrediblesSceneSetup__Fv:
 /* 801CD380 001CA180  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CD384 001CA184  7C 08 02 A6 */	mflr r0
-/* 801CD388 001CA188  3C 60 80 2F */	lis r3, $$2stringBase0_133@ha
+/* 801CD388 001CA188  3C 60 80 2F */	lis r3, _esc__2_stringBase0_133@ha
 /* 801CD38C 001CA18C  38 80 00 00 */	li r4, 0
-/* 801CD390 001CA190  38 63 91 D8 */	addi r3, r3, $$2stringBase0_133@l
+/* 801CD390 001CA190  38 63 91 D8 */	addi r3, r3, _esc__2_stringBase0_133@l
 /* 801CD394 001CA194  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CD398 001CA198  38 63 02 CE */	addi r3, r3, 0x2ce
 /* 801CD39C 001CA19C  4B EA 0E 91 */	bl xTextFindString__FPCcPUi
-/* 801CD3A0 001CA1A0  90 6D D8 D4 */	stw r3, SCENE_STATUS_BONUS__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD3A0 001CA1A0  90 6D D8 D4 */	stw r3, SCENE_STATUS_BONUS__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD3A4 001CA1A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801CD3A8 001CA1A8  7C 08 03 A6 */	mtlr r0
 /* 801CD3AC 001CA1AC  38 21 00 10 */	addi r1, r1, 0x10
@@ -6727,12 +6729,12 @@ zUIIncrediblesSceneSetup__Fv:
 
 .global zUIIncrediblesGetTotalCheckpoints__Fv
 zUIIncrediblesGetTotalCheckpoints__Fv:
-/* 801CD3B4 001CA1B4  80 6D D9 3C */	lwz r3, sceneCheckPointTotal__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD3B4 001CA1B4  80 6D D9 3C */	lwz r3, sceneCheckPointTotal__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD3B8 001CA1B8  4E 80 00 20 */	blr 
 
 .global zUIIncrediblesGetHitCheckpoints__Fv
 zUIIncrediblesGetHitCheckpoints__Fv:
-/* 801CD3BC 001CA1BC  80 6D D9 40 */	lwz r3, sceneCheckPointHit__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD3BC 001CA1BC  80 6D D9 40 */	lwz r3, sceneCheckPointHit__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD3C0 001CA1C0  4E 80 00 20 */	blr 
 
 .global zUIIncrediblesWarp__FP9_xCounter
@@ -6741,8 +6743,8 @@ zUIIncrediblesWarp__FP9_xCounter:
 /* 801CD3C8 001CA1C8  7C 08 02 A6 */	mflr r0
 /* 801CD3CC 001CA1CC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CD3D0 001CA1D0  A8 03 00 14 */	lha r0, 0x14(r3)
-/* 801CD3D4 001CA1D4  3C 60 80 3A */	lis r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801CD3D8 001CA1D8  38 63 EF B0 */	addi r3, r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD3D4 001CA1D4  3C 60 80 3A */	lis r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801CD3D8 001CA1D8  38 63 EF B0 */	addi r3, r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD3DC 001CA1DC  1C 00 00 1C */	mulli r0, r0, 0x1c
 /* 801CD3E0 001CA1E0  7C A3 02 14 */	add r5, r3, r0
 /* 801CD3E4 001CA1E4  7C 63 00 AE */	lbzx r3, r3, r0
@@ -6770,8 +6772,8 @@ zUIIncrediblesWarpDirect__FUi:
 /* 801CD430 001CA230  7C 08 02 A6 */	mflr r0
 /* 801CD434 001CA234  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801CD438 001CA238  1C 03 00 1C */	mulli r0, r3, 0x1c
-/* 801CD43C 001CA23C  3C 60 80 3A */	lis r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801CD440 001CA240  38 63 EF B0 */	addi r3, r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD43C 001CA23C  3C 60 80 3A */	lis r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801CD440 001CA240  38 63 EF B0 */	addi r3, r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD444 001CA244  7C A3 02 14 */	add r5, r3, r0
 /* 801CD448 001CA248  7C 63 00 AE */	lbzx r3, r3, r0
 /* 801CD44C 001CA24C  88 05 00 01 */	lbz r0, 1(r5)
@@ -6800,13 +6802,13 @@ zUIIncrediblesWarp__FUi:
 /* 801CD49C 001CA29C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801CD4A0 001CA2A0  7C 7F 1B 78 */	mr r31, r3
 /* 801CD4A4 001CA2A4  48 00 78 71 */	bl UnSetShowStats__14zLoadingScreenFv
-/* 801CD4A8 001CA2A8  38 6D D9 88 */	addi r3, r13, portalAsset$3002-_SDA_BASE_
+/* 801CD4A8 001CA2A8  38 6D D9 88 */	addi r3, r13, portalAsset_esc__7_3002-_SDA_BASE_
 /* 801CD4AC 001CA2AC  38 80 00 00 */	li r4, 0
 /* 801CD4B0 001CA2B0  38 A0 00 18 */	li r5, 0x18
 /* 801CD4B4 001CA2B4  4B E3 5C 4D */	bl memset
 /* 801CD4B8 001CA2B8  3C 80 BC 45 */	lis r4, 0xBC44C2B2@ha
 /* 801CD4BC 001CA2BC  3C 60 D0 3C */	lis r3, 0xD03C41C6@ha
-/* 801CD4C0 001CA2C0  38 AD D9 88 */	addi r5, r13, portalAsset$3002-_SDA_BASE_
+/* 801CD4C0 001CA2C0  38 AD D9 88 */	addi r5, r13, portalAsset_esc__7_3002-_SDA_BASE_
 /* 801CD4C4 001CA2C4  38 C0 00 10 */	li r6, 0x10
 /* 801CD4C8 001CA2C8  38 84 C2 B2 */	addi r4, r4, 0xBC44C2B2@l
 /* 801CD4CC 001CA2CC  38 03 41 C6 */	addi r0, r3, 0xD03C41C6@l
@@ -6817,10 +6819,10 @@ zUIIncrediblesWarp__FUi:
 /* 801CD4E0 001CA2E0  4B F3 03 71 */	bl zMusicKill__Fv
 /* 801CD4E4 001CA2E4  4B EA 13 7D */	bl Get__15xTextureManagerFv
 /* 801CD4E8 001CA2E8  4B EA 19 B9 */	bl FreeMemory__15xTextureManagerFv
-/* 801CD4EC 001CA2EC  38 6D D9 74 */	addi r3, r13, portal$3001-_SDA_BASE_
-/* 801CD4F0 001CA2F0  38 8D D9 88 */	addi r4, r13, portalAsset$3002-_SDA_BASE_
+/* 801CD4EC 001CA2EC  38 6D D9 74 */	addi r3, r13, portal_esc__7_3001-_SDA_BASE_
+/* 801CD4F0 001CA2F0  38 8D D9 88 */	addi r4, r13, portalAsset_esc__7_3002-_SDA_BASE_
 /* 801CD4F4 001CA2F4  4B F8 32 85 */	bl zPortalInit__FP8_zPortalP12xPortalAsset
-/* 801CD4F8 001CA2F8  38 6D D9 74 */	addi r3, r13, portal$3001-_SDA_BASE_
+/* 801CD4F8 001CA2F8  38 6D D9 74 */	addi r3, r13, portal_esc__7_3001-_SDA_BASE_
 /* 801CD4FC 001CA2FC  38 80 00 01 */	li r4, 1
 /* 801CD500 001CA300  4B F8 A5 0D */	bl zSceneSwitch__FP8_zPortali
 /* 801CD504 001CA304  80 0D CB 00 */	lwz r0, SCENE_ID_MNU_START-_SDA_BASE_(r13)
@@ -6857,9 +6859,9 @@ lbl_801CD55C:
 
 .global zUIIncrediblesHitCheckPoint__Fv
 zUIIncrediblesHitCheckPoint__Fv:
-/* 801CD570 001CA370  80 6D D9 40 */	lwz r3, sceneCheckPointHit__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD570 001CA370  80 6D D9 40 */	lwz r3, sceneCheckPointHit__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD574 001CA374  38 03 00 01 */	addi r0, r3, 1
-/* 801CD578 001CA378  90 0D D9 40 */	stw r0, sceneCheckPointHit__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD578 001CA378  90 0D D9 40 */	stw r0, sceneCheckPointHit__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD57C 001CA37C  4E 80 00 20 */	blr 
 
 .global zUIIncrediblesPlayedMovie__Fi
@@ -6869,7 +6871,7 @@ zUIIncrediblesPlayedMovie__Fi:
 /* 801CD588 001CA388  2C 03 00 28 */	cmpwi r3, 0x28
 /* 801CD58C 001CA38C  4C 80 00 20 */	bgelr 
 /* 801CD590 001CA390  38 00 00 01 */	li r0, 1
-/* 801CD594 001CA394  38 8D D8 E4 */	addi r4, r13, unlockedMovies__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_
+/* 801CD594 001CA394  38 8D D8 E4 */	addi r4, r13, unlockedMovies__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_
 /* 801CD598 001CA398  7C 04 19 AE */	stbx r0, r4, r3
 /* 801CD59C 001CA39C  4E 80 00 20 */	blr 
 
@@ -6877,23 +6879,23 @@ zUIIncrediblesPlayedMovie__Fi:
 zUIIncrediblesOpenBonus__Fi:
 /* 801CD5A0 001CA3A0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801CD5A4 001CA3A4  7C 08 02 A6 */	mflr r0
-/* 801CD5A8 001CA3A8  3C 80 80 3A */	lis r4, unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CD5A8 001CA3A8  3C 80 80 3A */	lis r4, unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CD5AC 001CA3AC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801CD5B0 001CA3B0  38 C4 F3 30 */	addi r6, r4, unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD5B0 001CA3B0  38 C4 F3 30 */	addi r6, r4, unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD5B4 001CA3B4  7C 06 18 AE */	lbzx r0, r6, r3
 /* 801CD5B8 001CA3B8  28 00 00 00 */	cmplwi r0, 0
 /* 801CD5BC 001CA3BC  40 82 00 40 */	bne lbl_801CD5FC
-/* 801CD5C0 001CA3C0  88 0D D9 0D */	lbz r0, isBM01__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD5C0 001CA3C0  88 0D D9 0D */	lbz r0, isBM01__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD5C4 001CA3C4  28 00 00 00 */	cmplwi r0, 0
 /* 801CD5C8 001CA3C8  41 82 00 14 */	beq lbl_801CD5DC
-/* 801CD5CC 001CA3CC  88 8D D9 0C */	lbz r4, battleModeBonusCount__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD5CC 001CA3CC  88 8D D9 0C */	lbz r4, battleModeBonusCount__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD5D0 001CA3D0  38 04 00 01 */	addi r0, r4, 1
-/* 801CD5D4 001CA3D4  98 0D D9 0C */	stb r0, battleModeBonusCount__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD5D4 001CA3D4  98 0D D9 0C */	stb r0, battleModeBonusCount__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD5D8 001CA3D8  48 00 00 24 */	b lbl_801CD5FC
 lbl_801CD5DC:
-/* 801CD5DC 001CA3DC  80 0D D9 34 */	lwz r0, sceneCurrent__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801CD5E0 001CA3E0  3C 80 80 3A */	lis r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801CD5E4 001CA3E4  38 84 EF B0 */	addi r4, r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD5DC 001CA3DC  80 0D D9 34 */	lwz r0, sceneCurrent__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CD5E0 001CA3E0  3C 80 80 3A */	lis r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801CD5E4 001CA3E4  38 84 EF B0 */	addi r4, r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD5E8 001CA3E8  1C 00 00 1C */	mulli r0, r0, 0x1c
 /* 801CD5EC 001CA3EC  7C A4 02 14 */	add r5, r4, r0
 /* 801CD5F0 001CA3F0  88 85 00 05 */	lbz r4, 5(r5)
@@ -6905,7 +6907,7 @@ lbl_801CD5FC:
 /* 801CD604 001CA404  7C 06 19 AE */	stbx r0, r6, r3
 /* 801CD608 001CA408  41 80 00 18 */	blt lbl_801CD620
 /* 801CD60C 001CA40C  38 03 FF BD */	addi r0, r3, -67
-/* 801CD610 001CA410  38 6D A8 A8 */	addi r3, r13, BONUS_FMV_LIST__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_
+/* 801CD610 001CA410  38 6D A8 A8 */	addi r3, r13, BONUS_FMV_LIST__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_
 /* 801CD614 001CA414  54 00 10 3A */	slwi r0, r0, 2
 /* 801CD618 001CA418  7C 63 00 2E */	lwzx r3, r3, r0
 /* 801CD61C 001CA41C  4B FF FF 65 */	bl zUIIncrediblesPlayedMovie__Fi
@@ -6919,11 +6921,11 @@ lbl_801CD620:
 zUIIncrediblesSave__FP7xSerial:
 /* 801CD630 001CA430  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801CD634 001CA434  7C 08 02 A6 */	mflr r0
-/* 801CD638 001CA438  3C 80 80 3A */	lis r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CD638 001CA438  3C 80 80 3A */	lis r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CD63C 001CA43C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801CD640 001CA440  BF 61 00 1C */	stmw r27, 0x1c(r1)
 /* 801CD644 001CA444  7C 7F 1B 78 */	mr r31, r3
-/* 801CD648 001CA448  3B A4 EF B0 */	addi r29, r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD648 001CA448  3B A4 EF B0 */	addi r29, r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD64C 001CA44C  3B 60 00 01 */	li r27, 1
 /* 801CD650 001CA450  3B C0 00 1C */	li r30, 0x1c
 /* 801CD654 001CA454  48 00 00 28 */	b lbl_801CD67C
@@ -6938,14 +6940,14 @@ lbl_801CD658:
 /* 801CD674 001CA474  3B 7B 00 01 */	addi r27, r27, 1
 /* 801CD678 001CA478  3B DE 00 1C */	addi r30, r30, 0x1c
 lbl_801CD67C:
-/* 801CD67C 001CA47C  80 0D D8 D8 */	lwz r0, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD67C 001CA47C  80 0D D8 D8 */	lwz r0, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD680 001CA480  7C 1B 00 00 */	cmpw r27, r0
 /* 801CD684 001CA484  41 80 FF D4 */	blt lbl_801CD658
-/* 801CD688 001CA488  88 8D D9 0C */	lbz r4, battleModeBonusCount__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD688 001CA488  88 8D D9 0C */	lbz r4, battleModeBonusCount__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD68C 001CA48C  7F E3 FB 78 */	mr r3, r31
 /* 801CD690 001CA490  4B E9 20 E1 */	bl Write__7xSerialFUc
 /* 801CD694 001CA494  3B 60 00 00 */	li r27, 0
-/* 801CD698 001CA498  3B CD D8 E4 */	addi r30, r13, unlockedMovies__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_
+/* 801CD698 001CA498  3B CD D8 E4 */	addi r30, r13, unlockedMovies__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_
 lbl_801CD69C:
 /* 801CD69C 001CA49C  88 9E 00 00 */	lbz r4, 0(r30)
 /* 801CD6A0 001CA4A0  7F E3 FB 78 */	mr r3, r31
@@ -6965,9 +6967,9 @@ lbl_801CD6D4:
 /* 801CD6D4 001CA4D4  7C A4 19 2E */	stwx r5, r4, r3
 /* 801CD6D8 001CA4D8  38 63 00 04 */	addi r3, r3, 4
 /* 801CD6DC 001CA4DC  42 00 FF F8 */	bdnz lbl_801CD6D4
-/* 801CD6E0 001CA4E0  3C 60 80 3A */	lis r3, unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CD6E0 001CA4E0  3C 60 80 3A */	lis r3, unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CD6E4 001CA4E4  38 00 00 46 */	li r0, 0x46
-/* 801CD6E8 001CA4E8  38 63 F3 30 */	addi r3, r3, unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD6E8 001CA4E8  38 63 F3 30 */	addi r3, r3, unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD6EC 001CA4EC  38 C1 00 08 */	addi r6, r1, 8
 /* 801CD6F0 001CA4F0  39 00 00 00 */	li r8, 0
 /* 801CD6F4 001CA4F4  38 80 00 01 */	li r4, 1
@@ -7049,16 +7051,16 @@ zUIIncrediblesLoad__FP7xSerial:
 /* 801CD7F4 001CA5F4  7C 7F 1B 78 */	mr r31, r3
 /* 801CD7F8 001CA5F8  80 7D 04 C8 */	lwz r3, 0x4c8(r29)
 /* 801CD7FC 001CA5FC  80 63 00 00 */	lwz r3, 0(r3)
-/* 801CD800 001CA600  4B FF F4 CD */	bl zUIIncrediblesIsBattleMode__28$$2unnamed$$2zUIIncredibles_cpp$$2FUi
+/* 801CD800 001CA600  4B FF F4 CD */	bl zUIIncrediblesIsBattleMode__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FUi
 /* 801CD804 001CA604  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801CD808 001CA608  40 82 00 10 */	bne lbl_801CD818
 /* 801CD80C 001CA60C  80 7D 04 C8 */	lwz r3, 0x4c8(r29)
 /* 801CD810 001CA610  80 03 00 00 */	lwz r0, 0(r3)
-/* 801CD814 001CA614  90 0D D9 10 */	stw r0, stageBeforeBattleMode__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD814 001CA614  90 0D D9 10 */	stw r0, stageBeforeBattleMode__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801CD818:
-/* 801CD818 001CA618  3C 60 80 3A */	lis r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CD818 001CA618  3C 60 80 3A */	lis r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CD81C 001CA61C  3B 60 00 01 */	li r27, 1
-/* 801CD820 001CA620  3B A3 EF B0 */	addi r29, r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD820 001CA620  3B A3 EF B0 */	addi r29, r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD824 001CA624  3B C0 00 1C */	li r30, 0x1c
 /* 801CD828 001CA628  48 00 00 28 */	b lbl_801CD850
 lbl_801CD82C:
@@ -7072,14 +7074,14 @@ lbl_801CD82C:
 /* 801CD848 001CA648  3B 7B 00 01 */	addi r27, r27, 1
 /* 801CD84C 001CA64C  3B DE 00 1C */	addi r30, r30, 0x1c
 lbl_801CD850:
-/* 801CD850 001CA650  80 0D D8 D8 */	lwz r0, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD850 001CA650  80 0D D8 D8 */	lwz r0, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD854 001CA654  7C 1B 00 00 */	cmpw r27, r0
 /* 801CD858 001CA658  41 80 FF D4 */	blt lbl_801CD82C
 /* 801CD85C 001CA65C  7F E3 FB 78 */	mr r3, r31
-/* 801CD860 001CA660  38 8D D9 0C */	addi r4, r13, battleModeBonusCount__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_
+/* 801CD860 001CA660  38 8D D9 0C */	addi r4, r13, battleModeBonusCount__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_
 /* 801CD864 001CA664  4B E9 21 75 */	bl Read__7xSerialFPUc
 /* 801CD868 001CA668  3B 60 00 00 */	li r27, 0
-/* 801CD86C 001CA66C  3B CD D8 E4 */	addi r30, r13, unlockedMovies__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_
+/* 801CD86C 001CA66C  3B CD D8 E4 */	addi r30, r13, unlockedMovies__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_
 lbl_801CD870:
 /* 801CD870 001CA670  7F E3 FB 78 */	mr r3, r31
 /* 801CD874 001CA674  38 81 00 08 */	addi r4, r1, 8
@@ -7103,9 +7105,9 @@ lbl_801CD8A4:
 /* 801CD8B8 001CA6B8  3B DE 00 04 */	addi r30, r30, 4
 /* 801CD8BC 001CA6BC  28 1B 00 03 */	cmplwi r27, 3
 /* 801CD8C0 001CA6C0  41 80 FF E4 */	blt lbl_801CD8A4
-/* 801CD8C4 001CA6C4  3C 60 80 3A */	lis r3, unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CD8C4 001CA6C4  3C 60 80 3A */	lis r3, unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CD8C8 001CA6C8  38 00 00 46 */	li r0, 0x46
-/* 801CD8CC 001CA6CC  38 63 F3 30 */	addi r3, r3, unlockedBonus__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CD8CC 001CA6CC  38 63 F3 30 */	addi r3, r3, unlockedBonus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CD8D0 001CA6D0  38 A1 00 14 */	addi r5, r1, 0x14
 /* 801CD8D4 001CA6D4  38 E0 00 00 */	li r7, 0
 /* 801CD8D8 001CA6D8  38 C0 00 01 */	li r6, 1
@@ -7179,10 +7181,10 @@ lbl_801CD8E0:
 .global zUIIncrediblesSetLatestSceneFromSave__Fv
 zUIIncrediblesSetLatestSceneFromSave__Fv:
 /* 801CD9E0 001CA7E0  38 00 00 01 */	li r0, 1
-/* 801CD9E4 001CA7E4  3C 60 80 3A */	lis r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801CD9E8 001CA7E8  90 0D D8 DC */	stw r0, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801CD9EC 001CA7EC  38 83 EF B0 */	addi r4, r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
-/* 801CD9F0 001CA7F0  80 AD D8 D8 */	lwz r5, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CD9E4 001CA7E4  3C 60 80 3A */	lis r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801CD9E8 001CA7E8  90 0D D8 DC */	stw r0, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CD9EC 001CA7EC  38 83 EF B0 */	addi r4, r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
+/* 801CD9F0 001CA7F0  80 AD D8 D8 */	lwz r5, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CD9F4 001CA7F4  48 00 00 24 */	b lbl_801CDA18
 lbl_801CD9F8:
 /* 801CD9F8 001CA7F8  1C 00 00 1C */	mulli r0, r0, 0x1c
@@ -7190,11 +7192,11 @@ lbl_801CD9F8:
 /* 801CDA00 001CA800  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 801CDA04 001CA804  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 801CDA08 001CA808  4D 82 00 20 */	beqlr 
-/* 801CDA0C 001CA80C  80 6D D8 DC */	lwz r3, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CDA0C 001CA80C  80 6D D8 DC */	lwz r3, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CDA10 001CA810  38 03 00 01 */	addi r0, r3, 1
-/* 801CDA14 001CA814  90 0D D8 DC */	stw r0, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CDA14 001CA814  90 0D D8 DC */	stw r0, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801CDA18:
-/* 801CDA18 001CA818  80 0D D8 DC */	lwz r0, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CDA18 001CA818  80 0D D8 DC */	lwz r0, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CDA1C 001CA81C  7C 00 28 00 */	cmpw r0, r5
 /* 801CDA20 001CA820  41 80 FF D8 */	blt lbl_801CD9F8
 /* 801CDA24 001CA824  4E 80 00 20 */	blr 
@@ -7204,15 +7206,15 @@ zUIIncrediblesGetGameProgress__Fv:
 /* 801CDA28 001CA828  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801CDA2C 001CA82C  7C 08 02 A6 */	mflr r0
 /* 801CDA30 001CA830  3C 80 43 30 */	lis r4, 0x4330
-/* 801CDA34 001CA834  C8 62 CE 88 */	lfd f3, $$21658_1-_SDA2_BASE_(r2)
+/* 801CDA34 001CA834  C8 62 CE 88 */	lfd f3, _esc__2_1658_1-_SDA2_BASE_(r2)
 /* 801CDA38 001CA838  90 01 00 24 */	stw r0, 0x24(r1)
-/* 801CDA3C 001CA83C  C0 82 CF 3C */	lfs f4, $$23146-_SDA2_BASE_(r2)
-/* 801CDA40 001CA840  80 AD D8 DC */	lwz r5, latestScene__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
-/* 801CDA44 001CA844  80 6D D8 D8 */	lwz r3, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CDA3C 001CA83C  C0 82 CF 3C */	lfs f4, _esc__2_3146-_SDA2_BASE_(r2)
+/* 801CDA40 001CA840  80 AD D8 DC */	lwz r5, latestScene__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801CDA44 001CA844  80 6D D8 D8 */	lwz r3, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CDA48 001CA848  38 A5 FF FF */	addi r5, r5, -1
 /* 801CDA4C 001CA84C  90 81 00 08 */	stw r4, 8(r1)
 /* 801CDA50 001CA850  38 03 FF FF */	addi r0, r3, -1
-/* 801CDA54 001CA854  C0 02 CE 94 */	lfs f0, $$21732_1-_SDA2_BASE_(r2)
+/* 801CDA54 001CA854  C0 02 CE 94 */	lfs f0, _esc__2_1732_1-_SDA2_BASE_(r2)
 /* 801CDA58 001CA858  6C A3 80 00 */	xoris r3, r5, 0x8000
 /* 801CDA5C 001CA85C  90 81 00 10 */	stw r4, 0x10(r1)
 /* 801CDA60 001CA860  6C 00 80 00 */	xoris r0, r0, 0x8000
@@ -7234,11 +7236,11 @@ zUIIncrediblesGetGameProgress__Fv:
 zUIIncrediblesSceneIsCompleted__FPCc:
 /* 801CDA98 001CA898  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801CDA9C 001CA89C  7C 08 02 A6 */	mflr r0
-/* 801CDAA0 001CA8A0  3C 80 80 3A */	lis r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
+/* 801CDAA0 001CA8A0  3C 80 80 3A */	lis r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
 /* 801CDAA4 001CA8A4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801CDAA8 001CA8A8  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 801CDAAC 001CA8AC  7C 7C 1B 78 */	mr r28, r3
-/* 801CDAB0 001CA8B0  3B C4 EF B0 */	addi r30, r4, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CDAB0 001CA8B0  3B C4 EF B0 */	addi r30, r4, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CDAB4 001CA8B4  3B A0 00 01 */	li r29, 1
 /* 801CDAB8 001CA8B8  3B E0 00 1C */	li r31, 0x1c
 /* 801CDABC 001CA8BC  48 00 00 38 */	b lbl_801CDAF4
@@ -7248,8 +7250,8 @@ lbl_801CDAC0:
 /* 801CDAC8 001CA8C8  48 0E E8 49 */	bl strcmp
 /* 801CDACC 001CA8CC  2C 03 00 00 */	cmpwi r3, 0
 /* 801CDAD0 001CA8D0  40 82 00 1C */	bne lbl_801CDAEC
-/* 801CDAD4 001CA8D4  3C 60 80 3A */	lis r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@ha
-/* 801CDAD8 001CA8D8  38 03 EF B0 */	addi r0, r3, scenes__28$$2unnamed$$2zUIIncredibles_cpp$$2@l
+/* 801CDAD4 001CA8D4  3C 60 80 3A */	lis r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@ha
+/* 801CDAD8 001CA8D8  38 03 EF B0 */	addi r0, r3, scenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_@l
 /* 801CDADC 001CA8DC  7C 60 FA 14 */	add r3, r0, r31
 /* 801CDAE0 001CA8E0  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 801CDAE4 001CA8E4  54 03 07 FE */	clrlwi r3, r0, 0x1f
@@ -7258,7 +7260,7 @@ lbl_801CDAEC:
 /* 801CDAEC 001CA8EC  3B BD 00 01 */	addi r29, r29, 1
 /* 801CDAF0 001CA8F0  3B FF 00 1C */	addi r31, r31, 0x1c
 lbl_801CDAF4:
-/* 801CDAF4 001CA8F4  80 0D D8 D8 */	lwz r0, numScenes__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CDAF4 001CA8F4  80 0D D8 D8 */	lwz r0, numScenes__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CDAF8 001CA8F8  7C 1D 00 00 */	cmpw r29, r0
 /* 801CDAFC 001CA8FC  41 80 FF C4 */	blt lbl_801CDAC0
 /* 801CDB00 001CA900  38 60 00 00 */	li r3, 0
@@ -7279,10 +7281,10 @@ zUIIncrediblesGetAutoSaveStage__Fv:
 /* 801CDB2C 001CA92C  3B E3 2A 38 */	addi r31, r3, globals@l
 /* 801CDB30 001CA930  80 7F 04 C8 */	lwz r3, 0x4c8(r31)
 /* 801CDB34 001CA934  80 63 00 00 */	lwz r3, 0(r3)
-/* 801CDB38 001CA938  4B FF F1 95 */	bl zUIIncrediblesIsBattleMode__28$$2unnamed$$2zUIIncredibles_cpp$$2FUi
+/* 801CDB38 001CA938  4B FF F1 95 */	bl zUIIncrediblesIsBattleMode__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FUi
 /* 801CDB3C 001CA93C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801CDB40 001CA940  41 82 00 0C */	beq lbl_801CDB4C
-/* 801CDB44 001CA944  80 6D D9 10 */	lwz r3, stageBeforeBattleMode__28$$2unnamed$$2zUIIncredibles_cpp$$2-_SDA_BASE_(r13)
+/* 801CDB44 001CA944  80 6D D9 10 */	lwz r3, stageBeforeBattleMode__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801CDB48 001CA948  48 00 00 24 */	b lbl_801CDB6C
 lbl_801CDB4C:
 /* 801CDB4C 001CA94C  80 9F 04 C8 */	lwz r4, 0x4c8(r31)
@@ -7318,3 +7320,6 @@ SCENEIDSTR__FUiPc:
 GetTexture__8zUIImageCFv:
 /* 801CDBA8 001CA9A8  38 63 00 84 */	addi r3, r3, 0x84
 /* 801CDBAC 001CA9AC  4E 80 00 20 */	blr 
+
+.endif
+

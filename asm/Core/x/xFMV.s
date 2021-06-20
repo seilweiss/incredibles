@@ -11,9 +11,11 @@ sxFMVPauseSoundCB:
 
 .section .sdata2
 
-.global $$2762_0
-$$2762_0:
+.global _esc__2_762_0
+_esc__2_762_0:
 	.incbin "baserom.dol", 0x32EB80, 0x8
+
+.if 0
 
 .section .text
 
@@ -78,7 +80,7 @@ xFMVGetBinkCompliantVolume__Fv:
 /* 8002FA34 0002C834  38 60 00 04 */	li r3, 4
 /* 8002FA38 0002C838  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8002FA3C 0002C83C  48 03 6E 75 */	bl xSndMgrGetDampedVolume__Fs
-/* 8002FA40 0002C840  C0 42 84 A0 */	lfs f2, $$2762_0-_SDA2_BASE_(r2)
+/* 8002FA40 0002C840  C0 42 84 A0 */	lfs f2, _esc__2_762_0-_SDA2_BASE_(r2)
 /* 8002FA44 0002C844  C0 0D 81 80 */	lfs f0, sFMVVolumeScale-_SDA_BASE_(r13)
 /* 8002FA48 0002C848  EC 22 00 72 */	fmuls f1, f2, f1
 /* 8002FA4C 0002C84C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -186,3 +188,6 @@ lbl_8002FBAC:
 /* 8002FBB4 0002C9B4  7C 08 03 A6 */	mtlr r0
 /* 8002FBB8 0002C9B8  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002FBBC 0002C9BC  4E 80 00 20 */	blr 
+
+.endif
+

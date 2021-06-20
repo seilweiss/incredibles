@@ -62,14 +62,14 @@ gRecvCB_0:
 
 .section .data
 
-.global $$2128
-$$2128:
+.global _esc__2_128
+_esc__2_128:
 	.incbin "baserom.dol", 0x32AE50, 0x70
-.global $$2499
-$$2499:
+.global _esc__2_499
+_esc__2_499:
 	.incbin "baserom.dol", 0x32AEC0, 0x1C
-.global $$2536
-$$2536:
+.global _esc__2_536
+_esc__2_536:
 	.incbin "baserom.dol", 0x32AEDC, 0x1C
 .global gTRKRestoreFlags
 gTRKRestoreFlags:
@@ -89,203 +89,203 @@ gDBCommTable:
 
 .section .rodata
 
-.global $$2133
-$$2133:
+.global _esc__2_133
+_esc__2_133:
 	.incbin "baserom.dol", 0x2ED898, 0x1C
-.global $$2154
-$$2154:
+.global _esc__2_154
+_esc__2_154:
 	.incbin "baserom.dol", 0x2ED8B4, 0x14
-.global $$298
-$$298:
+.global _esc__2_98
+_esc__2_98:
 	.incbin "baserom.dol", 0x2ED8C8, 0x28
-.global $$2618
-$$2618:
+.global _esc__2_618
+_esc__2_618:
 	.incbin "baserom.dol", 0x2ED8F0, 0x20
-.global $$2121
-$$2121:
+.global _esc__2_121
+_esc__2_121:
 	.incbin "baserom.dol", 0x2ED910, 0x24
-.global $$2122
-$$2122:
+.global _esc__2_122
+_esc__2_122:
 	.incbin "baserom.dol", 0x2ED934, 0x24
-.global $$2123
-$$2123:
+.global _esc__2_123
+_esc__2_123:
 	.incbin "baserom.dol", 0x2ED958, 0x24
-.global $$2124
-$$2124:
+.global _esc__2_124
+_esc__2_124:
 	.incbin "baserom.dol", 0x2ED97C, 0x20
-.global $$2125
-$$2125:
+.global _esc__2_125
+_esc__2_125:
 	.incbin "baserom.dol", 0x2ED99C, 0x20
-.global $$2126
-$$2126:
+.global _esc__2_126
+_esc__2_126:
 	.incbin "baserom.dol", 0x2ED9BC, 0x24
-.global $$2146
-$$2146:
+.global _esc__2_146
+_esc__2_146:
 	.incbin "baserom.dol", 0x2ED9E0, 0x24
-.global $$2147
-$$2147:
+.global _esc__2_147
+_esc__2_147:
 	.incbin "baserom.dol", 0x2EDA04, 0x1C
-.global $$2148
-$$2148:
+.global _esc__2_148
+_esc__2_148:
 	.incbin "baserom.dol", 0x2EDA20, 0x34
-.global $$2149
-$$2149:
+.global _esc__2_149
+_esc__2_149:
 	.incbin "baserom.dol", 0x2EDA54, 0x28
-.global $$2150
-$$2150:
+.global _esc__2_150
+_esc__2_150:
 	.incbin "baserom.dol", 0x2EDA7C, 0x24
-.global $$2126_0
-$$2126_0:
+.global _esc__2_126_0
+_esc__2_126_0:
 	.incbin "baserom.dol", 0x2EDAA0, 0x1C
-.global $$2127
-$$2127:
+.global _esc__2_127
+_esc__2_127:
 	.incbin "baserom.dol", 0x2EDABC, 0x24
-.global $$2321
-$$2321:
+.global _esc__2_321
+_esc__2_321:
 	.incbin "baserom.dol", 0x2EDAE0, 0x20
-.global $$2322
-$$2322:
+.global _esc__2_322
+_esc__2_322:
 	.incbin "baserom.dol", 0x2EDB00, 0x8
-.global $$2323
-$$2323:
+.global _esc__2_323
+_esc__2_323:
 	.incbin "baserom.dol", 0x2EDB08, 0xC
-.global $$2370
-$$2370:
+.global _esc__2_370
+_esc__2_370:
 	.incbin "baserom.dol", 0x2EDB14, 0xC
-.global $$2402
-$$2402:
+.global _esc__2_402
+_esc__2_402:
 	.incbin "baserom.dol", 0x2EDB20, 0x20
-.global $$2403
-$$2403:
+.global _esc__2_403
+_esc__2_403:
 	.incbin "baserom.dol", 0x2EDB40, 0x20
-.global $$2404
-$$2404:
+.global _esc__2_404
+_esc__2_404:
 	.incbin "baserom.dol", 0x2EDB60, 0x18
-.global $$2462
-$$2462:
+.global _esc__2_462
+_esc__2_462:
 	.incbin "baserom.dol", 0x2EDB78, 0x28
-.global $$2463_0
-$$2463_0:
+.global _esc__2_463_0
+_esc__2_463_0:
 	.incbin "baserom.dol", 0x2EDBA0, 0x38
-.global $$2464
-$$2464:
+.global _esc__2_464
+_esc__2_464:
 	.incbin "baserom.dol", 0x2EDBD8, 0x28
-.global $$2465
-$$2465:
+.global _esc__2_465
+_esc__2_465:
 	.incbin "baserom.dol", 0x2EDC00, 0x30
-.global $$2466
-$$2466:
+.global _esc__2_466
+_esc__2_466:
 	.incbin "baserom.dol", 0x2EDC30, 0x30
-.global $$2498
-$$2498:
+.global _esc__2_498
+_esc__2_498:
 	.incbin "baserom.dol", 0x2EDC60, 0x30
-.global $$2535
-$$2535:
+.global _esc__2_535
+_esc__2_535:
 	.incbin "baserom.dol", 0x2EDC90, 0x2C
-.global $$2573
-$$2573:
+.global _esc__2_573
+_esc__2_573:
 	.incbin "baserom.dol", 0x2EDCBC, 0x8
-.global $$2574
-$$2574:
+.global _esc__2_574
+_esc__2_574:
 	.incbin "baserom.dol", 0x2EDCC4, 0x4
-.global $$2274
-$$2274:
+.global _esc__2_274
+_esc__2_274:
 	.incbin "baserom.dol", 0x2EDCC8, 0x18
-.global $$2275
-$$2275:
+.global _esc__2_275
+_esc__2_275:
 	.incbin "baserom.dol", 0x2EDCE0, 0x28
-.global $$2276
-$$2276:
+.global _esc__2_276
+_esc__2_276:
 	.incbin "baserom.dol", 0x2EDD08, 0x14
-.global $$2277
-$$2277:
+.global _esc__2_277
+_esc__2_277:
 	.incbin "baserom.dol", 0x2EDD1C, 0x54
 .global gTRKMemMap
 gTRKMemMap:
 	.incbin "baserom.dol", 0x2EDD70, 0x10
-.global $$2276_0
-$$2276_0:
+.global _esc__2_276_0
+_esc__2_276_0:
 	.incbin "baserom.dol", 0x2EDD80, 0x28
-.global $$2283_0
-$$2283_0:
+.global _esc__2_283_0
+_esc__2_283_0:
 	.incbin "baserom.dol", 0x2EDDA8, 0x28
-.global $$2290_0
-$$2290_0:
+.global _esc__2_290_0
+_esc__2_290_0:
 	.incbin "baserom.dol", 0x2EDDD0, 0x28
-.global $$2422
-$$2422:
+.global _esc__2_422
+_esc__2_422:
 	.incbin "baserom.dol", 0x2EDDF8, 0x10
-.global $$280
-$$280:
+.global _esc__2_80
+_esc__2_80:
 	.incbin "baserom.dol", 0x2EDE08, 0x10
-.global EndofProgramInstruction$162
-EndofProgramInstruction$162:
+.global EndofProgramInstruction_esc__7_162
+EndofProgramInstruction_esc__7_162:
 	.incbin "baserom.dol", 0x2EDE18, 0x4
-.global $$2165
-$$2165:
+.global _esc__2_165
+_esc__2_165:
 	.incbin "baserom.dol", 0x2EDE1C, 0x4
-.global $$2215
-$$2215:
+.global _esc__2_215
+_esc__2_215:
 	.incbin "baserom.dol", 0x2EDE20, 0x18
-.global $$2216
-$$2216:
+.global _esc__2_216
+_esc__2_216:
 	.incbin "baserom.dol", 0x2EDE38, 0x18
-.global $$2217
-$$2217:
+.global _esc__2_217
+_esc__2_217:
 	.incbin "baserom.dol", 0x2EDE50, 0x24
-.global $$2218
-$$2218:
+.global _esc__2_218
+_esc__2_218:
 	.incbin "baserom.dol", 0x2EDE74, 0x24
-.global $$2219
-$$2219:
+.global _esc__2_219
+_esc__2_219:
 	.incbin "baserom.dol", 0x2EDE98, 0x2C
-.global $$2220
-$$2220:
+.global _esc__2_220
+_esc__2_220:
 	.incbin "baserom.dol", 0x2EDEC4, 0x30
-.global $$2221
-$$2221:
+.global _esc__2_221
+_esc__2_221:
 	.incbin "baserom.dol", 0x2EDEF4, 0x2C
-.global $$2318
-$$2318:
+.global _esc__2_318
+_esc__2_318:
 	.incbin "baserom.dol", 0x2EDF20, 0x14
-.global $$2319
-$$2319:
+.global _esc__2_319
+_esc__2_319:
 	.incbin "baserom.dol", 0x2EDF34, 0x2C
-.global $$2320
-$$2320:
+.global _esc__2_320
+_esc__2_320:
 	.incbin "baserom.dol", 0x2EDF60, 0x1C
-.global $$2342
-$$2342:
+.global _esc__2_342
+_esc__2_342:
 	.incbin "baserom.dol", 0x2EDF7C, 0x28
-.global $$2343
-$$2343:
+.global _esc__2_343
+_esc__2_343:
 	.incbin "baserom.dol", 0x2EDFA4, 0x30
-.global $$2349_0
-$$2349_0:
+.global _esc__2_349_0
+_esc__2_349_0:
 	.incbin "baserom.dol", 0x2EDFD4, 0x14
-.global $$2350_0
-$$2350_0:
+.global _esc__2_350_0
+_esc__2_350_0:
 	.incbin "baserom.dol", 0x2EDFE8, 0x18
-.global $$2318_0
-$$2318_0:
+.global _esc__2_318_0
+_esc__2_318_0:
 	.incbin "baserom.dol", 0x2EE000, 0x14
-.global $$2319_0
-$$2319_0:
+.global _esc__2_319_0
+_esc__2_319_0:
 	.incbin "baserom.dol", 0x2EE014, 0x2C
-.global $$2320_0
-$$2320_0:
+.global _esc__2_320_0
+_esc__2_320_0:
 	.incbin "baserom.dol", 0x2EE040, 0x1C
-.global $$2341
-$$2341:
+.global _esc__2_341
+_esc__2_341:
 	.incbin "baserom.dol", 0x2EE05C, 0x28
-.global $$2342_0
-$$2342_0:
+.global _esc__2_342_0
+_esc__2_342_0:
 	.incbin "baserom.dol", 0x2EE084, 0x30
-.global $$2348_0
-$$2348_0:
+.global _esc__2_348_0
+_esc__2_348_0:
 	.incbin "baserom.dol", 0x2EE0B4, 0x14
-.global $$2349_1
-$$2349_1:
+.global _esc__2_349_1
+_esc__2_349_1:
 	.incbin "baserom.dol", 0x2EE0C8, 0x18
 
 .section .sbss
@@ -541,9 +541,9 @@ TRKInitializeEventQueue:
 TRKNubWelcome:
 /* 802C1F5C 002BED5C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802C1F60 002BED60  7C 08 02 A6 */	mflr r0
-/* 802C1F64 002BED64  3C 60 80 2F */	lis r3, $$2133@ha
+/* 802C1F64 002BED64  3C 60 80 2F */	lis r3, _esc__2_133@ha
 /* 802C1F68 002BED68  90 01 00 14 */	stw r0, 0x14(r1)
-/* 802C1F6C 002BED6C  38 63 08 98 */	addi r3, r3, $$2133@l
+/* 802C1F6C 002BED6C  38 63 08 98 */	addi r3, r3, _esc__2_133@l
 /* 802C1F70 002BED70  48 00 4E 79 */	bl TRK_board_display
 /* 802C1F74 002BED74  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802C1F78 002BED78  7C 08 03 A6 */	mtlr r0
@@ -596,8 +596,8 @@ lbl_802C2004:
 lbl_802C2018:
 /* 802C2018 002BEE18  7C DF 33 78 */	mr r31, r6
 lbl_802C201C:
-/* 802C201C 002BEE1C  3C 60 80 2F */	lis r3, $$2154@ha
-/* 802C2020 002BEE20  38 83 08 B4 */	addi r4, r3, $$2154@l
+/* 802C201C 002BEE1C  3C 60 80 2F */	lis r3, _esc__2_154@ha
+/* 802C2020 002BEE20  38 83 08 B4 */	addi r4, r3, _esc__2_154@l
 /* 802C2024 002BEE24  38 60 00 01 */	li r3, 1
 /* 802C2028 002BEE28  4C C6 31 82 */	crclr 6
 /* 802C202C 002BEE2C  48 00 5D 39 */	bl MWTRACE
@@ -666,10 +666,10 @@ TRKMessageSend:
 /* 802C2100 002BEF00  80 83 00 08 */	lwz r4, 8(r3)
 /* 802C2104 002BEF04  38 63 00 10 */	addi r3, r3, 0x10
 /* 802C2108 002BEF08  48 00 4D 71 */	bl TRKWriteUARTN
-/* 802C210C 002BEF0C  3C 80 80 2F */	lis r4, $$298@ha
+/* 802C210C 002BEF0C  3C 80 80 2F */	lis r4, _esc__2_98@ha
 /* 802C2110 002BEF10  7C 65 1B 78 */	mr r5, r3
 /* 802C2114 002BEF14  38 60 00 01 */	li r3, 1
-/* 802C2118 002BEF18  38 84 08 C8 */	addi r4, r4, $$298@l
+/* 802C2118 002BEF18  38 84 08 C8 */	addi r4, r4, _esc__2_98@l
 /* 802C211C 002BEF1C  4C C6 31 82 */	crclr 6
 /* 802C2120 002BEF20  48 00 5C 45 */	bl MWTRACE
 /* 802C2124 002BEF24  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1255,8 +1255,8 @@ lbl_802C28CC:
 /* 802C28D0 002BF6D0  41 80 FF 94 */	blt lbl_802C2864
 /* 802C28D4 002BF6D4  2C 1E 03 00 */	cmpwi r30, 0x300
 /* 802C28D8 002BF6D8  40 82 00 10 */	bne lbl_802C28E8
-/* 802C28DC 002BF6DC  3C 60 80 2F */	lis r3, $$2618@ha
-/* 802C28E0 002BF6E0  38 63 08 F0 */	addi r3, r3, $$2618@l
+/* 802C28DC 002BF6DC  3C 60 80 2F */	lis r3, _esc__2_618@ha
+/* 802C28E0 002BF6E0  38 63 08 F0 */	addi r3, r3, _esc__2_618@l
 /* 802C28E4 002BF6E4  48 00 03 4D */	bl usr_puts_serial
 lbl_802C28E8:
 /* 802C28E8 002BF6E8  7F C3 F3 78 */	mr r3, r30
@@ -1309,13 +1309,13 @@ TRKInitializeSerialHandler:
 /* 802C297C 002BF77C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802C2980 002BF780  7C 08 02 A6 */	mflr r0
 /* 802C2984 002BF784  3C 60 80 3D */	lis r3, gTRKFramingState@ha
-/* 802C2988 002BF788  3C 80 80 2F */	lis r4, $$2121@ha
+/* 802C2988 002BF788  3C 80 80 2F */	lis r4, _esc__2_121@ha
 /* 802C298C 002BF78C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802C2990 002BF790  38 C3 9F D8 */	addi r6, r3, gTRKFramingState@l
 /* 802C2994 002BF794  38 00 00 00 */	li r0, 0
 /* 802C2998 002BF798  38 60 FF FF */	li r3, -1
 /* 802C299C 002BF79C  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 802C29A0 002BF7A0  3B E4 09 10 */	addi r31, r4, $$2121@l
+/* 802C29A0 002BF7A0  3B E4 09 10 */	addi r31, r4, _esc__2_121@l
 /* 802C29A4 002BF7A4  38 9F 00 00 */	addi r4, r31, 0
 /* 802C29A8 002BF7A8  38 A0 00 40 */	li r5, 0x40
 /* 802C29AC 002BF7AC  90 66 00 00 */	stw r3, 0(r6)
@@ -1411,10 +1411,10 @@ lbl_802C2ADC:
 TRKTestForPacket:
 /* 802C2AF0 002BF8F0  94 21 F7 20 */	stwu r1, -0x8e0(r1)
 /* 802C2AF4 002BF8F4  7C 08 02 A6 */	mflr r0
-/* 802C2AF8 002BF8F8  3C 60 80 2F */	lis r3, $$2121@ha
+/* 802C2AF8 002BF8F8  3C 60 80 2F */	lis r3, _esc__2_121@ha
 /* 802C2AFC 002BF8FC  90 01 08 E4 */	stw r0, 0x8e4(r1)
 /* 802C2B00 002BF900  93 E1 08 DC */	stw r31, 0x8dc(r1)
-/* 802C2B04 002BF904  3B E3 09 10 */	addi r31, r3, $$2121@l
+/* 802C2B04 002BF904  3B E3 09 10 */	addi r31, r3, _esc__2_121@l
 /* 802C2B08 002BF908  93 C1 08 D8 */	stw r30, 0x8d8(r1)
 /* 802C2B0C 002BF90C  48 00 43 E5 */	bl TRKPollUART
 /* 802C2B10 002BF910  2C 03 00 00 */	cmpwi r3, 0
@@ -1549,18 +1549,18 @@ TRKDispatchMessage:
 /* 802C2CD0 002BFAD0  93 C1 00 08 */	stw r30, 8(r1)
 /* 802C2CD4 002BFAD4  7C 7E 1B 78 */	mr r30, r3
 /* 802C2CD8 002BFAD8  4B FF FA 61 */	bl TRKSetBufferPosition
-/* 802C2CDC 002BFADC  3C 60 80 2F */	lis r3, $$2126_0@ha
+/* 802C2CDC 002BFADC  3C 60 80 2F */	lis r3, _esc__2_126_0@ha
 /* 802C2CE0 002BFAE0  88 BE 00 14 */	lbz r5, 0x14(r30)
-/* 802C2CE4 002BFAE4  38 83 0A A0 */	addi r4, r3, $$2126_0@l
+/* 802C2CE4 002BFAE4  38 83 0A A0 */	addi r4, r3, _esc__2_126_0@l
 /* 802C2CE8 002BFAE8  38 60 00 01 */	li r3, 1
 /* 802C2CEC 002BFAEC  4C C6 31 82 */	crclr 6
 /* 802C2CF0 002BFAF0  48 00 50 75 */	bl MWTRACE
 /* 802C2CF4 002BFAF4  88 1E 00 14 */	lbz r0, 0x14(r30)
 /* 802C2CF8 002BFAF8  28 00 00 1A */	cmplwi r0, 0x1a
 /* 802C2CFC 002BFAFC  41 81 00 F8 */	bgt lbl_802C2DF4
-/* 802C2D00 002BFB00  3C 60 80 33 */	lis r3, $$2128@ha
+/* 802C2D00 002BFB00  3C 60 80 33 */	lis r3, _esc__2_128@ha
 /* 802C2D04 002BFB04  54 00 10 3A */	slwi r0, r0, 2
-/* 802C2D08 002BFB08  38 63 DE 50 */	addi r3, r3, $$2128@l
+/* 802C2D08 002BFB08  38 63 DE 50 */	addi r3, r3, _esc__2_128@l
 /* 802C2D0C 002BFB0C  7C 03 00 2E */	lwzx r0, r3, r0
 /* 802C2D10 002BFB10  7C 09 03 A6 */	mtctr r0
 /* 802C2D14 002BFB14  4E 80 04 20 */	bctr 
@@ -1620,9 +1620,9 @@ TRKDispatchMessage:
 /* 802C2DEC 002BFBEC  48 00 00 45 */	bl TRKDoSetOption
 /* 802C2DF0 002BFBF0  7C 7F 1B 78 */	mr r31, r3
 lbl_802C2DF4:
-/* 802C2DF4 002BFBF4  3C 60 80 2F */	lis r3, $$2127@ha
+/* 802C2DF4 002BFBF4  3C 60 80 2F */	lis r3, _esc__2_127@ha
 /* 802C2DF8 002BFBF8  7F E5 FB 78 */	mr r5, r31
-/* 802C2DFC 002BFBFC  38 83 0A BC */	addi r4, r3, $$2127@l
+/* 802C2DFC 002BFBFC  38 83 0A BC */	addi r4, r3, _esc__2_127@l
 /* 802C2E00 002BFC00  38 60 00 01 */	li r3, 1
 /* 802C2E04 002BFC04  4C C6 31 82 */	crclr 6
 /* 802C2E08 002BFC08  48 00 4F 5D */	bl MWTRACE
@@ -1643,10 +1643,10 @@ TRKInitializeDispatcher:
 TRKDoSetOption:
 /* 802C2E30 002BFC30  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 802C2E34 002BFC34  7C 08 02 A6 */	mflr r0
-/* 802C2E38 002BFC38  3C 80 80 2F */	lis r4, $$2321@ha
+/* 802C2E38 002BFC38  3C 80 80 2F */	lis r4, _esc__2_321@ha
 /* 802C2E3C 002BFC3C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802C2E40 002BFC40  93 E1 00 4C */	stw r31, 0x4c(r1)
-/* 802C2E44 002BFC44  3B E4 0A E0 */	addi r31, r4, $$2321@l
+/* 802C2E44 002BFC44  3B E4 0A E0 */	addi r31, r4, _esc__2_321@l
 /* 802C2E48 002BFC48  93 C1 00 48 */	stw r30, 0x48(r1)
 /* 802C2E4C 002BFC4C  88 03 00 18 */	lbz r0, 0x18(r3)
 /* 802C2E50 002BFC50  8B C3 00 1C */	lbz r30, 0x1c(r3)
@@ -1893,10 +1893,10 @@ lbl_802C318C:
 TRKDoContinue:
 /* 802C31A0 002BFFA0  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 802C31A4 002BFFA4  7C 08 02 A6 */	mflr r0
-/* 802C31A8 002BFFA8  3C 80 80 2F */	lis r4, $$2370@ha
+/* 802C31A8 002BFFA8  3C 80 80 2F */	lis r4, _esc__2_370@ha
 /* 802C31AC 002BFFAC  38 60 00 01 */	li r3, 1
 /* 802C31B0 002BFFB0  90 01 00 94 */	stw r0, 0x94(r1)
-/* 802C31B4 002BFFB4  38 84 0B 14 */	addi r4, r4, $$2370@l
+/* 802C31B4 002BFFB4  38 84 0B 14 */	addi r4, r4, _esc__2_370@l
 /* 802C31B8 002BFFB8  4C C6 31 82 */	crclr 6
 /* 802C31BC 002BFFBC  48 00 4B A9 */	bl MWTRACE
 /* 802C31C0 002BFFC0  48 00 1A 6D */	bl TRKTargetStopped
@@ -2101,17 +2101,17 @@ lbl_802C344C:
 /* 802C347C 002C027C  38 60 00 00 */	li r3, 0
 /* 802C3480 002C0280  48 00 00 40 */	b lbl_802C34C0
 lbl_802C3484:
-/* 802C3484 002C0284  3C 80 80 2F */	lis r4, $$2403@ha
+/* 802C3484 002C0284  3C 80 80 2F */	lis r4, _esc__2_403@ha
 /* 802C3488 002C0288  38 60 00 01 */	li r3, 1
-/* 802C348C 002C028C  38 84 0B 40 */	addi r4, r4, $$2403@l
+/* 802C348C 002C028C  38 84 0B 40 */	addi r4, r4, _esc__2_403@l
 /* 802C3490 002C0290  4C C6 31 82 */	crclr 6
 /* 802C3494 002C0294  48 00 48 D1 */	bl MWTRACE
 /* 802C3498 002C0298  7F 83 E3 78 */	mr r3, r28
 /* 802C349C 002C029C  4B FF EC 59 */	bl TRKMessageSend
 /* 802C34A0 002C02A0  7C 7F 1B 78 */	mr r31, r3
-/* 802C34A4 002C02A4  3C 80 80 2F */	lis r4, $$2404@ha
+/* 802C34A4 002C02A4  3C 80 80 2F */	lis r4, _esc__2_404@ha
 /* 802C34A8 002C02A8  38 60 00 01 */	li r3, 1
-/* 802C34AC 002C02AC  38 84 0B 60 */	addi r4, r4, $$2404@l
+/* 802C34AC 002C02AC  38 84 0B 60 */	addi r4, r4, _esc__2_404@l
 /* 802C34B0 002C02B0  7F E5 FB 78 */	mr r5, r31
 /* 802C34B4 002C02B4  4C C6 31 82 */	crclr 6
 /* 802C34B8 002C02B8  48 00 48 AD */	bl MWTRACE
@@ -2130,10 +2130,10 @@ lbl_802C34C0:
 TRKDoReadRegisters:
 /* 802C34E0 002C02E0  94 21 FF 20 */	stwu r1, -0xe0(r1)
 /* 802C34E4 002C02E4  7C 08 02 A6 */	mflr r0
-/* 802C34E8 002C02E8  3C A0 80 2F */	lis r5, $$2321@ha
+/* 802C34E8 002C02E8  3C A0 80 2F */	lis r5, _esc__2_321@ha
 /* 802C34EC 002C02EC  90 01 00 E4 */	stw r0, 0xe4(r1)
 /* 802C34F0 002C02F0  93 E1 00 DC */	stw r31, 0xdc(r1)
-/* 802C34F4 002C02F4  3B E5 0A E0 */	addi r31, r5, $$2321@l
+/* 802C34F4 002C02F4  3B E5 0A E0 */	addi r31, r5, _esc__2_321@l
 /* 802C34F8 002C02F8  93 C1 00 D8 */	stw r30, 0xd8(r1)
 /* 802C34FC 002C02FC  93 A1 00 D4 */	stw r29, 0xd4(r1)
 /* 802C3500 002C0300  7C 7D 1B 78 */	mr r29, r3
@@ -2338,8 +2338,8 @@ TRKDoWriteMemory:
 /* 802C37D4 002C05D4  90 0C 00 04 */	stw r0, 4(r12)
 /* 802C37D8 002C05D8  BF 6C FF EC */	stmw r27, -0x14(r12)
 /* 802C37DC 002C05DC  7C 7B 1B 78 */	mr r27, r3
-/* 802C37E0 002C05E0  3C 60 80 2F */	lis r3, $$2321@ha
-/* 802C37E4 002C05E4  3B E3 0A E0 */	addi r31, r3, $$2321@l
+/* 802C37E0 002C05E0  3C 60 80 2F */	lis r3, _esc__2_321@ha
+/* 802C37E4 002C05E4  3B E3 0A E0 */	addi r31, r3, _esc__2_321@l
 /* 802C37E8 002C05E8  38 9F 01 80 */	addi r4, r31, 0x180
 /* 802C37EC 002C05EC  38 60 00 01 */	li r3, 1
 /* 802C37F0 002C05F0  83 9B 00 20 */	lwz r28, 0x20(r27)
@@ -2427,9 +2427,9 @@ lbl_802C3920:
 /* 802C3928 002C0728  38 1E F9 00 */	addi r0, r30, -1792
 /* 802C392C 002C072C  28 00 00 06 */	cmplwi r0, 6
 /* 802C3930 002C0730  41 81 00 44 */	bgt lbl_802C3974
-/* 802C3934 002C0734  3C 60 80 33 */	lis r3, $$2499@ha
+/* 802C3934 002C0734  3C 60 80 33 */	lis r3, _esc__2_499@ha
 /* 802C3938 002C0738  54 00 10 3A */	slwi r0, r0, 2
-/* 802C393C 002C073C  38 63 DE C0 */	addi r3, r3, $$2499@l
+/* 802C393C 002C073C  38 63 DE C0 */	addi r3, r3, _esc__2_499@l
 /* 802C3940 002C0740  7C 03 00 2E */	lwzx r0, r3, r0
 /* 802C3944 002C0744  7C 09 03 A6 */	mtctr r0
 /* 802C3948 002C0748  4E 80 04 20 */	bctr 
@@ -2492,8 +2492,8 @@ TRKDoReadMemory:
 /* 802C3A10 002C0810  90 0C 00 04 */	stw r0, 4(r12)
 /* 802C3A14 002C0814  BF 4C FF E8 */	stmw r26, -0x18(r12)
 /* 802C3A18 002C0818  7C 7F 1B 78 */	mr r31, r3
-/* 802C3A1C 002C081C  3C 60 80 2F */	lis r3, $$2321@ha
-/* 802C3A20 002C0820  3B A3 0A E0 */	addi r29, r3, $$2321@l
+/* 802C3A1C 002C081C  3C 60 80 2F */	lis r3, _esc__2_321@ha
+/* 802C3A20 002C0820  3B A3 0A E0 */	addi r29, r3, _esc__2_321@l
 /* 802C3A24 002C0824  38 9D 01 B0 */	addi r4, r29, 0x1b0
 /* 802C3A28 002C0828  38 60 00 01 */	li r3, 1
 /* 802C3A2C 002C082C  83 5F 00 20 */	lwz r26, 0x20(r31)
@@ -2584,9 +2584,9 @@ lbl_802C3B64:
 /* 802C3B6C 002C096C  38 1E F9 00 */	addi r0, r30, -1792
 /* 802C3B70 002C0970  28 00 00 06 */	cmplwi r0, 6
 /* 802C3B74 002C0974  41 81 00 44 */	bgt lbl_802C3BB8
-/* 802C3B78 002C0978  3C 60 80 33 */	lis r3, $$2536@ha
+/* 802C3B78 002C0978  3C 60 80 33 */	lis r3, _esc__2_536@ha
 /* 802C3B7C 002C097C  54 00 10 3A */	slwi r0, r0, 2
-/* 802C3B80 002C0980  38 63 DE DC */	addi r3, r3, $$2536@l
+/* 802C3B80 002C0980  38 63 DE DC */	addi r3, r3, _esc__2_536@l
 /* 802C3B84 002C0984  7C 03 00 2E */	lwzx r0, r3, r0
 /* 802C3B88 002C0988  7C 09 03 A6 */	mtctr r0
 /* 802C3B8C 002C098C  4E 80 04 20 */	bctr 
@@ -2777,14 +2777,14 @@ GetTRKConnected:
 OutputData:
 /* 802C3DF8 002C0BF8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 802C3DFC 002C0BFC  7C 08 02 A6 */	mflr r0
-/* 802C3E00 002C0C00  3C C0 80 2F */	lis r6, $$2573@ha
-/* 802C3E04 002C0C04  3C A0 80 2F */	lis r5, $$2574@ha
+/* 802C3E00 002C0C00  3C C0 80 2F */	lis r6, _esc__2_573@ha
+/* 802C3E04 002C0C04  3C A0 80 2F */	lis r5, _esc__2_574@ha
 /* 802C3E08 002C0C08  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C3E0C 002C0C0C  BF 61 00 0C */	stmw r27, 0xc(r1)
 /* 802C3E10 002C0C10  7C 9B 23 78 */	mr r27, r4
 /* 802C3E14 002C0C14  7C 7F 1B 78 */	mr r31, r3
-/* 802C3E18 002C0C18  3B A6 0C BC */	addi r29, r6, $$2573@l
-/* 802C3E1C 002C0C1C  3B C5 0C C4 */	addi r30, r5, $$2574@l
+/* 802C3E18 002C0C18  3B A6 0C BC */	addi r29, r6, _esc__2_573@l
+/* 802C3E1C 002C0C1C  3B C5 0C C4 */	addi r30, r5, _esc__2_574@l
 /* 802C3E20 002C0C20  3B 80 00 00 */	li r28, 0
 /* 802C3E24 002C0C24  48 00 00 4C */	b lbl_802C3E70
 lbl_802C3E28:
@@ -2810,9 +2810,9 @@ lbl_802C3E68:
 lbl_802C3E70:
 /* 802C3E70 002C0C70  7C 1C D8 00 */	cmpw r28, r27
 /* 802C3E74 002C0C74  41 80 FF B4 */	blt lbl_802C3E28
-/* 802C3E78 002C0C78  3C 80 80 2F */	lis r4, $$2574@ha
+/* 802C3E78 002C0C78  3C 80 80 2F */	lis r4, _esc__2_574@ha
 /* 802C3E7C 002C0C7C  38 60 00 08 */	li r3, 8
-/* 802C3E80 002C0C80  38 84 0C C4 */	addi r4, r4, $$2574@l
+/* 802C3E80 002C0C80  38 84 0C C4 */	addi r4, r4, _esc__2_574@l
 /* 802C3E84 002C0C84  4C C6 31 82 */	crclr 6
 /* 802C3E88 002C0C88  48 00 3E DD */	bl MWTRACE
 /* 802C3E8C 002C0C8C  BB 61 00 0C */	lmw r27, 0xc(r1)
@@ -3045,11 +3045,11 @@ TRKRequestSend:
 /* 802C41C0 002C0FC0  38 00 FF FF */	li r0, -1
 /* 802C41C4 002C0FC4  BE A1 00 14 */	stmw r21, 0x14(r1)
 /* 802C41C8 002C0FC8  7C 96 23 78 */	mr r22, r4
-/* 802C41CC 002C0FCC  3C 80 80 2F */	lis r4, $$2274@ha
+/* 802C41CC 002C0FCC  3C 80 80 2F */	lis r4, _esc__2_274@ha
 /* 802C41D0 002C0FD0  7C 75 1B 78 */	mr r21, r3
 /* 802C41D4 002C0FD4  7C F7 3B 78 */	mr r23, r7
 /* 802C41D8 002C0FD8  3B 66 00 01 */	addi r27, r6, 1
-/* 802C41DC 002C0FDC  3B E4 0C C8 */	addi r31, r4, $$2274@l
+/* 802C41DC 002C0FDC  3B E4 0C C8 */	addi r31, r4, _esc__2_274@l
 /* 802C41E0 002C0FE0  3B C0 00 00 */	li r30, 0
 /* 802C41E4 002C0FE4  3B 00 00 01 */	li r24, 1
 /* 802C41E8 002C0FE8  90 16 00 00 */	stw r0, 0(r22)
@@ -3990,11 +3990,11 @@ TRKTargetStepOutOfRange:
 /* 802C4E68 002C1C68  48 00 00 88 */	b lbl_802C4EF0
 lbl_802C4E6C:
 /* 802C4E6C 002C1C6C  3C C0 80 33 */	lis r6, gTRKStepStatus@ha
-/* 802C4E70 002C1C70  3C A0 80 2F */	lis r5, $$2422@ha
+/* 802C4E70 002C1C70  3C A0 80 2F */	lis r5, _esc__2_422@ha
 /* 802C4E74 002C1C74  3B E6 DF 14 */	addi r31, r6, gTRKStepStatus@l
 /* 802C4E78 002C1C78  38 C0 00 01 */	li r6, 1
 /* 802C4E7C 002C1C7C  90 7F 00 0C */	stw r3, 0xc(r31)
-/* 802C4E80 002C1C80  38 05 0D F8 */	addi r0, r5, $$2422@l
+/* 802C4E80 002C1C80  38 05 0D F8 */	addi r0, r5, _esc__2_422@l
 /* 802C4E84 002C1C84  38 60 00 01 */	li r3, 1
 /* 802C4E88 002C1C88  90 9F 00 10 */	stw r4, 0x10(r31)
 /* 802C4E8C 002C1C8C  7C 04 03 78 */	mr r4, r0
@@ -4043,12 +4043,12 @@ TRKTargetSingleStep:
 /* 802C4F20 002C1D20  48 00 00 7C */	b lbl_802C4F9C
 lbl_802C4F24:
 /* 802C4F24 002C1D24  3C A0 80 33 */	lis r5, gTRKStepStatus@ha
-/* 802C4F28 002C1D28  3C 80 80 2F */	lis r4, $$2422@ha
+/* 802C4F28 002C1D28  3C 80 80 2F */	lis r4, _esc__2_422@ha
 /* 802C4F2C 002C1D2C  3B E5 DF 14 */	addi r31, r5, gTRKStepStatus@l
 /* 802C4F30 002C1D30  38 00 00 01 */	li r0, 1
 /* 802C4F34 002C1D34  38 A0 00 00 */	li r5, 0
 /* 802C4F38 002C1D38  90 7F 00 08 */	stw r3, 8(r31)
-/* 802C4F3C 002C1D3C  38 84 0D F8 */	addi r4, r4, $$2422@l
+/* 802C4F3C 002C1D3C  38 84 0D F8 */	addi r4, r4, _esc__2_422@l
 /* 802C4F40 002C1D40  38 60 00 01 */	li r3, 1
 /* 802C4F44 002C1D44  90 BF 00 04 */	stw r5, 4(r31)
 /* 802C4F48 002C1D48  90 1F 00 00 */	stw r0, 0(r31)
@@ -4219,9 +4219,9 @@ lbl_802C5198:
 /* 802C5198 002C1F98  3C 80 80 33 */	lis r4, gTRKStepStatus@ha
 /* 802C519C 002C1F9C  38 00 00 01 */	li r0, 1
 /* 802C51A0 002C1FA0  38 A4 DF 14 */	addi r5, r4, gTRKStepStatus@l
-/* 802C51A4 002C1FA4  3C 60 80 2F */	lis r3, $$2422@ha
+/* 802C51A4 002C1FA4  3C 60 80 2F */	lis r3, _esc__2_422@ha
 /* 802C51A8 002C1FA8  90 05 00 00 */	stw r0, 0(r5)
-/* 802C51AC 002C1FAC  38 83 0D F8 */	addi r4, r3, $$2422@l
+/* 802C51AC 002C1FAC  38 83 0D F8 */	addi r4, r3, _esc__2_422@l
 /* 802C51B0 002C1FB0  38 60 00 01 */	li r3, 1
 /* 802C51B4 002C1FB4  4C C6 31 82 */	crclr 6
 /* 802C51B8 002C1FB8  48 00 2B AD */	bl MWTRACE
@@ -4335,9 +4335,9 @@ TRKTargetAccessExtended2:
 /* 802C5328 002C2128  38 60 07 01 */	li r3, 0x701
 /* 802C532C 002C212C  48 00 03 F4 */	b lbl_802C5720
 lbl_802C5330:
-/* 802C5330 002C2130  3C 60 80 2F */	lis r3, $$2276_0@ha
+/* 802C5330 002C2130  3C 60 80 2F */	lis r3, _esc__2_276_0@ha
 /* 802C5334 002C2134  3C A0 80 33 */	lis r5, gTRKExceptionStatus@ha
-/* 802C5338 002C2138  3B A3 0D 80 */	addi r29, r3, $$2276_0@l
+/* 802C5338 002C2138  3B A3 0D 80 */	addi r29, r3, _esc__2_276_0@l
 /* 802C533C 002C213C  3C 80 7C 99 */	lis r4, 0x7C98E2A6@ha
 /* 802C5340 002C2140  80 1D 00 00 */	lwz r0, 0(r29)
 /* 802C5344 002C2144  3B E5 DF 04 */	addi r31, r5, gTRKExceptionStatus@l
@@ -4386,9 +4386,9 @@ lbl_802C5330:
 /* 802C53F0 002C21F0  38 61 00 08 */	addi r3, r1, 8
 /* 802C53F4 002C21F4  7D 89 03 A6 */	mtctr r12
 /* 802C53F8 002C21F8  4E 80 04 21 */	bctrl 
-/* 802C53FC 002C21FC  3C 60 80 2F */	lis r3, $$2276_0@ha
+/* 802C53FC 002C21FC  3C 60 80 2F */	lis r3, _esc__2_276_0@ha
 /* 802C5400 002C2200  80 A1 00 08 */	lwz r5, 8(r1)
-/* 802C5404 002C2204  3B A3 0D 80 */	addi r29, r3, $$2276_0@l
+/* 802C5404 002C2204  3B A3 0D 80 */	addi r29, r3, _esc__2_276_0@l
 /* 802C5408 002C2208  3C 80 7C 99 */	lis r4, 0x7C98E3A6@ha
 /* 802C540C 002C220C  81 1D 00 00 */	lwz r8, 0(r29)
 /* 802C5410 002C2210  3C 60 4E 80 */	lis r3, 0x4E800020@ha
@@ -4428,9 +4428,9 @@ lbl_802C5330:
 /* 802C5498 002C2298  38 61 00 08 */	addi r3, r1, 8
 /* 802C549C 002C229C  7D 89 03 A6 */	mtctr r12
 /* 802C54A0 002C22A0  4E 80 04 21 */	bctrl 
-/* 802C54A4 002C22A4  3C 60 80 2F */	lis r3, $$2276_0@ha
+/* 802C54A4 002C22A4  3C 60 80 2F */	lis r3, _esc__2_276_0@ha
 /* 802C54A8 002C22A8  3C 80 7C 91 */	lis r4, 0x7C90E3A6@ha
-/* 802C54AC 002C22AC  3B A3 0D 80 */	addi r29, r3, $$2276_0@l
+/* 802C54AC 002C22AC  3B A3 0D 80 */	addi r29, r3, _esc__2_276_0@l
 /* 802C54B0 002C22B0  3C 60 4E 80 */	lis r3, 0x4E800020@ha
 /* 802C54B4 002C22B4  81 1D 00 00 */	lwz r8, 0(r29)
 /* 802C54B8 002C22B8  3B C0 00 00 */	li r30, 0
@@ -4748,9 +4748,9 @@ lbl_802C58D8:
 lbl_802C593C:
 /* 802C593C 002C273C  2C 1F 00 00 */	cmpwi r31, 0
 /* 802C5940 002C2740  41 82 01 FC */	beq lbl_802C5B3C
-/* 802C5944 002C2744  3C 60 80 2F */	lis r3, $$2290_0@ha
+/* 802C5944 002C2744  3C 60 80 2F */	lis r3, _esc__2_290_0@ha
 /* 802C5948 002C2748  28 15 00 20 */	cmplwi r21, 0x20
-/* 802C594C 002C274C  39 83 0D D0 */	addi r12, r3, $$2290_0@l
+/* 802C594C 002C274C  39 83 0D D0 */	addi r12, r3, _esc__2_290_0@l
 /* 802C5950 002C2750  81 6C 00 00 */	lwz r11, 0(r12)
 /* 802C5954 002C2754  81 4C 00 04 */	lwz r10, 4(r12)
 /* 802C5958 002C2758  81 2C 00 08 */	lwz r9, 8(r12)
@@ -4819,9 +4819,9 @@ lbl_802C5A30:
 /* 802C5A40 002C2840  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 802C5A44 002C2844  90 01 00 08 */	stw r0, 8(r1)
 lbl_802C5A48:
-/* 802C5A48 002C2848  3C 60 80 2F */	lis r3, $$2276_0@ha
+/* 802C5A48 002C2848  3C 60 80 2F */	lis r3, _esc__2_276_0@ha
 /* 802C5A4C 002C284C  2C 1F 00 00 */	cmpwi r31, 0
-/* 802C5A50 002C2850  39 83 0D 80 */	addi r12, r3, $$2276_0@l
+/* 802C5A50 002C2850  39 83 0D 80 */	addi r12, r3, _esc__2_276_0@l
 /* 802C5A54 002C2854  81 6C 00 00 */	lwz r11, 0(r12)
 /* 802C5A58 002C2858  81 4C 00 04 */	lwz r10, 4(r12)
 /* 802C5A5C 002C285C  81 2C 00 08 */	lwz r9, 8(r12)
@@ -4887,9 +4887,9 @@ lbl_802C5B3C:
 /* 802C5B3C 002C293C  7F A3 EB 78 */	mr r3, r29
 /* 802C5B40 002C2940  38 81 00 08 */	addi r4, r1, 8
 /* 802C5B44 002C2944  4B FF C7 7D */	bl TRKReadBuffer1_ui64
-/* 802C5B48 002C2948  3C 60 80 2F */	lis r3, $$2290_0@ha
+/* 802C5B48 002C2948  3C 60 80 2F */	lis r3, _esc__2_290_0@ha
 /* 802C5B4C 002C294C  28 15 00 20 */	cmplwi r21, 0x20
-/* 802C5B50 002C2950  39 83 0D D0 */	addi r12, r3, $$2290_0@l
+/* 802C5B50 002C2950  39 83 0D D0 */	addi r12, r3, _esc__2_290_0@l
 /* 802C5B54 002C2954  3A 80 00 00 */	li r20, 0
 /* 802C5B58 002C2958  81 6C 00 00 */	lwz r11, 0(r12)
 /* 802C5B5C 002C295C  81 4C 00 04 */	lwz r10, 4(r12)
@@ -4960,9 +4960,9 @@ lbl_802C5C3C:
 /* 802C5C4C 002C2A4C  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 802C5C50 002C2A50  90 01 00 08 */	stw r0, 8(r1)
 lbl_802C5C54:
-/* 802C5C54 002C2A54  3C 60 80 2F */	lis r3, $$2276_0@ha
+/* 802C5C54 002C2A54  3C 60 80 2F */	lis r3, _esc__2_276_0@ha
 /* 802C5C58 002C2A58  2C 1F 00 00 */	cmpwi r31, 0
-/* 802C5C5C 002C2A5C  39 83 0D 80 */	addi r12, r3, $$2276_0@l
+/* 802C5C5C 002C2A5C  39 83 0D 80 */	addi r12, r3, _esc__2_276_0@l
 /* 802C5C60 002C2A60  81 6C 00 00 */	lwz r11, 0(r12)
 /* 802C5C64 002C2A64  81 4C 00 04 */	lwz r10, 4(r12)
 /* 802C5C68 002C2A68  81 2C 00 08 */	lwz r9, 8(r12)
@@ -6128,10 +6128,10 @@ EnableMetroTRKInterrupts:
 TRK_main:
 /* 802C6CAC 002C3AAC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802C6CB0 002C3AB0  7C 08 02 A6 */	mflr r0
-/* 802C6CB4 002C3AB4  3C 80 80 2F */	lis r4, $$280@ha
+/* 802C6CB4 002C3AB4  3C 80 80 2F */	lis r4, _esc__2_80@ha
 /* 802C6CB8 002C3AB8  38 60 00 01 */	li r3, 1
 /* 802C6CBC 002C3ABC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 802C6CC0 002C3AC0  38 84 0E 08 */	addi r4, r4, $$280@l
+/* 802C6CC0 002C3AC0  38 84 0E 08 */	addi r4, r4, _esc__2_80@l
 /* 802C6CC4 002C3AC4  4C C6 31 82 */	crclr 6
 /* 802C6CC8 002C3AC8  48 00 10 9D */	bl MWTRACE
 /* 802C6CCC 002C3ACC  4B FF B2 DD */	bl TRKInitializeNub
@@ -6198,12 +6198,12 @@ InitializeProgramEndTrap:
 /* 802C6D90 002C3B90  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802C6D94 002C3B94  7C 08 02 A6 */	mflr r0
 /* 802C6D98 002C3B98  3C 80 80 21 */	lis r4, PPCHalt@ha
-/* 802C6D9C 002C3B9C  3C 60 80 2F */	lis r3, EndofProgramInstruction$162@ha
+/* 802C6D9C 002C3B9C  3C 60 80 2F */	lis r3, EndofProgramInstruction_esc__7_162@ha
 /* 802C6DA0 002C3BA0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802C6DA4 002C3BA4  38 A0 00 04 */	li r5, 4
 /* 802C6DA8 002C3BA8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802C6DAC 002C3BAC  3B E4 5E 84 */	addi r31, r4, PPCHalt@l
-/* 802C6DB0 002C3BB0  38 83 0E 18 */	addi r4, r3, EndofProgramInstruction$162@l
+/* 802C6DB0 002C3BB0  38 83 0E 18 */	addi r4, r3, EndofProgramInstruction_esc__7_162@l
 /* 802C6DB4 002C3BB4  38 7F 00 04 */	addi r3, r31, 4
 /* 802C6DB8 002C3BB8  4B D3 C8 09 */	bl TRK_memcpy
 /* 802C6DBC 002C3BBC  38 7F 00 04 */	addi r3, r31, 4
@@ -6222,10 +6222,10 @@ InitializeProgramEndTrap:
 TRK_board_display:
 /* 802C6DE8 002C3BE8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802C6DEC 002C3BEC  7C 08 02 A6 */	mflr r0
-/* 802C6DF0 002C3BF0  3C A0 80 2F */	lis r5, $$2165@ha
+/* 802C6DF0 002C3BF0  3C A0 80 2F */	lis r5, _esc__2_165@ha
 /* 802C6DF4 002C3BF4  7C 64 1B 78 */	mr r4, r3
 /* 802C6DF8 002C3BF8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 802C6DFC 002C3BFC  38 65 0E 1C */	addi r3, r5, $$2165@l
+/* 802C6DFC 002C3BFC  38 65 0E 1C */	addi r3, r5, _esc__2_165@l
 /* 802C6E00 002C3C00  4C C6 31 82 */	crclr 6
 /* 802C6E04 002C3C04  4B F6 C4 ED */	bl OSReport
 /* 802C6E08 002C3C08  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -6363,14 +6363,14 @@ TRKInitializeIntDrivenUART:
 InitMetroTRKCommTable:
 /* 802C6FB8 002C3DB8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 802C6FBC 002C3DBC  7C 08 02 A6 */	mflr r0
-/* 802C6FC0 002C3DC0  3C 80 80 2F */	lis r4, EndofProgramInstruction$162@ha
+/* 802C6FC0 002C3DC0  3C 80 80 2F */	lis r4, EndofProgramInstruction_esc__7_162@ha
 /* 802C6FC4 002C3DC4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C6FC8 002C3DC8  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 802C6FCC 002C3DCC  3B E0 00 01 */	li r31, 1
 /* 802C6FD0 002C3DD0  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 802C6FD4 002C3DD4  7C 7E 1B 78 */	mr r30, r3
 /* 802C6FD8 002C3DD8  93 A1 00 14 */	stw r29, 0x14(r1)
-/* 802C6FDC 002C3DDC  3B A4 0E 18 */	addi r29, r4, EndofProgramInstruction$162@l
+/* 802C6FDC 002C3DDC  3B A4 0E 18 */	addi r29, r4, EndofProgramInstruction_esc__7_162@l
 /* 802C6FE0 002C3DE0  7F C4 F3 78 */	mr r4, r30
 /* 802C6FE4 002C3DE4  38 7D 00 08 */	addi r3, r29, 8
 /* 802C6FE8 002C3DE8  4C C6 31 82 */	crclr 6
@@ -6802,10 +6802,10 @@ ddh_cc_pre_continue:
 ddh_cc_write:
 /* 802C7548 002C4348  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 802C754C 002C434C  7C 08 02 A6 */	mflr r0
-/* 802C7550 002C4350  3C A0 80 2F */	lis r5, $$2318@ha
+/* 802C7550 002C4350  3C A0 80 2F */	lis r5, _esc__2_318@ha
 /* 802C7554 002C4354  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C7558 002C4358  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 802C755C 002C435C  3B E5 0F 20 */	addi r31, r5, $$2318@l
+/* 802C755C 002C435C  3B E5 0F 20 */	addi r31, r5, _esc__2_318@l
 /* 802C7560 002C4360  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 802C7564 002C4364  7C 9E 23 78 */	mr r30, r4
 /* 802C7568 002C4368  93 A1 00 14 */	stw r29, 0x14(r1)
@@ -6869,9 +6869,9 @@ ddh_cc_read:
 /* 802C7630 002C4430  38 60 D8 EF */	li r3, -10001
 /* 802C7634 002C4434  48 00 00 AC */	b lbl_802C76E0
 lbl_802C7638:
-/* 802C7638 002C4438  3C 60 80 2F */	lis r3, $$2342@ha
+/* 802C7638 002C4438  3C 60 80 2F */	lis r3, _esc__2_342@ha
 /* 802C763C 002C443C  7F C5 F3 78 */	mr r5, r30
-/* 802C7640 002C4440  38 83 0F 7C */	addi r4, r3, $$2342@l
+/* 802C7640 002C4440  38 83 0F 7C */	addi r4, r3, _esc__2_342@l
 /* 802C7644 002C4444  7F C6 F3 78 */	mr r6, r30
 /* 802C7648 002C4448  38 60 00 01 */	li r3, 1
 /* 802C764C 002C444C  4C C6 31 82 */	crclr 6
@@ -6907,9 +6907,9 @@ lbl_802C7694:
 /* 802C76BC 002C44BC  48 00 00 F5 */	bl CircleBufferReadBytes
 /* 802C76C0 002C44C0  48 00 00 1C */	b lbl_802C76DC
 lbl_802C76C4:
-/* 802C76C4 002C44C4  3C 60 80 2F */	lis r3, $$2343@ha
+/* 802C76C4 002C44C4  3C 60 80 2F */	lis r3, _esc__2_343@ha
 /* 802C76C8 002C44C8  7F A5 EB 78 */	mr r5, r29
-/* 802C76CC 002C44CC  38 83 0F A4 */	addi r4, r3, $$2343@l
+/* 802C76CC 002C44CC  38 83 0F A4 */	addi r4, r3, _esc__2_343@l
 /* 802C76D0 002C44D0  38 60 00 08 */	li r3, 8
 /* 802C76D4 002C44D4  4C C6 31 82 */	crclr 6
 /* 802C76D8 002C44D8  48 00 06 8D */	bl MWTRACE
@@ -6949,9 +6949,9 @@ ddh_cc_shutdown:
 ddh_cc_initialize:
 /* 802C7728 002C4528  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802C772C 002C452C  7C 08 02 A6 */	mflr r0
-/* 802C7730 002C4530  3C A0 80 2F */	lis r5, $$2349_0@ha
+/* 802C7730 002C4530  3C A0 80 2F */	lis r5, _esc__2_349_0@ha
 /* 802C7734 002C4534  90 01 00 14 */	stw r0, 0x14(r1)
-/* 802C7738 002C4538  38 05 0F D4 */	addi r0, r5, $$2349_0@l
+/* 802C7738 002C4538  38 05 0F D4 */	addi r0, r5, _esc__2_349_0@l
 /* 802C773C 002C453C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802C7740 002C4540  7C 9F 23 78 */	mr r31, r4
 /* 802C7744 002C4544  7C 04 03 78 */	mr r4, r0
@@ -6963,9 +6963,9 @@ ddh_cc_initialize:
 /* 802C775C 002C455C  7F C3 F3 78 */	mr r3, r30
 /* 802C7760 002C4560  7F E4 FB 78 */	mr r4, r31
 /* 802C7764 002C4564  4B F4 E7 F5 */	bl EXI2_Init
-/* 802C7768 002C4568  3C 80 80 2F */	lis r4, $$2350_0@ha
+/* 802C7768 002C4568  3C 80 80 2F */	lis r4, _esc__2_350_0@ha
 /* 802C776C 002C456C  38 60 00 01 */	li r3, 1
-/* 802C7770 002C4570  38 84 0F E8 */	addi r4, r4, $$2350_0@l
+/* 802C7770 002C4570  38 84 0F E8 */	addi r4, r4, _esc__2_350_0@l
 /* 802C7774 002C4574  4C C6 31 82 */	crclr 6
 /* 802C7778 002C4578  48 00 05 ED */	bl MWTRACE
 /* 802C777C 002C457C  3C 60 80 3D */	lis r3, gRecvCB@ha
@@ -7233,10 +7233,10 @@ gdev_cc_pre_continue:
 gdev_cc_write:
 /* 802C7AF4 002C48F4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 802C7AF8 002C48F8  7C 08 02 A6 */	mflr r0
-/* 802C7AFC 002C48FC  3C A0 80 2F */	lis r5, $$2318_0@ha
+/* 802C7AFC 002C48FC  3C A0 80 2F */	lis r5, _esc__2_318_0@ha
 /* 802C7B00 002C4900  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C7B04 002C4904  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 802C7B08 002C4908  3B E5 10 00 */	addi r31, r5, $$2318_0@l
+/* 802C7B08 002C4908  3B E5 10 00 */	addi r31, r5, _esc__2_318_0@l
 /* 802C7B0C 002C490C  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 802C7B10 002C4910  7C 9E 23 78 */	mr r30, r4
 /* 802C7B14 002C4914  93 A1 00 14 */	stw r29, 0x14(r1)
@@ -7300,9 +7300,9 @@ gdev_cc_read:
 /* 802C7BDC 002C49DC  38 60 D8 EF */	li r3, -10001
 /* 802C7BE0 002C49E0  48 00 00 B4 */	b lbl_802C7C94
 lbl_802C7BE4:
-/* 802C7BE4 002C49E4  3C 60 80 2F */	lis r3, $$2341@ha
+/* 802C7BE4 002C49E4  3C 60 80 2F */	lis r3, _esc__2_341@ha
 /* 802C7BE8 002C49E8  7F 65 DB 78 */	mr r5, r27
-/* 802C7BEC 002C49EC  38 83 10 5C */	addi r4, r3, $$2341@l
+/* 802C7BEC 002C49EC  38 83 10 5C */	addi r4, r3, _esc__2_341@l
 /* 802C7BF0 002C49F0  7F 66 DB 78 */	mr r6, r27
 /* 802C7BF4 002C49F4  38 60 00 01 */	li r3, 1
 /* 802C7BF8 002C49F8  4C C6 31 82 */	crclr 6
@@ -7340,9 +7340,9 @@ lbl_802C7C48:
 /* 802C7C70 002C4A70  4B FF FB 41 */	bl CircleBufferReadBytes
 /* 802C7C74 002C4A74  48 00 00 1C */	b lbl_802C7C90
 lbl_802C7C78:
-/* 802C7C78 002C4A78  3C 60 80 2F */	lis r3, $$2342_0@ha
+/* 802C7C78 002C4A78  3C 60 80 2F */	lis r3, _esc__2_342_0@ha
 /* 802C7C7C 002C4A7C  7F 85 E3 78 */	mr r5, r28
-/* 802C7C80 002C4A80  38 83 10 84 */	addi r4, r3, $$2342_0@l
+/* 802C7C80 002C4A80  38 83 10 84 */	addi r4, r3, _esc__2_342_0@l
 /* 802C7C84 002C4A84  38 60 00 08 */	li r3, 8
 /* 802C7C88 002C4A88  4C C6 31 82 */	crclr 6
 /* 802C7C8C 002C4A8C  48 00 00 D9 */	bl MWTRACE
@@ -7382,9 +7382,9 @@ gdev_cc_shutdown:
 gdev_cc_initialize:
 /* 802C7CDC 002C4ADC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802C7CE0 002C4AE0  7C 08 02 A6 */	mflr r0
-/* 802C7CE4 002C4AE4  3C A0 80 2F */	lis r5, $$2348_0@ha
+/* 802C7CE4 002C4AE4  3C A0 80 2F */	lis r5, _esc__2_348_0@ha
 /* 802C7CE8 002C4AE8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 802C7CEC 002C4AEC  38 05 10 B4 */	addi r0, r5, $$2348_0@l
+/* 802C7CEC 002C4AEC  38 05 10 B4 */	addi r0, r5, _esc__2_348_0@l
 /* 802C7CF0 002C4AF0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802C7CF4 002C4AF4  7C 9F 23 78 */	mr r31, r4
 /* 802C7CF8 002C4AF8  7C 04 03 78 */	mr r4, r0
@@ -7396,9 +7396,9 @@ gdev_cc_initialize:
 /* 802C7D10 002C4B10  7F C3 F3 78 */	mr r3, r30
 /* 802C7D14 002C4B14  7F E4 FB 78 */	mr r4, r31
 /* 802C7D18 002C4B18  4B F7 62 BD */	bl DBInitComm
-/* 802C7D1C 002C4B1C  3C 80 80 2F */	lis r4, $$2349_1@ha
+/* 802C7D1C 002C4B1C  3C 80 80 2F */	lis r4, _esc__2_349_1@ha
 /* 802C7D20 002C4B20  38 60 00 01 */	li r3, 1
-/* 802C7D24 002C4B24  38 84 10 C8 */	addi r4, r4, $$2349_1@l
+/* 802C7D24 002C4B24  38 84 10 C8 */	addi r4, r4, _esc__2_349_1@l
 /* 802C7D28 002C4B28  4C C6 31 82 */	crclr 6
 /* 802C7D2C 002C4B2C  48 00 00 39 */	bl MWTRACE
 /* 802C7D30 002C4B30  3C 60 80 3D */	lis r3, gRecvCB_0@ha

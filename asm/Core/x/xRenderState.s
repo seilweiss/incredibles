@@ -20,12 +20,14 @@ old_far_plane:
 
 .section .sdata2
 
-.global $$2742
-$$2742:
+.global _esc__2_742
+_esc__2_742:
 	.incbin "baserom.dol", 0x32F2C8, 0x4
-.global $$2749_0
-$$2749_0:
+.global _esc__2_749_0
+_esc__2_749_0:
 	.incbin "baserom.dol", 0x32F2CC, 0x4
+
+.if 0
 
 .section .text
 
@@ -51,7 +53,7 @@ xRenderStateSetZBias__Ff:
 /* 800551B4 00051FB4  41 82 00 4C */	beq lbl_80055200
 /* 800551B8 00051FB8  C0 1F 00 80 */	lfs f0, 0x80(r31)
 /* 800551BC 00051FBC  7F E3 FB 78 */	mr r3, r31
-/* 800551C0 00051FC0  C0 42 8B E8 */	lfs f2, $$2742-_SDA2_BASE_(r2)
+/* 800551C0 00051FC0  C0 42 8B E8 */	lfs f2, _esc__2_742-_SDA2_BASE_(r2)
 /* 800551C4 00051FC4  D0 0D 83 D0 */	stfs f0, old_near_plane-_SDA_BASE_(r13)
 /* 800551C8 00051FC8  EF E1 00 B2 */	fmuls f31, f1, f2
 /* 800551CC 00051FCC  C0 1F 00 84 */	lfs f0, 0x84(r31)
@@ -96,7 +98,7 @@ xRenderStateResetZBias__Fv:
 /* 80055258 00052058  48 23 DB 25 */	bl RwCameraSetFarClipPlane
 /* 8005525C 0005205C  7F E3 FB 78 */	mr r3, r31
 /* 80055260 00052060  48 23 D9 ED */	bl RwCameraBeginUpdate
-/* 80055264 00052064  C0 02 8B EC */	lfs f0, $$2749_0-_SDA2_BASE_(r2)
+/* 80055264 00052064  C0 02 8B EC */	lfs f0, _esc__2_749_0-_SDA2_BASE_(r2)
 /* 80055268 00052068  D0 0D 83 D4 */	stfs f0, old_far_plane-_SDA_BASE_(r13)
 /* 8005526C 0005206C  D0 0D 83 D0 */	stfs f0, old_near_plane-_SDA_BASE_(r13)
 lbl_80055270:
@@ -207,3 +209,6 @@ xRenderFixIMBegin__Fv:
 .global xRenderFixIMEnd__Fv
 xRenderFixIMEnd__Fv:
 /* 800553C0 000521C0  4E 80 00 20 */	blr 
+
+.endif
+

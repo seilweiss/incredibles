@@ -2,77 +2,79 @@
 
 .section .bss
 
-.global landDustConfig__30$$2unnamed$$2zRubbleGenerator_cpp$$2
-landDustConfig__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
+.global landDustConfig__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_
+landDustConfig__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_:
 	.skip 0x4C
-.global fakeAsset$1311
-fakeAsset$1311:
+.global fakeAsset_esc__7_1311
+fakeAsset_esc__7_1311:
 	.skip 0x5C
 
 .section .rodata
 
-.global $$2stringBase0_145
-$$2stringBase0_145:
+.global _esc__2_stringBase0_145
+_esc__2_stringBase0_145:
 	.incbin "baserom.dol", 0x2E6E58, 0x10
 
 .section .sbss
 
-.global numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2
-numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
+.global numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_
+numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_:
 	.skip 0x4
-.global numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2
-numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
+.global numActiveRubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_
+numActiveRubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_:
 	.skip 0x4
-.global rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2
-rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
+.global rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_
+rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_:
 	.skip 0x4
-.global rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2
-rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2:
+.global rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_
+rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_:
 	.skip 0x4
 
 .section .sdata2
 
-.global $$21313_3
-$$21313_3:
+.global _esc__2_1313_3
+_esc__2_1313_3:
 	.incbin "baserom.dol", 0x333A70, 0x4
-.global $$21368_2
-$$21368_2:
+.global _esc__2_1368_2
+_esc__2_1368_2:
 	.incbin "baserom.dol", 0x333A74, 0x4
-.global $$21369_2
-$$21369_2:
+.global _esc__2_1369_2
+_esc__2_1369_2:
 	.incbin "baserom.dol", 0x333A78, 0x4
-.global $$21370_2
-$$21370_2:
+.global _esc__2_1370_2
+_esc__2_1370_2:
 	.incbin "baserom.dol", 0x333A7C, 0x4
-.global $$21371_0
-$$21371_0:
+.global _esc__2_1371_0
+_esc__2_1371_0:
 	.incbin "baserom.dol", 0x333A80, 0x8
-.global $$21376_1
-$$21376_1:
+.global _esc__2_1376_1
+_esc__2_1376_1:
 	.incbin "baserom.dol", 0x333A88, 0x8
-.global $$21393_2
-$$21393_2:
+.global _esc__2_1393_2
+_esc__2_1393_2:
 	.incbin "baserom.dol", 0x333A90, 0x4
-.global $$21463_3
-$$21463_3:
+.global _esc__2_1463_3
+_esc__2_1463_3:
 	.incbin "baserom.dol", 0x333A94, 0x4
-.global $$21464_2
-$$21464_2:
+.global _esc__2_1464_2
+_esc__2_1464_2:
 	.incbin "baserom.dol", 0x333A98, 0x4
-.global $$21833_0
-$$21833_0:
+.global _esc__2_1833_0
+_esc__2_1833_0:
 	.incbin "baserom.dol", 0x333A9C, 0x4
-.global $$21834_0
-$$21834_0:
+.global _esc__2_1834_0
+_esc__2_1834_0:
 	.incbin "baserom.dol", 0x333AA0, 0x4
-.global $$21835_0
-$$21835_0:
+.global _esc__2_1835_0
+_esc__2_1835_0:
 	.incbin "baserom.dol", 0x333AA4, 0x4
+
+.if 0
 
 .section .text
 
-.global RubbleEventWrapper__30$$2unnamed$$2zRubbleGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi
-RubbleEventWrapper__30$$2unnamed$$2zRubbleGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi:
+.global RubbleEventWrapper__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi
+RubbleEventWrapper__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi:
 /* 801DF094 001DBE94  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DF098 001DBE98  7C 08 02 A6 */	mflr r0
 /* 801DF09C 001DBE9C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -85,19 +87,19 @@ RubbleEventWrapper__30$$2unnamed$$2zRubbleGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5
 /* 801DF0B8 001DBEB8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DF0BC 001DBEBC  4E 80 00 20 */	blr 
 
-.global StaticBoundsUpdate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFP4xEntP5xVec3
-StaticBoundsUpdate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFP4xEntP5xVec3:
+.global StaticBoundsUpdate__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFP4xEntP5xVec3
+StaticBoundsUpdate__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFP4xEntP5xVec3:
 /* 801DF0C0 001DBEC0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DF0C4 001DBEC4  7C 08 02 A6 */	mflr r0
 /* 801DF0C8 001DBEC8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801DF0CC 001DBECC  48 00 05 5D */	bl BoundsUpdate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFRC5xVec3
+/* 801DF0CC 001DBECC  48 00 05 5D */	bl BoundsUpdate__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFRC5xVec3
 /* 801DF0D0 001DBED0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801DF0D4 001DBED4  7C 08 03 A6 */	mtlr r0
 /* 801DF0D8 001DBED8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DF0DC 001DBEDC  4E 80 00 20 */	blr 
 
-.global Init__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFUiUi
-Init__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFUiUi:
+.global Init__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFUiUi
+Init__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFUiUi:
 /* 801DF0E0 001DBEE0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801DF0E4 001DBEE4  7C 08 02 A6 */	mflr r0
 /* 801DF0E8 001DBEE8  90 01 00 24 */	stw r0, 0x24(r1)
@@ -109,13 +111,13 @@ Init__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFUiUi:
 /* 801DF100 001DBF00  38 80 00 00 */	li r4, 0
 /* 801DF104 001DBF04  38 A0 00 5C */	li r5, 0x5c
 /* 801DF108 001DBF08  98 03 01 00 */	stb r0, 0x100(r3)
-/* 801DF10C 001DBF0C  3C 60 80 3A */	lis r3, fakeAsset$1311@ha
-/* 801DF110 001DBF10  38 63 F6 C4 */	addi r3, r3, fakeAsset$1311@l
+/* 801DF10C 001DBF0C  3C 60 80 3A */	lis r3, fakeAsset_esc__7_1311@ha
+/* 801DF110 001DBF10  38 63 F6 C4 */	addi r3, r3, fakeAsset_esc__7_1311@l
 /* 801DF114 001DBF14  90 1F 01 04 */	stw r0, 0x104(r31)
 /* 801DF118 001DBF18  4B E6 32 19 */	bl xMemorySetV32A32__FPvUiUi
-/* 801DF11C 001DBF1C  3C 60 80 3A */	lis r3, fakeAsset$1311@ha
-/* 801DF120 001DBF20  C0 22 D3 90 */	lfs f1, $$21313_3-_SDA2_BASE_(r2)
-/* 801DF124 001DBF24  38 E3 F6 C4 */	addi r7, r3, fakeAsset$1311@l
+/* 801DF11C 001DBF1C  3C 60 80 3A */	lis r3, fakeAsset_esc__7_1311@ha
+/* 801DF120 001DBF20  C0 22 D3 90 */	lfs f1, _esc__2_1313_3-_SDA2_BASE_(r2)
+/* 801DF124 001DBF24  38 E3 F6 C4 */	addi r7, r3, fakeAsset_esc__7_1311@l
 /* 801DF128 001DBF28  3C 9D F3 98 */	addis r4, r29, 0xf398
 /* 801DF12C 001DBF2C  38 64 05 A4 */	addi r3, r4, 0x5a4
 /* 801DF130 001DBF30  38 C0 00 0B */	li r6, 0xb
@@ -132,9 +134,9 @@ Init__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFUiUi:
 /* 801DF15C 001DBF5C  D0 27 00 38 */	stfs f1, 0x38(r7)
 /* 801DF160 001DBF60  D0 27 00 3C */	stfs f1, 0x3c(r7)
 /* 801DF164 001DBF64  4B E4 7C 5D */	bl assign__5xVec3Ff
-/* 801DF168 001DBF68  3C 60 80 3A */	lis r3, fakeAsset$1311@ha
-/* 801DF16C 001DBF6C  C0 02 D3 90 */	lfs f0, $$21313_3-_SDA2_BASE_(r2)
-/* 801DF170 001DBF70  38 83 F6 C4 */	addi r4, r3, fakeAsset$1311@l
+/* 801DF168 001DBF68  3C 60 80 3A */	lis r3, fakeAsset_esc__7_1311@ha
+/* 801DF16C 001DBF6C  C0 02 D3 90 */	lfs f0, _esc__2_1313_3-_SDA2_BASE_(r2)
+/* 801DF170 001DBF70  38 83 F6 C4 */	addi r4, r3, fakeAsset_esc__7_1311@l
 /* 801DF174 001DBF74  38 00 00 04 */	li r0, 4
 /* 801DF178 001DBF78  D0 04 00 40 */	stfs f0, 0x40(r4)
 /* 801DF17C 001DBF7C  7F E3 FB 78 */	mr r3, r31
@@ -146,9 +148,9 @@ Init__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFUiUi:
 /* 801DF194 001DBF94  7F E3 FB 78 */	mr r3, r31
 /* 801DF198 001DBF98  4B EE 1F F9 */	bl zEntSimpleObj_Setup__FP13zEntSimpleObj
 /* 801DF19C 001DBF9C  38 00 00 01 */	li r0, 1
-/* 801DF1A0 001DBFA0  3C 60 80 1E */	lis r3, StaticBoundsUpdate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFP4xEntP5xVec3@ha
+/* 801DF1A0 001DBFA0  3C 60 80 1E */	lis r3, StaticBoundsUpdate__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFP4xEntP5xVec3@ha
 /* 801DF1A4 001DBFA4  98 1F 00 88 */	stb r0, 0x88(r31)
-/* 801DF1A8 001DBFA8  38 03 F0 C0 */	addi r0, r3, StaticBoundsUpdate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFP4xEntP5xVec3@l
+/* 801DF1A8 001DBFA8  38 03 F0 C0 */	addi r0, r3, StaticBoundsUpdate__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFP4xEntP5xVec3@l
 /* 801DF1AC 001DBFAC  90 1F 00 3C */	stw r0, 0x3c(r31)
 /* 801DF1B0 001DBFB0  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 801DF1B4 001DBFB4  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -156,8 +158,8 @@ Init__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFUiUi:
 /* 801DF1BC 001DBFBC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801DF1C0 001DBFC0  4E 80 00 20 */	blr 
 
-.global DeallocateDestructible__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFv
-DeallocateDestructible__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFv:
+.global DeallocateDestructible__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFv
+DeallocateDestructible__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFv:
 /* 801DF1C4 001DBFC4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801DF1C8 001DBFC8  7C 08 02 A6 */	mflr r0
 /* 801DF1CC 001DBFCC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -185,8 +187,8 @@ lbl_801DF1F8:
 /* 801DF21C 001DC01C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801DF220 001DC020  4E 80 00 20 */	blr 
 
-.global DestructibleInit__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFP18xDestructibleAsset
-DestructibleInit__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFP18xDestructibleAsset:
+.global DestructibleInit__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFP18xDestructibleAsset
+DestructibleInit__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFP18xDestructibleAsset:
 /* 801DF224 001DC024  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801DF228 001DC028  7C 08 02 A6 */	mflr r0
 /* 801DF22C 001DC02C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -196,7 +198,7 @@ DestructibleInit__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFP18xDestructi
 /* 801DF23C 001DC03C  80 03 00 F0 */	lwz r0, 0xf0(r3)
 /* 801DF240 001DC040  28 00 00 00 */	cmplwi r0, 0
 /* 801DF244 001DC044  41 82 00 08 */	beq lbl_801DF24C
-/* 801DF248 001DC048  4B FF FF 7D */	bl DeallocateDestructible__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFv
+/* 801DF248 001DC048  4B FF FF 7D */	bl DeallocateDestructible__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFv
 lbl_801DF24C:
 /* 801DF24C 001DC04C  38 7C 01 54 */	addi r3, r28, 0x154
 /* 801DF250 001DC050  38 1C 01 B0 */	addi r0, r28, 0x1b0
@@ -220,9 +222,9 @@ lbl_801DF278:
 /* 801DF294 001DC094  4B E8 D0 0D */	bl xSTFindAsset__FUiPUi
 /* 801DF298 001DC098  28 03 00 00 */	cmplwi r3, 0
 /* 801DF29C 001DC09C  40 82 00 1C */	bne lbl_801DF2B8
-/* 801DF2A0 001DC0A0  3C 80 80 2F */	lis r4, $$2stringBase0_145@ha
+/* 801DF2A0 001DC0A0  3C 80 80 2F */	lis r4, _esc__2_stringBase0_145@ha
 /* 801DF2A4 001DC0A4  80 7F 00 04 */	lwz r3, 4(r31)
-/* 801DF2A8 001DC0A8  38 84 9E 58 */	addi r4, r4, $$2stringBase0_145@l
+/* 801DF2A8 001DC0A8  38 84 9E 58 */	addi r4, r4, _esc__2_stringBase0_145@l
 /* 801DF2AC 001DC0AC  4B E8 DA 05 */	bl xStrHashCat__FUiPCc
 /* 801DF2B0 001DC0B0  38 80 00 00 */	li r4, 0
 /* 801DF2B4 001DC0B4  4B E8 CF ED */	bl xSTFindAsset__FUiPUi
@@ -253,8 +255,8 @@ lbl_801DF2EC:
 /* 801DF310 001DC110  38 21 00 20 */	addi r1, r1, 0x20
 /* 801DF314 001DC114  4E 80 00 20 */	blr 
 
-.global Activate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFRC5xVec3RC5xVec3fUiRCQ216zRubbleGenerator9ModelDataUiP16zRubbleGenerator15zRubbleLandType15iSndGroupHandle
-Activate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFRC5xVec3RC5xVec3fUiRCQ216zRubbleGenerator9ModelDataUiP16zRubbleGenerator15zRubbleLandType15iSndGroupHandle:
+.global Activate__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFRC5xVec3RC5xVec3fUiRCQ216zRubbleGenerator9ModelDataUiP16zRubbleGenerator15zRubbleLandType15iSndGroupHandle
+Activate__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFRC5xVec3RC5xVec3fUiRCQ216zRubbleGenerator9ModelDataUiP16zRubbleGenerator15zRubbleLandType15iSndGroupHandle:
 /* 801DF318 001DC118  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 801DF31C 001DC11C  7C 08 02 A6 */	mflr r0
 /* 801DF320 001DC120  90 01 00 64 */	stw r0, 0x64(r1)
@@ -291,7 +293,7 @@ Activate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFRC5xVec3RC5xVec3fUiRC
 /* 801DF39C 001DC19C  40 80 00 10 */	bge lbl_801DF3AC
 /* 801DF3A0 001DC1A0  48 00 00 0C */	b lbl_801DF3AC
 lbl_801DF3A4:
-/* 801DF3A4 001DC1A4  C0 02 D3 94 */	lfs f0, $$21368_2-_SDA2_BASE_(r2)
+/* 801DF3A4 001DC1A4  C0 02 D3 94 */	lfs f0, _esc__2_1368_2-_SDA2_BASE_(r2)
 /* 801DF3A8 001DC1A8  D0 1A 01 4C */	stfs f0, 0x14c(r26)
 lbl_801DF3AC:
 /* 801DF3AC 001DC1AC  80 9E 00 00 */	lwz r4, 0(r30)
@@ -320,7 +322,7 @@ lbl_801DF3AC:
 /* 801DF408 001DC208  4B ED 04 D9 */	bl xEntEnable__FP4xEnt
 /* 801DF40C 001DC20C  80 9E 00 08 */	lwz r4, 8(r30)
 /* 801DF410 001DC210  7F 43 D3 78 */	mr r3, r26
-/* 801DF414 001DC214  4B FF FE 11 */	bl DestructibleInit__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFP18xDestructibleAsset
+/* 801DF414 001DC214  4B FF FE 11 */	bl DestructibleInit__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFP18xDestructibleAsset
 /* 801DF418 001DC218  80 1A 00 28 */	lwz r0, 0x28(r26)
 /* 801DF41C 001DC21C  3C 60 80 38 */	lis r3, globals@ha
 /* 801DF420 001DC220  80 9A 00 F0 */	lwz r4, 0xf0(r26)
@@ -365,7 +367,7 @@ lbl_801DF468:
 /* 801DF4B8 001DC2B8  D0 1A 01 18 */	stfs f0, 0x118(r26)
 /* 801DF4BC 001DC2BC  4B E9 22 75 */	bl xVec3Copy__FP5xVec3PC5xVec3
 /* 801DF4C0 001DC2C0  FC 20 F0 90 */	fmr f1, f30
-/* 801DF4C4 001DC2C4  C0 42 D3 98 */	lfs f2, $$21369_2-_SDA2_BASE_(r2)
+/* 801DF4C4 001DC2C4  C0 42 D3 98 */	lfs f2, _esc__2_1369_2-_SDA2_BASE_(r2)
 /* 801DF4C8 001DC2C8  7F 43 D3 78 */	mr r3, r26
 /* 801DF4CC 001DC2CC  38 9A 01 14 */	addi r4, r26, 0x114
 /* 801DF4D0 001DC2D0  38 A1 00 08 */	addi r5, r1, 8
@@ -385,7 +387,7 @@ lbl_801DF468:
 /* 801DF508 001DC308  38 7A 01 20 */	addi r3, r26, 0x120
 /* 801DF50C 001DC30C  4B E3 11 01 */	bl xVec3Length__FPC5xVec3
 /* 801DF510 001DC310  FF E0 08 90 */	fmr f31, f1
-/* 801DF514 001DC314  C0 02 D3 90 */	lfs f0, $$21313_3-_SDA2_BASE_(r2)
+/* 801DF514 001DC314  C0 02 D3 90 */	lfs f0, _esc__2_1313_3-_SDA2_BASE_(r2)
 /* 801DF518 001DC318  38 7A 01 20 */	addi r3, r26, 0x120
 /* 801DF51C 001DC31C  7C 64 1B 78 */	mr r4, r3
 /* 801DF520 001DC320  EC 20 F8 24 */	fdivs f1, f0, f31
@@ -402,11 +404,11 @@ lbl_801DF544:
 /* 801DF548 001DC348  38 9A 01 14 */	addi r4, r26, 0x114
 /* 801DF54C 001DC34C  38 BA 01 08 */	addi r5, r26, 0x108
 /* 801DF550 001DC350  4B E2 83 5D */	bl xVec3Sub__FP5xVec3PC5xVec3PC5xVec3
-/* 801DF554 001DC354  C0 02 D3 94 */	lfs f0, $$21368_2-_SDA2_BASE_(r2)
+/* 801DF554 001DC354  C0 02 D3 94 */	lfs f0, _esc__2_1368_2-_SDA2_BASE_(r2)
 /* 801DF558 001DC358  38 7A 01 20 */	addi r3, r26, 0x120
 /* 801DF55C 001DC35C  D0 1A 01 24 */	stfs f0, 0x124(r26)
 /* 801DF560 001DC360  4B E3 10 AD */	bl xVec3Length__FPC5xVec3
-/* 801DF564 001DC364  C0 02 D3 90 */	lfs f0, $$21313_3-_SDA2_BASE_(r2)
+/* 801DF564 001DC364  C0 02 D3 90 */	lfs f0, _esc__2_1313_3-_SDA2_BASE_(r2)
 /* 801DF568 001DC368  38 7A 01 20 */	addi r3, r26, 0x120
 /* 801DF56C 001DC36C  7C 64 1B 78 */	mr r4, r3
 /* 801DF570 001DC370  EC 20 08 24 */	fdivs f1, f0, f1
@@ -428,15 +430,15 @@ lbl_801DF5AC:
 /* 801DF5AC 001DC3AC  4B E2 7D 79 */	bl xurand__Fv
 /* 801DF5B0 001DC3B0  3C 60 43 30 */	lis r3, 0x4330
 /* 801DF5B4 001DC3B4  93 A1 00 14 */	stw r29, 0x14(r1)
-/* 801DF5B8 001DC3B8  C8 42 D3 A8 */	lfd f2, $$21376_1-_SDA2_BASE_(r2)
+/* 801DF5B8 001DC3B8  C8 42 D3 A8 */	lfd f2, _esc__2_1376_1-_SDA2_BASE_(r2)
 /* 801DF5BC 001DC3BC  38 00 00 18 */	li r0, 0x18
 /* 801DF5C0 001DC3C0  90 61 00 10 */	stw r3, 0x10(r1)
-/* 801DF5C4 001DC3C4  C0 A2 D3 A0 */	lfs f5, $$21371_0-_SDA2_BASE_(r2)
+/* 801DF5C4 001DC3C4  C0 A2 D3 A0 */	lfs f5, _esc__2_1371_0-_SDA2_BASE_(r2)
 /* 801DF5C8 001DC3C8  C8 01 00 10 */	lfd f0, 0x10(r1)
-/* 801DF5CC 001DC3CC  C0 62 D3 9C */	lfs f3, $$21370_2-_SDA2_BASE_(r2)
+/* 801DF5CC 001DC3CC  C0 62 D3 9C */	lfs f3, _esc__2_1370_2-_SDA2_BASE_(r2)
 /* 801DF5D0 001DC3D0  EC 80 10 28 */	fsubs f4, f0, f2
 /* 801DF5D4 001DC3D4  C0 5A 01 3C */	lfs f2, 0x13c(r26)
-/* 801DF5D8 001DC3D8  C0 02 D3 94 */	lfs f0, $$21368_2-_SDA2_BASE_(r2)
+/* 801DF5D8 001DC3D8  C0 02 D3 94 */	lfs f0, _esc__2_1368_2-_SDA2_BASE_(r2)
 /* 801DF5DC 001DC3DC  EC 25 20 7C */	fnmsubs f1, f5, f1, f4
 /* 801DF5E0 001DC3E0  EC 23 00 72 */	fmuls f1, f3, f1
 /* 801DF5E4 001DC3E4  EC 21 10 24 */	fdivs f1, f1, f2
@@ -444,9 +446,9 @@ lbl_801DF5AC:
 /* 801DF5EC 001DC3EC  D0 1A 01 38 */	stfs f0, 0x138(r26)
 /* 801DF5F0 001DC3F0  98 1A 00 21 */	stb r0, 0x21(r26)
 /* 801DF5F4 001DC3F4  98 1A 00 22 */	stb r0, 0x22(r26)
-/* 801DF5F8 001DC3F8  80 6D DB BC */	lwz r3, numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DF5F8 001DC3F8  80 6D DB BC */	lwz r3, numActiveRubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801DF5FC 001DC3FC  38 03 00 01 */	addi r0, r3, 1
-/* 801DF600 001DC400  90 0D DB BC */	stw r0, numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DF600 001DC400  90 0D DB BC */	stw r0, numActiveRubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801DF604 001DC404  E3 E1 00 58 */	psq_l f31, 88(r1), 0, qr0
 /* 801DF608 001DC408  CB E1 00 50 */	lfd f31, 0x50(r1)
 /* 801DF60C 001DC40C  E3 C1 00 48 */	psq_l f30, 72(r1), 0, qr0
@@ -457,8 +459,8 @@ lbl_801DF5AC:
 /* 801DF620 001DC420  38 21 00 60 */	addi r1, r1, 0x60
 /* 801DF624 001DC424  4E 80 00 20 */	blr 
 
-.global BoundsUpdate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFRC5xVec3
-BoundsUpdate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFRC5xVec3:
+.global BoundsUpdate__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFRC5xVec3
+BoundsUpdate__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFRC5xVec3:
 /* 801DF628 001DC428  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DF62C 001DC42C  7C 08 02 A6 */	mflr r0
 /* 801DF630 001DC430  90 01 00 14 */	stw r0, 0x14(r1)
@@ -478,8 +480,8 @@ BoundsUpdate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFRC5xVec3:
 /* 801DF668 001DC468  38 21 00 10 */	addi r1, r1, 0x10
 /* 801DF66C 001DC46C  4E 80 00 20 */	blr 
 
-.global Update__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFf
-Update__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFf:
+.global Update__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFf
+Update__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFf:
 /* 801DF670 001DC470  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 801DF674 001DC474  7C 08 02 A6 */	mflr r0
 /* 801DF678 001DC478  90 01 00 94 */	stw r0, 0x94(r1)
@@ -500,16 +502,16 @@ Update__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFf:
 /* 801DF6B4 001DC4B4  98 1F 01 00 */	stb r0, 0x100(r31)
 /* 801DF6B8 001DC4B8  80 7F 01 44 */	lwz r3, 0x144(r31)
 /* 801DF6BC 001DC4BC  48 00 09 D5 */	bl SignalDeactivated__16zRubbleGeneratorFPCv
-/* 801DF6C0 001DC4C0  80 6D DB BC */	lwz r3, numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DF6C0 001DC4C0  80 6D DB BC */	lwz r3, numActiveRubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801DF6C4 001DC4C4  38 03 FF FF */	addi r0, r3, -1
-/* 801DF6C8 001DC4C8  90 0D DB BC */	stw r0, numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DF6C8 001DC4C8  90 0D DB BC */	stw r0, numActiveRubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801DF6CC 001DC4CC  48 00 02 9C */	b lbl_801DF968
 lbl_801DF6D0:
 /* 801DF6D0 001DC4D0  80 9F 00 28 */	lwz r4, 0x28(r31)
 /* 801DF6D4 001DC4D4  7F E3 FB 78 */	mr r3, r31
 /* 801DF6D8 001DC4D8  80 84 00 54 */	lwz r4, 0x54(r4)
 /* 801DF6DC 001DC4DC  38 84 00 30 */	addi r4, r4, 0x30
-/* 801DF6E0 001DC4E0  4B FF FF 49 */	bl BoundsUpdate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFRC5xVec3
+/* 801DF6E0 001DC4E0  4B FF FF 49 */	bl BoundsUpdate__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFRC5xVec3
 /* 801DF6E4 001DC4E4  C0 1F 01 38 */	lfs f0, 0x138(r31)
 /* 801DF6E8 001DC4E8  38 61 00 20 */	addi r3, r1, 0x20
 /* 801DF6EC 001DC4EC  38 9F 01 20 */	addi r4, r31, 0x120
@@ -564,7 +566,7 @@ lbl_801DF754:
 /* 801DF7A0 001DC5A0  80 63 00 54 */	lwz r3, 0x54(r3)
 /* 801DF7A4 001DC5A4  38 63 00 30 */	addi r3, r3, 0x30
 /* 801DF7A8 001DC5A8  4B E2 B9 01 */	bl __as__5xVec3FRC5xVec3
-/* 801DF7AC 001DC5AC  C0 02 D3 94 */	lfs f0, $$21368_2-_SDA2_BASE_(r2)
+/* 801DF7AC 001DC5AC  C0 02 D3 94 */	lfs f0, _esc__2_1368_2-_SDA2_BASE_(r2)
 /* 801DF7B0 001DC5B0  38 00 00 01 */	li r0, 1
 /* 801DF7B4 001DC5B4  D0 1F 01 38 */	stfs f0, 0x138(r31)
 /* 801DF7B8 001DC5B8  90 1F 01 04 */	stw r0, 0x104(r31)
@@ -587,7 +589,7 @@ lbl_801DF7C0:
 /* 801DF7F8 001DC5F8  28 00 00 00 */	cmplwi r0, 0
 /* 801DF7FC 001DC5FC  40 82 00 20 */	bne lbl_801DF81C
 /* 801DF800 001DC600  C0 5F 01 38 */	lfs f2, 0x138(r31)
-/* 801DF804 001DC604  C0 02 D3 B4 */	lfs f0, $$21463_3-_SDA2_BASE_(r2)
+/* 801DF804 001DC604  C0 02 D3 B4 */	lfs f0, _esc__2_1463_3-_SDA2_BASE_(r2)
 /* 801DF808 001DC608  C0 21 00 3C */	lfs f1, 0x3c(r1)
 /* 801DF80C 001DC60C  EC 00 00 B2 */	fmuls f0, f0, f2
 /* 801DF810 001DC610  EC 00 00 B2 */	fmuls f0, f0, f2
@@ -611,13 +613,13 @@ lbl_801DF848:
 /* 801DF84C 001DC64C  C0 7F 01 3C */	lfs f3, 0x13c(r31)
 /* 801DF850 001DC650  C0 5F 01 38 */	lfs f2, 0x138(r31)
 /* 801DF854 001DC654  EC 24 00 F2 */	fmuls f1, f4, f3
-/* 801DF858 001DC658  C0 02 D3 9C */	lfs f0, $$21370_2-_SDA2_BASE_(r2)
+/* 801DF858 001DC658  C0 02 D3 9C */	lfs f0, _esc__2_1370_2-_SDA2_BASE_(r2)
 /* 801DF85C 001DC65C  EC 43 10 2A */	fadds f2, f3, f2
 /* 801DF860 001DC660  EC 21 00 24 */	fdivs f1, f1, f0
 /* 801DF864 001DC664  EF E4 00 B2 */	fmuls f31, f4, f2
 /* 801DF868 001DC668  4B E3 05 B1 */	bl ceilf__3stdFf
-/* 801DF86C 001DC66C  C0 42 D3 9C */	lfs f2, $$21370_2-_SDA2_BASE_(r2)
-/* 801DF870 001DC670  C0 02 D3 94 */	lfs f0, $$21368_2-_SDA2_BASE_(r2)
+/* 801DF86C 001DC66C  C0 42 D3 9C */	lfs f2, _esc__2_1370_2-_SDA2_BASE_(r2)
+/* 801DF870 001DC670  C0 02 D3 94 */	lfs f0, _esc__2_1368_2-_SDA2_BASE_(r2)
 /* 801DF874 001DC674  EC 5F 10 24 */	fdivs f2, f31, f2
 /* 801DF878 001DC678  EC 21 10 28 */	fsubs f1, f1, f2
 /* 801DF87C 001DC67C  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -664,12 +666,12 @@ lbl_801DF908:
 /* 801DF918 001DC718  48 00 00 3C */	b lbl_801DF954
 lbl_801DF91C:
 /* 801DF91C 001DC71C  C0 3F 01 38 */	lfs f1, 0x138(r31)
-/* 801DF920 001DC720  C0 02 D3 B8 */	lfs f0, $$21464_2-_SDA2_BASE_(r2)
+/* 801DF920 001DC720  C0 02 D3 B8 */	lfs f0, _esc__2_1464_2-_SDA2_BASE_(r2)
 /* 801DF924 001DC724  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801DF928 001DC728  40 80 00 2C */	bge lbl_801DF954
 /* 801DF92C 001DC72C  80 9F 00 28 */	lwz r4, 0x28(r31)
-/* 801DF930 001DC730  3C 60 80 3A */	lis r3, landDustConfig__30$$2unnamed$$2zRubbleGenerator_cpp$$2@ha
-/* 801DF934 001DC734  38 E3 F6 78 */	addi r7, r3, landDustConfig__30$$2unnamed$$2zRubbleGenerator_cpp$$2@l
+/* 801DF930 001DC730  3C 60 80 3A */	lis r3, landDustConfig__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_@ha
+/* 801DF934 001DC734  38 E3 F6 78 */	addi r7, r3, landDustConfig__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_@l
 /* 801DF938 001DC738  FC 20 F0 90 */	fmr f1, f30
 /* 801DF93C 001DC73C  80 64 00 54 */	lwz r3, 0x54(r4)
 /* 801DF940 001DC740  38 BF 01 4C */	addi r5, r31, 0x14c
@@ -694,8 +696,8 @@ lbl_801DF968:
 /* 801DF984 001DC784  38 21 00 90 */	addi r1, r1, 0x90
 /* 801DF988 001DC788  4E 80 00 20 */	blr 
 
-.global Reset__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFv
-Reset__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFv:
+.global Reset__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFv
+Reset__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFv:
 /* 801DF98C 001DC78C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DF990 001DC790  7C 08 02 A6 */	mflr r0
 /* 801DF994 001DC794  90 01 00 14 */	stw r0, 0x14(r1)
@@ -763,12 +765,12 @@ __ct__16zRubbleGeneratorFP21zRubbleGeneratorAssetUi:
 /* 801DFA6C 001DC86C  7F C3 F3 78 */	mr r3, r30
 /* 801DFA70 001DC870  80 9E 00 20 */	lwz r4, 0x20(r30)
 /* 801DFA74 001DC874  38 84 00 10 */	addi r4, r4, 0x10
-/* 801DFA78 001DC878  48 00 0C E9 */	bl xMEMADVANCE$$021zRubbleGeneratorAsset$$1__FP21zRubbleGeneratorAssetUi
-/* 801DFA7C 001DC87C  3C 80 80 2F */	lis r4, $$2stringBase0_145@ha
+/* 801DFA78 001DC878  48 00 0C E9 */	bl xMEMADVANCE_esc__0_21zRubbleGeneratorAsset_esc__1___FP21zRubbleGeneratorAssetUi
+/* 801DFA7C 001DC87C  3C 80 80 2F */	lis r4, _esc__2_stringBase0_145@ha
 /* 801DFA80 001DC880  7C 7F 1B 78 */	mr r31, r3
 /* 801DFA84 001DC884  3B 20 00 00 */	li r25, 0
 /* 801DFA88 001DC888  3B 80 00 00 */	li r28, 0
-/* 801DFA8C 001DC88C  3B 44 9E 58 */	addi r26, r4, $$2stringBase0_145@l
+/* 801DFA8C 001DC88C  3B 44 9E 58 */	addi r26, r4, _esc__2_stringBase0_145@l
 /* 801DFA90 001DC890  3B 60 00 00 */	li r27, 0
 /* 801DFA94 001DC894  48 00 00 5C */	b lbl_801DFAF0
 lbl_801DFA98:
@@ -827,13 +829,13 @@ lbl_801DFB5C:
 /* 801DFB5C 001DC95C  80 1D 00 20 */	lwz r0, 0x20(r29)
 /* 801DFB60 001DC960  7C 06 00 40 */	cmplw r6, r0
 /* 801DFB64 001DC964  41 80 FF E8 */	blt lbl_801DFB4C
-/* 801DFB68 001DC968  3C 80 80 1E */	lis r4, RubbleEventWrapper__30$$2unnamed$$2zRubbleGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi@ha
+/* 801DFB68 001DC968  3C 80 80 1E */	lis r4, RubbleEventWrapper__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi@ha
 /* 801DFB6C 001DC96C  7F E3 FB 78 */	mr r3, r31
-/* 801DFB70 001DC970  38 04 F0 94 */	addi r0, r4, RubbleEventWrapper__30$$2unnamed$$2zRubbleGenerator_cpp$$2FP5xBaseP5xBaseUiPCfP5xBaseUi@l
+/* 801DFB70 001DC970  38 04 F0 94 */	addi r0, r4, RubbleEventWrapper__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi@l
 /* 801DFB74 001DC974  90 1D 00 0C */	stw r0, 0xc(r29)
 /* 801DFB78 001DC978  80 1E 00 1C */	lwz r0, 0x1c(r30)
 /* 801DFB7C 001DC97C  54 04 10 3A */	slwi r4, r0, 2
-/* 801DFB80 001DC980  48 00 0B D9 */	bl xMEMADVANCE$$0CUi$$1__FPCUiUi
+/* 801DFB80 001DC980  48 00 0B D9 */	bl xMEMADVANCE_esc__0_CUi_esc__1___FPCUiUi
 /* 801DFB84 001DC984  90 7D 00 08 */	stw r3, 8(r29)
 /* 801DFB88 001DC988  80 7E 00 44 */	lwz r3, 0x44(r30)
 /* 801DFB8C 001DC98C  4B E8 6E 7D */	bl xSndMgrGetSoundGroup__FUi
@@ -885,7 +887,7 @@ lbl_801DFC28:
 /* 801DFC2C 001DCA2C  98 1E 00 35 */	stb r0, 0x35(r30)
 lbl_801DFC30:
 /* 801DFC30 001DCA30  80 7E 00 10 */	lwz r3, 0x10(r30)
-/* 801DFC34 001DCA34  C0 02 D3 94 */	lfs f0, $$21368_2-_SDA2_BASE_(r2)
+/* 801DFC34 001DCA34  C0 02 D3 94 */	lfs f0, _esc__2_1368_2-_SDA2_BASE_(r2)
 /* 801DFC38 001DCA38  C0 23 00 24 */	lfs f1, 0x24(r3)
 /* 801DFC3C 001DCA3C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801DFC40 001DCA40  40 81 00 7C */	ble lbl_801DFCBC
@@ -897,7 +899,7 @@ lbl_801DFC30:
 /* 801DFC58 001DCA58  40 80 00 60 */	bge lbl_801DFCB8
 lbl_801DFC5C:
 /* 801DFC5C 001DCA5C  C0 1E 00 2C */	lfs f0, 0x2c(r30)
-/* 801DFC60 001DCA60  C3 E2 D3 94 */	lfs f31, $$21368_2-_SDA2_BASE_(r2)
+/* 801DFC60 001DCA60  C3 E2 D3 94 */	lfs f31, _esc__2_1368_2-_SDA2_BASE_(r2)
 /* 801DFC64 001DCA64  EC 00 F0 28 */	fsubs f0, f0, f30
 /* 801DFC68 001DCA68  D0 1E 00 2C */	stfs f0, 0x2c(r30)
 /* 801DFC6C 001DCA6C  48 00 00 20 */	b lbl_801DFC8C
@@ -961,9 +963,9 @@ lbl_801DFD24:
 /* 801DFD2C 001DCB2C  40 82 00 50 */	bne lbl_801DFD7C
 /* 801DFD30 001DCB30  38 00 00 01 */	li r0, 1
 /* 801DFD34 001DCB34  98 03 00 34 */	stb r0, 0x34(r3)
-/* 801DFD38 001DCB38  80 6D DB B8 */	lwz r3, numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DFD38 001DCB38  80 6D DB B8 */	lwz r3, numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801DFD3C 001DCB3C  38 03 00 01 */	addi r0, r3, 1
-/* 801DFD40 001DCB40  90 0D DB B8 */	stw r0, numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DFD40 001DCB40  90 0D DB B8 */	stw r0, numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801DFD44 001DCB44  48 00 00 38 */	b lbl_801DFD7C
 lbl_801DFD48:
 /* 801DFD48 001DCB48  88 03 00 34 */	lbz r0, 0x34(r3)
@@ -971,9 +973,9 @@ lbl_801DFD48:
 /* 801DFD50 001DCB50  41 82 00 2C */	beq lbl_801DFD7C
 /* 801DFD54 001DCB54  38 00 00 00 */	li r0, 0
 /* 801DFD58 001DCB58  98 03 00 34 */	stb r0, 0x34(r3)
-/* 801DFD5C 001DCB5C  80 6D DB B8 */	lwz r3, numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DFD5C 001DCB5C  80 6D DB B8 */	lwz r3, numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801DFD60 001DCB60  38 03 FF FF */	addi r0, r3, -1
-/* 801DFD64 001DCB64  90 0D DB B8 */	stw r0, numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DFD64 001DCB64  90 0D DB B8 */	stw r0, numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801DFD68 001DCB68  48 00 00 14 */	b lbl_801DFD7C
 lbl_801DFD6C:
 /* 801DFD6C 001DCB6C  88 03 00 34 */	lbz r0, 0x34(r3)
@@ -995,9 +997,9 @@ Reset__16zRubbleGeneratorFv:
 /* 801DFD9C 001DCB9C  88 03 00 34 */	lbz r0, 0x34(r3)
 /* 801DFDA0 001DCBA0  28 00 00 00 */	cmplwi r0, 0
 /* 801DFDA4 001DCBA4  41 82 00 10 */	beq lbl_801DFDB4
-/* 801DFDA8 001DCBA8  80 8D DB B8 */	lwz r4, numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DFDA8 001DCBA8  80 8D DB B8 */	lwz r4, numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801DFDAC 001DCBAC  38 04 00 01 */	addi r0, r4, 1
-/* 801DFDB0 001DCBB0  90 0D DB B8 */	stw r0, numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DFDB0 001DCBB0  90 0D DB B8 */	stw r0, numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801DFDB4:
 /* 801DFDB4 001DCBB4  38 00 00 00 */	li r0, 0
 /* 801DFDB8 001DCBB8  98 03 00 35 */	stb r0, 0x35(r3)
@@ -1129,15 +1131,15 @@ lbl_801DFF60:
 /* 801DFF70 001DCD70  7F 83 02 14 */	add r28, r3, r0
 /* 801DFF74 001DCD74  48 00 00 EC */	b lbl_801E0060
 lbl_801DFF78:
-/* 801DFF78 001DCD78  80 0D DB C0 */	lwz r0, rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DFF78 001DCD78  80 0D DB C0 */	lwz r0, rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801DFF7C 001DCD7C  7C 60 CA 14 */	add r3, r0, r25
-/* 801DFF80 001DCD80  48 00 01 09 */	bl IsActive__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleCFv
+/* 801DFF80 001DCD80  48 00 01 09 */	bl IsActive__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleCFv
 /* 801DFF84 001DCD84  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801DFF88 001DCD88  40 82 00 D0 */	bne lbl_801E0058
 /* 801DFF8C 001DCD8C  80 7A 00 10 */	lwz r3, 0x10(r26)
 /* 801DFF90 001DCD90  80 83 00 20 */	lwz r4, 0x20(r3)
 /* 801DFF94 001DCD94  38 84 00 10 */	addi r4, r4, 0x10
-/* 801DFF98 001DCD98  48 00 07 D1 */	bl xMEMADVANCE$$0C21zRubbleGeneratorAsset$$1__FPC21zRubbleGeneratorAssetUi
+/* 801DFF98 001DCD98  48 00 07 D1 */	bl xMEMADVANCE_esc__0_C21zRubbleGeneratorAsset_esc__1___FPC21zRubbleGeneratorAssetUi
 /* 801DFF9C 001DCD9C  80 9A 00 10 */	lwz r4, 0x10(r26)
 /* 801DFFA0 001DCDA0  7C 78 1B 78 */	mr r24, r3
 /* 801DFFA4 001DCDA4  C0 24 00 2C */	lfs f1, 0x2c(r4)
@@ -1161,12 +1163,12 @@ lbl_801DFF78:
 /* 801DFFEC 001DCDEC  7F A7 EB 78 */	mr r7, r29
 /* 801DFFF0 001DCDF0  91 01 00 08 */	stw r8, 8(r1)
 /* 801DFFF4 001DCDF4  7F 49 D3 78 */	mr r9, r26
-/* 801DFFF8 001DCDF8  80 6D DB C0 */	lwz r3, rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801DFFF8 001DCDF8  80 6D DB C0 */	lwz r3, rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801DFFFC 001DCDFC  7D 18 00 2E */	lwzx r8, r24, r0
 /* 801E0000 001DCE00  81 4A 00 3C */	lwz r10, 0x3c(r10)
 /* 801E0004 001DCE04  7C 63 CA 14 */	add r3, r3, r25
-/* 801E0008 001DCE08  4B FF F3 11 */	bl Activate__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFRC5xVec3RC5xVec3fUiRCQ216zRubbleGenerator9ModelDataUiP16zRubbleGenerator15zRubbleLandType15iSndGroupHandle
-/* 801E000C 001DCE0C  80 8D DB C0 */	lwz r4, rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0008 001DCE08  4B FF F3 11 */	bl Activate__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFRC5xVec3RC5xVec3fUiRCQ216zRubbleGenerator9ModelDataUiP16zRubbleGenerator15zRubbleLandType15iSndGroupHandle
+/* 801E000C 001DCE0C  80 8D DB C0 */	lwz r4, rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E0010 001DCE10  57 C0 10 3A */	slwi r0, r30, 2
 /* 801E0014 001DCE14  80 BA 00 28 */	lwz r5, 0x28(r26)
 /* 801E0018 001DCE18  7F 43 D3 78 */	mr r3, r26
@@ -1189,7 +1191,7 @@ lbl_801E0058:
 /* 801E0058 001DCE58  3B 18 00 01 */	addi r24, r24, 1
 /* 801E005C 001DCE5C  3B 39 02 64 */	addi r25, r25, 0x264
 lbl_801E0060:
-/* 801E0060 001DCE60  80 0D DB C4 */	lwz r0, rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0060 001DCE60  80 0D DB C4 */	lwz r0, rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E0064 001DCE64  7C 18 00 00 */	cmpw r24, r0
 /* 801E0068 001DCE68  41 80 FF 10 */	blt lbl_801DFF78
 lbl_801E006C:
@@ -1201,8 +1203,8 @@ lbl_801E006C:
 /* 801E0080 001DCE80  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 801E0084 001DCE84  4E 80 00 20 */	blr 
 
-.global IsActive__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleCFv
-IsActive__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleCFv:
+.global IsActive__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleCFv
+IsActive__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleCFv:
 /* 801E0088 001DCE88  88 63 01 00 */	lbz r3, 0x100(r3)
 /* 801E008C 001DCE8C  4E 80 00 20 */	blr 
 
@@ -1240,7 +1242,7 @@ GetFirstModel__16zRubbleGeneratorCFv:
 lbl_801E00F0:
 /* 801E00F0 001DCEF0  80 83 00 20 */	lwz r4, 0x20(r3)
 /* 801E00F4 001DCEF4  38 84 00 10 */	addi r4, r4, 0x10
-/* 801E00F8 001DCEF8  48 00 06 71 */	bl xMEMADVANCE$$0C21zRubbleGeneratorAsset$$1__FPC21zRubbleGeneratorAssetUi
+/* 801E00F8 001DCEF8  48 00 06 71 */	bl xMEMADVANCE_esc__0_C21zRubbleGeneratorAsset_esc__1___FPC21zRubbleGeneratorAssetUi
 /* 801E00FC 001DCEFC  80 63 00 00 */	lwz r3, 0(r3)
 lbl_801E0100:
 /* 801E0100 001DCF00  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1401,12 +1403,12 @@ lbl_801E02F8:
 /* 801E0334 001DD134  98 01 00 08 */	stb r0, 8(r1)
 /* 801E0338 001DD138  38 81 00 14 */	addi r4, r1, 0x14
 /* 801E033C 001DD13C  38 A1 00 08 */	addi r5, r1, 8
-/* 801E0340 001DD140  48 00 00 89 */	bl __ct__Q230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallbackFPC7xSpherePb
+/* 801E0340 001DD140  48 00 00 89 */	bl __ct__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallbackFPC7xSpherePb
 /* 801E0344 001DD144  38 81 00 24 */	addi r4, r1, 0x24
 /* 801E0348 001DD148  38 C1 00 0C */	addi r6, r1, 0xc
 /* 801E034C 001DD14C  7C 85 23 78 */	mr r5, r4
 /* 801E0350 001DD150  38 6D C8 40 */	addi r3, r13, colls_grid-_SDA_BASE_
-/* 801E0354 001DD154  48 00 04 55 */	bl xGridCheckBound$$0Q230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallback$$1__FR5xGridRC6xBoundRC7xQCDataRQ230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallback
+/* 801E0354 001DD154  48 00 04 55 */	bl xGridCheckBound_esc__0_Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallback_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallback
 /* 801E0358 001DD158  88 01 00 08 */	lbz r0, 8(r1)
 /* 801E035C 001DD15C  28 00 00 00 */	cmplwi r0, 0
 /* 801E0360 001DD160  41 82 00 0C */	beq lbl_801E036C
@@ -1417,7 +1419,7 @@ lbl_801E036C:
 /* 801E0370 001DD170  38 C1 00 0C */	addi r6, r1, 0xc
 /* 801E0374 001DD174  7C 85 23 78 */	mr r5, r4
 /* 801E0378 001DD178  38 6D C8 78 */	addi r3, r13, colls_oso_grid-_SDA_BASE_
-/* 801E037C 001DD17C  48 00 04 2D */	bl xGridCheckBound$$0Q230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallback$$1__FR5xGridRC6xBoundRC7xQCDataRQ230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallback
+/* 801E037C 001DD17C  48 00 04 2D */	bl xGridCheckBound_esc__0_Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallback_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallback
 /* 801E0380 001DD180  88 01 00 08 */	lbz r0, 8(r1)
 /* 801E0384 001DD184  28 00 00 00 */	cmplwi r0, 0
 /* 801E0388 001DD188  41 82 00 0C */	beq lbl_801E0394
@@ -1428,7 +1430,7 @@ lbl_801E0394:
 /* 801E0398 001DD198  38 C1 00 0C */	addi r6, r1, 0xc
 /* 801E039C 001DD19C  7C 85 23 78 */	mr r5, r4
 /* 801E03A0 001DD1A0  38 6D C8 B0 */	addi r3, r13, npcs_grid-_SDA_BASE_
-/* 801E03A4 001DD1A4  48 00 04 05 */	bl xGridCheckBound$$0Q230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallback$$1__FR5xGridRC6xBoundRC7xQCDataRQ230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallback
+/* 801E03A4 001DD1A4  48 00 04 05 */	bl xGridCheckBound_esc__0_Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallback_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallback
 /* 801E03A8 001DD1A8  88 01 00 08 */	lbz r0, 8(r1)
 /* 801E03AC 001DD1AC  7C 00 00 34 */	cntlzw r0, r0
 /* 801E03B0 001DD1B0  54 03 D9 7E */	srwi r3, r0, 5
@@ -1439,8 +1441,8 @@ lbl_801E03B4:
 /* 801E03C0 001DD1C0  38 21 00 80 */	addi r1, r1, 0x80
 /* 801E03C4 001DD1C4  4E 80 00 20 */	blr 
 
-.global __ct__Q230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallbackFPC7xSpherePb
-__ct__Q230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallbackFPC7xSpherePb:
+.global __ct__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallbackFPC7xSpherePb
+__ct__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallbackFPC7xSpherePb:
 /* 801E03C8 001DD1C8  90 83 00 00 */	stw r4, 0(r3)
 /* 801E03CC 001DD1CC  90 A3 00 04 */	stw r5, 4(r3)
 /* 801E03D0 001DD1D0  4E 80 00 20 */	blr 
@@ -1452,8 +1454,8 @@ zRubbleGeneratorSceneSetup__FP6zScene:
 /* 801E03DC 001DD1DC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801E03E0 001DD1E0  38 00 00 00 */	li r0, 0
 /* 801E03E4 001DD1E4  BF A1 00 14 */	stmw r29, 0x14(r1)
-/* 801E03E8 001DD1E8  90 0D DB B8 */	stw r0, numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
-/* 801E03EC 001DD1EC  90 0D DB C4 */	stw r0, rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E03E8 001DD1E8  90 0D DB B8 */	stw r0, numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801E03EC 001DD1EC  90 0D DB C4 */	stw r0, rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E03F0 001DD1F0  80 03 02 88 */	lwz r0, 0x288(r3)
 /* 801E03F4 001DD1F4  2C 00 00 00 */	cmpwi r0, 0
 /* 801E03F8 001DD1F8  41 82 01 34 */	beq lbl_801E052C
@@ -1467,9 +1469,9 @@ lbl_801E0410:
 /* 801E0414 001DD214  48 00 03 8D */	bl IsOn__16zRubbleGeneratorCFv
 /* 801E0418 001DD218  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801E041C 001DD21C  41 82 00 10 */	beq lbl_801E042C
-/* 801E0420 001DD220  80 6D DB B8 */	lwz r3, numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0420 001DD220  80 6D DB B8 */	lwz r3, numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E0424 001DD224  38 03 00 01 */	addi r0, r3, 1
-/* 801E0428 001DD228  90 0D DB B8 */	stw r0, numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0428 001DD228  90 0D DB B8 */	stw r0, numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801E042C:
 /* 801E042C 001DD22C  28 1E 00 00 */	cmplwi r30, 0
 /* 801E0430 001DD230  40 82 00 10 */	bne lbl_801E0440
@@ -1479,61 +1481,61 @@ lbl_801E042C:
 lbl_801E0440:
 /* 801E0440 001DD240  7F E3 FB 78 */	mr r3, r31
 /* 801E0444 001DD244  48 00 03 3D */	bl GetSpawnLimit__16zRubbleGeneratorCFv
-/* 801E0448 001DD248  80 0D DB C4 */	lwz r0, rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0448 001DD248  80 0D DB C4 */	lwz r0, rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E044C 001DD24C  3B FF 00 3C */	addi r31, r31, 0x3c
 /* 801E0450 001DD250  7C 00 1A 14 */	add r0, r0, r3
-/* 801E0454 001DD254  90 0D DB C4 */	stw r0, rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0454 001DD254  90 0D DB C4 */	stw r0, rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801E0458:
 /* 801E0458 001DD258  7C 1F E8 40 */	cmplw r31, r29
 /* 801E045C 001DD25C  41 80 FF B4 */	blt lbl_801E0410
-/* 801E0460 001DD260  80 0D DB C4 */	lwz r0, rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0460 001DD260  80 0D DB C4 */	lwz r0, rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E0464 001DD264  28 00 00 40 */	cmplwi r0, 0x40
 /* 801E0468 001DD268  40 81 00 0C */	ble lbl_801E0474
 /* 801E046C 001DD26C  38 00 00 40 */	li r0, 0x40
-/* 801E0470 001DD270  90 0D DB C4 */	stw r0, rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0470 001DD270  90 0D DB C4 */	stw r0, rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 lbl_801E0474:
-/* 801E0474 001DD274  83 ED DB C4 */	lwz r31, rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0474 001DD274  83 ED DB C4 */	lwz r31, rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E0478 001DD278  38 80 00 00 */	li r4, 0
 /* 801E047C 001DD27C  38 A0 00 00 */	li r5, 0
 /* 801E0480 001DD280  1C 7F 02 64 */	mulli r3, r31, 0x264
 /* 801E0484 001DD284  38 63 00 10 */	addi r3, r3, 0x10
 /* 801E0488 001DD288  4B E4 15 49 */	bl __nwa__FUl14xMemStaticTypeUi
-/* 801E048C 001DD28C  3C 80 80 1E */	lis r4, __ct__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFv@ha
+/* 801E048C 001DD28C  3C 80 80 1E */	lis r4, __ct__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFv@ha
 /* 801E0490 001DD290  7F E7 FB 78 */	mr r7, r31
-/* 801E0494 001DD294  38 84 05 40 */	addi r4, r4, __ct__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFv@l
+/* 801E0494 001DD294  38 84 05 40 */	addi r4, r4, __ct__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFv@l
 /* 801E0498 001DD298  38 A0 00 00 */	li r5, 0
 /* 801E049C 001DD29C  38 C0 02 64 */	li r6, 0x264
 /* 801E04A0 001DD2A0  48 01 A5 8D */	bl __construct_new_array
-/* 801E04A4 001DD2A4  90 6D DB C0 */	stw r3, rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E04A4 001DD2A4  90 6D DB C0 */	stw r3, rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E04A8 001DD2A8  3B A0 00 00 */	li r29, 0
 /* 801E04AC 001DD2AC  3B E0 00 00 */	li r31, 0
 /* 801E04B0 001DD2B0  48 00 00 20 */	b lbl_801E04D0
 lbl_801E04B4:
-/* 801E04B4 001DD2B4  80 0D DB C0 */	lwz r0, rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E04B4 001DD2B4  80 0D DB C0 */	lwz r0, rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E04B8 001DD2B8  7F A4 EB 78 */	mr r4, r29
 /* 801E04BC 001DD2BC  7F C5 F3 78 */	mr r5, r30
 /* 801E04C0 001DD2C0  7C 60 FA 14 */	add r3, r0, r31
-/* 801E04C4 001DD2C4  4B FF EC 1D */	bl Init__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFUiUi
+/* 801E04C4 001DD2C4  4B FF EC 1D */	bl Init__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFUiUi
 /* 801E04C8 001DD2C8  3B BD 00 01 */	addi r29, r29, 1
 /* 801E04CC 001DD2CC  3B FF 02 64 */	addi r31, r31, 0x264
 lbl_801E04D0:
-/* 801E04D0 001DD2D0  80 0D DB C4 */	lwz r0, rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E04D0 001DD2D0  80 0D DB C4 */	lwz r0, rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E04D4 001DD2D4  7C 1D 00 40 */	cmplw r29, r0
 /* 801E04D8 001DD2D8  41 80 FF DC */	blt lbl_801E04B4
 /* 801E04DC 001DD2DC  38 00 00 00 */	li r0, 0
-/* 801E04E0 001DD2E0  90 0D DB BC */	stw r0, numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E04E0 001DD2E0  90 0D DB BC */	stw r0, numActiveRubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E04E4 001DD2E4  4B FE 14 1D */	bl setup__Q24zNPC10light_dustFv
-/* 801E04E8 001DD2E8  3C 60 80 3A */	lis r3, landDustConfig__30$$2unnamed$$2zRubbleGenerator_cpp$$2@ha
+/* 801E04E8 001DD2E8  3C 60 80 3A */	lis r3, landDustConfig__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_@ha
 /* 801E04EC 001DD2EC  3C 80 80 3A */	lis r4, default_config__Q24zNPC10light_dust@ha
-/* 801E04F0 001DD2F0  38 63 F6 78 */	addi r3, r3, landDustConfig__30$$2unnamed$$2zRubbleGenerator_cpp$$2@l
+/* 801E04F0 001DD2F0  38 63 F6 78 */	addi r3, r3, landDustConfig__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_@l
 /* 801E04F4 001DD2F4  38 84 E2 80 */	addi r4, r4, default_config__Q24zNPC10light_dust@l
 /* 801E04F8 001DD2F8  4B EB 56 15 */	bl __as__Q34zNPC10light_dust6configFRCQ34zNPC10light_dust6config
-/* 801E04FC 001DD2FC  3C 60 80 3A */	lis r3, landDustConfig__30$$2unnamed$$2zRubbleGenerator_cpp$$2@ha
-/* 801E0500 001DD300  C0 62 D3 BC */	lfs f3, $$21833_0-_SDA2_BASE_(r2)
-/* 801E0504 001DD304  38 63 F6 78 */	addi r3, r3, landDustConfig__30$$2unnamed$$2zRubbleGenerator_cpp$$2@l
-/* 801E0508 001DD308  C0 42 D3 B0 */	lfs f2, $$21393_2-_SDA2_BASE_(r2)
-/* 801E050C 001DD30C  C0 02 D3 C4 */	lfs f0, $$21835_0-_SDA2_BASE_(r2)
-/* 801E0510 001DD310  C0 22 D3 C0 */	lfs f1, $$21834_0-_SDA2_BASE_(r2)
+/* 801E04FC 001DD2FC  3C 60 80 3A */	lis r3, landDustConfig__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_@ha
+/* 801E0500 001DD300  C0 62 D3 BC */	lfs f3, _esc__2_1833_0-_SDA2_BASE_(r2)
+/* 801E0504 001DD304  38 63 F6 78 */	addi r3, r3, landDustConfig__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_@l
+/* 801E0508 001DD308  C0 42 D3 B0 */	lfs f2, _esc__2_1393_2-_SDA2_BASE_(r2)
+/* 801E050C 001DD30C  C0 02 D3 C4 */	lfs f0, _esc__2_1835_0-_SDA2_BASE_(r2)
+/* 801E0510 001DD310  C0 22 D3 C0 */	lfs f1, _esc__2_1834_0-_SDA2_BASE_(r2)
 /* 801E0514 001DD314  D0 63 00 18 */	stfs f3, 0x18(r3)
 /* 801E0518 001DD318  D0 43 00 00 */	stfs f2, 0(r3)
 /* 801E051C 001DD31C  D0 43 00 3C */	stfs f2, 0x3c(r3)
@@ -1547,8 +1549,8 @@ lbl_801E052C:
 /* 801E0538 001DD338  38 21 00 20 */	addi r1, r1, 0x20
 /* 801E053C 001DD33C  4E 80 00 20 */	blr 
 
-.global __ct__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFv
-__ct__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFv:
+.global __ct__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFv
+__ct__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFv:
 /* 801E0540 001DD340  4E 80 00 20 */	blr 
 
 .global zRubbleGeneratorUpdate__FP6zScenef
@@ -1559,7 +1561,7 @@ zRubbleGeneratorUpdate__FP6zScenef:
 /* 801E0550 001DD350  DB E1 00 18 */	stfd f31, 0x18(r1)
 /* 801E0554 001DD354  FF E0 08 90 */	fmr f31, f1
 /* 801E0558 001DD358  BF C1 00 10 */	stmw r30, 0x10(r1)
-/* 801E055C 001DD35C  80 0D DB B8 */	lwz r0, numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E055C 001DD35C  80 0D DB B8 */	lwz r0, numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E0560 001DD360  2C 00 00 00 */	cmpwi r0, 0
 /* 801E0564 001DD364  40 81 00 40 */	ble lbl_801E05A4
 /* 801E0568 001DD368  80 03 02 88 */	lwz r0, 0x288(r3)
@@ -1581,27 +1583,27 @@ lbl_801E059C:
 /* 801E059C 001DD39C  7C 1F F0 40 */	cmplw r31, r30
 /* 801E05A0 001DD3A0  41 80 FF DC */	blt lbl_801E057C
 lbl_801E05A4:
-/* 801E05A4 001DD3A4  80 0D DB BC */	lwz r0, numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E05A4 001DD3A4  80 0D DB BC */	lwz r0, numActiveRubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E05A8 001DD3A8  2C 00 00 00 */	cmpwi r0, 0
 /* 801E05AC 001DD3AC  40 81 00 48 */	ble lbl_801E05F4
 /* 801E05B0 001DD3B0  3B C0 00 00 */	li r30, 0
 /* 801E05B4 001DD3B4  3B E0 00 00 */	li r31, 0
 /* 801E05B8 001DD3B8  48 00 00 30 */	b lbl_801E05E8
 lbl_801E05BC:
-/* 801E05BC 001DD3BC  80 0D DB C0 */	lwz r0, rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E05BC 001DD3BC  80 0D DB C0 */	lwz r0, rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E05C0 001DD3C0  7C 60 FA 14 */	add r3, r0, r31
-/* 801E05C4 001DD3C4  4B FF FA C5 */	bl IsActive__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleCFv
+/* 801E05C4 001DD3C4  4B FF FA C5 */	bl IsActive__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleCFv
 /* 801E05C8 001DD3C8  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801E05CC 001DD3CC  41 82 00 14 */	beq lbl_801E05E0
-/* 801E05D0 001DD3D0  80 0D DB C0 */	lwz r0, rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E05D0 001DD3D0  80 0D DB C0 */	lwz r0, rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E05D4 001DD3D4  FC 20 F8 90 */	fmr f1, f31
 /* 801E05D8 001DD3D8  7C 60 FA 14 */	add r3, r0, r31
-/* 801E05DC 001DD3DC  4B FF F0 95 */	bl Update__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFf
+/* 801E05DC 001DD3DC  4B FF F0 95 */	bl Update__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFf
 lbl_801E05E0:
 /* 801E05E0 001DD3E0  3B DE 00 01 */	addi r30, r30, 1
 /* 801E05E4 001DD3E4  3B FF 02 64 */	addi r31, r31, 0x264
 lbl_801E05E8:
-/* 801E05E8 001DD3E8  80 0D DB C4 */	lwz r0, rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E05E8 001DD3E8  80 0D DB C4 */	lwz r0, rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E05EC 001DD3EC  7C 1E 00 40 */	cmplw r30, r0
 /* 801E05F0 001DD3F0  41 80 FF CC */	blt lbl_801E05BC
 lbl_801E05F4:
@@ -1618,26 +1620,26 @@ zRubbleGeneratorRender__Fv:
 /* 801E0610 001DD410  7C 08 02 A6 */	mflr r0
 /* 801E0614 001DD414  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801E0618 001DD418  BF C1 00 08 */	stmw r30, 8(r1)
-/* 801E061C 001DD41C  80 0D DB BC */	lwz r0, numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E061C 001DD41C  80 0D DB BC */	lwz r0, numActiveRubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E0620 001DD420  2C 00 00 00 */	cmpwi r0, 0
 /* 801E0624 001DD424  40 81 00 44 */	ble lbl_801E0668
 /* 801E0628 001DD428  3B C0 00 00 */	li r30, 0
 /* 801E062C 001DD42C  3B E0 00 00 */	li r31, 0
 /* 801E0630 001DD430  48 00 00 2C */	b lbl_801E065C
 lbl_801E0634:
-/* 801E0634 001DD434  80 0D DB C0 */	lwz r0, rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0634 001DD434  80 0D DB C0 */	lwz r0, rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E0638 001DD438  7C 60 FA 14 */	add r3, r0, r31
-/* 801E063C 001DD43C  4B FF FA 4D */	bl IsActive__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleCFv
+/* 801E063C 001DD43C  4B FF FA 4D */	bl IsActive__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleCFv
 /* 801E0640 001DD440  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801E0644 001DD444  41 82 00 10 */	beq lbl_801E0654
-/* 801E0648 001DD448  80 0D DB C0 */	lwz r0, rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0648 001DD448  80 0D DB C0 */	lwz r0, rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E064C 001DD44C  7C 60 FA 14 */	add r3, r0, r31
 /* 801E0650 001DD450  4B E4 60 D9 */	bl xEntRender__FP4xEnt
 lbl_801E0654:
 /* 801E0654 001DD454  3B DE 00 01 */	addi r30, r30, 1
 /* 801E0658 001DD458  3B FF 02 64 */	addi r31, r31, 0x264
 lbl_801E065C:
-/* 801E065C 001DD45C  80 0D DB C4 */	lwz r0, rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E065C 001DD45C  80 0D DB C4 */	lwz r0, rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E0660 001DD460  7C 1E 00 40 */	cmplw r30, r0
 /* 801E0664 001DD464  41 80 FF D0 */	blt lbl_801E0634
 lbl_801E0668:
@@ -1656,20 +1658,20 @@ zRubbleGeneratorReset__FP6zScene:
 /* 801E068C 001DD48C  3B E0 00 00 */	li r31, 0
 /* 801E0690 001DD490  7C 7D 1B 78 */	mr r29, r3
 /* 801E0694 001DD494  3B C0 00 00 */	li r30, 0
-/* 801E0698 001DD498  93 ED DB BC */	stw r31, numActiveRubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E0698 001DD498  93 ED DB BC */	stw r31, numActiveRubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E069C 001DD49C  48 00 00 18 */	b lbl_801E06B4
 lbl_801E06A0:
-/* 801E06A0 001DD4A0  80 0D DB C0 */	lwz r0, rubble__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E06A0 001DD4A0  80 0D DB C0 */	lwz r0, rubble__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E06A4 001DD4A4  7C 60 FA 14 */	add r3, r0, r31
-/* 801E06A8 001DD4A8  4B FF F2 E5 */	bl Reset__Q230$$2unnamed$$2zRubbleGenerator_cpp$$27zRubbleFv
+/* 801E06A8 001DD4A8  4B FF F2 E5 */	bl Reset__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_7zRubbleFv
 /* 801E06AC 001DD4AC  3B DE 00 01 */	addi r30, r30, 1
 /* 801E06B0 001DD4B0  3B FF 02 64 */	addi r31, r31, 0x264
 lbl_801E06B4:
-/* 801E06B4 001DD4B4  80 0D DB C4 */	lwz r0, rubbleCount__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E06B4 001DD4B4  80 0D DB C4 */	lwz r0, rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E06B8 001DD4B8  7C 1E 00 40 */	cmplw r30, r0
 /* 801E06BC 001DD4BC  41 80 FF E4 */	blt lbl_801E06A0
 /* 801E06C0 001DD4C0  38 00 00 00 */	li r0, 0
-/* 801E06C4 001DD4C4  90 0D DB B8 */	stw r0, numActiveGenerators__30$$2unnamed$$2zRubbleGenerator_cpp$$2-_SDA_BASE_(r13)
+/* 801E06C4 001DD4C4  90 0D DB B8 */	stw r0, numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_-_SDA_BASE_(r13)
 /* 801E06C8 001DD4C8  80 1D 02 88 */	lwz r0, 0x288(r29)
 /* 801E06CC 001DD4CC  83 DD 04 BC */	lwz r30, 0x4bc(r29)
 /* 801E06D0 001DD4D0  1C 00 00 3C */	mulli r0, r0, 0x3c
@@ -1688,8 +1690,8 @@ lbl_801E06E8:
 /* 801E06FC 001DD4FC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801E0700 001DD500  4E 80 00 20 */	blr 
 
-.global __cl__Q230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallbackFRC4xEnt
-__cl__Q230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallbackFRC4xEnt:
+.global __cl__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallbackFRC4xEnt
+__cl__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallbackFRC4xEnt:
 /* 801E0704 001DD504  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801E0708 001DD508  7C 08 02 A6 */	mflr r0
 /* 801E070C 001DD50C  38 84 00 68 */	addi r4, r4, 0x68
@@ -1714,18 +1716,18 @@ lbl_801E0744:
 /* 801E0750 001DD550  38 21 00 10 */	addi r1, r1, 0x10
 /* 801E0754 001DD554  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$0CUi$$1__FPCUiUi
-xMEMADVANCE$$0CUi$$1__FPCUiUi:
+.global xMEMADVANCE_esc__0_CUi_esc__1___FPCUiUi
+xMEMADVANCE_esc__0_CUi_esc__1___FPCUiUi:
 /* 801E0758 001DD558  7C 63 22 14 */	add r3, r3, r4
 /* 801E075C 001DD55C  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$021zRubbleGeneratorAsset$$1__FP21zRubbleGeneratorAssetUi
-xMEMADVANCE$$021zRubbleGeneratorAsset$$1__FP21zRubbleGeneratorAssetUi:
+.global xMEMADVANCE_esc__0_21zRubbleGeneratorAsset_esc__1___FP21zRubbleGeneratorAssetUi
+xMEMADVANCE_esc__0_21zRubbleGeneratorAsset_esc__1___FP21zRubbleGeneratorAssetUi:
 /* 801E0760 001DD560  7C 63 22 14 */	add r3, r3, r4
 /* 801E0764 001DD564  4E 80 00 20 */	blr 
 
-.global xMEMADVANCE$$0C21zRubbleGeneratorAsset$$1__FPC21zRubbleGeneratorAssetUi
-xMEMADVANCE$$0C21zRubbleGeneratorAsset$$1__FPC21zRubbleGeneratorAssetUi:
+.global xMEMADVANCE_esc__0_C21zRubbleGeneratorAsset_esc__1___FPC21zRubbleGeneratorAssetUi
+xMEMADVANCE_esc__0_C21zRubbleGeneratorAsset_esc__1___FPC21zRubbleGeneratorAssetUi:
 /* 801E0768 001DD568  7C 63 22 14 */	add r3, r3, r4
 /* 801E076C 001DD56C  4E 80 00 20 */	blr 
 
@@ -1756,8 +1758,8 @@ IsOn__16zRubbleGeneratorCFv:
 /* 801E07A0 001DD5A0  88 63 00 34 */	lbz r3, 0x34(r3)
 /* 801E07A4 001DD5A4  4E 80 00 20 */	blr 
 
-.global xGridCheckBound$$0Q230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallback$$1__FR5xGridRC6xBoundRC7xQCDataRQ230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallback
-xGridCheckBound$$0Q230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallback$$1__FR5xGridRC6xBoundRC7xQCDataRQ230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallback:
+.global xGridCheckBound_esc__0_Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallback_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallback
+xGridCheckBound_esc__0_Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallback_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallback:
 /* 801E07A8 001DD5A8  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 801E07AC 001DD5AC  7C 08 02 A6 */	mflr r0
 /* 801E07B0 001DD5B0  7C 89 23 78 */	mr r9, r4
@@ -1788,7 +1790,7 @@ lbl_801E0800:
 /* 801E0810 001DD610  41 82 00 24 */	beq lbl_801E0834
 /* 801E0814 001DD614  80 9F 00 00 */	lwz r4, 0(r31)
 /* 801E0818 001DD618  7F 83 E3 78 */	mr r3, r28
-/* 801E081C 001DD61C  4B FF FE E9 */	bl __cl__Q230$$2unnamed$$2zRubbleGenerator_cpp$$211HitCallbackFRC4xEnt
+/* 801E081C 001DD61C  4B FF FE E9 */	bl __cl__Q230_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_11HitCallbackFRC4xEnt
 /* 801E0820 001DD620  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801E0824 001DD624  40 82 00 10 */	bne lbl_801E0834
 /* 801E0828 001DD628  38 61 00 18 */	addi r3, r1, 0x18
@@ -1823,3 +1825,6 @@ lbl_801E0888:
 /* 801E0890 001DD690  7C 08 03 A6 */	mtlr r0
 /* 801E0894 001DD694  38 21 00 60 */	addi r1, r1, 0x60
 /* 801E0898 001DD698  4E 80 00 20 */	blr 
+
+.endif
+

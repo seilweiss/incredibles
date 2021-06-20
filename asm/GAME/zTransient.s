@@ -2,14 +2,16 @@
 
 .section .sdata2
 
-.global $$2653_1
-$$2653_1:
+.global _esc__2_653_1
+_esc__2_653_1:
 	.incbin "baserom.dol", 0x3320E0, 0x8
+
+.if 0
 
 .section .text
 
-.global get_world_box__24$$2unnamed$$2zTransient_cpp$$2FR4xBox
-get_world_box__24$$2unnamed$$2zTransient_cpp$$2FR4xBox:
+.global get_world_box__24_esc__2_unnamed_esc__2_zTransient_cpp_esc__2_FR4xBox
+get_world_box__24_esc__2_unnamed_esc__2_zTransient_cpp_esc__2_FR4xBox:
 /* 80166360 00163160  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80166364 00163164  7C 08 02 A6 */	mflr r0
 /* 80166368 00163168  90 01 00 34 */	stw r0, 0x34(r1)
@@ -62,8 +64,8 @@ lbl_80166400:
 /* 80166414 00163214  38 21 00 30 */	addi r1, r1, 0x30
 /* 80166418 00163218  4E 80 00 20 */	blr 
 
-.global cb_check_damage__24$$2unnamed$$2zTransient_cpp$$2FPQ221xSpacePartitionTree2D10entry_dataPv
-cb_check_damage__24$$2unnamed$$2zTransient_cpp$$2FPQ221xSpacePartitionTree2D10entry_dataPv:
+.global cb_check_damage__24_esc__2_unnamed_esc__2_zTransient_cpp_esc__2_FPQ221xSpacePartitionTree2D10entry_dataPv
+cb_check_damage__24_esc__2_unnamed_esc__2_zTransient_cpp_esc__2_FPQ221xSpacePartitionTree2D10entry_dataPv:
 /* 8016641C 0016321C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80166420 00163220  7C 08 02 A6 */	mflr r0
 /* 80166424 00163224  90 01 00 24 */	stw r0, 0x24(r1)
@@ -92,7 +94,7 @@ lbl_80166474:
 /* 80166478 00163278  7F A3 EB 78 */	mr r3, r29
 /* 8016647C 0016327C  4B F6 40 21 */	bl get_damage__6zFlameCFv
 /* 80166480 00163280  D0 3E 00 04 */	stfs f1, 4(r30)
-/* 80166484 00163284  C0 02 BA 00 */	lfs f0, $$2653_1-_SDA2_BASE_(r2)
+/* 80166484 00163284  C0 02 BA 00 */	lfs f0, _esc__2_653_1-_SDA2_BASE_(r2)
 /* 80166488 00163288  C0 3E 00 04 */	lfs f1, 4(r30)
 /* 8016648C 0016328C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80166490 00163290  4C 40 13 82 */	cror 2, 0, 2
@@ -139,7 +141,7 @@ lbl_80166518:
 /* 8016651C 0016331C  D0 1E 00 04 */	stfs f0, 4(r30)
 lbl_80166520:
 /* 80166520 00163320  C0 3E 00 04 */	lfs f1, 4(r30)
-/* 80166524 00163324  C0 02 BA 00 */	lfs f0, $$2653_1-_SDA2_BASE_(r2)
+/* 80166524 00163324  C0 02 BA 00 */	lfs f0, _esc__2_653_1-_SDA2_BASE_(r2)
 /* 80166528 00163328  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8016652C 0016332C  4C 40 13 82 */	cror 2, 0, 2
 /* 80166530 00163330  40 82 00 0C */	bne lbl_8016653C
@@ -229,7 +231,7 @@ scene_enter__10zTransientFv:
 /* 8016663C 0016343C  7C 08 02 A6 */	mflr r0
 /* 80166640 00163440  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80166644 00163444  38 61 00 08 */	addi r3, r1, 8
-/* 80166648 00163448  4B FF FD 19 */	bl get_world_box__24$$2unnamed$$2zTransient_cpp$$2FR4xBox
+/* 80166648 00163448  4B FF FD 19 */	bl get_world_box__24_esc__2_unnamed_esc__2_zTransient_cpp_esc__2_FR4xBox
 /* 8016664C 0016344C  38 61 00 08 */	addi r3, r1, 8
 /* 80166650 00163450  4B F0 8C ED */	bl scene_enter__10xTransientFRC4xBox
 /* 80166654 00163454  4B F6 20 CD */	bl scene_enter__5zFireFv
@@ -333,11 +335,11 @@ check_damage__10zTransientFPQ210zTransient13damage_resultRC4xBoxiii:
 /* 8016677C 0016357C  90 C1 00 0C */	stw r6, 0xc(r1)
 /* 80166780 00163580  4B F2 95 F9 */	bl xBoundFromBox__FR6xBoundRC4xBox
 /* 80166784 00163584  3C 60 80 35 */	lis r3, space_tree__10xTransient@ha
-/* 80166788 00163588  3C 80 80 16 */	lis r4, cb_check_damage__24$$2unnamed$$2zTransient_cpp$$2FPQ221xSpacePartitionTree2D10entry_dataPv@ha
+/* 80166788 00163588  3C 80 80 16 */	lis r4, cb_check_damage__24_esc__2_unnamed_esc__2_zTransient_cpp_esc__2_FPQ221xSpacePartitionTree2D10entry_dataPv@ha
 /* 8016678C 0016358C  C0 3F 00 0C */	lfs f1, 0xc(r31)
 /* 80166790 00163590  38 63 19 20 */	addi r3, r3, space_tree__10xTransient@l
 /* 80166794 00163594  C0 5F 00 14 */	lfs f2, 0x14(r31)
-/* 80166798 00163598  38 84 64 1C */	addi r4, r4, cb_check_damage__24$$2unnamed$$2zTransient_cpp$$2FPQ221xSpacePartitionTree2D10entry_dataPv@l
+/* 80166798 00163598  38 84 64 1C */	addi r4, r4, cb_check_damage__24_esc__2_unnamed_esc__2_zTransient_cpp_esc__2_FPQ221xSpacePartitionTree2D10entry_dataPv@l
 /* 8016679C 0016359C  C0 7F 00 00 */	lfs f3, 0(r31)
 /* 801667A0 001635A0  38 A1 00 08 */	addi r5, r1, 8
 /* 801667A4 001635A4  C0 9F 00 08 */	lfs f4, 8(r31)
@@ -348,3 +350,6 @@ check_damage__10zTransientFPQ210zTransient13damage_resultRC4xBoxiii:
 /* 801667B8 001635B8  7C 08 03 A6 */	mtlr r0
 /* 801667BC 001635BC  38 21 00 70 */	addi r1, r1, 0x70
 /* 801667C0 001635C0  4E 80 00 20 */	blr 
+
+.endif
+

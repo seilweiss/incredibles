@@ -2,8 +2,8 @@
 
 .section .data
 
-.global $$2709
-$$2709:
+.global _esc__2_709
+_esc__2_709:
 	.incbin "baserom.dol", 0x30C458, 0xC8
 
 .section .sbss
@@ -17,6 +17,8 @@ sRS:
 .global sRSBits
 sRSBits:
 	.incbin "baserom.dol", 0x32CEA8, 0x8
+
+.if 0
 
 .section .text
 
@@ -123,9 +125,9 @@ zRenderState__F14_SDRenderState:
 /* 80150B3C 0014D93C  93 CD CD C8 */	stw r30, sRS-_SDA_BASE_(r13)
 /* 80150B40 0014D940  3B E0 00 00 */	li r31, 0
 /* 80150B44 0014D944  41 81 0D 10 */	bgt lbl_80151854
-/* 80150B48 0014D948  3C 60 80 31 */	lis r3, $$2709@ha
+/* 80150B48 0014D948  3C 60 80 31 */	lis r3, _esc__2_709@ha
 /* 80150B4C 0014D94C  57 C0 10 3A */	slwi r0, r30, 2
-/* 80150B50 0014D950  38 63 F4 58 */	addi r3, r3, $$2709@l
+/* 80150B50 0014D950  38 63 F4 58 */	addi r3, r3, _esc__2_709@l
 /* 80150B54 0014D954  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80150B58 0014D958  7C 09 03 A6 */	mtctr r0
 /* 80150B5C 0014D95C  4E 80 04 20 */	bctr 
@@ -1055,3 +1057,6 @@ lbl_80151994:
 /* 8015199C 0014E79C  7C 08 03 A6 */	mtlr r0
 /* 801519A0 0014E7A0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801519A4 0014E7A4  4E 80 00 20 */	blr 
+
+.endif
+

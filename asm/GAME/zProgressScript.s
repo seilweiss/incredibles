@@ -2,9 +2,11 @@
 
 .section .sdata2
 
-.global $$2968_0
-$$2968_0:
+.global _esc__2_968_0
+_esc__2_968_0:
 	.incbin "baserom.dol", 0x332C60, 0x8
+
+.if 0
 
 .section .text
 
@@ -78,7 +80,7 @@ zProgressScript_Reset__FP15zProgressScript:
 /* 8019FB54 0019C954  7C 7F 1B 78 */	mr r31, r3
 /* 8019FB58 0019C958  80 83 00 10 */	lwz r4, 0x10(r3)
 /* 8019FB5C 0019C95C  4B E6 CA 79 */	bl xBaseReset__FP5xBaseP10xBaseAsset
-/* 8019FB60 0019C960  C0 02 C5 80 */	lfs f0, $$2968_0-_SDA2_BASE_(r2)
+/* 8019FB60 0019C960  C0 02 C5 80 */	lfs f0, _esc__2_968_0-_SDA2_BASE_(r2)
 /* 8019FB64 0019C964  38 A0 00 00 */	li r5, 0
 /* 8019FB68 0019C968  7C A3 2B 78 */	mr r3, r5
 /* 8019FB6C 0019C96C  38 C0 00 00 */	li r6, 0
@@ -347,3 +349,6 @@ lbl_8019FEE0:
 /* 8019FEE4 0019CCE4  7C 08 03 A6 */	mtlr r0
 /* 8019FEE8 0019CCE8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8019FEEC 0019CCEC  4E 80 00 20 */	blr 
+
+.endif
+

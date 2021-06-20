@@ -2,111 +2,113 @@
 
 .section .data
 
-.global zNPC_BadGuyMedium_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_BadGuyMedium_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_BadGuyMedium_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_BadGuyMedium_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x308768, 0x6C
-.global zNPC_Hench_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_Hench_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_Hench_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_Hench_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x3087D4, 0x6C
-.global zNPC_BadGuyShield_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_BadGuyShield_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_BadGuyShield_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_BadGuyShield_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x308840, 0x54
-.global zNPC_Omnidroid08_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_Omnidroid08_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_Omnidroid08_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_Omnidroid08_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x308894, 0x54
-.global initData__24$$2unnamed$$2zNPCCombat_cpp$$2
-initData__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x3088E8, 0xD8
 
 .section .rodata
 
-.global $$2stringBase0_75
-$$2stringBase0_75:
+.global _esc__2_stringBase0_75
+_esc__2_stringBase0_75:
 	.incbin "baserom.dol", 0x2DF6D8, 0x120
 
 .section .sdata
 
-.global zNPC_Turret_Top_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_Turret_Top_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_Turret_Top_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_Turret_Top_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CC30, 0x18
-.global zNPC_Turret_Bunker_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_Turret_Bunker_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_Turret_Bunker_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_Turret_Bunker_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CC48, 0x18
-.global zNPC_Turret_Building_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_Turret_Building_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_Turret_Building_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_Turret_Building_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CC60, 0x18
-.global zNPC_Turret_Hoverpod_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_Turret_Hoverpod_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_Turret_Hoverpod_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_Turret_Hoverpod_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CC78, 0x18
-.global zNPC_Turret_Tower_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_Turret_Tower_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_Turret_Tower_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_Turret_Tower_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CC90, 0x18
-.global zNPC_Turret_Beach_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_Turret_Beach_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_Turret_Beach_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_Turret_Beach_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CCA8, 0x18
-.global zNPC_Velocipod_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_Velocipod_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_Velocipod_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_Velocipod_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CCC0, 0x18
-.global zNPC_BombVoyage_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_BombVoyage_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_BombVoyage_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_BombVoyage_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CCD8, 0x18
-.global zNPC_BombVoyageHeli_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2
-zNPC_BombVoyageHeli_Bounds__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global zNPC_BombVoyageHeli_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+zNPC_BombVoyageHeli_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CCF0, 0x18
-.global ZNPC_Default__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Default__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Default__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Default__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD08, 0x8
-.global ZNPC_BadGuyMedium__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_BadGuyMedium__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_BadGuyMedium__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_BadGuyMedium__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD10, 0x8
-.global ZNPC_BadGuyShield__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_BadGuyShield__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_BadGuyShield__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_BadGuyShield__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD18, 0x8
-.global ZNPC_BadGuyFat__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_BadGuyFat__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_BadGuyFat__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_BadGuyFat__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD20, 0x8
-.global ZNPC_Mine__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Mine__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Mine__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Mine__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD28, 0x8
-.global ZNPC_Oracle__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Oracle__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Oracle__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Oracle__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD30, 0x8
-.global ZNPC_Turret_Top__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Turret_Top__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Turret_Top__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Turret_Top__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD38, 0x8
-.global ZNPC_Turret_Bunker__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Turret_Bunker__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Turret_Bunker__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Turret_Bunker__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD40, 0x8
-.global ZNPC_Turret_Building__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Turret_Building__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Turret_Building__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Turret_Building__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD48, 0x8
-.global ZNPC_Turret_Hoverpod__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Turret_Hoverpod__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Turret_Hoverpod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Turret_Hoverpod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD50, 0x8
-.global ZNPC_Turret_Tower__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Turret_Tower__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Turret_Tower__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Turret_Tower__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD58, 0x8
-.global ZNPC_Turret_Beach__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Turret_Beach__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Turret_Beach__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Turret_Beach__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD60, 0x8
-.global ZNPC_Car__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Car__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Car__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Car__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD68, 0x8
-.global ZNPC_Lobber__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Lobber__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Lobber__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Lobber__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD70, 0x8
-.global ZNPC_Velocipod__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Velocipod__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Velocipod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Velocipod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD78, 0x8
-.global ZNPC_Omnidroid08__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_Omnidroid08__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_Omnidroid08__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_Omnidroid08__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD80, 0x8
-.global ZNPC_BombVoyage__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_BombVoyage__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_BombVoyage__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_BombVoyage__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD88, 0x8
-.global ZNPC_BombVoyageHeli__24$$2unnamed$$2zNPCCombat_cpp$$2
-ZNPC_BombVoyageHeli__24$$2unnamed$$2zNPCCombat_cpp$$2:
+.global ZNPC_BombVoyageHeli__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
+ZNPC_BombVoyageHeli__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CD90, 0x8
+
+.if 0
 
 .section .text
 
@@ -114,11 +116,11 @@ ZNPC_BombVoyageHeli__24$$2unnamed$$2zNPCCombat_cpp$$2:
 zNPCCombatInit__Fv:
 /* 8012121C 0011E01C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80121220 0011E020  7C 08 02 A6 */	mflr r0
-/* 80121224 0011E024  3C 60 80 31 */	lis r3, initData__24$$2unnamed$$2zNPCCombat_cpp$$2@ha
+/* 80121224 0011E024  3C 60 80 31 */	lis r3, initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_@ha
 /* 80121228 0011E028  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8012122C 0011E02C  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 80121230 0011E030  3B 80 00 00 */	li r28, 0
-/* 80121234 0011E034  3B C3 B8 E8 */	addi r30, r3, initData__24$$2unnamed$$2zNPCCombat_cpp$$2@l
+/* 80121234 0011E034  3B C3 B8 E8 */	addi r30, r3, initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_@l
 /* 80121238 0011E038  3B E0 00 00 */	li r31, 0
 lbl_8012123C:
 /* 8012123C 0011E03C  7F BE FA 14 */	add r29, r30, r31
@@ -191,9 +193,9 @@ lbl_80121318:
 /* 8012132C 0011E12C  80 A5 00 0C */	lwz r5, 0xc(r5)
 /* 80121330 0011E130  4B F6 33 81 */	bl zAnimCacheCreateData__FP17zAttackTableStateUiP9xAnimPlay
 lbl_80121334:
-/* 80121334 0011E134  3C 60 80 31 */	lis r3, initData__24$$2unnamed$$2zNPCCombat_cpp$$2@ha
+/* 80121334 0011E134  3C 60 80 31 */	lis r3, initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_@ha
 /* 80121338 0011E138  38 00 00 12 */	li r0, 0x12
-/* 8012133C 0011E13C  38 A3 B8 E8 */	addi r5, r3, initData__24$$2unnamed$$2zNPCCombat_cpp$$2@l
+/* 8012133C 0011E13C  38 A3 B8 E8 */	addi r5, r3, initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_@l
 /* 80121340 0011E140  38 60 00 00 */	li r3, 0
 /* 80121344 0011E144  7C 09 03 A6 */	mtctr r0
 lbl_80121348:
@@ -201,9 +203,9 @@ lbl_80121348:
 /* 8012134C 0011E14C  80 04 00 08 */	lwz r0, 8(r4)
 /* 80121350 0011E150  7C 1A 00 40 */	cmplw r26, r0
 /* 80121354 0011E154  40 82 00 50 */	bne lbl_801213A4
-/* 80121358 0011E158  3C A0 80 31 */	lis r5, initData__24$$2unnamed$$2zNPCCombat_cpp$$2@ha
+/* 80121358 0011E158  3C A0 80 31 */	lis r5, initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_@ha
 /* 8012135C 0011E15C  80 99 00 28 */	lwz r4, 0x28(r25)
-/* 80121360 0011E160  38 05 B8 E8 */	addi r0, r5, initData__24$$2unnamed$$2zNPCCombat_cpp$$2@l
+/* 80121360 0011E160  38 05 B8 E8 */	addi r0, r5, initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_@l
 /* 80121364 0011E164  FC 40 F8 90 */	fmr f2, f31
 /* 80121368 0011E168  7C 60 1A 14 */	add r3, r0, r3
 /* 8012136C 0011E16C  89 44 00 4E */	lbz r10, 0x4e(r4)
@@ -231,3 +233,6 @@ lbl_801213AC:
 /* 801213BC 0011E1BC  7C 08 03 A6 */	mtlr r0
 /* 801213C0 0011E1C0  38 21 00 40 */	addi r1, r1, 0x40
 /* 801213C4 0011E1C4  4E 80 00 20 */	blr 
+
+.endif
+

@@ -23,9 +23,11 @@ dotw:
 
 .section .sdata2
 
-.global $$2607
-$$2607:
+.global _esc__2_607
+_esc__2_607:
 	.incbin "baserom.dol", 0x32F950, 0x8
+
+.if 0
 
 .section .text
 
@@ -606,7 +608,7 @@ iTimeDiffSec__Fx:
 /* 8008230C 0007F10C  80 63 00 F8 */	lwz r3, 0x800000F8@l(r3)
 /* 80082310 0007F110  90 01 00 08 */	stw r0, 8(r1)
 /* 80082314 0007F114  54 60 F0 BE */	srwi r0, r3, 2
-/* 80082318 0007F118  C8 42 92 70 */	lfd f2, $$2607-_SDA2_BASE_(r2)
+/* 80082318 0007F118  C8 42 92 70 */	lfd f2, _esc__2_607-_SDA2_BASE_(r2)
 /* 8008231C 0007F11C  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80082320 0007F120  C8 01 00 08 */	lfd f0, 8(r1)
 /* 80082324 0007F124  EC 00 10 28 */	fsubs f0, f0, f2
@@ -653,3 +655,6 @@ iProfileClear__FUi:
 .global iFuncProfileDump__Fv
 iFuncProfileDump__Fv:
 /* 80082388 0007F188  4E 80 00 20 */	blr 
+
+.endif
+

@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global Init__7xVolumeFP12xVolumeAsset
@@ -68,3 +70,6 @@ GetBound__7xVolumeFv:
 /* 80071820 0006E620  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 80071824 0006E624  38 63 00 0C */	addi r3, r3, 0xc
 /* 80071828 0006E628  4E 80 00 20 */	blr 
+
+.endif
+

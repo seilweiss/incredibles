@@ -2,8 +2,8 @@
 
 .section .rodata
 
-.global $$2stringBase0_52
-$$2stringBase0_52:
+.global _esc__2_stringBase0_52
+_esc__2_stringBase0_52:
 	.incbin "baserom.dol", 0x2D9970, 0x30
 
 .section .sdata
@@ -20,18 +20,20 @@ sBlueMultiplier:
 
 .section .sdata2
 
-.global $$21039_0
-$$21039_0:
+.global _esc__2_1039_0
+_esc__2_1039_0:
 	.incbin "baserom.dol", 0x330380, 0x4
-.global $$21040_3
-$$21040_3:
+.global _esc__2_1040_3
+_esc__2_1040_3:
 	.incbin "baserom.dol", 0x330384, 0x4
-.global $$21041
-$$21041:
+.global _esc__2_1041
+_esc__2_1041:
 	.incbin "baserom.dol", 0x330388, 0x4
-.global $$21149_0
-$$21149_0:
+.global _esc__2_1149_0
+_esc__2_1149_0:
 	.incbin "baserom.dol", 0x33038C, 0x4
+
+.if 0
 
 .section .text
 
@@ -74,28 +76,28 @@ lbl_800BED70:
 /* 800BED70 000BBB70  38 00 00 00 */	li r0, 0
 /* 800BED74 000BBB74  90 1E 01 C4 */	stw r0, 0x1c4(r30)
 lbl_800BED78:
-/* 800BED78 000BBB78  3C 60 80 2E */	lis r3, $$2stringBase0_52@ha
-/* 800BED7C 000BBB7C  38 63 C9 70 */	addi r3, r3, $$2stringBase0_52@l
+/* 800BED78 000BBB78  3C 60 80 2E */	lis r3, _esc__2_stringBase0_52@ha
+/* 800BED7C 000BBB7C  38 63 C9 70 */	addi r3, r3, _esc__2_stringBase0_52@l
 /* 800BED80 000BBB80  4B FA DE A1 */	bl xStrHash__FPCc
 /* 800BED84 000BBB84  80 1D 00 48 */	lwz r0, 0x48(r29)
 /* 800BED88 000BBB88  7C 00 18 40 */	cmplw r0, r3
 /* 800BED8C 000BBB8C  40 82 00 10 */	bne lbl_800BED9C
-/* 800BED90 000BBB90  C0 02 9C A0 */	lfs f0, $$21039_0-_SDA2_BASE_(r2)
+/* 800BED90 000BBB90  C0 02 9C A0 */	lfs f0, _esc__2_1039_0-_SDA2_BASE_(r2)
 /* 800BED94 000BBB94  D0 1E 01 D0 */	stfs f0, 0x1d0(r30)
 /* 800BED98 000BBB98  48 00 00 34 */	b lbl_800BEDCC
 lbl_800BED9C:
-/* 800BED9C 000BBB9C  3C 60 80 2E */	lis r3, $$2stringBase0_52@ha
-/* 800BEDA0 000BBBA0  38 63 C9 70 */	addi r3, r3, $$2stringBase0_52@l
+/* 800BED9C 000BBB9C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_52@ha
+/* 800BEDA0 000BBBA0  38 63 C9 70 */	addi r3, r3, _esc__2_stringBase0_52@l
 /* 800BEDA4 000BBBA4  38 63 00 07 */	addi r3, r3, 7
 /* 800BEDA8 000BBBA8  4B FA DE 79 */	bl xStrHash__FPCc
 /* 800BEDAC 000BBBAC  80 1D 00 48 */	lwz r0, 0x48(r29)
 /* 800BEDB0 000BBBB0  7C 00 18 40 */	cmplw r0, r3
 /* 800BEDB4 000BBBB4  40 82 00 10 */	bne lbl_800BEDC4
-/* 800BEDB8 000BBBB8  C0 02 9C A4 */	lfs f0, $$21040_3-_SDA2_BASE_(r2)
+/* 800BEDB8 000BBBB8  C0 02 9C A4 */	lfs f0, _esc__2_1040_3-_SDA2_BASE_(r2)
 /* 800BEDBC 000BBBBC  D0 1E 01 D0 */	stfs f0, 0x1d0(r30)
 /* 800BEDC0 000BBBC0  48 00 00 0C */	b lbl_800BEDCC
 lbl_800BEDC4:
-/* 800BEDC4 000BBBC4  C0 02 9C A8 */	lfs f0, $$21041-_SDA2_BASE_(r2)
+/* 800BEDC4 000BBBC4  C0 02 9C A8 */	lfs f0, _esc__2_1041-_SDA2_BASE_(r2)
 /* 800BEDC8 000BBBC8  D0 1E 01 D0 */	stfs f0, 0x1d0(r30)
 lbl_800BEDCC:
 /* 800BEDCC 000BBBCC  88 1E 00 19 */	lbz r0, 0x19(r30)
@@ -132,7 +134,7 @@ lbl_800BEE40:
 /* 800BEE40 000BBC40  3C 60 80 0C */	lis r3, zEntButtonEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi@ha
 /* 800BEE44 000BBC44  38 00 00 00 */	li r0, 0
 /* 800BEE48 000BBC48  38 63 F6 30 */	addi r3, r3, zEntButtonEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi@l
-/* 800BEE4C 000BBC4C  C0 02 9C A8 */	lfs f0, $$21041-_SDA2_BASE_(r2)
+/* 800BEE4C 000BBC4C  C0 02 9C A8 */	lfs f0, _esc__2_1041-_SDA2_BASE_(r2)
 /* 800BEE50 000BBC50  90 7E 00 0C */	stw r3, 0xc(r30)
 /* 800BEE54 000BBC54  7F C3 F3 78 */	mr r3, r30
 /* 800BEE58 000BBC58  90 1E 01 B0 */	stw r0, 0x1b0(r30)
@@ -447,8 +449,8 @@ lbl_800BF280:
 /* 800BF294 000BC094  7F E4 FB 78 */	mr r4, r31
 /* 800BF298 000BC098  38 A0 00 38 */	li r5, 0x38
 /* 800BF29C 000BC09C  4B F5 D2 B1 */	bl zEntEvent__FP5xBaseP5xBaseUi
-/* 800BF2A0 000BC0A0  3C 60 80 2E */	lis r3, $$2stringBase0_52@ha
-/* 800BF2A4 000BC0A4  38 63 C9 70 */	addi r3, r3, $$2stringBase0_52@l
+/* 800BF2A0 000BC0A0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_52@ha
+/* 800BF2A4 000BC0A4  38 63 C9 70 */	addi r3, r3, _esc__2_stringBase0_52@l
 /* 800BF2A8 000BC0A8  38 63 00 16 */	addi r3, r3, 0x16
 /* 800BF2AC 000BC0AC  4B FE 69 AD */	bl xSndMgrGetSoundGroup__FPc
 /* 800BF2B0 000BC0B0  80 BF 00 28 */	lwz r5, 0x28(r31)
@@ -490,8 +492,8 @@ lbl_800BF310:
 /* 800BF334 000BC134  7F E4 FB 78 */	mr r4, r31
 /* 800BF338 000BC138  38 A0 00 38 */	li r5, 0x38
 /* 800BF33C 000BC13C  4B F5 D2 11 */	bl zEntEvent__FP5xBaseP5xBaseUi
-/* 800BF340 000BC140  3C 60 80 2E */	lis r3, $$2stringBase0_52@ha
-/* 800BF344 000BC144  38 63 C9 70 */	addi r3, r3, $$2stringBase0_52@l
+/* 800BF340 000BC140  3C 60 80 2E */	lis r3, _esc__2_stringBase0_52@ha
+/* 800BF344 000BC144  38 63 C9 70 */	addi r3, r3, _esc__2_stringBase0_52@l
 /* 800BF348 000BC148  38 63 00 16 */	addi r3, r3, 0x16
 /* 800BF34C 000BC14C  4B FE 69 0D */	bl xSndMgrGetSoundGroup__FPc
 /* 800BF350 000BC150  80 BF 00 28 */	lwz r5, 0x28(r31)
@@ -514,13 +516,13 @@ lbl_800BF378:
 /* 800BF390 000BC190  48 00 00 F1 */	bl zEntButton_SetReady__FP11_zEntButton
 lbl_800BF394:
 /* 800BF394 000BC194  C0 3F 01 C8 */	lfs f1, 0x1c8(r31)
-/* 800BF398 000BC198  C0 02 9C A8 */	lfs f0, $$21041-_SDA2_BASE_(r2)
+/* 800BF398 000BC198  C0 02 9C A8 */	lfs f0, _esc__2_1041-_SDA2_BASE_(r2)
 /* 800BF39C 000BC19C  EC 21 F8 28 */	fsubs f1, f1, f31
 /* 800BF3A0 000BC1A0  D0 3F 01 C8 */	stfs f1, 0x1c8(r31)
 /* 800BF3A4 000BC1A4  C0 3F 01 C8 */	lfs f1, 0x1c8(r31)
 /* 800BF3A8 000BC1A8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800BF3AC 000BC1AC  40 80 00 14 */	bge lbl_800BF3C0
-/* 800BF3B0 000BC1B0  C0 02 9C AC */	lfs f0, $$21149_0-_SDA2_BASE_(r2)
+/* 800BF3B0 000BC1B0  C0 02 9C AC */	lfs f0, _esc__2_1149_0-_SDA2_BASE_(r2)
 /* 800BF3B4 000BC1B4  38 00 00 00 */	li r0, 0
 /* 800BF3B8 000BC1B8  D0 1F 01 C8 */	stfs f0, 0x1c8(r31)
 /* 800BF3BC 000BC1BC  90 1F 01 CC */	stw r0, 0x1cc(r31)
@@ -598,7 +600,7 @@ zEntButton_Press__FP11_zEntButton:
 /* 800BF49C 000BC29C  28 00 00 00 */	cmplwi r0, 0
 /* 800BF4A0 000BC2A0  4C 82 00 20 */	bnelr 
 /* 800BF4A4 000BC2A4  38 00 00 01 */	li r0, 1
-/* 800BF4A8 000BC2A8  C0 02 9C A8 */	lfs f0, $$21041-_SDA2_BASE_(r2)
+/* 800BF4A8 000BC2A8  C0 02 9C A8 */	lfs f0, _esc__2_1041-_SDA2_BASE_(r2)
 /* 800BF4AC 000BC2AC  90 03 01 B0 */	stw r0, 0x1b0(r3)
 /* 800BF4B0 000BC2B0  D0 03 01 C0 */	stfs f0, 0x1c0(r3)
 /* 800BF4B4 000BC2B4  4E 80 00 20 */	blr 
@@ -607,11 +609,11 @@ zEntButton_Press__FP11_zEntButton:
 _PressButtonSound__FP11_zEntButtonUi:
 /* 800BF4B8 000BC2B8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800BF4BC 000BC2BC  7C 08 02 A6 */	mflr r0
-/* 800BF4C0 000BC2C0  3C 80 80 2E */	lis r4, $$2stringBase0_52@ha
+/* 800BF4C0 000BC2C0  3C 80 80 2E */	lis r4, _esc__2_stringBase0_52@ha
 /* 800BF4C4 000BC2C4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800BF4C8 000BC2C8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800BF4CC 000BC2CC  7C 7F 1B 78 */	mr r31, r3
-/* 800BF4D0 000BC2D0  38 64 C9 70 */	addi r3, r4, $$2stringBase0_52@l
+/* 800BF4D0 000BC2D0  38 64 C9 70 */	addi r3, r4, _esc__2_stringBase0_52@l
 /* 800BF4D4 000BC2D4  38 63 00 20 */	addi r3, r3, 0x20
 /* 800BF4D8 000BC2D8  4B FE 67 81 */	bl xSndMgrGetSoundGroup__FPc
 /* 800BF4DC 000BC2DC  80 BF 00 28 */	lwz r5, 0x28(r31)
@@ -683,7 +685,7 @@ lbl_800BF5B0:
 /* 800BF5C4 000BC3C4  80 A5 00 54 */	lwz r5, 0x54(r5)
 /* 800BF5C8 000BC3C8  38 A5 00 30 */	addi r5, r5, 0x30
 /* 800BF5CC 000BC3CC  4B F4 E9 C9 */	bl xMat4x3Tolocal__FP5xVec3PC7xMat4x3PC5xVec3
-/* 800BF5D0 000BC3D0  C0 02 9C A8 */	lfs f0, $$21041-_SDA2_BASE_(r2)
+/* 800BF5D0 000BC3D0  C0 02 9C A8 */	lfs f0, _esc__2_1041-_SDA2_BASE_(r2)
 /* 800BF5D4 000BC3D4  38 7F 00 98 */	addi r3, r31, 0x98
 /* 800BF5D8 000BC3D8  38 81 00 08 */	addi r4, r1, 8
 /* 800BF5DC 000BC3DC  D0 01 00 0C */	stfs f0, 0xc(r1)
@@ -830,8 +832,8 @@ lbl_800BF7B0:
 /* 800BF7BC 000BC5BC  7F E3 FB 78 */	mr r3, r31
 /* 800BF7C0 000BC5C0  38 A0 00 38 */	li r5, 0x38
 /* 800BF7C4 000BC5C4  4B F5 CD 89 */	bl zEntEvent__FP5xBaseP5xBaseUi
-/* 800BF7C8 000BC5C8  3C 60 80 2E */	lis r3, $$2stringBase0_52@ha
-/* 800BF7CC 000BC5CC  38 63 C9 70 */	addi r3, r3, $$2stringBase0_52@l
+/* 800BF7C8 000BC5C8  3C 60 80 2E */	lis r3, _esc__2_stringBase0_52@ha
+/* 800BF7CC 000BC5CC  38 63 C9 70 */	addi r3, r3, _esc__2_stringBase0_52@l
 /* 800BF7D0 000BC5D0  38 63 00 16 */	addi r3, r3, 0x16
 /* 800BF7D4 000BC5D4  4B FE 64 85 */	bl xSndMgrGetSoundGroup__FPc
 /* 800BF7D8 000BC5D8  80 BF 00 28 */	lwz r5, 0x28(r31)
@@ -848,8 +850,8 @@ lbl_800BF800:
 /* 800BF800 000BC600  7F E3 FB 78 */	mr r3, r31
 /* 800BF804 000BC604  38 A0 00 37 */	li r5, 0x37
 /* 800BF808 000BC608  4B F5 CD 45 */	bl zEntEvent__FP5xBaseP5xBaseUi
-/* 800BF80C 000BC60C  3C 60 80 2E */	lis r3, $$2stringBase0_52@ha
-/* 800BF810 000BC610  38 63 C9 70 */	addi r3, r3, $$2stringBase0_52@l
+/* 800BF80C 000BC60C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_52@ha
+/* 800BF810 000BC610  38 63 C9 70 */	addi r3, r3, _esc__2_stringBase0_52@l
 /* 800BF814 000BC614  38 63 00 20 */	addi r3, r3, 0x20
 /* 800BF818 000BC618  4B FE 64 41 */	bl xSndMgrGetSoundGroup__FPc
 /* 800BF81C 000BC61C  80 BF 00 28 */	lwz r5, 0x28(r31)
@@ -875,7 +877,7 @@ lbl_800BF858:
 /* 800BF864 000BC664  28 03 00 00 */	cmplwi r3, 0
 /* 800BF868 000BC668  41 82 00 94 */	beq lbl_800BF8FC
 /* 800BF86C 000BC66C  C0 26 00 00 */	lfs f1, 0(r6)
-/* 800BF870 000BC670  C0 02 9C A8 */	lfs f0, $$21041-_SDA2_BASE_(r2)
+/* 800BF870 000BC670  C0 02 9C A8 */	lfs f0, _esc__2_1041-_SDA2_BASE_(r2)
 /* 800BF874 000BC674  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800BF878 000BC678  4C 40 13 82 */	cror 2, 0, 2
 /* 800BF87C 000BC67C  40 82 00 18 */	bne lbl_800BF894
@@ -919,3 +921,6 @@ lbl_800BF8FC:
 /* 800BF904 000BC704  7C 08 03 A6 */	mtlr r0
 /* 800BF908 000BC708  38 21 00 20 */	addi r1, r1, 0x20
 /* 800BF90C 000BC70C  4E 80 00 20 */	blr 
+
+.endif
+

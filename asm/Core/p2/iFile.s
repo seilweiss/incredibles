@@ -14,8 +14,8 @@ gHostPath:
 
 .section .rodata
 
-.global $$2stringBase0_26
-$$2stringBase0_26:
+.global _esc__2_stringBase0_26
+_esc__2_stringBase0_26:
 	.incbin "baserom.dol", 0x2CF880, 0x18
 
 .section .sbss
@@ -26,12 +26,14 @@ buffer32:
 .global iFileSyncAsyncReadActive
 iFileSyncAsyncReadActive:
 	.skip 0x4
-.global fopcount$704
-fopcount$704:
+.global fopcount_esc__7_704
+fopcount_esc__7_704:
 	.skip 0x4
-.global init$705
-init$705:
+.global init_esc__7_705
+init_esc__7_705:
 	.skip 0x4
+
+.if 0
 
 .section .text
 
@@ -390,12 +392,12 @@ iFileReadAsync__FP9tag_xFilePvUiPFP9tag_xFile_vi:
 /* 80074BAC 000719AC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80074BB0 000719B0  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 80074BB4 000719B4  7C 7F 1B 78 */	mr r31, r3
-/* 80074BB8 000719B8  88 0D C0 14 */	lbz r0, init$705-_SDA_BASE_(r13)
+/* 80074BB8 000719B8  88 0D C0 14 */	lbz r0, init_esc__7_705-_SDA_BASE_(r13)
 /* 80074BBC 000719BC  7C 00 07 75 */	extsb. r0, r0
 /* 80074BC0 000719C0  40 82 00 10 */	bne lbl_80074BD0
 /* 80074BC4 000719C4  38 00 00 01 */	li r0, 1
-/* 80074BC8 000719C8  90 0D C0 10 */	stw r0, fopcount$704-_SDA_BASE_(r13)
-/* 80074BCC 000719CC  98 0D C0 14 */	stb r0, init$705-_SDA_BASE_(r13)
+/* 80074BC8 000719C8  90 0D C0 10 */	stw r0, fopcount_esc__7_704-_SDA_BASE_(r13)
+/* 80074BCC 000719CC  98 0D C0 14 */	stb r0, init_esc__7_705-_SDA_BASE_(r13)
 lbl_80074BD0:
 /* 80074BD0 000719D0  3C 60 80 35 */	lis r3, file_queue@ha
 /* 80074BD4 000719D4  38 00 00 04 */	li r0, 4
@@ -415,7 +417,7 @@ lbl_80074BE8:
 /* 80074C08 00071A08  41 82 00 7C */	beq lbl_80074C84
 /* 80074C0C 00071A0C  93 E8 00 00 */	stw r31, 0(r8)
 /* 80074C10 00071A10  38 60 00 00 */	li r3, 0
-/* 80074C14 00071A14  80 ED C0 10 */	lwz r7, fopcount$704-_SDA_BASE_(r13)
+/* 80074C14 00071A14  80 ED C0 10 */	lwz r7, fopcount_esc__7_704-_SDA_BASE_(r13)
 /* 80074C18 00071A18  38 00 00 04 */	li r0, 4
 /* 80074C1C 00071A1C  90 88 00 04 */	stw r4, 4(r8)
 /* 80074C20 00071A20  28 05 00 20 */	cmplwi r5, 0x20
@@ -427,7 +429,7 @@ lbl_80074BE8:
 /* 80074C38 00071A38  90 68 00 0C */	stw r3, 0xc(r8)
 /* 80074C3C 00071A3C  90 08 00 10 */	stw r0, 0x10(r8)
 /* 80074C40 00071A40  90 C8 00 14 */	stw r6, 0x14(r8)
-/* 80074C44 00071A44  90 ED C0 10 */	stw r7, fopcount$704-_SDA_BASE_(r13)
+/* 80074C44 00071A44  90 ED C0 10 */	stw r7, fopcount_esc__7_704-_SDA_BASE_(r13)
 /* 80074C48 00071A48  93 C8 00 18 */	stw r30, 0x18(r8)
 /* 80074C4C 00071A4C  40 80 00 0C */	bge lbl_80074C58
 /* 80074C50 00071A50  39 25 00 03 */	addi r9, r5, 3
@@ -571,9 +573,9 @@ iFileSetPath__FPCc:
 /* 80074DF8 00071BF8  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80074DFC 00071BFC  7C 7E 1B 78 */	mr r30, r3
 /* 80074E00 00071C00  48 24 77 AD */	bl strlen
-/* 80074E04 00071C04  3C 80 80 2D */	lis r4, $$2stringBase0_26@ha
+/* 80074E04 00071C04  3C 80 80 2D */	lis r4, _esc__2_stringBase0_26@ha
 /* 80074E08 00071C08  7C 7F 1B 78 */	mr r31, r3
-/* 80074E0C 00071C0C  38 64 28 80 */	addi r3, r4, $$2stringBase0_26@l
+/* 80074E0C 00071C0C  38 64 28 80 */	addi r3, r4, _esc__2_stringBase0_26@l
 /* 80074E10 00071C10  7F C4 F3 78 */	mr r4, r30
 /* 80074E14 00071C14  4C C6 31 82 */	crclr 6
 /* 80074E18 00071C18  48 24 41 41 */	bl printf
@@ -638,3 +640,6 @@ lbl_80074ECC:
 lbl_80074ED4:
 /* 80074ED4 00071CD4  38 60 00 00 */	li r3, 0
 /* 80074ED8 00071CD8  4E 80 00 20 */	blr 
+
+.endif
+

@@ -2,12 +2,14 @@
 
 .section .sdata2
 
-.global $$2625
-$$2625:
+.global _esc__2_625
+_esc__2_625:
 	.incbin "baserom.dol", 0x32F220, 0x8
-.global $$2627
-$$2627:
+.global _esc__2_627
+_esc__2_627:
 	.incbin "baserom.dol", 0x32F228, 0x8
+
+.if 0
 
 .section .text
 
@@ -40,9 +42,9 @@ lbl_8004F590:
 /* 8004F594 0004C394  3C 00 43 30 */	lis r0, 0x4330
 /* 8004F598 0004C398  90 61 00 0C */	stw r3, 0xc(r1)
 /* 8004F59C 0004C39C  38 60 00 00 */	li r3, 0
-/* 8004F5A0 0004C3A0  C8 22 8B 48 */	lfd f1, $$2627-_SDA2_BASE_(r2)
+/* 8004F5A0 0004C3A0  C8 22 8B 48 */	lfd f1, _esc__2_627-_SDA2_BASE_(r2)
 /* 8004F5A4 0004C3A4  90 01 00 08 */	stw r0, 8(r1)
-/* 8004F5A8 0004C3A8  C0 42 8B 40 */	lfs f2, $$2625-_SDA2_BASE_(r2)
+/* 8004F5A8 0004C3A8  C0 42 8B 40 */	lfs f2, _esc__2_625-_SDA2_BASE_(r2)
 /* 8004F5AC 0004C3AC  C8 01 00 08 */	lfd f0, 8(r1)
 /* 8004F5B0 0004C3B0  90 7E 00 04 */	stw r3, 4(r30)
 /* 8004F5B4 0004C3B4  EC 00 08 28 */	fsubs f0, f0, f1
@@ -263,3 +265,6 @@ lbl_8004F874:
 /* 8004F884 0004C684  7C 08 03 A6 */	mtlr r0
 /* 8004F888 0004C688  38 21 00 30 */	addi r1, r1, 0x30
 /* 8004F88C 0004C68C  4E 80 00 20 */	blr 
+
+.endif
+

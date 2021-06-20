@@ -18,6 +18,8 @@ iWaterBumpTexID:
 iWaterEnvTexID:
 	.incbin "baserom.dol", 0x32DB04, 0x4
 
+.if 0
+
 .section .text
 
 .global TexturesOpen__Fv
@@ -83,3 +85,6 @@ TexturesClose__Fv:
 /* 801D8A64 001D5864  7C 08 03 A6 */	mtlr r0
 /* 801D8A68 001D5868  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D8A6C 001D586C  4E 80 00 20 */	blr 
+
+.endif
+

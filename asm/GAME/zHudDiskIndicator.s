@@ -2,8 +2,8 @@
 
 .section .rodata
 
-.global $$2stringBase0_125
-$$2stringBase0_125:
+.global _esc__2_stringBase0_125
+_esc__2_stringBase0_125:
 	.incbin "baserom.dol", 0x2E4D70, 0x10
 
 .section .sdata
@@ -14,30 +14,32 @@ __vt__Q24zHud13DiskIndicator:
 
 .section .sdata2
 
-.global $$2859_0
-$$2859_0:
+.global _esc__2_859_0
+_esc__2_859_0:
 	.incbin "baserom.dol", 0x332FA0, 0x4
-.global $$2860_0
-$$2860_0:
+.global _esc__2_860_0
+_esc__2_860_0:
 	.incbin "baserom.dol", 0x332FA4, 0x4
-.global $$2874
-$$2874:
+.global _esc__2_874
+_esc__2_874:
 	.incbin "baserom.dol", 0x332FA8, 0x4
-.global $$2875_1
-$$2875_1:
+.global _esc__2_875_1
+_esc__2_875_1:
 	.incbin "baserom.dol", 0x332FAC, 0x4
-.global $$2876_1
-$$2876_1:
+.global _esc__2_876_1
+_esc__2_876_1:
 	.incbin "baserom.dol", 0x332FB0, 0x4
-.global $$2877_1
-$$2877_1:
+.global _esc__2_877_1
+_esc__2_877_1:
 	.incbin "baserom.dol", 0x332FB4, 0x4
-.global $$2878_1
-$$2878_1:
+.global _esc__2_878_1
+_esc__2_878_1:
 	.incbin "baserom.dol", 0x332FB8, 0x4
-.global $$2879
-$$2879:
+.global _esc__2_879
+_esc__2_879:
 	.incbin "baserom.dol", 0x332FBC, 0x4
+
+.if 0
 
 .section .text
 
@@ -53,9 +55,9 @@ __ct__Q24zHud13DiskIndicatorFv:
 /* 801AF430 001AC230  38 00 00 00 */	li r0, 0
 /* 801AF434 001AC234  90 7F 00 14 */	stw r3, 0x14(r31)
 /* 801AF438 001AC238  7F E3 FB 78 */	mr r3, r31
-/* 801AF43C 001AC23C  C0 22 C8 C0 */	lfs f1, $$2859_0-_SDA2_BASE_(r2)
+/* 801AF43C 001AC23C  C0 22 C8 C0 */	lfs f1, _esc__2_859_0-_SDA2_BASE_(r2)
 /* 801AF440 001AC240  90 1F 00 18 */	stw r0, 0x18(r31)
-/* 801AF444 001AC244  C0 02 C8 C4 */	lfs f0, $$2860_0-_SDA2_BASE_(r2)
+/* 801AF444 001AC244  C0 02 C8 C4 */	lfs f0, _esc__2_860_0-_SDA2_BASE_(r2)
 /* 801AF448 001AC248  D0 3F 00 1C */	stfs f1, 0x1c(r31)
 /* 801AF44C 001AC24C  D0 1F 00 20 */	stfs f0, 0x20(r31)
 /* 801AF450 001AC250  D0 1F 00 24 */	stfs f0, 0x24(r31)
@@ -81,11 +83,11 @@ reset__Q24zHud13DiskIndicatorFv:
 setup__Q24zHud13DiskIndicatorFv:
 /* 801AF48C 001AC28C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801AF490 001AC290  7C 08 02 A6 */	mflr r0
-/* 801AF494 001AC294  3C 80 80 2E */	lis r4, $$2stringBase0_125@ha
+/* 801AF494 001AC294  3C 80 80 2E */	lis r4, _esc__2_stringBase0_125@ha
 /* 801AF498 001AC298  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801AF49C 001AC29C  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 801AF4A0 001AC2A0  7C 7F 1B 78 */	mr r31, r3
-/* 801AF4A4 001AC2A4  38 64 7D 70 */	addi r3, r4, $$2stringBase0_125@l
+/* 801AF4A4 001AC2A4  38 64 7D 70 */	addi r3, r4, _esc__2_stringBase0_125@l
 /* 801AF4A8 001AC2A8  4B EB D7 79 */	bl xStrHash__FPCc
 /* 801AF4AC 001AC2AC  4B FA B2 31 */	bl zSceneFindObject__FUi
 /* 801AF4B0 001AC2B0  28 03 00 00 */	cmplwi r3, 0
@@ -97,11 +99,11 @@ setup__Q24zHud13DiskIndicatorFv:
 /* 801AF4C8 001AC2C8  38 C0 00 12 */	li r6, 0x12
 /* 801AF4CC 001AC2CC  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801AF4D0 001AC2D0  4B FF 99 4D */	bl init_layers__Q24xhud12image_widgetFUsUsUs
-/* 801AF4D4 001AC2D4  C0 42 C8 C4 */	lfs f2, $$2860_0-_SDA2_BASE_(r2)
+/* 801AF4D4 001AC2D4  C0 42 C8 C4 */	lfs f2, _esc__2_860_0-_SDA2_BASE_(r2)
 /* 801AF4D8 001AC2D8  38 A1 00 10 */	addi r5, r1, 0x10
-/* 801AF4DC 001AC2DC  C0 22 C8 C8 */	lfs f1, $$2874-_SDA2_BASE_(r2)
+/* 801AF4DC 001AC2DC  C0 22 C8 C8 */	lfs f1, _esc__2_874-_SDA2_BASE_(r2)
 /* 801AF4E0 001AC2E0  38 C1 00 08 */	addi r6, r1, 8
-/* 801AF4E4 001AC2E4  C0 02 C8 CC */	lfs f0, $$2875_1-_SDA2_BASE_(r2)
+/* 801AF4E4 001AC2E4  C0 02 C8 CC */	lfs f0, _esc__2_875_1-_SDA2_BASE_(r2)
 /* 801AF4E8 001AC2E8  38 80 00 00 */	li r4, 0
 /* 801AF4EC 001AC2EC  D0 41 00 10 */	stfs f2, 0x10(r1)
 /* 801AF4F0 001AC2F0  D0 41 00 14 */	stfs f2, 0x14(r1)
@@ -116,19 +118,19 @@ setup__Q24zHud13DiskIndicatorFv:
 /* 801AF514 001AC314  4B FF 9D DD */	bl set_layer_type__Q24xhud12image_widgetFUiQ34xhud12image_widget10RENDERTYPEQ34xhud12image_widget11LAYER_FLAGS
 /* 801AF518 001AC318  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801AF51C 001AC31C  38 80 00 00 */	li r4, 0
-/* 801AF520 001AC320  C0 22 C8 CC */	lfs f1, $$2875_1-_SDA2_BASE_(r2)
+/* 801AF520 001AC320  C0 22 C8 CC */	lfs f1, _esc__2_875_1-_SDA2_BASE_(r2)
 /* 801AF524 001AC324  4B FF 9A BD */	bl set_layer_value__Q24xhud12image_widgetFUif
 /* 801AF528 001AC328  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801AF52C 001AC32C  38 80 00 00 */	li r4, 0
-/* 801AF530 001AC330  C0 22 C8 CC */	lfs f1, $$2875_1-_SDA2_BASE_(r2)
+/* 801AF530 001AC330  C0 22 C8 CC */	lfs f1, _esc__2_875_1-_SDA2_BASE_(r2)
 /* 801AF534 001AC334  4B FF 9C B1 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
-/* 801AF538 001AC338  C0 62 C8 C8 */	lfs f3, $$2874-_SDA2_BASE_(r2)
+/* 801AF538 001AC338  C0 62 C8 C8 */	lfs f3, _esc__2_874-_SDA2_BASE_(r2)
 /* 801AF53C 001AC33C  38 A1 00 10 */	addi r5, r1, 0x10
-/* 801AF540 001AC340  C0 42 C8 C4 */	lfs f2, $$2860_0-_SDA2_BASE_(r2)
+/* 801AF540 001AC340  C0 42 C8 C4 */	lfs f2, _esc__2_860_0-_SDA2_BASE_(r2)
 /* 801AF544 001AC344  38 C1 00 08 */	addi r6, r1, 8
-/* 801AF548 001AC348  C0 22 C8 D0 */	lfs f1, $$2876_1-_SDA2_BASE_(r2)
+/* 801AF548 001AC348  C0 22 C8 D0 */	lfs f1, _esc__2_876_1-_SDA2_BASE_(r2)
 /* 801AF54C 001AC34C  38 80 00 01 */	li r4, 1
-/* 801AF550 001AC350  C0 02 C8 CC */	lfs f0, $$2875_1-_SDA2_BASE_(r2)
+/* 801AF550 001AC350  C0 02 C8 CC */	lfs f0, _esc__2_875_1-_SDA2_BASE_(r2)
 /* 801AF554 001AC354  D0 61 00 10 */	stfs f3, 0x10(r1)
 /* 801AF558 001AC358  D0 41 00 14 */	stfs f2, 0x14(r1)
 /* 801AF55C 001AC35C  D0 21 00 08 */	stfs f1, 8(r1)
@@ -137,8 +139,8 @@ setup__Q24zHud13DiskIndicatorFv:
 /* 801AF568 001AC368  4B FF 9D 11 */	bl set_layer_uvs__Q24xhud12image_widgetFUiR11RwTexCoordsR11RwTexCoords
 /* 801AF56C 001AC36C  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801AF570 001AC370  38 80 00 01 */	li r4, 1
-/* 801AF574 001AC374  C0 22 C8 D4 */	lfs f1, $$2877_1-_SDA2_BASE_(r2)
-/* 801AF578 001AC378  C0 42 C8 D8 */	lfs f2, $$2878_1-_SDA2_BASE_(r2)
+/* 801AF574 001AC374  C0 22 C8 D4 */	lfs f1, _esc__2_877_1-_SDA2_BASE_(r2)
+/* 801AF578 001AC378  C0 42 C8 D8 */	lfs f2, _esc__2_878_1-_SDA2_BASE_(r2)
 /* 801AF57C 001AC37C  4B FF 9C 29 */	bl set_layer_offset__Q24xhud12image_widgetFUiff
 /* 801AF580 001AC380  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801AF584 001AC384  38 80 00 01 */	li r4, 1
@@ -147,15 +149,15 @@ setup__Q24zHud13DiskIndicatorFv:
 /* 801AF590 001AC390  4B FF 9D 61 */	bl set_layer_type__Q24xhud12image_widgetFUiQ34xhud12image_widget10RENDERTYPEQ34xhud12image_widget11LAYER_FLAGS
 /* 801AF594 001AC394  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801AF598 001AC398  38 80 00 01 */	li r4, 1
-/* 801AF59C 001AC39C  C0 22 C8 C4 */	lfs f1, $$2860_0-_SDA2_BASE_(r2)
+/* 801AF59C 001AC39C  C0 22 C8 C4 */	lfs f1, _esc__2_860_0-_SDA2_BASE_(r2)
 /* 801AF5A0 001AC3A0  4B FF 9A 41 */	bl set_layer_value__Q24xhud12image_widgetFUif
-/* 801AF5A4 001AC3A4  C0 62 C8 D0 */	lfs f3, $$2876_1-_SDA2_BASE_(r2)
+/* 801AF5A4 001AC3A4  C0 62 C8 D0 */	lfs f3, _esc__2_876_1-_SDA2_BASE_(r2)
 /* 801AF5A8 001AC3A8  38 A1 00 10 */	addi r5, r1, 0x10
-/* 801AF5AC 001AC3AC  C0 42 C8 C4 */	lfs f2, $$2860_0-_SDA2_BASE_(r2)
+/* 801AF5AC 001AC3AC  C0 42 C8 C4 */	lfs f2, _esc__2_860_0-_SDA2_BASE_(r2)
 /* 801AF5B0 001AC3B0  38 C1 00 08 */	addi r6, r1, 8
-/* 801AF5B4 001AC3B4  C0 22 C8 DC */	lfs f1, $$2879-_SDA2_BASE_(r2)
+/* 801AF5B4 001AC3B4  C0 22 C8 DC */	lfs f1, _esc__2_879-_SDA2_BASE_(r2)
 /* 801AF5B8 001AC3B8  38 80 00 02 */	li r4, 2
-/* 801AF5BC 001AC3BC  C0 02 C8 CC */	lfs f0, $$2875_1-_SDA2_BASE_(r2)
+/* 801AF5BC 001AC3BC  C0 02 C8 CC */	lfs f0, _esc__2_875_1-_SDA2_BASE_(r2)
 /* 801AF5C0 001AC3C0  D0 61 00 10 */	stfs f3, 0x10(r1)
 /* 801AF5C4 001AC3C4  D0 41 00 14 */	stfs f2, 0x14(r1)
 /* 801AF5C8 001AC3C8  D0 21 00 08 */	stfs f1, 8(r1)
@@ -169,7 +171,7 @@ setup__Q24zHud13DiskIndicatorFv:
 /* 801AF5E8 001AC3E8  4B FF 9D 09 */	bl set_layer_type__Q24xhud12image_widgetFUiQ34xhud12image_widget10RENDERTYPEQ34xhud12image_widget11LAYER_FLAGS
 /* 801AF5EC 001AC3EC  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801AF5F0 001AC3F0  38 80 00 02 */	li r4, 2
-/* 801AF5F4 001AC3F4  C0 22 C8 CC */	lfs f1, $$2875_1-_SDA2_BASE_(r2)
+/* 801AF5F4 001AC3F4  C0 22 C8 CC */	lfs f1, _esc__2_875_1-_SDA2_BASE_(r2)
 /* 801AF5F8 001AC3F8  4B FF 9B ED */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 801AF5FC 001AC3FC  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801AF600 001AC400  38 80 00 01 */	li r4, 1
@@ -234,7 +236,7 @@ update__Q24zHud13DiskIndicatorFf:
 /* 801AF6C4 001AC4C4  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 801AF6C8 001AC4C8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801AF6CC 001AC4CC  7C 7F 1B 78 */	mr r31, r3
-/* 801AF6D0 001AC4D0  C0 42 C8 C4 */	lfs f2, $$2860_0-_SDA2_BASE_(r2)
+/* 801AF6D0 001AC4D0  C0 42 C8 C4 */	lfs f2, _esc__2_860_0-_SDA2_BASE_(r2)
 /* 801AF6D4 001AC4D4  C0 03 00 24 */	lfs f0, 0x24(r3)
 /* 801AF6D8 001AC4D8  FF E0 08 90 */	fmr f31, f1
 /* 801AF6DC 001AC4DC  FC 00 10 40 */	fcmpo cr0, f0, f2
@@ -253,7 +255,7 @@ update__Q24zHud13DiskIndicatorFf:
 lbl_801AF710:
 /* 801AF710 001AC510  C0 3F 00 1C */	lfs f1, 0x1c(r31)
 /* 801AF714 001AC514  C0 1F 00 20 */	lfs f0, 0x20(r31)
-/* 801AF718 001AC518  C0 42 C8 CC */	lfs f2, $$2875_1-_SDA2_BASE_(r2)
+/* 801AF718 001AC518  C0 42 C8 CC */	lfs f2, _esc__2_875_1-_SDA2_BASE_(r2)
 /* 801AF71C 001AC51C  EC 1F 00 7A */	fmadds f0, f31, f1, f0
 /* 801AF720 001AC520  D0 1F 00 20 */	stfs f0, 0x20(r31)
 /* 801AF724 001AC524  48 00 00 10 */	b lbl_801AF734
@@ -320,3 +322,6 @@ lbl_801AF7E4:
 /* 801AF7E8 001AC5E8  7C 08 03 A6 */	mtlr r0
 /* 801AF7EC 001AC5EC  38 21 00 10 */	addi r1, r1, 0x10
 /* 801AF7F0 001AC5F0  4E 80 00 20 */	blr 
+
+.endif
+

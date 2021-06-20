@@ -1,5 +1,7 @@
 .include "macros.inc"
 
+.if 0
+
 .section .text
 
 .global xTextFindString__FUiPUi
@@ -49,3 +51,6 @@ xTextFindString__FPCcPUi:
 /* 8006E254 0006B054  7C 08 03 A6 */	mtlr r0
 /* 8006E258 0006B058  38 21 00 10 */	addi r1, r1, 0x10
 /* 8006E25C 0006B05C  4E 80 00 20 */	blr 
+
+.endif
+

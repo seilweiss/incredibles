@@ -29,18 +29,20 @@ sLODFadeDistance:
 
 .section .sdata2
 
-.global $$21003_1
-$$21003_1:
+.global _esc__2_1003_1
+_esc__2_1003_1:
 	.incbin "baserom.dol", 0x330AD0, 0x4
-.global $$21004_0
-$$21004_0:
+.global _esc__2_1004_0
+_esc__2_1004_0:
 	.incbin "baserom.dol", 0x330AD4, 0x4
-.global $$21005_0
-$$21005_0:
+.global _esc__2_1005_0
+_esc__2_1005_0:
 	.incbin "baserom.dol", 0x330AD8, 0x4
-.global $$21012_4
-$$21012_4:
+.global _esc__2_1012_4
+_esc__2_1012_4:
 	.incbin "baserom.dol", 0x330ADC, 0x4
+
+.if 0
 
 .section .text
 
@@ -75,11 +77,11 @@ lbl_800E0420:
 /* 800E045C 000DD25C  7C 9C 23 78 */	mr r28, r4
 /* 800E0460 000DD260  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 800E0464 000DD264  41 82 00 0C */	beq lbl_800E0470
-/* 800E0468 000DD268  C3 E2 A3 F0 */	lfs f31, $$21003_1-_SDA2_BASE_(r2)
+/* 800E0468 000DD268  C3 E2 A3 F0 */	lfs f31, _esc__2_1003_1-_SDA2_BASE_(r2)
 /* 800E046C 000DD26C  48 00 00 68 */	b lbl_800E04D4
 lbl_800E0470:
 /* 800E0470 000DD270  80 64 00 54 */	lwz r3, 0x54(r4)
-/* 800E0474 000DD274  C0 02 A3 F4 */	lfs f0, $$21004_0-_SDA2_BASE_(r2)
+/* 800E0474 000DD274  C0 02 A3 F4 */	lfs f0, _esc__2_1004_0-_SDA2_BASE_(r2)
 /* 800E0478 000DD278  C0 43 00 00 */	lfs f2, 0(r3)
 /* 800E047C 000DD27C  C0 23 00 04 */	lfs f1, 4(r3)
 /* 800E0480 000DD280  EC 42 00 B2 */	fmuls f2, f2, f2
@@ -90,7 +92,7 @@ lbl_800E0470:
 /* 800E0494 000DD294  EF E3 08 2A */	fadds f31, f3, f1
 /* 800E0498 000DD298  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 800E049C 000DD29C  40 80 00 38 */	bge lbl_800E04D4
-/* 800E04A0 000DD2A0  C3 E2 A3 F0 */	lfs f31, $$21003_1-_SDA2_BASE_(r2)
+/* 800E04A0 000DD2A0  C3 E2 A3 F0 */	lfs f31, _esc__2_1003_1-_SDA2_BASE_(r2)
 /* 800E04A4 000DD2A4  48 00 00 30 */	b lbl_800E04D4
 lbl_800E04A8:
 /* 800E04A8 000DD2A8  80 6D CA EC */	lwz r3, sLODTableList-_SDA_BASE_(r13)
@@ -136,13 +138,13 @@ lbl_800E0510:
 /* 800E053C 000DD33C  90 03 00 08 */	stw r0, 8(r3)
 /* 800E0540 000DD340  C0 24 00 04 */	lfs f1, 4(r4)
 /* 800E0544 000DD344  4B F2 AF 35 */	bl xsqrt__Ff
-/* 800E0548 000DD348  C0 02 A3 F8 */	lfs f0, $$21005_0-_SDA2_BASE_(r2)
+/* 800E0548 000DD348  C0 02 A3 F8 */	lfs f0, _esc__2_1005_0-_SDA2_BASE_(r2)
 /* 800E054C 000DD34C  38 1D 00 04 */	addi r0, r29, 4
 /* 800E0550 000DD350  80 6D CA EC */	lwz r3, sLODTableList-_SDA_BASE_(r13)
 /* 800E0554 000DD354  EF E0 08 2A */	fadds f31, f0, f1
 /* 800E0558 000DD358  7C 23 04 2E */	lfsx f1, r3, r0
 /* 800E055C 000DD35C  4B F2 AF 1D */	bl xsqrt__Ff
-/* 800E0560 000DD360  C0 02 A3 F8 */	lfs f0, $$21005_0-_SDA2_BASE_(r2)
+/* 800E0560 000DD360  C0 02 A3 F8 */	lfs f0, _esc__2_1005_0-_SDA2_BASE_(r2)
 /* 800E0564 000DD364  3C 60 80 37 */	lis r3, sManagerList@ha
 /* 800E0568 000DD368  80 8D CA F4 */	lwz r4, sManagerCount-_SDA_BASE_(r13)
 /* 800E056C 000DD36C  38 03 74 F8 */	addi r0, r3, sManagerList@l
@@ -382,14 +384,14 @@ lbl_800E0888:
 /* 800E089C 000DD69C  28 08 00 00 */	cmplwi r8, 0
 /* 800E08A0 000DD6A0  41 82 01 C0 */	beq lbl_800E0A60
 /* 800E08A4 000DD6A4  80 08 00 08 */	lwz r0, 8(r8)
-/* 800E08A8 000DD6A8  C0 82 A3 FC */	lfs f4, $$21012_4-_SDA2_BASE_(r2)
+/* 800E08A8 000DD6A8  C0 82 A3 FC */	lfs f4, _esc__2_1012_4-_SDA2_BASE_(r2)
 /* 800E08AC 000DD6AC  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 800E08B0 000DD6B0  41 82 00 0C */	beq lbl_800E08BC
-/* 800E08B4 000DD6B4  C0 A2 A3 F0 */	lfs f5, $$21003_1-_SDA2_BASE_(r2)
+/* 800E08B4 000DD6B4  C0 A2 A3 F0 */	lfs f5, _esc__2_1003_1-_SDA2_BASE_(r2)
 /* 800E08B8 000DD6B8  48 00 00 38 */	b lbl_800E08F0
 lbl_800E08BC:
 /* 800E08BC 000DD6BC  80 69 00 54 */	lwz r3, 0x54(r9)
-/* 800E08C0 000DD6C0  C0 02 A3 F4 */	lfs f0, $$21004_0-_SDA2_BASE_(r2)
+/* 800E08C0 000DD6C0  C0 02 A3 F4 */	lfs f0, _esc__2_1004_0-_SDA2_BASE_(r2)
 /* 800E08C4 000DD6C4  C0 43 00 00 */	lfs f2, 0(r3)
 /* 800E08C8 000DD6C8  C0 23 00 04 */	lfs f1, 4(r3)
 /* 800E08CC 000DD6CC  EC 42 00 B2 */	fmuls f2, f2, f2
@@ -400,7 +402,7 @@ lbl_800E08BC:
 /* 800E08E0 000DD6E0  EC A3 08 2A */	fadds f5, f3, f1
 /* 800E08E4 000DD6E4  FC 05 00 40 */	fcmpo cr0, f5, f0
 /* 800E08E8 000DD6E8  40 80 00 08 */	bge lbl_800E08F0
-/* 800E08EC 000DD6EC  C0 A2 A3 F0 */	lfs f5, $$21003_1-_SDA2_BASE_(r2)
+/* 800E08EC 000DD6EC  C0 A2 A3 F0 */	lfs f5, _esc__2_1003_1-_SDA2_BASE_(r2)
 lbl_800E08F0:
 /* 800E08F0 000DD6F0  80 69 00 54 */	lwz r3, 0x54(r9)
 /* 800E08F4 000DD6F4  28 03 00 00 */	cmplwi r3, 0
@@ -541,3 +543,6 @@ lbl_800E0ABC:
 lbl_800E0AC4:
 /* 800E0AC4 000DD8C4  38 60 00 00 */	li r3, 0
 /* 800E0AC8 000DD8C8  4E 80 00 20 */	blr 
+
+.endif
+

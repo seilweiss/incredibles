@@ -8,15 +8,17 @@ sPauseTimerHash:
 
 .section .sdata2
 
-.global $$2962_0
-$$2962_0:
+.global _esc__2_962_0
+_esc__2_962_0:
 	.incbin "baserom.dol", 0x32F688, 0x8
-.global $$2964
-$$2964:
+.global _esc__2_964
+_esc__2_964:
 	.incbin "baserom.dol", 0x32F690, 0x8
-.global $$21037_1
-$$21037_1:
+.global _esc__2_1037_1
+_esc__2_1037_1:
 	.incbin "baserom.dol", 0x32F698, 0x8
+
+.if 0
 
 .section .text
 
@@ -24,7 +26,7 @@ $$21037_1:
 GetRandomizedTime__FP11xTimerAsset:
 /* 8006EF28 0006BD28  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8006EF2C 0006BD2C  7C 08 02 A6 */	mflr r0
-/* 8006EF30 0006BD30  C0 22 8F A8 */	lfs f1, $$2962_0-_SDA2_BASE_(r2)
+/* 8006EF30 0006BD30  C0 22 8F A8 */	lfs f1, _esc__2_962_0-_SDA2_BASE_(r2)
 /* 8006EF34 0006BD34  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8006EF38 0006BD38  BF C1 00 18 */	stmw r30, 0x18(r1)
 /* 8006EF3C 0006BD3C  7C 7E 1B 78 */	mr r30, r3
@@ -41,8 +43,8 @@ lbl_8006EF5C:
 /* 8006EF64 0006BD64  3C 00 43 30 */	lis r0, 0x4330
 /* 8006EF68 0006BD68  7C 83 2B 96 */	divwu r4, r3, r5
 /* 8006EF6C 0006BD6C  90 01 00 08 */	stw r0, 8(r1)
-/* 8006EF70 0006BD70  C8 42 8F B0 */	lfd f2, $$2964-_SDA2_BASE_(r2)
-/* 8006EF74 0006BD74  C0 02 8F A8 */	lfs f0, $$2962_0-_SDA2_BASE_(r2)
+/* 8006EF70 0006BD70  C8 42 8F B0 */	lfd f2, _esc__2_964-_SDA2_BASE_(r2)
+/* 8006EF74 0006BD74  C0 02 8F A8 */	lfs f0, _esc__2_962_0-_SDA2_BASE_(r2)
 /* 8006EF78 0006BD78  C0 7E 00 08 */	lfs f3, 8(r30)
 /* 8006EF7C 0006BD7C  7C 04 29 D6 */	mullw r0, r4, r5
 /* 8006EF80 0006BD80  7C 00 18 50 */	subf r0, r0, r3
@@ -307,7 +309,7 @@ xTimerUpdate__FP5xBaseP6xScenef:
 /* 8006F2EC 0006C0EC  40 82 00 34 */	bne lbl_8006F320
 lbl_8006F2F0:
 /* 8006F2F0 0006C0F0  C0 3F 00 18 */	lfs f1, 0x18(r31)
-/* 8006F2F4 0006C0F4  C0 02 8F B8 */	lfs f0, $$21037_1-_SDA2_BASE_(r2)
+/* 8006F2F4 0006C0F4  C0 02 8F B8 */	lfs f0, _esc__2_1037_1-_SDA2_BASE_(r2)
 /* 8006F2F8 0006C0F8  EC 21 F8 28 */	fsubs f1, f1, f31
 /* 8006F2FC 0006C0FC  D0 3F 00 18 */	stfs f1, 0x18(r31)
 /* 8006F300 0006C100  C0 3F 00 18 */	lfs f1, 0x18(r31)
@@ -326,3 +328,6 @@ lbl_8006F320:
 /* 8006F330 0006C130  7C 08 03 A6 */	mtlr r0
 /* 8006F334 0006C134  38 21 00 20 */	addi r1, r1, 0x20
 /* 8006F338 0006C138  4E 80 00 20 */	blr 
+
+.endif
+
