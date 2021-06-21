@@ -31,3 +31,22 @@ struct xBox
     xVec3 upper;
     xVec3 lower;
 };
+
+struct xBBox
+{
+    xVec3 center;
+    xBox box;
+};
+
+struct xSphere
+{
+    xVec3 center;
+    float32 r;
+};
+
+struct xCylinder
+{
+    xVec3 center;
+    float32 r;
+    float32 h;
+};

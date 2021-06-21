@@ -1,18 +1,45 @@
 #include "xVolume.h"
 
-#include <types.h>
-
+#ifndef NON_MATCHING
 // func_80071764
 #pragma GLOBAL_ASM("asm/Core/x/xVolume.s", "Init__7xVolumeFP12xVolumeAsset")
+#else
+void xVolume::Init(xVolumeAsset* asset)
+{
+    // This matches in BFBB but not Incredibles.
+    // For some reason Incredibles doesn't save and restore r31 here...
 
-// func_800717BC
-#pragma GLOBAL_ASM("asm/Core/x/xVolume.s", "Reset__7xVolumeFv")
+    xBaseInit(this, asset);
 
-// func_800717E0
-#pragma GLOBAL_ASM("asm/Core/x/xVolume.s", "Save__7xVolumeFP7xSerial")
+    this->asset = asset;
 
-// func_80071800
-#pragma GLOBAL_ASM("asm/Core/x/xVolume.s", "Load__7xVolumeFP7xSerial")
+    if (linkCount)
+    {
+        link = (xLinkAsset*)(this->asset + 1);
+    }
+    else
+    {
+        link = NULL;
+    }
+}
+#endif
 
-// func_80071820
-#pragma GLOBAL_ASM("asm/Core/x/xVolume.s", "GetBound__7xVolumeFv")
+void xVolume::Reset()
+{
+    xBaseReset(this, asset);
+}
+
+void xVolume::Save(xSerial* s)
+{
+    xBaseSave(this, s);
+}
+
+void xVolume::Load(xSerial* s)
+{
+    xBaseLoad(this, s);
+}
+
+xBound* xVolume::GetBound()
+{
+    return &asset->bound;
+}

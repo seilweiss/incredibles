@@ -1,6 +1,7 @@
 #pragma once
 
 #include "xLinkAsset.h"
+#include "xserializer.h"
 
 struct xBase;
 
@@ -25,3 +26,6 @@ struct xBaseAsset
 };
 
 void xBaseInit(xBase* xb, const xBaseAsset* asset);
+void xBaseSave(xBase* ent, xSerial* s);
+void xBaseLoad(xBase* ent, xSerial* s);
+void xBaseReset(xBase* xb, xBaseAsset* asset);
