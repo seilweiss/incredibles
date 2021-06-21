@@ -185,7 +185,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xTextureManager.o\
 	$(OBJ_DIR)/asm/Core/x/xTimer.o\
 	$(OBJ_DIR)/src/Core/x/xTimer.o\
-	$(OBJ_DIR)/asm/Core/x/xTransient.o\
 	$(OBJ_DIR)/src/Core/x/xTransient.o\
 	$(OBJ_DIR)/asm/Core/x/xTRC.o\
 	$(OBJ_DIR)/src/Core/x/xTRC.o\

@@ -1,21 +1,6 @@
 #pragma once
 
-#include <rwcore.h>
-#include <types.h>
-
-union xVec3
-{
-    RwV3d m_RwV3d;
-
-    struct
-    {
-        float32 x;
-        float32 y;
-        float32 z;
-    };
-
-    float32 a[3];
-};
+#include "xVec3.h"
 
 struct xVec4
 {
@@ -39,4 +24,10 @@ struct xMat4x3 : xMat3x3
 {
     xVec3 pos;
     uint32 pad3;
+};
+
+struct xBox
+{
+    xVec3 upper;
+    xVec3 lower;
 };
