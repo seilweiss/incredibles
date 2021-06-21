@@ -692,7 +692,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zCineFX.o\
 	$(OBJ_DIR)/asm/GAME/zFrozoneIce.o\
 	$(OBJ_DIR)/src/GAME/zFrozoneIce.o\
-	$(OBJ_DIR)/asm/Core/x/xRenderBuffer.o\
 	$(OBJ_DIR)/src/Core/x/xRenderBuffer.o\
 	$(OBJ_DIR)/asm/GAME/zFXFireTrail.o\
 	$(OBJ_DIR)/src/GAME/zFXFireTrail.o\

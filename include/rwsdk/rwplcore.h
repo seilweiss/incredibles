@@ -56,3 +56,10 @@ struct RwRGBA
     RwUInt8 blue;
     RwUInt8 alpha;
 };
+
+struct RwV3d
+{
+    RwReal x;
+    RwReal y;
+    RwReal z;
+};
