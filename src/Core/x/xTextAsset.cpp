@@ -1,9 +1,32 @@
 #include "xTextAsset.h"
 
-#include <types.h>
+#include "xstransvc.h"
+#include "xString.h"
 
-// func_8006E1C8
-#pragma GLOBAL_ASM("asm/Core/x/xTextAsset.s", "xTextFindString__FUiPUi")
+const char* xTextFindString(uint32 key, uint32* len)
+{
+    if (key == 0)
+    {
+        return NULL;
+    }
 
-// func_8006E22C
-#pragma GLOBAL_ASM("asm/Core/x/xTextAsset.s", "xTextFindString__FPCcPUi")
+    uint32 size;
+    xTextAsset* asset = (xTextAsset*)xSTFindAsset(key, &size);
+
+    if (!asset)
+    {
+        return NULL;
+    }
+
+    if (len)
+    {
+        *len = asset->len;
+    }
+
+    return (const char*)(asset + 1);
+}
+
+const char* xTextFindString(const char* key, uint32* len)
+{
+    return xTextFindString(xStrHash(key), len);
+}
