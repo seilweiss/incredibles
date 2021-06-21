@@ -8,6 +8,8 @@ rumbleManager_esc__7_1174:
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_19
 _esc__2_stringBase0_19:
 	.incbin "baserom.dol", 0x2CF3A8, 0x10

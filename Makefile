@@ -73,7 +73,7 @@ SHA1SUM := sha1sum
 ASMDIFF := ./asmdiff.sh
 
 # Options
-INCLUDES := -ir src -ir include -Iinclude -Iinclude/rwsdk
+INCLUDES := -ir src -ir include -Iinclude -Iinclude/CodeWarrior -Iinclude/rwsdk
 
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -w off -maxerrors 1 -nostdlib

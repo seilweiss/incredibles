@@ -5,9 +5,6 @@
 .global groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_
 groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
 	.incbin "baserom.dol", 0x2FC868, 0xA8
-.global region_array
-region_array:
-	.incbin "baserom.dol", 0x2FC910, 0x58
 
 .section .sbss
 
