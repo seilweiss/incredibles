@@ -45,7 +45,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xCurveAsset.o\
 	$(OBJ_DIR)/asm/Core/x/xCutscene.o\
 	$(OBJ_DIR)/src/Core/x/xCutscene.o\
-	$(OBJ_DIR)/asm/Core/x/xDebug.o\
 	$(OBJ_DIR)/src/Core/x/xDebug.o\
 	$(OBJ_DIR)/asm/Core/x/xDecal.o\
 	$(OBJ_DIR)/src/Core/x/xDecal.o\

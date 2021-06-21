@@ -1,24 +1,39 @@
 #include "xDebug.h"
 
-#include <types.h>
+uint32 gFrameCount = 0;
+uint32 gSceneFrameCount = 0;
 
-// func_8001E684
-#pragma GLOBAL_ASM("asm/Core/x/xDebug.s", "xprintf__FPCce")
+void xprintf(const char*, ...)
+{
+    return;
+}
 
-// func_8001E6D4
-#pragma GLOBAL_ASM("asm/Core/x/xDebug.s", "xDebugInit__Fv")
+void xDebugInit()
+{
+    return;
+}
 
-// func_8001E6D8
-#pragma GLOBAL_ASM("asm/Core/x/xDebug.s", "xDebugUpdate__Fv")
+void xDebugUpdate()
+{
+    return;
+}
 
-// func_8001E6DC
-#pragma GLOBAL_ASM("asm/Core/x/xDebug.s", "xDebugExit__Fv")
+void xDebugExit()
+{
+    return;
+}
 
-// func_8001E6E0
-#pragma GLOBAL_ASM("asm/Core/x/xDebug.s", "xDebugTimestampScreen__Fv")
+void xDebugTimestampScreen()
+{
+    return;
+}
 
-// func_8001E6E4
-#pragma GLOBAL_ASM("asm/Core/x/xDebug.s", "xDrawTextInit__FUiUi")
+void xDrawTextInit(uint32, uint32)
+{
+    return;
+}
 
-// func_8001E6E8
-#pragma GLOBAL_ASM("asm/Core/x/xDebug.s", "xDrawTextRender__Fv")
+void xDrawTextRender()
+{
+    return;
+}
