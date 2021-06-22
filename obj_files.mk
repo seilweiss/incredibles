@@ -14,7 +14,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xAnim.o\
 	$(OBJ_DIR)/asm/Core/x/xBallPhysics.o\
 	$(OBJ_DIR)/src/Core/x/xBallPhysics.o\
-	$(OBJ_DIR)/asm/Core/x/xBase.o\
 	$(OBJ_DIR)/src/Core/x/xBase.o\
 	$(OBJ_DIR)/src/Core/x/xBehaveGoalSimple.o\
 	$(OBJ_DIR)/src/Core/x/xBehaveMgr.o\

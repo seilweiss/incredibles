@@ -1,30 +1,72 @@
 #include "xBase.h"
 
-#include <types.h>
+void xBaseInit(xBase* xb, const xBaseAsset* asset)
+{
+    xb->id = asset->id;
+    xb->baseType = asset->baseType;
+    xb->baseFlags = asset->baseFlags;
+    xb->linkCount = asset->linkCount;
+    xb->link = NULL;
 
-// func_8000C4A0
-#pragma GLOBAL_ASM("asm/Core/x/xBase.s", "xBaseInit__FP5xBasePC10xBaseAsset")
+    xBaseValidate(xb);
+}
 
-// func_8000C4E8
-#pragma GLOBAL_ASM("asm/Core/x/xBase.s", "xBaseValidate__FP5xBase")
+void xBaseValidate(xBase* xb)
+{
+    xb->baseFlags |= XBASE_VALID;
+}
 
-// func_8000C4F8
-#pragma GLOBAL_ASM("asm/Core/x/xBase.s", "xBaseSetup__FP5xBase")
+void xBaseSetup(xBase*)
+{
+    return;
+}
 
-// func_8000C4FC
-#pragma GLOBAL_ASM("asm/Core/x/xBase.s", "xBaseSave__FP5xBaseP7xSerial")
+void xBaseSave(xBase* ent, xSerial* s)
+{
+    if (xBaseIsEnabled(ent))
+    {
+        s->Write_b1(1);
+    }
+    else
+    {
+        s->Write_b1(0);
+    }
+}
 
-// func_8000C54C
-#pragma GLOBAL_ASM("asm/Core/x/xBase.s", "xBaseIsEnabled__FPC5xBase")
+bool xBaseIsEnabled(const xBase* xb)
+{
+    return xb->baseFlags & XBASE_ENABLED;
+}
 
-// func_8000C558
-#pragma GLOBAL_ASM("asm/Core/x/xBase.s", "xBaseLoad__FP5xBaseP7xSerial")
+void xBaseLoad(xBase* ent, xSerial* s)
+{
+    int32 b = 0;
 
-// func_8000C5B4
-#pragma GLOBAL_ASM("asm/Core/x/xBase.s", "xBaseDisable__FP5xBase")
+    s->Read_b1(&b);
 
-// func_8000C5C4
-#pragma GLOBAL_ASM("asm/Core/x/xBase.s", "xBaseEnable__FP5xBase")
+    if (b)
+    {
+        xBaseEnable(ent);
+    }
+    else
+    {
+        xBaseDisable(ent);
+    }
+}
 
-// func_8000C5D4
-#pragma GLOBAL_ASM("asm/Core/x/xBase.s", "xBaseReset__FP5xBaseP10xBaseAsset")
+void xBaseDisable(xBase* xb)
+{
+    xb->baseFlags &= ~XBASE_ENABLED;
+}
+
+void xBaseEnable(xBase* xb)
+{
+    xb->baseFlags |= XBASE_ENABLED;
+}
+
+void xBaseReset(xBase* xb, xBaseAsset* asset)
+{
+    xb->baseFlags = (xb->baseFlags & XBASE_UNK10) | (asset->baseFlags & ~XBASE_UNK10);
+
+    xBaseValidate(xb);
+}

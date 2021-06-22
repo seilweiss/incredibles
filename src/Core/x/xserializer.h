@@ -19,4 +19,7 @@ struct xSerial
     int32 curele;
     int32 bitidx;
     int32 bittally;
+
+    int32 Write_b1(int32 bits);
+    int32 Read_b1(int32* bits);
 };
