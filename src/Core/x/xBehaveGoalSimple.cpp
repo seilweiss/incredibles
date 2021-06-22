@@ -1,9 +1,15 @@
 #include "xBehaveGoalSimple.h"
 
-#include <types.h>
+#include "xFactory.h"
 
-// func_8000C604
-#pragma GLOBAL_ASM("asm/Core/x/xBehaveGoalSimple.s", "__dt__12xFactoryInstFv")
+xFactoryInst::~xFactoryInst()
+{
+    return;
+}
 
-// func_8000C640
-#pragma GLOBAL_ASM("asm/Core/x/xBehaveGoalSimple.s", "__ct__12xFactoryInstFv")
+xFactoryInst::xFactoryInst()
+{
+    itemType = 0;
+    prevprod = NULL;
+    nextprod = NULL;
+}
