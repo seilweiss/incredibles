@@ -1,14 +1,7 @@
 #include "xVolume.h"
 
-#ifndef NON_MATCHING
-// func_80071764
-#pragma GLOBAL_ASM("asm/Core/x/xVolume.s", "Init__7xVolumeFP12xVolumeAsset")
-#else
 void xVolume::Init(xVolumeAsset* asset)
 {
-    // This matches in BFBB but not Incredibles.
-    // For some reason Incredibles doesn't save and restore r31 here...
-
     xBaseInit(this, asset);
 
     this->asset = asset;
@@ -22,7 +15,6 @@ void xVolume::Init(xVolumeAsset* asset)
         link = NULL;
     }
 }
-#endif
 
 void xVolume::Reset()
 {

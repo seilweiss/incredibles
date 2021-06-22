@@ -194,7 +194,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xutil.o\
 	$(OBJ_DIR)/asm/Core/x/xVec3.o\
 	$(OBJ_DIR)/src/Core/x/xVec3.o\
-	$(OBJ_DIR)/asm/Core/x/xVolume.o\
 	$(OBJ_DIR)/src/Core/x/xVolume.o\
 	$(OBJ_DIR)/asm/Core/p2/iAnimSKB.o\
 	$(OBJ_DIR)/src/Core/p2/iAnimSKB.o\
