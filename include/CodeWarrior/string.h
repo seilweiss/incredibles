@@ -1,10 +1,13 @@
 #pragma once
 
+#include <size_t.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-int stricmp(const char* a, const char* b);
+void* memset(void*, int, size_t);
+int stricmp(const char*, const char*);
 
 #ifdef __cplusplus
 }
