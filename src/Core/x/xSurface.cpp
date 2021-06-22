@@ -1,27 +1,64 @@
 #include "xSurface.h"
 
-#include <types.h>
+#include "xMemMgr.h"
 
-// func_8006E0A8
-#pragma GLOBAL_ASM("asm/Core/x/xSurface.s", "xSurfaceInit__FUs")
+#include <hacks.h>
 
-// func_8006E120
-#pragma GLOBAL_ASM("asm/Core/x/xSurface.s", "__as__5xBaseFRC5xBase")
+static xSurface* surfs = NULL;
+static uint16 nsurfs = 0;
 
-// func_8006E154
-#pragma GLOBAL_ASM("asm/Core/x/xSurface.s", "xSurfaceExit__Fv")
+void xSurfaceInit(uint16 num_surfs)
+{
+    nsurfs = num_surfs;
 
-// func_8006E158
-#pragma GLOBAL_ASM("asm/Core/x/xSurface.s", "xSurfaceSave__FP8xSurfaceP7xSerial")
+    if (nsurfs)
+    {
+        surfs = (xSurface*)xMemAlloc(gActiveHeap, nsurfs * sizeof(xSurface), 0);
 
-// func_8006E178
-#pragma GLOBAL_ASM("asm/Core/x/xSurface.s", "xSurfaceLoad__FP8xSurfaceP7xSerial")
+        for (uint16 i = 0; i < nsurfs; i++)
+        {
+            surfs[i].idx = i;
+        }
+    }
+    else
+    {
+        surfs = NULL;
+    }
 
-// func_8006E198
-#pragma GLOBAL_ASM("asm/Core/x/xSurface.s", "xSurfaceReset__FP8xSurface")
+    DEFINE_IMPLICIT_COPY_OP_AFTER_THIS_FUNCTION(xBase)
+}
 
-// func_8006E19C
-#pragma GLOBAL_ASM("asm/Core/x/xSurface.s", "xSurfaceGetNumSurfaces__Fv")
+void xSurfaceExit()
+{
+    return;
+}
 
-// func_8006E1A4
-#pragma GLOBAL_ASM("asm/Core/x/xSurface.s", "xSurfaceGetByIdx__FUs")
+void xSurfaceSave(xSurface* ent, xSerial* s)
+{
+    xBaseSave(ent, s);
+}
+
+void xSurfaceLoad(xSurface* ent, xSerial* s)
+{
+    xBaseLoad(ent, s);
+}
+
+void xSurfaceReset(xSurface*)
+{
+    return;
+}
+
+uint16 xSurfaceGetNumSurfaces()
+{
+    return nsurfs;
+}
+
+xSurface* xSurfaceGetByIdx(uint16 n)
+{
+    if (surfs)
+    {
+        return &surfs[n];
+    }
+
+    return NULL;
+}
