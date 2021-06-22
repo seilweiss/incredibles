@@ -1,9 +1,34 @@
 #include "xBehaveMgr.h"
 
-#include <types.h>
+static int32 g_modinit = 0;
+static xBehaveMgr* g_behavmgr = NULL;
 
-// func_8000C654
-#pragma GLOBAL_ASM("asm/Core/x/xBehaveMgr.s", "xBehaveMgr_Shutdown__Fv")
+xFactoryInst::~xFactoryInst()
+{
+    return;
+}
 
-// func_8000C69C
-#pragma GLOBAL_ASM("asm/Core/x/xBehaveMgr.s", "__dt__10xBehaveMgrFv")
+xFactoryInst::xFactoryInst()
+{
+    itemType = 0;
+    prevprod = NULL;
+    nextprod = NULL;
+}
+
+void xBehaveMgr_Shutdown()
+{
+    if (!--g_modinit)
+    {
+        if (g_behavmgr)
+        {
+            delete g_behavmgr;
+        }
+
+        g_behavmgr = NULL;
+    }
+}
+
+xBehaveMgr::~xBehaveMgr()
+{
+    return;
+}
