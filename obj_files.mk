@@ -38,7 +38,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xColor.o\
 	$(OBJ_DIR)/asm/Core/x/xCounter.o\
 	$(OBJ_DIR)/src/Core/x/xCounter.o\
-	$(OBJ_DIR)/asm/Core/x/xCurveAsset.o\
 	$(OBJ_DIR)/src/Core/x/xCurveAsset.o\
 	$(OBJ_DIR)/asm/Core/x/xCutscene.o\
 	$(OBJ_DIR)/src/Core/x/xCutscene.o\
