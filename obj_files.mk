@@ -87,7 +87,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xHudUnitMeter.o\
 	$(OBJ_DIR)/asm/Core/x/xIni.o\
 	$(OBJ_DIR)/src/Core/x/xIni.o\
-	$(OBJ_DIR)/asm/Core/x/xJaw.o\
 	$(OBJ_DIR)/src/Core/x/xJaw.o\
 	$(OBJ_DIR)/asm/Core/x/xJSP.o\
 	$(OBJ_DIR)/src/Core/x/xJSP.o\
