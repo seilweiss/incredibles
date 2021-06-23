@@ -1,5 +1,8 @@
 #pragma once
 
+struct RwTexCoords;
+struct RwResEntry;
+
 #define rwBIGENDIAN
 
 typedef long RwFixed;
@@ -57,9 +60,64 @@ struct RwRGBA
     RwUInt8 alpha;
 };
 
+struct RwRGBAReal
+{
+    RwReal red;
+    RwReal green;
+    RwReal blue;
+    RwReal alpha;
+};
+
 struct RwV3d
 {
     RwReal x;
     RwReal y;
     RwReal z;
 };
+
+struct RwMatrixTag
+{
+    RwV3d right;
+    RwUInt32 flags;
+    RwV3d up;
+    RwUInt32 pad1;
+    RwV3d at;
+    RwUInt32 pad2;
+    RwV3d pos;
+    RwUInt32 pad3;
+};
+
+typedef struct RwMatrixTag RwMatrix;
+
+struct RwLLLink
+{
+    RwLLLink* next;
+    RwLLLink* prev;
+};
+
+#define rwLLLinkGetData(linkvar, type, entry)                                                      \
+    ((type*)(((RwUInt8*)(linkvar)) - offsetof(type, entry)))
+#define rwLLLinkGetConstData(linkvar, type, entry)                                                 \
+    ((const type*)(((const RwUInt8*)(linkvar)) - offsetof(type, entry)))
+#define rwLLLinkGetNext(linkvar) ((linkvar)->next)
+#define rwLLLinkGetPrevious(linkvar) ((linkvar)->prev)
+#define rwLLLinkInitialize(linkvar)                                                                \
+    ((linkvar)->prev = (RwLLLink*)NULL, (linkvar)->next = (RwLLLink*)NULL)
+#define rwLLLinkAttached(linkvar) ((linkvar)->next)
+
+struct RwLinkList
+{
+    RwLLLink link;
+};
+
+#define rwLinkListInitialize(list)                                                                 \
+    ((list)->link.next = ((RwLLLink*)(list)), (list)->link.prev = ((RwLLLink*)(list)))
+#define rwLinkListEmpty(list) (((list)->link.next) == (&(list)->link))
+#define rwLinkListAddLLLink(list, linkvar)                                                         \
+    ((linkvar)->next = (list)->link.next, (linkvar)->prev = (&(list)->link),                       \
+     ((list)->link.next)->prev = (linkvar), (list)->link.next = (linkvar))
+#define rwLinkListRemoveLLLink(linkvar)                                                            \
+    (((linkvar)->prev)->next = (linkvar)->next, ((linkvar)->next)->prev = (linkvar)->prev)
+#define rwLinkListGetFirstLLLink(list) ((list)->link.next)
+#define rwLinkListGetLastLLLink(list) ((list)->link.prev)
+#define rwLinkListGetTerminator(list) (&((list)->link))

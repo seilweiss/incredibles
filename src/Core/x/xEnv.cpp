@@ -1,15 +1,85 @@
 #include "xEnv.h"
 
-#include <types.h>
+#include "xstransvc.h"
 
-// func_8002ECBC
-#pragma GLOBAL_ASM("asm/Core/x/xEnv.s", "xEnvLoadJSPList__FP4xEnvi")
+xEnv* gCurXEnv = NULL;
 
-// func_8002ED98
-#pragma GLOBAL_ASM("asm/Core/x/xEnv.s", "xEnvSetup__FP4xEnv")
+void xEnvLoadJSPList(xEnv* env, int32 dataType)
+{
+    if (dataType == 0)
+    {
+        uint32 bufsize;
+        void* buf;
 
-// func_8002EDDC
-#pragma GLOBAL_ASM("asm/Core/x/xEnv.s", "xEnvFree__FP4xEnv")
+        env->geom = &env->ienv;
 
-// func_8002EE1C
-#pragma GLOBAL_ASM("asm/Core/x/xEnv.s", "xEnvRender__FP4xEnvb")
+        int32 jsp_count = xSTAssetCountByType('JSP ');
+
+        iEnvLoadBegin(env->geom, dataType, jsp_count / 2);
+
+        int32 index = 0;
+
+        for (int32 i = 0; i < jsp_count; i++)
+        {
+            buf = xSTFindAssetByType('JSP ', i, &bufsize);
+
+            PKRAssetTOCInfo info;
+
+            xSTGetAssetInfoByType('JSP ', i, &info);
+
+            bool32 rc = iEnvLoadJSP(env->geom, info.aid, buf, bufsize, dataType, index);
+
+            if (rc)
+            {
+                index++;
+            }
+        }
+
+        env->geom->jsp_count = index;
+
+        iEnvLoadEnd(env->geom, dataType);
+    }
+
+    gCurXEnv = env;
+}
+
+void xEnvSetup(xEnv* env)
+{
+    iEnvSetup(env->geom);
+    iEnvDefaultLighting(env->geom);
+
+    env->ienv.light_frame[1] = NULL; // this seems sus
+
+    gCurXEnv = env;
+}
+
+void xEnvFree(xEnv* env)
+{
+    if (env->geom)
+    {
+        iEnvFree(env->geom);
+
+        env->geom = NULL;
+    }
+}
+
+void xEnvRender(xEnv* env, bool alpha)
+{
+    if (env->geom)
+    {
+        iEnvRender(env->geom, alpha);
+    }
+
+    if (env->geom->jsp_count > 0)
+    {
+        for (int32 i = 0; i < env->geom->jsp_count; i++)
+        {
+            // do nothing
+        }
+
+        if (env->geom->jsp_count == 1)
+        {
+            env->geom->jsp_visibilityCount[0] = 1;
+        }
+    }
+}

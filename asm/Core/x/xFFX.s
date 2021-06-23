@@ -2,6 +2,8 @@
 
 .section .sbss
 
+.balign 8
+
 .global psize
 psize:
 	.skip 0x4
