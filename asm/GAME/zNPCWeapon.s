@@ -20,6 +20,8 @@ _esc__2_stringBase0_111:
 
 .section .sbss
 
+.balign 8
+
 .global system_id__Q24zNPC17ElectricitySystem
 system_id__Q24zNPC17ElectricitySystem:
 	.skip 0x4

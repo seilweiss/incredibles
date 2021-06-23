@@ -1,18 +1,89 @@
 #include "xScreenFade.h"
 
-#include <types.h>
+#include "xEvent.h"
 
-// func_80189D94
-#pragma GLOBAL_ASM("asm/Core/x/xScreenFade.s", "load__11xScreenFadeFRQ211xScreenFade10asset_type")
+#include "../../GAME/zBase.h"
 
-// func_80189E74
-#pragma GLOBAL_ASM("asm/Core/x/xScreenFade.s", "StartFade__11xScreenFadeFv")
+#include <string.h>
 
-// func_80189E94
-#pragma GLOBAL_ASM("asm/Core/x/xScreenFade.s", "reset__11xScreenFadeFv")
+namespace ScreenFade
+{
+    namespace GlobalData
+    {
+        int32 cnt_fadesInProgress = 0;
+    }
+} // namespace ScreenFade
 
-// func_80189EA8
-#pragma GLOBAL_ASM("asm/Core/x/xScreenFade.s", "load__11xScreenFadeFR5xBaseR9xDynAssetUl")
+void xScreenFade::load(asset_type& a)
+{
+    memset(this, 0, sizeof(xScreenFade));
 
-// func_80189EC8
-#pragma GLOBAL_ASM("asm/Core/x/xScreenFade.s", "cb_dispatch__11xScreenFadeFP5xBaseP5xBaseUiPCfP5xBaseUi")
+    xBaseInit(this, &a);
+
+    baseType = eBaseTypeScreenFade;
+    asset = &a;
+    eventFunc = cb_dispatch;
+
+    if (linkCount)
+    {
+        link = (xLinkAsset*)(&a + 1);
+    }
+
+    state = eScreenFadeStateOff;
+    src = g_CLEAR;
+
+    if (asset->fadeDownTime < 0.0f)
+    {
+        asset->fadeDownTime = 2.0f;
+    }
+
+    if (asset->fadeUpTime < 0.0f)
+    {
+        asset->fadeUpTime = 2.0f;
+    }
+
+    if (asset->waitTime < 0.0f)
+    {
+        asset->waitTime = 2.0f;
+    }
+
+    owner = NULL;
+}
+
+void xScreenFade::StartFade()
+{
+    state = eScreenFadeStateFadeDown;
+    time_passed = 0.0f;
+
+    ScreenFade::GlobalData::cnt_fadesInProgress++;
+}
+
+void xScreenFade::reset()
+{
+    state = eScreenFadeStateOff;
+    owner = NULL;
+
+    ScreenFade::GlobalData::cnt_fadesInProgress = 0;
+}
+
+void xScreenFade::load(xBase& data, xDynAsset& asset, ulong32)
+{
+    ((xScreenFade&)data).load((asset_type&)asset);
+}
+
+void xScreenFade::cb_dispatch(xBase* from, xBase* to, uint32 event, const float32*, xBase*, uint32)
+{
+    xScreenFade& e = *(xScreenFade*)to;
+
+    switch (event)
+    {
+    case eEventReset:
+    case eEventSceneEnd:
+        e.reset();
+        break;
+    case eEventStartFade:
+        e.owner = from;
+        e.StartFade();
+        break;
+    }
+}

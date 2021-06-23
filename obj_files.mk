@@ -532,7 +532,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xCollideSweptSphere.o\
 	$(OBJ_DIR)/asm/GAME/zNPCCommon.o\
 	$(OBJ_DIR)/src/GAME/zNPCCommon.o\
-	$(OBJ_DIR)/asm/Core/x/xScreenFade.o\
 	$(OBJ_DIR)/src/Core/x/xScreenFade.o\
 	$(OBJ_DIR)/asm/GAME/zNPCWeapon.o\
 	$(OBJ_DIR)/src/GAME/zNPCWeapon.o\
