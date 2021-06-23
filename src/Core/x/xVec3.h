@@ -15,4 +15,13 @@ union xVec3
     };
 
     float32 a[3];
+
+    static const xVec3 m_Null;
+    static const xVec3 m_UnitAxisX;
+    static const xVec3 m_UnitAxisY;
+    static const xVec3 m_UnitAxisZ;
 };
+
+float32 xVec3Normalize(xVec3* o, const xVec3* v);
+void xVec3Copy(xVec3* o, const xVec3* v);
+float32 xVec3Dot(const xVec3* a, const xVec3* b);

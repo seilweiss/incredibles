@@ -23,6 +23,8 @@ lbl_803D892C:
 
 .section .sdata2
 
+.balign 8
+
 .global _esc__2_735
 _esc__2_735:
 	.incbin "baserom.dol", 0x32F738, 0x4
