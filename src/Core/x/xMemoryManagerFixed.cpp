@@ -1,26 +1,60 @@
 #include "xMemoryManagerFixed.h"
 
-#include <types.h>
+void xMemoryManagerFixed::Init(void* start, uint32 elements, uint32 elementSize)
+{
+    DoInit(start, elements * elementSize, false);
 
-// func_801CE0F0
-#pragma GLOBAL_ASM("asm/Core/x/xMemoryManagerFixed.s", "Init__19xMemoryManagerFixedFPvUiUi")
+    this->elements = elements;
+    this->elementSize = elementSize;
 
-// func_801CE13C
-#pragma GLOBAL_ASM("asm/Core/x/xMemoryManagerFixed.s", "DoAllocate__19xMemoryManagerFixedFUiUi")
+    InitMemory();
+}
 
-// func_801CE160
-#pragma GLOBAL_ASM("asm/Core/x/xMemoryManagerFixed.s", "DoFree__19xMemoryManagerFixedFPv")
+void* xMemoryManagerFixed::DoAllocate(uint32, uint32)
+{
+    FixedHeader* header = freeList;
 
-// func_801CE19C
-#pragma GLOBAL_ASM("asm/Core/x/xMemoryManagerFixed.s", "DoReallocate__19xMemoryManagerFixedFPvUiUi")
+    if (!header)
+    {
+        return NULL;
+    }
 
-// func_801CE1A4
-#pragma GLOBAL_ASM("asm/Core/x/xMemoryManagerFixed.s", "DoGetBlockSize__19xMemoryManagerFixedCFPv")
+    freeList = header->next;
 
-// func_801CE1AC
-#pragma GLOBAL_ASM("asm/Core/x/xMemoryManagerFixed.s", "InitMemory__19xMemoryManagerFixedFv")
+    return header;
+}
 
-// func_801CE218
-#pragma GLOBAL_ASM(                                                                                \
-    "asm/Core/x/xMemoryManagerFixed.s",                                                            \
-    "xMEMADVANCE_esc__0_Q219xMemoryManagerFixed11FixedHeader_esc__1___FPQ219xMemoryManagerFixed11FixedHeaderUi")
+void xMemoryManagerFixed::DoFree(void* pointer)
+{
+    FixedHeader* header = (FixedHeader*)pointer;
+
+    GetArenaStart();
+
+    header->next = freeList;
+    freeList = header;
+}
+
+void* xMemoryManagerFixed::DoReallocate(void* pointer, uint32, uint32)
+{
+    return pointer;
+}
+
+uint32 xMemoryManagerFixed::DoGetBlockSize(void*) const
+{
+    return elementSize;
+}
+
+void xMemoryManagerFixed::InitMemory()
+{
+    freeList = (FixedHeader*)GetArenaStart();
+
+    FixedHeader* header = freeList;
+
+    for (uint32 i = 0; i < elements - 1; i++)
+    {
+        header->next = xMEMADVANCE(header, elementSize);
+        header = header->next;
+    }
+
+    header->next = NULL;
+}

@@ -608,7 +608,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zUIIncredibles.o\
 	$(OBJ_DIR)/asm/Core/x/xMemoryManager.o\
 	$(OBJ_DIR)/src/Core/x/xMemoryManager.o\
-	$(OBJ_DIR)/asm/Core/x/xMemoryManagerFixed.o\
 	$(OBJ_DIR)/src/Core/x/xMemoryManagerFixed.o\
 	$(OBJ_DIR)/asm/Core/x/xMemoryManagerGeneral.o\
 	$(OBJ_DIR)/src/Core/x/xMemoryManagerGeneral.o\
