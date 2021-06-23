@@ -170,6 +170,8 @@ format_tags_size__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 
 .section .sdata2
 
+.balign 8
+
 .global screen_bounds_0
 screen_bounds_0:
 	.incbin "baserom.dol", 0x32EB90, 0x10

@@ -52,6 +52,8 @@ struct RwInt128
 #define RwUInt16MAXVAL 0xFFFF
 #define RwUInt16MINVAL 0x0000
 
+#define RWFORCEENUMSIZEINT ((RwInt32)((~((RwUInt32)0)) >> 1))
+
 struct RwRGBA
 {
     RwUInt8 red;
@@ -121,3 +123,12 @@ struct RwLinkList
 #define rwLinkListGetFirstLLLink(list) ((list)->link.next)
 #define rwLinkListGetLastLLLink(list) ((list)->link.prev)
 #define rwLinkListGetTerminator(list) (&((list)->link))
+
+enum RwFogType
+{
+    rwFOGTYPENAFOGTYPE,
+    rwFOGTYPELINEAR,
+    rwFOGTYPEEXPONENTIAL,
+    rwFOGTYPEEXPONENTIAL2,
+    rwFOGTYPEFORCEENUMSIZEINT = RWFORCEENUMSIZEINT
+};

@@ -61,7 +61,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xFFX.o\
 	$(OBJ_DIR)/asm/Core/x/xFMV.o\
 	$(OBJ_DIR)/src/Core/x/xFMV.o\
-	$(OBJ_DIR)/asm/Core/x/xFog.o\
 	$(OBJ_DIR)/src/Core/x/xFog.o\
 	$(OBJ_DIR)/asm/Core/x/xFont.o\
 	$(OBJ_DIR)/src/Core/x/xFont.o\

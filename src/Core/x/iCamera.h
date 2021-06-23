@@ -1,3 +1,5 @@
 #pragma once
 
-#include <types.h>
+#include "iFog.h"
+
+void iCameraSetFogParams(iFogParams* fp, float32 time);

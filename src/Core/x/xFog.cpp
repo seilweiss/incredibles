@@ -1,27 +1,89 @@
 #include "xFog.h"
 
-#include <types.h>
+#include "iCamera.h"
+#include "xEvent.h"
 
-// func_8002FBC0
-#pragma GLOBAL_ASM("asm/Core/x/xFog.s", "xFogClearFog__Fv")
+void xFogClearFog()
+{
+    iCameraSetFogParams(NULL, 0.0f);
+}
 
-// func_8002FBE8
-#pragma GLOBAL_ASM("asm/Core/x/xFog.s", "xFogInit__FPvPv")
+void xFogInit(void* b, void* tasset)
+{
+    xFogInit((xBase*)b, (xFogAsset*)tasset);
+}
 
-// func_8002FC08
-#pragma GLOBAL_ASM("asm/Core/x/xFog.s", "xFogInit__FP5xBaseP9xFogAsset")
+void xFogInit(xBase* b, xFogAsset* tasset)
+{
+    _xFog* t = (_xFog*)b;
 
-// func_8002FC6C
-#pragma GLOBAL_ASM("asm/Core/x/xFog.s", "xFogReset__FP5_xFog")
+    xBaseInit(b, tasset);
 
-// func_8002FC90
-#pragma GLOBAL_ASM("asm/Core/x/xFog.s", "xFogSave__FP5_xFogP7xSerial")
+    t->eventFunc = xFogEventCB;
+    t->tasset = tasset;
 
-// func_8002FCB0
-#pragma GLOBAL_ASM("asm/Core/x/xFog.s", "xFogLoad__FP5_xFogP7xSerial")
+    if (t->linkCount)
+    {
+        t->link = (xLinkAsset*)(t->tasset + 1);
+    }
+    else
+    {
+        t->link = NULL;
+    }
+}
 
-// func_8002FCD0
-#pragma GLOBAL_ASM("asm/Core/x/xFog.s", "xFogEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi")
+void xFogReset(_xFog* t)
+{
+    xBaseReset(t, t->tasset);
+}
 
-// func_8002FDA4
-#pragma GLOBAL_ASM("asm/Core/x/xFog.s", "xFogUpdate__FP5xBaseP6xScenef")
+void xFogSave(_xFog* ent, xSerial* s)
+{
+    xBaseSave(ent, s);
+}
+
+void xFogLoad(_xFog* ent, xSerial* s)
+{
+    xBaseLoad(ent, s);
+}
+
+void xFogEventCB(xBase*, xBase* to, uint32 toEvent, const float32*, xBase*, uint32)
+{
+    _xFog* t = (_xFog*)to;
+
+    switch (toEvent)
+    {
+    case eEventOn:
+    {
+        iFogParams fog;
+        fog.type = rwFOGTYPELINEAR;
+        fog.start = t->tasset->fogStart;
+        fog.stop = t->tasset->fogStop;
+        fog.density = t->tasset->fogDensity;
+        fog.fogcolor.red = t->tasset->fogColor[0];
+        fog.fogcolor.green = t->tasset->fogColor[1];
+        fog.fogcolor.blue = t->tasset->fogColor[2];
+        fog.fogcolor.alpha = t->tasset->fogColor[3];
+        fog.bgcolor.red = t->tasset->bkgndColor[0];
+        fog.bgcolor.green = t->tasset->bkgndColor[1];
+        fog.bgcolor.blue = t->tasset->bkgndColor[2];
+        fog.bgcolor.alpha = t->tasset->bkgndColor[3];
+        fog.table = NULL;
+
+        iCameraSetFogParams(&fog, t->tasset->transitionTime);
+
+        break;
+    }
+    case eEventOff:
+        iCameraSetFogParams(NULL, 0.0f);
+        break;
+    case eEventReset:
+        xFogReset(t);
+        break;
+    }
+}
+
+void xFogUpdate(xBase*, xScene*, float32)
+{
+    return;
+}
