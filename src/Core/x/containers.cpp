@@ -1,27 +1,110 @@
 #include "containers.h"
 
-#include <types.h>
+#include "xMemMgr.h"
 
-// func_801E4638
-#pragma GLOBAL_ASM("asm/Core/x/containers.s", "push_front__14pool_list_baseFv")
+void pool_list_base::push_front()
+{
+    node_base* node = alloc();
 
-// func_801E4690
-#pragma GLOBAL_ASM("asm/Core/x/containers.s", "push_back__14pool_list_baseFv")
+    node->next = head.next;
+    node->prev = &head;
+    node->next->prev = node;
+    node->prev->next = node;
 
-// func_801E46E8
-#pragma GLOBAL_ASM("asm/Core/x/containers.s", "create__14pool_list_baseFiiPv")
+    _size++;
+}
 
-// func_801E474C
-#pragma GLOBAL_ASM("asm/Core/x/containers.s", "reset__14pool_list_baseFi")
+void pool_list_base::push_back()
+{
+    node_base* node = alloc();
 
-// func_801E47AC
-#pragma GLOBAL_ASM("asm/Core/x/containers.s", "insert__14pool_list_baseFPQ214pool_list_base9node_base")
+    node->prev = tail.prev;
+    node->next = &tail;
+    node->next->prev = node;
+    node->prev->next = node;
 
-// func_801E4804
-#pragma GLOBAL_ASM("asm/Core/x/containers.s", "erase__14pool_list_baseFPQ214pool_list_base9node_base")
+    _size++;
+}
 
-// func_801E4850
-#pragma GLOBAL_ASM("asm/Core/x/containers.s", "alloc__14pool_list_baseFv")
+void pool_list_base::create(int32 node_size, int32 max_size, void* buffer)
+{
+    if (!buffer)
+    {
+        this->buffer = xMemAlloc(gActiveHeap, node_size * max_size, 0);
+    }
+    else
+    {
+        this->buffer = buffer;
+    }
 
-// func_801E4864
-#pragma GLOBAL_ASM("asm/Core/x/containers.s", "free__14pool_list_baseFPQ214pool_list_base9node_base")
+    _max_size = max_size;
+
+    reset(node_size);
+}
+
+void pool_list_base::reset(int32 node_size)
+{
+    _size = 0;
+    head.next = &tail;
+    head.prev = NULL;
+    tail.prev = &head;
+    tail.next = NULL;
+    stack = (node_base*)buffer;
+
+    uint8* mem = (uint8*)buffer;
+    uint8* end_mem = mem + (_max_size - 1) * node_size;
+
+    while (mem != end_mem)
+    {
+        ((node_base*)mem)->next = (node_base*)(mem + node_size);
+
+        mem += node_size;
+    }
+
+    ((node_base*)mem)->next = NULL;
+}
+
+pool_list_base::node_base* pool_list_base::insert(node_base* it)
+{
+    node_base* node = alloc();
+
+    node->next = it;
+    node->prev = it->prev;
+    node->next->prev = node;
+    node->prev->next = node;
+
+    _size++;
+
+    return node;
+}
+
+pool_list_base::node_base* pool_list_base::erase(node_base* it)
+{
+    node_base* next = it->next;
+    node_base* prev = it->prev;
+
+    next->prev = prev;
+    prev->next = next;
+
+    free(it);
+
+    _size--;
+
+    return next;
+}
+
+pool_list_base::node_base* pool_list_base::alloc()
+{
+    node_base* node = stack;
+
+    stack = stack->next;
+
+    return node;
+}
+
+void pool_list_base::free(node_base* it)
+{
+    it->next = stack;
+
+    stack = it;
+}

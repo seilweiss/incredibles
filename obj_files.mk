@@ -657,7 +657,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zParticleFXCommon.o\
 	$(OBJ_DIR)/asm/GAME/zHudBossMeter.o\
 	$(OBJ_DIR)/src/GAME/zHudBossMeter.o\
-	$(OBJ_DIR)/asm/Core/x/containers.o\
 	$(OBJ_DIR)/src/Core/x/containers.o\
 	$(OBJ_DIR)/asm/Core/x/xFunctionGenerator.o\
 	$(OBJ_DIR)/src/Core/x/xFunctionGenerator.o\
