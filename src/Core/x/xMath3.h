@@ -27,6 +27,18 @@ struct xMat4x3 : xMat3x3
     uint32 pad3;
 };
 
+struct xQuat
+{
+    xVec3 v;
+    float32 s;
+};
+
+struct xRot
+{
+    xVec3 axis;
+    float32 angle;
+};
+
 struct xBox
 {
     xVec3 upper;

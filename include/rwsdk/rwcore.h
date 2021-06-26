@@ -4,6 +4,7 @@
 #include "rwplcore.h"
 
 struct RxPipeline;
+struct RwRaster;
 
 typedef struct _RxObjSpace3DVertex RxObjSpace3DVertex;
 

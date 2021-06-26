@@ -1,6 +1,8 @@
 #ifndef XEVENT_H
 #define XEVENT_H
 
+#include <types.h>
+
 // The dwarf data does not have an en_xEventTags enum,
 //   so this is based on the one from BFBB.
 //   Might not be 100% accurate.
@@ -827,5 +829,20 @@ enum en_xEventTags
     eEventUISysMessageActionDeclined,
     eEventCount
 };
+
+enum ForceEvent
+{
+    FE_YES,
+    FE_NO
+};
+
+struct xBase;
+
+void zEntEvent(char* to, uint32 toEvent);
+void zEntEvent(uint32 toID, uint32 toEvent);
+void zEntEvent(xBase* to, uint32 toEvent);
+void zEntEvent(xBase* to, uint32 toEvent, const float32* toParam);
+void zEntEvent(xBase* from, uint32, xBase* to, uint32 toEvent, const float32* toParam,
+               xBase* toParamWidget, uint32 toParamWidgetID, ForceEvent forceEvent);
 
 #endif
