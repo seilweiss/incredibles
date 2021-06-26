@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XJSP_H
+#define XJSP_H
 
 #include "xClumpColl.h"
 
@@ -68,3 +69,5 @@ struct xJSPHeader
     xJSPNodeTree* nodetree;
     xJSPNodeLight* nodelight;
 };
+
+#endif

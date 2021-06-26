@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XSPACEPARTITIONTREE_H
+#define XSPACEPARTITIONTREE_H
 
 #include "xMath2.h"
 
@@ -76,3 +77,5 @@ struct xSpacePartitionTree2D
                 float32 max_width, int32 max_entries);
     void clear();
 };
+
+#endif

@@ -1,6 +1,9 @@
-#pragma once
+#ifndef _MSL_CMATH_H
+#define _MSL_CMATH_H
 
 namespace std
 {
     float floorf(float);
 }
+
+#endif

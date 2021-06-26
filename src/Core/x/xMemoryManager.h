@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XMEMORYMANAGER_H
+#define XMEMORYMANAGER_H
 
 #include <types.h>
 
@@ -56,3 +57,5 @@ template <class T> T* xMEMADVANCE(T* ptr, uint32 size)
 {
     return (T*)((char*)ptr + size);
 }
+
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XRMEMDATA_H
+#define XRMEMDATA_H
 
 #include "xBase.h"
 
@@ -22,3 +23,5 @@ struct RyzMemData
     void* operator new(size_t amt, int32, RyzMemGrow* growCtxt);
     void operator delete(void*);
 };
+
+#endif

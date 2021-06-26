@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XPKRSVC_H
+#define XPKRSVC_H
 
 #include <types.h>
 
@@ -25,3 +26,5 @@ struct PKRAssetTOCInfo
     uint32 size;
     void* mempos;
 };
+
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XREGIONSUPPORT_H
+#define XREGIONSUPPORT_H
 
 enum xRegion
 {
@@ -29,3 +30,5 @@ enum xRegion
 };
 
 bool xRegionCodeIsValid(const char* pszRegionCode);
+
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XFOG_H
+#define XFOG_H
 
 #include "xBase.h"
 
@@ -29,3 +30,5 @@ void xFogSave(_xFog* ent, xSerial* s);
 void xFogLoad(_xFog* ent, xSerial* s);
 void xFogEventCB(xBase*, xBase* to, uint32 toEvent, const float32*, xBase*, uint32);
 void xFogUpdate(xBase*, xScene*, float32);
+
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _MSL_NEW_H
+#define _MSL_NEW_H
 
 #include <size_t.h>
 #include <exception>
@@ -35,3 +36,5 @@ void* operator new[](size_t, void* ptr) throw();
 void operator delete[](void* ptr) throw();
 void operator delete[](void* ptr, const std::nothrow_t&) throw();
 void operator delete[](void*, void*) throw();
+
+#endif

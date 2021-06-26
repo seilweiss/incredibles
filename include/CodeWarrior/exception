@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _MSL_EXCEPTION_H
+#define _MSL_EXCEPTION_H
 
 namespace std
 {
@@ -22,3 +23,5 @@ namespace std
         virtual const char* what() const throw();
     };
 } // namespace std
+
+#endif

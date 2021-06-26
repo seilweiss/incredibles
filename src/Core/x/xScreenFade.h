@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XSCREENFADE_H
+#define XSCREENFADE_H
 
 #include "xDynAsset.h"
 #include "xColor.h"
@@ -36,3 +37,5 @@ struct xScreenFade : xBase
     static void load(xBase& data, xDynAsset& asset, ulong32);
     static void cb_dispatch(xBase* from, xBase* to, uint32 event, const float32*, xBase*, uint32);
 };
+
+#endif

@@ -1,3 +1,6 @@
-#pragma once
+#ifndef ZPARTICLESYSTEMWATERFALL_H
+#define ZPARTICLESYSTEMWATERFALL_H
 
 #include <types.h>
+
+#endif

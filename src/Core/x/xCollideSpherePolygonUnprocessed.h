@@ -1,3 +1,6 @@
-#pragma once
+#ifndef XCOLLIDESPHEREPOLYGONUNPROCESSED_H
+#define XCOLLIDESPHEREPOLYGONUNPROCESSED_H
 
 #include <types.h>
+
+#endif

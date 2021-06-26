@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XMATH3_H
+#define XMATH3_H
 
 #include "xVec3.h"
 
@@ -50,3 +51,5 @@ struct xCylinder
     float32 r;
     float32 h;
 };
+
+#endif

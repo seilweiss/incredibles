@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XEVENT_H
+#define XEVENT_H
 
 // The dwarf data does not have an en_xEventTags enum,
 //   so this is based on the one from BFBB.
@@ -826,3 +827,5 @@ enum en_xEventTags
     eEventUISysMessageActionDeclined,
     eEventCount
 };
+
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XQUICKCULL_H
+#define XQUICKCULL_H
 
 #include "xVec3.h"
 
@@ -15,3 +16,5 @@ struct xQCData
     xVec3 min;
     xVec3 max;
 };
+
+#endif

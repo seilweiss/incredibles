@@ -1,4 +1,5 @@
-#pragma once
+#ifndef IENV_H
+#define IENV_H
 
 #include "../x/xJSP.h"
 #include "../x/xMath3.h"
@@ -39,3 +40,5 @@ void iEnvFree(iEnv* env);
 void iEnvDefaultLighting(iEnv*);
 void iEnvSetup(iEnv* env);
 void iEnvRender(iEnv* env, bool alpha);
+
+#endif

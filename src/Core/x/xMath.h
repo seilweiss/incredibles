@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XMATH_H
+#define XMATH_H
 
 #include <types.h>
 
@@ -9,3 +10,5 @@
 
 float32 xsqrt(float32 x);
 void xsqrtfast(float32& out, float32 x);
+
+#endif

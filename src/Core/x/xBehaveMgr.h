@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XBEHAVEMGR_H
+#define XBEHAVEMGR_H
 
 #include "xFactory.h"
 
@@ -105,3 +106,5 @@ struct xBehaveMgr : RyzMemData
 };
 
 void xBehaveMgr_Shutdown();
+
+#endif

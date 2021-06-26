@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XSERIALIZER_H
+#define XSERIALIZER_H
 
 #include <types.h>
 
@@ -23,3 +24,5 @@ struct xSerial
     int32 Write_b1(int32 bits);
     int32 Read_b1(int32* bits);
 };
+
+#endif

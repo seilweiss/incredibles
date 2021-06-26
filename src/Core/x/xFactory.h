@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XFACTORY_H
+#define XFACTORY_H
 
 #include "xRMemData.h"
 #include "xordarray.h"
@@ -27,3 +28,5 @@ struct xFactory : RyzMemData
     xFactoryInst* products;
     RyzMemGrow growContextData;
 };
+
+#endif

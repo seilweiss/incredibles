@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XDEBUG_H
+#define XDEBUG_H
 
 #include <types.h>
 
@@ -12,3 +13,6 @@ void xDebugExit();
 void xDebugTimestampScreen();
 void xDrawTextInit(uint32, uint32);
 void xDrawTextRender();
+
+
+#endif

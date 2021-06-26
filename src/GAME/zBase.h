@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ZBASE_H
+#define ZBASE_H
 
 enum en_ZBASETYPE
 {
@@ -144,3 +145,5 @@ enum en_ZBASETYPE
     eBaseTypeTimedSplash,
     eBaseTypeCount
 };
+
+#endif

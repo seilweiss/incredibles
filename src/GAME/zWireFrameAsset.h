@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ZWIREFRAMEASSET_H
+#define ZWIREFRAMEASSET_H
 
 #include <types.h>
 
@@ -25,3 +26,5 @@ struct zWireframeAsset
 };
 
 void WireframeAssetSetupPointers(zWireframeAsset* wireframe);
+
+#endif

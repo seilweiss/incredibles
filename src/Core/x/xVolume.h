@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XVOLUME_H
+#define XVOLUME_H
 
 #include "xBase.h"
 #include "xBound.h"
@@ -22,3 +23,5 @@ struct xVolume : xBase
     void Load(xSerial* s);
     xBound* GetBound();
 };
+
+#endif

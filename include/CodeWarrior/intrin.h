@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _MSL_INTRIN_H
+#define _MSL_INTRIN_H
 
 #ifndef __MWERKS__
 
@@ -45,6 +46,8 @@ float __fres(float);
 
 #ifdef __cplusplus
 }
+#endif
+
 #endif
 
 #endif

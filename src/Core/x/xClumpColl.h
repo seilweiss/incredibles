@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XCLUMPCOLL_H
+#define XCLUMPCOLL_H
 
 #include <rwcore.h>
 #include <types.h>
@@ -37,3 +38,5 @@ struct xClumpCollBSPTree
     int32 numTriangles;
     xClumpCollBSPTriangle* triangles;
 };
+
+#endif

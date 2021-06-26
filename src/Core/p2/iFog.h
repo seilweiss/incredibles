@@ -1,4 +1,5 @@
-#pragma once
+#ifndef IFOG_H
+#define IFOG_H
 
 #include <rwcore.h>
 #include <types.h>
@@ -13,3 +14,5 @@ struct iFogParams
     RwRGBA bgcolor;
     uint8* table;
 };
+
+#endif

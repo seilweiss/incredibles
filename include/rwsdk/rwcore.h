@@ -1,4 +1,5 @@
-#pragma once
+#ifndef RWCORE_H
+#define RWCORE_H
 
 #include "rwplcore.h"
 
@@ -50,3 +51,5 @@ struct RwFrame
     RwFrame* next;
     RwFrame* root;
 };
+
+#endif

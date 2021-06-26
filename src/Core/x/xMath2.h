@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XMATH2_H
+#define XMATH2_H
 
 #include <types.h>
 
@@ -21,3 +22,5 @@ template <class T> struct basic_rect
 
 extern const xVec2 g_O2;
 extern const xVec2 g_X2;
+
+#endif

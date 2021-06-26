@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CONTAINERS_H
+#define CONTAINERS_H
 
 #include <types.h>
 
@@ -36,3 +37,5 @@ protected:
     void link(node_base* a, node_base* b);
     void unlink(node_base* a, node_base* b);
 };
+
+#endif

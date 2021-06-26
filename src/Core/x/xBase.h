@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XBASE_H
+#define XBASE_H
 
 #include "xLinkAsset.h"
 #include "xserializer.h"
@@ -38,3 +39,5 @@ void xBaseLoad(xBase* ent, xSerial* s);
 void xBaseDisable(xBase* xb);
 void xBaseEnable(xBase* xb);
 void xBaseReset(xBase* xb, xBaseAsset* asset);
+
+#endif

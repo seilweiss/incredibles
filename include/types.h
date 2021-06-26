@@ -1,4 +1,5 @@
-#pragma once
+#ifndef INC_TYPES_H
+#define INC_TYPES_H
 
 // Note: only include this header inside Incredibles-related headers/source code files.
 // Don't include this in any RenderWare, system, bink, etc. files
@@ -54,4 +55,6 @@ typedef int32 bool32;
 #define IMPLICIT_COPY_ASSIGN_OP(T) T& operator=(const T&);
 #else
 #define IMPLICIT_COPY_ASSIGN_OP(T)
+#endif
+
 #endif

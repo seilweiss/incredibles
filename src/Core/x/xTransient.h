@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XTRANSIENT_H
+#define XTRANSIENT_H
 
 #include "xSpacePartitionTree.h"
 #include "xMath3.h"
@@ -11,3 +12,5 @@ namespace xTransient
     void scene_exit();
     void reset();
 }
+
+#endif

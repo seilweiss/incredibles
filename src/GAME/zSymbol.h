@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ZSYMBOL_H
+#define ZSYMBOL_H
 
 #include <types.h>
 
@@ -20,3 +21,6 @@ namespace z
         void init();
     } // namespace symbol
 } // namespace z
+
+
+#endif

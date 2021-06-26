@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XMEMORYMANAGERFIXED_H
+#define XMEMORYMANAGERFIXED_H
 
 #include "xMemoryManager.h"
 
@@ -27,3 +28,5 @@ private:
 
     void InitMemory();
 };
+
+#endif

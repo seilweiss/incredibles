@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XLIGHTKIT_H
+#define XLIGHTKIT_H
 
 #include <rwcore.h>
 #include <rpworld.h>
@@ -21,3 +22,5 @@ struct xLightKit
     uint32 lightCount;
     xLightKitLight* lightList;
 };
+
+#endif

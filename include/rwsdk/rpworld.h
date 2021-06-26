@@ -1,4 +1,5 @@
-#pragma once
+#ifndef RPWORLD_H
+#define RPWORLD_H
 
 struct RpWorld;
 struct RpClump;
@@ -36,3 +37,5 @@ struct RpTie
     RwLLLink lWorldSectorInAtomic;
     RpWorldSector* worldSector;
 };
+
+#endif

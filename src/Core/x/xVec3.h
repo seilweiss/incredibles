@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XVEC3_H
+#define XVEC3_H
 
 #include <rwcore.h>
 #include <types.h>
@@ -25,3 +26,5 @@ union xVec3
 float32 xVec3Normalize(xVec3* o, const xVec3* v);
 void xVec3Copy(xVec3* o, const xVec3* v);
 float32 xVec3Dot(const xVec3* a, const xVec3* b);
+
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XRENDERBUFFER_H
+#define XRENDERBUFFER_H
 
 #include "xMath3.h"
 
@@ -30,3 +31,5 @@ extern tagiRenderArrays gRenderArr;
 extern tagiRenderInput gRenderBuffer;
 
 void xRenderBufferInit();
+
+#endif

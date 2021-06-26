@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XCURVEASSET_H
+#define XCURVEASSET_H
 
 #include <types.h>
 
@@ -24,3 +25,5 @@ struct xCurveAsset
 };
 
 float32 xCurveAssetEvaluate(const xCurveAsset* curve_asset, float32 t);
+
+#endif

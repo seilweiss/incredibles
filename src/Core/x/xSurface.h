@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XSURFACE_H
+#define XSURFACE_H
 
 #include "xBase.h"
 
@@ -27,3 +28,5 @@ void xSurfaceLoad(xSurface* ent, xSerial* s);
 void xSurfaceReset(xSurface*);
 uint16 xSurfaceGetNumSurfaces();
 xSurface* xSurfaceGetByIdx(uint16 n);
+
+#endif

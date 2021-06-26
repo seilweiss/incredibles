@@ -1,4 +1,5 @@
-#pragma once
+#ifndef IMATH_H
+#define IMATH_H
 
 #include <types.h>
 #include <intrin.h>
@@ -8,3 +9,5 @@
 #define EPSILON 0.00001f
 
 #define APPROX_EQUAL(a, b) (iabs((a) - (b)) <= EPSILON)
+
+#endif

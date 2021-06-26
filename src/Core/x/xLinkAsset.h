@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XLINKASSET_H
+#define XLINKASSET_H
 
 #include <types.h>
 
@@ -11,3 +12,5 @@ struct xLinkAsset
     uint32 paramWidgetAssetID;
     uint32 chkAssetID;
 };
+
+#endif

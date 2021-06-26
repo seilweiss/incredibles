@@ -1,4 +1,5 @@
-#pragma once
+#ifndef RWPLCORE_H
+#define RWPLCORE_H
 
 struct RwTexCoords;
 struct RwResEntry;
@@ -132,3 +133,5 @@ enum RwFogType
     rwFOGTYPEEXPONENTIAL2,
     rwFOGTYPEFORCEENUMSIZEINT = RWFORCEENUMSIZEINT
 };
+
+#endif

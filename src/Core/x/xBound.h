@@ -1,4 +1,5 @@
-#pragma once
+#ifndef XBOUND_H
+#define XBOUND_H
 
 #include "xMath3.h"
 #include "xQuickCull.h"
@@ -16,3 +17,5 @@ struct xBound
     };
     xMat4x3* mat;
 };
+
+#endif
