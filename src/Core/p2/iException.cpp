@@ -1,6 +1,9 @@
 #include "iException.h"
 
-#include <types.h>
+#include <dolphin.h>
 
-// func_801CEEC4
-#pragma GLOBAL_ASM("asm/Core/p2/iException.s", "iExceptionMemCrash__FPCcUiPCc")
+void iExceptionMemCrash(const char* location, uint32 size, const char* optionalString)
+{
+    OSReport("Out of memory crash, Loc=%s   Size=%d\n", location, size);
+    OSPanic(__FILE__, 24, "Bye"); // OSHalt("Bye"); on line 24
+}

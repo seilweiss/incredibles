@@ -77,6 +77,11 @@ typedef enum _GXCompare
 void GXSetAlphaCompare(GXCompare comp0, u8 ref0, GXAlphaOp op, GXCompare comp1, u8 ref1);
 void GXSetZCompLoc(GXBool before_tex);
 
+void OSPanic(const char* file, int line, const char* msg, ...);
+void OSReport(const char* msg, ...);
+
+#define OSHalt(msg) OSPanic(__FILE__, __LINE__, msg)
+
 #ifdef __cplusplus
 }
 #endif

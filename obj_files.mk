@@ -606,7 +606,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xMemoryManagerFixed.o\
 	$(OBJ_DIR)/asm/Core/x/xMemoryManagerGeneral.o\
 	$(OBJ_DIR)/src/Core/x/xMemoryManagerGeneral.o\
-	$(OBJ_DIR)/asm/Core/p2/iException.o\
 	$(OBJ_DIR)/src/Core/p2/iException.o\
 	$(OBJ_DIR)/asm/GAME/zParticleGenerator.o\
 	$(OBJ_DIR)/src/GAME/zParticleGenerator.o\

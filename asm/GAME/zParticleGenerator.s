@@ -2,6 +2,8 @@
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_135
 _esc__2_stringBase0_135:
 	.incbin "baserom.dol", 0x2E6500, 0x20
