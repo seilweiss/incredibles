@@ -1,33 +1,109 @@
 #include "xRenderState.h"
 
-#include <types.h>
+static RwReal old_near_plane = -1e+38f;
+static RwReal old_far_plane = -1e+38f;
+static RwUInt32 old_alpha_discard_value_gc = 0;
+static bool alphaDiscardCurrentlySet = false;
 
-// func_80055188
-#pragma GLOBAL_ASM("asm/Core/x/xRenderState.s", "xRenderSceneEnter__Fv")
+void xRenderSceneEnter()
+{
+    return;
+}
 
-// func_8005518C
-#pragma GLOBAL_ASM("asm/Core/x/xRenderState.s", "xRenderSceneExit__Fv")
+void xRenderSceneExit()
+{
+    return;
+}
 
-// func_80055190
-#pragma GLOBAL_ASM("asm/Core/x/xRenderState.s", "xRenderStateSetZBias__Ff")
+void xRenderStateSetZBias(float32 zbias)
+{
+    RwCamera* camera = RwCameraGetCurrentCamera();
 
-// func_8005521C
-#pragma GLOBAL_ASM("asm/Core/x/xRenderState.s", "xRenderStateResetZBias__Fv")
+    if (camera)
+    {
+        zbias *= 0.005f;
 
-// func_80055284
-#pragma GLOBAL_ASM("asm/Core/x/xRenderState.s", "xRenderStateSetAlphaDiscard__Fi")
+        old_near_plane = RwCameraGetNearClipPlane(camera);
+        old_far_plane = RwCameraGetFarClipPlane(camera);
 
-// func_80055328
-#pragma GLOBAL_ASM("asm/Core/x/xRenderState.s", "xRenderStateResetAlphaDiscard__Fv")
+        RwCameraEndUpdate(camera);
+        RwCameraSetNearClipPlane(camera, zbias + old_near_plane);
+        RwCameraSetFarClipPlane(camera, zbias + old_far_plane);
+        RwCameraBeginUpdate(camera);
+    }
+}
 
-// func_800553B4
-#pragma GLOBAL_ASM("asm/Core/x/xRenderState.s", "xRenderFixUntexturedBegin__FP8RpAtomic")
+void xRenderStateResetZBias()
+{
+    RwCamera* camera = RwCameraGetCurrentCamera();
 
-// func_800553B8
-#pragma GLOBAL_ASM("asm/Core/x/xRenderState.s", "xRenderFixUntexturedEnd__FP8RpAtomic")
+    if (camera)
+    {
+        RwCameraEndUpdate(camera);
+        RwCameraSetNearClipPlane(camera, old_near_plane);
+        RwCameraSetFarClipPlane(camera, old_far_plane);
+        RwCameraBeginUpdate(camera);
 
-// func_800553BC
-#pragma GLOBAL_ASM("asm/Core/x/xRenderState.s", "xRenderFixIMBegin__Fv")
+        old_far_plane = -1e+38f;
+        old_near_plane = -1e+38f;
+    }
+}
 
-// func_800553C0
-#pragma GLOBAL_ASM("asm/Core/x/xRenderState.s", "xRenderFixIMEnd__Fv")
+void xRenderStateSetAlphaDiscard(int32 value)
+{
+    alphaDiscardCurrentlySet = true;
+
+    RwRenderStateGet(rwRENDERSTATEALPHATESTFUNCTIONREF, (void*)&old_alpha_discard_value_gc);
+    RwGameCubeSetAlphaCompare(GX_ALWAYS, 0, GX_AOP_AND, GX_GEQUAL, value);
+    GXSetAlphaCompare(GX_ALWAYS, 0, GX_AOP_AND, GX_GEQUAL, value);
+
+    if (value > 0)
+    {
+        _rwDlRenderStateSetZCompLoc(GX_FALSE);
+        GXSetZCompLoc(GX_FALSE);
+    }
+    else
+    {
+        _rwDlRenderStateSetZCompLoc(GX_TRUE);
+        GXSetZCompLoc(GX_TRUE);
+    }
+}
+
+void xRenderStateResetAlphaDiscard()
+{
+    alphaDiscardCurrentlySet = false;
+
+    RwGameCubeSetAlphaCompare(GX_ALWAYS, 0, GX_AOP_AND, GX_GEQUAL, old_alpha_discard_value_gc);
+    GXSetAlphaCompare(GX_ALWAYS, 0, GX_AOP_AND, GX_GEQUAL, old_alpha_discard_value_gc);
+
+    if (old_alpha_discard_value_gc & 0xff)
+    {
+        _rwDlRenderStateSetZCompLoc(GX_FALSE);
+        GXSetZCompLoc(GX_FALSE);
+    }
+    else
+    {
+        _rwDlRenderStateSetZCompLoc(GX_TRUE);
+        GXSetZCompLoc(GX_TRUE);
+    }
+}
+
+void xRenderFixUntexturedBegin(RpAtomic*)
+{
+    return;
+}
+
+void xRenderFixUntexturedEnd(RpAtomic*)
+{
+    return;
+}
+
+void xRenderFixIMBegin()
+{
+    return;
+}
+
+void xRenderFixIMEnd()
+{
+    return;
+}

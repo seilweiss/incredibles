@@ -130,7 +130,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/asm/Core/x/xRand.o\
 	$(OBJ_DIR)/src/Core/x/xRand.o\
 	$(OBJ_DIR)/src/Core/x/xRegionSupport.o\
-	$(OBJ_DIR)/asm/Core/x/xRenderState.o\
 	$(OBJ_DIR)/src/Core/x/xRenderState.o\
 	$(OBJ_DIR)/src/Core/x/xRMemData.o\
 	$(OBJ_DIR)/asm/Core/x/xRumbleEmitter.o\
