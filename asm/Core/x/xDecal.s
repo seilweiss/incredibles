@@ -8,6 +8,8 @@ active_emitters__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_4
 _esc__2_stringBase0_4:
 	.incbin "baserom.dol", 0x2CE960, 0x68

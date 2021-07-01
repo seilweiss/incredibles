@@ -11,8 +11,8 @@ void xDebugInit();
 void xDebugUpdate();
 void xDebugExit();
 void xDebugTimestampScreen();
+void xDebugRemoveTweak(const char*);
 void xDrawTextInit(uint32, uint32);
 void xDrawTextRender();
-
 
 #endif

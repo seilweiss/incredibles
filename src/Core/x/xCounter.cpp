@@ -1,33 +1,187 @@
 #include "xCounter.h"
 
-#include <types.h>
+#include "xDebug.h"
+#include "xEvent.h"
+#include "xFont.h"
 
-// func_8001C1F0
-#pragma GLOBAL_ASM("asm/Core/x/xCounter.s", "add_tweaks__22_esc__2_unnamed_esc__2_xCounter_cpp_esc__2_FR9_xCounter")
+#include "../../GAME/zBase.h"
 
-// func_8001C1F4
-#pragma GLOBAL_ASM("asm/Core/x/xCounter.s", "xCounterInit__Fv")
+#define eEventCountStart (eEventCount1 - 1)
 
-// func_8001C21C
-#pragma GLOBAL_ASM("asm/Core/x/xCounter.s", "xCounterInit__FPvPv")
+namespace
+{
+    void add_tweaks(_xCounter&)
+    {
+        return;
+    }
+} // namespace
 
-// func_8001C23C
-#pragma GLOBAL_ASM("asm/Core/x/xCounter.s", "xCounterInit__FP5xBaseP13xCounterAsset")
+void xCounterInit()
+{
+    // There are extra unused strings here for some reason
+    xDebugRemoveTweak("Widgets|Counters\0Counter\0%d\0%.*s");
+}
 
-// func_8001C2B8
-#pragma GLOBAL_ASM("asm/Core/x/xCounter.s", "xCounterReset__FP5xBase")
+void xCounterInit(void* b, void* asset)
+{
+    xCounterInit((xBase*)b, (xCounterAsset*)asset);
+}
 
-// func_8001C320
-#pragma GLOBAL_ASM("asm/Core/x/xCounter.s", "xCounterSave__FP9_xCounterP7xSerial")
+void xCounterInit(xBase* b, xCounterAsset* asset)
+{
+    _xCounter* t = (_xCounter*)b;
 
-// func_8001C368
-#pragma GLOBAL_ASM("asm/Core/x/xCounter.s", "xCounterLoad__FP9_xCounterP7xSerial")
+    xBaseInit(t, asset);
 
-// func_8001C3B0
-#pragma GLOBAL_ASM("asm/Core/x/xCounter.s", "xCounterEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi")
+    t->eventFunc = xCounterEventCB;
+    t->asset = asset;
 
-// func_8001C54C
-#pragma GLOBAL_ASM("asm/Core/x/xCounter.s", "zEntEvent__FP5xBaseP5xBaseUi")
+    if (t->linkCount)
+    {
+        t->link = (xLinkAsset*)(t->asset + 1);
+    }
+    else
+    {
+        t->link = NULL;
+    }
 
-// func_8001C588
-#pragma GLOBAL_ASM("asm/Core/x/xCounter.s", "reset_flags__Q28xtextbox3jotFv")
+    t->state = XCOUNTER_STATE_ACTIVE;
+    t->count = asset->count;
+
+    add_tweaks(*t);
+}
+
+void xCounterReset(xBase* b)
+{
+    _xCounter* t = (_xCounter*)b;
+
+    xBaseInit(t, t->asset);
+
+    if (t->linkCount)
+    {
+        t->link = (xLinkAsset*)(t->asset + 1);
+    }
+    else
+    {
+        t->link = NULL;
+    }
+
+    t->count = t->asset->count;
+    t->state = XCOUNTER_STATE_ACTIVE;
+}
+
+void xCounterSave(_xCounter* ent, xSerial* s)
+{
+    xBaseSave(ent, s);
+
+    s->Write(ent->state);
+    s->Write(ent->count);
+}
+
+void xCounterLoad(_xCounter* ent, xSerial* s)
+{
+    xBaseLoad(ent, s);
+
+    s->Read(&ent->state);
+    s->Read(&ent->count);
+}
+
+void xCounterEventCB(xBase*, xBase* to, uint32 toEvent, const float32* toParam,
+                     xBase* toParamWidget, uint32)
+{
+    _xCounter* t = (_xCounter*)to;
+
+    switch (toEvent)
+    {
+    case eEventDecrement:
+    {
+        if (!xCounterIsExpired(t))
+        {
+            t->count--;
+
+            if (t->count <= 0)
+            {
+                zEntEvent(t, t, eEventExpired);
+            }
+            else if (t->count > 0 && t->count <= 20)
+            {
+                zEntEvent(t, t, eEventCountStart + t->count);
+            }
+        }
+
+        break;
+    }
+    case eEventIncrement:
+    {
+        if (!xCounterIsExpired(t))
+        {
+            t->count++;
+
+            if (t->count <= 0)
+            {
+                zEntEvent(t, t, eEventExpired);
+            }
+            else if (t->count > 0 && t->count <= 20)
+            {
+                zEntEvent(t, t, eEventCountStart + t->count);
+            }
+        }
+
+        break;
+    }
+    case eEventReset:
+    {
+        t->state = XCOUNTER_STATE_ACTIVE;
+        t->count = t->asset->count;
+        break;
+    }
+    case eEventExpired:
+    {
+        t->count = 0;
+        t->state = XCOUNTER_STATE_EXPIRED;
+        break;
+    }
+    case eEventSetCount:
+    {
+        if (!xCounterIsExpired(t))
+        {
+            if (toParamWidget && toParamWidget->baseType == eBaseTypeCounter)
+            {
+                t->count = ((_xCounter*)toParamWidget)->count;
+            }
+            else
+            {
+                t->count = toParam[0];
+            }
+        }
+
+        break;
+    }
+    default:
+    {
+        if (!xCounterIsExpired(t))
+        {
+            if (toEvent >= eEventCount1 && toEvent <= eEventCount20)
+            {
+                t->count = toEvent - eEventCountStart;
+            }
+            else if (toEvent == eEventCount0)
+            {
+                t->count = 0;
+            }
+        }
+
+        break;
+    }
+    }
+}
+
+void zEntEvent(xBase* from, xBase* to, uint32 toEvent)
+{
+    zEntEvent(from, 0, to, toEvent, NULL, NULL, 0, FE_NO);
+}
+
+void xtextbox::jot::reset_flags()
+{
+    *(uint16*)&flag = 0;
+}
