@@ -48,7 +48,7 @@ void XOrdAppend(st_XORDEREDARRAY* array, void* elt)
     }
 }
 
-void XOrdInsert(st_XORDEREDARRAY* array, void* elt, XOrdCB compare)
+void XOrdInsert(st_XORDEREDARRAY* array, void* elt, XOrdCompareCB compare)
 {
     if (array->cnt < array->max)
     {
@@ -71,7 +71,7 @@ void XOrdInsert(st_XORDEREDARRAY* array, void* elt, XOrdCB compare)
     }
 }
 
-int32 XOrdLookup(st_XORDEREDARRAY* array, void* key, XOrdCB test)
+int32 XOrdLookup(st_XORDEREDARRAY* array, void* key, XOrdTestCB test)
 {
     int32 da_idx = -1;
     int32 k0 = 0;
@@ -101,7 +101,7 @@ int32 XOrdLookup(st_XORDEREDARRAY* array, void* key, XOrdCB test)
     return da_idx;
 }
 
-void XOrdSort(st_XORDEREDARRAY* array, XOrdCB test)
+void XOrdSort(st_XORDEREDARRAY* array, XOrdCompareCB test)
 {
     void** list = array->list;
     int32 num = array->cnt;

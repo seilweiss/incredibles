@@ -27,6 +27,14 @@ struct xFactory : RyzMemData
     st_XORDEREDARRAY infolist;
     xFactoryInst* products;
     RyzMemGrow growContextData;
+
+    xFactory(int32 maxTypes);
+    ~xFactory();
+
+    int32 RegItemType(XGOFTypeInfo* info);
+    xFactoryInst* CreateItem(int32 typeID, void* userdata, RyzMemGrow* callerzgrow);
+    void DestroyAll();
+    void DestroyItem(xFactoryInst* item);
 };
 
 #endif

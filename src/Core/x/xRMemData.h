@@ -18,6 +18,8 @@ struct RyzMemGrow
     bool32 IsEnabled();
 };
 
+#define RYZMEMGROW_ENABLED 0x1
+
 struct RyzMemData
 {
     void* operator new(size_t amt, int32, RyzMemGrow* growCtxt);

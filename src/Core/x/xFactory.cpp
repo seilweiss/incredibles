@@ -1,30 +1,217 @@
 #include "xFactory.h"
 
-#include <types.h>
+#include "xMemMgr.h"
 
-// func_8002F104
-#pragma GLOBAL_ASM("asm/Core/x/xFactory.s", "__ct__8xFactoryFi")
+#include <string.h>
 
-// func_8002F16C
-#pragma GLOBAL_ASM("asm/Core/x/xFactory.s", "__dt__8xFactoryFv")
+static int32 OrdTest_infotype(const void* vkey, void* vitem);
+static int32 OrdComp_infotype(void* vkey, void* vitem);
 
-// func_8002F1C4
-#pragma GLOBAL_ASM("asm/Core/x/xFactory.s", "RegItemType__8xFactoryFP12XGOFTypeInfo")
+xFactory::xFactory(int32 maxTypes)
+{
+    uint32 amt = maxTypes * sizeof(XGOFTypeInfo);
 
-// func_8002F2B4
-#pragma GLOBAL_ASM("asm/Core/x/xFactory.s", "CreateItem__8xFactoryFiPvP10RyzMemGrow")
+    infopool = (XGOFTypeInfo*)xMemAlloc(gActiveHeap, amt, 0);
 
-// func_8002F3BC
-#pragma GLOBAL_ASM("asm/Core/x/xFactory.s", "IsEnabled__10RyzMemGrowFv")
+    memset(infopool, 0, amt);
+    XOrdInit(&infolist, maxTypes, FALSE);
+}
 
-// func_8002F3C8
-#pragma GLOBAL_ASM("asm/Core/x/xFactory.s", "DestroyAll__8xFactoryFv")
+xFactory::~xFactory()
+{
+    infopool = NULL;
 
-// func_8002F408
-#pragma GLOBAL_ASM("asm/Core/x/xFactory.s", "DestroyItem__8xFactoryFP12xFactoryInst")
+    XOrdDone(&infolist, FALSE);
+}
 
-// func_8002F4E4
-#pragma GLOBAL_ASM("asm/Core/x/xFactory.s", "OrdTest_infotype__FPCvPv")
+int32 xFactory::RegItemType(XGOFTypeInfo* info)
+{
+    int32 rc = 0;
+    XGOFTypeInfo* tptr = info;
 
-// func_8002F510
-#pragma GLOBAL_ASM("asm/Core/x/xFactory.s", "OrdComp_infotype__FPvPv")
+    while (tptr->tid)
+    {
+        rc = 1;
+
+        if (!tptr->creator)
+        {
+            rc = 0;
+            break;
+        }
+
+        if (!tptr->destroyer)
+        {
+            rc = 0;
+            break;
+        }
+
+        if (infolist.cnt >= infolist.max)
+        {
+            rc = -2;
+            break;
+        }
+
+        int32 idx = XOrdLookup(&infolist, tptr, OrdTest_infotype);
+
+        if (idx >= 0)
+        {
+            rc = -1;
+            break;
+        }
+
+        XGOFTypeInfo* nextrec = &infopool[infolist.cnt];
+
+        nextrec->tid = tptr->tid;
+        nextrec->creator = tptr->creator;
+        nextrec->destroyer = tptr->destroyer;
+
+        XOrdInsert(&infolist, nextrec, OrdComp_infotype);
+
+        tptr++;
+    }
+
+    return rc;
+}
+
+xFactoryInst* xFactory::CreateItem(int32 typeID, void* userdata, RyzMemGrow* callerzgrow)
+{
+    int32 idx;
+    xFactoryInst* item;
+    XGOFTypeInfo pattern = {};
+    XGOFTypeInfo* darec = NULL;
+    RyzMemGrow* grow = callerzgrow;
+
+    pattern.tid = typeID;
+
+    idx = XOrdLookup(&infolist, &pattern, OrdTest_infotype);
+
+    if (idx >= 0)
+    {
+        darec = (XGOFTypeInfo*)infolist.list[idx];
+    }
+
+    if (!darec)
+    {
+        return NULL;
+    }
+
+    if (!grow && growContextData.IsEnabled())
+    {
+        grow = &growContextData;
+    }
+
+    item = darec->creator(darec->tid, grow, userdata);
+
+    if (!item)
+    {
+        return item;
+    }
+
+    item->itemType = darec->tid;
+    item->prevprod = NULL;
+    item->nextprod = NULL;
+
+    if (products)
+    {
+        item->nextprod = products;
+        products->prevprod = item;
+        products = item;
+    }
+    else
+    {
+        products = item;
+    }
+
+    return item;
+}
+
+bool32 RyzMemGrow::IsEnabled()
+{
+    return flg_grow & RYZMEMGROW_ENABLED;
+}
+
+void xFactory::DestroyAll()
+{
+    while (products)
+    {
+        DestroyItem(products);
+    }
+}
+
+void xFactory::DestroyItem(xFactoryInst* item)
+{
+    int32 idx;
+    XGOFTypeInfo pattern = {};
+
+    pattern.tid = item->itemType;
+
+    if (item)
+    {
+        if (products == item)
+        {
+            products = item->nextprod;
+
+            if (products)
+            {
+                products->prevprod = NULL;
+            }
+        }
+
+        if (item->prevprod)
+        {
+            item->prevprod->nextprod = item->nextprod;
+        }
+
+        if (item->nextprod)
+        {
+            item->nextprod->prevprod = item->prevprod;
+        }
+
+        item->prevprod = NULL;
+        item->nextprod = NULL;
+
+        idx = XOrdLookup(&infolist, &pattern, OrdTest_infotype);
+
+        ((XGOFTypeInfo*)infolist.list[idx])->destroyer(item);
+    }
+}
+
+static int32 OrdTest_infotype(const void* vkey, void* vitem)
+{
+    int32 rc;
+
+    if (((XGOFTypeInfo*)vkey)->tid < ((XGOFTypeInfo*)vitem)->tid)
+    {
+        rc = -1;
+    }
+    else if (((XGOFTypeInfo*)vkey)->tid > ((XGOFTypeInfo*)vitem)->tid)
+    {
+        rc = 1;
+    }
+    else
+    {
+        rc = 0;
+    }
+
+    return rc;
+}
+
+static int32 OrdComp_infotype(void* vkey, void* vitem)
+{
+    int32 rc;
+
+    if (((XGOFTypeInfo*)vkey)->tid < ((XGOFTypeInfo*)vitem)->tid)
+    {
+        rc = -1;
+    }
+    else if (((XGOFTypeInfo*)vkey)->tid > ((XGOFTypeInfo*)vitem)->tid)
+    {
+        rc = 1;
+    }
+    else
+    {
+        rc = 0;
+    }
+
+    return rc;
+}
