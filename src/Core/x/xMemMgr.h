@@ -1,7 +1,7 @@
 #ifndef XMEMMGR_H
 #define XMEMMGR_H
 
-#include <types.h>
+#include "../p2/iMemMgr.h"
 
 struct xMemPool
 {
@@ -20,5 +20,6 @@ extern uint32 gActiveHeap;
 
 void* xMemAlloc(uint32 heapID, uint32 size, int32 align);
 void* xMemGrowAlloc(uint32 heapID, uint32 size);
+void* xMemPushTemp(uint32 size);
 
 #endif

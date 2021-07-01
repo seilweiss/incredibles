@@ -3,4 +3,6 @@
 
 #include <types.h>
 
+void iMemPopTemp(void* pointer);
+
 #endif

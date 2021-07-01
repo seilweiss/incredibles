@@ -112,7 +112,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xOneLinerManager.o\
 	$(OBJ_DIR)/asm/Core/x/xOneLinerPlayer.o\
 	$(OBJ_DIR)/src/Core/x/xOneLinerPlayer.o\
-	$(OBJ_DIR)/asm/Core/x/xordarray.o\
 	$(OBJ_DIR)/src/Core/x/xordarray.o\
 	$(OBJ_DIR)/asm/Core/x/xPad.o\
 	$(OBJ_DIR)/src/Core/x/xPad.o\
