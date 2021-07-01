@@ -3,4 +3,9 @@
 
 #include <types.h>
 
+struct ztalkbox
+{
+    static ztalkbox* get_active();
+};
+
 #endif

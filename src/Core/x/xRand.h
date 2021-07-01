@@ -3,4 +3,6 @@
 
 #include <types.h>
 
+uint32 xrand_RandomInt32();
+
 #endif

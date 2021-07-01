@@ -170,7 +170,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xTextAsset.o\
 	$(OBJ_DIR)/asm/Core/x/xTextureManager.o\
 	$(OBJ_DIR)/src/Core/x/xTextureManager.o\
-	$(OBJ_DIR)/asm/Core/x/xTimer.o\
 	$(OBJ_DIR)/src/Core/x/xTimer.o\
 	$(OBJ_DIR)/src/Core/x/xTransient.o\
 	$(OBJ_DIR)/asm/Core/x/xTRC.o\
