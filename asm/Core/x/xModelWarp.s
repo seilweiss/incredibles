@@ -17,6 +17,8 @@ render_contexts_size__24_esc__2_unnamed_esc__2_xModelWarp_cpp_esc__2_:
 
 .section .sdata2
 
+.balign 8
+
 .global _esc__2_779_0
 _esc__2_779_0:
 	.incbin "baserom.dol", 0x333BA0, 0x4

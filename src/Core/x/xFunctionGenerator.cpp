@@ -1,30 +1,207 @@
 #include "xFunctionGenerator.h"
 
-#include <types.h>
+#include "xEvent.h"
 
-// func_801E4874
-#pragma GLOBAL_ASM("asm/Core/x/xFunctionGenerator.s", "FunctionGeneratorEventWrapper__32_esc__2_unnamed_esc__2_xFunctionGenerator_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi")
+#include <new>
 
-// func_801E48A0
-#pragma GLOBAL_ASM("asm/Core/x/xFunctionGenerator.s", "__ct__18xFunctionGeneratorFPC23xFunctionGeneratorAsset")
+namespace
+{
+    void FunctionGeneratorEventWrapper(xBase* from, xBase* to, uint32 toEvent,
+                                       const float32* toParam, xBase* toParamWidget,
+                                       uint32 toParamWidgetID)
+    {
+        ((xFunctionGenerator*)to)
+            ->HandleEvent(from, toEvent, toParam, toParamWidget, toParamWidgetID);
+    }
+} // namespace
 
-// func_801E48F8
-#pragma GLOBAL_ASM("asm/Core/x/xFunctionGenerator.s", "Update__18xFunctionGeneratorFf")
+xFunctionGenerator::xFunctionGenerator(const xFunctionGeneratorAsset* asset)
+{
+    this->asset = asset;
 
-// func_801E4B88
-#pragma GLOBAL_ASM("asm/Core/x/xFunctionGenerator.s", "HandleEvent__18xFunctionGeneratorFP5xBaseUiPCfP5xBaseUi")
+    xBaseInit(this, asset);
 
-// func_801E4C44
-#pragma GLOBAL_ASM("asm/Core/x/xFunctionGenerator.s", "Start__18xFunctionGeneratorFv")
+    eventFunc = FunctionGeneratorEventWrapper;
+    link = (xLinkAsset*)(asset + 1);
+    started = false;
+    currentState = XFUNCTIONGENERATOR_STATE_0;
+}
 
-// func_801E4C84
-#pragma GLOBAL_ASM("asm/Core/x/xFunctionGenerator.s", "Stop__18xFunctionGeneratorFv")
+void xFunctionGenerator::Update(float32 dt)
+{
+    if (!IsEnabled())
+    {
+        return;
+    }
 
-// func_801E4C90
-#pragma GLOBAL_ASM("asm/Core/x/xFunctionGenerator.s", "Reset__18xFunctionGeneratorFv")
+    currentTime += dt;
 
-// func_801E4C9C
-#pragma GLOBAL_ASM("asm/Core/x/xFunctionGenerator.s", "xFunctionGenerator_Init__FR5xBaseR9xDynAssetUl")
+    if (!override)
+    {
+        if (asset->middleEnabled)
+        {
+            if (currentTime < asset->middleTime)
+            {
+                float32 t = currentTime / asset->middleTime;
 
-// func_801E4CE0
-#pragma GLOBAL_ASM("asm/Core/x/xFunctionGenerator.s", "IsEnabled__18xFunctionGeneratorCFv")
+                currentCycleWidth =
+                    t * (asset->middleCycleWidth - asset->startCycleWidth) + asset->startCycleWidth;
+                currentPulseWidth =
+                    t * (asset->middlePulseWidth - asset->startPulseWidth) + asset->startPulseWidth;
+            }
+            else
+            {
+                currentCycleWidth = asset->middleCycleWidth;
+                currentPulseWidth = asset->middlePulseWidth;
+            }
+        }
+
+        if (asset->endEnabled)
+        {
+            if (currentTime < asset->endTime)
+            {
+                if (!asset->middleEnabled)
+                {
+                    float32 t = currentTime / asset->endTime;
+
+                    currentCycleWidth = t * (asset->endCycleWidth - asset->startCycleWidth) +
+                                        asset->startCycleWidth;
+                    currentPulseWidth = t * (asset->endPulseWidth - asset->startPulseWidth) +
+                                        asset->startPulseWidth;
+                }
+                else if (currentTime > asset->middleTime)
+                {
+                    float32 t =
+                        (currentTime - asset->middleTime) / (asset->endTime - asset->middleTime);
+
+                    currentCycleWidth = t * (asset->endCycleWidth - asset->middleCycleWidth) +
+                                        asset->middleCycleWidth;
+                    currentPulseWidth = t * (asset->endPulseWidth - asset->middlePulseWidth) +
+                                        asset->middlePulseWidth;
+                }
+            }
+            else
+            {
+                currentCycleWidth = asset->endCycleWidth;
+                currentPulseWidth = asset->endPulseWidth;
+            }
+        }
+    }
+
+    while (true)
+    {
+        bool firedAny = false;
+
+        if (currentState == XFUNCTIONGENERATOR_STATE_0)
+        {
+            float32 currentOffWidth = currentCycleWidth - currentPulseWidth;
+
+            if (currentTime - lastDownTime > currentOffWidth)
+            {
+                currentState = XFUNCTIONGENERATOR_STATE_1;
+                firedAny = true;
+
+                zEntEvent(this, this, eEventTrue);
+
+                if (!IsEnabled())
+                {
+                    return;
+                }
+
+                lastUpTime = lastDownTime + currentOffWidth;
+            }
+        }
+
+        if (currentState != XFUNCTIONGENERATOR_STATE_0)
+        {
+            if (currentTime - lastUpTime > currentPulseWidth)
+            {
+                currentState = XFUNCTIONGENERATOR_STATE_0;
+                firedAny = true;
+
+                zEntEvent(this, this, eEventFalse);
+
+                if (!IsEnabled())
+                {
+                    return;
+                }
+
+                lastDownTime = lastUpTime + currentPulseWidth;
+            }
+        }
+
+        if (!firedAny)
+        {
+            break;
+        }
+    }
+
+    if (asset->endEnabled && currentTime >= asset->endTime)
+    {
+        zEntEvent(this, this, eEventExpired);
+
+        started = false;
+    }
+}
+
+void xFunctionGenerator::HandleEvent(xBase*, uint32 toEvent, const float32* toParam, xBase*, uint32)
+{
+    switch (toEvent)
+    {
+    case eEventEnable:
+        xBaseEnable(this);
+        break;
+    case eEventDisable:
+        xBaseDisable(this);
+        break;
+    case eEventReset:
+        Reset();
+        break;
+    case eEventStart:
+        Start();
+        break;
+    case eEventStop:
+        Stop();
+        break;
+    case eEventOverrideFrequency:
+        override = true;
+        currentCycleWidth = toParam[0];
+        currentPulseWidth = toParam[1];
+        break;
+    case eEventResetFrequency:
+        override = false;
+        break;
+    }
+}
+
+void xFunctionGenerator::Start()
+{
+    currentCycleWidth = asset->startCycleWidth;
+    currentPulseWidth = asset->startPulseWidth;
+    currentTime = 0.0f;
+    lastUpTime = 0.0f;
+    lastDownTime = 0.0f;
+    currentState = XFUNCTIONGENERATOR_STATE_0;
+    started = true;
+    override = false;
+}
+
+void xFunctionGenerator::Stop()
+{
+    started = false;
+}
+
+void xFunctionGenerator::Reset()
+{
+    started = false;
+}
+
+void xFunctionGenerator_Init(xBase& data, xDynAsset& asset, ulong32)
+{
+    new (&data) xFunctionGenerator((xFunctionGeneratorAsset*)&asset);
+}
+
+bool xFunctionGenerator::IsEnabled() const
+{
+    return (baseFlags & XBASE_ENABLED) && started;
+}
