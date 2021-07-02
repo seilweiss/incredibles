@@ -134,4 +134,13 @@ struct xEnt : xBase
     void* user_data;
 };
 
+#define XENT_VIS_CULL 0x4
+
+typedef void (*xEntVisHandler)(xEnt* ent);
+
+void xEntShow(xEnt* ent);
+void xEntHide(xEnt* ent);
+void xEntVisibilityCullOn(xEnt* ent);
+void xEntVisibilityCullOff(xEnt* ent);
+
 #endif

@@ -1,48 +1,244 @@
 #include "xGroup.h"
 
-#include <types.h>
+#include "xMemMgr.h"
+#include "xstransvc.h"
+#include "xEvent.h"
+#include "xRand.h"
+#include "xEnt.h"
+#include "../../GAME/zScene.h"
 
-// func_8003B5AC
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xGroupInit__FPvPv")
+void xGroupInit(void* b, void* asset)
+{
+    xGroupInit((xBase*)b, (xGroupAsset*)asset);
+}
 
-// func_8003B5CC
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xGroupInit__FP5xBaseP11xGroupAsset")
+void xGroupInit(xBase* b, xGroupAsset* asset)
+{
+    xGroup* g = (xGroup*)b;
 
-// func_8003B674
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xGroupSetup__FP6xGroup")
+    xBaseInit(g, asset);
 
-// func_8003B744
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xGroupSave__FP6xGroupP7xSerial")
+    g->eventFunc = xGroupEventCB;
+    g->asset = asset;
 
-// func_8003B764
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xGroupLoad__FP6xGroupP7xSerial")
+    if (g->linkCount)
+    {
+        g->link = (xLinkAsset*)((uint8*)g->asset + asset->itemCount * sizeof(uint32) +
+                                sizeof(xGroupAsset));
+    }
+    else
+    {
+        g->link = NULL;
+    }
 
-// func_8003B784
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xGroupReset__FP6xGroup")
+    uint32 count = xGroupGetCount(g);
 
-// func_8003B7A8
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xGroupEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi")
+    g->item = (count) ? (xBase**)xMemAlloc(gActiveHeap, count * sizeof(xBase*), 0) : NULL;
+    g->last_index = 0;
+    g->flg_group = 0;
+}
 
-// func_8003B9A0
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xEntVisibilityCullOff__FP4xEnt")
+void xGroupSetup(xGroup* g)
+{
+    if (!(g->flg_group & XGROUP_IS_SETUP))
+    {
+        uint32 count = xGroupGetCount(g);
 
-// func_8003B9DC
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xEntVisibilityCullOn__FP4xEnt")
+        for (uint32 i = 0; i < count; i++)
+        {
+            uint32 id = xGroupGetItem(g, i);
 
-// func_8003BA18
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xrand_RandomChoice__FUi")
+            g->item[i] = zSceneFindObject(id);
 
-// func_8003BA50
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xrand_RandomInt16__Fv")
+            if (g->item[i])
+            {
+                g->flg_group |= XGROUP_HAS_BASES;
+            }
+            else
+            {
+                g->item[i] = (xBase*)xSTFindAsset(id, NULL);
 
-// func_8003BA74
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xGroupGetCount__FP6xGroup")
+                if (g->item[i])
+                {
+                    g->flg_group |= XGROUP_HAS_ASSETS;
+                }
+            }
+        }
 
-// func_8003BA80
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xGroupGetItemPtr__FP6xGroupUi")
+        g->flg_group |= XGROUP_IS_SETUP;
+    }
+}
 
-// func_8003BAD8
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "xGroupGetItem__FP6xGroupUi")
+void xGroupSave(xGroup* ent, xSerial* s)
+{
+    xBaseSave(ent, s);
+}
 
-// func_8003BAEC
-#pragma GLOBAL_ASM("asm/Core/x/xGroup.s", "get_any__6xGroupFv")
+void xGroupLoad(xGroup* ent, xSerial* s)
+{
+    xBaseLoad(ent, s);
+}
+
+void xGroupReset(xGroup* g)
+{
+    xBaseReset(g, g->asset);
+}
+
+void xGroupEventCB(xBase*, xBase* to, uint32 toEvent, const float32* toParam, xBase* toParamWidget,
+                   uint32 toParamWidgetID)
+{
+    xGroup* g = (xGroup*)to;
+
+    switch (toEvent)
+    {
+    case eEventReset:
+        xGroupReset(g);
+        break;
+    case eEventDisableGroupContents:
+        toEvent = eEventDisable;
+        break;
+    }
+
+    int32 rand = -1;
+
+    if (g->asset->groupFlags & XGROUPASSET_RANDOM)
+    {
+        rand = xrand_RandomChoice(g->asset->itemCount);
+    }
+
+    switch (toEvent)
+    {
+    case eEventFastVisible:
+    case eEventFastInvisible:
+    case eEventVisibilityCullOn:
+    case eEventVisibilityCullOff:
+    {
+        xEntVisHandler entVisEventHandler;
+
+        switch (toEvent)
+        {
+        case eEventFastVisible:
+            entVisEventHandler = xEntShow;
+            break;
+        case eEventFastInvisible:
+            entVisEventHandler = xEntHide;
+            break;
+        case eEventVisibilityCullOn:
+            entVisEventHandler = xEntVisibilityCullOn;
+            break;
+        case eEventVisibilityCullOff:
+            entVisEventHandler = xEntVisibilityCullOff;
+            break;
+        }
+
+        for (int32 i = 0; i < g->asset->itemCount; i++)
+        {
+            if (rand == -1 || rand == i)
+            {
+                xBase* b = g->item[i];
+
+                if (b)
+                {
+                    if (b->baseFlags & XBASE_IS_ENT)
+                    {
+                        if (xBaseIsEnabled(b))
+                        {
+                            entVisEventHandler((xEnt*)b);
+                        }
+                    }
+                    else
+                    {
+                        zEntEvent(b, toEvent, toParam, toParamWidget, toParamWidgetID);
+                    }
+                }
+            }
+        }
+
+        break;
+    }
+    default:
+    {
+        for (int32 i = 0; i < g->asset->itemCount; i++)
+        {
+            if (rand == -1 || rand == i)
+            {
+                xBase* b = g->item[i];
+
+                if (b)
+                {
+                    zEntEvent(b, toEvent, toParam, toParamWidget, toParamWidgetID);
+                }
+            }
+        }
+    }
+    }
+}
+
+void xEntVisibilityCullOff(xEnt* ent)
+{
+    ent->flags &= (uint8)~XENT_VIS_CULL;
+
+    if (ent->visUpdate)
+    {
+        ent->visUpdate(ent);
+    }
+}
+
+void xEntVisibilityCullOn(xEnt* ent)
+{
+    ent->flags |= XENT_VIS_CULL;
+
+    if (ent->visUpdate)
+    {
+        ent->visUpdate(ent);
+    }
+}
+
+uint32 xrand_RandomChoice(uint32 maxCount)
+{
+    return maxCount * xrand_RandomInt16() >> 16;
+}
+
+uint16 xrand_RandomInt16()
+{
+    return xrand_RandomInt32();
+}
+
+uint32 xGroupGetCount(xGroup* g)
+{
+    return g->asset->itemCount;
+}
+
+xBase* xGroupGetItemPtr(xGroup* g, uint32 index)
+{
+    if (!(g->flg_group & XGROUP_IS_SETUP))
+    {
+        xGroupSetup(g);
+    }
+
+    if (g->item)
+    {
+        return g->item[index];
+    }
+
+    return NULL;
+}
+
+uint32 xGroupGetItem(xGroup* g, uint32 index)
+{
+    return ((uint32*)(g->asset + 1))[index];
+}
+
+uint32 xGroup::get_any()
+{
+    if (!asset->itemCount)
+    {
+        return 0;
+    }
+
+    uint32 id = ((uint32*)(asset + 1))[last_index];
+
+    last_index = (last_index + 1) % asset->itemCount;
+
+    return id;
+}

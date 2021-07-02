@@ -842,6 +842,8 @@ void zEntEvent(char* to, uint32 toEvent);
 void zEntEvent(uint32 toID, uint32 toEvent);
 void zEntEvent(xBase* to, uint32 toEvent);
 void zEntEvent(xBase* to, uint32 toEvent, const float32* toParam);
+void zEntEvent(xBase* to, uint32 toEvent, const float32* toParam, xBase* toParamWidget,
+               uint32 toParamWidgetID);
 void zEntEvent(xBase* from, xBase* to, uint32 toEvent);
 void zEntEvent(xBase* from, uint32, xBase* to, uint32 toEvent, const float32* toParam,
                xBase* toParamWidget, uint32 toParamWidgetID, ForceEvent forceEvent);
