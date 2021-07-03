@@ -10,6 +10,8 @@ _esc__2_stringBase0_135:
 
 .section .sbss
 
+.balign 8
+
 .global max_system_asset_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_
 max_system_asset_size__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_:
 	.skip 0x4

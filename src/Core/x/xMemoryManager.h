@@ -11,7 +11,10 @@ public:
     void* GetArenaStart() const;
     void* GetArenaEnd() const;
     uint32 GetDebugDataSize() const;
-    bool IsDebugging() const;
+    bool IsDebugging() const
+    {
+        return (debugDataSize != 0);
+    }
     bool Owns(const void*) const;
 
     void* Allocate(uint32 size, uint32 options);
