@@ -4,9 +4,6 @@
 #include "../Core/x/xFX.h"
 #include "../Core/x/xMath3.h"
 
-#include <rwcore.h>
-#include <rpworld.h>
-
 struct zCutsceneMgr;
 struct zLightning;
 struct zParEmitter;

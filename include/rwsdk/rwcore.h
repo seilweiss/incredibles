@@ -5,6 +5,7 @@
 
 struct RxPipeline;
 struct RwRaster;
+struct RwTexture;
 
 typedef struct _RxObjSpace3DVertex RxObjSpace3DVertex;
 

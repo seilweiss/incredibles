@@ -1,5 +1,19 @@
 .include "macros.inc"
 
+.section .sbss
+
+.balign 8
+
+.global ribbonCount__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_
+ribbonCount__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_:
+	.skip 0x4
+.global ribbonPool__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_
+ribbonPool__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_:
+	.skip 0x4
+.global ribbonInUse__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_
+ribbonInUse__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_:
+	.skip 0x8
+
 .if 0
 
 .section .text

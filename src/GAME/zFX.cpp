@@ -1,15 +1,26 @@
 #include "zFX.h"
 
-#include <types.h>
+#include "../Core/x/xFX.h"
 
-// func_800CCA80
-#pragma GLOBAL_ASM("asm/GAME/zFX.s", "zFXUpdate__Ff")
+uint32 gFXSurfaceFlags = 0;
 
-// func_800CCAA0
-#pragma GLOBAL_ASM("asm/GAME/zFX.s", "zFX_SceneEnter__FP7RpWorld")
+void zFXUpdate(float32 dt)
+{
+    xFXUpdate(dt);
+}
 
-// func_800CCAD8
-#pragma GLOBAL_ASM("asm/GAME/zFX.s", "zFX_SceneExit__FP7RpWorld")
+void zFX_SceneEnter(RpWorld* world)
+{
+    xFXanimUV2PSetTexture(NULL);
+    xFX_SceneEnter(world);
+}
 
-// func_800CCAF8
-#pragma GLOBAL_ASM("asm/GAME/zFX.s", "zFX_SceneReset__Fv")
+void zFX_SceneExit(RpWorld* world)
+{
+    xFX_SceneExit(world);
+}
+
+void zFX_SceneReset()
+{
+    return;
+}

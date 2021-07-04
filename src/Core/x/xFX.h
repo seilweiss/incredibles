@@ -5,6 +5,7 @@
 #include "xColor.h"
 
 #include <rwcore.h>
+#include <rpworld.h>
 
 struct xFXRibbon
 {
@@ -43,5 +44,10 @@ struct xFXRibbon
     activity_data* act;
     config_type* cfg;
 };
+
+void xFX_SceneEnter(RpWorld* world);
+void xFX_SceneExit(RpWorld*);
+void xFXUpdate(float32 dt);
+void xFXanimUV2PSetTexture(RwTexture* texture);
 
 #endif

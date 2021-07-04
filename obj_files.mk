@@ -330,7 +330,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zFlameEmitter.o\
 	$(OBJ_DIR)/asm/GAME/zFMV.o\
 	$(OBJ_DIR)/src/GAME/zFMV.o\
-	$(OBJ_DIR)/asm/GAME/zFX.o\
 	$(OBJ_DIR)/src/GAME/zFX.o\
 	$(OBJ_DIR)/asm/GAME/zFXRibbonPool.o\
 	$(OBJ_DIR)/src/GAME/zFXRibbonPool.o\
