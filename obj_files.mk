@@ -576,7 +576,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zSpotlight.o\
 	$(OBJ_DIR)/asm/GAME/zPickup.o\
 	$(OBJ_DIR)/src/GAME/zPickup.o\
-	$(OBJ_DIR)/asm/GAME/zNPCGroup.o\
 	$(OBJ_DIR)/src/GAME/zNPCGroup.o\
 	$(OBJ_DIR)/asm/GAME/zThrowableSystem.o\
 	$(OBJ_DIR)/src/GAME/zThrowableSystem.o\

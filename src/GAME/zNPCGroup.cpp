@@ -1,12 +1,27 @@
 #include "zNPCGroup.h"
 
-#include <types.h>
+namespace zNPC
+{
+    void group::EventCB(xBase* from, xBase* to, uint32 toEvent, const float32* toParam,
+                        xBase* toParamWidget, uint32 toParamWidgetID)
+    {
+        ((group*)to)->handle_event(from, to, toEvent, toParam, toParamWidget, toParamWidgetID);
+    }
 
-// func_801B2E54
-#pragma GLOBAL_ASM("asm/GAME/zNPCGroup.s", "EventCB__Q24zNPC5groupFP5xBaseP5xBaseUiPCfP5xBaseUi")
+    void group::init(xBase& data, xDynAsset& asset, ulong32)
+    {
+        group* new_group = (group*)&data;
 
-// func_801B2E94
-#pragma GLOBAL_ASM("asm/GAME/zNPCGroup.s", "init__Q24zNPC5groupFR5xBaseR9xDynAssetUl")
+        xBaseInit(&data, &asset);
 
-// func_801B2EDC
-#pragma GLOBAL_ASM("asm/GAME/zNPCGroup.s", "handle_event__Q24zNPC5groupFP5xBaseP5xBaseUiPCfP5xBaseUi")
+        new_group->asset = (group_asset*)&asset;
+        new_group->attacking_count = 0;
+        new_group->eventFunc = EventCB;
+    }
+
+    void group::handle_event(xBase* from, xBase* to, uint32 toEvent, const float32* toParam,
+                             xBase* toParamWidget, uint32 toParamWidgetID)
+    {
+        return;
+    }
+} // namespace zNPC
