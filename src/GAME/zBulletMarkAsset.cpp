@@ -1,15 +1,37 @@
 #include "zBulletMarkAsset.h"
 
-#include <types.h>
+zBulletMarkAssetMgr bulletmark_mgr;
 
-// func_80185AC0
-#pragma GLOBAL_ASM("asm/GAME/zBulletMarkAsset.s", "zBulletMarkAsset_Init__FR5xBaseR9xDynAssetUl")
+void zBulletMarkAsset_Init(xBase& data, xDynAsset& asset, ulong32)
+{
+    xBaseInit(&data, &asset);
 
-// func_80185AFC
-#pragma GLOBAL_ASM("asm/GAME/zBulletMarkAsset.s", "init__19zBulletMarkAssetMgrFv")
+    bulletmark_mgr.add((zBulletMarkAsset*)&asset);
+}
 
-// func_80185B08
-#pragma GLOBAL_ASM("asm/GAME/zBulletMarkAsset.s", "get__19zBulletMarkAssetMgrFUi")
+void zBulletMarkAssetMgr::init()
+{
+    size = 0;
+}
 
-// func_80185B44
-#pragma GLOBAL_ASM("asm/GAME/zBulletMarkAsset.s", "add__19zBulletMarkAssetMgrFP16zBulletMarkAsset")
+zBulletMarkAsset* zBulletMarkAssetMgr::get(uint32 id)
+{
+    for (uint32 i = 0; i < size; i++)
+    {
+        if (data[i].textureID == id)
+        {
+            return &data[i];
+        }
+    }
+
+    return NULL;
+}
+
+void zBulletMarkAssetMgr::add(zBulletMarkAsset* asset)
+{
+    data[size].textureID = asset->textureID;
+    data[size].size = asset->size;
+    data[size].lifetime = asset->lifetime;
+
+    size++;
+}

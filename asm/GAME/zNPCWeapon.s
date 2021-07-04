@@ -2,6 +2,8 @@
 
 .section .bss
 
+.balign 8
+
 .global default_config__Q24zNPC17ElectricitySystem
 default_config__Q24zNPC17ElectricitySystem:
 	.skip 0x48
