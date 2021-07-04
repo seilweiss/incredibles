@@ -38,4 +38,35 @@ protected:
     void unlink(node_base* a, node_base* b);
 };
 
+class tier_queue_allocator
+{
+public:
+    struct block_data
+    {
+        uint8 prev;
+        uint8 next;
+        uint16 flags;
+        void* data;
+    };
+
+private:
+    block_data* blocks;
+    uint32 _unit_size;
+    uint32 _block_size;
+    uint32 _block_size_shift;
+    uint32 _max_blocks;
+    uint32 _max_blocks_shift;
+    uint8 head;
+};
+
+class tier_queue
+{
+private:
+    uint32 first;
+    uint32 _size;
+    uint32 wrap_mask;
+    tier_queue_allocator* alloc;
+    uint8 blocks[32];
+};
+
 #endif

@@ -1,6 +1,13 @@
 #include "zCineFXShared.h"
 
-#include <types.h>
-
-// func_801E9EF8
-#pragma GLOBAL_ASM("asm/GAME/zCineFXShared.s", "zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi")
+void zCinFX_CycleOnce_Upd(const zCutsceneMgr*, NCINEntry* fxrec, bool32 killit)
+{
+    if (killit)
+    {
+        fxrec->flg_stat |= 0x2;
+    }
+    else if (!(fxrec->flg_stat & 0x4))
+    {
+        fxrec->flg_stat |= 0x2;
+    }
+}

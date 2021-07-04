@@ -659,7 +659,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zRubbleSystem.o\
 	$(OBJ_DIR)/asm/GAME/zNPCPlayers.o\
 	$(OBJ_DIR)/src/GAME/zNPCPlayers.o\
-	$(OBJ_DIR)/asm/GAME/zCineFXShared.o\
 	$(OBJ_DIR)/src/GAME/zCineFXShared.o\
 	$(OBJ_DIR)/asm/GAME/zCineFX.o\
 	$(OBJ_DIR)/src/GAME/zCineFX.o\
