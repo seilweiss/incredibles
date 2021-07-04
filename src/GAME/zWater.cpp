@@ -1,21 +1,57 @@
 #include "zWater.h"
 
-#include <types.h>
+#include "zBase.h"
+#include "../Core/x/xEvent.h"
 
-// func_80184788
-#pragma GLOBAL_ASM("asm/GAME/zWater.s", "load__10zWaterBodyFR5xBaseR9xDynAssetUl")
+void zWaterBody::load(xBase& data, xDynAsset& asset, ulong32)
+{
+    ((zWaterBody&)data).load((asset_type&)asset);
+}
 
-// func_801847A8
-#pragma GLOBAL_ASM("asm/GAME/zWater.s", "show__10zWaterBodyFv")
+void zWaterBody::show()
+{
+    visible = true;
+}
 
-// func_801847B4
-#pragma GLOBAL_ASM("asm/GAME/zWater.s", "hide__10zWaterBodyFv")
+void zWaterBody::hide()
+{
+    visible = false;
+}
 
-// func_801847C0
-#pragma GLOBAL_ASM("asm/GAME/zWater.s", "load__10zWaterBodyFRCQ210zWaterBody10asset_type")
+void zWaterBody::load(const asset_type& a)
+{
+    asset = &a;
 
-// func_80184838
-#pragma GLOBAL_ASM("asm/GAME/zWater.s", "get_bodyID__10zWaterBodyFv")
+    xBaseInit(this, asset);
 
-// func_80184844
-#pragma GLOBAL_ASM("asm/GAME/zWater.s", "cb_dispatch__10zWaterBodyFP5xBaseP5xBaseUiPCfP5xBaseUi")
+    baseType = eBaseTypeWaterBody;
+    eventFunc = cb_dispatch;
+
+    if (linkCount)
+    {
+        link = (xLinkAsset*)(asset + 1);
+    }
+
+    body_id = -1;
+    visible = (asset->flags & ZWATERBODY_VISIBLE);
+}
+
+uint32 zWaterBody::get_bodyID()
+{
+    return asset->body;
+}
+
+void zWaterBody::cb_dispatch(xBase*, xBase* to, uint32 event, const float32*, xBase*, uint32)
+{
+    zWaterBody& e = *(zWaterBody*)to;
+
+    switch (event)
+    {
+    case eEventVisible:
+        e.show();
+        break;
+    case eEventInvisible:
+        e.hide();
+        break;
+    }
+}

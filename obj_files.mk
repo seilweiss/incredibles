@@ -509,7 +509,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xScrPulseGlare.o\
 	$(OBJ_DIR)/asm/GAME/zBehavior.o\
 	$(OBJ_DIR)/src/GAME/zBehavior.o\
-	$(OBJ_DIR)/asm/GAME/zWater.o\
 	$(OBJ_DIR)/src/GAME/zWater.o\
 	$(OBJ_DIR)/asm/GAME/zIncrediBallCam.o\
 	$(OBJ_DIR)/src/GAME/zIncrediBallCam.o\
