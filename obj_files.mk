@@ -431,7 +431,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zPlayerBase.o\
 	$(OBJ_DIR)/asm/GAME/zPortal.o\
 	$(OBJ_DIR)/src/GAME/zPortal.o\
-	$(OBJ_DIR)/asm/GAME/zReference.o\
 	$(OBJ_DIR)/src/GAME/zReference.o\
 	$(OBJ_DIR)/asm/GAME/zRenderState.o\
 	$(OBJ_DIR)/src/GAME/zRenderState.o\

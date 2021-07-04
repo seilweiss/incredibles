@@ -1,12 +1,42 @@
 #include "zReference.h"
 
-#include <types.h>
+#include "zScene.h"
+#include "../Core/x/xEvent.h"
 
-// func_80150904
-#pragma GLOBAL_ASM("asm/GAME/zReference.s", "zReferenceInit__FR5xBaseR9xDynAssetUl")
+void zReferenceInit(xBase& data, xDynAsset& asset, ulong32)
+{
+    zReferenceInit((zReference*)&data, (zReferenceAsset*)&asset);
+}
 
-// func_80150924
-#pragma GLOBAL_ASM("asm/GAME/zReference.s", "zReferenceInit__FP10zReferenceP15zReferenceAsset")
+void zReferenceInit(zReference* ref, zReferenceAsset* asset)
+{
+    xBaseInit(ref, asset);
 
-// func_8015097C
-#pragma GLOBAL_ASM("asm/GAME/zReference.s", "zReferenceEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi")
+    ref->current = NULL;
+
+    if (asset->initial)
+    {
+        ref->current = zSceneFindObject(asset->initial);
+    }
+
+    ref->eventFunc = zReferenceEventCB;
+}
+
+void zReferenceEventCB(xBase* from, xBase* to, uint32 toEvent, const float32* toParam,
+                       xBase* toParamWidget, uint32 toParamWidgetID)
+{
+    zReference* ref = (zReference*)to;
+
+    if (toEvent == eEventSetReference)
+    {
+        ref->current = toParamWidget;
+    }
+    else if (toEvent == eEventCopyReference)
+    {
+        ref->current = ((zReference*)toParamWidget)->current;
+    }
+    else if (ref->current && ref->current->eventFunc)
+    {
+        zEntEvent(from, ref->current, toEvent, toParam, toParamWidget, toParamWidgetID);
+    }
+}
