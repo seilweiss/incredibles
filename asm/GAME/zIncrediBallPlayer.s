@@ -2,6 +2,8 @@
 
 .section .data
 
+.balign 8
+
 .global __vt__Q212zIncrediBall11incrediball
 __vt__Q212zIncrediBall11incrediball:
 	.incbin "baserom.dol", 0x306DC8, 0xEC

@@ -2,6 +2,8 @@
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_60
 _esc__2_stringBase0_60:
 	.incbin "baserom.dol", 0x2DA8C0, 0x58
@@ -22,6 +24,8 @@ purpleMeterDownRight__4zHud:
 	.skip 0x8
 
 .section .sdata
+
+.balign 8
 
 .global __vt__Q24zHud11hud_element
 __vt__Q24zHud11hud_element:

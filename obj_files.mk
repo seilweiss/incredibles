@@ -346,7 +346,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zGrid.o\
 	$(OBJ_DIR)/asm/GAME/zHangable.o\
 	$(OBJ_DIR)/src/GAME/zHangable.o\
-	$(OBJ_DIR)/asm/GAME/zHitParameters.o\
 	$(OBJ_DIR)/src/GAME/zHitParameters.o\
 	$(OBJ_DIR)/asm/GAME/zHud.o\
 	$(OBJ_DIR)/src/GAME/zHud.o\
