@@ -582,7 +582,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zNPCBossOmnidroid10.o\
 	$(OBJ_DIR)/asm/GAME/zNPCBotLeap.o\
 	$(OBJ_DIR)/src/GAME/zNPCBotLeap.o\
-	$(OBJ_DIR)/asm/GAME/zUIController.o\
 	$(OBJ_DIR)/src/GAME/zUIController.o\
 	$(OBJ_DIR)/asm/Core/x/xLightVolume.o\
 	$(OBJ_DIR)/src/Core/x/xLightVolume.o\

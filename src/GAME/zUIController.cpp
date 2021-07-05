@@ -1,24 +1,43 @@
 #include "zUIController.h"
 
-#include <types.h>
+#include <new>
 
-// func_801C5830
-#pragma GLOBAL_ASM("asm/GAME/zUIController.s", "DoInit__13zUIControllerFv")
+void zUIController::DoInit()
+{
+    zUI::DoInit();
 
-// func_801C5878
-#pragma GLOBAL_ASM("asm/GAME/zUIController.s", "DoRender__13zUIControllerCFv")
+    if (linkCount)
+    {
+        link = (xLinkAsset*)(GetAsset() + 1);
+    }
+}
 
-// func_801C587C
-#pragma GLOBAL_ASM("asm/GAME/zUIController.s", "zUIController_Init__FR5xBaseR9xDynAssetUl")
+void zUIController::DoRender() const
+{
+}
 
-// func_801C589C
-#pragma GLOBAL_ASM("asm/GAME/zUIController.s", "zUIController_Init__FP13zUIControllerP18zUIControllerAsset")
+void zUIController_Init(xBase& data, xDynAsset& asset, ulong32)
+{
+    zUIController_Init((zUIController*)&data, (zUIControllerAsset*)&asset);
+}
 
-// func_801C58EC
-#pragma GLOBAL_ASM("asm/GAME/zUIController.s", "__ct__13zUIControllerFv")
+void zUIController_Init(zUIController* ui, zUIControllerAsset* asset)
+{
+    new (ui) zUIController();
 
-// func_801C5928
-#pragma GLOBAL_ASM("asm/GAME/zUIController.s", "GetAsset__13zUIControllerCFv")
+    zUI_Init(ui, asset);
+}
 
-// func_801C5948
-#pragma GLOBAL_ASM("asm/GAME/zUIController.s", "GetSortKey__13zUIControllerCFv")
+zUIController::zUIController() : zUI()
+{
+}
+
+zUIControllerAsset* zUIController::GetAsset() const
+{
+    return (zUIControllerAsset*)zUI::GetAsset();
+}
+
+uint32 zUIController::GetSortKey() const
+{
+    return GetAsset()->id;
+}

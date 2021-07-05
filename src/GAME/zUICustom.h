@@ -1,6 +1,11 @@
 #ifndef ZUICUSTOM_H
 #define ZUICUSTOM_H
 
-#include <types.h>
+#include "zUI.h"
+
+struct zUICustom
+{
+    zUI* ui;
+};
 
 #endif

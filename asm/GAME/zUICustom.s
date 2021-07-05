@@ -8,6 +8,8 @@ line_size__16zUICustomStatBox:
 
 .section .data
 
+.balign 8
+
 .global _esc__2_1101
 _esc__2_1101:
 	.incbin "baserom.dol", 0x3109C0, 0x2C
