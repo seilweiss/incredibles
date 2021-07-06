@@ -348,7 +348,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zHud.o\
 	$(OBJ_DIR)/asm/GAME/zHudIncredimeter.o\
 	$(OBJ_DIR)/src/GAME/zHudIncredimeter.o\
-	$(OBJ_DIR)/asm/GAME/zHudTextureFlasher.o\
 	$(OBJ_DIR)/src/GAME/zHudTextureFlasher.o\
 	$(OBJ_DIR)/asm/GAME/zIncrediBallPlayer.o\
 	$(OBJ_DIR)/src/GAME/zIncrediBallPlayer.o\

@@ -6,7 +6,6 @@
 
 #include <dolphin.h>
 
-struct RwTexCoords;
 struct RwResEntry;
 
 #define rwBIGENDIAN
@@ -229,6 +228,11 @@ typedef RxVertexIndex RwImVertexIndex;
 #define RwIm2DVertexGetAlpha(vert) ((vert)->emissiveColor.alpha)
 
 #define RwIm2DVertexCopyRGBA(dst, src) ((dst)->emissiveColor = (src)->emissiveColor)
+
+struct RwTexCoords
+{
+    RwReal u, v;
+};
 
 enum RwRenderState
 {
