@@ -264,7 +264,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zBulletTime.o\
 	$(OBJ_DIR)/asm/GAME/zCam.o\
 	$(OBJ_DIR)/src/GAME/zCam.o\
-	$(OBJ_DIR)/asm/GAME/zCameraFly.o\
 	$(OBJ_DIR)/src/GAME/zCameraFly.o\
 	$(OBJ_DIR)/asm/GAME/zCameraTweak.o\
 	$(OBJ_DIR)/src/GAME/zCameraTweak.o\

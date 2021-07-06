@@ -27,6 +27,7 @@ struct xBaseAsset
 };
 
 #define XBASE_ENABLED 0x1
+#define XBASE_PERSISTENT 0x2
 #define XBASE_VALID 0x4
 #define XBASE_UNK10 0x10
 #define XBASE_IS_ENT 0x20
