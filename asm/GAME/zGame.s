@@ -8,6 +8,8 @@ tb_esc__7_2160:
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_2021
 _esc__2_2021:
 	.incbin "baserom.dol", 0x2DA5B0, 0x100

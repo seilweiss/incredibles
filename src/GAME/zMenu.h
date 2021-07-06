@@ -3,4 +3,6 @@
 
 #include <types.h>
 
+void zMenuPause(bool bPause);
+
 #endif

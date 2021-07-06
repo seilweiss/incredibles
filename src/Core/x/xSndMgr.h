@@ -10,4 +10,7 @@ enum xSndEffect
     xSndEffect_MAX_TYPES
 };
 
+void xSndMgrSetEffect(xSndEffect Effect);
+xSndEffect xSndMgrGetEffect();
+
 #endif
