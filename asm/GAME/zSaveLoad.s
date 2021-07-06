@@ -140,6 +140,8 @@ g_promptUserSelection:
 
 .section .sdata2
 
+.balign 8
+
 .global _esc__2_1080
 _esc__2_1080:
 	.incbin "baserom.dol", 0x331E90, 0x4

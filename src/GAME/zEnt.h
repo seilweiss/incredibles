@@ -1,6 +1,11 @@
 #ifndef ZENT_H
 #define ZENT_H
 
-#include <types.h>
+#include "../Core/x/xEnt.h"
+
+struct zEnt : xEnt
+{
+    xAnimTable* atbl;
+};
 
 #endif

@@ -5,6 +5,9 @@
 #include "../p2/iFog.h"
 #include "../p2/iTime.h"
 
+#include "../../GAME/zPlayer.h"
+#include "../../GAME/zScene.h"
+
 #include <types.h>
 #include <rwcore.h>
 #include <rpworld.h>
@@ -13,8 +16,6 @@ struct xCamGroup;
 struct xCamScreen;
 struct _tagxPad;
 struct xUpdateCullMgr;
-struct zPlayer;
-struct zScene;
 struct PS2DemoGlobals;
 
 struct xGlobals

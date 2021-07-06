@@ -3,4 +3,6 @@
 
 #include <types.h>
 
+struct _zEnv;
+
 #endif

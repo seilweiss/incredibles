@@ -1,21 +1,64 @@
 #include "zPortal.h"
 
-#include <types.h>
+#include "zGlobals.h"
+#include "../Core/x/xEvent.h"
 
-// func_80150758
-#pragma GLOBAL_ASM("asm/GAME/zPortal.s", "zPortalInit__FPvPv")
+void zPortalInit(void* portal, void* passet)
+{
+    zPortalInit((_zPortal*)portal, (xPortalAsset*)passet);
+}
 
-// func_80150778
-#pragma GLOBAL_ASM("asm/GAME/zPortal.s", "zPortalInit__FP8_zPortalP12xPortalAsset")
+void zPortalInit(_zPortal* portal, xPortalAsset* passet)
+{
+    xBaseInit(portal, passet);
 
-// func_801507D0
-#pragma GLOBAL_ASM("asm/GAME/zPortal.s", "zPortalReset__FP8_zPortal")
+    portal->passet = passet;
+    portal->eventFunc = zPortalEventCB;
 
-// func_801507F4
-#pragma GLOBAL_ASM("asm/GAME/zPortal.s", "zPortalSave__FP8_zPortalP7xSerial")
+    if (portal->linkCount)
+    {
+        portal->link = (xLinkAsset*)(portal->passet + 1);
+    }
+}
 
-// func_80150814
-#pragma GLOBAL_ASM("asm/GAME/zPortal.s", "zPortalLoad__FP8_zPortalP7xSerial")
+void zPortalReset(_zPortal* portal)
+{
+    xBaseReset(portal, portal->passet);
+}
 
-// func_80150834
-#pragma GLOBAL_ASM("asm/GAME/zPortal.s", "zPortalEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi")
+void zPortalSave(_zPortal* ent, xSerial* s)
+{
+    xBaseSave(ent, s);
+}
+
+void zPortalLoad(_zPortal* ent, xSerial* s)
+{
+    xBaseLoad(ent, s);
+}
+
+void zPortalEventCB(xBase*, xBase* to, uint32 toEvent, const float32* toParam, xBase*, uint32)
+{
+    switch (toEvent)
+    {
+    case eEventReset:
+    {
+        zPortalReset((_zPortal*)to);
+        break;
+    }
+    case eEventTeleportPlayer:
+    {
+        if (xglobals->___player_ent_dont_use_directly->IsDead())
+        {
+            break;
+        }
+
+        if ((globals.demoType != zDT_PUBLICITY && globals.demoType != zDT_E3) ||
+            ((_zPortal*)to)->passet->sceneID == globals.sceneCur->sceneID)
+        {
+            zSceneSwitch((_zPortal*)to, toParam[0] != 0.0f);
+        }
+
+        break;
+    }
+    }
+}
