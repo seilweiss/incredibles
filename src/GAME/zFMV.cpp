@@ -8,7 +8,7 @@
 #include "../Core/x/xPad.h"
 
 // clang-format off
-zFMVFile zFMVFileTable[] =
+static zFMVFile zFMVFileTable[] =
 {
     eFMVFile_NoMovie, "", 0,
     eFMVFile_PixarLOGO, "FMV\\Pixar", 0,
