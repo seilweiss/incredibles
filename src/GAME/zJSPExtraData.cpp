@@ -1,15 +1,76 @@
 #include "zJSPExtraData.h"
 
-#include <types.h>
+#include "zScene.h"
+#include "../Core/x/xEvent.h"
 
-// func_801DEEE8
-#pragma GLOBAL_ASM("asm/GAME/zJSPExtraData.s", "ShowAssociatedGroup__13zJSPExtraDataFUib")
+zJSPExtraData::jspGroupPair zJSPExtraData::sJspGroupPairs[10];
+int32 zJSPExtraData::sNumPairs = 0;
 
-// func_801DEFE0
-#pragma GLOBAL_ASM("asm/GAME/zJSPExtraData.s", "AddPair__13zJSPExtraDataFUiUiP13zJSPExtraData")
+void zJSPExtraData::ShowAssociatedGroup(uint32 jspAssetId, bool show)
+{
+    for (int32 i = 0; i < sNumPairs; i++)
+    {
+        if (sJspGroupPairs[i].jspID == jspAssetId)
+        {
+            if (show)
+            {
+                if (!sJspGroupPairs[i].pGroup && sJspGroupPairs[i].groupID)
+                {
+                    sJspGroupPairs[i].pGroup = zSceneFindObject(sJspGroupPairs[i].groupID);
+                }
 
-// func_801DF014
-#pragma GLOBAL_ASM("asm/GAME/zJSPExtraData.s", "Load__13zJSPExtraDataFR5xBaseR9xDynAssetUl")
+                if (sJspGroupPairs[i].pGroup)
+                {
+                    zEntEvent(sJspGroupPairs[i].pGroup, eEventVisibilityCullOff);
+                }
 
-// func_801DF034
-#pragma GLOBAL_ASM("asm/GAME/zJSPExtraData.s", "LoadPrivate__13zJSPExtraDataFRCQ213zJSPExtraData18zJSPExtraDataAsset")
+                zEntEvent(sJspGroupPairs[i].pWidget, eEventOn);
+            }
+            else
+            {
+                if (!sJspGroupPairs[i].pGroup && sJspGroupPairs[i].groupID)
+                {
+                    sJspGroupPairs[i].pGroup = zSceneFindObject(sJspGroupPairs[i].groupID);
+                }
+
+                if (sJspGroupPairs[i].pGroup)
+                {
+                    zEntEvent(sJspGroupPairs[i].pGroup, eEventVisibilityCullOn);
+                }
+
+                zEntEvent(sJspGroupPairs[i].pWidget, eEventOff);
+            }
+        }
+    }
+}
+
+void zJSPExtraData::AddPair(uint32 jspID, uint32 groupID, zJSPExtraData* data)
+{
+    sJspGroupPairs[sNumPairs].jspID = jspID;
+    sJspGroupPairs[sNumPairs].groupID = groupID;
+    sJspGroupPairs[sNumPairs].pGroup = NULL;
+    sJspGroupPairs[sNumPairs].pWidget = data;
+
+    sNumPairs++;
+}
+
+void zJSPExtraData::Load(xBase& data, xDynAsset& asset, ulong32)
+{
+    ((zJSPExtraData&)data).LoadPrivate((zJSPExtraDataAsset&)asset);
+}
+
+void zJSPExtraData::LoadPrivate(const zJSPExtraDataAsset& asset)
+{
+    xBaseInit(this, &asset);
+
+    if (linkCount)
+    {
+        link = (xLinkAsset*)(&asset + 1);
+    }
+    else
+    {
+        link = NULL;
+    }
+
+    AddPair(asset.jspID, asset.groupID, this);
+}

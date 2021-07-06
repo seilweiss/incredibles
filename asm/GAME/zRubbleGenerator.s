@@ -17,6 +17,8 @@ _esc__2_stringBase0_145:
 
 .section .sbss
 
+.balign 8
+
 .global numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_
 numActiveGenerators__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_:
 	.skip 0x4
