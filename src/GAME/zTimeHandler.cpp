@@ -1,19 +1,22 @@
 #include "zTimeHandler.h"
 
-#include <types.h>
+zTimeHandlerMgr timehandler_mgr;
 
-// func_80185964
-#pragma GLOBAL_ASM("asm/GAME/zTimeHandler.s", "update__15zTimeHandlerMgrFf")
+void zTimeHandlerMgr::update(float32 dt)
+{
+    for (int32 i = get_size_queue() - 1; i >= 0; i--)
+    {
+        zTimeHandlerStruct* s = fetch_queue_ptr(i);
 
-// func_80185A04
-#pragma GLOBAL_ASM(                                                                                \
-    "asm/GAME/zTimeHandler.s",                                                                     \
-    "get_queue__31zQueue_esc__0_18zTimeHandlerStruct_esc__4_64_esc__1_FR18zTimeHandlerStruct")
+        if (s)
+        {
+            s->cb(dt, s);
+            s->elapsed += dt;
 
-// func_80185A6C
-#pragma GLOBAL_ASM("asm/GAME/zTimeHandler.s",                                                      \
-                   "fetch_queue_ptr__31zQueue_esc__0_18zTimeHandlerStruct_esc__4_64_esc__1_Fi")
-
-// func_80185AB8
-#pragma GLOBAL_ASM("asm/GAME/zTimeHandler.s",                                                      \
-                   "get_size_queue__31zQueue_esc__0_18zTimeHandlerStruct_esc__4_64_esc__1_CFv")
+            if (s->elapsed > s->period)
+            {
+                get_queue(*s);
+            }
+        }
+    }
+}

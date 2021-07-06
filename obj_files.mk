@@ -511,7 +511,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zWater.o\
 	$(OBJ_DIR)/asm/GAME/zIncrediBallCam.o\
 	$(OBJ_DIR)/src/GAME/zIncrediBallCam.o\
-	$(OBJ_DIR)/asm/GAME/zTimeHandler.o\
 	$(OBJ_DIR)/src/GAME/zTimeHandler.o\
 	$(OBJ_DIR)/src/GAME/zBulletMarkAsset.o\
 	$(OBJ_DIR)/asm/Core/x/xCollideSweptSphere.o\
