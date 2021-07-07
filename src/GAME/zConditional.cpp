@@ -1,27 +1,179 @@
 #include "zConditional.h"
 
-#include <types.h>
+#include "zVar.h"
+#include "zScene.h"
+#include "../Core/x/xEvent.h"
 
-// func_8009F680
-#pragma GLOBAL_ASM("asm/GAME/zConditional.s", "zConditionalInit__FPvPv")
+void zConditionalInit(void* b, void* asset)
+{
+    zConditionalInit((xBase*)b, (zCondAsset*)asset);
+}
 
-// func_8009F6A0
-#pragma GLOBAL_ASM("asm/GAME/zConditional.s", "zConditionalInit__FP5xBaseP10zCondAsset")
+void zConditionalInit(xBase* b, zCondAsset* asset)
+{
+    _zConditional* c = (_zConditional*)b;
 
-// func_8009F740
-#pragma GLOBAL_ASM("asm/GAME/zConditional.s", "zConditionalReset__FP13_zConditional")
+    xBaseInit(c, asset);
 
-// func_8009F764
-#pragma GLOBAL_ASM("asm/GAME/zConditional.s", "zConditionalSave__FP13_zConditionalP7xSerial")
+    c->eventFunc = zConditionalEventCB;
+    c->asset = asset;
 
-// func_8009F784
-#pragma GLOBAL_ASM("asm/GAME/zConditional.s", "zConditionalLoad__FP13_zConditionalP7xSerial")
+    if (c->linkCount)
+    {
+        c->link = (xLinkAsset*)(c->asset + 1);
+    }
+    else
+    {
+        c->link = NULL;
+    }
 
-// func_8009F7A4
-#pragma GLOBAL_ASM("asm/GAME/zConditional.s", "zConditional_GetCount__FP13_zConditional")
+    for (int32 i = 0; i < eVarEntryCount; i++)
+    {
+        if (c->asset->expr1 == zVarEntryTable[i].varNameID)
+        {
+            c->varEntry = &zVarEntryTable[i];
+            break;
+        }
+    }
+}
 
-// func_8009F884
-#pragma GLOBAL_ASM("asm/GAME/zConditional.s", "zConditional_Evaluate__FP13_zConditional")
+void zConditionalReset(_zConditional* c)
+{
+    xBaseReset(c, c->asset);
+}
 
-// func_8009F9C8
-#pragma GLOBAL_ASM("asm/GAME/zConditional.s", "zConditionalEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi")
+void zConditionalSave(_zConditional* ent, xSerial* s)
+{
+    xBaseSave(ent, s);
+}
+
+void zConditionalLoad(_zConditional* ent, xSerial* s)
+{
+    xBaseLoad(ent, s);
+}
+
+uint32 zConditional_GetCount(_zConditional* c)
+{
+    zVarEntry* v = NULL;
+    void* context = NULL;
+
+    for (int32 i = 0; i < eVarEntryCount; i++)
+    {
+        if (c->asset->expr1 == zVarEntryTable[i].varNameID)
+        {
+            v = &zVarEntryTable[i];
+
+            if (zVarEntryNeedsContext(i))
+            {
+                uint32 id = c->asset->value_asset;
+
+                if (id)
+                {
+                    context = zSceneFindObject(id);
+                }
+            }
+        }
+    }
+
+    if (!v)
+    {
+        return eEventUnknown;
+    }
+
+    uint32 temp = v->varCB(context);
+
+    if (temp >= 1 && temp <= 20)
+    {
+        return eEventCountStart + temp;
+    }
+
+    if (temp == 0)
+    {
+        return eEventCount0;
+    }
+
+    return eEventUnknown;
+}
+
+uint32 zConditional_Evaluate(_zConditional* c)
+{
+    uint32 temp;
+    void* context = NULL;
+
+    if (!c->varEntry)
+    {
+        return 0;
+    }
+
+    if (zVarEntryNeedsContext(c->varEntry->entry))
+    {
+        uint32 id = c->asset->value_asset;
+
+        if (id)
+        {
+            context = zSceneFindObject(id);
+        }
+    }
+
+    temp = c->varEntry->varCB(context);
+
+    switch (c->asset->op)
+    {
+    case ZCOND_EQ:
+        return (temp == c->asset->constNum) ? 1 : 0;
+    case ZCOND_GT:
+        return (temp > c->asset->constNum) ? 1 : 0;
+    case ZCOND_LT:
+        return (temp < c->asset->constNum) ? 1 : 0;
+    case ZCOND_GE:
+        return (temp >= c->asset->constNum) ? 1 : 0;
+    case ZCOND_LE:
+        return (temp <= c->asset->constNum) ? 1 : 0;
+    case ZCOND_NE:
+        return (temp != c->asset->constNum) ? 1 : 0;
+    default:
+        return 0;
+    }
+}
+
+void zConditionalEventCB(xBase*, xBase* to, uint32 toEvent, const float32*, xBase*, uint32)
+{
+    _zConditional* t = (_zConditional*)to;
+
+    switch (toEvent)
+    {
+    case eEventEvaluate:
+    {
+        if (zConditional_Evaluate(t))
+        {
+            zEntEvent(t, t, eEventTrue);
+        }
+        else
+        {
+            zEntEvent(t, t, eEventFalse);
+        }
+
+        break;
+    }
+    case eEventEvaluateCounterValue:
+    {
+        uint32 event = zConditional_GetCount(t);
+
+        if (event != eEventUnknown)
+        {
+            zEntEvent(t, t, event);
+        }
+
+        break;
+    }
+    case eEventReset:
+    {
+        zConditionalReset(t);
+        break;
+    }
+    case eEventMusicTrackPlayTemporary: // ???
+    {
+        break;
+    }
+    }
+}

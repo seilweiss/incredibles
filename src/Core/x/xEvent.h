@@ -830,6 +830,8 @@ enum en_xEventTags
     eEventCount
 };
 
+#define eEventCountStart (eEventCount1 - 1)
+
 enum ForceEvent
 {
     FE_YES,

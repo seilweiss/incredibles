@@ -6,8 +6,6 @@
 
 #include "../../GAME/zBase.h"
 
-#define eEventCountStart (eEventCount1 - 1)
-
 namespace
 {
     void add_tweaks(_xCounter&)
