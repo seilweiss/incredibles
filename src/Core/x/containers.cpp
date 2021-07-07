@@ -30,7 +30,7 @@ void pool_list_base::create(int32 node_size, int32 max_size, void* buffer)
 {
     if (!buffer)
     {
-        this->buffer = xMemAlloc(gActiveHeap, node_size * max_size, 0);
+        this->buffer = xMEMALLOC(node_size * max_size);
     }
     else
     {

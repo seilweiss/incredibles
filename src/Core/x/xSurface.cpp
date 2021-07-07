@@ -13,7 +13,7 @@ void xSurfaceInit(uint16 num_surfs)
 
     if (nsurfs)
     {
-        surfs = (xSurface*)xMemAlloc(gActiveHeap, nsurfs * sizeof(xSurface), 0);
+        surfs = (xSurface*)xMEMALLOC(nsurfs * sizeof(xSurface));
 
         for (uint16 i = 0; i < nsurfs; i++)
         {

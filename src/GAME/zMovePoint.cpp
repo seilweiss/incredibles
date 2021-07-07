@@ -9,7 +9,7 @@ static int32 g_mvpt_cnt = 0;
 
 zMovePoint* zMovePoint_GetMemPool(int32 cnt)
 {
-    g_mvpt_list = (cnt) ? (zMovePoint*)xMemAlloc(gActiveHeap, cnt * sizeof(zMovePoint), 0) : NULL;
+    g_mvpt_list = (cnt) ? (zMovePoint*)xMEMALLOC(cnt * sizeof(zMovePoint)) : NULL;
     g_mvpt_cnt = cnt;
 
     return g_mvpt_list;

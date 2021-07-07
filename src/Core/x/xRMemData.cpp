@@ -21,11 +21,11 @@ void* RyzMemData::operator new(size_t amt, int32, RyzMemGrow* growCtxt)
 
     if (dogrow)
     {
-        mem = xMemGrowAlloc(gActiveHeap, amt);
+        mem = xMEMGROWALLOC(amt);
     }
     else
     {
-        mem = xMemAlloc(gActiveHeap, amt, 0);
+        mem = xMEMALLOC(amt);
     }
 
     memset(mem, 0, 4);

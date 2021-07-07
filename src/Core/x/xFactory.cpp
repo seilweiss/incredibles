@@ -11,7 +11,7 @@ xFactory::xFactory(int32 maxTypes)
 {
     uint32 amt = maxTypes * sizeof(XGOFTypeInfo);
 
-    infopool = (XGOFTypeInfo*)xMemAlloc(gActiveHeap, amt, 0);
+    infopool = (XGOFTypeInfo*)xMEMALLOC(amt);
 
     memset(infopool, 0, amt);
     XOrdInit(&infolist, maxTypes, FALSE);

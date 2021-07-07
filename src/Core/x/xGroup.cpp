@@ -33,7 +33,7 @@ void xGroupInit(xBase* b, xGroupAsset* asset)
 
     uint32 count = xGroupGetCount(g);
 
-    g->item = (count) ? (xBase**)xMemAlloc(gActiveHeap, count * sizeof(xBase*), 0) : NULL;
+    g->item = (count) ? (xBase**)xMEMALLOC(count * sizeof(xBase*)) : NULL;
     g->last_index = 0;
     g->flg_group = 0;
 }

@@ -14,7 +14,7 @@ void XOrdInit(st_XORDEREDARRAY* array, int32 size, bool32 tempAlloc)
     }
     else
     {
-        array->list = (void**)xMemAlloc(gActiveHeap, size * sizeof(void*), 0);
+        array->list = (void**)xMEMALLOC(size * sizeof(void*));
     }
 
     array->cnt = 0;
