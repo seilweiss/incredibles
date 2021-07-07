@@ -107,6 +107,14 @@ struct RwCamera
     RwV3d frustumCorners[8];
 };
 
+enum RwOpCombineType
+{
+    rwCOMBINEREPLACE = 0,
+    rwCOMBINEPRECONCAT,
+    rwCOMBINEPOSTCONCAT,
+    rwOPCOMBINETYPEFORCEENUMSIZEINT = RWFORCEENUMSIZEINT
+};
+
 #define RwCameraGetViewOffsetMacro(_camera) (&((_camera)->viewOffset))
 #define RwCameraSetRasterMacro(_camera, _raster) (((_camera)->frameBuffer = (_raster)), (_camera))
 #define RwCameraSetRasterVoidMacro(_camera, _raster)                                               \
@@ -166,6 +174,9 @@ extern RwCamera* RwCameraBeginUpdate(RwCamera* camera);
 extern RwCamera* RwCameraEndUpdate(RwCamera* camera);
 extern RwCamera* RwCameraSetNearClipPlane(RwCamera* camera, RwReal nearClip);
 extern RwCamera* RwCameraSetFarClipPlane(RwCamera* camera, RwReal farClip);
+
+extern RwReal RwV3dNormalize(RwV3d* out, const RwV3d* in);
+extern RwFrame* RwFrameTransform(RwFrame* frame, const RwMatrix* m, RwOpCombineType combine);
 
 #ifdef __cplusplus
 }
