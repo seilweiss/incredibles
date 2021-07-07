@@ -452,7 +452,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zTextBox.o\
 	$(OBJ_DIR)/asm/GAME/zTrainCar.o\
 	$(OBJ_DIR)/src/GAME/zTrainCar.o\
-	$(OBJ_DIR)/asm/GAME/zTrainPath.o\
 	$(OBJ_DIR)/src/GAME/zTrainPath.o\
 	$(OBJ_DIR)/asm/GAME/zTransient.o\
 	$(OBJ_DIR)/src/GAME/zTransient.o\
