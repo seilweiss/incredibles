@@ -626,7 +626,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zNPCStreamer.o\
 	$(OBJ_DIR)/asm/GAME/zNPCBossBombChopper.o\
 	$(OBJ_DIR)/src/GAME/zNPCBossBombChopper.o\
-	$(OBJ_DIR)/asm/GAME/zCameraRBand.o\
 	$(OBJ_DIR)/src/GAME/zCameraRBand.o\
 	$(OBJ_DIR)/src/GAME/zWireFrameAsset.o\
 	$(OBJ_DIR)/src/GAME/zJSPExtraData.o\

@@ -3,6 +3,8 @@
 
 #include "../p2/iMemMgr.h"
 
+#include <new>
+
 struct xMemPool
 {
     void* FreeList;
@@ -16,10 +18,17 @@ struct xMemPool
     uint32 Total;
 };
 
+enum xMemStaticType
+{
+    eMemStaticTypeUnk0
+};
+
 extern uint32 gActiveHeap;
 
 void* xMemAlloc(uint32 heapID, uint32 size, int32 align);
 void* xMemGrowAlloc(uint32 heapID, uint32 size);
 void* xMemPushTemp(uint32 size);
+
+void* operator new(size_t, xMemStaticType, uint32);
 
 #endif

@@ -21,6 +21,8 @@ union xVec3
     static const xVec3 m_UnitAxisX;
     static const xVec3 m_UnitAxisY;
     static const xVec3 m_UnitAxisZ;
+
+    IMPLICIT_COPY_ASSIGN_OP(xVec3)
 };
 
 float32 xVec3Normalize(xVec3* o, const xVec3* v);

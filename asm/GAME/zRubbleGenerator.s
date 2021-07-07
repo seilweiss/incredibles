@@ -11,6 +11,8 @@ fakeAsset_esc__7_1311:
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_145
 _esc__2_stringBase0_145:
 	.incbin "baserom.dol", 0x2E6E58, 0x10
