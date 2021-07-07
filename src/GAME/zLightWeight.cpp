@@ -1,30 +1,77 @@
 #include "zLightWeight.h"
 
-#include <types.h>
+namespace z
+{
+    namespace lightweight_manager
+    {
+        int32 system_count = 0;
+        lightweight_system_base* system[10];
 
-// func_800E013C
-#pragma GLOBAL_ASM("asm/GAME/zLightWeight.s", "setup__Q21z19lightweight_managerFv")
+        void setup()
+        {
+            system_count = 0;
+        }
 
-// func_800E0148
-#pragma GLOBAL_ASM("asm/GAME/zLightWeight.s", "exit__Q21z19lightweight_managerFv")
+        void exit()
+        {
+            for (int32 i = 0; i < system_count; i++)
+            {
+                system[i]->exit();
+            }
+        }
 
-// func_800E01A4
-#pragma GLOBAL_ASM("asm/GAME/zLightWeight.s", "reset__Q21z19lightweight_managerFv")
+        void reset()
+        {
+            for (int32 i = 0; i < system_count; i++)
+            {
+                system[i]->reset();
+            }
+        }
 
-// func_800E0200
-#pragma GLOBAL_ASM("asm/GAME/zLightWeight.s", "update__Q21z19lightweight_managerFf")
+        void update(float32 dt)
+        {
+            for (int32 i = 0; i < system_count; i++)
+            {
+                system[i]->update(dt);
+            }
+        }
 
-// func_800E026C
-#pragma GLOBAL_ASM("asm/GAME/zLightWeight.s", "render__Q21z19lightweight_managerFv")
+        void render()
+        {
+            for (int32 i = 0; i < system_count; i++)
+            {
+                system[i]->render();
+            }
+        }
 
-// func_800E02C8
-#pragma GLOBAL_ASM("asm/GAME/zLightWeight.s", "post_render_2d__Q21z19lightweight_managerFv")
+        void post_render_2d()
+        {
+            for (int32 i = 0; i < system_count; i++)
+            {
+                system[i]->post_render_2d();
+            }
+        }
 
-// func_800E0324
-#pragma GLOBAL_ASM("asm/GAME/zLightWeight.s", "post_render_3d__Q21z19lightweight_managerFv")
+        void post_render_3d()
+        {
+            for (int32 i = 0; i < system_count; i++)
+            {
+                system[i]->post_render_3d();
+            }
+        }
 
-// func_800E0380
-#pragma GLOBAL_ASM("asm/GAME/zLightWeight.s", "scene_setup__Q21z19lightweight_managerFv")
+        void scene_setup()
+        {
+            for (int32 i = 0; i < system_count; i++)
+            {
+                system[i]->scene_setup();
+            }
+        }
 
-// func_800E03DC
-#pragma GLOBAL_ASM("asm/GAME/zLightWeight.s", "register_lightweight__Q21z19lightweight_managerFPQ21z23lightweight_system_base")
+        void register_lightweight(lightweight_system_base* new_system)
+        {
+            system[system_count] = new_system;
+            system_count++;
+        }
+    } // namespace lightweight_manager
+} // namespace z

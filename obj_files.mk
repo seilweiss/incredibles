@@ -360,7 +360,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zLightEffect.o\
 	$(OBJ_DIR)/asm/GAME/zLightning.o\
 	$(OBJ_DIR)/src/GAME/zLightning.o\
-	$(OBJ_DIR)/asm/GAME/zLightWeight.o\
 	$(OBJ_DIR)/src/GAME/zLightWeight.o\
 	$(OBJ_DIR)/asm/GAME/zLOD.o\
 	$(OBJ_DIR)/src/GAME/zLOD.o\

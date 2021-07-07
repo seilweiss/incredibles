@@ -8,6 +8,8 @@ sManagerList:
 
 .section .sbss
 
+.balign 8
+
 .global sLODTableCount
 sLODTableCount:
 	.skip 0x4
