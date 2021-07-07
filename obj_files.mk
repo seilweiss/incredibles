@@ -368,7 +368,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zMain.o\
 	$(OBJ_DIR)/asm/GAME/zMenu.o\
 	$(OBJ_DIR)/src/GAME/zMenu.o\
-	$(OBJ_DIR)/asm/GAME/zMovePoint.o\
 	$(OBJ_DIR)/src/GAME/zMovePoint.o\
 	$(OBJ_DIR)/asm/GAME/zMrIncrediblePlayer.o\
 	$(OBJ_DIR)/src/GAME/zMrIncrediblePlayer.o\

@@ -1,30 +1,83 @@
 #include "zMovePoint.h"
 
-#include <types.h>
+#include "zScene.h"
+#include "../Core/x/xMemMgr.h"
+#include "../Core/x/xEvent.h"
 
-// func_800E4518
-#pragma GLOBAL_ASM("asm/GAME/zMovePoint.s", "zMovePoint_GetMemPool__Fi")
+static zMovePoint* g_mvpt_list = NULL;
+static int32 g_mvpt_cnt = 0;
 
-// func_800E4564
-#pragma GLOBAL_ASM("asm/GAME/zMovePoint.s", "zMovePointInit__FP10zMovePointP15xMovePointAsset")
+zMovePoint* zMovePoint_GetMemPool(int32 cnt)
+{
+    g_mvpt_list = (cnt) ? (zMovePoint*)xMemAlloc(gActiveHeap, cnt * sizeof(zMovePoint), 0) : NULL;
+    g_mvpt_cnt = cnt;
 
-// func_800E45CC
-#pragma GLOBAL_ASM("asm/GAME/zMovePoint.s", "zMovePoint_GetInst__Fi")
+    return g_mvpt_list;
+}
 
-// func_800E45DC
-#pragma GLOBAL_ASM("asm/GAME/zMovePoint.s", "zMovePointSetup__FP10zMovePointP6zScene")
+void zMovePointInit(zMovePoint* m, xMovePointAsset* asset)
+{
+    xMovePointInit(m, asset);
 
-// func_800E45FC
-#pragma GLOBAL_ASM("asm/GAME/zMovePoint.s", "zMovePointSave__FP10zMovePointP7xSerial")
+    m->eventFunc = zMovePointEventCB;
 
-// func_800E461C
-#pragma GLOBAL_ASM("asm/GAME/zMovePoint.s", "zMovePointLoad__FP10zMovePointP7xSerial")
+    if (m->linkCount)
+    {
+        m->link = (xLinkAsset*)((uint8*)asset + asset->numPoints * sizeof(uint32) +
+                                sizeof(xMovePointAsset));
+    }
+    else
+    {
+        m->link = NULL;
+    }
+}
 
-// func_800E463C
-#pragma GLOBAL_ASM("asm/GAME/zMovePoint.s", "zMovePointReset__FP10zMovePoint")
+zMovePoint* zMovePoint_GetInst(int32 n)
+{
+    return &g_mvpt_list[n];
+}
 
-// func_800E465C
-#pragma GLOBAL_ASM("asm/GAME/zMovePoint.s", "zMovePointEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi")
+void zMovePointSetup(zMovePoint* mvpt, zScene* scn)
+{
+    xMovePointSetup(mvpt, scn);
+}
 
-// func_800E46C8
-#pragma GLOBAL_ASM("asm/GAME/zMovePoint.s", "zMovePointGetPos__FPC10zMovePoint")
+void zMovePointSave(zMovePoint* ent, xSerial* s)
+{
+    xMovePointSave(ent, s);
+}
+
+void zMovePointLoad(zMovePoint* ent, xSerial* s)
+{
+    xMovePointLoad(ent, s);
+}
+
+void zMovePointReset(zMovePoint* m)
+{
+    xMovePointReset(m);
+}
+
+void zMovePointEventCB(xBase*, xBase* to, uint32 toEvent, const float32*, xBase*, uint32)
+{
+    zMovePoint* m = (zMovePoint*)to;
+
+    switch (toEvent)
+    {
+    case eEventOn:
+        m->on = true;
+        break;
+    case eEventOff:
+        m->on = false;
+        break;
+    case eEventReset:
+        zMovePointReset(m);
+        break;
+    case eEventArrive:
+        break;
+    }
+}
+
+xVec3* zMovePointGetPos(const zMovePoint* m)
+{
+    return xMovePointGetPos(m);
+}
