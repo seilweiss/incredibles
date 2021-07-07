@@ -1,21 +1,35 @@
 #include "iMath.h"
 
-#include <types.h>
+#include <cmath>
 
-// func_800767E8
-#pragma GLOBAL_ASM("asm/Core/p2/iMath.s", "isin__Ff")
+// todo: move these definitions to <cmath>
 
-// func_80076808
-#pragma GLOBAL_ASM("asm/Core/p2/iMath.s", "sinf__3stdFf")
+inline float std::sinf(float x)
+{
+    return sin(x);
+}
 
-// func_8007682C
-#pragma GLOBAL_ASM("asm/Core/p2/iMath.s", "icos__Ff")
+inline float std::cosf(float x)
+{
+    return cos(x);
+}
 
-// func_8007684C
-#pragma GLOBAL_ASM("asm/Core/p2/iMath.s", "cosf__3stdFf")
+inline float std::tanf(float x)
+{
+    return tan(x);
+}
 
-// func_80076870
-#pragma GLOBAL_ASM("asm/Core/p2/iMath.s", "itan__Ff")
+float32 isin(float32 x)
+{
+    return std::sinf(x);
+}
 
-// func_80076890
-#pragma GLOBAL_ASM("asm/Core/p2/iMath.s", "tanf__3stdFf")
+float32 icos(float32 x)
+{
+    return std::cosf(x);
+}
+
+float32 itan(float32 x)
+{
+    return std::tanf(x);
+}

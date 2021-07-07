@@ -1,9 +1,14 @@
 #ifndef _MSL_CMATH_H
 #define _MSL_CMATH_H
 
+#include "math.h"
+
 namespace std
 {
     float floorf(float);
-}
+    float sinf(float x);
+    float cosf(float x);
+    float tanf(float x);
+} // namespace std
 
 #endif
