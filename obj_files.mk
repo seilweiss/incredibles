@@ -196,7 +196,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/p2/iFX.o\
 	$(OBJ_DIR)/asm/Core/p2/iLight.o\
 	$(OBJ_DIR)/src/Core/p2/iLight.o\
-	$(OBJ_DIR)/asm/Core/p2/iMath.o\
 	$(OBJ_DIR)/src/Core/p2/iMath.o\
 	$(OBJ_DIR)/asm/Core/p2/iMath3.o\
 	$(OBJ_DIR)/src/Core/p2/iMath3.o\
