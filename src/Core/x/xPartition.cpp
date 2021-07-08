@@ -5,27 +5,23 @@
 #include <string.h>
 
 // func_8004FFBC
-// #pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "xPartitionReset__Fv")
 void xPartitionReset()
 {
 }
 
 // func_8004FFC0
-// #pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "PartitionGetFreeLink__Fv")
 _tagPartLink* PartitionGetFreeLink()
 {
     return (_tagPartLink*)xMemAllocSize(sizeof(_tagPartLink));
 }
 
 // func_8004FFEC
-// #pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "PartitionSpaceReset__FP13_tagPartSpace")
 void PartitionSpaceReset(_tagPartSpace* space)
 {
     memset(space, 0, sizeof(_tagPartSpace));
 }
 
 // func_80050014
-// #pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "PartitionSpaceInsert__FP13_tagPartSpacePv")
 void PartitionSpaceInsert(_tagPartSpace* space, void* data)
 {
     space->total++;
