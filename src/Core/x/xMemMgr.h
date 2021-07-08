@@ -35,4 +35,6 @@ void* operator new(size_t, xMemStaticType, uint32);
 #define xMEMALLOCALIGN(size, align) xMemAlloc(gActiveHeap, (size), (align))
 #define xMEMGROWALLOC(size) xMemGrowAlloc(gActiveHeap, (size))
 
+#define xMemAllocSize(size) xMemAlloc(gActiveHeap, size, 0)
+
 #endif

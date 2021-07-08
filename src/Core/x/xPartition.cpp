@@ -1,18 +1,45 @@
 #include "xPartition.h"
+#include "xMemMgr.h"
 
 #include <types.h>
+#include <string.h>
 
 // func_8004FFBC
-#pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "xPartitionReset__Fv")
+// #pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "xPartitionReset__Fv")
+void xPartitionReset()
+{
+}
 
 // func_8004FFC0
-#pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "PartitionGetFreeLink__Fv")
+// #pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "PartitionGetFreeLink__Fv")
+_tagPartLink* PartitionGetFreeLink()
+{
+    return (_tagPartLink*)xMemAllocSize(sizeof(_tagPartLink));
+}
 
 // func_8004FFEC
-#pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "PartitionSpaceReset__FP13_tagPartSpace")
+// #pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "PartitionSpaceReset__FP13_tagPartSpace")
+void PartitionSpaceReset(_tagPartSpace* space)
+{
+    memset(space, 0, sizeof(_tagPartSpace));
+}
 
 // func_80050014
-#pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "PartitionSpaceInsert__FP13_tagPartSpacePv")
+// #pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "PartitionSpaceInsert__FP13_tagPartSpacePv")
+void PartitionSpaceInsert(_tagPartSpace* space, void* data)
+{
+    space->total++;
+    _tagPartLink* head = &space->head;
+    _tagPartLink* tmp = head;
+    while (tmp->next != NULL)
+    {
+        tmp = tmp->next;
+    }
+    head = PartitionGetFreeLink();
+    tmp->next = head;
+    tmp->next->data = data;
+    tmp->next->next = NULL;
+}
 
 // func_8005007C
 #pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "xPartitionGetTrueIdx__FP13_tagPartitioniii")
@@ -36,4 +63,5 @@
 #pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "xPartitionUpdate__FP13_tagPartitionPviP5xVec3")
 
 // func_8005061C
-#pragma GLOBAL_ASM("asm/Core/x/xPartition.s", "xPartitionSpaceMove__FP13_tagPartSpaceP13_tagPartSpaceUi")
+#pragma GLOBAL_ASM("asm/Core/x/xPartition.s",                                                      \
+                   "xPartitionSpaceMove__FP13_tagPartSpaceP13_tagPartSpaceUi")
