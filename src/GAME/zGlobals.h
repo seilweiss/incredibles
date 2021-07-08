@@ -3,10 +3,10 @@
 
 #include "../Core/x/xGlobals.h"
 #include "../Core/x/xSndMgr.h"
+#include "zCutsceneMgr.h"
 
 struct zGrapplePoint;
 struct zAssetPickupTable;
-struct zCutsceneMgr;
 
 struct zGlobalSettings
 {
@@ -24,7 +24,7 @@ struct zCheckPoint
     xVec3 pos;
     float32 rot;
     uint32 initCamID;
-    uint8* jsp_active;
+    bool* jsp_active;
     xSndEffect currentEffect;
 };
 
@@ -67,10 +67,10 @@ enum zGlobalDemoType
 struct zGlobals : xGlobals
 {
     uint32 playerTag;
-    uint8 playerLoaded;
-    uint8 invertJoystick;
-    uint8 invertCameraX;
-    uint8 invertCameraY;
+    bool playerLoaded;
+    bool invertJoystick;
+    bool invertCameraX;
+    bool invertCameraY;
     float32 timeMultiplier;
     zPlayerGlobals player;
     zAssetPickupTable* pickupTable;
@@ -78,8 +78,8 @@ struct zGlobals : xGlobals
     char startDebugMode[32];
     uint32 noMovies;
     uint32 boundUpdateTime;
-    uint8 draw_player_after_fx;
-    uint8 bAllowMasterCheats;
+    bool draw_player_after_fx;
+    bool bAllowMasterCheats;
     zGlobalDemoType demoType;
     zCutsceneMgr* DisabledCutsceneDoneMgr;
 };

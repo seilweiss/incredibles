@@ -13,6 +13,10 @@ struct xJSPHeader;
 struct xClumpCollBSPTriangle;
 struct xModelAssetParam;
 struct mblur_data;
+struct zTurret;
+struct zCombatDamageInfo;
+struct xSweptSphere;
+struct SphereCollisionResults;
 
 namespace zHud
 {
@@ -23,6 +27,10 @@ namespace zHud
 
 struct zPlayer : zEnt
 {
+    bool Get_cutsceneReady() const;
+    void Set_cutsceneReady();
+    void Clear_cutsceneReady();
+
     virtual void Init(xEntAsset* asset);
     virtual void SceneSetup();
     virtual void BoundUpdate(xVec3* pos) = 0;
@@ -38,8 +46,49 @@ struct zPlayer : zEnt
                              xBase* toParamWidget, uint32 toParamWidgetID);
     virtual void Reset();
     virtual bool IsDead() const;
-
-    // TODO add rest of vtable
+    virtual zTurret* GetTurret() const;
+    virtual void Exit();
+    virtual bool Damage(const zCombatDamageInfo& damageInfo);
+    virtual xEnt* GetCarriedEntity();
+    virtual int32* GetHeadBones();
+    virtual void PostRenderCleanup();
+    virtual void RenderCustomUI();
+    virtual bool CanTakeDamage() const;
+    virtual void LoadCheckPoint();
+    virtual void StoreCheckPoint();
+    virtual void SetCamera();
+    virtual void RenderEffects();
+    virtual void SetJump(jump* new_jump);
+    virtual void GiveHealth(int32 hitPoints, bool from_pickup);
+    virtual void ResetHealth();
+    virtual bool NeedsHealth() const;
+    virtual xVec3& GetFloorNormal() const;
+    virtual xVec3* GetFloorPosition() const;
+    virtual const char** GetBoneNames() const;
+    virtual bool IsVisible() const;
+    virtual void RenderTransparent(float32 alpha);
+    virtual bool NeedsIncrediPower() const;
+    virtual void GiveIncrediPower(int16 amount, bool from_pickup);
+    virtual void TakeIncrediPower(float32 points);
+    virtual bool IsSwimming() const;
+    virtual void ParseIni();
+    virtual void AddStates(xAnimTable* table);
+    virtual void AddTransitions(xAnimTable* table);
+    virtual bool FindShortestCollision(xSweptSphere& sws, uint32& collisionFlags, int32 penby);
+    virtual void FindStaticCollisions(const xSphere& sphere);
+    virtual bool CollisionResponse(const xVec3& current_dir,
+                                   const SphereCollisionResults& scene_collide,
+                                   xVec3& response_dpos);
+    virtual void RegisterCollision(const SphereCollisionResults& scene_collide);
+    virtual bool StayOnGround();
+    virtual float32 InitialDepenetrationVelocity();
+    virtual void ReactiveAnimationCollided();
+    virtual xEnt* get_floor_entity();
+    virtual xVec3 get_target();
+    virtual float32 GetScreenFadeTime();
+    virtual float32 StartScreenFadeAt();
+    virtual bool IsInteractioning();
+    virtual void SetEnemyIsNear(bool isit);
 
     xVec3 trigLastFramePos;
     xOneLinerManager* pOneLinerSys;
@@ -48,6 +97,7 @@ struct zPlayer : zEnt
     zHud::FamilyMeter* pFamilyMeter;
     xScene* sc;
     xLightKit* lightKit;
+    xVec3 unk0x104;
     xMat4x3 lastmat;
     int32 brain_id;
     xVec3 lastDeltaPos;
@@ -84,16 +134,19 @@ struct zPlayer : zEnt
     xEntShadow entShadow_embedded;
     xShadowSimpleCache simpShadow_embedded;
     uint32 loaded_assetid;
+    uint32 unk0x334[3];
     xEntDrive drv;
     float32 floorDist[4];
     float32 floorTimer[4];
     xVec3 floorSupp[4];
+    uint32 unk0x44C;
     uint16 parametersSize;
     xModelAssetParam* parameters;
     xEnt* reticleTarget;
     RpAtomic* reticleModel;
     float32 reticleRot;
     float32 reticleAlpha;
+    uint32 unk0x468[2];
     xMat4x3 reticleMat;
     float32 deathTimer;
     uint8 deathStartedAnim;
@@ -108,5 +161,7 @@ struct zPlayer : zEnt
     xModelInstance* lorezModel;
     xModelInstance* hirezModel;
 };
+
+#define ZPLAYER_CUTSCENEREADY 0x8000
 
 #endif

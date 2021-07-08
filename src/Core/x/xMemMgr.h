@@ -28,6 +28,8 @@ extern uint32 gActiveHeap;
 void* xMemAlloc(uint32 heapID, uint32 size, int32 align);
 void* xMemGrowAlloc(uint32 heapID, uint32 size);
 void* xMemPushTemp(uint32 size);
+int32 xMemPushBase();
+int32 xMemPopBase(int32 depth);
 
 void* operator new(size_t, xMemStaticType, uint32);
 

@@ -14,6 +14,8 @@ sRS:
 
 .section .sdata
 
+.balign 8
+
 .global sRSBits
 sRSBits:
 	.incbin "baserom.dol", 0x32CEA8, 0x8
