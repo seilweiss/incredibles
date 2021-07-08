@@ -342,7 +342,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/asm/GAME/zHangable.o\
 	$(OBJ_DIR)/src/GAME/zHangable.o\
 	$(OBJ_DIR)/src/GAME/zHitParameters.o\
-	$(OBJ_DIR)/asm/GAME/zHud.o\
 	$(OBJ_DIR)/src/GAME/zHud.o\
 	$(OBJ_DIR)/asm/GAME/zHudIncredimeter.o\
 	$(OBJ_DIR)/src/GAME/zHudIncredimeter.o\

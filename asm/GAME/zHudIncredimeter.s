@@ -10,6 +10,8 @@ _esc__2_stringBase0_60:
 
 .section .sbss
 
+.balign 8
+
 .global blueMeterUpLeft__4zHud
 blueMeterUpLeft__4zHud:
 	.skip 0x8
@@ -27,9 +29,6 @@ purpleMeterDownRight__4zHud:
 
 .balign 8
 
-.global __vt__Q24zHud11hud_element
-__vt__Q24zHud11hud_element:
-	.incbin "baserom.dol", 0x32C0C0, 0x28
 .global __vt__Q24zHud12Incredimeter
 __vt__Q24zHud12Incredimeter:
 	.incbin "baserom.dol", 0x32C0E8, 0x28

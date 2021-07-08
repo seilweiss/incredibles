@@ -1,57 +1,156 @@
 #include "zHud.h"
 
-#include <types.h>
+#include "zGame.h"
+#include "zGlobals.h"
 
-// func_800D1624
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "EventHandlerFunc__18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi")
+namespace
+{
+    void EventHandlerFunc(xBase* from, xBase* to, uint32 toEvent, const float32* toParam,
+                          xBase* toParamWidget, uint32 toParamWidgetID)
+    {
+        ((zHud::hud_element*)to)
+            ->handle_event(from, toEvent, toParam, toParamWidget, toParamWidgetID);
+    }
+} // namespace
 
-// func_800D165C
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "handle_event__Q24zHud11hud_elementFP5xBaseUiPCfP5xBaseUi")
+namespace zHud
+{
+    void hud_element::handle_event(xBase* from, uint32 toEvent, const float32* toParam,
+                                   xBase* toParamWidget, uint32 toParamWidgetID)
+    {
+    }
 
-// func_800D1660
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "init__Q24zHud11hud_elementFv")
+    void hud_element::init()
+    {
+        eventFunc = EventHandlerFunc;
 
-// func_800D168C
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "startup__Q24zHud10hud_systemFv")
+        xBaseEnable(this);
+    }
 
-// func_800D1690
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "shutdown__Q24zHud10hud_systemFv")
+    void hud_system::startup()
+    {
+    }
 
-// func_800D1694
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "init__Q24zHud10hud_systemFv")
+    void hud_system::shutdown()
+    {
+    }
 
-// func_800D16FC
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "next__Q24zHud11hud_elementFv")
+    void hud_system::init()
+    {
+        last_paused = false;
+        hide_count = 0;
 
-// func_800D1704
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "update__Q24zHud10hud_systemFf")
+        xhud::init();
 
-// func_800D17C8
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "update__Q24zHud11hud_elementFf")
+        for (hud_element* element = elements; element != NULL; element = element->next())
+        {
+            element->init();
+        }
+    }
 
-// func_800D17CC
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "render__Q24zHud10hud_systemFv")
+    hud_element* hud_element::next()
+    {
+        return _next;
+    }
 
-// func_800D1800
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "show__Q24zHud10hud_systemFv")
+    void hud_system::update(float32 dt)
+    {
+        if (!last_paused && zGameIsPaused())
+        {
+            hide();
+            last_paused = true;
+        }
+        else if (last_paused && !zGameIsPaused())
+        {
+            show();
+            last_paused = false;
+        }
 
-// func_800D1880
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "hide__Q24zHud10hud_systemFv")
+        for (hud_element* element = elements; element != NULL; element = element->next())
+        {
+            element->update(dt);
+        }
 
-// func_800D18EC
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "add__Q24zHud10hud_systemFPQ24zHud11hud_element")
+        xhud::update(dt);
+    }
 
-// func_800D1938
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "setup__Q24zHud11hud_elementFv")
+    void hud_element::update(float32 dt)
+    {
+    }
 
-// func_800D193C
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "destroy__Q24zHud10hud_systemFv")
+    void hud_system::render()
+    {
+        if (!globals.cmgr)
+        {
+            xhud::render();
+        }
+    }
 
-// func_800D19A0
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "destroy__Q24zHud11hud_elementFv")
+    void hud_system::show()
+    {
+        hide_count--;
 
-// func_800D19A4
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "instance__Q24zHud10hud_systemFv")
+        if (hide_count < 0)
+        {
+            hide_count = 0;
+        }
 
-// func_800D19E0
-#pragma GLOBAL_ASM("asm/GAME/zHud.s", "__ct__Q24zHud10hud_systemFv")
+        if (hide_count == 0)
+        {
+            for (hud_element* element = elements; element != NULL; element = element->next())
+            {
+                element->show();
+            }
+        }
+    }
+
+    void hud_system::hide()
+    {
+        hide_count++;
+
+        if (hide_count == 1)
+        {
+            for (hud_element* element = elements; element != NULL; element = element->next())
+            {
+                element->hide();
+            }
+        }
+    }
+
+    void hud_system::add(hud_element* element)
+    {
+        element->setup();
+        element->_next = elements;
+        elements = element;
+    }
+
+    void hud_element::setup()
+    {
+    }
+
+    void hud_system::destroy()
+    {
+        for (hud_element* element = elements; element != NULL; element = element->next())
+        {
+            element->destroy();
+        }
+
+        elements = NULL;
+
+        xhud::destroy();
+    }
+
+    void hud_element::destroy()
+    {
+    }
+
+    hud_system& hud_system::instance()
+    {
+        static hud_system _instance;
+        return _instance;
+    }
+
+    hud_system::hud_system()
+    {
+    }
+} // namespace zHud

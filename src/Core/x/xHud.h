@@ -113,6 +113,11 @@ namespace xhud
         motive_node* _motive_temp;
         motive_node** _motive_temp_tail;
     };
+
+    void init();
+    void destroy();
+    void update(float32 dt);
+    void render();
 } // namespace xhud
 
 #endif

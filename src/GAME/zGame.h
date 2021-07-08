@@ -3,4 +3,6 @@
 
 #include <types.h>
 
+bool32 zGameIsPaused();
+
 #endif
