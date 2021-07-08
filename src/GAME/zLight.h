@@ -3,4 +3,8 @@
 
 #include <types.h>
 
+struct xEnv;
+
+void zLightResetAll(xEnv* env);
+
 #endif

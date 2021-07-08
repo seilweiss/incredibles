@@ -143,6 +143,7 @@ enum en_ZBASETYPE
     eBaseTypeCamPreset,
     eBaseTypeSparkEmitter,
     eBaseTypeTimedSplash,
+    eBaseTypeUnk140,
     eBaseTypeCount
 };
 

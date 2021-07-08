@@ -138,6 +138,7 @@ struct xEnt : xBase
 
 typedef void (*xEntVisHandler)(xEnt* ent);
 
+void xEntGrowGlobalBoundingBox(const xVec3* pos);
 void xEntShow(xEnt* ent);
 void xEntHide(xEnt* ent);
 void xEntVisibilityCullOn(xEnt* ent);

@@ -48,7 +48,7 @@ void xEnvSetup(xEnv* env)
     iEnvSetup(env->geom);
     iEnvDefaultLighting(env->geom);
 
-    env->ienv.light_frame[1] = NULL; // this seems sus
+    env->lightKit = NULL;
 
     gCurXEnv = env;
 }

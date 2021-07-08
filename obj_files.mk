@@ -317,7 +317,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zEntSimpleObj.o\
 	$(OBJ_DIR)/asm/GAME/zEntTrigger.o\
 	$(OBJ_DIR)/src/GAME/zEntTrigger.o\
-	$(OBJ_DIR)/asm/GAME/zEnv.o\
 	$(OBJ_DIR)/src/GAME/zEnv.o\
 	$(OBJ_DIR)/asm/GAME/zExplosion.o\
 	$(OBJ_DIR)/src/GAME/zExplosion.o\

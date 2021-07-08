@@ -36,6 +36,13 @@ struct zHitSourceMapEntry
     zHitSource sourcetype;
 };
 
+struct zHitDecalData
+{
+    uint32 texture;
+    float32 x_size;
+    float32 y_size;
+};
+
 extern const zHitSourceMapEntry zHitSourceMap[];
 extern uint32 zHitSourceCCs[];
 extern uint32 zHitTargetCCs[];
