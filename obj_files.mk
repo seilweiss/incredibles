@@ -427,7 +427,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zSaveLoad.o\
 	$(OBJ_DIR)/asm/GAME/zScene.o\
 	$(OBJ_DIR)/src/GAME/zScene.o\
-	$(OBJ_DIR)/asm/GAME/zScript.o\
 	$(OBJ_DIR)/src/GAME/zScript.o\
 	$(OBJ_DIR)/asm/GAME/zshell.o\
 	$(OBJ_DIR)/src/GAME/zshell.o\

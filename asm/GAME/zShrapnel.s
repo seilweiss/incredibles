@@ -59,6 +59,8 @@ _esc__2_stringBase0_95:
 
 .section .sbss
 
+.balign 0x10
+
 .global tmpMat
 tmpMat:
 	.skip 0x40
