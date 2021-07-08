@@ -20,11 +20,9 @@ void zTrainPathJunction::AddJunction(zTrainPathJunction* junction)
 
 void zTrainPathJunction::InitDone()
 {
-    zTrainPathJunction* junct = all_junctions;
-
     init_done = true;
 
-    while (junct)
+    for (zTrainPathJunction* junct = all_junctions; junct != NULL; junct = junct->next)
     {
         if (junct->junct_asset->in_spline)
         {
@@ -40,24 +38,18 @@ void zTrainPathJunction::InitDone()
         {
             junct->out2_spline = (x::NURBS*)xSTFindAsset(junct->junct_asset->out2_spline);
         }
-
-        junct = junct->next;
     }
 }
 
 zTrainPathJunction* zTrainPathJunction::GetPathEnd(x::NURBS* curve, bool along_increasing_u)
 {
-    zTrainPathJunction* junct = all_junctions;
-
-    while (junct)
+    for (zTrainPathJunction* junct = all_junctions; junct != NULL; junct = junct->next)
     {
         if (junct->in_spline == curve &&
             junct->junct_asset->in_is_from_forward == along_increasing_u)
         {
             return junct;
         }
-
-        junct = junct->next;
     }
 
     return NULL;

@@ -27,9 +27,8 @@ xFactory::~xFactory()
 int32 xFactory::RegItemType(XGOFTypeInfo* info)
 {
     int32 rc = 0;
-    XGOFTypeInfo* tptr = info;
 
-    while (tptr->tid)
+    for (XGOFTypeInfo* tptr = info; tptr->tid != 0; tptr++)
     {
         rc = 1;
 
@@ -66,8 +65,6 @@ int32 xFactory::RegItemType(XGOFTypeInfo* info)
         nextrec->destroyer = tptr->destroyer;
 
         XOrdInsert(&infolist, nextrec, OrdComp_infotype);
-
-        tptr++;
     }
 
     return rc;
