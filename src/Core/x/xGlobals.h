@@ -2,6 +2,7 @@
 #define XGLOBALS_H
 
 #include "xMath3.h"
+#include "xPad.h"
 #include "../p2/iFog.h"
 #include "../p2/iTime.h"
 
@@ -14,7 +15,6 @@
 
 struct xCamGroup;
 struct xCamScreen;
-struct _tagxPad;
 struct xUpdateCullMgr;
 struct PS2DemoGlobals;
 
@@ -23,11 +23,11 @@ struct xGlobals
     xCamGroup* cam;
     xCamScreen* screen;
     xVec4 frustplane[12];
-    _tagxPad* pad0;
-    _tagxPad* pad1;
-    _tagxPad* pad2;
-    _tagxPad* pad3;
-    //_tagxPad* pad[4]; removed in ship
+    xPad* pad0;
+    xPad* pad1;
+    xPad* pad2;
+    xPad* pad3;
+    //xPad* pad[4]; removed in ship
     int32 profile;
     char profFunc[128][6];
     xUpdateCullMgr* updateMgr;

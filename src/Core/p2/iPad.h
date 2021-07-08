@@ -3,9 +3,9 @@
 
 #include <types.h>
 
-struct _tagiPad
+typedef struct _tagiPad
 {
     int32 port;
-};
+} iPad;
 
 #endif

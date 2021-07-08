@@ -84,7 +84,7 @@ public:
     int32 flags;
     uint32 owner;
     xCamGroup* group;
-    _tagxPad::analog_data analog;
+    xPad::analog_data analog;
     float32 motion_factor;
     xCamCoordType coord_type;
     xCamOrientType orient_type;
@@ -134,7 +134,7 @@ public:
     float32 fov_default;
     int32 flags;
     xCam* primary;
-    _tagxPad::analog_data analog;
+    xPad::analog_data analog;
     xCam* owned[32];
     int32 size;
     int32 primary_index;

@@ -50,7 +50,7 @@ struct zUIMotionFrame
     float32 rotation;
     float32 offsetU;
     float32 offsetV;
-    xColor_tag color;
+    xColor color;
     uint8 brightness;
 };
 
@@ -73,7 +73,7 @@ public:
         float32 y;
         float32 width;
         float32 height;
-        xColor_tag color;
+        xColor color;
         uint8 brightness;
         uint8 pad[3];
     };

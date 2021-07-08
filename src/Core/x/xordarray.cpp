@@ -4,7 +4,7 @@
 
 #define MAX(a, b) ((a) < (b)) ? (b) : (a)
 
-void XOrdInit(st_XORDEREDARRAY* array, int32 size, bool32 tempAlloc)
+void XOrdInit(XORDEREDARRAY* array, int32 size, bool32 tempAlloc)
 {
     size = MAX(size, 1);
 
@@ -27,7 +27,7 @@ void XOrdInit(st_XORDEREDARRAY* array, int32 size, bool32 tempAlloc)
     }
 }
 
-void XOrdDone(st_XORDEREDARRAY* array, bool32 wasTempAlloc)
+void XOrdDone(XORDEREDARRAY* array, bool32 wasTempAlloc)
 {
     if (array->max && wasTempAlloc)
     {
@@ -40,7 +40,7 @@ void XOrdDone(st_XORDEREDARRAY* array, bool32 wasTempAlloc)
     array->warnlvl = 0;
 }
 
-void XOrdAppend(st_XORDEREDARRAY* array, void* elt)
+void XOrdAppend(XORDEREDARRAY* array, void* elt)
 {
     if (array->cnt < array->max)
     {
@@ -48,7 +48,7 @@ void XOrdAppend(st_XORDEREDARRAY* array, void* elt)
     }
 }
 
-void XOrdInsert(st_XORDEREDARRAY* array, void* elt, XOrdCompareCB compare)
+void XOrdInsert(XORDEREDARRAY* array, void* elt, XOrdCompareCB compare)
 {
     if (array->cnt < array->max)
     {
@@ -71,7 +71,7 @@ void XOrdInsert(st_XORDEREDARRAY* array, void* elt, XOrdCompareCB compare)
     }
 }
 
-int32 XOrdLookup(st_XORDEREDARRAY* array, void* key, XOrdTestCB test)
+int32 XOrdLookup(XORDEREDARRAY* array, void* key, XOrdTestCB test)
 {
     int32 da_idx = -1;
     int32 k0 = 0;
@@ -101,7 +101,7 @@ int32 XOrdLookup(st_XORDEREDARRAY* array, void* key, XOrdTestCB test)
     return da_idx;
 }
 
-void XOrdSort(st_XORDEREDARRAY* array, XOrdCompareCB test)
+void XOrdSort(XORDEREDARRAY* array, XOrdCompareCB test)
 {
     void** list = array->list;
     int32 num = array->cnt;

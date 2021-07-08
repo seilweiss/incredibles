@@ -4,7 +4,7 @@
 #include <types.h>
 #include <rwcore.h>
 
-union xColor_tag
+typedef union xColor_tag
 {
     struct
     {
@@ -12,15 +12,15 @@ union xColor_tag
     };
 
     RwRGBA rgba;
-};
+} xColor;
 
-extern const xColor_tag g_RED;
-extern const xColor_tag g_BLUE;
-extern const xColor_tag g_YELLOW;
-extern const xColor_tag g_BLACK;
-extern const xColor_tag g_WHITE;
-extern const xColor_tag g_CLEAR;
-extern const xColor_tag g_PIMP_GOLD;
-extern const xColor_tag g_CHARTREUSE;
+extern const xColor g_RED;
+extern const xColor g_BLUE;
+extern const xColor g_YELLOW;
+extern const xColor g_BLACK;
+extern const xColor g_WHITE;
+extern const xColor g_CLEAR;
+extern const xColor g_PIMP_GOLD;
+extern const xColor g_CHARTREUSE;
 
 #endif

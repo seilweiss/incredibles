@@ -23,7 +23,7 @@ struct xFXRibbon
     struct curve_node
     {
         float32 time;
-        xColor_tag color;
+        xColor color;
         float32 scale;
     };
 

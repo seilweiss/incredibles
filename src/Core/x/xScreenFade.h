@@ -17,7 +17,7 @@ struct xScreenFade : xBase
 {
     struct asset_type : xDynAsset
     {
-        xColor_tag dest;
+        xColor dest;
         float32 fadeDownTime;
         float32 waitTime;
         float32 fadeUpTime;
@@ -25,8 +25,8 @@ struct xScreenFade : xBase
 
     asset_type* asset;
     eScreenFadeState state;
-    xColor_tag src;
-    xColor_tag current_color;
+    xColor src;
+    xColor current_color;
     float32 time_passed;
     xBase* owner;
 

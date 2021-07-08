@@ -31,7 +31,7 @@ namespace xhud
         union
         {
             float32* value;
-            xColor_tag* value_color;
+            xColor* value_color;
         };
         union
         {
@@ -53,13 +53,13 @@ namespace xhud
         union
         {
             void* context;
-            xColor_tag on_color;
+            xColor on_color;
             float32 begin_alpha;
         };
         union
         {
             float32 period;
-            xColor_tag off_color;
+            xColor off_color;
             float32 end_alpha;
         };
         union
