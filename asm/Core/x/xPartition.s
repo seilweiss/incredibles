@@ -10,68 +10,6 @@ _esc__2_637:
 
 .section .text
 
-.global xPartitionReset__Fv
-xPartitionReset__Fv:
-/* 8004FFBC 0004CDBC  4E 80 00 20 */	blr 
-
-.global PartitionGetFreeLink__Fv
-PartitionGetFreeLink__Fv:
-/* 8004FFC0 0004CDC0  94 21 FF F0 */	stwu r1, -0x10(r1)
-/* 8004FFC4 0004CDC4  7C 08 02 A6 */	mflr r0
-/* 8004FFC8 0004CDC8  38 80 00 08 */	li r4, 8
-/* 8004FFCC 0004CDCC  38 A0 00 00 */	li r5, 0
-/* 8004FFD0 0004CDD0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8004FFD4 0004CDD4  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
-/* 8004FFD8 0004CDD8  4B FF 9B 89 */	bl xMemAlloc__FUiUii
-/* 8004FFDC 0004CDDC  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 8004FFE0 0004CDE0  7C 08 03 A6 */	mtlr r0
-/* 8004FFE4 0004CDE4  38 21 00 10 */	addi r1, r1, 0x10
-/* 8004FFE8 0004CDE8  4E 80 00 20 */	blr 
-
-.global PartitionSpaceReset__FP13_tagPartSpace
-PartitionSpaceReset__FP13_tagPartSpace:
-/* 8004FFEC 0004CDEC  94 21 FF F0 */	stwu r1, -0x10(r1)
-/* 8004FFF0 0004CDF0  7C 08 02 A6 */	mflr r0
-/* 8004FFF4 0004CDF4  38 80 00 00 */	li r4, 0
-/* 8004FFF8 0004CDF8  38 A0 00 0C */	li r5, 0xc
-/* 8004FFFC 0004CDFC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80050000 0004CE00  4B FB 31 01 */	bl memset
-/* 80050004 0004CE04  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 80050008 0004CE08  7C 08 03 A6 */	mtlr r0
-/* 8005000C 0004CE0C  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050010 0004CE10  4E 80 00 20 */	blr 
-
-.global PartitionSpaceInsert__FP13_tagPartSpacePv
-PartitionSpaceInsert__FP13_tagPartSpacePv:
-/* 80050014 0004CE14  94 21 FF F0 */	stwu r1, -0x10(r1)
-/* 80050018 0004CE18  7C 08 02 A6 */	mflr r0
-/* 8005001C 0004CE1C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80050020 0004CE20  BF C1 00 08 */	stmw r30, 8(r1)
-/* 80050024 0004CE24  7C 9E 23 78 */	mr r30, r4
-/* 80050028 0004CE28  3B E3 00 04 */	addi r31, r3, 4
-/* 8005002C 0004CE2C  80 A3 00 00 */	lwz r5, 0(r3)
-/* 80050030 0004CE30  38 05 00 01 */	addi r0, r5, 1
-/* 80050034 0004CE34  90 03 00 00 */	stw r0, 0(r3)
-/* 80050038 0004CE38  48 00 00 08 */	b lbl_80050040
-lbl_8005003C:
-/* 8005003C 0004CE3C  7C 1F 03 78 */	mr r31, r0
-lbl_80050040:
-/* 80050040 0004CE40  80 1F 00 04 */	lwz r0, 4(r31)
-/* 80050044 0004CE44  28 00 00 00 */	cmplwi r0, 0
-/* 80050048 0004CE48  40 82 FF F4 */	bne lbl_8005003C
-/* 8005004C 0004CE4C  4B FF FF 75 */	bl PartitionGetFreeLink__Fv
-/* 80050050 0004CE50  90 7F 00 04 */	stw r3, 4(r31)
-/* 80050054 0004CE54  38 00 00 00 */	li r0, 0
-/* 80050058 0004CE58  80 7F 00 04 */	lwz r3, 4(r31)
-/* 8005005C 0004CE5C  93 C3 00 00 */	stw r30, 0(r3)
-/* 80050060 0004CE60  80 7F 00 04 */	lwz r3, 4(r31)
-/* 80050064 0004CE64  90 03 00 04 */	stw r0, 4(r3)
-/* 80050068 0004CE68  BB C1 00 08 */	lmw r30, 8(r1)
-/* 8005006C 0004CE6C  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 80050070 0004CE70  7C 08 03 A6 */	mtlr r0
-/* 80050074 0004CE74  38 21 00 10 */	addi r1, r1, 0x10
-/* 80050078 0004CE78  4E 80 00 20 */	blr 
-
 .global xPartitionGetTrueIdx__FP13_tagPartitioniii
 xPartitionGetTrueIdx__FP13_tagPartitioniii:
 /* 8005007C 0004CE7C  80 E3 00 24 */	lwz r7, 0x24(r3)
