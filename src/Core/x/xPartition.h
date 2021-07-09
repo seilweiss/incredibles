@@ -3,21 +3,19 @@
 
 #include "xMath3.h"
 
-#include <types.h>
-
-struct _tagPartLink
+typedef struct _tagPartLink
 {
     void* data;
     _tagPartLink* next;
-};
+} PartLink;
 
-struct _tagPartSpace
+typedef struct _tagPartSpace
 {
     int32 total;
-    _tagPartLink head;
-};
+    PartLink head;
+} PartSpace;
 
-struct _tagPartition
+typedef struct _tagPartition
 {
     xVec3 min;
     xVec3 max;
@@ -25,8 +23,8 @@ struct _tagPartition
     int32 total_x;
     int32 total_y;
     int32 total_z;
-    _tagPartSpace* space;
-    _tagPartSpace global;
-};
+    PartSpace* space;
+    PartSpace global;
+} Partition;
 
 #endif

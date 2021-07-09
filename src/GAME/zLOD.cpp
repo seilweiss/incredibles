@@ -1,6 +1,5 @@
 #include "zLOD.h"
 
-#include <types.h>
 #include "../src/Core/x/xEnt.h"
 #include "../src/Core/x/xBound.h"
 #include "zBase.h"
@@ -18,9 +17,10 @@ extern float32 _esc__2_1005_0; // 10.0
 
 // func_800E03F8
 #pragma GLOBAL_ASM("asm/GAME/zLOD.s", "AddToLODList__FP4xEnt")
+void AddToLODList(xEnt* ent);
 
 // func_800E05D8
-static xEnt* AddToLODList(xEnt* ent, xScene* scene, void* v)
+static xEnt* AddToLODList(xEnt* ent, xScene*, void*)
 {
     if (ent->model == NULL)
     {

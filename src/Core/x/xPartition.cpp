@@ -1,7 +1,7 @@
 #include "xPartition.h"
+
 #include "xMemMgr.h"
 
-#include <types.h>
 #include <string.h>
 
 // func_8004FFBC
@@ -10,23 +10,23 @@ void xPartitionReset()
 }
 
 // func_8004FFC0
-_tagPartLink* PartitionGetFreeLink()
+static PartLink* PartitionGetFreeLink()
 {
-    return (_tagPartLink*)xMemAllocSize(sizeof(_tagPartLink));
+    return (PartLink*)xMEMALLOC(sizeof(PartLink));
 }
 
 // func_8004FFEC
-void PartitionSpaceReset(_tagPartSpace* space)
+static void PartitionSpaceReset(PartSpace* space)
 {
-    memset(space, 0, sizeof(_tagPartSpace));
+    memset(space, 0, sizeof(PartSpace));
 }
 
 // func_80050014
-void PartitionSpaceInsert(_tagPartSpace* space, void* data)
+static void PartitionSpaceInsert(PartSpace* space, void* data)
 {
     space->total++;
-    _tagPartLink* head = &space->head;
-    _tagPartLink* tmp = head;
+    PartLink* head = &space->head;
+    PartLink* tmp = head;
     while (tmp->next != NULL)
     {
         tmp = tmp->next;
