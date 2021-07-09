@@ -18,4 +18,6 @@ struct xBound
     xMat4x3* mat;
 };
 
+float32 xsqrt(float32 x);
+
 #endif
