@@ -8,4 +8,6 @@ struct zEnt : xEnt
     xAnimTable* atbl;
 };
 
+void zEntEventAllOfType(uint32 toEvent, uint32 type);
+
 #endif

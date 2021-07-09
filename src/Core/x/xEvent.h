@@ -305,7 +305,7 @@ enum en_xEventTags
     eEventWaitForInput,
     eEventPlayMovie,
     eEventCelebrationAnimPlay,
-    eEventMusicTrackReplace,
+    eEventDispatcher_SetGameState_GameStats,
     eEventUnknownUnused,
     eEventForward,
     eEventReverse,

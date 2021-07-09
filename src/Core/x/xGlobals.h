@@ -16,7 +16,39 @@
 struct xCamGroup;
 struct xCamScreen;
 struct xUpdateCullMgr;
-struct PS2DemoGlobals;
+
+enum sceDemoEndReason
+{
+    SCE_DEMO_ENDREASON_ATTRACT_INTERRUPTED,
+    SCE_DEMO_ENDREASON_ATTRACT_COMPLETE,
+    SCE_DEMO_ENDREASON_PLAYABLE_INACTIVITY_TIMEOUT,
+    SCE_DEMO_ENDREASON_PLAYABLE_GAMEPLAY_TIMEOUT,
+    SCE_DEMO_ENDREASON_PLAYABLE_COMPLETE,
+    SCE_DEMO_ENDREASON_PLAYABLE_QUIT,
+    SCE_DEMO_ENDREASON_NETCONFIG_REQUEST,
+    SCE_DEMO_ENDREASON_NETCONFIG_COMPLETE
+};
+
+struct PS2DemoGlobals
+{
+    uint16 language;
+    uint16 aspect;
+    uint16 play_mode;
+    uint16 inactive_timeout;
+    uint16 gameplay_timeout;
+    sceDemoEndReason exit_code;
+    struct
+    {
+        uint32 FMV_playing : 1;
+        uint32 more_padding : 31;
+    };
+    float32 bail_timer;
+    float32 inactive_timer;
+    float32 gameplay_timer;
+    char subdir[16];
+    uint16 quit;
+    uint16 vmode;
+};
 
 struct xGlobals
 {
@@ -72,5 +104,7 @@ struct xGlobals
 };
 
 extern xGlobals* xglobals;
+
+bool IsPS2Demo();
 
 #endif

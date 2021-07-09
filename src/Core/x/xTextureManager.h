@@ -3,4 +3,15 @@
 
 #include <types.h>
 
+class xTextureManager
+{
+public:
+    static xTextureManager& Get();
+
+    void FreeMemory();
+
+private:
+    // todo
+};
+
 #endif

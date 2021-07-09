@@ -31,4 +31,6 @@ struct xSerial
     int32 Read(float32* buf);
 };
 
+void xSerialWipeMainBuffer();
+
 #endif

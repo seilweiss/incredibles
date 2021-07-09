@@ -3,4 +3,6 @@
 
 #include <types.h>
 
+extern uint32 SCENE_ID_MNU_START;
+
 #endif

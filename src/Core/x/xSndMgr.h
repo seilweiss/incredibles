@@ -12,5 +12,7 @@ enum xSndEffect
 
 void xSndMgrSetEffect(xSndEffect Effect);
 xSndEffect xSndMgrGetEffect();
+void xSndMgrPauseSounds(int16 eSoundCategory, bool bPaused, bool bPauseFutureSoundsOfThisType);
+void xSndMgrStopSounds(int16 eSoundCategory, bool bSkipPaused);
 
 #endif
