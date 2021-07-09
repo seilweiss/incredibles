@@ -532,7 +532,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zNPCSenses.o\
 	$(OBJ_DIR)/asm/GAME/zBomb.o\
 	$(OBJ_DIR)/src/GAME/zBomb.o\
-	$(OBJ_DIR)/asm/GAME/zProgressScript.o\
 	$(OBJ_DIR)/src/GAME/zProgressScript.o\
 	$(OBJ_DIR)/asm/Core/x/xHudText.o\
 	$(OBJ_DIR)/src/Core/x/xHudText.o\

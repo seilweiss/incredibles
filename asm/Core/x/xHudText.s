@@ -23,6 +23,8 @@ __vt__Q24xhud11text_widget:
 
 .section .sdata2
 
+.balign 8
+
 .global _esc__2_905_2
 _esc__2_905_2:
 	.incbin "baserom.dol", 0x332C68, 0x8
