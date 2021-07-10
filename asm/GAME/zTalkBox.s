@@ -87,6 +87,8 @@ lbl_803D90F4:
 
 .section .sdata
 
+.balign 8
+
 .global new_tags_size__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_
 new_tags_size__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32CFB0, 0x4

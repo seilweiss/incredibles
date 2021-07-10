@@ -32,6 +32,8 @@ pDefaultSurface:
 
 .section .sdata2
 
+.balign 8
+
 .global _esc__2_1000_6
 _esc__2_1000_6:
 	.incbin "baserom.dol", 0x331FD0, 0x4

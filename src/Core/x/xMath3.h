@@ -66,5 +66,6 @@ struct xCylinder
 
 void xMat3x3Euler(xMat3x3* m, float32 yaw, float32 pitch, float32 roll);
 void xMat4x3Copy(xMat4x3* o, const xMat4x3* m);
+void xQuatFromMat(xQuat* q, const xMat3x3* m);
 
 #endif

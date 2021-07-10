@@ -429,7 +429,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zshell.o\
 	$(OBJ_DIR)/asm/GAME/zShrapnel.o\
 	$(OBJ_DIR)/src/GAME/zShrapnel.o\
-	$(OBJ_DIR)/asm/GAME/zSlideCamera.o\
 	$(OBJ_DIR)/src/GAME/zSlideCamera.o\
 	$(OBJ_DIR)/asm/GAME/zSurface.o\
 	$(OBJ_DIR)/src/GAME/zSurface.o\

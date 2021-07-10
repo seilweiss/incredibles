@@ -24,6 +24,7 @@ public:
     uint8 unk0xF8[8];
 
     void create();
+    void load_cfg();
     void start();
     void setCurrTgtPos(const xVec3& pos, const xVec3& up);
     void setPrevTgtPos(const xVec3& pos, const xVec3& up);
