@@ -28,7 +28,21 @@ namespace xhud
             SPECIAL_STROBE
         };
 
+        enum LAYER_FLAGS
+        {
+            BLEND = 0x1,
+            ADDITIVE = 0x2,
+            SET_DEST_ALPHA = 0x4,
+            USE_DEST_ALPHA = 0x8,
+            BLEND_MASK = 0xf
+        };
+
+        bool init_layers(uint16 uLayers, uint16 nVertsMax, uint16 nIndicesMax);
+        bool set_layer_value(uint32 whichLayer, float32 fVal);
+        bool set_layer_offset(uint32 whichLayer, float32 fOffsetX, float32 fOffsetY);
         bool set_layer_alpha(uint32 whichLayer, float32 fAlpha);
+        bool set_layer_uvs(uint32 whichLayer, RwTexCoords& upperLeft, RwTexCoords& lowerRight);
+        bool set_layer_type(uint32 whichLayer, RENDERTYPE eType, LAYER_FLAGS uBlendFlags);
 
     private:
         struct LayerInfo

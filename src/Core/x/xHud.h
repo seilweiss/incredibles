@@ -91,7 +91,15 @@ namespace xhud
 
     class widget
     {
-    private:
+    public:
+        enum move_direction
+        {
+            LEFT,
+            RIGHT,
+            TOP,
+            BOTTOM
+        };
+
         struct
         {
             bool visible;
@@ -109,9 +117,32 @@ namespace xhud
             ACT_HIDE,
             MAX_ACT
         } activity;
+
+        void enable();
+        void disable();
+        void show(move_direction dir, bool clearmotives, bool bSkipShowMotive);
+        void hide(move_direction d, bool clearmotives, bool bSkipHideMotive);
+        void clear_motives();
+        bool active();
+
+        virtual void destroy();
+        virtual uint32 type() const;
+        virtual bool is(uint32 typeID) const;
+        virtual void init();
+        virtual void setup();
+        virtual void update(float32 dt);
+        virtual void render();
+        virtual void dispatch(xBase*, uint32 event, const float32*, xBase*, uint32);
+
+    private:
         motive_node* _motive_top;
         motive_node* _motive_temp;
         motive_node** _motive_temp_tail;
+    };
+
+    struct widget_chunk : xBase
+    {
+        widget w;
     };
 
     void init();

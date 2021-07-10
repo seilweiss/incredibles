@@ -545,7 +545,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zReactiveAnimation.o\
 	$(OBJ_DIR)/asm/GAME/zDust.o\
 	$(OBJ_DIR)/src/GAME/zDust.o\
-	$(OBJ_DIR)/asm/GAME/zHudDiskIndicator.o\
 	$(OBJ_DIR)/src/GAME/zHudDiskIndicator.o\
 	$(OBJ_DIR)/src/Core/x/xProjectedTexture.o\
 	$(OBJ_DIR)/asm/GAME/zSpotlight.o\
