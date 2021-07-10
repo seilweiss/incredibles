@@ -641,7 +641,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zFXEnergySystem.o\
 	$(OBJ_DIR)/asm/GAME/zUICustomBattleModeSelectScene.o\
 	$(OBJ_DIR)/src/GAME/zUICustomBattleModeSelectScene.o\
-	$(OBJ_DIR)/asm/GAME/zUICustomSysMessage.o\
 	$(OBJ_DIR)/src/GAME/zUICustomSysMessage.o\
 	$(OBJ_DIR)/asm/GAME/zUICustomBattleModeSelectPlayer.o\
 	$(OBJ_DIR)/src/GAME/zUICustomBattleModeSelectPlayer.o\

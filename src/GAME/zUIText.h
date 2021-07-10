@@ -6,8 +6,11 @@
 
 class zUIText : public zUI
 {
+public:
+    void SetText(const char* t);
+
 private:
-    xColor_tag shadowColor;
+    xColor shadowColor;
     const char* text;
 };
 

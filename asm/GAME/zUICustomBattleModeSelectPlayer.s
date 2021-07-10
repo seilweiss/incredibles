@@ -8,11 +8,15 @@ __vt__38zUICustomBattleModeSelectPlayerManager:
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_154
 _esc__2_stringBase0_154:
 	.incbin "baserom.dol", 0x2E7168, 0xD8
 
 .section .sbss
+
+.balign 8
 
 .global curr_content_playerID
 curr_content_playerID:
@@ -22,6 +26,8 @@ texture_scene_loaded__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_c
 	.skip 0xC
 
 .section .sdata2
+
+.balign 8
 
 .global battle_player_default__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_
 battle_player_default__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_:

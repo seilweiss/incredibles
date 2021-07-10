@@ -85,13 +85,13 @@ public:
     zUIMotionAsset* selectedMotion;
     zUIMotionAsset* unselectedMotion;
     zUICustom* custom;
-    uint8 visible;
-    uint8 focus;
-    uint8 lastFocus;
-    uint8 selected;
-    uint8 brighten;
-    uint8 hdrPass;
-    uint8 locked;
+    bool visible;
+    bool focus;
+    bool lastFocus;
+    bool selected;
+    bool brighten;
+    bool hdrPass;
+    bool locked;
 
     zUI();
 
