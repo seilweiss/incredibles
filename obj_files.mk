@@ -291,7 +291,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/asm/GAME/zCommonPlayer.o\
 	$(OBJ_DIR)/src/GAME/zCommonPlayer.o\
 	$(OBJ_DIR)/src/GAME/zConditional.o\
-	$(OBJ_DIR)/asm/GAME/zConfiguration.o\
 	$(OBJ_DIR)/src/GAME/zConfiguration.o\
 	$(OBJ_DIR)/asm/GAME/zCutsceneMgr.o\
 	$(OBJ_DIR)/src/GAME/zCutsceneMgr.o\

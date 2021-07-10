@@ -8,11 +8,15 @@ cutsceneHackTable:
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_44
 _esc__2_stringBase0_44:
 	.incbin "baserom.dol", 0x2D7C88, 0x2C8
 
 .section .sbss
+
+.balign 8
 
 .global gCutsceneSkipOK
 gCutsceneSkipOK:
@@ -43,6 +47,8 @@ demoDisableHackTable:
 	.incbin "baserom.dol", 0x32BB60, 0x20
 
 .section .sdata2
+
+.balign 8
 
 .global _esc__2_1186_1
 _esc__2_1186_1:
