@@ -8,6 +8,8 @@ static_cam_asset__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_:
 
 .section .sbss
 
+.balign 8
+
 .global activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_
 activated__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_:
 	.skip 0x4
