@@ -589,7 +589,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zTurretSmoke.o\
 	$(OBJ_DIR)/asm/GAME/zUberLaser.o\
 	$(OBJ_DIR)/src/GAME/zUberLaser.o\
-	$(OBJ_DIR)/asm/GAME/zLoadingScreen.o\
 	$(OBJ_DIR)/src/GAME/zLoadingScreen.o\
 	$(OBJ_DIR)/asm/Core/x/xModelBlur.o\
 	$(OBJ_DIR)/src/Core/x/xModelBlur.o\

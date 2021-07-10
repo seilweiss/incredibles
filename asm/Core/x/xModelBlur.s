@@ -8,6 +8,8 @@ camtex__24_esc__2_unnamed_esc__2_xModelBlur_cpp_esc__2_:
 
 .section .sbss
 
+.balign 8
+
 .global activity_buffer__10xModelBlur
 activity_buffer__10xModelBlur:
 	.skip 0x4

@@ -64,4 +64,6 @@ struct xtextbox
     };
 };
 
+void xFontPrintTopText();
+
 #endif

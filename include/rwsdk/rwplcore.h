@@ -476,6 +476,29 @@ struct RwGlobals
 
 #define RWSRCGLOBAL(variable) (((RwGlobals*)RwEngineInstance)->variable)
 
+enum RwMemoryHintFlag
+{
+    rwMEMHINTFLAG_RESIZABLE = 0x01000000,
+    rwMEMHINTFLAG_MASK = 0xFF000000,
+    rwMEMHINTFLAGFORCEENUMSIZEINT = RWFORCEENUMSIZEINT
+};
+
+enum RwMemoryHintDuration
+{
+    rwMEMHINTDUR_NADURATION = 0x00000000,
+    rwMEMHINTDUR_FUNCTION = 0x00010000,
+    rwMEMHINTDUR_FRAME = 0x00020000,
+    rwMEMHINTDUR_EVENT = 0x00030000,
+    rwMEMHINTDUR_GLOBAL = 0x00040000,
+    rwMEMHINTDUR_MASK = 0x00FF0000,
+    rwMEMHINTDURFORCEENUMSIZEINT = RWFORCEENUMSIZEINT
+};
+
+#define RwMalloc(_s, _h) ((RWSRCGLOBAL(memoryFuncs).rwmalloc)((_s), (_h)))
+#define RwFree(_p) ((RWSRCGLOBAL(memoryFuncs).rwfree)((_p)))
+#define RwCalloc(_n, _s, _h) ((RWSRCGLOBAL(memoryFuncs).rwcalloc)((_n), (_s), (_h)))
+#define RwRealloc(_p, _s, _h) ((RWSRCGLOBAL(memoryFuncs).rwrealloc)((_p), (_s), (_h)))
+
 #ifdef __cplusplus
 extern "C" {
 #endif

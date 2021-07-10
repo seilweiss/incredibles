@@ -96,6 +96,12 @@ public:
     zUI();
 
     zUIAsset* GetAsset() const;
+    void HandleEvent(xBase* from, uint32 toEvent, const float32* toParam, xBase* toParamWidget,
+                     uint32 toParamWidgetID);
+    void Signal(uint32 event);
+    void Update(float32 dt);
+    void Render() const;
+    void Exit();
 
     virtual uint32 GetSortKey() const = 0;
     virtual bool Blends() const;
@@ -125,6 +131,12 @@ public:
     uint8 motionLoop;
 };
 
+typedef void* (*zUICustomStaticAllocator)(uint32 size, void* user);
+typedef void (*zUICustomSignalHandler)(zUI* from, uint32 dest, uint32 event, const float32* param,
+                                       xBase* paramWidget, uint32 paramWidgetID, void* user);
+
 void zUI_Init(zUI* text, zUIAsset* asset);
+void zUISetCustomStaticAllocator(zUICustomStaticAllocator allocator, void* user);
+void zUISetCustomSignalHandler(zUICustomSignalHandler handler, void* user);
 
 #endif

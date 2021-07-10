@@ -1,30 +1,161 @@
 #include "zLoadingScreen.h"
 
-#include <types.h>
+#include "zUIMgr.h"
+#include "zUIImage.h"
+#include "zUIBox.h"
+#include "zUIText.h"
+#include "zUIController.h"
+#include "../Core/x/xGroup.h"
+#include "../Core/x/xstransvc.h"
+#include "../Core/x/xEvent.h"
+#include "../Core/x/xFont.h"
 
-// func_801D4C90
-#pragma GLOBAL_ASM("asm/GAME/zLoadingScreen.s", "CustomStaticAllocator__28_esc__2_unnamed_esc__2_zLoadingScreen_cpp_esc__2_FUiPv")
+#include <string.h>
 
-// func_801D4CBC
-#pragma GLOBAL_ASM("asm/GAME/zLoadingScreen.s", "CustomSignalHandler__28_esc__2_unnamed_esc__2_zLoadingScreen_cpp_esc__2_FP3zUIUiUiPCfP5xBaseUiPv")
+static bool show_stats = false;
 
-// func_801D4D14
-#pragma GLOBAL_ASM("asm/GAME/zLoadingScreen.s", "UnSetShowStats__14zLoadingScreenFv")
+namespace
+{
+    void* CustomStaticAllocator(uint32 size, void* user)
+    {
+        return ((zLoadingScreen*)user)->CustomAllocate(size);
+    }
 
-// func_801D4D20
-#pragma GLOBAL_ASM("asm/GAME/zLoadingScreen.s", "Init__14zLoadingScreenFv")
+    void CustomSignalHandler(zUI* from, uint32 dest, uint32 event, const float32* param,
+                             xBase* paramWidget, uint32 paramWidgetID, void* user)
+    {
+        ((zLoadingScreen*)user)->CustomSignal(from, dest, event, param, paramWidget, paramWidgetID);
+    }
+} // namespace
 
-// func_801D4FB4
-#pragma GLOBAL_ASM("asm/GAME/zLoadingScreen.s", "Update__14zLoadingScreenFf")
+void zLoadingScreen::UnSetShowStats()
+{
+    show_stats = false;
+}
 
-// func_801D5024
-#pragma GLOBAL_ASM("asm/GAME/zLoadingScreen.s", "Render__14zLoadingScreenFv")
+void zLoadingScreen::Init()
+{
+    allocationCount = 0;
 
-// func_801D5088
-#pragma GLOBAL_ASM("asm/GAME/zLoadingScreen.s", "Exit__14zLoadingScreenFv")
+    zUISetCustomStaticAllocator(CustomStaticAllocator, this);
 
-// func_801D5128
-#pragma GLOBAL_ASM("asm/GAME/zLoadingScreen.s", "CustomAllocate__14zLoadingScreenFUi")
+    controlCount = 0;
 
-// func_801D5194
-#pragma GLOBAL_ASM("asm/GAME/zLoadingScreen.s", "CustomSignal__14zLoadingScreenFP3zUIUiUiPCfP5xBaseUi")
+    xGroupAsset* group = (xGroupAsset*)xSTFindAsset(0x7F67BBC4);
+
+    show_stats = true;
+
+    for (int16 i = 0; i < group->itemCount; i++)
+    {
+        uint32 size;
+        xDynAsset* asset = (xDynAsset*)xSTFindAsset(((uint32*)(group + 1))[i], &size);
+
+        if (asset)
+        {
+            void* test;
+            zUI* element = NULL;
+
+            switch (asset->type)
+            {
+            case 0x337BCB31:
+                test = RwMalloc(sizeof(zUIImage), 0);
+                element = (zUI*)test;
+                memset(element, 0, sizeof(zUIImage));
+                zUIImage_Init(*element, *asset, size);
+                break;
+            case 0x8C2D107D:
+                element = (zUI*)RwMalloc(sizeof(zUIBox), 0);
+                memset(element, 0, sizeof(zUIBox));
+                zUIBox_Init(*element, *asset, size);
+                break;
+            case 0xBD7646D7:
+                element = (zUI*)RwMalloc(sizeof(zUIText), 0);
+                memset(element, 0, sizeof(zUIText));
+                zUIText_Init(*element, *asset, size);
+                break;
+            case 0xE8753BAE:
+                element = (zUI*)RwMalloc(sizeof(zUIController), 0);
+                memset(element, 0, sizeof(zUIController));
+                zUIController_Init(*element, *asset, size);
+                break;
+            }
+
+            if (element)
+            {
+                controls[controlCount++] = element;
+                allocations[allocationCount++] = element;
+            }
+        }
+    }
+
+    zUISetCustomStaticAllocator(NULL, NULL);
+    zUISetCustomSignalHandler(CustomSignalHandler, this);
+    zUIMgrSortList(controls, controlCount);
+
+    for (int32 i = 0; i < controlCount; i++)
+    {
+        controls[i]->HandleEvent(controls[i], eEventVisible, NULL, NULL, 0);
+        controls[i]->Signal(eEventVisible);
+    }
+}
+
+void zLoadingScreen::Update(float32 dt)
+{
+    for (int32 i = 0; i < controlCount; i++)
+    {
+        if (controls[i]->visible)
+        {
+            controls[i]->Update(dt);
+        }
+    }
+}
+
+void zLoadingScreen::Render()
+{
+    for (int32 i = controlCount - 1; i >= 0; i--)
+    {
+        if (controls[i]->visible)
+        {
+            controls[i]->Render();
+        }
+    }
+
+    xFontPrintTopText();
+}
+
+void zLoadingScreen::Exit()
+{
+    for (int32 j = 0; j < controlCount; j++)
+    {
+        controls[j]->Exit();
+    }
+
+    zUISetCustomSignalHandler(NULL, NULL);
+
+    for (int32 i = 0; i < allocationCount; i++)
+    {
+        RwFree(allocations[i]);
+    }
+
+    allocationCount = 0;
+}
+
+void* zLoadingScreen::CustomAllocate(uint32 size)
+{
+    allocations[allocationCount] = RwMalloc(size, 0);
+
+    return allocations[allocationCount++];
+}
+
+void zLoadingScreen::CustomSignal(zUI* from, uint32 dest, uint32 event, const float32* param,
+                                  xBase* paramWidget, uint32 paramWidgetID)
+{
+    for (int32 i = 0; i < controlCount; i++)
+    {
+        if (dest == controls[i]->GetAsset()->id)
+        {
+            controls[i]->HandleEvent(from, event, param, paramWidget, paramWidgetID);
+            break;
+        }
+    }
+}
