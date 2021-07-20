@@ -144,5 +144,6 @@ void xEntHide(xEnt* ent);
 void xEntVisibilityCullOn(xEnt* ent);
 void xEntVisibilityCullOff(xEnt* ent);
 xMat4x3* xEntGetFrame(const xEnt* ent);
+xVec3* xEntGetPos(const xEnt* ent);
 
 #endif

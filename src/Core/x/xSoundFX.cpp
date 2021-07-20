@@ -1,45 +1,229 @@
 #include "xSoundFX.h"
 
-#include <types.h>
+#include "xGlobals.h"
+#include "xSndMgr.h"
+#include "xEvent.h"
+#include "xRand.h"
 
-// func_80067B78
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXWillSendDone__FP8xSoundFX")
+static void xSoundFXPlay(xSoundFX* sfx);
+static void xSoundFXStop(xSoundFX* sfx);
 
-// func_80067BB8
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXInit__FPvPv")
+static bool xSoundFXWillSendDone(xSoundFX* sfx)
+{
+    if (sfx->linkCount)
+    {
+        xLinkAsset* l = sfx->link;
 
-// func_80067BD8
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXInit__FP8xSoundFXP13xSoundFXAsset")
+        for (int32 i = 0; i < sfx->linkCount; i++, l++)
+        {
+            if (l->srcEvent == eEventDone)
+            {
+                return true;
+            }
+        }
+    }
 
-// func_80067CA8
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXSetSoundFXPlaying__FP13xSoundFXAssetb")
+    return false;
+}
 
-// func_80067CD0
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXSetSendsDone__FP13xSoundFXAssetb")
+void xSoundFXInit(void* t, void* asset)
+{
+    xSoundFXInit((xSoundFX*)t, (xSoundFXAsset*)asset);
+}
 
-// func_80067CF8
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXSetHandleSet__FP13xSoundFXAssetb")
+void xSoundFXInit(xSoundFX* t, xSoundFXAsset* asset)
+{
+    xBaseInit(t, asset);
 
-// func_80067D20
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXIsHandleSet__FP13xSoundFXAsset")
+    t->eventFunc = xSoundFXEventCB;
+    t->asset = asset;
 
-// func_80067D2C
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXReset__FP8xSoundFX")
+    if (!xSoundFXIsHandleSet(asset))
+    {
+        t->asset->soundAsset = xSndMgrGetSoundGroup(t->asset->soundAssetID);
 
-// func_80067D50
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXEventCB__FP5xBaseP5xBaseUiPCfP5xBaseUi")
+        if (asset->soundAsset != ISNDGROUPHANDLE_INVALID)
+        {
+            xSoundFXSetHandleSet(asset, true);
+        }
+    }
 
-// func_80067E70
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSndMgrIsEnvironmentalStream__F15iSndGroupHandle")
+    if (t->linkCount)
+    {
+        t->link = (xLinkAsset*)(t->asset + 1);
+    }
+    else
+    {
+        t->link = NULL;
+    }
 
-// func_80067EA8
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXPlay__FP8xSoundFX")
+    if (xSoundFXWillSendDone(t))
+    {
+        xSoundFXSetSendsDone(asset, true);
+    }
 
-// func_80067F60
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXIsAttached__FP13xSoundFXAsset")
+    t->sndHandle = ISNDHANDLE_INVALID;
 
-// func_80067F6C
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXStop__FP8xSoundFX")
+    xSoundFXSetSoundFXPlaying(t->asset, false);
+}
 
-// func_80067F90
-#pragma GLOBAL_ASM("asm/Core/x/xSoundFX.s", "xSoundFXGet__FUi")
+void xSoundFXSetSoundFXPlaying(xSoundFXAsset* asset, bool playing)
+{
+    if (playing)
+    {
+        asset->uFlags |= 0x2;
+    }
+    else
+    {
+        asset->uFlags &= ~0x2;
+    }
+}
+
+void xSoundFXSetSendsDone(xSoundFXAsset* asset, bool sendsDone)
+{
+    if (sendsDone)
+    {
+        asset->uFlags |= 0x1;
+    }
+    else
+    {
+        asset->uFlags &= ~0x1;
+    }
+}
+
+void xSoundFXSetHandleSet(xSoundFXAsset* asset, bool handleSet)
+{
+    if (handleSet)
+    {
+        asset->uFlags |= 0x8;
+    }
+    else
+    {
+        asset->uFlags &= ~0x8;
+    }
+}
+
+bool xSoundFXIsHandleSet(xSoundFXAsset* asset)
+{
+    return asset->uFlags & 0x8;
+}
+
+void xSoundFXReset(xSoundFX* sfx)
+{
+    xBaseReset(sfx, sfx->asset);
+}
+
+void xSoundFXEventCB(xBase*, xBase* to, uint32 toEvent, const float32* toParam, xBase*, uint32)
+{
+    xSoundFX* t = (xSoundFX*)to;
+
+    switch (toEvent)
+    {
+    case eEventReset:
+        xSoundFXReset(t);
+        break;
+    case eEventPlay:
+        xSoundFXSetSoundFXPlaying(t->asset, true);
+
+        if (!xSndMgrIsEnvironmentalStream(t->asset->soundAsset))
+        {
+            xSoundFXPlay(t);
+        }
+
+        break;
+    case eEventPlayMaybe:
+        if (xrand_RandomChoice(100) >= toParam[0])
+        {
+            xSoundFXSetSoundFXPlaying(t->asset, true);
+
+            if (!xSndMgrIsEnvironmentalStream(t->asset->soundAsset))
+            {
+                xSoundFXPlay(t);
+            }
+        }
+
+        break;
+    case eEventStop:
+        if (t->sndHandle != ISNDHANDLE_INVALID)
+        {
+            xSoundFXSetSoundFXPlaying(t->asset, false);
+
+            if (!xSndMgrIsEnvironmentalStream(t->asset->soundAsset))
+            {
+                xSoundFXStop(t);
+            }
+        }
+
+        break;
+    case eEventPause:
+        while (true)
+        {
+        }
+
+        break;
+    }
+}
+
+bool xSndMgrIsEnvironmentalStream(iSndGroupHandle hSound)
+{
+    if (hSound == ISNDGROUPHANDLE_INVALID)
+    {
+        return false;
+    }
+
+    xSndGroup* pSndGroup = xSndMgr_GetGroup(hSound);
+
+    return pSndGroup->header.uFlags & 0x2;
+}
+
+static void xSoundFXPlay(xSoundFX* sfx)
+{
+    if (sfx->sndHandle != ISNDHANDLE_INVALID)
+    {
+        xSndMgrStop(sfx->sndHandle);
+    }
+
+    if (xSoundFXIsAttached(sfx->asset))
+    {
+        xEnt* attachEnt = (xEnt*)zSceneFindObject(sfx->asset->attachID);
+
+        if (attachEnt)
+        {
+            sfx->sndHandle =
+                xSndMgrPlay(sfx->asset->soundAsset, 0x800, xEntGetPos(attachEnt), NULL, attachEnt);
+        }
+    }
+    else
+    {
+        sfx->sndHandle = xSndMgrPlay(sfx->asset->soundAsset, 0, &sfx->asset->pos);
+    }
+}
+
+bool xSoundFXIsAttached(xSoundFXAsset* asset)
+{
+    return asset->uFlags & 0x4;
+}
+
+static void xSoundFXStop(xSoundFX* sfx)
+{
+    xSndMgrStop(sfx->sndHandle);
+}
+
+xSoundFX* xSoundFXGet(uint32 soundfxID)
+{
+    zScene* s = xglobals->sceneCur;
+    int32 count = s->baseCount[eBaseTypeSoundFX];
+    xSoundFX* sfx = NULL;
+
+    for (int32 i = 0; i < count; i++)
+    {
+        sfx = &((xSoundFX*)s->baseList[eBaseTypeSoundFX])[i];
+
+        if (sfx->id == soundfxID)
+        {
+            break;
+        }
+    }
+
+    return sfx;
+}

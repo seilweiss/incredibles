@@ -2,6 +2,8 @@
 
 .section .data
 
+.balign 8
+
 .global g_xstdata
 g_xstdata:
 	.incbin "baserom.dol", 0x2FED28, 0x1148

@@ -150,7 +150,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xSkyDome.o\
 	$(OBJ_DIR)/asm/Core/x/xSndMgr.o\
 	$(OBJ_DIR)/src/Core/x/xSndMgr.o\
-	$(OBJ_DIR)/asm/Core/x/xSoundFX.o\
 	$(OBJ_DIR)/src/Core/x/xSoundFX.o\
 	$(OBJ_DIR)/asm/Core/x/xSpacePartitionTree.o\
 	$(OBJ_DIR)/src/Core/x/xSpacePartitionTree.o\
