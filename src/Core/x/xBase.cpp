@@ -11,11 +11,6 @@ void xBaseInit(xBase* xb, const xBaseAsset* asset)
     xBaseValidate(xb);
 }
 
-void xBaseValidate(xBase* xb)
-{
-    xb->baseFlags |= XBASE_VALID;
-}
-
 void xBaseSetup(xBase*)
 {
     return;
@@ -33,11 +28,6 @@ void xBaseSave(xBase* ent, xSerial* s)
     }
 }
 
-bool xBaseIsEnabled(const xBase* xb)
-{
-    return xb->baseFlags & XBASE_ENABLED;
-}
-
 void xBaseLoad(xBase* ent, xSerial* s)
 {
     int32 b = 0;
@@ -52,16 +42,6 @@ void xBaseLoad(xBase* ent, xSerial* s)
     {
         xBaseDisable(ent);
     }
-}
-
-void xBaseDisable(xBase* xb)
-{
-    xb->baseFlags &= ~XBASE_ENABLED;
-}
-
-void xBaseEnable(xBase* xb)
-{
-    xb->baseFlags |= XBASE_ENABLED;
 }
 
 void xBaseReset(xBase* xb, xBaseAsset* asset)

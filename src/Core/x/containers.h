@@ -32,8 +32,22 @@ protected:
     node_base* stack;
     void* buffer;
 
-    node_base* alloc();
-    void free(node_base* it);
+    node_base* alloc()
+    {
+        node_base* node = stack;
+
+        stack = stack->next;
+
+        return node;
+    }
+
+    void free(node_base* it)
+    {
+        it->next = stack;
+
+        stack = it;
+    }
+
     void link(node_base* a, node_base* b);
     void unlink(node_base* a, node_base* b);
 };

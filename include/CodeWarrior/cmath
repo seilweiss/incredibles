@@ -6,9 +6,21 @@
 namespace std
 {
     float floorf(float);
-    float sinf(float x);
-    float cosf(float x);
-    float tanf(float x);
+
+    inline float sinf(float x)
+    {
+        return sin(x);
+    }
+
+    inline float cosf(float x)
+    {
+        return cos(x);
+    }
+
+    inline float tanf(float x)
+    {
+        return tan(x);
+    }
 } // namespace std
 
 #endif

@@ -843,13 +843,21 @@ struct xBase;
 void zEntEvent(char* to, uint32 toEvent);
 void zEntEvent(uint32 toID, uint32 toEvent);
 void zEntEvent(xBase* to, uint32 toEvent);
-void zEntEvent(xBase* to, uint32 toEvent, const float32* toParam);
 void zEntEvent(xBase* to, uint32 toEvent, const float32* toParam, xBase* toParamWidget,
                uint32 toParamWidgetID);
-void zEntEvent(xBase* from, xBase* to, uint32 toEvent);
 void zEntEvent(xBase* from, xBase* to, uint32 toEvent, const float32* toParam, xBase* toParamWidget,
                uint32 toParamWidgetID);
 void zEntEvent(xBase* from, uint32, xBase* to, uint32 toEvent, const float32* toParam,
                xBase* toParamWidget, uint32 toParamWidgetID, ForceEvent forceEvent);
+
+inline void zEntEvent(xBase* to, uint32 toEvent, const float32* toParam)
+{
+    zEntEvent(NULL, 0, to, toEvent, toParam, NULL, 0, FE_NO);
+}
+
+inline void zEntEvent(xBase* from, xBase* to, uint32 toEvent)
+{
+    zEntEvent(from, 0, to, toEvent, NULL, NULL, 0, FE_NO);
+}
 
 #endif

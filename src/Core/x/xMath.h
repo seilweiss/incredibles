@@ -21,6 +21,24 @@
 #define RAD2DEG(x) (float32)((ONEEIGHTY) * (x) / (PI))
 
 float32 xsqrt(float32 x);
-void xsqrtfast(float32& out, float32 x);
+
+inline void xsqrtfast(float32& out, register float32 x)
+{
+    if (x <= 0.0f)
+    {
+        out = 0.0f;
+    }
+    else
+    {
+        // Have to use inline asm here, for some reason using
+        // __frsqrte and __fres generates an extra frsp instruction
+        asm {
+            frsqrte x, x;
+            fres x, x;
+        }
+    }
+
+    out = x;
+}
 
 #endif

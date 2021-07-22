@@ -15,7 +15,11 @@ public:
     void ShowSystemMessage(xBaseEventCB cb, uint32, uint32 _toCBEvent, const float32* _toCBParams,
                            xBase* _toCBto, xBase* _toCBParamWidget, uint32 _toCBParamWidgetID,
                            const char* sys_message);
-    bool IsSystem(zUI* ptr);
+
+    bool IsSystem(zUI* ptr)
+    {
+        return (ptr == itemOk || ptr == itemYes || ptr == itemNo || ptr == itemMsg);
+    }
 
 private:
     xBaseEventCB cb_function;

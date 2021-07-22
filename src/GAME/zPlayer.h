@@ -25,10 +25,17 @@ namespace zHud
     struct FamilyMeter;
 } // namespace zHud
 
+#define ZPLAYER_CUTSCENEREADY 0x8000
+
 struct zPlayer : zEnt
 {
     bool Get_cutsceneReady() const;
-    void Set_cutsceneReady();
+
+    void Set_cutsceneReady()
+    {
+        zPlayerFlags |= ZPLAYER_CUTSCENEREADY;
+    }
+
     void Clear_cutsceneReady();
 
     virtual void Init(xEntAsset* asset);
@@ -161,7 +168,5 @@ struct zPlayer : zEnt
     xModelInstance* lorezModel;
     xModelInstance* hirezModel;
 };
-
-#define ZPLAYER_CUTSCENEREADY 0x8000
 
 #endif

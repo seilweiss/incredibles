@@ -44,24 +44,16 @@ float32 xVec3Normalize(xVec3* o, const xVec3* v)
     return len;
 }
 
-void xsqrtfast(float32& out, register float32 x)
+#ifndef NO_HACKS
+#pragma push
+#pragma force_active off
+static void hack_unused_function()
 {
-    if (x <= 0.0f)
-    {
-        out = 0.0f;
-    }
-    else
-    {
-        // Have to use inline asm here, for some reason using
-        // __frsqrte and __fres generates an extra frsp instruction
-        asm {
-            frsqrte x, x;
-            fres x, x;
-        }
-    }
-
-    out = x;
+    float32 f;
+    xsqrtfast(f, 0.0f);
 }
+#pragma pop
+#endif
 
 asm void xVec3Copy(register xVec3* o, register const xVec3* v)
 {

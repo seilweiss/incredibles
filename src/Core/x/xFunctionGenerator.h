@@ -31,7 +31,10 @@ struct xFunctionGenerator : xBase
 
     xFunctionGenerator(const xFunctionGeneratorAsset* asset);
 
-    bool IsEnabled() const;
+    bool IsEnabled() const
+    {
+        return (baseFlags & XBASE_ENABLED) && started;
+    }
 
     void Update(float32 dt);
     void HandleEvent(xBase*, uint32 toEvent, const float32* toParam, xBase*, uint32);

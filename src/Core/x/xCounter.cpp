@@ -10,7 +10,6 @@ namespace
 {
     void add_tweaks(_xCounter&)
     {
-        return;
     }
 } // namespace
 
@@ -174,12 +173,13 @@ void xCounterEventCB(xBase*, xBase* to, uint32 toEvent, const float32* toParam,
     }
 }
 
-void zEntEvent(xBase* from, xBase* to, uint32 toEvent)
+#ifndef NO_HACKS
+#pragma push
+#pragma force_active off
+static void hack_unused_function()
 {
-    zEntEvent(from, 0, to, toEvent, NULL, NULL, 0, FE_NO);
+    xtextbox::jot j;
+    j.reset_flags();
 }
-
-void xtextbox::jot::reset_flags()
-{
-    *(uint16*)&flag = 0;
-}
+#pragma pop
+#endif

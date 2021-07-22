@@ -15,11 +15,6 @@ namespace
 
 namespace zHud
 {
-    void hud_element::handle_event(xBase* from, uint32 toEvent, const float32* toParam,
-                                   xBase* toParamWidget, uint32 toParamWidgetID)
-    {
-    }
-
     void hud_element::init()
     {
         eventFunc = EventHandlerFunc;
@@ -48,11 +43,6 @@ namespace zHud
         }
     }
 
-    hud_element* hud_element::next()
-    {
-        return _next;
-    }
-
     void hud_system::update(float32 dt)
     {
         if (!last_paused && zGameIsPaused())
@@ -72,10 +62,6 @@ namespace zHud
         }
 
         xhud::update(dt);
-    }
-
-    void hud_element::update(float32 dt)
-    {
     }
 
     void hud_system::render()
@@ -124,10 +110,6 @@ namespace zHud
         elements = element;
     }
 
-    void hud_element::setup()
-    {
-    }
-
     void hud_system::destroy()
     {
         for (hud_element* element = elements; element != NULL; element = element->next())
@@ -140,17 +122,9 @@ namespace zHud
         xhud::destroy();
     }
 
-    void hud_element::destroy()
-    {
-    }
-
     hud_system& hud_system::instance()
     {
         static hud_system _instance;
         return _instance;
-    }
-
-    hud_system::hud_system()
-    {
     }
 } // namespace zHud

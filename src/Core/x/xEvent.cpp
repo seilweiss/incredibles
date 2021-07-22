@@ -26,10 +26,15 @@ void zEntEvent(uint32 toID, uint32 toEvent)
     }
 }
 
-void zEntEvent(xBase* to, uint32 toEvent, const float32* toParam)
+#ifndef NO_HACKS
+#pragma push
+#pragma force_active off
+static void hack_unused_function()
 {
-    zEntEvent(NULL, 0, to, toEvent, toParam, NULL, 0, FE_NO);
+    zEntEvent((xBase*)NULL, 0, (const float32*)NULL);
 }
+#pragma pop
+#endif
 
 void zEntEvent(xBase* from, uint32, xBase* to, uint32 toEvent, const float32* toParam,
                xBase* toParamWidget, uint32 toParamWidgetID, ForceEvent forceEvent)

@@ -67,47 +67,6 @@ void xSoundFXInit(xSoundFX* t, xSoundFXAsset* asset)
     xSoundFXSetSoundFXPlaying(t->asset, false);
 }
 
-void xSoundFXSetSoundFXPlaying(xSoundFXAsset* asset, bool playing)
-{
-    if (playing)
-    {
-        asset->uFlags |= 0x2;
-    }
-    else
-    {
-        asset->uFlags &= ~0x2;
-    }
-}
-
-void xSoundFXSetSendsDone(xSoundFXAsset* asset, bool sendsDone)
-{
-    if (sendsDone)
-    {
-        asset->uFlags |= 0x1;
-    }
-    else
-    {
-        asset->uFlags &= ~0x1;
-    }
-}
-
-void xSoundFXSetHandleSet(xSoundFXAsset* asset, bool handleSet)
-{
-    if (handleSet)
-    {
-        asset->uFlags |= 0x8;
-    }
-    else
-    {
-        asset->uFlags &= ~0x8;
-    }
-}
-
-bool xSoundFXIsHandleSet(xSoundFXAsset* asset)
-{
-    return asset->uFlags & 0x8;
-}
-
 void xSoundFXReset(xSoundFX* sfx)
 {
     xBaseReset(sfx, sfx->asset);
@@ -164,18 +123,6 @@ void xSoundFXEventCB(xBase*, xBase* to, uint32 toEvent, const float32* toParam, 
     }
 }
 
-bool xSndMgrIsEnvironmentalStream(iSndGroupHandle hSound)
-{
-    if (hSound == ISNDGROUPHANDLE_INVALID)
-    {
-        return false;
-    }
-
-    xSndGroup* pSndGroup = xSndMgr_GetGroup(hSound);
-
-    return pSndGroup->header.uFlags & 0x2;
-}
-
 static void xSoundFXPlay(xSoundFX* sfx)
 {
     if (sfx->sndHandle != ISNDHANDLE_INVALID)
@@ -197,11 +144,6 @@ static void xSoundFXPlay(xSoundFX* sfx)
     {
         sfx->sndHandle = xSndMgrPlay(sfx->asset->soundAsset, 0, &sfx->asset->pos);
     }
-}
-
-bool xSoundFXIsAttached(xSoundFXAsset* asset)
-{
-    return asset->uFlags & 0x4;
 }
 
 static void xSoundFXStop(xSoundFX* sfx)

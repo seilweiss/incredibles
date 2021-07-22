@@ -92,19 +92,3 @@ pool_list_base::node_base* pool_list_base::erase(node_base* it)
 
     return next;
 }
-
-pool_list_base::node_base* pool_list_base::alloc()
-{
-    node_base* node = stack;
-
-    stack = stack->next;
-
-    return node;
-}
-
-void pool_list_base::free(node_base* it)
-{
-    it->next = stack;
-
-    stack = it;
-}

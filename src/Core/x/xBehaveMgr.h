@@ -102,7 +102,9 @@ struct xBehaveMgr : RyzMemData
     xPsyche* psypool;
     XORDEREDARRAY psylist;
 
-    ~xBehaveMgr();
+    ~xBehaveMgr()
+    {
+    }
 };
 
 void xBehaveMgr_Shutdown();

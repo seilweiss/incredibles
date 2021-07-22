@@ -200,8 +200,3 @@ void xFunctionGenerator_Init(xBase& data, xDynAsset& asset, ulong32)
 {
     new (&data) xFunctionGenerator((xFunctionGeneratorAsset*)&asset);
 }
-
-bool xFunctionGenerator::IsEnabled() const
-{
-    return (baseFlags & XBASE_ENABLED) && started;
-}

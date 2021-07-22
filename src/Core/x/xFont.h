@@ -60,7 +60,10 @@ struct xtextbox
         callback* cb;
         tag_type* tag;
 
-        void reset_flags();
+        void reset_flags()
+        {
+            *(uint16*)&flag = 0;
+        }
     };
 };
 

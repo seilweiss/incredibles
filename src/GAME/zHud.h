@@ -14,16 +14,33 @@ namespace zHud
     public:
         hud_element();
 
-        hud_element* next();
+        hud_element* next()
+        {
+            return _next;
+        }
 
         virtual void init();
-        virtual void setup();
-        virtual void update(float32 dt);
-        virtual void destroy();
+
+        virtual void setup()
+        {
+        }
+
+        virtual void update(float32 dt)
+        {
+        }
+
+        virtual void destroy()
+        {
+        }
+
         virtual void show() = 0;
         virtual void hide() = 0;
+
         virtual void handle_event(xBase* from, uint32 toEvent, const float32* toParam,
-                                  xBase* toParamWidget, uint32 toParamWidgetID);
+                                  xBase* toParamWidget, uint32 toParamWidgetID)
+        {
+        }
+
         virtual void reset() = 0;
 
         friend class hud_system;
@@ -37,7 +54,9 @@ namespace zHud
         bool last_paused;
 
     public:
-        hud_system();
+        hud_system()
+        {
+        }
 
         static hud_system& instance();
 

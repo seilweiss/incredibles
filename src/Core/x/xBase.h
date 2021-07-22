@@ -33,13 +33,29 @@ struct xBaseAsset
 #define XBASE_IS_ENT 0x20
 
 void xBaseInit(xBase* xb, const xBaseAsset* asset);
-void xBaseValidate(xBase* xb);
 void xBaseSetup(xBase*);
 void xBaseSave(xBase* ent, xSerial* s);
-bool xBaseIsEnabled(const xBase* xb);
 void xBaseLoad(xBase* ent, xSerial* s);
-void xBaseDisable(xBase* xb);
-void xBaseEnable(xBase* xb);
 void xBaseReset(xBase* xb, xBaseAsset* asset);
+
+inline bool xBaseIsEnabled(const xBase* xb)
+{
+    return xb->baseFlags & XBASE_ENABLED;
+}
+
+inline void xBaseEnable(xBase* xb)
+{
+    xb->baseFlags |= XBASE_ENABLED;
+}
+
+inline void xBaseDisable(xBase* xb)
+{
+    xb->baseFlags &= ~XBASE_ENABLED;
+}
+
+inline void xBaseValidate(xBase* xb)
+{
+    xb->baseFlags |= XBASE_VALID;
+}
 
 #endif

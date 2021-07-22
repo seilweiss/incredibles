@@ -27,17 +27,3 @@ void zUIController_Init(zUIController* ui, zUIControllerAsset* asset)
 
     zUI_Init(ui, asset);
 }
-
-zUIController::zUIController() : zUI()
-{
-}
-
-zUIControllerAsset* zUIController::GetAsset() const
-{
-    return (zUIControllerAsset*)zUI::GetAsset();
-}
-
-uint32 zUIController::GetSortKey() const
-{
-    return GetAsset()->id;
-}

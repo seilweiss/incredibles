@@ -140,3 +140,11 @@ $(OBJ_DIR)/%.o: %.cpp
 	$S$(GLBLASM) -s $< $(OBJ_DIR)/$*.cpp 1>&2
 	$S$(CC) $(CFLAGS) -c -o $@ $(OBJ_DIR)/$*.cpp 1>&2
 	$S$(PPROC) $(PPROCFLAGS) $@
+
+$(PREPROCESS_O_FILES): $(OBJ_DIR)/%.o: %.cpp
+	@echo " CXX     "$<
+	$S$(GLBLASM) -s $< $(OBJ_DIR)/$*.cp 1>&2
+	$S$(CC) $(CFLAGS) -E -o $(OBJ_DIR)/$*.cpp $(OBJ_DIR)/$*.cp 1>&2
+	$S$(CC) $(CFLAGS) -c -o $@ $(OBJ_DIR)/$*.cpp 1>&2
+	$S$(PPROC) $(PPROCFLAGS) $@
+	@rm -f $(OBJ_DIR)/$*.cp

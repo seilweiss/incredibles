@@ -122,11 +122,6 @@ xFactoryInst* xFactory::CreateItem(int32 typeID, void* userdata, RyzMemGrow* cal
     return item;
 }
 
-bool32 RyzMemGrow::IsEnabled()
-{
-    return flg_grow & RYZMEMGROW_ENABLED;
-}
-
 void xFactory::DestroyAll()
 {
     while (products)

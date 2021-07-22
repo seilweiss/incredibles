@@ -5,6 +5,8 @@
 
 #include <new>
 
+#define RYZMEMGROW_ENABLED 0x1
+
 struct RyzMemGrow
 {
     int32 flg_grow;
@@ -15,10 +17,11 @@ struct RyzMemGrow
     char* ptr_last;
     xBase* user_last;
 
-    bool32 IsEnabled();
+    bool32 IsEnabled()
+    {
+        return flg_grow & RYZMEMGROW_ENABLED;
+    }
 };
-
-#define RYZMEMGROW_ENABLED 0x1
 
 struct RyzMemData
 {

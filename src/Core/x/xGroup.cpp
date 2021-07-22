@@ -174,36 +174,6 @@ void xGroupEventCB(xBase*, xBase* to, uint32 toEvent, const float32* toParam, xB
     }
 }
 
-void xEntVisibilityCullOff(xEnt* ent)
-{
-    ent->flags &= (uint8)~XENT_VIS_CULL;
-
-    if (ent->visUpdate)
-    {
-        ent->visUpdate(ent);
-    }
-}
-
-void xEntVisibilityCullOn(xEnt* ent)
-{
-    ent->flags |= XENT_VIS_CULL;
-
-    if (ent->visUpdate)
-    {
-        ent->visUpdate(ent);
-    }
-}
-
-uint32 xrand_RandomChoice(uint32 maxCount)
-{
-    return maxCount * xrand_RandomInt16() >> 16;
-}
-
-uint16 xrand_RandomInt16()
-{
-    return xrand_RandomInt32();
-}
-
 uint32 xGroupGetCount(xGroup* g)
 {
     return g->asset->itemCount;

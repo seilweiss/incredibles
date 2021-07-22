@@ -202,36 +202,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/p2/iMemMgr.o\
 	$(OBJ_DIR)/asm/Core/p2/iModel.o\
 	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
-	$(OBJ_DIR)/src/Core/p2/iModel.o\
 	$(OBJ_DIR)/asm/Core/p2/iMorph.o\
 	$(OBJ_DIR)/src/Core/p2/iMorph.o\
 	$(OBJ_DIR)/asm/Core/p2/iPad.o\
@@ -696,3 +666,15 @@ SBSS_O_FILES :=
 SDATA2_O_FILES :=
 
 SBSS2_O_FILES :=
+
+PREPROCESS_O_FILES :=\
+	$(OBJ_DIR)/src/Core/x/xBase.o\
+	$(OBJ_DIR)/src/Core/x/xSoundFX.o\
+	$(OBJ_DIR)/src/GAME/zHud.o\
+	$(OBJ_DIR)/src/GAME/zPlayerBase.o\
+	$(OBJ_DIR)/src/Core/p2/iMath.o\
+	$(OBJ_DIR)/src/Core/x/xGroup.o\
+	$(OBJ_DIR)/src/Core/x/xFactory.o\
+	$(OBJ_DIR)/src/Core/x/xEvent.o\
+	$(OBJ_DIR)/src/Core/x/xVec3.o\
+	$(OBJ_DIR)/src/Core/x/xSurface.o

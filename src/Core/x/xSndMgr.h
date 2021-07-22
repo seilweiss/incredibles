@@ -52,6 +52,17 @@ iSndHandle xSndMgrPlay(iSndGroupHandle hSoundToPlay, uint32 uFlags, const xVec3*
                        const float32* pfOverridePitch = NULL);
 void xSndMgrStop(iSndHandle& hSound);
 xSndGroup* xSndMgr_GetGroup(iSndGroupHandle hSound);
-bool xSndMgrIsEnvironmentalStream(iSndGroupHandle hSound);
+
+inline bool xSndMgrIsEnvironmentalStream(iSndGroupHandle hSound)
+{
+    if (hSound == ISNDGROUPHANDLE_INVALID)
+    {
+        return false;
+    }
+
+    xSndGroup* pSndGroup = xSndMgr_GetGroup(hSound);
+
+    return pSndGroup->header.uFlags & 0x2;
+}
 
 #endif

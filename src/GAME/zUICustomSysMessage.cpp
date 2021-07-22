@@ -131,8 +131,3 @@ void zUICustomSysMessageManager::ShowSystemMessage(xBaseEventCB cb, uint32, uint
     toCBParamWidgetID = _toCBParamWidgetID;
     itemMsg->SetText(sys_message);
 }
-
-bool zUICustomSysMessageManager::IsSystem(zUI* ptr)
-{
-    return (ptr == itemOk || ptr == itemYes || ptr == itemNo || ptr == itemMsg);
-}

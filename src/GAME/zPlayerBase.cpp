@@ -34,11 +34,6 @@ void zPlayerUpdate(xEnt* ent, xScene* sc, float32 dt)
     player->EndUpdate(dt);
 }
 
-void zPlayer::Set_cutsceneReady()
-{
-    zPlayerFlags |= ZPLAYER_CUTSCENEREADY;
-}
-
 void zPlayerRender(zEnt* ent)
 {
     if (!((zPlayer*)ent)->Get_cutsceneReady())

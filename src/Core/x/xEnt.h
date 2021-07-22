@@ -141,9 +141,27 @@ typedef void (*xEntVisHandler)(xEnt* ent);
 void xEntGrowGlobalBoundingBox(const xVec3* pos);
 void xEntShow(xEnt* ent);
 void xEntHide(xEnt* ent);
-void xEntVisibilityCullOn(xEnt* ent);
-void xEntVisibilityCullOff(xEnt* ent);
 xMat4x3* xEntGetFrame(const xEnt* ent);
 xVec3* xEntGetPos(const xEnt* ent);
+
+inline void xEntVisibilityCullOn(xEnt* ent)
+{
+    ent->flags |= XENT_VIS_CULL;
+
+    if (ent->visUpdate)
+    {
+        ent->visUpdate(ent);
+    }
+}
+
+inline void xEntVisibilityCullOff(xEnt* ent)
+{
+    ent->flags &= (uint8)~XENT_VIS_CULL;
+
+    if (ent->visUpdate)
+    {
+        ent->visUpdate(ent);
+    }
+}
 
 #endif
