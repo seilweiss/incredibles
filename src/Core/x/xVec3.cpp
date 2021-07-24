@@ -1,8 +1,5 @@
 #include "xVec3.h"
 
-#include "xMath.h"
-#include "iMath.h"
-
 const xVec3 xVec3::m_Null = { 0.0f, 0.0f, 0.0f };
 const xVec3 xVec3::m_UnitAxisX = { 1.0f, 0.0f, 0.0f };
 const xVec3 xVec3::m_UnitAxisY = { 0.0f, 1.0f, 0.0f };
@@ -11,7 +8,6 @@ const xVec3 xVec3::m_UnitAxisZ = { 0.0f, 0.0f, 1.0f };
 float32 xVec3Normalize(xVec3* o, const xVec3* v)
 {
     float32 len;
-
     float32 len2 = SQR(v->x) + SQR(v->y) + SQR(v->z);
 
     if (APPROX_EQUAL(len2, 1.0f))

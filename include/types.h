@@ -41,10 +41,12 @@ typedef int32 bool32;
 
 #ifndef __MWERKS__
 #define __declspec(x)
+#define __attribute__(a)
 #define asm
 #endif
 
 #define WEAK __declspec(weak)
+#define ALIGNED(n) __attribute__((aligned(n)))
 
 // Creates an operator= declaration for the type T.
 // This is specifically meant as a temporary fix for __as functions

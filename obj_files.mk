@@ -19,7 +19,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xBehaveMgr.o\
 	$(OBJ_DIR)/asm/Core/x/xbinio.o\
 	$(OBJ_DIR)/src/Core/x/xbinio.o\
-	$(OBJ_DIR)/asm/Core/x/xBound.o\
 	$(OBJ_DIR)/src/Core/x/xBound.o\
 	$(OBJ_DIR)/asm/Core/x/xCam.o\
 	$(OBJ_DIR)/src/Core/x/xCam.o\
@@ -677,4 +676,5 @@ PREPROCESS_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xFactory.o\
 	$(OBJ_DIR)/src/Core/x/xEvent.o\
 	$(OBJ_DIR)/src/Core/x/xVec3.o\
-	$(OBJ_DIR)/src/Core/x/xSurface.o
+	$(OBJ_DIR)/src/Core/x/xSurface.o\
+	$(OBJ_DIR)/src/Core/x/xBound.o

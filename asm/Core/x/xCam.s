@@ -29,6 +29,8 @@ __vt__4xCam:
 
 .section .sdata2
 
+.balign 8
+
 .global _esc__2_919
 _esc__2_919:
 	.incbin "baserom.dol", 0x32E7C0, 0x4

@@ -104,7 +104,6 @@ struct zPlayer : zEnt
     zHud::FamilyMeter* pFamilyMeter;
     xScene* sc;
     xLightKit* lightKit;
-    xVec3 unk0x104;
     xMat4x3 lastmat;
     int32 brain_id;
     xVec3 lastDeltaPos;
@@ -141,19 +140,16 @@ struct zPlayer : zEnt
     xEntShadow entShadow_embedded;
     xShadowSimpleCache simpShadow_embedded;
     uint32 loaded_assetid;
-    uint32 unk0x334[3];
     xEntDrive drv;
     float32 floorDist[4];
     float32 floorTimer[4];
     xVec3 floorSupp[4];
-    uint32 unk0x44C;
     uint16 parametersSize;
     xModelAssetParam* parameters;
     xEnt* reticleTarget;
     RpAtomic* reticleModel;
     float32 reticleRot;
     float32 reticleAlpha;
-    uint32 unk0x468[2];
     xMat4x3 reticleMat;
     float32 deathTimer;
     uint8 deathStartedAnim;
