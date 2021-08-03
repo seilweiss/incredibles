@@ -436,7 +436,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zVolume.o\
 	$(OBJ_DIR)/asm/GAME/zWaterhose.o\
 	$(OBJ_DIR)/src/GAME/zWaterhose.o\
-	$(OBJ_DIR)/asm/GAME/zActionLine.o\
 	$(OBJ_DIR)/src/GAME/zActionLine.o\
 	$(OBJ_DIR)/asm/Core/x/xCollideSpherePolygon.o\
 	$(OBJ_DIR)/src/Core/x/xCollideSpherePolygon.o\

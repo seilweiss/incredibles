@@ -2,6 +2,8 @@
 
 .section .sbss
 
+.balign 8
+
 .global cam__6zAsync
 cam__6zAsync:
 	.skip 0x4

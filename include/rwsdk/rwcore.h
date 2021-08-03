@@ -1414,7 +1414,10 @@ typedef RwIm2DVertex RxScrSpace2DVertex;
 #define RwIm3DVertexSetRGBA(_vert, _r, _g, _b, _a)                                                 \
     MACRO_START                                                                                    \
     {                                                                                              \
-        ((_vert)->color = ((_a) << 24) | ((_r) << 16) | ((_g) << 8) | ((_b)));                     \
+        (_vert)->color.red = (_r);                                                                 \
+        (_vert)->color.green = (_g);                                                               \
+        (_vert)->color.blue = (_b);                                                                \
+        (_vert)->color.alpha = (_a);                                                               \
     }                                                                                              \
     MACRO_STOP
 
