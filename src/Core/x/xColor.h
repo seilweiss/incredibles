@@ -14,6 +14,14 @@ typedef union xColor_tag
     RwRGBA rgba;
 } xColor;
 
+typedef struct _xFColor
+{
+    float32 r;
+    float32 g;
+    float32 b;
+    float32 a;
+} xFColor;
+
 extern const xColor g_RED;
 extern const xColor g_BLUE;
 extern const xColor g_YELLOW;

@@ -8,6 +8,8 @@ _esc__2_stringBase0_147:
 
 .section .sbss
 
+.balign 8
+
 .global comboReward
 comboReward:
 	.skip 0x4

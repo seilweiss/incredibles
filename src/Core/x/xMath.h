@@ -17,10 +17,13 @@
 #define PI 3.14159265359
 #define ONEEIGHTY 180.0
 
+#define INVERSEPI (float32)(1.0 / (PI))
+
 #define DEG2RAD(x) (float32)((PI) * (x) / (ONEEIGHTY))
 #define RAD2DEG(x) (float32)((ONEEIGHTY) * (x) / (PI))
 
 float32 xsqrt(float32 x);
+float32 xasin(float32 x);
 
 inline void xsqrtfast(float32& out, register float32 x)
 {
