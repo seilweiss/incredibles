@@ -77,7 +77,7 @@ INCLUDES := -ir src -ir include -Iinclude -Iinclude/CodeWarrior -Iinclude/rwsdk
 
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -w off -maxerrors 1 -nostdlib
-CFLAGS  := -g -O4,s -DGAMECUBE -Cpp_exceptions off -proc gekko -fp hard -fp_contract on -RTTI off \
+CFLAGS  := -g -O4,s -DGAMECUBE -DGEKKO -Cpp_exceptions off -proc gekko -fp hard -fp_contract on -RTTI off \
 		   -str reuse,pool,readonly -char unsigned -enum int -use_lmw_stmw on -inline off -sdata 64 -sdata2 64 \
 		   -pragma "check_header_flags off" -pragma "force_active on" -pragma "cpp_extensions on" \
 		   -msgstyle gcc -maxerrors 1 -nostdinc -i- $(INCLUDES)
