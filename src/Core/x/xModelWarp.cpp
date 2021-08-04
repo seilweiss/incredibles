@@ -1,8 +1,6 @@
 #include "xModelWarp.h"
 
 #include "xFXCameraTexture.h"
-#include "xMath3.h"
-#include "xMath2.h"
 
 namespace
 {
