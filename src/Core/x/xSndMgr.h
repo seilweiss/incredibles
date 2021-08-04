@@ -43,8 +43,10 @@ struct xSndGroup
 
 void xSndMgrSetEffect(xSndEffect Effect);
 xSndEffect xSndMgrGetEffect();
-void xSndMgrPauseSounds(int16 eSoundCategory, bool bPaused, bool bPauseFutureSoundsOfThisType);
+void xSndMgrUpdate();
 void xSndMgrStopSounds(int16 eSoundCategory, bool bSkipPaused);
+void xSndMgrPauseSounds(int16 eSoundCategory, bool bPaused, bool bPauseFutureSoundsOfThisType);
+float32 xSndMgrGetDampedVolume(int16 eSoundCategory);
 iSndGroupHandle xSndMgrGetSoundGroup(uint32 uSoundGroupNameHash);
 iSndHandle xSndMgrPlay(iSndGroupHandle hSoundToPlay, uint32 uFlags, const xVec3* pPos_WS = NULL,
                        const xVec3* pVel = NULL, xEnt* pParentEnt = NULL,

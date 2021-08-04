@@ -3,11 +3,11 @@
 
 #include "../p2/iFile.h"
 
-struct tag_xFile
+typedef struct tag_xFile
 {
     char relname[32];
-    tag_iFile ps;
+    iFile ps;
     void* user_data;
-};
+} xFile;
 
 #endif

@@ -51,7 +51,7 @@ private:
     int32 m_lru;
     xInternalTextureNode m_texture_nodes[128];
     xInternalMovieNode m_movie_nodes[4];
-    tag_xFile m_files[8];
+    xFile m_files[8];
     uint32 m_clearIDs[8];
 };
 
