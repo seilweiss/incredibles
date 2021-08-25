@@ -1,120 +1,658 @@
 #include "xserializer.h"
 
-#include <types.h>
+#include "xordarray.h"
+#include "xMemMgr.h"
+#include "xMath.h"
 
-// func_8005F4B8
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSerialStartup__FiP21st_SERIAL_PERCID_SIZE")
+#include <string.h>
 
-// func_8005F51C
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSerialShutdown__Fv")
+typedef struct st_XSERIAL_DATA_PRIV
+{
+    int32 flg_info;
+    int32* bitbuf;
+    int32 buf_bytcnt;
+    SERIAL_CLIENTINFO* cltbuf;
+    SERIAL_CLIENTINFO* cltnext;
+    XORDEREDARRAY cltlist;
+} XSERIAL_DATA_PRIV;
 
-// func_8005F52C
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSerialTraverse__FPFUiP7xSerial_i")
+static int32 g_serinit = 0;
+static XSERIAL_DATA_PRIV g_xserdata = {};
+static int32 g_tbl_onbit[32] = {};
+static int32 g_tbl_clear[32] = {};
 
-// func_8005F5B4
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "__dt__7xSerialFv")
+static void xSER_init_tables();
+static void xSER_init_buffers(int32 count, SERIAL_PERCID_SIZE* sizeinfo);
+static int32 xSER_ord_compare(void* e1, void* e2);
+static int32 xSER_ord_test(const void* key, void* elt);
+static SERIAL_CLIENTINFO* XSER_get_client(uint32 idtag);
+static bool32 xSER_xsgclt_svinfo_ver(void*, XSAVEGAME_DATA*, int32* cur_space, int32* max_fullgame);
+static bool32 xSER_xsgclt_svproc_ver(void*, XSAVEGAME_DATA* xsg, XSAVEGAME_WRITECONTEXT* wctxt);
+static bool32 xSER_xsgclt_ldproc_ver(void*, XSAVEGAME_DATA* xsg, XSAVEGAME_READCONTEXT* rctxt,
+                                     uint32, int32);
+static bool32 xSER_xsgclt_svinfo_clt(void* cltdata, XSAVEGAME_DATA*, int32* cur_space,
+                                     int32* max_fullgame);
+static bool32 xSER_xsgclt_svproc_clt(void* cltdata, XSAVEGAME_DATA* xsg,
+                                     XSAVEGAME_WRITECONTEXT* wctxt);
+static bool32 xSER_xsgclt_ldproc_clt(void*, XSAVEGAME_DATA* xsg, XSAVEGAME_READCONTEXT* rctxt,
+                                     uint32 idtag, int32);
+static bool32 xSER_xsgclt_svinfo_fill(void*, XSAVEGAME_DATA*, int32* cur_space,
+                                      int32* max_fullgame);
+static bool32 xSER_xsgclt_svproc_fill(void*, XSAVEGAME_DATA* xsg, XSAVEGAME_WRITECONTEXT* wctxt);
+static bool32 xSER_xsgclt_ldproc_fill(void*, XSAVEGAME_DATA* xsg, XSAVEGAME_READCONTEXT* rctxt,
+                                      uint32, int32);
 
-// func_8005F5F0
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "setClient__7xSerialFUi")
+int32 xSerialStartup(int32 count, SERIAL_PERCID_SIZE* sizeinfo)
+{
+    if (!g_serinit++)
+    {
+        memset(&g_xserdata, 0, sizeof(g_xserdata));
 
-// func_8005F610
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Write__7xSerialFPcii")
+        xSER_init_tables();
+        xSER_init_buffers(count, sizeinfo);
+    }
 
-// func_8005F710
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Write_b1__7xSerialFi")
+    return g_serinit;
+}
 
-// func_8005F740
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Write_b1__7xSerialFUi")
+int32 xSerialShutdown()
+{
+    return --g_serinit;
+}
 
-// func_8005F770
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Write__7xSerialFUc")
+void xSerialTraverse(xSerialTraverseCallback func)
+{
+    int32 i;
+    XSERIAL_DATA_PRIV* xsd = &g_xserdata;
+    SERIAL_CLIENTINFO* clt;
+    xSerial xser;
+    bool32 rc;
 
-// func_8005F7A0
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Write__7xSerialFs")
+    for (i = 0; i < xsd->cltlist.cnt; i++)
+    {
+        clt = (SERIAL_CLIENTINFO*)XOrdGet(&xsd->cltlist, i);
 
-// func_8005F7D0
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Write__7xSerialFi")
+        xser.setClient(clt->idtag);
 
-// func_8005F800
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Write__7xSerialFUi")
+        rc = func(clt->idtag, &xser);
 
-// func_8005F830
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Write__7xSerialFf")
+        if (!rc)
+        {
+            break;
+        }
+    }
+}
 
-// func_8005F860
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Read__7xSerialFPcii")
+xSerial::~xSerial()
+{
+}
 
-// func_8005F9B0
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Read_b1__7xSerialFPi")
+void xSerial::setClient(uint32 idtag)
+{
+    prepare(idtag);
+}
 
-// func_8005F9D8
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Read__7xSerialFPUc")
+int32 xSerial::Write(char* data, int32 elesize, int32 n)
+{
+    if (n == 0)
+    {
+        return 0;
+    }
 
-// func_8005FA00
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Read__7xSerialFPs")
+    int32 nbit;
 
-// func_8005FA28
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Read__7xSerialFPi")
+    if (n > 0)
+    {
+        nbit = n * elesize * 8;
+    }
+    else
+    {
+        nbit = -n;
+    }
 
-// func_8005FA50
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Read__7xSerialFPUi")
+    if (n < 0)
+    {
+        int32 bidx = 0;
+        int32* iptr = (int32*)data;
 
-// func_8005FA78
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "Read__7xSerialFPf")
+        for (int32 i = 0; i < nbit; i++)
+        {
+            wrbit(*iptr & g_tbl_onbit[bidx]);
 
-// func_8005FAA0
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "wrbit__7xSerialFi")
+            bidx++;
 
-// func_8005FB64
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "rdbit__7xSerialFv")
+            if (bidx == 32)
+            {
+                bidx = 0;
+                iptr++;
+            }
+        }
+    }
+    else
+    {
+        int32 bidx = 0;
+        int8* cptr = (int8*)data;
 
-// func_8005FBFC
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "prepare__7xSerialFUi")
+        for (int32 i = 0; i < nbit; i++)
+        {
+            wrbit(*cptr & g_tbl_onbit[bidx]);
 
-// func_8005FC54
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSerialWipeMainBuffer__Fv")
+            bidx++;
 
-// func_8005FC84
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_init_tables__Fv")
+            if (bidx == 8)
+            {
+                bidx = 0;
+                cptr++;
+            }
+        }
+    }
 
-// func_8005FCC8
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_init_buffers__FiP21st_SERIAL_PERCID_SIZE")
+    return nbit;
+}
 
-// func_8005FE68
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_ord_compare__FPvPv")
+int32 xSerial::Write_b1(int32 bits)
+{
+    return Write((char*)&bits, sizeof(int32), -1);
+}
 
-// func_8005FE94
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_ord_test__FPCvPv")
+int32 xSerial::Write_b1(uint32 bits)
+{
+    return Write((char*)&bits, sizeof(uint32), -1);
+}
 
-// func_8005FEBC
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "XSER_get_client__FUi")
+int32 xSerial::Write(uint8 data)
+{
+    return Write((char*)&data, sizeof(uint8), 1);
+}
 
-// func_8005FF40
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSerial_svgame_register__FP17st_XSAVEGAME_DATA16en_SAVEGAME_MODE")
+int32 xSerial::Write(int16 data)
+{
+    return Write((char*)&data, sizeof(int16), 1);
+}
 
-// func_8006006C
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_xsgclt_svinfo_ver__FPvP17st_XSAVEGAME_DATAPiPi")
+int32 xSerial::Write(int32 data)
+{
+    return Write((char*)&data, sizeof(int32), 1);
+}
 
-// func_80060080
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_xsgclt_svproc_ver__FPvP17st_XSAVEGAME_DATAP25st_XSAVEGAME_WRITECONTEXT")
+int32 xSerial::Write(uint32 data)
+{
+    return Write((char*)&data, sizeof(uint32), 1);
+}
 
-// func_800600C0
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_xsgclt_ldproc_ver__FPvP17st_XSAVEGAME_DATAP24st_XSAVEGAME_READCONTEXTUii")
+int32 xSerial::Write(float32 data)
+{
+    return Write((char*)&data, sizeof(float32), 1);
+}
 
-// func_80060124
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_xsgclt_svinfo_clt__FPvP17st_XSAVEGAME_DATAPiPi")
+int32 xSerial::Read(char* buf, int32 elesize, int32 n)
+{
+    int32 nbit;
+    int32* iptr;
+    int32 bidx;
+    int32 i;
 
-// func_8006013C
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_xsgclt_svproc_clt__FPvP17st_XSAVEGAME_DATAP25st_XSAVEGAME_WRITECONTEXT")
+    if (n > 0)
+    {
+        nbit = n * elesize * 8;
+    }
+    else
+    {
+        nbit = -n;
+    }
 
-// func_8006018C
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_xsgclt_ldproc_clt__FPvP17st_XSAVEGAME_DATAP24st_XSAVEGAME_READCONTEXTUii")
+    if (n < 0)
+    {
+        bidx = 0;
+        iptr = (int32*)buf;
 
-// func_800601F0
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_xsgclt_svinfo_fill__FPvP17st_XSAVEGAME_DATAPiPi")
+        for (i = 0; i < nbit; i++)
+        {
+            bool32 bitval = rdbit();
 
-// func_80060244
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_xsgclt_svproc_fill__FPvP17st_XSAVEGAME_DATAP25st_XSAVEGAME_WRITECONTEXT")
+            if (bitval)
+            {
+                *iptr |= g_tbl_onbit[bidx];
+            }
+            else
+            {
+                *iptr &= g_tbl_clear[bidx];
+            }
 
-// func_80060290
-#pragma GLOBAL_ASM("asm/Core/x/xserializer.s", "xSER_xsgclt_ldproc_fill__FPvP17st_XSAVEGAME_DATAP24st_XSAVEGAME_READCONTEXTUii")
+            bidx++;
+
+            if (bidx == 32)
+            {
+                bidx = 0;
+                iptr++;
+            }
+        }
+    }
+    else
+    {
+        bidx = 0;
+        int8* cptr = (int8*)buf;
+
+        for (i = 0; i < nbit; i++)
+        {
+            bool32 bitval = rdbit();
+
+            if (bitval)
+            {
+                *cptr |= (int8)g_tbl_onbit[bidx];
+            }
+            else
+            {
+                *cptr &= (int8)g_tbl_clear[bidx];
+            }
+
+            bidx++;
+
+            if (bidx == 8)
+            {
+                bidx = 0;
+                cptr++;
+            }
+        }
+    }
+
+    return nbit;
+}
+
+int32 xSerial::Read_b1(int32* bits)
+{
+    return Read((char*)bits, sizeof(int32), -1);
+}
+
+int32 xSerial::Read(uint8* buf)
+{
+    return Read((char*)buf, sizeof(uint8), 1);
+}
+
+int32 xSerial::Read(int16* buf)
+{
+    return Read((char*)buf, sizeof(int16), 1);
+}
+
+int32 xSerial::Read(int32* buf)
+{
+    return Read((char*)buf, sizeof(int32), 1);
+}
+
+int32 xSerial::Read(uint32* buf)
+{
+    return Read((char*)buf, sizeof(uint32), 1);
+}
+
+int32 xSerial::Read(float32* buf)
+{
+    return Read((char*)buf, sizeof(float32), 1);
+}
+
+void xSerial::wrbit(bool32 is_on)
+{
+    SERIAL_CLIENTINFO* clt = ctxtdata;
+
+    if (bittally + 1 > clt->actsize * 8)
+    {
+        warned = TRUE;
+        return;
+    }
+
+    clt->membuf[curele] &= g_tbl_clear[bitidx];
+
+    if (is_on)
+    {
+        clt->membuf[curele] |= g_tbl_onbit[bitidx];
+    }
+
+    bitidx++;
+
+    if (bitidx == 32)
+    {
+        curele++;
+        bitidx = 0;
+    }
+
+    bittally++;
+}
+
+bool32 xSerial::rdbit()
+{
+    SERIAL_CLIENTINFO* clt = ctxtdata;
+
+    if (bittally + 1 > clt->actsize * 8)
+    {
+        warned = TRUE;
+        return FALSE;
+    }
+
+    bool32 bit = ((clt->membuf[curele] & g_tbl_onbit[bitidx]) != 0) ? TRUE : FALSE;
+
+    bitidx++;
+
+    if (bitidx == 32)
+    {
+        curele++;
+        bitidx = 0;
+    }
+
+    bittally++;
+
+    return bit;
+}
+
+void xSerial::prepare(uint32 clientID)
+{
+    SERIAL_CLIENTINFO* clt = XSER_get_client(clientID);
+
+    idtag = clt->idtag;
+    baseoff = clt->trueoff;
+    ctxtdata = clt;
+    warned = FALSE;
+    curele = 0;
+    bitidx = 0;
+    bittally = 0;
+}
+
+void xSerialWipeMainBuffer()
+{
+    memset(g_xserdata.bitbuf, 0, g_xserdata.buf_bytcnt);
+}
+
+static void xSER_init_tables()
+{
+    for (int32 i = 0; i < 32; i++)
+    {
+        g_tbl_onbit[i] = 1 << i;
+        g_tbl_clear[i] = ~(1 << i);
+    }
+}
+
+static void xSER_init_buffers(int32 count, SERIAL_PERCID_SIZE* sizeinfo)
+{
+    XSERIAL_DATA_PRIV* xsd = &g_xserdata;
+    int32 i;
+    int32 tally = 0;
+    int32 sicnt = 0;
+    SERIAL_PERCID_SIZE* sitmp;
+    SERIAL_CLIENTINFO* tmp_clt;
+
+    XOrdInit(&g_xserdata.cltlist, count, FALSE);
+
+    g_xserdata.cltbuf = (SERIAL_CLIENTINFO*)xMEMALLOC(count * sizeof(SERIAL_CLIENTINFO));
+
+    // This should be:
+    //     memset(g_xserdata.cltbuf, 0, count * sizeof(SERIAL_CLIENTINFO))
+    // but it doesn't match
+    memset(g_xserdata.cltbuf, 0, count * 16);
+
+    g_xserdata.cltnext = g_xserdata.cltbuf;
+
+    sitmp = sizeinfo;
+
+    while (sitmp->idtag != 0)
+    {
+        tally += ALIGN(sitmp->needsize, 4);
+        sicnt++;
+        sitmp++;
+    }
+
+    tally += (count - sicnt) * 400;
+
+    xsd->bitbuf = (int32*)xMEMALLOC(tally);
+    memset(xsd->bitbuf, 0, tally);
+
+    xsd->buf_bytcnt = tally;
+
+    sitmp = sizeinfo;
+    tmp_clt = xsd->cltnext;
+    tally = 0;
+
+    while (sitmp->idtag != 0)
+    {
+        tmp_clt->idtag = sitmp->idtag;
+        tmp_clt->trueoff = tally;
+        tmp_clt->actsize = ALIGN(sitmp->needsize, 4);
+        tmp_clt->membuf = xsd->bitbuf + tally / 4;
+
+        XOrdAppend(&xsd->cltlist, tmp_clt);
+
+        tally += tmp_clt->actsize;
+        sitmp++;
+        tmp_clt++;
+    }
+
+    XOrdSort(&xsd->cltlist, xSER_ord_compare);
+
+    xsd->cltnext = tmp_clt;
+
+    for (i = sicnt; i < count; i++)
+    {
+        tmp_clt->idtag = 0;
+        tmp_clt->trueoff = tally;
+        tmp_clt->actsize = 400;
+        tmp_clt->membuf = xsd->bitbuf + tally / 4;
+
+        tally += tmp_clt->actsize;
+        tmp_clt++;
+    }
+}
+
+static int32 xSER_ord_compare(void* e1, void* e2)
+{
+    int32 rc;
+
+    if (((SERIAL_CLIENTINFO*)e1)->idtag < ((SERIAL_CLIENTINFO*)e2)->idtag)
+    {
+        rc = -1;
+    }
+    else if (((SERIAL_CLIENTINFO*)e1)->idtag > ((SERIAL_CLIENTINFO*)e2)->idtag)
+    {
+        rc = 1;
+    }
+    else
+    {
+        rc = 0;
+    }
+
+    return rc;
+}
+
+static int32 xSER_ord_test(const void* key, void* elt)
+{
+    int32 rc;
+    uint32 idtag = (uint32)key;
+
+    if (idtag < ((SERIAL_CLIENTINFO*)elt)->idtag)
+    {
+        rc = -1;
+    }
+    else if (idtag > ((SERIAL_CLIENTINFO*)elt)->idtag)
+    {
+        rc = 1;
+    }
+    else
+    {
+        rc = 0;
+    }
+
+    return rc;
+}
+
+static SERIAL_CLIENTINFO* XSER_get_client(uint32 idtag)
+{
+    XSERIAL_DATA_PRIV* xsd = &g_xserdata;
+    SERIAL_CLIENTINFO* clt;
+    int32 idx = XOrdLookup(&xsd->cltlist, (const void*)idtag, xSER_ord_test);
+
+    if (idx < 0)
+    {
+        clt = xsd->cltnext;
+
+        xsd->cltnext++;
+
+        clt->idtag = idtag;
+
+        XOrdInsert(&xsd->cltlist, clt, xSER_ord_compare);
+    }
+    else
+    {
+        clt = (SERIAL_CLIENTINFO*)XOrdGet(&xsd->cltlist, idx);
+    }
+
+    return clt;
+}
+
+bool32 xSerial_svgame_register(XSAVEGAME_DATA* sgctxt, SAVEGAME_MODE mode)
+{
+    XSERIAL_DATA_PRIV* xsd = &g_xserdata;
+    SERIAL_CLIENTINFO* clt;
+    int32 i;
+
+    xsd->flg_info &= ~0x1;
+
+    if (mode == XSG_MODE_SAVE)
+    {
+        xSGAddSaveClient(sgctxt, 'SVID', &g_xserdata, xSER_xsgclt_svinfo_ver,
+                         xSER_xsgclt_svproc_ver);
+
+        for (i = 0; i < xsd->cltlist.cnt; i++)
+        {
+            clt = (SERIAL_CLIENTINFO*)XOrdGet(&xsd->cltlist, i);
+
+            xSGAddSaveClient(sgctxt, clt->idtag, clt, xSER_xsgclt_svinfo_clt,
+                             xSER_xsgclt_svproc_clt);
+        }
+
+        xSGAddSaveClient(sgctxt, 'SFIL', &g_xserdata, xSER_xsgclt_svinfo_fill,
+                         xSER_xsgclt_svproc_fill);
+    }
+    else if (mode == XSG_MODE_LOAD)
+    {
+        xSGAddLoadClient(sgctxt, 'SVID', &g_xserdata, xSER_xsgclt_ldproc_ver);
+        xSGAddLoadClient(sgctxt, 0, &g_xserdata, xSER_xsgclt_ldproc_clt);
+        xSGAddLoadClient(sgctxt, 'SFIL', &g_xserdata, xSER_xsgclt_ldproc_fill);
+    }
+
+    return TRUE;
+}
+
+static bool32 xSER_xsgclt_svinfo_ver(void*, XSAVEGAME_DATA*, int32* cur_space, int32* max_fullgame)
+{
+    *cur_space = 4;
+    *max_fullgame = 4;
+
+    return TRUE;
+}
+
+static bool32 xSER_xsgclt_svproc_ver(void*, XSAVEGAME_DATA* xsg, XSAVEGAME_WRITECONTEXT* wctxt)
+{
+    int32 ver = 1;
+
+    xSGWriteData(xsg, wctxt, &ver, 1);
+
+    return TRUE;
+}
+
+static bool32 xSER_xsgclt_ldproc_ver(void*, XSAVEGAME_DATA* xsg, XSAVEGAME_READCONTEXT* rctxt,
+                                     uint32, int32)
+{
+    XSERIAL_DATA_PRIV* xsd = &g_xserdata;
+    int32 ver = 0;
+
+    xSGReadData(xsg, rctxt, &ver, 1);
+
+    if (ver != 1)
+    {
+        xsd->flg_info |= 0x1;
+    }
+
+    return TRUE;
+}
+
+static bool32 xSER_xsgclt_svinfo_clt(void* cltdata, XSAVEGAME_DATA*, int32* cur_space,
+                                     int32* max_fullgame)
+{
+    SERIAL_CLIENTINFO* clt = (SERIAL_CLIENTINFO*)cltdata;
+
+    *cur_space = clt->actsize;
+    *max_fullgame = clt->actsize;
+
+    return TRUE;
+}
+
+static bool32 xSER_xsgclt_svproc_clt(void* cltdata, XSAVEGAME_DATA* xsg,
+                                     XSAVEGAME_WRITECONTEXT* wctxt)
+{
+    SERIAL_CLIENTINFO* clt = (SERIAL_CLIENTINFO*)cltdata;
+
+    clt = XSER_get_client(clt->idtag);
+
+    xSGWriteData(xsg, wctxt, (char*)clt->membuf, clt->actsize);
+
+    return TRUE;
+}
+
+static bool32 xSER_xsgclt_ldproc_clt(void*, XSAVEGAME_DATA* xsg, XSAVEGAME_READCONTEXT* rctxt,
+                                     uint32 idtag, int32)
+{
+    SERIAL_CLIENTINFO* clt;
+
+    if (g_xserdata.flg_info & 0x1)
+    {
+        return TRUE;
+    }
+
+    clt = XSER_get_client(idtag);
+
+    xSGReadData(xsg, rctxt, (char*)clt->membuf, clt->actsize);
+
+    return TRUE;
+}
+
+static bool32 xSER_xsgclt_svinfo_fill(void*, XSAVEGAME_DATA*, int32* cur_space, int32* max_fullgame)
+{
+    XSERIAL_DATA_PRIV* xsd = &g_xserdata;
+    int32 i;
+    int32 tally = 0;
+    int32 size;
+
+    for (i = 0; i < xsd->cltlist.cnt; i++)
+    {
+        tally += ((SERIAL_CLIENTINFO*)XOrdGet(&xsd->cltlist, i))->actsize;
+    }
+
+    size = xsd->buf_bytcnt;
+    size -= tally;
+    size += 8;
+
+    *cur_space = size;
+    *max_fullgame = size;
+
+    return TRUE;
+}
+
+static bool32 xSER_xsgclt_svproc_fill(void*, XSAVEGAME_DATA* xsg, XSAVEGAME_WRITECONTEXT* wctxt)
+{
+    char filbuf[9] = "RyanNeil";
+
+    xSGWriteData(xsg, wctxt, filbuf, 8);
+
+    return TRUE;
+}
+
+static bool32 xSER_xsgclt_ldproc_fill(void*, XSAVEGAME_DATA* xsg, XSAVEGAME_READCONTEXT* rctxt,
+                                      uint32, int32)
+{
+    char filbuf[9] = {};
+
+    if (g_xserdata.flg_info & 0x1)
+    {
+        return TRUE;
+    }
+
+    xSGReadData(xsg, rctxt, filbuf, 8);
+
+    return TRUE;
+}
