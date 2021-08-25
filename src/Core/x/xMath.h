@@ -8,6 +8,8 @@
 
 #define SQR(x) ((x) * (x))
 
+#define ALIGN(x, a) ((x) + ((a)-1) & ~((a)-1))
+
 // Override these to point to their corresponding symbols in .sdata2
 // For example:
 //     #undef PI

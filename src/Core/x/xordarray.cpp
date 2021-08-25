@@ -71,7 +71,7 @@ void XOrdInsert(XORDEREDARRAY* array, void* elt, XOrdCompareCB compare)
     }
 }
 
-int32 XOrdLookup(XORDEREDARRAY* array, void* key, XOrdTestCB test)
+int32 XOrdLookup(XORDEREDARRAY* array, const void* key, XOrdTestCB test)
 {
     int32 da_idx = -1;
     int32 k0 = 0;

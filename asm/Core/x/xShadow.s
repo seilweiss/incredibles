@@ -2,6 +2,8 @@
 
 .section .sbss
 
+.balign 8
+
 .global ShadowLight
 ShadowLight:
 	.skip 0x4
@@ -53,6 +55,8 @@ sCacheList:
 
 .section .sbss2
 
+.balign 4
+
 .global lbl_803D889C
 lbl_803D889C:
 	.skip 0x4
@@ -61,6 +65,8 @@ _esc__2_1140:
 	.skip 0x40
 
 .section .sdata
+
+.balign 8
 
 .global ShadowLightColor
 ShadowLightColor:
@@ -82,6 +88,8 @@ SHADOW_CACHE_MAX:
 	.incbin "baserom.dol", 0x32B508, 0x8
 
 .section .sdata2
+
+.balign 8
 
 .global _esc__2_935_0
 _esc__2_935_0:
