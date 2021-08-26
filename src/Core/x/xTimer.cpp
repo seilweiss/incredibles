@@ -2,7 +2,7 @@
 
 #include "xEvent.h"
 #include "xRand.h"
-#include "../../GAME/zGlobals.h"
+#include "../../GAME/zMain.h"
 #include "../../GAME/zTalkBox.h"
 
 // clang-format off

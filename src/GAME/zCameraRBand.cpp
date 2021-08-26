@@ -1,7 +1,7 @@
 #include "zCameraRBand.h"
 
 #include "zCam.h"
-#include "zGlobals.h"
+#include "zMain.h"
 #include "../Core/x/xMemMgr.h"
 #include "../Core/x/xEvent.h"
 

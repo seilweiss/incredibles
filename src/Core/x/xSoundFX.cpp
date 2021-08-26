@@ -1,6 +1,6 @@
 #include "xSoundFX.h"
 
-#include "xGlobals.h"
+#include "../../GAME/zMain.h"
 #include "xSndMgr.h"
 #include "xEvent.h"
 #include "xRand.h"

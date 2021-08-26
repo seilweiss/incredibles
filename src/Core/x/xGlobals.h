@@ -103,8 +103,4 @@ struct xGlobals
     float32 watermarkSize;
 };
 
-extern xGlobals* xglobals;
-
-bool IsPS2Demo();
-
 #endif

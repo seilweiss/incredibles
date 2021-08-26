@@ -1,6 +1,6 @@
 #include "zEnv.h"
 
-#include "zGlobals.h"
+#include "zMain.h"
 #include "zSurface.h"
 #include "zLight.h"
 #include "../Core/x/xstransvc.h"

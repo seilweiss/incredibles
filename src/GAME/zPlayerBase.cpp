@@ -1,7 +1,7 @@
 #include "zPlayerBase.h"
 
 #include "zPlayer.h"
-#include "zGlobals.h"
+#include "zMain.h"
 #include "zConfiguration.h"
 #include "../Core/x/xMemMgr.h"
 #include "../Core/x/xstransvc.h"

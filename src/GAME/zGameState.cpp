@@ -1,7 +1,6 @@
 #include "zGameState.h"
 
 #include "zGame.h"
-#include "zGlobals.h"
 #include "zMain.h"
 #include "../Core/x/xEvent.h"
 #include "../Core/x/xserializer.h"

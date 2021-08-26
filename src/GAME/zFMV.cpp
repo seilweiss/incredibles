@@ -1,6 +1,6 @@
 #include "zFMV.h"
 
-#include "zGlobals.h"
+#include "zMain.h"
 #include "zMenu.h"
 #include "../Core/x/xSubTitles.h"
 #include "../Core/x/xSndMgr.h"

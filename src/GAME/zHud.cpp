@@ -1,7 +1,7 @@
 #include "zHud.h"
 
 #include "zGame.h"
-#include "zGlobals.h"
+#include "zMain.h"
 
 namespace
 {

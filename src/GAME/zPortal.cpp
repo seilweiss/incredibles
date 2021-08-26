@@ -1,6 +1,6 @@
 #include "zPortal.h"
 
-#include "zGlobals.h"
+#include "zMain.h"
 #include "../Core/x/xEvent.h"
 
 void zPortalInit(void* portal, void* passet)

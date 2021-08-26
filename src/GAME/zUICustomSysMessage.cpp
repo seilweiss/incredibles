@@ -1,7 +1,7 @@
 #include "zUICustomSysMessage.h"
 
 #include "zScene.h"
-#include "zGlobals.h"
+#include "zMain.h"
 #include "../Core/x/xString.h"
 #include "../Core/x/xEvent.h"
 #include "../Core/x/xTextAsset.h"
