@@ -47,7 +47,7 @@ void zPortalEventCB(xBase*, xBase* to, uint32 toEvent, const float32* toParam, x
     }
     case eEventTeleportPlayer:
     {
-        if (xglobals->___player_ent_dont_use_directly->IsDead())
+        if (ZPLAYER->IsDead())
         {
             break;
         }

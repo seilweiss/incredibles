@@ -38,7 +38,7 @@ void zCameraRBandAsset_EventCB(xBase*, xBase*, uint32 toEvent, const float32*, x
         {
             zRBAND_CAMERA_ACTIVE = true;
 
-            rbCam->target = xEntGetFrame(xglobals->___player_ent_dont_use_directly);
+            rbCam->target = xEntGetFrame(ZPLAYER);
             rbCam->setCurrTgtPos(rbCam->target->pos, rbCam->target->up);
             rbCam->setPrevTgtPos(rbCam->target->pos, rbCam->target->up);
             rbCam->cam_pos = rbCam->curr_tgt_pos;

@@ -7,6 +7,8 @@ extern uint32 SCENE_ID_MNU_START;
 extern zGlobals globals;
 extern xGlobals* xglobals;
 
+#define ZPLAYER (xglobals->___player_ent_dont_use_directly)
+
 bool IsPS2Demo();
 
 #endif

@@ -82,7 +82,7 @@ void zPlayerLoadHIP(uint32 sceneID)
 
 void zPlayerUnloadHIP()
 {
-    xglobals->___player_ent_dont_use_directly->Exit();
+    ZPLAYER->Exit();
 
     xSTUnLoadSceneMany(globals.playerTag, XSTUNLOAD_0x1 | XSTUNLOAD_0x4);
     iSndSceneExit();
@@ -90,7 +90,7 @@ void zPlayerUnloadHIP()
     xMemPopBase(sMemDepthJustHIPStartPlayer);
 
     sMemDepthJustHIPStartPlayer = -1;
-    xglobals->___player_ent_dont_use_directly = NULL;
+    ZPLAYER = NULL;
     globals.playerLoaded = false;
 }
 
@@ -107,12 +107,12 @@ void zPlayer_StoreCheckPoint(const xVec3& pos, float32 rot, uint32 initialCamera
     }
 
     globals.player.checkpoint.currentEffect = xSndMgrGetEffect();
-    xglobals->___player_ent_dont_use_directly->StoreCheckPoint();
+    ZPLAYER->StoreCheckPoint();
 }
 
 void zPlayer_LoadCheckPoint()
 {
-    xEnt& p = *xglobals->___player_ent_dont_use_directly;
+    xEnt& p = *ZPLAYER;
     xModelInstance& m = *p.model;
     xEntFrame& f = *p.frame;
     zCheckPoint& checkpoint = globals.player.checkpoint;
@@ -132,7 +132,6 @@ void zPlayer_LoadCheckPoint()
         xSndMgrSetEffect(globals.player.checkpoint.currentEffect);
     }
 
-    xglobals->___player_ent_dont_use_directly->LoadCheckPoint();
-    xglobals->___player_ent_dont_use_directly->BoundUpdate(
-        &xEntGetFrame(xglobals->___player_ent_dont_use_directly)->pos);
+    ZPLAYER->LoadCheckPoint();
+    ZPLAYER->BoundUpdate(&xEntGetFrame(ZPLAYER)->pos);
 }
