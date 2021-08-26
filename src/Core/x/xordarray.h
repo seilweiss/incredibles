@@ -11,8 +11,6 @@ typedef struct st_XORDEREDARRAY
     int32 warnlvl;
 } XORDEREDARRAY;
 
-#define XOrdGet(array, idx) ((array)->list[(idx)])
-
 typedef int32 (*XOrdCompareCB)(void* vkey, void* vitem);
 typedef int32 (*XOrdTestCB)(const void* vkey, void* vitem);
 

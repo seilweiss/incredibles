@@ -70,7 +70,7 @@ void xSerialTraverse(xSerialTraverseCallback func)
 
     for (i = 0; i < xsd->cltlist.cnt; i++)
     {
-        clt = (SERIAL_CLIENTINFO*)XOrdGet(&xsd->cltlist, i);
+        clt = (SERIAL_CLIENTINFO*)xsd->cltlist.list[i];
 
         xser.setClient(clt->idtag);
 
@@ -498,7 +498,7 @@ static SERIAL_CLIENTINFO* XSER_get_client(uint32 idtag)
     }
     else
     {
-        clt = (SERIAL_CLIENTINFO*)XOrdGet(&xsd->cltlist, idx);
+        clt = (SERIAL_CLIENTINFO*)xsd->cltlist.list[idx];
     }
 
     return clt;
@@ -519,7 +519,7 @@ bool32 xSerial_svgame_register(XSAVEGAME_DATA* sgctxt, SAVEGAME_MODE mode)
 
         for (i = 0; i < xsd->cltlist.cnt; i++)
         {
-            clt = (SERIAL_CLIENTINFO*)XOrdGet(&xsd->cltlist, i);
+            clt = (SERIAL_CLIENTINFO*)xsd->cltlist.list[i];
 
             xSGAddSaveClient(sgctxt, clt->idtag, clt, xSER_xsgclt_svinfo_clt,
                              xSER_xsgclt_svproc_clt);
@@ -620,7 +620,7 @@ static bool32 xSER_xsgclt_svinfo_fill(void*, XSAVEGAME_DATA*, int32* cur_space, 
 
     for (i = 0; i < xsd->cltlist.cnt; i++)
     {
-        tally += ((SERIAL_CLIENTINFO*)XOrdGet(&xsd->cltlist, i))->actsize;
+        tally += ((SERIAL_CLIENTINFO*)xsd->cltlist.list[i])->actsize;
     }
 
     size = xsd->buf_bytcnt;
