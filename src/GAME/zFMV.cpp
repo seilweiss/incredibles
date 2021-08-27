@@ -53,7 +53,7 @@ static zFMVFile zFMVFileTable[] =
 
 zFMVFile* zFMVFileGetFile(eFMVFile fmvId)
 {
-    for (int32 i = 0; i < sizeof(zFMVFileTable) / sizeof(zFMVFile); i++)
+    for (int32 i = 0; i < ARRAYSIZE(zFMVFileTable); i++)
     {
         if (fmvId == zFMVFileTable[i].fmvCode)
         {
