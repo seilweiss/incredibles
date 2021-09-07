@@ -155,7 +155,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xSpline.o\
 	$(OBJ_DIR)/asm/Core/x/xSplineAsset.o\
 	$(OBJ_DIR)/src/Core/x/xSplineAsset.o\
-	$(OBJ_DIR)/asm/Core/x/xstransvc.o\
 	$(OBJ_DIR)/src/Core/x/xstransvc.o\
 	$(OBJ_DIR)/asm/Core/x/xString.o\
 	$(OBJ_DIR)/src/Core/x/xString.o\
@@ -674,4 +673,5 @@ PREPROCESS_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xEvent.o\
 	$(OBJ_DIR)/src/Core/x/xVec3.o\
 	$(OBJ_DIR)/src/Core/x/xSurface.o\
-	$(OBJ_DIR)/src/Core/x/xBound.o
+	$(OBJ_DIR)/src/Core/x/xBound.o\
+	$(OBJ_DIR)/src/Core/x/xstransvc.o

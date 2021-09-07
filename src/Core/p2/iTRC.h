@@ -3,4 +3,9 @@
 
 #include <types.h>
 
+namespace iTRCDisk
+{
+    void TRCCheck();
+}
+
 #endif

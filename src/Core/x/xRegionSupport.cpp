@@ -1,7 +1,5 @@
 #include "xRegionSupport.h"
 
-#include <string.h>
-
 const char* region_array[eRegionCount] = { "US", "BE", "CH", "CZ", "DE", "DK", "ES",
                                            "FI", "FR", "IT", "JP", "KR", "NL", "NO",
                                            "PL", "PT", "RU", "SE", "SK", "TW", "UK" };

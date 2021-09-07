@@ -17,6 +17,8 @@ tb_esc__7_1228:
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_25
 _esc__2_stringBase0_25:
 	.incbin "baserom.dol", 0x2CF770, 0x110

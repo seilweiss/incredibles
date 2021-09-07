@@ -2,6 +2,8 @@
 
 .section .sbss
 
+.balign 8
+
 .global subtitleSize__24_esc__2_unnamed_esc__2_xSubTitles_cpp_esc__2_
 subtitleSize__24_esc__2_unnamed_esc__2_xSubTitles_cpp_esc__2_:
 	.skip 0x4
@@ -22,6 +24,8 @@ subtitleFontHeight__24_esc__2_unnamed_esc__2_xSubTitles_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32B59C, 0x4
 
 .section .sdata2
+
+.balign 8
 
 .global screen_bounds_2
 screen_bounds_2:

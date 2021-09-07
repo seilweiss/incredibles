@@ -9,6 +9,9 @@ extern xGlobals* xglobals;
 
 #define ZPLAYER (xglobals->___player_ent_dont_use_directly)
 
-bool IsPS2Demo();
+inline bool IsPS2Demo()
+{
+    return false;
+}
 
 #endif

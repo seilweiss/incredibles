@@ -12,4 +12,7 @@ typedef struct tag_iFile
     int32 length;
 } iFile;
 
+bool iFileExists(const char* name, int32);
+void iFileAsyncService();
+
 #endif
