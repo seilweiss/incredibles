@@ -8,6 +8,8 @@ _esc__2_stringBase0_8:
 
 .section .sbss
 
+.balign 8
+
 .global motive_allocator__Q24xhud6widget
 motive_allocator__Q24xhud6widget:
 	.skip 0x10
@@ -46,6 +48,8 @@ lbl_803D86F8:
 	.skip 0x8
 
 .section .sdata
+
+.balign 8
 
 .global __vt__Q24xhud6widget
 __vt__Q24xhud6widget:

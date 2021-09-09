@@ -52,4 +52,6 @@ typedef struct st_FILELOADINFO
     int32 position;
 } FILELOADINFO;
 
+FILELOADINFO* xBinioLoadCreate(const char* filename, int32 fileflags);
+
 #endif
