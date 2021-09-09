@@ -604,7 +604,7 @@ static char* XST_translate_sid(uint32 sid, char* exten, bool local)
 
     fname[0] = '\0';
 
-    if (IsPS2Demo() && (int8)xglobals->PS2demo->subdir[0] != '\0')
+    if (IsPS2Demo() && xglobals->PS2demo->subdir[0] != '\0')
     {
         strcat(fname, xglobals->PS2demo->subdir);
         strcat(fname, "\\");
@@ -629,7 +629,7 @@ static char* XST_translate_sid_path(uint32 sid, char* exten, bool local)
 
     fname[0] = '\0';
 
-    if (IsPS2Demo() && (int8)xglobals->PS2demo->subdir[0] != '\0')
+    if (IsPS2Demo() && xglobals->PS2demo->subdir[0] != '\0')
     {
         strcat(fname, xglobals->PS2demo->subdir);
         strcat(fname, "\\");

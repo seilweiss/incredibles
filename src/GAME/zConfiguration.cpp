@@ -109,7 +109,7 @@ void zConfig_setScenePlayer_MapEntry(uint32 sceneID, uint32 _player_tag)
 
     for (int32 i = 0; i < 4; i++)
     {
-        if ((char)(sceneID >> (i * 8)) == '?')
+        if ((sceneID >> (i * 8) & 0xff) == '?')
         {
             sceneMask &= ~(0xff << (i * 8));
         }

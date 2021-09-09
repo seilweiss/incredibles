@@ -231,7 +231,7 @@ int32 xSerial::Read(char* buf, int32 elesize, int32 n)
     else
     {
         bidx = 0;
-        int8* cptr = (int8*)buf;
+        char* cptr = (char*)buf;
 
         for (i = 0; i < nbit; i++)
         {
@@ -239,11 +239,11 @@ int32 xSerial::Read(char* buf, int32 elesize, int32 n)
 
             if (bitval)
             {
-                *cptr |= (int8)g_tbl_onbit[bidx];
+                *cptr |= (char)g_tbl_onbit[bidx];
             }
             else
             {
-                *cptr &= (int8)g_tbl_clear[bidx];
+                *cptr &= (char)g_tbl_clear[bidx];
             }
 
             bidx++;
