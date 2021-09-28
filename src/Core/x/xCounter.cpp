@@ -15,8 +15,7 @@ namespace
 
 void xCounterInit()
 {
-    // There are extra unused strings here for some reason
-    xDebugRemoveTweak("Widgets|Counters\0Counter\0%d\0%.*s");
+    xDebugRemoveTweak("Widgets|Counters");
 }
 
 void xCounterInit(void* b, void* asset)
@@ -176,6 +175,9 @@ void xCounterEventCB(xBase*, xBase* to, uint32 toEvent, const float32* toParam,
 #ifndef NO_HACKS
 #pragma push
 #pragma force_active off
+static const char* unused_string_1 = "Counter";
+static const char* unused_string_2 = "%d";
+static const char* unused_string_3 = "%.*s";
 static void hack_unused_function()
 {
     xtextbox::jot j;
