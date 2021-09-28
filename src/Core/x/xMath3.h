@@ -20,7 +20,7 @@ struct xMat3x3
     uint32 pad1;
     xVec3 at;
     uint32 pad2;
-};
+} ALIGNED(16);
 
 struct xMat4x3 : xMat3x3
 {
@@ -92,6 +92,7 @@ void xMat3x3Euler(xMat3x3* m, float32 yaw, float32 pitch, float32 roll);
 void xMat4x3Copy(xMat4x3* o, const xMat4x3* m);
 void xQuatFromMat(xQuat* q, const xMat3x3* m);
 void xMat3x3Tolocal(xVec3* o, const xMat3x3* m, const xVec3* v);
+void xMat3x3Normalize(xMat3x3* o, const xMat3x3* m);
 
 inline static void xMat3x3RMulVec(xVec3* o, const xMat3x3* m, const xVec3* v)
 {
