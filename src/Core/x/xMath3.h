@@ -99,6 +99,8 @@ void xMat4x3Copy(xMat4x3* o, const xMat4x3* m);
 void xQuatFromMat(xQuat* q, const xMat3x3* m);
 void xMat3x3Tolocal(xVec3* o, const xMat3x3* m, const xVec3* v);
 void xMat3x3Normalize(xMat3x3* o, const xMat3x3* m);
+void xMat4x3Mul(xMat4x3* o, const xMat4x3* a, const xMat4x3* b);
+bool xVec3Eq(const xVec3& a, const xVec3& b, float32 tol);
 
 inline static void xMat3x3RMulVec(xVec3* o, const xMat3x3* m, const xVec3* v)
 {

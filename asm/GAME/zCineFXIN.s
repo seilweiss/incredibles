@@ -203,6 +203,8 @@ cinfx_ni01_velocipodout:
 
 .section .rodata
 
+.balign 8
+
 .global record_om01_heli_escape__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 record_om01_heli_escape__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.incbin "baserom.dol", 0x2E7248, 0xD90

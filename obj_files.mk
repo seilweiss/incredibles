@@ -605,7 +605,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zUICustomBattleModeSelectPlayer.o\
 	$(OBJ_DIR)/asm/Core/p2/iARAMTmp.o\
 	$(OBJ_DIR)/src/Core/p2/iARAMTmp.o\
-	$(OBJ_DIR)/asm/GAME/zCamPreset.o\
 	$(OBJ_DIR)/src/GAME/zCamPreset.o\
 	$(OBJ_DIR)/asm/GAME/zCineFXIN.o\
 	$(OBJ_DIR)/src/GAME/zCineFXIN.o\
