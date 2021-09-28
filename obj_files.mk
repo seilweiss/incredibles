@@ -73,7 +73,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xHudFontMeter.o\
 	$(OBJ_DIR)/asm/Core/x/xHudMeter.o\
 	$(OBJ_DIR)/src/Core/x/xHudMeter.o\
-	$(OBJ_DIR)/asm/Core/x/xHudModel.o\
 	$(OBJ_DIR)/src/Core/x/xHudModel.o\
 	$(OBJ_DIR)/asm/Core/x/xHudUnitMeter.o\
 	$(OBJ_DIR)/src/Core/x/xHudUnitMeter.o\
@@ -671,4 +670,5 @@ PREPROCESS_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xVec3.o\
 	$(OBJ_DIR)/src/Core/x/xSurface.o\
 	$(OBJ_DIR)/src/Core/x/xBound.o\
-	$(OBJ_DIR)/src/Core/x/xstransvc.o
+	$(OBJ_DIR)/src/Core/x/xstransvc.o\
+	$(OBJ_DIR)/src/Core/x/xHudModel.o

@@ -2,6 +2,8 @@
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_12
 _esc__2_stringBase0_12:
 	.incbin "baserom.dol", 0x2CED40, 0x90
@@ -22,6 +24,8 @@ init_esc__7_927:
 	.skip 0x8
 
 .section .sdata
+
+.balign 8
 
 .global tweak_anim_time_delta__Q24xhud27_esc__2_unnamed_esc__2_xHudUnitMeter_cpp_esc__2_
 tweak_anim_time_delta__Q24xhud27_esc__2_unnamed_esc__2_xHudUnitMeter_cpp_esc__2_:

@@ -4,10 +4,11 @@
 #include "xMath3.h"
 #include "xDynAsset.h"
 #include "xColor.h"
+#include "xModel.h"
 
 namespace xhud
 {
-    struct widget;
+    class widget;
 
     struct render_context
     {
@@ -118,12 +119,19 @@ namespace xhud
             MAX_ACT
         } activity;
 
+        widget(const asset& a);
+
+        static void init_base(xBase& data, const xBaseAsset& asset, ulong32 chunk_size);
+
         void enable();
         void disable();
+        void destruct();
+        void updater(float32 dt);
         void show(move_direction dir, bool clearmotives, bool bSkipShowMotive);
         void hide(move_direction d, bool clearmotives, bool bSkipHideMotive);
         void clear_motives();
         bool active();
+        bool visible() const;
 
         virtual void destroy();
         virtual uint32 type() const;
@@ -149,6 +157,8 @@ namespace xhud
     void destroy();
     void update(float32 dt);
     void render();
+    xModelInstance* load_model(uint32 id);
+    void render_model(xModelInstance& m, const render_context& rc);
 } // namespace xhud
 
 #endif

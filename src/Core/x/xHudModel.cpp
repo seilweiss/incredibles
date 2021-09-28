@@ -1,33 +1,92 @@
 #include "xHudModel.h"
 
-#include <types.h>
+#include "xString.h"
 
-// func_8003E868
-#pragma GLOBAL_ASM("asm/Core/x/xHudModel.s", "load__Q24xhud12model_widgetFR5xBaseR9xDynAssetUl")
+#ifndef NO_HACKS
+#pragma push
+#pragma force_active off
+static const char* unused_string_1 = "xHUD";
+static const char* unused_string_2 = "Idle01";
+#pragma pop
+#endif
 
-// func_8003E8B8
-#pragma GLOBAL_ASM("asm/Core/x/xHudModel.s", "__ct__Q24xhud12model_widgetFRCQ24xhud11model_asset")
+namespace xhud
+{
+    void model_widget::load(xBase& data, xDynAsset& asset, ulong32)
+    {
+        init_base(data, asset, sizeof(xBase) + sizeof(model_widget));
 
-// func_8003E91C
-#pragma GLOBAL_ASM("asm/Core/x/xHudModel.s", "destruct__Q24xhud12model_widgetFv")
+        new (&data + 1) model_widget((model_asset&)asset);
+    }
 
-// func_8003E93C
-#pragma GLOBAL_ASM("asm/Core/x/xHudModel.s", "destroy__Q24xhud12model_widgetFv")
+    model_widget::model_widget(const model_asset& a) : widget(a)
+    {
+        mid = a.model;
+        model = NULL;
+        model = load_model(mid);
+        x_scale = 1.0f;
+        y_scale = 1.0f;
+    }
 
-// func_8003E95C
-#pragma GLOBAL_ASM("asm/Core/x/xHudModel.s", "type__Q24xhud12model_widgetCFv")
+    void model_widget::destruct()
+    {
+        widget::destruct();
+    }
 
-// func_8003E99C
-#pragma GLOBAL_ASM("asm/Core/x/xHudModel.s", "type_name__Q24xhud11model_assetFv")
+    void model_widget::destroy()
+    {
+        destruct();
+    }
 
-// func_8003E9AC
-#pragma GLOBAL_ASM("asm/Core/x/xHudModel.s", "is__Q24xhud12model_widgetCFUi")
+    uint32 model_widget::type() const
+    {
+        static uint32 myid = xStrHash(model_asset::type_name());
 
-// func_8003EA04
-#pragma GLOBAL_ASM("asm/Core/x/xHudModel.s", "update__Q24xhud12model_widgetFf")
+        return myid;
+    }
 
-// func_8003EA80
-#pragma GLOBAL_ASM("asm/Core/x/xHudModel.s", "set_params__Q24xhud12model_widgetFRP14xModelInstanceRQ24xhud14render_contextffff")
+    bool model_widget::is(uint32 id) const
+    {
+        return id == model_widget::type() || widget::is(id);
+    }
 
-// func_8003EAA4
-#pragma GLOBAL_ASM("asm/Core/x/xHudModel.s", "render__Q24xhud12model_widgetFv")
+    void model_widget::update(float32 dt)
+    {
+        updater(dt);
+
+        if (!visible() || rc.a <= 0.5f / 255)
+        {
+            return;
+        }
+
+        xModelUpdate(model, dt);
+        xModelEval(model);
+    }
+
+    void model_widget::set_params(xModelInstance*& model, render_context& rc, float32 xs,
+                                  float32 ys, float32 lx, float32 ly)
+    {
+        x_scale = xs;
+        y_scale = ys;
+
+        model->Scale.x = xs;
+        model->Scale.y = ys;
+
+        rc.loc.x = lx;
+        rc.loc.y = ly;
+    }
+
+    void model_widget::render()
+    {
+        if (rc.a >= -0.00001f && rc.a <= 0.00001f)
+        {
+            return;
+        }
+
+        model->Scale.x = x_scale;
+        model->Scale.y = y_scale;
+        model->Scale.z = 1.0f;
+
+        render_model(*model, rc);
+    }
+} // namespace xhud
