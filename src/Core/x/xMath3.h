@@ -65,6 +65,12 @@ struct xCylinder
     float32 h;
 };
 
+struct xPlane
+{
+    xVec3 norm;
+    float32 d;
+};
+
 struct xRay3
 {
     xVec3 origin;

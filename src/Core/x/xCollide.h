@@ -34,6 +34,14 @@ struct xCollis
     };
 };
 
+enum xCollideSphereHitType
+{
+    exCOLLIDESPHEREHITTYPE_UNKNOWN,
+    exCOLLIDESPHEREHITTYPE_INTERIOR,
+    exCOLLIDESPHEREHITTYPE_EDGE,
+    exCOLLIDESPHEREHITTYPE_VERTEX
+};
+
 uint32 xSphereHitsSphere(const xSphere* a, const xSphere* b, xCollis* coll);
 uint32 xSphereHitsBox(const xSphere* a, const xBox* b, xCollis* coll);
 uint32 xSphereHitsOBB_nu(const xSphere* s, const xBox* b, const xMat4x3* m, xCollis* coll);

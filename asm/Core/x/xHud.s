@@ -57,6 +57,8 @@ __vt__Q24xhud6widget:
 
 .section .sdata2
 
+.balign 8
+
 .global known_types__Q24xhud18_esc__2_unnamed_esc__2_xHud_cpp_esc__2_
 known_types__Q24xhud18_esc__2_unnamed_esc__2_xHud_cpp_esc__2_:
 	.incbin "baserom.dol", 0x32EEF0, 0x28

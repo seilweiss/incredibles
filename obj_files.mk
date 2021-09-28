@@ -64,7 +64,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/asm/Core/x/xGrid.o\
 	$(OBJ_DIR)/src/Core/x/xGrid.o\
 	$(OBJ_DIR)/src/Core/x/xGroup.o\
-	$(OBJ_DIR)/asm/Core/x/xHierarchyBound.o\
 	$(OBJ_DIR)/src/Core/x/xHierarchyBound.o\
 	$(OBJ_DIR)/src/Core/x/xhipio.o\
 	$(OBJ_DIR)/asm/Core/x/xHud.o\
