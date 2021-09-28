@@ -2,6 +2,8 @@
 
 .section .sbss
 
+.balign 8
+
 .global xmath_inited
 xmath_inited:
 	.skip 0x4

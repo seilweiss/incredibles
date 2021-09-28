@@ -1,40 +1,39 @@
 #include "xLightKit.h"
+
 #include "xMath.h"
 
-#include <types.h>
+#include "../p2/iAsync.h"
+
 #include <string.h>
 
-extern xLightKit* gLastLightKit;
+xLightKit* gLastLightKit = NULL;
 
-extern float32 _esc__2_815_0; // 1.0
-extern float32 _esc__2_877; // 0.00001
-
-// func_800430F8
-#if 1
-#pragma GLOBAL_ASM("asm/Core/x/xLightKit.s", "xLightKit_Prepare__FPv")
-#else
-// Copied from BFBB. Second half is correct but first half is not and Ghidra's output is too messy for me to fix it
 xLightKit* xLightKit_Prepare(void* data)
 {
-    xLightKit* lkit = (xLightKit*)data;
-    lkit->lightList = (xLightKitLight*)((int*)data + 4);
-    xLightKitLight* currlight = (xLightKitLight*)((int*)data + 4);
+    iAsyncLockRWSentry sentry;
 
-    for (int i = 0; i < lkit->lightCount; currlight++, i++)
+    xLightKit* lkit = (xLightKit*)data;
+    xLightKitLight* lightList = (xLightKitLight*)(lkit + 1);
+
+    lkit->lightList = lightList;
+
+    xLightKitLight* currlight = lightList;
+
+    for (uint32 i = 0; i < lkit->lightCount; i++)
     {
-        if (currlight->platLight != NULL)
+        if (currlight->platLight)
         {
             return lkit;
         }
 
-        // If any of the colors is greater than 1.0, normalize back to 0-1
-        if (currlight->color.red > _esc__2_815_0 || currlight->color.green > _esc__2_815_0 ||
-            currlight->color.blue > _esc__2_815_0)
+        if (currlight->color.red > 1.0f || currlight->color.green > 1.0f ||
+            currlight->color.blue > 1.0f)
         {
-            float32 s;
-            s = MAX(MAX(currlight->color.red, currlight->color.green), currlight->color.blue);
-            s = MAX(s, _esc__2_877);
-            s = _esc__2_815_0 / s;
+            float32 s =
+                MAX(MAX(currlight->color.red, currlight->color.green), currlight->color.blue);
+
+            s = 1.0f / MAX(s, 0.00001f);
+
             currlight->color.red *= s;
             currlight->color.green *= s;
             currlight->color.blue *= s;
@@ -42,28 +41,29 @@ xLightKit* xLightKit_Prepare(void* data)
 
         switch (currlight->type)
         {
-        case 1:
-            currlight->platLight = RpLightCreate(2);
+        case XLIGHTKIT_AMBIENT:
+            currlight->platLight = RpLightCreate(rpLIGHTAMBIENT);
             break;
-        case 2:
-            currlight->platLight = RpLightCreate(1);
+        case XLIGHTKIT_DIRECTIONAL:
+            currlight->platLight = RpLightCreate(rpLIGHTDIRECTIONAL);
             break;
-        case 3:
-            currlight->platLight = RpLightCreate(128);
+        case XLIGHTKIT_POINT:
+            currlight->platLight = RpLightCreate(rpLIGHTPOINT);
             break;
-        case 4:
-            currlight->platLight = RpLightCreate(130);
-            break;
-        default:
+        case XLIGHTKIT_SPOT:
+            currlight->platLight = RpLightCreate(rpLIGHTSPOTSOFT);
             break;
         }
+
         RpLightSetColor(currlight->platLight, &currlight->color);
-        if (currlight->type >= 2)
+
+        if (currlight->type >= XLIGHTKIT_DIRECTIONAL)
         {
             RwFrame* frame = RwFrameCreate();
-            RwMatrixTag tmpmat;
 
-            memset(&tmpmat, 0, 64);
+            RwMatrix tmpmat;
+            memset(&tmpmat, 0, sizeof(RwMatrix));
+
             tmpmat.right.x = -currlight->matrix[0];
             tmpmat.right.y = -currlight->matrix[1];
             tmpmat.right.z = -currlight->matrix[2];
@@ -76,80 +76,94 @@ xLightKit* xLightKit_Prepare(void* data)
             tmpmat.pos.x = currlight->matrix[12];
             tmpmat.pos.y = currlight->matrix[13];
             tmpmat.pos.z = currlight->matrix[14];
+
             RwV3dNormalize(&tmpmat.right, &tmpmat.right);
             RwV3dNormalize(&tmpmat.up, &tmpmat.up);
             RwV3dNormalize(&tmpmat.at, &tmpmat.at);
+
             RwFrameTransform(frame, &tmpmat, rwCOMBINEREPLACE);
-            _rwObjectHasFrameSetFrame(currlight->platLight, frame);
+
+            RpLightSetFrame(currlight->platLight, frame);
         }
-        if (currlight->type >= 3)
+
+        if (currlight->type >= XLIGHTKIT_POINT)
         {
             RpLightSetRadius(currlight->platLight, currlight->radius);
         }
-        if (currlight->type >= 4)
+
+        if (currlight->type >= XLIGHTKIT_SPOT)
         {
             RpLightSetConeAngle(currlight->platLight, currlight->angle);
         }
+
+        currlight++;
     }
 
-    return (xLightKit*)data;
+    return lkit;
 }
-#endif
 
-// func_800433C4
 void xLightKit_Enable(xLightKit* lkit, RpWorld* world)
 {
-    if (lkit != gLastLightKit)
-    {
-        int i;
-        if (gLastLightKit != NULL)
-        {
-            for (i = 0; i < gLastLightKit->lightCount; i++)
-            {
-                RpWorldRemoveLight(world, gLastLightKit->lightList[i].platLight);
-            }
-        }
-        gLastLightKit = lkit;
-        if (lkit != NULL)
-        {
-            for (i = 0; i < lkit->lightCount; i++)
-            {
-                RpWorldAddLight(world, lkit->lightList[i].platLight);
-            }
-        }
-    }
-}
-
-// func_8004347C
-xLightKit* xLightKit_GetCurrent(RpWorld* world)
-{
-    return gLastLightKit;
-}
-
-// func_80043484
-void xLightKit_Destroy(xLightKit* lkit)
-{
-    if (lkit == NULL)
+    if (lkit == gLastLightKit)
     {
         return;
     }
 
-    int i;
+    uint32 i;
+
+    if (gLastLightKit)
+    {
+        for (i = 0; i < gLastLightKit->lightCount; i++)
+        {
+            RpWorldRemoveLight(world, gLastLightKit->lightList[i].platLight);
+        }
+    }
+
+    gLastLightKit = lkit;
+
+    if (lkit)
+    {
+        for (i = 0; i < lkit->lightCount; i++)
+        {
+            RpWorldAddLight(world, lkit->lightList[i].platLight);
+        }
+    }
+}
+
+xLightKit* xLightKit_GetCurrent(RpWorld*)
+{
+    return gLastLightKit;
+}
+
+void xLightKit_Destroy(xLightKit* lkit)
+{
+    if (!lkit)
+    {
+        return;
+    }
+
+    uint32 i;
     xLightKitLight* currLight = lkit->lightList;
 
-    for (i = 0; i < lkit->lightCount; currLight++, i++)
+    for (i = 0; i < lkit->lightCount; i++)
     {
-        if (currLight->platLight != NULL)
+        if (currLight->platLight)
         {
             _rwFrameSyncDirty();
-            RwFrame* tframe = (RwFrame*)(currLight->platLight->object).object.parent;
-            if (tframe != NULL)
+
+            RwFrame* tframe = RpLightGetFrame(currLight->platLight);
+
+            if (tframe)
             {
-                _rwObjectHasFrameSetFrame(currLight->platLight, 0);
+                RpLightSetFrame(currLight->platLight, NULL);
                 RwFrameDestroy(tframe);
             }
+
             RpLightDestroy(currLight->platLight);
-            currLight->platLight = 0;
+
+            currLight->platLight = NULL;
         }
+
+        currLight++;
     }
 }

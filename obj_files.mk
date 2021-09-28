@@ -84,7 +84,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xJSP.o\
 	$(OBJ_DIR)/asm/Core/x/xLaserBolt.o\
 	$(OBJ_DIR)/src/Core/x/xLaserBolt.o\
-	$(OBJ_DIR)/asm/Core/x/xLightKit.o\
 	$(OBJ_DIR)/src/Core/x/xLightKit.o\
 	$(OBJ_DIR)/asm/Core/x/xMath.o\
 	$(OBJ_DIR)/src/Core/x/xMath.o\

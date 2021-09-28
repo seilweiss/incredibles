@@ -3,4 +3,11 @@
 
 #include <types.h>
 
+class iAsyncLockRWSentry
+{
+public:
+    iAsyncLockRWSentry();
+    ~iAsyncLockRWSentry();
+};
+
 #endif

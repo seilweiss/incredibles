@@ -1,9 +1,10 @@
 #ifndef XLIGHTKIT_H
 #define XLIGHTKIT_H
 
+#include <types.h>
+
 #include <rwcore.h>
 #include <rpworld.h>
-#include <types.h>
 
 struct xLightKitLight
 {
@@ -15,6 +16,11 @@ struct xLightKitLight
     RpLight* platLight;
 };
 
+#define XLIGHTKIT_AMBIENT 1
+#define XLIGHTKIT_DIRECTIONAL 2
+#define XLIGHTKIT_POINT 3
+#define XLIGHTKIT_SPOT 4
+
 struct xLightKit
 {
     uint32 tagID;
@@ -23,8 +29,11 @@ struct xLightKit
     xLightKitLight* lightList;
 };
 
+extern xLightKit* gLastLightKit;
+
 xLightKit* xLightKit_Prepare(void* data);
 void xLightKit_Enable(xLightKit* lkit, RpWorld* world);
+xLightKit* xLightKit_GetCurrent(RpWorld*);
 void xLightKit_Destroy(xLightKit* lkit);
 
 #endif
