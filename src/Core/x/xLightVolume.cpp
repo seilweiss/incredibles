@@ -1,39 +1,153 @@
 #include "xLightVolume.h"
 
-#include <types.h>
+#include "xMemMgr.h"
+#include "../p2/iModel.h"
 
-// func_801C596C
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "scene_enter__12xLightVolumeFv")
+#define ACTIVITY_MAX 64
 
-// func_801C59A8
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "scene_exit__12xLightVolumeFv")
+xLightVolume::activity_type* xLightVolume::activities = NULL;
+int32 xLightVolume::activities_used = 0;
 
-// func_801C59AC
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "reset_all__12xLightVolumeFv")
+void xLightVolume::scene_enter()
+{
+    activities = new (eMemStaticTypeUnk0, 0) activity_type[ACTIVITY_MAX];
+    activities_used = 0;
 
-// func_801C59E4
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "create__12xLightVolumeFv")
+    reset_all();
+}
 
-// func_801C59F0
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "activate__12xLightVolumeFv")
+void xLightVolume::scene_exit()
+{
+}
 
-// func_801C5A30
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "deactivate__12xLightVolumeFv")
+void xLightVolume::reset_all()
+{
+    activity_type* act = activities;
+    activity_type* end_act = act + activities_used;
 
-// func_801C5A94
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "__as__Q212xLightVolume13activity_typeFRCQ212xLightVolume13activity_type")
+    while (act != end_act)
+    {
+        act->owner->activity = NULL;
+        act++;
+    }
 
-// func_801C5AA0
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "create__17xLightVolumeModelFv")
+    activities_used = 0;
+}
 
-// func_801C5AF0
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "render__17xLightVolumeModelFv")
+void xLightVolume::create()
+{
+    activity = NULL;
+}
 
-// func_801C5B68
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "render_single__17xLightVolumeModelFP14xModelInstanceUi")
+bool xLightVolume::activate()
+{
+    if (activities_used >= ACTIVITY_MAX)
+    {
+        return false;
+    }
 
-// func_801C5C64
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "render_all__12xLightVolumeFv")
+    activity = &activities[activities_used];
 
-// func_801C5C68
-#pragma GLOBAL_ASM("asm/Core/x/xLightVolume.s", "render_atomic__12xLightVolumeFP8RpAtomic10xColor_tagbUi")
+    activities_used++;
+
+    activity->owner = this;
+
+    return true;
+}
+
+void xLightVolume::deactivate()
+{
+    activities_used--;
+
+    activity_type* tail_activity = &activities[activities_used];
+
+    if (activity != tail_activity)
+    {
+        *activity = *tail_activity;
+        activity->owner->activity = activity;
+    }
+
+    activity = NULL;
+}
+
+void xLightVolumeModel::create()
+{
+    model = NULL;
+    color = g_WHITE;
+    inside = false;
+    single = false;
+
+    xLightVolume::create();
+}
+
+void xLightVolumeModel::render()
+{
+    if (single)
+    {
+        render_single(model, 0);
+    }
+    else
+    {
+        xModelInstance* m = model;
+
+        while (m)
+        {
+            if ((m->Flags & 0x401) == 0x1)
+            {
+                render_single(m, 0);
+            }
+
+            m = m->Next;
+        }
+    }
+}
+
+void xLightVolumeModel::render_single(xModelInstance* model, uint32 stencil_pass)
+{
+    RpAtomic* atomic = model->Data;
+    RpHAnimHierarchy* hierarchy = iModelGetHierarchy(atomic);
+    RwMatrix* old_anim_mat;
+
+    if (hierarchy)
+    {
+        old_anim_mat = hierarchy->pMatrixArray;
+
+        hierarchy->pMatrixArray = model->Mat + 1;
+    }
+
+    xMat4x3& mat = *(xMat4x3*)model->Mat;
+    xMat4x3 old_mat;
+
+    if (model->Scale.x != 0.0f)
+    {
+        old_mat = mat;
+
+        xMat3x3MulScale(&mat, &mat, &model->Scale);
+    }
+
+    RwFrame* frame = RpAtomicGetFrame(atomic);
+    frame->ltm = (RwMatrix&)mat;
+
+    if (!xModelCullSingle(model))
+    {
+        render_atomic(atomic, color, inside, stencil_pass);
+    }
+
+    if (model->Scale.x != 0.0f)
+    {
+        mat = old_mat;
+    }
+
+    if (hierarchy)
+    {
+        hierarchy->pMatrixArray = old_anim_mat;
+    }
+}
+
+void xLightVolume::render_all()
+{
+}
+
+void xLightVolume::render_atomic(RpAtomic*, xColor, bool, uint32)
+{
+}

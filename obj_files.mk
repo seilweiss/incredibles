@@ -523,7 +523,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/asm/GAME/zNPCBotLeap.o\
 	$(OBJ_DIR)/src/GAME/zNPCBotLeap.o\
 	$(OBJ_DIR)/src/GAME/zUIController.o\
-	$(OBJ_DIR)/asm/Core/x/xLightVolume.o\
 	$(OBJ_DIR)/src/Core/x/xLightVolume.o\
 	$(OBJ_DIR)/asm/GAME/zUICustom.o\
 	$(OBJ_DIR)/src/GAME/zUICustom.o\
@@ -669,4 +668,5 @@ PREPROCESS_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xSurface.o\
 	$(OBJ_DIR)/src/Core/x/xBound.o\
 	$(OBJ_DIR)/src/Core/x/xstransvc.o\
-	$(OBJ_DIR)/src/Core/x/xHudModel.o
+	$(OBJ_DIR)/src/Core/x/xHudModel.o\
+	$(OBJ_DIR)/src/Core/x/xLightVolume.o

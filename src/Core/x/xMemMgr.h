@@ -32,6 +32,7 @@ int32 xMemPushBase();
 int32 xMemPopBase(int32 depth);
 
 void* operator new(size_t, xMemStaticType, uint32);
+void* operator new[](size_t, xMemStaticType, uint32);
 
 #define xMEMALLOC(size) xMemAlloc(gActiveHeap, (size), 0)
 #define xMEMALLOCALIGN(size, align) xMemAlloc(gActiveHeap, (size), (align))

@@ -91,6 +91,8 @@ stat_cycle_sound:
 
 .section .sdata2
 
+.balign 8
+
 .global _esc__2_1120_2
 _esc__2_1120_2:
 	.incbin "baserom.dol", 0x3334F8, 0x4

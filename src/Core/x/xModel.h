@@ -68,5 +68,6 @@ struct xModelPool
 
 void xModelUpdate(xModelInstance* modelInst, float32 timeDelta);
 void xModelEval(xModelInstance* modelInst);
+bool32 xModelCullSingle(xModelInstance* minst);
 
 #endif
