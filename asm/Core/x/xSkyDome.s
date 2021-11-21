@@ -1,29 +1,5 @@
 .include "macros.inc"
 
-.section .bss
-
-.global sSkyList
-sSkyList:
-	.skip 0x88
-
-.section .sbss
-
-.global sSkyCount
-sSkyCount:
-	.skip 0x8
-
-.section .sbss2
-
-.global _esc__2_775_0
-_esc__2_775_0:
-	.skip 0x8
-
-.section .sdata2
-
-.global _esc__2_807
-_esc__2_807:
-	.incbin "baserom.dol", 0x32F4F0, 0x8
-
 .if 0
 
 .section .text

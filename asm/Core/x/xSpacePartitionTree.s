@@ -2,6 +2,8 @@
 
 .section .sbss2
 
+.balign 8
+
 .global _esc__2_816_1
 _esc__2_816_1:
 	.skip 0x4

@@ -4,5 +4,6 @@
 #include "iFog.h"
 
 void iCameraSetFogParams(iFogParams* fp, float32 time);
+RwCamera* RwCameraBeginUpdateWrapper(RwCamera* camera);
 
 #endif

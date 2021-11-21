@@ -669,4 +669,5 @@ PREPROCESS_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xBound.o\
 	$(OBJ_DIR)/src/Core/x/xstransvc.o\
 	$(OBJ_DIR)/src/Core/x/xHudModel.o\
-	$(OBJ_DIR)/src/Core/x/xLightVolume.o
+	$(OBJ_DIR)/src/Core/x/xLightVolume.o\
+	$(OBJ_DIR)/src/Core/x/xSkyDome.o

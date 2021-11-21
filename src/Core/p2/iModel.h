@@ -7,5 +7,6 @@
 #include <types.h>
 
 RpHAnimHierarchy* iModelGetHierarchy(RpAtomic* imodel);
+void iModelRender(RpAtomic* model, RwMatrix* mat);
 
 #endif

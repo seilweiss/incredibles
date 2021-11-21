@@ -2,6 +2,8 @@
 
 .section .bss
 
+.balign 16
+
 .global gSnd
 gSnd:
 	.skip 0x3390
@@ -23,6 +25,8 @@ _esc__2_stringBase0_23:
 
 .section .sbss
 
+.balign 8
+
 .global m_eCurrentEffect
 m_eCurrentEffect:
 	.skip 0x4
@@ -43,6 +47,8 @@ gHighwaterSoundMemoryUsed:
 	.skip 0x4
 
 .section .sdata2
+
+.balign 8
 
 .global _esc__2_1049
 _esc__2_1049:

@@ -144,6 +144,8 @@ void xEntHide(xEnt* ent);
 xMat4x3* xEntGetFrame(const xEnt* ent);
 xVec3* xEntGetPos(const xEnt* ent);
 
+uint32 xEntIsVisible(const xEnt* ent);
+
 inline void xEntVisibilityCullOn(xEnt* ent)
 {
     ent->flags |= XENT_VIS_CULL;
