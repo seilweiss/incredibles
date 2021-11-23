@@ -102,6 +102,7 @@ void xMat3x3Normalize(xMat3x3* o, const xMat3x3* m);
 void xMat4x3Mul(xMat4x3* o, const xMat4x3* a, const xMat4x3* b);
 bool xVec3Eq(const xVec3& a, const xVec3& b, float32 tol);
 void xMat3x3MulScale(xMat3x3*, const xMat3x3*, xVec3*);
+void xMat3x3Euler(xMat3x3* m, const xVec3* ypr);
 
 inline static void xMat3x3RMulVec(xVec3* o, const xMat3x3* m, const xVec3* v)
 {

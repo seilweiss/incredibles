@@ -8,6 +8,8 @@ cheats__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_:
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_37
 _esc__2_stringBase0_37:
 	.incbin "baserom.dol", 0x2D72F8, 0x148

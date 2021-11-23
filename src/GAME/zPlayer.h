@@ -63,7 +63,11 @@ struct zPlayer : zEnt
     virtual bool CanTakeDamage() const;
     virtual void LoadCheckPoint();
     virtual void StoreCheckPoint();
-    virtual void SetCamera();
+
+    virtual void SetCamera()
+    {
+    }
+
     virtual void RenderEffects();
     virtual void SetJump(jump* new_jump);
     virtual void GiveHealth(int32 hitPoints, bool from_pickup);

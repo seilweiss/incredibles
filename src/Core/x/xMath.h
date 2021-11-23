@@ -42,6 +42,7 @@
 
 float32 xsqrt(float32 x);
 float32 xasin(float32 x);
+float32 xatan2(float32 y, float32 x);
 
 inline void xsqrtfast(float32& out, register float32 x)
 {

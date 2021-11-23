@@ -3,6 +3,8 @@
 
 #include "zGlobals.h"
 
+extern uint32 FB_XRES;
+extern uint32 FB_YRES;
 extern uint32 SCENE_ID_MNU_START;
 extern zGlobals globals;
 extern xGlobals* xglobals;

@@ -1,75 +1,283 @@
 #include "zCam.h"
 
-#include <types.h>
+#include "zMain.h"
+#include "../Core/x/xPointer.h"
+#include "../Core/x/xstransvc.h"
+#include "zEntTrigger.h"
+#include "../Core/x/xEvent.h"
+#include "../Core/x/xDebug.h"
 
-// func_80087A30
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamSceneEnter__FR6zSceneRC7xMat4x3")
+namespace
+{
+    uint32 input_disabled;
+    zcam_mode_enum current_mode = ZCAM_MODE_INVALID;
+    xCam* mode_cams[1];
+    bool have_default_orientation;
+    xVec3 default_orientation = { 0.0f, 0.0f, 0.0f };
+    zCamPlayer* follow_cam = NULL;
+    xCamGroup global_cam;
+    xCamScreen global_screen;
 
-// func_80087B34
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "init_debug_cam__18_esc__2_unnamed_esc__2_zCam_cpp_esc__2_FR6xScene")
+    inline void init_debug_cam(xScene&)
+    {
+    }
 
-// func_80087B38
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "__ct__10zCamPlayerFv")
+    inline bool update_debug_cam(float32)
+    {
+        return false;
+    }
 
-// func_80087B70
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamSceneExit__Fv")
+    inline void reset_debug_cam()
+    {
+    }
 
-// func_80087BC4
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "xDebugRemoveTweaks__FPCcPFRC10tweak_infoPv_bPv")
+} // namespace
 
-// func_80087BC8
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamReset__FRC7xMat4x3")
+static void zCamNotifyTriggers();
 
-// func_80087C8C
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "SetCamera__7zPlayerFv")
+void zCamSceneEnter(zScene& scene, const xMat4x3& mat)
+{
+    xCam::scene_enter();
 
-// func_80087C90
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "reset_debug_cam__18_esc__2_unnamed_esc__2_zCam_cpp_esc__2_Fv")
+    have_default_orientation = false;
+    input_disabled = 0;
 
-// func_80087C94
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "set_start_theta__10zCamPlayerFf")
+    globals.screen = &global_screen;
+    globals.screen->create(FB_XRES, FB_YRES);
+    globals.screen->set_scene(scene);
+    globals.screen->set_fov(DEG2RAD(75.0f));
 
-// func_80087CA8
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamUpdate__Ff")
+    globals.cam = &global_cam;
+    globals.cam->create();
+    globals.cam->fov_default = globals.screen->fov;
 
-// func_80087E58
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "update_debug_cam__18_esc__2_unnamed_esc__2_zCam_cpp_esc__2_Ff")
+    follow_cam = new (eMemStaticTypeUnk0, 0) zCamPlayer();
+    follow_cam->create();
+    follow_cam->owner = 'ZCAM';
 
-// func_80087E60
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "assign__5xVec2Ff")
+    mode_cams[0] = follow_cam;
+    current_mode = ZCAM_MODE_INVALID;
 
-// func_80087E84
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamNotifyTriggers__Fv")
+    zCamReset(mat);
+    init_debug_cam(scene);
+}
 
-// func_80088028
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zEntTriggerAsset__FRC11zEntTrigger")
+void zCamSceneExit()
+{
+    xDebugRemoveTweaks("Camera|Follow|", NULL, NULL);
 
-// func_80088034
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamPrepareRender__Fv")
+    globals.cam->destroy();
+    globals.screen->destroy();
 
-// func_80088060
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamBeginRender__Fv")
+    xCam::scene_exit();
+}
 
-// func_80088090
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamEndRender__Fv")
+void zCamReset(const xMat4x3& mat)
+{
+    input_disabled = 0;
 
-// func_800880BC
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamSetMode__F14zcam_mode_enum")
+    globals.cam->reset();
 
-// func_80088140
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamAdd__FR4xCamb")
+    follow_cam->set_start_theta(
+        PI + (have_default_orientation ? default_orientation.x : xatan2(mat.at.x, mat.at.z)));
 
-// func_80088170
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamRemove__FR4xCamb")
+    xMat3x3Euler(&globals.cam->mat, &default_orientation);
 
-// func_800881A0
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamSetStartOrientation__FUi")
+    globals.cam->mat.pos = mat.pos;
 
-// func_800881D4
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamSetStartOrientation__Ffff")
+    current_mode = ZCAM_MODE_INVALID;
+    zCamSetMode(ZCAM_MODE_DEFAULT);
 
-// func_80088224
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamGetMatrix__Fv")
+    reset_debug_cam();
 
-// func_80088234
-#pragma GLOBAL_ASM("asm/GAME/zCam.s", "zCamGetDefault__Fv")
+    ZPLAYER->SetCamera();
+}
+
+void zCamUpdate(float32 dt)
+{
+    if (globals.player.ControlOff)
+    {
+        globals.cam->analog.ang = 0.0f;
+        globals.cam->analog.dir.assign(1.0f, 0.0f);
+        globals.cam->analog.mag = 0.0f;
+        globals.cam->analog.offset.assign(0.0f);
+    }
+    else
+    {
+        globals.cam->analog = globals.pad0->analog[1];
+    }
+
+    if (globals.invertCameraY)
+    {
+        globals.cam->analog.offset.y = -globals.cam->analog.offset.y;
+        globals.cam->analog.dir.y = -globals.cam->analog.dir.y;
+        globals.cam->analog.ang = 2.0f * PI - globals.cam->analog.ang;
+    }
+
+    if (globals.invertCameraX)
+    {
+        globals.cam->analog.offset.x = -globals.cam->analog.offset.x;
+        globals.cam->analog.dir.x = -globals.cam->analog.dir.x;
+
+        if (globals.cam->analog.ang >= PI)
+        {
+            globals.cam->analog.ang = 3.0f * PI - globals.cam->analog.ang;
+        }
+        else
+        {
+            globals.cam->analog.ang = PI - globals.cam->analog.ang;
+        }
+    }
+
+    globals.cam->update(*globals.sceneCur, dt);
+
+    if (!update_debug_cam(dt))
+    {
+        if (globals.screen->fov != globals.cam->fov)
+        {
+            globals.screen->set_fov(globals.cam->fov);
+        }
+
+        globals.screen->set_world_matrix(globals.cam->mat);
+    }
+
+    zCamNotifyTriggers();
+}
+
+static void zCamNotifyTriggers()
+{
+    xScene& s = *globals.sceneCur;
+
+    xSphere camSphere;
+    camSphere.center = globals.cam->mat.pos;
+    camSphere.r = 0.1f;
+
+    xVec3 dummyDir;
+    dummyDir.assign(0.0f, 0.0f, 0.0f);
+
+    zEntTrigger** it = (zEntTrigger**)s.trigs;
+    zEntTrigger** end = it + s.num_trigs;
+
+    while (it != end)
+    {
+        zEntTrigger& trig = **it;
+
+        if (xBaseIsEnabled(&trig) && !(zEntTriggerAsset(trig)->flags & 0x1))
+        {
+            bool want_enter = false;
+            bool want_exit = false;
+            xLinkAsset* link = trig.link;
+            xLinkAsset* end_link = link + trig.linkCount;
+
+            while (link != end_link)
+            {
+                if (link->srcEvent == eEventEnterCamera)
+                {
+                    want_enter = true;
+                }
+                else if (link->srcEvent == eEventExitCamera)
+                {
+                    want_exit = true;
+                }
+
+                link++;
+            }
+
+            want_enter = want_enter && !(trig.entered & ZENTTRIGGER_CAM);
+            want_exit = want_exit && (trig.entered & ZENTTRIGGER_CAM);
+
+            if (want_enter || want_exit)
+            {
+                bool inside = zEntTriggerHitsSphere(trig, camSphere, dummyDir);
+
+                if (inside)
+                {
+                    trig.entered |= ZENTTRIGGER_CAM;
+                }
+                else
+                {
+                    trig.entered &= ~ZENTTRIGGER_CAM;
+                }
+
+                if (want_enter && inside)
+                {
+                    zEntEvent(&trig, eEventEnterCamera);
+                }
+                else if (want_exit && !inside)
+                {
+                    zEntEvent(&trig, eEventExitCamera);
+                }
+            }
+        }
+
+        it++;
+    }
+}
+
+void zCamPrepareRender()
+{
+    globals.screen->prepare_render();
+}
+
+void zCamBeginRender()
+{
+    globals.screen->begin_render(false);
+}
+
+void zCamEndRender()
+{
+    globals.screen->end_render();
+}
+
+void zCamSetMode(zcam_mode_enum mode)
+{
+    if (mode == current_mode)
+    {
+        return;
+    }
+
+    globals.cam->add(*mode_cams[mode], false);
+
+    if (current_mode != ZCAM_MODE_INVALID)
+    {
+        globals.cam->remove(*mode_cams[current_mode], false);
+    }
+
+    current_mode = mode;
+}
+
+void zCamAdd(xCam& cam, bool force_cut)
+{
+    globals.cam->add(cam, force_cut);
+}
+
+void zCamRemove(xCam& cam, bool force_cut)
+{
+    globals.cam->remove(cam, force_cut);
+}
+
+void zCamSetStartOrientation(uint32 pointer_id)
+{
+    uint32 size;
+    void* a = xSTFindAsset(pointer_id, &size);
+    pointer_asset& pa = *(pointer_asset*)a;
+
+    zCamSetStartOrientation(pa.yaw, pa.pitch, pa.roll);
+}
+
+void zCamSetStartOrientation(float32 yaw, float32 pitch, float32 roll)
+{
+    have_default_orientation = true;
+    default_orientation.assign(yaw, pitch, roll);
+    follow_cam->set_start_theta(PI + yaw);
+}
+
+xMat4x3& zCamGetMatrix()
+{
+    return globals.cam->mat;
+}
+
+zCamPlayer* zCamGetDefault()
+{
+    return follow_cam;
+}

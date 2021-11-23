@@ -222,7 +222,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zAssetTypes.o\
 	$(OBJ_DIR)/asm/GAME/zBulletTime.o\
 	$(OBJ_DIR)/src/GAME/zBulletTime.o\
-	$(OBJ_DIR)/asm/GAME/zCam.o\
 	$(OBJ_DIR)/src/GAME/zCam.o\
 	$(OBJ_DIR)/src/GAME/zCameraFly.o\
 	$(OBJ_DIR)/src/GAME/zCameraTweak.o\
@@ -670,4 +669,5 @@ PREPROCESS_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xstransvc.o\
 	$(OBJ_DIR)/src/Core/x/xHudModel.o\
 	$(OBJ_DIR)/src/Core/x/xLightVolume.o\
-	$(OBJ_DIR)/src/Core/x/xSkyDome.o
+	$(OBJ_DIR)/src/Core/x/xSkyDome.o\
+	$(OBJ_DIR)/src/GAME/zCam.o

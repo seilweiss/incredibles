@@ -75,10 +75,6 @@ struct xCamConfigFollow
 class xCam
 {
 public:
-    xCam()
-    {
-    }
-
     xMat4x3 mat;
     float32 fov;
     int32 flags;
@@ -101,6 +97,13 @@ public:
     } orient;
     xCamConfigCommon cfg_common;
 
+    xCam()
+    {
+    }
+
+    static void scene_enter();
+    static void scene_exit();
+
     virtual void create();
     virtual void destroy();
     virtual void start();
@@ -109,12 +112,12 @@ public:
     virtual xCam* get_next();
     virtual xCamConfigFollow* config_follow();
 
+    void add_tweaks(const char*);
+
     int32 group_index;
     int32 group_flags;
     xCamBlend* blender;
     uint8 unk0xBC[4];
-
-    void add_tweaks(const char*);
 };
 
 class xCamBlend : public xCam
@@ -141,6 +144,29 @@ public:
     int32 child_flags;
     int32 child_flags_mask;
     xCamBlend* blend_cam[4];
+
+    void create();
+    void destroy();
+    void reset();
+    void update(xScene& scene, float32 dt);
+    void add(xCam& cam, bool force_cut);
+    void remove(xCam& cam, bool force_cut);
+};
+
+class xCamScreen
+{
+public:
+    RwCamera* icam;
+    float32 fov;
+
+    void create(int32 w, int32 h);
+    void destroy();
+    void set_scene(xScene& scene);
+    void prepare_render();
+    void begin_render(bool clear);
+    void end_render();
+    void set_world_matrix(const xMat4x3& mat);
+    void set_fov(float32 fov);
 };
 
 #endif

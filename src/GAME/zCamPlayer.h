@@ -127,7 +127,16 @@ public:
     bool was_colliding;
     xMat4x3 snap_mat;
 
+    void create();
+    void start();
+    void update(xScene& scene, float32 dt);
     void snap_to(const xMat4x3& mat);
+
+    void set_start_theta(float32 theta)
+    {
+        start_zone.theta = theta;
+        start_zone.which |= 0x4;
+    }
 };
 
 #endif

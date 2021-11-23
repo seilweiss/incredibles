@@ -7,6 +7,17 @@ struct xVec2
 {
     float32 x;
     float32 y;
+
+    void assign(float32 x, float32 y)
+    {
+        this->x = x;
+        this->y = y;
+    }
+
+    void assign(float32 xy)
+    {
+        assign(xy, xy);
+    }
 };
 
 template <class T> struct basic_rect
