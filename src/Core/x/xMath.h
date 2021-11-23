@@ -10,19 +10,35 @@
 
 #define ALIGN(x, a) ((x) + ((a)-1) & ~((a)-1))
 
-// Override these to point to their corresponding symbols in .sdata2
-// For example:
-//     #undef PI
-//     #undef ONEEIGHTY
-//     #define PI _771_1
-//     #define ONEEIGHTY _778_0
-#define PI 3.14159265359
-#define ONEEIGHTY 180.0
+#define PI 3.14159265f
 
-#define INVERSEPI (float32)(1.0 / (PI))
+#define INVERSEPI (1.0f / (PI))
+#define TWOPI (2.0f * (PI))
 
-#define DEG2RAD(x) (float32)((PI) * (x) / (ONEEIGHTY))
-#define RAD2DEG(x) (float32)((ONEEIGHTY) * (x) / (PI))
+// To use DEG2RAD/RAD2DEG with extern'd .sdata2 symbols,
+// define SDATA2_PI and SDATA2_180 at the top of the .cpp file,
+// BEFORE any includes
+//
+// Example:
+//
+//     #define SDATA2_PI _771_1
+//     #define SDATA2_180 _778_0
+//
+//     #include "xMath.h"
+//
+//     extern float64 _771_1;
+//     extern float64 _778_0;
+
+#ifndef SDATA2_PI
+#define SDATA2_PI 3.14159265359
+#endif
+
+#ifndef SDATA2_180
+#define SDATA2_180 180.0
+#endif
+
+#define DEG2RAD(x) (float32)((SDATA2_PI) * (x) / (SDATA2_180))
+#define RAD2DEG(x) (float32)((SDATA2_180) * (x) / (SDATA2_PI))
 
 float32 xsqrt(float32 x);
 float32 xasin(float32 x);
