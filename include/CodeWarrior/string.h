@@ -11,6 +11,7 @@ void* memset(void*, int, size_t);
 int stricmp(const char*, const char*);
 char* strcpy(char*, const char*);
 char* strcat(char*, const char*);
+int strcmp(const char*, const char*);
 
 #ifdef __cplusplus
 }

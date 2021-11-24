@@ -1,90 +1,570 @@
 #include "zBehavior.h"
 
-#include <types.h>
+#include "../Core/x/xString.h"
+#include "../Core/x/xRand.h"
 
-// func_80183828
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "ErrorCB__FP15xAnimTransitionP11xAnimSinglePv")
+#include <string.h>
 
-// func_80183830
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "system_event__16behavior_managerFP5xBaseP5xBaseUiPCfP5xBaseUi")
+uint32 ErrorCB(xAnimTransition*, xAnimSingle*, void*)
+{
+    return 0;
+}
 
-// func_80183904
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "before_anim_matrices__16behavior_managerFP9xAnimPlayP5xQuatP5xVec3i")
+bool behavior_manager::system_event(xBase* from, xBase* to, uint32 to_event,
+                                    const float32* to_param, xBase* to_param_widget,
+                                    uint32 to_param_widget_id)
+{
+    if (current_behavior && current_behavior->system_event(from, to, to_event, to_param,
+                                                           to_param_widget, to_param_widget_id))
+    {
+        return true;
+    }
 
-// func_80183984
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "collision_response__16behavior_managerFRC5xVec3RC22SphereCollisionResultsR5xVec3")
+    set_iteration_pointers();
 
-// func_80183A00
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "register_collision__16behavior_managerFRC22SphereCollisionResults")
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        if (i->data != current_behavior &&
+            i->data->system_event(from, to, to_event, to_param, to_param_widget,
+                                  to_param_widget_id))
+        {
+            return true;
+        }
+    }
 
-// func_80183A5C
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "add_states__16behavior_managerFP10xAnimTable")
+    return false;
+}
 
-// func_80183AB8
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "add_transitions__16behavior_managerFP10xAnimTable")
+void behavior_manager::before_anim_matrices(xAnimPlay* play, xQuat* quat, xVec3* tran,
+                                            int32 boneCount)
+{
+    set_iteration_pointers();
 
-// func_80183B14
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "init__16behavior_managerFv")
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        if (i->prev_ran)
+        {
+            i->data->before_anim_matrices(play, quat, tran, boneCount);
+        }
+    }
+}
 
-// func_80183B88
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "damage__16behavior_managerFR17zCombatDamageInfo")
+bool behavior_manager::collision_response(const xVec3& current_dir,
+                                          const SphereCollisionResults& scene_collide,
+                                          xVec3& response_dpos)
+{
+    bool collide_on = true;
 
-// func_80183C34
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "select_current__16behavior_managerFf")
+    set_iteration_pointers();
 
-// func_80183D50
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "update__16behavior_managerFf")
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        collide_on &=
+            i->data->collision_response(current_dir, scene_collide, response_dpos, collide_on);
+    }
 
-// func_80183EC8
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "set_iteration_pointers__16behavior_managerFv")
+    return collide_on;
+}
 
-// func_80183EE8
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "add_behavior__16behavior_managerFP8behaviorSc")
+void behavior_manager::register_collision(const SphereCollisionResults& scene_collide)
+{
+    set_iteration_pointers();
 
-// func_80184078
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "set_behavior__16behavior_managerFP8behavior")
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        i->data->register_collision(scene_collide);
+    }
+}
 
-// func_801840EC
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "get_behavior__16behavior_managerFUi")
+void behavior_manager::add_states(xAnimTable* table)
+{
+    set_iteration_pointers();
 
-// func_8018412C
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "reset_behavior__16behavior_managerFP8behavior")
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        i->data->add_states(table);
+    }
+}
 
-// func_80184198
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "remove_behavior__16behavior_managerFP8behavior")
+void behavior_manager::add_transitions(xAnimTable* table)
+{
+    set_iteration_pointers();
 
-// func_80184204
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "render__16behavior_managerFv")
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        i->data->add_transitions(table);
+    }
+}
 
-// func_80184264
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "reset__16behavior_managerFv")
+void behavior_manager::init()
+{
+    set_iteration_pointers();
 
-// func_801842D4
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "setup__16behavior_managerFv")
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        i->data->init();
+        i->data->type = xStrHash(i->data->getName());
+    }
+}
 
-// func_80184338
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "exit__16behavior_managerFv")
+void behavior_manager::damage(zCombatDamageInfo& damageInfo)
+{
+    killed = false;
 
-// func_8018438C
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "scene_setup__16behavior_managerFv")
+    if (current_behavior && current_behavior->damage(damageInfo))
+    {
+        return;
+    }
 
-// func_801843E0
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "render_extra__16behavior_managerFv")
+    set_iteration_pointers();
 
-// func_80184440
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "exit_states__16behavior_managerFv")
+    for (behavior_node* i = behavior_list; i != NULL && !killed; i = i->iteration_next)
+    {
+        if (i->data != current_behavior && i->data->damage(damageInfo))
+        {
+            break;
+        }
+    }
+}
 
-// func_801844EC
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "kill__16behavior_managerFv")
+void behavior_manager::select_current(float32 dt)
+{
+    behavior* new_behavior = NULL;
 
-// func_80184548
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "in_state__8behaviorCFPCcfP14xModelInstance")
+    set_iteration_pointers();
 
-// func_8018464C
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "set_state__8behaviorFPCcfP14xModelInstance")
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        if (i->data->exclusive())
+        {
+            bool runnable = i->data->runnable(dt);
 
-// func_801846DC
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "set_state__8behaviorFPCcffP14xModelInstance")
+            if (!new_behavior && runnable)
+            {
+                i->delay -= dt;
 
-// func_80184784
-#pragma GLOBAL_ASM("asm/GAME/zBehavior.s", "enter_state__8behaviorFPC8behavior")
+                if (i->delay < 0.0f)
+                {
+                    new_behavior = i->data;
+                }
+            }
+            else
+            {
+                float32 state_delay = i->data->delay();
+
+                if (i->delay <= 0.0f && state_delay > 0.0f)
+                {
+                    i->delay = state_delay * xurand();
+                }
+            }
+        }
+    }
+
+    set_behavior(new_behavior);
+}
+
+void behavior_manager::update(float32 dt)
+{
+    killed = false;
+
+    if (!manual_update)
+    {
+        select_current(dt);
+    }
+
+    if (killed)
+    {
+        return;
+    }
+
+    set_iteration_pointers();
+
+    for (behavior_node* i = behavior_list; i != NULL && !killed; i = i->iteration_next)
+    {
+        if (i->data->exclusive())
+        {
+            i->prev_ran = (current_behavior == i->data);
+
+            if (i->prev_ran)
+            {
+                i->data->update(dt);
+            }
+        }
+        else if (i->data->runnable(dt))
+        {
+            if (!i->prev_ran)
+            {
+                i->data->enter_state(NULL);
+            }
+
+            i->prev_ran = true;
+            i->data->update(dt);
+        }
+        else if (i->prev_ran)
+        {
+            i->data->exit_state();
+            i->prev_ran = false;
+        }
+    }
+}
+
+void behavior_manager::set_iteration_pointers()
+{
+    for (behavior_node* i = behavior_list; i != NULL; i = i->next)
+    {
+        i->iteration_next = i->next;
+    }
+}
+
+void behavior_manager::add_behavior(behavior* new_behavior, int8 priority)
+{
+    behavior_node* node = NULL;
+
+    if (removed_list)
+    {
+        if (removed_list->data == new_behavior)
+        {
+            node = removed_list;
+            removed_list = removed_list->next;
+        }
+        else
+        {
+            behavior_node* last_node = removed_list;
+
+            for (behavior_node* i = removed_list->next; i != NULL; i = i->next)
+            {
+                if (i->data == new_behavior)
+                {
+                    node = i;
+                    last_node->next = i->next;
+                    break;
+                }
+
+                last_node = i;
+            }
+        }
+    }
+
+    if (!node)
+    {
+        node = (behavior_node*)xMEMALLOC(sizeof(behavior_node));
+        node->delay = 0.0f;
+        node->data = new_behavior;
+        node->priority = priority;
+    }
+    else if (priority != -1)
+    {
+        node->priority = priority;
+    }
+
+    node->iteration_next = NULL;
+
+    if (node->priority == -1)
+    {
+        if (behavior_list)
+        {
+            node->priority = behavior_list->priority + 1;
+        }
+        else
+        {
+            node->priority = 0;
+        }
+    }
+
+    if (!behavior_list)
+    {
+        behavior_list = node;
+        node->next = NULL;
+    }
+    else if (node->priority >= behavior_list->priority)
+    {
+        node->next = behavior_list;
+        behavior_list = node;
+    }
+    else
+    {
+        for (behavior_node* i = behavior_list; i != NULL; i = i->next)
+        {
+            if (!i->next)
+            {
+                i->next = node;
+                node->next = NULL;
+                break;
+            }
+
+            if (i->next->priority < node->priority)
+            {
+                node->next = i->next;
+                i->next = node;
+                break;
+            }
+        }
+    }
+}
+
+void behavior_manager::set_behavior(behavior* new_behavior)
+{
+    if (new_behavior == current_behavior)
+    {
+        return;
+    }
+
+    if (current_behavior)
+    {
+        current_behavior->exit_state();
+    }
+
+    behavior* prev_behavior = current_behavior;
+    current_behavior = new_behavior;
+
+    if (new_behavior)
+    {
+        new_behavior->enter_state(prev_behavior);
+    }
+}
+
+behavior* behavior_manager::get_behavior(uint32 type)
+{
+    if (!behavior_list)
+    {
+        return NULL;
+    }
+
+    for (behavior_node* i = behavior_list; i != NULL; i = i->next)
+    {
+        if (i->data->type == type)
+        {
+            return i->data;
+        }
+    }
+
+    return NULL;
+}
+
+void behavior_manager::reset_behavior(behavior* new_behavior)
+{
+    if (current_behavior)
+    {
+        current_behavior->exit_state();
+    }
+
+    behavior* prev_behavior = current_behavior;
+    current_behavior = new_behavior;
+
+    if (new_behavior)
+    {
+        new_behavior->enter_state(prev_behavior);
+    }
+}
+
+void behavior_manager::remove_behavior(behavior* which)
+{
+    if (!behavior_list)
+    {
+        return;
+    }
+
+    if (behavior_list->data == which)
+    {
+        behavior_list = behavior_list->next;
+        return;
+    }
+
+    behavior_node* last_node = behavior_list;
+
+    for (behavior_node* i = behavior_list->next; i != NULL; i = i->next)
+    {
+        if (i->data == which)
+        {
+            last_node->next = i->next;
+            last_node->iteration_next = i->iteration_next;
+            i->next = removed_list;
+            removed_list = i;
+            break;
+        }
+
+        last_node = i;
+    }
+}
+
+void behavior_manager::render()
+{
+    set_iteration_pointers();
+
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        if (i->prev_ran)
+        {
+            i->data->render();
+        }
+    }
+}
+
+void behavior_manager::reset()
+{
+    exit_states();
+
+    killed = false;
+    current_behavior = NULL;
+
+    set_iteration_pointers();
+
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        i->prev_ran = false;
+        i->data->reset();
+    }
+}
+
+void behavior_manager::setup()
+{
+    killed = false;
+
+    set_iteration_pointers();
+
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        i->prev_ran = false;
+        i->data->setup();
+    }
+}
+
+void behavior_manager::exit()
+{
+    set_iteration_pointers();
+
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        i->data->exit();
+    }
+}
+
+void behavior_manager::scene_setup()
+{
+    set_iteration_pointers();
+
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        i->data->scene_setup();
+    }
+}
+
+void behavior_manager::render_extra()
+{
+    set_iteration_pointers();
+
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        if (i->prev_ran)
+        {
+            i->data->render_extra();
+        }
+    }
+}
+
+void behavior_manager::exit_states()
+{
+    if (current_behavior)
+    {
+        current_behavior->exit_state();
+        current_behavior = NULL;
+    }
+
+    set_iteration_pointers();
+
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        if (i->prev_ran && !i->data->exclusive())
+        {
+            i->data->exit_state();
+            i->prev_ran = false;
+        }
+    }
+}
+
+void behavior_manager::kill()
+{
+    killed = true;
+
+    set_iteration_pointers();
+
+    for (behavior_node* i = behavior_list; i != NULL; i = i->iteration_next)
+    {
+        i->data->kill();
+    }
+}
+
+bool behavior::in_state(const char* state, float32 look_ahead, xModelInstance* model) const
+{
+    if (!model)
+    {
+        model = owner->model;
+    }
+
+    xAnimState* astate = model->Anim->Single->State;
+
+    if (!astate)
+    {
+        return false;
+    }
+
+    if (strcmp(state, astate->Name) != 0)
+    {
+        return false;
+    }
+
+    if (look_ahead <= 0.0f)
+    {
+        return true;
+    }
+
+    switch (astate->Flags & 0x70)
+    {
+    case 0x00:
+    case 0x20:
+        return (look_ahead * model->Anim->Single->CurrentSpeed + model->Anim->Single->Time <=
+                astate->Data->Duration);
+    case 0x10:
+        return true;
+    }
+
+    return false;
+}
+
+void behavior::set_state(const char* new_state, float32 blend, xModelInstance* model)
+{
+    if (!model)
+    {
+        model = owner->model;
+    }
+
+    xAnimTransition* transition = xAnimTempTransitionAlloc(NULL);
+
+    transition->BlendRecip = 1.0f / blend;
+    transition->Dest = xAnimTableGetState(model->Anim->Table, new_state);
+
+    if (transition->Dest)
+    {
+        xAnimPlayStartTransition(model->Anim, transition);
+    }
+}
+
+void behavior::set_state(const char* new_state, float32 blend, float32 dest_time,
+                         xModelInstance* model)
+{
+    if (!model)
+    {
+        model = owner->model;
+    }
+
+    xAnimTransition* transition = xAnimTempTransitionAlloc(NULL);
+
+    transition->BlendRecip = 1.0f / blend;
+    transition->Dest = xAnimTableGetState(model->Anim->Table, new_state);
+    transition->DestTime = dest_time;
+
+    if (transition->Dest)
+    {
+        xAnimPlayStartTransition(model->Anim, transition);
+    }
+}

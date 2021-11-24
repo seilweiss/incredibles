@@ -30,6 +30,18 @@ enum zHitSource
     zHS_FORCE_INT = -1
 };
 
+enum zHitTarget
+{
+    zHT_GENERAL,
+    zHT_FRONT,
+    zHT_BACK,
+    zHT_LEFT,
+    zHT_RIGHT,
+    zHT_ENTITY,
+    zHT_ENV,
+    zHT_COUNT
+};
+
 struct zHitSourceMapEntry
 {
     const char* name;

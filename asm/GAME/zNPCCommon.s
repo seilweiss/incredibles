@@ -2,6 +2,8 @@
 
 .section .data
 
+.balign 8
+
 .global _esc__2_1645
 _esc__2_1645:
 	.incbin "baserom.dol", 0x30E7D8, 0x40

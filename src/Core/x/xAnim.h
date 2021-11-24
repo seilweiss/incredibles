@@ -159,4 +159,8 @@ struct xAnimPlay
     void (*BeforeAnimMatrices)(xAnimPlay*, xQuat*, xVec3*, int32);
 };
 
+xAnimTransition* xAnimTempTransitionAlloc(const xAnimTransition* source);
+xAnimState* xAnimTableGetState(xAnimTable* table, const char* name);
+void xAnimPlayStartTransition(xAnimPlay* play, xAnimTransition* transition);
+
 #endif

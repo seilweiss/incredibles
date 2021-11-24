@@ -15,4 +15,6 @@ inline uint32 xrand_RandomChoice(uint32 maxCount)
     return maxCount * xrand_RandomInt16() >> 16;
 }
 
+float32 xurand();
+
 #endif
