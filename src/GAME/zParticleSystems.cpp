@@ -1,15 +1,35 @@
 #include "zParticleSystems.h"
 
-#include <types.h>
+#include "zParticleSystemWaterfall.h"
 
-// func_801D0C50
-#pragma GLOBAL_ASM("asm/GAME/zParticleSystems.s", "zParticleSystemCreateAll__Fv")
+#include "../Core/x/xMemMgr.h"
 
-// func_801D0D20
-#pragma GLOBAL_ASM("asm/GAME/zParticleSystems.s", "__ct__20zParticleSystemDummyFv")
+class zParticleSystemDummy : public zParticleSystem
+{
+public:
+    zParticleSystemDummy() : zParticleSystem(0, 0)
+    {
+    }
 
-// func_801D0D60
-#pragma GLOBAL_ASM("asm/GAME/zParticleSystems.s", "create_generator__20zParticleSystemDummyFR14zParticleAsset")
+    virtual zParticleGenerator* create_generator(zParticleAsset& asset)
+    {
+        return NULL;
+    }
 
-// func_801D0D68
-#pragma GLOBAL_ASM("asm/GAME/zParticleSystems.s", "get_asset_size__20zParticleSystemDummyCFv")
+    virtual int32 get_asset_size() const
+    {
+        return 0;
+    }
+};
+
+zParticleSystem** zParticleSystemCreateAll()
+{
+    zParticleSystem** systems = new (eMemStaticTypeUnk0, 0) zParticleSystem*[4];
+
+    systems[0] = new (eMemStaticTypeUnk0, 0) zParticleSystemDummy;
+    systems[1] = new (eMemStaticTypeUnk0, 0) zParticleSystemWaterfall;
+    systems[2] = new (eMemStaticTypeUnk0, 0) zParticleSystemWaterfallMist;
+    systems[3] = new (eMemStaticTypeUnk0, 0) zParticleSystemWaterfallSplash;
+
+    return systems;
+}

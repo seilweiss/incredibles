@@ -537,7 +537,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zParticleGenerator.o\
 	$(OBJ_DIR)/asm/GAME/zParticleLocator.o\
 	$(OBJ_DIR)/src/GAME/zParticleLocator.o\
-	$(OBJ_DIR)/asm/GAME/zParticleSystems.o\
 	$(OBJ_DIR)/src/GAME/zParticleSystems.o\
 	$(OBJ_DIR)/asm/GAME/zParticleSystemWaterfall.o\
 	$(OBJ_DIR)/src/GAME/zParticleSystemWaterfall.o\

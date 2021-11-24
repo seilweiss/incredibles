@@ -2,22 +2,6 @@
 
 #include <types.h>
 
-// func_801D0D70
-#pragma GLOBAL_ASM("asm/GAME/zParticleSystemWaterfall.s",                                          \
-                   "__ct__30zParticleSystemWaterfallSplashFv")
-
-// func_801D0DB0
-#pragma GLOBAL_ASM("asm/GAME/zParticleSystemWaterfall.s", "__ct__28zParticleSystemWaterfallMistFv")
-
-// func_801D0DF0
-#pragma GLOBAL_ASM("asm/GAME/zParticleSystemWaterfall.s", "__ct__24zParticleSystemWaterfallFv")
-
-// func_801D0E30
-#pragma GLOBAL_ASM("asm/GAME/zParticleSystemWaterfall.s", "__ct__15zParticleSystemFii")
-
-// func_801D0E44
-#pragma GLOBAL_ASM("asm/GAME/zParticleSystemWaterfall.s", "get_ordering__15zParticleSystemFRii")
-
 // func_801D0E54
 #pragma GLOBAL_ASM("asm/GAME/zParticleSystemWaterfall.s",                                          \
                    "create_generator__24zParticleSystemWaterfallFR14zParticleAsset")

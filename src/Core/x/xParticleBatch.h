@@ -3,4 +3,10 @@
 
 #include <types.h>
 
+struct xParticleBatchGroup
+{
+    uint8* elements;
+    int32 elements_size;
+};
+
 #endif
