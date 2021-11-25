@@ -14,6 +14,8 @@ __vt__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_:
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_70
 _esc__2_stringBase0_70:
 	.incbin "baserom.dol", 0x2DCCB0, 0xA0

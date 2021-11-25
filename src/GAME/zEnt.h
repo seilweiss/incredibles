@@ -9,5 +9,6 @@ struct zEnt : xEnt
 };
 
 void zEntEventAllOfType(uint32 toEvent, uint32 type);
+const char* zParamGetString(xModelAssetParam* param, uint32 size, const char* tok, const char* def);
 
 #endif

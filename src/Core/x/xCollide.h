@@ -53,6 +53,8 @@ uint32 xBoxHitsObb(const xBox* a, const xBox* b, const xMat4x3* mat, xCollis* co
 bool xOBBHitsOBB(const xBox& a, const xMat4x3& amat, const xBox& b, const xMat4x3& bmat);
 uint32 xSphereHitsVCylinder(const xSphere* sph, const xCylinder* cyl, xCollis* coll);
 uint32 xCylinderHitsSphere(const xCylinder* cyl, const xSphere* sph, xCollis* coll);
+void xBoxForModel(xBox& o, const xModelInstance* m, bool childModels);
+void xSphereForModel(xSphere& o, const xModelInstance* model, bool childModels);
 
 inline bool xSphereHitsSphere(const xVec3& sc, float32 sr, const xVec3& cc, float32 cr)
 {

@@ -40,6 +40,7 @@
 #define DEG2RAD(x) (float32)((SDATA2_PI) * (x) / (SDATA2_180))
 #define RAD2DEG(x) (float32)((SDATA2_180) * (x) / (SDATA2_PI))
 
+float32 xatof(const char* x);
 float32 xsqrt(float32 x);
 float32 xasin(float32 x);
 float32 xatan2(float32 y, float32 x);

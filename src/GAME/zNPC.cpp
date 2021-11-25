@@ -1,78 +1,331 @@
 #include "zNPC.h"
 
-#include <types.h>
+#include "../Core/x/xRand.h"
+#include "../Core/x/xSndMgr.h"
+#include "zGrid.h"
+#include "zMain.h"
+#include "../Core/x/xString.h"
 
-// func_800FDEC8
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "play_sound__Q24zNPC4baseFP17zAnimFxSoundGroup")
+#include <string.h>
+#include <stdlib.h>
 
-// func_800FDF44
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "initialize_bounds__Q24zNPC4baseFf")
+namespace zNPC
+{
+    iSndHandle base::play_sound(zAnimFxSoundGroup* group)
+    {
+        uint32 soundID = group->ID;
 
-// func_800FE0A8
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "change_bounds__Q24zNPC4baseFf5xVec3b")
+        if (group->count > 1)
+        {
+            if (sound_id_offset == 0xFFFF)
+            {
+                sound_id_offset = xrand_RandomChoice(group->count);
+            }
 
-// func_800FE2FC
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "update_bounds__Q24zNPC4baseFv")
+            soundID += sound_id_offset;
+        }
 
-// func_800FE49C
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "update_npc__Q24zNPC4baseFf")
+        iSndGroupHandle GroupToPlay = xSndMgrGetSoundGroup(soundID);
 
-// func_800FE510
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "get_bone_world_direction__Q24zNPC4baseFiRC5xVec3")
+        return xSndMgrPlay(GroupToPlay, 0x800, NULL, NULL, this);
+    }
 
-// func_800FE588
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "xMat3x3RMulVec__FP5xVec3PC7xMat3x3PC5xVec3_23")
+    void base::initialize_bounds(float32 modelScale)
+    {
+        sound_id_offset = 0xFFFF;
 
-// func_800FE5EC
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "get_bone_world_position__Q24zNPC4baseFi")
+        bool use_bounding_box;
 
-// func_800FE678
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "get_bone_world_position_offset__Q24zNPC4baseFiRC5xVec3")
+        get_parameter("UseBoundingBox", &use_bounding_box, false);
+        get_parameter("BoundBone", &bound_bone, -1);
 
-// func_800FE6F0
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "get_parameter__Q24zNPC4baseFPCcPUcUc")
+        xVec3 offset;
+        float32 scale;
 
-// func_800FE74C
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "get_parameter__Q24zNPC4baseFPCcPii")
+        if (!use_bounding_box && get_parameter("BoundCenter", &offset, g_O3) &&
+            get_parameter("BoundRadius", &scale, 1.0f))
+        {
+            bound.type = XBOUND_TYPE_SPH;
+            bound.sph.center = offset;
+            bound.sph.r = scale;
+        }
+        else
+        {
+            get_parameter("BoundOffset", &offset, g_O3);
+            get_parameter("BoundScale", &scale, 1.0f);
 
-// func_800FE7A8
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "get_parameter__Q24zNPC4baseFPCcPss")
+            scale *= modelScale;
 
-// func_800FE804
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "get_parameter__Q24zNPC4baseFPCcPbb")
+            change_bounds(scale, offset, use_bounding_box);
+        }
+    }
 
-// func_800FE88C
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "get_parameter__Q24zNPC4baseFPCcPff")
+    void base::change_bounds(float32 scale, xVec3 offset, bool use_bounding_box)
+    {
+        xVec3Copy(&bound_offset, &offset);
 
-// func_800FE8F0
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "get_parameter__Q24zNPC4baseFPCcP5xVec3RC5xVec3")
+        if (use_bounding_box)
+        {
+            bound.type = XBOUND_TYPE_OBB;
 
-// func_800FE974
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "get_parameter__Q24zNPC4baseFPCcPPCcPCc")
+            xBoxForModel(bound.box.box, model, true);
 
-// func_800FEA08
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "destroy_npc__4zNPCFP12xFactoryInst")
+            bound.box.box.upper.x -= model->Mat->pos.x;
+            bound.box.box.upper.y -= model->Mat->pos.y;
+            bound.box.box.upper.z -= model->Mat->pos.z;
+            bound.box.box.lower.x -= model->Mat->pos.x;
+            bound.box.box.lower.y -= model->Mat->pos.y;
+            bound.box.box.lower.z -= model->Mat->pos.z;
+            bound.mat = &frame->mat;
 
-// func_800FEA4C
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "__dt__Q24zNPC4baseFv")
+            float32 width = bound.box.box.upper.x - bound.box.box.lower.x;
+            float32 height = bound.box.box.upper.y - bound.box.box.lower.y;
+            float32 length = bound.box.box.upper.z - bound.box.box.lower.z;
 
-// func_800FEAA4
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "init_npc__Q24zNPC4baseFP9xEntAsset")
+            bound.box.box.lower.x += (width - width * scale) / 2.0f;
+            bound.box.box.lower.y += (height - height * scale) / 2.0f;
+            bound.box.box.lower.z += (length - length * scale) / 2.0f;
+            bound.box.box.upper.x -= (width - width * scale) / 2.0f;
+            bound.box.box.upper.y -= (height - height * scale) / 2.0f;
+            bound.box.box.upper.z -= (length - length * scale) / 2.0f;
 
-// func_800FEAA8
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "setup__Q24zNPC4baseFv")
+            bound.box.box.lower += bound_offset;
+            bound.box.box.upper += bound_offset;
 
-// func_800FEAAC
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "scene_setup__Q24zNPC4baseFv")
+            *(RwV3d*)&bound.box.center = model->Mat->pos;
+            bound.box.center.y += (bound.box.box.upper.y - bound.box.box.lower.y) / 2.0f;
+        }
+        else
+        {
+            bound.type = XBOUND_TYPE_SPH;
 
-// func_800FEAB0
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "render_extra__Q24zNPC4baseFv")
+            xSphereForModel(bound.sph, model, true);
 
-// func_800FEAB4
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "system_event__Q24zNPC4baseFP5xBaseP5xBaseUiPCfP5xBaseUi")
+            bound.sph.center = *(xVec3*)&model->Mat->pos;
+            bound.sph.r *= scale;
 
-// func_800FEABC
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "destroy__Q24zNPC4baseFv")
+            xVec3AddScaled(&bound.sph.center, (xVec3*)&model->Mat->up,
+                           bound.sph.r + bound_offset.y);
+            xVec3AddScaled(&bound.sph.center, (xVec3*)&model->Mat->right, bound_offset.x);
+            xVec3AddScaled(&bound.sph.center, (xVec3*)&model->Mat->at, bound_offset.z);
+        }
+    }
 
-// func_800FEAC0
-#pragma GLOBAL_ASM("asm/GAME/zNPC.s", "CreateAnimTable__Q24zNPC4baseFP10xAnimTable")
+    void base::update_bounds()
+    {
+        switch (bound.type)
+        {
+        case XBOUND_TYPE_SPH:
+        {
+            if (bound_bone != -1)
+            {
+                bound.sph.center = get_bone_world_position(bound_bone);
+            }
+            else
+            {
+                bound.sph.center = *(xVec3*)&model->Mat->pos;
+                xVec3AddScaled(&bound.sph.center, (xVec3*)&model->Mat->up, bound.sph.r);
+            }
+
+            xVec3AddScaled(&bound.sph.center, (xVec3*)&model->Mat->up, bound_offset.y);
+            xVec3AddScaled(&bound.sph.center, (xVec3*)&model->Mat->right, bound_offset.x);
+            xVec3AddScaled(&bound.sph.center, (xVec3*)&model->Mat->at, bound_offset.z);
+
+            break;
+        }
+        case XBOUND_TYPE_BOX:
+        {
+            bound.box.box.lower += frame->mat.pos - frame->oldmat.pos;
+            bound.box.box.upper += frame->mat.pos - frame->oldmat.pos;
+
+            xVec3Copy(&bound.box.center, &frame->mat.pos);
+
+            break;
+        }
+        case XBOUND_TYPE_OBB:
+        {
+            bound.mat = &frame->mat;
+
+            xVec3Copy(&bound.box.center, &frame->mat.pos);
+            xVec3AddScaled(&bound.box.center, &frame->mat.up,
+                           0.5f * (bound.box.box.upper.y - bound.box.box.lower.y));
+
+            break;
+        }
+        }
+
+        if (bound.type != XBOUND_TYPE_NA)
+        {
+            xQuickCullForBound(&bound.qcd, &bound);
+        }
+
+        zGridUpdateEnt(this);
+    }
+
+    void base::update_npc(float32 dt)
+    {
+        if (pflags & 0x2)
+        {
+            xEntApplyPhysics(this, globals.sceneCur, dt);
+        }
+
+        if (pflags & 0x1)
+        {
+            xEntMove(this, globals.sceneCur, dt);
+        }
+    }
+
+    xVec3 base::get_bone_world_direction(int32 bone, const xVec3& bone_local_offset)
+    {
+        xVec3 direction;
+
+        xMat3x3RMulVec(&direction, (xMat4x3*)&model->Mat[bone + 1], &bone_local_offset);
+        xMat3x3RMulVec(&direction, (xMat4x3*)model->Mat, &direction);
+
+        return direction;
+    }
+
+    xVec3 base::get_bone_world_position(int32 bone)
+    {
+        if (bone == -1)
+        {
+            return *(xVec3*)&model->Mat->pos;
+        }
+
+        xVec3 position;
+
+        xMat4x3Toworld(&position, (xMat4x3*)model->Mat, (xVec3*)&model->Mat[bone + 1].pos);
+
+        return position;
+    }
+
+    xVec3 base::get_bone_world_position_offset(int32 bone, const xVec3& bone_local_offset)
+    {
+        xVec3 position;
+
+        xMat4x3Toworld(&position, (xMat4x3*)&model->Mat[bone + 1], &bone_local_offset);
+        xMat4x3Toworld(&position, (xMat4x3*)model->Mat, &position);
+
+        return position;
+    }
+
+    bool base::get_parameter(const char* name, uint8* value, uint8 default_value)
+    {
+        const char* text;
+
+        if (get_parameter(name, &text, NULL))
+        {
+            *value = atoi(text);
+            return true;
+        }
+
+        *value = default_value;
+        return false;
+    }
+
+    bool base::get_parameter(const char* name, int32* value, int32 default_value)
+    {
+        const char* text;
+
+        if (get_parameter(name, &text, NULL))
+        {
+            *value = atoi(text);
+            return true;
+        }
+
+        *value = default_value;
+        return false;
+    }
+
+    bool base::get_parameter(const char* name, int16* value, int16 default_value)
+    {
+        const char* text;
+
+        if (get_parameter(name, &text, NULL))
+        {
+            *value = atoi(text);
+            return true;
+        }
+
+        *value = default_value;
+        return false;
+    }
+
+    bool base::get_parameter(const char* name, bool* value, bool default_value)
+    {
+        const char* text;
+
+        if (get_parameter(name, &text, NULL))
+        {
+            *value = (stricmp(text, "true") == 0 || atoi(text) != 0);
+            return true;
+        }
+
+        *value = default_value;
+        return false;
+    }
+
+    bool base::get_parameter(const char* name, float32* value, float32 default_value)
+    {
+        const char* text;
+
+        if (get_parameter(name, &text, NULL))
+        {
+            *value = xatof(text);
+            return true;
+        }
+
+        *value = default_value;
+        return false;
+    }
+
+    bool base::get_parameter(const char* name, xVec3* value, const xVec3& default_value)
+    {
+        const char* text;
+
+        if (get_parameter(name, &text, NULL))
+        {
+            int32 size = xStrParseFloatList((float32*)value, text, 3);
+
+            if (size < 3)
+            {
+                *value = default_value;
+                return false;
+            }
+
+            return true;
+        }
+
+        *value = default_value;
+        return false;
+    }
+
+    bool base::get_parameter(const char* name, const char** value, const char* default_value)
+    {
+        const char* text = NULL;
+
+        if (local_parameters)
+        {
+            text = zParamGetString(local_parameters, local_parameters_size, name, NULL);
+        }
+
+        if (!text)
+        {
+            text = zParamGetString(global_parameters, global_parameters_size, name, NULL);
+        }
+
+        if (!text)
+        {
+            *value = default_value;
+            return false;
+        }
+
+        *value = text;
+        return true;
+    }
+
+    void base::destroy_npc(xFactoryInst* inst)
+    {
+        delete (zNPC::base*)inst;
+    }
+} // namespace zNPC

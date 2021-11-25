@@ -325,7 +325,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zMrIncrediblePlayer.o\
 	$(OBJ_DIR)/asm/GAME/zMusic.o\
 	$(OBJ_DIR)/src/GAME/zMusic.o\
-	$(OBJ_DIR)/asm/GAME/zNPC.o\
 	$(OBJ_DIR)/src/GAME/zNPC.o\
 	$(OBJ_DIR)/asm/GAME/zNPCArmor.o\
 	$(OBJ_DIR)/src/GAME/zNPCArmor.o\
@@ -668,4 +667,5 @@ PREPROCESS_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xHudModel.o\
 	$(OBJ_DIR)/src/Core/x/xLightVolume.o\
 	$(OBJ_DIR)/src/Core/x/xSkyDome.o\
-	$(OBJ_DIR)/src/GAME/zCam.o
+	$(OBJ_DIR)/src/GAME/zCam.o\
+	$(OBJ_DIR)/src/GAME/zNPC.o

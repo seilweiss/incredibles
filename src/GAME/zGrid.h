@@ -1,6 +1,8 @@
 #ifndef ZGRID_H
 #define ZGRID_H
 
-#include <types.h>
+#include "../Core/x/xEnt.h"
+
+void zGridUpdateEnt(xEnt* ent);
 
 #endif

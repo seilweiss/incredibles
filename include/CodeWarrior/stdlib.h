@@ -6,6 +6,7 @@ extern "C" {
 #endif
 
 long abs(long n);
+int atoi(const char*);
 
 #ifdef __cplusplus
 }

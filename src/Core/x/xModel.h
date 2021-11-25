@@ -66,6 +66,22 @@ struct xModelPool
     xModelInstance* List;
 };
 
+struct xModelAssetInfo
+{
+    uint32 Magic;
+    uint32 NumModelInst;
+    uint32 AnimTableID;
+    uint32 CombatID;
+    uint32 BrainID;
+};
+
+struct xModelAssetParam
+{
+    uint32 HashID;
+    uint8 WordLength;
+    uint8 String[3];
+};
+
 void xModelUpdate(xModelInstance* modelInst, float32 timeDelta);
 void xModelEval(xModelInstance* modelInst);
 bool32 xModelCullSingle(xModelInstance* minst);

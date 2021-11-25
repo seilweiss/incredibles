@@ -10,5 +10,6 @@ struct substr
 };
 
 uint32 xStrHash(const char* str);
+int32 xStrParseFloatList(float32* dest, const char* strbuf, int32 max);
 
 #endif

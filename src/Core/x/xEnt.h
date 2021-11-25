@@ -139,6 +139,8 @@ struct xEnt : xBase
 typedef void (*xEntVisHandler)(xEnt* ent);
 
 void xEntGrowGlobalBoundingBox(const xVec3* pos);
+void xEntMove(xEnt* ent, xScene* sc, float32 dt);
+void xEntApplyPhysics(xEnt* ent, xScene* sc, float32 dt);
 void xEntShow(xEnt* ent);
 void xEntHide(xEnt* ent);
 xMat4x3* xEntGetFrame(const xEnt* ent);
