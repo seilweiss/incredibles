@@ -39,4 +39,9 @@ struct xGridBound
     xGridBound* next;
 };
 
+struct xEnt;
+
+int32 xGridAdd(xGrid* grid, xEnt* ent);
+int32 xGridRemove(xGridBound* gridb);
+
 #endif

@@ -66,6 +66,13 @@ struct xModelPool
     xModelInstance* List;
 };
 
+struct xModelTag
+{
+    xVec3 v;
+    uint32 matidx;
+    float32 wt[4];
+};
+
 struct xModelAssetInfo
 {
     uint32 Magic;
@@ -85,5 +92,8 @@ struct xModelAssetParam
 void xModelUpdate(xModelInstance* modelInst, float32 timeDelta);
 void xModelEval(xModelInstance* modelInst);
 bool32 xModelCullSingle(xModelInstance* minst);
+void xModelSetLightKit(xModelInstance* minst, xLightKit* lightKit);
+
+xMat4x3* xModelGetFrame(xModelInstance* minst);
 
 #endif

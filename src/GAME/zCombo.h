@@ -3,4 +3,6 @@
 
 #include <types.h>
 
+int32 zCombo_GetPowerMult();
+
 #endif

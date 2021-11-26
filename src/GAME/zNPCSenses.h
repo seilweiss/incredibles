@@ -6,6 +6,8 @@
 
 namespace zNPC
 {
+    struct common;
+
     struct Senses
     {
         xVec3 eyePos;
@@ -20,7 +22,8 @@ namespace zNPC
         float32 aimDist;
         float32 timeSinceUpdate;
         float32 nextLOSCheckTime;
-        uint8 canSee;
+        bool unk5C;
+        bool canSee;
         float32 viewDist;
         float32 viewAngle;
         float32 cosViewAngle;
@@ -31,6 +34,11 @@ namespace zNPC
         float32 memoryDuration;
         int32 eyeBone;
         float32 npcAlertResponseRange;
+
+        void Setup(common* owner);
+        void Reset(common* owner);
+        void AlertTargetPos(common* owner, const xVec3& newTargetPos);
+        void Update(common* owner, float32 dt);
     };
 } // namespace zNPC
 

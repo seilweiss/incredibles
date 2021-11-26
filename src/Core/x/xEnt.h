@@ -40,6 +40,11 @@ struct xEntFrame
     xVec3 vel;
     uint32 mode;
     xVec3 dpos;
+
+    xVec3& setDpos()
+    {
+        return dpos;
+    }
 };
 
 struct xEntCollis
@@ -138,7 +143,13 @@ struct xEnt : xBase
 
 typedef void (*xEntVisHandler)(xEnt* ent);
 
+void xEntInit(xEnt* ent, xEntAsset* asset);
 void xEntGrowGlobalBoundingBox(const xVec3* pos);
+void xEntInitForType(xEnt* ent);
+void xEntSetup(xEnt* ent);
+void xEntReset(xEnt* ent);
+void xEntRender(xEnt* ent);
+void xEntEndUpdate(xEnt* ent, xScene* sc, float32 dt);
 void xEntMove(xEnt* ent, xScene* sc, float32 dt);
 void xEntApplyPhysics(xEnt* ent, xScene* sc, float32 dt);
 void xEntShow(xEnt* ent);
@@ -146,7 +157,9 @@ void xEntHide(xEnt* ent);
 xMat4x3* xEntGetFrame(const xEnt* ent);
 xVec3* xEntGetPos(const xEnt* ent);
 
+uint32 xEntIsEnabled(const xEnt* ent);
 uint32 xEntIsVisible(const xEnt* ent);
+bool xBaseIsEntity(xBase* base);
 
 inline void xEntVisibilityCullOn(xEnt* ent)
 {

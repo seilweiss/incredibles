@@ -91,6 +91,15 @@ struct xIsect
     float32 dist;
 };
 
+struct xParabola
+{
+    xVec3 initPos;
+    xVec3 initVel;
+    float32 gravity;
+    float32 minTime;
+    float32 maxTime;
+};
+
 extern xVec3 g_O3;
 extern xMat4x3 g_I3;
 
@@ -104,6 +113,7 @@ void xMat4x3Mul(xMat4x3* o, const xMat4x3* a, const xMat4x3* b);
 bool xVec3Eq(const xVec3& a, const xVec3& b, float32 tol);
 void xMat3x3MulScale(xMat3x3*, const xMat3x3*, xVec3*);
 void xMat3x3Euler(xMat3x3* m, const xVec3* ypr);
+void xRotCopy(xRot* o, const xRot* r);
 
 inline static void xMat3x3RMulVec(xVec3* o, const xMat3x3* m, const xVec3* v)
 {

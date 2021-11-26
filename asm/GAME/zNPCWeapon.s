@@ -16,6 +16,8 @@ __vt__Q24zNPC6Weapon:
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_stringBase0_111
 _esc__2_stringBase0_111:
 	.incbin "baserom.dol", 0x2E4030, 0xF8

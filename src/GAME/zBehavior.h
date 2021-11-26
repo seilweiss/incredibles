@@ -34,12 +34,11 @@ struct SphereCollisionResults
 // clang-format off
 class behavior
 {
-public:
-    behavior()
-    {
-    }
-
+private:
     xEnt* owner;
+
+public:
+    behavior() {}
 
     virtual bool in_state(const char* state, float32 look_ahead, xModelInstance* model) const;
     virtual const char* getName();
@@ -90,6 +89,13 @@ struct behavior_node
 
 class behavior_manager
 {
+private:
+    behavior_node* behavior_list;
+    behavior_node* removed_list;
+    behavior* current_behavior;
+    bool manual_update;
+    bool killed;
+
 public:
     behavior_manager()
     {
@@ -97,12 +103,6 @@ public:
         current_behavior = NULL;
         manual_update = false;
     }
-
-    behavior_node* behavior_list;
-    behavior_node* removed_list;
-    behavior* current_behavior;
-    bool manual_update;
-    bool killed;
 
     virtual void select_current(float32 dt);
     virtual void update(float32 dt);
@@ -132,6 +132,11 @@ public:
     void reset_behavior(behavior* new_behavior);
     void remove_behavior(behavior* which);
     void exit_states();
+
+    behavior* get_current_behavior()
+    {
+        return current_behavior;
+    }
 };
 
 uint32 ErrorCB(xAnimTransition*, xAnimSingle*, void*);

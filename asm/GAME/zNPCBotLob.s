@@ -38,6 +38,8 @@ init_esc__7_localstatic4_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5shell_
 
 .section .sbss2
 
+.balign 8
+
 .global _esc__2_1363_2
 _esc__2_1363_2:
 	.skip 0x4

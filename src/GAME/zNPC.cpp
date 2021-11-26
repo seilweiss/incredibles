@@ -326,6 +326,6 @@ namespace zNPC
 
     void base::destroy_npc(xFactoryInst* inst)
     {
-        delete (zNPC::base*)inst;
+        delete (base*)inst;
     }
 } // namespace zNPC

@@ -27,12 +27,18 @@ union xVec3
 
     float32 length() const;
     float32 length2() const;
+    void up_normalize();
 
     void assign(float32 x, float32 y, float32 z)
     {
         this->x = x;
         this->y = y;
         this->z = z;
+    }
+
+    void assign(float32 xyz)
+    {
+        assign(xyz, xyz, xyz);
     }
 
     xVec3 operator-(const xVec3& v) const;
@@ -50,6 +56,9 @@ void xVec3Cross(xVec3* o, const xVec3* a, const xVec3* b);
 void xVec3SMul(xVec3* o, const xVec3* v, float32 s);
 void xVec3Sub(xVec3* o, const xVec3* a, const xVec3* b);
 void xVec3AddScaled(xVec3* o, const xVec3* v, float32 s);
+void xVec3Init(xVec3* o, float32 x, float32 y, float32 z);
+void xVec3Init(xVec3& o, float32 x, float32 y, float32 z);
+void xVec3AddTo(xVec3& o, const xVec3& v);
 
 inline void xVec3Add(xVec3* o, const xVec3* a, const xVec3* b)
 {

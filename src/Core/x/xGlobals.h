@@ -3,6 +3,7 @@
 
 #include "xMath3.h"
 #include "xPad.h"
+#include "xUpdateCull.h"
 #include "../p2/iFog.h"
 #include "../p2/iTime.h"
 
@@ -15,7 +16,6 @@
 
 struct xCamGroup;
 struct xCamScreen;
-struct xUpdateCullMgr;
 
 enum sceDemoEndReason
 {

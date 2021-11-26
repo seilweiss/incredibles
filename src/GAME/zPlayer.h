@@ -5,8 +5,8 @@
 #include "zInteraction.h"
 #include "../Core/x/xShadowSimple.h"
 #include "../Core/x/xEntDrive.h"
+#include "../Core/x/xOneLinerManager.h"
 
-struct xOneLinerManager;
 struct jump;
 struct zSlideCam;
 struct xJSPHeader;

@@ -161,6 +161,7 @@ struct xAnimPlay
 
 xAnimTransition* xAnimTempTransitionAlloc(const xAnimTransition* source);
 xAnimState* xAnimTableGetState(xAnimTable* table, const char* name);
+void xAnimPlaySetState(xAnimSingle* single, xAnimState* state, float32 startTime);
 void xAnimPlayStartTransition(xAnimPlay* play, xAnimTransition* transition);
 
 #endif

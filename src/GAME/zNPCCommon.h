@@ -14,6 +14,10 @@ namespace zNPC
 {
     struct common : base
     {
+        // simpShadow_embedded and entShadow_embedded seem to be removed
+        // (or moved to the end) in the final game. They're commented out for now,
+        // but feel free to uncomment and move them wherever if they are in fact used.
+
         float32 move_speed_multiply;
         bool invincible;
         float32 near_target_radius;
@@ -32,19 +36,20 @@ namespace zNPC
             bool hurtByPlayer : 1;
 
             bool carried : 1;
-            bool pad2 : 7;
+            bool take_no_damage : 1; // not present in dwarf
+            bool pad2 : 6;
 
             bool pad3 : 8;
 
-            bool old_chkby : 8;
+            uint8 old_chkby : 8;
         } commonFlags;
         zDuplicator* duplicator;
         navigate* navigation_behavior;
         behavior_manager manager;
         Senses senses;
-        xShadowSimpleCache simpShadow_embedded;
+        //xShadowSimpleCache simpShadow_embedded;
         float32 shadow_radius;
-        xEntShadow entShadow_embedded;
+        //xEntShadow entShadow_embedded;
         int16 incredi_power_points;
         int32 grab_bone;
         xVec3 grab_offset;
@@ -92,7 +97,30 @@ namespace zNPC
         virtual void debug_render();
         virtual void move() {}
         // clang-format on
+
+        void apply_anim_physics();
+        bool can_attack();
+        bool can_attack_cinematic();
+        void check_transient_damage();
+        zCombat* get_combat();
+
+        static void BeforeAnimMatrices(xAnimPlay* play, xQuat* quat, xVec3* tran, int32 boneCount);
+
+        void revive();
+        void imminent_death();
+        bool alive();
+        int32 grabOffset(xVec3* offset);
+        void set_shadow_strength(float32 percent);
+        void set_update_cull();
+
+        bool is_human()
+        {
+            return commonFlags.human;
+        }
     };
+
+    void set_update_cull();
+    void init_system();
 } // namespace zNPC
 
 #endif

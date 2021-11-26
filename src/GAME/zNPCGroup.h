@@ -21,6 +21,11 @@ namespace zNPC
 
         void handle_event(xBase* from, xBase* to, uint32 toEvent, const float32* toParam,
                           xBase* toParamWidget, uint32 toParamWidgetID);
+
+        bool can_attack()
+        {
+            return attacking_count < asset->max_attackers;
+        }
     };
 } // namespace zNPC
 

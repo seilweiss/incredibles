@@ -34,4 +34,7 @@ struct xShadowSimpleCache
     void* collSkipsItem;
 };
 
+void xShadowSimple_CacheInit(xShadowSimpleCache* cache, xEnt* ent, uint8 alpha);
+void xShadowSimple_Add(xShadowSimpleCache* cache, xEnt* ent, float32 radius, float32 ecc);
+
 #endif

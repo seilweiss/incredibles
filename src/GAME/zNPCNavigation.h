@@ -42,6 +42,12 @@ namespace zNPC
         float32 jump_height;
         xVec3* last_destination;
         bool move_away;
+
+        void reset();
+        void collide(float32 dt);
+        void apply_dpos(float32 dt);
+        void remove();
+        void update_stuck(float32 dt);
     };
 
 } // namespace zNPC

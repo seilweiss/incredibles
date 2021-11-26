@@ -38,11 +38,14 @@ struct zScene : xScene
     uint8 enableDrawing;
 };
 
+typedef xBase* (*zSceneForAllBaseCallback)(xBase*, zScene*, void*);
+
 #define ZSCENE_LOAD_HIP 0x1
 #define ZSCENE_LOAD_HOP 0x2
 
 void zSceneSwitch(_zPortal* p, bool32 forceSameScene);
 xBase* zSceneFindObject(uint32 gameID);
+void zSceneForAllBase(zSceneForAllBaseCallback func, int32 baseType, void* data);
 bool zSceneLoadPackFile(uint32 id, int32 options, bool noLocalized = false,
                         const char* filename = NULL);
 

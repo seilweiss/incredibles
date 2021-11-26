@@ -38,5 +38,6 @@ bool xRayHitsBound(const xRay3& r, const xBound& b);
 bool xSphereHitsBound(const xVec3& c, float32 r, const xBound& b);
 bool xOBBHitsBound(const xBox& box, const xMat4x3& mat, const xBound& b);
 void xBoundGetCenter(const xBound* b, xVec3* center);
+xVec3* xBoundCenter(xBound* b);
 
 #endif
