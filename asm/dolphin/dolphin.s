@@ -1943,9 +1943,9 @@ ARRegisterDMACallback:
 /* 80215F94 00212D94  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 80215F98 00212D98  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 80215F9C 00212D9C  7C 7E 1B 78 */	mr r30, r3
-/* 80215FA0 00212DA0  83 ED E0 60 */	lwz r31, __AR_Callback-_SDA_BASE_(r13)
+/* 80215FA0 00212DA0  83 ED E0 60 */	lwz r31, __AR_Callback@sda21(r13)
 /* 80215FA4 00212DA4  48 01 E4 25 */	bl OSDisableInterrupts
-/* 80215FA8 00212DA8  93 CD E0 60 */	stw r30, __AR_Callback-_SDA_BASE_(r13)
+/* 80215FA8 00212DA8  93 CD E0 60 */	stw r30, __AR_Callback@sda21(r13)
 /* 80215FAC 00212DAC  48 01 E4 45 */	bl OSRestoreInterrupts
 /* 80215FB0 00212DB0  7F E3 FB 78 */	mr r3, r31
 /* 80215FB4 00212DB4  80 01 00 1C */	lwz r0, 0x1c(r1)
@@ -2038,7 +2038,7 @@ ARStartDMA:
 
 .global ARCheckInit
 ARCheckInit:
-/* 802160F8 00212EF8  80 6D E0 7C */	lwz r3, __AR_init_flag-_SDA_BASE_(r13)
+/* 802160F8 00212EF8  80 6D E0 7C */	lwz r3, __AR_init_flag@sda21(r13)
 /* 802160FC 00212EFC  4E 80 00 20 */	blr 
 
 .global ARInit
@@ -2051,18 +2051,18 @@ ARInit:
 /* 80216114 00212F14  3B C4 00 00 */	addi r30, r4, 0
 /* 80216118 00212F18  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 8021611C 00212F1C  3B A3 00 00 */	addi r29, r3, 0
-/* 80216120 00212F20  80 0D E0 7C */	lwz r0, __AR_init_flag-_SDA_BASE_(r13)
+/* 80216120 00212F20  80 0D E0 7C */	lwz r0, __AR_init_flag@sda21(r13)
 /* 80216124 00212F24  2C 00 00 01 */	cmpwi r0, 1
 /* 80216128 00212F28  40 82 00 0C */	bne lbl_80216134
 /* 8021612C 00212F2C  38 60 40 00 */	li r3, 0x4000
 /* 80216130 00212F30  48 00 00 78 */	b lbl_802161A8
 lbl_80216134:
-/* 80216134 00212F34  80 6D B3 B8 */	lwz r3, __ARVersion-_SDA_BASE_(r13)
+/* 80216134 00212F34  80 6D B3 B8 */	lwz r3, __ARVersion@sda21(r13)
 /* 80216138 00212F38  48 01 B6 91 */	bl OSRegisterVersion
 /* 8021613C 00212F3C  48 01 E2 8D */	bl OSDisableInterrupts
 /* 80216140 00212F40  38 00 00 00 */	li r0, 0
 /* 80216144 00212F44  3C 80 80 21 */	lis r4, __ARHandler@ha
-/* 80216148 00212F48  90 0D E0 60 */	stw r0, __AR_Callback-_SDA_BASE_(r13)
+/* 80216148 00212F48  90 0D E0 60 */	stw r0, __AR_Callback@sda21(r13)
 /* 8021614C 00212F4C  3B E3 00 00 */	addi r31, r3, 0
 /* 80216150 00212F50  38 84 61 CC */	addi r4, r4, __ARHandler@l
 /* 80216154 00212F54  38 60 00 06 */	li r3, 6
@@ -2070,11 +2070,11 @@ lbl_80216134:
 /* 8021615C 00212F5C  3C 60 02 00 */	lis r3, 0x200
 /* 80216160 00212F60  48 01 E6 B9 */	bl __OSUnmaskInterrupts
 /* 80216164 00212F64  38 00 40 00 */	li r0, 0x4000
-/* 80216168 00212F68  93 CD E0 74 */	stw r30, __AR_FreeBlocks-_SDA_BASE_(r13)
+/* 80216168 00212F68  93 CD E0 74 */	stw r30, __AR_FreeBlocks@sda21(r13)
 /* 8021616C 00212F6C  3C 60 CC 00 */	lis r3, 0xCC005000@ha
-/* 80216170 00212F70  90 0D E0 70 */	stw r0, __AR_StackPointer-_SDA_BASE_(r13)
+/* 80216170 00212F70  90 0D E0 70 */	stw r0, __AR_StackPointer@sda21(r13)
 /* 80216174 00212F74  38 83 50 00 */	addi r4, r3, 0xCC005000@l
-/* 80216178 00212F78  93 AD E0 78 */	stw r29, __AR_BlockLength-_SDA_BASE_(r13)
+/* 80216178 00212F78  93 AD E0 78 */	stw r29, __AR_BlockLength@sda21(r13)
 /* 8021617C 00212F7C  A0 04 00 1A */	lhz r0, 0x1a(r4)
 /* 80216180 00212F80  A0 63 50 1A */	lhz r3, 0x501a(r3)
 /* 80216184 00212F84  54 00 00 2E */	rlwinm r0, r0, 0, 0, 0x17
@@ -2082,10 +2082,10 @@ lbl_80216134:
 /* 8021618C 00212F8C  B0 04 00 1A */	sth r0, 0x1a(r4)
 /* 80216190 00212F90  48 00 00 E5 */	bl __ARChecksize
 /* 80216194 00212F94  38 00 00 01 */	li r0, 1
-/* 80216198 00212F98  90 0D E0 7C */	stw r0, __AR_init_flag-_SDA_BASE_(r13)
+/* 80216198 00212F98  90 0D E0 7C */	stw r0, __AR_init_flag@sda21(r13)
 /* 8021619C 00212F9C  7F E3 FB 78 */	mr r3, r31
 /* 802161A0 00212FA0  48 01 E2 51 */	bl OSRestoreInterrupts
-/* 802161A4 00212FA4  80 6D E0 70 */	lwz r3, __AR_StackPointer-_SDA_BASE_(r13)
+/* 802161A4 00212FA4  80 6D E0 70 */	lwz r3, __AR_StackPointer@sda21(r13)
 lbl_802161A8:
 /* 802161A8 00212FA8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802161AC 00212FAC  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -2118,7 +2118,7 @@ __ARHandler:
 /* 80216200 00213000  48 01 CC 9D */	bl OSClearContext
 /* 80216204 00213004  38 61 00 10 */	addi r3, r1, 0x10
 /* 80216208 00213008  48 01 CA CD */	bl OSSetCurrentContext
-/* 8021620C 0021300C  81 8D E0 60 */	lwz r12, __AR_Callback-_SDA_BASE_(r13)
+/* 8021620C 0021300C  81 8D E0 60 */	lwz r12, __AR_Callback@sda21(r13)
 /* 80216210 00213010  28 0C 00 00 */	cmplwi r12, 0
 /* 80216214 00213014  41 82 00 0C */	beq lbl_80216220
 /* 80216218 00213018  7D 88 03 A6 */	mtlr r12
@@ -2169,7 +2169,7 @@ lbl_8021628C:
 /* 802162A0 002130A0  90 01 02 48 */	stw r0, 0x248(r1)
 /* 802162A4 002130A4  3C 60 01 00 */	lis r3, 0x01000000@ha
 /* 802162A8 002130A8  38 01 01 F3 */	addi r0, r1, 0x1f3
-/* 802162AC 002130AC  90 6D E0 68 */	stw r3, __AR_InternalSize-_SDA_BASE_(r13)
+/* 802162AC 002130AC  90 6D E0 68 */	stw r3, __AR_InternalSize@sda21(r13)
 /* 802162B0 002130B0  3C A0 DE AE */	lis r5, 0xDEADBEEF@ha
 /* 802162B4 002130B4  80 81 02 48 */	lwz r4, 0x248(r1)
 /* 802162B8 002130B8  54 16 00 34 */	rlwinm r22, r0, 0, 0, 0x1a
@@ -2227,7 +2227,7 @@ lbl_8021628C:
 /* 80216388 00213188  38 80 00 20 */	li r4, 0x20
 /* 8021638C 0021318C  48 01 C2 FD */	bl DCFlushRange
 /* 80216390 00213190  38 00 00 00 */	li r0, 0
-/* 80216394 00213194  90 0D E0 6C */	stw r0, __AR_ExpansionSize-_SDA_BASE_(r13)
+/* 80216394 00213194  90 0D E0 6C */	stw r0, __AR_ExpansionSize@sda21(r13)
 /* 80216398 00213198  38 7C 00 00 */	addi r3, r28, 0
 /* 8021639C 0021319C  38 80 00 20 */	li r4, 0x20
 /* 802163A0 002131A0  48 01 C2 BD */	bl DCInvalidateRange
@@ -2757,7 +2757,7 @@ lbl_80216B88:
 /* 80216BA4 002139A4  60 63 00 20 */	ori r3, r3, 0x20
 /* 80216BA8 002139A8  B0 7F 00 00 */	sth r3, 0(r31)
 /* 80216BAC 002139AC  3E 73 00 20 */	addis r19, r19, 0x20
-/* 80216BB0 002139B0  90 0D E0 6C */	stw r0, __AR_ExpansionSize-_SDA_BASE_(r13)
+/* 80216BB0 002139B0  90 0D E0 6C */	stw r0, __AR_ExpansionSize@sda21(r13)
 /* 80216BB4 002139B4  48 00 0E 78 */	b lbl_80217A2C
 lbl_80216BB8:
 /* 80216BB8 002139B8  A0 19 00 00 */	lhz r0, 0(r25)
@@ -2964,7 +2964,7 @@ lbl_80216EA8:
 /* 80216EC8 00213CC8  B0 1F 00 00 */	sth r0, 0(r31)
 /* 80216ECC 00213CCC  3E 73 00 40 */	addis r19, r19, 0x40
 /* 80216ED0 00213CD0  A0 01 02 70 */	lhz r0, 0x270(r1)
-/* 80216ED4 00213CD4  90 6D E0 6C */	stw r3, __AR_ExpansionSize-_SDA_BASE_(r13)
+/* 80216ED4 00213CD4  90 6D E0 6C */	stw r3, __AR_ExpansionSize@sda21(r13)
 /* 80216ED8 00213CD8  60 00 00 08 */	ori r0, r0, 8
 /* 80216EDC 00213CDC  B0 01 02 70 */	sth r0, 0x270(r1)
 /* 80216EE0 00213CE0  48 00 0B 4C */	b lbl_80217A2C
@@ -3215,7 +3215,7 @@ lbl_80217278:
 /* 80217298 00214098  B0 1F 00 00 */	sth r0, 0(r31)
 /* 8021729C 0021409C  3E 73 00 80 */	addis r19, r19, 0x80
 /* 802172A0 002140A0  A0 01 02 70 */	lhz r0, 0x270(r1)
-/* 802172A4 002140A4  90 6D E0 6C */	stw r3, __AR_ExpansionSize-_SDA_BASE_(r13)
+/* 802172A4 002140A4  90 6D E0 6C */	stw r3, __AR_ExpansionSize@sda21(r13)
 /* 802172A8 002140A8  60 00 00 10 */	ori r0, r0, 0x10
 /* 802172AC 002140AC  B0 01 02 70 */	sth r0, 0x270(r1)
 /* 802172B0 002140B0  48 00 07 7C */	b lbl_80217A2C
@@ -3506,7 +3506,7 @@ lbl_802176E4:
 /* 80217704 00214504  B0 1F 00 00 */	sth r0, 0(r31)
 /* 80217708 00214508  3E 73 01 00 */	addis r19, r19, 0x100
 /* 8021770C 0021450C  A0 01 02 70 */	lhz r0, 0x270(r1)
-/* 80217710 00214510  90 6D E0 6C */	stw r3, __AR_ExpansionSize-_SDA_BASE_(r13)
+/* 80217710 00214510  90 6D E0 6C */	stw r3, __AR_ExpansionSize@sda21(r13)
 /* 80217714 00214514  60 00 00 18 */	ori r0, r0, 0x18
 /* 80217718 00214518  B0 01 02 70 */	sth r0, 0x270(r1)
 /* 8021771C 0021451C  48 00 03 10 */	b lbl_80217A2C
@@ -3708,7 +3708,7 @@ lbl_802179F4:
 /* 80217A14 00214814  B0 1F 00 00 */	sth r0, 0(r31)
 /* 80217A18 00214818  3E 73 02 00 */	addis r19, r19, 0x200
 /* 80217A1C 0021481C  A0 01 02 70 */	lhz r0, 0x270(r1)
-/* 80217A20 00214820  90 6D E0 6C */	stw r3, __AR_ExpansionSize-_SDA_BASE_(r13)
+/* 80217A20 00214820  90 6D E0 6C */	stw r3, __AR_ExpansionSize@sda21(r13)
 /* 80217A24 00214824  60 00 00 20 */	ori r0, r0, 0x20
 /* 80217A28 00214828  B0 01 02 70 */	sth r0, 0x270(r1)
 lbl_80217A2C:
@@ -3722,7 +3722,7 @@ lbl_80217A2C:
 lbl_80217A48:
 /* 80217A48 00214848  3C 60 C0 00 */	lis r3, 0xC00000D0@ha
 /* 80217A4C 0021484C  92 63 00 D0 */	stw r19, 0xC00000D0@l(r3)
-/* 80217A50 00214850  92 6D E0 64 */	stw r19, __AR_Size-_SDA_BASE_(r13)
+/* 80217A50 00214850  92 6D E0 64 */	stw r19, __AR_Size@sda21(r13)
 /* 80217A54 00214854  80 01 02 C4 */	lwz r0, 0x2c4(r1)
 /* 80217A58 00214858  B9 C1 02 78 */	lmw r14, 0x278(r1)
 /* 80217A5C 0021485C  38 21 02 C0 */	addi r1, r1, 0x2c0
@@ -3734,21 +3734,21 @@ __ARQServiceQueueLo:
 /* 80217A68 00214868  7C 08 02 A6 */	mflr r0
 /* 80217A6C 0021486C  90 01 00 04 */	stw r0, 4(r1)
 /* 80217A70 00214870  94 21 FF F8 */	stwu r1, -8(r1)
-/* 80217A74 00214874  80 0D E0 94 */	lwz r0, __ARQRequestPendingLo-_SDA_BASE_(r13)
+/* 80217A74 00214874  80 0D E0 94 */	lwz r0, __ARQRequestPendingLo@sda21(r13)
 /* 80217A78 00214878  28 00 00 00 */	cmplwi r0, 0
 /* 80217A7C 0021487C  40 82 00 1C */	bne lbl_80217A98
-/* 80217A80 00214880  80 6D E0 88 */	lwz r3, __ARQRequestQueueLo-_SDA_BASE_(r13)
+/* 80217A80 00214880  80 6D E0 88 */	lwz r3, __ARQRequestQueueLo@sda21(r13)
 /* 80217A84 00214884  28 03 00 00 */	cmplwi r3, 0
 /* 80217A88 00214888  41 82 00 10 */	beq lbl_80217A98
-/* 80217A8C 0021488C  90 6D E0 94 */	stw r3, __ARQRequestPendingLo-_SDA_BASE_(r13)
+/* 80217A8C 0021488C  90 6D E0 94 */	stw r3, __ARQRequestPendingLo@sda21(r13)
 /* 80217A90 00214890  80 03 00 00 */	lwz r0, 0(r3)
-/* 80217A94 00214894  90 0D E0 88 */	stw r0, __ARQRequestQueueLo-_SDA_BASE_(r13)
+/* 80217A94 00214894  90 0D E0 88 */	stw r0, __ARQRequestQueueLo@sda21(r13)
 lbl_80217A98:
-/* 80217A98 00214898  80 AD E0 94 */	lwz r5, __ARQRequestPendingLo-_SDA_BASE_(r13)
+/* 80217A98 00214898  80 AD E0 94 */	lwz r5, __ARQRequestPendingLo@sda21(r13)
 /* 80217A9C 0021489C  28 05 00 00 */	cmplwi r5, 0
 /* 80217AA0 002148A0  41 82 00 B8 */	beq lbl_80217B58
 /* 80217AA4 002148A4  80 C5 00 18 */	lwz r6, 0x18(r5)
-/* 80217AA8 002148A8  80 0D E0 A0 */	lwz r0, __ARQChunkSize-_SDA_BASE_(r13)
+/* 80217AA8 002148A8  80 0D E0 A0 */	lwz r0, __ARQChunkSize@sda21(r13)
 /* 80217AAC 002148AC  7C 06 00 40 */	cmplw r6, r0
 /* 80217AB0 002148B0  41 81 00 3C */	bgt lbl_80217AEC
 /* 80217AB4 002148B4  80 65 00 08 */	lwz r3, 8(r5)
@@ -3763,9 +3763,9 @@ lbl_80217AD0:
 /* 80217AD4 002148D4  80 A5 00 10 */	lwz r5, 0x10(r5)
 /* 80217AD8 002148D8  4B FF E5 31 */	bl ARStartDMA
 lbl_80217ADC:
-/* 80217ADC 002148DC  80 6D E0 94 */	lwz r3, __ARQRequestPendingLo-_SDA_BASE_(r13)
+/* 80217ADC 002148DC  80 6D E0 94 */	lwz r3, __ARQRequestPendingLo@sda21(r13)
 /* 80217AE0 002148E0  80 03 00 1C */	lwz r0, 0x1c(r3)
-/* 80217AE4 002148E4  90 0D E0 9C */	stw r0, __ARQCallbackLo-_SDA_BASE_(r13)
+/* 80217AE4 002148E4  90 0D E0 9C */	stw r0, __ARQCallbackLo@sda21(r13)
 /* 80217AE8 002148E8  48 00 00 34 */	b lbl_80217B1C
 lbl_80217AEC:
 /* 80217AEC 002148EC  80 65 00 08 */	lwz r3, 8(r5)
@@ -3782,18 +3782,18 @@ lbl_80217B0C:
 /* 80217B14 00214914  80 A5 00 10 */	lwz r5, 0x10(r5)
 /* 80217B18 00214918  4B FF E4 F1 */	bl ARStartDMA
 lbl_80217B1C:
-/* 80217B1C 0021491C  80 6D E0 94 */	lwz r3, __ARQRequestPendingLo-_SDA_BASE_(r13)
-/* 80217B20 00214920  80 8D E0 A0 */	lwz r4, __ARQChunkSize-_SDA_BASE_(r13)
+/* 80217B1C 0021491C  80 6D E0 94 */	lwz r3, __ARQRequestPendingLo@sda21(r13)
+/* 80217B20 00214920  80 8D E0 A0 */	lwz r4, __ARQChunkSize@sda21(r13)
 /* 80217B24 00214924  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 80217B28 00214928  7C 04 00 50 */	subf r0, r4, r0
 /* 80217B2C 0021492C  90 03 00 18 */	stw r0, 0x18(r3)
-/* 80217B30 00214930  80 8D E0 94 */	lwz r4, __ARQRequestPendingLo-_SDA_BASE_(r13)
-/* 80217B34 00214934  80 0D E0 A0 */	lwz r0, __ARQChunkSize-_SDA_BASE_(r13)
+/* 80217B30 00214930  80 8D E0 94 */	lwz r4, __ARQRequestPendingLo@sda21(r13)
+/* 80217B34 00214934  80 0D E0 A0 */	lwz r0, __ARQChunkSize@sda21(r13)
 /* 80217B38 00214938  80 64 00 10 */	lwz r3, 0x10(r4)
 /* 80217B3C 0021493C  7C 03 02 14 */	add r0, r3, r0
 /* 80217B40 00214940  90 04 00 10 */	stw r0, 0x10(r4)
-/* 80217B44 00214944  80 8D E0 94 */	lwz r4, __ARQRequestPendingLo-_SDA_BASE_(r13)
-/* 80217B48 00214948  80 0D E0 A0 */	lwz r0, __ARQChunkSize-_SDA_BASE_(r13)
+/* 80217B44 00214944  80 8D E0 94 */	lwz r4, __ARQRequestPendingLo@sda21(r13)
+/* 80217B48 00214948  80 0D E0 A0 */	lwz r0, __ARQChunkSize@sda21(r13)
 /* 80217B4C 0021494C  80 64 00 14 */	lwz r3, 0x14(r4)
 /* 80217B50 00214950  7C 03 02 14 */	add r0, r3, r0
 /* 80217B54 00214954  90 04 00 14 */	stw r0, 0x14(r4)
@@ -3812,28 +3812,28 @@ __ARQInterruptServiceRoutine:
 /* 80217B6C 0021496C  7C 08 02 A6 */	mflr r0
 /* 80217B70 00214970  90 01 00 04 */	stw r0, 4(r1)
 /* 80217B74 00214974  94 21 FF F8 */	stwu r1, -8(r1)
-/* 80217B78 00214978  81 8D E0 98 */	lwz r12, __ARQCallbackHi-_SDA_BASE_(r13)
+/* 80217B78 00214978  81 8D E0 98 */	lwz r12, __ARQCallbackHi@sda21(r13)
 /* 80217B7C 0021497C  28 0C 00 00 */	cmplwi r12, 0
 /* 80217B80 00214980  41 82 00 20 */	beq lbl_80217BA0
-/* 80217B84 00214984  80 6D E0 90 */	lwz r3, __ARQRequestPendingHi-_SDA_BASE_(r13)
+/* 80217B84 00214984  80 6D E0 90 */	lwz r3, __ARQRequestPendingHi@sda21(r13)
 /* 80217B88 00214988  7D 88 03 A6 */	mtlr r12
 /* 80217B8C 0021498C  4E 80 00 21 */	blrl 
 /* 80217B90 00214990  38 00 00 00 */	li r0, 0
-/* 80217B94 00214994  90 0D E0 90 */	stw r0, __ARQRequestPendingHi-_SDA_BASE_(r13)
-/* 80217B98 00214998  90 0D E0 98 */	stw r0, __ARQCallbackHi-_SDA_BASE_(r13)
+/* 80217B94 00214994  90 0D E0 90 */	stw r0, __ARQRequestPendingHi@sda21(r13)
+/* 80217B98 00214998  90 0D E0 98 */	stw r0, __ARQCallbackHi@sda21(r13)
 /* 80217B9C 0021499C  48 00 00 28 */	b lbl_80217BC4
 lbl_80217BA0:
-/* 80217BA0 002149A0  81 8D E0 9C */	lwz r12, __ARQCallbackLo-_SDA_BASE_(r13)
+/* 80217BA0 002149A0  81 8D E0 9C */	lwz r12, __ARQCallbackLo@sda21(r13)
 /* 80217BA4 002149A4  28 0C 00 00 */	cmplwi r12, 0
 /* 80217BA8 002149A8  41 82 00 1C */	beq lbl_80217BC4
-/* 80217BAC 002149AC  80 6D E0 94 */	lwz r3, __ARQRequestPendingLo-_SDA_BASE_(r13)
+/* 80217BAC 002149AC  80 6D E0 94 */	lwz r3, __ARQRequestPendingLo@sda21(r13)
 /* 80217BB0 002149B0  7D 88 03 A6 */	mtlr r12
 /* 80217BB4 002149B4  4E 80 00 21 */	blrl 
 /* 80217BB8 002149B8  38 00 00 00 */	li r0, 0
-/* 80217BBC 002149BC  90 0D E0 94 */	stw r0, __ARQRequestPendingLo-_SDA_BASE_(r13)
-/* 80217BC0 002149C0  90 0D E0 9C */	stw r0, __ARQCallbackLo-_SDA_BASE_(r13)
+/* 80217BBC 002149BC  90 0D E0 94 */	stw r0, __ARQRequestPendingLo@sda21(r13)
+/* 80217BC0 002149C0  90 0D E0 9C */	stw r0, __ARQCallbackLo@sda21(r13)
 lbl_80217BC4:
-/* 80217BC4 002149C4  80 CD E0 80 */	lwz r6, __ARQRequestQueueHi-_SDA_BASE_(r13)
+/* 80217BC4 002149C4  80 CD E0 80 */	lwz r6, __ARQRequestQueueHi@sda21(r13)
 /* 80217BC8 002149C8  28 06 00 00 */	cmplwi r6, 0
 /* 80217BCC 002149CC  41 82 00 4C */	beq lbl_80217C18
 /* 80217BD0 002149D0  80 66 00 08 */	lwz r3, 8(r6)
@@ -3850,14 +3850,14 @@ lbl_80217BF0:
 /* 80217BF8 002149F8  80 C6 00 18 */	lwz r6, 0x18(r6)
 /* 80217BFC 002149FC  4B FF E4 0D */	bl ARStartDMA
 lbl_80217C00:
-/* 80217C00 00214A00  80 6D E0 80 */	lwz r3, __ARQRequestQueueHi-_SDA_BASE_(r13)
+/* 80217C00 00214A00  80 6D E0 80 */	lwz r3, __ARQRequestQueueHi@sda21(r13)
 /* 80217C04 00214A04  80 03 00 1C */	lwz r0, 0x1c(r3)
-/* 80217C08 00214A08  90 0D E0 98 */	stw r0, __ARQCallbackHi-_SDA_BASE_(r13)
-/* 80217C0C 00214A0C  90 6D E0 90 */	stw r3, __ARQRequestPendingHi-_SDA_BASE_(r13)
+/* 80217C08 00214A08  90 0D E0 98 */	stw r0, __ARQCallbackHi@sda21(r13)
+/* 80217C0C 00214A0C  90 6D E0 90 */	stw r3, __ARQRequestPendingHi@sda21(r13)
 /* 80217C10 00214A10  80 03 00 00 */	lwz r0, 0(r3)
-/* 80217C14 00214A14  90 0D E0 80 */	stw r0, __ARQRequestQueueHi-_SDA_BASE_(r13)
+/* 80217C14 00214A14  90 0D E0 80 */	stw r0, __ARQRequestQueueHi@sda21(r13)
 lbl_80217C18:
-/* 80217C18 00214A18  80 0D E0 90 */	lwz r0, __ARQRequestPendingHi-_SDA_BASE_(r13)
+/* 80217C18 00214A18  80 0D E0 90 */	lwz r0, __ARQRequestPendingHi@sda21(r13)
 /* 80217C1C 00214A1C  28 00 00 00 */	cmplwi r0, 0
 /* 80217C20 00214A20  40 82 00 08 */	bne lbl_80217C28
 /* 80217C24 00214A24  4B FF FE 45 */	bl __ARQServiceQueueLo
@@ -3873,25 +3873,25 @@ ARQInit:
 /* 80217C3C 00214A3C  90 01 00 04 */	stw r0, 4(r1)
 /* 80217C40 00214A40  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80217C44 00214A44  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80217C48 00214A48  80 0D E0 A4 */	lwz r0, __ARQ_init_flag-_SDA_BASE_(r13)
+/* 80217C48 00214A48  80 0D E0 A4 */	lwz r0, __ARQ_init_flag@sda21(r13)
 /* 80217C4C 00214A4C  2C 00 00 01 */	cmpwi r0, 1
 /* 80217C50 00214A50  41 82 00 44 */	beq lbl_80217C94
-/* 80217C54 00214A54  80 6D B3 C0 */	lwz r3, __ARQVersion-_SDA_BASE_(r13)
+/* 80217C54 00214A54  80 6D B3 C0 */	lwz r3, __ARQVersion@sda21(r13)
 /* 80217C58 00214A58  48 01 9B 71 */	bl OSRegisterVersion
 /* 80217C5C 00214A5C  3B E0 00 00 */	li r31, 0
 /* 80217C60 00214A60  38 00 10 00 */	li r0, 0x1000
-/* 80217C64 00214A64  93 ED E0 88 */	stw r31, __ARQRequestQueueLo-_SDA_BASE_(r13)
+/* 80217C64 00214A64  93 ED E0 88 */	stw r31, __ARQRequestQueueLo@sda21(r13)
 /* 80217C68 00214A68  3C 60 80 21 */	lis r3, __ARQInterruptServiceRoutine@ha
-/* 80217C6C 00214A6C  93 ED E0 80 */	stw r31, __ARQRequestQueueHi-_SDA_BASE_(r13)
+/* 80217C6C 00214A6C  93 ED E0 80 */	stw r31, __ARQRequestQueueHi@sda21(r13)
 /* 80217C70 00214A70  38 63 7B 6C */	addi r3, r3, __ARQInterruptServiceRoutine@l
-/* 80217C74 00214A74  90 0D E0 A0 */	stw r0, __ARQChunkSize-_SDA_BASE_(r13)
+/* 80217C74 00214A74  90 0D E0 A0 */	stw r0, __ARQChunkSize@sda21(r13)
 /* 80217C78 00214A78  4B FF E3 11 */	bl ARRegisterDMACallback
 /* 80217C7C 00214A7C  38 00 00 01 */	li r0, 1
-/* 80217C80 00214A80  93 ED E0 90 */	stw r31, __ARQRequestPendingHi-_SDA_BASE_(r13)
-/* 80217C84 00214A84  93 ED E0 94 */	stw r31, __ARQRequestPendingLo-_SDA_BASE_(r13)
-/* 80217C88 00214A88  93 ED E0 98 */	stw r31, __ARQCallbackHi-_SDA_BASE_(r13)
-/* 80217C8C 00214A8C  93 ED E0 9C */	stw r31, __ARQCallbackLo-_SDA_BASE_(r13)
-/* 80217C90 00214A90  90 0D E0 A4 */	stw r0, __ARQ_init_flag-_SDA_BASE_(r13)
+/* 80217C80 00214A80  93 ED E0 90 */	stw r31, __ARQRequestPendingHi@sda21(r13)
+/* 80217C84 00214A84  93 ED E0 94 */	stw r31, __ARQRequestPendingLo@sda21(r13)
+/* 80217C88 00214A88  93 ED E0 98 */	stw r31, __ARQCallbackHi@sda21(r13)
+/* 80217C8C 00214A8C  93 ED E0 9C */	stw r31, __ARQCallbackLo@sda21(r13)
+/* 80217C90 00214A90  90 0D E0 A4 */	stw r0, __ARQ_init_flag@sda21(r13)
 lbl_80217C94:
 /* 80217C94 00214A94  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80217C98 00214A98  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3934,36 +3934,36 @@ lbl_80217D00:
 /* 80217D18 00214B18  40 80 00 08 */	bge lbl_80217D20
 /* 80217D1C 00214B1C  48 00 00 48 */	b lbl_80217D64
 lbl_80217D20:
-/* 80217D20 00214B20  80 0D E0 88 */	lwz r0, __ARQRequestQueueLo-_SDA_BASE_(r13)
+/* 80217D20 00214B20  80 0D E0 88 */	lwz r0, __ARQRequestQueueLo@sda21(r13)
 /* 80217D24 00214B24  28 00 00 00 */	cmplwi r0, 0
 /* 80217D28 00214B28  41 82 00 10 */	beq lbl_80217D38
-/* 80217D2C 00214B2C  80 6D E0 8C */	lwz r3, __ARQRequestTailLo-_SDA_BASE_(r13)
+/* 80217D2C 00214B2C  80 6D E0 8C */	lwz r3, __ARQRequestTailLo@sda21(r13)
 /* 80217D30 00214B30  93 A3 00 00 */	stw r29, 0(r3)
 /* 80217D34 00214B34  48 00 00 08 */	b lbl_80217D3C
 lbl_80217D38:
-/* 80217D38 00214B38  93 AD E0 88 */	stw r29, __ARQRequestQueueLo-_SDA_BASE_(r13)
+/* 80217D38 00214B38  93 AD E0 88 */	stw r29, __ARQRequestQueueLo@sda21(r13)
 lbl_80217D3C:
-/* 80217D3C 00214B3C  93 AD E0 8C */	stw r29, __ARQRequestTailLo-_SDA_BASE_(r13)
+/* 80217D3C 00214B3C  93 AD E0 8C */	stw r29, __ARQRequestTailLo@sda21(r13)
 /* 80217D40 00214B40  48 00 00 24 */	b lbl_80217D64
 lbl_80217D44:
-/* 80217D44 00214B44  80 0D E0 80 */	lwz r0, __ARQRequestQueueHi-_SDA_BASE_(r13)
+/* 80217D44 00214B44  80 0D E0 80 */	lwz r0, __ARQRequestQueueHi@sda21(r13)
 /* 80217D48 00214B48  28 00 00 00 */	cmplwi r0, 0
 /* 80217D4C 00214B4C  41 82 00 10 */	beq lbl_80217D5C
-/* 80217D50 00214B50  80 6D E0 84 */	lwz r3, __ARQRequestTailHi-_SDA_BASE_(r13)
+/* 80217D50 00214B50  80 6D E0 84 */	lwz r3, __ARQRequestTailHi@sda21(r13)
 /* 80217D54 00214B54  93 A3 00 00 */	stw r29, 0(r3)
 /* 80217D58 00214B58  48 00 00 08 */	b lbl_80217D60
 lbl_80217D5C:
-/* 80217D5C 00214B5C  93 AD E0 80 */	stw r29, __ARQRequestQueueHi-_SDA_BASE_(r13)
+/* 80217D5C 00214B5C  93 AD E0 80 */	stw r29, __ARQRequestQueueHi@sda21(r13)
 lbl_80217D60:
-/* 80217D60 00214B60  93 AD E0 84 */	stw r29, __ARQRequestTailHi-_SDA_BASE_(r13)
+/* 80217D60 00214B60  93 AD E0 84 */	stw r29, __ARQRequestTailHi@sda21(r13)
 lbl_80217D64:
-/* 80217D64 00214B64  80 0D E0 90 */	lwz r0, __ARQRequestPendingHi-_SDA_BASE_(r13)
+/* 80217D64 00214B64  80 0D E0 90 */	lwz r0, __ARQRequestPendingHi@sda21(r13)
 /* 80217D68 00214B68  28 00 00 00 */	cmplwi r0, 0
 /* 80217D6C 00214B6C  40 82 00 74 */	bne lbl_80217DE0
-/* 80217D70 00214B70  80 0D E0 94 */	lwz r0, __ARQRequestPendingLo-_SDA_BASE_(r13)
+/* 80217D70 00214B70  80 0D E0 94 */	lwz r0, __ARQRequestPendingLo@sda21(r13)
 /* 80217D74 00214B74  28 00 00 00 */	cmplwi r0, 0
 /* 80217D78 00214B78  40 82 00 68 */	bne lbl_80217DE0
-/* 80217D7C 00214B7C  80 CD E0 80 */	lwz r6, __ARQRequestQueueHi-_SDA_BASE_(r13)
+/* 80217D7C 00214B7C  80 CD E0 80 */	lwz r6, __ARQRequestQueueHi@sda21(r13)
 /* 80217D80 00214B80  28 06 00 00 */	cmplwi r6, 0
 /* 80217D84 00214B84  41 82 00 4C */	beq lbl_80217DD0
 /* 80217D88 00214B88  80 66 00 08 */	lwz r3, 8(r6)
@@ -3980,14 +3980,14 @@ lbl_80217DA8:
 /* 80217DB0 00214BB0  80 C6 00 18 */	lwz r6, 0x18(r6)
 /* 80217DB4 00214BB4  4B FF E2 55 */	bl ARStartDMA
 lbl_80217DB8:
-/* 80217DB8 00214BB8  80 6D E0 80 */	lwz r3, __ARQRequestQueueHi-_SDA_BASE_(r13)
+/* 80217DB8 00214BB8  80 6D E0 80 */	lwz r3, __ARQRequestQueueHi@sda21(r13)
 /* 80217DBC 00214BBC  80 03 00 1C */	lwz r0, 0x1c(r3)
-/* 80217DC0 00214BC0  90 0D E0 98 */	stw r0, __ARQCallbackHi-_SDA_BASE_(r13)
-/* 80217DC4 00214BC4  90 6D E0 90 */	stw r3, __ARQRequestPendingHi-_SDA_BASE_(r13)
+/* 80217DC0 00214BC0  90 0D E0 98 */	stw r0, __ARQCallbackHi@sda21(r13)
+/* 80217DC4 00214BC4  90 6D E0 90 */	stw r3, __ARQRequestPendingHi@sda21(r13)
 /* 80217DC8 00214BC8  80 03 00 00 */	lwz r0, 0(r3)
-/* 80217DCC 00214BCC  90 0D E0 80 */	stw r0, __ARQRequestQueueHi-_SDA_BASE_(r13)
+/* 80217DCC 00214BCC  90 0D E0 80 */	stw r0, __ARQRequestQueueHi@sda21(r13)
 lbl_80217DD0:
-/* 80217DD0 00214BD0  80 0D E0 90 */	lwz r0, __ARQRequestPendingHi-_SDA_BASE_(r13)
+/* 80217DD0 00214BD0  80 0D E0 90 */	lwz r0, __ARQRequestPendingHi@sda21(r13)
 /* 80217DD4 00214BD4  28 00 00 00 */	cmplwi r0, 0
 /* 80217DD8 00214BD8  40 82 00 08 */	bne lbl_80217DE0
 /* 80217DDC 00214BDC  4B FF FC 8D */	bl __ARQServiceQueueLo
@@ -4021,7 +4021,7 @@ AXInitEx:
 /* 80217E30 00214C30  94 21 FF E8 */	stwu r1, -0x18(r1)
 /* 80217E34 00214C34  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 80217E38 00214C38  7C 7F 1B 78 */	mr r31, r3
-/* 80217E3C 00214C3C  80 6D B3 C8 */	lwz r3, __AXVersion-_SDA_BASE_(r13)
+/* 80217E3C 00214C3C  80 6D B3 C8 */	lwz r3, __AXVersion@sda21(r13)
 /* 80217E40 00214C40  48 01 99 89 */	bl OSRegisterVersion
 /* 80217E44 00214C44  48 00 00 F1 */	bl __AXAllocInit
 /* 80217E48 00214C48  48 00 28 91 */	bl __AXVPBInit
@@ -4100,7 +4100,7 @@ lbl_80217F18:
 .global __AXAllocInit
 __AXAllocInit:
 /* 80217F34 00214D34  38 00 00 00 */	li r0, 0
-/* 80217F38 00214D38  90 0D E0 A8 */	stw r0, __AXCallbackStack-_SDA_BASE_(r13)
+/* 80217F38 00214D38  90 0D E0 A8 */	stw r0, __AXCallbackStack@sda21(r13)
 /* 80217F3C 00214D3C  38 00 00 02 */	li r0, 2
 /* 80217F40 00214D40  3C 80 80 3A */	lis r4, __AXStackTail@ha
 /* 80217F44 00214D44  7C 09 03 A6 */	mtctr r0
@@ -4149,7 +4149,7 @@ lbl_80217F54:
 .global __AXAllocQuit
 __AXAllocQuit:
 /* 80217FE8 00214DE8  38 00 00 00 */	li r0, 0
-/* 80217FEC 00214DEC  90 0D E0 A8 */	stw r0, __AXCallbackStack-_SDA_BASE_(r13)
+/* 80217FEC 00214DEC  90 0D E0 A8 */	stw r0, __AXCallbackStack@sda21(r13)
 /* 80217FF0 00214DF0  38 00 00 02 */	li r0, 2
 /* 80217FF4 00214DF4  3C 80 80 3A */	lis r4, __AXStackTail@ha
 /* 80217FF8 00214DF8  7C 09 03 A6 */	mtctr r0
@@ -4208,19 +4208,19 @@ __AXPushFreeStack:
 
 .global __AXPushCallbackStack
 __AXPushCallbackStack:
-/* 802180BC 00214EBC  80 0D E0 A8 */	lwz r0, __AXCallbackStack-_SDA_BASE_(r13)
+/* 802180BC 00214EBC  80 0D E0 A8 */	lwz r0, __AXCallbackStack@sda21(r13)
 /* 802180C0 00214EC0  90 03 00 08 */	stw r0, 8(r3)
-/* 802180C4 00214EC4  90 6D E0 A8 */	stw r3, __AXCallbackStack-_SDA_BASE_(r13)
+/* 802180C4 00214EC4  90 6D E0 A8 */	stw r3, __AXCallbackStack@sda21(r13)
 /* 802180C8 00214EC8  4E 80 00 20 */	blr 
 
 .global __AXPopCallbackStack
 __AXPopCallbackStack:
-/* 802180CC 00214ECC  80 0D E0 A8 */	lwz r0, __AXCallbackStack-_SDA_BASE_(r13)
+/* 802180CC 00214ECC  80 0D E0 A8 */	lwz r0, __AXCallbackStack@sda21(r13)
 /* 802180D0 00214ED0  28 00 00 00 */	cmplwi r0, 0
 /* 802180D4 00214ED4  7C 03 03 78 */	mr r3, r0
 /* 802180D8 00214ED8  4D 82 00 20 */	beqlr 
 /* 802180DC 00214EDC  80 03 00 08 */	lwz r0, 8(r3)
-/* 802180E0 00214EE0  90 0D E0 A8 */	stw r0, __AXCallbackStack-_SDA_BASE_(r13)
+/* 802180E0 00214EE0  90 0D E0 A8 */	stw r0, __AXCallbackStack@sda21(r13)
 /* 802180E4 00214EE4  4E 80 00 20 */	blr 
 
 .global __AXRemoveFromStack
@@ -4459,24 +4459,24 @@ lbl_802183F0:
 __AXAuxInit:
 /* 80218418 00215218  38 E0 00 00 */	li r7, 0
 /* 8021841C 0021521C  38 C0 00 01 */	li r6, 1
-/* 80218420 00215220  90 ED E0 B0 */	stw r7, __AXCallbackAuxA-_SDA_BASE_(r13)
+/* 80218420 00215220  90 ED E0 B0 */	stw r7, __AXCallbackAuxA@sda21(r13)
 /* 80218424 00215224  38 A0 00 02 */	li r5, 2
 /* 80218428 00215228  3C 80 80 3A */	lis r4, __AXBufferAuxA@ha
-/* 8021842C 0021522C  90 ED E0 B4 */	stw r7, __AXCallbackAuxB-_SDA_BASE_(r13)
+/* 8021842C 0021522C  90 ED E0 B4 */	stw r7, __AXCallbackAuxB@sda21(r13)
 /* 80218430 00215230  38 00 00 1E */	li r0, 0x1e
 /* 80218434 00215234  3C 60 80 3A */	lis r3, __AXBufferAuxB@ha
 /* 80218438 00215238  7C 09 03 A6 */	mtctr r0
-/* 8021843C 0021523C  90 ED E0 B8 */	stw r7, __AXContextAuxA-_SDA_BASE_(r13)
+/* 8021843C 0021523C  90 ED E0 B8 */	stw r7, __AXContextAuxA@sda21(r13)
 /* 80218440 00215240  38 84 5E 80 */	addi r4, r4, __AXBufferAuxA@l
 /* 80218444 00215244  38 03 75 00 */	addi r0, r3, __AXBufferAuxB@l
 /* 80218448 00215248  7C 83 23 78 */	mr r3, r4
-/* 8021844C 0021524C  90 ED E0 BC */	stw r7, __AXContextAuxB-_SDA_BASE_(r13)
+/* 8021844C 0021524C  90 ED E0 BC */	stw r7, __AXContextAuxB@sda21(r13)
 /* 80218450 00215250  7C 04 03 78 */	mr r4, r0
-/* 80218454 00215254  90 ED E0 D0 */	stw r7, __AXAuxDspWritePosition-_SDA_BASE_(r13)
-/* 80218458 00215258  90 CD E0 D4 */	stw r6, __AXAuxDspReadPosition-_SDA_BASE_(r13)
-/* 8021845C 0021525C  90 ED E0 D8 */	stw r7, __AXAuxDspWritePositionDpl2-_SDA_BASE_(r13)
-/* 80218460 00215260  90 CD E0 DC */	stw r6, __AXAuxDspReadPositionDpl2-_SDA_BASE_(r13)
-/* 80218464 00215264  90 AD E0 E0 */	stw r5, __AXAuxCpuReadWritePosition-_SDA_BASE_(r13)
+/* 80218454 00215254  90 ED E0 D0 */	stw r7, __AXAuxDspWritePosition@sda21(r13)
+/* 80218458 00215258  90 CD E0 D4 */	stw r6, __AXAuxDspReadPosition@sda21(r13)
+/* 8021845C 0021525C  90 ED E0 D8 */	stw r7, __AXAuxDspWritePositionDpl2@sda21(r13)
+/* 80218460 00215260  90 CD E0 DC */	stw r6, __AXAuxDspReadPositionDpl2@sda21(r13)
+/* 80218464 00215264  90 AD E0 E0 */	stw r5, __AXAuxCpuReadWritePosition@sda21(r13)
 lbl_80218468:
 /* 80218468 00215268  38 00 00 00 */	li r0, 0
 /* 8021846C 0021526C  90 03 00 00 */	stw r0, 0(r3)
@@ -4519,16 +4519,16 @@ lbl_80218468:
 .global __AXAuxQuit
 __AXAuxQuit:
 /* 802184FC 002152FC  38 00 00 00 */	li r0, 0
-/* 80218500 00215300  90 0D E0 B0 */	stw r0, __AXCallbackAuxA-_SDA_BASE_(r13)
-/* 80218504 00215304  90 0D E0 B4 */	stw r0, __AXCallbackAuxB-_SDA_BASE_(r13)
+/* 80218500 00215300  90 0D E0 B0 */	stw r0, __AXCallbackAuxA@sda21(r13)
+/* 80218504 00215304  90 0D E0 B4 */	stw r0, __AXCallbackAuxB@sda21(r13)
 /* 80218508 00215308  4E 80 00 20 */	blr 
 
 .global __AXGetAuxAInput
 __AXGetAuxAInput:
-/* 8021850C 0021530C  80 0D E0 B0 */	lwz r0, __AXCallbackAuxA-_SDA_BASE_(r13)
+/* 8021850C 0021530C  80 0D E0 B0 */	lwz r0, __AXCallbackAuxA@sda21(r13)
 /* 80218510 00215310  28 00 00 00 */	cmplwi r0, 0
 /* 80218514 00215314  41 82 00 20 */	beq lbl_80218534
-/* 80218518 00215318  80 AD E0 D0 */	lwz r5, __AXAuxDspWritePosition-_SDA_BASE_(r13)
+/* 80218518 00215318  80 AD E0 D0 */	lwz r5, __AXAuxDspWritePosition@sda21(r13)
 /* 8021851C 0021531C  3C 80 80 3A */	lis r4, __AXBufferAuxA@ha
 /* 80218520 00215320  38 04 5E 80 */	addi r0, r4, __AXBufferAuxA@l
 /* 80218524 00215324  1C 85 07 80 */	mulli r4, r5, 0x780
@@ -4542,7 +4542,7 @@ lbl_80218534:
 
 .global __AXGetAuxAInputDpl2
 __AXGetAuxAInputDpl2:
-/* 80218540 00215340  80 AD E0 D0 */	lwz r5, __AXAuxDspWritePosition-_SDA_BASE_(r13)
+/* 80218540 00215340  80 AD E0 D0 */	lwz r5, __AXAuxDspWritePosition@sda21(r13)
 /* 80218544 00215344  3C 80 80 3A */	lis r4, __AXBufferAuxB@ha
 /* 80218548 00215348  38 04 75 00 */	addi r0, r4, __AXBufferAuxB@l
 /* 8021854C 0021534C  1C 85 07 80 */	mulli r4, r5, 0x780
@@ -4553,7 +4553,7 @@ __AXGetAuxAInputDpl2:
 
 .global __AXGetAuxAOutput
 __AXGetAuxAOutput:
-/* 80218560 00215360  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition-_SDA_BASE_(r13)
+/* 80218560 00215360  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition@sda21(r13)
 /* 80218564 00215364  3C 80 80 3A */	lis r4, __AXBufferAuxA@ha
 /* 80218568 00215368  38 04 5E 80 */	addi r0, r4, __AXBufferAuxA@l
 /* 8021856C 0021536C  1C 85 07 80 */	mulli r4, r5, 0x780
@@ -4563,7 +4563,7 @@ __AXGetAuxAOutput:
 
 .global __AXGetAuxAOutputDpl2R
 __AXGetAuxAOutputDpl2R:
-/* 8021857C 0021537C  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition-_SDA_BASE_(r13)
+/* 8021857C 0021537C  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition@sda21(r13)
 /* 80218580 00215380  3C 80 80 3A */	lis r4, __AXBufferAuxA@ha
 /* 80218584 00215384  38 04 5E 80 */	addi r0, r4, __AXBufferAuxA@l
 /* 80218588 00215388  1C 85 07 80 */	mulli r4, r5, 0x780
@@ -4574,7 +4574,7 @@ __AXGetAuxAOutputDpl2R:
 
 .global __AXGetAuxAOutputDpl2Ls
 __AXGetAuxAOutputDpl2Ls:
-/* 8021859C 0021539C  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition-_SDA_BASE_(r13)
+/* 8021859C 0021539C  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition@sda21(r13)
 /* 802185A0 002153A0  3C 80 80 3A */	lis r4, __AXBufferAuxA@ha
 /* 802185A4 002153A4  38 04 5E 80 */	addi r0, r4, __AXBufferAuxA@l
 /* 802185A8 002153A8  1C 85 07 80 */	mulli r4, r5, 0x780
@@ -4585,7 +4585,7 @@ __AXGetAuxAOutputDpl2Ls:
 
 .global __AXGetAuxAOutputDpl2Rs
 __AXGetAuxAOutputDpl2Rs:
-/* 802185BC 002153BC  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition-_SDA_BASE_(r13)
+/* 802185BC 002153BC  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition@sda21(r13)
 /* 802185C0 002153C0  3C 80 80 3A */	lis r4, __AXBufferAuxB@ha
 /* 802185C4 002153C4  38 04 75 00 */	addi r0, r4, __AXBufferAuxB@l
 /* 802185C8 002153C8  1C 85 07 80 */	mulli r4, r5, 0x780
@@ -4596,10 +4596,10 @@ __AXGetAuxAOutputDpl2Rs:
 
 .global __AXGetAuxBInput
 __AXGetAuxBInput:
-/* 802185DC 002153DC  80 0D E0 B4 */	lwz r0, __AXCallbackAuxB-_SDA_BASE_(r13)
+/* 802185DC 002153DC  80 0D E0 B4 */	lwz r0, __AXCallbackAuxB@sda21(r13)
 /* 802185E0 002153E0  28 00 00 00 */	cmplwi r0, 0
 /* 802185E4 002153E4  41 82 00 20 */	beq lbl_80218604
-/* 802185E8 002153E8  80 AD E0 D0 */	lwz r5, __AXAuxDspWritePosition-_SDA_BASE_(r13)
+/* 802185E8 002153E8  80 AD E0 D0 */	lwz r5, __AXAuxDspWritePosition@sda21(r13)
 /* 802185EC 002153EC  3C 80 80 3A */	lis r4, __AXBufferAuxB@ha
 /* 802185F0 002153F0  38 04 75 00 */	addi r0, r4, __AXBufferAuxB@l
 /* 802185F4 002153F4  1C 85 07 80 */	mulli r4, r5, 0x780
@@ -4613,7 +4613,7 @@ lbl_80218604:
 
 .global __AXGetAuxBOutput
 __AXGetAuxBOutput:
-/* 80218610 00215410  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition-_SDA_BASE_(r13)
+/* 80218610 00215410  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition@sda21(r13)
 /* 80218614 00215414  3C 80 80 3A */	lis r4, __AXBufferAuxB@ha
 /* 80218618 00215418  38 04 75 00 */	addi r0, r4, __AXBufferAuxB@l
 /* 8021861C 0021541C  1C 85 07 80 */	mulli r4, r5, 0x780
@@ -4623,7 +4623,7 @@ __AXGetAuxBOutput:
 
 .global __AXGetAuxBForDPL2
 __AXGetAuxBForDPL2:
-/* 8021862C 0021542C  80 AD E0 D8 */	lwz r5, __AXAuxDspWritePositionDpl2-_SDA_BASE_(r13)
+/* 8021862C 0021542C  80 AD E0 D8 */	lwz r5, __AXAuxDspWritePositionDpl2@sda21(r13)
 /* 80218630 00215430  3C 80 80 3A */	lis r4, __AXBufferAuxB@ha
 /* 80218634 00215434  38 04 75 00 */	addi r0, r4, __AXBufferAuxB@l
 /* 80218638 00215438  1C 85 07 80 */	mulli r4, r5, 0x780
@@ -4633,7 +4633,7 @@ __AXGetAuxBForDPL2:
 
 .global __AXGetAuxBOutputDPL2
 __AXGetAuxBOutputDPL2:
-/* 80218648 00215448  80 AD E0 DC */	lwz r5, __AXAuxDspReadPositionDpl2-_SDA_BASE_(r13)
+/* 80218648 00215448  80 AD E0 DC */	lwz r5, __AXAuxDspReadPositionDpl2@sda21(r13)
 /* 8021864C 0021544C  3C 80 80 3A */	lis r4, __AXBufferAuxB@ha
 /* 80218650 00215450  38 04 75 00 */	addi r0, r4, __AXBufferAuxB@l
 /* 80218654 00215454  1C 85 07 80 */	mulli r4, r5, 0x780
@@ -4649,25 +4649,25 @@ __AXProcessAux:
 /* 80218670 00215470  94 21 FF C8 */	stwu r1, -0x38(r1)
 /* 80218674 00215474  93 E1 00 34 */	stw r31, 0x34(r1)
 /* 80218678 00215478  3B E4 5E 80 */	addi r31, r4, __AXBufferAuxA@l
-/* 8021867C 0021547C  80 0D E0 D0 */	lwz r0, __AXAuxDspWritePosition-_SDA_BASE_(r13)
-/* 80218680 00215480  80 6D E0 D4 */	lwz r3, __AXAuxDspReadPosition-_SDA_BASE_(r13)
+/* 8021867C 0021547C  80 0D E0 D0 */	lwz r0, __AXAuxDspWritePosition@sda21(r13)
+/* 80218680 00215480  80 6D E0 D4 */	lwz r3, __AXAuxDspReadPosition@sda21(r13)
 /* 80218684 00215484  1C 80 07 80 */	mulli r4, r0, 0x780
-/* 80218688 00215488  80 0D E0 B0 */	lwz r0, __AXCallbackAuxA-_SDA_BASE_(r13)
+/* 80218688 00215488  80 0D E0 B0 */	lwz r0, __AXCallbackAuxA@sda21(r13)
 /* 8021868C 0021548C  1C 63 07 80 */	mulli r3, r3, 0x780
 /* 80218690 00215490  7C 9F 22 14 */	add r4, r31, r4
 /* 80218694 00215494  7C 7F 1A 14 */	add r3, r31, r3
-/* 80218698 00215498  90 8D E0 C0 */	stw r4, __AXAuxADspWrite-_SDA_BASE_(r13)
+/* 80218698 00215498  90 8D E0 C0 */	stw r4, __AXAuxADspWrite@sda21(r13)
 /* 8021869C 0021549C  38 84 16 80 */	addi r4, r4, 0x1680
-/* 802186A0 002154A0  90 6D E0 C4 */	stw r3, __AXAuxADspRead-_SDA_BASE_(r13)
+/* 802186A0 002154A0  90 6D E0 C4 */	stw r3, __AXAuxADspRead@sda21(r13)
 /* 802186A4 002154A4  38 63 16 80 */	addi r3, r3, 0x1680
 /* 802186A8 002154A8  28 00 00 00 */	cmplwi r0, 0
-/* 802186AC 002154AC  90 8D E0 C8 */	stw r4, __AXAuxBDspWrite-_SDA_BASE_(r13)
-/* 802186B0 002154B0  90 6D E0 CC */	stw r3, __AXAuxBDspRead-_SDA_BASE_(r13)
+/* 802186AC 002154AC  90 8D E0 C8 */	stw r4, __AXAuxBDspWrite@sda21(r13)
+/* 802186B0 002154B0  90 6D E0 CC */	stw r3, __AXAuxBDspRead@sda21(r13)
 /* 802186B4 002154B4  41 82 00 CC */	beq lbl_80218780
-/* 802186B8 002154B8  80 0D E0 F8 */	lwz r0, __AXClMode-_SDA_BASE_(r13)
+/* 802186B8 002154B8  80 0D E0 F8 */	lwz r0, __AXClMode@sda21(r13)
 /* 802186BC 002154BC  28 00 00 02 */	cmplwi r0, 2
 /* 802186C0 002154C0  40 82 00 74 */	bne lbl_80218734
-/* 802186C4 002154C4  80 0D E0 E0 */	lwz r0, __AXAuxCpuReadWritePosition-_SDA_BASE_(r13)
+/* 802186C4 002154C4  80 0D E0 E0 */	lwz r0, __AXAuxCpuReadWritePosition@sda21(r13)
 /* 802186C8 002154C8  38 80 07 80 */	li r4, 0x780
 /* 802186CC 002154CC  1C 00 07 80 */	mulli r0, r0, 0x780
 /* 802186D0 002154D0  7C BF 02 14 */	add r5, r31, r0
@@ -4683,9 +4683,9 @@ __AXProcessAux:
 /* 802186F8 002154F8  80 61 00 2C */	lwz r3, 0x2c(r1)
 /* 802186FC 002154FC  38 80 02 80 */	li r4, 0x280
 /* 80218700 00215500  48 01 9F 5D */	bl DCInvalidateRange
-/* 80218704 00215504  81 8D E0 B0 */	lwz r12, __AXCallbackAuxA-_SDA_BASE_(r13)
+/* 80218704 00215504  81 8D E0 B0 */	lwz r12, __AXCallbackAuxA@sda21(r13)
 /* 80218708 00215508  38 61 00 20 */	addi r3, r1, 0x20
-/* 8021870C 0021550C  80 8D E0 B8 */	lwz r4, __AXContextAuxA-_SDA_BASE_(r13)
+/* 8021870C 0021550C  80 8D E0 B8 */	lwz r4, __AXContextAuxA@sda21(r13)
 /* 80218710 00215510  7D 88 03 A6 */	mtlr r12
 /* 80218714 00215514  4E 80 00 21 */	blrl 
 /* 80218718 00215518  80 61 00 20 */	lwz r3, 0x20(r1)
@@ -4696,7 +4696,7 @@ __AXProcessAux:
 /* 8021872C 0021552C  48 01 9F BD */	bl DCFlushRangeNoSync
 /* 80218730 00215530  48 00 00 50 */	b lbl_80218780
 lbl_80218734:
-/* 80218734 00215534  80 0D E0 E0 */	lwz r0, __AXAuxCpuReadWritePosition-_SDA_BASE_(r13)
+/* 80218734 00215534  80 0D E0 E0 */	lwz r0, __AXAuxCpuReadWritePosition@sda21(r13)
 /* 80218738 00215538  38 80 07 80 */	li r4, 0x780
 /* 8021873C 0021553C  1C 00 07 80 */	mulli r0, r0, 0x780
 /* 80218740 00215540  7C BF 02 14 */	add r5, r31, r0
@@ -4707,22 +4707,22 @@ lbl_80218734:
 /* 80218754 00215554  90 01 00 1C */	stw r0, 0x1c(r1)
 /* 80218758 00215558  80 61 00 14 */	lwz r3, 0x14(r1)
 /* 8021875C 0021555C  48 01 9F 01 */	bl DCInvalidateRange
-/* 80218760 00215560  81 8D E0 B0 */	lwz r12, __AXCallbackAuxA-_SDA_BASE_(r13)
+/* 80218760 00215560  81 8D E0 B0 */	lwz r12, __AXCallbackAuxA@sda21(r13)
 /* 80218764 00215564  38 61 00 14 */	addi r3, r1, 0x14
-/* 80218768 00215568  80 8D E0 B8 */	lwz r4, __AXContextAuxA-_SDA_BASE_(r13)
+/* 80218768 00215568  80 8D E0 B8 */	lwz r4, __AXContextAuxA@sda21(r13)
 /* 8021876C 0021556C  7D 88 03 A6 */	mtlr r12
 /* 80218770 00215570  4E 80 00 21 */	blrl 
 /* 80218774 00215574  80 61 00 14 */	lwz r3, 0x14(r1)
 /* 80218778 00215578  38 80 07 80 */	li r4, 0x780
 /* 8021877C 0021557C  48 01 9F 6D */	bl DCFlushRangeNoSync
 lbl_80218780:
-/* 80218780 00215580  80 0D E0 B4 */	lwz r0, __AXCallbackAuxB-_SDA_BASE_(r13)
+/* 80218780 00215580  80 0D E0 B4 */	lwz r0, __AXCallbackAuxB@sda21(r13)
 /* 80218784 00215584  28 00 00 00 */	cmplwi r0, 0
 /* 80218788 00215588  41 82 00 60 */	beq lbl_802187E8
-/* 8021878C 0021558C  80 0D E0 F8 */	lwz r0, __AXClMode-_SDA_BASE_(r13)
+/* 8021878C 0021558C  80 0D E0 F8 */	lwz r0, __AXClMode@sda21(r13)
 /* 80218790 00215590  28 00 00 02 */	cmplwi r0, 2
 /* 80218794 00215594  41 82 00 54 */	beq lbl_802187E8
-/* 80218798 00215598  80 0D E0 E0 */	lwz r0, __AXAuxCpuReadWritePosition-_SDA_BASE_(r13)
+/* 80218798 00215598  80 0D E0 E0 */	lwz r0, __AXAuxCpuReadWritePosition@sda21(r13)
 /* 8021879C 0021559C  38 80 07 80 */	li r4, 0x780
 /* 802187A0 002155A0  1C 00 07 80 */	mulli r0, r0, 0x780
 /* 802187A4 002155A4  7C BF 02 14 */	add r5, r31, r0
@@ -4734,39 +4734,39 @@ lbl_80218780:
 /* 802187BC 002155BC  90 01 00 10 */	stw r0, 0x10(r1)
 /* 802187C0 002155C0  80 61 00 08 */	lwz r3, 8(r1)
 /* 802187C4 002155C4  48 01 9E 99 */	bl DCInvalidateRange
-/* 802187C8 002155C8  81 8D E0 B4 */	lwz r12, __AXCallbackAuxB-_SDA_BASE_(r13)
+/* 802187C8 002155C8  81 8D E0 B4 */	lwz r12, __AXCallbackAuxB@sda21(r13)
 /* 802187CC 002155CC  38 61 00 08 */	addi r3, r1, 8
-/* 802187D0 002155D0  80 8D E0 BC */	lwz r4, __AXContextAuxB-_SDA_BASE_(r13)
+/* 802187D0 002155D0  80 8D E0 BC */	lwz r4, __AXContextAuxB@sda21(r13)
 /* 802187D4 002155D4  7D 88 03 A6 */	mtlr r12
 /* 802187D8 002155D8  4E 80 00 21 */	blrl 
 /* 802187DC 002155DC  80 61 00 08 */	lwz r3, 8(r1)
 /* 802187E0 002155E0  38 80 07 80 */	li r4, 0x780
 /* 802187E4 002155E4  48 01 9F 05 */	bl DCFlushRangeNoSync
 lbl_802187E8:
-/* 802187E8 002155E8  80 8D E0 D0 */	lwz r4, __AXAuxDspWritePosition-_SDA_BASE_(r13)
+/* 802187E8 002155E8  80 8D E0 D0 */	lwz r4, __AXAuxDspWritePosition@sda21(r13)
 /* 802187EC 002155EC  3C 60 AA AB */	lis r3, 0xAAAAAAAB@ha
-/* 802187F0 002155F0  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition-_SDA_BASE_(r13)
+/* 802187F0 002155F0  80 AD E0 D4 */	lwz r5, __AXAuxDspReadPosition@sda21(r13)
 /* 802187F4 002155F4  39 03 AA AB */	addi r8, r3, 0xAAAAAAAB@l
-/* 802187F8 002155F8  80 6D E0 E0 */	lwz r3, __AXAuxCpuReadWritePosition-_SDA_BASE_(r13)
+/* 802187F8 002155F8  80 6D E0 E0 */	lwz r3, __AXAuxCpuReadWritePosition@sda21(r13)
 /* 802187FC 002155FC  38 04 00 01 */	addi r0, r4, 1
-/* 80218800 00215600  80 8D E0 D8 */	lwz r4, __AXAuxDspWritePositionDpl2-_SDA_BASE_(r13)
+/* 80218800 00215600  80 8D E0 D8 */	lwz r4, __AXAuxDspWritePositionDpl2@sda21(r13)
 /* 80218804 00215604  38 A5 00 01 */	addi r5, r5, 1
-/* 80218808 00215608  90 0D E0 D0 */	stw r0, __AXAuxDspWritePosition-_SDA_BASE_(r13)
+/* 80218808 00215608  90 0D E0 D0 */	stw r0, __AXAuxDspWritePosition@sda21(r13)
 /* 8021880C 0021560C  38 03 00 01 */	addi r0, r3, 1
-/* 80218810 00215610  80 6D E0 DC */	lwz r3, __AXAuxDspReadPositionDpl2-_SDA_BASE_(r13)
-/* 80218814 00215614  90 AD E0 D4 */	stw r5, __AXAuxDspReadPosition-_SDA_BASE_(r13)
+/* 80218810 00215610  80 6D E0 DC */	lwz r3, __AXAuxDspReadPositionDpl2@sda21(r13)
+/* 80218814 00215614  90 AD E0 D4 */	stw r5, __AXAuxDspReadPosition@sda21(r13)
 /* 80218818 00215618  38 A4 00 01 */	addi r5, r4, 1
-/* 8021881C 0021561C  81 4D E0 D0 */	lwz r10, __AXAuxDspWritePosition-_SDA_BASE_(r13)
+/* 8021881C 0021561C  81 4D E0 D0 */	lwz r10, __AXAuxDspWritePosition@sda21(r13)
 /* 80218820 00215620  38 83 00 01 */	addi r4, r3, 1
-/* 80218824 00215624  90 0D E0 E0 */	stw r0, __AXAuxCpuReadWritePosition-_SDA_BASE_(r13)
-/* 80218828 00215628  80 ED E0 D4 */	lwz r7, __AXAuxDspReadPosition-_SDA_BASE_(r13)
+/* 80218824 00215624  90 0D E0 E0 */	stw r0, __AXAuxCpuReadWritePosition@sda21(r13)
+/* 80218828 00215628  80 ED E0 D4 */	lwz r7, __AXAuxDspReadPosition@sda21(r13)
 /* 8021882C 0021562C  7D 28 50 16 */	mulhwu r9, r8, r10
-/* 80218830 00215630  80 6D E0 E0 */	lwz r3, __AXAuxCpuReadWritePosition-_SDA_BASE_(r13)
-/* 80218834 00215634  90 AD E0 D8 */	stw r5, __AXAuxDspWritePositionDpl2-_SDA_BASE_(r13)
-/* 80218838 00215638  90 8D E0 DC */	stw r4, __AXAuxDspReadPositionDpl2-_SDA_BASE_(r13)
+/* 80218830 00215630  80 6D E0 E0 */	lwz r3, __AXAuxCpuReadWritePosition@sda21(r13)
+/* 80218834 00215634  90 AD E0 D8 */	stw r5, __AXAuxDspWritePositionDpl2@sda21(r13)
+/* 80218838 00215638  90 8D E0 DC */	stw r4, __AXAuxDspReadPositionDpl2@sda21(r13)
 /* 8021883C 0021563C  7C C8 38 16 */	mulhwu r6, r8, r7
-/* 80218840 00215640  80 AD E0 D8 */	lwz r5, __AXAuxDspWritePositionDpl2-_SDA_BASE_(r13)
-/* 80218844 00215644  80 8D E0 DC */	lwz r4, __AXAuxDspReadPositionDpl2-_SDA_BASE_(r13)
+/* 80218840 00215640  80 AD E0 D8 */	lwz r5, __AXAuxDspWritePositionDpl2@sda21(r13)
+/* 80218844 00215644  80 8D E0 DC */	lwz r4, __AXAuxDspReadPositionDpl2@sda21(r13)
 /* 80218848 00215648  7C 08 18 16 */	mulhwu r0, r8, r3
 /* 8021884C 0021564C  55 29 F8 7E */	srwi r9, r9, 1
 /* 80218850 00215650  54 C6 F8 7E */	srwi r6, r6, 1
@@ -4776,14 +4776,14 @@ lbl_802187E8:
 /* 80218860 00215660  1C 00 00 03 */	mulli r0, r0, 3
 /* 80218864 00215664  7D 08 50 50 */	subf r8, r8, r10
 /* 80218868 00215668  7C C6 38 50 */	subf r6, r6, r7
-/* 8021886C 0021566C  91 0D E0 D0 */	stw r8, __AXAuxDspWritePosition-_SDA_BASE_(r13)
+/* 8021886C 0021566C  91 0D E0 D0 */	stw r8, __AXAuxDspWritePosition@sda21(r13)
 /* 80218870 00215670  54 A5 07 FE */	clrlwi r5, r5, 0x1f
 /* 80218874 00215674  54 84 07 FE */	clrlwi r4, r4, 0x1f
-/* 80218878 00215678  90 CD E0 D4 */	stw r6, __AXAuxDspReadPosition-_SDA_BASE_(r13)
+/* 80218878 00215678  90 CD E0 D4 */	stw r6, __AXAuxDspReadPosition@sda21(r13)
 /* 8021887C 0021567C  7C 00 18 50 */	subf r0, r0, r3
-/* 80218880 00215680  90 AD E0 D8 */	stw r5, __AXAuxDspWritePositionDpl2-_SDA_BASE_(r13)
-/* 80218884 00215684  90 8D E0 DC */	stw r4, __AXAuxDspReadPositionDpl2-_SDA_BASE_(r13)
-/* 80218888 00215688  90 0D E0 E0 */	stw r0, __AXAuxCpuReadWritePosition-_SDA_BASE_(r13)
+/* 80218880 00215680  90 AD E0 D8 */	stw r5, __AXAuxDspWritePositionDpl2@sda21(r13)
+/* 80218884 00215684  90 8D E0 DC */	stw r4, __AXAuxDspReadPositionDpl2@sda21(r13)
+/* 80218888 00215688  90 0D E0 E0 */	stw r0, __AXAuxCpuReadWritePosition@sda21(r13)
 /* 8021888C 0021568C  80 01 00 3C */	lwz r0, 0x3c(r1)
 /* 80218890 00215690  83 E1 00 34 */	lwz r31, 0x34(r1)
 /* 80218894 00215694  38 21 00 38 */	addi r1, r1, 0x38
@@ -4792,37 +4792,37 @@ lbl_802187E8:
 
 .global AXRegisterAuxACallback
 AXRegisterAuxACallback:
-/* 802188A0 002156A0  90 6D E0 B0 */	stw r3, __AXCallbackAuxA-_SDA_BASE_(r13)
-/* 802188A4 002156A4  90 8D E0 B8 */	stw r4, __AXContextAuxA-_SDA_BASE_(r13)
+/* 802188A0 002156A0  90 6D E0 B0 */	stw r3, __AXCallbackAuxA@sda21(r13)
+/* 802188A4 002156A4  90 8D E0 B8 */	stw r4, __AXContextAuxA@sda21(r13)
 /* 802188A8 002156A8  4E 80 00 20 */	blr 
 
 .global AXRegisterAuxBCallback
 AXRegisterAuxBCallback:
-/* 802188AC 002156AC  90 6D E0 B4 */	stw r3, __AXCallbackAuxB-_SDA_BASE_(r13)
-/* 802188B0 002156B0  90 8D E0 BC */	stw r4, __AXContextAuxB-_SDA_BASE_(r13)
+/* 802188AC 002156AC  90 6D E0 B4 */	stw r3, __AXCallbackAuxB@sda21(r13)
+/* 802188B0 002156B0  90 8D E0 BC */	stw r4, __AXContextAuxB@sda21(r13)
 /* 802188B4 002156B4  4E 80 00 20 */	blr 
 
 .global __AXGetCommandListCycles
 __AXGetCommandListCycles:
-/* 802188B8 002156B8  80 6D E0 F0 */	lwz r3, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 802188B8 002156B8  80 6D E0 F0 */	lwz r3, __AXCommandListCycles@sda21(r13)
 /* 802188BC 002156BC  4E 80 00 20 */	blr 
 
 .global __AXGetCommandListAddress
 __AXGetCommandListAddress:
-/* 802188C0 002156C0  80 AD E0 E8 */	lwz r5, __AXCommandListPosition-_SDA_BASE_(r13)
+/* 802188C0 002156C0  80 AD E0 E8 */	lwz r5, __AXCommandListPosition@sda21(r13)
 /* 802188C4 002156C4  3C 60 80 3B */	lis r3, __AXCommandList@ha
 /* 802188C8 002156C8  38 83 8B 80 */	addi r4, r3, __AXCommandList@l
 /* 802188CC 002156CC  38 05 00 01 */	addi r0, r5, 1
-/* 802188D0 002156D0  90 0D E0 E8 */	stw r0, __AXCommandListPosition-_SDA_BASE_(r13)
+/* 802188D0 002156D0  90 0D E0 E8 */	stw r0, __AXCommandListPosition@sda21(r13)
 /* 802188D4 002156D4  1C 65 03 00 */	mulli r3, r5, 0x300
-/* 802188D8 002156D8  80 0D E0 E8 */	lwz r0, __AXCommandListPosition-_SDA_BASE_(r13)
+/* 802188D8 002156D8  80 0D E0 E8 */	lwz r0, __AXCommandListPosition@sda21(r13)
 /* 802188DC 002156DC  7C 64 1A 14 */	add r3, r4, r3
 /* 802188E0 002156E0  54 00 07 FE */	clrlwi r0, r0, 0x1f
-/* 802188E4 002156E4  90 0D E0 E8 */	stw r0, __AXCommandListPosition-_SDA_BASE_(r13)
-/* 802188E8 002156E8  80 0D E0 E8 */	lwz r0, __AXCommandListPosition-_SDA_BASE_(r13)
+/* 802188E4 002156E4  90 0D E0 E8 */	stw r0, __AXCommandListPosition@sda21(r13)
+/* 802188E8 002156E8  80 0D E0 E8 */	lwz r0, __AXCommandListPosition@sda21(r13)
 /* 802188EC 002156EC  1C 00 03 00 */	mulli r0, r0, 0x300
 /* 802188F0 002156F0  7C 04 02 14 */	add r0, r4, r0
-/* 802188F4 002156F4  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 802188F4 002156F4  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 /* 802188F8 002156F8  4E 80 00 20 */	blr 
 
 .global __AXNextFrame
@@ -4836,34 +4836,34 @@ __AXNextFrame:
 /* 80218914 00215714  3B C4 00 00 */	addi r30, r4, 0
 /* 80218918 00215718  93 A1 00 54 */	stw r29, 0x54(r1)
 /* 8021891C 0021571C  3B A3 00 00 */	addi r29, r3, 0
-/* 80218920 00215720  83 ED E0 EC */	lwz r31, __AXClWrite-_SDA_BASE_(r13)
-/* 80218924 00215724  90 0D E0 F0 */	stw r0, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218920 00215720  83 ED E0 EC */	lwz r31, __AXClWrite@sda21(r13)
+/* 80218924 00215724  90 0D E0 F0 */	stw r0, __AXCommandListCycles@sda21(r13)
 /* 80218928 00215728  48 00 0E CD */	bl __AXGetStudio
 /* 8021892C 0021572C  90 61 00 48 */	stw r3, 0x48(r1)
 /* 80218930 00215730  38 00 00 00 */	li r0, 0
-/* 80218934 00215734  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218934 00215734  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218938 00215738  B0 03 00 00 */	sth r0, 0(r3)
-/* 8021893C 0021573C  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 8021893C 0021573C  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218940 00215740  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218944 00215744  38 63 00 02 */	addi r3, r3, 2
-/* 80218948 00215748  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218948 00215748  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
 /* 8021894C 0021574C  54 00 84 3E */	srwi r0, r0, 0x10
-/* 80218950 00215750  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218950 00215750  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218954 00215754  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218958 00215758  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218958 00215758  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 8021895C 0021575C  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218960 00215760  38 63 00 02 */	addi r3, r3, 2
-/* 80218964 00215764  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218968 00215768  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218964 00215764  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 80218968 00215768  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 8021896C 0021576C  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218970 00215770  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218974 00215774  80 6D E0 F0 */	lwz r3, __AXCommandListCycles-_SDA_BASE_(r13)
-/* 80218978 00215778  80 0D E0 F8 */	lwz r0, __AXClMode-_SDA_BASE_(r13)
+/* 80218970 00215770  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
+/* 80218974 00215774  80 6D E0 F0 */	lwz r3, __AXCommandListCycles@sda21(r13)
+/* 80218978 00215778  80 0D E0 F8 */	lwz r0, __AXClMode@sda21(r13)
 /* 8021897C 0021577C  38 84 00 02 */	addi r4, r4, 2
 /* 80218980 00215780  38 63 2E 44 */	addi r3, r3, 0x2e44
-/* 80218984 00215784  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218984 00215784  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
 /* 80218988 00215788  2C 00 00 01 */	cmpwi r0, 1
-/* 8021898C 0021578C  90 6D E0 F0 */	stw r3, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 8021898C 0021578C  90 6D E0 F0 */	stw r3, __AXCommandListCycles@sda21(r13)
 /* 80218990 00215790  41 82 00 6C */	beq lbl_802189FC
 /* 80218994 00215794  40 80 00 B8 */	bge lbl_80218A4C
 /* 80218998 00215798  2C 00 00 00 */	cmpwi r0, 0
@@ -4871,221 +4871,221 @@ __AXNextFrame:
 /* 802189A0 002157A0  48 00 00 AC */	b lbl_80218A4C
 /* 802189A4 002157A4  48 00 00 A8 */	b lbl_80218A4C
 lbl_802189A8:
-/* 802189A8 002157A8  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 802189A8 002157A8  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 802189AC 002157AC  38 80 00 07 */	li r4, 7
 /* 802189B0 002157B0  57 A0 84 3E */	srwi r0, r29, 0x10
 /* 802189B4 002157B4  B0 83 00 00 */	sth r4, 0(r3)
-/* 802189B8 002157B8  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 802189B8 002157B8  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 802189BC 002157BC  38 63 00 02 */	addi r3, r3, 2
-/* 802189C0 002157C0  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 802189C4 002157C4  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 802189C0 002157C0  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 802189C4 002157C4  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 802189C8 002157C8  B0 03 00 00 */	sth r0, 0(r3)
-/* 802189CC 002157CC  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 802189CC 002157CC  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 802189D0 002157D0  38 03 00 02 */	addi r0, r3, 2
-/* 802189D4 002157D4  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
-/* 802189D8 002157D8  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 802189D4 002157D4  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
+/* 802189D8 002157D8  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 802189DC 002157DC  B3 A3 00 00 */	sth r29, 0(r3)
-/* 802189E0 002157E0  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
-/* 802189E4 002157E4  80 6D E0 F0 */	lwz r3, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 802189E0 002157E0  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
+/* 802189E4 002157E4  80 6D E0 F0 */	lwz r3, __AXCommandListCycles@sda21(r13)
 /* 802189E8 002157E8  38 84 00 02 */	addi r4, r4, 2
 /* 802189EC 002157EC  38 03 05 46 */	addi r0, r3, 0x546
-/* 802189F0 002157F0  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 802189F4 002157F4  90 0D E0 F0 */	stw r0, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 802189F0 002157F0  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 802189F4 002157F4  90 0D E0 F0 */	stw r0, __AXCommandListCycles@sda21(r13)
 /* 802189F8 002157F8  48 00 00 54 */	b lbl_80218A4C
 lbl_802189FC:
-/* 802189FC 002157FC  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 802189FC 002157FC  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218A00 00215800  38 80 00 11 */	li r4, 0x11
 /* 80218A04 00215804  57 A0 84 3E */	srwi r0, r29, 0x10
 /* 80218A08 00215808  B0 83 00 00 */	sth r4, 0(r3)
-/* 80218A0C 0021580C  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218A0C 0021580C  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218A10 00215810  38 63 00 02 */	addi r3, r3, 2
-/* 80218A14 00215814  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218A18 00215818  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218A14 00215814  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 80218A18 00215818  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218A1C 0021581C  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218A20 00215820  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218A20 00215820  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218A24 00215824  38 03 00 02 */	addi r0, r3, 2
-/* 80218A28 00215828  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
-/* 80218A2C 0021582C  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218A28 00215828  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
+/* 80218A2C 0021582C  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218A30 00215830  B3 A3 00 00 */	sth r29, 0(r3)
-/* 80218A34 00215834  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218A38 00215838  80 6D E0 F0 */	lwz r3, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218A34 00215834  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
+/* 80218A38 00215838  80 6D E0 F0 */	lwz r3, __AXCommandListCycles@sda21(r13)
 /* 80218A3C 0021583C  38 84 00 02 */	addi r4, r4, 2
 /* 80218A40 00215840  38 03 05 E6 */	addi r0, r3, 0x5e6
-/* 80218A44 00215844  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218A48 00215848  90 0D E0 F0 */	stw r0, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218A44 00215844  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218A48 00215848  90 0D E0 F0 */	stw r0, __AXCommandListCycles@sda21(r13)
 lbl_80218A4C:
 /* 80218A4C 0021584C  48 00 1C 3D */	bl __AXGetPBs
 /* 80218A50 00215850  90 61 00 48 */	stw r3, 0x48(r1)
 /* 80218A54 00215854  38 80 00 02 */	li r4, 2
-/* 80218A58 00215858  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218A58 00215858  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218A5C 0021585C  38 00 00 03 */	li r0, 3
 /* 80218A60 00215860  B0 83 00 00 */	sth r4, 0(r3)
-/* 80218A64 00215864  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218A64 00215864  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218A68 00215868  80 61 00 48 */	lwz r3, 0x48(r1)
 /* 80218A6C 0021586C  38 84 00 02 */	addi r4, r4, 2
-/* 80218A70 00215870  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218A70 00215870  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
 /* 80218A74 00215874  54 64 84 3E */	srwi r4, r3, 0x10
-/* 80218A78 00215878  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218A78 00215878  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218A7C 0021587C  B0 83 00 00 */	sth r4, 0(r3)
-/* 80218A80 00215880  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218A80 00215880  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218A84 00215884  80 81 00 48 */	lwz r4, 0x48(r1)
 /* 80218A88 00215888  38 63 00 02 */	addi r3, r3, 2
-/* 80218A8C 0021588C  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218A90 00215890  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218A8C 0021588C  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 80218A90 00215890  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218A94 00215894  B0 83 00 00 */	sth r4, 0(r3)
-/* 80218A98 00215898  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218A98 00215898  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218A9C 0021589C  38 63 00 02 */	addi r3, r3, 2
-/* 80218AA0 002158A0  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218AA4 002158A4  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218AA0 002158A0  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 80218AA4 002158A4  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218AA8 002158A8  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218AAC 002158AC  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218AB0 002158B0  80 0D E0 F8 */	lwz r0, __AXClMode-_SDA_BASE_(r13)
+/* 80218AAC 002158AC  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
+/* 80218AB0 002158B0  80 0D E0 F8 */	lwz r0, __AXClMode@sda21(r13)
 /* 80218AB4 002158B4  38 63 00 02 */	addi r3, r3, 2
 /* 80218AB8 002158B8  28 00 00 02 */	cmplwi r0, 2
-/* 80218ABC 002158BC  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218ABC 002158BC  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
 /* 80218AC0 002158C0  40 82 02 3C */	bne lbl_80218CFC
 /* 80218AC4 002158C4  38 61 00 48 */	addi r3, r1, 0x48
 /* 80218AC8 002158C8  4B FF FA 45 */	bl __AXGetAuxAInput
 /* 80218ACC 002158CC  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218AD0 002158D0  28 00 00 00 */	cmplwi r0, 0
 /* 80218AD4 002158D4  41 82 01 88 */	beq lbl_80218C5C
-/* 80218AD8 002158D8  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218AD8 002158D8  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218ADC 002158DC  38 00 00 13 */	li r0, 0x13
 /* 80218AE0 002158E0  38 61 00 48 */	addi r3, r1, 0x48
 /* 80218AE4 002158E4  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218AE8 002158E8  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218AE8 002158E8  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218AEC 002158EC  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218AF0 002158F0  38 84 00 02 */	addi r4, r4, 2
-/* 80218AF4 002158F4  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218AF4 002158F4  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
 /* 80218AF8 002158F8  54 00 84 3E */	srwi r0, r0, 0x10
-/* 80218AFC 002158FC  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218AFC 002158FC  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B00 00215900  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218B04 00215904  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B04 00215904  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B08 00215908  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218B0C 0021590C  38 84 00 02 */	addi r4, r4, 2
-/* 80218B10 00215910  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218B14 00215914  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B10 00215910  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218B14 00215914  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B18 00215918  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218B1C 0021591C  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B1C 0021591C  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B20 00215920  38 04 00 02 */	addi r0, r4, 2
-/* 80218B24 00215924  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B24 00215924  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 /* 80218B28 00215928  4B FF FA 19 */	bl __AXGetAuxAInputDpl2
 /* 80218B2C 0021592C  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218B30 00215930  38 61 00 48 */	addi r3, r1, 0x48
-/* 80218B34 00215934  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B34 00215934  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B38 00215938  54 00 84 3E */	srwi r0, r0, 0x10
 /* 80218B3C 0021593C  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218B40 00215940  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B40 00215940  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B44 00215944  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218B48 00215948  38 84 00 02 */	addi r4, r4, 2
-/* 80218B4C 0021594C  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218B50 00215950  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B4C 0021594C  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218B50 00215950  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B54 00215954  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218B58 00215958  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B58 00215958  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B5C 0021595C  38 04 00 02 */	addi r0, r4, 2
-/* 80218B60 00215960  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B60 00215960  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 /* 80218B64 00215964  4B FF F9 FD */	bl __AXGetAuxAOutput
 /* 80218B68 00215968  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218B6C 0021596C  38 61 00 48 */	addi r3, r1, 0x48
-/* 80218B70 00215970  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B70 00215970  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B74 00215974  54 00 84 3E */	srwi r0, r0, 0x10
 /* 80218B78 00215978  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218B7C 0021597C  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B7C 0021597C  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B80 00215980  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218B84 00215984  38 84 00 02 */	addi r4, r4, 2
-/* 80218B88 00215988  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218B8C 0021598C  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B88 00215988  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218B8C 0021598C  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B90 00215990  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218B94 00215994  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B94 00215994  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218B98 00215998  38 04 00 02 */	addi r0, r4, 2
-/* 80218B9C 0021599C  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 80218B9C 0021599C  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 /* 80218BA0 002159A0  4B FF F9 DD */	bl __AXGetAuxAOutputDpl2R
 /* 80218BA4 002159A4  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218BA8 002159A8  38 61 00 48 */	addi r3, r1, 0x48
-/* 80218BAC 002159AC  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218BAC 002159AC  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218BB0 002159B0  54 00 84 3E */	srwi r0, r0, 0x10
 /* 80218BB4 002159B4  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218BB8 002159B8  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218BB8 002159B8  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218BBC 002159BC  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218BC0 002159C0  38 84 00 02 */	addi r4, r4, 2
-/* 80218BC4 002159C4  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218BC8 002159C8  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218BC4 002159C4  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218BC8 002159C8  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218BCC 002159CC  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218BD0 002159D0  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218BD0 002159D0  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218BD4 002159D4  38 04 00 02 */	addi r0, r4, 2
-/* 80218BD8 002159D8  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 80218BD8 002159D8  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 /* 80218BDC 002159DC  4B FF F9 C1 */	bl __AXGetAuxAOutputDpl2Ls
 /* 80218BE0 002159E0  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218BE4 002159E4  38 61 00 48 */	addi r3, r1, 0x48
-/* 80218BE8 002159E8  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218BE8 002159E8  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218BEC 002159EC  54 00 84 3E */	srwi r0, r0, 0x10
 /* 80218BF0 002159F0  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218BF4 002159F4  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218BF4 002159F4  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218BF8 002159F8  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218BFC 002159FC  38 84 00 02 */	addi r4, r4, 2
-/* 80218C00 00215A00  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218C04 00215A04  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C00 00215A00  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218C04 00215A04  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218C08 00215A08  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218C0C 00215A0C  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C0C 00215A0C  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218C10 00215A10  38 04 00 02 */	addi r0, r4, 2
-/* 80218C14 00215A14  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C14 00215A14  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 /* 80218C18 00215A18  4B FF F9 A5 */	bl __AXGetAuxAOutputDpl2Rs
 /* 80218C1C 00215A1C  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 80218C20 00215A20  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C20 00215A20  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218C24 00215A24  54 00 84 3E */	srwi r0, r0, 0x10
 /* 80218C28 00215A28  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218C2C 00215A2C  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C2C 00215A2C  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218C30 00215A30  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218C34 00215A34  38 63 00 02 */	addi r3, r3, 2
-/* 80218C38 00215A38  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218C3C 00215A3C  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C38 00215A38  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 80218C3C 00215A3C  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218C40 00215A40  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218C44 00215A44  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218C48 00215A48  80 6D E0 F0 */	lwz r3, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218C44 00215A44  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
+/* 80218C48 00215A48  80 6D E0 F0 */	lwz r3, __AXCommandListCycles@sda21(r13)
 /* 80218C4C 00215A4C  38 84 00 02 */	addi r4, r4, 2
 /* 80218C50 00215A50  38 03 0D ED */	addi r0, r3, 0xded
-/* 80218C54 00215A54  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218C58 00215A58  90 0D E0 F0 */	stw r0, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218C54 00215A54  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218C58 00215A58  90 0D E0 F0 */	stw r0, __AXCommandListCycles@sda21(r13)
 lbl_80218C5C:
-/* 80218C5C 00215A5C  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C5C 00215A5C  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218C60 00215A60  38 00 00 10 */	li r0, 0x10
 /* 80218C64 00215A64  38 61 00 48 */	addi r3, r1, 0x48
 /* 80218C68 00215A68  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218C6C 00215A6C  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C6C 00215A6C  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218C70 00215A70  38 04 00 02 */	addi r0, r4, 2
-/* 80218C74 00215A74  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C74 00215A74  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 /* 80218C78 00215A78  4B FF F9 B5 */	bl __AXGetAuxBForDPL2
 /* 80218C7C 00215A7C  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218C80 00215A80  38 61 00 48 */	addi r3, r1, 0x48
-/* 80218C84 00215A84  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C84 00215A84  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218C88 00215A88  54 00 84 3E */	srwi r0, r0, 0x10
 /* 80218C8C 00215A8C  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218C90 00215A90  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C90 00215A90  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218C94 00215A94  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218C98 00215A98  38 84 00 02 */	addi r4, r4, 2
-/* 80218C9C 00215A9C  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218CA0 00215AA0  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218C9C 00215A9C  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218CA0 00215AA0  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218CA4 00215AA4  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218CA8 00215AA8  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218CA8 00215AA8  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218CAC 00215AAC  38 04 00 02 */	addi r0, r4, 2
-/* 80218CB0 00215AB0  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 80218CB0 00215AB0  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 /* 80218CB4 00215AB4  4B FF F9 95 */	bl __AXGetAuxBOutputDPL2
 /* 80218CB8 00215AB8  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 80218CBC 00215ABC  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218CBC 00215ABC  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218CC0 00215AC0  54 00 84 3E */	srwi r0, r0, 0x10
 /* 80218CC4 00215AC4  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218CC8 00215AC8  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218CC8 00215AC8  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218CCC 00215ACC  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218CD0 00215AD0  38 63 00 02 */	addi r3, r3, 2
-/* 80218CD4 00215AD4  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218CD8 00215AD8  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218CD4 00215AD4  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 80218CD8 00215AD8  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218CDC 00215ADC  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218CE0 00215AE0  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218CE4 00215AE4  80 6D E0 F0 */	lwz r3, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218CE0 00215AE0  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
+/* 80218CE4 00215AE4  80 6D E0 F0 */	lwz r3, __AXCommandListCycles@sda21(r13)
 /* 80218CE8 00215AE8  38 84 00 02 */	addi r4, r4, 2
 /* 80218CEC 00215AEC  38 03 0D ED */	addi r0, r3, 0xded
-/* 80218CF0 00215AF0  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218CF4 00215AF4  90 0D E0 F0 */	stw r0, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218CF0 00215AF0  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218CF4 00215AF4  90 0D E0 F0 */	stw r0, __AXCommandListCycles@sda21(r13)
 /* 80218CF8 00215AF8  48 00 01 54 */	b lbl_80218E4C
 lbl_80218CFC:
 /* 80218CFC 00215AFC  38 61 00 48 */	addi r3, r1, 0x48
@@ -5093,168 +5093,168 @@ lbl_80218CFC:
 /* 80218D04 00215B04  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218D08 00215B08  28 00 00 00 */	cmplwi r0, 0
 /* 80218D0C 00215B0C  41 82 00 98 */	beq lbl_80218DA4
-/* 80218D10 00215B10  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218D10 00215B10  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218D14 00215B14  38 00 00 04 */	li r0, 4
 /* 80218D18 00215B18  38 61 00 48 */	addi r3, r1, 0x48
 /* 80218D1C 00215B1C  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218D20 00215B20  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218D20 00215B20  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218D24 00215B24  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218D28 00215B28  38 84 00 02 */	addi r4, r4, 2
-/* 80218D2C 00215B2C  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218D2C 00215B2C  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
 /* 80218D30 00215B30  54 00 84 3E */	srwi r0, r0, 0x10
-/* 80218D34 00215B34  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218D34 00215B34  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218D38 00215B38  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218D3C 00215B3C  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218D3C 00215B3C  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218D40 00215B40  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218D44 00215B44  38 84 00 02 */	addi r4, r4, 2
-/* 80218D48 00215B48  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218D4C 00215B4C  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218D48 00215B48  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218D4C 00215B4C  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218D50 00215B50  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218D54 00215B54  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218D54 00215B54  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218D58 00215B58  38 04 00 02 */	addi r0, r4, 2
-/* 80218D5C 00215B5C  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 80218D5C 00215B5C  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 /* 80218D60 00215B60  4B FF F8 01 */	bl __AXGetAuxAOutput
 /* 80218D64 00215B64  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 80218D68 00215B68  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218D68 00215B68  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218D6C 00215B6C  54 00 84 3E */	srwi r0, r0, 0x10
 /* 80218D70 00215B70  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218D74 00215B74  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218D74 00215B74  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218D78 00215B78  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218D7C 00215B7C  38 63 00 02 */	addi r3, r3, 2
-/* 80218D80 00215B80  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218D84 00215B84  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218D80 00215B80  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 80218D84 00215B84  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218D88 00215B88  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218D8C 00215B8C  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218D90 00215B90  80 6D E0 F0 */	lwz r3, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218D8C 00215B8C  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
+/* 80218D90 00215B90  80 6D E0 F0 */	lwz r3, __AXCommandListCycles@sda21(r13)
 /* 80218D94 00215B94  38 84 00 02 */	addi r4, r4, 2
 /* 80218D98 00215B98  38 03 0D ED */	addi r0, r3, 0xded
-/* 80218D9C 00215B9C  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218DA0 00215BA0  90 0D E0 F0 */	stw r0, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218D9C 00215B9C  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218DA0 00215BA0  90 0D E0 F0 */	stw r0, __AXCommandListCycles@sda21(r13)
 lbl_80218DA4:
 /* 80218DA4 00215BA4  38 61 00 48 */	addi r3, r1, 0x48
 /* 80218DA8 00215BA8  4B FF F8 35 */	bl __AXGetAuxBInput
 /* 80218DAC 00215BAC  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218DB0 00215BB0  28 00 00 00 */	cmplwi r0, 0
 /* 80218DB4 00215BB4  41 82 00 98 */	beq lbl_80218E4C
-/* 80218DB8 00215BB8  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218DB8 00215BB8  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218DBC 00215BBC  38 00 00 05 */	li r0, 5
 /* 80218DC0 00215BC0  38 61 00 48 */	addi r3, r1, 0x48
 /* 80218DC4 00215BC4  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218DC8 00215BC8  80 AD E0 EC */	lwz r5, __AXClWrite-_SDA_BASE_(r13)
-/* 80218DCC 00215BCC  80 8D E0 F0 */	lwz r4, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218DC8 00215BC8  80 AD E0 EC */	lwz r5, __AXClWrite@sda21(r13)
+/* 80218DCC 00215BCC  80 8D E0 F0 */	lwz r4, __AXCommandListCycles@sda21(r13)
 /* 80218DD0 00215BD0  38 A5 00 02 */	addi r5, r5, 2
 /* 80218DD4 00215BD4  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 80218DD8 00215BD8  90 AD E0 EC */	stw r5, __AXClWrite-_SDA_BASE_(r13)
+/* 80218DD8 00215BD8  90 AD E0 EC */	stw r5, __AXClWrite@sda21(r13)
 /* 80218DDC 00215BDC  38 84 0D ED */	addi r4, r4, 0xded
 /* 80218DE0 00215BE0  54 00 84 3E */	srwi r0, r0, 0x10
-/* 80218DE4 00215BE4  90 8D E0 F0 */	stw r4, __AXCommandListCycles-_SDA_BASE_(r13)
-/* 80218DE8 00215BE8  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218DE4 00215BE4  90 8D E0 F0 */	stw r4, __AXCommandListCycles@sda21(r13)
+/* 80218DE8 00215BE8  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218DEC 00215BEC  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218DF0 00215BF0  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218DF0 00215BF0  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218DF4 00215BF4  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218DF8 00215BF8  38 84 00 02 */	addi r4, r4, 2
-/* 80218DFC 00215BFC  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218E00 00215C00  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218DFC 00215BFC  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218E00 00215C00  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218E04 00215C04  B0 04 00 00 */	sth r0, 0(r4)
-/* 80218E08 00215C08  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E08 00215C08  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
 /* 80218E0C 00215C0C  38 04 00 02 */	addi r0, r4, 2
-/* 80218E10 00215C10  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E10 00215C10  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 /* 80218E14 00215C14  4B FF F7 FD */	bl __AXGetAuxBOutput
 /* 80218E18 00215C18  80 01 00 48 */	lwz r0, 0x48(r1)
-/* 80218E1C 00215C1C  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E1C 00215C1C  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218E20 00215C20  54 00 84 3E */	srwi r0, r0, 0x10
 /* 80218E24 00215C24  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218E28 00215C28  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E28 00215C28  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218E2C 00215C2C  80 01 00 48 */	lwz r0, 0x48(r1)
 /* 80218E30 00215C30  38 63 00 02 */	addi r3, r3, 2
-/* 80218E34 00215C34  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218E38 00215C38  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E34 00215C34  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 80218E38 00215C38  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218E3C 00215C3C  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218E40 00215C40  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E40 00215C40  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218E44 00215C44  38 03 00 02 */	addi r0, r3, 2
-/* 80218E48 00215C48  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E48 00215C48  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 lbl_80218E4C:
-/* 80218E4C 00215C4C  80 0D E0 F4 */	lwz r0, __AXCompressor-_SDA_BASE_(r13)
+/* 80218E4C 00215C4C  80 0D E0 F4 */	lwz r0, __AXCompressor@sda21(r13)
 /* 80218E50 00215C50  28 00 00 00 */	cmplwi r0, 0
 /* 80218E54 00215C54  41 82 00 90 */	beq lbl_80218EE4
-/* 80218E58 00215C58  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E58 00215C58  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218E5C 00215C5C  38 00 00 12 */	li r0, 0x12
 /* 80218E60 00215C60  3C A0 00 01 */	lis r5, 0x00008000@ha
 /* 80218E64 00215C64  B0 03 00 00 */	sth r0, 0(r3)
 /* 80218E68 00215C68  3C 60 80 32 */	lis r3, __AXCompressorTable@ha
 /* 80218E6C 00215C6C  38 83 3B 60 */	addi r4, r3, __AXCompressorTable@l
-/* 80218E70 00215C70  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E70 00215C70  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218E74 00215C74  38 C5 80 00 */	addi r6, r5, 0x00008000@l
 /* 80218E78 00215C78  38 A0 00 0A */	li r5, 0xa
 /* 80218E7C 00215C7C  38 03 00 02 */	addi r0, r3, 2
-/* 80218E80 00215C80  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E80 00215C80  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
 /* 80218E84 00215C84  54 80 84 3E */	srwi r0, r4, 0x10
-/* 80218E88 00215C88  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E88 00215C88  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218E8C 00215C8C  B0 C3 00 00 */	sth r6, 0(r3)
-/* 80218E90 00215C90  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E90 00215C90  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218E94 00215C94  38 63 00 02 */	addi r3, r3, 2
-/* 80218E98 00215C98  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218E9C 00215C9C  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218E98 00215C98  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 80218E9C 00215C9C  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218EA0 00215CA0  B0 A3 00 00 */	sth r5, 0(r3)
-/* 80218EA4 00215CA4  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218EA4 00215CA4  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218EA8 00215CA8  38 63 00 02 */	addi r3, r3, 2
-/* 80218EAC 00215CAC  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218EB0 00215CB0  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218EAC 00215CAC  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 80218EB0 00215CB0  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218EB4 00215CB4  B0 03 00 00 */	sth r0, 0(r3)
-/* 80218EB8 00215CB8  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218EB8 00215CB8  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218EBC 00215CBC  38 03 00 02 */	addi r0, r3, 2
-/* 80218EC0 00215CC0  90 0D E0 EC */	stw r0, __AXClWrite-_SDA_BASE_(r13)
-/* 80218EC4 00215CC4  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218EC0 00215CC0  90 0D E0 EC */	stw r0, __AXClWrite@sda21(r13)
+/* 80218EC4 00215CC4  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218EC8 00215CC8  B0 83 00 00 */	sth r4, 0(r3)
-/* 80218ECC 00215CCC  80 8D E0 EC */	lwz r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218ED0 00215CD0  80 6D E0 F0 */	lwz r3, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218ECC 00215CCC  80 8D E0 EC */	lwz r4, __AXClWrite@sda21(r13)
+/* 80218ED0 00215CD0  80 6D E0 F0 */	lwz r3, __AXCommandListCycles@sda21(r13)
 /* 80218ED4 00215CD4  38 84 00 02 */	addi r4, r4, 2
 /* 80218ED8 00215CD8  38 03 0B B8 */	addi r0, r3, 0xbb8
-/* 80218EDC 00215CDC  90 8D E0 EC */	stw r4, __AXClWrite-_SDA_BASE_(r13)
-/* 80218EE0 00215CE0  90 0D E0 F0 */	stw r0, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218EDC 00215CDC  90 8D E0 EC */	stw r4, __AXClWrite@sda21(r13)
+/* 80218EE0 00215CE0  90 0D E0 F0 */	stw r0, __AXCommandListCycles@sda21(r13)
 lbl_80218EE4:
-/* 80218EE4 00215CE4  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218EE4 00215CE4  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218EE8 00215CE8  38 00 00 0E */	li r0, 0xe
 /* 80218EEC 00215CEC  57 A7 84 3E */	srwi r7, r29, 0x10
 /* 80218EF0 00215CF0  B0 03 00 00 */	sth r0, 0(r3)
 /* 80218EF4 00215CF4  57 C6 84 3E */	srwi r6, r30, 0x10
 /* 80218EF8 00215CF8  38 00 00 0F */	li r0, 0xf
-/* 80218EFC 00215CFC  80 6D E0 EC */	lwz r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218EFC 00215CFC  80 6D E0 EC */	lwz r3, __AXClWrite@sda21(r13)
 /* 80218F00 00215D00  38 80 03 00 */	li r4, 0x300
 /* 80218F04 00215D04  38 63 00 02 */	addi r3, r3, 2
-/* 80218F08 00215D08  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
+/* 80218F08 00215D08  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
 /* 80218F0C 00215D0C  38 7F 00 00 */	addi r3, r31, 0
-/* 80218F10 00215D10  80 AD E0 EC */	lwz r5, __AXClWrite-_SDA_BASE_(r13)
+/* 80218F10 00215D10  80 AD E0 EC */	lwz r5, __AXClWrite@sda21(r13)
 /* 80218F14 00215D14  B0 E5 00 00 */	sth r7, 0(r5)
-/* 80218F18 00215D18  80 AD E0 EC */	lwz r5, __AXClWrite-_SDA_BASE_(r13)
+/* 80218F18 00215D18  80 AD E0 EC */	lwz r5, __AXClWrite@sda21(r13)
 /* 80218F1C 00215D1C  38 A5 00 02 */	addi r5, r5, 2
-/* 80218F20 00215D20  90 AD E0 EC */	stw r5, __AXClWrite-_SDA_BASE_(r13)
-/* 80218F24 00215D24  80 AD E0 EC */	lwz r5, __AXClWrite-_SDA_BASE_(r13)
+/* 80218F20 00215D20  90 AD E0 EC */	stw r5, __AXClWrite@sda21(r13)
+/* 80218F24 00215D24  80 AD E0 EC */	lwz r5, __AXClWrite@sda21(r13)
 /* 80218F28 00215D28  B3 A5 00 00 */	sth r29, 0(r5)
-/* 80218F2C 00215D2C  80 AD E0 EC */	lwz r5, __AXClWrite-_SDA_BASE_(r13)
+/* 80218F2C 00215D2C  80 AD E0 EC */	lwz r5, __AXClWrite@sda21(r13)
 /* 80218F30 00215D30  38 A5 00 02 */	addi r5, r5, 2
-/* 80218F34 00215D34  90 AD E0 EC */	stw r5, __AXClWrite-_SDA_BASE_(r13)
-/* 80218F38 00215D38  80 AD E0 EC */	lwz r5, __AXClWrite-_SDA_BASE_(r13)
+/* 80218F34 00215D34  90 AD E0 EC */	stw r5, __AXClWrite@sda21(r13)
+/* 80218F38 00215D38  80 AD E0 EC */	lwz r5, __AXClWrite@sda21(r13)
 /* 80218F3C 00215D3C  B0 C5 00 00 */	sth r6, 0(r5)
-/* 80218F40 00215D40  80 AD E0 EC */	lwz r5, __AXClWrite-_SDA_BASE_(r13)
+/* 80218F40 00215D40  80 AD E0 EC */	lwz r5, __AXClWrite@sda21(r13)
 /* 80218F44 00215D44  38 A5 00 02 */	addi r5, r5, 2
-/* 80218F48 00215D48  90 AD E0 EC */	stw r5, __AXClWrite-_SDA_BASE_(r13)
-/* 80218F4C 00215D4C  80 AD E0 EC */	lwz r5, __AXClWrite-_SDA_BASE_(r13)
+/* 80218F48 00215D48  90 AD E0 EC */	stw r5, __AXClWrite@sda21(r13)
+/* 80218F4C 00215D4C  80 AD E0 EC */	lwz r5, __AXClWrite@sda21(r13)
 /* 80218F50 00215D50  B3 C5 00 00 */	sth r30, 0(r5)
-/* 80218F54 00215D54  80 CD E0 EC */	lwz r6, __AXClWrite-_SDA_BASE_(r13)
-/* 80218F58 00215D58  80 AD E0 F0 */	lwz r5, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218F54 00215D54  80 CD E0 EC */	lwz r6, __AXClWrite@sda21(r13)
+/* 80218F58 00215D58  80 AD E0 F0 */	lwz r5, __AXCommandListCycles@sda21(r13)
 /* 80218F5C 00215D5C  38 C6 00 02 */	addi r6, r6, 2
-/* 80218F60 00215D60  90 CD E0 EC */	stw r6, __AXClWrite-_SDA_BASE_(r13)
+/* 80218F60 00215D60  90 CD E0 EC */	stw r6, __AXClWrite@sda21(r13)
 /* 80218F64 00215D64  38 A5 27 10 */	addi r5, r5, 0x2710
-/* 80218F68 00215D68  90 AD E0 F0 */	stw r5, __AXCommandListCycles-_SDA_BASE_(r13)
-/* 80218F6C 00215D6C  80 AD E0 EC */	lwz r5, __AXClWrite-_SDA_BASE_(r13)
+/* 80218F68 00215D68  90 AD E0 F0 */	stw r5, __AXCommandListCycles@sda21(r13)
+/* 80218F6C 00215D6C  80 AD E0 EC */	lwz r5, __AXClWrite@sda21(r13)
 /* 80218F70 00215D70  B0 05 00 00 */	sth r0, 0(r5)
-/* 80218F74 00215D74  80 CD E0 EC */	lwz r6, __AXClWrite-_SDA_BASE_(r13)
-/* 80218F78 00215D78  80 AD E0 F0 */	lwz r5, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218F74 00215D74  80 CD E0 EC */	lwz r6, __AXClWrite@sda21(r13)
+/* 80218F78 00215D78  80 AD E0 F0 */	lwz r5, __AXCommandListCycles@sda21(r13)
 /* 80218F7C 00215D7C  38 C6 00 02 */	addi r6, r6, 2
 /* 80218F80 00215D80  38 05 00 02 */	addi r0, r5, 2
-/* 80218F84 00215D84  90 CD E0 EC */	stw r6, __AXClWrite-_SDA_BASE_(r13)
-/* 80218F88 00215D88  90 0D E0 F0 */	stw r0, __AXCommandListCycles-_SDA_BASE_(r13)
+/* 80218F84 00215D84  90 CD E0 EC */	stw r6, __AXClWrite@sda21(r13)
+/* 80218F88 00215D88  90 0D E0 F0 */	stw r0, __AXCommandListCycles@sda21(r13)
 /* 80218F8C 00215D8C  48 01 96 FD */	bl DCFlushRange
 /* 80218F90 00215D90  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80218F94 00215D94  83 E1 00 5C */	lwz r31, 0x5c(r1)
@@ -5269,11 +5269,11 @@ __AXClInit:
 /* 80218FAC 00215DAC  3C 60 80 3B */	lis r3, __AXCommandList@ha
 /* 80218FB0 00215DB0  38 80 00 00 */	li r4, 0
 /* 80218FB4 00215DB4  38 63 8B 80 */	addi r3, r3, __AXCommandList@l
-/* 80218FB8 00215DB8  90 8D E0 F8 */	stw r4, __AXClMode-_SDA_BASE_(r13)
+/* 80218FB8 00215DB8  90 8D E0 F8 */	stw r4, __AXClMode@sda21(r13)
 /* 80218FBC 00215DBC  38 00 00 01 */	li r0, 1
-/* 80218FC0 00215DC0  90 8D E0 E8 */	stw r4, __AXCommandListPosition-_SDA_BASE_(r13)
-/* 80218FC4 00215DC4  90 6D E0 EC */	stw r3, __AXClWrite-_SDA_BASE_(r13)
-/* 80218FC8 00215DC8  90 0D E0 F4 */	stw r0, __AXCompressor-_SDA_BASE_(r13)
+/* 80218FC0 00215DC0  90 8D E0 E8 */	stw r4, __AXCommandListPosition@sda21(r13)
+/* 80218FC4 00215DC4  90 6D E0 EC */	stw r3, __AXClWrite@sda21(r13)
+/* 80218FC8 00215DC8  90 0D E0 F4 */	stw r0, __AXCompressor@sda21(r13)
 /* 80218FCC 00215DCC  4E 80 00 20 */	blr 
 
 .global __AXClQuit
@@ -5282,10 +5282,10 @@ __AXClQuit:
 
 .global AXSetMode
 AXSetMode:
-/* 80218FD4 00215DD4  80 0D E0 F8 */	lwz r0, __AXClMode-_SDA_BASE_(r13)
+/* 80218FD4 00215DD4  80 0D E0 F8 */	lwz r0, __AXClMode@sda21(r13)
 /* 80218FD8 00215DD8  7C 00 18 40 */	cmplw r0, r3
 /* 80218FDC 00215DDC  4D 82 00 20 */	beqlr 
-/* 80218FE0 00215DE0  90 6D E0 F8 */	stw r3, __AXClMode-_SDA_BASE_(r13)
+/* 80218FE0 00215DE0  90 6D E0 F8 */	stw r3, __AXClMode@sda21(r13)
 /* 80218FE4 00215DE4  4E 80 00 20 */	blr 
 
 .global __AXOutNewFrame
@@ -5330,7 +5330,7 @@ lbl_80219048:
 /* 80219074 00215E74  48 01 F4 D9 */	bl OSGetTime
 /* 80219078 00215E78  90 9F 4A 6C */	stw r4, 0x4a6c(r31)
 /* 8021907C 00215E7C  90 7F 4A 68 */	stw r3, 0x4a68(r31)
-/* 80219080 00215E80  81 8D E1 18 */	lwz r12, __AXUserFrameCallback-_SDA_BASE_(r13)
+/* 80219080 00215E80  81 8D E1 18 */	lwz r12, __AXUserFrameCallback@sda21(r13)
 /* 80219084 00215E84  28 0C 00 00 */	cmplwi r12, 0
 /* 80219088 00215E88  41 82 00 0C */	beq lbl_80219094
 /* 8021908C 00215E8C  7D 88 03 A6 */	mtlr r12
@@ -5340,31 +5340,31 @@ lbl_80219094:
 /* 80219098 00215E98  90 9F 4A 74 */	stw r4, 0x4a74(r31)
 /* 8021909C 00215E9C  90 7F 4A 70 */	stw r3, 0x4a70(r31)
 /* 802190A0 00215EA0  38 7F 07 80 */	addi r3, r31, 0x780
-/* 802190A4 00215EA4  80 0D E1 00 */	lwz r0, __AXOutFrame-_SDA_BASE_(r13)
+/* 802190A4 00215EA4  80 0D E1 00 */	lwz r0, __AXOutFrame@sda21(r13)
 /* 802190A8 00215EA8  1C 00 02 80 */	mulli r0, r0, 0x280
 /* 802190AC 00215EAC  7C 9F 02 14 */	add r4, r31, r0
 /* 802190B0 00215EB0  4B FF F8 4D */	bl __AXNextFrame
-/* 802190B4 00215EB4  80 6D E1 00 */	lwz r3, __AXOutFrame-_SDA_BASE_(r13)
-/* 802190B8 00215EB8  80 0D E1 30 */	lwz r0, __AXOutputBufferMode-_SDA_BASE_(r13)
+/* 802190B4 00215EB4  80 6D E1 00 */	lwz r3, __AXOutFrame@sda21(r13)
+/* 802190B8 00215EB8  80 0D E1 30 */	lwz r0, __AXOutputBufferMode@sda21(r13)
 /* 802190BC 00215EBC  38 63 00 01 */	addi r3, r3, 1
 /* 802190C0 00215EC0  28 00 00 01 */	cmplwi r0, 1
-/* 802190C4 00215EC4  90 6D E1 00 */	stw r3, __AXOutFrame-_SDA_BASE_(r13)
+/* 802190C4 00215EC4  90 6D E1 00 */	stw r3, __AXOutFrame@sda21(r13)
 /* 802190C8 00215EC8  40 82 00 28 */	bne lbl_802190F0
 /* 802190CC 00215ECC  3C 60 AA AB */	lis r3, 0xAAAAAAAB@ha
-/* 802190D0 00215ED0  80 8D E1 00 */	lwz r4, __AXOutFrame-_SDA_BASE_(r13)
+/* 802190D0 00215ED0  80 8D E1 00 */	lwz r4, __AXOutFrame@sda21(r13)
 /* 802190D4 00215ED4  38 03 AA AB */	addi r0, r3, 0xAAAAAAAB@l
 /* 802190D8 00215ED8  7C 00 20 16 */	mulhwu r0, r0, r4
 /* 802190DC 00215EDC  54 00 F8 7E */	srwi r0, r0, 1
 /* 802190E0 00215EE0  1C 00 00 03 */	mulli r0, r0, 3
 /* 802190E4 00215EE4  7C 00 20 50 */	subf r0, r0, r4
-/* 802190E8 00215EE8  90 0D E1 00 */	stw r0, __AXOutFrame-_SDA_BASE_(r13)
+/* 802190E8 00215EE8  90 0D E1 00 */	stw r0, __AXOutFrame@sda21(r13)
 /* 802190EC 00215EEC  48 00 00 24 */	b lbl_80219110
 lbl_802190F0:
-/* 802190F0 00215EF0  80 0D E1 00 */	lwz r0, __AXOutFrame-_SDA_BASE_(r13)
+/* 802190F0 00215EF0  80 0D E1 00 */	lwz r0, __AXOutFrame@sda21(r13)
 /* 802190F4 00215EF4  38 80 02 80 */	li r4, 0x280
 /* 802190F8 00215EF8  54 00 07 FE */	clrlwi r0, r0, 0x1f
-/* 802190FC 00215EFC  90 0D E1 00 */	stw r0, __AXOutFrame-_SDA_BASE_(r13)
-/* 80219100 00215F00  80 0D E1 00 */	lwz r0, __AXOutFrame-_SDA_BASE_(r13)
+/* 802190FC 00215EFC  90 0D E1 00 */	stw r0, __AXOutFrame@sda21(r13)
+/* 80219100 00215F00  80 0D E1 00 */	lwz r0, __AXOutFrame@sda21(r13)
 /* 80219104 00215F04  1C 00 02 80 */	mulli r0, r0, 0x280
 /* 80219108 00215F08  7C 7F 02 14 */	add r3, r31, r0
 /* 8021910C 00215F0C  48 00 3B AD */	bl AIInitDMA
@@ -5413,49 +5413,49 @@ __AXOutAiCallback:
 /* 802191A0 00215FA0  7C 08 02 A6 */	mflr r0
 /* 802191A4 00215FA4  90 01 00 04 */	stw r0, 4(r1)
 /* 802191A8 00215FA8  94 21 FF F8 */	stwu r1, -8(r1)
-/* 802191AC 00215FAC  80 0D E1 08 */	lwz r0, __AXOutDspReady-_SDA_BASE_(r13)
+/* 802191AC 00215FAC  80 0D E1 08 */	lwz r0, __AXOutDspReady@sda21(r13)
 /* 802191B0 00215FB0  28 00 00 00 */	cmplwi r0, 0
 /* 802191B4 00215FB4  40 82 00 10 */	bne lbl_802191C4
 /* 802191B8 00215FB8  48 01 F3 95 */	bl OSGetTime
-/* 802191BC 00215FBC  90 8D E1 14 */	stw r4, lbl_803D1594-_SDA_BASE_(r13)
-/* 802191C0 00215FC0  90 6D E1 10 */	stw r3, __AXOsTime-_SDA_BASE_(r13)
+/* 802191BC 00215FBC  90 8D E1 14 */	stw r4, lbl_803D1594@sda21(r13)
+/* 802191C0 00215FC0  90 6D E1 10 */	stw r3, __AXOsTime@sda21(r13)
 lbl_802191C4:
-/* 802191C4 00215FC4  80 0D E1 08 */	lwz r0, __AXOutDspReady-_SDA_BASE_(r13)
+/* 802191C4 00215FC4  80 0D E1 08 */	lwz r0, __AXOutDspReady@sda21(r13)
 /* 802191C8 00215FC8  28 00 00 01 */	cmplwi r0, 1
 /* 802191CC 00215FCC  40 82 00 18 */	bne lbl_802191E4
 /* 802191D0 00215FD0  38 00 00 00 */	li r0, 0
-/* 802191D4 00215FD4  90 0D E1 08 */	stw r0, __AXOutDspReady-_SDA_BASE_(r13)
+/* 802191D4 00215FD4  90 0D E1 08 */	stw r0, __AXOutDspReady@sda21(r13)
 /* 802191D8 00215FD8  38 60 00 00 */	li r3, 0
 /* 802191DC 00215FDC  4B FF FE 0D */	bl __AXOutNewFrame
 /* 802191E0 00215FE0  48 00 00 18 */	b lbl_802191F8
 lbl_802191E4:
 /* 802191E4 00215FE4  38 00 00 02 */	li r0, 2
 /* 802191E8 00215FE8  3C 60 80 3B */	lis r3, __AXDSPTask@ha
-/* 802191EC 00215FEC  90 0D E1 08 */	stw r0, __AXOutDspReady-_SDA_BASE_(r13)
+/* 802191EC 00215FEC  90 0D E1 08 */	stw r0, __AXOutDspReady@sda21(r13)
 /* 802191F0 00215FF0  38 63 DB 80 */	addi r3, r3, __AXDSPTask@l
 /* 802191F4 00215FF4  48 00 B4 FD */	bl DSPAssertTask
 lbl_802191F8:
-/* 802191F8 00215FF8  80 0D E1 30 */	lwz r0, __AXOutputBufferMode-_SDA_BASE_(r13)
+/* 802191F8 00215FF8  80 0D E1 30 */	lwz r0, __AXOutputBufferMode@sda21(r13)
 /* 802191FC 00215FFC  28 00 00 01 */	cmplwi r0, 1
 /* 80219200 00216000  40 82 00 4C */	bne lbl_8021924C
-/* 80219204 00216004  80 8D E1 04 */	lwz r4, __AXAiDmaFrame-_SDA_BASE_(r13)
+/* 80219204 00216004  80 8D E1 04 */	lwz r4, __AXAiDmaFrame@sda21(r13)
 /* 80219208 00216008  3C 60 80 3B */	lis r3, __AXOutBuffer@ha
 /* 8021920C 0021600C  38 03 91 80 */	addi r0, r3, __AXOutBuffer@l
 /* 80219210 00216010  1C 64 02 80 */	mulli r3, r4, 0x280
 /* 80219214 00216014  7C 60 1A 14 */	add r3, r0, r3
 /* 80219218 00216018  38 80 02 80 */	li r4, 0x280
 /* 8021921C 0021601C  48 00 3A 9D */	bl AIInitDMA
-/* 80219220 00216020  80 8D E1 04 */	lwz r4, __AXAiDmaFrame-_SDA_BASE_(r13)
+/* 80219220 00216020  80 8D E1 04 */	lwz r4, __AXAiDmaFrame@sda21(r13)
 /* 80219224 00216024  3C 60 AA AB */	lis r3, 0xAAAAAAAB@ha
 /* 80219228 00216028  38 03 AA AB */	addi r0, r3, 0xAAAAAAAB@l
 /* 8021922C 0021602C  38 64 00 01 */	addi r3, r4, 1
-/* 80219230 00216030  90 6D E1 04 */	stw r3, __AXAiDmaFrame-_SDA_BASE_(r13)
-/* 80219234 00216034  80 6D E1 04 */	lwz r3, __AXAiDmaFrame-_SDA_BASE_(r13)
+/* 80219230 00216030  90 6D E1 04 */	stw r3, __AXAiDmaFrame@sda21(r13)
+/* 80219234 00216034  80 6D E1 04 */	lwz r3, __AXAiDmaFrame@sda21(r13)
 /* 80219238 00216038  7C 00 18 16 */	mulhwu r0, r0, r3
 /* 8021923C 0021603C  54 00 F8 7E */	srwi r0, r0, 1
 /* 80219240 00216040  1C 00 00 03 */	mulli r0, r0, 3
 /* 80219244 00216044  7C 00 18 50 */	subf r0, r0, r3
-/* 80219248 00216048  90 0D E1 04 */	stw r0, __AXAiDmaFrame-_SDA_BASE_(r13)
+/* 80219248 00216048  90 0D E1 04 */	stw r0, __AXAiDmaFrame@sda21(r13)
 lbl_8021924C:
 /* 8021924C 0021604C  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 80219250 00216050  38 21 00 08 */	addi r1, r1, 8
@@ -5465,7 +5465,7 @@ lbl_8021924C:
 .global __AXDSPInitCallback
 __AXDSPInitCallback:
 /* 8021925C 0021605C  38 00 00 01 */	li r0, 1
-/* 80219260 00216060  90 0D E1 1C */	stw r0, __AXDSPInitFlag-_SDA_BASE_(r13)
+/* 80219260 00216060  90 0D E1 1C */	stw r0, __AXDSPInitFlag@sda21(r13)
 /* 80219264 00216064  4E 80 00 20 */	blr 
 
 .global __AXDSPResumeCallback
@@ -5473,14 +5473,14 @@ __AXDSPResumeCallback:
 /* 80219268 00216068  7C 08 02 A6 */	mflr r0
 /* 8021926C 0021606C  90 01 00 04 */	stw r0, 4(r1)
 /* 80219270 00216070  94 21 FF F8 */	stwu r1, -8(r1)
-/* 80219274 00216074  80 0D E1 08 */	lwz r0, __AXOutDspReady-_SDA_BASE_(r13)
+/* 80219274 00216074  80 0D E1 08 */	lwz r0, __AXOutDspReady@sda21(r13)
 /* 80219278 00216078  28 00 00 02 */	cmplwi r0, 2
 /* 8021927C 0021607C  40 82 00 2C */	bne lbl_802192A8
 /* 80219280 00216080  38 00 00 00 */	li r0, 0
-/* 80219284 00216084  90 0D E1 08 */	stw r0, __AXOutDspReady-_SDA_BASE_(r13)
+/* 80219284 00216084  90 0D E1 08 */	stw r0, __AXOutDspReady@sda21(r13)
 /* 80219288 00216088  48 01 F2 C5 */	bl OSGetTime
-/* 8021928C 0021608C  80 AD E1 10 */	lwz r5, __AXOsTime-_SDA_BASE_(r13)
-/* 80219290 00216090  80 0D E1 14 */	lwz r0, lbl_803D1594-_SDA_BASE_(r13)
+/* 8021928C 0021608C  80 AD E1 10 */	lwz r5, __AXOsTime@sda21(r13)
+/* 80219290 00216090  80 0D E1 14 */	lwz r0, lbl_803D1594@sda21(r13)
 /* 80219294 00216094  7C 00 20 10 */	subfc r0, r0, r4
 /* 80219298 00216098  54 00 F0 BE */	srwi r0, r0, 2
 /* 8021929C 0021609C  7C 03 03 78 */	mr r3, r0
@@ -5488,7 +5488,7 @@ __AXDSPResumeCallback:
 /* 802192A4 002160A4  48 00 00 0C */	b lbl_802192B0
 lbl_802192A8:
 /* 802192A8 002160A8  38 00 00 01 */	li r0, 1
-/* 802192AC 002160AC  90 0D E1 08 */	stw r0, __AXOutDspReady-_SDA_BASE_(r13)
+/* 802192AC 002160AC  90 0D E1 08 */	stw r0, __AXOutDspReady@sda21(r13)
 lbl_802192B0:
 /* 802192B0 002160B0  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 802192B4 002160B4  38 21 00 08 */	addi r1, r1, 8
@@ -5498,11 +5498,11 @@ lbl_802192B0:
 .global __AXDSPDoneCallback
 __AXDSPDoneCallback:
 /* 802192C0 002160C0  7C 08 02 A6 */	mflr r0
-/* 802192C4 002160C4  38 6D E1 28 */	addi r3, r13, __AXOutThreadQueue-_SDA_BASE_
+/* 802192C4 002160C4  38 6D E1 28 */	addi r3, r13, __AXOutThreadQueue@sda21
 /* 802192C8 002160C8  90 01 00 04 */	stw r0, 4(r1)
 /* 802192CC 002160CC  38 00 00 01 */	li r0, 1
 /* 802192D0 002160D0  94 21 FF F8 */	stwu r1, -8(r1)
-/* 802192D4 002160D4  90 0D E1 20 */	stw r0, __AXDSPDoneFlag-_SDA_BASE_(r13)
+/* 802192D4 002160D4  90 0D E1 20 */	stw r0, __AXDSPDoneFlag@sda21(r13)
 /* 802192D8 002160D8  48 01 E8 11 */	bl OSWakeupThread
 /* 802192DC 002160DC  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 802192E0 002160E0  38 21 00 08 */	addi r1, r1, 8
@@ -5525,7 +5525,7 @@ __AXOutInitDSP:
 /* 80219318 00216118  90 1F 4A 0C */	stw r0, 0x4a0c(r31)
 /* 8021931C 0021611C  39 1F 0A 00 */	addi r8, r31, 0xa00
 /* 80219320 00216120  38 E0 00 10 */	li r7, 0x10
-/* 80219324 00216124  A0 0D B3 D0 */	lhz r0, axDspSlaveLength-_SDA_BASE_(r13)
+/* 80219324 00216124  A0 0D B3 D0 */	lhz r0, axDspSlaveLength@sda21(r13)
 /* 80219328 00216128  38 C0 00 30 */	li r6, 0x30
 /* 8021932C 0021612C  38 A5 92 5C */	addi r5, r5, __AXDSPInitCallback@l
 /* 80219330 00216130  90 1F 4A 10 */	stw r0, 0x4a10(r31)
@@ -5536,7 +5536,7 @@ __AXOutInitDSP:
 /* 80219344 00216144  91 1F 4A 18 */	stw r8, 0x4a18(r31)
 /* 80219348 00216148  90 1F 4A 1C */	stw r0, 0x4a1c(r31)
 /* 8021934C 0021614C  38 03 92 C0 */	addi r0, r3, __AXDSPDoneCallback@l
-/* 80219350 00216150  38 6D E1 28 */	addi r3, r13, __AXOutThreadQueue-_SDA_BASE_
+/* 80219350 00216150  38 6D E1 28 */	addi r3, r13, __AXOutThreadQueue@sda21
 /* 80219354 00216154  91 3F 4A 20 */	stw r9, 0x4a20(r31)
 /* 80219358 00216158  B0 FF 4A 24 */	sth r7, 0x4a24(r31)
 /* 8021935C 0021615C  B0 DF 4A 26 */	sth r6, 0x4a26(r31)
@@ -5545,8 +5545,8 @@ __AXOutInitDSP:
 /* 80219368 00216168  90 1F 4A 30 */	stw r0, 0x4a30(r31)
 /* 8021936C 0021616C  91 3F 4A 34 */	stw r9, 0x4a34(r31)
 /* 80219370 00216170  91 3F 4A 04 */	stw r9, 0x4a04(r31)
-/* 80219374 00216174  91 2D E1 1C */	stw r9, __AXDSPInitFlag-_SDA_BASE_(r13)
-/* 80219378 00216178  91 2D E1 20 */	stw r9, __AXDSPDoneFlag-_SDA_BASE_(r13)
+/* 80219374 00216174  91 2D E1 1C */	stw r9, __AXDSPInitFlag@sda21(r13)
+/* 80219378 00216178  91 2D E1 20 */	stw r9, __AXDSPDoneFlag@sda21(r13)
 /* 8021937C 0021617C  48 01 D8 51 */	bl OSInitThreadQueue
 /* 80219380 00216180  48 00 B2 B9 */	bl DSPCheckInit
 /* 80219384 00216184  2C 03 00 00 */	cmpwi r3, 0
@@ -5556,7 +5556,7 @@ lbl_80219390:
 /* 80219390 00216190  38 7F 4A 00 */	addi r3, r31, 0x4a00
 /* 80219394 00216194  48 00 B2 AD */	bl DSPAddTask
 lbl_80219398:
-/* 80219398 00216198  80 0D E1 1C */	lwz r0, __AXDSPInitFlag-_SDA_BASE_(r13)
+/* 80219398 00216198  80 0D E1 1C */	lwz r0, __AXDSPInitFlag@sda21(r13)
 /* 8021939C 0021619C  2C 00 00 00 */	cmpwi r0, 0
 /* 802193A0 002161A0  41 82 FF F8 */	beq lbl_80219398
 /* 802193A4 002161A4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -5574,12 +5574,12 @@ __AXOutInit:
 /* 802193C8 002161C8  7C 09 03 A6 */	mtctr r0
 /* 802193CC 002161CC  94 21 FF D8 */	stwu r1, -0x28(r1)
 /* 802193D0 002161D0  93 E1 00 24 */	stw r31, 0x24(r1)
-/* 802193D4 002161D4  90 8D E1 00 */	stw r4, __AXOutFrame-_SDA_BASE_(r13)
-/* 802193D8 002161D8  90 8D E1 04 */	stw r4, __AXAiDmaFrame-_SDA_BASE_(r13)
-/* 802193DC 002161DC  90 6D E1 30 */	stw r3, __AXOutputBufferMode-_SDA_BASE_(r13)
+/* 802193D4 002161D4  90 8D E1 00 */	stw r4, __AXOutFrame@sda21(r13)
+/* 802193D8 002161D8  90 8D E1 04 */	stw r4, __AXAiDmaFrame@sda21(r13)
+/* 802193DC 002161DC  90 6D E1 30 */	stw r3, __AXOutputBufferMode@sda21(r13)
 /* 802193E0 002161E0  3C 60 80 3B */	lis r3, __AXOutBuffer@ha
 /* 802193E4 002161E4  3B E3 91 80 */	addi r31, r3, __AXOutBuffer@l
-/* 802193E8 002161E8  90 8D E1 24 */	stw r4, __AXDebugSteppingMode-_SDA_BASE_(r13)
+/* 802193E8 002161E8  90 8D E1 24 */	stw r4, __AXDebugSteppingMode@sda21(r13)
 /* 802193EC 002161EC  38 7F 00 00 */	addi r3, r31, 0
 lbl_802193F0:
 /* 802193F0 002161F0  90 83 00 00 */	stw r4, 0(r3)
@@ -5761,7 +5761,7 @@ lbl_80219554:
 /* 802196AC 002164AC  3C 60 80 22 */	lis r3, __AXOutAiCallback@ha
 /* 802196B0 002164B0  38 63 91 A0 */	addi r3, r3, __AXOutAiCallback@l
 /* 802196B4 002164B4  48 00 35 C1 */	bl AIRegisterDMACallback
-/* 802196B8 002164B8  80 0D E1 30 */	lwz r0, __AXOutputBufferMode-_SDA_BASE_(r13)
+/* 802196B8 002164B8  80 0D E1 30 */	lwz r0, __AXOutputBufferMode@sda21(r13)
 /* 802196BC 002164BC  28 00 00 01 */	cmplwi r0, 1
 /* 802196C0 002164C0  40 82 00 14 */	bne lbl_802196D4
 /* 802196C4 002164C4  38 7F 07 80 */	addi r3, r31, 0x780
@@ -5773,27 +5773,27 @@ lbl_802196D4:
 /* 802196D8 002164D8  38 9F 02 80 */	addi r4, r31, 0x280
 /* 802196DC 002164DC  4B FF F2 21 */	bl __AXNextFrame
 lbl_802196E0:
-/* 802196E0 002164E0  80 0D E1 30 */	lwz r0, __AXOutputBufferMode-_SDA_BASE_(r13)
+/* 802196E0 002164E0  80 0D E1 30 */	lwz r0, __AXOutputBufferMode@sda21(r13)
 /* 802196E4 002164E4  38 80 00 01 */	li r4, 1
 /* 802196E8 002164E8  38 60 00 00 */	li r3, 0
-/* 802196EC 002164EC  90 8D E1 08 */	stw r4, __AXOutDspReady-_SDA_BASE_(r13)
+/* 802196EC 002164EC  90 8D E1 08 */	stw r4, __AXOutDspReady@sda21(r13)
 /* 802196F0 002164F0  28 00 00 01 */	cmplwi r0, 1
-/* 802196F4 002164F4  90 6D E1 18 */	stw r3, __AXUserFrameCallback-_SDA_BASE_(r13)
+/* 802196F4 002164F4  90 6D E1 18 */	stw r3, __AXUserFrameCallback@sda21(r13)
 /* 802196F8 002164F8  40 82 00 34 */	bne lbl_8021972C
-/* 802196FC 002164FC  80 0D E1 04 */	lwz r0, __AXAiDmaFrame-_SDA_BASE_(r13)
+/* 802196FC 002164FC  80 0D E1 04 */	lwz r0, __AXAiDmaFrame@sda21(r13)
 /* 80219700 00216500  38 80 02 80 */	li r4, 0x280
 /* 80219704 00216504  1C 00 02 80 */	mulli r0, r0, 0x280
 /* 80219708 00216508  7C 7F 02 14 */	add r3, r31, r0
 /* 8021970C 0021650C  48 00 35 AD */	bl AIInitDMA
-/* 80219710 00216510  80 6D E1 04 */	lwz r3, __AXAiDmaFrame-_SDA_BASE_(r13)
+/* 80219710 00216510  80 6D E1 04 */	lwz r3, __AXAiDmaFrame@sda21(r13)
 /* 80219714 00216514  38 03 00 01 */	addi r0, r3, 1
-/* 80219718 00216518  90 0D E1 04 */	stw r0, __AXAiDmaFrame-_SDA_BASE_(r13)
-/* 8021971C 0021651C  80 0D E1 04 */	lwz r0, __AXAiDmaFrame-_SDA_BASE_(r13)
+/* 80219718 00216518  90 0D E1 04 */	stw r0, __AXAiDmaFrame@sda21(r13)
+/* 8021971C 0021651C  80 0D E1 04 */	lwz r0, __AXAiDmaFrame@sda21(r13)
 /* 80219720 00216520  54 00 07 FE */	clrlwi r0, r0, 0x1f
-/* 80219724 00216524  90 0D E1 04 */	stw r0, __AXAiDmaFrame-_SDA_BASE_(r13)
+/* 80219724 00216524  90 0D E1 04 */	stw r0, __AXAiDmaFrame@sda21(r13)
 /* 80219728 00216528  48 00 00 18 */	b lbl_80219740
 lbl_8021972C:
-/* 8021972C 0021652C  80 0D E1 00 */	lwz r0, __AXOutFrame-_SDA_BASE_(r13)
+/* 8021972C 0021652C  80 0D E1 00 */	lwz r0, __AXOutFrame@sda21(r13)
 /* 80219730 00216530  38 80 02 80 */	li r4, 0x280
 /* 80219734 00216534  1C 00 02 80 */	mulli r0, r0, 0x280
 /* 80219738 00216538  7C 7F 02 14 */	add r3, r31, r0
@@ -5815,12 +5815,12 @@ __AXOutQuit:
 /* 80219768 00216568  48 01 AC 61 */	bl OSDisableInterrupts
 /* 8021976C 0021656C  38 00 00 00 */	li r0, 0
 /* 80219770 00216570  3C 80 80 3B */	lis r4, __AXDSPTask@ha
-/* 80219774 00216574  90 0D E1 18 */	stw r0, __AXUserFrameCallback-_SDA_BASE_(r13)
+/* 80219774 00216574  90 0D E1 18 */	stw r0, __AXUserFrameCallback@sda21(r13)
 /* 80219778 00216578  38 04 DB 80 */	addi r0, r4, __AXDSPTask@l
 /* 8021977C 0021657C  3B E3 00 00 */	addi r31, r3, 0
 /* 80219780 00216580  7C 03 03 78 */	mr r3, r0
 /* 80219784 00216584  48 00 AF 2D */	bl DSPCancelTask
-/* 80219788 00216588  38 6D E1 28 */	addi r3, r13, __AXOutThreadQueue-_SDA_BASE_
+/* 80219788 00216588  38 6D E1 28 */	addi r3, r13, __AXOutThreadQueue@sda21
 /* 8021978C 0021658C  48 01 E2 71 */	bl OSSleepThread
 /* 80219790 00216590  48 00 35 C9 */	bl AIStopDMA
 /* 80219794 00216594  7F E3 FB 78 */	mr r3, r31
@@ -5839,9 +5839,9 @@ AXRegisterCallback:
 /* 802197BC 002165BC  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 802197C0 002165C0  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 802197C4 002165C4  7C 7E 1B 78 */	mr r30, r3
-/* 802197C8 002165C8  83 ED E1 18 */	lwz r31, __AXUserFrameCallback-_SDA_BASE_(r13)
+/* 802197C8 002165C8  83 ED E1 18 */	lwz r31, __AXUserFrameCallback@sda21(r13)
 /* 802197CC 002165CC  48 01 AB FD */	bl OSDisableInterrupts
-/* 802197D0 002165D0  93 CD E1 18 */	stw r30, __AXUserFrameCallback-_SDA_BASE_(r13)
+/* 802197D0 002165D0  93 CD E1 18 */	stw r30, __AXUserFrameCallback@sda21(r13)
 /* 802197D4 002165D4  48 01 AC 1D */	bl OSRestoreInterrupts
 /* 802197D8 002165D8  7F E3 FB 78 */	mr r3, r31
 /* 802197DC 002165DC  80 01 00 1C */	lwz r0, 0x1c(r1)
@@ -5866,7 +5866,7 @@ __AXPrintStudio:
 /* 80219810 00216610  3C 60 80 3B */	lis r3, __AXStudio@ha
 /* 80219814 00216614  94 21 FF F8 */	stwu r1, -8(r1)
 /* 80219818 00216618  38 63 DC 20 */	addi r3, r3, __AXStudio@l
-/* 8021981C 0021661C  80 AD E1 38 */	lwz r5, __AXSpbAL-_SDA_BASE_(r13)
+/* 8021981C 0021661C  80 AD E1 38 */	lwz r5, __AXSpbAL@sda21(r13)
 /* 80219820 00216620  7C 00 28 96 */	mulhw r0, r0, r5
 /* 80219824 00216624  7C 00 36 70 */	srawi r0, r0, 6
 /* 80219828 00216628  54 04 0F FE */	srwi r4, r0, 0x1f
@@ -5883,20 +5883,20 @@ lbl_8021984C:
 /* 8021984C 0021664C  90 A3 00 00 */	stw r5, 0(r3)
 /* 80219850 00216650  7C 04 00 D0 */	neg r0, r4
 /* 80219854 00216654  1C A4 00 A0 */	mulli r5, r4, 0xa0
-/* 80219858 00216658  80 8D E1 38 */	lwz r4, __AXSpbAL-_SDA_BASE_(r13)
+/* 80219858 00216658  80 8D E1 38 */	lwz r4, __AXSpbAL@sda21(r13)
 /* 8021985C 0021665C  7C 85 20 50 */	subf r4, r5, r4
-/* 80219860 00216660  90 8D E1 38 */	stw r4, __AXSpbAL-_SDA_BASE_(r13)
+/* 80219860 00216660  90 8D E1 38 */	stw r4, __AXSpbAL@sda21(r13)
 /* 80219864 00216664  7C 00 07 34 */	extsh r0, r0
 /* 80219868 00216668  B0 03 00 04 */	sth r0, 4(r3)
 /* 8021986C 0021666C  48 00 00 14 */	b lbl_80219880
 lbl_80219870:
 /* 80219870 00216670  38 00 00 00 */	li r0, 0
-/* 80219874 00216674  90 0D E1 38 */	stw r0, __AXSpbAL-_SDA_BASE_(r13)
+/* 80219874 00216674  90 0D E1 38 */	stw r0, __AXSpbAL@sda21(r13)
 /* 80219878 00216678  90 03 00 00 */	stw r0, 0(r3)
 /* 8021987C 0021667C  B0 03 00 04 */	sth r0, 4(r3)
 lbl_80219880:
 /* 80219880 00216680  3C 80 66 66 */	lis r4, 0x66666667@ha
-/* 80219884 00216684  80 AD E1 3C */	lwz r5, __AXSpbAR-_SDA_BASE_(r13)
+/* 80219884 00216684  80 AD E1 3C */	lwz r5, __AXSpbAR@sda21(r13)
 /* 80219888 00216688  38 04 66 67 */	addi r0, r4, 0x66666667@l
 /* 8021988C 0021668C  7C 00 28 96 */	mulhw r0, r0, r5
 /* 80219890 00216690  7C 00 36 70 */	srawi r0, r0, 6
@@ -5914,20 +5914,20 @@ lbl_802198B8:
 /* 802198B8 002166B8  90 A3 00 06 */	stw r5, 6(r3)
 /* 802198BC 002166BC  7C 04 00 D0 */	neg r0, r4
 /* 802198C0 002166C0  1C A4 00 A0 */	mulli r5, r4, 0xa0
-/* 802198C4 002166C4  80 8D E1 3C */	lwz r4, __AXSpbAR-_SDA_BASE_(r13)
+/* 802198C4 002166C4  80 8D E1 3C */	lwz r4, __AXSpbAR@sda21(r13)
 /* 802198C8 002166C8  7C 85 20 50 */	subf r4, r5, r4
-/* 802198CC 002166CC  90 8D E1 3C */	stw r4, __AXSpbAR-_SDA_BASE_(r13)
+/* 802198CC 002166CC  90 8D E1 3C */	stw r4, __AXSpbAR@sda21(r13)
 /* 802198D0 002166D0  7C 00 07 34 */	extsh r0, r0
 /* 802198D4 002166D4  B0 03 00 0A */	sth r0, 0xa(r3)
 /* 802198D8 002166D8  48 00 00 14 */	b lbl_802198EC
 lbl_802198DC:
 /* 802198DC 002166DC  38 00 00 00 */	li r0, 0
-/* 802198E0 002166E0  90 0D E1 3C */	stw r0, __AXSpbAR-_SDA_BASE_(r13)
+/* 802198E0 002166E0  90 0D E1 3C */	stw r0, __AXSpbAR@sda21(r13)
 /* 802198E4 002166E4  90 03 00 06 */	stw r0, 6(r3)
 /* 802198E8 002166E8  B0 03 00 0A */	sth r0, 0xa(r3)
 lbl_802198EC:
 /* 802198EC 002166EC  3C 80 66 66 */	lis r4, 0x66666667@ha
-/* 802198F0 002166F0  80 AD E1 40 */	lwz r5, __AXSpbAS-_SDA_BASE_(r13)
+/* 802198F0 002166F0  80 AD E1 40 */	lwz r5, __AXSpbAS@sda21(r13)
 /* 802198F4 002166F4  38 04 66 67 */	addi r0, r4, 0x66666667@l
 /* 802198F8 002166F8  7C 00 28 96 */	mulhw r0, r0, r5
 /* 802198FC 002166FC  7C 00 36 70 */	srawi r0, r0, 6
@@ -5945,20 +5945,20 @@ lbl_80219924:
 /* 80219924 00216724  90 A3 00 0C */	stw r5, 0xc(r3)
 /* 80219928 00216728  7C 04 00 D0 */	neg r0, r4
 /* 8021992C 0021672C  1C A4 00 A0 */	mulli r5, r4, 0xa0
-/* 80219930 00216730  80 8D E1 40 */	lwz r4, __AXSpbAS-_SDA_BASE_(r13)
+/* 80219930 00216730  80 8D E1 40 */	lwz r4, __AXSpbAS@sda21(r13)
 /* 80219934 00216734  7C 85 20 50 */	subf r4, r5, r4
-/* 80219938 00216738  90 8D E1 40 */	stw r4, __AXSpbAS-_SDA_BASE_(r13)
+/* 80219938 00216738  90 8D E1 40 */	stw r4, __AXSpbAS@sda21(r13)
 /* 8021993C 0021673C  7C 00 07 34 */	extsh r0, r0
 /* 80219940 00216740  B0 03 00 10 */	sth r0, 0x10(r3)
 /* 80219944 00216744  48 00 00 14 */	b lbl_80219958
 lbl_80219948:
 /* 80219948 00216748  38 00 00 00 */	li r0, 0
-/* 8021994C 0021674C  90 0D E1 40 */	stw r0, __AXSpbAS-_SDA_BASE_(r13)
+/* 8021994C 0021674C  90 0D E1 40 */	stw r0, __AXSpbAS@sda21(r13)
 /* 80219950 00216750  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80219954 00216754  B0 03 00 10 */	sth r0, 0x10(r3)
 lbl_80219958:
 /* 80219958 00216758  3C 80 66 66 */	lis r4, 0x66666667@ha
-/* 8021995C 0021675C  80 AD E1 44 */	lwz r5, __AXSpbAAL-_SDA_BASE_(r13)
+/* 8021995C 0021675C  80 AD E1 44 */	lwz r5, __AXSpbAAL@sda21(r13)
 /* 80219960 00216760  38 04 66 67 */	addi r0, r4, 0x66666667@l
 /* 80219964 00216764  7C 00 28 96 */	mulhw r0, r0, r5
 /* 80219968 00216768  7C 00 36 70 */	srawi r0, r0, 6
@@ -5976,20 +5976,20 @@ lbl_80219990:
 /* 80219990 00216790  90 A3 00 12 */	stw r5, 0x12(r3)
 /* 80219994 00216794  7C 04 00 D0 */	neg r0, r4
 /* 80219998 00216798  1C A4 00 A0 */	mulli r5, r4, 0xa0
-/* 8021999C 0021679C  80 8D E1 44 */	lwz r4, __AXSpbAAL-_SDA_BASE_(r13)
+/* 8021999C 0021679C  80 8D E1 44 */	lwz r4, __AXSpbAAL@sda21(r13)
 /* 802199A0 002167A0  7C 85 20 50 */	subf r4, r5, r4
-/* 802199A4 002167A4  90 8D E1 44 */	stw r4, __AXSpbAAL-_SDA_BASE_(r13)
+/* 802199A4 002167A4  90 8D E1 44 */	stw r4, __AXSpbAAL@sda21(r13)
 /* 802199A8 002167A8  7C 00 07 34 */	extsh r0, r0
 /* 802199AC 002167AC  B0 03 00 16 */	sth r0, 0x16(r3)
 /* 802199B0 002167B0  48 00 00 14 */	b lbl_802199C4
 lbl_802199B4:
 /* 802199B4 002167B4  38 00 00 00 */	li r0, 0
-/* 802199B8 002167B8  90 0D E1 44 */	stw r0, __AXSpbAAL-_SDA_BASE_(r13)
+/* 802199B8 002167B8  90 0D E1 44 */	stw r0, __AXSpbAAL@sda21(r13)
 /* 802199BC 002167BC  90 03 00 12 */	stw r0, 0x12(r3)
 /* 802199C0 002167C0  B0 03 00 16 */	sth r0, 0x16(r3)
 lbl_802199C4:
 /* 802199C4 002167C4  3C 80 66 66 */	lis r4, 0x66666667@ha
-/* 802199C8 002167C8  80 AD E1 48 */	lwz r5, __AXSpbAAR-_SDA_BASE_(r13)
+/* 802199C8 002167C8  80 AD E1 48 */	lwz r5, __AXSpbAAR@sda21(r13)
 /* 802199CC 002167CC  38 04 66 67 */	addi r0, r4, 0x66666667@l
 /* 802199D0 002167D0  7C 00 28 96 */	mulhw r0, r0, r5
 /* 802199D4 002167D4  7C 00 36 70 */	srawi r0, r0, 6
@@ -6007,20 +6007,20 @@ lbl_802199FC:
 /* 802199FC 002167FC  90 A3 00 18 */	stw r5, 0x18(r3)
 /* 80219A00 00216800  7C 04 00 D0 */	neg r0, r4
 /* 80219A04 00216804  1C A4 00 A0 */	mulli r5, r4, 0xa0
-/* 80219A08 00216808  80 8D E1 48 */	lwz r4, __AXSpbAAR-_SDA_BASE_(r13)
+/* 80219A08 00216808  80 8D E1 48 */	lwz r4, __AXSpbAAR@sda21(r13)
 /* 80219A0C 0021680C  7C 85 20 50 */	subf r4, r5, r4
-/* 80219A10 00216810  90 8D E1 48 */	stw r4, __AXSpbAAR-_SDA_BASE_(r13)
+/* 80219A10 00216810  90 8D E1 48 */	stw r4, __AXSpbAAR@sda21(r13)
 /* 80219A14 00216814  7C 00 07 34 */	extsh r0, r0
 /* 80219A18 00216818  B0 03 00 1C */	sth r0, 0x1c(r3)
 /* 80219A1C 0021681C  48 00 00 14 */	b lbl_80219A30
 lbl_80219A20:
 /* 80219A20 00216820  38 00 00 00 */	li r0, 0
-/* 80219A24 00216824  90 0D E1 48 */	stw r0, __AXSpbAAR-_SDA_BASE_(r13)
+/* 80219A24 00216824  90 0D E1 48 */	stw r0, __AXSpbAAR@sda21(r13)
 /* 80219A28 00216828  90 03 00 18 */	stw r0, 0x18(r3)
 /* 80219A2C 0021682C  B0 03 00 1C */	sth r0, 0x1c(r3)
 lbl_80219A30:
 /* 80219A30 00216830  3C 80 66 66 */	lis r4, 0x66666667@ha
-/* 80219A34 00216834  80 AD E1 4C */	lwz r5, __AXSpbAAS-_SDA_BASE_(r13)
+/* 80219A34 00216834  80 AD E1 4C */	lwz r5, __AXSpbAAS@sda21(r13)
 /* 80219A38 00216838  38 04 66 67 */	addi r0, r4, 0x66666667@l
 /* 80219A3C 0021683C  7C 00 28 96 */	mulhw r0, r0, r5
 /* 80219A40 00216840  7C 00 36 70 */	srawi r0, r0, 6
@@ -6038,20 +6038,20 @@ lbl_80219A68:
 /* 80219A68 00216868  90 A3 00 1E */	stw r5, 0x1e(r3)
 /* 80219A6C 0021686C  7C 04 00 D0 */	neg r0, r4
 /* 80219A70 00216870  1C A4 00 A0 */	mulli r5, r4, 0xa0
-/* 80219A74 00216874  80 8D E1 4C */	lwz r4, __AXSpbAAS-_SDA_BASE_(r13)
+/* 80219A74 00216874  80 8D E1 4C */	lwz r4, __AXSpbAAS@sda21(r13)
 /* 80219A78 00216878  7C 85 20 50 */	subf r4, r5, r4
-/* 80219A7C 0021687C  90 8D E1 4C */	stw r4, __AXSpbAAS-_SDA_BASE_(r13)
+/* 80219A7C 0021687C  90 8D E1 4C */	stw r4, __AXSpbAAS@sda21(r13)
 /* 80219A80 00216880  7C 00 07 34 */	extsh r0, r0
 /* 80219A84 00216884  B0 03 00 22 */	sth r0, 0x22(r3)
 /* 80219A88 00216888  48 00 00 14 */	b lbl_80219A9C
 lbl_80219A8C:
 /* 80219A8C 0021688C  38 00 00 00 */	li r0, 0
-/* 80219A90 00216890  90 0D E1 4C */	stw r0, __AXSpbAAS-_SDA_BASE_(r13)
+/* 80219A90 00216890  90 0D E1 4C */	stw r0, __AXSpbAAS@sda21(r13)
 /* 80219A94 00216894  90 03 00 1E */	stw r0, 0x1e(r3)
 /* 80219A98 00216898  B0 03 00 22 */	sth r0, 0x22(r3)
 lbl_80219A9C:
 /* 80219A9C 0021689C  3C 80 66 66 */	lis r4, 0x66666667@ha
-/* 80219AA0 002168A0  80 AD E1 50 */	lwz r5, __AXSpbABL-_SDA_BASE_(r13)
+/* 80219AA0 002168A0  80 AD E1 50 */	lwz r5, __AXSpbABL@sda21(r13)
 /* 80219AA4 002168A4  38 04 66 67 */	addi r0, r4, 0x66666667@l
 /* 80219AA8 002168A8  7C 00 28 96 */	mulhw r0, r0, r5
 /* 80219AAC 002168AC  7C 00 36 70 */	srawi r0, r0, 6
@@ -6069,20 +6069,20 @@ lbl_80219AD4:
 /* 80219AD4 002168D4  90 A3 00 24 */	stw r5, 0x24(r3)
 /* 80219AD8 002168D8  7C 04 00 D0 */	neg r0, r4
 /* 80219ADC 002168DC  1C A4 00 A0 */	mulli r5, r4, 0xa0
-/* 80219AE0 002168E0  80 8D E1 50 */	lwz r4, __AXSpbABL-_SDA_BASE_(r13)
+/* 80219AE0 002168E0  80 8D E1 50 */	lwz r4, __AXSpbABL@sda21(r13)
 /* 80219AE4 002168E4  7C 85 20 50 */	subf r4, r5, r4
-/* 80219AE8 002168E8  90 8D E1 50 */	stw r4, __AXSpbABL-_SDA_BASE_(r13)
+/* 80219AE8 002168E8  90 8D E1 50 */	stw r4, __AXSpbABL@sda21(r13)
 /* 80219AEC 002168EC  7C 00 07 34 */	extsh r0, r0
 /* 80219AF0 002168F0  B0 03 00 28 */	sth r0, 0x28(r3)
 /* 80219AF4 002168F4  48 00 00 14 */	b lbl_80219B08
 lbl_80219AF8:
 /* 80219AF8 002168F8  38 00 00 00 */	li r0, 0
-/* 80219AFC 002168FC  90 0D E1 50 */	stw r0, __AXSpbABL-_SDA_BASE_(r13)
+/* 80219AFC 002168FC  90 0D E1 50 */	stw r0, __AXSpbABL@sda21(r13)
 /* 80219B00 00216900  90 03 00 24 */	stw r0, 0x24(r3)
 /* 80219B04 00216904  B0 03 00 28 */	sth r0, 0x28(r3)
 lbl_80219B08:
 /* 80219B08 00216908  3C 80 66 66 */	lis r4, 0x66666667@ha
-/* 80219B0C 0021690C  80 AD E1 54 */	lwz r5, __AXSpbABR-_SDA_BASE_(r13)
+/* 80219B0C 0021690C  80 AD E1 54 */	lwz r5, __AXSpbABR@sda21(r13)
 /* 80219B10 00216910  38 04 66 67 */	addi r0, r4, 0x66666667@l
 /* 80219B14 00216914  7C 00 28 96 */	mulhw r0, r0, r5
 /* 80219B18 00216918  7C 00 36 70 */	srawi r0, r0, 6
@@ -6100,20 +6100,20 @@ lbl_80219B40:
 /* 80219B40 00216940  90 A3 00 2A */	stw r5, 0x2a(r3)
 /* 80219B44 00216944  7C 04 00 D0 */	neg r0, r4
 /* 80219B48 00216948  1C A4 00 A0 */	mulli r5, r4, 0xa0
-/* 80219B4C 0021694C  80 8D E1 54 */	lwz r4, __AXSpbABR-_SDA_BASE_(r13)
+/* 80219B4C 0021694C  80 8D E1 54 */	lwz r4, __AXSpbABR@sda21(r13)
 /* 80219B50 00216950  7C 85 20 50 */	subf r4, r5, r4
-/* 80219B54 00216954  90 8D E1 54 */	stw r4, __AXSpbABR-_SDA_BASE_(r13)
+/* 80219B54 00216954  90 8D E1 54 */	stw r4, __AXSpbABR@sda21(r13)
 /* 80219B58 00216958  7C 00 07 34 */	extsh r0, r0
 /* 80219B5C 0021695C  B0 03 00 2E */	sth r0, 0x2e(r3)
 /* 80219B60 00216960  48 00 00 14 */	b lbl_80219B74
 lbl_80219B64:
 /* 80219B64 00216964  38 00 00 00 */	li r0, 0
-/* 80219B68 00216968  90 0D E1 54 */	stw r0, __AXSpbABR-_SDA_BASE_(r13)
+/* 80219B68 00216968  90 0D E1 54 */	stw r0, __AXSpbABR@sda21(r13)
 /* 80219B6C 0021696C  90 03 00 2A */	stw r0, 0x2a(r3)
 /* 80219B70 00216970  B0 03 00 2E */	sth r0, 0x2e(r3)
 lbl_80219B74:
 /* 80219B74 00216974  3C 80 66 66 */	lis r4, 0x66666667@ha
-/* 80219B78 00216978  80 AD E1 58 */	lwz r5, __AXSpbABS-_SDA_BASE_(r13)
+/* 80219B78 00216978  80 AD E1 58 */	lwz r5, __AXSpbABS@sda21(r13)
 /* 80219B7C 0021697C  38 04 66 67 */	addi r0, r4, 0x66666667@l
 /* 80219B80 00216980  7C 00 28 96 */	mulhw r0, r0, r5
 /* 80219B84 00216984  7C 00 36 70 */	srawi r0, r0, 6
@@ -6131,15 +6131,15 @@ lbl_80219BAC:
 /* 80219BAC 002169AC  90 A3 00 30 */	stw r5, 0x30(r3)
 /* 80219BB0 002169B0  7C 04 00 D0 */	neg r0, r4
 /* 80219BB4 002169B4  1C A4 00 A0 */	mulli r5, r4, 0xa0
-/* 80219BB8 002169B8  80 8D E1 58 */	lwz r4, __AXSpbABS-_SDA_BASE_(r13)
+/* 80219BB8 002169B8  80 8D E1 58 */	lwz r4, __AXSpbABS@sda21(r13)
 /* 80219BBC 002169BC  7C 85 20 50 */	subf r4, r5, r4
-/* 80219BC0 002169C0  90 8D E1 58 */	stw r4, __AXSpbABS-_SDA_BASE_(r13)
+/* 80219BC0 002169C0  90 8D E1 58 */	stw r4, __AXSpbABS@sda21(r13)
 /* 80219BC4 002169C4  7C 00 07 34 */	extsh r0, r0
 /* 80219BC8 002169C8  B0 03 00 34 */	sth r0, 0x34(r3)
 /* 80219BCC 002169CC  48 00 00 14 */	b lbl_80219BE0
 lbl_80219BD0:
 /* 80219BD0 002169D0  38 00 00 00 */	li r0, 0
-/* 80219BD4 002169D4  90 0D E1 58 */	stw r0, __AXSpbABS-_SDA_BASE_(r13)
+/* 80219BD4 002169D4  90 0D E1 58 */	stw r0, __AXSpbABS@sda21(r13)
 /* 80219BD8 002169D8  90 03 00 30 */	stw r0, 0x30(r3)
 /* 80219BDC 002169DC  B0 03 00 34 */	sth r0, 0x34(r3)
 lbl_80219BE0:
@@ -6153,15 +6153,15 @@ lbl_80219BE0:
 .global __AXSPBInit
 __AXSPBInit:
 /* 80219BF8 002169F8  38 00 00 00 */	li r0, 0
-/* 80219BFC 002169FC  90 0D E1 58 */	stw r0, __AXSpbABS-_SDA_BASE_(r13)
-/* 80219C00 00216A00  90 0D E1 54 */	stw r0, __AXSpbABR-_SDA_BASE_(r13)
-/* 80219C04 00216A04  90 0D E1 50 */	stw r0, __AXSpbABL-_SDA_BASE_(r13)
-/* 80219C08 00216A08  90 0D E1 4C */	stw r0, __AXSpbAAS-_SDA_BASE_(r13)
-/* 80219C0C 00216A0C  90 0D E1 48 */	stw r0, __AXSpbAAR-_SDA_BASE_(r13)
-/* 80219C10 00216A10  90 0D E1 44 */	stw r0, __AXSpbAAL-_SDA_BASE_(r13)
-/* 80219C14 00216A14  90 0D E1 40 */	stw r0, __AXSpbAS-_SDA_BASE_(r13)
-/* 80219C18 00216A18  90 0D E1 3C */	stw r0, __AXSpbAR-_SDA_BASE_(r13)
-/* 80219C1C 00216A1C  90 0D E1 38 */	stw r0, __AXSpbAL-_SDA_BASE_(r13)
+/* 80219BFC 002169FC  90 0D E1 58 */	stw r0, __AXSpbABS@sda21(r13)
+/* 80219C00 00216A00  90 0D E1 54 */	stw r0, __AXSpbABR@sda21(r13)
+/* 80219C04 00216A04  90 0D E1 50 */	stw r0, __AXSpbABL@sda21(r13)
+/* 80219C08 00216A08  90 0D E1 4C */	stw r0, __AXSpbAAS@sda21(r13)
+/* 80219C0C 00216A0C  90 0D E1 48 */	stw r0, __AXSpbAAR@sda21(r13)
+/* 80219C10 00216A10  90 0D E1 44 */	stw r0, __AXSpbAAL@sda21(r13)
+/* 80219C14 00216A14  90 0D E1 40 */	stw r0, __AXSpbAS@sda21(r13)
+/* 80219C18 00216A18  90 0D E1 3C */	stw r0, __AXSpbAR@sda21(r13)
+/* 80219C1C 00216A1C  90 0D E1 38 */	stw r0, __AXSpbAL@sda21(r13)
 /* 80219C20 00216A20  4E 80 00 20 */	blr 
 
 .global __AXSPBQuit
@@ -6170,56 +6170,56 @@ __AXSPBQuit:
 
 .global __AXDepopVoice
 __AXDepopVoice:
-/* 80219C28 00216A28  80 8D E1 38 */	lwz r4, __AXSpbAL-_SDA_BASE_(r13)
+/* 80219C28 00216A28  80 8D E1 38 */	lwz r4, __AXSpbAL@sda21(r13)
 /* 80219C2C 00216A2C  A8 03 00 52 */	lha r0, 0x52(r3)
-/* 80219C30 00216A30  80 AD E1 44 */	lwz r5, __AXSpbAAL-_SDA_BASE_(r13)
+/* 80219C30 00216A30  80 AD E1 44 */	lwz r5, __AXSpbAAL@sda21(r13)
 /* 80219C34 00216A34  7C 04 02 14 */	add r0, r4, r0
-/* 80219C38 00216A38  80 8D E1 50 */	lwz r4, __AXSpbABL-_SDA_BASE_(r13)
-/* 80219C3C 00216A3C  90 0D E1 38 */	stw r0, __AXSpbAL-_SDA_BASE_(r13)
-/* 80219C40 00216A40  81 2D E1 3C */	lwz r9, __AXSpbAR-_SDA_BASE_(r13)
+/* 80219C38 00216A38  80 8D E1 50 */	lwz r4, __AXSpbABL@sda21(r13)
+/* 80219C3C 00216A3C  90 0D E1 38 */	stw r0, __AXSpbAL@sda21(r13)
+/* 80219C40 00216A40  81 2D E1 3C */	lwz r9, __AXSpbAR@sda21(r13)
 /* 80219C44 00216A44  A8 03 00 54 */	lha r0, 0x54(r3)
-/* 80219C48 00216A48  81 0D E1 48 */	lwz r8, __AXSpbAAR-_SDA_BASE_(r13)
+/* 80219C48 00216A48  81 0D E1 48 */	lwz r8, __AXSpbAAR@sda21(r13)
 /* 80219C4C 00216A4C  7C 05 02 14 */	add r0, r5, r0
-/* 80219C50 00216A50  80 ED E1 54 */	lwz r7, __AXSpbABR-_SDA_BASE_(r13)
-/* 80219C54 00216A54  90 0D E1 44 */	stw r0, __AXSpbAAL-_SDA_BASE_(r13)
-/* 80219C58 00216A58  80 CD E1 40 */	lwz r6, __AXSpbAS-_SDA_BASE_(r13)
+/* 80219C50 00216A50  80 ED E1 54 */	lwz r7, __AXSpbABR@sda21(r13)
+/* 80219C54 00216A54  90 0D E1 44 */	stw r0, __AXSpbAAL@sda21(r13)
+/* 80219C58 00216A58  80 CD E1 40 */	lwz r6, __AXSpbAS@sda21(r13)
 /* 80219C5C 00216A5C  A8 03 00 56 */	lha r0, 0x56(r3)
-/* 80219C60 00216A60  80 AD E1 4C */	lwz r5, __AXSpbAAS-_SDA_BASE_(r13)
+/* 80219C60 00216A60  80 AD E1 4C */	lwz r5, __AXSpbAAS@sda21(r13)
 /* 80219C64 00216A64  7C 04 02 14 */	add r0, r4, r0
-/* 80219C68 00216A68  80 8D E1 58 */	lwz r4, __AXSpbABS-_SDA_BASE_(r13)
-/* 80219C6C 00216A6C  90 0D E1 50 */	stw r0, __AXSpbABL-_SDA_BASE_(r13)
+/* 80219C68 00216A68  80 8D E1 58 */	lwz r4, __AXSpbABS@sda21(r13)
+/* 80219C6C 00216A6C  90 0D E1 50 */	stw r0, __AXSpbABL@sda21(r13)
 /* 80219C70 00216A70  A8 03 00 58 */	lha r0, 0x58(r3)
 /* 80219C74 00216A74  7C 09 02 14 */	add r0, r9, r0
-/* 80219C78 00216A78  90 0D E1 3C */	stw r0, __AXSpbAR-_SDA_BASE_(r13)
+/* 80219C78 00216A78  90 0D E1 3C */	stw r0, __AXSpbAR@sda21(r13)
 /* 80219C7C 00216A7C  A8 03 00 5A */	lha r0, 0x5a(r3)
 /* 80219C80 00216A80  7C 08 02 14 */	add r0, r8, r0
-/* 80219C84 00216A84  90 0D E1 48 */	stw r0, __AXSpbAAR-_SDA_BASE_(r13)
+/* 80219C84 00216A84  90 0D E1 48 */	stw r0, __AXSpbAAR@sda21(r13)
 /* 80219C88 00216A88  A8 03 00 5C */	lha r0, 0x5c(r3)
 /* 80219C8C 00216A8C  7C 07 02 14 */	add r0, r7, r0
-/* 80219C90 00216A90  90 0D E1 54 */	stw r0, __AXSpbABR-_SDA_BASE_(r13)
+/* 80219C90 00216A90  90 0D E1 54 */	stw r0, __AXSpbABR@sda21(r13)
 /* 80219C94 00216A94  A8 03 00 5E */	lha r0, 0x5e(r3)
 /* 80219C98 00216A98  7C 06 02 14 */	add r0, r6, r0
-/* 80219C9C 00216A9C  90 0D E1 40 */	stw r0, __AXSpbAS-_SDA_BASE_(r13)
+/* 80219C9C 00216A9C  90 0D E1 40 */	stw r0, __AXSpbAS@sda21(r13)
 /* 80219CA0 00216AA0  A8 03 00 60 */	lha r0, 0x60(r3)
 /* 80219CA4 00216AA4  7C 05 02 14 */	add r0, r5, r0
-/* 80219CA8 00216AA8  90 0D E1 4C */	stw r0, __AXSpbAAS-_SDA_BASE_(r13)
+/* 80219CA8 00216AA8  90 0D E1 4C */	stw r0, __AXSpbAAS@sda21(r13)
 /* 80219CAC 00216AAC  A8 03 00 62 */	lha r0, 0x62(r3)
 /* 80219CB0 00216AB0  7C 04 02 14 */	add r0, r4, r0
-/* 80219CB4 00216AB4  90 0D E1 58 */	stw r0, __AXSpbABS-_SDA_BASE_(r13)
+/* 80219CB4 00216AB4  90 0D E1 58 */	stw r0, __AXSpbABS@sda21(r13)
 /* 80219CB8 00216AB8  4E 80 00 20 */	blr 
 
 .global __AXGetNumVoices
 __AXGetNumVoices:
-/* 80219CBC 00216ABC  80 6D E1 68 */	lwz r3, __AXNumVoices-_SDA_BASE_(r13)
+/* 80219CBC 00216ABC  80 6D E1 68 */	lwz r3, __AXNumVoices@sda21(r13)
 /* 80219CC0 00216AC0  4E 80 00 20 */	blr 
 
 .global __AXServiceVPB
 __AXServiceVPB:
-/* 80219CC4 00216AC4  80 8D E1 68 */	lwz r4, __AXNumVoices-_SDA_BASE_(r13)
+/* 80219CC4 00216AC4  80 8D E1 68 */	lwz r4, __AXNumVoices@sda21(r13)
 /* 80219CC8 00216AC8  3C A0 80 3B */	lis r5, __AXPB@ha
 /* 80219CCC 00216ACC  38 05 DC 60 */	addi r0, r5, __AXPB@l
 /* 80219CD0 00216AD0  38 84 00 01 */	addi r4, r4, 1
-/* 80219CD4 00216AD4  90 8D E1 68 */	stw r4, __AXNumVoices-_SDA_BASE_(r13)
+/* 80219CD4 00216AD4  90 8D E1 68 */	stw r4, __AXNumVoices@sda21(r13)
 /* 80219CD8 00216AD8  38 C3 01 38 */	addi r6, r3, 0x138
 /* 80219CDC 00216ADC  80 A3 00 18 */	lwz r5, 0x18(r3)
 /* 80219CE0 00216AE0  80 83 00 1C */	lwz r4, 0x1c(r3)
@@ -6730,7 +6730,7 @@ __AXSyncPBs:
 /* 8021A434 00217234  3B E4 3A 70 */	addi r31, r4, __AXSrcCycles@l
 /* 8021A438 00217238  38 7E 00 00 */	addi r3, r30, 0
 /* 8021A43C 0021723C  38 80 3D 00 */	li r4, 0x3d00
-/* 8021A440 00217240  90 0D E1 68 */	stw r0, __AXNumVoices-_SDA_BASE_(r13)
+/* 8021A440 00217240  90 0D E1 68 */	stw r0, __AXNumVoices@sda21(r13)
 /* 8021A444 00217244  48 01 82 19 */	bl DCInvalidateRange
 /* 8021A448 00217248  38 7E 3D 00 */	addi r3, r30, 0x3d00
 /* 8021A44C 0021724C  38 80 10 00 */	li r4, 0x1000
@@ -6775,7 +6775,7 @@ lbl_8021A4C8:
 /* 8021A4D4 002172D4  3B BD 02 2B */	addi r29, r29, 0x22b
 lbl_8021A4D8:
 /* 8021A4D8 002172D8  A0 DB 01 44 */	lhz r6, 0x144(r27)
-/* 8021A4DC 002172DC  80 0D E1 60 */	lwz r0, __AXMaxDspCycles-_SDA_BASE_(r13)
+/* 8021A4DC 002172DC  80 0D E1 60 */	lwz r0, __AXMaxDspCycles@sda21(r13)
 /* 8021A4E0 002172E0  54 C4 CE 7A */	rlwinm r4, r6, 0x19, 0x19, 0x1d
 /* 8021A4E4 002172E4  54 C3 F6 7A */	rlwinm r3, r6, 0x1e, 0x19, 0x1d
 /* 8021A4E8 002172E8  7C 9F 22 14 */	add r4, r31, r4
@@ -6832,7 +6832,7 @@ lbl_8021A59C:
 /* 8021A5A0 002173A0  40 82 FE D8 */	bne lbl_8021A478
 /* 8021A5A4 002173A4  37 9C FF FF */	addic. r28, r28, -1
 /* 8021A5A8 002173A8  40 82 FE C0 */	bne lbl_8021A468
-/* 8021A5AC 002173AC  93 AD E1 64 */	stw r29, __AXRecDspCycles-_SDA_BASE_(r13)
+/* 8021A5AC 002173AC  93 AD E1 64 */	stw r29, __AXRecDspCycles@sda21(r13)
 /* 8021A5B0 002173B0  38 60 00 00 */	li r3, 0
 /* 8021A5B4 002173B4  4B FF D8 F5 */	bl __AXGetStackHead
 /* 8021A5B8 002173B8  7C 7F 1B 78 */	mr r31, r3
@@ -6932,9 +6932,9 @@ __AXVPBInit:
 /* 8021A700 00217500  3B C3 DC 60 */	addi r30, r3, __AXPB@l
 /* 8021A704 00217504  54 00 C9 FE */	srwi r0, r0, 7
 /* 8021A708 00217508  38 60 00 00 */	li r3, 0
-/* 8021A70C 0021750C  90 0D E1 60 */	stw r0, __AXMaxDspCycles-_SDA_BASE_(r13)
+/* 8021A70C 0021750C  90 0D E1 60 */	stw r0, __AXMaxDspCycles@sda21(r13)
 /* 8021A710 00217510  38 00 01 E8 */	li r0, 0x1e8
-/* 8021A714 00217514  90 6D E1 64 */	stw r3, __AXRecDspCycles-_SDA_BASE_(r13)
+/* 8021A714 00217514  90 6D E1 64 */	stw r3, __AXRecDspCycles@sda21(r13)
 /* 8021A718 00217518  7C 09 03 A6 */	mtctr r0
 /* 8021A71C 0021751C  38 9E 00 00 */	addi r4, r30, 0
 lbl_8021A720:
@@ -7339,7 +7339,7 @@ AXSetVoiceSrcRatio:
 /* 8021ACB4 00217AB4  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 8021ACB8 00217AB8  7C 7D 1B 78 */	mr r29, r3
 /* 8021ACBC 00217ABC  48 01 97 0D */	bl OSDisableInterrupts
-/* 8021ACC0 00217AC0  C0 02 D9 D8 */	lfs f0, _esc__2_331_0-_SDA2_BASE_(r2)
+/* 8021ACC0 00217AC0  C0 02 D9 D8 */	lfs f0, _esc__2_331_0@sda21(r2)
 /* 8021ACC4 00217AC4  7C 7E 1B 78 */	mr r30, r3
 /* 8021ACC8 00217AC8  EF E0 07 F2 */	fmuls f31, f0, f31
 /* 8021ACCC 00217ACC  FC 20 F8 90 */	fmr f1, f31
@@ -7401,21 +7401,21 @@ AXSetVoiceAdpcmLoop:
 
 .global __AXGetCurrentProfile
 __AXGetCurrentProfile:
-/* 8021AD9C 00217B9C  80 0D E1 7C */	lwz r0, __AXProfileInitialized-_SDA_BASE_(r13)
+/* 8021AD9C 00217B9C  80 0D E1 7C */	lwz r0, __AXProfileInitialized@sda21(r13)
 /* 8021ADA0 00217BA0  28 00 00 00 */	cmplwi r0, 0
 /* 8021ADA4 00217BA4  41 82 00 38 */	beq lbl_8021ADDC
-/* 8021ADA8 00217BA8  80 6D E1 78 */	lwz r3, __AXCurrentProfile-_SDA_BASE_(r13)
-/* 8021ADAC 00217BAC  80 8D E1 74 */	lwz r4, __AXMaxProfiles-_SDA_BASE_(r13)
+/* 8021ADA8 00217BA8  80 6D E1 78 */	lwz r3, __AXCurrentProfile@sda21(r13)
+/* 8021ADAC 00217BAC  80 8D E1 74 */	lwz r4, __AXMaxProfiles@sda21(r13)
 /* 8021ADB0 00217BB0  38 03 00 01 */	addi r0, r3, 1
-/* 8021ADB4 00217BB4  80 CD E1 70 */	lwz r6, __AXProfile-_SDA_BASE_(r13)
-/* 8021ADB8 00217BB8  90 0D E1 78 */	stw r0, __AXCurrentProfile-_SDA_BASE_(r13)
+/* 8021ADB4 00217BB4  80 CD E1 70 */	lwz r6, __AXProfile@sda21(r13)
+/* 8021ADB8 00217BB8  90 0D E1 78 */	stw r0, __AXCurrentProfile@sda21(r13)
 /* 8021ADBC 00217BBC  1C 03 00 38 */	mulli r0, r3, 0x38
-/* 8021ADC0 00217BC0  80 AD E1 78 */	lwz r5, __AXCurrentProfile-_SDA_BASE_(r13)
+/* 8021ADC0 00217BC0  80 AD E1 78 */	lwz r5, __AXCurrentProfile@sda21(r13)
 /* 8021ADC4 00217BC4  7C 66 02 14 */	add r3, r6, r0
 /* 8021ADC8 00217BC8  7C 05 23 96 */	divwu r0, r5, r4
 /* 8021ADCC 00217BCC  7C 00 21 D6 */	mullw r0, r0, r4
 /* 8021ADD0 00217BD0  7C 00 28 50 */	subf r0, r0, r5
-/* 8021ADD4 00217BD4  90 0D E1 78 */	stw r0, __AXCurrentProfile-_SDA_BASE_(r13)
+/* 8021ADD4 00217BD4  90 0D E1 78 */	stw r0, __AXCurrentProfile@sda21(r13)
 /* 8021ADD8 00217BD8  4E 80 00 20 */	blr 
 lbl_8021ADDC:
 /* 8021ADDC 00217BDC  38 60 00 00 */	li r3, 0
@@ -7442,16 +7442,16 @@ ReverbHICreate:
 /* 8021AE24 00217C24  FF 00 08 90 */	fmr f24, f1
 /* 8021AE28 00217C28  BE 01 00 40 */	stmw r16, 0x40(r1)
 /* 8021AE2C 00217C2C  7C 7F 1B 78 */	mr r31, r3
-/* 8021AE30 00217C30  C0 E2 D9 E0 */	lfs f7, _esc__2_109-_SDA2_BASE_(r2)
+/* 8021AE30 00217C30  C0 E2 D9 E0 */	lfs f7, _esc__2_109@sda21(r2)
 /* 8021AE34 00217C34  FC 18 38 40 */	fcmpo cr0, f24, f7
 /* 8021AE38 00217C38  41 80 00 6C */	blt lbl_8021AEA4
-/* 8021AE3C 00217C3C  C0 22 D9 E4 */	lfs f1, _esc__2_236-_SDA2_BASE_(r2)
+/* 8021AE3C 00217C3C  C0 22 D9 E4 */	lfs f1, _esc__2_236@sda21(r2)
 /* 8021AE40 00217C40  FC 18 08 40 */	fcmpo cr0, f24, f1
 /* 8021AE44 00217C44  41 81 00 60 */	bgt lbl_8021AEA4
-/* 8021AE48 00217C48  C0 02 D9 E8 */	lfs f0, _esc__2_237-_SDA2_BASE_(r2)
+/* 8021AE48 00217C48  C0 02 D9 E8 */	lfs f0, _esc__2_237@sda21(r2)
 /* 8021AE4C 00217C4C  FC 1C 00 40 */	fcmpo cr0, f28, f0
 /* 8021AE50 00217C50  41 80 00 54 */	blt lbl_8021AEA4
-/* 8021AE54 00217C54  C0 02 D9 EC */	lfs f0, _esc__2_238-_SDA2_BASE_(r2)
+/* 8021AE54 00217C54  C0 02 D9 EC */	lfs f0, _esc__2_238@sda21(r2)
 /* 8021AE58 00217C58  FC 1C 00 40 */	fcmpo cr0, f28, f0
 /* 8021AE5C 00217C5C  41 81 00 48 */	bgt lbl_8021AEA4
 /* 8021AE60 00217C60  FC 19 38 40 */	fcmpo cr0, f25, f7
@@ -7468,7 +7468,7 @@ ReverbHICreate:
 /* 8021AE8C 00217C8C  41 81 00 18 */	bgt lbl_8021AEA4
 /* 8021AE90 00217C90  FC 1F 38 40 */	fcmpo cr0, f31, f7
 /* 8021AE94 00217C94  41 80 00 10 */	blt lbl_8021AEA4
-/* 8021AE98 00217C98  C0 02 D9 F0 */	lfs f0, _esc__2_239_1-_SDA2_BASE_(r2)
+/* 8021AE98 00217C98  C0 02 D9 F0 */	lfs f0, _esc__2_239_1@sda21(r2)
 /* 8021AE9C 00217C9C  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8021AEA0 00217CA0  40 81 00 0C */	ble lbl_8021AEAC
 lbl_8021AEA4:
@@ -7479,12 +7479,12 @@ lbl_8021AEAC:
 /* 8021AEB0 00217CB0  38 80 00 00 */	li r4, 0
 /* 8021AEB4 00217CB4  38 A0 01 C4 */	li r5, 0x1c4
 /* 8021AEB8 00217CB8  4B DE 82 49 */	bl memset
-/* 8021AEBC 00217CBC  C0 02 D9 F4 */	lfs f0, _esc__2_240_0-_SDA2_BASE_(r2)
+/* 8021AEBC 00217CBC  C0 02 D9 F4 */	lfs f0, _esc__2_240_0@sda21(r2)
 /* 8021AEC0 00217CC0  3C 60 80 32 */	lis r3, lens_esc__7_111@ha
 /* 8021AEC4 00217CC4  3B 03 74 60 */	addi r24, r3, lens_esc__7_111@l
-/* 8021AEC8 00217CC8  C3 C2 D9 E0 */	lfs f30, _esc__2_109-_SDA2_BASE_(r2)
+/* 8021AEC8 00217CC8  C3 C2 D9 E0 */	lfs f30, _esc__2_109@sda21(r2)
 /* 8021AECC 00217CCC  EF 80 07 32 */	fmuls f28, f0, f28
-/* 8021AED0 00217CD0  CB A2 DA 00 */	lfd f29, _esc__2_244-_SDA2_BASE_(r2)
+/* 8021AED0 00217CD0  CB A2 DA 00 */	lfd f29, _esc__2_244@sda21(r2)
 /* 8021AED4 00217CD4  3B 78 00 00 */	addi r27, r24, 0
 /* 8021AED8 00217CD8  3B 5F 00 00 */	addi r26, r31, 0
 /* 8021AEDC 00217CDC  3B 3F 00 00 */	addi r25, r31, 0
@@ -7506,7 +7506,7 @@ lbl_8021AF08:
 /* 8021AF14 00217D14  56 70 10 3A */	slwi r16, r19, 2
 /* 8021AF18 00217D18  92 11 00 BC */	stw r16, 0xbc(r17)
 /* 8021AF1C 00217D1C  7E 03 83 78 */	mr r3, r16
-/* 8021AF20 00217D20  81 8D B3 D8 */	lwz r12, __AXFXAlloc-_SDA_BASE_(r13)
+/* 8021AF20 00217D20  81 8D B3 D8 */	lwz r12, __AXFXAlloc@sda21(r13)
 /* 8021AF24 00217D24  7D 88 03 A6 */	mtlr r12
 /* 8021AF28 00217D28  4E 80 00 21 */	blrl 
 /* 8021AF2C 00217D2C  90 71 00 C0 */	stw r3, 0xc0(r17)
@@ -7565,7 +7565,7 @@ lbl_8021AFE0:
 /* 8021AFE4 00217DE4  2C 00 00 00 */	cmpwi r0, 0
 /* 8021AFE8 00217DE8  41 80 FF E8 */	blt lbl_8021AFD0
 /* 8021AFEC 00217DEC  80 12 00 00 */	lwz r0, 0(r18)
-/* 8021AFF0 00217DF0  C0 22 D9 EC */	lfs f1, _esc__2_238-_SDA2_BASE_(r2)
+/* 8021AFF0 00217DF0  C0 22 D9 EC */	lfs f1, _esc__2_238@sda21(r2)
 /* 8021AFF4 00217DF4  1C 00 FF FD */	mulli r0, r0, -3
 /* 8021AFF8 00217DF8  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 8021AFFC 00217DFC  90 01 00 3C */	stw r0, 0x3c(r1)
@@ -7595,7 +7595,7 @@ lbl_8021B048:
 /* 8021B054 00217E54  56 95 10 3A */	slwi r21, r20, 2
 /* 8021B058 00217E58  92 B0 00 08 */	stw r21, 8(r16)
 /* 8021B05C 00217E5C  7E A3 AB 78 */	mr r3, r21
-/* 8021B060 00217E60  81 8D B3 D8 */	lwz r12, __AXFXAlloc-_SDA_BASE_(r13)
+/* 8021B060 00217E60  81 8D B3 D8 */	lwz r12, __AXFXAlloc@sda21(r13)
 /* 8021B064 00217E64  7D 88 03 A6 */	mtlr r12
 /* 8021B068 00217E68  4E 80 00 21 */	blrl 
 /* 8021B06C 00217E6C  90 70 00 0C */	stw r3, 0xc(r16)
@@ -7664,7 +7664,7 @@ lbl_8021B134:
 /* 8021B148 00217F48  56 11 10 3A */	slwi r17, r16, 2
 /* 8021B14C 00217F4C  92 3A 00 30 */	stw r17, 0x30(r26)
 /* 8021B150 00217F50  7E 23 8B 78 */	mr r3, r17
-/* 8021B154 00217F54  81 8D B3 D8 */	lwz r12, __AXFXAlloc-_SDA_BASE_(r13)
+/* 8021B154 00217F54  81 8D B3 D8 */	lwz r12, __AXFXAlloc@sda21(r13)
 /* 8021B158 00217F58  7D 88 03 A6 */	mtlr r12
 /* 8021B15C 00217F5C  4E 80 00 21 */	blrl 
 /* 8021B160 00217F60  90 7A 00 34 */	stw r3, 0x34(r26)
@@ -7735,23 +7735,23 @@ lbl_8021B230:
 /* 8021B244 00218044  D3 7F 01 A8 */	stfs f27, 0x1a8(r31)
 /* 8021B248 00218048  D3 5F 01 A0 */	stfs f26, 0x1a0(r31)
 /* 8021B24C 0021804C  C0 3F 01 A0 */	lfs f1, 0x1a0(r31)
-/* 8021B250 00218050  C0 02 D9 F8 */	lfs f0, _esc__2_241-_SDA2_BASE_(r2)
+/* 8021B250 00218050  C0 02 D9 F8 */	lfs f0, _esc__2_241@sda21(r2)
 /* 8021B254 00218054  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8021B258 00218058  40 80 00 08 */	bge lbl_8021B260
 /* 8021B25C 0021805C  D0 1F 01 A0 */	stfs f0, 0x1a0(r31)
 lbl_8021B260:
-/* 8021B260 00218060  C0 22 D9 FC */	lfs f1, _esc__2_242_0-_SDA2_BASE_(r2)
+/* 8021B260 00218060  C0 22 D9 FC */	lfs f1, _esc__2_242_0@sda21(r2)
 /* 8021B264 00218064  C0 1F 01 A0 */	lfs f0, 0x1a0(r31)
-/* 8021B268 00218068  C0 42 D9 F8 */	lfs f2, _esc__2_241-_SDA2_BASE_(r2)
+/* 8021B268 00218068  C0 42 D9 F8 */	lfs f2, _esc__2_241@sda21(r2)
 /* 8021B26C 0021806C  EC 01 00 32 */	fmuls f0, f1, f0
-/* 8021B270 00218070  C0 22 D9 E4 */	lfs f1, _esc__2_236-_SDA2_BASE_(r2)
+/* 8021B270 00218070  C0 22 D9 E4 */	lfs f1, _esc__2_236@sda21(r2)
 /* 8021B274 00218074  EC 02 00 2A */	fadds f0, f2, f0
 /* 8021B278 00218078  EC 01 00 28 */	fsubs f0, f1, f0
 /* 8021B27C 0021807C  D0 1F 01 A0 */	stfs f0, 0x1a0(r31)
-/* 8021B280 00218080  C0 02 D9 E0 */	lfs f0, _esc__2_109-_SDA2_BASE_(r2)
+/* 8021B280 00218080  C0 02 D9 E0 */	lfs f0, _esc__2_109@sda21(r2)
 /* 8021B284 00218084  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 8021B288 00218088  41 82 00 8C */	beq lbl_8021B314
-/* 8021B28C 0021808C  C0 02 D9 F4 */	lfs f0, _esc__2_240_0-_SDA2_BASE_(r2)
+/* 8021B28C 0021808C  C0 02 D9 F4 */	lfs f0, _esc__2_240_0@sda21(r2)
 /* 8021B290 00218090  3A 1F 00 00 */	addi r16, r31, 0
 /* 8021B294 00218094  3A 20 00 00 */	li r17, 0
 /* 8021B298 00218098  EC 00 07 F2 */	fmuls f0, f0, f31
@@ -7761,7 +7761,7 @@ lbl_8021B260:
 /* 8021B2A8 002180A8  90 1F 01 A4 */	stw r0, 0x1a4(r31)
 /* 8021B2AC 002180AC  48 00 00 58 */	b lbl_8021B304
 lbl_8021B2B0:
-/* 8021B2B0 002180B0  81 8D B3 D8 */	lwz r12, __AXFXAlloc-_SDA_BASE_(r13)
+/* 8021B2B0 002180B0  81 8D B3 D8 */	lwz r12, __AXFXAlloc@sda21(r13)
 /* 8021B2B4 002180B4  80 1F 01 A4 */	lwz r0, 0x1a4(r31)
 /* 8021B2B8 002180B8  7D 88 03 A6 */	mtlr r12
 /* 8021B2BC 002180BC  54 03 10 3A */	slwi r3, r0, 2
@@ -8295,7 +8295,7 @@ lbl_8021BA40:
 /* 8021BA40 00218840  80 7E 00 0C */	lwz r3, 0xc(r30)
 /* 8021BA44 00218844  28 03 00 00 */	cmplwi r3, 0
 /* 8021BA48 00218848  41 82 00 14 */	beq lbl_8021BA5C
-/* 8021BA4C 0021884C  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021BA4C 0021884C  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021BA50 00218850  7D 88 03 A6 */	mtlr r12
 /* 8021BA54 00218854  4E 80 00 21 */	blrl 
 /* 8021BA58 00218858  93 FE 00 0C */	stw r31, 0xc(r30)
@@ -8318,7 +8318,7 @@ lbl_8021BA88:
 /* 8021BA88 00218888  80 7E 00 C0 */	lwz r3, 0xc0(r30)
 /* 8021BA8C 0021888C  28 03 00 00 */	cmplwi r3, 0
 /* 8021BA90 00218890  41 82 00 14 */	beq lbl_8021BAA4
-/* 8021BA94 00218894  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021BA94 00218894  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021BA98 00218898  7D 88 03 A6 */	mtlr r12
 /* 8021BA9C 0021889C  4E 80 00 21 */	blrl 
 /* 8021BAA0 002188A0  93 FE 00 C0 */	stw r31, 0xc0(r30)
@@ -8344,7 +8344,7 @@ lbl_8021BADC:
 /* 8021BADC 002188DC  80 7E 01 AC */	lwz r3, 0x1ac(r30)
 /* 8021BAE0 002188E0  28 03 00 00 */	cmplwi r3, 0
 /* 8021BAE4 002188E4  41 82 00 14 */	beq lbl_8021BAF8
-/* 8021BAE8 002188E8  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021BAE8 002188E8  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021BAEC 002188EC  7D 88 03 A6 */	mtlr r12
 /* 8021BAF0 002188F0  4E 80 00 21 */	blrl 
 /* 8021BAF4 002188F4  93 FE 01 AC */	stw r31, 0x1ac(r30)
@@ -8437,9 +8437,9 @@ AXFXReverbHiCallback:
 /* 8021BC20 00218A20  83 C3 00 00 */	lwz r30, 0(r3)
 /* 8021BC24 00218A24  48 00 00 04 */	b lbl_8021BC28
 lbl_8021BC28:
-/* 8021BC28 00218A28  C3 C2 DA 1C */	lfs f30, _esc__2_330-_SDA2_BASE_(r2)
-/* 8021BC2C 00218A2C  C3 E2 D9 E4 */	lfs f31, _esc__2_236-_SDA2_BASE_(r2)
-/* 8021BC30 00218A30  C3 A2 D9 E0 */	lfs f29, _esc__2_109-_SDA2_BASE_(r2)
+/* 8021BC28 00218A28  C3 C2 DA 1C */	lfs f30, _esc__2_330@sda21(r2)
+/* 8021BC2C 00218A2C  C3 E2 D9 E4 */	lfs f31, _esc__2_236@sda21(r2)
+/* 8021BC30 00218A30  C3 A2 D9 E0 */	lfs f29, _esc__2_109@sda21(r2)
 /* 8021BC34 00218A34  48 00 00 04 */	b lbl_8021BC38
 lbl_8021BC38:
 /* 8021BC38 00218A38  48 00 00 88 */	b lbl_8021BCC0
@@ -8519,7 +8519,7 @@ lbl_8021BD24:
 /* 8021BD24 00218B24  80 7E 00 0C */	lwz r3, 0xc(r30)
 /* 8021BD28 00218B28  28 03 00 00 */	cmplwi r3, 0
 /* 8021BD2C 00218B2C  41 82 00 14 */	beq lbl_8021BD40
-/* 8021BD30 00218B30  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021BD30 00218B30  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021BD34 00218B34  7D 88 03 A6 */	mtlr r12
 /* 8021BD38 00218B38  4E 80 00 21 */	blrl 
 /* 8021BD3C 00218B3C  93 FE 00 0C */	stw r31, 0xc(r30)
@@ -8542,7 +8542,7 @@ lbl_8021BD6C:
 /* 8021BD6C 00218B6C  80 7E 00 84 */	lwz r3, 0x84(r30)
 /* 8021BD70 00218B70  28 03 00 00 */	cmplwi r3, 0
 /* 8021BD74 00218B74  41 82 00 14 */	beq lbl_8021BD88
-/* 8021BD78 00218B78  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021BD78 00218B78  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021BD7C 00218B7C  7D 88 03 A6 */	mtlr r12
 /* 8021BD80 00218B80  4E 80 00 21 */	blrl 
 /* 8021BD84 00218B84  93 FE 00 84 */	stw r31, 0x84(r30)
@@ -8568,7 +8568,7 @@ lbl_8021BDC0:
 /* 8021BDC0 00218BC0  80 7E 01 24 */	lwz r3, 0x124(r30)
 /* 8021BDC4 00218BC4  28 03 00 00 */	cmplwi r3, 0
 /* 8021BDC8 00218BC8  41 82 00 14 */	beq lbl_8021BDDC
-/* 8021BDCC 00218BCC  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021BDCC 00218BCC  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021BDD0 00218BD0  7D 88 03 A6 */	mtlr r12
 /* 8021BDD4 00218BD4  4E 80 00 21 */	blrl 
 /* 8021BDD8 00218BD8  93 FE 01 24 */	stw r31, 0x124(r30)
@@ -8621,7 +8621,7 @@ AXFXChorusShutdown:
 /* 8021BE70 00218C70  48 01 85 59 */	bl OSDisableInterrupts
 /* 8021BE74 00218C74  7C 60 1B 78 */	mr r0, r3
 /* 8021BE78 00218C78  80 7F 00 00 */	lwz r3, 0(r31)
-/* 8021BE7C 00218C7C  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021BE7C 00218C7C  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021BE80 00218C80  7C 1F 03 78 */	mr r31, r0
 /* 8021BE84 00218C84  7D 88 03 A6 */	mtlr r12
 /* 8021BE88 00218C88  4E 80 00 21 */	blrl 
@@ -8647,7 +8647,7 @@ AXFXDelayShutdown:
 /* 8021BECC 00218CCC  3B E3 00 00 */	addi r31, r3, 0
 /* 8021BED0 00218CD0  28 00 00 00 */	cmplwi r0, 0
 /* 8021BED4 00218CD4  41 82 00 14 */	beq lbl_8021BEE8
-/* 8021BED8 00218CD8  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021BED8 00218CD8  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021BEDC 00218CDC  7C 03 03 78 */	mr r3, r0
 /* 8021BEE0 00218CE0  7D 88 03 A6 */	mtlr r12
 /* 8021BEE4 00218CE4  4E 80 00 21 */	blrl 
@@ -8655,14 +8655,14 @@ lbl_8021BEE8:
 /* 8021BEE8 00218CE8  80 7E 00 34 */	lwz r3, 0x34(r30)
 /* 8021BEEC 00218CEC  28 03 00 00 */	cmplwi r3, 0
 /* 8021BEF0 00218CF0  41 82 00 10 */	beq lbl_8021BF00
-/* 8021BEF4 00218CF4  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021BEF4 00218CF4  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021BEF8 00218CF8  7D 88 03 A6 */	mtlr r12
 /* 8021BEFC 00218CFC  4E 80 00 21 */	blrl 
 lbl_8021BF00:
 /* 8021BF00 00218D00  80 7E 00 38 */	lwz r3, 0x38(r30)
 /* 8021BF04 00218D04  28 03 00 00 */	cmplwi r3, 0
 /* 8021BF08 00218D08  41 82 00 10 */	beq lbl_8021BF18
-/* 8021BF0C 00218D0C  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021BF0C 00218D0C  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021BF10 00218D10  7D 88 03 A6 */	mtlr r12
 /* 8021BF14 00218D14  4E 80 00 21 */	blrl 
 lbl_8021BF18:
@@ -8686,7 +8686,7 @@ __AXFXAllocFunction:
 /* 8021BF50 00218D50  7C 64 1B 78 */	mr r4, r3
 /* 8021BF54 00218D54  90 01 00 04 */	stw r0, 4(r1)
 /* 8021BF58 00218D58  94 21 FF F8 */	stwu r1, -8(r1)
-/* 8021BF5C 00218D5C  80 6D B4 80 */	lwz r3, __OSCurrHeap-_SDA_BASE_(r13)
+/* 8021BF5C 00218D5C  80 6D B4 80 */	lwz r3, __OSCurrHeap@sda21(r13)
 /* 8021BF60 00218D60  48 01 61 D1 */	bl OSAllocFromHeap
 /* 8021BF64 00218D64  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 8021BF68 00218D68  38 21 00 08 */	addi r1, r1, 8
@@ -8699,7 +8699,7 @@ __AXFXFreeFunction:
 /* 8021BF78 00218D78  7C 64 1B 78 */	mr r4, r3
 /* 8021BF7C 00218D7C  90 01 00 04 */	stw r0, 4(r1)
 /* 8021BF80 00218D80  94 21 FF F8 */	stwu r1, -8(r1)
-/* 8021BF84 00218D84  80 6D B4 80 */	lwz r3, __OSCurrHeap-_SDA_BASE_(r13)
+/* 8021BF84 00218D84  80 6D B4 80 */	lwz r3, __OSCurrHeap@sda21(r13)
 /* 8021BF88 00218D88  48 01 62 A5 */	bl OSFreeToHeap
 /* 8021BF8C 00218D8C  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 8021BF90 00218D90  38 21 00 08 */	addi r1, r1, 8
@@ -8725,16 +8725,16 @@ ReverbHICreateDpl2:
 /* 8021BFD4 00218DD4  FF 20 08 90 */	fmr f25, f1
 /* 8021BFD8 00218DD8  BE 01 00 38 */	stmw r16, 0x38(r1)
 /* 8021BFDC 00218DDC  7C 7F 1B 78 */	mr r31, r3
-/* 8021BFE0 00218DE0  C0 C2 DA 20 */	lfs f6, _esc__2_109_0-_SDA2_BASE_(r2)
+/* 8021BFE0 00218DE0  C0 C2 DA 20 */	lfs f6, _esc__2_109_0@sda21(r2)
 /* 8021BFE4 00218DE4  FC 19 30 40 */	fcmpo cr0, f25, f6
 /* 8021BFE8 00218DE8  41 80 00 5C */	blt lbl_8021C044
-/* 8021BFEC 00218DEC  C0 22 DA 24 */	lfs f1, _esc__2_234-_SDA2_BASE_(r2)
+/* 8021BFEC 00218DEC  C0 22 DA 24 */	lfs f1, _esc__2_234@sda21(r2)
 /* 8021BFF0 00218DF0  FC 19 08 40 */	fcmpo cr0, f25, f1
 /* 8021BFF4 00218DF4  41 81 00 50 */	bgt lbl_8021C044
-/* 8021BFF8 00218DF8  C0 02 DA 28 */	lfs f0, _esc__2_235-_SDA2_BASE_(r2)
+/* 8021BFF8 00218DF8  C0 02 DA 28 */	lfs f0, _esc__2_235@sda21(r2)
 /* 8021BFFC 00218DFC  FC 1C 00 40 */	fcmpo cr0, f28, f0
 /* 8021C000 00218E00  41 80 00 44 */	blt lbl_8021C044
-/* 8021C004 00218E04  C0 02 DA 2C */	lfs f0, _esc__2_236_0-_SDA2_BASE_(r2)
+/* 8021C004 00218E04  C0 02 DA 2C */	lfs f0, _esc__2_236_0@sda21(r2)
 /* 8021C008 00218E08  FC 1C 00 40 */	fcmpo cr0, f28, f0
 /* 8021C00C 00218E0C  41 81 00 38 */	bgt lbl_8021C044
 /* 8021C010 00218E10  FC 1A 30 40 */	fcmpo cr0, f26, f6
@@ -8747,7 +8747,7 @@ ReverbHICreateDpl2:
 /* 8021C02C 00218E2C  41 81 00 18 */	bgt lbl_8021C044
 /* 8021C030 00218E30  FC 1F 30 40 */	fcmpo cr0, f31, f6
 /* 8021C034 00218E34  41 80 00 10 */	blt lbl_8021C044
-/* 8021C038 00218E38  C0 02 DA 30 */	lfs f0, _esc__2_237_0-_SDA2_BASE_(r2)
+/* 8021C038 00218E38  C0 02 DA 30 */	lfs f0, _esc__2_237_0@sda21(r2)
 /* 8021C03C 00218E3C  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8021C040 00218E40  40 81 00 0C */	ble lbl_8021C04C
 lbl_8021C044:
@@ -8758,12 +8758,12 @@ lbl_8021C04C:
 /* 8021C050 00218E50  38 80 00 00 */	li r4, 0
 /* 8021C054 00218E54  38 A0 02 54 */	li r5, 0x254
 /* 8021C058 00218E58  4B DE 70 A9 */	bl memset
-/* 8021C05C 00218E5C  C0 02 DA 34 */	lfs f0, _esc__2_238_0-_SDA2_BASE_(r2)
+/* 8021C05C 00218E5C  C0 02 DA 34 */	lfs f0, _esc__2_238_0@sda21(r2)
 /* 8021C060 00218E60  3C 60 80 32 */	lis r3, lens_esc__7_111_0@ha
 /* 8021C064 00218E64  3B 03 74 80 */	addi r24, r3, lens_esc__7_111_0@l
-/* 8021C068 00218E68  C3 C2 DA 20 */	lfs f30, _esc__2_109_0-_SDA2_BASE_(r2)
+/* 8021C068 00218E68  C3 C2 DA 20 */	lfs f30, _esc__2_109_0@sda21(r2)
 /* 8021C06C 00218E6C  EF 80 07 32 */	fmuls f28, f0, f28
-/* 8021C070 00218E70  CB A2 DA 40 */	lfd f29, _esc__2_242_1-_SDA2_BASE_(r2)
+/* 8021C070 00218E70  CB A2 DA 40 */	lfd f29, _esc__2_242_1@sda21(r2)
 /* 8021C074 00218E74  3B 78 00 00 */	addi r27, r24, 0
 /* 8021C078 00218E78  3B 5F 00 00 */	addi r26, r31, 0
 /* 8021C07C 00218E7C  3B 3F 00 00 */	addi r25, r31, 0
@@ -8785,7 +8785,7 @@ lbl_8021C0A8:
 /* 8021C0B4 00218EB4  56 70 10 3A */	slwi r16, r19, 2
 /* 8021C0B8 00218EB8  92 11 00 F8 */	stw r16, 0xf8(r17)
 /* 8021C0BC 00218EBC  7E 03 83 78 */	mr r3, r16
-/* 8021C0C0 00218EC0  81 8D B3 D8 */	lwz r12, __AXFXAlloc-_SDA_BASE_(r13)
+/* 8021C0C0 00218EC0  81 8D B3 D8 */	lwz r12, __AXFXAlloc@sda21(r13)
 /* 8021C0C4 00218EC4  7D 88 03 A6 */	mtlr r12
 /* 8021C0C8 00218EC8  4E 80 00 21 */	blrl 
 /* 8021C0CC 00218ECC  90 71 00 FC */	stw r3, 0xfc(r17)
@@ -8844,7 +8844,7 @@ lbl_8021C180:
 /* 8021C184 00218F84  2C 00 00 00 */	cmpwi r0, 0
 /* 8021C188 00218F88  41 80 FF E8 */	blt lbl_8021C170
 /* 8021C18C 00218F8C  80 12 00 00 */	lwz r0, 0(r18)
-/* 8021C190 00218F90  C0 22 DA 2C */	lfs f1, _esc__2_236_0-_SDA2_BASE_(r2)
+/* 8021C190 00218F90  C0 22 DA 2C */	lfs f1, _esc__2_236_0@sda21(r2)
 /* 8021C194 00218F94  1C 00 FF FD */	mulli r0, r0, -3
 /* 8021C198 00218F98  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 8021C19C 00218F9C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -8874,7 +8874,7 @@ lbl_8021C1E8:
 /* 8021C1F4 00218FF4  56 95 10 3A */	slwi r21, r20, 2
 /* 8021C1F8 00218FF8  92 B0 00 08 */	stw r21, 8(r16)
 /* 8021C1FC 00218FFC  7E A3 AB 78 */	mr r3, r21
-/* 8021C200 00219000  81 8D B3 D8 */	lwz r12, __AXFXAlloc-_SDA_BASE_(r13)
+/* 8021C200 00219000  81 8D B3 D8 */	lwz r12, __AXFXAlloc@sda21(r13)
 /* 8021C204 00219004  7D 88 03 A6 */	mtlr r12
 /* 8021C208 00219008  4E 80 00 21 */	blrl 
 /* 8021C20C 0021900C  90 70 00 0C */	stw r3, 0xc(r16)
@@ -8943,7 +8943,7 @@ lbl_8021C2D4:
 /* 8021C2E8 002190E8  56 11 10 3A */	slwi r17, r16, 2
 /* 8021C2EC 002190EC  92 3A 00 30 */	stw r17, 0x30(r26)
 /* 8021C2F0 002190F0  7E 23 8B 78 */	mr r3, r17
-/* 8021C2F4 002190F4  81 8D B3 D8 */	lwz r12, __AXFXAlloc-_SDA_BASE_(r13)
+/* 8021C2F4 002190F4  81 8D B3 D8 */	lwz r12, __AXFXAlloc@sda21(r13)
 /* 8021C2F8 002190F8  7D 88 03 A6 */	mtlr r12
 /* 8021C2FC 002190FC  4E 80 00 21 */	blrl 
 /* 8021C300 00219100  90 7A 00 34 */	stw r3, 0x34(r26)
@@ -9013,23 +9013,23 @@ lbl_8021C3D0:
 /* 8021C3E0 002191E0  D3 5F 02 24 */	stfs f26, 0x224(r31)
 /* 8021C3E4 002191E4  D3 7F 02 28 */	stfs f27, 0x228(r31)
 /* 8021C3E8 002191E8  C0 3F 02 28 */	lfs f1, 0x228(r31)
-/* 8021C3EC 002191EC  C0 02 DA 38 */	lfs f0, _esc__2_239_2-_SDA2_BASE_(r2)
+/* 8021C3EC 002191EC  C0 02 DA 38 */	lfs f0, _esc__2_239_2@sda21(r2)
 /* 8021C3F0 002191F0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8021C3F4 002191F4  40 80 00 08 */	bge lbl_8021C3FC
 /* 8021C3F8 002191F8  D0 1F 02 28 */	stfs f0, 0x228(r31)
 lbl_8021C3FC:
-/* 8021C3FC 002191FC  C0 22 DA 3C */	lfs f1, _esc__2_240_1-_SDA2_BASE_(r2)
+/* 8021C3FC 002191FC  C0 22 DA 3C */	lfs f1, _esc__2_240_1@sda21(r2)
 /* 8021C400 00219200  C0 1F 02 28 */	lfs f0, 0x228(r31)
-/* 8021C404 00219204  C0 42 DA 38 */	lfs f2, _esc__2_239_2-_SDA2_BASE_(r2)
+/* 8021C404 00219204  C0 42 DA 38 */	lfs f2, _esc__2_239_2@sda21(r2)
 /* 8021C408 00219208  EC 01 00 32 */	fmuls f0, f1, f0
-/* 8021C40C 0021920C  C0 22 DA 24 */	lfs f1, _esc__2_234-_SDA2_BASE_(r2)
+/* 8021C40C 0021920C  C0 22 DA 24 */	lfs f1, _esc__2_234@sda21(r2)
 /* 8021C410 00219210  EC 02 00 2A */	fadds f0, f2, f0
 /* 8021C414 00219214  EC 01 00 28 */	fsubs f0, f1, f0
 /* 8021C418 00219218  D0 1F 02 28 */	stfs f0, 0x228(r31)
-/* 8021C41C 0021921C  C0 02 DA 20 */	lfs f0, _esc__2_109_0-_SDA2_BASE_(r2)
+/* 8021C41C 0021921C  C0 02 DA 20 */	lfs f0, _esc__2_109_0@sda21(r2)
 /* 8021C420 00219220  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 8021C424 00219224  41 82 00 8C */	beq lbl_8021C4B0
-/* 8021C428 00219228  C0 02 DA 34 */	lfs f0, _esc__2_238_0-_SDA2_BASE_(r2)
+/* 8021C428 00219228  C0 02 DA 34 */	lfs f0, _esc__2_238_0@sda21(r2)
 /* 8021C42C 0021922C  3A 1F 00 00 */	addi r16, r31, 0
 /* 8021C430 00219230  3A 20 00 00 */	li r17, 0
 /* 8021C434 00219234  EC 00 07 F2 */	fmuls f0, f0, f31
@@ -9039,7 +9039,7 @@ lbl_8021C3FC:
 /* 8021C444 00219244  90 1F 02 2C */	stw r0, 0x22c(r31)
 /* 8021C448 00219248  48 00 00 58 */	b lbl_8021C4A0
 lbl_8021C44C:
-/* 8021C44C 0021924C  81 8D B3 D8 */	lwz r12, __AXFXAlloc-_SDA_BASE_(r13)
+/* 8021C44C 0021924C  81 8D B3 D8 */	lwz r12, __AXFXAlloc@sda21(r13)
 /* 8021C450 00219250  80 1F 02 2C */	lwz r0, 0x22c(r31)
 /* 8021C454 00219254  7D 88 03 A6 */	mtlr r12
 /* 8021C458 00219258  54 03 10 3A */	slwi r3, r0, 2
@@ -9470,7 +9470,7 @@ lbl_8021CA50:
 /* 8021CA50 00219850  80 7E 00 0C */	lwz r3, 0xc(r30)
 /* 8021CA54 00219854  28 03 00 00 */	cmplwi r3, 0
 /* 8021CA58 00219858  41 82 00 14 */	beq lbl_8021CA6C
-/* 8021CA5C 0021985C  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021CA5C 0021985C  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021CA60 00219860  7D 88 03 A6 */	mtlr r12
 /* 8021CA64 00219864  4E 80 00 21 */	blrl 
 /* 8021CA68 00219868  93 FE 00 0C */	stw r31, 0xc(r30)
@@ -9493,7 +9493,7 @@ lbl_8021CA98:
 /* 8021CA98 00219898  80 7E 00 FC */	lwz r3, 0xfc(r30)
 /* 8021CA9C 0021989C  28 03 00 00 */	cmplwi r3, 0
 /* 8021CAA0 002198A0  41 82 00 14 */	beq lbl_8021CAB4
-/* 8021CAA4 002198A4  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021CAA4 002198A4  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021CAA8 002198A8  7D 88 03 A6 */	mtlr r12
 /* 8021CAAC 002198AC  4E 80 00 21 */	blrl 
 /* 8021CAB0 002198B0  93 FE 00 FC */	stw r31, 0xfc(r30)
@@ -9519,7 +9519,7 @@ lbl_8021CAEC:
 /* 8021CAEC 002198EC  80 7E 02 34 */	lwz r3, 0x234(r30)
 /* 8021CAF0 002198F0  28 03 00 00 */	cmplwi r3, 0
 /* 8021CAF4 002198F4  41 82 00 14 */	beq lbl_8021CB08
-/* 8021CAF8 002198F8  81 8D B3 DC */	lwz r12, __AXFXFree-_SDA_BASE_(r13)
+/* 8021CAF8 002198F8  81 8D B3 DC */	lwz r12, __AXFXFree@sda21(r13)
 /* 8021CAFC 002198FC  7D 88 03 A6 */	mtlr r12
 /* 8021CB00 00219900  4E 80 00 21 */	blrl 
 /* 8021CB04 00219904  93 FE 02 34 */	stw r31, 0x234(r30)
@@ -9636,9 +9636,9 @@ AIRegisterDMACallback:
 /* 8021CC80 00219A80  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 8021CC84 00219A84  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 8021CC88 00219A88  7C 7E 1B 78 */	mr r30, r3
-/* 8021CC8C 00219A8C  83 ED E1 84 */	lwz r31, __AID_Callback-_SDA_BASE_(r13)
+/* 8021CC8C 00219A8C  83 ED E1 84 */	lwz r31, __AID_Callback@sda21(r13)
 /* 8021CC90 00219A90  48 01 77 39 */	bl OSDisableInterrupts
-/* 8021CC94 00219A94  93 CD E1 84 */	stw r30, __AID_Callback-_SDA_BASE_(r13)
+/* 8021CC94 00219A94  93 CD E1 84 */	stw r30, __AID_Callback@sda21(r13)
 /* 8021CC98 00219A98  48 01 77 59 */	bl OSRestoreInterrupts
 /* 8021CC9C 00219A9C  7F E3 FB 78 */	mr r3, r31
 /* 8021CCA0 00219AA0  80 01 00 1C */	lwz r0, 0x1c(r1)
@@ -9705,7 +9705,7 @@ AIStopDMA:
 
 .global AICheckInit
 AICheckInit:
-/* 8021CD70 00219B70  80 6D E1 90 */	lwz r3, __AI_init_flag-_SDA_BASE_(r13)
+/* 8021CD70 00219B70  80 6D E1 90 */	lwz r3, __AI_init_flag@sda21(r13)
 /* 8021CD74 00219B74  4E 80 00 20 */	blr 
 
 .global AISetStreamPlayState
@@ -9948,10 +9948,10 @@ AIInit:
 /* 8021D09C 00219E9C  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 8021D0A0 00219EA0  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 8021D0A4 00219EA4  3B C3 00 00 */	addi r30, r3, 0
-/* 8021D0A8 00219EA8  80 0D E1 90 */	lwz r0, __AI_init_flag-_SDA_BASE_(r13)
+/* 8021D0A8 00219EA8  80 0D E1 90 */	lwz r0, __AI_init_flag@sda21(r13)
 /* 8021D0AC 00219EAC  2C 00 00 01 */	cmpwi r0, 1
 /* 8021D0B0 00219EB0  41 82 01 34 */	beq lbl_8021D1E4
-/* 8021D0B4 00219EB4  80 6D B3 E0 */	lwz r3, __AIVersion-_SDA_BASE_(r13)
+/* 8021D0B4 00219EB4  80 6D B3 E0 */	lwz r3, __AIVersion@sda21(r13)
 /* 8021D0B8 00219EB8  48 01 47 11 */	bl OSRegisterVersion
 /* 8021D0BC 00219EBC  3C 60 80 00 */	lis r3, 0x800000F8@ha
 /* 8021D0C0 00219EC0  80 03 00 F8 */	lwz r0, 0x800000F8@l(r3)
@@ -9978,25 +9978,25 @@ AIInit:
 /* 8021D114 00219F14  7C 6A 18 16 */	mulhwu r3, r10, r3
 /* 8021D118 00219F18  55 08 BA 7E */	srwi r8, r8, 9
 /* 8021D11C 00219F1C  54 E7 BA 7E */	srwi r7, r7, 9
-/* 8021D120 00219F20  91 0D E1 9C */	stw r8, lbl_803D161C-_SDA_BASE_(r13)
+/* 8021D120 00219F20  91 0D E1 9C */	stw r8, lbl_803D161C@sda21(r13)
 /* 8021D124 00219F24  54 A5 BA 7E */	srwi r5, r5, 9
 /* 8021D128 00219F28  54 84 BA 7E */	srwi r4, r4, 9
-/* 8021D12C 00219F2C  90 ED E1 A4 */	stw r7, lbl_803D1624-_SDA_BASE_(r13)
+/* 8021D12C 00219F2C  90 ED E1 A4 */	stw r7, lbl_803D1624@sda21(r13)
 /* 8021D130 00219F30  3B E0 00 00 */	li r31, 0
 /* 8021D134 00219F34  54 63 BA 7E */	srwi r3, r3, 9
-/* 8021D138 00219F38  90 AD E1 AC */	stw r5, lbl_803D162C-_SDA_BASE_(r13)
+/* 8021D138 00219F38  90 AD E1 AC */	stw r5, lbl_803D162C@sda21(r13)
 /* 8021D13C 00219F3C  3C C0 CC 00 */	lis r6, 0xCC006C00@ha
-/* 8021D140 00219F40  90 6D E1 BC */	stw r3, lbl_803D163C-_SDA_BASE_(r13)
+/* 8021D140 00219F40  90 6D E1 BC */	stw r3, lbl_803D163C@sda21(r13)
 /* 8021D144 00219F44  38 60 00 01 */	li r3, 1
 /* 8021D148 00219F48  80 06 6C 00 */	lwz r0, 0xCC006C00@l(r6)
-/* 8021D14C 00219F4C  90 8D E1 B4 */	stw r4, lbl_803D1634-_SDA_BASE_(r13)
+/* 8021D14C 00219F4C  90 8D E1 B4 */	stw r4, lbl_803D1634@sda21(r13)
 /* 8021D150 00219F50  54 00 06 F2 */	rlwinm r0, r0, 0, 0x1b, 0x19
 /* 8021D154 00219F54  60 00 00 20 */	ori r0, r0, 0x20
-/* 8021D158 00219F58  93 ED E1 98 */	stw r31, bound_32KHz-_SDA_BASE_(r13)
-/* 8021D15C 00219F5C  93 ED E1 A0 */	stw r31, bound_48KHz-_SDA_BASE_(r13)
-/* 8021D160 00219F60  93 ED E1 A8 */	stw r31, min_wait-_SDA_BASE_(r13)
-/* 8021D164 00219F64  93 ED E1 B0 */	stw r31, max_wait-_SDA_BASE_(r13)
-/* 8021D168 00219F68  93 ED E1 B8 */	stw r31, buffer-_SDA_BASE_(r13)
+/* 8021D158 00219F58  93 ED E1 98 */	stw r31, bound_32KHz@sda21(r13)
+/* 8021D15C 00219F5C  93 ED E1 A0 */	stw r31, bound_48KHz@sda21(r13)
+/* 8021D160 00219F60  93 ED E1 A8 */	stw r31, min_wait@sda21(r13)
+/* 8021D164 00219F64  93 ED E1 B0 */	stw r31, max_wait@sda21(r13)
+/* 8021D168 00219F68  93 ED E1 B8 */	stw r31, buffer@sda21(r13)
 /* 8021D16C 00219F6C  80 A6 6C 04 */	lwz r5, 0x6c04(r6)
 /* 8021D170 00219F70  90 06 6C 00 */	stw r0, 0x6c00(r6)
 /* 8021D174 00219F74  54 A0 06 1E */	rlwinm r0, r5, 0, 0x18, 0xf
@@ -10011,11 +10011,11 @@ AIInit:
 /* 8021D198 00219F98  38 60 00 00 */	li r3, 0
 /* 8021D19C 00219F9C  4B FF FC C5 */	bl AISetDSPSampleRate
 /* 8021D1A0 00219FA0  3C 60 80 22 */	lis r3, __AIDHandler@ha
-/* 8021D1A4 00219FA4  93 ED E1 80 */	stw r31, __AIS_Callback-_SDA_BASE_(r13)
+/* 8021D1A4 00219FA4  93 ED E1 80 */	stw r31, __AIS_Callback@sda21(r13)
 /* 8021D1A8 00219FA8  38 83 D2 78 */	addi r4, r3, __AIDHandler@l
-/* 8021D1AC 00219FAC  93 ED E1 84 */	stw r31, __AID_Callback-_SDA_BASE_(r13)
+/* 8021D1AC 00219FAC  93 ED E1 84 */	stw r31, __AID_Callback@sda21(r13)
 /* 8021D1B0 00219FB0  38 60 00 05 */	li r3, 5
-/* 8021D1B4 00219FB4  93 CD E1 88 */	stw r30, __CallbackStack-_SDA_BASE_(r13)
+/* 8021D1B4 00219FB4  93 CD E1 88 */	stw r30, __CallbackStack@sda21(r13)
 /* 8021D1B8 00219FB8  48 01 72 5D */	bl __OSSetInterruptHandler
 /* 8021D1BC 00219FBC  3C 60 04 00 */	lis r3, 0x400
 /* 8021D1C0 00219FC0  48 01 76 59 */	bl __OSUnmaskInterrupts
@@ -10026,7 +10026,7 @@ AIInit:
 /* 8021D1D4 00219FD4  3C 60 00 80 */	lis r3, 0x80
 /* 8021D1D8 00219FD8  48 01 76 41 */	bl __OSUnmaskInterrupts
 /* 8021D1DC 00219FDC  38 00 00 01 */	li r0, 1
-/* 8021D1E0 00219FE0  90 0D E1 90 */	stw r0, __AI_init_flag-_SDA_BASE_(r13)
+/* 8021D1E0 00219FE0  90 0D E1 90 */	stw r0, __AI_init_flag@sda21(r13)
 lbl_8021D1E4:
 /* 8021D1E4 00219FE4  80 01 00 1C */	lwz r0, 0x1c(r1)
 /* 8021D1E8 00219FE8  83 E1 00 14 */	lwz r31, 0x14(r1)
@@ -10051,7 +10051,7 @@ __AISHandler:
 /* 8021D228 0021A028  48 01 5C 75 */	bl OSClearContext
 /* 8021D22C 0021A02C  38 61 00 10 */	addi r3, r1, 0x10
 /* 8021D230 0021A030  48 01 5A A5 */	bl OSSetCurrentContext
-/* 8021D234 0021A034  81 8D E1 80 */	lwz r12, __AIS_Callback-_SDA_BASE_(r13)
+/* 8021D234 0021A034  81 8D E1 80 */	lwz r12, __AIS_Callback@sda21(r13)
 /* 8021D238 0021A038  28 0C 00 00 */	cmplwi r12, 0
 /* 8021D23C 0021A03C  41 82 00 14 */	beq lbl_8021D250
 /* 8021D240 0021A040  38 7F 6C 00 */	addi r3, r31, 0x6c00
@@ -10088,15 +10088,15 @@ __AIDHandler:
 /* 8021D2AC 0021A0AC  48 01 5B F1 */	bl OSClearContext
 /* 8021D2B0 0021A0B0  38 61 00 10 */	addi r3, r1, 0x10
 /* 8021D2B4 0021A0B4  48 01 5A 21 */	bl OSSetCurrentContext
-/* 8021D2B8 0021A0B8  80 6D E1 84 */	lwz r3, __AID_Callback-_SDA_BASE_(r13)
+/* 8021D2B8 0021A0B8  80 6D E1 84 */	lwz r3, __AID_Callback@sda21(r13)
 /* 8021D2BC 0021A0BC  28 03 00 00 */	cmplwi r3, 0
 /* 8021D2C0 0021A0C0  41 82 00 40 */	beq lbl_8021D300
-/* 8021D2C4 0021A0C4  80 0D E1 94 */	lwz r0, __AID_Active-_SDA_BASE_(r13)
+/* 8021D2C4 0021A0C4  80 0D E1 94 */	lwz r0, __AID_Active@sda21(r13)
 /* 8021D2C8 0021A0C8  2C 00 00 00 */	cmpwi r0, 0
 /* 8021D2CC 0021A0CC  40 82 00 34 */	bne lbl_8021D300
-/* 8021D2D0 0021A0D0  80 0D E1 88 */	lwz r0, __CallbackStack-_SDA_BASE_(r13)
+/* 8021D2D0 0021A0D0  80 0D E1 88 */	lwz r0, __CallbackStack@sda21(r13)
 /* 8021D2D4 0021A0D4  38 80 00 01 */	li r4, 1
-/* 8021D2D8 0021A0D8  90 8D E1 94 */	stw r4, __AID_Active-_SDA_BASE_(r13)
+/* 8021D2D8 0021A0D8  90 8D E1 94 */	stw r4, __AID_Active@sda21(r13)
 /* 8021D2DC 0021A0DC  28 00 00 00 */	cmplwi r0, 0
 /* 8021D2E0 0021A0E0  41 82 00 0C */	beq lbl_8021D2EC
 /* 8021D2E4 0021A0E4  48 00 00 41 */	bl __AICallbackStackSwitch
@@ -10107,7 +10107,7 @@ lbl_8021D2EC:
 /* 8021D2F4 0021A0F4  4E 80 00 21 */	blrl 
 lbl_8021D2F8:
 /* 8021D2F8 0021A0F8  38 00 00 00 */	li r0, 0
-/* 8021D2FC 0021A0FC  90 0D E1 94 */	stw r0, __AID_Active-_SDA_BASE_(r13)
+/* 8021D2FC 0021A0FC  90 0D E1 94 */	stw r0, __AID_Active@sda21(r13)
 lbl_8021D300:
 /* 8021D300 0021A100  38 61 00 10 */	addi r3, r1, 0x10
 /* 8021D304 0021A104  48 01 5B 99 */	bl OSClearContext
@@ -10204,15 +10204,15 @@ lbl_8021D434:
 /* 8021D43C 0021A23C  41 82 FF F8 */	beq lbl_8021D434
 /* 8021D440 0021A240  48 01 B1 0D */	bl OSGetTime
 /* 8021D444 0021A244  7D 1A 20 10 */	subfc r8, r26, r4
-/* 8021D448 0021A248  81 8D E1 9C */	lwz r12, lbl_803D161C-_SDA_BASE_(r13)
+/* 8021D448 0021A248  81 8D E1 9C */	lwz r12, lbl_803D161C@sda21(r13)
 /* 8021D44C 0021A24C  80 BF 6C 00 */	lwz r5, 0x6c00(r31)
 /* 8021D450 0021A250  7C FB 19 10 */	subfe r7, r27, r3
-/* 8021D454 0021A254  81 4D E1 BC */	lwz r10, lbl_803D163C-_SDA_BASE_(r13)
+/* 8021D454 0021A254  81 4D E1 BC */	lwz r10, lbl_803D163C@sda21(r13)
 /* 8021D458 0021A258  6C E7 80 00 */	xoris r7, r7, 0x8000
 /* 8021D45C 0021A25C  54 A5 07 FA */	rlwinm r5, r5, 0, 0x1f, 0x1d
-/* 8021D460 0021A260  81 6D E1 98 */	lwz r11, bound_32KHz-_SDA_BASE_(r13)
+/* 8021D460 0021A260  81 6D E1 98 */	lwz r11, bound_32KHz@sda21(r13)
 /* 8021D464 0021A264  7C CA 60 10 */	subfc r6, r10, r12
-/* 8021D468 0021A268  81 2D E1 B8 */	lwz r9, buffer-_SDA_BASE_(r13)
+/* 8021D468 0021A268  81 2D E1 B8 */	lwz r9, buffer@sda21(r13)
 /* 8021D46C 0021A26C  90 BF 6C 00 */	stw r5, 0x6c00(r31)
 /* 8021D470 0021A270  7C 09 59 10 */	subfe r0, r9, r11
 /* 8021D474 0021A274  6C 05 80 00 */	xoris r5, r0, 0x8000
@@ -10225,9 +10225,9 @@ lbl_8021D434:
 /* 8021D490 0021A290  2C 05 00 00 */	cmpwi r5, 0
 /* 8021D494 0021A294  90 1F 6C 00 */	stw r0, 0x6c00(r31)
 /* 8021D498 0021A298  41 82 00 14 */	beq lbl_8021D4AC
-/* 8021D49C 0021A29C  83 AD E1 A8 */	lwz r29, min_wait-_SDA_BASE_(r13)
+/* 8021D49C 0021A29C  83 AD E1 A8 */	lwz r29, min_wait@sda21(r13)
 /* 8021D4A0 0021A2A0  38 00 00 01 */	li r0, 1
-/* 8021D4A4 0021A2A4  83 8D E1 AC */	lwz r28, lbl_803D162C-_SDA_BASE_(r13)
+/* 8021D4A4 0021A2A4  83 8D E1 AC */	lwz r28, lbl_803D162C@sda21(r13)
 /* 8021D4A8 0021A2A8  48 00 00 68 */	b lbl_8021D510
 lbl_8021D4AC:
 /* 8021D4AC 0021A2AC  7C CC 50 14 */	addc r6, r12, r10
@@ -10239,8 +10239,8 @@ lbl_8021D4AC:
 /* 8021D4C4 0021A2C4  7C A5 00 D0 */	neg r5, r5
 /* 8021D4C8 0021A2C8  2C 05 00 00 */	cmpwi r5, 0
 /* 8021D4CC 0021A2CC  40 82 00 40 */	bne lbl_8021D50C
-/* 8021D4D0 0021A2D0  80 AD E1 A4 */	lwz r5, lbl_803D1624-_SDA_BASE_(r13)
-/* 8021D4D4 0021A2D4  80 0D E1 A0 */	lwz r0, bound_48KHz-_SDA_BASE_(r13)
+/* 8021D4D0 0021A2D0  80 AD E1 A4 */	lwz r5, lbl_803D1624@sda21(r13)
+/* 8021D4D4 0021A2D4  80 0D E1 A0 */	lwz r0, bound_48KHz@sda21(r13)
 /* 8021D4D8 0021A2D8  7C CA 28 10 */	subfc r6, r10, r5
 /* 8021D4DC 0021A2DC  7C 09 01 10 */	subfe r0, r9, r0
 /* 8021D4E0 0021A2E0  6C 05 80 00 */	xoris r5, r0, 0x8000
@@ -10250,9 +10250,9 @@ lbl_8021D4AC:
 /* 8021D4F0 0021A2F0  7C A5 00 D0 */	neg r5, r5
 /* 8021D4F4 0021A2F4  2C 05 00 00 */	cmpwi r5, 0
 /* 8021D4F8 0021A2F8  41 82 00 14 */	beq lbl_8021D50C
-/* 8021D4FC 0021A2FC  83 AD E1 B0 */	lwz r29, max_wait-_SDA_BASE_(r13)
+/* 8021D4FC 0021A2FC  83 AD E1 B0 */	lwz r29, max_wait@sda21(r13)
 /* 8021D500 0021A300  38 00 00 01 */	li r0, 1
-/* 8021D504 0021A304  83 8D E1 B4 */	lwz r28, lbl_803D1634-_SDA_BASE_(r13)
+/* 8021D504 0021A304  83 8D E1 B4 */	lwz r28, lbl_803D1634@sda21(r13)
 /* 8021D508 0021A308  48 00 00 08 */	b lbl_8021D510
 lbl_8021D50C:
 /* 8021D50C 0021A30C  38 00 00 00 */	li r0, 0
@@ -11340,8 +11340,8 @@ CARDInit:
 /* 8021E408 0021B208  40 82 00 5C */	bne lbl_8021E464
 lbl_8021E40C:
 /* 8021E40C 0021B20C  48 01 58 A1 */	bl OSGetFontEncode
-/* 8021E410 0021B210  B0 6D E1 C0 */	sth r3, __CARDEncode-_SDA_BASE_(r13)
-/* 8021E414 0021B214  80 6D B3 E8 */	lwz r3, __CARDVersion-_SDA_BASE_(r13)
+/* 8021E410 0021B210  B0 6D E1 C0 */	sth r3, __CARDEncode@sda21(r13)
+/* 8021E414 0021B214  80 6D B3 E8 */	lwz r3, __CARDVersion@sda21(r13)
 /* 8021E418 0021B218  48 01 33 B1 */	bl OSRegisterVersion
 /* 8021E41C 0021B21C  48 00 61 59 */	bl DSPInit
 /* 8021E420 0021B220  48 01 33 D5 */	bl OSInitAlarm
@@ -11373,7 +11373,7 @@ lbl_8021E464:
 
 .global __CARDGetFontEncode
 __CARDGetFontEncode:
-/* 8021E480 0021B280  A0 6D E1 C0 */	lhz r3, __CARDEncode-_SDA_BASE_(r13)
+/* 8021E480 0021B280  A0 6D E1 C0 */	lhz r3, __CARDEncode@sda21(r13)
 /* 8021E484 0021B284  4E 80 00 20 */	blr 
 
 .global __CARDSetDiskID
@@ -11959,14 +11959,14 @@ DummyLen:
 /* 8021EC18 0021BA18  93 A1 00 1C */	stw r29, 0x1c(r1)
 /* 8021EC1C 0021BA1C  3B A0 00 00 */	li r29, 0
 /* 8021EC20 0021BA20  48 01 99 45 */	bl OSGetTick
-/* 8021EC24 0021BA24  90 6D B3 F0 */	stw r3, next-_SDA_BASE_(r13)
+/* 8021EC24 0021BA24  90 6D B3 F0 */	stw r3, next@sda21(r13)
 /* 8021EC28 0021BA28  3C 60 41 C6 */	lis r3, 0x41C64E6D@ha
 /* 8021EC2C 0021BA2C  3B E3 4E 6D */	addi r31, r3, 0x41C64E6D@l
-/* 8021EC30 0021BA30  80 0D B3 F0 */	lwz r0, next-_SDA_BASE_(r13)
+/* 8021EC30 0021BA30  80 0D B3 F0 */	lwz r0, next@sda21(r13)
 /* 8021EC34 0021BA34  7C 60 F9 D6 */	mullw r3, r0, r31
 /* 8021EC38 0021BA38  38 03 30 39 */	addi r0, r3, 0x3039
-/* 8021EC3C 0021BA3C  90 0D B3 F0 */	stw r0, next-_SDA_BASE_(r13)
-/* 8021EC40 0021BA40  80 0D B3 F0 */	lwz r0, next-_SDA_BASE_(r13)
+/* 8021EC3C 0021BA3C  90 0D B3 F0 */	stw r0, next@sda21(r13)
+/* 8021EC40 0021BA40  80 0D B3 F0 */	lwz r0, next@sda21(r13)
 /* 8021EC44 0021BA44  54 03 86 FE */	rlwinm r3, r0, 0x10, 0x1b, 0x1f
 /* 8021EC48 0021BA48  38 63 00 01 */	addi r3, r3, 1
 /* 8021EC4C 0021BA4C  48 00 00 40 */	b lbl_8021EC8C
@@ -11978,13 +11978,13 @@ lbl_8021EC50:
 /* 8021EC60 0021BA60  40 81 00 08 */	ble lbl_8021EC68
 /* 8021EC64 0021BA64  3B C0 00 01 */	li r30, 1
 lbl_8021EC68:
-/* 8021EC68 0021BA68  90 0D B3 F0 */	stw r0, next-_SDA_BASE_(r13)
+/* 8021EC68 0021BA68  90 0D B3 F0 */	stw r0, next@sda21(r13)
 /* 8021EC6C 0021BA6C  3B BD 00 01 */	addi r29, r29, 1
-/* 8021EC70 0021BA70  80 0D B3 F0 */	lwz r0, next-_SDA_BASE_(r13)
+/* 8021EC70 0021BA70  80 0D B3 F0 */	lwz r0, next@sda21(r13)
 /* 8021EC74 0021BA74  7C 60 F9 D6 */	mullw r3, r0, r31
 /* 8021EC78 0021BA78  38 03 30 39 */	addi r0, r3, 0x3039
-/* 8021EC7C 0021BA7C  90 0D B3 F0 */	stw r0, next-_SDA_BASE_(r13)
-/* 8021EC80 0021BA80  80 0D B3 F0 */	lwz r0, next-_SDA_BASE_(r13)
+/* 8021EC7C 0021BA7C  90 0D B3 F0 */	stw r0, next@sda21(r13)
+/* 8021EC80 0021BA80  80 0D B3 F0 */	lwz r0, next@sda21(r13)
 /* 8021EC84 0021BA84  54 03 86 FE */	rlwinm r3, r0, 0x10, 0x1b, 0x1f
 /* 8021EC88 0021BA88  38 63 00 01 */	addi r3, r3, 1
 lbl_8021EC8C:
@@ -12024,16 +12024,16 @@ __CARDUnlock:
 /* 8021ECFC 0021BAFC  3B A3 00 00 */	addi r29, r3, 0
 /* 8021ED00 0021BB00  3A DC 00 20 */	addi r22, r28, 0x20
 /* 8021ED04 0021BB04  48 01 98 61 */	bl OSGetTick
-/* 8021ED08 0021BB08  90 6D B3 F0 */	stw r3, next-_SDA_BASE_(r13)
+/* 8021ED08 0021BB08  90 6D B3 F0 */	stw r3, next@sda21(r13)
 /* 8021ED0C 0021BB0C  3C 60 41 C6 */	lis r3, 0x41C64E6D@ha
 /* 8021ED10 0021BB10  3C A0 7F ED */	lis r5, 0x7FEC8000@ha
-/* 8021ED14 0021BB14  80 8D B3 F0 */	lwz r4, next-_SDA_BASE_(r13)
+/* 8021ED14 0021BB14  80 8D B3 F0 */	lwz r4, next@sda21(r13)
 /* 8021ED18 0021BB18  38 03 4E 6D */	addi r0, r3, 0x41C64E6D@l
 /* 8021ED1C 0021BB1C  3B 25 80 00 */	addi r25, r5, 0x7FEC8000@l
 /* 8021ED20 0021BB20  7C 64 01 D6 */	mullw r3, r4, r0
 /* 8021ED24 0021BB24  38 03 30 39 */	addi r0, r3, 0x3039
-/* 8021ED28 0021BB28  90 0D B3 F0 */	stw r0, next-_SDA_BASE_(r13)
-/* 8021ED2C 0021BB2C  80 0D B3 F0 */	lwz r0, next-_SDA_BASE_(r13)
+/* 8021ED28 0021BB28  90 0D B3 F0 */	stw r0, next@sda21(r13)
+/* 8021ED2C 0021BB2C  80 0D B3 F0 */	lwz r0, next@sda21(r13)
 /* 8021ED30 0021BB30  54 00 84 7E */	rlwinm r0, r0, 0x10, 0x11, 0x1f
 /* 8021ED34 0021BB34  7F 39 03 78 */	or r25, r25, r0
 /* 8021ED38 0021BB38  57 39 00 26 */	rlwinm r25, r25, 0, 0, 0x13
@@ -14801,7 +14801,7 @@ IsCard:
 /* 8022147C 0021E27C  3C 03 80 00 */	addis r0, r3, 0x8000
 /* 80221480 0021E280  28 00 00 04 */	cmplwi r0, 4
 /* 80221484 0021E284  40 82 00 10 */	bne lbl_80221494
-/* 80221488 0021E288  A0 0D B3 F8 */	lhz r0, __CARDVendorID-_SDA_BASE_(r13)
+/* 80221488 0021E288  A0 0D B3 F8 */	lhz r0, __CARDVendorID@sda21(r13)
 /* 8022148C 0021E28C  28 00 FF FF */	cmplwi r0, 0xffff
 /* 80221490 0021E290  40 82 00 0C */	bne lbl_8022149C
 lbl_80221494:
@@ -15183,7 +15183,7 @@ lbl_802219A4:
 /* 802219C8 0021E7C8  7F 83 02 2E */	lhzx r28, r3, r0
 /* 802219CC 0021E7CC  38 60 00 00 */	li r3, 0
 /* 802219D0 0021E7D0  48 01 49 B5 */	bl __OSUnlockSramEx
-/* 802219D4 0021E7D4  A0 0D B3 F8 */	lhz r0, __CARDVendorID-_SDA_BASE_(r13)
+/* 802219D4 0021E7D4  A0 0D B3 F8 */	lhz r0, __CARDVendorID@sda21(r13)
 /* 802219D8 0021E7D8  28 00 FF FF */	cmplwi r0, 0xffff
 /* 802219DC 0021E7DC  41 82 00 0C */	beq lbl_802219E8
 /* 802219E0 0021E7E0  7C 1C 00 40 */	cmplw r28, r0
@@ -16249,7 +16249,7 @@ lbl_802228E0:
 /* 802228E0 0021F6E0  2C 1E FF F6 */	cmpwi r30, -10
 /* 802228E4 0021F6E4  40 82 00 A0 */	bne lbl_80222984
 /* 802228E8 0021F6E8  88 7B 00 34 */	lbz r3, 0x34(r27)
-/* 802228EC 0021F6EC  88 0D B3 FA */	lbz r0, __CARDPermMask-_SDA_BASE_(r13)
+/* 802228EC 0021F6EC  88 0D B3 FA */	lbz r0, __CARDPermMask@sda21(r13)
 /* 802228F0 0021F6F0  7C 60 00 38 */	and r0, r3, r0
 /* 802228F4 0021F6F4  54 1C 06 3E */	clrlwi r28, r0, 0x18
 /* 802228F8 0021F6F8  54 00 06 B5 */	rlwinm. r0, r0, 0, 0x1a, 0x1a
@@ -16310,7 +16310,7 @@ __CARDIsReadable:
 /* 802229BC 0021F7BC  2C 1D FF F6 */	cmpwi r29, -10
 /* 802229C0 0021F7C0  40 82 00 9C */	bne lbl_80222A5C
 /* 802229C4 0021F7C4  88 7B 00 34 */	lbz r3, 0x34(r27)
-/* 802229C8 0021F7C8  88 0D B3 FA */	lbz r0, __CARDPermMask-_SDA_BASE_(r13)
+/* 802229C8 0021F7C8  88 0D B3 FA */	lbz r0, __CARDPermMask@sda21(r13)
 /* 802229CC 0021F7CC  7C 60 00 38 */	and r0, r3, r0
 /* 802229D0 0021F7D0  54 1E 06 3E */	clrlwi r30, r0, 0x18
 /* 802229D4 0021F7D4  54 00 06 B5 */	rlwinm. r0, r0, 0, 0x1a, 0x1a
@@ -18174,7 +18174,7 @@ CARDSetAttributesAsync:
 /* 80224328 00221128  3B 63 00 00 */	addi r27, r3, 0
 /* 8022432C 0022112C  3B 84 00 00 */	addi r28, r4, 0
 /* 80224330 00221130  3B C6 00 00 */	addi r30, r6, 0
-/* 80224334 00221134  88 0D B3 FA */	lbz r0, __CARDPermMask-_SDA_BASE_(r13)
+/* 80224334 00221134  88 0D B3 FA */	lbz r0, __CARDPermMask@sda21(r13)
 /* 80224338 00221138  7F E0 00 79 */	andc. r0, r31, r0
 /* 8022433C 0022113C  41 82 00 0C */	beq lbl_80224348
 /* 80224340 00221140  38 60 FF F6 */	li r3, -10
@@ -18261,12 +18261,12 @@ DBInit:
 /* 8022443C 0022123C  3C 80 80 00 */	lis r4, 0x80000040@ha
 /* 80224440 00221240  38 04 00 40 */	addi r0, r4, 0x80000040@l
 /* 80224444 00221244  3C 60 80 22 */	lis r3, __DBExceptionDestination@ha
-/* 80224448 00221248  90 0D E1 C8 */	stw r0, __DBInterface-_SDA_BASE_(r13)
+/* 80224448 00221248  90 0D E1 C8 */	stw r0, __DBInterface@sda21(r13)
 /* 8022444C 0022124C  38 63 44 AC */	addi r3, r3, __DBExceptionDestination@l
 /* 80224450 00221250  3C 03 80 00 */	addis r0, r3, 0x8000
 /* 80224454 00221254  90 04 00 48 */	stw r0, 0x48(r4)
 /* 80224458 00221258  38 00 00 01 */	li r0, 1
-/* 8022445C 0022125C  90 0D E1 CC */	stw r0, DBVerbose-_SDA_BASE_(r13)
+/* 8022445C 0022125C  90 0D E1 CC */	stw r0, DBVerbose@sda21(r13)
 /* 80224460 00221260  4E 80 00 20 */	blr 
 
 .global __DBExceptionDestinationAux
@@ -18299,7 +18299,7 @@ __DBExceptionDestination:
 
 .global __DBIsExceptionMarked
 __DBIsExceptionMarked:
-/* 802244BC 002212BC  80 8D E1 C8 */	lwz r4, __DBInterface-_SDA_BASE_(r13)
+/* 802244BC 002212BC  80 8D E1 C8 */	lwz r4, __DBInterface@sda21(r13)
 /* 802244C0 002212C0  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 802244C4 002212C4  38 60 00 01 */	li r3, 1
 /* 802244C8 002212C8  80 84 00 04 */	lwz r4, 4(r4)
@@ -18375,10 +18375,10 @@ DSPInit:
 /* 80224594 00221394  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80224598 00221398  38 A5 00 74 */	addi r5, r5, 0x74
 /* 8022459C 0022139C  48 00 02 1D */	bl __DSP_debug_printf
-/* 802245A0 002213A0  80 0D E1 D0 */	lwz r0, __DSP_init_flag-_SDA_BASE_(r13)
+/* 802245A0 002213A0  80 0D E1 D0 */	lwz r0, __DSP_init_flag@sda21(r13)
 /* 802245A4 002213A4  2C 00 00 01 */	cmpwi r0, 1
 /* 802245A8 002213A8  41 82 00 7C */	beq lbl_80224624
-/* 802245AC 002213AC  80 6D B4 00 */	lwz r3, __DSPVersion-_SDA_BASE_(r13)
+/* 802245AC 002213AC  80 6D B4 00 */	lwz r3, __DSPVersion@sda21(r13)
 /* 802245B0 002213B0  48 00 D2 19 */	bl OSRegisterVersion
 /* 802245B4 002213B4  48 00 FE 15 */	bl OSDisableInterrupts
 /* 802245B8 002213B8  3C 80 80 22 */	lis r4, __DSPHandler@ha
@@ -18402,11 +18402,11 @@ DSPInit:
 /* 80224600 00221400  38 7F 00 00 */	addi r3, r31, 0
 /* 80224604 00221404  7C E5 28 38 */	and r5, r7, r5
 /* 80224608 00221408  B0 A6 00 0A */	sth r5, 0xa(r6)
-/* 8022460C 0022140C  90 8D E1 E0 */	stw r4, __DSP_tmp_task-_SDA_BASE_(r13)
-/* 80224610 00221410  90 8D E1 EC */	stw r4, __DSP_curr_task-_SDA_BASE_(r13)
-/* 80224614 00221414  90 8D E1 E4 */	stw r4, __DSP_last_task-_SDA_BASE_(r13)
-/* 80224618 00221418  90 8D E1 E8 */	stw r4, __DSP_first_task-_SDA_BASE_(r13)
-/* 8022461C 0022141C  90 0D E1 D0 */	stw r0, __DSP_init_flag-_SDA_BASE_(r13)
+/* 8022460C 0022140C  90 8D E1 E0 */	stw r4, __DSP_tmp_task@sda21(r13)
+/* 80224610 00221410  90 8D E1 EC */	stw r4, __DSP_curr_task@sda21(r13)
+/* 80224614 00221414  90 8D E1 E4 */	stw r4, __DSP_last_task@sda21(r13)
+/* 80224618 00221418  90 8D E1 E8 */	stw r4, __DSP_first_task@sda21(r13)
+/* 8022461C 0022141C  90 0D E1 D0 */	stw r0, __DSP_init_flag@sda21(r13)
 /* 80224620 00221420  48 00 FD D1 */	bl OSRestoreInterrupts
 lbl_80224624:
 /* 80224624 00221424  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -18417,7 +18417,7 @@ lbl_80224624:
 
 .global DSPCheckInit
 DSPCheckInit:
-/* 80224638 00221438  80 6D E1 D0 */	lwz r3, __DSP_init_flag-_SDA_BASE_(r13)
+/* 80224638 00221438  80 6D E1 D0 */	lwz r3, __DSP_init_flag@sda21(r13)
 /* 8022463C 0022143C  4E 80 00 20 */	blr 
 
 .global DSPAddTask
@@ -18438,7 +18438,7 @@ DSPAddTask:
 /* 80224674 00221474  38 7F 00 00 */	addi r3, r31, 0
 /* 80224678 00221478  90 1E 00 08 */	stw r0, 8(r30)
 /* 8022467C 0022147C  48 00 FD 75 */	bl OSRestoreInterrupts
-/* 80224680 00221480  80 0D E1 E8 */	lwz r0, __DSP_first_task-_SDA_BASE_(r13)
+/* 80224680 00221480  80 0D E1 E8 */	lwz r0, __DSP_first_task@sda21(r13)
 /* 80224684 00221484  7C 1E 00 40 */	cmplw r30, r0
 /* 80224688 00221488  40 82 00 0C */	bne lbl_80224694
 /* 8022468C 0022148C  7F C3 F3 78 */	mr r3, r30
@@ -18480,14 +18480,14 @@ DSPAssertTask:
 /* 80224700 00221500  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 80224704 00221504  7C 7E 1B 78 */	mr r30, r3
 /* 80224708 00221508  48 00 FC C1 */	bl OSDisableInterrupts
-/* 8022470C 0022150C  80 8D E1 EC */	lwz r4, __DSP_curr_task-_SDA_BASE_(r13)
+/* 8022470C 0022150C  80 8D E1 EC */	lwz r4, __DSP_curr_task@sda21(r13)
 /* 80224710 00221510  3B E3 00 00 */	addi r31, r3, 0
 /* 80224714 00221514  7C 04 F0 40 */	cmplw r4, r30
 /* 80224718 00221518  40 82 00 20 */	bne lbl_80224738
 /* 8022471C 0022151C  38 00 00 01 */	li r0, 1
-/* 80224720 00221520  93 CD E1 DC */	stw r30, __DSP_rude_task-_SDA_BASE_(r13)
+/* 80224720 00221520  93 CD E1 DC */	stw r30, __DSP_rude_task@sda21(r13)
 /* 80224724 00221524  7F E3 FB 78 */	mr r3, r31
-/* 80224728 00221528  90 0D E1 D8 */	stw r0, __DSP_rude_task_pending-_SDA_BASE_(r13)
+/* 80224728 00221528  90 0D E1 D8 */	stw r0, __DSP_rude_task_pending@sda21(r13)
 /* 8022472C 0022152C  48 00 FC C5 */	bl OSRestoreInterrupts
 /* 80224730 00221530  7F C3 F3 78 */	mr r3, r30
 /* 80224734 00221534  48 00 00 6C */	b lbl_802247A0
@@ -18497,8 +18497,8 @@ lbl_80224738:
 /* 80224740 00221540  7C 03 00 40 */	cmplw r3, r0
 /* 80224744 00221544  40 80 00 50 */	bge lbl_80224794
 /* 80224748 00221548  38 00 00 01 */	li r0, 1
-/* 8022474C 0022154C  93 CD E1 DC */	stw r30, __DSP_rude_task-_SDA_BASE_(r13)
-/* 80224750 00221550  90 0D E1 D8 */	stw r0, __DSP_rude_task_pending-_SDA_BASE_(r13)
+/* 8022474C 0022154C  93 CD E1 DC */	stw r30, __DSP_rude_task@sda21(r13)
+/* 80224750 00221550  90 0D E1 D8 */	stw r0, __DSP_rude_task_pending@sda21(r13)
 /* 80224754 00221554  80 04 00 00 */	lwz r0, 0(r4)
 /* 80224758 00221558  28 00 00 01 */	cmplwi r0, 1
 /* 8022475C 0022155C  40 82 00 28 */	bne lbl_80224784
@@ -18575,7 +18575,7 @@ lbl_80224848:
 /* 8022484C 0022164C  28 03 00 00 */	cmplwi r3, 0
 /* 80224850 00221650  41 82 FF F8 */	beq lbl_80224848
 /* 80224854 00221654  4B FF FC F5 */	bl DSPReadMailFromDSP
-/* 80224858 00221658  80 AD E1 EC */	lwz r5, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224858 00221658  80 AD E1 EC */	lwz r5, __DSP_curr_task@sda21(r13)
 /* 8022485C 0022165C  80 05 00 08 */	lwz r0, 8(r5)
 /* 80224860 00221660  54 00 07 BD */	rlwinm. r0, r0, 0, 0x1e, 0x1e
 /* 80224864 00221664  41 82 00 18 */	beq lbl_8022487C
@@ -18603,7 +18603,7 @@ lbl_802248A0:
 lbl_802248B4:
 /* 802248B4 002216B4  38 00 00 01 */	li r0, 1
 /* 802248B8 002216B8  90 05 00 00 */	stw r0, 0(r5)
-/* 802248BC 002216BC  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 802248BC 002216BC  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 802248C0 002216C0  81 83 00 28 */	lwz r12, 0x28(r3)
 /* 802248C4 002216C4  28 0C 00 00 */	cmplwi r12, 0
 /* 802248C8 002216C8  41 82 03 40 */	beq lbl_80224C08
@@ -18613,7 +18613,7 @@ lbl_802248B4:
 lbl_802248D8:
 /* 802248D8 002216D8  38 00 00 01 */	li r0, 1
 /* 802248DC 002216DC  90 05 00 00 */	stw r0, 0(r5)
-/* 802248E0 002216E0  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 802248E0 002216E0  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 802248E4 002216E4  81 83 00 2C */	lwz r12, 0x2c(r3)
 /* 802248E8 002216E8  28 0C 00 00 */	cmplwi r12, 0
 /* 802248EC 002216EC  41 82 03 1C */	beq lbl_80224C08
@@ -18621,10 +18621,10 @@ lbl_802248D8:
 /* 802248F4 002216F4  4E 80 00 21 */	blrl 
 /* 802248F8 002216F8  48 00 03 10 */	b lbl_80224C08
 lbl_802248FC:
-/* 802248FC 002216FC  80 0D E1 D8 */	lwz r0, __DSP_rude_task_pending-_SDA_BASE_(r13)
+/* 802248FC 002216FC  80 0D E1 D8 */	lwz r0, __DSP_rude_task_pending@sda21(r13)
 /* 80224900 00221700  2C 00 00 00 */	cmpwi r0, 0
 /* 80224904 00221704  41 82 00 98 */	beq lbl_8022499C
-/* 80224908 00221708  80 0D E1 DC */	lwz r0, __DSP_rude_task-_SDA_BASE_(r13)
+/* 80224908 00221708  80 0D E1 DC */	lwz r0, __DSP_rude_task@sda21(r13)
 /* 8022490C 0022170C  7C 05 00 40 */	cmplw r5, r0
 /* 80224910 00221710  40 82 00 44 */	bne lbl_80224954
 /* 80224914 00221714  3C 60 CD D1 */	lis r3, 0xCDD10003@ha
@@ -18635,9 +18635,9 @@ lbl_80224920:
 /* 80224924 00221724  28 03 00 00 */	cmplwi r3, 0
 /* 80224928 00221728  40 82 FF F8 */	bne lbl_80224920
 /* 8022492C 0022172C  38 00 00 00 */	li r0, 0
-/* 80224930 00221730  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
-/* 80224934 00221734  90 0D E1 DC */	stw r0, __DSP_rude_task-_SDA_BASE_(r13)
-/* 80224938 00221738  90 0D E1 D8 */	stw r0, __DSP_rude_task_pending-_SDA_BASE_(r13)
+/* 80224930 00221730  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
+/* 80224934 00221734  90 0D E1 DC */	stw r0, __DSP_rude_task@sda21(r13)
+/* 80224938 00221738  90 0D E1 D8 */	stw r0, __DSP_rude_task_pending@sda21(r13)
 /* 8022493C 0022173C  81 83 00 2C */	lwz r12, 0x2c(r3)
 /* 80224940 00221740  28 0C 00 00 */	cmplwi r12, 0
 /* 80224944 00221744  41 82 02 C4 */	beq lbl_80224C08
@@ -18652,23 +18652,23 @@ lbl_80224960:
 /* 80224960 00221760  4B FF FB C9 */	bl DSPCheckMailToDSP
 /* 80224964 00221764  28 03 00 00 */	cmplwi r3, 0
 /* 80224968 00221768  40 82 FF F8 */	bne lbl_80224960
-/* 8022496C 0022176C  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
-/* 80224970 00221770  80 8D E1 DC */	lwz r4, __DSP_rude_task-_SDA_BASE_(r13)
+/* 8022496C 0022176C  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
+/* 80224970 00221770  80 8D E1 DC */	lwz r4, __DSP_rude_task@sda21(r13)
 /* 80224974 00221774  48 00 02 B9 */	bl __DSP_exec_task
-/* 80224978 00221778  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224978 00221778  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 8022497C 0022177C  38 80 00 02 */	li r4, 2
 /* 80224980 00221780  38 00 00 00 */	li r0, 0
 /* 80224984 00221784  90 83 00 00 */	stw r4, 0(r3)
-/* 80224988 00221788  80 6D E1 DC */	lwz r3, __DSP_rude_task-_SDA_BASE_(r13)
-/* 8022498C 0022178C  90 0D E1 D8 */	stw r0, __DSP_rude_task_pending-_SDA_BASE_(r13)
-/* 80224990 00221790  90 6D E1 EC */	stw r3, __DSP_curr_task-_SDA_BASE_(r13)
-/* 80224994 00221794  90 0D E1 DC */	stw r0, __DSP_rude_task-_SDA_BASE_(r13)
+/* 80224988 00221788  80 6D E1 DC */	lwz r3, __DSP_rude_task@sda21(r13)
+/* 8022498C 0022178C  90 0D E1 D8 */	stw r0, __DSP_rude_task_pending@sda21(r13)
+/* 80224990 00221790  90 6D E1 EC */	stw r3, __DSP_curr_task@sda21(r13)
+/* 80224994 00221794  90 0D E1 DC */	stw r0, __DSP_rude_task@sda21(r13)
 /* 80224998 00221798  48 00 02 70 */	b lbl_80224C08
 lbl_8022499C:
 /* 8022499C 0022179C  80 05 00 38 */	lwz r0, 0x38(r5)
 /* 802249A0 002217A0  28 00 00 00 */	cmplwi r0, 0
 /* 802249A4 002217A4  40 82 00 80 */	bne lbl_80224A24
-/* 802249A8 002217A8  80 0D E1 E8 */	lwz r0, __DSP_first_task-_SDA_BASE_(r13)
+/* 802249A8 002217A8  80 0D E1 E8 */	lwz r0, __DSP_first_task@sda21(r13)
 /* 802249AC 002217AC  7C 05 00 40 */	cmplw r5, r0
 /* 802249B0 002217B0  40 82 00 38 */	bne lbl_802249E8
 /* 802249B4 002217B4  3C 60 CD D1 */	lis r3, 0xCDD10003@ha
@@ -18678,7 +18678,7 @@ lbl_802249C0:
 /* 802249C0 002217C0  4B FF FB 69 */	bl DSPCheckMailToDSP
 /* 802249C4 002217C4  28 03 00 00 */	cmplwi r3, 0
 /* 802249C8 002217C8  40 82 FF F8 */	bne lbl_802249C0
-/* 802249CC 002217CC  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 802249CC 002217CC  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 802249D0 002217D0  81 83 00 2C */	lwz r12, 0x2c(r3)
 /* 802249D4 002217D4  28 0C 00 00 */	cmplwi r12, 0
 /* 802249D8 002217D8  41 82 02 30 */	beq lbl_80224C08
@@ -18693,14 +18693,14 @@ lbl_802249F4:
 /* 802249F4 002217F4  4B FF FB 35 */	bl DSPCheckMailToDSP
 /* 802249F8 002217F8  28 03 00 00 */	cmplwi r3, 0
 /* 802249FC 002217FC  40 82 FF F8 */	bne lbl_802249F4
-/* 80224A00 00221800  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
-/* 80224A04 00221804  80 8D E1 E8 */	lwz r4, __DSP_first_task-_SDA_BASE_(r13)
+/* 80224A00 00221800  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
+/* 80224A04 00221804  80 8D E1 E8 */	lwz r4, __DSP_first_task@sda21(r13)
 /* 80224A08 00221808  48 00 02 25 */	bl __DSP_exec_task
-/* 80224A0C 0022180C  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224A0C 0022180C  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 80224A10 00221810  38 00 00 02 */	li r0, 2
 /* 80224A14 00221814  90 03 00 00 */	stw r0, 0(r3)
-/* 80224A18 00221818  80 0D E1 E8 */	lwz r0, __DSP_first_task-_SDA_BASE_(r13)
-/* 80224A1C 0022181C  90 0D E1 EC */	stw r0, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224A18 00221818  80 0D E1 E8 */	lwz r0, __DSP_first_task@sda21(r13)
+/* 80224A1C 0022181C  90 0D E1 EC */	stw r0, __DSP_curr_task@sda21(r13)
 /* 80224A20 00221820  48 00 01 E8 */	b lbl_80224C08
 lbl_80224A24:
 /* 80224A24 00221824  3C 60 CD D1 */	lis r3, 0xCDD10001@ha
@@ -18710,18 +18710,18 @@ lbl_80224A30:
 /* 80224A30 00221830  4B FF FA F9 */	bl DSPCheckMailToDSP
 /* 80224A34 00221834  28 03 00 00 */	cmplwi r3, 0
 /* 80224A38 00221838  40 82 FF F8 */	bne lbl_80224A30
-/* 80224A3C 0022183C  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224A3C 0022183C  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 80224A40 00221840  80 83 00 38 */	lwz r4, 0x38(r3)
 /* 80224A44 00221844  48 00 01 E9 */	bl __DSP_exec_task
-/* 80224A48 00221848  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224A48 00221848  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 80224A4C 0022184C  38 00 00 02 */	li r0, 2
 /* 80224A50 00221850  90 03 00 00 */	stw r0, 0(r3)
-/* 80224A54 00221854  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224A54 00221854  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 80224A58 00221858  80 03 00 38 */	lwz r0, 0x38(r3)
-/* 80224A5C 0022185C  90 0D E1 EC */	stw r0, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224A5C 0022185C  90 0D E1 EC */	stw r0, __DSP_curr_task@sda21(r13)
 /* 80224A60 00221860  48 00 01 A8 */	b lbl_80224C08
 lbl_80224A64:
-/* 80224A64 00221864  80 0D E1 D8 */	lwz r0, __DSP_rude_task_pending-_SDA_BASE_(r13)
+/* 80224A64 00221864  80 0D E1 D8 */	lwz r0, __DSP_rude_task_pending@sda21(r13)
 /* 80224A68 00221868  2C 00 00 00 */	cmpwi r0, 0
 /* 80224A6C 0022186C  41 82 00 60 */	beq lbl_80224ACC
 /* 80224A70 00221870  81 85 00 30 */	lwz r12, 0x30(r5)
@@ -18739,21 +18739,21 @@ lbl_80224A94:
 /* 80224A98 00221898  28 03 00 00 */	cmplwi r3, 0
 /* 80224A9C 0022189C  40 82 FF F8 */	bne lbl_80224A94
 /* 80224AA0 002218A0  38 60 00 00 */	li r3, 0
-/* 80224AA4 002218A4  80 8D E1 DC */	lwz r4, __DSP_rude_task-_SDA_BASE_(r13)
+/* 80224AA4 002218A4  80 8D E1 DC */	lwz r4, __DSP_rude_task@sda21(r13)
 /* 80224AA8 002218A8  48 00 01 85 */	bl __DSP_exec_task
-/* 80224AAC 002218AC  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224AAC 002218AC  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 80224AB0 002218B0  48 00 05 49 */	bl __DSP_remove_task
-/* 80224AB4 002218B4  80 6D E1 DC */	lwz r3, __DSP_rude_task-_SDA_BASE_(r13)
+/* 80224AB4 002218B4  80 6D E1 DC */	lwz r3, __DSP_rude_task@sda21(r13)
 /* 80224AB8 002218B8  38 00 00 00 */	li r0, 0
-/* 80224ABC 002218BC  90 0D E1 D8 */	stw r0, __DSP_rude_task_pending-_SDA_BASE_(r13)
-/* 80224AC0 002218C0  90 6D E1 EC */	stw r3, __DSP_curr_task-_SDA_BASE_(r13)
-/* 80224AC4 002218C4  90 0D E1 DC */	stw r0, __DSP_rude_task-_SDA_BASE_(r13)
+/* 80224ABC 002218BC  90 0D E1 D8 */	stw r0, __DSP_rude_task_pending@sda21(r13)
+/* 80224AC0 002218C0  90 6D E1 EC */	stw r3, __DSP_curr_task@sda21(r13)
+/* 80224AC4 002218C4  90 0D E1 DC */	stw r0, __DSP_rude_task@sda21(r13)
 /* 80224AC8 002218C8  48 00 01 40 */	b lbl_80224C08
 lbl_80224ACC:
 /* 80224ACC 002218CC  80 05 00 38 */	lwz r0, 0x38(r5)
 /* 80224AD0 002218D0  28 00 00 00 */	cmplwi r0, 0
 /* 80224AD4 002218D4  40 82 00 B4 */	bne lbl_80224B88
-/* 80224AD8 002218D8  80 0D E1 E8 */	lwz r0, __DSP_first_task-_SDA_BASE_(r13)
+/* 80224AD8 002218D8  80 0D E1 E8 */	lwz r0, __DSP_first_task@sda21(r13)
 /* 80224ADC 002218DC  7C 05 00 40 */	cmplw r5, r0
 /* 80224AE0 002218E0  40 82 00 4C */	bne lbl_80224B2C
 /* 80224AE4 002218E4  81 85 00 30 */	lwz r12, 0x30(r5)
@@ -18770,10 +18770,10 @@ lbl_80224B08:
 /* 80224B08 00221908  4B FF FA 21 */	bl DSPCheckMailToDSP
 /* 80224B0C 0022190C  28 03 00 00 */	cmplwi r3, 0
 /* 80224B10 00221910  40 82 FF F8 */	bne lbl_80224B08
-/* 80224B14 00221914  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224B14 00221914  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 80224B18 00221918  38 00 00 03 */	li r0, 3
 /* 80224B1C 0022191C  90 03 00 00 */	stw r0, 0(r3)
-/* 80224B20 00221920  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224B20 00221920  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 80224B24 00221924  48 00 04 D5 */	bl __DSP_remove_task
 /* 80224B28 00221928  48 00 00 E0 */	b lbl_80224C08
 lbl_80224B2C:
@@ -18791,15 +18791,15 @@ lbl_80224B50:
 /* 80224B50 00221950  4B FF F9 D9 */	bl DSPCheckMailToDSP
 /* 80224B54 00221954  28 03 00 00 */	cmplwi r3, 0
 /* 80224B58 00221958  40 82 FF F8 */	bne lbl_80224B50
-/* 80224B5C 0022195C  80 8D E1 EC */	lwz r4, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224B5C 0022195C  80 8D E1 EC */	lwz r4, __DSP_curr_task@sda21(r13)
 /* 80224B60 00221960  38 00 00 03 */	li r0, 3
 /* 80224B64 00221964  38 60 00 00 */	li r3, 0
 /* 80224B68 00221968  90 04 00 00 */	stw r0, 0(r4)
-/* 80224B6C 0022196C  80 8D E1 E8 */	lwz r4, __DSP_first_task-_SDA_BASE_(r13)
+/* 80224B6C 0022196C  80 8D E1 E8 */	lwz r4, __DSP_first_task@sda21(r13)
 /* 80224B70 00221970  48 00 00 BD */	bl __DSP_exec_task
-/* 80224B74 00221974  80 0D E1 E8 */	lwz r0, __DSP_first_task-_SDA_BASE_(r13)
-/* 80224B78 00221978  80 6D E1 E4 */	lwz r3, __DSP_last_task-_SDA_BASE_(r13)
-/* 80224B7C 0022197C  90 0D E1 EC */	stw r0, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224B74 00221974  80 0D E1 E8 */	lwz r0, __DSP_first_task@sda21(r13)
+/* 80224B78 00221978  80 6D E1 E4 */	lwz r3, __DSP_last_task@sda21(r13)
+/* 80224B7C 0022197C  90 0D E1 EC */	stw r0, __DSP_curr_task@sda21(r13)
 /* 80224B80 00221980  48 00 04 79 */	bl __DSP_remove_task
 /* 80224B84 00221984  48 00 00 84 */	b lbl_80224C08
 lbl_80224B88:
@@ -18817,17 +18817,17 @@ lbl_80224BAC:
 /* 80224BAC 002219AC  4B FF F9 7D */	bl DSPCheckMailToDSP
 /* 80224BB0 002219B0  28 03 00 00 */	cmplwi r3, 0
 /* 80224BB4 002219B4  40 82 FF F8 */	bne lbl_80224BAC
-/* 80224BB8 002219B8  80 8D E1 EC */	lwz r4, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224BB8 002219B8  80 8D E1 EC */	lwz r4, __DSP_curr_task@sda21(r13)
 /* 80224BBC 002219BC  38 00 00 03 */	li r0, 3
 /* 80224BC0 002219C0  38 60 00 00 */	li r3, 0
 /* 80224BC4 002219C4  90 04 00 00 */	stw r0, 0(r4)
-/* 80224BC8 002219C8  80 8D E1 EC */	lwz r4, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224BC8 002219C8  80 8D E1 EC */	lwz r4, __DSP_curr_task@sda21(r13)
 /* 80224BCC 002219CC  80 84 00 38 */	lwz r4, 0x38(r4)
 /* 80224BD0 002219D0  48 00 00 5D */	bl __DSP_exec_task
-/* 80224BD4 002219D4  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224BD4 002219D4  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 80224BD8 002219D8  80 03 00 38 */	lwz r0, 0x38(r3)
-/* 80224BDC 002219DC  90 0D E1 EC */	stw r0, __DSP_curr_task-_SDA_BASE_(r13)
-/* 80224BE0 002219E0  80 6D E1 EC */	lwz r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224BDC 002219DC  90 0D E1 EC */	stw r0, __DSP_curr_task@sda21(r13)
+/* 80224BE0 002219E0  80 6D E1 EC */	lwz r3, __DSP_curr_task@sda21(r13)
 /* 80224BE4 002219E4  80 63 00 3C */	lwz r3, 0x3c(r3)
 /* 80224BE8 002219E8  48 00 04 11 */	bl __DSP_remove_task
 /* 80224BEC 002219EC  48 00 00 1C */	b lbl_80224C08
@@ -19092,13 +19092,13 @@ lbl_80224ED4:
 
 .global __DSP_insert_task
 __DSP_insert_task:
-/* 80224F58 00221D58  80 0D E1 E8 */	lwz r0, __DSP_first_task-_SDA_BASE_(r13)
+/* 80224F58 00221D58  80 0D E1 E8 */	lwz r0, __DSP_first_task@sda21(r13)
 /* 80224F5C 00221D5C  28 00 00 00 */	cmplwi r0, 0
 /* 80224F60 00221D60  40 82 00 20 */	bne lbl_80224F80
-/* 80224F64 00221D64  90 6D E1 EC */	stw r3, __DSP_curr_task-_SDA_BASE_(r13)
+/* 80224F64 00221D64  90 6D E1 EC */	stw r3, __DSP_curr_task@sda21(r13)
 /* 80224F68 00221D68  38 00 00 00 */	li r0, 0
-/* 80224F6C 00221D6C  90 6D E1 E4 */	stw r3, __DSP_last_task-_SDA_BASE_(r13)
-/* 80224F70 00221D70  90 6D E1 E8 */	stw r3, __DSP_first_task-_SDA_BASE_(r13)
+/* 80224F6C 00221D6C  90 6D E1 E4 */	stw r3, __DSP_last_task@sda21(r13)
+/* 80224F70 00221D70  90 6D E1 E8 */	stw r3, __DSP_first_task@sda21(r13)
 /* 80224F74 00221D74  90 03 00 3C */	stw r0, 0x3c(r3)
 /* 80224F78 00221D78  90 03 00 38 */	stw r0, 0x38(r3)
 /* 80224F7C 00221D7C  4E 80 00 20 */	blr 
@@ -19117,7 +19117,7 @@ lbl_80224F88:
 /* 80224FA8 00221DA8  80 83 00 3C */	lwz r4, 0x3c(r3)
 /* 80224FAC 00221DAC  28 04 00 00 */	cmplwi r4, 0
 /* 80224FB0 00221DB0  40 82 00 0C */	bne lbl_80224FBC
-/* 80224FB4 00221DB4  90 6D E1 E8 */	stw r3, __DSP_first_task-_SDA_BASE_(r13)
+/* 80224FB4 00221DB4  90 6D E1 E8 */	stw r3, __DSP_first_task@sda21(r13)
 /* 80224FB8 00221DB8  48 00 00 18 */	b lbl_80224FD0
 lbl_80224FBC:
 /* 80224FBC 00221DBC  90 64 00 38 */	stw r3, 0x38(r4)
@@ -19130,13 +19130,13 @@ lbl_80224FC8:
 lbl_80224FD0:
 /* 80224FD0 00221DD0  28 05 00 00 */	cmplwi r5, 0
 /* 80224FD4 00221DD4  4C 82 00 20 */	bnelr 
-/* 80224FD8 00221DD8  80 8D E1 E4 */	lwz r4, __DSP_last_task-_SDA_BASE_(r13)
+/* 80224FD8 00221DD8  80 8D E1 E4 */	lwz r4, __DSP_last_task@sda21(r13)
 /* 80224FDC 00221DDC  38 00 00 00 */	li r0, 0
 /* 80224FE0 00221DE0  90 64 00 38 */	stw r3, 0x38(r4)
 /* 80224FE4 00221DE4  90 03 00 38 */	stw r0, 0x38(r3)
-/* 80224FE8 00221DE8  80 0D E1 E4 */	lwz r0, __DSP_last_task-_SDA_BASE_(r13)
+/* 80224FE8 00221DE8  80 0D E1 E4 */	lwz r0, __DSP_last_task@sda21(r13)
 /* 80224FEC 00221DEC  90 03 00 3C */	stw r0, 0x3c(r3)
-/* 80224FF0 00221DF0  90 6D E1 E4 */	stw r3, __DSP_last_task-_SDA_BASE_(r13)
+/* 80224FF0 00221DF0  90 6D E1 E4 */	stw r3, __DSP_last_task@sda21(r13)
 /* 80224FF4 00221DF4  4E 80 00 20 */	blr 
 
 .global __DSP_remove_task
@@ -19145,35 +19145,35 @@ __DSP_remove_task:
 /* 80224FFC 00221DFC  90 83 00 08 */	stw r4, 8(r3)
 /* 80225000 00221E00  38 00 00 03 */	li r0, 3
 /* 80225004 00221E04  90 03 00 00 */	stw r0, 0(r3)
-/* 80225008 00221E08  80 0D E1 E8 */	lwz r0, __DSP_first_task-_SDA_BASE_(r13)
+/* 80225008 00221E08  80 0D E1 E8 */	lwz r0, __DSP_first_task@sda21(r13)
 /* 8022500C 00221E0C  7C 00 18 40 */	cmplw r0, r3
 /* 80225010 00221E10  40 82 00 30 */	bne lbl_80225040
 /* 80225014 00221E14  80 03 00 38 */	lwz r0, 0x38(r3)
 /* 80225018 00221E18  28 00 00 00 */	cmplwi r0, 0
 /* 8022501C 00221E1C  41 82 00 14 */	beq lbl_80225030
-/* 80225020 00221E20  90 0D E1 E8 */	stw r0, __DSP_first_task-_SDA_BASE_(r13)
+/* 80225020 00221E20  90 0D E1 E8 */	stw r0, __DSP_first_task@sda21(r13)
 /* 80225024 00221E24  80 63 00 38 */	lwz r3, 0x38(r3)
 /* 80225028 00221E28  90 83 00 3C */	stw r4, 0x3c(r3)
 /* 8022502C 00221E2C  4E 80 00 20 */	blr 
 lbl_80225030:
-/* 80225030 00221E30  90 8D E1 EC */	stw r4, __DSP_curr_task-_SDA_BASE_(r13)
-/* 80225034 00221E34  90 8D E1 E4 */	stw r4, __DSP_last_task-_SDA_BASE_(r13)
-/* 80225038 00221E38  90 8D E1 E8 */	stw r4, __DSP_first_task-_SDA_BASE_(r13)
+/* 80225030 00221E30  90 8D E1 EC */	stw r4, __DSP_curr_task@sda21(r13)
+/* 80225034 00221E34  90 8D E1 E4 */	stw r4, __DSP_last_task@sda21(r13)
+/* 80225038 00221E38  90 8D E1 E8 */	stw r4, __DSP_first_task@sda21(r13)
 /* 8022503C 00221E3C  4E 80 00 20 */	blr 
 lbl_80225040:
-/* 80225040 00221E40  80 0D E1 E4 */	lwz r0, __DSP_last_task-_SDA_BASE_(r13)
+/* 80225040 00221E40  80 0D E1 E4 */	lwz r0, __DSP_last_task@sda21(r13)
 /* 80225044 00221E44  7C 00 18 40 */	cmplw r0, r3
 /* 80225048 00221E48  40 82 00 20 */	bne lbl_80225068
 /* 8022504C 00221E4C  80 03 00 3C */	lwz r0, 0x3c(r3)
-/* 80225050 00221E50  90 0D E1 E4 */	stw r0, __DSP_last_task-_SDA_BASE_(r13)
+/* 80225050 00221E50  90 0D E1 E4 */	stw r0, __DSP_last_task@sda21(r13)
 /* 80225054 00221E54  80 63 00 3C */	lwz r3, 0x3c(r3)
 /* 80225058 00221E58  90 83 00 38 */	stw r4, 0x38(r3)
-/* 8022505C 00221E5C  80 0D E1 E8 */	lwz r0, __DSP_first_task-_SDA_BASE_(r13)
-/* 80225060 00221E60  90 0D E1 EC */	stw r0, __DSP_curr_task-_SDA_BASE_(r13)
+/* 8022505C 00221E5C  80 0D E1 E8 */	lwz r0, __DSP_first_task@sda21(r13)
+/* 80225060 00221E60  90 0D E1 EC */	stw r0, __DSP_curr_task@sda21(r13)
 /* 80225064 00221E64  4E 80 00 20 */	blr 
 lbl_80225068:
 /* 80225068 00221E68  80 03 00 38 */	lwz r0, 0x38(r3)
-/* 8022506C 00221E6C  90 0D E1 EC */	stw r0, __DSP_curr_task-_SDA_BASE_(r13)
+/* 8022506C 00221E6C  90 0D E1 EC */	stw r0, __DSP_curr_task@sda21(r13)
 /* 80225070 00221E70  80 03 00 38 */	lwz r0, 0x38(r3)
 /* 80225074 00221E74  80 83 00 3C */	lwz r4, 0x3c(r3)
 /* 80225078 00221E78  90 04 00 38 */	stw r0, 0x38(r4)
@@ -20566,9 +20566,9 @@ lbl_802262F8:
 /* 802263C4 002231C4  48 00 E0 51 */	bl __OSSetInterruptHandler
 /* 802263C8 002231C8  38 60 00 00 */	li r3, 0
 /* 802263CC 002231CC  38 80 00 02 */	li r4, 2
-/* 802263D0 002231D0  38 AD E1 F0 */	addi r5, r13, IDSerialPort1-_SDA_BASE_
+/* 802263D0 002231D0  38 AD E1 F0 */	addi r5, r13, IDSerialPort1@sda21
 /* 802263D4 002231D4  48 00 02 E5 */	bl EXIGetID
-/* 802263D8 002231D8  80 0D E2 A8 */	lwz r0, __OSInIPL-_SDA_BASE_(r13)
+/* 802263D8 002231D8  80 0D E2 A8 */	lwz r0, __OSInIPL@sda21(r13)
 /* 802263DC 002231DC  2C 00 00 00 */	cmpwi r0, 0
 /* 802263E0 002231E0  41 82 00 34 */	beq lbl_80226414
 /* 802263E4 002231E4  3C 80 80 00 */	lis r4, 0x800030C4@ha
@@ -20613,7 +20613,7 @@ lbl_8022644C:
 /* 80226478 00223278  38 80 00 02 */	li r4, 2
 /* 8022647C 0022327C  48 00 07 79 */	bl __OSEnableBarnacle
 lbl_80226480:
-/* 80226480 00223280  80 6D B4 08 */	lwz r3, __EXIVersion-_SDA_BASE_(r13)
+/* 80226480 00223280  80 6D B4 08 */	lwz r3, __EXIVersion@sda21(r13)
 /* 80226484 00223284  48 00 B3 45 */	bl OSRegisterVersion
 /* 80226488 00223288  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8022648C 0022328C  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -20794,7 +20794,7 @@ EXIGetID:
 /* 802266E4 002234E4  40 82 00 24 */	bne lbl_80226708
 /* 802266E8 002234E8  28 1A 00 02 */	cmplwi r26, 2
 /* 802266EC 002234EC  40 82 00 1C */	bne lbl_80226708
-/* 802266F0 002234F0  80 0D E1 F0 */	lwz r0, IDSerialPort1-_SDA_BASE_(r13)
+/* 802266F0 002234F0  80 0D E1 F0 */	lwz r0, IDSerialPort1@sda21(r13)
 /* 802266F4 002234F4  28 00 00 00 */	cmplwi r0, 0
 /* 802266F8 002234F8  41 82 00 10 */	beq lbl_80226708
 /* 802266FC 002234FC  90 1B 00 00 */	stw r0, 0(r27)
@@ -21260,11 +21260,11 @@ lbl_80226D68:
 /* 80226D78 00223B78  2C 03 00 00 */	cmpwi r3, 0
 /* 80226D7C 00223B7C  41 82 00 1C */	beq lbl_80226D98
 /* 80226D80 00223B80  3C 60 A5 FF */	lis r3, 0xA5FF005A@ha
-/* 80226D84 00223B84  93 CD E1 F8 */	stw r30, Chan-_SDA_BASE_(r13)
+/* 80226D84 00223B84  93 CD E1 F8 */	stw r30, Chan@sda21(r13)
 /* 80226D88 00223B88  38 03 00 5A */	addi r0, r3, 0xA5FF005A@l
-/* 80226D8C 00223B8C  93 ED E1 FC */	stw r31, Dev-_SDA_BASE_(r13)
-/* 80226D90 00223B90  90 0D E2 04 */	stw r0, BarnacleEnabled-_SDA_BASE_(r13)
-/* 80226D94 00223B94  90 0D E2 00 */	stw r0, Enabled-_SDA_BASE_(r13)
+/* 80226D8C 00223B8C  93 ED E1 FC */	stw r31, Dev@sda21(r13)
+/* 80226D90 00223B90  90 0D E2 04 */	stw r0, BarnacleEnabled@sda21(r13)
+/* 80226D94 00223B94  90 0D E2 00 */	stw r0, Enabled@sda21(r13)
 lbl_80226D98:
 /* 80226D98 00223B98  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80226D9C 00223B9C  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -21278,7 +21278,7 @@ InitializeUART:
 /* 80226DB0 00223BB0  7C 08 02 A6 */	mflr r0
 /* 80226DB4 00223BB4  90 01 00 04 */	stw r0, 4(r1)
 /* 80226DB8 00223BB8  94 21 FF F8 */	stwu r1, -8(r1)
-/* 80226DBC 00223BBC  80 6D E2 04 */	lwz r3, BarnacleEnabled-_SDA_BASE_(r13)
+/* 80226DBC 00223BBC  80 6D E2 04 */	lwz r3, BarnacleEnabled@sda21(r13)
 /* 80226DC0 00223BC0  3C 03 5A 01 */	addis r0, r3, 0x5a01
 /* 80226DC4 00223BC4  28 00 00 5A */	cmplwi r0, 0x5a
 /* 80226DC8 00223BC8  40 82 00 0C */	bne lbl_80226DD4
@@ -21289,18 +21289,18 @@ lbl_80226DD4:
 /* 80226DD8 00223BD8  54 60 00 C7 */	rlwinm. r0, r3, 0, 3, 3
 /* 80226DDC 00223BDC  40 82 00 14 */	bne lbl_80226DF0
 /* 80226DE0 00223BE0  38 00 00 00 */	li r0, 0
-/* 80226DE4 00223BE4  90 0D E2 00 */	stw r0, Enabled-_SDA_BASE_(r13)
+/* 80226DE4 00223BE4  90 0D E2 00 */	stw r0, Enabled@sda21(r13)
 /* 80226DE8 00223BE8  38 60 00 02 */	li r3, 2
 /* 80226DEC 00223BEC  48 00 00 24 */	b lbl_80226E10
 lbl_80226DF0:
 /* 80226DF0 00223BF0  3C 60 A5 FF */	lis r3, 0xA5FF005A@ha
 /* 80226DF4 00223BF4  38 03 00 5A */	addi r0, r3, 0xA5FF005A@l
 /* 80226DF8 00223BF8  38 60 00 00 */	li r3, 0
-/* 80226DFC 00223BFC  90 0D E2 00 */	stw r0, Enabled-_SDA_BASE_(r13)
+/* 80226DFC 00223BFC  90 0D E2 00 */	stw r0, Enabled@sda21(r13)
 /* 80226E00 00223C00  38 00 00 01 */	li r0, 1
-/* 80226E04 00223C04  90 6D E1 F8 */	stw r3, Chan-_SDA_BASE_(r13)
+/* 80226E04 00223C04  90 6D E1 F8 */	stw r3, Chan@sda21(r13)
 /* 80226E08 00223C08  38 60 00 00 */	li r3, 0
-/* 80226E0C 00223C0C  90 0D E1 FC */	stw r0, Dev-_SDA_BASE_(r13)
+/* 80226E0C 00223C0C  90 0D E1 FC */	stw r0, Dev@sda21(r13)
 lbl_80226E10:
 /* 80226E10 00223C10  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 80226E14 00223C14  38 21 00 08 */	addi r1, r1, 8
@@ -21315,7 +21315,7 @@ WriteUARTN:
 /* 80226E2C 00223C2C  BF 21 00 1C */	stmw r25, 0x1c(r1)
 /* 80226E30 00223C30  3B C3 00 00 */	addi r30, r3, 0
 /* 80226E34 00223C34  3B E4 00 00 */	addi r31, r4, 0
-/* 80226E38 00223C38  80 AD E2 00 */	lwz r5, Enabled-_SDA_BASE_(r13)
+/* 80226E38 00223C38  80 AD E2 00 */	lwz r5, Enabled@sda21(r13)
 /* 80226E3C 00223C3C  3C 05 5A 01 */	addis r0, r5, 0x5a01
 /* 80226E40 00223C40  28 00 00 5A */	cmplwi r0, 0x5a
 /* 80226E44 00223C44  41 82 00 0C */	beq lbl_80226E50
@@ -21324,8 +21324,8 @@ WriteUARTN:
 lbl_80226E50:
 /* 80226E50 00223C50  48 00 D5 79 */	bl OSDisableInterrupts
 /* 80226E54 00223C54  7C 60 1B 78 */	mr r0, r3
-/* 80226E58 00223C58  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
-/* 80226E5C 00223C5C  80 8D E1 FC */	lwz r4, Dev-_SDA_BASE_(r13)
+/* 80226E58 00223C58  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
+/* 80226E5C 00223C5C  80 8D E1 FC */	lwz r4, Dev@sda21(r13)
 /* 80226E60 00223C60  7C 1B 03 78 */	mr r27, r0
 /* 80226E64 00223C64  38 A0 00 00 */	li r5, 0
 /* 80226E68 00223C68  4B FF F6 41 */	bl EXILock
@@ -21356,9 +21356,9 @@ lbl_80226EA4:
 /* 80226EBC 00223CBC  3F A0 20 01 */	lis r29, 0x2001
 /* 80226EC0 00223CC0  48 00 01 4C */	b lbl_8022700C
 lbl_80226EC4:
-/* 80226EC4 00223CC4  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80226EC4 00223CC4  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80226EC8 00223CC8  38 A0 00 03 */	li r5, 3
-/* 80226ECC 00223CCC  80 8D E1 FC */	lwz r4, Dev-_SDA_BASE_(r13)
+/* 80226ECC 00223CCC  80 8D E1 FC */	lwz r4, Dev@sda21(r13)
 /* 80226ED0 00223CD0  4B FF EE 19 */	bl EXISelect
 /* 80226ED4 00223CD4  2C 03 00 00 */	cmpwi r3, 0
 /* 80226ED8 00223CD8  40 82 00 0C */	bne lbl_80226EE4
@@ -21367,22 +21367,22 @@ lbl_80226EC4:
 lbl_80226EE4:
 /* 80226EE4 00223CE4  93 A1 00 10 */	stw r29, 0x10(r1)
 /* 80226EE8 00223CE8  38 81 00 10 */	addi r4, r1, 0x10
-/* 80226EEC 00223CEC  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80226EEC 00223CEC  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80226EF0 00223CF0  38 A0 00 04 */	li r5, 4
 /* 80226EF4 00223CF4  38 C0 00 01 */	li r6, 1
 /* 80226EF8 00223CF8  38 E0 00 00 */	li r7, 0
 /* 80226EFC 00223CFC  4B FF E2 85 */	bl EXIImm
-/* 80226F00 00223D00  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80226F00 00223D00  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80226F04 00223D04  4B FF E6 65 */	bl EXISync
-/* 80226F08 00223D08  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80226F08 00223D08  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80226F0C 00223D0C  38 81 00 10 */	addi r4, r1, 0x10
 /* 80226F10 00223D10  38 A0 00 01 */	li r5, 1
 /* 80226F14 00223D14  38 C0 00 00 */	li r6, 0
 /* 80226F18 00223D18  38 E0 00 00 */	li r7, 0
 /* 80226F1C 00223D1C  4B FF E2 65 */	bl EXIImm
-/* 80226F20 00223D20  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80226F20 00223D20  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80226F24 00223D24  4B FF E6 45 */	bl EXISync
-/* 80226F28 00223D28  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80226F28 00223D28  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80226F2C 00223D2C  4B FF EE E9 */	bl EXIDeselect
 /* 80226F30 00223D30  80 01 00 10 */	lwz r0, 0x10(r1)
 /* 80226F34 00223D34  54 00 46 3E */	srwi r0, r0, 0x18
@@ -21399,22 +21399,22 @@ lbl_80226F50:
 /* 80226F58 00223D58  7C 00 F8 40 */	cmplw r0, r31
 /* 80226F5C 00223D5C  41 80 00 B0 */	blt lbl_8022700C
 lbl_80226F60:
-/* 80226F60 00223D60  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80226F60 00223D60  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80226F64 00223D64  38 A0 00 03 */	li r5, 3
-/* 80226F68 00223D68  80 8D E1 FC */	lwz r4, Dev-_SDA_BASE_(r13)
+/* 80226F68 00223D68  80 8D E1 FC */	lwz r4, Dev@sda21(r13)
 /* 80226F6C 00223D6C  4B FF ED 7D */	bl EXISelect
 /* 80226F70 00223D70  2C 03 00 00 */	cmpwi r3, 0
 /* 80226F74 00223D74  40 82 00 0C */	bne lbl_80226F80
 /* 80226F78 00223D78  3B 20 00 03 */	li r25, 3
 /* 80226F7C 00223D7C  48 00 00 98 */	b lbl_80227014
 lbl_80226F80:
-/* 80226F80 00223D80  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80226F80 00223D80  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80226F84 00223D84  38 81 00 14 */	addi r4, r1, 0x14
 /* 80226F88 00223D88  38 A0 00 04 */	li r5, 4
 /* 80226F8C 00223D8C  38 C0 00 01 */	li r6, 1
 /* 80226F90 00223D90  38 E0 00 00 */	li r7, 0
 /* 80226F94 00223D94  4B FF E1 ED */	bl EXIImm
-/* 80226F98 00223D98  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80226F98 00223D98  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80226F9C 00223D9C  4B FF E5 CD */	bl EXISync
 /* 80226FA0 00223DA0  48 00 00 54 */	b lbl_80226FF4
 lbl_80226FA4:
@@ -21430,13 +21430,13 @@ lbl_80226FB4:
 lbl_80226FC4:
 /* 80226FC4 00223DC4  3B 80 00 04 */	li r28, 4
 lbl_80226FC8:
-/* 80226FC8 00223DC8  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80226FC8 00223DC8  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80226FCC 00223DCC  7F 85 E3 78 */	mr r5, r28
 /* 80226FD0 00223DD0  38 9E 00 00 */	addi r4, r30, 0
 /* 80226FD4 00223DD4  38 C0 00 01 */	li r6, 1
 /* 80226FD8 00223DD8  38 E0 00 00 */	li r7, 0
 /* 80226FDC 00223DDC  4B FF E1 A5 */	bl EXIImm
-/* 80226FE0 00223DE0  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80226FE0 00223DE0  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80226FE4 00223DE4  7F DE E2 14 */	add r30, r30, r28
 /* 80226FE8 00223DE8  7F FC F8 50 */	subf r31, r28, r31
 /* 80226FEC 00223DEC  7F 5C D0 50 */	subf r26, r28, r26
@@ -21447,13 +21447,13 @@ lbl_80226FF4:
 /* 80226FFC 00223DFC  28 1F 00 00 */	cmplwi r31, 0
 /* 80227000 00223E00  40 82 FF A4 */	bne lbl_80226FA4
 lbl_80227004:
-/* 80227004 00223E04  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80227004 00223E04  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80227008 00223E08  4B FF EE 0D */	bl EXIDeselect
 lbl_8022700C:
 /* 8022700C 00223E0C  28 1F 00 00 */	cmplwi r31, 0
 /* 80227010 00223E10  40 82 FE B4 */	bne lbl_80226EC4
 lbl_80227014:
-/* 80227014 00223E14  80 6D E1 F8 */	lwz r3, Chan-_SDA_BASE_(r13)
+/* 80227014 00223E14  80 6D E1 F8 */	lwz r3, Chan@sda21(r13)
 /* 80227018 00223E18  4B FF F5 85 */	bl EXIUnlock
 /* 8022701C 00223E1C  7F 63 DB 78 */	mr r3, r27
 /* 80227020 00223E20  48 00 D3 D1 */	bl OSRestoreInterrupts
@@ -21499,19 +21499,19 @@ lbl_802270A4:
 /* 802270A8 00223EA8  28 00 00 00 */	cmplwi r0, 0
 /* 802270AC 00223EAC  41 82 00 18 */	beq lbl_802270C4
 /* 802270B0 00223EB0  54 83 20 36 */	slwi r3, r4, 4
-/* 802270B4 00223EB4  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 802270B4 00223EB4  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 802270B8 00223EB8  38 63 03 08 */	addi r3, r3, 0x308
 /* 802270BC 00223EBC  7C 60 1A 14 */	add r3, r0, r3
 /* 802270C0 00223EC0  48 00 00 5C */	b lbl_8022711C
 lbl_802270C4:
 /* 802270C4 00223EC4  54 83 20 36 */	slwi r3, r4, 4
-/* 802270C8 00223EC8  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 802270C8 00223EC8  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 802270CC 00223ECC  38 63 02 88 */	addi r3, r3, 0x288
 /* 802270D0 00223ED0  7C 60 1A 14 */	add r3, r0, r3
 /* 802270D4 00223ED4  48 00 00 48 */	b lbl_8022711C
 lbl_802270D8:
 /* 802270D8 00223ED8  54 83 20 36 */	slwi r3, r4, 4
-/* 802270DC 00223EDC  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 802270DC 00223EDC  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 802270E0 00223EE0  38 63 02 08 */	addi r3, r3, 0x208
 /* 802270E4 00223EE4  7C 60 1A 14 */	add r3, r0, r3
 /* 802270E8 00223EE8  48 00 00 34 */	b lbl_8022711C
@@ -21520,13 +21520,13 @@ lbl_802270EC:
 /* 802270F0 00223EF0  28 00 00 00 */	cmplwi r0, 0
 /* 802270F4 00223EF4  41 82 00 18 */	beq lbl_8022710C
 /* 802270F8 00223EF8  54 83 20 36 */	slwi r3, r4, 4
-/* 802270FC 00223EFC  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 802270FC 00223EFC  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 80227100 00223F00  38 63 02 88 */	addi r3, r3, 0x288
 /* 80227104 00223F04  7C 60 1A 14 */	add r3, r0, r3
 /* 80227108 00223F08  48 00 00 14 */	b lbl_8022711C
 lbl_8022710C:
 /* 8022710C 00223F0C  54 83 20 36 */	slwi r3, r4, 4
-/* 80227110 00223F10  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 80227110 00223F10  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 80227114 00223F14  38 63 02 08 */	addi r3, r3, 0x208
 /* 80227118 00223F18  7C 60 1A 14 */	add r3, r0, r3
 lbl_8022711C:
@@ -21546,7 +21546,7 @@ __GXDefaultTlutRegionCallback:
 /* 80227144 00223F44  48 00 00 14 */	b lbl_80227158
 lbl_80227148:
 /* 80227148 00223F48  54 63 20 36 */	slwi r3, r3, 4
-/* 8022714C 00223F4C  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 8022714C 00223F4C  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 80227150 00223F50  38 63 03 88 */	addi r3, r3, 0x388
 /* 80227154 00223F54  7C 60 1A 14 */	add r3, r0, r3
 lbl_80227158:
@@ -21560,10 +21560,10 @@ __GXShutdown:
 /* 80227168 00223F68  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8022716C 00223F6C  2C 03 00 00 */	cmpwi r3, 0
 /* 80227170 00223F70  40 82 00 FC */	bne lbl_8022726C
-/* 80227174 00223F74  80 0D E2 28 */	lwz r0, calledOnce_esc__7_37-_SDA_BASE_(r13)
+/* 80227174 00223F74  80 0D E2 28 */	lwz r0, calledOnce_esc__7_37@sda21(r13)
 /* 80227178 00223F78  28 00 00 00 */	cmplwi r0, 0
 /* 8022717C 00223F7C  40 82 00 58 */	bne lbl_802271D4
-/* 80227180 00223F80  80 6D E2 14 */	lwz r3, __memReg-_SDA_BASE_(r13)
+/* 80227180 00223F80  80 6D E2 14 */	lwz r3, __memReg@sda21(r13)
 /* 80227184 00223F84  38 C3 00 4E */	addi r6, r3, 0x4e
 /* 80227188 00223F88  A0 86 00 00 */	lhz r4, 0(r6)
 /* 8022718C 00223F8C  38 A3 00 50 */	addi r5, r3, 0x50
@@ -21578,17 +21578,17 @@ lbl_80227198:
 /* 802271A8 00223FA8  40 82 FF F0 */	bne lbl_80227198
 /* 802271AC 00223FAC  54 80 80 1E */	slwi r0, r4, 0x10
 /* 802271B0 00223FB0  7C 00 1B 78 */	or r0, r0, r3
-/* 802271B4 00223FB4  90 0D E2 18 */	stw r0, peCount_esc__7_35-_SDA_BASE_(r13)
+/* 802271B4 00223FB4  90 0D E2 18 */	stw r0, peCount_esc__7_35@sda21(r13)
 /* 802271B8 00223FB8  48 01 13 95 */	bl OSGetTime
-/* 802271BC 00223FBC  90 8D E2 24 */	stw r4, lbl_803D16A4-_SDA_BASE_(r13)
+/* 802271BC 00223FBC  90 8D E2 24 */	stw r4, lbl_803D16A4@sda21(r13)
 /* 802271C0 00223FC0  38 00 00 01 */	li r0, 1
-/* 802271C4 00223FC4  90 6D E2 20 */	stw r3, time_esc__7_36-_SDA_BASE_(r13)
+/* 802271C4 00223FC4  90 6D E2 20 */	stw r3, time_esc__7_36@sda21(r13)
 /* 802271C8 00223FC8  38 60 00 00 */	li r3, 0
-/* 802271CC 00223FCC  90 0D E2 28 */	stw r0, calledOnce_esc__7_37-_SDA_BASE_(r13)
+/* 802271CC 00223FCC  90 0D E2 28 */	stw r0, calledOnce_esc__7_37@sda21(r13)
 /* 802271D0 00223FD0  48 00 01 08 */	b lbl_802272D8
 lbl_802271D4:
 /* 802271D4 00223FD4  48 01 13 79 */	bl OSGetTime
-/* 802271D8 00223FD8  80 AD E2 14 */	lwz r5, __memReg-_SDA_BASE_(r13)
+/* 802271D8 00223FD8  80 AD E2 14 */	lwz r5, __memReg@sda21(r13)
 /* 802271DC 00223FDC  38 C5 00 4E */	addi r6, r5, 0x4e
 /* 802271E0 00223FE0  A0 E6 00 00 */	lhz r7, 0(r6)
 /* 802271E4 00223FE4  38 A5 00 50 */	addi r5, r5, 0x50
@@ -21601,9 +21601,9 @@ lbl_802271F0:
 /* 802271F8 00223FF8  A1 45 00 00 */	lhz r10, 0(r5)
 /* 802271FC 00223FFC  7C 07 00 40 */	cmplw r7, r0
 /* 80227200 00224000  40 82 FF F0 */	bne lbl_802271F0
-/* 80227204 00224004  80 CD E2 24 */	lwz r6, lbl_803D16A4-_SDA_BASE_(r13)
+/* 80227204 00224004  80 CD E2 24 */	lwz r6, lbl_803D16A4@sda21(r13)
 /* 80227208 00224008  38 00 00 00 */	li r0, 0
-/* 8022720C 0022400C  80 AD E2 20 */	lwz r5, time_esc__7_36-_SDA_BASE_(r13)
+/* 8022720C 0022400C  80 AD E2 20 */	lwz r5, time_esc__7_36@sda21(r13)
 /* 80227210 00224010  54 E9 80 1E */	slwi r9, r7, 0x10
 /* 80227214 00224014  7D 06 20 10 */	subfc r8, r6, r4
 /* 80227218 00224018  7C A5 19 10 */	subfe r5, r5, r3
@@ -21620,13 +21620,13 @@ lbl_802271F0:
 /* 80227244 00224044  38 60 00 00 */	li r3, 0
 /* 80227248 00224048  48 00 00 90 */	b lbl_802272D8
 lbl_8022724C:
-/* 8022724C 0022404C  80 0D E2 18 */	lwz r0, peCount_esc__7_35-_SDA_BASE_(r13)
+/* 8022724C 0022404C  80 0D E2 18 */	lwz r0, peCount_esc__7_35@sda21(r13)
 /* 80227250 00224050  7C 05 00 40 */	cmplw r5, r0
 /* 80227254 00224054  41 82 00 80 */	beq lbl_802272D4
-/* 80227258 00224058  90 8D E2 24 */	stw r4, lbl_803D16A4-_SDA_BASE_(r13)
-/* 8022725C 0022405C  90 6D E2 20 */	stw r3, time_esc__7_36-_SDA_BASE_(r13)
+/* 80227258 00224058  90 8D E2 24 */	stw r4, lbl_803D16A4@sda21(r13)
+/* 8022725C 0022405C  90 6D E2 20 */	stw r3, time_esc__7_36@sda21(r13)
 /* 80227260 00224060  38 60 00 00 */	li r3, 0
-/* 80227264 00224064  90 AD E2 18 */	stw r5, peCount_esc__7_35-_SDA_BASE_(r13)
+/* 80227264 00224064  90 AD E2 18 */	stw r5, peCount_esc__7_35@sda21(r13)
 /* 80227268 00224068  48 00 00 70 */	b lbl_802272D8
 lbl_8022726C:
 /* 8022726C 0022406C  38 60 00 00 */	li r3, 0
@@ -21646,13 +21646,13 @@ lbl_8022726C:
 /* 802272A4 002240A4  93 E3 80 00 */	stw r31, -0x8000(r3)
 /* 802272A8 002240A8  93 E3 80 00 */	stw r31, -0x8000(r3)
 /* 802272AC 002240AC  4B FE EB D1 */	bl PPCSync
-/* 802272B0 002240B0  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 802272B0 002240B0  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 802272B4 002240B4  38 80 00 03 */	li r4, 3
 /* 802272B8 002240B8  38 00 00 01 */	li r0, 1
 /* 802272BC 002240BC  B3 E3 00 02 */	sth r31, 2(r3)
-/* 802272C0 002240C0  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 802272C0 002240C0  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 802272C4 002240C4  B0 83 00 04 */	sth r4, 4(r3)
-/* 802272C8 002240C8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 802272C8 002240C8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 802272CC 002240CC  98 03 05 AA */	stb r0, 0x5aa(r3)
 /* 802272D0 002240D0  48 00 27 2D */	bl __GXAbort
 lbl_802272D4:
@@ -21673,10 +21673,10 @@ GXInit:
 /* 802272FC 002240FC  7C 7A 1B 78 */	mr r26, r3
 /* 80227300 00224100  7C 99 23 78 */	mr r25, r4
 /* 80227304 00224104  3C 80 80 3C */	lis r4, FifoObj@ha
-/* 80227308 00224108  80 6D B4 10 */	lwz r3, __GXVersion-_SDA_BASE_(r13)
+/* 80227308 00224108  80 6D B4 10 */	lwz r3, __GXVersion@sda21(r13)
 /* 8022730C 0022410C  3B C4 F7 60 */	addi r30, r4, FifoObj@l
 /* 80227310 00224110  48 00 A4 B9 */	bl OSRegisterVersion
-/* 80227314 00224114  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 80227314 00224114  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 80227318 00224118  38 00 00 00 */	li r0, 0
 /* 8022731C 0022411C  3B 80 00 01 */	li r28, 1
 /* 80227320 00224120  98 05 05 A8 */	stb r0, 0x5a8(r5)
@@ -21689,12 +21689,12 @@ GXInit:
 /* 8022733C 0022413C  48 00 25 D1 */	bl GXSetMisc
 /* 80227340 00224140  3C 80 CC 00 */	lis r4, 0xCC003000@ha
 /* 80227344 00224144  38 A4 30 00 */	addi r5, r4, 0xCC003000@l
-/* 80227348 00224148  90 8D E2 0C */	stw r4, __cpReg-_SDA_BASE_(r13)
+/* 80227348 00224148  90 8D E2 0C */	stw r4, __cpReg@sda21(r13)
 /* 8022734C 0022414C  38 64 10 00 */	addi r3, r4, 0x1000
 /* 80227350 00224150  38 04 40 00 */	addi r0, r4, 0x4000
-/* 80227354 00224154  90 AD E2 08 */	stw r5, __piReg-_SDA_BASE_(r13)
-/* 80227358 00224158  90 6D E2 10 */	stw r3, __peReg-_SDA_BASE_(r13)
-/* 8022735C 0022415C  90 0D E2 14 */	stw r0, __memReg-_SDA_BASE_(r13)
+/* 80227354 00224154  90 AD E2 08 */	stw r5, __piReg@sda21(r13)
+/* 80227358 00224158  90 6D E2 10 */	stw r3, __peReg@sda21(r13)
+/* 8022735C 0022415C  90 0D E2 14 */	stw r0, __memReg@sda21(r13)
 /* 80227360 00224160  48 00 16 D5 */	bl __GXFifoInit
 /* 80227364 00224164  7F C3 F3 78 */	mr r3, r30
 /* 80227368 00224168  7F 44 D3 78 */	mr r4, r26
@@ -21704,13 +21704,13 @@ GXInit:
 /* 80227378 00224178  48 00 12 61 */	bl GXSetCPUFifo
 /* 8022737C 0022417C  7F C3 F3 78 */	mr r3, r30
 /* 80227380 00224180  48 00 13 81 */	bl GXSetGPFifo
-/* 80227384 00224184  80 0D E2 2C */	lwz r0, resetFuncRegistered_esc__7_70-_SDA_BASE_(r13)
+/* 80227384 00224184  80 0D E2 2C */	lwz r0, resetFuncRegistered_esc__7_70@sda21(r13)
 /* 80227388 00224188  28 00 00 00 */	cmplwi r0, 0
 /* 8022738C 0022418C  40 82 00 14 */	bne lbl_802273A0
 /* 80227390 00224190  3C 60 80 32 */	lis r3, GXResetFuncInfo@ha
 /* 80227394 00224194  38 63 7C 2C */	addi r3, r3, GXResetFuncInfo@l
 /* 80227398 00224198  48 00 E0 F5 */	bl OSRegisterResetFunction
-/* 8022739C 0022419C  93 8D E2 2C */	stw r28, resetFuncRegistered_esc__7_70-_SDA_BASE_(r13)
+/* 8022739C 0022419C  93 8D E2 2C */	stw r28, resetFuncRegistered_esc__7_70@sda21(r13)
 lbl_802273A0:
 /* 802273A0 002241A0  48 00 2B E1 */	bl __GXPEInit
 /* 802273A4 002241A4  4B FE EB 6D */	bl PPCMfhid2
@@ -21720,7 +21720,7 @@ lbl_802273A0:
 /* 802273B4 002241B4  4B FE EB 6D */	bl PPCMtwpar
 /* 802273B8 002241B8  67 83 40 00 */	oris r3, r28, 0x4000
 /* 802273BC 002241BC  4B FE EB 5D */	bl PPCMthid2
-/* 802273C0 002241C0  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 802273C0 002241C0  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 802273C4 002241C4  3B A0 00 00 */	li r29, 0
 /* 802273C8 002241C8  38 60 00 00 */	li r3, 0
 /* 802273CC 002241CC  93 A6 02 04 */	stw r29, 0x204(r6)
@@ -21749,7 +21749,7 @@ lbl_80227418:
 lbl_80227424:
 /* 80227424 00224224  48 00 00 04 */	b lbl_80227428
 lbl_80227428:
-/* 80227428 00224228  81 82 DA 58 */	lwz r12, __GXData-_SDA2_BASE_(r2)
+/* 80227428 00224228  81 82 DA 58 */	lwz r12, __GXData@sda21(r2)
 /* 8022742C 0022422C  54 7A F8 7E */	srwi r26, r3, 1
 /* 80227430 00224230  39 7D 01 30 */	addi r11, r29, 0x130
 /* 80227434 00224234  3B 80 00 00 */	li r28, 0
@@ -21828,7 +21828,7 @@ lbl_80227548:
 lbl_80227554:
 /* 80227554 00224354  48 00 00 04 */	b lbl_80227558
 lbl_80227558:
-/* 80227558 00224358  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 80227558 00224358  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022755C 0022435C  38 85 00 B8 */	addi r4, r5, 0xb8
 /* 80227560 00224360  38 65 00 D8 */	addi r3, r5, 0xd8
 /* 80227564 00224364  7F 88 21 2E */	stwx r28, r8, r4
@@ -21913,9 +21913,9 @@ lbl_80227558:
 /* 802276A0 002244A0  80 08 01 FC */	lwz r0, 0x1fc(r8)
 /* 802276A4 002244A4  53 A0 3D F0 */	rlwimi r0, r29, 7, 0x17, 0x18
 /* 802276A8 002244A8  90 08 01 FC */	stw r0, 0x1fc(r8)
-/* 802276AC 002244AC  C0 02 DA 5C */	lfs f0, _esc__2_289_1-_SDA2_BASE_(r2)
+/* 802276AC 002244AC  C0 02 DA 5C */	lfs f0, _esc__2_289_1@sda21(r2)
 /* 802276B0 002244B0  D0 08 05 10 */	stfs f0, 0x510(r8)
-/* 802276B4 002244B4  C0 02 DA 60 */	lfs f0, _esc__2_290_1-_SDA2_BASE_(r2)
+/* 802276B4 002244B4  C0 02 DA 60 */	lfs f0, _esc__2_290_1@sda21(r2)
 /* 802276B8 002244B8  D0 08 05 0C */	stfs f0, 0x50c(r8)
 /* 802276BC 002244BC  93 A8 05 AC */	stw r29, 0x5ac(r8)
 /* 802276C0 002244C0  9B A8 05 AB */	stb r29, 0x5ab(r8)
@@ -21950,7 +21950,7 @@ lbl_8022771C:
 lbl_80227730:
 /* 80227730 00224530  48 00 00 04 */	b lbl_80227734
 lbl_80227734:
-/* 80227734 00224534  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 80227734 00224534  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 80227738 00224538  38 E9 00 1C */	addi r7, r9, 0x1c
 /* 8022773C 0022453C  38 A9 00 3C */	addi r5, r9, 0x3c
 /* 80227740 00224540  7C 08 38 2E */	lwzx r0, r8, r7
@@ -22056,7 +22056,7 @@ lbl_802278C8:
 lbl_802278CC:
 /* 802278CC 002246CC  48 00 00 04 */	b lbl_802278D0
 lbl_802278D0:
-/* 802278D0 002246D0  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 802278D0 002246D0  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 802278D4 002246D4  38 7C 02 08 */	addi r3, r28, 0x208
 /* 802278D8 002246D8  80 BB 00 00 */	lwz r5, 0(r27)
 /* 802278DC 002246DC  38 80 00 00 */	li r4, 0
@@ -22065,7 +22065,7 @@ lbl_802278D0:
 /* 802278E8 002246E8  38 C0 00 00 */	li r6, 0
 /* 802278EC 002246EC  39 00 00 00 */	li r8, 0
 /* 802278F0 002246F0  48 00 44 29 */	bl GXInitTexCacheRegion
-/* 802278F4 002246F4  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 802278F4 002246F4  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 802278F8 002246F8  38 7C 02 88 */	addi r3, r28, 0x288
 /* 802278FC 002246FC  80 BB 00 40 */	lwz r5, 0x40(r27)
 /* 80227900 00224700  38 80 00 00 */	li r4, 0
@@ -22074,7 +22074,7 @@ lbl_802278D0:
 /* 8022790C 0022470C  38 C0 00 00 */	li r6, 0
 /* 80227910 00224710  39 00 00 00 */	li r8, 0
 /* 80227914 00224714  48 00 44 05 */	bl GXInitTexCacheRegion
-/* 80227918 00224718  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 80227918 00224718  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 8022791C 0022471C  38 7C 03 08 */	addi r3, r28, 0x308
 /* 80227920 00224720  80 BB 00 80 */	lwz r5, 0x80(r27)
 /* 80227924 00224724  38 80 00 01 */	li r4, 1
@@ -22098,7 +22098,7 @@ lbl_80227964:
 lbl_80227968:
 /* 80227968 00224768  48 00 00 04 */	b lbl_8022796C
 lbl_8022796C:
-/* 8022796C 0022476C  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 8022796C 0022476C  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 80227970 00224770  38 7C 03 88 */	addi r3, r28, 0x388
 /* 80227974 00224774  7F 64 DB 78 */	mr r4, r27
 /* 80227978 00224778  7C 60 1A 14 */	add r3, r0, r3
@@ -22119,7 +22119,7 @@ lbl_802279AC:
 /* 802279AC 002247AC  48 00 00 04 */	b lbl_802279B0
 lbl_802279B0:
 /* 802279B0 002247B0  38 19 00 10 */	addi r0, r25, 0x10
-/* 802279B4 002247B4  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 802279B4 002247B4  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 802279B8 002247B8  54 03 20 36 */	slwi r3, r0, 4
 /* 802279BC 002247BC  38 63 03 88 */	addi r3, r3, 0x388
 /* 802279C0 002247C0  7F 64 DB 78 */	mr r4, r27
@@ -22131,13 +22131,13 @@ lbl_802279B0:
 /* 802279D8 002247D8  3B 39 00 01 */	addi r25, r25, 1
 /* 802279DC 002247DC  28 19 00 04 */	cmplwi r25, 4
 /* 802279E0 002247E0  41 80 FF D0 */	blt lbl_802279B0
-/* 802279E4 002247E4  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 802279E4 002247E4  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 802279E8 002247E8  39 80 00 00 */	li r12, 0
 /* 802279EC 002247EC  38 00 00 08 */	li r0, 8
 /* 802279F0 002247F0  B1 83 00 06 */	sth r12, 6(r3)
 /* 802279F4 002247F4  3D 40 CC 01 */	lis r10, 0xCC008000@ha
 /* 802279F8 002247F8  39 20 00 20 */	li r9, 0x20
-/* 802279FC 002247FC  81 62 DA 58 */	lwz r11, __GXData-_SDA2_BASE_(r2)
+/* 802279FC 002247FC  81 62 DA 58 */	lwz r11, __GXData@sda21(r2)
 /* 80227A00 00224800  39 00 00 10 */	li r8, 0x10
 /* 80227A04 00224804  38 E0 10 06 */	li r7, 0x1006
 /* 80227A08 00224808  80 6B 05 A4 */	lwz r3, 0x5a4(r11)
@@ -22180,11 +22180,11 @@ __GXInitGX:
 /* 80227A90 00224890  93 E1 00 9C */	stw r31, 0x9c(r1)
 /* 80227A94 00224894  93 C1 00 98 */	stw r30, 0x98(r1)
 /* 80227A98 00224898  93 A1 00 94 */	stw r29, 0x94(r1)
-/* 80227A9C 0022489C  80 82 DA 64 */	lwz r4, _esc__2_291-_SDA2_BASE_(r2)
+/* 80227A9C 0022489C  80 82 DA 64 */	lwz r4, _esc__2_291@sda21(r2)
 /* 80227AA0 002248A0  3C A0 80 32 */	lis r5, _esc__2_1_7@ha
-/* 80227AA4 002248A4  80 62 DA 68 */	lwz r3, _esc__2_292_0-_SDA2_BASE_(r2)
+/* 80227AA4 002248A4  80 62 DA 68 */	lwz r3, _esc__2_292_0@sda21(r2)
 /* 80227AA8 002248A8  3B E5 7A 00 */	addi r31, r5, _esc__2_1_7@l
-/* 80227AAC 002248AC  80 02 DA 6C */	lwz r0, _esc__2_293-_SDA2_BASE_(r2)
+/* 80227AAC 002248AC  80 02 DA 6C */	lwz r0, _esc__2_293@sda21(r2)
 /* 80227AB0 002248B0  90 81 00 28 */	stw r4, 0x28(r1)
 /* 80227AB4 002248B4  90 61 00 24 */	stw r3, 0x24(r1)
 /* 80227AB8 002248B8  90 01 00 20 */	stw r0, 0x20(r1)
@@ -22298,7 +22298,7 @@ lbl_80227C44:
 lbl_80227C48:
 /* 80227C48 00224A48  48 00 00 04 */	b lbl_80227C4C
 lbl_80227C4C:
-/* 80227C4C 00224A4C  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80227C4C 00224A4C  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80227C50 00224A50  7F A3 EB 78 */	mr r3, r29
 /* 80227C54 00224A54  38 A0 00 00 */	li r5, 0
 /* 80227C58 00224A58  48 00 19 5D */	bl GXSetArray
@@ -22356,9 +22356,9 @@ lbl_80227C78:
 /* 80227D1C 00224B1C  38 80 00 00 */	li r4, 0
 /* 80227D20 00224B20  38 A0 00 00 */	li r5, 0
 /* 80227D24 00224B24  48 00 25 29 */	bl GXEnableTexOffsets
-/* 80227D28 00224B28  C0 22 DA 70 */	lfs f1, _esc__2_353-_SDA2_BASE_(r2)
+/* 80227D28 00224B28  C0 22 DA 70 */	lfs f1, _esc__2_353@sda21(r2)
 /* 80227D2C 00224B2C  38 61 00 2C */	addi r3, r1, 0x2c
-/* 80227D30 00224B30  C0 02 DA 60 */	lfs f0, _esc__2_290_1-_SDA2_BASE_(r2)
+/* 80227D30 00224B30  C0 02 DA 60 */	lfs f0, _esc__2_290_1@sda21(r2)
 /* 80227D34 00224B34  38 80 00 00 */	li r4, 0
 /* 80227D38 00224B38  D0 21 00 2C */	stfs f1, 0x2c(r1)
 /* 80227D3C 00224B3C  D0 01 00 30 */	stfs f0, 0x30(r1)
@@ -22390,13 +22390,13 @@ lbl_80227C78:
 /* 80227DA4 00224BA4  3C 60 43 30 */	lis r3, 0x4330
 /* 80227DA8 00224BA8  A0 1E 00 08 */	lhz r0, 8(r30)
 /* 80227DAC 00224BAC  90 81 00 8C */	stw r4, 0x8c(r1)
-/* 80227DB0 00224BB0  C0 22 DA 60 */	lfs f1, _esc__2_290_1-_SDA2_BASE_(r2)
+/* 80227DB0 00224BB0  C0 22 DA 60 */	lfs f1, _esc__2_290_1@sda21(r2)
 /* 80227DB4 00224BB4  90 01 00 84 */	stw r0, 0x84(r1)
-/* 80227DB8 00224BB8  C8 82 DA 78 */	lfd f4, _esc__2_356_0-_SDA2_BASE_(r2)
+/* 80227DB8 00224BB8  C8 82 DA 78 */	lfd f4, _esc__2_356_0@sda21(r2)
 /* 80227DBC 00224BBC  FC 40 08 90 */	fmr f2, f1
 /* 80227DC0 00224BC0  90 61 00 88 */	stw r3, 0x88(r1)
 /* 80227DC4 00224BC4  FC A0 08 90 */	fmr f5, f1
-/* 80227DC8 00224BC8  C0 C2 DA 70 */	lfs f6, _esc__2_353-_SDA2_BASE_(r2)
+/* 80227DC8 00224BC8  C0 C2 DA 70 */	lfs f6, _esc__2_353@sda21(r2)
 /* 80227DCC 00224BCC  90 61 00 80 */	stw r3, 0x80(r1)
 /* 80227DD0 00224BD0  C8 61 00 88 */	lfd f3, 0x88(r1)
 /* 80227DD4 00224BD4  C8 01 00 80 */	lfd f0, 0x80(r1)
@@ -22666,14 +22666,14 @@ lbl_8022818C:
 /* 802281DC 00224FDC  38 80 00 00 */	li r4, 0
 /* 802281E0 00224FE0  38 A0 00 00 */	li r5, 0
 /* 802281E4 00224FE4  48 00 45 CD */	bl GXSetIndTexCoordScale
-/* 802281E8 00224FE8  C0 42 DA 70 */	lfs f2, _esc__2_353-_SDA2_BASE_(r2)
+/* 802281E8 00224FE8  C0 42 DA 70 */	lfs f2, _esc__2_353@sda21(r2)
 /* 802281EC 00224FEC  38 81 00 08 */	addi r4, r1, 8
 /* 802281F0 00224FF0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802281F4 00224FF4  38 60 00 00 */	li r3, 0
 /* 802281F8 00224FF8  FC 80 10 90 */	fmr f4, f2
 /* 802281FC 00224FFC  90 01 00 08 */	stw r0, 8(r1)
-/* 80228200 00225000  C0 22 DA 60 */	lfs f1, _esc__2_290_1-_SDA2_BASE_(r2)
-/* 80228204 00225004  C0 62 DA 74 */	lfs f3, _esc__2_354-_SDA2_BASE_(r2)
+/* 80228200 00225000  C0 22 DA 60 */	lfs f1, _esc__2_290_1@sda21(r2)
+/* 80228204 00225004  C0 62 DA 74 */	lfs f3, _esc__2_354@sda21(r2)
 /* 80228208 00225008  48 00 50 01 */	bl GXSetFog
 /* 8022820C 0022500C  38 60 00 00 */	li r3, 0
 /* 80228210 00225010  38 80 00 00 */	li r4, 0
@@ -22729,7 +22729,7 @@ lbl_802282A4:
 /* 802282D0 002250D0  3C 60 43 30 */	lis r3, 0x4330
 /* 802282D4 002250D4  A0 1E 00 06 */	lhz r0, 6(r30)
 /* 802282D8 002250D8  90 81 00 84 */	stw r4, 0x84(r1)
-/* 802282DC 002250DC  C8 42 DA 78 */	lfd f2, _esc__2_356_0-_SDA2_BASE_(r2)
+/* 802282DC 002250DC  C8 42 DA 78 */	lfd f2, _esc__2_356_0@sda21(r2)
 /* 802282E0 002250E0  90 01 00 8C */	stw r0, 0x8c(r1)
 /* 802282E4 002250E4  90 61 00 80 */	stw r3, 0x80(r1)
 /* 802282E8 002250E8  90 61 00 88 */	stw r3, 0x88(r1)
@@ -22793,8 +22793,8 @@ GXCPInterruptHandler:
 /* 802283C4 002251C4  94 21 FD 20 */	stwu r1, -0x2e0(r1)
 /* 802283C8 002251C8  93 E1 02 DC */	stw r31, 0x2dc(r1)
 /* 802283CC 002251CC  7C 9F 23 78 */	mr r31, r4
-/* 802283D0 002251D0  80 AD E2 0C */	lwz r5, __cpReg-_SDA_BASE_(r13)
-/* 802283D4 002251D4  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 802283D0 002251D0  80 AD E2 0C */	lwz r5, __cpReg@sda21(r13)
+/* 802283D4 002251D4  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 802283D8 002251D8  A0 05 00 00 */	lhz r0, 0(r5)
 /* 802283DC 002251DC  90 03 00 0C */	stw r0, 0xc(r3)
 /* 802283E0 002251E0  80 03 00 08 */	lwz r0, 8(r3)
@@ -22803,10 +22803,10 @@ GXCPInterruptHandler:
 /* 802283EC 002251EC  80 03 00 0C */	lwz r0, 0xc(r3)
 /* 802283F0 002251F0  54 00 FF FF */	rlwinm. r0, r0, 0x1f, 0x1f, 0x1f
 /* 802283F4 002251F4  41 82 00 2C */	beq lbl_80228420
-/* 802283F8 002251F8  80 6D E2 38 */	lwz r3, __GXCurrentThread-_SDA_BASE_(r13)
+/* 802283F8 002251F8  80 6D E2 38 */	lwz r3, __GXCurrentThread@sda21(r13)
 /* 802283FC 002251FC  48 00 F2 09 */	bl OSResumeThread
 /* 80228400 00225200  38 00 00 00 */	li r0, 0
-/* 80228404 00225204  90 0D E2 40 */	stw r0, GXOverflowSuspendInProgress-_SDA_BASE_(r13)
+/* 80228404 00225204  90 0D E2 40 */	stw r0, GXOverflowSuspendInProgress@sda21(r13)
 /* 80228408 00225208  38 60 00 01 */	li r3, 1
 /* 8022840C 0022520C  38 80 00 01 */	li r4, 1
 /* 80228410 00225210  48 00 07 1D */	bl __GXWriteFifoIntReset
@@ -22814,28 +22814,28 @@ GXCPInterruptHandler:
 /* 80228418 00225218  38 80 00 00 */	li r4, 0
 /* 8022841C 0022521C  48 00 06 E1 */	bl __GXWriteFifoIntEnable
 lbl_80228420:
-/* 80228420 00225220  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228420 00225220  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228424 00225224  80 03 00 08 */	lwz r0, 8(r3)
 /* 80228428 00225228  54 00 F7 FF */	rlwinm. r0, r0, 0x1e, 0x1f, 0x1f
 /* 8022842C 0022522C  41 82 00 44 */	beq lbl_80228470
 /* 80228430 00225230  80 03 00 0C */	lwz r0, 0xc(r3)
 /* 80228434 00225234  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 80228438 00225238  41 82 00 38 */	beq lbl_80228470
-/* 8022843C 0022523C  80 AD E2 48 */	lwz r5, __GXOverflowCount-_SDA_BASE_(r13)
+/* 8022843C 0022523C  80 AD E2 48 */	lwz r5, __GXOverflowCount@sda21(r13)
 /* 80228440 00225240  38 60 00 00 */	li r3, 0
 /* 80228444 00225244  38 80 00 01 */	li r4, 1
 /* 80228448 00225248  38 05 00 01 */	addi r0, r5, 1
-/* 8022844C 0022524C  90 0D E2 48 */	stw r0, __GXOverflowCount-_SDA_BASE_(r13)
+/* 8022844C 0022524C  90 0D E2 48 */	stw r0, __GXOverflowCount@sda21(r13)
 /* 80228450 00225250  48 00 06 AD */	bl __GXWriteFifoIntEnable
 /* 80228454 00225254  38 60 00 01 */	li r3, 1
 /* 80228458 00225258  38 80 00 00 */	li r4, 0
 /* 8022845C 0022525C  48 00 06 D1 */	bl __GXWriteFifoIntReset
 /* 80228460 00225260  38 00 00 01 */	li r0, 1
-/* 80228464 00225264  80 6D E2 38 */	lwz r3, __GXCurrentThread-_SDA_BASE_(r13)
-/* 80228468 00225268  90 0D E2 40 */	stw r0, GXOverflowSuspendInProgress-_SDA_BASE_(r13)
+/* 80228464 00225264  80 6D E2 38 */	lwz r3, __GXCurrentThread@sda21(r13)
+/* 80228468 00225268  90 0D E2 40 */	stw r0, GXOverflowSuspendInProgress@sda21(r13)
 /* 8022846C 0022526C  48 00 F4 21 */	bl OSSuspendThread
 lbl_80228470:
-/* 80228470 00225270  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228470 00225270  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228474 00225274  80 83 00 08 */	lwz r4, 8(r3)
 /* 80228478 00225278  54 80 DF FF */	rlwinm. r0, r4, 0x1b, 0x1f, 0x1f
 /* 8022847C 0022527C  41 82 00 60 */	beq lbl_802284DC
@@ -22846,16 +22846,16 @@ lbl_80228470:
 /* 80228490 00225290  50 04 2E B4 */	rlwimi r4, r0, 5, 0x1a, 0x1a
 /* 80228494 00225294  90 83 00 08 */	stw r4, 8(r3)
 /* 80228498 00225298  80 03 00 08 */	lwz r0, 8(r3)
-/* 8022849C 0022529C  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 8022849C 0022529C  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 802284A0 002252A0  B0 03 00 02 */	sth r0, 2(r3)
-/* 802284A4 002252A4  80 0D E2 44 */	lwz r0, BreakPointCB-_SDA_BASE_(r13)
+/* 802284A4 002252A4  80 0D E2 44 */	lwz r0, BreakPointCB@sda21(r13)
 /* 802284A8 002252A8  28 00 00 00 */	cmplwi r0, 0
 /* 802284AC 002252AC  41 82 00 30 */	beq lbl_802284DC
 /* 802284B0 002252B0  38 61 00 10 */	addi r3, r1, 0x10
 /* 802284B4 002252B4  48 00 A9 E9 */	bl OSClearContext
 /* 802284B8 002252B8  38 61 00 10 */	addi r3, r1, 0x10
 /* 802284BC 002252BC  48 00 A8 19 */	bl OSSetCurrentContext
-/* 802284C0 002252C0  81 8D E2 44 */	lwz r12, BreakPointCB-_SDA_BASE_(r13)
+/* 802284C0 002252C0  81 8D E2 44 */	lwz r12, BreakPointCB@sda21(r13)
 /* 802284C4 002252C4  7D 88 03 A6 */	mtlr r12
 /* 802284C8 002252C8  4E 80 00 21 */	blrl 
 /* 802284CC 002252CC  38 61 00 10 */	addi r3, r1, 0x10
@@ -22946,14 +22946,14 @@ GXSetCPUFifo:
 /* 802285E8 002253E8  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 802285EC 002253EC  7C 7E 1B 78 */	mr r30, r3
 /* 802285F0 002253F0  48 00 BD D9 */	bl OSDisableInterrupts
-/* 802285F4 002253F4  80 0D E2 34 */	lwz r0, GPFifo-_SDA_BASE_(r13)
+/* 802285F4 002253F4  80 0D E2 34 */	lwz r0, GPFifo@sda21(r13)
 /* 802285F8 002253F8  3B E3 00 00 */	addi r31, r3, 0
-/* 802285FC 002253FC  93 CD E2 30 */	stw r30, CPUFifo-_SDA_BASE_(r13)
+/* 802285FC 002253FC  93 CD E2 30 */	stw r30, CPUFifo@sda21(r13)
 /* 80228600 00225400  7C 1E 00 40 */	cmplw r30, r0
 /* 80228604 00225404  40 82 00 70 */	bne lbl_80228674
 /* 80228608 00225408  80 1E 00 00 */	lwz r0, 0(r30)
 /* 8022860C 0022540C  39 00 00 00 */	li r8, 0
-/* 80228610 00225410  80 6D E2 08 */	lwz r3, __piReg-_SDA_BASE_(r13)
+/* 80228610 00225410  80 6D E2 08 */	lwz r3, __piReg@sda21(r13)
 /* 80228614 00225414  38 C0 00 00 */	li r6, 0
 /* 80228618 00225418  54 00 00 BE */	clrlwi r0, r0, 2
 /* 8022861C 0022541C  90 03 00 0C */	stw r0, 0xc(r3)
@@ -22961,16 +22961,16 @@ GXSetCPUFifo:
 /* 80228624 00225424  38 60 00 01 */	li r3, 1
 /* 80228628 00225428  80 FE 00 04 */	lwz r7, 4(r30)
 /* 8022862C 0022542C  38 80 00 01 */	li r4, 1
-/* 80228630 00225430  80 AD E2 08 */	lwz r5, __piReg-_SDA_BASE_(r13)
+/* 80228630 00225430  80 AD E2 08 */	lwz r5, __piReg@sda21(r13)
 /* 80228634 00225434  54 E7 00 BE */	clrlwi r7, r7, 2
 /* 80228638 00225438  90 E5 00 10 */	stw r7, 0x10(r5)
 /* 8022863C 0022543C  80 FE 00 18 */	lwz r7, 0x18(r30)
-/* 80228640 00225440  80 AD E2 08 */	lwz r5, __piReg-_SDA_BASE_(r13)
+/* 80228640 00225440  80 AD E2 08 */	lwz r5, __piReg@sda21(r13)
 /* 80228644 00225444  50 E8 01 B4 */	rlwimi r8, r7, 0, 6, 0x1a
 /* 80228648 00225448  38 E8 00 00 */	addi r7, r8, 0
 /* 8022864C 0022544C  50 C7 D1 4A */	rlwimi r7, r6, 0x1a, 5, 5
 /* 80228650 00225450  90 E5 00 14 */	stw r7, 0x14(r5)
-/* 80228654 00225454  98 0D E2 3C */	stb r0, CPGPLinked-_SDA_BASE_(r13)
+/* 80228654 00225454  98 0D E2 3C */	stb r0, CPGPLinked@sda21(r13)
 /* 80228658 00225458  48 00 04 D5 */	bl __GXWriteFifoIntReset
 /* 8022865C 0022545C  38 60 00 01 */	li r3, 1
 /* 80228660 00225460  38 80 00 00 */	li r4, 0
@@ -22979,29 +22979,29 @@ GXSetCPUFifo:
 /* 8022866C 0022546C  48 00 04 5D */	bl __GXFifoLink
 /* 80228670 00225470  48 00 00 6C */	b lbl_802286DC
 lbl_80228674:
-/* 80228674 00225474  88 0D E2 3C */	lbz r0, CPGPLinked-_SDA_BASE_(r13)
+/* 80228674 00225474  88 0D E2 3C */	lbz r0, CPGPLinked@sda21(r13)
 /* 80228678 00225478  28 00 00 00 */	cmplwi r0, 0
 /* 8022867C 0022547C  41 82 00 14 */	beq lbl_80228690
 /* 80228680 00225480  38 60 00 00 */	li r3, 0
 /* 80228684 00225484  48 00 04 45 */	bl __GXFifoLink
 /* 80228688 00225488  38 00 00 00 */	li r0, 0
-/* 8022868C 0022548C  98 0D E2 3C */	stb r0, CPGPLinked-_SDA_BASE_(r13)
+/* 8022868C 0022548C  98 0D E2 3C */	stb r0, CPGPLinked@sda21(r13)
 lbl_80228690:
 /* 80228690 00225490  38 60 00 00 */	li r3, 0
 /* 80228694 00225494  38 80 00 00 */	li r4, 0
 /* 80228698 00225498  48 00 04 65 */	bl __GXWriteFifoIntEnable
 /* 8022869C 0022549C  80 9E 00 00 */	lwz r4, 0(r30)
 /* 802286A0 002254A0  38 A0 00 00 */	li r5, 0
-/* 802286A4 002254A4  80 6D E2 08 */	lwz r3, __piReg-_SDA_BASE_(r13)
+/* 802286A4 002254A4  80 6D E2 08 */	lwz r3, __piReg@sda21(r13)
 /* 802286A8 002254A8  38 00 00 00 */	li r0, 0
 /* 802286AC 002254AC  54 84 00 BE */	clrlwi r4, r4, 2
 /* 802286B0 002254B0  90 83 00 0C */	stw r4, 0xc(r3)
 /* 802286B4 002254B4  80 9E 00 04 */	lwz r4, 4(r30)
-/* 802286B8 002254B8  80 6D E2 08 */	lwz r3, __piReg-_SDA_BASE_(r13)
+/* 802286B8 002254B8  80 6D E2 08 */	lwz r3, __piReg@sda21(r13)
 /* 802286BC 002254BC  54 84 00 BE */	clrlwi r4, r4, 2
 /* 802286C0 002254C0  90 83 00 10 */	stw r4, 0x10(r3)
 /* 802286C4 002254C4  80 9E 00 18 */	lwz r4, 0x18(r30)
-/* 802286C8 002254C8  80 6D E2 08 */	lwz r3, __piReg-_SDA_BASE_(r13)
+/* 802286C8 002254C8  80 6D E2 08 */	lwz r3, __piReg@sda21(r13)
 /* 802286CC 002254CC  50 85 01 B4 */	rlwimi r5, r4, 0, 6, 0x1a
 /* 802286D0 002254D0  38 85 00 00 */	addi r4, r5, 0
 /* 802286D4 002254D4  50 04 D1 4A */	rlwimi r4, r0, 0x1a, 5, 5
@@ -23031,63 +23031,63 @@ GXSetGPFifo:
 /* 80228724 00225524  38 60 00 00 */	li r3, 0
 /* 80228728 00225528  38 80 00 00 */	li r4, 0
 /* 8022872C 0022552C  48 00 03 D1 */	bl __GXWriteFifoIntEnable
-/* 80228730 00225530  93 CD E2 34 */	stw r30, GPFifo-_SDA_BASE_(r13)
-/* 80228734 00225534  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228730 00225530  93 CD E2 34 */	stw r30, GPFifo@sda21(r13)
+/* 80228734 00225534  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228738 00225538  80 1E 00 00 */	lwz r0, 0(r30)
 /* 8022873C 0022553C  B0 03 00 20 */	sth r0, 0x20(r3)
 /* 80228740 00225540  80 1E 00 04 */	lwz r0, 4(r30)
-/* 80228744 00225544  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228744 00225544  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228748 00225548  B0 03 00 24 */	sth r0, 0x24(r3)
 /* 8022874C 0022554C  80 1E 00 1C */	lwz r0, 0x1c(r30)
-/* 80228750 00225550  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228750 00225550  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228754 00225554  B0 03 00 30 */	sth r0, 0x30(r3)
 /* 80228758 00225558  80 1E 00 18 */	lwz r0, 0x18(r30)
-/* 8022875C 0022555C  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 8022875C 0022555C  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228760 00225560  B0 03 00 34 */	sth r0, 0x34(r3)
 /* 80228764 00225564  80 1E 00 14 */	lwz r0, 0x14(r30)
-/* 80228768 00225568  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228768 00225568  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 8022876C 0022556C  B0 03 00 38 */	sth r0, 0x38(r3)
 /* 80228770 00225570  80 1E 00 0C */	lwz r0, 0xc(r30)
-/* 80228774 00225574  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228774 00225574  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228778 00225578  B0 03 00 28 */	sth r0, 0x28(r3)
 /* 8022877C 0022557C  80 1E 00 10 */	lwz r0, 0x10(r30)
-/* 80228780 00225580  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228780 00225580  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228784 00225584  B0 03 00 2C */	sth r0, 0x2c(r3)
 /* 80228788 00225588  80 1E 00 00 */	lwz r0, 0(r30)
-/* 8022878C 0022558C  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 8022878C 0022558C  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228790 00225590  54 00 84 BE */	rlwinm r0, r0, 0x10, 0x12, 0x1f
 /* 80228794 00225594  B0 03 00 22 */	sth r0, 0x22(r3)
 /* 80228798 00225598  80 1E 00 04 */	lwz r0, 4(r30)
-/* 8022879C 0022559C  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 8022879C 0022559C  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 802287A0 002255A0  54 00 84 BE */	rlwinm r0, r0, 0x10, 0x12, 0x1f
 /* 802287A4 002255A4  B0 03 00 26 */	sth r0, 0x26(r3)
 /* 802287A8 002255A8  80 1E 00 1C */	lwz r0, 0x1c(r30)
-/* 802287AC 002255AC  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 802287AC 002255AC  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 802287B0 002255B0  7C 00 86 70 */	srawi r0, r0, 0x10
 /* 802287B4 002255B4  B0 03 00 32 */	sth r0, 0x32(r3)
 /* 802287B8 002255B8  80 1E 00 18 */	lwz r0, 0x18(r30)
-/* 802287BC 002255BC  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 802287BC 002255BC  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 802287C0 002255C0  54 00 84 BE */	rlwinm r0, r0, 0x10, 0x12, 0x1f
 /* 802287C4 002255C4  B0 03 00 36 */	sth r0, 0x36(r3)
 /* 802287C8 002255C8  80 1E 00 14 */	lwz r0, 0x14(r30)
-/* 802287CC 002255CC  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 802287CC 002255CC  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 802287D0 002255D0  54 00 84 BE */	rlwinm r0, r0, 0x10, 0x12, 0x1f
 /* 802287D4 002255D4  B0 03 00 3A */	sth r0, 0x3a(r3)
 /* 802287D8 002255D8  80 1E 00 0C */	lwz r0, 0xc(r30)
-/* 802287DC 002255DC  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 802287DC 002255DC  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 802287E0 002255E0  54 00 84 3E */	srwi r0, r0, 0x10
 /* 802287E4 002255E4  B0 03 00 2A */	sth r0, 0x2a(r3)
 /* 802287E8 002255E8  80 1E 00 10 */	lwz r0, 0x10(r30)
-/* 802287EC 002255EC  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 802287EC 002255EC  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 802287F0 002255F0  54 00 84 3E */	srwi r0, r0, 0x10
 /* 802287F4 002255F4  B0 03 00 2E */	sth r0, 0x2e(r3)
 /* 802287F8 002255F8  4B FE D6 85 */	bl PPCSync
-/* 802287FC 002255FC  80 6D E2 30 */	lwz r3, CPUFifo-_SDA_BASE_(r13)
-/* 80228800 00225600  80 0D E2 34 */	lwz r0, GPFifo-_SDA_BASE_(r13)
+/* 802287FC 002255FC  80 6D E2 30 */	lwz r3, CPUFifo@sda21(r13)
+/* 80228800 00225600  80 0D E2 34 */	lwz r0, GPFifo@sda21(r13)
 /* 80228804 00225604  7C 03 00 40 */	cmplw r3, r0
 /* 80228808 00225608  40 82 00 24 */	bne lbl_8022882C
 /* 8022880C 0022560C  38 00 00 01 */	li r0, 1
-/* 80228810 00225610  98 0D E2 3C */	stb r0, CPGPLinked-_SDA_BASE_(r13)
+/* 80228810 00225610  98 0D E2 3C */	stb r0, CPGPLinked@sda21(r13)
 /* 80228814 00225614  38 60 00 01 */	li r3, 1
 /* 80228818 00225618  38 80 00 00 */	li r4, 0
 /* 8022881C 0022561C  48 00 02 E1 */	bl __GXWriteFifoIntEnable
@@ -23096,7 +23096,7 @@ GXSetGPFifo:
 /* 80228828 00225628  48 00 00 20 */	b lbl_80228848
 lbl_8022882C:
 /* 8022882C 0022562C  38 00 00 00 */	li r0, 0
-/* 80228830 00225630  98 0D E2 3C */	stb r0, CPGPLinked-_SDA_BASE_(r13)
+/* 80228830 00225630  98 0D E2 3C */	stb r0, CPGPLinked@sda21(r13)
 /* 80228834 00225634  38 60 00 00 */	li r3, 0
 /* 80228838 00225638  38 80 00 00 */	li r4, 0
 /* 8022883C 0022563C  48 00 02 C1 */	bl __GXWriteFifoIntEnable
@@ -23118,25 +23118,25 @@ lbl_80228848:
 
 .global GXGetFifoPtrs
 GXGetFifoPtrs:
-/* 80228878 00225678  80 0D E2 30 */	lwz r0, CPUFifo-_SDA_BASE_(r13)
+/* 80228878 00225678  80 0D E2 30 */	lwz r0, CPUFifo@sda21(r13)
 /* 8022887C 0022567C  7C 03 00 40 */	cmplw r3, r0
 /* 80228880 00225680  40 82 00 18 */	bne lbl_80228898
-/* 80228884 00225684  80 CD E2 08 */	lwz r6, __piReg-_SDA_BASE_(r13)
+/* 80228884 00225684  80 CD E2 08 */	lwz r6, __piReg@sda21(r13)
 /* 80228888 00225688  80 06 00 14 */	lwz r0, 0x14(r6)
 /* 8022888C 0022568C  54 06 01 88 */	rlwinm r6, r0, 0, 6, 4
 /* 80228890 00225690  3C 06 80 00 */	addis r0, r6, 0x8000
 /* 80228894 00225694  90 03 00 18 */	stw r0, 0x18(r3)
 lbl_80228898:
-/* 80228898 00225698  80 0D E2 34 */	lwz r0, GPFifo-_SDA_BASE_(r13)
+/* 80228898 00225698  80 0D E2 34 */	lwz r0, GPFifo@sda21(r13)
 /* 8022889C 0022569C  7C 03 00 40 */	cmplw r3, r0
 /* 802288A0 002256A0  40 82 00 34 */	bne lbl_802288D4
-/* 802288A4 002256A4  80 ED E2 0C */	lwz r7, __cpReg-_SDA_BASE_(r13)
+/* 802288A4 002256A4  80 ED E2 0C */	lwz r7, __cpReg@sda21(r13)
 /* 802288A8 002256A8  A0 C7 00 3A */	lhz r6, 0x3a(r7)
 /* 802288AC 002256AC  A0 E7 00 38 */	lhz r7, 0x38(r7)
 /* 802288B0 002256B0  50 C7 80 1E */	rlwimi r7, r6, 0x10, 0, 0xf
 /* 802288B4 002256B4  3C 07 80 00 */	addis r0, r7, 0x8000
 /* 802288B8 002256B8  90 03 00 14 */	stw r0, 0x14(r3)
-/* 802288BC 002256BC  80 ED E2 0C */	lwz r7, __cpReg-_SDA_BASE_(r13)
+/* 802288BC 002256BC  80 ED E2 0C */	lwz r7, __cpReg@sda21(r13)
 /* 802288C0 002256C0  A0 C7 00 32 */	lhz r6, 0x32(r7)
 /* 802288C4 002256C4  A0 07 00 30 */	lhz r0, 0x30(r7)
 /* 802288C8 002256C8  50 C0 80 1E */	rlwimi r0, r6, 0x10, 0, 0xf
@@ -23168,9 +23168,9 @@ GXSetBreakPtCallback:
 /* 8022891C 0022571C  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 80228920 00225720  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 80228924 00225724  7C 7E 1B 78 */	mr r30, r3
-/* 80228928 00225728  83 ED E2 44 */	lwz r31, BreakPointCB-_SDA_BASE_(r13)
+/* 80228928 00225728  83 ED E2 44 */	lwz r31, BreakPointCB@sda21(r13)
 /* 8022892C 0022572C  48 00 BA 9D */	bl OSDisableInterrupts
-/* 80228930 00225730  93 CD E2 44 */	stw r30, BreakPointCB-_SDA_BASE_(r13)
+/* 80228930 00225730  93 CD E2 44 */	stw r30, BreakPointCB@sda21(r13)
 /* 80228934 00225734  48 00 BA BD */	bl OSRestoreInterrupts
 /* 80228938 00225738  7F E3 FB 78 */	mr r3, r31
 /* 8022893C 0022573C  80 01 00 1C */	lwz r0, 0x1c(r1)
@@ -23191,13 +23191,13 @@ GXEnableBreakPt:
 /* 8022896C 0022576C  48 00 BA 5D */	bl OSDisableInterrupts
 /* 80228970 00225770  7C 7F 1B 78 */	mr r31, r3
 /* 80228974 00225774  48 00 01 31 */	bl __GXFifoReadDisable
-/* 80228978 00225778  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228978 00225778  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 8022897C 0022577C  57 C0 84 BE */	rlwinm r0, r30, 0x10, 0x12, 0x1f
 /* 80228980 00225780  B3 C3 00 3C */	sth r30, 0x3c(r3)
 /* 80228984 00225784  38 60 00 01 */	li r3, 1
-/* 80228988 00225788  80 8D E2 0C */	lwz r4, __cpReg-_SDA_BASE_(r13)
+/* 80228988 00225788  80 8D E2 0C */	lwz r4, __cpReg@sda21(r13)
 /* 8022898C 0022578C  B0 04 00 3E */	sth r0, 0x3e(r4)
-/* 80228990 00225790  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80228990 00225790  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80228994 00225794  80 04 00 08 */	lwz r0, 8(r4)
 /* 80228998 00225798  50 60 0F BC */	rlwimi r0, r3, 1, 0x1e, 0x1e
 /* 8022899C 0022579C  90 04 00 08 */	stw r0, 8(r4)
@@ -23205,9 +23205,9 @@ GXEnableBreakPt:
 /* 802289A4 002257A4  50 60 2E B4 */	rlwimi r0, r3, 5, 0x1a, 0x1a
 /* 802289A8 002257A8  90 04 00 08 */	stw r0, 8(r4)
 /* 802289AC 002257AC  80 04 00 08 */	lwz r0, 8(r4)
-/* 802289B0 002257B0  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 802289B0 002257B0  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 802289B4 002257B4  B0 03 00 02 */	sth r0, 2(r3)
-/* 802289B8 002257B8  93 CD E2 4C */	stw r30, __GXCurrentBP-_SDA_BASE_(r13)
+/* 802289B8 002257B8  93 CD E2 4C */	stw r30, __GXCurrentBP@sda21(r13)
 /* 802289BC 002257BC  48 00 00 C5 */	bl __GXFifoReadEnable
 /* 802289C0 002257C0  7F E3 FB 78 */	mr r3, r31
 /* 802289C4 002257C4  48 00 BA 2D */	bl OSRestoreInterrupts
@@ -23224,7 +23224,7 @@ GXDisableBreakPt:
 /* 802289E4 002257E4  90 01 00 04 */	stw r0, 4(r1)
 /* 802289E8 002257E8  94 21 FF F8 */	stwu r1, -8(r1)
 /* 802289EC 002257EC  48 00 B9 DD */	bl OSDisableInterrupts
-/* 802289F0 002257F0  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 802289F0 002257F0  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 802289F4 002257F4  38 A0 00 00 */	li r5, 0
 /* 802289F8 002257F8  80 04 00 08 */	lwz r0, 8(r4)
 /* 802289FC 002257FC  50 A0 0F BC */	rlwimi r0, r5, 1, 0x1e, 0x1e
@@ -23233,9 +23233,9 @@ GXDisableBreakPt:
 /* 80228A08 00225808  50 A0 2E B4 */	rlwimi r0, r5, 5, 0x1a, 0x1a
 /* 80228A0C 0022580C  90 04 00 08 */	stw r0, 8(r4)
 /* 80228A10 00225810  80 04 00 08 */	lwz r0, 8(r4)
-/* 80228A14 00225814  80 8D E2 0C */	lwz r4, __cpReg-_SDA_BASE_(r13)
+/* 80228A14 00225814  80 8D E2 0C */	lwz r4, __cpReg@sda21(r13)
 /* 80228A18 00225818  B0 04 00 02 */	sth r0, 2(r4)
-/* 80228A1C 0022581C  90 AD E2 4C */	stw r5, __GXCurrentBP-_SDA_BASE_(r13)
+/* 80228A1C 0022581C  90 AD E2 4C */	stw r5, __GXCurrentBP@sda21(r13)
 /* 80228A20 00225820  48 00 B9 D1 */	bl OSRestoreInterrupts
 /* 80228A24 00225824  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 80228A28 00225828  38 21 00 08 */	addi r1, r1, 8
@@ -23255,10 +23255,10 @@ __GXFifoInit:
 /* 80228A54 00225854  48 00 BD C5 */	bl __OSUnmaskInterrupts
 /* 80228A58 00225858  48 00 E1 85 */	bl OSGetCurrentThread
 /* 80228A5C 0022585C  38 00 00 00 */	li r0, 0
-/* 80228A60 00225860  90 6D E2 38 */	stw r3, __GXCurrentThread-_SDA_BASE_(r13)
-/* 80228A64 00225864  90 0D E2 40 */	stw r0, GXOverflowSuspendInProgress-_SDA_BASE_(r13)
-/* 80228A68 00225868  90 0D E2 30 */	stw r0, CPUFifo-_SDA_BASE_(r13)
-/* 80228A6C 0022586C  90 0D E2 34 */	stw r0, GPFifo-_SDA_BASE_(r13)
+/* 80228A60 00225860  90 6D E2 38 */	stw r3, __GXCurrentThread@sda21(r13)
+/* 80228A64 00225864  90 0D E2 40 */	stw r0, GXOverflowSuspendInProgress@sda21(r13)
+/* 80228A68 00225868  90 0D E2 30 */	stw r0, CPUFifo@sda21(r13)
+/* 80228A6C 0022586C  90 0D E2 34 */	stw r0, GPFifo@sda21(r13)
 /* 80228A70 00225870  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 80228A74 00225874  38 21 00 08 */	addi r1, r1, 8
 /* 80228A78 00225878  7C 08 03 A6 */	mtlr r0
@@ -23266,25 +23266,25 @@ __GXFifoInit:
 
 .global __GXFifoReadEnable
 __GXFifoReadEnable:
-/* 80228A80 00225880  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80228A80 00225880  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80228A84 00225884  38 00 00 01 */	li r0, 1
 /* 80228A88 00225888  80 64 00 08 */	lwz r3, 8(r4)
 /* 80228A8C 0022588C  50 03 07 FE */	rlwimi r3, r0, 0, 0x1f, 0x1f
 /* 80228A90 00225890  90 64 00 08 */	stw r3, 8(r4)
 /* 80228A94 00225894  80 04 00 08 */	lwz r0, 8(r4)
-/* 80228A98 00225898  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228A98 00225898  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228A9C 0022589C  B0 03 00 02 */	sth r0, 2(r3)
 /* 80228AA0 002258A0  4E 80 00 20 */	blr 
 
 .global __GXFifoReadDisable
 __GXFifoReadDisable:
-/* 80228AA4 002258A4  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80228AA4 002258A4  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80228AA8 002258A8  38 00 00 00 */	li r0, 0
 /* 80228AAC 002258AC  80 64 00 08 */	lwz r3, 8(r4)
 /* 80228AB0 002258B0  50 03 07 FE */	rlwimi r3, r0, 0, 0x1f, 0x1f
 /* 80228AB4 002258B4  90 64 00 08 */	stw r3, 8(r4)
 /* 80228AB8 002258B8  80 04 00 08 */	lwz r0, 8(r4)
-/* 80228ABC 002258BC  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228ABC 002258BC  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228AC0 002258C0  B0 03 00 02 */	sth r0, 2(r3)
 /* 80228AC4 002258C4  4E 80 00 20 */	blr 
 
@@ -23297,18 +23297,18 @@ __GXFifoLink:
 lbl_80228AD8:
 /* 80228AD8 002258D8  38 80 00 00 */	li r4, 0
 lbl_80228ADC:
-/* 80228ADC 002258DC  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228ADC 002258DC  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228AE0 002258E0  80 03 00 08 */	lwz r0, 8(r3)
 /* 80228AE4 002258E4  50 80 26 F6 */	rlwimi r0, r4, 4, 0x1b, 0x1b
 /* 80228AE8 002258E8  90 03 00 08 */	stw r0, 8(r3)
 /* 80228AEC 002258EC  80 03 00 08 */	lwz r0, 8(r3)
-/* 80228AF0 002258F0  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228AF0 002258F0  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228AF4 002258F4  B0 03 00 02 */	sth r0, 2(r3)
 /* 80228AF8 002258F8  4E 80 00 20 */	blr 
 
 .global __GXWriteFifoIntEnable
 __GXWriteFifoIntEnable:
-/* 80228AFC 002258FC  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 80228AFC 002258FC  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 80228B00 00225900  54 80 06 3E */	clrlwi r0, r4, 0x18
 /* 80228B04 00225904  80 85 00 08 */	lwz r4, 8(r5)
 /* 80228B08 00225908  50 64 17 7A */	rlwimi r4, r3, 2, 0x1d, 0x1d
@@ -23317,13 +23317,13 @@ __GXWriteFifoIntEnable:
 /* 80228B14 00225914  50 03 1F 38 */	rlwimi r3, r0, 3, 0x1c, 0x1c
 /* 80228B18 00225918  90 65 00 08 */	stw r3, 8(r5)
 /* 80228B1C 0022591C  80 05 00 08 */	lwz r0, 8(r5)
-/* 80228B20 00225920  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228B20 00225920  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228B24 00225924  B0 03 00 02 */	sth r0, 2(r3)
 /* 80228B28 00225928  4E 80 00 20 */	blr 
 
 .global __GXWriteFifoIntReset
 __GXWriteFifoIntReset:
-/* 80228B2C 0022592C  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 80228B2C 0022592C  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 80228B30 00225930  54 80 06 3E */	clrlwi r0, r4, 0x18
 /* 80228B34 00225934  80 85 00 10 */	lwz r4, 0x10(r5)
 /* 80228B38 00225938  50 64 07 FE */	rlwimi r4, r3, 0, 0x1f, 0x1f
@@ -23332,7 +23332,7 @@ __GXWriteFifoIntReset:
 /* 80228B44 00225944  50 03 0F BC */	rlwimi r3, r0, 1, 0x1e, 0x1e
 /* 80228B48 00225948  90 65 00 10 */	stw r3, 0x10(r5)
 /* 80228B4C 0022594C  80 05 00 10 */	lwz r0, 0x10(r5)
-/* 80228B50 00225950  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 80228B50 00225950  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 80228B54 00225954  B0 03 00 04 */	sth r0, 4(r3)
 /* 80228B58 00225958  4E 80 00 20 */	blr 
 
@@ -23344,10 +23344,10 @@ GXSetCurrentGXThread:
 /* 80228B68 00225968  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80228B6C 0022596C  93 C1 00 08 */	stw r30, 8(r1)
 /* 80228B70 00225970  48 00 B8 59 */	bl OSDisableInterrupts
-/* 80228B74 00225974  83 CD E2 38 */	lwz r30, __GXCurrentThread-_SDA_BASE_(r13)
+/* 80228B74 00225974  83 CD E2 38 */	lwz r30, __GXCurrentThread@sda21(r13)
 /* 80228B78 00225978  7C 7F 1B 78 */	mr r31, r3
 /* 80228B7C 0022597C  48 00 E0 61 */	bl OSGetCurrentThread
-/* 80228B80 00225980  90 6D E2 38 */	stw r3, __GXCurrentThread-_SDA_BASE_(r13)
+/* 80228B80 00225980  90 6D E2 38 */	stw r3, __GXCurrentThread@sda21(r13)
 /* 80228B84 00225984  7F E3 FB 78 */	mr r3, r31
 /* 80228B88 00225988  48 00 B8 69 */	bl OSRestoreInterrupts
 /* 80228B8C 0022598C  7F C3 F3 78 */	mr r3, r30
@@ -23360,12 +23360,12 @@ GXSetCurrentGXThread:
 
 .global GXGetCPUFifo
 GXGetCPUFifo:
-/* 80228BA8 002259A8  80 6D E2 30 */	lwz r3, CPUFifo-_SDA_BASE_(r13)
+/* 80228BA8 002259A8  80 6D E2 30 */	lwz r3, CPUFifo@sda21(r13)
 /* 80228BAC 002259AC  4E 80 00 20 */	blr 
 
 .global GXGetGPFifo
 GXGetGPFifo:
-/* 80228BB0 002259B0  80 6D E2 34 */	lwz r3, GPFifo-_SDA_BASE_(r13)
+/* 80228BB0 002259B0  80 6D E2 34 */	lwz r3, GPFifo@sda21(r13)
 /* 80228BB4 002259B4  4E 80 00 20 */	blr 
 
 .global GXSetVtxDesc
@@ -23378,59 +23378,59 @@ GXSetVtxDesc:
 /* 80228BCC 002259CC  7C 05 00 2E */	lwzx r0, r5, r0
 /* 80228BD0 002259D0  7C 09 03 A6 */	mtctr r0
 /* 80228BD4 002259D4  4E 80 04 20 */	bctr 
-/* 80228BD8 002259D8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228BD8 002259D8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228BDC 002259DC  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228BE0 002259E0  50 80 07 FE */	rlwimi r0, r4, 0, 0x1f, 0x1f
 /* 80228BE4 002259E4  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228BE8 002259E8  48 00 01 E4 */	b lbl_80228DCC
-/* 80228BEC 002259EC  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228BEC 002259EC  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228BF0 002259F0  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228BF4 002259F4  50 80 0F BC */	rlwimi r0, r4, 1, 0x1e, 0x1e
 /* 80228BF8 002259F8  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228BFC 002259FC  48 00 01 D0 */	b lbl_80228DCC
-/* 80228C00 00225A00  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228C00 00225A00  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228C04 00225A04  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228C08 00225A08  50 80 17 7A */	rlwimi r0, r4, 2, 0x1d, 0x1d
 /* 80228C0C 00225A0C  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228C10 00225A10  48 00 01 BC */	b lbl_80228DCC
-/* 80228C14 00225A14  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228C14 00225A14  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228C18 00225A18  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228C1C 00225A1C  50 80 1F 38 */	rlwimi r0, r4, 3, 0x1c, 0x1c
 /* 80228C20 00225A20  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228C24 00225A24  48 00 01 A8 */	b lbl_80228DCC
-/* 80228C28 00225A28  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228C28 00225A28  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228C2C 00225A2C  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228C30 00225A30  50 80 26 F6 */	rlwimi r0, r4, 4, 0x1b, 0x1b
 /* 80228C34 00225A34  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228C38 00225A38  48 00 01 94 */	b lbl_80228DCC
-/* 80228C3C 00225A3C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228C3C 00225A3C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228C40 00225A40  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228C44 00225A44  50 80 2E B4 */	rlwimi r0, r4, 5, 0x1a, 0x1a
 /* 80228C48 00225A48  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228C4C 00225A4C  48 00 01 80 */	b lbl_80228DCC
-/* 80228C50 00225A50  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228C50 00225A50  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228C54 00225A54  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228C58 00225A58  50 80 36 72 */	rlwimi r0, r4, 6, 0x19, 0x19
 /* 80228C5C 00225A5C  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228C60 00225A60  48 00 01 6C */	b lbl_80228DCC
-/* 80228C64 00225A64  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228C64 00225A64  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228C68 00225A68  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228C6C 00225A6C  50 80 3E 30 */	rlwimi r0, r4, 7, 0x18, 0x18
 /* 80228C70 00225A70  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228C74 00225A74  48 00 01 58 */	b lbl_80228DCC
-/* 80228C78 00225A78  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228C78 00225A78  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228C7C 00225A7C  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228C80 00225A80  50 80 45 EE */	rlwimi r0, r4, 8, 0x17, 0x17
 /* 80228C84 00225A84  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228C88 00225A88  48 00 01 44 */	b lbl_80228DCC
-/* 80228C8C 00225A8C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228C8C 00225A8C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228C90 00225A90  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228C94 00225A94  50 80 4D 6C */	rlwimi r0, r4, 9, 0x15, 0x16
 /* 80228C98 00225A98  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228C9C 00225A9C  48 00 01 30 */	b lbl_80228DCC
 /* 80228CA0 00225AA0  2C 04 00 00 */	cmpwi r4, 0
 /* 80228CA4 00225AA4  41 82 00 20 */	beq lbl_80228CC4
-/* 80228CA8 00225AA8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228CA8 00225AA8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228CAC 00225AAC  38 A0 00 01 */	li r5, 1
 /* 80228CB0 00225AB0  38 00 00 00 */	li r0, 0
 /* 80228CB4 00225AB4  98 A3 04 D4 */	stb r5, 0x4d4(r3)
@@ -23438,13 +23438,13 @@ GXSetVtxDesc:
 /* 80228CBC 00225ABC  90 83 04 D0 */	stw r4, 0x4d0(r3)
 /* 80228CC0 00225AC0  48 00 01 0C */	b lbl_80228DCC
 lbl_80228CC4:
-/* 80228CC4 00225AC4  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228CC4 00225AC4  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228CC8 00225AC8  38 00 00 00 */	li r0, 0
 /* 80228CCC 00225ACC  98 03 04 D4 */	stb r0, 0x4d4(r3)
 /* 80228CD0 00225AD0  48 00 00 FC */	b lbl_80228DCC
 /* 80228CD4 00225AD4  2C 04 00 00 */	cmpwi r4, 0
 /* 80228CD8 00225AD8  41 82 00 20 */	beq lbl_80228CF8
-/* 80228CDC 00225ADC  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228CDC 00225ADC  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228CE0 00225AE0  38 A0 00 01 */	li r5, 1
 /* 80228CE4 00225AE4  38 00 00 00 */	li r0, 0
 /* 80228CE8 00225AE8  98 A3 04 D5 */	stb r5, 0x4d5(r3)
@@ -23452,61 +23452,61 @@ lbl_80228CC4:
 /* 80228CF0 00225AF0  90 83 04 D0 */	stw r4, 0x4d0(r3)
 /* 80228CF4 00225AF4  48 00 00 D8 */	b lbl_80228DCC
 lbl_80228CF8:
-/* 80228CF8 00225AF8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228CF8 00225AF8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228CFC 00225AFC  38 00 00 00 */	li r0, 0
 /* 80228D00 00225B00  98 03 04 D5 */	stb r0, 0x4d5(r3)
 /* 80228D04 00225B04  48 00 00 C8 */	b lbl_80228DCC
-/* 80228D08 00225B08  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228D08 00225B08  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228D0C 00225B0C  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228D10 00225B10  50 80 6C 64 */	rlwimi r0, r4, 0xd, 0x11, 0x12
 /* 80228D14 00225B14  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228D18 00225B18  48 00 00 B4 */	b lbl_80228DCC
-/* 80228D1C 00225B1C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228D1C 00225B1C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228D20 00225B20  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80228D24 00225B24  50 80 7B E0 */	rlwimi r0, r4, 0xf, 0xf, 0x10
 /* 80228D28 00225B28  90 03 00 14 */	stw r0, 0x14(r3)
 /* 80228D2C 00225B2C  48 00 00 A0 */	b lbl_80228DCC
-/* 80228D30 00225B30  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228D30 00225B30  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228D34 00225B34  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 80228D38 00225B38  50 80 07 BE */	rlwimi r0, r4, 0, 0x1e, 0x1f
 /* 80228D3C 00225B3C  90 03 00 18 */	stw r0, 0x18(r3)
 /* 80228D40 00225B40  48 00 00 8C */	b lbl_80228DCC
-/* 80228D44 00225B44  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228D44 00225B44  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228D48 00225B48  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 80228D4C 00225B4C  50 80 17 3A */	rlwimi r0, r4, 2, 0x1c, 0x1d
 /* 80228D50 00225B50  90 03 00 18 */	stw r0, 0x18(r3)
 /* 80228D54 00225B54  48 00 00 78 */	b lbl_80228DCC
-/* 80228D58 00225B58  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228D58 00225B58  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228D5C 00225B5C  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 80228D60 00225B60  50 80 26 B6 */	rlwimi r0, r4, 4, 0x1a, 0x1b
 /* 80228D64 00225B64  90 03 00 18 */	stw r0, 0x18(r3)
 /* 80228D68 00225B68  48 00 00 64 */	b lbl_80228DCC
-/* 80228D6C 00225B6C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228D6C 00225B6C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228D70 00225B70  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 80228D74 00225B74  50 80 36 32 */	rlwimi r0, r4, 6, 0x18, 0x19
 /* 80228D78 00225B78  90 03 00 18 */	stw r0, 0x18(r3)
 /* 80228D7C 00225B7C  48 00 00 50 */	b lbl_80228DCC
-/* 80228D80 00225B80  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228D80 00225B80  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228D84 00225B84  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 80228D88 00225B88  50 80 45 AE */	rlwimi r0, r4, 8, 0x16, 0x17
 /* 80228D8C 00225B8C  90 03 00 18 */	stw r0, 0x18(r3)
 /* 80228D90 00225B90  48 00 00 3C */	b lbl_80228DCC
-/* 80228D94 00225B94  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228D94 00225B94  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228D98 00225B98  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 80228D9C 00225B9C  50 80 55 2A */	rlwimi r0, r4, 0xa, 0x14, 0x15
 /* 80228DA0 00225BA0  90 03 00 18 */	stw r0, 0x18(r3)
 /* 80228DA4 00225BA4  48 00 00 28 */	b lbl_80228DCC
-/* 80228DA8 00225BA8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228DA8 00225BA8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228DAC 00225BAC  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 80228DB0 00225BB0  50 80 64 A6 */	rlwimi r0, r4, 0xc, 0x12, 0x13
 /* 80228DB4 00225BB4  90 03 00 18 */	stw r0, 0x18(r3)
 /* 80228DB8 00225BB8  48 00 00 14 */	b lbl_80228DCC
-/* 80228DBC 00225BBC  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228DBC 00225BBC  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228DC0 00225BC0  80 03 00 18 */	lwz r0, 0x18(r3)
 /* 80228DC4 00225BC4  50 80 74 22 */	rlwimi r0, r4, 0xe, 0x10, 0x11
 /* 80228DC8 00225BC8  90 03 00 18 */	stw r0, 0x18(r3)
 lbl_80228DCC:
-/* 80228DCC 00225BCC  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80228DCC 00225BCC  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80228DD0 00225BD0  88 04 04 D4 */	lbz r0, 0x4d4(r4)
 /* 80228DD4 00225BD4  28 00 00 00 */	cmplwi r0, 0
 /* 80228DD8 00225BD8  40 82 00 10 */	bne lbl_80228DE8
@@ -23516,7 +23516,7 @@ lbl_80228DCC:
 lbl_80228DE8:
 /* 80228DE8 00225BE8  80 04 04 D0 */	lwz r0, 0x4d0(r4)
 /* 80228DEC 00225BEC  80 84 00 14 */	lwz r4, 0x14(r4)
-/* 80228DF0 00225BF0  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228DF0 00225BF0  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228DF4 00225BF4  50 04 5C E8 */	rlwimi r4, r0, 0xb, 0x13, 0x14
 /* 80228DF8 00225BF8  90 83 00 14 */	stw r4, 0x14(r3)
 /* 80228DFC 00225BFC  48 00 00 14 */	b lbl_80228E10
@@ -23526,7 +23526,7 @@ lbl_80228E00:
 /* 80228E08 00225C08  50 03 5C E8 */	rlwimi r3, r0, 0xb, 0x13, 0x14
 /* 80228E0C 00225C0C  90 64 00 14 */	stw r3, 0x14(r4)
 lbl_80228E10:
-/* 80228E10 00225C10  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228E10 00225C10  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228E14 00225C14  80 03 05 AC */	lwz r0, 0x5ac(r3)
 /* 80228E18 00225C18  60 00 00 08 */	ori r0, r0, 8
 /* 80228E1C 00225C1C  90 03 05 AC */	stw r0, 0x5ac(r3)
@@ -23535,7 +23535,7 @@ lbl_80228E10:
 .global __GXSetVCD
 __GXSetVCD:
 /* 80228E24 00225C24  38 C0 00 08 */	li r6, 8
-/* 80228E28 00225C28  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80228E28 00225C28  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80228E2C 00225C2C  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 80228E30 00225C30  98 C5 80 00 */	stb r6, 0xCC008000@l(r5)
 /* 80228E34 00225C34  38 60 00 50 */	li r3, 0x50
@@ -23561,7 +23561,7 @@ lbl_80228E6C:
 lbl_80228E80:
 /* 80228E80 00225C80  38 E0 00 00 */	li r7, 0
 lbl_80228E84:
-/* 80228E84 00225C84  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 80228E84 00225C84  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 80228E88 00225C88  38 00 00 10 */	li r0, 0x10
 /* 80228E8C 00225C8C  80 C4 00 14 */	lwz r6, 0x14(r4)
 /* 80228E90 00225C90  3C 80 CC 01 */	lis r4, 0xCC008000@ha
@@ -23587,12 +23587,12 @@ lbl_80228E84:
 
 .global __GXCalculateVLim
 __GXCalculateVLim:
-/* 80228EE0 00225CE0  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80228EE0 00225CE0  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80228EE4 00225CE4  A0 03 00 04 */	lhz r0, 4(r3)
 /* 80228EE8 00225CE8  28 00 00 00 */	cmplwi r0, 0
 /* 80228EEC 00225CEC  4D 82 00 20 */	beqlr 
 /* 80228EF0 00225CF0  81 23 00 14 */	lwz r9, 0x14(r3)
-/* 80228EF4 00225CF4  38 AD B4 20 */	addi r5, r13, tbl3_esc__7_265-_SDA_BASE_
+/* 80228EF4 00225CF4  38 AD B4 20 */	addi r5, r13, tbl3_esc__7_265@sda21
 /* 80228EF8 00225CF8  81 03 00 1C */	lwz r8, 0x1c(r3)
 /* 80228EFC 00225CFC  55 20 07 FE */	clrlwi r0, r9, 0x1f
 /* 80228F00 00225D00  80 83 00 18 */	lwz r4, 0x18(r3)
@@ -23624,10 +23624,10 @@ lbl_80228F64:
 /* 80228F64 00225D64  39 00 00 01 */	li r8, 1
 lbl_80228F68:
 /* 80228F68 00225D68  55 26 AF BE */	rlwinm r6, r9, 0x15, 0x1e, 0x1f
-/* 80228F6C 00225D6C  38 AD B4 20 */	addi r5, r13, tbl3_esc__7_265-_SDA_BASE_
+/* 80228F6C 00225D6C  38 AD B4 20 */	addi r5, r13, tbl3_esc__7_265@sda21
 /* 80228F70 00225D70  7C C5 30 AE */	lbzx r6, r5, r6
 /* 80228F74 00225D74  55 25 9F BE */	rlwinm r5, r9, 0x13, 0x1e, 0x1f
-/* 80228F78 00225D78  38 ED B4 18 */	addi r7, r13, tbl1_esc__7_263-_SDA_BASE_
+/* 80228F78 00225D78  38 ED B4 18 */	addi r7, r13, tbl1_esc__7_263@sda21
 /* 80228F7C 00225D7C  7D 06 41 D6 */	mullw r8, r6, r8
 /* 80228F80 00225D80  7C C7 28 AE */	lbzx r6, r7, r5
 /* 80228F84 00225D84  7C 00 42 14 */	add r0, r0, r8
@@ -23635,7 +23635,7 @@ lbl_80228F68:
 /* 80228F8C 00225D8C  7D 27 28 AE */	lbzx r9, r7, r5
 /* 80228F90 00225D90  7C 00 32 14 */	add r0, r0, r6
 /* 80228F94 00225D94  54 86 07 BE */	clrlwi r6, r4, 0x1e
-/* 80228F98 00225D98  39 0D B4 1C */	addi r8, r13, tbl2_esc__7_264-_SDA_BASE_
+/* 80228F98 00225D98  39 0D B4 1C */	addi r8, r13, tbl2_esc__7_264@sda21
 /* 80228F9C 00225D9C  54 85 F7 BE */	rlwinm r5, r4, 0x1e, 0x1e, 0x1f
 /* 80228FA0 00225DA0  7C E8 30 AE */	lbzx r7, r8, r6
 /* 80228FA4 00225DA4  7C 00 4A 14 */	add r0, r0, r9
@@ -23665,7 +23665,7 @@ lbl_80228F68:
 
 .global GXClearVtxDesc
 GXClearVtxDesc:
-/* 80229004 00225E04  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80229004 00225E04  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80229008 00225E08  38 A0 00 00 */	li r5, 0
 /* 8022900C 00225E0C  38 00 00 01 */	li r0, 1
 /* 80229010 00225E10  90 A4 00 14 */	stw r5, 0x14(r4)
@@ -23683,7 +23683,7 @@ GXClearVtxDesc:
 .global GXSetVtxAttrFmt
 GXSetVtxAttrFmt:
 /* 8022903C 00225E3C  38 04 FF F7 */	addi r0, r4, -9
-/* 80229040 00225E40  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 80229040 00225E40  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 80229044 00225E44  54 64 10 3A */	slwi r4, r3, 2
 /* 80229048 00225E48  7D 08 22 14 */	add r8, r8, r4
 /* 8022904C 00225E4C  28 00 00 10 */	cmplwi r0, 0x10
@@ -23823,7 +23823,7 @@ lbl_802290D4:
 /* 80229260 00226060  50 E4 D8 08 */	rlwimi r4, r7, 0x1b, 0, 4
 /* 80229264 00226064  90 8A 00 00 */	stw r4, 0(r10)
 lbl_80229268:
-/* 80229268 00226068  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 80229268 00226068  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022926C 0022606C  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 80229270 00226070  38 60 00 01 */	li r3, 1
 /* 80229274 00226074  80 85 05 AC */	lwz r4, 0x5ac(r5)
@@ -23838,7 +23838,7 @@ lbl_80229268:
 
 .global GXSetVtxAttrFmtv
 GXSetVtxAttrFmtv:
-/* 80229298 00226098  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 80229298 00226098  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022929C 0022609C  54 60 10 3A */	slwi r0, r3, 2
 /* 802292A0 002260A0  3C A0 80 32 */	lis r5, _esc__2_525@ha
 /* 802292A4 002260A4  7C C6 02 14 */	add r6, r6, r0
@@ -23990,7 +23990,7 @@ lbl_802294DC:
 /* 802294DC 002262DC  80 04 00 00 */	lwz r0, 0(r4)
 /* 802294E0 002262E0  2C 00 00 FF */	cmpwi r0, 0xff
 /* 802294E4 002262E4  40 82 FD D8 */	bne lbl_802292BC
-/* 802294E8 002262E8  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 802294E8 002262E8  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 802294EC 002262EC  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 802294F0 002262F0  38 60 00 01 */	li r3, 1
 /* 802294F4 002262F4  80 85 05 AC */	lwz r4, 0x5ac(r5)
@@ -24005,7 +24005,7 @@ lbl_802294DC:
 
 .global __GXSetVAT
 __GXSetVAT:
-/* 80229518 00226318  81 42 DA 58 */	lwz r10, __GXData-_SDA2_BASE_(r2)
+/* 80229518 00226318  81 42 DA 58 */	lwz r10, __GXData@sda21(r2)
 /* 8022951C 0022631C  39 80 00 00 */	li r12, 0
 /* 80229520 00226320  39 60 00 00 */	li r11, 0
 /* 80229524 00226324  3C E0 CC 01 */	lis r7, 0xcc01
@@ -24043,7 +24043,7 @@ lbl_80229598:
 /* 80229598 00226398  55 80 06 3E */	clrlwi r0, r12, 0x18
 /* 8022959C 0022639C  28 00 00 08 */	cmplwi r0, 8
 /* 802295A0 002263A0  41 80 FF 8C */	blt lbl_8022952C
-/* 802295A4 002263A4  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 802295A4 002263A4  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 802295A8 002263A8  38 00 00 00 */	li r0, 0
 /* 802295AC 002263AC  98 03 05 AB */	stb r0, 0x5ab(r3)
 /* 802295B0 002263B0  4E 80 00 20 */	blr 
@@ -24066,7 +24066,7 @@ lbl_802295C0:
 /* 802295E4 002263E4  41 80 00 1C */	blt lbl_80229600
 /* 802295E8 002263E8  2C 00 00 04 */	cmpwi r0, 4
 /* 802295EC 002263EC  40 80 00 14 */	bge lbl_80229600
-/* 802295F0 002263F0  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 802295F0 002263F0  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 802295F4 002263F4  54 00 10 3A */	slwi r0, r0, 2
 /* 802295F8 002263F8  7C 63 02 14 */	add r3, r3, r0
 /* 802295FC 002263FC  90 83 00 88 */	stw r4, 0x88(r3)
@@ -24082,7 +24082,7 @@ lbl_80229600:
 /* 80229620 00226420  4D 80 00 20 */	bltlr 
 /* 80229624 00226424  2C 00 00 04 */	cmpwi r0, 4
 /* 80229628 00226428  4C 80 00 20 */	bgelr 
-/* 8022962C 0022642C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022962C 0022642C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80229630 00226430  54 00 10 3A */	slwi r0, r0, 2
 /* 80229634 00226434  7C 63 02 14 */	add r3, r3, r0
 /* 80229638 00226438  90 83 00 98 */	stw r4, 0x98(r3)
@@ -24221,43 +24221,43 @@ lbl_802297C4:
 /* 80229810 00226610  7C 04 00 2E */	lwzx r0, r4, r0
 /* 80229814 00226614  7C 09 03 A6 */	mtctr r0
 /* 80229818 00226618  4E 80 04 20 */	bctr 
-/* 8022981C 0022661C  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022981C 0022661C  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80229820 00226620  80 04 00 80 */	lwz r0, 0x80(r4)
 /* 80229824 00226624  50 C0 35 32 */	rlwimi r0, r6, 6, 0x14, 0x19
 /* 80229828 00226628  90 04 00 80 */	stw r0, 0x80(r4)
 /* 8022982C 0022662C  48 00 00 8C */	b lbl_802298B8
-/* 80229830 00226630  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80229830 00226630  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80229834 00226634  80 04 00 80 */	lwz r0, 0x80(r4)
 /* 80229838 00226638  50 C0 63 A6 */	rlwimi r0, r6, 0xc, 0xe, 0x13
 /* 8022983C 0022663C  90 04 00 80 */	stw r0, 0x80(r4)
 /* 80229840 00226640  48 00 00 78 */	b lbl_802298B8
-/* 80229844 00226644  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80229844 00226644  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80229848 00226648  80 04 00 80 */	lwz r0, 0x80(r4)
 /* 8022984C 0022664C  50 C0 92 1A */	rlwimi r0, r6, 0x12, 8, 0xd
 /* 80229850 00226650  90 04 00 80 */	stw r0, 0x80(r4)
 /* 80229854 00226654  48 00 00 64 */	b lbl_802298B8
-/* 80229858 00226658  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80229858 00226658  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022985C 0022665C  80 04 00 80 */	lwz r0, 0x80(r4)
 /* 80229860 00226660  50 C0 C0 8E */	rlwimi r0, r6, 0x18, 2, 7
 /* 80229864 00226664  90 04 00 80 */	stw r0, 0x80(r4)
 /* 80229868 00226668  48 00 00 50 */	b lbl_802298B8
-/* 8022986C 0022666C  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022986C 0022666C  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80229870 00226670  80 04 00 84 */	lwz r0, 0x84(r4)
 /* 80229874 00226674  50 C0 06 BE */	rlwimi r0, r6, 0, 0x1a, 0x1f
 /* 80229878 00226678  90 04 00 84 */	stw r0, 0x84(r4)
 /* 8022987C 0022667C  48 00 00 3C */	b lbl_802298B8
-/* 80229880 00226680  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80229880 00226680  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80229884 00226684  80 04 00 84 */	lwz r0, 0x84(r4)
 /* 80229888 00226688  50 C0 35 32 */	rlwimi r0, r6, 6, 0x14, 0x19
 /* 8022988C 0022668C  90 04 00 84 */	stw r0, 0x84(r4)
 /* 80229890 00226690  48 00 00 28 */	b lbl_802298B8
-/* 80229894 00226694  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80229894 00226694  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80229898 00226698  80 04 00 84 */	lwz r0, 0x84(r4)
 /* 8022989C 0022669C  50 C0 63 A6 */	rlwimi r0, r6, 0xc, 0xe, 0x13
 /* 802298A0 002266A0  90 04 00 84 */	stw r0, 0x84(r4)
 /* 802298A4 002266A4  48 00 00 14 */	b lbl_802298B8
 lbl_802298A8:
-/* 802298A8 002266A8  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 802298A8 002266A8  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 802298AC 002266AC  80 04 00 84 */	lwz r0, 0x84(r4)
 /* 802298B0 002266B0  50 C0 92 1A */	rlwimi r0, r6, 0x12, 8, 0xd
 /* 802298B4 002266B4  90 04 00 84 */	stw r0, 0x84(r4)
@@ -24271,7 +24271,7 @@ lbl_802298B8:
 
 .global GXSetNumTexGens
 GXSetNumTexGens:
-/* 802298D0 002266D0  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 802298D0 002266D0  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 802298D4 002266D4  54 65 06 3E */	clrlwi r5, r3, 0x18
 /* 802298D8 002266D8  38 80 00 10 */	li r4, 0x10
 /* 802298DC 002266DC  80 06 02 04 */	lwz r0, 0x204(r6)
@@ -24301,7 +24301,7 @@ lbl_80229928:
 /* 8022992C 0022672C  4C 80 00 20 */	bgelr 
 /* 80229930 00226730  48 00 00 58 */	b lbl_80229988
 lbl_80229934:
-/* 80229934 00226734  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 80229934 00226734  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 80229938 00226738  38 00 00 01 */	li r0, 1
 /* 8022993C 0022673C  B0 85 00 04 */	sth r4, 4(r5)
 /* 80229940 00226740  A0 65 00 04 */	lhz r3, 4(r5)
@@ -24318,14 +24318,14 @@ lbl_80229934:
 /* 8022996C 0022676C  4E 80 00 20 */	blr 
 lbl_80229970:
 /* 80229970 00226770  7C 84 00 D0 */	neg r4, r4
-/* 80229974 00226774  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80229974 00226774  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80229978 00226778  30 04 FF FF */	addic r0, r4, -1
 /* 8022997C 0022677C  7C 00 21 10 */	subfe r0, r0, r4
 /* 80229980 00226780  98 03 05 A9 */	stb r0, 0x5a9(r3)
 /* 80229984 00226784  4E 80 00 20 */	blr 
 lbl_80229988:
 /* 80229988 00226788  7C 84 00 D0 */	neg r4, r4
-/* 8022998C 0022678C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022998C 0022678C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80229990 00226790  30 04 FF FF */	addic r0, r4, -1
 /* 80229994 00226794  7C 00 21 10 */	subfe r0, r0, r4
 /* 80229998 00226798  98 03 05 AA */	stb r0, 0x5aa(r3)
@@ -24336,7 +24336,7 @@ GXFlush:
 /* 802299A0 002267A0  7C 08 02 A6 */	mflr r0
 /* 802299A4 002267A4  90 01 00 04 */	stw r0, 4(r1)
 /* 802299A8 002267A8  94 21 FF F8 */	stwu r1, -8(r1)
-/* 802299AC 002267AC  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 802299AC 002267AC  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 802299B0 002267B0  80 03 05 AC */	lwz r0, 0x5ac(r3)
 /* 802299B4 002267B4  28 00 00 00 */	cmplwi r0, 0
 /* 802299B8 002267B8  41 82 00 08 */	beq lbl_802299C0
@@ -24364,14 +24364,14 @@ __GXAbort:
 /* 80229A00 00226800  90 01 00 04 */	stw r0, 4(r1)
 /* 80229A04 00226804  94 21 FF D8 */	stwu r1, -0x28(r1)
 /* 80229A08 00226808  BF 61 00 14 */	stmw r27, 0x14(r1)
-/* 80229A0C 0022680C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80229A0C 0022680C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80229A10 00226810  88 03 05 AA */	lbz r0, 0x5aa(r3)
 /* 80229A14 00226814  28 00 00 00 */	cmplwi r0, 0
 /* 80229A18 00226818  41 82 00 B0 */	beq lbl_80229AC8
 /* 80229A1C 0022681C  4B FF F1 95 */	bl GXGetGPFifo
 /* 80229A20 00226820  28 03 00 00 */	cmplwi r3, 0
 /* 80229A24 00226824  41 82 00 A4 */	beq lbl_80229AC8
-/* 80229A28 00226828  80 6D E2 14 */	lwz r3, __memReg-_SDA_BASE_(r13)
+/* 80229A28 00226828  80 6D E2 14 */	lwz r3, __memReg@sda21(r13)
 /* 80229A2C 0022682C  38 C3 00 4E */	addi r6, r3, 0x4e
 /* 80229A30 00226830  A0 83 00 4E */	lhz r4, 0x4e(r3)
 /* 80229A34 00226834  38 A3 00 50 */	addi r5, r3, 0x50
@@ -24400,7 +24400,7 @@ lbl_80229A6C:
 /* 80229A84 00226884  7C 7C E1 10 */	subfe r3, r28, r28
 /* 80229A88 00226888  7C 63 00 D1 */	neg. r3, r3
 /* 80229A8C 0022688C  41 82 FF E0 */	beq lbl_80229A6C
-/* 80229A90 00226890  80 6D E2 14 */	lwz r3, __memReg-_SDA_BASE_(r13)
+/* 80229A90 00226890  80 6D E2 14 */	lwz r3, __memReg@sda21(r13)
 /* 80229A94 00226894  38 C3 00 4E */	addi r6, r3, 0x4e
 /* 80229A98 00226898  A0 83 00 4E */	lhz r4, 0x4e(r3)
 /* 80229A9C 0022689C  38 A3 00 50 */	addi r5, r3, 0x50
@@ -24469,7 +24469,7 @@ GXSetDrawSync:
 /* 80229B7C 0022697C  7C 7E 1B 78 */	mr r30, r3
 /* 80229B80 00226980  48 00 A8 49 */	bl OSDisableInterrupts
 /* 80229B84 00226984  38 C0 00 61 */	li r6, 0x61
-/* 80229B88 00226988  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80229B88 00226988  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80229B8C 0022698C  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 80229B90 00226990  57 C0 04 3E */	clrlwi r0, r30, 0x10
 /* 80229B94 00226994  98 C5 80 00 */	stb r6, 0xCC008000@l(r5)
@@ -24499,7 +24499,7 @@ lbl_80229BC8:
 /* 80229BF0 002269F0  4B FE C2 8D */	bl PPCSync
 /* 80229BF4 002269F4  7F C3 F3 78 */	mr r3, r30
 /* 80229BF8 002269F8  48 00 A7 F9 */	bl OSRestoreInterrupts
-/* 80229BFC 002269FC  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 80229BFC 002269FC  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 80229C00 00226A00  B3 E3 00 02 */	sth r31, 2(r3)
 /* 80229C04 00226A04  80 01 00 1C */	lwz r0, 0x1c(r1)
 /* 80229C08 00226A08  83 E1 00 14 */	lwz r31, 0x14(r1)
@@ -24510,7 +24510,7 @@ lbl_80229BC8:
 
 .global GXReadDrawSync
 GXReadDrawSync:
-/* 80229C1C 00226A1C  80 6D E2 10 */	lwz r3, __peReg-_SDA_BASE_(r13)
+/* 80229C1C 00226A1C  80 6D E2 10 */	lwz r3, __peReg@sda21(r13)
 /* 80229C20 00226A20  A0 63 00 0E */	lhz r3, 0xe(r3)
 /* 80229C24 00226A24  4E 80 00 20 */	blr 
 
@@ -24530,17 +24530,17 @@ GXDrawDone:
 /* 80229C54 00226A54  7C 7F 1B 78 */	mr r31, r3
 /* 80229C58 00226A58  4B FF FD 49 */	bl GXFlush
 /* 80229C5C 00226A5C  38 00 00 00 */	li r0, 0
-/* 80229C60 00226A60  98 0D E2 58 */	stb r0, DrawDone-_SDA_BASE_(r13)
+/* 80229C60 00226A60  98 0D E2 58 */	stb r0, DrawDone@sda21(r13)
 /* 80229C64 00226A64  7F E3 FB 78 */	mr r3, r31
 /* 80229C68 00226A68  48 00 A7 89 */	bl OSRestoreInterrupts
 /* 80229C6C 00226A6C  48 00 A7 5D */	bl OSDisableInterrupts
 /* 80229C70 00226A70  7C 7F 1B 78 */	mr r31, r3
 /* 80229C74 00226A74  48 00 00 0C */	b lbl_80229C80
 lbl_80229C78:
-/* 80229C78 00226A78  38 6D E2 5C */	addi r3, r13, FinishQueue-_SDA_BASE_
+/* 80229C78 00226A78  38 6D E2 5C */	addi r3, r13, FinishQueue@sda21
 /* 80229C7C 00226A7C  48 00 DD 81 */	bl OSSleepThread
 lbl_80229C80:
-/* 80229C80 00226A80  88 0D E2 58 */	lbz r0, DrawDone-_SDA_BASE_(r13)
+/* 80229C80 00226A80  88 0D E2 58 */	lbz r0, DrawDone@sda21(r13)
 /* 80229C84 00226A84  28 00 00 00 */	cmplwi r0, 0
 /* 80229C88 00226A88  41 82 FF F0 */	beq lbl_80229C78
 /* 80229C8C 00226A8C  7F E3 FB 78 */	mr r3, r31
@@ -24554,7 +24554,7 @@ lbl_80229C80:
 .global GXPixModeSync
 GXPixModeSync:
 /* 80229CA8 00226AA8  38 00 00 61 */	li r0, 0x61
-/* 80229CAC 00226AAC  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 80229CAC 00226AAC  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 80229CB0 00226AB0  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 80229CB4 00226AB4  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 80229CB8 00226AB8  38 00 00 00 */	li r0, 0
@@ -24565,7 +24565,7 @@ GXPixModeSync:
 
 .global GXPokeAlphaMode
 GXPokeAlphaMode:
-/* 80229CCC 00226ACC  80 AD E2 10 */	lwz r5, __peReg-_SDA_BASE_(r13)
+/* 80229CCC 00226ACC  80 AD E2 10 */	lwz r5, __peReg@sda21(r13)
 /* 80229CD0 00226AD0  54 80 06 3E */	clrlwi r0, r4, 0x18
 /* 80229CD4 00226AD4  50 60 40 2E */	rlwimi r0, r3, 8, 0, 0x17
 /* 80229CD8 00226AD8  B0 05 00 06 */	sth r0, 6(r5)
@@ -24574,7 +24574,7 @@ GXPokeAlphaMode:
 .global GXPokeAlphaRead
 GXPokeAlphaRead:
 /* 80229CE0 00226AE0  38 A0 00 00 */	li r5, 0
-/* 80229CE4 00226AE4  80 8D E2 10 */	lwz r4, __peReg-_SDA_BASE_(r13)
+/* 80229CE4 00226AE4  80 8D E2 10 */	lwz r4, __peReg@sda21(r13)
 /* 80229CE8 00226AE8  50 65 07 BE */	rlwimi r5, r3, 0, 0x1e, 0x1f
 /* 80229CEC 00226AEC  38 00 00 01 */	li r0, 1
 /* 80229CF0 00226AF0  38 65 00 00 */	addi r3, r5, 0
@@ -24584,7 +24584,7 @@ GXPokeAlphaRead:
 
 .global GXPokeAlphaUpdate
 GXPokeAlphaUpdate:
-/* 80229D00 00226B00  80 8D E2 10 */	lwz r4, __peReg-_SDA_BASE_(r13)
+/* 80229D00 00226B00  80 8D E2 10 */	lwz r4, __peReg@sda21(r13)
 /* 80229D04 00226B04  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 80229D08 00226B08  A0 64 00 02 */	lhz r3, 2(r4)
 /* 80229D0C 00226B0C  50 03 26 F6 */	rlwimi r3, r0, 4, 0x1b, 0x1b
@@ -24593,7 +24593,7 @@ GXPokeAlphaUpdate:
 
 .global GXPokeBlendMode
 GXPokeBlendMode:
-/* 80229D18 00226B18  80 ED E2 10 */	lwz r7, __peReg-_SDA_BASE_(r13)
+/* 80229D18 00226B18  80 ED E2 10 */	lwz r7, __peReg@sda21(r13)
 /* 80229D1C 00226B1C  2C 03 00 01 */	cmpwi r3, 1
 /* 80229D20 00226B20  39 20 00 01 */	li r9, 1
 /* 80229D24 00226B24  A1 47 00 02 */	lhz r10, 2(r7)
@@ -24603,7 +24603,7 @@ GXPokeBlendMode:
 /* 80229D34 00226B34  39 20 00 00 */	li r9, 0
 lbl_80229D38:
 /* 80229D38 00226B38  20 03 00 03 */	subfic r0, r3, 3
-/* 80229D3C 00226B3C  80 ED E2 10 */	lwz r7, __peReg-_SDA_BASE_(r13)
+/* 80229D3C 00226B3C  80 ED E2 10 */	lwz r7, __peReg@sda21(r13)
 /* 80229D40 00226B40  7C 08 00 34 */	cntlzw r8, r0
 /* 80229D44 00226B44  20 03 00 02 */	subfic r0, r3, 2
 /* 80229D48 00226B48  51 2A 07 FE */	rlwimi r10, r9, 0, 0x1f, 0x1f
@@ -24622,7 +24622,7 @@ lbl_80229D38:
 
 .global GXPokeColorUpdate
 GXPokeColorUpdate:
-/* 80229D7C 00226B7C  80 8D E2 10 */	lwz r4, __peReg-_SDA_BASE_(r13)
+/* 80229D7C 00226B7C  80 8D E2 10 */	lwz r4, __peReg@sda21(r13)
 /* 80229D80 00226B80  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 80229D84 00226B84  A0 64 00 02 */	lhz r3, 2(r4)
 /* 80229D88 00226B88  50 03 1F 38 */	rlwimi r3, r0, 3, 0x1c, 0x1c
@@ -24632,7 +24632,7 @@ GXPokeColorUpdate:
 .global GXPokeDstAlpha
 GXPokeDstAlpha:
 /* 80229D94 00226B94  54 80 06 3E */	clrlwi r0, r4, 0x18
-/* 80229D98 00226B98  80 8D E2 10 */	lwz r4, __peReg-_SDA_BASE_(r13)
+/* 80229D98 00226B98  80 8D E2 10 */	lwz r4, __peReg@sda21(r13)
 /* 80229D9C 00226B9C  38 A0 00 00 */	li r5, 0
 /* 80229DA0 00226BA0  50 05 06 3E */	rlwimi r5, r0, 0, 0x18, 0x1f
 /* 80229DA4 00226BA4  54 60 06 3E */	clrlwi r0, r3, 0x18
@@ -24643,7 +24643,7 @@ GXPokeDstAlpha:
 
 .global GXPokeDither
 GXPokeDither:
-/* 80229DB8 00226BB8  80 8D E2 10 */	lwz r4, __peReg-_SDA_BASE_(r13)
+/* 80229DB8 00226BB8  80 8D E2 10 */	lwz r4, __peReg@sda21(r13)
 /* 80229DBC 00226BBC  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 80229DC0 00226BC0  A0 64 00 02 */	lhz r3, 2(r4)
 /* 80229DC4 00226BC4  50 03 17 7A */	rlwimi r3, r0, 2, 0x1d, 0x1d
@@ -24653,7 +24653,7 @@ GXPokeDither:
 .global GXPokeZMode
 GXPokeZMode:
 /* 80229DD0 00226BD0  54 60 06 3E */	clrlwi r0, r3, 0x18
-/* 80229DD4 00226BD4  80 6D E2 10 */	lwz r3, __peReg-_SDA_BASE_(r13)
+/* 80229DD4 00226BD4  80 6D E2 10 */	lwz r3, __peReg@sda21(r13)
 /* 80229DD8 00226BD8  38 C0 00 00 */	li r6, 0
 /* 80229DDC 00226BDC  50 06 07 FE */	rlwimi r6, r0, 0, 0x1f, 0x1f
 /* 80229DE0 00226BE0  50 86 0F 3C */	rlwimi r6, r4, 1, 0x1c, 0x1e
@@ -24669,9 +24669,9 @@ GXSetDrawSyncCallback:
 /* 80229DFC 00226BFC  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 80229E00 00226C00  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 80229E04 00226C04  7C 7E 1B 78 */	mr r30, r3
-/* 80229E08 00226C08  83 ED E2 50 */	lwz r31, TokenCB-_SDA_BASE_(r13)
+/* 80229E08 00226C08  83 ED E2 50 */	lwz r31, TokenCB@sda21(r13)
 /* 80229E0C 00226C0C  48 00 A5 BD */	bl OSDisableInterrupts
-/* 80229E10 00226C10  93 CD E2 50 */	stw r30, TokenCB-_SDA_BASE_(r13)
+/* 80229E10 00226C10  93 CD E2 50 */	stw r30, TokenCB@sda21(r13)
 /* 80229E14 00226C14  48 00 A5 DD */	bl OSRestoreInterrupts
 /* 80229E18 00226C18  7F E3 FB 78 */	mr r3, r31
 /* 80229E1C 00226C1C  80 01 00 1C */	lwz r0, 0x1c(r1)
@@ -24689,8 +24689,8 @@ GXTokenInterruptHandler:
 /* 80229E40 00226C40  93 E1 02 DC */	stw r31, 0x2dc(r1)
 /* 80229E44 00226C44  93 C1 02 D8 */	stw r30, 0x2d8(r1)
 /* 80229E48 00226C48  7C 9E 23 78 */	mr r30, r4
-/* 80229E4C 00226C4C  80 0D E2 50 */	lwz r0, TokenCB-_SDA_BASE_(r13)
-/* 80229E50 00226C50  80 6D E2 10 */	lwz r3, __peReg-_SDA_BASE_(r13)
+/* 80229E4C 00226C4C  80 0D E2 50 */	lwz r0, TokenCB@sda21(r13)
+/* 80229E50 00226C50  80 6D E2 10 */	lwz r3, __peReg@sda21(r13)
 /* 80229E54 00226C54  28 00 00 00 */	cmplwi r0, 0
 /* 80229E58 00226C58  A3 E3 00 0E */	lhz r31, 0xe(r3)
 /* 80229E5C 00226C5C  41 82 00 34 */	beq lbl_80229E90
@@ -24698,7 +24698,7 @@ GXTokenInterruptHandler:
 /* 80229E64 00226C64  48 00 90 39 */	bl OSClearContext
 /* 80229E68 00226C68  38 61 00 10 */	addi r3, r1, 0x10
 /* 80229E6C 00226C6C  48 00 8E 69 */	bl OSSetCurrentContext
-/* 80229E70 00226C70  81 8D E2 50 */	lwz r12, TokenCB-_SDA_BASE_(r13)
+/* 80229E70 00226C70  81 8D E2 50 */	lwz r12, TokenCB@sda21(r13)
 /* 80229E74 00226C74  38 7F 00 00 */	addi r3, r31, 0
 /* 80229E78 00226C78  7D 88 03 A6 */	mtlr r12
 /* 80229E7C 00226C7C  4E 80 00 21 */	blrl 
@@ -24707,7 +24707,7 @@ GXTokenInterruptHandler:
 /* 80229E88 00226C88  7F C3 F3 78 */	mr r3, r30
 /* 80229E8C 00226C8C  48 00 8E 49 */	bl OSSetCurrentContext
 lbl_80229E90:
-/* 80229E90 00226C90  80 6D E2 10 */	lwz r3, __peReg-_SDA_BASE_(r13)
+/* 80229E90 00226C90  80 6D E2 10 */	lwz r3, __peReg@sda21(r13)
 /* 80229E94 00226C94  38 00 00 01 */	li r0, 1
 /* 80229E98 00226C98  A0 83 00 0A */	lhz r4, 0xa(r3)
 /* 80229E9C 00226C9C  50 04 17 7A */	rlwimi r4, r0, 2, 0x1d, 0x1d
@@ -24727,9 +24727,9 @@ GXSetDrawDoneCallback:
 /* 80229EC8 00226CC8  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 80229ECC 00226CCC  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 80229ED0 00226CD0  7C 7E 1B 78 */	mr r30, r3
-/* 80229ED4 00226CD4  83 ED E2 54 */	lwz r31, DrawDoneCB-_SDA_BASE_(r13)
+/* 80229ED4 00226CD4  83 ED E2 54 */	lwz r31, DrawDoneCB@sda21(r13)
 /* 80229ED8 00226CD8  48 00 A4 F1 */	bl OSDisableInterrupts
-/* 80229EDC 00226CDC  93 CD E2 54 */	stw r30, DrawDoneCB-_SDA_BASE_(r13)
+/* 80229EDC 00226CDC  93 CD E2 54 */	stw r30, DrawDoneCB@sda21(r13)
 /* 80229EE0 00226CE0  48 00 A5 11 */	bl OSRestoreInterrupts
 /* 80229EE4 00226CE4  7F E3 FB 78 */	mr r3, r31
 /* 80229EE8 00226CE8  80 01 00 1C */	lwz r0, 0x1c(r1)
@@ -24747,19 +24747,19 @@ GXFinishInterruptHandler:
 /* 80229F0C 00226D0C  94 21 FD 20 */	stwu r1, -0x2e0(r1)
 /* 80229F10 00226D10  93 E1 02 DC */	stw r31, 0x2dc(r1)
 /* 80229F14 00226D14  3B E4 00 00 */	addi r31, r4, 0
-/* 80229F18 00226D18  80 AD E2 10 */	lwz r5, __peReg-_SDA_BASE_(r13)
+/* 80229F18 00226D18  80 AD E2 10 */	lwz r5, __peReg@sda21(r13)
 /* 80229F1C 00226D1C  A0 05 00 0A */	lhz r0, 0xa(r5)
 /* 80229F20 00226D20  50 60 1F 38 */	rlwimi r0, r3, 3, 0x1c, 0x1c
 /* 80229F24 00226D24  B0 05 00 0A */	sth r0, 0xa(r5)
-/* 80229F28 00226D28  80 0D E2 54 */	lwz r0, DrawDoneCB-_SDA_BASE_(r13)
-/* 80229F2C 00226D2C  98 6D E2 58 */	stb r3, DrawDone-_SDA_BASE_(r13)
+/* 80229F28 00226D28  80 0D E2 54 */	lwz r0, DrawDoneCB@sda21(r13)
+/* 80229F2C 00226D2C  98 6D E2 58 */	stb r3, DrawDone@sda21(r13)
 /* 80229F30 00226D30  28 00 00 00 */	cmplwi r0, 0
 /* 80229F34 00226D34  41 82 00 30 */	beq lbl_80229F64
 /* 80229F38 00226D38  38 61 00 10 */	addi r3, r1, 0x10
 /* 80229F3C 00226D3C  48 00 8F 61 */	bl OSClearContext
 /* 80229F40 00226D40  38 61 00 10 */	addi r3, r1, 0x10
 /* 80229F44 00226D44  48 00 8D 91 */	bl OSSetCurrentContext
-/* 80229F48 00226D48  81 8D E2 54 */	lwz r12, DrawDoneCB-_SDA_BASE_(r13)
+/* 80229F48 00226D48  81 8D E2 54 */	lwz r12, DrawDoneCB@sda21(r13)
 /* 80229F4C 00226D4C  7D 88 03 A6 */	mtlr r12
 /* 80229F50 00226D50  4E 80 00 21 */	blrl 
 /* 80229F54 00226D54  38 61 00 10 */	addi r3, r1, 0x10
@@ -24767,7 +24767,7 @@ GXFinishInterruptHandler:
 /* 80229F5C 00226D5C  7F E3 FB 78 */	mr r3, r31
 /* 80229F60 00226D60  48 00 8D 75 */	bl OSSetCurrentContext
 lbl_80229F64:
-/* 80229F64 00226D64  38 6D E2 5C */	addi r3, r13, FinishQueue-_SDA_BASE_
+/* 80229F64 00226D64  38 6D E2 5C */	addi r3, r13, FinishQueue@sda21
 /* 80229F68 00226D68  48 00 DB 81 */	bl OSWakeupThread
 /* 80229F6C 00226D6C  80 01 02 E4 */	lwz r0, 0x2e4(r1)
 /* 80229F70 00226D70  83 E1 02 DC */	lwz r31, 0x2dc(r1)
@@ -24788,13 +24788,13 @@ __GXPEInit:
 /* 80229FA0 00226DA0  38 83 9F 00 */	addi r4, r3, GXFinishInterruptHandler@l
 /* 80229FA4 00226DA4  38 60 00 13 */	li r3, 0x13
 /* 80229FA8 00226DA8  48 00 A4 6D */	bl __OSSetInterruptHandler
-/* 80229FAC 00226DAC  38 6D E2 5C */	addi r3, r13, FinishQueue-_SDA_BASE_
+/* 80229FAC 00226DAC  38 6D E2 5C */	addi r3, r13, FinishQueue@sda21
 /* 80229FB0 00226DB0  48 00 CC 1D */	bl OSInitThreadQueue
 /* 80229FB4 00226DB4  38 60 20 00 */	li r3, 0x2000
 /* 80229FB8 00226DB8  48 00 A8 61 */	bl __OSUnmaskInterrupts
 /* 80229FBC 00226DBC  38 60 10 00 */	li r3, 0x1000
 /* 80229FC0 00226DC0  48 00 A8 59 */	bl __OSUnmaskInterrupts
-/* 80229FC4 00226DC4  80 6D E2 10 */	lwz r3, __peReg-_SDA_BASE_(r13)
+/* 80229FC4 00226DC4  80 6D E2 10 */	lwz r3, __peReg@sda21(r13)
 /* 80229FC8 00226DC8  38 00 00 01 */	li r0, 1
 /* 80229FCC 00226DCC  A0 83 00 0A */	lhz r4, 0xa(r3)
 /* 80229FD0 00226DD0  50 04 17 7A */	rlwimi r4, r0, 2, 0x1d, 0x1d
@@ -24813,7 +24813,7 @@ __GXSetDirtyState:
 /* 80229FF8 00226DF8  90 01 00 04 */	stw r0, 4(r1)
 /* 80229FFC 00226DFC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8022A000 00226E00  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 8022A004 00226E04  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022A004 00226E04  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022A008 00226E08  83 E3 05 AC */	lwz r31, 0x5ac(r3)
 /* 8022A00C 00226E0C  57 E0 07 FF */	clrlwi. r0, r31, 0x1f
 /* 8022A010 00226E10  41 82 00 08 */	beq lbl_8022A018
@@ -24839,7 +24839,7 @@ lbl_8022A048:
 /* 8022A04C 00226E4C  41 82 00 08 */	beq lbl_8022A054
 /* 8022A050 00226E50  4B FF EE 91 */	bl __GXCalculateVLim
 lbl_8022A054:
-/* 8022A054 00226E54  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022A054 00226E54  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022A058 00226E58  38 00 00 00 */	li r0, 0
 /* 8022A05C 00226E5C  90 03 05 AC */	stw r0, 0x5ac(r3)
 /* 8022A060 00226E60  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -24860,7 +24860,7 @@ GXBegin:
 /* 8022A090 00226E90  3B A4 00 00 */	addi r29, r4, 0
 /* 8022A094 00226E94  93 81 00 18 */	stw r28, 0x18(r1)
 /* 8022A098 00226E98  3B 83 00 00 */	addi r28, r3, 0
-/* 8022A09C 00226E9C  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022A09C 00226E9C  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022A0A0 00226EA0  83 E6 05 AC */	lwz r31, 0x5ac(r6)
 /* 8022A0A4 00226EA4  28 1F 00 00 */	cmplwi r31, 0
 /* 8022A0A8 00226EA8  41 82 00 58 */	beq lbl_8022A100
@@ -24888,11 +24888,11 @@ lbl_8022A0E8:
 /* 8022A0EC 00226EEC  41 82 00 08 */	beq lbl_8022A0F4
 /* 8022A0F0 00226EF0  4B FF ED F1 */	bl __GXCalculateVLim
 lbl_8022A0F4:
-/* 8022A0F4 00226EF4  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022A0F4 00226EF4  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022A0F8 00226EF8  38 00 00 00 */	li r0, 0
 /* 8022A0FC 00226EFC  90 03 05 AC */	stw r0, 0x5ac(r3)
 lbl_8022A100:
-/* 8022A100 00226F00  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022A100 00226F00  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022A104 00226F04  80 03 00 00 */	lwz r0, 0(r3)
 /* 8022A108 00226F08  28 00 00 00 */	cmplwi r0, 0
 /* 8022A10C 00226F0C  40 82 00 08 */	bne lbl_8022A114
@@ -24913,7 +24913,7 @@ lbl_8022A114:
 
 .global __GXSendFlushPrim
 __GXSendFlushPrim:
-/* 8022A144 00226F44  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022A144 00226F44  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022A148 00226F48  38 00 00 98 */	li r0, 0x98
 /* 8022A14C 00226F4C  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022A150 00226F50  A0 C3 00 04 */	lhz r6, 4(r3)
@@ -24947,14 +24947,14 @@ lbl_8022A1B4:
 /* 8022A1B4 00226FB4  90 85 80 00 */	stw r4, -0x8000(r5)
 /* 8022A1B8 00226FB8  42 00 FF FC */	bdnz lbl_8022A1B4
 lbl_8022A1BC:
-/* 8022A1BC 00226FBC  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022A1BC 00226FBC  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022A1C0 00226FC0  38 00 00 01 */	li r0, 1
 /* 8022A1C4 00226FC4  B0 03 00 02 */	sth r0, 2(r3)
 /* 8022A1C8 00226FC8  4E 80 00 20 */	blr 
 
 .global GXSetLineWidth
 GXSetLineWidth:
-/* 8022A1CC 00226FCC  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022A1CC 00226FCC  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022A1D0 00226FD0  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 8022A1D4 00226FD4  38 60 00 61 */	li r3, 0x61
 /* 8022A1D8 00226FD8  80 C7 00 7C */	lwz r6, 0x7c(r7)
@@ -24973,7 +24973,7 @@ GXSetLineWidth:
 
 .global GXSetPointSize
 GXSetPointSize:
-/* 8022A20C 0022700C  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022A20C 0022700C  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022A210 00227010  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 8022A214 00227014  38 60 00 61 */	li r3, 0x61
 /* 8022A218 00227018  80 C7 00 7C */	lwz r6, 0x7c(r7)
@@ -24992,7 +24992,7 @@ GXSetPointSize:
 
 .global GXEnableTexOffsets
 GXEnableTexOffsets:
-/* 8022A24C 0022704C  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022A24C 0022704C  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022A250 00227050  54 63 10 3A */	slwi r3, r3, 2
 /* 8022A254 00227054  54 A0 06 3E */	clrlwi r0, r5, 0x18
 /* 8022A258 00227058  7C C7 1A 14 */	add r6, r7, r3
@@ -25025,7 +25025,7 @@ lbl_8022A2AC:
 lbl_8022A2B4:
 /* 8022A2B4 002270B4  38 60 00 01 */	li r3, 1
 lbl_8022A2B8:
-/* 8022A2B8 002270B8  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022A2B8 002270B8  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022A2BC 002270BC  80 04 02 04 */	lwz r0, 0x204(r4)
 /* 8022A2C0 002270C0  50 60 74 22 */	rlwimi r0, r3, 0xe, 0x10, 0x11
 /* 8022A2C4 002270C4  90 04 02 04 */	stw r0, 0x204(r4)
@@ -25036,7 +25036,7 @@ lbl_8022A2B8:
 
 .global GXGetCullMode
 GXGetCullMode:
-/* 8022A2D8 002270D8  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022A2D8 002270D8  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022A2DC 002270DC  80 04 02 04 */	lwz r0, 0x204(r4)
 /* 8022A2E0 002270E0  54 00 97 BE */	rlwinm r0, r0, 0x12, 0x1e, 0x1f
 /* 8022A2E4 002270E4  2C 00 00 02 */	cmpwi r0, 2
@@ -25059,7 +25059,7 @@ lbl_8022A314:
 
 .global GXSetCoPlanar
 GXSetCoPlanar:
-/* 8022A31C 0022711C  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022A31C 0022711C  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022A320 00227120  38 80 00 61 */	li r4, 0x61
 /* 8022A324 00227124  3C 00 FE 08 */	lis r0, 0xfe08
 /* 8022A328 00227128  80 A6 02 04 */	lwz r5, 0x204(r6)
@@ -25076,7 +25076,7 @@ GXSetCoPlanar:
 .global __GXSetGenMode
 __GXSetGenMode:
 /* 8022A350 00227150  38 00 00 61 */	li r0, 0x61
-/* 8022A354 00227154  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022A354 00227154  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022A358 00227158  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022A35C 0022715C  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 8022A360 00227160  38 00 00 00 */	li r0, 0
@@ -25087,7 +25087,7 @@ __GXSetGenMode:
 
 .global GXSetDispCopySrc
 GXSetDispCopySrc:
-/* 8022A374 00227174  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 8022A374 00227174  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022A378 00227178  39 20 00 00 */	li r9, 0
 /* 8022A37C 0022717C  54 A7 04 3E */	clrlwi r7, r5, 0x10
 /* 8022A380 00227180  91 28 01 E0 */	stw r9, 0x1e0(r8)
@@ -25121,7 +25121,7 @@ GXSetDispCopySrc:
 
 .global GXSetTexCopySrc
 GXSetTexCopySrc:
-/* 8022A3F0 002271F0  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 8022A3F0 002271F0  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022A3F4 002271F4  39 20 00 00 */	li r9, 0
 /* 8022A3F8 002271F8  54 A7 04 3E */	clrlwi r7, r5, 0x10
 /* 8022A3FC 002271FC  91 28 01 F0 */	stw r9, 0x1f0(r8)
@@ -25155,7 +25155,7 @@ GXSetTexCopySrc:
 
 .global GXSetDispCopyDst
 GXSetDispCopyDst:
-/* 8022A46C 0022726C  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022A46C 0022726C  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022A470 00227270  38 00 00 00 */	li r0, 0
 /* 8022A474 00227274  90 04 01 E8 */	stw r0, 0x1e8(r4)
 /* 8022A478 00227278  54 60 0C 3C */	rlwinm r0, r3, 1, 0x10, 0x1e
@@ -25181,7 +25181,7 @@ GXSetTexCopyDst:
 /* 8022A4BC 002272BC  54 BF 07 3E */	clrlwi r31, r5, 0x1c
 /* 8022A4C0 002272C0  93 C1 00 20 */	stw r30, 0x20(r1)
 /* 8022A4C4 002272C4  3B C6 00 00 */	addi r30, r6, 0
-/* 8022A4C8 002272C8  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022A4C8 002272C8  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022A4CC 002272CC  98 07 02 00 */	stb r0, 0x200(r7)
 /* 8022A4D0 002272D0  38 E4 00 00 */	addi r7, r4, 0
 /* 8022A4D4 002272D4  40 82 00 08 */	bne lbl_8022A4DC
@@ -25196,21 +25196,21 @@ lbl_8022A4DC:
 /* 8022A4F4 002272F4  40 80 00 08 */	bge lbl_8022A4FC
 /* 8022A4F8 002272F8  48 00 00 1C */	b lbl_8022A514
 lbl_8022A4FC:
-/* 8022A4FC 002272FC  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022A4FC 002272FC  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022A500 00227300  38 00 00 03 */	li r0, 3
 /* 8022A504 00227304  80 64 01 FC */	lwz r3, 0x1fc(r4)
 /* 8022A508 00227308  50 03 7B E0 */	rlwimi r3, r0, 0xf, 0xf, 0x10
 /* 8022A50C 0022730C  90 64 01 FC */	stw r3, 0x1fc(r4)
 /* 8022A510 00227310  48 00 00 18 */	b lbl_8022A528
 lbl_8022A514:
-/* 8022A514 00227314  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022A514 00227314  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022A518 00227318  38 00 00 02 */	li r0, 2
 /* 8022A51C 0022731C  80 64 01 FC */	lwz r3, 0x1fc(r4)
 /* 8022A520 00227320  50 03 7B E0 */	rlwimi r3, r0, 0xf, 0xf, 0x10
 /* 8022A524 00227324  90 64 01 FC */	stw r3, 0x1fc(r4)
 lbl_8022A528:
 /* 8022A528 00227328  54 A3 06 F6 */	rlwinm r3, r5, 0, 0x1b, 0x1b
-/* 8022A52C 0022732C  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022A52C 0022732C  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022A530 00227330  38 03 FF F0 */	addi r0, r3, -16
 /* 8022A534 00227334  7C 00 00 34 */	cntlzw r0, r0
 /* 8022A538 00227338  54 00 DE 3E */	rlwinm r0, r0, 0x1b, 0x18, 0x1f
@@ -25226,7 +25226,7 @@ lbl_8022A528:
 /* 8022A560 00227360  38 E1 00 18 */	addi r7, r1, 0x18
 /* 8022A564 00227364  39 01 00 14 */	addi r8, r1, 0x14
 /* 8022A568 00227368  48 00 0F BD */	bl __GetImageTileCount
-/* 8022A56C 0022736C  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022A56C 0022736C  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022A570 00227370  38 00 00 00 */	li r0, 0
 /* 8022A574 00227374  38 60 00 4D */	li r3, 0x4d
 /* 8022A578 00227378  90 07 01 F8 */	stw r0, 0x1f8(r7)
@@ -25254,7 +25254,7 @@ lbl_8022A528:
 
 .global GXSetDispCopyFrame2Field
 GXSetDispCopyFrame2Field:
-/* 8022A5D0 002273D0  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022A5D0 002273D0  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022A5D4 002273D4  38 00 00 00 */	li r0, 0
 /* 8022A5D8 002273D8  80 85 01 EC */	lwz r4, 0x1ec(r5)
 /* 8022A5DC 002273DC  50 64 64 A6 */	rlwimi r4, r3, 0xc, 0x12, 0x13
@@ -25267,7 +25267,7 @@ GXSetDispCopyFrame2Field:
 .global GXSetCopyClamp
 GXSetCopyClamp:
 /* 8022A5F4 002273F4  54 65 07 FE */	clrlwi r5, r3, 0x1f
-/* 8022A5F8 002273F8  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022A5F8 002273F8  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022A5FC 002273FC  38 05 FF FF */	addi r0, r5, -1
 /* 8022A600 00227400  7C 05 00 34 */	cntlzw r5, r0
 /* 8022A604 00227404  80 04 01 EC */	lwz r0, 0x1ec(r4)
@@ -25308,11 +25308,11 @@ GXGetYScaleFactor:
 /* 8022A684 00227484  93 E1 00 2C */	stw r31, 0x2c(r1)
 /* 8022A688 00227488  90 01 00 30 */	stw r0, 0x30(r1)
 /* 8022A68C 0022748C  90 01 00 28 */	stw r0, 0x28(r1)
-/* 8022A690 00227490  C8 62 DA 88 */	lfd f3, _esc__2_234_0-_SDA2_BASE_(r2)
+/* 8022A690 00227490  C8 62 DA 88 */	lfd f3, _esc__2_234_0@sda21(r2)
 /* 8022A694 00227494  C8 41 00 30 */	lfd f2, 0x30(r1)
 /* 8022A698 00227498  C8 21 00 28 */	lfd f1, 0x28(r1)
 /* 8022A69C 0022749C  EC 42 18 28 */	fsubs f2, f2, f3
-/* 8022A6A0 002274A0  C0 02 DA 80 */	lfs f0, _esc__2_179-_SDA2_BASE_(r2)
+/* 8022A6A0 002274A0  C0 02 DA 80 */	lfs f0, _esc__2_179@sda21(r2)
 /* 8022A6A4 002274A4  EC 21 18 28 */	fsubs f1, f1, f3
 /* 8022A6A8 002274A8  EC 42 08 24 */	fdivs f2, f2, f1
 /* 8022A6AC 002274AC  EC 20 10 24 */	fdivs f1, f0, f2
@@ -25343,9 +25343,9 @@ lbl_8022A700:
 /* 8022A704 00227504  40 81 00 08 */	ble lbl_8022A70C
 /* 8022A708 00227508  38 60 04 00 */	li r3, 0x400
 lbl_8022A70C:
-/* 8022A70C 0022750C  CB E2 DA 88 */	lfd f31, _esc__2_234_0-_SDA2_BASE_(r2)
+/* 8022A70C 0022750C  CB E2 DA 88 */	lfd f31, _esc__2_234_0@sda21(r2)
 /* 8022A710 00227510  7C 60 1B 78 */	mr r0, r3
-/* 8022A714 00227514  C3 C2 DA 80 */	lfs f30, _esc__2_179-_SDA2_BASE_(r2)
+/* 8022A714 00227514  C3 C2 DA 80 */	lfs f30, _esc__2_179@sda21(r2)
 /* 8022A718 00227518  57 3D 04 3E */	clrlwi r29, r25, 0x10
 /* 8022A71C 0022751C  57 7A 04 3E */	clrlwi r26, r27, 0x10
 /* 8022A720 00227520  3F 20 43 30 */	lis r25, 0x4330
@@ -25392,8 +25392,8 @@ lbl_8022A7AC:
 /* 8022A7AC 002275AC  7C 00 E8 40 */	cmplw r0, r29
 /* 8022A7B0 002275B0  41 81 FF 78 */	bgt lbl_8022A728
 /* 8022A7B4 002275B4  FF A0 E0 90 */	fmr f29, f28
-/* 8022A7B8 002275B8  CB C2 DA 88 */	lfd f30, _esc__2_234_0-_SDA2_BASE_(r2)
-/* 8022A7BC 002275BC  C3 E2 DA 80 */	lfs f31, _esc__2_179-_SDA2_BASE_(r2)
+/* 8022A7B8 002275B8  CB C2 DA 88 */	lfd f30, _esc__2_234_0@sda21(r2)
+/* 8022A7BC 002275BC  C3 E2 DA 80 */	lfs f31, _esc__2_179@sda21(r2)
 /* 8022A7C0 002275C0  57 7B 04 3E */	clrlwi r27, r27, 0x10
 /* 8022A7C4 002275C4  3F 40 43 30 */	lis r26, 0x4330
 /* 8022A7C8 002275C8  48 00 00 8C */	b lbl_8022A854
@@ -25455,11 +25455,11 @@ GXSetDispCopyYScale:
 /* 8022A884 00227684  7C 08 02 A6 */	mflr r0
 /* 8022A888 00227688  90 01 00 04 */	stw r0, 4(r1)
 /* 8022A88C 0022768C  94 21 FF F8 */	stwu r1, -8(r1)
-/* 8022A890 00227690  C0 02 DA 80 */	lfs f0, _esc__2_179-_SDA2_BASE_(r2)
+/* 8022A890 00227690  C0 02 DA 80 */	lfs f0, _esc__2_179@sda21(r2)
 /* 8022A894 00227694  EC 20 08 24 */	fdivs f1, f0, f1
 /* 8022A898 00227698  4B FD 05 5D */	bl __cvt_fp2unsigned
 /* 8022A89C 0022769C  54 67 05 FE */	clrlwi r7, r3, 0x17
-/* 8022A8A0 002276A0  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022A8A0 002276A0  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022A8A4 002276A4  38 00 00 61 */	li r0, 0x61
 /* 8022A8A8 002276A8  3C 80 CC 01 */	lis r4, 0xCC008000@ha
 /* 8022A8AC 002276AC  20 A7 01 00 */	subfic r5, r7, 0x100
@@ -25516,7 +25516,7 @@ GXSetCopyClear:
 /* 8022A95C 0022775C  39 20 00 61 */	li r9, 0x61
 /* 8022A960 00227760  50 A6 06 3E */	rlwimi r6, r5, 0, 0x18, 0x1f
 /* 8022A964 00227764  3D 00 CC 01 */	lis r8, 0xCC008000@ha
-/* 8022A968 00227768  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022A968 00227768  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022A96C 0022776C  50 06 44 2E */	rlwimi r6, r0, 8, 0x10, 0x17
 /* 8022A970 00227770  99 28 80 00 */	stb r9, 0xCC008000@l(r8)
 /* 8022A974 00227774  38 00 00 4F */	li r0, 0x4f
@@ -25666,7 +25666,7 @@ lbl_8022AB78:
 /* 8022AB9C 0022799C  50 6B 92 1A */	rlwimi r11, r3, 0x12, 8, 0xd
 lbl_8022ABA0:
 /* 8022ABA0 002279A0  38 C0 00 61 */	li r6, 0x61
-/* 8022ABA4 002279A4  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022ABA4 002279A4  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022ABA8 002279A8  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022ABAC 002279AC  98 C5 80 00 */	stb r6, 0xCC008000@l(r5)
 /* 8022ABB0 002279B0  38 80 00 00 */	li r4, 0
@@ -25680,7 +25680,7 @@ lbl_8022ABA0:
 
 .global GXSetDispCopyGamma
 GXSetDispCopyGamma:
-/* 8022ABD0 002279D0  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022ABD0 002279D0  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022ABD4 002279D4  80 04 01 EC */	lwz r0, 0x1ec(r4)
 /* 8022ABD8 002279D8  50 60 3D F0 */	rlwimi r0, r3, 7, 0x17, 0x18
 /* 8022ABDC 002279DC  90 04 01 EC */	stw r0, 0x1ec(r4)
@@ -25690,7 +25690,7 @@ GXSetDispCopyGamma:
 GXCopyDisp:
 /* 8022ABE4 002279E4  54 80 06 3F */	clrlwi. r0, r4, 0x18
 /* 8022ABE8 002279E8  41 82 00 44 */	beq lbl_8022AC2C
-/* 8022ABEC 002279EC  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022ABEC 002279EC  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022ABF0 002279F0  38 00 00 01 */	li r0, 1
 /* 8022ABF4 002279F4  38 C0 00 61 */	li r6, 0x61
 /* 8022ABF8 002279F8  81 07 01 D8 */	lwz r8, 0x1d8(r7)
@@ -25710,13 +25710,13 @@ lbl_8022AC2C:
 /* 8022AC2C 00227A2C  54 80 06 3F */	clrlwi. r0, r4, 0x18
 /* 8022AC30 00227A30  39 40 00 00 */	li r10, 0
 /* 8022AC34 00227A34  40 82 00 18 */	bne lbl_8022AC4C
-/* 8022AC38 00227A38  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022AC38 00227A38  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022AC3C 00227A3C  80 05 01 DC */	lwz r0, 0x1dc(r5)
 /* 8022AC40 00227A40  54 00 07 7E */	clrlwi r0, r0, 0x1d
 /* 8022AC44 00227A44  28 00 00 03 */	cmplwi r0, 3
 /* 8022AC48 00227A48  40 82 00 34 */	bne lbl_8022AC7C
 lbl_8022AC4C:
-/* 8022AC4C 00227A4C  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022AC4C 00227A4C  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022AC50 00227A50  80 C5 01 DC */	lwz r6, 0x1dc(r5)
 /* 8022AC54 00227A54  54 C0 D7 FE */	rlwinm r0, r6, 0x1a, 0x1f, 0x1f
 /* 8022AC58 00227A58  28 00 00 01 */	cmplwi r0, 1
@@ -25730,7 +25730,7 @@ lbl_8022AC4C:
 /* 8022AC78 00227A78  39 40 00 01 */	li r10, 1
 lbl_8022AC7C:
 /* 8022AC7C 00227A7C  39 00 00 61 */	li r8, 0x61
-/* 8022AC80 00227A80  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022AC80 00227A80  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022AC84 00227A84  3C E0 CC 01 */	lis r7, 0xCC008000@ha
 /* 8022AC88 00227A88  99 07 80 00 */	stb r8, 0xCC008000@l(r7)
 /* 8022AC8C 00227A8C  39 20 00 00 */	li r9, 0
@@ -25773,13 +25773,13 @@ lbl_8022AD1C:
 /* 8022AD1C 00227B1C  55 40 06 3F */	clrlwi. r0, r10, 0x18
 /* 8022AD20 00227B20  41 82 00 1C */	beq lbl_8022AD3C
 /* 8022AD24 00227B24  38 00 00 61 */	li r0, 0x61
-/* 8022AD28 00227B28  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022AD28 00227B28  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022AD2C 00227B2C  3C 80 CC 01 */	lis r4, 0xCC008000@ha
 /* 8022AD30 00227B30  98 04 80 00 */	stb r0, 0xCC008000@l(r4)
 /* 8022AD34 00227B34  80 03 01 DC */	lwz r0, 0x1dc(r3)
 /* 8022AD38 00227B38  90 04 80 00 */	stw r0, -0x8000(r4)
 lbl_8022AD3C:
-/* 8022AD3C 00227B3C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022AD3C 00227B3C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022AD40 00227B40  38 00 00 00 */	li r0, 0
 /* 8022AD44 00227B44  B0 03 00 02 */	sth r0, 2(r3)
 /* 8022AD48 00227B48  4E 80 00 20 */	blr 
@@ -25788,7 +25788,7 @@ lbl_8022AD3C:
 GXCopyTex:
 /* 8022AD4C 00227B4C  54 80 06 3F */	clrlwi. r0, r4, 0x18
 /* 8022AD50 00227B50  41 82 00 44 */	beq lbl_8022AD94
-/* 8022AD54 00227B54  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022AD54 00227B54  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022AD58 00227B58  38 00 00 01 */	li r0, 1
 /* 8022AD5C 00227B5C  38 C0 00 61 */	li r6, 0x61
 /* 8022AD60 00227B60  81 07 01 D8 */	lwz r8, 0x1d8(r7)
@@ -25805,7 +25805,7 @@ GXCopyTex:
 /* 8022AD8C 00227B8C  98 C5 80 00 */	stb r6, -0x8000(r5)
 /* 8022AD90 00227B90  90 E5 80 00 */	stw r7, -0x8000(r5)
 lbl_8022AD94:
-/* 8022AD94 00227B94  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022AD94 00227B94  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022AD98 00227B98  38 00 00 00 */	li r0, 0
 /* 8022AD9C 00227B9C  88 A6 02 00 */	lbz r5, 0x200(r6)
 /* 8022ADA0 00227BA0  80 E6 01 DC */	lwz r7, 0x1dc(r6)
@@ -25839,7 +25839,7 @@ lbl_8022ADF0:
 /* 8022AE04 00227C04  90 E5 80 00 */	stw r7, -0x8000(r5)
 lbl_8022AE08:
 /* 8022AE08 00227C08  39 20 00 61 */	li r9, 0x61
-/* 8022AE0C 00227C0C  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022AE0C 00227C0C  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022AE10 00227C10  3D 00 CC 01 */	lis r8, 0xCC008000@ha
 /* 8022AE14 00227C14  99 28 80 00 */	stb r9, 0xCC008000@l(r8)
 /* 8022AE18 00227C18  54 85 06 3F */	clrlwi. r5, r4, 0x18
@@ -25882,13 +25882,13 @@ lbl_8022AEA8:
 /* 8022AEA8 00227CA8  54 00 06 3F */	clrlwi. r0, r0, 0x18
 /* 8022AEAC 00227CAC  41 82 00 1C */	beq lbl_8022AEC8
 /* 8022AEB0 00227CB0  38 00 00 61 */	li r0, 0x61
-/* 8022AEB4 00227CB4  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022AEB4 00227CB4  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022AEB8 00227CB8  3C 80 CC 01 */	lis r4, 0xCC008000@ha
 /* 8022AEBC 00227CBC  98 04 80 00 */	stb r0, 0xCC008000@l(r4)
 /* 8022AEC0 00227CC0  80 03 01 DC */	lwz r0, 0x1dc(r3)
 /* 8022AEC4 00227CC4  90 04 80 00 */	stw r0, -0x8000(r4)
 lbl_8022AEC8:
-/* 8022AEC8 00227CC8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022AEC8 00227CC8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022AECC 00227CCC  38 00 00 00 */	li r0, 0
 /* 8022AED0 00227CD0  B0 03 00 02 */	sth r0, 2(r3)
 /* 8022AED4 00227CD4  4E 80 00 20 */	blr 
@@ -25896,7 +25896,7 @@ lbl_8022AEC8:
 .global GXClearBoundingBox
 GXClearBoundingBox:
 /* 8022AED8 00227CD8  38 C0 00 61 */	li r6, 0x61
-/* 8022AEDC 00227CDC  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022AEDC 00227CDC  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022AEE0 00227CE0  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022AEE4 00227CE4  3C 80 55 00 */	lis r4, 0x550003FF@ha
 /* 8022AEE8 00227CE8  98 C5 80 00 */	stb r6, 0xCC008000@l(r5)
@@ -25936,18 +25936,18 @@ GXInitLightSpot:
 /* 8022AF4C 00227D4C  3B E4 00 00 */	addi r31, r4, 0
 /* 8022AF50 00227D50  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 8022AF54 00227D54  3B C3 00 00 */	addi r30, r3, 0
-/* 8022AF58 00227D58  C0 02 DA 90 */	lfs f0, _esc__2_134_0-_SDA2_BASE_(r2)
+/* 8022AF58 00227D58  C0 02 DA 90 */	lfs f0, _esc__2_134_0@sda21(r2)
 /* 8022AF5C 00227D5C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8022AF60 00227D60  4C 40 13 82 */	cror 2, 0, 2
 /* 8022AF64 00227D64  41 82 00 10 */	beq lbl_8022AF74
-/* 8022AF68 00227D68  C0 02 DA 94 */	lfs f0, _esc__2_135_0-_SDA2_BASE_(r2)
+/* 8022AF68 00227D68  C0 02 DA 94 */	lfs f0, _esc__2_135_0@sda21(r2)
 /* 8022AF6C 00227D6C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8022AF70 00227D70  40 81 00 08 */	ble lbl_8022AF78
 lbl_8022AF74:
 /* 8022AF74 00227D74  3B E0 00 00 */	li r31, 0
 lbl_8022AF78:
-/* 8022AF78 00227D78  C0 42 DA 98 */	lfs f2, _esc__2_136_0-_SDA2_BASE_(r2)
-/* 8022AF7C 00227D7C  C0 02 DA 9C */	lfs f0, _esc__2_137-_SDA2_BASE_(r2)
+/* 8022AF78 00227D78  C0 42 DA 98 */	lfs f2, _esc__2_136_0@sda21(r2)
+/* 8022AF7C 00227D7C  C0 02 DA 9C */	lfs f0, _esc__2_137@sda21(r2)
 /* 8022AF80 00227D80  EC 22 00 72 */	fmuls f1, f2, f1
 /* 8022AF84 00227D84  EC 21 00 24 */	fdivs f1, f1, f0
 /* 8022AF88 00227D88  48 09 6A B1 */	bl cosf
@@ -25959,29 +25959,29 @@ lbl_8022AF78:
 /* 8022AFA0 00227DA0  7C 03 00 2E */	lwzx r0, r3, r0
 /* 8022AFA4 00227DA4  7C 09 03 A6 */	mtctr r0
 /* 8022AFA8 00227DA8  4E 80 04 20 */	bctr 
-/* 8022AFAC 00227DAC  C0 02 DA A0 */	lfs f0, _esc__2_138-_SDA2_BASE_(r2)
-/* 8022AFB0 00227DB0  C0 82 DA A4 */	lfs f4, _esc__2_139-_SDA2_BASE_(r2)
+/* 8022AFAC 00227DAC  C0 02 DA A0 */	lfs f0, _esc__2_138@sda21(r2)
+/* 8022AFB0 00227DB0  C0 82 DA A4 */	lfs f4, _esc__2_139@sda21(r2)
 /* 8022AFB4 00227DB4  EC 60 00 72 */	fmuls f3, f0, f1
-/* 8022AFB8 00227DB8  C0 C2 DA 90 */	lfs f6, _esc__2_134_0-_SDA2_BASE_(r2)
+/* 8022AFB8 00227DB8  C0 C2 DA 90 */	lfs f6, _esc__2_134_0@sda21(r2)
 /* 8022AFBC 00227DBC  48 00 00 EC */	b lbl_8022B0A8
-/* 8022AFC0 00227DC0  C0 42 DA A8 */	lfs f2, _esc__2_140_0-_SDA2_BASE_(r2)
+/* 8022AFC0 00227DC0  C0 42 DA A8 */	lfs f2, _esc__2_140_0@sda21(r2)
 /* 8022AFC4 00227DC4  FC 00 08 50 */	fneg f0, f1
-/* 8022AFC8 00227DC8  C0 C2 DA 90 */	lfs f6, _esc__2_134_0-_SDA2_BASE_(r2)
+/* 8022AFC8 00227DC8  C0 C2 DA 90 */	lfs f6, _esc__2_134_0@sda21(r2)
 /* 8022AFCC 00227DCC  EC 22 08 28 */	fsubs f1, f2, f1
 /* 8022AFD0 00227DD0  EC 22 08 24 */	fdivs f1, f2, f1
 /* 8022AFD4 00227DD4  FC 80 08 90 */	fmr f4, f1
 /* 8022AFD8 00227DD8  EC 60 00 72 */	fmuls f3, f0, f1
 /* 8022AFDC 00227DDC  48 00 00 CC */	b lbl_8022B0A8
-/* 8022AFE0 00227DE0  C0 42 DA A8 */	lfs f2, _esc__2_140_0-_SDA2_BASE_(r2)
+/* 8022AFE0 00227DE0  C0 42 DA A8 */	lfs f2, _esc__2_140_0@sda21(r2)
 /* 8022AFE4 00227DE4  FC 00 08 50 */	fneg f0, f1
-/* 8022AFE8 00227DE8  C0 62 DA 90 */	lfs f3, _esc__2_134_0-_SDA2_BASE_(r2)
+/* 8022AFE8 00227DE8  C0 62 DA 90 */	lfs f3, _esc__2_134_0@sda21(r2)
 /* 8022AFEC 00227DEC  EC 22 08 28 */	fsubs f1, f2, f1
 /* 8022AFF0 00227DF0  EC 22 08 24 */	fdivs f1, f2, f1
 /* 8022AFF4 00227DF4  FC C0 08 90 */	fmr f6, f1
 /* 8022AFF8 00227DF8  EC 80 00 72 */	fmuls f4, f0, f1
 /* 8022AFFC 00227DFC  48 00 00 AC */	b lbl_8022B0A8
-/* 8022B000 00227E00  C0 82 DA A8 */	lfs f4, _esc__2_140_0-_SDA2_BASE_(r2)
-/* 8022B004 00227E04  C0 42 DA AC */	lfs f2, _esc__2_141-_SDA2_BASE_(r2)
+/* 8022B000 00227E00  C0 82 DA A8 */	lfs f4, _esc__2_140_0@sda21(r2)
+/* 8022B004 00227E04  C0 42 DA AC */	lfs f2, _esc__2_141@sda21(r2)
 /* 8022B008 00227E08  EC 64 08 28 */	fsubs f3, f4, f1
 /* 8022B00C 00227E0C  EC 01 10 28 */	fsubs f0, f1, f2
 /* 8022B010 00227E10  EC 63 00 F2 */	fmuls f3, f3, f3
@@ -25991,10 +25991,10 @@ lbl_8022AF78:
 /* 8022B020 00227E20  EC 82 00 72 */	fmuls f4, f2, f1
 /* 8022B024 00227E24  FC C0 08 50 */	fneg f6, f1
 /* 8022B028 00227E28  48 00 00 80 */	b lbl_8022B0A8
-/* 8022B02C 00227E2C  C0 A2 DA A8 */	lfs f5, _esc__2_140_0-_SDA2_BASE_(r2)
-/* 8022B030 00227E30  C0 62 DA B0 */	lfs f3, _esc__2_142-_SDA2_BASE_(r2)
+/* 8022B02C 00227E2C  C0 A2 DA A8 */	lfs f5, _esc__2_140_0@sda21(r2)
+/* 8022B030 00227E30  C0 62 DA B0 */	lfs f3, _esc__2_142@sda21(r2)
 /* 8022B034 00227E34  EC 85 08 28 */	fsubs f4, f5, f1
-/* 8022B038 00227E38  C0 42 DA B4 */	lfs f2, _esc__2_143-_SDA2_BASE_(r2)
+/* 8022B038 00227E38  C0 42 DA B4 */	lfs f2, _esc__2_143@sda21(r2)
 /* 8022B03C 00227E3C  EC 05 08 2A */	fadds f0, f5, f1
 /* 8022B040 00227E40  EC 84 01 32 */	fmuls f4, f4, f4
 /* 8022B044 00227E44  EC 02 00 32 */	fmuls f0, f2, f0
@@ -26004,12 +26004,12 @@ lbl_8022AF78:
 /* 8022B054 00227E54  FC C0 10 90 */	fmr f6, f2
 /* 8022B058 00227E58  EC 62 00 72 */	fmuls f3, f2, f1
 /* 8022B05C 00227E5C  48 00 00 4C */	b lbl_8022B0A8
-/* 8022B060 00227E60  C0 A2 DA A8 */	lfs f5, _esc__2_140_0-_SDA2_BASE_(r2)
-/* 8022B064 00227E64  C0 02 DA AC */	lfs f0, _esc__2_141-_SDA2_BASE_(r2)
+/* 8022B060 00227E60  C0 A2 DA A8 */	lfs f5, _esc__2_140_0@sda21(r2)
+/* 8022B064 00227E64  C0 02 DA AC */	lfs f0, _esc__2_141@sda21(r2)
 /* 8022B068 00227E68  EC 85 08 28 */	fsubs f4, f5, f1
-/* 8022B06C 00227E6C  C0 42 DA B4 */	lfs f2, _esc__2_143-_SDA2_BASE_(r2)
+/* 8022B06C 00227E6C  C0 42 DA B4 */	lfs f2, _esc__2_143@sda21(r2)
 /* 8022B070 00227E70  EC 60 00 72 */	fmuls f3, f0, f1
-/* 8022B074 00227E74  C0 02 DA B8 */	lfs f0, _esc__2_144_0-_SDA2_BASE_(r2)
+/* 8022B074 00227E74  C0 02 DA B8 */	lfs f0, _esc__2_144_0@sda21(r2)
 /* 8022B078 00227E78  EC 42 00 72 */	fmuls f2, f2, f1
 /* 8022B07C 00227E7C  EC 84 01 32 */	fmuls f4, f4, f4
 /* 8022B080 00227E80  EC 23 00 72 */	fmuls f1, f3, f1
@@ -26020,8 +26020,8 @@ lbl_8022AF78:
 /* 8022B094 00227E94  EC 65 08 28 */	fsubs f3, f5, f1
 /* 8022B098 00227E98  48 00 00 10 */	b lbl_8022B0A8
 lbl_8022B09C:
-/* 8022B09C 00227E9C  C0 82 DA 90 */	lfs f4, _esc__2_134_0-_SDA2_BASE_(r2)
-/* 8022B0A0 00227EA0  C0 62 DA A8 */	lfs f3, _esc__2_140_0-_SDA2_BASE_(r2)
+/* 8022B09C 00227E9C  C0 82 DA 90 */	lfs f4, _esc__2_134_0@sda21(r2)
+/* 8022B0A0 00227EA0  C0 62 DA A8 */	lfs f3, _esc__2_140_0@sda21(r2)
 /* 8022B0A4 00227EA4  FC C0 20 90 */	fmr f6, f4
 lbl_8022B0A8:
 /* 8022B0A8 00227EA8  D0 7E 00 10 */	stfs f3, 0x10(r30)
@@ -26036,16 +26036,16 @@ lbl_8022B0A8:
 
 .global GXInitLightDistAttn
 GXInitLightDistAttn:
-/* 8022B0CC 00227ECC  C0 02 DA 90 */	lfs f0, _esc__2_134_0-_SDA2_BASE_(r2)
+/* 8022B0CC 00227ECC  C0 02 DA 90 */	lfs f0, _esc__2_134_0@sda21(r2)
 /* 8022B0D0 00227ED0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8022B0D4 00227ED4  40 80 00 08 */	bge lbl_8022B0DC
 /* 8022B0D8 00227ED8  38 80 00 00 */	li r4, 0
 lbl_8022B0DC:
-/* 8022B0DC 00227EDC  C0 02 DA 90 */	lfs f0, _esc__2_134_0-_SDA2_BASE_(r2)
+/* 8022B0DC 00227EDC  C0 02 DA 90 */	lfs f0, _esc__2_134_0@sda21(r2)
 /* 8022B0E0 00227EE0  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8022B0E4 00227EE4  4C 40 13 82 */	cror 2, 0, 2
 /* 8022B0E8 00227EE8  41 82 00 14 */	beq lbl_8022B0FC
-/* 8022B0EC 00227EEC  C0 02 DA A8 */	lfs f0, _esc__2_140_0-_SDA2_BASE_(r2)
+/* 8022B0EC 00227EEC  C0 02 DA A8 */	lfs f0, _esc__2_140_0@sda21(r2)
 /* 8022B0F0 00227EF0  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8022B0F4 00227EF4  4C 41 13 82 */	cror 2, 1, 2
 /* 8022B0F8 00227EF8  40 82 00 08 */	bne lbl_8022B100
@@ -26064,16 +26064,16 @@ lbl_8022B11C:
 /* 8022B120 00227F20  40 80 00 60 */	bge lbl_8022B180
 /* 8022B124 00227F24  48 00 00 40 */	b lbl_8022B164
 lbl_8022B128:
-/* 8022B128 00227F28  C0 A2 DA A8 */	lfs f5, _esc__2_140_0-_SDA2_BASE_(r2)
+/* 8022B128 00227F28  C0 A2 DA A8 */	lfs f5, _esc__2_140_0@sda21(r2)
 /* 8022B12C 00227F2C  EC 02 00 72 */	fmuls f0, f2, f1
-/* 8022B130 00227F30  C0 82 DA 90 */	lfs f4, _esc__2_134_0-_SDA2_BASE_(r2)
+/* 8022B130 00227F30  C0 82 DA 90 */	lfs f4, _esc__2_134_0@sda21(r2)
 /* 8022B134 00227F34  EC 25 10 28 */	fsubs f1, f5, f2
 /* 8022B138 00227F38  EC 61 00 24 */	fdivs f3, f1, f0
 /* 8022B13C 00227F3C  48 00 00 50 */	b lbl_8022B18C
 lbl_8022B140:
-/* 8022B140 00227F40  C0 A2 DA A8 */	lfs f5, _esc__2_140_0-_SDA2_BASE_(r2)
+/* 8022B140 00227F40  C0 A2 DA A8 */	lfs f5, _esc__2_140_0@sda21(r2)
 /* 8022B144 00227F44  EC 82 00 72 */	fmuls f4, f2, f1
-/* 8022B148 00227F48  C0 62 DA BC */	lfs f3, _esc__2_160-_SDA2_BASE_(r2)
+/* 8022B148 00227F48  C0 62 DA BC */	lfs f3, _esc__2_160@sda21(r2)
 /* 8022B14C 00227F4C  EC 45 10 28 */	fsubs f2, f5, f2
 /* 8022B150 00227F50  EC 01 01 32 */	fmuls f0, f1, f4
 /* 8022B154 00227F54  EC 23 00 B2 */	fmuls f1, f3, f2
@@ -26082,15 +26082,15 @@ lbl_8022B140:
 /* 8022B160 00227F60  48 00 00 2C */	b lbl_8022B18C
 lbl_8022B164:
 /* 8022B164 00227F64  EC 02 00 72 */	fmuls f0, f2, f1
-/* 8022B168 00227F68  C0 A2 DA A8 */	lfs f5, _esc__2_140_0-_SDA2_BASE_(r2)
-/* 8022B16C 00227F6C  C0 62 DA 90 */	lfs f3, _esc__2_134_0-_SDA2_BASE_(r2)
+/* 8022B168 00227F68  C0 A2 DA A8 */	lfs f5, _esc__2_140_0@sda21(r2)
+/* 8022B16C 00227F6C  C0 62 DA 90 */	lfs f3, _esc__2_134_0@sda21(r2)
 /* 8022B170 00227F70  EC 45 10 28 */	fsubs f2, f5, f2
 /* 8022B174 00227F74  EC 01 00 32 */	fmuls f0, f1, f0
 /* 8022B178 00227F78  EC 82 00 24 */	fdivs f4, f2, f0
 /* 8022B17C 00227F7C  48 00 00 10 */	b lbl_8022B18C
 lbl_8022B180:
-/* 8022B180 00227F80  C0 62 DA 90 */	lfs f3, _esc__2_134_0-_SDA2_BASE_(r2)
-/* 8022B184 00227F84  C0 A2 DA A8 */	lfs f5, _esc__2_140_0-_SDA2_BASE_(r2)
+/* 8022B180 00227F80  C0 62 DA 90 */	lfs f3, _esc__2_134_0@sda21(r2)
+/* 8022B184 00227F84  C0 A2 DA A8 */	lfs f5, _esc__2_140_0@sda21(r2)
 /* 8022B188 00227F88  FC 80 18 90 */	fmr f4, f3
 lbl_8022B18C:
 /* 8022B18C 00227F8C  D0 A3 00 1C */	stfs f5, 0x1c(r3)
@@ -26150,7 +26150,7 @@ GXLoadLightObjImm:
 /* 8022B234 00228034  F0 44 00 00 */	psq_st f2, 0(r4), 0, qr0
 /* 8022B238 00228038  F0 24 00 00 */	psq_st f1, 0(r4), 0, qr0
 /* 8022B23C 0022803C  F0 04 00 00 */	psq_st f0, 0(r4), 0, qr0
-/* 8022B240 00228040  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022B240 00228040  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022B244 00228044  38 00 00 01 */	li r0, 1
 /* 8022B248 00228048  B0 03 00 02 */	sth r0, 2(r3)
 /* 8022B24C 0022804C  4E 80 00 20 */	blr 
@@ -26172,7 +26172,7 @@ lbl_8022B274:
 /* 8022B27C 0022807C  4C 80 00 20 */	bgelr 
 /* 8022B280 00228080  48 00 00 70 */	b lbl_8022B2F0
 lbl_8022B284:
-/* 8022B284 00228084  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022B284 00228084  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022B288 00228088  38 A0 00 00 */	li r5, 0
 /* 8022B28C 0022808C  80 04 00 00 */	lwz r0, 0(r4)
 /* 8022B290 00228090  80 63 00 A8 */	lwz r3, 0xa8(r3)
@@ -26180,7 +26180,7 @@ lbl_8022B284:
 /* 8022B298 00228098  50 67 06 3E */	rlwimi r7, r3, 0, 0x18, 0x1f
 /* 8022B29C 0022809C  48 00 00 70 */	b lbl_8022B30C
 lbl_8022B2A0:
-/* 8022B2A0 002280A0  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022B2A0 002280A0  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022B2A4 002280A4  38 A0 00 01 */	li r5, 1
 /* 8022B2A8 002280A8  80 04 00 00 */	lwz r0, 0(r4)
 /* 8022B2AC 002280AC  80 63 00 AC */	lwz r3, 0xac(r3)
@@ -26188,7 +26188,7 @@ lbl_8022B2A0:
 /* 8022B2B4 002280B4  50 67 06 3E */	rlwimi r7, r3, 0, 0x18, 0x1f
 /* 8022B2B8 002280B8  48 00 00 54 */	b lbl_8022B30C
 lbl_8022B2BC:
-/* 8022B2BC 002280BC  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022B2BC 002280BC  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022B2C0 002280C0  38 A0 00 00 */	li r5, 0
 /* 8022B2C4 002280C4  88 04 00 03 */	lbz r0, 3(r4)
 /* 8022B2C8 002280C8  80 63 00 A8 */	lwz r3, 0xa8(r3)
@@ -26196,7 +26196,7 @@ lbl_8022B2BC:
 /* 8022B2D0 002280D0  38 E3 00 00 */	addi r7, r3, 0
 /* 8022B2D4 002280D4  48 00 00 38 */	b lbl_8022B30C
 lbl_8022B2D8:
-/* 8022B2D8 002280D8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022B2D8 002280D8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022B2DC 002280DC  38 A0 00 01 */	li r5, 1
 /* 8022B2E0 002280E0  88 04 00 03 */	lbz r0, 3(r4)
 /* 8022B2E4 002280E4  80 E3 00 AC */	lwz r7, 0xac(r3)
@@ -26213,7 +26213,7 @@ lbl_8022B2FC:
 /* 8022B308 00228108  4E 80 00 20 */	blr 
 lbl_8022B30C:
 /* 8022B30C 0022810C  38 00 00 10 */	li r0, 0x10
-/* 8022B310 00228110  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022B310 00228110  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022B314 00228114  3C C0 CC 01 */	lis r6, 0xCC008000@ha
 /* 8022B318 00228118  98 06 80 00 */	stb r0, 0xCC008000@l(r6)
 /* 8022B31C 0022811C  38 65 10 0A */	addi r3, r5, 0x100a
@@ -26243,7 +26243,7 @@ lbl_8022B364:
 /* 8022B36C 0022816C  4C 80 00 20 */	bgelr 
 /* 8022B370 00228170  48 00 00 70 */	b lbl_8022B3E0
 lbl_8022B374:
-/* 8022B374 00228174  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022B374 00228174  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022B378 00228178  38 A0 00 00 */	li r5, 0
 /* 8022B37C 0022817C  80 04 00 00 */	lwz r0, 0(r4)
 /* 8022B380 00228180  80 63 00 B0 */	lwz r3, 0xb0(r3)
@@ -26251,7 +26251,7 @@ lbl_8022B374:
 /* 8022B388 00228188  50 67 06 3E */	rlwimi r7, r3, 0, 0x18, 0x1f
 /* 8022B38C 0022818C  48 00 00 70 */	b lbl_8022B3FC
 lbl_8022B390:
-/* 8022B390 00228190  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022B390 00228190  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022B394 00228194  38 A0 00 01 */	li r5, 1
 /* 8022B398 00228198  80 04 00 00 */	lwz r0, 0(r4)
 /* 8022B39C 0022819C  80 63 00 B4 */	lwz r3, 0xb4(r3)
@@ -26259,7 +26259,7 @@ lbl_8022B390:
 /* 8022B3A4 002281A4  50 67 06 3E */	rlwimi r7, r3, 0, 0x18, 0x1f
 /* 8022B3A8 002281A8  48 00 00 54 */	b lbl_8022B3FC
 lbl_8022B3AC:
-/* 8022B3AC 002281AC  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022B3AC 002281AC  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022B3B0 002281B0  38 A0 00 00 */	li r5, 0
 /* 8022B3B4 002281B4  88 04 00 03 */	lbz r0, 3(r4)
 /* 8022B3B8 002281B8  80 63 00 B0 */	lwz r3, 0xb0(r3)
@@ -26267,7 +26267,7 @@ lbl_8022B3AC:
 /* 8022B3C0 002281C0  38 E3 00 00 */	addi r7, r3, 0
 /* 8022B3C4 002281C4  48 00 00 38 */	b lbl_8022B3FC
 lbl_8022B3C8:
-/* 8022B3C8 002281C8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022B3C8 002281C8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022B3CC 002281CC  38 A0 00 01 */	li r5, 1
 /* 8022B3D0 002281D0  88 04 00 03 */	lbz r0, 3(r4)
 /* 8022B3D4 002281D4  80 E3 00 B4 */	lwz r7, 0xb4(r3)
@@ -26284,7 +26284,7 @@ lbl_8022B3EC:
 /* 8022B3F8 002281F8  4E 80 00 20 */	blr 
 lbl_8022B3FC:
 /* 8022B3FC 002281FC  38 00 00 10 */	li r0, 0x10
-/* 8022B400 00228200  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022B400 00228200  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022B404 00228204  3C C0 CC 01 */	lis r6, 0xCC008000@ha
 /* 8022B408 00228208  98 06 80 00 */	stb r0, 0xCC008000@l(r6)
 /* 8022B40C 0022820C  38 65 10 0C */	addi r3, r5, 0x100c
@@ -26299,7 +26299,7 @@ lbl_8022B3FC:
 
 .global GXSetNumChans
 GXSetNumChans:
-/* 8022B430 00228230  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022B430 00228230  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022B434 00228234  54 65 06 3E */	clrlwi r5, r3, 0x18
 /* 8022B438 00228238  38 80 00 10 */	li r4, 0x10
 /* 8022B43C 0022823C  80 06 02 04 */	lwz r0, 0x204(r6)
@@ -26362,7 +26362,7 @@ lbl_8022B4FC:
 /* 8022B50C 0022830C  90 04 80 00 */	stw r0, -0x8000(r4)
 /* 8022B510 00228310  90 C4 80 00 */	stw r6, -0x8000(r4)
 lbl_8022B514:
-/* 8022B514 00228314  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022B514 00228314  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022B518 00228318  38 00 00 01 */	li r0, 1
 /* 8022B51C 0022831C  B0 03 00 02 */	sth r0, 2(r3)
 /* 8022B520 00228320  4E 80 00 20 */	blr 
@@ -26486,9 +26486,9 @@ lbl_8022B6B0:
 lbl_8022B6B8:
 /* 8022B6B8 002284B8  90 01 00 3C */	stw r0, 0x3c(r1)
 /* 8022B6BC 002284BC  3C 00 43 30 */	lis r0, 0x4330
-/* 8022B6C0 002284C0  C8 22 DA C8 */	lfd f1, _esc__2_222-_SDA2_BASE_(r2)
+/* 8022B6C0 002284C0  C8 22 DA C8 */	lfd f1, _esc__2_222@sda21(r2)
 /* 8022B6C4 002284C4  90 01 00 38 */	stw r0, 0x38(r1)
-/* 8022B6C8 002284C8  C0 42 DA C0 */	lfs f2, _esc__2_220_0-_SDA2_BASE_(r2)
+/* 8022B6C8 002284C8  C0 42 DA C0 */	lfs f2, _esc__2_220_0@sda21(r2)
 /* 8022B6CC 002284CC  C8 01 00 38 */	lfd f0, 0x38(r1)
 /* 8022B6D0 002284D0  80 7F 00 04 */	lwz r3, 4(r31)
 /* 8022B6D4 002284D4  EC 00 08 28 */	fsubs f0, f0, f1
@@ -26609,19 +26609,19 @@ GXInitTexObjCI:
 .global GXInitTexObjLOD
 GXInitTexObjLOD:
 /* 8022B880 00228680  94 21 FF D0 */	stwu r1, -0x30(r1)
-/* 8022B884 00228684  C0 02 DA D0 */	lfs f0, _esc__2_288_0-_SDA2_BASE_(r2)
+/* 8022B884 00228684  C0 02 DA D0 */	lfs f0, _esc__2_288_0@sda21(r2)
 /* 8022B888 00228688  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 8022B88C 0022868C  40 80 00 0C */	bge lbl_8022B898
 /* 8022B890 00228690  FC 60 00 90 */	fmr f3, f0
 /* 8022B894 00228694  48 00 00 18 */	b lbl_8022B8AC
 lbl_8022B898:
-/* 8022B898 00228698  C0 02 DA D4 */	lfs f0, _esc__2_289_2-_SDA2_BASE_(r2)
+/* 8022B898 00228698  C0 02 DA D4 */	lfs f0, _esc__2_289_2@sda21(r2)
 /* 8022B89C 0022869C  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 8022B8A0 002286A0  4C 41 13 82 */	cror 2, 1, 2
 /* 8022B8A4 002286A4  40 82 00 08 */	bne lbl_8022B8AC
-/* 8022B8A8 002286A8  C0 62 DA D8 */	lfs f3, _esc__2_290_2-_SDA2_BASE_(r2)
+/* 8022B8A8 002286A8  C0 62 DA D8 */	lfs f3, _esc__2_290_2@sda21(r2)
 lbl_8022B8AC:
-/* 8022B8AC 002286AC  C0 02 DA DC */	lfs f0, _esc__2_291_0-_SDA2_BASE_(r2)
+/* 8022B8AC 002286AC  C0 02 DA DC */	lfs f0, _esc__2_291_0@sda21(r2)
 /* 8022B8B0 002286B0  2C 05 00 01 */	cmpwi r5, 1
 /* 8022B8B4 002286B4  80 A3 00 00 */	lwz r5, 0(r3)
 /* 8022B8B8 002286B8  EC 00 00 F2 */	fmuls f0, f0, f3
@@ -26640,7 +26640,7 @@ lbl_8022B8E0:
 /* 8022B8E4 002286E4  50 05 26 F6 */	rlwimi r5, r0, 4, 0x1b, 0x1b
 /* 8022B8E8 002286E8  54 E0 06 3F */	clrlwi. r0, r7, 0x18
 /* 8022B8EC 002286EC  90 A3 00 00 */	stw r5, 0(r3)
-/* 8022B8F0 002286F0  38 AD B4 60 */	addi r5, r13, GX2HWFiltConv-_SDA_BASE_
+/* 8022B8F0 002286F0  38 AD B4 60 */	addi r5, r13, GX2HWFiltConv@sda21
 /* 8022B8F4 002286F4  7C 05 20 AE */	lbzx r0, r5, r4
 /* 8022B8F8 002286F8  80 83 00 00 */	lwz r4, 0(r3)
 /* 8022B8FC 002286FC  50 04 2E 34 */	rlwimi r4, r0, 5, 0x18, 0x1a
@@ -26667,19 +26667,19 @@ lbl_8022B914:
 /* 8022B948 00228748  80 83 00 00 */	lwz r4, 0(r3)
 /* 8022B94C 0022874C  50 C4 AA 94 */	rlwimi r4, r6, 0x15, 0xa, 0xa
 /* 8022B950 00228750  90 83 00 00 */	stw r4, 0(r3)
-/* 8022B954 00228754  C0 02 DA E0 */	lfs f0, _esc__2_292_1-_SDA2_BASE_(r2)
+/* 8022B954 00228754  C0 02 DA E0 */	lfs f0, _esc__2_292_1@sda21(r2)
 /* 8022B958 00228758  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8022B95C 0022875C  40 80 00 0C */	bge lbl_8022B968
 /* 8022B960 00228760  FC 20 00 90 */	fmr f1, f0
 /* 8022B964 00228764  48 00 00 14 */	b lbl_8022B978
 lbl_8022B968:
-/* 8022B968 00228768  C0 02 DA E4 */	lfs f0, _esc__2_293_0-_SDA2_BASE_(r2)
+/* 8022B968 00228768  C0 02 DA E4 */	lfs f0, _esc__2_293_0@sda21(r2)
 /* 8022B96C 0022876C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8022B970 00228770  40 81 00 08 */	ble lbl_8022B978
 /* 8022B974 00228774  FC 20 00 90 */	fmr f1, f0
 lbl_8022B978:
-/* 8022B978 00228778  C0 62 DA C0 */	lfs f3, _esc__2_220_0-_SDA2_BASE_(r2)
-/* 8022B97C 0022877C  C0 02 DA E0 */	lfs f0, _esc__2_292_1-_SDA2_BASE_(r2)
+/* 8022B978 00228778  C0 62 DA C0 */	lfs f3, _esc__2_220_0@sda21(r2)
+/* 8022B97C 0022877C  C0 02 DA E0 */	lfs f0, _esc__2_292_1@sda21(r2)
 /* 8022B980 00228780  EC 23 00 72 */	fmuls f1, f3, f1
 /* 8022B984 00228784  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8022B988 00228788  FC 20 08 1E */	fctiwz f1, f1
@@ -26689,12 +26689,12 @@ lbl_8022B978:
 /* 8022B998 00228798  FC 40 00 90 */	fmr f2, f0
 /* 8022B99C 0022879C  48 00 00 14 */	b lbl_8022B9B0
 lbl_8022B9A0:
-/* 8022B9A0 002287A0  C0 02 DA E4 */	lfs f0, _esc__2_293_0-_SDA2_BASE_(r2)
+/* 8022B9A0 002287A0  C0 02 DA E4 */	lfs f0, _esc__2_293_0@sda21(r2)
 /* 8022B9A4 002287A4  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8022B9A8 002287A8  40 81 00 08 */	ble lbl_8022B9B0
 /* 8022B9AC 002287AC  FC 40 00 90 */	fmr f2, f0
 lbl_8022B9B0:
-/* 8022B9B0 002287B0  C0 02 DA C0 */	lfs f0, _esc__2_220_0-_SDA2_BASE_(r2)
+/* 8022B9B0 002287B0  C0 02 DA C0 */	lfs f0, _esc__2_220_0@sda21(r2)
 /* 8022B9B4 002287B4  80 83 00 04 */	lwz r4, 4(r3)
 /* 8022B9B8 002287B8  50 04 06 3E */	rlwimi r4, r0, 0, 0x18, 0x1f
 /* 8022B9BC 002287BC  EC 00 00 B2 */	fmuls f0, f0, f2
@@ -26727,9 +26727,9 @@ GXGetTexObjLODBias:
 /* 8022BA04 00228804  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8022BA08 00228808  3C 00 43 30 */	lis r0, 0x4330
 /* 8022BA0C 0022880C  80 63 00 00 */	lwz r3, 0(r3)
-/* 8022BA10 00228810  C8 42 DA F0 */	lfd f2, _esc__2_389_0-_SDA2_BASE_(r2)
+/* 8022BA10 00228810  C8 42 DA F0 */	lfd f2, _esc__2_389_0@sda21(r2)
 /* 8022BA14 00228814  54 63 BE 3E */	rlwinm r3, r3, 0x17, 0x18, 0x1f
-/* 8022BA18 00228818  C0 02 DA E8 */	lfs f0, _esc__2_385-_SDA2_BASE_(r2)
+/* 8022BA18 00228818  C0 02 DA E8 */	lfs f0, _esc__2_385@sda21(r2)
 /* 8022BA1C 0022881C  7C 63 07 34 */	extsh r3, r3
 /* 8022BA20 00228820  7C 63 07 74 */	extsb r3, r3
 /* 8022BA24 00228824  6C 63 80 00 */	xoris r3, r3, 0x8000
@@ -26769,13 +26769,13 @@ GXGetTexObjTlut:
 .global GXLoadTexObjPreLoaded
 GXLoadTexObjPreLoaded:
 /* 8022BA78 00228878  7C 08 02 A6 */	mflr r0
-/* 8022BA7C 0022887C  38 ED B4 38 */	addi r7, r13, GXTexImage0Ids-_SDA_BASE_
+/* 8022BA7C 0022887C  38 ED B4 38 */	addi r7, r13, GXTexImage0Ids@sda21
 /* 8022BA80 00228880  90 01 00 04 */	stw r0, 4(r1)
-/* 8022BA84 00228884  38 CD B4 40 */	addi r6, r13, GXTexImage1Ids-_SDA_BASE_
+/* 8022BA84 00228884  38 CD B4 40 */	addi r6, r13, GXTexImage1Ids@sda21
 /* 8022BA88 00228888  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8022BA8C 0022888C  93 E1 00 3C */	stw r31, 0x3c(r1)
 /* 8022BA90 00228890  3B E5 00 00 */	addi r31, r5, 0
-/* 8022BA94 00228894  38 AD B4 28 */	addi r5, r13, GXTexMode0Ids-_SDA_BASE_
+/* 8022BA94 00228894  38 AD B4 28 */	addi r5, r13, GXTexMode0Ids@sda21
 /* 8022BA98 00228898  93 C1 00 38 */	stw r30, 0x38(r1)
 /* 8022BA9C 0022889C  3B C3 00 00 */	addi r30, r3, 0
 /* 8022BAA0 002288A0  93 A1 00 34 */	stw r29, 0x34(r1)
@@ -26784,12 +26784,12 @@ GXLoadTexObjPreLoaded:
 /* 8022BAAC 002288AC  3B 80 00 61 */	li r28, 0x61
 /* 8022BAB0 002288B0  7C 05 F8 AE */	lbzx r0, r5, r31
 /* 8022BAB4 002288B4  80 A3 00 00 */	lwz r5, 0(r3)
-/* 8022BAB8 002288B8  38 6D B4 30 */	addi r3, r13, GXTexMode1Ids-_SDA_BASE_
+/* 8022BAB8 002288B8  38 6D B4 30 */	addi r3, r13, GXTexMode1Ids@sda21
 /* 8022BABC 002288BC  50 05 C0 0E */	rlwimi r5, r0, 0x18, 0, 7
 /* 8022BAC0 002288C0  90 BE 00 00 */	stw r5, 0(r30)
-/* 8022BAC4 002288C4  38 AD B4 48 */	addi r5, r13, GXTexImage2Ids-_SDA_BASE_
+/* 8022BAC4 002288C4  38 AD B4 48 */	addi r5, r13, GXTexImage2Ids@sda21
 /* 8022BAC8 002288C8  7C 03 F8 AE */	lbzx r0, r3, r31
-/* 8022BACC 002288CC  38 6D B4 50 */	addi r3, r13, GXTexImage3Ids-_SDA_BASE_
+/* 8022BACC 002288CC  38 6D B4 50 */	addi r3, r13, GXTexImage3Ids@sda21
 /* 8022BAD0 002288D0  81 1E 00 04 */	lwz r8, 4(r30)
 /* 8022BAD4 002288D4  50 08 C0 0E */	rlwimi r8, r0, 0x18, 0, 7
 /* 8022BAD8 002288D8  91 1E 00 04 */	stw r8, 4(r30)
@@ -26830,12 +26830,12 @@ GXLoadTexObjPreLoaded:
 /* 8022BB64 00228964  88 1E 00 1F */	lbz r0, 0x1f(r30)
 /* 8022BB68 00228968  54 00 07 BD */	rlwinm. r0, r0, 0, 0x1e, 0x1e
 /* 8022BB6C 0022896C  40 82 00 38 */	bne lbl_8022BBA4
-/* 8022BB70 00228970  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022BB70 00228970  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022BB74 00228974  80 7E 00 18 */	lwz r3, 0x18(r30)
 /* 8022BB78 00228978  81 84 04 CC */	lwz r12, 0x4cc(r4)
 /* 8022BB7C 0022897C  7D 88 03 A6 */	mtlr r12
 /* 8022BB80 00228980  4E 80 00 21 */	blrl 
-/* 8022BB84 00228984  38 8D B4 58 */	addi r4, r13, GXTexTlutIds-_SDA_BASE_
+/* 8022BB84 00228984  38 8D B4 58 */	addi r4, r13, GXTexTlutIds@sda21
 /* 8022BB88 00228988  80 A3 00 04 */	lwz r5, 4(r3)
 /* 8022BB8C 0022898C  7C 04 F8 AE */	lbzx r0, r4, r31
 /* 8022BB90 00228990  50 05 C0 0E */	rlwimi r5, r0, 0x18, 0, 7
@@ -26844,7 +26844,7 @@ GXLoadTexObjPreLoaded:
 /* 8022BB9C 0022899C  80 03 00 04 */	lwz r0, 4(r3)
 /* 8022BBA0 002289A0  90 1D 80 00 */	stw r0, -0x8000(r29)
 lbl_8022BBA4:
-/* 8022BBA4 002289A4  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022BBA4 002289A4  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022BBA8 002289A8  57 E4 10 3A */	slwi r4, r31, 2
 /* 8022BBAC 002289AC  80 7E 00 08 */	lwz r3, 8(r30)
 /* 8022BBB0 002289B0  38 00 00 00 */	li r0, 0
@@ -26874,7 +26874,7 @@ GXLoadTexObj:
 /* 8022BC04 00228A04  3B E4 00 00 */	addi r31, r4, 0
 /* 8022BC08 00228A08  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 8022BC0C 00228A0C  3B C3 00 00 */	addi r30, r3, 0
-/* 8022BC10 00228A10  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022BC10 00228A10  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022BC14 00228A14  81 85 04 C8 */	lwz r12, 0x4c8(r5)
 /* 8022BC18 00228A18  7D 88 03 A6 */	mtlr r12
 /* 8022BC1C 00228A1C  4E 80 00 21 */	blrl 
@@ -26915,7 +26915,7 @@ GXLoadTlut:
 /* 8022BC90 00228A90  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 8022BC94 00228A94  7C 7E 1B 78 */	mr r30, r3
 /* 8022BC98 00228A98  38 64 00 00 */	addi r3, r4, 0
-/* 8022BC9C 00228A9C  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022BC9C 00228A9C  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022BCA0 00228AA0  81 85 04 CC */	lwz r12, 0x4cc(r5)
 /* 8022BCA4 00228AA4  7D 88 03 A6 */	mtlr r12
 /* 8022BCA8 00228AA8  4E 80 00 21 */	blrl 
@@ -27148,7 +27148,7 @@ GXInvalidateTexAll:
 
 .global GXSetTexRegionCallback
 GXSetTexRegionCallback:
-/* 8022BFB8 00228DB8  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022BFB8 00228DB8  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022BFBC 00228DBC  84 04 04 C8 */	lwzu r0, 0x4c8(r4)
 /* 8022BFC0 00228DC0  90 64 00 00 */	stw r3, 0(r4)
 /* 8022BFC4 00228DC4  7C 03 03 78 */	mr r3, r0
@@ -27156,7 +27156,7 @@ GXSetTexRegionCallback:
 
 .global GXSetTlutRegionCallback
 GXSetTlutRegionCallback:
-/* 8022BFCC 00228DCC  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022BFCC 00228DCC  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022BFD0 00228DD0  84 04 04 CC */	lwzu r0, 0x4cc(r4)
 /* 8022BFD4 00228DD4  90 64 00 00 */	stw r3, 0(r4)
 /* 8022BFD8 00228DD8  7C 03 03 78 */	mr r3, r0
@@ -27164,7 +27164,7 @@ GXSetTlutRegionCallback:
 
 .global GXSetTexCoordScaleManually
 GXSetTexCoordScaleManually:
-/* 8022BFE0 00228DE0  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 8022BFE0 00228DE0  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022BFE4 00228DE4  38 00 00 01 */	li r0, 1
 /* 8022BFE8 00228DE8  54 84 06 3F */	clrlwi. r4, r4, 0x18
 /* 8022BFEC 00228DEC  80 E8 05 94 */	lwz r7, 0x594(r8)
@@ -27198,7 +27198,7 @@ GXSetTexCoordScaleManually:
 
 .global __SetSURegs
 __SetSURegs:
-/* 8022C05C 00228E5C  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 8022C05C 00228E5C  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022C060 00228E60  54 63 10 3A */	slwi r3, r3, 2
 /* 8022C064 00228E64  54 80 10 3A */	slwi r0, r4, 2
 /* 8022C068 00228E68  7C 68 1A 14 */	add r3, r8, r3
@@ -27245,7 +27245,7 @@ __GXSetSUTexRegs:
 /* 8022C100 00228F00  90 01 00 04 */	stw r0, 4(r1)
 /* 8022C104 00228F04  94 21 FF D8 */	stwu r1, -0x28(r1)
 /* 8022C108 00228F08  BF 61 00 14 */	stmw r27, 0x14(r1)
-/* 8022C10C 00228F0C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C10C 00228F0C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C110 00228F10  80 03 05 94 */	lwz r0, 0x594(r3)
 /* 8022C114 00228F14  28 00 00 FF */	cmplwi r0, 0xff
 /* 8022C118 00228F18  41 82 01 4C */	beq lbl_8022C264
@@ -27268,30 +27268,30 @@ lbl_8022C150:
 /* 8022C154 00228F54  40 80 00 54 */	bge lbl_8022C1A8
 /* 8022C158 00228F58  48 00 00 40 */	b lbl_8022C198
 lbl_8022C15C:
-/* 8022C15C 00228F5C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C15C 00228F5C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C160 00228F60  80 03 01 20 */	lwz r0, 0x120(r3)
 /* 8022C164 00228F64  54 1D 07 7E */	clrlwi r29, r0, 0x1d
 /* 8022C168 00228F68  54 1C EF 7E */	rlwinm r28, r0, 0x1d, 0x1d, 0x1f
 /* 8022C16C 00228F6C  48 00 00 3C */	b lbl_8022C1A8
 lbl_8022C170:
-/* 8022C170 00228F70  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C170 00228F70  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C174 00228F74  80 03 01 20 */	lwz r0, 0x120(r3)
 /* 8022C178 00228F78  54 1D D7 7E */	rlwinm r29, r0, 0x1a, 0x1d, 0x1f
 /* 8022C17C 00228F7C  54 1C BF 7E */	rlwinm r28, r0, 0x17, 0x1d, 0x1f
 /* 8022C180 00228F80  48 00 00 28 */	b lbl_8022C1A8
 lbl_8022C184:
-/* 8022C184 00228F84  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C184 00228F84  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C188 00228F88  80 03 01 20 */	lwz r0, 0x120(r3)
 /* 8022C18C 00228F8C  54 1D A7 7E */	rlwinm r29, r0, 0x14, 0x1d, 0x1f
 /* 8022C190 00228F90  54 1C 8F 7E */	rlwinm r28, r0, 0x11, 0x1d, 0x1f
 /* 8022C194 00228F94  48 00 00 14 */	b lbl_8022C1A8
 lbl_8022C198:
-/* 8022C198 00228F98  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C198 00228F98  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C19C 00228F9C  80 03 01 20 */	lwz r0, 0x120(r3)
 /* 8022C1A0 00228FA0  54 1D 77 7E */	rlwinm r29, r0, 0xe, 0x1d, 0x1f
 /* 8022C1A4 00228FA4  54 1C 5F 7E */	rlwinm r28, r0, 0xb, 0x1d, 0x1f
 lbl_8022C1A8:
-/* 8022C1A8 00228FA8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C1A8 00228FA8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C1AC 00228FAC  38 00 00 01 */	li r0, 1
 /* 8022C1B0 00228FB0  7C 00 E0 30 */	slw r0, r0, r28
 /* 8022C1B4 00228FB4  80 63 05 94 */	lwz r3, 0x594(r3)
@@ -27309,7 +27309,7 @@ lbl_8022C1D0:
 /* 8022C1DC 00228FDC  3B 7F 00 00 */	addi r27, r31, 0
 /* 8022C1E0 00228FE0  48 00 00 7C */	b lbl_8022C25C
 lbl_8022C1E4:
-/* 8022C1E4 00228FE4  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022C1E4 00228FE4  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022C1E8 00228FE8  38 7B 05 54 */	addi r3, r27, 0x554
 /* 8022C1EC 00228FEC  57 E4 08 3A */	rlwinm r4, r31, 1, 0, 0x1d
 /* 8022C1F0 00228FF0  7C 65 18 2E */	lwzx r3, r5, r3
@@ -27583,7 +27583,7 @@ GXSetTevIndirect:
 /* 8022C5E4 002293E4  81 81 00 3C */	lwz r12, 0x3c(r1)
 /* 8022C5E8 002293E8  8B E1 00 3B */	lbz r31, 0x3b(r1)
 /* 8022C5EC 002293EC  50 CB 26 76 */	rlwimi r11, r6, 4, 0x19, 0x1b
-/* 8022C5F0 002293F0  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022C5F0 002293F0  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022C5F4 002293F4  51 8B 3D F0 */	rlwimi r11, r12, 7, 0x17, 0x18
 /* 8022C5F8 002293F8  50 EB 4C EC */	rlwimi r11, r7, 9, 0x13, 0x16
 /* 8022C5FC 002293FC  51 0B 6C 24 */	rlwimi r11, r8, 0xd, 0x10, 0x12
@@ -27633,7 +27633,7 @@ lbl_8022C688:
 lbl_8022C690:
 /* 8022C690 00229490  38 00 00 00 */	li r0, 0
 lbl_8022C694:
-/* 8022C694 00229494  C0 42 DA F8 */	lfs f2, _esc__2_149_0-_SDA2_BASE_(r2)
+/* 8022C694 00229494  C0 42 DA F8 */	lfs f2, _esc__2_149_0@sda21(r2)
 /* 8022C698 00229498  1F E0 00 03 */	mulli r31, r0, 3
 /* 8022C69C 0022949C  C0 24 00 00 */	lfs f1, 0(r4)
 /* 8022C6A0 002294A0  C0 04 00 0C */	lfs f0, 0xc(r4)
@@ -27650,7 +27650,7 @@ lbl_8022C694:
 /* 8022C6CC 002294CC  D8 21 00 58 */	stfd f1, 0x58(r1)
 /* 8022C6D0 002294D0  55 48 F7 BE */	rlwinm r8, r10, 0x1e, 0x1e, 0x1f
 /* 8022C6D4 002294D4  38 FF 00 07 */	addi r7, r31, 7
-/* 8022C6D8 002294D8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C6D8 002294D8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C6DC 002294DC  D8 01 00 50 */	stfd f0, 0x50(r1)
 /* 8022C6E0 002294E0  81 21 00 5C */	lwz r9, 0x5c(r1)
 /* 8022C6E4 002294E4  3B A0 00 00 */	li r29, 0
@@ -27719,7 +27719,7 @@ lbl_8022C7CC:
 /* 8022C7D0 002295D0  40 80 01 14 */	bge lbl_8022C8E4
 /* 8022C7D4 002295D4  48 00 00 D0 */	b lbl_8022C8A4
 lbl_8022C7D8:
-/* 8022C7D8 002295D8  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 8022C7D8 002295D8  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022C7DC 002295DC  38 C0 00 25 */	li r6, 0x25
 /* 8022C7E0 002295E0  38 00 00 61 */	li r0, 0x61
 /* 8022C7E4 002295E4  80 E8 01 28 */	lwz r7, 0x128(r8)
@@ -27737,7 +27737,7 @@ lbl_8022C7D8:
 /* 8022C814 00229614  90 03 80 00 */	stw r0, -0x8000(r3)
 /* 8022C818 00229618  48 00 00 CC */	b lbl_8022C8E4
 lbl_8022C81C:
-/* 8022C81C 0022961C  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 8022C81C 0022961C  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022C820 00229620  38 C0 00 25 */	li r6, 0x25
 /* 8022C824 00229624  38 00 00 61 */	li r0, 0x61
 /* 8022C828 00229628  80 E8 01 28 */	lwz r7, 0x128(r8)
@@ -27755,7 +27755,7 @@ lbl_8022C81C:
 /* 8022C858 00229658  90 03 80 00 */	stw r0, -0x8000(r3)
 /* 8022C85C 0022965C  48 00 00 88 */	b lbl_8022C8E4
 lbl_8022C860:
-/* 8022C860 00229660  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 8022C860 00229660  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022C864 00229664  38 C0 00 26 */	li r6, 0x26
 /* 8022C868 00229668  38 00 00 61 */	li r0, 0x61
 /* 8022C86C 0022966C  80 E8 01 2C */	lwz r7, 0x12c(r8)
@@ -27773,7 +27773,7 @@ lbl_8022C860:
 /* 8022C89C 0022969C  90 03 80 00 */	stw r0, -0x8000(r3)
 /* 8022C8A0 002296A0  48 00 00 44 */	b lbl_8022C8E4
 lbl_8022C8A4:
-/* 8022C8A4 002296A4  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 8022C8A4 002296A4  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022C8A8 002296A8  38 C0 00 26 */	li r6, 0x26
 /* 8022C8AC 002296AC  38 00 00 61 */	li r0, 0x61
 /* 8022C8B0 002296B0  80 E8 01 2C */	lwz r7, 0x12c(r8)
@@ -27790,7 +27790,7 @@ lbl_8022C8A4:
 /* 8022C8DC 002296DC  80 08 01 2C */	lwz r0, 0x12c(r8)
 /* 8022C8E0 002296E0  90 03 80 00 */	stw r0, -0x8000(r3)
 lbl_8022C8E4:
-/* 8022C8E4 002296E4  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C8E4 002296E4  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C8E8 002296E8  38 00 00 00 */	li r0, 0
 /* 8022C8EC 002296EC  B0 03 00 02 */	sth r0, 2(r3)
 /* 8022C8F0 002296F0  4E 80 00 20 */	blr 
@@ -27817,7 +27817,7 @@ lbl_8022C928:
 /* 8022C92C 0022972C  40 80 00 84 */	bge lbl_8022C9B0
 /* 8022C930 00229730  48 00 00 64 */	b lbl_8022C994
 lbl_8022C934:
-/* 8022C934 00229734  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C934 00229734  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C938 00229738  80 03 01 20 */	lwz r0, 0x120(r3)
 /* 8022C93C 0022973C  50 A0 07 7E */	rlwimi r0, r5, 0, 0x1d, 0x1f
 /* 8022C940 00229740  90 03 01 20 */	stw r0, 0x120(r3)
@@ -27826,7 +27826,7 @@ lbl_8022C934:
 /* 8022C94C 0022974C  90 03 01 20 */	stw r0, 0x120(r3)
 /* 8022C950 00229750  48 00 00 60 */	b lbl_8022C9B0
 lbl_8022C954:
-/* 8022C954 00229754  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C954 00229754  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C958 00229758  80 03 01 20 */	lwz r0, 0x120(r3)
 /* 8022C95C 0022975C  50 A0 35 F2 */	rlwimi r0, r5, 6, 0x17, 0x19
 /* 8022C960 00229760  90 03 01 20 */	stw r0, 0x120(r3)
@@ -27835,7 +27835,7 @@ lbl_8022C954:
 /* 8022C96C 0022976C  90 03 01 20 */	stw r0, 0x120(r3)
 /* 8022C970 00229770  48 00 00 40 */	b lbl_8022C9B0
 lbl_8022C974:
-/* 8022C974 00229774  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C974 00229774  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C978 00229778  80 03 01 20 */	lwz r0, 0x120(r3)
 /* 8022C97C 0022977C  50 A0 64 66 */	rlwimi r0, r5, 0xc, 0x11, 0x13
 /* 8022C980 00229780  90 03 01 20 */	stw r0, 0x120(r3)
@@ -27844,7 +27844,7 @@ lbl_8022C974:
 /* 8022C98C 0022978C  90 03 01 20 */	stw r0, 0x120(r3)
 /* 8022C990 00229790  48 00 00 20 */	b lbl_8022C9B0
 lbl_8022C994:
-/* 8022C994 00229794  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022C994 00229794  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022C998 00229798  80 03 01 20 */	lwz r0, 0x120(r3)
 /* 8022C99C 0022979C  50 A0 92 DA */	rlwimi r0, r5, 0x12, 0xb, 0xd
 /* 8022C9A0 002297A0  90 03 01 20 */	stw r0, 0x120(r3)
@@ -27853,7 +27853,7 @@ lbl_8022C994:
 /* 8022C9AC 002297AC  90 03 01 20 */	stw r0, 0x120(r3)
 lbl_8022C9B0:
 /* 8022C9B0 002297B0  38 00 00 61 */	li r0, 0x61
-/* 8022C9B4 002297B4  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022C9B4 002297B4  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022C9B8 002297B8  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022C9BC 002297BC  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 8022C9C0 002297C0  38 00 00 00 */	li r0, 0
@@ -27867,7 +27867,7 @@ lbl_8022C9B0:
 
 .global GXSetNumIndStages
 GXSetNumIndStages:
-/* 8022C9E0 002297E0  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022C9E0 002297E0  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022C9E4 002297E4  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 8022C9E8 002297E8  80 64 02 04 */	lwz r3, 0x204(r4)
 /* 8022C9EC 002297EC  50 03 83 5E */	rlwimi r3, r0, 0x10, 0xd, 0xf
@@ -27904,7 +27904,7 @@ __GXUpdateBPMask:
 
 .global __GXSetIndirectMask
 __GXSetIndirectMask:
-/* 8022CA50 00229850  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022CA50 00229850  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022CA54 00229854  38 A0 00 61 */	li r5, 0x61
 /* 8022CA58 00229858  3C 80 CC 01 */	lis r4, 0xCC008000@ha
 /* 8022CA5C 0022985C  80 C7 01 24 */	lwz r6, 0x124(r7)
@@ -27920,7 +27920,7 @@ __GXSetIndirectMask:
 .global __GXFlushTextureState
 __GXFlushTextureState:
 /* 8022CA80 00229880  38 00 00 61 */	li r0, 0x61
-/* 8022CA84 00229884  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022CA84 00229884  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022CA88 00229888  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022CA8C 0022988C  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 8022CA90 00229890  38 00 00 00 */	li r0, 0
@@ -27946,7 +27946,7 @@ lbl_8022CAC4:
 /* 8022CAD0 002298D0  38 A5 00 14 */	addi r5, r5, 0x14
 /* 8022CAD4 002298D4  39 29 00 3C */	addi r9, r9, 0x3c
 lbl_8022CAD8:
-/* 8022CAD8 002298D8  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022CAD8 002298D8  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022CADC 002298DC  54 63 10 3A */	slwi r3, r3, 2
 /* 8022CAE0 002298E0  80 05 00 00 */	lwz r0, 0(r5)
 /* 8022CAE4 002298E4  38 A0 00 61 */	li r5, 0x61
@@ -27971,7 +27971,7 @@ lbl_8022CAD8:
 
 .global GXSetTevColorIn
 GXSetTevColorIn:
-/* 8022CB30 00229930  81 22 DA 58 */	lwz r9, __GXData-_SDA2_BASE_(r2)
+/* 8022CB30 00229930  81 22 DA 58 */	lwz r9, __GXData@sda21(r2)
 /* 8022CB34 00229934  54 63 10 3A */	slwi r3, r3, 2
 /* 8022CB38 00229938  38 00 00 61 */	li r0, 0x61
 /* 8022CB3C 0022993C  7D 09 1A 14 */	add r8, r9, r3
@@ -27991,7 +27991,7 @@ GXSetTevColorIn:
 
 .global GXSetTevAlphaIn
 GXSetTevAlphaIn:
-/* 8022CB74 00229974  81 22 DA 58 */	lwz r9, __GXData-_SDA2_BASE_(r2)
+/* 8022CB74 00229974  81 22 DA 58 */	lwz r9, __GXData@sda21(r2)
 /* 8022CB78 00229978  54 63 10 3A */	slwi r3, r3, 2
 /* 8022CB7C 0022997C  38 00 00 61 */	li r0, 0x61
 /* 8022CB80 00229980  7D 09 1A 14 */	add r8, r9, r3
@@ -28011,7 +28011,7 @@ GXSetTevAlphaIn:
 
 .global GXSetTevColorOp
 GXSetTevColorOp:
-/* 8022CBB8 002299B8  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 8022CBB8 002299B8  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 8022CBBC 002299BC  54 69 10 3A */	slwi r9, r3, 2
 /* 8022CBC0 002299C0  2C 04 00 01 */	cmpwi r4, 1
 /* 8022CBC4 002299C4  7C 60 4A 14 */	add r3, r0, r9
@@ -28028,7 +28028,7 @@ lbl_8022CBE4:
 /* 8022CBEC 002299EC  50 0A 83 9E */	rlwimi r10, r0, 0x10, 0xe, 0xf
 lbl_8022CBF0:
 /* 8022CBF0 002299F0  38 00 00 61 */	li r0, 0x61
-/* 8022CBF4 002299F4  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022CBF4 002299F4  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022CBF8 002299F8  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022CBFC 002299FC  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 8022CC00 00229A00  50 EA 9B 18 */	rlwimi r10, r7, 0x13, 0xc, 0xc
@@ -28042,7 +28042,7 @@ lbl_8022CBF0:
 
 .global GXSetTevAlphaOp
 GXSetTevAlphaOp:
-/* 8022CC20 00229A20  80 02 DA 58 */	lwz r0, __GXData-_SDA2_BASE_(r2)
+/* 8022CC20 00229A20  80 02 DA 58 */	lwz r0, __GXData@sda21(r2)
 /* 8022CC24 00229A24  54 69 10 3A */	slwi r9, r3, 2
 /* 8022CC28 00229A28  2C 04 00 01 */	cmpwi r4, 1
 /* 8022CC2C 00229A2C  7C 60 4A 14 */	add r3, r0, r9
@@ -28059,7 +28059,7 @@ lbl_8022CC4C:
 /* 8022CC54 00229A54  50 0A 83 9E */	rlwimi r10, r0, 0x10, 0xe, 0xf
 lbl_8022CC58:
 /* 8022CC58 00229A58  38 00 00 61 */	li r0, 0x61
-/* 8022CC5C 00229A5C  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022CC5C 00229A5C  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022CC60 00229A60  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022CC64 00229A64  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 8022CC68 00229A68  50 EA 9B 18 */	rlwimi r10, r7, 0x13, 0xc, 0xc
@@ -28083,7 +28083,7 @@ GXSetTevColor:
 /* 8022CCA4 00229AA4  50 08 62 66 */	rlwimi r8, r0, 0xc, 9, 0x13
 /* 8022CCA8 00229AA8  88 04 00 01 */	lbz r0, 1(r4)
 /* 8022CCAC 00229AAC  39 20 00 00 */	li r9, 0
-/* 8022CCB0 00229AB0  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022CCB0 00229AB0  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022CCB4 00229AB4  50 C9 05 7E */	rlwimi r9, r6, 0, 0x15, 0x1f
 /* 8022CCB8 00229AB8  38 C9 00 00 */	addi r6, r9, 0
 /* 8022CCBC 00229ABC  50 06 62 66 */	rlwimi r6, r0, 0xc, 9, 0x13
@@ -28120,7 +28120,7 @@ GXSetTevColorS10:
 /* 8022CD2C 00229B2C  50 69 62 66 */	rlwimi r9, r3, 0xc, 9, 0x13
 /* 8022CD30 00229B30  98 A4 80 00 */	stb r5, 0xCC008000@l(r4)
 /* 8022CD34 00229B34  38 E8 00 E0 */	addi r7, r8, 0xe0
-/* 8022CD38 00229B38  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022CD38 00229B38  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022CD3C 00229B3C  50 E9 C0 0E */	rlwimi r9, r7, 0x18, 0, 7
 /* 8022CD40 00229B40  91 24 80 00 */	stw r9, -0x8000(r4)
 /* 8022CD44 00229B44  38 E0 00 00 */	li r7, 0
@@ -28151,7 +28151,7 @@ GXSetTevKColor:
 /* 8022CD9C 00229B9C  50 07 63 26 */	rlwimi r7, r0, 0xc, 0xc, 0x13
 /* 8022CDA0 00229BA0  88 04 00 01 */	lbz r0, 1(r4)
 /* 8022CDA4 00229BA4  38 80 00 08 */	li r4, 8
-/* 8022CDA8 00229BA8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022CDA8 00229BA8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022CDAC 00229BAC  39 00 00 00 */	li r8, 0
 /* 8022CDB0 00229BB0  50 A8 06 3E */	rlwimi r8, r5, 0, 0x18, 0x1f
 /* 8022CDB4 00229BB4  50 08 63 26 */	rlwimi r8, r0, 0xc, 0xc, 0x13
@@ -28174,7 +28174,7 @@ GXSetTevKColor:
 .global GXSetTevKColorSel
 GXSetTevKColorSel:
 /* 8022CDF4 00229BF4  7C 65 0E 70 */	srawi r5, r3, 1
-/* 8022CDF8 00229BF8  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022CDF8 00229BF8  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022CDFC 00229BFC  54 60 07 FF */	clrlwi. r0, r3, 0x1f
 /* 8022CE00 00229C00  54 A3 10 3A */	slwi r3, r5, 2
 /* 8022CE04 00229C04  38 E3 01 B0 */	addi r7, r3, 0x1b0
@@ -28190,7 +28190,7 @@ lbl_8022CE20:
 /* 8022CE28 00229C28  90 07 00 00 */	stw r0, 0(r7)
 lbl_8022CE2C:
 /* 8022CE2C 00229C2C  38 00 00 61 */	li r0, 0x61
-/* 8022CE30 00229C30  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022CE30 00229C30  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022CE34 00229C34  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022CE38 00229C38  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 8022CE3C 00229C3C  38 00 00 00 */	li r0, 0
@@ -28202,7 +28202,7 @@ lbl_8022CE2C:
 .global GXSetTevKAlphaSel
 GXSetTevKAlphaSel:
 /* 8022CE50 00229C50  7C 65 0E 70 */	srawi r5, r3, 1
-/* 8022CE54 00229C54  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022CE54 00229C54  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022CE58 00229C58  54 60 07 FF */	clrlwi. r0, r3, 0x1f
 /* 8022CE5C 00229C5C  54 A3 10 3A */	slwi r3, r5, 2
 /* 8022CE60 00229C60  38 E3 01 B0 */	addi r7, r3, 0x1b0
@@ -28218,7 +28218,7 @@ lbl_8022CE7C:
 /* 8022CE84 00229C84  90 07 00 00 */	stw r0, 0(r7)
 lbl_8022CE88:
 /* 8022CE88 00229C88  38 00 00 61 */	li r0, 0x61
-/* 8022CE8C 00229C8C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022CE8C 00229C8C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022CE90 00229C90  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022CE94 00229C94  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 8022CE98 00229C98  38 00 00 00 */	li r0, 0
@@ -28230,7 +28230,7 @@ lbl_8022CE88:
 .global GXSetTevSwapMode
 GXSetTevSwapMode:
 /* 8022CEAC 00229CAC  54 63 10 3A */	slwi r3, r3, 2
-/* 8022CEB0 00229CB0  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022CEB0 00229CB0  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022CEB4 00229CB4  39 03 01 70 */	addi r8, r3, 0x170
 /* 8022CEB8 00229CB8  7D 07 42 14 */	add r8, r7, r8
 /* 8022CEBC 00229CBC  80 08 00 00 */	lwz r0, 0(r8)
@@ -28251,7 +28251,7 @@ GXSetTevSwapMode:
 .global GXSetTevSwapModeTable
 GXSetTevSwapModeTable:
 /* 8022CEF4 00229CF4  54 69 08 3C */	slwi r9, r3, 1
-/* 8022CEF8 00229CF8  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 8022CEF8 00229CF8  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022CEFC 00229CFC  54 63 18 38 */	slwi r3, r3, 3
 /* 8022CF00 00229D00  39 43 01 B0 */	addi r10, r3, 0x1b0
 /* 8022CF04 00229D04  7D 48 52 14 */	add r10, r8, r10
@@ -28286,7 +28286,7 @@ GXSetTevSwapModeTable:
 .global GXSetAlphaCompare
 GXSetAlphaCompare:
 /* 8022CF74 00229D74  54 80 06 3E */	clrlwi r0, r4, 0x18
-/* 8022CF78 00229D78  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022CF78 00229D78  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022CF7C 00229D7C  3D 00 F3 00 */	lis r8, 0xf300
 /* 8022CF80 00229D80  50 08 06 3E */	rlwimi r8, r0, 0, 0x18, 0x1f
 /* 8022CF84 00229D84  54 E0 06 3E */	clrlwi r0, r7, 0x18
@@ -28333,7 +28333,7 @@ lbl_8022D008:
 /* 8022D008 00229E08  39 00 00 02 */	li r8, 2
 lbl_8022D00C:
 /* 8022D00C 00229E0C  38 00 00 61 */	li r0, 0x61
-/* 8022D010 00229E10  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022D010 00229E10  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022D014 00229E14  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022D018 00229E18  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 8022D01C 00229E1C  51 07 07 BE */	rlwimi r7, r8, 0, 0x1e, 0x1f
@@ -28350,7 +28350,7 @@ lbl_8022D00C:
 .global GXSetTevOrder
 GXSetTevOrder:
 /* 8022D044 00229E44  7C 67 0E 70 */	srawi r7, r3, 1
-/* 8022D048 00229E48  81 22 DA 58 */	lwz r9, __GXData-_SDA2_BASE_(r2)
+/* 8022D048 00229E48  81 22 DA 58 */	lwz r9, __GXData@sda21(r2)
 /* 8022D04C 00229E4C  54 AA 06 2C */	rlwinm r10, r5, 0, 0x18, 0x16
 /* 8022D050 00229E50  7C E7 01 94 */	addze r7, r7
 /* 8022D054 00229E54  54 60 10 3A */	slwi r0, r3, 2
@@ -28369,7 +28369,7 @@ lbl_8022D080:
 lbl_8022D084:
 /* 8022D084 00229E84  2C 04 00 08 */	cmpwi r4, 8
 /* 8022D088 00229E88  41 80 00 28 */	blt lbl_8022D0B0
-/* 8022D08C 00229E8C  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022D08C 00229E8C  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022D090 00229E90  38 00 00 01 */	li r0, 1
 /* 8022D094 00229E94  7C 00 18 30 */	slw r0, r0, r3
 /* 8022D098 00229E98  81 04 05 98 */	lwz r8, 0x598(r4)
@@ -28379,7 +28379,7 @@ lbl_8022D084:
 /* 8022D0A8 00229EA8  90 0A 00 00 */	stw r0, 0(r10)
 /* 8022D0AC 00229EAC  48 00 00 20 */	b lbl_8022D0CC
 lbl_8022D0B0:
-/* 8022D0B0 00229EB0  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 8022D0B0 00229EB0  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022D0B4 00229EB4  38 00 00 01 */	li r0, 1
 /* 8022D0B8 00229EB8  7C 00 18 30 */	slw r0, r0, r3
 /* 8022D0BC 00229EBC  39 48 05 98 */	addi r10, r8, 0x598
@@ -28453,7 +28453,7 @@ lbl_8022D1A4:
 /* 8022D1AC 00229FAC  90 07 00 00 */	stw r0, 0(r7)
 lbl_8022D1B0:
 /* 8022D1B0 00229FB0  38 00 00 61 */	li r0, 0x61
-/* 8022D1B4 00229FB4  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022D1B4 00229FB4  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022D1B8 00229FB8  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022D1BC 00229FBC  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 8022D1C0 00229FC0  38 00 00 00 */	li r0, 0
@@ -28467,7 +28467,7 @@ lbl_8022D1B0:
 
 .global GXSetNumTevStages
 GXSetNumTevStages:
-/* 8022D1E0 00229FE0  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022D1E0 00229FE0  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022D1E4 00229FE4  54 63 06 3E */	clrlwi r3, r3, 0x18
 /* 8022D1E8 00229FE8  38 03 FF FF */	addi r0, r3, -1
 /* 8022D1EC 00229FEC  80 64 02 04 */	lwz r3, 0x204(r4)
@@ -28499,13 +28499,13 @@ GXSetFog:
 /* 8022D248 0022A048  FC 02 08 00 */	fcmpu cr0, f2, f1
 /* 8022D24C 0022A04C  40 82 00 14 */	bne lbl_8022D260
 lbl_8022D250:
-/* 8022D250 0022A050  C0 02 DB 00 */	lfs f0, _esc__2_221_0-_SDA2_BASE_(r2)
+/* 8022D250 0022A050  C0 02 DB 00 */	lfs f0, _esc__2_221_0@sda21(r2)
 /* 8022D254 0022A054  D0 01 00 24 */	stfs f0, 0x24(r1)
 /* 8022D258 0022A058  D0 01 00 20 */	stfs f0, 0x20(r1)
 /* 8022D25C 0022A05C  48 00 01 18 */	b lbl_8022D374
 lbl_8022D260:
 /* 8022D260 0022A060  EC A2 08 28 */	fsubs f5, f2, f1
-/* 8022D264 0022A064  C0 C2 DB 04 */	lfs f6, _esc__2_222_0-_SDA2_BASE_(r2)
+/* 8022D264 0022A064  C0 C2 DB 04 */	lfs f6, _esc__2_222_0@sda21(r2)
 /* 8022D268 0022A068  EC 44 18 28 */	fsubs f2, f4, f3
 /* 8022D26C 0022A06C  EC 01 18 28 */	fsubs f0, f1, f3
 /* 8022D270 0022A070  EC 66 28 24 */	fdivs f3, f6, f5
@@ -28520,8 +28520,8 @@ lbl_8022D288:
 /* 8022D290 0022A090  FC 02 08 00 */	fcmpu cr0, f2, f1
 /* 8022D294 0022A094  40 82 00 14 */	bne lbl_8022D2A8
 lbl_8022D298:
-/* 8022D298 0022A098  C0 62 DB 00 */	lfs f3, _esc__2_221_0-_SDA2_BASE_(r2)
-/* 8022D29C 0022A09C  C0 82 DB 08 */	lfs f4, _esc__2_223_0-_SDA2_BASE_(r2)
+/* 8022D298 0022A098  C0 62 DB 00 */	lfs f3, _esc__2_221_0@sda21(r2)
+/* 8022D29C 0022A09C  C0 82 DB 08 */	lfs f4, _esc__2_223_0@sda21(r2)
 /* 8022D2A0 0022A0A0  FF E0 18 90 */	fmr f31, f3
 /* 8022D2A4 0022A0A4  48 00 00 20 */	b lbl_8022D2C4
 lbl_8022D2A8:
@@ -28533,9 +28533,9 @@ lbl_8022D2A8:
 /* 8022D2BC 0022A0BC  EF E1 28 24 */	fdivs f31, f1, f5
 /* 8022D2C0 0022A0C0  EC 62 00 24 */	fdivs f3, f2, f0
 lbl_8022D2C4:
-/* 8022D2C4 0022A0C4  C0 22 DB 08 */	lfs f1, _esc__2_223_0-_SDA2_BASE_(r2)
+/* 8022D2C4 0022A0C4  C0 22 DB 08 */	lfs f1, _esc__2_223_0@sda21(r2)
 /* 8022D2C8 0022A0C8  38 60 00 00 */	li r3, 0
-/* 8022D2CC 0022A0CC  C8 02 DB 10 */	lfd f0, _esc__2_224_0-_SDA2_BASE_(r2)
+/* 8022D2CC 0022A0CC  C8 02 DB 10 */	lfd f0, _esc__2_224_0@sda21(r2)
 /* 8022D2D0 0022A0D0  48 00 00 0C */	b lbl_8022D2DC
 lbl_8022D2D4:
 /* 8022D2D4 0022A0D4  EC 84 00 72 */	fmuls f4, f4, f1
@@ -28543,9 +28543,9 @@ lbl_8022D2D4:
 lbl_8022D2DC:
 /* 8022D2DC 0022A0DC  FC 04 00 40 */	fcmpo cr0, f4, f0
 /* 8022D2E0 0022A0E0  41 81 FF F4 */	bgt lbl_8022D2D4
-/* 8022D2E4 0022A0E4  C8 02 DB 20 */	lfd f0, _esc__2_226-_SDA2_BASE_(r2)
-/* 8022D2E8 0022A0E8  C0 42 DB 18 */	lfs f2, _esc__2_225-_SDA2_BASE_(r2)
-/* 8022D2EC 0022A0EC  C0 22 DB 00 */	lfs f1, _esc__2_221_0-_SDA2_BASE_(r2)
+/* 8022D2E4 0022A0E4  C8 02 DB 20 */	lfd f0, _esc__2_226@sda21(r2)
+/* 8022D2E8 0022A0E8  C0 42 DB 18 */	lfs f2, _esc__2_225@sda21(r2)
+/* 8022D2EC 0022A0EC  C0 22 DB 00 */	lfs f1, _esc__2_221_0@sda21(r2)
 /* 8022D2F0 0022A0F0  48 00 00 0C */	b lbl_8022D2FC
 lbl_8022D2F4:
 /* 8022D2F4 0022A0F4  EC 84 00 B2 */	fmuls f4, f4, f2
@@ -28557,9 +28557,9 @@ lbl_8022D2FC:
 /* 8022D308 0022A108  41 80 FF EC */	blt lbl_8022D2F4
 lbl_8022D30C:
 /* 8022D30C 0022A10C  3A E3 00 01 */	addi r23, r3, 1
-/* 8022D310 0022A110  C0 02 DB 28 */	lfs f0, _esc__2_227_0-_SDA2_BASE_(r2)
+/* 8022D310 0022A110  C0 02 DB 28 */	lfs f0, _esc__2_227_0@sda21(r2)
 /* 8022D314 0022A114  38 00 00 01 */	li r0, 1
-/* 8022D318 0022A118  C8 42 DB 30 */	lfd f2, _esc__2_229-_SDA2_BASE_(r2)
+/* 8022D318 0022A118  C8 42 DB 30 */	lfd f2, _esc__2_229@sda21(r2)
 /* 8022D31C 0022A11C  7C 00 B8 30 */	slw r0, r0, r23
 /* 8022D320 0022A120  EC 20 01 32 */	fmuls f1, f0, f4
 /* 8022D324 0022A124  6C 00 80 00 */	xoris r0, r0, 0x8000
@@ -28598,7 +28598,7 @@ lbl_8022D374:
 /* 8022D3A4 0022A1A4  98 04 80 00 */	stb r0, 0xCC008000@l(r4)
 /* 8022D3A8 0022A1A8  51 09 C0 0E */	rlwimi r9, r8, 0x18, 0, 7
 /* 8022D3AC 0022A1AC  50 FC 06 3E */	rlwimi r28, r7, 0, 0x18, 0x1f
-/* 8022D3B0 0022A1B0  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022D3B0 0022A1B0  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022D3B4 0022A1B4  91 24 80 00 */	stw r9, -0x8000(r4)
 /* 8022D3B8 0022A1B8  51 5A A5 7E */	rlwimi r26, r10, 0x14, 0x15, 0x1f
 /* 8022D3BC 0022A1BC  98 04 80 00 */	stb r0, -0x8000(r4)
@@ -28692,7 +28692,7 @@ GXSetFogRangeAdj:
 /* 8022D510 0022A310  91 05 80 00 */	stw r8, -0x8000(r5)
 lbl_8022D514:
 /* 8022D514 0022A314  54 85 04 3E */	clrlwi r5, r4, 0x10
-/* 8022D518 0022A318  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022D518 0022A318  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022D51C 0022A31C  38 05 01 56 */	addi r0, r5, 0x156
 /* 8022D520 0022A320  38 A0 00 00 */	li r5, 0
 /* 8022D524 0022A324  50 05 05 BE */	rlwimi r5, r0, 0, 0x16, 0x1f
@@ -28709,7 +28709,7 @@ lbl_8022D514:
 
 .global GXSetBlendMode
 GXSetBlendMode:
-/* 8022D550 0022A350  81 02 DA 58 */	lwz r8, __GXData-_SDA2_BASE_(r2)
+/* 8022D550 0022A350  81 02 DA 58 */	lwz r8, __GXData@sda21(r2)
 /* 8022D554 0022A354  20 03 00 03 */	subfic r0, r3, 3
 /* 8022D558 0022A358  7C 07 00 34 */	cntlzw r7, r0
 /* 8022D55C 0022A35C  20 03 00 02 */	subfic r0, r3, 2
@@ -28733,7 +28733,7 @@ GXSetBlendMode:
 
 .global GXSetColorUpdate
 GXSetColorUpdate:
-/* 8022D5A4 0022A3A4  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022D5A4 0022A3A4  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022D5A8 0022A3A8  38 00 00 61 */	li r0, 0x61
 /* 8022D5AC 0022A3AC  3C 80 CC 01 */	lis r4, 0xCC008000@ha
 /* 8022D5B0 0022A3B0  80 C5 01 D0 */	lwz r6, 0x1d0(r5)
@@ -28747,7 +28747,7 @@ GXSetColorUpdate:
 
 .global GXSetAlphaUpdate
 GXSetAlphaUpdate:
-/* 8022D5D0 0022A3D0  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022D5D0 0022A3D0  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022D5D4 0022A3D4  38 00 00 61 */	li r0, 0x61
 /* 8022D5D8 0022A3D8  3C 80 CC 01 */	lis r4, 0xCC008000@ha
 /* 8022D5DC 0022A3DC  80 C5 01 D0 */	lwz r6, 0x1d0(r5)
@@ -28761,7 +28761,7 @@ GXSetAlphaUpdate:
 
 .global GXSetZMode
 GXSetZMode:
-/* 8022D5FC 0022A3FC  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022D5FC 0022A3FC  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022D600 0022A400  38 00 00 61 */	li r0, 0x61
 /* 8022D604 0022A404  80 E6 01 D8 */	lwz r7, 0x1d8(r6)
 /* 8022D608 0022A408  50 67 07 FE */	rlwimi r7, r3, 0, 0x1f, 0x1f
@@ -28777,7 +28777,7 @@ GXSetZMode:
 
 .global GXSetZCompLoc
 GXSetZCompLoc:
-/* 8022D630 0022A430  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022D630 0022A430  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022D634 0022A434  54 60 06 3E */	clrlwi r0, r3, 0x18
 /* 8022D638 0022A438  38 60 00 61 */	li r3, 0x61
 /* 8022D63C 0022A43C  80 A6 01 DC */	lwz r5, 0x1dc(r6)
@@ -28794,7 +28794,7 @@ GXSetZCompLoc:
 .global GXSetPixelFmt
 GXSetPixelFmt:
 /* 8022D664 0022A464  3C A0 80 33 */	lis r5, p2f_esc__7_362@ha
-/* 8022D668 0022A468  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022D668 0022A468  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022D66C 0022A46C  54 66 10 3A */	slwi r6, r3, 2
 /* 8022D670 0022A470  38 05 80 58 */	addi r0, r5, p2f_esc__7_362@l
 /* 8022D674 0022A474  80 A7 01 DC */	lwz r5, 0x1dc(r7)
@@ -28820,7 +28820,7 @@ GXSetPixelFmt:
 lbl_8022D6C4:
 /* 8022D6C4 0022A4C4  38 00 00 00 */	li r0, 0
 lbl_8022D6C8:
-/* 8022D6C8 0022A4C8  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022D6C8 0022A4C8  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022D6CC 0022A4CC  80 85 02 04 */	lwz r4, 0x204(r5)
 /* 8022D6D0 0022A4D0  50 04 4D AC */	rlwimi r4, r0, 9, 0x16, 0x16
 /* 8022D6D4 0022A4D4  90 85 02 04 */	stw r4, 0x204(r5)
@@ -28831,7 +28831,7 @@ lbl_8022D6E4:
 /* 8022D6E4 0022A4E4  80 06 00 00 */	lwz r0, 0(r6)
 /* 8022D6E8 0022A4E8  28 00 00 04 */	cmplwi r0, 4
 /* 8022D6EC 0022A4EC  40 82 00 3C */	bne lbl_8022D728
-/* 8022D6F0 0022A4F0  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022D6F0 0022A4F0  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022D6F4 0022A4F4  38 03 FF FC */	addi r0, r3, -4
 /* 8022D6F8 0022A4F8  38 80 00 42 */	li r4, 0x42
 /* 8022D6FC 0022A4FC  80 66 01 D4 */	lwz r3, 0x1d4(r6)
@@ -28846,14 +28846,14 @@ lbl_8022D6E4:
 /* 8022D720 0022A520  80 06 01 D4 */	lwz r0, 0x1d4(r6)
 /* 8022D724 0022A524  90 03 80 00 */	stw r0, -0x8000(r3)
 lbl_8022D728:
-/* 8022D728 0022A528  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022D728 0022A528  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022D72C 0022A52C  38 00 00 00 */	li r0, 0
 /* 8022D730 0022A530  B0 03 00 02 */	sth r0, 2(r3)
 /* 8022D734 0022A534  4E 80 00 20 */	blr 
 
 .global GXSetDither
 GXSetDither:
-/* 8022D738 0022A538  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022D738 0022A538  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022D73C 0022A53C  38 00 00 61 */	li r0, 0x61
 /* 8022D740 0022A540  3C 80 CC 01 */	lis r4, 0xCC008000@ha
 /* 8022D744 0022A544  80 C5 01 D0 */	lwz r6, 0x1d0(r5)
@@ -28867,7 +28867,7 @@ GXSetDither:
 
 .global GXSetDstAlpha
 GXSetDstAlpha:
-/* 8022D764 0022A564  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022D764 0022A564  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022D768 0022A568  54 85 06 3E */	clrlwi r5, r4, 0x18
 /* 8022D76C 0022A56C  38 00 00 61 */	li r0, 0x61
 /* 8022D770 0022A570  80 E6 01 D4 */	lwz r7, 0x1d4(r6)
@@ -28886,7 +28886,7 @@ GXSetDstAlpha:
 .global GXSetFieldMask
 GXSetFieldMask:
 /* 8022D7A0 0022A5A0  54 80 06 3E */	clrlwi r0, r4, 0x18
-/* 8022D7A4 0022A5A4  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022D7A4 0022A5A4  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022D7A8 0022A5A8  38 A0 00 00 */	li r5, 0
 /* 8022D7AC 0022A5AC  50 05 07 FE */	rlwimi r5, r0, 0, 0x1f, 0x1f
 /* 8022D7B0 0022A5B0  50 65 0F BC */	rlwimi r5, r3, 1, 0x1e, 0x1e
@@ -28912,7 +28912,7 @@ GXSetFieldMode:
 /* 8022D7F4 0022A5F4  3B C0 00 61 */	li r30, 0x61
 /* 8022D7F8 0022A5F8  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 8022D7FC 0022A5FC  7C 7D 1B 78 */	mr r29, r3
-/* 8022D800 0022A600  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022D800 0022A600  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022D804 0022A604  80 85 00 7C */	lwz r4, 0x7c(r5)
 /* 8022D808 0022A608  50 04 B2 52 */	rlwimi r4, r0, 0x16, 9, 9
 /* 8022D80C 0022A60C  90 85 00 7C */	stw r4, 0x7c(r5)
@@ -28942,13 +28942,13 @@ GXCallDisplayList:
 /* 8022D860 0022A660  3B E4 00 00 */	addi r31, r4, 0
 /* 8022D864 0022A664  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 8022D868 0022A668  3B C3 00 00 */	addi r30, r3, 0
-/* 8022D86C 0022A66C  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022D86C 0022A66C  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022D870 0022A670  80 05 05 AC */	lwz r0, 0x5ac(r5)
 /* 8022D874 0022A674  28 00 00 00 */	cmplwi r0, 0
 /* 8022D878 0022A678  41 82 00 08 */	beq lbl_8022D880
 /* 8022D87C 0022A67C  4B FF C7 79 */	bl __GXSetDirtyState
 lbl_8022D880:
-/* 8022D880 0022A680  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022D880 0022A680  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022D884 0022A684  80 03 00 00 */	lwz r0, 0(r3)
 /* 8022D888 0022A688  28 00 00 00 */	cmplwi r0, 0
 /* 8022D88C 0022A68C  40 82 00 08 */	bne lbl_8022D894
@@ -28968,7 +28968,7 @@ lbl_8022D894:
 
 .global GXSetProjection
 GXSetProjection:
-/* 8022D8C0 0022A6C0  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022D8C0 0022A6C0  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022D8C4 0022A6C4  2C 04 00 01 */	cmpwi r4, 1
 /* 8022D8C8 0022A6C8  90 85 04 D8 */	stw r4, 0x4d8(r5)
 /* 8022D8CC 0022A6CC  C0 03 00 00 */	lfs f0, 0(r3)
@@ -28992,7 +28992,7 @@ lbl_8022D904:
 /* 8022D910 0022A710  D0 05 04 E8 */	stfs f0, 0x4e8(r5)
 lbl_8022D914:
 /* 8022D914 0022A714  3C A0 CC 01 */	lis r5, 0xCC008000@ha
-/* 8022D918 0022A718  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022D918 0022A718  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022D91C 0022A71C  38 00 00 10 */	li r0, 0x10
 /* 8022D920 0022A720  3C 60 00 06 */	lis r3, 0x00061020@ha
 /* 8022D924 0022A724  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
@@ -29014,7 +29014,7 @@ lbl_8022D914:
 
 .global GXSetProjectionv
 GXSetProjectionv:
-/* 8022D964 0022A764  C0 22 DB 38 */	lfs f1, _esc__2_26-_SDA2_BASE_(r2)
+/* 8022D964 0022A764  C0 22 DB 38 */	lfs f1, _esc__2_26@sda21(r2)
 /* 8022D968 0022A768  C0 03 00 00 */	lfs f0, 0(r3)
 /* 8022D96C 0022A76C  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 8022D970 0022A770  40 82 00 0C */	bne lbl_8022D97C
@@ -29023,7 +29023,7 @@ GXSetProjectionv:
 lbl_8022D97C:
 /* 8022D97C 0022A77C  38 00 00 01 */	li r0, 1
 lbl_8022D980:
-/* 8022D980 0022A780  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022D980 0022A780  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022D984 0022A784  38 63 00 04 */	addi r3, r3, 4
 /* 8022D988 0022A788  90 05 04 D8 */	stw r0, 0x4d8(r5)
 /* 8022D98C 0022A78C  38 C5 04 DC */	addi r6, r5, 0x4dc
@@ -29054,18 +29054,18 @@ lbl_8022D980:
 
 .global GXGetProjectionv
 GXGetProjectionv:
-/* 8022D9F0 0022A7F0  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022D9F0 0022A7F0  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022D9F4 0022A7F4  80 04 04 D8 */	lwz r0, 0x4d8(r4)
 /* 8022D9F8 0022A7F8  28 00 00 00 */	cmplwi r0, 0
 /* 8022D9FC 0022A7FC  41 82 00 0C */	beq lbl_8022DA08
-/* 8022DA00 0022A800  C0 02 DB 3C */	lfs f0, _esc__2_27-_SDA2_BASE_(r2)
+/* 8022DA00 0022A800  C0 02 DB 3C */	lfs f0, _esc__2_27@sda21(r2)
 /* 8022DA04 0022A804  48 00 00 08 */	b lbl_8022DA0C
 lbl_8022DA08:
-/* 8022DA08 0022A808  C0 02 DB 38 */	lfs f0, _esc__2_26-_SDA2_BASE_(r2)
+/* 8022DA08 0022A808  C0 02 DB 38 */	lfs f0, _esc__2_26@sda21(r2)
 lbl_8022DA0C:
 /* 8022DA0C 0022A80C  D0 03 00 00 */	stfs f0, 0(r3)
 /* 8022DA10 0022A810  38 83 00 04 */	addi r4, r3, 4
-/* 8022DA14 0022A814  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022DA14 0022A814  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022DA18 0022A818  38 63 04 DC */	addi r3, r3, 0x4dc
 /* 8022DA1C 0022A81C  E0 43 00 00 */	psq_l f2, 0(r3), 0, qr0
 /* 8022DA20 0022A820  E0 23 00 08 */	psq_l f1, 8(r3), 0, qr0
@@ -29126,7 +29126,7 @@ GXSetCurrentMtx:
 /* 8022DAD8 0022A8D8  7C 08 02 A6 */	mflr r0
 /* 8022DADC 0022A8DC  90 01 00 04 */	stw r0, 4(r1)
 /* 8022DAE0 0022A8E0  94 21 FF F8 */	stwu r1, -8(r1)
-/* 8022DAE4 0022A8E4  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022DAE4 0022A8E4  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022DAE8 0022A8E8  80 04 00 80 */	lwz r0, 0x80(r4)
 /* 8022DAEC 0022A8EC  50 60 06 BE */	rlwimi r0, r3, 0, 0x1a, 0x1f
 /* 8022DAF0 0022A8F0  38 60 00 00 */	li r3, 0
@@ -29192,9 +29192,9 @@ lbl_8022DB98:
 
 .global __GXSetViewport
 __GXSetViewport:
-/* 8022DBC0 0022A9C0  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022DBC0 0022A9C0  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022DBC4 0022A9C4  3C 60 00 05 */	lis r3, 0x0005101A@ha
-/* 8022DBC8 0022A9C8  C0 22 DB 40 */	lfs f1, _esc__2_28-_SDA2_BASE_(r2)
+/* 8022DBC8 0022A9C8  C0 22 DB 40 */	lfs f1, _esc__2_28@sda21(r2)
 /* 8022DBCC 0022A9CC  38 A0 00 10 */	li r5, 0x10
 /* 8022DBD0 0022A9D0  C0 66 05 00 */	lfs f3, 0x500(r6)
 /* 8022DBD4 0022A9D4  C0 46 04 FC */	lfs f2, 0x4fc(r6)
@@ -29212,7 +29212,7 @@ __GXSetViewport:
 /* 8022DC04 0022AA04  C0 06 05 0C */	lfs f0, 0x50c(r6)
 /* 8022DC08 0022AA08  ED 22 01 B2 */	fmuls f9, f2, f6
 /* 8022DC0C 0022AA0C  EC 21 01 B2 */	fmuls f1, f1, f6
-/* 8022DC10 0022AA10  C0 C2 DB 44 */	lfs f6, _esc__2_201-_SDA2_BASE_(r2)
+/* 8022DC10 0022AA10  C0 C2 DB 44 */	lfs f6, _esc__2_201@sda21(r2)
 /* 8022DC14 0022AA14  98 A4 80 00 */	stb r5, 0xCC008000@l(r4)
 /* 8022DC18 0022AA18  EC A5 38 2A */	fadds f5, f5, f7
 /* 8022DC1C 0022AA1C  90 04 80 00 */	stw r0, -0x8000(r4)
@@ -29236,10 +29236,10 @@ GXSetViewportJitter:
 /* 8022DC58 0022AA58  90 01 00 04 */	stw r0, 4(r1)
 /* 8022DC5C 0022AA5C  94 21 FF F8 */	stwu r1, -8(r1)
 /* 8022DC60 0022AA60  40 82 00 0C */	bne lbl_8022DC6C
-/* 8022DC64 0022AA64  C0 02 DB 40 */	lfs f0, _esc__2_28-_SDA2_BASE_(r2)
+/* 8022DC64 0022AA64  C0 02 DB 40 */	lfs f0, _esc__2_28@sda21(r2)
 /* 8022DC68 0022AA68  EC 42 00 28 */	fsubs f2, f2, f0
 lbl_8022DC6C:
-/* 8022DC6C 0022AA6C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022DC6C 0022AA6C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022DC70 0022AA70  D0 23 04 F4 */	stfs f1, 0x4f4(r3)
 /* 8022DC74 0022AA74  D0 43 04 F8 */	stfs f2, 0x4f8(r3)
 /* 8022DC78 0022AA78  D0 63 04 FC */	stfs f3, 0x4fc(r3)
@@ -29247,7 +29247,7 @@ lbl_8022DC6C:
 /* 8022DC80 0022AA80  D0 A3 05 04 */	stfs f5, 0x504(r3)
 /* 8022DC84 0022AA84  D0 C3 05 08 */	stfs f6, 0x508(r3)
 /* 8022DC88 0022AA88  4B FF FF 39 */	bl __GXSetViewport
-/* 8022DC8C 0022AA8C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022DC8C 0022AA8C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022DC90 0022AA90  38 00 00 01 */	li r0, 1
 /* 8022DC94 0022AA94  B0 03 00 02 */	sth r0, 2(r3)
 /* 8022DC98 0022AA98  80 01 00 0C */	lwz r0, 0xc(r1)
@@ -29260,7 +29260,7 @@ GXSetViewport:
 /* 8022DCA8 0022AAA8  7C 08 02 A6 */	mflr r0
 /* 8022DCAC 0022AAAC  90 01 00 04 */	stw r0, 4(r1)
 /* 8022DCB0 0022AAB0  94 21 FF F8 */	stwu r1, -8(r1)
-/* 8022DCB4 0022AAB4  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022DCB4 0022AAB4  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022DCB8 0022AAB8  D0 23 04 F4 */	stfs f1, 0x4f4(r3)
 /* 8022DCBC 0022AABC  D0 43 04 F8 */	stfs f2, 0x4f8(r3)
 /* 8022DCC0 0022AAC0  D0 63 04 FC */	stfs f3, 0x4fc(r3)
@@ -29268,7 +29268,7 @@ GXSetViewport:
 /* 8022DCC8 0022AAC8  D0 A3 05 04 */	stfs f5, 0x504(r3)
 /* 8022DCCC 0022AACC  D0 C3 05 08 */	stfs f6, 0x508(r3)
 /* 8022DCD0 0022AAD0  4B FF FE F1 */	bl __GXSetViewport
-/* 8022DCD4 0022AAD4  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022DCD4 0022AAD4  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022DCD8 0022AAD8  38 00 00 01 */	li r0, 1
 /* 8022DCDC 0022AADC  B0 03 00 02 */	sth r0, 2(r3)
 /* 8022DCE0 0022AAE0  80 01 00 0C */	lwz r0, 0xc(r1)
@@ -29278,7 +29278,7 @@ GXSetViewport:
 
 .global GXSetScissor
 GXSetScissor:
-/* 8022DCF0 0022AAF0  80 E2 DA 58 */	lwz r7, __GXData-_SDA2_BASE_(r2)
+/* 8022DCF0 0022AAF0  80 E2 DA 58 */	lwz r7, __GXData@sda21(r2)
 /* 8022DCF4 0022AAF4  38 84 01 56 */	addi r4, r4, 0x156
 /* 8022DCF8 0022AAF8  38 C6 FF FF */	addi r6, r6, -1
 /* 8022DCFC 0022AAFC  80 07 00 F8 */	lwz r0, 0xf8(r7)
@@ -29312,7 +29312,7 @@ GXSetScissor:
 .global GXSetScissorBoxOffset
 GXSetScissorBoxOffset:
 /* 8022DD68 0022AB68  38 A3 01 56 */	addi r5, r3, 0x156
-/* 8022DD6C 0022AB6C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022DD6C 0022AB6C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022DD70 0022AB70  38 04 01 56 */	addi r0, r4, 0x156
 /* 8022DD74 0022AB74  38 80 00 00 */	li r4, 0
 /* 8022DD78 0022AB78  50 A4 FD BE */	rlwimi r4, r5, 0x1f, 0x16, 0x1f
@@ -29331,7 +29331,7 @@ GXSetScissorBoxOffset:
 .global GXSetClipMode
 GXSetClipMode:
 /* 8022DDA8 0022ABA8  38 00 00 10 */	li r0, 0x10
-/* 8022DDAC 0022ABAC  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022DDAC 0022ABAC  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022DDB0 0022ABB0  3C C0 CC 01 */	lis r6, 0xCC008000@ha
 /* 8022DDB4 0022ABB4  98 06 80 00 */	stb r0, 0xCC008000@l(r6)
 /* 8022DDB8 0022ABB8  38 A0 10 05 */	li r5, 0x1005
@@ -29346,7 +29346,7 @@ __GXSetMatrixIndex:
 /* 8022DDD0 0022ABD0  2C 03 00 05 */	cmpwi r3, 5
 /* 8022DDD4 0022ABD4  40 80 00 3C */	bge lbl_8022DE10
 /* 8022DDD8 0022ABD8  38 00 00 08 */	li r0, 8
-/* 8022DDDC 0022ABDC  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022DDDC 0022ABDC  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022DDE0 0022ABE0  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022DDE4 0022ABE4  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 8022DDE8 0022ABE8  38 00 00 30 */	li r0, 0x30
@@ -29361,7 +29361,7 @@ __GXSetMatrixIndex:
 /* 8022DE0C 0022AC0C  48 00 00 38 */	b lbl_8022DE44
 lbl_8022DE10:
 /* 8022DE10 0022AC10  38 00 00 08 */	li r0, 8
-/* 8022DE14 0022AC14  80 82 DA 58 */	lwz r4, __GXData-_SDA2_BASE_(r2)
+/* 8022DE14 0022AC14  80 82 DA 58 */	lwz r4, __GXData@sda21(r2)
 /* 8022DE18 0022AC18  3C A0 CC 01 */	lis r5, 0xCC008000@ha
 /* 8022DE1C 0022AC1C  98 05 80 00 */	stb r0, 0xCC008000@l(r5)
 /* 8022DE20 0022AC20  38 00 00 40 */	li r0, 0x40
@@ -29374,14 +29374,14 @@ lbl_8022DE10:
 /* 8022DE3C 0022AC3C  90 05 80 00 */	stw r0, -0x8000(r5)
 /* 8022DE40 0022AC40  90 85 80 00 */	stw r4, -0x8000(r5)
 lbl_8022DE44:
-/* 8022DE44 0022AC44  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022DE44 0022AC44  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022DE48 0022AC48  38 00 00 01 */	li r0, 1
 /* 8022DE4C 0022AC4C  B0 03 00 02 */	sth r0, 2(r3)
 /* 8022DE50 0022AC50  4E 80 00 20 */	blr 
 
 .global GXSetGPMetric
 GXSetGPMetric:
-/* 8022DE54 0022AC54  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022DE54 0022AC54  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022DE58 0022AC58  80 05 05 9C */	lwz r0, 0x59c(r5)
 /* 8022DE5C 0022AC5C  2C 00 00 22 */	cmpwi r0, 0x22
 /* 8022DE60 0022AC60  41 82 00 2C */	beq lbl_8022DE8C
@@ -29419,7 +29419,7 @@ lbl_8022DEC4:
 /* 8022DED0 0022ACD0  3C 00 24 00 */	lis r0, 0x2400
 /* 8022DED4 0022ACD4  90 05 80 00 */	stw r0, -0x8000(r5)
 lbl_8022DED8:
-/* 8022DED8 0022ACD8  80 C2 DA 58 */	lwz r6, __GXData-_SDA2_BASE_(r2)
+/* 8022DED8 0022ACD8  80 C2 DA 58 */	lwz r6, __GXData@sda21(r2)
 /* 8022DEDC 0022ACDC  80 06 05 A0 */	lwz r0, 0x5a0(r6)
 /* 8022DEE0 0022ACE0  2C 00 00 15 */	cmpwi r0, 0x15
 /* 8022DEE4 0022ACE4  41 82 00 2C */	beq lbl_8022DF10
@@ -29455,11 +29455,11 @@ lbl_8022DF28:
 /* 8022DF50 0022AD50  90 05 80 00 */	stw r0, -0x8000(r5)
 /* 8022DF54 0022AD54  48 00 00 10 */	b lbl_8022DF64
 lbl_8022DF58:
-/* 8022DF58 0022AD58  80 AD E2 0C */	lwz r5, __cpReg-_SDA_BASE_(r13)
+/* 8022DF58 0022AD58  80 AD E2 0C */	lwz r5, __cpReg@sda21(r13)
 /* 8022DF5C 0022AD5C  38 00 00 00 */	li r0, 0
 /* 8022DF60 0022AD60  B0 05 00 06 */	sth r0, 6(r5)
 lbl_8022DF64:
-/* 8022DF64 0022AD64  80 A2 DA 58 */	lwz r5, __GXData-_SDA2_BASE_(r2)
+/* 8022DF64 0022AD64  80 A2 DA 58 */	lwz r5, __GXData@sda21(r2)
 /* 8022DF68 0022AD68  90 65 05 9C */	stw r3, 0x59c(r5)
 /* 8022DF6C 0022AD6C  80 05 05 9C */	lwz r0, 0x59c(r5)
 /* 8022DF70 0022AD70  28 00 00 23 */	cmplwi r0, 0x23
@@ -29727,7 +29727,7 @@ lbl_8022DF64:
 /* 8022E388 0022B188  38 03 C1 AD */	addi r0, r3, 0x2402C1AD@l
 /* 8022E38C 0022B18C  90 05 80 00 */	stw r0, -0x8000(r5)
 lbl_8022E390:
-/* 8022E390 0022B190  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022E390 0022B190  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022E394 0022B194  90 83 05 A0 */	stw r4, 0x5a0(r3)
 /* 8022E398 0022B198  80 03 05 A0 */	lwz r0, 0x5a0(r3)
 /* 8022E39C 0022B19C  28 00 00 16 */	cmplwi r0, 0x16
@@ -29903,37 +29903,37 @@ lbl_8022E390:
 /* 8022E644 0022B444  80 03 05 A4 */	lwz r0, 0x5a4(r3)
 /* 8022E648 0022B448  90 04 80 00 */	stw r0, -0x8000(r4)
 /* 8022E64C 0022B44C  48 00 00 40 */	b lbl_8022E68C
-/* 8022E650 0022B450  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 8022E650 0022B450  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 8022E654 0022B454  38 00 00 02 */	li r0, 2
 /* 8022E658 0022B458  B0 03 00 06 */	sth r0, 6(r3)
 /* 8022E65C 0022B45C  48 00 00 30 */	b lbl_8022E68C
-/* 8022E660 0022B460  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 8022E660 0022B460  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 8022E664 0022B464  38 00 00 03 */	li r0, 3
 /* 8022E668 0022B468  B0 03 00 06 */	sth r0, 6(r3)
 /* 8022E66C 0022B46C  48 00 00 20 */	b lbl_8022E68C
-/* 8022E670 0022B470  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 8022E670 0022B470  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 8022E674 0022B474  38 00 00 04 */	li r0, 4
 /* 8022E678 0022B478  B0 03 00 06 */	sth r0, 6(r3)
 /* 8022E67C 0022B47C  48 00 00 10 */	b lbl_8022E68C
-/* 8022E680 0022B480  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 8022E680 0022B480  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 8022E684 0022B484  38 00 00 05 */	li r0, 5
 /* 8022E688 0022B488  B0 03 00 06 */	sth r0, 6(r3)
 lbl_8022E68C:
-/* 8022E68C 0022B48C  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022E68C 0022B48C  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022E690 0022B490  38 00 00 00 */	li r0, 0
 /* 8022E694 0022B494  B0 03 00 02 */	sth r0, 2(r3)
 /* 8022E698 0022B498  4E 80 00 20 */	blr 
 
 .global GXClearGPMetric
 GXClearGPMetric:
-/* 8022E69C 0022B49C  80 6D E2 0C */	lwz r3, __cpReg-_SDA_BASE_(r13)
+/* 8022E69C 0022B49C  80 6D E2 0C */	lwz r3, __cpReg@sda21(r13)
 /* 8022E6A0 0022B4A0  38 00 00 04 */	li r0, 4
 /* 8022E6A4 0022B4A4  B0 03 00 04 */	sth r0, 4(r3)
 /* 8022E6A8 0022B4A8  4E 80 00 20 */	blr 
 
 .global GXReadPixMetric
 GXReadPixMetric:
-/* 8022E6AC 0022B4AC  81 2D E2 10 */	lwz r9, __peReg-_SDA_BASE_(r13)
+/* 8022E6AC 0022B4AC  81 2D E2 10 */	lwz r9, __peReg@sda21(r13)
 /* 8022E6B0 0022B4B0  39 89 00 1A */	addi r12, r9, 0x1a
 /* 8022E6B4 0022B4B4  A1 49 00 1A */	lhz r10, 0x1a(r9)
 /* 8022E6B8 0022B4B8  39 69 00 18 */	addi r11, r9, 0x18
@@ -29947,7 +29947,7 @@ lbl_8022E6BC:
 /* 8022E6D4 0022B4D4  7C 00 4B 78 */	or r0, r0, r9
 /* 8022E6D8 0022B4D8  54 00 10 3A */	slwi r0, r0, 2
 /* 8022E6DC 0022B4DC  90 03 00 00 */	stw r0, 0(r3)
-/* 8022E6E0 0022B4E0  80 6D E2 10 */	lwz r3, __peReg-_SDA_BASE_(r13)
+/* 8022E6E0 0022B4E0  80 6D E2 10 */	lwz r3, __peReg@sda21(r13)
 /* 8022E6E4 0022B4E4  39 63 00 1E */	addi r11, r3, 0x1e
 /* 8022E6E8 0022B4E8  A1 23 00 1E */	lhz r9, 0x1e(r3)
 /* 8022E6EC 0022B4EC  39 43 00 1C */	addi r10, r3, 0x1c
@@ -29961,7 +29961,7 @@ lbl_8022E6F0:
 /* 8022E708 0022B508  7C 00 1B 78 */	or r0, r0, r3
 /* 8022E70C 0022B50C  54 00 10 3A */	slwi r0, r0, 2
 /* 8022E710 0022B510  90 04 00 00 */	stw r0, 0(r4)
-/* 8022E714 0022B514  80 6D E2 10 */	lwz r3, __peReg-_SDA_BASE_(r13)
+/* 8022E714 0022B514  80 6D E2 10 */	lwz r3, __peReg@sda21(r13)
 /* 8022E718 0022B518  39 43 00 22 */	addi r10, r3, 0x22
 /* 8022E71C 0022B51C  A0 83 00 22 */	lhz r4, 0x22(r3)
 /* 8022E720 0022B520  39 23 00 20 */	addi r9, r3, 0x20
@@ -29975,7 +29975,7 @@ lbl_8022E724:
 /* 8022E73C 0022B53C  7C 00 1B 78 */	or r0, r0, r3
 /* 8022E740 0022B540  54 00 10 3A */	slwi r0, r0, 2
 /* 8022E744 0022B544  90 05 00 00 */	stw r0, 0(r5)
-/* 8022E748 0022B548  80 6D E2 10 */	lwz r3, __peReg-_SDA_BASE_(r13)
+/* 8022E748 0022B548  80 6D E2 10 */	lwz r3, __peReg@sda21(r13)
 /* 8022E74C 0022B54C  39 23 00 26 */	addi r9, r3, 0x26
 /* 8022E750 0022B550  A0 83 00 26 */	lhz r4, 0x26(r3)
 /* 8022E754 0022B554  38 A3 00 24 */	addi r5, r3, 0x24
@@ -29989,7 +29989,7 @@ lbl_8022E758:
 /* 8022E770 0022B570  7C 00 1B 78 */	or r0, r0, r3
 /* 8022E774 0022B574  54 00 10 3A */	slwi r0, r0, 2
 /* 8022E778 0022B578  90 06 00 00 */	stw r0, 0(r6)
-/* 8022E77C 0022B57C  80 6D E2 10 */	lwz r3, __peReg-_SDA_BASE_(r13)
+/* 8022E77C 0022B57C  80 6D E2 10 */	lwz r3, __peReg@sda21(r13)
 /* 8022E780 0022B580  38 C3 00 2A */	addi r6, r3, 0x2a
 /* 8022E784 0022B584  A0 83 00 2A */	lhz r4, 0x2a(r3)
 /* 8022E788 0022B588  38 A3 00 28 */	addi r5, r3, 0x28
@@ -30003,7 +30003,7 @@ lbl_8022E78C:
 /* 8022E7A4 0022B5A4  7C 00 1B 78 */	or r0, r0, r3
 /* 8022E7A8 0022B5A8  54 00 10 3A */	slwi r0, r0, 2
 /* 8022E7AC 0022B5AC  90 07 00 00 */	stw r0, 0(r7)
-/* 8022E7B0 0022B5B0  80 6D E2 10 */	lwz r3, __peReg-_SDA_BASE_(r13)
+/* 8022E7B0 0022B5B0  80 6D E2 10 */	lwz r3, __peReg@sda21(r13)
 /* 8022E7B4 0022B5B4  38 C3 00 2E */	addi r6, r3, 0x2e
 /* 8022E7B8 0022B5B8  A0 83 00 2E */	lhz r4, 0x2e(r3)
 /* 8022E7BC 0022B5BC  38 A3 00 2C */	addi r5, r3, 0x2c
@@ -30021,7 +30021,7 @@ lbl_8022E7C0:
 .global GXClearPixMetric
 GXClearPixMetric:
 /* 8022E7E4 0022B5E4  38 E0 00 61 */	li r7, 0x61
-/* 8022E7E8 0022B5E8  80 62 DA 58 */	lwz r3, __GXData-_SDA2_BASE_(r2)
+/* 8022E7E8 0022B5E8  80 62 DA 58 */	lwz r3, __GXData@sda21(r2)
 /* 8022E7EC 0022B5EC  3C C0 CC 01 */	lis r6, 0xCC008000@ha
 /* 8022E7F0 0022B5F0  3C A0 57 00 */	lis r5, 0x57000AAA@ha
 /* 8022E7F4 0022B5F4  98 E6 80 00 */	stb r7, 0xCC008000@l(r6)
@@ -30035,7 +30035,7 @@ GXClearPixMetric:
 
 .global __MIXSetPan
 __MIXSetPan:
-/* 8022E814 0022B614  80 0D E2 70 */	lwz r0, __MIXSoundMode-_SDA_BASE_(r13)
+/* 8022E814 0022B614  80 0D E2 70 */	lwz r0, __MIXSoundMode@sda21(r13)
 /* 8022E818 0022B618  3C 80 80 33 */	lis r4, __MIXVolumeTable@ha
 /* 8022E81C 0022B61C  80 A3 00 14 */	lwz r5, 0x14(r3)
 /* 8022E820 0022B620  39 24 81 68 */	addi r9, r4, __MIXVolumeTable@l
@@ -30126,9 +30126,9 @@ lbl_8022E8FC:
 /* 8022E960 0022B760  3B BD 00 60 */	addi r29, r29, 0x60
 /* 8022E964 0022B764  41 80 FF 98 */	blt lbl_8022E8FC
 /* 8022E968 0022B768  38 00 00 01 */	li r0, 1
-/* 8022E96C 0022B76C  93 ED E2 68 */	stw r31, __MIXDvdStreamAttenCurrent-_SDA_BASE_(r13)
-/* 8022E970 0022B770  93 ED E2 6C */	stw r31, __MIXDvdStreamAttenUser-_SDA_BASE_(r13)
-/* 8022E974 0022B774  90 0D E2 70 */	stw r0, __MIXSoundMode-_SDA_BASE_(r13)
+/* 8022E96C 0022B76C  93 ED E2 68 */	stw r31, __MIXDvdStreamAttenCurrent@sda21(r13)
+/* 8022E970 0022B770  93 ED E2 6C */	stw r31, __MIXDvdStreamAttenUser@sda21(r13)
+/* 8022E974 0022B774  90 0D E2 70 */	stw r0, __MIXSoundMode@sda21(r13)
 /* 8022E978 0022B778  80 01 00 1C */	lwz r0, 0x1c(r1)
 /* 8022E97C 0022B77C  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 8022E980 0022B780  83 C1 00 10 */	lwz r30, 0x10(r1)
@@ -30144,7 +30144,7 @@ MIXQuit:
 
 .global MIXSetSoundMode
 MIXSetSoundMode:
-/* 8022E99C 0022B79C  90 6D E2 70 */	stw r3, __MIXSoundMode-_SDA_BASE_(r13)
+/* 8022E99C 0022B79C  90 6D E2 70 */	stw r3, __MIXSoundMode@sda21(r13)
 /* 8022E9A0 0022B7A0  4E 80 00 20 */	blr 
 
 .global MIXInitChannel
@@ -30200,7 +30200,7 @@ lbl_8022EA4C:
 lbl_8022EA58:
 /* 8022EA58 0022B858  B0 1E 00 38 */	sth r0, 0x38(r30)
 lbl_8022EA5C:
-/* 8022EA5C 0022B85C  80 0D E2 70 */	lwz r0, __MIXSoundMode-_SDA_BASE_(r13)
+/* 8022EA5C 0022B85C  80 0D E2 70 */	lwz r0, __MIXSoundMode@sda21(r13)
 /* 8022EA60 0022B860  3B A0 00 00 */	li r29, 0
 /* 8022EA64 0022B864  2C 00 00 03 */	cmpwi r0, 3
 /* 8022EA68 0022B868  41 82 08 B8 */	beq lbl_8022F320
@@ -31310,7 +31310,7 @@ lbl_8022F904:
 
 .global MIXSetAuxB
 MIXSetAuxB:
-/* 8022F90C 0022C70C  80 0D E2 70 */	lwz r0, __MIXSoundMode-_SDA_BASE_(r13)
+/* 8022F90C 0022C70C  80 0D E2 70 */	lwz r0, __MIXSoundMode@sda21(r13)
 /* 8022F910 0022C710  28 00 00 03 */	cmplwi r0, 3
 /* 8022F914 0022C714  4D 82 00 20 */	beqlr 
 /* 8022F918 0022C718  80 A3 00 18 */	lwz r5, 0x18(r3)
@@ -31326,7 +31326,7 @@ MIXSetAuxB:
 
 .global MIXGetAuxB
 MIXGetAuxB:
-/* 8022F940 0022C740  80 0D E2 70 */	lwz r0, __MIXSoundMode-_SDA_BASE_(r13)
+/* 8022F940 0022C740  80 0D E2 70 */	lwz r0, __MIXSoundMode@sda21(r13)
 /* 8022F944 0022C744  28 00 00 03 */	cmplwi r0, 3
 /* 8022F948 0022C748  40 82 00 0C */	bne lbl_8022F954
 /* 8022F94C 0022C74C  38 60 FC 40 */	li r3, -960
@@ -31545,7 +31545,7 @@ lbl_8022FC10:
 /* 8022FC10 0022CA10  81 24 00 04 */	lwz r9, 4(r4)
 /* 8022FC14 0022CA14  55 29 00 43 */	rlwinm. r9, r9, 0, 1, 1
 /* 8022FC18 0022CA18  41 82 0B CC */	beq lbl_802307E4
-/* 8022FC1C 0022CA1C  80 CD E2 70 */	lwz r6, __MIXSoundMode-_SDA_BASE_(r13)
+/* 8022FC1C 0022CA1C  80 CD E2 70 */	lwz r6, __MIXSoundMode@sda21(r13)
 /* 8022FC20 0022CA20  2C 06 00 03 */	cmpwi r6, 3
 /* 8022FC24 0022CA24  41 82 08 40 */	beq lbl_80230464
 /* 8022FC28 0022CA28  40 80 0B A0 */	bge lbl_802307C8
@@ -32644,17 +32644,17 @@ lbl_80230AB4:
 lbl_80230AC4:
 /* 80230AC4 0022D8C4  38 84 00 60 */	addi r4, r4, 0x60
 /* 80230AC8 0022D8C8  42 00 F0 38 */	bdnz lbl_8022FB00
-/* 80230ACC 0022D8CC  80 0D E2 6C */	lwz r0, __MIXDvdStreamAttenUser-_SDA_BASE_(r13)
-/* 80230AD0 0022D8D0  80 6D E2 68 */	lwz r3, __MIXDvdStreamAttenCurrent-_SDA_BASE_(r13)
+/* 80230ACC 0022D8CC  80 0D E2 6C */	lwz r0, __MIXDvdStreamAttenUser@sda21(r13)
+/* 80230AD0 0022D8D0  80 6D E2 68 */	lwz r3, __MIXDvdStreamAttenCurrent@sda21(r13)
 /* 80230AD4 0022D8D4  7C 00 18 00 */	cmpw r0, r3
 /* 80230AD8 0022D8D8  40 81 00 30 */	ble lbl_80230B08
 /* 80230ADC 0022D8DC  38 03 00 01 */	addi r0, r3, 1
-/* 80230AE0 0022D8E0  90 0D E2 68 */	stw r0, __MIXDvdStreamAttenCurrent-_SDA_BASE_(r13)
-/* 80230AE4 0022D8E4  80 0D E2 68 */	lwz r0, __MIXDvdStreamAttenCurrent-_SDA_BASE_(r13)
+/* 80230AE0 0022D8E0  90 0D E2 68 */	stw r0, __MIXDvdStreamAttenCurrent@sda21(r13)
+/* 80230AE4 0022D8E4  80 0D E2 68 */	lwz r0, __MIXDvdStreamAttenCurrent@sda21(r13)
 /* 80230AE8 0022D8E8  7C 7F 02 14 */	add r3, r31, r0
 /* 80230AEC 0022D8EC  88 63 0B 8C */	lbz r3, 0xb8c(r3)
 /* 80230AF0 0022D8F0  4B FE C5 49 */	bl AISetStreamVolLeft
-/* 80230AF4 0022D8F4  80 0D E2 68 */	lwz r0, __MIXDvdStreamAttenCurrent-_SDA_BASE_(r13)
+/* 80230AF4 0022D8F4  80 0D E2 68 */	lwz r0, __MIXDvdStreamAttenCurrent@sda21(r13)
 /* 80230AF8 0022D8F8  7C 7F 02 14 */	add r3, r31, r0
 /* 80230AFC 0022D8FC  88 63 0B 8C */	lbz r3, 0xb8c(r3)
 /* 80230B00 0022D900  4B FE C5 65 */	bl AISetStreamVolRight
@@ -32662,12 +32662,12 @@ lbl_80230AC4:
 lbl_80230B08:
 /* 80230B08 0022D908  40 80 00 2C */	bge lbl_80230B34
 /* 80230B0C 0022D90C  38 03 FF FF */	addi r0, r3, -1
-/* 80230B10 0022D910  90 0D E2 68 */	stw r0, __MIXDvdStreamAttenCurrent-_SDA_BASE_(r13)
-/* 80230B14 0022D914  80 0D E2 68 */	lwz r0, __MIXDvdStreamAttenCurrent-_SDA_BASE_(r13)
+/* 80230B10 0022D910  90 0D E2 68 */	stw r0, __MIXDvdStreamAttenCurrent@sda21(r13)
+/* 80230B14 0022D914  80 0D E2 68 */	lwz r0, __MIXDvdStreamAttenCurrent@sda21(r13)
 /* 80230B18 0022D918  7C 7F 02 14 */	add r3, r31, r0
 /* 80230B1C 0022D91C  88 63 0B 8C */	lbz r3, 0xb8c(r3)
 /* 80230B20 0022D920  4B FE C5 19 */	bl AISetStreamVolLeft
-/* 80230B24 0022D924  80 0D E2 68 */	lwz r0, __MIXDvdStreamAttenCurrent-_SDA_BASE_(r13)
+/* 80230B24 0022D924  80 0D E2 68 */	lwz r0, __MIXDvdStreamAttenCurrent@sda21(r13)
 /* 80230B28 0022D928  7C 7F 02 14 */	add r3, r31, r0
 /* 80230B2C 0022D92C  88 63 0B 8C */	lbz r3, 0xb8c(r3)
 /* 80230B30 0022D930  4B FE C5 35 */	bl AISetStreamVolRight
@@ -32680,8 +32680,8 @@ lbl_80230B34:
 
 .global PSMTXIdentity
 PSMTXIdentity:
-/* 80230B48 0022D948  C0 02 DB 4C */	lfs f0, _esc__2_97_2-_SDA2_BASE_(r2)
-/* 80230B4C 0022D94C  C0 22 DB 48 */	lfs f1, _esc__2_96_1-_SDA2_BASE_(r2)
+/* 80230B48 0022D948  C0 02 DB 4C */	lfs f0, _esc__2_97_2@sda21(r2)
+/* 80230B4C 0022D94C  C0 22 DB 48 */	lfs f1, _esc__2_96_1@sda21(r2)
 /* 80230B50 0022D950  F0 03 00 08 */	psq_st f0, 8(r3), 0, qr0
 /* 80230B54 0022D954  10 40 0C 60 */	ps_merge01 f2, f0, f1
 /* 80230B58 0022D958  F0 03 00 18 */	psq_st f0, 24(r3), 0, qr0
@@ -32748,7 +32748,7 @@ PSMTXConcat:
 
 .global PSMTXScale
 PSMTXScale:
-/* 80230C40 0022DA40  C0 02 DB 4C */	lfs f0, _esc__2_97_2-_SDA2_BASE_(r2)
+/* 80230C40 0022DA40  C0 02 DB 4C */	lfs f0, _esc__2_97_2@sda21(r2)
 /* 80230C44 0022DA44  D0 23 00 00 */	stfs f1, 0(r3)
 /* 80230C48 0022DA48  F0 03 00 04 */	psq_st f0, 4(r3), 0, qr0
 /* 80230C4C 0022DA4C  F0 03 00 0C */	psq_st f0, 12(r3), 0, qr0
@@ -32762,9 +32762,9 @@ PSMTXScale:
 .global C_MTXOrtho
 C_MTXOrtho:
 /* 80230C68 0022DA68  ED 04 18 28 */	fsubs f8, f4, f3
-/* 80230C6C 0022DA6C  C1 22 DB 50 */	lfs f9, _esc__2_99_0-_SDA2_BASE_(r2)
+/* 80230C6C 0022DA6C  C1 22 DB 50 */	lfs f9, _esc__2_99_0@sda21(r2)
 /* 80230C70 0022DA70  EC 01 10 28 */	fsubs f0, f1, f2
-/* 80230C74 0022DA74  C0 E2 DB 54 */	lfs f7, _esc__2_100-_SDA2_BASE_(r2)
+/* 80230C74 0022DA74  C0 E2 DB 54 */	lfs f7, _esc__2_100@sda21(r2)
 /* 80230C78 0022DA78  EC 64 18 2A */	fadds f3, f4, f3
 /* 80230C7C 0022DA7C  ED 49 40 24 */	fdivs f10, f9, f8
 /* 80230C80 0022DA80  ED 09 00 24 */	fdivs f8, f9, f0
@@ -32774,7 +32774,7 @@ C_MTXOrtho:
 /* 80230C90 0022DA90  D0 83 00 00 */	stfs f4, 0(r3)
 /* 80230C94 0022DA94  EC 21 10 2A */	fadds f1, f1, f2
 /* 80230C98 0022DA98  EC 4A 00 F2 */	fmuls f2, f10, f3
-/* 80230C9C 0022DA9C  C0 62 DB 58 */	lfs f3, _esc__2_101-_SDA2_BASE_(r2)
+/* 80230C9C 0022DA9C  C0 62 DB 58 */	lfs f3, _esc__2_101@sda21(r2)
 /* 80230CA0 0022DAA0  FC 20 08 50 */	fneg f1, f1
 /* 80230CA4 0022DAA4  D0 63 00 04 */	stfs f3, 4(r3)
 /* 80230CA8 0022DAA8  EC 89 00 24 */	fdivs f4, f9, f0
@@ -32790,7 +32790,7 @@ C_MTXOrtho:
 /* 80230CD0 0022DAD0  D0 23 00 1C */	stfs f1, 0x1c(r3)
 /* 80230CD4 0022DAD4  D0 63 00 20 */	stfs f3, 0x20(r3)
 /* 80230CD8 0022DAD8  D0 63 00 24 */	stfs f3, 0x24(r3)
-/* 80230CDC 0022DADC  C0 22 DB 5C */	lfs f1, _esc__2_102-_SDA2_BASE_(r2)
+/* 80230CDC 0022DADC  C0 22 DB 5C */	lfs f1, _esc__2_102@sda21(r2)
 /* 80230CE0 0022DAE0  EC 21 01 32 */	fmuls f1, f1, f4
 /* 80230CE4 0022DAE4  D0 23 00 28 */	stfs f1, 0x28(r3)
 /* 80230CE8 0022DAE8  D0 03 00 2C */	stfs f0, 0x2c(r3)
@@ -32848,7 +32848,7 @@ __OSFPRInit:
 /* 80230DA0 0022DBA0  13 C0 00 90 */	ps_mr f30, f0
 /* 80230DA4 0022DBA4  13 E0 00 90 */	ps_mr f31, f0
 lbl_80230DA8:
-/* 80230DA8 0022DBA8  C8 0D E2 88 */	lfd f0, ZeroF-_SDA_BASE_(r13)
+/* 80230DA8 0022DBA8  C8 0D E2 88 */	lfd f0, ZeroF@sda21(r13)
 /* 80230DAC 0022DBAC  FC 20 00 90 */	fmr f1, f0
 /* 80230DB0 0022DBB0  FC 40 00 90 */	fmr f2, f0
 /* 80230DB4 0022DBB4  FC 60 00 90 */	fmr f3, f0
@@ -32885,7 +32885,7 @@ lbl_80230DA8:
 
 .global OSGetConsoleType
 OSGetConsoleType:
-/* 80230E30 0022DC30  80 6D E2 78 */	lwz r3, BootInfo-_SDA_BASE_(r13)
+/* 80230E30 0022DC30  80 6D E2 78 */	lwz r3, BootInfo@sda21(r13)
 /* 80230E34 0022DC34  28 03 00 00 */	cmplwi r3, 0
 /* 80230E38 0022DC38  41 82 00 10 */	beq lbl_80230E48
 /* 80230E3C 0022DC3C  80 63 00 2C */	lwz r3, 0x2c(r3)
@@ -32909,8 +32909,8 @@ ClearArena:
 /* 80230E70 0022DC70  28 00 00 00 */	cmplwi r0, 0
 /* 80230E74 0022DC74  41 82 00 34 */	beq lbl_80230EA8
 /* 80230E78 0022DC78  38 00 00 00 */	li r0, 0
-/* 80230E7C 0022DC7C  90 0D E2 A4 */	stw r0, __OSSavedRegionStart-_SDA_BASE_(r13)
-/* 80230E80 0022DC80  90 0D E2 A0 */	stw r0, __OSSavedRegionEnd-_SDA_BASE_(r13)
+/* 80230E7C 0022DC7C  90 0D E2 A4 */	stw r0, __OSSavedRegionStart@sda21(r13)
+/* 80230E80 0022DC80  90 0D E2 A0 */	stw r0, __OSSavedRegionEnd@sda21(r13)
 /* 80230E84 0022DC84  48 00 15 11 */	bl OSGetArenaHi
 /* 80230E88 0022DC88  7C 7F 1B 78 */	mr r31, r3
 /* 80230E8C 0022DC8C  48 00 15 11 */	bl OSGetArenaLo
@@ -32925,8 +32925,8 @@ lbl_80230EA8:
 /* 80230EAC 0022DCAC  80 64 DF F0 */	lwz r3, 0x812FDFF0@l(r4)
 /* 80230EB0 0022DCB0  80 04 DF EC */	lwz r0, -0x2014(r4)
 /* 80230EB4 0022DCB4  28 03 00 00 */	cmplwi r3, 0
-/* 80230EB8 0022DCB8  90 6D E2 A4 */	stw r3, __OSSavedRegionStart-_SDA_BASE_(r13)
-/* 80230EBC 0022DCBC  90 0D E2 A0 */	stw r0, __OSSavedRegionEnd-_SDA_BASE_(r13)
+/* 80230EB8 0022DCB8  90 6D E2 A4 */	stw r3, __OSSavedRegionStart@sda21(r13)
+/* 80230EBC 0022DCBC  90 0D E2 A0 */	stw r0, __OSSavedRegionEnd@sda21(r13)
 /* 80230EC0 0022DCC0  40 82 00 28 */	bne lbl_80230EE8
 /* 80230EC4 0022DCC4  48 00 14 D1 */	bl OSGetArenaHi
 /* 80230EC8 0022DCC8  7C 7F 1B 78 */	mr r31, r3
@@ -32939,11 +32939,11 @@ lbl_80230EA8:
 /* 80230EE4 0022DCE4  48 00 00 88 */	b lbl_80230F6C
 lbl_80230EE8:
 /* 80230EE8 0022DCE8  48 00 14 B5 */	bl OSGetArenaLo
-/* 80230EEC 0022DCEC  80 0D E2 A4 */	lwz r0, __OSSavedRegionStart-_SDA_BASE_(r13)
+/* 80230EEC 0022DCEC  80 0D E2 A4 */	lwz r0, __OSSavedRegionStart@sda21(r13)
 /* 80230EF0 0022DCF0  7C 03 00 40 */	cmplw r3, r0
 /* 80230EF4 0022DCF4  40 80 00 78 */	bge lbl_80230F6C
 /* 80230EF8 0022DCF8  48 00 14 9D */	bl OSGetArenaHi
-/* 80230EFC 0022DCFC  80 0D E2 A4 */	lwz r0, __OSSavedRegionStart-_SDA_BASE_(r13)
+/* 80230EFC 0022DCFC  80 0D E2 A4 */	lwz r0, __OSSavedRegionStart@sda21(r13)
 /* 80230F00 0022DD00  7C 03 00 40 */	cmplw r3, r0
 /* 80230F04 0022DD04  41 81 00 28 */	bgt lbl_80230F2C
 /* 80230F08 0022DD08  48 00 14 8D */	bl OSGetArenaHi
@@ -32957,14 +32957,14 @@ lbl_80230EE8:
 /* 80230F28 0022DD28  48 00 00 44 */	b lbl_80230F6C
 lbl_80230F2C:
 /* 80230F2C 0022DD2C  48 00 14 71 */	bl OSGetArenaLo
-/* 80230F30 0022DD30  80 0D E2 A4 */	lwz r0, __OSSavedRegionStart-_SDA_BASE_(r13)
+/* 80230F30 0022DD30  80 0D E2 A4 */	lwz r0, __OSSavedRegionStart@sda21(r13)
 /* 80230F34 0022DD34  7F E3 00 50 */	subf r31, r3, r0
 /* 80230F38 0022DD38  48 00 14 65 */	bl OSGetArenaLo
 /* 80230F3C 0022DD3C  7F E5 FB 78 */	mr r5, r31
 /* 80230F40 0022DD40  38 80 00 00 */	li r4, 0
 /* 80230F44 0022DD44  4B DD 21 BD */	bl memset
 /* 80230F48 0022DD48  48 00 14 4D */	bl OSGetArenaHi
-/* 80230F4C 0022DD4C  83 ED E2 A0 */	lwz r31, __OSSavedRegionEnd-_SDA_BASE_(r13)
+/* 80230F4C 0022DD4C  83 ED E2 A0 */	lwz r31, __OSSavedRegionEnd@sda21(r13)
 /* 80230F50 0022DD50  7C 03 F8 40 */	cmplw r3, r31
 /* 80230F54 0022DD54  40 81 00 18 */	ble lbl_80230F6C
 /* 80230F58 0022DD58  48 00 14 3D */	bl OSGetArenaHi
@@ -33008,7 +33008,7 @@ OSInit:
 /* 80230FC8 0022DDC8  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 80230FCC 0022DDCC  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 80230FD0 0022DDD0  93 A1 00 0C */	stw r29, 0xc(r1)
-/* 80230FD4 0022DDD4  80 0D E2 98 */	lwz r0, AreWeInitialized-_SDA_BASE_(r13)
+/* 80230FD4 0022DDD4  80 0D E2 98 */	lwz r0, AreWeInitialized@sda21(r13)
 /* 80230FD8 0022DDD8  3C 60 80 3C */	lis r3, DriveInfo@ha
 /* 80230FDC 0022DDDC  3B C3 15 A0 */	addi r30, r3, DriveInfo@l
 /* 80230FE0 0022DDE0  2C 00 00 00 */	cmpwi r0, 0
@@ -33016,10 +33016,10 @@ OSInit:
 /* 80230FE8 0022DDE8  3B E3 8D 28 */	addi r31, r3, _esc__2_1_8@l
 /* 80230FEC 0022DDEC  40 82 03 8C */	bne lbl_80231378
 /* 80230FF0 0022DDF0  38 00 00 01 */	li r0, 1
-/* 80230FF4 0022DDF4  90 0D E2 98 */	stw r0, AreWeInitialized-_SDA_BASE_(r13)
+/* 80230FF4 0022DDF4  90 0D E2 98 */	stw r0, AreWeInitialized@sda21(r13)
 /* 80230FF8 0022DDF8  48 00 75 75 */	bl __OSGetSystemTime
-/* 80230FFC 0022DDFC  90 8D E2 B4 */	stw r4, lbl_803D1734-_SDA_BASE_(r13)
-/* 80231000 0022DE00  90 6D E2 B0 */	stw r3, __OSStartTime-_SDA_BASE_(r13)
+/* 80230FFC 0022DDFC  90 8D E2 B4 */	stw r4, lbl_803D1734@sda21(r13)
+/* 80231000 0022DE00  90 6D E2 B0 */	stw r3, __OSStartTime@sda21(r13)
 /* 80231004 0022DE04  48 00 33 C5 */	bl OSDisableInterrupts
 /* 80231008 0022DE08  38 60 00 00 */	li r3, 0
 /* 8023100C 0022DE0C  4B FE 4E 8D */	bl PPCMtmmcr0
@@ -33037,21 +33037,21 @@ OSInit:
 /* 8023103C 0022DE3C  4B FE 4F 15 */	bl PPCSetFpNonIEEEMode
 /* 80231040 0022DE40  38 00 00 00 */	li r0, 0
 /* 80231044 0022DE44  3C 80 80 00 */	lis r4, 0x800000F4@ha
-/* 80231048 0022DE48  90 0D E2 7C */	stw r0, BI2DebugFlag-_SDA_BASE_(r13)
-/* 8023104C 0022DE4C  90 8D E2 78 */	stw r4, BootInfo-_SDA_BASE_(r13)
-/* 80231050 0022DE50  90 0D E7 A4 */	stw r0, __DVDLongFileNameFlag-_SDA_BASE_(r13)
+/* 80231048 0022DE48  90 0D E2 7C */	stw r0, BI2DebugFlag@sda21(r13)
+/* 8023104C 0022DE4C  90 8D E2 78 */	stw r4, BootInfo@sda21(r13)
+/* 80231050 0022DE50  90 0D E7 A4 */	stw r0, __DVDLongFileNameFlag@sda21(r13)
 /* 80231054 0022DE54  80 64 00 F4 */	lwz r3, 0x800000F4@l(r4)
 /* 80231058 0022DE58  28 03 00 00 */	cmplwi r3, 0
 /* 8023105C 0022DE5C  41 82 00 34 */	beq lbl_80231090
 /* 80231060 0022DE60  38 03 00 0C */	addi r0, r3, 0xc
-/* 80231064 0022DE64  90 0D E2 7C */	stw r0, BI2DebugFlag-_SDA_BASE_(r13)
+/* 80231064 0022DE64  90 0D E2 7C */	stw r0, BI2DebugFlag@sda21(r13)
 /* 80231068 0022DE68  80 03 00 24 */	lwz r0, 0x24(r3)
-/* 8023106C 0022DE6C  80 6D E2 7C */	lwz r3, BI2DebugFlag-_SDA_BASE_(r13)
-/* 80231070 0022DE70  90 0D E3 80 */	stw r0, __PADSpec-_SDA_BASE_(r13)
+/* 8023106C 0022DE6C  80 6D E2 7C */	lwz r3, BI2DebugFlag@sda21(r13)
+/* 80231070 0022DE70  90 0D E3 80 */	stw r0, __PADSpec@sda21(r13)
 /* 80231074 0022DE74  80 03 00 00 */	lwz r0, 0(r3)
 /* 80231078 0022DE78  54 00 06 3E */	clrlwi r0, r0, 0x18
 /* 8023107C 0022DE7C  98 04 30 E8 */	stb r0, 0x30e8(r4)
-/* 80231080 0022DE80  80 0D E3 80 */	lwz r0, __PADSpec-_SDA_BASE_(r13)
+/* 80231080 0022DE80  80 0D E3 80 */	lwz r0, __PADSpec@sda21(r13)
 /* 80231084 0022DE84  54 00 06 3E */	clrlwi r0, r0, 0x18
 /* 80231088 0022DE88  98 04 30 E9 */	stb r0, 0x30e9(r4)
 /* 8023108C 0022DE8C  48 00 00 28 */	b lbl_802310B4
@@ -33060,15 +33060,15 @@ lbl_80231090:
 /* 80231094 0022DE94  28 00 00 00 */	cmplwi r0, 0
 /* 80231098 0022DE98  41 82 00 1C */	beq lbl_802310B4
 /* 8023109C 0022DE9C  88 64 30 E8 */	lbz r3, 0x30e8(r4)
-/* 802310A0 0022DEA0  38 0D E2 80 */	addi r0, r13, BI2DebugFlagHolder-_SDA_BASE_
-/* 802310A4 0022DEA4  90 6D E2 80 */	stw r3, BI2DebugFlagHolder-_SDA_BASE_(r13)
-/* 802310A8 0022DEA8  90 0D E2 7C */	stw r0, BI2DebugFlag-_SDA_BASE_(r13)
+/* 802310A0 0022DEA0  38 0D E2 80 */	addi r0, r13, BI2DebugFlagHolder@sda21
+/* 802310A4 0022DEA4  90 6D E2 80 */	stw r3, BI2DebugFlagHolder@sda21(r13)
+/* 802310A8 0022DEA8  90 0D E2 7C */	stw r0, BI2DebugFlag@sda21(r13)
 /* 802310AC 0022DEAC  88 04 30 E9 */	lbz r0, 0x30e9(r4)
-/* 802310B0 0022DEB0  90 0D E3 80 */	stw r0, __PADSpec-_SDA_BASE_(r13)
+/* 802310B0 0022DEB0  90 0D E3 80 */	stw r0, __PADSpec@sda21(r13)
 lbl_802310B4:
 /* 802310B4 0022DEB4  38 00 00 01 */	li r0, 1
-/* 802310B8 0022DEB8  80 6D E2 78 */	lwz r3, BootInfo-_SDA_BASE_(r13)
-/* 802310BC 0022DEBC  90 0D E7 A4 */	stw r0, __DVDLongFileNameFlag-_SDA_BASE_(r13)
+/* 802310B8 0022DEB8  80 6D E2 78 */	lwz r3, BootInfo@sda21(r13)
+/* 802310BC 0022DEBC  90 0D E7 A4 */	stw r0, __DVDLongFileNameFlag@sda21(r13)
 /* 802310C0 0022DEC0  80 63 00 30 */	lwz r3, 0x30(r3)
 /* 802310C4 0022DEC4  28 03 00 00 */	cmplwi r3, 0
 /* 802310C8 0022DEC8  40 82 00 10 */	bne lbl_802310D8
@@ -33077,11 +33077,11 @@ lbl_802310B4:
 /* 802310D4 0022DED4  48 00 00 04 */	b lbl_802310D8
 lbl_802310D8:
 /* 802310D8 0022DED8  48 00 12 D5 */	bl OSSetArenaLo
-/* 802310DC 0022DEDC  80 6D E2 78 */	lwz r3, BootInfo-_SDA_BASE_(r13)
+/* 802310DC 0022DEDC  80 6D E2 78 */	lwz r3, BootInfo@sda21(r13)
 /* 802310E0 0022DEE0  80 03 00 30 */	lwz r0, 0x30(r3)
 /* 802310E4 0022DEE4  28 00 00 00 */	cmplwi r0, 0
 /* 802310E8 0022DEE8  40 82 00 30 */	bne lbl_80231118
-/* 802310EC 0022DEEC  80 6D E2 7C */	lwz r3, BI2DebugFlag-_SDA_BASE_(r13)
+/* 802310EC 0022DEEC  80 6D E2 7C */	lwz r3, BI2DebugFlag@sda21(r13)
 /* 802310F0 0022DEF0  28 03 00 00 */	cmplwi r3, 0
 /* 802310F4 0022DEF4  41 82 00 24 */	beq lbl_80231118
 /* 802310F8 0022DEF8  80 03 00 00 */	lwz r0, 0(r3)
@@ -33093,7 +33093,7 @@ lbl_802310D8:
 /* 80231110 0022DF10  54 03 00 34 */	rlwinm r3, r0, 0, 0, 0x1a
 /* 80231114 0022DF14  48 00 12 99 */	bl OSSetArenaLo
 lbl_80231118:
-/* 80231118 0022DF18  80 6D E2 78 */	lwz r3, BootInfo-_SDA_BASE_(r13)
+/* 80231118 0022DF18  80 6D E2 78 */	lwz r3, BootInfo@sda21(r13)
 /* 8023111C 0022DF1C  80 63 00 34 */	lwz r3, 0x34(r3)
 /* 80231120 0022DF20  28 03 00 00 */	cmplwi r3, 0
 /* 80231124 0022DF24  40 82 00 10 */	bne lbl_80231134
@@ -33121,7 +33121,7 @@ lbl_80231134:
 /* 80231178 0022DF78  4B FE 4D 99 */	bl PPCMfhid2
 /* 8023117C 0022DF7C  54 63 00 80 */	rlwinm r3, r3, 0, 2, 0
 /* 80231180 0022DF80  4B FE 4D 99 */	bl PPCMthid2
-/* 80231184 0022DF84  80 0D E2 A8 */	lwz r0, __OSInIPL-_SDA_BASE_(r13)
+/* 80231184 0022DF84  80 0D E2 A8 */	lwz r0, __OSInIPL@sda21(r13)
 /* 80231188 0022DF88  2C 00 00 00 */	cmpwi r0, 0
 /* 8023118C 0022DF8C  40 82 00 08 */	bne lbl_80231194
 /* 80231190 0022DF90  48 00 3C 7D */	bl __OSInitMemoryProtection
@@ -33137,7 +33137,7 @@ lbl_80231194:
 /* 802311B4 0022DFB4  38 7F 00 84 */	addi r3, r31, 0x84
 /* 802311B8 0022DFB8  4C C6 31 82 */	crclr 6
 /* 802311BC 0022DFBC  48 00 21 35 */	bl OSReport
-/* 802311C0 0022DFC0  80 6D E2 78 */	lwz r3, BootInfo-_SDA_BASE_(r13)
+/* 802311C0 0022DFC0  80 6D E2 78 */	lwz r3, BootInfo@sda21(r13)
 /* 802311C4 0022DFC4  28 03 00 00 */	cmplwi r3, 0
 /* 802311C8 0022DFC8  41 82 00 10 */	beq lbl_802311D8
 /* 802311CC 0022DFCC  80 83 00 2C */	lwz r4, 0x2c(r3)
@@ -33212,10 +33212,10 @@ lbl_8023129C:
 /* 802312B4 0022E0B4  48 00 00 10 */	b lbl_802312C4
 lbl_802312B8:
 /* 802312B8 0022E0B8  4C C6 31 82 */	crclr 6
-/* 802312BC 0022E0BC  38 6D B4 74 */	addi r3, r13, _esc__2_97_0-_SDA_BASE_
+/* 802312BC 0022E0BC  38 6D B4 74 */	addi r3, r13, _esc__2_97_0@sda21
 /* 802312C0 0022E0C0  48 00 20 31 */	bl OSReport
 lbl_802312C4:
-/* 802312C4 0022E0C4  80 8D E2 78 */	lwz r4, BootInfo-_SDA_BASE_(r13)
+/* 802312C4 0022E0C4  80 8D E2 78 */	lwz r4, BootInfo@sda21(r13)
 /* 802312C8 0022E0C8  38 7F 00 FC */	addi r3, r31, 0xfc
 /* 802312CC 0022E0CC  4C C6 31 82 */	crclr 6
 /* 802312D0 0022E0D0  80 04 00 28 */	lwz r0, 0x28(r4)
@@ -33229,9 +33229,9 @@ lbl_802312C4:
 /* 802312F0 0022E0F0  7F A5 EB 78 */	mr r5, r29
 /* 802312F4 0022E0F4  38 7F 01 0C */	addi r3, r31, 0x10c
 /* 802312F8 0022E0F8  48 00 1F F9 */	bl OSReport
-/* 802312FC 0022E0FC  80 6D B4 70 */	lwz r3, __OSVersion-_SDA_BASE_(r13)
+/* 802312FC 0022E0FC  80 6D B4 70 */	lwz r3, __OSVersion@sda21(r13)
 /* 80231300 0022E100  48 00 04 C9 */	bl OSRegisterVersion
-/* 80231304 0022E104  80 6D E2 7C */	lwz r3, BI2DebugFlag-_SDA_BASE_(r13)
+/* 80231304 0022E104  80 6D E2 7C */	lwz r3, BI2DebugFlag@sda21(r13)
 /* 80231308 0022E108  28 03 00 00 */	cmplwi r3, 0
 /* 8023130C 0022E10C  41 82 00 14 */	beq lbl_80231320
 /* 80231310 0022E110  80 03 00 00 */	lwz r0, 0(r3)
@@ -33241,11 +33241,11 @@ lbl_802312C4:
 lbl_80231320:
 /* 80231320 0022E120  4B FF FB 39 */	bl ClearArena
 /* 80231324 0022E124  48 00 30 B9 */	bl OSEnableInterrupts
-/* 80231328 0022E128  80 0D E2 A8 */	lwz r0, __OSInIPL-_SDA_BASE_(r13)
+/* 80231328 0022E128  80 0D E2 A8 */	lwz r0, __OSInIPL@sda21(r13)
 /* 8023132C 0022E12C  2C 00 00 00 */	cmpwi r0, 0
 /* 80231330 0022E130  40 82 00 48 */	bne lbl_80231378
 /* 80231334 0022E134  48 07 E5 B5 */	bl DVDInit
-/* 80231338 0022E138  80 0D E2 84 */	lwz r0, __OSIsGcam-_SDA_BASE_(r13)
+/* 80231338 0022E138  80 0D E2 84 */	lwz r0, __OSIsGcam@sda21(r13)
 /* 8023133C 0022E13C  2C 00 00 00 */	cmpwi r0, 0
 /* 80231340 0022E140  41 82 00 18 */	beq lbl_80231358
 /* 80231344 0022E144  3C 60 00 01 */	lis r3, 0x00009000@ha
@@ -33328,7 +33328,7 @@ lbl_8023144C:
 lbl_8023145C:
 /* 8023145C 0022E25C  48 00 01 48 */	b lbl_802315A4
 lbl_80231460:
-/* 80231460 0022E260  80 6D E2 7C */	lwz r3, BI2DebugFlag-_SDA_BASE_(r13)
+/* 80231460 0022E260  80 6D E2 7C */	lwz r3, BI2DebugFlag@sda21(r13)
 /* 80231464 0022E264  28 03 00 00 */	cmplwi r3, 0
 /* 80231468 0022E268  41 82 00 34 */	beq lbl_8023149C
 /* 8023146C 0022E26C  80 03 00 00 */	lwz r0, 0(r3)
@@ -33423,7 +33423,7 @@ lbl_802315A4:
 /* 802315AC 0022E3AC  41 80 FE B4 */	blt lbl_80231460
 /* 802315B0 0022E3B0  3C 60 80 00 */	lis r3, 0x80003000@ha
 /* 802315B4 0022E3B4  38 03 30 00 */	addi r0, r3, 0x80003000@l
-/* 802315B8 0022E3B8  90 0D E2 9C */	stw r0, OSExceptionTable-_SDA_BASE_(r13)
+/* 802315B8 0022E3B8  90 0D E2 9C */	stw r0, OSExceptionTable@sda21(r13)
 /* 802315BC 0022E3BC  3A 80 00 00 */	li r20, 0
 /* 802315C0 0022E3C0  48 00 00 04 */	b lbl_802315C4
 lbl_802315C4:
@@ -33470,7 +33470,7 @@ __OSDBJump:
 .global __OSSetExceptionHandler
 __OSSetExceptionHandler:
 /* 8023163C 0022E43C  54 60 06 3E */	clrlwi r0, r3, 0x18
-/* 80231640 0022E440  80 6D E2 9C */	lwz r3, OSExceptionTable-_SDA_BASE_(r13)
+/* 80231640 0022E440  80 6D E2 9C */	lwz r3, OSExceptionTable@sda21(r13)
 /* 80231644 0022E444  54 00 10 3A */	slwi r0, r0, 2
 /* 80231648 0022E448  7C A3 02 14 */	add r5, r3, r0
 /* 8023164C 0022E44C  80 65 00 00 */	lwz r3, 0(r5)
@@ -33480,7 +33480,7 @@ __OSSetExceptionHandler:
 .global __OSGetExceptionHandler
 __OSGetExceptionHandler:
 /* 80231658 0022E458  54 60 06 3E */	clrlwi r0, r3, 0x18
-/* 8023165C 0022E45C  80 6D E2 9C */	lwz r3, OSExceptionTable-_SDA_BASE_(r13)
+/* 8023165C 0022E45C  80 6D E2 9C */	lwz r3, OSExceptionTable@sda21(r13)
 /* 80231660 0022E460  54 00 10 3A */	slwi r0, r0, 2
 /* 80231664 0022E464  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80231668 0022E468  4E 80 00 20 */	blr 
@@ -33595,7 +33595,7 @@ OSRegisterVersion:
 /* 802317D0 0022E5D0  94 21 FF F8 */	stwu r1, -8(r1)
 /* 802317D4 0022E5D4  7C 64 1B 78 */	mr r4, r3
 /* 802317D8 0022E5D8  4C C6 31 82 */	crclr 6
-/* 802317DC 0022E5DC  38 6D B4 7C */	addi r3, r13, _esc__2_144-_SDA_BASE_
+/* 802317DC 0022E5DC  38 6D B4 7C */	addi r3, r13, _esc__2_144@sda21
 /* 802317E0 0022E5E0  48 00 1B 11 */	bl OSReport
 /* 802317E4 0022E5E4  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 802317E8 0022E5E8  38 21 00 08 */	addi r1, r1, 8
@@ -33614,10 +33614,10 @@ OSInitAlarm:
 /* 80231810 0022E610  7C 03 20 40 */	cmplw r3, r4
 /* 80231814 0022E614  41 82 00 28 */	beq lbl_8023183C
 /* 80231818 0022E618  38 00 00 00 */	li r0, 0
-/* 8023181C 0022E61C  38 6D E2 B8 */	addi r3, r13, AlarmQueue-_SDA_BASE_
+/* 8023181C 0022E61C  38 6D E2 B8 */	addi r3, r13, AlarmQueue@sda21
 /* 80231820 0022E620  90 03 00 04 */	stw r0, 4(r3)
 /* 80231824 0022E624  38 60 00 08 */	li r3, 8
-/* 80231828 0022E628  90 0D E2 B8 */	stw r0, AlarmQueue-_SDA_BASE_(r13)
+/* 80231828 0022E628  90 0D E2 B8 */	stw r0, AlarmQueue@sda21(r13)
 /* 8023182C 0022E62C  4B FF FE 11 */	bl __OSSetExceptionHandler
 /* 80231830 0022E630  3C 60 80 33 */	lis r3, ResetFunctionInfo_0@ha
 /* 80231834 0022E634  38 63 8F 20 */	addi r3, r3, ResetFunctionInfo_0@l
@@ -33690,7 +33690,7 @@ lbl_8023191C:
 /* 80231920 0022E720  6F 24 80 00 */	xoris r4, r25, 0x8000
 /* 80231924 0022E724  93 DD 00 0C */	stw r30, 0xc(r29)
 /* 80231928 0022E728  93 3D 00 08 */	stw r25, 8(r29)
-/* 8023192C 0022E72C  80 CD E2 B8 */	lwz r6, AlarmQueue-_SDA_BASE_(r13)
+/* 8023192C 0022E72C  80 CD E2 B8 */	lwz r6, AlarmQueue@sda21(r13)
 /* 80231930 0022E730  48 00 00 C4 */	b lbl_802319F4
 lbl_80231934:
 /* 80231934 0022E734  80 06 00 08 */	lwz r0, 8(r6)
@@ -33711,7 +33711,7 @@ lbl_80231934:
 /* 80231970 0022E770  93 A3 00 14 */	stw r29, 0x14(r3)
 /* 80231974 0022E774  48 00 01 24 */	b lbl_80231A98
 lbl_80231978:
-/* 80231978 0022E778  93 AD E2 B8 */	stw r29, AlarmQueue-_SDA_BASE_(r13)
+/* 80231978 0022E778  93 AD E2 B8 */	stw r29, AlarmQueue@sda21(r13)
 /* 8023197C 0022E77C  48 00 6B F1 */	bl __OSGetSystemTime
 /* 80231980 0022E780  80 DD 00 0C */	lwz r6, 0xc(r29)
 /* 80231984 0022E784  38 E0 00 00 */	li r7, 0
@@ -33750,7 +33750,7 @@ lbl_802319F4:
 /* 802319F8 0022E7F8  40 82 FF 3C */	bne lbl_80231934
 /* 802319FC 0022E7FC  3B C0 00 00 */	li r30, 0
 /* 80231A00 0022E800  93 DD 00 14 */	stw r30, 0x14(r29)
-/* 80231A04 0022E804  38 6D E2 B8 */	addi r3, r13, AlarmQueue-_SDA_BASE_
+/* 80231A04 0022E804  38 6D E2 B8 */	addi r3, r13, AlarmQueue@sda21
 /* 80231A08 0022E808  80 83 00 04 */	lwz r4, 4(r3)
 /* 80231A0C 0022E80C  97 A3 00 04 */	stwu r29, 4(r3)
 /* 80231A10 0022E810  28 04 00 00 */	cmplwi r4, 0
@@ -33760,7 +33760,7 @@ lbl_802319F4:
 /* 80231A20 0022E820  48 00 00 78 */	b lbl_80231A98
 lbl_80231A24:
 /* 80231A24 0022E824  93 A3 00 00 */	stw r29, 0(r3)
-/* 80231A28 0022E828  93 AD E2 B8 */	stw r29, AlarmQueue-_SDA_BASE_(r13)
+/* 80231A28 0022E828  93 AD E2 B8 */	stw r29, AlarmQueue@sda21(r13)
 /* 80231A2C 0022E82C  48 00 6B 41 */	bl __OSGetSystemTime
 /* 80231A30 0022E830  80 DD 00 0C */	lwz r6, 0xc(r29)
 /* 80231A34 0022E834  6F C5 80 00 */	xoris r5, r30, 0x8000
@@ -33882,7 +33882,7 @@ lbl_80231BCC:
 /* 80231BD0 0022E9D0  28 1D 00 00 */	cmplwi r29, 0
 /* 80231BD4 0022E9D4  40 82 00 14 */	bne lbl_80231BE8
 /* 80231BD8 0022E9D8  80 1E 00 10 */	lwz r0, 0x10(r30)
-/* 80231BDC 0022E9DC  38 6D E2 B8 */	addi r3, r13, AlarmQueue-_SDA_BASE_
+/* 80231BDC 0022E9DC  38 6D E2 B8 */	addi r3, r13, AlarmQueue@sda21
 /* 80231BE0 0022E9E0  90 03 00 04 */	stw r0, 4(r3)
 /* 80231BE4 0022E9E4  48 00 00 0C */	b lbl_80231BF0
 lbl_80231BE8:
@@ -33896,7 +33896,7 @@ lbl_80231BF0:
 /* 80231C00 0022EA00  48 00 00 80 */	b lbl_80231C80
 lbl_80231C04:
 /* 80231C04 0022EA04  28 1D 00 00 */	cmplwi r29, 0
-/* 80231C08 0022EA08  93 AD E2 B8 */	stw r29, AlarmQueue-_SDA_BASE_(r13)
+/* 80231C08 0022EA08  93 AD E2 B8 */	stw r29, AlarmQueue@sda21(r13)
 /* 80231C0C 0022EA0C  41 82 00 74 */	beq lbl_80231C80
 /* 80231C10 0022EA10  48 00 69 5D */	bl __OSGetSystemTime
 /* 80231C14 0022EA14  80 DD 00 0C */	lwz r6, 0xc(r29)
@@ -33953,7 +33953,7 @@ DecrementerExceptionCallback:
 /* 80231CC4 0022EAC4  7C 9D 23 78 */	mr r29, r4
 /* 80231CC8 0022EAC8  93 81 02 E0 */	stw r28, 0x2e0(r1)
 /* 80231CCC 0022EACC  48 00 68 A1 */	bl __OSGetSystemTime
-/* 80231CD0 0022EAD0  80 0D E2 B8 */	lwz r0, AlarmQueue-_SDA_BASE_(r13)
+/* 80231CD0 0022EAD0  80 0D E2 B8 */	lwz r0, AlarmQueue@sda21(r13)
 /* 80231CD4 0022EAD4  3B 84 00 00 */	addi r28, r4, 0
 /* 80231CD8 0022EAD8  3B C3 00 00 */	addi r30, r3, 0
 /* 80231CDC 0022EADC  28 00 00 00 */	cmplwi r0, 0
@@ -34007,10 +34007,10 @@ lbl_80231D84:
 lbl_80231D8C:
 /* 80231D8C 0022EB8C  80 7F 00 14 */	lwz r3, 0x14(r31)
 /* 80231D90 0022EB90  28 03 00 00 */	cmplwi r3, 0
-/* 80231D94 0022EB94  90 6D E2 B8 */	stw r3, AlarmQueue-_SDA_BASE_(r13)
+/* 80231D94 0022EB94  90 6D E2 B8 */	stw r3, AlarmQueue@sda21(r13)
 /* 80231D98 0022EB98  40 82 00 14 */	bne lbl_80231DAC
 /* 80231D9C 0022EB9C  38 00 00 00 */	li r0, 0
-/* 80231DA0 0022EBA0  38 6D E2 B8 */	addi r3, r13, AlarmQueue-_SDA_BASE_
+/* 80231DA0 0022EBA0  38 6D E2 B8 */	addi r3, r13, AlarmQueue@sda21
 /* 80231DA4 0022EBA4  90 03 00 04 */	stw r0, 4(r3)
 /* 80231DA8 0022EBA8  48 00 00 0C */	b lbl_80231DB4
 lbl_80231DAC:
@@ -34035,7 +34035,7 @@ lbl_80231DB4:
 /* 80231DF0 0022EBF0  38 A0 00 00 */	li r5, 0
 /* 80231DF4 0022EBF4  4B FF FA 69 */	bl InsertAlarm
 lbl_80231DF8:
-/* 80231DF8 0022EBF8  83 8D E2 B8 */	lwz r28, AlarmQueue-_SDA_BASE_(r13)
+/* 80231DF8 0022EBF8  83 8D E2 B8 */	lwz r28, AlarmQueue@sda21(r13)
 /* 80231DFC 0022EBFC  28 1C 00 00 */	cmplwi r28, 0
 /* 80231E00 0022EC00  41 82 00 74 */	beq lbl_80231E74
 /* 80231E04 0022EC04  48 00 67 69 */	bl __OSGetSystemTime
@@ -34136,7 +34136,7 @@ OSCancelAlarms:
 /* 80231F50 0022ED50  28 1D 00 00 */	cmplwi r29, 0
 /* 80231F54 0022ED54  41 82 00 74 */	beq lbl_80231FC8
 /* 80231F58 0022ED58  48 00 24 71 */	bl OSDisableInterrupts
-/* 80231F5C 0022ED5C  80 0D E2 B8 */	lwz r0, AlarmQueue-_SDA_BASE_(r13)
+/* 80231F5C 0022ED5C  80 0D E2 B8 */	lwz r0, AlarmQueue@sda21(r13)
 /* 80231F60 0022ED60  7C 7F 1B 78 */	mr r31, r3
 /* 80231F64 0022ED64  28 00 00 00 */	cmplwi r0, 0
 /* 80231F68 0022ED68  7C 03 03 78 */	mr r3, r0
@@ -34190,7 +34190,7 @@ OnReset_0:
 /* 80231FF4 0022EDF4  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 80231FF8 0022EDF8  2C 03 00 00 */	cmpwi r3, 0
 /* 80231FFC 0022EDFC  41 82 00 6C */	beq lbl_80232068
-/* 80232000 0022EE00  80 0D E2 B8 */	lwz r0, AlarmQueue-_SDA_BASE_(r13)
+/* 80232000 0022EE00  80 0D E2 B8 */	lwz r0, AlarmQueue@sda21(r13)
 /* 80232004 0022EE04  28 00 00 00 */	cmplwi r0, 0
 /* 80232008 0022EE08  7C 1F 03 78 */	mr r31, r0
 /* 8023200C 0022EE0C  41 82 00 0C */	beq lbl_80232018
@@ -34288,7 +34288,7 @@ lbl_80232128:
 .global OSAllocFromHeap
 OSAllocFromHeap:
 /* 80232130 0022EF30  1C 03 00 0C */	mulli r0, r3, 0xc
-/* 80232134 0022EF34  80 6D E2 C0 */	lwz r3, HeapArray-_SDA_BASE_(r13)
+/* 80232134 0022EF34  80 6D E2 C0 */	lwz r3, HeapArray@sda21(r13)
 /* 80232138 0022EF38  7C A3 02 14 */	add r5, r3, r0
 /* 8023213C 0022EF3C  38 04 00 3F */	addi r0, r4, 0x3f
 /* 80232140 0022EF40  80 C5 00 04 */	lwz r6, 4(r5)
@@ -34371,7 +34371,7 @@ OSFreeToHeap:
 /* 80232238 0022F038  1C 03 00 0C */	mulli r0, r3, 0xc
 /* 8023223C 0022F03C  94 21 FF E8 */	stwu r1, -0x18(r1)
 /* 80232240 0022F040  93 E1 00 14 */	stw r31, 0x14(r1)
-/* 80232244 0022F044  80 8D E2 C0 */	lwz r4, HeapArray-_SDA_BASE_(r13)
+/* 80232244 0022F044  80 8D E2 C0 */	lwz r4, HeapArray@sda21(r13)
 /* 80232248 0022F048  80 66 00 04 */	lwz r3, 4(r6)
 /* 8023224C 0022F04C  7F E4 02 14 */	add r31, r4, r0
 /* 80232250 0022F050  28 03 00 00 */	cmplwi r3, 0
@@ -34402,23 +34402,23 @@ lbl_80232284:
 
 .global OSSetCurrentHeap
 OSSetCurrentHeap:
-/* 802322A8 0022F0A8  80 0D B4 80 */	lwz r0, __OSCurrHeap-_SDA_BASE_(r13)
-/* 802322AC 0022F0AC  90 6D B4 80 */	stw r3, __OSCurrHeap-_SDA_BASE_(r13)
+/* 802322A8 0022F0A8  80 0D B4 80 */	lwz r0, __OSCurrHeap@sda21(r13)
+/* 802322AC 0022F0AC  90 6D B4 80 */	stw r3, __OSCurrHeap@sda21(r13)
 /* 802322B0 0022F0B0  7C 03 03 78 */	mr r3, r0
 /* 802322B4 0022F0B4  4E 80 00 20 */	blr 
 
 .global OSInitAlloc
 OSInitAlloc:
 /* 802322B8 0022F0B8  1C E5 00 0C */	mulli r7, r5, 0xc
-/* 802322BC 0022F0BC  90 6D E2 C0 */	stw r3, HeapArray-_SDA_BASE_(r13)
-/* 802322C0 0022F0C0  90 AD E2 C4 */	stw r5, NumHeaps-_SDA_BASE_(r13)
+/* 802322BC 0022F0BC  90 6D E2 C0 */	stw r3, HeapArray@sda21(r13)
+/* 802322C0 0022F0C0  90 AD E2 C4 */	stw r5, NumHeaps@sda21(r13)
 /* 802322C4 0022F0C4  38 C0 00 00 */	li r6, 0
 /* 802322C8 0022F0C8  38 66 00 00 */	addi r3, r6, 0
 /* 802322CC 0022F0CC  39 00 00 00 */	li r8, 0
 /* 802322D0 0022F0D0  38 A0 FF FF */	li r5, -1
 /* 802322D4 0022F0D4  48 00 00 20 */	b lbl_802322F4
 lbl_802322D8:
-/* 802322D8 0022F0D8  80 0D E2 C0 */	lwz r0, HeapArray-_SDA_BASE_(r13)
+/* 802322D8 0022F0D8  80 0D E2 C0 */	lwz r0, HeapArray@sda21(r13)
 /* 802322DC 0022F0DC  39 08 00 01 */	addi r8, r8, 1
 /* 802322E0 0022F0E0  7D 20 32 14 */	add r9, r0, r6
 /* 802322E4 0022F0E4  90 A9 00 00 */	stw r5, 0(r9)
@@ -34426,25 +34426,25 @@ lbl_802322D8:
 /* 802322EC 0022F0EC  90 69 00 08 */	stw r3, 8(r9)
 /* 802322F0 0022F0F0  90 69 00 04 */	stw r3, 4(r9)
 lbl_802322F4:
-/* 802322F4 0022F0F4  80 0D E2 C4 */	lwz r0, NumHeaps-_SDA_BASE_(r13)
+/* 802322F4 0022F0F4  80 0D E2 C4 */	lwz r0, NumHeaps@sda21(r13)
 /* 802322F8 0022F0F8  7C 08 00 00 */	cmpw r8, r0
 /* 802322FC 0022F0FC  41 80 FF DC */	blt lbl_802322D8
-/* 80232300 0022F100  80 6D E2 C0 */	lwz r3, HeapArray-_SDA_BASE_(r13)
+/* 80232300 0022F100  80 6D E2 C0 */	lwz r3, HeapArray@sda21(r13)
 /* 80232304 0022F104  54 80 00 34 */	rlwinm r0, r4, 0, 0, 0x1a
 /* 80232308 0022F108  38 80 FF FF */	li r4, -1
-/* 8023230C 0022F10C  90 0D E2 CC */	stw r0, ArenaEnd-_SDA_BASE_(r13)
+/* 8023230C 0022F10C  90 0D E2 CC */	stw r0, ArenaEnd@sda21(r13)
 /* 80232310 0022F110  7C 63 3A 14 */	add r3, r3, r7
 /* 80232314 0022F114  38 03 00 1F */	addi r0, r3, 0x1f
-/* 80232318 0022F118  90 8D B4 80 */	stw r4, __OSCurrHeap-_SDA_BASE_(r13)
+/* 80232318 0022F118  90 8D B4 80 */	stw r4, __OSCurrHeap@sda21(r13)
 /* 8023231C 0022F11C  54 03 00 34 */	rlwinm r3, r0, 0, 0, 0x1a
-/* 80232320 0022F120  90 6D E2 C8 */	stw r3, ArenaStart-_SDA_BASE_(r13)
+/* 80232320 0022F120  90 6D E2 C8 */	stw r3, ArenaStart@sda21(r13)
 /* 80232324 0022F124  4E 80 00 20 */	blr 
 
 .global OSCreateHeap
 OSCreateHeap:
-/* 80232328 0022F128  80 CD E2 C4 */	lwz r6, NumHeaps-_SDA_BASE_(r13)
+/* 80232328 0022F128  80 CD E2 C4 */	lwz r6, NumHeaps@sda21(r13)
 /* 8023232C 0022F12C  38 03 00 1F */	addi r0, r3, 0x1f
-/* 80232330 0022F130  80 AD E2 C0 */	lwz r5, HeapArray-_SDA_BASE_(r13)
+/* 80232330 0022F130  80 AD E2 C0 */	lwz r5, HeapArray@sda21(r13)
 /* 80232334 0022F134  54 07 00 34 */	rlwinm r7, r0, 0, 0, 0x1a
 /* 80232338 0022F138  2C 06 00 00 */	cmpwi r6, 0
 /* 8023233C 0022F13C  7C C9 03 A6 */	mtctr r6
@@ -34475,22 +34475,22 @@ lbl_8023238C:
 
 .global OSGetArenaHi
 OSGetArenaHi:
-/* 80232394 0022F194  80 6D E2 D0 */	lwz r3, __OSArenaHi-_SDA_BASE_(r13)
+/* 80232394 0022F194  80 6D E2 D0 */	lwz r3, __OSArenaHi@sda21(r13)
 /* 80232398 0022F198  4E 80 00 20 */	blr 
 
 .global OSGetArenaLo
 OSGetArenaLo:
-/* 8023239C 0022F19C  80 6D B4 88 */	lwz r3, __OSArenaLo-_SDA_BASE_(r13)
+/* 8023239C 0022F19C  80 6D B4 88 */	lwz r3, __OSArenaLo@sda21(r13)
 /* 802323A0 0022F1A0  4E 80 00 20 */	blr 
 
 .global OSSetArenaHi
 OSSetArenaHi:
-/* 802323A4 0022F1A4  90 6D E2 D0 */	stw r3, __OSArenaHi-_SDA_BASE_(r13)
+/* 802323A4 0022F1A4  90 6D E2 D0 */	stw r3, __OSArenaHi@sda21(r13)
 /* 802323A8 0022F1A8  4E 80 00 20 */	blr 
 
 .global OSSetArenaLo
 OSSetArenaLo:
-/* 802323AC 0022F1AC  90 6D B4 88 */	stw r3, __OSArenaLo-_SDA_BASE_(r13)
+/* 802323AC 0022F1AC  90 6D B4 88 */	stw r3, __OSArenaLo@sda21(r13)
 /* 802323B0 0022F1B0  4E 80 00 20 */	blr 
 
 .global __OSInitAudioSystem
@@ -35823,7 +35823,7 @@ lbl_80233548:
 /* 802335D4 002303D4  38 00 00 04 */	li r0, 4
 /* 802335D8 002303D8  90 06 01 94 */	stw r0, 0x194(r6)
 lbl_802335DC:
-/* 802335DC 002303DC  80 0D B4 90 */	lwz r0, __OSFpscrEnableBits-_SDA_BASE_(r13)
+/* 802335DC 002303DC  80 0D B4 90 */	lwz r0, __OSFpscrEnableBits@sda21(r13)
 /* 802335E0 002303E0  80 A6 01 94 */	lwz r5, 0x194(r6)
 /* 802335E4 002303E4  54 00 06 38 */	rlwinm r0, r0, 0, 0x18, 0x1c
 /* 802335E8 002303E8  7C A0 03 78 */	or r0, r5, r0
@@ -35835,7 +35835,7 @@ lbl_802335DC:
 lbl_80233600:
 /* 80233600 00230400  28 06 00 00 */	cmplwi r6, 0
 /* 80233604 00230404  40 82 FF 18 */	bne lbl_8023351C
-/* 80233608 00230408  80 0D B4 90 */	lwz r0, __OSFpscrEnableBits-_SDA_BASE_(r13)
+/* 80233608 00230408  80 0D B4 90 */	lwz r0, __OSFpscrEnableBits@sda21(r13)
 /* 8023360C 0023040C  63 FF 09 00 */	ori r31, r31, 0x900
 /* 80233610 00230410  54 00 06 38 */	rlwinm r0, r0, 0, 0x18, 0x1c
 /* 80233614 00230414  7C 63 03 78 */	or r3, r3, r0
@@ -36001,7 +36001,7 @@ lbl_80233850:
 /* 80233858 00230658  57 04 06 3E */	clrlwi r4, r24, 0x18
 /* 8023385C 0023065C  4B FF FA 95 */	bl OSReport
 lbl_80233860:
-/* 80233860 00230660  38 6D B4 94 */	addi r3, r13, _esc__2_76_0-_SDA_BASE_
+/* 80233860 00230660  38 6D B4 94 */	addi r3, r13, _esc__2_76_0@sda21
 /* 80233864 00230664  4C C6 31 82 */	crclr 6
 /* 80233868 00230668  4B FF FA 89 */	bl OSReport
 /* 8023386C 0023066C  7F 23 CB 78 */	mr r3, r25
@@ -36048,7 +36048,7 @@ lbl_80233860:
 /* 80233910 00230710  4C C6 31 82 */	crclr 6
 /* 80233914 00230714  4B FF F9 DD */	bl OSReport
 /* 80233918 00230718  48 00 00 50 */	b lbl_80233968
-/* 8023391C 0023071C  38 6D B4 94 */	addi r3, r13, _esc__2_76_0-_SDA_BASE_
+/* 8023391C 0023071C  38 6D B4 94 */	addi r3, r13, _esc__2_76_0@sda21
 /* 80233920 00230720  4C C6 31 82 */	crclr 6
 /* 80233924 00230724  4B FF F9 CD */	bl OSReport
 /* 80233928 00230728  3F 20 CC 00 */	lis r25, 0xCC005000@ha
@@ -36068,12 +36068,12 @@ lbl_80233860:
 /* 80233960 00230760  38 7F 02 88 */	addi r3, r31, 0x288
 /* 80233964 00230764  4B FF F9 8D */	bl OSReport
 lbl_80233968:
-/* 80233968 00230768  A8 8D E2 F0 */	lha r4, __OSLastInterrupt-_SDA_BASE_(r13)
+/* 80233968 00230768  A8 8D E2 F0 */	lha r4, __OSLastInterrupt@sda21(r13)
 /* 8023396C 0023076C  38 7F 02 A4 */	addi r3, r31, 0x2a4
 /* 80233970 00230770  4C C6 31 82 */	crclr 6
-/* 80233974 00230774  80 AD E2 EC */	lwz r5, __OSLastInterruptSrr0-_SDA_BASE_(r13)
-/* 80233978 00230778  80 ED E2 F8 */	lwz r7, __OSLastInterruptTime-_SDA_BASE_(r13)
-/* 8023397C 0023077C  81 0D E2 FC */	lwz r8, lbl_803D177C-_SDA_BASE_(r13)
+/* 80233974 00230774  80 AD E2 EC */	lwz r5, __OSLastInterruptSrr0@sda21(r13)
+/* 80233978 00230778  80 ED E2 F8 */	lwz r7, __OSLastInterruptTime@sda21(r13)
+/* 8023397C 0023077C  81 0D E2 FC */	lwz r8, lbl_803D177C@sda21(r13)
 /* 80233980 00230780  4B FF F9 71 */	bl OSReport
 /* 80233984 00230784  4B FE 25 01 */	bl PPCHalt
 /* 80233988 00230788  BA C1 00 18 */	lmw r22, 0x18(r1)
@@ -36308,7 +36308,7 @@ lbl_80233C88:
 
 .global OSGetFontEncode
 OSGetFontEncode:
-/* 80233CAC 00230AAC  A0 6D B4 98 */	lhz r3, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80233CAC 00230AAC  A0 6D B4 98 */	lhz r3, fontEncode_esc__7_80@sda21(r13)
 /* 80233CB0 00230AB0  28 03 00 01 */	cmplwi r3, 1
 /* 80233CB4 00230AB4  4C 81 00 20 */	blelr 
 /* 80233CB8 00230AB8  3C 60 80 00 */	lis r3, 0x800000CC@ha
@@ -36327,13 +36327,13 @@ lbl_80233CD0:
 lbl_80233CE8:
 /* 80233CE8 00230AE8  38 00 00 00 */	li r0, 0
 lbl_80233CEC:
-/* 80233CEC 00230AEC  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80233CEC 00230AEC  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80@sda21(r13)
 /* 80233CF0 00230AF0  48 00 00 0C */	b lbl_80233CFC
 lbl_80233CF4:
 /* 80233CF4 00230AF4  38 00 00 00 */	li r0, 0
-/* 80233CF8 00230AF8  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80233CF8 00230AF8  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80@sda21(r13)
 lbl_80233CFC:
-/* 80233CFC 00230AFC  A0 6D B4 98 */	lhz r3, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80233CFC 00230AFC  A0 6D B4 98 */	lhz r3, fontEncode_esc__7_80@sda21(r13)
 /* 80233D00 00230B00  4E 80 00 20 */	blr 
 
 .global ReadROM
@@ -36390,7 +36390,7 @@ OSLoadFont:
 /* 80233DA8 00230BA8  3B C4 00 00 */	addi r30, r4, 0
 /* 80233DAC 00230BAC  93 A1 00 34 */	stw r29, 0x34(r1)
 /* 80233DB0 00230BB0  3B A3 00 00 */	addi r29, r3, 0
-/* 80233DB4 00230BB4  90 0D E2 DC */	stw r0, SheetImage-_SDA_BASE_(r13)
+/* 80233DB4 00230BB4  90 0D E2 DC */	stw r0, SheetImage@sda21(r13)
 /* 80233DB8 00230BB8  4B FF FE F5 */	bl OSGetFontEncode
 /* 80233DBC 00230BBC  54 60 04 3E */	clrlwi r0, r3, 0x10
 /* 80233DC0 00230BC0  28 00 00 01 */	cmplwi r0, 1
@@ -36428,16 +36428,16 @@ lbl_80233E28:
 /* 80233E30 00230C30  38 7E 00 00 */	addi r3, r30, 0
 /* 80233E34 00230C34  38 9D 00 00 */	addi r4, r29, 0
 /* 80233E38 00230C38  4B FF FD 01 */	bl Decode
-/* 80233E3C 00230C3C  93 AD E2 D8 */	stw r29, FontData-_SDA_BASE_(r13)
-/* 80233E40 00230C40  A0 8D B4 98 */	lhz r4, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80233E3C 00230C3C  93 AD E2 D8 */	stw r29, FontData@sda21(r13)
+/* 80233E40 00230C40  A0 8D B4 98 */	lhz r4, fontEncode_esc__7_80@sda21(r13)
 /* 80233E44 00230C44  A0 1D 00 22 */	lhz r0, 0x22(r29)
 /* 80233E48 00230C48  28 04 00 01 */	cmplwi r4, 1
 /* 80233E4C 00230C4C  7C 1D 02 14 */	add r0, r29, r0
-/* 80233E50 00230C50  90 0D E2 E0 */	stw r0, WidthTable-_SDA_BASE_(r13)
+/* 80233E50 00230C50  90 0D E2 E0 */	stw r0, WidthTable@sda21(r13)
 /* 80233E54 00230C54  A0 7D 00 1A */	lhz r3, 0x1a(r29)
 /* 80233E58 00230C58  A0 1D 00 1C */	lhz r0, 0x1c(r29)
 /* 80233E5C 00230C5C  7C 03 01 D6 */	mullw r0, r3, r0
-/* 80233E60 00230C60  90 0D E2 E4 */	stw r0, CharsInSheet-_SDA_BASE_(r13)
+/* 80233E60 00230C60  90 0D E2 E4 */	stw r0, CharsInSheet@sda21(r13)
 /* 80233E64 00230C64  41 81 00 08 */	bgt lbl_80233E6C
 /* 80233E68 00230C68  48 00 00 4C */	b lbl_80233EB4
 lbl_80233E6C:
@@ -36457,25 +36457,25 @@ lbl_80233E84:
 lbl_80233E9C:
 /* 80233E9C 00230C9C  38 00 00 00 */	li r0, 0
 lbl_80233EA0:
-/* 80233EA0 00230CA0  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80233EA0 00230CA0  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80@sda21(r13)
 /* 80233EA4 00230CA4  48 00 00 0C */	b lbl_80233EB0
 lbl_80233EA8:
 /* 80233EA8 00230CA8  38 00 00 00 */	li r0, 0
-/* 80233EAC 00230CAC  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80233EAC 00230CAC  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80@sda21(r13)
 lbl_80233EB0:
-/* 80233EB0 00230CB0  A0 8D B4 98 */	lhz r4, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80233EB0 00230CB0  A0 8D B4 98 */	lhz r4, fontEncode_esc__7_80@sda21(r13)
 lbl_80233EB4:
 /* 80233EB4 00230CB4  54 80 04 3E */	clrlwi r0, r4, 0x10
 /* 80233EB8 00230CB8  28 00 00 01 */	cmplwi r0, 1
 /* 80233EBC 00230CBC  40 82 01 E8 */	bne lbl_802340A4
-/* 80233EC0 00230CC0  80 82 DB 60 */	lwz r4, _esc__2_153-_SDA2_BASE_(r2)
+/* 80233EC0 00230CC0  80 82 DB 60 */	lwz r4, _esc__2_153@sda21(r2)
 /* 80233EC4 00230CC4  38 60 00 54 */	li r3, 0x54
-/* 80233EC8 00230CC8  80 02 DB 64 */	lwz r0, lbl_803D7884-_SDA2_BASE_(r2)
+/* 80233EC8 00230CC8  80 02 DB 64 */	lwz r0, lbl_803D7884@sda21(r2)
 /* 80233ECC 00230CCC  90 81 00 1C */	stw r4, 0x1c(r1)
 /* 80233ED0 00230CD0  90 01 00 20 */	stw r0, 0x20(r1)
 /* 80233ED4 00230CD4  4B FF FA C9 */	bl GetFontCode
-/* 80233ED8 00230CD8  80 AD E2 E4 */	lwz r5, CharsInSheet-_SDA_BASE_(r13)
-/* 80233EDC 00230CDC  81 8D E2 D8 */	lwz r12, FontData-_SDA_BASE_(r13)
+/* 80233ED8 00230CD8  80 AD E2 E4 */	lwz r5, CharsInSheet@sda21(r13)
+/* 80233EDC 00230CDC  81 8D E2 D8 */	lwz r12, FontData@sda21(r13)
 /* 80233EE0 00230CE0  7D 43 2B D6 */	divw r10, r3, r5
 /* 80233EE4 00230CE4  A0 C1 00 1C */	lhz r6, 0x1c(r1)
 /* 80233EE8 00230CE8  A0 0C 00 1E */	lhz r0, 0x1e(r12)
@@ -36525,7 +36525,7 @@ lbl_80233EB4:
 /* 80233F98 00230D98  B0 C9 00 00 */	sth r6, 0(r9)
 /* 80233F9C 00230D9C  39 45 00 05 */	addi r10, r5, 5
 /* 80233FA0 00230DA0  39 25 00 06 */	addi r9, r5, 6
-/* 80233FA4 00230DA4  80 ED E2 D8 */	lwz r7, FontData-_SDA_BASE_(r13)
+/* 80233FA4 00230DA4  80 ED E2 D8 */	lwz r7, FontData@sda21(r13)
 /* 80233FA8 00230DA8  38 C5 00 07 */	addi r6, r5, 7
 /* 80233FAC 00230DAC  A0 A1 00 1E */	lhz r5, 0x1e(r1)
 /* 80233FB0 00230DB0  A0 E7 00 1E */	lhz r7, 0x1e(r7)
@@ -36547,7 +36547,7 @@ lbl_80233EB4:
 /* 80233FF0 00230DF0  7D 08 3A 14 */	add r8, r8, r7
 /* 80233FF4 00230DF4  7D 08 1A 14 */	add r8, r8, r3
 /* 80233FF8 00230DF8  B0 A8 00 00 */	sth r5, 0(r8)
-/* 80233FFC 00230DFC  80 ED E2 D8 */	lwz r7, FontData-_SDA_BASE_(r13)
+/* 80233FFC 00230DFC  80 ED E2 D8 */	lwz r7, FontData@sda21(r13)
 /* 80234000 00230E00  A0 A1 00 20 */	lhz r5, 0x20(r1)
 /* 80234004 00230E04  A0 E7 00 1E */	lhz r7, 0x1e(r7)
 /* 80234008 00230E08  7C E7 1E 70 */	srawi r7, r7, 3
@@ -36568,7 +36568,7 @@ lbl_80233EB4:
 /* 80234044 00230E44  7D 08 3A 14 */	add r8, r8, r7
 /* 80234048 00230E48  7D 08 1A 14 */	add r8, r8, r3
 /* 8023404C 00230E4C  B0 A8 00 00 */	sth r5, 0(r8)
-/* 80234050 00230E50  80 AD E2 D8 */	lwz r5, FontData-_SDA_BASE_(r13)
+/* 80234050 00230E50  80 AD E2 D8 */	lwz r5, FontData@sda21(r13)
 /* 80234054 00230E54  A0 A5 00 1E */	lhz r5, 0x1e(r5)
 /* 80234058 00230E58  7C A5 1E 70 */	srawi r5, r5, 3
 /* 8023405C 00230E5C  7C A5 01 94 */	addze r5, r5
@@ -36617,7 +36617,7 @@ OSGetFontTexel:
 /* 802340F8 00230EF8  7F 83 E3 78 */	mr r3, r28
 /* 802340FC 00230EFC  48 00 02 B8 */	b lbl_802343B4
 lbl_80234100:
-/* 80234100 00230F00  A0 0D B4 98 */	lhz r0, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80234100 00230F00  A0 0D B4 98 */	lhz r0, fontEncode_esc__7_80@sda21(r13)
 /* 80234104 00230F04  3B 9C 00 01 */	addi r28, r28, 1
 /* 80234108 00230F08  28 00 00 01 */	cmplwi r0, 1
 /* 8023410C 00230F0C  41 81 00 08 */	bgt lbl_80234114
@@ -36639,13 +36639,13 @@ lbl_8023412C:
 lbl_80234144:
 /* 80234144 00230F44  38 00 00 00 */	li r0, 0
 lbl_80234148:
-/* 80234148 00230F48  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80234148 00230F48  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80@sda21(r13)
 /* 8023414C 00230F4C  48 00 00 0C */	b lbl_80234158
 lbl_80234150:
 /* 80234150 00230F50  38 00 00 00 */	li r0, 0
-/* 80234154 00230F54  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80234154 00230F54  B0 0D B4 98 */	sth r0, fontEncode_esc__7_80@sda21(r13)
 lbl_80234158:
-/* 80234158 00230F58  A0 0D B4 98 */	lhz r0, fontEncode_esc__7_80-_SDA_BASE_(r13)
+/* 80234158 00230F58  A0 0D B4 98 */	lhz r0, fontEncode_esc__7_80@sda21(r13)
 lbl_8023415C:
 /* 8023415C 00230F5C  54 00 04 3E */	clrlwi r0, r0, 0x10
 /* 80234160 00230F60  28 00 00 01 */	cmplwi r0, 1
@@ -36682,12 +36682,12 @@ lbl_802341B8:
 /* 802341D0 00230FD0  7C 03 23 78 */	or r3, r0, r4
 /* 802341D4 00230FD4  3B 9C 00 01 */	addi r28, r28, 1
 lbl_802341D8:
-/* 802341D8 00230FD8  80 8D E2 D8 */	lwz r4, FontData-_SDA_BASE_(r13)
+/* 802341D8 00230FD8  80 8D E2 D8 */	lwz r4, FontData@sda21(r13)
 /* 802341DC 00230FDC  3B 24 00 2C */	addi r25, r4, 0x2c
 /* 802341E0 00230FE0  4B FF F7 BD */	bl GetFontCode
-/* 802341E4 00230FE4  80 CD E2 E4 */	lwz r6, CharsInSheet-_SDA_BASE_(r13)
+/* 802341E4 00230FE4  80 CD E2 E4 */	lwz r6, CharsInSheet@sda21(r13)
 /* 802341E8 00230FE8  57 00 10 3A */	slwi r0, r24, 2
-/* 802341EC 00230FEC  81 8D E2 D8 */	lwz r12, FontData-_SDA_BASE_(r13)
+/* 802341EC 00230FEC  81 8D E2 D8 */	lwz r12, FontData@sda21(r13)
 /* 802341F0 00230FF0  7C 00 1E 70 */	srawi r0, r0, 3
 /* 802341F4 00230FF4  7D 63 33 D6 */	divw r11, r3, r6
 /* 802341F8 00230FF8  80 8C 00 14 */	lwz r4, 0x14(r12)
@@ -36791,19 +36791,19 @@ lbl_8023434C:
 /* 80234370 00231170  7E E8 43 78 */	or r8, r23, r8
 /* 80234374 00231174  99 09 00 00 */	stb r8, 0(r9)
 lbl_80234378:
-/* 80234378 00231178  81 2D E2 D8 */	lwz r9, FontData-_SDA_BASE_(r13)
+/* 80234378 00231178  81 2D E2 D8 */	lwz r9, FontData@sda21(r13)
 /* 8023437C 0023117C  A1 09 00 10 */	lhz r8, 0x10(r9)
 /* 80234380 00231180  7C 0C 40 00 */	cmpw r12, r8
 /* 80234384 00231184  41 80 FF 10 */	blt lbl_80234294
 /* 80234388 00231188  3B 7B 00 01 */	addi r27, r27, 1
 lbl_8023438C:
-/* 8023438C 0023118C  80 8D E2 D8 */	lwz r4, FontData-_SDA_BASE_(r13)
+/* 8023438C 0023118C  80 8D E2 D8 */	lwz r4, FontData@sda21(r13)
 /* 80234390 00231190  A0 04 00 12 */	lhz r0, 0x12(r4)
 /* 80234394 00231194  7C 1B 00 00 */	cmpw r27, r0
 /* 80234398 00231198  41 80 FE B0 */	blt lbl_80234248
 /* 8023439C 0023119C  28 1F 00 00 */	cmplwi r31, 0
 /* 802343A0 002311A0  41 82 00 10 */	beq lbl_802343B0
-/* 802343A4 002311A4  80 8D E2 E0 */	lwz r4, WidthTable-_SDA_BASE_(r13)
+/* 802343A4 002311A4  80 8D E2 E0 */	lwz r4, WidthTable@sda21(r13)
 /* 802343A8 002311A8  7C 04 18 AE */	lbzx r0, r4, r3
 /* 802343AC 002311AC  90 1F 00 00 */	stw r0, 0(r31)
 lbl_802343B0:
@@ -36849,7 +36849,7 @@ lbl_80234408:
 .global __OSSetInterruptHandler
 __OSSetInterruptHandler:
 /* 80234414 00231214  7C 60 07 34 */	extsh r0, r3
-/* 80234418 00231218  80 6D E2 E8 */	lwz r3, InterruptHandlerTable-_SDA_BASE_(r13)
+/* 80234418 00231218  80 6D E2 E8 */	lwz r3, InterruptHandlerTable@sda21(r13)
 /* 8023441C 0023121C  54 00 10 3A */	slwi r0, r0, 2
 /* 80234420 00231220  7C A3 02 14 */	add r5, r3, r0
 /* 80234424 00231224  80 65 00 00 */	lwz r3, 0(r5)
@@ -36859,7 +36859,7 @@ __OSSetInterruptHandler:
 .global __OSGetInterruptHandler
 __OSGetInterruptHandler:
 /* 80234430 00231230  7C 60 07 34 */	extsh r0, r3
-/* 80234434 00231234  80 6D E2 E8 */	lwz r3, InterruptHandlerTable-_SDA_BASE_(r13)
+/* 80234434 00231234  80 6D E2 E8 */	lwz r3, InterruptHandlerTable@sda21(r13)
 /* 80234438 00231238  54 00 10 3A */	slwi r0, r0, 2
 /* 8023443C 0023123C  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80234440 00231240  4E 80 00 20 */	blr 
@@ -36872,10 +36872,10 @@ __OSInterruptInit:
 /* 80234450 00231250  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80234454 00231254  3F E0 80 00 */	lis r31, 0x80003040@ha
 /* 80234458 00231258  38 1F 30 40 */	addi r0, r31, 0x80003040@l
-/* 8023445C 0023125C  90 0D E2 E8 */	stw r0, InterruptHandlerTable-_SDA_BASE_(r13)
+/* 8023445C 0023125C  90 0D E2 E8 */	stw r0, InterruptHandlerTable@sda21(r13)
 /* 80234460 00231260  38 80 00 00 */	li r4, 0
 /* 80234464 00231264  38 A0 00 80 */	li r5, 0x80
-/* 80234468 00231268  80 6D E2 E8 */	lwz r3, InterruptHandlerTable-_SDA_BASE_(r13)
+/* 80234468 00231268  80 6D E2 E8 */	lwz r3, InterruptHandlerTable@sda21(r13)
 /* 8023446C 0023126C  4B DC EC 95 */	bl memset
 /* 80234470 00231270  38 00 00 00 */	li r0, 0
 /* 80234474 00231274  90 1F 00 C4 */	stw r0, 0xc4(r31)
@@ -37412,19 +37412,19 @@ lbl_80234B5C:
 /* 80234B5C 0023195C  38 63 00 04 */	addi r3, r3, 4
 /* 80234B60 00231960  4B FF FF E0 */	b lbl_80234B40
 lbl_80234B64:
-/* 80234B64 00231964  80 6D E2 E8 */	lwz r3, InterruptHandlerTable-_SDA_BASE_(r13)
+/* 80234B64 00231964  80 6D E2 E8 */	lwz r3, InterruptHandlerTable@sda21(r13)
 /* 80234B68 00231968  57 A0 10 3A */	slwi r0, r29, 2
 /* 80234B6C 0023196C  7F E3 00 2E */	lwzx r31, r3, r0
 /* 80234B70 00231970  28 1F 00 00 */	cmplwi r31, 0
 /* 80234B74 00231974  41 82 00 4C */	beq lbl_80234BC0
 /* 80234B78 00231978  2C 1D 00 04 */	cmpwi r29, 4
 /* 80234B7C 0023197C  40 81 00 1C */	ble lbl_80234B98
-/* 80234B80 00231980  B3 AD E2 F0 */	sth r29, __OSLastInterrupt-_SDA_BASE_(r13)
+/* 80234B80 00231980  B3 AD E2 F0 */	sth r29, __OSLastInterrupt@sda21(r13)
 /* 80234B84 00231984  48 00 39 C9 */	bl OSGetTime
-/* 80234B88 00231988  90 8D E2 FC */	stw r4, lbl_803D177C-_SDA_BASE_(r13)
-/* 80234B8C 0023198C  90 6D E2 F8 */	stw r3, __OSLastInterruptTime-_SDA_BASE_(r13)
+/* 80234B88 00231988  90 8D E2 FC */	stw r4, lbl_803D177C@sda21(r13)
+/* 80234B8C 0023198C  90 6D E2 F8 */	stw r3, __OSLastInterruptTime@sda21(r13)
 /* 80234B90 00231990  80 1E 01 98 */	lwz r0, 0x198(r30)
-/* 80234B94 00231994  90 0D E2 EC */	stw r0, __OSLastInterruptSrr0-_SDA_BASE_(r13)
+/* 80234B94 00231994  90 0D E2 EC */	stw r0, __OSLastInterruptSrr0@sda21(r13)
 lbl_80234B98:
 /* 80234B98 00231998  48 00 20 6D */	bl OSDisableScheduler
 /* 80234B9C 0023199C  7F A3 EB 78 */	mr r3, r29
@@ -37865,7 +37865,7 @@ Run:
 .global Callback
 Callback:
 /* 80235150 00231F50  38 00 00 01 */	li r0, 1
-/* 80235154 00231F54  90 0D E3 08 */	stw r0, Prepared-_SDA_BASE_(r13)
+/* 80235154 00231F54  90 0D E3 08 */	stw r0, Prepared@sda21(r13)
 /* 80235158 00231F58  4E 80 00 20 */	blr 
 
 .global __OSReboot
@@ -37878,10 +37878,10 @@ __OSReboot:
 /* 80235170 00231F70  3C 60 80 3C */	lis r3, Header@ha
 /* 80235174 00231F74  3B E3 16 40 */	addi r31, r3, Header@l
 /* 80235178 00231F78  4B FF F2 51 */	bl OSDisableInterrupts
-/* 8023517C 00231F7C  80 AD E3 00 */	lwz r5, SaveStart-_SDA_BASE_(r13)
+/* 8023517C 00231F7C  80 AD E3 00 */	lwz r5, SaveStart@sda21(r13)
 /* 80235180 00231F80  3F 80 80 00 */	lis r28, 0x800030F0@ha
 /* 80235184 00231F84  38 C0 00 01 */	li r6, 1
-/* 80235188 00231F88  80 0D E3 04 */	lwz r0, SaveEnd-_SDA_BASE_(r13)
+/* 80235188 00231F88  80 0D E3 04 */	lwz r0, SaveEnd@sda21(r13)
 /* 8023518C 00231F8C  3C 80 81 30 */	lis r4, 0x812FDFF0@ha
 /* 80235190 00231F90  93 7C 30 F0 */	stw r27, 0x800030F0@l(r28)
 /* 80235194 00231F94  38 61 00 A0 */	addi r3, r1, 0xa0
@@ -37897,7 +37897,7 @@ __OSReboot:
 /* 802351BC 00231FBC  48 07 C9 39 */	bl DVDResume
 /* 802351C0 00231FC0  3B 60 00 00 */	li r27, 0
 /* 802351C4 00231FC4  3C 60 80 23 */	lis r3, Callback@ha
-/* 802351C8 00231FC8  93 6D E3 08 */	stw r27, Prepared-_SDA_BASE_(r13)
+/* 802351C8 00231FC8  93 6D E3 08 */	stw r27, Prepared@sda21(r13)
 /* 802351CC 00231FCC  38 63 51 50 */	addi r3, r3, Callback@l
 /* 802351D0 00231FD0  48 07 CE AD */	bl __DVDPrepareResetAsync
 /* 802351D4 00231FD4  38 60 FF E0 */	li r3, -32
@@ -37934,10 +37934,10 @@ lbl_80235240:
 /* 80235240 00232040  38 60 00 00 */	li r3, 0
 /* 80235244 00232044  48 00 03 3D */	bl __OSDoHotReset
 lbl_80235248:
-/* 80235248 00232048  80 0D E3 08 */	lwz r0, Prepared-_SDA_BASE_(r13)
+/* 80235248 00232048  80 0D E3 08 */	lwz r0, Prepared@sda21(r13)
 /* 8023524C 0023204C  2C 00 00 01 */	cmpwi r0, 1
 /* 80235250 00232050  40 82 FF BC */	bne lbl_8023520C
-/* 80235254 00232054  80 0D E2 84 */	lwz r0, __OSIsGcam-_SDA_BASE_(r13)
+/* 80235254 00232054  80 0D E2 84 */	lwz r0, __OSIsGcam@sda21(r13)
 /* 80235258 00232058  2C 00 00 00 */	cmpwi r0, 0
 /* 8023525C 0023205C  40 82 00 C4 */	bne lbl_80235320
 /* 80235260 00232060  48 07 CD 1D */	bl DVDGetCurrentDiskID
@@ -38100,7 +38100,7 @@ lbl_8023544C:
 
 .global OSRegisterResetFunction
 OSRegisterResetFunction:
-/* 8023548C 0023228C  80 AD E3 10 */	lwz r5, ResetFunctionQueue-_SDA_BASE_(r13)
+/* 8023548C 0023228C  80 AD E3 10 */	lwz r5, ResetFunctionQueue@sda21(r13)
 /* 80235490 00232290  48 00 00 08 */	b lbl_80235498
 lbl_80235494:
 /* 80235494 00232294  80 A5 00 08 */	lwz r5, 8(r5)
@@ -38114,11 +38114,11 @@ lbl_80235498:
 lbl_802354B0:
 /* 802354B0 002322B0  28 05 00 00 */	cmplwi r5, 0
 /* 802354B4 002322B4  40 82 00 34 */	bne lbl_802354E8
-/* 802354B8 002322B8  38 AD E3 10 */	addi r5, r13, ResetFunctionQueue-_SDA_BASE_
+/* 802354B8 002322B8  38 AD E3 10 */	addi r5, r13, ResetFunctionQueue@sda21
 /* 802354BC 002322BC  84 85 00 04 */	lwzu r4, 4(r5)
 /* 802354C0 002322C0  28 04 00 00 */	cmplwi r4, 0
 /* 802354C4 002322C4  40 82 00 0C */	bne lbl_802354D0
-/* 802354C8 002322C8  90 6D E3 10 */	stw r3, ResetFunctionQueue-_SDA_BASE_(r13)
+/* 802354C8 002322C8  90 6D E3 10 */	stw r3, ResetFunctionQueue@sda21(r13)
 /* 802354CC 002322CC  48 00 00 08 */	b lbl_802354D4
 lbl_802354D0:
 /* 802354D0 002322D0  90 64 00 08 */	stw r3, 8(r4)
@@ -38135,7 +38135,7 @@ lbl_802354E8:
 /* 802354F4 002322F4  28 04 00 00 */	cmplwi r4, 0
 /* 802354F8 002322F8  90 83 00 0C */	stw r4, 0xc(r3)
 /* 802354FC 002322FC  40 82 00 0C */	bne lbl_80235508
-/* 80235500 00232300  90 6D E3 10 */	stw r3, ResetFunctionQueue-_SDA_BASE_(r13)
+/* 80235500 00232300  90 6D E3 10 */	stw r3, ResetFunctionQueue@sda21(r13)
 /* 80235504 00232304  4E 80 00 20 */	blr 
 lbl_80235508:
 /* 80235508 00232308  90 64 00 08 */	stw r3, 8(r4)
@@ -38217,7 +38217,7 @@ OSResetSystem:
 /* 802355F0 002323F0  41 82 00 18 */	beq lbl_80235608
 /* 802355F4 002323F4  2C 1C 00 00 */	cmpwi r28, 0
 /* 802355F8 002323F8  40 82 00 1C */	bne lbl_80235614
-/* 802355FC 002323FC  80 0D E3 18 */	lwz r0, bootThisDol-_SDA_BASE_(r13)
+/* 802355FC 002323FC  80 0D E3 18 */	lwz r0, bootThisDol@sda21(r13)
 /* 80235600 00232400  28 00 00 00 */	cmplwi r0, 0
 /* 80235604 00232404  41 82 00 10 */	beq lbl_80235614
 lbl_80235608:
@@ -38229,7 +38229,7 @@ lbl_80235614:
 lbl_80235618:
 /* 80235618 00232418  48 00 00 04 */	b lbl_8023561C
 lbl_8023561C:
-/* 8023561C 0023241C  83 4D E3 10 */	lwz r26, ResetFunctionQueue-_SDA_BASE_(r13)
+/* 8023561C 0023241C  83 4D E3 10 */	lwz r26, ResetFunctionQueue@sda21(r13)
 /* 80235620 00232420  3B 60 00 00 */	li r27, 0
 /* 80235624 00232424  48 00 00 04 */	b lbl_80235628
 lbl_80235628:
@@ -38284,7 +38284,7 @@ lbl_802356BC:
 /* 802356C8 002324C8  3B A0 00 00 */	li r29, 0
 lbl_802356CC:
 /* 802356CC 002324CC  4B FF EC FD */	bl OSDisableInterrupts
-/* 802356D0 002324D0  83 6D E3 10 */	lwz r27, ResetFunctionQueue-_SDA_BASE_(r13)
+/* 802356D0 002324D0  83 6D E3 10 */	lwz r27, ResetFunctionQueue@sda21(r13)
 /* 802356D4 002324D4  3B 40 00 00 */	li r26, 0
 /* 802356D8 002324D8  48 00 00 04 */	b lbl_802356DC
 lbl_802356DC:
@@ -38322,7 +38322,7 @@ lbl_80235714:
 lbl_80235748:
 /* 80235748 00232548  2C 1C 00 00 */	cmpwi r28, 0
 /* 8023574C 0023254C  40 82 00 74 */	bne lbl_802357C0
-/* 80235750 00232550  80 0D E3 18 */	lwz r0, bootThisDol-_SDA_BASE_(r13)
+/* 80235750 00232550  80 0D E3 18 */	lwz r0, bootThisDol@sda21(r13)
 /* 80235754 00232554  3C 60 80 00 */	lis r3, 0x800030EC@ha
 /* 80235758 00232558  28 00 00 00 */	cmplwi r0, 0
 /* 8023575C 0023255C  90 03 30 EC */	stw r0, 0x800030EC@l(r3)
@@ -38442,11 +38442,11 @@ __OSResetSWInterruptHandler:
 /* 802358CC 002326CC  93 A1 00 1C */	stw r29, 0x1c(r1)
 /* 802358D0 002326D0  48 00 2C 9D */	bl __OSGetSystemTime
 /* 802358D4 002326D4  3C A0 80 00 */	lis r5, 0x800000F8@ha
-/* 802358D8 002326D8  90 8D E3 3C */	stw r4, lbl_803D17BC-_SDA_BASE_(r13)
+/* 802358D8 002326D8  90 8D E3 3C */	stw r4, lbl_803D17BC@sda21(r13)
 /* 802358DC 002326DC  80 05 00 F8 */	lwz r0, 0x800000F8@l(r5)
 /* 802358E0 002326E0  3C 80 43 1C */	lis r4, 0x431BDE83@ha
 /* 802358E4 002326E4  38 84 DE 83 */	addi r4, r4, 0x431BDE83@l
-/* 802358E8 002326E8  90 6D E3 38 */	stw r3, HoldDown-_SDA_BASE_(r13)
+/* 802358E8 002326E8  90 6D E3 38 */	stw r3, HoldDown@sda21(r13)
 /* 802358EC 002326EC  54 00 F0 BE */	srwi r0, r0, 2
 /* 802358F0 002326F0  7C 04 00 16 */	mulhwu r0, r4, r0
 /* 802358F4 002326F4  54 00 8B FE */	srwi r0, r0, 0xf
@@ -38456,9 +38456,9 @@ __OSResetSWInterruptHandler:
 /* 80235904 00232704  3F E0 CC 00 */	lis r31, 0xcc00
 lbl_80235908:
 /* 80235908 00232708  48 00 2C 65 */	bl __OSGetSystemTime
-/* 8023590C 0023270C  80 CD E3 3C */	lwz r6, lbl_803D17BC-_SDA_BASE_(r13)
+/* 8023590C 0023270C  80 CD E3 3C */	lwz r6, lbl_803D17BC@sda21(r13)
 /* 80235910 00232710  6F C5 80 00 */	xoris r5, r30, 0x8000
-/* 80235914 00232714  80 0D E3 38 */	lwz r0, HoldDown-_SDA_BASE_(r13)
+/* 80235914 00232714  80 0D E3 38 */	lwz r0, HoldDown@sda21(r13)
 /* 80235918 00232718  7C 86 20 10 */	subfc r4, r6, r4
 /* 8023591C 0023271C  7C 00 19 10 */	subfe r0, r0, r3
 /* 80235920 00232720  6C 03 80 00 */	xoris r3, r0, 0x8000
@@ -38476,16 +38476,16 @@ lbl_80235944:
 /* 8023594C 0023274C  54 00 03 DF */	rlwinm. r0, r0, 0, 0xf, 0xf
 /* 80235950 00232750  40 82 00 34 */	bne lbl_80235984
 /* 80235954 00232754  38 00 00 01 */	li r0, 1
-/* 80235958 00232758  90 0D E3 24 */	stw r0, Down-_SDA_BASE_(r13)
+/* 80235958 00232758  90 0D E3 24 */	stw r0, Down@sda21(r13)
 /* 8023595C 0023275C  38 60 02 00 */	li r3, 0x200
-/* 80235960 00232760  90 0D E3 28 */	stw r0, LastState-_SDA_BASE_(r13)
+/* 80235960 00232760  90 0D E3 28 */	stw r0, LastState@sda21(r13)
 /* 80235964 00232764  4B FF EE 2D */	bl __OSMaskInterrupts
-/* 80235968 00232768  81 8D E3 20 */	lwz r12, ResetCallback-_SDA_BASE_(r13)
+/* 80235968 00232768  81 8D E3 20 */	lwz r12, ResetCallback@sda21(r13)
 /* 8023596C 0023276C  28 0C 00 00 */	cmplwi r12, 0
 /* 80235970 00232770  41 82 00 14 */	beq lbl_80235984
 /* 80235974 00232774  38 00 00 00 */	li r0, 0
 /* 80235978 00232778  7D 88 03 A6 */	mtlr r12
-/* 8023597C 0023277C  90 0D E3 20 */	stw r0, ResetCallback-_SDA_BASE_(r13)
+/* 8023597C 0023277C  90 0D E3 20 */	stw r0, ResetCallback@sda21(r13)
 /* 80235980 00232780  4E 80 00 21 */	blrl 
 lbl_80235984:
 /* 80235984 00232784  38 00 00 02 */	li r0, 2
@@ -38508,9 +38508,9 @@ OSSetResetCallback:
 /* 802359BC 002327BC  7C 7F 1B 78 */	mr r31, r3
 /* 802359C0 002327C0  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 802359C4 002327C4  4B FF EA 05 */	bl OSDisableInterrupts
-/* 802359C8 002327C8  83 CD E3 20 */	lwz r30, ResetCallback-_SDA_BASE_(r13)
+/* 802359C8 002327C8  83 CD E3 20 */	lwz r30, ResetCallback@sda21(r13)
 /* 802359CC 002327CC  28 1F 00 00 */	cmplwi r31, 0
-/* 802359D0 002327D0  93 ED E3 20 */	stw r31, ResetCallback-_SDA_BASE_(r13)
+/* 802359D0 002327D0  93 ED E3 20 */	stw r31, ResetCallback@sda21(r13)
 /* 802359D4 002327D4  7C 7F 1B 78 */	mr r31, r3
 /* 802359D8 002327D8  41 82 00 1C */	beq lbl_802359F4
 /* 802359DC 002327DC  38 00 00 02 */	li r0, 2
@@ -38548,41 +38548,41 @@ OSGetResetButtonState:
 /* 80235A48 00232848  80 05 30 00 */	lwz r0, 0xCC003000@l(r5)
 /* 80235A4C 0023284C  54 00 03 DF */	rlwinm. r0, r0, 0, 0xf, 0xf
 /* 80235A50 00232850  40 82 00 DC */	bne lbl_80235B2C
-/* 80235A54 00232854  80 0D E3 24 */	lwz r0, Down-_SDA_BASE_(r13)
+/* 80235A54 00232854  80 0D E3 24 */	lwz r0, Down@sda21(r13)
 /* 80235A58 00232858  2C 00 00 00 */	cmpwi r0, 0
 /* 80235A5C 0023285C  40 82 00 40 */	bne lbl_80235A9C
-/* 80235A60 00232860  80 0D E3 30 */	lwz r0, HoldUp-_SDA_BASE_(r13)
+/* 80235A60 00232860  80 0D E3 30 */	lwz r0, HoldUp@sda21(r13)
 /* 80235A64 00232864  38 C0 00 00 */	li r6, 0
-/* 80235A68 00232868  80 AD E3 34 */	lwz r5, lbl_803D17B4-_SDA_BASE_(r13)
+/* 80235A68 00232868  80 AD E3 34 */	lwz r5, lbl_803D17B4@sda21(r13)
 /* 80235A6C 0023286C  38 E0 00 01 */	li r7, 1
 /* 80235A70 00232870  7C 00 32 78 */	xor r0, r0, r6
 /* 80235A74 00232874  7C A5 32 78 */	xor r5, r5, r6
-/* 80235A78 00232878  90 ED E3 24 */	stw r7, Down-_SDA_BASE_(r13)
+/* 80235A78 00232878  90 ED E3 24 */	stw r7, Down@sda21(r13)
 /* 80235A7C 0023287C  7C A0 03 79 */	or. r0, r5, r0
 /* 80235A80 00232880  41 82 00 08 */	beq lbl_80235A88
 /* 80235A84 00232884  48 00 00 08 */	b lbl_80235A8C
 lbl_80235A88:
 /* 80235A88 00232888  7C C7 33 78 */	mr r7, r6
 lbl_80235A8C:
-/* 80235A8C 0023288C  90 8D E3 3C */	stw r4, lbl_803D17BC-_SDA_BASE_(r13)
+/* 80235A8C 0023288C  90 8D E3 3C */	stw r4, lbl_803D17BC@sda21(r13)
 /* 80235A90 00232890  7C FD 3B 78 */	mr r29, r7
-/* 80235A94 00232894  90 6D E3 38 */	stw r3, HoldDown-_SDA_BASE_(r13)
+/* 80235A94 00232894  90 6D E3 38 */	stw r3, HoldDown@sda21(r13)
 /* 80235A98 00232898  48 00 01 48 */	b lbl_80235BE0
 lbl_80235A9C:
-/* 80235A9C 0023289C  80 0D E3 30 */	lwz r0, HoldUp-_SDA_BASE_(r13)
+/* 80235A9C 0023289C  80 0D E3 30 */	lwz r0, HoldUp@sda21(r13)
 /* 80235AA0 002328A0  39 20 00 00 */	li r9, 0
-/* 80235AA4 002328A4  80 AD E3 34 */	lwz r5, lbl_803D17B4-_SDA_BASE_(r13)
+/* 80235AA4 002328A4  80 AD E3 34 */	lwz r5, lbl_803D17B4@sda21(r13)
 /* 80235AA8 002328A8  39 40 00 01 */	li r10, 1
 /* 80235AAC 002328AC  7C 00 4A 78 */	xor r0, r0, r9
 /* 80235AB0 002328B0  7C A5 4A 78 */	xor r5, r5, r9
 /* 80235AB4 002328B4  7C A0 03 79 */	or. r0, r5, r0
 /* 80235AB8 002328B8  40 82 00 58 */	bne lbl_80235B10
 /* 80235ABC 002328BC  3C C0 80 00 */	lis r6, 0x800000F8@ha
-/* 80235AC0 002328C0  80 AD E3 3C */	lwz r5, lbl_803D17BC-_SDA_BASE_(r13)
+/* 80235AC0 002328C0  80 AD E3 3C */	lwz r5, lbl_803D17BC@sda21(r13)
 /* 80235AC4 002328C4  80 E6 00 F8 */	lwz r7, 0x800000F8@l(r6)
 /* 80235AC8 002328C8  3C C0 43 1C */	lis r6, 0x431BDE83@ha
 /* 80235ACC 002328CC  39 06 DE 83 */	addi r8, r6, 0x431BDE83@l
-/* 80235AD0 002328D0  80 0D E3 38 */	lwz r0, HoldDown-_SDA_BASE_(r13)
+/* 80235AD0 002328D0  80 0D E3 38 */	lwz r0, HoldDown@sda21(r13)
 /* 80235AD4 002328D4  54 E6 F0 BE */	srwi r6, r7, 2
 /* 80235AD8 002328D8  7C C8 30 16 */	mulhwu r6, r8, r6
 /* 80235ADC 002328DC  54 C6 8B FE */	srwi r6, r6, 0xf
@@ -38609,26 +38609,26 @@ lbl_80235B24:
 /* 80235B24 00232924  7C 1D 03 78 */	mr r29, r0
 /* 80235B28 00232928  48 00 00 B8 */	b lbl_80235BE0
 lbl_80235B2C:
-/* 80235B2C 0023292C  80 0D E3 24 */	lwz r0, Down-_SDA_BASE_(r13)
+/* 80235B2C 0023292C  80 0D E3 24 */	lwz r0, Down@sda21(r13)
 /* 80235B30 00232930  2C 00 00 00 */	cmpwi r0, 0
 /* 80235B34 00232934  41 82 00 34 */	beq lbl_80235B68
-/* 80235B38 00232938  80 AD E3 28 */	lwz r5, LastState-_SDA_BASE_(r13)
+/* 80235B38 00232938  80 AD E3 28 */	lwz r5, LastState@sda21(r13)
 /* 80235B3C 0023293C  38 00 00 00 */	li r0, 0
-/* 80235B40 00232940  90 0D E3 24 */	stw r0, Down-_SDA_BASE_(r13)
+/* 80235B40 00232940  90 0D E3 24 */	stw r0, Down@sda21(r13)
 /* 80235B44 00232944  2C 05 00 00 */	cmpwi r5, 0
 /* 80235B48 00232948  3B A5 00 00 */	addi r29, r5, 0
 /* 80235B4C 0023294C  41 82 00 10 */	beq lbl_80235B5C
-/* 80235B50 00232950  90 8D E3 34 */	stw r4, lbl_803D17B4-_SDA_BASE_(r13)
-/* 80235B54 00232954  90 6D E3 30 */	stw r3, HoldUp-_SDA_BASE_(r13)
+/* 80235B50 00232950  90 8D E3 34 */	stw r4, lbl_803D17B4@sda21(r13)
+/* 80235B54 00232954  90 6D E3 30 */	stw r3, HoldUp@sda21(r13)
 /* 80235B58 00232958  48 00 00 88 */	b lbl_80235BE0
 lbl_80235B5C:
-/* 80235B5C 0023295C  90 0D E3 34 */	stw r0, lbl_803D17B4-_SDA_BASE_(r13)
-/* 80235B60 00232960  90 0D E3 30 */	stw r0, HoldUp-_SDA_BASE_(r13)
+/* 80235B5C 0023295C  90 0D E3 34 */	stw r0, lbl_803D17B4@sda21(r13)
+/* 80235B60 00232960  90 0D E3 30 */	stw r0, HoldUp@sda21(r13)
 /* 80235B64 00232964  48 00 00 7C */	b lbl_80235BE0
 lbl_80235B68:
-/* 80235B68 00232968  80 CD E3 30 */	lwz r6, HoldUp-_SDA_BASE_(r13)
+/* 80235B68 00232968  80 CD E3 30 */	lwz r6, HoldUp@sda21(r13)
 /* 80235B6C 0023296C  39 00 00 00 */	li r8, 0
-/* 80235B70 00232970  80 ED E3 34 */	lwz r7, lbl_803D17B4-_SDA_BASE_(r13)
+/* 80235B70 00232970  80 ED E3 34 */	lwz r7, lbl_803D17B4@sda21(r13)
 /* 80235B74 00232974  7C C0 42 78 */	xor r0, r6, r8
 /* 80235B78 00232978  7C E5 42 78 */	xor r5, r7, r8
 /* 80235B7C 0023297C  7C A0 03 79 */	or. r0, r5, r0
@@ -38654,19 +38654,19 @@ lbl_80235B68:
 /* 80235BCC 002329CC  48 00 00 14 */	b lbl_80235BE0
 lbl_80235BD0:
 /* 80235BD0 002329D0  38 00 00 00 */	li r0, 0
-/* 80235BD4 002329D4  90 0D E3 34 */	stw r0, lbl_803D17B4-_SDA_BASE_(r13)
+/* 80235BD4 002329D4  90 0D E3 34 */	stw r0, lbl_803D17B4@sda21(r13)
 /* 80235BD8 002329D8  3B A0 00 00 */	li r29, 0
-/* 80235BDC 002329DC  90 0D E3 30 */	stw r0, HoldUp-_SDA_BASE_(r13)
+/* 80235BDC 002329DC  90 0D E3 30 */	stw r0, HoldUp@sda21(r13)
 lbl_80235BE0:
 /* 80235BE0 002329E0  3C A0 80 00 */	lis r5, 0x800030E3@ha
-/* 80235BE4 002329E4  93 AD E3 28 */	stw r29, LastState-_SDA_BASE_(r13)
+/* 80235BE4 002329E4  93 AD E3 28 */	stw r29, LastState@sda21(r13)
 /* 80235BE8 002329E8  88 05 30 E3 */	lbz r0, 0x800030E3@l(r5)
 /* 80235BEC 002329EC  54 00 06 FF */	clrlwi. r0, r0, 0x1b
 /* 80235BF0 002329F0  41 82 00 A0 */	beq lbl_80235C90
 /* 80235BF4 002329F4  1D 40 00 3C */	mulli r10, r0, 0x3c
 /* 80235BF8 002329F8  80 05 00 F8 */	lwz r0, 0xf8(r5)
-/* 80235BFC 002329FC  81 2D E2 B4 */	lwz r9, lbl_803D1734-_SDA_BASE_(r13)
-/* 80235C00 00232A00  81 0D E2 B0 */	lwz r8, __OSStartTime-_SDA_BASE_(r13)
+/* 80235BFC 002329FC  81 2D E2 B4 */	lwz r9, lbl_803D1734@sda21(r13)
+/* 80235C00 00232A00  81 0D E2 B0 */	lwz r8, __OSStartTime@sda21(r13)
 /* 80235C04 00232A04  54 06 F0 BE */	srwi r6, r0, 2
 /* 80235C08 00232A08  7D 40 FE 70 */	srawi r0, r10, 0x1f
 /* 80235C0C 00232A0C  7C E0 31 D6 */	mullw r7, r0, r6
@@ -39761,17 +39761,17 @@ __OSThreadInit:
 /* 80236B14 00233914  80 7C 07 20 */	lwz r3, 0x720(r28)
 /* 80236B18 00233918  7F E4 FB 78 */	mr r4, r31
 /* 80236B1C 0023391C  90 03 00 00 */	stw r0, 0(r3)
-/* 80236B20 00233920  81 8D B4 A0 */	lwz r12, SwitchThreadCallback-_SDA_BASE_(r13)
+/* 80236B20 00233920  81 8D B4 A0 */	lwz r12, SwitchThreadCallback@sda21(r13)
 /* 80236B24 00233924  80 7E 00 E4 */	lwz r3, 0xe4(r30)
 /* 80236B28 00233928  7D 88 03 A6 */	mtlr r12
 /* 80236B2C 0023392C  4E 80 00 21 */	blrl 
 /* 80236B30 00233930  93 FE 00 E4 */	stw r31, 0xe4(r30)
 /* 80236B34 00233934  38 60 00 00 */	li r3, 0
 /* 80236B38 00233938  48 00 19 69 */	bl OSClearStack
-/* 80236B3C 0023393C  93 AD E3 40 */	stw r29, RunQueueBits-_SDA_BASE_(r13)
+/* 80236B3C 0023393C  93 AD E3 40 */	stw r29, RunQueueBits@sda21(r13)
 /* 80236B40 00233940  3B C0 00 00 */	li r30, 0
 /* 80236B44 00233944  57 C0 18 38 */	slwi r0, r30, 3
-/* 80236B48 00233948  93 AD E3 44 */	stw r29, RunQueueHint-_SDA_BASE_(r13)
+/* 80236B48 00233948  93 AD E3 44 */	stw r29, RunQueueHint@sda21(r13)
 /* 80236B4C 0023394C  7F BC 02 14 */	add r29, r28, r0
 lbl_80236B50:
 /* 80236B50 00233950  7F A3 EB 78 */	mr r3, r29
@@ -39798,7 +39798,7 @@ lbl_80236B90:
 /* 80236B9C 0023399C  93 DF 02 FC */	stw r30, 0x2fc(r31)
 /* 80236BA0 002339A0  93 E4 00 00 */	stw r31, 0(r4)
 /* 80236BA4 002339A4  4B FF C2 F9 */	bl OSClearContext
-/* 80236BA8 002339A8  93 CD E3 48 */	stw r30, Reschedule-_SDA_BASE_(r13)
+/* 80236BA8 002339A8  93 CD E3 48 */	stw r30, Reschedule@sda21(r13)
 /* 80236BAC 002339AC  80 01 00 1C */	lwz r0, 0x1c(r1)
 /* 80236BB0 002339B0  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 80236BB4 002339B4  83 C1 00 10 */	lwz r30, 0x10(r1)
@@ -39839,9 +39839,9 @@ OSDisableScheduler:
 /* 80236C0C 00233A0C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80236C10 00233A10  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80236C14 00233A14  4B FF D7 B5 */	bl OSDisableInterrupts
-/* 80236C18 00233A18  80 8D E3 48 */	lwz r4, Reschedule-_SDA_BASE_(r13)
+/* 80236C18 00233A18  80 8D E3 48 */	lwz r4, Reschedule@sda21(r13)
 /* 80236C1C 00233A1C  38 04 00 01 */	addi r0, r4, 1
-/* 80236C20 00233A20  90 0D E3 48 */	stw r0, Reschedule-_SDA_BASE_(r13)
+/* 80236C20 00233A20  90 0D E3 48 */	stw r0, Reschedule@sda21(r13)
 /* 80236C24 00233A24  7C 9F 23 78 */	mr r31, r4
 /* 80236C28 00233A28  4B FF D7 C9 */	bl OSRestoreInterrupts
 /* 80236C2C 00233A2C  7F E3 FB 78 */	mr r3, r31
@@ -39858,9 +39858,9 @@ OSEnableScheduler:
 /* 80236C4C 00233A4C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80236C50 00233A50  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80236C54 00233A54  4B FF D7 75 */	bl OSDisableInterrupts
-/* 80236C58 00233A58  80 8D E3 48 */	lwz r4, Reschedule-_SDA_BASE_(r13)
+/* 80236C58 00233A58  80 8D E3 48 */	lwz r4, Reschedule@sda21(r13)
 /* 80236C5C 00233A5C  38 04 FF FF */	addi r0, r4, -1
-/* 80236C60 00233A60  90 0D E3 48 */	stw r0, Reschedule-_SDA_BASE_(r13)
+/* 80236C60 00233A60  90 0D E3 48 */	stw r0, Reschedule@sda21(r13)
 /* 80236C64 00233A64  7C 9F 23 78 */	mr r31, r4
 /* 80236C68 00233A68  4B FF D7 89 */	bl OSRestoreInterrupts
 /* 80236C6C 00233A6C  7F E3 FB 78 */	mr r3, r31
@@ -39894,11 +39894,11 @@ lbl_80236CB8:
 /* 80236CC0 00233AC0  40 82 00 20 */	bne lbl_80236CE0
 /* 80236CC4 00233AC4  80 03 02 D0 */	lwz r0, 0x2d0(r3)
 /* 80236CC8 00233AC8  38 80 00 01 */	li r4, 1
-/* 80236CCC 00233ACC  80 AD E3 40 */	lwz r5, RunQueueBits-_SDA_BASE_(r13)
+/* 80236CCC 00233ACC  80 AD E3 40 */	lwz r5, RunQueueBits@sda21(r13)
 /* 80236CD0 00233AD0  20 00 00 1F */	subfic r0, r0, 0x1f
 /* 80236CD4 00233AD4  7C 80 00 30 */	slw r0, r4, r0
 /* 80236CD8 00233AD8  7C A0 00 78 */	andc r0, r5, r0
-/* 80236CDC 00233ADC  90 0D E3 40 */	stw r0, RunQueueBits-_SDA_BASE_(r13)
+/* 80236CDC 00233ADC  90 0D E3 40 */	stw r0, RunQueueBits@sda21(r13)
 lbl_80236CE0:
 /* 80236CE0 00233AE0  38 00 00 00 */	li r0, 0
 /* 80236CE4 00233AE4  90 03 02 DC */	stw r0, 0x2dc(r3)
@@ -39972,12 +39972,12 @@ lbl_80236DB0:
 /* 80236DC0 00233BC0  80 9F 02 DC */	lwz r4, 0x2dc(r31)
 /* 80236DC4 00233BC4  93 E4 00 04 */	stw r31, 4(r4)
 /* 80236DC8 00233BC8  80 1F 02 D0 */	lwz r0, 0x2d0(r31)
-/* 80236DCC 00233BCC  80 8D E3 40 */	lwz r4, RunQueueBits-_SDA_BASE_(r13)
+/* 80236DCC 00233BCC  80 8D E3 40 */	lwz r4, RunQueueBits@sda21(r13)
 /* 80236DD0 00233BD0  20 00 00 1F */	subfic r0, r0, 0x1f
 /* 80236DD4 00233BD4  7C 60 00 30 */	slw r0, r3, r0
 /* 80236DD8 00233BD8  7C 80 03 78 */	or r0, r4, r0
-/* 80236DDC 00233BDC  90 0D E3 40 */	stw r0, RunQueueBits-_SDA_BASE_(r13)
-/* 80236DE0 00233BE0  90 6D E3 44 */	stw r3, RunQueueHint-_SDA_BASE_(r13)
+/* 80236DDC 00233BDC  90 0D E3 40 */	stw r0, RunQueueBits@sda21(r13)
+/* 80236DE0 00233BE0  90 6D E3 44 */	stw r3, RunQueueHint@sda21(r13)
 /* 80236DE4 00233BE4  48 00 00 E8 */	b lbl_80236ECC
 lbl_80236DE8:
 /* 80236DE8 00233BE8  80 9F 02 E0 */	lwz r4, 0x2e0(r31)
@@ -40048,7 +40048,7 @@ lbl_80236EAC:
 /* 80236EBC 00233CBC  48 00 00 14 */	b lbl_80236ED0
 lbl_80236EC0:
 /* 80236EC0 00233CC0  38 00 00 01 */	li r0, 1
-/* 80236EC4 00233CC4  90 0D E3 44 */	stw r0, RunQueueHint-_SDA_BASE_(r13)
+/* 80236EC4 00233CC4  90 0D E3 44 */	stw r0, RunQueueHint@sda21(r13)
 /* 80236EC8 00233CC8  93 DF 02 D0 */	stw r30, 0x2d0(r31)
 lbl_80236ECC:
 /* 80236ECC 00233CCC  38 60 00 00 */	li r3, 0
@@ -40070,7 +40070,7 @@ SelectThread:
 /* 80236EFC 00233CFC  3B E4 16 B8 */	addi r31, r4, RunQueue@l
 /* 80236F00 00233D00  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 80236F04 00233D04  3B C3 00 00 */	addi r30, r3, 0
-/* 80236F08 00233D08  80 0D E3 48 */	lwz r0, Reschedule-_SDA_BASE_(r13)
+/* 80236F08 00233D08  80 0D E3 48 */	lwz r0, Reschedule@sda21(r13)
 /* 80236F0C 00233D0C  2C 00 00 00 */	cmpwi r0, 0
 /* 80236F10 00233D10  40 81 00 0C */	ble lbl_80236F1C
 /* 80236F14 00233D14  38 60 00 00 */	li r3, 0
@@ -40092,7 +40092,7 @@ lbl_80236F3C:
 /* 80236F4C 00233D4C  40 82 00 90 */	bne lbl_80236FDC
 /* 80236F50 00233D50  2C 1E 00 00 */	cmpwi r30, 0
 /* 80236F54 00233D54  40 82 00 20 */	bne lbl_80236F74
-/* 80236F58 00233D58  80 8D E3 40 */	lwz r4, RunQueueBits-_SDA_BASE_(r13)
+/* 80236F58 00233D58  80 8D E3 40 */	lwz r4, RunQueueBits@sda21(r13)
 /* 80236F5C 00233D5C  80 06 02 D0 */	lwz r0, 0x2d0(r6)
 /* 80236F60 00233D60  7C 84 00 34 */	cntlzw r4, r4
 /* 80236F64 00233D64  7C 00 20 00 */	cmpw r0, r4
@@ -40122,12 +40122,12 @@ lbl_80236FA8:
 /* 80236FB8 00233DB8  80 A6 02 DC */	lwz r5, 0x2dc(r6)
 /* 80236FBC 00233DBC  90 C5 00 04 */	stw r6, 4(r5)
 /* 80236FC0 00233DC0  80 06 02 D0 */	lwz r0, 0x2d0(r6)
-/* 80236FC4 00233DC4  80 AD E3 40 */	lwz r5, RunQueueBits-_SDA_BASE_(r13)
+/* 80236FC4 00233DC4  80 AD E3 40 */	lwz r5, RunQueueBits@sda21(r13)
 /* 80236FC8 00233DC8  20 00 00 1F */	subfic r0, r0, 0x1f
 /* 80236FCC 00233DCC  7C 80 00 30 */	slw r0, r4, r0
 /* 80236FD0 00233DD0  7C A0 03 78 */	or r0, r5, r0
-/* 80236FD4 00233DD4  90 0D E3 40 */	stw r0, RunQueueBits-_SDA_BASE_(r13)
-/* 80236FD8 00233DD8  90 8D E3 44 */	stw r4, RunQueueHint-_SDA_BASE_(r13)
+/* 80236FD4 00233DD4  90 0D E3 40 */	stw r0, RunQueueBits@sda21(r13)
+/* 80236FD8 00233DD8  90 8D E3 44 */	stw r4, RunQueueHint@sda21(r13)
 lbl_80236FDC:
 /* 80236FDC 00233DDC  A0 06 01 A2 */	lhz r0, 0x1a2(r6)
 /* 80236FE0 00233DE0  54 00 07 BD */	rlwinm. r0, r0, 0, 0x1e, 0x1e
@@ -40138,10 +40138,10 @@ lbl_80236FDC:
 /* 80236FF4 00233DF4  38 60 00 00 */	li r3, 0
 /* 80236FF8 00233DF8  48 00 01 00 */	b lbl_802370F8
 lbl_80236FFC:
-/* 80236FFC 00233DFC  80 0D E3 40 */	lwz r0, RunQueueBits-_SDA_BASE_(r13)
+/* 80236FFC 00233DFC  80 0D E3 40 */	lwz r0, RunQueueBits@sda21(r13)
 /* 80237000 00233E00  28 00 00 00 */	cmplwi r0, 0
 /* 80237004 00233E04  40 82 00 54 */	bne lbl_80237058
-/* 80237008 00233E08  81 8D B4 A0 */	lwz r12, SwitchThreadCallback-_SDA_BASE_(r13)
+/* 80237008 00233E08  81 8D B4 A0 */	lwz r12, SwitchThreadCallback@sda21(r13)
 /* 8023700C 00233E0C  3F C0 80 00 */	lis r30, 0x800000E4@ha
 /* 80237010 00233E10  80 7E 00 E4 */	lwz r3, 0x800000E4@l(r30)
 /* 80237014 00233E14  38 80 00 00 */	li r4, 0
@@ -40154,19 +40154,19 @@ lbl_80236FFC:
 lbl_80237030:
 /* 80237030 00233E30  4B FF D3 AD */	bl OSEnableInterrupts
 lbl_80237034:
-/* 80237034 00233E34  80 0D E3 40 */	lwz r0, RunQueueBits-_SDA_BASE_(r13)
+/* 80237034 00233E34  80 0D E3 40 */	lwz r0, RunQueueBits@sda21(r13)
 /* 80237038 00233E38  28 00 00 00 */	cmplwi r0, 0
 /* 8023703C 00233E3C  41 82 FF F8 */	beq lbl_80237034
 /* 80237040 00233E40  4B FF D3 89 */	bl OSDisableInterrupts
-/* 80237044 00233E44  80 0D E3 40 */	lwz r0, RunQueueBits-_SDA_BASE_(r13)
+/* 80237044 00233E44  80 0D E3 40 */	lwz r0, RunQueueBits@sda21(r13)
 /* 80237048 00233E48  28 00 00 00 */	cmplwi r0, 0
 /* 8023704C 00233E4C  41 82 FF E4 */	beq lbl_80237030
 /* 80237050 00233E50  38 7F 07 30 */	addi r3, r31, 0x730
 /* 80237054 00233E54  4B FF BE 49 */	bl OSClearContext
 lbl_80237058:
 /* 80237058 00233E58  38 60 00 00 */	li r3, 0
-/* 8023705C 00233E5C  90 6D E3 44 */	stw r3, RunQueueHint-_SDA_BASE_(r13)
-/* 80237060 00233E60  80 0D E3 40 */	lwz r0, RunQueueBits-_SDA_BASE_(r13)
+/* 8023705C 00233E5C  90 6D E3 44 */	stw r3, RunQueueHint@sda21(r13)
+/* 80237060 00233E60  80 0D E3 40 */	lwz r0, RunQueueBits@sda21(r13)
 /* 80237064 00233E64  7C 07 00 34 */	cntlzw r7, r0
 /* 80237068 00233E68  54 E0 18 38 */	slwi r0, r7, 3
 /* 8023706C 00233E6C  7C 9F 02 14 */	add r4, r31, r0
@@ -40185,11 +40185,11 @@ lbl_80237090:
 /* 80237098 00233E98  28 00 00 00 */	cmplwi r0, 0
 /* 8023709C 00233E9C  40 82 00 1C */	bne lbl_802370B8
 /* 802370A0 00233EA0  20 07 00 1F */	subfic r0, r7, 0x1f
-/* 802370A4 00233EA4  80 8D E3 40 */	lwz r4, RunQueueBits-_SDA_BASE_(r13)
+/* 802370A4 00233EA4  80 8D E3 40 */	lwz r4, RunQueueBits@sda21(r13)
 /* 802370A8 00233EA8  38 60 00 01 */	li r3, 1
 /* 802370AC 00233EAC  7C 60 00 30 */	slw r0, r3, r0
 /* 802370B0 00233EB0  7C 80 00 78 */	andc r0, r4, r0
-/* 802370B4 00233EB4  90 0D E3 40 */	stw r0, RunQueueBits-_SDA_BASE_(r13)
+/* 802370B4 00233EB4  90 0D E3 40 */	stw r0, RunQueueBits@sda21(r13)
 lbl_802370B8:
 /* 802370B8 00233EB8  38 00 00 00 */	li r0, 0
 /* 802370BC 00233EBC  90 1E 02 DC */	stw r0, 0x2dc(r30)
@@ -40197,7 +40197,7 @@ lbl_802370B8:
 /* 802370C4 00233EC4  3F E0 80 00 */	lis r31, 0x800000E4@ha
 /* 802370C8 00233EC8  B0 1E 02 C8 */	sth r0, 0x2c8(r30)
 /* 802370CC 00233ECC  7F C4 F3 78 */	mr r4, r30
-/* 802370D0 00233ED0  81 8D B4 A0 */	lwz r12, SwitchThreadCallback-_SDA_BASE_(r13)
+/* 802370D0 00233ED0  81 8D B4 A0 */	lwz r12, SwitchThreadCallback@sda21(r13)
 /* 802370D4 00233ED4  80 7F 00 E4 */	lwz r3, 0x800000E4@l(r31)
 /* 802370D8 00233ED8  7D 88 03 A6 */	mtlr r12
 /* 802370DC 00233EDC  4E 80 00 21 */	blrl 
@@ -40220,7 +40220,7 @@ __OSReschedule:
 /* 80237110 00233F10  7C 08 02 A6 */	mflr r0
 /* 80237114 00233F14  90 01 00 04 */	stw r0, 4(r1)
 /* 80237118 00233F18  94 21 FF F8 */	stwu r1, -8(r1)
-/* 8023711C 00233F1C  80 0D E3 44 */	lwz r0, RunQueueHint-_SDA_BASE_(r13)
+/* 8023711C 00233F1C  80 0D E3 44 */	lwz r0, RunQueueHint@sda21(r13)
 /* 80237120 00233F20  2C 00 00 00 */	cmpwi r0, 0
 /* 80237124 00233F24  41 82 00 0C */	beq lbl_80237130
 /* 80237128 00233F28  38 60 00 00 */	li r3, 0
@@ -40317,7 +40317,7 @@ lbl_802371B4:
 /* 80237270 00234070  A0 1F 01 A2 */	lhz r0, 0x1a2(r31)
 /* 80237274 00234074  60 00 00 01 */	ori r0, r0, 1
 /* 80237278 00234078  B0 1F 01 A2 */	sth r0, 0x1a2(r31)
-/* 8023727C 0023407C  80 0D B4 90 */	lwz r0, __OSFpscrEnableBits-_SDA_BASE_(r13)
+/* 8023727C 0023407C  80 0D B4 90 */	lwz r0, __OSFpscrEnableBits@sda21(r13)
 /* 80237280 00234080  54 00 06 38 */	rlwinm r0, r0, 0, 0x18, 0x1c
 /* 80237284 00234084  60 00 00 04 */	ori r0, r0, 4
 /* 80237288 00234088  90 1F 01 94 */	stw r0, 0x194(r31)
@@ -40430,8 +40430,8 @@ lbl_802373F4:
 /* 802373FC 002341FC  38 7E 02 E8 */	addi r3, r30, 0x2e8
 /* 80237400 00234200  48 00 06 E9 */	bl OSWakeupThread
 /* 80237404 00234204  38 00 00 01 */	li r0, 1
-/* 80237408 00234208  90 0D E3 44 */	stw r0, RunQueueHint-_SDA_BASE_(r13)
-/* 8023740C 0023420C  80 0D E3 44 */	lwz r0, RunQueueHint-_SDA_BASE_(r13)
+/* 80237408 00234208  90 0D E3 44 */	stw r0, RunQueueHint@sda21(r13)
+/* 8023740C 0023420C  80 0D E3 44 */	lwz r0, RunQueueHint@sda21(r13)
 /* 80237410 00234210  2C 00 00 00 */	cmpwi r0, 0
 /* 80237414 00234214  41 82 00 0C */	beq lbl_80237420
 /* 80237418 00234218  38 60 00 00 */	li r3, 0
@@ -40480,7 +40480,7 @@ lbl_80237498:
 /* 802374AC 002342AC  48 00 00 B0 */	b lbl_8023755C
 lbl_802374B0:
 /* 802374B0 002342B0  38 00 00 01 */	li r0, 1
-/* 802374B4 002342B4  90 0D E3 44 */	stw r0, RunQueueHint-_SDA_BASE_(r13)
+/* 802374B4 002342B4  90 0D E3 44 */	stw r0, RunQueueHint@sda21(r13)
 /* 802374B8 002342B8  48 00 00 A4 */	b lbl_8023755C
 lbl_802374BC:
 /* 802374BC 002342BC  80 9E 02 E0 */	lwz r4, 0x2e0(r30)
@@ -40564,7 +40564,7 @@ lbl_802375BC:
 /* 802375C0 002343C0  4B FF D9 65 */	bl __OSUnlockAllMutex
 /* 802375C4 002343C4  38 7E 02 E8 */	addi r3, r30, 0x2e8
 /* 802375C8 002343C8  48 00 05 21 */	bl OSWakeupThread
-/* 802375CC 002343CC  80 0D E3 44 */	lwz r0, RunQueueHint-_SDA_BASE_(r13)
+/* 802375CC 002343CC  80 0D E3 44 */	lwz r0, RunQueueHint@sda21(r13)
 /* 802375D0 002343D0  2C 00 00 00 */	cmpwi r0, 0
 /* 802375D4 002343D4  41 82 00 0C */	beq lbl_802375E0
 /* 802375D8 002343D8  38 60 00 00 */	li r3, 0
@@ -40651,12 +40651,12 @@ lbl_802376DC:
 /* 802376EC 002344EC  80 9D 02 DC */	lwz r4, 0x2dc(r29)
 /* 802376F0 002344F0  93 A4 00 04 */	stw r29, 4(r4)
 /* 802376F4 002344F4  80 1D 02 D0 */	lwz r0, 0x2d0(r29)
-/* 802376F8 002344F8  80 8D E3 40 */	lwz r4, RunQueueBits-_SDA_BASE_(r13)
+/* 802376F8 002344F8  80 8D E3 40 */	lwz r4, RunQueueBits@sda21(r13)
 /* 802376FC 002344FC  20 00 00 1F */	subfic r0, r0, 0x1f
 /* 80237700 00234500  7C 60 00 30 */	slw r0, r3, r0
 /* 80237704 00234504  7C 80 03 78 */	or r0, r4, r0
-/* 80237708 00234508  90 0D E3 40 */	stw r0, RunQueueBits-_SDA_BASE_(r13)
-/* 8023770C 0023450C  90 6D E3 44 */	stw r3, RunQueueHint-_SDA_BASE_(r13)
+/* 80237708 00234508  90 0D E3 40 */	stw r0, RunQueueBits@sda21(r13)
+/* 8023770C 0023450C  90 6D E3 44 */	stw r3, RunQueueHint@sda21(r13)
 /* 80237710 00234510  48 00 01 40 */	b lbl_80237850
 lbl_80237714:
 /* 80237714 00234514  80 9D 02 E0 */	lwz r4, 0x2e0(r29)
@@ -40755,7 +40755,7 @@ lbl_8023781C:
 /* 80237848 00234648  7C 7D 1B 79 */	or. r29, r3, r3
 /* 8023784C 0023464C  40 82 FF D0 */	bne lbl_8023781C
 lbl_80237850:
-/* 80237850 00234650  80 0D E3 44 */	lwz r0, RunQueueHint-_SDA_BASE_(r13)
+/* 80237850 00234650  80 0D E3 44 */	lwz r0, RunQueueHint@sda21(r13)
 /* 80237854 00234654  2C 00 00 00 */	cmpwi r0, 0
 /* 80237858 00234658  41 82 00 0C */	beq lbl_80237864
 /* 8023785C 0023465C  38 60 00 00 */	li r3, 0
@@ -40802,7 +40802,7 @@ lbl_802378E4:
 /* 802378EC 002346EC  48 00 00 20 */	b lbl_8023790C
 lbl_802378F0:
 /* 802378F0 002346F0  38 00 00 01 */	li r0, 1
-/* 802378F4 002346F4  90 0D E3 44 */	stw r0, RunQueueHint-_SDA_BASE_(r13)
+/* 802378F4 002346F4  90 0D E3 44 */	stw r0, RunQueueHint@sda21(r13)
 /* 802378F8 002346F8  B0 1D 02 C8 */	sth r0, 0x2c8(r29)
 /* 802378FC 002346FC  48 00 00 C4 */	b lbl_802379C0
 lbl_80237900:
@@ -40863,7 +40863,7 @@ lbl_8023798C:
 /* 802379B8 002347B8  7C 7D 1B 79 */	or. r29, r3, r3
 /* 802379BC 002347BC  40 82 FF D0 */	bne lbl_8023798C
 lbl_802379C0:
-/* 802379C0 002347C0  80 0D E3 44 */	lwz r0, RunQueueHint-_SDA_BASE_(r13)
+/* 802379C0 002347C0  80 0D E3 44 */	lwz r0, RunQueueHint@sda21(r13)
 /* 802379C4 002347C4  2C 00 00 00 */	cmpwi r0, 0
 /* 802379C8 002347C8  41 82 00 0C */	beq lbl_802379D4
 /* 802379CC 002347CC  38 60 00 00 */	li r3, 0
@@ -40935,8 +40935,8 @@ lbl_80237AA8:
 /* 80237AA8 002348A8  90 83 02 E0 */	stw r4, 0x2e0(r3)
 lbl_80237AAC:
 /* 80237AAC 002348AC  38 00 00 01 */	li r0, 1
-/* 80237AB0 002348B0  90 0D E3 44 */	stw r0, RunQueueHint-_SDA_BASE_(r13)
-/* 80237AB4 002348B4  80 0D E3 44 */	lwz r0, RunQueueHint-_SDA_BASE_(r13)
+/* 80237AB0 002348B0  90 0D E3 44 */	stw r0, RunQueueHint@sda21(r13)
+/* 80237AB4 002348B4  80 0D E3 44 */	lwz r0, RunQueueHint@sda21(r13)
 /* 80237AB8 002348B8  2C 00 00 00 */	cmpwi r0, 0
 /* 80237ABC 002348BC  41 82 00 0C */	beq lbl_80237AC8
 /* 80237AC0 002348C0  38 60 00 00 */	li r3, 0
@@ -41001,17 +41001,17 @@ lbl_80237B78:
 /* 80237B88 00234988  80 86 02 DC */	lwz r4, 0x2dc(r6)
 /* 80237B8C 0023498C  90 C4 00 04 */	stw r6, 4(r4)
 /* 80237B90 00234990  80 06 02 D0 */	lwz r0, 0x2d0(r6)
-/* 80237B94 00234994  80 8D E3 40 */	lwz r4, RunQueueBits-_SDA_BASE_(r13)
+/* 80237B94 00234994  80 8D E3 40 */	lwz r4, RunQueueBits@sda21(r13)
 /* 80237B98 00234998  20 00 00 1F */	subfic r0, r0, 0x1f
 /* 80237B9C 0023499C  7C 60 00 30 */	slw r0, r3, r0
 /* 80237BA0 002349A0  7C 80 03 78 */	or r0, r4, r0
-/* 80237BA4 002349A4  90 0D E3 40 */	stw r0, RunQueueBits-_SDA_BASE_(r13)
-/* 80237BA8 002349A8  90 6D E3 44 */	stw r3, RunQueueHint-_SDA_BASE_(r13)
+/* 80237BA4 002349A4  90 0D E3 40 */	stw r0, RunQueueBits@sda21(r13)
+/* 80237BA8 002349A8  90 6D E3 44 */	stw r3, RunQueueHint@sda21(r13)
 lbl_80237BAC:
 /* 80237BAC 002349AC  80 DE 00 00 */	lwz r6, 0(r30)
 /* 80237BB0 002349B0  28 06 00 00 */	cmplwi r6, 0
 /* 80237BB4 002349B4  40 82 FF 60 */	bne lbl_80237B14
-/* 80237BB8 002349B8  80 0D E3 44 */	lwz r0, RunQueueHint-_SDA_BASE_(r13)
+/* 80237BB8 002349B8  80 0D E3 44 */	lwz r0, RunQueueHint@sda21(r13)
 /* 80237BBC 002349BC  2C 00 00 00 */	cmpwi r0, 0
 /* 80237BC0 002349C0  41 82 00 0C */	beq lbl_80237BCC
 /* 80237BC4 002349C4  38 60 00 00 */	li r3, 0
@@ -41065,7 +41065,7 @@ lbl_80237C3C:
 /* 80237C68 00234A68  7C 7F 1B 79 */	or. r31, r3, r3
 /* 80237C6C 00234A6C  40 82 FF D0 */	bne lbl_80237C3C
 lbl_80237C70:
-/* 80237C70 00234A70  80 0D E3 44 */	lwz r0, RunQueueHint-_SDA_BASE_(r13)
+/* 80237C70 00234A70  80 0D E3 44 */	lwz r0, RunQueueHint@sda21(r13)
 /* 80237C74 00234A74  2C 00 00 00 */	cmpwi r0, 0
 /* 80237C78 00234A78  41 82 00 0C */	beq lbl_80237C84
 /* 80237C7C 00234A7C  38 60 00 00 */	li r3, 0
@@ -41153,7 +41153,7 @@ OSCheckActiveThreads:
 /* 80237D80 00234B80  3B 40 00 00 */	li r26, 0
 lbl_80237D84:
 /* 80237D84 00234B84  20 1A 00 1F */	subfic r0, r26, 0x1f
-/* 80237D88 00234B88  80 8D E3 40 */	lwz r4, RunQueueBits-_SDA_BASE_(r13)
+/* 80237D88 00234B88  80 8D E3 40 */	lwz r4, RunQueueBits@sda21(r13)
 /* 80237D8C 00234B8C  38 60 00 01 */	li r3, 1
 /* 80237D90 00234B90  7C 60 00 30 */	slw r0, r3, r0
 /* 80237D94 00234B94  7C 80 00 39 */	and. r0, r4, r0
@@ -41172,7 +41172,7 @@ lbl_80237DB4:
 /* 80237DC4 00234BC4  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80237DC8 00234BC8  4C C6 31 82 */	crclr 6
 /* 80237DCC 00234BCC  38 80 05 C1 */	li r4, 0x5c1
-/* 80237DD0 00234BD0  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80237DD0 00234BD0  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80237DD4 00234BD4  4B FF B5 9D */	bl OSPanic
 /* 80237DD8 00234BD8  48 00 00 40 */	b lbl_80237E18
 lbl_80237DDC:
@@ -41190,7 +41190,7 @@ lbl_80237DF4:
 /* 80237E04 00234C04  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80237E08 00234C08  4C C6 31 82 */	crclr 6
 /* 80237E0C 00234C0C  38 80 05 C6 */	li r4, 0x5c6
-/* 80237E10 00234C10  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80237E10 00234C10  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80237E14 00234C14  4B FF B5 5D */	bl OSPanic
 lbl_80237E18:
 /* 80237E18 00234C18  7F A3 EB 78 */	mr r3, r29
@@ -41204,7 +41204,7 @@ lbl_80237E18:
 /* 80237E38 00234C38  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80237E3C 00234C3C  4C C6 31 82 */	crclr 6
 /* 80237E40 00234C40  38 80 05 C8 */	li r4, 0x5c8
-/* 80237E44 00234C44  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80237E44 00234C44  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80237E48 00234C48  4B FF B5 29 */	bl OSPanic
 lbl_80237E4C:
 /* 80237E4C 00234C4C  3B 5A 00 01 */	addi r26, r26, 1
@@ -41225,7 +41225,7 @@ lbl_80237E4C:
 /* 80237E88 00234C88  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80237E8C 00234C8C  4C C6 31 82 */	crclr 6
 /* 80237E90 00234C90  38 80 05 CD */	li r4, 0x5cd
-/* 80237E94 00234C94  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80237E94 00234C94  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80237E98 00234C98  4B FF B4 D9 */	bl OSPanic
 lbl_80237E9C:
 /* 80237E9C 00234C9C  3C 60 80 00 */	lis r3, 0x800000DC@ha
@@ -41243,7 +41243,7 @@ lbl_80237E9C:
 /* 80237ECC 00234CCC  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80237ED0 00234CD0  4C C6 31 82 */	crclr 6
 /* 80237ED4 00234CD4  38 80 05 CF */	li r4, 0x5cf
-/* 80237ED8 00234CD8  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80237ED8 00234CD8  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80237EDC 00234CDC  4B FF B4 95 */	bl OSPanic
 lbl_80237EE0:
 /* 80237EE0 00234CE0  3C 60 80 00 */	lis r3, 0x800000DC@ha
@@ -41264,7 +41264,7 @@ lbl_80237EEC:
 /* 80237F18 00234D18  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80237F1C 00234D1C  4C C6 31 82 */	crclr 6
 /* 80237F20 00234D20  38 80 05 D7 */	li r4, 0x5d7
-/* 80237F24 00234D24  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80237F24 00234D24  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80237F28 00234D28  4B FF B4 49 */	bl OSPanic
 lbl_80237F2C:
 /* 80237F2C 00234D2C  80 7D 03 00 */	lwz r3, 0x300(r29)
@@ -41280,7 +41280,7 @@ lbl_80237F2C:
 /* 80237F54 00234D54  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80237F58 00234D58  4C C6 31 82 */	crclr 6
 /* 80237F5C 00234D5C  38 80 05 D9 */	li r4, 0x5d9
-/* 80237F60 00234D60  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80237F60 00234D60  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80237F64 00234D64  4B FF B4 0D */	bl OSPanic
 lbl_80237F68:
 /* 80237F68 00234D68  80 7D 03 08 */	lwz r3, 0x308(r29)
@@ -41295,7 +41295,7 @@ lbl_80237F68:
 /* 80237F8C 00234D8C  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80237F90 00234D90  4C C6 31 82 */	crclr 6
 /* 80237F94 00234D94  38 80 05 DC */	li r4, 0x5dc
-/* 80237F98 00234D98  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80237F98 00234D98  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80237F9C 00234D9C  4B FF B3 D5 */	bl OSPanic
 lbl_80237FA0:
 /* 80237FA0 00234DA0  80 1D 02 D0 */	lwz r0, 0x2d0(r29)
@@ -41311,7 +41311,7 @@ lbl_80237FB4:
 /* 80237FC4 00234DC4  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80237FC8 00234DC8  4C C6 31 82 */	crclr 6
 /* 80237FCC 00234DCC  38 80 05 DF */	li r4, 0x5df
-/* 80237FD0 00234DD0  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80237FD0 00234DD0  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80237FD4 00234DD4  4B FF B3 9D */	bl OSPanic
 lbl_80237FD8:
 /* 80237FD8 00234DD8  80 1D 02 CC */	lwz r0, 0x2cc(r29)
@@ -41324,7 +41324,7 @@ lbl_80237FD8:
 /* 80237FF4 00234DF4  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80237FF8 00234DF8  4C C6 31 82 */	crclr 6
 /* 80237FFC 00234DFC  38 80 05 E0 */	li r4, 0x5e0
-/* 80238000 00234E00  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80238000 00234E00  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80238004 00234E04  4B FF B3 6D */	bl OSPanic
 lbl_80238008:
 /* 80238008 00234E08  38 7D 02 E8 */	addi r3, r29, 0x2e8
@@ -41338,7 +41338,7 @@ lbl_80238008:
 /* 80238028 00234E28  38 7E 00 60 */	addi r3, r30, 0x60
 /* 8023802C 00234E2C  4C C6 31 82 */	crclr 6
 /* 80238030 00234E30  38 80 05 E1 */	li r4, 0x5e1
-/* 80238034 00234E34  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80238034 00234E34  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80238038 00234E38  4B FF B3 39 */	bl OSPanic
 lbl_8023803C:
 /* 8023803C 00234E3C  A0 9D 02 C8 */	lhz r4, 0x2c8(r29)
@@ -41372,7 +41372,7 @@ lbl_80238070:
 /* 802380A4 00234EA4  38 7E 00 60 */	addi r3, r30, 0x60
 /* 802380A8 00234EA8  4C C6 31 82 */	crclr 6
 /* 802380AC 00234EAC  38 80 05 E7 */	li r4, 0x5e7
-/* 802380B0 00234EB0  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 802380B0 00234EB0  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 802380B4 00234EB4  4B FF B2 BD */	bl OSPanic
 lbl_802380B8:
 /* 802380B8 00234EB8  80 1D 02 D0 */	lwz r0, 0x2d0(r29)
@@ -41400,7 +41400,7 @@ lbl_802380E8:
 /* 80238100 00234F00  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80238104 00234F04  4C C6 31 82 */	crclr 6
 /* 80238108 00234F08  38 80 05 E8 */	li r4, 0x5e8
-/* 8023810C 00234F0C  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 8023810C 00234F0C  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80238110 00234F10  4B FF B2 61 */	bl OSPanic
 lbl_80238114:
 /* 80238114 00234F14  80 9D 02 D4 */	lwz r4, 0x2d4(r29)
@@ -41429,7 +41429,7 @@ lbl_80238140:
 /* 80238164 00234F64  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80238168 00234F68  4C C6 31 82 */	crclr 6
 /* 8023816C 00234F6C  38 80 05 E9 */	li r4, 0x5e9
-/* 80238170 00234F70  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80238170 00234F70  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80238174 00234F74  4B FF B1 FD */	bl OSPanic
 /* 80238178 00234F78  48 00 02 C8 */	b lbl_80238440
 lbl_8023817C:
@@ -41443,7 +41443,7 @@ lbl_8023817C:
 /* 80238198 00234F98  38 7E 00 60 */	addi r3, r30, 0x60
 /* 8023819C 00234F9C  4C C6 31 82 */	crclr 6
 /* 802381A0 00234FA0  38 80 05 ED */	li r4, 0x5ed
-/* 802381A4 00234FA4  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 802381A4 00234FA4  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 802381A8 00234FA8  4B FF B1 C9 */	bl OSPanic
 lbl_802381AC:
 /* 802381AC 00234FAC  80 1D 02 DC */	lwz r0, 0x2dc(r29)
@@ -41456,7 +41456,7 @@ lbl_802381AC:
 /* 802381C8 00234FC8  38 7E 00 60 */	addi r3, r30, 0x60
 /* 802381CC 00234FCC  4C C6 31 82 */	crclr 6
 /* 802381D0 00234FD0  38 80 05 EE */	li r4, 0x5ee
-/* 802381D4 00234FD4  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 802381D4 00234FD4  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 802381D8 00234FD8  4B FF B1 99 */	bl OSPanic
 lbl_802381DC:
 /* 802381DC 00234FDC  80 9D 02 D4 */	lwz r4, 0x2d4(r29)
@@ -41485,7 +41485,7 @@ lbl_80238208:
 /* 8023822C 0023502C  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80238230 00235030  4C C6 31 82 */	crclr 6
 /* 80238234 00235034  38 80 05 EF */	li r4, 0x5ef
-/* 80238238 00235038  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80238238 00235038  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 8023823C 0023503C  4B FF B1 35 */	bl OSPanic
 /* 80238240 00235040  48 00 02 00 */	b lbl_80238440
 lbl_80238244:
@@ -41499,7 +41499,7 @@ lbl_80238244:
 /* 80238260 00235060  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80238264 00235064  4C C6 31 82 */	crclr 6
 /* 80238268 00235068  38 80 05 F2 */	li r4, 0x5f2
-/* 8023826C 0023506C  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 8023826C 0023506C  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80238270 00235070  4B FF B1 01 */	bl OSPanic
 lbl_80238274:
 /* 80238274 00235074  80 7D 02 DC */	lwz r3, 0x2dc(r29)
@@ -41513,7 +41513,7 @@ lbl_80238274:
 /* 80238294 00235094  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80238298 00235098  4C C6 31 82 */	crclr 6
 /* 8023829C 0023509C  38 80 05 F3 */	li r4, 0x5f3
-/* 802382A0 002350A0  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 802382A0 002350A0  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 802382A4 002350A4  4B FF B0 CD */	bl OSPanic
 lbl_802382A8:
 /* 802382A8 002350A8  80 7D 02 DC */	lwz r3, 0x2dc(r29)
@@ -41540,7 +41540,7 @@ lbl_802382D4:
 /* 802382EC 002350EC  38 7E 00 60 */	addi r3, r30, 0x60
 /* 802382F0 002350F0  4C C6 31 82 */	crclr 6
 /* 802382F4 002350F4  38 80 05 F4 */	li r4, 0x5f4
-/* 802382F8 002350F8  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 802382F8 002350F8  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 802382FC 002350FC  4B FF B0 75 */	bl OSPanic
 lbl_80238300:
 /* 80238300 00235100  80 1D 02 CC */	lwz r0, 0x2cc(r29)
@@ -41572,7 +41572,7 @@ lbl_80238338:
 /* 8023835C 0023515C  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80238360 00235160  4C C6 31 82 */	crclr 6
 /* 80238364 00235164  38 80 05 F7 */	li r4, 0x5f7
-/* 80238368 00235168  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80238368 00235168  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 8023836C 0023516C  4B FF B0 05 */	bl OSPanic
 /* 80238370 00235170  48 00 00 34 */	b lbl_802383A4
 lbl_80238374:
@@ -41586,7 +41586,7 @@ lbl_80238374:
 /* 80238390 00235190  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80238394 00235194  4C C6 31 82 */	crclr 6
 /* 80238398 00235198  38 80 05 FB */	li r4, 0x5fb
-/* 8023839C 0023519C  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 8023839C 0023519C  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 802383A0 002351A0  4B FF AF D1 */	bl OSPanic
 lbl_802383A4:
 /* 802383A4 002351A4  7F A3 EB 78 */	mr r3, r29
@@ -41600,7 +41600,7 @@ lbl_802383A4:
 /* 802383C4 002351C4  38 7E 00 60 */	addi r3, r30, 0x60
 /* 802383C8 002351C8  4C C6 31 82 */	crclr 6
 /* 802383CC 002351CC  38 80 05 FD */	li r4, 0x5fd
-/* 802383D0 002351D0  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 802383D0 002351D0  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 802383D4 002351D4  4B FF AF 9D */	bl OSPanic
 /* 802383D8 002351D8  48 00 00 68 */	b lbl_80238440
 lbl_802383DC:
@@ -41618,7 +41618,7 @@ lbl_802383F4:
 /* 80238404 00235204  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80238408 00235208  4C C6 31 82 */	crclr 6
 /* 8023840C 0023520C  38 80 06 01 */	li r4, 0x601
-/* 80238410 00235210  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80238410 00235210  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80238414 00235214  4B FF AF 5D */	bl OSPanic
 /* 80238418 00235218  48 00 00 28 */	b lbl_80238440
 lbl_8023841C:
@@ -41629,7 +41629,7 @@ lbl_8023841C:
 /* 8023842C 0023522C  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80238430 00235230  4C C6 31 82 */	crclr 6
 /* 80238434 00235234  38 80 06 07 */	li r4, 0x607
-/* 80238438 00235238  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 80238438 00235238  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 8023843C 0023523C  4B FF AF 35 */	bl OSPanic
 lbl_80238440:
 /* 80238440 00235240  7F A3 EB 78 */	mr r3, r29
@@ -41643,7 +41643,7 @@ lbl_80238440:
 /* 80238460 00235260  38 7E 00 60 */	addi r3, r30, 0x60
 /* 80238464 00235264  4C C6 31 82 */	crclr 6
 /* 80238468 00235268  38 80 06 0C */	li r4, 0x60c
-/* 8023846C 0023526C  38 AD B4 A4 */	addi r5, r13, _esc__2_833-_SDA_BASE_
+/* 8023846C 0023526C  38 AD B4 A4 */	addi r5, r13, _esc__2_833@sda21
 /* 80238470 00235270  4B FF AF 01 */	bl OSPanic
 lbl_80238474:
 /* 80238474 00235274  83 BD 02 FC */	lwz r29, 0x2fc(r29)
@@ -42257,7 +42257,7 @@ UpdateOrigin:
 /* 80238CB4 00235AB4  38 A5 20 C0 */	addi r5, r5, Origin@l
 /* 80238CB8 00235AB8  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 80238CBC 00235ABC  7F E5 32 14 */	add r31, r5, r6
-/* 80238CC0 00235AC0  80 0D B4 B4 */	lwz r0, AnalogMode-_SDA_BASE_(r13)
+/* 80238CC0 00235AC0  80 0D B4 B4 */	lwz r0, AnalogMode@sda21(r13)
 /* 80238CC4 00235AC4  54 04 05 6E */	rlwinm r4, r0, 0, 0x15, 0x17
 /* 80238CC8 00235AC8  2C 04 04 00 */	cmpwi r4, 0x400
 /* 80238CCC 00235ACC  3C 00 80 00 */	lis r0, 0x8000
@@ -42342,7 +42342,7 @@ lbl_80238DC8:
 /* 80238DEC 00235BEC  88 9F 00 05 */	lbz r4, 5(r31)
 /* 80238DF0 00235BF0  38 84 FF 80 */	addi r4, r4, -128
 /* 80238DF4 00235BF4  98 9F 00 05 */	stb r4, 5(r31)
-/* 80238DF8 00235BF8  80 8D B4 B0 */	lwz r4, XPatchBits-_SDA_BASE_(r13)
+/* 80238DF8 00235BF8  80 8D B4 B0 */	lwz r4, XPatchBits@sda21(r13)
 /* 80238DFC 00235BFC  7C 80 00 39 */	and. r0, r4, r0
 /* 80238E00 00235C00  41 82 00 30 */	beq lbl_80238E30
 /* 80238E04 00235C04  88 1F 00 02 */	lbz r0, 2(r31)
@@ -42371,35 +42371,35 @@ PADOriginCallback:
 /* 80238E50 00235C50  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80238E54 00235C54  93 E1 00 2C */	stw r31, 0x2c(r1)
 /* 80238E58 00235C58  40 82 00 48 */	bne lbl_80238EA0
-/* 80238E5C 00235C5C  80 6D B4 AC */	lwz r3, ResettingChan-_SDA_BASE_(r13)
+/* 80238E5C 00235C5C  80 6D B4 AC */	lwz r3, ResettingChan@sda21(r13)
 /* 80238E60 00235C60  4B FF FE 41 */	bl UpdateOrigin
-/* 80238E64 00235C64  83 ED B4 AC */	lwz r31, ResettingChan-_SDA_BASE_(r13)
+/* 80238E64 00235C64  83 ED B4 AC */	lwz r31, ResettingChan@sda21(r13)
 /* 80238E68 00235C68  3C 00 80 00 */	lis r0, 0x8000
-/* 80238E6C 00235C6C  80 6D E3 5C */	lwz r3, EnabledBits-_SDA_BASE_(r13)
+/* 80238E6C 00235C6C  80 6D E3 5C */	lwz r3, EnabledBits@sda21(r13)
 /* 80238E70 00235C70  38 81 00 1C */	addi r4, r1, 0x1c
 /* 80238E74 00235C74  7C 00 FC 30 */	srw r0, r0, r31
 /* 80238E78 00235C78  7C 60 03 78 */	or r0, r3, r0
-/* 80238E7C 00235C7C  90 0D E3 5C */	stw r0, EnabledBits-_SDA_BASE_(r13)
+/* 80238E7C 00235C7C  90 0D E3 5C */	stw r0, EnabledBits@sda21(r13)
 /* 80238E80 00235C80  7F E3 FB 78 */	mr r3, r31
 /* 80238E84 00235C84  48 00 26 01 */	bl SIGetResponse
-/* 80238E88 00235C88  80 0D B4 B4 */	lwz r0, AnalogMode-_SDA_BASE_(r13)
+/* 80238E88 00235C88  80 0D B4 B4 */	lwz r0, AnalogMode@sda21(r13)
 /* 80238E8C 00235C8C  38 7F 00 00 */	addi r3, r31, 0
 /* 80238E90 00235C90  64 04 00 40 */	oris r4, r0, 0x40
 /* 80238E94 00235C94  48 00 23 85 */	bl SISetCommand
-/* 80238E98 00235C98  80 6D E3 5C */	lwz r3, EnabledBits-_SDA_BASE_(r13)
+/* 80238E98 00235C98  80 6D E3 5C */	lwz r3, EnabledBits@sda21(r13)
 /* 80238E9C 00235C9C  48 00 24 0D */	bl SIEnablePolling
 lbl_80238EA0:
-/* 80238EA0 00235CA0  80 AD E3 60 */	lwz r5, ResettingBits-_SDA_BASE_(r13)
+/* 80238EA0 00235CA0  80 AD E3 60 */	lwz r5, ResettingBits@sda21(r13)
 /* 80238EA4 00235CA4  7C A0 00 34 */	cntlzw r0, r5
-/* 80238EA8 00235CA8  90 0D B4 AC */	stw r0, ResettingChan-_SDA_BASE_(r13)
-/* 80238EAC 00235CAC  80 8D B4 AC */	lwz r4, ResettingChan-_SDA_BASE_(r13)
+/* 80238EA8 00235CA8  90 0D B4 AC */	stw r0, ResettingChan@sda21(r13)
+/* 80238EAC 00235CAC  80 8D B4 AC */	lwz r4, ResettingChan@sda21(r13)
 /* 80238EB0 00235CB0  2C 04 00 20 */	cmpwi r4, 0x20
 /* 80238EB4 00235CB4  41 82 00 40 */	beq lbl_80238EF4
 /* 80238EB8 00235CB8  3C 00 80 00 */	lis r0, 0x8000
 /* 80238EBC 00235CBC  7C 00 24 30 */	srw r0, r0, r4
 /* 80238EC0 00235CC0  7C A0 00 78 */	andc r0, r5, r0
 /* 80238EC4 00235CC4  1C 84 00 0C */	mulli r4, r4, 0xc
-/* 80238EC8 00235CC8  90 0D E3 60 */	stw r0, ResettingBits-_SDA_BASE_(r13)
+/* 80238EC8 00235CC8  90 0D E3 60 */	stw r0, ResettingBits@sda21(r13)
 /* 80238ECC 00235CCC  3C 60 80 3C */	lis r3, Origin@ha
 /* 80238ED0 00235CD0  38 03 20 C0 */	addi r0, r3, Origin@l
 /* 80238ED4 00235CD4  7C 60 22 14 */	add r3, r0, r4
@@ -42407,7 +42407,7 @@ lbl_80238EA0:
 /* 80238EDC 00235CDC  38 A0 00 0C */	li r5, 0xc
 /* 80238EE0 00235CE0  4B DC A2 21 */	bl memset
 /* 80238EE4 00235CE4  3C 80 80 24 */	lis r4, PADTypeAndStatusCallback@ha
-/* 80238EE8 00235CE8  80 6D B4 AC */	lwz r3, ResettingChan-_SDA_BASE_(r13)
+/* 80238EE8 00235CE8  80 6D B4 AC */	lwz r3, ResettingChan@sda21(r13)
 /* 80238EEC 00235CEC  38 84 90 AC */	addi r4, r4, PADTypeAndStatusCallback@l
 /* 80238EF0 00235CF0  48 00 2C AD */	bl SIGetTypeAsync
 lbl_80238EF4:
@@ -42429,7 +42429,7 @@ PADOriginUpdateCallback:
 /* 80238F24 00235D24  93 A1 00 1C */	stw r29, 0x1c(r1)
 /* 80238F28 00235D28  7C 7D 1B 78 */	mr r29, r3
 /* 80238F2C 00235D2C  7C 1E EC 30 */	srw r30, r0, r29
-/* 80238F30 00235D30  80 6D E3 5C */	lwz r3, EnabledBits-_SDA_BASE_(r13)
+/* 80238F30 00235D30  80 6D E3 5C */	lwz r3, EnabledBits@sda21(r13)
 /* 80238F34 00235D34  7C 60 F0 39 */	and. r0, r3, r30
 /* 80238F38 00235D38  41 82 00 80 */	beq lbl_80238FB8
 /* 80238F3C 00235D3C  57 E0 07 3F */	clrlwi. r0, r31, 0x1c
@@ -42443,24 +42443,24 @@ lbl_80238F4C:
 /* 80238F58 00235D58  3B E3 00 00 */	addi r31, r3, 0
 /* 80238F5C 00235D5C  38 7E 00 00 */	addi r3, r30, 0
 /* 80238F60 00235D60  48 00 23 E5 */	bl SIDisablePolling
-/* 80238F64 00235D64  80 0D E3 5C */	lwz r0, EnabledBits-_SDA_BASE_(r13)
+/* 80238F64 00235D64  80 0D E3 5C */	lwz r0, EnabledBits@sda21(r13)
 /* 80238F68 00235D68  7F C9 F0 F8 */	nor r9, r30, r30
-/* 80238F6C 00235D6C  80 CD E3 68 */	lwz r6, WaitingBits-_SDA_BASE_(r13)
+/* 80238F6C 00235D6C  80 CD E3 68 */	lwz r6, WaitingBits@sda21(r13)
 /* 80238F70 00235D70  7F A3 EB 78 */	mr r3, r29
-/* 80238F74 00235D74  80 AD E3 6C */	lwz r5, CheckingBits-_SDA_BASE_(r13)
-/* 80238F78 00235D78  80 8D E3 70 */	lwz r4, PendingBits-_SDA_BASE_(r13)
+/* 80238F74 00235D74  80 AD E3 6C */	lwz r5, CheckingBits@sda21(r13)
+/* 80238F78 00235D78  80 8D E3 70 */	lwz r4, PendingBits@sda21(r13)
 /* 80238F7C 00235D7C  7C 08 48 38 */	and r8, r0, r9
-/* 80238F80 00235D80  80 0D E3 74 */	lwz r0, BarrelBits-_SDA_BASE_(r13)
+/* 80238F80 00235D80  80 0D E3 74 */	lwz r0, BarrelBits@sda21(r13)
 /* 80238F84 00235D84  7C C7 48 38 */	and r7, r6, r9
 /* 80238F88 00235D88  7C A6 48 38 */	and r6, r5, r9
 /* 80238F8C 00235D8C  7C 85 48 38 */	and r5, r4, r9
-/* 80238F90 00235D90  91 0D E3 5C */	stw r8, EnabledBits-_SDA_BASE_(r13)
+/* 80238F90 00235D90  91 0D E3 5C */	stw r8, EnabledBits@sda21(r13)
 /* 80238F94 00235D94  7C 00 48 38 */	and r0, r0, r9
-/* 80238F98 00235D98  90 ED E3 68 */	stw r7, WaitingBits-_SDA_BASE_(r13)
+/* 80238F98 00235D98  90 ED E3 68 */	stw r7, WaitingBits@sda21(r13)
 /* 80238F9C 00235D9C  38 80 00 00 */	li r4, 0
-/* 80238FA0 00235DA0  90 CD E3 6C */	stw r6, CheckingBits-_SDA_BASE_(r13)
-/* 80238FA4 00235DA4  90 AD E3 70 */	stw r5, PendingBits-_SDA_BASE_(r13)
-/* 80238FA8 00235DA8  90 0D E3 74 */	stw r0, BarrelBits-_SDA_BASE_(r13)
+/* 80238FA0 00235DA0  90 CD E3 6C */	stw r6, CheckingBits@sda21(r13)
+/* 80238FA4 00235DA4  90 AD E3 70 */	stw r5, PendingBits@sda21(r13)
+/* 80238FA8 00235DA8  90 0D E3 74 */	stw r0, BarrelBits@sda21(r13)
 /* 80238FAC 00235DAC  4B FF D7 45 */	bl OSSetWirelessID
 /* 80238FB0 00235DB0  7F E3 FB 78 */	mr r3, r31
 /* 80238FB4 00235DB4  4B FF B4 3D */	bl OSRestoreInterrupts
@@ -42482,38 +42482,38 @@ PADProbeCallback:
 /* 80238FE4 00235DE4  93 E1 00 2C */	stw r31, 0x2c(r1)
 /* 80238FE8 00235DE8  93 C1 00 28 */	stw r30, 0x28(r1)
 /* 80238FEC 00235DEC  40 82 00 54 */	bne lbl_80239040
-/* 80238FF0 00235DF0  83 CD B4 AC */	lwz r30, ResettingChan-_SDA_BASE_(r13)
+/* 80238FF0 00235DF0  83 CD B4 AC */	lwz r30, ResettingChan@sda21(r13)
 /* 80238FF4 00235DF4  3F E0 80 00 */	lis r31, 0x8000
-/* 80238FF8 00235DF8  80 6D E3 5C */	lwz r3, EnabledBits-_SDA_BASE_(r13)
+/* 80238FF8 00235DF8  80 6D E3 5C */	lwz r3, EnabledBits@sda21(r13)
 /* 80238FFC 00235DFC  38 81 00 1C */	addi r4, r1, 0x1c
 /* 80239000 00235E00  7F E0 F4 30 */	srw r0, r31, r30
 /* 80239004 00235E04  7C 60 03 78 */	or r0, r3, r0
-/* 80239008 00235E08  90 0D E3 5C */	stw r0, EnabledBits-_SDA_BASE_(r13)
+/* 80239008 00235E08  90 0D E3 5C */	stw r0, EnabledBits@sda21(r13)
 /* 8023900C 00235E0C  7F C3 F3 78 */	mr r3, r30
 /* 80239010 00235E10  48 00 24 75 */	bl SIGetResponse
-/* 80239014 00235E14  80 0D B4 B4 */	lwz r0, AnalogMode-_SDA_BASE_(r13)
+/* 80239014 00235E14  80 0D B4 B4 */	lwz r0, AnalogMode@sda21(r13)
 /* 80239018 00235E18  38 7E 00 00 */	addi r3, r30, 0
 /* 8023901C 00235E1C  64 04 00 40 */	oris r4, r0, 0x40
 /* 80239020 00235E20  48 00 21 F9 */	bl SISetCommand
-/* 80239024 00235E24  80 6D E3 5C */	lwz r3, EnabledBits-_SDA_BASE_(r13)
+/* 80239024 00235E24  80 6D E3 5C */	lwz r3, EnabledBits@sda21(r13)
 /* 80239028 00235E28  48 00 22 81 */	bl SIEnablePolling
-/* 8023902C 00235E2C  80 0D B4 AC */	lwz r0, ResettingChan-_SDA_BASE_(r13)
-/* 80239030 00235E30  80 6D E3 68 */	lwz r3, WaitingBits-_SDA_BASE_(r13)
+/* 8023902C 00235E2C  80 0D B4 AC */	lwz r0, ResettingChan@sda21(r13)
+/* 80239030 00235E30  80 6D E3 68 */	lwz r3, WaitingBits@sda21(r13)
 /* 80239034 00235E34  7F E0 04 30 */	srw r0, r31, r0
 /* 80239038 00235E38  7C 60 03 78 */	or r0, r3, r0
-/* 8023903C 00235E3C  90 0D E3 68 */	stw r0, WaitingBits-_SDA_BASE_(r13)
+/* 8023903C 00235E3C  90 0D E3 68 */	stw r0, WaitingBits@sda21(r13)
 lbl_80239040:
-/* 80239040 00235E40  80 AD E3 60 */	lwz r5, ResettingBits-_SDA_BASE_(r13)
+/* 80239040 00235E40  80 AD E3 60 */	lwz r5, ResettingBits@sda21(r13)
 /* 80239044 00235E44  7C A0 00 34 */	cntlzw r0, r5
-/* 80239048 00235E48  90 0D B4 AC */	stw r0, ResettingChan-_SDA_BASE_(r13)
-/* 8023904C 00235E4C  80 8D B4 AC */	lwz r4, ResettingChan-_SDA_BASE_(r13)
+/* 80239048 00235E48  90 0D B4 AC */	stw r0, ResettingChan@sda21(r13)
+/* 8023904C 00235E4C  80 8D B4 AC */	lwz r4, ResettingChan@sda21(r13)
 /* 80239050 00235E50  2C 04 00 20 */	cmpwi r4, 0x20
 /* 80239054 00235E54  41 82 00 40 */	beq lbl_80239094
 /* 80239058 00235E58  3C 00 80 00 */	lis r0, 0x8000
 /* 8023905C 00235E5C  7C 00 24 30 */	srw r0, r0, r4
 /* 80239060 00235E60  7C A0 00 78 */	andc r0, r5, r0
 /* 80239064 00235E64  1C 84 00 0C */	mulli r4, r4, 0xc
-/* 80239068 00235E68  90 0D E3 60 */	stw r0, ResettingBits-_SDA_BASE_(r13)
+/* 80239068 00235E68  90 0D E3 60 */	stw r0, ResettingBits@sda21(r13)
 /* 8023906C 00235E6C  3C 60 80 3C */	lis r3, Origin@ha
 /* 80239070 00235E70  38 03 20 C0 */	addi r0, r3, Origin@l
 /* 80239074 00235E74  7C 60 22 14 */	add r3, r0, r4
@@ -42521,7 +42521,7 @@ lbl_80239040:
 /* 8023907C 00235E7C  38 A0 00 0C */	li r5, 0xc
 /* 80239080 00235E80  4B DC A0 81 */	bl memset
 /* 80239084 00235E84  3C 80 80 24 */	lis r4, PADTypeAndStatusCallback@ha
-/* 80239088 00235E88  80 6D B4 AC */	lwz r3, ResettingChan-_SDA_BASE_(r13)
+/* 80239088 00235E88  80 6D B4 AC */	lwz r3, ResettingChan@sda21(r13)
 /* 8023908C 00235E8C  38 84 90 AC */	addi r4, r4, PADTypeAndStatusCallback@l
 /* 80239090 00235E90  48 00 2B 0D */	bl SIGetTypeAsync
 lbl_80239094:
@@ -42545,31 +42545,31 @@ PADTypeAndStatusCallback:
 /* 802390CC 00235ECC  3B C6 20 B0 */	addi r30, r6, Type_0@l
 /* 802390D0 00235ED0  93 A1 00 34 */	stw r29, 0x34(r1)
 /* 802390D4 00235ED4  93 81 00 30 */	stw r28, 0x30(r1)
-/* 802390D8 00235ED8  83 AD B4 AC */	lwz r29, ResettingChan-_SDA_BASE_(r13)
-/* 802390DC 00235EDC  80 AD E3 64 */	lwz r5, RecalibrateBits-_SDA_BASE_(r13)
+/* 802390D8 00235ED8  83 AD B4 AC */	lwz r29, ResettingChan@sda21(r13)
+/* 802390DC 00235EDC  80 AD E3 64 */	lwz r5, RecalibrateBits@sda21(r13)
 /* 802390E0 00235EE0  7F FC EC 30 */	srw r28, r31, r29
 /* 802390E4 00235EE4  7C A3 E0 78 */	andc r3, r5, r28
-/* 802390E8 00235EE8  90 6D E3 64 */	stw r3, RecalibrateBits-_SDA_BASE_(r13)
+/* 802390E8 00235EE8  90 6D E3 64 */	stw r3, RecalibrateBits@sda21(r13)
 /* 802390EC 00235EEC  7C A5 E0 38 */	and r5, r5, r28
 /* 802390F0 00235EF0  38 60 00 01 */	li r3, 1
 /* 802390F4 00235EF4  41 82 00 54 */	beq lbl_80239148
-/* 802390F8 00235EF8  80 8D E3 60 */	lwz r4, ResettingBits-_SDA_BASE_(r13)
+/* 802390F8 00235EF8  80 8D E3 60 */	lwz r4, ResettingBits@sda21(r13)
 /* 802390FC 00235EFC  7C 80 00 34 */	cntlzw r0, r4
-/* 80239100 00235F00  90 0D B4 AC */	stw r0, ResettingChan-_SDA_BASE_(r13)
-/* 80239104 00235F04  80 6D B4 AC */	lwz r3, ResettingChan-_SDA_BASE_(r13)
+/* 80239100 00235F00  90 0D B4 AC */	stw r0, ResettingChan@sda21(r13)
+/* 80239104 00235F04  80 6D B4 AC */	lwz r3, ResettingChan@sda21(r13)
 /* 80239108 00235F08  2C 03 00 20 */	cmpwi r3, 0x20
 /* 8023910C 00235F0C  41 82 02 AC */	beq lbl_802393B8
 /* 80239110 00235F10  1C 03 00 0C */	mulli r0, r3, 0xc
 /* 80239114 00235F14  7F E3 1C 30 */	srw r3, r31, r3
 /* 80239118 00235F18  7C 84 18 78 */	andc r4, r4, r3
 /* 8023911C 00235F1C  7C 7E 02 14 */	add r3, r30, r0
-/* 80239120 00235F20  90 8D E3 60 */	stw r4, ResettingBits-_SDA_BASE_(r13)
+/* 80239120 00235F20  90 8D E3 60 */	stw r4, ResettingBits@sda21(r13)
 /* 80239124 00235F24  38 80 00 00 */	li r4, 0
 /* 80239128 00235F28  38 A0 00 0C */	li r5, 0xc
 /* 8023912C 00235F2C  38 63 00 10 */	addi r3, r3, 0x10
 /* 80239130 00235F30  4B DC 9F D1 */	bl memset
 /* 80239134 00235F34  3C 80 80 24 */	lis r4, PADTypeAndStatusCallback@ha
-/* 80239138 00235F38  80 6D B4 AC */	lwz r3, ResettingChan-_SDA_BASE_(r13)
+/* 80239138 00235F38  80 6D B4 AC */	lwz r3, ResettingChan@sda21(r13)
 /* 8023913C 00235F3C  38 84 90 AC */	addi r4, r4, PADTypeAndStatusCallback@l
 /* 80239140 00235F40  48 00 2A 5D */	bl SIGetTypeAsync
 /* 80239144 00235F44  48 00 02 74 */	b lbl_802393B8
@@ -42584,10 +42584,10 @@ lbl_80239148:
 /* 80239164 00235F64  54 C0 01 CF */	rlwinm. r0, r6, 0, 7, 7
 /* 80239168 00235F68  40 82 00 58 */	bne lbl_802391C0
 lbl_8023916C:
-/* 8023916C 00235F6C  80 AD E3 60 */	lwz r5, ResettingBits-_SDA_BASE_(r13)
+/* 8023916C 00235F6C  80 AD E3 60 */	lwz r5, ResettingBits@sda21(r13)
 /* 80239170 00235F70  7C A0 00 34 */	cntlzw r0, r5
-/* 80239174 00235F74  90 0D B4 AC */	stw r0, ResettingChan-_SDA_BASE_(r13)
-/* 80239178 00235F78  80 8D B4 AC */	lwz r4, ResettingChan-_SDA_BASE_(r13)
+/* 80239174 00235F74  90 0D B4 AC */	stw r0, ResettingChan@sda21(r13)
+/* 80239178 00235F78  80 8D B4 AC */	lwz r4, ResettingChan@sda21(r13)
 /* 8023917C 00235F7C  2C 04 00 20 */	cmpwi r4, 0x20
 /* 80239180 00235F80  41 82 02 38 */	beq lbl_802393B8
 /* 80239184 00235F84  3C 60 80 00 */	lis r3, 0x8000
@@ -42595,49 +42595,49 @@ lbl_8023916C:
 /* 8023918C 00235F8C  7C 63 24 30 */	srw r3, r3, r4
 /* 80239190 00235F90  7C A4 18 78 */	andc r4, r5, r3
 /* 80239194 00235F94  7C 7E 02 14 */	add r3, r30, r0
-/* 80239198 00235F98  90 8D E3 60 */	stw r4, ResettingBits-_SDA_BASE_(r13)
+/* 80239198 00235F98  90 8D E3 60 */	stw r4, ResettingBits@sda21(r13)
 /* 8023919C 00235F9C  38 80 00 00 */	li r4, 0
 /* 802391A0 00235FA0  38 A0 00 0C */	li r5, 0xc
 /* 802391A4 00235FA4  38 63 00 10 */	addi r3, r3, 0x10
 /* 802391A8 00235FA8  4B DC 9F 59 */	bl memset
 /* 802391AC 00235FAC  3C 80 80 24 */	lis r4, PADTypeAndStatusCallback@ha
-/* 802391B0 00235FB0  80 6D B4 AC */	lwz r3, ResettingChan-_SDA_BASE_(r13)
+/* 802391B0 00235FB0  80 6D B4 AC */	lwz r3, ResettingChan@sda21(r13)
 /* 802391B4 00235FB4  38 84 90 AC */	addi r4, r4, PADTypeAndStatusCallback@l
 /* 802391B8 00235FB8  48 00 29 E5 */	bl SIGetTypeAsync
 /* 802391BC 00235FBC  48 00 01 FC */	b lbl_802393B8
 lbl_802391C0:
-/* 802391C0 00235FC0  80 0D B4 B8 */	lwz r0, Spec-_SDA_BASE_(r13)
+/* 802391C0 00235FC0  80 0D B4 B8 */	lwz r0, Spec@sda21(r13)
 /* 802391C4 00235FC4  28 00 00 02 */	cmplwi r0, 2
 /* 802391C8 00235FC8  40 80 00 84 */	bge lbl_8023924C
-/* 802391CC 00235FCC  80 0D E3 5C */	lwz r0, EnabledBits-_SDA_BASE_(r13)
+/* 802391CC 00235FCC  80 0D E3 5C */	lwz r0, EnabledBits@sda21(r13)
 /* 802391D0 00235FD0  38 7D 00 00 */	addi r3, r29, 0
 /* 802391D4 00235FD4  38 81 00 1C */	addi r4, r1, 0x1c
 /* 802391D8 00235FD8  7C 00 E3 78 */	or r0, r0, r28
-/* 802391DC 00235FDC  90 0D E3 5C */	stw r0, EnabledBits-_SDA_BASE_(r13)
+/* 802391DC 00235FDC  90 0D E3 5C */	stw r0, EnabledBits@sda21(r13)
 /* 802391E0 00235FE0  48 00 22 A5 */	bl SIGetResponse
-/* 802391E4 00235FE4  80 0D B4 B4 */	lwz r0, AnalogMode-_SDA_BASE_(r13)
+/* 802391E4 00235FE4  80 0D B4 B4 */	lwz r0, AnalogMode@sda21(r13)
 /* 802391E8 00235FE8  38 7D 00 00 */	addi r3, r29, 0
 /* 802391EC 00235FEC  64 04 00 40 */	oris r4, r0, 0x40
 /* 802391F0 00235FF0  48 00 20 29 */	bl SISetCommand
-/* 802391F4 00235FF4  80 6D E3 5C */	lwz r3, EnabledBits-_SDA_BASE_(r13)
+/* 802391F4 00235FF4  80 6D E3 5C */	lwz r3, EnabledBits@sda21(r13)
 /* 802391F8 00235FF8  48 00 20 B1 */	bl SIEnablePolling
-/* 802391FC 00235FFC  80 8D E3 60 */	lwz r4, ResettingBits-_SDA_BASE_(r13)
+/* 802391FC 00235FFC  80 8D E3 60 */	lwz r4, ResettingBits@sda21(r13)
 /* 80239200 00236000  7C 80 00 34 */	cntlzw r0, r4
-/* 80239204 00236004  90 0D B4 AC */	stw r0, ResettingChan-_SDA_BASE_(r13)
-/* 80239208 00236008  80 6D B4 AC */	lwz r3, ResettingChan-_SDA_BASE_(r13)
+/* 80239204 00236004  90 0D B4 AC */	stw r0, ResettingChan@sda21(r13)
+/* 80239208 00236008  80 6D B4 AC */	lwz r3, ResettingChan@sda21(r13)
 /* 8023920C 0023600C  2C 03 00 20 */	cmpwi r3, 0x20
 /* 80239210 00236010  41 82 01 A8 */	beq lbl_802393B8
 /* 80239214 00236014  1C 03 00 0C */	mulli r0, r3, 0xc
 /* 80239218 00236018  7F E3 1C 30 */	srw r3, r31, r3
 /* 8023921C 0023601C  7C 84 18 78 */	andc r4, r4, r3
 /* 80239220 00236020  7C 7E 02 14 */	add r3, r30, r0
-/* 80239224 00236024  90 8D E3 60 */	stw r4, ResettingBits-_SDA_BASE_(r13)
+/* 80239224 00236024  90 8D E3 60 */	stw r4, ResettingBits@sda21(r13)
 /* 80239228 00236028  38 80 00 00 */	li r4, 0
 /* 8023922C 0023602C  38 A0 00 0C */	li r5, 0xc
 /* 80239230 00236030  38 63 00 10 */	addi r3, r3, 0x10
 /* 80239234 00236034  4B DC 9E CD */	bl memset
 /* 80239238 00236038  3C 80 80 24 */	lis r4, PADTypeAndStatusCallback@ha
-/* 8023923C 0023603C  80 6D B4 AC */	lwz r3, ResettingChan-_SDA_BASE_(r13)
+/* 8023923C 0023603C  80 6D B4 AC */	lwz r3, ResettingChan@sda21(r13)
 /* 80239240 00236040  38 84 90 AC */	addi r4, r4, PADTypeAndStatusCallback@l
 /* 80239244 00236044  48 00 29 59 */	bl SIGetTypeAsync
 /* 80239248 00236048  48 00 01 70 */	b lbl_802393B8
@@ -42654,7 +42654,7 @@ lbl_8023925C:
 /* 8023926C 0023606C  7C DE 02 14 */	add r6, r30, r0
 /* 80239270 00236070  39 03 8E 44 */	addi r8, r3, PADOriginCallback@l
 /* 80239274 00236074  38 7D 00 00 */	addi r3, r29, 0
-/* 80239278 00236078  38 8D B4 C4 */	addi r4, r13, CmdCalibrate-_SDA_BASE_
+/* 80239278 00236078  38 8D B4 C4 */	addi r4, r13, CmdCalibrate@sda21
 /* 8023927C 0023607C  38 A0 00 03 */	li r5, 3
 /* 80239280 00236080  38 E0 00 0A */	li r7, 0xa
 /* 80239284 00236084  39 40 00 00 */	li r10, 0
@@ -42668,7 +42668,7 @@ lbl_80239298:
 /* 802392A0 002360A0  7C DE 02 14 */	add r6, r30, r0
 /* 802392A4 002360A4  39 03 8E 44 */	addi r8, r3, PADOriginCallback@l
 /* 802392A8 002360A8  38 7D 00 00 */	addi r3, r29, 0
-/* 802392AC 002360AC  38 8D B4 C0 */	addi r4, r13, CmdReadOrigin-_SDA_BASE_
+/* 802392AC 002360AC  38 8D B4 C0 */	addi r4, r13, CmdReadOrigin@sda21
 /* 802392B0 002360B0  38 A0 00 01 */	li r5, 1
 /* 802392B4 002360B4  38 E0 00 0A */	li r7, 0xa
 /* 802392B8 002360B8  39 40 00 00 */	li r10, 0
@@ -42690,7 +42690,7 @@ lbl_802392CC:
 /* 802392F4 002360F4  7C DE 02 14 */	add r6, r30, r0
 /* 802392F8 002360F8  39 03 8E 44 */	addi r8, r3, PADOriginCallback@l
 /* 802392FC 002360FC  38 7D 00 00 */	addi r3, r29, 0
-/* 80239300 00236100  38 8D B4 C0 */	addi r4, r13, CmdReadOrigin-_SDA_BASE_
+/* 80239300 00236100  38 8D B4 C0 */	addi r4, r13, CmdReadOrigin@sda21
 /* 80239304 00236104  38 A0 00 01 */	li r5, 1
 /* 80239308 00236108  38 E0 00 0A */	li r7, 0xa
 /* 8023930C 0023610C  39 40 00 00 */	li r10, 0
@@ -42715,13 +42715,13 @@ lbl_80239320:
 lbl_80239354:
 /* 80239354 00236154  2C 03 00 00 */	cmpwi r3, 0
 /* 80239358 00236158  40 82 00 60 */	bne lbl_802393B8
-/* 8023935C 0023615C  80 AD E3 60 */	lwz r5, ResettingBits-_SDA_BASE_(r13)
-/* 80239360 00236160  80 6D E3 70 */	lwz r3, PendingBits-_SDA_BASE_(r13)
+/* 8023935C 0023615C  80 AD E3 60 */	lwz r5, ResettingBits@sda21(r13)
+/* 80239360 00236160  80 6D E3 70 */	lwz r3, PendingBits@sda21(r13)
 /* 80239364 00236164  7C A0 00 34 */	cntlzw r0, r5
-/* 80239368 00236168  90 0D B4 AC */	stw r0, ResettingChan-_SDA_BASE_(r13)
+/* 80239368 00236168  90 0D B4 AC */	stw r0, ResettingChan@sda21(r13)
 /* 8023936C 0023616C  7C 60 E3 78 */	or r0, r3, r28
-/* 80239370 00236170  80 8D B4 AC */	lwz r4, ResettingChan-_SDA_BASE_(r13)
-/* 80239374 00236174  90 0D E3 70 */	stw r0, PendingBits-_SDA_BASE_(r13)
+/* 80239370 00236170  80 8D B4 AC */	lwz r4, ResettingChan@sda21(r13)
+/* 80239374 00236174  90 0D E3 70 */	stw r0, PendingBits@sda21(r13)
 /* 80239378 00236178  2C 04 00 20 */	cmpwi r4, 0x20
 /* 8023937C 0023617C  41 82 00 3C */	beq lbl_802393B8
 /* 80239380 00236180  3C 60 80 00 */	lis r3, 0x8000
@@ -42729,13 +42729,13 @@ lbl_80239354:
 /* 80239388 00236188  7C 63 24 30 */	srw r3, r3, r4
 /* 8023938C 0023618C  7C A4 18 78 */	andc r4, r5, r3
 /* 80239390 00236190  7C 7E 02 14 */	add r3, r30, r0
-/* 80239394 00236194  90 8D E3 60 */	stw r4, ResettingBits-_SDA_BASE_(r13)
+/* 80239394 00236194  90 8D E3 60 */	stw r4, ResettingBits@sda21(r13)
 /* 80239398 00236198  38 80 00 00 */	li r4, 0
 /* 8023939C 0023619C  38 A0 00 0C */	li r5, 0xc
 /* 802393A0 002361A0  38 63 00 10 */	addi r3, r3, 0x10
 /* 802393A4 002361A4  4B DC 9D 5D */	bl memset
 /* 802393A8 002361A8  3C 80 80 24 */	lis r4, PADTypeAndStatusCallback@ha
-/* 802393AC 002361AC  80 6D B4 AC */	lwz r3, ResettingChan-_SDA_BASE_(r13)
+/* 802393AC 002361AC  80 6D B4 AC */	lwz r3, ResettingChan@sda21(r13)
 /* 802393B0 002361B0  38 84 90 AC */	addi r4, r4, PADTypeAndStatusCallback@l
 /* 802393B4 002361B4  48 00 27 E9 */	bl SIGetTypeAsync
 lbl_802393B8:
@@ -42759,17 +42759,17 @@ PADReceiveCheckCallback:
 /* 802393F0 002361F0  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 802393F4 002361F4  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 802393F8 002361F8  7C 7D FC 30 */	srw r29, r3, r31
-/* 802393FC 002361FC  80 0D E3 5C */	lwz r0, EnabledBits-_SDA_BASE_(r13)
+/* 802393FC 002361FC  80 0D E3 5C */	lwz r0, EnabledBits@sda21(r13)
 /* 80239400 00236200  7C 00 E8 39 */	and. r0, r0, r29
 /* 80239404 00236204  41 82 00 F8 */	beq lbl_802394FC
-/* 80239408 00236208  80 AD E3 68 */	lwz r5, WaitingBits-_SDA_BASE_(r13)
+/* 80239408 00236208  80 AD E3 68 */	lwz r5, WaitingBits@sda21(r13)
 /* 8023940C 0023620C  7F A6 E8 F8 */	nor r6, r29, r29
-/* 80239410 00236210  80 6D E3 6C */	lwz r3, CheckingBits-_SDA_BASE_(r13)
+/* 80239410 00236210  80 6D E3 6C */	lwz r3, CheckingBits@sda21(r13)
 /* 80239414 00236214  54 80 07 3F */	clrlwi. r0, r4, 0x1c
 /* 80239418 00236218  7C A5 30 38 */	and r5, r5, r6
 /* 8023941C 0023621C  7C 63 30 38 */	and r3, r3, r6
-/* 80239420 00236220  90 AD E3 68 */	stw r5, WaitingBits-_SDA_BASE_(r13)
-/* 80239424 00236224  90 6D E3 6C */	stw r3, CheckingBits-_SDA_BASE_(r13)
+/* 80239420 00236220  90 AD E3 68 */	stw r5, WaitingBits@sda21(r13)
+/* 80239424 00236224  90 6D E3 6C */	stw r3, CheckingBits@sda21(r13)
 /* 80239428 00236228  54 83 00 2E */	rlwinm r3, r4, 0, 0, 0x17
 /* 8023942C 0023622C  40 82 00 6C */	bne lbl_80239498
 /* 80239430 00236230  54 60 00 01 */	rlwinm. r0, r3, 0, 0, 0
@@ -42791,7 +42791,7 @@ PADReceiveCheckCallback:
 /* 80239470 00236270  7C C0 22 14 */	add r6, r0, r4
 /* 80239474 00236274  39 03 8F 08 */	addi r8, r3, PADOriginUpdateCallback@l
 /* 80239478 00236278  38 7F 00 00 */	addi r3, r31, 0
-/* 8023947C 0023627C  38 8D B4 C0 */	addi r4, r13, CmdReadOrigin-_SDA_BASE_
+/* 8023947C 0023627C  38 8D B4 C0 */	addi r4, r13, CmdReadOrigin@sda21
 /* 80239480 00236280  38 A0 00 01 */	li r5, 1
 /* 80239484 00236284  38 E0 00 0A */	li r7, 0xa
 /* 80239488 00236288  39 40 00 00 */	li r10, 0
@@ -42803,24 +42803,24 @@ lbl_80239498:
 /* 8023949C 0023629C  3B C3 00 00 */	addi r30, r3, 0
 /* 802394A0 002362A0  38 7D 00 00 */	addi r3, r29, 0
 /* 802394A4 002362A4  48 00 1E A1 */	bl SIDisablePolling
-/* 802394A8 002362A8  80 0D E3 5C */	lwz r0, EnabledBits-_SDA_BASE_(r13)
+/* 802394A8 002362A8  80 0D E3 5C */	lwz r0, EnabledBits@sda21(r13)
 /* 802394AC 002362AC  7F A9 E8 F8 */	nor r9, r29, r29
-/* 802394B0 002362B0  80 CD E3 68 */	lwz r6, WaitingBits-_SDA_BASE_(r13)
+/* 802394B0 002362B0  80 CD E3 68 */	lwz r6, WaitingBits@sda21(r13)
 /* 802394B4 002362B4  7F E3 FB 78 */	mr r3, r31
-/* 802394B8 002362B8  80 AD E3 6C */	lwz r5, CheckingBits-_SDA_BASE_(r13)
-/* 802394BC 002362BC  80 8D E3 70 */	lwz r4, PendingBits-_SDA_BASE_(r13)
+/* 802394B8 002362B8  80 AD E3 6C */	lwz r5, CheckingBits@sda21(r13)
+/* 802394BC 002362BC  80 8D E3 70 */	lwz r4, PendingBits@sda21(r13)
 /* 802394C0 002362C0  7C 08 48 38 */	and r8, r0, r9
-/* 802394C4 002362C4  80 0D E3 74 */	lwz r0, BarrelBits-_SDA_BASE_(r13)
+/* 802394C4 002362C4  80 0D E3 74 */	lwz r0, BarrelBits@sda21(r13)
 /* 802394C8 002362C8  7C C7 48 38 */	and r7, r6, r9
 /* 802394CC 002362CC  7C A6 48 38 */	and r6, r5, r9
 /* 802394D0 002362D0  7C 85 48 38 */	and r5, r4, r9
-/* 802394D4 002362D4  91 0D E3 5C */	stw r8, EnabledBits-_SDA_BASE_(r13)
+/* 802394D4 002362D4  91 0D E3 5C */	stw r8, EnabledBits@sda21(r13)
 /* 802394D8 002362D8  7C 00 48 38 */	and r0, r0, r9
-/* 802394DC 002362DC  90 ED E3 68 */	stw r7, WaitingBits-_SDA_BASE_(r13)
+/* 802394DC 002362DC  90 ED E3 68 */	stw r7, WaitingBits@sda21(r13)
 /* 802394E0 002362E0  38 80 00 00 */	li r4, 0
-/* 802394E4 002362E4  90 CD E3 6C */	stw r6, CheckingBits-_SDA_BASE_(r13)
-/* 802394E8 002362E8  90 AD E3 70 */	stw r5, PendingBits-_SDA_BASE_(r13)
-/* 802394EC 002362EC  90 0D E3 74 */	stw r0, BarrelBits-_SDA_BASE_(r13)
+/* 802394E4 002362E4  90 CD E3 6C */	stw r6, CheckingBits@sda21(r13)
+/* 802394E8 002362E8  90 AD E3 70 */	stw r5, PendingBits@sda21(r13)
+/* 802394EC 002362EC  90 0D E3 74 */	stw r0, BarrelBits@sda21(r13)
 /* 802394F0 002362F0  4B FF D2 01 */	bl OSSetWirelessID
 /* 802394F4 002362F4  7F C3 F3 78 */	mr r3, r30
 /* 802394F8 002362F8  4B FF AE F9 */	bl OSRestoreInterrupts
@@ -42842,49 +42842,49 @@ PADReset:
 /* 80239528 00236328  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 8023952C 0023632C  7C 7E 1B 78 */	mr r30, r3
 /* 80239530 00236330  4B FF AE 99 */	bl OSDisableInterrupts
-/* 80239534 00236334  80 8D E3 70 */	lwz r4, PendingBits-_SDA_BASE_(r13)
+/* 80239534 00236334  80 8D E3 70 */	lwz r4, PendingBits@sda21(r13)
 /* 80239538 00236338  39 00 00 00 */	li r8, 0
-/* 8023953C 0023633C  80 AD E3 68 */	lwz r5, WaitingBits-_SDA_BASE_(r13)
+/* 8023953C 0023633C  80 AD E3 68 */	lwz r5, WaitingBits@sda21(r13)
 /* 80239540 00236340  7C 7F 1B 78 */	mr r31, r3
-/* 80239544 00236344  80 0D E3 6C */	lwz r0, CheckingBits-_SDA_BASE_(r13)
+/* 80239544 00236344  80 0D E3 6C */	lwz r0, CheckingBits@sda21(r13)
 /* 80239548 00236348  7F DE 23 78 */	or r30, r30, r4
-/* 8023954C 0023634C  80 8D E3 60 */	lwz r4, ResettingBits-_SDA_BASE_(r13)
+/* 8023954C 0023634C  80 8D E3 60 */	lwz r4, ResettingBits@sda21(r13)
 /* 80239550 00236350  7C A5 03 78 */	or r5, r5, r0
-/* 80239554 00236354  80 0D B4 B8 */	lwz r0, Spec-_SDA_BASE_(r13)
+/* 80239554 00236354  80 0D B4 B8 */	lwz r0, Spec@sda21(r13)
 /* 80239558 00236358  7F DE 28 78 */	andc r30, r30, r5
-/* 8023955C 0023635C  80 CD E3 5C */	lwz r6, EnabledBits-_SDA_BASE_(r13)
+/* 8023955C 0023635C  80 CD E3 5C */	lwz r6, EnabledBits@sda21(r13)
 /* 80239560 00236360  7C 85 F3 78 */	or r5, r4, r30
-/* 80239564 00236364  80 8D E3 74 */	lwz r4, BarrelBits-_SDA_BASE_(r13)
+/* 80239564 00236364  80 8D E3 74 */	lwz r4, BarrelBits@sda21(r13)
 /* 80239568 00236368  7F C7 F0 F8 */	nor r7, r30, r30
-/* 8023956C 0023636C  90 AD E3 60 */	stw r5, ResettingBits-_SDA_BASE_(r13)
+/* 8023956C 0023636C  90 AD E3 60 */	stw r5, ResettingBits@sda21(r13)
 /* 80239570 00236370  7C C5 38 38 */	and r5, r6, r7
 /* 80239574 00236374  7C 84 38 38 */	and r4, r4, r7
-/* 80239578 00236378  80 ED E3 60 */	lwz r7, ResettingBits-_SDA_BASE_(r13)
+/* 80239578 00236378  80 ED E3 60 */	lwz r7, ResettingBits@sda21(r13)
 /* 8023957C 0023637C  28 00 00 04 */	cmplwi r0, 4
-/* 80239580 00236380  91 0D E3 70 */	stw r8, PendingBits-_SDA_BASE_(r13)
+/* 80239580 00236380  91 0D E3 70 */	stw r8, PendingBits@sda21(r13)
 /* 80239584 00236384  7C E3 30 38 */	and r3, r7, r6
-/* 80239588 00236388  90 AD E3 5C */	stw r5, EnabledBits-_SDA_BASE_(r13)
-/* 8023958C 0023638C  90 8D E3 74 */	stw r4, BarrelBits-_SDA_BASE_(r13)
+/* 80239588 00236388  90 AD E3 5C */	stw r5, EnabledBits@sda21(r13)
+/* 8023958C 0023638C  90 8D E3 74 */	stw r4, BarrelBits@sda21(r13)
 /* 80239590 00236390  40 82 00 10 */	bne lbl_802395A0
-/* 80239594 00236394  80 0D E3 64 */	lwz r0, RecalibrateBits-_SDA_BASE_(r13)
+/* 80239594 00236394  80 0D E3 64 */	lwz r0, RecalibrateBits@sda21(r13)
 /* 80239598 00236398  7C 00 F3 78 */	or r0, r0, r30
-/* 8023959C 0023639C  90 0D E3 64 */	stw r0, RecalibrateBits-_SDA_BASE_(r13)
+/* 8023959C 0023639C  90 0D E3 64 */	stw r0, RecalibrateBits@sda21(r13)
 lbl_802395A0:
 /* 802395A0 002363A0  48 00 1D A5 */	bl SIDisablePolling
-/* 802395A4 002363A4  80 0D B4 AC */	lwz r0, ResettingChan-_SDA_BASE_(r13)
+/* 802395A4 002363A4  80 0D B4 AC */	lwz r0, ResettingChan@sda21(r13)
 /* 802395A8 002363A8  2C 00 00 20 */	cmpwi r0, 0x20
 /* 802395AC 002363AC  40 82 00 58 */	bne lbl_80239604
-/* 802395B0 002363B0  80 AD E3 60 */	lwz r5, ResettingBits-_SDA_BASE_(r13)
+/* 802395B0 002363B0  80 AD E3 60 */	lwz r5, ResettingBits@sda21(r13)
 /* 802395B4 002363B4  7C A0 00 34 */	cntlzw r0, r5
-/* 802395B8 002363B8  90 0D B4 AC */	stw r0, ResettingChan-_SDA_BASE_(r13)
-/* 802395BC 002363BC  80 8D B4 AC */	lwz r4, ResettingChan-_SDA_BASE_(r13)
+/* 802395B8 002363B8  90 0D B4 AC */	stw r0, ResettingChan@sda21(r13)
+/* 802395BC 002363BC  80 8D B4 AC */	lwz r4, ResettingChan@sda21(r13)
 /* 802395C0 002363C0  2C 04 00 20 */	cmpwi r4, 0x20
 /* 802395C4 002363C4  41 82 00 40 */	beq lbl_80239604
 /* 802395C8 002363C8  3C 00 80 00 */	lis r0, 0x8000
 /* 802395CC 002363CC  7C 00 24 30 */	srw r0, r0, r4
 /* 802395D0 002363D0  7C A0 00 78 */	andc r0, r5, r0
 /* 802395D4 002363D4  1C 84 00 0C */	mulli r4, r4, 0xc
-/* 802395D8 002363D8  90 0D E3 60 */	stw r0, ResettingBits-_SDA_BASE_(r13)
+/* 802395D8 002363D8  90 0D E3 60 */	stw r0, ResettingBits@sda21(r13)
 /* 802395DC 002363DC  3C 60 80 3C */	lis r3, Origin@ha
 /* 802395E0 002363E0  38 03 20 C0 */	addi r0, r3, Origin@l
 /* 802395E4 002363E4  7C 60 22 14 */	add r3, r0, r4
@@ -42892,7 +42892,7 @@ lbl_802395A0:
 /* 802395EC 002363EC  38 A0 00 0C */	li r5, 0xc
 /* 802395F0 002363F0  4B DC 9B 11 */	bl memset
 /* 802395F4 002363F4  3C 80 80 24 */	lis r4, PADTypeAndStatusCallback@ha
-/* 802395F8 002363F8  80 6D B4 AC */	lwz r3, ResettingChan-_SDA_BASE_(r13)
+/* 802395F8 002363F8  80 6D B4 AC */	lwz r3, ResettingChan@sda21(r13)
 /* 802395FC 002363FC  38 84 90 AC */	addi r4, r4, PADTypeAndStatusCallback@l
 /* 80239600 00236400  48 00 25 9D */	bl SIGetTypeAsync
 lbl_80239604:
@@ -42915,50 +42915,50 @@ PADRecalibrate:
 /* 80239638 00236438  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 8023963C 0023643C  7C 7E 1B 78 */	mr r30, r3
 /* 80239640 00236440  4B FF AD 89 */	bl OSDisableInterrupts
-/* 80239644 00236444  80 AD E3 70 */	lwz r5, PendingBits-_SDA_BASE_(r13)
+/* 80239644 00236444  80 AD E3 70 */	lwz r5, PendingBits@sda21(r13)
 /* 80239648 00236448  39 00 00 00 */	li r8, 0
-/* 8023964C 0023644C  80 CD E3 68 */	lwz r6, WaitingBits-_SDA_BASE_(r13)
+/* 8023964C 0023644C  80 CD E3 68 */	lwz r6, WaitingBits@sda21(r13)
 /* 80239650 00236450  3C 80 80 00 */	lis r4, 0x800030E3@ha
-/* 80239654 00236454  80 0D E3 6C */	lwz r0, CheckingBits-_SDA_BASE_(r13)
+/* 80239654 00236454  80 0D E3 6C */	lwz r0, CheckingBits@sda21(r13)
 /* 80239658 00236458  7F DE 2B 78 */	or r30, r30, r5
-/* 8023965C 0023645C  80 AD E3 60 */	lwz r5, ResettingBits-_SDA_BASE_(r13)
+/* 8023965C 0023645C  80 AD E3 60 */	lwz r5, ResettingBits@sda21(r13)
 /* 80239660 00236460  7C C6 03 78 */	or r6, r6, r0
 /* 80239664 00236464  88 04 30 E3 */	lbz r0, 0x800030E3@l(r4)
 /* 80239668 00236468  7F DE 30 78 */	andc r30, r30, r6
-/* 8023966C 0023646C  80 CD E3 5C */	lwz r6, EnabledBits-_SDA_BASE_(r13)
+/* 8023966C 0023646C  80 CD E3 5C */	lwz r6, EnabledBits@sda21(r13)
 /* 80239670 00236470  7C A5 F3 78 */	or r5, r5, r30
-/* 80239674 00236474  80 8D E3 74 */	lwz r4, BarrelBits-_SDA_BASE_(r13)
-/* 80239678 00236478  90 AD E3 60 */	stw r5, ResettingBits-_SDA_BASE_(r13)
+/* 80239674 00236474  80 8D E3 74 */	lwz r4, BarrelBits@sda21(r13)
+/* 80239678 00236478  90 AD E3 60 */	stw r5, ResettingBits@sda21(r13)
 /* 8023967C 0023647C  7F C9 F0 F8 */	nor r9, r30, r30
 /* 80239680 00236480  7C C5 48 38 */	and r5, r6, r9
 /* 80239684 00236484  7C 84 48 38 */	and r4, r4, r9
-/* 80239688 00236488  80 ED E3 60 */	lwz r7, ResettingBits-_SDA_BASE_(r13)
+/* 80239688 00236488  80 ED E3 60 */	lwz r7, ResettingBits@sda21(r13)
 /* 8023968C 0023648C  7C 7F 1B 78 */	mr r31, r3
-/* 80239690 00236490  91 0D E3 70 */	stw r8, PendingBits-_SDA_BASE_(r13)
+/* 80239690 00236490  91 0D E3 70 */	stw r8, PendingBits@sda21(r13)
 /* 80239694 00236494  54 00 06 73 */	rlwinm. r0, r0, 0, 0x19, 0x19
-/* 80239698 00236498  90 AD E3 5C */	stw r5, EnabledBits-_SDA_BASE_(r13)
+/* 80239698 00236498  90 AD E3 5C */	stw r5, EnabledBits@sda21(r13)
 /* 8023969C 0023649C  7C E3 30 38 */	and r3, r7, r6
-/* 802396A0 002364A0  90 8D E3 74 */	stw r4, BarrelBits-_SDA_BASE_(r13)
+/* 802396A0 002364A0  90 8D E3 74 */	stw r4, BarrelBits@sda21(r13)
 /* 802396A4 002364A4  40 82 00 10 */	bne lbl_802396B4
-/* 802396A8 002364A8  80 0D E3 64 */	lwz r0, RecalibrateBits-_SDA_BASE_(r13)
+/* 802396A8 002364A8  80 0D E3 64 */	lwz r0, RecalibrateBits@sda21(r13)
 /* 802396AC 002364AC  7C 00 F3 78 */	or r0, r0, r30
-/* 802396B0 002364B0  90 0D E3 64 */	stw r0, RecalibrateBits-_SDA_BASE_(r13)
+/* 802396B0 002364B0  90 0D E3 64 */	stw r0, RecalibrateBits@sda21(r13)
 lbl_802396B4:
 /* 802396B4 002364B4  48 00 1C 91 */	bl SIDisablePolling
-/* 802396B8 002364B8  80 0D B4 AC */	lwz r0, ResettingChan-_SDA_BASE_(r13)
+/* 802396B8 002364B8  80 0D B4 AC */	lwz r0, ResettingChan@sda21(r13)
 /* 802396BC 002364BC  2C 00 00 20 */	cmpwi r0, 0x20
 /* 802396C0 002364C0  40 82 00 58 */	bne lbl_80239718
-/* 802396C4 002364C4  80 AD E3 60 */	lwz r5, ResettingBits-_SDA_BASE_(r13)
+/* 802396C4 002364C4  80 AD E3 60 */	lwz r5, ResettingBits@sda21(r13)
 /* 802396C8 002364C8  7C A0 00 34 */	cntlzw r0, r5
-/* 802396CC 002364CC  90 0D B4 AC */	stw r0, ResettingChan-_SDA_BASE_(r13)
-/* 802396D0 002364D0  80 8D B4 AC */	lwz r4, ResettingChan-_SDA_BASE_(r13)
+/* 802396CC 002364CC  90 0D B4 AC */	stw r0, ResettingChan@sda21(r13)
+/* 802396D0 002364D0  80 8D B4 AC */	lwz r4, ResettingChan@sda21(r13)
 /* 802396D4 002364D4  2C 04 00 20 */	cmpwi r4, 0x20
 /* 802396D8 002364D8  41 82 00 40 */	beq lbl_80239718
 /* 802396DC 002364DC  3C 00 80 00 */	lis r0, 0x8000
 /* 802396E0 002364E0  7C 00 24 30 */	srw r0, r0, r4
 /* 802396E4 002364E4  7C A0 00 78 */	andc r0, r5, r0
 /* 802396E8 002364E8  1C 84 00 0C */	mulli r4, r4, 0xc
-/* 802396EC 002364EC  90 0D E3 60 */	stw r0, ResettingBits-_SDA_BASE_(r13)
+/* 802396EC 002364EC  90 0D E3 60 */	stw r0, ResettingBits@sda21(r13)
 /* 802396F0 002364F0  3C 60 80 3C */	lis r3, Origin@ha
 /* 802396F4 002364F4  38 03 20 C0 */	addi r0, r3, Origin@l
 /* 802396F8 002364F8  7C 60 22 14 */	add r3, r0, r4
@@ -42966,7 +42966,7 @@ lbl_802396B4:
 /* 80239700 00236500  38 A0 00 0C */	li r5, 0xc
 /* 80239704 00236504  4B DC 99 FD */	bl memset
 /* 80239708 00236508  3C 80 80 24 */	lis r4, PADTypeAndStatusCallback@ha
-/* 8023970C 0023650C  80 6D B4 AC */	lwz r3, ResettingChan-_SDA_BASE_(r13)
+/* 8023970C 0023650C  80 6D B4 AC */	lwz r3, ResettingChan@sda21(r13)
 /* 80239710 00236510  38 84 90 AC */	addi r4, r4, PADTypeAndStatusCallback@l
 /* 80239714 00236514  48 00 24 89 */	bl SIGetTypeAsync
 lbl_80239718:
@@ -42988,22 +42988,22 @@ PADInit:
 /* 80239748 00236548  94 21 FF C8 */	stwu r1, -0x38(r1)
 /* 8023974C 0023654C  BF 21 00 1C */	stmw r25, 0x1c(r1)
 /* 80239750 00236550  3B E3 20 B0 */	addi r31, r3, Type_0@l
-/* 80239754 00236554  80 0D E3 58 */	lwz r0, Initialized-_SDA_BASE_(r13)
+/* 80239754 00236554  80 0D E3 58 */	lwz r0, Initialized@sda21(r13)
 /* 80239758 00236558  2C 00 00 00 */	cmpwi r0, 0
 /* 8023975C 0023655C  41 82 00 0C */	beq lbl_80239768
 /* 80239760 00236560  38 60 00 01 */	li r3, 1
 /* 80239764 00236564  48 00 01 14 */	b lbl_80239878
 lbl_80239768:
-/* 80239768 00236568  80 6D B4 A8 */	lwz r3, __PADVersion-_SDA_BASE_(r13)
+/* 80239768 00236568  80 6D B4 A8 */	lwz r3, __PADVersion@sda21(r13)
 /* 8023976C 0023656C  4B FF 80 5D */	bl OSRegisterVersion
-/* 80239770 00236570  80 6D E3 80 */	lwz r3, __PADSpec-_SDA_BASE_(r13)
+/* 80239770 00236570  80 6D E3 80 */	lwz r3, __PADSpec@sda21(r13)
 /* 80239774 00236574  28 03 00 00 */	cmplwi r3, 0
 /* 80239778 00236578  41 82 00 08 */	beq lbl_80239780
 /* 8023977C 0023657C  48 00 04 C9 */	bl PADSetSpec
 lbl_80239780:
-/* 80239780 00236580  80 0D E3 90 */	lwz r0, __PADFixBits-_SDA_BASE_(r13)
+/* 80239780 00236580  80 0D E3 90 */	lwz r0, __PADFixBits@sda21(r13)
 /* 80239784 00236584  38 60 00 01 */	li r3, 1
-/* 80239788 00236588  90 6D E3 58 */	stw r3, Initialized-_SDA_BASE_(r13)
+/* 80239788 00236588  90 6D E3 58 */	stw r3, Initialized@sda21(r13)
 /* 8023978C 0023658C  28 00 00 00 */	cmplwi r0, 0
 /* 80239790 00236590  41 82 00 8C */	beq lbl_8023981C
 /* 80239794 00236594  4B FF ED B9 */	bl OSGetTime
@@ -43036,7 +43036,7 @@ lbl_80239780:
 /* 80239800 00236600  7C A0 E8 14 */	addc r5, r0, r29
 /* 80239804 00236604  3C 00 F0 00 */	lis r0, 0xf000
 /* 80239808 00236608  38 80 3F FF */	li r4, 0x3fff
-/* 8023980C 0023660C  90 0D E3 64 */	stw r0, RecalibrateBits-_SDA_BASE_(r13)
+/* 8023980C 0023660C  90 0D E3 64 */	stw r0, RecalibrateBits@sda21(r13)
 /* 80239810 00236610  7C A0 20 38 */	and r0, r5, r4
 /* 80239814 00236614  3C 60 80 00 */	lis r3, 0x800030E0@ha
 /* 80239818 00236618  B0 03 30 E0 */	sth r0, 0x800030E0@l(r3)
@@ -43092,7 +43092,7 @@ PADRead:
 /* 802398CC 002366CC  3B 00 00 00 */	li r24, 0
 /* 802398D0 002366D0  3F C0 80 00 */	lis r30, 0x8000
 lbl_802398D4:
-/* 802398D4 002366D4  80 0D E3 70 */	lwz r0, PendingBits-_SDA_BASE_(r13)
+/* 802398D4 002366D4  80 0D E3 70 */	lwz r0, PendingBits@sda21(r13)
 /* 802398D8 002366D8  7F DB CC 30 */	srw r27, r30, r25
 /* 802398DC 002366DC  7C 00 D8 39 */	and. r0, r0, r27
 /* 802398E0 002366E0  41 82 00 28 */	beq lbl_80239908
@@ -43106,10 +43106,10 @@ lbl_802398D4:
 /* 80239900 00236700  4B DC 98 01 */	bl memset
 /* 80239904 00236704  48 00 02 54 */	b lbl_80239B58
 lbl_80239908:
-/* 80239908 00236708  80 0D E3 60 */	lwz r0, ResettingBits-_SDA_BASE_(r13)
+/* 80239908 00236708  80 0D E3 60 */	lwz r0, ResettingBits@sda21(r13)
 /* 8023990C 0023670C  7C 00 D8 39 */	and. r0, r0, r27
 /* 80239910 00236710  40 82 00 10 */	bne lbl_80239920
-/* 80239914 00236714  80 0D B4 AC */	lwz r0, ResettingChan-_SDA_BASE_(r13)
+/* 80239914 00236714  80 0D B4 AC */	lwz r0, ResettingChan@sda21(r13)
 /* 80239918 00236718  7C 00 C8 00 */	cmpw r0, r25
 /* 8023991C 0023671C  40 82 00 20 */	bne lbl_8023993C
 lbl_80239920:
@@ -43121,7 +43121,7 @@ lbl_80239920:
 /* 80239934 00236734  4B DC 97 CD */	bl memset
 /* 80239938 00236738  48 00 02 20 */	b lbl_80239B58
 lbl_8023993C:
-/* 8023993C 0023673C  80 0D E3 5C */	lwz r0, EnabledBits-_SDA_BASE_(r13)
+/* 8023993C 0023673C  80 0D E3 5C */	lwz r0, EnabledBits@sda21(r13)
 /* 80239940 00236740  7C 00 D8 39 */	and. r0, r0, r27
 /* 80239944 00236744  40 82 00 20 */	bne lbl_80239964
 /* 80239948 00236748  38 00 FF FF */	li r0, -1
@@ -43151,7 +43151,7 @@ lbl_80239990:
 /* 802399A0 002367A0  38 79 00 00 */	addi r3, r25, 0
 /* 802399A4 002367A4  38 81 00 10 */	addi r4, r1, 0x10
 /* 802399A8 002367A8  48 00 1A DD */	bl SIGetResponse
-/* 802399AC 002367AC  80 0D E3 68 */	lwz r0, WaitingBits-_SDA_BASE_(r13)
+/* 802399AC 002367AC  80 0D E3 68 */	lwz r0, WaitingBits@sda21(r13)
 /* 802399B0 002367B0  7C 00 D8 39 */	and. r0, r0, r27
 /* 802399B4 002367B4  41 82 00 40 */	beq lbl_802399F4
 /* 802399B8 002367B8  38 00 00 00 */	li r0, 0
@@ -43160,11 +43160,11 @@ lbl_80239990:
 /* 802399C4 002367C4  38 80 00 00 */	li r4, 0
 /* 802399C8 002367C8  38 A0 00 0A */	li r5, 0xa
 /* 802399CC 002367CC  4B DC 97 35 */	bl memset
-/* 802399D0 002367D0  80 6D E3 6C */	lwz r3, CheckingBits-_SDA_BASE_(r13)
+/* 802399D0 002367D0  80 6D E3 6C */	lwz r3, CheckingBits@sda21(r13)
 /* 802399D4 002367D4  7C 60 D8 39 */	and. r0, r3, r27
 /* 802399D8 002367D8  40 82 01 80 */	bne lbl_80239B58
 /* 802399DC 002367DC  7C 60 DB 78 */	or r0, r3, r27
-/* 802399E0 002367E0  90 0D E3 6C */	stw r0, CheckingBits-_SDA_BASE_(r13)
+/* 802399E0 002367E0  90 0D E3 6C */	stw r0, CheckingBits@sda21(r13)
 /* 802399E4 002367E4  38 79 00 00 */	addi r3, r25, 0
 /* 802399E8 002367E8  38 9F 00 00 */	addi r4, r31, 0
 /* 802399EC 002367EC  48 00 21 B1 */	bl SIGetTypeAsync
@@ -43174,24 +43174,24 @@ lbl_802399F4:
 /* 802399F8 002367F8  3B A3 00 00 */	addi r29, r3, 0
 /* 802399FC 002367FC  38 7B 00 00 */	addi r3, r27, 0
 /* 80239A00 00236800  48 00 19 45 */	bl SIDisablePolling
-/* 80239A04 00236804  80 0D E3 5C */	lwz r0, EnabledBits-_SDA_BASE_(r13)
+/* 80239A04 00236804  80 0D E3 5C */	lwz r0, EnabledBits@sda21(r13)
 /* 80239A08 00236808  7F 69 D8 F8 */	nor r9, r27, r27
-/* 80239A0C 0023680C  80 CD E3 68 */	lwz r6, WaitingBits-_SDA_BASE_(r13)
+/* 80239A0C 0023680C  80 CD E3 68 */	lwz r6, WaitingBits@sda21(r13)
 /* 80239A10 00236810  7F 23 CB 78 */	mr r3, r25
-/* 80239A14 00236814  80 AD E3 6C */	lwz r5, CheckingBits-_SDA_BASE_(r13)
-/* 80239A18 00236818  80 8D E3 70 */	lwz r4, PendingBits-_SDA_BASE_(r13)
+/* 80239A14 00236814  80 AD E3 6C */	lwz r5, CheckingBits@sda21(r13)
+/* 80239A18 00236818  80 8D E3 70 */	lwz r4, PendingBits@sda21(r13)
 /* 80239A1C 0023681C  7C 08 48 38 */	and r8, r0, r9
-/* 80239A20 00236820  80 0D E3 74 */	lwz r0, BarrelBits-_SDA_BASE_(r13)
+/* 80239A20 00236820  80 0D E3 74 */	lwz r0, BarrelBits@sda21(r13)
 /* 80239A24 00236824  7C C7 48 38 */	and r7, r6, r9
 /* 80239A28 00236828  7C A6 48 38 */	and r6, r5, r9
 /* 80239A2C 0023682C  7C 85 48 38 */	and r5, r4, r9
-/* 80239A30 00236830  91 0D E3 5C */	stw r8, EnabledBits-_SDA_BASE_(r13)
+/* 80239A30 00236830  91 0D E3 5C */	stw r8, EnabledBits@sda21(r13)
 /* 80239A34 00236834  7C 00 48 38 */	and r0, r0, r9
-/* 80239A38 00236838  90 ED E3 68 */	stw r7, WaitingBits-_SDA_BASE_(r13)
+/* 80239A38 00236838  90 ED E3 68 */	stw r7, WaitingBits@sda21(r13)
 /* 80239A3C 0023683C  38 80 00 00 */	li r4, 0
-/* 80239A40 00236840  90 CD E3 6C */	stw r6, CheckingBits-_SDA_BASE_(r13)
-/* 80239A44 00236844  90 AD E3 70 */	stw r5, PendingBits-_SDA_BASE_(r13)
-/* 80239A48 00236848  90 0D E3 74 */	stw r0, BarrelBits-_SDA_BASE_(r13)
+/* 80239A40 00236840  90 CD E3 6C */	stw r6, CheckingBits@sda21(r13)
+/* 80239A44 00236844  90 AD E3 70 */	stw r5, PendingBits@sda21(r13)
+/* 80239A48 00236848  90 0D E3 74 */	stw r0, BarrelBits@sda21(r13)
 /* 80239A4C 0023684C  4B FF CC A5 */	bl OSSetWirelessID
 /* 80239A50 00236850  7F A3 EB 78 */	mr r3, r29
 /* 80239A54 00236854  4B FF A9 9D */	bl OSRestoreInterrupts
@@ -43233,7 +43233,7 @@ lbl_80239AB8:
 /* 80239AD8 002368D8  4B DC 96 29 */	bl memset
 /* 80239ADC 002368DC  48 00 00 7C */	b lbl_80239B58
 lbl_80239AE0:
-/* 80239AE0 002368E0  81 8D B4 BC */	lwz r12, MakeStatus-_SDA_BASE_(r13)
+/* 80239AE0 002368E0  81 8D B4 BC */	lwz r12, MakeStatus@sda21(r13)
 /* 80239AE4 002368E4  38 79 00 00 */	addi r3, r25, 0
 /* 80239AE8 002368E8  38 97 00 00 */	addi r4, r23, 0
 /* 80239AEC 002368EC  7D 88 03 A6 */	mtlr r12
@@ -43251,7 +43251,7 @@ lbl_80239AE0:
 /* 80239B1C 0023691C  38 79 00 00 */	addi r3, r25, 0
 /* 80239B20 00236920  38 DC 00 00 */	addi r6, r28, 0
 /* 80239B24 00236924  39 16 00 00 */	addi r8, r22, 0
-/* 80239B28 00236928  38 8D B4 C0 */	addi r4, r13, CmdReadOrigin-_SDA_BASE_
+/* 80239B28 00236928  38 8D B4 C0 */	addi r4, r13, CmdReadOrigin@sda21
 /* 80239B2C 0023692C  38 A0 00 01 */	li r5, 1
 /* 80239B30 00236930  38 E0 00 0A */	li r7, 0xa
 /* 80239B34 00236934  39 40 00 00 */	li r10, 0
@@ -43291,7 +43291,7 @@ PADControlMotor:
 /* 80239BA8 002369A8  3B A3 00 00 */	addi r29, r3, 0
 /* 80239BAC 002369AC  4B FF A8 1D */	bl OSDisableInterrupts
 /* 80239BB0 002369B0  3C 00 80 00 */	lis r0, 0x8000
-/* 80239BB4 002369B4  80 8D E3 5C */	lwz r4, EnabledBits-_SDA_BASE_(r13)
+/* 80239BB4 002369B4  80 8D E3 5C */	lwz r4, EnabledBits@sda21(r13)
 /* 80239BB8 002369B8  7C 00 EC 30 */	srw r0, r0, r29
 /* 80239BBC 002369BC  7C 80 00 39 */	and. r0, r4, r0
 /* 80239BC0 002369C0  3B E3 00 00 */	addi r31, r3, 0
@@ -43300,7 +43300,7 @@ PADControlMotor:
 /* 80239BCC 002369CC  48 00 1E 0D */	bl SIGetType
 /* 80239BD0 002369D0  54 60 00 85 */	rlwinm. r0, r3, 0, 2, 2
 /* 80239BD4 002369D4  40 82 00 4C */	bne lbl_80239C20
-/* 80239BD8 002369D8  80 0D B4 B8 */	lwz r0, Spec-_SDA_BASE_(r13)
+/* 80239BD8 002369D8  80 0D B4 B8 */	lwz r0, Spec@sda21(r13)
 /* 80239BDC 002369DC  28 00 00 02 */	cmplwi r0, 2
 /* 80239BE0 002369E0  40 80 00 10 */	bge lbl_80239BF0
 /* 80239BE4 002369E4  28 1E 00 02 */	cmplwi r30, 2
@@ -43313,7 +43313,7 @@ lbl_80239BF0:
 /* 80239BFC 002369FC  41 82 00 08 */	beq lbl_80239C04
 /* 80239C00 00236A00  3B C0 00 00 */	li r30, 0
 lbl_80239C04:
-/* 80239C04 00236A04  80 8D B4 B4 */	lwz r4, AnalogMode-_SDA_BASE_(r13)
+/* 80239C04 00236A04  80 8D B4 B4 */	lwz r4, AnalogMode@sda21(r13)
 /* 80239C08 00236A08  57 C0 07 BE */	clrlwi r0, r30, 0x1e
 /* 80239C0C 00236A0C  38 7D 00 00 */	addi r3, r29, 0
 /* 80239C10 00236A10  64 84 00 40 */	oris r4, r4, 0x40
@@ -43335,7 +43335,7 @@ lbl_80239C20:
 PADSetSpec:
 /* 80239C44 00236A44  38 00 00 00 */	li r0, 0
 /* 80239C48 00236A48  2C 03 00 01 */	cmpwi r3, 1
-/* 80239C4C 00236A4C  90 0D E3 80 */	stw r0, __PADSpec-_SDA_BASE_(r13)
+/* 80239C4C 00236A4C  90 0D E3 80 */	stw r0, __PADSpec@sda21(r13)
 /* 80239C50 00236A50  41 82 00 30 */	beq lbl_80239C80
 /* 80239C54 00236A54  40 80 00 10 */	bge lbl_80239C64
 /* 80239C58 00236A58  2C 03 00 00 */	cmpwi r3, 0
@@ -43348,19 +43348,19 @@ lbl_80239C64:
 lbl_80239C70:
 /* 80239C70 00236A70  3C 80 80 24 */	lis r4, SPEC0_MakeStatus@ha
 /* 80239C74 00236A74  38 04 9C A4 */	addi r0, r4, SPEC0_MakeStatus@l
-/* 80239C78 00236A78  90 0D B4 BC */	stw r0, MakeStatus-_SDA_BASE_(r13)
+/* 80239C78 00236A78  90 0D B4 BC */	stw r0, MakeStatus@sda21(r13)
 /* 80239C7C 00236A7C  48 00 00 20 */	b lbl_80239C9C
 lbl_80239C80:
 /* 80239C80 00236A80  3C 80 80 24 */	lis r4, SPEC1_MakeStatus@ha
 /* 80239C84 00236A84  38 04 9E 18 */	addi r0, r4, SPEC1_MakeStatus@l
-/* 80239C88 00236A88  90 0D B4 BC */	stw r0, MakeStatus-_SDA_BASE_(r13)
+/* 80239C88 00236A88  90 0D B4 BC */	stw r0, MakeStatus@sda21(r13)
 /* 80239C8C 00236A8C  48 00 00 10 */	b lbl_80239C9C
 lbl_80239C90:
 /* 80239C90 00236A90  3C 80 80 24 */	lis r4, SPEC2_MakeStatus@ha
 /* 80239C94 00236A94  38 04 9F 8C */	addi r0, r4, SPEC2_MakeStatus@l
-/* 80239C98 00236A98  90 0D B4 BC */	stw r0, MakeStatus-_SDA_BASE_(r13)
+/* 80239C98 00236A98  90 0D B4 BC */	stw r0, MakeStatus@sda21(r13)
 lbl_80239C9C:
-/* 80239C9C 00236A9C  90 6D B4 B8 */	stw r3, Spec-_SDA_BASE_(r13)
+/* 80239C9C 00236A9C  90 6D B4 B8 */	stw r3, Spec@sda21(r13)
 /* 80239CA0 00236AA0  4E 80 00 20 */	blr 
 
 .global SPEC0_MakeStatus
@@ -43589,7 +43589,7 @@ SPEC2_MakeStatus:
 /* 80239FA8 00236DA8  80 05 00 00 */	lwz r0, 0(r5)
 /* 80239FAC 00236DAC  7C 00 07 74 */	extsb r0, r0
 /* 80239FB0 00236DB0  98 04 00 03 */	stb r0, 3(r4)
-/* 80239FB4 00236DB4  80 0D B4 B4 */	lwz r0, AnalogMode-_SDA_BASE_(r13)
+/* 80239FB4 00236DB4  80 0D B4 B4 */	lwz r0, AnalogMode@sda21(r13)
 /* 80239FB8 00236DB8  54 00 05 6E */	rlwinm r0, r0, 0, 0x15, 0x17
 /* 80239FBC 00236DBC  2C 00 04 00 */	cmpwi r0, 0x400
 /* 80239FC0 00236DC0  41 82 01 98 */	beq lbl_8023A158
@@ -43746,10 +43746,10 @@ lbl_8023A198:
 /* 8023A1F8 00236FF8  2C 00 00 00 */	cmpwi r0, 0
 /* 8023A1FC 00236FFC  41 82 00 30 */	beq lbl_8023A22C
 /* 8023A200 00237000  3C 00 80 00 */	lis r0, 0x8000
-/* 8023A204 00237004  80 AD E3 74 */	lwz r5, BarrelBits-_SDA_BASE_(r13)
+/* 8023A204 00237004  80 AD E3 74 */	lwz r5, BarrelBits@sda21(r13)
 /* 8023A208 00237008  7C 00 1C 30 */	srw r0, r0, r3
 /* 8023A20C 0023700C  7C A0 03 78 */	or r0, r5, r0
-/* 8023A210 00237010  90 0D E3 74 */	stw r0, BarrelBits-_SDA_BASE_(r13)
+/* 8023A210 00237010  90 0D E3 74 */	stw r0, BarrelBits@sda21(r13)
 /* 8023A214 00237014  38 00 00 00 */	li r0, 0
 /* 8023A218 00237018  98 04 00 02 */	stb r0, 2(r4)
 /* 8023A21C 0023701C  98 04 00 03 */	stb r0, 3(r4)
@@ -43758,10 +43758,10 @@ lbl_8023A198:
 /* 8023A228 00237028  4E 80 00 20 */	blr 
 lbl_8023A22C:
 /* 8023A22C 0023702C  3C 00 80 00 */	lis r0, 0x8000
-/* 8023A230 00237030  80 AD E3 74 */	lwz r5, BarrelBits-_SDA_BASE_(r13)
+/* 8023A230 00237030  80 AD E3 74 */	lwz r5, BarrelBits@sda21(r13)
 /* 8023A234 00237034  7C 00 1C 30 */	srw r0, r0, r3
 /* 8023A238 00237038  7C A0 00 78 */	andc r0, r5, r0
-/* 8023A23C 0023703C  90 0D E3 74 */	stw r0, BarrelBits-_SDA_BASE_(r13)
+/* 8023A23C 0023703C  90 0D E3 74 */	stw r0, BarrelBits@sda21(r13)
 /* 8023A240 00237040  3C A0 80 3C */	lis r5, Origin@ha
 /* 8023A244 00237044  1C 63 00 0C */	mulli r3, r3, 0xc
 /* 8023A248 00237048  88 C4 00 02 */	lbz r6, 2(r4)
@@ -43891,7 +43891,7 @@ OnReset_2:
 /* 8023A404 00237204  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8023A408 00237208  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8023A40C 0023720C  3B E3 00 00 */	addi r31, r3, 0
-/* 8023A410 00237210  80 0D E3 78 */	lwz r0, SamplingCallback-_SDA_BASE_(r13)
+/* 8023A410 00237210  80 0D E3 78 */	lwz r0, SamplingCallback@sda21(r13)
 /* 8023A414 00237214  28 00 00 00 */	cmplwi r0, 0
 /* 8023A418 00237218  41 82 00 0C */	beq lbl_8023A424
 /* 8023A41C 0023721C  38 60 00 00 */	li r3, 0
@@ -43899,12 +43899,12 @@ OnReset_2:
 lbl_8023A424:
 /* 8023A424 00237224  2C 1F 00 00 */	cmpwi r31, 0
 /* 8023A428 00237228  40 82 00 70 */	bne lbl_8023A498
-/* 8023A42C 0023722C  80 0D E3 60 */	lwz r0, ResettingBits-_SDA_BASE_(r13)
+/* 8023A42C 0023722C  80 0D E3 60 */	lwz r0, ResettingBits@sda21(r13)
 /* 8023A430 00237230  3B E0 00 00 */	li r31, 0
 /* 8023A434 00237234  38 7F 00 00 */	addi r3, r31, 0
 /* 8023A438 00237238  28 00 00 00 */	cmplwi r0, 0
 /* 8023A43C 0023723C  40 82 00 14 */	bne lbl_8023A450
-/* 8023A440 00237240  80 0D B4 AC */	lwz r0, ResettingChan-_SDA_BASE_(r13)
+/* 8023A440 00237240  80 0D B4 AC */	lwz r0, ResettingChan@sda21(r13)
 /* 8023A444 00237244  2C 00 00 20 */	cmpwi r0, 0x20
 /* 8023A448 00237248  40 82 00 08 */	bne lbl_8023A450
 /* 8023A44C 0023724C  38 60 00 01 */	li r3, 1
@@ -43916,14 +43916,14 @@ lbl_8023A450:
 /* 8023A460 00237260  40 82 00 08 */	bne lbl_8023A468
 /* 8023A464 00237264  3B E0 00 01 */	li r31, 1
 lbl_8023A468:
-/* 8023A468 00237268  80 0D E3 7C */	lwz r0, recalibrated_esc__7_388-_SDA_BASE_(r13)
+/* 8023A468 00237268  80 0D E3 7C */	lwz r0, recalibrated_esc__7_388@sda21(r13)
 /* 8023A46C 0023726C  2C 00 00 00 */	cmpwi r0, 0
 /* 8023A470 00237270  40 82 00 20 */	bne lbl_8023A490
 /* 8023A474 00237274  2C 1F 00 00 */	cmpwi r31, 0
 /* 8023A478 00237278  41 82 00 18 */	beq lbl_8023A490
 /* 8023A47C 0023727C  3C 60 F0 00 */	lis r3, 0xf000
 /* 8023A480 00237280  4B FF F1 A9 */	bl PADRecalibrate
-/* 8023A484 00237284  90 6D E3 7C */	stw r3, recalibrated_esc__7_388-_SDA_BASE_(r13)
+/* 8023A484 00237284  90 6D E3 7C */	stw r3, recalibrated_esc__7_388@sda21(r13)
 /* 8023A488 00237288  38 60 00 00 */	li r3, 0
 /* 8023A48C 0023728C  48 00 00 18 */	b lbl_8023A4A4
 lbl_8023A490:
@@ -43931,7 +43931,7 @@ lbl_8023A490:
 /* 8023A494 00237294  48 00 00 10 */	b lbl_8023A4A4
 lbl_8023A498:
 /* 8023A498 00237298  38 00 00 00 */	li r0, 0
-/* 8023A49C 0023729C  90 0D E3 7C */	stw r0, recalibrated_esc__7_388-_SDA_BASE_(r13)
+/* 8023A49C 0023729C  90 0D E3 7C */	stw r0, recalibrated_esc__7_388@sda21(r13)
 /* 8023A4A0 002372A0  38 60 00 01 */	li r3, 1
 lbl_8023A4A4:
 /* 8023A4A4 002372A4  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -43947,14 +43947,14 @@ SamplingHandler:
 /* 8023A4C0 002372C0  94 21 FD 20 */	stwu r1, -0x2e0(r1)
 /* 8023A4C4 002372C4  93 E1 02 DC */	stw r31, 0x2dc(r1)
 /* 8023A4C8 002372C8  3B E4 00 00 */	addi r31, r4, 0
-/* 8023A4CC 002372CC  80 0D E3 78 */	lwz r0, SamplingCallback-_SDA_BASE_(r13)
+/* 8023A4CC 002372CC  80 0D E3 78 */	lwz r0, SamplingCallback@sda21(r13)
 /* 8023A4D0 002372D0  28 00 00 00 */	cmplwi r0, 0
 /* 8023A4D4 002372D4  41 82 00 30 */	beq lbl_8023A504
 /* 8023A4D8 002372D8  38 61 00 10 */	addi r3, r1, 0x10
 /* 8023A4DC 002372DC  4B FF 89 C1 */	bl OSClearContext
 /* 8023A4E0 002372E0  38 61 00 10 */	addi r3, r1, 0x10
 /* 8023A4E4 002372E4  4B FF 87 F1 */	bl OSSetCurrentContext
-/* 8023A4E8 002372E8  81 8D E3 78 */	lwz r12, SamplingCallback-_SDA_BASE_(r13)
+/* 8023A4E8 002372E8  81 8D E3 78 */	lwz r12, SamplingCallback@sda21(r13)
 /* 8023A4EC 002372EC  7D 88 03 A6 */	mtlr r12
 /* 8023A4F0 002372F0  4E 80 00 21 */	blrl 
 /* 8023A4F4 002372F4  38 61 00 10 */	addi r3, r1, 0x10
@@ -43975,8 +43975,8 @@ PADSetSamplingCallback:
 /* 8023A520 00237320  90 01 00 04 */	stw r0, 4(r1)
 /* 8023A524 00237324  94 21 FF E8 */	stwu r1, -0x18(r1)
 /* 8023A528 00237328  93 E1 00 14 */	stw r31, 0x14(r1)
-/* 8023A52C 0023732C  83 ED E3 78 */	lwz r31, SamplingCallback-_SDA_BASE_(r13)
-/* 8023A530 00237330  90 6D E3 78 */	stw r3, SamplingCallback-_SDA_BASE_(r13)
+/* 8023A52C 0023732C  83 ED E3 78 */	lwz r31, SamplingCallback@sda21(r13)
+/* 8023A530 00237330  90 6D E3 78 */	stw r3, SamplingCallback@sda21(r13)
 /* 8023A534 00237334  41 82 00 14 */	beq lbl_8023A548
 /* 8023A538 00237338  3C 60 80 24 */	lis r3, SamplingHandler@ha
 /* 8023A53C 0023733C  38 63 A4 B8 */	addi r3, r3, SamplingHandler@l
@@ -44384,7 +44384,7 @@ lbl_8023AAB4:
 /* 8023AAE0 002378E0  39 04 B7 40 */	addi r8, r4, GetTypeCallback@l
 /* 8023AAE4 002378E4  54 0A E8 FE */	srwi r10, r0, 3
 /* 8023AAE8 002378E8  38 77 00 00 */	addi r3, r23, 0
-/* 8023AAEC 002378EC  38 8D E3 88 */	addi r4, r13, cmdTypeAndStatus_esc__7_78-_SDA_BASE_
+/* 8023AAEC 002378EC  38 8D E3 88 */	addi r4, r13, cmdTypeAndStatus_esc__7_78@sda21
 /* 8023AAF0 002378F0  38 A0 00 01 */	li r5, 1
 /* 8023AAF4 002378F4  38 E0 00 03 */	li r7, 3
 /* 8023AAF8 002378F8  39 20 00 00 */	li r9, 0
@@ -44678,7 +44678,7 @@ SIInit:
 /* 8023AEE8 00237CE8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023AEEC 00237CEC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8023AEF0 00237CF0  3B E4 21 00 */	addi r31, r4, Packet@l
-/* 8023AEF4 00237CF4  80 6D B4 C8 */	lwz r3, __SIVersion-_SDA_BASE_(r13)
+/* 8023AEF4 00237CF4  80 6D B4 C8 */	lwz r3, __SIVersion@sda21(r13)
 /* 8023AEF8 00237CF8  4B FF 68 D1 */	bl OSRegisterVersion
 /* 8023AEFC 00237CFC  38 A0 FF FF */	li r5, -1
 /* 8023AF00 00237D00  90 BF 00 60 */	stw r5, 0x60(r31)
@@ -45303,10 +45303,10 @@ GetTypeCallback:
 /* 8023B79C 0023859C  57 40 07 3F */	clrlwi. r0, r26, 0x1c
 /* 8023B7A0 002385A0  90 65 01 20 */	stw r3, 0x120(r5)
 /* 8023B7A4 002385A4  7C 84 DC 30 */	srw r4, r4, r27
-/* 8023B7A8 002385A8  80 6D E3 90 */	lwz r3, __PADFixBits-_SDA_BASE_(r13)
+/* 8023B7A8 002385A8  80 6D E3 90 */	lwz r3, __PADFixBits@sda21(r13)
 /* 8023B7AC 002385AC  83 9E 00 00 */	lwz r28, 0(r30)
 /* 8023B7B0 002385B0  7C 60 20 78 */	andc r0, r3, r4
-/* 8023B7B4 002385B4  90 0D E3 90 */	stw r0, __PADFixBits-_SDA_BASE_(r13)
+/* 8023B7B4 002385B4  90 0D E3 90 */	stw r0, __PADFixBits@sda21(r13)
 /* 8023B7B8 002385B8  7C 7A 20 38 */	and r26, r3, r4
 /* 8023B7BC 002385BC  40 82 00 24 */	bne lbl_8023B7E0
 /* 8023B7C0 002385C0  57 83 00 C8 */	rlwinm r3, r28, 0, 3, 4
@@ -45563,7 +45563,7 @@ lbl_8023BB28:
 /* 8023BB5C 0023895C  1C 00 00 41 */	mulli r0, r0, 0x41
 /* 8023BB60 00238960  54 0A E8 FE */	srwi r10, r0, 3
 /* 8023BB64 00238964  38 DE 00 00 */	addi r6, r30, 0
-/* 8023BB68 00238968  38 8D E3 8C */	addi r4, r13, cmdTypeAndStatus_esc__7_372-_SDA_BASE_
+/* 8023BB68 00238968  38 8D E3 8C */	addi r4, r13, cmdTypeAndStatus_esc__7_372@sda21
 /* 8023BB6C 0023896C  38 A0 00 01 */	li r5, 1
 /* 8023BB70 00238970  38 E0 00 03 */	li r7, 3
 /* 8023BB74 00238974  39 20 00 00 */	li r9, 0
@@ -45681,7 +45681,7 @@ SISetSamplingRate:
 /* 8023BD04 00238B04  3B A0 00 0B */	li r29, 0xb
 lbl_8023BD08:
 /* 8023BD08 00238B08  4B FF 86 C1 */	bl OSDisableInterrupts
-/* 8023BD0C 00238B0C  93 AD E3 98 */	stw r29, SamplingRate-_SDA_BASE_(r13)
+/* 8023BD0C 00238B0C  93 AD E3 98 */	stw r29, SamplingRate@sda21(r13)
 /* 8023BD10 00238B10  7C 7E 1B 78 */	mr r30, r3
 /* 8023BD14 00238B14  48 00 1B F9 */	bl VIGetTvFormat
 /* 8023BD18 00238B18  2C 03 00 02 */	cmpwi r3, 2
@@ -45738,7 +45738,7 @@ SIRefreshSamplingRate:
 /* 8023BDBC 00238BBC  7C 08 02 A6 */	mflr r0
 /* 8023BDC0 00238BC0  90 01 00 04 */	stw r0, 4(r1)
 /* 8023BDC4 00238BC4  94 21 FF F8 */	stwu r1, -8(r1)
-/* 8023BDC8 00238BC8  80 6D E3 98 */	lwz r3, SamplingRate-_SDA_BASE_(r13)
+/* 8023BDC8 00238BC8  80 6D E3 98 */	lwz r3, SamplingRate@sda21(r13)
 /* 8023BDCC 00238BCC  4B FF FF 0D */	bl SISetSamplingRate
 /* 8023BDD0 00238BD0  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 8023BDD4 00238BD4  38 21 00 08 */	addi r1, r1, 8
@@ -45797,13 +45797,13 @@ lbl_8023BE84:
 /* 8023BE88 00238C88  4B FF 70 15 */	bl OSClearContext
 /* 8023BE8C 00238C8C  38 61 00 18 */	addi r3, r1, 0x18
 /* 8023BE90 00238C90  4B FF 6E 45 */	bl OSSetCurrentContext
-/* 8023BE94 00238C94  80 0D E3 BC */	lwz r0, PositionCallback-_SDA_BASE_(r13)
+/* 8023BE94 00238C94  80 0D E3 BC */	lwz r0, PositionCallback@sda21(r13)
 /* 8023BE98 00238C98  28 00 00 00 */	cmplwi r0, 0
 /* 8023BE9C 00238C9C  41 82 00 24 */	beq lbl_8023BEC0
 /* 8023BEA0 00238CA0  38 61 00 16 */	addi r3, r1, 0x16
 /* 8023BEA4 00238CA4  38 81 00 14 */	addi r4, r1, 0x14
 /* 8023BEA8 00238CA8  48 00 1C E9 */	bl __VIGetCurrentPosition
-/* 8023BEAC 00238CAC  81 8D E3 BC */	lwz r12, PositionCallback-_SDA_BASE_(r13)
+/* 8023BEAC 00238CAC  81 8D E3 BC */	lwz r12, PositionCallback@sda21(r13)
 /* 8023BEB0 00238CB0  A8 61 00 16 */	lha r3, 0x16(r1)
 /* 8023BEB4 00238CB4  7D 88 03 A6 */	mtlr r12
 /* 8023BEB8 00238CB8  A8 81 00 14 */	lha r4, 0x14(r1)
@@ -45815,24 +45815,24 @@ lbl_8023BEC0:
 /* 8023BECC 00238CCC  4B FF 6E 09 */	bl OSSetCurrentContext
 /* 8023BED0 00238CD0  48 00 01 70 */	b lbl_8023C040
 lbl_8023BED4:
-/* 8023BED4 00238CD4  80 8D E3 A4 */	lwz r4, retraceCount-_SDA_BASE_(r13)
+/* 8023BED4 00238CD4  80 8D E3 A4 */	lwz r4, retraceCount@sda21(r13)
 /* 8023BED8 00238CD8  38 61 00 18 */	addi r3, r1, 0x18
 /* 8023BEDC 00238CDC  38 04 00 01 */	addi r0, r4, 1
-/* 8023BEE0 00238CE0  90 0D E3 A4 */	stw r0, retraceCount-_SDA_BASE_(r13)
+/* 8023BEE0 00238CE0  90 0D E3 A4 */	stw r0, retraceCount@sda21(r13)
 /* 8023BEE4 00238CE4  4B FF 6F B9 */	bl OSClearContext
 /* 8023BEE8 00238CE8  38 61 00 18 */	addi r3, r1, 0x18
 /* 8023BEEC 00238CEC  4B FF 6D E9 */	bl OSSetCurrentContext
-/* 8023BEF0 00238CF0  81 8D E3 B4 */	lwz r12, PreCB-_SDA_BASE_(r13)
+/* 8023BEF0 00238CF0  81 8D E3 B4 */	lwz r12, PreCB@sda21(r13)
 /* 8023BEF4 00238CF4  28 0C 00 00 */	cmplwi r12, 0
 /* 8023BEF8 00238CF8  41 82 00 10 */	beq lbl_8023BF08
-/* 8023BEFC 00238CFC  80 6D E3 A4 */	lwz r3, retraceCount-_SDA_BASE_(r13)
+/* 8023BEFC 00238CFC  80 6D E3 A4 */	lwz r3, retraceCount@sda21(r13)
 /* 8023BF00 00238D00  7D 88 03 A6 */	mtlr r12
 /* 8023BF04 00238D04  4E 80 00 21 */	blrl 
 lbl_8023BF08:
-/* 8023BF08 00238D08  80 0D E3 A8 */	lwz r0, flushFlag-_SDA_BASE_(r13)
+/* 8023BF08 00238D08  80 0D E3 A8 */	lwz r0, flushFlag@sda21(r13)
 /* 8023BF0C 00238D0C  28 00 00 00 */	cmplwi r0, 0
 /* 8023BF10 00238D10  41 82 00 F4 */	beq lbl_8023C004
-/* 8023BF14 00238D14  80 0D E3 D8 */	lwz r0, shdwChangeMode-_SDA_BASE_(r13)
+/* 8023BF14 00238D14  80 0D E3 D8 */	lwz r0, shdwChangeMode@sda21(r13)
 /* 8023BF18 00238D18  28 00 00 01 */	cmplwi r0, 1
 /* 8023BF1C 00238D1C  40 82 00 10 */	bne lbl_8023BF2C
 /* 8023BF20 00238D20  48 00 18 51 */	bl getCurrentFieldEvenOdd
@@ -45843,9 +45843,9 @@ lbl_8023BF2C:
 /* 8023BF30 00238D30  3B A3 20 00 */	addi r29, r3, 0xCC002000@l
 /* 8023BF34 00238D34  48 00 00 78 */	b lbl_8023BFAC
 lbl_8023BF38:
-/* 8023BF38 00238D38  80 6D E3 E0 */	lwz r3, shdwChanged-_SDA_BASE_(r13)
+/* 8023BF38 00238D38  80 6D E3 E0 */	lwz r3, shdwChanged@sda21(r13)
 /* 8023BF3C 00238D3C  38 A0 00 20 */	li r5, 0x20
-/* 8023BF40 00238D40  83 6D E3 E4 */	lwz r27, lbl_803D1864-_SDA_BASE_(r13)
+/* 8023BF40 00238D40  83 6D E3 E4 */	lwz r27, lbl_803D1864@sda21(r13)
 /* 8023BF44 00238D44  38 9B 00 00 */	addi r4, r27, 0
 /* 8023BF48 00238D48  4B FB F4 71 */	bl __shr2u
 /* 8023BF4C 00238D4C  7C 84 00 34 */	cntlzw r4, r4
@@ -45866,30 +45866,30 @@ lbl_8023BF6C:
 /* 8023BF80 00238D80  7C 1D 33 2E */	sthx r0, r29, r6
 /* 8023BF84 00238D84  38 80 00 01 */	li r4, 1
 /* 8023BF88 00238D88  4B FB F4 0D */	bl __shl2i
-/* 8023BF8C 00238D8C  80 0D E3 E0 */	lwz r0, shdwChanged-_SDA_BASE_(r13)
+/* 8023BF8C 00238D8C  80 0D E3 E0 */	lwz r0, shdwChanged@sda21(r13)
 /* 8023BF90 00238D90  7C 65 18 F8 */	nor r5, r3, r3
 /* 8023BF94 00238D94  7C 84 20 F8 */	nor r4, r4, r4
-/* 8023BF98 00238D98  80 6D E3 E4 */	lwz r3, lbl_803D1864-_SDA_BASE_(r13)
+/* 8023BF98 00238D98  80 6D E3 E4 */	lwz r3, lbl_803D1864@sda21(r13)
 /* 8023BF9C 00238D9C  7C 00 28 38 */	and r0, r0, r5
 /* 8023BFA0 00238DA0  7C 63 20 38 */	and r3, r3, r4
-/* 8023BFA4 00238DA4  90 6D E3 E4 */	stw r3, lbl_803D1864-_SDA_BASE_(r13)
-/* 8023BFA8 00238DA8  90 0D E3 E0 */	stw r0, shdwChanged-_SDA_BASE_(r13)
+/* 8023BFA4 00238DA4  90 6D E3 E4 */	stw r3, lbl_803D1864@sda21(r13)
+/* 8023BFA8 00238DA8  90 0D E3 E0 */	stw r0, shdwChanged@sda21(r13)
 lbl_8023BFAC:
-/* 8023BFAC 00238DAC  80 0D E3 E0 */	lwz r0, shdwChanged-_SDA_BASE_(r13)
+/* 8023BFAC 00238DAC  80 0D E3 E0 */	lwz r0, shdwChanged@sda21(r13)
 /* 8023BFB0 00238DB0  38 80 00 00 */	li r4, 0
-/* 8023BFB4 00238DB4  80 6D E3 E4 */	lwz r3, lbl_803D1864-_SDA_BASE_(r13)
+/* 8023BFB4 00238DB4  80 6D E3 E4 */	lwz r3, lbl_803D1864@sda21(r13)
 /* 8023BFB8 00238DB8  7C 00 22 78 */	xor r0, r0, r4
 /* 8023BFBC 00238DBC  7C 63 22 78 */	xor r3, r3, r4
 /* 8023BFC0 00238DC0  7C 60 03 79 */	or. r0, r3, r0
 /* 8023BFC4 00238DC4  40 82 FF 74 */	bne lbl_8023BF38
-/* 8023BFC8 00238DC8  90 8D E3 D8 */	stw r4, shdwChangeMode-_SDA_BASE_(r13)
+/* 8023BFC8 00238DC8  90 8D E3 D8 */	stw r4, shdwChangeMode@sda21(r13)
 /* 8023BFCC 00238DCC  38 80 00 01 */	li r4, 1
-/* 8023BFD0 00238DD0  80 0D E3 F0 */	lwz r0, NextBufAddr-_SDA_BASE_(r13)
+/* 8023BFD0 00238DD0  80 0D E3 F0 */	lwz r0, NextBufAddr@sda21(r13)
 /* 8023BFD4 00238DD4  80 7F 01 44 */	lwz r3, 0x144(r31)
-/* 8023BFD8 00238DD8  90 6D E3 E8 */	stw r3, CurrTiming-_SDA_BASE_(r13)
+/* 8023BFD8 00238DD8  90 6D E3 E8 */	stw r3, CurrTiming@sda21(r13)
 /* 8023BFDC 00238DDC  80 7F 01 18 */	lwz r3, 0x118(r31)
-/* 8023BFE0 00238DE0  90 6D E3 EC */	stw r3, CurrTvMode-_SDA_BASE_(r13)
-/* 8023BFE4 00238DE4  90 0D E3 F4 */	stw r0, CurrBufAddr-_SDA_BASE_(r13)
+/* 8023BFE0 00238DE0  90 6D E3 EC */	stw r3, CurrTvMode@sda21(r13)
+/* 8023BFE4 00238DE4  90 0D E3 F4 */	stw r0, CurrBufAddr@sda21(r13)
 /* 8023BFE8 00238DE8  48 00 00 08 */	b lbl_8023BFF0
 lbl_8023BFEC:
 /* 8023BFEC 00238DEC  38 80 00 00 */	li r4, 0
@@ -45897,20 +45897,20 @@ lbl_8023BFF0:
 /* 8023BFF0 00238DF0  2C 04 00 00 */	cmpwi r4, 0
 /* 8023BFF4 00238DF4  41 82 00 10 */	beq lbl_8023C004
 /* 8023BFF8 00238DF8  38 00 00 00 */	li r0, 0
-/* 8023BFFC 00238DFC  90 0D E3 A8 */	stw r0, flushFlag-_SDA_BASE_(r13)
+/* 8023BFFC 00238DFC  90 0D E3 A8 */	stw r0, flushFlag@sda21(r13)
 /* 8023C000 00238E00  4B FF FD BD */	bl SIRefreshSamplingRate
 lbl_8023C004:
-/* 8023C004 00238E04  80 0D E3 B8 */	lwz r0, PostCB-_SDA_BASE_(r13)
+/* 8023C004 00238E04  80 0D E3 B8 */	lwz r0, PostCB@sda21(r13)
 /* 8023C008 00238E08  28 00 00 00 */	cmplwi r0, 0
 /* 8023C00C 00238E0C  41 82 00 1C */	beq lbl_8023C028
 /* 8023C010 00238E10  38 61 00 18 */	addi r3, r1, 0x18
 /* 8023C014 00238E14  4B FF 6E 89 */	bl OSClearContext
-/* 8023C018 00238E18  81 8D E3 B8 */	lwz r12, PostCB-_SDA_BASE_(r13)
-/* 8023C01C 00238E1C  80 6D E3 A4 */	lwz r3, retraceCount-_SDA_BASE_(r13)
+/* 8023C018 00238E18  81 8D E3 B8 */	lwz r12, PostCB@sda21(r13)
+/* 8023C01C 00238E1C  80 6D E3 A4 */	lwz r3, retraceCount@sda21(r13)
 /* 8023C020 00238E20  7D 88 03 A6 */	mtlr r12
 /* 8023C024 00238E24  4E 80 00 21 */	blrl 
 lbl_8023C028:
-/* 8023C028 00238E28  38 6D E3 AC */	addi r3, r13, retraceQueue-_SDA_BASE_
+/* 8023C028 00238E28  38 6D E3 AC */	addi r3, r13, retraceQueue@sda21
 /* 8023C02C 00238E2C  4B FF BA BD */	bl OSWakeupThread
 /* 8023C030 00238E30  38 61 00 18 */	addi r3, r1, 0x18
 /* 8023C034 00238E34  4B FF 6E 69 */	bl OSClearContext
@@ -45931,9 +45931,9 @@ VISetPreRetraceCallback:
 /* 8023C060 00238E60  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 8023C064 00238E64  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 8023C068 00238E68  7C 7E 1B 78 */	mr r30, r3
-/* 8023C06C 00238E6C  83 ED E3 B4 */	lwz r31, PreCB-_SDA_BASE_(r13)
+/* 8023C06C 00238E6C  83 ED E3 B4 */	lwz r31, PreCB@sda21(r13)
 /* 8023C070 00238E70  4B FF 83 59 */	bl OSDisableInterrupts
-/* 8023C074 00238E74  93 CD E3 B4 */	stw r30, PreCB-_SDA_BASE_(r13)
+/* 8023C074 00238E74  93 CD E3 B4 */	stw r30, PreCB@sda21(r13)
 /* 8023C078 00238E78  4B FF 83 79 */	bl OSRestoreInterrupts
 /* 8023C07C 00238E7C  7F E3 FB 78 */	mr r3, r31
 /* 8023C080 00238E80  80 01 00 1C */	lwz r0, 0x1c(r1)
@@ -45951,9 +45951,9 @@ VISetPostRetraceCallback:
 /* 8023C0A4 00238EA4  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 8023C0A8 00238EA8  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 8023C0AC 00238EAC  7C 7E 1B 78 */	mr r30, r3
-/* 8023C0B0 00238EB0  83 ED E3 B8 */	lwz r31, PostCB-_SDA_BASE_(r13)
+/* 8023C0B0 00238EB0  83 ED E3 B8 */	lwz r31, PostCB@sda21(r13)
 /* 8023C0B4 00238EB4  4B FF 83 15 */	bl OSDisableInterrupts
-/* 8023C0B8 00238EB8  93 CD E3 B8 */	stw r30, PostCB-_SDA_BASE_(r13)
+/* 8023C0B8 00238EB8  93 CD E3 B8 */	stw r30, PostCB@sda21(r13)
 /* 8023C0BC 00238EBC  4B FF 83 35 */	bl OSRestoreInterrupts
 /* 8023C0C0 00238EC0  7F E3 FB 78 */	mr r3, r31
 /* 8023C0C4 00238EC4  80 01 00 1C */	lwz r0, 0x1c(r1)
@@ -46156,16 +46156,16 @@ VIInit:
 /* 8023C39C 0023919C  93 A1 00 0C */	stw r29, 0xc(r1)
 /* 8023C3A0 002391A0  3B A4 AC A0 */	addi r29, r4, _esc__2_1_11@l
 /* 8023C3A4 002391A4  93 81 00 08 */	stw r28, 8(r1)
-/* 8023C3A8 002391A8  80 0D E3 A0 */	lwz r0, IsInitialized-_SDA_BASE_(r13)
+/* 8023C3A8 002391A8  80 0D E3 A0 */	lwz r0, IsInitialized@sda21(r13)
 /* 8023C3AC 002391AC  2C 00 00 00 */	cmpwi r0, 0
 /* 8023C3B0 002391B0  40 82 04 5C */	bne lbl_8023C80C
-/* 8023C3B4 002391B4  80 6D B4 D0 */	lwz r3, __VIVersion-_SDA_BASE_(r13)
+/* 8023C3B4 002391B4  80 6D B4 D0 */	lwz r3, __VIVersion@sda21(r13)
 /* 8023C3B8 002391B8  4B FF 54 11 */	bl OSRegisterVersion
 /* 8023C3BC 002391BC  38 00 00 01 */	li r0, 1
-/* 8023C3C0 002391C0  90 0D E3 A0 */	stw r0, IsInitialized-_SDA_BASE_(r13)
+/* 8023C3C0 002391C0  90 0D E3 A0 */	stw r0, IsInitialized@sda21(r13)
 /* 8023C3C4 002391C4  3C 60 CC 00 */	lis r3, 0xCC002000@ha
 /* 8023C3C8 002391C8  3B 83 20 00 */	addi r28, r3, 0xCC002000@l
-/* 8023C3CC 002391CC  90 0D E3 C0 */	stw r0, encoderType-_SDA_BASE_(r13)
+/* 8023C3CC 002391CC  90 0D E3 C0 */	stw r0, encoderType@sda21(r13)
 /* 8023C3D0 002391D0  A4 1C 00 02 */	lhzu r0, 2(r28)
 /* 8023C3D4 002391D4  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 8023C3D8 002391D8  40 82 00 0C */	bne lbl_8023C3E4
@@ -46173,17 +46173,17 @@ VIInit:
 /* 8023C3E0 002391E0  4B FF FD 9D */	bl __VIInit
 lbl_8023C3E4:
 /* 8023C3E4 002391E4  3B E0 00 00 */	li r31, 0
-/* 8023C3E8 002391E8  93 ED E3 A4 */	stw r31, retraceCount-_SDA_BASE_(r13)
+/* 8023C3E8 002391E8  93 ED E3 A4 */	stw r31, retraceCount@sda21(r13)
 /* 8023C3EC 002391EC  3C 60 CC 00 */	lis r3, 0xCC002000@ha
 /* 8023C3F0 002391F0  38 63 20 00 */	addi r3, r3, 0xCC002000@l
-/* 8023C3F4 002391F4  93 ED E3 D4 */	stw r31, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023C3F4 002391F4  93 ED E3 D4 */	stw r31, lbl_803D1854@sda21(r13)
 /* 8023C3F8 002391F8  38 00 02 80 */	li r0, 0x280
-/* 8023C3FC 002391FC  93 ED E3 D0 */	stw r31, changed-_SDA_BASE_(r13)
-/* 8023C400 00239200  93 ED E3 E4 */	stw r31, lbl_803D1864-_SDA_BASE_(r13)
-/* 8023C404 00239204  93 ED E3 E0 */	stw r31, shdwChanged-_SDA_BASE_(r13)
-/* 8023C408 00239208  93 ED E3 C8 */	stw r31, changeMode-_SDA_BASE_(r13)
-/* 8023C40C 0023920C  93 ED E3 D8 */	stw r31, shdwChangeMode-_SDA_BASE_(r13)
-/* 8023C410 00239210  93 ED E3 A8 */	stw r31, flushFlag-_SDA_BASE_(r13)
+/* 8023C3FC 002391FC  93 ED E3 D0 */	stw r31, changed@sda21(r13)
+/* 8023C400 00239200  93 ED E3 E4 */	stw r31, lbl_803D1864@sda21(r13)
+/* 8023C404 00239204  93 ED E3 E0 */	stw r31, shdwChanged@sda21(r13)
+/* 8023C408 00239208  93 ED E3 C8 */	stw r31, changeMode@sda21(r13)
+/* 8023C40C 0023920C  93 ED E3 D8 */	stw r31, shdwChangeMode@sda21(r13)
+/* 8023C410 00239210  93 ED E3 A8 */	stw r31, flushFlag@sda21(r13)
 /* 8023C414 00239214  A0 BD 01 C2 */	lhz r5, 0x1c2(r29)
 /* 8023C418 00239218  A0 DD 01 C0 */	lhz r6, 0x1c0(r29)
 /* 8023C41C 0023921C  54 A5 54 2A */	rlwinm r5, r5, 0xa, 0x10, 0x15
@@ -46262,8 +46262,8 @@ lbl_8023C3E4:
 /* 8023C540 00239340  88 03 00 10 */	lbz r0, 0x10(r3)
 /* 8023C544 00239344  38 60 00 00 */	li r3, 0
 /* 8023C548 00239348  7C 00 07 74 */	extsb r0, r0
-/* 8023C54C 0023934C  B3 ED E3 C6 */	sth r31, displayOffsetV-_SDA_BASE_(r13)
-/* 8023C550 00239350  B0 0D E3 C4 */	sth r0, displayOffsetH-_SDA_BASE_(r13)
+/* 8023C54C 0023934C  B3 ED E3 C6 */	sth r31, displayOffsetV@sda21(r13)
+/* 8023C550 00239350  B0 0D E3 C4 */	sth r0, displayOffsetH@sda21(r13)
 /* 8023C554 00239354  4B FF 9E 0D */	bl __OSUnlockSram
 /* 8023C558 00239358  A3 BC 00 00 */	lhz r29, 0(r28)
 /* 8023C55C 0023935C  3C 60 80 00 */	lis r3, 0x800000CC@ha
@@ -46299,11 +46299,11 @@ lbl_8023C5A8:
 /* 8023C5CC 002393CC  38 DE 00 F6 */	addi r6, r30, 0xf6
 /* 8023C5D0 002393D0  80 84 00 00 */	lwz r4, 0(r4)
 /* 8023C5D4 002393D4  38 7E 00 F2 */	addi r3, r30, 0xf2
-/* 8023C5D8 002393D8  90 8D E3 E8 */	stw r4, CurrTiming-_SDA_BASE_(r13)
+/* 8023C5D8 002393D8  90 8D E3 E8 */	stw r4, CurrTiming@sda21(r13)
 /* 8023C5DC 002393DC  80 9C 00 00 */	lwz r4, 0(r28)
-/* 8023C5E0 002393E0  90 8D E3 EC */	stw r4, CurrTvMode-_SDA_BASE_(r13)
+/* 8023C5E0 002393E0  90 8D E3 EC */	stw r4, CurrTvMode@sda21(r13)
 /* 8023C5E4 002393E4  B0 1E 00 F4 */	sth r0, 0xf4(r30)
-/* 8023C5E8 002393E8  80 8D E3 E8 */	lwz r4, CurrTiming-_SDA_BASE_(r13)
+/* 8023C5E8 002393E8  80 8D E3 E8 */	lwz r4, CurrTiming@sda21(r13)
 /* 8023C5EC 002393EC  A4 04 00 02 */	lhzu r0, 2(r4)
 /* 8023C5F0 002393F0  54 00 0C 3C */	rlwinm r0, r0, 1, 0x10, 0x1e
 /* 8023C5F4 002393F4  B0 1E 00 F6 */	sth r0, 0xf6(r30)
@@ -46315,7 +46315,7 @@ lbl_8023C5A8:
 /* 8023C60C 0023940C  B1 1E 00 F2 */	sth r8, 0xf2(r30)
 /* 8023C610 00239410  A0 1E 00 F4 */	lhz r0, 0xf4(r30)
 /* 8023C614 00239414  A8 FE 00 F0 */	lha r7, 0xf0(r30)
-/* 8023C618 00239418  A8 AD E3 C4 */	lha r5, displayOffsetH-_SDA_BASE_(r13)
+/* 8023C618 00239418  A8 AD E3 C4 */	lha r5, displayOffsetH@sda21(r13)
 /* 8023C61C 0023941C  20 00 02 D0 */	subfic r0, r0, 0x2d0
 /* 8023C620 00239420  A1 24 00 00 */	lhz r9, 0(r4)
 /* 8023C624 00239424  7C A7 2A 14 */	add r5, r7, r5
@@ -46342,7 +46342,7 @@ lbl_8023C664:
 /* 8023C664 00239464  39 60 00 01 */	li r11, 1
 lbl_8023C668:
 /* 8023C668 00239468  A0 03 00 00 */	lhz r0, 0(r3)
-/* 8023C66C 0023946C  A8 AD E3 C6 */	lha r5, displayOffsetV-_SDA_BASE_(r13)
+/* 8023C66C 0023946C  A8 AD E3 C6 */	lha r5, displayOffsetV@sda21(r13)
 /* 8023C670 00239470  7C 07 07 34 */	extsh r7, r0
 /* 8023C674 00239474  54 00 07 FE */	clrlwi r0, r0, 0x1f
 /* 8023C678 00239478  7C E7 2A 14 */	add r7, r7, r5
@@ -46424,7 +46424,7 @@ lbl_8023C754:
 /* 8023C778 00239578  38 A0 00 28 */	li r5, 0x28
 /* 8023C77C 0023957C  38 00 00 01 */	li r0, 1
 /* 8023C780 00239580  A0 C4 00 00 */	lhz r6, 0(r4)
-/* 8023C784 00239584  38 6D E3 AC */	addi r3, r13, retraceQueue-_SDA_BASE_
+/* 8023C784 00239584  38 6D E3 AC */	addi r3, r13, retraceQueue@sda21
 /* 8023C788 00239588  54 C6 0C 3C */	rlwinm r6, r6, 1, 0x10, 0x1e
 /* 8023C78C 0023958C  B0 DE 01 04 */	sth r6, 0x104(r30)
 /* 8023C790 00239590  B3 9E 01 06 */	sth r28, 0x106(r30)
@@ -46453,8 +46453,8 @@ lbl_8023C754:
 /* 8023C7EC 002395EC  38 60 00 18 */	li r3, 0x18
 /* 8023C7F0 002395F0  54 00 04 7E */	clrlwi r0, r0, 0x11
 /* 8023C7F4 002395F4  B0 05 00 34 */	sth r0, 0x34(r5)
-/* 8023C7F8 002395F8  93 8D E3 B4 */	stw r28, PreCB-_SDA_BASE_(r13)
-/* 8023C7FC 002395FC  93 8D E3 B8 */	stw r28, PostCB-_SDA_BASE_(r13)
+/* 8023C7F8 002395F8  93 8D E3 B4 */	stw r28, PreCB@sda21(r13)
+/* 8023C7FC 002395FC  93 8D E3 B8 */	stw r28, PostCB@sda21(r13)
 /* 8023C800 00239600  4B FF 7C 15 */	bl __OSSetInterruptHandler
 /* 8023C804 00239604  38 60 00 80 */	li r3, 0x80
 /* 8023C808 00239608  4B FF 80 11 */	bl __OSUnmaskInterrupts
@@ -46476,12 +46476,12 @@ VIWaitForRetrace:
 /* 8023C838 00239638  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8023C83C 0023963C  93 C1 00 08 */	stw r30, 8(r1)
 /* 8023C840 00239640  4B FF 7B 89 */	bl OSDisableInterrupts
-/* 8023C844 00239644  83 CD E3 A4 */	lwz r30, retraceCount-_SDA_BASE_(r13)
+/* 8023C844 00239644  83 CD E3 A4 */	lwz r30, retraceCount@sda21(r13)
 /* 8023C848 00239648  7C 7F 1B 78 */	mr r31, r3
 lbl_8023C84C:
-/* 8023C84C 0023964C  38 6D E3 AC */	addi r3, r13, retraceQueue-_SDA_BASE_
+/* 8023C84C 0023964C  38 6D E3 AC */	addi r3, r13, retraceQueue@sda21
 /* 8023C850 00239650  4B FF B1 AD */	bl OSSleepThread
-/* 8023C854 00239654  80 0D E3 A4 */	lwz r0, retraceCount-_SDA_BASE_(r13)
+/* 8023C854 00239654  80 0D E3 A4 */	lwz r0, retraceCount@sda21(r13)
 /* 8023C858 00239658  7C 1E 00 40 */	cmplw r30, r0
 /* 8023C85C 0023965C  41 82 FF F0 */	beq lbl_8023C84C
 /* 8023C860 00239660  7F E3 FB 78 */	mr r3, r31
@@ -46617,11 +46617,11 @@ lbl_8023CA2C:
 /* 8023CA34 00239834  3D 00 00 01 */	lis r8, 1
 /* 8023CA38 00239838  B0 09 00 1E */	sth r0, 0x1e(r9)
 /* 8023CA3C 0023983C  3C 00 00 02 */	lis r0, 2
-/* 8023CA40 00239840  81 4D E3 D0 */	lwz r10, changed-_SDA_BASE_(r13)
-/* 8023CA44 00239844  81 8D E3 D4 */	lwz r12, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CA40 00239840  81 4D E3 D0 */	lwz r10, changed@sda21(r13)
+/* 8023CA44 00239844  81 8D E3 D4 */	lwz r12, lbl_803D1854@sda21(r13)
 /* 8023CA48 00239848  7D 4A 43 78 */	or r10, r10, r8
-/* 8023CA4C 0023984C  91 8D E3 D4 */	stw r12, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CA50 00239850  91 4D E3 D0 */	stw r10, changed-_SDA_BASE_(r13)
+/* 8023CA4C 0023984C  91 8D E3 D4 */	stw r12, lbl_803D1854@sda21(r13)
+/* 8023CA50 00239850  91 4D E3 D0 */	stw r10, changed@sda21(r13)
 /* 8023CA54 00239854  81 44 00 00 */	lwz r10, 0(r4)
 /* 8023CA58 00239858  88 83 00 3C */	lbz r4, 0x3c(r3)
 /* 8023CA5C 0023985C  55 4A 84 3E */	srwi r10, r10, 0x10
@@ -46629,60 +46629,60 @@ lbl_8023CA2C:
 /* 8023CA64 00239864  7D 44 23 78 */	or r4, r10, r4
 /* 8023CA68 00239868  7D 64 23 78 */	or r4, r11, r4
 /* 8023CA6C 0023986C  B0 89 00 1C */	sth r4, 0x1c(r9)
-/* 8023CA70 00239870  80 8D E3 D0 */	lwz r4, changed-_SDA_BASE_(r13)
-/* 8023CA74 00239874  81 4D E3 D4 */	lwz r10, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CA70 00239870  80 8D E3 D0 */	lwz r4, changed@sda21(r13)
+/* 8023CA74 00239874  81 4D E3 D4 */	lwz r10, lbl_803D1854@sda21(r13)
 /* 8023CA78 00239878  7C 80 03 78 */	or r0, r4, r0
-/* 8023CA7C 0023987C  91 4D E3 D4 */	stw r10, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CA80 00239880  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023CA7C 0023987C  91 4D E3 D4 */	stw r10, lbl_803D1854@sda21(r13)
+/* 8023CA80 00239880  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023CA84 00239884  80 05 00 00 */	lwz r0, 0(r5)
 /* 8023CA88 00239888  B0 09 00 26 */	sth r0, 0x26(r9)
-/* 8023CA8C 0023988C  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023CA90 00239890  80 8D E3 D4 */	lwz r4, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CA8C 0023988C  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023CA90 00239890  80 8D E3 D4 */	lwz r4, lbl_803D1854@sda21(r13)
 /* 8023CA94 00239894  60 00 10 00 */	ori r0, r0, 0x1000
-/* 8023CA98 00239898  90 8D E3 D4 */	stw r4, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CA9C 0023989C  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023CA98 00239898  90 8D E3 D4 */	stw r4, lbl_803D1854@sda21(r13)
+/* 8023CA9C 0023989C  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023CAA0 002398A0  80 05 00 00 */	lwz r0, 0(r5)
 /* 8023CAA4 002398A4  54 00 84 3E */	srwi r0, r0, 0x10
 /* 8023CAA8 002398A8  B0 09 00 24 */	sth r0, 0x24(r9)
-/* 8023CAAC 002398AC  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023CAB0 002398B0  80 8D E3 D4 */	lwz r4, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CAAC 002398AC  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023CAB0 002398B0  80 8D E3 D4 */	lwz r4, lbl_803D1854@sda21(r13)
 /* 8023CAB4 002398B4  60 00 20 00 */	ori r0, r0, 0x2000
-/* 8023CAB8 002398B8  90 8D E3 D4 */	stw r4, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CABC 002398BC  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023CAB8 002398B8  90 8D E3 D4 */	stw r4, lbl_803D1854@sda21(r13)
+/* 8023CABC 002398BC  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023CAC0 002398C0  80 03 00 44 */	lwz r0, 0x44(r3)
 /* 8023CAC4 002398C4  2C 00 00 00 */	cmpwi r0, 0
 /* 8023CAC8 002398C8  41 82 00 80 */	beq lbl_8023CB48
 /* 8023CACC 002398CC  80 66 00 00 */	lwz r3, 0(r6)
 /* 8023CAD0 002398D0  38 08 80 00 */	addi r0, r8, -32768
 /* 8023CAD4 002398D4  B0 69 00 22 */	sth r3, 0x22(r9)
-/* 8023CAD8 002398D8  80 6D E3 D0 */	lwz r3, changed-_SDA_BASE_(r13)
-/* 8023CADC 002398DC  80 8D E3 D4 */	lwz r4, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CAD8 002398D8  80 6D E3 D0 */	lwz r3, changed@sda21(r13)
+/* 8023CADC 002398DC  80 8D E3 D4 */	lwz r4, lbl_803D1854@sda21(r13)
 /* 8023CAE0 002398E0  60 63 40 00 */	ori r3, r3, 0x4000
-/* 8023CAE4 002398E4  90 8D E3 D4 */	stw r4, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CAE8 002398E8  90 6D E3 D0 */	stw r3, changed-_SDA_BASE_(r13)
+/* 8023CAE4 002398E4  90 8D E3 D4 */	stw r4, lbl_803D1854@sda21(r13)
+/* 8023CAE8 002398E8  90 6D E3 D0 */	stw r3, changed@sda21(r13)
 /* 8023CAEC 002398EC  80 66 00 00 */	lwz r3, 0(r6)
 /* 8023CAF0 002398F0  54 63 84 3E */	srwi r3, r3, 0x10
 /* 8023CAF4 002398F4  B0 69 00 20 */	sth r3, 0x20(r9)
-/* 8023CAF8 002398F8  80 6D E3 D0 */	lwz r3, changed-_SDA_BASE_(r13)
-/* 8023CAFC 002398FC  80 8D E3 D4 */	lwz r4, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CAF8 002398F8  80 6D E3 D0 */	lwz r3, changed@sda21(r13)
+/* 8023CAFC 002398FC  80 8D E3 D4 */	lwz r4, lbl_803D1854@sda21(r13)
 /* 8023CB00 00239900  7C 60 03 78 */	or r0, r3, r0
-/* 8023CB04 00239904  90 8D E3 D4 */	stw r4, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CB08 00239908  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023CB04 00239904  90 8D E3 D4 */	stw r4, lbl_803D1854@sda21(r13)
+/* 8023CB08 00239908  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023CB0C 0023990C  80 07 00 00 */	lwz r0, 0(r7)
 /* 8023CB10 00239910  B0 09 00 2A */	sth r0, 0x2a(r9)
-/* 8023CB14 00239914  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023CB18 00239918  80 6D E3 D4 */	lwz r3, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CB14 00239914  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023CB18 00239918  80 6D E3 D4 */	lwz r3, lbl_803D1854@sda21(r13)
 /* 8023CB1C 0023991C  60 00 04 00 */	ori r0, r0, 0x400
-/* 8023CB20 00239920  90 6D E3 D4 */	stw r3, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CB24 00239924  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023CB20 00239920  90 6D E3 D4 */	stw r3, lbl_803D1854@sda21(r13)
+/* 8023CB24 00239924  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023CB28 00239928  80 07 00 00 */	lwz r0, 0(r7)
 /* 8023CB2C 0023992C  54 00 84 3E */	srwi r0, r0, 0x10
 /* 8023CB30 00239930  B0 09 00 28 */	sth r0, 0x28(r9)
-/* 8023CB34 00239934  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023CB38 00239938  80 6D E3 D4 */	lwz r3, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CB34 00239934  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023CB38 00239938  80 6D E3 D4 */	lwz r3, lbl_803D1854@sda21(r13)
 /* 8023CB3C 0023993C  60 00 08 00 */	ori r0, r0, 0x800
-/* 8023CB40 00239940  90 6D E3 D4 */	stw r3, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CB44 00239944  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023CB40 00239940  90 6D E3 D4 */	stw r3, lbl_803D1854@sda21(r13)
+/* 8023CB44 00239944  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 lbl_8023CB48:
 /* 8023CB48 00239948  83 E1 00 44 */	lwz r31, 0x44(r1)
 /* 8023CB4C 0023994C  38 21 00 48 */	addi r1, r1, 0x48
@@ -46762,38 +46762,38 @@ lbl_8023CC48:
 /* 8023CC54 00239A54  B0 8B 00 00 */	sth r4, 0(r11)
 /* 8023CC58 00239A58  3C 80 80 00 */	lis r4, 0x8000
 /* 8023CC5C 00239A5C  3D 20 01 00 */	lis r9, 0x100
-/* 8023CC60 00239A60  80 AD E3 D0 */	lwz r5, changed-_SDA_BASE_(r13)
+/* 8023CC60 00239A60  80 AD E3 D0 */	lwz r5, changed@sda21(r13)
 /* 8023CC64 00239A64  3D 00 02 00 */	lis r8, 0x200
-/* 8023CC68 00239A68  81 4D E3 D4 */	lwz r10, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CC68 00239A68  81 4D E3 D4 */	lwz r10, lbl_803D1854@sda21(r13)
 /* 8023CC6C 00239A6C  7C A4 23 78 */	or r4, r5, r4
 /* 8023CC70 00239A70  3C A0 00 40 */	lis r5, 0x40
-/* 8023CC74 00239A74  91 4D E3 D4 */	stw r10, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CC78 00239A78  90 8D E3 D0 */	stw r4, changed-_SDA_BASE_(r13)
+/* 8023CC74 00239A74  91 4D E3 D4 */	stw r10, lbl_803D1854@sda21(r13)
+/* 8023CC78 00239A78  90 8D E3 D0 */	stw r4, changed@sda21(r13)
 /* 8023CC7C 00239A7C  3C 80 00 80 */	lis r4, 0x80
 /* 8023CC80 00239A80  B0 0B 00 0E */	sth r0, 0xe(r11)
-/* 8023CC84 00239A84  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023CC88 00239A88  81 4D E3 D4 */	lwz r10, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CC84 00239A84  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023CC88 00239A88  81 4D E3 D4 */	lwz r10, lbl_803D1854@sda21(r13)
 /* 8023CC8C 00239A8C  7C 00 4B 78 */	or r0, r0, r9
-/* 8023CC90 00239A90  91 4D E3 D4 */	stw r10, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CC94 00239A94  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023CC90 00239A90  91 4D E3 D4 */	stw r10, lbl_803D1854@sda21(r13)
+/* 8023CC94 00239A94  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023CC98 00239A98  B0 CB 00 0C */	sth r6, 0xc(r11)
-/* 8023CC9C 00239A9C  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023CCA0 00239AA0  80 CD E3 D4 */	lwz r6, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CC9C 00239A9C  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023CCA0 00239AA0  80 CD E3 D4 */	lwz r6, lbl_803D1854@sda21(r13)
 /* 8023CCA4 00239AA4  7C 00 43 78 */	or r0, r0, r8
-/* 8023CCA8 00239AA8  90 CD E3 D4 */	stw r6, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CCAC 00239AAC  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023CCA8 00239AA8  90 CD E3 D4 */	stw r6, lbl_803D1854@sda21(r13)
+/* 8023CCAC 00239AAC  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023CCB0 00239AB0  B0 6B 00 12 */	sth r3, 0x12(r11)
-/* 8023CCB4 00239AB4  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023CCB8 00239AB8  80 6D E3 D4 */	lwz r3, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CCB4 00239AB4  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023CCB8 00239AB8  80 6D E3 D4 */	lwz r3, lbl_803D1854@sda21(r13)
 /* 8023CCBC 00239ABC  7C 00 2B 78 */	or r0, r0, r5
-/* 8023CCC0 00239AC0  90 6D E3 D4 */	stw r3, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CCC4 00239AC4  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023CCC0 00239AC0  90 6D E3 D4 */	stw r3, lbl_803D1854@sda21(r13)
+/* 8023CCC4 00239AC4  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023CCC8 00239AC8  B0 EB 00 10 */	sth r7, 0x10(r11)
-/* 8023CCCC 00239ACC  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023CCD0 00239AD0  80 6D E3 D4 */	lwz r3, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023CCCC 00239ACC  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023CCD0 00239AD0  80 6D E3 D4 */	lwz r3, lbl_803D1854@sda21(r13)
 /* 8023CCD4 00239AD4  7C 00 23 78 */	or r0, r0, r4
-/* 8023CCD8 00239AD8  90 6D E3 D4 */	stw r3, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023CCDC 00239ADC  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023CCD8 00239AD8  90 6D E3 D4 */	stw r3, lbl_803D1854@sda21(r13)
+/* 8023CCDC 00239ADC  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023CCE0 00239AE0  83 E1 00 24 */	lwz r31, 0x24(r1)
 /* 8023CCE4 00239AE4  83 C1 00 20 */	lwz r30, 0x20(r1)
 /* 8023CCE8 00239AE8  83 A1 00 1C */	lwz r29, 0x1c(r1)
@@ -46820,7 +46820,7 @@ VIConfigure:
 /* 8023CD30 00239B30  7C 00 20 40 */	cmplw r0, r4
 /* 8023CD34 00239B34  41 82 00 10 */	beq lbl_8023CD44
 /* 8023CD38 00239B38  38 00 00 01 */	li r0, 1
-/* 8023CD3C 00239B3C  90 0D E3 C8 */	stw r0, changeMode-_SDA_BASE_(r13)
+/* 8023CD3C 00239B3C  90 0D E3 C8 */	stw r0, changeMode@sda21(r13)
 /* 8023CD40 00239B40  90 9C 00 00 */	stw r4, 0(r28)
 lbl_8023CD44:
 /* 8023CD44 00239B44  80 1F 00 00 */	lwz r0, 0(r31)
@@ -46830,12 +46830,12 @@ lbl_8023CD44:
 /* 8023CD54 00239B54  28 00 00 04 */	cmplwi r0, 4
 /* 8023CD58 00239B58  7C 11 03 78 */	mr r17, r0
 /* 8023CD5C 00239B5C  40 82 00 6C */	bne lbl_8023CDC8
-/* 8023CD60 00239B60  80 0D E3 FC */	lwz r0, message_esc__7_343-_SDA_BASE_(r13)
+/* 8023CD60 00239B60  80 0D E3 FC */	lwz r0, message_esc__7_343@sda21(r13)
 /* 8023CD64 00239B64  28 00 00 00 */	cmplwi r0, 0
 /* 8023CD68 00239B68  40 82 00 60 */	bne lbl_8023CDC8
 /* 8023CD6C 00239B6C  38 00 00 01 */	li r0, 1
 /* 8023CD70 00239B70  4C C6 31 82 */	crclr 6
-/* 8023CD74 00239B74  90 0D E3 FC */	stw r0, message_esc__7_343-_SDA_BASE_(r13)
+/* 8023CD74 00239B74  90 0D E3 FC */	stw r0, message_esc__7_343@sda21(r13)
 /* 8023CD78 00239B78  38 6F 02 60 */	addi r3, r15, 0x260
 /* 8023CD7C 00239B7C  4B FF 65 75 */	bl OSReport
 /* 8023CD80 00239B80  38 6F 02 8C */	addi r3, r15, 0x28c
@@ -46889,7 +46889,7 @@ lbl_8023CE28:
 /* 8023CE2C 00239C2C  4C C6 31 82 */	crclr 6
 /* 8023CE30 00239C30  38 F1 00 00 */	addi r7, r17, 0
 /* 8023CE34 00239C34  38 AF 03 68 */	addi r5, r15, 0x368
-/* 8023CE38 00239C38  38 6D B4 D4 */	addi r3, r13, _esc__2_534-_SDA_BASE_
+/* 8023CE38 00239C38  38 6D B4 D4 */	addi r3, r13, _esc__2_534@sda21
 /* 8023CE3C 00239C3C  38 80 07 74 */	li r4, 0x774
 /* 8023CE40 00239C40  4B FF 65 31 */	bl OSPanic
 lbl_8023CE44:
@@ -46980,7 +46980,7 @@ lbl_8023CF44:
 /* 8023CF68 00239D68  93 DD 01 44 */	stw r30, 0x144(r29)
 /* 8023CF6C 00239D6C  A0 18 00 00 */	lhz r0, 0(r24)
 /* 8023CF70 00239D70  A8 9D 00 F0 */	lha r4, 0xf0(r29)
-/* 8023CF74 00239D74  A8 6D E3 C4 */	lha r3, displayOffsetH-_SDA_BASE_(r13)
+/* 8023CF74 00239D74  A8 6D E3 C4 */	lha r3, displayOffsetH@sda21(r13)
 /* 8023CF78 00239D78  20 A0 02 D0 */	subfic r5, r0, 0x2d0
 /* 8023CF7C 00239D7C  A0 1E 00 02 */	lhz r0, 2(r30)
 /* 8023CF80 00239D80  7C 64 1A 14 */	add r3, r4, r3
@@ -47005,7 +47005,7 @@ lbl_8023CFBC:
 /* 8023CFBC 00239DBC  38 80 00 01 */	li r4, 1
 lbl_8023CFC0:
 /* 8023CFC0 00239DC0  A0 B7 00 00 */	lhz r5, 0(r23)
-/* 8023CFC4 00239DC4  A8 CD E3 C6 */	lha r6, displayOffsetV-_SDA_BASE_(r13)
+/* 8023CFC4 00239DC4  A8 CD E3 C6 */	lha r6, displayOffsetV@sda21(r13)
 /* 8023CFC8 00239DC8  7C A7 07 34 */	extsh r7, r5
 /* 8023CFCC 00239DCC  54 A5 07 FE */	clrlwi r5, r5, 0x1f
 /* 8023CFD0 00239DD0  7C E7 32 14 */	add r7, r7, r6
@@ -47082,7 +47082,7 @@ lbl_8023D0B0:
 /* 8023D0BC 00239EBC  7C 05 02 14 */	add r0, r5, r0
 /* 8023D0C0 00239EC0  7C 04 00 50 */	subf r0, r4, r0
 /* 8023D0C4 00239EC4  B0 1D 01 00 */	sth r0, 0x100(r29)
-/* 8023D0C8 00239EC8  80 0D E3 C0 */	lwz r0, encoderType-_SDA_BASE_(r13)
+/* 8023D0C8 00239EC8  80 0D E3 C0 */	lwz r0, encoderType@sda21(r13)
 /* 8023D0CC 00239ECC  28 00 00 00 */	cmplwi r0, 0
 /* 8023D0D0 00239ED0  40 82 00 0C */	bne lbl_8023D0DC
 /* 8023D0D4 00239ED4  38 00 00 03 */	li r0, 3
@@ -47107,18 +47107,18 @@ lbl_8023D110:
 /* 8023D114 00239F14  B0 1D 00 32 */	sth r0, 0x32(r29)
 /* 8023D118 00239F18  38 04 00 01 */	addi r0, r4, 1
 /* 8023D11C 00239F1C  60 00 10 00 */	ori r0, r0, 0x1000
-/* 8023D120 00239F20  80 AD E3 D0 */	lwz r5, changed-_SDA_BASE_(r13)
+/* 8023D120 00239F20  80 AD E3 D0 */	lwz r5, changed@sda21(r13)
 /* 8023D124 00239F24  38 9D 00 02 */	addi r4, r29, 2
-/* 8023D128 00239F28  80 CD E3 D4 */	lwz r6, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D128 00239F28  80 CD E3 D4 */	lwz r6, lbl_803D1854@sda21(r13)
 /* 8023D12C 00239F2C  60 A5 00 40 */	ori r5, r5, 0x40
-/* 8023D130 00239F30  90 CD E3 D4 */	stw r6, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D134 00239F34  90 AD E3 D0 */	stw r5, changed-_SDA_BASE_(r13)
+/* 8023D130 00239F30  90 CD E3 D4 */	stw r6, lbl_803D1854@sda21(r13)
+/* 8023D134 00239F34  90 AD E3 D0 */	stw r5, changed@sda21(r13)
 /* 8023D138 00239F38  B0 1D 00 30 */	sth r0, 0x30(r29)
-/* 8023D13C 00239F3C  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023D140 00239F40  80 AD E3 D4 */	lwz r5, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D13C 00239F3C  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023D140 00239F40  80 AD E3 D4 */	lwz r5, lbl_803D1854@sda21(r13)
 /* 8023D144 00239F44  60 00 00 80 */	ori r0, r0, 0x80
-/* 8023D148 00239F48  90 AD E3 D4 */	stw r5, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D14C 00239F4C  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023D148 00239F48  90 AD E3 D4 */	stw r5, lbl_803D1854@sda21(r13)
+/* 8023D14C 00239F4C  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023D150 00239F50  80 1C 00 00 */	lwz r0, 0(r28)
 /* 8023D154 00239F54  A0 BD 00 02 */	lhz r5, 2(r29)
 /* 8023D158 00239F58  28 00 00 02 */	cmplwi r0, 2
@@ -47154,11 +47154,11 @@ lbl_8023D1B8:
 /* 8023D1B8 00239FB8  B0 04 00 00 */	sth r0, 0(r4)
 /* 8023D1BC 00239FBC  3C 00 40 00 */	lis r0, 0x4000
 /* 8023D1C0 00239FC0  38 DD 00 6C */	addi r6, r29, 0x6c
-/* 8023D1C4 00239FC4  80 8D E3 D0 */	lwz r4, changed-_SDA_BASE_(r13)
-/* 8023D1C8 00239FC8  80 AD E3 D4 */	lwz r5, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D1C4 00239FC4  80 8D E3 D0 */	lwz r4, changed@sda21(r13)
+/* 8023D1C8 00239FC8  80 AD E3 D4 */	lwz r5, lbl_803D1854@sda21(r13)
 /* 8023D1CC 00239FCC  7C 80 03 78 */	or r0, r4, r0
-/* 8023D1D0 00239FD0  90 AD E3 D4 */	stw r5, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D1D4 00239FD4  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023D1D0 00239FD0  90 AD E3 D4 */	stw r5, lbl_803D1854@sda21(r13)
+/* 8023D1D4 00239FD4  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023D1D8 00239FD8  80 1F 00 00 */	lwz r0, 0(r31)
 /* 8023D1DC 00239FDC  A0 9D 00 6C */	lhz r4, 0x6c(r29)
 /* 8023D1E0 00239FE0  2C 00 00 02 */	cmpwi r0, 2
@@ -47176,11 +47176,11 @@ lbl_8023D204:
 lbl_8023D208:
 /* 8023D208 0023A008  B0 06 00 00 */	sth r0, 0(r6)
 /* 8023D20C 0023A00C  2C 07 00 00 */	cmpwi r7, 0
-/* 8023D210 0023A010  80 8D E3 D0 */	lwz r4, changed-_SDA_BASE_(r13)
-/* 8023D214 0023A014  80 0D E3 D4 */	lwz r0, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D210 0023A010  80 8D E3 D0 */	lwz r4, changed@sda21(r13)
+/* 8023D214 0023A014  80 0D E3 D4 */	lwz r0, lbl_803D1854@sda21(r13)
 /* 8023D218 0023A018  60 00 02 00 */	ori r0, r0, 0x200
-/* 8023D21C 0023A01C  90 0D E3 D4 */	stw r0, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D220 0023A020  90 8D E3 D0 */	stw r4, changed-_SDA_BASE_(r13)
+/* 8023D21C 0023A01C  90 0D E3 D4 */	stw r0, lbl_803D1854@sda21(r13)
+/* 8023D220 0023A020  90 8D E3 D0 */	stw r4, changed@sda21(r13)
 /* 8023D224 0023A024  A0 98 00 00 */	lhz r4, 0(r24)
 /* 8023D228 0023A028  A0 B0 00 00 */	lhz r5, 0(r16)
 /* 8023D22C 0023A02C  41 82 00 0C */	beq lbl_8023D238
@@ -47199,27 +47199,27 @@ lbl_8023D23C:
 /* 8023D258 0023A058  60 00 10 00 */	ori r0, r0, 0x1000
 /* 8023D25C 0023A05C  B0 1D 00 4A */	sth r0, 0x4a(r29)
 /* 8023D260 0023A060  3C 00 04 00 */	lis r0, 0x400
-/* 8023D264 0023A064  80 CD E3 D0 */	lwz r6, changed-_SDA_BASE_(r13)
-/* 8023D268 0023A068  80 ED E3 D4 */	lwz r7, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D264 0023A064  80 CD E3 D0 */	lwz r6, changed@sda21(r13)
+/* 8023D268 0023A068  80 ED E3 D4 */	lwz r7, lbl_803D1854@sda21(r13)
 /* 8023D26C 0023A06C  7C E0 03 78 */	or r0, r7, r0
-/* 8023D270 0023A070  90 0D E3 D4 */	stw r0, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D274 0023A074  90 CD E3 D0 */	stw r6, changed-_SDA_BASE_(r13)
+/* 8023D270 0023A070  90 0D E3 D4 */	stw r0, lbl_803D1854@sda21(r13)
+/* 8023D274 0023A074  90 CD E3 D0 */	stw r6, changed@sda21(r13)
 /* 8023D278 0023A078  B1 1D 00 70 */	sth r8, 0x70(r29)
-/* 8023D27C 0023A07C  80 CD E3 D0 */	lwz r6, changed-_SDA_BASE_(r13)
-/* 8023D280 0023A080  80 0D E3 D4 */	lwz r0, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D27C 0023A07C  80 CD E3 D0 */	lwz r6, changed@sda21(r13)
+/* 8023D280 0023A080  80 0D E3 D4 */	lwz r0, lbl_803D1854@sda21(r13)
 /* 8023D284 0023A084  60 00 00 80 */	ori r0, r0, 0x80
-/* 8023D288 0023A088  90 0D E3 D4 */	stw r0, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D28C 0023A08C  90 CD E3 D0 */	stw r6, changed-_SDA_BASE_(r13)
+/* 8023D288 0023A088  90 0D E3 D4 */	stw r0, lbl_803D1854@sda21(r13)
+/* 8023D28C 0023A08C  90 CD E3 D0 */	stw r6, changed@sda21(r13)
 /* 8023D290 0023A090  48 00 00 24 */	b lbl_8023D2B4
 lbl_8023D294:
 /* 8023D294 0023A094  38 00 01 00 */	li r0, 0x100
 /* 8023D298 0023A098  B0 1D 00 4A */	sth r0, 0x4a(r29)
 /* 8023D29C 0023A09C  3C 00 04 00 */	lis r0, 0x400
-/* 8023D2A0 0023A0A0  80 CD E3 D0 */	lwz r6, changed-_SDA_BASE_(r13)
-/* 8023D2A4 0023A0A4  80 ED E3 D4 */	lwz r7, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D2A0 0023A0A0  80 CD E3 D0 */	lwz r6, changed@sda21(r13)
+/* 8023D2A4 0023A0A4  80 ED E3 D4 */	lwz r7, lbl_803D1854@sda21(r13)
 /* 8023D2A8 0023A0A8  7C E0 03 78 */	or r0, r7, r0
-/* 8023D2AC 0023A0AC  90 0D E3 D4 */	stw r0, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D2B0 0023A0B0  90 CD E3 D0 */	stw r6, changed-_SDA_BASE_(r13)
+/* 8023D2AC 0023A0AC  90 0D E3 D4 */	stw r0, lbl_803D1854@sda21(r13)
+/* 8023D2B0 0023A0B0  90 CD E3 D0 */	stw r6, changed@sda21(r13)
 lbl_8023D2B4:
 /* 8023D2B4 0023A0B4  A0 03 00 00 */	lhz r0, 0(r3)
 /* 8023D2B8 0023A0B8  21 84 02 D0 */	subfic r12, r4, 0x2d0
@@ -47229,23 +47229,23 @@ lbl_8023D2B4:
 /* 8023D2C8 0023A0C8  B0 DD 00 06 */	sth r6, 6(r29)
 /* 8023D2CC 0023A0CC  3D 20 04 00 */	lis r9, 0x400
 /* 8023D2D0 0023A0D0  3C E0 08 00 */	lis r7, 0x800
-/* 8023D2D4 0023A0D4  81 4D E3 D0 */	lwz r10, changed-_SDA_BASE_(r13)
+/* 8023D2D4 0023A0D4  81 4D E3 D0 */	lwz r10, changed@sda21(r13)
 /* 8023D2D8 0023A0D8  3C C0 00 10 */	lis r6, 0x10
 /* 8023D2DC 0023A0DC  3C 80 00 20 */	lis r4, 0x20
-/* 8023D2E0 0023A0E0  81 6D E3 D4 */	lwz r11, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D2E0 0023A0E0  81 6D E3 D4 */	lwz r11, lbl_803D1854@sda21(r13)
 /* 8023D2E4 0023A0E4  7D 4A 1B 78 */	or r10, r10, r3
 /* 8023D2E8 0023A0E8  3C 60 00 04 */	lis r3, 4
-/* 8023D2EC 0023A0EC  91 6D E3 D4 */	stw r11, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D2F0 0023A0F0  91 4D E3 D0 */	stw r10, changed-_SDA_BASE_(r13)
+/* 8023D2EC 0023A0EC  91 6D E3 D4 */	stw r11, lbl_803D1854@sda21(r13)
+/* 8023D2F0 0023A0F0  91 4D E3 D0 */	stw r10, changed@sda21(r13)
 /* 8023D2F4 0023A0F4  89 5E 00 1D */	lbz r10, 0x1d(r30)
 /* 8023D2F8 0023A0F8  89 7E 00 1E */	lbz r11, 0x1e(r30)
 /* 8023D2FC 0023A0FC  51 4B 44 2E */	rlwimi r11, r10, 8, 0x10, 0x17
 /* 8023D300 0023A100  B1 7D 00 04 */	sth r11, 4(r29)
-/* 8023D304 0023A104  81 4D E3 D0 */	lwz r10, changed-_SDA_BASE_(r13)
-/* 8023D308 0023A108  81 6D E3 D4 */	lwz r11, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D304 0023A104  81 4D E3 D0 */	lwz r10, changed@sda21(r13)
+/* 8023D308 0023A108  81 6D E3 D4 */	lwz r11, lbl_803D1854@sda21(r13)
 /* 8023D30C 0023A10C  7D 48 43 78 */	or r8, r10, r8
-/* 8023D310 0023A110  91 6D E3 D4 */	stw r11, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D314 0023A114  91 0D E3 D0 */	stw r8, changed-_SDA_BASE_(r13)
+/* 8023D310 0023A110  91 6D E3 D4 */	stw r11, lbl_803D1854@sda21(r13)
+/* 8023D314 0023A114  91 0D E3 D0 */	stw r8, changed@sda21(r13)
 /* 8023D318 0023A118  89 1E 00 1F */	lbz r8, 0x1f(r30)
 /* 8023D31C 0023A11C  89 5E 00 1C */	lbz r10, 0x1c(r30)
 /* 8023D320 0023A120  7E 08 02 14 */	add r16, r8, r0
@@ -47256,63 +47256,63 @@ lbl_8023D2B4:
 /* 8023D334 0023A134  B1 1D 00 0A */	sth r8, 0xa(r29)
 /* 8023D338 0023A138  7D 0B 02 14 */	add r8, r11, r0
 /* 8023D33C 0023A13C  38 08 00 28 */	addi r0, r8, 0x28
-/* 8023D340 0023A140  81 4D E3 D0 */	lwz r10, changed-_SDA_BASE_(r13)
+/* 8023D340 0023A140  81 4D E3 D0 */	lwz r10, changed@sda21(r13)
 /* 8023D344 0023A144  7C 0C 00 50 */	subf r0, r12, r0
 /* 8023D348 0023A148  56 08 BA 7E */	srwi r8, r16, 9
-/* 8023D34C 0023A14C  81 6D E3 D4 */	lwz r11, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D34C 0023A14C  81 6D E3 D4 */	lwz r11, lbl_803D1854@sda21(r13)
 /* 8023D350 0023A150  54 00 08 3C */	slwi r0, r0, 1
 /* 8023D354 0023A154  7D 49 4B 78 */	or r9, r10, r9
-/* 8023D358 0023A158  91 6D E3 D4 */	stw r11, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D358 0023A158  91 6D E3 D4 */	stw r11, lbl_803D1854@sda21(r13)
 /* 8023D35C 0023A15C  7D 00 03 78 */	or r0, r8, r0
-/* 8023D360 0023A160  91 2D E3 D0 */	stw r9, changed-_SDA_BASE_(r13)
+/* 8023D360 0023A160  91 2D E3 D0 */	stw r9, changed@sda21(r13)
 /* 8023D364 0023A164  B0 1D 00 08 */	sth r0, 8(r29)
-/* 8023D368 0023A168  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023D36C 0023A16C  81 0D E3 D4 */	lwz r8, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D368 0023A168  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023D36C 0023A16C  81 0D E3 D4 */	lwz r8, lbl_803D1854@sda21(r13)
 /* 8023D370 0023A170  7C 00 3B 78 */	or r0, r0, r7
-/* 8023D374 0023A174  91 0D E3 D4 */	stw r8, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D378 0023A178  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023D374 0023A174  91 0D E3 D4 */	stw r8, lbl_803D1854@sda21(r13)
+/* 8023D378 0023A178  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023D37C 0023A17C  A0 1E 00 10 */	lhz r0, 0x10(r30)
 /* 8023D380 0023A180  88 FE 00 0C */	lbz r7, 0xc(r30)
 /* 8023D384 0023A184  54 00 28 34 */	slwi r0, r0, 5
 /* 8023D388 0023A188  7C E0 03 78 */	or r0, r7, r0
 /* 8023D38C 0023A18C  B0 1D 00 16 */	sth r0, 0x16(r29)
-/* 8023D390 0023A190  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023D394 0023A194  80 ED E3 D4 */	lwz r7, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D390 0023A190  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023D394 0023A194  80 ED E3 D4 */	lwz r7, lbl_803D1854@sda21(r13)
 /* 8023D398 0023A198  7C 00 33 78 */	or r0, r0, r6
-/* 8023D39C 0023A19C  90 ED E3 D4 */	stw r7, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D3A0 0023A1A0  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023D39C 0023A19C  90 ED E3 D4 */	stw r7, lbl_803D1854@sda21(r13)
+/* 8023D3A0 0023A1A0  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023D3A4 0023A1A4  A0 1E 00 14 */	lhz r0, 0x14(r30)
 /* 8023D3A8 0023A1A8  88 DE 00 0E */	lbz r6, 0xe(r30)
 /* 8023D3AC 0023A1AC  54 00 28 34 */	slwi r0, r0, 5
 /* 8023D3B0 0023A1B0  7C C0 03 78 */	or r0, r6, r0
 /* 8023D3B4 0023A1B4  B0 1D 00 14 */	sth r0, 0x14(r29)
-/* 8023D3B8 0023A1B8  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023D3BC 0023A1BC  80 CD E3 D4 */	lwz r6, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D3B8 0023A1B8  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023D3BC 0023A1BC  80 CD E3 D4 */	lwz r6, lbl_803D1854@sda21(r13)
 /* 8023D3C0 0023A1C0  7C 00 23 78 */	or r0, r0, r4
-/* 8023D3C4 0023A1C4  90 CD E3 D4 */	stw r6, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D3C8 0023A1C8  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023D3C4 0023A1C4  90 CD E3 D4 */	stw r6, lbl_803D1854@sda21(r13)
+/* 8023D3C8 0023A1C8  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023D3CC 0023A1CC  A0 1E 00 12 */	lhz r0, 0x12(r30)
 /* 8023D3D0 0023A1D0  88 9E 00 0D */	lbz r4, 0xd(r30)
 /* 8023D3D4 0023A1D4  54 00 28 34 */	slwi r0, r0, 5
 /* 8023D3D8 0023A1D8  7C 80 03 78 */	or r0, r4, r0
 /* 8023D3DC 0023A1DC  B0 1D 00 1A */	sth r0, 0x1a(r29)
-/* 8023D3E0 0023A1E0  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023D3E4 0023A1E4  80 8D E3 D4 */	lwz r4, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D3E0 0023A1E0  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023D3E4 0023A1E4  80 8D E3 D4 */	lwz r4, lbl_803D1854@sda21(r13)
 /* 8023D3E8 0023A1E8  7C 00 1B 78 */	or r0, r0, r3
-/* 8023D3EC 0023A1EC  90 8D E3 D4 */	stw r4, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D3F0 0023A1F0  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023D3EC 0023A1EC  90 8D E3 D4 */	stw r4, lbl_803D1854@sda21(r13)
+/* 8023D3F0 0023A1F0  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023D3F4 0023A1F4  A0 1E 00 16 */	lhz r0, 0x16(r30)
 /* 8023D3F8 0023A1F8  88 7E 00 0F */	lbz r3, 0xf(r30)
 /* 8023D3FC 0023A1FC  54 00 28 34 */	slwi r0, r0, 5
 /* 8023D400 0023A200  7C 60 03 78 */	or r0, r3, r0
 /* 8023D404 0023A204  B0 1D 00 18 */	sth r0, 0x18(r29)
-/* 8023D408 0023A208  80 6D E3 D0 */	lwz r3, changed-_SDA_BASE_(r13)
+/* 8023D408 0023A208  80 6D E3 D0 */	lwz r3, changed@sda21(r13)
 /* 8023D40C 0023A20C  3C 00 00 08 */	lis r0, 8
 /* 8023D410 0023A210  38 DD 01 1C */	addi r6, r29, 0x11c
-/* 8023D414 0023A214  80 8D E3 D4 */	lwz r4, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D414 0023A214  80 8D E3 D4 */	lwz r4, lbl_803D1854@sda21(r13)
 /* 8023D418 0023A218  7C 60 03 78 */	or r0, r3, r0
-/* 8023D41C 0023A21C  90 8D E3 D4 */	stw r4, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D420 0023A220  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023D41C 0023A21C  90 8D E3 D4 */	stw r4, lbl_803D1854@sda21(r13)
+/* 8023D420 0023A220  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 /* 8023D424 0023A224  A0 7B 00 00 */	lhz r3, 0(r27)
 /* 8023D428 0023A228  80 99 00 00 */	lwz r4, 0(r25)
 /* 8023D42C 0023A22C  38 03 00 0F */	addi r0, r3, 0xf
@@ -47345,13 +47345,13 @@ lbl_8023D458:
 /* 8023D490 0023A290  88 9D 01 1D */	lbz r4, 0x11d(r29)
 /* 8023D494 0023A294  50 04 44 2E */	rlwimi r4, r0, 8, 0x10, 0x17
 /* 8023D498 0023A298  B0 9D 00 48 */	sth r4, 0x48(r29)
-/* 8023D49C 0023A29C  80 8D E3 D0 */	lwz r4, changed-_SDA_BASE_(r13)
-/* 8023D4A0 0023A2A0  80 0D E3 F8 */	lwz r0, FBSet-_SDA_BASE_(r13)
-/* 8023D4A4 0023A2A4  80 AD E3 D4 */	lwz r5, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D49C 0023A29C  80 8D E3 D0 */	lwz r4, changed@sda21(r13)
+/* 8023D4A0 0023A2A0  80 0D E3 F8 */	lwz r0, FBSet@sda21(r13)
+/* 8023D4A4 0023A2A4  80 AD E3 D4 */	lwz r5, lbl_803D1854@sda21(r13)
 /* 8023D4A8 0023A2A8  28 00 00 00 */	cmplwi r0, 0
 /* 8023D4AC 0023A2AC  7C A0 1B 78 */	or r0, r5, r3
-/* 8023D4B0 0023A2B0  90 0D E3 D4 */	stw r0, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D4B4 0023A2B4  90 8D E3 D0 */	stw r4, changed-_SDA_BASE_(r13)
+/* 8023D4B0 0023A2B0  90 0D E3 D4 */	stw r0, lbl_803D1854@sda21(r13)
+/* 8023D4B4 0023A2B4  90 8D E3 D0 */	stw r4, changed@sda21(r13)
 /* 8023D4B8 0023A2B8  41 82 00 1C */	beq lbl_8023D4D4
 /* 8023D4BC 0023A2BC  38 7D 00 F0 */	addi r3, r29, 0xf0
 /* 8023D4C0 0023A2C0  38 9D 01 24 */	addi r4, r29, 0x124
@@ -47391,26 +47391,26 @@ VIFlush:
 /* 8023D538 0023A338  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 8023D53C 0023A33C  93 81 00 10 */	stw r28, 0x10(r1)
 /* 8023D540 0023A340  4B FF 6E 89 */	bl OSDisableInterrupts
-/* 8023D544 0023A344  80 AD E3 D8 */	lwz r5, shdwChangeMode-_SDA_BASE_(r13)
+/* 8023D544 0023A344  80 AD E3 D8 */	lwz r5, shdwChangeMode@sda21(r13)
 /* 8023D548 0023A348  3B C3 00 00 */	addi r30, r3, 0
 /* 8023D54C 0023A34C  38 00 00 00 */	li r0, 0
-/* 8023D550 0023A350  80 8D E3 C8 */	lwz r4, changeMode-_SDA_BASE_(r13)
+/* 8023D550 0023A350  80 8D E3 C8 */	lwz r4, changeMode@sda21(r13)
 /* 8023D554 0023A354  7C A3 23 78 */	or r3, r5, r4
-/* 8023D558 0023A358  90 6D E3 D8 */	stw r3, shdwChangeMode-_SDA_BASE_(r13)
-/* 8023D55C 0023A35C  90 0D E3 C8 */	stw r0, changeMode-_SDA_BASE_(r13)
-/* 8023D560 0023A360  80 8D E3 E0 */	lwz r4, shdwChanged-_SDA_BASE_(r13)
-/* 8023D564 0023A364  80 AD E3 E4 */	lwz r5, lbl_803D1864-_SDA_BASE_(r13)
-/* 8023D568 0023A368  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
-/* 8023D56C 0023A36C  80 6D E3 D4 */	lwz r3, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D558 0023A358  90 6D E3 D8 */	stw r3, shdwChangeMode@sda21(r13)
+/* 8023D55C 0023A35C  90 0D E3 C8 */	stw r0, changeMode@sda21(r13)
+/* 8023D560 0023A360  80 8D E3 E0 */	lwz r4, shdwChanged@sda21(r13)
+/* 8023D564 0023A364  80 AD E3 E4 */	lwz r5, lbl_803D1864@sda21(r13)
+/* 8023D568 0023A368  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
+/* 8023D56C 0023A36C  80 6D E3 D4 */	lwz r3, lbl_803D1854@sda21(r13)
 /* 8023D570 0023A370  7C 80 03 78 */	or r0, r4, r0
 /* 8023D574 0023A374  7C A3 1B 78 */	or r3, r5, r3
-/* 8023D578 0023A378  90 6D E3 E4 */	stw r3, lbl_803D1864-_SDA_BASE_(r13)
-/* 8023D57C 0023A37C  90 0D E3 E0 */	stw r0, shdwChanged-_SDA_BASE_(r13)
+/* 8023D578 0023A378  90 6D E3 E4 */	stw r3, lbl_803D1864@sda21(r13)
+/* 8023D57C 0023A37C  90 0D E3 E0 */	stw r0, shdwChanged@sda21(r13)
 /* 8023D580 0023A380  48 00 00 78 */	b lbl_8023D5F8
 lbl_8023D584:
-/* 8023D584 0023A384  80 6D E3 D0 */	lwz r3, changed-_SDA_BASE_(r13)
+/* 8023D584 0023A384  80 6D E3 D0 */	lwz r3, changed@sda21(r13)
 /* 8023D588 0023A388  38 A0 00 20 */	li r5, 0x20
-/* 8023D58C 0023A38C  83 8D E3 D4 */	lwz r28, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D58C 0023A38C  83 8D E3 D4 */	lwz r28, lbl_803D1854@sda21(r13)
 /* 8023D590 0023A390  38 9C 00 00 */	addi r4, r28, 0
 /* 8023D594 0023A394  4B FB DE 25 */	bl __shr2u
 /* 8023D598 0023A398  7C 84 00 34 */	cntlzw r4, r4
@@ -47431,27 +47431,27 @@ lbl_8023D5B8:
 /* 8023D5CC 0023A3CC  38 60 00 00 */	li r3, 0
 /* 8023D5D0 0023A3D0  38 80 00 01 */	li r4, 1
 /* 8023D5D4 0023A3D4  4B FB DD C1 */	bl __shl2i
-/* 8023D5D8 0023A3D8  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
+/* 8023D5D8 0023A3D8  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
 /* 8023D5DC 0023A3DC  7C 65 18 F8 */	nor r5, r3, r3
 /* 8023D5E0 0023A3E0  7C 84 20 F8 */	nor r4, r4, r4
-/* 8023D5E4 0023A3E4  80 6D E3 D4 */	lwz r3, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D5E4 0023A3E4  80 6D E3 D4 */	lwz r3, lbl_803D1854@sda21(r13)
 /* 8023D5E8 0023A3E8  7C 00 28 38 */	and r0, r0, r5
 /* 8023D5EC 0023A3EC  7C 63 20 38 */	and r3, r3, r4
-/* 8023D5F0 0023A3F0  90 6D E3 D4 */	stw r3, lbl_803D1854-_SDA_BASE_(r13)
-/* 8023D5F4 0023A3F4  90 0D E3 D0 */	stw r0, changed-_SDA_BASE_(r13)
+/* 8023D5F0 0023A3F0  90 6D E3 D4 */	stw r3, lbl_803D1854@sda21(r13)
+/* 8023D5F4 0023A3F4  90 0D E3 D0 */	stw r0, changed@sda21(r13)
 lbl_8023D5F8:
-/* 8023D5F8 0023A3F8  80 0D E3 D0 */	lwz r0, changed-_SDA_BASE_(r13)
+/* 8023D5F8 0023A3F8  80 0D E3 D0 */	lwz r0, changed@sda21(r13)
 /* 8023D5FC 0023A3FC  38 60 00 00 */	li r3, 0
-/* 8023D600 0023A400  80 8D E3 D4 */	lwz r4, lbl_803D1854-_SDA_BASE_(r13)
+/* 8023D600 0023A400  80 8D E3 D4 */	lwz r4, lbl_803D1854@sda21(r13)
 /* 8023D604 0023A404  7C 00 1A 78 */	xor r0, r0, r3
 /* 8023D608 0023A408  7C 83 1A 78 */	xor r3, r4, r3
 /* 8023D60C 0023A40C  7C 60 03 79 */	or. r0, r3, r0
 /* 8023D610 0023A410  40 82 FF 74 */	bne lbl_8023D584
 /* 8023D614 0023A414  38 00 00 01 */	li r0, 1
-/* 8023D618 0023A418  90 0D E3 A8 */	stw r0, flushFlag-_SDA_BASE_(r13)
+/* 8023D618 0023A418  90 0D E3 A8 */	stw r0, flushFlag@sda21(r13)
 /* 8023D61C 0023A41C  7F C3 F3 78 */	mr r3, r30
 /* 8023D620 0023A420  80 1F 01 20 */	lwz r0, 0x120(r31)
-/* 8023D624 0023A424  90 0D E3 F0 */	stw r0, NextBufAddr-_SDA_BASE_(r13)
+/* 8023D624 0023A424  90 0D E3 F0 */	stw r0, NextBufAddr@sda21(r13)
 /* 8023D628 0023A428  4B FF 6D C9 */	bl OSRestoreInterrupts
 /* 8023D62C 0023A42C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8023D630 0023A430  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -47476,7 +47476,7 @@ VISetNextFrameBuffer:
 /* 8023D670 0023A470  93 DF 01 20 */	stw r30, 0x120(r31)
 /* 8023D674 0023A474  38 00 00 01 */	li r0, 1
 /* 8023D678 0023A478  3B C3 00 00 */	addi r30, r3, 0
-/* 8023D67C 0023A47C  90 0D E3 F8 */	stw r0, FBSet-_SDA_BASE_(r13)
+/* 8023D67C 0023A47C  90 0D E3 F8 */	stw r0, FBSet@sda21(r13)
 /* 8023D680 0023A480  38 7F 00 F0 */	addi r3, r31, 0xf0
 /* 8023D684 0023A484  38 9F 01 24 */	addi r4, r31, 0x124
 /* 8023D688 0023A488  38 BF 01 28 */	addi r5, r31, 0x128
@@ -47560,7 +47560,7 @@ lbl_8023D784:
 /* 8023D794 0023A594  7C 06 28 40 */	cmplw r6, r5
 /* 8023D798 0023A598  54 63 05 7E */	clrlwi r3, r3, 0x15
 /* 8023D79C 0023A59C  40 82 FF E8 */	bne lbl_8023D784
-/* 8023D7A0 0023A5A0  80 CD E3 E8 */	lwz r6, CurrTiming-_SDA_BASE_(r13)
+/* 8023D7A0 0023A5A0  80 CD E3 E8 */	lwz r6, CurrTiming@sda21(r13)
 /* 8023D7A4 0023A5A4  38 05 FF FF */	addi r0, r5, -1
 /* 8023D7A8 0023A5A8  38 83 FF FF */	addi r4, r3, -1
 /* 8023D7AC 0023A5AC  A0 66 00 1A */	lhz r3, 0x1a(r6)
@@ -47588,7 +47588,7 @@ VIGetNextField:
 /* 8023D7F4 0023A5F4  38 61 00 10 */	addi r3, r1, 0x10
 /* 8023D7F8 0023A5F8  38 81 00 14 */	addi r4, r1, 0x14
 /* 8023D7FC 0023A5FC  4B FF FF 39 */	bl GetCurrentDisplayPosition
-/* 8023D800 0023A600  80 AD E3 E8 */	lwz r5, CurrTiming-_SDA_BASE_(r13)
+/* 8023D800 0023A600  80 AD E3 E8 */	lwz r5, CurrTiming@sda21(r13)
 /* 8023D804 0023A604  80 61 00 10 */	lwz r3, 0x10(r1)
 /* 8023D808 0023A608  A0 05 00 1A */	lhz r0, 0x1a(r5)
 /* 8023D80C 0023A60C  38 63 FF FF */	addi r3, r3, -1
@@ -47627,7 +47627,7 @@ VIGetCurrentLine:
 /* 8023D87C 0023A67C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8023D880 0023A680  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8023D884 0023A684  93 C1 00 18 */	stw r30, 0x18(r1)
-/* 8023D888 0023A688  83 ED E3 E8 */	lwz r31, CurrTiming-_SDA_BASE_(r13)
+/* 8023D888 0023A688  83 ED E3 E8 */	lwz r31, CurrTiming@sda21(r13)
 /* 8023D88C 0023A68C  4B FF 6B 3D */	bl OSDisableInterrupts
 /* 8023D890 0023A690  3C 80 CC 00 */	lis r4, 0xCC002000@ha
 /* 8023D894 0023A694  39 04 20 00 */	addi r8, r4, 0xCC002000@l
@@ -47642,7 +47642,7 @@ lbl_8023D8A4:
 /* 8023D8B4 0023A6B4  7C 07 30 40 */	cmplw r7, r6
 /* 8023D8B8 0023A6B8  54 87 05 7E */	clrlwi r7, r4, 0x15
 /* 8023D8BC 0023A6BC  40 82 FF E8 */	bne lbl_8023D8A4
-/* 8023D8C0 0023A6C0  80 8D E3 E8 */	lwz r4, CurrTiming-_SDA_BASE_(r13)
+/* 8023D8C0 0023A6C0  80 8D E3 E8 */	lwz r4, CurrTiming@sda21(r13)
 /* 8023D8C4 0023A6C4  38 A7 FF FF */	addi r5, r7, -1
 /* 8023D8C8 0023A6C8  38 C6 FF FF */	addi r6, r6, -1
 /* 8023D8CC 0023A6CC  A0 04 00 1A */	lhz r0, 0x1a(r4)
@@ -47670,7 +47670,7 @@ VIGetTvFormat:
 /* 8023D914 0023A714  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8023D918 0023A718  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8023D91C 0023A71C  4B FF 6A AD */	bl OSDisableInterrupts
-/* 8023D920 0023A720  80 AD E3 EC */	lwz r5, CurrTvMode-_SDA_BASE_(r13)
+/* 8023D920 0023A720  80 AD E3 EC */	lwz r5, CurrTvMode@sda21(r13)
 /* 8023D924 0023A724  28 05 00 06 */	cmplwi r5, 6
 /* 8023D928 0023A728  41 81 00 30 */	bgt lbl_8023D958
 /* 8023D92C 0023A72C  3C 80 80 33 */	lis r4, _esc__2_736@ha
@@ -47695,7 +47695,7 @@ lbl_8023D958:
 
 .global __VIDisplayPositionToXY
 __VIDisplayPositionToXY:
-/* 8023D974 0023A774  81 2D E3 E8 */	lwz r9, CurrTiming-_SDA_BASE_(r13)
+/* 8023D974 0023A774  81 2D E3 E8 */	lwz r9, CurrTiming@sda21(r13)
 /* 8023D978 0023A778  3C E0 80 3C */	lis r7, HorVer@ha
 /* 8023D97C 0023A77C  38 E7 23 F0 */	addi r7, r7, HorVer@l
 /* 8023D980 0023A780  A0 09 00 1A */	lhz r0, 0x1a(r9)
@@ -47927,10 +47927,10 @@ lbl_8023DC70:
 /* 8023DC88 0023AA88  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8023DC8C 0023AA8C  54 00 07 BD */	rlwinm. r0, r0, 0, 0x1e, 0x1e
 /* 8023DC90 0023AA90  40 82 FF 90 */	bne lbl_8023DC20
-/* 8023DC94 0023AA94  88 6D B4 E0 */	lbz r3, SendCount-_SDA_BASE_(r13)
+/* 8023DC94 0023AA94  88 6D B4 E0 */	lbz r3, SendCount@sda21(r13)
 /* 8023DC98 0023AA98  38 03 00 01 */	addi r0, r3, 1
-/* 8023DC9C 0023AA9C  98 0D B4 E0 */	stb r0, SendCount-_SDA_BASE_(r13)
-/* 8023DCA0 0023AAA0  88 0D B4 E0 */	lbz r0, SendCount-_SDA_BASE_(r13)
+/* 8023DC9C 0023AA9C  98 0D B4 E0 */	stb r0, SendCount@sda21(r13)
+/* 8023DCA0 0023AAA0  88 0D B4 E0 */	lbz r0, SendCount@sda21(r13)
 /* 8023DCA4 0023AAA4  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 8023DCA8 0023AAA8  41 82 00 0C */	beq lbl_8023DCB4
 /* 8023DCAC 0023AAAC  38 60 10 00 */	li r3, 0x1000
@@ -47980,7 +47980,7 @@ lbl_8023DD2C:
 /* 8023DD44 0023AB44  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8023DD48 0023AB48  54 00 07 BD */	rlwinm. r0, r0, 0, 0x1e, 0x1e
 /* 8023DD4C 0023AB4C  40 82 FF 98 */	bne lbl_8023DCE4
-/* 8023DD50 0023AB50  88 0D B4 E0 */	lbz r0, SendCount-_SDA_BASE_(r13)
+/* 8023DD50 0023AB50  88 0D B4 E0 */	lbz r0, SendCount@sda21(r13)
 /* 8023DD54 0023AB54  54 00 80 1E */	slwi r0, r0, 0x10
 /* 8023DD58 0023AB58  64 00 1F 00 */	oris r0, r0, 0x1f00
 /* 8023DD5C 0023AB5C  7C 00 DB 78 */	or r0, r0, r27
@@ -48063,7 +48063,7 @@ DBRead:
 /* 8023DE70 0023AC70  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 8023DE74 0023AC74  3B A3 00 00 */	addi r29, r3, 0
 /* 8023DE78 0023AC78  4B FF 65 51 */	bl OSDisableInterrupts
-/* 8023DE7C 0023AC7C  80 0D E4 08 */	lwz r0, SendMailData-_SDA_BASE_(r13)
+/* 8023DE7C 0023AC7C  80 0D E4 08 */	lwz r0, SendMailData@sda21(r13)
 /* 8023DE80 0023AC80  3B E3 00 00 */	addi r31, r3, 0
 /* 8023DE84 0023AC84  54 00 03 DF */	rlwinm. r0, r0, 0, 0xf, 0xf
 /* 8023DE88 0023AC88  41 82 00 0C */	beq lbl_8023DE94
@@ -48079,9 +48079,9 @@ lbl_8023DE98:
 /* 8023DEA8 0023ACA8  38 63 E0 00 */	addi r3, r3, -8192
 /* 8023DEAC 0023ACAC  48 00 03 A5 */	bl DBGRead
 /* 8023DEB0 0023ACB0  38 00 00 00 */	li r0, 0
-/* 8023DEB4 0023ACB4  90 0D E4 0C */	stw r0, RecvDataLeng-_SDA_BASE_(r13)
+/* 8023DEB4 0023ACB4  90 0D E4 0C */	stw r0, RecvDataLeng@sda21(r13)
 /* 8023DEB8 0023ACB8  7F E3 FB 78 */	mr r3, r31
-/* 8023DEBC 0023ACBC  98 0D E4 14 */	stb r0, EXIInputFlag-_SDA_BASE_(r13)
+/* 8023DEBC 0023ACBC  98 0D E4 14 */	stb r0, EXIInputFlag@sda21(r13)
 /* 8023DEC0 0023ACC0  4B FF 65 31 */	bl OSRestoreInterrupts
 /* 8023DEC4 0023ACC4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8023DEC8 0023ACC8  38 60 00 00 */	li r3, 0
@@ -48099,8 +48099,8 @@ DBQueryData:
 /* 8023DEEC 0023ACEC  90 01 00 04 */	stw r0, 4(r1)
 /* 8023DEF0 0023ACF0  94 21 FF E8 */	stwu r1, -0x18(r1)
 /* 8023DEF4 0023ACF4  93 E1 00 14 */	stw r31, 0x14(r1)
-/* 8023DEF8 0023ACF8  80 0D E4 0C */	lwz r0, RecvDataLeng-_SDA_BASE_(r13)
-/* 8023DEFC 0023ACFC  98 6D E4 14 */	stb r3, EXIInputFlag-_SDA_BASE_(r13)
+/* 8023DEF8 0023ACF8  80 0D E4 0C */	lwz r0, RecvDataLeng@sda21(r13)
+/* 8023DEFC 0023ACFC  98 6D E4 14 */	stb r3, EXIInputFlag@sda21(r13)
 /* 8023DF00 0023AD00  2C 00 00 00 */	cmpwi r0, 0
 /* 8023DF04 0023AD04  40 82 00 64 */	bne lbl_8023DF68
 /* 8023DF08 0023AD08  4B FF 64 C1 */	bl OSDisableInterrupts
@@ -48121,15 +48121,15 @@ DBQueryData:
 /* 8023DF44 0023AD44  28 00 00 00 */	cmplwi r0, 0
 /* 8023DF48 0023AD48  40 82 00 18 */	bne lbl_8023DF60
 /* 8023DF4C 0023AD4C  54 83 04 7E */	clrlwi r3, r4, 0x11
-/* 8023DF50 0023AD50  90 8D E4 08 */	stw r4, SendMailData-_SDA_BASE_(r13)
+/* 8023DF50 0023AD50  90 8D E4 08 */	stw r4, SendMailData@sda21(r13)
 /* 8023DF54 0023AD54  38 00 00 01 */	li r0, 1
-/* 8023DF58 0023AD58  90 6D E4 0C */	stw r3, RecvDataLeng-_SDA_BASE_(r13)
-/* 8023DF5C 0023AD5C  98 0D E4 14 */	stb r0, EXIInputFlag-_SDA_BASE_(r13)
+/* 8023DF58 0023AD58  90 6D E4 0C */	stw r3, RecvDataLeng@sda21(r13)
+/* 8023DF5C 0023AD5C  98 0D E4 14 */	stb r0, EXIInputFlag@sda21(r13)
 lbl_8023DF60:
 /* 8023DF60 0023AD60  7F E3 FB 78 */	mr r3, r31
 /* 8023DF64 0023AD64  4B FF 64 8D */	bl OSRestoreInterrupts
 lbl_8023DF68:
-/* 8023DF68 0023AD68  80 6D E4 0C */	lwz r3, RecvDataLeng-_SDA_BASE_(r13)
+/* 8023DF68 0023AD68  80 6D E4 0C */	lwz r3, RecvDataLeng@sda21(r13)
 /* 8023DF6C 0023AD6C  80 01 00 1C */	lwz r0, 0x1c(r1)
 /* 8023DF70 0023AD70  83 E1 00 14 */	lwz r31, 0x14(r1)
 /* 8023DF74 0023AD74  38 21 00 18 */	addi r1, r1, 0x18
@@ -48149,7 +48149,7 @@ DBInitInterrupts:
 /* 8023DFA0 0023ADA0  3C 60 80 24 */	lis r3, MWCallback@ha
 /* 8023DFA4 0023ADA4  38 03 E0 8C */	addi r0, r3, MWCallback@l
 /* 8023DFA8 0023ADA8  3C 60 80 24 */	lis r3, DBGHandler@ha
-/* 8023DFAC 0023ADAC  90 0D E4 04 */	stw r0, DBGCallback-_SDA_BASE_(r13)
+/* 8023DFAC 0023ADAC  90 0D E4 04 */	stw r0, DBGCallback@sda21(r13)
 /* 8023DFB0 0023ADB0  38 83 E0 4C */	addi r4, r3, DBGHandler@l
 /* 8023DFB4 0023ADB4  38 60 00 19 */	li r3, 0x19
 /* 8023DFB8 0023ADB8  4B FF 64 5D */	bl __OSSetInterruptHandler
@@ -48171,14 +48171,14 @@ DBInitComm:
 /* 8023DFEC 0023ADEC  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 8023DFF0 0023ADF0  3B A3 00 00 */	addi r29, r3, 0
 /* 8023DFF4 0023ADF4  4B FF 63 D5 */	bl OSDisableInterrupts
-/* 8023DFF8 0023ADF8  38 0D E4 14 */	addi r0, r13, EXIInputFlag-_SDA_BASE_
-/* 8023DFFC 0023ADFC  90 0D E4 10 */	stw r0, pEXIInputFlag-_SDA_BASE_(r13)
+/* 8023DFF8 0023ADF8  38 0D E4 14 */	addi r0, r13, EXIInputFlag@sda21
+/* 8023DFFC 0023ADFC  90 0D E4 10 */	stw r0, pEXIInputFlag@sda21(r13)
 /* 8023E000 0023AE00  3C 80 00 02 */	lis r4, 0x00018000@ha
 /* 8023E004 0023AE04  3B E3 00 00 */	addi r31, r3, 0
-/* 8023E008 0023AE08  80 0D E4 10 */	lwz r0, pEXIInputFlag-_SDA_BASE_(r13)
+/* 8023E008 0023AE08  80 0D E4 10 */	lwz r0, pEXIInputFlag@sda21(r13)
 /* 8023E00C 0023AE0C  38 64 80 00 */	addi r3, r4, 0x00018000@l
 /* 8023E010 0023AE10  90 1D 00 00 */	stw r0, 0(r29)
-/* 8023E014 0023AE14  93 CD E4 00 */	stw r30, MTRCallback-_SDA_BASE_(r13)
+/* 8023E014 0023AE14  93 CD E4 00 */	stw r30, MTRCallback@sda21(r13)
 /* 8023E018 0023AE18  4B FF 67 79 */	bl __OSMaskInterrupts
 /* 8023E01C 0023AE1C  3C 60 CC 00 */	lis r3, 0xCC006828@ha
 /* 8023E020 0023AE20  38 00 00 00 */	li r0, 0
@@ -48200,7 +48200,7 @@ DBGHandler:
 /* 8023E054 0023AE54  90 01 00 04 */	stw r0, 4(r1)
 /* 8023E058 0023AE58  38 00 10 00 */	li r0, 0x1000
 /* 8023E05C 0023AE5C  94 21 FF F8 */	stwu r1, -8(r1)
-/* 8023E060 0023AE60  81 8D E4 04 */	lwz r12, DBGCallback-_SDA_BASE_(r13)
+/* 8023E060 0023AE60  81 8D E4 04 */	lwz r12, DBGCallback@sda21(r13)
 /* 8023E064 0023AE64  90 05 30 00 */	stw r0, 0xCC003000@l(r5)
 /* 8023E068 0023AE68  28 0C 00 00 */	cmplwi r12, 0
 /* 8023E06C 0023AE6C  41 82 00 10 */	beq lbl_8023E07C
@@ -48219,8 +48219,8 @@ MWCallback:
 /* 8023E090 0023AE90  90 01 00 04 */	stw r0, 4(r1)
 /* 8023E094 0023AE94  38 00 00 01 */	li r0, 1
 /* 8023E098 0023AE98  94 21 FF F8 */	stwu r1, -8(r1)
-/* 8023E09C 0023AE9C  81 8D E4 00 */	lwz r12, MTRCallback-_SDA_BASE_(r13)
-/* 8023E0A0 0023AEA0  98 0D E4 14 */	stb r0, EXIInputFlag-_SDA_BASE_(r13)
+/* 8023E09C 0023AE9C  81 8D E4 00 */	lwz r12, MTRCallback@sda21(r13)
+/* 8023E0A0 0023AEA0  98 0D E4 14 */	stb r0, EXIInputFlag@sda21(r13)
 /* 8023E0A4 0023AEA4  28 0C 00 00 */	cmplwi r12, 0
 /* 8023E0A8 0023AEA8  41 82 00 10 */	beq lbl_8023E0B8
 /* 8023E0AC 0023AEAC  7D 88 03 A6 */	mtlr r12

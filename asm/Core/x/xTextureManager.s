@@ -440,7 +440,7 @@ lbl_8006E7B8:
 /* 8006E7D4 0006B5D4  48 00 00 8D */	bl Get__15xTextureManagerFv
 /* 8006E7D8 0006B5D8  38 1F 20 1C */	addi r0, r31, 0x201c
 /* 8006E7DC 0006B5DC  7F C3 01 2E */	stwx r30, r3, r0
-/* 8006E7E0 0006B5E0  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 8006E7E0 0006B5E0  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 8006E7E4 0006B5E4  80 7D 00 18 */	lwz r3, 0x18(r29)
 /* 8006E7E8 0006B5E8  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 8006E7EC 0006B5EC  7D 89 03 A6 */	mtctr r12
@@ -462,7 +462,7 @@ lbl_8006E804:
 /* 8006E828 0006B628  48 01 6D C9 */	bl RWTX_Read__FPvUiPvUiPUi
 /* 8006E82C 0006B62C  90 7D 00 18 */	stw r3, 0x18(r29)
 /* 8006E830 0006B630  7F C3 F3 78 */	mr r3, r30
-/* 8006E834 0006B634  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 8006E834 0006B634  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 8006E838 0006B638  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 8006E83C 0006B63C  7D 89 03 A6 */	mtctr r12
 /* 8006E840 0006B640  4E 80 04 21 */	bctrl 
@@ -480,14 +480,14 @@ Get__15xTextureManagerFv:
 /* 8006E860 0006B660  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8006E864 0006B664  7C 08 02 A6 */	mflr r0
 /* 8006E868 0006B668  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8006E86C 0006B66C  88 0D BF 60 */	lbz r0, init_esc__7_887-_SDA_BASE_(r13)
+/* 8006E86C 0006B66C  88 0D BF 60 */	lbz r0, init_esc__7_887@sda21(r13)
 /* 8006E870 0006B670  7C 00 07 75 */	extsb. r0, r0
 /* 8006E874 0006B674  40 82 00 18 */	bne lbl_8006E88C
 /* 8006E878 0006B678  3C 60 80 35 */	lis r3, mgr_esc__7_886@ha
 /* 8006E87C 0006B67C  38 63 F8 F0 */	addi r3, r3, mgr_esc__7_886@l
 /* 8006E880 0006B680  48 00 00 25 */	bl __ct__15xTextureManagerFv
 /* 8006E884 0006B684  38 00 00 01 */	li r0, 1
-/* 8006E888 0006B688  98 0D BF 60 */	stb r0, init_esc__7_887-_SDA_BASE_(r13)
+/* 8006E888 0006B688  98 0D BF 60 */	stb r0, init_esc__7_887@sda21(r13)
 lbl_8006E88C:
 /* 8006E88C 0006B68C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8006E890 0006B690  3C 60 80 35 */	lis r3, mgr_esc__7_886@ha
@@ -716,7 +716,7 @@ lbl_8006EB74:
 /* 8006EB8C 0006B98C  7F A3 EB 78 */	mr r3, r29
 /* 8006EB90 0006B990  98 1E 00 1F */	stb r0, 0x1f(r30)
 /* 8006EB94 0006B994  38 80 00 00 */	li r4, 0
-/* 8006EB98 0006B998  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 8006EB98 0006B998  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 8006EB9C 0006B99C  81 85 01 08 */	lwz r12, 0x108(r5)
 /* 8006EBA0 0006B9A0  7D 89 03 A6 */	mtctr r12
 /* 8006EBA4 0006B9A4  4E 80 04 21 */	bctrl 
@@ -753,7 +753,7 @@ lbl_8006EB74:
 /* 8006EC20 0006BA20  40 82 00 2C */	bne lbl_8006EC4C
 /* 8006EC24 0006BA24  38 00 00 00 */	li r0, 0
 /* 8006EC28 0006BA28  98 1E 00 1F */	stb r0, 0x1f(r30)
-/* 8006EC2C 0006BA2C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 8006EC2C 0006BA2C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 8006EC30 0006BA30  80 7E 00 18 */	lwz r3, 0x18(r30)
 /* 8006EC34 0006BA34  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 8006EC38 0006BA38  7D 89 03 A6 */	mtctr r12

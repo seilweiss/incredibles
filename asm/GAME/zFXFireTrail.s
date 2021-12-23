@@ -78,17 +78,17 @@ setup__10fire_trailFv:
 /* 801ECEB0 001E9CB0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801ECEB4 001E9CB4  7C 08 02 A6 */	mflr r0
 /* 801ECEB8 001E9CB8  3C 60 80 3A */	lis r3, default_config__10fire_trail@ha
-/* 801ECEBC 001E9CBC  C0 C2 D6 60 */	lfs f6, _esc__2_891_0-_SDA2_BASE_(r2)
+/* 801ECEBC 001E9CBC  C0 C2 D6 60 */	lfs f6, _esc__2_891_0@sda21(r2)
 /* 801ECEC0 001E9CC0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801ECEC4 001E9CC4  38 A3 4E 70 */	addi r5, r3, default_config__10fire_trail@l
-/* 801ECEC8 001E9CC8  C0 62 D6 6C */	lfs f3, _esc__2_894-_SDA2_BASE_(r2)
+/* 801ECEC8 001E9CC8  C0 62 D6 6C */	lfs f3, _esc__2_894@sda21(r2)
 /* 801ECECC 001E9CCC  38 65 00 40 */	addi r3, r5, 0x40
-/* 801ECED0 001E9CD0  C0 82 D6 68 */	lfs f4, _esc__2_893_0-_SDA2_BASE_(r2)
-/* 801ECED4 001E9CD4  38 82 82 40 */	addi r4, r2, g_WHITE-_SDA2_BASE_
-/* 801ECED8 001E9CD8  C0 A2 D6 64 */	lfs f5, _esc__2_892_0-_SDA2_BASE_(r2)
-/* 801ECEDC 001E9CDC  C0 42 D6 70 */	lfs f2, _esc__2_895-_SDA2_BASE_(r2)
-/* 801ECEE0 001E9CE0  C0 22 D6 74 */	lfs f1, _esc__2_896-_SDA2_BASE_(r2)
-/* 801ECEE4 001E9CE4  C0 02 D6 78 */	lfs f0, _esc__2_897-_SDA2_BASE_(r2)
+/* 801ECED0 001E9CD0  C0 82 D6 68 */	lfs f4, _esc__2_893_0@sda21(r2)
+/* 801ECED4 001E9CD4  38 82 82 40 */	addi r4, r2, g_WHITE@sda21
+/* 801ECED8 001E9CD8  C0 A2 D6 64 */	lfs f5, _esc__2_892_0@sda21(r2)
+/* 801ECEDC 001E9CDC  C0 42 D6 70 */	lfs f2, _esc__2_895@sda21(r2)
+/* 801ECEE0 001E9CE0  C0 22 D6 74 */	lfs f1, _esc__2_896@sda21(r2)
+/* 801ECEE4 001E9CE4  C0 02 D6 78 */	lfs f0, _esc__2_897@sda21(r2)
 /* 801ECEE8 001E9CE8  D0 C5 00 14 */	stfs f6, 0x14(r5)
 /* 801ECEEC 001E9CEC  D0 A5 00 28 */	stfs f5, 0x28(r5)
 /* 801ECEF0 001E9CF0  D0 85 00 04 */	stfs f4, 4(r5)
@@ -102,17 +102,17 @@ setup__10fire_trailFv:
 /* 801ECF10 001E9D10  D0 65 00 20 */	stfs f3, 0x20(r5)
 /* 801ECF14 001E9D14  4B E2 93 29 */	bl __as__10xColor_tagFRC10xColor_tag
 /* 801ECF18 001E9D18  3C 60 80 3A */	lis r3, default_config__10fire_trail@ha
-/* 801ECF1C 001E9D1C  C0 62 D6 6C */	lfs f3, _esc__2_894-_SDA2_BASE_(r2)
+/* 801ECF1C 001E9D1C  C0 62 D6 6C */	lfs f3, _esc__2_894@sda21(r2)
 /* 801ECF20 001E9D20  38 63 4E 70 */	addi r3, r3, default_config__10fire_trail@l
-/* 801ECF24 001E9D24  C0 42 D6 7C */	lfs f2, _esc__2_898-_SDA2_BASE_(r2)
-/* 801ECF28 001E9D28  C0 22 D6 78 */	lfs f1, _esc__2_897-_SDA2_BASE_(r2)
+/* 801ECF24 001E9D24  C0 42 D6 7C */	lfs f2, _esc__2_898@sda21(r2)
+/* 801ECF28 001E9D28  C0 22 D6 78 */	lfs f1, _esc__2_897@sda21(r2)
 /* 801ECF2C 001E9D2C  38 00 00 01 */	li r0, 1
-/* 801ECF30 001E9D30  C0 02 D6 74 */	lfs f0, _esc__2_896-_SDA2_BASE_(r2)
+/* 801ECF30 001E9D30  C0 02 D6 74 */	lfs f0, _esc__2_896@sda21(r2)
 /* 801ECF34 001E9D34  D0 63 00 24 */	stfs f3, 0x24(r3)
 /* 801ECF38 001E9D38  D0 43 00 2C */	stfs f2, 0x2c(r3)
 /* 801ECF3C 001E9D3C  D0 23 00 30 */	stfs f1, 0x30(r3)
 /* 801ECF40 001E9D40  D0 03 00 3C */	stfs f0, 0x3c(r3)
-/* 801ECF44 001E9D44  98 0D AD 30 */	stb r0, need_setup__10fire_trail-_SDA_BASE_(r13)
+/* 801ECF44 001E9D44  98 0D AD 30 */	stb r0, need_setup__10fire_trail@sda21(r13)
 /* 801ECF48 001E9D48  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801ECF4C 001E9D4C  7C 08 03 A6 */	mtlr r0
 /* 801ECF50 001E9D50  38 21 00 10 */	addi r1, r1, 0x10
@@ -148,8 +148,8 @@ scene_setup__10fire_trailFv:
 /* 801ECFBC 001E9DBC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801ECFC0 001E9DC0  4B F8 84 3D */	bl xParticleBatchAddSystem__FRC20xParticleBatchSystem
 /* 801ECFC4 001E9DC4  38 00 00 00 */	li r0, 0
-/* 801ECFC8 001E9DC8  90 6D DC 80 */	stw r3, system_id__10fire_trail-_SDA_BASE_(r13)
-/* 801ECFCC 001E9DCC  98 0D AD 30 */	stb r0, need_setup__10fire_trail-_SDA_BASE_(r13)
+/* 801ECFC8 001E9DC8  90 6D DC 80 */	stw r3, system_id__10fire_trail@sda21(r13)
+/* 801ECFCC 001E9DCC  98 0D AD 30 */	stb r0, need_setup__10fire_trail@sda21(r13)
 lbl_801ECFD0:
 /* 801ECFD0 001E9DD0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801ECFD4 001E9DD4  7C 08 03 A6 */	mtlr r0
@@ -182,7 +182,7 @@ emit__10fire_trailFRC5xVec3RC5xVec3RfRC5xVec3fP5xVec3PQ210fire_trail6config:
 /* 801ED028 001E9E28  DB 01 00 80 */	stfd f24, 0x80(r1)
 /* 801ED02C 001E9E2C  F3 01 00 88 */	psq_st f24, 136(r1), 0, qr0
 /* 801ED030 001E9E30  BE E1 00 5C */	stmw r23, 0x5c(r1)
-/* 801ED034 001E9E34  88 0D AD 30 */	lbz r0, need_setup__10fire_trail-_SDA_BASE_(r13)
+/* 801ED034 001E9E34  88 0D AD 30 */	lbz r0, need_setup__10fire_trail@sda21(r13)
 /* 801ED038 001E9E38  FF 80 08 90 */	fmr f28, f1
 /* 801ED03C 001E9E3C  7C 78 1B 78 */	mr r24, r3
 /* 801ED040 001E9E40  7C 99 23 78 */	mr r25, r4
@@ -196,12 +196,12 @@ lbl_801ED05C:
 /* 801ED05C 001E9E5C  C0 3A 00 00 */	lfs f1, 0(r26)
 /* 801ED060 001E9E60  3E E0 43 30 */	lis r23, 0x4330
 /* 801ED064 001E9E64  C0 1C 00 14 */	lfs f0, 0x14(r28)
-/* 801ED068 001E9E68  C3 22 D6 74 */	lfs f25, _esc__2_896-_SDA2_BASE_(r2)
+/* 801ED068 001E9E68  C3 22 D6 74 */	lfs f25, _esc__2_896@sda21(r2)
 /* 801ED06C 001E9E6C  EF A1 00 24 */	fdivs f29, f1, f0
-/* 801ED070 001E9E70  C3 C2 D6 80 */	lfs f30, _esc__2_954_2-_SDA2_BASE_(r2)
-/* 801ED074 001E9E74  C3 E2 D6 84 */	lfs f31, _esc__2_955_1-_SDA2_BASE_(r2)
-/* 801ED078 001E9E78  C3 42 D6 88 */	lfs f26, _esc__2_956_1-_SDA2_BASE_(r2)
-/* 801ED07C 001E9E7C  CB 62 D6 90 */	lfd f27, _esc__2_961_3-_SDA2_BASE_(r2)
+/* 801ED070 001E9E70  C3 C2 D6 80 */	lfs f30, _esc__2_954_2@sda21(r2)
+/* 801ED074 001E9E74  C3 E2 D6 84 */	lfs f31, _esc__2_955_1@sda21(r2)
+/* 801ED078 001E9E78  C3 42 D6 88 */	lfs f26, _esc__2_956_1@sda21(r2)
+/* 801ED07C 001E9E7C  CB 62 D6 90 */	lfd f27, _esc__2_961_3@sda21(r2)
 /* 801ED080 001E9E80  EC 00 0F 3A */	fmadds f0, f0, f28, f1
 /* 801ED084 001E9E84  EF 9C E8 28 */	fsubs f28, f28, f29
 /* 801ED088 001E9E88  D0 1A 00 00 */	stfs f0, 0(r26)
@@ -211,13 +211,13 @@ lbl_801ED05C:
 /* 801ED098 001E9E98  83 C1 00 4C */	lwz r30, 0x4c(r1)
 /* 801ED09C 001E9E9C  48 00 02 74 */	b lbl_801ED310
 lbl_801ED0A0:
-/* 801ED0A0 001E9EA0  80 6D DC 80 */	lwz r3, system_id__10fire_trail-_SDA_BASE_(r13)
+/* 801ED0A0 001E9EA0  80 6D DC 80 */	lwz r3, system_id__10fire_trail@sda21(r13)
 /* 801ED0A4 001E9EA4  7F C4 F3 78 */	mr r4, r30
 /* 801ED0A8 001E9EA8  38 A1 00 08 */	addi r5, r1, 8
 /* 801ED0AC 001E9EAC  4B F8 84 39 */	bl xParticleBatchEmit__FiiPPUc
 /* 801ED0B0 001E9EB0  7C 7F 1B 79 */	or. r31, r3, r3
 /* 801ED0B4 001E9EB4  40 82 00 10 */	bne lbl_801ED0C4
-/* 801ED0B8 001E9EB8  C0 02 D6 74 */	lfs f0, _esc__2_896-_SDA2_BASE_(r2)
+/* 801ED0B8 001E9EB8  C0 02 D6 74 */	lfs f0, _esc__2_896@sda21(r2)
 /* 801ED0BC 001E9EBC  D0 1A 00 00 */	stfs f0, 0(r26)
 /* 801ED0C0 001E9EC0  48 00 02 58 */	b lbl_801ED318
 lbl_801ED0C4:
@@ -307,7 +307,7 @@ lbl_801ED0D4:
 /* 801ED20C 001EA00C  7F 24 CB 78 */	mr r4, r25
 /* 801ED210 001EA010  38 61 00 18 */	addi r3, r1, 0x18
 /* 801ED214 001EA014  4B E1 EB 55 */	bl __ml__5xVec3CFf
-/* 801ED218 001EA018  C0 22 D6 78 */	lfs f1, _esc__2_897-_SDA2_BASE_(r2)
+/* 801ED218 001EA018  C0 22 D6 78 */	lfs f1, _esc__2_897@sda21(r2)
 /* 801ED21C 001EA01C  38 61 00 24 */	addi r3, r1, 0x24
 /* 801ED220 001EA020  38 81 00 18 */	addi r4, r1, 0x18
 /* 801ED224 001EA024  4B E1 EB 45 */	bl __ml__5xVec3CFf
@@ -414,7 +414,7 @@ update__10fire_trailFPUciR10ptank_poolfPv:
 /* 801ED38C 001EA18C  1C 04 00 30 */	mulli r0, r4, 0x30
 /* 801ED390 001EA190  7C 7C 1B 78 */	mr r28, r3
 /* 801ED394 001EA194  FF C0 08 90 */	fmr f30, f1
-/* 801ED398 001EA198  C3 E2 D6 74 */	lfs f31, _esc__2_896-_SDA2_BASE_(r2)
+/* 801ED398 001EA198  C3 E2 D6 74 */	lfs f31, _esc__2_896@sda21(r2)
 /* 801ED39C 001EA19C  7F 9E E3 78 */	mr r30, r28
 /* 801ED3A0 001EA1A0  7C BF 2B 78 */	mr r31, r5
 /* 801ED3A4 001EA1A4  7F BE 02 14 */	add r29, r30, r0
@@ -434,7 +434,7 @@ lbl_801ED3AC:
 lbl_801ED3D8:
 /* 801ED3D8 001EA1D8  38 7E 00 10 */	addi r3, r30, 0x10
 /* 801ED3DC 001EA1DC  4B E1 E0 79 */	bl length__5xVec3CFv
-/* 801ED3E0 001EA1E0  C0 42 D6 74 */	lfs f2, _esc__2_896-_SDA2_BASE_(r2)
+/* 801ED3E0 001EA1E0  C0 42 D6 74 */	lfs f2, _esc__2_896@sda21(r2)
 /* 801ED3E4 001EA1E4  FC 02 08 00 */	fcmpu cr0, f2, f1
 /* 801ED3E8 001EA1E8  41 82 00 3C */	beq lbl_801ED424
 /* 801ED3EC 001EA1EC  80 7E 00 2C */	lwz r3, 0x2c(r30)
@@ -482,7 +482,7 @@ lbl_801ED424:
 /* 801ED488 001EA288  4B E2 6B 55 */	bl __as__5RwV3dFRC5RwV3d
 /* 801ED48C 001EA28C  C0 1E 00 0C */	lfs f0, 0xc(r30)
 /* 801ED490 001EA290  38 81 00 20 */	addi r4, r1, 0x20
-/* 801ED494 001EA294  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801ED494 001EA294  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801ED498 001EA298  D0 01 00 2C */	stfs f0, 0x2c(r1)
 /* 801ED49C 001EA29C  80 63 00 04 */	lwz r3, 4(r3)
 /* 801ED4A0 001EA2A0  80 63 00 00 */	lwz r3, 0(r3)
@@ -509,18 +509,18 @@ lbl_801ED424:
 /* 801ED4F4 001EA2F4  EC 61 00 24 */	fdivs f3, f1, f0
 /* 801ED4F8 001EA2F8  48 00 00 08 */	b lbl_801ED500
 lbl_801ED4FC:
-/* 801ED4FC 001EA2FC  C0 62 D6 88 */	lfs f3, _esc__2_956_1-_SDA2_BASE_(r2)
+/* 801ED4FC 001EA2FC  C0 62 D6 88 */	lfs f3, _esc__2_956_1@sda21(r2)
 lbl_801ED500:
 /* 801ED500 001EA300  88 63 00 42 */	lbz r3, 0x42(r3)
 /* 801ED504 001EA304  3C 00 43 30 */	lis r0, 0x4330
 /* 801ED508 001EA308  90 01 00 30 */	stw r0, 0x30(r1)
-/* 801ED50C 001EA30C  C8 42 D6 98 */	lfd f2, _esc__2_994_3-_SDA2_BASE_(r2)
+/* 801ED50C 001EA30C  C8 42 D6 98 */	lfd f2, _esc__2_994_3@sda21(r2)
 /* 801ED510 001EA310  90 61 00 34 */	stw r3, 0x34(r1)
 /* 801ED514 001EA314  80 7F 00 24 */	lwz r3, 0x24(r31)
 /* 801ED518 001EA318  C8 01 00 30 */	lfd f0, 0x30(r1)
 /* 801ED51C 001EA31C  90 01 00 40 */	stw r0, 0x40(r1)
 /* 801ED520 001EA320  EC 00 10 28 */	fsubs f0, f0, f2
-/* 801ED524 001EA324  C0 22 D6 A0 */	lfs f1, _esc__2_1051_3-_SDA2_BASE_(r2)
+/* 801ED524 001EA324  C0 22 D6 A0 */	lfs f1, _esc__2_1051_3@sda21(r2)
 /* 801ED528 001EA328  90 01 00 50 */	stw r0, 0x50(r1)
 /* 801ED52C 001EA32C  EC 00 00 F2 */	fmuls f0, f0, f3
 /* 801ED530 001EA330  FC 00 00 1E */	fctiwz f0, f0

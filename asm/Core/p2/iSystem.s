@@ -39,7 +39,7 @@ pARAMBaseAddressFMOD:
 ARAMBytesForFMOD:
 	.skip 0x8
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global _esc__2_1053_3
 _esc__2_1053_3:
@@ -235,7 +235,7 @@ iSystemInitGraphics__Fv:
 /* 800815E0 0007E3E0  3C 60 80 08 */	lis r3, my_dsc__FUs@ha
 /* 800815E4 0007E3E4  38 63 14 A8 */	addi r3, r3, my_dsc__FUs@l
 /* 800815E8 0007E3E8  48 1A 88 09 */	bl GXSetDrawSyncCallback
-/* 800815EC 0007E3EC  90 6D C1 D8 */	stw r3, old_dsc-_SDA_BASE_(r13)
+/* 800815EC 0007E3EC  90 6D C1 D8 */	stw r3, old_dsc@sda21(r13)
 /* 800815F0 0007E3F0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800815F4 0007E3F4  7C 08 03 A6 */	mtlr r0
 /* 800815F8 0007E3F8  38 21 00 10 */	addi r1, r1, 0x10
@@ -324,10 +324,10 @@ iRenderWareInit1__Fv:
 /* 80081704 0007E504  3C A0 00 08 */	lis r5, 8
 /* 80081708 0007E508  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8008170C 0007E50C  38 61 00 08 */	addi r3, r1, 8
-/* 80081710 0007E510  81 02 92 60 */	lwz r8, _esc__2_1035_0-_SDA2_BASE_(r2)
-/* 80081714 0007E514  80 E2 92 64 */	lwz r7, lbl_803D2F84-_SDA2_BASE_(r2)
-/* 80081718 0007E518  80 C2 92 68 */	lwz r6, lbl_803D2F88-_SDA2_BASE_(r2)
-/* 8008171C 0007E51C  80 02 92 6C */	lwz r0, lbl_803D2F8C-_SDA2_BASE_(r2)
+/* 80081710 0007E510  81 02 92 60 */	lwz r8, _esc__2_1035_0@sda21(r2)
+/* 80081714 0007E514  80 E2 92 64 */	lwz r7, lbl_803D2F84@sda21(r2)
+/* 80081718 0007E518  80 C2 92 68 */	lwz r6, lbl_803D2F88@sda21(r2)
+/* 8008171C 0007E51C  80 02 92 6C */	lwz r0, lbl_803D2F8C@sda21(r2)
 /* 80081720 0007E520  91 01 00 08 */	stw r8, 8(r1)
 /* 80081724 0007E524  90 E1 00 0C */	stw r7, 0xc(r1)
 /* 80081728 0007E528  90 C1 00 10 */	stw r6, 0x10(r1)
@@ -359,35 +359,35 @@ iRenderWareInit2__Fv:
 /* 8008177C 0007E57C  48 1B BF 3D */	bl VISetBlack
 /* 80081780 0007E580  48 1B BD 9D */	bl VIFlush
 /* 80081784 0007E584  48 1B B0 A9 */	bl VIWaitForRetrace
-/* 80081788 0007E588  38 6D C1 E8 */	addi r3, r13, renderObject-_SDA_BASE_
-/* 8008178C 0007E58C  38 8D 86 D8 */	addi r4, r13, myGXNtsc480IntDf-_SDA_BASE_
+/* 80081788 0007E588  38 6D C1 E8 */	addi r3, r13, renderObject@sda21
+/* 8008178C 0007E58C  38 8D 86 D8 */	addi r4, r13, myGXNtsc480IntDf@sda21
 /* 80081790 0007E590  48 00 01 89 */	bl __as__16_GXRenderModeObjFRC16_GXRenderModeObj
 /* 80081794 0007E594  4B FD 0D 71 */	bl zMainIsNTSC__Fv
 /* 80081798 0007E598  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8008179C 0007E59C  41 82 00 14 */	beq lbl_800817B0
-/* 800817A0 0007E5A0  38 6D C1 E8 */	addi r3, r13, renderObject-_SDA_BASE_
-/* 800817A4 0007E5A4  38 8D 86 D8 */	addi r4, r13, myGXNtsc480IntDf-_SDA_BASE_
+/* 800817A0 0007E5A0  38 6D C1 E8 */	addi r3, r13, renderObject@sda21
+/* 800817A4 0007E5A4  38 8D 86 D8 */	addi r4, r13, myGXNtsc480IntDf@sda21
 /* 800817A8 0007E5A8  48 00 01 71 */	bl __as__16_GXRenderModeObjFRC16_GXRenderModeObj
 /* 800817AC 0007E5AC  48 00 00 1C */	b lbl_800817C8
 lbl_800817B0:
 /* 800817B0 0007E5B0  4B FD 0D 41 */	bl zMainIsPAL__Fv
 /* 800817B4 0007E5B4  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 800817B8 0007E5B8  41 82 00 10 */	beq lbl_800817C8
-/* 800817BC 0007E5BC  38 6D C1 E8 */	addi r3, r13, renderObject-_SDA_BASE_
-/* 800817C0 0007E5C0  38 8D 87 14 */	addi r4, r13, myGXPal528IntDf-_SDA_BASE_
+/* 800817BC 0007E5BC  38 6D C1 E8 */	addi r3, r13, renderObject@sda21
+/* 800817C0 0007E5C0  38 8D 87 14 */	addi r4, r13, myGXPal528IntDf@sda21
 /* 800817C4 0007E5C4  48 00 01 55 */	bl __as__16_GXRenderModeObjFRC16_GXRenderModeObj
 lbl_800817C8:
-/* 800817C8 0007E5C8  80 6D 91 C4 */	lwz r3, FB_XRES-_SDA_BASE_(r13)
-/* 800817CC 0007E5CC  38 CD C1 E8 */	addi r6, r13, renderObject-_SDA_BASE_
-/* 800817D0 0007E5D0  80 ED 91 C8 */	lwz r7, FB_YRES-_SDA_BASE_(r13)
-/* 800817D4 0007E5D4  38 8D C1 DC */	addi r4, r13, deviceConfig-_SDA_BASE_
+/* 800817C8 0007E5C8  80 6D 91 C4 */	lwz r3, FB_XRES@sda21(r13)
+/* 800817CC 0007E5CC  38 CD C1 E8 */	addi r6, r13, renderObject@sda21
+/* 800817D0 0007E5D0  80 ED 91 C8 */	lwz r7, FB_YRES@sda21(r13)
+/* 800817D4 0007E5D4  38 8D C1 DC */	addi r4, r13, deviceConfig@sda21
 /* 800817D8 0007E5D8  38 A0 00 01 */	li r5, 1
 /* 800817DC 0007E5DC  3C 00 00 02 */	lis r0, 2
 /* 800817E0 0007E5E0  B0 66 00 04 */	sth r3, 4(r6)
 /* 800817E4 0007E5E4  38 61 00 0C */	addi r3, r1, 0xc
 /* 800817E8 0007E5E8  B0 E6 00 06 */	sth r7, 6(r6)
 /* 800817EC 0007E5EC  B0 E6 00 08 */	sth r7, 8(r6)
-/* 800817F0 0007E5F0  90 CD C1 DC */	stw r6, deviceConfig-_SDA_BASE_(r13)
+/* 800817F0 0007E5F0  90 CD C1 DC */	stw r6, deviceConfig@sda21(r13)
 /* 800817F4 0007E5F4  90 A4 00 04 */	stw r5, 4(r4)
 /* 800817F8 0007E5F8  90 04 00 08 */	stw r0, 8(r4)
 /* 800817FC 0007E5FC  90 81 00 0C */	stw r4, 0xc(r1)
@@ -404,7 +404,7 @@ lbl_800817C8:
 lbl_80081828:
 /* 80081828 0007E628  48 21 20 81 */	bl RwEngineGetCurrentVideoMode
 /* 8008182C 0007E62C  7C 60 1B 78 */	mr r0, r3
-/* 80081830 0007E630  38 6D C1 C0 */	addi r3, r13, sVideoMode-_SDA_BASE_
+/* 80081830 0007E630  38 6D C1 C0 */	addi r3, r13, sVideoMode@sda21
 /* 80081834 0007E634  7C 04 03 78 */	mr r4, r0
 /* 80081838 0007E638  48 21 1F E5 */	bl RwEngineGetVideoModeInfo
 /* 8008183C 0007E63C  48 21 21 DD */	bl RwEngineStart
@@ -421,7 +421,7 @@ lbl_80081864:
 /* 80081864 0007E664  3C 60 80 08 */	lis r3, TextureRead__FPCcPCc@ha
 /* 80081868 0007E668  38 63 1A 1C */	addi r3, r3, TextureRead__FPCcPCc@l
 /* 8008186C 0007E66C  48 21 8A 85 */	bl RwTextureSetReadCallBack
-/* 80081870 0007E670  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 80081870 0007E670  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 80081874 0007E674  38 60 00 14 */	li r3, 0x14
 /* 80081878 0007E678  38 80 00 02 */	li r4, 2
 /* 8008187C 0007E67C  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -433,11 +433,11 @@ lbl_80081864:
 /* 80081894 0007E694  48 21 8A 75 */	bl RwTextureSetMipmapping
 /* 80081898 0007E698  38 60 00 01 */	li r3, 1
 /* 8008189C 0007E69C  48 21 8A 99 */	bl RwTextureSetAutoMipmapping
-/* 800818A0 0007E6A0  80 6D 91 C4 */	lwz r3, FB_XRES-_SDA_BASE_(r13)
+/* 800818A0 0007E6A0  80 6D 91 C4 */	lwz r3, FB_XRES@sda21(r13)
 /* 800818A4 0007E6A4  38 A0 00 00 */	li r5, 0
-/* 800818A8 0007E6A8  80 8D 91 C8 */	lwz r4, FB_YRES-_SDA_BASE_(r13)
+/* 800818A8 0007E6A8  80 8D 91 C8 */	lwz r4, FB_YRES@sda21(r13)
 /* 800818AC 0007E6AC  4B F8 3F C1 */	bl iCameraCreate__Fiii
-/* 800818B0 0007E6B0  80 02 EC C0 */	lwz r0, _esc__2_1053_3-_SDA2_BASE_(r2)
+/* 800818B0 0007E6B0  80 02 EC C0 */	lwz r0, _esc__2_1053_3@sda21(r2)
 /* 800818B4 0007E6B4  7C 7F 1B 78 */	mr r31, r3
 /* 800818B8 0007E6B8  38 81 00 08 */	addi r4, r1, 8
 /* 800818BC 0007E6BC  38 A0 00 03 */	li r5, 3
@@ -567,7 +567,7 @@ TextureRead__FPCcPCc:
 /* 80081A74 0007E874  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80081A78 0007E878  2C 00 00 08 */	cmpwi r0, 8
 /* 80081A7C 0007E87C  40 80 00 20 */	bge lbl_80081A9C
-/* 80081A80 0007E880  80 0D E6 F8 */	lwz r0, _RwGameCubeRasterExtOffset-_SDA_BASE_(r13)
+/* 80081A80 0007E880  80 0D E6 F8 */	lwz r0, _RwGameCubeRasterExtOffset@sda21(r13)
 /* 80081A84 0007E884  7C 63 02 15 */	add. r3, r3, r0
 /* 80081A88 0007E888  41 82 00 10 */	beq lbl_80081A98
 /* 80081A8C 0007E88C  80 03 00 0C */	lwz r0, 0xc(r3)
@@ -607,7 +607,7 @@ malloc:
 /* 80081AF0 0007E8F0  38 60 00 00 */	li r3, 0
 /* 80081AF4 0007E8F4  48 00 00 1C */	b lbl_80081B10
 lbl_80081AF8:
-/* 80081AF8 0007E8F8  80 6D C0 48 */	lwz r3, the_heap-_SDA_BASE_(r13)
+/* 80081AF8 0007E8F8  80 6D C0 48 */	lwz r3, the_heap@sda21(r13)
 /* 80081AFC 0007E8FC  48 1B 06 35 */	bl OSAllocFromHeap
 /* 80081B00 0007E900  7C 7F 1B 79 */	or. r31, r3, r3
 /* 80081B04 0007E904  40 82 00 08 */	bne lbl_80081B0C
@@ -628,7 +628,7 @@ free:
 /* 80081B2C 0007E92C  7C 64 1B 79 */	or. r4, r3, r3
 /* 80081B30 0007E930  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80081B34 0007E934  41 82 00 0C */	beq lbl_80081B40
-/* 80081B38 0007E938  80 6D C0 48 */	lwz r3, the_heap-_SDA_BASE_(r13)
+/* 80081B38 0007E938  80 6D C0 48 */	lwz r3, the_heap@sda21(r13)
 /* 80081B3C 0007E93C  48 1B 06 F1 */	bl OSFreeToHeap
 lbl_80081B40:
 /* 80081B40 0007E940  80 01 00 14 */	lwz r0, 0x14(r1)

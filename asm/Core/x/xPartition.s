@@ -55,7 +55,7 @@ xPartitionVolume__FP13_tagPartitionP7xVolumeiii:
 /* 80050110 0004CF10  C0 1C 00 08 */	lfs f0, 8(r28)
 /* 80050114 0004CF14  EC 63 08 28 */	fsubs f3, f3, f1
 /* 80050118 0004CF18  90 01 00 08 */	stw r0, 8(r1)
-/* 8005011C 0004CF1C  C8 22 8B 68 */	lfd f1, _esc__2_637-_SDA2_BASE_(r2)
+/* 8005011C 0004CF1C  C8 22 8B 68 */	lfd f1, _esc__2_637@sda21(r2)
 /* 80050120 0004CF20  EC 42 00 28 */	fsubs f2, f2, f0
 /* 80050124 0004CF24  93 BC 00 24 */	stw r29, 0x24(r28)
 /* 80050128 0004CF28  93 DC 00 28 */	stw r30, 0x28(r28)
@@ -87,7 +87,7 @@ xPartitionVolume__FP13_tagPartitionP7xVolumeiii:
 /* 80050190 0004CF90  80 9C 00 28 */	lwz r4, 0x28(r28)
 /* 80050194 0004CF94  1C 00 00 0C */	mulli r0, r0, 0xc
 /* 80050198 0004CF98  80 DC 00 2C */	lwz r6, 0x2c(r28)
-/* 8005019C 0004CF9C  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 8005019C 0004CF9C  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 800501A0 0004CFA0  7C 04 01 D6 */	mullw r0, r4, r0
 /* 800501A4 0004CFA4  7C 86 01 D6 */	mullw r4, r6, r0
 /* 800501A8 0004CFA8  4B FF 99 B9 */	bl xMemAlloc__FUiUii
@@ -165,7 +165,7 @@ xPartitionWorld__FP13_tagPartitionP4xEnviii:
 /* 800502A4 0004D0A4  C0 1C 00 08 */	lfs f0, 8(r28)
 /* 800502A8 0004D0A8  EC 63 08 28 */	fsubs f3, f3, f1
 /* 800502AC 0004D0AC  90 01 00 08 */	stw r0, 8(r1)
-/* 800502B0 0004D0B0  C8 22 8B 68 */	lfd f1, _esc__2_637-_SDA2_BASE_(r2)
+/* 800502B0 0004D0B0  C8 22 8B 68 */	lfd f1, _esc__2_637@sda21(r2)
 /* 800502B4 0004D0B4  EC 42 00 28 */	fsubs f2, f2, f0
 /* 800502B8 0004D0B8  93 BC 00 24 */	stw r29, 0x24(r28)
 /* 800502BC 0004D0BC  93 DC 00 28 */	stw r30, 0x28(r28)
@@ -197,7 +197,7 @@ xPartitionWorld__FP13_tagPartitionP4xEnviii:
 /* 80050324 0004D124  80 9C 00 28 */	lwz r4, 0x28(r28)
 /* 80050328 0004D128  1C 00 00 0C */	mulli r0, r0, 0xc
 /* 8005032C 0004D12C  80 DC 00 2C */	lwz r6, 0x2c(r28)
-/* 80050330 0004D130  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80050330 0004D130  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80050334 0004D134  7C 04 01 D6 */	mullw r0, r4, r0
 /* 80050338 0004D138  7C 86 01 D6 */	mullw r4, r6, r0
 /* 8005033C 0004D13C  4B FF 98 25 */	bl xMemAlloc__FUiUii

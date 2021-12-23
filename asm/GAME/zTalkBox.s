@@ -64,7 +64,7 @@ init_esc__7_2318:
 stop_state_esc__7_2317:
 	.skip 0x8
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global _esc__2_1486
 _esc__2_1486:
@@ -165,7 +165,7 @@ lbl_8015F884:
 /* 8015F890 0015C690  80 1F 86 94 */	lwz r0, -0x796c(r31)
 /* 8015F894 0015C694  28 00 00 00 */	cmplwi r0, 0
 /* 8015F898 0015C698  41 82 00 18 */	beq lbl_8015F8B0
-/* 8015F89C 0015C69C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8015F89C 0015C69C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8015F8A0 0015C6A0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8015F8A4 0015C6A4  4B FE AD 71 */	bl SpeakStop__7zPlayerFv
 /* 8015F8A8 0015C6A8  38 00 00 00 */	li r0, 0
@@ -498,7 +498,7 @@ read_bool__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRC6substrb:
 /* 8015FCB8 0015CAB8  3B C0 00 00 */	li r30, 0
 /* 8015FCBC 0015CABC  3B E0 00 00 */	li r31, 0
 lbl_8015FCC0:
-/* 8015FCC0 0015CAC0  38 82 B9 50 */	addi r4, r2, negative_esc__7_1185-_SDA2_BASE_
+/* 8015FCC0 0015CAC0  38 82 B9 50 */	addi r4, r2, negative_esc__7_1185@sda21
 /* 8015FCC4 0015CAC4  7F A3 EB 78 */	mr r3, r29
 /* 8015FCC8 0015CAC8  7C 84 FA 14 */	add r4, r4, r31
 /* 8015FCCC 0015CACC  4B F0 D8 61 */	bl icompare__FRC6substrRC6substr
@@ -517,7 +517,7 @@ lbl_8015FCF8:
 /* 8015FCF8 0015CAF8  3B C0 00 00 */	li r30, 0
 /* 8015FCFC 0015CAFC  3B E0 00 00 */	li r31, 0
 lbl_8015FD00:
-/* 8015FD00 0015CB00  38 82 B9 20 */	addi r4, r2, positive_esc__7_1183-_SDA2_BASE_
+/* 8015FD00 0015CB00  38 82 B9 20 */	addi r4, r2, positive_esc__7_1183@sda21
 /* 8015FD04 0015CB04  7F A3 EB 78 */	mr r3, r29
 /* 8015FD08 0015CB08  7C 84 FA 14 */	add r4, r4, r31
 /* 8015FD0C 0015CB0C  4B F0 D8 21 */	bl icompare__FRC6substrRC6substr
@@ -598,7 +598,7 @@ load_wait_context__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ222_esc__2_un
 /* 8015FE0C 0015CC0C  7C 7E 1B 78 */	mr r30, r3
 /* 8015FE10 0015CC10  7C 9F 23 78 */	mr r31, r4
 /* 8015FE14 0015CC14  48 00 02 11 */	bl reset_type__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_12wait_contextFv
-/* 8015FE18 0015CC18  C0 02 B9 80 */	lfs f0, _esc__2_1264_1-_SDA2_BASE_(r2)
+/* 8015FE18 0015CC18  C0 02 B9 80 */	lfs f0, _esc__2_1264_1@sda21(r2)
 /* 8015FE1C 0015CC1C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_96@ha
 /* 8015FE20 0015CC20  38 63 58 70 */	addi r3, r3, _esc__2_stringBase0_96@l
 /* 8015FE24 0015CC24  38 80 00 04 */	li r4, 4
@@ -779,7 +779,7 @@ parse_tag_auto_wait__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3
 /* 801600A8 0015CEA8  40 82 00 18 */	bne lbl_801600C0
 /* 801600AC 0015CEAC  7F E3 FB 78 */	mr r3, r31
 /* 801600B0 0015CEB0  4B FF FF 75 */	bl reset_type__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_12wait_contextFv
-/* 801600B4 0015CEB4  C0 02 B9 80 */	lfs f0, _esc__2_1264_1-_SDA2_BASE_(r2)
+/* 801600B4 0015CEB4  C0 02 B9 80 */	lfs f0, _esc__2_1264_1@sda21(r2)
 /* 801600B8 0015CEB8  D0 1F 00 04 */	stfs f0, 4(r31)
 /* 801600BC 0015CEBC  48 00 00 28 */	b lbl_801600E4
 lbl_801600C0:
@@ -1057,7 +1057,7 @@ lbl_8016045C:
 /* 8016046C 0015D26C  B0 1E 00 06 */	sth r0, 6(r30)
 /* 80160470 0015D270  48 00 00 1C */	b lbl_8016048C
 lbl_80160474:
-/* 80160474 0015D274  C0 02 B9 84 */	lfs f0, _esc__2_1380_2-_SDA2_BASE_(r2)
+/* 80160474 0015D274  C0 02 B9 84 */	lfs f0, _esc__2_1380_2@sda21(r2)
 /* 80160478 0015D278  38 00 00 01 */	li r0, 1
 /* 8016047C 0015D27C  38 60 00 01 */	li r3, 1
 /* 80160480 0015D280  D0 1E 00 08 */	stfs f0, 8(r30)
@@ -1370,7 +1370,7 @@ lbl_801608DC:
 /* 801608E0 0015D6E0  40 80 00 1C */	bge lbl_801608FC
 /* 801608E4 0015D6E4  48 00 00 10 */	b lbl_801608F4
 lbl_801608E8:
-/* 801608E8 0015D6E8  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801608E8 0015D6E8  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801608EC 0015D6EC  83 A3 04 C4 */	lwz r29, 0x4c4(r3)
 /* 801608F0 0015D6F0  48 00 00 3C */	b lbl_8016092C
 lbl_801608F4:
@@ -1388,25 +1388,25 @@ lbl_801608FC:
 lbl_8016091C:
 /* 8016091C 0015D71C  28 00 00 03 */	cmplwi r0, 3
 /* 80160920 0015D720  40 82 00 0C */	bne lbl_8016092C
-/* 80160924 0015D724  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80160924 0015D724  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80160928 0015D728  83 A3 04 C4 */	lwz r29, 0x4c4(r3)
 lbl_8016092C:
 /* 8016092C 0015D72C  28 1E 00 00 */	cmplwi r30, 0
 /* 80160930 0015D730  41 82 00 7C */	beq lbl_801609AC
-/* 80160934 0015D734  80 A2 F3 C0 */	lwz r5, _esc__2_1486-_SDA2_BASE_(r2)
+/* 80160934 0015D734  80 A2 F3 C0 */	lwz r5, _esc__2_1486@sda21(r2)
 /* 80160938 0015D738  3C 00 43 30 */	lis r0, 0x4330
-/* 8016093C 0015D73C  81 42 F3 C4 */	lwz r10, lbl_803D90E4-_SDA2_BASE_(r2)
+/* 8016093C 0015D73C  81 42 F3 C4 */	lwz r10, lbl_803D90E4@sda21(r2)
 /* 80160940 0015D740  7F C4 F3 78 */	mr r4, r30
-/* 80160944 0015D744  81 22 F3 C8 */	lwz r9, lbl_803D90E8-_SDA2_BASE_(r2)
+/* 80160944 0015D744  81 22 F3 C8 */	lwz r9, lbl_803D90E8@sda21(r2)
 /* 80160948 0015D748  38 C1 00 0C */	addi r6, r1, 0xc
-/* 8016094C 0015D74C  81 02 F3 CC */	lwz r8, lbl_803D90EC-_SDA2_BASE_(r2)
+/* 8016094C 0015D74C  81 02 F3 CC */	lwz r8, lbl_803D90EC@sda21(r2)
 /* 80160950 0015D750  38 60 00 00 */	li r3, 0
 /* 80160954 0015D754  90 A1 00 0C */	stw r5, 0xc(r1)
 /* 80160958 0015D758  38 A0 00 E9 */	li r5, 0xe9
-/* 8016095C 0015D75C  C8 42 B9 88 */	lfd f2, _esc__2_1537-_SDA2_BASE_(r2)
+/* 8016095C 0015D75C  C8 42 B9 88 */	lfd f2, _esc__2_1537@sda21(r2)
 /* 80160960 0015D760  38 E0 00 00 */	li r7, 0
 /* 80160964 0015D764  91 41 00 10 */	stw r10, 0x10(r1)
-/* 80160968 0015D768  C0 02 B9 84 */	lfs f0, _esc__2_1380_2-_SDA2_BASE_(r2)
+/* 80160968 0015D768  C0 02 B9 84 */	lfs f0, _esc__2_1380_2@sda21(r2)
 /* 8016096C 0015D76C  91 21 00 14 */	stw r9, 0x14(r1)
 /* 80160970 0015D770  91 01 00 18 */	stw r8, 0x18(r1)
 /* 80160974 0015D774  89 1F 00 18 */	lbz r8, 0x18(r31)
@@ -1426,7 +1426,7 @@ lbl_8016092C:
 lbl_801609AC:
 /* 801609AC 0015D7AC  28 1D 00 00 */	cmplwi r29, 0
 /* 801609B0 0015D7B0  41 82 00 30 */	beq lbl_801609E0
-/* 801609B4 0015D7B4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801609B4 0015D7B4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801609B8 0015D7B8  88 BF 00 18 */	lbz r5, 0x18(r31)
 /* 801609BC 0015D7BC  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801609C0 0015D7C0  80 9F 00 00 */	lwz r4, 0(r31)
@@ -1642,7 +1642,7 @@ lbl_80160C4C:
 /* 80160C6C 0015DA6C  38 9E 00 10 */	addi r4, r30, 0x10
 /* 80160C70 0015DA70  98 1D 00 00 */	stb r0, 0(r29)
 /* 80160C74 0015DA74  4B EA A4 35 */	bl __as__5xVec3FRC5xVec3
-/* 80160C78 0015DA78  C0 22 B9 90 */	lfs f1, _esc__2_1616_0-_SDA2_BASE_(r2)
+/* 80160C78 0015DA78  C0 22 B9 90 */	lfs f1, _esc__2_1616_0@sda21(r2)
 /* 80160C7C 0015DA7C  C0 1E 00 1C */	lfs f0, 0x1c(r30)
 /* 80160C80 0015DA80  EC 01 00 32 */	fmuls f0, f1, f0
 /* 80160C84 0015DA84  D0 1D 00 10 */	stfs f0, 0x10(r29)
@@ -1663,7 +1663,7 @@ move_player__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRC5xVec3:
 /* 80160CAC 0015DAAC  7C 64 1B 78 */	mr r4, r3
 /* 80160CB0 0015DAB0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80160CB4 0015DAB4  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80160CB8 0015DAB8  80 AD 91 D0 */	lwz r5, xglobals-_SDA_BASE_(r13)
+/* 80160CB8 0015DAB8  80 AD 91 D0 */	lwz r5, xglobals@sda21(r13)
 /* 80160CBC 0015DABC  80 65 04 C4 */	lwz r3, 0x4c4(r5)
 /* 80160CC0 0015DAC0  80 A3 00 28 */	lwz r5, 0x28(r3)
 /* 80160CC4 0015DAC4  80 63 00 48 */	lwz r3, 0x48(r3)
@@ -1689,7 +1689,7 @@ turn_player__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_Ff:
 /* 80160D08 0015DB08  DB E1 00 28 */	stfd f31, 0x28(r1)
 /* 80160D0C 0015DB0C  FF E0 08 90 */	fmr f31, f1
 /* 80160D10 0015DB10  93 E1 00 24 */	stw r31, 0x24(r1)
-/* 80160D14 0015DB14  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80160D14 0015DB14  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80160D18 0015DB18  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80160D1C 0015DB1C  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 80160D20 0015DB20  83 E3 00 54 */	lwz r31, 0x54(r3)
@@ -2109,35 +2109,35 @@ start_audio_effect__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FR8ztalkbox:
 /* 80161294 0015E094  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80161298 0015E098  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8016129C 0015E09C  7C 7F 1B 78 */	mr r31, r3
-/* 801612A0 0015E0A0  88 0D CF 81 */	lbz r0, init_esc__7_1773-_SDA_BASE_(r13)
+/* 801612A0 0015E0A0  88 0D CF 81 */	lbz r0, init_esc__7_1773@sda21(r13)
 /* 801612A4 0015E0A4  7C 00 07 75 */	extsb. r0, r0
 /* 801612A8 0015E0A8  40 82 00 14 */	bne lbl_801612BC
 /* 801612AC 0015E0AC  38 60 00 00 */	li r3, 0
 /* 801612B0 0015E0B0  38 00 00 01 */	li r0, 1
-/* 801612B4 0015E0B4  98 6D CF 80 */	stb r3, registered_esc__7_1772-_SDA_BASE_(r13)
-/* 801612B8 0015E0B8  98 0D CF 81 */	stb r0, init_esc__7_1773-_SDA_BASE_(r13)
+/* 801612B4 0015E0B4  98 6D CF 80 */	stb r3, registered_esc__7_1772@sda21(r13)
+/* 801612B8 0015E0B8  98 0D CF 81 */	stb r0, init_esc__7_1773@sda21(r13)
 lbl_801612BC:
-/* 801612BC 0015E0BC  88 0D CF 80 */	lbz r0, registered_esc__7_1772-_SDA_BASE_(r13)
+/* 801612BC 0015E0BC  88 0D CF 80 */	lbz r0, registered_esc__7_1772@sda21(r13)
 /* 801612C0 0015E0C0  28 00 00 00 */	cmplwi r0, 0
 /* 801612C4 0015E0C4  40 82 00 5C */	bne lbl_80161320
 /* 801612C8 0015E0C8  38 00 00 01 */	li r0, 1
 /* 801612CC 0015E0CC  3C 60 80 2E */	lis r3, _esc__2_stringBase0_96@ha
 /* 801612D0 0015E0D0  38 63 58 70 */	addi r3, r3, _esc__2_stringBase0_96@l
-/* 801612D4 0015E0D4  98 0D CF 80 */	stb r0, registered_esc__7_1772-_SDA_BASE_(r13)
-/* 801612D8 0015E0D8  C0 22 B9 80 */	lfs f1, _esc__2_1264_1-_SDA2_BASE_(r2)
+/* 801612D4 0015E0D4  98 0D CF 80 */	stb r0, registered_esc__7_1772@sda21(r13)
+/* 801612D8 0015E0D8  C0 22 B9 80 */	lfs f1, _esc__2_1264_1@sda21(r2)
 /* 801612DC 0015E0DC  38 63 00 E1 */	addi r3, r3, 0xe1
-/* 801612E0 0015E0E0  C0 42 B9 84 */	lfs f2, _esc__2_1380_2-_SDA2_BASE_(r2)
-/* 801612E4 0015E0E4  38 8D CF 7C */	addi r4, r13, music_fade__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_-_SDA_BASE_
+/* 801612E0 0015E0E0  C0 42 B9 84 */	lfs f2, _esc__2_1380_2@sda21(r2)
+/* 801612E4 0015E0E4  38 8D CF 7C */	addi r4, r13, music_fade__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@sda21
 /* 801612E8 0015E0E8  38 A0 00 00 */	li r5, 0
 /* 801612EC 0015E0EC  38 C0 00 00 */	li r6, 0
 /* 801612F0 0015E0F0  38 E0 00 00 */	li r7, 0
 /* 801612F4 0015E0F4  4B ED D1 B5 */	bl xDebugAddTweak__FPCcPCfffPC14tweak_callbackPvUi
 /* 801612F8 0015E0F8  3C 60 80 2E */	lis r3, _esc__2_stringBase0_96@ha
-/* 801612FC 0015E0FC  C0 22 B9 80 */	lfs f1, _esc__2_1264_1-_SDA2_BASE_(r2)
+/* 801612FC 0015E0FC  C0 22 B9 80 */	lfs f1, _esc__2_1264_1@sda21(r2)
 /* 80161300 0015E100  38 63 58 70 */	addi r3, r3, _esc__2_stringBase0_96@l
-/* 80161304 0015E104  C0 42 B9 94 */	lfs f2, _esc__2_1782-_SDA2_BASE_(r2)
+/* 80161304 0015E104  C0 42 B9 94 */	lfs f2, _esc__2_1782@sda21(r2)
 /* 80161308 0015E108  38 63 00 F6 */	addi r3, r3, 0xf6
-/* 8016130C 0015E10C  38 8D 9F F4 */	addi r4, r13, music_fade_delay__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_-_SDA_BASE_
+/* 8016130C 0015E10C  38 8D 9F F4 */	addi r4, r13, music_fade_delay__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@sda21
 /* 80161310 0015E110  38 A0 00 00 */	li r5, 0
 /* 80161314 0015E114  38 C0 00 00 */	li r6, 0
 /* 80161318 0015E118  38 E0 00 00 */	li r7, 0
@@ -2150,8 +2150,8 @@ lbl_80161320:
 /* 80161330 0015E130  40 80 00 14 */	bge lbl_80161344
 /* 80161334 0015E134  48 00 00 10 */	b lbl_80161344
 lbl_80161338:
-/* 80161338 0015E138  C0 2D CF 7C */	lfs f1, music_fade__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8016133C 0015E13C  C0 4D 9F F4 */	lfs f2, music_fade_delay__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80161338 0015E138  C0 2D CF 7C */	lfs f1, music_fade__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@sda21(r13)
+/* 8016133C 0015E13C  C0 4D 9F F4 */	lfs f2, music_fade_delay__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@sda21(r13)
 /* 80161340 0015E140  4B F9 C5 FD */	bl zMusicSetVolume__Fff
 lbl_80161344:
 /* 80161344 0015E144  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2177,8 +2177,8 @@ stop_audio_effect__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_Fv:
 /* 80161388 0015E188  40 80 00 14 */	bge lbl_8016139C
 /* 8016138C 0015E18C  48 00 00 10 */	b lbl_8016139C
 lbl_80161390:
-/* 80161390 0015E190  C0 22 B9 84 */	lfs f1, _esc__2_1380_2-_SDA2_BASE_(r2)
-/* 80161394 0015E194  C0 4D 9F F4 */	lfs f2, music_fade_delay__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80161390 0015E190  C0 22 B9 84 */	lfs f1, _esc__2_1380_2@sda21(r2)
+/* 80161394 0015E194  C0 4D 9F F4 */	lfs f2, music_fade_delay__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@sda21(r13)
 /* 80161398 0015E198  4B F9 C5 A5 */	bl zMusicSetVolume__Fff
 lbl_8016139C:
 /* 8016139C 0015E19C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2280,9 +2280,9 @@ update_prompts__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_Fv:
 /* 801614D0 0015E2D0  88 07 85 34 */	lbz r0, -0x7acc(r7)
 /* 801614D4 0015E2D4  54 00 D7 FF */	rlwinm. r0, r0, 0x1a, 0x1f, 0x1f
 /* 801614D8 0015E2D8  41 82 00 38 */	beq lbl_80161510
-/* 801614DC 0015E2DC  80 02 F3 D0 */	lwz r0, _esc__2_1857-_SDA2_BASE_(r2)
+/* 801614DC 0015E2DC  80 02 F3 D0 */	lwz r0, _esc__2_1857@sda21(r2)
 /* 801614E0 0015E2E0  38 81 00 08 */	addi r4, r1, 8
-/* 801614E4 0015E2E4  80 A2 F3 D4 */	lwz r5, lbl_803D90F4-_SDA2_BASE_(r2)
+/* 801614E4 0015E2E4  80 A2 F3 D4 */	lwz r5, lbl_803D90F4@sda21(r2)
 /* 801614E8 0015E2E8  90 01 00 08 */	stw r0, 8(r1)
 /* 801614EC 0015E2EC  80 DF 00 24 */	lwz r6, 0x24(r31)
 /* 801614F0 0015E2F0  80 07 85 40 */	lwz r0, -0x7ac0(r7)
@@ -3200,7 +3200,7 @@ load_settings__8ztalkboxFR8xIniFile:
 /* 801620E0 0015EEE0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801620E4 0015EEE4  7C 08 02 A6 */	mflr r0
 /* 801620E8 0015EEE8  3C 80 80 2E */	lis r4, _esc__2_stringBase0_96@ha
-/* 801620EC 0015EEEC  C0 22 B9 84 */	lfs f1, _esc__2_1380_2-_SDA2_BASE_(r2)
+/* 801620EC 0015EEEC  C0 22 B9 84 */	lfs f1, _esc__2_1380_2@sda21(r2)
 /* 801620F0 0015EEF0  38 84 58 70 */	addi r4, r4, _esc__2_stringBase0_96@l
 /* 801620F4 0015EEF4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801620F8 0015EEF8  38 84 01 11 */	addi r4, r4, 0x111
@@ -3208,12 +3208,12 @@ load_settings__8ztalkboxFR8xIniFile:
 /* 80162100 0015EF00  3C 80 80 39 */	lis r4, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@ha
 /* 80162104 0015EF04  3C 60 80 2E */	lis r3, _esc__2_stringBase0_96@ha
 /* 80162108 0015EF08  38 84 9A B0 */	addi r4, r4, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@l
-/* 8016210C 0015EF0C  C0 42 B9 94 */	lfs f2, _esc__2_1782-_SDA2_BASE_(r2)
+/* 8016210C 0015EF0C  C0 42 B9 94 */	lfs f2, _esc__2_1782@sda21(r2)
 /* 80162110 0015EF10  3C 84 00 01 */	addis r4, r4, 1
 /* 80162114 0015EF14  38 63 58 70 */	addi r3, r3, _esc__2_stringBase0_96@l
 /* 80162118 0015EF18  D4 24 86 8C */	stfsu f1, -0x7974(r4)
 /* 8016211C 0015EF1C  38 63 01 21 */	addi r3, r3, 0x121
-/* 80162120 0015EF20  C0 22 B9 80 */	lfs f1, _esc__2_1264_1-_SDA2_BASE_(r2)
+/* 80162120 0015EF20  C0 22 B9 80 */	lfs f1, _esc__2_1264_1@sda21(r2)
 /* 80162124 0015EF24  38 A0 00 00 */	li r5, 0
 /* 80162128 0015EF28  38 C0 00 00 */	li r6, 0
 /* 8016212C 0015EF2C  38 E0 00 00 */	li r7, 0
@@ -3230,54 +3230,54 @@ init__8ztalkboxFv:
 /* 8016214C 0015EF4C  3C 60 80 31 */	lis r3, new_tags__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@ha
 /* 80162150 0015EF50  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80162154 0015EF54  38 63 05 C0 */	addi r3, r3, new_tags__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@l
-/* 80162158 0015EF58  80 8D 9F F0 */	lwz r4, new_tags_size__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80162158 0015EF58  80 8D 9F F0 */	lwz r4, new_tags_size__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@sda21(r13)
 /* 8016215C 0015EF5C  4B ED 51 19 */	bl register_tags__8xtextboxFPCQ28xtextbox8tag_typeUl
-/* 80162160 0015EF60  88 0D CF 82 */	lbz r0, init_esc__7_2309-_SDA_BASE_(r13)
+/* 80162160 0015EF60  88 0D CF 82 */	lbz r0, init_esc__7_2309@sda21(r13)
 /* 80162164 0015EF64  7C 00 07 75 */	extsb. r0, r0
 /* 80162168 0015EF68  40 82 00 14 */	bne lbl_8016217C
-/* 8016216C 0015EF6C  38 6D CF 84 */	addi r3, r13, start_state_esc__7_2308-_SDA_BASE_
+/* 8016216C 0015EF6C  38 6D CF 84 */	addi r3, r13, start_state_esc__7_2308@sda21
 /* 80162170 0015EF70  48 00 01 79 */	bl __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_typeFv
 /* 80162174 0015EF74  38 00 00 01 */	li r0, 1
-/* 80162178 0015EF78  98 0D CF 82 */	stb r0, init_esc__7_2309-_SDA_BASE_(r13)
+/* 80162178 0015EF78  98 0D CF 82 */	stb r0, init_esc__7_2309@sda21(r13)
 lbl_8016217C:
-/* 8016217C 0015EF7C  88 0D CF 8C */	lbz r0, init_esc__7_2312-_SDA_BASE_(r13)
+/* 8016217C 0015EF7C  88 0D CF 8C */	lbz r0, init_esc__7_2312@sda21(r13)
 /* 80162180 0015EF80  3C 60 80 39 */	lis r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@ha
 /* 80162184 0015EF84  38 63 9A B0 */	addi r3, r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@l
-/* 80162188 0015EF88  38 8D CF 84 */	addi r4, r13, start_state_esc__7_2308-_SDA_BASE_
+/* 80162188 0015EF88  38 8D CF 84 */	addi r4, r13, start_state_esc__7_2308@sda21
 /* 8016218C 0015EF8C  7C 00 07 75 */	extsb. r0, r0
 /* 80162190 0015EF90  90 83 00 14 */	stw r4, 0x14(r3)
 /* 80162194 0015EF94  40 82 00 14 */	bne lbl_801621A8
-/* 80162198 0015EF98  38 6D CF 90 */	addi r3, r13, next_state_esc__7_2311-_SDA_BASE_
+/* 80162198 0015EF98  38 6D CF 90 */	addi r3, r13, next_state_esc__7_2311@sda21
 /* 8016219C 0015EF9C  48 00 01 11 */	bl __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_typeFv
 /* 801621A0 0015EFA0  38 00 00 01 */	li r0, 1
-/* 801621A4 0015EFA4  98 0D CF 8C */	stb r0, init_esc__7_2312-_SDA_BASE_(r13)
+/* 801621A4 0015EFA4  98 0D CF 8C */	stb r0, init_esc__7_2312@sda21(r13)
 lbl_801621A8:
-/* 801621A8 0015EFA8  88 0D CF 9C */	lbz r0, init_esc__7_2315-_SDA_BASE_(r13)
+/* 801621A8 0015EFA8  88 0D CF 9C */	lbz r0, init_esc__7_2315@sda21(r13)
 /* 801621AC 0015EFAC  3C 60 80 39 */	lis r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@ha
 /* 801621B0 0015EFB0  38 63 9A B0 */	addi r3, r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@l
-/* 801621B4 0015EFB4  38 8D CF 90 */	addi r4, r13, next_state_esc__7_2311-_SDA_BASE_
+/* 801621B4 0015EFB4  38 8D CF 90 */	addi r4, r13, next_state_esc__7_2311@sda21
 /* 801621B8 0015EFB8  7C 00 07 75 */	extsb. r0, r0
 /* 801621BC 0015EFBC  90 83 00 18 */	stw r4, 0x18(r3)
 /* 801621C0 0015EFC0  40 82 00 14 */	bne lbl_801621D4
-/* 801621C4 0015EFC4  38 6D CF A0 */	addi r3, r13, wait_state_esc__7_2314-_SDA_BASE_
+/* 801621C4 0015EFC4  38 6D CF A0 */	addi r3, r13, wait_state_esc__7_2314@sda21
 /* 801621C8 0015EFC8  48 00 00 A9 */	bl __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_typeFv
 /* 801621CC 0015EFCC  38 00 00 01 */	li r0, 1
-/* 801621D0 0015EFD0  98 0D CF 9C */	stb r0, init_esc__7_2315-_SDA_BASE_(r13)
+/* 801621D0 0015EFD0  98 0D CF 9C */	stb r0, init_esc__7_2315@sda21(r13)
 lbl_801621D4:
-/* 801621D4 0015EFD4  88 0D CF AC */	lbz r0, init_esc__7_2318-_SDA_BASE_(r13)
+/* 801621D4 0015EFD4  88 0D CF AC */	lbz r0, init_esc__7_2318@sda21(r13)
 /* 801621D8 0015EFD8  3C 60 80 39 */	lis r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@ha
 /* 801621DC 0015EFDC  38 63 9A B0 */	addi r3, r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@l
-/* 801621E0 0015EFE0  38 8D CF A0 */	addi r4, r13, wait_state_esc__7_2314-_SDA_BASE_
+/* 801621E0 0015EFE0  38 8D CF A0 */	addi r4, r13, wait_state_esc__7_2314@sda21
 /* 801621E4 0015EFE4  7C 00 07 75 */	extsb. r0, r0
 /* 801621E8 0015EFE8  90 83 00 1C */	stw r4, 0x1c(r3)
 /* 801621EC 0015EFEC  40 82 00 14 */	bne lbl_80162200
-/* 801621F0 0015EFF0  38 6D CF B0 */	addi r3, r13, stop_state_esc__7_2317-_SDA_BASE_
+/* 801621F0 0015EFF0  38 6D CF B0 */	addi r3, r13, stop_state_esc__7_2317@sda21
 /* 801621F4 0015EFF4  48 00 00 31 */	bl __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_typeFv
 /* 801621F8 0015EFF8  38 00 00 01 */	li r0, 1
-/* 801621FC 0015EFFC  98 0D CF AC */	stb r0, init_esc__7_2318-_SDA_BASE_(r13)
+/* 801621FC 0015EFFC  98 0D CF AC */	stb r0, init_esc__7_2318@sda21(r13)
 lbl_80162200:
 /* 80162200 0015F000  3C 60 80 39 */	lis r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@ha
-/* 80162204 0015F004  38 0D CF B0 */	addi r0, r13, stop_state_esc__7_2317-_SDA_BASE_
+/* 80162204 0015F004  38 0D CF B0 */	addi r0, r13, stop_state_esc__7_2317@sda21
 /* 80162208 0015F008  38 63 9A B0 */	addi r3, r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@l
 /* 8016220C 0015F00C  90 03 00 20 */	stw r0, 0x20(r3)
 /* 80162210 0015F010  48 00 03 85 */	bl reset_all__8ztalkboxFv
@@ -3295,7 +3295,7 @@ __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_typeFv:
 /* 80162234 0015F034  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80162238 0015F038  7C 7F 1B 78 */	mr r31, r3
 /* 8016223C 0015F03C  48 00 00 25 */	bl __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_typeFQ222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_enum
-/* 80162240 0015F040  38 0D A0 48 */	addi r0, r13, __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_type-_SDA_BASE_
+/* 80162240 0015F040  38 0D A0 48 */	addi r0, r13, __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_type@sda21
 /* 80162244 0015F044  7F E3 FB 78 */	mr r3, r31
 /* 80162248 0015F048  90 1F 00 04 */	stw r0, 4(r31)
 /* 8016224C 0015F04C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3306,7 +3306,7 @@ __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_typeFv:
 
 .global __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_typeFQ222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_enum
 __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_typeFQ222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_enum:
-/* 80162260 0015F060  38 0D A0 34 */	addi r0, r13, __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_type-_SDA_BASE_
+/* 80162260 0015F060  38 0D A0 34 */	addi r0, r13, __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_type@sda21
 /* 80162264 0015F064  90 03 00 04 */	stw r0, 4(r3)
 /* 80162268 0015F068  90 83 00 00 */	stw r4, 0(r3)
 /* 8016226C 0015F06C  4E 80 00 20 */	blr 
@@ -3320,7 +3320,7 @@ __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_typeFv:
 /* 80162280 0015F080  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80162284 0015F084  7C 7F 1B 78 */	mr r31, r3
 /* 80162288 0015F088  4B FF FF D9 */	bl __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_typeFQ222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_enum
-/* 8016228C 0015F08C  38 0D A0 20 */	addi r0, r13, __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_type-_SDA_BASE_
+/* 8016228C 0015F08C  38 0D A0 20 */	addi r0, r13, __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_type@sda21
 /* 80162290 0015F090  7F E3 FB 78 */	mr r3, r31
 /* 80162294 0015F094  90 1F 00 04 */	stw r0, 4(r31)
 /* 80162298 0015F098  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3338,7 +3338,7 @@ __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_typeFv:
 /* 801622BC 0015F0BC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801622C0 0015F0C0  7C 7F 1B 78 */	mr r31, r3
 /* 801622C4 0015F0C4  4B FF FF 9D */	bl __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_typeFQ222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_enum
-/* 801622C8 0015F0C8  38 0D A0 0C */	addi r0, r13, __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_type-_SDA_BASE_
+/* 801622C8 0015F0C8  38 0D A0 0C */	addi r0, r13, __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_type@sda21
 /* 801622CC 0015F0CC  7F E3 FB 78 */	mr r3, r31
 /* 801622D0 0015F0D0  90 1F 00 04 */	stw r0, 4(r31)
 /* 801622D4 0015F0D4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3356,7 +3356,7 @@ __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_typeFv:
 /* 801622F8 0015F0F8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801622FC 0015F0FC  7C 7F 1B 78 */	mr r31, r3
 /* 80162300 0015F100  4B FF FF 61 */	bl __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_typeFQ222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_enum
-/* 80162304 0015F104  38 0D 9F F8 */	addi r0, r13, __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_type-_SDA_BASE_
+/* 80162304 0015F104  38 0D 9F F8 */	addi r0, r13, __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_type@sda21
 /* 80162308 0015F108  7F E3 FB 78 */	mr r3, r31
 /* 8016230C 0015F10C  90 1F 00 04 */	stw r0, 4(r31)
 /* 80162310 0015F110  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3496,8 +3496,8 @@ pad_pressed__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_Fv:
 /* 801624E0 0015F2E0  4E 80 00 20 */	blr 
 lbl_801624E4:
 /* 801624E4 0015F2E4  38 00 00 00 */	li r0, 0
-/* 801624E8 0015F2E8  38 6D CF 78 */	addi r3, r13, zero_esc__7_1073-_SDA_BASE_
-/* 801624EC 0015F2EC  90 0D CF 78 */	stw r0, zero_esc__7_1073-_SDA_BASE_(r13)
+/* 801624E8 0015F2E8  38 6D CF 78 */	addi r3, r13, zero_esc__7_1073@sda21
+/* 801624EC 0015F2EC  90 0D CF 78 */	stw r0, zero_esc__7_1073@sda21(r13)
 /* 801624F0 0015F2F0  4E 80 00 20 */	blr 
 
 .global render_all__8ztalkboxFv
@@ -3657,7 +3657,7 @@ start__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_typeFv:
 /* 801626F4 0015F4F4  3C 60 80 39 */	lis r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@ha
 /* 801626F8 0015F4F8  38 63 9A B0 */	addi r3, r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@l
 /* 801626FC 0015F4FC  98 1F 00 00 */	stb r0, 0(r31)
-/* 80162700 0015F500  C0 02 B9 80 */	lfs f0, _esc__2_1264_1-_SDA2_BASE_(r2)
+/* 80162700 0015F500  C0 02 B9 80 */	lfs f0, _esc__2_1264_1@sda21(r2)
 /* 80162704 0015F504  3C 63 00 01 */	addis r3, r3, 1
 /* 80162708 0015F508  D0 03 85 38 */	stfs f0, -0x7ac8(r3)
 /* 8016270C 0015F50C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3885,7 +3885,7 @@ lbl_801629D8:
 /* 801629EC 0015F7EC  3C 60 80 39 */	lis r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@ha
 /* 801629F0 0015F7F0  38 63 9A B0 */	addi r3, r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@l
 /* 801629F4 0015F7F4  98 1F 00 00 */	stb r0, 0(r31)
-/* 801629F8 0015F7F8  C0 02 B9 80 */	lfs f0, _esc__2_1264_1-_SDA2_BASE_(r2)
+/* 801629F8 0015F7F8  C0 02 B9 80 */	lfs f0, _esc__2_1264_1@sda21(r2)
 /* 801629FC 0015F7FC  3C 63 00 01 */	addis r3, r3, 1
 /* 80162A00 0015F800  38 00 00 00 */	li r0, 0
 /* 80162A04 0015F804  D0 03 85 38 */	stfs f0, -0x7ac8(r3)
@@ -3932,7 +3932,7 @@ lbl_80162A84:
 /* 80162A94 0015F894  54 00 CF FF */	rlwinm. r0, r0, 0x19, 0x1f, 0x1f
 /* 80162A98 0015F898  41 82 00 2C */	beq lbl_80162AC4
 /* 80162A9C 0015F89C  C0 3F 85 38 */	lfs f1, -0x7ac8(r31)
-/* 80162AA0 0015F8A0  C0 02 B9 80 */	lfs f0, _esc__2_1264_1-_SDA2_BASE_(r2)
+/* 80162AA0 0015F8A0  C0 02 B9 80 */	lfs f0, _esc__2_1264_1@sda21(r2)
 /* 80162AA4 0015F8A4  EC 21 F8 28 */	fsubs f1, f1, f31
 /* 80162AA8 0015F8A8  D0 3F 85 38 */	stfs f1, -0x7ac8(r31)
 /* 80162AAC 0015F8AC  C0 3F 85 38 */	lfs f1, -0x7ac8(r31)
@@ -4131,8 +4131,8 @@ __sinit_zTalkBox_cpp:
 /* 80162D18 0015FB18  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80162D1C 0015FB1C  38 63 9A B0 */	addi r3, r3, shared__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@l
 /* 80162D20 0015FB20  48 00 00 1D */	bl __ct__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_11shared_typeFv
-/* 80162D24 0015FB24  C0 0D 92 A8 */	lfs f0, gDialogueMusicLevel-_SDA_BASE_(r13)
-/* 80162D28 0015FB28  D0 0D CF 7C */	stfs f0, music_fade__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80162D24 0015FB24  C0 0D 92 A8 */	lfs f0, gDialogueMusicLevel@sda21(r13)
+/* 80162D28 0015FB28  D0 0D CF 7C */	stfs f0, music_fade__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_@sda21(r13)
 /* 80162D2C 0015FB2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80162D30 0015FB30  7C 08 03 A6 */	mtlr r0
 /* 80162D34 0015FB34  38 21 00 10 */	addi r1, r1, 0x10

@@ -17,7 +17,7 @@ xSkyDome_AddEntity__FP4xEntiii:
 /* 80064C14 00061A14  48 00 01 65 */	bl xSkyDome_EntityIsSkyDome__FPC4xEnt
 /* 80064C18 00061A18  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80064C1C 00061A1C  40 82 01 24 */	bne lbl_80064D40
-/* 80064C20 00061A20  80 CD BE 60 */	lwz r6, sSkyCount-_SDA_BASE_(r13)
+/* 80064C20 00061A20  80 CD BE 60 */	lwz r6, sSkyCount@sda21(r13)
 /* 80064C24 00061A24  3C 60 80 35 */	lis r3, sSkyList@ha
 /* 80064C28 00061A28  38 83 C4 D8 */	addi r4, r3, sSkyList@l
 /* 80064C2C 00061A2C  38 60 00 00 */	li r3, 0
@@ -68,7 +68,7 @@ lbl_80064CC8:
 /* 80064CC8 00061AC8  7C 17 F8 00 */	cmpw r23, r31
 /* 80064CCC 00061ACC  40 80 FF D0 */	bge lbl_80064C9C
 /* 80064CD0 00061AD0  3C A0 80 35 */	lis r5, sSkyList@ha
-/* 80064CD4 00061AD4  80 8D BE 60 */	lwz r4, sSkyCount-_SDA_BASE_(r13)
+/* 80064CD4 00061AD4  80 8D BE 60 */	lwz r4, sSkyCount@sda21(r13)
 /* 80064CD8 00061AD8  57 E0 20 36 */	slwi r0, r31, 4
 /* 80064CDC 00061ADC  3C 60 80 06 */	lis r3, xSkyDome_EmptyRender__FP4xEnt@ha
 /* 80064CE0 00061AE0  38 C5 C4 D8 */	addi r6, r5, sSkyList@l
@@ -81,7 +81,7 @@ lbl_80064CC8:
 /* 80064CFC 00061AFC  38 80 00 54 */	li r4, 0x54
 /* 80064D00 00061B00  93 A6 00 0C */	stw r29, 0xc(r6)
 /* 80064D04 00061B04  93 C6 00 08 */	stw r30, 8(r6)
-/* 80064D08 00061B08  90 AD BE 60 */	stw r5, sSkyCount-_SDA_BASE_(r13)
+/* 80064D08 00061B08  90 AD BE 60 */	stw r5, sSkyCount@sda21(r13)
 /* 80064D0C 00061B0C  93 FB 00 D4 */	stw r31, 0xd4(r27)
 /* 80064D10 00061B10  90 1B 00 44 */	stw r0, 0x44(r27)
 /* 80064D14 00061B14  80 BB 00 28 */	lwz r5, 0x28(r27)

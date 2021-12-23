@@ -113,27 +113,27 @@ _esc__2_1738:
 
 .global zCheatRemoveTimed__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 zCheatRemoveTimed__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
-/* 8008CC30 00089A30  88 0D C3 98 */	lbz r0, gCheats-_SDA_BASE_(r13)
+/* 8008CC30 00089A30  88 0D C3 98 */	lbz r0, gCheats@sda21(r13)
 /* 8008CC34 00089A34  38 60 00 00 */	li r3, 0
 /* 8008CC38 00089A38  50 60 3E 30 */	rlwimi r0, r3, 7, 0x18, 0x18
-/* 8008CC3C 00089A3C  C0 02 94 88 */	lfs f0, _esc__2_1291_0-_SDA2_BASE_(r2)
-/* 8008CC40 00089A40  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008CC3C 00089A3C  C0 02 94 88 */	lfs f0, _esc__2_1291_0@sda21(r2)
+/* 8008CC40 00089A40  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008CC44 00089A44  54 00 06 3E */	clrlwi r0, r0, 0x18
 /* 8008CC48 00089A48  50 60 36 72 */	rlwimi r0, r3, 6, 0x19, 0x19
-/* 8008CC4C 00089A4C  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008CC4C 00089A4C  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008CC50 00089A50  54 00 06 3E */	clrlwi r0, r0, 0x18
 /* 8008CC54 00089A54  50 60 2E B4 */	rlwimi r0, r3, 5, 0x1a, 0x1a
-/* 8008CC58 00089A58  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008CC58 00089A58  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008CC5C 00089A5C  54 00 06 3E */	clrlwi r0, r0, 0x18
 /* 8008CC60 00089A60  50 60 26 F6 */	rlwimi r0, r3, 4, 0x1b, 0x1b
-/* 8008CC64 00089A64  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008CC64 00089A64  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008CC68 00089A68  54 00 06 3E */	clrlwi r0, r0, 0x18
 /* 8008CC6C 00089A6C  50 60 17 7A */	rlwimi r0, r3, 2, 0x1d, 0x1d
-/* 8008CC70 00089A70  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008CC70 00089A70  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008CC74 00089A74  54 00 06 3E */	clrlwi r0, r0, 0x18
 /* 8008CC78 00089A78  50 60 1F 38 */	rlwimi r0, r3, 3, 0x1c, 0x1c
-/* 8008CC7C 00089A7C  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
-/* 8008CC80 00089A80  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008CC7C 00089A7C  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
+/* 8008CC80 00089A80  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008CC84 00089A84  4E 80 00 20 */	blr 
 
 .global Cheat_DanielTheFlash__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
@@ -159,19 +159,19 @@ lbl_8008CCAC:
 /* 8008CCCC 00089ACC  28 00 30 33 */	cmplwi r0, 0x3033
 /* 8008CCD0 00089AD0  41 82 00 40 */	beq lbl_8008CD10
 /* 8008CCD4 00089AD4  4B FF FF 5D */	bl zCheatRemoveTimed__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
-/* 8008CCD8 00089AD8  88 0D C3 98 */	lbz r0, gCheats-_SDA_BASE_(r13)
+/* 8008CCD8 00089AD8  88 0D C3 98 */	lbz r0, gCheats@sda21(r13)
 /* 8008CCDC 00089ADC  38 80 00 01 */	li r4, 1
 /* 8008CCE0 00089AE0  50 80 2E B4 */	rlwimi r0, r4, 5, 0x1a, 0x1a
-/* 8008CCE4 00089AE4  C0 02 94 8C */	lfs f0, _esc__2_1319-_SDA2_BASE_(r2)
-/* 8008CCE8 00089AE8  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008CCE4 00089AE4  C0 02 94 8C */	lfs f0, _esc__2_1319@sda21(r2)
+/* 8008CCE8 00089AE8  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008CCEC 00089AEC  54 00 06 3E */	clrlwi r0, r0, 0x18
 /* 8008CCF0 00089AF0  50 80 3E 30 */	rlwimi r0, r4, 7, 0x18, 0x18
 /* 8008CCF4 00089AF4  38 60 00 01 */	li r3, 1
-/* 8008CCF8 00089AF8  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008CCF8 00089AF8  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008CCFC 00089AFC  54 00 06 3E */	clrlwi r0, r0, 0x18
 /* 8008CD00 00089B00  50 80 36 72 */	rlwimi r0, r4, 6, 0x19, 0x19
-/* 8008CD04 00089B04  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8008CD08 00089B08  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008CD04 00089B04  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
+/* 8008CD08 00089B08  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008CD0C 00089B0C  48 00 00 08 */	b lbl_8008CD14
 lbl_8008CD10:
 /* 8008CD10 00089B10  38 60 00 00 */	li r3, 0
@@ -183,7 +183,7 @@ lbl_8008CD14:
 
 .global MrsI__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 MrsI__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
-/* 8008CD24 00089B24  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8008CD24 00089B24  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 8008CD28 00089B28  38 60 00 00 */	li r3, 0
 /* 8008CD2C 00089B2C  80 84 04 C4 */	lwz r4, 0x4c4(r4)
 /* 8008CD30 00089B30  80 04 01 50 */	lwz r0, 0x150(r4)
@@ -197,7 +197,7 @@ lbl_8008CD44:
 
 .global MrI__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 MrI__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
-/* 8008CD4C 00089B4C  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8008CD4C 00089B4C  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 8008CD50 00089B50  38 60 00 00 */	li r3, 0
 /* 8008CD54 00089B54  80 84 04 C4 */	lwz r4, 0x4c4(r4)
 /* 8008CD58 00089B58  80 04 01 50 */	lwz r0, 0x150(r4)
@@ -231,13 +231,13 @@ Cheat_HalfDamage__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008CDB8 00089BB8  41 82 00 28 */	beq lbl_8008CDE0
 lbl_8008CDBC:
 /* 8008CDBC 00089BBC  4B FF FE 75 */	bl zCheatRemoveTimed__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
-/* 8008CDC0 00089BC0  C0 02 94 8C */	lfs f0, _esc__2_1319-_SDA2_BASE_(r2)
+/* 8008CDC0 00089BC0  C0 02 94 8C */	lfs f0, _esc__2_1319@sda21(r2)
 /* 8008CDC4 00089BC4  38 60 00 01 */	li r3, 1
-/* 8008CDC8 00089BC8  88 0D C3 98 */	lbz r0, gCheats-_SDA_BASE_(r13)
+/* 8008CDC8 00089BC8  88 0D C3 98 */	lbz r0, gCheats@sda21(r13)
 /* 8008CDCC 00089BCC  50 60 3E 30 */	rlwimi r0, r3, 7, 0x18, 0x18
-/* 8008CDD0 00089BD0  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008CDD0 00089BD0  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008CDD4 00089BD4  38 60 00 01 */	li r3, 1
-/* 8008CDD8 00089BD8  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008CDD8 00089BD8  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008CDDC 00089BDC  48 00 00 08 */	b lbl_8008CDE4
 lbl_8008CDE0:
 /* 8008CDE0 00089BE0  38 60 00 00 */	li r3, 0
@@ -249,7 +249,7 @@ lbl_8008CDE4:
 
 .global IncrediBall__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 IncrediBall__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
-/* 8008CDF4 00089BF4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8008CDF4 00089BF4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8008CDF8 00089BF8  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8008CDFC 00089BFC  80 03 01 50 */	lwz r0, 0x150(r3)
 /* 8008CE00 00089C00  20 00 00 2C */	subfic r0, r0, 0x2c
@@ -270,13 +270,13 @@ Cheat_Kronos__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008CE30 00089C30  41 82 00 28 */	beq lbl_8008CE58
 lbl_8008CE34:
 /* 8008CE34 00089C34  4B FF FD FD */	bl zCheatRemoveTimed__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
-/* 8008CE38 00089C38  C0 02 94 90 */	lfs f0, _esc__2_1354_1-_SDA2_BASE_(r2)
+/* 8008CE38 00089C38  C0 02 94 90 */	lfs f0, _esc__2_1354_1@sda21(r2)
 /* 8008CE3C 00089C3C  38 60 00 01 */	li r3, 1
-/* 8008CE40 00089C40  88 0D C3 98 */	lbz r0, gCheats-_SDA_BASE_(r13)
+/* 8008CE40 00089C40  88 0D C3 98 */	lbz r0, gCheats@sda21(r13)
 /* 8008CE44 00089C44  50 60 2E B4 */	rlwimi r0, r3, 5, 0x1a, 0x1a
-/* 8008CE48 00089C48  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008CE48 00089C48  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008CE4C 00089C4C  38 60 00 01 */	li r3, 1
-/* 8008CE50 00089C50  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008CE50 00089C50  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008CE54 00089C54  48 00 00 08 */	b lbl_8008CE5C
 lbl_8008CE58:
 /* 8008CE58 00089C58  38 60 00 00 */	li r3, 0
@@ -314,26 +314,26 @@ lbl_8008CE90:
 /* 8008CEC4 00089CC4  3C 03 B7 AD */	addis r0, r3, 0xb7ad
 /* 8008CEC8 00089CC8  28 00 30 31 */	cmplwi r0, 0x3031
 /* 8008CECC 00089CCC  41 82 00 30 */	beq lbl_8008CEFC
-/* 8008CED0 00089CD0  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8008CED0 00089CD0  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8008CED4 00089CD4  38 A0 00 00 */	li r5, 0
-/* 8008CED8 00089CD8  C0 22 94 94 */	lfs f1, _esc__2_1372-_SDA2_BASE_(r2)
+/* 8008CED8 00089CD8  C0 22 94 94 */	lfs f1, _esc__2_1372@sda21(r2)
 /* 8008CEDC 00089CDC  38 C0 03 E8 */	li r6, 0x3e8
 /* 8008CEE0 00089CE0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
-/* 8008CEE4 00089CE4  C0 42 94 98 */	lfs f2, _esc__2_1373-_SDA2_BASE_(r2)
+/* 8008CEE4 00089CE4  C0 42 94 98 */	lfs f2, _esc__2_1373@sda21(r2)
 /* 8008CEE8 00089CE8  80 83 00 48 */	lwz r4, 0x48(r3)
-/* 8008CEEC 00089CEC  C0 62 94 9C */	lfs f3, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008CEEC 00089CEC  C0 62 94 9C */	lfs f3, _esc__2_1374@sda21(r2)
 /* 8008CEF0 00089CF0  38 84 00 30 */	addi r4, r4, 0x30
 /* 8008CEF4 00089CF4  48 00 00 4D */	bl sphere_damage__FP4xEntRC5xVec3fiiff
 /* 8008CEF8 00089CF8  48 00 00 2C */	b lbl_8008CF24
 lbl_8008CEFC:
-/* 8008CEFC 00089CFC  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8008CEFC 00089CFC  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8008CF00 00089D00  38 A0 00 00 */	li r5, 0
-/* 8008CF04 00089D04  C0 22 94 94 */	lfs f1, _esc__2_1372-_SDA2_BASE_(r2)
+/* 8008CF04 00089D04  C0 22 94 94 */	lfs f1, _esc__2_1372@sda21(r2)
 /* 8008CF08 00089D08  38 C0 00 01 */	li r6, 1
 /* 8008CF0C 00089D0C  80 63 04 C4 */	lwz r3, 0x4c4(r3)
-/* 8008CF10 00089D10  C0 42 94 98 */	lfs f2, _esc__2_1373-_SDA2_BASE_(r2)
+/* 8008CF10 00089D10  C0 42 94 98 */	lfs f2, _esc__2_1373@sda21(r2)
 /* 8008CF14 00089D14  80 83 00 48 */	lwz r4, 0x48(r3)
-/* 8008CF18 00089D18  C0 62 94 9C */	lfs f3, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008CF18 00089D18  C0 62 94 9C */	lfs f3, _esc__2_1374@sda21(r2)
 /* 8008CF1C 00089D1C  38 84 00 30 */	addi r4, r4, 0x30
 /* 8008CF20 00089D20  48 00 00 21 */	bl sphere_damage__FP4xEntRC5xVec3fiiff
 lbl_8008CF24:
@@ -363,7 +363,7 @@ sphere_damage__FP4xEntRC5xVec3fiiff:
 Cheat_Labombe__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008CF64 00089D64  38 00 00 01 */	li r0, 1
 /* 8008CF68 00089D68  38 60 00 01 */	li r3, 1
-/* 8008CF6C 00089D6C  98 0D D6 D4 */	stb r0, weak_bombs__Q21z4bomb-_SDA_BASE_(r13)
+/* 8008CF6C 00089D6C  98 0D D6 D4 */	stb r0, weak_bombs__Q21z4bomb@sda21(r13)
 /* 8008CF70 00089D70  4E 80 00 20 */	blr 
 
 .global Cheat_DashLikes__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
@@ -375,13 +375,13 @@ Cheat_DashLikes__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008CF84 00089D84  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8008CF88 00089D88  41 82 00 28 */	beq lbl_8008CFB0
 /* 8008CF8C 00089D8C  4B FF FC A5 */	bl zCheatRemoveTimed__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
-/* 8008CF90 00089D90  C0 02 94 8C */	lfs f0, _esc__2_1319-_SDA2_BASE_(r2)
+/* 8008CF90 00089D90  C0 02 94 8C */	lfs f0, _esc__2_1319@sda21(r2)
 /* 8008CF94 00089D94  38 60 00 01 */	li r3, 1
-/* 8008CF98 00089D98  88 0D C3 98 */	lbz r0, gCheats-_SDA_BASE_(r13)
+/* 8008CF98 00089D98  88 0D C3 98 */	lbz r0, gCheats@sda21(r13)
 /* 8008CF9C 00089D9C  50 60 1F 38 */	rlwimi r0, r3, 3, 0x1c, 0x1c
-/* 8008CFA0 00089DA0  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008CFA0 00089DA0  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008CFA4 00089DA4  38 60 00 01 */	li r3, 1
-/* 8008CFA8 00089DA8  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008CFA8 00089DA8  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008CFAC 00089DAC  48 00 00 08 */	b lbl_8008CFB4
 lbl_8008CFB0:
 /* 8008CFB0 00089DB0  38 60 00 00 */	li r3, 0
@@ -393,7 +393,7 @@ lbl_8008CFB4:
 
 .global Dash__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 Dash__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
-/* 8008CFC4 00089DC4  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8008CFC4 00089DC4  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 8008CFC8 00089DC8  38 60 00 00 */	li r3, 0
 /* 8008CFCC 00089DCC  80 84 04 C4 */	lwz r4, 0x4c4(r4)
 /* 8008CFD0 00089DD0  80 04 01 50 */	lwz r0, 0x150(r4)
@@ -442,11 +442,11 @@ lbl_8008D048:
 
 .global Cheat_HUD__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 Cheat_HUD__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
-/* 8008D058 00089E58  88 0D 9F 58 */	lbz r0, ENABLE_HUD__14zPlayerGlobals-_SDA_BASE_(r13)
+/* 8008D058 00089E58  88 0D 9F 58 */	lbz r0, ENABLE_HUD__14zPlayerGlobals@sda21(r13)
 /* 8008D05C 00089E5C  38 60 00 01 */	li r3, 1
 /* 8008D060 00089E60  7C 00 00 34 */	cntlzw r0, r0
 /* 8008D064 00089E64  54 00 D9 7E */	srwi r0, r0, 5
-/* 8008D068 00089E68  98 0D 9F 58 */	stb r0, ENABLE_HUD__14zPlayerGlobals-_SDA_BASE_(r13)
+/* 8008D068 00089E68  98 0D 9F 58 */	stb r0, ENABLE_HUD__14zPlayerGlobals@sda21(r13)
 /* 8008D06C 00089E6C  4E 80 00 20 */	blr 
 
 .global Cheat_IncrediPower__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
@@ -461,13 +461,13 @@ Cheat_IncrediPower__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D08C 00089E8C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8008D090 00089E90  40 82 00 28 */	bne lbl_8008D0B8
 /* 8008D094 00089E94  4B FF FB 9D */	bl zCheatRemoveTimed__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
-/* 8008D098 00089E98  C0 02 94 8C */	lfs f0, _esc__2_1319-_SDA2_BASE_(r2)
+/* 8008D098 00089E98  C0 02 94 8C */	lfs f0, _esc__2_1319@sda21(r2)
 /* 8008D09C 00089E9C  38 60 00 01 */	li r3, 1
-/* 8008D0A0 00089EA0  88 0D C3 98 */	lbz r0, gCheats-_SDA_BASE_(r13)
+/* 8008D0A0 00089EA0  88 0D C3 98 */	lbz r0, gCheats@sda21(r13)
 /* 8008D0A4 00089EA4  50 60 36 72 */	rlwimi r0, r3, 6, 0x19, 0x19
-/* 8008D0A8 00089EA8  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008D0A8 00089EA8  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008D0AC 00089EAC  38 60 00 01 */	li r3, 1
-/* 8008D0B0 00089EB0  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008D0B0 00089EB0  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008D0B4 00089EB4  48 00 00 08 */	b lbl_8008D0BC
 lbl_8008D0B8:
 /* 8008D0B8 00089EB8  38 60 00 00 */	li r3, 0
@@ -533,7 +533,7 @@ lbl_8008D158:
 
 .global Violet__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 Violet__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
-/* 8008D168 00089F68  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8008D168 00089F68  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8008D16C 00089F6C  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8008D170 00089F70  80 03 01 50 */	lwz r0, 0x150(r3)
 /* 8008D174 00089F74  20 00 00 2D */	subfic r0, r0, 0x2d
@@ -591,16 +591,16 @@ Cheat_KonamiCode__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D208 0008A008  4B FF FD BD */	bl Dash__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 /* 8008D20C 0008A00C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8008D210 0008A010  40 82 00 8C */	bne lbl_8008D29C
-/* 8008D214 0008A014  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8008D214 0008A014  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8008D218 0008A018  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8008D21C 0008A01C  48 00 00 99 */	bl GetCombat__7zPlayerFv
 /* 8008D220 0008A020  A8 03 00 1C */	lha r0, 0x1c(r3)
 /* 8008D224 0008A024  2C 00 00 00 */	cmpwi r0, 0
 /* 8008D228 0008A028  40 81 00 6C */	ble lbl_8008D294
-/* 8008D22C 0008A02C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8008D22C 0008A02C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8008D230 0008A030  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8008D234 0008A034  48 00 00 81 */	bl GetCombat__7zPlayerFv
-/* 8008D238 0008A038  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8008D238 0008A038  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 8008D23C 0008A03C  AB E3 00 1E */	lha r31, 0x1e(r3)
 /* 8008D240 0008A040  80 64 04 C4 */	lwz r3, 0x4c4(r4)
 /* 8008D244 0008A044  48 00 00 71 */	bl GetCombat__7zPlayerFv
@@ -608,19 +608,19 @@ Cheat_KonamiCode__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D24C 0008A04C  38 03 00 1E */	addi r0, r3, 0x1e
 /* 8008D250 0008A050  7C 00 F8 00 */	cmpw r0, r31
 /* 8008D254 0008A054  40 80 00 1C */	bge lbl_8008D270
-/* 8008D258 0008A058  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8008D258 0008A058  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8008D25C 0008A05C  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8008D260 0008A060  48 00 00 55 */	bl GetCombat__7zPlayerFv
 /* 8008D264 0008A064  A8 63 00 1C */	lha r3, 0x1c(r3)
 /* 8008D268 0008A068  38 03 00 1E */	addi r0, r3, 0x1e
 /* 8008D26C 0008A06C  48 00 00 14 */	b lbl_8008D280
 lbl_8008D270:
-/* 8008D270 0008A070  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8008D270 0008A070  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8008D274 0008A074  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8008D278 0008A078  48 00 00 3D */	bl GetCombat__7zPlayerFv
 /* 8008D27C 0008A07C  A8 03 00 1E */	lha r0, 0x1e(r3)
 lbl_8008D280:
-/* 8008D280 0008A080  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8008D280 0008A080  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8008D284 0008A084  7C 1F 07 34 */	extsh r31, r0
 /* 8008D288 0008A088  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8008D28C 0008A08C  48 00 00 29 */	bl GetCombat__7zPlayerFv
@@ -671,31 +671,31 @@ lbl_8008D300:
 
 .global Cheat_BouncyHenchmen__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 Cheat_BouncyHenchmen__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
-/* 8008D314 0008A114  88 0D C3 9A */	lbz r0, gCheatBouncyHenchmen-_SDA_BASE_(r13)
+/* 8008D314 0008A114  88 0D C3 9A */	lbz r0, gCheatBouncyHenchmen@sda21(r13)
 /* 8008D318 0008A118  38 60 00 01 */	li r3, 1
 /* 8008D31C 0008A11C  7C 00 00 34 */	cntlzw r0, r0
 /* 8008D320 0008A120  54 00 D9 7E */	srwi r0, r0, 5
-/* 8008D324 0008A124  98 0D C3 9A */	stb r0, gCheatBouncyHenchmen-_SDA_BASE_(r13)
+/* 8008D324 0008A124  98 0D C3 9A */	stb r0, gCheatBouncyHenchmen@sda21(r13)
 /* 8008D328 0008A128  4E 80 00 20 */	blr 
 
 .global Cheat_ExtraShrapnel__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 Cheat_ExtraShrapnel__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
-/* 8008D32C 0008A12C  88 0D C3 9B */	lbz r0, gCheatExtraShrapnel-_SDA_BASE_(r13)
+/* 8008D32C 0008A12C  88 0D C3 9B */	lbz r0, gCheatExtraShrapnel@sda21(r13)
 /* 8008D330 0008A130  38 60 00 01 */	li r3, 1
 /* 8008D334 0008A134  7C 00 00 34 */	cntlzw r0, r0
 /* 8008D338 0008A138  54 00 D9 7E */	srwi r0, r0, 5
-/* 8008D33C 0008A13C  98 0D C3 9B */	stb r0, gCheatExtraShrapnel-_SDA_BASE_(r13)
+/* 8008D33C 0008A13C  98 0D C3 9B */	stb r0, gCheatExtraShrapnel@sda21(r13)
 /* 8008D340 0008A140  4E 80 00 20 */	blr 
 
 .global Cheat_FastMo__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 Cheat_FastMo__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D344 0008A144  3C 60 80 38 */	lis r3, globals@ha
-/* 8008D348 0008A148  C0 22 94 A0 */	lfs f1, _esc__2_1498-_SDA2_BASE_(r2)
+/* 8008D348 0008A148  C0 22 94 A0 */	lfs f1, _esc__2_1498@sda21(r2)
 /* 8008D34C 0008A14C  38 63 2A 38 */	addi r3, r3, globals@l
 /* 8008D350 0008A150  C0 03 05 60 */	lfs f0, 0x560(r3)
 /* 8008D354 0008A154  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 8008D358 0008A158  40 82 00 10 */	bne lbl_8008D368
-/* 8008D35C 0008A15C  C0 02 94 9C */	lfs f0, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008D35C 0008A15C  C0 02 94 9C */	lfs f0, _esc__2_1374@sda21(r2)
 /* 8008D360 0008A160  D0 03 05 60 */	stfs f0, 0x560(r3)
 /* 8008D364 0008A164  48 00 00 08 */	b lbl_8008D36C
 lbl_8008D368:
@@ -707,12 +707,12 @@ lbl_8008D36C:
 .global Cheat_SlowMo__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 Cheat_SlowMo__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D374 0008A174  3C 60 80 38 */	lis r3, globals@ha
-/* 8008D378 0008A178  C0 22 94 A4 */	lfs f1, _esc__2_1508-_SDA2_BASE_(r2)
+/* 8008D378 0008A178  C0 22 94 A4 */	lfs f1, _esc__2_1508@sda21(r2)
 /* 8008D37C 0008A17C  38 63 2A 38 */	addi r3, r3, globals@l
 /* 8008D380 0008A180  C0 03 05 60 */	lfs f0, 0x560(r3)
 /* 8008D384 0008A184  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 8008D388 0008A188  40 82 00 10 */	bne lbl_8008D398
-/* 8008D38C 0008A18C  C0 02 94 9C */	lfs f0, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008D38C 0008A18C  C0 02 94 9C */	lfs f0, _esc__2_1374@sda21(r2)
 /* 8008D390 0008A190  D0 03 05 60 */	stfs f0, 0x560(r3)
 /* 8008D394 0008A194  48 00 00 08 */	b lbl_8008D39C
 lbl_8008D398:
@@ -730,13 +730,13 @@ Cheat_Gazerbeam__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D3B4 0008A1B4  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8008D3B8 0008A1B8  41 82 00 28 */	beq lbl_8008D3E0
 /* 8008D3BC 0008A1BC  4B FF F8 75 */	bl zCheatRemoveTimed__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
-/* 8008D3C0 0008A1C0  C0 02 94 8C */	lfs f0, _esc__2_1319-_SDA2_BASE_(r2)
+/* 8008D3C0 0008A1C0  C0 02 94 8C */	lfs f0, _esc__2_1319@sda21(r2)
 /* 8008D3C4 0008A1C4  38 60 00 01 */	li r3, 1
-/* 8008D3C8 0008A1C8  88 0D C3 98 */	lbz r0, gCheats-_SDA_BASE_(r13)
+/* 8008D3C8 0008A1C8  88 0D C3 98 */	lbz r0, gCheats@sda21(r13)
 /* 8008D3CC 0008A1CC  50 60 17 7A */	rlwimi r0, r3, 2, 0x1d, 0x1d
-/* 8008D3D0 0008A1D0  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008D3D0 0008A1D0  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008D3D4 0008A1D4  38 60 00 01 */	li r3, 1
-/* 8008D3D8 0008A1D8  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008D3D8 0008A1D8  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008D3DC 0008A1DC  48 00 00 08 */	b lbl_8008D3E4
 lbl_8008D3E0:
 /* 8008D3E0 0008A1E0  38 60 00 00 */	li r3, 0
@@ -757,19 +757,19 @@ Cheat_HeadRescale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Ff:
 /* 8008D40C 0008A20C  4B FF F9 E9 */	bl IncrediBall__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 /* 8008D410 0008A210  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8008D414 0008A214  40 82 00 38 */	bne lbl_8008D44C
-/* 8008D418 0008A218  C0 0D 89 54 */	lfs f0, targetHead__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008D418 0008A218  C0 0D 89 54 */	lfs f0, targetHead__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008D41C 0008A21C  38 60 00 01 */	li r3, 1
-/* 8008D420 0008A220  88 0D C3 98 */	lbz r0, gCheats-_SDA_BASE_(r13)
+/* 8008D420 0008A220  88 0D C3 98 */	lbz r0, gCheats@sda21(r13)
 /* 8008D424 0008A224  50 60 0F BC */	rlwimi r0, r3, 1, 0x1e, 0x1e
 /* 8008D428 0008A228  FC 00 F8 00 */	fcmpu cr0, f0, f31
-/* 8008D42C 0008A22C  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008D42C 0008A22C  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 /* 8008D430 0008A230  41 82 00 0C */	beq lbl_8008D43C
 /* 8008D434 0008A234  FC 00 F8 90 */	fmr f0, f31
 /* 8008D438 0008A238  48 00 00 08 */	b lbl_8008D440
 lbl_8008D43C:
-/* 8008D43C 0008A23C  C0 02 94 9C */	lfs f0, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008D43C 0008A23C  C0 02 94 9C */	lfs f0, _esc__2_1374@sda21(r2)
 lbl_8008D440:
-/* 8008D440 0008A240  D0 0D 89 54 */	stfs f0, targetHead__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008D440 0008A240  D0 0D 89 54 */	stfs f0, targetHead__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008D444 0008A244  38 60 00 01 */	li r3, 1
 /* 8008D448 0008A248  48 00 00 08 */	b lbl_8008D450
 lbl_8008D44C:
@@ -786,7 +786,7 @@ lbl_8008D450:
 Cheat_BigHeadMode__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D468 0008A268  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008D46C 0008A26C  7C 08 02 A6 */	mflr r0
-/* 8008D470 0008A270  C0 22 94 A8 */	lfs f1, _esc__2_1531_0-_SDA2_BASE_(r2)
+/* 8008D470 0008A270  C0 22 94 A8 */	lfs f1, _esc__2_1531_0@sda21(r2)
 /* 8008D474 0008A274  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8008D478 0008A278  4B FF FF 7D */	bl Cheat_HeadRescale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Ff
 /* 8008D47C 0008A27C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -798,7 +798,7 @@ Cheat_BigHeadMode__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 Cheat_SmallHeadMode__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D48C 0008A28C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008D490 0008A290  7C 08 02 A6 */	mflr r0
-/* 8008D494 0008A294  C0 22 94 A4 */	lfs f1, _esc__2_1508-_SDA2_BASE_(r2)
+/* 8008D494 0008A294  C0 22 94 A4 */	lfs f1, _esc__2_1508@sda21(r2)
 /* 8008D498 0008A298  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8008D49C 0008A29C  4B FF FF 59 */	bl Cheat_HeadRescale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Ff
 /* 8008D4A0 0008A2A0  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -808,19 +808,19 @@ Cheat_SmallHeadMode__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 
 .global Cheat_FlamingPlants__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 Cheat_FlamingPlants__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
-/* 8008D4B0 0008A2B0  88 8D C3 98 */	lbz r4, gCheats-_SDA_BASE_(r13)
+/* 8008D4B0 0008A2B0  88 8D C3 98 */	lbz r4, gCheats@sda21(r13)
 /* 8008D4B4 0008A2B4  38 60 00 01 */	li r3, 1
 /* 8008D4B8 0008A2B8  54 80 07 FE */	clrlwi r0, r4, 0x1f
 /* 8008D4BC 0008A2BC  7C 00 00 34 */	cntlzw r0, r0
 /* 8008D4C0 0008A2C0  50 04 DF FE */	rlwimi r4, r0, 0x1b, 0x1f, 0x1f
-/* 8008D4C4 0008A2C4  98 8D C3 98 */	stb r4, gCheats-_SDA_BASE_(r13)
+/* 8008D4C4 0008A2C4  98 8D C3 98 */	stb r4, gCheats@sda21(r13)
 /* 8008D4C8 0008A2C8  4E 80 00 20 */	blr 
 
 .global Cheat_DiscoMode__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 Cheat_DiscoMode__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D4CC 0008A2CC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008D4D0 0008A2D0  7C 08 02 A6 */	mflr r0
-/* 8008D4D4 0008A2D4  38 8D C3 98 */	addi r4, r13, gCheats-_SDA_BASE_
+/* 8008D4D4 0008A2D4  38 8D C3 98 */	addi r4, r13, gCheats@sda21
 /* 8008D4D8 0008A2D8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8008D4DC 0008A2DC  88 64 00 01 */	lbz r3, 1(r4)
 /* 8008D4E0 0008A2E0  54 60 CF FE */	rlwinm r0, r3, 0x19, 0x1f, 0x1f
@@ -832,7 +832,7 @@ Cheat_DiscoMode__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D4F8 0008A2F8  48 00 00 31 */	bl newDiscoColor__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 /* 8008D4FC 0008A2FC  48 00 00 18 */	b lbl_8008D514
 lbl_8008D500:
-/* 8008D500 0008A300  C0 22 94 9C */	lfs f1, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008D500 0008A300  C0 22 94 9C */	lfs f1, _esc__2_1374@sda21(r2)
 /* 8008D504 0008A304  FC 40 08 90 */	fmr f2, f1
 /* 8008D508 0008A308  FC 60 08 90 */	fmr f3, f1
 /* 8008D50C 0008A30C  FC 80 08 90 */	fmr f4, f1
@@ -851,8 +851,8 @@ newDiscoColor__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D530 0008A330  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8008D534 0008A334  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 8008D538 0008A338  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
-/* 8008D53C 0008A33C  C0 22 94 9C */	lfs f1, _esc__2_1374-_SDA2_BASE_(r2)
-/* 8008D540 0008A340  C0 42 94 A0 */	lfs f2, _esc__2_1498-_SDA2_BASE_(r2)
+/* 8008D53C 0008A33C  C0 22 94 9C */	lfs f1, _esc__2_1374@sda21(r2)
+/* 8008D540 0008A340  C0 42 94 A0 */	lfs f2, _esc__2_1498@sda21(r2)
 /* 8008D544 0008A344  4B FD 9C B9 */	bl xrand_RandomFloatRange__Fff
 /* 8008D548 0008A348  FF E0 08 90 */	fmr f31, f1
 /* 8008D54C 0008A34C  38 60 00 04 */	li r3, 4
@@ -869,37 +869,37 @@ lbl_8008D570:
 /* 8008D574 0008A374  40 80 00 64 */	bge lbl_8008D5D8
 /* 8008D578 0008A378  48 00 00 4C */	b lbl_8008D5C4
 lbl_8008D57C:
-/* 8008D57C 0008A37C  C0 42 94 88 */	lfs f2, _esc__2_1291_0-_SDA2_BASE_(r2)
+/* 8008D57C 0008A37C  C0 42 94 88 */	lfs f2, _esc__2_1291_0@sda21(r2)
 /* 8008D580 0008A380  FC 20 F8 90 */	fmr f1, f31
-/* 8008D584 0008A384  C0 82 94 9C */	lfs f4, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008D584 0008A384  C0 82 94 9C */	lfs f4, _esc__2_1374@sda21(r2)
 /* 8008D588 0008A388  FC 60 10 90 */	fmr f3, f2
 /* 8008D58C 0008A38C  48 10 A2 21 */	bl xFXHighDynamicRangeSetColorize__Fffff
 /* 8008D590 0008A390  48 00 00 48 */	b lbl_8008D5D8
 lbl_8008D594:
-/* 8008D594 0008A394  C0 22 94 88 */	lfs f1, _esc__2_1291_0-_SDA2_BASE_(r2)
+/* 8008D594 0008A394  C0 22 94 88 */	lfs f1, _esc__2_1291_0@sda21(r2)
 /* 8008D598 0008A398  FC 60 F8 90 */	fmr f3, f31
-/* 8008D59C 0008A39C  C0 82 94 9C */	lfs f4, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008D59C 0008A39C  C0 82 94 9C */	lfs f4, _esc__2_1374@sda21(r2)
 /* 8008D5A0 0008A3A0  FC 40 08 90 */	fmr f2, f1
 /* 8008D5A4 0008A3A4  48 10 A2 09 */	bl xFXHighDynamicRangeSetColorize__Fffff
 /* 8008D5A8 0008A3A8  48 00 00 30 */	b lbl_8008D5D8
 lbl_8008D5AC:
-/* 8008D5AC 0008A3AC  C0 22 94 88 */	lfs f1, _esc__2_1291_0-_SDA2_BASE_(r2)
+/* 8008D5AC 0008A3AC  C0 22 94 88 */	lfs f1, _esc__2_1291_0@sda21(r2)
 /* 8008D5B0 0008A3B0  FC 40 F8 90 */	fmr f2, f31
-/* 8008D5B4 0008A3B4  C0 82 94 9C */	lfs f4, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008D5B4 0008A3B4  C0 82 94 9C */	lfs f4, _esc__2_1374@sda21(r2)
 /* 8008D5B8 0008A3B8  FC 60 08 90 */	fmr f3, f1
 /* 8008D5BC 0008A3BC  48 10 A1 F1 */	bl xFXHighDynamicRangeSetColorize__Fffff
 /* 8008D5C0 0008A3C0  48 00 00 18 */	b lbl_8008D5D8
 lbl_8008D5C4:
 /* 8008D5C4 0008A3C4  FC 20 F8 90 */	fmr f1, f31
-/* 8008D5C8 0008A3C8  C0 62 94 88 */	lfs f3, _esc__2_1291_0-_SDA2_BASE_(r2)
+/* 8008D5C8 0008A3C8  C0 62 94 88 */	lfs f3, _esc__2_1291_0@sda21(r2)
 /* 8008D5CC 0008A3CC  FC 40 F8 90 */	fmr f2, f31
-/* 8008D5D0 0008A3D0  C0 82 94 9C */	lfs f4, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008D5D0 0008A3D0  C0 82 94 9C */	lfs f4, _esc__2_1374@sda21(r2)
 /* 8008D5D4 0008A3D4  48 10 A1 D9 */	bl xFXHighDynamicRangeSetColorize__Fffff
 lbl_8008D5D8:
-/* 8008D5D8 0008A3D8  C0 22 94 A4 */	lfs f1, _esc__2_1508-_SDA2_BASE_(r2)
-/* 8008D5DC 0008A3DC  C0 42 94 A8 */	lfs f2, _esc__2_1531_0-_SDA2_BASE_(r2)
+/* 8008D5D8 0008A3D8  C0 22 94 A4 */	lfs f1, _esc__2_1508@sda21(r2)
+/* 8008D5DC 0008A3DC  C0 42 94 A8 */	lfs f2, _esc__2_1531_0@sda21(r2)
 /* 8008D5E0 0008A3E0  4B FD 9C 1D */	bl xrand_RandomFloatRange__Fff
-/* 8008D5E4 0008A3E4  D0 2D C3 A0 */	stfs f1, discoTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008D5E4 0008A3E4  D0 2D C3 A0 */	stfs f1, discoTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008D5E8 0008A3E8  E3 E1 00 18 */	psq_l f31, 24(r1), 0, qr0
 /* 8008D5EC 0008A3EC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8008D5F0 0008A3F0  CB E1 00 10 */	lfd f31, 0x10(r1)
@@ -926,7 +926,7 @@ lbl_8008D634:
 /* 8008D634 0008A434  38 60 00 00 */	li r3, 0
 /* 8008D638 0008A438  4E 80 00 20 */	blr 
 lbl_8008D63C:
-/* 8008D63C 0008A43C  38 AD C3 98 */	addi r5, r13, gCheats-_SDA_BASE_
+/* 8008D63C 0008A43C  38 AD C3 98 */	addi r5, r13, gCheats@sda21
 /* 8008D640 0008A440  38 60 00 01 */	li r3, 1
 /* 8008D644 0008A444  88 85 00 01 */	lbz r4, 1(r5)
 /* 8008D648 0008A448  54 80 D7 FE */	rlwinm r0, r4, 0x1a, 0x1f, 0x1f
@@ -941,14 +941,14 @@ Cheat_Ethereal__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D660 0008A460  7C 08 02 A6 */	mflr r0
 /* 8008D664 0008A464  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8008D668 0008A468  93 E1 00 2C */	stw r31, 0x2c(r1)
-/* 8008D66C 0008A46C  3B ED C3 98 */	addi r31, r13, gCheats-_SDA_BASE_
+/* 8008D66C 0008A46C  3B ED C3 98 */	addi r31, r13, gCheats@sda21
 /* 8008D670 0008A470  88 7F 00 01 */	lbz r3, 1(r31)
 /* 8008D674 0008A474  54 60 E7 FF */	rlwinm. r0, r3, 0x1c, 0x1f, 0x1f
 /* 8008D678 0008A478  41 82 00 34 */	beq lbl_8008D6AC
-/* 8008D67C 0008A47C  38 6D C3 A4 */	addi r3, r13, defaultConfig__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_
+/* 8008D67C 0008A47C  38 6D C3 A4 */	addi r3, r13, defaultConfig__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21
 /* 8008D680 0008A480  48 10 B1 09 */	bl xFXHighDynamicRangeSetConfiguration__FRC32xFXHighDynamicRangeConfiguration
-/* 8008D684 0008A484  38 8D C3 A4 */	addi r4, r13, defaultConfig__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_
-/* 8008D688 0008A488  80 6D C3 A4 */	lwz r3, defaultConfig__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008D684 0008A484  38 8D C3 A4 */	addi r4, r13, defaultConfig__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21
+/* 8008D688 0008A488  80 6D C3 A4 */	lwz r3, defaultConfig__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008D68C 0008A48C  80 84 00 04 */	lwz r4, 4(r4)
 /* 8008D690 0008A490  38 A0 00 01 */	li r5, 1
 /* 8008D694 0008A494  48 10 B2 F5 */	bl xFXHighDynamicRangeSetBackgroundDefault__Fiib
@@ -960,7 +960,7 @@ Cheat_Ethereal__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 lbl_8008D6AC:
 /* 8008D6AC 0008A4AC  54 60 DF FF */	rlwinm. r0, r3, 0x1b, 0x1f, 0x1f
 /* 8008D6B0 0008A4B0  40 82 00 0C */	bne lbl_8008D6BC
-/* 8008D6B4 0008A4B4  38 6D C3 A4 */	addi r3, r13, defaultConfig__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_
+/* 8008D6B4 0008A4B4  38 6D C3 A4 */	addi r3, r13, defaultConfig__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21
 /* 8008D6B8 0008A4B8  48 10 B1 25 */	bl xFXHighDynamicRangeGetConfiguration__FR32xFXHighDynamicRangeConfiguration
 lbl_8008D6BC:
 /* 8008D6BC 0008A4BC  88 7F 00 01 */	lbz r3, 1(r31)
@@ -969,7 +969,7 @@ lbl_8008D6BC:
 /* 8008D6C8 0008A4C8  38 00 00 03 */	li r0, 3
 /* 8008D6CC 0008A4CC  98 7F 00 01 */	stb r3, 1(r31)
 /* 8008D6D0 0008A4D0  38 A1 00 04 */	addi r5, r1, 4
-/* 8008D6D4 0008A4D4  38 8D C3 A0 */	addi r4, r13, discoTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_
+/* 8008D6D4 0008A4D4  38 8D C3 A0 */	addi r4, r13, discoTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21
 /* 8008D6D8 0008A4D8  7C 09 03 A6 */	mtctr r0
 lbl_8008D6DC:
 /* 8008D6DC 0008A4DC  80 64 00 04 */	lwz r3, 4(r4)
@@ -1008,7 +1008,7 @@ Cheat_HILogo__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 Cheat_UnlockBattle__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:
 /* 8008D748 0008A548  38 00 00 01 */	li r0, 1
 /* 8008D74C 0008A54C  38 60 00 01 */	li r3, 1
-/* 8008D750 0008A550  98 0D DC 9D */	stb r0, gBattleCheat-_SDA_BASE_(r13)
+/* 8008D750 0008A550  98 0D DC 9D */	stb r0, gBattleCheat@sda21(r13)
 /* 8008D754 0008A554  4E 80 00 20 */	blr 
 
 .global Cheat_CreditCode__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
@@ -1041,7 +1041,7 @@ lbl_8008D7A8:
 /* 8008D7A8 0008A5A8  28 07 00 20 */	cmplwi r7, 0x20
 /* 8008D7AC 0008A5AC  40 80 00 54 */	bge lbl_8008D800
 /* 8008D7B0 0008A5B0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_37@ha
-/* 8008D7B4 0008A5B4  38 AD 89 58 */	addi r5, r13, unlock_clear_esc__7_1631-_SDA_BASE_
+/* 8008D7B4 0008A5B4  38 AD 89 58 */	addi r5, r13, unlock_clear_esc__7_1631@sda21
 /* 8008D7B8 0008A5B8  38 63 A2 F8 */	addi r3, r3, _esc__2_stringBase0_37@l
 /* 8008D7BC 0008A5BC  39 00 00 00 */	li r8, 0
 /* 8008D7C0 0008A5C0  38 C3 01 3C */	addi r6, r3, 0x13c
@@ -1059,7 +1059,7 @@ lbl_8008D7C8:
 /* 8008D7EC 0008A5EC  3C 60 80 30 */	lis r3, cheats__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@ha
 /* 8008D7F0 0008A5F0  54 E0 18 38 */	slwi r0, r7, 3
 /* 8008D7F4 0008A5F4  38 63 4D 30 */	addi r3, r3, cheats__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@l
-/* 8008D7F8 0008A5F8  38 8D 89 58 */	addi r4, r13, unlock_clear_esc__7_1631-_SDA_BASE_
+/* 8008D7F8 0008A5F8  38 8D 89 58 */	addi r4, r13, unlock_clear_esc__7_1631@sda21
 /* 8008D7FC 0008A5FC  7C 83 01 2E */	stwx r4, r3, r0
 lbl_8008D800:
 /* 8008D800 0008A600  48 00 00 15 */	bl zCheatRemoveAll__Fv
@@ -1072,24 +1072,24 @@ lbl_8008D800:
 zCheatRemoveAll__Fv:
 /* 8008D814 0008A614  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008D818 0008A618  7C 08 02 A6 */	mflr r0
-/* 8008D81C 0008A61C  C0 02 94 88 */	lfs f0, _esc__2_1291_0-_SDA2_BASE_(r2)
-/* 8008D820 0008A620  38 6D C3 98 */	addi r3, r13, gCheats-_SDA_BASE_
+/* 8008D81C 0008A61C  C0 02 94 88 */	lfs f0, _esc__2_1291_0@sda21(r2)
+/* 8008D820 0008A620  38 6D C3 98 */	addi r3, r13, gCheats@sda21
 /* 8008D824 0008A624  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8008D828 0008A628  38 80 00 00 */	li r4, 0
 /* 8008D82C 0008A62C  38 A0 00 02 */	li r5, 2
-/* 8008D830 0008A630  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008D830 0008A630  D0 0D C3 9C */	stfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008D834 0008A634  4B F7 58 CD */	bl memset
-/* 8008D838 0008A638  C0 02 94 9C */	lfs f0, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008D838 0008A638  C0 02 94 9C */	lfs f0, _esc__2_1374@sda21(r2)
 /* 8008D83C 0008A63C  3C 60 80 38 */	lis r3, globals@ha
 /* 8008D840 0008A640  38 80 00 00 */	li r4, 0
 /* 8008D844 0008A644  38 00 00 01 */	li r0, 1
 /* 8008D848 0008A648  38 63 2A 38 */	addi r3, r3, globals@l
-/* 8008D84C 0008A64C  D0 0D 89 50 */	stfs f0, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8008D850 0008A650  D0 0D 89 54 */	stfs f0, targetHead__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8008D854 0008A654  98 8D D6 D4 */	stb r4, weak_bombs__Q21z4bomb-_SDA_BASE_(r13)
-/* 8008D858 0008A658  98 8D C3 9B */	stb r4, gCheatExtraShrapnel-_SDA_BASE_(r13)
-/* 8008D85C 0008A65C  98 8D C3 9A */	stb r4, gCheatBouncyHenchmen-_SDA_BASE_(r13)
-/* 8008D860 0008A660  98 0D 9F 58 */	stb r0, ENABLE_HUD__14zPlayerGlobals-_SDA_BASE_(r13)
+/* 8008D84C 0008A64C  D0 0D 89 50 */	stfs f0, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
+/* 8008D850 0008A650  D0 0D 89 54 */	stfs f0, targetHead__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
+/* 8008D854 0008A654  98 8D D6 D4 */	stb r4, weak_bombs__Q21z4bomb@sda21(r13)
+/* 8008D858 0008A658  98 8D C3 9B */	stb r4, gCheatExtraShrapnel@sda21(r13)
+/* 8008D85C 0008A65C  98 8D C3 9A */	stb r4, gCheatBouncyHenchmen@sda21(r13)
+/* 8008D860 0008A660  98 0D 9F 58 */	stb r0, ENABLE_HUD__14zPlayerGlobals@sda21(r13)
 /* 8008D864 0008A664  98 83 05 5E */	stb r4, 0x55e(r3)
 /* 8008D868 0008A668  98 83 05 5F */	stb r4, 0x55f(r3)
 /* 8008D86C 0008A66C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1126,7 +1126,7 @@ lbl_8008D8B0:
 /* 8008D8D8 0008A6D8  28 00 30 34 */	cmplwi r0, 0x3034
 /* 8008D8DC 0008A6DC  40 82 00 18 */	bne lbl_8008D8F4
 lbl_8008D8E0:
-/* 8008D8E0 0008A6E0  38 6D C3 98 */	addi r3, r13, gCheats-_SDA_BASE_
+/* 8008D8E0 0008A6E0  38 6D C3 98 */	addi r3, r13, gCheats@sda21
 /* 8008D8E4 0008A6E4  38 80 00 00 */	li r4, 0
 /* 8008D8E8 0008A6E8  88 03 00 01 */	lbz r0, 1(r3)
 /* 8008D8EC 0008A6EC  50 80 36 72 */	rlwimi r0, r4, 6, 0x19, 0x19
@@ -1145,27 +1145,27 @@ zCheatUpdate__Ff:
 /* 8008D910 0008A710  90 01 01 24 */	stw r0, 0x124(r1)
 /* 8008D914 0008A714  DB E1 01 10 */	stfd f31, 0x110(r1)
 /* 8008D918 0008A718  F3 E1 01 18 */	psq_st f31, 280(r1), 0, qr0
-/* 8008D91C 0008A71C  C0 0D C3 9C */	lfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008D91C 0008A71C  C0 0D C3 9C */	lfs f0, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008D920 0008A720  FF E0 08 90 */	fmr f31, f1
-/* 8008D924 0008A724  C0 22 94 A4 */	lfs f1, _esc__2_1508-_SDA2_BASE_(r2)
+/* 8008D924 0008A724  C0 22 94 A4 */	lfs f1, _esc__2_1508@sda21(r2)
 /* 8008D928 0008A728  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 8008D92C 0008A72C  40 81 00 2C */	ble lbl_8008D958
 /* 8008D930 0008A730  EC 00 F8 28 */	fsubs f0, f0, f31
 /* 8008D934 0008A734  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 8008D938 0008A738  4C 40 13 82 */	cror 2, 0, 2
 /* 8008D93C 0008A73C  40 82 00 1C */	bne lbl_8008D958
-/* 8008D940 0008A740  80 02 94 AC */	lwz r0, _esc__2_1663-_SDA2_BASE_(r2)
+/* 8008D940 0008A740  80 02 94 AC */	lwz r0, _esc__2_1663@sda21(r2)
 /* 8008D944 0008A744  38 61 00 08 */	addi r3, r1, 8
 /* 8008D948 0008A748  7C 64 1B 78 */	mr r4, r3
 /* 8008D94C 0008A74C  38 A0 00 00 */	li r5, 0
 /* 8008D950 0008A750  90 01 00 08 */	stw r0, 8(r1)
 /* 8008D954 0008A754  4B FC F2 B1 */	bl xScrFxFade__FPC10xColor_tagPC10xColor_tagfi
 lbl_8008D958:
-/* 8008D958 0008A758  88 0D C3 98 */	lbz r0, gCheats-_SDA_BASE_(r13)
+/* 8008D958 0008A758  88 0D C3 98 */	lbz r0, gCheats@sda21(r13)
 /* 8008D95C 0008A75C  54 00 F7 FF */	rlwinm. r0, r0, 0x1e, 0x1f, 0x1f
 /* 8008D960 0008A760  41 82 00 A4 */	beq lbl_8008DA04
-/* 8008D964 0008A764  C0 2D C3 9C */	lfs f1, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8008D968 0008A768  C0 42 94 B0 */	lfs f2, _esc__2_1734-_SDA2_BASE_(r2)
+/* 8008D964 0008A764  C0 2D C3 9C */	lfs f1, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
+/* 8008D968 0008A768  C0 42 94 B0 */	lfs f2, _esc__2_1734@sda21(r2)
 /* 8008D96C 0008A76C  EC 01 F8 28 */	fsubs f0, f1, f31
 /* 8008D970 0008A770  EC 21 10 24 */	fdivs f1, f1, f2
 /* 8008D974 0008A774  EC 00 10 24 */	fdivs f0, f0, f2
@@ -1177,87 +1177,87 @@ lbl_8008D958:
 /* 8008D98C 0008A78C  80 01 01 04 */	lwz r0, 0x104(r1)
 /* 8008D990 0008A790  7C 03 00 00 */	cmpw r3, r0
 /* 8008D994 0008A794  41 82 00 70 */	beq lbl_8008DA04
-/* 8008D998 0008A798  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8008D998 0008A798  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8008D99C 0008A79C  38 81 00 0C */	addi r4, r1, 0xc
 /* 8008D9A0 0008A7A0  38 A0 00 0D */	li r5, 0xd
-/* 8008D9A4 0008A7A4  38 C2 90 18 */	addi r6, r2, m_Null__5xVec3-_SDA2_BASE_
+/* 8008D9A4 0008A7A4  38 C2 90 18 */	addi r6, r2, m_Null__5xVec3@sda21
 /* 8008D9A8 0008A7A8  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8008D9AC 0008A7AC  80 E3 00 28 */	lwz r7, 0x28(r3)
 /* 8008D9B0 0008A7B0  80 E7 00 54 */	lwz r7, 0x54(r7)
 /* 8008D9B4 0008A7B4  48 00 7D D9 */	bl GetBonePos__13zCommonPlayerFP5xVec3iPC5xVec3P7xMat4x3
-/* 8008D9B8 0008A7B8  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8008D9B8 0008A7B8  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 8008D9BC 0008A7BC  38 61 00 18 */	addi r3, r1, 0x18
-/* 8008D9C0 0008A7C0  C0 22 94 B4 */	lfs f1, _esc__2_1735-_SDA2_BASE_(r2)
+/* 8008D9C0 0008A7C0  C0 22 94 B4 */	lfs f1, _esc__2_1735@sda21(r2)
 /* 8008D9C4 0008A7C4  38 A1 00 0C */	addi r5, r1, 0xc
 /* 8008D9C8 0008A7C8  80 84 04 C4 */	lwz r4, 0x4c4(r4)
 /* 8008D9CC 0008A7CC  38 E0 00 0A */	li r7, 0xa
-/* 8008D9D0 0008A7D0  C0 42 94 A0 */	lfs f2, _esc__2_1498-_SDA2_BASE_(r2)
+/* 8008D9D0 0008A7D0  C0 42 94 A0 */	lfs f2, _esc__2_1498@sda21(r2)
 /* 8008D9D4 0008A7D4  39 00 00 00 */	li r8, 0
 /* 8008D9D8 0008A7D8  80 C4 00 48 */	lwz r6, 0x48(r4)
 /* 8008D9DC 0008A7DC  39 20 00 01 */	li r9, 1
-/* 8008D9E0 0008A7E0  C0 62 94 B8 */	lfs f3, _esc__2_1736-_SDA2_BASE_(r2)
-/* 8008D9E4 0008A7E4  39 42 82 40 */	addi r10, r2, g_WHITE-_SDA2_BASE_
-/* 8008D9E8 0008A7E8  C0 82 94 9C */	lfs f4, _esc__2_1374-_SDA2_BASE_(r2)
+/* 8008D9E0 0008A7E0  C0 62 94 B8 */	lfs f3, _esc__2_1736@sda21(r2)
+/* 8008D9E4 0008A7E4  39 42 82 40 */	addi r10, r2, g_WHITE@sda21
+/* 8008D9E8 0008A7E8  C0 82 94 9C */	lfs f4, _esc__2_1374@sda21(r2)
 /* 8008D9EC 0008A7EC  38 C6 00 20 */	addi r6, r6, 0x20
-/* 8008D9F0 0008A7F0  C0 A2 94 BC */	lfs f5, _esc__2_1737-_SDA2_BASE_(r2)
-/* 8008D9F4 0008A7F4  C0 C2 94 C0 */	lfs f6, _esc__2_1738-_SDA2_BASE_(r2)
+/* 8008D9F0 0008A7F0  C0 A2 94 BC */	lfs f5, _esc__2_1737@sda21(r2)
+/* 8008D9F4 0008A7F4  C0 C2 94 C0 */	lfs f6, _esc__2_1738@sda21(r2)
 /* 8008D9F8 0008A7F8  48 00 64 AD */	bl __ct__Q21z5laserFP5xBaseRC5xVec3RC5xVec3fffifffUibRC10xColor_tag
 /* 8008D9FC 0008A7FC  38 61 00 18 */	addi r3, r1, 0x18
 /* 8008DA00 0008A800  48 00 00 E9 */	bl add__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_FRCQ21z5laser
 lbl_8008DA04:
-/* 8008DA04 0008A804  88 0D C3 98 */	lbz r0, gCheats-_SDA_BASE_(r13)
+/* 8008DA04 0008A804  88 0D C3 98 */	lbz r0, gCheats@sda21(r13)
 /* 8008DA08 0008A808  54 00 FF FF */	rlwinm. r0, r0, 0x1f, 0x1f, 0x1f
 /* 8008DA0C 0008A80C  41 82 00 78 */	beq lbl_8008DA84
-/* 8008DA10 0008A810  C0 4D 89 54 */	lfs f2, targetHead__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8008DA14 0008A814  C0 0D 89 50 */	lfs f0, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008DA10 0008A810  C0 4D 89 54 */	lfs f2, targetHead__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
+/* 8008DA14 0008A814  C0 0D 89 50 */	lfs f0, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008DA18 0008A818  FC 02 00 00 */	fcmpu cr0, f2, f0
 /* 8008DA1C 0008A81C  41 82 00 68 */	beq lbl_8008DA84
 /* 8008DA20 0008A820  FC 00 10 40 */	fcmpo cr0, f0, f2
 /* 8008DA24 0008A824  40 81 00 20 */	ble lbl_8008DA44
 /* 8008DA28 0008A828  EC 00 F8 28 */	fsubs f0, f0, f31
 /* 8008DA2C 0008A82C  FC 00 10 40 */	fcmpo cr0, f0, f2
-/* 8008DA30 0008A830  D0 0D 89 50 */	stfs f0, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008DA30 0008A830  D0 0D 89 50 */	stfs f0, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008DA34 0008A834  4C 40 13 82 */	cror 2, 0, 2
 /* 8008DA38 0008A838  40 82 00 24 */	bne lbl_8008DA5C
-/* 8008DA3C 0008A83C  D0 4D 89 50 */	stfs f2, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008DA3C 0008A83C  D0 4D 89 50 */	stfs f2, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008DA40 0008A840  48 00 00 1C */	b lbl_8008DA5C
 lbl_8008DA44:
 /* 8008DA44 0008A844  EC 00 F8 2A */	fadds f0, f0, f31
 /* 8008DA48 0008A848  FC 00 10 40 */	fcmpo cr0, f0, f2
-/* 8008DA4C 0008A84C  D0 0D 89 50 */	stfs f0, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008DA4C 0008A84C  D0 0D 89 50 */	stfs f0, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008DA50 0008A850  4C 41 13 82 */	cror 2, 1, 2
 /* 8008DA54 0008A854  40 82 00 08 */	bne lbl_8008DA5C
-/* 8008DA58 0008A858  D0 4D 89 50 */	stfs f2, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008DA58 0008A858  D0 4D 89 50 */	stfs f2, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 lbl_8008DA5C:
-/* 8008DA5C 0008A85C  C0 22 94 9C */	lfs f1, _esc__2_1374-_SDA2_BASE_(r2)
-/* 8008DA60 0008A860  C0 0D 89 50 */	lfs f0, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008DA5C 0008A85C  C0 22 94 9C */	lfs f1, _esc__2_1374@sda21(r2)
+/* 8008DA60 0008A860  C0 0D 89 50 */	lfs f0, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008DA64 0008A864  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 8008DA68 0008A868  40 82 00 1C */	bne lbl_8008DA84
 /* 8008DA6C 0008A86C  FC 01 10 00 */	fcmpu cr0, f1, f2
 /* 8008DA70 0008A870  40 82 00 14 */	bne lbl_8008DA84
-/* 8008DA74 0008A874  88 0D C3 98 */	lbz r0, gCheats-_SDA_BASE_(r13)
+/* 8008DA74 0008A874  88 0D C3 98 */	lbz r0, gCheats@sda21(r13)
 /* 8008DA78 0008A878  38 60 00 00 */	li r3, 0
 /* 8008DA7C 0008A87C  50 60 0F BC */	rlwimi r0, r3, 1, 0x1e, 0x1e
-/* 8008DA80 0008A880  98 0D C3 98 */	stb r0, gCheats-_SDA_BASE_(r13)
+/* 8008DA80 0008A880  98 0D C3 98 */	stb r0, gCheats@sda21(r13)
 lbl_8008DA84:
-/* 8008DA84 0008A884  38 6D C3 98 */	addi r3, r13, gCheats-_SDA_BASE_
+/* 8008DA84 0008A884  38 6D C3 98 */	addi r3, r13, gCheats@sda21
 /* 8008DA88 0008A888  88 03 00 01 */	lbz r0, 1(r3)
 /* 8008DA8C 0008A88C  54 00 CF FF */	rlwinm. r0, r0, 0x19, 0x1f, 0x1f
 /* 8008DA90 0008A890  41 82 00 24 */	beq lbl_8008DAB4
-/* 8008DA94 0008A894  C0 2D C3 A0 */	lfs f1, discoTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8008DA98 0008A898  C0 02 94 88 */	lfs f0, _esc__2_1291_0-_SDA2_BASE_(r2)
+/* 8008DA94 0008A894  C0 2D C3 A0 */	lfs f1, discoTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
+/* 8008DA98 0008A898  C0 02 94 88 */	lfs f0, _esc__2_1291_0@sda21(r2)
 /* 8008DA9C 0008A89C  EC 21 F8 28 */	fsubs f1, f1, f31
 /* 8008DAA0 0008A8A0  FC 01 00 40 */	fcmpo cr0, f1, f0
-/* 8008DAA4 0008A8A4  D0 2D C3 A0 */	stfs f1, discoTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008DAA4 0008A8A4  D0 2D C3 A0 */	stfs f1, discoTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008DAA8 0008A8A8  4C 40 13 82 */	cror 2, 0, 2
 /* 8008DAAC 0008A8AC  40 82 00 08 */	bne lbl_8008DAB4
 /* 8008DAB0 0008A8B0  4B FF FA 79 */	bl newDiscoColor__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 lbl_8008DAB4:
-/* 8008DAB4 0008A8B4  C0 2D C3 9C */	lfs f1, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8008DAB8 0008A8B8  C0 02 94 88 */	lfs f0, _esc__2_1291_0-_SDA2_BASE_(r2)
+/* 8008DAB4 0008A8B4  C0 2D C3 9C */	lfs f1, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
+/* 8008DAB8 0008A8B8  C0 02 94 88 */	lfs f0, _esc__2_1291_0@sda21(r2)
 /* 8008DABC 0008A8BC  EC 21 F8 28 */	fsubs f1, f1, f31
 /* 8008DAC0 0008A8C0  FC 01 00 40 */	fcmpo cr0, f1, f0
-/* 8008DAC4 0008A8C4  D0 2D C3 9C */	stfs f1, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008DAC4 0008A8C4  D0 2D C3 9C */	stfs f1, cheatTimer__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008DAC8 0008A8C8  40 80 00 08 */	bge lbl_8008DAD0
 /* 8008DACC 0008A8CC  4B FF F1 65 */	bl zCheatRemoveTimed__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 lbl_8008DAD0:
@@ -1445,15 +1445,15 @@ get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv:
 /* 8008DD4C 0008AB4C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008DD50 0008AB50  7C 08 02 A6 */	mflr r0
 /* 8008DD54 0008AB54  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8008DD58 0008AB58  88 0D C3 C0 */	lbz r0, init_esc__7_localstatic4_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv-_SDA_BASE_(r13)
+/* 8008DD58 0008AB58  88 0D C3 C0 */	lbz r0, init_esc__7_localstatic4_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv@sda21(r13)
 /* 8008DD5C 0008AB5C  7C 00 07 75 */	extsb. r0, r0
 /* 8008DD60 0008AB60  40 82 00 14 */	bne lbl_8008DD74
 /* 8008DD64 0008AB64  38 60 00 00 */	li r3, 0
 /* 8008DD68 0008AB68  38 00 00 01 */	li r0, 1
-/* 8008DD6C 0008AB6C  90 6D C3 BC */	stw r3, system_esc__7_localstatic3_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv-_SDA_BASE_(r13)
-/* 8008DD70 0008AB70  98 0D C3 C0 */	stb r0, init_esc__7_localstatic4_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv-_SDA_BASE_(r13)
+/* 8008DD6C 0008AB6C  90 6D C3 BC */	stw r3, system_esc__7_localstatic3_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv@sda21(r13)
+/* 8008DD70 0008AB70  98 0D C3 C0 */	stb r0, init_esc__7_localstatic4_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv@sda21(r13)
 lbl_8008DD74:
-/* 8008DD74 0008AB74  80 0D C3 BC */	lwz r0, system_esc__7_localstatic3_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv-_SDA_BASE_(r13)
+/* 8008DD74 0008AB74  80 0D C3 BC */	lwz r0, system_esc__7_localstatic3_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv@sda21(r13)
 /* 8008DD78 0008AB78  28 00 00 00 */	cmplwi r0, 0
 /* 8008DD7C 0008AB7C  40 82 00 2C */	bne lbl_8008DDA8
 /* 8008DD80 0008AB80  38 60 22 6C */	li r3, 0x226c
@@ -1462,14 +1462,14 @@ lbl_8008DD74:
 /* 8008DD8C 0008AB8C  4B F8 16 05 */	bl __nw__FUl14xMemStaticTypeUi
 /* 8008DD90 0008AB90  7C 60 1B 79 */	or. r0, r3, r3
 /* 8008DD94 0008AB94  41 82 00 10 */	beq lbl_8008DDA4
-/* 8008DD98 0008AB98  38 8D C3 BC */	addi r4, r13, system_esc__7_localstatic3_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv-_SDA_BASE_
+/* 8008DD98 0008AB98  38 8D C3 BC */	addi r4, r13, system_esc__7_localstatic3_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv@sda21
 /* 8008DD9C 0008AB9C  48 00 00 21 */	bl __ct__Q21z33lightweight_system_esc__0_Q21z5laser_esc__4_40_esc__1_FPPQ21z33lightweight_system_esc__0_Q21z5laser_esc__4_40_esc__1_
 /* 8008DDA0 0008ABA0  7C 60 1B 78 */	mr r0, r3
 lbl_8008DDA4:
-/* 8008DDA4 0008ABA4  90 0D C3 BC */	stw r0, system_esc__7_localstatic3_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv-_SDA_BASE_(r13)
+/* 8008DDA4 0008ABA4  90 0D C3 BC */	stw r0, system_esc__7_localstatic3_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv@sda21(r13)
 lbl_8008DDA8:
 /* 8008DDA8 0008ABA8  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 8008DDAC 0008ABAC  38 6D C3 BC */	addi r3, r13, system_esc__7_localstatic3_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv-_SDA_BASE_
+/* 8008DDAC 0008ABAC  38 6D C3 BC */	addi r3, r13, system_esc__7_localstatic3_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv@sda21
 /* 8008DDB0 0008ABB0  7C 08 03 A6 */	mtlr r0
 /* 8008DDB4 0008ABB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8008DDB8 0008ABB8  4E 80 00 20 */	blr 
@@ -1483,7 +1483,7 @@ __ct__Q21z33lightweight_system_esc__0_Q21z5laser_esc__4_40_esc__1_FPPQ21z33light
 /* 8008DDCC 0008ABCC  7C 7E 1B 78 */	mr r30, r3
 /* 8008DDD0 0008ABD0  7C 9F 23 78 */	mr r31, r4
 /* 8008DDD4 0008ABD4  48 00 00 59 */	bl __ct__Q21z23lightweight_system_baseFv
-/* 8008DDD8 0008ABD8  38 0D 89 9C */	addi r0, r13, __vt__Q21z33lightweight_system_esc__0_Q21z5laser_esc__4_40_esc__1_-_SDA_BASE_
+/* 8008DDD8 0008ABD8  38 0D 89 9C */	addi r0, r13, __vt__Q21z33lightweight_system_esc__0_Q21z5laser_esc__4_40_esc__1_@sda21
 /* 8008DDDC 0008ABDC  3C 60 80 09 */	lis r3, __ct__Q21z5laserFv@ha
 /* 8008DDE0 0008ABE0  90 1E 00 00 */	stw r0, 0(r30)
 /* 8008DDE4 0008ABE4  38 83 3E 50 */	addi r4, r3, __ct__Q21z5laserFv@l
@@ -1507,13 +1507,13 @@ __ct__Q21z33lightweight_system_esc__0_Q21z5laser_esc__4_40_esc__1_FPPQ21z33light
 
 .global __ct__Q21z23lightweight_system_baseFv
 __ct__Q21z23lightweight_system_baseFv:
-/* 8008DE2C 0008AC2C  38 0D 89 78 */	addi r0, r13, __vt__Q21z23lightweight_system_base-_SDA_BASE_
+/* 8008DE2C 0008AC2C  38 0D 89 78 */	addi r0, r13, __vt__Q21z23lightweight_system_base@sda21
 /* 8008DE30 0008AC30  90 03 00 00 */	stw r0, 0(r3)
 /* 8008DE34 0008AC34  4E 80 00 20 */	blr 
 
 .global zCheatGetHeadScale__Fv
 zCheatGetHeadScale__Fv:
-/* 8008DE38 0008AC38  C0 2D 89 50 */	lfs f1, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8008DE38 0008AC38  C0 2D 89 50 */	lfs f1, headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_@sda21(r13)
 /* 8008DE3C 0008AC3C  4E 80 00 20 */	blr 
 
 .global zCheatProcess__FPCc

@@ -253,7 +253,7 @@ zShrapnelEmitterSceneEnter__Fv:
 /* 801F6160 001F2F60  2C 00 00 00 */	cmpwi r0, 0
 /* 801F6164 001F2F64  41 81 00 10 */	bgt lbl_801F6174
 /* 801F6168 001F2F68  38 00 00 00 */	li r0, 0
-/* 801F616C 001F2F6C  90 0D DF A8 */	stw r0, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F616C 001F2F6C  90 0D DF A8 */	stw r0, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F6170 001F2F70  48 00 00 34 */	b lbl_801F61A4
 lbl_801F6174:
 /* 801F6174 001F2F74  38 60 00 1C */	li r3, 0x1c
@@ -268,9 +268,9 @@ lbl_801F6174:
 /* 801F6198 001F2F98  4B FF FD 95 */	bl __ct__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_11module_typeFiib
 /* 801F619C 001F2F9C  7C 60 1B 78 */	mr r0, r3
 lbl_801F61A0:
-/* 801F61A0 001F2FA0  90 0D DF A8 */	stw r0, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F61A0 001F2FA0  90 0D DF A8 */	stw r0, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 lbl_801F61A4:
-/* 801F61A4 001F2FA4  80 0D DF A8 */	lwz r0, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F61A4 001F2FA4  80 0D DF A8 */	lwz r0, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F61A8 001F2FA8  28 00 00 00 */	cmplwi r0, 0
 /* 801F61AC 001F2FAC  41 82 00 08 */	beq lbl_801F61B4
 /* 801F61B0 001F2FB0  4B FF FC F5 */	bl add_tweaks__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_5tweakFv
@@ -282,7 +282,7 @@ lbl_801F61B4:
 
 .global zShrapnelEmitterSceneExit__Fv
 zShrapnelEmitterSceneExit__Fv:
-/* 801F61C4 001F2FC4  80 0D DF A8 */	lwz r0, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F61C4 001F2FC4  80 0D DF A8 */	lwz r0, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F61C8 001F2FC8  28 00 00 00 */	cmplwi r0, 0
 /* 801F61CC 001F2FCC  4E 80 00 20 */	blr 
 
@@ -291,7 +291,7 @@ zShrapnelEmitterReset__Fv:
 /* 801F61D0 001F2FD0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F61D4 001F2FD4  7C 08 02 A6 */	mflr r0
 /* 801F61D8 001F2FD8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F61DC 001F2FDC  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F61DC 001F2FDC  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F61E0 001F2FE0  28 03 00 00 */	cmplwi r3, 0
 /* 801F61E4 001F2FE4  41 82 00 08 */	beq lbl_801F61EC
 /* 801F61E8 001F2FE8  4B FF FD ED */	bl reset__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_11module_typeFv
@@ -306,7 +306,7 @@ zShrapnelEmitterUpdate__Ff:
 /* 801F61FC 001F2FFC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F6200 001F3000  7C 08 02 A6 */	mflr r0
 /* 801F6204 001F3004  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F6208 001F3008  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F6208 001F3008  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F620C 001F300C  28 03 00 00 */	cmplwi r3, 0
 /* 801F6210 001F3010  41 82 00 08 */	beq lbl_801F6218
 /* 801F6214 001F3014  4B FF FE 41 */	bl update__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_11module_typeFf
@@ -321,7 +321,7 @@ zShrapnelEmitterRender__Fv:
 /* 801F6228 001F3028  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F622C 001F302C  7C 08 02 A6 */	mflr r0
 /* 801F6230 001F3030  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F6234 001F3034  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F6234 001F3034  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F6238 001F3038  28 03 00 00 */	cmplwi r3, 0
 /* 801F623C 001F303C  41 82 00 08 */	beq lbl_801F6244
 /* 801F6240 001F3040  4B FF FE 85 */	bl render__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_11module_typeFv
@@ -351,7 +351,7 @@ activate__22zShrapnelEmitterSphereFRCQ222zShrapnelEmitterSphere11config_type:
 /* 801F6278 001F3078  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 801F627C 001F307C  7C 9F 23 78 */	mr r31, r4
 /* 801F6280 001F3080  7C 7E 1B 78 */	mr r30, r3
-/* 801F6284 001F3084  80 AD DF A8 */	lwz r5, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F6284 001F3084  80 AD DF A8 */	lwz r5, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F6288 001F3088  80 85 00 0C */	lwz r4, 0xc(r5)
 /* 801F628C 001F308C  80 05 00 08 */	lwz r0, 8(r5)
 /* 801F6290 001F3090  7C 04 00 00 */	cmpw r4, r0
@@ -365,12 +365,12 @@ activate__22zShrapnelEmitterSphereFRCQ222zShrapnelEmitterSphere11config_type:
 /* 801F62B0 001F30B0  93 C3 00 44 */	stw r30, 0x44(r3)
 /* 801F62B4 001F30B4  80 7E 00 00 */	lwz r3, 0(r30)
 /* 801F62B8 001F30B8  93 E3 00 48 */	stw r31, 0x48(r3)
-/* 801F62BC 001F30BC  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F62BC 001F30BC  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F62C0 001F30C0  4B FF FE 09 */	bl alloc_frag_asset__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_11module_typeFv
 /* 801F62C4 001F30C4  80 9E 00 00 */	lwz r4, 0(r30)
 /* 801F62C8 001F30C8  90 64 00 4C */	stw r3, 0x4c(r4)
 /* 801F62CC 001F30CC  80 9E 00 00 */	lwz r4, 0(r30)
-/* 801F62D0 001F30D0  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F62D0 001F30D0  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F62D4 001F30D4  80 84 00 4C */	lwz r4, 0x4c(r4)
 /* 801F62D8 001F30D8  4B FF FE 1D */	bl ref_frag_asset__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_11module_typeFPQ230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_17shared_frag_asset
 /* 801F62DC 001F30DC  80 9E 00 00 */	lwz r4, 0(r30)
@@ -394,9 +394,9 @@ activate__22zShrapnelEmitterSphereFRCQ222zShrapnelEmitterSphere11config_type:
 /* 801F6324 001F3124  38 7D 00 1C */	addi r3, r29, 0x1c
 /* 801F6328 001F3128  90 DD 00 18 */	stw r6, 0x18(r29)
 /* 801F632C 001F312C  4B E0 CD D5 */	bl memset
-/* 801F6330 001F3130  C0 22 D9 08 */	lfs f1, _esc__2_1079_0-_SDA2_BASE_(r2)
+/* 801F6330 001F3130  C0 22 D9 08 */	lfs f1, _esc__2_1079_0@sda21(r2)
 /* 801F6334 001F3134  38 00 00 00 */	li r0, 0
-/* 801F6338 001F3138  C0 02 D9 0C */	lfs f0, _esc__2_1080_1-_SDA2_BASE_(r2)
+/* 801F6338 001F3138  C0 02 D9 0C */	lfs f0, _esc__2_1080_1@sda21(r2)
 /* 801F633C 001F313C  38 80 00 00 */	li r4, 0
 /* 801F6340 001F3140  D0 3D 00 28 */	stfs f1, 0x28(r29)
 /* 801F6344 001F3144  38 A0 00 A0 */	li r5, 0xa0
@@ -429,7 +429,7 @@ set_config__22zShrapnelEmitterSphereFRCQ222zShrapnelEmitterSphere11config_type:
 /* 801F63A0 001F31A0  BF 41 00 18 */	stmw r26, 0x18(r1)
 /* 801F63A4 001F31A4  7C 7A 1B 78 */	mr r26, r3
 /* 801F63A8 001F31A8  EC 41 00 28 */	fsubs f2, f1, f0
-/* 801F63AC 001F31AC  C0 82 D9 10 */	lfs f4, _esc__2_1166_4-_SDA2_BASE_(r2)
+/* 801F63AC 001F31AC  C0 82 D9 10 */	lfs f4, _esc__2_1166_4@sda21(r2)
 /* 801F63B0 001F31B0  7C 9B 23 78 */	mr r27, r4
 /* 801F63B4 001F31B4  C0 24 00 1C */	lfs f1, 0x1c(r4)
 /* 801F63B8 001F31B8  C0 04 00 18 */	lfs f0, 0x18(r4)
@@ -468,7 +468,7 @@ set_config__22zShrapnelEmitterSphereFRCQ222zShrapnelEmitterSphere11config_type:
 /* 801F643C 001F323C  4B E8 03 AD */	bl isin__Ff
 /* 801F6440 001F3240  C0 1B 00 30 */	lfs f0, 0x30(r27)
 /* 801F6444 001F3244  38 80 00 00 */	li r4, 0
-/* 801F6448 001F3248  C0 42 D9 0C */	lfs f2, _esc__2_1080_1-_SDA2_BASE_(r2)
+/* 801F6448 001F3248  C0 42 D9 0C */	lfs f2, _esc__2_1080_1@sda21(r2)
 /* 801F644C 001F324C  80 7A 00 00 */	lwz r3, 0(r26)
 /* 801F6450 001F3250  FC 00 10 40 */	fcmpo cr0, f0, f2
 /* 801F6454 001F3254  D0 23 01 5C */	stfs f1, 0x15c(r3)
@@ -653,11 +653,11 @@ update__22zShrapnelEmitterSphereFf:
 
 .global alloc_activity__22zShrapnelEmitterSphereFv
 alloc_activity__22zShrapnelEmitterSphereFv:
-/* 801F66D8 001F34D8  80 8D DF A8 */	lwz r4, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F66D8 001F34D8  80 8D DF A8 */	lwz r4, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F66DC 001F34DC  80 64 00 0C */	lwz r3, 0xc(r4)
 /* 801F66E0 001F34E0  38 03 00 01 */	addi r0, r3, 1
 /* 801F66E4 001F34E4  90 04 00 0C */	stw r0, 0xc(r4)
-/* 801F66E8 001F34E8  80 8D DF A8 */	lwz r4, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F66E8 001F34E8  80 8D DF A8 */	lwz r4, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F66EC 001F34EC  80 64 00 0C */	lwz r3, 0xc(r4)
 /* 801F66F0 001F34F0  80 84 00 04 */	lwz r4, 4(r4)
 /* 801F66F4 001F34F4  38 03 FF FF */	addi r0, r3, -1
@@ -688,7 +688,7 @@ init_projectile__22zShrapnelEmitterSphereFP5zFrag:
 /* 801F674C 001F354C  3C 00 43 30 */	lis r0, 0x4330
 /* 801F6750 001F3550  80 9D 00 48 */	lwz r4, 0x48(r29)
 /* 801F6754 001F3554  90 61 00 1C */	stw r3, 0x1c(r1)
-/* 801F6758 001F3558  C8 22 D9 18 */	lfd f1, _esc__2_1245_1-_SDA2_BASE_(r2)
+/* 801F6758 001F3558  C8 22 D9 18 */	lfd f1, _esc__2_1245_1@sda21(r2)
 /* 801F675C 001F355C  90 01 00 18 */	stw r0, 0x18(r1)
 /* 801F6760 001F3560  C0 7D 01 60 */	lfs f3, 0x160(r29)
 /* 801F6764 001F3564  C8 01 00 18 */	lfd f0, 0x18(r1)
@@ -716,7 +716,7 @@ init_projectile__22zShrapnelEmitterSphereFP5zFrag:
 /* 801F67BC 001F35BC  80 9D 00 48 */	lwz r4, 0x48(r29)
 /* 801F67C0 001F35C0  38 7F 00 18 */	addi r3, r31, 0x18
 /* 801F67C4 001F35C4  90 01 00 20 */	stw r0, 0x20(r1)
-/* 801F67C8 001F35C8  C8 22 D9 18 */	lfd f1, _esc__2_1245_1-_SDA2_BASE_(r2)
+/* 801F67C8 001F35C8  C8 22 D9 18 */	lfd f1, _esc__2_1245_1@sda21(r2)
 /* 801F67CC 001F35CC  C8 01 00 20 */	lfd f0, 0x20(r1)
 /* 801F67D0 001F35D0  C0 7D 01 64 */	lfs f3, 0x164(r29)
 /* 801F67D4 001F35D4  EC 80 08 28 */	fsubs f4, f0, f1
@@ -742,7 +742,7 @@ init_projectile__22zShrapnelEmitterSphereFP5zFrag:
 /* 801F6824 001F3624  90 61 00 24 */	stw r3, 0x24(r1)
 /* 801F6828 001F3628  80 9D 00 48 */	lwz r4, 0x48(r29)
 /* 801F682C 001F362C  90 01 00 20 */	stw r0, 0x20(r1)
-/* 801F6830 001F3630  C8 62 D9 18 */	lfd f3, _esc__2_1245_1-_SDA2_BASE_(r2)
+/* 801F6830 001F3630  C8 62 D9 18 */	lfd f3, _esc__2_1245_1@sda21(r2)
 /* 801F6834 001F3634  C8 01 00 20 */	lfd f0, 0x20(r1)
 /* 801F6838 001F3638  C0 5D 01 68 */	lfs f2, 0x168(r29)
 /* 801F683C 001F363C  EC 60 18 28 */	fsubs f3, f0, f3
@@ -777,7 +777,7 @@ lbl_801F6898:
 /* 801F68AC 001F36AC  38 7F 00 48 */	addi r3, r31, 0x48
 /* 801F68B0 001F36B0  90 01 00 20 */	stw r0, 0x20(r1)
 /* 801F68B4 001F36B4  38 9F 00 4C */	addi r4, r31, 0x4c
-/* 801F68B8 001F36B8  C8 42 D9 18 */	lfd f2, _esc__2_1245_1-_SDA2_BASE_(r2)
+/* 801F68B8 001F36B8  C8 42 D9 18 */	lfd f2, _esc__2_1245_1@sda21(r2)
 /* 801F68BC 001F36BC  C8 01 00 20 */	lfd f0, 0x20(r1)
 /* 801F68C0 001F36C0  C0 3D 01 6C */	lfs f1, 0x16c(r29)
 /* 801F68C4 001F36C4  EC 40 10 28 */	fsubs f2, f0, f2
@@ -795,7 +795,7 @@ lbl_801F6898:
 /* 801F68F4 001F36F4  90 61 00 1C */	stw r3, 0x1c(r1)
 /* 801F68F8 001F36F8  80 7F 00 08 */	lwz r3, 8(r31)
 /* 801F68FC 001F36FC  90 01 00 18 */	stw r0, 0x18(r1)
-/* 801F6900 001F3700  C8 42 D9 18 */	lfd f2, _esc__2_1245_1-_SDA2_BASE_(r2)
+/* 801F6900 001F3700  C8 42 D9 18 */	lfd f2, _esc__2_1245_1@sda21(r2)
 /* 801F6904 001F3704  C8 01 00 18 */	lfd f0, 0x18(r1)
 /* 801F6908 001F3708  80 9D 00 48 */	lwz r4, 0x48(r29)
 /* 801F690C 001F370C  EC 40 10 28 */	fsubs f2, f0, f2
@@ -810,7 +810,7 @@ lbl_801F6898:
 /* 801F6930 001F3730  4B E2 1C 19 */	bl xMat3x3MulScaleC__FP7xMat3x3PC7xMat3x3fff
 /* 801F6934 001F3734  D3 FF 00 40 */	stfs f31, 0x40(r31)
 /* 801F6938 001F3738  80 9E 00 00 */	lwz r4, 0(r30)
-/* 801F693C 001F373C  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F693C 001F373C  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F6940 001F3740  80 84 00 4C */	lwz r4, 0x4c(r4)
 /* 801F6944 001F3744  4B FF F7 B1 */	bl ref_frag_asset__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_11module_typeFPQ230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_17shared_frag_asset
 /* 801F6948 001F3748  3C 60 80 1F */	lis r3, cb_destroy_projectile__22zShrapnelEmitterSphereFP5zFrag@ha
@@ -831,7 +831,7 @@ cb_init_projectile__22zShrapnelEmitterSphereFP5zFragP10zFragAsset:
 /* 801F6978 001F3778  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F697C 001F377C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801F6980 001F3780  7C 7F 1B 78 */	mr r31, r3
-/* 801F6984 001F3784  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F6984 001F3784  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F6988 001F3788  4B FF F7 B5 */	bl get_frag_asset__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_11module_typeFPC20zFragProjectileAsset
 /* 801F698C 001F378C  80 63 00 04 */	lwz r3, 4(r3)
 /* 801F6990 001F3790  7F E4 FB 78 */	mr r4, r31
@@ -848,11 +848,11 @@ cb_destroy_projectile__22zShrapnelEmitterSphereFP5zFrag:
 /* 801F69B0 001F37B0  7C 08 02 A6 */	mflr r0
 /* 801F69B4 001F37B4  7C 64 1B 78 */	mr r4, r3
 /* 801F69B8 001F37B8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F69BC 001F37BC  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F69BC 001F37BC  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F69C0 001F37C0  80 84 00 04 */	lwz r4, 4(r4)
 /* 801F69C4 001F37C4  4B FF F7 79 */	bl get_frag_asset__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_11module_typeFPC20zFragProjectileAsset
 /* 801F69C8 001F37C8  7C 60 1B 78 */	mr r0, r3
-/* 801F69CC 001F37CC  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F69CC 001F37CC  80 6D DF A8 */	lwz r3, module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_@sda21(r13)
 /* 801F69D0 001F37D0  7C 04 03 78 */	mr r4, r0
 /* 801F69D4 001F37D4  4B FF F7 31 */	bl unref_frag_asset__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_11module_typeFPQ230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_17shared_frag_asset
 /* 801F69D8 001F37D8  80 01 00 14 */	lwz r0, 0x14(r1)

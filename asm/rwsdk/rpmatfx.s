@@ -13,7 +13,7 @@ RegEntries:
 	.skip 0xA0
 .global EffectRegEntries
 EffectRegEntries:
-	.skip 0xD0
+	.skip 0xC8
 
 .section .data
 
@@ -22,7 +22,7 @@ MatFXInfo:
 	.incbin "baserom.dol", 0x32AF90, 0xC
 .global _esc__2_924
 _esc__2_924:
-	.incbin "baserom.dol", 0x32AF9C, 0x24
+	.incbin "baserom.dol", 0x32AF9C, 0x1C
 
 .section .rodata
 
@@ -58,7 +58,7 @@ _rpGameCubeMTEngineOffset:
 	.skip 0x8
 .global DummyDict
 DummyDict:
-	.skip 0x20
+	.skip 0x4
 
 .section .sdata
 
@@ -70,7 +70,7 @@ _rpMatFXMaterialDataFreeListPreallocBlocks:
 	.incbin "baserom.dol", 0x32E6BC, 0x4
 .global _rpMultiTextureModule
 _rpMultiTextureModule:
-	.incbin "baserom.dol", 0x32E6C0, 0x20
+	.incbin "baserom.dol", 0x32E6C0, 0x8
 
 .section .sdata2
 
@@ -151,7 +151,7 @@ _esc__2_881_1:
 	.incbin "baserom.dol", 0x334E28, 0x8
 .global _esc__2_883_3
 _esc__2_883_3:
-	.incbin "baserom.dol", 0x334E30, 0x10
+	.incbin "baserom.dol", 0x334E30, 0x8
 
 .section .text
 
@@ -204,9 +204,9 @@ MatFXOpen:
 /* 802C7EA8 002C4CA8  3C 80 80 3D */	lis r4, _rpMatFXMaterialDataFreeList@ha
 /* 802C7EAC 002C4CAC  3C 60 00 04 */	lis r3, 0x00040120@ha
 /* 802C7EB0 002C4CB0  38 E4 B2 D8 */	addi r7, r4, _rpMatFXMaterialDataFreeList@l
-/* 802C7EB4 002C4CB4  80 8D B6 F8 */	lwz r4, _rpMatFXMaterialDataFreeListBlockSize-_SDA_BASE_(r13)
+/* 802C7EB4 002C4CB4  80 8D B6 F8 */	lwz r4, _rpMatFXMaterialDataFreeListBlockSize@sda21(r13)
 /* 802C7EB8 002C4CB8  39 03 01 20 */	addi r8, r3, 0x00040120@l
-/* 802C7EBC 002C4CBC  80 CD B6 FC */	lwz r6, _rpMatFXMaterialDataFreeListPreallocBlocks-_SDA_BASE_(r13)
+/* 802C7EBC 002C4CBC  80 CD B6 FC */	lwz r6, _rpMatFXMaterialDataFreeListPreallocBlocks@sda21(r13)
 /* 802C7EC0 002C4CC0  38 60 00 34 */	li r3, 0x34
 /* 802C7EC4 002C4CC4  38 A0 00 04 */	li r5, 4
 /* 802C7EC8 002C4CC8  4B FC 4B 79 */	bl RwFreeListCreateAndPreallocateSpace
@@ -238,7 +238,7 @@ lbl_802C7F0C:
 
 .global MatFXMaterialConstructor
 MatFXMaterialConstructor:
-/* 802C7F24 002C4D24  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C7F24 002C4D24  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C7F28 002C4D28  38 80 00 00 */	li r4, 0
 /* 802C7F2C 002C4D2C  7C 83 01 2E */	stwx r4, r3, r0
 /* 802C7F30 002C4D30  4E 80 00 20 */	blr 
@@ -253,7 +253,7 @@ MatFXMaterialDestructor:
 /* 802C7F48 002C4D48  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 802C7F4C 002C4D4C  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 802C7F50 002C4D50  93 81 00 10 */	stw r28, 0x10(r1)
-/* 802C7F54 002C4D54  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C7F54 002C4D54  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C7F58 002C4D58  7F 9F 00 2E */	lwzx r28, r31, r0
 /* 802C7F5C 002C4D5C  28 1C 00 00 */	cmplwi r28, 0
 /* 802C7F60 002C4D60  41 82 00 EC */	beq lbl_802C804C
@@ -313,7 +313,7 @@ lbl_802C8004:
 /* 802C8014 002C4E14  38 80 00 00 */	li r4, 0
 /* 802C8018 002C4E18  38 A0 00 34 */	li r5, 0x34
 /* 802C801C 002C4E1C  4B D3 B0 E5 */	bl memset
-/* 802C8020 002C4E20  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 802C8020 002C4E20  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 802C8024 002C4E24  3C 80 80 33 */	lis r4, MatFXInfo@ha
 /* 802C8028 002C4E28  38 A4 DF 90 */	addi r5, r4, MatFXInfo@l
 /* 802C802C 002C4E2C  7F 84 E3 78 */	mr r4, r28
@@ -321,7 +321,7 @@ lbl_802C8004:
 /* 802C8034 002C4E34  80 65 00 08 */	lwz r3, 8(r5)
 /* 802C8038 002C4E38  7D 89 03 A6 */	mtctr r12
 /* 802C803C 002C4E3C  4E 80 04 21 */	bctrl 
-/* 802C8040 002C4E40  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C8040 002C4E40  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C8044 002C4E44  38 60 00 00 */	li r3, 0
 /* 802C8048 002C4E48  7C 7F 01 2E */	stwx r3, r31, r0
 lbl_802C804C:
@@ -343,7 +343,7 @@ MatFXMaterialCopy:
 /* 802C807C 002C4E7C  39 61 00 48 */	addi r11, r1, 0x48
 /* 802C8080 002C4E80  DB E1 00 48 */	stfd f31, 0x48(r1)
 /* 802C8084 002C4E84  4B F3 2E 89 */	bl func_801FAF0C
-/* 802C8088 002C4E88  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C8088 002C4E88  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C808C 002C4E8C  7C 9E 23 78 */	mr r30, r4
 /* 802C8090 002C4E90  7C 7A 1B 78 */	mr r26, r3
 /* 802C8094 002C4E94  7F BE 00 2E */	lwzx r29, r30, r0
@@ -356,7 +356,7 @@ lbl_802C80AC:
 /* 802C80AC 002C4EAC  7F FC 00 2E */	lwzx r31, r28, r0
 /* 802C80B0 002C4EB0  28 1F 00 00 */	cmplwi r31, 0
 /* 802C80B4 002C4EB4  40 82 00 4C */	bne lbl_802C8100
-/* 802C80B8 002C4EB8  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 802C80B8 002C4EB8  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 802C80BC 002C4EBC  3C 80 80 33 */	lis r4, MatFXInfo@ha
 /* 802C80C0 002C4EC0  38 A4 DF 90 */	addi r5, r4, MatFXInfo@l
 /* 802C80C4 002C4EC4  3C 80 00 03 */	lis r4, 0x00030120@ha
@@ -373,7 +373,7 @@ lbl_802C80EC:
 /* 802C80EC 002C4EEC  38 80 00 00 */	li r4, 0
 /* 802C80F0 002C4EF0  38 A0 00 34 */	li r5, 0x34
 /* 802C80F4 002C4EF4  4B D3 B0 0D */	bl memset
-/* 802C80F8 002C4EF8  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C80F8 002C4EF8  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C80FC 002C4EFC  7F FC 01 2E */	stwx r31, r28, r0
 lbl_802C8100:
 /* 802C8100 002C4F00  28 1F 00 00 */	cmplwi r31, 0
@@ -642,7 +642,7 @@ MatFXMaterialStreamWrite:
 /* 802C8494 002C5294  90 01 00 44 */	stw r0, 0x44(r1)
 /* 802C8498 002C5298  39 61 00 40 */	addi r11, r1, 0x40
 /* 802C849C 002C529C  4B F3 2A 81 */	bl func_801FAF1C
-/* 802C84A0 002C52A0  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C84A0 002C52A0  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C84A4 002C52A4  7C 7D 1B 78 */	mr r29, r3
 /* 802C84A8 002C52A8  38 81 00 20 */	addi r4, r1, 0x20
 /* 802C84AC 002C52AC  7F E5 00 2E */	lwzx r31, r5, r0
@@ -889,13 +889,13 @@ MatFXMaterialStreamRead:
 /* 802C87F4 002C55F4  90 01 00 84 */	stw r0, 0x84(r1)
 /* 802C87F8 002C55F8  39 61 00 80 */	addi r11, r1, 0x80
 /* 802C87FC 002C55FC  4B F3 27 19 */	bl func_801FAF14
-/* 802C8800 002C5600  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C8800 002C5600  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C8804 002C5604  7C BE 2B 78 */	mr r30, r5
 /* 802C8808 002C5608  7C 79 1B 78 */	mr r25, r3
 /* 802C880C 002C560C  7F FE 00 2E */	lwzx r31, r30, r0
 /* 802C8810 002C5610  28 1F 00 00 */	cmplwi r31, 0
 /* 802C8814 002C5614  40 82 00 4C */	bne lbl_802C8860
-/* 802C8818 002C5618  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 802C8818 002C5618  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 802C881C 002C561C  3C 80 80 33 */	lis r4, MatFXInfo@ha
 /* 802C8820 002C5620  38 A4 DF 90 */	addi r5, r4, MatFXInfo@l
 /* 802C8824 002C5624  3C 80 00 03 */	lis r4, 0x00030120@ha
@@ -912,7 +912,7 @@ lbl_802C884C:
 /* 802C884C 002C564C  38 80 00 00 */	li r4, 0
 /* 802C8850 002C5650  38 A0 00 34 */	li r5, 0x34
 /* 802C8854 002C5654  4B D3 A8 AD */	bl memset
-/* 802C8858 002C5658  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C8858 002C5658  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C885C 002C565C  7F FE 01 2E */	stwx r31, r30, r0
 lbl_802C8860:
 /* 802C8860 002C5660  28 1F 00 00 */	cmplwi r31, 0
@@ -1081,9 +1081,9 @@ lbl_802C8A98:
 /* 802C8A9C 002C589C  41 82 00 44 */	beq lbl_802C8AE0
 /* 802C8AA0 002C58A0  93 9A 00 04 */	stw r28, 4(r26)
 /* 802C8AA4 002C58A4  3C 00 43 30 */	lis r0, 0x4330
-/* 802C8AA8 002C58A8  C8 22 E6 D8 */	lfd f1, _esc__2_629-_SDA2_BASE_(r2)
+/* 802C8AA8 002C58A8  C8 22 E6 D8 */	lfd f1, _esc__2_629@sda21(r2)
 /* 802C8AAC 002C58AC  93 7A 00 08 */	stw r27, 8(r26)
-/* 802C8AB0 002C58B0  C0 42 E6 D0 */	lfs f2, _esc__2_627_0-_SDA2_BASE_(r2)
+/* 802C8AB0 002C58B0  C0 42 E6 D0 */	lfs f2, _esc__2_627_0@sda21(r2)
 /* 802C8AB4 002C58B4  80 7A 00 04 */	lwz r3, 4(r26)
 /* 802C8AB8 002C58B8  90 01 00 58 */	stw r0, 0x58(r1)
 /* 802C8ABC 002C58BC  80 63 00 00 */	lwz r3, 0(r3)
@@ -1295,7 +1295,7 @@ MatFXMaterialStreamGetSize:
 /* 802C8D84 002C5B84  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 802C8D88 002C5B88  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 802C8D8C 002C5B8C  93 81 00 10 */	stw r28, 0x10(r1)
-/* 802C8D90 002C5B90  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C8D90 002C5B90  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C8D94 002C5B94  7F C3 00 2E */	lwzx r30, r3, r0
 /* 802C8D98 002C5B98  28 1E 00 00 */	cmplwi r30, 0
 /* 802C8D9C 002C5B9C  41 82 00 10 */	beq lbl_802C8DAC
@@ -1386,21 +1386,21 @@ lbl_802C8E98:
 
 .global MatFXAtomicConstructor
 MatFXAtomicConstructor:
-/* 802C8EB8 002C5CB8  80 0D E8 5C */	lwz r0, MatFXAtomicDataOffset-_SDA_BASE_(r13)
+/* 802C8EB8 002C5CB8  80 0D E8 5C */	lwz r0, MatFXAtomicDataOffset@sda21(r13)
 /* 802C8EBC 002C5CBC  38 80 00 00 */	li r4, 0
 /* 802C8EC0 002C5CC0  7C 83 01 2E */	stwx r4, r3, r0
 /* 802C8EC4 002C5CC4  4E 80 00 20 */	blr 
 
 .global MatFXAtomicDestructor
 MatFXAtomicDestructor:
-/* 802C8EC8 002C5CC8  80 0D E8 5C */	lwz r0, MatFXAtomicDataOffset-_SDA_BASE_(r13)
+/* 802C8EC8 002C5CC8  80 0D E8 5C */	lwz r0, MatFXAtomicDataOffset@sda21(r13)
 /* 802C8ECC 002C5CCC  38 80 00 00 */	li r4, 0
 /* 802C8ED0 002C5CD0  7C 83 01 2E */	stwx r4, r3, r0
 /* 802C8ED4 002C5CD4  4E 80 00 20 */	blr 
 
 .global MatFXAtomicCopy
 MatFXAtomicCopy:
-/* 802C8ED8 002C5CD8  80 AD E8 5C */	lwz r5, MatFXAtomicDataOffset-_SDA_BASE_(r13)
+/* 802C8ED8 002C5CD8  80 AD E8 5C */	lwz r5, MatFXAtomicDataOffset@sda21(r13)
 /* 802C8EDC 002C5CDC  7C 04 28 2E */	lwzx r0, r4, r5
 /* 802C8EE0 002C5CE0  2C 00 00 00 */	cmpwi r0, 0
 /* 802C8EE4 002C5CE4  4D 82 00 20 */	beqlr 
@@ -1414,7 +1414,7 @@ MatFXAtomicStreamWrite:
 /* 802C8EF8 002C5CF8  7C 08 02 A6 */	mflr r0
 /* 802C8EFC 002C5CFC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802C8F00 002C5D00  38 81 00 08 */	addi r4, r1, 8
-/* 802C8F04 002C5D04  80 0D E8 5C */	lwz r0, MatFXAtomicDataOffset-_SDA_BASE_(r13)
+/* 802C8F04 002C5D04  80 0D E8 5C */	lwz r0, MatFXAtomicDataOffset@sda21(r13)
 /* 802C8F08 002C5D08  7C 05 00 2E */	lwzx r0, r5, r0
 /* 802C8F0C 002C5D0C  38 A0 00 04 */	li r5, 4
 /* 802C8F10 002C5D10  90 01 00 08 */	stw r0, 8(r1)
@@ -1458,7 +1458,7 @@ lbl_802C8F78:
 
 .global MatFXAtomicStreamGetSize
 MatFXAtomicStreamGetSize:
-/* 802C8F90 002C5D90  80 8D E8 5C */	lwz r4, MatFXAtomicDataOffset-_SDA_BASE_(r13)
+/* 802C8F90 002C5D90  80 8D E8 5C */	lwz r4, MatFXAtomicDataOffset@sda21(r13)
 /* 802C8F94 002C5D94  38 00 00 04 */	li r0, 4
 /* 802C8F98 002C5D98  7C 63 20 2E */	lwzx r3, r3, r4
 /* 802C8F9C 002C5D9C  7C 63 00 34 */	cntlzw r3, r3
@@ -1469,21 +1469,21 @@ MatFXAtomicStreamGetSize:
 
 .global MatFXWorldSectorConstructor
 MatFXWorldSectorConstructor:
-/* 802C8FB0 002C5DB0  80 0D E8 60 */	lwz r0, MatFXWorldSectorDataOffset-_SDA_BASE_(r13)
+/* 802C8FB0 002C5DB0  80 0D E8 60 */	lwz r0, MatFXWorldSectorDataOffset@sda21(r13)
 /* 802C8FB4 002C5DB4  38 80 00 00 */	li r4, 0
 /* 802C8FB8 002C5DB8  7C 83 01 2E */	stwx r4, r3, r0
 /* 802C8FBC 002C5DBC  4E 80 00 20 */	blr 
 
 .global MatFXWorldSectorDestructor
 MatFXWorldSectorDestructor:
-/* 802C8FC0 002C5DC0  80 0D E8 60 */	lwz r0, MatFXWorldSectorDataOffset-_SDA_BASE_(r13)
+/* 802C8FC0 002C5DC0  80 0D E8 60 */	lwz r0, MatFXWorldSectorDataOffset@sda21(r13)
 /* 802C8FC4 002C5DC4  38 80 00 00 */	li r4, 0
 /* 802C8FC8 002C5DC8  7C 83 01 2E */	stwx r4, r3, r0
 /* 802C8FCC 002C5DCC  4E 80 00 20 */	blr 
 
 .global MatFXWorldSectorCopy
 MatFXWorldSectorCopy:
-/* 802C8FD0 002C5DD0  80 AD E8 60 */	lwz r5, MatFXWorldSectorDataOffset-_SDA_BASE_(r13)
+/* 802C8FD0 002C5DD0  80 AD E8 60 */	lwz r5, MatFXWorldSectorDataOffset@sda21(r13)
 /* 802C8FD4 002C5DD4  7C 04 28 2E */	lwzx r0, r4, r5
 /* 802C8FD8 002C5DD8  2C 00 00 00 */	cmpwi r0, 0
 /* 802C8FDC 002C5DDC  4D 82 00 20 */	beqlr 
@@ -1497,7 +1497,7 @@ MatFXWorldSectorStreamWrite:
 /* 802C8FF0 002C5DF0  7C 08 02 A6 */	mflr r0
 /* 802C8FF4 002C5DF4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802C8FF8 002C5DF8  38 81 00 08 */	addi r4, r1, 8
-/* 802C8FFC 002C5DFC  80 0D E8 60 */	lwz r0, MatFXWorldSectorDataOffset-_SDA_BASE_(r13)
+/* 802C8FFC 002C5DFC  80 0D E8 60 */	lwz r0, MatFXWorldSectorDataOffset@sda21(r13)
 /* 802C9000 002C5E00  7C 05 00 2E */	lwzx r0, r5, r0
 /* 802C9004 002C5E04  38 A0 00 04 */	li r5, 4
 /* 802C9008 002C5E08  90 01 00 08 */	stw r0, 8(r1)
@@ -1541,7 +1541,7 @@ lbl_802C9070:
 
 .global MatFXWorldSectorStreamGetSize
 MatFXWorldSectorStreamGetSize:
-/* 802C9088 002C5E88  80 8D E8 60 */	lwz r4, MatFXWorldSectorDataOffset-_SDA_BASE_(r13)
+/* 802C9088 002C5E88  80 8D E8 60 */	lwz r4, MatFXWorldSectorDataOffset@sda21(r13)
 /* 802C908C 002C5E8C  38 00 00 04 */	li r0, 4
 /* 802C9090 002C5E90  7C 63 20 2E */	lwzx r3, r3, r4
 /* 802C9094 002C5E94  7C 63 00 34 */	cntlzw r3, r3
@@ -1886,7 +1886,7 @@ lbl_802C954C:
 /* 802C9568 002C6368  38 80 01 20 */	li r4, 0x120
 /* 802C956C 002C636C  4B FA 74 19 */	bl RpMaterialRegisterPlugin
 /* 802C9570 002C6370  2C 03 00 00 */	cmpwi r3, 0
-/* 802C9574 002C6374  90 6D E8 58 */	stw r3, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C9574 002C6374  90 6D E8 58 */	stw r3, MatFXMaterialDataOffset@sda21(r13)
 /* 802C9578 002C6378  40 80 00 0C */	bge lbl_802C9584
 /* 802C957C 002C637C  38 60 00 00 */	li r3, 0
 /* 802C9580 002C6380  48 00 01 14 */	b lbl_802C9694
@@ -1914,7 +1914,7 @@ lbl_802C95B4:
 /* 802C95D0 002C63D0  38 80 01 20 */	li r4, 0x120
 /* 802C95D4 002C63D4  4B FA 41 4D */	bl RpAtomicRegisterPlugin
 /* 802C95D8 002C63D8  2C 03 00 00 */	cmpwi r3, 0
-/* 802C95DC 002C63DC  90 6D E8 5C */	stw r3, MatFXAtomicDataOffset-_SDA_BASE_(r13)
+/* 802C95DC 002C63DC  90 6D E8 5C */	stw r3, MatFXAtomicDataOffset@sda21(r13)
 /* 802C95E0 002C63E0  40 80 00 0C */	bge lbl_802C95EC
 /* 802C95E4 002C63E4  38 60 00 00 */	li r3, 0
 /* 802C95E8 002C63E8  48 00 00 AC */	b lbl_802C9694
@@ -1942,7 +1942,7 @@ lbl_802C961C:
 /* 802C9638 002C6438  38 80 01 20 */	li r4, 0x120
 /* 802C963C 002C643C  4B FA B8 CD */	bl RpWorldSectorRegisterPlugin
 /* 802C9640 002C6440  2C 03 00 00 */	cmpwi r3, 0
-/* 802C9644 002C6444  90 6D E8 60 */	stw r3, MatFXWorldSectorDataOffset-_SDA_BASE_(r13)
+/* 802C9644 002C6444  90 6D E8 60 */	stw r3, MatFXWorldSectorDataOffset@sda21(r13)
 /* 802C9648 002C6448  40 80 00 0C */	bge lbl_802C9654
 /* 802C964C 002C644C  38 60 00 00 */	li r3, 0
 /* 802C9650 002C6450  48 00 00 44 */	b lbl_802C9694
@@ -1978,7 +1978,7 @@ RpMatFXAtomicEnableEffects:
 /* 802C96B0 002C64B0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802C96B4 002C64B4  93 C1 00 08 */	stw r30, 8(r1)
 /* 802C96B8 002C64B8  7C 7E 1B 78 */	mr r30, r3
-/* 802C96BC 002C64BC  83 ED E8 5C */	lwz r31, MatFXAtomicDataOffset-_SDA_BASE_(r13)
+/* 802C96BC 002C64BC  83 ED E8 5C */	lwz r31, MatFXAtomicDataOffset@sda21(r13)
 /* 802C96C0 002C64C0  7C 1E F8 2E */	lwzx r0, r30, r31
 /* 802C96C4 002C64C4  2C 00 00 00 */	cmpwi r0, 0
 /* 802C96C8 002C64C8  40 82 00 20 */	bne lbl_802C96E8
@@ -2002,7 +2002,7 @@ lbl_802C96EC:
 
 .global RpMatFXAtomicQueryEffects
 RpMatFXAtomicQueryEffects:
-/* 802C9704 002C6504  80 0D E8 5C */	lwz r0, MatFXAtomicDataOffset-_SDA_BASE_(r13)
+/* 802C9704 002C6504  80 0D E8 5C */	lwz r0, MatFXAtomicDataOffset@sda21(r13)
 /* 802C9708 002C6508  7C 63 00 2E */	lwzx r3, r3, r0
 /* 802C970C 002C650C  4E 80 00 20 */	blr 
 
@@ -2014,7 +2014,7 @@ RpMatFXWorldSectorEnableEffects:
 /* 802C971C 002C651C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802C9720 002C6520  93 C1 00 08 */	stw r30, 8(r1)
 /* 802C9724 002C6524  7C 7E 1B 78 */	mr r30, r3
-/* 802C9728 002C6528  83 ED E8 60 */	lwz r31, MatFXWorldSectorDataOffset-_SDA_BASE_(r13)
+/* 802C9728 002C6528  83 ED E8 60 */	lwz r31, MatFXWorldSectorDataOffset@sda21(r13)
 /* 802C972C 002C652C  7C 1E F8 2E */	lwzx r0, r30, r31
 /* 802C9730 002C6530  2C 00 00 00 */	cmpwi r0, 0
 /* 802C9734 002C6534  40 82 00 20 */	bne lbl_802C9754
@@ -2043,13 +2043,13 @@ RpMatFXMaterialSetEffects:
 /* 802C9778 002C6578  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C977C 002C657C  39 61 00 20 */	addi r11, r1, 0x20
 /* 802C9780 002C6580  4B F3 17 9D */	bl func_801FAF1C
-/* 802C9784 002C6584  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C9784 002C6584  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C9788 002C6588  7C 7D 1B 78 */	mr r29, r3
 /* 802C978C 002C658C  7C 9E 23 78 */	mr r30, r4
 /* 802C9790 002C6590  7F FD 00 2E */	lwzx r31, r29, r0
 /* 802C9794 002C6594  28 1F 00 00 */	cmplwi r31, 0
 /* 802C9798 002C6598  40 82 00 4C */	bne lbl_802C97E4
-/* 802C979C 002C659C  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 802C979C 002C659C  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 802C97A0 002C65A0  3C 80 80 33 */	lis r4, MatFXInfo@ha
 /* 802C97A4 002C65A4  38 A4 DF 90 */	addi r5, r4, MatFXInfo@l
 /* 802C97A8 002C65A8  3C 80 00 03 */	lis r4, 0x00030120@ha
@@ -2066,7 +2066,7 @@ lbl_802C97D0:
 /* 802C97D0 002C65D0  38 80 00 00 */	li r4, 0
 /* 802C97D4 002C65D4  38 A0 00 34 */	li r5, 0x34
 /* 802C97D8 002C65D8  4B D3 99 29 */	bl memset
-/* 802C97DC 002C65DC  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C97DC 002C65DC  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C97E0 002C65E0  7F FD 01 2E */	stwx r31, r29, r0
 lbl_802C97E4:
 /* 802C97E4 002C65E4  28 1F 00 00 */	cmplwi r31, 0
@@ -2323,7 +2323,7 @@ lbl_802C9B28:
 
 .global RpMatFXMaterialGetEffects
 RpMatFXMaterialGetEffects:
-/* 802C9B44 002C6944  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C9B44 002C6944  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C9B48 002C6948  7C 63 00 2E */	lwzx r3, r3, r0
 /* 802C9B4C 002C694C  28 03 00 00 */	cmplwi r3, 0
 /* 802C9B50 002C6950  40 82 00 0C */	bne lbl_802C9B5C
@@ -2340,7 +2340,7 @@ RpMatFXMaterialSetBumpMapTexture:
 /* 802C9B6C 002C696C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802C9B70 002C6970  39 61 00 50 */	addi r11, r1, 0x50
 /* 802C9B74 002C6974  4B F3 13 A9 */	bl func_801FAF1C
-/* 802C9B78 002C6978  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C9B78 002C6978  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C9B7C 002C697C  7C 7C 1B 78 */	mr r28, r3
 /* 802C9B80 002C6980  7C 9D 23 78 */	mr r29, r4
 /* 802C9B84 002C6984  38 60 00 00 */	li r3, 0
@@ -2374,7 +2374,7 @@ lbl_802C9BD8:
 /* 802C9BE0 002C69E0  41 82 00 18 */	beq lbl_802C9BF8
 /* 802C9BE4 002C69E4  4B FD 0A 81 */	bl RwTextureDestroy
 /* 802C9BE8 002C69E8  38 00 00 00 */	li r0, 0
-/* 802C9BEC 002C69EC  C0 02 E6 E0 */	lfs f0, _esc__2_1017_2-_SDA2_BASE_(r2)
+/* 802C9BEC 002C69EC  C0 02 E6 E0 */	lfs f0, _esc__2_1017_2@sda21(r2)
 /* 802C9BF0 002C69F0  90 1F 00 04 */	stw r0, 4(r31)
 /* 802C9BF4 002C69F4  D0 1F 00 10 */	stfs f0, 0x10(r31)
 lbl_802C9BF8:
@@ -2502,9 +2502,9 @@ lbl_802C9DB0:
 /* 802C9DB4 002C6BB4  3C 00 43 30 */	lis r0, 0x4330
 /* 802C9DB8 002C6BB8  90 01 00 30 */	stw r0, 0x30(r1)
 /* 802C9DBC 002C6BBC  80 63 00 00 */	lwz r3, 0(r3)
-/* 802C9DC0 002C6BC0  C8 22 E6 D8 */	lfd f1, _esc__2_629-_SDA2_BASE_(r2)
+/* 802C9DC0 002C6BC0  C8 22 E6 D8 */	lfd f1, _esc__2_629@sda21(r2)
 /* 802C9DC4 002C6BC4  80 03 00 0C */	lwz r0, 0xc(r3)
-/* 802C9DC8 002C6BC8  C0 42 E6 D0 */	lfs f2, _esc__2_627_0-_SDA2_BASE_(r2)
+/* 802C9DC8 002C6BC8  C0 42 E6 D0 */	lfs f2, _esc__2_627_0@sda21(r2)
 /* 802C9DCC 002C6BCC  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 802C9DD0 002C6BD0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802C9DD4 002C6BD4  C8 01 00 30 */	lfd f0, 0x30(r1)
@@ -2517,9 +2517,9 @@ lbl_802C9DE8:
 /* 802C9DEC 002C6BEC  3C 00 43 30 */	lis r0, 0x4330
 /* 802C9DF0 002C6BF0  90 01 00 30 */	stw r0, 0x30(r1)
 /* 802C9DF4 002C6BF4  80 63 00 00 */	lwz r3, 0(r3)
-/* 802C9DF8 002C6BF8  C8 22 E6 D8 */	lfd f1, _esc__2_629-_SDA2_BASE_(r2)
+/* 802C9DF8 002C6BF8  C8 22 E6 D8 */	lfd f1, _esc__2_629@sda21(r2)
 /* 802C9DFC 002C6BFC  80 03 00 0C */	lwz r0, 0xc(r3)
-/* 802C9E00 002C6C00  C0 42 E6 D0 */	lfs f2, _esc__2_627_0-_SDA2_BASE_(r2)
+/* 802C9E00 002C6C00  C0 42 E6 D0 */	lfs f2, _esc__2_627_0@sda21(r2)
 /* 802C9E04 002C6C04  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 802C9E08 002C6C08  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802C9E0C 002C6C0C  C8 01 00 30 */	lfd f0, 0x30(r1)
@@ -2540,7 +2540,7 @@ lbl_802C9E28:
 
 .global RpMatFXMaterialSetBumpMapFrame
 RpMatFXMaterialSetBumpMapFrame:
-/* 802C9E40 002C6C40  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C9E40 002C6C40  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C9E44 002C6C44  38 A0 00 00 */	li r5, 0
 /* 802C9E48 002C6C48  7C C3 00 2E */	lwzx r6, r3, r0
 /* 802C9E4C 002C6C4C  48 00 00 24 */	b lbl_802C9E70
@@ -2565,7 +2565,7 @@ lbl_802C9E80:
 
 .global RpMatFXMaterialSetBumpMapCoefficient
 RpMatFXMaterialSetBumpMapCoefficient:
-/* 802C9E88 002C6C88  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C9E88 002C6C88  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C9E8C 002C6C8C  38 80 00 00 */	li r4, 0
 /* 802C9E90 002C6C90  7C A3 00 2E */	lwzx r5, r3, r0
 /* 802C9E94 002C6C94  48 00 00 24 */	b lbl_802C9EB8
@@ -2591,7 +2591,7 @@ lbl_802C9EC8:
 
 .global RpMatFXMaterialGetBumpMapFrame
 RpMatFXMaterialGetBumpMapFrame:
-/* 802C9ED4 002C6CD4  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C9ED4 002C6CD4  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C9ED8 002C6CD8  38 80 00 00 */	li r4, 0
 /* 802C9EDC 002C6CDC  7C 63 00 2E */	lwzx r3, r3, r0
 /* 802C9EE0 002C6CE0  48 00 00 24 */	b lbl_802C9F04
@@ -2616,7 +2616,7 @@ lbl_802C9F14:
 
 .global RpMatFXMaterialGetBumpMapCoefficient
 RpMatFXMaterialGetBumpMapCoefficient:
-/* 802C9F1C 002C6D1C  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C9F1C 002C6D1C  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C9F20 002C6D20  38 80 00 00 */	li r4, 0
 /* 802C9F24 002C6D24  7C 63 00 2E */	lwzx r3, r3, r0
 /* 802C9F28 002C6D28  48 00 00 24 */	b lbl_802C9F4C
@@ -2651,7 +2651,7 @@ RpMatFXMaterialSetEnvMapTexture:
 /* 802C9F80 002C6D80  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 802C9F84 002C6D84  7C 7D 1B 78 */	mr r29, r3
 /* 802C9F88 002C6D88  38 60 00 00 */	li r3, 0
-/* 802C9F8C 002C6D8C  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802C9F8C 002C6D8C  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802C9F90 002C6D90  7C 9D 00 2E */	lwzx r4, r29, r0
 /* 802C9F94 002C6D94  48 00 00 24 */	b lbl_802C9FB8
 lbl_802C9F98:
@@ -2692,7 +2692,7 @@ lbl_802C9FEC:
 
 .global RpMatFXMaterialSetEnvMapFrame
 RpMatFXMaterialSetEnvMapFrame:
-/* 802CA010 002C6E10  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA010 002C6E10  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA014 002C6E14  38 A0 00 00 */	li r5, 0
 /* 802CA018 002C6E18  7C C3 00 2E */	lwzx r6, r3, r0
 /* 802CA01C 002C6E1C  48 00 00 24 */	b lbl_802CA040
@@ -2717,7 +2717,7 @@ lbl_802CA050:
 
 .global RpMatFXMaterialSetEnvMapFrameBufferAlpha
 RpMatFXMaterialSetEnvMapFrameBufferAlpha:
-/* 802CA058 002C6E58  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA058 002C6E58  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA05C 002C6E5C  38 A0 00 00 */	li r5, 0
 /* 802CA060 002C6E60  7C C3 00 2E */	lwzx r6, r3, r0
 /* 802CA064 002C6E64  48 00 00 24 */	b lbl_802CA088
@@ -2742,7 +2742,7 @@ lbl_802CA098:
 
 .global RpMatFXMaterialSetEnvMapCoefficient
 RpMatFXMaterialSetEnvMapCoefficient:
-/* 802CA0A0 002C6EA0  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA0A0 002C6EA0  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA0A4 002C6EA4  38 80 00 00 */	li r4, 0
 /* 802CA0A8 002C6EA8  7C A3 00 2E */	lwzx r5, r3, r0
 /* 802CA0AC 002C6EAC  48 00 00 24 */	b lbl_802CA0D0
@@ -2767,7 +2767,7 @@ lbl_802CA0E0:
 
 .global RpMatFXMaterialGetEnvMapTexture
 RpMatFXMaterialGetEnvMapTexture:
-/* 802CA0E8 002C6EE8  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA0E8 002C6EE8  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA0EC 002C6EEC  38 80 00 00 */	li r4, 0
 /* 802CA0F0 002C6EF0  7C 63 00 2E */	lwzx r3, r3, r0
 /* 802CA0F4 002C6EF4  48 00 00 24 */	b lbl_802CA118
@@ -2792,7 +2792,7 @@ lbl_802CA128:
 
 .global RpMatFXMaterialGetEnvMapFrame
 RpMatFXMaterialGetEnvMapFrame:
-/* 802CA130 002C6F30  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA130 002C6F30  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA134 002C6F34  38 80 00 00 */	li r4, 0
 /* 802CA138 002C6F38  7C 63 00 2E */	lwzx r3, r3, r0
 /* 802CA13C 002C6F3C  48 00 00 24 */	b lbl_802CA160
@@ -2817,7 +2817,7 @@ lbl_802CA170:
 
 .global RpMatFXMaterialGetEnvMapFrameBufferAlpha
 RpMatFXMaterialGetEnvMapFrameBufferAlpha:
-/* 802CA178 002C6F78  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA178 002C6F78  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA17C 002C6F7C  38 80 00 00 */	li r4, 0
 /* 802CA180 002C6F80  7C 63 00 2E */	lwzx r3, r3, r0
 /* 802CA184 002C6F84  48 00 00 24 */	b lbl_802CA1A8
@@ -2842,7 +2842,7 @@ lbl_802CA1B8:
 
 .global RpMatFXMaterialGetEnvMapCoefficient
 RpMatFXMaterialGetEnvMapCoefficient:
-/* 802CA1C0 002C6FC0  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA1C0 002C6FC0  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA1C4 002C6FC4  38 80 00 00 */	li r4, 0
 /* 802CA1C8 002C6FC8  7C 63 00 2E */	lwzx r3, r3, r0
 /* 802CA1CC 002C6FCC  48 00 00 24 */	b lbl_802CA1F0
@@ -2876,7 +2876,7 @@ RpMatFXMaterialSetDualTexture:
 /* 802CA220 002C7020  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 802CA224 002C7024  7C 7D 1B 78 */	mr r29, r3
 /* 802CA228 002C7028  38 60 00 00 */	li r3, 0
-/* 802CA22C 002C702C  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA22C 002C702C  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA230 002C7030  7C 9D 00 2E */	lwzx r4, r29, r0
 /* 802CA234 002C7034  48 00 00 24 */	b lbl_802CA258
 lbl_802CA238:
@@ -2930,7 +2930,7 @@ RpMatFXMaterialSetDualBlendModes:
 /* 802CA2D8 002C70D8  93 C1 00 08 */	stw r30, 8(r1)
 /* 802CA2DC 002C70DC  7C 7E 1B 78 */	mr r30, r3
 /* 802CA2E0 002C70E0  38 60 00 00 */	li r3, 0
-/* 802CA2E4 002C70E4  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA2E4 002C70E4  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA2E8 002C70E8  7C DE 00 2E */	lwzx r6, r30, r0
 /* 802CA2EC 002C70EC  48 00 00 24 */	b lbl_802CA310
 lbl_802CA2F0:
@@ -2967,7 +2967,7 @@ lbl_802CA320:
 
 .global RpMatFXMaterialGetDualTexture
 RpMatFXMaterialGetDualTexture:
-/* 802CA35C 002C715C  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA35C 002C715C  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA360 002C7160  38 80 00 00 */	li r4, 0
 /* 802CA364 002C7164  7C 63 00 2E */	lwzx r3, r3, r0
 /* 802CA368 002C7168  48 00 00 24 */	b lbl_802CA38C
@@ -2992,7 +2992,7 @@ lbl_802CA39C:
 
 .global RpMatFXMaterialGetDualBlendModes
 RpMatFXMaterialGetDualBlendModes:
-/* 802CA3A4 002C71A4  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA3A4 002C71A4  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA3A8 002C71A8  38 C0 00 00 */	li r6, 0
 /* 802CA3AC 002C71AC  7C E3 00 2E */	lwzx r7, r3, r0
 /* 802CA3B0 002C71B0  48 00 00 24 */	b lbl_802CA3D4
@@ -3020,7 +3020,7 @@ lbl_802CA3E4:
 
 .global RpMatFXMaterialSetUVTransformMatrices
 RpMatFXMaterialSetUVTransformMatrices:
-/* 802CA3F8 002C71F8  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA3F8 002C71F8  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA3FC 002C71FC  38 C0 00 00 */	li r6, 0
 /* 802CA400 002C7200  7C E3 00 2E */	lwzx r7, r3, r0
 /* 802CA404 002C7204  48 00 00 24 */	b lbl_802CA428
@@ -3046,7 +3046,7 @@ lbl_802CA438:
 
 .global RpMatFXMaterialGetUVTransformMatrices
 RpMatFXMaterialGetUVTransformMatrices:
-/* 802CA444 002C7244  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA444 002C7244  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA448 002C7248  38 C0 00 00 */	li r6, 0
 /* 802CA44C 002C724C  7C E3 00 2E */	lwzx r7, r3, r0
 /* 802CA450 002C7250  48 00 00 24 */	b lbl_802CA474
@@ -3095,7 +3095,7 @@ _rxGCChannelMaterialSetup:
 /* 802CA4DC 002C72DC  80 1E 00 08 */	lwz r0, 8(r30)
 /* 802CA4E0 002C72E0  54 00 07 39 */	rlwinm. r0, r0, 0, 0x1c, 0x1c
 /* 802CA4E4 002C72E4  40 82 00 74 */	bne lbl_802CA558
-/* 802CA4E8 002C72E8  C0 22 E6 F0 */	lfs f1, _esc__2_346_3-_SDA2_BASE_(r2)
+/* 802CA4E8 002C72E8  C0 22 E6 F0 */	lfs f1, _esc__2_346_3@sda21(r2)
 /* 802CA4EC 002C72EC  38 00 00 FF */	li r0, 0xff
 /* 802CA4F0 002C72F0  C0 1F 00 0C */	lfs f0, 0xc(r31)
 /* 802CA4F4 002C72F4  38 81 00 18 */	addi r4, r1, 0x18
@@ -3164,7 +3164,7 @@ lbl_802CA5A8:
 /* 802CA5E4 002C73E4  C0 1E 00 14 */	lfs f0, 0x14(r30)
 /* 802CA5E8 002C73E8  90 61 00 24 */	stw r3, 0x24(r1)
 /* 802CA5EC 002C73EC  EC 43 00 72 */	fmuls f2, f3, f1
-/* 802CA5F0 002C73F0  C8 C2 E6 F8 */	lfd f6, _esc__2_350_5-_SDA2_BASE_(r2)
+/* 802CA5F0 002C73F0  C8 C2 E6 F8 */	lfd f6, _esc__2_350_5@sda21(r2)
 /* 802CA5F4 002C73F4  EC 03 00 32 */	fmuls f0, f3, f0
 /* 802CA5F8 002C73F8  90 81 00 20 */	stw r4, 0x20(r1)
 /* 802CA5FC 002C73FC  C8 61 00 30 */	lfd f3, 0x30(r1)
@@ -3194,7 +3194,7 @@ lbl_802CA5A8:
 /* 802CA65C 002C745C  98 01 00 1E */	stb r0, 0x1e(r1)
 /* 802CA660 002C7460  48 00 00 5C */	b lbl_802CA6BC
 lbl_802CA664:
-/* 802CA664 002C7464  C0 02 E6 F0 */	lfs f0, _esc__2_346_3-_SDA2_BASE_(r2)
+/* 802CA664 002C7464  C0 02 E6 F0 */	lfs f0, _esc__2_346_3@sda21(r2)
 /* 802CA668 002C7468  38 00 00 FF */	li r0, 0xff
 /* 802CA66C 002C746C  C0 5E 00 0C */	lfs f2, 0xc(r30)
 /* 802CA670 002C7470  EC 63 00 32 */	fmuls f3, f3, f0
@@ -3268,7 +3268,7 @@ MeshRenderDual:
 /* 802CA75C 002C755C  80 DB 00 08 */	lwz r6, 8(r27)
 /* 802CA760 002C7560  80 03 00 00 */	lwz r0, 0(r3)
 /* 802CA764 002C7564  7C 9C 23 78 */	mr r28, r4
-/* 802CA768 002C7568  80 6D E8 58 */	lwz r3, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CA768 002C7568  80 6D E8 58 */	lwz r3, MatFXMaterialDataOffset@sda21(r13)
 /* 802CA76C 002C756C  7C BD 2B 78 */	mr r29, r5
 /* 802CA770 002C7570  2C 00 00 00 */	cmpwi r0, 0
 /* 802CA774 002C7574  7F C6 18 2E */	lwzx r30, r6, r3
@@ -3286,7 +3286,7 @@ lbl_802CA79C:
 /* 802CA7A0 002C75A0  3B E0 00 00 */	li r31, 0
 /* 802CA7A4 002C75A4  2C 00 00 00 */	cmpwi r0, 0
 /* 802CA7A8 002C75A8  40 82 00 18 */	bne lbl_802CA7C0
-/* 802CA7AC 002C75AC  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CA7AC 002C75AC  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CA7B0 002C75B0  38 81 00 08 */	addi r4, r1, 8
 /* 802CA7B4 002C75B4  38 60 00 04 */	li r3, 4
 /* 802CA7B8 002C75B8  90 01 00 08 */	stw r0, 8(r1)
@@ -3304,7 +3304,7 @@ lbl_802CA7C0:
 /* 802CA7E4 002C75E4  4B F6 0C 89 */	bl GXSetChanCtrl
 /* 802CA7E8 002C75E8  57 40 06 73 */	rlwinm. r0, r26, 0, 0x19, 0x19
 /* 802CA7EC 002C75EC  40 82 00 D4 */	bne lbl_802CA8C0
-/* 802CA7F0 002C75F0  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272-_SDA2_BASE_(r2)
+/* 802CA7F0 002C75F0  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272@sda21(r2)
 /* 802CA7F4 002C75F4  38 81 00 0C */	addi r4, r1, 0xc
 /* 802CA7F8 002C75F8  38 60 00 04 */	li r3, 4
 /* 802CA7FC 002C75FC  90 01 00 0C */	stw r0, 0xc(r1)
@@ -3344,7 +3344,7 @@ lbl_802CA870:
 /* 802CA878 002C7678  40 82 00 20 */	bne lbl_802CA898
 /* 802CA87C 002C767C  57 40 06 73 */	rlwinm. r0, r26, 0, 0x19, 0x19
 /* 802CA880 002C7680  40 82 00 18 */	bne lbl_802CA898
-/* 802CA884 002C7684  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CA884 002C7684  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CA888 002C7688  38 81 00 10 */	addi r4, r1, 0x10
 /* 802CA88C 002C768C  38 60 00 04 */	li r3, 4
 /* 802CA890 002C7690  90 01 00 10 */	stw r0, 0x10(r1)
@@ -3429,7 +3429,7 @@ lbl_802CA994:
 /* 802CA9B0 002C77B0  80 9A 00 00 */	lwz r4, 0(r26)
 /* 802CA9B4 002C77B4  28 04 00 00 */	cmplwi r4, 0
 /* 802CA9B8 002C77B8  41 82 00 24 */	beq lbl_802CA9DC
-/* 802CA9BC 002C77BC  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset-_SDA_BASE_(r13)
+/* 802CA9BC 002C77BC  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset@sda21(r13)
 /* 802CA9C0 002C77C0  80 84 00 00 */	lwz r4, 0(r4)
 /* 802CA9C4 002C77C4  38 03 00 14 */	addi r0, r3, 0x14
 /* 802CA9C8 002C77C8  7C 04 00 2E */	lwzx r0, r4, r0
@@ -3444,25 +3444,25 @@ lbl_802CA9E4:
 /* 802CA9E4 002C77E4  80 7C 00 00 */	lwz r3, 0(r28)
 /* 802CA9E8 002C77E8  80 9C 00 04 */	lwz r4, 4(r28)
 /* 802CA9EC 002C77EC  4B F6 2E 65 */	bl GXCallDisplayList
-/* 802CA9F0 002C77F0  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CA9F0 002C77F0  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CA9F4 002C77F4  38 81 00 18 */	addi r4, r1, 0x18
 /* 802CA9F8 002C77F8  38 60 00 0A */	li r3, 0xa
 /* 802CA9FC 002C77FC  81 85 00 24 */	lwz r12, 0x24(r5)
 /* 802CAA00 002C7800  7D 89 03 A6 */	mtctr r12
 /* 802CAA04 002C7804  4E 80 04 21 */	bctrl 
-/* 802CAA08 002C7808  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CAA08 002C7808  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CAA0C 002C780C  38 81 00 14 */	addi r4, r1, 0x14
 /* 802CAA10 002C7810  38 60 00 0B */	li r3, 0xb
 /* 802CAA14 002C7814  81 85 00 24 */	lwz r12, 0x24(r5)
 /* 802CAA18 002C7818  7D 89 03 A6 */	mtctr r12
 /* 802CAA1C 002C781C  4E 80 04 21 */	bctrl 
-/* 802CAA20 002C7820  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CAA20 002C7820  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CAA24 002C7824  38 60 00 0A */	li r3, 0xa
 /* 802CAA28 002C7828  80 9E 00 04 */	lwz r4, 4(r30)
 /* 802CAA2C 002C782C  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 802CAA30 002C7830  7D 89 03 A6 */	mtctr r12
 /* 802CAA34 002C7834  4E 80 04 21 */	bctrl 
-/* 802CAA38 002C7838  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CAA38 002C7838  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CAA3C 002C783C  38 60 00 0B */	li r3, 0xb
 /* 802CAA40 002C7840  80 9E 00 08 */	lwz r4, 8(r30)
 /* 802CAA44 002C7844  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -3490,7 +3490,7 @@ lbl_802CAA80:
 /* 802CAA98 002C7898  80 9A 00 00 */	lwz r4, 0(r26)
 /* 802CAA9C 002C789C  28 04 00 00 */	cmplwi r4, 0
 /* 802CAAA0 002C78A0  41 82 00 24 */	beq lbl_802CAAC4
-/* 802CAAA4 002C78A4  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset-_SDA_BASE_(r13)
+/* 802CAAA4 002C78A4  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset@sda21(r13)
 /* 802CAAA8 002C78A8  80 84 00 00 */	lwz r4, 0(r4)
 /* 802CAAAC 002C78AC  38 03 00 14 */	addi r0, r3, 0x14
 /* 802CAAB0 002C78B0  7C 04 00 2E */	lwzx r0, r4, r0
@@ -3505,13 +3505,13 @@ lbl_802CAACC:
 /* 802CAACC 002C78CC  80 7C 00 00 */	lwz r3, 0(r28)
 /* 802CAAD0 002C78D0  80 9C 00 04 */	lwz r4, 4(r28)
 /* 802CAAD4 002C78D4  4B F6 2D 7D */	bl GXCallDisplayList
-/* 802CAAD8 002C78D8  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CAAD8 002C78D8  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CAADC 002C78DC  38 60 00 0A */	li r3, 0xa
 /* 802CAAE0 002C78E0  80 81 00 18 */	lwz r4, 0x18(r1)
 /* 802CAAE4 002C78E4  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 802CAAE8 002C78E8  7D 89 03 A6 */	mtctr r12
 /* 802CAAEC 002C78EC  4E 80 04 21 */	bctrl 
-/* 802CAAF0 002C78F0  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CAAF0 002C78F0  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CAAF4 002C78F4  38 60 00 0B */	li r3, 0xb
 /* 802CAAF8 002C78F8  80 81 00 14 */	lwz r4, 0x14(r1)
 /* 802CAAFC 002C78FC  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -3537,7 +3537,7 @@ MeshRenderUVAnimDual:
 /* 802CAB40 002C7940  80 DB 00 08 */	lwz r6, 8(r27)
 /* 802CAB44 002C7944  80 03 00 00 */	lwz r0, 0(r3)
 /* 802CAB48 002C7948  7C 9C 23 78 */	mr r28, r4
-/* 802CAB4C 002C794C  80 6D E8 58 */	lwz r3, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CAB4C 002C794C  80 6D E8 58 */	lwz r3, MatFXMaterialDataOffset@sda21(r13)
 /* 802CAB50 002C7950  7C BD 2B 78 */	mr r29, r5
 /* 802CAB54 002C7954  2C 00 00 00 */	cmpwi r0, 0
 /* 802CAB58 002C7958  7F C6 18 2E */	lwzx r30, r6, r3
@@ -3555,7 +3555,7 @@ lbl_802CAB80:
 /* 802CAB84 002C7984  3B E0 00 00 */	li r31, 0
 /* 802CAB88 002C7988  2C 00 00 00 */	cmpwi r0, 0
 /* 802CAB8C 002C798C  40 82 00 18 */	bne lbl_802CABA4
-/* 802CAB90 002C7990  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CAB90 002C7990  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CAB94 002C7994  38 81 00 08 */	addi r4, r1, 8
 /* 802CAB98 002C7998  38 60 00 04 */	li r3, 4
 /* 802CAB9C 002C799C  90 01 00 08 */	stw r0, 8(r1)
@@ -3573,7 +3573,7 @@ lbl_802CABA4:
 /* 802CABC8 002C79C8  4B F6 08 A5 */	bl GXSetChanCtrl
 /* 802CABCC 002C79CC  57 40 06 73 */	rlwinm. r0, r26, 0, 0x19, 0x19
 /* 802CABD0 002C79D0  40 82 00 D4 */	bne lbl_802CACA4
-/* 802CABD4 002C79D4  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272-_SDA2_BASE_(r2)
+/* 802CABD4 002C79D4  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272@sda21(r2)
 /* 802CABD8 002C79D8  38 81 00 0C */	addi r4, r1, 0xc
 /* 802CABDC 002C79DC  38 60 00 04 */	li r3, 4
 /* 802CABE0 002C79E0  90 01 00 0C */	stw r0, 0xc(r1)
@@ -3613,7 +3613,7 @@ lbl_802CAC54:
 /* 802CAC5C 002C7A5C  40 82 00 20 */	bne lbl_802CAC7C
 /* 802CAC60 002C7A60  57 40 06 73 */	rlwinm. r0, r26, 0, 0x19, 0x19
 /* 802CAC64 002C7A64  40 82 00 18 */	bne lbl_802CAC7C
-/* 802CAC68 002C7A68  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CAC68 002C7A68  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CAC6C 002C7A6C  38 81 00 10 */	addi r4, r1, 0x10
 /* 802CAC70 002C7A70  38 60 00 04 */	li r3, 4
 /* 802CAC74 002C7A74  90 01 00 10 */	stw r0, 0x10(r1)
@@ -3693,7 +3693,7 @@ lbl_802CAD78:
 /* 802CAD80 002C7B80  41 82 00 6C */	beq lbl_802CADEC
 /* 802CAD84 002C7B84  C0 06 00 00 */	lfs f0, 0(r6)
 /* 802CAD88 002C7B88  38 61 00 1C */	addi r3, r1, 0x1c
-/* 802CAD8C 002C7B8C  C0 22 E7 08 */	lfs f1, _esc__2_523-_SDA2_BASE_(r2)
+/* 802CAD8C 002C7B8C  C0 22 E7 08 */	lfs f1, _esc__2_523@sda21(r2)
 /* 802CAD90 002C7B90  38 80 00 1E */	li r4, 0x1e
 /* 802CAD94 002C7B94  D0 01 00 1C */	stfs f0, 0x1c(r1)
 /* 802CAD98 002C7B98  38 A0 00 01 */	li r5, 1
@@ -3728,7 +3728,7 @@ lbl_802CADEC:
 /* 802CAE08 002C7C08  80 9A 00 00 */	lwz r4, 0(r26)
 /* 802CAE0C 002C7C0C  28 04 00 00 */	cmplwi r4, 0
 /* 802CAE10 002C7C10  41 82 00 24 */	beq lbl_802CAE34
-/* 802CAE14 002C7C14  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset-_SDA_BASE_(r13)
+/* 802CAE14 002C7C14  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset@sda21(r13)
 /* 802CAE18 002C7C18  80 84 00 00 */	lwz r4, 0(r4)
 /* 802CAE1C 002C7C1C  38 03 00 14 */	addi r0, r3, 0x14
 /* 802CAE20 002C7C20  7C 04 00 2E */	lwzx r0, r4, r0
@@ -3751,7 +3751,7 @@ lbl_802CAE3C:
 /* 802CAE5C 002C7C5C  41 82 00 78 */	beq lbl_802CAED4
 /* 802CAE60 002C7C60  C0 06 00 00 */	lfs f0, 0(r6)
 /* 802CAE64 002C7C64  38 61 00 1C */	addi r3, r1, 0x1c
-/* 802CAE68 002C7C68  C0 22 E7 08 */	lfs f1, _esc__2_523-_SDA2_BASE_(r2)
+/* 802CAE68 002C7C68  C0 22 E7 08 */	lfs f1, _esc__2_523@sda21(r2)
 /* 802CAE6C 002C7C6C  38 80 00 1E */	li r4, 0x1e
 /* 802CAE70 002C7C70  D0 01 00 1C */	stfs f0, 0x1c(r1)
 /* 802CAE74 002C7C74  38 A0 00 01 */	li r5, 1
@@ -3795,7 +3795,7 @@ lbl_802CAEFC:
 /* 802CAF04 002C7D04  41 82 00 78 */	beq lbl_802CAF7C
 /* 802CAF08 002C7D08  C0 06 00 00 */	lfs f0, 0(r6)
 /* 802CAF0C 002C7D0C  38 61 00 1C */	addi r3, r1, 0x1c
-/* 802CAF10 002C7D10  C0 22 E7 08 */	lfs f1, _esc__2_523-_SDA2_BASE_(r2)
+/* 802CAF10 002C7D10  C0 22 E7 08 */	lfs f1, _esc__2_523@sda21(r2)
 /* 802CAF14 002C7D14  38 80 00 1E */	li r4, 0x1e
 /* 802CAF18 002C7D18  D0 01 00 1C */	stfs f0, 0x1c(r1)
 /* 802CAF1C 002C7D1C  38 A0 00 01 */	li r5, 1
@@ -3834,25 +3834,25 @@ lbl_802CAF7C:
 /* 802CAF9C 002C7D9C  39 00 00 7D */	li r8, 0x7d
 /* 802CAFA0 002C7DA0  4B F5 E6 B1 */	bl GXSetTexCoordGen2
 lbl_802CAFA4:
-/* 802CAFA4 002C7DA4  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CAFA4 002C7DA4  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CAFA8 002C7DA8  38 81 00 18 */	addi r4, r1, 0x18
 /* 802CAFAC 002C7DAC  38 60 00 0A */	li r3, 0xa
 /* 802CAFB0 002C7DB0  81 85 00 24 */	lwz r12, 0x24(r5)
 /* 802CAFB4 002C7DB4  7D 89 03 A6 */	mtctr r12
 /* 802CAFB8 002C7DB8  4E 80 04 21 */	bctrl 
-/* 802CAFBC 002C7DBC  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CAFBC 002C7DBC  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CAFC0 002C7DC0  38 81 00 14 */	addi r4, r1, 0x14
 /* 802CAFC4 002C7DC4  38 60 00 0B */	li r3, 0xb
 /* 802CAFC8 002C7DC8  81 85 00 24 */	lwz r12, 0x24(r5)
 /* 802CAFCC 002C7DCC  7D 89 03 A6 */	mtctr r12
 /* 802CAFD0 002C7DD0  4E 80 04 21 */	bctrl 
-/* 802CAFD4 002C7DD4  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CAFD4 002C7DD4  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CAFD8 002C7DD8  38 60 00 0A */	li r3, 0xa
 /* 802CAFDC 002C7DDC  80 9E 00 1C */	lwz r4, 0x1c(r30)
 /* 802CAFE0 002C7DE0  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 802CAFE4 002C7DE4  7D 89 03 A6 */	mtctr r12
 /* 802CAFE8 002C7DE8  4E 80 04 21 */	bctrl 
-/* 802CAFEC 002C7DEC  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CAFEC 002C7DEC  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CAFF0 002C7DF0  38 60 00 0B */	li r3, 0xb
 /* 802CAFF4 002C7DF4  80 9E 00 20 */	lwz r4, 0x20(r30)
 /* 802CAFF8 002C7DF8  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -3867,7 +3867,7 @@ lbl_802CAFA4:
 /* 802CB01C 002C7E1C  80 9A 00 00 */	lwz r4, 0(r26)
 /* 802CB020 002C7E20  28 04 00 00 */	cmplwi r4, 0
 /* 802CB024 002C7E24  41 82 00 24 */	beq lbl_802CB048
-/* 802CB028 002C7E28  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset-_SDA_BASE_(r13)
+/* 802CB028 002C7E28  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset@sda21(r13)
 /* 802CB02C 002C7E2C  80 84 00 00 */	lwz r4, 0(r4)
 /* 802CB030 002C7E30  38 03 00 14 */	addi r0, r3, 0x14
 /* 802CB034 002C7E34  7C 04 00 2E */	lwzx r0, r4, r0
@@ -3882,13 +3882,13 @@ lbl_802CB050:
 /* 802CB050 002C7E50  80 7C 00 00 */	lwz r3, 0(r28)
 /* 802CB054 002C7E54  80 9C 00 04 */	lwz r4, 4(r28)
 /* 802CB058 002C7E58  4B F6 27 F9 */	bl GXCallDisplayList
-/* 802CB05C 002C7E5C  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CB05C 002C7E5C  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CB060 002C7E60  38 60 00 0A */	li r3, 0xa
 /* 802CB064 002C7E64  80 81 00 18 */	lwz r4, 0x18(r1)
 /* 802CB068 002C7E68  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 802CB06C 002C7E6C  7D 89 03 A6 */	mtctr r12
 /* 802CB070 002C7E70  4E 80 04 21 */	bctrl 
-/* 802CB074 002C7E74  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CB074 002C7E74  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CB078 002C7E78  38 60 00 0B */	li r3, 0xb
 /* 802CB07C 002C7E7C  80 81 00 14 */	lwz r4, 0x14(r1)
 /* 802CB080 002C7E80  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -3911,12 +3911,12 @@ MeshRenderEnvMap:
 /* 802CB0B8 002C7EB8  3C E0 80 3D */	lis r7, FXStateCache@ha
 /* 802CB0BC 002C7EBC  7C 79 1B 78 */	mr r25, r3
 /* 802CB0C0 002C7EC0  38 67 B3 00 */	addi r3, r7, FXStateCache@l
-/* 802CB0C4 002C7EC4  80 E2 E7 0C */	lwz r7, _esc__2_702-_SDA2_BASE_(r2)
+/* 802CB0C4 002C7EC4  80 E2 E7 0C */	lwz r7, _esc__2_702@sda21(r2)
 /* 802CB0C8 002C7EC8  80 03 00 00 */	lwz r0, 0(r3)
 /* 802CB0CC 002C7ECC  7C 9A 23 78 */	mr r26, r4
 /* 802CB0D0 002C7ED0  80 99 00 08 */	lwz r4, 8(r25)
 /* 802CB0D4 002C7ED4  7C BB 2B 78 */	mr r27, r5
-/* 802CB0D8 002C7ED8  80 6D E8 58 */	lwz r3, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CB0D8 002C7ED8  80 6D E8 58 */	lwz r3, MatFXMaterialDataOffset@sda21(r13)
 /* 802CB0DC 002C7EDC  2C 00 00 00 */	cmpwi r0, 0
 /* 802CB0E0 002C7EE0  90 E1 00 18 */	stw r7, 0x18(r1)
 /* 802CB0E4 002C7EE4  7C DC 33 78 */	mr r28, r6
@@ -3935,7 +3935,7 @@ lbl_802CB110:
 /* 802CB114 002C7F14  3B C0 00 00 */	li r30, 0
 /* 802CB118 002C7F18  2C 00 00 00 */	cmpwi r0, 0
 /* 802CB11C 002C7F1C  40 82 00 18 */	bne lbl_802CB134
-/* 802CB120 002C7F20  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CB120 002C7F20  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CB124 002C7F24  38 81 00 08 */	addi r4, r1, 8
 /* 802CB128 002C7F28  38 60 00 04 */	li r3, 4
 /* 802CB12C 002C7F2C  90 01 00 08 */	stw r0, 8(r1)
@@ -3953,7 +3953,7 @@ lbl_802CB134:
 /* 802CB158 002C7F58  4B F6 03 15 */	bl GXSetChanCtrl
 /* 802CB15C 002C7F5C  57 E0 06 73 */	rlwinm. r0, r31, 0, 0x19, 0x19
 /* 802CB160 002C7F60  40 82 00 D4 */	bne lbl_802CB234
-/* 802CB164 002C7F64  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272-_SDA2_BASE_(r2)
+/* 802CB164 002C7F64  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272@sda21(r2)
 /* 802CB168 002C7F68  38 81 00 0C */	addi r4, r1, 0xc
 /* 802CB16C 002C7F6C  38 60 00 04 */	li r3, 4
 /* 802CB170 002C7F70  90 01 00 0C */	stw r0, 0xc(r1)
@@ -3993,7 +3993,7 @@ lbl_802CB1E4:
 /* 802CB1EC 002C7FEC  40 82 00 20 */	bne lbl_802CB20C
 /* 802CB1F0 002C7FF0  57 E0 06 73 */	rlwinm. r0, r31, 0, 0x19, 0x19
 /* 802CB1F4 002C7FF4  40 82 00 18 */	bne lbl_802CB20C
-/* 802CB1F8 002C7FF8  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CB1F8 002C7FF8  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CB1FC 002C7FFC  38 81 00 10 */	addi r4, r1, 0x10
 /* 802CB200 002C8000  38 60 00 04 */	li r3, 4
 /* 802CB204 002C8004  90 01 00 10 */	stw r0, 0x10(r1)
@@ -4077,13 +4077,13 @@ lbl_802CB308:
 /* 802CB320 002C8120  80 7A 00 00 */	lwz r3, 0(r26)
 /* 802CB324 002C8124  80 9A 00 04 */	lwz r4, 4(r26)
 /* 802CB328 002C8128  4B F6 25 29 */	bl GXCallDisplayList
-/* 802CB32C 002C812C  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CB32C 002C812C  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CB330 002C8130  38 81 00 20 */	addi r4, r1, 0x20
 /* 802CB334 002C8134  38 60 00 0A */	li r3, 0xa
 /* 802CB338 002C8138  81 85 00 24 */	lwz r12, 0x24(r5)
 /* 802CB33C 002C813C  7D 89 03 A6 */	mtctr r12
 /* 802CB340 002C8140  4E 80 04 21 */	bctrl 
-/* 802CB344 002C8144  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CB344 002C8144  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CB348 002C8148  38 81 00 1C */	addi r4, r1, 0x1c
 /* 802CB34C 002C814C  38 60 00 0B */	li r3, 0xb
 /* 802CB350 002C8150  81 85 00 24 */	lwz r12, 0x24(r5)
@@ -4096,11 +4096,11 @@ lbl_802CB308:
 /* 802CB36C 002C816C  41 82 00 08 */	beq lbl_802CB374
 /* 802CB370 002C8170  38 80 00 07 */	li r4, 7
 lbl_802CB374:
-/* 802CB374 002C8174  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CB374 002C8174  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CB378 002C8178  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 802CB37C 002C817C  7D 89 03 A6 */	mtctr r12
 /* 802CB380 002C8180  4E 80 04 21 */	bctrl 
-/* 802CB384 002C8184  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CB384 002C8184  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CB388 002C8188  38 60 00 0B */	li r3, 0xb
 /* 802CB38C 002C818C  38 80 00 02 */	li r4, 2
 /* 802CB390 002C8190  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -4123,10 +4123,10 @@ lbl_802CB374:
 /* 802CB3D4 002C81D4  39 20 00 02 */	li r9, 2
 /* 802CB3D8 002C81D8  4B F6 00 95 */	bl GXSetChanCtrl
 /* 802CB3DC 002C81DC  C0 3D 00 08 */	lfs f1, 8(r29)
-/* 802CB3E0 002C81E0  C0 02 E7 10 */	lfs f0, _esc__2_772-_SDA2_BASE_(r2)
+/* 802CB3E0 002C81E0  C0 02 E7 10 */	lfs f0, _esc__2_772@sda21(r2)
 /* 802CB3E4 002C81E4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 802CB3E8 002C81E8  40 80 00 30 */	bge lbl_802CB418
-/* 802CB3EC 002C81EC  C0 02 E7 14 */	lfs f0, _esc__2_773-_SDA2_BASE_(r2)
+/* 802CB3EC 002C81EC  C0 02 E7 14 */	lfs f0, _esc__2_773@sda21(r2)
 /* 802CB3F0 002C81F0  38 00 00 FF */	li r0, 0xff
 /* 802CB3F4 002C81F4  98 01 00 1B */	stb r0, 0x1b(r1)
 /* 802CB3F8 002C81F8  EC 00 00 72 */	fmuls f0, f0, f1
@@ -4203,11 +4203,11 @@ lbl_802CB4E4:
 /* 802CB504 002C8304  4B FC 06 BD */	bl RwMatrixOrthoNormalize
 /* 802CB508 002C8308  38 C1 00 24 */	addi r6, r1, 0x24
 lbl_802CB50C:
-/* 802CB50C 002C830C  C0 42 E7 00 */	lfs f2, _esc__2_394_0-_SDA2_BASE_(r2)
+/* 802CB50C 002C830C  C0 42 E7 00 */	lfs f2, _esc__2_394_0@sda21(r2)
 /* 802CB510 002C8310  38 61 00 A4 */	addi r3, r1, 0xa4
 /* 802CB514 002C8314  C0 06 00 00 */	lfs f0, 0(r6)
 /* 802CB518 002C8318  38 80 00 1E */	li r4, 0x1e
-/* 802CB51C 002C831C  C0 22 E7 04 */	lfs f1, _esc__2_395_0-_SDA2_BASE_(r2)
+/* 802CB51C 002C831C  C0 22 E7 04 */	lfs f1, _esc__2_395_0@sda21(r2)
 /* 802CB520 002C8320  38 A0 00 01 */	li r5, 1
 /* 802CB524 002C8324  EC 02 00 32 */	fmuls f0, f2, f0
 /* 802CB528 002C8328  D0 01 00 A4 */	stfs f0, 0xa4(r1)
@@ -4232,13 +4232,13 @@ lbl_802CB50C:
 /* 802CB574 002C8374  80 7A 00 00 */	lwz r3, 0(r26)
 /* 802CB578 002C8378  80 9A 00 04 */	lwz r4, 4(r26)
 /* 802CB57C 002C837C  4B F6 22 D5 */	bl GXCallDisplayList
-/* 802CB580 002C8380  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CB580 002C8380  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CB584 002C8384  38 60 00 0A */	li r3, 0xa
 /* 802CB588 002C8388  80 81 00 20 */	lwz r4, 0x20(r1)
 /* 802CB58C 002C838C  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 802CB590 002C8390  7D 89 03 A6 */	mtctr r12
 /* 802CB594 002C8394  4E 80 04 21 */	bctrl 
-/* 802CB598 002C8398  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CB598 002C8398  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CB59C 002C839C  38 60 00 0B */	li r3, 0xb
 /* 802CB5A0 002C83A0  80 81 00 1C */	lwz r4, 0x1c(r1)
 /* 802CB5A4 002C83A4  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -4266,7 +4266,7 @@ MeshRenderBumpMap:
 /* 802CB5F0 002C83F0  81 1A 00 08 */	lwz r8, 8(r26)
 /* 802CB5F4 002C83F4  80 03 00 00 */	lwz r0, 0(r3)
 /* 802CB5F8 002C83F8  7C 9B 23 78 */	mr r27, r4
-/* 802CB5FC 002C83FC  80 6D E8 58 */	lwz r3, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CB5FC 002C83FC  80 6D E8 58 */	lwz r3, MatFXMaterialDataOffset@sda21(r13)
 /* 802CB600 002C8400  7C BC 2B 78 */	mr r28, r5
 /* 802CB604 002C8404  2C 00 00 00 */	cmpwi r0, 0
 /* 802CB608 002C8408  7C DD 33 78 */	mr r29, r6
@@ -4286,7 +4286,7 @@ lbl_802CB638:
 /* 802CB63C 002C843C  3B 20 00 00 */	li r25, 0
 /* 802CB640 002C8440  2C 00 00 00 */	cmpwi r0, 0
 /* 802CB644 002C8444  40 82 00 18 */	bne lbl_802CB65C
-/* 802CB648 002C8448  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CB648 002C8448  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CB64C 002C844C  38 81 00 10 */	addi r4, r1, 0x10
 /* 802CB650 002C8450  38 60 00 04 */	li r3, 4
 /* 802CB654 002C8454  90 01 00 10 */	stw r0, 0x10(r1)
@@ -4304,7 +4304,7 @@ lbl_802CB65C:
 /* 802CB680 002C8480  4B F5 FD ED */	bl GXSetChanCtrl
 /* 802CB684 002C8484  57 00 06 73 */	rlwinm. r0, r24, 0, 0x19, 0x19
 /* 802CB688 002C8488  40 82 00 D4 */	bne lbl_802CB75C
-/* 802CB68C 002C848C  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272-_SDA2_BASE_(r2)
+/* 802CB68C 002C848C  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272@sda21(r2)
 /* 802CB690 002C8490  38 81 00 14 */	addi r4, r1, 0x14
 /* 802CB694 002C8494  38 60 00 04 */	li r3, 4
 /* 802CB698 002C8498  90 01 00 14 */	stw r0, 0x14(r1)
@@ -4344,7 +4344,7 @@ lbl_802CB70C:
 /* 802CB714 002C8514  40 82 00 20 */	bne lbl_802CB734
 /* 802CB718 002C8518  57 00 06 73 */	rlwinm. r0, r24, 0, 0x19, 0x19
 /* 802CB71C 002C851C  40 82 00 18 */	bne lbl_802CB734
-/* 802CB720 002C8520  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CB720 002C8520  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CB724 002C8524  38 81 00 18 */	addi r4, r1, 0x18
 /* 802CB728 002C8528  38 60 00 04 */	li r3, 4
 /* 802CB72C 002C852C  90 01 00 18 */	stw r0, 0x18(r1)
@@ -4418,7 +4418,7 @@ lbl_802CB7FC:
 lbl_802CB824:
 /* 802CB824 002C8624  C0 06 00 00 */	lfs f0, 0(r6)
 /* 802CB828 002C8628  38 61 01 54 */	addi r3, r1, 0x154
-/* 802CB82C 002C862C  C0 22 E7 08 */	lfs f1, _esc__2_523-_SDA2_BASE_(r2)
+/* 802CB82C 002C862C  C0 22 E7 08 */	lfs f1, _esc__2_523@sda21(r2)
 /* 802CB830 002C8630  38 80 00 1E */	li r4, 0x1e
 /* 802CB834 002C8634  EC 1F 00 32 */	fmuls f0, f31, f0
 /* 802CB838 002C8638  38 A0 00 01 */	li r5, 1
@@ -4445,7 +4445,7 @@ lbl_802CB824:
 /* 802CB88C 002C868C  41 82 01 44 */	beq lbl_802CB9D0
 /* 802CB890 002C8690  80 7A 00 08 */	lwz r3, 8(r26)
 /* 802CB894 002C8694  38 80 00 01 */	li r4, 1
-/* 802CB898 002C8698  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CB898 002C8698  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CB89C 002C869C  7F A3 00 2E */	lwzx r29, r3, r0
 /* 802CB8A0 002C86A0  80 7D 00 1C */	lwz r3, 0x1c(r29)
 /* 802CB8A4 002C86A4  4B FD BC 91 */	bl _rwDlTextureSet
@@ -4476,11 +4476,11 @@ lbl_802CB8E0:
 /* 802CB900 002C8700  4B FC 02 C1 */	bl RwMatrixOrthoNormalize
 /* 802CB904 002C8704  38 C1 00 24 */	addi r6, r1, 0x24
 lbl_802CB908:
-/* 802CB908 002C8708  C0 42 E7 00 */	lfs f2, _esc__2_394_0-_SDA2_BASE_(r2)
+/* 802CB908 002C8708  C0 42 E7 00 */	lfs f2, _esc__2_394_0@sda21(r2)
 /* 802CB90C 002C870C  38 61 01 24 */	addi r3, r1, 0x124
 /* 802CB910 002C8710  C0 06 00 00 */	lfs f0, 0(r6)
 /* 802CB914 002C8714  38 80 00 21 */	li r4, 0x21
-/* 802CB918 002C8718  C0 22 E7 04 */	lfs f1, _esc__2_395_0-_SDA2_BASE_(r2)
+/* 802CB918 002C8718  C0 22 E7 04 */	lfs f1, _esc__2_395_0@sda21(r2)
 /* 802CB91C 002C871C  38 A0 00 01 */	li r5, 1
 /* 802CB920 002C8720  EC 02 00 32 */	fmuls f0, f2, f0
 /* 802CB924 002C8724  D0 01 01 24 */	stfs f0, 0x124(r1)
@@ -4624,13 +4624,13 @@ lbl_802CBA10:
 /* 802CBB44 002C8944  2C 1E 00 00 */	cmpwi r30, 0
 /* 802CBB48 002C8948  41 82 01 8C */	beq lbl_802CBCD4
 /* 802CBB4C 002C894C  80 7A 00 08 */	lwz r3, 8(r26)
-/* 802CBB50 002C8950  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
-/* 802CBB54 002C8954  C0 02 E7 10 */	lfs f0, _esc__2_772-_SDA2_BASE_(r2)
+/* 802CBB50 002C8950  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
+/* 802CBB54 002C8954  C0 02 E7 10 */	lfs f0, _esc__2_772@sda21(r2)
 /* 802CBB58 002C8958  7F 43 00 2E */	lwzx r26, r3, r0
 /* 802CBB5C 002C895C  C0 3A 00 20 */	lfs f1, 0x20(r26)
 /* 802CBB60 002C8960  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 802CBB64 002C8964  40 80 00 20 */	bge lbl_802CBB84
-/* 802CBB68 002C8968  C0 02 E7 14 */	lfs f0, _esc__2_773-_SDA2_BASE_(r2)
+/* 802CBB68 002C8968  C0 02 E7 14 */	lfs f0, _esc__2_773@sda21(r2)
 /* 802CBB6C 002C896C  EC 00 00 72 */	fmuls f0, f0, f1
 /* 802CBB70 002C8970  FC 00 00 1E */	fctiwz f0, f0
 /* 802CBB74 002C8974  D8 01 01 88 */	stfd f0, 0x188(r1)
@@ -4810,7 +4810,7 @@ lbl_802CBE00:
 /* 802CBE04 002C8C04  3B 40 00 00 */	li r26, 0
 /* 802CBE08 002C8C08  2C 00 00 00 */	cmpwi r0, 0
 /* 802CBE0C 002C8C0C  40 82 00 18 */	bne lbl_802CBE24
-/* 802CBE10 002C8C10  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CBE10 002C8C10  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CBE14 002C8C14  38 81 00 2C */	addi r4, r1, 0x2c
 /* 802CBE18 002C8C18  38 60 00 04 */	li r3, 4
 /* 802CBE1C 002C8C1C  90 01 00 2C */	stw r0, 0x2c(r1)
@@ -4828,7 +4828,7 @@ lbl_802CBE24:
 /* 802CBE48 002C8C48  4B F5 F6 25 */	bl GXSetChanCtrl
 /* 802CBE4C 002C8C4C  57 20 06 73 */	rlwinm. r0, r25, 0, 0x19, 0x19
 /* 802CBE50 002C8C50  40 82 00 D4 */	bne lbl_802CBF24
-/* 802CBE54 002C8C54  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272-_SDA2_BASE_(r2)
+/* 802CBE54 002C8C54  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272@sda21(r2)
 /* 802CBE58 002C8C58  38 81 00 30 */	addi r4, r1, 0x30
 /* 802CBE5C 002C8C5C  38 60 00 04 */	li r3, 4
 /* 802CBE60 002C8C60  90 01 00 30 */	stw r0, 0x30(r1)
@@ -4868,7 +4868,7 @@ lbl_802CBED4:
 /* 802CBEDC 002C8CDC  40 82 00 20 */	bne lbl_802CBEFC
 /* 802CBEE0 002C8CE0  57 20 06 73 */	rlwinm. r0, r25, 0, 0x19, 0x19
 /* 802CBEE4 002C8CE4  40 82 00 18 */	bne lbl_802CBEFC
-/* 802CBEE8 002C8CE8  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CBEE8 002C8CE8  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CBEEC 002C8CEC  38 81 00 34 */	addi r4, r1, 0x34
 /* 802CBEF0 002C8CF0  38 60 00 04 */	li r3, 4
 /* 802CBEF4 002C8CF4  90 01 00 34 */	stw r0, 0x34(r1)
@@ -4913,7 +4913,7 @@ lbl_802CBF58:
 /* 802CBF80 002C8D80  48 00 08 D8 */	b lbl_802CC858
 lbl_802CBF84:
 /* 802CBF84 002C8D84  80 7B 00 08 */	lwz r3, 8(r27)
-/* 802CBF88 002C8D88  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset-_SDA_BASE_(r13)
+/* 802CBF88 002C8D88  80 0D E8 58 */	lwz r0, MatFXMaterialDataOffset@sda21(r13)
 /* 802CBF8C 002C8D8C  7F E3 00 2E */	lwzx r31, r3, r0
 /* 802CBF90 002C8D90  28 1F 00 00 */	cmplwi r31, 0
 /* 802CBF94 002C8D94  41 82 06 40 */	beq lbl_802CC5D4
@@ -4956,7 +4956,7 @@ lbl_802CC014:
 /* 802CC018 002C8E18  3B 20 00 00 */	li r25, 0
 /* 802CC01C 002C8E1C  2C 00 00 00 */	cmpwi r0, 0
 /* 802CC020 002C8E20  40 82 00 18 */	bne lbl_802CC038
-/* 802CC024 002C8E24  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CC024 002C8E24  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CC028 002C8E28  38 81 00 20 */	addi r4, r1, 0x20
 /* 802CC02C 002C8E2C  38 60 00 04 */	li r3, 4
 /* 802CC030 002C8E30  90 01 00 20 */	stw r0, 0x20(r1)
@@ -4974,7 +4974,7 @@ lbl_802CC038:
 /* 802CC05C 002C8E5C  4B F5 F4 11 */	bl GXSetChanCtrl
 /* 802CC060 002C8E60  57 40 06 73 */	rlwinm. r0, r26, 0, 0x19, 0x19
 /* 802CC064 002C8E64  40 82 00 D4 */	bne lbl_802CC138
-/* 802CC068 002C8E68  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272-_SDA2_BASE_(r2)
+/* 802CC068 002C8E68  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272@sda21(r2)
 /* 802CC06C 002C8E6C  38 81 00 24 */	addi r4, r1, 0x24
 /* 802CC070 002C8E70  38 60 00 04 */	li r3, 4
 /* 802CC074 002C8E74  90 01 00 24 */	stw r0, 0x24(r1)
@@ -5014,7 +5014,7 @@ lbl_802CC0E8:
 /* 802CC0F0 002C8EF0  40 82 00 20 */	bne lbl_802CC110
 /* 802CC0F4 002C8EF4  57 40 06 73 */	rlwinm. r0, r26, 0, 0x19, 0x19
 /* 802CC0F8 002C8EF8  40 82 00 18 */	bne lbl_802CC110
-/* 802CC0FC 002C8EFC  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CC0FC 002C8EFC  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CC100 002C8F00  38 81 00 28 */	addi r4, r1, 0x28
 /* 802CC104 002C8F04  38 60 00 04 */	li r3, 4
 /* 802CC108 002C8F08  90 01 00 28 */	stw r0, 0x28(r1)
@@ -5094,7 +5094,7 @@ lbl_802CC20C:
 /* 802CC214 002C9014  41 82 00 74 */	beq lbl_802CC288
 /* 802CC218 002C9018  C0 06 00 00 */	lfs f0, 0(r6)
 /* 802CC21C 002C901C  38 61 00 38 */	addi r3, r1, 0x38
-/* 802CC220 002C9020  C0 22 E7 08 */	lfs f1, _esc__2_523-_SDA2_BASE_(r2)
+/* 802CC220 002C9020  C0 22 E7 08 */	lfs f1, _esc__2_523@sda21(r2)
 /* 802CC224 002C9024  38 80 00 1E */	li r4, 0x1e
 /* 802CC228 002C9028  D0 01 00 38 */	stfs f0, 0x38(r1)
 /* 802CC22C 002C902C  38 A0 00 01 */	li r5, 1
@@ -5131,7 +5131,7 @@ lbl_802CC288:
 /* 802CC2A4 002C90A4  80 99 00 00 */	lwz r4, 0(r25)
 /* 802CC2A8 002C90A8  28 04 00 00 */	cmplwi r4, 0
 /* 802CC2AC 002C90AC  41 82 00 24 */	beq lbl_802CC2D0
-/* 802CC2B0 002C90B0  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset-_SDA_BASE_(r13)
+/* 802CC2B0 002C90B0  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset@sda21(r13)
 /* 802CC2B4 002C90B4  80 84 00 00 */	lwz r4, 0(r4)
 /* 802CC2B8 002C90B8  38 03 00 14 */	addi r0, r3, 0x14
 /* 802CC2BC 002C90BC  7C 04 00 2E */	lwzx r0, r4, r0
@@ -5194,7 +5194,7 @@ lbl_802CC37C:
 /* 802CC380 002C9180  3B 20 00 00 */	li r25, 0
 /* 802CC384 002C9184  2C 00 00 00 */	cmpwi r0, 0
 /* 802CC388 002C9188  40 82 00 18 */	bne lbl_802CC3A0
-/* 802CC38C 002C918C  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CC38C 002C918C  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CC390 002C9190  38 81 00 14 */	addi r4, r1, 0x14
 /* 802CC394 002C9194  38 60 00 04 */	li r3, 4
 /* 802CC398 002C9198  90 01 00 14 */	stw r0, 0x14(r1)
@@ -5212,7 +5212,7 @@ lbl_802CC3A0:
 /* 802CC3C4 002C91C4  4B F5 F0 A9 */	bl GXSetChanCtrl
 /* 802CC3C8 002C91C8  57 40 06 73 */	rlwinm. r0, r26, 0, 0x19, 0x19
 /* 802CC3CC 002C91CC  40 82 00 D4 */	bne lbl_802CC4A0
-/* 802CC3D0 002C91D0  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272-_SDA2_BASE_(r2)
+/* 802CC3D0 002C91D0  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272@sda21(r2)
 /* 802CC3D4 002C91D4  38 81 00 18 */	addi r4, r1, 0x18
 /* 802CC3D8 002C91D8  38 60 00 04 */	li r3, 4
 /* 802CC3DC 002C91DC  90 01 00 18 */	stw r0, 0x18(r1)
@@ -5252,7 +5252,7 @@ lbl_802CC450:
 /* 802CC458 002C9258  40 82 00 20 */	bne lbl_802CC478
 /* 802CC45C 002C925C  57 40 06 73 */	rlwinm. r0, r26, 0, 0x19, 0x19
 /* 802CC460 002C9260  40 82 00 18 */	bne lbl_802CC478
-/* 802CC464 002C9264  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CC464 002C9264  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CC468 002C9268  38 81 00 1C */	addi r4, r1, 0x1c
 /* 802CC46C 002C926C  38 60 00 04 */	li r3, 4
 /* 802CC470 002C9270  90 01 00 1C */	stw r0, 0x1c(r1)
@@ -5337,7 +5337,7 @@ lbl_802CC574:
 /* 802CC590 002C9390  80 99 00 00 */	lwz r4, 0(r25)
 /* 802CC594 002C9394  28 04 00 00 */	cmplwi r4, 0
 /* 802CC598 002C9398  41 82 00 24 */	beq lbl_802CC5BC
-/* 802CC59C 002C939C  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset-_SDA_BASE_(r13)
+/* 802CC59C 002C939C  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset@sda21(r13)
 /* 802CC5A0 002C93A0  80 84 00 00 */	lwz r4, 0(r4)
 /* 802CC5A4 002C93A4  38 03 00 14 */	addi r0, r3, 0x14
 /* 802CC5A8 002C93A8  7C 04 00 2E */	lwzx r0, r4, r0
@@ -5371,7 +5371,7 @@ lbl_802CC604:
 /* 802CC608 002C9408  3B 20 00 00 */	li r25, 0
 /* 802CC60C 002C940C  2C 00 00 00 */	cmpwi r0, 0
 /* 802CC610 002C9410  40 82 00 18 */	bne lbl_802CC628
-/* 802CC614 002C9414  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CC614 002C9414  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CC618 002C9418  38 81 00 08 */	addi r4, r1, 8
 /* 802CC61C 002C941C  38 60 00 04 */	li r3, 4
 /* 802CC620 002C9420  90 01 00 08 */	stw r0, 8(r1)
@@ -5389,7 +5389,7 @@ lbl_802CC628:
 /* 802CC64C 002C944C  4B F5 EE 21 */	bl GXSetChanCtrl
 /* 802CC650 002C9450  57 40 06 73 */	rlwinm. r0, r26, 0, 0x19, 0x19
 /* 802CC654 002C9454  40 82 00 D4 */	bne lbl_802CC728
-/* 802CC658 002C9458  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272-_SDA2_BASE_(r2)
+/* 802CC658 002C9458  80 02 E6 E8 */	lwz r0, opaqueWhite_esc__7_272@sda21(r2)
 /* 802CC65C 002C945C  38 81 00 0C */	addi r4, r1, 0xc
 /* 802CC660 002C9460  38 60 00 04 */	li r3, 4
 /* 802CC664 002C9464  90 01 00 0C */	stw r0, 0xc(r1)
@@ -5429,7 +5429,7 @@ lbl_802CC6D8:
 /* 802CC6E0 002C94E0  40 82 00 20 */	bne lbl_802CC700
 /* 802CC6E4 002C94E4  57 40 06 73 */	rlwinm. r0, r26, 0, 0x19, 0x19
 /* 802CC6E8 002C94E8  40 82 00 18 */	bne lbl_802CC700
-/* 802CC6EC 002C94EC  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273-_SDA2_BASE_(r2)
+/* 802CC6EC 002C94EC  80 02 E6 EC */	lwz r0, opaqueBlack_esc__7_273@sda21(r2)
 /* 802CC6F0 002C94F0  38 81 00 10 */	addi r4, r1, 0x10
 /* 802CC6F4 002C94F4  38 60 00 04 */	li r3, 4
 /* 802CC6F8 002C94F8  90 01 00 10 */	stw r0, 0x10(r1)
@@ -5514,7 +5514,7 @@ lbl_802CC7FC:
 /* 802CC818 002C9618  80 99 00 00 */	lwz r4, 0(r25)
 /* 802CC81C 002C961C  28 04 00 00 */	cmplwi r4, 0
 /* 802CC820 002C9620  41 82 00 24 */	beq lbl_802CC844
-/* 802CC824 002C9624  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset-_SDA_BASE_(r13)
+/* 802CC824 002C9624  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset@sda21(r13)
 /* 802CC828 002C9628  80 84 00 00 */	lwz r4, 0(r4)
 /* 802CC82C 002C962C  38 03 00 14 */	addi r0, r3, 0x14
 /* 802CC830 002C9630  7C 04 00 2E */	lwzx r0, r4, r0
@@ -5551,14 +5551,14 @@ _rpGCMatFXAtomicInstanceCallBack:
 /* 802CC894 002C9694  2C 03 00 00 */	cmpwi r3, 0
 /* 802CC898 002C9698  41 82 00 80 */	beq lbl_802CC918
 /* 802CC89C 002C969C  83 DB 00 18 */	lwz r30, 0x18(r27)
-/* 802CC8A0 002C96A0  80 0D E5 C8 */	lwz r0, _rpDlGeomVtxFmtOffset-_SDA_BASE_(r13)
+/* 802CC8A0 002C96A0  80 0D E5 C8 */	lwz r0, _rpDlGeomVtxFmtOffset@sda21(r13)
 /* 802CC8A4 002C96A4  7F BE 00 2E */	lwzx r29, r30, r0
 /* 802CC8A8 002C96A8  28 1D 00 00 */	cmplwi r29, 0
 /* 802CC8AC 002C96AC  40 82 00 14 */	bne lbl_802CC8C0
-/* 802CC8B0 002C96B0  80 8D E8 68 */	lwz r4, _rpGCMatFXVtxFmtNBT-_SDA_BASE_(r13)
+/* 802CC8B0 002C96B0  80 8D E8 68 */	lwz r4, _rpGCMatFXVtxFmtNBT@sda21(r13)
 /* 802CC8B4 002C96B4  7F C3 F3 78 */	mr r3, r30
 /* 802CC8B8 002C96B8  4B FA C1 01 */	bl RpGameCubeGeometrySetVtxFmt
-/* 802CC8BC 002C96BC  83 AD E8 68 */	lwz r29, _rpGCMatFXVtxFmtNBT-_SDA_BASE_(r13)
+/* 802CC8BC 002C96BC  83 AD E8 68 */	lwz r29, _rpGCMatFXVtxFmtNBT@sda21(r13)
 lbl_802CC8C0:
 /* 802CC8C0 002C96C0  4B FA BC 1D */	bl RxGameCubePreInstanceGetOptimize
 /* 802CC8C4 002C96C4  7C 7F 1B 78 */	mr r31, r3
@@ -5605,7 +5605,7 @@ _rpGCMatFXAtomicReinstanceCallBack:
 /* 802CC948 002C9748  39 61 00 20 */	addi r11, r1, 0x20
 /* 802CC94C 002C974C  4B F2 E5 D1 */	bl func_801FAF1C
 /* 802CC950 002C9750  7C 7B 1B 78 */	mr r27, r3
-/* 802CC954 002C9754  80 0D E5 C8 */	lwz r0, _rpDlGeomVtxFmtOffset-_SDA_BASE_(r13)
+/* 802CC954 002C9754  80 0D E5 C8 */	lwz r0, _rpDlGeomVtxFmtOffset@sda21(r13)
 /* 802CC958 002C9758  83 E3 00 18 */	lwz r31, 0x18(r3)
 /* 802CC95C 002C975C  7C 9C 23 78 */	mr r28, r4
 /* 802CC960 002C9760  3B A0 00 00 */	li r29, 0
@@ -5678,8 +5678,8 @@ _rpGCMatFXSectorInstanceCallBack:
 /* 802CCA44 002C9844  38 60 00 00 */	li r3, 0
 /* 802CCA48 002C9848  48 00 00 38 */	b lbl_802CCA80
 lbl_802CCA4C:
-/* 802CCA4C 002C984C  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
-/* 802CCA50 002C9850  80 0D E5 CC */	lwz r0, _rpDlWorldVtxFmtOffset-_SDA_BASE_(r13)
+/* 802CCA4C 002C984C  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
+/* 802CCA50 002C9850  80 0D E5 CC */	lwz r0, _rpDlWorldVtxFmtOffset@sda21(r13)
 /* 802CCA54 002C9854  80 63 00 04 */	lwz r3, 4(r3)
 /* 802CCA58 002C9858  7C 83 00 2E */	lwzx r4, r3, r0
 /* 802CCA5C 002C985C  28 04 00 00 */	cmplwi r4, 0
@@ -5711,7 +5711,7 @@ _rpGCMatFXRenderCallback:
 /* 802CCAB0 002C98B0  4B F2 E4 69 */	bl func_801FAF18
 /* 802CCAB4 002C98B4  7C 9E 23 78 */	mr r30, r4
 /* 802CCAB8 002C98B8  80 84 00 00 */	lwz r4, 0(r4)
-/* 802CCABC 002C98BC  A0 0D B6 50 */	lhz r0, _RwDlTokenCurrent-_SDA_BASE_(r13)
+/* 802CCABC 002C98BC  A0 0D B6 50 */	lhz r0, _RwDlTokenCurrent@sda21(r13)
 /* 802CCAC0 002C98C0  7C 7D 1B 78 */	mr r29, r3
 /* 802CCAC4 002C98C4  38 84 00 18 */	addi r4, r4, 0x18
 /* 802CCAC8 002C98C8  80 64 00 08 */	lwz r3, 8(r4)
@@ -5727,12 +5727,12 @@ _rpGCMatFXRenderCallback:
 /* 802CCAF0 002C98F0  4B FC 7F 95 */	bl RwFrameGetLTM
 /* 802CCAF4 002C98F4  80 9D 00 18 */	lwz r4, 0x18(r29)
 /* 802CCAF8 002C98F8  7C 7A 1B 78 */	mr r26, r3
-/* 802CCAFC 002C98FC  80 0D E5 C8 */	lwz r0, _rpDlGeomVtxFmtOffset-_SDA_BASE_(r13)
+/* 802CCAFC 002C98FC  80 0D E5 C8 */	lwz r0, _rpDlGeomVtxFmtOffset@sda21(r13)
 /* 802CCB00 002C9900  7F 64 00 2E */	lwzx r27, r4, r0
 /* 802CCB04 002C9904  48 00 00 FC */	b lbl_802CCC00
 lbl_802CCB08:
-/* 802CCB08 002C9908  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
-/* 802CCB0C 002C990C  80 0D E5 CC */	lwz r0, _rpDlWorldVtxFmtOffset-_SDA_BASE_(r13)
+/* 802CCB08 002C9908  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
+/* 802CCB0C 002C990C  80 0D E5 CC */	lwz r0, _rpDlWorldVtxFmtOffset@sda21(r13)
 /* 802CCB10 002C9910  80 63 00 04 */	lwz r3, 4(r3)
 /* 802CCB14 002C9914  7F 63 00 2E */	lwzx r27, r3, r0
 /* 802CCB18 002C9918  28 1B 00 00 */	cmplwi r27, 0
@@ -5742,13 +5742,13 @@ lbl_802CCB08:
 /* 802CCB28 002C9928  41 82 00 D4 */	beq lbl_802CCBFC
 /* 802CCB2C 002C992C  80 61 00 14 */	lwz r3, 0x14(r1)
 /* 802CCB30 002C9930  3C 00 43 30 */	lis r0, 0x4330
-/* 802CCB34 002C9934  C0 02 E7 08 */	lfs f0, _esc__2_523-_SDA2_BASE_(r2)
+/* 802CCB34 002C9934  C0 02 E7 08 */	lfs f0, _esc__2_523@sda21(r2)
 /* 802CCB38 002C9938  38 80 00 01 */	li r4, 1
-/* 802CCB3C 002C993C  C0 62 E7 10 */	lfs f3, _esc__2_772-_SDA2_BASE_(r2)
+/* 802CCB3C 002C993C  C0 62 E7 10 */	lfs f3, _esc__2_772@sda21(r2)
 /* 802CCB40 002C9940  64 63 00 02 */	oris r3, r3, 2
 /* 802CCB44 002C9944  60 63 00 03 */	ori r3, r3, 3
 /* 802CCB48 002C9948  D0 01 00 18 */	stfs f0, 0x18(r1)
-/* 802CCB4C 002C994C  C8 42 E7 18 */	lfd f2, _esc__2_1097_0-_SDA2_BASE_(r2)
+/* 802CCB4C 002C994C  C8 42 E7 18 */	lfd f2, _esc__2_1097_0@sda21(r2)
 /* 802CCB50 002C9950  D0 61 00 30 */	stfs f3, 0x30(r1)
 /* 802CCB54 002C9954  D0 61 00 1C */	stfs f3, 0x1c(r1)
 /* 802CCB58 002C9958  D0 61 00 08 */	stfs f3, 8(r1)
@@ -5849,7 +5849,7 @@ _rpMatFXPipelinesCreate:
 /* 802CCCB0 002C9AB0  7C 08 02 A6 */	mflr r0
 /* 802CCCB4 002C9AB4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802CCCB8 002C9AB8  4B FA BC 19 */	bl RpGameCubeVtxFmtCreate
-/* 802CCCBC 002C9ABC  90 6D E8 68 */	stw r3, _rpGCMatFXVtxFmtNBT-_SDA_BASE_(r13)
+/* 802CCCBC 002C9ABC  90 6D E8 68 */	stw r3, _rpGCMatFXVtxFmtNBT@sda21(r13)
 /* 802CCCC0 002C9AC0  38 80 00 04 */	li r4, 4
 /* 802CCCC4 002C9AC4  38 A0 00 01 */	li r5, 1
 /* 802CCCC8 002C9AC8  4B FA BB 75 */	bl RpGameCubeVtxFmtSetNormal
@@ -5867,7 +5867,7 @@ _rpMatFXPipelinesCreate:
 /* 802CCCF8 002C9AF8  3C A0 80 2D */	lis r5, _rpGCMatFXSectorInstanceCallBack@ha
 /* 802CCCFC 002C9AFC  3C C0 80 28 */	lis r6, _rxGCSectorDefaultLightingCallback@ha
 /* 802CCD00 002C9B00  3C 80 80 2D */	lis r4, _rpGCMatFXRenderCallback@ha
-/* 802CCD04 002C9B04  90 6D E8 6C */	stw r3, _RpMatFXAtomicPipe-_SDA_BASE_(r13)
+/* 802CCD04 002C9B04  90 6D E8 6C */	stw r3, _RpMatFXAtomicPipe@sda21(r13)
 /* 802CCD08 002C9B08  38 E6 96 A8 */	addi r7, r6, _rxGCSectorDefaultLightingCallback@l
 /* 802CCD0C 002C9B0C  38 A5 CA 1C */	addi r5, r5, _rpGCMatFXSectorInstanceCallBack@l
 /* 802CCD10 002C9B10  39 04 CA 98 */	addi r8, r4, _rpGCMatFXRenderCallback@l
@@ -5875,7 +5875,7 @@ _rpMatFXPipelinesCreate:
 /* 802CCD18 002C9B18  38 80 00 02 */	li r4, 2
 /* 802CCD1C 002C9B1C  38 C0 00 00 */	li r6, 0
 /* 802CCD20 002C9B20  4B FA C8 BD */	bl _rpDlSectorPipelineCreate
-/* 802CCD24 002C9B24  90 6D E8 70 */	stw r3, _RpMatFXWorldSectorPipe-_SDA_BASE_(r13)
+/* 802CCD24 002C9B24  90 6D E8 70 */	stw r3, _RpMatFXWorldSectorPipe@sda21(r13)
 /* 802CCD28 002C9B28  38 60 00 01 */	li r3, 1
 /* 802CCD2C 002C9B2C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CCD30 002C9B30  7C 08 03 A6 */	mtlr r0
@@ -5887,26 +5887,26 @@ _rpMatFXPipelinesDestroy:
 /* 802CCD3C 002C9B3C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802CCD40 002C9B40  7C 08 02 A6 */	mflr r0
 /* 802CCD44 002C9B44  90 01 00 14 */	stw r0, 0x14(r1)
-/* 802CCD48 002C9B48  80 6D E8 68 */	lwz r3, _rpGCMatFXVtxFmtNBT-_SDA_BASE_(r13)
+/* 802CCD48 002C9B48  80 6D E8 68 */	lwz r3, _rpGCMatFXVtxFmtNBT@sda21(r13)
 /* 802CCD4C 002C9B4C  28 03 00 00 */	cmplwi r3, 0
 /* 802CCD50 002C9B50  41 82 00 10 */	beq lbl_802CCD60
 /* 802CCD54 002C9B54  4B FA BC 21 */	bl RpGameCubeVtxFmtDestroy
 /* 802CCD58 002C9B58  38 00 00 00 */	li r0, 0
-/* 802CCD5C 002C9B5C  90 0D E8 68 */	stw r0, _rpGCMatFXVtxFmtNBT-_SDA_BASE_(r13)
+/* 802CCD5C 002C9B5C  90 0D E8 68 */	stw r0, _rpGCMatFXVtxFmtNBT@sda21(r13)
 lbl_802CCD60:
-/* 802CCD60 002C9B60  80 6D E8 6C */	lwz r3, _RpMatFXAtomicPipe-_SDA_BASE_(r13)
+/* 802CCD60 002C9B60  80 6D E8 6C */	lwz r3, _RpMatFXAtomicPipe@sda21(r13)
 /* 802CCD64 002C9B64  28 03 00 00 */	cmplwi r3, 0
 /* 802CCD68 002C9B68  41 82 00 10 */	beq lbl_802CCD78
 /* 802CCD6C 002C9B6C  4B FD C2 E9 */	bl _rxPipelineDestroy
 /* 802CCD70 002C9B70  38 00 00 00 */	li r0, 0
-/* 802CCD74 002C9B74  90 0D E8 6C */	stw r0, _RpMatFXAtomicPipe-_SDA_BASE_(r13)
+/* 802CCD74 002C9B74  90 0D E8 6C */	stw r0, _RpMatFXAtomicPipe@sda21(r13)
 lbl_802CCD78:
-/* 802CCD78 002C9B78  80 6D E8 70 */	lwz r3, _RpMatFXWorldSectorPipe-_SDA_BASE_(r13)
+/* 802CCD78 002C9B78  80 6D E8 70 */	lwz r3, _RpMatFXWorldSectorPipe@sda21(r13)
 /* 802CCD7C 002C9B7C  28 03 00 00 */	cmplwi r3, 0
 /* 802CCD80 002C9B80  41 82 00 10 */	beq lbl_802CCD90
 /* 802CCD84 002C9B84  4B FD C2 D1 */	bl _rxPipelineDestroy
 /* 802CCD88 002C9B88  38 00 00 00 */	li r0, 0
-/* 802CCD8C 002C9B8C  90 0D E8 70 */	stw r0, _RpMatFXWorldSectorPipe-_SDA_BASE_(r13)
+/* 802CCD8C 002C9B8C  90 0D E8 70 */	stw r0, _RpMatFXWorldSectorPipe@sda21(r13)
 lbl_802CCD90:
 /* 802CCD90 002C9B90  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 802CCD94 002C9B94  38 60 00 01 */	li r3, 1
@@ -5916,13 +5916,13 @@ lbl_802CCD90:
 
 .global _rpMatFXPipelineAtomicSetup
 _rpMatFXPipelineAtomicSetup:
-/* 802CCDA4 002C9BA4  80 0D E8 6C */	lwz r0, _RpMatFXAtomicPipe-_SDA_BASE_(r13)
+/* 802CCDA4 002C9BA4  80 0D E8 6C */	lwz r0, _RpMatFXAtomicPipe@sda21(r13)
 /* 802CCDA8 002C9BA8  90 03 00 6C */	stw r0, 0x6c(r3)
 /* 802CCDAC 002C9BAC  4E 80 00 20 */	blr 
 
 .global _rpMatFXPipelineWorldSectorSetup
 _rpMatFXPipelineWorldSectorSetup:
-/* 802CCDB0 002C9BB0  80 0D E8 70 */	lwz r0, _RpMatFXWorldSectorPipe-_SDA_BASE_(r13)
+/* 802CCDB0 002C9BB0  80 0D E8 70 */	lwz r0, _RpMatFXWorldSectorPipe@sda21(r13)
 /* 802CCDB4 002C9BB4  90 03 00 7C */	stw r0, 0x7c(r3)
 /* 802CCDB8 002C9BB8  4E 80 00 20 */	blr 
 
@@ -6337,7 +6337,7 @@ lbl_802CD370:
 /* 802CD384 002CA184  4B FC 09 41 */	bl RwStreamRead
 /* 802CD388 002CA188  28 03 00 0C */	cmplwi r3, 0xc
 /* 802CD38C 002CA18C  41 82 00 20 */	beq lbl_802CD3AC
-/* 802CD390 002CA190  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CD390 002CA190  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802CD394 002CA194  7F 63 DB 78 */	mr r3, r27
 /* 802CD398 002CA198  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802CD39C 002CA19C  7D 89 03 A6 */	mtctr r12
@@ -6381,7 +6381,7 @@ lbl_802CD414:
 /* 802CD428 002CA228  4B FC 08 9D */	bl RwStreamRead
 /* 802CD42C 002CA22C  28 03 00 1C */	cmplwi r3, 0x1c
 /* 802CD430 002CA230  41 82 00 20 */	beq lbl_802CD450
-/* 802CD434 002CA234  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CD434 002CA234  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802CD438 002CA238  7F 63 DB 78 */	mr r3, r27
 /* 802CD43C 002CA23C  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802CD440 002CA240  7D 89 03 A6 */	mtctr r12
@@ -6477,7 +6477,7 @@ lbl_802CD568:
 /* 802CD598 002CA398  28 03 00 00 */	cmplwi r3, 0
 /* 802CD59C 002CA39C  40 82 00 20 */	bne lbl_802CD5BC
 lbl_802CD5A0:
-/* 802CD5A0 002CA3A0  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CD5A0 002CA3A0  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802CD5A4 002CA3A4  7F 63 DB 78 */	mr r3, r27
 /* 802CD5A8 002CA3A8  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802CD5AC 002CA3AC  7D 89 03 A6 */	mtctr r12
@@ -6516,7 +6516,7 @@ lbl_802CD5F4:
 /* 802CD624 002CA424  28 03 00 00 */	cmplwi r3, 0
 /* 802CD628 002CA428  40 82 00 20 */	bne lbl_802CD648
 lbl_802CD62C:
-/* 802CD62C 002CA42C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CD62C 002CA42C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802CD630 002CA430  7F 63 DB 78 */	mr r3, r27
 /* 802CD634 002CA434  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802CD638 002CA438  7D 89 03 A6 */	mtctr r12
@@ -6551,7 +6551,7 @@ lbl_802CD68C:
 /* 802CD6A0 002CA4A0  4B FC 06 25 */	bl RwStreamRead
 /* 802CD6A4 002CA4A4  28 03 00 08 */	cmplwi r3, 8
 /* 802CD6A8 002CA4A8  41 82 00 20 */	beq lbl_802CD6C8
-/* 802CD6AC 002CA4AC  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CD6AC 002CA4AC  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802CD6B0 002CA4B0  7F 63 DB 78 */	mr r3, r27
 /* 802CD6B4 002CA4B4  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802CD6B8 002CA4B8  7D 89 03 A6 */	mtctr r12
@@ -6614,7 +6614,7 @@ RpGameCubeMTEffectCreate:
 /* 802CD778 002CA578  7C 77 1B 78 */	mr r23, r3
 /* 802CD77C 002CA57C  1F D8 00 18 */	mulli r30, r24, 0x18
 /* 802CD780 002CA580  7C B9 2B 78 */	mr r25, r5
-/* 802CD784 002CA584  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CD784 002CA584  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 802CD788 002CA588  7C DA 33 78 */	mr r26, r6
 /* 802CD78C 002CA58C  7C FB 3B 78 */	mr r27, r7
 /* 802CD790 002CA590  38 BE 00 8F */	addi r5, r30, 0x8f
@@ -6778,8 +6778,8 @@ GameCubeMTOpen:
 /* 802CD9BC 002CA7BC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802CD9C0 002CA7C0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802CD9C4 002CA7C4  7C 7F 1B 78 */	mr r31, r3
-/* 802CD9C8 002CA7C8  80 CD E6 54 */	lwz r6, RwEngineInstance-_SDA_BASE_(r13)
-/* 802CD9CC 002CA7CC  80 0D E8 78 */	lwz r0, _rpGameCubeMTEngineOffset-_SDA_BASE_(r13)
+/* 802CD9C8 002CA7C8  80 CD E6 54 */	lwz r6, RwEngineInstance@sda21(r13)
+/* 802CD9CC 002CA7CC  80 0D E8 78 */	lwz r0, _rpGameCubeMTEngineOffset@sda21(r13)
 /* 802CD9D0 002CA7D0  7C 66 02 14 */	add r3, r6, r0
 /* 802CD9D4 002CA7D4  4B D3 57 2D */	bl memset
 /* 802CD9D8 002CA7D8  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -6804,9 +6804,9 @@ GetTexFrameMatrix:
 /* 802CDA0C 002CA80C  93 C1 00 48 */	stw r30, 0x48(r1)
 /* 802CDA10 002CA810  7C 9E 23 78 */	mr r30, r4
 /* 802CDA14 002CA814  41 80 00 E0 */	blt lbl_802CDAF4
-/* 802CDA18 002CA818  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CDA18 002CA818  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802CDA1C 002CA81C  38 A3 FF F0 */	addi r5, r3, -16
-/* 802CDA20 002CA820  80 0D E8 78 */	lwz r0, _rpGameCubeMTEngineOffset-_SDA_BASE_(r13)
+/* 802CDA20 002CA820  80 0D E8 78 */	lwz r0, _rpGameCubeMTEngineOffset@sda21(r13)
 /* 802CDA24 002CA824  7C 64 02 14 */	add r3, r4, r0
 /* 802CDA28 002CA828  80 03 00 00 */	lwz r0, 0(r3)
 /* 802CDA2C 002CA82C  80 63 00 04 */	lwz r3, 4(r3)
@@ -6843,9 +6843,9 @@ lbl_802CDA94:
 /* 802CDA9C 002CA89C  7F C3 F3 78 */	mr r3, r30
 /* 802CDAA0 002CA8A0  48 00 00 B0 */	b lbl_802CDB50
 lbl_802CDAA4:
-/* 802CDAA4 002CA8A4  C0 22 E7 20 */	lfs f1, _esc__2_325-_SDA2_BASE_(r2)
+/* 802CDAA4 002CA8A4  C0 22 E7 20 */	lfs f1, _esc__2_325@sda21(r2)
 /* 802CDAA8 002CA8A8  7F E3 FB 78 */	mr r3, r31
-/* 802CDAAC 002CA8AC  C0 02 E7 24 */	lfs f0, _esc__2_326-_SDA2_BASE_(r2)
+/* 802CDAAC 002CA8AC  C0 02 E7 24 */	lfs f0, _esc__2_326@sda21(r2)
 /* 802CDAB0 002CA8B0  D0 3F 00 28 */	stfs f1, 0x28(r31)
 /* 802CDAB4 002CA8B4  D0 3F 00 14 */	stfs f1, 0x14(r31)
 /* 802CDAB8 002CA8B8  D0 3F 00 00 */	stfs f1, 0(r31)
@@ -6983,11 +6983,11 @@ lbl_802CDC98:
 /* 802CDC98 002CAA98  3C 60 80 3C */	lis r3, _RwDlInvCamLTM@ha
 /* 802CDC9C 002CAA9C  38 C3 7E C4 */	addi r6, r3, _RwDlInvCamLTM@l
 lbl_802CDCA0:
-/* 802CDCA0 002CAAA0  C0 42 E7 28 */	lfs f2, _esc__2_493-_SDA2_BASE_(r2)
+/* 802CDCA0 002CAAA0  C0 42 E7 28 */	lfs f2, _esc__2_493@sda21(r2)
 /* 802CDCA4 002CAAA4  38 61 01 60 */	addi r3, r1, 0x160
 /* 802CDCA8 002CAAA8  C0 06 00 00 */	lfs f0, 0(r6)
 /* 802CDCAC 002CAAAC  38 80 00 1E */	li r4, 0x1e
-/* 802CDCB0 002CAAB0  C0 22 E7 2C */	lfs f1, _esc__2_494-_SDA2_BASE_(r2)
+/* 802CDCB0 002CAAB0  C0 22 E7 2C */	lfs f1, _esc__2_494@sda21(r2)
 /* 802CDCB4 002CAAB4  38 A0 00 01 */	li r5, 1
 /* 802CDCB8 002CAAB8  EC 02 00 32 */	fmuls f0, f2, f0
 /* 802CDCBC 002CAABC  D0 01 01 60 */	stfs f0, 0x160(r1)
@@ -7051,7 +7051,7 @@ lbl_802CDD14:
 /* 802CDD9C 002CAB9C  D0 01 01 1C */	stfs f0, 0x11c(r1)
 /* 802CDDA0 002CABA0  48 00 00 14 */	b lbl_802CDDB4
 lbl_802CDDA4:
-/* 802CDDA4 002CABA4  C0 02 E7 24 */	lfs f0, _esc__2_326-_SDA2_BASE_(r2)
+/* 802CDDA4 002CABA4  C0 02 E7 24 */	lfs f0, _esc__2_326@sda21(r2)
 /* 802CDDA8 002CABA8  D0 01 00 FC */	stfs f0, 0xfc(r1)
 /* 802CDDAC 002CABAC  D0 01 01 0C */	stfs f0, 0x10c(r1)
 /* 802CDDB0 002CABB0  D0 01 01 1C */	stfs f0, 0x11c(r1)
@@ -7377,13 +7377,13 @@ lbl_802CE234:
 /* 802CE234 002CB034  80 1F 00 00 */	lwz r0, 0(r31)
 /* 802CE238 002CB038  54 00 07 7B */	rlwinm. r0, r0, 0, 0x1d, 0x1d
 /* 802CE23C 002CB03C  41 82 00 34 */	beq lbl_802CE270
-/* 802CE240 002CB040  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CE240 002CB040  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CE244 002CB044  38 60 00 0A */	li r3, 0xa
 /* 802CE248 002CB048  80 9F 00 54 */	lwz r4, 0x54(r31)
 /* 802CE24C 002CB04C  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 802CE250 002CB050  7D 89 03 A6 */	mtctr r12
 /* 802CE254 002CB054  4E 80 04 21 */	bctrl 
-/* 802CE258 002CB058  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CE258 002CB058  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CE25C 002CB05C  38 60 00 0B */	li r3, 0xb
 /* 802CE260 002CB060  80 9F 00 58 */	lwz r4, 0x58(r31)
 /* 802CE264 002CB064  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -7413,7 +7413,7 @@ _rpGameCubeMTMeshRenderCallBack:
 /* 802CE2B4 002CB0B4  7F 83 E3 78 */	mr r3, r28
 /* 802CE2B8 002CB0B8  38 80 00 06 */	li r4, 6
 /* 802CE2BC 002CB0BC  48 00 28 5D */	bl RpMaterialGetMultiTexture
-/* 802CE2C0 002CB0C0  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CE2C0 002CB0C0  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CE2C4 002CB0C4  7C 79 1B 78 */	mr r25, r3
 /* 802CE2C8 002CB0C8  38 81 00 0C */	addi r4, r1, 0xc
 /* 802CE2CC 002CB0CC  38 60 00 0A */	li r3, 0xa
@@ -7421,7 +7421,7 @@ _rpGameCubeMTMeshRenderCallBack:
 /* 802CE2D4 002CB0D4  83 F9 00 34 */	lwz r31, 0x34(r25)
 /* 802CE2D8 002CB0D8  7D 89 03 A6 */	mtctr r12
 /* 802CE2DC 002CB0DC  4E 80 04 21 */	bctrl 
-/* 802CE2E0 002CB0E0  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CE2E0 002CB0E0  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CE2E4 002CB0E4  38 81 00 08 */	addi r4, r1, 8
 /* 802CE2E8 002CB0E8  38 60 00 0B */	li r3, 0xb
 /* 802CE2EC 002CB0EC  81 85 00 24 */	lwz r12, 0x24(r5)
@@ -7534,13 +7534,13 @@ lbl_802CE448:
 /* 802CE464 002CB264  7D 89 03 A6 */	mtctr r12
 /* 802CE468 002CB268  4E 80 04 21 */	bctrl 
 lbl_802CE46C:
-/* 802CE46C 002CB26C  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CE46C 002CB26C  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CE470 002CB270  38 60 00 0A */	li r3, 0xa
 /* 802CE474 002CB274  80 81 00 0C */	lwz r4, 0xc(r1)
 /* 802CE478 002CB278  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 802CE47C 002CB27C  7D 89 03 A6 */	mtctr r12
 /* 802CE480 002CB280  4E 80 04 21 */	bctrl 
-/* 802CE484 002CB284  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CE484 002CB284  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802CE488 002CB288  38 60 00 0B */	li r3, 0xb
 /* 802CE48C 002CB28C  80 81 00 08 */	lwz r4, 8(r1)
 /* 802CE490 002CB290  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -7565,7 +7565,7 @@ _rpGameCubeMTPipePluginAttach:
 /* 802CE4D0 002CB2D0  38 60 00 08 */	li r3, 8
 /* 802CE4D4 002CB2D4  38 80 01 29 */	li r4, 0x129
 /* 802CE4D8 002CB2D8  4B FC 52 D9 */	bl RwEngineRegisterPlugin
-/* 802CE4DC 002CB2DC  90 6D E8 78 */	stw r3, _rpGameCubeMTEngineOffset-_SDA_BASE_(r13)
+/* 802CE4DC 002CB2DC  90 6D E8 78 */	stw r3, _rpGameCubeMTEngineOffset@sda21(r13)
 /* 802CE4E0 002CB2E0  54 60 0F FE */	srwi r0, r3, 0x1f
 /* 802CE4E4 002CB2E4  68 03 00 01 */	xori r3, r0, 1
 /* 802CE4E8 002CB2E8  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -7602,12 +7602,12 @@ lbl_802CE530:
 
 .global RpGameCubeMTSetMiscFrameArray
 RpGameCubeMTSetMiscFrameArray:
-/* 802CE544 002CB344  80 AD E8 78 */	lwz r5, _rpGameCubeMTEngineOffset-_SDA_BASE_(r13)
-/* 802CE548 002CB348  80 CD E6 54 */	lwz r6, RwEngineInstance-_SDA_BASE_(r13)
+/* 802CE544 002CB344  80 AD E8 78 */	lwz r5, _rpGameCubeMTEngineOffset@sda21(r13)
+/* 802CE548 002CB348  80 CD E6 54 */	lwz r6, RwEngineInstance@sda21(r13)
 /* 802CE54C 002CB34C  38 05 00 04 */	addi r0, r5, 4
 /* 802CE550 002CB350  7C 66 01 2E */	stwx r3, r6, r0
-/* 802CE554 002CB354  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
-/* 802CE558 002CB358  80 0D E8 78 */	lwz r0, _rpGameCubeMTEngineOffset-_SDA_BASE_(r13)
+/* 802CE554 002CB354  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
+/* 802CE558 002CB358  80 0D E8 78 */	lwz r0, _rpGameCubeMTEngineOffset@sda21(r13)
 /* 802CE55C 002CB35C  7C 83 01 2E */	stwx r4, r3, r0
 /* 802CE560 002CB360  4E 80 00 20 */	blr 
 
@@ -7881,9 +7881,9 @@ lbl_802CE908:
 lbl_802CE914:
 /* 802CE914 002CB714  28 05 00 00 */	cmplwi r5, 0
 /* 802CE918 002CB718  41 82 00 98 */	beq lbl_802CE9B0
-/* 802CE91C 002CB71C  80 62 E7 38 */	lwz r3, _esc__2_275_0-_SDA2_BASE_(r2)
+/* 802CE91C 002CB71C  80 62 E7 38 */	lwz r3, _esc__2_275_0@sda21(r2)
 /* 802CE920 002CB720  38 C1 00 18 */	addi r6, r1, 0x18
-/* 802CE924 002CB724  88 02 E7 3C */	lbz r0, lbl_803D845C-_SDA2_BASE_(r2)
+/* 802CE924 002CB724  88 02 E7 3C */	lbz r0, lbl_803D845C@sda21(r2)
 /* 802CE928 002CB728  38 E1 00 10 */	addi r7, r1, 0x10
 /* 802CE92C 002CB72C  90 61 00 18 */	stw r3, 0x18(r1)
 /* 802CE930 002CB730  38 81 00 20 */	addi r4, r1, 0x20
@@ -7891,13 +7891,13 @@ lbl_802CE914:
 /* 802CE938 002CB738  98 01 00 1C */	stb r0, 0x1c(r1)
 /* 802CE93C 002CB73C  89 05 00 0C */	lbz r8, 0xc(r5)
 /* 802CE940 002CB740  7C 06 A0 AE */	lbzx r0, r6, r20
-/* 802CE944 002CB744  81 82 E7 30 */	lwz r12, _esc__2_274_0-_SDA2_BASE_(r2)
+/* 802CE944 002CB744  81 82 E7 30 */	lwz r12, _esc__2_274_0@sda21(r2)
 /* 802CE948 002CB748  98 01 00 44 */	stb r0, 0x44(r1)
-/* 802CE94C 002CB74C  89 62 E7 34 */	lbz r11, lbl_803D8454-_SDA2_BASE_(r2)
+/* 802CE94C 002CB74C  89 62 E7 34 */	lbz r11, lbl_803D8454@sda21(r2)
 /* 802CE950 002CB750  8A A5 00 01 */	lbz r21, 1(r5)
-/* 802CE954 002CB754  81 42 E7 40 */	lwz r10, _esc__2_276_1-_SDA2_BASE_(r2)
+/* 802CE954 002CB754  81 42 E7 40 */	lwz r10, _esc__2_276_1@sda21(r2)
 /* 802CE958 002CB758  7C 06 A8 AE */	lbzx r0, r6, r21
-/* 802CE95C 002CB75C  89 22 E7 44 */	lbz r9, lbl_803D8464-_SDA2_BASE_(r2)
+/* 802CE95C 002CB75C  89 22 E7 44 */	lbz r9, lbl_803D8464@sda21(r2)
 /* 802CE960 002CB760  98 01 00 45 */	stb r0, 0x45(r1)
 /* 802CE964 002CB764  8A C5 00 02 */	lbz r22, 2(r5)
 /* 802CE968 002CB768  88 65 00 0E */	lbz r3, 0xe(r5)
@@ -8055,8 +8055,8 @@ lbl_802CEB7C:
 /* 802CEB84 002CB984  48 00 00 7C */	b lbl_802CEC00
 lbl_802CEB88:
 /* 802CEB88 002CB988  3B A0 00 00 */	li r29, 0
-/* 802CEB8C 002CB98C  C3 E2 E7 48 */	lfs f31, _esc__2_881_1-_SDA2_BASE_(r2)
-/* 802CEB90 002CB990  CB C2 E7 50 */	lfd f30, _esc__2_883_3-_SDA2_BASE_(r2)
+/* 802CEB8C 002CB98C  C3 E2 E7 48 */	lfs f31, _esc__2_881_1@sda21(r2)
+/* 802CEB90 002CB990  CB C2 E7 50 */	lfd f30, _esc__2_883_3@sda21(r2)
 /* 802CEB94 002CB994  7F B6 EB 78 */	mr r22, r29
 /* 802CEB98 002CB998  3E A0 43 30 */	lis r21, 0x4330
 /* 802CEB9C 002CB99C  48 00 00 5C */	b lbl_802CEBF8
@@ -8108,7 +8108,7 @@ lbl_802CEC2C:
 /* 802CEC3C 002CBA3C  28 00 00 03 */	cmplwi r0, 3
 /* 802CEC40 002CBA40  40 82 00 68 */	bne lbl_802CECA8
 /* 802CEC44 002CBA44  3A C0 00 00 */	li r22, 0
-/* 802CEC48 002CBA48  C3 C2 E7 48 */	lfs f30, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CEC48 002CBA48  C3 C2 E7 48 */	lfs f30, _esc__2_881_1@sda21(r2)
 /* 802CEC4C 002CBA4C  7E D5 B3 78 */	mr r21, r22
 /* 802CEC50 002CBA50  48 00 00 4C */	b lbl_802CEC9C
 lbl_802CEC54:
@@ -8137,7 +8137,7 @@ lbl_802CEC9C:
 /* 802CECA4 002CBAA4  48 00 00 64 */	b lbl_802CED08
 lbl_802CECA8:
 /* 802CECA8 002CBAA8  3A C0 00 00 */	li r22, 0
-/* 802CECAC 002CBAAC  C3 C2 E7 48 */	lfs f30, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CECAC 002CBAAC  C3 C2 E7 48 */	lfs f30, _esc__2_881_1@sda21(r2)
 /* 802CECB0 002CBAB0  7E D5 B3 78 */	mr r21, r22
 /* 802CECB4 002CBAB4  48 00 00 4C */	b lbl_802CED00
 lbl_802CECB8:
@@ -8184,7 +8184,7 @@ lbl_802CED34:
 /* 802CED44 002CBB44  28 00 00 03 */	cmplwi r0, 3
 /* 802CED48 002CBB48  40 82 00 68 */	bne lbl_802CEDB0
 /* 802CED4C 002CBB4C  3A C0 00 00 */	li r22, 0
-/* 802CED50 002CBB50  C3 C2 E7 48 */	lfs f30, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CED50 002CBB50  C3 C2 E7 48 */	lfs f30, _esc__2_881_1@sda21(r2)
 /* 802CED54 002CBB54  7E D5 B3 78 */	mr r21, r22
 /* 802CED58 002CBB58  48 00 00 4C */	b lbl_802CEDA4
 lbl_802CED5C:
@@ -8213,7 +8213,7 @@ lbl_802CEDA4:
 /* 802CEDAC 002CBBAC  48 00 00 64 */	b lbl_802CEE10
 lbl_802CEDB0:
 /* 802CEDB0 002CBBB0  3A C0 00 00 */	li r22, 0
-/* 802CEDB4 002CBBB4  C3 C2 E7 48 */	lfs f30, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CEDB4 002CBBB4  C3 C2 E7 48 */	lfs f30, _esc__2_881_1@sda21(r2)
 /* 802CEDB8 002CBBB8  7E D5 B3 78 */	mr r21, r22
 /* 802CEDBC 002CBBBC  48 00 00 4C */	b lbl_802CEE08
 lbl_802CEDC0:
@@ -8566,8 +8566,8 @@ lbl_802CF288:
 /* 802CF290 002CC090  48 00 01 68 */	b lbl_802CF3F8
 lbl_802CF294:
 /* 802CF294 002CC094  3A 80 00 00 */	li r20, 0
-/* 802CF298 002CC098  C3 C2 E7 48 */	lfs f30, _esc__2_881_1-_SDA2_BASE_(r2)
-/* 802CF29C 002CC09C  CB E2 E7 50 */	lfd f31, _esc__2_883_3-_SDA2_BASE_(r2)
+/* 802CF298 002CC098  C3 C2 E7 48 */	lfs f30, _esc__2_881_1@sda21(r2)
+/* 802CF29C 002CC09C  CB E2 E7 50 */	lfd f31, _esc__2_883_3@sda21(r2)
 /* 802CF2A0 002CC0A0  7E 95 A3 78 */	mr r21, r20
 /* 802CF2A4 002CC0A4  3E C0 43 30 */	lis r22, 0x4330
 /* 802CF2A8 002CC0A8  48 00 01 48 */	b lbl_802CF3F0
@@ -8684,7 +8684,7 @@ lbl_802CF424:
 /* 802CF434 002CC234  28 00 00 03 */	cmplwi r0, 3
 /* 802CF438 002CC238  40 82 01 54 */	bne lbl_802CF58C
 /* 802CF43C 002CC23C  3A C0 00 00 */	li r22, 0
-/* 802CF440 002CC240  C3 E2 E7 48 */	lfs f31, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CF440 002CC240  C3 E2 E7 48 */	lfs f31, _esc__2_881_1@sda21(r2)
 /* 802CF444 002CC244  7E D5 B3 78 */	mr r21, r22
 /* 802CF448 002CC248  48 00 01 38 */	b lbl_802CF580
 lbl_802CF44C:
@@ -8778,7 +8778,7 @@ lbl_802CF580:
 /* 802CF588 002CC388  48 00 01 50 */	b lbl_802CF6D8
 lbl_802CF58C:
 /* 802CF58C 002CC38C  3A C0 00 00 */	li r22, 0
-/* 802CF590 002CC390  C3 E2 E7 48 */	lfs f31, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CF590 002CC390  C3 E2 E7 48 */	lfs f31, _esc__2_881_1@sda21(r2)
 /* 802CF594 002CC394  7E D5 B3 78 */	mr r21, r22
 /* 802CF598 002CC398  48 00 01 38 */	b lbl_802CF6D0
 lbl_802CF59C:
@@ -8890,7 +8890,7 @@ lbl_802CF704:
 /* 802CF714 002CC514  28 00 00 03 */	cmplwi r0, 3
 /* 802CF718 002CC518  40 82 01 54 */	bne lbl_802CF86C
 /* 802CF71C 002CC51C  3A C0 00 00 */	li r22, 0
-/* 802CF720 002CC520  C3 E2 E7 48 */	lfs f31, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CF720 002CC520  C3 E2 E7 48 */	lfs f31, _esc__2_881_1@sda21(r2)
 /* 802CF724 002CC524  7E D5 B3 78 */	mr r21, r22
 /* 802CF728 002CC528  48 00 01 38 */	b lbl_802CF860
 lbl_802CF72C:
@@ -8984,7 +8984,7 @@ lbl_802CF860:
 /* 802CF868 002CC668  48 00 01 50 */	b lbl_802CF9B8
 lbl_802CF86C:
 /* 802CF86C 002CC66C  3A C0 00 00 */	li r22, 0
-/* 802CF870 002CC670  C3 E2 E7 48 */	lfs f31, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CF870 002CC670  C3 E2 E7 48 */	lfs f31, _esc__2_881_1@sda21(r2)
 /* 802CF874 002CC674  7E D5 B3 78 */	mr r21, r22
 /* 802CF878 002CC678  48 00 01 38 */	b lbl_802CF9B0
 lbl_802CF87C:
@@ -9211,7 +9211,7 @@ lbl_802CFB7C:
 /* 802CFB94 002CC994  38 7C FF F8 */	addi r3, r28, -8
 /* 802CFB98 002CC998  40 81 00 48 */	ble lbl_802CFBE0
 /* 802CFB9C 002CC99C  38 03 00 07 */	addi r0, r3, 7
-/* 802CFBA0 002CC9A0  C0 02 E7 48 */	lfs f0, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CFBA0 002CC9A0  C0 02 E7 48 */	lfs f0, _esc__2_881_1@sda21(r2)
 /* 802CFBA4 002CC9A4  54 00 E8 FE */	srwi r0, r0, 3
 /* 802CFBA8 002CC9A8  7C 09 03 A6 */	mtctr r0
 /* 802CFBAC 002CC9AC  2C 03 00 00 */	cmpwi r3, 0
@@ -9230,7 +9230,7 @@ lbl_802CFBB4:
 /* 802CFBDC 002CC9DC  42 00 FF D8 */	bdnz lbl_802CFBB4
 lbl_802CFBE0:
 /* 802CFBE0 002CC9E0  7C 04 E0 50 */	subf r0, r4, r28
-/* 802CFBE4 002CC9E4  C0 02 E7 48 */	lfs f0, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CFBE4 002CC9E4  C0 02 E7 48 */	lfs f0, _esc__2_881_1@sda21(r2)
 /* 802CFBE8 002CC9E8  7C 09 03 A6 */	mtctr r0
 /* 802CFBEC 002CC9EC  7C 04 E0 00 */	cmpw r4, r28
 /* 802CFBF0 002CC9F0  40 80 00 98 */	bge lbl_802CFC88
@@ -9249,7 +9249,7 @@ lbl_802CFC04:
 /* 802CFC1C 002CCA1C  38 7C FF F8 */	addi r3, r28, -8
 /* 802CFC20 002CCA20  40 81 00 48 */	ble lbl_802CFC68
 /* 802CFC24 002CCA24  38 03 00 07 */	addi r0, r3, 7
-/* 802CFC28 002CCA28  C0 02 E7 48 */	lfs f0, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CFC28 002CCA28  C0 02 E7 48 */	lfs f0, _esc__2_881_1@sda21(r2)
 /* 802CFC2C 002CCA2C  54 00 E8 FE */	srwi r0, r0, 3
 /* 802CFC30 002CCA30  7C 09 03 A6 */	mtctr r0
 /* 802CFC34 002CCA34  2C 03 00 00 */	cmpwi r3, 0
@@ -9268,7 +9268,7 @@ lbl_802CFC3C:
 /* 802CFC64 002CCA64  42 00 FF D8 */	bdnz lbl_802CFC3C
 lbl_802CFC68:
 /* 802CFC68 002CCA68  7C 04 E0 50 */	subf r0, r4, r28
-/* 802CFC6C 002CCA6C  C0 02 E7 48 */	lfs f0, _esc__2_881_1-_SDA2_BASE_(r2)
+/* 802CFC6C 002CCA6C  C0 02 E7 48 */	lfs f0, _esc__2_881_1@sda21(r2)
 /* 802CFC70 002CCA70  7C 09 03 A6 */	mtctr r0
 /* 802CFC74 002CCA74  7C 04 E0 00 */	cmpw r4, r28
 /* 802CFC78 002CCA78  40 80 00 10 */	bge lbl_802CFC88
@@ -9496,7 +9496,7 @@ lbl_802CFF6C:
 MultiTextureOpen:
 /* 802CFF8C 002CCD8C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802CFF90 002CCD90  7C 08 02 A6 */	mflr r0
-/* 802CFF94 002CCD94  38 8D B7 00 */	addi r4, r13, _rpMultiTextureModule-_SDA_BASE_
+/* 802CFF94 002CCD94  38 8D B7 00 */	addi r4, r13, _rpMultiTextureModule@sda21
 /* 802CFF98 002CCD98  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802CFF9C 002CCD9C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802CFFA0 002CCDA0  7C 7F 1B 78 */	mr r31, r3
@@ -9519,7 +9519,7 @@ MultiTextureClose:
 /* 802CFFD8 002CCDD8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802CFFDC 002CCDDC  7C 7F 1B 78 */	mr r31, r3
 /* 802CFFE0 002CCDE0  48 00 0C E5 */	bl _rpMTEffectClose
-/* 802CFFE4 002CCDE4  38 AD B7 00 */	addi r5, r13, _rpMultiTextureModule-_SDA_BASE_
+/* 802CFFE4 002CCDE4  38 AD B7 00 */	addi r5, r13, _rpMultiTextureModule@sda21
 /* 802CFFE8 002CCDE8  7F E3 FB 78 */	mr r3, r31
 /* 802CFFEC 002CCDEC  80 85 00 04 */	lwz r4, 4(r5)
 /* 802CFFF0 002CCDF0  38 04 FF FF */	addi r0, r4, -1
@@ -9572,7 +9572,7 @@ lbl_802D006C:
 /* 802D0088 002CCE88  38 00 00 00 */	li r0, 0
 /* 802D008C 002CCE8C  90 1C 00 30 */	stw r0, 0x30(r28)
 lbl_802D0090:
-/* 802D0090 002CCE90  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0090 002CCE90  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0094 002CCE94  7F 83 E3 78 */	mr r3, r28
 /* 802D0098 002CCE98  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D009C 002CCE9C  7D 89 03 A6 */	mtctr r12
@@ -9604,7 +9604,7 @@ MultiTextureCopy:
 lbl_802D00F4:
 /* 802D00F4 002CCEF4  83 9F 00 00 */	lwz r28, 0(r31)
 /* 802D00F8 002CCEF8  3C 80 01 03 */	lis r4, 0x0103012C@ha
-/* 802D00FC 002CCEFC  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D00FC 002CCEFC  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 802D0100 002CCF00  38 84 01 2C */	addi r4, r4, 0x0103012C@l
 /* 802D0104 002CCF04  80 BC 00 0C */	lwz r5, 0xc(r28)
 /* 802D0108 002CCF08  81 83 01 08 */	lwz r12, 0x108(r3)
@@ -9849,7 +9849,7 @@ lbl_802D0454:
 /* 802D0454 002CD254  88 01 00 08 */	lbz r0, 8(r1)
 /* 802D0458 002CD258  3C 80 01 03 */	lis r4, 0x0103012C@ha
 /* 802D045C 002CD25C  3C A0 80 3D */	lis r5, RegEntries@ha
-/* 802D0460 002CD260  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0460 002CD260  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 802D0464 002CD264  54 06 20 36 */	slwi r6, r0, 4
 /* 802D0468 002CD268  38 84 01 2C */	addi r4, r4, 0x0103012C@l
 /* 802D046C 002CD26C  38 05 B3 10 */	addi r0, r5, RegEntries@l
@@ -9925,7 +9925,7 @@ lbl_802D0550:
 /* 802D056C 002CD36C  38 00 00 00 */	li r0, 0
 /* 802D0570 002CD370  90 1F 00 30 */	stw r0, 0x30(r31)
 lbl_802D0574:
-/* 802D0574 002CD374  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0574 002CD374  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0578 002CD378  7F E3 FB 78 */	mr r3, r31
 /* 802D057C 002CD37C  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D0580 002CD380  7D 89 03 A6 */	mtctr r12
@@ -9966,7 +9966,7 @@ lbl_802D05DC:
 /* 802D05F8 002CD3F8  38 00 00 00 */	li r0, 0
 /* 802D05FC 002CD3FC  90 1F 00 30 */	stw r0, 0x30(r31)
 lbl_802D0600:
-/* 802D0600 002CD400  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0600 002CD400  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0604 002CD404  7F E3 FB 78 */	mr r3, r31
 /* 802D0608 002CD408  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D060C 002CD40C  7D 89 03 A6 */	mtctr r12
@@ -10013,7 +10013,7 @@ lbl_802D067C:
 /* 802D0698 002CD498  38 00 00 00 */	li r0, 0
 /* 802D069C 002CD49C  90 1F 00 30 */	stw r0, 0x30(r31)
 lbl_802D06A0:
-/* 802D06A0 002CD4A0  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D06A0 002CD4A0  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D06A4 002CD4A4  7F E3 FB 78 */	mr r3, r31
 /* 802D06A8 002CD4A8  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D06AC 002CD4AC  7D 89 03 A6 */	mtctr r12
@@ -10052,7 +10052,7 @@ lbl_802D0704:
 /* 802D0720 002CD520  38 00 00 00 */	li r0, 0
 /* 802D0724 002CD524  90 1F 00 30 */	stw r0, 0x30(r31)
 lbl_802D0728:
-/* 802D0728 002CD528  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0728 002CD528  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D072C 002CD52C  7F E3 FB 78 */	mr r3, r31
 /* 802D0730 002CD530  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D0734 002CD534  7D 89 03 A6 */	mtctr r12
@@ -10103,7 +10103,7 @@ lbl_802D07A0:
 /* 802D07C8 002CD5C8  38 80 01 2C */	li r4, 0x12c
 /* 802D07CC 002CD5CC  4B FC 2F E5 */	bl RwEngineRegisterPlugin
 /* 802D07D0 002CD5D0  54 60 0F FE */	srwi r0, r3, 0x1f
-/* 802D07D4 002CD5D4  90 6D B7 00 */	stw r3, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D07D4 002CD5D4  90 6D B7 00 */	stw r3, _rpMultiTextureModule@sda21(r13)
 /* 802D07D8 002CD5D8  68 03 00 01 */	xori r3, r0, 1
 lbl_802D07DC:
 /* 802D07DC 002CD5DC  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -10300,13 +10300,13 @@ lbl_802D0A28:
 /* 802D0A44 002CD844  38 00 00 00 */	li r0, 0
 /* 802D0A48 002CD848  90 18 00 30 */	stw r0, 0x30(r24)
 lbl_802D0A4C:
-/* 802D0A4C 002CD84C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0A4C 002CD84C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0A50 002CD850  7F 03 C3 78 */	mr r3, r24
 /* 802D0A54 002CD854  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D0A58 002CD858  7D 89 03 A6 */	mtctr r12
 /* 802D0A5C 002CD85C  4E 80 04 21 */	bctrl 
 lbl_802D0A60:
-/* 802D0A60 002CD860  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0A60 002CD860  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 802D0A64 002CD864  3C 80 01 03 */	lis r4, 0x0103012C@ha
 /* 802D0A68 002CD868  80 BE 00 0C */	lwz r5, 0xc(r30)
 /* 802D0A6C 002CD86C  38 84 01 2C */	addi r4, r4, 0x0103012C@l
@@ -10409,36 +10409,36 @@ _rpMTEffectOpen:
 /* 802D0BAC 002CD9AC  7C 08 02 A6 */	mflr r0
 /* 802D0BB0 002CD9B0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802D0BB4 002CD9B4  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 802D0BB8 002CD9B8  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
-/* 802D0BBC 002CD9BC  80 0D B7 00 */	lwz r0, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D0BB8 002CD9B8  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
+/* 802D0BBC 002CD9BC  80 0D B7 00 */	lwz r0, _rpMultiTextureModule@sda21(r13)
 /* 802D0BC0 002CD9C0  7C 63 02 14 */	add r3, r3, r0
 /* 802D0BC4 002CD9C4  90 63 00 00 */	stw r3, 0(r3)
-/* 802D0BC8 002CD9C8  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
-/* 802D0BCC 002CD9CC  80 0D B7 00 */	lwz r0, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D0BC8 002CD9C8  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
+/* 802D0BCC 002CD9CC  80 0D B7 00 */	lwz r0, _rpMultiTextureModule@sda21(r13)
 /* 802D0BD0 002CD9D0  7C 63 02 14 */	add r3, r3, r0
 /* 802D0BD4 002CD9D4  90 63 00 04 */	stw r3, 4(r3)
 /* 802D0BD8 002CD9D8  48 00 02 29 */	bl RpMTEffectDictCreate
 /* 802D0BDC 002CD9DC  28 03 00 00 */	cmplwi r3, 0
-/* 802D0BE0 002CD9E0  90 6D E8 80 */	stw r3, DummyDict-_SDA_BASE_(r13)
+/* 802D0BE0 002CD9E0  90 6D E8 80 */	stw r3, DummyDict@sda21(r13)
 /* 802D0BE4 002CD9E4  40 82 00 0C */	bne lbl_802D0BF0
 /* 802D0BE8 002CD9E8  38 60 00 00 */	li r3, 0
 /* 802D0BEC 002CD9EC  48 00 00 C4 */	b lbl_802D0CB0
 lbl_802D0BF0:
-/* 802D0BF0 002CD9F0  80 AD B7 00 */	lwz r5, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D0BF0 002CD9F0  80 AD B7 00 */	lwz r5, _rpMultiTextureModule@sda21(r13)
 /* 802D0BF4 002CD9F4  3C 80 00 04 */	lis r4, 0x0004012C@ha
-/* 802D0BF8 002CD9F8  80 CD E6 54 */	lwz r6, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0BF8 002CD9F8  80 CD E6 54 */	lwz r6, RwEngineInstance@sda21(r13)
 /* 802D0BFC 002CD9FC  38 84 01 2C */	addi r4, r4, 0x0004012C@l
 /* 802D0C00 002CDA00  38 05 00 08 */	addi r0, r5, 8
 /* 802D0C04 002CDA04  7C 66 01 2E */	stwx r3, r6, r0
 /* 802D0C08 002CDA08  38 60 02 20 */	li r3, 0x220
-/* 802D0C0C 002CDA0C  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0C0C 002CDA0C  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802D0C10 002CDA10  81 85 01 08 */	lwz r12, 0x108(r5)
 /* 802D0C14 002CDA14  7D 89 03 A6 */	mtctr r12
 /* 802D0C18 002CDA18  4E 80 04 21 */	bctrl 
 /* 802D0C1C 002CDA1C  7C 7F 1B 79 */	or. r31, r3, r3
 /* 802D0C20 002CDA20  40 82 00 48 */	bne lbl_802D0C68
-/* 802D0C24 002CDA24  80 6D B7 00 */	lwz r3, _rpMultiTextureModule-_SDA_BASE_(r13)
-/* 802D0C28 002CDA28  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0C24 002CDA24  80 6D B7 00 */	lwz r3, _rpMultiTextureModule@sda21(r13)
+/* 802D0C28 002CDA28  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0C2C 002CDA2C  38 03 00 08 */	addi r0, r3, 8
 /* 802D0C30 002CDA30  7C 64 00 2E */	lwzx r3, r4, r0
 /* 802D0C34 002CDA34  48 00 02 85 */	bl RpMTEffectDictDestroy
@@ -10458,19 +10458,19 @@ lbl_802D0C68:
 /* 802D0C68 002CDA68  38 80 00 00 */	li r4, 0
 /* 802D0C6C 002CDA6C  38 A0 02 20 */	li r5, 0x220
 /* 802D0C70 002CDA70  4B D3 24 91 */	bl memset
-/* 802D0C74 002CDA74  80 6D B7 00 */	lwz r3, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D0C74 002CDA74  80 6D B7 00 */	lwz r3, _rpMultiTextureModule@sda21(r13)
 /* 802D0C78 002CDA78  38 FF 01 00 */	addi r7, r31, 0x100
-/* 802D0C7C 002CDA7C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0C7C 002CDA7C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0C80 002CDA80  38 C0 01 00 */	li r6, 0x100
 /* 802D0C84 002CDA84  38 03 00 10 */	addi r0, r3, 0x10
 /* 802D0C88 002CDA88  38 60 00 01 */	li r3, 1
 /* 802D0C8C 002CDA8C  7F E4 01 2E */	stwx r31, r4, r0
-/* 802D0C90 002CDA90  80 8D B7 00 */	lwz r4, _rpMultiTextureModule-_SDA_BASE_(r13)
-/* 802D0C94 002CDA94  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0C90 002CDA90  80 8D B7 00 */	lwz r4, _rpMultiTextureModule@sda21(r13)
+/* 802D0C94 002CDA94  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802D0C98 002CDA98  38 04 00 14 */	addi r0, r4, 0x14
 /* 802D0C9C 002CDA9C  7C E5 01 2E */	stwx r7, r5, r0
-/* 802D0CA0 002CDAA0  80 8D B7 00 */	lwz r4, _rpMultiTextureModule-_SDA_BASE_(r13)
-/* 802D0CA4 002CDAA4  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0CA0 002CDAA0  80 8D B7 00 */	lwz r4, _rpMultiTextureModule@sda21(r13)
+/* 802D0CA4 002CDAA4  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802D0CA8 002CDAA8  38 04 00 0C */	addi r0, r4, 0xc
 /* 802D0CAC 002CDAAC  7C C5 01 2E */	stwx r6, r5, r0
 lbl_802D0CB0:
@@ -10485,8 +10485,8 @@ _rpMTEffectClose:
 /* 802D0CC4 002CDAC4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 802D0CC8 002CDAC8  7C 08 02 A6 */	mflr r0
 /* 802D0CCC 002CDACC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 802D0CD0 002CDAD0  80 6D B7 00 */	lwz r3, _rpMultiTextureModule-_SDA_BASE_(r13)
-/* 802D0CD4 002CDAD4  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0CD0 002CDAD0  80 6D B7 00 */	lwz r3, _rpMultiTextureModule@sda21(r13)
+/* 802D0CD4 002CDAD4  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0CD8 002CDAD8  38 03 00 10 */	addi r0, r3, 0x10
 /* 802D0CDC 002CDADC  7C 64 00 2E */	lwzx r3, r4, r0
 /* 802D0CE0 002CDAE0  28 03 00 00 */	cmplwi r3, 0
@@ -10494,23 +10494,23 @@ _rpMTEffectClose:
 /* 802D0CE8 002CDAE8  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D0CEC 002CDAEC  7D 89 03 A6 */	mtctr r12
 /* 802D0CF0 002CDAF0  4E 80 04 21 */	bctrl 
-/* 802D0CF4 002CDAF4  80 6D B7 00 */	lwz r3, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D0CF4 002CDAF4  80 6D B7 00 */	lwz r3, _rpMultiTextureModule@sda21(r13)
 /* 802D0CF8 002CDAF8  38 A0 00 00 */	li r5, 0
-/* 802D0CFC 002CDAFC  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0CFC 002CDAFC  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0D00 002CDB00  38 03 00 10 */	addi r0, r3, 0x10
 /* 802D0D04 002CDB04  7C A4 01 2E */	stwx r5, r4, r0
-/* 802D0D08 002CDB08  80 6D B7 00 */	lwz r3, _rpMultiTextureModule-_SDA_BASE_(r13)
-/* 802D0D0C 002CDB0C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0D08 002CDB08  80 6D B7 00 */	lwz r3, _rpMultiTextureModule@sda21(r13)
+/* 802D0D0C 002CDB0C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0D10 002CDB10  38 03 00 14 */	addi r0, r3, 0x14
 /* 802D0D14 002CDB14  7C A4 01 2E */	stwx r5, r4, r0
-/* 802D0D18 002CDB18  80 6D B7 00 */	lwz r3, _rpMultiTextureModule-_SDA_BASE_(r13)
-/* 802D0D1C 002CDB1C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0D18 002CDB18  80 6D B7 00 */	lwz r3, _rpMultiTextureModule@sda21(r13)
+/* 802D0D1C 002CDB1C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0D20 002CDB20  38 03 00 0C */	addi r0, r3, 0xc
 /* 802D0D24 002CDB24  7C A4 01 2E */	stwx r5, r4, r0
 lbl_802D0D28:
-/* 802D0D28 002CDB28  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
-/* 802D0D2C 002CDB2C  80 0D B7 00 */	lwz r0, _rpMultiTextureModule-_SDA_BASE_(r13)
-/* 802D0D30 002CDB30  80 6D E8 80 */	lwz r3, DummyDict-_SDA_BASE_(r13)
+/* 802D0D28 002CDB28  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
+/* 802D0D2C 002CDB2C  80 0D B7 00 */	lwz r0, _rpMultiTextureModule@sda21(r13)
+/* 802D0D30 002CDB30  80 6D E8 80 */	lwz r3, DummyDict@sda21(r13)
 /* 802D0D34 002CDB34  7C A4 02 14 */	add r5, r4, r0
 /* 802D0D38 002CDB38  80 85 00 00 */	lwz r4, 0(r5)
 /* 802D0D3C 002CDB3C  48 00 00 24 */	b lbl_802D0D60
@@ -10520,7 +10520,7 @@ lbl_802D0D40:
 /* 802D0D48 002CDB48  40 82 00 14 */	bne lbl_802D0D5C
 /* 802D0D4C 002CDB4C  48 00 01 6D */	bl RpMTEffectDictDestroy
 /* 802D0D50 002CDB50  38 00 00 00 */	li r0, 0
-/* 802D0D54 002CDB54  90 0D E8 80 */	stw r0, DummyDict-_SDA_BASE_(r13)
+/* 802D0D54 002CDB54  90 0D E8 80 */	stw r0, DummyDict@sda21(r13)
 /* 802D0D58 002CDB58  48 00 00 10 */	b lbl_802D0D68
 lbl_802D0D5C:
 /* 802D0D5C 002CDB5C  80 84 00 00 */	lwz r4, 0(r4)
@@ -10554,8 +10554,8 @@ _rpMTEffectInit:
 /* 802D0DB8 002CDBB8  90 1E 00 2C */	stw r0, 0x2c(r30)
 /* 802D0DBC 002CDBBC  90 1E 00 28 */	stw r0, 0x28(r30)
 /* 802D0DC0 002CDBC0  41 82 00 24 */	beq lbl_802D0DE4
-/* 802D0DC4 002CDBC4  80 6D B7 00 */	lwz r3, _rpMultiTextureModule-_SDA_BASE_(r13)
-/* 802D0DC8 002CDBC8  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0DC4 002CDBC4  80 6D B7 00 */	lwz r3, _rpMultiTextureModule@sda21(r13)
+/* 802D0DC8 002CDBC8  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0DCC 002CDBCC  38 03 00 08 */	addi r0, r3, 8
 /* 802D0DD0 002CDBD0  7C 64 00 2E */	lwzx r3, r4, r0
 /* 802D0DD4 002CDBD4  28 03 00 00 */	cmplwi r3, 0
@@ -10579,7 +10579,7 @@ RpMTEffectDictCreate:
 /* 802D0E0C 002CDC0C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 802D0E10 002CDC10  38 83 01 2C */	addi r4, r3, 0x0003012C@l
 /* 802D0E14 002CDC14  38 60 00 10 */	li r3, 0x10
-/* 802D0E18 002CDC18  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0E18 002CDC18  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802D0E1C 002CDC1C  81 85 01 08 */	lwz r12, 0x108(r5)
 /* 802D0E20 002CDC20  7D 89 03 A6 */	mtctr r12
 /* 802D0E24 002CDC24  4E 80 04 21 */	bctrl 
@@ -10601,20 +10601,20 @@ lbl_802D0E60:
 /* 802D0E60 002CDC60  90 63 00 00 */	stw r3, 0(r3)
 /* 802D0E64 002CDC64  38 A3 00 08 */	addi r5, r3, 8
 /* 802D0E68 002CDC68  90 63 00 04 */	stw r3, 4(r3)
-/* 802D0E6C 002CDC6C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
-/* 802D0E70 002CDC70  80 0D B7 00 */	lwz r0, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D0E6C 002CDC6C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
+/* 802D0E70 002CDC70  80 0D B7 00 */	lwz r0, _rpMultiTextureModule@sda21(r13)
 /* 802D0E74 002CDC74  7C 04 00 2E */	lwzx r0, r4, r0
 /* 802D0E78 002CDC78  90 03 00 08 */	stw r0, 8(r3)
-/* 802D0E7C 002CDC7C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
-/* 802D0E80 002CDC80  80 0D B7 00 */	lwz r0, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D0E7C 002CDC7C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
+/* 802D0E80 002CDC80  80 0D B7 00 */	lwz r0, _rpMultiTextureModule@sda21(r13)
 /* 802D0E84 002CDC84  7C 04 02 14 */	add r0, r4, r0
 /* 802D0E88 002CDC88  90 03 00 0C */	stw r0, 0xc(r3)
-/* 802D0E8C 002CDC8C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
-/* 802D0E90 002CDC90  80 0D B7 00 */	lwz r0, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D0E8C 002CDC8C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
+/* 802D0E90 002CDC90  80 0D B7 00 */	lwz r0, _rpMultiTextureModule@sda21(r13)
 /* 802D0E94 002CDC94  7C 84 00 2E */	lwzx r4, r4, r0
 /* 802D0E98 002CDC98  90 A4 00 04 */	stw r5, 4(r4)
-/* 802D0E9C 002CDC9C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
-/* 802D0EA0 002CDCA0  80 0D B7 00 */	lwz r0, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D0E9C 002CDC9C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
+/* 802D0EA0 002CDCA0  80 0D B7 00 */	lwz r0, _rpMultiTextureModule@sda21(r13)
 /* 802D0EA4 002CDCA4  7C A4 01 2E */	stwx r5, r4, r0
 lbl_802D0EA8:
 /* 802D0EA8 002CDCA8  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -10630,8 +10630,8 @@ RpMTEffectDictDestroy:
 /* 802D0EC4 002CDCC4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802D0EC8 002CDCC8  93 C1 00 08 */	stw r30, 8(r1)
 /* 802D0ECC 002CDCCC  7C 7E 1B 78 */	mr r30, r3
-/* 802D0ED0 002CDCD0  80 8D B7 00 */	lwz r4, _rpMultiTextureModule-_SDA_BASE_(r13)
-/* 802D0ED4 002CDCD4  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0ED0 002CDCD0  80 8D B7 00 */	lwz r4, _rpMultiTextureModule@sda21(r13)
+/* 802D0ED4 002CDCD4  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 802D0ED8 002CDCD8  38 84 00 08 */	addi r4, r4, 8
 /* 802D0EDC 002CDCDC  7C 03 20 2E */	lwzx r0, r3, r4
 /* 802D0EE0 002CDCE0  7C 1E 00 40 */	cmplw r30, r0
@@ -10655,7 +10655,7 @@ lbl_802D0F04:
 /* 802D0F1C 002CDD1C  80 1E 00 0C */	lwz r0, 0xc(r30)
 /* 802D0F20 002CDD20  80 9E 00 08 */	lwz r4, 8(r30)
 /* 802D0F24 002CDD24  90 04 00 04 */	stw r0, 4(r4)
-/* 802D0F28 002CDD28  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D0F28 002CDD28  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D0F2C 002CDD2C  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D0F30 002CDD30  7D 89 03 A6 */	mtctr r12
 /* 802D0F34 002CDD34  4E 80 04 21 */	bctrl 
@@ -10736,7 +10736,7 @@ RpMTEffectCreateDummy:
 /* 802D1034 002CDE34  38 83 01 2C */	addi r4, r3, 0x0003012C@l
 /* 802D1038 002CDE38  38 60 00 30 */	li r3, 0x30
 /* 802D103C 002CDE3C  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 802D1040 002CDE40  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D1040 002CDE40  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 802D1044 002CDE44  81 85 01 08 */	lwz r12, 0x108(r5)
 /* 802D1048 002CDE48  7D 89 03 A6 */	mtctr r12
 /* 802D104C 002CDE4C  4E 80 04 21 */	bctrl 
@@ -10857,7 +10857,7 @@ RpMTEffectDestroy:
 /* 802D1204 002CE004  4E 80 04 21 */	bctrl 
 /* 802D1208 002CE008  48 00 00 18 */	b lbl_802D1220
 lbl_802D120C:
-/* 802D120C 002CE00C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D120C 002CE00C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D1210 002CE010  7F E3 FB 78 */	mr r3, r31
 /* 802D1214 002CE014  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D1218 002CE018  7D 89 03 A6 */	mtctr r12
@@ -10878,7 +10878,7 @@ lbl_802D1220:
 /* 802D1250 002CE050  4E 80 04 21 */	bctrl 
 /* 802D1254 002CE054  48 00 00 18 */	b lbl_802D126C
 lbl_802D1258:
-/* 802D1258 002CE058  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D1258 002CE058  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D125C 002CE05C  7F E3 FB 78 */	mr r3, r31
 /* 802D1260 002CE060  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D1264 002CE064  7D 89 03 A6 */	mtctr r12
@@ -10899,7 +10899,7 @@ lbl_802D126C:
 /* 802D129C 002CE09C  4E 80 04 21 */	bctrl 
 /* 802D12A0 002CE0A0  48 00 00 18 */	b lbl_802D12B8
 lbl_802D12A4:
-/* 802D12A4 002CE0A4  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D12A4 002CE0A4  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D12A8 002CE0A8  7F E3 FB 78 */	mr r3, r31
 /* 802D12AC 002CE0AC  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D12B0 002CE0B0  7D 89 03 A6 */	mtctr r12
@@ -10920,7 +10920,7 @@ lbl_802D12B8:
 /* 802D12E8 002CE0E8  4E 80 04 21 */	bctrl 
 /* 802D12EC 002CE0EC  48 00 00 18 */	b lbl_802D1304
 lbl_802D12F0:
-/* 802D12F0 002CE0F0  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D12F0 002CE0F0  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D12F4 002CE0F4  7F E3 FB 78 */	mr r3, r31
 /* 802D12F8 002CE0F8  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D12FC 002CE0FC  7D 89 03 A6 */	mtctr r12
@@ -10941,7 +10941,7 @@ lbl_802D1304:
 /* 802D1334 002CE134  4E 80 04 21 */	bctrl 
 /* 802D1338 002CE138  48 00 00 18 */	b lbl_802D1350
 lbl_802D133C:
-/* 802D133C 002CE13C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D133C 002CE13C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D1340 002CE140  7F E3 FB 78 */	mr r3, r31
 /* 802D1344 002CE144  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 802D1348 002CE148  7D 89 03 A6 */	mtctr r12
@@ -10960,9 +10960,9 @@ RpMTEffectFind:
 /* 802D136C 002CE16C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802D1370 002CE170  39 61 00 50 */	addi r11, r1, 0x50
 /* 802D1374 002CE174  4B F2 9B A5 */	bl func_801FAF18
-/* 802D1378 002CE178  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D1378 002CE178  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 802D137C 002CE17C  7C 7F 1B 78 */	mr r31, r3
-/* 802D1380 002CE180  80 0D B7 00 */	lwz r0, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D1380 002CE180  80 0D B7 00 */	lwz r0, _rpMultiTextureModule@sda21(r13)
 /* 802D1384 002CE184  3B C0 00 00 */	li r30, 0
 /* 802D1388 002CE188  7F 64 02 14 */	add r27, r4, r0
 /* 802D138C 002CE18C  83 9B 00 08 */	lwz r28, 8(r27)
@@ -10971,7 +10971,7 @@ RpMTEffectFind:
 /* 802D1398 002CE198  83 DC 00 00 */	lwz r30, 0(r28)
 /* 802D139C 002CE19C  48 00 00 30 */	b lbl_802D13CC
 lbl_802D13A0:
-/* 802D13A0 002CE1A0  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D13A0 002CE1A0  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 802D13A4 002CE1A4  3B BE FF D8 */	addi r29, r30, -40
 /* 802D13A8 002CE1A8  7F E4 FB 78 */	mr r4, r31
 /* 802D13AC 002CE1AC  81 83 00 E8 */	lwz r12, 0xe8(r3)
@@ -10998,7 +10998,7 @@ lbl_802D13E8:
 /* 802D13EC 002CE1EC  83 DD FF F8 */	lwz r30, -8(r29)
 /* 802D13F0 002CE1F0  48 00 00 30 */	b lbl_802D1420
 lbl_802D13F4:
-/* 802D13F4 002CE1F4  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D13F4 002CE1F4  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 802D13F8 002CE1F8  3B 9E FF D8 */	addi r28, r30, -40
 /* 802D13FC 002CE1FC  7F E4 FB 78 */	mr r4, r31
 /* 802D1400 002CE200  81 83 00 E8 */	lwz r12, 0xe8(r3)
@@ -11030,8 +11030,8 @@ lbl_802D1444:
 /* 802D1454 002CE254  7F C3 F3 78 */	mr r3, r30
 /* 802D1458 002CE258  48 00 01 84 */	b lbl_802D15DC
 lbl_802D145C:
-/* 802D145C 002CE25C  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
-/* 802D1460 002CE260  80 0D B7 00 */	lwz r0, _rpMultiTextureModule-_SDA_BASE_(r13)
+/* 802D145C 002CE25C  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
+/* 802D1460 002CE260  80 0D B7 00 */	lwz r0, _rpMultiTextureModule@sda21(r13)
 /* 802D1464 002CE264  81 83 00 CC */	lwz r12, 0xcc(r3)
 /* 802D1468 002CE268  7C 63 02 14 */	add r3, r3, r0
 /* 802D146C 002CE26C  83 63 00 14 */	lwz r27, 0x14(r3)
@@ -11039,7 +11039,7 @@ lbl_802D145C:
 /* 802D1474 002CE274  7F 63 DB 78 */	mr r3, r27
 /* 802D1478 002CE278  7D 89 03 A6 */	mtctr r12
 /* 802D147C 002CE27C  4E 80 04 21 */	bctrl 
-/* 802D1480 002CE280  80 CD E6 54 */	lwz r6, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D1480 002CE280  80 CD E6 54 */	lwz r6, RwEngineInstance@sda21(r13)
 /* 802D1484 002CE284  7F 63 DB 78 */	mr r3, r27
 /* 802D1488 002CE288  7F E4 FB 78 */	mr r4, r31
 /* 802D148C 002CE28C  38 A0 00 1F */	li r5, 0x1f
@@ -11152,7 +11152,7 @@ RpMTEffectSetName:
 /* 802D1604 002CE404  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 802D1608 002CE408  7C 7F 1B 78 */	mr r31, r3
 /* 802D160C 002CE40C  38 7F 00 08 */	addi r3, r31, 8
-/* 802D1610 002CE410  80 CD E6 54 */	lwz r6, RwEngineInstance-_SDA_BASE_(r13)
+/* 802D1610 002CE410  80 CD E6 54 */	lwz r6, RwEngineInstance@sda21(r13)
 /* 802D1614 002CE414  81 86 00 D0 */	lwz r12, 0xd0(r6)
 /* 802D1618 002CE418  7D 89 03 A6 */	mtctr r12
 /* 802D161C 002CE41C  4E 80 04 21 */	bctrl 
@@ -11174,7 +11174,3 @@ RpMTEffectAddRef:
 /* 802D1644 002CE444  38 04 00 01 */	addi r0, r4, 1
 /* 802D1648 002CE448  90 03 00 04 */	stw r0, 4(r3)
 /* 802D164C 002CE44C  4E 80 00 20 */	blr 
-/* 802D1650 002CE450  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 802D1654 002CE454  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 802D1658 002CE458  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 802D165C 002CE45C  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */

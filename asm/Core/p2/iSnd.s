@@ -92,7 +92,7 @@ lbl_8007FAA8:
 /* 8007FAA8 0007C8A8  38 60 00 00 */	li r3, 0
 /* 8007FAAC 0007C8AC  38 00 00 08 */	li r0, 8
 /* 8007FAB0 0007C8B0  7C 65 1B 78 */	mr r5, r3
-/* 8007FAB4 0007C8B4  38 8D C1 80 */	addi r4, r13, pTempStreams-_SDA_BASE_
+/* 8007FAB4 0007C8B4  38 8D C1 80 */	addi r4, r13, pTempStreams@sda21
 /* 8007FAB8 0007C8B8  7C 09 03 A6 */	mtctr r0
 lbl_8007FABC:
 /* 8007FABC 0007C8BC  7C A4 19 2E */	stwx r5, r4, r3
@@ -100,7 +100,7 @@ lbl_8007FABC:
 /* 8007FAC4 0007C8C4  42 00 FF F8 */	bdnz lbl_8007FABC
 /* 8007FAC8 0007C8C8  48 00 25 3D */	bl iSystemARAMInit__Fv
 /* 8007FACC 0007C8CC  48 1C 15 71 */	bl FSOUND_GetVersion
-/* 8007FAD0 0007C8D0  C0 02 92 30 */	lfs f0, _esc__2_977-_SDA2_BASE_(r2)
+/* 8007FAD0 0007C8D0  C0 02 92 30 */	lfs f0, _esc__2_977@sda21(r2)
 /* 8007FAD4 0007C8D4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8007FAD8 0007C8D8  41 80 00 A0 */	blt lbl_8007FB78
 /* 8007FADC 0007C8DC  48 00 25 D1 */	bl iSystemARAMSizeForFMOD__Fv
@@ -112,13 +112,13 @@ lbl_8007FABC:
 /* 8007FAF4 0007C8F4  41 82 00 84 */	beq lbl_8007FB78
 /* 8007FAF8 0007C8F8  38 60 00 04 */	li r3, 4
 /* 8007FAFC 0007C8FC  48 1C 21 75 */	bl FSOUND_SetMixer
-/* 8007FB00 0007C900  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 8007FB00 0007C900  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 8007FB04 0007C904  3C 60 00 0A */	lis r3, 0xa
 /* 8007FB08 0007C908  38 80 00 00 */	li r4, 0
 /* 8007FB0C 0007C90C  81 85 01 08 */	lwz r12, 0x108(r5)
 /* 8007FB10 0007C910  7D 89 03 A6 */	mtctr r12
 /* 8007FB14 0007C914  4E 80 04 21 */	bctrl 
-/* 8007FB18 0007C918  90 6D C1 58 */	stw r3, sSndStaticBuffer-_SDA_BASE_(r13)
+/* 8007FB18 0007C918  90 6D C1 58 */	stw r3, sSndStaticBuffer@sda21(r13)
 /* 8007FB1C 0007C91C  3C 80 00 0A */	lis r4, 0xa
 /* 8007FB20 0007C920  38 A0 00 00 */	li r5, 0
 /* 8007FB24 0007C924  38 C0 00 00 */	li r6, 0
@@ -132,7 +132,7 @@ lbl_8007FABC:
 /* 8007FB44 0007C944  48 1C 17 D1 */	bl FSOUND_Init
 /* 8007FB48 0007C948  7C 60 07 75 */	extsb. r0, r3
 /* 8007FB4C 0007C94C  41 82 00 2C */	beq lbl_8007FB78
-/* 8007FB50 0007C950  C0 22 92 34 */	lfs f1, _esc__2_978_0-_SDA2_BASE_(r2)
+/* 8007FB50 0007C950  C0 22 92 34 */	lfs f1, _esc__2_978_0@sda21(r2)
 /* 8007FB54 0007C954  48 1C 23 D9 */	bl FSOUND_3D_SetRolloffFactor
 /* 8007FB58 0007C958  48 1B 69 85 */	bl OSGetSoundMode
 /* 8007FB5C 0007C95C  28 03 00 00 */	cmplwi r3, 0
@@ -184,7 +184,7 @@ lbl_8007FBEC:
 /* 8007FBF0 0007C9F0  38 7E 44 49 */	addi r3, r30, 0x4449
 /* 8007FBF4 0007C9F4  38 A1 00 08 */	addi r5, r1, 8
 /* 8007FBF8 0007C9F8  4B FE C9 05 */	bl xSTGetAssetInfoByType__FUiiP15PKRAssetTOCInfo
-/* 8007FBFC 0007C9FC  80 6D C1 7C */	lwz r3, sinfoArrayLoaded-_SDA_BASE_(r13)
+/* 8007FBFC 0007C9FC  80 6D C1 7C */	lwz r3, sinfoArrayLoaded@sda21(r13)
 /* 8007FC00 0007CA00  38 80 00 00 */	li r4, 0
 /* 8007FC04 0007CA04  80 A1 00 08 */	lwz r5, 8(r1)
 /* 8007FC08 0007CA08  7C 69 03 A6 */	mtctr r3
@@ -201,9 +201,9 @@ lbl_8007FC28:
 /* 8007FC2C 0007CA2C  48 00 00 39 */	bl loadSoundInfoAsset__FUiR15PKRAssetTOCInfo
 /* 8007FC30 0007CA30  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8007FC34 0007CA34  41 82 00 10 */	beq lbl_8007FC44
-/* 8007FC38 0007CA38  80 6D C1 7C */	lwz r3, sinfoArrayLoaded-_SDA_BASE_(r13)
+/* 8007FC38 0007CA38  80 6D C1 7C */	lwz r3, sinfoArrayLoaded@sda21(r13)
 /* 8007FC3C 0007CA3C  38 03 00 01 */	addi r0, r3, 1
-/* 8007FC40 0007CA40  90 0D C1 7C */	stw r0, sinfoArrayLoaded-_SDA_BASE_(r13)
+/* 8007FC40 0007CA40  90 0D C1 7C */	stw r0, sinfoArrayLoaded@sda21(r13)
 lbl_8007FC44:
 /* 8007FC44 0007CA44  3B 9C 00 01 */	addi r28, r28, 1
 lbl_8007FC48:
@@ -254,7 +254,7 @@ loadSoundInfoAsset__FUiR15PKRAssetTOCInfo:
 /* 8007FCEC 0007CAEC  A0 9D 00 18 */	lhz r4, 0x18(r29)
 /* 8007FCF0 0007CAF0  1C 00 00 64 */	mulli r0, r0, 0x64
 /* 8007FCF4 0007CAF4  54 66 10 3A */	slwi r6, r3, 2
-/* 8007FCF8 0007CAF8  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 8007FCF8 0007CAF8  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 8007FCFC 0007CAFC  54 84 18 38 */	slwi r4, r4, 3
 /* 8007FD00 0007CB00  7C 86 22 14 */	add r4, r6, r4
 /* 8007FD04 0007CB04  7C 84 02 14 */	add r4, r4, r0
@@ -451,12 +451,12 @@ lbl_8007FF8C:
 /* 8007FF90 0007CD90  4B FF FF 7D */	bl unloadSoundInfoAsset__FUi
 /* 8007FF94 0007CD94  3B FF 00 01 */	addi r31, r31, 1
 lbl_8007FF98:
-/* 8007FF98 0007CD98  80 0D C1 7C */	lwz r0, sinfoArrayLoaded-_SDA_BASE_(r13)
+/* 8007FF98 0007CD98  80 0D C1 7C */	lwz r0, sinfoArrayLoaded@sda21(r13)
 /* 8007FF9C 0007CD9C  7C 1F 00 40 */	cmplw r31, r0
 /* 8007FFA0 0007CDA0  41 80 FF EC */	blt lbl_8007FF8C
 /* 8007FFA4 0007CDA4  38 00 00 00 */	li r0, 0
 /* 8007FFA8 0007CDA8  38 60 00 00 */	li r3, 0
-/* 8007FFAC 0007CDAC  90 0D C1 7C */	stw r0, sinfoArrayLoaded-_SDA_BASE_(r13)
+/* 8007FFAC 0007CDAC  90 0D C1 7C */	stw r0, sinfoArrayLoaded@sda21(r13)
 /* 8007FFB0 0007CDB0  48 1C 6C 49 */	bl FSOUND_AUXFX_ShutdownEffect
 /* 8007FFB4 0007CDB4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007FFB8 0007CDB8  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -477,7 +477,7 @@ iSndExit__Fv:
 
 .global iSndLookup__FUi
 iSndLookup__FUi:
-/* 8007FFE8 0007CDE8  80 0D C1 7C */	lwz r0, sinfoArrayLoaded-_SDA_BASE_(r13)
+/* 8007FFE8 0007CDE8  80 0D C1 7C */	lwz r0, sinfoArrayLoaded@sda21(r13)
 /* 8007FFEC 0007CDEC  3C 80 80 37 */	lis r4, sinfoArray@ha
 /* 8007FFF0 0007CDF0  38 C4 96 C0 */	addi r6, r4, sinfoArray@l
 /* 8007FFF4 0007CDF4  38 80 00 00 */	li r4, 0
@@ -519,7 +519,7 @@ lbl_80080060:
 .global iSndFindCutsceneHeader__FUi
 iSndFindCutsceneHeader__FUi:
 /* 80080068 0007CE68  3C 80 80 37 */	lis r4, sinfoArray@ha
-/* 8008006C 0007CE6C  80 ED C1 7C */	lwz r7, sinfoArrayLoaded-_SDA_BASE_(r13)
+/* 8008006C 0007CE6C  80 ED C1 7C */	lwz r7, sinfoArrayLoaded@sda21(r13)
 /* 80080070 0007CE70  38 C4 96 C0 */	addi r6, r4, sinfoArray@l
 /* 80080074 0007CE74  39 20 00 00 */	li r9, 0
 /* 80080078 0007CE78  38 80 00 00 */	li r4, 0
@@ -555,14 +555,14 @@ lbl_800800C4:
 initBytesToConsume__FP13FSOUND_STREAM:
 /* 800800D4 0007CED4  38 00 00 02 */	li r0, 2
 /* 800800D8 0007CED8  38 80 00 00 */	li r4, 0
-/* 800800DC 0007CEDC  38 AD C1 5C */	addi r5, r13, externStreamInfo-_SDA_BASE_
+/* 800800DC 0007CEDC  38 AD C1 5C */	addi r5, r13, externStreamInfo@sda21
 /* 800800E0 0007CEE0  7C 09 03 A6 */	mtctr r0
 lbl_800800E4:
 /* 800800E4 0007CEE4  7C 05 20 2E */	lwzx r0, r5, r4
 /* 800800E8 0007CEE8  28 00 00 00 */	cmplwi r0, 0
 /* 800800EC 0007CEEC  40 82 00 2C */	bne lbl_80080118
 /* 800800F0 0007CEF0  7C 65 21 2E */	stwx r3, r5, r4
-/* 800800F4 0007CEF4  38 0D C1 5C */	addi r0, r13, externStreamInfo-_SDA_BASE_
+/* 800800F4 0007CEF4  38 0D C1 5C */	addi r0, r13, externStreamInfo@sda21
 /* 800800F8 0007CEF8  7C 80 22 14 */	add r4, r0, r4
 /* 800800FC 0007CEFC  38 A0 00 00 */	li r5, 0
 /* 80080100 0007CF00  90 A4 00 04 */	stw r5, 4(r4)
@@ -581,14 +581,14 @@ lbl_80080118:
 releaseBytesToConsume__FP13FSOUND_STREAM:
 /* 80080128 0007CF28  38 00 00 02 */	li r0, 2
 /* 8008012C 0007CF2C  38 80 00 00 */	li r4, 0
-/* 80080130 0007CF30  38 CD C1 5C */	addi r6, r13, externStreamInfo-_SDA_BASE_
+/* 80080130 0007CF30  38 CD C1 5C */	addi r6, r13, externStreamInfo@sda21
 /* 80080134 0007CF34  7C 09 03 A6 */	mtctr r0
 lbl_80080138:
 /* 80080138 0007CF38  7C 06 20 2E */	lwzx r0, r6, r4
 /* 8008013C 0007CF3C  7C 00 18 40 */	cmplw r0, r3
 /* 80080140 0007CF40  40 82 00 2C */	bne lbl_8008016C
 /* 80080144 0007CF44  38 A0 00 00 */	li r5, 0
-/* 80080148 0007CF48  38 0D C1 5C */	addi r0, r13, externStreamInfo-_SDA_BASE_
+/* 80080148 0007CF48  38 0D C1 5C */	addi r0, r13, externStreamInfo@sda21
 /* 8008014C 0007CF4C  7C A6 21 2E */	stwx r5, r6, r4
 /* 80080150 0007CF50  7C 80 22 14 */	add r4, r0, r4
 /* 80080154 0007CF54  38 00 00 01 */	li r0, 1
@@ -607,13 +607,13 @@ lbl_8008016C:
 getBytesToConsume__FP13FSOUND_STREAM:
 /* 8008017C 0007CF7C  38 00 00 02 */	li r0, 2
 /* 80080180 0007CF80  38 80 00 00 */	li r4, 0
-/* 80080184 0007CF84  38 AD C1 5C */	addi r5, r13, externStreamInfo-_SDA_BASE_
+/* 80080184 0007CF84  38 AD C1 5C */	addi r5, r13, externStreamInfo@sda21
 /* 80080188 0007CF88  7C 09 03 A6 */	mtctr r0
 lbl_8008018C:
 /* 8008018C 0007CF8C  7C 05 20 2E */	lwzx r0, r5, r4
 /* 80080190 0007CF90  7C 00 18 40 */	cmplw r0, r3
 /* 80080194 0007CF94  40 82 00 14 */	bne lbl_800801A8
-/* 80080198 0007CF98  38 0D C1 5C */	addi r0, r13, externStreamInfo-_SDA_BASE_
+/* 80080198 0007CF98  38 0D C1 5C */	addi r0, r13, externStreamInfo@sda21
 /* 8008019C 0007CF9C  7C 60 22 14 */	add r3, r0, r4
 /* 800801A0 0007CFA0  80 63 00 04 */	lwz r3, 4(r3)
 /* 800801A4 0007CFA4  4E 80 00 20 */	blr 
@@ -627,13 +627,13 @@ lbl_800801A8:
 getFrontBuffer__FP13FSOUND_STREAM:
 /* 800801B8 0007CFB8  38 00 00 02 */	li r0, 2
 /* 800801BC 0007CFBC  38 80 00 00 */	li r4, 0
-/* 800801C0 0007CFC0  38 AD C1 5C */	addi r5, r13, externStreamInfo-_SDA_BASE_
+/* 800801C0 0007CFC0  38 AD C1 5C */	addi r5, r13, externStreamInfo@sda21
 /* 800801C4 0007CFC4  7C 09 03 A6 */	mtctr r0
 lbl_800801C8:
 /* 800801C8 0007CFC8  7C 05 20 2E */	lwzx r0, r5, r4
 /* 800801CC 0007CFCC  7C 00 18 40 */	cmplw r0, r3
 /* 800801D0 0007CFD0  40 82 00 14 */	bne lbl_800801E4
-/* 800801D4 0007CFD4  38 0D C1 5C */	addi r0, r13, externStreamInfo-_SDA_BASE_
+/* 800801D4 0007CFD4  38 0D C1 5C */	addi r0, r13, externStreamInfo@sda21
 /* 800801D8 0007CFD8  7C 60 22 14 */	add r3, r0, r4
 /* 800801DC 0007CFDC  80 63 00 08 */	lwz r3, 8(r3)
 /* 800801E0 0007CFE0  4E 80 00 20 */	blr 
@@ -647,13 +647,13 @@ lbl_800801E4:
 getDataPtr__FP13FSOUND_STREAM:
 /* 800801F4 0007CFF4  38 00 00 02 */	li r0, 2
 /* 800801F8 0007CFF8  38 80 00 00 */	li r4, 0
-/* 800801FC 0007CFFC  38 AD C1 5C */	addi r5, r13, externStreamInfo-_SDA_BASE_
+/* 800801FC 0007CFFC  38 AD C1 5C */	addi r5, r13, externStreamInfo@sda21
 /* 80080200 0007D000  7C 09 03 A6 */	mtctr r0
 lbl_80080204:
 /* 80080204 0007D004  7C 05 20 2E */	lwzx r0, r5, r4
 /* 80080208 0007D008  7C 00 18 40 */	cmplw r0, r3
 /* 8008020C 0007D00C  40 82 00 14 */	bne lbl_80080220
-/* 80080210 0007D010  38 0D C1 5C */	addi r0, r13, externStreamInfo-_SDA_BASE_
+/* 80080210 0007D010  38 0D C1 5C */	addi r0, r13, externStreamInfo@sda21
 /* 80080214 0007D014  7C 60 22 14 */	add r3, r0, r4
 /* 80080218 0007D018  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 8008021C 0007D01C  4E 80 00 20 */	blr 
@@ -667,13 +667,13 @@ lbl_80080220:
 setBytesToConsume__FP13FSOUND_STREAMi:
 /* 80080230 0007D030  38 00 00 02 */	li r0, 2
 /* 80080234 0007D034  38 A0 00 00 */	li r5, 0
-/* 80080238 0007D038  38 CD C1 5C */	addi r6, r13, externStreamInfo-_SDA_BASE_
+/* 80080238 0007D038  38 CD C1 5C */	addi r6, r13, externStreamInfo@sda21
 /* 8008023C 0007D03C  7C 09 03 A6 */	mtctr r0
 lbl_80080240:
 /* 80080240 0007D040  7C 06 28 2E */	lwzx r0, r6, r5
 /* 80080244 0007D044  7C 00 18 40 */	cmplw r0, r3
 /* 80080248 0007D048  40 82 00 18 */	bne lbl_80080260
-/* 8008024C 0007D04C  38 0D C1 5C */	addi r0, r13, externStreamInfo-_SDA_BASE_
+/* 8008024C 0007D04C  38 0D C1 5C */	addi r0, r13, externStreamInfo@sda21
 /* 80080250 0007D050  38 60 00 01 */	li r3, 1
 /* 80080254 0007D054  7C A0 2A 14 */	add r5, r0, r5
 /* 80080258 0007D058  90 85 00 04 */	stw r4, 4(r5)
@@ -688,13 +688,13 @@ lbl_80080260:
 setFrontBuffer__FP13FSOUND_STREAMi:
 /* 80080270 0007D070  38 00 00 02 */	li r0, 2
 /* 80080274 0007D074  38 A0 00 00 */	li r5, 0
-/* 80080278 0007D078  38 CD C1 5C */	addi r6, r13, externStreamInfo-_SDA_BASE_
+/* 80080278 0007D078  38 CD C1 5C */	addi r6, r13, externStreamInfo@sda21
 /* 8008027C 0007D07C  7C 09 03 A6 */	mtctr r0
 lbl_80080280:
 /* 80080280 0007D080  7C 06 28 2E */	lwzx r0, r6, r5
 /* 80080284 0007D084  7C 00 18 40 */	cmplw r0, r3
 /* 80080288 0007D088  40 82 00 18 */	bne lbl_800802A0
-/* 8008028C 0007D08C  38 0D C1 5C */	addi r0, r13, externStreamInfo-_SDA_BASE_
+/* 8008028C 0007D08C  38 0D C1 5C */	addi r0, r13, externStreamInfo@sda21
 /* 80080290 0007D090  38 60 00 01 */	li r3, 1
 /* 80080294 0007D094  7C A0 2A 14 */	add r5, r0, r5
 /* 80080298 0007D098  90 85 00 08 */	stw r4, 8(r5)
@@ -709,13 +709,13 @@ lbl_800802A0:
 setDataPtr__FP13FSOUND_STREAMPv:
 /* 800802B0 0007D0B0  38 00 00 02 */	li r0, 2
 /* 800802B4 0007D0B4  38 A0 00 00 */	li r5, 0
-/* 800802B8 0007D0B8  38 CD C1 5C */	addi r6, r13, externStreamInfo-_SDA_BASE_
+/* 800802B8 0007D0B8  38 CD C1 5C */	addi r6, r13, externStreamInfo@sda21
 /* 800802BC 0007D0BC  7C 09 03 A6 */	mtctr r0
 lbl_800802C0:
 /* 800802C0 0007D0C0  7C 06 28 2E */	lwzx r0, r6, r5
 /* 800802C4 0007D0C4  7C 00 18 40 */	cmplw r0, r3
 /* 800802C8 0007D0C8  40 82 00 18 */	bne lbl_800802E0
-/* 800802CC 0007D0CC  38 0D C1 5C */	addi r0, r13, externStreamInfo-_SDA_BASE_
+/* 800802CC 0007D0CC  38 0D C1 5C */	addi r0, r13, externStreamInfo@sda21
 /* 800802D0 0007D0D0  38 60 00 01 */	li r3, 1
 /* 800802D4 0007D0D4  7C A0 2A 14 */	add r5, r0, r5
 /* 800802D8 0007D0D8  90 85 00 0C */	stw r4, 0xc(r5)
@@ -991,7 +991,7 @@ lbl_80080668:
 /* 80080694 0007D494  38 00 00 08 */	li r0, 8
 /* 80080698 0007D498  90 7B 00 14 */	stw r3, 0x14(r27)
 /* 8008069C 0007D49C  38 A0 00 00 */	li r5, 0
-/* 800806A0 0007D4A0  38 8D C1 80 */	addi r4, r13, pTempStreams-_SDA_BASE_
+/* 800806A0 0007D4A0  38 8D C1 80 */	addi r4, r13, pTempStreams@sda21
 /* 800806A4 0007D4A4  7C 09 03 A6 */	mtctr r0
 lbl_800806A8:
 /* 800806A8 0007D4A8  7C 04 18 2E */	lwzx r0, r4, r3
@@ -1171,7 +1171,7 @@ iSndPlayDone__FP13xSndVoiceInfo:
 /* 8008091C 0007D71C  D0 01 00 08 */	stfs f0, 8(r1)
 /* 80080920 0007D720  48 1C 14 35 */	bl FSOUND_3D_SetAttributes
 lbl_80080924:
-/* 80080924 0007D724  80 0D BE 68 */	lwz r0, m_eCurrentEffect-_SDA_BASE_(r13)
+/* 80080924 0007D724  80 0D BE 68 */	lwz r0, m_eCurrentEffect@sda21(r13)
 /* 80080928 0007D728  2C 00 00 01 */	cmpwi r0, 1
 /* 8008092C 0007D72C  40 82 00 80 */	bne lbl_800809AC
 /* 80080930 0007D730  80 1E 00 00 */	lwz r0, 0(r30)
@@ -1191,21 +1191,21 @@ lbl_80080924:
 /* 80080968 0007D768  41 82 00 08 */	beq lbl_80080970
 /* 8008096C 0007D76C  48 00 00 20 */	b lbl_8008098C
 lbl_80080970:
-/* 80080970 0007D770  C0 22 92 38 */	lfs f1, _esc__2_1419_0-_SDA2_BASE_(r2)
-/* 80080974 0007D774  C0 42 92 3C */	lfs f2, _esc__2_1420-_SDA2_BASE_(r2)
-/* 80080978 0007D778  C0 62 92 34 */	lfs f3, _esc__2_978_0-_SDA2_BASE_(r2)
-/* 8008097C 0007D77C  C0 82 92 40 */	lfs f4, _esc__2_1421_1-_SDA2_BASE_(r2)
-/* 80080980 0007D780  C0 A2 92 44 */	lfs f5, _esc__2_1422_0-_SDA2_BASE_(r2)
+/* 80080970 0007D770  C0 22 92 38 */	lfs f1, _esc__2_1419_0@sda21(r2)
+/* 80080974 0007D774  C0 42 92 3C */	lfs f2, _esc__2_1420@sda21(r2)
+/* 80080978 0007D778  C0 62 92 34 */	lfs f3, _esc__2_978_0@sda21(r2)
+/* 8008097C 0007D77C  C0 82 92 40 */	lfs f4, _esc__2_1421_1@sda21(r2)
+/* 80080980 0007D780  C0 A2 92 44 */	lfs f5, _esc__2_1422_0@sda21(r2)
 /* 80080984 0007D784  48 1C 5F 5D */	bl FSOUND_AUXFX_SetReverbHiDpl2
 /* 80080988 0007D788  48 00 00 24 */	b lbl_800809AC
 lbl_8008098C:
-/* 8008098C 0007D78C  C0 62 92 34 */	lfs f3, _esc__2_978_0-_SDA2_BASE_(r2)
+/* 8008098C 0007D78C  C0 62 92 34 */	lfs f3, _esc__2_978_0@sda21(r2)
 /* 80080990 0007D790  38 60 00 00 */	li r3, 0
-/* 80080994 0007D794  C0 22 92 38 */	lfs f1, _esc__2_1419_0-_SDA2_BASE_(r2)
+/* 80080994 0007D794  C0 22 92 38 */	lfs f1, _esc__2_1419_0@sda21(r2)
 /* 80080998 0007D798  FC A0 18 90 */	fmr f5, f3
-/* 8008099C 0007D79C  C0 42 92 3C */	lfs f2, _esc__2_1420-_SDA2_BASE_(r2)
-/* 800809A0 0007D7A0  C0 82 92 40 */	lfs f4, _esc__2_1421_1-_SDA2_BASE_(r2)
-/* 800809A4 0007D7A4  C0 C2 92 44 */	lfs f6, _esc__2_1422_0-_SDA2_BASE_(r2)
+/* 8008099C 0007D79C  C0 42 92 3C */	lfs f2, _esc__2_1420@sda21(r2)
+/* 800809A0 0007D7A0  C0 82 92 40 */	lfs f4, _esc__2_1421_1@sda21(r2)
+/* 800809A4 0007D7A4  C0 C2 92 44 */	lfs f6, _esc__2_1422_0@sda21(r2)
 /* 800809A8 0007D7A8  48 1C 60 99 */	bl FSOUND_AUXFX_SetReverbHi
 lbl_800809AC:
 /* 800809AC 0007D7AC  3C 60 80 35 */	lis r3, gSnd@ha
@@ -1397,7 +1397,7 @@ iSndUpdate__Fv:
 /* 80080C10 0007DA10  3B 80 00 00 */	li r28, 0
 /* 80080C14 0007DA14  3B 20 00 00 */	li r25, 0
 lbl_80080C18:
-/* 80080C18 0007DA18  3B ED C1 80 */	addi r31, r13, pTempStreams-_SDA_BASE_
+/* 80080C18 0007DA18  3B ED C1 80 */	addi r31, r13, pTempStreams@sda21
 /* 80080C1C 0007DA1C  7C 7F C8 2E */	lwzx r3, r31, r25
 /* 80080C20 0007DA20  28 03 00 00 */	cmplwi r3, 0
 /* 80080C24 0007DA24  41 82 00 FC */	beq lbl_80080D20
@@ -1615,8 +1615,8 @@ lbl_80080ED0:
 /* 80080F38 0007DD38  C0 C6 33 4C */	lfs f6, 0x334c(r6)
 /* 80080F3C 0007DD3C  48 1C 10 71 */	bl FSOUND_3D_Listener_SetAttributes
 /* 80080F40 0007DD40  48 1C 01 05 */	bl FSOUND_Update
-/* 80080F44 0007DD44  38 6D BE A8 */	addi r3, r13, gCurrSoundMemoryUsed-_SDA_BASE_
-/* 80080F48 0007DD48  38 8D BE AC */	addi r4, r13, gHighwaterSoundMemoryUsed-_SDA_BASE_
+/* 80080F44 0007DD44  38 6D BE A8 */	addi r3, r13, gCurrSoundMemoryUsed@sda21
+/* 80080F48 0007DD48  38 8D BE AC */	addi r4, r13, gHighwaterSoundMemoryUsed@sda21
 /* 80080F4C 0007DD4C  48 1D 5E B9 */	bl FSOUND_GetMemoryStats
 /* 80080F50 0007DD50  BA A1 00 34 */	lmw r21, 0x34(r1)
 /* 80080F54 0007DD54  80 01 00 64 */	lwz r0, 0x64(r1)
@@ -1647,16 +1647,16 @@ xSndFreqFromXPitch__FfUi:
 /* 80080F9C 0007DD9C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80080FA0 0007DDA0  7C 08 02 A6 */	mflr r0
 /* 80080FA4 0007DDA4  FC 40 08 90 */	fmr f2, f1
-/* 80080FA8 0007DDA8  C0 02 92 4C */	lfs f0, _esc__2_1543-_SDA2_BASE_(r2)
+/* 80080FA8 0007DDA8  C0 02 92 4C */	lfs f0, _esc__2_1543@sda21(r2)
 /* 80080FAC 0007DDAC  90 01 00 24 */	stw r0, 0x24(r1)
-/* 80080FB0 0007DDB0  C0 22 92 48 */	lfs f1, _esc__2_1542-_SDA2_BASE_(r2)
+/* 80080FB0 0007DDB0  C0 22 92 48 */	lfs f1, _esc__2_1542@sda21(r2)
 /* 80080FB4 0007DDB4  EC 42 00 24 */	fdivs f2, f2, f0
 /* 80080FB8 0007DDB8  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 80080FBC 0007DDBC  7C 7F 1B 78 */	mr r31, r3
 /* 80080FC0 0007DDC0  4B F9 09 19 */	bl powf__3stdFff
 /* 80080FC4 0007DDC4  3C 00 43 30 */	lis r0, 0x4330
 /* 80080FC8 0007DDC8  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80080FCC 0007DDCC  C8 42 92 50 */	lfd f2, _esc__2_1545_0-_SDA2_BASE_(r2)
+/* 80080FCC 0007DDCC  C8 42 92 50 */	lfd f2, _esc__2_1545_0@sda21(r2)
 /* 80080FD0 0007DDD0  90 01 00 08 */	stw r0, 8(r1)
 /* 80080FD4 0007DDD4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80080FD8 0007DDD8  C8 01 00 08 */	lfd f0, 8(r1)
@@ -1793,20 +1793,20 @@ lbl_8008116C:
 
 .global iSndVolFromX__Ff
 iSndVolFromX__Ff:
-/* 80081194 0007DF94  C0 02 92 40 */	lfs f0, _esc__2_1421_1-_SDA2_BASE_(r2)
+/* 80081194 0007DF94  C0 02 92 40 */	lfs f0, _esc__2_1421_1@sda21(r2)
 /* 80081198 0007DF98  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008119C 0007DF9C  FC 01 00 40 */	fcmpo cr0, f1, f0
-/* 800811A0 0007DFA0  C0 62 92 58 */	lfs f3, _esc__2_1594-_SDA2_BASE_(r2)
-/* 800811A4 0007DFA4  C0 42 92 5C */	lfs f2, _esc__2_1595-_SDA2_BASE_(r2)
+/* 800811A0 0007DFA0  C0 62 92 58 */	lfs f3, _esc__2_1594@sda21(r2)
+/* 800811A4 0007DFA4  C0 42 92 5C */	lfs f2, _esc__2_1595@sda21(r2)
 /* 800811A8 0007DFA8  40 80 00 08 */	bge lbl_800811B0
 /* 800811AC 0007DFAC  FC 00 08 90 */	fmr f0, f1
 lbl_800811B0:
 /* 800811B0 0007DFB0  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 800811B4 0007DFB4  40 81 00 0C */	ble lbl_800811C0
-/* 800811B8 0007DFB8  C0 22 92 5C */	lfs f1, _esc__2_1595-_SDA2_BASE_(r2)
+/* 800811B8 0007DFB8  C0 22 92 5C */	lfs f1, _esc__2_1595@sda21(r2)
 /* 800811BC 0007DFBC  48 00 00 18 */	b lbl_800811D4
 lbl_800811C0:
-/* 800811C0 0007DFC0  C0 02 92 40 */	lfs f0, _esc__2_1421_1-_SDA2_BASE_(r2)
+/* 800811C0 0007DFC0  C0 02 92 40 */	lfs f0, _esc__2_1421_1@sda21(r2)
 /* 800811C4 0007DFC4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800811C8 0007DFC8  40 80 00 08 */	bge lbl_800811D0
 /* 800811CC 0007DFCC  48 00 00 08 */	b lbl_800811D4
@@ -1864,7 +1864,7 @@ iSndKill__Fv:
 /* 8008127C 0007E07C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80081280 0007E080  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80081284 0007E084  4B FE 52 21 */	bl xSndMgrStopSounds__Fsb
-/* 80081288 0007E088  3B CD C1 80 */	addi r30, r13, pTempStreams-_SDA_BASE_
+/* 80081288 0007E088  3B CD C1 80 */	addi r30, r13, pTempStreams@sda21
 /* 8008128C 0007E08C  3B E0 00 08 */	li r31, 8
 lbl_80081290:
 /* 80081290 0007E090  4B FF F9 71 */	bl iSndUpdate__Fv
@@ -1905,8 +1905,8 @@ iSndSuspend__Fv:
 /* 800812EC 0007E0EC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 800812F0 0007E0F0  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 800812F4 0007E0F4  3B 80 00 00 */	li r28, 0
-/* 800812F8 0007E0F8  3B CD C1 A0 */	addi r30, r13, sOldPauseState-_SDA_BASE_
-/* 800812FC 0007E0FC  3B ED C1 A8 */	addi r31, r13, sOldVolume-_SDA_BASE_
+/* 800812F8 0007E0F8  3B CD C1 A0 */	addi r30, r13, sOldPauseState@sda21
+/* 800812FC 0007E0FC  3B ED C1 A8 */	addi r31, r13, sOldVolume@sda21
 /* 80081300 0007E100  48 00 00 28 */	b lbl_80081328
 lbl_80081304:
 /* 80081304 0007E104  7F 83 E3 78 */	mr r3, r28
@@ -1940,8 +1940,8 @@ iSndResume__Fv:
 /* 80081364 0007E164  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80081368 0007E168  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 8008136C 0007E16C  3B 80 00 00 */	li r28, 0
-/* 80081370 0007E170  3B CD C1 A0 */	addi r30, r13, sOldPauseState-_SDA_BASE_
-/* 80081374 0007E174  3B ED C1 A8 */	addi r31, r13, sOldVolume-_SDA_BASE_
+/* 80081370 0007E170  3B CD C1 A0 */	addi r30, r13, sOldPauseState@sda21
+/* 80081374 0007E174  3B ED C1 A8 */	addi r31, r13, sOldVolume@sda21
 /* 80081378 0007E178  48 00 00 38 */	b lbl_800813B0
 lbl_8008137C:
 /* 8008137C 0007E17C  7F 9D 07 34 */	extsh r29, r28

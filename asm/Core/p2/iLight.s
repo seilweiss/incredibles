@@ -21,7 +21,7 @@ _esc__2_613_1:
 
 .global iLightInit__FP7RpWorld
 iLightInit__FP7RpWorld:
-/* 800764E0 000732E0  90 6D C0 30 */	stw r3, gLightWorld-_SDA_BASE_(r13)
+/* 800764E0 000732E0  90 6D C0 30 */	stw r3, gLightWorld@sda21(r13)
 /* 800764E4 000732E4  4E 80 00 20 */	blr 
 
 .global iLightCreate__FP6iLightUi
@@ -85,8 +85,8 @@ lbl_8007658C:
 /* 800765A8 000733A8  48 21 E4 71 */	bl RwFrameUpdateObjects
 /* 800765AC 000733AC  93 DD 00 00 */	stw r30, 0(r29)
 /* 800765B0 000733B0  7F A3 EB 78 */	mr r3, r29
-/* 800765B4 000733B4  C0 22 91 38 */	lfs f1, _esc__2_612-_SDA2_BASE_(r2)
-/* 800765B8 000733B8  C0 02 91 3C */	lfs f0, _esc__2_613_1-_SDA2_BASE_(r2)
+/* 800765B4 000733B4  C0 22 91 38 */	lfs f1, _esc__2_612@sda21(r2)
+/* 800765B8 000733B8  C0 02 91 3C */	lfs f0, _esc__2_613_1@sda21(r2)
 /* 800765BC 000733BC  D0 3D 00 08 */	stfs f1, 8(r29)
 /* 800765C0 000733C0  D0 3D 00 0C */	stfs f1, 0xc(r29)
 /* 800765C4 000733C4  D0 3D 00 10 */	stfs f1, 0x10(r29)
@@ -118,11 +118,11 @@ iLightModify__FP6iLightUi:
 /* 8007661C 0007341C  41 82 00 4C */	beq lbl_80076668
 /* 80076620 00073420  80 BD 00 04 */	lwz r5, 4(r29)
 /* 80076624 00073424  38 61 00 08 */	addi r3, r1, 8
-/* 80076628 00073428  38 82 89 F0 */	addi r4, r2, g_O3-_SDA2_BASE_
+/* 80076628 00073428  38 82 89 F0 */	addi r4, r2, g_O3@sda21
 /* 8007662C 0007342C  83 E5 00 04 */	lwz r31, 4(r5)
 /* 80076630 00073430  4B F9 4A 79 */	bl __as__5xVec3FRC5xVec3
 /* 80076634 00073434  38 61 00 18 */	addi r3, r1, 0x18
-/* 80076638 00073438  38 82 89 F0 */	addi r4, r2, g_O3-_SDA2_BASE_
+/* 80076638 00073438  38 82 89 F0 */	addi r4, r2, g_O3@sda21
 /* 8007663C 0007343C  4B F9 4A 6D */	bl __as__5xVec3FRC5xVec3
 /* 80076640 00073440  38 61 00 28 */	addi r3, r1, 0x28
 /* 80076644 00073444  38 9D 00 2C */	addi r4, r29, 0x2c

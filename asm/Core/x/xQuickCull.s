@@ -33,7 +33,7 @@ xQuickCullInit__FP10xQCControlffffff:
 /* 80054160 00050F60  D0 23 00 00 */	stfs f1, 0(r3)
 /* 80054164 00050F64  ED 24 08 28 */	fsubs f9, f4, f1
 /* 80054168 00050F68  ED 05 10 28 */	fsubs f8, f5, f2
-/* 8005416C 00050F6C  C0 E2 8B 98 */	lfs f7, _esc__2_603-_SDA2_BASE_(r2)
+/* 8005416C 00050F6C  C0 E2 8B 98 */	lfs f7, _esc__2_603@sda21(r2)
 /* 80054170 00050F70  D0 43 00 04 */	stfs f2, 4(r3)
 /* 80054174 00050F74  EC 06 18 28 */	fsubs f0, f6, f3
 /* 80054178 00050F78  D0 63 00 08 */	stfs f3, 8(r3)
@@ -56,16 +56,16 @@ xQuickCullInit__FP10xQCControlffffff:
 /* 800541BC 00050FBC  4C 40 13 82 */	cror 2, 0, 2
 /* 800541C0 00050FC0  40 82 00 14 */	bne lbl_800541D4
 lbl_800541C4:
-/* 800541C4 00050FC4  C0 02 8B 9C */	lfs f0, _esc__2_604-_SDA2_BASE_(r2)
+/* 800541C4 00050FC4  C0 02 8B 9C */	lfs f0, _esc__2_604@sda21(r2)
 /* 800541C8 00050FC8  D0 03 00 20 */	stfs f0, 0x20(r3)
 /* 800541CC 00050FCC  D0 03 00 1C */	stfs f0, 0x1c(r3)
 /* 800541D0 00050FD0  D0 03 00 18 */	stfs f0, 0x18(r3)
 lbl_800541D4:
-/* 800541D4 00050FD4  C0 E2 8B A0 */	lfs f7, _esc__2_605-_SDA2_BASE_(r2)
+/* 800541D4 00050FD4  C0 E2 8B A0 */	lfs f7, _esc__2_605@sda21(r2)
 /* 800541D8 00050FD8  EC 84 08 2A */	fadds f4, f4, f1
 /* 800541DC 00050FDC  C0 03 00 18 */	lfs f0, 0x18(r3)
 /* 800541E0 00050FE0  EC 45 10 2A */	fadds f2, f5, f2
-/* 800541E4 00050FE4  C0 A2 8B A4 */	lfs f5, _esc__2_606-_SDA2_BASE_(r2)
+/* 800541E4 00050FE4  C0 A2 8B A4 */	lfs f5, _esc__2_606@sda21(r2)
 /* 800541E8 00050FE8  EC 26 18 2A */	fadds f1, f6, f3
 /* 800541EC 00050FEC  EC 07 00 24 */	fdivs f0, f7, f0
 /* 800541F0 00050FF0  D0 03 00 24 */	stfs f0, 0x24(r3)
@@ -470,7 +470,7 @@ lbl_800546F0:
 xQuickCullForSphere__FP10xQCControlP7xQCDataPC7xSphere:
 /* 80054768 00051568  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 8005476C 0005156C  7C 08 02 A6 */	mflr r0
-/* 80054770 00051570  C0 22 8B A8 */	lfs f1, _esc__2_779-_SDA2_BASE_(r2)
+/* 80054770 00051570  C0 22 8B A8 */	lfs f1, _esc__2_779@sda21(r2)
 /* 80054774 00051574  C0 05 00 0C */	lfs f0, 0xc(r5)
 /* 80054778 00051578  90 01 00 74 */	stw r0, 0x74(r1)
 /* 8005477C 0005157C  ED 01 00 2A */	fadds f8, f1, f0

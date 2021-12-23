@@ -64,12 +64,12 @@ zLightResetAll__FP4xEnv:
 /* 800DD130 000D9F30  38 64 6C F8 */	addi r3, r4, sLight@l
 /* 800DD134 000D9F34  38 80 00 00 */	li r4, 0
 /* 800DD138 000D9F38  4B F2 5F C9 */	bl memset
-/* 800DD13C 000D9F3C  80 8D C9 FC */	lwz r4, sPartitionVolume-_SDA_BASE_(r13)
+/* 800DD13C 000D9F3C  80 8D C9 FC */	lwz r4, sPartitionVolume@sda21(r13)
 /* 800DD140 000D9F40  38 00 00 00 */	li r0, 0
-/* 800DD144 000D9F44  90 0D C9 B8 */	stw r0, sLightTotal-_SDA_BASE_(r13)
+/* 800DD144 000D9F44  90 0D C9 B8 */	stw r0, sLightTotal@sda21(r13)
 /* 800DD148 000D9F48  28 04 00 00 */	cmplwi r4, 0
 /* 800DD14C 000D9F4C  41 82 00 1C */	beq lbl_800DD168
-/* 800DD150 000D9F50  38 6D C9 BC */	addi r3, r13, sLightPart-_SDA_BASE_
+/* 800DD150 000D9F50  38 6D C9 BC */	addi r3, r13, sLightPart@sda21
 /* 800DD154 000D9F54  38 A0 00 0A */	li r5, 0xa
 /* 800DD158 000D9F58  38 C0 00 01 */	li r6, 1
 /* 800DD15C 000D9F5C  38 E0 00 0A */	li r7, 0xa
@@ -77,7 +77,7 @@ zLightResetAll__FP4xEnv:
 /* 800DD164 000D9F64  48 00 00 1C */	b lbl_800DD180
 lbl_800DD168:
 /* 800DD168 000D9F68  7F E4 FB 78 */	mr r4, r31
-/* 800DD16C 000D9F6C  38 6D C9 BC */	addi r3, r13, sLightPart-_SDA_BASE_
+/* 800DD16C 000D9F6C  38 6D C9 BC */	addi r3, r13, sLightPart@sda21
 /* 800DD170 000D9F70  38 A0 00 0A */	li r5, 0xa
 /* 800DD174 000D9F74  38 C0 00 01 */	li r6, 1
 /* 800DD178 000D9F78  38 E0 00 0A */	li r7, 0xa
@@ -153,13 +153,13 @@ lbl_800DD250:
 /* 800DD254 000DA054  4B F9 92 95 */	bl iLightCreate__FP6iLightUi
 /* 800DD258 000DA058  28 03 00 00 */	cmplwi r3, 0
 /* 800DD25C 000DA05C  41 82 00 F8 */	beq lbl_800DD354
-/* 800DD260 000DA060  80 CD C9 B8 */	lwz r6, sLightTotal-_SDA_BASE_(r13)
+/* 800DD260 000DA060  80 CD C9 B8 */	lwz r6, sLightTotal@sda21(r13)
 /* 800DD264 000DA064  3C 60 80 37 */	lis r3, sLight@ha
 /* 800DD268 000DA068  38 A3 6C F8 */	addi r5, r3, sLight@l
 /* 800DD26C 000DA06C  38 7F 00 18 */	addi r3, r31, 0x18
 /* 800DD270 000DA070  38 86 00 01 */	addi r4, r6, 1
 /* 800DD274 000DA074  54 C0 10 3A */	slwi r0, r6, 2
-/* 800DD278 000DA078  90 8D C9 B8 */	stw r4, sLightTotal-_SDA_BASE_(r13)
+/* 800DD278 000DA078  90 8D C9 B8 */	stw r4, sLightTotal@sda21(r13)
 /* 800DD27C 000DA07C  38 80 00 1F */	li r4, 0x1f
 /* 800DD280 000DA080  7F E5 01 2E */	stwx r31, r5, r0
 /* 800DD284 000DA084  C0 1E 00 30 */	lfs f0, 0x30(r30)
@@ -198,7 +198,7 @@ lbl_800DD300:
 /* 800DD304 000DA104  88 03 00 09 */	lbz r0, 9(r3)
 /* 800DD308 000DA108  28 00 00 00 */	cmplwi r0, 0
 /* 800DD30C 000DA10C  41 82 00 2C */	beq lbl_800DD338
-/* 800DD310 000DA110  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 800DD310 000DA110  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 800DD314 000DA114  38 80 00 20 */	li r4, 0x20
 /* 800DD318 000DA118  38 A0 00 00 */	li r5, 0
 /* 800DD31C 000DA11C  4B F6 C8 45 */	bl xMemAlloc__FUiUii
@@ -214,7 +214,7 @@ lbl_800DD338:
 lbl_800DD340:
 /* 800DD340 000DA140  7F E4 FB 78 */	mr r4, r31
 /* 800DD344 000DA144  38 BF 00 20 */	addi r5, r31, 0x20
-/* 800DD348 000DA148  38 6D C9 BC */	addi r3, r13, sLightPart-_SDA_BASE_
+/* 800DD348 000DA148  38 6D C9 BC */	addi r3, r13, sLightPart@sda21
 /* 800DD34C 000DA14C  4B F7 30 A5 */	bl xPartitionInsert__FP13_tagPartitionPvP5xVec3
 /* 800DD350 000DA150  90 7F 00 58 */	stw r3, 0x58(r31)
 lbl_800DD354:
@@ -251,7 +251,7 @@ lbl_800DD3B4:
 /* 800DD3B4 000DA1B4  3B 9C 00 01 */	addi r28, r28, 1
 /* 800DD3B8 000DA1B8  3B FF 00 04 */	addi r31, r31, 4
 lbl_800DD3BC:
-/* 800DD3BC 000DA1BC  80 0D C9 B8 */	lwz r0, sLightTotal-_SDA_BASE_(r13)
+/* 800DD3BC 000DA1BC  80 0D C9 B8 */	lwz r0, sLightTotal@sda21(r13)
 /* 800DD3C0 000DA1C0  7C 1C 00 00 */	cmpw r28, r0
 /* 800DD3C4 000DA1C4  41 80 FF CC */	blt lbl_800DD390
 /* 800DD3C8 000DA1C8  BB 61 00 0C */	lmw r27, 0xc(r1)
@@ -270,21 +270,21 @@ zLightDestroyAll__Fv:
 /* 800DD3F0 000DA1F0  3B C3 6C F8 */	addi r30, r3, sLight@l
 /* 800DD3F4 000DA1F4  3B 80 00 00 */	li r28, 0
 /* 800DD3F8 000DA1F8  3B E0 00 00 */	li r31, 0
-/* 800DD3FC 000DA1FC  83 AD C9 B8 */	lwz r29, sLightTotal-_SDA_BASE_(r13)
+/* 800DD3FC 000DA1FC  83 AD C9 B8 */	lwz r29, sLightTotal@sda21(r13)
 /* 800DD400 000DA200  48 00 00 20 */	b lbl_800DD420
 lbl_800DD404:
 /* 800DD404 000DA204  7C 7E F8 2E */	lwzx r3, r30, r31
 /* 800DD408 000DA208  48 00 00 3D */	bl zLightDestroy__FP7_zLight
-/* 800DD40C 000DA20C  80 6D C9 B8 */	lwz r3, sLightTotal-_SDA_BASE_(r13)
+/* 800DD40C 000DA20C  80 6D C9 B8 */	lwz r3, sLightTotal@sda21(r13)
 /* 800DD410 000DA210  3B 9C 00 01 */	addi r28, r28, 1
 /* 800DD414 000DA214  3B FF 00 04 */	addi r31, r31, 4
 /* 800DD418 000DA218  38 03 FF FF */	addi r0, r3, -1
-/* 800DD41C 000DA21C  90 0D C9 B8 */	stw r0, sLightTotal-_SDA_BASE_(r13)
+/* 800DD41C 000DA21C  90 0D C9 B8 */	stw r0, sLightTotal@sda21(r13)
 lbl_800DD420:
 /* 800DD420 000DA220  7C 1C E8 00 */	cmpw r28, r29
 /* 800DD424 000DA224  41 80 FF E0 */	blt lbl_800DD404
 /* 800DD428 000DA228  38 00 00 00 */	li r0, 0
-/* 800DD42C 000DA22C  90 0D C9 B8 */	stw r0, sLightTotal-_SDA_BASE_(r13)
+/* 800DD42C 000DA22C  90 0D C9 B8 */	stw r0, sLightTotal@sda21(r13)
 /* 800DD430 000DA230  BB 81 00 10 */	lmw r28, 0x10(r1)
 /* 800DD434 000DA234  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800DD438 000DA238  7C 08 03 A6 */	mtlr r0
@@ -408,7 +408,7 @@ zLightUpdate__FP5xBaseP6xScenef:
 /* 800DD5B0 000DA3B0  80 A3 00 00 */	lwz r5, 0(r3)
 /* 800DD5B4 000DA3B4  38 81 00 08 */	addi r4, r1, 8
 /* 800DD5B8 000DA3B8  80 03 00 04 */	lwz r0, 4(r3)
-/* 800DD5BC 000DA3BC  C0 02 A3 20 */	lfs f0, _esc__2_1043_4-_SDA2_BASE_(r2)
+/* 800DD5BC 000DA3BC  C0 02 A3 20 */	lfs f0, _esc__2_1043_4@sda21(r2)
 /* 800DD5C0 000DA3C0  90 01 00 0C */	stw r0, 0xc(r1)
 /* 800DD5C4 000DA3C4  C0 21 00 0C */	lfs f1, 0xc(r1)
 /* 800DD5C8 000DA3C8  90 A1 00 08 */	stw r5, 8(r1)
@@ -424,7 +424,7 @@ zLightUpdate__FP5xBaseP6xScenef:
 /* 800DD5F0 000DA3F0  80 BF 00 58 */	lwz r5, 0x58(r31)
 /* 800DD5F4 000DA3F4  7F E4 FB 78 */	mr r4, r31
 /* 800DD5F8 000DA3F8  38 C1 00 08 */	addi r6, r1, 8
-/* 800DD5FC 000DA3FC  38 6D C9 BC */	addi r3, r13, sLightPart-_SDA_BASE_
+/* 800DD5FC 000DA3FC  38 6D C9 BC */	addi r3, r13, sLightPart@sda21
 /* 800DD600 000DA400  4B F7 2E ED */	bl xPartitionUpdate__FP13_tagPartitionPviP5xVec3
 /* 800DD604 000DA404  90 7F 00 58 */	stw r3, 0x58(r31)
 lbl_800DD608:
@@ -472,35 +472,35 @@ lbl_800DD674:
 /* 800DD698 000DA498  38 80 00 01 */	li r4, 1
 /* 800DD69C 000DA49C  7F 63 DB 78 */	mr r3, r27
 /* 800DD6A0 000DA4A0  4B F9 90 F5 */	bl iLightEnv__FP6iLighti
-/* 800DD6A4 000DA4A4  80 AD C0 30 */	lwz r5, gLightWorld-_SDA_BASE_(r13)
+/* 800DD6A4 000DA4A4  80 AD C0 30 */	lwz r5, gLightWorld@sda21(r13)
 /* 800DD6A8 000DA4A8  3C 60 80 37 */	lis r3, gTemporaryLights@ha
 /* 800DD6AC 000DA4AC  80 9B 00 04 */	lwz r4, 4(r27)
 /* 800DD6B0 000DA4B0  38 63 6D 78 */	addi r3, r3, gTemporaryLights@l
 /* 800DD6B4 000DA4B4  80 05 00 40 */	lwz r0, 0x40(r5)
 /* 800DD6B8 000DA4B8  90 04 00 38 */	stw r0, 0x38(r4)
-/* 800DD6BC 000DA4BC  80 AD C0 30 */	lwz r5, gLightWorld-_SDA_BASE_(r13)
+/* 800DD6BC 000DA4BC  80 AD C0 30 */	lwz r5, gLightWorld@sda21(r13)
 /* 800DD6C0 000DA4C0  80 9B 00 04 */	lwz r4, 4(r27)
 /* 800DD6C4 000DA4C4  38 05 00 3C */	addi r0, r5, 0x3c
 /* 800DD6C8 000DA4C8  90 04 00 34 */	stw r0, 0x34(r4)
-/* 800DD6CC 000DA4CC  80 8D C0 30 */	lwz r4, gLightWorld-_SDA_BASE_(r13)
+/* 800DD6CC 000DA4CC  80 8D C0 30 */	lwz r4, gLightWorld@sda21(r13)
 /* 800DD6D0 000DA4D0  80 BB 00 04 */	lwz r5, 4(r27)
 /* 800DD6D4 000DA4D4  80 84 00 40 */	lwz r4, 0x40(r4)
 /* 800DD6D8 000DA4D8  38 05 00 34 */	addi r0, r5, 0x34
 /* 800DD6DC 000DA4DC  90 04 00 00 */	stw r0, 0(r4)
 /* 800DD6E0 000DA4E0  80 BB 00 04 */	lwz r5, 4(r27)
-/* 800DD6E4 000DA4E4  80 8D C0 30 */	lwz r4, gLightWorld-_SDA_BASE_(r13)
+/* 800DD6E4 000DA4E4  80 8D C0 30 */	lwz r4, gLightWorld@sda21(r13)
 /* 800DD6E8 000DA4E8  38 05 00 34 */	addi r0, r5, 0x34
 /* 800DD6EC 000DA4EC  90 04 00 40 */	stw r0, 0x40(r4)
-/* 800DD6F0 000DA4F0  80 AD CA 00 */	lwz r5, gNumTemporaryLights-_SDA_BASE_(r13)
+/* 800DD6F0 000DA4F0  80 AD CA 00 */	lwz r5, gNumTemporaryLights@sda21(r13)
 /* 800DD6F4 000DA4F4  54 A4 10 3A */	slwi r4, r5, 2
 /* 800DD6F8 000DA4F8  38 05 00 01 */	addi r0, r5, 1
 /* 800DD6FC 000DA4FC  7F A3 21 2E */	stwx r29, r3, r4
-/* 800DD700 000DA500  90 0D CA 00 */	stw r0, gNumTemporaryLights-_SDA_BASE_(r13)
+/* 800DD700 000DA500  90 0D CA 00 */	stw r0, gNumTemporaryLights@sda21(r13)
 lbl_800DD704:
 /* 800DD704 000DA504  3B DE 00 01 */	addi r30, r30, 1
 /* 800DD708 000DA508  3B 9C 00 04 */	addi r28, r28, 4
 lbl_800DD70C:
-/* 800DD70C 000DA50C  80 0D C9 B8 */	lwz r0, sLightTotal-_SDA_BASE_(r13)
+/* 800DD70C 000DA50C  80 0D C9 B8 */	lwz r0, sLightTotal@sda21(r13)
 /* 800DD710 000DA510  7C 1E 00 00 */	cmpw r30, r0
 /* 800DD714 000DA514  41 80 FF 60 */	blt lbl_800DD674
 /* 800DD718 000DA518  BB 61 00 0C */	lmw r27, 0xc(r1)
@@ -519,7 +519,7 @@ zLightAddLocal__FP4xEnt:
 /* 800DD740 000DA540  4B F4 94 E1 */	bl xEntGetPos__FPC4xEnt
 /* 800DD744 000DA544  80 83 00 00 */	lwz r4, 0(r3)
 /* 800DD748 000DA548  80 03 00 04 */	lwz r0, 4(r3)
-/* 800DD74C 000DA54C  C0 02 A3 20 */	lfs f0, _esc__2_1043_4-_SDA2_BASE_(r2)
+/* 800DD74C 000DA54C  C0 02 A3 20 */	lfs f0, _esc__2_1043_4@sda21(r2)
 /* 800DD750 000DA550  90 01 00 0C */	stw r0, 0xc(r1)
 /* 800DD754 000DA554  C0 21 00 0C */	lfs f1, 0xc(r1)
 /* 800DD758 000DA558  90 81 00 08 */	stw r4, 8(r1)
@@ -530,7 +530,7 @@ zLightAddLocal__FP4xEnt:
 /* 800DD76C 000DA56C  80 1F 00 CC */	lwz r0, 0xcc(r31)
 /* 800DD770 000DA570  28 00 00 00 */	cmplwi r0, 0
 /* 800DD774 000DA574  40 82 00 34 */	bne lbl_800DD7A8
-/* 800DD778 000DA578  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 800DD778 000DA578  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 800DD77C 000DA57C  38 80 00 2C */	li r4, 0x2c
 /* 800DD780 000DA580  38 A0 00 00 */	li r5, 0
 /* 800DD784 000DA584  4B F6 C3 DD */	bl xMemAlloc__FUiUii
@@ -539,12 +539,12 @@ zLightAddLocal__FP4xEnt:
 /* 800DD790 000DA590  80 7F 00 CC */	lwz r3, 0xcc(r31)
 /* 800DD794 000DA594  4B F2 D9 15 */	bl __as__5xVec3FRC5xVec3
 /* 800DD798 000DA598  80 7F 00 CC */	lwz r3, 0xcc(r31)
-/* 800DD79C 000DA59C  38 8D 91 80 */	addi r4, r13, sDefaultShadowVec-_SDA_BASE_
+/* 800DD79C 000DA59C  38 8D 91 80 */	addi r4, r13, sDefaultShadowVec@sda21
 /* 800DD7A0 000DA5A0  38 63 00 0C */	addi r3, r3, 0xc
 /* 800DD7A4 000DA5A4  4B F2 D9 05 */	bl __as__5xVec3FRC5xVec3
 lbl_800DD7A8:
 /* 800DD7A8 000DA5A8  80 7F 00 CC */	lwz r3, 0xcc(r31)
-/* 800DD7AC 000DA5AC  C0 22 A3 20 */	lfs f1, _esc__2_1043_4-_SDA2_BASE_(r2)
+/* 800DD7AC 000DA5AC  C0 22 A3 20 */	lfs f1, _esc__2_1043_4@sda21(r2)
 /* 800DD7B0 000DA5B0  38 83 00 0C */	addi r4, r3, 0xc
 /* 800DD7B4 000DA5B4  4B F8 2C 5D */	bl xShadowSetLight__FP5xVec3P5xVec3f
 /* 800DD7B8 000DA5B8  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -558,7 +558,7 @@ zLightRemoveLocalEnv__Fv:
 /* 800DD7CC 000DA5CC  38 80 00 00 */	li r4, 0
 /* 800DD7D0 000DA5D0  48 00 00 28 */	b lbl_800DD7F8
 lbl_800DD7D4:
-/* 800DD7D4 000DA5D4  80 6D C0 30 */	lwz r3, gLightWorld-_SDA_BASE_(r13)
+/* 800DD7D4 000DA5D4  80 6D C0 30 */	lwz r3, gLightWorld@sda21(r13)
 /* 800DD7D8 000DA5D8  38 84 00 01 */	addi r4, r4, 1
 /* 800DD7DC 000DA5DC  80 A3 00 40 */	lwz r5, 0x40(r3)
 /* 800DD7E0 000DA5E0  80 05 00 00 */	lwz r0, 0(r5)
@@ -568,11 +568,11 @@ lbl_800DD7D4:
 /* 800DD7F0 000DA5F0  80 65 00 00 */	lwz r3, 0(r5)
 /* 800DD7F4 000DA5F4  90 03 00 04 */	stw r0, 4(r3)
 lbl_800DD7F8:
-/* 800DD7F8 000DA5F8  80 0D CA 00 */	lwz r0, gNumTemporaryLights-_SDA_BASE_(r13)
+/* 800DD7F8 000DA5F8  80 0D CA 00 */	lwz r0, gNumTemporaryLights@sda21(r13)
 /* 800DD7FC 000DA5FC  7C 04 00 00 */	cmpw r4, r0
 /* 800DD800 000DA600  41 80 FF D4 */	blt lbl_800DD7D4
 /* 800DD804 000DA604  38 00 00 00 */	li r0, 0
-/* 800DD808 000DA608  90 0D CA 00 */	stw r0, gNumTemporaryLights-_SDA_BASE_(r13)
+/* 800DD808 000DA608  90 0D CA 00 */	stw r0, gNumTemporaryLights@sda21(r13)
 /* 800DD80C 000DA60C  4E 80 00 20 */	blr 
 
 .global zLightSetVolume__FP7zVolume
@@ -584,7 +584,7 @@ zLightSetVolume__FP7zVolume:
 /* 800DD820 000DA620  7C 7F 1B 79 */	or. r31, r3, r3
 /* 800DD824 000DA624  40 82 00 10 */	bne lbl_800DD834
 /* 800DD828 000DA628  38 00 00 00 */	li r0, 0
-/* 800DD82C 000DA62C  90 0D C9 FC */	stw r0, sPartitionVolume-_SDA_BASE_(r13)
+/* 800DD82C 000DA62C  90 0D C9 FC */	stw r0, sPartitionVolume@sda21(r13)
 /* 800DD830 000DA630  48 00 00 20 */	b lbl_800DD850
 lbl_800DD834:
 /* 800DD834 000DA634  3C 60 80 2E */	lis r3, _esc__2_stringBase0_63@ha
@@ -593,7 +593,7 @@ lbl_800DD834:
 /* 800DD840 000DA640  80 1F 00 00 */	lwz r0, 0(r31)
 /* 800DD844 000DA644  7C 00 18 40 */	cmplw r0, r3
 /* 800DD848 000DA648  40 82 00 08 */	bne lbl_800DD850
-/* 800DD84C 000DA64C  93 ED C9 FC */	stw r31, sPartitionVolume-_SDA_BASE_(r13)
+/* 800DD84C 000DA64C  93 ED C9 FC */	stw r31, sPartitionVolume@sda21(r13)
 lbl_800DD850:
 /* 800DD850 000DA650  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800DD854 000DA654  83 E1 00 0C */	lwz r31, 0xc(r1)

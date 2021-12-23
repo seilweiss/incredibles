@@ -130,7 +130,7 @@ lbl_801F428C:
 /* 801F4294 001F1094  38 A4 42 4F */	addi r5, r4, 0x484F424F@l
 /* 801F4298 001F1098  90 61 00 0C */	stw r3, 0xc(r1)
 /* 801F429C 001F109C  38 81 00 08 */	addi r4, r1, 8
-/* 801F42A0 001F10A0  38 6D DF 88 */	addi r3, r13, particle_batch_group__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_
+/* 801F42A0 001F10A0  38 6D DF 88 */	addi r3, r13, particle_batch_group__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21
 /* 801F42A4 001F10A4  90 A1 00 1C */	stw r5, 0x1c(r1)
 /* 801F42A8 001F10A8  93 A1 00 20 */	stw r29, 0x20(r1)
 /* 801F42AC 001F10AC  93 C1 00 24 */	stw r30, 0x24(r1)
@@ -166,7 +166,7 @@ update_spark_particles__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_FPUc
 /* 801F4318 001F1118  7C BF 2B 78 */	mr r31, r5
 /* 801F431C 001F111C  83 65 00 28 */	lwz r27, 0x28(r5)
 /* 801F4320 001F1120  7F 3A 02 14 */	add r25, r26, r0
-/* 801F4324 001F1124  C3 E2 D8 9C */	lfs f31, _esc__2_955_4-_SDA2_BASE_(r2)
+/* 801F4324 001F1124  C3 E2 D8 9C */	lfs f31, _esc__2_955_4@sda21(r2)
 /* 801F4328 001F1128  48 00 01 50 */	b lbl_801F4478
 lbl_801F432C:
 /* 801F432C 001F112C  C0 1A 00 00 */	lfs f0, 0(r26)
@@ -188,7 +188,7 @@ lbl_801F4364:
 /* 801F4368 001F1168  EC 44 01 32 */	fmuls f2, f4, f4
 /* 801F436C 001F116C  C0 1A 00 0C */	lfs f0, 0xc(r26)
 /* 801F4370 001F1170  38 61 00 08 */	addi r3, r1, 8
-/* 801F4374 001F1174  C0 62 D8 A0 */	lfs f3, _esc__2_1071_3-_SDA2_BASE_(r2)
+/* 801F4374 001F1174  C0 62 D8 A0 */	lfs f3, _esc__2_1071_3@sda21(r2)
 /* 801F4378 001F1178  38 81 00 18 */	addi r4, r1, 0x18
 /* 801F437C 001F117C  EC 01 01 3A */	fmadds f0, f1, f4, f0
 /* 801F4380 001F1180  D0 01 00 18 */	stfs f0, 0x18(r1)
@@ -206,7 +206,7 @@ lbl_801F4364:
 /* 801F43B0 001F11B0  4B E1 FC 2D */	bl __as__5RwV3dFRC5RwV3d
 /* 801F43B4 001F11B4  C0 01 00 24 */	lfs f0, 0x24(r1)
 /* 801F43B8 001F11B8  38 81 00 08 */	addi r4, r1, 8
-/* 801F43BC 001F11BC  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801F43BC 001F11BC  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801F43C0 001F11C0  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 801F43C4 001F11C4  80 63 00 04 */	lwz r3, 4(r3)
 /* 801F43C8 001F11C8  80 63 00 00 */	lwz r3, 0(r3)
@@ -236,8 +236,8 @@ lbl_801F4410:
 /* 801F4424 001F1224  7F 9C 1A 14 */	add r28, r28, r3
 /* 801F4428 001F1228  7F 7B 02 14 */	add r27, r27, r0
 lbl_801F442C:
-/* 801F442C 001F122C  C0 02 D8 9C */	lfs f0, _esc__2_955_4-_SDA2_BASE_(r2)
-/* 801F4430 001F1230  C0 22 D8 A4 */	lfs f1, _esc__2_1072_0-_SDA2_BASE_(r2)
+/* 801F442C 001F122C  C0 02 D8 9C */	lfs f0, _esc__2_955_4@sda21(r2)
+/* 801F4430 001F1230  C0 22 D8 A4 */	lfs f1, _esc__2_1072_0@sda21(r2)
 /* 801F4434 001F1234  EC 00 F0 28 */	fsubs f0, f0, f30
 /* 801F4438 001F1238  EC 21 00 32 */	fmuls f1, f1, f0
 /* 801F443C 001F123C  48 00 69 B9 */	bl __cvt_fp2unsigned
@@ -304,27 +304,27 @@ zParticleCustomEmitSpark__FPC5xVec3PC5xVec3ifffff:
 /* 801F4518 001F1318  F2 E1 00 48 */	psq_st f23, 72(r1), 0, qr0
 /* 801F451C 001F131C  BF 21 00 24 */	stmw r25, 0x24(r1)
 /* 801F4520 001F1320  7C BB 2B 78 */	mr r27, r5
-/* 801F4524 001F1324  C0 02 D8 A8 */	lfs f0, _esc__2_1106_1-_SDA2_BASE_(r2)
+/* 801F4524 001F1324  C0 02 D8 A8 */	lfs f0, _esc__2_1106_1@sda21(r2)
 /* 801F4528 001F1328  6F 60 80 00 */	xoris r0, r27, 0x8000
 /* 801F452C 001F132C  3F C0 43 30 */	lis r30, 0x4330
 /* 801F4530 001F1330  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F4534 001F1334  FF A0 08 90 */	fmr f29, f1
-/* 801F4538 001F1338  C8 22 D8 B0 */	lfd f1, _esc__2_1110_2-_SDA2_BASE_(r2)
+/* 801F4538 001F1338  C8 22 D8 B0 */	lfd f1, _esc__2_1110_2@sda21(r2)
 /* 801F453C 001F133C  FF E0 18 90 */	fmr f31, f3
 /* 801F4540 001F1340  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 801F4544 001F1344  EF C2 00 32 */	fmuls f30, f2, f0
 /* 801F4548 001F1348  EE E4 00 32 */	fmuls f23, f4, f0
 /* 801F454C 001F134C  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 801F4550 001F1350  7C 79 1B 78 */	mr r25, r3
-/* 801F4554 001F1354  C3 42 D8 98 */	lfs f26, _esc__2_954_6-_SDA2_BASE_(r2)
+/* 801F4554 001F1354  C3 42 D8 98 */	lfs f26, _esc__2_954_6@sda21(r2)
 /* 801F4558 001F1358  7C 9A 23 78 */	mr r26, r4
 /* 801F455C 001F135C  EC 00 08 28 */	fsubs f0, f0, f1
-/* 801F4560 001F1360  CB 62 D8 B8 */	lfd f27, _esc__2_1111_2-_SDA2_BASE_(r2)
-/* 801F4564 001F1364  C3 82 D8 9C */	lfs f28, _esc__2_955_4-_SDA2_BASE_(r2)
+/* 801F4560 001F1360  CB 62 D8 B8 */	lfd f27, _esc__2_1111_2@sda21(r2)
+/* 801F4564 001F1364  C3 82 D8 9C */	lfs f28, _esc__2_955_4@sda21(r2)
 /* 801F4568 001F1368  EF 25 00 24 */	fdivs f25, f5, f0
 /* 801F456C 001F136C  48 00 00 A0 */	b lbl_801F460C
 lbl_801F4570:
-/* 801F4570 001F1370  80 6D DF 90 */	lwz r3, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F4570 001F1370  80 6D DF 90 */	lwz r3, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21(r13)
 /* 801F4574 001F1374  7F 64 DB 78 */	mr r4, r27
 /* 801F4578 001F1378  38 A1 00 08 */	addi r5, r1, 8
 /* 801F457C 001F137C  4B F8 0F 69 */	bl xParticleBatchEmit__FiiPPUc
@@ -444,7 +444,7 @@ update_glint_particles__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_FPUc
 /* 801F4728 001F1528  C3 A3 00 30 */	lfs f29, 0x30(r3)
 /* 801F472C 001F152C  C3 83 00 34 */	lfs f28, 0x34(r3)
 /* 801F4730 001F1530  C3 63 00 38 */	lfs f27, 0x38(r3)
-/* 801F4734 001F1534  C3 C2 D8 9C */	lfs f30, _esc__2_955_4-_SDA2_BASE_(r2)
+/* 801F4734 001F1534  C3 C2 D8 9C */	lfs f30, _esc__2_955_4@sda21(r2)
 /* 801F4738 001F1538  48 00 02 04 */	b lbl_801F493C
 lbl_801F473C:
 /* 801F473C 001F153C  C0 1B 00 00 */	lfs f0, 0(r27)
@@ -474,22 +474,22 @@ lbl_801F4790:
 /* 801F4794 001F1594  C2 FB 00 24 */	lfs f23, 0x24(r27)
 /* 801F4798 001F1598  EC 36 05 B2 */	fmuls f1, f22, f22
 /* 801F479C 001F159C  C2 BB 00 2C */	lfs f21, 0x2c(r27)
-/* 801F47A0 001F15A0  C0 02 D8 C0 */	lfs f0, _esc__2_1196_0-_SDA2_BASE_(r2)
+/* 801F47A0 001F15A0  C0 02 D8 C0 */	lfs f0, _esc__2_1196_0@sda21(r2)
 /* 801F47A4 001F15A4  EC 37 0D FA */	fmadds f1, f23, f23, f1
 /* 801F47A8 001F15A8  EC 35 0D 7A */	fmadds f1, f21, f21, f1
 /* 801F47AC 001F15AC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F47B0 001F15B0  40 80 00 0C */	bge lbl_801F47BC
-/* 801F47B4 001F15B4  C0 22 D8 98 */	lfs f1, _esc__2_954_6-_SDA2_BASE_(r2)
+/* 801F47B4 001F15B4  C0 22 D8 98 */	lfs f1, _esc__2_954_6@sda21(r2)
 /* 801F47B8 001F15B8  48 00 00 08 */	b lbl_801F47C0
 lbl_801F47BC:
 /* 801F47BC 001F15BC  4B E1 AD C5 */	bl xinvsqrt__Ff
 lbl_801F47C0:
 /* 801F47C0 001F15C0  EC 38 00 72 */	fmuls f1, f24, f1
 /* 801F47C4 001F15C4  C0 1B 00 18 */	lfs f0, 0x18(r27)
-/* 801F47C8 001F15C8  C0 82 D8 C4 */	lfs f4, _esc__2_1197_0-_SDA2_BASE_(r2)
+/* 801F47C8 001F15C8  C0 82 D8 C4 */	lfs f4, _esc__2_1197_0@sda21(r2)
 /* 801F47CC 001F15CC  EC 5A 06 B2 */	fmuls f2, f26, f26
 /* 801F47D0 001F15D0  EC 17 06 BA */	fmadds f0, f23, f26, f0
-/* 801F47D4 001F15D4  C0 62 D8 A0 */	lfs f3, _esc__2_1071_3-_SDA2_BASE_(r2)
+/* 801F47D4 001F15D4  C0 62 D8 A0 */	lfs f3, _esc__2_1071_3@sda21(r2)
 /* 801F47D8 001F15D8  EE 97 00 72 */	fmuls f20, f23, f1
 /* 801F47DC 001F15DC  38 61 00 08 */	addi r3, r1, 8
 /* 801F47E0 001F15E0  EE 76 00 72 */	fmuls f19, f22, f1
@@ -511,7 +511,7 @@ lbl_801F47C0:
 /* 801F4820 001F1620  4B E1 F7 BD */	bl __as__5RwV3dFRC5RwV3d
 /* 801F4824 001F1624  C0 01 00 24 */	lfs f0, 0x24(r1)
 /* 801F4828 001F1628  38 81 00 08 */	addi r4, r1, 8
-/* 801F482C 001F162C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801F482C 001F162C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801F4830 001F1630  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 801F4834 001F1634  80 63 00 04 */	lwz r3, 4(r3)
 /* 801F4838 001F1638  80 63 00 00 */	lwz r3, 0(r3)
@@ -538,8 +538,8 @@ lbl_801F487C:
 /* 801F4888 001F1688  7F BD 1A 14 */	add r29, r29, r3
 /* 801F488C 001F168C  7F 9C 02 14 */	add r28, r28, r0
 lbl_801F4890:
-/* 801F4890 001F1690  C0 02 D8 9C */	lfs f0, _esc__2_955_4-_SDA2_BASE_(r2)
-/* 801F4894 001F1694  C0 22 D8 A4 */	lfs f1, _esc__2_1072_0-_SDA2_BASE_(r2)
+/* 801F4890 001F1690  C0 02 D8 9C */	lfs f0, _esc__2_955_4@sda21(r2)
+/* 801F4894 001F1694  C0 22 D8 A4 */	lfs f1, _esc__2_1072_0@sda21(r2)
 /* 801F4898 001F1698  EC 00 C8 28 */	fsubs f0, f0, f25
 /* 801F489C 001F169C  EC 21 00 32 */	fmuls f1, f1, f0
 /* 801F48A0 001F16A0  48 00 65 55 */	bl __cvt_fp2unsigned
@@ -556,13 +556,13 @@ lbl_801F4890:
 /* 801F48CC 001F16CC  7C 03 02 14 */	add r0, r3, r0
 /* 801F48D0 001F16D0  EE D7 07 38 */	fmsubs f22, f23, f28, f0
 /* 801F48D4 001F16D4  EC 38 06 32 */	fmuls f1, f24, f24
-/* 801F48D8 001F16D8  C0 02 D8 C0 */	lfs f0, _esc__2_1196_0-_SDA2_BASE_(r2)
+/* 801F48D8 001F16D8  C0 02 D8 C0 */	lfs f0, _esc__2_1196_0@sda21(r2)
 /* 801F48DC 001F16DC  90 1D 00 00 */	stw r0, 0(r29)
 /* 801F48E0 001F16E0  EC 35 0D 7A */	fmadds f1, f21, f21, f1
 /* 801F48E4 001F16E4  EC 36 0D BA */	fmadds f1, f22, f22, f1
 /* 801F48E8 001F16E8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F48EC 001F16EC  40 80 00 0C */	bge lbl_801F48F8
-/* 801F48F0 001F16F0  C0 22 D8 98 */	lfs f1, _esc__2_954_6-_SDA2_BASE_(r2)
+/* 801F48F0 001F16F0  C0 22 D8 98 */	lfs f1, _esc__2_954_6@sda21(r2)
 /* 801F48F4 001F16F4  48 00 00 08 */	b lbl_801F48FC
 lbl_801F48F8:
 /* 801F48F8 001F16F8  4B E1 AC 89 */	bl xinvsqrt__Ff
@@ -661,12 +661,12 @@ zParticleCustomEmitGlint__FPC5xVec3PC5xVec3PCfifffffffff:
 /* 801F4A50 001F1850  F2 61 00 58 */	psq_st f19, 88(r1), 0, qr0
 /* 801F4A54 001F1854  BE E1 00 2C */	stmw r23, 0x2c(r1)
 /* 801F4A58 001F1858  7C DA 33 78 */	mr r26, r6
-/* 801F4A5C 001F185C  C1 22 D8 A8 */	lfs f9, _esc__2_1106_1-_SDA2_BASE_(r2)
+/* 801F4A5C 001F185C  C1 22 D8 A8 */	lfs f9, _esc__2_1106_1@sda21(r2)
 /* 801F4A60 001F1860  6F 40 80 00 */	xoris r0, r26, 0x8000
 /* 801F4A64 001F1864  3F C0 43 30 */	lis r30, 0x4330
 /* 801F4A68 001F1868  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F4A6C 001F186C  FE A0 08 90 */	fmr f21, f1
-/* 801F4A70 001F1870  C8 22 D8 B0 */	lfd f1, _esc__2_1110_2-_SDA2_BASE_(r2)
+/* 801F4A70 001F1870  C8 22 D8 B0 */	lfd f1, _esc__2_1110_2@sda21(r2)
 /* 801F4A74 001F1874  FE E0 18 90 */	fmr f23, f3
 /* 801F4A78 001F1878  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 801F4A7C 001F187C  FF 20 28 90 */	fmr f25, f5
@@ -674,17 +674,17 @@ zParticleCustomEmitGlint__FPC5xVec3PC5xVec3PCfifffffffff:
 /* 801F4A84 001F1884  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 801F4A88 001F1888  FF 60 38 90 */	fmr f27, f7
 /* 801F4A8C 001F188C  EE C2 02 72 */	fmuls f22, f2, f9
-/* 801F4A90 001F1890  C3 C2 D8 98 */	lfs f30, _esc__2_954_6-_SDA2_BASE_(r2)
+/* 801F4A90 001F1890  C3 C2 D8 98 */	lfs f30, _esc__2_954_6@sda21(r2)
 /* 801F4A94 001F1894  EC 00 08 28 */	fsubs f0, f0, f1
-/* 801F4A98 001F1898  CB E2 D8 B8 */	lfd f31, _esc__2_1111_2-_SDA2_BASE_(r2)
+/* 801F4A98 001F1898  CB E2 D8 B8 */	lfd f31, _esc__2_1111_2@sda21(r2)
 /* 801F4A9C 001F189C  EF 04 02 72 */	fmuls f24, f4, f9
 /* 801F4AA0 001F18A0  EF 46 02 72 */	fmuls f26, f6, f9
 /* 801F4AA4 001F18A4  EF A3 00 24 */	fdivs f29, f3, f0
-/* 801F4AA8 001F18A8  C2 82 D8 9C */	lfs f20, _esc__2_955_4-_SDA2_BASE_(r2)
+/* 801F4AA8 001F18A8  C2 82 D8 9C */	lfs f20, _esc__2_955_4@sda21(r2)
 /* 801F4AAC 001F18AC  7C 77 1B 78 */	mr r23, r3
 /* 801F4AB0 001F18B0  7C 98 23 78 */	mr r24, r4
 /* 801F4AB4 001F18B4  7C B9 2B 78 */	mr r25, r5
-/* 801F4AB8 001F18B8  3B AD DF 90 */	addi r29, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_
+/* 801F4AB8 001F18B8  3B AD DF 90 */	addi r29, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21
 /* 801F4ABC 001F18BC  EF 88 02 72 */	fmuls f28, f8, f9
 /* 801F4AC0 001F18C0  48 00 00 D0 */	b lbl_801F4B90
 lbl_801F4AC4:
@@ -794,9 +794,9 @@ update_pebble_particles__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_FPU
 /* 801F4C44 001F1A44  F3 61 00 58 */	psq_st f27, 88(r1), 0, qr0
 /* 801F4C48 001F1A48  BF 01 00 30 */	stmw r24, 0x30(r1)
 /* 801F4C4C 001F1A4C  FF 60 08 90 */	fmr f27, f1
-/* 801F4C50 001F1A50  C0 02 D8 CC */	lfs f0, _esc__2_1321_2-_SDA2_BASE_(r2)
+/* 801F4C50 001F1A50  C0 02 D8 CC */	lfs f0, _esc__2_1321_2@sda21(r2)
 /* 801F4C54 001F1A54  7C 78 1B 78 */	mr r24, r3
-/* 801F4C58 001F1A58  C0 42 D8 C8 */	lfs f2, _esc__2_1320_3-_SDA2_BASE_(r2)
+/* 801F4C58 001F1A58  C0 42 D8 C8 */	lfs f2, _esc__2_1320_3@sda21(r2)
 /* 801F4C5C 001F1A5C  7F 1A C3 78 */	mr r26, r24
 /* 801F4C60 001F1A60  54 80 28 34 */	slwi r0, r4, 5
 /* 801F4C64 001F1A64  EC 3B 06 F2 */	fmuls f1, f27, f27
@@ -807,7 +807,7 @@ update_pebble_particles__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_FPU
 /* 801F4C78 001F1A78  7C BF 2B 78 */	mr r31, r5
 /* 801F4C7C 001F1A7C  EF C2 00 72 */	fmuls f30, f2, f1
 /* 801F4C80 001F1A80  83 65 00 28 */	lwz r27, 0x28(r5)
-/* 801F4C84 001F1A84  C3 E2 D8 98 */	lfs f31, _esc__2_954_6-_SDA2_BASE_(r2)
+/* 801F4C84 001F1A84  C3 E2 D8 98 */	lfs f31, _esc__2_954_6@sda21(r2)
 /* 801F4C88 001F1A88  7F 3A 02 14 */	add r25, r26, r0
 /* 801F4C8C 001F1A8C  48 00 01 C4 */	b lbl_801F4E50
 lbl_801F4C90:
@@ -852,10 +852,10 @@ lbl_801F4D20:
 /* 801F4D24 001F1B24  FC 00 F8 40 */	fcmpo cr0, f0, f31
 /* 801F4D28 001F1B28  40 80 00 54 */	bge lbl_801F4D7C
 /* 801F4D2C 001F1B2C  C0 3A 00 0C */	lfs f1, 0xc(r26)
-/* 801F4D30 001F1B30  C0 62 D8 D0 */	lfs f3, _esc__2_1322_0-_SDA2_BASE_(r2)
-/* 801F4D34 001F1B34  C0 02 D8 9C */	lfs f0, _esc__2_955_4-_SDA2_BASE_(r2)
+/* 801F4D30 001F1B30  C0 62 D8 D0 */	lfs f3, _esc__2_1322_0@sda21(r2)
+/* 801F4D34 001F1B34  C0 02 D8 9C */	lfs f0, _esc__2_955_4@sda21(r2)
 /* 801F4D38 001F1B38  EC 41 00 F2 */	fmuls f2, f1, f3
-/* 801F4D3C 001F1B3C  C0 22 D8 D4 */	lfs f1, _esc__2_1323_1-_SDA2_BASE_(r2)
+/* 801F4D3C 001F1B3C  C0 22 D8 D4 */	lfs f1, _esc__2_1323_1@sda21(r2)
 /* 801F4D40 001F1B40  EC 00 E8 28 */	fsubs f0, f0, f29
 /* 801F4D44 001F1B44  D0 5A 00 0C */	stfs f2, 0xc(r26)
 /* 801F4D48 001F1B48  C0 5A 00 10 */	lfs f2, 0x10(r26)
@@ -877,7 +877,7 @@ lbl_801F4D7C:
 lbl_801F4D80:
 /* 801F4D80 001F1B80  C0 1A 00 00 */	lfs f0, 0(r26)
 /* 801F4D84 001F1B84  38 61 00 08 */	addi r3, r1, 8
-/* 801F4D88 001F1B88  C0 22 D8 C4 */	lfs f1, _esc__2_1197_0-_SDA2_BASE_(r2)
+/* 801F4D88 001F1B88  C0 22 D8 C4 */	lfs f1, _esc__2_1197_0@sda21(r2)
 /* 801F4D8C 001F1B8C  38 81 00 18 */	addi r4, r1, 0x18
 /* 801F4D90 001F1B90  D0 01 00 18 */	stfs f0, 0x18(r1)
 /* 801F4D94 001F1B94  C0 1A 00 04 */	lfs f0, 4(r26)
@@ -889,7 +889,7 @@ lbl_801F4D80:
 /* 801F4DAC 001F1BAC  4B E1 F2 31 */	bl __as__5RwV3dFRC5RwV3d
 /* 801F4DB0 001F1BB0  C0 01 00 24 */	lfs f0, 0x24(r1)
 /* 801F4DB4 001F1BB4  38 81 00 08 */	addi r4, r1, 8
-/* 801F4DB8 001F1BB8  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801F4DB8 001F1BB8  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801F4DBC 001F1BBC  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 801F4DC0 001F1BC0  80 63 00 04 */	lwz r3, 4(r3)
 /* 801F4DC4 001F1BC4  80 63 00 00 */	lwz r3, 0(r3)
@@ -1002,23 +1002,23 @@ zParticleCustomEmitPebble__FPC5xVec3PC5xVec3iffff:
 /* 801F4F44 001F1D44  7C BA 2B 78 */	mr r26, r5
 /* 801F4F48 001F1D48  3F C0 43 30 */	lis r30, 0x4330
 /* 801F4F4C 001F1D4C  6F 40 80 00 */	xoris r0, r26, 0x8000
-/* 801F4F50 001F1D50  C0 A2 D8 A8 */	lfs f5, _esc__2_1106_1-_SDA2_BASE_(r2)
+/* 801F4F50 001F1D50  C0 A2 D8 A8 */	lfs f5, _esc__2_1106_1@sda21(r2)
 /* 801F4F54 001F1D54  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F4F58 001F1D58  FF 00 08 90 */	fmr f24, f1
-/* 801F4F5C 001F1D5C  C0 02 D8 CC */	lfs f0, _esc__2_1321_2-_SDA2_BASE_(r2)
+/* 801F4F5C 001F1D5C  C0 02 D8 CC */	lfs f0, _esc__2_1321_2@sda21(r2)
 /* 801F4F60 001F1D60  FF 20 10 90 */	fmr f25, f2
 /* 801F4F64 001F1D64  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 801F4F68 001F1D68  EF 43 01 72 */	fmuls f26, f3, f5
-/* 801F4F6C 001F1D6C  C8 42 D8 B0 */	lfd f2, _esc__2_1110_2-_SDA2_BASE_(r2)
+/* 801F4F6C 001F1D6C  C8 42 D8 B0 */	lfd f2, _esc__2_1110_2@sda21(r2)
 /* 801F4F70 001F1D70  C8 21 00 10 */	lfd f1, 0x10(r1)
 /* 801F4F74 001F1D74  EF A0 01 32 */	fmuls f29, f0, f4
-/* 801F4F78 001F1D78  C3 82 D8 98 */	lfs f28, _esc__2_954_6-_SDA2_BASE_(r2)
+/* 801F4F78 001F1D78  C3 82 D8 98 */	lfs f28, _esc__2_954_6@sda21(r2)
 /* 801F4F7C 001F1D7C  7C 78 1B 78 */	mr r24, r3
 /* 801F4F80 001F1D80  EC 01 10 28 */	fsubs f0, f1, f2
-/* 801F4F84 001F1D84  CB C2 D8 B8 */	lfd f30, _esc__2_1111_2-_SDA2_BASE_(r2)
-/* 801F4F88 001F1D88  C3 E2 D8 C8 */	lfs f31, _esc__2_1320_3-_SDA2_BASE_(r2)
+/* 801F4F84 001F1D84  CB C2 D8 B8 */	lfd f30, _esc__2_1111_2@sda21(r2)
+/* 801F4F88 001F1D88  C3 E2 D8 C8 */	lfs f31, _esc__2_1320_3@sda21(r2)
 /* 801F4F8C 001F1D8C  7C 99 23 78 */	mr r25, r4
-/* 801F4F90 001F1D90  3B AD DF 90 */	addi r29, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_
+/* 801F4F90 001F1D90  3B AD DF 90 */	addi r29, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21
 /* 801F4F94 001F1D94  EF 64 00 24 */	fdivs f27, f4, f0
 /* 801F4F98 001F1D98  48 00 00 F4 */	b lbl_801F508C
 lbl_801F4F9C:
@@ -1116,11 +1116,11 @@ lbl_801F5094:
 pre_update_dust_particles__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_Ff:
 /* 801F50E8 001F1EE8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F50EC 001F1EEC  7C 08 02 A6 */	mflr r0
-/* 801F50F0 001F1EF0  C0 02 D8 D8 */	lfs f0, _esc__2_1356_4-_SDA2_BASE_(r2)
+/* 801F50F0 001F1EF0  C0 02 D8 D8 */	lfs f0, _esc__2_1356_4@sda21(r2)
 /* 801F50F4 001F1EF4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F50F8 001F1EF8  EC 20 00 72 */	fmuls f1, f0, f1
 /* 801F50FC 001F1EFC  4B E1 B4 A9 */	bl xexp__Ff
-/* 801F5100 001F1F00  D0 2D DF A4 */	stfs f1, dust_vel_decay__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F5100 001F1F00  D0 2D DF A4 */	stfs f1, dust_vel_decay__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21(r13)
 /* 801F5104 001F1F04  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F5108 001F1F08  7C 08 03 A6 */	mtlr r0
 /* 801F510C 001F1F0C  38 21 00 10 */	addi r1, r1, 0x10
@@ -1153,8 +1153,8 @@ update_dust_particles__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_FPUci
 /* 801F516C 001F1F6C  83 65 00 28 */	lwz r27, 0x28(r5)
 /* 801F5170 001F1F70  7F 19 02 14 */	add r24, r25, r0
 /* 801F5174 001F1F74  83 45 00 2C */	lwz r26, 0x2c(r5)
-/* 801F5178 001F1F78  C3 CD DF A4 */	lfs f30, dust_vel_decay__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801F517C 001F1F7C  C3 E2 D8 9C */	lfs f31, _esc__2_955_4-_SDA2_BASE_(r2)
+/* 801F5178 001F1F78  C3 CD DF A4 */	lfs f30, dust_vel_decay__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21(r13)
+/* 801F517C 001F1F7C  C3 E2 D8 9C */	lfs f31, _esc__2_955_4@sda21(r2)
 /* 801F5180 001F1F80  48 00 02 74 */	b lbl_801F53F4
 lbl_801F5184:
 /* 801F5184 001F1F84  C0 19 00 00 */	lfs f0, 0(r25)
@@ -1179,7 +1179,7 @@ lbl_801F51BC:
 /* 801F51CC 001F1FCC  38 61 00 08 */	addi r3, r1, 8
 /* 801F51D0 001F1FD0  C0 19 00 10 */	lfs f0, 0x10(r25)
 /* 801F51D4 001F1FD4  38 81 00 18 */	addi r4, r1, 0x18
-/* 801F51D8 001F1FD8  C0 42 D8 DC */	lfs f2, _esc__2_1434_0-_SDA2_BASE_(r2)
+/* 801F51D8 001F1FD8  C0 42 D8 DC */	lfs f2, _esc__2_1434_0@sda21(r2)
 /* 801F51DC 001F1FDC  EC 01 06 FA */	fmadds f0, f1, f27, f0
 /* 801F51E0 001F1FE0  D0 19 00 10 */	stfs f0, 0x10(r25)
 /* 801F51E4 001F1FE4  C0 39 00 20 */	lfs f1, 0x20(r25)
@@ -1205,7 +1205,7 @@ lbl_801F51BC:
 /* 801F5234 001F2034  4B E1 ED A9 */	bl __as__5RwV3dFRC5RwV3d
 /* 801F5238 001F2038  C0 01 00 24 */	lfs f0, 0x24(r1)
 /* 801F523C 001F203C  38 81 00 08 */	addi r4, r1, 8
-/* 801F5240 001F2040  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801F5240 001F2040  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801F5244 001F2044  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 801F5248 001F2048  80 63 00 04 */	lwz r3, 4(r3)
 /* 801F524C 001F204C  80 63 00 00 */	lwz r3, 0(r3)
@@ -1240,25 +1240,25 @@ lbl_801F5298:
 lbl_801F52BC:
 /* 801F52BC 001F20BC  80 79 00 28 */	lwz r3, 0x28(r25)
 /* 801F52C0 001F20C0  EC 5D 07 72 */	fmuls f2, f29, f29
-/* 801F52C4 001F20C4  C0 02 D8 E8 */	lfs f0, _esc__2_1437_1-_SDA2_BASE_(r2)
+/* 801F52C4 001F20C4  C0 02 D8 E8 */	lfs f0, _esc__2_1437_1@sda21(r2)
 /* 801F52C8 001F20C8  3C 00 43 30 */	lis r0, 0x4330
 /* 801F52CC 001F20CC  90 7C 00 00 */	stw r3, 0(r28)
 /* 801F52D0 001F20D0  EC 00 00 B2 */	fmuls f0, f0, f2
-/* 801F52D4 001F20D4  C0 22 D8 E4 */	lfs f1, _esc__2_1436_1-_SDA2_BASE_(r2)
+/* 801F52D4 001F20D4  C0 22 D8 E4 */	lfs f1, _esc__2_1436_1@sda21(r2)
 /* 801F52D8 001F20D8  88 79 00 2B */	lbz r3, 0x2b(r25)
 /* 801F52DC 001F20DC  EC 5D 00 B2 */	fmuls f2, f29, f2
 /* 801F52E0 001F20E0  90 01 00 28 */	stw r0, 0x28(r1)
 /* 801F52E4 001F20E4  EC 01 07 7A */	fmadds f0, f1, f29, f0
 /* 801F52E8 001F20E8  90 61 00 2C */	stw r3, 0x2c(r1)
-/* 801F52EC 001F20EC  C0 22 D8 E0 */	lfs f1, _esc__2_1435_0-_SDA2_BASE_(r2)
-/* 801F52F0 001F20F0  C8 82 D8 B8 */	lfd f4, _esc__2_1111_2-_SDA2_BASE_(r2)
+/* 801F52EC 001F20EC  C0 22 D8 E0 */	lfs f1, _esc__2_1435_0@sda21(r2)
+/* 801F52F0 001F20F0  C8 82 D8 B8 */	lfd f4, _esc__2_1111_2@sda21(r2)
 /* 801F52F4 001F20F4  C8 61 00 28 */	lfd f3, 0x28(r1)
 /* 801F52F8 001F20F8  EC 01 00 BA */	fmadds f0, f1, f2, f0
 /* 801F52FC 001F20FC  EC 23 20 28 */	fsubs f1, f3, f4
 /* 801F5300 001F2100  EC 41 00 32 */	fmuls f2, f1, f0
 /* 801F5304 001F2104  FC 02 08 40 */	fcmpo cr0, f2, f1
 /* 801F5308 001F2108  40 80 00 1C */	bge lbl_801F5324
-/* 801F530C 001F210C  C0 02 D8 C4 */	lfs f0, _esc__2_1197_0-_SDA2_BASE_(r2)
+/* 801F530C 001F210C  C0 02 D8 C4 */	lfs f0, _esc__2_1197_0@sda21(r2)
 /* 801F5310 001F2110  EC 00 10 2A */	fadds f0, f0, f2
 /* 801F5314 001F2114  FC 00 00 1E */	fctiwz f0, f0
 /* 801F5318 001F2118  D8 01 00 28 */	stfd f0, 0x28(r1)
@@ -1275,7 +1275,7 @@ lbl_801F5324:
 /* 801F5340 001F2140  7C A5 07 74 */	extsb r5, r5
 /* 801F5344 001F2144  90 81 00 28 */	stw r4, 0x28(r1)
 /* 801F5348 001F2148  7C 00 07 74 */	extsb r0, r0
-/* 801F534C 001F214C  C8 42 D8 B0 */	lfd f2, _esc__2_1110_2-_SDA2_BASE_(r2)
+/* 801F534C 001F214C  C8 42 D8 B0 */	lfd f2, _esc__2_1110_2@sda21(r2)
 /* 801F5350 001F2150  6C A5 80 00 */	xoris r5, r5, 0x8000
 /* 801F5354 001F2154  90 81 00 30 */	stw r4, 0x30(r1)
 /* 801F5358 001F2158  6C 00 80 00 */	xoris r0, r0, 0x8000
@@ -1297,21 +1297,21 @@ lbl_801F5324:
 /* 801F5398 001F2198  6C A5 80 00 */	xoris r5, r5, 0x8000
 /* 801F539C 001F219C  90 81 00 40 */	stw r4, 0x40(r1)
 /* 801F53A0 001F21A0  6C 00 80 00 */	xoris r0, r0, 0x8000
-/* 801F53A4 001F21A4  C8 62 D8 B0 */	lfd f3, _esc__2_1110_2-_SDA2_BASE_(r2)
+/* 801F53A4 001F21A4  C8 62 D8 B0 */	lfd f3, _esc__2_1110_2@sda21(r2)
 /* 801F53A8 001F21A8  90 A1 00 3C */	stw r5, 0x3c(r1)
-/* 801F53AC 001F21AC  C0 82 D8 C4 */	lfs f4, _esc__2_1197_0-_SDA2_BASE_(r2)
+/* 801F53AC 001F21AC  C0 82 D8 C4 */	lfs f4, _esc__2_1197_0@sda21(r2)
 /* 801F53B0 001F21B0  90 01 00 44 */	stw r0, 0x44(r1)
 /* 801F53B4 001F21B4  C8 21 00 38 */	lfd f1, 0x38(r1)
 /* 801F53B8 001F21B8  C8 01 00 40 */	lfd f0, 0x40(r1)
 /* 801F53BC 001F21BC  EC 41 18 28 */	fsubs f2, f1, f3
-/* 801F53C0 001F21C0  C0 22 D8 EC */	lfs f1, _esc__2_1438_3-_SDA2_BASE_(r2)
+/* 801F53C0 001F21C0  C0 22 D8 EC */	lfs f1, _esc__2_1438_3@sda21(r2)
 /* 801F53C4 001F21C4  EC 00 18 28 */	fsubs f0, f0, f3
 /* 801F53C8 001F21C8  EF 84 00 B2 */	fmuls f28, f4, f2
 /* 801F53CC 001F21CC  EF A1 00 32 */	fmuls f29, f1, f0
 /* 801F53D0 001F21D0  FC 20 E0 90 */	fmr f1, f28
 /* 801F53D4 001F21D4  FC 40 E8 90 */	fmr f2, f29
 /* 801F53D8 001F21D8  4B E1 AF 71 */	bl assign__5xVec2Fff
-/* 801F53DC 001F21DC  C0 02 D8 C4 */	lfs f0, _esc__2_1197_0-_SDA2_BASE_(r2)
+/* 801F53DC 001F21DC  C0 02 D8 C4 */	lfs f0, _esc__2_1197_0@sda21(r2)
 /* 801F53E0 001F21E0  38 7A 00 08 */	addi r3, r26, 8
 /* 801F53E4 001F21E4  EC 20 E0 2A */	fadds f1, f0, f28
 /* 801F53E8 001F21E8  EC 40 E8 2A */	fadds f2, f0, f29
@@ -1378,7 +1378,7 @@ zParticleCustomEmitDust__FPC5xVec3PC5xVec3ifffffff:
 /* 801F54C4 001F22C4  DA 61 00 50 */	stfd f19, 0x50(r1)
 /* 801F54C8 001F22C8  F2 61 00 58 */	psq_st f19, 88(r1), 0, qr0
 /* 801F54CC 001F22CC  BE C1 00 28 */	stmw r22, 0x28(r1)
-/* 801F54D0 001F22D0  C0 02 D8 A4 */	lfs f0, _esc__2_1072_0-_SDA2_BASE_(r2)
+/* 801F54D0 001F22D0  C0 02 D8 A4 */	lfs f0, _esc__2_1072_0@sda21(r2)
 /* 801F54D4 001F22D4  FE E0 10 90 */	fmr f23, f2
 /* 801F54D8 001F22D8  FF 00 18 90 */	fmr f24, f3
 /* 801F54DC 001F22DC  7C 76 1B 78 */	mr r22, r3
@@ -1394,21 +1394,21 @@ zParticleCustomEmitDust__FPC5xVec3PC5xVec3ifffffff:
 /* 801F5504 001F2304  3F A0 43 30 */	lis r29, 0x4330
 /* 801F5508 001F2308  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F550C 001F230C  7C 7C 1B 78 */	mr r28, r3
-/* 801F5510 001F2310  C0 42 D8 A8 */	lfs f2, _esc__2_1106_1-_SDA2_BASE_(r2)
-/* 801F5514 001F2314  3B 6D DF 90 */	addi r27, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_
+/* 801F5510 001F2310  C0 42 D8 A8 */	lfs f2, _esc__2_1106_1@sda21(r2)
+/* 801F5514 001F2314  3B 6D DF 90 */	addi r27, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21
 /* 801F5518 001F2318  93 A1 00 10 */	stw r29, 0x10(r1)
-/* 801F551C 001F231C  C8 22 D8 B0 */	lfd f1, _esc__2_1110_2-_SDA2_BASE_(r2)
+/* 801F551C 001F231C  C8 22 D8 B0 */	lfd f1, _esc__2_1110_2@sda21(r2)
 /* 801F5520 001F2320  EF 18 00 B2 */	fmuls f24, f24, f2
 /* 801F5524 001F2324  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 801F5528 001F2328  EF 5A 00 B2 */	fmuls f26, f26, f2
-/* 801F552C 001F232C  C3 A2 D8 98 */	lfs f29, _esc__2_954_6-_SDA2_BASE_(r2)
+/* 801F552C 001F232C  C3 A2 D8 98 */	lfs f29, _esc__2_954_6@sda21(r2)
 /* 801F5530 001F2330  EC 00 08 28 */	fsubs f0, f0, f1
-/* 801F5534 001F2334  CB C2 D8 B8 */	lfd f30, _esc__2_1111_2-_SDA2_BASE_(r2)
-/* 801F5538 001F2338  C3 E2 D8 9C */	lfs f31, _esc__2_955_4-_SDA2_BASE_(r2)
-/* 801F553C 001F233C  C2 82 D8 F0 */	lfs f20, _esc__2_1474_3-_SDA2_BASE_(r2)
+/* 801F5534 001F2334  CB C2 D8 B8 */	lfd f30, _esc__2_1111_2@sda21(r2)
+/* 801F5538 001F2338  C3 E2 D8 9C */	lfs f31, _esc__2_955_4@sda21(r2)
+/* 801F553C 001F233C  C2 82 D8 F0 */	lfs f20, _esc__2_1474_3@sda21(r2)
 /* 801F5540 001F2340  EF 93 00 24 */	fdivs f28, f19, f0
-/* 801F5544 001F2344  C2 A2 D8 F4 */	lfs f21, _esc__2_1475-_SDA2_BASE_(r2)
-/* 801F5548 001F2348  C2 C2 D8 C4 */	lfs f22, _esc__2_1197_0-_SDA2_BASE_(r2)
+/* 801F5544 001F2344  C2 A2 D8 F4 */	lfs f21, _esc__2_1475@sda21(r2)
+/* 801F5548 001F2348  C2 C2 D8 C4 */	lfs f22, _esc__2_1197_0@sda21(r2)
 /* 801F554C 001F234C  48 00 01 28 */	b lbl_801F5674
 lbl_801F5550:
 /* 801F5550 001F2350  80 7B 00 0C */	lwz r3, 0xc(r27)
@@ -1546,7 +1546,7 @@ update_fire_smoke_particles__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2
 /* 801F5744 001F2544  7C BF 2B 78 */	mr r31, r5
 /* 801F5748 001F2548  83 65 00 28 */	lwz r27, 0x28(r5)
 /* 801F574C 001F254C  7F 3A 02 14 */	add r25, r26, r0
-/* 801F5750 001F2550  C3 E2 D8 9C */	lfs f31, _esc__2_955_4-_SDA2_BASE_(r2)
+/* 801F5750 001F2550  C3 E2 D8 9C */	lfs f31, _esc__2_955_4@sda21(r2)
 /* 801F5754 001F2554  48 00 01 A4 */	b lbl_801F58F8
 lbl_801F5758:
 /* 801F5758 001F2558  C0 1A 00 00 */	lfs f0, 0(r26)
@@ -1584,7 +1584,7 @@ lbl_801F5790:
 /* 801F57D4 001F25D4  4B E1 E8 09 */	bl __as__5RwV3dFRC5RwV3d
 /* 801F57D8 001F25D8  C0 01 00 24 */	lfs f0, 0x24(r1)
 /* 801F57DC 001F25DC  38 81 00 08 */	addi r4, r1, 8
-/* 801F57E0 001F25E0  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801F57E0 001F25E0  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801F57E4 001F25E4  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 801F57E8 001F25E8  80 63 00 04 */	lwz r3, 4(r3)
 /* 801F57EC 001F25EC  80 63 00 00 */	lwz r3, 0(r3)
@@ -1615,11 +1615,11 @@ lbl_801F5834:
 /* 801F584C 001F264C  7F 7B 02 14 */	add r27, r27, r0
 lbl_801F5850:
 /* 801F5850 001F2650  EC 7E 07 B2 */	fmuls f3, f30, f30
-/* 801F5854 001F2654  C0 02 D9 00 */	lfs f0, _esc__2_1561_0-_SDA2_BASE_(r2)
-/* 801F5858 001F2658  C0 42 D8 FC */	lfs f2, _esc__2_1560_3-_SDA2_BASE_(r2)
-/* 801F585C 001F265C  C0 82 D8 F8 */	lfs f4, _esc__2_1559_1-_SDA2_BASE_(r2)
+/* 801F5854 001F2654  C0 02 D9 00 */	lfs f0, _esc__2_1561_0@sda21(r2)
+/* 801F5858 001F2658  C0 42 D8 FC */	lfs f2, _esc__2_1560_3@sda21(r2)
+/* 801F585C 001F265C  C0 82 D8 F8 */	lfs f4, _esc__2_1559_1@sda21(r2)
 /* 801F5860 001F2660  EC 20 00 F2 */	fmuls f1, f0, f3
-/* 801F5864 001F2664  C0 02 D8 A4 */	lfs f0, _esc__2_1072_0-_SDA2_BASE_(r2)
+/* 801F5864 001F2664  C0 02 D8 A4 */	lfs f0, _esc__2_1072_0@sda21(r2)
 /* 801F5868 001F2668  EC 7E 00 F2 */	fmuls f3, f30, f3
 /* 801F586C 001F266C  EC 22 0F BA */	fmadds f1, f2, f30, f1
 /* 801F5870 001F2670  EC 24 08 FA */	fmadds f1, f4, f3, f1
@@ -1643,7 +1643,7 @@ lbl_801F5880:
 /* 801F58B4 001F26B4  7C A5 07 74 */	extsb r5, r5
 /* 801F58B8 001F26B8  90 81 00 30 */	stw r4, 0x30(r1)
 /* 801F58BC 001F26BC  7C 00 07 74 */	extsb r0, r0
-/* 801F58C0 001F26C0  C8 42 D8 B0 */	lfd f2, _esc__2_1110_2-_SDA2_BASE_(r2)
+/* 801F58C0 001F26C0  C8 42 D8 B0 */	lfd f2, _esc__2_1110_2@sda21(r2)
 /* 801F58C4 001F26C4  6C A5 80 00 */	xoris r5, r5, 0x8000
 /* 801F58C8 001F26C8  90 81 00 38 */	stw r4, 0x38(r1)
 /* 801F58CC 001F26CC  6C 00 80 00 */	xoris r0, r0, 0x8000
@@ -1738,24 +1738,24 @@ zParticleCustomEmitFireSmoke__FPC5xVec3PC5xVec3ifffff:
 /* 801F5A0C 001F280C  F2 E1 00 48 */	psq_st f23, 72(r1), 0, qr0
 /* 801F5A10 001F2810  BF 01 00 20 */	stmw r24, 0x20(r1)
 /* 801F5A14 001F2814  7C BA 2B 78 */	mr r26, r5
-/* 801F5A18 001F2818  C0 02 D8 A8 */	lfs f0, _esc__2_1106_1-_SDA2_BASE_(r2)
+/* 801F5A18 001F2818  C0 02 D8 A8 */	lfs f0, _esc__2_1106_1@sda21(r2)
 /* 801F5A1C 001F281C  6F 40 80 00 */	xoris r0, r26, 0x8000
 /* 801F5A20 001F2820  3F C0 43 30 */	lis r30, 0x4330
 /* 801F5A24 001F2824  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F5A28 001F2828  FF 20 08 90 */	fmr f25, f1
-/* 801F5A2C 001F282C  C8 22 D8 B0 */	lfd f1, _esc__2_1110_2-_SDA2_BASE_(r2)
+/* 801F5A2C 001F282C  C8 22 D8 B0 */	lfd f1, _esc__2_1110_2@sda21(r2)
 /* 801F5A30 001F2830  FF 60 18 90 */	fmr f27, f3
 /* 801F5A34 001F2834  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 801F5A38 001F2838  EF 42 00 32 */	fmuls f26, f2, f0
 /* 801F5A3C 001F283C  EF 84 00 32 */	fmuls f28, f4, f0
 /* 801F5A40 001F2840  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 801F5A44 001F2844  7C 78 1B 78 */	mr r24, r3
-/* 801F5A48 001F2848  C3 C2 D8 98 */	lfs f30, _esc__2_954_6-_SDA2_BASE_(r2)
+/* 801F5A48 001F2848  C3 C2 D8 98 */	lfs f30, _esc__2_954_6@sda21(r2)
 /* 801F5A4C 001F284C  7C 99 23 78 */	mr r25, r4
 /* 801F5A50 001F2850  EC 00 08 28 */	fsubs f0, f0, f1
-/* 801F5A54 001F2854  CB E2 D8 B8 */	lfd f31, _esc__2_1111_2-_SDA2_BASE_(r2)
-/* 801F5A58 001F2858  3B AD DF 90 */	addi r29, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_
-/* 801F5A5C 001F285C  C3 02 D8 9C */	lfs f24, _esc__2_955_4-_SDA2_BASE_(r2)
+/* 801F5A54 001F2854  CB E2 D8 B8 */	lfd f31, _esc__2_1111_2@sda21(r2)
+/* 801F5A58 001F2858  3B AD DF 90 */	addi r29, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21
+/* 801F5A5C 001F285C  C3 02 D8 9C */	lfs f24, _esc__2_955_4@sda21(r2)
 /* 801F5A60 001F2860  EF A5 00 24 */	fdivs f29, f5, f0
 /* 801F5A64 001F2864  48 00 00 E0 */	b lbl_801F5B44
 lbl_801F5A68:
@@ -1848,7 +1848,7 @@ lbl_801F5B4C:
 zParticleCustomSceneEnter__Fv:
 /* 801F5BA8 001F29A8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F5BAC 001F29AC  7C 08 02 A6 */	mflr r0
-/* 801F5BB0 001F29B0  38 6D DF 88 */	addi r3, r13, particle_batch_group__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_
+/* 801F5BB0 001F29B0  38 6D DF 88 */	addi r3, r13, particle_batch_group__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21
 /* 801F5BB4 001F29B4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F5BB8 001F29B8  4B F7 FA 9D */	bl create__19xParticleBatchGroupFv
 /* 801F5BBC 001F29BC  3C 60 80 1F */	lis r3, update_spark_particles__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_FPUciR10ptank_poolfPv@ha
@@ -1858,7 +1858,7 @@ zParticleCustomSceneEnter__Fv:
 /* 801F5BCC 001F29CC  90 01 00 08 */	stw r0, 8(r1)
 /* 801F5BD0 001F29D0  38 04 CD 80 */	addi r0, r4, _esc__2_stringBase0_158@l
 /* 801F5BD4 001F29D4  38 A3 0F 70 */	addi r5, r3, 0xE2F60F70@l
-/* 801F5BD8 001F29D8  38 6D DF 90 */	addi r3, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_
+/* 801F5BD8 001F29D8  38 6D DF 90 */	addi r3, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21
 /* 801F5BDC 001F29DC  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801F5BE0 001F29E0  38 80 00 02 */	li r4, 2
 /* 801F5BE4 001F29E4  38 C0 00 02 */	li r6, 2
@@ -1874,7 +1874,7 @@ zParticleCustomSceneEnter__Fv:
 /* 801F5C0C 001F2A0C  38 84 CD 80 */	addi r4, r4, _esc__2_stringBase0_158@l
 /* 801F5C10 001F2A10  90 01 00 08 */	stw r0, 8(r1)
 /* 801F5C14 001F2A14  38 04 00 06 */	addi r0, r4, 6
-/* 801F5C18 001F2A18  38 6D DF 90 */	addi r3, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_
+/* 801F5C18 001F2A18  38 6D DF 90 */	addi r3, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21
 /* 801F5C1C 001F2A1C  3C 80 E2 F6 */	lis r4, 0xE2F60F70@ha
 /* 801F5C20 001F2A20  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801F5C24 001F2A24  38 A4 0F 70 */	addi r5, r4, 0xE2F60F70@l
@@ -1892,7 +1892,7 @@ zParticleCustomSceneEnter__Fv:
 /* 801F5C54 001F2A54  38 84 CD 80 */	addi r4, r4, _esc__2_stringBase0_158@l
 /* 801F5C58 001F2A58  90 01 00 08 */	stw r0, 8(r1)
 /* 801F5C5C 001F2A5C  38 04 00 0C */	addi r0, r4, 0xc
-/* 801F5C60 001F2A60  38 6D DF 90 */	addi r3, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_
+/* 801F5C60 001F2A60  38 6D DF 90 */	addi r3, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21
 /* 801F5C64 001F2A64  3C 80 4E 81 */	lis r4, 0x4E81027C@ha
 /* 801F5C68 001F2A68  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801F5C6C 001F2A6C  38 A4 02 7C */	addi r5, r4, 0x4E81027C@l
@@ -1910,7 +1910,7 @@ zParticleCustomSceneEnter__Fv:
 /* 801F5C9C 001F2A9C  38 84 CD 80 */	addi r4, r4, _esc__2_stringBase0_158@l
 /* 801F5CA0 001F2AA0  90 01 00 08 */	stw r0, 8(r1)
 /* 801F5CA4 001F2AA4  38 04 00 13 */	addi r0, r4, 0x13
-/* 801F5CA8 001F2AA8  38 6D DF 90 */	addi r3, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_
+/* 801F5CA8 001F2AA8  38 6D DF 90 */	addi r3, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21
 /* 801F5CAC 001F2AAC  3C 80 DC DD */	lis r4, 0xDCDD4B8B@ha
 /* 801F5CB0 001F2AB0  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801F5CB4 001F2AB4  38 A4 4B 8B */	addi r5, r4, 0xDCDD4B8B@l
@@ -1928,7 +1928,7 @@ zParticleCustomSceneEnter__Fv:
 /* 801F5CE4 001F2AE4  38 84 CD 80 */	addi r4, r4, _esc__2_stringBase0_158@l
 /* 801F5CE8 001F2AE8  90 01 00 08 */	stw r0, 8(r1)
 /* 801F5CEC 001F2AEC  38 04 00 18 */	addi r0, r4, 0x18
-/* 801F5CF0 001F2AF0  38 6D DF 90 */	addi r3, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_-_SDA_BASE_
+/* 801F5CF0 001F2AF0  38 6D DF 90 */	addi r3, r13, system_id__29_esc__2_unnamed_esc__2_zParticleCustom_cpp_esc__2_@sda21
 /* 801F5CF4 001F2AF4  3C 80 45 3C */	lis r4, 0x453C0740@ha
 /* 801F5CF8 001F2AF8  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801F5CFC 001F2AFC  38 A4 07 40 */	addi r5, r4, 0x453C0740@l

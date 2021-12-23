@@ -295,13 +295,13 @@ lockUI__37zUICustomBattleModeSelectSceneManagerFv:
 /* 801EEA18 001EB818  90 01 00 64 */	stw r0, 0x64(r1)
 /* 801EEA1C 001EB81C  93 E1 00 5C */	stw r31, 0x5c(r1)
 /* 801EEA20 001EB820  7C 7F 1B 78 */	mr r31, r3
-/* 801EEA24 001EB824  80 8D D8 98 */	lwz r4, pBattleSceneManager-_SDA_BASE_(r13)
+/* 801EEA24 001EB824  80 8D D8 98 */	lwz r4, pBattleSceneManager@sda21(r13)
 /* 801EEA28 001EB828  28 04 00 00 */	cmplwi r4, 0
 /* 801EEA2C 001EB82C  41 82 00 48 */	beq lbl_801EEA74
 /* 801EEA30 001EB830  80 64 00 20 */	lwz r3, 0x20(r4)
 /* 801EEA34 001EB834  28 03 00 00 */	cmplwi r3, 0
 /* 801EEA38 001EB838  41 82 00 3C */	beq lbl_801EEA74
-/* 801EEA3C 001EB83C  88 0D DC 9C */	lbz r0, bBattleSceneAvailable-_SDA_BASE_(r13)
+/* 801EEA3C 001EB83C  88 0D DC 9C */	lbz r0, bBattleSceneAvailable@sda21(r13)
 /* 801EEA40 001EB840  28 00 00 00 */	cmplwi r0, 0
 /* 801EEA44 001EB844  41 82 00 1C */	beq lbl_801EEA60
 /* 801EEA48 001EB848  38 00 00 00 */	li r0, 0
@@ -317,7 +317,7 @@ lbl_801EEA60:
 /* 801EEA6C 001EB86C  38 A0 03 14 */	li r5, 0x314
 /* 801EEA70 001EB870  4B E2 DA DD */	bl zEntEvent__FP5xBaseP5xBaseUi
 lbl_801EEA74:
-/* 801EEA74 001EB874  80 6D D8 98 */	lwz r3, pBattleSceneManager-_SDA_BASE_(r13)
+/* 801EEA74 001EB874  80 6D D8 98 */	lwz r3, pBattleSceneManager@sda21(r13)
 /* 801EEA78 001EB878  3C 63 00 01 */	addis r3, r3, 1
 /* 801EEA7C 001EB87C  88 03 06 42 */	lbz r0, 0x642(r3)
 /* 801EEA80 001EB880  28 00 00 00 */	cmplwi r0, 0
@@ -326,8 +326,8 @@ lbl_801EEA74:
 /* 801EEA8C 001EB88C  38 9F 00 2C */	addi r4, r31, 0x2c
 /* 801EEA90 001EB890  4B F6 30 C9 */	bl SetText__7zUITextFPCc
 /* 801EEA94 001EB894  38 1F 01 2C */	addi r0, r31, 0x12c
-/* 801EEA98 001EB898  80 8D DC 94 */	lwz r4, pText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801EEA9C 001EB89C  90 0D DC 90 */	stw r0, levelDescriptionBaseText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801EEA98 001EB898  80 8D DC 94 */	lwz r4, pText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_@sda21(r13)
+/* 801EEA9C 001EB89C  90 0D DC 90 */	stw r0, levelDescriptionBaseText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_@sda21(r13)
 /* 801EEAA0 001EB8A0  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801EEAA4 001EB8A4  4B F6 30 B5 */	bl SetText__7zUITextFPCc
 /* 801EEAA8 001EB8A8  80 7F 00 1C */	lwz r3, 0x1c(r31)
@@ -384,16 +384,16 @@ getBattleScenes__37zUICustomBattleModeSelectSceneManagerFv:
 /* 801EEB64 001EB964  4B FD EF 35 */	bl zUIIncrediblesSceneIsCompleted__FPCc
 /* 801EEB68 001EB968  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801EEB6C 001EB96C  40 82 00 10 */	bne lbl_801EEB7C
-/* 801EEB70 001EB970  88 0D DC 9D */	lbz r0, gBattleCheat-_SDA_BASE_(r13)
+/* 801EEB70 001EB970  88 0D DC 9D */	lbz r0, gBattleCheat@sda21(r13)
 /* 801EEB74 001EB974  28 00 00 00 */	cmplwi r0, 0
 /* 801EEB78 001EB978  41 82 00 10 */	beq lbl_801EEB88
 lbl_801EEB7C:
 /* 801EEB7C 001EB97C  38 00 00 01 */	li r0, 1
-/* 801EEB80 001EB980  98 0D DC 9C */	stb r0, bBattleSceneAvailable-_SDA_BASE_(r13)
+/* 801EEB80 001EB980  98 0D DC 9C */	stb r0, bBattleSceneAvailable@sda21(r13)
 /* 801EEB84 001EB984  48 00 00 0C */	b lbl_801EEB90
 lbl_801EEB88:
 /* 801EEB88 001EB988  38 00 00 00 */	li r0, 0
-/* 801EEB8C 001EB98C  98 0D DC 9C */	stb r0, bBattleSceneAvailable-_SDA_BASE_(r13)
+/* 801EEB8C 001EB98C  98 0D DC 9C */	stb r0, bBattleSceneAvailable@sda21(r13)
 lbl_801EEB90:
 /* 801EEB90 001EB990  7F E3 FB 78 */	mr r3, r31
 /* 801EEB94 001EB994  4B FF FE 7D */	bl lockUI__37zUICustomBattleModeSelectSceneManagerFv
@@ -492,7 +492,7 @@ lbl_801EECD0:
 /* 801EECDC 001EBADC  38 00 00 01 */	li r0, 1
 /* 801EECE0 001EBAE0  38 A0 00 5F */	li r5, 0x5f
 /* 801EECE4 001EBAE4  38 C0 00 00 */	li r6, 0
-/* 801EECE8 001EBAE8  80 6D D8 98 */	lwz r3, pBattleSceneManager-_SDA_BASE_(r13)
+/* 801EECE8 001EBAE8  80 6D D8 98 */	lwz r3, pBattleSceneManager@sda21(r13)
 /* 801EECEC 001EBAEC  38 E0 00 00 */	li r7, 0
 /* 801EECF0 001EBAF0  39 00 00 00 */	li r8, 0
 /* 801EECF4 001EBAF4  3C 63 00 01 */	addis r3, r3, 1
@@ -514,7 +514,7 @@ lbl_801EECD0:
 /* 801EED34 001EBB34  4B F7 96 E1 */	bl Signal__3zUIFP5xBaseUi
 /* 801EED38 001EBB38  48 00 03 AC */	b lbl_801EF0E4
 lbl_801EED3C:
-/* 801EED3C 001EBB3C  80 6D D8 98 */	lwz r3, pBattleSceneManager-_SDA_BASE_(r13)
+/* 801EED3C 001EBB3C  80 6D D8 98 */	lwz r3, pBattleSceneManager@sda21(r13)
 /* 801EED40 001EBB40  38 00 00 00 */	li r0, 0
 /* 801EED44 001EBB44  3C 63 00 01 */	addis r3, r3, 1
 /* 801EED48 001EBB48  98 03 06 42 */	stb r0, 0x642(r3)
@@ -531,7 +531,7 @@ lbl_801EED68:
 /* 801EED70 001EBB70  3C 7D 00 01 */	addis r3, r29, 1
 /* 801EED74 001EBB74  38 00 00 00 */	li r0, 0
 /* 801EED78 001EBB78  90 03 06 34 */	stw r0, 0x634(r3)
-/* 801EED7C 001EBB7C  80 6D D8 98 */	lwz r3, pBattleSceneManager-_SDA_BASE_(r13)
+/* 801EED7C 001EBB7C  80 6D D8 98 */	lwz r3, pBattleSceneManager@sda21(r13)
 /* 801EED80 001EBB80  3C 63 00 01 */	addis r3, r3, 1
 /* 801EED84 001EBB84  88 03 06 42 */	lbz r0, 0x642(r3)
 /* 801EED88 001EBB88  28 00 00 00 */	cmplwi r0, 0
@@ -629,7 +629,7 @@ lbl_801EEED4:
 /* 801EEEE8 001EBCE8  4B F7 9C C5 */	bl Signal__3zUIFUi
 /* 801EEEEC 001EBCEC  48 00 01 F8 */	b lbl_801EF0E4
 lbl_801EEEF0:
-/* 801EEEF0 001EBCF0  80 6D D8 98 */	lwz r3, pBattleSceneManager-_SDA_BASE_(r13)
+/* 801EEEF0 001EBCF0  80 6D D8 98 */	lwz r3, pBattleSceneManager@sda21(r13)
 /* 801EEEF4 001EBCF4  3C 63 00 01 */	addis r3, r3, 1
 /* 801EEEF8 001EBCF8  88 03 06 42 */	lbz r0, 0x642(r3)
 /* 801EEEFC 001EBCFC  28 00 00 00 */	cmplwi r0, 0
@@ -667,11 +667,11 @@ lbl_801EEEF0:
 /* 801EEF7C 001EBD7C  80 63 00 C8 */	lwz r3, 0xc8(r3)
 /* 801EEF80 001EBD80  7C C4 23 78 */	or r4, r6, r4
 /* 801EEF84 001EBD84  7C E4 23 78 */	or r4, r7, r4
-/* 801EEF88 001EBD88  90 8D DC 98 */	stw r4, curr_content_sceneID-_SDA_BASE_(r13)
+/* 801EEF88 001EBD88  90 8D DC 98 */	stw r4, curr_content_sceneID@sda21(r13)
 /* 801EEF8C 001EBD8C  90 03 00 30 */	stw r0, 0x30(r3)
 /* 801EEF90 001EBD90  48 00 01 54 */	b lbl_801EF0E4
 lbl_801EEF94:
-/* 801EEF94 001EBD94  80 6D D8 98 */	lwz r3, pBattleSceneManager-_SDA_BASE_(r13)
+/* 801EEF94 001EBD94  80 6D D8 98 */	lwz r3, pBattleSceneManager@sda21(r13)
 /* 801EEF98 001EBD98  3C 63 00 01 */	addis r3, r3, 1
 /* 801EEF9C 001EBD9C  88 03 06 42 */	lbz r0, 0x642(r3)
 /* 801EEFA0 001EBDA0  28 00 00 00 */	cmplwi r0, 0
@@ -707,11 +707,11 @@ lbl_801EF000:
 /* 801EF00C 001EBE0C  38 9C 00 2C */	addi r4, r28, 0x2c
 /* 801EF010 001EBE10  4B F6 2B 49 */	bl SetText__7zUITextFPCc
 /* 801EF014 001EBE14  38 1C 01 2C */	addi r0, r28, 0x12c
-/* 801EF018 001EBE18  80 8D DC 94 */	lwz r4, pText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801EF01C 001EBE1C  90 0D DC 90 */	stw r0, levelDescriptionBaseText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801EF018 001EBE18  80 8D DC 94 */	lwz r4, pText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_@sda21(r13)
+/* 801EF01C 001EBE1C  90 0D DC 90 */	stw r0, levelDescriptionBaseText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_@sda21(r13)
 /* 801EF020 001EBE20  80 7D 00 1C */	lwz r3, 0x1c(r29)
 /* 801EF024 001EBE24  4B F6 2B 35 */	bl SetText__7zUITextFPCc
-/* 801EF028 001EBE28  80 6D D8 98 */	lwz r3, pBattleSceneManager-_SDA_BASE_(r13)
+/* 801EF028 001EBE28  80 6D D8 98 */	lwz r3, pBattleSceneManager@sda21(r13)
 /* 801EF02C 001EBE2C  3C 63 00 01 */	addis r3, r3, 1
 /* 801EF030 001EBE30  88 03 06 42 */	lbz r0, 0x642(r3)
 /* 801EF034 001EBE34  28 00 00 00 */	cmplwi r0, 0
@@ -833,7 +833,7 @@ lbl_801EF1A4:
 /* 801EF1D0 001EBFD0  38 C1 00 10 */	addi r6, r1, 0x10
 /* 801EF1D4 001EBFD4  3B 65 00 2C */	addi r27, r5, 0x2c
 /* 801EF1D8 001EBFD8  7F 7A DA 14 */	add r27, r26, r27
-/* 801EF1DC 001EBFDC  38 AD D8 AC */	addi r5, r13, sceneBaseName-_SDA_BASE_
+/* 801EF1DC 001EBFDC  38 AD D8 AC */	addi r5, r13, sceneBaseName@sda21
 /* 801EF1E0 001EBFE0  91 3B 02 00 */	stw r9, 0x200(r27)
 /* 801EF1E4 001EBFE4  90 9B 02 08 */	stw r4, 0x208(r27)
 /* 801EF1E8 001EBFE8  38 9D 00 9A */	addi r4, r29, 0x9a
@@ -1112,7 +1112,7 @@ __ct__38zUICustomBattleModeDescriptionScrollerFP3zUI:
 Reset__38zUICustomBattleModeDescriptionScrollerFv:
 /* 801EF5AC 001EC3AC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801EF5B0 001EC3B0  7C 08 02 A6 */	mflr r0
-/* 801EF5B4 001EC3B4  C0 02 D7 08 */	lfs f0, _esc__2_1265_3-_SDA2_BASE_(r2)
+/* 801EF5B4 001EC3B4  C0 02 D7 08 */	lfs f0, _esc__2_1265_3@sda21(r2)
 /* 801EF5B8 001EC3B8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801EF5BC 001EC3BC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801EF5C0 001EC3C0  7C 7F 1B 78 */	mr r31, r3
@@ -1148,7 +1148,7 @@ PreUpdate__38zUICustomBattleModeDescriptionScrollerFf:
 /* 801EF62C 001EC42C  88 03 01 90 */	lbz r0, 0x190(r3)
 /* 801EF630 001EC430  28 00 00 00 */	cmplwi r0, 0
 /* 801EF634 001EC434  41 82 01 14 */	beq lbl_801EF748
-/* 801EF638 001EC438  C0 22 D7 0C */	lfs f1, _esc__2_1287_0-_SDA2_BASE_(r2)
+/* 801EF638 001EC438  C0 22 D7 0C */	lfs f1, _esc__2_1287_0@sda21(r2)
 /* 801EF63C 001EC43C  C0 1F 01 8C */	lfs f0, 0x18c(r31)
 /* 801EF640 001EC440  80 7F 00 08 */	lwz r3, 8(r31)
 /* 801EF644 001EC444  EC 01 00 32 */	fmuls f0, f1, f0
@@ -1189,7 +1189,7 @@ lbl_801EF6A8:
 /* 801EF6C8 001EC4C8  7C 1D 18 78 */	andc r29, r0, r3
 /* 801EF6CC 001EC4CC  48 00 00 48 */	b lbl_801EF714
 lbl_801EF6D0:
-/* 801EF6D0 001EC4D0  C8 22 D7 10 */	lfd f1, _esc__2_1288_3-_SDA2_BASE_(r2)
+/* 801EF6D0 001EC4D0  C8 22 D7 10 */	lfd f1, _esc__2_1288_3@sda21(r2)
 /* 801EF6D4 001EC4D4  38 9E 00 E1 */	addi r4, r30, 0xe1
 /* 801EF6D8 001EC4D8  80 61 00 0C */	lwz r3, 0xc(r1)
 /* 801EF6DC 001EC4DC  FC 40 08 90 */	fmr f2, f1
@@ -1235,19 +1235,19 @@ HandleEvent__38zUICustomBattleModeDescriptionScrollerFP5xBaseUiPCfP5xBaseUi:
 /* 801EF768 001EC568  41 82 00 08 */	beq lbl_801EF770
 /* 801EF76C 001EC56C  48 00 00 3C */	b lbl_801EF7A8
 lbl_801EF770:
-/* 801EF770 001EC570  C0 02 D7 08 */	lfs f0, _esc__2_1265_3-_SDA2_BASE_(r2)
+/* 801EF770 001EC570  C0 02 D7 08 */	lfs f0, _esc__2_1265_3@sda21(r2)
 /* 801EF774 001EC574  38 80 00 00 */	li r4, 0
 /* 801EF778 001EC578  38 03 00 0C */	addi r0, r3, 0xc
 /* 801EF77C 001EC57C  D0 03 01 8C */	stfs f0, 0x18c(r3)
 /* 801EF780 001EC580  98 83 00 0C */	stb r4, 0xc(r3)
-/* 801EF784 001EC584  80 8D DC 90 */	lwz r4, levelDescriptionBaseText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801EF784 001EC584  80 8D DC 90 */	lwz r4, levelDescriptionBaseText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_@sda21(r13)
 /* 801EF788 001EC588  90 83 00 08 */	stw r4, 8(r3)
 /* 801EF78C 001EC58C  80 A3 00 08 */	lwz r5, 8(r3)
 /* 801EF790 001EC590  30 85 FF FF */	addic r4, r5, -1
 /* 801EF794 001EC594  7C 84 29 10 */	subfe r4, r4, r5
 /* 801EF798 001EC598  98 83 01 90 */	stb r4, 0x190(r3)
 /* 801EF79C 001EC59C  38 60 00 00 */	li r3, 0
-/* 801EF7A0 001EC5A0  90 0D DC 94 */	stw r0, pText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801EF7A0 001EC5A0  90 0D DC 94 */	stw r0, pText__44_esc__2_unnamed_esc__2_zUICustomBattleModeSelectScene_cpp_esc__2_@sda21(r13)
 /* 801EF7A4 001EC5A4  4E 80 00 20 */	blr 
 lbl_801EF7A8:
 /* 801EF7A8 001EC5A8  38 60 00 01 */	li r3, 1

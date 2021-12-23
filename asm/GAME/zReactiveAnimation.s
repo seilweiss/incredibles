@@ -30,7 +30,7 @@ activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_:
 fire_props__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_:
 	.skip 0x10
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global _esc__2_1294_2
 _esc__2_1294_2:
@@ -129,10 +129,10 @@ lbl_801AC7AC:
 /* 801AC7AC 001A95AC  3C 60 80 01 */	lis r3, xAnimDefaultBeforeEnter__FP9xAnimPlayP10xAnimStatePv@ha
 /* 801AC7B0 001A95B0  38 00 00 00 */	li r0, 0
 /* 801AC7B4 001A95B4  38 63 82 78 */	addi r3, r3, xAnimDefaultBeforeEnter__FP9xAnimPlayP10xAnimStatePv@l
-/* 801AC7B8 001A95B8  C0 22 C7 EC */	lfs f1, _esc__2_1005_6-_SDA2_BASE_(r2)
+/* 801AC7B8 001A95B8  C0 22 C7 EC */	lfs f1, _esc__2_1005_6@sda21(r2)
 /* 801AC7BC 001A95BC  90 61 00 08 */	stw r3, 8(r1)
 /* 801AC7C0 001A95C0  7F A3 EB 78 */	mr r3, r29
-/* 801AC7C4 001A95C4  C0 42 C7 E8 */	lfs f2, _esc__2_1004_3-_SDA2_BASE_(r2)
+/* 801AC7C4 001A95C4  C0 42 C7 E8 */	lfs f2, _esc__2_1004_3@sda21(r2)
 /* 801AC7C8 001A95C8  7F C4 F3 78 */	mr r4, r30
 /* 801AC7CC 001A95CC  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801AC7D0 001A95D0  38 C0 00 00 */	li r6, 0
@@ -151,7 +151,7 @@ lbl_801AC7AC:
 /* 801AC804 001A9604  28 1F 00 00 */	cmplwi r31, 0
 /* 801AC808 001A9608  41 82 00 44 */	beq lbl_801AC84C
 /* 801AC80C 001A960C  38 00 00 00 */	li r0, 0
-/* 801AC810 001A9610  C0 22 C7 E8 */	lfs f1, _esc__2_1004_3-_SDA2_BASE_(r2)
+/* 801AC810 001A9610  C0 22 C7 E8 */	lfs f1, _esc__2_1004_3@sda21(r2)
 /* 801AC814 001A9614  90 01 00 08 */	stw r0, 8(r1)
 /* 801AC818 001A9618  3C 60 80 1B */	lis r3, AlwaysConditional__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FP15xAnimTransitionP11xAnimSinglePv@ha
 /* 801AC81C 001A961C  38 C3 C7 0C */	addi r6, r3, AlwaysConditional__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FP15xAnimTransitionP11xAnimSinglePv@l
@@ -293,7 +293,7 @@ load_genres__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_Fv:
 /* 801ACA0C 001A980C  4B EB F9 41 */	bl xSTAssetCountByType__FUi
 /* 801ACA10 001A9810  38 00 00 00 */	li r0, 0
 /* 801ACA14 001A9814  7C 7C 1B 78 */	mr r28, r3
-/* 801ACA18 001A9818  90 0D D7 A0 */	stw r0, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACA18 001A9818  90 0D D7 A0 */	stw r0, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACA1C 001A981C  3B C0 00 00 */	li r30, 0
 /* 801ACA20 001A9820  3F A0 52 41 */	lis r29, 0x5241
 /* 801ACA24 001A9824  48 00 00 28 */	b lbl_801ACA4C
@@ -302,22 +302,22 @@ lbl_801ACA28:
 /* 801ACA2C 001A982C  38 A1 00 0C */	addi r5, r1, 0xc
 /* 801ACA30 001A9830  38 80 00 00 */	li r4, 0
 /* 801ACA34 001A9834  4B EB F9 89 */	bl xSTFindAssetByType__FUiiPUi
-/* 801ACA38 001A9838  80 8D D7 A0 */	lwz r4, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACA38 001A9838  80 8D D7 A0 */	lwz r4, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACA3C 001A983C  3B DE 00 01 */	addi r30, r30, 1
 /* 801ACA40 001A9840  80 03 00 0C */	lwz r0, 0xc(r3)
 /* 801ACA44 001A9844  7C 04 02 14 */	add r0, r4, r0
-/* 801ACA48 001A9848  90 0D D7 A0 */	stw r0, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACA48 001A9848  90 0D D7 A0 */	stw r0, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 lbl_801ACA4C:
 /* 801ACA4C 001A984C  7C 1E E0 00 */	cmpw r30, r28
 /* 801ACA50 001A9850  41 80 FF D8 */	blt lbl_801ACA28
-/* 801ACA54 001A9854  80 0D D7 A0 */	lwz r0, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACA54 001A9854  80 0D D7 A0 */	lwz r0, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACA58 001A9858  2C 00 00 00 */	cmpwi r0, 0
 /* 801ACA5C 001A985C  40 81 00 7C */	ble lbl_801ACAD8
 /* 801ACA60 001A9860  54 03 30 32 */	slwi r3, r0, 6
 /* 801ACA64 001A9864  38 80 00 00 */	li r4, 0
 /* 801ACA68 001A9868  38 A0 00 00 */	li r5, 0
 /* 801ACA6C 001A986C  4B E7 4F 65 */	bl __nwa__FUl14xMemStaticTypeUi
-/* 801ACA70 001A9870  90 6D D7 9C */	stw r3, genres__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACA70 001A9870  90 6D D7 9C */	stw r3, genres__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACA74 001A9874  3B 40 00 00 */	li r26, 0
 /* 801ACA78 001A9878  7C 7B 1B 78 */	mr r27, r3
 /* 801ACA7C 001A987C  3F A0 52 41 */	lis r29, 0x5241
@@ -362,8 +362,8 @@ find_genre__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zEntSimpl
 /* 801ACAF8 001A98F8  38 60 00 00 */	li r3, 0
 /* 801ACAFC 001A98FC  4E 80 00 20 */	blr 
 lbl_801ACB00:
-/* 801ACB00 001A9900  80 0D D7 A0 */	lwz r0, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801ACB04 001A9904  80 8D D7 9C */	lwz r4, genres__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACB00 001A9900  80 0D D7 A0 */	lwz r0, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
+/* 801ACB04 001A9904  80 8D D7 9C */	lwz r4, genres__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACB08 001A9908  54 00 30 32 */	slwi r0, r0, 6
 /* 801ACB0C 001A990C  80 A3 00 10 */	lwz r5, 0x10(r3)
 /* 801ACB10 001A9910  7C 83 23 78 */	mr r3, r4
@@ -438,20 +438,20 @@ lbl_801ACBF8:
 /* 801ACBF8 001A99F8  7C 1E E8 40 */	cmplw r30, r29
 /* 801ACBFC 001A99FC  40 82 FF DC */	bne lbl_801ACBD8
 /* 801ACC00 001A9A00  2C 1F 00 00 */	cmpwi r31, 0
-/* 801ACC04 001A9A04  93 ED D7 98 */	stw r31, total_reactives__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801ACC08 001A9A08  93 ED D7 A8 */	stw r31, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACC04 001A9A04  93 ED D7 98 */	stw r31, total_reactives__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
+/* 801ACC08 001A9A08  93 ED D7 A8 */	stw r31, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACC0C 001A9A0C  40 81 00 2C */	ble lbl_801ACC38
 /* 801ACC10 001A9A10  2C 1F 00 40 */	cmpwi r31, 0x40
 /* 801ACC14 001A9A14  40 81 00 0C */	ble lbl_801ACC20
 /* 801ACC18 001A9A18  38 00 00 40 */	li r0, 0x40
-/* 801ACC1C 001A9A1C  90 0D D7 A8 */	stw r0, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACC1C 001A9A1C  90 0D D7 A8 */	stw r0, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 lbl_801ACC20:
-/* 801ACC20 001A9A20  80 0D D7 A8 */	lwz r0, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACC20 001A9A20  80 0D D7 A8 */	lwz r0, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACC24 001A9A24  38 80 00 00 */	li r4, 0
 /* 801ACC28 001A9A28  38 A0 00 00 */	li r5, 0
 /* 801ACC2C 001A9A2C  54 03 20 36 */	slwi r3, r0, 4
 /* 801ACC30 001A9A30  4B E7 4D A1 */	bl __nwa__FUl14xMemStaticTypeUi
-/* 801ACC34 001A9A34  90 6D D7 A4 */	stw r3, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACC34 001A9A34  90 6D D7 A4 */	stw r3, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 lbl_801ACC38:
 /* 801ACC38 001A9A38  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 801ACC3C 001A9A3C  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -461,11 +461,11 @@ lbl_801ACC38:
 
 .global alloc_activity__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_Fv
 alloc_activity__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_Fv:
-/* 801ACC4C 001A9A4C  80 8D D7 AC */	lwz r4, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801ACC50 001A9A50  80 AD D7 A4 */	lwz r5, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACC4C 001A9A4C  80 8D D7 AC */	lwz r4, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
+/* 801ACC50 001A9A50  80 AD D7 A4 */	lwz r5, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACC54 001A9A54  38 04 00 01 */	addi r0, r4, 1
 /* 801ACC58 001A9A58  54 83 20 36 */	slwi r3, r4, 4
-/* 801ACC5C 001A9A5C  90 0D D7 AC */	stw r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACC5C 001A9A5C  90 0D D7 AC */	stw r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACC60 001A9A60  7C 65 1A 14 */	add r3, r5, r3
 /* 801ACC64 001A9A64  4E 80 00 20 */	blr 
 
@@ -476,11 +476,11 @@ free_activity__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FP22zReact
 /* 801ACC70 001A9A70  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801ACC74 001A9A74  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801ACC78 001A9A78  7C 7F 1B 78 */	mr r31, r3
-/* 801ACC7C 001A9A7C  80 AD D7 AC */	lwz r5, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801ACC80 001A9A80  80 8D D7 A4 */	lwz r4, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACC7C 001A9A7C  80 AD D7 AC */	lwz r5, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
+/* 801ACC80 001A9A80  80 8D D7 A4 */	lwz r4, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACC84 001A9A84  38 A5 FF FF */	addi r5, r5, -1
 /* 801ACC88 001A9A88  54 A0 20 36 */	slwi r0, r5, 4
-/* 801ACC8C 001A9A8C  90 AD D7 AC */	stw r5, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACC8C 001A9A8C  90 AD D7 AC */	stw r5, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACC90 001A9A90  7C 84 02 14 */	add r4, r4, r0
 /* 801ACC94 001A9A94  7C 04 F8 40 */	cmplw r4, r31
 /* 801ACC98 001A9A98  41 82 00 10 */	beq lbl_801ACCA8
@@ -564,8 +564,8 @@ activate_entity__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zEnt
 /* 801ACD9C 001A9B9C  38 60 00 01 */	li r3, 1
 /* 801ACDA0 001A9BA0  48 00 00 FC */	b lbl_801ACE9C
 lbl_801ACDA4:
-/* 801ACDA4 001A9BA4  80 6D D7 AC */	lwz r3, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801ACDA8 001A9BA8  80 0D D7 A8 */	lwz r0, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801ACDA4 001A9BA4  80 6D D7 AC */	lwz r3, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
+/* 801ACDA8 001A9BA8  80 0D D7 A8 */	lwz r0, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801ACDAC 001A9BAC  7C 03 00 00 */	cmpw r3, r0
 /* 801ACDB0 001A9BB0  41 80 00 0C */	blt lbl_801ACDBC
 /* 801ACDB4 001A9BB4  38 60 00 00 */	li r3, 0
@@ -610,7 +610,7 @@ lbl_801ACE1C:
 /* 801ACE44 001A9C44  80 84 00 54 */	lwz r4, 0x54(r4)
 /* 801ACE48 001A9C48  4B E5 8D D9 */	bl xMat4x3Copy__FP7xMat4x3PC7xMat4x3
 /* 801ACE4C 001A9C4C  80 7E 00 28 */	lwz r3, 0x28(r30)
-/* 801ACE50 001A9C50  C0 22 C7 E8 */	lfs f1, _esc__2_1004_3-_SDA2_BASE_(r2)
+/* 801ACE50 001A9C50  C0 22 C7 E8 */	lfs f1, _esc__2_1004_3@sda21(r2)
 /* 801ACE54 001A9C54  4B E9 D8 B9 */	bl xModelUpdate__FP14xModelInstancef
 /* 801ACE58 001A9C58  80 7E 00 28 */	lwz r3, 0x28(r30)
 /* 801ACE5C 001A9C5C  4B E9 DB 51 */	bl xModelEval__FP14xModelInstance
@@ -650,7 +650,7 @@ set_static_model__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zEn
 /* 801ACED0 001A9CD0  7C 00 20 40 */	cmplw r0, r4
 /* 801ACED4 001A9CD4  41 82 00 6C */	beq lbl_801ACF40
 /* 801ACED8 001A9CD8  4B FF FE 09 */	bl swap_model__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zEntSimpleObjP8RpAtomic
-/* 801ACEDC 001A9CDC  C0 02 C7 EC */	lfs f0, _esc__2_1005_6-_SDA2_BASE_(r2)
+/* 801ACEDC 001A9CDC  C0 02 C7 EC */	lfs f0, _esc__2_1005_6@sda21(r2)
 /* 801ACEE0 001A9CE0  80 7F 00 28 */	lwz r3, 0x28(r31)
 /* 801ACEE4 001A9CE4  D0 03 00 28 */	stfs f0, 0x28(r3)
 /* 801ACEE8 001A9CE8  80 7F 00 28 */	lwz r3, 0x28(r31)
@@ -697,7 +697,7 @@ set_burnt_model__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zEnt
 /* 801ACF7C 001A9D7C  80 9F 00 08 */	lwz r4, 8(r31)
 /* 801ACF80 001A9D80  7F C3 F3 78 */	mr r3, r30
 /* 801ACF84 001A9D84  4B FF FD 5D */	bl swap_model__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zEntSimpleObjP8RpAtomic
-/* 801ACF88 001A9D88  C0 02 C7 F0 */	lfs f0, _esc__2_1205_0-_SDA2_BASE_(r2)
+/* 801ACF88 001A9D88  C0 02 C7 F0 */	lfs f0, _esc__2_1205_0@sda21(r2)
 /* 801ACF8C 001A9D8C  80 7E 00 28 */	lwz r3, 0x28(r30)
 /* 801ACF90 001A9D90  D0 03 00 28 */	stfs f0, 0x28(r3)
 /* 801ACF94 001A9D94  80 7E 00 28 */	lwz r3, 0x28(r30)
@@ -815,8 +815,8 @@ lbl_801AD11C:
 /* 801AD120 001A9F20  7C 06 00 40 */	cmplw r6, r0
 /* 801AD124 001A9F24  40 82 00 24 */	bne lbl_801AD148
 /* 801AD128 001A9F28  EC 20 08 24 */	fdivs f1, f0, f1
-/* 801AD12C 001A9F2C  C0 42 C7 F4 */	lfs f2, _esc__2_1233_1-_SDA2_BASE_(r2)
-/* 801AD130 001A9F30  C0 02 C7 EC */	lfs f0, _esc__2_1005_6-_SDA2_BASE_(r2)
+/* 801AD12C 001A9F2C  C0 42 C7 F4 */	lfs f2, _esc__2_1233_1@sda21(r2)
+/* 801AD130 001A9F30  C0 02 C7 EC */	lfs f0, _esc__2_1005_6@sda21(r2)
 /* 801AD134 001A9F34  EC 02 00 7C */	fnmsubs f0, f2, f1, f0
 /* 801AD138 001A9F38  D0 05 00 28 */	stfs f0, 0x28(r5)
 /* 801AD13C 001A9F3C  D0 05 00 24 */	stfs f0, 0x24(r5)
@@ -908,10 +908,10 @@ lbl_801AD254:
 /* 801AD260 001AA060  41 82 00 74 */	beq lbl_801AD2D4
 /* 801AD264 001AA064  93 A3 00 04 */	stw r29, 4(r3)
 /* 801AD268 001AA068  38 00 00 00 */	li r0, 0
-/* 801AD26C 001AA06C  C0 22 C7 E8 */	lfs f1, _esc__2_1004_3-_SDA2_BASE_(r2)
+/* 801AD26C 001AA06C  C0 22 C7 E8 */	lfs f1, _esc__2_1004_3@sda21(r2)
 /* 801AD270 001AA070  7C 64 1B 78 */	mr r4, r3
 /* 801AD274 001AA074  90 03 00 0C */	stw r0, 0xc(r3)
-/* 801AD278 001AA078  C0 02 C7 F8 */	lfs f0, _esc__2_1298_1-_SDA2_BASE_(r2)
+/* 801AD278 001AA078  C0 02 C7 F8 */	lfs f0, _esc__2_1298_1@sda21(r2)
 /* 801AD27C 001AA07C  D0 23 00 18 */	stfs f1, 0x18(r3)
 /* 801AD280 001AA080  D0 23 00 1C */	stfs f1, 0x1c(r3)
 /* 801AD284 001AA084  D0 03 00 24 */	stfs f0, 0x24(r3)
@@ -925,10 +925,10 @@ lbl_801AD254:
 /* 801AD2A4 001AA0A4  EC 00 07 F2 */	fmuls f0, f0, f31
 /* 801AD2A8 001AA0A8  38 A0 00 C3 */	li r5, 0xc3
 /* 801AD2AC 001AA0AC  D0 1E 00 0C */	stfs f0, 0xc(r30)
-/* 801AD2B0 001AA0B0  81 22 F5 D8 */	lwz r9, _esc__2_1294_2-_SDA2_BASE_(r2)
-/* 801AD2B4 001AA0B4  81 02 F5 DC */	lwz r8, lbl_803D92FC-_SDA2_BASE_(r2)
-/* 801AD2B8 001AA0B8  80 E2 F5 E0 */	lwz r7, lbl_803D9300-_SDA2_BASE_(r2)
-/* 801AD2BC 001AA0BC  80 02 F5 E4 */	lwz r0, lbl_803D9304-_SDA2_BASE_(r2)
+/* 801AD2B0 001AA0B0  81 22 F5 D8 */	lwz r9, _esc__2_1294_2@sda21(r2)
+/* 801AD2B4 001AA0B4  81 02 F5 DC */	lwz r8, lbl_803D92FC@sda21(r2)
+/* 801AD2B8 001AA0B8  80 E2 F5 E0 */	lwz r7, lbl_803D9300@sda21(r2)
+/* 801AD2BC 001AA0BC  80 02 F5 E4 */	lwz r0, lbl_803D9304@sda21(r2)
 /* 801AD2C0 001AA0C0  91 21 00 08 */	stw r9, 8(r1)
 /* 801AD2C4 001AA0C4  91 01 00 0C */	stw r8, 0xc(r1)
 /* 801AD2C8 001AA0C8  90 E1 00 10 */	stw r7, 0x10(r1)
@@ -1003,7 +1003,7 @@ apply_fire_damage__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zE
 /* 801AD3B0 001AA1B0  41 82 00 C8 */	beq lbl_801AD478
 /* 801AD3B4 001AA1B4  80 9E 00 E4 */	lwz r4, 0xe4(r30)
 /* 801AD3B8 001AA1B8  7F C3 F3 78 */	mr r3, r30
-/* 801AD3BC 001AA1BC  C0 22 C7 EC */	lfs f1, _esc__2_1005_6-_SDA2_BASE_(r2)
+/* 801AD3BC 001AA1BC  C0 22 C7 EC */	lfs f1, _esc__2_1005_6@sda21(r2)
 /* 801AD3C0 001AA1C0  38 A0 00 00 */	li r5, 0
 /* 801AD3C4 001AA1C4  80 04 00 00 */	lwz r0, 0(r4)
 /* 801AD3C8 001AA1C8  60 00 00 04 */	ori r0, r0, 4
@@ -1020,16 +1020,16 @@ apply_fire_damage__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zE
 /* 801AD3F4 001AA1F4  D0 24 00 20 */	stfs f1, 0x20(r4)
 /* 801AD3F8 001AA1F8  80 9F 00 28 */	lwz r4, 0x28(r31)
 /* 801AD3FC 001AA1FC  4B FF FE 09 */	bl play_anim__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zEntSimpleObjP10xAnimStatefb
-/* 801AD400 001AA200  C0 22 C7 E8 */	lfs f1, _esc__2_1004_3-_SDA2_BASE_(r2)
+/* 801AD400 001AA200  C0 22 C7 E8 */	lfs f1, _esc__2_1004_3@sda21(r2)
 /* 801AD404 001AA204  38 00 02 21 */	li r0, 0x221
 /* 801AD408 001AA208  90 01 00 08 */	stw r0, 8(r1)
 /* 801AD40C 001AA20C  38 61 00 18 */	addi r3, r1, 0x18
 /* 801AD410 001AA210  FC 60 08 90 */	fmr f3, f1
-/* 801AD414 001AA214  C0 42 C7 EC */	lfs f2, _esc__2_1005_6-_SDA2_BASE_(r2)
+/* 801AD414 001AA214  C0 42 C7 EC */	lfs f2, _esc__2_1005_6@sda21(r2)
 /* 801AD418 001AA218  4B E6 03 C1 */	bl assign__5xVec3Ffff
 /* 801AD41C 001AA21C  C0 3F 00 34 */	lfs f1, 0x34(r31)
-/* 801AD420 001AA220  38 0D D7 B0 */	addi r0, r13, fire_props__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_
-/* 801AD424 001AA224  C0 02 C7 E8 */	lfs f0, _esc__2_1004_3-_SDA2_BASE_(r2)
+/* 801AD420 001AA220  38 0D D7 B0 */	addi r0, r13, fire_props__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21
+/* 801AD424 001AA224  C0 02 C7 E8 */	lfs f0, _esc__2_1004_3@sda21(r2)
 /* 801AD428 001AA228  D0 21 00 24 */	stfs f1, 0x24(r1)
 /* 801AD42C 001AA22C  C0 3F 00 30 */	lfs f1, 0x30(r31)
 /* 801AD430 001AA230  D0 21 00 28 */	stfs f1, 0x28(r1)
@@ -1080,7 +1080,7 @@ animate_hit__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zEntSimp
 /* 801AD4CC 001AA2CC  41 82 00 38 */	beq lbl_801AD504
 /* 801AD4D0 001AA2D0  80 9F 00 24 */	lwz r4, 0x24(r31)
 /* 801AD4D4 001AA2D4  7F C3 F3 78 */	mr r3, r30
-/* 801AD4D8 001AA2D8  C0 22 C7 EC */	lfs f1, _esc__2_1005_6-_SDA2_BASE_(r2)
+/* 801AD4D8 001AA2D8  C0 22 C7 EC */	lfs f1, _esc__2_1005_6@sda21(r2)
 /* 801AD4DC 001AA2DC  38 A0 00 01 */	li r5, 1
 /* 801AD4E0 001AA2E0  4B FF FD 25 */	bl play_anim__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zEntSimpleObjP10xAnimStatefb
 /* 801AD4E4 001AA2E4  80 7F 00 14 */	lwz r3, 0x14(r31)
@@ -1103,24 +1103,24 @@ zReactiveSceneEnter__Fv:
 /* 801AD518 001AA318  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801AD51C 001AA31C  7C 08 02 A6 */	mflr r0
 /* 801AD520 001AA320  3C 60 21 64 */	lis r3, 0x2163A1BF@ha
-/* 801AD524 001AA324  C0 02 C7 E8 */	lfs f0, _esc__2_1004_3-_SDA2_BASE_(r2)
+/* 801AD524 001AA324  C0 02 C7 E8 */	lfs f0, _esc__2_1004_3@sda21(r2)
 /* 801AD528 001AA328  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801AD52C 001AA32C  38 00 00 00 */	li r0, 0
-/* 801AD530 001AA330  38 8D D7 B0 */	addi r4, r13, fire_props__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_
+/* 801AD530 001AA330  38 8D D7 B0 */	addi r4, r13, fire_props__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21
 /* 801AD534 001AA334  38 63 A1 BF */	addi r3, r3, 0x2163A1BF@l
-/* 801AD538 001AA338  90 0D D7 AC */	stw r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801AD53C 001AA33C  90 0D D7 A8 */	stw r0, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801AD540 001AA340  D0 0D D7 B0 */	stfs f0, fire_props__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801AD538 001AA338  90 0D D7 AC */	stw r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
+/* 801AD53C 001AA33C  90 0D D7 A8 */	stw r0, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
+/* 801AD540 001AA340  D0 0D D7 B0 */	stfs f0, fire_props__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801AD544 001AA344  D0 04 00 04 */	stfs f0, 4(r4)
 /* 801AD548 001AA348  4B EB 94 C1 */	bl xSndMgrGetSoundGroup__FUi
-/* 801AD54C 001AA34C  38 8D D7 B0 */	addi r4, r13, fire_props__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_
+/* 801AD54C 001AA34C  38 8D D7 B0 */	addi r4, r13, fire_props__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21
 /* 801AD550 001AA350  90 64 00 08 */	stw r3, 8(r4)
 /* 801AD554 001AA354  4B FF F4 A1 */	bl load_genres__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_Fv
-/* 801AD558 001AA358  80 0D D7 A0 */	lwz r0, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801AD558 001AA358  80 0D D7 A0 */	lwz r0, genres_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801AD55C 001AA35C  2C 00 00 00 */	cmpwi r0, 0
 /* 801AD560 001AA360  40 81 00 10 */	ble lbl_801AD570
 /* 801AD564 001AA364  4B FF F6 41 */	bl setup_entities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_Fv
-/* 801AD568 001AA368  80 0D D7 A8 */	lwz r0, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801AD568 001AA368  80 0D D7 A8 */	lwz r0, activities_size__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801AD56C 001AA36C  2C 00 00 00 */	cmpwi r0, 0
 lbl_801AD570:
 /* 801AD570 001AA370  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1134,8 +1134,8 @@ zReactiveReset__Fv:
 /* 801AD584 001AA384  7C 08 02 A6 */	mflr r0
 /* 801AD588 001AA388  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801AD58C 001AA38C  BF A1 00 14 */	stmw r29, 0x14(r1)
-/* 801AD590 001AA390  80 0D D7 AC */	lwz r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801AD594 001AA394  80 6D D7 A4 */	lwz r3, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801AD590 001AA390  80 0D D7 AC */	lwz r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
+/* 801AD594 001AA394  80 6D D7 A4 */	lwz r3, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801AD598 001AA398  54 00 20 36 */	slwi r0, r0, 4
 /* 801AD59C 001AA39C  7C 7F 1B 78 */	mr r31, r3
 /* 801AD5A0 001AA3A0  7F C3 02 14 */	add r30, r3, r0
@@ -1150,7 +1150,7 @@ lbl_801AD5B4:
 /* 801AD5BC 001AA3BC  3C 60 80 38 */	lis r3, globals@ha
 /* 801AD5C0 001AA3C0  38 00 00 00 */	li r0, 0
 /* 801AD5C4 001AA3C4  38 63 2A 38 */	addi r3, r3, globals@l
-/* 801AD5C8 001AA3C8  90 0D D7 AC */	stw r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801AD5C8 001AA3C8  90 0D D7 AC */	stw r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801AD5CC 001AA3CC  80 63 04 C8 */	lwz r3, 0x4c8(r3)
 /* 801AD5D0 001AA3D0  80 03 00 A8 */	lwz r0, 0xa8(r3)
 /* 801AD5D4 001AA3D4  83 C3 02 DC */	lwz r30, 0x2dc(r3)
@@ -1187,8 +1187,8 @@ zReactiveUpdate__Ff:
 /* 801AD638 001AA438  DB E1 00 18 */	stfd f31, 0x18(r1)
 /* 801AD63C 001AA43C  FF E0 08 90 */	fmr f31, f1
 /* 801AD640 001AA440  BF C1 00 10 */	stmw r30, 0x10(r1)
-/* 801AD644 001AA444  80 0D D7 AC */	lwz r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801AD648 001AA448  80 6D D7 A4 */	lwz r3, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801AD644 001AA444  80 0D D7 AC */	lwz r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
+/* 801AD648 001AA448  80 6D D7 A4 */	lwz r3, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801AD64C 001AA44C  54 00 20 36 */	slwi r0, r0, 4
 /* 801AD650 001AA450  7C 7F 1B 78 */	mr r31, r3
 /* 801AD654 001AA454  7F C3 02 14 */	add r30, r3, r0
@@ -1219,8 +1219,8 @@ zReactiveRender__Fv:
 /* 801AD6A0 001AA4A0  7C 08 02 A6 */	mflr r0
 /* 801AD6A4 001AA4A4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801AD6A8 001AA4A8  BF C1 00 08 */	stmw r30, 8(r1)
-/* 801AD6AC 001AA4AC  80 0D D7 AC */	lwz r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801AD6B0 001AA4B0  80 6D D7 A4 */	lwz r3, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801AD6AC 001AA4AC  80 0D D7 AC */	lwz r0, activities_used__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
+/* 801AD6B0 001AA4B0  80 6D D7 A4 */	lwz r3, activities__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_@sda21(r13)
 /* 801AD6B4 001AA4B4  54 00 20 36 */	slwi r0, r0, 4
 /* 801AD6B8 001AA4B8  7C 7F 1B 78 */	mr r31, r3
 /* 801AD6BC 001AA4BC  7F C3 02 14 */	add r30, r3, r0
@@ -1256,12 +1256,12 @@ zReactiveHitTestBound__FPP13zEntSimpleObjiRC6xBound:
 /* 801AD720 001AA520  7F E4 FB 78 */	mr r4, r31
 /* 801AD724 001AA524  7F E5 FB 78 */	mr r5, r31
 /* 801AD728 001AA528  38 C1 00 08 */	addi r6, r1, 8
-/* 801AD72C 001AA52C  38 6D C8 40 */	addi r3, r13, colls_grid-_SDA_BASE_
+/* 801AD72C 001AA52C  38 6D C8 40 */	addi r3, r13, colls_grid@sda21
 /* 801AD730 001AA530  4B FF FA 95 */	bl grid_check_bound__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR5xGridRC6xBoundRC7xQCDataRQ232_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_11check_bound
 /* 801AD734 001AA534  7F E4 FB 78 */	mr r4, r31
 /* 801AD738 001AA538  7F E5 FB 78 */	mr r5, r31
 /* 801AD73C 001AA53C  38 C1 00 08 */	addi r6, r1, 8
-/* 801AD740 001AA540  38 6D C8 78 */	addi r3, r13, colls_oso_grid-_SDA_BASE_
+/* 801AD740 001AA540  38 6D C8 78 */	addi r3, r13, colls_oso_grid@sda21
 /* 801AD744 001AA544  4B FF FA 81 */	bl grid_check_bound__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR5xGridRC6xBoundRC7xQCDataRQ232_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_11check_bound
 /* 801AD748 001AA548  80 01 00 08 */	lwz r0, 8(r1)
 /* 801AD74C 001AA54C  7C 1E 00 50 */	subf r0, r30, r0
@@ -1326,12 +1326,12 @@ zReactiveHitTestRay__FPP13zEntSimpleObjiRC5xRay3:
 /* 801AD814 001AA614  38 81 00 2C */	addi r4, r1, 0x2c
 /* 801AD818 001AA618  38 C1 00 08 */	addi r6, r1, 8
 /* 801AD81C 001AA61C  7C 85 23 78 */	mr r5, r4
-/* 801AD820 001AA620  38 6D C8 40 */	addi r3, r13, colls_grid-_SDA_BASE_
+/* 801AD820 001AA620  38 6D C8 40 */	addi r3, r13, colls_grid@sda21
 /* 801AD824 001AA624  4B FF F9 C1 */	bl grid_check_ray__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR5xGridRC6xBoundRC7xQCDataRQ232_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_9check_ray
 /* 801AD828 001AA628  38 81 00 2C */	addi r4, r1, 0x2c
 /* 801AD82C 001AA62C  38 C1 00 08 */	addi r6, r1, 8
 /* 801AD830 001AA630  7C 85 23 78 */	mr r5, r4
-/* 801AD834 001AA634  38 6D C8 78 */	addi r3, r13, colls_oso_grid-_SDA_BASE_
+/* 801AD834 001AA634  38 6D C8 78 */	addi r3, r13, colls_oso_grid@sda21
 /* 801AD838 001AA638  4B FF F9 AD */	bl grid_check_ray__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR5xGridRC6xBoundRC7xQCDataRQ232_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_9check_ray
 /* 801AD83C 001AA63C  80 01 00 08 */	lwz r0, 8(r1)
 /* 801AD840 001AA640  7C 1E 00 50 */	subf r0, r30, r0
@@ -1370,7 +1370,7 @@ zReactiveMoveThrough__FR13zEntSimpleObjf:
 /* 801AD8AC 001AA6AC  38 60 00 00 */	li r3, 0
 /* 801AD8B0 001AA6B0  48 00 01 10 */	b lbl_801AD9C0
 lbl_801AD8B4:
-/* 801AD8B4 001AA6B4  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 801AD8B4 001AA6B4  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 801AD8B8 001AA6B8  38 61 00 08 */	addi r3, r1, 8
 /* 801AD8BC 001AA6BC  80 DF 00 48 */	lwz r6, 0x48(r31)
 /* 801AD8C0 001AA6C0  80 A4 04 C4 */	lwz r5, 0x4c4(r4)
@@ -1384,7 +1384,7 @@ lbl_801AD8B4:
 /* 801AD8E0 001AA6E0  90 01 00 18 */	stw r0, 0x18(r1)
 /* 801AD8E4 001AA6E4  80 01 00 10 */	lwz r0, 0x10(r1)
 /* 801AD8E8 001AA6E8  C0 21 00 18 */	lfs f1, 0x18(r1)
-/* 801AD8EC 001AA6EC  C0 02 C7 FC */	lfs f0, _esc__2_1418_2-_SDA2_BASE_(r2)
+/* 801AD8EC 001AA6EC  C0 02 C7 FC */	lfs f0, _esc__2_1418_2@sda21(r2)
 /* 801AD8F0 001AA6F0  90 81 00 14 */	stw r4, 0x14(r1)
 /* 801AD8F4 001AA6F4  EC 01 00 28 */	fsubs f0, f1, f0
 /* 801AD8F8 001AA6F8  90 01 00 1C */	stw r0, 0x1c(r1)
@@ -1466,7 +1466,7 @@ zReactiveDamage__FR13zEntSimpleObj10zHitSourcef:
 /* 801ADA00 001AA800  40 80 00 08 */	bge lbl_801ADA08
 /* 801ADA04 001AA804  48 00 00 18 */	b lbl_801ADA1C
 lbl_801ADA08:
-/* 801ADA08 001AA808  C0 02 C7 E8 */	lfs f0, _esc__2_1004_3-_SDA2_BASE_(r2)
+/* 801ADA08 001AA808  C0 02 C7 E8 */	lfs f0, _esc__2_1004_3@sda21(r2)
 /* 801ADA0C 001AA80C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801ADA10 001AA810  40 81 00 10 */	ble lbl_801ADA20
 /* 801ADA14 001AA814  4B FF F9 5D */	bl apply_fire_damage__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FR13zEntSimpleObjf
@@ -1501,7 +1501,7 @@ zReactiveAffectArea__FRC7xSpheref:
 /* 801ADA74 001AA874  38 61 00 08 */	addi r3, r1, 8
 /* 801ADA78 001AA878  38 80 00 10 */	li r4, 0x10
 /* 801ADA7C 001AA87C  4B FF FD 09 */	bl zReactiveHitTestSphere__FPP13zEntSimpleObjiRC7xSphere
-/* 801ADA80 001AA880  C0 02 C7 EC */	lfs f0, _esc__2_1005_6-_SDA2_BASE_(r2)
+/* 801ADA80 001AA880  C0 02 C7 EC */	lfs f0, _esc__2_1005_6@sda21(r2)
 /* 801ADA84 001AA884  EF 9B 06 F2 */	fmuls f28, f27, f27
 /* 801ADA88 001AA888  C3 FC 00 00 */	lfs f31, 0(r28)
 /* 801ADA8C 001AA88C  7C 7E 1B 78 */	mr r30, r3
@@ -1527,10 +1527,10 @@ lbl_801ADAAC:
 /* 801ADAD8 001AA8D8  FC 01 E0 40 */	fcmpo cr0, f1, f28
 /* 801ADADC 001AA8DC  41 81 00 24 */	bgt lbl_801ADB00
 /* 801ADAE0 001AA8E0  4B E5 D9 99 */	bl xsqrt__Ff
-/* 801ADAE4 001AA8E4  C0 02 C7 EC */	lfs f0, _esc__2_1005_6-_SDA2_BASE_(r2)
-/* 801ADAE8 001AA8E8  C0 42 C8 04 */	lfs f2, _esc__2_1537_1-_SDA2_BASE_(r2)
+/* 801ADAE4 001AA8E4  C0 02 C7 EC */	lfs f0, _esc__2_1005_6@sda21(r2)
+/* 801ADAE8 001AA8E8  C0 42 C8 04 */	lfs f2, _esc__2_1537_1@sda21(r2)
 /* 801ADAEC 001AA8EC  EC 21 06 FC */	fnmsubs f1, f1, f27, f0
-/* 801ADAF0 001AA8F0  C0 02 C8 00 */	lfs f0, _esc__2_1536_2-_SDA2_BASE_(r2)
+/* 801ADAF0 001AA8F0  C0 02 C8 00 */	lfs f0, _esc__2_1536_2@sda21(r2)
 /* 801ADAF4 001AA8F4  7C 7D F8 2E */	lwzx r3, r29, r31
 /* 801ADAF8 001AA8F8  EC 22 00 7A */	fmadds f1, f2, f1, f0
 /* 801ADAFC 001AA8FC  4B FF FD 7D */	bl zReactiveMoveThrough__FR13zEntSimpleObjf

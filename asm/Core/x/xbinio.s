@@ -50,19 +50,19 @@ xBinioLoadCreate__FPCci:
 /* 8000C6F8 000094F8  3B E0 00 00 */	li r31, 0
 /* 8000C6FC 000094FC  3B C0 FF FF */	li r30, -1
 /* 8000C700 00009500  38 60 00 01 */	li r3, 1
-/* 8000C704 00009504  80 8D 80 08 */	lwz r4, g_loadlock-_SDA_BASE_(r13)
+/* 8000C704 00009504  80 8D 80 08 */	lwz r4, g_loadlock@sda21(r13)
 /* 8000C708 00009508  7C 09 03 A6 */	mtctr r0
 lbl_8000C70C:
 /* 8000C70C 0000950C  7C 65 30 30 */	slw r5, r3, r6
 /* 8000C710 00009510  7C 80 28 39 */	and. r0, r4, r5
 /* 8000C714 00009514  40 82 00 28 */	bne lbl_8000C73C
-/* 8000C718 00009518  80 0D 80 08 */	lwz r0, g_loadlock-_SDA_BASE_(r13)
+/* 8000C718 00009518  80 0D 80 08 */	lwz r0, g_loadlock@sda21(r13)
 /* 8000C71C 0000951C  3C 60 80 2F */	lis r3, g_loadinst@ha
 /* 8000C720 00009520  1C 86 00 68 */	mulli r4, r6, 0x68
 /* 8000C724 00009524  7C DE 33 78 */	mr r30, r6
 /* 8000C728 00009528  7C 05 2B 78 */	or r5, r0, r5
 /* 8000C72C 0000952C  38 03 11 20 */	addi r0, r3, g_loadinst@l
-/* 8000C730 00009530  90 AD 80 08 */	stw r5, g_loadlock-_SDA_BASE_(r13)
+/* 8000C730 00009530  90 AD 80 08 */	stw r5, g_loadlock@sda21(r13)
 /* 8000C734 00009534  7F E0 22 14 */	add r31, r0, r4
 /* 8000C738 00009538  48 00 00 0C */	b lbl_8000C744
 lbl_8000C73C:
@@ -194,10 +194,10 @@ lbl_8000C908:
 /* 8000C914 00009714  38 A0 00 68 */	li r5, 0x68
 /* 8000C918 00009718  4B FF 67 E9 */	bl memset
 /* 8000C91C 0000971C  38 00 00 01 */	li r0, 1
-/* 8000C920 00009720  80 6D 80 08 */	lwz r3, g_loadlock-_SDA_BASE_(r13)
+/* 8000C920 00009720  80 6D 80 08 */	lwz r3, g_loadlock@sda21(r13)
 /* 8000C924 00009724  7C 00 F8 30 */	slw r0, r0, r31
 /* 8000C928 00009728  7C 60 00 78 */	andc r0, r3, r0
-/* 8000C92C 0000972C  90 0D 80 08 */	stw r0, g_loadlock-_SDA_BASE_(r13)
+/* 8000C92C 0000972C  90 0D 80 08 */	stw r0, g_loadlock@sda21(r13)
 /* 8000C930 00009730  BB C1 00 08 */	lmw r30, 8(r1)
 /* 8000C934 00009734  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8000C938 00009738  7C 08 03 A6 */	mtlr r0
@@ -960,13 +960,13 @@ BFD_AsyncRead__FP15st_FILELOADINFOiPviii:
 /* 8000D300 0000A100  38 60 00 00 */	li r3, 0
 /* 8000D304 0000A104  48 00 00 98 */	b lbl_8000D39C
 lbl_8000D308:
-/* 8000D308 0000A108  80 0D B7 78 */	lwz r0, g_async_context-_SDA_BASE_(r13)
+/* 8000D308 0000A108  80 0D B7 78 */	lwz r0, g_async_context@sda21(r13)
 /* 8000D30C 0000A10C  28 00 00 00 */	cmplwi r0, 0
 /* 8000D310 0000A110  41 82 00 0C */	beq lbl_8000D31C
 /* 8000D314 0000A114  38 60 00 00 */	li r3, 0
 /* 8000D318 0000A118  48 00 00 84 */	b lbl_8000D39C
 lbl_8000D31C:
-/* 8000D31C 0000A11C  93 CD B7 78 */	stw r30, g_async_context-_SDA_BASE_(r13)
+/* 8000D31C 0000A11C  93 CD B7 78 */	stw r30, g_async_context@sda21(r13)
 /* 8000D320 0000A120  38 00 00 01 */	li r0, 1
 /* 8000D324 0000A124  7F E3 FB 78 */	mr r3, r31
 /* 8000D328 0000A128  38 A0 00 00 */	li r5, 0
@@ -997,7 +997,7 @@ lbl_8000D384:
 /* 8000D384 0000A184  2C 00 00 00 */	cmpwi r0, 0
 /* 8000D388 0000A188  40 82 00 10 */	bne lbl_8000D398
 /* 8000D38C 0000A18C  38 00 00 00 */	li r0, 0
-/* 8000D390 0000A190  90 0D B7 78 */	stw r0, g_async_context-_SDA_BASE_(r13)
+/* 8000D390 0000A190  90 0D B7 78 */	stw r0, g_async_context@sda21(r13)
 /* 8000D394 0000A194  90 1E 00 28 */	stw r0, 0x28(r30)
 lbl_8000D398:
 /* 8000D398 0000A198  38 60 00 01 */	li r3, 1
@@ -1014,7 +1014,7 @@ BFD_AsyncReadStatus__FP15st_FILELOADINFO:
 /* 8000D3B4 0000A1B4  7C 08 02 A6 */	mflr r0
 /* 8000D3B8 0000A1B8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8000D3BC 0000A1BC  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 8000D3C0 0000A1C0  80 0D B7 78 */	lwz r0, g_async_context-_SDA_BASE_(r13)
+/* 8000D3C0 0000A1C0  80 0D B7 78 */	lwz r0, g_async_context@sda21(r13)
 /* 8000D3C4 0000A1C4  83 E3 00 54 */	lwz r31, 0x54(r3)
 /* 8000D3C8 0000A1C8  28 00 00 00 */	cmplwi r0, 0
 /* 8000D3CC 0000A1CC  40 82 00 0C */	bne lbl_8000D3D8
@@ -1065,7 +1065,7 @@ lbl_8000D450:
 lbl_8000D464:
 /* 8000D464 0000A264  38 00 00 00 */	li r0, 0
 /* 8000D468 0000A268  90 1F 00 28 */	stw r0, 0x28(r31)
-/* 8000D46C 0000A26C  90 0D B7 78 */	stw r0, g_async_context-_SDA_BASE_(r13)
+/* 8000D46C 0000A26C  90 0D B7 78 */	stw r0, g_async_context@sda21(r13)
 lbl_8000D470:
 /* 8000D470 0000A270  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8000D474 0000A274  83 E1 00 1C */	lwz r31, 0x1c(r1)

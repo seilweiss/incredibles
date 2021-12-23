@@ -46,4 +46,4 @@ _esc__2_815:
 	.incbin "baserom.dol", 0x2CE56C, 0x8
 .global _esc__2_883
 _esc__2_883:
-	.incbin "baserom.dol", 0x2CE574, 0xC
+	.incbin "baserom.dol", 0x2CE574, 0x8

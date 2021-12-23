@@ -12,9 +12,6 @@ endif
 # Files
 #-------------------------------------------------------------------------------
 
-# Used for elf2dol
-TARGET_COL := wii
-
 OBJ_DIR := obj
 
 SRC_DIRS := src             \
@@ -74,17 +71,13 @@ ASMDIFF := ./asmdiff.sh
 # Options
 INCLUDES := -ir src -ir include -Iinclude -Iinclude/CodeWarrior -Iinclude/rwsdk
 
-ASFLAGS := -mgekko -I include
+ASFLAGS := -W -mgekko -I include
 LDFLAGS := -map $(MAP) -w off -maxerrors 1 -nostdlib
 CFLAGS  := -g -O4,s -DGAMECUBE -DGEKKO -Cpp_exceptions off -proc gekko -fp hard -fp_contract on -RTTI off \
 		   -str reuse,pool,readonly -enum int -use_lmw_stmw on -inline off -sdata 64 -sdata2 64 \
 		   -pragma "check_header_flags off" -pragma "force_active on" -pragma "cpp_extensions on" \
 		   -msgstyle gcc -maxerrors 1 -nostdinc -i- $(INCLUDES)
 PPROCFLAGS := -fsymbol-fixup
-
-# elf2dol needs to know these in order to calculate sbss correctly.
-SDATA_PDHR := 9
-SBSS_PDHR := 10
 
 # Silences most build commands. Run make S= to show all commands being invoked.
 S := @
@@ -108,7 +101,7 @@ DUMMY != mkdir -p $(ALL_DIRS)
 
 $(DOL): $(ELF) | tools
 	@echo " ELF2DOL "$@
-	$S$(ELF2DOL) $< $@ $(SDATA_PDHR) $(SBSS_PDHR) $(TARGET_COL)
+	$S$(ELF2DOL) $< $@
 	$S$(SHA1SUM) -c in.sha1 || ( rm -f main.dump; $(ASMDIFF) )
 
 clean:

@@ -132,7 +132,7 @@ lbl_8008E39C:
 /* 8008E3A8 0008B1A8  3B 9C 00 01 */	addi r28, r28, 1
 /* 8008E3AC 0008B1AC  3B 18 00 08 */	addi r24, r24, 8
 lbl_8008E3B0:
-/* 8008E3B0 0008B1B0  80 0D C3 C8 */	lwz r0, sCollisionGeomTableCount-_SDA_BASE_(r13)
+/* 8008E3B0 0008B1B0  80 0D C3 C8 */	lwz r0, sCollisionGeomTableCount@sda21(r13)
 /* 8008E3B4 0008B1B4  7C 1C 00 40 */	cmplw r28, r0
 /* 8008E3B8 0008B1B8  41 80 FE C4 */	blt lbl_8008E27C
 lbl_8008E3BC:
@@ -170,12 +170,12 @@ zCollGeom_Init__Fv:
 /* 8008E420 0008B220  BF 01 00 10 */	stmw r24, 0x10(r1)
 /* 8008E424 0008B224  4B FD DF 29 */	bl xSTAssetCountByType__FUi
 /* 8008E428 0008B228  28 03 00 00 */	cmplwi r3, 0
-/* 8008E42C 0008B22C  90 6D C3 C8 */	stw r3, sCollisionGeomTableCount-_SDA_BASE_(r13)
+/* 8008E42C 0008B22C  90 6D C3 C8 */	stw r3, sCollisionGeomTableCount@sda21(r13)
 /* 8008E430 0008B230  41 82 01 58 */	beq lbl_8008E588
 /* 8008E434 0008B234  28 03 00 14 */	cmplwi r3, 0x14
 /* 8008E438 0008B238  40 81 00 0C */	ble lbl_8008E444
 /* 8008E43C 0008B23C  38 00 00 14 */	li r0, 0x14
-/* 8008E440 0008B240  90 0D C3 C8 */	stw r0, sCollisionGeomTableCount-_SDA_BASE_(r13)
+/* 8008E440 0008B240  90 0D C3 C8 */	stw r0, sCollisionGeomTableCount@sda21(r13)
 lbl_8008E444:
 /* 8008E444 0008B244  3B 60 00 00 */	li r27, 0
 /* 8008E448 0008B248  3B 40 00 00 */	li r26, 0
@@ -264,7 +264,7 @@ lbl_8008E574:
 /* 8008E574 0008B374  3B 7B 00 01 */	addi r27, r27, 1
 /* 8008E578 0008B378  3B 5A 00 08 */	addi r26, r26, 8
 lbl_8008E57C:
-/* 8008E57C 0008B37C  80 0D C3 C8 */	lwz r0, sCollisionGeomTableCount-_SDA_BASE_(r13)
+/* 8008E57C 0008B37C  80 0D C3 C8 */	lwz r0, sCollisionGeomTableCount@sda21(r13)
 /* 8008E580 0008B380  7C 1B 00 40 */	cmplw r27, r0
 /* 8008E584 0008B384  41 80 FE D0 */	blt lbl_8008E454
 lbl_8008E588:

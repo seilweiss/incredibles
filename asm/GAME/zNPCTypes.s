@@ -1199,7 +1199,7 @@ reset__Q24zNPC10run_streamFv:
 
 .global delay__Q24zNPC10run_streamFv
 delay__Q24zNPC10run_streamFv:
-/* 8013FFA0 0013CDA0  C0 22 B5 48 */	lfs f1, _esc__2_1964_0-_SDA2_BASE_(r2)
+/* 8013FFA0 0013CDA0  C0 22 B5 48 */	lfs f1, _esc__2_1964_0@sda21(r2)
 /* 8013FFA4 0013CDA4  4E 80 00 20 */	blr 
 
 .global __dt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_Fv

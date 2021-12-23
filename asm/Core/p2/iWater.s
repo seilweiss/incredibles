@@ -137,7 +137,7 @@ CreateDirectionalLight__Fv:
 /* 801D6D40 001D3B40  48 0B D7 AD */	bl RwFrameCreate
 /* 801D6D44 001D3B44  7C 7E 1B 79 */	or. r30, r3, r3
 /* 801D6D48 001D3B48  41 82 00 38 */	beq lbl_801D6D80
-/* 801D6D4C 001D3B4C  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
+/* 801D6D4C 001D3B4C  C0 02 D1 58 */	lfs f0, _esc__2_961_1@sda21(r2)
 /* 801D6D50 001D3B50  7F E3 FB 78 */	mr r3, r31
 /* 801D6D54 001D3B54  38 81 00 08 */	addi r4, r1, 8
 /* 801D6D58 001D3B58  D0 01 00 10 */	stfs f0, 0x10(r1)
@@ -174,7 +174,7 @@ iWaterBumpGenRenderLayer__FP8RwCameraP9RwTextureffUcf:
 /* 801D6DBC 001D3BBC  DB A1 00 80 */	stfd f29, 0x80(r1)
 /* 801D6DC0 001D3BC0  F3 A1 00 88 */	psq_st f29, 136(r1), 0, qr0
 /* 801D6DC4 001D3BC4  BF C1 00 78 */	stmw r30, 0x78(r1)
-/* 801D6DC8 001D3BC8  80 CD E6 54 */	lwz r6, RwEngineInstance-_SDA_BASE_(r13)
+/* 801D6DC8 001D3BC8  80 CD E6 54 */	lwz r6, RwEngineInstance@sda21(r13)
 /* 801D6DCC 001D3BCC  7C 7E 1B 78 */	mr r30, r3
 /* 801D6DD0 001D3BD0  FF A0 08 90 */	fmr f29, f1
 /* 801D6DD4 001D3BD4  7C BF 2B 78 */	mr r31, r5
@@ -196,18 +196,18 @@ iWaterBumpGenRenderLayer__FP8RwCameraP9RwTextureffUcf:
 /* 801D6E14 001D3C14  6C 84 80 00 */	xoris r4, r4, 0x8000
 /* 801D6E18 001D3C18  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 801D6E1C 001D3C1C  90 81 00 6C */	stw r4, 0x6c(r1)
-/* 801D6E20 001D3C20  C0 22 D1 5C */	lfs f1, _esc__2_986_0-_SDA2_BASE_(r2)
+/* 801D6E20 001D3C20  C0 22 D1 5C */	lfs f1, _esc__2_986_0@sda21(r2)
 /* 801D6E24 001D3C24  38 81 00 08 */	addi r4, r1, 8
 /* 801D6E28 001D3C28  90 61 00 74 */	stw r3, 0x74(r1)
 /* 801D6E2C 001D3C2C  38 60 00 04 */	li r3, 4
-/* 801D6E30 001D3C30  C8 62 D1 60 */	lfd f3, _esc__2_988_2-_SDA2_BASE_(r2)
+/* 801D6E30 001D3C30  C8 62 D1 60 */	lfd f3, _esc__2_988_2@sda21(r2)
 /* 801D6E34 001D3C34  38 A0 00 04 */	li r5, 4
 /* 801D6E38 001D3C38  90 C1 00 70 */	stw r6, 0x70(r1)
 /* 801D6E3C 001D3C3C  C8 41 00 68 */	lfd f2, 0x68(r1)
 /* 801D6E40 001D3C40  C8 01 00 70 */	lfd f0, 0x70(r1)
 /* 801D6E44 001D3C44  D0 21 00 08 */	stfs f1, 8(r1)
 /* 801D6E48 001D3C48  EC 42 18 28 */	fsubs f2, f2, f3
-/* 801D6E4C 001D3C4C  80 CD E6 54 */	lwz r6, RwEngineInstance-_SDA_BASE_(r13)
+/* 801D6E4C 001D3C4C  80 CD E6 54 */	lwz r6, RwEngineInstance@sda21(r13)
 /* 801D6E50 001D3C50  EC 60 18 28 */	fsubs f3, f0, f3
 /* 801D6E54 001D3C54  D0 21 00 0C */	stfs f1, 0xc(r1)
 /* 801D6E58 001D3C58  C0 06 00 18 */	lfs f0, 0x18(r6)
@@ -268,10 +268,10 @@ iWaterBumpGenBegin__FP8RwCameraP6RwRGBA:
 /* 801D6F28 001D3D28  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801D6F2C 001D3D2C  7C 7E 1B 78 */	mr r30, r3
 /* 801D6F30 001D3D30  7C 9F 23 78 */	mr r31, r4
-/* 801D6F34 001D3D34  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 801D6F34 001D3D34  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 801D6F38 001D3D38  80 65 00 00 */	lwz r3, 0(r5)
 /* 801D6F3C 001D3D3C  28 03 00 00 */	cmplwi r3, 0
-/* 801D6F40 001D3D40  90 6D DA 7C */	stw r3, saveCamera-_SDA_BASE_(r13)
+/* 801D6F40 001D3D40  90 6D DA 7C */	stw r3, saveCamera@sda21(r13)
 /* 801D6F44 001D3D44  41 82 00 08 */	beq lbl_801D6F4C
 /* 801D6F48 001D3D48  48 0B BC DD */	bl RwCameraEndUpdate
 lbl_801D6F4C:
@@ -306,19 +306,19 @@ iWaterBumpGenEnd__Fv:
 /* 801D6FA4 001D3DA4  38 60 00 01 */	li r3, 1
 /* 801D6FA8 001D3DA8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801D6FAC 001D3DAC  48 05 67 8D */	bl GXSetDither
-/* 801D6FB0 001D3DB0  80 6D DA 80 */	lwz r3, bumpCamera-_SDA_BASE_(r13)
+/* 801D6FB0 001D3DB0  80 6D DA 80 */	lwz r3, bumpCamera@sda21(r13)
 /* 801D6FB4 001D3DB4  48 0B BC 71 */	bl RwCameraEndUpdate
-/* 801D6FB8 001D3DB8  80 6D DA 80 */	lwz r3, bumpCamera-_SDA_BASE_(r13)
+/* 801D6FB8 001D3DB8  80 6D DA 80 */	lwz r3, bumpCamera@sda21(r13)
 /* 801D6FBC 001D3DBC  38 80 00 00 */	li r4, 0
 /* 801D6FC0 001D3DC0  80 63 00 60 */	lwz r3, 0x60(r3)
 /* 801D6FC4 001D3DC4  48 0C BA E9 */	bl RwGameCubeCameraTextureFlush
 /* 801D6FC8 001D3DC8  48 05 2C E1 */	bl GXPixModeSync
-/* 801D6FCC 001D3DCC  80 6D DA 7C */	lwz r3, saveCamera-_SDA_BASE_(r13)
+/* 801D6FCC 001D3DCC  80 6D DA 7C */	lwz r3, saveCamera@sda21(r13)
 /* 801D6FD0 001D3DD0  28 03 00 00 */	cmplwi r3, 0
 /* 801D6FD4 001D3DD4  41 82 00 08 */	beq lbl_801D6FDC
 /* 801D6FD8 001D3DD8  4B E2 F5 D1 */	bl RwCameraBeginUpdateWrapper__FP8RwCamera
 lbl_801D6FDC:
-/* 801D6FDC 001D3DDC  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 801D6FDC 001D3DDC  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 801D6FE0 001D3DE0  38 60 00 00 */	li r3, 0
 /* 801D6FE4 001D3DE4  C0 24 04 7C */	lfs f1, 0x47c(r4)
 /* 801D6FE8 001D3DE8  48 00 06 11 */	bl iWaterUpdateEMBM__Ffi
@@ -341,32 +341,32 @@ iWaterBumpGen__FP9RwTextureP9RwTexture:
 /* 801D7020 001D3E20  38 60 00 00 */	li r3, 0
 /* 801D7024 001D3E24  48 00 00 D0 */	b lbl_801D70F4
 lbl_801D7028:
-/* 801D7028 001D3E28  80 6D B8 08 */	lwz r3, gFrameCount-_SDA_BASE_(r13)
+/* 801D7028 001D3E28  80 6D B8 08 */	lwz r3, gFrameCount@sda21(r13)
 /* 801D702C 001D3E2C  3C 00 43 30 */	lis r0, 0x4330
 /* 801D7030 001D3E30  90 01 00 10 */	stw r0, 0x10(r1)
-/* 801D7034 001D3E34  C8 22 D1 70 */	lfd f1, _esc__2_1031_2-_SDA2_BASE_(r2)
+/* 801D7034 001D3E34  C8 22 D1 70 */	lfd f1, _esc__2_1031_2@sda21(r2)
 /* 801D7038 001D3E38  90 61 00 14 */	stw r3, 0x14(r1)
-/* 801D703C 001D3E3C  C0 62 D1 6C */	lfs f3, _esc__2_1029_5-_SDA2_BASE_(r2)
+/* 801D703C 001D3E3C  C0 62 D1 6C */	lfs f3, _esc__2_1029_5@sda21(r2)
 /* 801D7040 001D3E40  C8 01 00 10 */	lfd f0, 0x10(r1)
-/* 801D7044 001D3E44  C0 42 D1 58 */	lfs f2, _esc__2_961_1-_SDA2_BASE_(r2)
+/* 801D7044 001D3E44  C0 42 D1 58 */	lfs f2, _esc__2_961_1@sda21(r2)
 /* 801D7048 001D3E48  EC 00 08 28 */	fsubs f0, f0, f1
 /* 801D704C 001D3E4C  EC 23 00 32 */	fmuls f1, f3, f0
 /* 801D7050 001D3E50  4B E6 7F FD */	bl xfmod__Fff
-/* 801D7054 001D3E54  80 0D DA 84 */	lwz r0, clonedShadowCamera-_SDA_BASE_(r13)
+/* 801D7054 001D3E54  80 0D DA 84 */	lwz r0, clonedShadowCamera@sda21(r13)
 /* 801D7058 001D3E58  FF E0 08 90 */	fmr f31, f1
-/* 801D705C 001D3E5C  80 62 D1 68 */	lwz r3, _esc__2_1013_3-_SDA2_BASE_(r2)
+/* 801D705C 001D3E5C  80 62 D1 68 */	lwz r3, _esc__2_1013_3@sda21(r2)
 /* 801D7060 001D3E60  28 00 00 00 */	cmplwi r0, 0
 /* 801D7064 001D3E64  90 61 00 08 */	stw r3, 8(r1)
 /* 801D7068 001D3E68  40 82 00 18 */	bne lbl_801D7080
-/* 801D706C 001D3E6C  80 6D BD C8 */	lwz r3, ShadowCamera-_SDA_BASE_(r13)
+/* 801D706C 001D3E6C  80 6D BD C8 */	lwz r3, ShadowCamera@sda21(r13)
 /* 801D7070 001D3E70  48 0B C2 F9 */	bl RwCameraClone
-/* 801D7074 001D3E74  90 6D DA 84 */	stw r3, clonedShadowCamera-_SDA_BASE_(r13)
-/* 801D7078 001D3E78  80 0D DA 78 */	lwz r0, bumpRaster-_SDA_BASE_(r13)
+/* 801D7074 001D3E74  90 6D DA 84 */	stw r3, clonedShadowCamera@sda21(r13)
+/* 801D7078 001D3E78  80 0D DA 78 */	lwz r0, bumpRaster@sda21(r13)
 /* 801D707C 001D3E7C  90 03 00 60 */	stw r0, 0x60(r3)
 lbl_801D7080:
-/* 801D7080 001D3E80  80 6D DA 84 */	lwz r3, clonedShadowCamera-_SDA_BASE_(r13)
+/* 801D7080 001D3E80  80 6D DA 84 */	lwz r3, clonedShadowCamera@sda21(r13)
 /* 801D7084 001D3E84  38 81 00 08 */	addi r4, r1, 8
-/* 801D7088 001D3E88  90 6D DA 80 */	stw r3, bumpCamera-_SDA_BASE_(r13)
+/* 801D7088 001D3E88  90 6D DA 80 */	stw r3, bumpCamera@sda21(r13)
 /* 801D708C 001D3E8C  4B FF FE 91 */	bl iWaterBumpGenBegin__FP8RwCameraP6RwRGBA
 /* 801D7090 001D3E90  2C 03 00 00 */	cmpwi r3, 0
 /* 801D7094 001D3E94  41 82 00 5C */	beq lbl_801D70F0
@@ -384,7 +384,7 @@ lbl_801D70A8:
 /* 801D70C0 001D3EC0  C0 5F 00 0C */	lfs f2, 0xc(r31)
 /* 801D70C4 001D3EC4  C0 1F 00 04 */	lfs f0, 4(r31)
 /* 801D70C8 001D3EC8  EC 23 0F FA */	fmadds f1, f3, f31, f1
-/* 801D70CC 001D3ECC  80 6D DA 80 */	lwz r3, bumpCamera-_SDA_BASE_(r13)
+/* 801D70CC 001D3ECC  80 6D DA 80 */	lwz r3, bumpCamera@sda21(r13)
 /* 801D70D0 001D3ED0  EC 42 07 FA */	fmadds f2, f2, f31, f0
 /* 801D70D4 001D3ED4  C0 7F 00 10 */	lfs f3, 0x10(r31)
 /* 801D70D8 001D3ED8  4B FF FC C9 */	bl iWaterBumpGenRenderLayer__FP8RwCameraP9RwTextureffUcf
@@ -410,8 +410,8 @@ iWaterBumpGen__Fv:
 /* 801D7110 001D3F10  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D7114 001D3F14  7C 08 02 A6 */	mflr r0
 /* 801D7118 001D3F18  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801D711C 001D3F1C  80 6D DA 74 */	lwz r3, bumpTex-_SDA_BASE_(r13)
-/* 801D7120 001D3F20  80 8D DB 38 */	lwz r4, iWaterBumpTex-_SDA_BASE_(r13)
+/* 801D711C 001D3F1C  80 6D DA 74 */	lwz r3, bumpTex@sda21(r13)
+/* 801D7120 001D3F20  80 8D DB 38 */	lwz r4, iWaterBumpTex@sda21(r13)
 /* 801D7124 001D3F24  4B FF FE D9 */	bl iWaterBumpGen__FP9RwTextureP9RwTexture
 /* 801D7128 001D3F28  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801D712C 001D3F2C  7C 08 03 A6 */	mtlr r0
@@ -423,7 +423,7 @@ iWaterCreateMTEffect__Fv:
 /* 801D7138 001D3F38  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D713C 001D3F3C  7C 08 02 A6 */	mflr r0
 /* 801D7140 001D3F40  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801D7144 001D3F44  80 0D DA 68 */	lwz r0, gGCwaterDisable-_SDA_BASE_(r13)
+/* 801D7144 001D3F44  80 0D DA 68 */	lwz r0, gGCwaterDisable@sda21(r13)
 /* 801D7148 001D3F48  2C 00 00 00 */	cmpwi r0, 0
 /* 801D714C 001D3F4C  40 82 00 08 */	bne lbl_801D7154
 /* 801D7150 001D3F50  48 00 11 55 */	bl FxOpen__Fv
@@ -448,14 +448,14 @@ iWaterObjectRender__FP4xEnt:
 /* 801D718C 001D3F8C  40 82 00 08 */	bne lbl_801D7194
 /* 801D7190 001D3F90  48 00 00 54 */	b lbl_801D71E4
 lbl_801D7194:
-/* 801D7194 001D3F94  80 8D DA 88 */	lwz r4, waterLightKit-_SDA_BASE_(r13)
+/* 801D7194 001D3F94  80 8D DA 88 */	lwz r4, waterLightKit@sda21(r13)
 /* 801D7198 001D3F98  28 04 00 00 */	cmplwi r4, 0
 /* 801D719C 001D3F9C  41 82 00 0C */	beq lbl_801D71A8
 /* 801D71A0 001D3FA0  80 7F 00 28 */	lwz r3, 0x28(r31)
 /* 801D71A4 001D3FA4  4B E7 48 BD */	bl xModelSetLightKit__FP14xModelInstanceP9xLightKit
 lbl_801D71A8:
-/* 801D71A8 001D3FA8  C0 02 D1 78 */	lfs f0, waterHackColor-_SDA2_BASE_(r2)
-/* 801D71AC 001D3FAC  38 82 D1 78 */	addi r4, r2, waterHackColor-_SDA2_BASE_
+/* 801D71A8 001D3FA8  C0 02 D1 78 */	lfs f0, waterHackColor@sda21(r2)
+/* 801D71AC 001D3FAC  38 82 D1 78 */	addi r4, r2, waterHackColor@sda21
 /* 801D71B0 001D3FB0  80 7F 00 28 */	lwz r3, 0x28(r31)
 /* 801D71B4 001D3FB4  C0 44 00 04 */	lfs f2, 4(r4)
 /* 801D71B8 001D3FB8  D0 03 00 20 */	stfs f0, 0x20(r3)
@@ -481,7 +481,7 @@ iWaterAtomicRender__FP8RpAtomic:
 /* 801D71F8 001D3FF8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D71FC 001D3FFC  7C 08 02 A6 */	mflr r0
 /* 801D7200 001D4000  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801D7204 001D4004  81 8D DA B0 */	lwz r12, defaultRenderCB-_SDA_BASE_(r13)
+/* 801D7204 001D4004  81 8D DA B0 */	lwz r12, defaultRenderCB@sda21(r13)
 /* 801D7208 001D4008  7D 89 03 A6 */	mtctr r12
 /* 801D720C 001D400C  4E 80 04 21 */	bctrl 
 /* 801D7210 001D4010  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -498,7 +498,7 @@ iWaterObjectSetup__FP4xEnt:
 /* 801D7230 001D4030  BF 21 00 24 */	stmw r25, 0x24(r1)
 /* 801D7234 001D4034  7C 79 1B 78 */	mr r25, r3
 /* 801D7238 001D4038  80 B9 00 28 */	lwz r5, 0x28(r25)
-/* 801D723C 001D403C  80 6D AB 18 */	lwz r3, waterTexID-_SDA_BASE_(r13)
+/* 801D723C 001D403C  80 6D AB 18 */	lwz r3, waterTexID@sda21(r13)
 /* 801D7240 001D4040  83 65 00 10 */	lwz r27, 0x10(r5)
 /* 801D7244 001D4044  83 FB 00 18 */	lwz r31, 0x18(r27)
 /* 801D7248 001D4048  4B E9 50 59 */	bl xSTFindAsset__FUiPUi
@@ -547,7 +547,7 @@ iWaterSceneEnter__FP7RpWorld:
 /* 801D72D8 001D40D8  80 64 02 4C */	lwz r3, 0x24c(r4)
 /* 801D72DC 001D40DC  83 84 04 80 */	lwz r28, 0x480(r4)
 /* 801D72E0 001D40E0  1C 63 00 34 */	mulli r3, r3, 0x34
-/* 801D72E4 001D40E4  90 0D DA AC */	stw r0, numWaterObjects-_SDA_BASE_(r13)
+/* 801D72E4 001D40E4  90 0D DA AC */	stw r0, numWaterObjects@sda21(r13)
 /* 801D72E8 001D40E8  7F 7C 1A 14 */	add r27, r28, r3
 /* 801D72EC 001D40EC  48 00 00 64 */	b lbl_801D7350
 lbl_801D72F0:
@@ -568,22 +568,22 @@ lbl_801D72F0:
 /* 801D7328 001D4128  48 05 BF C9 */	bl OSReport
 /* 801D732C 001D412C  28 1D 00 00 */	cmplwi r29, 0
 /* 801D7330 001D4130  41 82 00 1C */	beq lbl_801D734C
-/* 801D7334 001D4134  80 AD DA AC */	lwz r5, numWaterObjects-_SDA_BASE_(r13)
-/* 801D7338 001D4138  38 6D DA 8C */	addi r3, r13, waterObjects-_SDA_BASE_
+/* 801D7334 001D4134  80 AD DA AC */	lwz r5, numWaterObjects@sda21(r13)
+/* 801D7338 001D4138  38 6D DA 8C */	addi r3, r13, waterObjects@sda21
 /* 801D733C 001D413C  54 A4 10 3A */	slwi r4, r5, 2
 /* 801D7340 001D4140  38 05 00 01 */	addi r0, r5, 1
 /* 801D7344 001D4144  7F A3 21 2E */	stwx r29, r3, r4
-/* 801D7348 001D4148  90 0D DA AC */	stw r0, numWaterObjects-_SDA_BASE_(r13)
+/* 801D7348 001D4148  90 0D DA AC */	stw r0, numWaterObjects@sda21(r13)
 lbl_801D734C:
 /* 801D734C 001D414C  3B 9C 00 34 */	addi r28, r28, 0x34
 lbl_801D7350:
 /* 801D7350 001D4150  7C 1C D8 40 */	cmplw r28, r27
 /* 801D7354 001D4154  41 80 FF 9C */	blt lbl_801D72F0
-/* 801D7358 001D4158  80 0D DA AC */	lwz r0, numWaterObjects-_SDA_BASE_(r13)
+/* 801D7358 001D4158  80 0D DA AC */	lwz r0, numWaterObjects@sda21(r13)
 /* 801D735C 001D415C  28 00 00 00 */	cmplwi r0, 0
 /* 801D7360 001D4160  40 82 00 10 */	bne lbl_801D7370
 /* 801D7364 001D4164  38 00 00 01 */	li r0, 1
-/* 801D7368 001D4168  90 0D DA 68 */	stw r0, gGCwaterDisable-_SDA_BASE_(r13)
+/* 801D7368 001D4168  90 0D DA 68 */	stw r0, gGCwaterDisable@sda21(r13)
 /* 801D736C 001D416C  48 00 01 DC */	b lbl_801D7548
 lbl_801D7370:
 /* 801D7370 001D4170  3C 80 00 01 */	lis r4, 0x00009505@ha
@@ -593,21 +593,21 @@ lbl_801D7370:
 /* 801D7380 001D4180  38 A0 00 20 */	li r5, 0x20
 /* 801D7384 001D4184  48 0C 04 39 */	bl RwRasterCreate
 /* 801D7388 001D4188  28 03 00 00 */	cmplwi r3, 0
-/* 801D738C 001D418C  90 6D DA 78 */	stw r3, bumpRaster-_SDA_BASE_(r13)
+/* 801D738C 001D418C  90 6D DA 78 */	stw r3, bumpRaster@sda21(r13)
 /* 801D7390 001D4190  41 82 00 0C */	beq lbl_801D739C
 /* 801D7394 001D4194  48 0C 32 21 */	bl RwTextureCreate
-/* 801D7398 001D4198  90 6D DA 74 */	stw r3, bumpTex-_SDA_BASE_(r13)
+/* 801D7398 001D4198  90 6D DA 74 */	stw r3, bumpTex@sda21(r13)
 lbl_801D739C:
 /* 801D739C 001D419C  4B FF F9 85 */	bl CreateDirectionalLight__Fv
 /* 801D73A0 001D41A0  28 03 00 00 */	cmplwi r3, 0
-/* 801D73A4 001D41A4  90 6D DA 6C */	stw r3, iWaterDirectionalLight-_SDA_BASE_(r13)
+/* 801D73A4 001D41A4  90 6D DA 6C */	stw r3, iWaterDirectionalLight@sda21(r13)
 /* 801D73A8 001D41A8  41 82 01 A0 */	beq lbl_801D7548
 /* 801D73AC 001D41AC  4B FF FD 8D */	bl iWaterCreateMTEffect__Fv
 /* 801D73B0 001D41B0  3B 40 00 00 */	li r26, 0
 /* 801D73B4 001D41B4  3B C0 00 00 */	li r30, 0
 /* 801D73B8 001D41B8  48 00 00 9C */	b lbl_801D7454
 lbl_801D73BC:
-/* 801D73BC 001D41BC  38 6D DA 8C */	addi r3, r13, waterObjects-_SDA_BASE_
+/* 801D73BC 001D41BC  38 6D DA 8C */	addi r3, r13, waterObjects@sda21
 /* 801D73C0 001D41C0  7F 63 F0 2E */	lwzx r27, r3, r30
 /* 801D73C4 001D41C4  28 1B 00 00 */	cmplwi r27, 0
 /* 801D73C8 001D41C8  41 82 00 84 */	beq lbl_801D744C
@@ -619,8 +619,8 @@ lbl_801D73BC:
 /* 801D73E0 001D41E0  41 82 00 6C */	beq lbl_801D744C
 /* 801D73E4 001D41E4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801D73E8 001D41E8  38 81 00 08 */	addi r4, r1, 8
-/* 801D73EC 001D41EC  C0 02 D1 5C */	lfs f0, _esc__2_986_0-_SDA2_BASE_(r2)
-/* 801D73F0 001D41F0  C0 22 D1 58 */	lfs f1, _esc__2_961_1-_SDA2_BASE_(r2)
+/* 801D73EC 001D41EC  C0 02 D1 5C */	lfs f0, _esc__2_986_0@sda21(r2)
+/* 801D73F0 001D41F0  C0 22 D1 58 */	lfs f1, _esc__2_961_1@sda21(r2)
 /* 801D73F4 001D41F4  64 00 00 02 */	oris r0, r0, 2
 /* 801D73F8 001D41F8  60 00 00 03 */	ori r0, r0, 3
 /* 801D73FC 001D41FC  D0 01 00 18 */	stfs f0, 0x18(r1)
@@ -647,7 +647,7 @@ lbl_801D744C:
 /* 801D744C 001D424C  3B 5A 00 01 */	addi r26, r26, 1
 /* 801D7450 001D4250  3B DE 00 04 */	addi r30, r30, 4
 lbl_801D7454:
-/* 801D7454 001D4254  80 0D DA AC */	lwz r0, numWaterObjects-_SDA_BASE_(r13)
+/* 801D7454 001D4254  80 0D DA AC */	lwz r0, numWaterObjects@sda21(r13)
 /* 801D7458 001D4258  7C 1A 00 40 */	cmplw r26, r0
 /* 801D745C 001D425C  41 80 FF 60 */	blt lbl_801D73BC
 /* 801D7460 001D4260  48 00 05 B9 */	bl iWaterReset__Fv
@@ -684,36 +684,36 @@ lbl_801D74CC:
 /* 801D74D4 001D42D4  40 80 00 40 */	bge lbl_801D7514
 /* 801D74D8 001D42D8  48 00 00 20 */	b lbl_801D74F8
 lbl_801D74DC:
-/* 801D74DC 001D42DC  C0 42 D1 88 */	lfs f2, _esc__2_1162_0-_SDA2_BASE_(r2)
-/* 801D74E0 001D42E0  C0 22 D1 8C */	lfs f1, _esc__2_1163_1-_SDA2_BASE_(r2)
-/* 801D74E4 001D42E4  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
-/* 801D74E8 001D42E8  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
-/* 801D74EC 001D42EC  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
-/* 801D74F0 001D42F0  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
+/* 801D74DC 001D42DC  C0 42 D1 88 */	lfs f2, _esc__2_1162_0@sda21(r2)
+/* 801D74E0 001D42E0  C0 22 D1 8C */	lfs f1, _esc__2_1163_1@sda21(r2)
+/* 801D74E4 001D42E4  C0 02 D1 58 */	lfs f0, _esc__2_961_1@sda21(r2)
+/* 801D74E8 001D42E8  D0 4D AB 24 */	stfs f2, BumpWidth@sda21(r13)
+/* 801D74EC 001D42EC  D0 2D AB 28 */	stfs f1, Shininess@sda21(r13)
+/* 801D74F0 001D42F0  D0 0D AB 20 */	stfs f0, BumpHeight@sda21(r13)
 /* 801D74F4 001D42F4  48 00 00 54 */	b lbl_801D7548
 lbl_801D74F8:
-/* 801D74F8 001D42F8  C0 42 D1 90 */	lfs f2, _esc__2_1164_2-_SDA2_BASE_(r2)
-/* 801D74FC 001D42FC  C0 22 D1 94 */	lfs f1, _esc__2_1165_1-_SDA2_BASE_(r2)
-/* 801D7500 001D4300  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
-/* 801D7504 001D4304  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
-/* 801D7508 001D4308  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
-/* 801D750C 001D430C  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
+/* 801D74F8 001D42F8  C0 42 D1 90 */	lfs f2, _esc__2_1164_2@sda21(r2)
+/* 801D74FC 001D42FC  C0 22 D1 94 */	lfs f1, _esc__2_1165_1@sda21(r2)
+/* 801D7500 001D4300  C0 02 D1 58 */	lfs f0, _esc__2_961_1@sda21(r2)
+/* 801D7504 001D4304  D0 4D AB 24 */	stfs f2, BumpWidth@sda21(r13)
+/* 801D7508 001D4308  D0 2D AB 28 */	stfs f1, Shininess@sda21(r13)
+/* 801D750C 001D430C  D0 0D AB 20 */	stfs f0, BumpHeight@sda21(r13)
 /* 801D7510 001D4310  48 00 00 38 */	b lbl_801D7548
 lbl_801D7514:
-/* 801D7514 001D4314  C0 42 D1 98 */	lfs f2, _esc__2_1166_3-_SDA2_BASE_(r2)
-/* 801D7518 001D4318  C0 22 D1 9C */	lfs f1, _esc__2_1167_6-_SDA2_BASE_(r2)
-/* 801D751C 001D431C  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
-/* 801D7520 001D4320  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
-/* 801D7524 001D4324  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
-/* 801D7528 001D4328  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
+/* 801D7514 001D4314  C0 42 D1 98 */	lfs f2, _esc__2_1166_3@sda21(r2)
+/* 801D7518 001D4318  C0 22 D1 9C */	lfs f1, _esc__2_1167_6@sda21(r2)
+/* 801D751C 001D431C  C0 02 D1 58 */	lfs f0, _esc__2_961_1@sda21(r2)
+/* 801D7520 001D4320  D0 4D AB 24 */	stfs f2, BumpWidth@sda21(r13)
+/* 801D7524 001D4324  D0 2D AB 28 */	stfs f1, Shininess@sda21(r13)
+/* 801D7528 001D4328  D0 0D AB 20 */	stfs f0, BumpHeight@sda21(r13)
 /* 801D752C 001D432C  48 00 00 1C */	b lbl_801D7548
 lbl_801D7530:
-/* 801D7530 001D4330  C0 42 D1 98 */	lfs f2, _esc__2_1166_3-_SDA2_BASE_(r2)
-/* 801D7534 001D4334  C0 22 D1 A0 */	lfs f1, _esc__2_1168_4-_SDA2_BASE_(r2)
-/* 801D7538 001D4338  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
-/* 801D753C 001D433C  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
-/* 801D7540 001D4340  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
-/* 801D7544 001D4344  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
+/* 801D7530 001D4330  C0 42 D1 98 */	lfs f2, _esc__2_1166_3@sda21(r2)
+/* 801D7534 001D4334  C0 22 D1 A0 */	lfs f1, _esc__2_1168_4@sda21(r2)
+/* 801D7538 001D4338  C0 02 D1 58 */	lfs f0, _esc__2_961_1@sda21(r2)
+/* 801D753C 001D433C  D0 4D AB 24 */	stfs f2, BumpWidth@sda21(r13)
+/* 801D7540 001D4340  D0 2D AB 28 */	stfs f1, Shininess@sda21(r13)
+/* 801D7544 001D4344  D0 0D AB 20 */	stfs f0, BumpHeight@sda21(r13)
 lbl_801D7548:
 /* 801D7548 001D4348  BB 41 00 48 */	lmw r26, 0x48(r1)
 /* 801D754C 001D434C  80 01 00 64 */	lwz r0, 0x64(r1)
@@ -726,31 +726,31 @@ iWaterSceneExit__Fv:
 /* 801D755C 001D435C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D7560 001D4360  7C 08 02 A6 */	mflr r0
 /* 801D7564 001D4364  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801D7568 001D4368  80 0D DA 68 */	lwz r0, gGCwaterDisable-_SDA_BASE_(r13)
+/* 801D7568 001D4368  80 0D DA 68 */	lwz r0, gGCwaterDisable@sda21(r13)
 /* 801D756C 001D436C  2C 00 00 00 */	cmpwi r0, 0
 /* 801D7570 001D4370  40 82 00 08 */	bne lbl_801D7578
 /* 801D7574 001D4374  48 00 0D F5 */	bl FxClose__Fv
 lbl_801D7578:
-/* 801D7578 001D4378  80 6D DA 84 */	lwz r3, clonedShadowCamera-_SDA_BASE_(r13)
+/* 801D7578 001D4378  80 6D DA 84 */	lwz r3, clonedShadowCamera@sda21(r13)
 /* 801D757C 001D437C  38 00 00 00 */	li r0, 0
-/* 801D7580 001D4380  90 0D DA 68 */	stw r0, gGCwaterDisable-_SDA_BASE_(r13)
+/* 801D7580 001D4380  90 0D DA 68 */	stw r0, gGCwaterDisable@sda21(r13)
 /* 801D7584 001D4384  28 03 00 00 */	cmplwi r3, 0
-/* 801D7588 001D4388  90 0D DA 88 */	stw r0, waterLightKit-_SDA_BASE_(r13)
-/* 801D758C 001D438C  90 0D DA AC */	stw r0, numWaterObjects-_SDA_BASE_(r13)
+/* 801D7588 001D4388  90 0D DA 88 */	stw r0, waterLightKit@sda21(r13)
+/* 801D758C 001D438C  90 0D DA AC */	stw r0, numWaterObjects@sda21(r13)
 /* 801D7590 001D4390  41 82 00 14 */	beq lbl_801D75A4
 /* 801D7594 001D4394  48 0B BC 01 */	bl RwCameraDestroy
 /* 801D7598 001D4398  38 00 00 00 */	li r0, 0
-/* 801D759C 001D439C  90 0D DA 84 */	stw r0, clonedShadowCamera-_SDA_BASE_(r13)
-/* 801D75A0 001D43A0  90 0D DA 80 */	stw r0, bumpCamera-_SDA_BASE_(r13)
+/* 801D759C 001D439C  90 0D DA 84 */	stw r0, clonedShadowCamera@sda21(r13)
+/* 801D75A0 001D43A0  90 0D DA 80 */	stw r0, bumpCamera@sda21(r13)
 lbl_801D75A4:
-/* 801D75A4 001D43A4  80 6D DA 74 */	lwz r3, bumpTex-_SDA_BASE_(r13)
+/* 801D75A4 001D43A4  80 6D DA 74 */	lwz r3, bumpTex@sda21(r13)
 /* 801D75A8 001D43A8  28 03 00 00 */	cmplwi r3, 0
 /* 801D75AC 001D43AC  41 82 00 10 */	beq lbl_801D75BC
 /* 801D75B0 001D43B0  48 0C 30 B5 */	bl RwTextureDestroy
 /* 801D75B4 001D43B4  38 00 00 00 */	li r0, 0
-/* 801D75B8 001D43B8  90 0D DA 74 */	stw r0, bumpTex-_SDA_BASE_(r13)
+/* 801D75B8 001D43B8  90 0D DA 74 */	stw r0, bumpTex@sda21(r13)
 lbl_801D75BC:
-/* 801D75BC 001D43BC  80 6D DA 6C */	lwz r3, iWaterDirectionalLight-_SDA_BASE_(r13)
+/* 801D75BC 001D43BC  80 6D DA 6C */	lwz r3, iWaterDirectionalLight@sda21(r13)
 /* 801D75C0 001D43C0  28 03 00 00 */	cmplwi r3, 0
 /* 801D75C4 001D43C4  41 82 00 24 */	beq lbl_801D75E8
 /* 801D75C8 001D43C8  80 63 00 04 */	lwz r3, 4(r3)
@@ -758,10 +758,10 @@ lbl_801D75BC:
 /* 801D75D0 001D43D0  41 82 00 08 */	beq lbl_801D75D8
 /* 801D75D4 001D43D4  48 0B D0 45 */	bl RwFrameDestroy
 lbl_801D75D8:
-/* 801D75D8 001D43D8  80 6D DA 6C */	lwz r3, iWaterDirectionalLight-_SDA_BASE_(r13)
+/* 801D75D8 001D43D8  80 6D DA 6C */	lwz r3, iWaterDirectionalLight@sda21(r13)
 /* 801D75DC 001D43DC  48 09 8B 5D */	bl RpLightDestroy
 /* 801D75E0 001D43E0  38 00 00 00 */	li r0, 0
-/* 801D75E4 001D43E4  90 0D DA 6C */	stw r0, iWaterDirectionalLight-_SDA_BASE_(r13)
+/* 801D75E4 001D43E4  90 0D DA 6C */	stw r0, iWaterDirectionalLight@sda21(r13)
 lbl_801D75E8:
 /* 801D75E8 001D43E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801D75EC 001D43EC  7C 08 03 A6 */	mtlr r0
@@ -776,18 +776,18 @@ iWaterUpdateEMBM__Ffi:
 /* 801D7604 001D4404  90 01 00 44 */	stw r0, 0x44(r1)
 /* 801D7608 001D4408  BF 81 00 30 */	stmw r28, 0x30(r1)
 /* 801D760C 001D440C  40 82 02 B4 */	bne lbl_801D78C0
-/* 801D7610 001D4410  80 6D DA 74 */	lwz r3, bumpTex-_SDA_BASE_(r13)
-/* 801D7614 001D4414  83 AD DB 3C */	lwz r29, iWaterEnvTex-_SDA_BASE_(r13)
+/* 801D7610 001D4410  80 6D DA 74 */	lwz r3, bumpTex@sda21(r13)
+/* 801D7614 001D4414  83 AD DB 3C */	lwz r29, iWaterEnvTex@sda21(r13)
 /* 801D7618 001D4418  7C 03 18 40 */	cmplw r3, r3
 /* 801D761C 001D441C  7C 7E 1B 78 */	mr r30, r3
 /* 801D7620 001D4420  40 82 00 10 */	bne lbl_801D7630
-/* 801D7624 001D4424  C0 22 D1 58 */	lfs f1, _esc__2_961_1-_SDA2_BASE_(r2)
+/* 801D7624 001D4424  C0 22 D1 58 */	lfs f1, _esc__2_961_1@sda21(r2)
 /* 801D7628 001D4428  48 00 11 6D */	bl TextureDiffBumpRGBA8__FP9RwTexturef
 /* 801D762C 001D442C  48 00 00 10 */	b lbl_801D763C
 lbl_801D7630:
 /* 801D7630 001D4430  7C 64 1B 78 */	mr r4, r3
 /* 801D7634 001D4434  48 00 12 3D */	bl TextureDiffBumpRGBA8__FP9RwTextureP9RwTexture
-/* 801D7638 001D4438  83 CD DA 74 */	lwz r30, bumpTex-_SDA_BASE_(r13)
+/* 801D7638 001D4438  83 CD DA 74 */	lwz r30, bumpTex@sda21(r13)
 lbl_801D763C:
 /* 801D763C 001D443C  28 1D 00 00 */	cmplwi r29, 0
 /* 801D7640 001D4440  41 82 00 0C */	beq lbl_801D764C
@@ -814,9 +814,9 @@ lbl_801D7654:
 /* 801D768C 001D448C  54 00 06 1E */	rlwinm r0, r0, 0, 0x18, 0xf
 /* 801D7690 001D4490  60 00 11 00 */	ori r0, r0, 0x1100
 /* 801D7694 001D4494  90 1D 00 50 */	stw r0, 0x50(r29)
-/* 801D7698 001D4498  80 6D DA B8 */	lwz r3, EMBM-_SDA_BASE_(r13)
+/* 801D7698 001D4498  80 6D DA B8 */	lwz r3, EMBM@sda21(r13)
 /* 801D769C 001D449C  48 0F 94 7D */	bl RpMaterialGetMultiTexture
-/* 801D76A0 001D44A0  38 8D DA B8 */	addi r4, r13, EMBM-_SDA_BASE_
+/* 801D76A0 001D44A0  38 8D DA B8 */	addi r4, r13, EMBM@sda21
 /* 801D76A4 001D44A4  7C 60 1B 78 */	mr r0, r3
 /* 801D76A8 001D44A8  80 64 00 04 */	lwz r3, 4(r4)
 /* 801D76AC 001D44AC  7C 1C 03 78 */	mr r28, r0
@@ -835,61 +835,61 @@ lbl_801D7654:
 /* 801D76E0 001D44E0  90 01 00 18 */	stw r0, 0x18(r1)
 /* 801D76E4 001D44E4  38 61 00 08 */	addi r3, r1, 8
 /* 801D76E8 001D44E8  80 04 00 0C */	lwz r0, 0xc(r4)
-/* 801D76EC 001D44EC  38 82 89 F0 */	addi r4, r2, g_O3-_SDA2_BASE_
-/* 801D76F0 001D44F0  C8 22 D1 70 */	lfd f1, _esc__2_1031_2-_SDA2_BASE_(r2)
+/* 801D76EC 001D44EC  38 82 89 F0 */	addi r4, r2, g_O3@sda21
+/* 801D76F0 001D44F0  C8 22 D1 70 */	lfd f1, _esc__2_1031_2@sda21(r2)
 /* 801D76F4 001D44F4  90 01 00 1C */	stw r0, 0x1c(r1)
-/* 801D76F8 001D44F8  C0 62 D1 B0 */	lfs f3, _esc__2_1261_3-_SDA2_BASE_(r2)
+/* 801D76F8 001D44F8  C0 62 D1 B0 */	lfs f3, _esc__2_1261_3@sda21(r2)
 /* 801D76FC 001D44FC  C8 01 00 18 */	lfd f0, 0x18(r1)
-/* 801D7700 001D4500  C0 8D AB 24 */	lfs f4, BumpWidth-_SDA_BASE_(r13)
+/* 801D7700 001D4500  C0 8D AB 24 */	lfs f4, BumpWidth@sda21(r13)
 /* 801D7704 001D4504  EC 00 08 28 */	fsubs f0, f0, f1
 /* 801D7708 001D4508  80 BF 00 40 */	lwz r5, 0x40(r31)
-/* 801D770C 001D450C  C0 42 D1 B4 */	lfs f2, _esc__2_1262_3-_SDA2_BASE_(r2)
-/* 801D7710 001D4510  C0 22 D1 B8 */	lfs f1, _esc__2_1263_5-_SDA2_BASE_(r2)
+/* 801D770C 001D450C  C0 42 D1 B4 */	lfs f2, _esc__2_1262_3@sda21(r2)
+/* 801D7710 001D4510  C0 22 D1 B8 */	lfs f1, _esc__2_1263_5@sda21(r2)
 /* 801D7714 001D4514  EC 03 00 24 */	fdivs f0, f3, f0
 /* 801D7718 001D4518  EC 04 00 32 */	fmuls f0, f4, f0
 /* 801D771C 001D451C  D0 05 00 0C */	stfs f0, 0xc(r5)
 /* 801D7720 001D4520  80 BF 00 40 */	lwz r5, 0x40(r31)
 /* 801D7724 001D4524  D0 05 00 20 */	stfs f0, 0x20(r5)
-/* 801D7728 001D4528  C0 0D AB 20 */	lfs f0, BumpHeight-_SDA_BASE_(r13)
+/* 801D7728 001D4528  C0 0D AB 20 */	lfs f0, BumpHeight@sda21(r13)
 /* 801D772C 001D452C  80 BF 00 40 */	lwz r5, 0x40(r31)
 /* 801D7730 001D4530  FC 00 00 50 */	fneg f0, f0
 /* 801D7734 001D4534  EC 02 00 32 */	fmuls f0, f2, f0
 /* 801D7738 001D4538  D0 05 00 48 */	stfs f0, 0x48(r5)
-/* 801D773C 001D453C  C0 0D AB 20 */	lfs f0, BumpHeight-_SDA_BASE_(r13)
+/* 801D773C 001D453C  C0 0D AB 20 */	lfs f0, BumpHeight@sda21(r13)
 /* 801D7740 001D4540  80 BF 00 40 */	lwz r5, 0x40(r31)
 /* 801D7744 001D4544  FC 00 00 50 */	fneg f0, f0
 /* 801D7748 001D4548  EC 02 00 32 */	fmuls f0, f2, f0
 /* 801D774C 001D454C  D0 05 00 5C */	stfs f0, 0x5c(r5)
-/* 801D7750 001D4550  C0 0D AB 28 */	lfs f0, Shininess-_SDA_BASE_(r13)
+/* 801D7750 001D4550  C0 0D AB 28 */	lfs f0, Shininess@sda21(r13)
 /* 801D7754 001D4554  EC 01 00 32 */	fmuls f0, f1, f0
 /* 801D7758 001D4558  FC 00 00 1E */	fctiwz f0, f0
 /* 801D775C 001D455C  D8 01 00 20 */	stfd f0, 0x20(r1)
 /* 801D7760 001D4560  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801D7764 001D4564  98 1F 00 31 */	stb r0, 0x31(r31)
-/* 801D7768 001D4568  80 AD DA 6C */	lwz r5, iWaterDirectionalLight-_SDA_BASE_(r13)
+/* 801D7768 001D4568  80 AD DA 6C */	lwz r5, iWaterDirectionalLight@sda21(r13)
 /* 801D776C 001D456C  83 85 00 04 */	lwz r28, 4(r5)
 /* 801D7770 001D4570  4B E3 39 39 */	bl __as__5xVec3FRC5xVec3
-/* 801D7774 001D4574  C0 22 D1 58 */	lfs f1, _esc__2_961_1-_SDA2_BASE_(r2)
+/* 801D7774 001D4574  C0 22 D1 58 */	lfs f1, _esc__2_961_1@sda21(r2)
 /* 801D7778 001D4578  38 61 00 08 */	addi r3, r1, 8
-/* 801D777C 001D457C  38 82 8A 08 */	addi r4, r2, g_Y3-_SDA2_BASE_
+/* 801D777C 001D457C  38 82 8A 08 */	addi r4, r2, g_Y3@sda21
 /* 801D7780 001D4580  4B E3 1F 9D */	bl xVec3AddScaled__FP5xVec3PC5xVec3f
-/* 801D7784 001D4584  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 801D7784 001D4584  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 801D7788 001D4588  38 61 00 08 */	addi r3, r1, 8
-/* 801D778C 001D458C  C0 22 D1 A4 */	lfs f1, camscale-_SDA2_BASE_(r2)
+/* 801D778C 001D458C  C0 22 D1 A4 */	lfs f1, camscale@sda21(r2)
 /* 801D7790 001D4590  80 84 00 04 */	lwz r4, 4(r4)
 /* 801D7794 001D4594  80 84 00 00 */	lwz r4, 0(r4)
 /* 801D7798 001D4598  38 84 00 20 */	addi r4, r4, 0x20
 /* 801D779C 001D459C  4B E3 1F 81 */	bl xVec3AddScaled__FP5xVec3PC5xVec3f
-/* 801D77A0 001D45A0  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
-/* 801D77A4 001D45A4  38 62 D1 A4 */	addi r3, r2, camscale-_SDA2_BASE_
+/* 801D77A0 001D45A0  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
+/* 801D77A4 001D45A4  38 62 D1 A4 */	addi r3, r2, camscale@sda21
 /* 801D77A8 001D45A8  C0 23 00 04 */	lfs f1, 4(r3)
 /* 801D77AC 001D45AC  38 61 00 08 */	addi r3, r1, 8
 /* 801D77B0 001D45B0  80 84 00 04 */	lwz r4, 4(r4)
 /* 801D77B4 001D45B4  80 84 00 00 */	lwz r4, 0(r4)
 /* 801D77B8 001D45B8  38 84 00 30 */	addi r4, r4, 0x30
 /* 801D77BC 001D45BC  4B E3 1F 61 */	bl xVec3AddScaled__FP5xVec3PC5xVec3f
-/* 801D77C0 001D45C0  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
-/* 801D77C4 001D45C4  38 62 D1 A4 */	addi r3, r2, camscale-_SDA2_BASE_
+/* 801D77C0 001D45C0  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
+/* 801D77C4 001D45C4  38 62 D1 A4 */	addi r3, r2, camscale@sda21
 /* 801D77C8 001D45C8  C0 23 00 08 */	lfs f1, 8(r3)
 /* 801D77CC 001D45CC  38 61 00 08 */	addi r3, r1, 8
 /* 801D77D0 001D45D0  80 84 00 04 */	lwz r4, 4(r4)
@@ -903,19 +903,19 @@ lbl_801D7654:
 /* 801D77F0 001D45F0  48 0B D2 95 */	bl RwFrameGetLTM
 /* 801D77F4 001D45F4  38 81 00 08 */	addi r4, r1, 8
 /* 801D77F8 001D45F8  4B E7 03 9D */	bl xMat3x3LookVec__FP7xMat3x3PC5xVec3
-/* 801D77FC 001D45FC  93 8D AB 30 */	stw r28, FxFrameArray-_SDA_BASE_(r13)
+/* 801D77FC 001D45FC  93 8D AB 30 */	stw r28, FxFrameArray@sda21(r13)
 /* 801D7800 001D4600  38 E0 00 10 */	li r7, 0x10
 /* 801D7804 001D4604  38 00 00 00 */	li r0, 0
-/* 801D7808 001D4608  38 AD AB 30 */	addi r5, r13, FxFrameArray-_SDA_BASE_
+/* 801D7808 001D4608  38 AD AB 30 */	addi r5, r13, FxFrameArray@sda21
 /* 801D780C 001D460C  80 DF 00 40 */	lwz r6, 0x40(r31)
-/* 801D7810 001D4610  38 6D AB 30 */	addi r3, r13, FxFrameArray-_SDA_BASE_
+/* 801D7810 001D4610  38 6D AB 30 */	addi r3, r13, FxFrameArray@sda21
 /* 801D7814 001D4614  38 80 00 02 */	li r4, 2
 /* 801D7818 001D4618  90 E6 00 40 */	stw r7, 0x40(r6)
 /* 801D781C 001D461C  80 DF 00 40 */	lwz r6, 0x40(r31)
 /* 801D7820 001D4620  90 E6 00 7C */	stw r7, 0x7c(r6)
 /* 801D7824 001D4624  90 05 00 04 */	stw r0, 4(r5)
 /* 801D7828 001D4628  48 0F 6D 1D */	bl RpGameCubeMTSetMiscFrameArray
-/* 801D782C 001D462C  80 0D DA CC */	lwz r0, EnvMode-_SDA_BASE_(r13)
+/* 801D782C 001D462C  80 0D DA CC */	lwz r0, EnvMode@sda21(r13)
 /* 801D7830 001D4630  2C 00 00 00 */	cmpwi r0, 0
 /* 801D7834 001D4634  40 82 00 48 */	bne lbl_801D787C
 /* 801D7838 001D4638  80 7F 00 50 */	lwz r3, 0x50(r31)
@@ -967,13 +967,13 @@ iWaterEnable__FP8RpAtomic:
 /* 801D78D8 001D46D8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D78DC 001D46DC  7C 08 02 A6 */	mflr r0
 /* 801D78E0 001D46E0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801D78E4 001D46E4  80 0D DA 68 */	lwz r0, gGCwaterDisable-_SDA_BASE_(r13)
+/* 801D78E4 001D46E4  80 0D DA 68 */	lwz r0, gGCwaterDisable@sda21(r13)
 /* 801D78E8 001D46E8  2C 00 00 00 */	cmpwi r0, 0
 /* 801D78EC 001D46EC  40 82 00 24 */	bne lbl_801D7910
-/* 801D78F0 001D46F0  80 0D AB 1C */	lwz r0, enableWater-_SDA_BASE_(r13)
+/* 801D78F0 001D46F0  80 0D AB 1C */	lwz r0, enableWater@sda21(r13)
 /* 801D78F4 001D46F4  28 00 00 00 */	cmplwi r0, 0
 /* 801D78F8 001D46F8  41 82 00 14 */	beq lbl_801D790C
-/* 801D78FC 001D46FC  80 8D DA 70 */	lwz r4, iWaterEMBM-_SDA_BASE_(r13)
+/* 801D78FC 001D46FC  80 8D DA 70 */	lwz r4, iWaterEMBM@sda21(r13)
 /* 801D7900 001D4700  80 84 00 00 */	lwz r4, 0(r4)
 /* 801D7904 001D4704  48 00 09 2D */	bl AtomicSetupEffect__FP8RpAtomicPv
 /* 801D7908 001D4708  48 00 00 08 */	b lbl_801D7910
@@ -991,7 +991,7 @@ iWaterUpdate__Ff:
 /* 801D7924 001D4724  7C 08 02 A6 */	mflr r0
 /* 801D7928 001D4728  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801D792C 001D472C  BF A1 00 14 */	stmw r29, 0x14(r1)
-/* 801D7930 001D4730  80 0D DA 68 */	lwz r0, gGCwaterDisable-_SDA_BASE_(r13)
+/* 801D7930 001D4730  80 0D DA 68 */	lwz r0, gGCwaterDisable@sda21(r13)
 /* 801D7934 001D4734  2C 00 00 00 */	cmpwi r0, 0
 /* 801D7938 001D4738  40 82 00 CC */	bne lbl_801D7A04
 /* 801D793C 001D473C  3C 80 80 38 */	lis r4, globals@ha
@@ -1004,32 +1004,32 @@ iWaterUpdate__Ff:
 /* 801D7958 001D4758  41 82 00 08 */	beq lbl_801D7960
 /* 801D795C 001D475C  48 00 00 58 */	b lbl_801D79B4
 lbl_801D7960:
-/* 801D7960 001D4760  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801D7960 001D4760  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801D7964 001D4764  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801D7968 001D4768  4B E4 F2 B9 */	bl xEntGetPos__FPC4xEnt
-/* 801D796C 001D476C  38 82 D1 BC */	addi r4, r2, NJ02start-_SDA2_BASE_
+/* 801D796C 001D476C  38 82 D1 BC */	addi r4, r2, NJ02start@sda21
 /* 801D7970 001D4770  4B E3 43 AD */	bl xVec3Dist2__FPC5xVec3PC5xVec3
-/* 801D7974 001D4774  C0 02 D1 C8 */	lfs f0, _esc__2_1308_1-_SDA2_BASE_(r2)
+/* 801D7974 001D4774  C0 02 D1 C8 */	lfs f0, _esc__2_1308_1@sda21(r2)
 /* 801D7978 001D4778  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801D797C 001D477C  40 80 00 20 */	bge lbl_801D799C
-/* 801D7980 001D4780  C0 42 D1 90 */	lfs f2, _esc__2_1164_2-_SDA2_BASE_(r2)
-/* 801D7984 001D4784  C0 22 D1 94 */	lfs f1, _esc__2_1165_1-_SDA2_BASE_(r2)
-/* 801D7988 001D4788  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
-/* 801D798C 001D478C  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
-/* 801D7990 001D4790  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
-/* 801D7994 001D4794  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
+/* 801D7980 001D4780  C0 42 D1 90 */	lfs f2, _esc__2_1164_2@sda21(r2)
+/* 801D7984 001D4784  C0 22 D1 94 */	lfs f1, _esc__2_1165_1@sda21(r2)
+/* 801D7988 001D4788  C0 02 D1 58 */	lfs f0, _esc__2_961_1@sda21(r2)
+/* 801D798C 001D478C  D0 4D AB 24 */	stfs f2, BumpWidth@sda21(r13)
+/* 801D7990 001D4790  D0 2D AB 28 */	stfs f1, Shininess@sda21(r13)
+/* 801D7994 001D4794  D0 0D AB 20 */	stfs f0, BumpHeight@sda21(r13)
 /* 801D7998 001D4798  48 00 00 1C */	b lbl_801D79B4
 lbl_801D799C:
-/* 801D799C 001D479C  C0 42 D1 98 */	lfs f2, _esc__2_1166_3-_SDA2_BASE_(r2)
-/* 801D79A0 001D47A0  C0 22 D1 A0 */	lfs f1, _esc__2_1168_4-_SDA2_BASE_(r2)
-/* 801D79A4 001D47A4  C0 02 D1 58 */	lfs f0, _esc__2_961_1-_SDA2_BASE_(r2)
-/* 801D79A8 001D47A8  D0 4D AB 24 */	stfs f2, BumpWidth-_SDA_BASE_(r13)
-/* 801D79AC 001D47AC  D0 2D AB 28 */	stfs f1, Shininess-_SDA_BASE_(r13)
-/* 801D79B0 001D47B0  D0 0D AB 20 */	stfs f0, BumpHeight-_SDA_BASE_(r13)
+/* 801D799C 001D479C  C0 42 D1 98 */	lfs f2, _esc__2_1166_3@sda21(r2)
+/* 801D79A0 001D47A0  C0 22 D1 A0 */	lfs f1, _esc__2_1168_4@sda21(r2)
+/* 801D79A4 001D47A4  C0 02 D1 58 */	lfs f0, _esc__2_961_1@sda21(r2)
+/* 801D79A8 001D47A8  D0 4D AB 24 */	stfs f2, BumpWidth@sda21(r13)
+/* 801D79AC 001D47AC  D0 2D AB 28 */	stfs f1, Shininess@sda21(r13)
+/* 801D79B0 001D47B0  D0 0D AB 20 */	stfs f0, BumpHeight@sda21(r13)
 lbl_801D79B4:
 /* 801D79B4 001D47B4  3B A0 00 00 */	li r29, 0
 /* 801D79B8 001D47B8  3B E0 00 00 */	li r31, 0
-/* 801D79BC 001D47BC  3B CD DA 8C */	addi r30, r13, waterObjects-_SDA_BASE_
+/* 801D79BC 001D47BC  3B CD DA 8C */	addi r30, r13, waterObjects@sda21
 /* 801D79C0 001D47C0  48 00 00 38 */	b lbl_801D79F8
 lbl_801D79C4:
 /* 801D79C4 001D47C4  7C 7E F8 2E */	lwzx r3, r30, r31
@@ -1046,7 +1046,7 @@ lbl_801D79C4:
 /* 801D79F0 001D47F0  3B BD 00 01 */	addi r29, r29, 1
 /* 801D79F4 001D47F4  3B FF 00 04 */	addi r31, r31, 4
 lbl_801D79F8:
-/* 801D79F8 001D47F8  80 0D DA AC */	lwz r0, numWaterObjects-_SDA_BASE_(r13)
+/* 801D79F8 001D47F8  80 0D DA AC */	lwz r0, numWaterObjects@sda21(r13)
 /* 801D79FC 001D47FC  7C 1D 00 40 */	cmplw r29, r0
 /* 801D7A00 001D4800  41 80 FF C4 */	blt lbl_801D79C4
 lbl_801D7A04:
@@ -1062,7 +1062,7 @@ iWaterReset__Fv:
 /* 801D7A1C 001D481C  7C 08 02 A6 */	mflr r0
 /* 801D7A20 001D4820  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801D7A24 001D4824  BF 61 00 0C */	stmw r27, 0xc(r1)
-/* 801D7A28 001D4828  80 0D DA 68 */	lwz r0, gGCwaterDisable-_SDA_BASE_(r13)
+/* 801D7A28 001D4828  80 0D DA 68 */	lwz r0, gGCwaterDisable@sda21(r13)
 /* 801D7A2C 001D482C  2C 00 00 00 */	cmpwi r0, 0
 /* 801D7A30 001D4830  40 82 00 D0 */	bne lbl_801D7B00
 /* 801D7A34 001D4834  3C 60 01 09 */	lis r3, 0x01092433@ha
@@ -1070,7 +1070,7 @@ iWaterReset__Fv:
 /* 801D7A3C 001D483C  38 63 24 33 */	addi r3, r3, 0x01092433@l
 /* 801D7A40 001D4840  4B E9 48 61 */	bl xSTFindAsset__FUiPUi
 /* 801D7A44 001D4844  28 03 00 00 */	cmplwi r3, 0
-/* 801D7A48 001D4848  90 6D DA 88 */	stw r3, waterLightKit-_SDA_BASE_(r13)
+/* 801D7A48 001D4848  90 6D DA 88 */	stw r3, waterLightKit@sda21(r13)
 /* 801D7A4C 001D484C  41 82 00 B4 */	beq lbl_801D7B00
 /* 801D7A50 001D4850  3C 80 80 1D */	lis r4, iWaterObjectRender__FP4xEnt@ha
 /* 801D7A54 001D4854  3C 60 80 1D */	lis r3, iWaterAtomicRender__FP8RpAtomic@ha
@@ -1080,7 +1080,7 @@ iWaterReset__Fv:
 /* 801D7A64 001D4864  3B C0 00 00 */	li r30, 0
 /* 801D7A68 001D4868  48 00 00 8C */	b lbl_801D7AF4
 lbl_801D7A6C:
-/* 801D7A6C 001D486C  38 6D DA 8C */	addi r3, r13, waterObjects-_SDA_BASE_
+/* 801D7A6C 001D486C  38 6D DA 8C */	addi r3, r13, waterObjects@sda21
 /* 801D7A70 001D4870  7F 63 F0 2E */	lwzx r27, r3, r30
 /* 801D7A74 001D4874  80 7B 00 00 */	lwz r3, 0(r27)
 /* 801D7A78 001D4878  4B E9 47 35 */	bl xSTAssetName__FUi
@@ -1088,19 +1088,19 @@ lbl_801D7A6C:
 /* 801D7A80 001D4880  80 63 00 94 */	lwz r3, 0x94(r3)
 /* 801D7A84 001D4884  4B E9 47 29 */	bl xSTAssetName__FUi
 /* 801D7A88 001D4888  80 7B 00 28 */	lwz r3, 0x28(r27)
-/* 801D7A8C 001D488C  80 8D DA 88 */	lwz r4, waterLightKit-_SDA_BASE_(r13)
+/* 801D7A8C 001D488C  80 8D DA 88 */	lwz r4, waterLightKit@sda21(r13)
 /* 801D7A90 001D4890  4B E7 3F D1 */	bl xModelSetLightKit__FP14xModelInstanceP9xLightKit
 /* 801D7A94 001D4894  80 1B 00 E0 */	lwz r0, 0xe0(r27)
 /* 801D7A98 001D4898  60 00 00 08 */	ori r0, r0, 8
 /* 801D7A9C 001D489C  90 1B 00 E0 */	stw r0, 0xe0(r27)
 /* 801D7AA0 001D48A0  93 9B 00 44 */	stw r28, 0x44(r27)
-/* 801D7AA4 001D48A4  80 0D DA B0 */	lwz r0, defaultRenderCB-_SDA_BASE_(r13)
+/* 801D7AA4 001D48A4  80 0D DA B0 */	lwz r0, defaultRenderCB@sda21(r13)
 /* 801D7AA8 001D48A8  28 00 00 00 */	cmplwi r0, 0
 /* 801D7AAC 001D48AC  40 82 00 14 */	bne lbl_801D7AC0
 /* 801D7AB0 001D48B0  80 7B 00 28 */	lwz r3, 0x28(r27)
 /* 801D7AB4 001D48B4  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 801D7AB8 001D48B8  80 03 00 48 */	lwz r0, 0x48(r3)
-/* 801D7ABC 001D48BC  90 0D DA B0 */	stw r0, defaultRenderCB-_SDA_BASE_(r13)
+/* 801D7ABC 001D48BC  90 0D DA B0 */	stw r0, defaultRenderCB@sda21(r13)
 lbl_801D7AC0:
 /* 801D7AC0 001D48C0  80 7B 00 28 */	lwz r3, 0x28(r27)
 /* 801D7AC4 001D48C4  80 63 00 10 */	lwz r3, 0x10(r3)
@@ -1117,7 +1117,7 @@ lbl_801D7AEC:
 /* 801D7AEC 001D48EC  3B FF 00 01 */	addi r31, r31, 1
 /* 801D7AF0 001D48F0  3B DE 00 04 */	addi r30, r30, 4
 lbl_801D7AF4:
-/* 801D7AF4 001D48F4  80 0D DA AC */	lwz r0, numWaterObjects-_SDA_BASE_(r13)
+/* 801D7AF4 001D48F4  80 0D DA AC */	lwz r0, numWaterObjects@sda21(r13)
 /* 801D7AF8 001D48F8  7C 1F 00 40 */	cmplw r31, r0
 /* 801D7AFC 001D48FC  41 80 FF 70 */	blt lbl_801D7A6C
 lbl_801D7B00:

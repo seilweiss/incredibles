@@ -57,7 +57,7 @@ enter_state__Q24zNPC11fly_forwardFPC39behavior_implementation_esc__0_Q24zNPC6com
 /* 801A367C 001A047C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A3680 001A0480  7C 08 02 A6 */	mflr r0
 /* 801A3684 001A0484  3C 80 80 2E */	lis r4, _esc__2_stringBase0_121@ha
-/* 801A3688 001A0488  C0 22 C6 40 */	lfs f1, _esc__2_1285_1-_SDA2_BASE_(r2)
+/* 801A3688 001A0488  C0 22 C6 40 */	lfs f1, _esc__2_1285_1@sda21(r2)
 /* 801A368C 001A048C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801A3690 001A0490  38 84 79 C0 */	addi r4, r4, _esc__2_stringBase0_121@l
 /* 801A3694 001A0494  38 A0 00 00 */	li r5, 0
@@ -79,10 +79,10 @@ add_states__Q24zNPC11fly_forwardFP10xAnimTable:
 /* 801A36C8 001A04C8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801A36CC 001A04CC  38 03 79 C0 */	addi r0, r3, _esc__2_stringBase0_121@l
 /* 801A36D0 001A04D0  7C 83 23 78 */	mr r3, r4
-/* 801A36D4 001A04D4  C0 22 C6 44 */	lfs f1, _esc__2_1290_1-_SDA2_BASE_(r2)
+/* 801A36D4 001A04D4  C0 22 C6 44 */	lfs f1, _esc__2_1290_1@sda21(r2)
 /* 801A36D8 001A04D8  90 A1 00 08 */	stw r5, 8(r1)
 /* 801A36DC 001A04DC  7C 04 03 78 */	mr r4, r0
-/* 801A36E0 001A04E0  C0 42 C6 48 */	lfs f2, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A36E0 001A04E0  C0 42 C6 48 */	lfs f2, _esc__2_1291_5@sda21(r2)
 /* 801A36E4 001A04E4  38 C0 00 00 */	li r6, 0
 /* 801A36E8 001A04E8  90 A1 00 0C */	stw r5, 0xc(r1)
 /* 801A36EC 001A04EC  38 E0 00 00 */	li r7, 0
@@ -140,9 +140,9 @@ lbl_801A3788:
 /* 801A3790 001A0590  80 84 00 48 */	lwz r4, 0x48(r4)
 /* 801A3794 001A0594  38 84 00 20 */	addi r4, r4, 0x20
 /* 801A3798 001A0598  4B E6 79 11 */	bl __as__5xVec3FRC5xVec3
-/* 801A379C 001A059C  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 801A379C 001A059C  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 801A37A0 001A05A0  38 61 00 20 */	addi r3, r1, 0x20
-/* 801A37A4 001A05A4  C0 22 C6 44 */	lfs f1, _esc__2_1290_1-_SDA2_BASE_(r2)
+/* 801A37A4 001A05A4  C0 22 C6 44 */	lfs f1, _esc__2_1290_1@sda21(r2)
 /* 801A37A8 001A05A8  38 C1 00 14 */	addi r6, r1, 0x14
 /* 801A37AC 001A05AC  80 84 04 C4 */	lwz r4, 0x4c4(r4)
 /* 801A37B0 001A05B0  38 FF 00 4C */	addi r7, r31, 0x4c
@@ -164,7 +164,7 @@ lbl_801A3788:
 setup__Q24zNPC10rocket_lobFv:
 /* 801A37E8 001A05E8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801A37EC 001A05EC  7C 08 02 A6 */	mflr r0
-/* 801A37F0 001A05F0  C0 22 C6 4C */	lfs f1, _esc__2_1354_4-_SDA2_BASE_(r2)
+/* 801A37F0 001A05F0  C0 22 C6 4C */	lfs f1, _esc__2_1354_4@sda21(r2)
 /* 801A37F4 001A05F4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801A37F8 001A05F8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801A37FC 001A05FC  7C 7F 1B 78 */	mr r31, r3
@@ -177,7 +177,7 @@ setup__Q24zNPC10rocket_lobFv:
 /* 801A3818 001A0618  3C 80 80 2E */	lis r4, _esc__2_stringBase0_121@ha
 /* 801A381C 001A061C  80 7F 00 0C */	lwz r3, 0xc(r31)
 /* 801A3820 001A0620  38 84 79 C0 */	addi r4, r4, _esc__2_stringBase0_121@l
-/* 801A3824 001A0624  C0 22 C6 50 */	lfs f1, _esc__2_1355_2-_SDA2_BASE_(r2)
+/* 801A3824 001A0624  C0 22 C6 50 */	lfs f1, _esc__2_1355_2@sda21(r2)
 /* 801A3828 001A0628  38 84 00 1A */	addi r4, r4, 0x1a
 /* 801A382C 001A062C  38 BF 00 C8 */	addi r5, r31, 0xc8
 /* 801A3830 001A0630  4B F5 B0 5D */	bl get_parameter__Q24zNPC4baseFPCcPff
@@ -271,7 +271,7 @@ setup__Q24zNPC14flying_shooterFv:
 /* 801A396C 001A076C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801A3970 001A0770  7C 7F 1B 78 */	mr r31, r3
 /* 801A3974 001A0774  48 00 08 01 */	bl setup__Q24zNPC44flying_npc_generic_esc__0_Q24zNPC15human_throwable_esc__1_Fv
-/* 801A3978 001A0778  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3978 001A0778  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A397C 001A077C  D0 1F 04 D8 */	stfs f0, 0x4d8(r31)
 /* 801A3980 001A0780  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801A3984 001A0784  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -287,7 +287,7 @@ reset__Q24zNPC14flying_shooterFv:
 /* 801A39A0 001A07A0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801A39A4 001A07A4  7C 7F 1B 78 */	mr r31, r3
 /* 801A39A8 001A07A8  48 00 08 35 */	bl reset__Q24zNPC44flying_npc_generic_esc__0_Q24zNPC15human_throwable_esc__1_Fv
-/* 801A39AC 001A07AC  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A39AC 001A07AC  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A39B0 001A07B0  D0 1F 04 D8 */	stfs f0, 0x4d8(r31)
 /* 801A39B4 001A07B4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801A39B8 001A07B8  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -316,20 +316,20 @@ update_npc__Q24zNPC14flying_shooterFf:
 lbl_801A3A08:
 /* 801A3A08 001A0808  38 7F 02 14 */	addi r3, r31, 0x214
 /* 801A3A0C 001A080C  4B F7 C4 A1 */	bl get_speed__Q24zNPC17follow_movepointsCFv
-/* 801A3A10 001A0810  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3A10 001A0810  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A3A14 001A0814  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801A3A18 001A0818  40 81 00 48 */	ble lbl_801A3A60
 /* 801A3A1C 001A081C  38 7F 02 14 */	addi r3, r31, 0x214
 /* 801A3A20 001A0820  4B F7 C4 8D */	bl get_speed__Q24zNPC17follow_movepointsCFv
 /* 801A3A24 001A0824  D0 3F 04 D8 */	stfs f1, 0x4d8(r31)
 /* 801A3A28 001A0828  38 7F 02 14 */	addi r3, r31, 0x214
-/* 801A3A2C 001A082C  C0 22 C6 48 */	lfs f1, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3A2C 001A082C  C0 22 C6 48 */	lfs f1, _esc__2_1291_5@sda21(r2)
 /* 801A3A30 001A0830  4B F5 CD 55 */	bl set_speed__Q24zNPC17follow_movepointsFf
 /* 801A3A34 001A0834  48 00 00 2C */	b lbl_801A3A60
 lbl_801A3A38:
 /* 801A3A38 001A0838  38 7F 02 14 */	addi r3, r31, 0x214
 /* 801A3A3C 001A083C  4B F7 C4 71 */	bl get_speed__Q24zNPC17follow_movepointsCFv
-/* 801A3A40 001A0840  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3A40 001A0840  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A3A44 001A0844  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 801A3A48 001A0848  40 82 00 18 */	bne lbl_801A3A60
 /* 801A3A4C 001A084C  C0 3F 04 D8 */	lfs f1, 0x4d8(r31)
@@ -428,7 +428,7 @@ setup__Q24zNPC13flying_rocketFv:
 /* 801A3B98 001A0998  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801A3B9C 001A099C  7C 7F 1B 78 */	mr r31, r3
 /* 801A3BA0 001A09A0  48 00 05 D5 */	bl setup__Q24zNPC44flying_npc_generic_esc__0_Q24zNPC15human_throwable_esc__1_Fv
-/* 801A3BA4 001A09A4  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3BA4 001A09A4  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A3BA8 001A09A8  D0 1F 05 18 */	stfs f0, 0x518(r31)
 /* 801A3BAC 001A09AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801A3BB0 001A09B0  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -444,7 +444,7 @@ reset__Q24zNPC13flying_rocketFv:
 /* 801A3BCC 001A09CC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801A3BD0 001A09D0  7C 7F 1B 78 */	mr r31, r3
 /* 801A3BD4 001A09D4  48 00 06 09 */	bl reset__Q24zNPC44flying_npc_generic_esc__0_Q24zNPC15human_throwable_esc__1_Fv
-/* 801A3BD8 001A09D8  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3BD8 001A09D8  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A3BDC 001A09DC  D0 1F 05 18 */	stfs f0, 0x518(r31)
 /* 801A3BE0 001A09E0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801A3BE4 001A09E4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -473,20 +473,20 @@ update_npc__Q24zNPC13flying_rocketFf:
 lbl_801A3C34:
 /* 801A3C34 001A0A34  38 7F 02 14 */	addi r3, r31, 0x214
 /* 801A3C38 001A0A38  4B F7 C2 75 */	bl get_speed__Q24zNPC17follow_movepointsCFv
-/* 801A3C3C 001A0A3C  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3C3C 001A0A3C  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A3C40 001A0A40  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801A3C44 001A0A44  40 81 00 48 */	ble lbl_801A3C8C
 /* 801A3C48 001A0A48  38 7F 02 14 */	addi r3, r31, 0x214
 /* 801A3C4C 001A0A4C  4B F7 C2 61 */	bl get_speed__Q24zNPC17follow_movepointsCFv
 /* 801A3C50 001A0A50  D0 3F 05 18 */	stfs f1, 0x518(r31)
 /* 801A3C54 001A0A54  38 7F 02 14 */	addi r3, r31, 0x214
-/* 801A3C58 001A0A58  C0 22 C6 48 */	lfs f1, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3C58 001A0A58  C0 22 C6 48 */	lfs f1, _esc__2_1291_5@sda21(r2)
 /* 801A3C5C 001A0A5C  4B F5 CB 29 */	bl set_speed__Q24zNPC17follow_movepointsFf
 /* 801A3C60 001A0A60  48 00 00 2C */	b lbl_801A3C8C
 lbl_801A3C64:
 /* 801A3C64 001A0A64  38 7F 02 14 */	addi r3, r31, 0x214
 /* 801A3C68 001A0A68  4B F7 C2 45 */	bl get_speed__Q24zNPC17follow_movepointsCFv
-/* 801A3C6C 001A0A6C  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3C6C 001A0A6C  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A3C70 001A0A70  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 801A3C74 001A0A74  40 82 00 18 */	bne lbl_801A3C8C
 /* 801A3C78 001A0A78  C0 3F 05 18 */	lfs f1, 0x518(r31)
@@ -567,7 +567,7 @@ setup__Q24zNPC13flying_lobberFv:
 /* 801A3D88 001A0B88  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801A3D8C 001A0B8C  7C 7F 1B 78 */	mr r31, r3
 /* 801A3D90 001A0B90  48 00 03 E5 */	bl setup__Q24zNPC44flying_npc_generic_esc__0_Q24zNPC15human_throwable_esc__1_Fv
-/* 801A3D94 001A0B94  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3D94 001A0B94  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A3D98 001A0B98  D0 1F 05 10 */	stfs f0, 0x510(r31)
 /* 801A3D9C 001A0B9C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801A3DA0 001A0BA0  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -583,7 +583,7 @@ reset__Q24zNPC13flying_lobberFv:
 /* 801A3DBC 001A0BBC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801A3DC0 001A0BC0  7C 7F 1B 78 */	mr r31, r3
 /* 801A3DC4 001A0BC4  48 00 04 19 */	bl reset__Q24zNPC44flying_npc_generic_esc__0_Q24zNPC15human_throwable_esc__1_Fv
-/* 801A3DC8 001A0BC8  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3DC8 001A0BC8  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A3DCC 001A0BCC  D0 1F 05 10 */	stfs f0, 0x510(r31)
 /* 801A3DD0 001A0BD0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801A3DD4 001A0BD4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -612,20 +612,20 @@ update_npc__Q24zNPC13flying_lobberFf:
 lbl_801A3E24:
 /* 801A3E24 001A0C24  38 7F 02 14 */	addi r3, r31, 0x214
 /* 801A3E28 001A0C28  4B F7 C0 85 */	bl get_speed__Q24zNPC17follow_movepointsCFv
-/* 801A3E2C 001A0C2C  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3E2C 001A0C2C  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A3E30 001A0C30  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801A3E34 001A0C34  40 81 00 48 */	ble lbl_801A3E7C
 /* 801A3E38 001A0C38  38 7F 02 14 */	addi r3, r31, 0x214
 /* 801A3E3C 001A0C3C  4B F7 C0 71 */	bl get_speed__Q24zNPC17follow_movepointsCFv
 /* 801A3E40 001A0C40  D0 3F 05 10 */	stfs f1, 0x510(r31)
 /* 801A3E44 001A0C44  38 7F 02 14 */	addi r3, r31, 0x214
-/* 801A3E48 001A0C48  C0 22 C6 48 */	lfs f1, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3E48 001A0C48  C0 22 C6 48 */	lfs f1, _esc__2_1291_5@sda21(r2)
 /* 801A3E4C 001A0C4C  4B F5 C9 39 */	bl set_speed__Q24zNPC17follow_movepointsFf
 /* 801A3E50 001A0C50  48 00 00 2C */	b lbl_801A3E7C
 lbl_801A3E54:
 /* 801A3E54 001A0C54  38 7F 02 14 */	addi r3, r31, 0x214
 /* 801A3E58 001A0C58  4B F7 C0 55 */	bl get_speed__Q24zNPC17follow_movepointsCFv
-/* 801A3E5C 001A0C5C  C0 02 C6 48 */	lfs f0, _esc__2_1291_5-_SDA2_BASE_(r2)
+/* 801A3E5C 001A0C5C  C0 02 C6 48 */	lfs f0, _esc__2_1291_5@sda21(r2)
 /* 801A3E60 001A0C60  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 801A3E64 001A0C64  40 82 00 18 */	bne lbl_801A3E7C
 /* 801A3E68 001A0C68  C0 3F 05 10 */	lfs f1, 0x510(r31)

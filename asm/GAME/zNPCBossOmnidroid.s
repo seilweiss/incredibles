@@ -84,7 +84,7 @@ boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_:
 fire_props_esc__7_6776:
 	.skip 0xC
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global _esc__2_1484_1
 _esc__2_1484_1:
@@ -1299,7 +1299,7 @@ hack_run_at_60__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Fv:
 /* 80106810 00103610  38 63 B2 24 */	addi r3, r3, randomly_hidden_entities__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@l
 /* 80106814 00103614  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 80106818 00103618  4B FF FE 69 */	bl shuffle_list__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FPUii
-/* 8010681C 0010361C  C0 22 AC 68 */	lfs f1, _esc__2_1383_1-_SDA2_BASE_(r2)
+/* 8010681C 0010361C  C0 22 AC 68 */	lfs f1, _esc__2_1383_1@sda21(r2)
 /* 80106820 00103620  4B F0 95 F9 */	bl ceilf__3stdFf
 /* 80106824 00103624  FC 00 08 1E */	fctiwz f0, f1
 /* 80106828 00103628  D8 01 00 08 */	stfd f0, 8(r1)
@@ -1402,18 +1402,18 @@ _load_model__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FUif:
 /* 80106984 00103784  90 61 00 08 */	stw r3, 8(r1)
 /* 80106988 00103788  38 81 00 08 */	addi r4, r1, 8
 /* 8010698C 0010378C  4B F4 52 8D */	bl xModelFindAtomic__FUiPUi
-/* 80106990 00103790  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80106990 00103790  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80106994 00103794  38 A0 00 00 */	li r5, 0
 /* 80106998 00103798  38 C0 00 00 */	li r6, 0
 /* 8010699C 0010379C  38 E0 00 00 */	li r7, 0
 /* 801069A0 001037A0  4B F1 FA C9 */	bl xModelInstanceAlloc__FP8RpAtomicPvUsUcPUc
-/* 801069A4 001037A4  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801069A4 001037A4  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801069A8 001037A8  7C 7F 1B 78 */	mr r31, r3
 /* 801069AC 001037AC  80 01 00 08 */	lwz r0, 8(r1)
 /* 801069B0 001037B0  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 801069B4 001037B4  90 03 00 94 */	stw r0, 0x94(r3)
 /* 801069B8 001037B8  40 82 00 08 */	bne lbl_801069C0
-/* 801069BC 001037BC  C3 E2 A8 B0 */	lfs f31, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801069BC 001037BC  C3 E2 A8 B0 */	lfs f31, _esc__2_1222@sda21(r2)
 lbl_801069C0:
 /* 801069C0 001037C0  FC 20 F8 90 */	fmr f1, f31
 /* 801069C4 001037C4  38 7F 00 58 */	addi r3, r31, 0x58
@@ -1484,7 +1484,7 @@ constrain_velocity__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Fffff:
 /* 80106A94 00103894  40 81 00 08 */	ble lbl_80106A9C
 /* 80106A98 00103898  FC 40 00 90 */	fmr f2, f0
 lbl_80106A9C:
-/* 80106A9C 0010389C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80106A9C 0010389C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80106AA0 001038A0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80106AA4 001038A4  40 80 00 14 */	bge lbl_80106AB8
 /* 80106AA8 001038A8  FC 02 00 40 */	fcmpo cr0, f2, f0
@@ -1523,7 +1523,7 @@ hit_entity__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xBaseR4xEnt
 lbl_80106B18:
 /* 80106B18 00103918  38 00 00 03 */	li r0, 3
 /* 80106B1C 0010391C  38 A1 00 04 */	addi r5, r1, 4
-/* 80106B20 00103920  38 82 F0 54 */	addi r4, r2, lbl_803D8D74-_SDA2_BASE_
+/* 80106B20 00103920  38 82 F0 54 */	addi r4, r2, lbl_803D8D74@sda21
 /* 80106B24 00103924  7C 09 03 A6 */	mtctr r0
 lbl_80106B28:
 /* 80106B28 00103928  80 64 00 04 */	lwz r3, 4(r4)
@@ -1535,7 +1535,7 @@ lbl_80106B28:
 /* 80106B40 00103940  3C 00 43 30 */	lis r0, 0x4330
 /* 80106B44 00103944  90 61 00 24 */	stw r3, 0x24(r1)
 /* 80106B48 00103948  7F A3 EB 78 */	mr r3, r29
-/* 80106B4C 0010394C  C8 22 AC 90 */	lfd f1, _esc__2_1488-_SDA2_BASE_(r2)
+/* 80106B4C 0010394C  C8 22 AC 90 */	lfd f1, _esc__2_1488@sda21(r2)
 /* 80106B50 00103950  7F C4 F3 78 */	mr r4, r30
 /* 80106B54 00103954  90 01 00 20 */	stw r0, 0x20(r1)
 /* 80106B58 00103958  38 C1 00 08 */	addi r6, r1, 8
@@ -1682,7 +1682,7 @@ xMat4x3RotY__FP7xMat4x3f:
 /* 80106D4C 00103B4C  7C 7F 1B 78 */	mr r31, r3
 /* 80106D50 00103B50  4B F4 18 75 */	bl xMat3x3RotY__FP7xMat3x3f
 /* 80106D54 00103B54  38 7F 00 30 */	addi r3, r31, 0x30
-/* 80106D58 00103B58  38 82 89 F0 */	addi r4, r2, g_O3-_SDA2_BASE_
+/* 80106D58 00103B58  38 82 89 F0 */	addi r4, r2, g_O3@sda21
 /* 80106D5C 00103B5C  4B F6 A9 D5 */	bl xVec3Copy__FP5xVec3PC5xVec3
 /* 80106D60 00103B60  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80106D64 00103B64  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1698,7 +1698,7 @@ intersect_ray_circle__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Ffff
 /* 80106D80 00103B80  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 80106D84 00103B84  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 80106D88 00103B88  EC A5 10 28 */	fsubs f5, f5, f2
-/* 80106D8C 00103B8C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80106D8C 00103B8C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80106D90 00103B90  EC 84 08 28 */	fsubs f4, f4, f1
 /* 80106D94 00103B94  EC 47 01 72 */	fmuls f2, f7, f5
 /* 80106D98 00103B98  EC 25 01 72 */	fmuls f1, f5, f5
@@ -1712,7 +1712,7 @@ intersect_ray_circle__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Ffff
 lbl_80106DB8:
 /* 80106DB8 00103BB8  4B F0 46 C1 */	bl xsqrt__Ff
 /* 80106DBC 00103BBC  FC 40 F8 50 */	fneg f2, f31
-/* 80106DC0 00103BC0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80106DC0 00103BC0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80106DC4 00103BC4  EC 62 08 28 */	fsubs f3, f2, f1
 /* 80106DC8 00103BC8  EC 22 08 2A */	fadds f1, f2, f1
 /* 80106DCC 00103BCC  FC 03 00 40 */	fcmpo cr0, f3, f0
@@ -1823,10 +1823,10 @@ cart_to_cyl_vector__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVe
 /* 80106F48 00103D48  EC 1E 07 B2 */	fmuls f0, f30, f30
 /* 80106F4C 00103D4C  EC 3F 07 FA */	fmadds f1, f31, f31, f0
 /* 80106F50 00103D50  4B F0 45 29 */	bl xsqrt__Ff
-/* 80106F54 00103D54  C0 02 AC 98 */	lfs f0, _esc__2_1569-_SDA2_BASE_(r2)
+/* 80106F54 00103D54  C0 02 AC 98 */	lfs f0, _esc__2_1569@sda21(r2)
 /* 80106F58 00103D58  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80106F5C 00103D5C  40 81 00 44 */	ble lbl_80106FA0
-/* 80106F60 00103D60  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80106F60 00103D60  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 80106F64 00103D64  C0 1F 00 08 */	lfs f0, 8(r31)
 /* 80106F68 00103D68  EC 62 08 24 */	fdivs f3, f2, f1
 /* 80106F6C 00103D6C  C0 5F 00 00 */	lfs f2, 0(r31)
@@ -1843,7 +1843,7 @@ cart_to_cyl_vector__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVe
 /* 80106F98 00103D98  D0 1E 00 00 */	stfs f0, 0(r30)
 /* 80106F9C 00103D9C  48 00 00 10 */	b lbl_80106FAC
 lbl_80106FA0:
-/* 80106FA0 00103DA0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80106FA0 00103DA0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80106FA4 00103DA4  D0 1E 00 00 */	stfs f0, 0(r30)
 /* 80106FA8 00103DA8  D0 3E 00 08 */	stfs f1, 8(r30)
 lbl_80106FAC:
@@ -1880,10 +1880,10 @@ cyl_to_cart_vector__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVe
 /* 80107018 00103E18  EC 1E 07 B2 */	fmuls f0, f30, f30
 /* 8010701C 00103E1C  EC 3F 07 FA */	fmadds f1, f31, f31, f0
 /* 80107020 00103E20  4B F0 44 59 */	bl xsqrt__Ff
-/* 80107024 00103E24  C0 02 AC 98 */	lfs f0, _esc__2_1569-_SDA2_BASE_(r2)
+/* 80107024 00103E24  C0 02 AC 98 */	lfs f0, _esc__2_1569@sda21(r2)
 /* 80107028 00103E28  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010702C 00103E2C  40 81 00 3C */	ble lbl_80107068
-/* 80107030 00103E30  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80107030 00103E30  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80107034 00103E34  FC 40 F8 50 */	fneg f2, f31
 /* 80107038 00103E38  C0 7F 00 08 */	lfs f3, 8(r31)
 /* 8010703C 00103E3C  EC 00 08 24 */	fdivs f0, f0, f1
@@ -1932,7 +1932,7 @@ spiral_arclength__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Fffff:
 /* 801070D4 00103ED4  DB 41 00 10 */	stfd f26, 0x10(r1)
 /* 801070D8 00103ED8  F3 41 00 18 */	psq_st f26, 24(r1), 0, qr0
 /* 801070DC 00103EDC  EF A4 10 28 */	fsubs f29, f4, f2
-/* 801070E0 00103EE0  C0 42 AC 88 */	lfs f2, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 801070E0 00103EE0  C0 42 AC 88 */	lfs f2, _esc__2_1441_1@sda21(r2)
 /* 801070E4 00103EE4  FF 40 18 90 */	fmr f26, f3
 /* 801070E8 00103EE8  FC 00 EA 10 */	fabs f0, f29
 /* 801070EC 00103EEC  EF DA 08 28 */	fsubs f30, f26, f1
@@ -1950,7 +1950,7 @@ lbl_80107104:
 /* 80107118 00103F18  48 00 00 5C */	b lbl_80107174
 lbl_8010711C:
 /* 8010711C 00103F1C  EF 9D F0 24 */	fdivs f28, f29, f30
-/* 80107120 00103F20  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80107120 00103F20  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80107124 00103F24  EF 61 07 32 */	fmuls f27, f1, f28
 /* 80107128 00103F28  EC 3B 06 FA */	fmadds f1, f27, f27, f0
 /* 8010712C 00103F2C  4B F0 43 4D */	bl xsqrt__Ff
@@ -1958,7 +1958,7 @@ lbl_8010711C:
 /* 80107134 00103F34  EC 3B F8 2A */	fadds f1, f27, f31
 /* 80107138 00103F38  4B F0 A4 55 */	bl xlog__Ff
 /* 8010713C 00103F3C  EF 9A 07 32 */	fmuls f28, f26, f28
-/* 80107140 00103F40  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80107140 00103F40  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80107144 00103F44  EF 7B 0F FA */	fmadds f27, f27, f31, f1
 /* 80107148 00103F48  EC 3C 07 3A */	fmadds f1, f28, f28, f0
 /* 8010714C 00103F4C  4B F0 43 2D */	bl xsqrt__Ff
@@ -1966,7 +1966,7 @@ lbl_8010711C:
 /* 80107154 00103F54  EC 3C F8 2A */	fadds f1, f28, f31
 /* 80107158 00103F58  4B F0 A4 35 */	bl xlog__Ff
 /* 8010715C 00103F5C  EC 1E E8 24 */	fdivs f0, f30, f29
-/* 80107160 00103F60  C0 42 AC 80 */	lfs f2, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80107160 00103F60  C0 42 AC 80 */	lfs f2, _esc__2_1438_0@sda21(r2)
 /* 80107164 00103F64  EC 7C 0F FA */	fmadds f3, f28, f31, f1
 /* 80107168 00103F68  EC 22 00 32 */	fmuls f1, f2, f0
 /* 8010716C 00103F6C  EC 03 D8 28 */	fsubs f0, f3, f27
@@ -2018,7 +2018,7 @@ spiral_time__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Ffffff:
 /* 80107214 00104014  F2 A1 00 18 */	psq_st f21, 24(r1), 0, qr0
 /* 80107218 00104018  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8010721C 0010401C  FF E0 28 90 */	fmr f31, f5
-/* 80107220 00104020  C0 A2 AC 88 */	lfs f5, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 80107220 00104020  C0 A2 AC 88 */	lfs f5, _esc__2_1441_1@sda21(r2)
 /* 80107224 00104024  FF C0 20 90 */	fmr f30, f4
 /* 80107228 00104028  FF 60 08 90 */	fmr f27, f1
 /* 8010722C 0010402C  FC 00 FA 10 */	fabs f0, f31
@@ -2037,7 +2037,7 @@ spiral_time__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Ffffff:
 /* 80107260 00104060  41 82 00 14 */	beq lbl_80107274
 /* 80107264 00104064  28 00 00 00 */	cmplwi r0, 0
 /* 80107268 00104068  41 82 00 0C */	beq lbl_80107274
-/* 8010726C 0010406C  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010726C 0010406C  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80107270 00104070  48 00 01 38 */	b lbl_801073A8
 lbl_80107274:
 /* 80107274 00104074  28 03 00 00 */	cmplwi r3, 0
@@ -2050,10 +2050,10 @@ lbl_80107284:
 /* 8010728C 0010408C  FC 20 02 10 */	fabs f1, f0
 /* 80107290 00104090  FC 20 08 18 */	frsp f1, f1
 /* 80107294 00104094  41 82 00 20 */	beq lbl_801072B4
-/* 80107298 00104098  C0 02 AC 88 */	lfs f0, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 80107298 00104098  C0 02 AC 88 */	lfs f0, _esc__2_1441_1@sda21(r2)
 /* 8010729C 0010409C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801072A0 001040A0  40 80 00 0C */	bge lbl_801072AC
-/* 801072A4 001040A4  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801072A4 001040A4  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 801072A8 001040A8  48 00 01 00 */	b lbl_801073A8
 lbl_801072AC:
 /* 801072AC 001040AC  EC 3B 08 24 */	fdivs f1, f27, f1
@@ -2070,8 +2070,8 @@ lbl_801072B4:
 /* 801072D4 001040D4  FE C0 C0 90 */	fmr f22, f24
 /* 801072D8 001040D8  FC 01 D8 40 */	fcmpo cr0, f1, f27
 /* 801072DC 001040DC  40 80 00 34 */	bge lbl_80107310
-/* 801072E0 001040E0  C3 22 AC A0 */	lfs f25, _esc__2_1660_1-_SDA2_BASE_(r2)
-/* 801072E4 001040E4  C3 02 AC 9C */	lfs f24, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 801072E0 001040E0  C3 22 AC A0 */	lfs f25, _esc__2_1660_1@sda21(r2)
+/* 801072E4 001040E4  C3 02 AC 9C */	lfs f24, _esc__2_1659_1@sda21(r2)
 lbl_801072E8:
 /* 801072E8 001040E8  EE D9 C5 BA */	fmadds f22, f25, f22, f24
 /* 801072EC 001040EC  FC 20 E0 90 */	fmr f1, f28
@@ -2084,7 +2084,7 @@ lbl_801072E8:
 /* 80107308 00104108  41 82 00 30 */	beq lbl_80107338
 /* 8010730C 0010410C  4B FF FF DC */	b lbl_801072E8
 lbl_80107310:
-/* 80107310 00104110  C3 02 AC 80 */	lfs f24, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80107310 00104110  C3 02 AC 80 */	lfs f24, _esc__2_1438_0@sda21(r2)
 lbl_80107314:
 /* 80107314 00104114  EE F8 05 F2 */	fmuls f23, f24, f23
 /* 80107318 00104118  FC 20 E0 90 */	fmr f1, f28
@@ -2096,10 +2096,10 @@ lbl_80107314:
 /* 80107330 00104130  4C 40 13 82 */	cror 2, 0, 2
 /* 80107334 00104134  40 82 FF E0 */	bne lbl_80107314
 lbl_80107338:
-/* 80107338 00104138  C3 02 AC 80 */	lfs f24, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80107338 00104138  C3 02 AC 80 */	lfs f24, _esc__2_1438_0@sda21(r2)
 /* 8010733C 0010413C  3B E0 00 0A */	li r31, 0xa
-/* 80107340 00104140  C3 22 AC A4 */	lfs f25, _esc__2_1661_0-_SDA2_BASE_(r2)
-/* 80107344 00104144  C3 42 A8 B0 */	lfs f26, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80107340 00104140  C3 22 AC A4 */	lfs f25, _esc__2_1661_0@sda21(r2)
+/* 80107344 00104144  C3 42 A8 B0 */	lfs f26, _esc__2_1222@sda21(r2)
 lbl_80107348:
 /* 80107348 00104148  EC 17 B0 2A */	fadds f0, f23, f22
 /* 8010734C 0010414C  FC 20 E0 90 */	fmr f1, f28
@@ -2182,12 +2182,12 @@ gather_sphere_hits__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FPP4xE
 /* 80107464 00104264  38 81 00 14 */	addi r4, r1, 0x14
 /* 80107468 00104268  38 C1 00 08 */	addi r6, r1, 8
 /* 8010746C 0010426C  7C 85 23 78 */	mr r5, r4
-/* 80107470 00104270  38 6D C8 40 */	addi r3, r13, colls_grid-_SDA_BASE_
+/* 80107470 00104270  38 6D C8 40 */	addi r3, r13, colls_grid@sda21
 /* 80107474 00104274  48 01 7F 5D */	bl xGridCheckBound_esc__0_Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_21cb_gather_sphere_hits_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_21cb_gather_sphere_hits
 /* 80107478 00104278  38 81 00 14 */	addi r4, r1, 0x14
 /* 8010747C 0010427C  38 C1 00 08 */	addi r6, r1, 8
 /* 80107480 00104280  7C 85 23 78 */	mr r5, r4
-/* 80107484 00104284  38 6D C8 78 */	addi r3, r13, colls_oso_grid-_SDA_BASE_
+/* 80107484 00104284  38 6D C8 78 */	addi r3, r13, colls_oso_grid@sda21
 /* 80107488 00104288  48 01 7F 49 */	bl xGridCheckBound_esc__0_Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_21cb_gather_sphere_hits_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_21cb_gather_sphere_hits
 /* 8010748C 0010428C  80 01 00 08 */	lwz r0, 8(r1)
 /* 80107490 00104290  7C 1D 00 50 */	subf r0, r29, r0
@@ -2228,7 +2228,7 @@ gather_ray_hits__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FPP4xEnti
 /* 80107504 00104304  7F C3 F3 78 */	mr r3, r30
 /* 80107508 00104308  38 81 00 50 */	addi r4, r1, 0x50
 /* 8010750C 0010430C  4B F0 61 5D */	bl xVec3Add__FP5xVec3PC5xVec3PC5xVec3
-/* 80107510 00104310  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80107510 00104310  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 /* 80107514 00104314  7F C3 F3 78 */	mr r3, r30
 /* 80107518 00104318  7F C4 F3 78 */	mr r4, r30
 /* 8010751C 0010431C  4B F0 22 35 */	bl xVec3SMul__FP5xVec3PC5xVec3f
@@ -2243,12 +2243,12 @@ gather_ray_hits__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FPP4xEnti
 /* 80107540 00104340  38 81 00 14 */	addi r4, r1, 0x14
 /* 80107544 00104344  38 C1 00 08 */	addi r6, r1, 8
 /* 80107548 00104348  7C 85 23 78 */	mr r5, r4
-/* 8010754C 0010434C  38 6D C8 40 */	addi r3, r13, colls_grid-_SDA_BASE_
+/* 8010754C 0010434C  38 6D C8 40 */	addi r3, r13, colls_grid@sda21
 /* 80107550 00104350  48 01 7D 8D */	bl xGridCheckBound_esc__0_Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_18cb_gather_ray_hits_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_18cb_gather_ray_hits
 /* 80107554 00104354  38 81 00 14 */	addi r4, r1, 0x14
 /* 80107558 00104358  38 C1 00 08 */	addi r6, r1, 8
 /* 8010755C 0010435C  7C 85 23 78 */	mr r5, r4
-/* 80107560 00104360  38 6D C8 78 */	addi r3, r13, colls_oso_grid-_SDA_BASE_
+/* 80107560 00104360  38 6D C8 78 */	addi r3, r13, colls_oso_grid@sda21
 /* 80107564 00104364  48 01 7D 79 */	bl xGridCheckBound_esc__0_Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_18cb_gather_ray_hits_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_18cb_gather_ray_hits
 /* 80107568 00104368  80 01 00 08 */	lwz r0, 8(r1)
 /* 8010756C 0010436C  7C 1B 00 50 */	subf r0, r27, r0
@@ -2286,12 +2286,12 @@ gather_bound_hits__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FPP4xEn
 /* 801075D4 001043D4  7F E4 FB 78 */	mr r4, r31
 /* 801075D8 001043D8  7F E5 FB 78 */	mr r5, r31
 /* 801075DC 001043DC  38 C1 00 08 */	addi r6, r1, 8
-/* 801075E0 001043E0  38 6D C8 40 */	addi r3, r13, colls_grid-_SDA_BASE_
+/* 801075E0 001043E0  38 6D C8 40 */	addi r3, r13, colls_grid@sda21
 /* 801075E4 001043E4  48 01 7C 05 */	bl xGridCheckBound_esc__0_Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_20cb_gather_bound_hits_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_20cb_gather_bound_hits
 /* 801075E8 001043E8  7F E4 FB 78 */	mr r4, r31
 /* 801075EC 001043EC  7F E5 FB 78 */	mr r5, r31
 /* 801075F0 001043F0  38 C1 00 08 */	addi r6, r1, 8
-/* 801075F4 001043F4  38 6D C8 78 */	addi r3, r13, colls_oso_grid-_SDA_BASE_
+/* 801075F4 001043F4  38 6D C8 78 */	addi r3, r13, colls_oso_grid@sda21
 /* 801075F8 001043F8  48 01 7B F1 */	bl xGridCheckBound_esc__0_Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_20cb_gather_bound_hits_esc__1___FR5xGridRC6xBoundRC7xQCDataRQ231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_20cb_gather_bound_hits
 /* 801075FC 001043FC  80 01 00 08 */	lwz r0, 8(r1)
 /* 80107600 00104400  7C 1E 00 50 */	subf r0, r30, r0
@@ -2334,9 +2334,9 @@ xAccelMoveTime2__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Fffff:
 /* 8010767C 0010447C  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
 /* 80107680 00104480  DB C1 00 10 */	stfd f30, 0x10(r1)
 /* 80107684 00104484  F3 C1 00 18 */	psq_st f30, 24(r1), 0, qr0
-/* 80107688 00104488  C0 A2 A8 B4 */	lfs f5, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80107688 00104488  C0 A2 A8 B4 */	lfs f5, _esc__2_1223@sda21(r2)
 /* 8010768C 0010448C  FF C0 10 90 */	fmr f30, f2
-/* 80107690 00104490  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80107690 00104490  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 80107694 00104494  EF E5 18 24 */	fdivs f31, f5, f3
 /* 80107698 00104498  EC 44 F0 28 */	fsubs f2, f4, f30
 /* 8010769C 0010449C  EC 00 00 F2 */	fmuls f0, f0, f3
@@ -2351,7 +2351,7 @@ xAccelMoveTime2__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Fffff:
 /* 801076C0 001044C0  EC 25 00 2A */	fadds f1, f5, f0
 /* 801076C4 001044C4  48 00 00 24 */	b lbl_801076E8
 lbl_801076C8:
-/* 801076C8 001044C8  C0 02 AC A0 */	lfs f0, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 801076C8 001044C8  C0 02 AC A0 */	lfs f0, _esc__2_1660_1@sda21(r2)
 /* 801076CC 001044CC  EC 00 00 F2 */	fmuls f0, f0, f3
 /* 801076D0 001044D0  EC 00 00 72 */	fmuls f0, f0, f1
 /* 801076D4 001044D4  EC 3E 07 BA */	fmadds f1, f30, f30, f0
@@ -2504,7 +2504,7 @@ __ct__17zNPCBossOmnidroidFv:
 /* 80107904 00104704  3C 7F 00 01 */	addis r3, r31, 1
 /* 80107908 00104708  38 63 A6 44 */	addi r3, r3, -22972
 /* 8010790C 0010470C  48 00 00 2D */	bl __ct__Q217zNPCBossOmnidroid17death_action_typeFv
-/* 80107910 00104710  93 ED CC 18 */	stw r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80107910 00104710  93 ED CC 18 */	stw r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80107914 00104714  7F E3 FB 78 */	mr r3, r31
 /* 80107918 00104718  48 00 00 1D */	bl debug_init__17zNPCBossOmnidroidFv
 /* 8010791C 0010471C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2526,7 +2526,7 @@ __ct__Q217zNPCBossOmnidroid17death_action_typeFv:
 /* 80107944 00104744  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107948 00104748  7C 7F 1B 78 */	mr r31, r3
 /* 8010794C 0010474C  48 00 00 25 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107950 00104750  38 0D 9C 30 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid17death_action_type-_SDA_BASE_
+/* 80107950 00104750  38 0D 9C 30 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid17death_action_type@sda21
 /* 80107954 00104754  7F E3 FB 78 */	mr r3, r31
 /* 80107958 00104758  90 1F 00 04 */	stw r0, 4(r31)
 /* 8010795C 0010475C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2537,7 +2537,7 @@ __ct__Q217zNPCBossOmnidroid17death_action_typeFv:
 
 .global __ct__Q217zNPCBossOmnidroid11action_typeFv
 __ct__Q217zNPCBossOmnidroid11action_typeFv:
-/* 80107970 00104770  38 0D 97 FC */	addi r0, r13, __vt__Q217zNPCBossOmnidroid11action_type-_SDA_BASE_
+/* 80107970 00104770  38 0D 97 FC */	addi r0, r13, __vt__Q217zNPCBossOmnidroid11action_type@sda21
 /* 80107974 00104774  90 03 00 04 */	stw r0, 4(r3)
 /* 80107978 00104778  4E 80 00 20 */	blr 
 
@@ -2549,7 +2549,7 @@ __ct__Q217zNPCBossOmnidroid24intermission_action_typeFv:
 /* 80107988 00104788  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8010798C 0010478C  7C 7F 1B 78 */	mr r31, r3
 /* 80107990 00104790  4B FF FF E1 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107994 00104794  38 0D 94 20 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid24intermission_action_type-_SDA_BASE_
+/* 80107994 00104794  38 0D 94 20 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid24intermission_action_type@sda21
 /* 80107998 00104798  7F E3 FB 78 */	mr r3, r31
 /* 8010799C 0010479C  90 1F 00 04 */	stw r0, 4(r31)
 /* 801079A0 001047A0  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2566,7 +2566,7 @@ __ct__Q217zNPCBossOmnidroid21jump_away_action_typeFv:
 /* 801079C0 001047C0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801079C4 001047C4  7C 7F 1B 78 */	mr r31, r3
 /* 801079C8 001047C8  4B FF FF A9 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 801079CC 001047CC  38 0D 94 54 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21jump_away_action_type-_SDA_BASE_
+/* 801079CC 001047CC  38 0D 94 54 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21jump_away_action_type@sda21
 /* 801079D0 001047D0  7F E3 FB 78 */	mr r3, r31
 /* 801079D4 001047D4  90 1F 00 04 */	stw r0, 4(r31)
 /* 801079D8 001047D8  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2583,7 +2583,7 @@ __ct__Q217zNPCBossOmnidroid21jump_near_action_typeFv:
 /* 801079F8 001047F8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801079FC 001047FC  7C 7F 1B 78 */	mr r31, r3
 /* 80107A00 00104800  4B FF FF 71 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107A04 00104804  38 0D 94 88 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21jump_near_action_type-_SDA_BASE_
+/* 80107A04 00104804  38 0D 94 88 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21jump_near_action_type@sda21
 /* 80107A08 00104808  7F E3 FB 78 */	mr r3, r31
 /* 80107A0C 0010480C  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107A10 00104810  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2600,7 +2600,7 @@ __ct__Q217zNPCBossOmnidroid23near_beatit_action_typeFv:
 /* 80107A30 00104830  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107A34 00104834  7C 7F 1B 78 */	mr r31, r3
 /* 80107A38 00104838  4B FF FF 39 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107A3C 0010483C  38 0D 94 BC */	addi r0, r13, __vt__Q217zNPCBossOmnidroid23near_beatit_action_type-_SDA_BASE_
+/* 80107A3C 0010483C  38 0D 94 BC */	addi r0, r13, __vt__Q217zNPCBossOmnidroid23near_beatit_action_type@sda21
 /* 80107A40 00104840  7F E3 FB 78 */	mr r3, r31
 /* 80107A44 00104844  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107A48 00104848  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2617,7 +2617,7 @@ __ct__Q217zNPCBossOmnidroid20cooldown_action_typeFv:
 /* 80107A68 00104868  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107A6C 0010486C  7C 7F 1B 78 */	mr r31, r3
 /* 80107A70 00104870  4B FF FF 01 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107A74 00104874  38 0D 94 F0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid20cooldown_action_type-_SDA_BASE_
+/* 80107A74 00104874  38 0D 94 F0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid20cooldown_action_type@sda21
 /* 80107A78 00104878  7F E3 FB 78 */	mr r3, r31
 /* 80107A7C 0010487C  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107A80 00104880  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2634,7 +2634,7 @@ __ct__Q217zNPCBossOmnidroid18beatit_action_typeFv:
 /* 80107AA0 001048A0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107AA4 001048A4  7C 7F 1B 78 */	mr r31, r3
 /* 80107AA8 001048A8  4B FF FE C9 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107AAC 001048AC  38 0D 95 24 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid18beatit_action_type-_SDA_BASE_
+/* 80107AAC 001048AC  38 0D 95 24 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid18beatit_action_type@sda21
 /* 80107AB0 001048B0  7F E3 FB 78 */	mr r3, r31
 /* 80107AB4 001048B4  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107AB8 001048B8  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2651,7 +2651,7 @@ __ct__Q217zNPCBossOmnidroid16stab_action_typeFv:
 /* 80107AD8 001048D8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107ADC 001048DC  7C 7F 1B 78 */	mr r31, r3
 /* 80107AE0 001048E0  4B FF FE 91 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107AE4 001048E4  38 0D 95 58 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16stab_action_type-_SDA_BASE_
+/* 80107AE4 001048E4  38 0D 95 58 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16stab_action_type@sda21
 /* 80107AE8 001048E8  7F E3 FB 78 */	mr r3, r31
 /* 80107AEC 001048EC  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107AF0 001048F0  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2668,7 +2668,7 @@ __ct__Q217zNPCBossOmnidroid22claw_swing_action_typeFv:
 /* 80107B10 00104910  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107B14 00104914  7C 7F 1B 78 */	mr r31, r3
 /* 80107B18 00104918  4B FF FE 59 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107B1C 0010491C  38 0D 95 8C */	addi r0, r13, __vt__Q217zNPCBossOmnidroid22claw_swing_action_type-_SDA_BASE_
+/* 80107B1C 0010491C  38 0D 95 8C */	addi r0, r13, __vt__Q217zNPCBossOmnidroid22claw_swing_action_type@sda21
 /* 80107B20 00104920  7F E3 FB 78 */	mr r3, r31
 /* 80107B24 00104924  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107B28 00104928  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2685,7 +2685,7 @@ __ct__Q217zNPCBossOmnidroid16bolt_action_typeFv:
 /* 80107B48 00104948  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107B4C 0010494C  7C 7F 1B 78 */	mr r31, r3
 /* 80107B50 00104950  4B FF FE 21 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107B54 00104954  38 0D 95 C0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16bolt_action_type-_SDA_BASE_
+/* 80107B54 00104954  38 0D 95 C0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16bolt_action_type@sda21
 /* 80107B58 00104958  7F E3 FB 78 */	mr r3, r31
 /* 80107B5C 0010495C  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107B60 00104960  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2702,7 +2702,7 @@ __ct__Q217zNPCBossOmnidroid16beam_action_typeFv:
 /* 80107B80 00104980  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107B84 00104984  7C 7F 1B 78 */	mr r31, r3
 /* 80107B88 00104988  4B FF FD E9 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107B8C 0010498C  38 0D 95 F4 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16beam_action_type-_SDA_BASE_
+/* 80107B8C 0010498C  38 0D 95 F4 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16beam_action_type@sda21
 /* 80107B90 00104990  7F E3 FB 78 */	mr r3, r31
 /* 80107B94 00104994  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107B98 00104998  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2719,7 +2719,7 @@ __ct__Q217zNPCBossOmnidroid21boomerang_action_typeFv:
 /* 80107BB8 001049B8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107BBC 001049BC  7C 7F 1B 78 */	mr r31, r3
 /* 80107BC0 001049C0  4B FF FD B1 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107BC4 001049C4  38 0D 96 28 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21boomerang_action_type-_SDA_BASE_
+/* 80107BC4 001049C4  38 0D 96 28 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21boomerang_action_type@sda21
 /* 80107BC8 001049C8  7F E3 FB 78 */	mr r3, r31
 /* 80107BCC 001049CC  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107BD0 001049D0  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2736,7 +2736,7 @@ __ct__Q217zNPCBossOmnidroid22throw_rock_action_typeFv:
 /* 80107BF0 001049F0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107BF4 001049F4  7C 7F 1B 78 */	mr r31, r3
 /* 80107BF8 001049F8  4B FF FD 79 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107BFC 001049FC  38 0D 96 5C */	addi r0, r13, __vt__Q217zNPCBossOmnidroid22throw_rock_action_type-_SDA_BASE_
+/* 80107BFC 001049FC  38 0D 96 5C */	addi r0, r13, __vt__Q217zNPCBossOmnidroid22throw_rock_action_type@sda21
 /* 80107C00 00104A00  7F E3 FB 78 */	mr r3, r31
 /* 80107C04 00104A04  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107C08 00104A08  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2753,7 +2753,7 @@ __ct__Q217zNPCBossOmnidroid22smash_rock_action_typeFv:
 /* 80107C28 00104A28  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107C2C 00104A2C  7C 7F 1B 78 */	mr r31, r3
 /* 80107C30 00104A30  4B FF FD 41 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107C34 00104A34  38 0D 96 90 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid22smash_rock_action_type-_SDA_BASE_
+/* 80107C34 00104A34  38 0D 96 90 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid22smash_rock_action_type@sda21
 /* 80107C38 00104A38  7F E3 FB 78 */	mr r3, r31
 /* 80107C3C 00104A3C  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107C40 00104A40  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2770,7 +2770,7 @@ __ct__Q217zNPCBossOmnidroid16ball_action_typeFv:
 /* 80107C60 00104A60  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107C64 00104A64  7C 7F 1B 78 */	mr r31, r3
 /* 80107C68 00104A68  4B FF FD 09 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107C6C 00104A6C  38 0D 96 C4 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16ball_action_type-_SDA_BASE_
+/* 80107C6C 00104A6C  38 0D 96 C4 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16ball_action_type@sda21
 /* 80107C70 00104A70  7F E3 FB 78 */	mr r3, r31
 /* 80107C74 00104A74  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107C78 00104A78  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2787,7 +2787,7 @@ __ct__Q217zNPCBossOmnidroid19dervish_action_typeFv:
 /* 80107C98 00104A98  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107C9C 00104A9C  7C 7F 1B 78 */	mr r31, r3
 /* 80107CA0 00104AA0  4B FF FC D1 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107CA4 00104AA4  38 0D 96 F8 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid19dervish_action_type-_SDA_BASE_
+/* 80107CA4 00104AA4  38 0D 96 F8 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid19dervish_action_type@sda21
 /* 80107CA8 00104AA8  7F E3 FB 78 */	mr r3, r31
 /* 80107CAC 00104AAC  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107CB0 00104AB0  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2804,7 +2804,7 @@ __ct__Q217zNPCBossOmnidroid22bitch_slap_action_typeFv:
 /* 80107CD0 00104AD0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107CD4 00104AD4  7C 7F 1B 78 */	mr r31, r3
 /* 80107CD8 00104AD8  4B FF FC 99 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107CDC 00104ADC  38 0D 97 2C */	addi r0, r13, __vt__Q217zNPCBossOmnidroid22bitch_slap_action_type-_SDA_BASE_
+/* 80107CDC 00104ADC  38 0D 97 2C */	addi r0, r13, __vt__Q217zNPCBossOmnidroid22bitch_slap_action_type@sda21
 /* 80107CE0 00104AE0  7F E3 FB 78 */	mr r3, r31
 /* 80107CE4 00104AE4  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107CE8 00104AE8  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2821,7 +2821,7 @@ __ct__Q217zNPCBossOmnidroid15hit_action_typeFv:
 /* 80107D08 00104B08  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107D0C 00104B0C  7C 7F 1B 78 */	mr r31, r3
 /* 80107D10 00104B10  4B FF FC 61 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107D14 00104B14  38 0D 97 60 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15hit_action_type-_SDA_BASE_
+/* 80107D14 00104B14  38 0D 97 60 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15hit_action_type@sda21
 /* 80107D18 00104B18  7F E3 FB 78 */	mr r3, r31
 /* 80107D1C 00104B1C  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107D20 00104B20  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2838,7 +2838,7 @@ __ct__Q217zNPCBossOmnidroid16jump_action_typeFv:
 /* 80107D40 00104B40  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107D44 00104B44  7C 7F 1B 78 */	mr r31, r3
 /* 80107D48 00104B48  4B FF FC 29 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107D4C 00104B4C  38 0D 97 94 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16jump_action_type-_SDA_BASE_
+/* 80107D4C 00104B4C  38 0D 97 94 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16jump_action_type@sda21
 /* 80107D50 00104B50  7F E3 FB 78 */	mr r3, r31
 /* 80107D54 00104B54  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107D58 00104B58  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2855,7 +2855,7 @@ __ct__Q217zNPCBossOmnidroid16idle_action_typeFv:
 /* 80107D78 00104B78  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107D7C 00104B7C  7C 7F 1B 78 */	mr r31, r3
 /* 80107D80 00104B80  4B FF FB F1 */	bl __ct__Q217zNPCBossOmnidroid11action_typeFv
-/* 80107D84 00104B84  38 0D 97 C8 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16idle_action_type-_SDA_BASE_
+/* 80107D84 00104B84  38 0D 97 C8 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16idle_action_type@sda21
 /* 80107D88 00104B88  7F E3 FB 78 */	mr r3, r31
 /* 80107D8C 00104B8C  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107D90 00104B90  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2872,7 +2872,7 @@ __ct__Q217zNPCBossOmnidroid16death_state_typeFv:
 /* 80107DB0 00104BB0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107DB4 00104BB4  7C 7F 1B 78 */	mr r31, r3
 /* 80107DB8 00104BB8  48 00 00 25 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80107DBC 00104BBC  38 0D 98 30 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16death_state_type-_SDA_BASE_
+/* 80107DBC 00104BBC  38 0D 98 30 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid16death_state_type@sda21
 /* 80107DC0 00104BC0  7F E3 FB 78 */	mr r3, r31
 /* 80107DC4 00104BC4  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107DC8 00104BC8  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2883,7 +2883,7 @@ __ct__Q217zNPCBossOmnidroid16death_state_typeFv:
 
 .global __ct__Q217zNPCBossOmnidroid10state_typeFv
 __ct__Q217zNPCBossOmnidroid10state_typeFv:
-/* 80107DDC 00104BDC  38 0D 9B F0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid10state_type-_SDA_BASE_
+/* 80107DDC 00104BDC  38 0D 9B F0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid10state_type@sda21
 /* 80107DE0 00104BE0  90 03 00 04 */	stw r0, 4(r3)
 /* 80107DE4 00104BE4  4E 80 00 20 */	blr 
 
@@ -2895,7 +2895,7 @@ __ct__Q217zNPCBossOmnidroid17beatit_state_typeFv:
 /* 80107DF4 00104BF4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107DF8 00104BF8  7C 7F 1B 78 */	mr r31, r3
 /* 80107DFC 00104BFC  4B FF FF E1 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80107E00 00104C00  38 0D 98 70 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid17beatit_state_type-_SDA_BASE_
+/* 80107E00 00104C00  38 0D 98 70 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid17beatit_state_type@sda21
 /* 80107E04 00104C04  7F E3 FB 78 */	mr r3, r31
 /* 80107E08 00104C08  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107E0C 00104C0C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2912,7 +2912,7 @@ __ct__Q217zNPCBossOmnidroid15stab_state_typeFv:
 /* 80107E2C 00104C2C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107E30 00104C30  7C 7F 1B 78 */	mr r31, r3
 /* 80107E34 00104C34  4B FF FF A9 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80107E38 00104C38  38 0D 98 B0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15stab_state_type-_SDA_BASE_
+/* 80107E38 00104C38  38 0D 98 B0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15stab_state_type@sda21
 /* 80107E3C 00104C3C  7F E3 FB 78 */	mr r3, r31
 /* 80107E40 00104C40  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107E44 00104C44  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2929,7 +2929,7 @@ __ct__Q217zNPCBossOmnidroid21claw_swing_state_typeFv:
 /* 80107E64 00104C64  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107E68 00104C68  7C 7F 1B 78 */	mr r31, r3
 /* 80107E6C 00104C6C  4B FF FF 71 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80107E70 00104C70  38 0D 98 F0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21claw_swing_state_type-_SDA_BASE_
+/* 80107E70 00104C70  38 0D 98 F0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21claw_swing_state_type@sda21
 /* 80107E74 00104C74  7F E3 FB 78 */	mr r3, r31
 /* 80107E78 00104C78  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107E7C 00104C7C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2946,7 +2946,7 @@ __ct__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 80107E9C 00104C9C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107EA0 00104CA0  7C 7F 1B 78 */	mr r31, r3
 /* 80107EA4 00104CA4  4B FF FF 39 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80107EA8 00104CA8  38 0D 99 30 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15bolt_state_type-_SDA_BASE_
+/* 80107EA8 00104CA8  38 0D 99 30 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15bolt_state_type@sda21
 /* 80107EAC 00104CAC  7F E3 FB 78 */	mr r3, r31
 /* 80107EB0 00104CB0  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107EB4 00104CB4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2963,7 +2963,7 @@ __ct__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 80107ED4 00104CD4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107ED8 00104CD8  7C 7F 1B 78 */	mr r31, r3
 /* 80107EDC 00104CDC  4B FF FF 01 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80107EE0 00104CE0  38 0D 99 70 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15beam_state_type-_SDA_BASE_
+/* 80107EE0 00104CE0  38 0D 99 70 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15beam_state_type@sda21
 /* 80107EE4 00104CE4  7F E3 FB 78 */	mr r3, r31
 /* 80107EE8 00104CE8  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107EEC 00104CEC  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2980,7 +2980,7 @@ __ct__Q217zNPCBossOmnidroid20boomerang_state_typeFv:
 /* 80107F0C 00104D0C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107F10 00104D10  7C 7F 1B 78 */	mr r31, r3
 /* 80107F14 00104D14  4B FF FE C9 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80107F18 00104D18  38 0D 99 B0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid20boomerang_state_type-_SDA_BASE_
+/* 80107F18 00104D18  38 0D 99 B0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid20boomerang_state_type@sda21
 /* 80107F1C 00104D1C  7F E3 FB 78 */	mr r3, r31
 /* 80107F20 00104D20  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107F24 00104D24  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -2997,7 +2997,7 @@ __ct__Q217zNPCBossOmnidroid21throw_rock_state_typeFv:
 /* 80107F44 00104D44  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107F48 00104D48  7C 7F 1B 78 */	mr r31, r3
 /* 80107F4C 00104D4C  4B FF FE 91 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80107F50 00104D50  38 0D 99 F0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21throw_rock_state_type-_SDA_BASE_
+/* 80107F50 00104D50  38 0D 99 F0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21throw_rock_state_type@sda21
 /* 80107F54 00104D54  7F E3 FB 78 */	mr r3, r31
 /* 80107F58 00104D58  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107F5C 00104D5C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3014,7 +3014,7 @@ __ct__Q217zNPCBossOmnidroid21smash_rock_state_typeFv:
 /* 80107F7C 00104D7C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107F80 00104D80  7C 7F 1B 78 */	mr r31, r3
 /* 80107F84 00104D84  4B FF FE 59 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80107F88 00104D88  38 0D 9A 30 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21smash_rock_state_type-_SDA_BASE_
+/* 80107F88 00104D88  38 0D 9A 30 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21smash_rock_state_type@sda21
 /* 80107F8C 00104D8C  7F E3 FB 78 */	mr r3, r31
 /* 80107F90 00104D90  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107F94 00104D94  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3031,7 +3031,7 @@ __ct__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 80107FB4 00104DB4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107FB8 00104DB8  7C 7F 1B 78 */	mr r31, r3
 /* 80107FBC 00104DBC  4B FF FE 21 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80107FC0 00104DC0  38 0D 9A 70 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15ball_state_type-_SDA_BASE_
+/* 80107FC0 00104DC0  38 0D 9A 70 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15ball_state_type@sda21
 /* 80107FC4 00104DC4  7F E3 FB 78 */	mr r3, r31
 /* 80107FC8 00104DC8  90 1F 00 04 */	stw r0, 4(r31)
 /* 80107FCC 00104DCC  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3048,7 +3048,7 @@ __ct__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 80107FEC 00104DEC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80107FF0 00104DF0  7C 7F 1B 78 */	mr r31, r3
 /* 80107FF4 00104DF4  4B FF FD E9 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80107FF8 00104DF8  38 0D 9A B0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid18dervish_state_type-_SDA_BASE_
+/* 80107FF8 00104DF8  38 0D 9A B0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid18dervish_state_type@sda21
 /* 80107FFC 00104DFC  7F E3 FB 78 */	mr r3, r31
 /* 80108000 00104E00  90 1F 00 04 */	stw r0, 4(r31)
 /* 80108004 00104E04  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3065,7 +3065,7 @@ __ct__Q217zNPCBossOmnidroid21bitch_slap_state_typeFv:
 /* 80108024 00104E24  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80108028 00104E28  7C 7F 1B 78 */	mr r31, r3
 /* 8010802C 00104E2C  4B FF FD B1 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80108030 00104E30  38 0D 9A F0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21bitch_slap_state_type-_SDA_BASE_
+/* 80108030 00104E30  38 0D 9A F0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid21bitch_slap_state_type@sda21
 /* 80108034 00104E34  7F E3 FB 78 */	mr r3, r31
 /* 80108038 00104E38  90 1F 00 04 */	stw r0, 4(r31)
 /* 8010803C 00104E3C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3082,7 +3082,7 @@ __ct__Q217zNPCBossOmnidroid14hit_state_typeFv:
 /* 8010805C 00104E5C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80108060 00104E60  7C 7F 1B 78 */	mr r31, r3
 /* 80108064 00104E64  4B FF FD 79 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 80108068 00104E68  38 0D 9B 30 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid14hit_state_type-_SDA_BASE_
+/* 80108068 00104E68  38 0D 9B 30 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid14hit_state_type@sda21
 /* 8010806C 00104E6C  7F E3 FB 78 */	mr r3, r31
 /* 80108070 00104E70  90 1F 00 04 */	stw r0, 4(r31)
 /* 80108074 00104E74  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3099,7 +3099,7 @@ __ct__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 80108094 00104E94  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80108098 00104E98  7C 7F 1B 78 */	mr r31, r3
 /* 8010809C 00104E9C  4B FF FD 41 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 801080A0 00104EA0  38 0D 9B 70 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15jump_state_type-_SDA_BASE_
+/* 801080A0 00104EA0  38 0D 9B 70 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15jump_state_type@sda21
 /* 801080A4 00104EA4  7F E3 FB 78 */	mr r3, r31
 /* 801080A8 00104EA8  90 1F 00 04 */	stw r0, 4(r31)
 /* 801080AC 00104EAC  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3116,7 +3116,7 @@ __ct__Q217zNPCBossOmnidroid15idle_state_typeFv:
 /* 801080CC 00104ECC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801080D0 00104ED0  7C 7F 1B 78 */	mr r31, r3
 /* 801080D4 00104ED4  4B FF FD 09 */	bl __ct__Q217zNPCBossOmnidroid10state_typeFv
-/* 801080D8 00104ED8  38 0D 9B B0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15idle_state_type-_SDA_BASE_
+/* 801080D8 00104ED8  38 0D 9B B0 */	addi r0, r13, __vt__Q217zNPCBossOmnidroid15idle_state_type@sda21
 /* 801080DC 00104EDC  7F E3 FB 78 */	mr r3, r31
 /* 801080E0 00104EE0  90 1F 00 04 */	stw r0, 4(r31)
 /* 801080E4 00104EE4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3133,7 +3133,7 @@ __ct__Q21z13rubble_systemFv:
 /* 80108104 00104F04  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80108108 00104F08  7C 7F 1B 78 */	mr r31, r3
 /* 8010810C 00104F0C  4B F8 5D 21 */	bl __ct__Q21z23lightweight_system_baseFv
-/* 80108110 00104F10  38 0D AC E8 */	addi r0, r13, __vt__Q21z13rubble_system-_SDA_BASE_
+/* 80108110 00104F10  38 0D AC E8 */	addi r0, r13, __vt__Q21z13rubble_system@sda21
 /* 80108114 00104F14  7F E3 FB 78 */	mr r3, r31
 /* 80108118 00104F18  90 1F 00 00 */	stw r0, 0(r31)
 /* 8010811C 00104F1C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3177,10 +3177,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 8010818C 00104F8C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80108190 00104F90  7C 08 02 A6 */	mflr r0
 /* 80108194 00104F94  3C A0 80 2E */	lis r5, _esc__2_stringBase0_73@ha
-/* 80108198 00104F98  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108198 00104F98  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010819C 00104F9C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801081A0 00104FA0  38 00 00 00 */	li r0, 0
-/* 801081A4 00104FA4  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801081A4 00104FA4  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801081A8 00104FA8  38 C0 00 00 */	li r6, 0
 /* 801081AC 00104FAC  BF C1 00 18 */	stmw r30, 0x18(r1)
 /* 801081B0 00104FB0  7C 9F 23 78 */	mr r31, r4
@@ -3200,10 +3200,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 801081E8 00104FE8  90 7E 02 80 */	stw r3, 0x280(r30)
 /* 801081EC 00104FEC  38 00 00 00 */	li r0, 0
 /* 801081F0 00104FF0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 801081F4 00104FF4  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801081F4 00104FF4  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801081F8 00104FF8  90 01 00 08 */	stw r0, 8(r1)
 /* 801081FC 00104FFC  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108200 00105000  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108200 00105000  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80108204 00105004  7F E3 FB 78 */	mr r3, r31
 /* 80108208 00105008  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8010820C 0010500C  38 84 00 16 */	addi r4, r4, 0x16
@@ -3218,10 +3218,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108230 00105030  90 7E 02 84 */	stw r3, 0x284(r30)
 /* 80108234 00105034  38 00 00 00 */	li r0, 0
 /* 80108238 00105038  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 8010823C 0010503C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010823C 0010503C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108240 00105040  90 01 00 08 */	stw r0, 8(r1)
 /* 80108244 00105044  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108248 00105048  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108248 00105048  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010824C 0010504C  7F E3 FB 78 */	mr r3, r31
 /* 80108250 00105050  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80108254 00105054  38 84 00 25 */	addi r4, r4, 0x25
@@ -3236,10 +3236,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108278 00105078  90 7E 02 88 */	stw r3, 0x288(r30)
 /* 8010827C 0010507C  38 00 00 00 */	li r0, 0
 /* 80108280 00105080  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 80108284 00105084  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108284 00105084  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108288 00105088  90 01 00 08 */	stw r0, 8(r1)
 /* 8010828C 0010508C  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108290 00105090  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108290 00105090  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80108294 00105094  7F E3 FB 78 */	mr r3, r31
 /* 80108298 00105098  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8010829C 0010509C  38 84 00 30 */	addi r4, r4, 0x30
@@ -3254,10 +3254,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 801082C0 001050C0  90 7E 02 8C */	stw r3, 0x28c(r30)
 /* 801082C4 001050C4  38 00 00 00 */	li r0, 0
 /* 801082C8 001050C8  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 801082CC 001050CC  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801082CC 001050CC  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801082D0 001050D0  90 01 00 08 */	stw r0, 8(r1)
 /* 801082D4 001050D4  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 801082D8 001050D8  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801082D8 001050D8  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801082DC 001050DC  7F E3 FB 78 */	mr r3, r31
 /* 801082E0 001050E0  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801082E4 001050E4  38 84 00 3A */	addi r4, r4, 0x3a
@@ -3272,10 +3272,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108308 00105108  90 7E 02 90 */	stw r3, 0x290(r30)
 /* 8010830C 0010510C  38 00 00 00 */	li r0, 0
 /* 80108310 00105110  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 80108314 00105114  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108314 00105114  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108318 00105118  90 01 00 08 */	stw r0, 8(r1)
 /* 8010831C 0010511C  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108320 00105120  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108320 00105120  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80108324 00105124  7F E3 FB 78 */	mr r3, r31
 /* 80108328 00105128  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8010832C 0010512C  38 84 00 43 */	addi r4, r4, 0x43
@@ -3290,10 +3290,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108350 00105150  90 7E 02 94 */	stw r3, 0x294(r30)
 /* 80108354 00105154  38 00 00 00 */	li r0, 0
 /* 80108358 00105158  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 8010835C 0010515C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010835C 0010515C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108360 00105160  90 01 00 08 */	stw r0, 8(r1)
 /* 80108364 00105164  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108368 00105168  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108368 00105168  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010836C 0010516C  7F E3 FB 78 */	mr r3, r31
 /* 80108370 00105170  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80108374 00105174  38 84 00 4E */	addi r4, r4, 0x4e
@@ -3308,10 +3308,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108398 00105198  90 7E 02 98 */	stw r3, 0x298(r30)
 /* 8010839C 0010519C  38 00 00 00 */	li r0, 0
 /* 801083A0 001051A0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 801083A4 001051A4  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801083A4 001051A4  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801083A8 001051A8  90 01 00 08 */	stw r0, 8(r1)
 /* 801083AC 001051AC  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 801083B0 001051B0  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801083B0 001051B0  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801083B4 001051B4  7F E3 FB 78 */	mr r3, r31
 /* 801083B8 001051B8  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801083BC 001051BC  38 84 00 58 */	addi r4, r4, 0x58
@@ -3326,10 +3326,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 801083E0 001051E0  90 7E 02 9C */	stw r3, 0x29c(r30)
 /* 801083E4 001051E4  38 00 00 00 */	li r0, 0
 /* 801083E8 001051E8  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 801083EC 001051EC  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801083EC 001051EC  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801083F0 001051F0  90 01 00 08 */	stw r0, 8(r1)
 /* 801083F4 001051F4  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 801083F8 001051F8  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801083F8 001051F8  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801083FC 001051FC  7F E3 FB 78 */	mr r3, r31
 /* 80108400 00105200  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80108404 00105204  38 84 00 61 */	addi r4, r4, 0x61
@@ -3344,10 +3344,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108428 00105228  90 7E 02 A0 */	stw r3, 0x2a0(r30)
 /* 8010842C 0010522C  38 00 00 00 */	li r0, 0
 /* 80108430 00105230  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 80108434 00105234  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108434 00105234  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108438 00105238  90 01 00 08 */	stw r0, 8(r1)
 /* 8010843C 0010523C  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108440 00105240  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108440 00105240  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80108444 00105244  7F E3 FB 78 */	mr r3, r31
 /* 80108448 00105248  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8010844C 0010524C  38 84 00 6C */	addi r4, r4, 0x6c
@@ -3362,10 +3362,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108470 00105270  90 7E 02 A4 */	stw r3, 0x2a4(r30)
 /* 80108474 00105274  38 00 00 00 */	li r0, 0
 /* 80108478 00105278  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 8010847C 0010527C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010847C 0010527C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108480 00105280  90 01 00 08 */	stw r0, 8(r1)
 /* 80108484 00105284  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108488 00105288  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108488 00105288  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010848C 0010528C  7F E3 FB 78 */	mr r3, r31
 /* 80108490 00105290  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80108494 00105294  38 84 00 76 */	addi r4, r4, 0x76
@@ -3380,10 +3380,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 801084B8 001052B8  90 7E 02 A8 */	stw r3, 0x2a8(r30)
 /* 801084BC 001052BC  38 00 00 00 */	li r0, 0
 /* 801084C0 001052C0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 801084C4 001052C4  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801084C4 001052C4  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801084C8 001052C8  90 01 00 08 */	stw r0, 8(r1)
 /* 801084CC 001052CC  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 801084D0 001052D0  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801084D0 001052D0  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801084D4 001052D4  7F E3 FB 78 */	mr r3, r31
 /* 801084D8 001052D8  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801084DC 001052DC  38 84 00 84 */	addi r4, r4, 0x84
@@ -3398,10 +3398,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108500 00105300  90 7E 02 AC */	stw r3, 0x2ac(r30)
 /* 80108504 00105304  38 00 00 00 */	li r0, 0
 /* 80108508 00105308  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 8010850C 0010530C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010850C 0010530C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108510 00105310  90 01 00 08 */	stw r0, 8(r1)
 /* 80108514 00105314  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108518 00105318  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108518 00105318  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010851C 0010531C  7F E3 FB 78 */	mr r3, r31
 /* 80108520 00105320  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80108524 00105324  38 84 00 91 */	addi r4, r4, 0x91
@@ -3416,10 +3416,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108548 00105348  90 7E 02 B0 */	stw r3, 0x2b0(r30)
 /* 8010854C 0010534C  38 00 00 00 */	li r0, 0
 /* 80108550 00105350  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 80108554 00105354  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108554 00105354  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108558 00105358  90 01 00 08 */	stw r0, 8(r1)
 /* 8010855C 0010535C  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108560 00105360  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108560 00105360  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80108564 00105364  7F E3 FB 78 */	mr r3, r31
 /* 80108568 00105368  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8010856C 0010536C  38 84 00 9D */	addi r4, r4, 0x9d
@@ -3434,10 +3434,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108590 00105390  90 7E 02 B4 */	stw r3, 0x2b4(r30)
 /* 80108594 00105394  38 00 00 00 */	li r0, 0
 /* 80108598 00105398  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 8010859C 0010539C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010859C 0010539C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801085A0 001053A0  90 01 00 08 */	stw r0, 8(r1)
 /* 801085A4 001053A4  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 801085A8 001053A8  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801085A8 001053A8  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801085AC 001053AC  7F E3 FB 78 */	mr r3, r31
 /* 801085B0 001053B0  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801085B4 001053B4  38 84 00 A8 */	addi r4, r4, 0xa8
@@ -3452,10 +3452,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 801085D8 001053D8  90 7E 02 B8 */	stw r3, 0x2b8(r30)
 /* 801085DC 001053DC  38 00 00 00 */	li r0, 0
 /* 801085E0 001053E0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 801085E4 001053E4  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801085E4 001053E4  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801085E8 001053E8  90 01 00 08 */	stw r0, 8(r1)
 /* 801085EC 001053EC  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 801085F0 001053F0  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801085F0 001053F0  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801085F4 001053F4  7F E3 FB 78 */	mr r3, r31
 /* 801085F8 001053F8  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801085FC 001053FC  38 84 00 B3 */	addi r4, r4, 0xb3
@@ -3470,10 +3470,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108620 00105420  90 7E 02 BC */	stw r3, 0x2bc(r30)
 /* 80108624 00105424  38 00 00 00 */	li r0, 0
 /* 80108628 00105428  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 8010862C 0010542C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010862C 0010542C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108630 00105430  90 01 00 08 */	stw r0, 8(r1)
 /* 80108634 00105434  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108638 00105438  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108638 00105438  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010863C 0010543C  7F E3 FB 78 */	mr r3, r31
 /* 80108640 00105440  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80108644 00105444  38 84 00 C9 */	addi r4, r4, 0xc9
@@ -3488,10 +3488,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108668 00105468  90 7E 02 C0 */	stw r3, 0x2c0(r30)
 /* 8010866C 0010546C  38 00 00 00 */	li r0, 0
 /* 80108670 00105470  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 80108674 00105474  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108674 00105474  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108678 00105478  90 01 00 08 */	stw r0, 8(r1)
 /* 8010867C 0010547C  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108680 00105480  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108680 00105480  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80108684 00105484  7F E3 FB 78 */	mr r3, r31
 /* 80108688 00105488  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8010868C 0010548C  38 84 00 DE */	addi r4, r4, 0xde
@@ -3506,10 +3506,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 801086B0 001054B0  90 7E 02 C4 */	stw r3, 0x2c4(r30)
 /* 801086B4 001054B4  38 00 00 00 */	li r0, 0
 /* 801086B8 001054B8  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 801086BC 001054BC  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801086BC 001054BC  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801086C0 001054C0  90 01 00 08 */	stw r0, 8(r1)
 /* 801086C4 001054C4  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 801086C8 001054C8  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801086C8 001054C8  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801086CC 001054CC  7F E3 FB 78 */	mr r3, r31
 /* 801086D0 001054D0  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801086D4 001054D4  38 84 00 F2 */	addi r4, r4, 0xf2
@@ -3524,10 +3524,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 801086F8 001054F8  90 7E 02 C8 */	stw r3, 0x2c8(r30)
 /* 801086FC 001054FC  38 00 00 00 */	li r0, 0
 /* 80108700 00105500  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 80108704 00105504  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108704 00105504  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108708 00105508  90 01 00 08 */	stw r0, 8(r1)
 /* 8010870C 0010550C  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108710 00105510  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108710 00105510  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80108714 00105514  7F E3 FB 78 */	mr r3, r31
 /* 80108718 00105518  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8010871C 0010551C  38 84 01 08 */	addi r4, r4, 0x108
@@ -3542,10 +3542,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108740 00105540  90 7E 02 CC */	stw r3, 0x2cc(r30)
 /* 80108744 00105544  38 00 00 00 */	li r0, 0
 /* 80108748 00105548  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 8010874C 0010554C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010874C 0010554C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108750 00105550  90 01 00 08 */	stw r0, 8(r1)
 /* 80108754 00105554  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108758 00105558  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108758 00105558  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010875C 0010555C  7F E3 FB 78 */	mr r3, r31
 /* 80108760 00105560  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80108764 00105564  38 84 01 1D */	addi r4, r4, 0x11d
@@ -3560,10 +3560,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108788 00105588  90 7E 02 D0 */	stw r3, 0x2d0(r30)
 /* 8010878C 0010558C  38 00 00 00 */	li r0, 0
 /* 80108790 00105590  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 80108794 00105594  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108794 00105594  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108798 00105598  90 01 00 08 */	stw r0, 8(r1)
 /* 8010879C 0010559C  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 801087A0 001055A0  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801087A0 001055A0  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801087A4 001055A4  7F E3 FB 78 */	mr r3, r31
 /* 801087A8 001055A8  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801087AC 001055AC  38 84 01 31 */	addi r4, r4, 0x131
@@ -3578,10 +3578,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 801087D0 001055D0  90 7E 02 D4 */	stw r3, 0x2d4(r30)
 /* 801087D4 001055D4  38 00 00 00 */	li r0, 0
 /* 801087D8 001055D8  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 801087DC 001055DC  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801087DC 001055DC  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801087E0 001055E0  90 01 00 08 */	stw r0, 8(r1)
 /* 801087E4 001055E4  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 801087E8 001055E8  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801087E8 001055E8  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801087EC 001055EC  7F E3 FB 78 */	mr r3, r31
 /* 801087F0 001055F0  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801087F4 001055F4  38 84 01 3C */	addi r4, r4, 0x13c
@@ -3596,10 +3596,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108818 00105618  90 7E 02 D8 */	stw r3, 0x2d8(r30)
 /* 8010881C 0010561C  38 00 00 00 */	li r0, 0
 /* 80108820 00105620  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 80108824 00105624  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108824 00105624  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108828 00105628  90 01 00 08 */	stw r0, 8(r1)
 /* 8010882C 0010562C  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108830 00105630  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108830 00105630  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80108834 00105634  7F E3 FB 78 */	mr r3, r31
 /* 80108838 00105638  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8010883C 0010563C  38 84 01 41 */	addi r4, r4, 0x141
@@ -3614,10 +3614,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108860 00105660  90 7E 02 DC */	stw r3, 0x2dc(r30)
 /* 80108864 00105664  38 00 00 00 */	li r0, 0
 /* 80108868 00105668  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 8010886C 0010566C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010886C 0010566C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108870 00105670  90 01 00 08 */	stw r0, 8(r1)
 /* 80108874 00105674  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108878 00105678  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108878 00105678  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010887C 0010567C  7F E3 FB 78 */	mr r3, r31
 /* 80108880 00105680  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80108884 00105684  38 84 01 48 */	addi r4, r4, 0x148
@@ -3632,10 +3632,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 801088A8 001056A8  90 7E 02 E0 */	stw r3, 0x2e0(r30)
 /* 801088AC 001056AC  38 00 00 00 */	li r0, 0
 /* 801088B0 001056B0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 801088B4 001056B4  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801088B4 001056B4  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801088B8 001056B8  90 01 00 08 */	stw r0, 8(r1)
 /* 801088BC 001056BC  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 801088C0 001056C0  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801088C0 001056C0  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801088C4 001056C4  7F E3 FB 78 */	mr r3, r31
 /* 801088C8 001056C8  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801088CC 001056CC  38 84 01 50 */	addi r4, r4, 0x150
@@ -3650,10 +3650,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 801088F0 001056F0  90 7E 02 E4 */	stw r3, 0x2e4(r30)
 /* 801088F4 001056F4  38 00 00 00 */	li r0, 0
 /* 801088F8 001056F8  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 801088FC 001056FC  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801088FC 001056FC  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108900 00105700  90 01 00 08 */	stw r0, 8(r1)
 /* 80108904 00105704  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108908 00105708  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108908 00105708  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010890C 0010570C  7F E3 FB 78 */	mr r3, r31
 /* 80108910 00105710  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80108914 00105714  38 84 01 5D */	addi r4, r4, 0x15d
@@ -3668,10 +3668,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108938 00105738  90 7E 02 E8 */	stw r3, 0x2e8(r30)
 /* 8010893C 0010573C  38 00 00 00 */	li r0, 0
 /* 80108940 00105740  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 80108944 00105744  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108944 00105744  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108948 00105748  90 01 00 08 */	stw r0, 8(r1)
 /* 8010894C 0010574C  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108950 00105750  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108950 00105750  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80108954 00105754  7F E3 FB 78 */	mr r3, r31
 /* 80108958 00105758  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8010895C 0010575C  38 84 01 6D */	addi r4, r4, 0x16d
@@ -3686,10 +3686,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108980 00105780  90 7E 02 EC */	stw r3, 0x2ec(r30)
 /* 80108984 00105784  38 00 00 00 */	li r0, 0
 /* 80108988 00105788  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 8010898C 0010578C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010898C 0010578C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108990 00105790  90 01 00 08 */	stw r0, 8(r1)
 /* 80108994 00105794  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108998 00105798  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108998 00105798  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010899C 0010579C  7F E3 FB 78 */	mr r3, r31
 /* 801089A0 001057A0  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801089A4 001057A4  38 84 01 77 */	addi r4, r4, 0x177
@@ -3704,10 +3704,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 801089C8 001057C8  90 7E 02 F0 */	stw r3, 0x2f0(r30)
 /* 801089CC 001057CC  38 00 00 00 */	li r0, 0
 /* 801089D0 001057D0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 801089D4 001057D4  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801089D4 001057D4  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801089D8 001057D8  90 01 00 08 */	stw r0, 8(r1)
 /* 801089DC 001057DC  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 801089E0 001057E0  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801089E0 001057E0  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801089E4 001057E4  7F E3 FB 78 */	mr r3, r31
 /* 801089E8 001057E8  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801089EC 001057EC  38 84 01 80 */	addi r4, r4, 0x180
@@ -3722,10 +3722,10 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108A10 00105810  90 7E 02 F4 */	stw r3, 0x2f4(r30)
 /* 80108A14 00105814  38 00 00 00 */	li r0, 0
 /* 80108A18 00105818  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 80108A1C 0010581C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108A1C 0010581C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108A20 00105820  90 01 00 08 */	stw r0, 8(r1)
 /* 80108A24 00105824  38 83 22 28 */	addi r4, r3, _esc__2_stringBase0_73@l
-/* 80108A28 00105828  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108A28 00105828  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80108A2C 0010582C  7F E3 FB 78 */	mr r3, r31
 /* 80108A30 00105830  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80108A34 00105834  38 84 01 88 */	addi r4, r4, 0x188
@@ -3748,7 +3748,7 @@ add_states__17zNPCBossOmnidroidFP10xAnimTable:
 add_transitions__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108A70 00105870  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80108A74 00105874  7C 08 02 A6 */	mflr r0
-/* 80108A78 00105878  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108A78 00105878  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80108A7C 0010587C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
 /* 80108A80 00105880  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80108A84 00105884  38 00 00 00 */	li r0, 0
@@ -3768,7 +3768,7 @@ add_transitions__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108ABC 001058BC  39 20 00 00 */	li r9, 0
 /* 80108AC0 001058C0  39 40 00 00 */	li r10, 0
 /* 80108AC4 001058C4  4B EF FF 5D */	bl xAnimTableNewTransition__FP10xAnimTablePCcPCcPFP15xAnimTransitionP11xAnimSinglePv_UiPFP15xAnimTransitionP11xAnimSinglePv_UiUiUiffUsUsfPUs
-/* 80108AC8 001058C8  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108AC8 001058C8  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80108ACC 001058CC  38 00 00 00 */	li r0, 0
 /* 80108AD0 001058D0  90 01 00 08 */	stw r0, 8(r1)
 /* 80108AD4 001058D4  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
@@ -3785,7 +3785,7 @@ add_transitions__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108B00 00105900  39 20 00 00 */	li r9, 0
 /* 80108B04 00105904  39 40 00 00 */	li r10, 0
 /* 80108B08 00105908  4B EF FF 19 */	bl xAnimTableNewTransition__FP10xAnimTablePCcPCcPFP15xAnimTransitionP11xAnimSinglePv_UiPFP15xAnimTransitionP11xAnimSinglePv_UiUiUiffUsUsfPUs
-/* 80108B0C 0010590C  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108B0C 0010590C  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80108B10 00105910  38 00 00 00 */	li r0, 0
 /* 80108B14 00105914  90 01 00 08 */	stw r0, 8(r1)
 /* 80108B18 00105918  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
@@ -3802,7 +3802,7 @@ add_transitions__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108B44 00105944  39 20 00 00 */	li r9, 0
 /* 80108B48 00105948  39 40 00 00 */	li r10, 0
 /* 80108B4C 0010594C  4B EF FE D5 */	bl xAnimTableNewTransition__FP10xAnimTablePCcPCcPFP15xAnimTransitionP11xAnimSinglePv_UiPFP15xAnimTransitionP11xAnimSinglePv_UiUiUiffUsUsfPUs
-/* 80108B50 00105950  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108B50 00105950  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80108B54 00105954  38 00 00 00 */	li r0, 0
 /* 80108B58 00105958  90 01 00 08 */	stw r0, 8(r1)
 /* 80108B5C 0010595C  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
@@ -3819,7 +3819,7 @@ add_transitions__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108B88 00105988  39 20 00 00 */	li r9, 0
 /* 80108B8C 0010598C  39 40 00 00 */	li r10, 0
 /* 80108B90 00105990  4B EF FE 91 */	bl xAnimTableNewTransition__FP10xAnimTablePCcPCcPFP15xAnimTransitionP11xAnimSinglePv_UiPFP15xAnimTransitionP11xAnimSinglePv_UiUiUiffUsUsfPUs
-/* 80108B94 00105994  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108B94 00105994  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80108B98 00105998  38 00 00 00 */	li r0, 0
 /* 80108B9C 0010599C  90 01 00 08 */	stw r0, 8(r1)
 /* 80108BA0 001059A0  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
@@ -3836,7 +3836,7 @@ add_transitions__17zNPCBossOmnidroidFP10xAnimTable:
 /* 80108BCC 001059CC  39 20 00 00 */	li r9, 0
 /* 80108BD0 001059D0  39 40 00 00 */	li r10, 0
 /* 80108BD4 001059D4  4B EF FE 4D */	bl xAnimTableNewTransition__FP10xAnimTablePCcPCcPFP15xAnimTransitionP11xAnimSinglePv_UiPFP15xAnimTransitionP11xAnimSinglePv_UiUiUiffUsUsfPUs
-/* 80108BD8 001059D8  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108BD8 001059D8  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80108BDC 001059DC  38 00 00 00 */	li r0, 0
 /* 80108BE0 001059E0  90 01 00 08 */	stw r0, 8(r1)
 /* 80108BE4 001059E4  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
@@ -3874,9 +3874,9 @@ init_npc__17zNPCBossOmnidroidFP9xEntAsset:
 /* 80108C58 00105A58  38 9F 00 1C */	addi r4, r31, 0x1c
 /* 80108C5C 00105A5C  90 1E 00 C8 */	stw r0, 0xc8(r30)
 /* 80108C60 00105A60  4B F0 24 49 */	bl __as__5xVec3FRC5xVec3
-/* 80108C64 00105A64  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108C64 00105A64  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80108C68 00105A68  38 7E 0B 90 */	addi r3, r30, 0xb90
-/* 80108C6C 00105A6C  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108C6C 00105A6C  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 80108C70 00105A70  FC 60 08 90 */	fmr f3, f1
 /* 80108C74 00105A74  4B F0 4B 65 */	bl assign__5xVec3Ffff
 /* 80108C78 00105A78  38 C0 00 00 */	li r6, 0
@@ -3972,7 +3972,7 @@ lbl_80108DCC:
 /* 80108DCC 00105BCC  38 00 00 00 */	li r0, 0
 /* 80108DD0 00105BD0  90 1E 00 F8 */	stw r0, 0xf8(r30)
 lbl_80108DD4:
-/* 80108DD4 00105BD4  C0 02 AC A8 */	lfs f0, _esc__2_1982_0-_SDA2_BASE_(r2)
+/* 80108DD4 00105BD4  C0 02 AC A8 */	lfs f0, _esc__2_1982_0@sda21(r2)
 /* 80108DD8 00105BD8  D0 1E 01 08 */	stfs f0, 0x108(r30)
 /* 80108DDC 00105BDC  BB C1 00 18 */	lmw r30, 0x18(r1)
 /* 80108DE0 00105BE0  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -4015,7 +4015,7 @@ setup__17zNPCBossOmnidroidFv:
 /* 80108E5C 00105C5C  3C 60 80 11 */	lis r3, before_anim_matrices_callback__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i@ha
 /* 80108E60 00105C60  90 1F 00 D4 */	stw r0, 0xd4(r31)
 /* 80108E64 00105C64  38 03 99 50 */	addi r0, r3, before_anim_matrices_callback__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i@l
-/* 80108E68 00105C68  C0 02 AC A0 */	lfs f0, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 80108E68 00105C68  C0 02 AC A0 */	lfs f0, _esc__2_1660_1@sda21(r2)
 /* 80108E6C 00105C6C  7F E3 FB 78 */	mr r3, r31
 /* 80108E70 00105C70  80 9F 00 28 */	lwz r4, 0x28(r31)
 /* 80108E74 00105C74  80 84 00 0C */	lwz r4, 0xc(r4)
@@ -4061,7 +4061,7 @@ lbl_80108ED4:
 /* 80108F0C 00105D0C  7F E3 FB 78 */	mr r3, r31
 /* 80108F10 00105D10  48 00 2C 39 */	bl setup_actions__17zNPCBossOmnidroidFv
 /* 80108F14 00105D14  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 80108F18 00105D18  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80108F18 00105D18  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80108F1C 00105D1C  38 63 22 28 */	addi r3, r3, _esc__2_stringBase0_73@l
 /* 80108F20 00105D20  38 63 01 8E */	addi r3, r3, 0x18e
 /* 80108F24 00105D24  48 0B EB 7D */	bl add__5statsFPCcf
@@ -4104,11 +4104,11 @@ reset__17zNPCBossOmnidroidFv:
 /* 80108FAC 00105DAC  38 A0 00 00 */	li r5, 0
 /* 80108FB0 00105DB0  98 7F 01 F2 */	stb r3, 0x1f2(r31)
 /* 80108FB4 00105DB4  38 80 00 11 */	li r4, 0x11
-/* 80108FB8 00105DB8  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80108FB8 00105DB8  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80108FBC 00105DBC  38 00 00 10 */	li r0, 0x10
 /* 80108FC0 00105DC0  98 7F 01 F5 */	stb r3, 0x1f5(r31)
 /* 80108FC4 00105DC4  38 7F 02 00 */	addi r3, r31, 0x200
-/* 80108FC8 00105DC8  C0 02 AC AC */	lfs f0, _esc__2_2015_1-_SDA2_BASE_(r2)
+/* 80108FC8 00105DC8  C0 02 AC AC */	lfs f0, _esc__2_2015_1@sda21(r2)
 /* 80108FCC 00105DCC  90 BF 03 60 */	stw r5, 0x360(r31)
 /* 80108FD0 00105DD0  D0 3F 03 54 */	stfs f1, 0x354(r31)
 /* 80108FD4 00105DD4  D0 3F 0B 7C */	stfs f1, 0xb7c(r31)
@@ -4122,13 +4122,13 @@ reset__17zNPCBossOmnidroidFv:
 /* 80108FF4 00105DF4  80 84 00 54 */	lwz r4, 0x54(r4)
 /* 80108FF8 00105DF8  4B EF CC 49 */	bl __as__7xMat4x3FRC7xMat4x3
 /* 80108FFC 00105DFC  38 80 00 00 */	li r4, 0
-/* 80109000 00105E00  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80109000 00105E00  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80109004 00105E04  90 9F 0D D0 */	stw r4, 0xdd0(r31)
 /* 80109008 00105E08  38 00 00 01 */	li r0, 1
-/* 8010900C 00105E0C  C0 22 AC B4 */	lfs f1, _esc__2_2017-_SDA2_BASE_(r2)
-/* 80109010 00105E10  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8010900C 00105E0C  C0 22 AC B4 */	lfs f1, _esc__2_2017@sda21(r2)
+/* 80109010 00105E10  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 80109014 00105E14  90 9F 0D CC */	stw r4, 0xdcc(r31)
-/* 80109018 00105E18  C0 42 AC B0 */	lfs f2, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 80109018 00105E18  C0 42 AC B0 */	lfs f2, _esc__2_2016_0@sda21(r2)
 /* 8010901C 00105E1C  D0 1F 0D D8 */	stfs f0, 0xdd8(r31)
 /* 80109020 00105E20  90 9F 0C A4 */	stw r4, 0xca4(r31)
 /* 80109024 00105E24  98 1F 00 88 */	stb r0, 0x88(r31)
@@ -4145,7 +4145,7 @@ reset__17zNPCBossOmnidroidFv:
 /* 80109050 00105E50  38 64 00 58 */	addi r3, r4, 0x58
 /* 80109054 00105E54  4B F0 20 45 */	bl __as__5xVec3Ff
 /* 80109058 00105E58  80 1F 03 4C */	lwz r0, 0x34c(r31)
-/* 8010905C 00105E5C  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8010905C 00105E5C  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 80109060 00105E60  80 9F 00 2C */	lwz r4, 0x2c(r31)
 /* 80109064 00105E64  54 00 10 3A */	slwi r0, r0, 2
 /* 80109068 00105E68  7C 23 04 2E */	lfsx f1, r3, r0
@@ -4189,17 +4189,17 @@ lbl_801090B8:
 /* 801090F8 00105EF8  80 7F 00 28 */	lwz r3, 0x28(r31)
 /* 801090FC 00105EFC  80 9F 02 80 */	lwz r4, 0x280(r31)
 /* 80109100 00105F00  80 63 00 0C */	lwz r3, 0xc(r3)
-/* 80109104 00105F04  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80109104 00105F04  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80109108 00105F08  80 63 00 08 */	lwz r3, 8(r3)
 /* 8010910C 00105F0C  4B F0 07 E5 */	bl xAnimPlaySetState__FP11xAnimSingleP10xAnimStatef
 /* 80109110 00105F10  80 7F 00 28 */	lwz r3, 0x28(r31)
-/* 80109114 00105F14  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80109114 00105F14  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80109118 00105F18  4B F4 15 F5 */	bl xModelUpdate__FP14xModelInstancef
 /* 8010911C 00105F1C  80 7F 00 28 */	lwz r3, 0x28(r31)
 /* 80109120 00105F20  4B F4 18 8D */	bl xModelEval__FP14xModelInstance
 /* 80109124 00105F24  80 1F 03 4C */	lwz r0, 0x34c(r31)
-/* 80109128 00105F28  38 62 AC 60 */	addi r3, r2, variant_phases-_SDA2_BASE_
-/* 8010912C 00105F2C  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 80109128 00105F28  38 62 AC 60 */	addi r3, r2, variant_phases@sda21
+/* 8010912C 00105F2C  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 80109130 00105F30  54 00 10 3A */	slwi r0, r0, 2
 /* 80109134 00105F34  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80109138 00105F38  80 64 04 C4 */	lwz r3, 0x4c4(r4)
@@ -4262,7 +4262,7 @@ activate__17zNPCBossOmnidroidFv:
 /* 801091F0 00105FF0  50 80 26 F6 */	rlwimi r0, r4, 4, 0x1b, 0x1b
 /* 801091F4 00105FF4  98 03 01 34 */	stb r0, 0x134(r3)
 /* 801091F8 00105FF8  4B F1 CE 39 */	bl xEntShow__FP4xEnt
-/* 801091FC 00105FFC  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 801091FC 00105FFC  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 80109200 00106000  7F E3 FB 78 */	mr r3, r31
 /* 80109204 00106004  38 80 00 00 */	li r4, 0
 /* 80109208 00106008  38 A0 00 00 */	li r5, 0
@@ -4328,7 +4328,7 @@ damage__17zNPCBossOmnidroidFRC17zCombatDamageInfo:
 /* 801092D4 001060D4  4B FC DE FD */	bl right_normalize__5xVec3Fv
 /* 801092D8 001060D8  C0 21 00 14 */	lfs f1, 0x14(r1)
 /* 801092DC 001060DC  4B F0 87 19 */	bl xasin__Ff
-/* 801092E0 001060E0  C0 02 AC BC */	lfs f0, _esc__2_2068-_SDA2_BASE_(r2)
+/* 801092E0 001060E0  C0 02 AC BC */	lfs f0, _esc__2_2068@sda21(r2)
 /* 801092E4 001060E4  3B E0 00 00 */	li r31, 0
 /* 801092E8 001060E8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801092EC 001060EC  4C 41 13 82 */	cror 2, 1, 2
@@ -4341,7 +4341,7 @@ damage__17zNPCBossOmnidroidFRC17zCombatDamageInfo:
 /* 80109308 00106108  3B E0 00 04 */	li r31, 4
 /* 8010930C 0010610C  48 00 00 2C */	b lbl_80109338
 lbl_80109310:
-/* 80109310 00106110  C0 02 AC C0 */	lfs f0, _esc__2_2069-_SDA2_BASE_(r2)
+/* 80109310 00106110  C0 02 AC C0 */	lfs f0, _esc__2_2069@sda21(r2)
 /* 80109314 00106114  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80109318 00106118  4C 40 13 82 */	cror 2, 0, 2
 /* 8010931C 0010611C  40 82 00 1C */	bne lbl_80109338
@@ -4357,7 +4357,7 @@ lbl_80109338:
 /* 80109340 00106140  90 01 00 60 */	stw r0, 0x60(r1)
 /* 80109344 00106144  7F A3 EB 78 */	mr r3, r29
 /* 80109348 00106148  6C 80 80 00 */	xoris r0, r4, 0x8000
-/* 8010934C 0010614C  C8 22 AC 90 */	lfd f1, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8010934C 0010614C  C8 22 AC 90 */	lfd f1, _esc__2_1488@sda21(r2)
 /* 80109350 00106150  90 01 00 64 */	stw r0, 0x64(r1)
 /* 80109354 00106154  7F E4 FB 78 */	mr r4, r31
 /* 80109358 00106158  38 A0 00 00 */	li r5, 0
@@ -4576,7 +4576,7 @@ lbl_801095F4:
 /* 8010962C 0010642C  4B F7 EC 09 */	bl zCamGetDefault__Fv
 /* 80109630 00106430  C0 3F 00 98 */	lfs f1, 0x98(r31)
 /* 80109634 00106434  38 9F 00 8C */	addi r4, r31, 0x8c
-/* 80109638 00106438  C0 42 AC C4 */	lfs f2, _esc__2_2146-_SDA2_BASE_(r2)
+/* 80109638 00106438  C0 42 AC C4 */	lfs f2, _esc__2_2146@sda21(r2)
 /* 8010963C 0010643C  4B F8 04 0D */	bl set_secondary_target__10zCamPlayerFRC5xVec3ff
 lbl_80109640:
 /* 80109640 00106440  88 1F 01 F8 */	lbz r0, 0x1f8(r31)
@@ -4714,7 +4714,7 @@ lbl_801097A0:
 /* 801097E8 001065E8  38 84 00 7C */	addi r4, r4, 0x7c
 /* 801097EC 001065EC  4B F0 3F B9 */	bl __as__4xBoxFRC4xBox
 /* 801097F0 001065F0  80 1F 03 4C */	lwz r0, 0x34c(r31)
-/* 801097F4 001065F4  38 62 A8 C8 */	addi r3, r2, use_simple_shadow__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 801097F4 001065F4  38 62 A8 C8 */	addi r3, r2, use_simple_shadow__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 801097F8 001065F8  7C 03 00 AE */	lbzx r0, r3, r0
 /* 801097FC 001065FC  28 00 00 00 */	cmplwi r0, 0
 /* 80109800 00106600  41 82 00 18 */	beq lbl_80109818
@@ -4838,7 +4838,7 @@ before_anim_matrices_callback__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i:
 /* 80109964 00106764  7C A0 2B 78 */	mr r0, r5
 /* 80109968 00106768  7C C7 33 78 */	mr r7, r6
 /* 8010996C 0010676C  7D 24 4B 78 */	mr r4, r9
-/* 80109970 00106770  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80109970 00106770  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80109974 00106774  7D 05 43 78 */	mr r5, r8
 /* 80109978 00106778  7C 06 03 78 */	mr r6, r0
 /* 8010997C 0010677C  48 00 08 E5 */	bl transform_anim__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i
@@ -4857,7 +4857,7 @@ process_leg_bones_callback__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i:
 /* 801099A4 001067A4  7C A0 2B 78 */	mr r0, r5
 /* 801099A8 001067A8  7C C7 33 78 */	mr r7, r6
 /* 801099AC 001067AC  7D 24 4B 78 */	mr r4, r9
-/* 801099B0 001067B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801099B0 001067B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801099B4 001067B4  7D 05 43 78 */	mr r5, r8
 /* 801099B8 001067B8  7C 06 03 78 */	mr r6, r0
 /* 801099BC 001067BC  48 00 24 99 */	bl process_leg_bones__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i
@@ -4884,16 +4884,16 @@ anim_set_state__17zNPCBossOmnidroidFP10xAnimStatefb:
 /* 80109A04 00106804  57 E0 06 3F */	clrlwi. r0, r31, 0x18
 /* 80109A08 00106808  41 82 00 68 */	beq lbl_80109A70
 lbl_80109A0C:
-/* 80109A0C 0010680C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80109A0C 0010680C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80109A10 00106810  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80109A14 00106814  40 80 00 08 */	bge lbl_80109A1C
-/* 80109A18 00106818  C3 E2 AC C8 */	lfs f31, _esc__2_2275-_SDA2_BASE_(r2)
+/* 80109A18 00106818  C3 E2 AC C8 */	lfs f31, _esc__2_2275@sda21(r2)
 lbl_80109A1C:
 /* 80109A1C 0010681C  38 60 00 00 */	li r3, 0
 /* 80109A20 00106820  4B EF D3 CD */	bl xAnimTempTransitionAlloc__FPC15xAnimTransition
 /* 80109A24 00106824  93 C3 00 04 */	stw r30, 4(r3)
 /* 80109A28 00106828  38 00 00 00 */	li r0, 0
-/* 80109A2C 0010682C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80109A2C 0010682C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80109A30 00106830  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80109A34 00106834  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80109A38 00106838  D0 03 00 18 */	stfs f0, 0x18(r3)
@@ -4902,7 +4902,7 @@ lbl_80109A1C:
 /* 80109A44 00106844  40 82 00 08 */	bne lbl_80109A4C
 /* 80109A48 00106848  48 00 00 0C */	b lbl_80109A54
 lbl_80109A4C:
-/* 80109A4C 0010684C  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80109A4C 0010684C  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80109A50 00106850  EC 00 F8 24 */	fdivs f0, f0, f31
 lbl_80109A54:
 /* 80109A54 00106854  D0 03 00 24 */	stfs f0, 0x24(r3)
@@ -4941,7 +4941,7 @@ anim_slam_state__17zNPCBossOmnidroidFP10xAnimStatef:
 /* 80109ABC 001068BC  80 63 00 08 */	lwz r3, 8(r3)
 /* 80109AC0 001068C0  4B EF FE 31 */	bl xAnimPlaySetState__FP11xAnimSingleP10xAnimStatef
 /* 80109AC4 001068C4  80 7F 00 28 */	lwz r3, 0x28(r31)
-/* 80109AC8 001068C8  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80109AC8 001068C8  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80109ACC 001068CC  4B F4 0C 41 */	bl xModelUpdate__FP14xModelInstancef
 /* 80109AD0 001068D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80109AD4 001068D4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -4993,15 +4993,15 @@ load_waypoints__17zNPCBossOmnidroidFv:
 /* 80109B80 00106980  4B F1 7E 51 */	bl __nwa__FUl14xMemStaticTypeUi
 /* 80109B84 00106984  90 7E 0D C4 */	stw r3, 0xdc4(r30)
 /* 80109B88 00106988  3C 00 43 30 */	lis r0, 0x4330
-/* 80109B8C 0010698C  C8 22 AC 90 */	lfd f1, _esc__2_1488-_SDA2_BASE_(r2)
+/* 80109B8C 0010698C  C8 22 AC 90 */	lfd f1, _esc__2_1488@sda21(r2)
 /* 80109B90 00106990  3B E0 00 00 */	li r31, 0
 /* 80109B94 00106994  80 7E 0D C8 */	lwz r3, 0xdc8(r30)
 /* 80109B98 00106998  3B A0 00 00 */	li r29, 0
 /* 80109B9C 0010699C  90 01 01 10 */	stw r0, 0x110(r1)
 /* 80109BA0 001069A0  6C 60 80 00 */	xoris r0, r3, 0x8000
-/* 80109BA4 001069A4  C0 42 AC CC */	lfs f2, _esc__2_2352_0-_SDA2_BASE_(r2)
+/* 80109BA4 001069A4  C0 42 AC CC */	lfs f2, _esc__2_2352_0@sda21(r2)
 /* 80109BA8 001069A8  90 01 01 14 */	stw r0, 0x114(r1)
-/* 80109BAC 001069AC  C3 E2 A8 B0 */	lfs f31, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80109BAC 001069AC  C3 E2 A8 B0 */	lfs f31, _esc__2_1222@sda21(r2)
 /* 80109BB0 001069B0  C8 01 01 10 */	lfd f0, 0x110(r1)
 /* 80109BB4 001069B4  EC 00 08 28 */	fsubs f0, f0, f1
 /* 80109BB8 001069B8  EF C2 00 24 */	fdivs f30, f2, f0
@@ -5046,7 +5046,7 @@ lbl_80109C3C:
 /* 80109C48 00106A48  4B F1 7D 89 */	bl __nwa__FUl14xMemStaticTypeUi
 /* 80109C4C 00106A4C  90 7E 0D C4 */	stw r3, 0xdc4(r30)
 /* 80109C50 00106A50  3B 81 00 08 */	addi r28, r1, 8
-/* 80109C54 00106A54  C3 E2 A8 B4 */	lfs f31, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80109C54 00106A54  C3 E2 A8 B4 */	lfs f31, _esc__2_1223@sda21(r2)
 /* 80109C58 00106A58  3B 60 00 00 */	li r27, 0
 /* 80109C5C 00106A5C  3B E0 00 00 */	li r31, 0
 /* 80109C60 00106A60  3B A0 00 00 */	li r29, 0
@@ -5093,7 +5093,7 @@ lbl_80109CEC:
 /* 80109CFC 00106AFC  38 A0 00 18 */	li r5, 0x18
 /* 80109D00 00106B00  38 C0 00 00 */	li r6, 0
 /* 80109D04 00106B04  4B F6 6B 59 */	bl quicksort_float__FPvUlUlUl
-/* 80109D08 00106B08  C3 E2 AC D0 */	lfs f31, _esc__2_2353_0-_SDA2_BASE_(r2)
+/* 80109D08 00106B08  C3 E2 AC D0 */	lfs f31, _esc__2_2353_0@sda21(r2)
 /* 80109D0C 00106B0C  3B 60 00 00 */	li r27, 0
 /* 80109D10 00106B10  3B E0 00 00 */	li r31, 0
 /* 80109D14 00106B14  48 00 00 E8 */	b lbl_80109DFC
@@ -5223,7 +5223,7 @@ lbl_80109EB4:
 /* 80109ED8 00106CD8  4B FA 4E 65 */	bl valid__13pointer_assetCFv
 /* 80109EDC 00106CDC  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80109EE0 00106CE0  41 82 00 30 */	beq lbl_80109F10
-/* 80109EE4 00106CE4  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80109EE4 00106CE4  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80109EE8 00106CE8  7F 83 E3 78 */	mr r3, r28
 /* 80109EEC 00106CEC  C0 3D 00 1C */	lfs f1, 0x1c(r29)
 /* 80109EF0 00106CF0  FC 60 10 90 */	fmr f3, f2
@@ -5255,7 +5255,7 @@ lbl_80109F14:
 load_models__17zNPCBossOmnidroidFv:
 /* 80109F48 00106D48  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80109F4C 00106D4C  7C 08 02 A6 */	mflr r0
-/* 80109F50 00106D50  C0 22 AC B0 */	lfs f1, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 80109F50 00106D50  C0 22 AC B0 */	lfs f1, _esc__2_2016_0@sda21(r2)
 /* 80109F54 00106D54  3C 80 FD C9 */	lis r4, 0xFDC8AA20@ha
 /* 80109F58 00106D58  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80109F5C 00106D5C  93 E1 00 0C */	stw r31, 0xc(r1)
@@ -5263,7 +5263,7 @@ load_models__17zNPCBossOmnidroidFv:
 /* 80109F64 00106D64  38 64 AA 20 */	addi r3, r4, 0xFDC8AA20@l
 /* 80109F68 00106D68  4B FF CA 01 */	bl _load_model__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FUif
 /* 80109F6C 00106D6C  90 7F 00 30 */	stw r3, 0x30(r31)
-/* 80109F70 00106D70  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 80109F70 00106D70  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 80109F74 00106D74  3C A0 2C A8 */	lis r5, 0x2CA7BDD2@ha
 /* 80109F78 00106D78  90 7F 00 2C */	stw r3, 0x2c(r31)
 /* 80109F7C 00106D7C  38 65 BD D2 */	addi r3, r5, 0x2CA7BDD2@l
@@ -5273,7 +5273,7 @@ load_models__17zNPCBossOmnidroidFv:
 /* 80109F8C 00106D8C  4B FF C9 DD */	bl _load_model__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FUif
 /* 80109F90 00106D90  90 7F 0C A0 */	stw r3, 0xca0(r31)
 /* 80109F94 00106D94  3C 60 9F AC */	lis r3, 0x9FAB9623@ha
-/* 80109F98 00106D98  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 80109F98 00106D98  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 80109F9C 00106D9C  80 DF 00 28 */	lwz r6, 0x28(r31)
 /* 80109FA0 00106DA0  38 63 96 23 */	addi r3, r3, 0x9FAB9623@l
 /* 80109FA4 00106DA4  80 BF 0C A0 */	lwz r5, 0xca0(r31)
@@ -5321,12 +5321,12 @@ load_textures__17zNPCBossOmnidroidFv:
 /* 8010A040 00106E40  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010A044 00106E44  38 63 A7 DE */	addi r3, r3, 0x1E0DA7DE@l
 /* 8010A048 00106E48  4B F2 F4 9D */	bl get_raster__9xFXRibbonFUi
-/* 8010A04C 00106E4C  38 AD 93 98 */	addi r5, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs13ribbon_center-_SDA_BASE_
+/* 8010A04C 00106E4C  38 AD 93 98 */	addi r5, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs13ribbon_center@sda21
 /* 8010A050 00106E50  3C 80 9F 68 */	lis r4, 0x9F681A2A@ha
 /* 8010A054 00106E54  90 65 00 1C */	stw r3, 0x1c(r5)
 /* 8010A058 00106E58  38 64 1A 2A */	addi r3, r4, 0x9F681A2A@l
 /* 8010A05C 00106E5C  4B F2 F4 89 */	bl get_raster__9xFXRibbonFUi
-/* 8010A060 00106E60  38 8D 93 B8 */	addi r4, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake-_SDA_BASE_
+/* 8010A060 00106E60  38 8D 93 B8 */	addi r4, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake@sda21
 /* 8010A064 00106E64  90 64 00 1C */	stw r3, 0x1c(r4)
 /* 8010A068 00106E68  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8010A06C 00106E6C  7C 08 03 A6 */	mtlr r0
@@ -5394,7 +5394,7 @@ lbl_8010A114:
 /* 8010A140 00106F40  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8010A144 00106F44  7D 89 03 A6 */	mtctr r12
 /* 8010A148 00106F48  4E 80 04 21 */	bctrl 
-/* 8010A14C 00106F4C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010A14C 00106F4C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010A150 00106F50  38 00 FF FF */	li r0, -1
 /* 8010A154 00106F54  D0 1E 03 50 */	stfs f0, 0x350(r30)
 /* 8010A158 00106F58  90 1E 05 4C */	stw r0, 0x54c(r30)
@@ -5425,11 +5425,11 @@ refresh_collision_volumes__17zNPCBossOmnidroidFv:
 /* 8010A194 00106F94  F3 EC 0F F8 */	psq_st f31, -8(r12), 0, qr0
 /* 8010A198 00106F98  BF CC FF E8 */	stmw r30, -0x18(r12)
 /* 8010A19C 00106F9C  7C 7E 1B 78 */	mr r30, r3
-/* 8010A1A0 00106FA0  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8010A1A0 00106FA0  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 8010A1A4 00106FA4  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 8010A1A8 00106FA8  80 63 00 30 */	lwz r3, 0x30(r3)
 /* 8010A1AC 00106FAC  54 00 10 3A */	slwi r0, r0, 2
-/* 8010A1B0 00106FB0  C0 22 AC B0 */	lfs f1, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 8010A1B0 00106FB0  C0 22 AC B0 */	lfs f1, _esc__2_2016_0@sda21(r2)
 /* 8010A1B4 00106FB4  7C 04 04 2E */	lfsx f0, r4, r0
 /* 8010A1B8 00106FB8  38 63 00 58 */	addi r3, r3, 0x58
 /* 8010A1BC 00106FBC  EF E1 00 32 */	fmuls f31, f1, f0
@@ -5437,26 +5437,26 @@ refresh_collision_volumes__17zNPCBossOmnidroidFv:
 /* 8010A1C4 00106FC4  4B F0 0E D5 */	bl __as__5xVec3Ff
 /* 8010A1C8 00106FC8  80 7E 00 2C */	lwz r3, 0x2c(r30)
 /* 8010A1CC 00106FCC  38 A0 00 03 */	li r5, 3
-/* 8010A1D0 00106FD0  C0 22 AC D4 */	lfs f1, _esc__2_2396-_SDA2_BASE_(r2)
+/* 8010A1D0 00106FD0  C0 22 AC D4 */	lfs f1, _esc__2_2396@sda21(r2)
 /* 8010A1D4 00106FD4  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 8010A1D8 00106FD8  C0 03 00 28 */	lfs f0, 0x28(r3)
 /* 8010A1DC 00106FDC  EC 01 00 32 */	fmuls f0, f1, f0
 /* 8010A1E0 00106FE0  EC 00 07 F2 */	fmuls f0, f0, f31
 /* 8010A1E4 00106FE4  D0 1E 00 98 */	stfs f0, 0x98(r30)
 /* 8010A1E8 00106FE8  80 9E 00 30 */	lwz r4, 0x30(r30)
-/* 8010A1EC 00106FEC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010A1EC 00106FEC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010A1F0 00106FF0  83 E4 00 54 */	lwz r31, 0x54(r4)
 /* 8010A1F4 00106FF4  80 83 00 28 */	lwz r4, 0x28(r3)
 /* 8010A1F8 00106FF8  7F E3 FB 78 */	mr r3, r31
 /* 8010A1FC 00106FFC  4B F4 10 C1 */	bl xModelGetBoneMat__FR7xMat3x3RC14xModelInstanceUl
-/* 8010A200 00107000  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010A200 00107000  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010A204 00107004  38 61 00 10 */	addi r3, r1, 0x10
 /* 8010A208 00107008  38 A0 00 03 */	li r5, 3
 /* 8010A20C 0010700C  80 84 00 28 */	lwz r4, 0x28(r4)
 /* 8010A210 00107010  4B F4 11 D9 */	bl xModelGetBoneMatScaled__FR7xMat4x3RC14xModelInstanceUl
 /* 8010A214 00107014  38 7F 00 30 */	addi r3, r31, 0x30
 /* 8010A218 00107018  38 81 00 10 */	addi r4, r1, 0x10
-/* 8010A21C 0010701C  38 A2 A8 DC */	addi r5, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4body-_SDA2_BASE_
+/* 8010A21C 0010701C  38 A2 A8 DC */	addi r5, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4body@sda21
 /* 8010A220 00107020  4B F0 33 85 */	bl xMat4x3Toworld__FP5xVec3PC7xMat4x3PC5xVec3
 /* 8010A224 00107024  38 7E 00 8C */	addi r3, r30, 0x8c
 /* 8010A228 00107028  38 9F 00 30 */	addi r4, r31, 0x30
@@ -5487,7 +5487,7 @@ transform_anim__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i:
 /* 8010A280 00107080  7C FC 3B 78 */	mr r28, r7
 /* 8010A284 00107084  3B A0 00 00 */	li r29, 0
 /* 8010A288 00107088  3B E0 00 00 */	li r31, 0
-/* 8010A28C 0010708C  3B C2 A9 98 */	addi r30, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 8010A28C 0010708C  3B C2 A9 98 */	addi r30, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 lbl_8010A290:
 /* 8010A290 00107090  7C 7E F8 2E */	lwzx r3, r30, r31
 /* 8010A294 00107094  38 03 FF FF */	addi r0, r3, -1
@@ -5654,14 +5654,14 @@ reorient_bones__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i:
 /* 8010A49C 0010729C  2C 17 00 00 */	cmpwi r23, 0
 /* 8010A4A0 001072A0  82 C3 0D D0 */	lwz r22, 0xdd0(r3)
 /* 8010A4A4 001072A4  40 82 00 14 */	bne lbl_8010A4B8
-/* 8010A4A8 001072A8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010A4A8 001072A8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010A4AC 001072AC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010A4B0 001072B0  4C 40 13 82 */	cror 2, 0, 2
 /* 8010A4B4 001072B4  41 82 02 E8 */	beq lbl_8010A79C
 lbl_8010A4B8:
 /* 8010A4B8 001072B8  2C 16 00 00 */	cmpwi r22, 0
 /* 8010A4BC 001072BC  40 82 00 18 */	bne lbl_8010A4D4
-/* 8010A4C0 001072C0  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010A4C0 001072C0  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8010A4C4 001072C4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010A4C8 001072C8  4C 41 13 82 */	cror 2, 1, 2
 /* 8010A4CC 001072CC  40 82 00 08 */	bne lbl_8010A4D4
@@ -5676,13 +5676,13 @@ lbl_8010A4D4:
 /* 8010A4EC 001072EC  3A 1E 00 10 */	addi r16, r30, 0x10
 /* 8010A4F0 001072F0  90 61 00 B0 */	stw r3, 0xb0(r1)
 /* 8010A4F4 001072F4  FF E0 08 90 */	fmr f31, f1
-/* 8010A4F8 001072F8  C8 42 AC 90 */	lfd f2, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8010A4F8 001072F8  C8 42 AC 90 */	lfd f2, _esc__2_1488@sda21(r2)
 /* 8010A4FC 001072FC  7E 05 83 78 */	mr r5, r16
 /* 8010A500 00107300  C8 01 00 B0 */	lfd f0, 0xb0(r1)
 /* 8010A504 00107304  7D E6 7B 78 */	mr r6, r15
 /* 8010A508 00107308  90 61 00 B8 */	stw r3, 0xb8(r1)
 /* 8010A50C 0010730C  EC 20 10 28 */	fsubs f1, f0, f2
-/* 8010A510 00107310  C0 62 AC D8 */	lfs f3, _esc__2_2481-_SDA2_BASE_(r2)
+/* 8010A510 00107310  C0 62 AC D8 */	lfs f3, _esc__2_2481@sda21(r2)
 /* 8010A514 00107314  90 01 00 BC */	stw r0, 0xbc(r1)
 /* 8010A518 00107318  38 61 00 A0 */	addi r3, r1, 0xa0
 /* 8010A51C 0010731C  38 81 00 84 */	addi r4, r1, 0x84
@@ -5761,7 +5761,7 @@ lbl_8010A634:
 /* 8010A638 00107438  40 80 00 08 */	bge lbl_8010A640
 /* 8010A63C 0010743C  3B 18 00 05 */	addi r24, r24, 5
 lbl_8010A640:
-/* 8010A640 00107440  38 C2 A9 AC */	addi r6, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 8010A640 00107440  38 C2 A9 AC */	addi r6, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 8010A644 00107444  54 83 10 3A */	slwi r3, r4, 2
 /* 8010A648 00107448  1C 04 14 D0 */	mulli r0, r4, 0x14d0
 /* 8010A64C 0010744C  7C 86 18 2E */	lwzx r4, r6, r3
@@ -5874,9 +5874,9 @@ eval_leg_points__17zNPCBossOmnidroidFP5xVec3ii:
 /* 8010A7E4 001075E4  7C DC 33 78 */	mr r28, r6
 /* 8010A7E8 001075E8  3B A0 00 00 */	li r29, 0
 /* 8010A7EC 001075EC  3B E0 00 00 */	li r31, 0
-/* 8010A7F0 001075F0  3B C2 A9 AC */	addi r30, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 8010A7F0 001075F0  3B C2 A9 AC */	addi r30, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 lbl_8010A7F4:
-/* 8010A7F4 001075F4  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010A7F4 001075F4  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010A7F8 001075F8  7F 23 CB 78 */	mr r3, r25
 /* 8010A7FC 001075FC  7F A4 EB 78 */	mr r4, r29
 /* 8010A800 00107600  48 00 0F 21 */	bl set_facing__17zNPCBossOmnidroidFif
@@ -5941,9 +5941,9 @@ eval_leg_matrices__17zNPCBossOmnidroidFP7xMat4x3ii:
 /* 8010A8C4 001076C4  7C DC 33 78 */	mr r28, r6
 /* 8010A8C8 001076C8  3B A0 00 00 */	li r29, 0
 /* 8010A8CC 001076CC  3B E0 00 00 */	li r31, 0
-/* 8010A8D0 001076D0  3B C2 A9 AC */	addi r30, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 8010A8D0 001076D0  3B C2 A9 AC */	addi r30, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 lbl_8010A8D4:
-/* 8010A8D4 001076D4  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010A8D4 001076D4  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010A8D8 001076D8  7F 23 CB 78 */	mr r3, r25
 /* 8010A8DC 001076DC  7F A4 EB 78 */	mr r4, r29
 /* 8010A8E0 001076E0  48 00 0E 41 */	bl set_facing__17zNPCBossOmnidroidFif
@@ -6022,7 +6022,7 @@ setup_simple_shadow__17zNPCBossOmnidroidFv:
 render_simple_shadow__17zNPCBossOmnidroidFv:
 /* 8010A9DC 001077DC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010A9E0 001077E0  7C 08 02 A6 */	mflr r0
-/* 8010A9E4 001077E4  38 8D BA 80 */	addi r4, r13, g_I3-_SDA_BASE_
+/* 8010A9E4 001077E4  38 8D BA 80 */	addi r4, r13, g_I3@sda21
 /* 8010A9E8 001077E8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010A9EC 001077EC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8010A9F0 001077F0  7C 7F 1B 78 */	mr r31, r3
@@ -6032,14 +6032,14 @@ render_simple_shadow__17zNPCBossOmnidroidFv:
 /* 8010AA00 00107800  38 9F 00 8C */	addi r4, r31, 0x8c
 /* 8010AA04 00107804  4B F0 06 A5 */	bl __as__5xVec3FRC5xVec3
 /* 8010AA08 00107808  80 1F 03 4C */	lwz r0, 0x34c(r31)
-/* 8010AA0C 0010780C  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 8010AA10 00107810  C0 22 AC B0 */	lfs f1, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 8010AA0C 0010780C  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 8010AA10 00107810  C0 22 AC B0 */	lfs f1, _esc__2_2016_0@sda21(r2)
 /* 8010AA14 00107814  38 7F 0B B0 */	addi r3, r31, 0xbb0
 /* 8010AA18 00107818  54 00 10 3A */	slwi r0, r0, 2
-/* 8010AA1C 0010781C  C0 42 AC DC */	lfs f2, _esc__2_2532-_SDA2_BASE_(r2)
+/* 8010AA1C 0010781C  C0 42 AC DC */	lfs f2, _esc__2_2532@sda21(r2)
 /* 8010AA20 00107820  7C 04 04 2E */	lfsx f0, r4, r0
 /* 8010AA24 00107824  38 9F 0C 60 */	addi r4, r31, 0xc60
-/* 8010AA28 00107828  C0 62 A8 B4 */	lfs f3, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010AA28 00107828  C0 62 A8 B4 */	lfs f3, _esc__2_1223@sda21(r2)
 /* 8010AA2C 0010782C  38 A0 00 BE */	li r5, 0xbe
 /* 8010AA30 00107830  EC 21 00 32 */	fmuls f1, f1, f0
 /* 8010AA34 00107834  4B F5 9B 85 */	bl xShadowSimple_Add_Expert__FP18xShadowSimpleCachePC7xMat4x3Ucfff
@@ -6118,7 +6118,7 @@ sphere_hits_player__17zNPCBossOmnidroidFRC7xSphere:
 /* 8010AB24 00107924  BF A1 00 24 */	stmw r29, 0x24(r1)
 /* 8010AB28 00107928  7C 9D 23 78 */	mr r29, r4
 /* 8010AB2C 0010792C  38 81 00 08 */	addi r4, r1, 8
-/* 8010AB30 00107930  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010AB30 00107930  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010AB34 00107934  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8010AB38 00107938  48 04 37 99 */	bl GetCollisionSpheres__7zPlayerFPPC7xSphere
 /* 8010AB3C 0010793C  3B E1 00 08 */	addi r31, r1, 8
@@ -6165,7 +6165,7 @@ bound_hits_player__17zNPCBossOmnidroidFRC6xBound:
 /* 8010ABB8 001079B8  BF A1 00 24 */	stmw r29, 0x24(r1)
 /* 8010ABBC 001079BC  7C 9D 23 78 */	mr r29, r4
 /* 8010ABC0 001079C0  38 81 00 08 */	addi r4, r1, 8
-/* 8010ABC4 001079C4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010ABC4 001079C4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010ABC8 001079C8  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8010ABCC 001079CC  48 04 37 05 */	bl GetCollisionSpheres__7zPlayerFPPC7xSphere
 /* 8010ABD0 001079D0  3B E1 00 08 */	addi r31, r1, 8
@@ -6212,7 +6212,7 @@ ray_hits_player__17zNPCBossOmnidroidFRC5xRay3:
 /* 8010AC4C 00107A4C  BF A1 00 24 */	stmw r29, 0x24(r1)
 /* 8010AC50 00107A50  7C 9D 23 78 */	mr r29, r4
 /* 8010AC54 00107A54  38 81 00 08 */	addi r4, r1, 8
-/* 8010AC58 00107A58  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010AC58 00107A58  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010AC5C 00107A5C  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8010AC60 00107A60  48 04 36 71 */	bl GetCollisionSpheres__7zPlayerFPPC7xSphere
 /* 8010AC64 00107A64  3B E1 00 08 */	addi r31, r1, 8
@@ -6281,11 +6281,11 @@ hurt_player__17zNPCBossOmnidroidFifff10zHitSourceff:
 /* 8010AD38 00107B38  FF C0 20 90 */	fmr f30, f4
 /* 8010AD3C 00107B3C  FF E0 28 90 */	fmr f31, f5
 /* 8010AD40 00107B40  4B F3 7C C5 */	bl __ct__17zCombatDamageInfoFv
-/* 8010AD44 00107B44  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010AD44 00107B44  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010AD48 00107B48  38 60 00 01 */	li r3, 1
 /* 8010AD4C 00107B4C  38 00 00 00 */	li r0, 0
 /* 8010AD50 00107B50  90 61 00 08 */	stw r3, 8(r1)
-/* 8010AD54 00107B54  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010AD54 00107B54  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010AD58 00107B58  90 81 00 0C */	stw r4, 0xc(r1)
 /* 8010AD5C 00107B5C  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 8010AD60 00107B60  93 E1 00 14 */	stw r31, 0x14(r1)
@@ -6297,12 +6297,12 @@ hurt_player__17zNPCBossOmnidroidFifff10zHitSourceff:
 /* 8010AD78 00107B78  38 84 00 30 */	addi r4, r4, 0x30
 /* 8010AD7C 00107B7C  4B F0 03 2D */	bl __as__5xVec3FRC5xVec3
 /* 8010AD80 00107B80  EC 3D 07 72 */	fmuls f1, f29, f29
-/* 8010AD84 00107B84  C0 02 AC D0 */	lfs f0, _esc__2_2353_0-_SDA2_BASE_(r2)
+/* 8010AD84 00107B84  C0 02 AC D0 */	lfs f0, _esc__2_2353_0@sda21(r2)
 /* 8010AD88 00107B88  EC 3C 0F 3A */	fmadds f1, f28, f28, f1
 /* 8010AD8C 00107B8C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010AD90 00107B90  40 80 00 10 */	bge lbl_8010ADA0
 /* 8010AD94 00107B94  FF 80 D8 90 */	fmr f28, f27
-/* 8010AD98 00107B98  C3 A2 A8 B0 */	lfs f29, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010AD98 00107B98  C3 A2 A8 B0 */	lfs f29, _esc__2_1222@sda21(r2)
 /* 8010AD9C 00107B9C  48 00 00 14 */	b lbl_8010ADB0
 lbl_8010ADA0:
 /* 8010ADA0 00107BA0  4B F0 47 E1 */	bl xinvsqrt__Ff
@@ -6310,21 +6310,21 @@ lbl_8010ADA0:
 /* 8010ADA8 00107BA8  EF 80 07 32 */	fmuls f28, f0, f28
 /* 8010ADAC 00107BAC  EF A0 07 72 */	fmuls f29, f0, f29
 lbl_8010ADB0:
-/* 8010ADB0 00107BB0  C0 22 AC E0 */	lfs f1, _esc__2_2609-_SDA2_BASE_(r2)
+/* 8010ADB0 00107BB0  C0 22 AC E0 */	lfs f1, _esc__2_2609@sda21(r2)
 /* 8010ADB4 00107BB4  4B F6 BA 35 */	bl isin__Ff
-/* 8010ADB8 00107BB8  C0 22 AC E0 */	lfs f1, _esc__2_2609-_SDA2_BASE_(r2)
+/* 8010ADB8 00107BB8  C0 22 AC E0 */	lfs f1, _esc__2_2609@sda21(r2)
 /* 8010ADBC 00107BBC  4B F6 BA 71 */	bl icos__Ff
 /* 8010ADC0 00107BC0  EC 3C 07 F2 */	fmuls f1, f28, f31
 /* 8010ADC4 00107BC4  38 61 00 1C */	addi r3, r1, 0x1c
 /* 8010ADC8 00107BC8  EC 5B 07 B2 */	fmuls f2, f27, f30
 /* 8010ADCC 00107BCC  EC 7D 07 F2 */	fmuls f3, f29, f31
 /* 8010ADD0 00107BD0  4B F0 2A 09 */	bl assign__5xVec3Ffff
-/* 8010ADD4 00107BD4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010ADD4 00107BD4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010ADD8 00107BD8  38 00 00 00 */	li r0, 0
 /* 8010ADDC 00107BDC  38 81 00 08 */	addi r4, r1, 8
 /* 8010ADE0 00107BE0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8010ADE4 00107BE4  90 03 07 EC */	stw r0, 0x7ec(r3)
-/* 8010ADE8 00107BE8  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010ADE8 00107BE8  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010ADEC 00107BEC  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8010ADF0 00107BF0  81 83 00 DC */	lwz r12, 0xdc(r3)
 /* 8010ADF4 00107BF4  81 8C 00 48 */	lwz r12, 0x48(r12)
@@ -6361,7 +6361,7 @@ hurt_player__17zNPCBossOmnidroidFifff10zHitSource:
 /* 8010AE64 00107C64  F3 81 00 28 */	psq_st f28, 40(r1), 0, qr0
 /* 8010AE68 00107C68  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 8010AE6C 00107C6C  FF 80 08 90 */	fmr f28, f1
-/* 8010AE70 00107C70  C0 22 AC E0 */	lfs f1, _esc__2_2609-_SDA2_BASE_(r2)
+/* 8010AE70 00107C70  C0 22 AC E0 */	lfs f1, _esc__2_2609@sda21(r2)
 /* 8010AE74 00107C74  FF A0 10 90 */	fmr f29, f2
 /* 8010AE78 00107C78  7C 7D 1B 78 */	mr r29, r3
 /* 8010AE7C 00107C7C  FF C0 18 90 */	fmr f30, f3
@@ -6369,7 +6369,7 @@ hurt_player__17zNPCBossOmnidroidFifff10zHitSource:
 /* 8010AE84 00107C84  7C BF 2B 78 */	mr r31, r5
 /* 8010AE88 00107C88  4B F6 B9 61 */	bl isin__Ff
 /* 8010AE8C 00107C8C  FC 00 08 90 */	fmr f0, f1
-/* 8010AE90 00107C90  C0 22 AC E0 */	lfs f1, _esc__2_2609-_SDA2_BASE_(r2)
+/* 8010AE90 00107C90  C0 22 AC E0 */	lfs f1, _esc__2_2609@sda21(r2)
 /* 8010AE94 00107C94  FF E0 00 90 */	fmr f31, f0
 /* 8010AE98 00107C98  4B F6 B9 95 */	bl icos__Ff
 /* 8010AE9C 00107C9C  FC 00 08 90 */	fmr f0, f1
@@ -6404,7 +6404,7 @@ hurt_player__17zNPCBossOmnidroidFifRC5xVec310zHitSource:
 /* 8010AF04 00107D04  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 8010AF08 00107D08  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
 /* 8010AF0C 00107D0C  BF 81 00 10 */	stmw r28, 0x10(r1)
-/* 8010AF10 00107D10  80 ED 91 D0 */	lwz r7, xglobals-_SDA_BASE_(r13)
+/* 8010AF10 00107D10  80 ED 91 D0 */	lwz r7, xglobals@sda21(r13)
 /* 8010AF14 00107D14  7C 7C 1B 78 */	mr r28, r3
 /* 8010AF18 00107D18  FF E0 08 90 */	fmr f31, f1
 /* 8010AF1C 00107D1C  7C 9D 23 78 */	mr r29, r4
@@ -6448,7 +6448,7 @@ damage_scene__17zNPCBossOmnidroidFRC7xSpherei10zHitSource:
 /* 8010AFA8 00107DA8  4B FF C4 6D */	bl gather_sphere_hits__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FPP4xEntiRC7xSphere
 /* 8010AFAC 00107DAC  3B A1 00 08 */	addi r29, r1, 8
 /* 8010AFB0 00107DB0  54 60 10 3A */	slwi r0, r3, 2
-/* 8010AFB4 00107DB4  CB E2 AC 90 */	lfd f31, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8010AFB4 00107DB4  CB E2 AC 90 */	lfd f31, _esc__2_1488@sda21(r2)
 /* 8010AFB8 00107DB8  7F 9D 02 14 */	add r28, r29, r0
 /* 8010AFBC 00107DBC  6F DE 80 00 */	xoris r30, r30, 0x8000
 /* 8010AFC0 00107DC0  3F E0 43 30 */	lis r31, 0x4330
@@ -6491,7 +6491,7 @@ damage_scene__17zNPCBossOmnidroidFRC5xRay3i10zHitSource:
 /* 8010B040 00107E40  4B FF C4 89 */	bl gather_ray_hits__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FPP4xEntiRC5xRay3
 /* 8010B044 00107E44  3B A1 00 08 */	addi r29, r1, 8
 /* 8010B048 00107E48  54 60 10 3A */	slwi r0, r3, 2
-/* 8010B04C 00107E4C  CB E2 AC 90 */	lfd f31, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8010B04C 00107E4C  CB E2 AC 90 */	lfd f31, _esc__2_1488@sda21(r2)
 /* 8010B050 00107E50  7F 9D 02 14 */	add r28, r29, r0
 /* 8010B054 00107E54  6F DE 80 00 */	xoris r30, r30, 0x8000
 /* 8010B058 00107E58  3F E0 43 30 */	lis r31, 0x4330
@@ -6534,7 +6534,7 @@ damage_scene__17zNPCBossOmnidroidFRC6xBoundi10zHitSource:
 /* 8010B0D8 00107ED8  4B FF C4 CD */	bl gather_bound_hits__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FPP4xEntiRC6xBound
 /* 8010B0DC 00107EDC  3B A1 00 08 */	addi r29, r1, 8
 /* 8010B0E0 00107EE0  54 60 10 3A */	slwi r0, r3, 2
-/* 8010B0E4 00107EE4  CB E2 AC 90 */	lfd f31, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8010B0E4 00107EE4  CB E2 AC 90 */	lfd f31, _esc__2_1488@sda21(r2)
 /* 8010B0E8 00107EE8  7F 9D 02 14 */	add r28, r29, r0
 /* 8010B0EC 00107EEC  6F DE 80 00 */	xoris r30, r30, 0x8000
 /* 8010B0F0 00107EF0  3F E0 43 30 */	lis r31, 0x4330
@@ -6610,7 +6610,7 @@ damage_all__17zNPCBossOmnidroidFRC7xSphereifRC5xVec310zHitSource:
 /* 8010B1E4 00107FE4  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 8010B1E8 00107FE8  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
 /* 8010B1EC 00107FEC  BF 61 00 0C */	stmw r27, 0xc(r1)
-/* 8010B1F0 00107FF0  81 0D 91 D0 */	lwz r8, xglobals-_SDA_BASE_(r13)
+/* 8010B1F0 00107FF0  81 0D 91 D0 */	lwz r8, xglobals@sda21(r13)
 /* 8010B1F4 00107FF4  7C 7B 1B 78 */	mr r27, r3
 /* 8010B1F8 00107FF8  FF E0 08 90 */	fmr f31, f1
 /* 8010B1FC 00107FFC  7C 9C 23 78 */	mr r28, r4
@@ -6724,8 +6724,8 @@ colltemp_off__17zNPCBossOmnidroidFv:
 /* 8010B360 00108160  7C 76 1B 78 */	mr r22, r3
 /* 8010B364 00108164  7E C4 B3 78 */	mr r4, r22
 /* 8010B368 00108168  38 76 0E 08 */	addi r3, r22, 0xe08
-/* 8010B36C 0010816C  A0 A2 F0 70 */	lhz r5, _esc__2_2719-_SDA2_BASE_(r2)
-/* 8010B370 00108170  88 02 F0 72 */	lbz r0, lbl_803D8D92-_SDA2_BASE_(r2)
+/* 8010B36C 0010816C  A0 A2 F0 70 */	lhz r5, _esc__2_2719@sda21(r2)
+/* 8010B370 00108170  88 02 F0 72 */	lbz r0, lbl_803D8D92@sda21(r2)
 /* 8010B374 00108174  B0 A1 00 08 */	sth r5, 8(r1)
 /* 8010B378 00108178  98 01 00 0A */	stb r0, 0xa(r1)
 /* 8010B37C 0010817C  4B FF FF 9D */	bl get_collision_flags__17zNPCBossOmnidroidFRQ217zNPCBossOmnidroid15collision_flagsRC4xEnt
@@ -6852,14 +6852,14 @@ player_in_cylinder__17zNPCBossOmnidroidFfff:
 /* 8010B530 00108330  DB A1 00 20 */	stfd f29, 0x20(r1)
 /* 8010B534 00108334  F3 A1 00 28 */	psq_st f29, 40(r1), 0, qr0
 /* 8010B538 00108338  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 8010B53C 0010833C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010B53C 0010833C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010B540 00108340  FF A0 08 90 */	fmr f29, f1
 /* 8010B544 00108344  FF C0 10 90 */	fmr f30, f2
 /* 8010B548 00108348  7C 7F 1B 78 */	mr r31, r3
 /* 8010B54C 0010834C  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 8010B550 00108350  40 81 00 24 */	ble lbl_8010B574
 /* 8010B554 00108354  FC 20 18 90 */	fmr f1, f3
-/* 8010B558 00108358  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010B558 00108358  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8010B55C 0010835C  38 61 00 08 */	addi r3, r1, 8
 /* 8010B560 00108360  38 80 00 01 */	li r4, 1
 /* 8010B564 00108364  48 00 00 9D */	bl player_predict__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3ffb
@@ -6867,10 +6867,10 @@ player_in_cylinder__17zNPCBossOmnidroidFfff:
 /* 8010B56C 0010836C  C0 61 00 10 */	lfs f3, 0x10(r1)
 /* 8010B570 00108370  48 00 00 24 */	b lbl_8010B594
 lbl_8010B574:
-/* 8010B574 00108374  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010B574 00108374  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010B578 00108378  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8010B57C 0010837C  4B F7 C0 9D */	bl xEntGetFrame__FPC4xEnt
-/* 8010B580 00108380  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8010B580 00108380  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 8010B584 00108384  C3 E3 00 30 */	lfs f31, 0x30(r3)
 /* 8010B588 00108388  80 64 04 C4 */	lwz r3, 0x4c4(r4)
 /* 8010B58C 0010838C  4B F7 C0 8D */	bl xEntGetFrame__FPC4xEnt
@@ -6913,7 +6913,7 @@ player_predict__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3ff
 /* 8010B60C 0010840C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010B610 00108410  7C 60 1B 78 */	mr r0, r3
 /* 8010B614 00108414  7C 04 03 78 */	mr r4, r0
-/* 8010B618 00108418  80 CD 91 D0 */	lwz r6, xglobals-_SDA_BASE_(r13)
+/* 8010B618 00108418  80 CD 91 D0 */	lwz r6, xglobals@sda21(r13)
 /* 8010B61C 0010841C  80 66 04 C4 */	lwz r3, 0x4c4(r6)
 /* 8010B620 00108420  48 04 1C 19 */	bl Predict__7zPlayerFP5xVec3ffb
 /* 8010B624 00108424  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -6924,7 +6924,7 @@ player_predict__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3ff
 .global reset_facing__17zNPCBossOmnidroidFv
 reset_facing__17zNPCBossOmnidroidFv:
 /* 8010B634 00108434  38 00 00 00 */	li r0, 0
-/* 8010B638 00108438  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010B638 00108438  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8010B63C 0010843C  90 03 0D D4 */	stw r0, 0xdd4(r3)
 /* 8010B640 00108440  90 03 0D D0 */	stw r0, 0xdd0(r3)
 /* 8010B644 00108444  90 03 0D CC */	stw r0, 0xdcc(r3)
@@ -6934,17 +6934,17 @@ reset_facing__17zNPCBossOmnidroidFv:
 .global update_facing__17zNPCBossOmnidroidFf
 update_facing__17zNPCBossOmnidroidFf:
 /* 8010B650 00108450  C0 83 0D DC */	lfs f4, 0xddc(r3)
-/* 8010B654 00108454  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010B654 00108454  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010B658 00108458  FC 04 00 40 */	fcmpo cr0, f4, f0
 /* 8010B65C 0010845C  4C 40 13 82 */	cror 2, 0, 2
 /* 8010B660 00108460  40 82 00 18 */	bne lbl_8010B678
 /* 8010B664 00108464  80 03 0D D4 */	lwz r0, 0xdd4(r3)
-/* 8010B668 00108468  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010B668 00108468  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8010B66C 0010846C  90 03 0D D0 */	stw r0, 0xdd0(r3)
 /* 8010B670 00108470  D0 03 0D D8 */	stfs f0, 0xdd8(r3)
 /* 8010B674 00108474  4E 80 00 20 */	blr 
 lbl_8010B678:
-/* 8010B678 00108478  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010B678 00108478  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8010B67C 0010847C  C0 63 0D D8 */	lfs f3, 0xdd8(r3)
 /* 8010B680 00108480  EC 02 20 24 */	fdivs f0, f2, f4
 /* 8010B684 00108484  EC 00 00 72 */	fmuls f0, f0, f1
@@ -6966,7 +6966,7 @@ lbl_8010B678:
 /* 8010B6C4 001084C4  D0 03 0D D8 */	stfs f0, 0xdd8(r3)
 lbl_8010B6C8:
 /* 8010B6C8 001084C8  C0 23 0D D8 */	lfs f1, 0xdd8(r3)
-/* 8010B6CC 001084CC  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010B6CC 001084CC  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8010B6D0 001084D0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010B6D4 001084D4  4C 81 00 20 */	blelr 
 /* 8010B6D8 001084D8  D0 03 0D D8 */	stfs f0, 0xdd8(r3)
@@ -6976,10 +6976,10 @@ lbl_8010B6C8:
 get_facing_blend_time__17zNPCBossOmnidroidCFv:
 /* 8010B6E0 001084E0  80 03 0D CC */	lwz r0, 0xdcc(r3)
 /* 8010B6E4 001084E4  80 83 0D D0 */	lwz r4, 0xdd0(r3)
-/* 8010B6E8 001084E8  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010B6E8 001084E8  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010B6EC 001084EC  7C 00 20 00 */	cmpw r0, r4
 /* 8010B6F0 001084F0  41 82 00 18 */	beq lbl_8010B708
-/* 8010B6F4 001084F4  C0 62 A8 B4 */	lfs f3, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010B6F4 001084F4  C0 62 A8 B4 */	lfs f3, _esc__2_1223@sda21(r2)
 /* 8010B6F8 001084F8  C0 43 0D D8 */	lfs f2, 0xdd8(r3)
 /* 8010B6FC 001084FC  C0 03 0D DC */	lfs f0, 0xddc(r3)
 /* 8010B700 00108500  EC 43 10 28 */	fsubs f2, f3, f2
@@ -6994,10 +6994,10 @@ lbl_8010B708:
 
 .global set_facing__17zNPCBossOmnidroidFif
 set_facing__17zNPCBossOmnidroidFif:
-/* 8010B720 00108520  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010B720 00108520  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010B724 00108524  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010B728 00108528  40 80 00 08 */	bge lbl_8010B730
-/* 8010B72C 0010852C  C0 22 AC E4 */	lfs f1, _esc__2_2824-_SDA2_BASE_(r2)
+/* 8010B72C 0010852C  C0 22 AC E4 */	lfs f1, _esc__2_2824@sda21(r2)
 lbl_8010B730:
 /* 8010B730 00108530  38 A0 00 05 */	li r5, 5
 /* 8010B734 00108534  7C 04 2B D6 */	divw r0, r4, r5
@@ -7006,12 +7006,12 @@ lbl_8010B730:
 /* 8010B740 00108540  40 80 00 08 */	bge lbl_8010B748
 /* 8010B744 00108544  38 A5 00 05 */	addi r5, r5, 5
 lbl_8010B748:
-/* 8010B748 00108548  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010B748 00108548  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010B74C 0010854C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010B750 00108550  4C 40 13 82 */	cror 2, 0, 2
 /* 8010B754 00108554  40 82 00 24 */	bne lbl_8010B778
 /* 8010B758 00108558  80 03 0D D0 */	lwz r0, 0xdd0(r3)
-/* 8010B75C 0010855C  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010B75C 0010855C  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8010B760 00108560  90 03 0D CC */	stw r0, 0xdcc(r3)
 /* 8010B764 00108564  90 A3 0D D0 */	stw r5, 0xdd0(r3)
 /* 8010B768 00108568  80 03 0D D0 */	lwz r0, 0xdd0(r3)
@@ -7029,13 +7029,13 @@ lbl_8010B78C:
 /* 8010B790 00108590  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 8010B794 00108594  4C 40 13 82 */	cror 2, 0, 2
 /* 8010B798 00108598  41 82 00 14 */	beq lbl_8010B7AC
-/* 8010B79C 0010859C  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010B79C 0010859C  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8010B7A0 001085A0  FC 03 10 40 */	fcmpo cr0, f3, f2
 /* 8010B7A4 001085A4  4C 41 13 82 */	cror 2, 1, 2
 /* 8010B7A8 001085A8  40 82 00 20 */	bne lbl_8010B7C8
 lbl_8010B7AC:
 /* 8010B7AC 001085AC  90 83 0D CC */	stw r4, 0xdcc(r3)
-/* 8010B7B0 001085B0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010B7B0 001085B0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010B7B4 001085B4  90 A3 0D D0 */	stw r5, 0xdd0(r3)
 /* 8010B7B8 001085B8  80 03 0D D0 */	lwz r0, 0xdd0(r3)
 /* 8010B7BC 001085BC  90 03 0D D4 */	stw r0, 0xdd4(r3)
@@ -7079,7 +7079,7 @@ update_auto_facing__17zNPCBossOmnidroidFf:
 /* 8010B830 00108630  88 03 01 F2 */	lbz r0, 0x1f2(r3)
 /* 8010B834 00108634  28 00 00 00 */	cmplwi r0, 0
 /* 8010B838 00108638  41 82 00 BC */	beq lbl_8010B8F4
-/* 8010B83C 0010863C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010B83C 0010863C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010B840 00108640  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8010B844 00108644  4B F7 BD D5 */	bl xEntGetFrame__FPC4xEnt
 /* 8010B848 00108648  38 83 00 30 */	addi r4, r3, 0x30
@@ -7094,18 +7094,18 @@ update_auto_facing__17zNPCBossOmnidroidFf:
 /* 8010B86C 0010866C  90 01 00 08 */	stw r0, 8(r1)
 /* 8010B870 00108670  FF E0 08 90 */	fmr f31, f1
 /* 8010B874 00108674  6C 60 80 00 */	xoris r0, r3, 0x8000
-/* 8010B878 00108678  C8 22 AC 90 */	lfd f1, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8010B878 00108678  C8 22 AC 90 */	lfd f1, _esc__2_1488@sda21(r2)
 /* 8010B87C 0010867C  90 01 00 0C */	stw r0, 0xc(r1)
-/* 8010B880 00108680  C0 42 AC D8 */	lfs f2, _esc__2_2481-_SDA2_BASE_(r2)
+/* 8010B880 00108680  C0 42 AC D8 */	lfs f2, _esc__2_2481@sda21(r2)
 /* 8010B884 00108684  C8 01 00 08 */	lfd f0, 8(r1)
-/* 8010B888 00108688  C0 62 AC E8 */	lfs f3, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8010B888 00108688  C0 62 AC E8 */	lfs f3, _esc__2_2843@sda21(r2)
 /* 8010B88C 0010868C  EC 00 08 28 */	fsubs f0, f0, f1
 /* 8010B890 00108690  EC 02 F8 3A */	fmadds f0, f2, f0, f31
 /* 8010B894 00108694  EC 1E 00 28 */	fsubs f0, f30, f0
 /* 8010B898 00108698  EC 23 00 2A */	fadds f1, f3, f0
 /* 8010B89C 0010869C  4B F0 44 F9 */	bl xrmod__Ff
-/* 8010B8A0 001086A0  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
-/* 8010B8A4 001086A4  C0 02 AC EC */	lfs f0, _esc__2_2844-_SDA2_BASE_(r2)
+/* 8010B8A0 001086A0  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
+/* 8010B8A4 001086A4  C0 02 AC EC */	lfs f0, _esc__2_2844@sda21(r2)
 /* 8010B8A8 001086A8  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8010B8AC 001086AC  FC 20 0A 10 */	fabs f1, f1
 /* 8010B8B0 001086B0  FC 20 08 18 */	frsp f1, f1
@@ -7113,8 +7113,8 @@ update_auto_facing__17zNPCBossOmnidroidFf:
 /* 8010B8B8 001086B8  40 81 00 3C */	ble lbl_8010B8F4
 /* 8010B8BC 001086BC  EC 3E F8 28 */	fsubs f1, f30, f31
 /* 8010B8C0 001086C0  4B F0 44 D5 */	bl xrmod__Ff
-/* 8010B8C4 001086C4  C0 42 AC F0 */	lfs f2, _esc__2_2845-_SDA2_BASE_(r2)
-/* 8010B8C8 001086C8  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010B8C4 001086C4  C0 42 AC F0 */	lfs f2, _esc__2_2845@sda21(r2)
+/* 8010B8C8 001086C8  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 8010B8CC 001086CC  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 8010B8D0 001086D0  FC 00 00 1E */	fctiwz f0, f0
 /* 8010B8D4 001086D4  D8 01 00 08 */	stfd f0, 8(r1)
@@ -7123,7 +7123,7 @@ update_auto_facing__17zNPCBossOmnidroidFf:
 /* 8010B8E0 001086E0  40 80 00 08 */	bge lbl_8010B8E8
 /* 8010B8E4 001086E4  38 84 00 05 */	addi r4, r4, 5
 lbl_8010B8E8:
-/* 8010B8E8 001086E8  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8010B8E8 001086E8  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8010B8EC 001086EC  7F E3 FB 78 */	mr r3, r31
 /* 8010B8F0 001086F0  4B FF FE 31 */	bl set_facing__17zNPCBossOmnidroidFif
 lbl_8010B8F4:
@@ -7157,9 +7157,9 @@ get_nearest_facing__17zNPCBossOmnidroidCFRC5xVec3f:
 /* 8010B954 00108754  EC 1E 08 2A */	fadds f0, f30, f1
 /* 8010B958 00108758  EC 3F 00 28 */	fsubs f1, f31, f0
 /* 8010B95C 0010875C  4B F0 44 39 */	bl xrmod__Ff
-/* 8010B960 00108760  C0 42 AC F0 */	lfs f2, _esc__2_2845-_SDA2_BASE_(r2)
+/* 8010B960 00108760  C0 42 AC F0 */	lfs f2, _esc__2_2845@sda21(r2)
 /* 8010B964 00108764  38 80 00 05 */	li r4, 5
-/* 8010B968 00108768  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010B968 00108768  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 8010B96C 0010876C  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 8010B970 00108770  FC 00 00 1E */	fctiwz f0, f0
 /* 8010B974 00108774  D8 01 00 08 */	stfd f0, 8(r1)
@@ -7273,7 +7273,7 @@ lbl_8010BAD4:
 /* 8010BAEC 001088EC  81 8C 00 14 */	lwz r12, 0x14(r12)
 /* 8010BAF0 001088F0  7D 89 03 A6 */	mtctr r12
 /* 8010BAF4 001088F4  4E 80 04 21 */	bctrl 
-/* 8010BAF8 001088F8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010BAF8 001088F8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010BAFC 001088FC  D0 1D 03 50 */	stfs f0, 0x350(r29)
 /* 8010BB00 00108900  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 8010BB04 00108904  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -7504,7 +7504,7 @@ lbl_8010BDE4:
 /* 8010BDEC 00108BEC  80 7D 00 28 */	lwz r3, 0x28(r29)
 /* 8010BDF0 00108BF0  3C 80 80 11 */	lis r4, process_leg_bones_callback__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i@ha
 /* 8010BDF4 00108BF4  38 04 99 90 */	addi r0, r4, process_leg_bones_callback__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i@l
-/* 8010BDF8 00108BF8  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010BDF8 00108BF8  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010BDFC 00108BFC  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 8010BE00 00108C00  90 03 00 1C */	stw r0, 0x1c(r3)
 /* 8010BE04 00108C04  80 7D 00 28 */	lwz r3, 0x28(r29)
@@ -7513,7 +7513,7 @@ lbl_8010BDE4:
 /* 8010BE10 00108C10  80 63 00 08 */	lwz r3, 8(r3)
 /* 8010BE14 00108C14  4B EF DA DD */	bl xAnimPlaySetState__FP11xAnimSingleP10xAnimStatef
 /* 8010BE18 00108C18  80 7D 00 28 */	lwz r3, 0x28(r29)
-/* 8010BE1C 00108C1C  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010BE1C 00108C1C  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010BE20 00108C20  4B F3 E8 ED */	bl xModelUpdate__FP14xModelInstancef
 /* 8010BE24 00108C24  80 7D 00 28 */	lwz r3, 0x28(r29)
 /* 8010BE28 00108C28  4B F3 EB 85 */	bl xModelEval__FP14xModelInstance
@@ -7541,7 +7541,7 @@ process_leg_bones__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i:
 /* 8010BE74 00108C74  3B E0 00 00 */	li r31, 0
 /* 8010BE78 00108C78  3B C0 00 00 */	li r30, 0
 lbl_8010BE7C:
-/* 8010BE7C 00108C7C  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 8010BE7C 00108C7C  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 8010BE80 00108C80  7F 98 FA 14 */	add r28, r24, r31
 /* 8010BE84 00108C84  7C 83 F0 2E */	lwzx r4, r3, r30
 /* 8010BE88 00108C88  38 7C 2B A0 */	addi r3, r28, 0x2ba0
@@ -7550,10 +7550,10 @@ lbl_8010BE7C:
 /* 8010BE94 00108C94  7C 99 02 14 */	add r4, r25, r0
 /* 8010BE98 00108C98  4B F2 2D A9 */	bl __as__5xQuatFRC5xQuat
 /* 8010BE9C 00108C9C  1C 1D 00 0C */	mulli r0, r29, 0xc
-/* 8010BEA0 00108CA0  80 E2 F0 74 */	lwz r7, _esc__2_2949-_SDA2_BASE_(r2)
-/* 8010BEA4 00108CA4  80 C2 F0 78 */	lwz r6, lbl_803D8D98-_SDA2_BASE_(r2)
+/* 8010BEA0 00108CA0  80 E2 F0 74 */	lwz r7, _esc__2_2949@sda21(r2)
+/* 8010BEA4 00108CA4  80 C2 F0 78 */	lwz r6, lbl_803D8D98@sda21(r2)
 /* 8010BEA8 00108CA8  38 7C 2B 60 */	addi r3, r28, 0x2b60
-/* 8010BEAC 00108CAC  80 A2 F0 7C */	lwz r5, lbl_803D8D9C-_SDA2_BASE_(r2)
+/* 8010BEAC 00108CAC  80 A2 F0 7C */	lwz r5, lbl_803D8D9C@sda21(r2)
 /* 8010BEB0 00108CB0  38 81 00 08 */	addi r4, r1, 8
 /* 8010BEB4 00108CB4  90 E1 00 08 */	stw r7, 8(r1)
 /* 8010BEB8 00108CB8  7F BA 02 14 */	add r29, r26, r0
@@ -7630,7 +7630,7 @@ lbl_8010BF8C:
 
 .global reset_bolts__17zNPCBossOmnidroidFv
 reset_bolts__17zNPCBossOmnidroidFv:
-/* 8010BFAC 00108DAC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010BFAC 00108DAC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010BFB0 00108DB0  D0 03 11 04 */	stfs f0, 0x1104(r3)
 /* 8010BFB4 00108DB4  4E 80 00 20 */	blr 
 
@@ -7700,9 +7700,9 @@ allow_rubble_pickup_spawn__17zNPCBossOmnidroidFRC5xVec3:
 /* 8010C084 00108E84  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010C088 00108E88  7C 08 02 A6 */	mflr r0
 /* 8010C08C 00108E8C  7C 64 1B 78 */	mr r4, r3
-/* 8010C090 00108E90  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010C090 00108E90  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010C094 00108E94  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8010C098 00108E98  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010C098 00108E98  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010C09C 00108E9C  48 00 00 15 */	bl within_arena__17zNPCBossOmnidroidCFRC5xVec3f
 /* 8010C0A0 00108EA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8010C0A4 00108EA4  7C 08 03 A6 */	mtlr r0
@@ -7735,47 +7735,47 @@ set_rubble_config__17zNPCBossOmnidroidFRQ21z20rubble_system_config:
 /* 8010C0F8 00108EF8  3C C0 D7 9F */	lis r6, 0xD79ED388@ha
 /* 8010C0FC 00108EFC  90 04 00 00 */	stw r0, 0(r4)
 /* 8010C100 00108F00  3C A0 80 11 */	lis r5, allow_rubble_pickup_spawn__17zNPCBossOmnidroidFRC5xVec3@ha
-/* 8010C104 00108F04  39 02 AA 50 */	addi r8, r2, scale__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubble_bomb-_SDA2_BASE_
+/* 8010C104 00108F04  39 02 AA 50 */	addi r8, r2, scale__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubble_bomb@sda21
 /* 8010C108 00108F08  39 80 00 04 */	li r12, 4
 /* 8010C10C 00108F0C  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 8010C110 00108F10  39 60 00 06 */	li r11, 6
-/* 8010C114 00108F14  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010C114 00108F14  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 /* 8010C118 00108F18  39 40 00 01 */	li r10, 1
 /* 8010C11C 00108F1C  54 00 10 3A */	slwi r0, r0, 2
-/* 8010C120 00108F20  C0 E2 AD 28 */	lfs f7, _esc__2_3014-_SDA2_BASE_(r2)
+/* 8010C120 00108F20  C0 E2 AD 28 */	lfs f7, _esc__2_3014@sda21(r2)
 /* 8010C124 00108F24  7C 48 04 2E */	lfsx f2, r8, r0
 /* 8010C128 00108F28  39 27 F4 A0 */	addi r9, r7, 0x96DBF4A0@l
-/* 8010C12C 00108F2C  C0 02 AC DC */	lfs f0, _esc__2_2532-_SDA2_BASE_(r2)
+/* 8010C12C 00108F2C  C0 02 AC DC */	lfs f0, _esc__2_2532@sda21(r2)
 /* 8010C130 00108F30  39 06 D3 88 */	addi r8, r6, 0xD79ED388@l
 /* 8010C134 00108F34  D0 44 00 04 */	stfs f2, 4(r4)
-/* 8010C138 00108F38  38 E2 AC F8 */	addi r7, r2, health_pickup_types_esc__7_3007-_SDA2_BASE_
-/* 8010C13C 00108F3C  C0 A2 AD 2C */	lfs f5, _esc__2_3015-_SDA2_BASE_(r2)
-/* 8010C140 00108F40  38 C2 AD 10 */	addi r6, r2, power_pickup_types_esc__7_3008-_SDA2_BASE_
+/* 8010C138 00108F38  38 E2 AC F8 */	addi r7, r2, health_pickup_types_esc__7_3007@sda21
+/* 8010C13C 00108F3C  C0 A2 AD 2C */	lfs f5, _esc__2_3015@sda21(r2)
+/* 8010C140 00108F40  38 C2 AD 10 */	addi r6, r2, power_pickup_types_esc__7_3008@sda21
 /* 8010C144 00108F44  91 84 00 10 */	stw r12, 0x10(r4)
 /* 8010C148 00108F48  38 05 C0 84 */	addi r0, r5, allow_rubble_pickup_spawn__17zNPCBossOmnidroidFRC5xVec3@l
-/* 8010C14C 00108F4C  C0 82 AD 30 */	lfs f4, _esc__2_3016-_SDA2_BASE_(r2)
+/* 8010C14C 00108F4C  C0 82 AD 30 */	lfs f4, _esc__2_3016@sda21(r2)
 /* 8010C150 00108F50  91 64 00 14 */	stw r11, 0x14(r4)
-/* 8010C154 00108F54  C0 62 AD 34 */	lfs f3, _esc__2_3017-_SDA2_BASE_(r2)
+/* 8010C154 00108F54  C0 62 AD 34 */	lfs f3, _esc__2_3017@sda21(r2)
 /* 8010C158 00108F58  D0 24 00 18 */	stfs f1, 0x18(r4)
-/* 8010C15C 00108F5C  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010C15C 00108F5C  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010C160 00108F60  D0 E4 00 1C */	stfs f7, 0x1c(r4)
-/* 8010C164 00108F64  C0 22 AD 38 */	lfs f1, _esc__2_3018-_SDA2_BASE_(r2)
+/* 8010C164 00108F64  C0 22 AD 38 */	lfs f1, _esc__2_3018@sda21(r2)
 /* 8010C168 00108F68  D0 04 00 20 */	stfs f0, 0x20(r4)
-/* 8010C16C 00108F6C  C0 02 AD 3C */	lfs f0, _esc__2_3019-_SDA2_BASE_(r2)
+/* 8010C16C 00108F6C  C0 02 AD 3C */	lfs f0, _esc__2_3019@sda21(r2)
 /* 8010C170 00108F70  D0 A4 00 24 */	stfs f5, 0x24(r4)
-/* 8010C174 00108F74  C0 C2 AD 40 */	lfs f6, _esc__2_3020-_SDA2_BASE_(r2)
+/* 8010C174 00108F74  C0 C2 AD 40 */	lfs f6, _esc__2_3020@sda21(r2)
 /* 8010C178 00108F78  D0 84 00 28 */	stfs f4, 0x28(r4)
-/* 8010C17C 00108F7C  C0 A2 AD 44 */	lfs f5, _esc__2_3021-_SDA2_BASE_(r2)
+/* 8010C17C 00108F7C  C0 A2 AD 44 */	lfs f5, _esc__2_3021@sda21(r2)
 /* 8010C180 00108F80  D0 64 00 2C */	stfs f3, 0x2c(r4)
-/* 8010C184 00108F84  C0 82 AD 48 */	lfs f4, _esc__2_3022-_SDA2_BASE_(r2)
+/* 8010C184 00108F84  C0 82 AD 48 */	lfs f4, _esc__2_3022@sda21(r2)
 /* 8010C188 00108F88  D0 E4 00 30 */	stfs f7, 0x30(r4)
-/* 8010C18C 00108F8C  C0 62 AD 4C */	lfs f3, _esc__2_3023-_SDA2_BASE_(r2)
+/* 8010C18C 00108F8C  C0 62 AD 4C */	lfs f3, _esc__2_3023@sda21(r2)
 /* 8010C190 00108F90  D0 44 00 34 */	stfs f2, 0x34(r4)
-/* 8010C194 00108F94  C0 42 AD 50 */	lfs f2, _esc__2_3024-_SDA2_BASE_(r2)
+/* 8010C194 00108F94  C0 42 AD 50 */	lfs f2, _esc__2_3024@sda21(r2)
 /* 8010C198 00108F98  D0 24 00 38 */	stfs f1, 0x38(r4)
-/* 8010C19C 00108F9C  C0 22 AC E4 */	lfs f1, _esc__2_2824-_SDA2_BASE_(r2)
+/* 8010C19C 00108F9C  C0 22 AC E4 */	lfs f1, _esc__2_2824@sda21(r2)
 /* 8010C1A0 00108FA0  D0 04 00 3C */	stfs f0, 0x3c(r4)
-/* 8010C1A4 00108FA4  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010C1A4 00108FA4  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8010C1A8 00108FA8  99 44 00 48 */	stb r10, 0x48(r4)
 /* 8010C1AC 00108FAC  91 24 00 4C */	stw r9, 0x4c(r4)
 /* 8010C1B0 00108FB0  91 04 00 50 */	stw r8, 0x50(r4)
@@ -7816,7 +7816,7 @@ lbl_8010C224:
 /* 8010C234 00109034  90 04 00 0C */	stw r0, 0xc(r4)
 lbl_8010C238:
 /* 8010C238 00109038  90 64 00 40 */	stw r3, 0x40(r4)
-/* 8010C23C 0010903C  C0 22 AD 54 */	lfs f1, _esc__2_3025-_SDA2_BASE_(r2)
+/* 8010C23C 0010903C  C0 22 AD 54 */	lfs f1, _esc__2_3025@sda21(r2)
 /* 8010C240 00109040  C0 03 0D B8 */	lfs f0, 0xdb8(r3)
 /* 8010C244 00109044  EC 01 00 2A */	fadds f0, f1, f0
 /* 8010C248 00109048  D0 04 00 44 */	stfs f0, 0x44(r4)
@@ -7863,21 +7863,21 @@ setup_bolt_emitter__17zNPCBossOmnidroidFv:
 /* 8010C2D4 001090D4  38 84 C0 EB */	addi r4, r4, 0xF997C0EB@l
 /* 8010C2D8 001090D8  4B F3 51 39 */	bl set_texture__17xLaserBoltEmitterFUi
 /* 8010C2DC 001090DC  38 00 00 01 */	li r0, 1
-/* 8010C2E0 001090E0  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010C2E0 001090E0  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010C2E4 001090E4  90 1F 0E A8 */	stw r0, 0xea8(r31)
-/* 8010C2E8 001090E8  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 8010C2EC 001090EC  C0 62 AC E4 */	lfs f3, _esc__2_2824-_SDA2_BASE_(r2)
+/* 8010C2E8 001090E8  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 8010C2EC 001090EC  C0 62 AC E4 */	lfs f3, _esc__2_2824@sda21(r2)
 /* 8010C2F0 001090F0  FC 40 08 90 */	fmr f2, f1
-/* 8010C2F4 001090F4  C0 02 AD 34 */	lfs f0, _esc__2_3017-_SDA2_BASE_(r2)
+/* 8010C2F4 001090F4  C0 02 AD 34 */	lfs f0, _esc__2_3017@sda21(r2)
 /* 8010C2F8 001090F8  38 7F 0E D0 */	addi r3, r31, 0xed0
 /* 8010C2FC 001090FC  D0 7F 0E AC */	stfs f3, 0xeac(r31)
-/* 8010C300 00109100  C0 62 AD 70 */	lfs f3, _esc__2_3037-_SDA2_BASE_(r2)
+/* 8010C300 00109100  C0 62 AD 70 */	lfs f3, _esc__2_3037@sda21(r2)
 /* 8010C304 00109104  D0 1F 0E B0 */	stfs f0, 0xeb0(r31)
-/* 8010C308 00109108  C0 02 AD 74 */	lfs f0, _esc__2_3038-_SDA2_BASE_(r2)
+/* 8010C308 00109108  C0 02 AD 74 */	lfs f0, _esc__2_3038@sda21(r2)
 /* 8010C30C 0010910C  D0 7F 0E B4 */	stfs f3, 0xeb4(r31)
-/* 8010C310 00109110  C0 62 AD 78 */	lfs f3, _esc__2_3039-_SDA2_BASE_(r2)
+/* 8010C310 00109110  C0 62 AD 78 */	lfs f3, _esc__2_3039@sda21(r2)
 /* 8010C314 00109114  D0 1F 0E B8 */	stfs f0, 0xeb8(r31)
-/* 8010C318 00109118  C0 02 AC 9C */	lfs f0, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 8010C318 00109118  C0 02 AC 9C */	lfs f0, _esc__2_1659_1@sda21(r2)
 /* 8010C31C 0010911C  D0 7F 0E BC */	stfs f3, 0xebc(r31)
 /* 8010C320 00109120  80 1F 03 4C */	lwz r0, 0x34c(r31)
 /* 8010C324 00109124  54 00 10 3A */	slwi r0, r0, 2
@@ -7887,18 +7887,18 @@ setup_bolt_emitter__17zNPCBossOmnidroidFv:
 /* 8010C334 00109134  D0 3F 0E C8 */	stfs f1, 0xec8(r31)
 /* 8010C338 00109138  D0 3F 0E CC */	stfs f1, 0xecc(r31)
 /* 8010C33C 0010913C  4B F0 40 0D */	bl assign__5xVec2Fff
-/* 8010C340 00109140  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010C340 00109140  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010C344 00109144  38 7F 0E D8 */	addi r3, r31, 0xed8
 /* 8010C348 00109148  FC 40 08 90 */	fmr f2, f1
 /* 8010C34C 0010914C  4B F0 3F FD */	bl assign__5xVec2Fff
 /* 8010C350 00109150  38 00 00 01 */	li r0, 1
-/* 8010C354 00109154  C0 02 AD 40 */	lfs f0, _esc__2_3020-_SDA2_BASE_(r2)
+/* 8010C354 00109154  C0 02 AD 40 */	lfs f0, _esc__2_3020@sda21(r2)
 /* 8010C358 00109158  90 1F 0E E0 */	stw r0, 0xee0(r31)
 /* 8010C35C 0010915C  38 00 00 02 */	li r0, 2
-/* 8010C360 00109160  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 8010C360 00109160  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 8010C364 00109164  38 7F 0E A8 */	addi r3, r31, 0xea8
 /* 8010C368 00109168  D0 1F 0E E4 */	stfs f0, 0xee4(r31)
-/* 8010C36C 0010916C  C0 02 AC E0 */	lfs f0, _esc__2_2609-_SDA2_BASE_(r2)
+/* 8010C36C 0010916C  C0 02 AC E0 */	lfs f0, _esc__2_2609@sda21(r2)
 /* 8010C370 00109170  D0 3F 0E E8 */	stfs f1, 0xee8(r31)
 /* 8010C374 00109174  D0 1F 0E EC */	stfs f0, 0xeec(r31)
 /* 8010C378 00109178  90 1F 0E F0 */	stw r0, 0xef0(r31)
@@ -7912,7 +7912,7 @@ setup_bolt_emitter__17zNPCBossOmnidroidFv:
 /* 8010C398 00109198  38 A0 00 00 */	li r5, 0
 /* 8010C39C 0010919C  4B F1 75 BD */	bl init__13xDecalEmitterFiPCc
 /* 8010C3A0 001091A0  38 7F 0F D0 */	addi r3, r31, 0xfd0
-/* 8010C3A4 001091A4  38 82 AD 58 */	addi r4, r2, trail_curve_esc__7_3034-_SDA2_BASE_
+/* 8010C3A4 001091A4  38 82 AD 58 */	addi r4, r2, trail_curve_esc__7_3034@sda21
 /* 8010C3A8 001091A8  38 A0 00 02 */	li r5, 2
 /* 8010C3AC 001091AC  4B F1 79 01 */	bl set_curve__13xDecalEmitterFPCQ213xDecalEmitter10curve_nodeUl
 /* 8010C3B0 001091B0  3C 80 80 2E */	lis r4, _esc__2_stringBase0_73@ha
@@ -7923,7 +7923,7 @@ setup_bolt_emitter__17zNPCBossOmnidroidFv:
 /* 8010C3C4 001091C4  38 7F 0F D0 */	addi r3, r31, 0xfd0
 /* 8010C3C8 001091C8  4B F1 76 6D */	bl set_default_config__13xDecalEmitterFv
 /* 8010C3CC 001091CC  38 00 00 00 */	li r0, 0
-/* 8010C3D0 001091D0  C0 02 AD 7C */	lfs f0, _esc__2_3040_0-_SDA2_BASE_(r2)
+/* 8010C3D0 001091D0  C0 02 AD 7C */	lfs f0, _esc__2_3040_0@sda21(r2)
 /* 8010C3D4 001091D4  90 1F 0F D0 */	stw r0, 0xfd0(r31)
 /* 8010C3D8 001091D8  38 80 00 05 */	li r4, 5
 /* 8010C3DC 001091DC  38 00 00 02 */	li r0, 2
@@ -7952,7 +7952,7 @@ setup_bolt_emitter__17zNPCBossOmnidroidFv:
 /* 8010C438 00109238  3C 60 04 B7 */	lis r3, 0x04B70D28@ha
 /* 8010C43C 0010923C  90 1F 0F 70 */	stw r0, 0xf70(r31)
 /* 8010C440 00109240  38 00 00 01 */	li r0, 1
-/* 8010C444 00109244  C0 02 AC A0 */	lfs f0, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 8010C444 00109244  C0 02 AC A0 */	lfs f0, _esc__2_1660_1@sda21(r2)
 /* 8010C448 00109248  38 9F 0F D0 */	addi r4, r31, 0xfd0
 /* 8010C44C 0010924C  90 1F 0F 74 */	stw r0, 0xf74(r31)
 /* 8010C450 00109250  38 00 00 03 */	li r0, 3
@@ -7998,7 +7998,7 @@ setup_bolt_emitter__17zNPCBossOmnidroidFv:
 /* 8010C4F0 001092F0  3C 80 80 2E */	lis r4, _esc__2_stringBase0_73@ha
 /* 8010C4F4 001092F4  38 7F 10 90 */	addi r3, r31, 0x1090
 /* 8010C4F8 001092F8  38 84 22 28 */	addi r4, r4, _esc__2_stringBase0_73@l
-/* 8010C4FC 001092FC  38 AD 81 28 */	addi r5, r13, animix_labels__6xDecal-_SDA_BASE_
+/* 8010C4FC 001092FC  38 AD 81 28 */	addi r5, r13, animix_labels__6xDecal@sda21
 /* 8010C500 00109300  38 84 01 E8 */	addi r4, r4, 0x1e8
 /* 8010C504 00109304  38 C0 00 00 */	li r6, 0
 /* 8010C508 00109308  38 E0 00 00 */	li r7, 0
@@ -8012,7 +8012,7 @@ setup_bolt_emitter__17zNPCBossOmnidroidFv:
 /* 8010C528 00109328  3C 80 80 2E */	lis r4, _esc__2_stringBase0_73@ha
 /* 8010C52C 0010932C  38 7F 10 F4 */	addi r3, r31, 0x10f4
 /* 8010C530 00109330  38 84 22 28 */	addi r4, r4, _esc__2_stringBase0_73@l
-/* 8010C534 00109334  38 AD 81 28 */	addi r5, r13, animix_labels__6xDecal-_SDA_BASE_
+/* 8010C534 00109334  38 AD 81 28 */	addi r5, r13, animix_labels__6xDecal@sda21
 /* 8010C538 00109338  38 84 02 14 */	addi r4, r4, 0x214
 /* 8010C53C 0010933C  38 C0 00 00 */	li r6, 0
 /* 8010C540 00109340  38 E0 00 00 */	li r7, 0
@@ -8053,15 +8053,15 @@ refresh_bolt_decals__17zNPCBossOmnidroidFv:
 /* 8010C5A8 001093A8  38 A0 00 04 */	li r5, 4
 /* 8010C5AC 001093AC  90 1F 10 6C */	stw r0, 0x106c(r31)
 /* 8010C5B0 001093B0  38 00 00 00 */	li r0, 0
-/* 8010C5B4 001093B4  C0 62 AD 80 */	lfs f3, _esc__2_3049-_SDA2_BASE_(r2)
+/* 8010C5B4 001093B4  C0 62 AD 80 */	lfs f3, _esc__2_3049@sda21(r2)
 /* 8010C5B8 001093B8  38 63 A7 DC */	addi r3, r3, 0xF300A7DC@l
 /* 8010C5BC 001093BC  90 9F 10 84 */	stw r4, 0x1084(r31)
 /* 8010C5C0 001093C0  38 80 00 00 */	li r4, 0
-/* 8010C5C4 001093C4  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010C5C4 001093C4  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010C5C8 001093C8  90 DF 10 40 */	stw r6, 0x1040(r31)
-/* 8010C5CC 001093CC  C0 22 AD 2C */	lfs f1, _esc__2_3015-_SDA2_BASE_(r2)
+/* 8010C5CC 001093CC  C0 22 AD 2C */	lfs f1, _esc__2_3015@sda21(r2)
 /* 8010C5D0 001093D0  90 BF 10 4C */	stw r5, 0x104c(r31)
-/* 8010C5D4 001093D4  C0 02 AD 84 */	lfs f0, _esc__2_3050-_SDA2_BASE_(r2)
+/* 8010C5D4 001093D4  C0 02 AD 84 */	lfs f0, _esc__2_3050@sda21(r2)
 /* 8010C5D8 001093D8  90 1F 10 48 */	stw r0, 0x1048(r31)
 /* 8010C5DC 001093DC  D0 7F 10 50 */	stfs f3, 0x1050(r31)
 /* 8010C5E0 001093E0  D0 5F 10 58 */	stfs f2, 0x1058(r31)
@@ -8071,8 +8071,8 @@ refresh_bolt_decals__17zNPCBossOmnidroidFv:
 /* 8010C5F0 001093F0  4B F5 FC B1 */	bl xSTFindAsset__FUiPUi
 /* 8010C5F4 001093F4  90 7F 10 70 */	stw r3, 0x1070(r31)
 /* 8010C5F8 001093F8  38 7F 10 A0 */	addi r3, r31, 0x10a0
-/* 8010C5FC 001093FC  C0 22 AC 9C */	lfs f1, _esc__2_1659_1-_SDA2_BASE_(r2)
-/* 8010C600 00109400  C0 02 AD 88 */	lfs f0, _esc__2_3051-_SDA2_BASE_(r2)
+/* 8010C5FC 001093FC  C0 22 AC 9C */	lfs f1, _esc__2_1659_1@sda21(r2)
+/* 8010C600 00109400  C0 02 AD 88 */	lfs f0, _esc__2_3051@sda21(r2)
 /* 8010C604 00109404  D0 3F 10 74 */	stfs f1, 0x1074(r31)
 /* 8010C608 00109408  D0 3F 10 78 */	stfs f1, 0x1078(r31)
 /* 8010C60C 0010940C  D0 1F 10 7C */	stfs f0, 0x107c(r31)
@@ -8088,14 +8088,14 @@ refresh_bolt_decals__17zNPCBossOmnidroidFv:
 /* 8010C634 00109434  38 00 00 00 */	li r0, 0
 /* 8010C638 00109438  90 9F 10 D0 */	stw r4, 0x10d0(r31)
 /* 8010C63C 0010943C  38 63 A7 DC */	addi r3, r3, 0xF300A7DC@l
-/* 8010C640 00109440  C0 62 AD 50 */	lfs f3, _esc__2_3024-_SDA2_BASE_(r2)
+/* 8010C640 00109440  C0 62 AD 50 */	lfs f3, _esc__2_3024@sda21(r2)
 /* 8010C644 00109444  38 80 00 00 */	li r4, 0
 /* 8010C648 00109448  90 DF 10 E8 */	stw r6, 0x10e8(r31)
-/* 8010C64C 0010944C  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010C64C 0010944C  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010C650 00109450  90 BF 10 A4 */	stw r5, 0x10a4(r31)
-/* 8010C654 00109454  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010C654 00109454  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010C658 00109458  90 1F 10 B0 */	stw r0, 0x10b0(r31)
-/* 8010C65C 0010945C  C0 02 AC A0 */	lfs f0, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 8010C65C 0010945C  C0 02 AC A0 */	lfs f0, _esc__2_1660_1@sda21(r2)
 /* 8010C660 00109460  90 1F 10 AC */	stw r0, 0x10ac(r31)
 /* 8010C664 00109464  D0 7F 10 B4 */	stfs f3, 0x10b4(r31)
 /* 8010C668 00109468  D0 5F 10 BC */	stfs f2, 0x10bc(r31)
@@ -8104,8 +8104,8 @@ refresh_bolt_decals__17zNPCBossOmnidroidFv:
 /* 8010C674 00109474  D0 1F 10 CC */	stfs f0, 0x10cc(r31)
 /* 8010C678 00109478  4B F5 FC 29 */	bl xSTFindAsset__FUiPUi
 /* 8010C67C 0010947C  90 7F 10 D4 */	stw r3, 0x10d4(r31)
-/* 8010C680 00109480  C0 22 AD 8C */	lfs f1, _esc__2_3052-_SDA2_BASE_(r2)
-/* 8010C684 00109484  C0 02 AD 90 */	lfs f0, _esc__2_3053-_SDA2_BASE_(r2)
+/* 8010C680 00109480  C0 22 AD 8C */	lfs f1, _esc__2_3052@sda21(r2)
+/* 8010C684 00109484  C0 02 AD 90 */	lfs f0, _esc__2_3053@sda21(r2)
 /* 8010C688 00109488  D0 3F 10 D8 */	stfs f1, 0x10d8(r31)
 /* 8010C68C 0010948C  D0 3F 10 DC */	stfs f1, 0x10dc(r31)
 /* 8010C690 00109490  D0 1F 10 E0 */	stfs f0, 0x10e0(r31)
@@ -8127,26 +8127,26 @@ bolt_impact_callback__17zNPCBossOmnidroidFRQ217xLaserBoltEmitter4boltPv:
 /* 8010C6C4 001094C4  93 EC FF FC */	stw r31, -4(r12)
 /* 8010C6C8 001094C8  7C 7F 1B 78 */	mr r31, r3
 /* 8010C6CC 001094CC  38 9F 00 18 */	addi r4, r31, 0x18
-/* 8010C6D0 001094D0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010C6D0 001094D0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010C6D4 001094D4  80 65 10 38 */	lwz r3, 0x1038(r5)
 /* 8010C6D8 001094D8  4B FB B3 39 */	bl emit__10zExplosionFiRC5xVec3
-/* 8010C6DC 001094DC  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010C6DC 001094DC  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010C6E0 001094E0  80 9F 00 40 */	lwz r4, 0x40(r31)
 /* 8010C6E4 001094E4  80 03 04 C4 */	lwz r0, 0x4c4(r3)
 /* 8010C6E8 001094E8  7C 04 00 40 */	cmplw r4, r0
 /* 8010C6EC 001094EC  40 82 00 74 */	bne lbl_8010C760
-/* 8010C6F0 001094F0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010C6F0 001094F0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010C6F4 001094F4  38 61 00 60 */	addi r3, r1, 0x60
-/* 8010C6F8 001094F8  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010C6F8 001094F8  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010C6FC 001094FC  38 9F 00 0C */	addi r4, r31, 0xc
-/* 8010C700 00109500  38 A2 8A 08 */	addi r5, r2, g_Y3-_SDA2_BASE_
+/* 8010C700 00109500  38 A2 8A 08 */	addi r5, r2, g_Y3@sda21
 /* 8010C704 00109504  D0 06 11 04 */	stfs f0, 0x1104(r6)
 /* 8010C708 00109508  48 00 01 1D */	bl xMat3x3LookVec5__FR7xMat3x3RC5xVec3RC5xVec3
-/* 8010C70C 0010950C  C0 22 AD 94 */	lfs f1, _esc__2_3065-_SDA2_BASE_(r2)
+/* 8010C70C 0010950C  C0 22 AD 94 */	lfs f1, _esc__2_3065@sda21(r2)
 /* 8010C710 00109510  38 81 00 60 */	addi r4, r1, 0x60
 /* 8010C714 00109514  C0 1F 00 34 */	lfs f0, 0x34(r31)
 /* 8010C718 00109518  38 A0 00 10 */	li r5, 0x10
-/* 8010C71C 0010951C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010C71C 0010951C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010C720 00109520  EC 41 00 2A */	fadds f2, f1, f0
 /* 8010C724 00109524  C0 3F 00 0C */	lfs f1, 0xc(r31)
 /* 8010C728 00109528  C0 1F 00 00 */	lfs f0, 0(r31)
@@ -8176,13 +8176,13 @@ lbl_8010C760:
 /* 8010C784 00109584  4B F0 3B D1 */	bl negate__5xVec3Fv
 /* 8010C788 00109588  38 61 00 20 */	addi r3, r1, 0x20
 /* 8010C78C 0010958C  38 81 00 10 */	addi r4, r1, 0x10
-/* 8010C790 00109590  38 A2 89 FC */	addi r5, r2, g_X3-_SDA2_BASE_
+/* 8010C790 00109590  38 A2 89 FC */	addi r5, r2, g_X3@sda21
 /* 8010C794 00109594  48 00 00 61 */	bl xMat3x3LookVec4__FR7xMat3x3RC5xVec3RC5xVec3
-/* 8010C798 00109598  C0 62 AD 98 */	lfs f3, _esc__2_3066-_SDA2_BASE_(r2)
+/* 8010C798 00109598  C0 62 AD 98 */	lfs f3, _esc__2_3066@sda21(r2)
 /* 8010C79C 0010959C  38 81 00 20 */	addi r4, r1, 0x20
 /* 8010C7A0 001095A0  C0 21 00 10 */	lfs f1, 0x10(r1)
 /* 8010C7A4 001095A4  C0 1F 00 18 */	lfs f0, 0x18(r31)
-/* 8010C7A8 001095A8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010C7A8 001095A8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010C7AC 001095AC  EC 03 00 7A */	fmadds f0, f3, f1, f0
 /* 8010C7B0 001095B0  C0 41 00 14 */	lfs f2, 0x14(r1)
 /* 8010C7B4 001095B4  C0 21 00 18 */	lfs f1, 0x18(r1)
@@ -8316,18 +8316,18 @@ lbl_8010C960:
 /* 8010C964 00109764  40 81 01 4C */	ble lbl_8010CAB0
 /* 8010C968 00109768  1C 7F 00 0C */	mulli r3, r31, 0xc
 /* 8010C96C 0010976C  4B EF AF 75 */	bl xMemPushTemp__FUi
-/* 8010C970 00109770  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010C970 00109770  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010C974 00109774  7C 76 1B 78 */	mr r22, r3
 /* 8010C978 00109778  7F E4 FB 78 */	mr r4, r31
 /* 8010C97C 0010977C  FC 40 08 90 */	fmr f2, f1
 /* 8010C980 00109780  4B F4 84 F1 */	bl xRandUniformSpherePoints__FP5xVec3iff
 /* 8010C984 00109784  38 7C 0B 78 */	addi r3, r28, 0xb78
 /* 8010C988 00109788  48 0E BA FD */	bl get_config__22zTransientModelEmitterCFv
-/* 8010C98C 0010978C  C3 22 AC 6C */	lfs f25, _esc__2_1428_0-_SDA2_BASE_(r2)
+/* 8010C98C 0010978C  C3 22 AC 6C */	lfs f25, _esc__2_1428_0@sda21(r2)
 /* 8010C990 00109790  7C 7A 1B 78 */	mr r26, r3
-/* 8010C994 00109794  CB 42 AC 78 */	lfd f26, _esc__2_1431-_SDA2_BASE_(r2)
+/* 8010C994 00109794  CB 42 AC 78 */	lfd f26, _esc__2_1431@sda21(r2)
 /* 8010C998 00109798  7E D5 B3 78 */	mr r21, r22
-/* 8010C99C 0010979C  C3 62 AC E8 */	lfs f27, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8010C99C 0010979C  C3 62 AC E8 */	lfs f27, _esc__2_2843@sda21(r2)
 /* 8010C9A0 001097A0  3B 21 00 20 */	addi r25, r1, 0x20
 /* 8010C9A4 001097A4  C3 9D 00 0C */	lfs f28, 0xc(r29)
 /* 8010C9A8 001097A8  3B 01 00 30 */	addi r24, r1, 0x30
@@ -8352,17 +8352,17 @@ lbl_8010C9C4:
 /* 8010C9F0 001097F0  FF 00 00 90 */	fmr f24, f0
 /* 8010C9F4 001097F4  4B F6 9E 39 */	bl icos__Ff
 /* 8010C9F8 001097F8  FC 60 C0 50 */	fneg f3, f24
-/* 8010C9FC 001097FC  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010C9FC 001097FC  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010CA00 00109800  FE E0 08 90 */	fmr f23, f1
 /* 8010CA04 00109804  38 61 00 10 */	addi r3, r1, 0x10
 /* 8010CA08 00109808  4B F0 0D D1 */	bl assign__5xVec3Ffff
-/* 8010CA0C 0010980C  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010CA0C 0010980C  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010CA10 00109810  7F 23 CB 78 */	mr r3, r25
-/* 8010CA14 00109814  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010CA14 00109814  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8010CA18 00109818  FC 60 08 90 */	fmr f3, f1
 /* 8010CA1C 0010981C  4B F0 0D BD */	bl assign__5xVec3Ffff
 /* 8010CA20 00109820  FC 20 C0 90 */	fmr f1, f24
-/* 8010CA24 00109824  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010CA24 00109824  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010CA28 00109828  FC 60 B8 90 */	fmr f3, f23
 /* 8010CA2C 0010982C  7F 03 C3 78 */	mr r3, r24
 /* 8010CA30 00109830  4B F0 0D A9 */	bl assign__5xVec3Ffff
@@ -8388,7 +8388,7 @@ lbl_8010CA4C:
 /* 8010CA7C 0010987C  4B FF F6 35 */	bl within_arena__17zNPCBossOmnidroidCFRC5xVec3f
 /* 8010CA80 00109880  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8010CA84 00109884  41 82 00 14 */	beq lbl_8010CA98
-/* 8010CA88 00109888  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8010CA88 00109888  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8010CA8C 0010988C  38 7C 0B 78 */	addi r3, r28, 0xb78
 /* 8010CA90 00109890  38 81 00 10 */	addi r4, r1, 0x10
 /* 8010CA94 00109894  48 0E B9 FD */	bl spawn__22zTransientModelEmitterFRC7xMat4x3f
@@ -8435,7 +8435,7 @@ bomb_exploded__17zNPCBossOmnidroidFRQ21z11rubble_bombfPv:
 /* 8010CB20 00109920  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
 /* 8010CB24 00109924  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8010CB28 00109928  FF E0 08 90 */	fmr f31, f1
-/* 8010CB2C 0010992C  C0 02 AD 9C */	lfs f0, _esc__2_3117-_SDA2_BASE_(r2)
+/* 8010CB2C 0010992C  C0 02 AD 9C */	lfs f0, _esc__2_3117@sda21(r2)
 /* 8010CB30 00109930  7C 9F 23 78 */	mr r31, r4
 /* 8010CB34 00109934  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8010CB38 00109938  40 81 00 34 */	ble lbl_8010CB6C
@@ -8447,7 +8447,7 @@ bomb_exploded__17zNPCBossOmnidroidFRQ21z11rubble_bombfPv:
 /* 8010CB50 00109950  90 C1 00 08 */	stw r6, 8(r1)
 /* 8010CB54 00109954  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8010CB58 00109958  80 03 00 38 */	lwz r0, 0x38(r3)
-/* 8010CB5C 0010995C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010CB5C 0010995C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010CB60 00109960  90 01 00 10 */	stw r0, 0x10(r1)
 /* 8010CB64 00109964  D3 E1 00 0C */	stfs f31, 0xc(r1)
 /* 8010CB68 00109968  4B FF FD 55 */	bl emit_debris__17zNPCBossOmnidroidFRCQ217zNPCBossOmnidroid13debris_regionRC5xVec3
@@ -8468,7 +8468,7 @@ get_matrix__Q21z11rubble_bombCFv:
 setup_rock_grab__17zNPCBossOmnidroidFv:
 /* 8010CB8C 0010998C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010CB90 00109990  7C 08 02 A6 */	mflr r0
-/* 8010CB94 00109994  C0 22 AC 84 */	lfs f1, _esc__2_1439_0-_SDA2_BASE_(r2)
+/* 8010CB94 00109994  C0 22 AC 84 */	lfs f1, _esc__2_1439_0@sda21(r2)
 /* 8010CB98 00109998  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010CB9C 0010999C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8010CBA0 001099A0  7C 7F 1B 78 */	mr r31, r3
@@ -8519,9 +8519,9 @@ start_rock_grab_effects__17zNPCBossOmnidroidFRC14xResponseCurveRC14xResponseCurv
 /* 8010CC30 00109A30  4B EF A7 35 */	bl xrand_RandomInt32__Fv
 /* 8010CC34 00109A34  3C 00 43 30 */	lis r0, 0x4330
 /* 8010CC38 00109A38  90 61 00 0C */	stw r3, 0xc(r1)
-/* 8010CC3C 00109A3C  C8 42 AC 78 */	lfd f2, _esc__2_1431-_SDA2_BASE_(r2)
+/* 8010CC3C 00109A3C  C8 42 AC 78 */	lfd f2, _esc__2_1431@sda21(r2)
 /* 8010CC40 00109A40  90 01 00 08 */	stw r0, 8(r1)
-/* 8010CC44 00109A44  C0 02 AD A0 */	lfs f0, _esc__2_3136-_SDA2_BASE_(r2)
+/* 8010CC44 00109A44  C0 02 AD A0 */	lfs f0, _esc__2_3136@sda21(r2)
 /* 8010CC48 00109A48  C8 21 00 08 */	lfd f1, 8(r1)
 /* 8010CC4C 00109A4C  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8010CC50 00109A50  EC 00 00 72 */	fmuls f0, f0, f1
@@ -8530,9 +8530,9 @@ start_rock_grab_effects__17zNPCBossOmnidroidFRC14xResponseCurveRC14xResponseCurv
 /* 8010CC5C 00109A5C  4B EF A7 09 */	bl xrand_RandomInt32__Fv
 /* 8010CC60 00109A60  3C 00 43 30 */	lis r0, 0x4330
 /* 8010CC64 00109A64  90 61 00 14 */	stw r3, 0x14(r1)
-/* 8010CC68 00109A68  C8 42 AC 78 */	lfd f2, _esc__2_1431-_SDA2_BASE_(r2)
+/* 8010CC68 00109A68  C8 42 AC 78 */	lfd f2, _esc__2_1431@sda21(r2)
 /* 8010CC6C 00109A6C  90 01 00 10 */	stw r0, 0x10(r1)
-/* 8010CC70 00109A70  C0 02 AD A0 */	lfs f0, _esc__2_3136-_SDA2_BASE_(r2)
+/* 8010CC70 00109A70  C0 02 AD A0 */	lfs f0, _esc__2_3136@sda21(r2)
 /* 8010CC74 00109A74  C8 21 00 10 */	lfd f1, 0x10(r1)
 /* 8010CC78 00109A78  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8010CC7C 00109A7C  EC 00 00 72 */	fmuls f0, f0, f1
@@ -8541,9 +8541,9 @@ start_rock_grab_effects__17zNPCBossOmnidroidFRC14xResponseCurveRC14xResponseCurv
 /* 8010CC88 00109A88  4B EF A6 DD */	bl xrand_RandomInt32__Fv
 /* 8010CC8C 00109A8C  3C 00 43 30 */	lis r0, 0x4330
 /* 8010CC90 00109A90  90 61 00 1C */	stw r3, 0x1c(r1)
-/* 8010CC94 00109A94  C8 42 AC 78 */	lfd f2, _esc__2_1431-_SDA2_BASE_(r2)
+/* 8010CC94 00109A94  C8 42 AC 78 */	lfd f2, _esc__2_1431@sda21(r2)
 /* 8010CC98 00109A98  90 01 00 18 */	stw r0, 0x18(r1)
-/* 8010CC9C 00109A9C  C0 02 AD A0 */	lfs f0, _esc__2_3136-_SDA2_BASE_(r2)
+/* 8010CC9C 00109A9C  C0 02 AD A0 */	lfs f0, _esc__2_3136@sda21(r2)
 /* 8010CCA0 00109AA0  C8 21 00 18 */	lfd f1, 0x18(r1)
 /* 8010CCA4 00109AA4  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8010CCA8 00109AA8  EC 00 00 72 */	fmuls f0, f0, f1
@@ -8552,9 +8552,9 @@ start_rock_grab_effects__17zNPCBossOmnidroidFRC14xResponseCurveRC14xResponseCurv
 /* 8010CCB4 00109AB4  4B EF A6 B1 */	bl xrand_RandomInt32__Fv
 /* 8010CCB8 00109AB8  3C 00 43 30 */	lis r0, 0x4330
 /* 8010CCBC 00109ABC  90 61 00 24 */	stw r3, 0x24(r1)
-/* 8010CCC0 00109AC0  C8 42 AC 78 */	lfd f2, _esc__2_1431-_SDA2_BASE_(r2)
+/* 8010CCC0 00109AC0  C8 42 AC 78 */	lfd f2, _esc__2_1431@sda21(r2)
 /* 8010CCC4 00109AC4  90 01 00 20 */	stw r0, 0x20(r1)
-/* 8010CCC8 00109AC8  C0 02 AD A0 */	lfs f0, _esc__2_3136-_SDA2_BASE_(r2)
+/* 8010CCC8 00109AC8  C0 02 AD A0 */	lfs f0, _esc__2_3136@sda21(r2)
 /* 8010CCCC 00109ACC  C8 21 00 20 */	lfd f1, 0x20(r1)
 /* 8010CCD0 00109AD0  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8010CCD4 00109AD4  EC 00 00 72 */	fmuls f0, f0, f1
@@ -8614,9 +8614,9 @@ update_rock_grab_effects__17zNPCBossOmnidroidFff:
 /* 8010CD94 00109B94  FF A0 10 90 */	fmr f29, f2
 /* 8010CD98 00109B98  38 80 00 00 */	li r4, 0
 /* 8010CD9C 00109B9C  4B FF DA C9 */	bl get_leg_index__17zNPCBossOmnidroidCFi
-/* 8010CDA0 00109BA0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010CDA0 00109BA0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010CDA4 00109BA4  54 60 10 3A */	slwi r0, r3, 2
-/* 8010CDA8 00109BA8  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 8010CDA8 00109BA8  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 8010CDAC 00109BAC  7C A3 00 2E */	lwzx r5, r3, r0
 /* 8010CDB0 00109BB0  38 61 00 3C */	addi r3, r1, 0x3c
 /* 8010CDB4 00109BB4  80 84 00 28 */	lwz r4, 0x28(r4)
@@ -8666,25 +8666,25 @@ lbl_8010CE0C:
 /* 8010CE5C 00109C5C  83 A1 00 D4 */	lwz r29, 0xd4(r1)
 /* 8010CE60 00109C60  2C 1D 00 00 */	cmpwi r29, 0
 /* 8010CE64 00109C64  40 81 00 98 */	ble lbl_8010CEFC
-/* 8010CE68 00109C68  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010CE68 00109C68  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010CE6C 00109C6C  38 61 00 90 */	addi r3, r1, 0x90
-/* 8010CE70 00109C70  C0 62 A8 B4 */	lfs f3, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010CE70 00109C70  C0 62 A8 B4 */	lfs f3, _esc__2_1223@sda21(r2)
 /* 8010CE74 00109C74  FC 40 08 90 */	fmr f2, f1
 /* 8010CE78 00109C78  4B F0 09 61 */	bl assign__5xVec3Ffff
-/* 8010CE7C 00109C7C  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010CE7C 00109C7C  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010CE80 00109C80  38 61 00 A0 */	addi r3, r1, 0xa0
-/* 8010CE84 00109C84  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010CE84 00109C84  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010CE88 00109C88  FC 60 10 90 */	fmr f3, f2
 /* 8010CE8C 00109C8C  4B F0 09 4D */	bl assign__5xVec3Ffff
-/* 8010CE90 00109C90  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010CE90 00109C90  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010CE94 00109C94  38 61 00 B0 */	addi r3, r1, 0xb0
-/* 8010CE98 00109C98  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010CE98 00109C98  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8010CE9C 00109C9C  FC 60 08 90 */	fmr f3, f1
 /* 8010CEA0 00109CA0  4B F0 09 39 */	bl assign__5xVec3Ffff
 /* 8010CEA4 00109CA4  C0 01 00 3C */	lfs f0, 0x3c(r1)
 /* 8010CEA8 00109CA8  6F A6 80 00 */	xoris r6, r29, 0x8000
 /* 8010CEAC 00109CAC  3C 00 43 30 */	lis r0, 0x4330
-/* 8010CEB0 00109CB0  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010CEB0 00109CB0  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 /* 8010CEB4 00109CB4  D0 01 00 C0 */	stfs f0, 0xc0(r1)
 /* 8010CEB8 00109CB8  7F A5 EB 78 */	mr r5, r29
 /* 8010CEBC 00109CBC  C0 41 00 44 */	lfs f2, 0x44(r1)
@@ -8693,7 +8693,7 @@ lbl_8010CE0C:
 /* 8010CEC8 00109CC8  38 81 00 90 */	addi r4, r1, 0x90
 /* 8010CECC 00109CCC  90 C1 00 D4 */	stw r6, 0xd4(r1)
 /* 8010CED0 00109CD0  EC 61 00 2A */	fadds f3, f1, f0
-/* 8010CED4 00109CD4  C8 22 AC 90 */	lfd f1, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8010CED4 00109CD4  C8 22 AC 90 */	lfd f1, _esc__2_1488@sda21(r2)
 /* 8010CED8 00109CD8  90 01 00 D0 */	stw r0, 0xd0(r1)
 /* 8010CEDC 00109CDC  C8 01 00 D0 */	lfd f0, 0xd0(r1)
 /* 8010CEE0 00109CE0  D0 61 00 C4 */	stfs f3, 0xc4(r1)
@@ -8727,9 +8727,9 @@ lbl_8010CEFC:
 /* 8010CF4C 00109D4C  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 8010CF50 00109D50  2C 00 00 00 */	cmpwi r0, 0
 /* 8010CF54 00109D54  40 81 00 2C */	ble lbl_8010CF80
-/* 8010CF58 00109D58  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010CF58 00109D58  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010CF5C 00109D5C  7F E3 FB 78 */	mr r3, r31
-/* 8010CF60 00109D60  C0 02 AD A4 */	lfs f0, _esc__2_3187-_SDA2_BASE_(r2)
+/* 8010CF60 00109D60  C0 02 AD A4 */	lfs f0, _esc__2_3187@sda21(r2)
 /* 8010CF64 00109D64  38 81 00 2C */	addi r4, r1, 0x2c
 /* 8010CF68 00109D68  90 01 00 30 */	stw r0, 0x30(r1)
 /* 8010CF6C 00109D6C  38 BF 11 28 */	addi r5, r31, 0x1128
@@ -8761,10 +8761,10 @@ lbl_8010CF80:
 /* 8010CFD0 00109DD0  83 C1 00 D4 */	lwz r30, 0xd4(r1)
 /* 8010CFD4 00109DD4  2C 1E 00 00 */	cmpwi r30, 0
 /* 8010CFD8 00109DD8  40 81 00 BC */	ble lbl_8010D094
-/* 8010CFDC 00109DDC  80 62 F0 80 */	lwz r3, _esc__2_3165-_SDA2_BASE_(r2)
+/* 8010CFDC 00109DDC  80 62 F0 80 */	lwz r3, _esc__2_3165@sda21(r2)
 /* 8010CFE0 00109DE0  1F BE 00 0C */	mulli r29, r30, 0xc
-/* 8010CFE4 00109DE4  80 82 F0 84 */	lwz r4, lbl_803D8DA4-_SDA2_BASE_(r2)
-/* 8010CFE8 00109DE8  80 02 F0 88 */	lwz r0, lbl_803D8DA8-_SDA2_BASE_(r2)
+/* 8010CFE4 00109DE4  80 82 F0 84 */	lwz r4, lbl_803D8DA4@sda21(r2)
+/* 8010CFE8 00109DE8  80 02 F0 88 */	lwz r0, lbl_803D8DA8@sda21(r2)
 /* 8010CFEC 00109DEC  90 61 00 20 */	stw r3, 0x20(r1)
 /* 8010CFF0 00109DF0  7F A3 EB 78 */	mr r3, r29
 /* 8010CFF4 00109DF4  C0 21 00 3C */	lfs f1, 0x3c(r1)
@@ -8781,25 +8781,25 @@ lbl_8010CF80:
 /* 8010D020 00109E20  7C 1D 03 78 */	mr r29, r0
 /* 8010D024 00109E24  4B EF A8 BD */	bl xMemPushTemp__FUi
 /* 8010D028 00109E28  7C 7B 1B 78 */	mr r27, r3
-/* 8010D02C 00109E2C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
-/* 8010D030 00109E30  C0 42 AD 80 */	lfs f2, _esc__2_3049-_SDA2_BASE_(r2)
+/* 8010D02C 00109E2C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
+/* 8010D030 00109E30  C0 42 AD 80 */	lfs f2, _esc__2_3049@sda21(r2)
 /* 8010D034 00109E34  7F E3 FB 78 */	mr r3, r31
-/* 8010D038 00109E38  C0 62 AD A8 */	lfs f3, _esc__2_3188-_SDA2_BASE_(r2)
+/* 8010D038 00109E38  C0 62 AD A8 */	lfs f3, _esc__2_3188@sda21(r2)
 /* 8010D03C 00109E3C  7F A4 EB 78 */	mr r4, r29
-/* 8010D040 00109E40  C0 82 AD AC */	lfs f4, _esc__2_3189-_SDA2_BASE_(r2)
+/* 8010D040 00109E40  C0 82 AD AC */	lfs f4, _esc__2_3189@sda21(r2)
 /* 8010D044 00109E44  7F 65 DB 78 */	mr r5, r27
-/* 8010D048 00109E48  C0 A2 AC B0 */	lfs f5, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 8010D048 00109E48  C0 A2 AC B0 */	lfs f5, _esc__2_2016_0@sda21(r2)
 /* 8010D04C 00109E4C  7F C6 F3 78 */	mr r6, r30
 /* 8010D050 00109E50  38 E1 00 20 */	addi r7, r1, 0x20
 /* 8010D054 00109E54  48 00 1A B5 */	bl get_stomp_placement__17zNPCBossOmnidroidCFP5xVec3P5xVec3iRC5xVec3fffff
-/* 8010D058 00109E58  C0 42 AC E4 */	lfs f2, _esc__2_2824-_SDA2_BASE_(r2)
+/* 8010D058 00109E58  C0 42 AC E4 */	lfs f2, _esc__2_2824@sda21(r2)
 /* 8010D05C 00109E5C  FC E0 E8 90 */	fmr f7, f29
-/* 8010D060 00109E60  C0 62 AD B4 */	lfs f3, _esc__2_3191-_SDA2_BASE_(r2)
+/* 8010D060 00109E60  C0 62 AD B4 */	lfs f3, _esc__2_3191@sda21(r2)
 /* 8010D064 00109E64  7F A3 EB 78 */	mr r3, r29
 /* 8010D068 00109E68  FC 80 10 90 */	fmr f4, f2
-/* 8010D06C 00109E6C  C0 22 AD B0 */	lfs f1, _esc__2_3190-_SDA2_BASE_(r2)
+/* 8010D06C 00109E6C  C0 22 AD B0 */	lfs f1, _esc__2_3190@sda21(r2)
 /* 8010D070 00109E70  FC A0 18 90 */	fmr f5, f3
-/* 8010D074 00109E74  C0 C2 AC 80 */	lfs f6, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010D074 00109E74  C0 C2 AC 80 */	lfs f6, _esc__2_1438_0@sda21(r2)
 /* 8010D078 00109E78  7F 64 DB 78 */	mr r4, r27
 /* 8010D07C 00109E7C  7F C5 F3 78 */	mr r5, r30
 /* 8010D080 00109E80  48 0E 83 D9 */	bl zParticleCustomEmitDust__FPC5xVec3PC5xVec3ifffffff
@@ -8839,8 +8839,8 @@ lbl_8010D094:
 /* 8010D104 00109F04  7C 1A 03 78 */	mr r26, r0
 /* 8010D108 00109F08  4B EF A7 D9 */	bl xMemPushTemp__FUi
 /* 8010D10C 00109F0C  80 1F 03 4C */	lwz r0, 0x34c(r31)
-/* 8010D110 00109F10  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 8010D114 00109F14  C0 22 AD 48 */	lfs f1, _esc__2_3022-_SDA2_BASE_(r2)
+/* 8010D110 00109F10  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 8010D114 00109F14  C0 22 AD 48 */	lfs f1, _esc__2_3022@sda21(r2)
 /* 8010D118 00109F18  7C 79 1B 78 */	mr r25, r3
 /* 8010D11C 00109F1C  54 00 10 3A */	slwi r0, r0, 2
 /* 8010D120 00109F20  C3 E1 00 3C */	lfs f31, 0x3c(r1)
@@ -8850,13 +8850,13 @@ lbl_8010D094:
 /* 8010D130 00109F30  3B C0 00 00 */	li r30, 0
 /* 8010D134 00109F34  EE A1 00 32 */	fmuls f21, f1, f0
 /* 8010D138 00109F38  C2 81 00 44 */	lfs f20, 0x44(r1)
-/* 8010D13C 00109F3C  CA C2 AC 78 */	lfd f22, _esc__2_1431-_SDA2_BASE_(r2)
+/* 8010D13C 00109F3C  CA C2 AC 78 */	lfd f22, _esc__2_1431@sda21(r2)
 /* 8010D140 00109F40  3F A0 43 30 */	lis r29, 0x4330
-/* 8010D144 00109F44  C2 E2 AC 6C */	lfs f23, _esc__2_1428_0-_SDA2_BASE_(r2)
-/* 8010D148 00109F48  C3 02 AC 70 */	lfs f24, _esc__2_1429_1-_SDA2_BASE_(r2)
-/* 8010D14C 00109F4C  C3 22 A8 B4 */	lfs f25, _esc__2_1223-_SDA2_BASE_(r2)
-/* 8010D150 00109F50  C3 62 AD B8 */	lfs f27, _esc__2_3192-_SDA2_BASE_(r2)
-/* 8010D154 00109F54  C3 82 AC 84 */	lfs f28, _esc__2_1439_0-_SDA2_BASE_(r2)
+/* 8010D144 00109F44  C2 E2 AC 6C */	lfs f23, _esc__2_1428_0@sda21(r2)
+/* 8010D148 00109F48  C3 02 AC 70 */	lfs f24, _esc__2_1429_1@sda21(r2)
+/* 8010D14C 00109F4C  C3 22 A8 B4 */	lfs f25, _esc__2_1223@sda21(r2)
+/* 8010D150 00109F50  C3 62 AD B8 */	lfs f27, _esc__2_3192@sda21(r2)
+/* 8010D154 00109F54  C3 82 AC 84 */	lfs f28, _esc__2_1439_0@sda21(r2)
 /* 8010D158 00109F58  48 00 00 A0 */	b lbl_8010D1F8
 lbl_8010D15C:
 /* 8010D15C 00109F5C  4B EF A2 09 */	bl xrand_RandomInt32__Fv
@@ -8901,14 +8901,14 @@ lbl_8010D15C:
 lbl_8010D1F8:
 /* 8010D1F8 00109FF8  7C 18 D8 00 */	cmpw r24, r27
 /* 8010D1FC 00109FFC  41 80 FF 60 */	blt lbl_8010D15C
-/* 8010D200 0010A000  C0 42 AD 48 */	lfs f2, _esc__2_3022-_SDA2_BASE_(r2)
+/* 8010D200 0010A000  C0 42 AD 48 */	lfs f2, _esc__2_3022@sda21(r2)
 /* 8010D204 0010A004  FC E0 E8 90 */	fmr f7, f29
-/* 8010D208 0010A008  C0 62 AD BC */	lfs f3, _esc__2_3193-_SDA2_BASE_(r2)
+/* 8010D208 0010A008  C0 62 AD BC */	lfs f3, _esc__2_3193@sda21(r2)
 /* 8010D20C 0010A00C  7F 43 D3 78 */	mr r3, r26
 /* 8010D210 0010A010  FC 80 10 90 */	fmr f4, f2
-/* 8010D214 0010A014  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010D214 0010A014  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 /* 8010D218 0010A018  FC A0 18 90 */	fmr f5, f3
-/* 8010D21C 0010A01C  C0 C2 A8 B0 */	lfs f6, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010D21C 0010A01C  C0 C2 A8 B0 */	lfs f6, _esc__2_1222@sda21(r2)
 /* 8010D220 0010A020  7F 24 CB 78 */	mr r4, r25
 /* 8010D224 0010A024  7F 65 DB 78 */	mr r5, r27
 /* 8010D228 0010A028  48 0E 82 31 */	bl zParticleCustomEmitDust__FPC5xVec3PC5xVec3ifffffff
@@ -8922,11 +8922,11 @@ lbl_8010D23C:
 /* 8010D244 0010A044  4B EF A1 21 */	bl xrand_RandomInt32__Fv
 /* 8010D248 0010A048  3C 00 43 30 */	lis r0, 0x4330
 /* 8010D24C 0010A04C  90 61 00 E4 */	stw r3, 0xe4(r1)
-/* 8010D250 0010A050  C8 62 AC 78 */	lfd f3, _esc__2_1431-_SDA2_BASE_(r2)
+/* 8010D250 0010A050  C8 62 AC 78 */	lfd f3, _esc__2_1431@sda21(r2)
 /* 8010D254 0010A054  90 01 00 E0 */	stw r0, 0xe0(r1)
-/* 8010D258 0010A058  C0 22 AC 6C */	lfs f1, _esc__2_1428_0-_SDA2_BASE_(r2)
+/* 8010D258 0010A058  C0 22 AC 6C */	lfs f1, _esc__2_1428_0@sda21(r2)
 /* 8010D25C 0010A05C  C8 41 00 E0 */	lfd f2, 0xe0(r1)
-/* 8010D260 0010A060  C0 02 AC E8 */	lfs f0, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8010D260 0010A060  C0 02 AC E8 */	lfs f0, _esc__2_2843@sda21(r2)
 /* 8010D264 0010A064  EC 42 18 28 */	fsubs f2, f2, f3
 /* 8010D268 0010A068  EE 21 00 B8 */	fmsubs f17, f1, f2, f0
 /* 8010D26C 0010A06C  FC 20 88 90 */	fmr f1, f17
@@ -8936,20 +8936,20 @@ lbl_8010D23C:
 /* 8010D27C 0010A07C  FE 20 00 90 */	fmr f17, f0
 /* 8010D280 0010A080  4B F6 95 AD */	bl icos__Ff
 /* 8010D284 0010A084  FC 00 08 90 */	fmr f0, f1
-/* 8010D288 0010A088  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010D288 0010A088  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010D28C 0010A08C  FC 20 88 90 */	fmr f1, f17
 /* 8010D290 0010A090  38 61 00 50 */	addi r3, r1, 0x50
 /* 8010D294 0010A094  FE 40 00 90 */	fmr f18, f0
 /* 8010D298 0010A098  FC 60 90 90 */	fmr f3, f18
 /* 8010D29C 0010A09C  4B F0 05 3D */	bl assign__5xVec3Ffff
 /* 8010D2A0 0010A0A0  FC 60 88 90 */	fmr f3, f17
-/* 8010D2A4 0010A0A4  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010D2A4 0010A0A4  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8010D2A8 0010A0A8  FC 20 90 50 */	fneg f1, f18
 /* 8010D2AC 0010A0AC  38 61 00 60 */	addi r3, r1, 0x60
 /* 8010D2B0 0010A0B0  4B F0 05 29 */	bl assign__5xVec3Ffff
-/* 8010D2B4 0010A0B4  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010D2B4 0010A0B4  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010D2B8 0010A0B8  38 61 00 70 */	addi r3, r1, 0x70
-/* 8010D2BC 0010A0BC  C0 42 AC B8 */	lfs f2, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8010D2BC 0010A0BC  C0 42 AC B8 */	lfs f2, _esc__2_2040_0@sda21(r2)
 /* 8010D2C0 0010A0C0  FC 60 08 90 */	fmr f3, f1
 /* 8010D2C4 0010A0C4  4B F0 05 15 */	bl assign__5xVec3Ffff
 /* 8010D2C8 0010A0C8  38 61 00 80 */	addi r3, r1, 0x80
@@ -8957,7 +8957,7 @@ lbl_8010D23C:
 /* 8010D2D0 0010A0D0  4B EF DD D9 */	bl __as__5xVec3FRC5xVec3
 /* 8010D2D4 0010A0D4  C0 21 00 84 */	lfs f1, 0x84(r1)
 /* 8010D2D8 0010A0D8  38 7F 11 68 */	addi r3, r31, 0x1168
-/* 8010D2DC 0010A0DC  C0 02 AD A4 */	lfs f0, _esc__2_3187-_SDA2_BASE_(r2)
+/* 8010D2DC 0010A0DC  C0 02 AD A4 */	lfs f0, _esc__2_3187@sda21(r2)
 /* 8010D2E0 0010A0E0  38 81 00 50 */	addi r4, r1, 0x50
 /* 8010D2E4 0010A0E4  EC 01 00 2A */	fadds f0, f1, f0
 /* 8010D2E8 0010A0E8  D0 01 00 84 */	stfs f0, 0x84(r1)
@@ -9011,7 +9011,7 @@ setup_impact_decal__17zNPCBossOmnidroidFv:
 /* 8010D398 0010A198  3B E0 00 00 */	li r31, 0
 /* 8010D39C 0010A19C  3B C0 00 00 */	li r30, 0
 lbl_8010D3A0:
-/* 8010D3A0 0010A1A0  38 C2 AA A4 */	addi r6, r2, cfg__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak12impact_decal-_SDA2_BASE_
+/* 8010D3A0 0010A1A0  38 C2 AA A4 */	addi r6, r2, cfg__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak12impact_decal@sda21
 /* 8010D3A4 0010A1A4  38 7F 11 08 */	addi r3, r31, 0x1108
 /* 8010D3A8 0010A1A8  7C C6 F2 14 */	add r6, r6, r30
 /* 8010D3AC 0010A1AC  38 80 00 06 */	li r4, 6
@@ -9043,25 +9043,25 @@ refresh_impact_decal__17zNPCBossOmnidroidFRQ26xDecal12emit_contextf:
 /* 8010D408 0010A208  7C 7E 1B 78 */	mr r30, r3
 /* 8010D40C 0010A20C  7F E3 FB 78 */	mr r3, r31
 /* 8010D410 0010A210  4B F1 4D E1 */	bl set_default_emit_context__6xDecalFRQ26xDecal12emit_context
-/* 8010D414 0010A214  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010D414 0010A214  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010D418 0010A218  3C 80 4F 4D */	lis r4, 0x4F4D4E33@ha
 /* 8010D41C 0010A21C  3C 60 AC 88 */	lis r3, 0xAC8785A1@ha
 /* 8010D420 0010A220  38 00 00 08 */	li r0, 8
 /* 8010D424 0010A224  80 E5 03 4C */	lwz r7, 0x34c(r5)
 /* 8010D428 0010A228  38 A4 4E 33 */	addi r5, r4, 0x4F4D4E33@l
-/* 8010D42C 0010A22C  38 C2 A8 B8 */	addi r6, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8010D42C 0010A22C  38 C2 A8 B8 */	addi r6, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 8010D430 0010A230  38 80 00 00 */	li r4, 0
 /* 8010D434 0010A234  90 BF 00 00 */	stw r5, 0(r31)
 /* 8010D438 0010A238  54 E5 10 3A */	slwi r5, r7, 2
 /* 8010D43C 0010A23C  7C 06 2C 2E */	lfsx f0, r6, r5
 /* 8010D440 0010A240  1C A7 00 1C */	mulli r5, r7, 0x1c
 /* 8010D444 0010A244  90 1F 00 04 */	stw r0, 4(r31)
-/* 8010D448 0010A248  3B A2 AA A4 */	addi r29, r2, cfg__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak12impact_decal-_SDA2_BASE_
+/* 8010D448 0010A248  3B A2 AA A4 */	addi r29, r2, cfg__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak12impact_decal@sda21
 /* 8010D44C 0010A24C  38 00 00 05 */	li r0, 5
 /* 8010D450 0010A250  EF FF 00 32 */	fmuls f31, f31, f0
 /* 8010D454 0010A254  90 9F 00 08 */	stw r4, 8(r31)
 /* 8010D458 0010A258  7F BD 2A 14 */	add r29, r29, r5
-/* 8010D45C 0010A25C  C0 42 AC 80 */	lfs f2, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010D45C 0010A25C  C0 42 AC 80 */	lfs f2, _esc__2_1438_0@sda21(r2)
 /* 8010D460 0010A260  90 1F 00 0C */	stw r0, 0xc(r31)
 /* 8010D464 0010A264  38 63 85 A1 */	addi r3, r3, 0xAC8785A1@l
 /* 8010D468 0010A268  C0 1D 00 00 */	lfs f0, 0(r29)
@@ -9077,19 +9077,19 @@ refresh_impact_decal__17zNPCBossOmnidroidFRQ26xDecal12emit_contextf:
 /* 8010D490 0010A290  D0 1F 00 2C */	stfs f0, 0x2c(r31)
 /* 8010D494 0010A294  90 1F 00 30 */	stw r0, 0x30(r31)
 /* 8010D498 0010A298  4B F5 EE 09 */	bl xSTFindAsset__FUiPUi
-/* 8010D49C 0010A29C  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010D49C 0010A29C  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010D4A0 0010A2A0  90 7F 00 34 */	stw r3, 0x34(r31)
 /* 8010D4A4 0010A2A4  38 7F 00 38 */	addi r3, r31, 0x38
 /* 8010D4A8 0010A2A8  FC 40 08 90 */	fmr f2, f1
 /* 8010D4AC 0010A2AC  4B F0 2E 9D */	bl assign__5xVec2Fff
-/* 8010D4B0 0010A2B0  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010D4B0 0010A2B0  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010D4B4 0010A2B4  38 7F 00 40 */	addi r3, r31, 0x40
 /* 8010D4B8 0010A2B8  FC 40 08 90 */	fmr f2, f1
 /* 8010D4BC 0010A2BC  4B F0 2E 8D */	bl assign__5xVec2Fff
-/* 8010D4C0 0010A2C0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010D4C0 0010A2C0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010D4C4 0010A2C4  C0 3D 00 04 */	lfs f1, 4(r29)
 /* 8010D4C8 0010A2C8  80 03 03 4C */	lwz r0, 0x34c(r3)
-/* 8010D4CC 0010A2CC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010D4CC 0010A2CC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010D4D0 0010A2D0  54 03 20 36 */	slwi r3, r0, 4
 /* 8010D4D4 0010A2D4  38 03 11 08 */	addi r0, r3, 0x1108
 /* 8010D4D8 0010A2D8  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -9116,7 +9116,7 @@ lbl_8010D514:
 /* 8010D524 0010A324  7C 1D 03 78 */	mr r29, r0
 /* 8010D528 0010A328  48 00 00 65 */	bl nodes__14xResponseCurveCFv
 /* 8010D52C 0010A32C  1C 03 00 1C */	mulli r0, r3, 0x1c
-/* 8010D530 0010A330  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010D530 0010A330  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010D534 0010A334  7C 1D 02 14 */	add r0, r29, r0
 /* 8010D538 0010A338  48 00 00 30 */	b lbl_8010D568
 lbl_8010D53C:
@@ -9164,19 +9164,19 @@ refresh_phase__17zNPCBossOmnidroidFv:
 /* 8010D5B0 0010A3B0  40 82 01 08 */	bne lbl_8010D6B8
 /* 8010D5B4 0010A3B4  80 A3 03 4C */	lwz r5, 0x34c(r3)
 /* 8010D5B8 0010A3B8  3C 00 43 30 */	lis r0, 0x4330
-/* 8010D5BC 0010A3BC  38 82 AC 60 */	addi r4, r2, variant_phases-_SDA2_BASE_
+/* 8010D5BC 0010A3BC  38 82 AC 60 */	addi r4, r2, variant_phases@sda21
 /* 8010D5C0 0010A3C0  90 01 00 08 */	stw r0, 8(r1)
 /* 8010D5C4 0010A3C4  54 A6 10 3A */	slwi r6, r5, 2
-/* 8010D5C8 0010A3C8  38 A2 A8 C0 */	addi r5, r2, max_health__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8010D5C8 0010A3C8  38 A2 A8 C0 */	addi r5, r2, max_health__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 8010D5CC 0010A3CC  7C E4 30 2E */	lwzx r7, r4, r6
-/* 8010D5D0 0010A3D0  C8 42 AC 90 */	lfd f2, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8010D5D0 0010A3D0  C8 42 AC 90 */	lfd f2, _esc__2_1488@sda21(r2)
 /* 8010D5D4 0010A3D4  7C E4 0E 70 */	srawi r4, r7, 1
 /* 8010D5D8 0010A3D8  7C 65 34 2E */	lfsx f3, r5, r6
 /* 8010D5DC 0010A3DC  7C 84 01 94 */	addze r4, r4
 /* 8010D5E0 0010A3E0  C0 83 03 54 */	lfs f4, 0x354(r3)
 /* 8010D5E4 0010A3E4  6C 84 80 00 */	xoris r4, r4, 0x8000
 /* 8010D5E8 0010A3E8  90 01 00 18 */	stw r0, 0x18(r1)
-/* 8010D5EC 0010A3EC  C0 02 AD 4C */	lfs f0, _esc__2_3023-_SDA2_BASE_(r2)
+/* 8010D5EC 0010A3EC  C0 02 AD 4C */	lfs f0, _esc__2_3023@sda21(r2)
 /* 8010D5F0 0010A3F0  90 81 00 0C */	stw r4, 0xc(r1)
 /* 8010D5F4 0010A3F4  80 A3 03 60 */	lwz r5, 0x360(r3)
 /* 8010D5F8 0010A3F8  C8 21 00 08 */	lfd f1, 8(r1)
@@ -9255,11 +9255,11 @@ refresh_hud__17zNPCBossOmnidroidFv:
 /* 8010D6EC 0010A4EC  7C 7E 1B 78 */	mr r30, r3
 /* 8010D6F0 0010A4F0  3C 60 43 30 */	lis r3, 0x4330
 /* 8010D6F4 0010A4F4  80 1E 03 4C */	lwz r0, 0x34c(r30)
-/* 8010D6F8 0010A4F8  38 A2 AC 60 */	addi r5, r2, variant_phases-_SDA2_BASE_
+/* 8010D6F8 0010A4F8  38 A2 AC 60 */	addi r5, r2, variant_phases@sda21
 /* 8010D6FC 0010A4FC  90 61 00 08 */	stw r3, 8(r1)
-/* 8010D700 0010A500  38 82 A8 C0 */	addi r4, r2, max_health__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8010D700 0010A500  38 82 A8 C0 */	addi r4, r2, max_health__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 8010D704 0010A504  54 00 10 3A */	slwi r0, r0, 2
-/* 8010D708 0010A508  C8 82 AC 90 */	lfd f4, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8010D708 0010A508  C8 82 AC 90 */	lfd f4, _esc__2_1488@sda21(r2)
 /* 8010D70C 0010A50C  7F E5 00 2E */	lwzx r31, r5, r0
 /* 8010D710 0010A510  7C A4 04 2E */	lfsx f5, r4, r0
 /* 8010D714 0010A514  7F E4 0E 70 */	srawi r4, r31, 1
@@ -9275,7 +9275,7 @@ refresh_hud__17zNPCBossOmnidroidFv:
 /* 8010D73C 0010A53C  C8 21 00 08 */	lfd f1, 8(r1)
 /* 8010D740 0010A540  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010D744 0010A544  EC 61 20 28 */	fsubs f3, f1, f4
-/* 8010D748 0010A548  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010D748 0010A548  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010D74C 0010A54C  C8 41 00 10 */	lfd f2, 0x10(r1)
 /* 8010D750 0010A550  EF C5 18 24 */	fdivs f30, f5, f3
 /* 8010D754 0010A554  EC 42 20 28 */	fsubs f2, f2, f4
@@ -9290,7 +9290,7 @@ lbl_8010D770:
 lbl_8010D774:
 /* 8010D774 0010A574  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010D778 0010A578  40 81 00 0C */	ble lbl_8010D784
-/* 8010D77C 0010A57C  C3 E2 A8 B0 */	lfs f31, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010D77C 0010A57C  C3 E2 A8 B0 */	lfs f31, _esc__2_1222@sda21(r2)
 /* 8010D780 0010A580  48 00 00 18 */	b lbl_8010D798
 lbl_8010D784:
 /* 8010D784 0010A584  FC 02 F0 40 */	fcmpo cr0, f2, f30
@@ -9300,7 +9300,7 @@ lbl_8010D784:
 lbl_8010D794:
 /* 8010D794 0010A594  FF E0 F0 90 */	fmr f31, f30
 lbl_8010D798:
-/* 8010D798 0010A598  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010D798 0010A598  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010D79C 0010A59C  54 84 06 3E */	clrlwi r4, r4, 0x18
 /* 8010D7A0 0010A5A0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8010D7A4 0010A5A4  80 63 00 F4 */	lwz r3, 0xf4(r3)
@@ -9309,9 +9309,9 @@ lbl_8010D798:
 /* 8010D7B0 0010A5B0  80 1E 03 60 */	lwz r0, 0x360(r30)
 /* 8010D7B4 0010A5B4  7C 00 F8 00 */	cmpw r0, r31
 /* 8010D7B8 0010A5B8  40 82 00 08 */	bne lbl_8010D7C0
-/* 8010D7BC 0010A5BC  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010D7BC 0010A5BC  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 lbl_8010D7C0:
-/* 8010D7C0 0010A5C0  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010D7C0 0010A5C0  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010D7C4 0010A5C4  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8010D7C8 0010A5C8  80 63 00 F4 */	lwz r3, 0xf4(r3)
 /* 8010D7CC 0010A5CC  48 0D 6A 31 */	bl set_health__Q24zHud9BossMeterFf
@@ -9370,16 +9370,16 @@ lbl_8010D880:
 /* 8010D888 0010A688  40 80 01 10 */	bge lbl_8010D998
 /* 8010D88C 0010A68C  48 00 00 B4 */	b lbl_8010D940
 lbl_8010D890:
-/* 8010D890 0010A690  C0 02 AD C0 */	lfs f0, _esc__2_3313_0-_SDA2_BASE_(r2)
+/* 8010D890 0010A690  C0 02 AD C0 */	lfs f0, _esc__2_3313_0@sda21(r2)
 /* 8010D894 0010A694  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010D898 0010A698  4C 41 13 82 */	cror 2, 1, 2
 /* 8010D89C 0010A69C  40 82 00 34 */	bne lbl_8010D8D0
-/* 8010D8A0 0010A6A0  C0 02 AC E4 */	lfs f0, _esc__2_2824-_SDA2_BASE_(r2)
+/* 8010D8A0 0010A6A0  C0 02 AC E4 */	lfs f0, _esc__2_2824@sda21(r2)
 /* 8010D8A4 0010A6A4  38 60 00 01 */	li r3, 1
 /* 8010D8A8 0010A6A8  38 00 00 09 */	li r0, 9
-/* 8010D8AC 0010A6AC  C0 42 AD 70 */	lfs f2, _esc__2_3037-_SDA2_BASE_(r2)
+/* 8010D8AC 0010A6AC  C0 42 AD 70 */	lfs f2, _esc__2_3037@sda21(r2)
 /* 8010D8B0 0010A6B0  EC 20 00 72 */	fmuls f1, f0, f1
-/* 8010D8B4 0010A6B4  C0 02 AD C4 */	lfs f0, _esc__2_3314-_SDA2_BASE_(r2)
+/* 8010D8B4 0010A6B4  C0 02 AD C4 */	lfs f0, _esc__2_3314@sda21(r2)
 /* 8010D8B8 0010A6B8  D0 3F 0D E8 */	stfs f1, 0xde8(r31)
 /* 8010D8BC 0010A6BC  90 7F 0D E0 */	stw r3, 0xde0(r31)
 /* 8010D8C0 0010A6C0  90 1F 0E 00 */	stw r0, 0xe00(r31)
@@ -9389,16 +9389,16 @@ lbl_8010D890:
 lbl_8010D8D0:
 /* 8010D8D0 0010A6D0  2C 04 00 02 */	cmpwi r4, 2
 /* 8010D8D4 0010A6D4  40 82 00 0C */	bne lbl_8010D8E0
-/* 8010D8D8 0010A6D8  C0 02 AC AC */	lfs f0, _esc__2_2015_1-_SDA2_BASE_(r2)
+/* 8010D8D8 0010A6D8  C0 02 AC AC */	lfs f0, _esc__2_2015_1@sda21(r2)
 /* 8010D8DC 0010A6DC  48 00 00 08 */	b lbl_8010D8E4
 lbl_8010D8E0:
-/* 8010D8E0 0010A6E0  C0 02 AC AC */	lfs f0, _esc__2_2015_1-_SDA2_BASE_(r2)
+/* 8010D8E0 0010A6E0  C0 02 AC AC */	lfs f0, _esc__2_2015_1@sda21(r2)
 lbl_8010D8E4:
 /* 8010D8E4 0010A6E4  EC 41 00 32 */	fmuls f2, f1, f0
 /* 8010D8E8 0010A6E8  38 60 00 02 */	li r3, 2
 /* 8010D8EC 0010A6EC  38 00 00 18 */	li r0, 0x18
-/* 8010D8F0 0010A6F0  C0 22 AC C8 */	lfs f1, _esc__2_2275-_SDA2_BASE_(r2)
-/* 8010D8F4 0010A6F4  C0 02 AD 8C */	lfs f0, _esc__2_3052-_SDA2_BASE_(r2)
+/* 8010D8F0 0010A6F0  C0 22 AC C8 */	lfs f1, _esc__2_2275@sda21(r2)
+/* 8010D8F4 0010A6F4  C0 02 AD 8C */	lfs f0, _esc__2_3052@sda21(r2)
 /* 8010D8F8 0010A6F8  D0 5F 0D E8 */	stfs f2, 0xde8(r31)
 /* 8010D8FC 0010A6FC  90 7F 0D E0 */	stw r3, 0xde0(r31)
 /* 8010D900 0010A700  90 1F 0E 00 */	stw r0, 0xe00(r31)
@@ -9406,13 +9406,13 @@ lbl_8010D8E4:
 /* 8010D908 0010A708  D0 1F 0D F8 */	stfs f0, 0xdf8(r31)
 /* 8010D90C 0010A70C  48 00 00 A8 */	b lbl_8010D9B4
 lbl_8010D910:
-/* 8010D910 0010A710  C0 02 AD C8 */	lfs f0, _esc__2_3315-_SDA2_BASE_(r2)
+/* 8010D910 0010A710  C0 02 AD C8 */	lfs f0, _esc__2_3315@sda21(r2)
 /* 8010D914 0010A714  38 00 00 04 */	li r0, 4
 /* 8010D918 0010A718  90 1F 0D E0 */	stw r0, 0xde0(r31)
 /* 8010D91C 0010A71C  38 00 00 19 */	li r0, 0x19
 /* 8010D920 0010A720  EC 40 00 72 */	fmuls f2, f0, f1
-/* 8010D924 0010A724  C0 22 AD 70 */	lfs f1, _esc__2_3037-_SDA2_BASE_(r2)
-/* 8010D928 0010A728  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010D924 0010A724  C0 22 AD 70 */	lfs f1, _esc__2_3037@sda21(r2)
+/* 8010D928 0010A728  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 8010D92C 0010A72C  D0 5F 0D E8 */	stfs f2, 0xde8(r31)
 /* 8010D930 0010A730  90 1F 0E 00 */	stw r0, 0xe00(r31)
 /* 8010D934 0010A734  D0 3F 0D F4 */	stfs f1, 0xdf4(r31)
@@ -9422,21 +9422,21 @@ lbl_8010D940:
 /* 8010D940 0010A740  38 60 00 05 */	li r3, 5
 /* 8010D944 0010A744  38 00 00 1A */	li r0, 0x1a
 /* 8010D948 0010A748  90 7F 0D E0 */	stw r3, 0xde0(r31)
-/* 8010D94C 0010A74C  C0 42 AD 70 */	lfs f2, _esc__2_3037-_SDA2_BASE_(r2)
+/* 8010D94C 0010A74C  C0 42 AD 70 */	lfs f2, _esc__2_3037@sda21(r2)
 /* 8010D950 0010A750  D0 3F 0D E8 */	stfs f1, 0xde8(r31)
-/* 8010D954 0010A754  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010D954 0010A754  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 8010D958 0010A758  90 1F 0E 00 */	stw r0, 0xe00(r31)
 /* 8010D95C 0010A75C  D0 5F 0D F4 */	stfs f2, 0xdf4(r31)
 /* 8010D960 0010A760  D0 1F 0D F8 */	stfs f0, 0xdf8(r31)
 /* 8010D964 0010A764  48 00 00 50 */	b lbl_8010D9B4
 lbl_8010D968:
-/* 8010D968 0010A768  C0 02 AD 48 */	lfs f0, _esc__2_3022-_SDA2_BASE_(r2)
+/* 8010D968 0010A768  C0 02 AD 48 */	lfs f0, _esc__2_3022@sda21(r2)
 /* 8010D96C 0010A76C  38 00 00 01 */	li r0, 1
 /* 8010D970 0010A770  90 1F 0D E0 */	stw r0, 0xde0(r31)
 /* 8010D974 0010A774  38 00 00 09 */	li r0, 9
 /* 8010D978 0010A778  EC 40 00 72 */	fmuls f2, f0, f1
-/* 8010D97C 0010A77C  C0 22 AD 70 */	lfs f1, _esc__2_3037-_SDA2_BASE_(r2)
-/* 8010D980 0010A780  C0 02 AD C4 */	lfs f0, _esc__2_3314-_SDA2_BASE_(r2)
+/* 8010D97C 0010A77C  C0 22 AD 70 */	lfs f1, _esc__2_3037@sda21(r2)
+/* 8010D980 0010A780  C0 02 AD C4 */	lfs f0, _esc__2_3314@sda21(r2)
 /* 8010D984 0010A784  D0 5F 0D E8 */	stfs f2, 0xde8(r31)
 /* 8010D988 0010A788  90 1F 0E 00 */	stw r0, 0xe00(r31)
 /* 8010D98C 0010A78C  D0 3F 0D F4 */	stfs f1, 0xdf4(r31)
@@ -9444,7 +9444,7 @@ lbl_8010D968:
 /* 8010D994 0010A794  48 00 00 20 */	b lbl_8010D9B4
 lbl_8010D998:
 /* 8010D998 0010A798  38 00 FF FF */	li r0, -1
-/* 8010D99C 0010A79C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010D99C 0010A79C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010D9A0 0010A7A0  90 1F 0D E0 */	stw r0, 0xde0(r31)
 /* 8010D9A4 0010A7A4  D0 1F 0D E8 */	stfs f0, 0xde8(r31)
 /* 8010D9A8 0010A7A8  90 1F 0E 00 */	stw r0, 0xe00(r31)
@@ -9454,7 +9454,7 @@ lbl_8010D9B4:
 /* 8010D9B4 0010A7B4  80 1F 0D E0 */	lwz r0, 0xde0(r31)
 /* 8010D9B8 0010A7B8  2C 00 FF FF */	cmpwi r0, -1
 /* 8010D9BC 0010A7BC  41 82 00 90 */	beq lbl_8010DA4C
-/* 8010D9C0 0010A7C0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010D9C0 0010A7C0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010D9C4 0010A7C4  7F E3 FB 78 */	mr r3, r31
 /* 8010D9C8 0010A7C8  D0 1F 0D FC */	stfs f0, 0xdfc(r31)
 /* 8010D9CC 0010A7CC  80 9F 0E 00 */	lwz r4, 0xe00(r31)
@@ -9545,7 +9545,7 @@ lbl_8010DADC:
 /* 8010DAE0 0010A8E0  4B FF FF 89 */	bl anim_duration__17zNPCBossOmnidroidCFQ217zNPCBossOmnidroid15anim_state_enum
 /* 8010DAE4 0010A8E4  48 00 00 08 */	b lbl_8010DAEC
 lbl_8010DAE8:
-/* 8010DAE8 0010A8E8  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010DAE8 0010A8E8  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 lbl_8010DAEC:
 /* 8010DAEC 0010A8EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8010DAF0 0010A8F0  7C 08 03 A6 */	mtlr r0
@@ -9580,7 +9580,7 @@ lbl_8010DB44:
 /* 8010DB54 0010A954  48 00 1F E9 */	bl play_hit_anim__Q217zNPCBossOmnidroid9head_typeFv
 /* 8010DB58 0010A958  80 9F 0E 00 */	lwz r4, 0xe00(r31)
 /* 8010DB5C 0010A95C  7F E3 FB 78 */	mr r3, r31
-/* 8010DB60 0010A960  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8010DB60 0010A960  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8010DB64 0010A964  38 A0 00 01 */	li r5, 1
 /* 8010DB68 0010A968  4B FF B6 BD */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8010DB6C 0010A96C  38 00 00 02 */	li r0, 2
@@ -9591,7 +9591,7 @@ lbl_8010DB78:
 /* 8010DB7C 0010A97C  48 00 1F C1 */	bl play_hit_anim__Q217zNPCBossOmnidroid9head_typeFv
 /* 8010DB80 0010A980  80 9F 0E 00 */	lwz r4, 0xe00(r31)
 /* 8010DB84 0010A984  7F E3 FB 78 */	mr r3, r31
-/* 8010DB88 0010A988  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8010DB88 0010A988  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8010DB8C 0010A98C  38 A0 00 01 */	li r5, 1
 /* 8010DB90 0010A990  4B FF B6 95 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8010DB94 0010A994  38 00 00 02 */	li r0, 2
@@ -9618,14 +9618,14 @@ lbl_8010DBA0:
 /* 8010DBE4 0010A9E4  80 1F 0D CC */	lwz r0, 0xdcc(r31)
 /* 8010DBE8 0010A9E8  7C 00 20 00 */	cmpw r0, r4
 /* 8010DBEC 0010A9EC  40 82 00 14 */	bne lbl_8010DC00
-/* 8010DBF0 0010A9F0  C0 22 AC 9C */	lfs f1, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 8010DBF0 0010A9F0  C0 22 AC 9C */	lfs f1, _esc__2_1659_1@sda21(r2)
 /* 8010DBF4 0010A9F4  7F E3 FB 78 */	mr r3, r31
 /* 8010DBF8 0010A9F8  4B FF DB 29 */	bl set_facing__17zNPCBossOmnidroidFif
 /* 8010DBFC 0010A9FC  48 00 00 88 */	b lbl_8010DC84
 lbl_8010DC00:
 /* 8010DC00 0010AA00  7C 00 28 00 */	cmpw r0, r5
 /* 8010DC04 0010AA04  40 82 00 18 */	bne lbl_8010DC1C
-/* 8010DC08 0010AA08  C0 22 AC 9C */	lfs f1, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 8010DC08 0010AA08  C0 22 AC 9C */	lfs f1, _esc__2_1659_1@sda21(r2)
 /* 8010DC0C 0010AA0C  7F E3 FB 78 */	mr r3, r31
 /* 8010DC10 0010AA10  7C A4 2B 78 */	mr r4, r5
 /* 8010DC14 0010AA14  4B FF DB 0D */	bl set_facing__17zNPCBossOmnidroidFif
@@ -9653,19 +9653,19 @@ lbl_8010DC50:
 lbl_8010DC5C:
 /* 8010DC5C 0010AA5C  7C 06 18 00 */	cmpw r6, r3
 /* 8010DC60 0010AA60  40 80 00 14 */	bge lbl_8010DC74
-/* 8010DC64 0010AA64  C0 22 AC 9C */	lfs f1, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 8010DC64 0010AA64  C0 22 AC 9C */	lfs f1, _esc__2_1659_1@sda21(r2)
 /* 8010DC68 0010AA68  7F E3 FB 78 */	mr r3, r31
 /* 8010DC6C 0010AA6C  4B FF DA B5 */	bl set_facing__17zNPCBossOmnidroidFif
 /* 8010DC70 0010AA70  48 00 00 14 */	b lbl_8010DC84
 lbl_8010DC74:
-/* 8010DC74 0010AA74  C0 22 AC 9C */	lfs f1, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 8010DC74 0010AA74  C0 22 AC 9C */	lfs f1, _esc__2_1659_1@sda21(r2)
 /* 8010DC78 0010AA78  7F E3 FB 78 */	mr r3, r31
 /* 8010DC7C 0010AA7C  7C A4 2B 78 */	mr r4, r5
 /* 8010DC80 0010AA80  4B FF DA A1 */	bl set_facing__17zNPCBossOmnidroidFif
 lbl_8010DC84:
-/* 8010DC84 0010AA84  C0 02 AD CC */	lfs f0, _esc__2_3364_0-_SDA2_BASE_(r2)
+/* 8010DC84 0010AA84  C0 02 AD CC */	lfs f0, _esc__2_3364_0@sda21(r2)
 /* 8010DC88 0010AA88  7F E3 FB 78 */	mr r3, r31
-/* 8010DC8C 0010AA8C  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8010DC8C 0010AA8C  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8010DC90 0010AA90  38 A0 00 01 */	li r5, 1
 /* 8010DC94 0010AA94  D0 1F 0B 7C */	stfs f0, 0xb7c(r31)
 /* 8010DC98 0010AA98  80 9F 0B 80 */	lwz r4, 0xb80(r31)
@@ -9679,12 +9679,12 @@ lbl_8010DC84:
 lbl_8010DCB8:
 /* 8010DCB8 0010AAB8  80 BF 0D F0 */	lwz r5, 0xdf0(r31)
 /* 8010DCBC 0010AABC  38 80 00 05 */	li r4, 5
-/* 8010DCC0 0010AAC0  C0 22 AC 9C */	lfs f1, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 8010DCC0 0010AAC0  C0 22 AC 9C */	lfs f1, _esc__2_1659_1@sda21(r2)
 /* 8010DCC4 0010AAC4  7C 05 23 D6 */	divw r0, r5, r4
 /* 8010DCC8 0010AAC8  7C 00 21 D6 */	mullw r0, r0, r4
 /* 8010DCCC 0010AACC  7C 80 28 50 */	subf r4, r0, r5
 /* 8010DCD0 0010AAD0  4B FF DA 51 */	bl set_facing__17zNPCBossOmnidroidFif
-/* 8010DCD4 0010AAD4  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8010DCD4 0010AAD4  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8010DCD8 0010AAD8  7F E3 FB 78 */	mr r3, r31
 /* 8010DCDC 0010AADC  38 80 00 18 */	li r4, 0x18
 /* 8010DCE0 0010AAE0  38 A0 00 01 */	li r5, 1
@@ -9709,7 +9709,7 @@ hit_update__17zNPCBossOmnidroidFf:
 /* 8010DD1C 0010AB1C  7C 7F 1B 78 */	mr r31, r3
 /* 8010DD20 0010AB20  FF E0 08 90 */	fmr f31, f1
 /* 8010DD24 0010AB24  C0 23 0B 7C */	lfs f1, 0xb7c(r3)
-/* 8010DD28 0010AB28  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010DD28 0010AB28  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010DD2C 0010AB2C  EC 21 F8 28 */	fsubs f1, f1, f31
 /* 8010DD30 0010AB30  D0 23 0B 7C */	stfs f1, 0xb7c(r3)
 /* 8010DD34 0010AB34  C0 23 0B 7C */	lfs f1, 0xb7c(r3)
@@ -9733,7 +9733,7 @@ lbl_8010DD68:
 /* 8010DD74 0010AB74  40 82 00 48 */	bne lbl_8010DDBC
 /* 8010DD78 0010AB78  80 9F 0E 00 */	lwz r4, 0xe00(r31)
 /* 8010DD7C 0010AB7C  7F E3 FB 78 */	mr r3, r31
-/* 8010DD80 0010AB80  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8010DD80 0010AB80  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8010DD84 0010AB84  38 A0 00 01 */	li r5, 1
 /* 8010DD88 0010AB88  4B FF B4 9D */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8010DD8C 0010AB8C  38 00 00 02 */	li r0, 2
@@ -9805,7 +9805,7 @@ anim_duration__17zNPCBossOmnidroidCFv:
 blending_facing__17zNPCBossOmnidroidCFv:
 /* 8010DE60 0010AC60  C0 23 0D D8 */	lfs f1, 0xdd8(r3)
 /* 8010DE64 0010AC64  38 A0 00 00 */	li r5, 0
-/* 8010DE68 0010AC68  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010DE68 0010AC68  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8010DE6C 0010AC6C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010DE70 0010AC70  41 80 00 14 */	blt lbl_8010DE84
 /* 8010DE74 0010AC74  80 83 0D D4 */	lwz r4, 0xdd4(r3)
@@ -9837,7 +9837,7 @@ hit_finished__17zNPCBossOmnidroidCFv:
 get_scaled_matrix__17zNPCBossOmnidroidCFR7xMat4x3:
 /* 8010DEB4 0010ACB4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010DEB8 0010ACB8  7C 08 02 A6 */	mflr r0
-/* 8010DEBC 0010ACBC  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8010DEBC 0010ACBC  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 8010DEC0 0010ACC0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010DEC4 0010ACC4  BF C1 00 08 */	stmw r30, 8(r1)
 /* 8010DEC8 0010ACC8  7C 7E 1B 78 */	mr r30, r3
@@ -9914,7 +9914,7 @@ clamp_by_arena_extent__17zNPCBossOmnidroidCFR5xVec3f:
 /* 8010DFC8 0010ADC8  BF C1 00 10 */	stmw r30, 0x10(r1)
 /* 8010DFCC 0010ADCC  7C 7E 1B 78 */	mr r30, r3
 /* 8010DFD0 0010ADD0  7C 9F 23 78 */	mr r31, r4
-/* 8010DFD4 0010ADD4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010DFD4 0010ADD4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010DFD8 0010ADD8  4B FF E0 D9 */	bl within_arena__17zNPCBossOmnidroidCFRC5xVec3f
 /* 8010DFDC 0010ADDC  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8010DFE0 0010ADE0  41 82 00 0C */	beq lbl_8010DFEC
@@ -9966,7 +9966,7 @@ nearest_arena_border_point__17zNPCBossOmnidroidCFR5xVec3f:
 /* 8010E084 0010AE84  38 C4 FF E8 */	addi r6, r4, -24
 /* 8010E088 0010AE88  EF E3 10 28 */	fsubs f31, f3, f2
 /* 8010E08C 0010AE8C  EF C1 00 28 */	fsubs f30, f1, f0
-/* 8010E090 0010AE90  C3 62 AD D0 */	lfs f27, _esc__2_3428-_SDA2_BASE_(r2)
+/* 8010E090 0010AE90  C3 62 AD D0 */	lfs f27, _esc__2_3428@sda21(r2)
 /* 8010E094 0010AE94  7C C3 32 14 */	add r6, r3, r6
 /* 8010E098 0010AE98  7F C3 22 14 */	add r30, r3, r4
 /* 8010E09C 0010AE9C  48 00 00 88 */	b lbl_8010E124
@@ -10035,7 +10035,7 @@ lbl_8010E124:
 .global xMath2NearestPointOnLine__FRfRfffffff
 xMath2NearestPointOnLine__FRfRfffffff:
 /* 8010E188 0010AF88  ED 26 20 28 */	fsubs f9, f6, f4
-/* 8010E18C 0010AF8C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010E18C 0010AF8C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010E190 0010AF90  EC 42 20 28 */	fsubs f2, f2, f4
 /* 8010E194 0010AF94  ED 05 18 28 */	fsubs f8, f5, f3
 /* 8010E198 0010AF98  EC E1 18 28 */	fsubs f7, f1, f3
@@ -10055,7 +10055,7 @@ lbl_8010E1C0:
 /* 8010E1CC 0010AFCC  4C 41 13 82 */	cror 2, 1, 2
 /* 8010E1D0 0010AFD0  40 82 00 14 */	bne lbl_8010E1E4
 /* 8010E1D4 0010AFD4  D0 A3 00 00 */	stfs f5, 0(r3)
-/* 8010E1D8 0010AFD8  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010E1D8 0010AFD8  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010E1DC 0010AFDC  D0 C4 00 00 */	stfs f6, 0(r4)
 /* 8010E1E0 0010AFE0  4E 80 00 20 */	blr 
 lbl_8010E1E4:
@@ -10137,15 +10137,15 @@ lbl_8010E2A8:
 /* 8010E2F4 0010B0F4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010E2F8 0010B0F8  41 81 00 6C */	bgt lbl_8010E364
 /* 8010E2FC 0010B0FC  ED 48 0F 78 */	fmsubs f10, f8, f29, f1
-/* 8010E300 0010B100  C0 02 AC 88 */	lfs f0, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 8010E300 0010B100  C0 02 AC 88 */	lfs f0, _esc__2_1441_1@sda21(r2)
 /* 8010E304 0010B104  FC 20 52 10 */	fabs f1, f10
 /* 8010E308 0010B108  FC 20 08 18 */	frsp f1, f1
 /* 8010E30C 0010B10C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010E310 0010B110  41 80 00 54 */	blt lbl_8010E364
-/* 8010E314 0010B114  C0 62 A8 B4 */	lfs f3, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010E314 0010B114  C0 62 A8 B4 */	lfs f3, _esc__2_1223@sda21(r2)
 /* 8010E318 0010B118  EC 3B 20 28 */	fsubs f1, f27, f4
 /* 8010E31C 0010B11C  EC 5A 30 28 */	fsubs f2, f26, f6
-/* 8010E320 0010B120  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010E320 0010B120  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010E324 0010B124  ED 43 50 24 */	fdivs f10, f3, f10
 /* 8010E328 0010B128  EC 3C 00 72 */	fmuls f1, f28, f1
 /* 8010E32C 0010B12C  EC 22 0F 78 */	fmsubs f1, f2, f29, f1
@@ -10217,9 +10217,9 @@ clip_ray_by_arena_far__17zNPCBossOmnidroidCFfffffPi:
 /* 8010E420 0010B220  FF 60 18 90 */	fmr f27, f3
 /* 8010E424 0010B224  1C A0 00 18 */	mulli r5, r0, 0x18
 /* 8010E428 0010B228  FF 80 20 90 */	fmr f28, f4
-/* 8010E42C 0010B22C  C3 E2 AD 9C */	lfs f31, _esc__2_3117-_SDA2_BASE_(r2)
+/* 8010E42C 0010B22C  C3 E2 AD 9C */	lfs f31, _esc__2_3117@sda21(r2)
 /* 8010E430 0010B230  FF A0 28 90 */	fmr f29, f5
-/* 8010E434 0010B234  C3 02 AC 88 */	lfs f24, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 8010E434 0010B234  C3 02 AC 88 */	lfs f24, _esc__2_1441_1@sda21(r2)
 /* 8010E438 0010B238  3B A5 FF E8 */	addi r29, r5, -24
 /* 8010E43C 0010B23C  7C 9A 23 78 */	mr r26, r4
 /* 8010E440 0010B240  7C 7C 1B 78 */	mr r28, r3
@@ -10251,10 +10251,10 @@ lbl_8010E450:
 /* 8010E4A4 0010B2A4  FC 00 00 18 */	frsp f0, f0
 /* 8010E4A8 0010B2A8  FC 00 C0 40 */	fcmpo cr0, f0, f24
 /* 8010E4AC 0010B2AC  41 80 00 60 */	blt lbl_8010E50C
-/* 8010E4B0 0010B2B0  C0 62 A8 B4 */	lfs f3, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010E4B0 0010B2B0  C0 62 A8 B4 */	lfs f3, _esc__2_1223@sda21(r2)
 /* 8010E4B4 0010B2B4  EC 3A 20 28 */	fsubs f1, f26, f4
 /* 8010E4B8 0010B2B8  EC 59 30 28 */	fsubs f2, f25, f6
-/* 8010E4BC 0010B2BC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010E4BC 0010B2BC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010E4C0 0010B2C0  ED 43 50 24 */	fdivs f10, f3, f10
 /* 8010E4C4 0010B2C4  EC 3B 00 72 */	fmuls f1, f27, f1
 /* 8010E4C8 0010B2C8  EC 22 0F 38 */	fmsubs f1, f2, f28, f1
@@ -10282,14 +10282,14 @@ lbl_8010E514:
 /* 8010E518 0010B318  40 82 FF 38 */	bne lbl_8010E450
 /* 8010E51C 0010B31C  28 1A 00 00 */	cmplwi r26, 0
 /* 8010E520 0010B320  41 82 00 54 */	beq lbl_8010E574
-/* 8010E524 0010B324  C0 02 AD 9C */	lfs f0, _esc__2_3117-_SDA2_BASE_(r2)
+/* 8010E524 0010B324  C0 02 AD 9C */	lfs f0, _esc__2_3117@sda21(r2)
 /* 8010E528 0010B328  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 8010E52C 0010B32C  40 82 00 10 */	bne lbl_8010E53C
 /* 8010E530 0010B330  38 00 00 00 */	li r0, 0
 /* 8010E534 0010B334  90 1A 00 00 */	stw r0, 0(r26)
 /* 8010E538 0010B338  48 00 00 3C */	b lbl_8010E574
 lbl_8010E53C:
-/* 8010E53C 0010B33C  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010E53C 0010B33C  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 8010E540 0010B340  FC 1E 00 40 */	fcmpo cr0, f30, f0
 /* 8010E544 0010B344  40 80 00 1C */	bge lbl_8010E560
 /* 8010E548 0010B348  80 79 0D C4 */	lwz r3, 0xdc4(r25)
@@ -10431,8 +10431,8 @@ get_yaw_to_target__17zNPCBossOmnidroidCFRC5xVec3:
 .global get_body_radius__17zNPCBossOmnidroidCFv
 get_body_radius__17zNPCBossOmnidroidCFv:
 /* 8010E730 0010B530  80 03 03 4C */	lwz r0, 0x34c(r3)
-/* 8010E734 0010B534  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 8010E738 0010B538  C0 22 AD D4 */	lfs f1, _esc__2_3552_0-_SDA2_BASE_(r2)
+/* 8010E734 0010B534  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 8010E738 0010B538  C0 22 AD D4 */	lfs f1, _esc__2_3552_0@sda21(r2)
 /* 8010E73C 0010B53C  54 00 10 3A */	slwi r0, r0, 2
 /* 8010E740 0010B540  7C 03 04 2E */	lfsx f0, r3, r0
 /* 8010E744 0010B544  EC 21 00 32 */	fmuls f1, f1, f0
@@ -10450,21 +10450,21 @@ refresh_ground_y__17zNPCBossOmnidroidFv:
 /* 8010E768 0010B568  93 EC FF FC */	stw r31, -4(r12)
 /* 8010E76C 0010B56C  7C 7F 1B 78 */	mr r31, r3
 /* 8010E770 0010B570  38 61 00 40 */	addi r3, r1, 0x40
-/* 8010E774 0010B574  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010E774 0010B574  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010E778 0010B578  80 84 00 28 */	lwz r4, 0x28(r4)
 /* 8010E77C 0010B57C  4B F3 CC 6D */	bl xModelGetBoneMatScaled__FR7xMat4x3RC14xModelInstanceUl
 /* 8010E780 0010B580  38 61 00 10 */	addi r3, r1, 0x10
 /* 8010E784 0010B584  38 81 00 40 */	addi r4, r1, 0x40
-/* 8010E788 0010B588  38 A2 A8 DC */	addi r5, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4body-_SDA2_BASE_
+/* 8010E788 0010B588  38 A2 A8 DC */	addi r5, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4body@sda21
 /* 8010E78C 0010B58C  4B EF EE 19 */	bl xMat4x3Toworld__FP5xVec3PC7xMat4x3PC5xVec3
-/* 8010E790 0010B590  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010E790 0010B590  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010E794 0010B594  38 61 00 1C */	addi r3, r1, 0x1c
-/* 8010E798 0010B598  C0 42 AC B8 */	lfs f2, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8010E798 0010B598  C0 42 AC B8 */	lfs f2, _esc__2_2040_0@sda21(r2)
 /* 8010E79C 0010B59C  FC 60 08 90 */	fmr f3, f1
 /* 8010E7A0 0010B5A0  4B EF F0 39 */	bl assign__5xVec3Ffff
-/* 8010E7A4 0010B5A4  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010E7A4 0010B5A4  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010E7A8 0010B5A8  3C 60 80 38 */	lis r3, globals@ha
-/* 8010E7AC 0010B5AC  C0 02 AD 70 */	lfs f0, _esc__2_3037-_SDA2_BASE_(r2)
+/* 8010E7AC 0010B5AC  C0 02 AD 70 */	lfs f0, _esc__2_3037@sda21(r2)
 /* 8010E7B0 0010B5B0  38 63 2A 38 */	addi r3, r3, globals@l
 /* 8010E7B4 0010B5B4  38 80 0C 00 */	li r4, 0xc00
 /* 8010E7B8 0010B5B8  38 00 00 00 */	li r0, 0
@@ -10487,7 +10487,7 @@ refresh_ground_y__17zNPCBossOmnidroidFv:
 /* 8010E7FC 0010B5FC  D0 1F 0B 6C */	stfs f0, 0xb6c(r31)
 /* 8010E800 0010B600  48 00 00 0C */	b lbl_8010E80C
 lbl_8010E804:
-/* 8010E804 0010B604  C0 02 AD D8 */	lfs f0, _esc__2_3560_0-_SDA2_BASE_(r2)
+/* 8010E804 0010B604  C0 02 AD D8 */	lfs f0, _esc__2_3560_0@sda21(r2)
 /* 8010E808 0010B608  D0 1F 0B 6C */	stfs f0, 0xb6c(r31)
 lbl_8010E80C:
 /* 8010E80C 0010B60C  81 41 00 00 */	lwz r10, 0(r1)
@@ -10504,11 +10504,11 @@ update_targetting__17zNPCBossOmnidroidFv:
 /* 8010E82C 0010B62C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010E830 0010B630  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8010E834 0010B634  7C 7F 1B 78 */	mr r31, r3
-/* 8010E838 0010B638  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8010E838 0010B638  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 8010E83C 0010B63C  80 64 04 C4 */	lwz r3, 0x4c4(r4)
 /* 8010E840 0010B640  4B F7 8D D9 */	bl xEntGetFrame__FPC4xEnt
 /* 8010E844 0010B644  C0 23 00 38 */	lfs f1, 0x38(r3)
-/* 8010E848 0010B648  38 82 A9 90 */	addi r4, r2, target_dist_min__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 8010E848 0010B648  38 82 A9 90 */	addi r4, r2, target_dist_min__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 8010E84C 0010B64C  C0 1F 02 38 */	lfs f0, 0x238(r31)
 /* 8010E850 0010B650  80 1F 03 4C */	lwz r0, 0x34c(r31)
 /* 8010E854 0010B654  EC 61 00 28 */	fsubs f3, f1, f0
@@ -10532,7 +10532,7 @@ update_targetting__17zNPCBossOmnidroidFv:
 
 .global at_perch__17zNPCBossOmnidroidCFv
 at_perch__17zNPCBossOmnidroidCFv:
-/* 8010E89C 0010B69C  C0 42 AD DC */	lfs f2, _esc__2_3580-_SDA2_BASE_(r2)
+/* 8010E89C 0010B69C  C0 42 AD DC */	lfs f2, _esc__2_3580@sda21(r2)
 /* 8010E8A0 0010B6A0  38 A0 00 00 */	li r5, 0
 /* 8010E8A4 0010B6A4  38 80 00 00 */	li r4, 0
 /* 8010E8A8 0010B6A8  48 00 00 78 */	b lbl_8010E920
@@ -10587,11 +10587,11 @@ near_player__17zNPCBossOmnidroidCFv:
 /* 8010E94C 0010B74C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010E950 0010B750  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8010E954 0010B754  7C 7F 1B 78 */	mr r31, r3
-/* 8010E958 0010B758  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8010E958 0010B758  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 8010E95C 0010B75C  80 64 04 C4 */	lwz r3, 0x4c4(r4)
 /* 8010E960 0010B760  4B EF CA C9 */	bl xEntGetCenter__FPC4xEnt
-/* 8010E964 0010B764  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8010E968 0010B768  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8010E964 0010B764  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8010E968 0010B768  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 8010E96C 0010B76C  C0 3F 02 38 */	lfs f1, 0x238(r31)
 /* 8010E970 0010B770  C0 03 00 08 */	lfs f0, 8(r3)
 /* 8010E974 0010B774  80 05 03 4C */	lwz r0, 0x34c(r5)
@@ -10599,7 +10599,7 @@ near_player__17zNPCBossOmnidroidCFv:
 /* 8010E97C 0010B77C  C0 7F 02 30 */	lfs f3, 0x230(r31)
 /* 8010E980 0010B780  54 00 10 3A */	slwi r0, r0, 2
 /* 8010E984 0010B784  C0 43 00 00 */	lfs f2, 0(r3)
-/* 8010E988 0010B788  C0 22 AD E0 */	lfs f1, _esc__2_3585-_SDA2_BASE_(r2)
+/* 8010E988 0010B788  C0 22 AD E0 */	lfs f1, _esc__2_3585@sda21(r2)
 /* 8010E98C 0010B78C  7C 04 04 2E */	lfsx f0, r4, r0
 /* 8010E990 0010B790  EC 43 10 28 */	fsubs f2, f3, f2
 /* 8010E994 0010B794  EC 01 00 32 */	fmuls f0, f1, f0
@@ -10680,13 +10680,13 @@ lbl_8010EA88:
 lbl_8010EAA0:
 /* 8010EAA0 0010B8A0  7C 1D F0 40 */	cmplw r29, r30
 /* 8010EAA4 0010B8A4  40 82 FF E4 */	bne lbl_8010EA88
-/* 8010EAA8 0010B8A8  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010EAA8 0010B8A8  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010EAAC 0010B8AC  38 80 00 00 */	li r4, 0
 /* 8010EAB0 0010B8B0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8010EAB4 0010B8B4  80 63 00 F4 */	lwz r3, 0xf4(r3)
 /* 8010EAB8 0010B8B8  48 0D 56 4D */	bl set_stage_count__Q24zHud9BossMeterFUc
 /* 8010EABC 0010B8BC  3C 60 80 2E */	lis r3, _esc__2_stringBase0_73@ha
-/* 8010EAC0 0010B8C0  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010EAC0 0010B8C0  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010EAC4 0010B8C4  38 63 22 28 */	addi r3, r3, _esc__2_stringBase0_73@l
 /* 8010EAC8 0010B8C8  38 63 02 49 */	addi r3, r3, 0x249
 /* 8010EACC 0010B8CC  48 0B 8F D5 */	bl add__5statsFPCcf
@@ -10748,17 +10748,17 @@ get_stomp_placement__17zNPCBossOmnidroidCFP5xVec3P5xVec3iRC5xVec3fffff:
 /* 8010EB7C 0010B97C  DA 41 00 40 */	stfd f18, 0x40(r1)
 /* 8010EB80 0010B980  F2 41 00 48 */	psq_st f18, 72(r1), 0, qr0
 /* 8010EB84 0010B984  BF 41 00 28 */	stmw r26, 0x28(r1)
-/* 8010EB88 0010B988  81 0D CC 18 */	lwz r8, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010EB88 0010B988  81 0D CC 18 */	lwz r8, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010EB8C 0010B98C  FF 00 10 90 */	fmr f24, f2
 /* 8010EB90 0010B990  FF 20 20 90 */	fmr f25, f4
-/* 8010EB94 0010B994  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8010EB94 0010B994  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 8010EB98 0010B998  80 08 03 4C */	lwz r0, 0x34c(r8)
 /* 8010EB9C 0010B99C  7C 9A 23 78 */	mr r26, r4
 /* 8010EBA0 0010B9A0  EC 43 C0 28 */	fsubs f2, f3, f24
 /* 8010EBA4 0010B9A4  54 00 10 3A */	slwi r0, r0, 2
 /* 8010EBA8 0010B9A8  7C 83 04 2E */	lfsx f4, r3, r0
 /* 8010EBAC 0010B9AC  EC 05 C8 28 */	fsubs f0, f5, f25
-/* 8010EBB0 0010B9B0  C0 62 AC 8C */	lfs f3, _esc__2_1448_0-_SDA2_BASE_(r2)
+/* 8010EBB0 0010B9B0  C0 62 AC 8C */	lfs f3, _esc__2_1448_0@sda21(r2)
 /* 8010EBB4 0010B9B4  7C BB 2B 78 */	mr r27, r5
 /* 8010EBB8 0010B9B8  EE E1 01 32 */	fmuls f23, f1, f4
 /* 8010EBBC 0010B9BC  C3 C7 00 00 */	lfs f30, 0(r7)
@@ -10766,10 +10766,10 @@ get_stomp_placement__17zNPCBossOmnidroidCFP5xVec3P5xVec3iRC5xVec3fffff:
 /* 8010EBC4 0010B9C4  EF 43 00 32 */	fmuls f26, f3, f0
 /* 8010EBC8 0010B9C8  C3 A7 00 04 */	lfs f29, 4(r7)
 /* 8010EBCC 0010B9CC  C3 87 00 08 */	lfs f28, 8(r7)
-/* 8010EBD0 0010B9D0  CB E2 AC 78 */	lfd f31, _esc__2_1431-_SDA2_BASE_(r2)
+/* 8010EBD0 0010B9D0  CB E2 AC 78 */	lfd f31, _esc__2_1431@sda21(r2)
 /* 8010EBD4 0010B9D4  7C DC 33 78 */	mr r28, r6
-/* 8010EBD8 0010B9D8  C2 62 AC 6C */	lfs f19, _esc__2_1428_0-_SDA2_BASE_(r2)
-/* 8010EBDC 0010B9DC  C2 82 AC E8 */	lfs f20, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8010EBD8 0010B9D8  C2 62 AC 6C */	lfs f19, _esc__2_1428_0@sda21(r2)
+/* 8010EBDC 0010B9DC  C2 82 AC E8 */	lfs f20, _esc__2_2843@sda21(r2)
 /* 8010EBE0 0010B9E0  3B A0 00 00 */	li r29, 0
 /* 8010EBE4 0010B9E4  3B E0 00 00 */	li r31, 0
 /* 8010EBE8 0010B9E8  3F C0 43 30 */	lis r30, 0x4330
@@ -11016,14 +11016,14 @@ gimme_throw_delay__17zNPCBossOmnidroidCFv:
 /* 8010EF0C 0010BD0C  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 8010EF10 0010BD10  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 8010EF14 0010BD14  BF C1 00 08 */	stmw r30, 8(r1)
-/* 8010EF18 0010BD18  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010EF18 0010BD18  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010EF1C 0010BD1C  38 63 0D 60 */	addi r3, r3, 0xd60
 /* 8010EF20 0010BD20  48 00 00 89 */	bl begin__29pool_list_esc__0_Q21z12rubble_chunk_esc__1_CFv
-/* 8010EF24 0010BD24  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010EF24 0010BD24  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010EF28 0010BD28  7C 7E 1B 78 */	mr r30, r3
 /* 8010EF2C 0010BD2C  38 64 0D 60 */	addi r3, r4, 0xd60
 /* 8010EF30 0010BD30  48 00 00 71 */	bl end__29pool_list_esc__0_Q21z12rubble_chunk_esc__1_CFv
-/* 8010EF34 0010BD34  C3 E2 A8 B0 */	lfs f31, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010EF34 0010BD34  C3 E2 A8 B0 */	lfs f31, _esc__2_1222@sda21(r2)
 /* 8010EF38 0010BD38  7C 7F 1B 78 */	mr r31, r3
 /* 8010EF3C 0010BD3C  48 00 00 3C */	b lbl_8010EF78
 lbl_8010EF40:
@@ -11032,13 +11032,13 @@ lbl_8010EF40:
 /* 8010EF48 0010BD48  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 8010EF4C 0010BD4C  4C 40 13 82 */	cror 2, 0, 2
 /* 8010EF50 0010BD50  41 82 00 24 */	beq lbl_8010EF74
-/* 8010EF54 0010BD54  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010EF54 0010BD54  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 8010EF58 0010BD58  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010EF5C 0010BD5C  40 81 00 0C */	ble lbl_8010EF68
 /* 8010EF60 0010BD60  FC 20 F8 90 */	fmr f1, f31
 /* 8010EF64 0010BD64  48 00 00 20 */	b lbl_8010EF84
 lbl_8010EF68:
-/* 8010EF68 0010BD68  C0 02 AC 9C */	lfs f0, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 8010EF68 0010BD68  C0 02 AC 9C */	lfs f0, _esc__2_1659_1@sda21(r2)
 /* 8010EF6C 0010BD6C  EC 20 08 2A */	fadds f1, f0, f1
 /* 8010EF70 0010BD70  48 00 00 14 */	b lbl_8010EF84
 lbl_8010EF74:
@@ -11046,7 +11046,7 @@ lbl_8010EF74:
 lbl_8010EF78:
 /* 8010EF78 0010BD78  7C 1E F8 40 */	cmplw r30, r31
 /* 8010EF7C 0010BD7C  40 82 FF C4 */	bne lbl_8010EF40
-/* 8010EF80 0010BD80  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010EF80 0010BD80  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 lbl_8010EF84:
 /* 8010EF84 0010BD84  E3 E1 00 18 */	psq_l f31, 24(r1), 0, qr0
 /* 8010EF88 0010BD88  CB E1 00 10 */	lfd f31, 0x10(r1)
@@ -11186,14 +11186,14 @@ get_historical_probability__17zNPCBossOmnidroidCFQ217zNPCBossOmnidroid11action_e
 /* 8010F134 0010BF34  3C A0 80 2E */	lis r5, historical_probabilities__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@ha
 /* 8010F138 0010BF38  54 86 28 34 */	slwi r6, r4, 5
 /* 8010F13C 0010BF3C  38 05 1F 54 */	addi r0, r5, historical_probabilities__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@l
-/* 8010F140 0010BF40  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010F140 0010BF40  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010F144 0010BF44  7C E0 32 14 */	add r7, r0, r6
 /* 8010F148 0010BF48  C0 07 00 00 */	lfs f0, 0(r7)
 /* 8010F14C 0010BF4C  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 8010F150 0010BF50  40 82 00 68 */	bne lbl_8010F1B8
 /* 8010F154 0010BF54  80 C3 0B 68 */	lwz r6, 0xb68(r3)
 /* 8010F158 0010BF58  39 00 00 01 */	li r8, 1
-/* 8010F15C 0010BF5C  C0 02 AD 9C */	lfs f0, _esc__2_3117-_SDA2_BASE_(r2)
+/* 8010F15C 0010BF5C  C0 02 AD 9C */	lfs f0, _esc__2_3117@sda21(r2)
 /* 8010F160 0010BF60  38 A0 00 04 */	li r5, 4
 /* 8010F164 0010BF64  38 06 FF FF */	addi r0, r6, -1
 /* 8010F168 0010BF68  7C 09 03 A6 */	mtctr r0
@@ -11220,7 +11220,7 @@ lbl_8010F174:
 lbl_8010F1B8:
 /* 8010F1B8 0010BFB8  80 03 0B 68 */	lwz r0, 0xb68(r3)
 /* 8010F1BC 0010BFBC  39 00 00 00 */	li r8, 0
-/* 8010F1C0 0010BFC0  C0 02 AD 9C */	lfs f0, _esc__2_3117-_SDA2_BASE_(r2)
+/* 8010F1C0 0010BFC0  C0 02 AD 9C */	lfs f0, _esc__2_3117@sda21(r2)
 /* 8010F1C4 0010BFC4  38 A0 00 00 */	li r5, 0
 /* 8010F1C8 0010BFC8  7C 09 03 A6 */	mtctr r0
 /* 8010F1CC 0010BFCC  2C 00 00 00 */	cmpwi r0, 0
@@ -11241,7 +11241,7 @@ lbl_8010F1D4:
 /* 8010F204 0010C004  38 A5 00 04 */	addi r5, r5, 4
 /* 8010F208 0010C008  42 00 FF CC */	bdnz lbl_8010F1D4
 lbl_8010F20C:
-/* 8010F20C 0010C00C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010F20C 0010C00C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010F210 0010C010  4E 80 00 20 */	blr 
 
 .global get_last_usage__17zNPCBossOmnidroidCFQ217zNPCBossOmnidroid11action_enumi
@@ -11291,7 +11291,7 @@ add_choices__17zNPCBossOmnidroidFPCQ217zNPCBossOmnidroid18action_choice_data:
 /* 8010F294 0010C094  DB C1 00 20 */	stfd f30, 0x20(r1)
 /* 8010F298 0010C098  F3 C1 00 28 */	psq_st f30, 40(r1), 0, qr0
 /* 8010F29C 0010C09C  BF 81 00 10 */	stmw r28, 0x10(r1)
-/* 8010F2A0 0010C0A0  C3 C2 A8 B0 */	lfs f30, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010F2A0 0010C0A0  C3 C2 A8 B0 */	lfs f30, _esc__2_1222@sda21(r2)
 /* 8010F2A4 0010C0A4  7C 7F 1B 78 */	mr r31, r3
 /* 8010F2A8 0010C0A8  7C 9D 23 78 */	mr r29, r4
 /* 8010F2AC 0010C0AC  48 00 00 E4 */	b lbl_8010F390
@@ -11313,7 +11313,7 @@ lbl_8010F2B0:
 /* 8010F2E8 0010C0E8  7D 89 03 A6 */	mtctr r12
 /* 8010F2EC 0010C0EC  4E 80 04 21 */	bctrl 
 /* 8010F2F0 0010C0F0  FF E0 08 90 */	fmr f31, f1
-/* 8010F2F4 0010C0F4  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010F2F4 0010C0F4  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010F2F8 0010C0F8  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8010F2FC 0010C0FC  41 80 00 90 */	blt lbl_8010F38C
 /* 8010F300 0010C100  7F 83 E3 78 */	mr r3, r28
@@ -11391,7 +11391,7 @@ make_choice__17zNPCBossOmnidroidFv:
 /* 8010F3E4 0010C1E4  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 8010F3E8 0010C1E8  BF C1 00 08 */	stmw r30, 8(r1)
 /* 8010F3EC 0010C1EC  7C 7E 1B 78 */	mr r30, r3
-/* 8010F3F0 0010C1F0  C3 E2 A8 B0 */	lfs f31, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010F3F0 0010C1F0  C3 E2 A8 B0 */	lfs f31, _esc__2_1222@sda21(r2)
 /* 8010F3F4 0010C1F4  80 03 05 44 */	lwz r0, 0x544(r3)
 /* 8010F3F8 0010C1F8  38 9E 03 64 */	addi r4, r30, 0x364
 /* 8010F3FC 0010C1FC  1C 60 00 18 */	mulli r3, r0, 0x18
@@ -11440,14 +11440,14 @@ setup__Q217zNPCBossOmnidroid9head_typeFv:
 /* 8010F484 0010C284  38 00 00 00 */	li r0, 0
 /* 8010F488 0010C288  BF C1 00 08 */	stmw r30, 8(r1)
 /* 8010F48C 0010C28C  7C 7E 1B 78 */	mr r30, r3
-/* 8010F490 0010C290  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010F490 0010C290  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010F494 0010C294  38 64 11 C0 */	addi r3, r4, 0x11c0
 /* 8010F498 0010C298  90 1E 02 10 */	stw r0, 0x210(r30)
 /* 8010F49C 0010C29C  7C 63 F0 50 */	subf r3, r3, r30
 /* 8010F4A0 0010C2A0  38 00 02 D0 */	li r0, 0x2d0
 /* 8010F4A4 0010C2A4  7F E3 03 D6 */	divw r31, r3, r0
-/* 8010F4A8 0010C2A8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8010F4AC 0010C2AC  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8010F4A8 0010C2A8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8010F4AC 0010C2AC  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 8010F4B0 0010C2B0  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 8010F4B4 0010C2B4  38 65 29 8F */	addi r3, r5, 0xE2A4298F@l
 /* 8010F4B8 0010C2B8  54 00 10 3A */	slwi r0, r0, 2
@@ -11461,7 +11461,7 @@ setup__Q217zNPCBossOmnidroid9head_typeFv:
 /* 8010F4D8 0010C2D8  4B FF 75 15 */	bl load_raster__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FUi
 /* 8010F4DC 0010C2DC  90 7E 02 5C */	stw r3, 0x25c(r30)
 /* 8010F4E0 0010C2E0  57 E0 18 38 */	slwi r0, r31, 3
-/* 8010F4E4 0010C2E4  38 6D 93 88 */	addi r3, r13, hit_explosion__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA_BASE_
+/* 8010F4E4 0010C2E4  38 6D 93 88 */	addi r3, r13, hit_explosion__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 8010F4E8 0010C2E8  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8010F4EC 0010C2EC  28 03 00 00 */	cmplwi r3, 0
 /* 8010F4F0 0010C2F0  40 82 00 0C */	bne lbl_8010F4FC
@@ -11475,14 +11475,14 @@ lbl_8010F500:
 /* 8010F508 0010C308  40 82 00 1C */	bne lbl_8010F524
 /* 8010F50C 0010C30C  38 7E 02 7C */	addi r3, r30, 0x27c
 /* 8010F510 0010C310  38 80 00 01 */	li r4, 1
-/* 8010F514 0010C314  38 A2 AD E4 */	addi r5, r2, curve_top_esc__7_3831-_SDA2_BASE_
+/* 8010F514 0010C314  38 A2 AD E4 */	addi r5, r2, curve_top_esc__7_3831@sda21
 /* 8010F518 0010C318  38 C0 00 04 */	li r6, 4
 /* 8010F51C 0010C31C  4B F3 51 AD */	bl reset__14xResponseCurveFUiPCvUi
 /* 8010F520 0010C320  48 00 00 18 */	b lbl_8010F538
 lbl_8010F524:
 /* 8010F524 0010C324  38 7E 02 7C */	addi r3, r30, 0x27c
 /* 8010F528 0010C328  38 80 00 01 */	li r4, 1
-/* 8010F52C 0010C32C  38 A2 AE 04 */	addi r5, r2, curve_bottom_esc__7_3833-_SDA2_BASE_
+/* 8010F52C 0010C32C  38 A2 AE 04 */	addi r5, r2, curve_bottom_esc__7_3833@sda21
 /* 8010F530 0010C330  38 C0 00 04 */	li r6, 4
 /* 8010F534 0010C334  4B F3 51 95 */	bl reset__14xResponseCurveFUiPCvUi
 lbl_8010F538:
@@ -11512,7 +11512,7 @@ lbl_8010F574:
 /* 8010F584 0010C384  4B FB 86 F5 */	bl stop__Q210zExplosion13trail_emitterFv
 lbl_8010F588:
 /* 8010F588 0010C388  38 00 00 00 */	li r0, 0
-/* 8010F58C 0010C38C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010F58C 0010C38C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010F590 0010C390  90 1F 02 10 */	stw r0, 0x210(r31)
 /* 8010F594 0010C394  7F E3 FB 78 */	mr r3, r31
 /* 8010F598 0010C398  80 1F 02 10 */	lwz r0, 0x210(r31)
@@ -11536,7 +11536,7 @@ post_reset__Q217zNPCBossOmnidroid9head_typeFv:
 /* 8010F5D4 0010C3D4  7C 7F 1B 78 */	mr r31, r3
 /* 8010F5D8 0010C3D8  48 00 0B 05 */	bl refresh_goal__Q217zNPCBossOmnidroid9head_typeFv
 /* 8010F5DC 0010C3DC  C0 1F 02 28 */	lfs f0, 0x228(r31)
-/* 8010F5E0 0010C3E0  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010F5E0 0010C3E0  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010F5E4 0010C3E4  D0 1F 02 24 */	stfs f0, 0x224(r31)
 /* 8010F5E8 0010C3E8  D0 3F 02 2C */	stfs f1, 0x22c(r31)
 /* 8010F5EC 0010C3EC  C0 1F 02 34 */	lfs f0, 0x234(r31)
@@ -11573,7 +11573,7 @@ update__Q217zNPCBossOmnidroid9head_typeFf:
 /* 8010F650 0010C450  7C 7F 1B 78 */	mr r31, r3
 /* 8010F654 0010C454  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 8010F658 0010C458  41 82 00 1C */	beq lbl_8010F674
-/* 8010F65C 0010C45C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8010F65C 0010C45C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8010F660 0010C460  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8010F664 0010C464  4B EF BD C5 */	bl xEntGetCenter__FPC4xEnt
 /* 8010F668 0010C468  7C 64 1B 78 */	mr r4, r3
@@ -11599,7 +11599,7 @@ lbl_8010F674:
 /* 8010F6B4 0010C4B4  54 60 07 7B */	rlwinm. r0, r3, 0, 0x1d, 0x1d
 /* 8010F6B8 0010C4B8  41 82 00 2C */	beq lbl_8010F6E4
 /* 8010F6BC 0010C4BC  C0 1F 02 28 */	lfs f0, 0x228(r31)
-/* 8010F6C0 0010C4C0  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010F6C0 0010C4C0  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010F6C4 0010C4C4  D0 1F 02 24 */	stfs f0, 0x224(r31)
 /* 8010F6C8 0010C4C8  D0 3F 02 2C */	stfs f1, 0x22c(r31)
 /* 8010F6CC 0010C4CC  C0 1F 02 34 */	lfs f0, 0x234(r31)
@@ -11621,7 +11621,7 @@ lbl_8010F6F8:
 /* 8010F704 0010C504  3B C0 00 00 */	li r30, 0
 /* 8010F708 0010C508  54 00 07 BD */	rlwinm. r0, r0, 0, 0x1e, 0x1e
 /* 8010F70C 0010C50C  41 82 00 30 */	beq lbl_8010F73C
-/* 8010F710 0010C510  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010F710 0010C510  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010F714 0010C514  88 03 01 F3 */	lbz r0, 0x1f3(r3)
 /* 8010F718 0010C518  28 00 00 00 */	cmplwi r0, 0
 /* 8010F71C 0010C51C  40 82 00 20 */	bne lbl_8010F73C
@@ -11658,9 +11658,9 @@ lbl_8010F770:
 /* 8010F790 0010C590  54 00 06 F2 */	rlwinm r0, r0, 0, 0x1b, 0x19
 /* 8010F794 0010C594  90 1F 02 10 */	stw r0, 0x210(r31)
 lbl_8010F798:
-/* 8010F798 0010C598  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010F798 0010C598  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010F79C 0010C59C  38 00 02 D0 */	li r0, 0x2d0
-/* 8010F7A0 0010C5A0  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 8010F7A0 0010C5A0  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 8010F7A4 0010C5A4  38 7F 02 00 */	addi r3, r31, 0x200
 /* 8010F7A8 0010C5A8  38 C4 11 C0 */	addi r6, r4, 0x11c0
 /* 8010F7AC 0010C5AC  80 84 00 28 */	lwz r4, 0x28(r4)
@@ -11690,10 +11690,10 @@ render__Q217zNPCBossOmnidroid9head_typeFv:
 /* 8010F800 0010C600  80 03 02 10 */	lwz r0, 0x210(r3)
 /* 8010F804 0010C604  54 00 07 BD */	rlwinm. r0, r0, 0, 0x1e, 0x1e
 /* 8010F808 0010C608  41 82 00 A0 */	beq lbl_8010F8A8
-/* 8010F80C 0010C60C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010F80C 0010C60C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010F810 0010C610  38 00 02 D0 */	li r0, 0x2d0
 /* 8010F814 0010C614  80 7D 02 58 */	lwz r3, 0x258(r29)
-/* 8010F818 0010C618  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 8010F818 0010C618  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 8010F81C 0010C61C  38 C4 11 C0 */	addi r6, r4, 0x11c0
 /* 8010F820 0010C620  80 84 00 28 */	lwz r4, 0x28(r4)
 /* 8010F824 0010C624  7C C6 E8 50 */	subf r6, r6, r29
@@ -11704,12 +11704,12 @@ render__Q217zNPCBossOmnidroid9head_typeFv:
 /* 8010F838 0010C638  7C A5 00 2E */	lwzx r5, r5, r0
 /* 8010F83C 0010C63C  7C BF 2B 78 */	mr r31, r5
 /* 8010F840 0010C640  4B F3 BB A9 */	bl xModelGetBoneMatScaled__FR7xMat4x3RC14xModelInstanceUl
-/* 8010F844 0010C644  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010F844 0010C644  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010F848 0010C648  7F C3 F3 78 */	mr r3, r30
 /* 8010F84C 0010C64C  7F E5 FB 78 */	mr r5, r31
 /* 8010F850 0010C650  80 84 00 28 */	lwz r4, 0x28(r4)
 /* 8010F854 0010C654  4B F3 BA 69 */	bl xModelGetBoneMat__FR7xMat3x3RC14xModelInstanceUl
-/* 8010F858 0010C658  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010F858 0010C658  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010F85C 0010C65C  38 03 14 90 */	addi r0, r3, 0x1490
 /* 8010F860 0010C660  7C 1D 00 40 */	cmplw r29, r0
 /* 8010F864 0010C664  40 82 00 14 */	bne lbl_8010F878
@@ -11720,7 +11720,7 @@ render__Q217zNPCBossOmnidroid9head_typeFv:
 lbl_8010F878:
 /* 8010F878 0010C678  38 61 00 10 */	addi r3, r1, 0x10
 /* 8010F87C 0010C67C  38 81 00 20 */	addi r4, r1, 0x20
-/* 8010F880 0010C680  38 A2 A9 78 */	addi r5, r2, eye_offset__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 8010F880 0010C680  38 A2 A9 78 */	addi r5, r2, eye_offset__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 8010F884 0010C684  4B FF 73 A1 */	bl xMat3x3RMulVec__FP5xVec3PC7xMat3x3PC5xVec3_25
 /* 8010F888 0010C688  38 7E 00 30 */	addi r3, r30, 0x30
 /* 8010F88C 0010C68C  38 81 00 50 */	addi r4, r1, 0x50
@@ -11749,12 +11749,12 @@ get_eye_surface_loc__Q217zNPCBossOmnidroid9head_typeCFR5xVec3:
 /* 8010F8CC 0010C6CC  21 6B FF A0 */	subfic r11, r11, -96
 /* 8010F8D0 0010C6D0  7C 21 59 6E */	stwux r1, r1, r11
 /* 8010F8D4 0010C6D4  7C 08 02 A6 */	mflr r0
-/* 8010F8D8 0010C6D8  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 8010F8D8 0010C6D8  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 8010F8DC 0010C6DC  90 0C 00 04 */	stw r0, 4(r12)
 /* 8010F8E0 0010C6E0  38 00 02 D0 */	li r0, 0x2d0
 /* 8010F8E4 0010C6E4  93 EC FF FC */	stw r31, -4(r12)
 /* 8010F8E8 0010C6E8  7C 9F 23 78 */	mr r31, r4
-/* 8010F8EC 0010C6EC  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010F8EC 0010C6EC  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010F8F0 0010C6F0  38 86 11 C0 */	addi r4, r6, 0x11c0
 /* 8010F8F4 0010C6F4  7C 64 18 50 */	subf r3, r4, r3
 /* 8010F8F8 0010C6F8  80 86 00 28 */	lwz r4, 0x28(r6)
@@ -11765,7 +11765,7 @@ get_eye_surface_loc__Q217zNPCBossOmnidroid9head_typeCFR5xVec3:
 /* 8010F90C 0010C70C  4B F3 BA DD */	bl xModelGetBoneMatScaled__FR7xMat4x3RC14xModelInstanceUl
 /* 8010F910 0010C710  7F E3 FB 78 */	mr r3, r31
 /* 8010F914 0010C714  38 81 00 10 */	addi r4, r1, 0x10
-/* 8010F918 0010C718  38 A2 A9 84 */	addi r5, r2, eye_surface_offset__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 8010F918 0010C718  38 A2 A9 84 */	addi r5, r2, eye_surface_offset__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 8010F91C 0010C71C  4B EF DC 89 */	bl xMat4x3Toworld__FP5xVec3PC7xMat4x3PC5xVec3
 /* 8010F920 0010C720  81 41 00 00 */	lwz r10, 0(r1)
 /* 8010F924 0010C724  80 0A 00 04 */	lwz r0, 4(r10)
@@ -11779,10 +11779,10 @@ get_eye_matrix__Q217zNPCBossOmnidroid9head_typeCFR7xMat3x3:
 /* 8010F938 0010C738  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010F93C 0010C73C  7C 08 02 A6 */	mflr r0
 /* 8010F940 0010C740  7C 87 23 78 */	mr r7, r4
-/* 8010F944 0010C744  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 8010F944 0010C744  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 8010F948 0010C748  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010F94C 0010C74C  38 00 02 D0 */	li r0, 0x2d0
-/* 8010F950 0010C750  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010F950 0010C750  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010F954 0010C754  38 86 11 C0 */	addi r4, r6, 0x11c0
 /* 8010F958 0010C758  7C 64 18 50 */	subf r3, r4, r3
 /* 8010F95C 0010C75C  80 86 00 28 */	lwz r4, 0x28(r6)
@@ -11801,10 +11801,10 @@ get_eye_matrix_scaled__Q217zNPCBossOmnidroid9head_typeCFR7xMat4x3:
 /* 8010F984 0010C784  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010F988 0010C788  7C 08 02 A6 */	mflr r0
 /* 8010F98C 0010C78C  7C 87 23 78 */	mr r7, r4
-/* 8010F990 0010C790  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 8010F990 0010C790  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 8010F994 0010C794  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010F998 0010C798  38 00 02 D0 */	li r0, 0x2d0
-/* 8010F99C 0010C79C  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010F99C 0010C79C  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010F9A0 0010C7A0  38 86 11 C0 */	addi r4, r6, 0x11c0
 /* 8010F9A4 0010C7A4  7C 64 18 50 */	subf r3, r4, r3
 /* 8010F9A8 0010C7A8  80 86 00 28 */	lwz r4, 0x28(r6)
@@ -11869,26 +11869,26 @@ lbl_8010FA50:
 .global set_height__Q217zNPCBossOmnidroid9head_typeFff
 set_height__Q217zNPCBossOmnidroid9head_typeFff:
 /* 8010FA64 0010C864  80 03 02 10 */	lwz r0, 0x210(r3)
-/* 8010FA68 0010C868  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010FA68 0010C868  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010FA6C 0010C86C  54 00 07 38 */	rlwinm r0, r0, 0, 0x1c, 0x1c
 /* 8010FA70 0010C870  D0 23 02 70 */	stfs f1, 0x270(r3)
 /* 8010FA74 0010C874  7C 00 00 34 */	cntlzw r0, r0
 /* 8010FA78 0010C878  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8010FA7C 0010C87C  54 04 D9 7E */	srwi r4, r0, 5
 /* 8010FA80 0010C880  40 80 00 08 */	bge lbl_8010FA88
-/* 8010FA84 0010C884  C0 42 AC 80 */	lfs f2, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010FA84 0010C884  C0 42 AC 80 */	lfs f2, _esc__2_1438_0@sda21(r2)
 lbl_8010FA88:
-/* 8010FA88 0010C888  C0 62 A8 B0 */	lfs f3, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010FA88 0010C888  C0 62 A8 B0 */	lfs f3, _esc__2_1222@sda21(r2)
 /* 8010FA8C 0010C88C  FC 02 18 40 */	fcmpo cr0, f2, f3
 /* 8010FA90 0010C890  4C 40 13 82 */	cror 2, 0, 2
 /* 8010FA94 0010C894  40 82 00 18 */	bne lbl_8010FAAC
 /* 8010FA98 0010C898  D0 63 02 60 */	stfs f3, 0x260(r3)
-/* 8010FA9C 0010C89C  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010FA9C 0010C89C  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8010FAA0 0010C8A0  D0 03 02 64 */	stfs f0, 0x264(r3)
 /* 8010FAA4 0010C8A4  D0 03 02 68 */	stfs f0, 0x268(r3)
 /* 8010FAA8 0010C8A8  48 00 00 20 */	b lbl_8010FAC8
 lbl_8010FAAC:
-/* 8010FAAC 0010C8AC  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010FAAC 0010C8AC  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8010FAB0 0010C8B0  54 80 06 3F */	clrlwi. r0, r4, 0x18
 /* 8010FAB4 0010C8B4  EC 00 10 24 */	fdivs f0, f0, f2
 /* 8010FAB8 0010C8B8  D0 03 02 60 */	stfs f0, 0x260(r3)
@@ -11896,7 +11896,7 @@ lbl_8010FAAC:
 /* 8010FAC0 0010C8C0  D0 63 02 64 */	stfs f3, 0x264(r3)
 /* 8010FAC4 0010C8C4  D0 63 02 68 */	stfs f3, 0x268(r3)
 lbl_8010FAC8:
-/* 8010FAC8 0010C8C8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010FAC8 0010C8C8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010FACC 0010C8CC  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8010FAD0 0010C8D0  4C 40 13 82 */	cror 2, 0, 2
 /* 8010FAD4 0010C8D4  41 82 00 0C */	beq lbl_8010FAE0
@@ -11904,7 +11904,7 @@ lbl_8010FAC8:
 /* 8010FADC 0010C8DC  41 82 00 10 */	beq lbl_8010FAEC
 lbl_8010FAE0:
 /* 8010FAE0 0010C8E0  D0 23 02 6C */	stfs f1, 0x26c(r3)
-/* 8010FAE4 0010C8E4  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010FAE4 0010C8E4  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010FAE8 0010C8E8  D0 03 02 74 */	stfs f0, 0x274(r3)
 lbl_8010FAEC:
 /* 8010FAEC 0010C8EC  80 03 02 10 */	lwz r0, 0x210(r3)
@@ -11914,12 +11914,12 @@ lbl_8010FAEC:
 
 .global reset_height__Q217zNPCBossOmnidroid9head_typeFf
 reset_height__Q217zNPCBossOmnidroid9head_typeFf:
-/* 8010FAFC 0010C8FC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010FAFC 0010C8FC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010FB00 0010C900  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010FB04 0010C904  40 80 00 08 */	bge lbl_8010FB0C
-/* 8010FB08 0010C908  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8010FB08 0010C908  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 lbl_8010FB0C:
-/* 8010FB0C 0010C90C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010FB0C 0010C90C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010FB10 0010C910  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010FB14 0010C914  4C 40 13 82 */	cror 2, 0, 2
 /* 8010FB18 0010C918  40 82 00 14 */	bne lbl_8010FB2C
@@ -11928,7 +11928,7 @@ lbl_8010FB0C:
 /* 8010FB24 0010C924  90 03 02 10 */	stw r0, 0x210(r3)
 /* 8010FB28 0010C928  4E 80 00 20 */	blr 
 lbl_8010FB2C:
-/* 8010FB2C 0010C92C  C0 02 AC B8 */	lfs f0, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8010FB2C 0010C92C  C0 02 AC B8 */	lfs f0, _esc__2_2040_0@sda21(r2)
 /* 8010FB30 0010C930  EC 00 08 24 */	fdivs f0, f0, f1
 /* 8010FB34 0010C934  D0 03 02 60 */	stfs f0, 0x260(r3)
 /* 8010FB38 0010C938  4E 80 00 20 */	blr 
@@ -11937,7 +11937,7 @@ lbl_8010FB2C:
 play_hit_anim__Q217zNPCBossOmnidroid9head_typeFv:
 /* 8010FB3C 0010C93C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010FB40 0010C940  7C 08 02 A6 */	mflr r0
-/* 8010FB44 0010C944  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010FB44 0010C944  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010FB48 0010C948  7C 66 1B 78 */	mr r6, r3
 /* 8010FB4C 0010C94C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010FB50 0010C950  80 03 02 10 */	lwz r0, 0x210(r3)
@@ -11947,10 +11947,10 @@ play_hit_anim__Q217zNPCBossOmnidroid9head_typeFv:
 /* 8010FB60 0010C960  80 03 02 90 */	lwz r0, 0x290(r3)
 /* 8010FB64 0010C964  2C 00 FF FF */	cmpwi r0, -1
 /* 8010FB68 0010C968  41 82 00 5C */	beq lbl_8010FBC4
-/* 8010FB6C 0010C96C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010FB6C 0010C96C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010FB70 0010C970  38 00 02 D0 */	li r0, 0x2d0
-/* 8010FB74 0010C974  38 6D 93 88 */	addi r3, r13, hit_explosion__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA_BASE_
-/* 8010FB78 0010C978  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010FB74 0010C974  38 6D 93 88 */	addi r3, r13, hit_explosion__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
+/* 8010FB78 0010C978  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8010FB7C 0010C97C  38 84 11 C0 */	addi r4, r4, 0x11c0
 /* 8010FB80 0010C980  D0 06 02 94 */	stfs f0, 0x294(r6)
 /* 8010FB84 0010C984  7C 84 30 50 */	subf r4, r4, r6
@@ -11992,7 +11992,7 @@ render_flare__Q217zNPCBossOmnidroid9head_typeFffff:
 /* 8010FC04 0010CA04  DB 8C FF C0 */	stfd f28, -0x40(r12)
 /* 8010FC08 0010CA08  F3 8C 0F C8 */	psq_st f28, -56(r12), 0, qr0
 /* 8010FC0C 0010CA0C  BF CC FF B8 */	stmw r30, -0x48(r12)
-/* 8010FC10 0010CA10  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010FC10 0010CA10  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010FC14 0010CA14  7C 7E 1B 78 */	mr r30, r3
 /* 8010FC18 0010CA18  38 00 02 D0 */	li r0, 0x2d0
 /* 8010FC1C 0010CA1C  FF 80 08 90 */	fmr f28, f1
@@ -12011,7 +12011,7 @@ render_flare__Q217zNPCBossOmnidroid9head_typeFffff:
 lbl_8010FC50:
 /* 8010FC50 0010CA50  38 61 00 70 */	addi r3, r1, 0x70
 /* 8010FC54 0010CA54  38 81 00 40 */	addi r4, r1, 0x40
-/* 8010FC58 0010CA58  38 A2 A9 A0 */	addi r5, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads5flare-_SDA2_BASE_
+/* 8010FC58 0010CA58  38 A2 A9 A0 */	addi r5, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads5flare@sda21
 /* 8010FC5C 0010CA5C  4B EF D9 49 */	bl xMat4x3Toworld__FP5xVec3PC7xMat4x3PC5xVec3
 /* 8010FC60 0010CA60  FC 20 E0 90 */	fmr f1, f28
 /* 8010FC64 0010CA64  38 61 00 40 */	addi r3, r1, 0x40
@@ -12020,8 +12020,8 @@ lbl_8010FC50:
 /* 8010FC70 0010CA70  38 61 00 50 */	addi r3, r1, 0x50
 /* 8010FC74 0010CA74  4B EF BC 2D */	bl __amu__5xVec3Ff
 /* 8010FC78 0010CA78  38 60 00 05 */	li r3, 5
-/* 8010FC7C 0010CA7C  38 82 AE 24 */	addi r4, r2, card_pos_esc__7_3960-_SDA2_BASE_
-/* 8010FC80 0010CA80  38 02 AE 54 */	addi r0, r2, card_uv_esc__7_3961-_SDA2_BASE_
+/* 8010FC7C 0010CA7C  38 82 AE 24 */	addi r4, r2, card_pos_esc__7_3960@sda21
+/* 8010FC80 0010CA80  38 02 AE 54 */	addi r0, r2, card_uv_esc__7_3961@sda21
 /* 8010FC84 0010CA84  90 61 00 10 */	stw r3, 0x10(r1)
 /* 8010FC88 0010CA88  38 61 00 20 */	addi r3, r1, 0x20
 /* 8010FC8C 0010CA8C  38 C1 00 10 */	addi r6, r1, 0x10
@@ -12030,10 +12030,10 @@ lbl_8010FC50:
 /* 8010FC98 0010CA98  38 A0 00 04 */	li r5, 4
 /* 8010FC9C 0010CA9C  90 01 00 18 */	stw r0, 0x18(r1)
 /* 8010FCA0 0010CAA0  48 0E 43 8D */	bl xIMLock__FR14xIMLockContext9xIMFormatiRC17xIMLockParameters
-/* 8010FCA4 0010CAA4  C0 02 AE 74 */	lfs f0, _esc__2_3966-_SDA2_BASE_(r2)
+/* 8010FCA4 0010CAA4  C0 02 AE 74 */	lfs f0, _esc__2_3966@sda21(r2)
 /* 8010FCA8 0010CAA8  EC 20 07 B2 */	fmuls f1, f0, f30
 /* 8010FCAC 0010CAAC  48 0E B1 49 */	bl __cvt_fp2unsigned
-/* 8010FCB0 0010CAB0  C0 02 AE 74 */	lfs f0, _esc__2_3966-_SDA2_BASE_(r2)
+/* 8010FCB0 0010CAB0  C0 02 AE 74 */	lfs f0, _esc__2_3966@sda21(r2)
 /* 8010FCB4 0010CAB4  7C 7F 1B 78 */	mr r31, r3
 /* 8010FCB8 0010CAB8  EC 20 07 F2 */	fmuls f1, f0, f31
 /* 8010FCBC 0010CABC  48 0E B1 39 */	bl __cvt_fp2unsigned
@@ -12047,7 +12047,7 @@ lbl_8010FC50:
 /* 8010FCDC 0010CADC  38 A0 00 10 */	li r5, 0x10
 /* 8010FCE0 0010CAE0  7C 86 02 14 */	add r4, r6, r0
 /* 8010FCE4 0010CAE4  48 00 00 69 */	bl xMemorySetV32A128__FPvUiUi
-/* 8010FCE8 0010CAE8  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 8010FCE8 0010CAE8  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 8010FCEC 0010CAEC  38 60 00 01 */	li r3, 1
 /* 8010FCF0 0010CAF0  80 9E 02 5C */	lwz r4, 0x25c(r30)
 /* 8010FCF4 0010CAF4  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -12098,11 +12098,11 @@ set_turn_speed__Q217zNPCBossOmnidroid9head_typeFffff:
 .global reset_turn_speed__Q217zNPCBossOmnidroid9head_typeFv
 reset_turn_speed__Q217zNPCBossOmnidroid9head_typeFv:
 /* 8010FD88 0010CB88  80 03 02 10 */	lwz r0, 0x210(r3)
-/* 8010FD8C 0010CB8C  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8010FD8C 0010CB8C  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
 /* 8010FD90 0010CB90  54 00 06 B0 */	rlwinm r0, r0, 0, 0x1a, 0x18
-/* 8010FD94 0010CB94  C0 22 AC CC */	lfs f1, _esc__2_2352_0-_SDA2_BASE_(r2)
+/* 8010FD94 0010CB94  C0 22 AC CC */	lfs f1, _esc__2_2352_0@sda21(r2)
 /* 8010FD98 0010CB98  90 03 02 10 */	stw r0, 0x210(r3)
-/* 8010FD9C 0010CB9C  C0 02 AE 78 */	lfs f0, _esc__2_3978-_SDA2_BASE_(r2)
+/* 8010FD9C 0010CB9C  C0 02 AE 78 */	lfs f0, _esc__2_3978@sda21(r2)
 /* 8010FDA0 0010CBA0  D0 43 02 14 */	stfs f2, 0x214(r3)
 /* 8010FDA4 0010CBA4  D0 23 02 18 */	stfs f1, 0x218(r3)
 /* 8010FDA8 0010CBA8  D0 03 02 1C */	stfs f0, 0x21c(r3)
@@ -12155,7 +12155,7 @@ update_hit_explosion__Q217zNPCBossOmnidroid9head_typeFf:
 /* 8010FE44 0010CC44  41 82 00 50 */	beq lbl_8010FE94
 /* 8010FE48 0010CC48  C0 64 02 98 */	lfs f3, 0x298(r4)
 /* 8010FE4C 0010CC4C  C0 44 02 94 */	lfs f2, 0x294(r4)
-/* 8010FE50 0010CC50  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010FE50 0010CC50  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8010FE54 0010CC54  EC 43 10 7A */	fmadds f2, f3, f1, f2
 /* 8010FE58 0010CC58  D0 44 02 94 */	stfs f2, 0x294(r4)
 /* 8010FE5C 0010CC5C  C0 44 02 94 */	lfs f2, 0x294(r4)
@@ -12194,7 +12194,7 @@ update_height__Q217zNPCBossOmnidroid9head_typeFf:
 /* 8010FECC 0010CCCC  41 82 00 A4 */	beq lbl_8010FF70
 /* 8010FED0 0010CCD0  C0 3F 02 60 */	lfs f1, 0x260(r31)
 /* 8010FED4 0010CCD4  C0 1F 02 64 */	lfs f0, 0x264(r31)
-/* 8010FED8 0010CCD8  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010FED8 0010CCD8  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8010FEDC 0010CCDC  EC 01 07 FA */	fmadds f0, f1, f31, f0
 /* 8010FEE0 0010CCE0  D0 1F 02 64 */	stfs f0, 0x264(r31)
 /* 8010FEE4 0010CCE4  C0 3F 02 64 */	lfs f1, 0x264(r31)
@@ -12202,18 +12202,18 @@ update_height__Q217zNPCBossOmnidroid9head_typeFf:
 /* 8010FEEC 0010CCEC  40 80 00 08 */	bge lbl_8010FEF4
 /* 8010FEF0 0010CCF0  FC 40 08 90 */	fmr f2, f1
 lbl_8010FEF4:
-/* 8010FEF4 0010CCF4  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010FEF4 0010CCF4  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8010FEF8 0010CCF8  FC 00 10 40 */	fcmpo cr0, f0, f2
 /* 8010FEFC 0010CCFC  40 81 00 08 */	ble lbl_8010FF04
 /* 8010FF00 0010CD00  48 00 00 14 */	b lbl_8010FF14
 lbl_8010FF04:
-/* 8010FF04 0010CD04  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8010FF04 0010CD04  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8010FF08 0010CD08  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8010FF0C 0010CD0C  40 80 00 08 */	bge lbl_8010FF14
 /* 8010FF10 0010CD10  FC 00 08 90 */	fmr f0, f1
 lbl_8010FF14:
 /* 8010FF14 0010CD14  D0 1F 02 64 */	stfs f0, 0x264(r31)
-/* 8010FF18 0010CD18  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8010FF18 0010CD18  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8010FF1C 0010CD1C  C0 1F 02 60 */	lfs f0, 0x260(r31)
 /* 8010FF20 0010CD20  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 8010FF24 0010CD24  40 80 00 24 */	bge lbl_8010FF48
@@ -12230,7 +12230,7 @@ lbl_8010FF48:
 /* 8010FF4C 0010CD4C  4B EF FA 55 */	bl xSCurve__Ff
 /* 8010FF50 0010CD50  D0 3F 02 68 */	stfs f1, 0x268(r31)
 /* 8010FF54 0010CD54  FC 40 F8 90 */	fmr f2, f31
-/* 8010FF58 0010CD58  C0 22 AC 84 */	lfs f1, _esc__2_1439_0-_SDA2_BASE_(r2)
+/* 8010FF58 0010CD58  C0 22 AC 84 */	lfs f1, _esc__2_1439_0@sda21(r2)
 /* 8010FF5C 0010CD5C  38 7F 02 6C */	addi r3, r31, 0x26c
 /* 8010FF60 0010CD60  C0 7F 02 70 */	lfs f3, 0x270(r31)
 /* 8010FF64 0010CD64  38 9F 02 74 */	addi r4, r31, 0x274
@@ -12258,17 +12258,17 @@ apply_height__Q217zNPCBossOmnidroid9head_typeFv:
 /* 8010FFAC 0010CDAC  54 60 06 F7 */	rlwinm. r0, r3, 0, 0x1b, 0x1b
 /* 8010FFB0 0010CDB0  41 82 01 18 */	beq lbl_801100C8
 lbl_8010FFB4:
-/* 8010FFB4 0010CDB4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8010FFB4 0010CDB4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8010FFB8 0010CDB8  38 00 02 D0 */	li r0, 0x2d0
-/* 8010FFBC 0010CDBC  80 A2 F0 8C */	lwz r5, _esc__2_4029-_SDA2_BASE_(r2)
-/* 8010FFC0 0010CDC0  38 C2 A9 98 */	addi r6, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 8010FFBC 0010CDBC  80 A2 F0 8C */	lwz r5, _esc__2_4029@sda21(r2)
+/* 8010FFC0 0010CDC0  38 C2 A9 98 */	addi r6, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 8010FFC4 0010CDC4  38 64 11 C0 */	addi r3, r4, 0x11c0
 /* 8010FFC8 0010CDC8  81 04 00 28 */	lwz r8, 0x28(r4)
 /* 8010FFCC 0010CDCC  7C 63 F8 50 */	subf r3, r3, r31
-/* 8010FFD0 0010CDD0  80 82 F0 90 */	lwz r4, lbl_803D8DB0-_SDA2_BASE_(r2)
+/* 8010FFD0 0010CDD0  80 82 F0 90 */	lwz r4, lbl_803D8DB0@sda21(r2)
 /* 8010FFD4 0010CDD4  7C E3 03 D6 */	divw r7, r3, r0
 /* 8010FFD8 0010CDD8  83 C8 00 54 */	lwz r30, 0x54(r8)
-/* 8010FFDC 0010CDDC  80 02 F0 94 */	lwz r0, lbl_803D8DB4-_SDA2_BASE_(r2)
+/* 8010FFDC 0010CDDC  80 02 F0 94 */	lwz r0, lbl_803D8DB4@sda21(r2)
 /* 8010FFE0 0010CDE0  38 61 00 08 */	addi r3, r1, 8
 /* 8010FFE4 0010CDE4  C0 9E 00 F0 */	lfs f4, 0xf0(r30)
 /* 8010FFE8 0010CDE8  C0 5E 00 F4 */	lfs f2, 0xf4(r30)
@@ -12297,15 +12297,15 @@ lbl_8010FFB4:
 /* 80110044 0010CE44  90 01 00 10 */	stw r0, 0x10(r1)
 /* 80110048 0010CE48  4B EF F4 E5 */	bl normalize__5xVec3Fv
 /* 8011004C 0010CE4C  80 7F 02 10 */	lwz r3, 0x210(r31)
-/* 80110050 0010CE50  C0 02 AC A0 */	lfs f0, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 80110050 0010CE50  C0 02 AC A0 */	lfs f0, _esc__2_1660_1@sda21(r2)
 /* 80110054 0010CE54  54 60 07 39 */	rlwinm. r0, r3, 0, 0x1c, 0x1c
 /* 80110058 0010CE58  EC 81 00 28 */	fsubs f4, f1, f0
 /* 8011005C 0010CE5C  41 82 00 24 */	beq lbl_80110080
 /* 80110060 0010CE60  C0 7F 02 68 */	lfs f3, 0x268(r31)
-/* 80110064 0010CE64  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80110064 0010CE64  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80110068 0010CE68  C0 5F 02 6C */	lfs f2, 0x26c(r31)
 /* 8011006C 0010CE6C  EC 00 18 28 */	fsubs f0, f0, f3
-/* 80110070 0010CE70  C0 22 AD DC */	lfs f1, _esc__2_3580-_SDA2_BASE_(r2)
+/* 80110070 0010CE70  C0 22 AD DC */	lfs f1, _esc__2_3580@sda21(r2)
 /* 80110074 0010CE74  EC 22 08 28 */	fsubs f1, f2, f1
 /* 80110078 0010CE78  EC 00 01 32 */	fmuls f0, f0, f4
 /* 8011007C 0010CE7C  EC 83 00 7A */	fmadds f4, f3, f1, f0
@@ -12315,7 +12315,7 @@ lbl_80110080:
 /* 80110088 0010CE88  C0 1F 02 8C */	lfs f0, 0x28c(r31)
 /* 8011008C 0010CE8C  EC 84 00 32 */	fmuls f4, f4, f0
 lbl_80110090:
-/* 80110090 0010CE90  C0 02 AC A0 */	lfs f0, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 80110090 0010CE90  C0 02 AC A0 */	lfs f0, _esc__2_1660_1@sda21(r2)
 /* 80110094 0010CE94  C0 21 00 08 */	lfs f1, 8(r1)
 /* 80110098 0010CE98  EC 40 20 2A */	fadds f2, f0, f4
 /* 8011009C 0010CE9C  C0 1E 00 F0 */	lfs f0, 0xf0(r30)
@@ -12343,22 +12343,22 @@ refresh_goal__Q217zNPCBossOmnidroid9head_typeFv:
 /* 801100E4 0010CEE4  21 6B FE F0 */	subfic r11, r11, -272
 /* 801100E8 0010CEE8  7C 21 59 6E */	stwux r1, r1, r11
 /* 801100EC 0010CEEC  7C 08 02 A6 */	mflr r0
-/* 801100F0 0010CEF0  38 C2 A9 98 */	addi r6, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 801100F0 0010CEF0  38 C2 A9 98 */	addi r6, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 801100F4 0010CEF4  90 0C 00 04 */	stw r0, 4(r12)
 /* 801100F8 0010CEF8  38 00 02 D0 */	li r0, 0x2d0
 /* 801100FC 0010CEFC  BF CC FF F8 */	stmw r30, -8(r12)
 /* 80110100 0010CF00  7C 7F 1B 78 */	mr r31, r3
-/* 80110104 0010CF04  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110104 0010CF04  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110108 0010CF08  38 85 11 C0 */	addi r4, r5, 0x11c0
 /* 8011010C 0010CF0C  80 65 00 28 */	lwz r3, 0x28(r5)
 /* 80110110 0010CF10  7C 84 F8 50 */	subf r4, r4, r31
-/* 80110114 0010CF14  80 A2 F0 98 */	lwz r5, _esc__2_4045-_SDA2_BASE_(r2)
+/* 80110114 0010CF14  80 A2 F0 98 */	lwz r5, _esc__2_4045@sda21(r2)
 /* 80110118 0010CF18  7C E4 03 D6 */	divw r7, r4, r0
 /* 8011011C 0010CF1C  81 03 00 54 */	lwz r8, 0x54(r3)
-/* 80110120 0010CF20  80 62 F0 9C */	lwz r3, lbl_803D8DBC-_SDA2_BASE_(r2)
+/* 80110120 0010CF20  80 62 F0 9C */	lwz r3, lbl_803D8DBC@sda21(r2)
 /* 80110124 0010CF24  38 81 00 28 */	addi r4, r1, 0x28
 /* 80110128 0010CF28  90 A1 00 28 */	stw r5, 0x28(r1)
-/* 8011012C 0010CF2C  80 02 F0 A0 */	lwz r0, lbl_803D8DC0-_SDA2_BASE_(r2)
+/* 8011012C 0010CF2C  80 02 F0 A0 */	lwz r0, lbl_803D8DC0@sda21(r2)
 /* 80110130 0010CF30  54 E5 10 3A */	slwi r5, r7, 2
 /* 80110134 0010CF34  90 61 00 2C */	stw r3, 0x2c(r1)
 /* 80110138 0010CF38  7F C6 28 2E */	lwzx r30, r6, r5
@@ -12380,7 +12380,7 @@ refresh_goal__Q217zNPCBossOmnidroid9head_typeFv:
 /* 80110178 0010CF78  D0 01 00 30 */	stfs f0, 0x30(r1)
 /* 8011017C 0010CF7C  4B EF B0 E9 */	bl dot__5xVec3CFRC5xVec3
 /* 80110180 0010CF80  FC 20 0A 10 */	fabs f1, f1
-/* 80110184 0010CF84  C0 02 AC A0 */	lfs f0, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 80110184 0010CF84  C0 02 AC A0 */	lfs f0, _esc__2_1660_1@sda21(r2)
 /* 80110188 0010CF88  FC 20 08 18 */	frsp f1, f1
 /* 8011018C 0010CF8C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80110190 0010CF90  40 80 00 14 */	bge lbl_801101A4
@@ -12390,8 +12390,8 @@ refresh_goal__Q217zNPCBossOmnidroid9head_typeFv:
 /* 801101A0 0010CFA0  48 00 01 3C */	b lbl_801102DC
 lbl_801101A4:
 /* 801101A4 0010CFA4  EC 21 00 28 */	fsubs f1, f1, f0
-/* 801101A8 0010CFA8  C0 42 AE 7C */	lfs f2, _esc__2_4069-_SDA2_BASE_(r2)
-/* 801101AC 0010CFAC  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801101A8 0010CFA8  C0 42 AE 7C */	lfs f2, _esc__2_4069@sda21(r2)
+/* 801101AC 0010CFAC  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801101B0 0010CFB0  EC 22 00 72 */	fmuls f1, f2, f1
 /* 801101B4 0010CFB4  D0 3F 02 3C */	stfs f1, 0x23c(r31)
 /* 801101B8 0010CFB8  C0 3F 02 3C */	lfs f1, 0x23c(r31)
@@ -12399,12 +12399,12 @@ lbl_801101A4:
 /* 801101C0 0010CFC0  40 81 00 08 */	ble lbl_801101C8
 /* 801101C4 0010CFC4  D0 1F 02 3C */	stfs f0, 0x23c(r31)
 lbl_801101C8:
-/* 801101C8 0010CFC8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801101C8 0010CFC8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801101CC 0010CFCC  7F C5 F3 78 */	mr r5, r30
 /* 801101D0 0010CFD0  38 61 00 D0 */	addi r3, r1, 0xd0
 /* 801101D4 0010CFD4  80 84 00 28 */	lwz r4, 0x28(r4)
 /* 801101D8 0010CFD8  4B F3 B0 E5 */	bl xModelGetBoneMat__FR7xMat3x3RC14xModelInstanceUl
-/* 801101DC 0010CFDC  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801101DC 0010CFDC  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801101E0 0010CFE0  7F C5 F3 78 */	mr r5, r30
 /* 801101E4 0010CFE4  38 61 00 1C */	addi r3, r1, 0x1c
 /* 801101E8 0010CFE8  80 84 00 28 */	lwz r4, 0x28(r4)
@@ -12422,7 +12422,7 @@ lbl_801101C8:
 /* 80110218 0010D018  C0 01 00 24 */	lfs f0, 0x24(r1)
 /* 8011021C 0010D01C  EC 82 00 B2 */	fmuls f4, f2, f2
 /* 80110220 0010D020  EC 63 00 28 */	fsubs f3, f3, f0
-/* 80110224 0010D024  C0 02 AC A4 */	lfs f0, _esc__2_1661_0-_SDA2_BASE_(r2)
+/* 80110224 0010D024  C0 02 AC A4 */	lfs f0, _esc__2_1661_0@sda21(r2)
 /* 80110228 0010D028  EC 81 20 7A */	fmadds f4, f1, f1, f4
 /* 8011022C 0010D02C  EC 83 20 FA */	fmadds f4, f3, f3, f4
 /* 80110230 0010D030  FC 04 00 40 */	fcmpo cr0, f4, f0
@@ -12441,19 +12441,19 @@ lbl_801101C8:
 /* 80110264 0010D064  38 81 00 10 */	addi r4, r1, 0x10
 /* 80110268 0010D068  4B F3 77 B9 */	bl xMat3x3GetEuler__FPC7xMat3x3P5xVec3
 /* 8011026C 0010D06C  C0 01 00 10 */	lfs f0, 0x10(r1)
-/* 80110270 0010D070  C0 22 AE 80 */	lfs f1, _esc__2_4070-_SDA2_BASE_(r2)
+/* 80110270 0010D070  C0 22 AE 80 */	lfs f1, _esc__2_4070@sda21(r2)
 /* 80110274 0010D074  D0 1F 02 28 */	stfs f0, 0x228(r31)
 /* 80110278 0010D078  C0 41 00 14 */	lfs f2, 0x14(r1)
 /* 8011027C 0010D07C  FC 02 08 40 */	fcmpo cr0, f2, f1
 /* 80110280 0010D080  40 80 00 08 */	bge lbl_80110288
 /* 80110284 0010D084  FC 20 10 90 */	fmr f1, f2
 lbl_80110288:
-/* 80110288 0010D088  C0 02 AE 84 */	lfs f0, _esc__2_4071-_SDA2_BASE_(r2)
+/* 80110288 0010D088  C0 02 AE 84 */	lfs f0, _esc__2_4071@sda21(r2)
 /* 8011028C 0010D08C  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 80110290 0010D090  40 81 00 08 */	ble lbl_80110298
 /* 80110294 0010D094  48 00 00 14 */	b lbl_801102A8
 lbl_80110298:
-/* 80110298 0010D098  C0 02 AE 80 */	lfs f0, _esc__2_4070-_SDA2_BASE_(r2)
+/* 80110298 0010D098  C0 02 AE 80 */	lfs f0, _esc__2_4070@sda21(r2)
 /* 8011029C 0010D09C  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801102A0 0010D0A0  40 80 00 08 */	bge lbl_801102A8
 /* 801102A4 0010D0A4  FC 00 10 90 */	fmr f0, f2
@@ -12464,7 +12464,7 @@ lbl_801102AC:
 /* 801102B0 0010D0B0  54 60 07 BD */	rlwinm. r0, r3, 0, 0x1e, 0x1e
 /* 801102B4 0010D0B4  40 82 00 28 */	bne lbl_801102DC
 /* 801102B8 0010D0B8  60 60 00 02 */	ori r0, r3, 2
-/* 801102BC 0010D0BC  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801102BC 0010D0BC  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 801102C0 0010D0C0  90 1F 02 10 */	stw r0, 0x210(r31)
 /* 801102C4 0010D0C4  C0 1F 02 28 */	lfs f0, 0x228(r31)
 /* 801102C8 0010D0C8  D0 1F 02 24 */	stfs f0, 0x224(r31)
@@ -12484,7 +12484,7 @@ lbl_801102DC:
 interpolate_rotation__Q217zNPCBossOmnidroid9head_typeFf:
 /* 801102F4 0010D0F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801102F8 0010D0F8  7C 08 02 A6 */	mflr r0
-/* 801102FC 0010D0FC  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
+/* 801102FC 0010D0FC  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
 /* 80110300 0010D100  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80110304 0010D104  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80110308 0010D108  7C 7E 1B 78 */	mr r30, r3
@@ -12493,7 +12493,7 @@ interpolate_rotation__Q217zNPCBossOmnidroid9head_typeFf:
 /* 80110314 0010D114  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80110318 0010D118  EC 22 00 2A */	fadds f1, f2, f0
 /* 8011031C 0010D11C  4B EF FA 79 */	bl xrmod__Ff
-/* 80110320 0010D120  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80110320 0010D120  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
 /* 80110324 0010D124  3C 60 80 38 */	lis r3, globals@ha
 /* 80110328 0010D128  3B E3 2A 38 */	addi r31, r3, globals@l
 /* 8011032C 0010D12C  C0 1E 02 24 */	lfs f0, 0x224(r30)
@@ -12512,11 +12512,11 @@ interpolate_rotation__Q217zNPCBossOmnidroid9head_typeFf:
 /* 80110360 0010D160  C0 7E 02 34 */	lfs f3, 0x234(r30)
 /* 80110364 0010D164  C0 9E 02 20 */	lfs f4, 0x220(r30)
 /* 80110368 0010D168  4B F3 34 C1 */	bl xAccelMove__FRfRfffff
-/* 8011036C 0010D16C  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8011036C 0010D16C  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 80110370 0010D170  C0 1E 02 24 */	lfs f0, 0x224(r30)
 /* 80110374 0010D174  EC 21 00 2A */	fadds f1, f1, f0
 /* 80110378 0010D178  4B EF FA 1D */	bl xrmod__Ff
-/* 8011037C 0010D17C  C0 02 AC E8 */	lfs f0, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8011037C 0010D17C  C0 02 AC E8 */	lfs f0, _esc__2_2843@sda21(r2)
 /* 80110380 0010D180  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80110384 0010D184  D0 1E 02 24 */	stfs f0, 0x224(r30)
 /* 80110388 0010D188  BB C1 00 08 */	lmw r30, 8(r1)
@@ -12532,11 +12532,11 @@ apply_rotation__Q217zNPCBossOmnidroid9head_typeFv:
 /* 801103A4 0010D1A4  21 6B FF A0 */	subfic r11, r11, -96
 /* 801103A8 0010D1A8  7C 21 59 6E */	stwux r1, r1, r11
 /* 801103AC 0010D1AC  7C 08 02 A6 */	mflr r0
-/* 801103B0 0010D1B0  C0 62 A8 B0 */	lfs f3, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801103B0 0010D1B0  C0 62 A8 B0 */	lfs f3, _esc__2_1222@sda21(r2)
 /* 801103B4 0010D1B4  90 0C 00 04 */	stw r0, 4(r12)
 /* 801103B8 0010D1B8  38 00 02 D0 */	li r0, 0x2d0
 /* 801103BC 0010D1BC  93 EC FF FC */	stw r31, -4(r12)
-/* 801103C0 0010D1C0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801103C0 0010D1C0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801103C4 0010D1C4  C0 23 02 30 */	lfs f1, 0x230(r3)
 /* 801103C8 0010D1C8  38 85 11 C0 */	addi r4, r5, 0x11c0
 /* 801103CC 0010D1CC  80 A5 00 28 */	lwz r5, 0x28(r5)
@@ -12546,14 +12546,14 @@ apply_rotation__Q217zNPCBossOmnidroid9head_typeFv:
 /* 801103DC 0010D1DC  80 A5 00 54 */	lwz r5, 0x54(r5)
 /* 801103E0 0010D1E0  EC 41 00 32 */	fmuls f2, f1, f0
 /* 801103E4 0010D1E4  C0 23 02 24 */	lfs f1, 0x224(r3)
-/* 801103E8 0010D1E8  38 82 A9 98 */	addi r4, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 801103E8 0010D1E8  38 82 A9 98 */	addi r4, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 801103EC 0010D1EC  38 61 00 10 */	addi r3, r1, 0x10
 /* 801103F0 0010D1F0  54 00 10 3A */	slwi r0, r0, 2
 /* 801103F4 0010D1F4  7C 04 00 2E */	lwzx r0, r4, r0
 /* 801103F8 0010D1F8  54 00 30 32 */	slwi r0, r0, 6
 /* 801103FC 0010D1FC  7F E5 02 14 */	add r31, r5, r0
 /* 80110400 0010D200  4B F3 7E BD */	bl xMat3x3Euler__FP7xMat3x3fff
-/* 80110404 0010D204  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80110404 0010D204  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80110408 0010D208  38 61 00 40 */	addi r3, r1, 0x40
 /* 8011040C 0010D20C  4B EF AC 8D */	bl __as__5xVec3Ff
 /* 80110410 0010D210  7F E3 FB 78 */	mr r3, r31
@@ -12576,7 +12576,7 @@ setup_collision__Q217zNPCBossOmnidroid9head_typeFv:
 /* 80110448 0010D248  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011044C 0010D24C  7C 7F 1B 78 */	mr r31, r3
 /* 80110450 0010D250  38 BF 00 D8 */	addi r5, r31, 0xd8
-/* 80110454 0010D254  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110454 0010D254  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110458 0010D258  38 DF 01 80 */	addi r6, r31, 0x180
 /* 8011045C 0010D25C  38 84 11 C0 */	addi r4, r4, 0x11c0
 /* 80110460 0010D260  7C 84 F8 50 */	subf r4, r4, r31
@@ -12587,13 +12587,13 @@ setup_collision__Q217zNPCBossOmnidroid9head_typeFv:
 /* 80110474 0010D274  38 84 05 E8 */	addi r4, r4, event_handler_callback__Q217zNPCBossOmnidroid9head_typeFP5xBaseP5xBaseUiPCfP5xBaseUi@l
 /* 80110478 0010D278  38 00 00 01 */	li r0, 1
 /* 8011047C 0010D27C  90 9F 00 0C */	stw r4, 0xc(r31)
-/* 80110480 0010D280  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80110484 0010D284  C0 22 AD 2C */	lfs f1, _esc__2_3015-_SDA2_BASE_(r2)
+/* 80110480 0010D280  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80110484 0010D284  C0 22 AD 2C */	lfs f1, _esc__2_3015@sda21(r2)
 /* 80110488 0010D288  7F E4 FB 78 */	mr r4, r31
 /* 8011048C 0010D28C  98 7F 00 20 */	stb r3, 0x20(r31)
 /* 80110490 0010D290  38 7F 00 50 */	addi r3, r31, 0x50
 /* 80110494 0010D294  98 1F 00 88 */	stb r0, 0x88(r31)
-/* 80110498 0010D298  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110498 0010D298  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011049C 0010D29C  80 06 03 4C */	lwz r0, 0x34c(r6)
 /* 801104A0 0010D2A0  54 00 10 3A */	slwi r0, r0, 2
 /* 801104A4 0010D2A4  7C 05 04 2E */	lfsx f0, r5, r0
@@ -12622,10 +12622,10 @@ refresh_collision__Q217zNPCBossOmnidroid9head_typeFv:
 /* 801104F4 0010D2F4  38 80 00 10 */	li r4, 0x10
 /* 801104F8 0010D2F8  38 00 02 D0 */	li r0, 0x2d0
 /* 801104FC 0010D2FC  98 9E 00 21 */	stb r4, 0x21(r30)
-/* 80110500 0010D300  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads-_SDA2_BASE_
+/* 80110500 0010D300  38 A2 A9 98 */	addi r5, r2, eye_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5heads@sda21
 /* 80110504 0010D304  38 61 00 10 */	addi r3, r1, 0x10
 /* 80110508 0010D308  98 9E 00 22 */	stb r4, 0x22(r30)
-/* 8011050C 0010D30C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011050C 0010D30C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110510 0010D310  38 C4 11 C0 */	addi r6, r4, 0x11c0
 /* 80110514 0010D314  80 84 00 28 */	lwz r4, 0x28(r4)
 /* 80110518 0010D318  7C C6 F0 50 */	subf r6, r6, r30
@@ -12634,7 +12634,7 @@ refresh_collision__Q217zNPCBossOmnidroid9head_typeFv:
 /* 80110524 0010D324  7C A5 00 2E */	lwzx r5, r5, r0
 /* 80110528 0010D328  4B F3 AE C1 */	bl xModelGetBoneMatScaled__FR7xMat4x3RC14xModelInstanceUl
 /* 8011052C 0010D32C  1C 1F 00 0C */	mulli r0, r31, 0xc
-/* 80110530 0010D330  38 A2 A8 E8 */	addi r5, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4head-_SDA2_BASE_
+/* 80110530 0010D330  38 A2 A8 E8 */	addi r5, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4head@sda21
 /* 80110534 0010D334  38 7E 01 B0 */	addi r3, r30, 0x1b0
 /* 80110538 0010D338  38 81 00 10 */	addi r4, r1, 0x10
 /* 8011053C 0010D33C  7C A5 02 14 */	add r5, r5, r0
@@ -12668,7 +12668,7 @@ event_handler__Q217zNPCBossOmnidroid9head_typeFP5xBaseP5xBaseUiPCfP5xBaseUi:
 /* 80110598 0010D398  41 82 00 08 */	beq lbl_801105A0
 /* 8011059C 0010D39C  48 00 00 3C */	b lbl_801105D8
 lbl_801105A0:
-/* 801105A0 0010D3A0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801105A0 0010D3A0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801105A4 0010D3A4  7C 04 28 40 */	cmplw r4, r5
 /* 801105A8 0010D3A8  41 82 00 30 */	beq lbl_801105D8
 /* 801105AC 0010D3AC  38 85 11 C0 */	addi r4, r5, 0x11c0
@@ -12706,7 +12706,7 @@ event_handler_callback__Q217zNPCBossOmnidroid9head_typeFP5xBaseP5xBaseUiPCfP5xBa
 /* 80110618 0010D418  80 04 00 00 */	lwz r0, 0(r4)
 /* 8011061C 0010D41C  7C 64 1B 78 */	mr r4, r3
 /* 80110620 0010D420  1C C0 02 D0 */	mulli r6, r0, 0x2d0
-/* 80110624 0010D424  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110624 0010D424  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110628 0010D428  38 66 11 C0 */	addi r3, r6, 0x11c0
 /* 8011062C 0010D42C  7D 86 63 78 */	mr r6, r12
 /* 80110630 0010D430  7C 60 1A 14 */	add r3, r0, r3
@@ -12798,7 +12798,7 @@ update__Q217zNPCBossOmnidroid8leg_typeFf:
 /* 8011074C 0010D54C  DB EC FF F0 */	stfd f31, -0x10(r12)
 /* 80110750 0010D550  F3 EC 0F F8 */	psq_st f31, -8(r12), 0, qr0
 /* 80110754 0010D554  BF AC FF E4 */	stmw r29, -0x1c(r12)
-/* 80110758 0010D558  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110758 0010D558  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011075C 0010D55C  7C 7E 1B 78 */	mr r30, r3
 /* 80110760 0010D560  38 00 14 D0 */	li r0, 0x14d0
 /* 80110764 0010D564  FF E0 08 90 */	fmr f31, f1
@@ -12820,10 +12820,10 @@ update__Q217zNPCBossOmnidroid8leg_typeFf:
 /* 801107A4 0010D5A4  80 DE 14 70 */	lwz r6, 0x1470(r30)
 /* 801107A8 0010D5A8  28 06 00 00 */	cmplwi r6, 0
 /* 801107AC 0010D5AC  41 82 00 54 */	beq lbl_80110800
-/* 801107B0 0010D5B0  80 A2 F0 A4 */	lwz r5, _esc__2_4143-_SDA2_BASE_(r2)
+/* 801107B0 0010D5B0  80 A2 F0 A4 */	lwz r5, _esc__2_4143@sda21(r2)
 /* 801107B4 0010D5B4  38 61 00 10 */	addi r3, r1, 0x10
-/* 801107B8 0010D5B8  80 82 F0 A8 */	lwz r4, lbl_803D8DC8-_SDA2_BASE_(r2)
-/* 801107BC 0010D5BC  80 02 F0 AC */	lwz r0, lbl_803D8DCC-_SDA2_BASE_(r2)
+/* 801107B8 0010D5B8  80 82 F0 A8 */	lwz r4, lbl_803D8DC8@sda21(r2)
+/* 801107BC 0010D5BC  80 02 F0 AC */	lwz r0, lbl_803D8DCC@sda21(r2)
 /* 801107C0 0010D5C0  90 A1 00 10 */	stw r5, 0x10(r1)
 /* 801107C4 0010D5C4  90 81 00 14 */	stw r4, 0x14(r1)
 /* 801107C8 0010D5C8  90 01 00 18 */	stw r0, 0x18(r1)
@@ -12832,7 +12832,7 @@ update__Q217zNPCBossOmnidroid8leg_typeFf:
 /* 801107D4 0010D5D4  C0 06 00 08 */	lfs f0, 8(r6)
 /* 801107D8 0010D5D8  D0 01 00 18 */	stfs f0, 0x18(r1)
 /* 801107DC 0010D5DC  4B FC 69 F5 */	bl right_normalize__5xVec3Fv
-/* 801107E0 0010D5E0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801107E0 0010D5E0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801107E4 0010D5E4  38 A0 00 12 */	li r5, 0x12
 /* 801107E8 0010D5E8  80 9E 14 58 */	lwz r4, 0x1458(r30)
 /* 801107EC 0010D5EC  C0 3E 14 5C */	lfs f1, 0x145c(r30)
@@ -12841,7 +12841,7 @@ update__Q217zNPCBossOmnidroid8leg_typeFf:
 /* 801107F8 0010D5F8  4B FF A6 45 */	bl hurt_player__17zNPCBossOmnidroidFifff10zHitSource
 /* 801107FC 0010D5FC  48 00 00 18 */	b lbl_80110814
 lbl_80110800:
-/* 80110800 0010D600  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110800 0010D600  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110804 0010D604  38 A0 00 12 */	li r5, 0x12
 /* 80110808 0010D608  80 9E 14 58 */	lwz r4, 0x1458(r30)
 /* 8011080C 0010D60C  C0 3E 14 5C */	lfs f1, 0x145c(r30)
@@ -12850,7 +12850,7 @@ lbl_80110814:
 /* 80110814 0010D614  88 1E 14 51 */	lbz r0, 0x1451(r30)
 /* 80110818 0010D618  28 00 00 00 */	cmplwi r0, 0
 /* 8011081C 0010D61C  40 82 00 18 */	bne lbl_80110834
-/* 80110820 0010D620  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110820 0010D620  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110824 0010D624  38 81 00 1C */	addi r4, r1, 0x1c
 /* 80110828 0010D628  80 BE 14 58 */	lwz r5, 0x1458(r30)
 /* 8011082C 0010D62C  38 C0 00 01 */	li r6, 1
@@ -12859,9 +12859,9 @@ lbl_80110834:
 /* 80110834 0010D634  88 1E 14 51 */	lbz r0, 0x1451(r30)
 /* 80110838 0010D638  28 00 00 00 */	cmplwi r0, 0
 /* 8011083C 0010D63C  41 82 00 34 */	beq lbl_80110870
-/* 80110840 0010D640  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110840 0010D640  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110844 0010D644  57 E0 10 3A */	slwi r0, r31, 2
-/* 80110848 0010D648  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 80110848 0010D648  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 8011084C 0010D64C  38 80 00 00 */	li r4, 0
 /* 80110850 0010D650  80 C5 00 28 */	lwz r6, 0x28(r5)
 /* 80110854 0010D654  38 A0 01 00 */	li r5, 0x100
@@ -12889,7 +12889,7 @@ lbl_80110888:
 /* 801108A4 0010D6A4  88 1E 14 50 */	lbz r0, 0x1450(r30)
 /* 801108A8 0010D6A8  28 00 00 00 */	cmplwi r0, 0
 /* 801108AC 0010D6AC  40 82 00 30 */	bne lbl_801108DC
-/* 801108B0 0010D6B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801108B0 0010D6B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801108B4 0010D6B4  88 03 01 F3 */	lbz r0, 0x1f3(r3)
 /* 801108B8 0010D6B8  28 00 00 00 */	cmplwi r0, 0
 /* 801108BC 0010D6BC  40 82 00 20 */	bne lbl_801108DC
@@ -12926,9 +12926,9 @@ lbl_8011090C:
 lbl_80110930:
 /* 80110930 0010D730  57 A0 06 3F */	clrlwi. r0, r29, 0x18
 /* 80110934 0010D734  41 82 00 34 */	beq lbl_80110968
-/* 80110938 0010D738  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110938 0010D738  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011093C 0010D73C  57 E0 10 3A */	slwi r0, r31, 2
-/* 80110940 0010D740  38 82 A9 AC */	addi r4, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 80110940 0010D740  38 82 A9 AC */	addi r4, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 80110944 0010D744  38 61 00 30 */	addi r3, r1, 0x30
 /* 80110948 0010D748  7C A4 00 2E */	lwzx r5, r4, r0
 /* 8011094C 0010D74C  80 86 00 28 */	lwz r4, 0x28(r6)
@@ -12936,7 +12936,7 @@ lbl_80110930:
 /* 80110954 0010D754  4B F3 AA 95 */	bl xModelGetBoneMatScaled__FR7xMat4x3RC14xModelInstanceUl
 /* 80110958 0010D758  38 7E 14 64 */	addi r3, r30, 0x1464
 /* 8011095C 0010D75C  38 81 00 30 */	addi r4, r1, 0x30
-/* 80110960 0010D760  38 A2 A9 C0 */	addi r5, r2, target_offset__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 80110960 0010D760  38 A2 A9 C0 */	addi r5, r2, target_offset__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 80110964 0010D764  4B EF CC 41 */	bl xMat4x3Toworld__FP5xVec3PC7xMat4x3PC5xVec3
 lbl_80110968:
 /* 80110968 0010D768  81 41 00 00 */	lwz r10, 0(r1)
@@ -12973,7 +12973,7 @@ pre_animate__Q217zNPCBossOmnidroid8leg_typeFf:
 /* 801109CC 0010D7CC  41 82 00 50 */	beq lbl_80110A1C
 /* 801109D0 0010D7D0  C0 7F 14 94 */	lfs f3, 0x1494(r31)
 /* 801109D4 0010D7D4  C0 5F 14 98 */	lfs f2, 0x1498(r31)
-/* 801109D8 0010D7D8  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801109D8 0010D7D8  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801109DC 0010D7DC  EC 23 10 7A */	fmadds f1, f3, f1, f2
 /* 801109E0 0010D7E0  D0 3F 14 98 */	stfs f1, 0x1498(r31)
 /* 801109E4 0010D7E4  C0 3F 14 98 */	lfs f1, 0x1498(r31)
@@ -13007,12 +13007,12 @@ transform_anim__Q217zNPCBossOmnidroid8leg_typeFP9xAnimPlayP5xQuatP5xVec3i:
 /* 80110A44 0010D844  88 03 14 52 */	lbz r0, 0x1452(r3)
 /* 80110A48 0010D848  28 00 00 00 */	cmplwi r0, 0
 /* 80110A4C 0010D84C  41 82 00 7C */	beq lbl_80110AC8
-/* 80110A50 0010D850  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110A50 0010D850  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110A54 0010D854  38 00 14 D0 */	li r0, 0x14d0
 /* 80110A58 0010D858  C0 3E 14 98 */	lfs f1, 0x1498(r30)
-/* 80110A5C 0010D85C  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 80110A5C 0010D85C  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 80110A60 0010D860  38 84 17 60 */	addi r4, r4, 0x1760
-/* 80110A64 0010D864  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80110A64 0010D864  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80110A68 0010D868  7C 84 F0 50 */	subf r4, r4, r30
 /* 80110A6C 0010D86C  7C 04 03 D6 */	divw r0, r4, r0
 /* 80110A70 0010D870  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -13058,7 +13058,7 @@ set_hip_pivot__Q217zNPCBossOmnidroid8leg_typeFRC5xQuatf:
 /* 80110AF0 0010D8F0  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
 /* 80110AF4 0010D8F4  BF C1 00 18 */	stmw r30, 0x18(r1)
 /* 80110AF8 0010D8F8  FF E0 08 90 */	fmr f31, f1
-/* 80110AFC 0010D8FC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80110AFC 0010D8FC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80110B00 0010D900  7C 7E 1B 78 */	mr r30, r3
 /* 80110B04 0010D904  7C 9F 23 78 */	mr r31, r4
 /* 80110B08 0010D908  FC 1F 00 40 */	fcmpo cr0, f31, f0
@@ -13083,8 +13083,8 @@ lbl_80110B3C:
 /* 80110B50 0010D950  7C 64 1B 78 */	mr r4, r3
 /* 80110B54 0010D954  38 7E 14 74 */	addi r3, r30, 0x1474
 /* 80110B58 0010D958  4B F1 E0 E9 */	bl __as__5xQuatFRC5xQuat
-/* 80110B5C 0010D95C  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
-/* 80110B60 0010D960  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80110B5C 0010D95C  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
+/* 80110B60 0010D960  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80110B64 0010D964  D0 3E 14 94 */	stfs f1, 0x1494(r30)
 /* 80110B68 0010D968  D0 1E 14 98 */	stfs f0, 0x1498(r30)
 /* 80110B6C 0010D96C  48 00 00 68 */	b lbl_80110BD4
@@ -13111,8 +13111,8 @@ lbl_80110BA4:
 /* 80110BB8 0010D9B8  38 7E 14 84 */	addi r3, r30, 0x1484
 /* 80110BBC 0010D9BC  4B F1 E0 85 */	bl __as__5xQuatFRC5xQuat
 lbl_80110BC0:
-/* 80110BC0 0010D9C0  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
-/* 80110BC4 0010D9C4  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80110BC0 0010D9C0  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
+/* 80110BC4 0010D9C4  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80110BC8 0010D9C8  EC 21 F8 24 */	fdivs f1, f1, f31
 /* 80110BCC 0010D9CC  D0 3E 14 94 */	stfs f1, 0x1494(r30)
 /* 80110BD0 0010D9D0  D0 1E 14 98 */	stfs f0, 0x1498(r30)
@@ -13153,12 +13153,12 @@ setup_collision__Q217zNPCBossOmnidroid8leg_typeFv:
 /* 80110C34 0010DA34  3B A4 19 D4 */	addi r29, r4, event_handler_callback__Q217zNPCBossOmnidroid8leg_typeFP5xBaseP5xBaseUiPCfP5xBaseUi@l
 /* 80110C38 0010DA38  3B 60 00 00 */	li r27, 0
 /* 80110C3C 0010DA3C  3B C0 00 00 */	li r30, 0
-/* 80110C40 0010DA40  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110C40 0010DA40  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110C44 0010DA44  38 65 17 60 */	addi r3, r5, 0x1760
 /* 80110C48 0010DA48  7C 63 F8 50 */	subf r3, r3, r31
 /* 80110C4C 0010DA4C  7F 83 03 D6 */	divw r28, r3, r0
 lbl_80110C50:
-/* 80110C50 0010DA50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110C50 0010DA50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110C54 0010DA54  7F 84 E3 78 */	mr r4, r28
 /* 80110C58 0010DA58  7F 65 DB 78 */	mr r5, r27
 /* 80110C5C 0010DA5C  7F 5F F2 14 */	add r26, r31, r30
@@ -13183,7 +13183,7 @@ lbl_80110C50:
 /* 80110CA8 0010DAA8  3B C0 00 00 */	li r30, 0
 lbl_80110CAC:
 /* 80110CAC 0010DAAC  3B 7E 0C 00 */	addi r27, r30, 0xc00
-/* 80110CB0 0010DAB0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110CB0 0010DAB0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110CB4 0010DAB4  7F 84 E3 78 */	mr r4, r28
 /* 80110CB8 0010DAB8  7F 45 D3 78 */	mr r5, r26
 /* 80110CBC 0010DABC  7F 7F DA 14 */	add r27, r31, r27
@@ -13239,20 +13239,20 @@ reset_collision__Q217zNPCBossOmnidroid8leg_typeFv:
 /* 80110D60 0010DB60  DB 41 00 20 */	stfd f26, 0x20(r1)
 /* 80110D64 0010DB64  F3 41 00 28 */	psq_st f26, 40(r1), 0, qr0
 /* 80110D68 0010DB68  BF 41 00 08 */	stmw r26, 8(r1)
-/* 80110D6C 0010DB6C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110D6C 0010DB6C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110D70 0010DB70  7C 7A 1B 78 */	mr r26, r3
-/* 80110D74 0010DB74  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 80110D74 0010DB74  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 80110D78 0010DB78  38 00 00 06 */	li r0, 6
 /* 80110D7C 0010DB7C  80 A5 03 4C */	lwz r5, 0x34c(r5)
 /* 80110D80 0010DB80  38 60 00 00 */	li r3, 0
-/* 80110D84 0010DB84  C0 C2 AE 88 */	lfs f6, _esc__2_4271-_SDA2_BASE_(r2)
-/* 80110D88 0010DB88  38 C2 A9 18 */	addi r6, r2, segment_height__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision3leg-_SDA2_BASE_
+/* 80110D84 0010DB84  C0 C2 AE 88 */	lfs f6, _esc__2_4271@sda21(r2)
+/* 80110D88 0010DB88  38 C2 A9 18 */	addi r6, r2, segment_height__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision3leg@sda21
 /* 80110D8C 0010DB8C  54 A5 10 3A */	slwi r5, r5, 2
-/* 80110D90 0010DB90  C0 62 A8 B0 */	lfs f3, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80110D90 0010DB90  C0 62 A8 B0 */	lfs f3, _esc__2_1222@sda21(r2)
 /* 80110D94 0010DB94  7C E4 2C 2E */	lfsx f7, r4, r5
 /* 80110D98 0010DB98  38 80 00 00 */	li r4, 0
-/* 80110D9C 0010DB9C  C0 42 AC 80 */	lfs f2, _esc__2_1438_0-_SDA2_BASE_(r2)
-/* 80110DA0 0010DBA0  38 A2 A9 00 */	addi r5, r2, segment_width__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision3leg-_SDA2_BASE_
+/* 80110D9C 0010DB9C  C0 42 AC 80 */	lfs f2, _esc__2_1438_0@sda21(r2)
+/* 80110DA0 0010DBA0  38 A2 A9 00 */	addi r5, r2, segment_width__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision3leg@sda21
 /* 80110DA4 0010DBA4  7C 09 03 A6 */	mtctr r0
 lbl_80110DA8:
 /* 80110DA8 0010DBA8  7C 25 1C 2E */	lfsx f1, r5, r3
@@ -13276,23 +13276,23 @@ lbl_80110DA8:
 /* 80110DF0 0010DBF0  D0 07 00 04 */	stfs f0, 4(r7)
 /* 80110DF4 0010DBF4  D0 67 00 08 */	stfs f3, 8(r7)
 /* 80110DF8 0010DBF8  42 00 FF B0 */	bdnz lbl_80110DA8
-/* 80110DFC 0010DBFC  38 62 A9 30 */	addi r3, r2, scale__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4claw-_SDA2_BASE_
-/* 80110E00 0010DC00  C0 62 AE 88 */	lfs f3, _esc__2_4271-_SDA2_BASE_(r2)
-/* 80110E04 0010DC04  C0 42 A9 30 */	lfs f2, scale__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4claw-_SDA2_BASE_(r2)
+/* 80110DFC 0010DBFC  38 62 A9 30 */	addi r3, r2, scale__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4claw@sda21
+/* 80110E00 0010DC00  C0 62 AE 88 */	lfs f3, _esc__2_4271@sda21(r2)
+/* 80110E04 0010DC04  C0 42 A9 30 */	lfs f2, scale__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4claw@sda21(r2)
 /* 80110E08 0010DC08  3B A0 00 00 */	li r29, 0
 /* 80110E0C 0010DC0C  C0 23 00 04 */	lfs f1, 4(r3)
 /* 80110E10 0010DC10  3B E0 00 00 */	li r31, 0
-/* 80110E14 0010DC14  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80110E14 0010DC14  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 80110E18 0010DC18  EF 43 00 B2 */	fmuls f26, f3, f2
 /* 80110E1C 0010DC1C  EF 63 00 72 */	fmuls f27, f3, f1
-/* 80110E20 0010DC20  C3 82 A8 B0 */	lfs f28, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80110E20 0010DC20  C3 82 A8 B0 */	lfs f28, _esc__2_1222@sda21(r2)
 /* 80110E24 0010DC24  EF A0 00 B2 */	fmuls f29, f0, f2
 /* 80110E28 0010DC28  C3 E3 00 08 */	lfs f31, 8(r3)
 /* 80110E2C 0010DC2C  EF C0 00 72 */	fmuls f30, f0, f1
 /* 80110E30 0010DC30  3B C0 00 00 */	li r30, 0
 lbl_80110E34:
 /* 80110E34 0010DC34  3B 9E 0C 00 */	addi r28, r30, 0xc00
-/* 80110E38 0010DC38  38 82 A9 3C */	addi r4, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4claw-_SDA2_BASE_
+/* 80110E38 0010DC38  38 82 A9 3C */	addi r4, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4claw@sda21
 /* 80110E3C 0010DC3C  7F 9A E2 14 */	add r28, r26, r28
 /* 80110E40 0010DC40  3B 7C 00 98 */	addi r27, r28, 0x98
 /* 80110E44 0010DC44  D3 5C 00 A4 */	stfs f26, 0xa4(r28)
@@ -13304,9 +13304,9 @@ lbl_80110E34:
 /* 80110E5C 0010DC5C  D3 FC 00 A0 */	stfs f31, 0xa0(r28)
 /* 80110E60 0010DC60  4B EF A8 91 */	bl __apl__5xVec3FRC5xVec3
 /* 80110E64 0010DC64  7F 63 DB 78 */	mr r3, r27
-/* 80110E68 0010DC68  38 82 A9 3C */	addi r4, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4claw-_SDA2_BASE_
+/* 80110E68 0010DC68  38 82 A9 3C */	addi r4, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4claw@sda21
 /* 80110E6C 0010DC6C  4B EF A8 85 */	bl __apl__5xVec3FRC5xVec3
-/* 80110E70 0010DC70  38 82 A9 48 */	addi r4, r2, rotate__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4claw-_SDA2_BASE_
+/* 80110E70 0010DC70  38 82 A9 48 */	addi r4, r2, rotate__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9collision4claw@sda21
 /* 80110E74 0010DC74  38 7C 01 C0 */	addi r3, r28, 0x1c0
 /* 80110E78 0010DC78  7C 84 FA 14 */	add r4, r4, r31
 /* 80110E7C 0010DC7C  4B F3 74 15 */	bl xMat3x3Euler__FP7xMat3x3PC5xVec3
@@ -13345,9 +13345,9 @@ refresh_collision__Q217zNPCBossOmnidroid8leg_typeFv:
 /* 80110EF4 0010DCF4  DB EC FF F8 */	stfd f31, -8(r12)
 /* 80110EF8 0010DCF8  BE 8C FF C8 */	stmw r20, -0x38(r12)
 /* 80110EFC 0010DCFC  7C 7F 1B 78 */	mr r31, r3
-/* 80110F00 0010DD00  3B 82 A9 AC */	addi r28, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 80110F00 0010DD00  3B 82 A9 AC */	addi r28, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 80110F04 0010DD04  3B 40 00 00 */	li r26, 0
-/* 80110F08 0010DD08  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110F08 0010DD08  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110F0C 0010DD0C  38 64 17 60 */	addi r3, r4, 0x1760
 /* 80110F10 0010DD10  80 84 00 28 */	lwz r4, 0x28(r4)
 /* 80110F14 0010DD14  7C A3 F8 50 */	subf r5, r3, r31
@@ -13380,7 +13380,7 @@ lbl_80110F68:
 lbl_80110F74:
 /* 80110F74 0010DD74  57 46 30 32 */	slwi r6, r26, 6
 /* 80110F78 0010DD78  6B 5A 00 01 */	xori r26, r26, 1
-/* 80110F7C 0010DD7C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80110F7C 0010DD7C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80110F80 0010DD80  3A C1 00 50 */	addi r22, r1, 0x50
 /* 80110F84 0010DD84  7E D7 B3 78 */	mr r23, r22
 /* 80110F88 0010DD88  57 40 30 32 */	slwi r0, r26, 6
@@ -13456,7 +13456,7 @@ lbl_80111090:
 /* 80111094 0010DE94  98 15 00 21 */	stb r0, 0x21(r21)
 /* 80111098 0010DE98  98 15 00 22 */	stb r0, 0x22(r21)
 lbl_8011109C:
-/* 8011109C 0010DE9C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011109C 0010DE9C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801110A0 0010DEA0  7F 85 E3 78 */	mr r5, r28
 /* 801110A4 0010DEA4  3A D5 01 80 */	addi r22, r21, 0x180
 /* 801110A8 0010DEA8  38 61 00 10 */	addi r3, r1, 0x10
@@ -13490,13 +13490,13 @@ lbl_8011109C:
 get_claw_sphere__Q217zNPCBossOmnidroid8leg_typeCFR7xSphere:
 /* 80111110 0010DF10  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80111114 0010DF14  7C 08 02 A6 */	mflr r0
-/* 80111118 0010DF18  38 A2 A9 AC */	addi r5, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 80111118 0010DF18  38 A2 A9 AC */	addi r5, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 8011111C 0010DF1C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80111120 0010DF20  38 00 14 D0 */	li r0, 0x14d0
 /* 80111124 0010DF24  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80111128 0010DF28  7C 7E 1B 78 */	mr r30, r3
 /* 8011112C 0010DF2C  7C 9F 23 78 */	mr r31, r4
-/* 80111130 0010DF30  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111130 0010DF30  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111134 0010DF34  38 66 17 60 */	addi r3, r6, 0x1760
 /* 80111138 0010DF38  80 86 00 28 */	lwz r4, 0x28(r6)
 /* 8011113C 0010DF3C  7C 63 F0 50 */	subf r3, r3, r30
@@ -13506,8 +13506,8 @@ get_claw_sphere__Q217zNPCBossOmnidroid8leg_typeCFR7xSphere:
 /* 8011114C 0010DF4C  7C A5 00 2E */	lwzx r5, r5, r0
 /* 80111150 0010DF50  38 A5 00 06 */	addi r5, r5, 6
 /* 80111154 0010DF54  4B F3 A1 E9 */	bl xModelGetBoneLocationScaled__FR5xVec3RC14xModelInstanceUl
-/* 80111158 0010DF58  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8011115C 0010DF5C  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 80111158 0010DF58  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8011115C 0010DF5C  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 80111160 0010DF60  C0 3E 14 60 */	lfs f1, 0x1460(r30)
 /* 80111164 0010DF64  80 04 03 4C */	lwz r0, 0x34c(r4)
 /* 80111168 0010DF68  54 00 10 3A */	slwi r0, r0, 2
@@ -13529,7 +13529,7 @@ hit_test_player__Q217zNPCBossOmnidroid8leg_typeFRC7xSphere:
 /* 8011119C 0010DF9C  7C 9C 23 78 */	mr r28, r4
 /* 801111A0 0010DFA0  7C 7B 1B 78 */	mr r27, r3
 /* 801111A4 0010DFA4  38 81 00 08 */	addi r4, r1, 8
-/* 801111A8 0010DFA8  80 AD 91 D0 */	lwz r5, xglobals-_SDA_BASE_(r13)
+/* 801111A8 0010DFA8  80 AD 91 D0 */	lwz r5, xglobals@sda21(r13)
 /* 801111AC 0010DFAC  80 65 04 C4 */	lwz r3, 0x4c4(r5)
 /* 801111B0 0010DFB0  48 03 D1 21 */	bl GetCollisionSpheres__7zPlayerFPPC7xSphere
 /* 801111B4 0010DFB4  88 1B 14 51 */	lbz r0, 0x1451(r27)
@@ -13613,16 +13613,16 @@ setup_stomp__Q217zNPCBossOmnidroid8leg_typeFv:
 reset_stomp__Q217zNPCBossOmnidroid8leg_typeFv:
 /* 801112B0 0010E0B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801112B4 0010E0B4  7C 08 02 A6 */	mflr r0
-/* 801112B8 0010E0B8  C0 22 AD D0 */	lfs f1, _esc__2_3428-_SDA2_BASE_(r2)
+/* 801112B8 0010E0B8  C0 22 AD D0 */	lfs f1, _esc__2_3428@sda21(r2)
 /* 801112BC 0010E0BC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801112C0 0010E0C0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801112C0 0010E0C0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801112C4 0010E0C4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801112C8 0010E0C8  7C 7F 1B 78 */	mr r31, r3
 /* 801112CC 0010E0CC  D0 23 14 9C */	stfs f1, 0x149c(r3)
 /* 801112D0 0010E0D0  D0 03 14 BC */	stfs f0, 0x14bc(r3)
 /* 801112D4 0010E0D4  4B EF 60 51 */	bl xurand__Fv
 /* 801112D8 0010E0D8  D0 3F 14 C0 */	stfs f1, 0x14c0(r31)
-/* 801112DC 0010E0DC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801112DC 0010E0DC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801112E0 0010E0E0  D0 1F 14 C4 */	stfs f0, 0x14c4(r31)
 /* 801112E4 0010E0E4  4B EF 60 41 */	bl xurand__Fv
 /* 801112E8 0010E0E8  D0 3F 14 C8 */	stfs f1, 0x14c8(r31)
@@ -13653,11 +13653,11 @@ update_stomp__Q217zNPCBossOmnidroid8leg_typeFf:
 /* 80111340 0010E140  BF 8C FF A0 */	stmw r28, -0x60(r12)
 /* 80111344 0010E144  FF 80 08 90 */	fmr f28, f1
 /* 80111348 0010E148  7C 7F 1B 78 */	mr r31, r3
-/* 8011134C 0010E14C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011134C 0010E14C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111350 0010E150  48 00 05 05 */	bl get_ground_y__17zNPCBossOmnidroidCFv
-/* 80111354 0010E154  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111354 0010E154  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111358 0010E158  38 00 14 D0 */	li r0, 0x14d0
-/* 8011135C 0010E15C  38 A2 A9 AC */	addi r5, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 8011135C 0010E15C  38 A2 A9 AC */	addi r5, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 80111360 0010E160  FF C0 08 90 */	fmr f30, f1
 /* 80111364 0010E164  38 64 17 60 */	addi r3, r4, 0x1760
 /* 80111368 0010E168  80 84 00 28 */	lwz r4, 0x28(r4)
@@ -13668,7 +13668,7 @@ update_stomp__Q217zNPCBossOmnidroid8leg_typeFf:
 /* 8011137C 0010E17C  7C A5 00 2E */	lwzx r5, r5, r0
 /* 80111380 0010E180  38 A5 00 06 */	addi r5, r5, 6
 /* 80111384 0010E184  4B F3 A0 65 */	bl xModelGetBoneMatScaled__FR7xMat4x3RC14xModelInstanceUl
-/* 80111388 0010E188  C0 22 AD D0 */	lfs f1, _esc__2_3428-_SDA2_BASE_(r2)
+/* 80111388 0010E188  C0 22 AD D0 */	lfs f1, _esc__2_3428@sda21(r2)
 /* 8011138C 0010E18C  C0 1F 14 9C */	lfs f0, 0x149c(r31)
 /* 80111390 0010E190  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 80111394 0010E194  40 82 00 10 */	bne lbl_801113A4
@@ -13688,9 +13688,9 @@ lbl_801113A4:
 /* 801113C8 0010E1C8  EF A3 10 28 */	fsubs f29, f3, f2
 /* 801113CC 0010E1CC  EF 61 00 28 */	fsubs f27, f1, f0
 /* 801113D0 0010E1D0  4B EF 9C D9 */	bl __as__5xVec3FRC5xVec3
-/* 801113D4 0010E1D4  C0 02 AE 8C */	lfs f0, _esc__2_4406-_SDA2_BASE_(r2)
+/* 801113D4 0010E1D4  C0 02 AE 8C */	lfs f0, _esc__2_4406@sda21(r2)
 /* 801113D8 0010E1D8  3B C0 00 00 */	li r30, 0
-/* 801113DC 0010E1DC  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 801113DC 0010E1DC  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 /* 801113E0 0010E1E0  EC 00 F0 2A */	fadds f0, f0, f30
 /* 801113E4 0010E1E4  C0 41 00 54 */	lfs f2, 0x54(r1)
 /* 801113E8 0010E1E8  EC 21 F0 2A */	fadds f1, f1, f30
@@ -13702,7 +13702,7 @@ lbl_801113A4:
 /* 80111400 0010E200  40 82 00 08 */	bne lbl_80111408
 /* 80111404 0010E204  3B C0 00 01 */	li r30, 1
 lbl_80111408:
-/* 80111408 0010E208  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80111408 0010E208  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011140C 0010E20C  EC 1B 06 F2 */	fmuls f0, f27, f27
 /* 80111410 0010E210  8B 9F 14 54 */	lbz r28, 0x1454(r31)
 /* 80111414 0010E214  EF 61 E0 24 */	fdivs f27, f1, f28
@@ -13740,19 +13740,19 @@ lbl_8011147C:
 /* 80111484 0010E284  C0 61 00 58 */	lfs f3, 0x58(r1)
 /* 80111488 0010E288  38 7F 14 A8 */	addi r3, r31, 0x14a8
 /* 8011148C 0010E28C  4B EF C3 4D */	bl assign__5xVec3Ffff
-/* 80111490 0010E290  C0 A2 A8 B0 */	lfs f5, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80111490 0010E290  C0 A2 A8 B0 */	lfs f5, _esc__2_1222@sda21(r2)
 /* 80111494 0010E294  FC 20 E8 90 */	fmr f1, f29
-/* 80111498 0010E298  C0 62 AC 9C */	lfs f3, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 80111498 0010E298  C0 62 AC 9C */	lfs f3, _esc__2_1659_1@sda21(r2)
 /* 8011149C 0010E29C  FC 40 F8 90 */	fmr f2, f31
 /* 801114A0 0010E2A0  D0 A1 00 08 */	stfs f5, 8(r1)
 /* 801114A4 0010E2A4  7F E3 FB 78 */	mr r3, r31
-/* 801114A8 0010E2A8  C0 82 AE 90 */	lfs f4, _esc__2_4407-_SDA2_BASE_(r2)
+/* 801114A8 0010E2A8  C0 82 AE 90 */	lfs f4, _esc__2_4407@sda21(r2)
 /* 801114AC 0010E2AC  D0 A1 00 0C */	stfs f5, 0xc(r1)
-/* 801114B0 0010E2B0  C0 C2 AE 94 */	lfs f6, _esc__2_4408-_SDA2_BASE_(r2)
+/* 801114B0 0010E2B0  C0 C2 AE 94 */	lfs f6, _esc__2_4408@sda21(r2)
 /* 801114B4 0010E2B4  D0 61 00 10 */	stfs f3, 0x10(r1)
-/* 801114B8 0010E2B8  C0 E2 AC 84 */	lfs f7, _esc__2_1439_0-_SDA2_BASE_(r2)
+/* 801114B8 0010E2B8  C0 E2 AC 84 */	lfs f7, _esc__2_1439_0@sda21(r2)
 /* 801114BC 0010E2BC  D0 81 00 14 */	stfs f4, 0x14(r1)
-/* 801114C0 0010E2C0  C1 02 A8 B4 */	lfs f8, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801114C0 0010E2C0  C1 02 A8 B4 */	lfs f8, _esc__2_1223@sda21(r2)
 /* 801114C4 0010E2C4  D0 A1 00 18 */	stfs f5, 0x18(r1)
 /* 801114C8 0010E2C8  D0 A1 00 1C */	stfs f5, 0x1c(r1)
 /* 801114CC 0010E2CC  48 00 03 91 */	bl get_stomp_rate__Q217zNPCBossOmnidroid8leg_typeCFffffffffffffff
@@ -13762,7 +13762,7 @@ lbl_8011147C:
 /* 801114DC 0010E2DC  D0 1F 14 BC */	stfs f0, 0x14bc(r31)
 /* 801114E0 0010E2E0  41 82 00 18 */	beq lbl_801114F8
 /* 801114E4 0010E2E4  C0 3F 14 BC */	lfs f1, 0x14bc(r31)
-/* 801114E8 0010E2E8  C0 02 AE 98 */	lfs f0, _esc__2_4409-_SDA2_BASE_(r2)
+/* 801114E8 0010E2E8  C0 02 AE 98 */	lfs f0, _esc__2_4409@sda21(r2)
 /* 801114EC 0010E2EC  EC 01 00 2A */	fadds f0, f1, f0
 /* 801114F0 0010E2F0  D0 1F 14 BC */	stfs f0, 0x14bc(r31)
 /* 801114F4 0010E2F4  48 00 00 1C */	b lbl_80111510
@@ -13770,30 +13770,30 @@ lbl_801114F8:
 /* 801114F8 0010E2F8  57 C0 06 3F */	clrlwi. r0, r30, 0x18
 /* 801114FC 0010E2FC  41 82 00 14 */	beq lbl_80111510
 /* 80111500 0010E300  C0 3F 14 BC */	lfs f1, 0x14bc(r31)
-/* 80111504 0010E304  C0 02 AE 98 */	lfs f0, _esc__2_4409-_SDA2_BASE_(r2)
+/* 80111504 0010E304  C0 02 AE 98 */	lfs f0, _esc__2_4409@sda21(r2)
 /* 80111508 0010E308  EC 01 00 2A */	fadds f0, f1, f0
 /* 8011150C 0010E30C  D0 1F 14 BC */	stfs f0, 0x14bc(r31)
 lbl_80111510:
 /* 80111510 0010E310  C0 3F 14 BC */	lfs f1, 0x14bc(r31)
-/* 80111514 0010E314  C0 02 AE 9C */	lfs f0, _esc__2_4410-_SDA2_BASE_(r2)
+/* 80111514 0010E314  C0 02 AE 9C */	lfs f0, _esc__2_4410@sda21(r2)
 /* 80111518 0010E318  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011151C 0010E31C  4C 41 13 82 */	cror 2, 1, 2
 /* 80111520 0010E320  40 82 00 08 */	bne lbl_80111528
 /* 80111524 0010E324  D0 1F 14 BC */	stfs f0, 0x14bc(r31)
 lbl_80111528:
-/* 80111528 0010E328  C0 A2 A8 B0 */	lfs f5, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80111528 0010E328  C0 A2 A8 B0 */	lfs f5, _esc__2_1222@sda21(r2)
 /* 8011152C 0010E32C  FC 20 E8 90 */	fmr f1, f29
-/* 80111530 0010E330  C0 62 AC 9C */	lfs f3, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 80111530 0010E330  C0 62 AC 9C */	lfs f3, _esc__2_1659_1@sda21(r2)
 /* 80111534 0010E334  FC 40 F8 90 */	fmr f2, f31
 /* 80111538 0010E338  D0 A1 00 08 */	stfs f5, 8(r1)
 /* 8011153C 0010E33C  7F E3 FB 78 */	mr r3, r31
-/* 80111540 0010E340  C0 82 AE 90 */	lfs f4, _esc__2_4407-_SDA2_BASE_(r2)
+/* 80111540 0010E340  C0 82 AE 90 */	lfs f4, _esc__2_4407@sda21(r2)
 /* 80111544 0010E344  D0 A1 00 0C */	stfs f5, 0xc(r1)
-/* 80111548 0010E348  C0 C2 AD 70 */	lfs f6, _esc__2_3037-_SDA2_BASE_(r2)
+/* 80111548 0010E348  C0 C2 AD 70 */	lfs f6, _esc__2_3037@sda21(r2)
 /* 8011154C 0010E34C  D0 61 00 10 */	stfs f3, 0x10(r1)
-/* 80111550 0010E350  C0 E2 AC 84 */	lfs f7, _esc__2_1439_0-_SDA2_BASE_(r2)
+/* 80111550 0010E350  C0 E2 AC 84 */	lfs f7, _esc__2_1439_0@sda21(r2)
 /* 80111554 0010E354  D0 81 00 14 */	stfs f4, 0x14(r1)
-/* 80111558 0010E358  C1 02 A8 B4 */	lfs f8, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80111558 0010E358  C1 02 A8 B4 */	lfs f8, _esc__2_1223@sda21(r2)
 /* 8011155C 0010E35C  D0 A1 00 18 */	stfs f5, 0x18(r1)
 /* 80111560 0010E360  D0 A1 00 1C */	stfs f5, 0x1c(r1)
 /* 80111564 0010E364  48 00 02 F9 */	bl get_stomp_rate__Q217zNPCBossOmnidroid8leg_typeCFffffffffffffff
@@ -13803,7 +13803,7 @@ lbl_80111528:
 /* 80111574 0010E374  D0 1F 14 C4 */	stfs f0, 0x14c4(r31)
 /* 80111578 0010E378  41 82 00 18 */	beq lbl_80111590
 /* 8011157C 0010E37C  C0 3F 14 C4 */	lfs f1, 0x14c4(r31)
-/* 80111580 0010E380  C0 02 AC DC */	lfs f0, _esc__2_2532-_SDA2_BASE_(r2)
+/* 80111580 0010E380  C0 02 AC DC */	lfs f0, _esc__2_2532@sda21(r2)
 /* 80111584 0010E384  EC 01 00 2A */	fadds f0, f1, f0
 /* 80111588 0010E388  D0 1F 14 C4 */	stfs f0, 0x14c4(r31)
 /* 8011158C 0010E38C  48 00 00 1C */	b lbl_801115A8
@@ -13811,12 +13811,12 @@ lbl_80111590:
 /* 80111590 0010E390  57 C0 06 3F */	clrlwi. r0, r30, 0x18
 /* 80111594 0010E394  41 82 00 14 */	beq lbl_801115A8
 /* 80111598 0010E398  C0 3F 14 C4 */	lfs f1, 0x14c4(r31)
-/* 8011159C 0010E39C  C0 02 AC DC */	lfs f0, _esc__2_2532-_SDA2_BASE_(r2)
+/* 8011159C 0010E39C  C0 02 AC DC */	lfs f0, _esc__2_2532@sda21(r2)
 /* 801115A0 0010E3A0  EC 01 00 2A */	fadds f0, f1, f0
 /* 801115A4 0010E3A4  D0 1F 14 C4 */	stfs f0, 0x14c4(r31)
 lbl_801115A8:
 /* 801115A8 0010E3A8  C0 3F 14 C4 */	lfs f1, 0x14c4(r31)
-/* 801115AC 0010E3AC  C0 02 AE 98 */	lfs f0, _esc__2_4409-_SDA2_BASE_(r2)
+/* 801115AC 0010E3AC  C0 02 AE 98 */	lfs f0, _esc__2_4409@sda21(r2)
 /* 801115B0 0010E3B0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801115B4 0010E3B4  4C 41 13 82 */	cror 2, 1, 2
 /* 801115B8 0010E3B8  40 82 00 08 */	bne lbl_801115C0
@@ -13825,7 +13825,7 @@ lbl_801115C0:
 /* 801115C0 0010E3C0  57 A0 06 3F */	clrlwi. r0, r29, 0x18
 /* 801115C4 0010E3C4  41 82 00 68 */	beq lbl_8011162C
 /* 801115C8 0010E3C8  FC 20 EA 10 */	fabs f1, f29
-/* 801115CC 0010E3CC  C0 02 AE A0 */	lfs f0, _esc__2_4411-_SDA2_BASE_(r2)
+/* 801115CC 0010E3CC  C0 02 AE A0 */	lfs f0, _esc__2_4411@sda21(r2)
 /* 801115D0 0010E3D0  FC 20 08 18 */	frsp f1, f1
 /* 801115D4 0010E3D4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801115D8 0010E3D8  40 81 00 28 */	ble lbl_80111600
@@ -13839,7 +13839,7 @@ lbl_801115C0:
 /* 801115F8 0010E3F8  4B F5 56 95 */	bl xSndMgrPlay__F15iSndGroupHandleUiPC5xVec3PC5xVec3P4xEntPCfPCf
 /* 801115FC 0010E3FC  48 00 00 30 */	b lbl_8011162C
 lbl_80111600:
-/* 80111600 0010E400  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80111600 0010E400  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80111604 0010E404  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80111608 0010E408  40 81 00 24 */	ble lbl_8011162C
 /* 8011160C 0010E40C  80 7F 14 B4 */	lwz r3, 0x14b4(r31)
@@ -13865,7 +13865,7 @@ lbl_8011162C:
 /* 80111658 0010E458  3C 00 43 30 */	lis r0, 0x4330
 /* 8011165C 0010E45C  90 61 00 64 */	stw r3, 0x64(r1)
 /* 80111660 0010E460  1F BC 00 0C */	mulli r29, r28, 0xc
-/* 80111664 0010E464  C8 22 AC 90 */	lfd f1, _esc__2_1488-_SDA2_BASE_(r2)
+/* 80111664 0010E464  C8 22 AC 90 */	lfd f1, _esc__2_1488@sda21(r2)
 /* 80111668 0010E468  90 01 00 60 */	stw r0, 0x60(r1)
 /* 8011166C 0010E46C  7F A3 EB 78 */	mr r3, r29
 /* 80111670 0010E470  C8 01 00 60 */	lfd f0, 0x60(r1)
@@ -13877,38 +13877,38 @@ lbl_8011162C:
 /* 80111688 0010E488  7F A3 EB 78 */	mr r3, r29
 /* 8011168C 0010E48C  7C 1D 03 78 */	mr r29, r0
 /* 80111690 0010E490  4B EF 62 51 */	bl xMemPushTemp__FUi
-/* 80111694 0010E494  C0 82 A8 B0 */	lfs f4, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80111694 0010E494  C0 82 A8 B0 */	lfs f4, _esc__2_1222@sda21(r2)
 /* 80111698 0010E498  7C 7E 1B 78 */	mr r30, r3
-/* 8011169C 0010E49C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011169C 0010E49C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801116A0 0010E4A0  7F A4 EB 78 */	mr r4, r29
 /* 801116A4 0010E4A4  FC A0 20 90 */	fmr f5, f4
-/* 801116A8 0010E4A8  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
-/* 801116AC 0010E4AC  C0 42 AC 84 */	lfs f2, _esc__2_1439_0-_SDA2_BASE_(r2)
+/* 801116A8 0010E4A8  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
+/* 801116AC 0010E4AC  C0 42 AC 84 */	lfs f2, _esc__2_1439_0@sda21(r2)
 /* 801116B0 0010E4B0  7F C5 F3 78 */	mr r5, r30
-/* 801116B4 0010E4B4  C0 62 AE A4 */	lfs f3, _esc__2_4412-_SDA2_BASE_(r2)
+/* 801116B4 0010E4B4  C0 62 AE A4 */	lfs f3, _esc__2_4412@sda21(r2)
 /* 801116B8 0010E4B8  7F 86 E3 78 */	mr r6, r28
 /* 801116BC 0010E4BC  38 FF 14 A8 */	addi r7, r31, 0x14a8
 /* 801116C0 0010E4C0  4B FF D4 49 */	bl get_stomp_placement__17zNPCBossOmnidroidCFP5xVec3P5xVec3iRC5xVec3fffff
 /* 801116C4 0010E4C4  FC E0 E0 90 */	fmr f7, f28
-/* 801116C8 0010E4C8  C0 22 AD 44 */	lfs f1, _esc__2_3021-_SDA2_BASE_(r2)
-/* 801116CC 0010E4CC  C0 42 AC AC */	lfs f2, _esc__2_2015_1-_SDA2_BASE_(r2)
+/* 801116C8 0010E4C8  C0 22 AD 44 */	lfs f1, _esc__2_3021@sda21(r2)
+/* 801116CC 0010E4CC  C0 42 AC AC */	lfs f2, _esc__2_2015_1@sda21(r2)
 /* 801116D0 0010E4D0  7F A3 EB 78 */	mr r3, r29
-/* 801116D4 0010E4D4  C0 62 AE A8 */	lfs f3, _esc__2_4413-_SDA2_BASE_(r2)
+/* 801116D4 0010E4D4  C0 62 AE A8 */	lfs f3, _esc__2_4413@sda21(r2)
 /* 801116D8 0010E4D8  7F C4 F3 78 */	mr r4, r30
-/* 801116DC 0010E4DC  C0 82 AC C8 */	lfs f4, _esc__2_2275-_SDA2_BASE_(r2)
+/* 801116DC 0010E4DC  C0 82 AC C8 */	lfs f4, _esc__2_2275@sda21(r2)
 /* 801116E0 0010E4E0  7F 85 E3 78 */	mr r5, r28
-/* 801116E4 0010E4E4  C0 A2 AE AC */	lfs f5, _esc__2_4414-_SDA2_BASE_(r2)
-/* 801116E8 0010E4E8  C0 C2 AC 80 */	lfs f6, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 801116E4 0010E4E4  C0 A2 AE AC */	lfs f5, _esc__2_4414@sda21(r2)
+/* 801116E8 0010E4E8  C0 C2 AC 80 */	lfs f6, _esc__2_1438_0@sda21(r2)
 /* 801116EC 0010E4EC  48 0E 3D 6D */	bl zParticleCustomEmitDust__FPC5xVec3PC5xVec3ifffffff
 /* 801116F0 0010E4F0  7F C3 F3 78 */	mr r3, r30
 /* 801116F4 0010E4F4  4B F6 78 5D */	bl iMemPopTemp__FPv
 /* 801116F8 0010E4F8  7F A3 EB 78 */	mr r3, r29
 /* 801116FC 0010E4FC  4B F6 78 55 */	bl iMemPopTemp__FPv
 lbl_80111700:
-/* 80111700 0010E500  C0 02 AE B0 */	lfs f0, _esc__2_4415-_SDA2_BASE_(r2)
+/* 80111700 0010E500  C0 02 AE B0 */	lfs f0, _esc__2_4415@sda21(r2)
 /* 80111704 0010E504  C0 3F 14 BC */	lfs f1, 0x14bc(r31)
 /* 80111708 0010E508  EF E0 07 32 */	fmuls f31, f0, f28
-/* 8011170C 0010E50C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011170C 0010E50C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80111710 0010E510  EC 21 F8 28 */	fsubs f1, f1, f31
 /* 80111714 0010E514  D0 3F 14 BC */	stfs f1, 0x14bc(r31)
 /* 80111718 0010E518  C0 3F 14 BC */	lfs f1, 0x14bc(r31)
@@ -13930,7 +13930,7 @@ lbl_80111728:
 /* 80111754 0010E554  3C 00 43 30 */	lis r0, 0x4330
 /* 80111758 0010E558  90 61 00 64 */	stw r3, 0x64(r1)
 /* 8011175C 0010E55C  1F BC 00 0C */	mulli r29, r28, 0xc
-/* 80111760 0010E560  C8 22 AC 90 */	lfd f1, _esc__2_1488-_SDA2_BASE_(r2)
+/* 80111760 0010E560  C8 22 AC 90 */	lfd f1, _esc__2_1488@sda21(r2)
 /* 80111764 0010E564  90 01 00 60 */	stw r0, 0x60(r1)
 /* 80111768 0010E568  7F A3 EB 78 */	mr r3, r29
 /* 8011176C 0010E56C  C8 01 00 60 */	lfd f0, 0x60(r1)
@@ -13943,22 +13943,22 @@ lbl_80111728:
 /* 80111788 0010E588  7C 1D 03 78 */	mr r29, r0
 /* 8011178C 0010E58C  4B EF 61 55 */	bl xMemPushTemp__FUi
 /* 80111790 0010E590  7C 60 1B 78 */	mr r0, r3
-/* 80111794 0010E594  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111794 0010E594  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111798 0010E598  7C 1E 03 78 */	mr r30, r0
-/* 8011179C 0010E59C  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
-/* 801117A0 0010E5A0  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011179C 0010E59C  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
+/* 801117A0 0010E5A0  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 801117A4 0010E5A4  7F A4 EB 78 */	mr r4, r29
-/* 801117A8 0010E5A8  C0 62 AC A0 */	lfs f3, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 801117A8 0010E5A8  C0 62 AC A0 */	lfs f3, _esc__2_1660_1@sda21(r2)
 /* 801117AC 0010E5AC  7F C5 F3 78 */	mr r5, r30
-/* 801117B0 0010E5B0  C0 82 AD 80 */	lfs f4, _esc__2_3049-_SDA2_BASE_(r2)
+/* 801117B0 0010E5B0  C0 82 AD 80 */	lfs f4, _esc__2_3049@sda21(r2)
 /* 801117B4 0010E5B4  7F 86 E3 78 */	mr r6, r28
-/* 801117B8 0010E5B8  C0 A2 AD 40 */	lfs f5, _esc__2_3020-_SDA2_BASE_(r2)
+/* 801117B8 0010E5B8  C0 A2 AD 40 */	lfs f5, _esc__2_3020@sda21(r2)
 /* 801117BC 0010E5BC  38 FF 14 A8 */	addi r7, r31, 0x14a8
 /* 801117C0 0010E5C0  4B FF D3 49 */	bl get_stomp_placement__17zNPCBossOmnidroidCFP5xVec3P5xVec3iRC5xVec3fffff
 /* 801117C4 0010E5C4  FC 20 F0 90 */	fmr f1, f30
-/* 801117C8 0010E5C8  C0 42 AC 9C */	lfs f2, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 801117C8 0010E5C8  C0 42 AC 9C */	lfs f2, _esc__2_1659_1@sda21(r2)
 /* 801117CC 0010E5CC  FC 80 E0 90 */	fmr f4, f28
-/* 801117D0 0010E5D0  C0 62 AE B4 */	lfs f3, _esc__2_4416-_SDA2_BASE_(r2)
+/* 801117D0 0010E5D0  C0 62 AE B4 */	lfs f3, _esc__2_4416@sda21(r2)
 /* 801117D4 0010E5D4  7F A3 EB 78 */	mr r3, r29
 /* 801117D8 0010E5D8  7F C4 F3 78 */	mr r4, r30
 /* 801117DC 0010E5DC  7F 85 E3 78 */	mr r5, r28
@@ -13969,7 +13969,7 @@ lbl_80111728:
 /* 801117F0 0010E5F0  4B F6 77 61 */	bl iMemPopTemp__FPv
 lbl_801117F4:
 /* 801117F4 0010E5F4  C0 3F 14 C4 */	lfs f1, 0x14c4(r31)
-/* 801117F8 0010E5F8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801117F8 0010E5F8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801117FC 0010E5FC  EC 21 F8 28 */	fsubs f1, f1, f31
 /* 80111800 0010E600  D0 3F 14 C4 */	stfs f1, 0x14c4(r31)
 /* 80111804 0010E604  C0 3F 14 C4 */	lfs f1, 0x14c4(r31)
@@ -14004,7 +14004,7 @@ get_stomp_rate__Q217zNPCBossOmnidroid8leg_typeCFffffffffffffff:
 /* 8011185C 0010E65C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80111860 0010E660  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 80111864 0010E664  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
-/* 80111868 0010E668  C1 02 A8 B0 */	lfs f8, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80111868 0010E668  C1 02 A8 B0 */	lfs f8, _esc__2_1222@sda21(r2)
 /* 8011186C 0010E66C  C3 E1 00 28 */	lfs f31, 0x28(r1)
 /* 80111870 0010E670  FC 01 40 40 */	fcmpo cr0, f1, f8
 /* 80111874 0010E674  C1 A1 00 2C */	lfs f13, 0x2c(r1)
@@ -14018,7 +14018,7 @@ get_stomp_rate__Q217zNPCBossOmnidroid8leg_typeCFffffffffffffff:
 /* 80111894 0010E694  4C 40 13 82 */	cror 2, 0, 2
 /* 80111898 0010E698  40 82 00 70 */	bne lbl_80111908
 /* 8011189C 0010E69C  FC 20 08 50 */	fneg f1, f1
-/* 801118A0 0010E6A0  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801118A0 0010E6A0  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801118A4 0010E6A4  EC 21 18 28 */	fsubs f1, f1, f3
 /* 801118A8 0010E6A8  EC 24 00 72 */	fmuls f1, f4, f1
 /* 801118AC 0010E6AC  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -14036,7 +14036,7 @@ lbl_801118D0:
 /* 801118D4 0010E6D4  4C 41 13 82 */	cror 2, 1, 2
 /* 801118D8 0010E6D8  40 82 00 30 */	bne lbl_80111908
 /* 801118DC 0010E6DC  EC 21 38 28 */	fsubs f1, f1, f7
-/* 801118E0 0010E6E0  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801118E0 0010E6E0  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801118E4 0010E6E4  EC 24 00 72 */	fmuls f1, f4, f1
 /* 801118E8 0010E6E8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801118EC 0010E6EC  4C 41 13 82 */	cror 2, 1, 2
@@ -14052,7 +14052,7 @@ lbl_80111908:
 /* 8011190C 0010E70C  4C 41 13 82 */	cror 2, 1, 2
 /* 80111910 0010E710  40 82 00 30 */	bne lbl_80111940
 /* 80111914 0010E714  EC 22 60 28 */	fsubs f1, f2, f12
-/* 80111918 0010E718  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80111918 0010E718  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011191C 0010E71C  EC 2B 00 72 */	fmuls f1, f11, f1
 /* 80111920 0010E720  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80111924 0010E724  4C 41 13 82 */	cror 2, 1, 2
@@ -14082,7 +14082,7 @@ event_handler__Q217zNPCBossOmnidroid8leg_typeFP5xBaseP5xBaseUiPCfP5xBaseUi:
 /* 80111970 0010E770  41 82 00 08 */	beq lbl_80111978
 /* 80111974 0010E774  48 00 00 44 */	b lbl_801119B8
 lbl_80111978:
-/* 80111978 0010E778  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111978 0010E778  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011197C 0010E77C  7C 04 18 40 */	cmplw r4, r3
 /* 80111980 0010E780  41 82 00 38 */	beq lbl_801119B8
 /* 80111984 0010E784  80 85 00 00 */	lwz r4, 0(r5)
@@ -14092,7 +14092,7 @@ lbl_80111978:
 /* 80111994 0010E794  41 82 00 08 */	beq lbl_8011199C
 /* 80111998 0010E798  38 80 00 03 */	li r4, 3
 lbl_8011199C:
-/* 8011199C 0010E79C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011199C 0010E79C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801119A0 0010E7A0  38 00 14 D0 */	li r0, 0x14d0
 /* 801119A4 0010E7A4  C0 3F 00 00 */	lfs f1, 0(r31)
 /* 801119A8 0010E7A8  38 A3 17 60 */	addi r5, r3, 0x1760
@@ -14126,11 +14126,11 @@ event_handler_callback__Q217zNPCBossOmnidroid8leg_typeFP5xBaseP5xBaseUiPCfP5xBas
 /* 801119FC 0010E7FC  38 A1 00 08 */	addi r5, r1, 8
 /* 80111A00 0010E800  80 C4 00 00 */	lwz r6, 0(r4)
 /* 80111A04 0010E804  38 81 00 0C */	addi r4, r1, 0xc
-/* 80111A08 0010E808  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111A08 0010E808  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111A0C 0010E80C  4B FF D4 99 */	bl get_leg_segment__17zNPCBossOmnidroidCFRiRiUi
 /* 80111A10 0010E810  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 80111A14 0010E814  7F 44 D3 78 */	mr r4, r26
-/* 80111A18 0010E818  81 4D CC 18 */	lwz r10, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111A18 0010E818  81 4D CC 18 */	lwz r10, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111A1C 0010E81C  7F 65 DB 78 */	mr r5, r27
 /* 80111A20 0010E820  1C 60 14 D0 */	mulli r3, r0, 0x14d0
 /* 80111A24 0010E824  7F 86 E3 78 */	mr r6, r28
@@ -14150,7 +14150,7 @@ event_handler_callback__Q217zNPCBossOmnidroid8leg_typeFP5xBaseP5xBaseUiPCfP5xBas
 setup__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80111A54 0010E854  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80111A58 0010E858  7C 08 02 A6 */	mflr r0
-/* 80111A5C 0010E85C  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 80111A5C 0010E85C  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 80111A60 0010E860  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80111A64 0010E864  38 00 00 00 */	li r0, 0
 /* 80111A68 0010E868  BF C1 00 08 */	stmw r30, 8(r1)
@@ -14158,15 +14158,15 @@ setup__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80111A70 0010E870  90 03 02 80 */	stw r0, 0x280(r3)
 /* 80111A74 0010E874  3C 60 7A 96 */	lis r3, 0x7A9672EC@ha
 /* 80111A78 0010E878  38 63 72 EC */	addi r3, r3, 0x7A9672EC@l
-/* 80111A7C 0010E87C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111A7C 0010E87C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111A80 0010E880  80 05 03 4C */	lwz r0, 0x34c(r5)
 /* 80111A84 0010E884  54 00 10 3A */	slwi r0, r0, 2
 /* 80111A88 0010E888  7C 24 04 2E */	lfsx f1, r4, r0
 /* 80111A8C 0010E88C  4B FF 4E DD */	bl _load_model__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FUif
 /* 80111A90 0010E890  90 7F 02 8C */	stw r3, 0x28c(r31)
 /* 80111A94 0010E894  3C 60 F9 97 */	lis r3, 0xF996FC69@ha
-/* 80111A98 0010E898  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80111A9C 0010E89C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111A98 0010E898  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80111A9C 0010E89C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111AA0 0010E8A0  38 63 FC 69 */	addi r3, r3, 0xF996FC69@l
 /* 80111AA4 0010E8A4  80 05 03 4C */	lwz r0, 0x34c(r5)
 /* 80111AA8 0010E8A8  54 00 10 3A */	slwi r0, r0, 2
@@ -14178,9 +14178,9 @@ setup__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80111AC0 0010E8C0  80 DF 02 90 */	lwz r6, 0x290(r31)
 /* 80111AC4 0010E8C4  38 80 00 19 */	li r4, 0x19
 /* 80111AC8 0010E8C8  38 00 05 20 */	li r0, 0x520
-/* 80111ACC 0010E8CC  38 A2 A9 AC */	addi r5, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 80111ACC 0010E8CC  38 A2 A9 AC */	addi r5, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 80111AD0 0010E8D0  80 66 00 14 */	lwz r3, 0x14(r6)
-/* 80111AD4 0010E8D4  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80111AD4 0010E8D4  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80111AD8 0010E8D8  54 63 04 1A */	rlwinm r3, r3, 0, 0x10, 0xd
 /* 80111ADC 0010E8DC  90 66 00 14 */	stw r3, 0x14(r6)
 /* 80111AE0 0010E8E0  80 DF 02 90 */	lwz r6, 0x290(r31)
@@ -14189,7 +14189,7 @@ setup__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80111AEC 0010E8EC  90 66 00 14 */	stw r3, 0x14(r6)
 /* 80111AF0 0010E8F0  80 7F 02 90 */	lwz r3, 0x290(r31)
 /* 80111AF4 0010E8F4  98 83 00 18 */	stb r4, 0x18(r3)
-/* 80111AF8 0010E8F8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111AF8 0010E8F8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111AFC 0010E8FC  38 83 7F 70 */	addi r4, r3, 0x7f70
 /* 80111B00 0010E900  7C 84 F8 50 */	subf r4, r4, r31
 /* 80111B04 0010E904  7C 84 03 D6 */	divw r4, r4, r0
@@ -14197,7 +14197,7 @@ setup__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80111B0C 0010E90C  7C A5 00 2E */	lwzx r5, r5, r0
 /* 80111B10 0010E910  3B C5 00 06 */	addi r30, r5, 6
 /* 80111B14 0010E914  4B FF 9C 0D */	bl set_facing__17zNPCBossOmnidroidFif
-/* 80111B18 0010E918  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111B18 0010E918  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111B1C 0010E91C  80 A3 00 28 */	lwz r5, 0x28(r3)
 /* 80111B20 0010E920  80 83 02 C8 */	lwz r4, 0x2c8(r3)
 /* 80111B24 0010E924  80 A5 00 0C */	lwz r5, 0xc(r5)
@@ -14205,14 +14205,14 @@ setup__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80111B2C 0010E92C  C0 23 00 10 */	lfs f1, 0x10(r3)
 /* 80111B30 0010E930  80 65 00 08 */	lwz r3, 8(r5)
 /* 80111B34 0010E934  4B EF 7D BD */	bl xAnimPlaySetState__FP11xAnimSingleP10xAnimStatef
-/* 80111B38 0010E938  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80111B3C 0010E93C  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80111B38 0010E938  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80111B3C 0010E93C  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80111B40 0010E940  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 80111B44 0010E944  4B F3 8B C9 */	bl xModelUpdate__FP14xModelInstancef
-/* 80111B48 0010E948  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111B48 0010E948  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111B4C 0010E94C  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 80111B50 0010E950  4B F3 8E 5D */	bl xModelEval__FP14xModelInstance
-/* 80111B54 0010E954  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111B54 0010E954  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111B58 0010E958  57 C0 30 32 */	slwi r0, r30, 6
 /* 80111B5C 0010E95C  38 7F 02 40 */	addi r3, r31, 0x240
 /* 80111B60 0010E960  80 84 00 28 */	lwz r4, 0x28(r4)
@@ -14223,25 +14223,25 @@ setup__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80111B74 0010E974  38 80 00 00 */	li r4, 0
 /* 80111B78 0010E978  4B F2 6C F5 */	bl create__9xFXRibbonFi
 /* 80111B7C 0010E97C  38 7F 03 98 */	addi r3, r31, 0x398
-/* 80111B80 0010E980  38 8D 93 98 */	addi r4, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs13ribbon_center-_SDA_BASE_
+/* 80111B80 0010E980  38 8D 93 98 */	addi r4, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs13ribbon_center@sda21
 /* 80111B84 0010E984  4B F2 6F 01 */	bl set_config__9xFXRibbonFPCQ29xFXRibbon11config_type
 /* 80111B88 0010E988  38 7F 03 A8 */	addi r3, r31, 0x3a8
 /* 80111B8C 0010E98C  38 80 00 00 */	li r4, 0
 /* 80111B90 0010E990  4B F2 6C DD */	bl create__9xFXRibbonFi
 /* 80111B94 0010E994  38 7F 03 A8 */	addi r3, r31, 0x3a8
-/* 80111B98 0010E998  38 8D 93 98 */	addi r4, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs13ribbon_center-_SDA_BASE_
+/* 80111B98 0010E998  38 8D 93 98 */	addi r4, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs13ribbon_center@sda21
 /* 80111B9C 0010E99C  4B F2 6E E9 */	bl set_config__9xFXRibbonFPCQ29xFXRibbon11config_type
 /* 80111BA0 0010E9A0  38 7F 03 B8 */	addi r3, r31, 0x3b8
 /* 80111BA4 0010E9A4  38 80 00 00 */	li r4, 0
 /* 80111BA8 0010E9A8  4B F2 6C C5 */	bl create__9xFXRibbonFi
 /* 80111BAC 0010E9AC  38 7F 03 B8 */	addi r3, r31, 0x3b8
-/* 80111BB0 0010E9B0  38 8D 93 B8 */	addi r4, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake-_SDA_BASE_
+/* 80111BB0 0010E9B0  38 8D 93 B8 */	addi r4, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake@sda21
 /* 80111BB4 0010E9B4  4B F2 6E D1 */	bl set_config__9xFXRibbonFPCQ29xFXRibbon11config_type
 /* 80111BB8 0010E9B8  38 7F 03 C8 */	addi r3, r31, 0x3c8
 /* 80111BBC 0010E9BC  38 80 00 00 */	li r4, 0
 /* 80111BC0 0010E9C0  4B F2 6C AD */	bl create__9xFXRibbonFi
 /* 80111BC4 0010E9C4  38 7F 03 C8 */	addi r3, r31, 0x3c8
-/* 80111BC8 0010E9C8  38 8D 93 B8 */	addi r4, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake-_SDA_BASE_
+/* 80111BC8 0010E9C8  38 8D 93 B8 */	addi r4, r13, cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake@sda21
 /* 80111BCC 0010E9CC  4B F2 6E B9 */	bl set_config__9xFXRibbonFPCQ29xFXRibbon11config_type
 /* 80111BD0 0010E9D0  7F E3 FB 78 */	mr r3, r31
 /* 80111BD4 0010E9D4  48 00 11 D1 */	bl setup_collision__Q217zNPCBossOmnidroid13clawrang_typeFv
@@ -14272,7 +14272,7 @@ reset__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80111C2C 0010EA2C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80111C30 0010EA30  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80111C34 0010EA34  7C 7F 1B 78 */	mr r31, r3
-/* 80111C38 0010EA38  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111C38 0010EA38  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111C3C 0010EA3C  88 04 01 F6 */	lbz r0, 0x1f6(r4)
 /* 80111C40 0010EA40  28 00 00 00 */	cmplwi r0, 0
 /* 80111C44 0010EA44  41 82 00 3C */	beq lbl_80111C80
@@ -14299,7 +14299,7 @@ lbl_80111C80:
 /* 80111C90 0010EA90  38 A0 00 10 */	li r5, 0x10
 /* 80111C94 0010EA94  90 1F 02 88 */	stw r0, 0x288(r31)
 /* 80111C98 0010EA98  4B EF 14 69 */	bl memset
-/* 80111C9C 0010EA9C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80111C9C 0010EA9C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80111CA0 0010EAA0  38 00 00 00 */	li r0, 0
 /* 80111CA4 0010EAA4  7F E3 FB 78 */	mr r3, r31
 /* 80111CA8 0010EAA8  D0 1F 03 40 */	stfs f0, 0x340(r31)
@@ -14353,10 +14353,10 @@ update__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80111D50 0010EB50  48 00 00 08 */	b lbl_80111D58
 /* 80111D54 0010EB54  48 00 23 51 */	bl update_spindown__Q217zNPCBossOmnidroid13clawrang_typeFf
 lbl_80111D58:
-/* 80111D58 0010EB58  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111D58 0010EB58  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111D5C 0010EB5C  38 80 05 20 */	li r4, 0x520
 /* 80111D60 0010EB60  80 1F 02 80 */	lwz r0, 0x280(r31)
-/* 80111D64 0010EB64  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 80111D64 0010EB64  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 80111D68 0010EB68  38 A5 7F 70 */	addi r5, r5, 0x7f70
 /* 80111D6C 0010EB6C  7C A5 F8 50 */	subf r5, r5, r31
 /* 80111D70 0010EB70  54 00 04 A5 */	rlwinm. r0, r0, 0, 0x12, 0x12
@@ -14366,7 +14366,7 @@ lbl_80111D58:
 /* 80111D80 0010EB80  3B C3 00 06 */	addi r30, r3, 6
 /* 80111D84 0010EB84  41 82 00 24 */	beq lbl_80111DA8
 /* 80111D88 0010EB88  C0 1F 03 40 */	lfs f0, 0x340(r31)
-/* 80111D8C 0010EB8C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80111D8C 0010EB8C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80111D90 0010EB90  EC 00 08 2A */	fadds f0, f0, f1
 /* 80111D94 0010EB94  D0 1F 03 40 */	stfs f0, 0x340(r31)
 /* 80111D98 0010EB98  C0 1F 03 40 */	lfs f0, 0x340(r31)
@@ -14377,13 +14377,13 @@ lbl_80111DA8:
 /* 80111DA8 0010EBA8  80 1F 02 80 */	lwz r0, 0x280(r31)
 /* 80111DAC 0010EBAC  54 00 07 7B */	rlwinm. r0, r0, 0, 0x1d, 0x1d
 /* 80111DB0 0010EBB0  41 82 00 58 */	beq lbl_80111E08
-/* 80111DB4 0010EBB4  C0 42 AC 80 */	lfs f2, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80111DB4 0010EBB4  C0 42 AC 80 */	lfs f2, _esc__2_1438_0@sda21(r2)
 /* 80111DB8 0010EBB8  C0 3F 02 DC */	lfs f1, 0x2dc(r31)
 /* 80111DBC 0010EBBC  C0 1F 02 D8 */	lfs f0, 0x2d8(r31)
 /* 80111DC0 0010EBC0  EC 42 00 72 */	fmuls f2, f2, f1
 /* 80111DC4 0010EBC4  C0 7F 02 D4 */	lfs f3, 0x2d4(r31)
 /* 80111DC8 0010EBC8  EC 00 07 F2 */	fmuls f0, f0, f31
-/* 80111DCC 0010EBCC  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80111DCC 0010EBCC  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 80111DD0 0010EBD0  EC 42 07 F2 */	fmuls f2, f2, f31
 /* 80111DD4 0010EBD4  EC 1F 00 BA */	fmadds f0, f31, f2, f0
 /* 80111DD8 0010EBD8  EC 03 00 2A */	fadds f0, f3, f0
@@ -14395,7 +14395,7 @@ lbl_80111DA8:
 /* 80111DF0 0010EBF0  C0 1F 02 D4 */	lfs f0, 0x2d4(r31)
 /* 80111DF4 0010EBF4  EC 21 00 2A */	fadds f1, f1, f0
 /* 80111DF8 0010EBF8  4B EF DF 9D */	bl xrmod__Ff
-/* 80111DFC 0010EBFC  C0 02 AC E8 */	lfs f0, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80111DFC 0010EBFC  C0 02 AC E8 */	lfs f0, _esc__2_2843@sda21(r2)
 /* 80111E00 0010EC00  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80111E04 0010EC04  D0 1F 02 D4 */	stfs f0, 0x2d4(r31)
 lbl_80111E08:
@@ -14404,12 +14404,12 @@ lbl_80111E08:
 /* 80111E10 0010EC10  41 82 00 E0 */	beq lbl_80111EF0
 /* 80111E14 0010EC14  54 60 07 BD */	rlwinm. r0, r3, 0, 0x1e, 0x1e
 /* 80111E18 0010EC18  41 82 00 48 */	beq lbl_80111E60
-/* 80111E1C 0010EC1C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111E1C 0010EC1C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111E20 0010EC20  7F C5 F3 78 */	mr r5, r30
 /* 80111E24 0010EC24  38 7F 02 00 */	addi r3, r31, 0x200
 /* 80111E28 0010EC28  80 84 00 28 */	lwz r4, 0x28(r4)
 /* 80111E2C 0010EC2C  4B F3 94 91 */	bl xModelGetBoneMat__FR7xMat3x3RC14xModelInstanceUl
-/* 80111E30 0010EC30  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80111E30 0010EC30  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80111E34 0010EC34  7F C5 F3 78 */	mr r5, r30
 /* 80111E38 0010EC38  38 61 00 50 */	addi r3, r1, 0x50
 /* 80111E3C 0010EC3C  80 84 00 28 */	lwz r4, 0x28(r4)
@@ -14427,7 +14427,7 @@ lbl_80111E60:
 /* 80111E68 0010EC68  48 00 22 C9 */	bl update_banking__Q217zNPCBossOmnidroid13clawrang_typeFf
 /* 80111E6C 0010EC6C  38 61 00 90 */	addi r3, r1, 0x90
 /* 80111E70 0010EC70  38 9F 03 1C */	addi r4, r31, 0x31c
-/* 80111E74 0010EC74  38 A2 89 FC */	addi r5, r2, g_X3-_SDA2_BASE_
+/* 80111E74 0010EC74  38 A2 89 FC */	addi r5, r2, g_X3@sda21
 /* 80111E78 0010EC78  4B FF A9 7D */	bl xMat3x3LookVec4__FR7xMat3x3RC5xVec3RC5xVec3
 /* 80111E7C 0010EC7C  38 61 00 C0 */	addi r3, r1, 0xc0
 /* 80111E80 0010EC80  38 9F 02 30 */	addi r4, r31, 0x230
@@ -14515,7 +14515,7 @@ lbl_80111FA4:
 /* 80111FAC 0010EDAC  41 82 00 20 */	beq lbl_80111FCC
 /* 80111FB0 0010EDB0  80 9F 02 8C */	lwz r4, 0x28c(r31)
 /* 80111FB4 0010EDB4  FC 20 F8 90 */	fmr f1, f31
-/* 80111FB8 0010EDB8  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80111FB8 0010EDB8  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 80111FBC 0010EDBC  38 7F 03 D8 */	addi r3, r31, 0x3d8
 /* 80111FC0 0010EDC0  80 84 00 54 */	lwz r4, 0x54(r4)
 /* 80111FC4 0010EDC4  38 84 00 30 */	addi r4, r4, 0x30
@@ -14541,12 +14541,12 @@ transform_anim__Q217zNPCBossOmnidroid13clawrang_typeFP9xAnimPlayP5xQuatP5xVec3i:
 /* 80112004 0010EE04  38 00 05 20 */	li r0, 0x520
 /* 80112008 0010EE08  93 E1 00 2C */	stw r31, 0x2c(r1)
 /* 8011200C 0010EE0C  7C 7F 1B 78 */	mr r31, r3
-/* 80112010 0010EE10  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112010 0010EE10  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112014 0010EE14  80 E3 04 F0 */	lwz r7, 0x4f0(r3)
 /* 80112018 0010EE18  38 64 7F 70 */	addi r3, r4, 0x7f70
 /* 8011201C 0010EE1C  80 DF 04 F4 */	lwz r6, 0x4f4(r31)
 /* 80112020 0010EE20  7C 63 F8 50 */	subf r3, r3, r31
-/* 80112024 0010EE24  38 82 A9 AC */	addi r4, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 80112024 0010EE24  38 82 A9 AC */	addi r4, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 80112028 0010EE28  7C 03 03 D6 */	divw r0, r3, r0
 /* 8011202C 0010EE2C  90 E1 00 18 */	stw r7, 0x18(r1)
 /* 80112030 0010EE30  38 7F 04 F0 */	addi r3, r31, 0x4f0
@@ -14584,21 +14584,21 @@ xQuatGetAngle__FPC5xQuat:
 /* 801120A0 0010EEA0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801120A4 0010EEA4  7C 08 02 A6 */	mflr r0
 /* 801120A8 0010EEA8  C0 23 00 0C */	lfs f1, 0xc(r3)
-/* 801120AC 0010EEAC  C0 02 AE B8 */	lfs f0, _esc__2_4532-_SDA2_BASE_(r2)
+/* 801120AC 0010EEAC  C0 02 AE B8 */	lfs f0, _esc__2_4532@sda21(r2)
 /* 801120B0 0010EEB0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801120B4 0010EEB4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801120B8 0010EEB8  40 81 00 0C */	ble lbl_801120C4
-/* 801120BC 0010EEBC  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801120BC 0010EEBC  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 801120C0 0010EEC0  48 00 00 24 */	b lbl_801120E4
 lbl_801120C4:
-/* 801120C4 0010EEC4  C0 02 AE BC */	lfs f0, _esc__2_4533-_SDA2_BASE_(r2)
+/* 801120C4 0010EEC4  C0 02 AE BC */	lfs f0, _esc__2_4533@sda21(r2)
 /* 801120C8 0010EEC8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801120CC 0010EECC  40 80 00 0C */	bge lbl_801120D8
-/* 801120D0 0010EED0  C0 22 AC CC */	lfs f1, _esc__2_2352_0-_SDA2_BASE_(r2)
+/* 801120D0 0010EED0  C0 22 AC CC */	lfs f1, _esc__2_2352_0@sda21(r2)
 /* 801120D4 0010EED4  48 00 00 10 */	b lbl_801120E4
 lbl_801120D8:
 /* 801120D8 0010EED8  4B EF F8 B9 */	bl xacos__Ff
-/* 801120DC 0010EEDC  C0 02 AC A0 */	lfs f0, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 801120DC 0010EEDC  C0 02 AC A0 */	lfs f0, _esc__2_1660_1@sda21(r2)
 /* 801120E0 0010EEE0  EC 20 00 72 */	fmuls f1, f0, f1
 lbl_801120E4:
 /* 801120E4 0010EEE4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -14619,7 +14619,7 @@ render__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80112114 0010EF14  80 7F 02 8C */	lwz r3, 0x28c(r31)
 /* 80112118 0010EF18  4B F3 8B 95 */	bl xModelRender__FP14xModelInstance
 /* 8011211C 0010EF1C  80 7F 02 90 */	lwz r3, 0x290(r31)
-/* 80112120 0010EF20  C0 02 AE C0 */	lfs f0, _esc__2_4550-_SDA2_BASE_(r2)
+/* 80112120 0010EF20  C0 02 AE C0 */	lfs f0, _esc__2_4550@sda21(r2)
 /* 80112124 0010EF24  C0 23 00 2C */	lfs f1, 0x2c(r3)
 /* 80112128 0010EF28  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011212C 0010EF2C  4C 41 13 82 */	cror 2, 1, 2
@@ -14648,7 +14648,7 @@ replace_claw__Q217zNPCBossOmnidroid13clawrang_typeFbb:
 /* 80112174 0010EF74  7C 7F 1B 78 */	mr r31, r3
 /* 80112178 0010EF78  7C 9D 23 78 */	mr r29, r4
 /* 8011217C 0010EF7C  7C BE 2B 78 */	mr r30, r5
-/* 80112180 0010EF80  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112180 0010EF80  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112184 0010EF84  38 66 7F 70 */	addi r3, r6, 0x7f70
 /* 80112188 0010EF88  7C 63 F8 50 */	subf r3, r3, r31
 /* 8011218C 0010EF8C  7C 03 03 D6 */	divw r0, r3, r0
@@ -14671,8 +14671,8 @@ lbl_801121C0:
 /* 801121CC 0010EFCC  64 00 00 04 */	oris r0, r0, 4
 /* 801121D0 0010EFD0  90 1F 02 80 */	stw r0, 0x280(r31)
 lbl_801121D4:
-/* 801121D4 0010EFD4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801121D8 0010EFD8  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 801121D4 0010EFD4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 801121D8 0010EFD8  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 801121DC 0010EFDC  80 04 03 4C */	lwz r0, 0x34c(r4)
 /* 801121E0 0010EFE0  54 00 10 3A */	slwi r0, r0, 2
 /* 801121E4 0010EFE4  7C 03 04 2E */	lfsx f0, r3, r0
@@ -14697,7 +14697,7 @@ restore_claw__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80112218 0010F018  38 00 05 20 */	li r0, 0x520
 /* 8011221C 0010F01C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80112220 0010F020  7C 7F 1B 78 */	mr r31, r3
-/* 80112224 0010F024  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112224 0010F024  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112228 0010F028  38 64 7F 70 */	addi r3, r4, 0x7f70
 /* 8011222C 0010F02C  7C 63 F8 50 */	subf r3, r3, r31
 /* 80112230 0010F030  7C 03 03 D6 */	divw r0, r3, r0
@@ -14734,7 +14734,7 @@ set_blur_config__Q217zNPCBossOmnidroid13clawrang_typeFfRCQ210xModelBlur11config_
 /* 80112294 0010F094  38 7E 02 9C */	addi r3, r30, 0x29c
 /* 80112298 0010F098  4B FC 60 9D */	bl __as__Q210xModelBlur11config_dataFRCQ210xModelBlur11config_data
 /* 8011229C 0010F09C  C0 3F 00 04 */	lfs f1, 4(r31)
-/* 801122A0 0010F0A0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801122A0 0010F0A0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801122A4 0010F0A4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801122A8 0010F0A8  4C 40 13 82 */	cror 2, 0, 2
 /* 801122AC 0010F0AC  40 82 00 18 */	bne lbl_801122C4
@@ -14756,7 +14756,7 @@ lbl_801122C8:
 /* 801122E4 0010F0E4  41 82 00 20 */	beq lbl_80112304
 /* 801122E8 0010F0E8  C0 3E 02 98 */	lfs f1, 0x298(r30)
 /* 801122EC 0010F0EC  38 7E 02 94 */	addi r3, r30, 0x294
-/* 801122F0 0010F0F0  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801122F0 0010F0F0  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801122F4 0010F0F4  48 0C 36 61 */	bl set_lifetime__10xModelBlurFff
 /* 801122F8 0010F0F8  38 7E 02 94 */	addi r3, r30, 0x294
 /* 801122FC 0010F0FC  38 9E 02 9C */	addi r4, r30, 0x29c
@@ -14778,7 +14778,7 @@ blur_begin__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 8011232C 0010F12C  54 60 06 31 */	rlwinm. r0, r3, 0, 0x18, 0x18
 /* 80112330 0010F130  40 82 00 24 */	bne lbl_80112354
 /* 80112334 0010F134  60 60 00 80 */	ori r0, r3, 0x80
-/* 80112338 0010F138  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80112338 0010F138  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011233C 0010F13C  90 05 02 80 */	stw r0, 0x280(r5)
 /* 80112340 0010F140  38 65 02 94 */	addi r3, r5, 0x294
 /* 80112344 0010F144  38 85 02 9C */	addi r4, r5, 0x29c
@@ -14810,7 +14810,7 @@ blur_end__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 8011239C 0010F19C  38 7F 02 94 */	addi r3, r31, 0x294
 /* 801123A0 0010F1A0  48 0C 36 35 */	bl get_lifetime_goal__10xModelBlurCFv
 /* 801123A4 0010F1A4  FC 40 08 90 */	fmr f2, f1
-/* 801123A8 0010F1A8  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801123A8 0010F1A8  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 801123AC 0010F1AC  38 7F 02 94 */	addi r3, r31, 0x294
 /* 801123B0 0010F1B0  48 0C 35 A5 */	bl set_lifetime__10xModelBlurFff
 lbl_801123B4:
@@ -14862,10 +14862,10 @@ streak_end__Q217zNPCBossOmnidroid13clawrang_typeFv:
 start__Q217zNPCBossOmnidroid13clawrang_typeFi:
 /* 80112444 0010F244  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80112448 0010F248  7C 08 02 A6 */	mflr r0
-/* 8011244C 0010F24C  C0 02 AD D0 */	lfs f0, _esc__2_3428-_SDA2_BASE_(r2)
+/* 8011244C 0010F24C  C0 02 AD D0 */	lfs f0, _esc__2_3428@sda21(r2)
 /* 80112450 0010F250  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80112454 0010F254  38 00 00 00 */	li r0, 0
-/* 80112458 0010F258  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80112458 0010F258  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011245C 0010F25C  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80112460 0010F260  7C 7E 1B 78 */	mr r30, r3
 /* 80112464 0010F264  7C 9F 23 78 */	mr r31, r4
@@ -14875,10 +14875,10 @@ start__Q217zNPCBossOmnidroid13clawrang_typeFi:
 /* 80112474 0010F274  D0 1E 02 C8 */	stfs f0, 0x2c8(r30)
 /* 80112478 0010F278  D0 1E 02 C4 */	stfs f0, 0x2c4(r30)
 /* 8011247C 0010F27C  4B EF 8C 1D */	bl __as__5xVec3Ff
-/* 80112480 0010F280  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80112480 0010F280  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80112484 0010F284  38 7E 02 EC */	addi r3, r30, 0x2ec
 /* 80112488 0010F288  4B EF 8C 11 */	bl __as__5xVec3Ff
-/* 8011248C 0010F28C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011248C 0010F28C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80112490 0010F290  38 00 00 00 */	li r0, 0
 /* 80112494 0010F294  7F C3 F3 78 */	mr r3, r30
 /* 80112498 0010F298  D0 1E 03 2C */	stfs f0, 0x32c(r30)
@@ -14887,7 +14887,7 @@ start__Q217zNPCBossOmnidroid13clawrang_typeFi:
 /* 801124A4 0010F2A4  93 FE 03 44 */	stw r31, 0x344(r30)
 /* 801124A8 0010F2A8  90 1E 02 84 */	stw r0, 0x284(r30)
 /* 801124AC 0010F2AC  48 00 0D D9 */	bl start_spinup__Q217zNPCBossOmnidroid13clawrang_typeFv
-/* 801124B0 0010F2B0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801124B0 0010F2B0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801124B4 0010F2B4  38 00 05 20 */	li r0, 0x520
 /* 801124B8 0010F2B8  38 64 7F 70 */	addi r3, r4, 0x7f70
 /* 801124BC 0010F2BC  7C 63 F0 50 */	subf r3, r3, r30
@@ -14933,7 +14933,7 @@ lbl_8011253C:
 /* 80112548 0010F348  90 1F 02 88 */	stw r0, 0x288(r31)
 /* 8011254C 0010F34C  98 1F 00 21 */	stb r0, 0x21(r31)
 /* 80112550 0010F350  4B FB E1 91 */	bl zGridUpdateEnt__FP4xEnt
-/* 80112554 0010F354  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112554 0010F354  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112558 0010F358  38 00 05 20 */	li r0, 0x520
 /* 8011255C 0010F35C  38 64 7F 70 */	addi r3, r4, 0x7f70
 /* 80112560 0010F360  7C 63 F8 50 */	subf r3, r3, r31
@@ -14949,7 +14949,7 @@ lbl_8011253C:
 /* 80112588 0010F388  38 7F 02 94 */	addi r3, r31, 0x294
 /* 8011258C 0010F38C  48 0C 31 F1 */	bl deactivate__10xModelBlurFv
 lbl_80112590:
-/* 80112590 0010F390  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80112590 0010F390  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80112594 0010F394  80 7F 02 90 */	lwz r3, 0x290(r31)
 /* 80112598 0010F398  D0 03 00 2C */	stfs f0, 0x2c(r3)
 /* 8011259C 0010F39C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -14992,7 +14992,7 @@ get_remount_loc__Q217zNPCBossOmnidroid13clawrang_typeCFR5xVec3:
 /* 80112614 0010F414  7C 7E 1B 78 */	mr r30, r3
 /* 80112618 0010F418  7C 9F 23 78 */	mr r31, r4
 /* 8011261C 0010F41C  38 81 00 10 */	addi r4, r1, 0x10
-/* 80112620 0010F420  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112620 0010F420  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112624 0010F424  4B FF B8 91 */	bl get_scaled_matrix__17zNPCBossOmnidroidCFR7xMat4x3
 /* 80112628 0010F428  7F E3 FB 78 */	mr r3, r31
 /* 8011262C 0010F42C  38 81 00 10 */	addi r4, r1, 0x10
@@ -15018,7 +15018,7 @@ get_remount_dir__Q217zNPCBossOmnidroid13clawrang_typeCFR5xQuat:
 /* 80112670 0010F470  93 EC FF FC */	stw r31, -4(r12)
 /* 80112674 0010F474  7C 9F 23 78 */	mr r31, r4
 /* 80112678 0010F478  38 86 02 40 */	addi r4, r6, 0x240
-/* 8011267C 0010F47C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011267C 0010F47C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112680 0010F480  38 A5 02 00 */	addi r5, r5, 0x200
 /* 80112684 0010F484  4B F3 64 65 */	bl xMat3x3Mul__FP7xMat3x3PC7xMat3x3PC7xMat3x3
 /* 80112688 0010F488  7F E3 FB 78 */	mr r3, r31
@@ -15038,7 +15038,7 @@ too_close__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 801126B4 0010F4B4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801126B8 0010F4B8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801126BC 0010F4BC  7C 7F 1B 78 */	mr r31, r3
-/* 801126C0 0010F4C0  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 801126C0 0010F4C0  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 801126C4 0010F4C4  80 64 04 C4 */	lwz r3, 0x4c4(r4)
 /* 801126C8 0010F4C8  4B F7 4F 51 */	bl xEntGetFrame__FPC4xEnt
 /* 801126CC 0010F4CC  C0 23 00 38 */	lfs f1, 0x38(r3)
@@ -15046,7 +15046,7 @@ too_close__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 801126D4 0010F4D4  C0 43 00 30 */	lfs f2, 0x30(r3)
 /* 801126D8 0010F4D8  EC 61 00 28 */	fsubs f3, f1, f0
 /* 801126DC 0010F4DC  C0 3F 02 30 */	lfs f1, 0x230(r31)
-/* 801126E0 0010F4E0  C0 02 AE CC */	lfs f0, _esc__2_4702-_SDA2_BASE_(r2)
+/* 801126E0 0010F4E0  C0 02 AE CC */	lfs f0, _esc__2_4702@sda21(r2)
 /* 801126E4 0010F4E4  EC 42 08 28 */	fsubs f2, f2, f1
 /* 801126E8 0010F4E8  EC 23 00 F2 */	fmuls f1, f3, f3
 /* 801126EC 0010F4EC  EC 22 08 BA */	fmadds f1, f2, f2, f1
@@ -15081,11 +15081,11 @@ on_screen__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 80112754 0010F554  C0 5F 00 28 */	lfs f2, 0x28(r31)
 /* 80112758 0010F558  4B EF D7 B9 */	bl xatan2__Fff
 /* 8011275C 0010F55C  EC 01 F8 28 */	fsubs f0, f1, f31
-/* 80112760 0010F560  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80112760 0010F560  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 80112764 0010F564  EC 21 00 2A */	fadds f1, f1, f0
 /* 80112768 0010F568  4B EF D6 2D */	bl xrmod__Ff
-/* 8011276C 0010F56C  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
-/* 80112770 0010F570  C0 02 AE 80 */	lfs f0, _esc__2_4070-_SDA2_BASE_(r2)
+/* 8011276C 0010F56C  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
+/* 80112770 0010F570  C0 02 AE 80 */	lfs f0, _esc__2_4070@sda21(r2)
 /* 80112774 0010F574  EC 21 10 28 */	fsubs f1, f1, f2
 /* 80112778 0010F578  FC 20 0A 10 */	fabs f1, f1
 /* 8011277C 0010F57C  FC 20 08 18 */	frsp f1, f1
@@ -15107,8 +15107,8 @@ player_outside_orbit__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 801127B0 0010F5B0  7C 08 02 A6 */	mflr r0
 /* 801127B4 0010F5B4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801127B8 0010F5B8  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 801127BC 0010F5BC  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
-/* 801127C0 0010F5C0  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801127BC 0010F5BC  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
+/* 801127C0 0010F5C0  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801127C4 0010F5C4  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801127C8 0010F5C8  4B F7 4E 51 */	bl xEntGetFrame__FPC4xEnt
 /* 801127CC 0010F5CC  C0 23 00 38 */	lfs f1, 0x38(r3)
@@ -15116,7 +15116,7 @@ player_outside_orbit__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 801127D4 0010F5D4  C0 43 00 30 */	lfs f2, 0x30(r3)
 /* 801127D8 0010F5D8  EC 61 00 28 */	fsubs f3, f1, f0
 /* 801127DC 0010F5DC  C0 3F 0D B4 */	lfs f1, 0xdb4(r31)
-/* 801127E0 0010F5E0  C0 02 AE D0 */	lfs f0, _esc__2_4716-_SDA2_BASE_(r2)
+/* 801127E0 0010F5E0  C0 02 AE D0 */	lfs f0, _esc__2_4716@sda21(r2)
 /* 801127E4 0010F5E4  EC 42 08 28 */	fsubs f2, f2, f1
 /* 801127E8 0010F5E8  EC 23 00 F2 */	fmuls f1, f3, f3
 /* 801127EC 0010F5EC  EC 22 08 BA */	fmadds f1, f2, f2, f1
@@ -15138,9 +15138,9 @@ at_far_side__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 80112820 0010F620  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 80112824 0010F624  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
 /* 80112828 0010F628  BF A1 00 14 */	stmw r29, 0x14(r1)
-/* 8011282C 0010F62C  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8011282C 0010F62C  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 80112830 0010F630  7C 7D 1B 78 */	mr r29, r3
-/* 80112834 0010F634  83 CD CC 18 */	lwz r30, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112834 0010F634  83 CD CC 18 */	lwz r30, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112838 0010F638  80 64 04 C4 */	lwz r3, 0x4c4(r4)
 /* 8011283C 0010F63C  4B F7 4D DD */	bl xEntGetFrame__FPC4xEnt
 /* 80112840 0010F640  C0 7D 02 30 */	lfs f3, 0x230(r29)
@@ -15160,11 +15160,11 @@ at_far_side__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 80112878 0010F678  EC 42 00 28 */	fsubs f2, f2, f0
 /* 8011287C 0010F67C  4B EF D6 95 */	bl xatan2__Fff
 /* 80112880 0010F680  EC 01 F8 28 */	fsubs f0, f1, f31
-/* 80112884 0010F684  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80112884 0010F684  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 80112888 0010F688  EC 21 00 2A */	fadds f1, f1, f0
 /* 8011288C 0010F68C  4B EF D5 09 */	bl xrmod__Ff
-/* 80112890 0010F690  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
-/* 80112894 0010F694  C0 02 AE 80 */	lfs f0, _esc__2_4070-_SDA2_BASE_(r2)
+/* 80112890 0010F690  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
+/* 80112894 0010F694  C0 02 AE 80 */	lfs f0, _esc__2_4070@sda21(r2)
 /* 80112898 0010F698  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8011289C 0010F69C  FC 20 0A 10 */	fabs f1, f1
 /* 801128A0 0010F6A0  FC 20 08 18 */	frsp f1, f1
@@ -15190,7 +15190,7 @@ estimate_time_to_target__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 801128E4 0010F6E4  DB C1 00 10 */	stfd f30, 0x10(r1)
 /* 801128E8 0010F6E8  F3 C1 00 18 */	psq_st f30, 24(r1), 0, qr0
 /* 801128EC 0010F6EC  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 801128F0 0010F6F0  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 801128F0 0010F6F0  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 801128F4 0010F6F4  7C 7F 1B 78 */	mr r31, r3
 /* 801128F8 0010F6F8  80 64 04 C4 */	lwz r3, 0x4c4(r4)
 /* 801128FC 0010F6FC  4B F7 4D 1D */	bl xEntGetFrame__FPC4xEnt
@@ -15199,22 +15199,22 @@ estimate_time_to_target__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 80112908 0010F708  C0 43 00 30 */	lfs f2, 0x30(r3)
 /* 8011290C 0010F70C  EF C1 00 28 */	fsubs f30, f1, f0
 /* 80112910 0010F710  C0 3F 02 30 */	lfs f1, 0x230(r31)
-/* 80112914 0010F714  C0 02 AE D4 */	lfs f0, _esc__2_4729-_SDA2_BASE_(r2)
+/* 80112914 0010F714  C0 02 AE D4 */	lfs f0, _esc__2_4729@sda21(r2)
 /* 80112918 0010F718  EF E2 08 28 */	fsubs f31, f2, f1
 /* 8011291C 0010F71C  EC 3E 07 B2 */	fmuls f1, f30, f30
 /* 80112920 0010F720  EC 3F 0F FA */	fmadds f1, f31, f31, f1
 /* 80112924 0010F724  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80112928 0010F728  40 80 00 0C */	bge lbl_80112934
-/* 8011292C 0010F72C  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011292C 0010F72C  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80112930 0010F730  48 00 00 30 */	b lbl_80112960
 lbl_80112934:
 /* 80112934 0010F734  4B EF 8B 45 */	bl xsqrt__Ff
-/* 80112938 0010F738  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80112938 0010F738  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011293C 0010F73C  C0 1F 02 E8 */	lfs f0, 0x2e8(r31)
 /* 80112940 0010F740  EC A2 08 24 */	fdivs f5, f2, f1
 /* 80112944 0010F744  C0 5F 02 E0 */	lfs f2, 0x2e0(r31)
-/* 80112948 0010F748  C0 62 AD 70 */	lfs f3, _esc__2_3037-_SDA2_BASE_(r2)
-/* 8011294C 0010F74C  C0 82 AC DC */	lfs f4, _esc__2_2532-_SDA2_BASE_(r2)
+/* 80112948 0010F748  C0 62 AD 70 */	lfs f3, _esc__2_3037@sda21(r2)
+/* 8011294C 0010F74C  C0 82 AC DC */	lfs f4, _esc__2_2532@sda21(r2)
 /* 80112950 0010F750  EC 00 07 B2 */	fmuls f0, f0, f30
 /* 80112954 0010F754  EC 02 07 FA */	fmadds f0, f2, f31, f0
 /* 80112958 0010F758  EC 45 00 32 */	fmuls f2, f5, f0
@@ -15251,8 +15251,8 @@ lbl_801129B4:
 /* 801129C0 0010F7C0  38 60 00 00 */	li r3, 0
 /* 801129C4 0010F7C4  48 00 00 D8 */	b lbl_80112A9C
 lbl_801129C8:
-/* 801129C8 0010F7C8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801129CC 0010F7CC  C3 E2 AC B8 */	lfs f31, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 801129C8 0010F7C8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 801129CC 0010F7CC  C3 E2 AC B8 */	lfs f31, _esc__2_2040_0@sda21(r2)
 /* 801129D0 0010F7D0  3B E3 7F 70 */	addi r31, r3, 0x7f70
 /* 801129D4 0010F7D4  3B DF 19 A0 */	addi r30, r31, 0x19a0
 /* 801129D8 0010F7D8  48 00 00 78 */	b lbl_80112A50
@@ -15266,13 +15266,13 @@ lbl_801129DC:
 /* 801129F4 0010F7F4  54 00 06 B5 */	rlwinm. r0, r0, 0, 0x1a, 0x1a
 /* 801129F8 0010F7F8  40 82 00 54 */	bne lbl_80112A4C
 /* 801129FC 0010F7FC  C0 3F 02 C0 */	lfs f1, 0x2c0(r31)
-/* 80112A00 0010F800  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80112A00 0010F800  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 80112A04 0010F804  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80112A08 0010F808  40 80 00 0C */	bge lbl_80112A14
 /* 80112A0C 0010F80C  38 60 00 00 */	li r3, 0
 /* 80112A10 0010F810  48 00 00 8C */	b lbl_80112A9C
 lbl_80112A14:
-/* 80112A14 0010F814  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80112A14 0010F814  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80112A18 0010F818  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80112A1C 0010F81C  40 80 00 10 */	bge lbl_80112A2C
 /* 80112A20 0010F820  7F A3 EB 78 */	mr r3, r29
@@ -15282,7 +15282,7 @@ lbl_80112A2C:
 /* 80112A2C 0010F82C  7F E3 FB 78 */	mr r3, r31
 /* 80112A30 0010F830  4B FF FE A1 */	bl estimate_time_to_target__Q217zNPCBossOmnidroid13clawrang_typeCFv
 /* 80112A34 0010F834  EC 3F 08 28 */	fsubs f1, f31, f1
-/* 80112A38 0010F838  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80112A38 0010F838  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80112A3C 0010F83C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80112A40 0010F840  40 80 00 0C */	bge lbl_80112A4C
 /* 80112A44 0010F844  38 60 00 00 */	li r3, 0
@@ -15327,7 +15327,7 @@ in_slam_volume__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 80112AC0 0010F8C0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80112AC4 0010F8C4  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80112AC8 0010F8C8  7C 7E 1B 78 */	mr r30, r3
-/* 80112ACC 0010F8CC  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 80112ACC 0010F8CC  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 80112AD0 0010F8D0  83 E4 04 C4 */	lwz r31, 0x4c4(r4)
 /* 80112AD4 0010F8D4  7F E3 FB 78 */	mr r3, r31
 /* 80112AD8 0010F8D8  4B FD 46 D5 */	bl SuperSlamming__19zMrIncrediblePlayerCFv
@@ -15343,7 +15343,7 @@ lbl_80112AEC:
 /* 80112AFC 0010F8FC  C0 43 00 00 */	lfs f2, 0(r3)
 /* 80112B00 0010F900  EC 61 00 28 */	fsubs f3, f1, f0
 /* 80112B04 0010F904  C0 1E 02 30 */	lfs f0, 0x230(r30)
-/* 80112B08 0010F908  C0 22 AC 84 */	lfs f1, _esc__2_1439_0-_SDA2_BASE_(r2)
+/* 80112B08 0010F908  C0 22 AC 84 */	lfs f1, _esc__2_1439_0@sda21(r2)
 /* 80112B0C 0010F90C  C0 9E 03 3C */	lfs f4, 0x33c(r30)
 /* 80112B10 0010F910  EC A2 00 28 */	fsubs f5, f2, f0
 /* 80112B14 0010F914  EC 03 00 F2 */	fmuls f0, f3, f3
@@ -15358,11 +15358,11 @@ lbl_80112AEC:
 /* 80112B38 0010F938  38 60 00 00 */	li r3, 0
 /* 80112B3C 0010F93C  48 00 00 30 */	b lbl_80112B6C
 lbl_80112B40:
-/* 80112B40 0010F940  C0 02 AE D8 */	lfs f0, _esc__2_4781-_SDA2_BASE_(r2)
+/* 80112B40 0010F940  C0 02 AE D8 */	lfs f0, _esc__2_4781@sda21(r2)
 /* 80112B44 0010F944  EC 00 01 32 */	fmuls f0, f0, f4
 /* 80112B48 0010F948  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 80112B4C 0010F94C  41 80 00 14 */	blt lbl_80112B60
-/* 80112B50 0010F950  C0 02 AD 30 */	lfs f0, _esc__2_3016-_SDA2_BASE_(r2)
+/* 80112B50 0010F950  C0 02 AD 30 */	lfs f0, _esc__2_3016@sda21(r2)
 /* 80112B54 0010F954  EC 00 01 32 */	fmuls f0, f0, f4
 /* 80112B58 0010F958  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 80112B5C 0010F95C  40 81 00 0C */	ble lbl_80112B68
@@ -15392,7 +15392,7 @@ apply_damage__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80112BA4 0010F9A4  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80112BA8 0010F9A8  40 82 00 98 */	bne lbl_80112C40
 lbl_80112BAC:
-/* 80112BAC 0010F9AC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112BAC 0010F9AC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112BB0 0010F9B0  38 9F 00 68 */	addi r4, r31, 0x68
 /* 80112BB4 0010F9B4  4B FF 7F F9 */	bl bound_hits_player__17zNPCBossOmnidroidFRC6xBound
 /* 80112BB8 0010F9B8  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -15400,16 +15400,16 @@ lbl_80112BAC:
 /* 80112BC0 0010F9C0  80 1F 02 80 */	lwz r0, 0x280(r31)
 /* 80112BC4 0010F9C4  54 00 03 5B */	rlwinm. r0, r0, 0, 0xd, 0xd
 /* 80112BC8 0010F9C8  41 82 00 1C */	beq lbl_80112BE4
-/* 80112BCC 0010F9CC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112BCC 0010F9CC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112BD0 0010F9D0  38 80 00 08 */	li r4, 8
-/* 80112BD4 0010F9D4  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80112BD4 0010F9D4  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80112BD8 0010F9D8  38 A0 00 01 */	li r5, 1
 /* 80112BDC 0010F9DC  4B FF DD AD */	bl hurt_player__17zNPCBossOmnidroidFif10zHitSource
 /* 80112BE0 0010F9E0  48 00 00 20 */	b lbl_80112C00
 lbl_80112BE4:
-/* 80112BE4 0010F9E4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112BE4 0010F9E4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112BE8 0010F9E8  38 80 00 08 */	li r4, 8
-/* 80112BEC 0010F9EC  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80112BEC 0010F9EC  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80112BF0 0010F9F0  38 A0 00 01 */	li r5, 1
 /* 80112BF4 0010F9F4  C0 5F 02 E0 */	lfs f2, 0x2e0(r31)
 /* 80112BF8 0010F9F8  C0 7F 02 E8 */	lfs f3, 0x2e8(r31)
@@ -15432,7 +15432,7 @@ lbl_80112C00:
 /* 80112C38 0010FA38  90 7F 02 80 */	stw r3, 0x280(r31)
 /* 80112C3C 0010FA3C  90 1F 03 44 */	stw r0, 0x344(r31)
 lbl_80112C40:
-/* 80112C40 0010FA40  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112C40 0010FA40  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112C44 0010FA44  38 9F 00 68 */	addi r4, r31, 0x68
 /* 80112C48 0010FA48  38 A0 00 08 */	li r5, 8
 /* 80112C4C 0010FA4C  38 C0 00 01 */	li r6, 1
@@ -15475,7 +15475,7 @@ lbl_80112CA0:
 render_shadow__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80112CC4 0010FAC4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80112CC8 0010FAC8  7C 08 02 A6 */	mflr r0
-/* 80112CCC 0010FACC  C0 22 AC BC */	lfs f1, _esc__2_2068-_SDA2_BASE_(r2)
+/* 80112CCC 0010FACC  C0 22 AC BC */	lfs f1, _esc__2_2068@sda21(r2)
 /* 80112CD0 0010FAD0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80112CD4 0010FAD4  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80112CD8 0010FAD8  7C 7E 1B 78 */	mr r30, r3
@@ -15488,14 +15488,14 @@ render_shadow__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80112CF4 0010FAF4  38 7E 04 E0 */	addi r3, r30, 0x4e0
 /* 80112CF8 0010FAF8  38 9F 00 30 */	addi r4, r31, 0x30
 /* 80112CFC 0010FAFC  4B EF 83 AD */	bl __as__5xVec3FRC5xVec3
-/* 80112D00 0010FB00  C0 22 AE DC */	lfs f1, _esc__2_4810-_SDA2_BASE_(r2)
+/* 80112D00 0010FB00  C0 22 AE DC */	lfs f1, _esc__2_4810@sda21(r2)
 /* 80112D04 0010FB04  38 7E 04 08 */	addi r3, r30, 0x408
 /* 80112D08 0010FB08  C0 1E 03 3C */	lfs f0, 0x33c(r30)
 /* 80112D0C 0010FB0C  38 9E 04 B0 */	addi r4, r30, 0x4b0
-/* 80112D10 0010FB10  C0 42 AD 34 */	lfs f2, _esc__2_3017-_SDA2_BASE_(r2)
+/* 80112D10 0010FB10  C0 42 AD 34 */	lfs f2, _esc__2_3017@sda21(r2)
 /* 80112D14 0010FB14  38 A0 00 96 */	li r5, 0x96
 /* 80112D18 0010FB18  EC 21 00 32 */	fmuls f1, f1, f0
-/* 80112D1C 0010FB1C  C0 62 A8 B4 */	lfs f3, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80112D1C 0010FB1C  C0 62 A8 B4 */	lfs f3, _esc__2_1223@sda21(r2)
 /* 80112D20 0010FB20  4B F5 18 99 */	bl xShadowSimple_Add_Expert__FP18xShadowSimpleCachePC7xMat4x3Ucfff
 /* 80112D24 0010FB24  BB C1 00 08 */	lmw r30, 8(r1)
 /* 80112D28 0010FB28  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -15505,9 +15505,9 @@ render_shadow__Q217zNPCBossOmnidroid13clawrang_typeFv:
 
 .global refresh_vulnerability__Q217zNPCBossOmnidroid13clawrang_typeFv
 refresh_vulnerability__Q217zNPCBossOmnidroid13clawrang_typeFv:
-/* 80112D38 0010FB38  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112D38 0010FB38  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112D3C 0010FB3C  80 03 02 80 */	lwz r0, 0x280(r3)
-/* 80112D40 0010FB40  C0 22 AE E0 */	lfs f1, _esc__2_4822-_SDA2_BASE_(r2)
+/* 80112D40 0010FB40  C0 22 AE E0 */	lfs f1, _esc__2_4822@sda21(r2)
 /* 80112D44 0010FB44  C0 04 0D B8 */	lfs f0, 0xdb8(r4)
 /* 80112D48 0010FB48  54 00 06 73 */	rlwinm. r0, r0, 0, 0x19, 0x19
 /* 80112D4C 0010FB4C  EC 21 00 2A */	fadds f1, f1, f0
@@ -15544,7 +15544,7 @@ setup_collision__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80112DB4 0010FBB4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80112DB8 0010FBB8  7C 7F 1B 78 */	mr r31, r3
 /* 80112DBC 0010FBBC  38 BF 00 D8 */	addi r5, r31, 0xd8
-/* 80112DC0 0010FBC0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80112DC0 0010FBC0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80112DC4 0010FBC4  38 DF 01 80 */	addi r6, r31, 0x180
 /* 80112DC8 0010FBC8  38 84 7F 70 */	addi r4, r4, 0x7f70
 /* 80112DCC 0010FBCC  7C 84 F8 50 */	subf r4, r4, r31
@@ -15573,7 +15573,7 @@ refresh_collision__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80112E1C 0010FC1C  21 6B FF 80 */	subfic r11, r11, -128
 /* 80112E20 0010FC20  7C 21 59 6E */	stwux r1, r1, r11
 /* 80112E24 0010FC24  7C 08 02 A6 */	mflr r0
-/* 80112E28 0010FC28  C0 22 AC BC */	lfs f1, _esc__2_2068-_SDA2_BASE_(r2)
+/* 80112E28 0010FC28  C0 22 AC BC */	lfs f1, _esc__2_2068@sda21(r2)
 /* 80112E2C 0010FC2C  90 0C 00 04 */	stw r0, 4(r12)
 /* 80112E30 0010FC30  BF AC FF F4 */	stmw r29, -0xc(r12)
 /* 80112E34 0010FC34  7C 7D 1B 78 */	mr r29, r3
@@ -15589,10 +15589,10 @@ refresh_collision__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80112E5C 0010FC5C  38 7E 00 30 */	addi r3, r30, 0x30
 /* 80112E60 0010FC60  38 9F 00 30 */	addi r4, r31, 0x30
 /* 80112E64 0010FC64  4B EF 82 45 */	bl __as__5xVec3FRC5xVec3
-/* 80112E68 0010FC68  80 A2 A9 CC */	lwz r5, damage_offset__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs-_SDA2_BASE_(r2)
+/* 80112E68 0010FC68  80 A2 A9 CC */	lwz r5, damage_offset__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs@sda21(r2)
 /* 80112E6C 0010FC6C  38 61 00 28 */	addi r3, r1, 0x28
-/* 80112E70 0010FC70  80 82 A9 D0 */	lwz r4, lbl_803D46F0-_SDA2_BASE_(r2)
-/* 80112E74 0010FC74  80 02 A9 D4 */	lwz r0, lbl_803D46F4-_SDA2_BASE_(r2)
+/* 80112E70 0010FC70  80 82 A9 D0 */	lwz r4, lbl_803D46F0@sda21(r2)
+/* 80112E74 0010FC74  80 02 A9 D4 */	lwz r0, lbl_803D46F4@sda21(r2)
 /* 80112E78 0010FC78  90 A1 00 28 */	stw r5, 0x28(r1)
 /* 80112E7C 0010FC7C  90 81 00 2C */	stw r4, 0x2c(r1)
 /* 80112E80 0010FC80  90 01 00 30 */	stw r0, 0x30(r1)
@@ -15605,26 +15605,26 @@ refresh_collision__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80112E9C 0010FC9C  38 7E 00 30 */	addi r3, r30, 0x30
 /* 80112EA0 0010FCA0  38 81 00 28 */	addi r4, r1, 0x28
 /* 80112EA4 0010FCA4  4B EF 88 4D */	bl __apl__5xVec3FRC5xVec3
-/* 80112EA8 0010FCA8  80 A2 F0 B0 */	lwz r5, _esc__2_4830-_SDA2_BASE_(r2)
+/* 80112EA8 0010FCA8  80 A2 F0 B0 */	lwz r5, _esc__2_4830@sda21(r2)
 /* 80112EAC 0010FCAC  7F C6 F3 78 */	mr r6, r30
-/* 80112EB0 0010FCB0  80 E2 F0 B4 */	lwz r7, lbl_803D8DD4-_SDA2_BASE_(r2)
+/* 80112EB0 0010FCB0  80 E2 F0 B4 */	lwz r7, lbl_803D8DD4@sda21(r2)
 /* 80112EB4 0010FCB4  38 7D 00 68 */	addi r3, r29, 0x68
-/* 80112EB8 0010FCB8  80 02 F0 B8 */	lwz r0, lbl_803D8DD8-_SDA2_BASE_(r2)
+/* 80112EB8 0010FCB8  80 02 F0 B8 */	lwz r0, lbl_803D8DD8@sda21(r2)
 /* 80112EBC 0010FCBC  38 81 00 1C */	addi r4, r1, 0x1c
 /* 80112EC0 0010FCC0  90 A1 00 1C */	stw r5, 0x1c(r1)
 /* 80112EC4 0010FCC4  38 A1 00 10 */	addi r5, r1, 0x10
-/* 80112EC8 0010FCC8  C0 62 AE E4 */	lfs f3, _esc__2_4835-_SDA2_BASE_(r2)
+/* 80112EC8 0010FCC8  C0 62 AE E4 */	lfs f3, _esc__2_4835@sda21(r2)
 /* 80112ECC 0010FCCC  90 E1 00 20 */	stw r7, 0x20(r1)
-/* 80112ED0 0010FCD0  C0 42 AE E8 */	lfs f2, _esc__2_4836-_SDA2_BASE_(r2)
+/* 80112ED0 0010FCD0  C0 42 AE E8 */	lfs f2, _esc__2_4836@sda21(r2)
 /* 80112ED4 0010FCD4  90 01 00 24 */	stw r0, 0x24(r1)
-/* 80112ED8 0010FCD8  C0 22 AE EC */	lfs f1, _esc__2_4837-_SDA2_BASE_(r2)
+/* 80112ED8 0010FCD8  C0 22 AE EC */	lfs f1, _esc__2_4837@sda21(r2)
 /* 80112EDC 0010FCDC  C0 9D 03 3C */	lfs f4, 0x33c(r29)
-/* 80112EE0 0010FCE0  C0 02 AC C8 */	lfs f0, _esc__2_2275-_SDA2_BASE_(r2)
+/* 80112EE0 0010FCE0  C0 02 AC C8 */	lfs f0, _esc__2_2275@sda21(r2)
 /* 80112EE4 0010FCE4  EC 63 01 32 */	fmuls f3, f3, f4
-/* 80112EE8 0010FCE8  81 02 F0 BC */	lwz r8, _esc__2_4831-_SDA2_BASE_(r2)
-/* 80112EEC 0010FCEC  80 E2 F0 C0 */	lwz r7, lbl_803D8DE0-_SDA2_BASE_(r2)
+/* 80112EE8 0010FCE8  81 02 F0 BC */	lwz r8, _esc__2_4831@sda21(r2)
+/* 80112EEC 0010FCEC  80 E2 F0 C0 */	lwz r7, lbl_803D8DE0@sda21(r2)
 /* 80112EF0 0010FCF0  EC 42 01 32 */	fmuls f2, f2, f4
-/* 80112EF4 0010FCF4  80 02 F0 C4 */	lwz r0, lbl_803D8DE4-_SDA2_BASE_(r2)
+/* 80112EF4 0010FCF4  80 02 F0 C4 */	lwz r0, lbl_803D8DE4@sda21(r2)
 /* 80112EF8 0010FCF8  EC 21 01 32 */	fmuls f1, f1, f4
 /* 80112EFC 0010FCFC  91 01 00 10 */	stw r8, 0x10(r1)
 /* 80112F00 0010FD00  EC 00 01 32 */	fmuls f0, f0, f4
@@ -15670,7 +15670,7 @@ xBoundFromOBB__FR6xBoundRC5xVec3RC5xVec3P7xMat4x3:
 /* 80112F94 0010FD94  C0 3E 00 04 */	lfs f1, 4(r30)
 /* 80112F98 0010FD98  C0 1D 00 04 */	lfs f0, 4(r29)
 /* 80112F9C 0010FD9C  EC 63 10 2A */	fadds f3, f3, f2
-/* 80112FA0 0010FDA0  C0 82 AC 80 */	lfs f4, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80112FA0 0010FDA0  C0 82 AC 80 */	lfs f4, _esc__2_1438_0@sda21(r2)
 /* 80112FA4 0010FDA4  EC 41 00 2A */	fadds f2, f1, f0
 /* 80112FA8 0010FDA8  C0 3E 00 08 */	lfs f1, 8(r30)
 /* 80112FAC 0010FDAC  C0 1D 00 08 */	lfs f0, 8(r29)
@@ -15704,10 +15704,10 @@ event_handler__Q217zNPCBossOmnidroid13clawrang_typeFP5xBaseP5xBaseUiPCfP5xBaseUi
 /* 80113010 0010FE10  41 82 00 08 */	beq lbl_80113018
 /* 80113014 0010FE14  48 00 00 34 */	b lbl_80113048
 lbl_80113018:
-/* 80113018 0010FE18  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80113018 0010FE18  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011301C 0010FE1C  7C 04 00 40 */	cmplw r4, r0
 /* 80113020 0010FE20  41 82 00 28 */	beq lbl_80113048
-/* 80113024 0010FE24  80 AD 91 D0 */	lwz r5, xglobals-_SDA_BASE_(r13)
+/* 80113024 0010FE24  80 AD 91 D0 */	lwz r5, xglobals@sda21(r13)
 /* 80113028 0010FE28  80 05 04 C4 */	lwz r0, 0x4c4(r5)
 /* 8011302C 0010FE2C  7C 04 00 40 */	cmplw r4, r0
 /* 80113030 0010FE30  40 82 00 18 */	bne lbl_80113048
@@ -15740,7 +15740,7 @@ event_handler_callback__Q217zNPCBossOmnidroid13clawrang_typeFP5xBaseP5xBaseUiPCf
 /* 8011308C 0010FE8C  80 04 00 00 */	lwz r0, 0(r4)
 /* 80113090 0010FE90  7C 64 1B 78 */	mr r4, r3
 /* 80113094 0010FE94  1C C0 05 20 */	mulli r6, r0, 0x520
-/* 80113098 0010FE98  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80113098 0010FE98  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011309C 0010FE9C  38 66 7F 70 */	addi r3, r6, 0x7f70
 /* 801130A0 0010FEA0  7D 86 63 78 */	mr r6, r12
 /* 801130A4 0010FEA4  7C 60 1A 14 */	add r3, r0, r3
@@ -15765,7 +15765,7 @@ check_slam_hit__Q217zNPCBossOmnidroid13clawrang_typeCFRC17zCombatDamageInfo:
 /* 801130E4 0010FEE4  38 60 00 00 */	li r3, 0
 /* 801130E8 0010FEE8  48 00 00 70 */	b lbl_80113158
 lbl_801130EC:
-/* 801130EC 0010FEEC  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801130EC 0010FEEC  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801130F0 0010FEF0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801130F4 0010FEF4  4B FD 40 B9 */	bl SuperSlamming__19zMrIncrediblePlayerCFv
 /* 801130F8 0010FEF8  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -15773,7 +15773,7 @@ lbl_801130EC:
 /* 80113100 0010FF00  38 60 00 00 */	li r3, 0
 /* 80113104 0010FF04  48 00 00 54 */	b lbl_80113158
 lbl_80113108:
-/* 80113108 0010FF08  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80113108 0010FF08  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8011310C 0010FF0C  80 9F 00 04 */	lwz r4, 4(r31)
 /* 80113110 0010FF10  80 03 04 C4 */	lwz r0, 0x4c4(r3)
 /* 80113114 0010FF14  7C 04 00 40 */	cmplw r4, r0
@@ -15789,7 +15789,7 @@ lbl_80113124:
 /* 80113138 0010FF38  48 00 00 20 */	b lbl_80113158
 lbl_8011313C:
 /* 8011313C 0010FF3C  C0 3F 00 30 */	lfs f1, 0x30(r31)
-/* 80113140 0010FF40  C0 02 AE E8 */	lfs f0, _esc__2_4836-_SDA2_BASE_(r2)
+/* 80113140 0010FF40  C0 02 AE E8 */	lfs f0, _esc__2_4836@sda21(r2)
 /* 80113144 0010FF44  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80113148 0010FF48  40 81 00 0C */	ble lbl_80113154
 /* 8011314C 0010FF4C  38 60 00 00 */	li r3, 0
@@ -15863,14 +15863,14 @@ lbl_80113208:
 /* 80113230 00110030  90 1F 02 80 */	stw r0, 0x280(r31)
 /* 80113234 00110034  4B FB 49 61 */	bl start__Q210zExplosion13trail_emitterFiRC5xVec3
 lbl_80113238:
-/* 80113238 00110038  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80113238 00110038  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011323C 0011003C  6F C5 80 00 */	xoris r5, r30, 0x8000
 /* 80113240 00110040  3C C0 43 30 */	lis r6, 0x4330
 /* 80113244 00110044  38 00 05 20 */	li r0, 0x520
 /* 80113248 00110048  38 83 7F 70 */	addi r4, r3, 0x7f70
 /* 8011324C 0011004C  90 A1 00 0C */	stw r5, 0xc(r1)
 /* 80113250 00110050  7C 84 F8 50 */	subf r4, r4, r31
-/* 80113254 00110054  C8 22 AC 90 */	lfd f1, _esc__2_1488-_SDA2_BASE_(r2)
+/* 80113254 00110054  C8 22 AC 90 */	lfd f1, _esc__2_1488@sda21(r2)
 /* 80113258 00110058  7C A4 03 D6 */	divw r5, r4, r0
 /* 8011325C 0011005C  90 C1 00 08 */	stw r6, 8(r1)
 /* 80113260 00110060  38 80 00 06 */	li r4, 6
@@ -15887,15 +15887,15 @@ lbl_80113238:
 start_spinup__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80113284 00110084  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80113288 00110088  7C 08 02 A6 */	mflr r0
-/* 8011328C 0011008C  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011328C 0011008C  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80113290 00110090  38 80 08 00 */	li r4, 0x800
 /* 80113294 00110094  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80113298 00110098  38 00 00 01 */	li r0, 1
-/* 8011329C 0011009C  C0 22 AE F0 */	lfs f1, _esc__2_4900-_SDA2_BASE_(r2)
+/* 8011329C 0011009C  C0 22 AE F0 */	lfs f1, _esc__2_4900@sda21(r2)
 /* 801132A0 001100A0  38 E0 00 00 */	li r7, 0
 /* 801132A4 001100A4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801132A8 001100A8  7C 7F 1B 78 */	mr r31, r3
-/* 801132AC 001100AC  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801132AC 001100AC  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801132B0 001100B0  38 BF 02 30 */	addi r5, r31, 0x230
 /* 801132B4 001100B4  90 03 02 88 */	stw r0, 0x288(r3)
 /* 801132B8 001100B8  38 DF 02 E0 */	addi r6, r31, 0x2e0
@@ -15922,15 +15922,15 @@ start_spinup__Q217zNPCBossOmnidroid13clawrang_typeFv:
 update_spinup__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80113304 00110104  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80113308 00110108  7C 08 02 A6 */	mflr r0
-/* 8011330C 0011010C  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80113310 00110110  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011330C 0011010C  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80113310 00110110  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80113314 00110114  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80113318 00110118  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011331C 0011011C  7C 7F 1B 78 */	mr r31, r3
 /* 80113320 00110120  C0 03 02 C4 */	lfs f0, 0x2c4(r3)
 /* 80113324 00110124  EC 00 08 28 */	fsubs f0, f0, f1
 /* 80113328 00110128  D0 03 02 C4 */	stfs f0, 0x2c4(r3)
-/* 8011332C 0011012C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011332C 0011012C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80113330 00110130  80 05 03 4C */	lwz r0, 0x34c(r5)
 /* 80113334 00110134  54 00 10 3A */	slwi r0, r0, 2
 /* 80113338 00110138  7C 04 04 2E */	lfsx f0, r4, r0
@@ -15939,14 +15939,14 @@ update_spinup__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80113344 00110144  FC 01 10 40 */	fcmpo cr0, f1, f2
 /* 80113348 00110148  4C 40 13 82 */	cror 2, 0, 2
 /* 8011334C 0011014C  40 82 00 18 */	bne lbl_80113364
-/* 80113350 00110150  C0 02 AE F0 */	lfs f0, _esc__2_4900-_SDA2_BASE_(r2)
+/* 80113350 00110150  C0 02 AE F0 */	lfs f0, _esc__2_4900@sda21(r2)
 /* 80113354 00110154  D0 1F 02 D8 */	stfs f0, 0x2d8(r31)
 /* 80113358 00110158  D0 5F 02 DC */	stfs f2, 0x2dc(r31)
 /* 8011335C 0011015C  48 00 00 39 */	bl start_launch__Q217zNPCBossOmnidroid13clawrang_typeFv
 /* 80113360 00110160  48 00 00 20 */	b lbl_80113380
 lbl_80113364:
 /* 80113364 00110164  4B EF C6 3D */	bl xSCurve__Ff
-/* 80113368 00110168  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80113368 00110168  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011336C 0011016C  C0 5F 03 3C */	lfs f2, 0x33c(r31)
 /* 80113370 00110170  EC 00 08 28 */	fsubs f0, f0, f1
 /* 80113374 00110174  EC 01 00 2A */	fadds f0, f1, f0
@@ -15977,13 +15977,13 @@ start_launch__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 801133C8 001101C8  4B EF 7C E1 */	bl __as__5xVec3FRC5xVec3
 /* 801133CC 001101CC  38 7F 02 E0 */	addi r3, r31, 0x2e0
 /* 801133D0 001101D0  4B EF CF 85 */	bl negate__5xVec3Fv
-/* 801133D4 001101D4  C0 42 AE F4 */	lfs f2, _esc__2_4913-_SDA2_BASE_(r2)
+/* 801133D4 001101D4  C0 42 AE F4 */	lfs f2, _esc__2_4913@sda21(r2)
 /* 801133D8 001101D8  38 7F 03 1C */	addi r3, r31, 0x31c
 /* 801133DC 001101DC  C0 1F 02 E4 */	lfs f0, 0x2e4(r31)
 /* 801133E0 001101E0  38 9F 02 20 */	addi r4, r31, 0x220
 /* 801133E4 001101E4  C0 3F 02 E0 */	lfs f1, 0x2e0(r31)
 /* 801133E8 001101E8  EC 62 00 24 */	fdivs f3, f2, f0
-/* 801133EC 001101EC  C0 02 AE F8 */	lfs f0, _esc__2_4914-_SDA2_BASE_(r2)
+/* 801133EC 001101EC  C0 02 AE F8 */	lfs f0, _esc__2_4914@sda21(r2)
 /* 801133F0 001101F0  EC 21 00 F2 */	fmuls f1, f1, f3
 /* 801133F4 001101F4  EC 00 00 F2 */	fmuls f0, f0, f3
 /* 801133F8 001101F8  D0 3F 02 E0 */	stfs f1, 0x2e0(r31)
@@ -15994,7 +15994,7 @@ start_launch__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 8011340C 0011020C  D0 1F 02 F4 */	stfs f0, 0x2f4(r31)
 /* 80113410 00110210  D0 1F 02 EC */	stfs f0, 0x2ec(r31)
 /* 80113414 00110214  4B EF 7C 95 */	bl __as__5xVec3FRC5xVec3
-/* 80113418 00110218  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80113418 00110218  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011341C 0011021C  7F E3 FB 78 */	mr r3, r31
 /* 80113420 00110220  D0 1F 03 28 */	stfs f0, 0x328(r31)
 /* 80113424 00110224  4B FF EF A5 */	bl streak_begin__Q217zNPCBossOmnidroid13clawrang_typeFv
@@ -16008,14 +16008,14 @@ start_launch__Q217zNPCBossOmnidroid13clawrang_typeFv:
 update_launch__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 8011343C 0011023C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80113440 00110240  7C 08 02 A6 */	mflr r0
-/* 80113444 00110244  C0 02 AE FC */	lfs f0, _esc__2_4922-_SDA2_BASE_(r2)
+/* 80113444 00110244  C0 02 AE FC */	lfs f0, _esc__2_4922@sda21(r2)
 /* 80113448 00110248  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011344C 0011024C  C0 63 02 E0 */	lfs f3, 0x2e0(r3)
 /* 80113450 00110250  C0 43 02 30 */	lfs f2, 0x230(r3)
 /* 80113454 00110254  EC 83 10 7A */	fmadds f4, f3, f1, f2
-/* 80113458 00110258  C0 62 AF 00 */	lfs f3, _esc__2_4923-_SDA2_BASE_(r2)
+/* 80113458 00110258  C0 62 AF 00 */	lfs f3, _esc__2_4923@sda21(r2)
 /* 8011345C 0011025C  EC 40 00 72 */	fmuls f2, f0, f1
-/* 80113460 00110260  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80113460 00110260  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80113464 00110264  D0 83 02 30 */	stfs f4, 0x230(r3)
 /* 80113468 00110268  EC 42 00 72 */	fmuls f2, f2, f1
 /* 8011346C 0011026C  C0 83 02 E4 */	lfs f4, 0x2e4(r3)
@@ -16047,7 +16047,7 @@ start_charge__Q217zNPCBossOmnidroid13clawrang_typeFb:
 /* 801134C4 001102C4  38 A0 00 03 */	li r5, 3
 /* 801134C8 001102C8  54 80 06 3F */	clrlwi. r0, r4, 0x18
 /* 801134CC 001102CC  90 A3 02 88 */	stw r5, 0x288(r3)
-/* 801134D0 001102D0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801134D0 001102D0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801134D4 001102D4  80 03 02 80 */	lwz r0, 0x280(r3)
 /* 801134D8 001102D8  54 00 07 32 */	rlwinm r0, r0, 0, 0x1c, 0x19
 /* 801134DC 001102DC  90 03 02 80 */	stw r0, 0x280(r3)
@@ -16056,18 +16056,18 @@ start_charge__Q217zNPCBossOmnidroid13clawrang_typeFb:
 /* 801134E8 001102E8  60 00 10 00 */	ori r0, r0, 0x1000
 /* 801134EC 001102EC  90 03 02 80 */	stw r0, 0x280(r3)
 /* 801134F0 001102F0  41 82 00 20 */	beq lbl_80113510
-/* 801134F4 001102F4  C0 02 AF 00 */	lfs f0, _esc__2_4923-_SDA2_BASE_(r2)
-/* 801134F8 001102F8  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 801134F4 001102F4  C0 02 AF 00 */	lfs f0, _esc__2_4923@sda21(r2)
+/* 801134F8 001102F8  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 801134FC 001102FC  D0 03 03 54 */	stfs f0, 0x354(r3)
-/* 80113500 00110300  C0 02 AF 04 */	lfs f0, _esc__2_4931-_SDA2_BASE_(r2)
+/* 80113500 00110300  C0 02 AF 04 */	lfs f0, _esc__2_4931@sda21(r2)
 /* 80113504 00110304  D0 23 03 58 */	stfs f1, 0x358(r3)
 /* 80113508 00110308  D0 03 03 5C */	stfs f0, 0x35c(r3)
 /* 8011350C 0011030C  48 00 00 28 */	b lbl_80113534
 lbl_80113510:
-/* 80113510 00110310  C0 02 AF 08 */	lfs f0, _esc__2_4932-_SDA2_BASE_(r2)
-/* 80113514 00110314  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80113510 00110310  C0 02 AF 08 */	lfs f0, _esc__2_4932@sda21(r2)
+/* 80113514 00110314  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80113518 00110318  D0 03 03 54 */	stfs f0, 0x354(r3)
-/* 8011351C 0011031C  C0 02 AF 0C */	lfs f0, _esc__2_4933-_SDA2_BASE_(r2)
+/* 8011351C 0011031C  C0 02 AF 0C */	lfs f0, _esc__2_4933@sda21(r2)
 /* 80113520 00110320  D0 23 03 58 */	stfs f1, 0x358(r3)
 /* 80113524 00110324  D0 03 03 5C */	stfs f0, 0x35c(r3)
 /* 80113528 00110328  C0 03 03 28 */	lfs f0, 0x328(r3)
@@ -16096,7 +16096,7 @@ update_charge__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80113574 00110374  7C 7F 1B 78 */	mr r31, r3
 /* 80113578 00110378  FF A0 08 90 */	fmr f29, f1
 /* 8011357C 0011037C  C0 23 02 C0 */	lfs f1, 0x2c0(r3)
-/* 80113580 00110380  C0 02 AC B0 */	lfs f0, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 80113580 00110380  C0 02 AC B0 */	lfs f0, _esc__2_2016_0@sda21(r2)
 /* 80113584 00110384  EC 21 E8 2A */	fadds f1, f1, f29
 /* 80113588 00110388  D0 23 02 C0 */	stfs f1, 0x2c0(r3)
 /* 8011358C 0011038C  C0 23 02 C0 */	lfs f1, 0x2c0(r3)
@@ -16106,15 +16106,15 @@ update_charge__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 8011359C 0011039C  48 00 02 D5 */	bl start_orbit__Q217zNPCBossOmnidroid13clawrang_typeFv
 /* 801135A0 001103A0  48 00 02 9C */	b lbl_8011383C
 lbl_801135A4:
-/* 801135A4 001103A4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801135A4 001103A4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801135A8 001103A8  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801135AC 001103AC  4B EF 7E 7D */	bl xEntGetCenter__FPC4xEnt
-/* 801135B0 001103B0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801135B0 001103B0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801135B4 001103B4  FC 60 E8 90 */	fmr f3, f29
 /* 801135B8 001103B8  80 C3 00 04 */	lwz r6, 4(r3)
 /* 801135BC 001103BC  38 9F 02 E4 */	addi r4, r31, 0x2e4
 /* 801135C0 001103C0  C0 05 0D B8 */	lfs f0, 0xdb8(r5)
-/* 801135C4 001103C4  C0 22 AD 88 */	lfs f1, _esc__2_3051-_SDA2_BASE_(r2)
+/* 801135C4 001103C4  C0 22 AD 88 */	lfs f1, _esc__2_3051@sda21(r2)
 /* 801135C8 001103C8  80 A3 00 00 */	lwz r5, 0(r3)
 /* 801135CC 001103CC  80 03 00 08 */	lwz r0, 8(r3)
 /* 801135D0 001103D0  EC 81 00 2A */	fadds f4, f1, f0
@@ -16145,7 +16145,7 @@ lbl_801135A4:
 /* 80113634 00110434  EC 1E 07 B2 */	fmuls f0, f30, f30
 /* 80113638 00110438  EC 3C 07 3A */	fmadds f1, f28, f28, f0
 /* 8011363C 0011043C  40 82 00 28 */	bne lbl_80113664
-/* 80113640 00110440  C0 02 AF 0C */	lfs f0, _esc__2_4933-_SDA2_BASE_(r2)
+/* 80113640 00110440  C0 02 AF 0C */	lfs f0, _esc__2_4933@sda21(r2)
 /* 80113644 00110444  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80113648 00110448  4C 40 13 82 */	cror 2, 0, 2
 /* 8011364C 0011044C  40 82 00 18 */	bne lbl_80113664
@@ -16160,7 +16160,7 @@ lbl_80113664:
 /* 8011366C 0011046C  41 82 00 64 */	beq lbl_801136D0
 /* 80113670 00110470  C0 7F 03 50 */	lfs f3, 0x350(r31)
 /* 80113674 00110474  C0 5F 02 E8 */	lfs f2, 0x2e8(r31)
-/* 80113678 00110478  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80113678 00110478  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011367C 0011047C  EC 83 07 B2 */	fmuls f4, f3, f30
 /* 80113680 00110480  C0 BF 03 4C */	lfs f5, 0x34c(r31)
 /* 80113684 00110484  EC 43 00 B2 */	fmuls f2, f3, f2
@@ -16170,10 +16170,10 @@ lbl_80113664:
 /* 80113694 00110494  EC 65 10 FA */	fmadds f3, f5, f3, f2
 /* 80113698 00110498  4C 40 13 82 */	cror 2, 0, 2
 /* 8011369C 0011049C  41 82 00 28 */	beq lbl_801136C4
-/* 801136A0 001104A0  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801136A0 001104A0  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801136A4 001104A4  FC 00 10 40 */	fcmpo cr0, f0, f2
 /* 801136A8 001104A8  41 80 00 1C */	blt lbl_801136C4
-/* 801136AC 001104AC  C0 02 AF 10 */	lfs f0, _esc__2_4979-_SDA2_BASE_(r2)
+/* 801136AC 001104AC  C0 02 AF 10 */	lfs f0, _esc__2_4979@sda21(r2)
 /* 801136B0 001104B0  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 801136B4 001104B4  4C 41 13 82 */	cror 2, 1, 2
 /* 801136B8 001104B8  40 82 00 18 */	bne lbl_801136D0
@@ -16188,7 +16188,7 @@ lbl_801136D0:
 /* 801136D4 001104D4  54 00 06 B5 */	rlwinm. r0, r0, 0, 0x1a, 0x1a
 /* 801136D8 001104D8  40 82 00 20 */	bne lbl_801136F8
 /* 801136DC 001104DC  4B EF BE A5 */	bl xinvsqrt__Ff
-/* 801136E0 001104E0  C0 02 AD 70 */	lfs f0, _esc__2_3037-_SDA2_BASE_(r2)
+/* 801136E0 001104E0  C0 02 AD 70 */	lfs f0, _esc__2_3037@sda21(r2)
 /* 801136E4 001104E4  EC 00 00 72 */	fmuls f0, f0, f1
 /* 801136E8 001104E8  EC 3C 00 32 */	fmuls f1, f28, f0
 /* 801136EC 001104EC  EC 1E 00 32 */	fmuls f0, f30, f0
@@ -16200,7 +16200,7 @@ lbl_801136F8:
 /* 80113700 00110500  41 82 00 2C */	beq lbl_8011372C
 /* 80113704 00110504  FC 20 F8 90 */	fmr f1, f31
 /* 80113708 00110508  4B EF BE 79 */	bl xinvsqrt__Ff
-/* 8011370C 0011050C  C0 42 AD 70 */	lfs f2, _esc__2_3037-_SDA2_BASE_(r2)
+/* 8011370C 0011050C  C0 42 AD 70 */	lfs f2, _esc__2_3037@sda21(r2)
 /* 80113710 00110510  C0 1F 02 E0 */	lfs f0, 0x2e0(r31)
 /* 80113714 00110514  EC 22 00 72 */	fmuls f1, f2, f1
 /* 80113718 00110518  EC 00 00 72 */	fmuls f0, f0, f1
@@ -16209,12 +16209,12 @@ lbl_801136F8:
 /* 80113724 00110524  EC 00 00 72 */	fmuls f0, f0, f1
 /* 80113728 00110528  D0 1F 02 F4 */	stfs f0, 0x2f4(r31)
 lbl_8011372C:
-/* 8011372C 0011052C  C0 02 AF 14 */	lfs f0, _esc__2_4980-_SDA2_BASE_(r2)
+/* 8011372C 0011052C  C0 02 AF 14 */	lfs f0, _esc__2_4980@sda21(r2)
 /* 80113730 00110530  EC 20 07 72 */	fmuls f1, f0, f29
 /* 80113734 00110534  4B EF CE 71 */	bl xexp__Ff
 /* 80113738 00110538  C0 7F 02 EC */	lfs f3, 0x2ec(r31)
 /* 8011373C 0011053C  C0 5F 02 E0 */	lfs f2, 0x2e0(r31)
-/* 80113740 00110540  C0 02 AF 18 */	lfs f0, _esc__2_4981-_SDA2_BASE_(r2)
+/* 80113740 00110540  C0 02 AF 18 */	lfs f0, _esc__2_4981@sda21(r2)
 /* 80113744 00110544  EC 43 17 7A */	fmadds f2, f3, f29, f2
 /* 80113748 00110548  EC 41 00 B2 */	fmuls f2, f1, f2
 /* 8011374C 0011054C  D0 5F 02 E0 */	stfs f2, 0x2e0(r31)
@@ -16231,7 +16231,7 @@ lbl_8011372C:
 /* 80113778 00110578  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011377C 0011057C  40 81 00 28 */	ble lbl_801137A4
 /* 80113780 00110580  4B EF BE 01 */	bl xinvsqrt__Ff
-/* 80113784 00110584  C0 42 AC DC */	lfs f2, _esc__2_2532-_SDA2_BASE_(r2)
+/* 80113784 00110584  C0 42 AC DC */	lfs f2, _esc__2_2532@sda21(r2)
 /* 80113788 00110588  C0 1F 02 E0 */	lfs f0, 0x2e0(r31)
 /* 8011378C 0011058C  EC 22 00 72 */	fmuls f1, f2, f1
 /* 80113790 00110590  EC 00 00 72 */	fmuls f0, f0, f1
@@ -16251,8 +16251,8 @@ lbl_801137A4:
 /* 801137C4 001105C4  80 1F 02 80 */	lwz r0, 0x280(r31)
 /* 801137C8 001105C8  54 00 06 B5 */	rlwinm. r0, r0, 0, 0x1a, 0x1a
 /* 801137CC 001105CC  41 82 00 70 */	beq lbl_8011383C
-/* 801137D0 001105D0  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
-/* 801137D4 001105D4  83 CD CC 18 */	lwz r30, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801137D0 001105D0  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
+/* 801137D4 001105D4  83 CD CC 18 */	lwz r30, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801137D8 001105D8  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801137DC 001105DC  4B F7 3E 3D */	bl xEntGetFrame__FPC4xEnt
 /* 801137E0 001105E0  C0 5F 02 38 */	lfs f2, 0x238(r31)
@@ -16265,7 +16265,7 @@ lbl_801137A4:
 /* 801137FC 001105FC  C0 43 00 30 */	lfs f2, 0x30(r3)
 /* 80113800 00110600  EC 83 08 28 */	fsubs f4, f3, f1
 /* 80113804 00110604  EC 25 01 72 */	fmuls f1, f5, f5
-/* 80113808 00110608  C0 02 AD 70 */	lfs f0, _esc__2_3037-_SDA2_BASE_(r2)
+/* 80113808 00110608  C0 02 AD 70 */	lfs f0, _esc__2_3037@sda21(r2)
 /* 8011380C 0011060C  EC 63 10 28 */	fsubs f3, f3, f2
 /* 80113810 00110610  EC 46 01 B2 */	fmuls f2, f6, f6
 /* 80113814 00110614  EC 24 09 3A */	fmadds f1, f4, f4, f1
@@ -16297,7 +16297,7 @@ lbl_8011383C:
 start_orbit__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80113870 00110670  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80113874 00110674  7C 08 02 A6 */	mflr r0
-/* 80113878 00110678  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80113878 00110678  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011387C 0011067C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80113880 00110680  38 00 00 04 */	li r0, 4
 /* 80113884 00110684  BF C1 00 08 */	stmw r30, 8(r1)
@@ -16310,7 +16310,7 @@ start_orbit__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 801138A0 001106A0  7C A0 00 38 */	and r0, r5, r0
 /* 801138A4 001106A4  90 1E 02 80 */	stw r0, 0x280(r30)
 /* 801138A8 001106A8  D0 1E 02 C0 */	stfs f0, 0x2c0(r30)
-/* 801138AC 001106AC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801138AC 001106AC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801138B0 001106B0  3B E5 0D B4 */	addi r31, r5, 0xdb4
 /* 801138B4 001106B4  7F E5 FB 78 */	mr r5, r31
 /* 801138B8 001106B8  4B FF 35 3D */	bl cart_to_cyl_point__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3RC5xVec3RC5xVec3
@@ -16319,15 +16319,15 @@ start_orbit__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 801138C4 001106C4  38 9E 02 E0 */	addi r4, r30, 0x2e0
 /* 801138C8 001106C8  38 DE 02 30 */	addi r6, r30, 0x230
 /* 801138CC 001106CC  4B FF 36 3D */	bl cart_to_cyl_vector__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3RC5xVec3RC5xVec3RC5xVec3
-/* 801138D0 001106D0  C0 22 AC BC */	lfs f1, _esc__2_2068-_SDA2_BASE_(r2)
-/* 801138D4 001106D4  C0 02 AF 1C */	lfs f0, _esc__2_5006-_SDA2_BASE_(r2)
+/* 801138D0 001106D0  C0 22 AC BC */	lfs f1, _esc__2_2068@sda21(r2)
+/* 801138D4 001106D4  C0 02 AF 1C */	lfs f0, _esc__2_5006@sda21(r2)
 /* 801138D8 001106D8  D0 3E 03 34 */	stfs f1, 0x334(r30)
 /* 801138DC 001106DC  C0 5E 03 10 */	lfs f2, 0x310(r30)
 /* 801138E0 001106E0  FC 20 12 10 */	fabs f1, f2
 /* 801138E4 001106E4  FC 20 08 18 */	frsp f1, f1
 /* 801138E8 001106E8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801138EC 001106EC  40 81 00 40 */	ble lbl_8011392C
-/* 801138F0 001106F0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801138F0 001106F0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801138F4 001106F4  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801138F8 001106F8  40 80 00 1C */	bge lbl_80113914
 /* 801138FC 001106FC  C0 3E 03 34 */	lfs f1, 0x334(r30)
@@ -16369,15 +16369,15 @@ update_orbit__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80113974 00110774  FF E0 08 90 */	fmr f31, f1
 /* 80113978 00110778  C0 03 02 C0 */	lfs f0, 0x2c0(r3)
 /* 8011397C 0011077C  38 7E 03 08 */	addi r3, r30, 0x308
-/* 80113980 00110780  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80113980 00110780  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80113984 00110784  38 9E 03 14 */	addi r4, r30, 0x314
 /* 80113988 00110788  EC 00 F8 2A */	fadds f0, f0, f31
 /* 8011398C 0011078C  FC 40 F8 90 */	fmr f2, f31
-/* 80113990 00110790  C0 62 AD 40 */	lfs f3, _esc__2_3020-_SDA2_BASE_(r2)
-/* 80113994 00110794  C0 82 AD 34 */	lfs f4, _esc__2_3017-_SDA2_BASE_(r2)
+/* 80113990 00110790  C0 62 AD 40 */	lfs f3, _esc__2_3020@sda21(r2)
+/* 80113994 00110794  C0 82 AD 34 */	lfs f4, _esc__2_3017@sda21(r2)
 /* 80113998 00110798  D0 1E 02 C0 */	stfs f0, 0x2c0(r30)
 /* 8011399C 0011079C  4B F2 FE 8D */	bl xAccelMove__FRfRfffff
-/* 801139A0 001107A0  C0 22 AD 3C */	lfs f1, _esc__2_3019-_SDA2_BASE_(r2)
+/* 801139A0 001107A0  C0 22 AD 3C */	lfs f1, _esc__2_3019@sda21(r2)
 /* 801139A4 001107A4  FC 40 F8 90 */	fmr f2, f31
 /* 801139A8 001107A8  38 7E 03 0C */	addi r3, r30, 0x30c
 /* 801139AC 001107AC  38 9E 03 18 */	addi r4, r30, 0x318
@@ -16386,7 +16386,7 @@ update_orbit__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 801139B8 001107B8  4B F2 FE 71 */	bl xAccelMove__FRfRfffff
 /* 801139BC 001107BC  FC 40 F8 90 */	fmr f2, f31
 /* 801139C0 001107C0  C0 3E 03 34 */	lfs f1, 0x334(r30)
-/* 801139C4 001107C4  C0 62 AE 78 */	lfs f3, _esc__2_3978-_SDA2_BASE_(r2)
+/* 801139C4 001107C4  C0 62 AE 78 */	lfs f3, _esc__2_3978@sda21(r2)
 /* 801139C8 001107C8  38 7E 03 04 */	addi r3, r30, 0x304
 /* 801139CC 001107CC  38 9E 03 10 */	addi r4, r30, 0x310
 /* 801139D0 001107D0  4B F3 04 95 */	bl xAccelMove__FRfRffff
@@ -16395,7 +16395,7 @@ update_orbit__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 801139DC 001107DC  80 DE 02 E4 */	lwz r6, 0x2e4(r30)
 /* 801139E0 001107E0  38 9E 03 04 */	addi r4, r30, 0x304
 /* 801139E4 001107E4  80 1E 02 E8 */	lwz r0, 0x2e8(r30)
-/* 801139E8 001107E8  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801139E8 001107E8  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801139EC 001107EC  90 E1 00 08 */	stw r7, 8(r1)
 /* 801139F0 001107F0  3B E5 0D B4 */	addi r31, r5, 0xdb4
 /* 801139F4 001107F4  90 C1 00 0C */	stw r6, 0xc(r1)
@@ -16407,7 +16407,7 @@ update_orbit__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80113A0C 0011080C  38 9E 03 10 */	addi r4, r30, 0x310
 /* 80113A10 00110810  38 DE 02 30 */	addi r6, r30, 0x230
 /* 80113A14 00110814  4B FF 35 C5 */	bl cyl_to_cart_vector__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3RC5xVec3RC5xVec3RC5xVec3
-/* 80113A18 00110818  C0 62 A8 B4 */	lfs f3, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80113A18 00110818  C0 62 A8 B4 */	lfs f3, _esc__2_1223@sda21(r2)
 /* 80113A1C 0011081C  C0 5E 02 E0 */	lfs f2, 0x2e0(r30)
 /* 80113A20 00110820  EC 83 F8 24 */	fdivs f4, f3, f31
 /* 80113A24 00110824  C0 21 00 08 */	lfs f1, 8(r1)
@@ -16423,7 +16423,7 @@ update_orbit__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80113A4C 0011084C  54 60 07 39 */	rlwinm. r0, r3, 0, 0x1c, 0x1c
 /* 80113A50 00110850  41 82 00 74 */	beq lbl_80113AC4
 /* 80113A54 00110854  C0 5E 03 10 */	lfs f2, 0x310(r30)
-/* 80113A58 00110858  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80113A58 00110858  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80113A5C 0011085C  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 80113A60 00110860  40 80 00 18 */	bge lbl_80113A78
 /* 80113A64 00110864  C0 3E 03 04 */	lfs f1, 0x304(r30)
@@ -16432,7 +16432,7 @@ update_orbit__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80113A70 00110870  4C 40 13 82 */	cror 2, 0, 2
 /* 80113A74 00110874  41 82 00 28 */	beq lbl_80113A9C
 lbl_80113A78:
-/* 80113A78 00110878  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80113A78 00110878  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80113A7C 0011087C  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 80113A80 00110880  4C 41 13 82 */	cror 2, 1, 2
 /* 80113A84 00110884  40 82 00 98 */	bne lbl_80113B1C
@@ -16522,7 +16522,7 @@ lbl_80113BA4:
 /* 80113BA4 001109A4  C0 3F 02 CC */	lfs f1, 0x2cc(r31)
 /* 80113BA8 001109A8  48 00 00 08 */	b lbl_80113BB0
 lbl_80113BAC:
-/* 80113BAC 001109AC  C0 22 AD D0 */	lfs f1, _esc__2_3428-_SDA2_BASE_(r2)
+/* 80113BAC 001109AC  C0 22 AD D0 */	lfs f1, _esc__2_3428@sda21(r2)
 lbl_80113BB0:
 /* 80113BB0 001109B0  E3 E1 00 18 */	psq_l f31, 24(r1), 0, qr0
 /* 80113BB4 001109B4  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -16539,24 +16539,24 @@ calc_spindown_time__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 80113BD4 001109D4  C0 23 02 D8 */	lfs f1, 0x2d8(r3)
 /* 80113BD8 001109D8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80113BDC 001109DC  FC 40 08 50 */	fneg f2, f1
-/* 80113BE0 001109E0  C0 62 AD 50 */	lfs f3, _esc__2_3024-_SDA2_BASE_(r2)
-/* 80113BE4 001109E4  C0 02 AD 44 */	lfs f0, _esc__2_3021-_SDA2_BASE_(r2)
+/* 80113BE0 001109E0  C0 62 AD 50 */	lfs f3, _esc__2_3024@sda21(r2)
+/* 80113BE4 001109E4  C0 02 AD 44 */	lfs f0, _esc__2_3021@sda21(r2)
 /* 80113BE8 001109E8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80113BEC 001109EC  7C 7F 1B 78 */	mr r31, r3
 /* 80113BF0 001109F0  EC 43 00 B2 */	fmuls f2, f3, f2
-/* 80113BF4 001109F4  C0 82 AC 80 */	lfs f4, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80113BF4 001109F4  C0 82 AC 80 */	lfs f4, _esc__2_1438_0@sda21(r2)
 /* 80113BF8 001109F8  EC 20 00 72 */	fmuls f1, f0, f1
-/* 80113BFC 001109FC  C0 A2 AF 20 */	lfs f5, _esc__2_5051-_SDA2_BASE_(r2)
+/* 80113BFC 001109FC  C0 A2 AF 20 */	lfs f5, _esc__2_5051@sda21(r2)
 /* 80113C00 00110A00  EC 44 00 B2 */	fmuls f2, f4, f2
 /* 80113C04 00110A04  C0 C3 02 D4 */	lfs f6, 0x2d4(r3)
-/* 80113C08 00110A08  C0 02 AC F4 */	lfs f0, _esc__2_2850-_SDA2_BASE_(r2)
+/* 80113C08 00110A08  C0 02 AC F4 */	lfs f0, _esc__2_2850@sda21(r2)
 /* 80113C0C 00110A0C  EC 25 08 BA */	fmadds f1, f5, f2, f1
 /* 80113C10 00110A10  EC 26 08 2A */	fadds f1, f6, f1
 /* 80113C14 00110A14  EC 20 00 72 */	fmuls f1, f0, f1
 /* 80113C18 00110A18  4B EF C2 01 */	bl ceilf__3stdFf
-/* 80113C1C 00110A1C  C0 02 AC CC */	lfs f0, _esc__2_2352_0-_SDA2_BASE_(r2)
+/* 80113C1C 00110A1C  C0 02 AC CC */	lfs f0, _esc__2_2352_0@sda21(r2)
 /* 80113C20 00110A20  C0 9F 02 D8 */	lfs f4, 0x2d8(r31)
-/* 80113C24 00110A24  C0 42 AC 80 */	lfs f2, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80113C24 00110A24  C0 42 AC 80 */	lfs f2, _esc__2_1438_0@sda21(r2)
 /* 80113C28 00110A28  EC A0 00 72 */	fmuls f5, f0, f1
 /* 80113C2C 00110A2C  C0 1F 02 D4 */	lfs f0, 0x2d4(r31)
 /* 80113C30 00110A30  FC 60 20 50 */	fneg f3, f4
@@ -16580,9 +16580,9 @@ calc_return_time__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 80113C6C 00110A6C  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
 /* 80113C70 00110A70  93 E1 00 3C */	stw r31, 0x3c(r1)
 /* 80113C74 00110A74  7C 7F 1B 78 */	mr r31, r3
-/* 80113C78 00110A78  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80113C78 00110A78  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 80113C7C 00110A7C  C0 23 02 C0 */	lfs f1, 0x2c0(r3)
-/* 80113C80 00110A80  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80113C80 00110A80  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80113C84 00110A84  EF E2 08 28 */	fsubs f31, f2, f1
 /* 80113C88 00110A88  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80113C8C 00110A8C  4C 40 13 82 */	cror 2, 0, 2
@@ -16603,16 +16603,16 @@ lbl_80113CA8:
 /* 80113CC4 00110AC4  80 BF 03 14 */	lwz r5, 0x314(r31)
 /* 80113CC8 00110AC8  80 1F 03 18 */	lwz r0, 0x318(r31)
 /* 80113CCC 00110ACC  91 21 00 20 */	stw r9, 0x20(r1)
-/* 80113CD0 00110AD0  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80113CD0 00110AD0  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80113CD4 00110AD4  91 01 00 24 */	stw r8, 0x24(r1)
-/* 80113CD8 00110AD8  C0 62 AD 40 */	lfs f3, _esc__2_3020-_SDA2_BASE_(r2)
+/* 80113CD8 00110AD8  C0 62 AD 40 */	lfs f3, _esc__2_3020@sda21(r2)
 /* 80113CDC 00110ADC  90 E1 00 28 */	stw r7, 0x28(r1)
-/* 80113CE0 00110AE0  C0 82 AD 34 */	lfs f4, _esc__2_3017-_SDA2_BASE_(r2)
+/* 80113CE0 00110AE0  C0 82 AD 34 */	lfs f4, _esc__2_3017@sda21(r2)
 /* 80113CE4 00110AE4  90 C1 00 14 */	stw r6, 0x14(r1)
 /* 80113CE8 00110AE8  90 A1 00 18 */	stw r5, 0x18(r1)
 /* 80113CEC 00110AEC  90 01 00 1C */	stw r0, 0x1c(r1)
 /* 80113CF0 00110AF0  4B F2 FB 39 */	bl xAccelMove__FRfRfffff
-/* 80113CF4 00110AF4  C0 22 AD 3C */	lfs f1, _esc__2_3019-_SDA2_BASE_(r2)
+/* 80113CF4 00110AF4  C0 22 AD 3C */	lfs f1, _esc__2_3019@sda21(r2)
 /* 80113CF8 00110AF8  FC 40 F8 90 */	fmr f2, f31
 /* 80113CFC 00110AFC  38 61 00 28 */	addi r3, r1, 0x28
 /* 80113D00 00110B00  38 81 00 1C */	addi r4, r1, 0x1c
@@ -16621,11 +16621,11 @@ lbl_80113CA8:
 /* 80113D0C 00110B0C  4B F2 FB 1D */	bl xAccelMove__FRfRfffff
 /* 80113D10 00110B10  FC 40 F8 90 */	fmr f2, f31
 /* 80113D14 00110B14  C0 3F 03 34 */	lfs f1, 0x334(r31)
-/* 80113D18 00110B18  C0 62 AE 78 */	lfs f3, _esc__2_3978-_SDA2_BASE_(r2)
+/* 80113D18 00110B18  C0 62 AE 78 */	lfs f3, _esc__2_3978@sda21(r2)
 /* 80113D1C 00110B1C  38 61 00 20 */	addi r3, r1, 0x20
 /* 80113D20 00110B20  38 81 00 14 */	addi r4, r1, 0x14
 /* 80113D24 00110B24  4B F3 01 41 */	bl xAccelMove__FRfRffff
-/* 80113D28 00110B28  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80113D28 00110B28  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80113D2C 00110B2C  38 61 00 2C */	addi r3, r1, 0x2c
 /* 80113D30 00110B30  38 81 00 20 */	addi r4, r1, 0x20
 /* 80113D34 00110B34  38 A5 0D B4 */	addi r5, r5, 0xdb4
@@ -16639,7 +16639,7 @@ lbl_80113D3C:
 /* 80113D50 00110B50  4B EF 7C 05 */	bl __ami__5xVec3FRC5xVec3
 /* 80113D54 00110B54  38 61 00 08 */	addi r3, r1, 8
 /* 80113D58 00110B58  4B EF 76 FD */	bl length__5xVec3CFv
-/* 80113D5C 00110B5C  C0 02 AD 28 */	lfs f0, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80113D5C 00110B5C  C0 02 AD 28 */	lfs f0, _esc__2_3014@sda21(r2)
 /* 80113D60 00110B60  EC 01 00 24 */	fdivs f0, f1, f0
 /* 80113D64 00110B64  EC 3F 00 2A */	fadds f1, f31, f0
 /* 80113D68 00110B68  E3 E1 00 48 */	psq_l f31, 72(r1), 0, qr0
@@ -16666,18 +16666,18 @@ start_return__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 80113DB0 00110BB0  4B EF 7B A5 */	bl __ami__5xVec3FRC5xVec3
 /* 80113DB4 00110BB4  38 61 00 08 */	addi r3, r1, 8
 /* 80113DB8 00110BB8  4B EF 76 9D */	bl length__5xVec3CFv
-/* 80113DBC 00110BBC  C0 42 AD 28 */	lfs f2, _esc__2_3014-_SDA2_BASE_(r2)
-/* 80113DC0 00110BC0  C0 02 AC 88 */	lfs f0, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 80113DBC 00110BBC  C0 42 AD 28 */	lfs f2, _esc__2_3014@sda21(r2)
+/* 80113DC0 00110BC0  C0 02 AC 88 */	lfs f0, _esc__2_1441_1@sda21(r2)
 /* 80113DC4 00110BC4  EC 21 10 24 */	fdivs f1, f1, f2
 /* 80113DC8 00110BC8  D0 3F 02 C8 */	stfs f1, 0x2c8(r31)
 /* 80113DCC 00110BCC  C0 3F 02 C8 */	lfs f1, 0x2c8(r31)
 /* 80113DD0 00110BD0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80113DD4 00110BD4  4C 40 13 82 */	cror 2, 0, 2
 /* 80113DD8 00110BD8  40 82 00 0C */	bne lbl_80113DE4
-/* 80113DDC 00110BDC  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80113DDC 00110BDC  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80113DE0 00110BE0  48 00 00 0C */	b lbl_80113DEC
 lbl_80113DE4:
-/* 80113DE4 00110BE4  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80113DE4 00110BE4  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80113DE8 00110BE8  EC 00 08 24 */	fdivs f0, f0, f1
 lbl_80113DEC:
 /* 80113DEC 00110BEC  D0 1F 03 38 */	stfs f0, 0x338(r31)
@@ -16700,7 +16700,7 @@ update_return__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80113E24 00110C24  7C 7E 1B 78 */	mr r30, r3
 /* 80113E28 00110C28  FF C0 08 90 */	fmr f30, f1
 /* 80113E2C 00110C2C  C0 23 02 C8 */	lfs f1, 0x2c8(r3)
-/* 80113E30 00110C30  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80113E30 00110C30  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80113E34 00110C34  EC 21 F0 28 */	fsubs f1, f1, f30
 /* 80113E38 00110C38  D0 23 02 C8 */	stfs f1, 0x2c8(r3)
 /* 80113E3C 00110C3C  C0 43 02 C8 */	lfs f2, 0x2c8(r3)
@@ -16713,17 +16713,17 @@ update_return__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80113E58 00110C58  48 00 00 D8 */	b lbl_80113F30
 lbl_80113E5C:
 /* 80113E5C 00110C5C  FC 40 F0 90 */	fmr f2, f30
-/* 80113E60 00110C60  C0 22 AC BC */	lfs f1, _esc__2_2068-_SDA2_BASE_(r2)
+/* 80113E60 00110C60  C0 22 AC BC */	lfs f1, _esc__2_2068@sda21(r2)
 /* 80113E64 00110C64  38 7E 03 04 */	addi r3, r30, 0x304
 /* 80113E68 00110C68  38 9E 03 10 */	addi r4, r30, 0x310
 /* 80113E6C 00110C6C  4B F3 03 E5 */	bl xAccelStop__FRfRfff
 /* 80113E70 00110C70  FC 40 F0 90 */	fmr f2, f30
-/* 80113E74 00110C74  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80113E74 00110C74  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80113E78 00110C78  38 7E 03 08 */	addi r3, r30, 0x308
 /* 80113E7C 00110C7C  38 9E 03 14 */	addi r4, r30, 0x314
 /* 80113E80 00110C80  4B F3 03 D1 */	bl xAccelStop__FRfRfff
 /* 80113E84 00110C84  FC 40 F0 90 */	fmr f2, f30
-/* 80113E88 00110C88  C0 22 AD 3C */	lfs f1, _esc__2_3019-_SDA2_BASE_(r2)
+/* 80113E88 00110C88  C0 22 AD 3C */	lfs f1, _esc__2_3019@sda21(r2)
 /* 80113E8C 00110C8C  38 7E 03 0C */	addi r3, r30, 0x30c
 /* 80113E90 00110C90  38 9E 03 18 */	addi r4, r30, 0x318
 /* 80113E94 00110C94  4B F3 03 BD */	bl xAccelStop__FRfRfff
@@ -16732,7 +16732,7 @@ lbl_80113E5C:
 /* 80113EA0 00110CA0  80 DE 02 E4 */	lwz r6, 0x2e4(r30)
 /* 80113EA4 00110CA4  38 9E 03 04 */	addi r4, r30, 0x304
 /* 80113EA8 00110CA8  80 1E 02 E8 */	lwz r0, 0x2e8(r30)
-/* 80113EAC 00110CAC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80113EAC 00110CAC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80113EB0 00110CB0  90 E1 00 08 */	stw r7, 8(r1)
 /* 80113EB4 00110CB4  3B E5 0D B4 */	addi r31, r5, 0xdb4
 /* 80113EB8 00110CB8  90 C1 00 0C */	stw r6, 0xc(r1)
@@ -16744,7 +16744,7 @@ lbl_80113E5C:
 /* 80113ED0 00110CD0  38 9E 03 10 */	addi r4, r30, 0x310
 /* 80113ED4 00110CD4  38 DE 02 30 */	addi r6, r30, 0x230
 /* 80113ED8 00110CD8  4B FF 31 01 */	bl cyl_to_cart_vector__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3RC5xVec3RC5xVec3RC5xVec3
-/* 80113EDC 00110CDC  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80113EDC 00110CDC  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80113EE0 00110CE0  FC 20 F8 90 */	fmr f1, f31
 /* 80113EE4 00110CE4  C0 7E 02 E0 */	lfs f3, 0x2e0(r30)
 /* 80113EE8 00110CE8  EC 80 F0 24 */	fdivs f4, f0, f30
@@ -16785,14 +16785,14 @@ apply_blend__Q217zNPCBossOmnidroid13clawrang_typeCFR7xMat4x3RC5xVec3RC5xQuatf:
 /* 80113F64 00110D64  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
 /* 80113F68 00110D68  BF A1 00 34 */	stmw r29, 0x34(r1)
 /* 80113F6C 00110D6C  FF E0 08 90 */	fmr f31, f1
-/* 80113F70 00110D70  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80113F70 00110D70  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80113F74 00110D74  7C 9D 23 78 */	mr r29, r4
 /* 80113F78 00110D78  7C BE 2B 78 */	mr r30, r5
 /* 80113F7C 00110D7C  7C DF 33 78 */	mr r31, r6
 /* 80113F80 00110D80  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80113F84 00110D84  4C 40 13 82 */	cror 2, 0, 2
 /* 80113F88 00110D88  41 82 00 68 */	beq lbl_80113FF0
-/* 80113F8C 00110D8C  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80113F8C 00110D8C  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80113F90 00110D90  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80113F94 00110D94  4C 41 13 82 */	cror 2, 1, 2
 /* 80113F98 00110D98  40 82 00 1C */	bne lbl_80113FB4
@@ -16831,7 +16831,7 @@ lbl_80113FF0:
 start_spindown__Q217zNPCBossOmnidroid13clawrang_typeFv:
 /* 8011400C 00110E0C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80114010 00110E10  7C 08 02 A6 */	mflr r0
-/* 80114014 00110E14  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80114014 00110E14  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80114018 00110E18  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011401C 00110E1C  38 00 00 06 */	li r0, 6
 /* 80114020 00110E20  93 E1 00 0C */	stw r31, 0xc(r1)
@@ -16857,7 +16857,7 @@ lbl_80114068:
 /* 8011406C 00110E6C  4B FF FB 61 */	bl calc_spindown_time__Q217zNPCBossOmnidroid13clawrang_typeCFv
 /* 80114070 00110E70  D0 3F 02 CC */	stfs f1, 0x2cc(r31)
 /* 80114074 00110E74  38 7F 05 0C */	addi r3, r31, 0x50c
-/* 80114078 00110E78  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80114078 00110E78  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011407C 00110E7C  C0 1F 02 CC */	lfs f0, 0x2cc(r31)
 /* 80114080 00110E80  EC 01 00 24 */	fdivs f0, f1, f0
 /* 80114084 00110E84  D0 1F 02 D0 */	stfs f0, 0x2d0(r31)
@@ -16873,15 +16873,15 @@ lbl_80114068:
 update_spindown__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 801140A4 00110EA4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801140A8 00110EA8  7C 08 02 A6 */	mflr r0
-/* 801140AC 00110EAC  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 801140B0 00110EB0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801140AC 00110EAC  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 801140B0 00110EB0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801140B4 00110EB4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801140B8 00110EB8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801140BC 00110EBC  7C 7F 1B 78 */	mr r31, r3
 /* 801140C0 00110EC0  C0 43 02 CC */	lfs f2, 0x2cc(r3)
 /* 801140C4 00110EC4  EC 22 08 28 */	fsubs f1, f2, f1
 /* 801140C8 00110EC8  D0 23 02 CC */	stfs f1, 0x2cc(r3)
-/* 801140CC 00110ECC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801140CC 00110ECC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801140D0 00110ED0  80 05 03 4C */	lwz r0, 0x34c(r5)
 /* 801140D4 00110ED4  54 00 10 3A */	slwi r0, r0, 2
 /* 801140D8 00110ED8  7C 24 04 2E */	lfsx f1, r4, r0
@@ -16896,7 +16896,7 @@ lbl_801140F8:
 /* 801140F8 00110EF8  C0 1F 02 D0 */	lfs f0, 0x2d0(r31)
 /* 801140FC 00110EFC  EC 21 00 32 */	fmuls f1, f1, f0
 /* 80114100 00110F00  4B EF B8 A1 */	bl xSCurve__Ff
-/* 80114104 00110F04  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80114104 00110F04  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80114108 00110F08  C0 5F 03 3C */	lfs f2, 0x33c(r31)
 /* 8011410C 00110F0C  EC 00 08 28 */	fsubs f0, f0, f1
 /* 80114110 00110F10  EC 00 08 2A */	fadds f0, f0, f1
@@ -16925,15 +16925,15 @@ update_banking__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 8011415C 00110F5C  F3 AC 0F D8 */	psq_st f29, -40(r12), 0, qr0
 /* 80114160 00110F60  93 EC FF CC */	stw r31, -0x34(r12)
 /* 80114164 00110F64  7C 7F 1B 78 */	mr r31, r3
-/* 80114168 00110F68  C0 82 AF 24 */	lfs f4, _esc__2_5112-_SDA2_BASE_(r2)
-/* 8011416C 00110F6C  C0 62 AC AC */	lfs f3, _esc__2_2015_1-_SDA2_BASE_(r2)
+/* 80114168 00110F68  C0 82 AF 24 */	lfs f4, _esc__2_5112@sda21(r2)
+/* 8011416C 00110F6C  C0 62 AC AC */	lfs f3, _esc__2_2015_1@sda21(r2)
 /* 80114170 00110F70  FF E0 08 90 */	fmr f31, f1
 /* 80114174 00110F74  C0 23 02 E0 */	lfs f1, 0x2e0(r3)
 /* 80114178 00110F78  C0 03 02 EC */	lfs f0, 0x2ec(r3)
 /* 8011417C 00110F7C  C0 43 02 E8 */	lfs f2, 0x2e8(r3)
 /* 80114180 00110F80  EC A3 00 7A */	fmadds f5, f3, f1, f0
 /* 80114184 00110F84  C0 23 02 F4 */	lfs f1, 0x2f4(r3)
-/* 80114188 00110F88  C0 02 AE C4 */	lfs f0, _esc__2_4660-_SDA2_BASE_(r2)
+/* 80114188 00110F88  C0 02 AE C4 */	lfs f0, _esc__2_4660@sda21(r2)
 /* 8011418C 00110F8C  EC 63 08 BA */	fmadds f3, f3, f2, f1
 /* 80114190 00110F90  D0 81 00 2C */	stfs f4, 0x2c(r1)
 /* 80114194 00110F94  EC 45 01 72 */	fmuls f2, f5, f5
@@ -16944,7 +16944,7 @@ update_banking__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 801141A8 00110FA8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801141AC 00110FAC  40 81 00 28 */	ble lbl_801141D4
 /* 801141B0 00110FB0  4B EF B3 D1 */	bl xinvsqrt__Ff
-/* 801141B4 00110FB4  C0 02 AD 3C */	lfs f0, _esc__2_3019-_SDA2_BASE_(r2)
+/* 801141B4 00110FB4  C0 02 AD 3C */	lfs f0, _esc__2_3019@sda21(r2)
 /* 801141B8 00110FB8  C0 41 00 28 */	lfs f2, 0x28(r1)
 /* 801141BC 00110FBC  EC 60 00 72 */	fmuls f3, f0, f1
 /* 801141C0 00110FC0  C0 01 00 30 */	lfs f0, 0x30(r1)
@@ -16970,7 +16970,7 @@ lbl_801141D4:
 /* 8011420C 0011100C  4B EF B3 7D */	bl cross__5xVec3FRC5xVec3RC5xVec3
 /* 80114210 00111010  38 61 00 10 */	addi r3, r1, 0x10
 /* 80114214 00111014  4B EF 73 11 */	bl length2__5xVec3CFv
-/* 80114218 00111018  C0 02 AC D0 */	lfs f0, _esc__2_2353_0-_SDA2_BASE_(r2)
+/* 80114218 00111018  C0 02 AC D0 */	lfs f0, _esc__2_2353_0@sda21(r2)
 /* 8011421C 0011101C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80114220 00111020  40 81 00 68 */	ble lbl_80114288
 /* 80114224 00111024  4B EF 72 55 */	bl xsqrt__Ff
@@ -16981,7 +16981,7 @@ lbl_801141D4:
 /* 80114238 00111038  FC 40 08 90 */	fmr f2, f1
 /* 8011423C 0011103C  FC 20 E8 90 */	fmr f1, f29
 /* 80114240 00111040  4B EF BC D1 */	bl xatan2__Fff
-/* 80114244 00111044  C0 02 AF 28 */	lfs f0, _esc__2_5113-_SDA2_BASE_(r2)
+/* 80114244 00111044  C0 02 AF 28 */	lfs f0, _esc__2_5113@sda21(r2)
 /* 80114248 00111048  FF C0 08 90 */	fmr f30, f1
 /* 8011424C 0011104C  EC 20 07 F2 */	fmuls f1, f0, f31
 /* 80114250 00111050  4B EF C3 55 */	bl xexp__Ff
@@ -16999,7 +16999,7 @@ lbl_801141D4:
 /* 80114280 00111080  4B FF 29 A5 */	bl xMat3x3RMulVec__FP5xVec3PC7xMat3x3PC5xVec3_25
 /* 80114284 00111084  48 00 00 18 */	b lbl_8011429C
 lbl_80114288:
-/* 80114288 00111088  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80114288 00111088  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011428C 0011108C  38 7F 03 1C */	addi r3, r31, 0x31c
 /* 80114290 00111090  38 81 00 1C */	addi r4, r1, 0x1c
 /* 80114294 00111094  D0 1F 03 2C */	stfs f0, 0x32c(r31)
@@ -17026,7 +17026,7 @@ need_focus__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 /* 801142D8 001110D8  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801142DC 001110DC  7C 7E 1B 78 */	mr r30, r3
 /* 801142E0 001110E0  80 1E 02 88 */	lwz r0, 0x288(r30)
-/* 801142E4 001110E4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801142E4 001110E4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801142E8 001110E8  2C 00 00 03 */	cmpwi r0, 3
 /* 801142EC 001110EC  3F E3 00 01 */	addis r31, r3, 1
 /* 801142F0 001110F0  3B FF 99 10 */	addi r31, r31, -26352
@@ -17040,7 +17040,7 @@ lbl_80114300:
 /* 8011430C 0011110C  38 60 00 00 */	li r3, 0
 /* 80114310 00111110  48 00 00 BC */	b lbl_801143CC
 lbl_80114314:
-/* 80114314 00111114  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80114314 00111114  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80114318 00111118  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8011431C 0011111C  4B EF 71 0D */	bl xEntGetCenter__FPC4xEnt
 /* 80114320 00111120  C0 83 00 08 */	lfs f4, 8(r3)
@@ -17048,7 +17048,7 @@ lbl_80114314:
 /* 80114328 00111128  C0 63 00 00 */	lfs f3, 0(r3)
 /* 8011432C 0011112C  EC A4 00 28 */	fsubs f5, f4, f0
 /* 80114330 00111130  C0 1E 02 30 */	lfs f0, 0x230(r30)
-/* 80114334 00111134  C0 42 AF 0C */	lfs f2, _esc__2_4933-_SDA2_BASE_(r2)
+/* 80114334 00111134  C0 42 AF 0C */	lfs f2, _esc__2_4933@sda21(r2)
 /* 80114338 00111138  EC 23 00 28 */	fsubs f1, f3, f0
 /* 8011433C 0011113C  EC 05 01 72 */	fmuls f0, f5, f5
 /* 80114340 00111140  EC A1 00 7A */	fmadds f5, f1, f1, f0
@@ -17058,7 +17058,7 @@ lbl_80114314:
 /* 80114350 00111150  38 60 00 00 */	li r3, 0
 /* 80114354 00111154  48 00 00 78 */	b lbl_801143CC
 lbl_80114358:
-/* 80114358 00111158  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80114358 00111158  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011435C 0011115C  38 63 7F 70 */	addi r3, r3, 0x7f70
 /* 80114360 00111160  48 00 00 60 */	b lbl_801143C0
 lbl_80114364:
@@ -17114,10 +17114,10 @@ update_focus__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 8011440C 0011120C  41 82 00 30 */	beq lbl_8011443C
 /* 80114410 00111210  80 1E 02 80 */	lwz r0, 0x280(r30)
 /* 80114414 00111214  7F E3 FB 78 */	mr r3, r31
-/* 80114418 00111218  C0 22 AE EC */	lfs f1, _esc__2_4837-_SDA2_BASE_(r2)
+/* 80114418 00111218  C0 22 AE EC */	lfs f1, _esc__2_4837@sda21(r2)
 /* 8011441C 0011121C  38 9E 02 30 */	addi r4, r30, 0x230
 /* 80114420 00111220  64 00 00 02 */	oris r0, r0, 2
-/* 80114424 00111224  C0 42 AF 2C */	lfs f2, _esc__2_5154-_SDA2_BASE_(r2)
+/* 80114424 00111224  C0 42 AF 2C */	lfs f2, _esc__2_5154@sda21(r2)
 /* 80114428 00111228  90 1E 02 80 */	stw r0, 0x280(r30)
 /* 8011442C 0011122C  C0 1E 03 3C */	lfs f0, 0x33c(r30)
 /* 80114430 00111230  EC 21 00 32 */	fmuls f1, f1, f0
@@ -17145,7 +17145,7 @@ update_blur_spin__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80114474 00111274  21 6B FE 50 */	subfic r11, r11, -432
 /* 80114478 00111278  7C 21 59 6E */	stwux r1, r1, r11
 /* 8011447C 0011127C  7C 08 02 A6 */	mflr r0
-/* 80114480 00111280  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80114480 00111280  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80114484 00111284  90 0C 00 04 */	stw r0, 4(r12)
 /* 80114488 00111288  BF AC FF F4 */	stmw r29, -0xc(r12)
 /* 8011448C 0011128C  7C 7D 1B 78 */	mr r29, r3
@@ -17162,8 +17162,8 @@ lbl_801144A4:
 /* 801144B4 001112B4  EC 42 00 2A */	fadds f2, f2, f0
 lbl_801144B8:
 /* 801144B8 001112B8  FC 40 12 10 */	fabs f2, f2
-/* 801144BC 001112BC  C0 22 AF 30 */	lfs f1, _esc__2_5176-_SDA2_BASE_(r2)
-/* 801144C0 001112C0  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801144BC 001112BC  C0 22 AF 30 */	lfs f1, _esc__2_5176@sda21(r2)
+/* 801144C0 001112C0  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801144C4 001112C4  FC 40 10 18 */	frsp f2, f2
 /* 801144C8 001112C8  EC 21 00 B2 */	fmuls f1, f1, f2
 /* 801144CC 001112CC  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -17171,7 +17171,7 @@ lbl_801144B8:
 /* 801144D4 001112D4  FC 20 00 90 */	fmr f1, f0
 lbl_801144D8:
 /* 801144D8 001112D8  80 7D 02 90 */	lwz r3, 0x290(r29)
-/* 801144DC 001112DC  C0 02 AE C0 */	lfs f0, _esc__2_4550-_SDA2_BASE_(r2)
+/* 801144DC 001112DC  C0 02 AE C0 */	lfs f0, _esc__2_4550@sda21(r2)
 /* 801144E0 001112E0  D0 23 00 2C */	stfs f1, 0x2c(r3)
 /* 801144E4 001112E4  80 9D 02 90 */	lwz r4, 0x290(r29)
 /* 801144E8 001112E8  C0 24 00 2C */	lfs f1, 0x2c(r4)
@@ -17186,12 +17186,12 @@ lbl_801144D8:
 /* 8011450C 0011130C  38 7E 00 20 */	addi r3, r30, 0x20
 /* 80114510 00111310  38 84 00 20 */	addi r4, r4, 0x20
 /* 80114514 00111314  4B EF 6D 51 */	bl dot__5xVec3CFRC5xVec3
-/* 80114518 00111318  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80114518 00111318  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011451C 0011131C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80114520 00111320  40 81 00 D4 */	ble lbl_801145F4
 /* 80114524 00111324  38 00 00 08 */	li r0, 8
 /* 80114528 00111328  38 A1 00 1C */	addi r5, r1, 0x1c
-/* 8011452C 0011132C  38 8D BA 7C */	addi r4, r13, lbl_803CEEFC-_SDA_BASE_
+/* 8011452C 0011132C  38 8D BA 7C */	addi r4, r13, lbl_803CEEFC@sda21
 /* 80114530 00111330  7C 09 03 A6 */	mtctr r0
 lbl_80114534:
 /* 80114534 00111334  80 64 00 04 */	lwz r3, 4(r4)
@@ -17249,10 +17249,10 @@ lbl_801145F4:
 /* 801145F8 001113F8  7F C4 F3 78 */	mr r4, r30
 /* 801145FC 001113FC  4B EF 16 45 */	bl __as__7xMat4x3FRC7xMat4x3
 lbl_80114600:
-/* 80114600 00111400  80 A2 A9 D8 */	lwz r5, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs9blur_spin-_SDA2_BASE_(r2)
+/* 80114600 00111400  80 A2 A9 D8 */	lwz r5, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs9blur_spin@sda21(r2)
 /* 80114604 00111404  38 61 00 10 */	addi r3, r1, 0x10
-/* 80114608 00111408  80 82 A9 DC */	lwz r4, lbl_803D46FC-_SDA2_BASE_(r2)
-/* 8011460C 0011140C  80 02 A9 E0 */	lwz r0, lbl_803D4700-_SDA2_BASE_(r2)
+/* 80114608 00111408  80 82 A9 DC */	lwz r4, lbl_803D46FC@sda21(r2)
+/* 8011460C 0011140C  80 02 A9 E0 */	lwz r0, lbl_803D4700@sda21(r2)
 /* 80114610 00111410  90 A1 00 10 */	stw r5, 0x10(r1)
 /* 80114614 00111414  90 81 00 14 */	stw r4, 0x14(r1)
 /* 80114618 00111418  90 01 00 18 */	stw r0, 0x18(r1)
@@ -17329,10 +17329,10 @@ update_streak_effects__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80114714 00111514  80 19 02 80 */	lwz r0, 0x280(r25)
 /* 80114718 00111518  54 00 04 A5 */	rlwinm. r0, r0, 0, 0x12, 0x12
 /* 8011471C 0011151C  40 82 00 70 */	bne lbl_8011478C
-/* 80114720 00111520  80 A2 A9 E4 */	lwz r5, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs13ribbon_center-_SDA2_BASE_(r2)
+/* 80114720 00111520  80 A2 A9 E4 */	lwz r5, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs13ribbon_center@sda21(r2)
 /* 80114724 00111524  38 61 00 10 */	addi r3, r1, 0x10
-/* 80114728 00111528  80 82 A9 E8 */	lwz r4, lbl_803D4708-_SDA2_BASE_(r2)
-/* 8011472C 0011152C  80 02 A9 EC */	lwz r0, lbl_803D470C-_SDA2_BASE_(r2)
+/* 80114728 00111528  80 82 A9 E8 */	lwz r4, lbl_803D4708@sda21(r2)
+/* 8011472C 0011152C  80 02 A9 EC */	lwz r0, lbl_803D470C@sda21(r2)
 /* 80114730 00111530  90 A1 00 10 */	stw r5, 0x10(r1)
 /* 80114734 00111534  90 81 00 14 */	stw r4, 0x14(r1)
 /* 80114738 00111538  90 01 00 18 */	stw r0, 0x18(r1)
@@ -17342,14 +17342,14 @@ update_streak_effects__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80114748 00111548  38 81 00 40 */	addi r4, r1, 0x40
 /* 8011474C 0011154C  7C 65 1B 78 */	mr r5, r3
 /* 80114750 00111550  4B EF 8E 55 */	bl xMat4x3Toworld__FP5xVec3PC7xMat4x3PC5xVec3
-/* 80114754 00111554  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80114754 00111554  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80114758 00111558  7F A6 EB 78 */	mr r6, r29
 /* 8011475C 0011155C  38 79 03 98 */	addi r3, r25, 0x398
 /* 80114760 00111560  38 81 00 10 */	addi r4, r1, 0x10
 /* 80114764 00111564  FC 40 08 90 */	fmr f2, f1
 /* 80114768 00111568  38 A1 00 50 */	addi r5, r1, 0x50
 /* 8011476C 0011156C  4B F2 43 89 */	bl insert__9xFXRibbonFRC5xVec3RC5xVec3ffi
-/* 80114770 00111570  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80114770 00111570  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80114774 00111574  7F A6 EB 78 */	mr r6, r29
 /* 80114778 00111578  38 79 03 A8 */	addi r3, r25, 0x3a8
 /* 8011477C 0011157C  38 81 00 10 */	addi r4, r1, 0x10
@@ -17359,14 +17359,14 @@ update_streak_effects__Q217zNPCBossOmnidroid13clawrang_typeFf:
 lbl_8011478C:
 /* 8011478C 0011158C  C0 59 03 40 */	lfs f2, 0x340(r25)
 /* 80114790 00111590  38 61 00 1C */	addi r3, r1, 0x1c
-/* 80114794 00111594  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
-/* 80114798 00111598  38 82 AA 14 */	addi r4, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake-_SDA2_BASE_
-/* 8011479C 0011159C  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80114794 00111594  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
+/* 80114798 00111598  38 82 AA 14 */	addi r4, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake@sda21
+/* 8011479C 0011159C  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 /* 801147A0 001115A0  EC 00 10 28 */	fsubs f0, f0, f2
 /* 801147A4 001115A4  EF E1 00 BA */	fmadds f31, f1, f2, f0
 /* 801147A8 001115A8  4B EF 69 01 */	bl __as__5xVec3FRC5xVec3
 /* 801147AC 001115AC  38 61 00 28 */	addi r3, r1, 0x28
-/* 801147B0 001115B0  38 82 AA 14 */	addi r4, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake-_SDA2_BASE_
+/* 801147B0 001115B0  38 82 AA 14 */	addi r4, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake@sda21
 /* 801147B4 001115B4  4B EF 68 F5 */	bl __as__5xVec3FRC5xVec3
 /* 801147B8 001115B8  C0 01 00 2C */	lfs f0, 0x2c(r1)
 /* 801147BC 001115BC  3B 81 00 60 */	addi r28, r1, 0x60
@@ -17387,7 +17387,7 @@ lbl_801147D4:
 /* 801147F4 001115F4  4B EF 8D B1 */	bl xMat4x3Toworld__FP5xVec3PC7xMat4x3PC5xVec3
 /* 801147F8 001115F8  FC 40 F8 90 */	fmr f2, f31
 /* 801147FC 001115FC  38 7F 03 B8 */	addi r3, r31, 0x3b8
-/* 80114800 00111600  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80114800 00111600  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80114804 00111604  7F 64 DB 78 */	mr r4, r27
 /* 80114808 00111608  7F 85 E3 78 */	mr r5, r28
 /* 8011480C 0011160C  7F A6 EB 78 */	mr r6, r29
@@ -17436,10 +17436,10 @@ update_strafe_effects__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 801148AC 001116AC  F2 A1 00 F8 */	psq_st f21, 248(r1), 0, qr0
 /* 801148B0 001116B0  BF A1 00 E4 */	stmw r29, 0xe4(r1)
 /* 801148B4 001116B4  7C 7D 1B 78 */	mr r29, r3
-/* 801148B8 001116B8  C0 42 AF 40 */	lfs f2, _esc__2_5234-_SDA2_BASE_(r2)
+/* 801148B8 001116B8  C0 42 AF 40 */	lfs f2, _esc__2_5234@sda21(r2)
 /* 801148BC 001116BC  80 63 02 80 */	lwz r3, 0x280(r3)
 /* 801148C0 001116C0  FE A0 08 90 */	fmr f21, f1
-/* 801148C4 001116C4  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801148C4 001116C4  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801148C8 001116C8  54 60 05 A8 */	rlwinm r0, r3, 0, 0x16, 0x14
 /* 801148CC 001116CC  54 7F 05 6A */	rlwinm r31, r3, 0, 0x15, 0x15
 /* 801148D0 001116D0  90 1D 02 80 */	stw r0, 0x280(r29)
@@ -17472,19 +17472,19 @@ lbl_80114930:
 /* 80114934 00111734  80 E1 00 CC */	lwz r7, 0xcc(r1)
 /* 80114938 00111738  80 A1 00 D4 */	lwz r5, 0xd4(r1)
 /* 8011493C 0011173C  90 C1 00 4C */	stw r6, 0x4c(r1)
-/* 80114940 00111740  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80114940 00111740  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80114944 00111744  90 E1 00 48 */	stw r7, 0x48(r1)
 /* 80114948 00111748  C3 C1 00 4C */	lfs f30, 0x4c(r1)
 /* 8011494C 0011174C  90 A1 00 50 */	stw r5, 0x50(r1)
 /* 80114950 00111750  C0 21 00 48 */	lfs f1, 0x48(r1)
 /* 80114954 00111754  EC 5E 07 B8 */	fmsubs f2, f30, f30, f0
 /* 80114958 00111758  C3 A1 00 50 */	lfs f29, 0x50(r1)
-/* 8011495C 0011175C  80 82 F0 C8 */	lwz r4, _esc__2_5204-_SDA2_BASE_(r2)
+/* 8011495C 0011175C  80 82 F0 C8 */	lwz r4, _esc__2_5204@sda21(r2)
 /* 80114960 00111760  EC 7E 00 72 */	fmuls f3, f30, f1
-/* 80114964 00111764  80 62 F0 CC */	lwz r3, lbl_803D8DEC-_SDA2_BASE_(r2)
+/* 80114964 00111764  80 62 F0 CC */	lwz r3, lbl_803D8DEC@sda21(r2)
 /* 80114968 00111768  EC 3E 07 72 */	fmuls f1, f30, f29
-/* 8011496C 0011176C  80 02 F0 D0 */	lwz r0, lbl_803D8DF0-_SDA2_BASE_(r2)
-/* 80114970 00111770  C0 02 AF 44 */	lfs f0, _esc__2_5235-_SDA2_BASE_(r2)
+/* 8011496C 0011176C  80 02 F0 D0 */	lwz r0, lbl_803D8DF0@sda21(r2)
+/* 80114970 00111770  C0 02 AF 44 */	lfs f0, _esc__2_5235@sda21(r2)
 /* 80114974 00111774  90 81 00 3C */	stw r4, 0x3c(r1)
 /* 80114978 00111778  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8011497C 0011177C  90 61 00 40 */	stw r3, 0x40(r1)
@@ -17499,8 +17499,8 @@ lbl_80114930:
 /* 801149A0 001117A0  7F C4 F3 78 */	mr r4, r30
 /* 801149A4 001117A4  38 61 00 3C */	addi r3, r1, 0x3c
 /* 801149A8 001117A8  4B EF 6E 85 */	bl safe_normalize__5xVec3FRC5xVec3
-/* 801149AC 001117AC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801149B0 001117B0  C0 62 AC 9C */	lfs f3, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 801149AC 001117AC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 801149B0 001117B0  C0 62 AC 9C */	lfs f3, _esc__2_1659_1@sda21(r2)
 /* 801149B4 001117B4  C0 43 0D B8 */	lfs f2, 0xdb8(r3)
 /* 801149B8 001117B8  C0 21 00 40 */	lfs f1, 0x40(r1)
 /* 801149BC 001117BC  C0 1E 00 34 */	lfs f0, 0x34(r30)
@@ -17517,7 +17517,7 @@ lbl_80114930:
 /* 801149E8 001117E8  38 61 00 60 */	addi r3, r1, 0x60
 /* 801149EC 001117EC  38 81 00 3C */	addi r4, r1, 0x3c
 /* 801149F0 001117F0  4B EF 66 B9 */	bl __as__5xVec3FRC5xVec3
-/* 801149F4 001117F4  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801149F4 001117F4  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 801149F8 001117F8  38 00 0C 00 */	li r0, 0xc00
 /* 801149FC 001117FC  90 01 00 74 */	stw r0, 0x74(r1)
 /* 80114A00 00111800  C0 41 00 40 */	lfs f2, 0x40(r1)
@@ -17578,9 +17578,9 @@ lbl_80114A30:
 /* 80114AD8 001118D8  FF E0 08 90 */	fmr f31, f1
 /* 80114ADC 001118DC  EC 3C 07 38 */	fmsubs f1, f28, f28, f0
 /* 80114AE0 001118E0  4B EF 69 99 */	bl xsqrt__Ff
-/* 80114AE4 001118E4  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
-/* 80114AE8 001118E8  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80114AEC 001118EC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80114AE4 001118E4  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
+/* 80114AE8 001118E8  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80114AEC 001118EC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80114AF0 001118F0  FF 80 08 90 */	fmr f28, f1
 /* 80114AF4 001118F4  C0 41 00 3C */	lfs f2, 0x3c(r1)
 /* 80114AF8 001118F8  EC C0 A8 24 */	fdivs f6, f0, f21
@@ -17589,18 +17589,18 @@ lbl_80114A30:
 /* 80114B04 00111904  C2 C5 0D B8 */	lfs f22, 0xdb8(r5)
 /* 80114B08 00111908  C0 A1 00 40 */	lfs f5, 0x40(r1)
 /* 80114B0C 0011190C  54 00 10 3A */	slwi r0, r0, 2
-/* 80114B10 00111910  80 A2 AF 34 */	lwz r5, _esc__2_5218-_SDA2_BASE_(r2)
+/* 80114B10 00111910  80 A2 AF 34 */	lwz r5, _esc__2_5218@sda21(r2)
 /* 80114B14 00111914  EC 42 07 B2 */	fmuls f2, f2, f30
 /* 80114B18 00111918  C0 01 00 48 */	lfs f0, 0x48(r1)
 /* 80114B1C 0011191C  C0 81 00 44 */	lfs f4, 0x44(r1)
 /* 80114B20 00111920  EE E0 11 78 */	fmsubs f23, f0, f5, f2
 /* 80114B24 00111924  7C 44 04 2E */	lfsx f2, r4, r0
 /* 80114B28 00111928  EC 05 07 72 */	fmuls f0, f5, f29
-/* 80114B2C 0011192C  80 02 AF 3C */	lwz r0, lbl_803D4C5C-_SDA2_BASE_(r2)
-/* 80114B30 00111930  80 82 AF 38 */	lwz r4, lbl_803D4C58-_SDA2_BASE_(r2)
+/* 80114B2C 0011192C  80 02 AF 3C */	lwz r0, lbl_803D4C5C@sda21(r2)
+/* 80114B30 00111930  80 82 AF 38 */	lwz r4, lbl_803D4C58@sda21(r2)
 /* 80114B34 00111934  EC 37 06 72 */	fmuls f1, f23, f25
 /* 80114B38 00111938  EF BE 01 38 */	fmsubs f29, f30, f4, f0
-/* 80114B3C 0011193C  C0 62 AD A4 */	lfs f3, _esc__2_3187-_SDA2_BASE_(r2)
+/* 80114B3C 0011193C  C0 62 AD A4 */	lfs f3, _esc__2_3187@sda21(r2)
 /* 80114B40 00111940  EC 17 06 32 */	fmuls f0, f23, f24
 /* 80114B44 00111944  90 A1 00 30 */	stw r5, 0x30(r1)
 /* 80114B48 00111948  EC 83 00 B2 */	fmuls f4, f3, f2
@@ -17728,7 +17728,7 @@ update_sounds__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80114D20 00111B20  41 82 00 30 */	beq lbl_80114D50
 /* 80114D24 00111B24  80 7F 05 08 */	lwz r3, 0x508(r31)
 /* 80114D28 00111B28  38 BF 02 30 */	addi r5, r31, 0x230
-/* 80114D2C 00111B2C  C0 22 AD 8C */	lfs f1, _esc__2_3052-_SDA2_BASE_(r2)
+/* 80114D2C 00111B2C  C0 22 AD 8C */	lfs f1, _esc__2_3052@sda21(r2)
 /* 80114D30 00111B30  38 DF 02 E0 */	addi r6, r31, 0x2e0
 /* 80114D34 00111B34  38 80 08 00 */	li r4, 0x800
 /* 80114D38 00111B38  38 E0 00 00 */	li r7, 0
@@ -17738,7 +17738,7 @@ update_sounds__Q217zNPCBossOmnidroid13clawrang_typeFf:
 /* 80114D48 00111B48  90 7F 05 10 */	stw r3, 0x510(r31)
 /* 80114D4C 00111B4C  48 00 00 10 */	b lbl_80114D5C
 lbl_80114D50:
-/* 80114D50 00111B50  C0 22 AD A4 */	lfs f1, _esc__2_3187-_SDA2_BASE_(r2)
+/* 80114D50 00111B50  C0 22 AD A4 */	lfs f1, _esc__2_3187@sda21(r2)
 /* 80114D54 00111B54  38 7F 05 10 */	addi r3, r31, 0x510
 /* 80114D58 00111B58  4B F5 2A 4D */	bl xSndMgrFadeOff__FR10iSndHandlef
 lbl_80114D5C:
@@ -17792,7 +17792,7 @@ emit_sparks__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 80114E0C 00111C0C  BF 41 00 48 */	stmw r26, 0x48(r1)
 /* 80114E10 00111C10  C1 21 01 8C */	lfs f9, 0x18c(r1)
 /* 80114E14 00111C14  FE E0 08 90 */	fmr f23, f1
-/* 80114E18 00111C18  C0 02 AD 70 */	lfs f0, _esc__2_3037-_SDA2_BASE_(r2)
+/* 80114E18 00111C18  C0 02 AD 70 */	lfs f0, _esc__2_3037@sda21(r2)
 /* 80114E1C 00111C1C  FF 00 10 90 */	fmr f24, f2
 /* 80114E20 00111C20  C3 E1 01 90 */	lfs f31, 0x190(r1)
 /* 80114E24 00111C24  FF 20 18 90 */	fmr f25, f3
@@ -17815,9 +17815,9 @@ emit_sparks__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 80114E68 00111C68  3C 00 43 30 */	lis r0, 0x4330
 /* 80114E6C 00111C6C  90 A1 00 14 */	stw r5, 0x14(r1)
 /* 80114E70 00111C70  1F DD 00 0C */	mulli r30, r29, 0xc
-/* 80114E74 00111C74  C8 42 AC 90 */	lfd f2, _esc__2_1488-_SDA2_BASE_(r2)
+/* 80114E74 00111C74  C8 42 AC 90 */	lfd f2, _esc__2_1488@sda21(r2)
 /* 80114E78 00111C78  90 01 00 10 */	stw r0, 0x10(r1)
-/* 80114E7C 00111C7C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80114E7C 00111C7C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80114E80 00111C80  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 80114E84 00111C84  90 A1 00 0C */	stw r5, 0xc(r1)
 /* 80114E88 00111C88  EC 00 10 28 */	fsubs f0, f0, f2
@@ -17837,22 +17837,22 @@ emit_sparks__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 80114EC0 00111CC0  7F C3 F3 78 */	mr r3, r30
 /* 80114EC4 00111CC4  7C 1C 03 78 */	mr r28, r0
 /* 80114EC8 00111CC8  4B EF 2A 19 */	bl xMemPushTemp__FUi
-/* 80114ECC 00111CCC  C0 02 AC 70 */	lfs f0, _esc__2_1429_1-_SDA2_BASE_(r2)
+/* 80114ECC 00111CCC  C0 02 AC 70 */	lfs f0, _esc__2_1429_1@sda21(r2)
 /* 80114ED0 00111CD0  7C 7B 1B 78 */	mr r27, r3
-/* 80114ED4 00111CD4  CA 82 AC 78 */	lfd f20, _esc__2_1431-_SDA2_BASE_(r2)
+/* 80114ED4 00111CD4  CA 82 AC 78 */	lfd f20, _esc__2_1431@sda21(r2)
 /* 80114ED8 00111CD8  3B 40 00 00 */	li r26, 0
 /* 80114EDC 00111CDC  D8 01 00 18 */	stfd f0, 0x18(r1)
 /* 80114EE0 00111CE0  3B E0 00 00 */	li r31, 0
-/* 80114EE4 00111CE4  C0 02 AF 4C */	lfs f0, _esc__2_5279-_SDA2_BASE_(r2)
+/* 80114EE4 00111CE4  C0 02 AF 4C */	lfs f0, _esc__2_5279@sda21(r2)
 /* 80114EE8 00111CE8  3F C0 43 30 */	lis r30, 0x4330
-/* 80114EEC 00111CEC  C2 A2 A8 B4 */	lfs f21, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80114EEC 00111CEC  C2 A2 A8 B4 */	lfs f21, _esc__2_1223@sda21(r2)
 /* 80114EF0 00111CF0  D8 01 00 20 */	stfd f0, 0x20(r1)
-/* 80114EF4 00111CF4  C0 02 AF 48 */	lfs f0, _esc__2_5278-_SDA2_BASE_(r2)
-/* 80114EF8 00111CF8  C2 C2 A8 B0 */	lfs f22, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80114EF4 00111CF4  C0 02 AF 48 */	lfs f0, _esc__2_5278@sda21(r2)
+/* 80114EF8 00111CF8  C2 C2 A8 B0 */	lfs f22, _esc__2_1222@sda21(r2)
 /* 80114EFC 00111CFC  D8 01 00 28 */	stfd f0, 0x28(r1)
-/* 80114F00 00111D00  C0 02 AD B8 */	lfs f0, _esc__2_3192-_SDA2_BASE_(r2)
+/* 80114F00 00111D00  C0 02 AD B8 */	lfs f0, _esc__2_3192@sda21(r2)
 /* 80114F04 00111D04  D8 01 00 30 */	stfd f0, 0x30(r1)
-/* 80114F08 00111D08  C0 02 AC B0 */	lfs f0, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 80114F08 00111D08  C0 02 AC B0 */	lfs f0, _esc__2_2016_0@sda21(r2)
 /* 80114F0C 00111D0C  D8 01 00 38 */	stfd f0, 0x38(r1)
 /* 80114F10 00111D10  48 00 00 E0 */	b lbl_80114FF0
 lbl_80114F14:
@@ -17916,9 +17916,9 @@ lbl_80114F58:
 lbl_80114FF0:
 /* 80114FF0 00111DF0  7C 1A E8 00 */	cmpw r26, r29
 /* 80114FF4 00111DF4  41 80 FF 20 */	blt lbl_80114F14
-/* 80114FF8 00111DF8  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80114FF8 00111DF8  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 /* 80114FFC 00111DFC  FC A0 F8 90 */	fmr f5, f31
-/* 80115000 00111E00  C0 62 AD 8C */	lfs f3, _esc__2_3052-_SDA2_BASE_(r2)
+/* 80115000 00111E00  C0 62 AD 8C */	lfs f3, _esc__2_3052@sda21(r2)
 /* 80115004 00111E04  7F 83 E3 78 */	mr r3, r28
 /* 80115008 00111E08  FC 40 08 90 */	fmr f2, f1
 /* 8011500C 00111E0C  7F 64 DB 78 */	mr r4, r27
@@ -18016,7 +18016,7 @@ emit_glints__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 8011516C 00111F6C  BF 01 00 50 */	stmw r24, 0x50(r1)
 /* 80115170 00111F70  C1 21 01 9C */	lfs f9, 0x19c(r1)
 /* 80115174 00111F74  FE E0 08 90 */	fmr f23, f1
-/* 80115178 00111F78  C0 02 AF 50 */	lfs f0, _esc__2_5317-_SDA2_BASE_(r2)
+/* 80115178 00111F78  C0 02 AF 50 */	lfs f0, _esc__2_5317@sda21(r2)
 /* 8011517C 00111F7C  FF 00 10 90 */	fmr f24, f2
 /* 80115180 00111F80  C3 E1 01 A0 */	lfs f31, 0x1a0(r1)
 /* 80115184 00111F84  FF 20 18 90 */	fmr f25, f3
@@ -18039,9 +18039,9 @@ emit_glints__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 801151C8 00111FC8  3C 00 43 30 */	lis r0, 0x4330
 /* 801151CC 00111FCC  90 A1 00 1C */	stw r5, 0x1c(r1)
 /* 801151D0 00111FD0  1F BC 00 0C */	mulli r29, r28, 0xc
-/* 801151D4 00111FD4  C8 42 AC 90 */	lfd f2, _esc__2_1488-_SDA2_BASE_(r2)
+/* 801151D4 00111FD4  C8 42 AC 90 */	lfd f2, _esc__2_1488@sda21(r2)
 /* 801151D8 00111FD8  90 01 00 18 */	stw r0, 0x18(r1)
-/* 801151DC 00111FDC  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801151DC 00111FDC  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801151E0 00111FE0  C8 01 00 18 */	lfd f0, 0x18(r1)
 /* 801151E4 00111FE4  90 A1 00 14 */	stw r5, 0x14(r1)
 /* 801151E8 00111FE8  EC 00 10 28 */	fsubs f0, f0, f2
@@ -18065,23 +18065,23 @@ emit_glints__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 80115230 00112030  57 83 10 3A */	slwi r3, r28, 2
 /* 80115234 00112034  7C 1A 03 78 */	mr r26, r0
 /* 80115238 00112038  4B EF 26 A9 */	bl xMemPushTemp__FUi
-/* 8011523C 0011203C  C0 02 AC 70 */	lfs f0, _esc__2_1429_1-_SDA2_BASE_(r2)
+/* 8011523C 0011203C  C0 02 AC 70 */	lfs f0, _esc__2_1429_1@sda21(r2)
 /* 80115240 00112040  7C 79 1B 78 */	mr r25, r3
-/* 80115244 00112044  CA 82 AC 78 */	lfd f20, _esc__2_1431-_SDA2_BASE_(r2)
+/* 80115244 00112044  CA 82 AC 78 */	lfd f20, _esc__2_1431@sda21(r2)
 /* 80115248 00112048  3B 00 00 00 */	li r24, 0
 /* 8011524C 0011204C  D8 01 00 20 */	stfd f0, 0x20(r1)
 /* 80115250 00112050  3B E0 00 00 */	li r31, 0
-/* 80115254 00112054  C0 02 AF 54 */	lfs f0, _esc__2_5318-_SDA2_BASE_(r2)
+/* 80115254 00112054  C0 02 AF 54 */	lfs f0, _esc__2_5318@sda21(r2)
 /* 80115258 00112058  3B C0 00 00 */	li r30, 0
-/* 8011525C 0011205C  C2 A2 A8 B4 */	lfs f21, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011525C 0011205C  C2 A2 A8 B4 */	lfs f21, _esc__2_1223@sda21(r2)
 /* 80115260 00112060  3F A0 43 30 */	lis r29, 0x4330
 /* 80115264 00112064  D8 01 00 28 */	stfd f0, 0x28(r1)
-/* 80115268 00112068  C0 02 AD 3C */	lfs f0, _esc__2_3019-_SDA2_BASE_(r2)
-/* 8011526C 0011206C  C2 C2 A8 B0 */	lfs f22, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80115268 00112068  C0 02 AD 3C */	lfs f0, _esc__2_3019@sda21(r2)
+/* 8011526C 0011206C  C2 C2 A8 B0 */	lfs f22, _esc__2_1222@sda21(r2)
 /* 80115270 00112070  D8 01 00 30 */	stfd f0, 0x30(r1)
-/* 80115274 00112074  C0 02 AF 58 */	lfs f0, _esc__2_5319-_SDA2_BASE_(r2)
+/* 80115274 00112074  C0 02 AF 58 */	lfs f0, _esc__2_5319@sda21(r2)
 /* 80115278 00112078  D8 01 00 38 */	stfd f0, 0x38(r1)
-/* 8011527C 0011207C  C0 02 AD 34 */	lfs f0, _esc__2_3017-_SDA2_BASE_(r2)
+/* 8011527C 0011207C  C0 02 AD 34 */	lfs f0, _esc__2_3017@sda21(r2)
 /* 80115280 00112080  D8 01 00 40 */	stfd f0, 0x40(r1)
 /* 80115284 00112084  48 00 00 F0 */	b lbl_80115374
 lbl_80115288:
@@ -18149,19 +18149,19 @@ lbl_801152CC:
 lbl_80115374:
 /* 80115374 00112174  7C 18 E0 00 */	cmpw r24, r28
 /* 80115378 00112178  41 80 FF 10 */	blt lbl_80115288
-/* 8011537C 0011217C  C0 A2 AD 44 */	lfs f5, _esc__2_3021-_SDA2_BASE_(r2)
+/* 8011537C 0011217C  C0 A2 AD 44 */	lfs f5, _esc__2_3021@sda21(r2)
 /* 80115380 00112180  7F 63 DB 78 */	mr r3, r27
 /* 80115384 00112184  D3 E1 00 08 */	stfs f31, 8(r1)
 /* 80115388 00112188  7F 44 D3 78 */	mr r4, r26
 /* 8011538C 0011218C  FC C0 28 90 */	fmr f6, f5
-/* 80115390 00112190  C0 22 AC C8 */	lfs f1, _esc__2_2275-_SDA2_BASE_(r2)
-/* 80115394 00112194  C0 42 AF 5C */	lfs f2, _esc__2_5320-_SDA2_BASE_(r2)
+/* 80115390 00112190  C0 22 AC C8 */	lfs f1, _esc__2_2275@sda21(r2)
+/* 80115394 00112194  C0 42 AF 5C */	lfs f2, _esc__2_5320@sda21(r2)
 /* 80115398 00112198  7F 25 CB 78 */	mr r5, r25
-/* 8011539C 0011219C  C0 62 AF 60 */	lfs f3, _esc__2_5321-_SDA2_BASE_(r2)
+/* 8011539C 0011219C  C0 62 AF 60 */	lfs f3, _esc__2_5321@sda21(r2)
 /* 801153A0 001121A0  7F 86 E3 78 */	mr r6, r28
-/* 801153A4 001121A4  C0 82 AF 64 */	lfs f4, _esc__2_5322-_SDA2_BASE_(r2)
-/* 801153A8 001121A8  C0 E2 AC 84 */	lfs f7, _esc__2_1439_0-_SDA2_BASE_(r2)
-/* 801153AC 001121AC  C1 02 AC A0 */	lfs f8, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 801153A4 001121A4  C0 82 AF 64 */	lfs f4, _esc__2_5322@sda21(r2)
+/* 801153A8 001121A8  C0 E2 AC 84 */	lfs f7, _esc__2_1439_0@sda21(r2)
+/* 801153AC 001121AC  C1 02 AC A0 */	lfs f8, _esc__2_1660_1@sda21(r2)
 /* 801153B0 001121B0  48 0D F6 31 */	bl zParticleCustomEmitGlint__FPC5xVec3PC5xVec3PCfifffffffff
 /* 801153B4 001121B4  7F 23 CB 78 */	mr r3, r25
 /* 801153B8 001121B8  4B F6 3B 99 */	bl iMemPopTemp__FPv
@@ -18256,7 +18256,7 @@ emit_pebbles__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 8011550C 0011230C  BF 41 00 48 */	stmw r26, 0x48(r1)
 /* 80115510 00112310  C1 21 01 8C */	lfs f9, 0x18c(r1)
 /* 80115514 00112314  FE E0 08 90 */	fmr f23, f1
-/* 80115518 00112318  C0 02 AD 28 */	lfs f0, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80115518 00112318  C0 02 AD 28 */	lfs f0, _esc__2_3014@sda21(r2)
 /* 8011551C 0011231C  FF 00 10 90 */	fmr f24, f2
 /* 80115520 00112320  C3 E1 01 90 */	lfs f31, 0x190(r1)
 /* 80115524 00112324  FF 20 18 90 */	fmr f25, f3
@@ -18279,9 +18279,9 @@ emit_pebbles__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 80115568 00112368  3C 00 43 30 */	lis r0, 0x4330
 /* 8011556C 0011236C  90 A1 00 14 */	stw r5, 0x14(r1)
 /* 80115570 00112370  1F DD 00 0C */	mulli r30, r29, 0xc
-/* 80115574 00112374  C8 42 AC 90 */	lfd f2, _esc__2_1488-_SDA2_BASE_(r2)
+/* 80115574 00112374  C8 42 AC 90 */	lfd f2, _esc__2_1488@sda21(r2)
 /* 80115578 00112378  90 01 00 10 */	stw r0, 0x10(r1)
-/* 8011557C 0011237C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011557C 0011237C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80115580 00112380  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 80115584 00112384  90 A1 00 0C */	stw r5, 0xc(r1)
 /* 80115588 00112388  EC 00 10 28 */	fsubs f0, f0, f2
@@ -18301,22 +18301,22 @@ emit_pebbles__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 801155C0 001123C0  7F C3 F3 78 */	mr r3, r30
 /* 801155C4 001123C4  7C 1C 03 78 */	mr r28, r0
 /* 801155C8 001123C8  4B EF 23 19 */	bl xMemPushTemp__FUi
-/* 801155CC 001123CC  C0 02 AC 70 */	lfs f0, _esc__2_1429_1-_SDA2_BASE_(r2)
+/* 801155CC 001123CC  C0 02 AC 70 */	lfs f0, _esc__2_1429_1@sda21(r2)
 /* 801155D0 001123D0  7C 7B 1B 78 */	mr r27, r3
-/* 801155D4 001123D4  CA 82 AC 78 */	lfd f20, _esc__2_1431-_SDA2_BASE_(r2)
+/* 801155D4 001123D4  CA 82 AC 78 */	lfd f20, _esc__2_1431@sda21(r2)
 /* 801155D8 001123D8  3B 40 00 00 */	li r26, 0
 /* 801155DC 001123DC  D8 01 00 18 */	stfd f0, 0x18(r1)
 /* 801155E0 001123E0  3B E0 00 00 */	li r31, 0
-/* 801155E4 001123E4  C0 02 AC 8C */	lfs f0, _esc__2_1448_0-_SDA2_BASE_(r2)
+/* 801155E4 001123E4  C0 02 AC 8C */	lfs f0, _esc__2_1448_0@sda21(r2)
 /* 801155E8 001123E8  3F C0 43 30 */	lis r30, 0x4330
-/* 801155EC 001123EC  C2 A2 A8 B4 */	lfs f21, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801155EC 001123EC  C2 A2 A8 B4 */	lfs f21, _esc__2_1223@sda21(r2)
 /* 801155F0 001123F0  D8 01 00 20 */	stfd f0, 0x20(r1)
-/* 801155F4 001123F4  C0 02 AD 50 */	lfs f0, _esc__2_3024-_SDA2_BASE_(r2)
-/* 801155F8 001123F8  C2 C2 A8 B0 */	lfs f22, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801155F4 001123F4  C0 02 AD 50 */	lfs f0, _esc__2_3024@sda21(r2)
+/* 801155F8 001123F8  C2 C2 A8 B0 */	lfs f22, _esc__2_1222@sda21(r2)
 /* 801155FC 001123FC  D8 01 00 28 */	stfd f0, 0x28(r1)
-/* 80115600 00112400  C0 02 AF 4C */	lfs f0, _esc__2_5279-_SDA2_BASE_(r2)
+/* 80115600 00112400  C0 02 AF 4C */	lfs f0, _esc__2_5279@sda21(r2)
 /* 80115604 00112404  D8 01 00 30 */	stfd f0, 0x30(r1)
-/* 80115608 00112408  C0 02 AD 80 */	lfs f0, _esc__2_3049-_SDA2_BASE_(r2)
+/* 80115608 00112408  C0 02 AD 80 */	lfs f0, _esc__2_3049@sda21(r2)
 /* 8011560C 0011240C  D8 01 00 38 */	stfd f0, 0x38(r1)
 /* 80115610 00112410  48 00 00 E0 */	b lbl_801156F0
 lbl_80115614:
@@ -18380,13 +18380,13 @@ lbl_80115658:
 lbl_801156F0:
 /* 801156F0 001124F0  7C 1A E8 00 */	cmpw r26, r29
 /* 801156F4 001124F4  41 80 FF 20 */	blt lbl_80115614
-/* 801156F8 001124F8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801156F8 001124F8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801156FC 001124FC  FC 80 F8 90 */	fmr f4, f31
-/* 80115700 00112500  C0 42 AC C8 */	lfs f2, _esc__2_2275-_SDA2_BASE_(r2)
+/* 80115700 00112500  C0 42 AC C8 */	lfs f2, _esc__2_2275@sda21(r2)
 /* 80115704 00112504  7F 83 E3 78 */	mr r3, r28
 /* 80115708 00112508  C0 24 0D B8 */	lfs f1, 0xdb8(r4)
 /* 8011570C 0011250C  7F 64 DB 78 */	mr r4, r27
-/* 80115710 00112510  C0 62 AF 68 */	lfs f3, _esc__2_5359-_SDA2_BASE_(r2)
+/* 80115710 00112510  C0 62 AF 68 */	lfs f3, _esc__2_5359@sda21(r2)
 /* 80115714 00112514  7F A5 EB 78 */	mr r5, r29
 /* 80115718 00112518  48 0D F7 DD */	bl zParticleCustomEmitPebble__FPC5xVec3PC5xVec3iffff
 /* 8011571C 0011251C  7F 63 DB 78 */	mr r3, r27
@@ -18480,7 +18480,7 @@ emit_dust__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 8011586C 0011266C  BF 41 00 28 */	stmw r26, 0x28(r1)
 /* 80115870 00112670  C1 21 01 6C */	lfs f9, 0x16c(r1)
 /* 80115874 00112674  FE 80 08 90 */	fmr f20, f1
-/* 80115878 00112678  C0 02 AD 70 */	lfs f0, _esc__2_3037-_SDA2_BASE_(r2)
+/* 80115878 00112678  C0 02 AD 70 */	lfs f0, _esc__2_3037@sda21(r2)
 /* 8011587C 0011267C  FE A0 10 90 */	fmr f21, f2
 /* 80115880 00112680  C3 81 01 70 */	lfs f28, 0x170(r1)
 /* 80115884 00112684  FE C0 18 90 */	fmr f22, f3
@@ -18503,9 +18503,9 @@ emit_dust__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 801158C8 001126C8  3C 00 43 30 */	lis r0, 0x4330
 /* 801158CC 001126CC  90 A1 00 14 */	stw r5, 0x14(r1)
 /* 801158D0 001126D0  1F DD 00 0C */	mulli r30, r29, 0xc
-/* 801158D4 001126D4  C8 42 AC 90 */	lfd f2, _esc__2_1488-_SDA2_BASE_(r2)
+/* 801158D4 001126D4  C8 42 AC 90 */	lfd f2, _esc__2_1488@sda21(r2)
 /* 801158D8 001126D8  90 01 00 10 */	stw r0, 0x10(r1)
-/* 801158DC 001126DC  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801158DC 001126DC  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 801158E0 001126E0  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 801158E4 001126E4  90 A1 00 0C */	stw r5, 0xc(r1)
 /* 801158E8 001126E8  EC 00 10 28 */	fsubs f0, f0, f2
@@ -18525,19 +18525,19 @@ emit_dust__Q217zNPCBossOmnidroid13clawrang_typeFfffffffRC5xVec3ffff:
 /* 80115920 00112720  7F C3 F3 78 */	mr r3, r30
 /* 80115924 00112724  7C 1C 03 78 */	mr r28, r0
 /* 80115928 00112728  4B EF 1F B9 */	bl xMemPushTemp__FUi
-/* 8011592C 0011272C  C2 02 A8 B0 */	lfs f16, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011592C 0011272C  C2 02 A8 B0 */	lfs f16, _esc__2_1222@sda21(r2)
 /* 80115930 00112730  7C 7B 1B 78 */	mr r27, r3
-/* 80115934 00112734  CA 22 AC 78 */	lfd f17, _esc__2_1431-_SDA2_BASE_(r2)
+/* 80115934 00112734  CA 22 AC 78 */	lfd f17, _esc__2_1431@sda21(r2)
 /* 80115938 00112738  3B 40 00 00 */	li r26, 0
 /* 8011593C 0011273C  EC 0F 04 32 */	fmuls f0, f15, f16
-/* 80115940 00112740  C2 42 AC 70 */	lfs f18, _esc__2_1429_1-_SDA2_BASE_(r2)
+/* 80115940 00112740  C2 42 AC 70 */	lfs f18, _esc__2_1429_1@sda21(r2)
 /* 80115944 00112744  ED F3 04 32 */	fmuls f15, f19, f16
-/* 80115948 00112748  C2 62 A8 B4 */	lfs f19, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80115948 00112748  C2 62 A8 B4 */	lfs f19, _esc__2_1223@sda21(r2)
 /* 8011594C 0011274C  EF FF 04 32 */	fmuls f31, f31, f16
 /* 80115950 00112750  3B E0 00 00 */	li r31, 0
 /* 80115954 00112754  D0 01 00 18 */	stfs f0, 0x18(r1)
 /* 80115958 00112758  3F C0 43 30 */	lis r30, 0x4330
-/* 8011595C 0011275C  C0 02 AD 40 */	lfs f0, _esc__2_3020-_SDA2_BASE_(r2)
+/* 8011595C 0011275C  C0 02 AD 40 */	lfs f0, _esc__2_3020@sda21(r2)
 /* 80115960 00112760  D8 01 00 20 */	stfd f0, 0x20(r1)
 /* 80115964 00112764  48 00 00 B4 */	b lbl_80115A18
 lbl_80115968:
@@ -18590,14 +18590,14 @@ lbl_801159A8:
 lbl_80115A18:
 /* 80115A18 00112818  7C 1A E8 00 */	cmpw r26, r29
 /* 80115A1C 0011281C  41 80 FF 4C */	blt lbl_80115968
-/* 80115A20 00112820  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80115A20 00112820  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 /* 80115A24 00112824  FC E0 E0 90 */	fmr f7, f28
-/* 80115A28 00112828  C0 62 AF 6C */	lfs f3, _esc__2_5400-_SDA2_BASE_(r2)
+/* 80115A28 00112828  C0 62 AF 6C */	lfs f3, _esc__2_5400@sda21(r2)
 /* 80115A2C 0011282C  7F 83 E3 78 */	mr r3, r28
 /* 80115A30 00112830  FC C0 08 90 */	fmr f6, f1
-/* 80115A34 00112834  C0 42 AC AC */	lfs f2, _esc__2_2015_1-_SDA2_BASE_(r2)
+/* 80115A34 00112834  C0 42 AC AC */	lfs f2, _esc__2_2015_1@sda21(r2)
 /* 80115A38 00112838  FC A0 18 90 */	fmr f5, f3
-/* 80115A3C 0011283C  C0 82 AD 48 */	lfs f4, _esc__2_3022-_SDA2_BASE_(r2)
+/* 80115A3C 0011283C  C0 82 AD 48 */	lfs f4, _esc__2_3022@sda21(r2)
 /* 80115A40 00112840  7F 64 DB 78 */	mr r4, r27
 /* 80115A44 00112844  7F A5 EB 78 */	mr r5, r29
 /* 80115A48 00112848  48 0D FA 11 */	bl zParticleCustomEmitDust__FPC5xVec3PC5xVec3ifffffff
@@ -18650,7 +18650,7 @@ lbl_80115A5C:
 
 .global reset__Q217zNPCBossOmnidroid15idle_state_typeFv
 reset__Q217zNPCBossOmnidroid15idle_state_typeFv:
-/* 80115B00 00112900  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80115B00 00112900  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80115B04 00112904  D0 03 00 08 */	stfs f0, 8(r3)
 /* 80115B08 00112908  4E 80 00 20 */	blr 
 
@@ -18658,11 +18658,11 @@ reset__Q217zNPCBossOmnidroid15idle_state_typeFv:
 enter__Q217zNPCBossOmnidroid15idle_state_typeFv:
 /* 80115B0C 0011290C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80115B10 00112910  7C 08 02 A6 */	mflr r0
-/* 80115B14 00112914  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 80115B14 00112914  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 80115B18 00112918  38 80 00 00 */	li r4, 0
 /* 80115B1C 0011291C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80115B20 00112920  38 A0 00 00 */	li r5, 0
-/* 80115B24 00112924  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115B24 00112924  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115B28 00112928  4B FF 36 FD */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 80115B2C 0011292C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80115B30 00112930  7C 08 03 A6 */	mtlr r0
@@ -18673,7 +18673,7 @@ enter__Q217zNPCBossOmnidroid15idle_state_typeFv:
 update__Q217zNPCBossOmnidroid15idle_state_typeFf:
 /* 80115B3C 0011293C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80115B40 00112940  7C 08 02 A6 */	mflr r0
-/* 80115B44 00112944  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80115B44 00112944  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80115B48 00112948  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80115B4C 0011294C  C0 43 00 08 */	lfs f2, 8(r3)
 /* 80115B50 00112950  EC 22 08 28 */	fsubs f1, f2, f1
@@ -18682,10 +18682,10 @@ update__Q217zNPCBossOmnidroid15idle_state_typeFf:
 /* 80115B5C 0011295C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80115B60 00112960  4C 40 13 82 */	cror 2, 0, 2
 /* 80115B64 00112964  40 82 00 1C */	bne lbl_80115B80
-/* 80115B68 00112968  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115B68 00112968  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115B6C 0011296C  4B FF 94 45 */	bl next_state__17zNPCBossOmnidroidFv
 /* 80115B70 00112970  7C 64 1B 78 */	mr r4, r3
-/* 80115B74 00112974  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115B74 00112974  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115B78 00112978  38 A0 00 00 */	li r5, 0
 /* 80115B7C 0011297C  4B FF 45 69 */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 lbl_80115B80:
@@ -18722,9 +18722,9 @@ enter__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 80115BE0 001129E0  38 00 00 00 */	li r0, 0
 /* 80115BE4 001129E4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80115BE8 001129E8  7C 7F 1B 78 */	mr r31, r3
-/* 80115BEC 001129EC  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115BEC 001129EC  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115BF0 001129F0  98 A4 01 F4 */	stb r5, 0x1f4(r4)
-/* 80115BF4 001129F4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115BF4 001129F4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115BF8 001129F8  98 04 01 F2 */	stb r0, 0x1f2(r4)
 /* 80115BFC 001129FC  98 03 00 09 */	stb r0, 9(r3)
 /* 80115C00 00112A00  88 03 00 08 */	lbz r0, 8(r3)
@@ -18733,17 +18733,17 @@ enter__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 80115C0C 00112A0C  48 00 04 25 */	bl set_target_perimeter__Q217zNPCBossOmnidroid15jump_state_typeFv
 lbl_80115C10:
 /* 80115C10 00112A10  38 00 00 00 */	li r0, 0
-/* 80115C14 00112A14  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80115C14 00112A14  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80115C18 00112A18  98 1F 00 08 */	stb r0, 8(r31)
 /* 80115C1C 00112A1C  38 9F 00 10 */	addi r4, r31, 0x10
-/* 80115C20 00112A20  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115C20 00112A20  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115C24 00112A24  4B FF 5C F5 */	bl get_nearest_facing__17zNPCBossOmnidroidCFRC5xVec3f
 /* 80115C28 00112A28  7C 60 1B 78 */	mr r0, r3
-/* 80115C2C 00112A2C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80115C30 00112A30  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 80115C2C 00112A2C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80115C30 00112A30  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 80115C34 00112A34  7C 04 03 78 */	mr r4, r0
 /* 80115C38 00112A38  4B FF 5A E9 */	bl set_facing__17zNPCBossOmnidroidFif
-/* 80115C3C 00112A3C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115C3C 00112A3C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115C40 00112A40  4B FF 92 C1 */	bl gimme_throw_delay__17zNPCBossOmnidroidCFv
 /* 80115C44 00112A44  D0 3F 00 2C */	stfs f1, 0x2c(r31)
 /* 80115C48 00112A48  38 00 00 00 */	li r0, 0
@@ -18763,19 +18763,19 @@ exit__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 80115C74 00112A74  38 00 00 01 */	li r0, 1
 /* 80115C78 00112A78  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80115C7C 00112A7C  7C 7F 1B 78 */	mr r31, r3
-/* 80115C80 00112A80  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115C80 00112A80  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115C84 00112A84  98 A4 01 F4 */	stb r5, 0x1f4(r4)
-/* 80115C88 00112A88  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115C88 00112A88  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115C8C 00112A8C  98 A4 01 F3 */	stb r5, 0x1f3(r4)
-/* 80115C90 00112A90  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115C90 00112A90  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115C94 00112A94  98 04 01 F2 */	stb r0, 0x1f2(r4)
 /* 80115C98 00112A98  48 00 0D 65 */	bl leg_damage_disable__Q217zNPCBossOmnidroid15jump_state_typeFv
-/* 80115C9C 00112A9C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115C9C 00112A9C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115CA0 00112AA0  4B FF 56 6D */	bl body_damage_disable__17zNPCBossOmnidroidFv
 /* 80115CA4 00112AA4  80 1F 00 30 */	lwz r0, 0x30(r31)
 /* 80115CA8 00112AA8  2C 00 FF FF */	cmpwi r0, -1
 /* 80115CAC 00112AAC  41 82 00 10 */	beq lbl_80115CBC
-/* 80115CB0 00112AB0  C0 22 AD A4 */	lfs f1, _esc__2_3187-_SDA2_BASE_(r2)
+/* 80115CB0 00112AB0  C0 22 AD A4 */	lfs f1, _esc__2_3187@sda21(r2)
 /* 80115CB4 00112AB4  38 7F 00 30 */	addi r3, r31, 0x30
 /* 80115CB8 00112AB8  4B F5 1A ED */	bl xSndMgrFadeOff__FR10iSndHandlef
 lbl_80115CBC:
@@ -18816,22 +18816,22 @@ lbl_80115D2C:
 /* 80115D34 00112B34  48 00 01 34 */	b lbl_80115E68
 lbl_80115D38:
 /* 80115D38 00112B38  C0 3F 00 2C */	lfs f1, 0x2c(r31)
-/* 80115D3C 00112B3C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80115D3C 00112B3C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80115D40 00112B40  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80115D44 00112B44  41 81 02 1C */	bgt lbl_80115F60
 /* 80115D48 00112B48  38 00 00 01 */	li r0, 1
-/* 80115D4C 00112B4C  C0 02 AF 70 */	lfs f0, _esc__2_5479-_SDA2_BASE_(r2)
+/* 80115D4C 00112B4C  C0 02 AF 70 */	lfs f0, _esc__2_5479@sda21(r2)
 /* 80115D50 00112B50  90 1F 00 0C */	stw r0, 0xc(r31)
 /* 80115D54 00112B54  EF FF 08 2A */	fadds f31, f31, f1
-/* 80115D58 00112B58  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 80115D58 00112B58  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 80115D5C 00112B5C  38 80 00 1B */	li r4, 0x1b
 /* 80115D60 00112B60  D0 1F 00 2C */	stfs f0, 0x2c(r31)
 /* 80115D64 00112B64  38 A0 00 00 */	li r5, 0
-/* 80115D68 00112B68  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115D68 00112B68  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115D6C 00112B6C  4B FF 34 B9 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 lbl_80115D70:
 /* 80115D70 00112B70  C0 3F 00 2C */	lfs f1, 0x2c(r31)
-/* 80115D74 00112B74  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80115D74 00112B74  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80115D78 00112B78  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80115D7C 00112B7C  41 81 01 E4 */	bgt lbl_80115F60
 /* 80115D80 00112B80  C0 1F 00 28 */	lfs f0, 0x28(r31)
@@ -18842,12 +18842,12 @@ lbl_80115D70:
 /* 80115D94 00112B94  38 00 00 01 */	li r0, 1
 /* 80115D98 00112B98  38 63 49 10 */	addi r3, r3, 0x3EBA4910@l
 /* 80115D9C 00112B9C  90 9F 00 0C */	stw r4, 0xc(r31)
-/* 80115DA0 00112BA0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115DA0 00112BA0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115DA4 00112BA4  98 04 01 F3 */	stb r0, 0x1f3(r4)
 /* 80115DA8 00112BA8  4B F5 0C 61 */	bl xSndMgrGetSoundGroup__FUi
-/* 80115DAC 00112BAC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115DAC 00112BAC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115DB0 00112BB0  38 80 08 00 */	li r4, 0x800
-/* 80115DB4 00112BB4  C0 22 AD A4 */	lfs f1, _esc__2_3187-_SDA2_BASE_(r2)
+/* 80115DB4 00112BB4  C0 22 AD A4 */	lfs f1, _esc__2_3187@sda21(r2)
 /* 80115DB8 00112BB8  38 C0 00 00 */	li r6, 0
 /* 80115DBC 00112BBC  38 A5 00 8C */	addi r5, r5, 0x8c
 /* 80115DC0 00112BC0  38 E0 00 00 */	li r7, 0
@@ -18861,7 +18861,7 @@ lbl_80115DD4:
 /* 80115DDC 00112BDC  40 82 00 28 */	bne lbl_80115E04
 /* 80115DE0 00112BE0  C0 5F 00 28 */	lfs f2, 0x28(r31)
 /* 80115DE4 00112BE4  C0 3F 00 2C */	lfs f1, 0x2c(r31)
-/* 80115DE8 00112BE8  C0 02 AD A4 */	lfs f0, _esc__2_3187-_SDA2_BASE_(r2)
+/* 80115DE8 00112BE8  C0 02 AD A4 */	lfs f0, _esc__2_3187@sda21(r2)
 /* 80115DEC 00112BEC  EC 22 08 28 */	fsubs f1, f2, f1
 /* 80115DF0 00112BF0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80115DF4 00112BF4  4C 41 13 82 */	cror 2, 1, 2
@@ -18870,7 +18870,7 @@ lbl_80115DD4:
 /* 80115E00 00112C00  48 00 0C 45 */	bl leg_damage_enable__Q217zNPCBossOmnidroid15jump_state_typeFv
 lbl_80115E04:
 /* 80115E04 00112C04  C0 3F 00 2C */	lfs f1, 0x2c(r31)
-/* 80115E08 00112C08  C0 02 AF 74 */	lfs f0, _esc__2_5480-_SDA2_BASE_(r2)
+/* 80115E08 00112C08  C0 02 AF 74 */	lfs f0, _esc__2_5480@sda21(r2)
 /* 80115E0C 00112C0C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80115E10 00112C10  40 81 00 14 */	ble lbl_80115E24
 /* 80115E14 00112C14  FC 20 F8 90 */	fmr f1, f31
@@ -18879,27 +18879,27 @@ lbl_80115E04:
 /* 80115E20 00112C20  48 00 01 40 */	b lbl_80115F60
 lbl_80115E24:
 /* 80115E24 00112C24  38 00 00 03 */	li r0, 3
-/* 80115E28 00112C28  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 80115E28 00112C28  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 80115E2C 00112C2C  90 1F 00 0C */	stw r0, 0xc(r31)
 /* 80115E30 00112C30  38 80 00 1D */	li r4, 0x1d
 /* 80115E34 00112C34  38 A0 00 00 */	li r5, 0
-/* 80115E38 00112C38  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115E38 00112C38  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115E3C 00112C3C  4B FF 33 E9 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
-/* 80115E40 00112C40  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115E40 00112C40  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115E44 00112C44  38 80 00 06 */	li r4, 6
-/* 80115E48 00112C48  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80115E48 00112C48  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80115E4C 00112C4C  4B FF 54 AD */	bl body_damage_enable__17zNPCBossOmnidroidFif
 /* 80115E50 00112C50  80 1F 00 30 */	lwz r0, 0x30(r31)
 /* 80115E54 00112C54  2C 00 FF FF */	cmpwi r0, -1
 /* 80115E58 00112C58  41 82 00 10 */	beq lbl_80115E68
-/* 80115E5C 00112C5C  C0 22 AD A4 */	lfs f1, _esc__2_3187-_SDA2_BASE_(r2)
+/* 80115E5C 00112C5C  C0 22 AD A4 */	lfs f1, _esc__2_3187@sda21(r2)
 /* 80115E60 00112C60  38 7F 00 30 */	addi r3, r31, 0x30
 /* 80115E64 00112C64  4B F5 19 41 */	bl xSndMgrFadeOff__FR10iSndHandlef
 lbl_80115E68:
-/* 80115E68 00112C68  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115E68 00112C68  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115E6C 00112C6C  4B FF 7F B9 */	bl anim_time_current__17zNPCBossOmnidroidCFv
 /* 80115E70 00112C70  FF C0 08 90 */	fmr f30, f1
-/* 80115E74 00112C74  C0 02 AC 9C */	lfs f0, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 80115E74 00112C74  C0 02 AC 9C */	lfs f0, _esc__2_1659_1@sda21(r2)
 /* 80115E78 00112C78  FC 1E 00 40 */	fcmpo cr0, f30, f0
 /* 80115E7C 00112C7C  EF BE F8 2A */	fadds f29, f30, f31
 /* 80115E80 00112C80  4C 40 13 82 */	cror 2, 0, 2
@@ -18909,33 +18909,33 @@ lbl_80115E68:
 /* 80115E90 00112C90  7F E3 FB 78 */	mr r3, r31
 /* 80115E94 00112C94  48 00 0B 69 */	bl leg_damage_disable__Q217zNPCBossOmnidroid15jump_state_typeFv
 lbl_80115E98:
-/* 80115E98 00112C98  C0 02 AD A4 */	lfs f0, _esc__2_3187-_SDA2_BASE_(r2)
+/* 80115E98 00112C98  C0 02 AD A4 */	lfs f0, _esc__2_3187@sda21(r2)
 /* 80115E9C 00112C9C  FC 1E 00 40 */	fcmpo cr0, f30, f0
 /* 80115EA0 00112CA0  4C 40 13 82 */	cror 2, 0, 2
 /* 80115EA4 00112CA4  40 82 00 14 */	bne lbl_80115EB8
 /* 80115EA8 00112CA8  FC 1D 00 40 */	fcmpo cr0, f29, f0
 /* 80115EAC 00112CAC  40 81 00 0C */	ble lbl_80115EB8
-/* 80115EB0 00112CB0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115EB0 00112CB0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115EB4 00112CB4  4B FF 54 59 */	bl body_damage_disable__17zNPCBossOmnidroidFv
 lbl_80115EB8:
-/* 80115EB8 00112CB8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80115EB8 00112CB8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80115EBC 00112CBC  FC 1E 00 40 */	fcmpo cr0, f30, f0
 /* 80115EC0 00112CC0  4C 40 13 82 */	cror 2, 0, 2
 /* 80115EC4 00112CC4  40 82 00 30 */	bne lbl_80115EF4
 /* 80115EC8 00112CC8  FC 1D 00 40 */	fcmpo cr0, f29, f0
 /* 80115ECC 00112CCC  40 81 00 28 */	ble lbl_80115EF4
-/* 80115ED0 00112CD0  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80115ED0 00112CD0  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80115ED4 00112CD4  38 7F 00 10 */	addi r3, r31, 0x10
-/* 80115ED8 00112CD8  C0 42 AC 80 */	lfs f2, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80115ED8 00112CD8  C0 42 AC 80 */	lfs f2, _esc__2_1438_0@sda21(r2)
 /* 80115EDC 00112CDC  38 80 00 00 */	li r4, 0
-/* 80115EE0 00112CE0  C0 62 AD 8C */	lfs f3, _esc__2_3052-_SDA2_BASE_(r2)
+/* 80115EE0 00112CE0  C0 62 AD 8C */	lfs f3, _esc__2_3052@sda21(r2)
 /* 80115EE4 00112CE4  38 A0 00 01 */	li r5, 1
-/* 80115EE8 00112CE8  C0 82 AD 50 */	lfs f4, _esc__2_3024-_SDA2_BASE_(r2)
-/* 80115EEC 00112CEC  C0 A2 AD 3C */	lfs f5, _esc__2_3019-_SDA2_BASE_(r2)
+/* 80115EE8 00112CE8  C0 82 AD 50 */	lfs f4, _esc__2_3024@sda21(r2)
+/* 80115EEC 00112CEC  C0 A2 AD 3C */	lfs f5, _esc__2_3019@sda21(r2)
 /* 80115EF0 00112CF0  4B F4 80 39 */	bl xCameraFXShake__FfffffPC5xVec3PC5xVec3b
 lbl_80115EF4:
 /* 80115EF4 00112CF4  C0 3F 00 2C */	lfs f1, 0x2c(r31)
-/* 80115EF8 00112CF8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80115EF8 00112CF8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80115EFC 00112CFC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80115F00 00112D00  40 81 00 14 */	ble lbl_80115F14
 /* 80115F04 00112D04  FC 20 F8 90 */	fmr f1, f31
@@ -18943,23 +18943,23 @@ lbl_80115EF4:
 /* 80115F0C 00112D0C  48 00 0A 95 */	bl apply_motion__Q217zNPCBossOmnidroid15jump_state_typeFf
 /* 80115F10 00112D10  48 00 00 50 */	b lbl_80115F60
 lbl_80115F14:
-/* 80115F14 00112D14  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115F14 00112D14  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115F18 00112D18  38 9F 00 10 */	addi r4, r31, 0x10
 /* 80115F1C 00112D1C  38 63 02 30 */	addi r3, r3, 0x230
 /* 80115F20 00112D20  4B EF 51 89 */	bl __as__5xVec3FRC5xVec3
-/* 80115F24 00112D24  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115F24 00112D24  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115F28 00112D28  48 00 00 65 */	bl anim_get_state_id__17zNPCBossOmnidroidCFv
 /* 80115F2C 00112D2C  2C 03 00 1D */	cmpwi r3, 0x1d
 /* 80115F30 00112D30  40 82 00 30 */	bne lbl_80115F60
-/* 80115F34 00112D34  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115F34 00112D34  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115F38 00112D38  4B FF 7E A1 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 80115F3C 00112D3C  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 80115F40 00112D40  4C 40 13 82 */	cror 2, 0, 2
 /* 80115F44 00112D44  40 82 00 1C */	bne lbl_80115F60
-/* 80115F48 00112D48  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115F48 00112D48  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115F4C 00112D4C  4B FF 90 65 */	bl next_state__17zNPCBossOmnidroidFv
 /* 80115F50 00112D50  7C 64 1B 78 */	mr r4, r3
-/* 80115F54 00112D54  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80115F54 00112D54  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80115F58 00112D58  38 A0 00 01 */	li r5, 1
 /* 80115F5C 00112D5C  4B FF 41 89 */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 lbl_80115F60:
@@ -19001,9 +19001,9 @@ set_target__Q217zNPCBossOmnidroid15jump_state_typeFRC5xVec3b:
 /* 80115FD4 00112DD4  4B EF 50 D5 */	bl __as__5xVec3FRC5xVec3
 /* 80115FD8 00112DD8  57 E0 06 3F */	clrlwi. r0, r31, 0x18
 /* 80115FDC 00112DDC  41 82 00 2C */	beq lbl_80116008
-/* 80115FE0 00112DE0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80115FE4 00112DE4  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80115FE8 00112DE8  C0 22 AE A4 */	lfs f1, _esc__2_4412-_SDA2_BASE_(r2)
+/* 80115FE0 00112DE0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80115FE4 00112DE4  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80115FE8 00112DE8  C0 22 AE A4 */	lfs f1, _esc__2_4412@sda21(r2)
 /* 80115FEC 00112DEC  38 9E 00 10 */	addi r4, r30, 0x10
 /* 80115FF0 00112DF0  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 80115FF4 00112DF4  54 00 10 3A */	slwi r0, r0, 2
@@ -19033,7 +19033,7 @@ set_target_perimeter__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 80116044 00112E44  DB C1 00 30 */	stfd f30, 0x30(r1)
 /* 80116048 00112E48  F3 C1 00 38 */	psq_st f30, 56(r1), 0, qr0
 /* 8011604C 00112E4C  BF C1 00 28 */	stmw r30, 0x28(r1)
-/* 80116050 00112E50  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116050 00112E50  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116054 00112E54  7C 7E 1B 78 */	mr r30, r3
 /* 80116058 00112E58  C0 7F 02 30 */	lfs f3, 0x230(r31)
 /* 8011605C 00112E5C  C0 3F 0D B4 */	lfs f1, 0xdb4(r31)
@@ -19045,20 +19045,20 @@ set_target_perimeter__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 80116074 00112E74  FF E0 08 90 */	fmr f31, f1
 /* 80116078 00112E78  4B EF 12 ED */	bl xrand_RandomInt32__Fv
 /* 8011607C 00112E7C  3C 00 43 30 */	lis r0, 0x4330
-/* 80116080 00112E80  C0 02 AF 78 */	lfs f0, _esc__2_5497-_SDA2_BASE_(r2)
+/* 80116080 00112E80  C0 02 AF 78 */	lfs f0, _esc__2_5497@sda21(r2)
 /* 80116084 00112E84  90 61 00 1C */	stw r3, 0x1c(r1)
-/* 80116088 00112E88  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116088 00112E88  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011608C 00112E8C  EC 00 F8 2A */	fadds f0, f0, f31
 /* 80116090 00112E90  90 01 00 18 */	stw r0, 0x18(r1)
-/* 80116094 00112E94  C8 62 AC 78 */	lfd f3, _esc__2_1431-_SDA2_BASE_(r2)
+/* 80116094 00112E94  C8 62 AC 78 */	lfd f3, _esc__2_1431@sda21(r2)
 /* 80116098 00112E98  C8 41 00 18 */	lfd f2, 0x18(r1)
-/* 8011609C 00112E9C  C0 22 AF 7C */	lfs f1, _esc__2_5498-_SDA2_BASE_(r2)
+/* 8011609C 00112E9C  C0 22 AF 7C */	lfs f1, _esc__2_5498@sda21(r2)
 /* 801160A0 00112EA0  EC 42 18 28 */	fsubs f2, f2, f3
 /* 801160A4 00112EA4  C3 C3 0D C0 */	lfs f30, 0xdc0(r3)
-/* 801160A8 00112EA8  80 82 F0 D4 */	lwz r4, _esc__2_5493-_SDA2_BASE_(r2)
-/* 801160AC 00112EAC  80 62 F0 D8 */	lwz r3, lbl_803D8DF8-_SDA2_BASE_(r2)
+/* 801160A8 00112EA8  80 82 F0 D4 */	lwz r4, _esc__2_5493@sda21(r2)
+/* 801160AC 00112EAC  80 62 F0 D8 */	lwz r3, lbl_803D8DF8@sda21(r2)
 /* 801160B0 00112EB0  EF E1 00 BA */	fmadds f31, f1, f2, f0
-/* 801160B4 00112EB4  80 02 F0 DC */	lwz r0, lbl_803D8DFC-_SDA2_BASE_(r2)
+/* 801160B4 00112EB4  80 02 F0 DC */	lwz r0, lbl_803D8DFC@sda21(r2)
 /* 801160B8 00112EB8  90 81 00 08 */	stw r4, 8(r1)
 /* 801160BC 00112EBC  FC 20 F8 90 */	fmr f1, f31
 /* 801160C0 00112EC0  90 61 00 0C */	stw r3, 0xc(r1)
@@ -19095,7 +19095,7 @@ set_target_perch__Q217zNPCBossOmnidroid15jump_state_typeFi:
 /* 80116130 00112F30  1C 84 00 50 */	mulli r4, r4, 0x50
 /* 80116134 00112F34  38 A0 00 00 */	li r5, 0
 /* 80116138 00112F38  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011613C 00112F3C  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011613C 00112F3C  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116140 00112F40  38 84 00 30 */	addi r4, r4, 0x30
 /* 80116144 00112F44  80 06 03 58 */	lwz r0, 0x358(r6)
 /* 80116148 00112F48  7C 80 22 14 */	add r4, r0, r4
@@ -19119,12 +19119,12 @@ set_target_near__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 80116184 00112F84  DB 81 00 30 */	stfd f28, 0x30(r1)
 /* 80116188 00112F88  F3 81 00 38 */	psq_st f28, 56(r1), 0, qr0
 /* 8011618C 00112F8C  BF C1 00 28 */	stmw r30, 0x28(r1)
-/* 80116190 00112F90  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80116194 00112F94  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80116198 00112F98  C0 22 AD 50 */	lfs f1, _esc__2_3024-_SDA2_BASE_(r2)
+/* 80116190 00112F90  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80116194 00112F94  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80116198 00112F98  C0 22 AD 50 */	lfs f1, _esc__2_3024@sda21(r2)
 /* 8011619C 00112F9C  7C 7E 1B 78 */	mr r30, r3
 /* 801161A0 00112FA0  80 1F 03 4C */	lwz r0, 0x34c(r31)
-/* 801161A4 00112FA4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801161A4 00112FA4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801161A8 00112FA8  54 00 10 3A */	slwi r0, r0, 2
 /* 801161AC 00112FAC  7C 04 04 2E */	lfsx f0, r4, r0
 /* 801161B0 00112FB0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
@@ -19140,13 +19140,13 @@ set_target_near__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 801161D8 00112FD8  EC 3D 07 7A */	fmadds f1, f29, f29, f0
 /* 801161DC 00112FDC  4B EF 52 9D */	bl xsqrt__Ff
 /* 801161E0 00112FE0  FF C0 08 90 */	fmr f30, f1
-/* 801161E4 00112FE4  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
-/* 801161E8 00112FE8  80 A2 F0 E0 */	lwz r5, _esc__2_5507-_SDA2_BASE_(r2)
+/* 801161E4 00112FE4  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
+/* 801161E8 00112FE8  80 A2 F0 E0 */	lwz r5, _esc__2_5507@sda21(r2)
 /* 801161EC 00112FEC  7F C3 F3 78 */	mr r3, r30
-/* 801161F0 00112FF0  80 C2 F0 E4 */	lwz r6, lbl_803D8E04-_SDA2_BASE_(r2)
+/* 801161F0 00112FF0  80 C2 F0 E4 */	lwz r6, lbl_803D8E04@sda21(r2)
 /* 801161F4 00112FF4  38 81 00 08 */	addi r4, r1, 8
 /* 801161F8 00112FF8  EC 20 F0 24 */	fdivs f1, f0, f30
-/* 801161FC 00112FFC  80 02 F0 E8 */	lwz r0, lbl_803D8E08-_SDA2_BASE_(r2)
+/* 801161FC 00112FFC  80 02 F0 E8 */	lwz r0, lbl_803D8E08@sda21(r2)
 /* 80116200 00113000  90 A1 00 14 */	stw r5, 0x14(r1)
 /* 80116204 00113004  38 A1 00 14 */	addi r5, r1, 0x14
 /* 80116208 00113008  90 C1 00 18 */	stw r6, 0x18(r1)
@@ -19167,7 +19167,7 @@ set_target_near__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 80116244 00113044  C0 21 00 08 */	lfs f1, 8(r1)
 /* 80116248 00113048  38 61 00 14 */	addi r3, r1, 0x14
 /* 8011624C 0011304C  EC 00 07 32 */	fmuls f0, f0, f28
-/* 80116250 00113050  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80116250 00113050  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 80116254 00113054  38 80 00 01 */	li r4, 1
 /* 80116258 00113058  EC 01 07 7A */	fmadds f0, f1, f29, f0
 /* 8011625C 0011305C  EC 23 00 24 */	fdivs f1, f3, f0
@@ -19230,15 +19230,15 @@ set_target_away__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 80116334 00113134  DA 61 00 30 */	stfd f19, 0x30(r1)
 /* 80116338 00113138  F2 61 00 38 */	psq_st f19, 56(r1), 0, qr0
 /* 8011633C 0011313C  BF C1 00 28 */	stmw r30, 0x28(r1)
-/* 80116340 00113140  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80116344 00113144  38 C2 A8 B8 */	addi r6, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80116348 00113148  38 A2 AA DC */	addi r5, r2, min_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4jump-_SDA2_BASE_
-/* 8011634C 0011314C  38 82 AA E4 */	addi r4, r2, away_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4jump-_SDA2_BASE_
+/* 80116340 00113140  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80116344 00113144  38 C2 A8 B8 */	addi r6, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80116348 00113148  38 A2 AA DC */	addi r5, r2, min_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4jump@sda21
+/* 8011634C 0011314C  38 82 AA E4 */	addi r4, r2, away_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4jump@sda21
 /* 80116350 00113150  80 1F 03 4C */	lwz r0, 0x34c(r31)
 /* 80116354 00113154  7C 7E 1B 78 */	mr r30, r3
-/* 80116358 00113158  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80116358 00113158  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8011635C 0011315C  54 00 10 3A */	slwi r0, r0, 2
-/* 80116360 00113160  C0 22 AF 80 */	lfs f1, _esc__2_5539-_SDA2_BASE_(r2)
+/* 80116360 00113160  C0 22 AF 80 */	lfs f1, _esc__2_5539@sda21(r2)
 /* 80116364 00113164  7C 06 04 2E */	lfsx f0, r6, r0
 /* 80116368 00113168  7F C5 04 2E */	lfsx f30, r5, r0
 /* 8011636C 0011316C  7F A4 04 2E */	lfsx f29, r4, r0
@@ -19264,11 +19264,11 @@ set_target_away__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 801163BC 001131BC  4B EF 0F A9 */	bl xrand_RandomInt32__Fv
 /* 801163C0 001131C0  3C 00 43 30 */	lis r0, 0x4330
 /* 801163C4 001131C4  90 61 00 1C */	stw r3, 0x1c(r1)
-/* 801163C8 001131C8  C8 62 AC 78 */	lfd f3, _esc__2_1431-_SDA2_BASE_(r2)
+/* 801163C8 001131C8  C8 62 AC 78 */	lfd f3, _esc__2_1431@sda21(r2)
 /* 801163CC 001131CC  90 01 00 18 */	stw r0, 0x18(r1)
-/* 801163D0 001131D0  C0 22 AF 84 */	lfs f1, _esc__2_5540-_SDA2_BASE_(r2)
+/* 801163D0 001131D0  C0 22 AF 84 */	lfs f1, _esc__2_5540@sda21(r2)
 /* 801163D4 001131D4  C8 41 00 18 */	lfd f2, 0x18(r1)
-/* 801163D8 001131D8  C0 02 AF 88 */	lfs f0, _esc__2_5541-_SDA2_BASE_(r2)
+/* 801163D8 001131D8  C0 02 AF 88 */	lfs f0, _esc__2_5541@sda21(r2)
 /* 801163DC 001131DC  EC 42 18 28 */	fsubs f2, f2, f3
 /* 801163E0 001131E0  EC 01 00 B8 */	fmsubs f0, f1, f2, f0
 /* 801163E4 001131E4  EE 94 00 2A */	fadds f20, f20, f0
@@ -19279,7 +19279,7 @@ set_target_away__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 801163F8 001131F8  FE C0 00 90 */	fmr f22, f0
 /* 801163FC 001131FC  4B F6 04 31 */	bl icos__Ff
 /* 80116400 00113200  FC 00 08 90 */	fmr f0, f1
-/* 80116404 00113204  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116404 00113204  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116408 00113208  FC 20 D0 90 */	fmr f1, f26
 /* 8011640C 0011320C  38 81 00 10 */	addi r4, r1, 0x10
 /* 80116410 00113210  FC 40 C8 90 */	fmr f2, f25
@@ -19326,7 +19326,7 @@ lbl_8011645C:
 /* 801164B0 001132B0  EC 36 05 BA */	fmadds f1, f22, f22, f0
 /* 801164B4 001132B4  4B EF 4F C5 */	bl xsqrt__Ff
 /* 801164B8 001132B8  FE 80 08 90 */	fmr f20, f1
-/* 801164BC 001132BC  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801164BC 001132BC  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801164C0 001132C0  EC 00 A0 24 */	fdivs f0, f0, f20
 /* 801164C4 001132C4  EE D6 00 32 */	fmuls f22, f22, f0
 /* 801164C8 001132C8  EE B5 00 32 */	fmuls f21, f21, f0
@@ -19357,7 +19357,7 @@ lbl_80116518:
 lbl_8011651C:
 /* 8011651C 0011331C  4B EF 0E 09 */	bl xurand__Fv
 /* 80116520 00113320  EC 14 B8 28 */	fsubs f0, f20, f23
-/* 80116524 00113324  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116524 00113324  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116528 00113328  FC 60 F8 90 */	fmr f3, f31
 /* 8011652C 0011332C  EC 00 B8 7A */	fmadds f0, f0, f1, f23
 /* 80116530 00113330  EE 60 D5 BA */	fmadds f19, f0, f22, f26
@@ -19430,35 +19430,35 @@ compute_jump_velocity__Q217zNPCBossOmnidroid15jump_state_typeCFR5xVec3RC5xVec3:
 /* 8011662C 0011342C  DB 81 00 20 */	stfd f28, 0x20(r1)
 /* 80116630 00113430  F3 81 00 28 */	psq_st f28, 40(r1), 0, qr0
 /* 80116634 00113434  BF A1 00 14 */	stmw r29, 0x14(r1)
-/* 80116638 00113438  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116638 00113438  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011663C 0011343C  7C BE 2B 78 */	mr r30, r5
 /* 80116640 00113440  C3 A5 00 04 */	lfs f29, 4(r5)
 /* 80116644 00113444  7C 9D 23 78 */	mr r29, r4
 /* 80116648 00113448  C3 DF 02 34 */	lfs f30, 0x234(r31)
-/* 8011664C 0011344C  C0 42 AF 90 */	lfs f2, _esc__2_5566-_SDA2_BASE_(r2)
+/* 8011664C 0011344C  C0 42 AF 90 */	lfs f2, _esc__2_5566@sda21(r2)
 /* 80116650 00113450  EC 3E E8 28 */	fsubs f1, f30, f29
-/* 80116654 00113454  C0 62 AF 8C */	lfs f3, _esc__2_5565-_SDA2_BASE_(r2)
-/* 80116658 00113458  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80116654 00113454  C0 62 AF 8C */	lfs f3, _esc__2_5565@sda21(r2)
+/* 80116658 00113458  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011665C 0011345C  EF E2 00 72 */	fmuls f31, f2, f1
 /* 80116660 00113460  EC 23 F8 28 */	fsubs f1, f3, f31
 /* 80116664 00113464  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80116668 00113468  40 80 00 0C */	bge lbl_80116674
-/* 8011666C 0011346C  C0 22 AD D0 */	lfs f1, _esc__2_3428-_SDA2_BASE_(r2)
+/* 8011666C 0011346C  C0 22 AD D0 */	lfs f1, _esc__2_3428@sda21(r2)
 /* 80116670 00113470  48 00 00 18 */	b lbl_80116688
 lbl_80116674:
 /* 80116674 00113474  4B EF 4E 05 */	bl xsqrt__Ff
-/* 80116678 00113478  C0 42 AF 98 */	lfs f2, _esc__2_5568-_SDA2_BASE_(r2)
-/* 8011667C 0011347C  C0 02 AF 94 */	lfs f0, _esc__2_5567-_SDA2_BASE_(r2)
+/* 80116678 00113478  C0 42 AF 98 */	lfs f2, _esc__2_5568@sda21(r2)
+/* 8011667C 0011347C  C0 02 AF 94 */	lfs f0, _esc__2_5567@sda21(r2)
 /* 80116680 00113480  EC 22 08 28 */	fsubs f1, f2, f1
 /* 80116684 00113484  EC 20 00 72 */	fmuls f1, f0, f1
 lbl_80116688:
-/* 80116688 00113488  C0 02 AC B0 */	lfs f0, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 80116688 00113488  C0 02 AC B0 */	lfs f0, _esc__2_2016_0@sda21(r2)
 /* 8011668C 0011348C  FF 80 08 90 */	fmr f28, f1
 /* 80116690 00113490  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80116694 00113494  40 81 00 58 */	ble lbl_801166EC
 /* 80116698 00113498  FC 1E E8 40 */	fcmpo cr0, f30, f29
-/* 8011669C 0011349C  C0 42 AF 90 */	lfs f2, _esc__2_5566-_SDA2_BASE_(r2)
-/* 801166A0 001134A0  C0 22 AC 84 */	lfs f1, _esc__2_1439_0-_SDA2_BASE_(r2)
+/* 8011669C 0011349C  C0 42 AF 90 */	lfs f2, _esc__2_5566@sda21(r2)
+/* 801166A0 001134A0  C0 22 AC 84 */	lfs f1, _esc__2_1439_0@sda21(r2)
 /* 801166A4 001134A4  40 81 00 0C */	ble lbl_801166B0
 /* 801166A8 001134A8  FC 00 F0 90 */	fmr f0, f30
 /* 801166AC 001134AC  48 00 00 08 */	b lbl_801166B4
@@ -19473,25 +19473,25 @@ lbl_801166B4:
 /* 801166C8 001134C8  EC 3D FF 78 */	fmsubs f1, f29, f29, f31
 /* 801166CC 001134CC  4B EF 4D AD */	bl xsqrt__Ff
 /* 801166D0 001134D0  FC 60 E8 50 */	fneg f3, f29
-/* 801166D4 001134D4  C0 42 AF 94 */	lfs f2, _esc__2_5567-_SDA2_BASE_(r2)
-/* 801166D8 001134D8  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801166D4 001134D4  C0 42 AF 94 */	lfs f2, _esc__2_5567@sda21(r2)
+/* 801166D8 001134D8  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801166DC 001134DC  EC 23 08 28 */	fsubs f1, f3, f1
 /* 801166E0 001134E0  EF 82 00 72 */	fmuls f28, f2, f1
 /* 801166E4 001134E4  EC A0 E0 24 */	fdivs f5, f0, f28
 /* 801166E8 001134E8  48 00 00 30 */	b lbl_80116718
 lbl_801166EC:
-/* 801166EC 001134EC  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801166EC 001134EC  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 801166F0 001134F0  FC 01 10 40 */	fcmpo cr0, f1, f2
 /* 801166F4 001134F4  40 80 00 1C */	bge lbl_80116710
 /* 801166F8 001134F8  EC 1D F0 28 */	fsubs f0, f29, f30
-/* 801166FC 001134FC  C0 22 AF 9C */	lfs f1, _esc__2_5569-_SDA2_BASE_(r2)
+/* 801166FC 001134FC  C0 22 AF 9C */	lfs f1, _esc__2_5569@sda21(r2)
 /* 80116700 00113500  FF 80 10 90 */	fmr f28, f2
 /* 80116704 00113504  FC A0 10 90 */	fmr f5, f2
 /* 80116708 00113508  EF A1 00 2A */	fadds f29, f1, f0
 /* 8011670C 0011350C  48 00 00 0C */	b lbl_80116718
 lbl_80116710:
 /* 80116710 00113510  EC A2 08 24 */	fdivs f5, f2, f1
-/* 80116714 00113514  C3 A2 AF 0C */	lfs f29, _esc__2_4933-_SDA2_BASE_(r2)
+/* 80116714 00113514  C3 A2 AF 0C */	lfs f29, _esc__2_4933@sda21(r2)
 lbl_80116718:
 /* 80116718 00113518  C0 9E 00 00 */	lfs f4, 0(r30)
 /* 8011671C 0011351C  FC 40 E8 90 */	fmr f2, f29
@@ -19544,7 +19544,7 @@ scan_arena_border__Q217zNPCBossOmnidroid15jump_state_typeCFRfRfifffffff:
 /* 801167CC 001135CC  F2 E1 00 38 */	psq_st f23, 56(r1), 0, qr0
 /* 801167D0 001135D0  BF 41 00 18 */	stmw r26, 0x18(r1)
 /* 801167D4 001135D4  FF E0 38 90 */	fmr f31, f7
-/* 801167D8 001135D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801167D8 001135D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801167DC 001135DC  7C DC 33 78 */	mr r28, r6
 /* 801167E0 001135E0  FF 20 08 90 */	fmr f25, f1
 /* 801167E4 001135E4  1C 1C 00 18 */	mulli r0, r28, 0x18
@@ -19595,7 +19595,7 @@ lbl_80116874:
 lbl_80116890:
 /* 80116890 00113690  1C 00 00 18 */	mulli r0, r0, 0x18
 /* 80116894 00113694  FC 20 F8 90 */	fmr f1, f31
-/* 80116898 00113698  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116898 00113698  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011689C 0011369C  38 81 00 0C */	addi r4, r1, 0xc
 /* 801168A0 001136A0  38 A1 00 08 */	addi r5, r1, 8
 /* 801168A4 001136A4  7C DF 02 14 */	add r6, r31, r0
@@ -19669,12 +19669,12 @@ lbl_80116934:
 
 .global apply_motion__Q217zNPCBossOmnidroid15jump_state_typeFf
 apply_motion__Q217zNPCBossOmnidroid15jump_state_typeFf:
-/* 801169A0 001137A0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801169A4 001137A4  C0 02 AF A0 */	lfs f0, _esc__2_5607-_SDA2_BASE_(r2)
+/* 801169A0 001137A0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 801169A4 001137A4  C0 02 AF A0 */	lfs f0, _esc__2_5607@sda21(r2)
 /* 801169A8 001137A8  C0 63 00 1C */	lfs f3, 0x1c(r3)
 /* 801169AC 001137AC  C0 44 02 30 */	lfs f2, 0x230(r4)
 /* 801169B0 001137B0  EC 80 00 72 */	fmuls f4, f0, f1
-/* 801169B4 001137B4  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 801169B4 001137B4  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 801169B8 001137B8  EC 63 10 7A */	fmadds f3, f3, f1, f2
 /* 801169BC 001137BC  EC 40 01 32 */	fmuls f2, f0, f4
 /* 801169C0 001137C0  D0 64 02 30 */	stfs f3, 0x230(r4)
@@ -19699,7 +19699,7 @@ leg_damage_disable__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 80116A00 00113800  7C 08 02 A6 */	mflr r0
 /* 80116A04 00113804  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80116A08 00113808  BF C1 00 08 */	stmw r30, 8(r1)
-/* 80116A0C 0011380C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116A0C 0011380C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116A10 00113810  3B E3 17 60 */	addi r31, r3, 0x1760
 /* 80116A14 00113814  3B DF 68 10 */	addi r30, r31, 0x6810
 /* 80116A18 00113818  48 00 00 10 */	b lbl_80116A28
@@ -19724,14 +19724,14 @@ leg_damage_enable__Q217zNPCBossOmnidroid15jump_state_typeFv:
 /* 80116A50 00113850  38 00 00 01 */	li r0, 1
 /* 80116A54 00113854  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80116A58 00113858  98 03 00 09 */	stb r0, 9(r3)
-/* 80116A5C 0011385C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116A5C 0011385C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116A60 00113860  3B E3 17 60 */	addi r31, r3, 0x1760
 /* 80116A64 00113864  3B DF 68 10 */	addi r30, r31, 0x6810
 /* 80116A68 00113868  48 00 00 20 */	b lbl_80116A88
 lbl_80116A6C:
-/* 80116A6C 0011386C  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80116A6C 0011386C  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80116A70 00113870  7F E3 FB 78 */	mr r3, r31
-/* 80116A74 00113874  C0 42 AD 48 */	lfs f2, _esc__2_3022-_SDA2_BASE_(r2)
+/* 80116A74 00113874  C0 42 AD 48 */	lfs f2, _esc__2_3022@sda21(r2)
 /* 80116A78 00113878  38 80 00 06 */	li r4, 6
 /* 80116A7C 0011387C  38 A0 00 00 */	li r5, 0
 /* 80116A80 00113880  4B FF A1 71 */	bl damage_enable__Q217zNPCBossOmnidroid8leg_typeFiffPC5xVec3
@@ -19750,7 +19750,7 @@ enter__Q217zNPCBossOmnidroid14hit_state_typeFv:
 /* 80116AA4 001138A4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80116AA8 001138A8  7C 08 02 A6 */	mflr r0
 /* 80116AAC 001138AC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80116AB0 001138B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116AB0 001138B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116AB4 001138B4  4B FF 70 49 */	bl hit_respond__17zNPCBossOmnidroidFv
 /* 80116AB8 001138B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80116ABC 001138BC  7C 08 03 A6 */	mtlr r0
@@ -19762,7 +19762,7 @@ exit__Q217zNPCBossOmnidroid14hit_state_typeFv:
 /* 80116AC8 001138C8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80116ACC 001138CC  7C 08 02 A6 */	mflr r0
 /* 80116AD0 001138D0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80116AD4 001138D4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116AD4 001138D4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116AD8 001138D8  4B FF 73 B9 */	bl hit_cancel__17zNPCBossOmnidroidFv
 /* 80116ADC 001138DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80116AE0 001138E0  7C 08 03 A6 */	mtlr r0
@@ -19774,14 +19774,14 @@ update__Q217zNPCBossOmnidroid14hit_state_typeFf:
 /* 80116AEC 001138EC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80116AF0 001138F0  7C 08 02 A6 */	mflr r0
 /* 80116AF4 001138F4  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80116AF8 001138F8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116AF8 001138F8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116AFC 001138FC  4B FF 73 A9 */	bl hit_finished__17zNPCBossOmnidroidCFv
 /* 80116B00 00113900  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80116B04 00113904  41 82 00 1C */	beq lbl_80116B20
-/* 80116B08 00113908  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116B08 00113908  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116B0C 0011390C  4B FF 84 A5 */	bl next_state__17zNPCBossOmnidroidFv
 /* 80116B10 00113910  7C 64 1B 78 */	mr r4, r3
-/* 80116B14 00113914  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116B14 00113914  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116B18 00113918  38 A0 00 01 */	li r5, 1
 /* 80116B1C 0011391C  4B FF 35 C9 */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 lbl_80116B20:
@@ -19804,9 +19804,9 @@ exit__Q217zNPCBossOmnidroid21bitch_slap_state_typeFv:
 /* 80116B48 00113948  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80116B4C 0011394C  38 00 00 01 */	li r0, 1
 /* 80116B50 00113950  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80116B54 00113954  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116B54 00113954  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116B58 00113958  98 03 01 F2 */	stb r0, 0x1f2(r3)
-/* 80116B5C 0011395C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116B5C 0011395C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116B60 00113960  48 00 00 29 */	bl get_leg__17zNPCBossOmnidroidFi
 /* 80116B64 00113964  7C 7F 1B 78 */	mr r31, r3
 /* 80116B68 00113968  4B FF A0 A5 */	bl damage_disable__Q217zNPCBossOmnidroid8leg_typeFv
@@ -19845,22 +19845,22 @@ update__Q217zNPCBossOmnidroid21bitch_slap_state_typeFf:
 /* 80116BD4 001139D4  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80116BD8 001139D8  FF E0 08 90 */	fmr f31, f1
 /* 80116BDC 001139DC  7C 7E 1B 78 */	mr r30, r3
-/* 80116BE0 001139E0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116BE0 001139E0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116BE4 001139E4  4B FF 72 7D */	bl blending_facing__17zNPCBossOmnidroidCFv
 /* 80116BE8 001139E8  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80116BEC 001139EC  40 82 01 08 */	bne lbl_80116CF4
 /* 80116BF0 001139F0  88 1E 00 08 */	lbz r0, 8(r30)
 /* 80116BF4 001139F4  28 00 00 00 */	cmplwi r0, 0
 /* 80116BF8 001139F8  40 82 00 44 */	bne lbl_80116C3C
-/* 80116BFC 001139FC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116BFC 001139FC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116C00 00113A00  38 00 00 00 */	li r0, 0
-/* 80116C04 00113A04  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 80116C04 00113A04  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 80116C08 00113A08  38 80 00 08 */	li r4, 8
 /* 80116C0C 00113A0C  98 03 01 F2 */	stb r0, 0x1f2(r3)
 /* 80116C10 00113A10  38 A0 00 01 */	li r5, 1
-/* 80116C14 00113A14  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116C14 00113A14  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116C18 00113A18  4B FF 26 0D */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
-/* 80116C1C 00113A1C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116C1C 00113A1C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116C20 00113A20  3B E0 00 00 */	li r31, 0
 /* 80116C24 00113A24  38 80 00 01 */	li r4, 1
 /* 80116C28 00113A28  4B FF FF 61 */	bl get_leg__17zNPCBossOmnidroidFi
@@ -19869,39 +19869,39 @@ update__Q217zNPCBossOmnidroid21bitch_slap_state_typeFf:
 /* 80116C34 00113A34  98 1E 00 08 */	stb r0, 8(r30)
 /* 80116C38 00113A38  48 00 00 BC */	b lbl_80116CF4
 lbl_80116C3C:
-/* 80116C3C 00113A3C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116C3C 00113A3C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116C40 00113A40  4B FF 71 99 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 80116C44 00113A44  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 80116C48 00113A48  4C 40 13 82 */	cror 2, 0, 2
 /* 80116C4C 00113A4C  40 82 00 20 */	bne lbl_80116C6C
-/* 80116C50 00113A50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116C50 00113A50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116C54 00113A54  4B FF 83 5D */	bl next_state__17zNPCBossOmnidroidFv
 /* 80116C58 00113A58  7C 64 1B 78 */	mr r4, r3
-/* 80116C5C 00113A5C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116C5C 00113A5C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116C60 00113A60  38 A0 00 01 */	li r5, 1
 /* 80116C64 00113A64  4B FF 34 81 */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 /* 80116C68 00113A68  48 00 00 8C */	b lbl_80116CF4
 lbl_80116C6C:
-/* 80116C6C 00113A6C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116C6C 00113A6C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116C70 00113A70  4B FF 71 B5 */	bl anim_time_current__17zNPCBossOmnidroidCFv
 /* 80116C74 00113A74  FF E0 08 90 */	fmr f31, f1
-/* 80116C78 00113A78  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116C78 00113A78  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116C7C 00113A7C  38 80 00 01 */	li r4, 1
 /* 80116C80 00113A80  4B FF FF 09 */	bl get_leg__17zNPCBossOmnidroidFi
 /* 80116C84 00113A84  7C 7F 1B 78 */	mr r31, r3
 /* 80116C88 00113A88  48 00 00 89 */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 80116C8C 00113A8C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80116C90 00113A90  40 82 00 3C */	bne lbl_80116CCC
-/* 80116C94 00113A94  C0 02 AC 9C */	lfs f0, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 80116C94 00113A94  C0 02 AC 9C */	lfs f0, _esc__2_1659_1@sda21(r2)
 /* 80116C98 00113A98  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80116C9C 00113A9C  4C 41 13 82 */	cror 2, 1, 2
 /* 80116CA0 00113AA0  40 82 00 2C */	bne lbl_80116CCC
-/* 80116CA4 00113AA4  C0 02 AD 88 */	lfs f0, _esc__2_3051-_SDA2_BASE_(r2)
+/* 80116CA4 00113AA4  C0 02 AD 88 */	lfs f0, _esc__2_3051@sda21(r2)
 /* 80116CA8 00113AA8  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80116CAC 00113AAC  40 80 00 20 */	bge lbl_80116CCC
-/* 80116CB0 00113AB0  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80116CB0 00113AB0  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80116CB4 00113AB4  7F E3 FB 78 */	mr r3, r31
-/* 80116CB8 00113AB8  C0 42 AD 30 */	lfs f2, _esc__2_3016-_SDA2_BASE_(r2)
+/* 80116CB8 00113AB8  C0 42 AD 30 */	lfs f2, _esc__2_3016@sda21(r2)
 /* 80116CBC 00113ABC  38 80 00 04 */	li r4, 4
 /* 80116CC0 00113AC0  38 A0 00 00 */	li r5, 0
 /* 80116CC4 00113AC4  4B FF 9F 2D */	bl damage_enable__Q217zNPCBossOmnidroid8leg_typeFiffPC5xVec3
@@ -19911,7 +19911,7 @@ lbl_80116CCC:
 /* 80116CD0 00113AD0  48 00 00 41 */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 80116CD4 00113AD4  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80116CD8 00113AD8  41 82 00 1C */	beq lbl_80116CF4
-/* 80116CDC 00113ADC  C0 02 AD 88 */	lfs f0, _esc__2_3051-_SDA2_BASE_(r2)
+/* 80116CDC 00113ADC  C0 02 AD 88 */	lfs f0, _esc__2_3051@sda21(r2)
 /* 80116CE0 00113AE0  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80116CE4 00113AE4  4C 41 13 82 */	cror 2, 1, 2
 /* 80116CE8 00113AE8  40 82 00 0C */	bne lbl_80116CF4
@@ -19935,12 +19935,12 @@ damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv:
 detect_player__Q217zNPCBossOmnidroid21bitch_slap_state_typeCFv:
 /* 80116D18 00113B18  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80116D1C 00113B1C  7C 08 02 A6 */	mflr r0
-/* 80116D20 00113B20  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80116D24 00113B24  C0 22 AD 80 */	lfs f1, _esc__2_3049-_SDA2_BASE_(r2)
+/* 80116D20 00113B20  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80116D24 00113B24  C0 22 AD 80 */	lfs f1, _esc__2_3049@sda21(r2)
 /* 80116D28 00113B28  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80116D2C 00113B2C  C0 02 AD A8 */	lfs f0, _esc__2_3188-_SDA2_BASE_(r2)
-/* 80116D30 00113B30  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80116D34 00113B34  C0 62 AC 9C */	lfs f3, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 80116D2C 00113B2C  C0 02 AD A8 */	lfs f0, _esc__2_3188@sda21(r2)
+/* 80116D30 00113B30  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80116D34 00113B34  C0 62 AC 9C */	lfs f3, _esc__2_1659_1@sda21(r2)
 /* 80116D38 00113B38  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 80116D3C 00113B3C  54 00 10 3A */	slwi r0, r0, 2
 /* 80116D40 00113B40  7C 44 04 2E */	lfsx f2, r4, r0
@@ -19958,14 +19958,14 @@ setup__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 80116D64 00113B64  7C 08 02 A6 */	mflr r0
 /* 80116D68 00113B68  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80116D6C 00113B6C  48 00 09 95 */	bl setup_collision__Q217zNPCBossOmnidroid18dervish_state_typeFv
-/* 80116D70 00113B70  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80116D74 00113B74  C0 02 AD 48 */	lfs f0, _esc__2_3022-_SDA2_BASE_(r2)
+/* 80116D70 00113B70  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80116D74 00113B74  C0 02 AD 48 */	lfs f0, _esc__2_3022@sda21(r2)
 /* 80116D78 00113B78  80 63 02 A8 */	lwz r3, 0x2a8(r3)
 /* 80116D7C 00113B7C  D0 03 00 14 */	stfs f0, 0x14(r3)
-/* 80116D80 00113B80  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116D80 00113B80  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116D84 00113B84  80 63 02 AC */	lwz r3, 0x2ac(r3)
 /* 80116D88 00113B88  D0 03 00 14 */	stfs f0, 0x14(r3)
-/* 80116D8C 00113B8C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116D8C 00113B8C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116D90 00113B90  80 63 02 B0 */	lwz r3, 0x2b0(r3)
 /* 80116D94 00113B94  D0 03 00 14 */	stfs f0, 0x14(r3)
 /* 80116D98 00113B98  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -19999,31 +19999,31 @@ enter__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 80116DF0 00113BF0  90 03 00 0C */	stw r0, 0xc(r3)
 /* 80116DF4 00113BF4  38 7F 00 08 */	addi r3, r31, 8
 /* 80116DF8 00113BF8  4B EE C3 09 */	bl memset
-/* 80116DFC 00113BFC  C0 02 AC 9C */	lfs f0, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 80116DFC 00113BFC  C0 02 AC 9C */	lfs f0, _esc__2_1659_1@sda21(r2)
 /* 80116E00 00113C00  38 00 00 00 */	li r0, 0
-/* 80116E04 00113C04  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80116E04 00113C04  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80116E08 00113C08  38 7F 01 08 */	addi r3, r31, 0x108
 /* 80116E0C 00113C0C  D0 1F 00 14 */	stfs f0, 0x14(r31)
-/* 80116E10 00113C10  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80116E10 00113C10  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 80116E14 00113C14  FC 60 08 90 */	fmr f3, f1
 /* 80116E18 00113C18  98 1F 00 10 */	stb r0, 0x10(r31)
 /* 80116E1C 00113C1C  D0 3F 00 24 */	stfs f1, 0x24(r31)
 /* 80116E20 00113C20  D0 3F 00 18 */	stfs f1, 0x18(r31)
 /* 80116E24 00113C24  D0 5F 01 14 */	stfs f2, 0x114(r31)
 /* 80116E28 00113C28  4B EF 69 B1 */	bl assign__5xVec3Ffff
-/* 80116E2C 00113C2C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80116E2C 00113C2C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80116E30 00113C30  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80116E34 00113C34  4B F7 07 E5 */	bl xEntGetFrame__FPC4xEnt
 /* 80116E38 00113C38  7C 64 1B 78 */	mr r4, r3
-/* 80116E3C 00113C3C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116E3C 00113C3C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116E40 00113C40  38 84 00 30 */	addi r4, r4, 0x30
 /* 80116E44 00113C44  4B FF 78 B5 */	bl get_yaw_to_target__17zNPCBossOmnidroidCFRC5xVec3
 /* 80116E48 00113C48  D0 3F 00 20 */	stfs f1, 0x20(r31)
-/* 80116E4C 00113C4C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116E4C 00113C4C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116E50 00113C50  80 03 05 4C */	lwz r0, 0x54c(r3)
 /* 80116E54 00113C54  2C 00 FF FF */	cmpwi r0, -1
 /* 80116E58 00113C58  40 82 00 10 */	bne lbl_80116E68
-/* 80116E5C 00113C5C  C0 02 AD 34 */	lfs f0, _esc__2_3017-_SDA2_BASE_(r2)
+/* 80116E5C 00113C5C  C0 02 AD 34 */	lfs f0, _esc__2_3017@sda21(r2)
 /* 80116E60 00113C60  D0 1F 00 28 */	stfs f0, 0x28(r31)
 /* 80116E64 00113C64  48 00 00 0C */	b lbl_80116E70
 lbl_80116E68:
@@ -20034,13 +20034,13 @@ lbl_80116E70:
 /* 80116E74 00113C74  7F E3 FB 78 */	mr r3, r31
 /* 80116E78 00113C78  98 1F 00 08 */	stb r0, 8(r31)
 /* 80116E7C 00113C7C  48 00 03 71 */	bl damage_disable__Q217zNPCBossOmnidroid18dervish_state_typeFv
-/* 80116E80 00113C80  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116E80 00113C80  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116E84 00113C84  38 00 00 01 */	li r0, 1
-/* 80116E88 00113C88  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 80116E88 00113C88  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 80116E8C 00113C8C  38 80 00 0A */	li r4, 0xa
 /* 80116E90 00113C90  98 03 01 F3 */	stb r0, 0x1f3(r3)
 /* 80116E94 00113C94  38 A0 00 01 */	li r5, 1
-/* 80116E98 00113C98  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116E98 00113C98  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116E9C 00113C9C  4B FF 23 89 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 80116EA0 00113CA0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80116EA4 00113CA4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -20056,7 +20056,7 @@ exit__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 80116EC0 00113CC0  38 00 00 00 */	li r0, 0
 /* 80116EC4 00113CC4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80116EC8 00113CC8  7C 7F 1B 78 */	mr r31, r3
-/* 80116ECC 00113CCC  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116ECC 00113CCC  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116ED0 00113CD0  98 04 01 F3 */	stb r0, 0x1f3(r4)
 /* 80116ED4 00113CD4  98 03 00 08 */	stb r0, 8(r3)
 /* 80116ED8 00113CD8  48 00 03 15 */	bl damage_disable__Q217zNPCBossOmnidroid18dervish_state_typeFv
@@ -20099,7 +20099,7 @@ lbl_80116F54:
 /* 80116F5C 00113D5C  48 00 00 D0 */	b lbl_8011702C
 lbl_80116F60:
 /* 80116F60 00113D60  C0 3F 00 14 */	lfs f1, 0x14(r31)
-/* 80116F64 00113D64  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80116F64 00113D64  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80116F68 00113D68  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80116F6C 00113D6C  41 81 01 00 */	bgt lbl_8011706C
 /* 80116F70 00113D70  C0 1F 00 28 */	lfs f0, 0x28(r31)
@@ -20113,10 +20113,10 @@ lbl_80116F60:
 /* 80116F90 00113D90  38 00 00 01 */	li r0, 1
 /* 80116F94 00113D94  90 1F 00 0C */	stw r0, 0xc(r31)
 lbl_80116F98:
-/* 80116F98 00113D98  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116F98 00113D98  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116F9C 00113D9C  4B FF EF F1 */	bl anim_get_state_id__17zNPCBossOmnidroidCFv
 /* 80116FA0 00113DA0  20 03 00 0B */	subfic r0, r3, 0xb
-/* 80116FA4 00113DA4  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80116FA4 00113DA4  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80116FA8 00113DA8  7C 00 00 34 */	cntlzw r0, r0
 /* 80116FAC 00113DAC  54 00 D9 7E */	srwi r0, r0, 5
 /* 80116FB0 00113DB0  98 1F 00 08 */	stb r0, 8(r31)
@@ -20126,24 +20126,24 @@ lbl_80116F98:
 /* 80116FC0 00113DC0  D0 3F 01 14 */	stfs f1, 0x114(r31)
 lbl_80116FC4:
 /* 80116FC4 00113DC4  C0 3F 00 14 */	lfs f1, 0x14(r31)
-/* 80116FC8 00113DC8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80116FC8 00113DC8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80116FCC 00113DCC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80116FD0 00113DD0  41 81 00 9C */	bgt lbl_8011706C
-/* 80116FD4 00113DD4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80116FD4 00113DD4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80116FD8 00113DD8  4B FF 6E 01 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 80116FDC 00113DDC  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 80116FE0 00113DE0  41 81 00 8C */	bgt lbl_8011706C
 /* 80116FE4 00113DE4  38 00 00 02 */	li r0, 2
-/* 80116FE8 00113DE8  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80116FE8 00113DE8  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 80116FEC 00113DEC  90 1F 00 0C */	stw r0, 0xc(r31)
 /* 80116FF0 00113DF0  38 00 00 00 */	li r0, 0
 /* 80116FF4 00113DF4  38 80 00 0C */	li r4, 0xc
 /* 80116FF8 00113DF8  38 A0 00 00 */	li r5, 0
 /* 80116FFC 00113DFC  98 1F 00 10 */	stb r0, 0x10(r31)
 /* 80117000 00113E00  D0 3F 01 14 */	stfs f1, 0x114(r31)
-/* 80117004 00113E04  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117004 00113E04  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117008 00113E08  98 03 01 F3 */	stb r0, 0x1f3(r3)
-/* 8011700C 00113E0C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011700C 00113E0C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117010 00113E10  4B FF 22 15 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 80117014 00113E14  38 00 00 00 */	li r0, 0
 /* 80117018 00113E18  7F E3 FB 78 */	mr r3, r31
@@ -20152,25 +20152,25 @@ lbl_80116FC4:
 /* 80117024 00113E24  7F E3 FB 78 */	mr r3, r31
 /* 80117028 00113E28  48 00 01 75 */	bl blur_end__Q217zNPCBossOmnidroid18dervish_state_typeFv
 lbl_8011702C:
-/* 8011702C 00113E2C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011702C 00113E2C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117030 00113E30  4B FF EF 5D */	bl anim_get_state_id__17zNPCBossOmnidroidCFv
 /* 80117034 00113E34  2C 03 00 0C */	cmpwi r3, 0xc
 /* 80117038 00113E38  40 82 00 34 */	bne lbl_8011706C
-/* 8011703C 00113E3C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011703C 00113E3C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117040 00113E40  4B FF 6D 99 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 80117044 00113E44  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 80117048 00113E48  4C 40 13 82 */	cror 2, 0, 2
 /* 8011704C 00113E4C  40 82 00 20 */	bne lbl_8011706C
-/* 80117050 00113E50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117050 00113E50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117054 00113E54  4B FF 7F 5D */	bl next_state__17zNPCBossOmnidroidFv
 /* 80117058 00113E58  7C 64 1B 78 */	mr r4, r3
-/* 8011705C 00113E5C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011705C 00113E5C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117060 00113E60  38 A0 00 01 */	li r5, 1
 /* 80117064 00113E64  4B FF 30 81 */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 /* 80117068 00113E68  48 00 00 38 */	b lbl_801170A0
 lbl_8011706C:
 /* 8011706C 00113E6C  C0 3F 01 18 */	lfs f1, 0x118(r31)
-/* 80117070 00113E70  C0 02 AC 84 */	lfs f0, _esc__2_1439_0-_SDA2_BASE_(r2)
+/* 80117070 00113E70  C0 02 AC 84 */	lfs f0, _esc__2_1439_0@sda21(r2)
 /* 80117074 00113E74  EC 21 F0 2A */	fadds f1, f1, f30
 /* 80117078 00113E78  D0 3F 01 18 */	stfs f1, 0x118(r31)
 /* 8011707C 00113E7C  C0 3F 01 18 */	lfs f1, 0x118(r31)
@@ -20226,8 +20226,8 @@ blur_begin__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 80117124 00113F24  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80117128 00113F28  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 8011712C 00113F2C  3B E3 06 90 */	addi r31, r3, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state7dervish4blur@l
-/* 80117130 00113F30  3B C2 AA EC */	addi r30, r2, lifetime__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state7dervish4blur-_SDA2_BASE_
-/* 80117134 00113F34  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117130 00113F30  3B C2 AA EC */	addi r30, r2, lifetime__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state7dervish4blur@sda21
+/* 80117134 00113F34  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117138 00113F38  3B A4 7F 70 */	addi r29, r4, 0x7f70
 /* 8011713C 00113F3C  3B 9D 19 A0 */	addi r28, r29, 0x19a0
 /* 80117140 00113F40  48 00 00 40 */	b lbl_80117180
@@ -20236,7 +20236,7 @@ lbl_80117144:
 /* 80117148 00113F48  38 80 00 00 */	li r4, 0
 /* 8011714C 00113F4C  38 A0 00 00 */	li r5, 0
 /* 80117150 00113F50  4B FF B0 11 */	bl replace_claw__Q217zNPCBossOmnidroid13clawrang_typeFbb
-/* 80117154 00113F54  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117154 00113F54  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117158 00113F58  7F A3 EB 78 */	mr r3, r29
 /* 8011715C 00113F5C  80 84 03 4C */	lwz r4, 0x34c(r4)
 /* 80117160 00113F60  1C 04 00 24 */	mulli r0, r4, 0x24
@@ -20262,7 +20262,7 @@ blur_end__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 801171A0 00113FA0  7C 08 02 A6 */	mflr r0
 /* 801171A4 00113FA4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801171A8 00113FA8  BF C1 00 08 */	stmw r30, 8(r1)
-/* 801171AC 00113FAC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801171AC 00113FAC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801171B0 00113FB0  3B E3 7F 70 */	addi r31, r3, 0x7f70
 /* 801171B4 00113FB4  3B DF 19 A0 */	addi r30, r31, 0x19a0
 /* 801171B8 00113FB8  48 00 00 18 */	b lbl_801171D0
@@ -20287,7 +20287,7 @@ damage_disable__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 801171F0 00113FF0  7C 08 02 A6 */	mflr r0
 /* 801171F4 00113FF4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801171F8 00113FF8  BF C1 00 08 */	stmw r30, 8(r1)
-/* 801171FC 00113FFC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801171FC 00113FFC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117200 00114000  3B E3 17 60 */	addi r31, r3, 0x1760
 /* 80117204 00114004  3B DF 68 10 */	addi r30, r31, 0x6810
 /* 80117208 00114008  48 00 00 10 */	b lbl_80117218
@@ -20316,7 +20316,7 @@ damage_enable__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 80117244 00114044  7C 08 02 A6 */	mflr r0
 /* 80117248 00114048  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011724C 0011404C  BF C1 00 08 */	stmw r30, 8(r1)
-/* 80117250 00114050  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117250 00114050  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117254 00114054  3B E3 17 60 */	addi r31, r3, 0x1760
 /* 80117258 00114058  3B DF 68 10 */	addi r30, r31, 0x6810
 /* 8011725C 0011405C  48 00 00 10 */	b lbl_8011726C
@@ -20351,7 +20351,7 @@ update_motion__Q217zNPCBossOmnidroid18dervish_state_typeFf:
 /* 801172B0 001140B0  88 03 00 10 */	lbz r0, 0x10(r3)
 /* 801172B4 001140B4  28 00 00 00 */	cmplwi r0, 0
 /* 801172B8 001140B8  41 82 00 3C */	beq lbl_801172F4
-/* 801172BC 001140BC  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801172BC 001140BC  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801172C0 001140C0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801172C4 001140C4  4B F7 03 55 */	bl xEntGetFrame__FPC4xEnt
 /* 801172C8 001140C8  80 A3 00 30 */	lwz r5, 0x30(r3)
@@ -20406,32 +20406,32 @@ update_motion_follow__Q217zNPCBossOmnidroid18dervish_state_typeFRC5xVec3f:
 /* 80117378 00114178  7C 9F 23 78 */	mr r31, r4
 /* 8011737C 0011417C  28 00 00 00 */	cmplwi r0, 0
 /* 80117380 00114180  41 82 00 48 */	beq lbl_801173C8
-/* 80117384 00114184  C3 82 AE DC */	lfs f28, _esc__2_4810-_SDA2_BASE_(r2)
+/* 80117384 00114184  C3 82 AE DC */	lfs f28, _esc__2_4810@sda21(r2)
 /* 80117388 00114188  FC 80 C0 90 */	fmr f4, f24
-/* 8011738C 0011418C  C3 62 AF A8 */	lfs f27, _esc__2_5805-_SDA2_BASE_(r2)
+/* 8011738C 0011418C  C3 62 AF A8 */	lfs f27, _esc__2_5805@sda21(r2)
 /* 80117390 00114190  FC 40 E0 90 */	fmr f2, f28
-/* 80117394 00114194  C3 C2 AF A4 */	lfs f30, _esc__2_5804-_SDA2_BASE_(r2)
+/* 80117394 00114194  C3 C2 AF A4 */	lfs f30, _esc__2_5804@sda21(r2)
 /* 80117398 00114198  FC 60 D8 90 */	fmr f3, f27
-/* 8011739C 0011419C  C3 E2 AF 88 */	lfs f31, _esc__2_5541-_SDA2_BASE_(r2)
+/* 8011739C 0011419C  C3 E2 AF 88 */	lfs f31, _esc__2_5541@sda21(r2)
 /* 801173A0 001141A0  C0 3E 00 18 */	lfs f1, 0x18(r30)
 /* 801173A4 001141A4  4B FE F6 D1 */	bl constrain_velocity__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Fffff
 /* 801173A8 001141A8  D0 3E 00 18 */	stfs f1, 0x18(r30)
 /* 801173AC 001141AC  FC 80 C0 90 */	fmr f4, f24
-/* 801173B0 001141B0  C0 42 AF A4 */	lfs f2, _esc__2_5804-_SDA2_BASE_(r2)
+/* 801173B0 001141B0  C0 42 AF A4 */	lfs f2, _esc__2_5804@sda21(r2)
 /* 801173B4 001141B4  C0 3E 00 24 */	lfs f1, 0x24(r30)
-/* 801173B8 001141B8  C0 62 AF 88 */	lfs f3, _esc__2_5541-_SDA2_BASE_(r2)
+/* 801173B8 001141B8  C0 62 AF 88 */	lfs f3, _esc__2_5541@sda21(r2)
 /* 801173BC 001141BC  4B FE F6 B9 */	bl constrain_velocity__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Fffff
 /* 801173C0 001141C0  D0 3E 00 24 */	stfs f1, 0x24(r30)
 /* 801173C4 001141C4  48 00 00 14 */	b lbl_801173D8
 lbl_801173C8:
-/* 801173C8 001141C8  C3 C2 AF A4 */	lfs f30, _esc__2_5804-_SDA2_BASE_(r2)
-/* 801173CC 001141CC  C3 E2 AF 88 */	lfs f31, _esc__2_5541-_SDA2_BASE_(r2)
-/* 801173D0 001141D0  C3 82 AC B0 */	lfs f28, _esc__2_2016_0-_SDA2_BASE_(r2)
-/* 801173D4 001141D4  C3 62 AF 48 */	lfs f27, _esc__2_5278-_SDA2_BASE_(r2)
+/* 801173C8 001141C8  C3 C2 AF A4 */	lfs f30, _esc__2_5804@sda21(r2)
+/* 801173CC 001141CC  C3 E2 AF 88 */	lfs f31, _esc__2_5541@sda21(r2)
+/* 801173D0 001141D0  C3 82 AC B0 */	lfs f28, _esc__2_2016_0@sda21(r2)
+/* 801173D4 001141D4  C3 62 AF 48 */	lfs f27, _esc__2_5278@sda21(r2)
 lbl_801173D8:
-/* 801173D8 001141D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801173DC 001141DC  38 E2 A8 B8 */	addi r7, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 801173E0 001141E0  C0 22 AF 48 */	lfs f1, _esc__2_5278-_SDA2_BASE_(r2)
+/* 801173D8 001141D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 801173DC 001141DC  38 E2 A8 B8 */	addi r7, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 801173E0 001141E0  C0 22 AF 48 */	lfs f1, _esc__2_5278@sda21(r2)
 /* 801173E4 001141E4  38 81 00 18 */	addi r4, r1, 0x18
 /* 801173E8 001141E8  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 801173EC 001141EC  80 DF 00 00 */	lwz r6, 0(r31)
@@ -20446,7 +20446,7 @@ lbl_801173D8:
 /* 80117410 00114210  90 01 00 20 */	stw r0, 0x20(r1)
 /* 80117414 00114214  FC 20 E8 90 */	fmr f1, f29
 /* 80117418 00114218  4B FF 6B 9D */	bl clamp_by_arena_extent__17zNPCBossOmnidroidCFR5xVec3f
-/* 8011741C 0011421C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011741C 0011421C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117420 00114220  C0 61 00 18 */	lfs f3, 0x18(r1)
 /* 80117424 00114224  3B E3 02 30 */	addi r31, r3, 0x230
 /* 80117428 00114228  C0 21 00 20 */	lfs f1, 0x20(r1)
@@ -20458,11 +20458,11 @@ lbl_801173D8:
 /* 80117440 00114240  FC 40 C8 90 */	fmr f2, f25
 /* 80117444 00114244  4B EF 8A CD */	bl xatan2__Fff
 /* 80117448 00114248  C0 1E 00 20 */	lfs f0, 0x20(r30)
-/* 8011744C 0011424C  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8011744C 0011424C  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
 /* 80117450 00114250  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80117454 00114254  EC 22 00 2A */	fadds f1, f2, f0
 /* 80117458 00114258  4B EF 89 3D */	bl xrmod__Ff
-/* 8011745C 0011425C  C0 62 AC E8 */	lfs f3, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8011745C 0011425C  C0 62 AC E8 */	lfs f3, _esc__2_2843@sda21(r2)
 /* 80117460 00114260  FC 40 C0 90 */	fmr f2, f24
 /* 80117464 00114264  C0 1E 00 20 */	lfs f0, 0x20(r30)
 /* 80117468 00114268  FC 80 F8 90 */	fmr f4, f31
@@ -20472,11 +20472,11 @@ lbl_801173D8:
 /* 80117478 00114278  38 9E 00 24 */	addi r4, r30, 0x24
 /* 8011747C 0011427C  EC 60 18 2A */	fadds f3, f0, f3
 /* 80117480 00114280  4B F2 C3 A9 */	bl xAccelMove__FRfRfffff
-/* 80117484 00114284  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80117484 00114284  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 80117488 00114288  C0 1E 00 20 */	lfs f0, 0x20(r30)
 /* 8011748C 0011428C  EC 21 00 2A */	fadds f1, f1, f0
 /* 80117490 00114290  4B EF 89 05 */	bl xrmod__Ff
-/* 80117494 00114294  C0 02 AC E8 */	lfs f0, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80117494 00114294  C0 02 AC E8 */	lfs f0, _esc__2_2843@sda21(r2)
 /* 80117498 00114298  EC 01 00 28 */	fsubs f0, f1, f0
 /* 8011749C 0011429C  D0 1E 00 20 */	stfs f0, 0x20(r30)
 /* 801174A0 001142A0  C0 3E 00 20 */	lfs f1, 0x20(r30)
@@ -20485,14 +20485,14 @@ lbl_801173D8:
 /* 801174AC 001142AC  C0 3E 00 20 */	lfs f1, 0x20(r30)
 /* 801174B0 001142B0  4B F5 F3 7D */	bl icos__Ff
 /* 801174B4 001142B4  FF E0 08 90 */	fmr f31, f1
-/* 801174B8 001142B8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801174B8 001142B8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801174BC 001142BC  EC 3F 06 72 */	fmuls f1, f31, f25
 /* 801174C0 001142C0  EC 7E 0E BA */	fmadds f3, f30, f26, f1
 /* 801174C4 001142C4  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 801174C8 001142C8  40 80 00 08 */	bge lbl_801174D0
 /* 801174CC 001142CC  FC 60 00 90 */	fmr f3, f0
 lbl_801174D0:
-/* 801174D0 001142D0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801174D0 001142D0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801174D4 001142D4  FC 20 E0 90 */	fmr f1, f28
 /* 801174D8 001142D8  FC 40 C0 90 */	fmr f2, f24
 /* 801174DC 001142DC  38 61 00 08 */	addi r3, r1, 8
@@ -20502,14 +20502,14 @@ lbl_801174D0:
 /* 801174EC 001142EC  C3 3E 00 18 */	lfs f25, 0x18(r30)
 /* 801174F0 001142F0  4B F2 C3 39 */	bl xAccelMove__FRfRfffff
 /* 801174F4 001142F4  C0 3E 00 18 */	lfs f1, 0x18(r30)
-/* 801174F8 001142F8  C0 02 AD DC */	lfs f0, _esc__2_3580-_SDA2_BASE_(r2)
+/* 801174F8 001142F8  C0 02 AD DC */	lfs f0, _esc__2_3580@sda21(r2)
 /* 801174FC 001142FC  EC 21 C8 28 */	fsubs f1, f1, f25
 /* 80117500 00114300  FC 20 0A 10 */	fabs f1, f1
 /* 80117504 00114304  FC 20 08 18 */	frsp f1, f1
 /* 80117508 00114308  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011750C 0011430C  4C 40 13 82 */	cror 2, 0, 2
 /* 80117510 00114310  40 82 00 0C */	bne lbl_8011751C
-/* 80117514 00114314  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80117514 00114314  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80117518 00114318  48 00 00 08 */	b lbl_80117520
 lbl_8011751C:
 /* 8011751C 0011431C  FC 00 E0 90 */	fmr f0, f28
@@ -20525,7 +20525,7 @@ lbl_80117520:
 /* 80117540 00114340  C0 1F 00 08 */	lfs f0, 8(r31)
 /* 80117544 00114344  EC 1F 00 BA */	fmadds f0, f31, f2, f0
 /* 80117548 00114348  D0 1F 00 08 */	stfs f0, 8(r31)
-/* 8011754C 0011434C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011754C 0011434C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117550 00114350  4B FF 4B 61 */	bl within_arena__17zNPCBossOmnidroidCFRC5xVec3f
 /* 80117554 00114354  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80117558 00114358  40 82 00 98 */	bne lbl_801175F0
@@ -20535,7 +20535,7 @@ lbl_80117520:
 /* 80117568 00114368  7F E4 FB 78 */	mr r4, r31
 /* 8011756C 0011436C  80 1F 00 08 */	lwz r0, 8(r31)
 /* 80117570 00114370  90 61 00 0C */	stw r3, 0xc(r1)
-/* 80117574 00114374  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117574 00114374  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117578 00114378  90 A1 00 10 */	stw r5, 0x10(r1)
 /* 8011757C 0011437C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80117580 00114380  4B FF 6A 99 */	bl nearest_arena_border_point__17zNPCBossOmnidroidCFR5xVec3f
@@ -20544,7 +20544,7 @@ lbl_80117520:
 /* 8011758C 0011438C  C0 7F 00 00 */	lfs f3, 0(r31)
 /* 80117590 00114390  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80117594 00114394  C0 41 00 0C */	lfs f2, 0xc(r1)
-/* 80117598 00114398  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80117598 00114398  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011759C 0011439C  EC 43 10 28 */	fsubs f2, f3, f2
 /* 801175A0 001143A0  EC 1F 00 32 */	fmuls f0, f31, f0
 /* 801175A4 001143A4  EC 1E 00 BA */	fmadds f0, f30, f2, f0
@@ -20558,7 +20558,7 @@ lbl_801175BC:
 lbl_801175C0:
 /* 801175C0 001143C0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801175C4 001143C4  40 81 00 0C */	ble lbl_801175D0
-/* 801175C8 001143C8  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801175C8 001143C8  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 801175CC 001143CC  48 00 00 18 */	b lbl_801175E4
 lbl_801175D0:
 /* 801175D0 001143D0  FC 02 D8 40 */	fcmpo cr0, f2, f27
@@ -20603,7 +20603,7 @@ update_motion_halt__Q217zNPCBossOmnidroid18dervish_state_typeFf:
 /* 80117654 00114454  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
 /* 80117658 00114458  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8011765C 0011445C  7C 7F 1B 78 */	mr r31, r3
-/* 80117660 00114460  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80117660 00114460  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80117664 00114464  C0 43 00 18 */	lfs f2, 0x18(r3)
 /* 80117668 00114468  FF E0 08 90 */	fmr f31, f1
 /* 8011766C 0011446C  FC 02 00 40 */	fcmpo cr0, f2, f0
@@ -20611,23 +20611,23 @@ update_motion_halt__Q217zNPCBossOmnidroid18dervish_state_typeFf:
 /* 80117674 00114474  41 82 00 70 */	beq lbl_801176E4
 /* 80117678 00114478  FC 40 F8 90 */	fmr f2, f31
 /* 8011767C 0011447C  D0 01 00 08 */	stfs f0, 8(r1)
-/* 80117680 00114480  C0 22 AF A4 */	lfs f1, _esc__2_5804-_SDA2_BASE_(r2)
+/* 80117680 00114480  C0 22 AF A4 */	lfs f1, _esc__2_5804@sda21(r2)
 /* 80117684 00114484  38 7F 00 20 */	addi r3, r31, 0x20
 /* 80117688 00114488  38 9F 00 24 */	addi r4, r31, 0x24
 /* 8011768C 0011448C  4B F2 CB C5 */	bl xAccelStop__FRfRfff
 /* 80117690 00114490  FC 40 F8 90 */	fmr f2, f31
-/* 80117694 00114494  C0 22 AD 3C */	lfs f1, _esc__2_3019-_SDA2_BASE_(r2)
+/* 80117694 00114494  C0 22 AD 3C */	lfs f1, _esc__2_3019@sda21(r2)
 /* 80117698 00114498  38 61 00 08 */	addi r3, r1, 8
 /* 8011769C 0011449C  38 9F 00 18 */	addi r4, r31, 0x18
 /* 801176A0 001144A0  4B F2 CB B1 */	bl xAccelStop__FRfRfff
-/* 801176A4 001144A4  C0 02 AF AC */	lfs f0, _esc__2_5813-_SDA2_BASE_(r2)
+/* 801176A4 001144A4  C0 02 AF AC */	lfs f0, _esc__2_5813@sda21(r2)
 /* 801176A8 001144A8  D0 1F 00 1C */	stfs f0, 0x1c(r31)
 /* 801176AC 001144AC  C0 3F 00 20 */	lfs f1, 0x20(r31)
 /* 801176B0 001144B0  4B F5 F1 39 */	bl isin__Ff
 /* 801176B4 001144B4  FF E0 08 90 */	fmr f31, f1
 /* 801176B8 001144B8  C0 3F 00 20 */	lfs f1, 0x20(r31)
 /* 801176BC 001144BC  4B F5 F1 71 */	bl icos__Ff
-/* 801176C0 001144C0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801176C0 001144C0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801176C4 001144C4  C0 41 00 08 */	lfs f2, 8(r1)
 /* 801176C8 001144C8  C0 03 02 30 */	lfs f0, 0x230(r3)
 /* 801176CC 001144CC  EC 02 07 FA */	fmadds f0, f2, f31, f0
@@ -20661,7 +20661,7 @@ setup_collision__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 8011772C 0011452C  3C 60 A3 BC */	lis r3, 0xA3BC1B47@ha
 /* 80117730 00114530  98 1F 00 30 */	stb r0, 0x30(r31)
 /* 80117734 00114534  38 63 1B 47 */	addi r3, r3, 0xA3BC1B47@l
-/* 80117738 00114538  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80117738 00114538  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011773C 0011453C  4B FE F2 2D */	bl _load_model__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FUif
 /* 80117740 00114540  90 7F 00 58 */	stw r3, 0x58(r31)
 /* 80117744 00114544  38 A0 00 05 */	li r5, 5
@@ -20694,17 +20694,17 @@ refresh_damage_radius__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 801177A4 001145A4  88 03 00 08 */	lbz r0, 8(r3)
 /* 801177A8 001145A8  28 00 00 00 */	cmplwi r0, 0
 /* 801177AC 001145AC  41 82 00 80 */	beq lbl_8011782C
-/* 801177B0 001145B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801177B0 001145B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801177B4 001145B4  4B FF 29 C5 */	bl refresh_collision_volumes__17zNPCBossOmnidroidFv
-/* 801177B8 001145B8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801177B8 001145B8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801177BC 001145BC  3B A0 00 00 */	li r29, 0
-/* 801177C0 001145C0  C3 A2 A8 B0 */	lfs f29, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801177C0 001145C0  C3 A2 A8 B0 */	lfs f29, _esc__2_1222@sda21(r2)
 /* 801177C4 001145C4  3B E0 00 00 */	li r31, 0
 /* 801177C8 001145C8  C3 E3 00 8C */	lfs f31, 0x8c(r3)
-/* 801177CC 001145CC  3B C2 A9 AC */	addi r30, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 801177CC 001145CC  3B C2 A9 AC */	addi r30, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 801177D0 001145D0  C3 C3 00 94 */	lfs f30, 0x94(r3)
 lbl_801177D4:
-/* 801177D4 001145D4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801177D4 001145D4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801177D8 001145D8  38 61 00 08 */	addi r3, r1, 8
 /* 801177DC 001145DC  7C BE F8 2E */	lwzx r5, r30, r31
 /* 801177E0 001145E0  80 84 00 28 */	lwz r4, 0x28(r4)
@@ -20755,29 +20755,29 @@ refresh_collision__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 80117880 00114680  88 1E 00 09 */	lbz r0, 9(r30)
 /* 80117884 00114684  28 00 00 00 */	cmplwi r0, 0
 /* 80117888 00114688  40 82 00 9C */	bne lbl_80117924
-/* 8011788C 0011468C  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80117890 00114690  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8011788C 0011468C  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80117890 00114690  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 80117894 00114694  80 9E 00 54 */	lwz r4, 0x54(r30)
 /* 80117898 00114698  38 7E 00 B8 */	addi r3, r30, 0xb8
 /* 8011789C 0011469C  80 06 03 4C */	lwz r0, 0x34c(r6)
 /* 801178A0 001146A0  80 84 00 10 */	lwz r4, 0x10(r4)
 /* 801178A4 001146A4  54 00 10 3A */	slwi r0, r0, 2
-/* 801178A8 001146A8  C0 62 AE 88 */	lfs f3, _esc__2_4271-_SDA2_BASE_(r2)
+/* 801178A8 001146A8  C0 62 AE 88 */	lfs f3, _esc__2_4271@sda21(r2)
 /* 801178AC 001146AC  7C 45 04 2E */	lfsx f2, r5, r0
 /* 801178B0 001146B0  C0 3E 01 04 */	lfs f1, 0x104(r30)
 /* 801178B4 001146B4  C0 04 00 28 */	lfs f0, 0x28(r4)
 /* 801178B8 001146B8  EF E3 08 BA */	fmadds f31, f3, f2, f1
 /* 801178BC 001146BC  EC 00 07 F2 */	fmuls f0, f0, f31
 /* 801178C0 001146C0  D0 1E 00 C4 */	stfs f0, 0xc4(r30)
-/* 801178C4 001146C4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801178C4 001146C4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801178C8 001146C8  38 84 00 8C */	addi r4, r4, 0x8c
 /* 801178CC 001146CC  4B EF 37 DD */	bl __as__5xVec3FRC5xVec3
-/* 801178D0 001146D0  C0 82 AF B0 */	lfs f4, _esc__2_5842-_SDA2_BASE_(r2)
+/* 801178D0 001146D0  C0 82 AF B0 */	lfs f4, _esc__2_5842@sda21(r2)
 /* 801178D4 001146D4  FC 20 F8 90 */	fmr f1, f31
 /* 801178D8 001146D8  C0 1E 00 BC */	lfs f0, 0xbc(r30)
 /* 801178DC 001146DC  FC 40 F8 90 */	fmr f2, f31
 /* 801178E0 001146E0  FC 60 F8 90 */	fmr f3, f31
-/* 801178E4 001146E4  38 8D BA 80 */	addi r4, r13, g_I3-_SDA_BASE_
+/* 801178E4 001146E4  38 8D BA 80 */	addi r4, r13, g_I3@sda21
 /* 801178E8 001146E8  EC 04 07 FA */	fmadds f0, f4, f31, f0
 /* 801178EC 001146EC  D0 1E 00 BC */	stfs f0, 0xbc(r30)
 /* 801178F0 001146F0  80 7E 00 54 */	lwz r3, 0x54(r30)
@@ -20838,9 +20838,9 @@ repel_player__Q217zNPCBossOmnidroid18dervish_state_typeFf:
 /* 801179B8 001147B8  41 82 00 08 */	beq lbl_801179C0
 /* 801179BC 001147BC  48 00 01 80 */	b lbl_80117B3C
 lbl_801179C0:
-/* 801179C0 001147C0  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
-/* 801179C4 001147C4  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 801179C8 001147C8  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801179C0 001147C0  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
+/* 801179C4 001147C4  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 801179C8 001147C8  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801179CC 001147CC  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801179D0 001147D0  80 05 00 94 */	lwz r0, 0x94(r5)
 /* 801179D4 001147D4  80 63 00 28 */	lwz r3, 0x28(r3)
@@ -20858,9 +20858,9 @@ lbl_801179C0:
 /* 80117A04 00114804  C0 01 00 08 */	lfs f0, 8(r1)
 /* 80117A08 00114808  80 05 00 90 */	lwz r0, 0x90(r5)
 /* 80117A0C 0011480C  EF 61 00 28 */	fsubs f27, f1, f0
-/* 80117A10 00114810  C0 02 AF B4 */	lfs f0, _esc__2_5858-_SDA2_BASE_(r2)
+/* 80117A10 00114810  C0 02 AF B4 */	lfs f0, _esc__2_5858@sda21(r2)
 /* 80117A14 00114814  EC 3F 07 F2 */	fmuls f1, f31, f31
-/* 80117A18 00114818  C0 82 AE 88 */	lfs f4, _esc__2_4271-_SDA2_BASE_(r2)
+/* 80117A18 00114818  C0 82 AE 88 */	lfs f4, _esc__2_4271@sda21(r2)
 /* 80117A1C 0011481C  7C 64 1C 2E */	lfsx f3, r4, r3
 /* 80117A20 00114820  C0 5F 01 04 */	lfs f2, 0x104(r31)
 /* 80117A24 00114824  EC 3B 0E FA */	fmadds f1, f27, f27, f1
@@ -20869,7 +20869,7 @@ lbl_801179C0:
 /* 80117A30 00114830  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80117A34 00114834  4C 41 13 82 */	cror 2, 1, 2
 /* 80117A38 00114838  40 82 00 14 */	bne lbl_80117A4C
-/* 80117A3C 0011483C  C0 02 AC 88 */	lfs f0, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 80117A3C 0011483C  C0 02 AC 88 */	lfs f0, _esc__2_1441_1@sda21(r2)
 /* 80117A40 00114840  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80117A44 00114844  4C 40 13 82 */	cror 2, 0, 2
 /* 80117A48 00114848  41 82 00 F4 */	beq lbl_80117B3C
@@ -20882,9 +20882,9 @@ lbl_80117A4C:
 lbl_80117A60:
 /* 80117A60 00114860  4B EF 3A 19 */	bl xsqrt__Ff
 /* 80117A64 00114864  FF A0 08 90 */	fmr f29, f1
-/* 80117A68 00114868  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
-/* 80117A6C 0011486C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
-/* 80117A70 00114870  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80117A68 00114868  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
+/* 80117A6C 0011486C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
+/* 80117A70 00114870  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80117A74 00114874  EC 61 E8 24 */	fdivs f3, f1, f29
 /* 80117A78 00114878  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80117A7C 0011487C  80 63 00 48 */	lwz r3, 0x48(r3)
@@ -20902,12 +20902,12 @@ lbl_80117A60:
 /* 80117AAC 001148AC  EC 1F 00 7C */	fnmsubs f0, f31, f1, f0
 /* 80117AB0 001148B0  D0 03 00 D0 */	stfs f0, 0xd0(r3)
 lbl_80117AB4:
-/* 80117AB4 001148B4  C0 02 AF B8 */	lfs f0, _esc__2_5859-_SDA2_BASE_(r2)
+/* 80117AB4 001148B4  C0 02 AF B8 */	lfs f0, _esc__2_5859@sda21(r2)
 /* 80117AB8 001148B8  EC 20 07 B2 */	fmuls f1, f0, f30
 /* 80117ABC 001148BC  4B EF 8A E9 */	bl xexp__Ff
 /* 80117AC0 001148C0  EC 7C E8 28 */	fsubs f3, f28, f29
-/* 80117AC4 001148C4  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
-/* 80117AC8 001148C8  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80117AC4 001148C4  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
+/* 80117AC8 001148C8  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80117ACC 001148CC  7F C4 F3 78 */	mr r4, r30
 /* 80117AD0 001148D0  EC 80 08 28 */	fsubs f4, f0, f1
 /* 80117AD4 001148D4  C0 1E 00 00 */	lfs f0, 0(r30)
@@ -20928,7 +20928,7 @@ lbl_80117AB4:
 /* 80117B10 00114910  C0 03 00 38 */	lfs f0, 0x38(r3)
 /* 80117B14 00114914  EC 00 08 2A */	fadds f0, f0, f1
 /* 80117B18 00114918  D0 03 00 38 */	stfs f0, 0x38(r3)
-/* 80117B1C 0011491C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80117B1C 0011491C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80117B20 00114920  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80117B24 00114924  81 83 00 DC */	lwz r12, 0xdc(r3)
 /* 80117B28 00114928  81 8C 00 10 */	lwz r12, 0x10(r12)
@@ -20963,18 +20963,18 @@ apply_damage__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 80117B8C 0011498C  88 03 00 08 */	lbz r0, 8(r3)
 /* 80117B90 00114990  28 00 00 00 */	cmplwi r0, 0
 /* 80117B94 00114994  41 82 00 EC */	beq lbl_80117C80
-/* 80117B98 00114998  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117B98 00114998  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117B9C 0011499C  38 61 00 18 */	addi r3, r1, 0x18
 /* 80117BA0 001149A0  38 84 00 8C */	addi r4, r4, 0x8c
 /* 80117BA4 001149A4  4B EF 35 05 */	bl __as__5xVec3FRC5xVec3
-/* 80117BA8 001149A8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80117BAC 001149AC  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80117BB0 001149B0  C0 62 AC B8 */	lfs f3, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 80117BA8 001149A8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80117BAC 001149AC  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80117BB0 001149B0  C0 62 AC B8 */	lfs f3, _esc__2_2040_0@sda21(r2)
 /* 80117BB4 001149B4  38 81 00 18 */	addi r4, r1, 0x18
 /* 80117BB8 001149B8  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 80117BBC 001149BC  C0 01 00 1C */	lfs f0, 0x1c(r1)
 /* 80117BC0 001149C0  54 00 10 3A */	slwi r0, r0, 2
-/* 80117BC4 001149C4  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80117BC4 001149C4  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 /* 80117BC8 001149C8  7C 45 04 2E */	lfsx f2, r5, r0
 /* 80117BCC 001149CC  EC 03 00 BA */	fmadds f0, f3, f2, f0
 /* 80117BD0 001149D0  D0 01 00 1C */	stfs f0, 0x1c(r1)
@@ -20984,37 +20984,37 @@ apply_damage__Q217zNPCBossOmnidroid18dervish_state_typeFv:
 /* 80117BE0 001149E0  4B FF 2F 39 */	bl sphere_hits_player__17zNPCBossOmnidroidFRC7xSphere
 /* 80117BE4 001149E4  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80117BE8 001149E8  41 82 00 30 */	beq lbl_80117C18
-/* 80117BEC 001149EC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117BEC 001149EC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117BF0 001149F0  38 80 00 0A */	li r4, 0xa
-/* 80117BF4 001149F4  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80117BF4 001149F4  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80117BF8 001149F8  38 A0 00 01 */	li r5, 1
 /* 80117BFC 001149FC  4B FF 8D 8D */	bl hurt_player__17zNPCBossOmnidroidFif10zHitSource
 /* 80117C00 00114A00  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80117C04 00114A04  41 82 00 14 */	beq lbl_80117C18
 /* 80117C08 00114A08  38 00 00 01 */	li r0, 1
-/* 80117C0C 00114A0C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80117C0C 00114A0C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80117C10 00114A10  98 1D 00 0A */	stb r0, 0xa(r29)
 /* 80117C14 00114A14  D0 1D 01 18 */	stfs f0, 0x118(r29)
 lbl_80117C18:
-/* 80117C18 00114A18  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80117C1C 00114A1C  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80117C20 00114A20  C0 22 AC A0 */	lfs f1, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 80117C18 00114A18  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80117C1C 00114A1C  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80117C20 00114A20  C0 22 AC A0 */	lfs f1, _esc__2_1660_1@sda21(r2)
 /* 80117C24 00114A24  3B A0 00 00 */	li r29, 0
 /* 80117C28 00114A28  80 04 03 4C */	lwz r0, 0x34c(r4)
 /* 80117C2C 00114A2C  3B E0 00 00 */	li r31, 0
-/* 80117C30 00114A30  3B C2 A9 AC */	addi r30, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 80117C30 00114A30  3B C2 A9 AC */	addi r30, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 80117C34 00114A34  54 00 10 3A */	slwi r0, r0, 2
 /* 80117C38 00114A38  7C 03 04 2E */	lfsx f0, r3, r0
 /* 80117C3C 00114A3C  EC 01 00 32 */	fmuls f0, f1, f0
 /* 80117C40 00114A40  D0 01 00 14 */	stfs f0, 0x14(r1)
 lbl_80117C44:
-/* 80117C44 00114A44  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117C44 00114A44  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117C48 00114A48  38 61 00 08 */	addi r3, r1, 8
 /* 80117C4C 00114A4C  7C BE F8 2E */	lwzx r5, r30, r31
 /* 80117C50 00114A50  80 84 00 28 */	lwz r4, 0x28(r4)
 /* 80117C54 00114A54  38 A5 00 06 */	addi r5, r5, 6
 /* 80117C58 00114A58  4B F3 36 E5 */	bl xModelGetBoneLocationScaled__FR5xVec3RC14xModelInstanceUl
-/* 80117C5C 00114A5C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117C5C 00114A5C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117C60 00114A60  38 81 00 08 */	addi r4, r1, 8
 /* 80117C64 00114A64  38 A0 00 0A */	li r5, 0xa
 /* 80117C68 00114A68  38 C0 00 01 */	li r6, 1
@@ -21047,7 +21047,7 @@ update_banking__Q217zNPCBossOmnidroid18dervish_state_typeFf:
 /* 80117CC4 00114AC4  93 EC FF CC */	stw r31, -0x34(r12)
 /* 80117CC8 00114AC8  7C 7F 1B 78 */	mr r31, r3
 /* 80117CCC 00114ACC  FF E0 08 90 */	fmr f31, f1
-/* 80117CD0 00114AD0  C0 62 AF BC */	lfs f3, _esc__2_5889-_SDA2_BASE_(r2)
+/* 80117CD0 00114AD0  C0 62 AF BC */	lfs f3, _esc__2_5889@sda21(r2)
 /* 80117CD4 00114AD4  C0 43 00 18 */	lfs f2, 0x18(r3)
 /* 80117CD8 00114AD8  C0 03 00 1C */	lfs f0, 0x1c(r3)
 /* 80117CDC 00114ADC  C0 23 00 20 */	lfs f1, 0x20(r3)
@@ -21057,20 +21057,20 @@ update_banking__Q217zNPCBossOmnidroid18dervish_state_typeFf:
 /* 80117CEC 00114AEC  C0 3F 00 20 */	lfs f1, 0x20(r31)
 /* 80117CF0 00114AF0  4B F5 EA F9 */	bl isin__Ff
 /* 80117CF4 00114AF4  EC 3D 00 72 */	fmuls f1, f29, f1
-/* 80117CF8 00114AF8  C0 42 AD 3C */	lfs f2, _esc__2_3019-_SDA2_BASE_(r2)
+/* 80117CF8 00114AF8  C0 42 AD 3C */	lfs f2, _esc__2_3019@sda21(r2)
 /* 80117CFC 00114AFC  FC 60 F0 90 */	fmr f3, f30
 /* 80117D00 00114B00  38 61 00 28 */	addi r3, r1, 0x28
 /* 80117D04 00114B04  4B EF 5A D5 */	bl assign__5xVec3Ffff
 /* 80117D08 00114B08  C0 01 00 28 */	lfs f0, 0x28(r1)
 /* 80117D0C 00114B0C  C0 21 00 30 */	lfs f1, 0x30(r1)
 /* 80117D10 00114B10  EC 40 00 32 */	fmuls f2, f0, f0
-/* 80117D14 00114B14  C0 02 AF 0C */	lfs f0, _esc__2_4933-_SDA2_BASE_(r2)
+/* 80117D14 00114B14  C0 02 AF 0C */	lfs f0, _esc__2_4933@sda21(r2)
 /* 80117D18 00114B18  EC 21 00 72 */	fmuls f1, f1, f1
 /* 80117D1C 00114B1C  EC 22 08 2A */	fadds f1, f2, f1
 /* 80117D20 00114B20  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80117D24 00114B24  40 81 00 28 */	ble lbl_80117D4C
 /* 80117D28 00114B28  4B EF 78 59 */	bl xinvsqrt__Ff
-/* 80117D2C 00114B2C  C0 02 AC B0 */	lfs f0, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 80117D2C 00114B2C  C0 02 AC B0 */	lfs f0, _esc__2_2016_0@sda21(r2)
 /* 80117D30 00114B30  C0 41 00 28 */	lfs f2, 0x28(r1)
 /* 80117D34 00114B34  EC 60 00 72 */	fmuls f3, f0, f1
 /* 80117D38 00114B38  C0 01 00 30 */	lfs f0, 0x30(r1)
@@ -21093,7 +21093,7 @@ lbl_80117D4C:
 /* 80117D78 00114B78  4B EF 78 11 */	bl cross__5xVec3FRC5xVec3RC5xVec3
 /* 80117D7C 00114B7C  38 61 00 10 */	addi r3, r1, 0x10
 /* 80117D80 00114B80  4B EF 37 A5 */	bl length2__5xVec3CFv
-/* 80117D84 00114B84  C0 02 AC D0 */	lfs f0, _esc__2_2353_0-_SDA2_BASE_(r2)
+/* 80117D84 00114B84  C0 02 AC D0 */	lfs f0, _esc__2_2353_0@sda21(r2)
 /* 80117D88 00114B88  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80117D8C 00114B8C  40 81 00 68 */	ble lbl_80117DF4
 /* 80117D90 00114B90  4B EF 36 E9 */	bl xsqrt__Ff
@@ -21104,7 +21104,7 @@ lbl_80117D4C:
 /* 80117DA4 00114BA4  FC 40 08 90 */	fmr f2, f1
 /* 80117DA8 00114BA8  FC 20 E8 90 */	fmr f1, f29
 /* 80117DAC 00114BAC  4B EF 81 65 */	bl xatan2__Fff
-/* 80117DB0 00114BB0  C0 02 AF 28 */	lfs f0, _esc__2_5113-_SDA2_BASE_(r2)
+/* 80117DB0 00114BB0  C0 02 AF 28 */	lfs f0, _esc__2_5113@sda21(r2)
 /* 80117DB4 00114BB4  FF C0 08 90 */	fmr f30, f1
 /* 80117DB8 00114BB8  EC 20 07 F2 */	fmuls f1, f0, f31
 /* 80117DBC 00114BBC  4B EF 87 E9 */	bl xexp__Ff
@@ -21143,7 +21143,7 @@ lbl_80117E00:
 transform_anim__Q217zNPCBossOmnidroid18dervish_state_typeFP9xAnimPlayP5xQuatP5xVec3i:
 /* 80117E30 00114C30  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 80117E34 00114C34  7C 08 02 A6 */	mflr r0
-/* 80117E38 00114C38  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80117E38 00114C38  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80117E3C 00114C3C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80117E40 00114C40  BF C1 00 48 */	stmw r30, 0x48(r1)
 /* 80117E44 00114C44  7C 7E 1B 78 */	mr r30, r3
@@ -21151,7 +21151,7 @@ transform_anim__Q217zNPCBossOmnidroid18dervish_state_typeFP9xAnimPlayP5xQuatP5xV
 /* 80117E4C 00114C4C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80117E50 00114C50  4C 40 13 82 */	cror 2, 0, 2
 /* 80117E54 00114C54  41 82 00 90 */	beq lbl_80117EE4
-/* 80117E58 00114C58  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117E58 00114C58  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117E5C 00114C5C  3B E5 00 10 */	addi r31, r5, 0x10
 /* 80117E60 00114C60  38 61 00 34 */	addi r3, r1, 0x34
 /* 80117E64 00114C64  38 BE 01 08 */	addi r5, r30, 0x108
@@ -21173,7 +21173,7 @@ transform_anim__Q217zNPCBossOmnidroid18dervish_state_typeFP9xAnimPlayP5xQuatP5xV
 /* 80117EA4 00114CA4  38 81 00 18 */	addi r4, r1, 0x18
 /* 80117EA8 00114CA8  4B F3 16 AD */	bl xQuatMul__FP5xQuatPC5xQuatPC5xQuat
 /* 80117EAC 00114CAC  C0 3E 01 14 */	lfs f1, 0x114(r30)
-/* 80117EB0 00114CB0  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80117EB0 00114CB0  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80117EB4 00114CB4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80117EB8 00114CB8  4C 41 13 82 */	cror 2, 1, 2
 /* 80117EBC 00114CBC  40 82 00 14 */	bne lbl_80117ED0
@@ -21198,12 +21198,12 @@ lbl_80117EE4:
 detect_player__Q217zNPCBossOmnidroid18dervish_state_typeCFv:
 /* 80117EF8 00114CF8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80117EFC 00114CFC  7C 08 02 A6 */	mflr r0
-/* 80117F00 00114D00  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80117F04 00114D04  C0 22 AD C0 */	lfs f1, _esc__2_3313_0-_SDA2_BASE_(r2)
+/* 80117F00 00114D00  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80117F04 00114D04  C0 22 AD C0 */	lfs f1, _esc__2_3313_0@sda21(r2)
 /* 80117F08 00114D08  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80117F0C 00114D0C  C0 42 AF C0 */	lfs f2, _esc__2_5907-_SDA2_BASE_(r2)
-/* 80117F10 00114D10  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80117F14 00114D14  C0 62 A8 B0 */	lfs f3, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80117F0C 00114D0C  C0 42 AF C0 */	lfs f2, _esc__2_5907@sda21(r2)
+/* 80117F10 00114D10  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80117F14 00114D14  C0 62 A8 B0 */	lfs f3, _esc__2_1222@sda21(r2)
 /* 80117F18 00114D18  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 80117F1C 00114D1C  54 00 10 3A */	slwi r0, r0, 2
 /* 80117F20 00114D20  7C 04 04 2E */	lfsx f0, r4, r0
@@ -21240,7 +21240,7 @@ reset__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 80117F84 00114D84  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80117F88 00114D88  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80117F8C 00114D8C  7C 7F 1B 78 */	mr r31, r3
-/* 80117F90 00114D90  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80117F90 00114D90  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80117F94 00114D94  88 04 01 F6 */	lbz r0, 0x1f6(r4)
 /* 80117F98 00114D98  28 00 00 00 */	cmplwi r0, 0
 /* 80117F9C 00114D9C  41 82 00 48 */	beq lbl_80117FE4
@@ -21285,20 +21285,20 @@ active__16zDustRingEmitterCFv:
 enter__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 80118018 00114E18  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011801C 00114E1C  7C 08 02 A6 */	mflr r0
-/* 80118020 00114E20  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80118020 00114E20  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 80118024 00114E24  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80118028 00114E28  38 00 00 00 */	li r0, 0
-/* 8011802C 00114E2C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011802C 00114E2C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80118030 00114E30  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80118034 00114E34  7C 7F 1B 78 */	mr r31, r3
 /* 80118038 00114E38  38 7F 00 60 */	addi r3, r31, 0x60
-/* 8011803C 00114E3C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011803C 00114E3C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118040 00114E40  98 04 01 F2 */	stb r0, 0x1f2(r4)
 /* 80118044 00114E44  D0 3F 00 70 */	stfs f1, 0x70(r31)
 /* 80118048 00114E48  D0 1F 00 2C */	stfs f0, 0x2c(r31)
 /* 8011804C 00114E4C  D0 1F 00 1C */	stfs f0, 0x1c(r31)
 /* 80118050 00114E50  4B FE 30 15 */	bl xQuatIdent__FP5xQuat
-/* 80118054 00114E54  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118054 00114E54  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118058 00114E58  80 03 05 4C */	lwz r0, 0x54c(r3)
 /* 8011805C 00114E5C  2C 00 FF FF */	cmpwi r0, -1
 /* 80118060 00114E60  40 82 00 0C */	bne lbl_8011806C
@@ -21311,7 +21311,7 @@ lbl_80118070:
 /* 80118074 00114E74  38 00 00 00 */	li r0, 0
 /* 80118078 00114E78  98 1F 00 0A */	stb r0, 0xa(r31)
 /* 8011807C 00114E7C  90 1F 00 10 */	stw r0, 0x10(r31)
-/* 80118080 00114E80  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118080 00114E80  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118084 00114E84  4B FF 6E 7D */	bl gimme_throw_delay__17zNPCBossOmnidroidCFv
 /* 80118088 00114E88  D0 3F 00 18 */	stfs f1, 0x18(r31)
 /* 8011808C 00114E8C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -21324,7 +21324,7 @@ lbl_80118070:
 exit__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 801180A0 00114EA0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801180A4 00114EA4  7C 08 02 A6 */	mflr r0
-/* 801180A8 00114EA8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801180A8 00114EA8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801180AC 00114EAC  38 A0 00 01 */	li r5, 1
 /* 801180B0 00114EB0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801180B4 00114EB4  38 00 00 00 */	li r0, 0
@@ -21332,11 +21332,11 @@ exit__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 801180BC 00114EBC  7C 7F 1B 78 */	mr r31, r3
 /* 801180C0 00114EC0  D0 03 00 2C */	stfs f0, 0x2c(r3)
 /* 801180C4 00114EC4  38 7F 00 90 */	addi r3, r31, 0x90
-/* 801180C8 00114EC8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801180C8 00114EC8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801180CC 00114ECC  98 A4 01 F2 */	stb r5, 0x1f2(r4)
-/* 801180D0 00114ED0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801180D0 00114ED0  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801180D4 00114ED4  98 04 01 F3 */	stb r0, 0x1f3(r4)
-/* 801180D8 00114ED8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801180D8 00114ED8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801180DC 00114EDC  90 04 0C A4 */	stw r0, 0xca4(r4)
 /* 801180E0 00114EE0  4B F8 90 1D */	bl active__10xModelBlurCFv
 /* 801180E4 00114EE4  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -21393,42 +21393,42 @@ lbl_80118188:
 /* 80118194 00114F94  48 00 01 44 */	b lbl_801182D8
 lbl_80118198:
 /* 80118198 00114F98  C0 3F 00 18 */	lfs f1, 0x18(r31)
-/* 8011819C 00114F9C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011819C 00114F9C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801181A0 00114FA0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801181A4 00114FA4  41 81 02 90 */	bgt lbl_80118434
 /* 801181A8 00114FA8  38 00 00 01 */	li r0, 1
-/* 801181AC 00114FAC  C0 02 AC 9C */	lfs f0, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 801181AC 00114FAC  C0 02 AC 9C */	lfs f0, _esc__2_1659_1@sda21(r2)
 /* 801181B0 00114FB0  90 1F 00 10 */	stw r0, 0x10(r31)
 /* 801181B4 00114FB4  38 80 00 05 */	li r4, 5
-/* 801181B8 00114FB8  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 801181B8 00114FB8  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 801181BC 00114FBC  38 A0 00 01 */	li r5, 1
 /* 801181C0 00114FC0  D0 1F 00 18 */	stfs f0, 0x18(r31)
-/* 801181C4 00114FC4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801181C4 00114FC4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801181C8 00114FC8  98 03 01 F3 */	stb r0, 0x1f3(r3)
-/* 801181CC 00114FCC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801181CC 00114FCC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801181D0 00114FD0  4B FF 10 55 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 801181D4 00114FD4  48 00 02 60 */	b lbl_80118434
 lbl_801181D8:
 /* 801181D8 00114FD8  C0 3F 00 18 */	lfs f1, 0x18(r31)
-/* 801181DC 00114FDC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801181DC 00114FDC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801181E0 00114FE0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801181E4 00114FE4  41 81 02 50 */	bgt lbl_80118434
-/* 801181E8 00114FE8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801181E8 00114FE8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801181EC 00114FEC  4B FF 5B ED */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 801181F0 00114FF0  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 801181F4 00114FF4  41 81 02 40 */	bgt lbl_80118434
-/* 801181F8 00114FF8  C0 02 AC B0 */	lfs f0, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 801181F8 00114FF8  C0 02 AC B0 */	lfs f0, _esc__2_2016_0@sda21(r2)
 /* 801181FC 00114FFC  7F E3 FB 78 */	mr r3, r31
 /* 80118200 00115000  D0 1F 00 18 */	stfs f0, 0x18(r31)
 /* 80118204 00115004  48 00 03 4D */	bl begin_roll__Q217zNPCBossOmnidroid15ball_state_typeFv
 /* 80118208 00115008  7F E3 FB 78 */	mr r3, r31
 /* 8011820C 0011500C  48 00 05 41 */	bl begin_charge__Q217zNPCBossOmnidroid15ball_state_typeFv
-/* 80118210 00115010  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80118214 00115014  38 62 AB 0C */	addi r3, r2, lifetime__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4ball4blur-_SDA2_BASE_
-/* 80118218 00115018  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118210 00115010  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80118214 00115014  38 62 AB 0C */	addi r3, r2, lifetime__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4ball4blur@sda21
+/* 80118218 00115018  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011821C 0011501C  80 04 0C A8 */	lwz r0, 0xca8(r4)
 /* 80118220 00115020  90 04 0C A4 */	stw r0, 0xca4(r4)
-/* 80118224 00115024  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118224 00115024  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118228 00115028  80 85 03 4C */	lwz r4, 0x34c(r5)
 /* 8011822C 0011502C  54 80 10 3A */	slwi r0, r4, 2
 /* 80118230 00115030  7C 23 04 2E */	lfsx f1, r3, r0
@@ -21436,7 +21436,7 @@ lbl_801181D8:
 /* 80118238 00115038  40 81 01 FC */	ble lbl_80118434
 /* 8011823C 0011503C  1C 84 00 24 */	mulli r4, r4, 0x24
 /* 80118240 00115040  3C 60 80 2E */	lis r3, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4ball4blur@ha
-/* 80118244 00115044  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80118244 00115044  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 80118248 00115048  38 03 06 D8 */	addi r0, r3, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4ball4blur@l
 /* 8011824C 0011504C  80 A5 0C A8 */	lwz r5, 0xca8(r5)
 /* 80118250 00115050  38 7F 00 90 */	addi r3, r31, 0x90
@@ -21446,7 +21446,7 @@ lbl_801181D8:
 lbl_80118260:
 /* 80118260 00115060  48 00 07 C9 */	bl update_charge__Q217zNPCBossOmnidroid15ball_state_typeFf
 /* 80118264 00115064  C0 1F 00 8C */	lfs f0, 0x8c(r31)
-/* 80118268 00115068  C0 22 AD DC */	lfs f1, _esc__2_3580-_SDA2_BASE_(r2)
+/* 80118268 00115068  C0 22 AD DC */	lfs f1, _esc__2_3580@sda21(r2)
 /* 8011826C 0011506C  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 80118270 00115070  4C 40 13 82 */	cror 2, 0, 2
 /* 80118274 00115074  40 82 01 C0 */	bne lbl_80118434
@@ -21455,7 +21455,7 @@ lbl_80118260:
 /* 80118280 00115080  4C 40 13 82 */	cror 2, 0, 2
 /* 80118284 00115084  40 82 01 B0 */	bne lbl_80118434
 /* 80118288 00115088  C0 3F 00 24 */	lfs f1, 0x24(r31)
-/* 8011828C 0011508C  C0 02 AC A4 */	lfs f0, _esc__2_1661_0-_SDA2_BASE_(r2)
+/* 8011828C 0011508C  C0 02 AC A4 */	lfs f0, _esc__2_1661_0@sda21(r2)
 /* 80118290 00115090  FC 20 0A 10 */	fabs f1, f1
 /* 80118294 00115094  FC 20 08 18 */	frsp f1, f1
 /* 80118298 00115098  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -21465,7 +21465,7 @@ lbl_80118260:
 /* 801182A8 001150A8  2C 00 00 00 */	cmpwi r0, 0
 /* 801182AC 001150AC  40 81 00 20 */	ble lbl_801182CC
 /* 801182B0 001150B0  C0 3F 00 44 */	lfs f1, 0x44(r31)
-/* 801182B4 001150B4  C0 02 AC 9C */	lfs f0, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 801182B4 001150B4  C0 02 AC 9C */	lfs f0, _esc__2_1659_1@sda21(r2)
 /* 801182B8 001150B8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801182BC 001150BC  40 81 00 10 */	ble lbl_801182CC
 /* 801182C0 001150C0  7F E3 FB 78 */	mr r3, r31
@@ -21485,7 +21485,7 @@ lbl_801182EC:
 /* 801182EC 001150EC  48 00 0C 35 */	bl update_track__Q217zNPCBossOmnidroid15ball_state_typeFf
 lbl_801182F0:
 /* 801182F0 001150F0  C0 1F 00 8C */	lfs f0, 0x8c(r31)
-/* 801182F4 001150F4  C0 22 AD DC */	lfs f1, _esc__2_3580-_SDA2_BASE_(r2)
+/* 801182F4 001150F4  C0 22 AD DC */	lfs f1, _esc__2_3580@sda21(r2)
 /* 801182F8 001150F8  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 801182FC 001150FC  4C 40 13 82 */	cror 2, 0, 2
 /* 80118300 00115100  40 82 01 34 */	bne lbl_80118434
@@ -21494,7 +21494,7 @@ lbl_801182F0:
 /* 8011830C 0011510C  4C 40 13 82 */	cror 2, 0, 2
 /* 80118310 00115110  40 82 01 24 */	bne lbl_80118434
 /* 80118314 00115114  C0 3F 00 24 */	lfs f1, 0x24(r31)
-/* 80118318 00115118  C0 02 AC A4 */	lfs f0, _esc__2_1661_0-_SDA2_BASE_(r2)
+/* 80118318 00115118  C0 02 AC A4 */	lfs f0, _esc__2_1661_0@sda21(r2)
 /* 8011831C 0011511C  FC 20 0A 10 */	fabs f1, f1
 /* 80118320 00115120  FC 20 08 18 */	frsp f1, f1
 /* 80118324 00115124  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -21509,41 +21509,41 @@ lbl_801182F0:
 /* 80118348 00115148  38 7F 00 90 */	addi r3, r31, 0x90
 /* 8011834C 0011514C  48 0B D4 31 */	bl deactivate__10xModelBlurFv
 lbl_80118350:
-/* 80118350 00115150  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118350 00115150  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118354 00115154  38 00 00 00 */	li r0, 0
-/* 80118358 00115158  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118358 00115158  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011835C 0011515C  38 80 00 07 */	li r4, 7
 /* 80118360 00115160  90 03 0C A4 */	stw r0, 0xca4(r3)
 /* 80118364 00115164  38 A0 00 00 */	li r5, 0
-/* 80118368 00115168  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118368 00115168  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011836C 0011516C  4B FF 0E B9 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
-/* 80118370 00115170  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118370 00115170  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118374 00115174  38 00 00 00 */	li r0, 0
 /* 80118378 00115178  98 03 01 F3 */	stb r0, 0x1f3(r3)
 /* 8011837C 0011517C  48 00 00 B8 */	b lbl_80118434
 lbl_80118380:
-/* 80118380 00115180  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118380 00115180  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118384 00115184  4B FF DC 09 */	bl anim_get_state_id__17zNPCBossOmnidroidCFv
 /* 80118388 00115188  2C 03 00 07 */	cmpwi r3, 7
 /* 8011838C 0011518C  40 82 00 68 */	bne lbl_801183F4
-/* 80118390 00115190  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118390 00115190  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118394 00115194  4B FF 5A 45 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 80118398 00115198  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 8011839C 0011519C  4C 40 13 82 */	cror 2, 0, 2
 /* 801183A0 001151A0  40 82 00 20 */	bne lbl_801183C0
-/* 801183A4 001151A4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801183A4 001151A4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801183A8 001151A8  4B FF 6C 09 */	bl next_state__17zNPCBossOmnidroidFv
 /* 801183AC 001151AC  7C 64 1B 78 */	mr r4, r3
-/* 801183B0 001151B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801183B0 001151B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801183B4 001151B4  38 A0 00 01 */	li r5, 1
 /* 801183B8 001151B8  4B FF 1D 2D */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 /* 801183BC 001151BC  48 00 01 0C */	b lbl_801184C8
 lbl_801183C0:
-/* 801183C0 001151C0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801183C0 001151C0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801183C4 001151C4  4B FF 5A 61 */	bl anim_time_current__17zNPCBossOmnidroidCFv
-/* 801183C8 001151C8  C0 62 AF C4 */	lfs f3, _esc__2_6004-_SDA2_BASE_(r2)
-/* 801183CC 001151CC  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
-/* 801183D0 001151D0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801183C8 001151C8  C0 62 AF C4 */	lfs f3, _esc__2_6004@sda21(r2)
+/* 801183CC 001151CC  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
+/* 801183D0 001151D0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801183D4 001151D4  EC 23 10 7C */	fnmsubs f1, f3, f1, f2
 /* 801183D8 001151D8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801183DC 001151DC  4C 40 13 82 */	cror 2, 0, 2
@@ -21554,19 +21554,19 @@ lbl_801183EC:
 /* 801183EC 001151EC  4B EF 75 B5 */	bl xSCurve__Ff
 /* 801183F0 001151F0  D0 3F 00 70 */	stfs f1, 0x70(r31)
 lbl_801183F4:
-/* 801183F4 001151F4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801183F4 001151F4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801183F8 001151F8  4B FF DB 95 */	bl anim_get_state_id__17zNPCBossOmnidroidCFv
 /* 801183FC 001151FC  2C 03 00 07 */	cmpwi r3, 7
 /* 80118400 00115200  40 82 00 34 */	bne lbl_80118434
-/* 80118404 00115204  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118404 00115204  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118408 00115208  4B FF 59 D1 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 8011840C 0011520C  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 80118410 00115210  4C 40 13 82 */	cror 2, 0, 2
 /* 80118414 00115214  40 82 00 20 */	bne lbl_80118434
-/* 80118418 00115218  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118418 00115218  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011841C 0011521C  4B FF 6B 95 */	bl next_state__17zNPCBossOmnidroidFv
 /* 80118420 00115220  7C 64 1B 78 */	mr r4, r3
-/* 80118424 00115224  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118424 00115224  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118428 00115228  38 A0 00 01 */	li r5, 1
 /* 8011842C 0011522C  4B FF 1C B9 */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 /* 80118430 00115230  48 00 00 98 */	b lbl_801184C8
@@ -21575,11 +21575,11 @@ lbl_80118434:
 /* 80118438 00115238  2C 03 FF FF */	cmpwi r3, -1
 /* 8011843C 0011523C  41 82 00 80 */	beq lbl_801184BC
 /* 80118440 00115240  C0 1F 00 1C */	lfs f0, 0x1c(r31)
-/* 80118444 00115244  C0 22 AD A4 */	lfs f1, _esc__2_3187-_SDA2_BASE_(r2)
+/* 80118444 00115244  C0 22 AD A4 */	lfs f1, _esc__2_3187@sda21(r2)
 /* 80118448 00115248  FC 60 02 10 */	fabs f3, f0
-/* 8011844C 0011524C  C0 82 AF C8 */	lfs f4, _esc__2_6005-_SDA2_BASE_(r2)
-/* 80118450 00115250  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
-/* 80118454 00115254  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011844C 0011524C  C0 82 AF C8 */	lfs f4, _esc__2_6005@sda21(r2)
+/* 80118450 00115250  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
+/* 80118454 00115254  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80118458 00115258  FC 60 18 18 */	frsp f3, f3
 /* 8011845C 0011525C  EC 21 00 F2 */	fmuls f1, f1, f3
 /* 80118460 00115260  EF C4 00 F2 */	fmuls f30, f4, f3
@@ -21589,10 +21589,10 @@ lbl_80118434:
 lbl_80118470:
 /* 80118470 00115270  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 80118474 00115274  40 81 00 0C */	ble lbl_80118480
-/* 80118478 00115278  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118478 00115278  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011847C 0011527C  48 00 00 18 */	b lbl_80118494
 lbl_80118480:
-/* 80118480 00115280  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80118480 00115280  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80118484 00115284  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80118488 00115288  40 80 00 08 */	bge lbl_80118490
 /* 8011848C 0011528C  48 00 00 08 */	b lbl_80118494
@@ -21601,10 +21601,10 @@ lbl_80118490:
 lbl_80118494:
 /* 80118494 00115294  38 80 00 01 */	li r4, 1
 /* 80118498 00115298  4B F4 F0 31 */	bl xSndMgrSetVolume__F10iSndHandlefb
-/* 8011849C 0011529C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
-/* 801184A0 001152A0  C0 02 AD E0 */	lfs f0, _esc__2_3585-_SDA2_BASE_(r2)
+/* 8011849C 0011529C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
+/* 801184A0 001152A0  C0 02 AD E0 */	lfs f0, _esc__2_3585@sda21(r2)
 /* 801184A4 001152A4  EC 21 F0 28 */	fsubs f1, f1, f30
-/* 801184A8 001152A8  C0 42 AF CC */	lfs f2, _esc__2_6006-_SDA2_BASE_(r2)
+/* 801184A8 001152A8  C0 42 AF CC */	lfs f2, _esc__2_6006@sda21(r2)
 /* 801184AC 001152AC  EC 00 07 B2 */	fmuls f0, f0, f30
 /* 801184B0 001152B0  80 7F 00 74 */	lwz r3, 0x74(r31)
 /* 801184B4 001152B4  EC 22 00 7A */	fmadds f1, f2, f1, f0
@@ -21635,14 +21635,14 @@ post_move__Q217zNPCBossOmnidroid15ball_state_typeFf:
 /* 80118504 00115304  4B F8 8B F9 */	bl active__10xModelBlurCFv
 /* 80118508 00115308  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011850C 0011530C  41 82 00 14 */	beq lbl_80118520
-/* 80118510 00115310  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118510 00115310  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118514 00115314  38 7F 00 90 */	addi r3, r31, 0x90
 /* 80118518 00115318  38 84 00 8C */	addi r4, r4, 0x8c
 /* 8011851C 0011531C  48 0B D2 AD */	bl move__10xModelBlurFRC5xVec3
 lbl_80118520:
 /* 80118520 00115320  7F E3 FB 78 */	mr r3, r31
 /* 80118524 00115324  48 00 10 01 */	bl check_damage_player__Q217zNPCBossOmnidroid15ball_state_typeFv
-/* 80118528 00115328  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118528 00115328  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011852C 0011532C  38 A0 00 08 */	li r5, 8
 /* 80118530 00115330  38 C0 00 01 */	li r6, 1
 /* 80118534 00115334  38 83 00 8C */	addi r4, r3, 0x8c
@@ -21660,17 +21660,17 @@ begin_roll__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 80118558 00115358  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8011855C 0011535C  BF C1 00 18 */	stmw r30, 0x18(r1)
 /* 80118560 00115360  7C 7E 1B 78 */	mr r30, r3
-/* 80118564 00115364  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118564 00115364  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118568 00115368  C0 04 02 20 */	lfs f0, 0x220(r4)
 /* 8011856C 0011536C  D0 03 00 80 */	stfs f0, 0x80(r3)
-/* 80118570 00115370  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118570 00115370  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118574 00115374  C0 03 02 28 */	lfs f0, 0x228(r3)
 /* 80118578 00115378  D0 1E 00 84 */	stfs f0, 0x84(r30)
 /* 8011857C 0011537C  C0 3E 00 80 */	lfs f1, 0x80(r30)
 /* 80118580 00115380  C0 5E 00 84 */	lfs f2, 0x84(r30)
 /* 80118584 00115384  4B EF 79 8D */	bl xatan2__Fff
 /* 80118588 00115388  D0 3E 00 88 */	stfs f1, 0x88(r30)
-/* 8011858C 0011538C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8011858C 0011538C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80118590 00115390  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80118594 00115394  4B F6 F0 85 */	bl xEntGetFrame__FPC4xEnt
 /* 80118598 00115398  80 A3 00 30 */	lwz r5, 0x30(r3)
@@ -21679,36 +21679,36 @@ begin_roll__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 801185A4 001153A4  90 A1 00 08 */	stw r5, 8(r1)
 /* 801185A8 001153A8  90 01 00 0C */	stw r0, 0xc(r1)
 /* 801185AC 001153AC  80 03 00 38 */	lwz r0, 0x38(r3)
-/* 801185B0 001153B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801185B0 001153B0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801185B4 001153B4  90 01 00 10 */	stw r0, 0x10(r1)
 /* 801185B8 001153B8  4B FF 59 59 */	bl clamp_by_arena_circle__17zNPCBossOmnidroidCFR5xVec3
 /* 801185BC 001153BC  7F C3 F3 78 */	mr r3, r30
 /* 801185C0 001153C0  38 81 00 08 */	addi r4, r1, 8
 /* 801185C4 001153C4  48 00 0D BD */	bl refresh_goal__Q217zNPCBossOmnidroid15ball_state_typeFRC5xVec3
-/* 801185C8 001153C8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801185C8 001153C8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801185CC 001153CC  D0 1E 00 24 */	stfs f0, 0x24(r30)
 /* 801185D0 001153D0  D0 1E 00 1C */	stfs f0, 0x1c(r30)
 /* 801185D4 001153D4  C0 1E 00 88 */	lfs f0, 0x88(r30)
 /* 801185D8 001153D8  D0 1E 00 20 */	stfs f0, 0x20(r30)
-/* 801185DC 001153DC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801185DC 001153DC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801185E0 001153E0  C0 23 02 20 */	lfs f1, 0x220(r3)
 /* 801185E4 001153E4  C0 43 02 28 */	lfs f2, 0x228(r3)
 /* 801185E8 001153E8  4B EF 79 29 */	bl xatan2__Fff
 /* 801185EC 001153EC  C0 1E 00 20 */	lfs f0, 0x20(r30)
 /* 801185F0 001153F0  38 7E 00 48 */	addi r3, r30, 0x48
-/* 801185F4 001153F4  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801185F4 001153F4  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 801185F8 001153F8  EC 01 00 28 */	fsubs f0, f1, f0
 /* 801185FC 001153FC  D0 1E 00 28 */	stfs f0, 0x28(r30)
 /* 80118600 00115400  C0 1E 00 80 */	lfs f0, 0x80(r30)
 /* 80118604 00115404  C0 3E 00 84 */	lfs f1, 0x84(r30)
 /* 80118608 00115408  FC 60 00 50 */	fneg f3, f0
 /* 8011860C 0011540C  4B EF 51 CD */	bl assign__5xVec3Ffff
-/* 80118610 00115410  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118610 00115410  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118614 00115414  38 7E 00 48 */	addi r3, r30, 0x48
 /* 80118618 00115418  7C 65 1B 78 */	mr r5, r3
 /* 8011861C 0011541C  38 84 02 00 */	addi r4, r4, 0x200
 /* 80118620 00115420  4B F3 06 A1 */	bl xMat3x3LMulVec__FP5xVec3PC7xMat3x3PC5xVec3
-/* 80118624 00115424  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118624 00115424  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118628 00115428  4B EF 2E 01 */	bl xEntGetCenter__FPC4xEnt
 /* 8011862C 0011542C  3C 80 B9 A9 */	lis r4, 0xB9A90BA0@ha
 /* 80118630 00115430  7C 7F 1B 78 */	mr r31, r3
@@ -21718,7 +21718,7 @@ begin_roll__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 80118640 00115440  38 80 08 00 */	li r4, 0x800
 /* 80118644 00115444  38 C0 00 00 */	li r6, 0
 /* 80118648 00115448  38 E0 00 00 */	li r7, 0
-/* 8011864C 0011544C  39 02 AF D0 */	addi r8, r2, zero_esc__7_6017-_SDA2_BASE_
+/* 8011864C 0011544C  39 02 AF D0 */	addi r8, r2, zero_esc__7_6017@sda21
 /* 80118650 00115450  39 20 00 00 */	li r9, 0
 /* 80118654 00115454  4B F4 E6 39 */	bl xSndMgrPlay__F15iSndGroupHandleUiPC5xVec3PC5xVec3P4xEntPCfPCf
 /* 80118658 00115458  90 7E 00 74 */	stw r3, 0x74(r30)
@@ -21749,7 +21749,7 @@ reset_roll__Q217zNPCBossOmnidroid15ball_state_typeFff:
 /* 801186B0 001154B0  38 81 00 08 */	addi r4, r1, 8
 /* 801186B4 001154B4  7C 65 1B 78 */	mr r5, r3
 /* 801186B8 001154B8  4B F3 0E 9D */	bl xQuatMul__FP5xQuatPC5xQuatPC5xQuat
-/* 801186BC 001154BC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801186BC 001154BC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801186C0 001154C0  FC 20 F0 90 */	fmr f1, f30
 /* 801186C4 001154C4  FC 40 F8 90 */	fmr f2, f31
 /* 801186C8 001154C8  D0 1F 00 2C */	stfs f0, 0x2c(r31)
@@ -21759,19 +21759,19 @@ reset_roll__Q217zNPCBossOmnidroid15ball_state_typeFff:
 /* 801186D8 001154D8  D0 3F 00 88 */	stfs f1, 0x88(r31)
 /* 801186DC 001154DC  C0 1F 00 88 */	lfs f0, 0x88(r31)
 /* 801186E0 001154E0  D0 1F 00 20 */	stfs f0, 0x20(r31)
-/* 801186E4 001154E4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801186E4 001154E4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801186E8 001154E8  C0 23 02 20 */	lfs f1, 0x220(r3)
 /* 801186EC 001154EC  C0 43 02 28 */	lfs f2, 0x228(r3)
 /* 801186F0 001154F0  4B EF 78 21 */	bl xatan2__Fff
 /* 801186F4 001154F4  C0 1F 00 20 */	lfs f0, 0x20(r31)
 /* 801186F8 001154F8  FC 60 F0 50 */	fneg f3, f30
-/* 801186FC 001154FC  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801186FC 001154FC  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 80118700 00115500  38 7F 00 48 */	addi r3, r31, 0x48
 /* 80118704 00115504  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80118708 00115508  FC 20 F8 90 */	fmr f1, f31
 /* 8011870C 0011550C  D0 1F 00 28 */	stfs f0, 0x28(r31)
 /* 80118710 00115510  4B EF 50 C9 */	bl assign__5xVec3Ffff
-/* 80118714 00115514  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118714 00115514  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118718 00115518  38 7F 00 48 */	addi r3, r31, 0x48
 /* 8011871C 0011551C  7C 65 1B 78 */	mr r5, r3
 /* 80118720 00115520  38 84 02 00 */	addi r4, r4, 0x200
@@ -21800,7 +21800,7 @@ begin_charge__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 80118770 00115570  38 00 00 02 */	li r0, 2
 /* 80118774 00115574  90 03 00 10 */	stw r0, 0x10(r3)
 /* 80118778 00115578  38 00 00 00 */	li r0, 0
-/* 8011877C 0011557C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011877C 0011557C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80118780 00115580  98 03 00 0C */	stb r0, 0xc(r3)
 /* 80118784 00115584  98 03 00 08 */	stb r0, 8(r3)
 /* 80118788 00115588  98 03 00 09 */	stb r0, 9(r3)
@@ -21808,8 +21808,8 @@ begin_charge__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 80118790 00115590  80 63 00 14 */	lwz r3, 0x14(r3)
 /* 80118794 00115594  38 03 FF FF */	addi r0, r3, -1
 /* 80118798 00115598  90 1E 00 14 */	stw r0, 0x14(r30)
-/* 8011879C 0011559C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
-/* 801187A0 001155A0  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011879C 0011559C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
+/* 801187A0 001155A0  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801187A4 001155A4  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801187A8 001155A8  4B EF 2C 81 */	bl xEntGetCenter__FPC4xEnt
 /* 801187AC 001155AC  C0 23 00 08 */	lfs f1, 8(r3)
@@ -21817,7 +21817,7 @@ begin_charge__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 801187B4 001155B4  C0 43 00 00 */	lfs f2, 0(r3)
 /* 801187B8 001155B8  EF C1 00 28 */	fsubs f30, f1, f0
 /* 801187BC 001155BC  C0 3F 02 30 */	lfs f1, 0x230(r31)
-/* 801187C0 001155C0  C0 02 AF D4 */	lfs f0, _esc__2_6032-_SDA2_BASE_(r2)
+/* 801187C0 001155C0  C0 02 AF D4 */	lfs f0, _esc__2_6032@sda21(r2)
 /* 801187C4 001155C4  EF E2 08 28 */	fsubs f31, f2, f1
 /* 801187C8 001155C8  EC 3E 07 B2 */	fmuls f1, f30, f30
 /* 801187CC 001155CC  EC 3F 0F FA */	fmadds f1, f31, f31, f1
@@ -21864,9 +21864,9 @@ get_charge_target__Q217zNPCBossOmnidroid15ball_state_typeCFR5xVec3:
 /* 8011885C 0011565C  DB 21 00 20 */	stfd f25, 0x20(r1)
 /* 80118860 00115660  F3 21 00 28 */	psq_st f25, 40(r1), 0, qr0
 /* 80118864 00115664  BF 81 00 10 */	stmw r28, 0x10(r1)
-/* 80118868 00115668  80 AD 91 D0 */	lwz r5, xglobals-_SDA_BASE_(r13)
+/* 80118868 00115668  80 AD 91 D0 */	lwz r5, xglobals@sda21(r13)
 /* 8011886C 0011566C  7C 7C 1B 78 */	mr r28, r3
-/* 80118870 00115670  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118870 00115670  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118874 00115674  7C 9D 23 78 */	mr r29, r4
 /* 80118878 00115678  80 65 04 C4 */	lwz r3, 0x4c4(r5)
 /* 8011887C 0011567C  4B EF 2B AD */	bl xEntGetCenter__FPC4xEnt
@@ -21881,21 +21881,21 @@ get_charge_target__Q217zNPCBossOmnidroid15ball_state_typeCFR5xVec3:
 /* 801188A0 001156A0  EC 21 00 7A */	fmadds f1, f1, f1, f0
 /* 801188A4 001156A4  4B EF 2B D5 */	bl xsqrt__Ff
 /* 801188A8 001156A8  C0 1C 00 1C */	lfs f0, 0x1c(r28)
-/* 801188AC 001156AC  C0 62 AD 34 */	lfs f3, _esc__2_3017-_SDA2_BASE_(r2)
+/* 801188AC 001156AC  C0 62 AD 34 */	lfs f3, _esc__2_3017@sda21(r2)
 /* 801188B0 001156B0  FC 40 02 10 */	fabs f2, f0
-/* 801188B4 001156B4  C0 82 AD 3C */	lfs f4, _esc__2_3019-_SDA2_BASE_(r2)
+/* 801188B4 001156B4  C0 82 AD 3C */	lfs f4, _esc__2_3019@sda21(r2)
 /* 801188B8 001156B8  FC 40 10 18 */	frsp f2, f2
 /* 801188BC 001156BC  4B FE ED B1 */	bl xAccelMoveTime2__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Fffff
-/* 801188C0 001156C0  C0 02 AD E0 */	lfs f0, _esc__2_3585-_SDA2_BASE_(r2)
+/* 801188C0 001156C0  C0 02 AD E0 */	lfs f0, _esc__2_3585@sda21(r2)
 /* 801188C4 001156C4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801188C8 001156C8  40 81 00 08 */	ble lbl_801188D0
 /* 801188CC 001156CC  FC 20 00 90 */	fmr f1, f0
 lbl_801188D0:
-/* 801188D0 001156D0  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801188D0 001156D0  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 801188D4 001156D4  7F A3 EB 78 */	mr r3, r29
 /* 801188D8 001156D8  38 80 00 01 */	li r4, 1
 /* 801188DC 001156DC  4B FF 2D 25 */	bl player_predict__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3ffb
-/* 801188E0 001156E0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801188E0 001156E0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801188E4 001156E4  C0 3D 00 00 */	lfs f1, 0(r29)
 /* 801188E8 001156E8  C3 E3 0D B4 */	lfs f31, 0xdb4(r3)
 /* 801188EC 001156EC  C3 C3 0D BC */	lfs f30, 0xdbc(r3)
@@ -21905,7 +21905,7 @@ lbl_801188D0:
 /* 801188FC 001156FC  EF 80 F0 28 */	fsubs f28, f0, f30
 /* 80118900 00115700  C0 1E 00 08 */	lfs f0, 8(r30)
 /* 80118904 00115704  EF 62 F8 28 */	fsubs f27, f2, f31
-/* 80118908 00115708  C0 62 A8 B0 */	lfs f3, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118908 00115708  C0 62 A8 B0 */	lfs f3, _esc__2_1222@sda21(r2)
 /* 8011890C 0011570C  FC 20 E8 90 */	fmr f1, f29
 /* 80118910 00115710  FC 40 E0 90 */	fmr f2, f28
 /* 80118914 00115714  EF 40 F0 28 */	fsubs f26, f0, f30
@@ -21916,14 +21916,14 @@ lbl_801188D0:
 /* 80118928 00115728  48 00 00 B4 */	b lbl_801189DC
 lbl_8011892C:
 /* 8011892C 0011572C  FC 20 D8 90 */	fmr f1, f27
-/* 80118930 00115730  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118930 00115730  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118934 00115734  FC 40 D0 90 */	fmr f2, f26
-/* 80118938 00115738  C0 62 A8 B0 */	lfs f3, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118938 00115738  C0 62 A8 B0 */	lfs f3, _esc__2_1222@sda21(r2)
 /* 8011893C 0011573C  4B FF 5C 91 */	bl within_arena__17zNPCBossOmnidroidCFfff
 /* 80118940 00115740  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80118944 00115744  41 82 00 88 */	beq lbl_801189CC
 /* 80118948 00115748  EF 3C D0 28 */	fsubs f25, f28, f26
-/* 8011894C 0011574C  C0 02 AC 98 */	lfs f0, _esc__2_1569-_SDA2_BASE_(r2)
+/* 8011894C 0011574C  C0 02 AC 98 */	lfs f0, _esc__2_1569@sda21(r2)
 /* 80118950 00115750  EF 9D D8 28 */	fsubs f28, f29, f27
 /* 80118954 00115754  EC 39 06 72 */	fmuls f1, f25, f25
 /* 80118958 00115758  EC 3C 0F 3A */	fmadds f1, f28, f28, f1
@@ -21936,11 +21936,11 @@ lbl_8011892C:
 lbl_80118974:
 /* 80118974 00115774  4B EF 2B 05 */	bl xsqrt__Ff
 /* 80118978 00115778  FC 60 08 90 */	fmr f3, f1
-/* 8011897C 0011577C  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011897C 0011577C  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80118980 00115780  FC 20 D8 90 */	fmr f1, f27
-/* 80118984 00115784  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118984 00115784  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118988 00115788  FC 40 D0 90 */	fmr f2, f26
-/* 8011898C 0011578C  C0 C2 A8 B0 */	lfs f6, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011898C 0011578C  C0 C2 A8 B0 */	lfs f6, _esc__2_1222@sda21(r2)
 /* 80118990 00115790  FC A0 18 90 */	fmr f5, f3
 /* 80118994 00115794  EC 00 28 24 */	fdivs f0, f0, f5
 /* 80118998 00115798  EF 9C 00 32 */	fmuls f28, f28, f0
@@ -22003,7 +22003,7 @@ update_charge__Q217zNPCBossOmnidroid15ball_state_typeFf:
 /* 80118A64 00115864  DB 21 00 20 */	stfd f25, 0x20(r1)
 /* 80118A68 00115868  F3 21 00 28 */	psq_st f25, 40(r1), 0, qr0
 /* 80118A6C 0011586C  BF C1 00 18 */	stmw r30, 0x18(r1)
-/* 80118A70 00115870  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118A70 00115870  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118A74 00115874  7C 7E 1B 78 */	mr r30, r3
 /* 80118A78 00115878  FF 40 08 90 */	fmr f26, f1
 /* 80118A7C 0011587C  C0 23 00 20 */	lfs f1, 0x20(r3)
@@ -22031,13 +22031,13 @@ lbl_80118AD0:
 /* 80118AD0 001158D0  88 1E 00 0C */	lbz r0, 0xc(r30)
 /* 80118AD4 001158D4  28 00 00 00 */	cmplwi r0, 0
 /* 80118AD8 001158D8  40 82 00 14 */	bne lbl_80118AEC
-/* 80118ADC 001158DC  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80118ADC 001158DC  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 80118AE0 001158E0  38 00 00 01 */	li r0, 1
 /* 80118AE4 001158E4  D0 1E 00 40 */	stfs f0, 0x40(r30)
 /* 80118AE8 001158E8  98 1E 00 0C */	stb r0, 0xc(r30)
 lbl_80118AEC:
 /* 80118AEC 001158EC  C0 3E 00 40 */	lfs f1, 0x40(r30)
-/* 80118AF0 001158F0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118AF0 001158F0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80118AF4 001158F4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80118AF8 001158F8  4C 40 13 82 */	cror 2, 0, 2
 /* 80118AFC 001158FC  40 82 00 2C */	bne lbl_80118B28
@@ -22067,12 +22067,12 @@ lbl_80118B30:
 /* 80118B50 00115950  EC 1D 07 72 */	fmuls f0, f29, f29
 /* 80118B54 00115954  EF 7C 07 3A */	fmadds f27, f28, f28, f0
 /* 80118B58 00115958  40 82 00 40 */	bne lbl_80118B98
-/* 80118B5C 0011595C  C0 02 AD 70 */	lfs f0, _esc__2_3037-_SDA2_BASE_(r2)
+/* 80118B5C 0011595C  C0 02 AD 70 */	lfs f0, _esc__2_3037@sda21(r2)
 /* 80118B60 00115960  FC 1B 00 40 */	fcmpo cr0, f27, f0
 /* 80118B64 00115964  4C 40 13 82 */	cror 2, 0, 2
 /* 80118B68 00115968  41 82 00 18 */	beq lbl_80118B80
 /* 80118B6C 0011596C  C0 3E 00 1C */	lfs f1, 0x1c(r30)
-/* 80118B70 00115970  C0 02 AD C0 */	lfs f0, _esc__2_3313_0-_SDA2_BASE_(r2)
+/* 80118B70 00115970  C0 02 AD C0 */	lfs f0, _esc__2_3313_0@sda21(r2)
 /* 80118B74 00115974  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80118B78 00115978  4C 41 13 82 */	cror 2, 1, 2
 /* 80118B7C 0011597C  40 82 00 1C */	bne lbl_80118B98
@@ -22093,21 +22093,21 @@ lbl_80118B98:
 /* 80118BB0 001159B0  EC 42 07 72 */	fmuls f2, f2, f29
 /* 80118BB4 001159B4  C0 7E 00 34 */	lfs f3, 0x34(r30)
 /* 80118BB8 001159B8  EC 01 00 28 */	fsubs f0, f1, f0
-/* 80118BBC 001159BC  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118BBC 001159BC  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 80118BC0 001159C0  EF 23 17 3A */	fmadds f25, f3, f28, f2
 /* 80118BC4 001159C4  EC 21 00 2A */	fadds f1, f1, f0
 /* 80118BC8 001159C8  4B EF 71 CD */	bl xrmod__Ff
-/* 80118BCC 001159CC  C0 02 AD 40 */	lfs f0, _esc__2_3020-_SDA2_BASE_(r2)
-/* 80118BD0 001159D0  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118BCC 001159CC  C0 02 AD 40 */	lfs f0, _esc__2_3020@sda21(r2)
+/* 80118BD0 001159D0  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
 /* 80118BD4 001159D4  FC 1B 00 40 */	fcmpo cr0, f27, f0
 /* 80118BD8 001159D8  EC 21 10 28 */	fsubs f1, f1, f2
 /* 80118BDC 001159DC  4C 40 13 82 */	cror 2, 0, 2
 /* 80118BE0 001159E0  41 82 00 28 */	beq lbl_80118C08
-/* 80118BE4 001159E4  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118BE4 001159E4  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80118BE8 001159E8  FC 19 00 40 */	fcmpo cr0, f25, f0
 /* 80118BEC 001159EC  41 80 00 1C */	blt lbl_80118C08
 /* 80118BF0 001159F0  FC 20 0A 10 */	fabs f1, f1
-/* 80118BF4 001159F4  C0 02 AF D8 */	lfs f0, _esc__2_6098-_SDA2_BASE_(r2)
+/* 80118BF4 001159F4  C0 02 AF D8 */	lfs f0, _esc__2_6098@sda21(r2)
 /* 80118BF8 001159F8  FC 20 08 18 */	frsp f1, f1
 /* 80118BFC 001159FC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80118C00 00115A00  4C 41 13 82 */	cror 2, 1, 2
@@ -22122,27 +22122,27 @@ lbl_80118C1C:
 /* 80118C1C 00115A1C  FC 20 D8 90 */	fmr f1, f27
 /* 80118C20 00115A20  4B EF 28 59 */	bl xsqrt__Ff
 /* 80118C24 00115A24  FC E0 08 90 */	fmr f7, f1
-/* 80118C28 00115A28  C0 82 A8 B4 */	lfs f4, _esc__2_1223-_SDA2_BASE_(r2)
-/* 80118C2C 00115A2C  C0 02 AF 0C */	lfs f0, _esc__2_4933-_SDA2_BASE_(r2)
+/* 80118C28 00115A28  C0 82 A8 B4 */	lfs f4, _esc__2_1223@sda21(r2)
+/* 80118C2C 00115A2C  C0 02 AF 0C */	lfs f0, _esc__2_4933@sda21(r2)
 /* 80118C30 00115A30  FC 20 F8 90 */	fmr f1, f31
-/* 80118C34 00115A34  C0 62 AE DC */	lfs f3, _esc__2_4810-_SDA2_BASE_(r2)
+/* 80118C34 00115A34  C0 62 AE DC */	lfs f3, _esc__2_4810@sda21(r2)
 /* 80118C38 00115A38  FC 40 F0 90 */	fmr f2, f30
 /* 80118C3C 00115A3C  EC 84 38 24 */	fdivs f4, f4, f7
-/* 80118C40 00115A40  C0 C2 A8 B0 */	lfs f6, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118C40 00115A40  C0 C2 A8 B0 */	lfs f6, _esc__2_1222@sda21(r2)
 /* 80118C44 00115A44  EC BC 01 32 */	fmuls f5, f28, f4
 /* 80118C48 00115A48  EC 9D 01 32 */	fmuls f4, f29, f4
 /* 80118C4C 00115A4C  EC 00 38 2A */	fadds f0, f0, f7
 /* 80118C50 00115A50  D0 BE 00 80 */	stfs f5, 0x80(r30)
 /* 80118C54 00115A54  D0 9E 00 84 */	stfs f4, 0x84(r30)
 /* 80118C58 00115A58  EC A3 00 2A */	fadds f5, f3, f0
-/* 80118C5C 00115A5C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118C5C 00115A5C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118C60 00115A60  C0 7E 00 80 */	lfs f3, 0x80(r30)
 /* 80118C64 00115A64  C0 9E 00 84 */	lfs f4, 0x84(r30)
 /* 80118C68 00115A68  4B FF 55 C5 */	bl clip_ray_by_arena__17zNPCBossOmnidroidCFffffff
 /* 80118C6C 00115A6C  D0 3E 00 8C */	stfs f1, 0x8c(r30)
-/* 80118C70 00115A70  C0 22 AE DC */	lfs f1, _esc__2_4810-_SDA2_BASE_(r2)
+/* 80118C70 00115A70  C0 22 AE DC */	lfs f1, _esc__2_4810@sda21(r2)
 /* 80118C74 00115A74  C0 5E 00 8C */	lfs f2, 0x8c(r30)
-/* 80118C78 00115A78  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118C78 00115A78  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80118C7C 00115A7C  EC 22 08 28 */	fsubs f1, f2, f1
 /* 80118C80 00115A80  D0 3E 00 8C */	stfs f1, 0x8c(r30)
 /* 80118C84 00115A84  C0 3E 00 8C */	lfs f1, 0x8c(r30)
@@ -22181,32 +22181,32 @@ lbl_80118CF8:
 /* 80118CFC 00115AFC  C0 5E 00 84 */	lfs f2, 0x84(r30)
 /* 80118D00 00115B00  4B EF 72 11 */	bl xatan2__Fff
 /* 80118D04 00115B04  D0 3E 00 88 */	stfs f1, 0x88(r30)
-/* 80118D08 00115B08  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118D08 00115B08  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
 /* 80118D0C 00115B0C  C0 3E 00 88 */	lfs f1, 0x88(r30)
 /* 80118D10 00115B10  C0 1E 00 20 */	lfs f0, 0x20(r30)
 /* 80118D14 00115B14  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80118D18 00115B18  EC 22 00 2A */	fadds f1, f2, f0
 /* 80118D1C 00115B1C  4B EF 70 79 */	bl xrmod__Ff
-/* 80118D20 00115B20  C0 62 AC E8 */	lfs f3, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118D20 00115B20  C0 62 AC E8 */	lfs f3, _esc__2_2843@sda21(r2)
 /* 80118D24 00115B24  FC 40 D0 90 */	fmr f2, f26
 /* 80118D28 00115B28  C0 1E 00 20 */	lfs f0, 0x20(r30)
 /* 80118D2C 00115B2C  38 7E 00 20 */	addi r3, r30, 0x20
 /* 80118D30 00115B30  EC 61 18 28 */	fsubs f3, f1, f3
-/* 80118D34 00115B34  C0 22 AF DC */	lfs f1, _esc__2_6099-_SDA2_BASE_(r2)
+/* 80118D34 00115B34  C0 22 AF DC */	lfs f1, _esc__2_6099@sda21(r2)
 /* 80118D38 00115B38  38 9E 00 24 */	addi r4, r30, 0x24
 /* 80118D3C 00115B3C  FC 80 08 90 */	fmr f4, f1
 /* 80118D40 00115B40  EC 60 18 2A */	fadds f3, f0, f3
 /* 80118D44 00115B44  4B F2 AA E5 */	bl xAccelMove__FRfRfffff
-/* 80118D48 00115B48  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118D48 00115B48  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 80118D4C 00115B4C  C0 1E 00 20 */	lfs f0, 0x20(r30)
 /* 80118D50 00115B50  EC 21 00 2A */	fadds f1, f1, f0
 /* 80118D54 00115B54  4B EF 70 41 */	bl xrmod__Ff
-/* 80118D58 00115B58  C0 02 AC E8 */	lfs f0, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118D58 00115B58  C0 02 AC E8 */	lfs f0, _esc__2_2843@sda21(r2)
 /* 80118D5C 00115B5C  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80118D60 00115B60  D0 1E 00 20 */	stfs f0, 0x20(r30)
 /* 80118D64 00115B64  C0 3E 00 20 */	lfs f1, 0x20(r30)
 /* 80118D68 00115B68  C0 1E 00 28 */	lfs f0, 0x28(r30)
-/* 80118D6C 00115B6C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118D6C 00115B6C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118D70 00115B70  EC 21 00 2A */	fadds f1, f1, f0
 /* 80118D74 00115B74  38 63 02 00 */	addi r3, r3, 0x200
 /* 80118D78 00115B78  4B F2 F8 4D */	bl xMat3x3RotY__FP7xMat3x3f
@@ -22216,7 +22216,7 @@ lbl_80118CF8:
 /* 80118D88 00115B88  C0 3E 00 20 */	lfs f1, 0x20(r30)
 /* 80118D8C 00115B8C  FF A0 00 90 */	fmr f29, f0
 /* 80118D90 00115B90  4B F5 DA 9D */	bl icos__Ff
-/* 80118D94 00115B94  C0 62 A8 B0 */	lfs f3, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118D94 00115B94  C0 62 A8 B0 */	lfs f3, _esc__2_1222@sda21(r2)
 /* 80118D98 00115B98  FF 80 08 90 */	fmr f28, f1
 /* 80118D9C 00115B9C  D0 61 00 08 */	stfs f3, 8(r1)
 /* 80118DA0 00115BA0  C0 1E 00 84 */	lfs f0, 0x84(r30)
@@ -22231,15 +22231,15 @@ lbl_80118CF8:
 lbl_80118DC4:
 /* 80118DC4 00115BC4  C0 1E 00 1C */	lfs f0, 0x1c(r30)
 /* 80118DC8 00115BC8  FC 20 F8 90 */	fmr f1, f31
-/* 80118DCC 00115BCC  C0 A2 AF 04 */	lfs f5, _esc__2_4931-_SDA2_BASE_(r2)
+/* 80118DCC 00115BCC  C0 A2 AF 04 */	lfs f5, _esc__2_4931@sda21(r2)
 /* 80118DD0 00115BD0  FC 40 F0 90 */	fmr f2, f30
 /* 80118DD4 00115BD4  FC C0 02 10 */	fabs f6, f0
-/* 80118DD8 00115BD8  C0 02 AD 28 */	lfs f0, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80118DD8 00115BD8  C0 02 AD 28 */	lfs f0, _esc__2_3014@sda21(r2)
 /* 80118DDC 00115BDC  FC 60 E8 90 */	fmr f3, f29
 /* 80118DE0 00115BE0  FC 80 E0 90 */	fmr f4, f28
-/* 80118DE4 00115BE4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118DE4 00115BE4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118DE8 00115BE8  FC E0 30 18 */	frsp f7, f6
-/* 80118DEC 00115BEC  C0 C2 A8 B0 */	lfs f6, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118DEC 00115BEC  C0 C2 A8 B0 */	lfs f6, _esc__2_1222@sda21(r2)
 /* 80118DF0 00115BF0  EC A7 28 24 */	fdivs f5, f7, f5
 /* 80118DF4 00115BF4  EC 00 01 72 */	fmuls f0, f0, f5
 /* 80118DF8 00115BF8  EC 00 01 72 */	fmuls f0, f0, f5
@@ -22247,31 +22247,31 @@ lbl_80118DC4:
 /* 80118E00 00115C00  FC A0 C8 90 */	fmr f5, f25
 /* 80118E04 00115C04  4B FF 54 29 */	bl clip_ray_by_arena__17zNPCBossOmnidroidCFffffff
 /* 80118E08 00115C08  FC 19 08 40 */	fcmpo cr0, f25, f1
-/* 80118E0C 00115C0C  C0 C2 AF 04 */	lfs f6, _esc__2_4931-_SDA2_BASE_(r2)
+/* 80118E0C 00115C0C  C0 C2 AF 04 */	lfs f6, _esc__2_4931@sda21(r2)
 /* 80118E10 00115C10  40 81 00 44 */	ble lbl_80118E54
 /* 80118E14 00115C14  FC 1B 08 40 */	fcmpo cr0, f27, f1
 /* 80118E18 00115C18  40 81 00 08 */	ble lbl_80118E20
 /* 80118E1C 00115C1C  FF 60 08 90 */	fmr f27, f1
 lbl_80118E20:
-/* 80118E20 00115C20  C0 02 AC A4 */	lfs f0, _esc__2_1661_0-_SDA2_BASE_(r2)
+/* 80118E20 00115C20  C0 02 AC A4 */	lfs f0, _esc__2_1661_0@sda21(r2)
 /* 80118E24 00115C24  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80118E28 00115C28  4C 40 13 82 */	cror 2, 0, 2
 /* 80118E2C 00115C2C  40 82 00 14 */	bne lbl_80118E40
-/* 80118E30 00115C30  C3 62 A8 B0 */	lfs f27, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118E30 00115C30  C3 62 A8 B0 */	lfs f27, _esc__2_1222@sda21(r2)
 /* 80118E34 00115C34  D3 7E 00 1C */	stfs f27, 0x1c(r30)
 /* 80118E38 00115C38  D3 7E 00 8C */	stfs f27, 0x8c(r30)
 /* 80118E3C 00115C3C  48 00 00 18 */	b lbl_80118E54
 lbl_80118E40:
 /* 80118E40 00115C40  C0 5E 00 1C */	lfs f2, 0x1c(r30)
-/* 80118E44 00115C44  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 80118E44 00115C44  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 80118E48 00115C48  EC 00 00 B2 */	fmuls f0, f0, f2
 /* 80118E4C 00115C4C  EC 00 00 B2 */	fmuls f0, f0, f2
 /* 80118E50 00115C50  EC C0 08 24 */	fdivs f6, f0, f1
 lbl_80118E54:
 /* 80118E54 00115C54  FC 60 D0 90 */	fmr f3, f26
-/* 80118E58 00115C58  C0 42 AD 34 */	lfs f2, _esc__2_3017-_SDA2_BASE_(r2)
+/* 80118E58 00115C58  C0 42 AD 34 */	lfs f2, _esc__2_3017@sda21(r2)
 /* 80118E5C 00115C5C  FC 80 D8 90 */	fmr f4, f27
-/* 80118E60 00115C60  C0 A2 AD 3C */	lfs f5, _esc__2_3019-_SDA2_BASE_(r2)
+/* 80118E60 00115C60  C0 A2 AD 3C */	lfs f5, _esc__2_3019@sda21(r2)
 /* 80118E64 00115C64  FC 20 30 50 */	fneg f1, f6
 /* 80118E68 00115C68  38 61 00 08 */	addi r3, r1, 8
 /* 80118E6C 00115C6C  38 9E 00 1C */	addi r4, r30, 0x1c
@@ -22288,16 +22288,16 @@ lbl_80118E54:
 /* 80118E98 00115C98  C0 1F 02 38 */	lfs f0, 0x238(r31)
 /* 80118E9C 00115C9C  EC 1C 00 7A */	fmadds f0, f28, f1, f0
 /* 80118EA0 00115CA0  D0 1F 02 38 */	stfs f0, 0x238(r31)
-/* 80118EA4 00115CA4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118EA4 00115CA4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118EA8 00115CA8  4B FF 58 89 */	bl get_body_radius__17zNPCBossOmnidroidCFv
 /* 80118EAC 00115CAC  C0 01 00 08 */	lfs f0, 8(r1)
 /* 80118EB0 00115CB0  C0 5E 00 2C */	lfs f2, 0x2c(r30)
 /* 80118EB4 00115CB4  EC 00 08 24 */	fdivs f0, f0, f1
-/* 80118EB8 00115CB8  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118EB8 00115CB8  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 80118EBC 00115CBC  EC 02 00 2A */	fadds f0, f2, f0
 /* 80118EC0 00115CC0  EC 21 00 2A */	fadds f1, f1, f0
 /* 80118EC4 00115CC4  4B EF 6E D1 */	bl xrmod__Ff
-/* 80118EC8 00115CC8  C0 02 AC E8 */	lfs f0, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118EC8 00115CC8  C0 02 AC E8 */	lfs f0, _esc__2_2843@sda21(r2)
 /* 80118ECC 00115CCC  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80118ED0 00115CD0  D0 1E 00 2C */	stfs f0, 0x2c(r30)
 /* 80118ED4 00115CD4  E3 E1 00 88 */	psq_l f31, 136(r1), 0, qr0
@@ -22338,30 +22338,30 @@ update_track__Q217zNPCBossOmnidroid15ball_state_typeFf:
 /* 80118F54 00115D54  48 00 04 2D */	bl refresh_goal__Q217zNPCBossOmnidroid15ball_state_typeFRC5xVec3
 /* 80118F58 00115D58  C0 3F 00 88 */	lfs f1, 0x88(r31)
 /* 80118F5C 00115D5C  C0 1F 00 20 */	lfs f0, 0x20(r31)
-/* 80118F60 00115D60  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118F60 00115D60  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
 /* 80118F64 00115D64  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80118F68 00115D68  EC 22 00 2A */	fadds f1, f2, f0
 /* 80118F6C 00115D6C  4B EF 6E 29 */	bl xrmod__Ff
-/* 80118F70 00115D70  C0 62 AC E8 */	lfs f3, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118F70 00115D70  C0 62 AC E8 */	lfs f3, _esc__2_2843@sda21(r2)
 /* 80118F74 00115D74  FC 40 F8 90 */	fmr f2, f31
 /* 80118F78 00115D78  C0 1F 00 20 */	lfs f0, 0x20(r31)
 /* 80118F7C 00115D7C  38 7F 00 20 */	addi r3, r31, 0x20
 /* 80118F80 00115D80  EC 61 18 28 */	fsubs f3, f1, f3
-/* 80118F84 00115D84  C0 22 AE 78 */	lfs f1, _esc__2_3978-_SDA2_BASE_(r2)
+/* 80118F84 00115D84  C0 22 AE 78 */	lfs f1, _esc__2_3978@sda21(r2)
 /* 80118F88 00115D88  38 9F 00 24 */	addi r4, r31, 0x24
 /* 80118F8C 00115D8C  FC 80 08 90 */	fmr f4, f1
 /* 80118F90 00115D90  EC 60 18 2A */	fadds f3, f0, f3
 /* 80118F94 00115D94  4B F2 A8 95 */	bl xAccelMove__FRfRfffff
-/* 80118F98 00115D98  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118F98 00115D98  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 80118F9C 00115D9C  C0 1F 00 20 */	lfs f0, 0x20(r31)
 /* 80118FA0 00115DA0  EC 21 00 2A */	fadds f1, f1, f0
 /* 80118FA4 00115DA4  4B EF 6D F1 */	bl xrmod__Ff
-/* 80118FA8 00115DA8  C0 02 AC E8 */	lfs f0, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80118FA8 00115DA8  C0 02 AC E8 */	lfs f0, _esc__2_2843@sda21(r2)
 /* 80118FAC 00115DAC  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80118FB0 00115DB0  D0 1F 00 20 */	stfs f0, 0x20(r31)
 /* 80118FB4 00115DB4  C0 3F 00 20 */	lfs f1, 0x20(r31)
 /* 80118FB8 00115DB8  C0 1F 00 28 */	lfs f0, 0x28(r31)
-/* 80118FBC 00115DBC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80118FBC 00115DBC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80118FC0 00115DC0  EC 21 00 2A */	fadds f1, f1, f0
 /* 80118FC4 00115DC4  38 63 02 00 */	addi r3, r3, 0x200
 /* 80118FC8 00115DC8  4B F2 F5 FD */	bl xMat3x3RotY__FP7xMat3x3f
@@ -22370,7 +22370,7 @@ update_track__Q217zNPCBossOmnidroid15ball_state_typeFf:
 /* 80118FD4 00115DD4  FF A0 08 90 */	fmr f29, f1
 /* 80118FD8 00115DD8  C0 3F 00 20 */	lfs f1, 0x20(r31)
 /* 80118FDC 00115DDC  4B F5 D8 51 */	bl icos__Ff
-/* 80118FE0 00115DE0  C0 62 A8 B0 */	lfs f3, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80118FE0 00115DE0  C0 62 A8 B0 */	lfs f3, _esc__2_1222@sda21(r2)
 /* 80118FE4 00115DE4  FF C0 08 90 */	fmr f30, f1
 /* 80118FE8 00115DE8  D0 61 00 08 */	stfs f3, 8(r1)
 /* 80118FEC 00115DEC  C0 1F 00 84 */	lfs f0, 0x84(r31)
@@ -22384,24 +22384,24 @@ update_track__Q217zNPCBossOmnidroid15ball_state_typeFf:
 /* 8011900C 00115E0C  FC 80 18 90 */	fmr f4, f3
 lbl_80119010:
 /* 80119010 00115E10  FC 60 F8 90 */	fmr f3, f31
-/* 80119014 00115E14  C0 22 AF AC */	lfs f1, _esc__2_5813-_SDA2_BASE_(r2)
-/* 80119018 00115E18  C0 42 AD 40 */	lfs f2, _esc__2_3020-_SDA2_BASE_(r2)
+/* 80119014 00115E14  C0 22 AF AC */	lfs f1, _esc__2_5813@sda21(r2)
+/* 80119018 00115E18  C0 42 AD 40 */	lfs f2, _esc__2_3020@sda21(r2)
 /* 8011901C 00115E1C  38 61 00 08 */	addi r3, r1, 8
-/* 80119020 00115E20  C0 A2 AD 3C */	lfs f5, _esc__2_3019-_SDA2_BASE_(r2)
+/* 80119020 00115E20  C0 A2 AD 3C */	lfs f5, _esc__2_3019@sda21(r2)
 /* 80119024 00115E24  38 9F 00 1C */	addi r4, r31, 0x1c
 /* 80119028 00115E28  4B F2 AA ED */	bl xAccelMove2__FRfRffffff
-/* 8011902C 00115E2C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011902C 00115E2C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119030 00115E30  C0 41 00 08 */	lfs f2, 8(r1)
 /* 80119034 00115E34  C0 23 02 30 */	lfs f1, 0x230(r3)
-/* 80119038 00115E38  C0 02 AF D4 */	lfs f0, _esc__2_6032-_SDA2_BASE_(r2)
+/* 80119038 00115E38  C0 02 AF D4 */	lfs f0, _esc__2_6032@sda21(r2)
 /* 8011903C 00115E3C  EC 3D 08 BA */	fmadds f1, f29, f2, f1
 /* 80119040 00115E40  D0 23 02 30 */	stfs f1, 0x230(r3)
-/* 80119044 00115E44  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119044 00115E44  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119048 00115E48  C0 41 00 08 */	lfs f2, 8(r1)
 /* 8011904C 00115E4C  C0 23 02 38 */	lfs f1, 0x238(r3)
 /* 80119050 00115E50  EC 3E 08 BA */	fmadds f1, f30, f2, f1
 /* 80119054 00115E54  D0 23 02 38 */	stfs f1, 0x238(r3)
-/* 80119058 00115E58  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119058 00115E58  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011905C 00115E5C  C0 3F 00 5C */	lfs f1, 0x5c(r31)
 /* 80119060 00115E60  C0 43 02 38 */	lfs f2, 0x238(r3)
 /* 80119064 00115E64  C0 63 02 30 */	lfs f3, 0x230(r3)
@@ -22412,21 +22412,21 @@ lbl_80119010:
 /* 80119078 00115E78  EC 22 08 BA */	fmadds f1, f2, f2, f1
 /* 8011907C 00115E7C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80119080 00115E80  40 80 00 14 */	bge lbl_80119094
-/* 80119084 00115E84  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80119084 00115E84  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80119088 00115E88  38 00 00 01 */	li r0, 1
 /* 8011908C 00115E8C  D0 1F 00 8C */	stfs f0, 0x8c(r31)
 /* 80119090 00115E90  98 1F 00 0B */	stb r0, 0xb(r31)
 lbl_80119094:
-/* 80119094 00115E94  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119094 00115E94  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119098 00115E98  4B FF 56 99 */	bl get_body_radius__17zNPCBossOmnidroidCFv
 /* 8011909C 00115E9C  C0 01 00 08 */	lfs f0, 8(r1)
 /* 801190A0 00115EA0  C0 5F 00 2C */	lfs f2, 0x2c(r31)
 /* 801190A4 00115EA4  EC 00 08 24 */	fdivs f0, f0, f1
-/* 801190A8 00115EA8  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 801190A8 00115EA8  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 801190AC 00115EAC  EC 02 00 2A */	fadds f0, f2, f0
 /* 801190B0 00115EB0  EC 21 00 2A */	fadds f1, f1, f0
 /* 801190B4 00115EB4  4B EF 6C E1 */	bl xrmod__Ff
-/* 801190B8 00115EB8  C0 02 AC E8 */	lfs f0, _esc__2_2843-_SDA2_BASE_(r2)
+/* 801190B8 00115EB8  C0 02 AC E8 */	lfs f0, _esc__2_2843@sda21(r2)
 /* 801190BC 00115EBC  EC 01 00 28 */	fsubs f0, f1, f0
 /* 801190C0 00115EC0  D0 1F 00 2C */	stfs f0, 0x2c(r31)
 /* 801190C4 00115EC4  E3 E1 00 48 */	psq_l f31, 72(r1), 0, qr0
@@ -22455,21 +22455,21 @@ update_halt__Q217zNPCBossOmnidroid15ball_state_typeFf:
 /* 80119114 00115F14  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 80119118 00115F18  FF A0 08 90 */	fmr f29, f1
 /* 8011911C 00115F1C  7C 7F 1B 78 */	mr r31, r3
-/* 80119120 00115F20  C0 22 AE 78 */	lfs f1, _esc__2_3978-_SDA2_BASE_(r2)
+/* 80119120 00115F20  C0 22 AE 78 */	lfs f1, _esc__2_3978@sda21(r2)
 /* 80119124 00115F24  38 7F 00 20 */	addi r3, r31, 0x20
 /* 80119128 00115F28  38 9F 00 24 */	addi r4, r31, 0x24
 /* 8011912C 00115F2C  FC 40 E8 90 */	fmr f2, f29
 /* 80119130 00115F30  4B F2 B1 21 */	bl xAccelStop__FRfRfff
-/* 80119134 00115F34  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80119134 00115F34  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 80119138 00115F38  C0 1F 00 20 */	lfs f0, 0x20(r31)
 /* 8011913C 00115F3C  EC 21 00 2A */	fadds f1, f1, f0
 /* 80119140 00115F40  4B EF 6C 55 */	bl xrmod__Ff
-/* 80119144 00115F44  C0 02 AC E8 */	lfs f0, _esc__2_2843-_SDA2_BASE_(r2)
+/* 80119144 00115F44  C0 02 AC E8 */	lfs f0, _esc__2_2843@sda21(r2)
 /* 80119148 00115F48  EC 01 00 28 */	fsubs f0, f1, f0
 /* 8011914C 00115F4C  D0 1F 00 20 */	stfs f0, 0x20(r31)
 /* 80119150 00115F50  C0 3F 00 20 */	lfs f1, 0x20(r31)
 /* 80119154 00115F54  C0 1F 00 28 */	lfs f0, 0x28(r31)
-/* 80119158 00115F58  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119158 00115F58  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011915C 00115F5C  EC 21 00 2A */	fadds f1, f1, f0
 /* 80119160 00115F60  38 63 02 00 */	addi r3, r3, 0x200
 /* 80119164 00115F64  4B F2 F4 61 */	bl xMat3x3RotY__FP7xMat3x3f
@@ -22478,34 +22478,34 @@ update_halt__Q217zNPCBossOmnidroid15ball_state_typeFf:
 /* 80119170 00115F70  FF C0 08 90 */	fmr f30, f1
 /* 80119174 00115F74  C0 3F 00 20 */	lfs f1, 0x20(r31)
 /* 80119178 00115F78  4B F5 D6 B5 */	bl icos__Ff
-/* 8011917C 00115F7C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011917C 00115F7C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80119180 00115F80  FF E0 08 90 */	fmr f31, f1
 /* 80119184 00115F84  FC 40 E8 90 */	fmr f2, f29
-/* 80119188 00115F88  C0 22 AD 3C */	lfs f1, _esc__2_3019-_SDA2_BASE_(r2)
+/* 80119188 00115F88  C0 22 AD 3C */	lfs f1, _esc__2_3019@sda21(r2)
 /* 8011918C 00115F8C  D0 01 00 08 */	stfs f0, 8(r1)
 /* 80119190 00115F90  38 61 00 08 */	addi r3, r1, 8
 /* 80119194 00115F94  38 9F 00 1C */	addi r4, r31, 0x1c
 /* 80119198 00115F98  4B F2 B0 B9 */	bl xAccelStop__FRfRfff
-/* 8011919C 00115F9C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011919C 00115F9C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801191A0 00115FA0  C0 21 00 08 */	lfs f1, 8(r1)
 /* 801191A4 00115FA4  C0 03 02 30 */	lfs f0, 0x230(r3)
 /* 801191A8 00115FA8  EC 1E 00 7A */	fmadds f0, f30, f1, f0
 /* 801191AC 00115FAC  D0 03 02 30 */	stfs f0, 0x230(r3)
-/* 801191B0 00115FB0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801191B0 00115FB0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801191B4 00115FB4  C0 21 00 08 */	lfs f1, 8(r1)
 /* 801191B8 00115FB8  C0 03 02 38 */	lfs f0, 0x238(r3)
 /* 801191BC 00115FBC  EC 1F 00 7A */	fmadds f0, f31, f1, f0
 /* 801191C0 00115FC0  D0 03 02 38 */	stfs f0, 0x238(r3)
-/* 801191C4 00115FC4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801191C4 00115FC4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801191C8 00115FC8  4B FF 55 69 */	bl get_body_radius__17zNPCBossOmnidroidCFv
 /* 801191CC 00115FCC  C0 01 00 08 */	lfs f0, 8(r1)
 /* 801191D0 00115FD0  C0 5F 00 2C */	lfs f2, 0x2c(r31)
 /* 801191D4 00115FD4  EC 00 08 24 */	fdivs f0, f0, f1
-/* 801191D8 00115FD8  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 801191D8 00115FD8  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 801191DC 00115FDC  EC 02 00 2A */	fadds f0, f2, f0
 /* 801191E0 00115FE0  EC 21 00 2A */	fadds f1, f1, f0
 /* 801191E4 00115FE4  4B EF 6B B1 */	bl xrmod__Ff
-/* 801191E8 00115FE8  C0 02 AC E8 */	lfs f0, _esc__2_2843-_SDA2_BASE_(r2)
+/* 801191E8 00115FE8  C0 02 AC E8 */	lfs f0, _esc__2_2843@sda21(r2)
 /* 801191EC 00115FEC  EC 01 00 28 */	fsubs f0, f1, f0
 /* 801191F0 00115FF0  D0 1F 00 2C */	stfs f0, 0x2c(r31)
 /* 801191F4 00115FF4  E3 E1 00 48 */	psq_l f31, 72(r1), 0, qr0
@@ -22534,16 +22534,16 @@ begin_prepare_stop__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 80119244 00116044  DB 81 00 10 */	stfd f28, 0x10(r1)
 /* 80119248 00116048  F3 81 00 18 */	psq_st f28, 24(r1), 0, qr0
 /* 8011924C 0011604C  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 80119250 00116050  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119250 00116050  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119254 00116054  7C 7F 1B 78 */	mr r31, r3
 /* 80119258 00116058  38 00 00 03 */	li r0, 3
-/* 8011925C 0011605C  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8011925C 0011605C  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 80119260 00116060  80 84 03 4C */	lwz r4, 0x34c(r4)
-/* 80119264 00116064  C0 22 AF E0 */	lfs f1, _esc__2_6122-_SDA2_BASE_(r2)
+/* 80119264 00116064  C0 22 AF E0 */	lfs f1, _esc__2_6122@sda21(r2)
 /* 80119268 00116068  90 1F 00 10 */	stw r0, 0x10(r31)
 /* 8011926C 0011606C  54 80 10 3A */	slwi r0, r4, 2
 /* 80119270 00116070  7C 03 04 2E */	lfsx f0, r3, r0
-/* 80119274 00116074  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119274 00116074  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119278 00116078  EF C1 00 32 */	fmuls f30, f1, f0
 /* 8011927C 0011607C  C0 23 02 38 */	lfs f1, 0x238(r3)
 /* 80119280 00116080  C0 03 0D BC */	lfs f0, 0xdbc(r3)
@@ -22555,7 +22555,7 @@ begin_prepare_stop__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 80119298 00116098  EC 3D 07 7A */	fmadds f1, f29, f29, f0
 /* 8011929C 0011609C  4B EF 21 DD */	bl xsqrt__Ff
 /* 801192A0 001160A0  FF E0 08 90 */	fmr f31, f1
-/* 801192A4 001160A4  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801192A4 001160A4  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801192A8 001160A8  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 801192AC 001160AC  40 80 00 10 */	bge lbl_801192BC
 /* 801192B0 001160B0  38 00 00 01 */	li r0, 1
@@ -22563,8 +22563,8 @@ begin_prepare_stop__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 801192B8 001160B8  48 00 00 94 */	b lbl_8011934C
 lbl_801192BC:
 /* 801192BC 001160BC  EC 00 F8 24 */	fdivs f0, f0, f31
-/* 801192C0 001160C0  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
-/* 801192C4 001160C4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801192C0 001160C0  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
+/* 801192C4 001160C4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801192C8 001160C8  EF BD 00 32 */	fmuls f29, f29, f0
 /* 801192CC 001160CC  EF 9C 00 32 */	fmuls f28, f28, f0
 /* 801192D0 001160D0  FC 40 08 90 */	fmr f2, f1
@@ -22574,7 +22574,7 @@ lbl_801192BC:
 /* 801192E0 001160E0  EC BF F0 2A */	fadds f5, f31, f30
 /* 801192E4 001160E4  4B FF 4F 49 */	bl clip_ray_by_arena__17zNPCBossOmnidroidCFffffff
 /* 801192E8 001160E8  EF C1 F0 28 */	fsubs f30, f1, f30
-/* 801192EC 001160EC  C0 02 AC A4 */	lfs f0, _esc__2_1661_0-_SDA2_BASE_(r2)
+/* 801192EC 001160EC  C0 02 AC A4 */	lfs f0, _esc__2_1661_0@sda21(r2)
 /* 801192F0 001160F0  EC 00 F0 2A */	fadds f0, f0, f30
 /* 801192F4 001160F4  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 801192F8 001160F8  4C 40 13 82 */	cror 2, 0, 2
@@ -22586,7 +22586,7 @@ lbl_8011930C:
 /* 8011930C 0011610C  38 00 00 00 */	li r0, 0
 /* 80119310 00116110  38 7F 00 54 */	addi r3, r31, 0x54
 /* 80119314 00116114  98 1F 00 0B */	stb r0, 0xb(r31)
-/* 80119318 00116118  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119318 00116118  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011931C 0011611C  38 84 0D B4 */	addi r4, r4, 0xdb4
 /* 80119320 00116120  4B EF 1D 89 */	bl __as__5xVec3FRC5xVec3
 /* 80119324 00116124  C0 1F 00 54 */	lfs f0, 0x54(r31)
@@ -22629,7 +22629,7 @@ refresh_goal__Q217zNPCBossOmnidroid15ball_state_typeFRC5xVec3:
 /* 801193A8 001161A8  C0 04 00 08 */	lfs f0, 8(r4)
 /* 801193AC 001161AC  D0 23 00 78 */	stfs f1, 0x78(r3)
 /* 801193B0 001161B0  D0 03 00 7C */	stfs f0, 0x7c(r3)
-/* 801193B4 001161B4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801193B4 001161B4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801193B8 001161B8  C0 3F 00 7C */	lfs f1, 0x7c(r31)
 /* 801193BC 001161BC  C0 03 02 38 */	lfs f0, 0x238(r3)
 /* 801193C0 001161C0  C0 5F 00 78 */	lfs f2, 0x78(r31)
@@ -22640,11 +22640,11 @@ refresh_goal__Q217zNPCBossOmnidroid15ball_state_typeFRC5xVec3:
 /* 801193D4 001161D4  EC 3F 07 FA */	fmadds f1, f31, f31, f0
 /* 801193D8 001161D8  4B EF 20 A1 */	bl xsqrt__Ff
 /* 801193DC 001161DC  D0 3F 00 8C */	stfs f1, 0x8c(r31)
-/* 801193E0 001161E0  C0 02 AC A4 */	lfs f0, _esc__2_1661_0-_SDA2_BASE_(r2)
+/* 801193E0 001161E0  C0 02 AC A4 */	lfs f0, _esc__2_1661_0@sda21(r2)
 /* 801193E4 001161E4  C0 7F 00 8C */	lfs f3, 0x8c(r31)
 /* 801193E8 001161E8  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 801193EC 001161EC  41 80 00 2C */	blt lbl_80119418
-/* 801193F0 001161F0  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 801193F0 001161F0  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801193F4 001161F4  FC 20 F8 90 */	fmr f1, f31
 /* 801193F8 001161F8  FC 40 F0 90 */	fmr f2, f30
 /* 801193FC 001161FC  EC 00 18 24 */	fdivs f0, f0, f3
@@ -22669,7 +22669,7 @@ lbl_80119418:
 transform_anim__Q217zNPCBossOmnidroid15ball_state_typeFP9xAnimPlayP5xQuatP5xVec3i:
 /* 8011943C 0011623C  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80119440 00116240  7C 08 02 A6 */	mflr r0
-/* 80119444 00116244  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 80119444 00116244  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 80119448 00116248  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8011944C 0011624C  BF C1 00 38 */	stmw r30, 0x38(r1)
 /* 80119450 00116250  7C 7E 1B 78 */	mr r30, r3
@@ -22691,7 +22691,7 @@ transform_anim__Q217zNPCBossOmnidroid15ball_state_typeFP9xAnimPlayP5xQuatP5xVec3
 /* 80119490 00116290  38 81 00 18 */	addi r4, r1, 0x18
 /* 80119494 00116294  4B F3 00 C1 */	bl xQuatMul__FP5xQuatPC5xQuatPC5xQuat
 /* 80119498 00116298  C0 3E 00 70 */	lfs f1, 0x70(r30)
-/* 8011949C 0011629C  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011949C 0011629C  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 801194A0 001162A0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801194A4 001162A4  4C 41 13 82 */	cror 2, 1, 2
 /* 801194A8 001162A8  40 82 00 14 */	bne lbl_801194BC
@@ -22715,12 +22715,12 @@ lbl_801194CC:
 detect_player__Q217zNPCBossOmnidroid15ball_state_typeCFv:
 /* 801194E0 001162E0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801194E4 001162E4  7C 08 02 A6 */	mflr r0
-/* 801194E8 001162E8  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 801194EC 001162EC  C0 22 AD E0 */	lfs f1, _esc__2_3585-_SDA2_BASE_(r2)
+/* 801194E8 001162E8  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 801194EC 001162EC  C0 22 AD E0 */	lfs f1, _esc__2_3585@sda21(r2)
 /* 801194F0 001162F0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801194F4 001162F4  C0 42 AF C0 */	lfs f2, _esc__2_5907-_SDA2_BASE_(r2)
-/* 801194F8 001162F8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801194FC 001162FC  C0 62 A8 B0 */	lfs f3, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801194F4 001162F4  C0 42 AF C0 */	lfs f2, _esc__2_5907@sda21(r2)
+/* 801194F8 001162F8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 801194FC 001162FC  C0 62 A8 B0 */	lfs f3, _esc__2_1222@sda21(r2)
 /* 80119500 00116300  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 80119504 00116304  54 00 10 3A */	slwi r0, r0, 2
 /* 80119508 00116308  7C 04 04 2E */	lfsx f0, r4, r0
@@ -22739,11 +22739,11 @@ check_damage_player__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 80119530 00116330  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 80119534 00116334  F3 E1 00 78 */	psq_st f31, 120(r1), 0, qr0
 /* 80119538 00116338  BF 41 00 58 */	stmw r26, 0x58(r1)
-/* 8011953C 0011633C  80 82 F0 EC */	lwz r4, _esc__2_6155-_SDA2_BASE_(r2)
+/* 8011953C 0011633C  80 82 F0 EC */	lwz r4, _esc__2_6155@sda21(r2)
 /* 80119540 00116340  7C 7D 1B 78 */	mr r29, r3
-/* 80119544 00116344  80 62 F0 F0 */	lwz r3, lbl_803D8E10-_SDA2_BASE_(r2)
-/* 80119548 00116348  80 02 F0 F4 */	lwz r0, lbl_803D8E14-_SDA2_BASE_(r2)
-/* 8011954C 0011634C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119544 00116344  80 62 F0 F0 */	lwz r3, lbl_803D8E10@sda21(r2)
+/* 80119548 00116348  80 02 F0 F4 */	lwz r0, lbl_803D8E14@sda21(r2)
+/* 8011954C 0011634C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119550 00116350  90 81 00 2C */	stw r4, 0x2c(r1)
 /* 80119554 00116354  3B E5 00 8C */	addi r31, r5, 0x8c
 /* 80119558 00116358  90 61 00 30 */	stw r3, 0x30(r1)
@@ -22753,16 +22753,16 @@ check_damage_player__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 80119568 00116368  D0 21 00 2C */	stfs f1, 0x2c(r1)
 /* 8011956C 0011636C  C0 3D 00 20 */	lfs f1, 0x20(r29)
 /* 80119570 00116370  4B F5 D2 BD */	bl icos__Ff
-/* 80119574 00116374  80 62 F0 F8 */	lwz r3, _esc__2_6156-_SDA2_BASE_(r2)
+/* 80119574 00116374  80 62 F0 F8 */	lwz r3, _esc__2_6156@sda21(r2)
 /* 80119578 00116378  FC 00 08 18 */	frsp f0, f1
-/* 8011957C 0011637C  80 A2 F0 FC */	lwz r5, lbl_803D8E1C-_SDA2_BASE_(r2)
+/* 8011957C 0011637C  80 A2 F0 FC */	lwz r5, lbl_803D8E1C@sda21(r2)
 /* 80119580 00116380  38 81 00 38 */	addi r4, r1, 0x38
-/* 80119584 00116384  80 02 F1 00 */	lwz r0, lbl_803D8E20-_SDA2_BASE_(r2)
+/* 80119584 00116384  80 02 F1 00 */	lwz r0, lbl_803D8E20@sda21(r2)
 /* 80119588 00116388  3B C0 00 00 */	li r30, 0
 /* 8011958C 0011638C  D0 21 00 34 */	stfs f1, 0x34(r1)
 /* 80119590 00116390  C0 21 00 2C */	lfs f1, 0x2c(r1)
 /* 80119594 00116394  90 61 00 20 */	stw r3, 0x20(r1)
-/* 80119598 00116398  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80119598 00116398  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8011959C 0011639C  90 A1 00 24 */	stw r5, 0x24(r1)
 /* 801195A0 001163A0  90 01 00 28 */	stw r0, 0x28(r1)
 /* 801195A4 001163A4  C0 5D 00 1C */	lfs f2, 0x1c(r29)
@@ -22804,7 +22804,7 @@ lbl_801195D0:
 /* 80119630 00116430  38 61 00 08 */	addi r3, r1, 8
 /* 80119634 00116434  38 81 00 20 */	addi r4, r1, 0x20
 /* 80119638 00116438  4B EF 1C 2D */	bl dot__5xVec3CFRC5xVec3
-/* 8011963C 0011643C  C0 02 AD 34 */	lfs f0, _esc__2_3017-_SDA2_BASE_(r2)
+/* 8011963C 0011643C  C0 02 AD 34 */	lfs f0, _esc__2_3017@sda21(r2)
 /* 80119640 00116440  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80119644 00116444  4C 41 13 82 */	cror 2, 1, 2
 /* 80119648 00116448  40 82 00 0C */	bne lbl_80119654
@@ -22819,8 +22819,8 @@ lbl_80119660:
 /* 80119660 00116460  28 1E 00 00 */	cmplwi r30, 0
 /* 80119664 00116464  40 82 00 80 */	bne lbl_801196E4
 /* 80119668 00116468  80 A1 00 38 */	lwz r5, 0x38(r1)
-/* 8011966C 0011646C  38 62 AA F4 */	addi r3, r2, squeesh__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4ball-_SDA2_BASE_
-/* 80119670 00116470  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011966C 0011646C  38 62 AA F4 */	addi r3, r2, squeesh__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4ball@sda21
+/* 80119670 00116470  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119674 00116474  C0 25 00 08 */	lfs f1, 8(r5)
 /* 80119678 00116478  C0 1F 00 08 */	lfs f0, 8(r31)
 /* 8011967C 0011647C  80 04 03 4C */	lwz r0, 0x34c(r4)
@@ -22861,7 +22861,7 @@ lbl_801196E4:
 /* 80119704 00116504  EC 01 00 28 */	fsubs f0, f1, f0
 /* 80119708 00116508  C0 21 00 2C */	lfs f1, 0x2c(r1)
 /* 8011970C 0011650C  EC 43 00 B2 */	fmuls f2, f3, f2
-/* 80119710 00116510  C3 E2 AF E4 */	lfs f31, _esc__2_6182-_SDA2_BASE_(r2)
+/* 80119710 00116510  C3 E2 AF E4 */	lfs f31, _esc__2_6182@sda21(r2)
 /* 80119714 00116514  EC 01 00 32 */	fmuls f0, f1, f0
 /* 80119718 00116518  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8011971C 0011651C  40 80 00 08 */	bge lbl_80119724
@@ -22876,9 +22876,9 @@ lbl_80119724:
 /* 8011973C 0011653C  FF E0 00 90 */	fmr f31, f0
 /* 80119740 00116540  4B F5 D0 ED */	bl icos__Ff
 /* 80119744 00116544  FC 00 08 90 */	fmr f0, f1
-/* 80119748 00116548  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119748 00116548  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011974C 0011654C  FC 40 F8 90 */	fmr f2, f31
-/* 80119750 00116550  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80119750 00116550  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80119754 00116554  38 80 00 08 */	li r4, 8
 /* 80119758 00116558  38 A0 00 01 */	li r5, 1
 /* 8011975C 0011655C  FC 60 00 90 */	fmr f3, f0
@@ -22905,19 +22905,19 @@ refresh_dust_ring_config__Q217zNPCBossOmnidroid15ball_state_typeFv:
 /* 801197A0 001165A0  7C 7F 1B 78 */	mr r31, r3
 /* 801197A4 001165A4  38 7F 00 94 */	addi r3, r31, 0x94
 /* 801197A8 001165A8  48 09 54 5D */	bl load_default_config__16zDustRingEmitterFRQ216zDustRingEmitter11config_type
-/* 801197AC 001165AC  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801197B0 001165B0  38 C2 A8 B8 */	addi r6, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 801197B4 001165B4  C0 62 AC 80 */	lfs f3, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 801197AC 001165AC  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 801197B0 001165B0  38 C2 A8 B8 */	addi r6, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 801197B4 001165B4  C0 62 AC 80 */	lfs f3, _esc__2_1438_0@sda21(r2)
 /* 801197B8 001165B8  38 7F 00 A8 */	addi r3, r31, 0xa8
 /* 801197BC 001165BC  80 04 03 4C */	lwz r0, 0x34c(r4)
 /* 801197C0 001165C0  38 9F 00 94 */	addi r4, r31, 0x94
-/* 801197C4 001165C4  C0 22 AC E4 */	lfs f1, _esc__2_2824-_SDA2_BASE_(r2)
+/* 801197C4 001165C4  C0 22 AC E4 */	lfs f1, _esc__2_2824@sda21(r2)
 /* 801197C8 001165C8  54 00 10 3A */	slwi r0, r0, 2
-/* 801197CC 001165CC  C0 02 AC AC */	lfs f0, _esc__2_2015_1-_SDA2_BASE_(r2)
+/* 801197CC 001165CC  C0 02 AC AC */	lfs f0, _esc__2_2015_1@sda21(r2)
 /* 801197D0 001165D0  7C 46 04 2E */	lfsx f2, r6, r0
 /* 801197D4 001165D4  EC 43 00 B2 */	fmuls f2, f3, f2
 /* 801197D8 001165D8  D0 5F 00 94 */	stfs f2, 0x94(r31)
-/* 801197DC 001165DC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801197DC 001165DC  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 801197E0 001165E0  80 05 03 4C */	lwz r0, 0x34c(r5)
 /* 801197E4 001165E4  54 00 10 3A */	slwi r0, r0, 2
 /* 801197E8 001165E8  7C 46 04 2E */	lfsx f2, r6, r0
@@ -22943,10 +22943,10 @@ update_dust__Q217zNPCBossOmnidroid15ball_state_typeFf:
 /* 8011982C 0011662C  F3 C1 00 18 */	psq_st f30, 24(r1), 0, qr0
 /* 80119830 00116630  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80119834 00116634  7C 7F 1B 78 */	mr r31, r3
-/* 80119838 00116638  C0 62 AF E8 */	lfs f3, _esc__2_6208-_SDA2_BASE_(r2)
+/* 80119838 00116638  C0 62 AF E8 */	lfs f3, _esc__2_6208@sda21(r2)
 /* 8011983C 0011663C  C0 43 00 1C */	lfs f2, 0x1c(r3)
 /* 80119840 00116640  FF C0 08 90 */	fmr f30, f1
-/* 80119844 00116644  C0 02 AD 30 */	lfs f0, _esc__2_3016-_SDA2_BASE_(r2)
+/* 80119844 00116644  C0 02 AD 30 */	lfs f0, _esc__2_3016@sda21(r2)
 /* 80119848 00116648  FC 20 12 10 */	fabs f1, f2
 /* 8011984C 0011664C  FC 20 08 18 */	frsp f1, f1
 /* 80119850 00116650  EF E3 00 72 */	fmuls f31, f3, f1
@@ -22954,35 +22954,35 @@ update_dust__Q217zNPCBossOmnidroid15ball_state_typeFf:
 /* 80119858 00116658  40 81 00 08 */	ble lbl_80119860
 /* 8011985C 0011665C  FF E0 00 90 */	fmr f31, f0
 lbl_80119860:
-/* 80119860 00116660  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119860 00116660  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119864 00116664  4B FF C7 29 */	bl anim_get_state_id__17zNPCBossOmnidroidCFv
 /* 80119868 00116668  2C 03 00 05 */	cmpwi r3, 5
 /* 8011986C 0011666C  40 82 00 48 */	bne lbl_801198B4
-/* 80119870 00116670  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119870 00116670  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119874 00116674  4B FF 45 B1 */	bl anim_time_current__17zNPCBossOmnidroidCFv
-/* 80119878 00116678  C0 02 AF EC */	lfs f0, _esc__2_6209-_SDA2_BASE_(r2)
+/* 80119878 00116678  C0 02 AF EC */	lfs f0, _esc__2_6209@sda21(r2)
 /* 8011987C 0011667C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80119880 00116680  4C 41 13 82 */	cror 2, 1, 2
 /* 80119884 00116684  40 82 00 30 */	bne lbl_801198B4
-/* 80119888 00116688  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119888 00116688  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011988C 0011668C  4B FF 45 99 */	bl anim_time_current__17zNPCBossOmnidroidCFv
-/* 80119890 00116690  C0 02 AF F0 */	lfs f0, _esc__2_6210-_SDA2_BASE_(r2)
+/* 80119890 00116690  C0 02 AF F0 */	lfs f0, _esc__2_6210@sda21(r2)
 /* 80119894 00116694  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80119898 00116698  4C 40 13 82 */	cror 2, 0, 2
 /* 8011989C 0011669C  40 82 00 18 */	bne lbl_801198B4
-/* 801198A0 001166A0  C0 22 AD 30 */	lfs f1, _esc__2_3016-_SDA2_BASE_(r2)
-/* 801198A4 001166A4  C0 02 AD 50 */	lfs f0, _esc__2_3024-_SDA2_BASE_(r2)
+/* 801198A0 001166A0  C0 22 AD 30 */	lfs f1, _esc__2_3016@sda21(r2)
+/* 801198A4 001166A4  C0 02 AD 50 */	lfs f0, _esc__2_3024@sda21(r2)
 /* 801198A8 001166A8  EF FF 08 2A */	fadds f31, f31, f1
 /* 801198AC 001166AC  D0 1F 00 A4 */	stfs f0, 0xa4(r31)
 /* 801198B0 001166B0  48 00 00 0C */	b lbl_801198BC
 lbl_801198B4:
-/* 801198B4 001166B4  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 801198B4 001166B4  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 801198B8 001166B8  D0 1F 00 A4 */	stfs f0, 0xa4(r31)
 lbl_801198BC:
 /* 801198BC 001166BC  38 7F 00 A8 */	addi r3, r31, 0xa8
 /* 801198C0 001166C0  38 9F 00 94 */	addi r4, r31, 0x94
 /* 801198C4 001166C4  48 09 53 61 */	bl set_config__16zDustRingEmitterFPCQ216zDustRingEmitter11config_type
-/* 801198C8 001166C8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 801198C8 001166C8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 801198CC 001166CC  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 801198D0 001166D0  40 80 00 20 */	bge lbl_801198F0
 /* 801198D4 001166D4  38 7F 00 A8 */	addi r3, r31, 0xa8
@@ -23004,7 +23004,7 @@ lbl_80119908:
 /* 8011990C 0011670C  4B FF E6 FD */	bl active__16zDustRingEmitterCFv
 /* 80119910 00116710  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80119914 00116714  41 82 00 1C */	beq lbl_80119930
-/* 80119918 00116718  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119918 00116718  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011991C 0011671C  FC 20 F8 90 */	fmr f1, f31
 /* 80119920 00116720  FC 40 F0 90 */	fmr f2, f30
 /* 80119924 00116724  38 7F 00 A8 */	addi r3, r31, 0xa8
@@ -23025,42 +23025,42 @@ lbl_80119930:
 setup__Q217zNPCBossOmnidroid21smash_rock_state_typeFv:
 /* 80119954 00116754  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80119958 00116758  7C 08 02 A6 */	mflr r0
-/* 8011995C 0011675C  C0 22 AF F4 */	lfs f1, _esc__2_6215-_SDA2_BASE_(r2)
+/* 8011995C 0011675C  C0 22 AF F4 */	lfs f1, _esc__2_6215@sda21(r2)
 /* 80119960 00116760  38 80 00 0D */	li r4, 0xd
 /* 80119964 00116764  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80119968 00116768  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011996C 0011676C  7C 7F 1B 78 */	mr r31, r3
-/* 80119970 00116770  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119970 00116770  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119974 00116774  48 00 00 95 */	bl anim_slam_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumf
-/* 80119978 00116778  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119978 00116778  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011997C 0011677C  38 9F 00 08 */	addi r4, r31, 8
 /* 80119980 00116780  38 A0 00 00 */	li r5, 0
 /* 80119984 00116784  38 C0 00 06 */	li r6, 6
 /* 80119988 00116788  4B FF 0E 41 */	bl eval_leg_points__17zNPCBossOmnidroidFP5xVec3ii
-/* 8011998C 0011678C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011998C 0011678C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119990 00116790  38 9F 00 48 */	addi r4, r31, 0x48
-/* 80119994 00116794  C0 22 AD 80 */	lfs f1, _esc__2_3049-_SDA2_BASE_(r2)
+/* 80119994 00116794  C0 22 AD 80 */	lfs f1, _esc__2_3049@sda21(r2)
 /* 80119998 00116798  4B FF 3A 51 */	bl refresh_impact_decal__17zNPCBossOmnidroidFRQ26xDecal12emit_contextf
 /* 8011999C 0011679C  7F E3 FB 78 */	mr r3, r31
 /* 801199A0 001167A0  48 00 06 45 */	bl refresh_debris__Q217zNPCBossOmnidroid21smash_rock_state_typeFv
 /* 801199A4 001167A4  38 7F 00 B0 */	addi r3, r31, 0xb0
 /* 801199A8 001167A8  38 80 00 01 */	li r4, 1
-/* 801199AC 001167AC  38 A2 AB 54 */	addi r5, r2, shrap_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock4grab-_SDA2_BASE_
+/* 801199AC 001167AC  38 A2 AB 54 */	addi r5, r2, shrap_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock4grab@sda21
 /* 801199B0 001167B0  38 C0 00 05 */	li r6, 5
 /* 801199B4 001167B4  4B F2 AD 15 */	bl reset__14xResponseCurveFUiPCvUi
 /* 801199B8 001167B8  38 7F 00 C0 */	addi r3, r31, 0xc0
 /* 801199BC 001167BC  38 80 00 01 */	li r4, 1
-/* 801199C0 001167C0  38 A2 AB 7C */	addi r5, r2, debris_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock4grab-_SDA2_BASE_
+/* 801199C0 001167C0  38 A2 AB 7C */	addi r5, r2, debris_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock4grab@sda21
 /* 801199C4 001167C4  38 C0 00 02 */	li r6, 2
 /* 801199C8 001167C8  4B F2 AD 01 */	bl reset__14xResponseCurveFUiPCvUi
 /* 801199CC 001167CC  38 7F 00 D0 */	addi r3, r31, 0xd0
 /* 801199D0 001167D0  38 80 00 01 */	li r4, 1
-/* 801199D4 001167D4  38 A2 AB 8C */	addi r5, r2, puff_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock4grab-_SDA2_BASE_
+/* 801199D4 001167D4  38 A2 AB 8C */	addi r5, r2, puff_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock4grab@sda21
 /* 801199D8 001167D8  38 C0 00 02 */	li r6, 2
 /* 801199DC 001167DC  4B F2 AC ED */	bl reset__14xResponseCurveFUiPCvUi
 /* 801199E0 001167E0  38 7F 00 E0 */	addi r3, r31, 0xe0
 /* 801199E4 001167E4  38 80 00 01 */	li r4, 1
-/* 801199E8 001167E8  38 A2 AB 9C */	addi r5, r2, trail_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock4grab-_SDA2_BASE_
+/* 801199E8 001167E8  38 A2 AB 9C */	addi r5, r2, trail_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock4grab@sda21
 /* 801199EC 001167EC  38 C0 00 02 */	li r6, 2
 /* 801199F0 001167F0  4B F2 AC D9 */	bl reset__14xResponseCurveFUiPCvUi
 /* 801199F4 001167F4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -23094,14 +23094,14 @@ enter__Q217zNPCBossOmnidroid21smash_rock_state_typeFv:
 /* 80119A4C 0011684C  98 03 00 9E */	stb r0, 0x9e(r3)
 /* 80119A50 00116850  98 03 00 9D */	stb r0, 0x9d(r3)
 /* 80119A54 00116854  98 03 00 9C */	stb r0, 0x9c(r3)
-/* 80119A58 00116858  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119A58 00116858  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119A5C 0011685C  38 63 0D 40 */	addi r3, r3, 0xd40
 /* 80119A60 00116860  48 00 00 35 */	bl end__28pool_list_esc__0_Q21z11rubble_bomb_esc__1_CFv
 /* 80119A64 00116864  90 7F 00 44 */	stw r3, 0x44(r31)
 /* 80119A68 00116868  38 9F 00 B0 */	addi r4, r31, 0xb0
 /* 80119A6C 0011686C  38 BF 00 C0 */	addi r5, r31, 0xc0
 /* 80119A70 00116870  38 DF 00 D0 */	addi r6, r31, 0xd0
-/* 80119A74 00116874  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119A74 00116874  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119A78 00116878  38 FF 00 E0 */	addi r7, r31, 0xe0
 /* 80119A7C 0011687C  4B FF 31 91 */	bl start_rock_grab_effects__17zNPCBossOmnidroidFRC14xResponseCurveRC14xResponseCurveRC14xResponseCurveRC14xResponseCurve
 /* 80119A80 00116880  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -23124,15 +23124,15 @@ exit__Q217zNPCBossOmnidroid21smash_rock_state_typeFv:
 /* 80119AAC 001168AC  38 00 00 01 */	li r0, 1
 /* 80119AB0 001168B0  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80119AB4 001168B4  7C 7E 1B 78 */	mr r30, r3
-/* 80119AB8 001168B8  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119AB8 001168B8  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119ABC 001168BC  98 05 01 F2 */	stb r0, 0x1f2(r5)
-/* 80119AC0 001168C0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119AC0 001168C0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119AC4 001168C4  4B FF D0 C5 */	bl get_leg__17zNPCBossOmnidroidFi
 /* 80119AC8 001168C8  7C 7F 1B 78 */	mr r31, r3
 /* 80119ACC 001168CC  4B FF 71 41 */	bl damage_disable__Q217zNPCBossOmnidroid8leg_typeFv
 /* 80119AD0 001168D0  38 00 00 00 */	li r0, 0
 /* 80119AD4 001168D4  98 1F 14 55 */	stb r0, 0x1455(r31)
-/* 80119AD8 001168D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119AD8 001168D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119ADC 001168DC  38 63 0D 40 */	addi r3, r3, 0xd40
 /* 80119AE0 001168E0  4B FF FF B5 */	bl end__28pool_list_esc__0_Q21z11rubble_bomb_esc__1_CFv
 /* 80119AE4 001168E4  80 9E 00 44 */	lwz r4, 0x44(r30)
@@ -23141,15 +23141,15 @@ exit__Q217zNPCBossOmnidroid21smash_rock_state_typeFv:
 /* 80119AF0 001168F0  38 64 00 10 */	addi r3, r4, 0x10
 /* 80119AF4 001168F4  48 0C D5 19 */	bl blur_end__Q21z11rubble_bombFv
 /* 80119AF8 001168F8  80 7E 00 44 */	lwz r3, 0x44(r30)
-/* 80119AFC 001168FC  38 82 AB 20 */	addi r4, r2, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock10smash_ring-_SDA2_BASE_
+/* 80119AFC 001168FC  38 82 AB 20 */	addi r4, r2, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock10smash_ring@sda21
 /* 80119B00 00116900  38 63 00 10 */	addi r3, r3, 0x10
 /* 80119B04 00116904  48 00 00 31 */	bl set_smash_ring_config__Q21z11rubble_bombFPCQ217zSmashRingEmitter11config_type
 /* 80119B08 00116908  80 7E 00 44 */	lwz r3, 0x44(r30)
-/* 80119B0C 0011690C  C0 22 AD 9C */	lfs f1, _esc__2_3117-_SDA2_BASE_(r2)
+/* 80119B0C 0011690C  C0 22 AD 9C */	lfs f1, _esc__2_3117@sda21(r2)
 /* 80119B10 00116910  38 63 00 10 */	addi r3, r3, 0x10
 /* 80119B14 00116914  48 0C D7 C9 */	bl explode__Q21z11rubble_bombFf
 lbl_80119B18:
-/* 80119B18 00116918  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119B18 00116918  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119B1C 0011691C  4B FF 31 D9 */	bl stop_rock_grab_effects__17zNPCBossOmnidroidFv
 /* 80119B20 00116920  BB C1 00 08 */	lmw r30, 8(r1)
 /* 80119B24 00116924  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -23174,22 +23174,22 @@ update__Q217zNPCBossOmnidroid21smash_rock_state_typeFf:
 /* 80119B58 00116958  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80119B5C 0011695C  FF C0 08 90 */	fmr f30, f1
 /* 80119B60 00116960  7C 7E 1B 78 */	mr r30, r3
-/* 80119B64 00116964  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119B64 00116964  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119B68 00116968  4B FF 42 F9 */	bl blending_facing__17zNPCBossOmnidroidCFv
 /* 80119B6C 0011696C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80119B70 00116970  40 82 01 78 */	bne lbl_80119CE8
 /* 80119B74 00116974  88 1E 00 9C */	lbz r0, 0x9c(r30)
 /* 80119B78 00116978  28 00 00 00 */	cmplwi r0, 0
 /* 80119B7C 0011697C  40 82 00 44 */	bne lbl_80119BC0
-/* 80119B80 00116980  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119B80 00116980  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119B84 00116984  38 00 00 00 */	li r0, 0
-/* 80119B88 00116988  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 80119B88 00116988  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 80119B8C 0011698C  38 80 00 0D */	li r4, 0xd
 /* 80119B90 00116990  98 03 01 F2 */	stb r0, 0x1f2(r3)
 /* 80119B94 00116994  38 A0 00 01 */	li r5, 1
-/* 80119B98 00116998  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119B98 00116998  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119B9C 0011699C  4B FE F6 89 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
-/* 80119BA0 001169A0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119BA0 001169A0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119BA4 001169A4  3B E0 00 01 */	li r31, 1
 /* 80119BA8 001169A8  38 80 00 00 */	li r4, 0
 /* 80119BAC 001169AC  4B FF CF DD */	bl get_leg__17zNPCBossOmnidroidFi
@@ -23198,39 +23198,39 @@ update__Q217zNPCBossOmnidroid21smash_rock_state_typeFf:
 /* 80119BB8 001169B8  98 1E 00 9C */	stb r0, 0x9c(r30)
 /* 80119BBC 001169BC  48 00 01 2C */	b lbl_80119CE8
 lbl_80119BC0:
-/* 80119BC0 001169C0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119BC0 001169C0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119BC4 001169C4  4B FF 42 15 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 80119BC8 001169C8  FC 01 F0 40 */	fcmpo cr0, f1, f30
 /* 80119BCC 001169CC  4C 40 13 82 */	cror 2, 0, 2
 /* 80119BD0 001169D0  40 82 00 20 */	bne lbl_80119BF0
-/* 80119BD4 001169D4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119BD4 001169D4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119BD8 001169D8  4B FF 53 D9 */	bl next_state__17zNPCBossOmnidroidFv
 /* 80119BDC 001169DC  7C 64 1B 78 */	mr r4, r3
-/* 80119BE0 001169E0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119BE0 001169E0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119BE4 001169E4  38 A0 00 01 */	li r5, 1
 /* 80119BE8 001169E8  4B FF 04 FD */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 /* 80119BEC 001169EC  48 00 00 FC */	b lbl_80119CE8
 lbl_80119BF0:
-/* 80119BF0 001169F0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119BF0 001169F0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119BF4 001169F4  4B FF 42 31 */	bl anim_time_current__17zNPCBossOmnidroidCFv
 /* 80119BF8 001169F8  FF E0 08 90 */	fmr f31, f1
-/* 80119BFC 001169FC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119BFC 001169FC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119C00 00116A00  38 80 00 00 */	li r4, 0
 /* 80119C04 00116A04  4B FF CF 85 */	bl get_leg__17zNPCBossOmnidroidFi
 /* 80119C08 00116A08  7C 7F 1B 78 */	mr r31, r3
 /* 80119C0C 00116A0C  4B FF D1 05 */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 80119C10 00116A10  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80119C14 00116A14  40 82 00 3C */	bne lbl_80119C50
-/* 80119C18 00116A18  C0 02 AE EC */	lfs f0, _esc__2_4837-_SDA2_BASE_(r2)
+/* 80119C18 00116A18  C0 02 AE EC */	lfs f0, _esc__2_4837@sda21(r2)
 /* 80119C1C 00116A1C  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80119C20 00116A20  4C 41 13 82 */	cror 2, 1, 2
 /* 80119C24 00116A24  40 82 00 2C */	bne lbl_80119C50
-/* 80119C28 00116A28  C0 02 AF F8 */	lfs f0, _esc__2_6261-_SDA2_BASE_(r2)
+/* 80119C28 00116A28  C0 02 AF F8 */	lfs f0, _esc__2_6261@sda21(r2)
 /* 80119C2C 00116A2C  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80119C30 00116A30  40 80 00 20 */	bge lbl_80119C50
-/* 80119C34 00116A34  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 80119C34 00116A34  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 80119C38 00116A38  7F E3 FB 78 */	mr r3, r31
-/* 80119C3C 00116A3C  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80119C3C 00116A3C  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 80119C40 00116A40  38 80 00 0A */	li r4, 0xa
 /* 80119C44 00116A44  38 A0 00 00 */	li r5, 0
 /* 80119C48 00116A48  4B FF 6F A9 */	bl damage_enable__Q217zNPCBossOmnidroid8leg_typeFiffPC5xVec3
@@ -23240,7 +23240,7 @@ lbl_80119C50:
 /* 80119C54 00116A54  4B FF D0 BD */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 80119C58 00116A58  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80119C5C 00116A5C  41 82 00 1C */	beq lbl_80119C78
-/* 80119C60 00116A60  C0 02 AF F8 */	lfs f0, _esc__2_6261-_SDA2_BASE_(r2)
+/* 80119C60 00116A60  C0 02 AF F8 */	lfs f0, _esc__2_6261@sda21(r2)
 /* 80119C64 00116A64  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80119C68 00116A68  4C 41 13 82 */	cror 2, 1, 2
 /* 80119C6C 00116A6C  40 82 00 0C */	bne lbl_80119C78
@@ -23250,21 +23250,21 @@ lbl_80119C78:
 /* 80119C78 00116A78  88 1E 00 9E */	lbz r0, 0x9e(r30)
 /* 80119C7C 00116A7C  28 00 00 00 */	cmplwi r0, 0
 /* 80119C80 00116A80  40 82 00 28 */	bne lbl_80119CA8
-/* 80119C84 00116A84  C0 02 AC AC */	lfs f0, _esc__2_2015_1-_SDA2_BASE_(r2)
+/* 80119C84 00116A84  C0 02 AC AC */	lfs f0, _esc__2_2015_1@sda21(r2)
 /* 80119C88 00116A88  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80119C8C 00116A8C  4C 41 13 82 */	cror 2, 1, 2
 /* 80119C90 00116A90  40 82 00 18 */	bne lbl_80119CA8
-/* 80119C94 00116A94  C0 02 AF F4 */	lfs f0, _esc__2_6215-_SDA2_BASE_(r2)
+/* 80119C94 00116A94  C0 02 AF F4 */	lfs f0, _esc__2_6215@sda21(r2)
 /* 80119C98 00116A98  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80119C9C 00116A9C  40 80 00 0C */	bge lbl_80119CA8
 /* 80119CA0 00116AA0  7F C3 F3 78 */	mr r3, r30
 /* 80119CA4 00116AA4  48 00 01 69 */	bl create_rock__Q217zNPCBossOmnidroid21smash_rock_state_typeFv
 lbl_80119CA8:
-/* 80119CA8 00116AA8  C0 02 AF FC */	lfs f0, _esc__2_6262-_SDA2_BASE_(r2)
+/* 80119CA8 00116AA8  C0 02 AF FC */	lfs f0, _esc__2_6262@sda21(r2)
 /* 80119CAC 00116AAC  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80119CB0 00116AB0  4C 41 13 82 */	cror 2, 1, 2
 /* 80119CB4 00116AB4  40 82 00 1C */	bne lbl_80119CD0
-/* 80119CB8 00116AB8  C0 02 AF F4 */	lfs f0, _esc__2_6215-_SDA2_BASE_(r2)
+/* 80119CB8 00116AB8  C0 02 AF F4 */	lfs f0, _esc__2_6215@sda21(r2)
 /* 80119CBC 00116ABC  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 80119CC0 00116AC0  40 80 00 10 */	bge lbl_80119CD0
 /* 80119CC4 00116AC4  7F C3 F3 78 */	mr r3, r30
@@ -23275,7 +23275,7 @@ lbl_80119CD0:
 /* 80119CD4 00116AD4  48 00 02 85 */	bl stop_fling__Q217zNPCBossOmnidroid21smash_rock_state_typeFv
 lbl_80119CD8:
 /* 80119CD8 00116AD8  FC 20 F8 90 */	fmr f1, f31
-/* 80119CDC 00116ADC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119CDC 00116ADC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119CE0 00116AE0  FC 40 F0 90 */	fmr f2, f30
 /* 80119CE4 00116AE4  4B FF 30 15 */	bl update_rock_grab_effects__17zNPCBossOmnidroidFff
 lbl_80119CE8:
@@ -23301,21 +23301,21 @@ detect_player__Q217zNPCBossOmnidroid21smash_rock_state_typeCFv:
 /* 80119D28 00116B28  DB A1 00 30 */	stfd f29, 0x30(r1)
 /* 80119D2C 00116B2C  F3 A1 00 38 */	psq_st f29, 56(r1), 0, qr0
 /* 80119D30 00116B30  BF A1 00 24 */	stmw r29, 0x24(r1)
-/* 80119D34 00116B34  C0 22 AF F4 */	lfs f1, _esc__2_6215-_SDA2_BASE_(r2)
+/* 80119D34 00116B34  C0 22 AF F4 */	lfs f1, _esc__2_6215@sda21(r2)
 /* 80119D38 00116B38  7C 7D 1B 78 */	mr r29, r3
-/* 80119D3C 00116B3C  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 80119D3C 00116B3C  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 80119D40 00116B40  38 61 00 14 */	addi r3, r1, 0x14
 /* 80119D44 00116B44  38 80 00 01 */	li r4, 1
 /* 80119D48 00116B48  4B FF 18 B9 */	bl player_predict__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3ffb
-/* 80119D4C 00116B4C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80119D50 00116B50  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80119D54 00116B54  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80119D4C 00116B4C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 80119D50 00116B50  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80119D54 00116B54  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80119D58 00116B58  3B C0 00 00 */	li r30, 0
 /* 80119D5C 00116B5C  80 05 03 4C */	lwz r0, 0x34c(r5)
 /* 80119D60 00116B60  3B E0 00 00 */	li r31, 0
 /* 80119D64 00116B64  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80119D68 00116B68  54 00 10 3A */	slwi r0, r0, 2
-/* 80119D6C 00116B6C  C0 42 AD 80 */	lfs f2, _esc__2_3049-_SDA2_BASE_(r2)
+/* 80119D6C 00116B6C  C0 42 AD 80 */	lfs f2, _esc__2_3049@sda21(r2)
 /* 80119D70 00116B70  7C 24 04 2E */	lfsx f1, r4, r0
 /* 80119D74 00116B74  C0 03 00 98 */	lfs f0, 0x98(r3)
 /* 80119D78 00116B78  C3 E1 00 14 */	lfs f31, 0x14(r1)
@@ -23323,7 +23323,7 @@ detect_player__Q217zNPCBossOmnidroid21smash_rock_state_typeCFv:
 /* 80119D80 00116B80  C3 C1 00 1C */	lfs f30, 0x1c(r1)
 /* 80119D84 00116B84  EF A0 00 32 */	fmuls f29, f0, f0
 lbl_80119D88:
-/* 80119D88 00116B88  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119D88 00116B88  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119D8C 00116B8C  38 BF 00 08 */	addi r5, r31, 8
 /* 80119D90 00116B90  38 61 00 08 */	addi r3, r1, 8
 /* 80119D94 00116B94  38 84 02 00 */	addi r4, r4, 0x200
@@ -23368,37 +23368,37 @@ create_rock__Q217zNPCBossOmnidroid21smash_rock_state_typeFv:
 /* 80119E1C 00116C1C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80119E20 00116C20  7C 7F 1B 78 */	mr r31, r3
 /* 80119E24 00116C24  98 03 00 9E */	stb r0, 0x9e(r3)
-/* 80119E28 00116C28  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119E28 00116C28  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119E2C 00116C2C  38 63 0D 40 */	addi r3, r3, 0xd40
 /* 80119E30 00116C30  48 00 00 A1 */	bl push_front__28pool_list_esc__0_Q21z11rubble_bomb_esc__1_Fv
-/* 80119E34 00116C34  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119E34 00116C34  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119E38 00116C38  38 63 0D 40 */	addi r3, r3, 0xd40
 /* 80119E3C 00116C3C  48 00 00 8D */	bl begin__28pool_list_esc__0_Q21z11rubble_bomb_esc__1_CFv
 /* 80119E40 00116C40  90 7F 00 44 */	stw r3, 0x44(r31)
 /* 80119E44 00116C44  3C 80 80 2E */	lis r4, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock4bomb@ha
 /* 80119E48 00116C48  3C 60 80 11 */	lis r3, bomb_exploded__17zNPCBossOmnidroidFRQ21z11rubble_bombfPv@ha
 /* 80119E4C 00116C4C  38 DF 00 48 */	addi r6, r31, 0x48
-/* 80119E50 00116C50  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119E50 00116C50  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119E54 00116C54  38 04 07 20 */	addi r0, r4, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock4bomb@l
 /* 80119E58 00116C58  38 E3 CB 10 */	addi r7, r3, bomb_exploded__17zNPCBossOmnidroidFRQ21z11rubble_bombfPv@l
 /* 80119E5C 00116C5C  80 7F 00 44 */	lwz r3, 0x44(r31)
 /* 80119E60 00116C60  80 85 03 4C */	lwz r4, 0x34c(r5)
 /* 80119E64 00116C64  39 1F 00 A0 */	addi r8, r31, 0xa0
 /* 80119E68 00116C68  38 63 00 10 */	addi r3, r3, 0x10
-/* 80119E6C 00116C6C  38 A2 AB 20 */	addi r5, r2, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock10smash_ring-_SDA2_BASE_
+/* 80119E6C 00116C6C  38 A2 AB 20 */	addi r5, r2, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock10smash_ring@sda21
 /* 80119E70 00116C70  1C 84 00 5C */	mulli r4, r4, 0x5c
 /* 80119E74 00116C74  7C 80 22 14 */	add r4, r0, r4
 /* 80119E78 00116C78  48 0C CC C9 */	bl activate__Q21z11rubble_bombFPCQ31z11rubble_bomb11config_typePCQ217zSmashRingEmitter11config_typePCQ26xDecal12emit_contextPFRQ21z11rubble_bombfPv_vPv
-/* 80119E7C 00116C7C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119E7C 00116C7C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119E80 00116C80  38 80 00 00 */	li r4, 0
 /* 80119E84 00116C84  4B FF 09 E1 */	bl get_leg_index__17zNPCBossOmnidroidCFi
 /* 80119E88 00116C88  54 60 10 3A */	slwi r0, r3, 2
-/* 80119E8C 00116C8C  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 80119E8C 00116C8C  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 80119E90 00116C90  7C 83 00 2E */	lwzx r4, r3, r0
 /* 80119E94 00116C94  80 BF 00 44 */	lwz r5, 0x44(r31)
 /* 80119E98 00116C98  38 84 00 06 */	addi r4, r4, 6
 /* 80119E9C 00116C9C  38 65 00 10 */	addi r3, r5, 0x10
-/* 80119EA0 00116CA0  38 A2 AB 14 */	addi r5, r2, rock_offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock-_SDA2_BASE_
+/* 80119EA0 00116CA0  38 A2 AB 14 */	addi r5, r2, rock_offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock@sda21
 /* 80119EA4 00116CA4  48 0C D0 35 */	bl track_bone__Q21z11rubble_bombFiRC5xVec3
 /* 80119EA8 00116CA8  80 7F 00 44 */	lwz r3, 0x44(r31)
 /* 80119EAC 00116CAC  38 63 00 10 */	addi r3, r3, 0x10
@@ -23477,15 +23477,15 @@ lbl_80119F88:
 /* 80119F94 00116D94  38 63 00 10 */	addi r3, r3, 0x10
 /* 80119F98 00116D98  48 0C D0 75 */	bl blur_end__Q21z11rubble_bombFv
 /* 80119F9C 00116D9C  80 7F 00 44 */	lwz r3, 0x44(r31)
-/* 80119FA0 00116DA0  38 82 AB 20 */	addi r4, r2, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock10smash_ring-_SDA2_BASE_
+/* 80119FA0 00116DA0  38 82 AB 20 */	addi r4, r2, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10smash_rock10smash_ring@sda21
 /* 80119FA4 00116DA4  38 63 00 10 */	addi r3, r3, 0x10
 /* 80119FA8 00116DA8  4B FF FB 8D */	bl set_smash_ring_config__Q21z11rubble_bombFPCQ217zSmashRingEmitter11config_type
-/* 80119FAC 00116DAC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119FAC 00116DAC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119FB0 00116DB0  80 9F 00 44 */	lwz r4, 0x44(r31)
 /* 80119FB4 00116DB4  C0 23 02 34 */	lfs f1, 0x234(r3)
 /* 80119FB8 00116DB8  38 64 00 10 */	addi r3, r4, 0x10
 /* 80119FBC 00116DBC  48 0C D3 21 */	bl explode__Q21z11rubble_bombFf
-/* 80119FC0 00116DC0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119FC0 00116DC0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 80119FC4 00116DC4  38 63 0D 40 */	addi r3, r3, 0xd40
 /* 80119FC8 00116DC8  4B FF FA CD */	bl end__28pool_list_esc__0_Q21z11rubble_bomb_esc__1_CFv
 /* 80119FCC 00116DCC  90 7F 00 44 */	stw r3, 0x44(r31)
@@ -23501,17 +23501,17 @@ refresh_debris__Q217zNPCBossOmnidroid21smash_rock_state_typeFv:
 /* 80119FE4 00116DE4  38 80 00 0A */	li r4, 0xa
 /* 80119FE8 00116DE8  38 00 00 0F */	li r0, 0xf
 /* 80119FEC 00116DEC  90 83 00 A0 */	stw r4, 0xa0(r3)
-/* 80119FF0 00116DF0  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 80119FF4 00116DF4  C0 42 AC A0 */	lfs f2, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 80119FF0 00116DF0  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 80119FF4 00116DF4  C0 42 AC A0 */	lfs f2, _esc__2_1660_1@sda21(r2)
 /* 80119FF8 00116DF8  90 03 00 A4 */	stw r0, 0xa4(r3)
-/* 80119FFC 00116DFC  C0 22 B0 00 */	lfs f1, _esc__2_6300-_SDA2_BASE_(r2)
-/* 8011A000 00116E00  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80119FFC 00116DFC  C0 22 B0 00 */	lfs f1, _esc__2_6300@sda21(r2)
+/* 8011A000 00116E00  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A004 00116E04  80 04 03 4C */	lwz r0, 0x34c(r4)
 /* 8011A008 00116E08  54 00 10 3A */	slwi r0, r0, 2
 /* 8011A00C 00116E0C  7C 05 04 2E */	lfsx f0, r5, r0
 /* 8011A010 00116E10  EC 02 00 32 */	fmuls f0, f2, f0
 /* 8011A014 00116E14  D0 03 00 A8 */	stfs f0, 0xa8(r3)
-/* 8011A018 00116E18  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A018 00116E18  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A01C 00116E1C  80 04 03 4C */	lwz r0, 0x34c(r4)
 /* 8011A020 00116E20  54 00 10 3A */	slwi r0, r0, 2
 /* 8011A024 00116E24  7C 05 04 2E */	lfsx f0, r5, r0
@@ -23523,33 +23523,33 @@ refresh_debris__Q217zNPCBossOmnidroid21smash_rock_state_typeFv:
 setup__Q217zNPCBossOmnidroid21throw_rock_state_typeFv:
 /* 8011A034 00116E34  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011A038 00116E38  7C 08 02 A6 */	mflr r0
-/* 8011A03C 00116E3C  C0 22 AD 50 */	lfs f1, _esc__2_3024-_SDA2_BASE_(r2)
+/* 8011A03C 00116E3C  C0 22 AD 50 */	lfs f1, _esc__2_3024@sda21(r2)
 /* 8011A040 00116E40  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011A044 00116E44  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011A048 00116E48  7C 7F 1B 78 */	mr r31, r3
 /* 8011A04C 00116E4C  38 9F 00 10 */	addi r4, r31, 0x10
-/* 8011A050 00116E50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A050 00116E50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A054 00116E54  4B FF 33 95 */	bl refresh_impact_decal__17zNPCBossOmnidroidFRQ26xDecal12emit_contextf
 /* 8011A058 00116E58  7F E3 FB 78 */	mr r3, r31
 /* 8011A05C 00116E5C  48 00 05 11 */	bl refresh_debris__Q217zNPCBossOmnidroid21throw_rock_state_typeFv
 /* 8011A060 00116E60  38 7F 00 74 */	addi r3, r31, 0x74
 /* 8011A064 00116E64  38 80 00 01 */	li r4, 1
-/* 8011A068 00116E68  38 A2 AB EC */	addi r5, r2, shrap_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock4grab-_SDA2_BASE_
+/* 8011A068 00116E68  38 A2 AB EC */	addi r5, r2, shrap_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock4grab@sda21
 /* 8011A06C 00116E6C  38 C0 00 05 */	li r6, 5
 /* 8011A070 00116E70  4B F2 A6 59 */	bl reset__14xResponseCurveFUiPCvUi
 /* 8011A074 00116E74  38 7F 00 84 */	addi r3, r31, 0x84
 /* 8011A078 00116E78  38 80 00 01 */	li r4, 1
-/* 8011A07C 00116E7C  38 A2 AC 14 */	addi r5, r2, debris_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock4grab-_SDA2_BASE_
+/* 8011A07C 00116E7C  38 A2 AC 14 */	addi r5, r2, debris_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock4grab@sda21
 /* 8011A080 00116E80  38 C0 00 02 */	li r6, 2
 /* 8011A084 00116E84  4B F2 A6 45 */	bl reset__14xResponseCurveFUiPCvUi
 /* 8011A088 00116E88  38 7F 00 94 */	addi r3, r31, 0x94
 /* 8011A08C 00116E8C  38 80 00 01 */	li r4, 1
-/* 8011A090 00116E90  38 A2 AC 24 */	addi r5, r2, puff_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock4grab-_SDA2_BASE_
+/* 8011A090 00116E90  38 A2 AC 24 */	addi r5, r2, puff_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock4grab@sda21
 /* 8011A094 00116E94  38 C0 00 02 */	li r6, 2
 /* 8011A098 00116E98  4B F2 A6 31 */	bl reset__14xResponseCurveFUiPCvUi
 /* 8011A09C 00116E9C  38 7F 00 A4 */	addi r3, r31, 0xa4
 /* 8011A0A0 00116EA0  38 80 00 01 */	li r4, 1
-/* 8011A0A4 00116EA4  38 A2 AC 34 */	addi r5, r2, trail_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock4grab-_SDA2_BASE_
+/* 8011A0A4 00116EA4  38 A2 AC 34 */	addi r5, r2, trail_rate_curve__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock4grab@sda21
 /* 8011A0A8 00116EA8  38 C0 00 02 */	li r6, 2
 /* 8011A0AC 00116EAC  4B F2 A6 1D */	bl reset__14xResponseCurveFUiPCvUi
 /* 8011A0B0 00116EB0  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -23569,14 +23569,14 @@ enter__Q217zNPCBossOmnidroid21throw_rock_state_typeFv:
 /* 8011A0DC 00116EDC  98 03 00 0E */	stb r0, 0xe(r3)
 /* 8011A0E0 00116EE0  98 03 00 0D */	stb r0, 0xd(r3)
 /* 8011A0E4 00116EE4  98 03 00 0C */	stb r0, 0xc(r3)
-/* 8011A0E8 00116EE8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A0E8 00116EE8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A0EC 00116EEC  38 63 0D 40 */	addi r3, r3, 0xd40
 /* 8011A0F0 00116EF0  4B FF F9 A5 */	bl end__28pool_list_esc__0_Q21z11rubble_bomb_esc__1_CFv
 /* 8011A0F4 00116EF4  90 7F 00 08 */	stw r3, 8(r31)
 /* 8011A0F8 00116EF8  38 9F 00 74 */	addi r4, r31, 0x74
 /* 8011A0FC 00116EFC  38 BF 00 84 */	addi r5, r31, 0x84
 /* 8011A100 00116F00  38 DF 00 94 */	addi r6, r31, 0x94
-/* 8011A104 00116F04  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A104 00116F04  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A108 00116F08  38 FF 00 A4 */	addi r7, r31, 0xa4
 /* 8011A10C 00116F0C  4B FF 2B 01 */	bl start_rock_grab_effects__17zNPCBossOmnidroidFRC14xResponseCurveRC14xResponseCurveRC14xResponseCurveRC14xResponseCurve
 /* 8011A110 00116F10  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -23594,12 +23594,12 @@ exit__Q217zNPCBossOmnidroid21throw_rock_state_typeFv:
 /* 8011A134 00116F34  38 00 00 01 */	li r0, 1
 /* 8011A138 00116F38  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011A13C 00116F3C  7C 7F 1B 78 */	mr r31, r3
-/* 8011A140 00116F40  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A140 00116F40  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A144 00116F44  98 05 01 F2 */	stb r0, 0x1f2(r5)
-/* 8011A148 00116F48  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A148 00116F48  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A14C 00116F4C  4B FF CA 3D */	bl get_leg__17zNPCBossOmnidroidFi
 /* 8011A150 00116F50  4B FF 6A BD */	bl damage_disable__Q217zNPCBossOmnidroid8leg_typeFv
-/* 8011A154 00116F54  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A154 00116F54  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A158 00116F58  38 63 0D 40 */	addi r3, r3, 0xd40
 /* 8011A15C 00116F5C  4B FF F9 39 */	bl end__28pool_list_esc__0_Q21z11rubble_bomb_esc__1_CFv
 /* 8011A160 00116F60  80 9F 00 08 */	lwz r4, 8(r31)
@@ -23607,12 +23607,12 @@ exit__Q217zNPCBossOmnidroid21throw_rock_state_typeFv:
 /* 8011A168 00116F68  41 82 00 1C */	beq lbl_8011A184
 /* 8011A16C 00116F6C  38 64 00 10 */	addi r3, r4, 0x10
 /* 8011A170 00116F70  48 0C CA 49 */	bl deactivate__Q21z11rubble_bombFv
-/* 8011A174 00116F74  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A174 00116F74  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A178 00116F78  80 9F 00 08 */	lwz r4, 8(r31)
 /* 8011A17C 00116F7C  38 63 0D 40 */	addi r3, r3, 0xd40
 /* 8011A180 00116F80  48 00 00 21 */	bl erase__28pool_list_esc__0_Q21z11rubble_bomb_esc__1_FPQ228pool_list_esc__0_Q21z11rubble_bomb_esc__1_9node_type
 lbl_8011A184:
-/* 8011A184 00116F84  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A184 00116F84  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A188 00116F88  4B FF 2B 6D */	bl stop_rock_grab_effects__17zNPCBossOmnidroidFv
 /* 8011A18C 00116F8C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8011A190 00116F90  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -23643,58 +23643,58 @@ update__Q217zNPCBossOmnidroid21throw_rock_state_typeFf:
 /* 8011A1DC 00116FDC  BF C1 00 08 */	stmw r30, 8(r1)
 /* 8011A1E0 00116FE0  FF C0 08 90 */	fmr f30, f1
 /* 8011A1E4 00116FE4  7C 7E 1B 78 */	mr r30, r3
-/* 8011A1E8 00116FE8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A1E8 00116FE8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A1EC 00116FEC  4B FF 3C 75 */	bl blending_facing__17zNPCBossOmnidroidCFv
 /* 8011A1F0 00116FF0  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011A1F4 00116FF4  40 82 01 64 */	bne lbl_8011A358
 /* 8011A1F8 00116FF8  88 1E 00 0C */	lbz r0, 0xc(r30)
 /* 8011A1FC 00116FFC  28 00 00 00 */	cmplwi r0, 0
 /* 8011A200 00117000  40 82 00 30 */	bne lbl_8011A230
-/* 8011A204 00117004  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A204 00117004  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A208 00117008  38 00 00 00 */	li r0, 0
-/* 8011A20C 0011700C  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011A20C 0011700C  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011A210 00117010  38 80 00 0E */	li r4, 0xe
 /* 8011A214 00117014  98 03 01 F2 */	stb r0, 0x1f2(r3)
 /* 8011A218 00117018  38 A0 00 01 */	li r5, 1
-/* 8011A21C 0011701C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A21C 0011701C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A220 00117020  4B FE F0 05 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8011A224 00117024  38 00 00 01 */	li r0, 1
 /* 8011A228 00117028  98 1E 00 0C */	stb r0, 0xc(r30)
 /* 8011A22C 0011702C  48 00 01 2C */	b lbl_8011A358
 lbl_8011A230:
-/* 8011A230 00117030  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A230 00117030  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A234 00117034  4B FF 3B A5 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 8011A238 00117038  FC 01 F0 40 */	fcmpo cr0, f1, f30
 /* 8011A23C 0011703C  4C 40 13 82 */	cror 2, 0, 2
 /* 8011A240 00117040  40 82 00 20 */	bne lbl_8011A260
-/* 8011A244 00117044  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A244 00117044  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A248 00117048  4B FF 4D 69 */	bl next_state__17zNPCBossOmnidroidFv
 /* 8011A24C 0011704C  7C 64 1B 78 */	mr r4, r3
-/* 8011A250 00117050  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A250 00117050  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A254 00117054  38 A0 00 01 */	li r5, 1
 /* 8011A258 00117058  4B FE FE 8D */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 /* 8011A25C 0011705C  48 00 00 FC */	b lbl_8011A358
 lbl_8011A260:
-/* 8011A260 00117060  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A260 00117060  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A264 00117064  4B FF 3B C1 */	bl anim_time_current__17zNPCBossOmnidroidCFv
 /* 8011A268 00117068  FF E0 08 90 */	fmr f31, f1
-/* 8011A26C 0011706C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A26C 0011706C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A270 00117070  38 80 00 00 */	li r4, 0
 /* 8011A274 00117074  4B FF C9 15 */	bl get_leg__17zNPCBossOmnidroidFi
 /* 8011A278 00117078  7C 7F 1B 78 */	mr r31, r3
 /* 8011A27C 0011707C  4B FF CA 95 */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 8011A280 00117080  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011A284 00117084  40 82 00 3C */	bne lbl_8011A2C0
-/* 8011A288 00117088  C0 02 AC 9C */	lfs f0, _esc__2_1659_1-_SDA2_BASE_(r2)
+/* 8011A288 00117088  C0 02 AC 9C */	lfs f0, _esc__2_1659_1@sda21(r2)
 /* 8011A28C 0011708C  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011A290 00117090  4C 41 13 82 */	cror 2, 1, 2
 /* 8011A294 00117094  40 82 00 2C */	bne lbl_8011A2C0
-/* 8011A298 00117098  C0 02 AF F8 */	lfs f0, _esc__2_6261-_SDA2_BASE_(r2)
+/* 8011A298 00117098  C0 02 AF F8 */	lfs f0, _esc__2_6261@sda21(r2)
 /* 8011A29C 0011709C  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011A2A0 001170A0  40 80 00 20 */	bge lbl_8011A2C0
-/* 8011A2A4 001170A4  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 8011A2A4 001170A4  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 8011A2A8 001170A8  7F E3 FB 78 */	mr r3, r31
-/* 8011A2AC 001170AC  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011A2AC 001170AC  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011A2B0 001170B0  38 80 00 08 */	li r4, 8
 /* 8011A2B4 001170B4  38 A0 00 00 */	li r5, 0
 /* 8011A2B8 001170B8  4B FF 69 39 */	bl damage_enable__Q217zNPCBossOmnidroid8leg_typeFiffPC5xVec3
@@ -23704,7 +23704,7 @@ lbl_8011A2C0:
 /* 8011A2C4 001170C4  4B FF CA 4D */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 8011A2C8 001170C8  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011A2CC 001170CC  41 82 00 1C */	beq lbl_8011A2E8
-/* 8011A2D0 001170D0  C0 02 AF F8 */	lfs f0, _esc__2_6261-_SDA2_BASE_(r2)
+/* 8011A2D0 001170D0  C0 02 AF F8 */	lfs f0, _esc__2_6261@sda21(r2)
 /* 8011A2D4 001170D4  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011A2D8 001170D8  4C 41 13 82 */	cror 2, 1, 2
 /* 8011A2DC 001170DC  40 82 00 0C */	bne lbl_8011A2E8
@@ -23714,21 +23714,21 @@ lbl_8011A2E8:
 /* 8011A2E8 001170E8  88 1E 00 0E */	lbz r0, 0xe(r30)
 /* 8011A2EC 001170EC  28 00 00 00 */	cmplwi r0, 0
 /* 8011A2F0 001170F0  40 82 00 28 */	bne lbl_8011A318
-/* 8011A2F4 001170F4  C0 02 AC E4 */	lfs f0, _esc__2_2824-_SDA2_BASE_(r2)
+/* 8011A2F4 001170F4  C0 02 AC E4 */	lfs f0, _esc__2_2824@sda21(r2)
 /* 8011A2F8 001170F8  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011A2FC 001170FC  4C 41 13 82 */	cror 2, 1, 2
 /* 8011A300 00117100  40 82 00 18 */	bne lbl_8011A318
-/* 8011A304 00117104  C0 02 AF BC */	lfs f0, _esc__2_5889-_SDA2_BASE_(r2)
+/* 8011A304 00117104  C0 02 AF BC */	lfs f0, _esc__2_5889@sda21(r2)
 /* 8011A308 00117108  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011A30C 0011710C  40 80 00 0C */	bge lbl_8011A318
 /* 8011A310 00117110  7F C3 F3 78 */	mr r3, r30
 /* 8011A314 00117114  48 00 00 69 */	bl create_rock__Q217zNPCBossOmnidroid21throw_rock_state_typeFv
 lbl_8011A318:
-/* 8011A318 00117118  C0 02 AD 2C */	lfs f0, _esc__2_3015-_SDA2_BASE_(r2)
+/* 8011A318 00117118  C0 02 AD 2C */	lfs f0, _esc__2_3015@sda21(r2)
 /* 8011A31C 0011711C  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011A320 00117120  4C 41 13 82 */	cror 2, 1, 2
 /* 8011A324 00117124  40 82 00 1C */	bne lbl_8011A340
-/* 8011A328 00117128  C0 02 AF BC */	lfs f0, _esc__2_5889-_SDA2_BASE_(r2)
+/* 8011A328 00117128  C0 02 AF BC */	lfs f0, _esc__2_5889@sda21(r2)
 /* 8011A32C 0011712C  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011A330 00117130  40 80 00 10 */	bge lbl_8011A340
 /* 8011A334 00117134  7F C3 F3 78 */	mr r3, r30
@@ -23739,7 +23739,7 @@ lbl_8011A340:
 /* 8011A344 00117144  48 00 01 5D */	bl stop_fling__Q217zNPCBossOmnidroid21throw_rock_state_typeFv
 lbl_8011A348:
 /* 8011A348 00117148  FC 20 F8 90 */	fmr f1, f31
-/* 8011A34C 0011714C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A34C 0011714C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A350 00117150  FC 40 F0 90 */	fmr f2, f30
 /* 8011A354 00117154  4B FF 29 A5 */	bl update_rock_grab_effects__17zNPCBossOmnidroidFff
 lbl_8011A358:
@@ -23762,37 +23762,37 @@ create_rock__Q217zNPCBossOmnidroid21throw_rock_state_typeFv:
 /* 8011A38C 0011718C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011A390 00117190  7C 7F 1B 78 */	mr r31, r3
 /* 8011A394 00117194  98 03 00 0E */	stb r0, 0xe(r3)
-/* 8011A398 00117198  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A398 00117198  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A39C 0011719C  38 63 0D 40 */	addi r3, r3, 0xd40
 /* 8011A3A0 001171A0  4B FF FB 31 */	bl push_front__28pool_list_esc__0_Q21z11rubble_bomb_esc__1_Fv
-/* 8011A3A4 001171A4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A3A4 001171A4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A3A8 001171A8  38 63 0D 40 */	addi r3, r3, 0xd40
 /* 8011A3AC 001171AC  4B FF FB 1D */	bl begin__28pool_list_esc__0_Q21z11rubble_bomb_esc__1_CFv
 /* 8011A3B0 001171B0  90 7F 00 08 */	stw r3, 8(r31)
 /* 8011A3B4 001171B4  3C 80 80 2E */	lis r4, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock4bomb@ha
 /* 8011A3B8 001171B8  3C 60 80 11 */	lis r3, bomb_exploded__17zNPCBossOmnidroidFRQ21z11rubble_bombfPv@ha
 /* 8011A3BC 001171BC  38 DF 00 10 */	addi r6, r31, 0x10
-/* 8011A3C0 001171C0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A3C0 001171C0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A3C4 001171C4  38 04 07 D8 */	addi r0, r4, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock4bomb@l
 /* 8011A3C8 001171C8  38 E3 CB 10 */	addi r7, r3, bomb_exploded__17zNPCBossOmnidroidFRQ21z11rubble_bombfPv@l
 /* 8011A3CC 001171CC  80 7F 00 08 */	lwz r3, 8(r31)
 /* 8011A3D0 001171D0  80 85 03 4C */	lwz r4, 0x34c(r5)
 /* 8011A3D4 001171D4  39 1F 00 64 */	addi r8, r31, 0x64
 /* 8011A3D8 001171D8  38 63 00 10 */	addi r3, r3, 0x10
-/* 8011A3DC 001171DC  38 A2 AB B8 */	addi r5, r2, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock10smash_ring-_SDA2_BASE_
+/* 8011A3DC 001171DC  38 A2 AB B8 */	addi r5, r2, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock10smash_ring@sda21
 /* 8011A3E0 001171E0  1C 84 00 5C */	mulli r4, r4, 0x5c
 /* 8011A3E4 001171E4  7C 80 22 14 */	add r4, r0, r4
 /* 8011A3E8 001171E8  48 0C C7 59 */	bl activate__Q21z11rubble_bombFPCQ31z11rubble_bomb11config_typePCQ217zSmashRingEmitter11config_typePCQ26xDecal12emit_contextPFRQ21z11rubble_bombfPv_vPv
-/* 8011A3EC 001171EC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A3EC 001171EC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A3F0 001171F0  38 80 00 00 */	li r4, 0
 /* 8011A3F4 001171F4  4B FF 04 71 */	bl get_leg_index__17zNPCBossOmnidroidCFi
 /* 8011A3F8 001171F8  54 60 10 3A */	slwi r0, r3, 2
-/* 8011A3FC 001171FC  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs-_SDA2_BASE_
+/* 8011A3FC 001171FC  38 62 A9 AC */	addi r3, r2, first_bone__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4legs@sda21
 /* 8011A400 00117200  7C 83 00 2E */	lwzx r4, r3, r0
 /* 8011A404 00117204  80 BF 00 08 */	lwz r5, 8(r31)
 /* 8011A408 00117208  38 84 00 06 */	addi r4, r4, 6
 /* 8011A40C 0011720C  38 65 00 10 */	addi r3, r5, 0x10
-/* 8011A410 00117210  38 A2 AB AC */	addi r5, r2, rock_offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock-_SDA2_BASE_
+/* 8011A410 00117210  38 A2 AB AC */	addi r5, r2, rock_offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock@sda21
 /* 8011A414 00117214  48 0C CA C5 */	bl track_bone__Q21z11rubble_bombFiRC5xVec3
 /* 8011A418 00117218  80 7F 00 08 */	lwz r3, 8(r31)
 /* 8011A41C 0011721C  38 63 00 10 */	addi r3, r3, 0x10
@@ -23850,21 +23850,21 @@ stop_fling__Q217zNPCBossOmnidroid21throw_rock_state_typeFv:
 /* 8011A4CC 001172CC  48 00 00 8C */	b lbl_8011A558
 lbl_8011A4D0:
 /* 8011A4D0 001172D0  38 00 00 00 */	li r0, 0
-/* 8011A4D4 001172D4  38 82 AB B8 */	addi r4, r2, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock10smash_ring-_SDA2_BASE_
+/* 8011A4D4 001172D4  38 82 AB B8 */	addi r4, r2, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10throw_rock10smash_ring@sda21
 /* 8011A4D8 001172D8  98 1F 00 0D */	stb r0, 0xd(r31)
 /* 8011A4DC 001172DC  80 7F 00 08 */	lwz r3, 8(r31)
 /* 8011A4E0 001172E0  38 63 00 10 */	addi r3, r3, 0x10
 /* 8011A4E4 001172E4  4B FF F6 51 */	bl set_smash_ring_config__Q21z11rubble_bombFPCQ217zSmashRingEmitter11config_type
-/* 8011A4E8 001172E8  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8011A4E8 001172E8  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8011A4EC 001172EC  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8011A4F0 001172F0  4B EF 0F 39 */	bl xEntGetCenter__FPC4xEnt
 /* 8011A4F4 001172F4  80 C3 00 00 */	lwz r6, 0(r3)
-/* 8011A4F8 001172F8  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8011A4F8 001172F8  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 8011A4FC 001172FC  80 03 00 04 */	lwz r0, 4(r3)
 /* 8011A500 00117300  38 81 00 08 */	addi r4, r1, 8
-/* 8011A504 00117304  80 ED CC 18 */	lwz r7, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A504 00117304  80 ED CC 18 */	lwz r7, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A508 00117308  90 C1 00 08 */	stw r6, 8(r1)
-/* 8011A50C 0011730C  C0 22 AE D8 */	lfs f1, _esc__2_4781-_SDA2_BASE_(r2)
+/* 8011A50C 0011730C  C0 22 AE D8 */	lfs f1, _esc__2_4781@sda21(r2)
 /* 8011A510 00117310  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8011A514 00117314  80 03 00 08 */	lwz r0, 8(r3)
 /* 8011A518 00117318  7C E3 3B 78 */	mr r3, r7
@@ -23876,10 +23876,10 @@ lbl_8011A4D0:
 /* 8011A530 00117330  4B FF 3A 85 */	bl clamp_by_arena_extent__17zNPCBossOmnidroidCFR5xVec3f
 /* 8011A534 00117334  80 7F 00 08 */	lwz r3, 8(r31)
 /* 8011A538 00117338  38 81 00 08 */	addi r4, r1, 8
-/* 8011A53C 0011733C  C0 22 AD 3C */	lfs f1, _esc__2_3019-_SDA2_BASE_(r2)
+/* 8011A53C 0011733C  C0 22 AD 3C */	lfs f1, _esc__2_3019@sda21(r2)
 /* 8011A540 00117340  38 63 00 10 */	addi r3, r3, 0x10
 /* 8011A544 00117344  48 0C CB A1 */	bl launch_at__Q21z11rubble_bombFRC5xVec3f
-/* 8011A548 00117348  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A548 00117348  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A54C 0011734C  38 63 0D 40 */	addi r3, r3, 0xd40
 /* 8011A550 00117350  4B FF F5 45 */	bl end__28pool_list_esc__0_Q21z11rubble_bomb_esc__1_CFv
 /* 8011A554 00117354  90 7F 00 08 */	stw r3, 8(r31)
@@ -23895,15 +23895,15 @@ refresh_debris__Q217zNPCBossOmnidroid21throw_rock_state_typeFv:
 /* 8011A56C 0011736C  38 80 00 06 */	li r4, 6
 /* 8011A570 00117370  38 00 00 0A */	li r0, 0xa
 /* 8011A574 00117374  90 83 00 64 */	stw r4, 0x64(r3)
-/* 8011A578 00117378  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 8011A57C 0011737C  C0 22 AD A4 */	lfs f1, _esc__2_3187-_SDA2_BASE_(r2)
+/* 8011A578 00117378  38 A2 A8 B8 */	addi r5, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 8011A57C 0011737C  C0 22 AD A4 */	lfs f1, _esc__2_3187@sda21(r2)
 /* 8011A580 00117380  90 03 00 68 */	stw r0, 0x68(r3)
-/* 8011A584 00117384  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A584 00117384  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A588 00117388  80 04 03 4C */	lwz r0, 0x34c(r4)
 /* 8011A58C 0011738C  54 00 10 3A */	slwi r0, r0, 2
 /* 8011A590 00117390  7C 05 04 2E */	lfsx f0, r5, r0
 /* 8011A594 00117394  D0 03 00 6C */	stfs f0, 0x6c(r3)
-/* 8011A598 00117398  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A598 00117398  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A59C 0011739C  80 04 03 4C */	lwz r0, 0x34c(r4)
 /* 8011A5A0 001173A0  54 00 10 3A */	slwi r0, r0, 2
 /* 8011A5A4 001173A4  7C 05 04 2E */	lfsx f0, r5, r0
@@ -23924,7 +23924,7 @@ reset__Q217zNPCBossOmnidroid20boomerang_state_typeFv:
 /* 8011A5D4 001173D4  90 03 00 08 */	stw r0, 8(r3)
 /* 8011A5D8 001173D8  93 E3 00 10 */	stw r31, 0x10(r3)
 lbl_8011A5DC:
-/* 8011A5DC 001173DC  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A5DC 001173DC  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A5E0 001173E0  38 7F 7F 70 */	addi r3, r31, 0x7f70
 /* 8011A5E4 001173E4  7C 60 1A 14 */	add r3, r0, r3
 /* 8011A5E8 001173E8  4B FF 7F 19 */	bl stop__Q217zNPCBossOmnidroid13clawrang_typeFv
@@ -23962,12 +23962,12 @@ exit__Q217zNPCBossOmnidroid20boomerang_state_typeFv:
 /* 8011A650 00117450  BF C1 00 08 */	stmw r30, 8(r1)
 /* 8011A654 00117454  3B C0 00 00 */	li r30, 0
 /* 8011A658 00117458  3B E0 00 00 */	li r31, 0
-/* 8011A65C 0011745C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A65C 0011745C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A660 00117460  98 03 01 F2 */	stb r0, 0x1f2(r3)
-/* 8011A664 00117464  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A664 00117464  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A668 00117468  98 03 01 F5 */	stb r0, 0x1f5(r3)
 lbl_8011A66C:
-/* 8011A66C 0011746C  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A66C 0011746C  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A670 00117470  38 7F 7F 70 */	addi r3, r31, 0x7f70
 /* 8011A674 00117474  7C 60 1A 14 */	add r3, r0, r3
 /* 8011A678 00117478  4B FF 7E 89 */	bl stop__Q217zNPCBossOmnidroid13clawrang_typeFv
@@ -24007,23 +24007,23 @@ lbl_8011A6EC:
 /* 8011A6F0 001174F0  40 80 01 8C */	bge lbl_8011A87C
 /* 8011A6F4 001174F4  48 00 00 C8 */	b lbl_8011A7BC
 lbl_8011A6F8:
-/* 8011A6F8 001174F8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A6F8 001174F8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A6FC 001174FC  4B FF 37 65 */	bl blending_facing__17zNPCBossOmnidroidCFv
 /* 8011A700 00117500  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011A704 00117504  40 82 01 78 */	bne lbl_8011A87C
-/* 8011A708 00117508  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A708 00117508  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A70C 0011750C  38 80 00 0F */	li r4, 0xf
-/* 8011A710 00117510  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011A710 00117510  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011A714 00117514  38 A0 00 01 */	li r5, 1
 /* 8011A718 00117518  4B FE EB 0D */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
-/* 8011A71C 0011751C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011A71C 0011751C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011A720 00117520  38 00 00 02 */	li r0, 2
 /* 8011A724 00117524  D0 1E 00 18 */	stfs f0, 0x18(r30)
 /* 8011A728 00117528  90 1E 00 10 */	stw r0, 0x10(r30)
 /* 8011A72C 0011752C  48 00 01 50 */	b lbl_8011A87C
 lbl_8011A730:
 /* 8011A730 00117530  C0 3E 00 18 */	lfs f1, 0x18(r30)
-/* 8011A734 00117534  C0 02 AD 84 */	lfs f0, _esc__2_3050-_SDA2_BASE_(r2)
+/* 8011A734 00117534  C0 02 AD 84 */	lfs f0, _esc__2_3050@sda21(r2)
 /* 8011A738 00117538  EC 21 F8 2A */	fadds f1, f1, f31
 /* 8011A73C 0011753C  D0 3E 00 18 */	stfs f1, 0x18(r30)
 /* 8011A740 00117540  C0 3E 00 18 */	lfs f1, 0x18(r30)
@@ -24031,11 +24031,11 @@ lbl_8011A730:
 /* 8011A748 00117548  4C 41 13 82 */	cror 2, 1, 2
 /* 8011A74C 0011754C  40 82 01 30 */	bne lbl_8011A87C
 /* 8011A750 00117550  38 00 00 03 */	li r0, 3
-/* 8011A754 00117554  C0 22 AC C8 */	lfs f1, _esc__2_2275-_SDA2_BASE_(r2)
+/* 8011A754 00117554  C0 22 AC C8 */	lfs f1, _esc__2_2275@sda21(r2)
 /* 8011A758 00117558  90 1E 00 10 */	stw r0, 0x10(r30)
-/* 8011A75C 0011755C  38 8D 93 D8 */	addi r4, r13, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state9boomerang4blur-_SDA_BASE_
+/* 8011A75C 0011755C  38 8D 93 D8 */	addi r4, r13, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state9boomerang4blur@sda21
 /* 8011A760 00117560  80 1E 00 14 */	lwz r0, 0x14(r30)
-/* 8011A764 00117564  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A764 00117564  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A768 00117568  1C 60 05 20 */	mulli r3, r0, 0x520
 /* 8011A76C 0011756C  3B E3 7F 70 */	addi r31, r3, 0x7f70
 /* 8011A770 00117570  7F E5 FA 14 */	add r31, r5, r31
@@ -24047,7 +24047,7 @@ lbl_8011A730:
 /* 8011A788 00117588  48 00 00 F4 */	b lbl_8011A87C
 lbl_8011A78C:
 /* 8011A78C 0011758C  80 1E 00 14 */	lwz r0, 0x14(r30)
-/* 8011A790 00117590  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A790 00117590  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A794 00117594  1C 60 05 20 */	mulli r3, r0, 0x520
 /* 8011A798 00117598  38 63 7F 70 */	addi r3, r3, 0x7f70
 /* 8011A79C 0011759C  7C 64 1A 14 */	add r3, r4, r3
@@ -24063,15 +24063,15 @@ lbl_8011A7BC:
 /* 8011A7C0 001175C0  2C 00 00 00 */	cmpwi r0, 0
 /* 8011A7C4 001175C4  40 81 00 48 */	ble lbl_8011A80C
 /* 8011A7C8 001175C8  C0 3E 00 1C */	lfs f1, 0x1c(r30)
-/* 8011A7CC 001175CC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011A7CC 001175CC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011A7D0 001175D0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011A7D4 001175D4  4C 41 13 82 */	cror 2, 1, 2
 /* 8011A7D8 001175D8  40 82 00 A4 */	bne lbl_8011A87C
-/* 8011A7DC 001175DC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A7DC 001175DC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A7E0 001175E0  4B FF B7 AD */	bl anim_get_state_id__17zNPCBossOmnidroidCFv
 /* 8011A7E4 001175E4  2C 03 00 00 */	cmpwi r3, 0
 /* 8011A7E8 001175E8  41 82 00 18 */	beq lbl_8011A800
-/* 8011A7EC 001175EC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A7EC 001175EC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A7F0 001175F0  4B FF 35 E9 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 8011A7F4 001175F4  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 8011A7F8 001175F8  4C 40 13 82 */	cror 2, 0, 2
@@ -24095,20 +24095,20 @@ lbl_8011A824:
 /* 8011A834 00117634  48 00 06 35 */	bl get_clawrangs_started__Q217zNPCBossOmnidroid20boomerang_state_typeCFv
 /* 8011A838 00117638  2C 03 00 00 */	cmpwi r3, 0
 /* 8011A83C 0011763C  41 81 00 40 */	bgt lbl_8011A87C
-/* 8011A840 00117640  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A840 00117640  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A844 00117644  4B FF B7 49 */	bl anim_get_state_id__17zNPCBossOmnidroidCFv
 /* 8011A848 00117648  2C 03 00 00 */	cmpwi r3, 0
 /* 8011A84C 0011764C  41 82 00 18 */	beq lbl_8011A864
-/* 8011A850 00117650  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A850 00117650  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A854 00117654  4B FF 35 85 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 8011A858 00117658  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 8011A85C 0011765C  4C 40 13 82 */	cror 2, 0, 2
 /* 8011A860 00117660  40 82 00 1C */	bne lbl_8011A87C
 lbl_8011A864:
-/* 8011A864 00117664  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A864 00117664  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A868 00117668  4B FF 47 49 */	bl next_state__17zNPCBossOmnidroidFv
 /* 8011A86C 0011766C  7C 64 1B 78 */	mr r4, r3
-/* 8011A870 00117670  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A870 00117670  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A874 00117674  38 A0 00 01 */	li r5, 1
 /* 8011A878 00117678  4B FE F8 6D */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 lbl_8011A87C:
@@ -24148,10 +24148,10 @@ lbl_8011A8E0:
 /* 8011A8E4 001176E4  41 82 00 10 */	beq lbl_8011A8F4
 /* 8011A8E8 001176E8  40 80 00 A0 */	bge lbl_8011A988
 lbl_8011A8EC:
-/* 8011A8EC 001176EC  C3 E2 A8 B0 */	lfs f31, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011A8EC 001176EC  C3 E2 A8 B0 */	lfs f31, _esc__2_1222@sda21(r2)
 /* 8011A8F0 001176F0  48 00 00 98 */	b lbl_8011A988
 lbl_8011A8F4:
-/* 8011A8F4 001176F4  C3 E2 AD D0 */	lfs f31, _esc__2_3428-_SDA2_BASE_(r2)
+/* 8011A8F4 001176F4  C3 E2 AD D0 */	lfs f31, _esc__2_3428@sda21(r2)
 /* 8011A8F8 001176F8  48 00 00 90 */	b lbl_8011A988
 lbl_8011A8FC:
 /* 8011A8FC 001176FC  80 1E 00 3C */	lwz r0, 0x3c(r30)
@@ -24159,25 +24159,25 @@ lbl_8011A8FC:
 /* 8011A904 00117704  40 81 00 80 */	ble lbl_8011A984
 /* 8011A908 00117708  80 1E 00 38 */	lwz r0, 0x38(r30)
 /* 8011A90C 0011770C  38 80 00 12 */	li r4, 0x12
-/* 8011A910 00117710  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A910 00117710  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A914 00117714  54 00 10 3A */	slwi r0, r0, 2
 /* 8011A918 00117718  7C BE 02 14 */	add r5, r30, r0
 /* 8011A91C 0011771C  83 E5 00 24 */	lwz r31, 0x24(r5)
 /* 8011A920 00117720  4B FF 31 49 */	bl anim_duration__17zNPCBossOmnidroidCFQ217zNPCBossOmnidroid15anim_state_enum
 /* 8011A924 00117724  1C 7F 05 20 */	mulli r3, r31, 0x520
 /* 8011A928 00117728  FF E0 08 90 */	fmr f31, f1
-/* 8011A92C 0011772C  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A92C 0011772C  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A930 00117730  38 63 7F 70 */	addi r3, r3, 0x7f70
 /* 8011A934 00117734  7C 60 1A 14 */	add r3, r0, r3
 /* 8011A938 00117738  48 00 00 99 */	bl get_flying_time_left__Q217zNPCBossOmnidroid13clawrang_typeCFv
 /* 8011A93C 0011773C  EF E1 F8 28 */	fsubs f31, f1, f31
-/* 8011A940 00117740  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A940 00117740  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A944 00117744  4B FE FF 5D */	bl get_facing__17zNPCBossOmnidroidCFv
 /* 8011A948 00117748  80 1E 00 14 */	lwz r0, 0x14(r30)
 /* 8011A94C 0011774C  7C 00 18 00 */	cmpw r0, r3
 /* 8011A950 00117750  41 82 00 24 */	beq lbl_8011A974
-/* 8011A954 00117754  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8011A958 00117758  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011A954 00117754  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8011A958 00117758  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011A95C 0011775C  C0 03 0D D8 */	lfs f0, 0xdd8(r3)
 /* 8011A960 00117760  C0 43 0D DC */	lfs f2, 0xddc(r3)
 /* 8011A964 00117764  EC 01 00 28 */	fsubs f0, f1, f0
@@ -24185,22 +24185,22 @@ lbl_8011A8FC:
 /* 8011A96C 0011776C  EF FF 00 2A */	fadds f31, f31, f0
 /* 8011A970 00117770  48 00 00 18 */	b lbl_8011A988
 lbl_8011A974:
-/* 8011A974 00117774  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A974 00117774  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A978 00117778  4B FF 0D 69 */	bl get_facing_blend_time__17zNPCBossOmnidroidCFv
 /* 8011A97C 0011777C  EF FF 08 2A */	fadds f31, f31, f1
 /* 8011A980 00117780  48 00 00 08 */	b lbl_8011A988
 lbl_8011A984:
-/* 8011A984 00117784  C3 E2 A8 B0 */	lfs f31, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011A984 00117784  C3 E2 A8 B0 */	lfs f31, _esc__2_1222@sda21(r2)
 lbl_8011A988:
-/* 8011A988 00117788  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A988 00117788  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A98C 0011778C  4B FF 31 15 */	bl hit_response_time__17zNPCBossOmnidroidCFv
 /* 8011A990 00117790  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 8011A994 00117794  40 80 00 10 */	bge lbl_8011A9A4
-/* 8011A998 00117798  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A998 00117798  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A99C 0011779C  4B FF 31 61 */	bl hit_respond__17zNPCBossOmnidroidFv
 /* 8011A9A0 001177A0  48 00 00 10 */	b lbl_8011A9B0
 lbl_8011A9A4:
-/* 8011A9A4 001177A4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A9A4 001177A4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A9A8 001177A8  4B FE E9 ED */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011A9AC 001177AC  4B FF 51 91 */	bl play_hit_anim__Q217zNPCBossOmnidroid9head_typeFv
 lbl_8011A9B0:
@@ -24226,7 +24226,7 @@ phase_change__Q217zNPCBossOmnidroid20boomerang_state_typeFv:
 /* 8011A9E4 001177E4  38 00 00 00 */	li r0, 0
 /* 8011A9E8 001177E8  BF C1 00 08 */	stmw r30, 8(r1)
 /* 8011A9EC 001177EC  90 03 00 08 */	stw r0, 8(r3)
-/* 8011A9F0 001177F0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011A9F0 001177F0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011A9F4 001177F4  3B E3 7F 70 */	addi r31, r3, 0x7f70
 /* 8011A9F8 001177F8  3B DF 19 A0 */	addi r30, r31, 0x19a0
 /* 8011A9FC 001177FC  48 00 00 14 */	b lbl_8011AA10
@@ -24258,16 +24258,16 @@ start_launch__Q217zNPCBossOmnidroid20boomerang_state_typeFv:
 /* 8011AA44 00117844  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 8011AA48 00117848  7C 7F 1B 78 */	mr r31, r3
 /* 8011AA4C 0011784C  90 03 00 14 */	stw r0, 0x14(r3)
-/* 8011AA50 00117850  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8011AA50 00117850  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8011AA54 00117854  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8011AA58 00117858  4B F6 CB C1 */	bl xEntGetFrame__FPC4xEnt
 /* 8011AA5C 0011785C  7C 64 1B 78 */	mr r4, r3
-/* 8011AA60 00117860  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8011AA64 00117864  C0 22 B0 04 */	lfs f1, _esc__2_6477-_SDA2_BASE_(r2)
+/* 8011AA60 00117860  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8011AA64 00117864  C0 22 B0 04 */	lfs f1, _esc__2_6477@sda21(r2)
 /* 8011AA68 00117868  38 84 00 30 */	addi r4, r4, 0x30
 /* 8011AA6C 0011786C  4B FF 0E AD */	bl get_nearest_facing__17zNPCBossOmnidroidCFRC5xVec3f
 /* 8011AA70 00117870  7C 7E 1B 78 */	mr r30, r3
-/* 8011AA74 00117874  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AA74 00117874  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AA78 00117878  1C 7E 05 20 */	mulli r3, r30, 0x520
 /* 8011AA7C 0011787C  38 63 7F 70 */	addi r3, r3, 0x7f70
 /* 8011AA80 00117880  7C 60 1A 14 */	add r3, r0, r3
@@ -24282,7 +24282,7 @@ lbl_8011AA94:
 /* 8011AAA0 001178A0  3B 9C 00 05 */	addi r28, r28, 5
 lbl_8011AAA4:
 /* 8011AAA4 001178A4  1C 7C 05 20 */	mulli r3, r28, 0x520
-/* 8011AAA8 001178A8  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AAA8 001178A8  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AAAC 001178AC  38 63 7F 70 */	addi r3, r3, 0x7f70
 /* 8011AAB0 001178B0  7C 60 1A 14 */	add r3, r0, r3
 /* 8011AAB4 001178B4  48 00 00 AD */	bl started__Q217zNPCBossOmnidroid13clawrang_typeCFv
@@ -24298,7 +24298,7 @@ lbl_8011AAC8:
 /* 8011AAD8 001178D8  3B 9C FF FB */	addi r28, r28, -5
 lbl_8011AADC:
 /* 8011AADC 001178DC  1C 7C 05 20 */	mulli r3, r28, 0x520
-/* 8011AAE0 001178E0  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AAE0 001178E0  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AAE4 001178E4  38 63 7F 70 */	addi r3, r3, 0x7f70
 /* 8011AAE8 001178E8  7C 60 1A 14 */	add r3, r0, r3
 /* 8011AAEC 001178EC  48 00 00 75 */	bl started__Q217zNPCBossOmnidroid13clawrang_typeCFv
@@ -24314,15 +24314,15 @@ lbl_8011AB00:
 lbl_8011AB10:
 /* 8011AB10 00117910  93 DF 00 14 */	stw r30, 0x14(r31)
 lbl_8011AB14:
-/* 8011AB14 00117914  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AB14 00117914  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AB18 00117918  38 00 00 00 */	li r0, 0
-/* 8011AB1C 0011791C  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011AB1C 0011791C  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011AB20 00117920  98 03 01 F2 */	stb r0, 0x1f2(r3)
-/* 8011AB24 00117924  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AB24 00117924  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AB28 00117928  80 9F 00 14 */	lwz r4, 0x14(r31)
 /* 8011AB2C 0011792C  4B FF 0B F5 */	bl set_facing__17zNPCBossOmnidroidFif
 /* 8011AB30 00117930  38 00 00 01 */	li r0, 1
-/* 8011AB34 00117934  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011AB34 00117934  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011AB38 00117938  90 1F 00 10 */	stw r0, 0x10(r31)
 /* 8011AB3C 0011793C  80 7F 00 08 */	lwz r3, 8(r31)
 /* 8011AB40 00117940  38 03 FF FF */	addi r0, r3, -1
@@ -24351,13 +24351,13 @@ start_wait__Q217zNPCBossOmnidroid20boomerang_state_typeFv:
 /* 8011AB84 00117984  7C 7E 1B 78 */	mr r30, r3
 /* 8011AB88 00117988  90 03 00 14 */	stw r0, 0x14(r3)
 /* 8011AB8C 0011798C  38 00 00 00 */	li r0, 0
-/* 8011AB90 00117990  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AB90 00117990  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AB94 00117994  98 03 01 F5 */	stb r0, 0x1f5(r3)
 /* 8011AB98 00117998  4B F6 D6 9D */	bl zCamGetDefault__Fv
 /* 8011AB9C 0011799C  4B FF 3F 5D */	bl reset_secondary_target__10zCamPlayerFv
-/* 8011ABA0 001179A0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ABA0 001179A0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ABA4 001179A4  4B FF B3 E9 */	bl anim_get_state_id__17zNPCBossOmnidroidCFv
-/* 8011ABA8 001179A8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ABA8 001179A8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ABAC 001179AC  4B FF B3 E1 */	bl anim_get_state_id__17zNPCBossOmnidroidCFv
 /* 8011ABB0 001179B0  2C 03 00 10 */	cmpwi r3, 0x10
 /* 8011ABB4 001179B4  41 82 00 14 */	beq lbl_8011ABC8
@@ -24366,23 +24366,23 @@ start_wait__Q217zNPCBossOmnidroid20boomerang_state_typeFv:
 /* 8011ABC0 001179C0  40 80 00 20 */	bge lbl_8011ABE0
 /* 8011ABC4 001179C4  48 00 00 34 */	b lbl_8011ABF8
 lbl_8011ABC8:
-/* 8011ABC8 001179C8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ABC8 001179C8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ABCC 001179CC  38 80 00 11 */	li r4, 0x11
-/* 8011ABD0 001179D0  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011ABD0 001179D0  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011ABD4 001179D4  38 A0 00 00 */	li r5, 0
 /* 8011ABD8 001179D8  4B FE E6 4D */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8011ABDC 001179DC  48 00 00 30 */	b lbl_8011AC0C
 lbl_8011ABE0:
-/* 8011ABE0 001179E0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ABE0 001179E0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ABE4 001179E4  38 80 00 11 */	li r4, 0x11
-/* 8011ABE8 001179E8  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011ABE8 001179E8  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011ABEC 001179EC  38 A0 00 00 */	li r5, 0
 /* 8011ABF0 001179F0  4B FE E6 35 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8011ABF4 001179F4  48 00 00 18 */	b lbl_8011AC0C
 lbl_8011ABF8:
-/* 8011ABF8 001179F8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ABF8 001179F8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ABFC 001179FC  38 80 00 00 */	li r4, 0
-/* 8011AC00 00117A00  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011AC00 00117A00  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011AC04 00117A04  38 A0 00 00 */	li r5, 0
 /* 8011AC08 00117A08  4B FE E6 1D */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 lbl_8011AC0C:
@@ -24391,7 +24391,7 @@ lbl_8011AC0C:
 /* 8011AC14 00117A14  80 1E 00 08 */	lwz r0, 8(r30)
 /* 8011AC18 00117A18  2C 00 00 00 */	cmpwi r0, 0
 /* 8011AC1C 00117A1C  41 81 00 3C */	bgt lbl_8011AC58
-/* 8011AC20 00117A20  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AC20 00117A20  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AC24 00117A24  3B E3 7F 70 */	addi r31, r3, 0x7f70
 /* 8011AC28 00117A28  3B DF 19 A0 */	addi r30, r31, 0x19a0
 /* 8011AC2C 00117A2C  48 00 00 24 */	b lbl_8011AC50
@@ -24438,21 +24438,21 @@ get_catch_finish_time__Q217zNPCBossOmnidroid20boomerang_state_typeCFv:
 /* 8011ACA8 00117AA8  80 A3 00 3C */	lwz r5, 0x3c(r3)
 /* 8011ACAC 00117AAC  2C 05 00 00 */	cmpwi r5, 0
 /* 8011ACB0 00117AB0  41 81 00 28 */	bgt lbl_8011ACD8
-/* 8011ACB4 00117AB4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ACB4 00117AB4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ACB8 00117AB8  4B FF B2 D5 */	bl anim_get_state_id__17zNPCBossOmnidroidCFv
 /* 8011ACBC 00117ABC  2C 03 00 00 */	cmpwi r3, 0
 /* 8011ACC0 00117AC0  40 82 00 0C */	bne lbl_8011ACCC
-/* 8011ACC4 00117AC4  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011ACC4 00117AC4  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011ACC8 00117AC8  48 00 00 64 */	b lbl_8011AD2C
 lbl_8011ACCC:
-/* 8011ACCC 00117ACC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ACCC 00117ACC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ACD0 00117AD0  4B FF 31 09 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 8011ACD4 00117AD4  48 00 00 58 */	b lbl_8011AD2C
 lbl_8011ACD8:
 /* 8011ACD8 00117AD8  80 83 00 38 */	lwz r4, 0x38(r3)
 /* 8011ACDC 00117ADC  38 05 FF FF */	addi r0, r5, -1
 /* 8011ACE0 00117AE0  38 A0 00 05 */	li r5, 5
-/* 8011ACE4 00117AE4  80 ED CC 18 */	lwz r7, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ACE4 00117AE4  80 ED CC 18 */	lwz r7, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ACE8 00117AE8  7C C4 02 14 */	add r6, r4, r0
 /* 8011ACEC 00117AEC  38 80 00 14 */	li r4, 0x14
 /* 8011ACF0 00117AF0  7C 06 2B D6 */	divw r0, r6, r5
@@ -24492,12 +24492,12 @@ find_catchable__Q217zNPCBossOmnidroid20boomerang_state_typeCFv:
 /* 8011AD68 00117B68  F3 A1 00 28 */	psq_st f29, 40(r1), 0, qr0
 /* 8011AD6C 00117B6C  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 8011AD70 00117B70  7C 7C 1B 78 */	mr r28, r3
-/* 8011AD74 00117B74  C3 C2 AD D0 */	lfs f30, _esc__2_3428-_SDA2_BASE_(r2)
-/* 8011AD78 00117B78  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AD74 00117B74  C3 C2 AD D0 */	lfs f30, _esc__2_3428@sda21(r2)
+/* 8011AD78 00117B78  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AD7C 00117B7C  3B C0 FF FF */	li r30, -1
 /* 8011AD80 00117B80  38 80 00 12 */	li r4, 0x12
 /* 8011AD84 00117B84  4B FF 2C E5 */	bl anim_duration__17zNPCBossOmnidroidCFQ217zNPCBossOmnidroid15anim_state_enum
-/* 8011AD88 00117B88  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AD88 00117B88  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AD8C 00117B8C  7F 83 E3 78 */	mr r3, r28
 /* 8011AD90 00117B90  C0 04 0D DC */	lfs f0, 0xddc(r4)
 /* 8011AD94 00117B94  EF A0 08 2A */	fadds f29, f0, f1
@@ -24506,7 +24506,7 @@ find_catchable__Q217zNPCBossOmnidroid20boomerang_state_typeCFv:
 /* 8011ADA0 00117BA0  3B A0 00 00 */	li r29, 0
 /* 8011ADA4 00117BA4  3B E0 00 00 */	li r31, 0
 lbl_8011ADA8:
-/* 8011ADA8 00117BA8  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ADA8 00117BA8  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ADAC 00117BAC  3B 9F 7F 70 */	addi r28, r31, 0x7f70
 /* 8011ADB0 00117BB0  7F 80 E2 14 */	add r28, r0, r28
 /* 8011ADB4 00117BB4  7F 83 E3 78 */	mr r3, r28
@@ -24570,7 +24570,7 @@ get_clawrangs_started__Q217zNPCBossOmnidroid20boomerang_state_typeCFv:
 /* 8011AE70 00117C70  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8011AE74 00117C74  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 8011AE78 00117C78  3B E0 00 00 */	li r31, 0
-/* 8011AE7C 00117C7C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AE7C 00117C7C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AE80 00117C80  3B C3 7F 70 */	addi r30, r3, 0x7f70
 /* 8011AE84 00117C84  3B BE 19 A0 */	addi r29, r30, 0x19a0
 /* 8011AE88 00117C88  48 00 00 1C */	b lbl_8011AEA4
@@ -24612,7 +24612,7 @@ start_catch__Q217zNPCBossOmnidroid20boomerang_state_typeFi:
 /* 8011AF00 00117D00  38 04 00 01 */	addi r0, r4, 1
 /* 8011AF04 00117D04  90 03 00 3C */	stw r0, 0x3c(r3)
 /* 8011AF08 00117D08  38 65 7F 70 */	addi r3, r5, 0x7f70
-/* 8011AF0C 00117D0C  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AF0C 00117D0C  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AF10 00117D10  7C 60 1A 14 */	add r3, r0, r3
 /* 8011AF14 00117D14  4B FF 76 9D */	bl return_now__Q217zNPCBossOmnidroid13clawrang_typeFv
 /* 8011AF18 00117D18  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -24638,7 +24638,7 @@ update_catching__Q217zNPCBossOmnidroid20boomerang_state_typeFf:
 /* 8011AF5C 00117D5C  80 7F 00 38 */	lwz r3, 0x38(r31)
 /* 8011AF60 00117D60  80 1F 00 20 */	lwz r0, 0x20(r31)
 /* 8011AF64 00117D64  54 63 10 3A */	slwi r3, r3, 2
-/* 8011AF68 00117D68  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AF68 00117D68  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AF6C 00117D6C  7C 7F 1A 14 */	add r3, r31, r3
 /* 8011AF70 00117D70  2C 00 00 01 */	cmpwi r0, 1
 /* 8011AF74 00117D74  83 C3 00 24 */	lwz r30, 0x24(r3)
@@ -24657,16 +24657,16 @@ lbl_8011AF98:
 lbl_8011AFA4:
 /* 8011AFA4 00117DA4  4B FF FA 2D */	bl get_flying_time_left__Q217zNPCBossOmnidroid13clawrang_typeCFv
 /* 8011AFA8 00117DA8  EF C1 F0 28 */	fsubs f30, f1, f30
-/* 8011AFAC 00117DAC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AFAC 00117DAC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AFB0 00117DB0  38 80 00 12 */	li r4, 0x12
 /* 8011AFB4 00117DB4  4B FF 2A B5 */	bl anim_duration__17zNPCBossOmnidroidCFQ217zNPCBossOmnidroid15anim_state_enum
 /* 8011AFB8 00117DB8  FF E0 08 90 */	fmr f31, f1
-/* 8011AFBC 00117DBC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011AFBC 00117DBC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011AFC0 00117DC0  4B FE F8 E1 */	bl get_facing__17zNPCBossOmnidroidCFv
 /* 8011AFC4 00117DC4  7C 1E 18 00 */	cmpw r30, r3
 /* 8011AFC8 00117DC8  41 82 00 44 */	beq lbl_8011B00C
-/* 8011AFCC 00117DCC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8011AFD0 00117DD0  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011AFCC 00117DCC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8011AFD0 00117DD0  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011AFD4 00117DD4  C0 03 0D D8 */	lfs f0, 0xdd8(r3)
 /* 8011AFD8 00117DD8  C0 43 0D DC */	lfs f2, 0xddc(r3)
 /* 8011AFDC 00117DDC  EC 01 00 28 */	fsubs f0, f1, f0
@@ -24676,26 +24676,26 @@ lbl_8011AFA4:
 /* 8011AFEC 00117DEC  4C 40 13 82 */	cror 2, 0, 2
 /* 8011AFF0 00117DF0  40 82 00 1C */	bne lbl_8011B00C
 /* 8011AFF4 00117DF4  38 00 00 00 */	li r0, 0
-/* 8011AFF8 00117DF8  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011AFF8 00117DF8  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011AFFC 00117DFC  98 03 01 F2 */	stb r0, 0x1f2(r3)
 /* 8011B000 00117E00  7F C4 F3 78 */	mr r4, r30
-/* 8011B004 00117E04  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B004 00117E04  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B008 00117E08  4B FF 07 19 */	bl set_facing__17zNPCBossOmnidroidFif
 lbl_8011B00C:
-/* 8011B00C 00117E0C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B00C 00117E0C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B010 00117E10  4B FE F8 91 */	bl get_facing__17zNPCBossOmnidroidCFv
 /* 8011B014 00117E14  7C 1E 18 00 */	cmpw r30, r3
 /* 8011B018 00117E18  40 82 00 CC */	bne lbl_8011B0E4
-/* 8011B01C 00117E1C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B01C 00117E1C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B020 00117E20  4B FF 2E 41 */	bl blending_facing__17zNPCBossOmnidroidCFv
 /* 8011B024 00117E24  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011B028 00117E28  40 82 00 BC */	bne lbl_8011B0E4
 /* 8011B02C 00117E2C  FC 1E F8 40 */	fcmpo cr0, f30, f31
 /* 8011B030 00117E30  4C 40 13 82 */	cror 2, 0, 2
 /* 8011B034 00117E34  40 82 00 B0 */	bne lbl_8011B0E4
-/* 8011B038 00117E38  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B038 00117E38  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B03C 00117E3C  38 80 00 12 */	li r4, 0x12
-/* 8011B040 00117E40  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011B040 00117E40  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011B044 00117E44  38 A0 00 00 */	li r5, 0
 /* 8011B048 00117E48  4B FE E1 DD */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8011B04C 00117E4C  38 00 00 01 */	li r0, 1
@@ -24706,9 +24706,9 @@ lbl_8011B058:
 /* 8011B05C 00117E5C  FC 01 F0 40 */	fcmpo cr0, f1, f30
 /* 8011B060 00117E60  4C 40 13 82 */	cror 2, 0, 2
 /* 8011B064 00117E64  40 82 00 80 */	bne lbl_8011B0E4
-/* 8011B068 00117E68  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B068 00117E68  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B06C 00117E6C  38 80 00 14 */	li r4, 0x14
-/* 8011B070 00117E70  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011B070 00117E70  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011B074 00117E74  38 A0 00 00 */	li r5, 0
 /* 8011B078 00117E78  4B FE E1 AD */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8011B07C 00117E7C  38 00 00 02 */	li r0, 2
@@ -24733,7 +24733,7 @@ lbl_8011B088:
 /* 8011B0C4 00117EC4  80 1F 00 3C */	lwz r0, 0x3c(r31)
 /* 8011B0C8 00117EC8  2C 00 00 00 */	cmpwi r0, 0
 /* 8011B0CC 00117ECC  41 81 00 10 */	bgt lbl_8011B0DC
-/* 8011B0D0 00117ED0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B0D0 00117ED0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B0D4 00117ED4  38 00 00 01 */	li r0, 1
 /* 8011B0D8 00117ED8  98 03 01 F2 */	stb r0, 0x1f2(r3)
 lbl_8011B0DC:
@@ -24786,7 +24786,7 @@ lbl_8011B148:
 /* 8011B170 00117F70  48 0D 27 05 */	bl add_tweaks__13energy_systemFPCc
 /* 8011B174 00117F74  38 7F 05 A4 */	addi r3, r31, 0x5a4
 /* 8011B178 00117F78  38 80 00 04 */	li r4, 4
-/* 8011B17C 00117F7C  38 A2 B0 08 */	addi r5, r2, flare_nodes_esc__7_6581-_SDA2_BASE_
+/* 8011B17C 00117F7C  38 A2 B0 08 */	addi r5, r2, flare_nodes_esc__7_6581@sda21
 /* 8011B180 00117F80  38 C0 00 03 */	li r6, 3
 /* 8011B184 00117F84  4B F2 95 45 */	bl reset__14xResponseCurveFUiPCvUi
 /* 8011B188 00117F88  3C 60 28 0F */	lis r3, 0x280F5FD8@ha
@@ -24823,7 +24823,7 @@ reset__Q217zNPCBossOmnidroid15beam_state_typeFv:
 enter__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011B1F0 00117FF0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011B1F4 00117FF4  7C 08 02 A6 */	mflr r0
-/* 8011B1F8 00117FF8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011B1F8 00117FF8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011B1FC 00117FFC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011B200 00118000  38 00 00 00 */	li r0, 0
 /* 8011B204 00118004  93 E1 00 0C */	stw r31, 0xc(r1)
@@ -24834,7 +24834,7 @@ enter__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011B218 00118018  90 03 04 78 */	stw r0, 0x478(r3)
 /* 8011B21C 0011801C  90 03 04 7C */	stw r0, 0x47c(r3)
 /* 8011B220 00118020  D0 03 05 B4 */	stfs f0, 0x5b4(r3)
-/* 8011B224 00118024  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B224 00118024  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B228 00118028  80 03 05 4C */	lwz r0, 0x54c(r3)
 /* 8011B22C 0011802C  2C 00 FF FF */	cmpwi r0, -1
 /* 8011B230 00118030  40 82 00 0C */	bne lbl_8011B23C
@@ -24844,16 +24844,16 @@ lbl_8011B23C:
 /* 8011B23C 0011803C  80 03 05 5C */	lwz r0, 0x55c(r3)
 lbl_8011B240:
 /* 8011B240 00118040  90 1F 00 2C */	stw r0, 0x2c(r31)
-/* 8011B244 00118044  C0 02 AD C8 */	lfs f0, _esc__2_3315-_SDA2_BASE_(r2)
+/* 8011B244 00118044  C0 02 AD C8 */	lfs f0, _esc__2_3315@sda21(r2)
 /* 8011B248 00118048  D0 1F 00 34 */	stfs f0, 0x34(r31)
-/* 8011B24C 0011804C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B24C 0011804C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B250 00118050  4B FE E1 45 */	bl get_top_head__17zNPCBossOmnidroidFv
-/* 8011B254 00118054  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
-/* 8011B258 00118058  C0 42 AC B8 */	lfs f2, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011B254 00118054  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
+/* 8011B258 00118058  C0 42 AC B8 */	lfs f2, _esc__2_2040_0@sda21(r2)
 /* 8011B25C 0011805C  4B FF 48 09 */	bl set_height__Q217zNPCBossOmnidroid9head_typeFff
-/* 8011B260 00118060  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B260 00118060  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B264 00118064  38 80 00 00 */	li r4, 0
-/* 8011B268 00118068  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011B268 00118068  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011B26C 0011806C  38 A0 00 00 */	li r5, 0
 /* 8011B270 00118070  4B FE DF B5 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8011B274 00118074  7F E3 FB 78 */	mr r3, r31
@@ -24871,9 +24871,9 @@ exit__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011B298 00118098  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011B29C 0011809C  BF C1 00 08 */	stmw r30, 8(r1)
 /* 8011B2A0 001180A0  7C 7E 1B 78 */	mr r30, r3
-/* 8011B2A4 001180A4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B2A4 001180A4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B2A8 001180A8  4B FE E0 ED */	bl get_top_head__17zNPCBossOmnidroidFv
-/* 8011B2AC 001180AC  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011B2AC 001180AC  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011B2B0 001180B0  7C 7F 1B 78 */	mr r31, r3
 /* 8011B2B4 001180B4  4B FF 48 49 */	bl reset_height__Q217zNPCBossOmnidroid9head_typeFf
 /* 8011B2B8 001180B8  7F E3 FB 78 */	mr r3, r31
@@ -24907,7 +24907,7 @@ update__Q217zNPCBossOmnidroid15beam_state_typeFf:
 /* 8011B31C 0011811C  C0 03 00 30 */	lfs f0, 0x30(r3)
 /* 8011B320 00118120  EC 00 F8 2A */	fadds f0, f0, f31
 /* 8011B324 00118124  D0 03 00 30 */	stfs f0, 0x30(r3)
-/* 8011B328 00118128  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B328 00118128  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B32C 0011812C  4B FE E0 69 */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011B330 00118130  38 9E 04 80 */	addi r4, r30, 0x480
 /* 8011B334 00118134  7C 7F 1B 78 */	mr r31, r3
@@ -24946,10 +24946,10 @@ lbl_8011B39C:
 /* 8011B3A4 001181A4  48 00 04 49 */	bl update_unfocus__Q217zNPCBossOmnidroid15beam_state_typeFf
 /* 8011B3A8 001181A8  48 00 00 20 */	b lbl_8011B3C8
 lbl_8011B3AC:
-/* 8011B3AC 001181AC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B3AC 001181AC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B3B0 001181B0  4B FF 3C 01 */	bl next_state__17zNPCBossOmnidroidFv
 /* 8011B3B4 001181B4  7C 64 1B 78 */	mr r4, r3
-/* 8011B3B8 001181B8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B3B8 001181B8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B3BC 001181BC  38 A0 00 01 */	li r5, 1
 /* 8011B3C0 001181C0  4B FE ED 25 */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 /* 8011B3C4 001181C4  48 00 00 7C */	b lbl_8011B440
@@ -25001,7 +25001,7 @@ lbl_8011B440:
 render_extra__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011B460 00118260  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8011B464 00118264  7C 08 02 A6 */	mflr r0
-/* 8011B468 00118268  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011B468 00118268  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011B46C 0011826C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8011B470 00118270  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 8011B474 00118274  7C 7C 1B 78 */	mr r28, r3
@@ -25029,7 +25029,7 @@ lbl_8011B4AC:
 /* 8011B4C8 001182C8  4B F0 5F 85 */	bl xFXHighDynamicRangeBrighten__Fbb
 /* 8011B4CC 001182CC  57 E0 06 3F */	clrlwi. r0, r31, 0x18
 /* 8011B4D0 001182D0  41 82 00 20 */	beq lbl_8011B4F0
-/* 8011B4D4 001182D4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B4D4 001182D4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B4D8 001182D8  4B FE DE BD */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011B4DC 001182DC  C0 3C 05 B4 */	lfs f1, 0x5b4(r28)
 /* 8011B4E0 001182E0  C0 5C 05 B8 */	lfs f2, 0x5b8(r28)
@@ -25058,12 +25058,12 @@ lbl_8011B514:
 detect_player__Q217zNPCBossOmnidroid15beam_state_typeCFv:
 /* 8011B528 00118328  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011B52C 0011832C  7C 08 02 A6 */	mflr r0
-/* 8011B530 00118330  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 8011B534 00118334  C0 22 AD E0 */	lfs f1, _esc__2_3585-_SDA2_BASE_(r2)
+/* 8011B530 00118330  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 8011B534 00118334  C0 22 AD E0 */	lfs f1, _esc__2_3585@sda21(r2)
 /* 8011B538 00118338  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011B53C 0011833C  C0 02 B0 44 */	lfs f0, _esc__2_6640-_SDA2_BASE_(r2)
-/* 8011B540 00118340  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8011B544 00118344  C0 62 AD C8 */	lfs f3, _esc__2_3315-_SDA2_BASE_(r2)
+/* 8011B53C 0011833C  C0 02 B0 44 */	lfs f0, _esc__2_6640@sda21(r2)
+/* 8011B540 00118340  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8011B544 00118344  C0 62 AD C8 */	lfs f3, _esc__2_3315@sda21(r2)
 /* 8011B548 00118348  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 8011B54C 0011834C  54 00 10 3A */	slwi r0, r0, 2
 /* 8011B550 00118350  7C 44 04 2E */	lfsx f2, r4, r0
@@ -25082,20 +25082,20 @@ update_stop__Q217zNPCBossOmnidroid15beam_state_typeFf:
 /* 8011B578 00118378  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011B57C 0011837C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011B580 00118380  7C 7F 1B 78 */	mr r31, r3
-/* 8011B584 00118384  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B584 00118384  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B588 00118388  4B FE DE 0D */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011B58C 0011838C  48 00 00 71 */	bl turning__Q217zNPCBossOmnidroid9head_typeCFv
 /* 8011B590 00118390  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011B594 00118394  40 82 00 54 */	bne lbl_8011B5E8
 /* 8011B598 00118398  38 00 00 01 */	li r0, 1
-/* 8011B59C 0011839C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011B59C 0011839C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011B5A0 001183A0  90 1F 00 24 */	stw r0, 0x24(r31)
 /* 8011B5A4 001183A4  38 7F 05 68 */	addi r3, r31, 0x568
 /* 8011B5A8 001183A8  D0 1F 00 30 */	stfs f0, 0x30(r31)
 /* 8011B5AC 001183AC  D0 1F 04 90 */	stfs f0, 0x490(r31)
 /* 8011B5B0 001183B0  90 1F 04 8C */	stw r0, 0x48c(r31)
 /* 8011B5B4 001183B4  48 0D 2F 81 */	bl start__13energy_systemFv
-/* 8011B5B8 001183B8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B5B8 001183B8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B5BC 001183BC  4B FE DD D9 */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011B5C0 001183C0  7C 64 1B 78 */	mr r4, r3
 /* 8011B5C4 001183C4  80 7F 05 DC */	lwz r3, 0x5dc(r31)
@@ -25120,7 +25120,7 @@ turning__Q217zNPCBossOmnidroid9head_typeCFv:
 /* 8011B600 00118400  38 80 00 00 */	li r4, 0
 /* 8011B604 00118404  54 00 07 BD */	rlwinm. r0, r0, 0, 0x1e, 0x1e
 /* 8011B608 00118408  41 82 00 24 */	beq lbl_8011B62C
-/* 8011B60C 0011840C  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011B60C 0011840C  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011B610 00118410  C0 03 02 2C */	lfs f0, 0x22c(r3)
 /* 8011B614 00118414  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 8011B618 00118418  40 82 00 10 */	bne lbl_8011B628
@@ -25140,14 +25140,14 @@ update_focus__Q217zNPCBossOmnidroid15beam_state_typeFf:
 /* 8011B63C 0011843C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8011B640 00118440  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8011B644 00118444  7C 7F 1B 78 */	mr r31, r3
-/* 8011B648 00118448  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B648 00118448  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B64C 0011844C  4B FE DD 49 */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011B650 00118450  7F E3 FB 78 */	mr r3, r31
 /* 8011B654 00118454  38 9F 00 38 */	addi r4, r31, 0x38
 /* 8011B658 00118458  48 00 06 09 */	bl aim_beam__Q217zNPCBossOmnidroid15beam_state_typeFRC5xVec3
 /* 8011B65C 0011845C  C0 5F 00 30 */	lfs f2, 0x30(r31)
 /* 8011B660 00118460  C0 1F 00 34 */	lfs f0, 0x34(r31)
-/* 8011B664 00118464  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011B664 00118464  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011B668 00118468  EC 02 00 24 */	fdivs f0, f2, f0
 /* 8011B66C 0011846C  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 8011B670 00118470  EC 00 00 32 */	fmuls f0, f0, f0
@@ -25155,7 +25155,7 @@ update_focus__Q217zNPCBossOmnidroid15beam_state_typeFf:
 /* 8011B678 00118478  40 82 00 54 */	bne lbl_8011B6CC
 /* 8011B67C 0011847C  D0 3F 04 90 */	stfs f1, 0x490(r31)
 /* 8011B680 00118480  38 60 00 00 */	li r3, 0
-/* 8011B684 00118484  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011B684 00118484  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011B688 00118488  38 00 00 02 */	li r0, 2
 /* 8011B68C 0011848C  D0 1F 00 30 */	stfs f0, 0x30(r31)
 /* 8011B690 00118490  90 7F 05 54 */	stw r3, 0x554(r31)
@@ -25183,11 +25183,11 @@ lbl_8011B6CC:
 /* 8011B6E4 001184E4  38 BF 04 80 */	addi r5, r31, 0x480
 /* 8011B6E8 001184E8  38 C1 00 08 */	addi r6, r1, 8
 /* 8011B6EC 001184EC  90 1F 05 54 */	stw r0, 0x554(r31)
-/* 8011B6F0 001184F0  80 E2 F1 04 */	lwz r7, _esc__2_6657-_SDA2_BASE_(r2)
-/* 8011B6F4 001184F4  81 02 F1 08 */	lwz r8, lbl_803D8E28-_SDA2_BASE_(r2)
-/* 8011B6F8 001184F8  80 02 F1 0C */	lwz r0, lbl_803D8E2C-_SDA2_BASE_(r2)
+/* 8011B6F0 001184F0  80 E2 F1 04 */	lwz r7, _esc__2_6657@sda21(r2)
+/* 8011B6F4 001184F4  81 02 F1 08 */	lwz r8, lbl_803D8E28@sda21(r2)
+/* 8011B6F8 001184F8  80 02 F1 0C */	lwz r0, lbl_803D8E2C@sda21(r2)
 /* 8011B6FC 001184FC  90 E1 00 08 */	stw r7, 8(r1)
-/* 8011B700 00118500  80 ED CC 18 */	lwz r7, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B700 00118500  80 ED CC 18 */	lwz r7, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B704 00118504  91 01 00 0C */	stw r8, 0xc(r1)
 /* 8011B708 00118508  90 01 00 10 */	stw r0, 0x10(r1)
 /* 8011B70C 0011850C  C0 1F 00 38 */	lfs f0, 0x38(r31)
@@ -25198,7 +25198,7 @@ lbl_8011B6CC:
 /* 8011B720 00118520  C0 1F 00 40 */	lfs f0, 0x40(r31)
 /* 8011B724 00118524  D0 01 00 10 */	stfs f0, 0x10(r1)
 /* 8011B728 00118528  48 00 01 AD */	bl extend_to_ground__Q217zNPCBossOmnidroid15beam_state_typeCFR5xVec3RC5xVec3RC5xVec3
-/* 8011B72C 0011852C  C0 02 AD 44 */	lfs f0, _esc__2_3021-_SDA2_BASE_(r2)
+/* 8011B72C 0011852C  C0 02 AD 44 */	lfs f0, _esc__2_3021@sda21(r2)
 /* 8011B730 00118530  D0 1F 00 84 */	stfs f0, 0x84(r31)
 lbl_8011B734:
 /* 8011B734 00118534  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -25215,22 +25215,22 @@ update_fire__Q217zNPCBossOmnidroid15beam_state_typeFf:
 /* 8011B754 00118554  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011B758 00118558  7C 7F 1B 78 */	mr r31, r3
 /* 8011B75C 0011855C  48 00 05 51 */	bl update_beam__Q217zNPCBossOmnidroid15beam_state_typeFf
-/* 8011B760 00118560  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8011B764 00118564  38 62 AC 44 */	addi r3, r2, end_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4beam-_SDA2_BASE_
+/* 8011B760 00118560  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8011B764 00118564  38 62 AC 44 */	addi r3, r2, end_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4beam@sda21
 /* 8011B768 00118568  C0 3F 00 20 */	lfs f1, 0x20(r31)
-/* 8011B76C 0011856C  C0 02 AF B4 */	lfs f0, _esc__2_5858-_SDA2_BASE_(r2)
+/* 8011B76C 0011856C  C0 02 AF B4 */	lfs f0, _esc__2_5858@sda21(r2)
 /* 8011B770 00118570  80 04 03 4C */	lwz r0, 0x34c(r4)
 /* 8011B774 00118574  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011B778 00118578  54 00 10 3A */	slwi r0, r0, 2
 /* 8011B77C 0011857C  7C 63 04 2E */	lfsx f3, r3, r0
 /* 8011B780 00118580  4C 41 13 82 */	cror 2, 1, 2
 /* 8011B784 00118584  40 82 00 54 */	bne lbl_8011B7D8
-/* 8011B788 00118588  C0 42 AC 88 */	lfs f2, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 8011B788 00118588  C0 42 AC 88 */	lfs f2, _esc__2_1441_1@sda21(r2)
 /* 8011B78C 0011858C  FC 01 10 40 */	fcmpo cr0, f1, f2
 /* 8011B790 00118590  4C 40 13 82 */	cror 2, 0, 2
 /* 8011B794 00118594  40 82 00 44 */	bne lbl_8011B7D8
 /* 8011B798 00118598  C0 3F 05 64 */	lfs f1, 0x564(r31)
-/* 8011B79C 0011859C  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011B79C 0011859C  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011B7A0 001185A0  EC 21 18 24 */	fdivs f1, f1, f3
 /* 8011B7A4 001185A4  EC 01 00 28 */	fsubs f0, f1, f0
 /* 8011B7A8 001185A8  FC 00 02 10 */	fabs f0, f0
@@ -25238,7 +25238,7 @@ update_fire__Q217zNPCBossOmnidroid15beam_state_typeFf:
 /* 8011B7B0 001185B0  FC 00 10 40 */	fcmpo cr0, f0, f2
 /* 8011B7B4 001185B4  4C 40 13 82 */	cror 2, 0, 2
 /* 8011B7B8 001185B8  40 82 00 20 */	bne lbl_8011B7D8
-/* 8011B7BC 001185BC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011B7BC 001185BC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011B7C0 001185C0  38 00 00 03 */	li r0, 3
 /* 8011B7C4 001185C4  D0 1F 00 30 */	stfs f0, 0x30(r31)
 /* 8011B7C8 001185C8  90 1F 00 24 */	stw r0, 0x24(r31)
@@ -25261,12 +25261,12 @@ update_unfocus__Q217zNPCBossOmnidroid15beam_state_typeFf:
 /* 8011B7FC 001185FC  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 8011B800 00118600  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011B804 00118604  7C 7F 1B 78 */	mr r31, r3
-/* 8011B808 00118608  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B808 00118608  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B80C 0011860C  4B FE DB 89 */	bl get_top_head__17zNPCBossOmnidroidFv
-/* 8011B810 00118610  C0 62 AD 28 */	lfs f3, _esc__2_3014-_SDA2_BASE_(r2)
+/* 8011B810 00118610  C0 62 AD 28 */	lfs f3, _esc__2_3014@sda21(r2)
 /* 8011B814 00118614  C0 5F 00 30 */	lfs f2, 0x30(r31)
-/* 8011B818 00118618  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
-/* 8011B81C 0011861C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011B818 00118618  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
+/* 8011B81C 0011861C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011B820 00118620  EF E3 08 BC */	fnmsubs f31, f3, f2, f1
 /* 8011B824 00118624  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011B828 00118628  EC 1F 07 F2 */	fmuls f0, f31, f31
@@ -25274,7 +25274,7 @@ update_unfocus__Q217zNPCBossOmnidroid15beam_state_typeFf:
 /* 8011B830 00118630  40 82 00 64 */	bne lbl_8011B894
 /* 8011B834 00118634  80 9F 00 2C */	lwz r4, 0x2c(r31)
 /* 8011B838 00118638  38 7F 05 E4 */	addi r3, r31, 0x5e4
-/* 8011B83C 0011863C  C0 02 AD C8 */	lfs f0, _esc__2_3315-_SDA2_BASE_(r2)
+/* 8011B83C 0011863C  C0 02 AD C8 */	lfs f0, _esc__2_3315@sda21(r2)
 /* 8011B840 00118640  38 04 FF FF */	addi r0, r4, -1
 /* 8011B844 00118644  90 1F 00 2C */	stw r0, 0x2c(r31)
 /* 8011B848 00118648  D0 1F 00 34 */	stfs f0, 0x34(r31)
@@ -25320,7 +25320,7 @@ lbl_8011B8B8:
 extend_to_ground__Q217zNPCBossOmnidroid15beam_state_typeCFR5xVec3RC5xVec3RC5xVec3:
 /* 8011B8D4 001186D4  C0 85 00 04 */	lfs f4, 4(r5)
 /* 8011B8D8 001186D8  C0 06 00 04 */	lfs f0, 4(r6)
-/* 8011B8DC 001186DC  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011B8DC 001186DC  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011B8E0 001186E0  EC C0 20 28 */	fsubs f6, f0, f4
 /* 8011B8E4 001186E4  C0 65 00 00 */	lfs f3, 0(r5)
 /* 8011B8E8 001186E8  C0 06 00 00 */	lfs f0, 0(r6)
@@ -25350,24 +25350,24 @@ lock_launch_point__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011B93C 0011873C  DB A1 00 10 */	stfd f29, 0x10(r1)
 /* 8011B940 00118740  F3 A1 00 18 */	psq_st f29, 24(r1), 0, qr0
 /* 8011B944 00118744  BF C1 00 08 */	stmw r30, 8(r1)
-/* 8011B948 00118748  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B948 00118748  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B94C 0011874C  7C 7E 1B 78 */	mr r30, r3
 /* 8011B950 00118750  C0 04 0D B8 */	lfs f0, 0xdb8(r4)
 /* 8011B954 00118754  D0 03 00 3C */	stfs f0, 0x3c(r3)
-/* 8011B958 00118758  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
-/* 8011B95C 0011875C  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B958 00118758  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
+/* 8011B95C 0011875C  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B960 00118760  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8011B964 00118764  4B EE FA C5 */	bl xEntGetCenter__FPC4xEnt
 /* 8011B968 00118768  C0 23 00 08 */	lfs f1, 8(r3)
-/* 8011B96C 0011876C  38 82 AC 4C */	addi r4, r2, launch_radius__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4beam-_SDA2_BASE_
+/* 8011B96C 0011876C  38 82 AC 4C */	addi r4, r2, launch_radius__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4beam@sda21
 /* 8011B970 00118770  C0 1F 02 38 */	lfs f0, 0x238(r31)
-/* 8011B974 00118774  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B974 00118774  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B978 00118778  EF C1 00 28 */	fsubs f30, f1, f0
 /* 8011B97C 0011877C  C0 23 00 00 */	lfs f1, 0(r3)
 /* 8011B980 00118780  C0 1F 02 30 */	lfs f0, 0x230(r31)
 /* 8011B984 00118784  80 05 03 4C */	lwz r0, 0x34c(r5)
 /* 8011B988 00118788  EF E1 00 28 */	fsubs f31, f1, f0
-/* 8011B98C 0011878C  C0 02 AC 88 */	lfs f0, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 8011B98C 0011878C  C0 02 AC 88 */	lfs f0, _esc__2_1441_1@sda21(r2)
 /* 8011B990 00118790  EC 3E 07 B2 */	fmuls f1, f30, f30
 /* 8011B994 00118794  54 00 10 3A */	slwi r0, r0, 2
 /* 8011B998 00118798  7F A4 04 2E */	lfsx f29, r4, r0
@@ -25376,7 +25376,7 @@ lock_launch_point__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011B9A4 001187A4  4C 40 13 82 */	cror 2, 0, 2
 /* 8011B9A8 001187A8  40 82 00 14 */	bne lbl_8011B9BC
 /* 8011B9AC 001187AC  D3 BE 00 38 */	stfs f29, 0x38(r30)
-/* 8011B9B0 001187B0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011B9B0 001187B0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011B9B4 001187B4  D0 1E 00 40 */	stfs f0, 0x40(r30)
 /* 8011B9B8 001187B8  48 00 00 1C */	b lbl_8011B9D4
 lbl_8011B9BC:
@@ -25395,7 +25395,7 @@ lbl_8011B9D4:
 /* 8011B9E8 001187E8  C0 1F 02 38 */	lfs f0, 0x238(r31)
 /* 8011B9EC 001187EC  EC 01 00 2A */	fadds f0, f1, f0
 /* 8011B9F0 001187F0  D0 1E 00 40 */	stfs f0, 0x40(r30)
-/* 8011B9F4 001187F4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011B9F4 001187F4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011B9F8 001187F8  4B FE D9 9D */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011B9FC 001187FC  38 9E 00 38 */	addi r4, r30, 0x38
 /* 8011BA00 00118800  38 A0 00 00 */	li r5, 0
@@ -25433,13 +25433,13 @@ lock_target__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011BA74 00118874  DB 41 00 30 */	stfd f26, 0x30(r1)
 /* 8011BA78 00118878  F3 41 00 38 */	psq_st f26, 56(r1), 0, qr0
 /* 8011BA7C 0011887C  BF A1 00 24 */	stmw r29, 0x24(r1)
-/* 8011BA80 00118880  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8011BA80 00118880  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 8011BA84 00118884  7C 7D 1B 78 */	mr r29, r3
 /* 8011BA88 00118888  80 64 04 C4 */	lwz r3, 0x4c4(r4)
 /* 8011BA8C 0011888C  4B F6 BB 8D */	bl xEntGetFrame__FPC4xEnt
 /* 8011BA90 00118890  80 83 00 30 */	lwz r4, 0x30(r3)
 /* 8011BA94 00118894  80 03 00 34 */	lwz r0, 0x34(r3)
-/* 8011BA98 00118898  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011BA98 00118898  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011BA9C 0011889C  90 81 00 08 */	stw r4, 8(r1)
 /* 8011BAA0 001188A0  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8011BAA4 001188A4  80 03 00 38 */	lwz r0, 0x38(r3)
@@ -25458,10 +25458,10 @@ lock_target__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011BAD8 001188D8  FC 40 F0 90 */	fmr f2, f30
 /* 8011BADC 001188DC  FF E0 00 90 */	fmr f31, f0
 /* 8011BAE0 001188E0  4B EF 44 31 */	bl xatan2__Fff
-/* 8011BAE4 001188E4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8011BAE8 001188E8  38 62 AC 44 */	addi r3, r2, end_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4beam-_SDA2_BASE_
+/* 8011BAE4 001188E4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8011BAE8 001188E8  38 62 AC 44 */	addi r3, r2, end_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4beam@sda21
 /* 8011BAEC 001188EC  FF C0 08 90 */	fmr f30, f1
-/* 8011BAF0 001188F0  C3 A2 AC E8 */	lfs f29, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8011BAF0 001188F0  C3 A2 AC E8 */	lfs f29, _esc__2_2843@sda21(r2)
 /* 8011BAF4 001188F4  80 04 03 4C */	lwz r0, 0x34c(r4)
 /* 8011BAF8 001188F8  3B C0 00 00 */	li r30, 0
 /* 8011BAFC 001188FC  54 00 10 3A */	slwi r0, r0, 2
@@ -25491,12 +25491,12 @@ lbl_8011BB04:
 /* 8011BB58 00118958  FC 60 D0 90 */	fmr f3, f26
 /* 8011BB5C 0011895C  4B FE B5 45 */	bl spiral_arclength__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_Fffff
 /* 8011BB60 00118960  FC 20 0A 10 */	fabs f1, f1
-/* 8011BB64 00118964  C0 42 AD 70 */	lfs f2, _esc__2_3037-_SDA2_BASE_(r2)
+/* 8011BB64 00118964  C0 42 AD 70 */	lfs f2, _esc__2_3037@sda21(r2)
 /* 8011BB68 00118968  FC 60 E0 90 */	fmr f3, f28
-/* 8011BB6C 0011896C  C0 82 AC DC */	lfs f4, _esc__2_2532-_SDA2_BASE_(r2)
+/* 8011BB6C 0011896C  C0 82 AC DC */	lfs f4, _esc__2_2532@sda21(r2)
 /* 8011BB70 00118970  FC 20 08 18 */	frsp f1, f1
 /* 8011BB74 00118974  4B F2 82 8D */	bl xAccelMoveTime__Fffff
-/* 8011BB78 00118978  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011BB78 00118978  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011BB7C 0011897C  38 61 00 08 */	addi r3, r1, 8
 /* 8011BB80 00118980  38 80 00 01 */	li r4, 1
 /* 8011BB84 00118984  4B FE FA 7D */	bl player_predict__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3ffb
@@ -25520,11 +25520,11 @@ lbl_8011BB04:
 /* 8011BBCC 001189CC  D0 1D 00 10 */	stfs f0, 0x10(r29)
 /* 8011BBD0 001189D0  4B EF 43 41 */	bl xatan2__Fff
 /* 8011BBD4 001189D4  EC 21 F0 28 */	fsubs f1, f1, f30
-/* 8011BBD8 001189D8  C0 02 AC E8 */	lfs f0, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8011BBD8 001189D8  C0 02 AC E8 */	lfs f0, _esc__2_2843@sda21(r2)
 /* 8011BBDC 001189DC  EC 20 08 2A */	fadds f1, f0, f1
 /* 8011BBE0 001189E0  4B EF 41 B5 */	bl xrmod__Ff
-/* 8011BBE4 001189E4  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
-/* 8011BBE8 001189E8  C0 02 AC A0 */	lfs f0, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 8011BBE4 001189E4  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
+/* 8011BBE8 001189E8  C0 02 AC A0 */	lfs f0, _esc__2_1660_1@sda21(r2)
 /* 8011BBEC 001189EC  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8011BBF0 001189F0  D0 3D 00 14 */	stfs f1, 0x14(r29)
 /* 8011BBF4 001189F4  C0 3D 00 10 */	lfs f1, 0x10(r29)
@@ -25532,7 +25532,7 @@ lbl_8011BB04:
 /* 8011BBFC 001189FC  40 80 00 08 */	bge lbl_8011BC04
 /* 8011BC00 00118A00  D0 1D 00 10 */	stfs f0, 0x10(r29)
 lbl_8011BC04:
-/* 8011BC04 00118A04  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011BC04 00118A04  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011BC08 00118A08  D0 1D 00 1C */	stfs f0, 0x1c(r29)
 /* 8011BC0C 00118A0C  D0 1D 00 18 */	stfs f0, 0x18(r29)
 /* 8011BC10 00118A10  80 1D 00 28 */	lwz r0, 0x28(r29)
@@ -25564,12 +25564,12 @@ aim_beam__Q217zNPCBossOmnidroid15beam_state_typeFRC5xVec3:
 /* 8011BC6C 00118A6C  BF C1 00 08 */	stmw r30, 8(r1)
 /* 8011BC70 00118A70  7C 7E 1B 78 */	mr r30, r3
 /* 8011BC74 00118A74  7C 9F 23 78 */	mr r31, r4
-/* 8011BC78 00118A78  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011BC78 00118A78  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011BC7C 00118A7C  4B FE D7 19 */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011BC80 00118A80  7F E4 FB 78 */	mr r4, r31
 /* 8011BC84 00118A84  38 7E 05 58 */	addi r3, r30, 0x558
 /* 8011BC88 00118A88  4B EE F4 21 */	bl __as__5xVec3FRC5xVec3
-/* 8011BC8C 00118A8C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011BC8C 00118A8C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011BC90 00118A90  D0 1E 05 64 */	stfs f0, 0x564(r30)
 /* 8011BC94 00118A94  D0 1E 00 20 */	stfs f0, 0x20(r30)
 /* 8011BC98 00118A98  BB C1 00 08 */	lmw r30, 8(r1)
@@ -25594,19 +25594,19 @@ update_beam__Q217zNPCBossOmnidroid15beam_state_typeFf:
 /* 8011BCD8 00118AD8  BF A1 00 24 */	stmw r29, 0x24(r1)
 /* 8011BCDC 00118ADC  FF E0 08 90 */	fmr f31, f1
 /* 8011BCE0 00118AE0  7C 7D 1B 78 */	mr r29, r3
-/* 8011BCE4 00118AE4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011BCE4 00118AE4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011BCE8 00118AE8  4B FE D6 AD */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011BCEC 00118AEC  38 00 00 00 */	li r0, 0
 /* 8011BCF0 00118AF0  FC 40 F8 90 */	fmr f2, f31
 /* 8011BCF4 00118AF4  90 1D 05 54 */	stw r0, 0x554(r29)
-/* 8011BCF8 00118AF8  38 A2 AC 44 */	addi r5, r2, end_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4beam-_SDA2_BASE_
-/* 8011BCFC 00118AFC  C0 22 AD 70 */	lfs f1, _esc__2_3037-_SDA2_BASE_(r2)
+/* 8011BCF8 00118AF8  38 A2 AC 44 */	addi r5, r2, end_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4beam@sda21
+/* 8011BCFC 00118AFC  C0 22 AD 70 */	lfs f1, _esc__2_3037@sda21(r2)
 /* 8011BD00 00118B00  38 61 00 0C */	addi r3, r1, 0xc
 /* 8011BD04 00118B04  C0 1D 05 64 */	lfs f0, 0x564(r29)
-/* 8011BD08 00118B08  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011BD08 00118B08  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011BD0C 00118B0C  38 81 00 08 */	addi r4, r1, 8
 /* 8011BD10 00118B10  D0 01 00 0C */	stfs f0, 0xc(r1)
-/* 8011BD14 00118B14  C0 82 AC DC */	lfs f4, _esc__2_2532-_SDA2_BASE_(r2)
+/* 8011BD14 00118B14  C0 82 AC DC */	lfs f4, _esc__2_2532@sda21(r2)
 /* 8011BD18 00118B18  C0 1D 00 20 */	lfs f0, 0x20(r29)
 /* 8011BD1C 00118B1C  D0 01 00 08 */	stfs f0, 8(r1)
 /* 8011BD20 00118B20  80 06 03 4C */	lwz r0, 0x34c(r6)
@@ -25615,13 +25615,13 @@ update_beam__Q217zNPCBossOmnidroid15beam_state_typeFf:
 /* 8011BD2C 00118B2C  4B F2 7A FD */	bl xAccelMove__FRfRfffff
 /* 8011BD30 00118B30  C0 41 00 0C */	lfs f2, 0xc(r1)
 /* 8011BD34 00118B34  C0 3D 05 64 */	lfs f1, 0x564(r29)
-/* 8011BD38 00118B38  C0 02 AC AC */	lfs f0, _esc__2_2015_1-_SDA2_BASE_(r2)
+/* 8011BD38 00118B38  C0 02 AC AC */	lfs f0, _esc__2_2015_1@sda21(r2)
 /* 8011BD3C 00118B3C  EC 62 08 28 */	fsubs f3, f2, f1
 /* 8011BD40 00118B40  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 8011BD44 00118B44  4C 41 13 82 */	cror 2, 1, 2
 /* 8011BD48 00118B48  40 82 00 A4 */	bne lbl_8011BDEC
-/* 8011BD4C 00118B4C  C0 02 AD A4 */	lfs f0, _esc__2_3187-_SDA2_BASE_(r2)
-/* 8011BD50 00118B50  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8011BD4C 00118B4C  C0 02 AD A4 */	lfs f0, _esc__2_3187@sda21(r2)
+/* 8011BD50 00118B50  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 /* 8011BD54 00118B54  EC 03 00 24 */	fdivs f0, f3, f0
 /* 8011BD58 00118B58  EC 01 00 2A */	fadds f0, f1, f0
 /* 8011BD5C 00118B5C  FC 00 00 1E */	fctiwz f0, f0
@@ -25636,10 +25636,10 @@ lbl_8011BD78:
 /* 8011BD7C 00118B7C  3C 00 43 30 */	lis r0, 0x4330
 /* 8011BD80 00118B80  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 8011BD84 00118B84  90 01 00 18 */	stw r0, 0x18(r1)
-/* 8011BD88 00118B88  C8 22 AC 90 */	lfd f1, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8011BD88 00118B88  C8 22 AC 90 */	lfd f1, _esc__2_1488@sda21(r2)
 /* 8011BD8C 00118B8C  3B C0 00 00 */	li r30, 0
 /* 8011BD90 00118B90  90 61 00 1C */	stw r3, 0x1c(r1)
-/* 8011BD94 00118B94  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011BD94 00118B94  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011BD98 00118B98  C8 01 00 18 */	lfd f0, 0x18(r1)
 /* 8011BD9C 00118B9C  EC 00 08 28 */	fsubs f0, f0, f1
 /* 8011BDA0 00118BA0  EC 02 00 24 */	fdivs f0, f2, f0
@@ -25698,7 +25698,7 @@ get_path_length__Q217zNPCBossOmnidroid15beam_state_typeCFv:
 /* 8011BE58 00118C58  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 8011BE5C 00118C5C  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 8011BE60 00118C60  BF C1 00 08 */	stmw r30, 8(r1)
-/* 8011BE64 00118C64  C3 E2 A8 B0 */	lfs f31, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011BE64 00118C64  C3 E2 A8 B0 */	lfs f31, _esc__2_1222@sda21(r2)
 /* 8011BE68 00118C68  7C 7E 1B 78 */	mr r30, r3
 /* 8011BE6C 00118C6C  3B E0 00 01 */	li r31, 1
 /* 8011BE70 00118C70  48 00 00 64 */	b lbl_8011BED4
@@ -25742,7 +25742,7 @@ lbl_8011BED4:
 
 .global update_path__Q217zNPCBossOmnidroid15beam_state_typeFf
 update_path__Q217zNPCBossOmnidroid15beam_state_typeFf:
-/* 8011BF00 00118D00  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011BF00 00118D00  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011BF04 00118D04  38 A0 00 00 */	li r5, 0
 /* 8011BF08 00118D08  48 00 00 58 */	b lbl_8011BF60
 lbl_8011BF0C:
@@ -25791,7 +25791,7 @@ refresh_beam__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011BFA0 00118DA0  F3 61 00 28 */	psq_st f27, 40(r1), 0, qr0
 /* 8011BFA4 00118DA4  BF C1 00 18 */	stmw r30, 0x18(r1)
 /* 8011BFA8 00118DA8  7C 7E 1B 78 */	mr r30, r3
-/* 8011BFAC 00118DAC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011BFAC 00118DAC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011BFB0 00118DB0  C0 43 05 64 */	lfs f2, 0x564(r3)
 /* 8011BFB4 00118DB4  C0 23 00 1C */	lfs f1, 0x1c(r3)
 /* 8011BFB8 00118DB8  C3 E3 00 18 */	lfs f31, 0x18(r3)
@@ -25816,16 +25816,16 @@ refresh_beam__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011C004 00118E04  FC 20 E8 90 */	fmr f1, f29
 /* 8011C008 00118E08  C0 1E 05 64 */	lfs f0, 0x564(r30)
 /* 8011C00C 00118E0C  D0 1E 00 1C */	stfs f0, 0x1c(r30)
-/* 8011C010 00118E10  80 82 F1 10 */	lwz r4, _esc__2_6754-_SDA2_BASE_(r2)
-/* 8011C014 00118E14  80 62 F1 14 */	lwz r3, lbl_803D8E34-_SDA2_BASE_(r2)
-/* 8011C018 00118E18  80 02 F1 18 */	lwz r0, lbl_803D8E38-_SDA2_BASE_(r2)
+/* 8011C010 00118E10  80 82 F1 10 */	lwz r4, _esc__2_6754@sda21(r2)
+/* 8011C014 00118E14  80 62 F1 14 */	lwz r3, lbl_803D8E34@sda21(r2)
+/* 8011C018 00118E18  80 02 F1 18 */	lwz r0, lbl_803D8E38@sda21(r2)
 /* 8011C01C 00118E1C  90 81 00 08 */	stw r4, 8(r1)
-/* 8011C020 00118E20  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011C020 00118E20  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011C024 00118E24  90 61 00 0C */	stw r3, 0xc(r1)
 /* 8011C028 00118E28  90 01 00 10 */	stw r0, 0x10(r1)
 /* 8011C02C 00118E2C  4B F5 A7 BD */	bl isin__Ff
 /* 8011C030 00118E30  C0 1F 02 30 */	lfs f0, 0x230(r31)
-/* 8011C034 00118E34  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C034 00118E34  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011C038 00118E38  EC 1B 00 7A */	fmadds f0, f27, f1, f0
 /* 8011C03C 00118E3C  FC 20 E8 90 */	fmr f1, f29
 /* 8011C040 00118E40  D0 01 00 08 */	stfs f0, 8(r1)
@@ -25847,7 +25847,7 @@ refresh_beam__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011C080 00118E80  80 1E 05 E4 */	lwz r0, 0x5e4(r30)
 /* 8011C084 00118E84  2C 00 FF FF */	cmpwi r0, -1
 /* 8011C088 00118E88  40 82 00 34 */	bne lbl_8011C0BC
-/* 8011C08C 00118E8C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011C08C 00118E8C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011C090 00118E90  4B FE D3 05 */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011C094 00118E94  7C 64 1B 78 */	mr r4, r3
 /* 8011C098 00118E98  80 7E 05 D4 */	lwz r3, 0x5d4(r30)
@@ -25936,7 +25936,7 @@ lbl_8011C1B4:
 /* 8011C1CC 00118FCC  7F DF F2 14 */	add r30, r31, r30
 /* 8011C1D0 00118FD0  7F C3 F3 78 */	mr r3, r30
 /* 8011C1D4 00118FD4  4B EE EE D5 */	bl __as__5xVec3FRC5xVec3
-/* 8011C1D8 00118FD8  C0 02 AD 44 */	lfs f0, _esc__2_3021-_SDA2_BASE_(r2)
+/* 8011C1D8 00118FD8  C0 02 AD 44 */	lfs f0, _esc__2_3021@sda21(r2)
 /* 8011C1DC 00118FDC  EC 00 F8 2A */	fadds f0, f0, f31
 /* 8011C1E0 00118FE0  D0 1E 00 0C */	stfs f0, 0xc(r30)
 /* 8011C1E4 00118FE4  80 7F 04 7C */	lwz r3, 0x47c(r31)
@@ -25960,17 +25960,17 @@ add_blast_effects__Q217zNPCBossOmnidroid15beam_state_typeFRC5xVec3f:
 /* 8011C220 00119020  BF C1 00 48 */	stmw r30, 0x48(r1)
 /* 8011C224 00119024  7C 7E 1B 78 */	mr r30, r3
 /* 8011C228 00119028  7C 9F 23 78 */	mr r31, r4
-/* 8011C22C 0011902C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011C22C 0011902C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011C230 00119030  4B FE D1 65 */	bl get_top_head__17zNPCBossOmnidroidFv
-/* 8011C234 00119034  C0 22 AD 50 */	lfs f1, _esc__2_3024-_SDA2_BASE_(r2)
+/* 8011C234 00119034  C0 22 AD 50 */	lfs f1, _esc__2_3024@sda21(r2)
 /* 8011C238 00119038  3C 60 21 64 */	lis r3, 0x2163A1BF@ha
-/* 8011C23C 0011903C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
-/* 8011C240 00119040  38 8D CC 1C */	addi r4, r13, fire_props_esc__7_6776-_SDA_BASE_
-/* 8011C244 00119044  D0 2D CC 1C */	stfs f1, fire_props_esc__7_6776-_SDA_BASE_(r13)
+/* 8011C23C 0011903C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
+/* 8011C240 00119040  38 8D CC 1C */	addi r4, r13, fire_props_esc__7_6776@sda21
+/* 8011C244 00119044  D0 2D CC 1C */	stfs f1, fire_props_esc__7_6776@sda21(r13)
 /* 8011C248 00119048  38 63 A1 BF */	addi r3, r3, 0x2163A1BF@l
 /* 8011C24C 0011904C  D0 04 00 04 */	stfs f0, 4(r4)
 /* 8011C250 00119050  4B F4 A7 B9 */	bl xSndMgrGetSoundGroup__FUi
-/* 8011C254 00119054  38 AD CC 1C */	addi r5, r13, fire_props_esc__7_6776-_SDA_BASE_
+/* 8011C254 00119054  38 AD CC 1C */	addi r5, r13, fire_props_esc__7_6776@sda21
 /* 8011C258 00119058  38 80 04 61 */	li r4, 0x461
 /* 8011C25C 0011905C  90 65 00 08 */	stw r3, 8(r5)
 /* 8011C260 00119060  90 81 00 0C */	stw r4, 0xc(r1)
@@ -25983,19 +25983,19 @@ lbl_8011C278:
 /* 8011C278 00119078  7F E4 FB 78 */	mr r4, r31
 /* 8011C27C 0011907C  38 61 00 10 */	addi r3, r1, 0x10
 /* 8011C280 00119080  4B EE EE 29 */	bl __as__5xVec3FRC5xVec3
-/* 8011C284 00119084  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C284 00119084  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011C288 00119088  38 61 00 1C */	addi r3, r1, 0x1c
 /* 8011C28C 0011908C  C0 01 00 14 */	lfs f0, 0x14(r1)
-/* 8011C290 00119090  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011C290 00119090  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011C294 00119094  EC 00 10 2A */	fadds f0, f0, f2
 /* 8011C298 00119098  FC 60 08 90 */	fmr f3, f1
 /* 8011C29C 0011909C  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 8011C2A0 001190A0  4B EF 15 39 */	bl assign__5xVec3Ffff
-/* 8011C2A4 001190A4  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
-/* 8011C2A8 001190A8  38 0D CC 1C */	addi r0, r13, fire_props_esc__7_6776-_SDA_BASE_
-/* 8011C2AC 001190AC  C0 42 AC AC */	lfs f2, _esc__2_2015_1-_SDA2_BASE_(r2)
+/* 8011C2A4 001190A4  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
+/* 8011C2A8 001190A8  38 0D CC 1C */	addi r0, r13, fire_props_esc__7_6776@sda21
+/* 8011C2AC 001190AC  C0 42 AC AC */	lfs f2, _esc__2_2015_1@sda21(r2)
 /* 8011C2B0 001190B0  38 61 00 0C */	addi r3, r1, 0xc
-/* 8011C2B4 001190B4  C0 22 AC A0 */	lfs f1, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 8011C2B4 001190B4  C0 22 AC A0 */	lfs f1, _esc__2_1660_1@sda21(r2)
 /* 8011C2B8 001190B8  38 81 00 08 */	addi r4, r1, 8
 /* 8011C2BC 001190BC  D0 41 00 28 */	stfs f2, 0x28(r1)
 /* 8011C2C0 001190C0  D0 21 00 2C */	stfs f1, 0x2c(r1)
@@ -26071,7 +26071,7 @@ render_beam__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011C3C4 001191C4  40 81 05 44 */	ble lbl_8011C908
 /* 8011C3C8 001191C8  4B FF FA 85 */	bl get_path_length__Q217zNPCBossOmnidroid15beam_state_typeCFv
 /* 8011C3CC 001191CC  FD C0 08 90 */	fmr f14, f1
-/* 8011C3D0 001191D0  C0 02 AE DC */	lfs f0, _esc__2_4810-_SDA2_BASE_(r2)
+/* 8011C3D0 001191D0  C0 02 AE DC */	lfs f0, _esc__2_4810@sda21(r2)
 /* 8011C3D4 001191D4  EC 20 03 B2 */	fmuls f1, f0, f14
 /* 8011C3D8 001191D8  4B EE BD 11 */	bl floorf__3stdFf
 /* 8011C3DC 001191DC  FC 00 08 1E */	fctiwz f0, f1
@@ -26086,7 +26086,7 @@ render_beam__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011C400 00119200  1F 00 00 06 */	mulli r24, r0, 6
 /* 8011C404 00119204  7F 05 C3 78 */	mr r5, r24
 /* 8011C408 00119208  48 0D 7C 25 */	bl xIMLock__FR14xIMLockContext9xIMFormatiRC17xIMLockParameters
-/* 8011C40C 0011920C  C0 42 AC E4 */	lfs f2, _esc__2_2824-_SDA2_BASE_(r2)
+/* 8011C40C 0011920C  C0 42 AC E4 */	lfs f2, _esc__2_2824@sda21(r2)
 /* 8011C410 00119210  1C 18 00 0C */	mulli r0, r24, 0xc
 /* 8011C414 00119214  83 E1 00 58 */	lwz r31, 0x58(r1)
 /* 8011C418 00119218  EC 22 70 28 */	fsubs f1, f2, f14
@@ -26095,15 +26095,15 @@ render_beam__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011C424 00119224  7F 9F 02 14 */	add r28, r31, r0
 /* 8011C428 00119228  4B F2 2C 25 */	bl xfmod__Fff
 /* 8011C42C 0011922C  FF A0 08 90 */	fmr f29, f1
-/* 8011C430 00119230  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011C430 00119230  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011C434 00119234  FC 1D 00 40 */	fcmpo cr0, f29, f0
 /* 8011C438 00119238  4C 40 13 82 */	cror 2, 0, 2
 /* 8011C43C 0011923C  40 82 00 0C */	bne lbl_8011C448
-/* 8011C440 00119240  C0 02 AC E4 */	lfs f0, _esc__2_2824-_SDA2_BASE_(r2)
+/* 8011C440 00119240  C0 02 AC E4 */	lfs f0, _esc__2_2824@sda21(r2)
 /* 8011C444 00119244  EF BD 00 2A */	fadds f29, f29, f0
 lbl_8011C448:
 /* 8011C448 00119248  3C 60 80 38 */	lis r3, globals@ha
-/* 8011C44C 0011924C  C0 02 AC 98 */	lfs f0, _esc__2_1569-_SDA2_BASE_(r2)
+/* 8011C44C 0011924C  C0 02 AC 98 */	lfs f0, _esc__2_1569@sda21(r2)
 /* 8011C450 00119250  38 83 2A 38 */	addi r4, r3, globals@l
 /* 8011C454 00119254  38 61 00 38 */	addi r3, r1, 0x38
 /* 8011C458 00119258  80 84 00 04 */	lwz r4, 4(r4)
@@ -26115,11 +26115,11 @@ lbl_8011C448:
 /* 8011C470 00119270  4B EF 11 35 */	bl xMat4x3Toworld__FP5xVec3PC7xMat4x3PC5xVec3
 /* 8011C474 00119274  C0 21 00 40 */	lfs f1, 0x40(r1)
 /* 8011C478 00119278  38 00 00 00 */	li r0, 0
-/* 8011C47C 0011927C  C0 02 AF B4 */	lfs f0, _esc__2_5858-_SDA2_BASE_(r2)
+/* 8011C47C 0011927C  C0 02 AF B4 */	lfs f0, _esc__2_5858@sda21(r2)
 /* 8011C480 00119280  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011C484 00119284  4C 41 13 82 */	cror 2, 1, 2
 /* 8011C488 00119288  40 82 00 18 */	bne lbl_8011C4A0
-/* 8011C48C 0011928C  C0 02 AC 88 */	lfs f0, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 8011C48C 0011928C  C0 02 AC 88 */	lfs f0, _esc__2_1441_1@sda21(r2)
 /* 8011C490 00119290  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011C494 00119294  4C 40 13 82 */	cror 2, 0, 2
 /* 8011C498 00119298  40 82 00 08 */	bne lbl_8011C4A0
@@ -26127,16 +26127,16 @@ lbl_8011C448:
 lbl_8011C4A0:
 /* 8011C4A0 001192A0  54 00 06 3F */	clrlwi. r0, r0, 0x18
 /* 8011C4A4 001192A4  41 82 00 0C */	beq lbl_8011C4B0
-/* 8011C4A8 001192A8  C0 82 A8 B4 */	lfs f4, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C4A8 001192A8  C0 82 A8 B4 */	lfs f4, _esc__2_1223@sda21(r2)
 /* 8011C4AC 001192AC  48 00 00 0C */	b lbl_8011C4B8
 lbl_8011C4B0:
-/* 8011C4B0 001192B0  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C4B0 001192B0  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011C4B4 001192B4  EC 80 08 24 */	fdivs f4, f0, f1
 lbl_8011C4B8:
 /* 8011C4B8 001192B8  C0 01 00 38 */	lfs f0, 0x38(r1)
 /* 8011C4BC 001192BC  C0 61 00 3C */	lfs f3, 0x3c(r1)
 /* 8011C4C0 001192C0  EC 00 01 32 */	fmuls f0, f0, f4
-/* 8011C4C4 001192C4  C0 42 B0 48 */	lfs f2, _esc__2_6868-_SDA2_BASE_(r2)
+/* 8011C4C4 001192C4  C0 42 B0 48 */	lfs f2, _esc__2_6868@sda21(r2)
 /* 8011C4C8 001192C8  C0 37 04 90 */	lfs f1, 0x490(r23)
 /* 8011C4CC 001192CC  D0 01 00 98 */	stfs f0, 0x98(r1)
 /* 8011C4D0 001192D0  EC 03 01 32 */	fmuls f0, f3, f4
@@ -26147,28 +26147,28 @@ lbl_8011C4B8:
 /* 8011C4E4 001192E4  6C 60 80 00 */	xoris r0, r3, 0x8000
 /* 8011C4E8 001192E8  3C 60 43 30 */	lis r3, 0x4330
 /* 8011C4EC 001192EC  90 01 00 7C */	stw r0, 0x7c(r1)
-/* 8011C4F0 001192F0  C8 22 AC 90 */	lfd f1, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8011C4F0 001192F0  C8 22 AC 90 */	lfd f1, _esc__2_1488@sda21(r2)
 /* 8011C4F4 001192F4  90 61 00 78 */	stw r3, 0x78(r1)
 /* 8011C4F8 001192F8  80 17 04 78 */	lwz r0, 0x478(r23)
 /* 8011C4FC 001192FC  C8 01 00 78 */	lfd f0, 0x78(r1)
 /* 8011C500 00119300  54 03 20 36 */	slwi r3, r0, 4
 /* 8011C504 00119304  80 17 04 7C */	lwz r0, 0x47c(r23)
 /* 8011C508 00119308  EF 80 08 28 */	fsubs f28, f0, f1
-/* 8011C50C 0011930C  C0 02 B0 4C */	lfs f0, _esc__2_6869-_SDA2_BASE_(r2)
+/* 8011C50C 0011930C  C0 02 B0 4C */	lfs f0, _esc__2_6869@sda21(r2)
 /* 8011C510 00119310  3B 43 00 78 */	addi r26, r3, 0x78
 /* 8011C514 00119314  20 60 00 01 */	subfic r3, r0, 1
 /* 8011C518 00119318  30 03 FF FF */	addic r0, r3, -1
 /* 8011C51C 0011931C  C3 57 04 80 */	lfs f26, 0x480(r23)
 /* 8011C520 00119320  EF 60 E0 28 */	fsubs f27, f0, f28
-/* 8011C524 00119324  C0 02 AF B4 */	lfs f0, _esc__2_5858-_SDA2_BASE_(r2)
+/* 8011C524 00119324  C0 02 AF B4 */	lfs f0, _esc__2_5858@sda21(r2)
 /* 8011C528 00119328  C3 37 04 84 */	lfs f25, 0x484(r23)
 /* 8011C52C 0011932C  7F 57 D2 14 */	add r26, r23, r26
 /* 8011C530 00119330  D8 01 00 C0 */	stfd f0, 0xc0(r1)
 /* 8011C534 00119334  7F 00 19 10 */	subfe r24, r0, r3
-/* 8011C538 00119338  C0 02 AC 98 */	lfs f0, _esc__2_1569-_SDA2_BASE_(r2)
+/* 8011C538 00119338  C0 02 AC 98 */	lfs f0, _esc__2_1569@sda21(r2)
 /* 8011C53C 0011933C  C3 17 04 88 */	lfs f24, 0x488(r23)
-/* 8011C540 00119340  C3 E2 AF E8 */	lfs f31, _esc__2_6208-_SDA2_BASE_(r2)
-/* 8011C544 00119344  C3 C2 AC E4 */	lfs f30, _esc__2_2824-_SDA2_BASE_(r2)
+/* 8011C540 00119340  C3 E2 AF E8 */	lfs f31, _esc__2_6208@sda21(r2)
+/* 8011C544 00119344  C3 C2 AC E4 */	lfs f30, _esc__2_2824@sda21(r2)
 /* 8011C548 00119348  D8 01 00 B8 */	stfd f0, 0xb8(r1)
 /* 8011C54C 0011934C  48 00 03 84 */	b lbl_8011C8D0
 lbl_8011C550:
@@ -26193,11 +26193,11 @@ lbl_8011C550:
 /* 8011C598 00119398  C8 01 00 B8 */	lfd f0, 0xb8(r1)
 /* 8011C59C 0011939C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011C5A0 001193A0  40 80 00 10 */	bge lbl_8011C5B0
-/* 8011C5A4 001193A4  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011C5A4 001193A4  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011C5A8 001193A8  D0 01 00 B4 */	stfs f0, 0xb4(r1)
 /* 8011C5AC 001193AC  48 00 00 10 */	b lbl_8011C5BC
 lbl_8011C5B0:
-/* 8011C5B0 001193B0  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C5B0 001193B0  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011C5B4 001193B4  EC 00 08 24 */	fdivs f0, f0, f1
 /* 8011C5B8 001193B8  D0 01 00 B4 */	stfs f0, 0xb4(r1)
 lbl_8011C5BC:
@@ -26260,11 +26260,11 @@ lbl_8011C67C:
 /* 8011C688 00119488  54 E5 40 2E */	slwi r5, r7, 8
 /* 8011C68C 0011948C  C0 1A 00 08 */	lfs f0, 8(r26)
 /* 8011C690 00119490  EE 77 10 FA */	fmadds f19, f23, f3, f2
-/* 8011C694 00119494  80 82 F1 1C */	lwz r4, _esc__2_6806-_SDA2_BASE_(r2)
+/* 8011C694 00119494  80 82 F1 1C */	lwz r4, _esc__2_6806@sda21(r2)
 /* 8011C698 00119498  EE 56 08 FA */	fmadds f18, f22, f3, f1
-/* 8011C69C 0011949C  80 62 F1 20 */	lwz r3, lbl_803D8E40-_SDA2_BASE_(r2)
+/* 8011C69C 0011949C  80 62 F1 20 */	lwz r3, lbl_803D8E40@sda21(r2)
 /* 8011C6A0 001194A0  EE 35 00 FA */	fmadds f17, f21, f3, f0
-/* 8011C6A4 001194A4  80 02 F1 24 */	lwz r0, lbl_803D8E44-_SDA2_BASE_(r2)
+/* 8011C6A4 001194A4  80 02 F1 24 */	lwz r0, lbl_803D8E44@sda21(r2)
 /* 8011C6A8 001194A8  90 81 00 2C */	stw r4, 0x2c(r1)
 /* 8011C6AC 001194AC  54 E7 C0 0E */	slwi r7, r7, 0x18
 /* 8011C6B0 001194B0  7C A5 32 14 */	add r5, r5, r6
@@ -26285,7 +26285,7 @@ lbl_8011C67C:
 /* 8011C6EC 001194EC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011C6F0 001194F0  4C 41 13 82 */	cror 2, 1, 2
 /* 8011C6F4 001194F4  40 82 00 18 */	bne lbl_8011C70C
-/* 8011C6F8 001194F8  C0 02 AC 88 */	lfs f0, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 8011C6F8 001194F8  C0 02 AC 88 */	lfs f0, _esc__2_1441_1@sda21(r2)
 /* 8011C6FC 001194FC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011C700 00119500  4C 40 13 82 */	cror 2, 0, 2
 /* 8011C704 00119504  40 82 00 08 */	bne lbl_8011C70C
@@ -26293,25 +26293,25 @@ lbl_8011C67C:
 lbl_8011C70C:
 /* 8011C70C 0011950C  54 00 06 3F */	clrlwi. r0, r0, 0x18
 /* 8011C710 00119510  41 82 00 0C */	beq lbl_8011C71C
-/* 8011C714 00119514  C0 62 A8 B4 */	lfs f3, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C714 00119514  C0 62 A8 B4 */	lfs f3, _esc__2_1223@sda21(r2)
 /* 8011C718 00119518  48 00 00 0C */	b lbl_8011C724
 lbl_8011C71C:
-/* 8011C71C 0011951C  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C71C 0011951C  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011C720 00119520  EC 60 08 24 */	fdivs f3, f0, f1
 lbl_8011C724:
 /* 8011C724 00119524  C0 21 00 20 */	lfs f1, 0x20(r1)
 /* 8011C728 00119528  7F 64 DB 78 */	mr r4, r27
 /* 8011C72C 0011952C  C0 01 00 98 */	lfs f0, 0x98(r1)
 /* 8011C730 00119530  38 61 00 08 */	addi r3, r1, 8
-/* 8011C734 00119534  80 02 F1 28 */	lwz r0, _esc__2_6807-_SDA2_BASE_(r2)
+/* 8011C734 00119534  80 02 F1 28 */	lwz r0, _esc__2_6807@sda21(r2)
 /* 8011C738 00119538  38 A1 00 14 */	addi r5, r1, 0x14
 /* 8011C73C 0011953C  EC 21 00 F8 */	fmsubs f1, f1, f3, f0
 /* 8011C740 00119540  C0 41 00 24 */	lfs f2, 0x24(r1)
 /* 8011C744 00119544  C0 01 00 94 */	lfs f0, 0x94(r1)
-/* 8011C748 00119548  80 C2 F1 2C */	lwz r6, lbl_803D8E4C-_SDA2_BASE_(r2)
+/* 8011C748 00119548  80 C2 F1 2C */	lwz r6, lbl_803D8E4C@sda21(r2)
 /* 8011C74C 0011954C  EC 42 00 F8 */	fmsubs f2, f2, f3, f0
 /* 8011C750 00119550  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011C754 00119554  80 02 F1 30 */	lwz r0, lbl_803D8E50-_SDA2_BASE_(r2)
+/* 8011C754 00119554  80 02 F1 30 */	lwz r0, lbl_803D8E50@sda21(r2)
 /* 8011C758 00119558  FC 00 08 50 */	fneg f0, f1
 /* 8011C75C 0011955C  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 8011C760 00119560  90 01 00 1C */	stw r0, 0x1c(r1)
@@ -26331,7 +26331,7 @@ lbl_8011C724:
 /* 8011C798 00119598  EC 59 78 28 */	fsubs f2, f25, f15
 /* 8011C79C 0011959C  EC 78 70 28 */	fsubs f3, f24, f14
 /* 8011C7A0 001195A0  4B EF 10 39 */	bl assign__5xVec3Ffff
-/* 8011C7A4 001195A4  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011C7A4 001195A4  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011C7A8 001195A8  7F C3 F3 78 */	mr r3, r30
 /* 8011C7AC 001195AC  FC 40 08 90 */	fmr f2, f1
 /* 8011C7B0 001195B0  4B EF 3B 99 */	bl assign__5xVec2Fff
@@ -26347,9 +26347,9 @@ lbl_8011C724:
 /* 8011C7D8 001195D8  FC 60 00 18 */	frsp f3, f0
 /* 8011C7DC 001195DC  D0 01 00 A4 */	stfs f0, 0xa4(r1)
 /* 8011C7E0 001195E0  4B EF 0F F9 */	bl assign__5xVec3Ffff
-/* 8011C7E4 001195E4  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C7E4 001195E4  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011C7E8 001195E8  38 7E 00 08 */	addi r3, r30, 8
-/* 8011C7EC 001195EC  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011C7EC 001195EC  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8011C7F0 001195F0  4B EF 3B 59 */	bl assign__5xVec2Fff
 /* 8011C7F4 001195F4  EC 1A 80 2A */	fadds f0, f26, f16
 /* 8011C7F8 001195F8  92 DD 00 04 */	stw r22, 4(r29)
@@ -26363,9 +26363,9 @@ lbl_8011C724:
 /* 8011C818 00119618  FC 60 00 18 */	frsp f3, f0
 /* 8011C81C 0011961C  D0 01 00 B0 */	stfs f0, 0xb0(r1)
 /* 8011C820 00119620  4B EF 0F B9 */	bl assign__5xVec3Ffff
-/* 8011C824 00119624  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011C824 00119624  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011C828 00119628  38 7E 00 10 */	addi r3, r30, 0x10
-/* 8011C82C 0011962C  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C82C 0011962C  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011C830 00119630  4B EF 3B 19 */	bl assign__5xVec2Fff
 /* 8011C834 00119634  C0 21 00 A8 */	lfs f1, 0xa8(r1)
 /* 8011C838 00119638  38 7F 00 24 */	addi r3, r31, 0x24
@@ -26373,9 +26373,9 @@ lbl_8011C724:
 /* 8011C840 00119640  C0 41 00 AC */	lfs f2, 0xac(r1)
 /* 8011C844 00119644  C0 61 00 B0 */	lfs f3, 0xb0(r1)
 /* 8011C848 00119648  4B EF 0F 91 */	bl assign__5xVec3Ffff
-/* 8011C84C 0011964C  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011C84C 0011964C  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011C850 00119650  38 7E 00 18 */	addi r3, r30, 0x18
-/* 8011C854 00119654  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C854 00119654  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011C858 00119658  4B EF 3A F1 */	bl assign__5xVec2Fff
 /* 8011C85C 0011965C  C0 21 00 9C */	lfs f1, 0x9c(r1)
 /* 8011C860 00119660  38 7F 00 30 */	addi r3, r31, 0x30
@@ -26383,9 +26383,9 @@ lbl_8011C724:
 /* 8011C868 00119668  C0 41 00 A0 */	lfs f2, 0xa0(r1)
 /* 8011C86C 0011966C  C0 61 00 A4 */	lfs f3, 0xa4(r1)
 /* 8011C870 00119670  4B EF 0F 69 */	bl assign__5xVec3Ffff
-/* 8011C874 00119674  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C874 00119674  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011C878 00119678  38 7E 00 20 */	addi r3, r30, 0x20
-/* 8011C87C 0011967C  C0 42 A8 B0 */	lfs f2, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011C87C 0011967C  C0 42 A8 B0 */	lfs f2, _esc__2_1222@sda21(r2)
 /* 8011C880 00119680  4B EF 3A C9 */	bl assign__5xVec2Fff
 /* 8011C884 00119684  EC 33 80 2A */	fadds f1, f19, f16
 /* 8011C888 00119688  92 DD 00 10 */	stw r22, 0x10(r29)
@@ -26393,7 +26393,7 @@ lbl_8011C724:
 /* 8011C890 00119690  38 7F 00 3C */	addi r3, r31, 0x3c
 /* 8011C894 00119694  EC 71 70 2A */	fadds f3, f17, f14
 /* 8011C898 00119698  4B EF 0F 41 */	bl assign__5xVec3Ffff
-/* 8011C89C 0011969C  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011C89C 0011969C  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011C8A0 001196A0  38 7E 00 28 */	addi r3, r30, 0x28
 /* 8011C8A4 001196A4  3B FF 00 48 */	addi r31, r31, 0x48
 /* 8011C8A8 001196A8  FC 40 08 90 */	fmr f2, f1
@@ -26412,7 +26412,7 @@ lbl_8011C8D0:
 /* 8011C8D4 001196D4  7C 18 00 00 */	cmpw r24, r0
 /* 8011C8D8 001196D8  41 80 FC 78 */	blt lbl_8011C550
 lbl_8011C8DC:
-/* 8011C8DC 001196DC  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 8011C8DC 001196DC  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 8011C8E0 001196E0  38 60 00 01 */	li r3, 1
 /* 8011C8E4 001196E4  80 97 00 54 */	lwz r4, 0x54(r23)
 /* 8011C8E8 001196E8  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -26492,24 +26492,24 @@ lbl_8011C9F0:
 /* 8011C9F8 001197F8  EC 21 00 24 */	fdivs f1, f1, f0
 /* 8011C9FC 001197FC  48 00 00 30 */	b lbl_8011CA2C
 lbl_8011CA00:
-/* 8011CA00 00119800  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011CA00 00119800  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011CA04 00119804  48 00 00 28 */	b lbl_8011CA2C
 lbl_8011CA08:
-/* 8011CA08 00119808  C0 42 AD 28 */	lfs f2, _esc__2_3014-_SDA2_BASE_(r2)
+/* 8011CA08 00119808  C0 42 AD 28 */	lfs f2, _esc__2_3014@sda21(r2)
 /* 8011CA0C 0011980C  C0 3F 00 30 */	lfs f1, 0x30(r31)
-/* 8011CA10 00119810  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011CA10 00119810  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011CA14 00119814  EC 22 00 72 */	fmuls f1, f2, f1
 /* 8011CA18 00119818  EC 21 00 2A */	fadds f1, f1, f0
 /* 8011CA1C 0011981C  48 00 00 10 */	b lbl_8011CA2C
 lbl_8011CA20:
-/* 8011CA20 00119820  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011CA20 00119820  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011CA24 00119824  D0 1F 05 B4 */	stfs f0, 0x5b4(r31)
 /* 8011CA28 00119828  48 00 00 48 */	b lbl_8011CA70
 lbl_8011CA2C:
 /* 8011CA2C 0011982C  38 7F 05 A4 */	addi r3, r31, 0x5a4
 /* 8011CA30 00119830  38 9F 05 B4 */	addi r4, r31, 0x5b4
 /* 8011CA34 00119834  4B F2 7C AD */	bl eval_linear__14xResponseCurveCFfPf
-/* 8011CA38 00119838  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011CA38 00119838  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011CA3C 0011983C  C0 1F 05 B8 */	lfs f0, 0x5b8(r31)
 /* 8011CA40 00119840  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 8011CA44 00119844  41 82 00 24 */	beq lbl_8011CA68
@@ -26522,7 +26522,7 @@ lbl_8011CA2C:
 /* 8011CA60 00119860  4C 40 13 82 */	cror 2, 0, 2
 /* 8011CA64 00119864  40 82 00 0C */	bne lbl_8011CA70
 lbl_8011CA68:
-/* 8011CA68 00119868  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011CA68 00119868  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011CA6C 0011986C  D0 1F 05 B4 */	stfs f0, 0x5b4(r31)
 lbl_8011CA70:
 /* 8011CA70 00119870  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -26561,7 +26561,7 @@ apply_beam_damage__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011CAE8 001198E8  38 61 00 08 */	addi r3, r1, 8
 /* 8011CAEC 001198EC  38 9B 04 80 */	addi r4, r27, 0x480
 /* 8011CAF0 001198F0  4B EE E5 B9 */	bl __as__5xVec3FRC5xVec3
-/* 8011CAF4 001198F4  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011CAF4 001198F4  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011CAF8 001198F8  D0 01 00 20 */	stfs f0, 0x20(r1)
 /* 8011CAFC 001198FC  80 9B 05 54 */	lwz r4, 0x554(r27)
 /* 8011CB00 00119900  7C 83 0E 70 */	srawi r3, r4, 1
@@ -26571,7 +26571,7 @@ apply_beam_damage__Q217zNPCBossOmnidroid15beam_state_typeFv:
 /* 8011CB10 00119910  41 81 00 08 */	bgt lbl_8011CB18
 /* 8011CB14 00119914  3B A0 00 01 */	li r29, 1
 lbl_8011CB18:
-/* 8011CB18 00119918  C3 E2 AC 88 */	lfs f31, _esc__2_1441_1-_SDA2_BASE_(r2)
+/* 8011CB18 00119918  C3 E2 AC 88 */	lfs f31, _esc__2_1441_1@sda21(r2)
 /* 8011CB1C 0011991C  7C 7C 1B 78 */	mr r28, r3
 /* 8011CB20 00119920  3B E1 00 14 */	addi r31, r1, 0x14
 /* 8011CB24 00119924  48 00 00 E0 */	b lbl_8011CC04
@@ -26593,7 +26593,7 @@ lbl_8011CB28:
 /* 8011CB60 00119960  FC 20 00 90 */	fmr f1, f0
 /* 8011CB64 00119964  7F E3 FB 78 */	mr r3, r31
 /* 8011CB68 00119968  4B EF 21 95 */	bl __adv__5xVec3Ff
-/* 8011CB6C 0011996C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8011CB6C 0011996C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8011CB70 00119970  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8011CB74 00119974  4B F6 AA A5 */	bl xEntGetFrame__FPC4xEnt
 /* 8011CB78 00119978  C3 C1 00 08 */	lfs f30, 8(r1)
@@ -26612,7 +26612,7 @@ lbl_8011CB28:
 /* 8011CBAC 001199AC  FC 40 D8 90 */	fmr f2, f27
 /* 8011CBB0 001199B0  48 00 00 BD */	bl xMath2NearestPointOnLine__Fffffff
 /* 8011CBB4 001199B4  EC 59 E8 7A */	fmadds f2, f25, f1, f29
-/* 8011CBB8 001199B8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011CBB8 001199B8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011CBBC 001199BC  EC 7A F0 7A */	fmadds f3, f26, f1, f30
 /* 8011CBC0 001199C0  EC 3B 10 28 */	fsubs f1, f27, f2
 /* 8011CBC4 001199C4  EC 5C 18 28 */	fsubs f2, f28, f3
@@ -26624,9 +26624,9 @@ lbl_8011CB28:
 /* 8011CBDC 001199DC  FE E0 B8 50 */	fneg f23, f23
 lbl_8011CBE0:
 /* 8011CBE0 001199E0  EC 5A C0 2A */	fadds f2, f26, f24
-/* 8011CBE4 001199E4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CBE4 001199E4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CBE8 001199E8  EC 79 B8 2A */	fadds f3, f25, f23
-/* 8011CBEC 001199EC  C0 22 AD 34 */	lfs f1, _esc__2_3017-_SDA2_BASE_(r2)
+/* 8011CBEC 001199EC  C0 22 AD 34 */	lfs f1, _esc__2_3017@sda21(r2)
 /* 8011CBF0 001199F0  38 81 00 08 */	addi r4, r1, 8
 /* 8011CBF4 001199F4  38 A0 00 08 */	li r5, 8
 /* 8011CBF8 001199F8  38 C0 00 04 */	li r6, 4
@@ -26664,7 +26664,7 @@ lbl_8011CC04:
 .global xMath2NearestPointOnLine__Fffffff
 xMath2NearestPointOnLine__Fffffff:
 /* 8011CC6C 00119A6C  EC C6 20 28 */	fsubs f6, f6, f4
-/* 8011CC70 00119A70  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011CC70 00119A70  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011CC74 00119A74  EC 42 20 28 */	fsubs f2, f2, f4
 /* 8011CC78 00119A78  EC 85 18 28 */	fsubs f4, f5, f3
 /* 8011CC7C 00119A7C  EC 61 18 28 */	fsubs f3, f1, f3
@@ -26681,7 +26681,7 @@ lbl_8011CC9C:
 /* 8011CCA4 00119AA4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011CCA8 00119AA8  4C 41 13 82 */	cror 2, 1, 2
 /* 8011CCAC 00119AAC  40 82 00 0C */	bne lbl_8011CCB8
-/* 8011CCB0 00119AB0  C0 22 A8 B4 */	lfs f1, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011CCB0 00119AB0  C0 22 A8 B4 */	lfs f1, _esc__2_1223@sda21(r2)
 /* 8011CCB4 00119AB4  4E 80 00 20 */	blr 
 lbl_8011CCB8:
 /* 8011CCB8 00119AB8  EC 21 00 24 */	fdivs f1, f1, f0
@@ -26694,7 +26694,7 @@ setup__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 8011CCC8 00119AC8  38 80 00 04 */	li r4, 4
 /* 8011CCCC 00119ACC  38 63 00 70 */	addi r3, r3, 0x70
 /* 8011CCD0 00119AD0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011CCD4 00119AD4  38 A2 B0 50 */	addi r5, r2, flare_nodes_esc__7_6923-_SDA2_BASE_
+/* 8011CCD4 00119AD4  38 A2 B0 50 */	addi r5, r2, flare_nodes_esc__7_6923@sda21
 /* 8011CCD8 00119AD8  38 C0 00 02 */	li r6, 2
 /* 8011CCDC 00119ADC  4B F2 79 ED */	bl reset__14xResponseCurveFUiPCvUi
 /* 8011CCE0 00119AE0  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -26706,34 +26706,34 @@ setup__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 enter__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 8011CCF0 00119AF0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011CCF4 00119AF4  7C 08 02 A6 */	mflr r0
-/* 8011CCF8 00119AF8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011CCF8 00119AF8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011CCFC 00119AFC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011CD00 00119B00  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011CD04 00119B04  7C 7F 1B 78 */	mr r31, r3
 /* 8011CD08 00119B08  D0 03 00 14 */	stfs f0, 0x14(r3)
 /* 8011CD0C 00119B0C  D0 03 00 60 */	stfs f0, 0x60(r3)
 /* 8011CD10 00119B10  D0 03 00 1C */	stfs f0, 0x1c(r3)
-/* 8011CD14 00119B14  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CD14 00119B14  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CD18 00119B18  80 03 05 4C */	lwz r0, 0x54c(r3)
 /* 8011CD1C 00119B1C  2C 00 FF FF */	cmpwi r0, -1
 /* 8011CD20 00119B20  40 82 00 0C */	bne lbl_8011CD2C
-/* 8011CD24 00119B24  C0 42 AC B0 */	lfs f2, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 8011CD24 00119B24  C0 42 AC B0 */	lfs f2, _esc__2_2016_0@sda21(r2)
 /* 8011CD28 00119B28  48 00 00 08 */	b lbl_8011CD30
 lbl_8011CD2C:
 /* 8011CD2C 00119B2C  C0 43 05 54 */	lfs f2, 0x554(r3)
 lbl_8011CD30:
-/* 8011CD30 00119B30  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8011CD30 00119B30  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
 /* 8011CD34 00119B34  38 00 00 01 */	li r0, 1
-/* 8011CD38 00119B38  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011CD38 00119B38  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011CD3C 00119B3C  EC 21 10 2A */	fadds f1, f1, f2
 /* 8011CD40 00119B40  D0 3F 00 18 */	stfs f1, 0x18(r31)
-/* 8011CD44 00119B44  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CD44 00119B44  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CD48 00119B48  C0 23 05 60 */	lfs f1, 0x560(r3)
 /* 8011CD4C 00119B4C  D0 3F 00 20 */	stfs f1, 0x20(r31)
-/* 8011CD50 00119B50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CD50 00119B50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CD54 00119B54  D0 03 05 60 */	stfs f0, 0x560(r3)
 /* 8011CD58 00119B58  98 1F 00 08 */	stb r0, 8(r31)
-/* 8011CD5C 00119B5C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CD5C 00119B5C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CD60 00119B60  4B FF 21 A1 */	bl gimme_throw_delay__17zNPCBossOmnidroidCFv
 /* 8011CD64 00119B64  D0 3F 00 0C */	stfs f1, 0xc(r31)
 /* 8011CD68 00119B68  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -26748,12 +26748,12 @@ exit__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 8011CD80 00119B80  7C 08 02 A6 */	mflr r0
 /* 8011CD84 00119B84  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011CD88 00119B88  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 8011CD8C 00119B8C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CD8C 00119B8C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CD90 00119B90  4B FE C6 05 */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011CD94 00119B94  4B FE C5 F5 */	bl protruded__Q217zNPCBossOmnidroid9head_typeCFv
 /* 8011CD98 00119B98  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011CD9C 00119B9C  40 82 00 38 */	bne lbl_8011CDD4
-/* 8011CDA0 00119BA0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CDA0 00119BA0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CDA4 00119BA4  4B FE C5 F1 */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011CDA8 00119BA8  3C 80 69 66 */	lis r4, 0x6966476B@ha
 /* 8011CDAC 00119BAC  7C 7F 1B 78 */	mr r31, r3
@@ -26767,12 +26767,12 @@ exit__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 8011CDCC 00119BCC  39 20 00 00 */	li r9, 0
 /* 8011CDD0 00119BD0  4B F4 9E BD */	bl xSndMgrPlay__F15iSndGroupHandleUiPC5xVec3PC5xVec3P4xEntPCfPCf
 lbl_8011CDD4:
-/* 8011CDD4 00119BD4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CDD4 00119BD4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CDD8 00119BD8  4B FE C5 A9 */	bl get_bottom_head__17zNPCBossOmnidroidFv
 /* 8011CDDC 00119BDC  4B FE C5 AD */	bl protruded__Q217zNPCBossOmnidroid9head_typeCFv
 /* 8011CDE0 00119BE0  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011CDE4 00119BE4  41 82 00 38 */	beq lbl_8011CE1C
-/* 8011CDE8 00119BE8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CDE8 00119BE8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CDEC 00119BEC  4B FE C5 95 */	bl get_bottom_head__17zNPCBossOmnidroidFv
 /* 8011CDF0 00119BF0  3C 80 73 51 */	lis r4, 0x73516578@ha
 /* 8011CDF4 00119BF4  7C 7F 1B 78 */	mr r31, r3
@@ -26786,22 +26786,22 @@ lbl_8011CDD4:
 /* 8011CE14 00119C14  39 20 00 00 */	li r9, 0
 /* 8011CE18 00119C18  4B F4 9E 75 */	bl xSndMgrPlay__F15iSndGroupHandleUiPC5xVec3PC5xVec3P4xEntPCfPCf
 lbl_8011CE1C:
-/* 8011CE1C 00119C1C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CE1C 00119C1C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CE20 00119C20  4B FE C5 75 */	bl get_top_head__17zNPCBossOmnidroidFv
-/* 8011CE24 00119C24  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011CE24 00119C24  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011CE28 00119C28  4B FF 2C D5 */	bl reset_height__Q217zNPCBossOmnidroid9head_typeFf
-/* 8011CE2C 00119C2C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CE2C 00119C2C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CE30 00119C30  4B FE C5 51 */	bl get_bottom_head__17zNPCBossOmnidroidFv
 /* 8011CE34 00119C34  4B FF 2F 55 */	bl reset_turn_speed__Q217zNPCBossOmnidroid9head_typeFv
-/* 8011CE38 00119C38  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CE38 00119C38  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CE3C 00119C3C  4B FE C5 45 */	bl get_bottom_head__17zNPCBossOmnidroidFv
-/* 8011CE40 00119C40  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011CE40 00119C40  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011CE44 00119C44  4B FF 2C B9 */	bl reset_height__Q217zNPCBossOmnidroid9head_typeFf
-/* 8011CE48 00119C48  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CE48 00119C48  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CE4C 00119C4C  4B FE C5 35 */	bl get_bottom_head__17zNPCBossOmnidroidFv
 /* 8011CE50 00119C50  38 80 00 00 */	li r4, 0
 /* 8011CE54 00119C54  4B FF 2B 7D */	bl face_player__Q217zNPCBossOmnidroid9head_typeFb
-/* 8011CE58 00119C58  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CE58 00119C58  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CE5C 00119C5C  4B FF 10 35 */	bl hit_cancel__17zNPCBossOmnidroidFv
 /* 8011CE60 00119C60  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8011CE64 00119C64  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -26823,7 +26823,7 @@ update__Q217zNPCBossOmnidroid15bolt_state_typeFf:
 /* 8011CE98 00119C98  28 00 00 00 */	cmplwi r0, 0
 /* 8011CE9C 00119C9C  41 82 00 30 */	beq lbl_8011CECC
 /* 8011CEA0 00119CA0  C0 3F 00 0C */	lfs f1, 0xc(r31)
-/* 8011CEA4 00119CA4  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011CEA4 00119CA4  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011CEA8 00119CA8  EC 21 F8 28 */	fsubs f1, f1, f31
 /* 8011CEAC 00119CAC  D0 3F 00 0C */	stfs f1, 0xc(r31)
 /* 8011CEB0 00119CB0  C0 3F 00 0C */	lfs f1, 0xc(r31)
@@ -26835,31 +26835,31 @@ update__Q217zNPCBossOmnidroid15bolt_state_typeFf:
 /* 8011CEC8 00119CC8  48 00 01 18 */	b lbl_8011CFE0
 lbl_8011CECC:
 /* 8011CECC 00119CCC  C0 3F 00 10 */	lfs f1, 0x10(r31)
-/* 8011CED0 00119CD0  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011CED0 00119CD0  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011CED4 00119CD4  EC 21 F8 28 */	fsubs f1, f1, f31
 /* 8011CED8 00119CD8  D0 3F 00 10 */	stfs f1, 0x10(r31)
 /* 8011CEDC 00119CDC  C0 3F 00 10 */	lfs f1, 0x10(r31)
 /* 8011CEE0 00119CE0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011CEE4 00119CE4  40 81 00 24 */	ble lbl_8011CF08
-/* 8011CEE8 00119CE8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CEE8 00119CE8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CEEC 00119CEC  4B FE C4 95 */	bl get_bottom_head__17zNPCBossOmnidroidFv
-/* 8011CEF0 00119CF0  C0 22 B0 78 */	lfs f1, _esc__2_6963-_SDA2_BASE_(r2)
-/* 8011CEF4 00119CF4  C0 42 B0 7C */	lfs f2, _esc__2_6964-_SDA2_BASE_(r2)
+/* 8011CEF0 00119CF0  C0 22 B0 78 */	lfs f1, _esc__2_6963@sda21(r2)
+/* 8011CEF4 00119CF4  C0 42 B0 7C */	lfs f2, _esc__2_6964@sda21(r2)
 /* 8011CEF8 00119CF8  FC 60 08 90 */	fmr f3, f1
 /* 8011CEFC 00119CFC  FC 80 10 90 */	fmr f4, f2
 /* 8011CF00 00119D00  4B FF 2E 69 */	bl set_turn_speed__Q217zNPCBossOmnidroid9head_typeFffff
 /* 8011CF04 00119D04  48 00 00 20 */	b lbl_8011CF24
 lbl_8011CF08:
-/* 8011CF08 00119D08  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CF08 00119D08  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CF0C 00119D0C  4B FE C4 75 */	bl get_bottom_head__17zNPCBossOmnidroidFv
-/* 8011CF10 00119D10  C0 22 AE 78 */	lfs f1, _esc__2_3978-_SDA2_BASE_(r2)
-/* 8011CF14 00119D14  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
-/* 8011CF18 00119D18  C0 62 AC CC */	lfs f3, _esc__2_2352_0-_SDA2_BASE_(r2)
-/* 8011CF1C 00119D1C  C0 82 B0 78 */	lfs f4, _esc__2_6963-_SDA2_BASE_(r2)
+/* 8011CF10 00119D10  C0 22 AE 78 */	lfs f1, _esc__2_3978@sda21(r2)
+/* 8011CF14 00119D14  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
+/* 8011CF18 00119D18  C0 62 AC CC */	lfs f3, _esc__2_2352_0@sda21(r2)
+/* 8011CF1C 00119D1C  C0 82 B0 78 */	lfs f4, _esc__2_6963@sda21(r2)
 /* 8011CF20 00119D20  4B FF 2E 49 */	bl set_turn_speed__Q217zNPCBossOmnidroid9head_typeFffff
 lbl_8011CF24:
-/* 8011CF24 00119D24  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8011CF28 00119D28  C0 02 B0 00 */	lfs f0, _esc__2_6300-_SDA2_BASE_(r2)
+/* 8011CF24 00119D24  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8011CF28 00119D28  C0 02 B0 00 */	lfs f0, _esc__2_6300@sda21(r2)
 /* 8011CF2C 00119D2C  C0 23 11 04 */	lfs f1, 0x1104(r3)
 /* 8011CF30 00119D30  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011CF34 00119D34  4C 41 13 82 */	cror 2, 1, 2
@@ -26867,7 +26867,7 @@ lbl_8011CF24:
 /* 8011CF3C 00119D3C  7F E3 FB 78 */	mr r3, r31
 /* 8011CF40 00119D40  48 00 03 5D */	bl refresh_target__Q217zNPCBossOmnidroid15bolt_state_typeFv
 lbl_8011CF44:
-/* 8011CF44 00119D44  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CF44 00119D44  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CF48 00119D48  4B FE C4 39 */	bl get_bottom_head__17zNPCBossOmnidroidFv
 /* 8011CF4C 00119D4C  38 9F 00 64 */	addi r4, r31, 0x64
 /* 8011CF50 00119D50  38 A0 00 00 */	li r5, 0
@@ -26886,19 +26886,19 @@ lbl_8011CF44:
 /* 8011CF84 00119D84  4C 41 13 82 */	cror 2, 1, 2
 /* 8011CF88 00119D88  40 82 00 34 */	bne lbl_8011CFBC
 /* 8011CF8C 00119D8C  C0 3F 00 60 */	lfs f1, 0x60(r31)
-/* 8011CF90 00119D90  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011CF90 00119D90  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011CF94 00119D94  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011CF98 00119D98  4C 40 13 82 */	cror 2, 0, 2
 /* 8011CF9C 00119D9C  40 82 00 20 */	bne lbl_8011CFBC
-/* 8011CFA0 00119DA0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CFA0 00119DA0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CFA4 00119DA4  4B FF 20 0D */	bl next_state__17zNPCBossOmnidroidFv
 /* 8011CFA8 00119DA8  7C 64 1B 78 */	mr r4, r3
-/* 8011CFAC 00119DAC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011CFAC 00119DAC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011CFB0 00119DB0  38 A0 00 01 */	li r5, 1
 /* 8011CFB4 00119DB4  4B FE D1 31 */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 /* 8011CFB8 00119DB8  48 00 00 28 */	b lbl_8011CFE0
 lbl_8011CFBC:
-/* 8011CFBC 00119DBC  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8011CFBC 00119DBC  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 8011CFC0 00119DC0  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8011CFC4 00119DC4  4C 41 13 82 */	cror 2, 1, 2
 /* 8011CFC8 00119DC8  40 82 00 18 */	bne lbl_8011CFE0
@@ -26920,7 +26920,7 @@ lbl_8011CFE0:
 render_extra__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 8011CFFC 00119DFC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8011D000 00119E00  7C 08 02 A6 */	mflr r0
-/* 8011D004 00119E04  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011D004 00119E04  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011D008 00119E08  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8011D00C 00119E0C  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8011D010 00119E10  7C 7F 1B 78 */	mr r31, r3
@@ -26928,9 +26928,9 @@ render_extra__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 8011D018 00119E18  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8011D01C 00119E1C  4C 40 13 82 */	cror 2, 0, 2
 /* 8011D020 00119E20  41 82 00 5C */	beq lbl_8011D07C
-/* 8011D024 00119E24  C0 22 B0 80 */	lfs f1, _esc__2_6973-_SDA2_BASE_(r2)
+/* 8011D024 00119E24  C0 22 B0 80 */	lfs f1, _esc__2_6973@sda21(r2)
 /* 8011D028 00119E28  38 7F 00 70 */	addi r3, r31, 0x70
-/* 8011D02C 00119E2C  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011D02C 00119E2C  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011D030 00119E30  EC 21 00 BC */	fnmsubs f1, f1, f2, f0
 /* 8011D034 00119E34  48 00 00 5D */	bl clamp_t__14xResponseCurveCFf
 /* 8011D038 00119E38  38 7F 00 70 */	addi r3, r31, 0x70
@@ -26941,7 +26941,7 @@ render_extra__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 8011D04C 00119E4C  38 60 00 20 */	li r3, 0x20
 /* 8011D050 00119E50  7C 1F 03 78 */	mr r31, r0
 /* 8011D054 00119E54  48 03 3A C1 */	bl zRenderState__F14_SDRenderState
-/* 8011D058 00119E58  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D058 00119E58  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D05C 00119E5C  4B FE C3 25 */	bl get_bottom_head__17zNPCBossOmnidroidFv
 /* 8011D060 00119E60  C0 21 00 08 */	lfs f1, 8(r1)
 /* 8011D064 00119E64  C0 41 00 0C */	lfs f2, 0xc(r1)
@@ -26988,7 +26988,7 @@ override_hit__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 8011D0EC 00119EEC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011D0F0 00119EF0  7C 08 02 A6 */	mflr r0
 /* 8011D0F4 00119EF4  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011D0F8 00119EF8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D0F8 00119EF8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D0FC 00119EFC  80 04 0D E0 */	lwz r0, 0xde0(r4)
 /* 8011D100 00119F00  2C 00 00 02 */	cmpwi r0, 2
 /* 8011D104 00119F04  41 82 00 14 */	beq lbl_8011D118
@@ -27002,9 +27002,9 @@ lbl_8011D118:
 /* 8011D120 00119F20  38 60 00 01 */	li r3, 1
 /* 8011D124 00119F24  48 00 00 20 */	b lbl_8011D144
 lbl_8011D128:
-/* 8011D128 00119F28  C0 02 AC A0 */	lfs f0, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 8011D128 00119F28  C0 02 AC A0 */	lfs f0, _esc__2_1660_1@sda21(r2)
 /* 8011D12C 00119F2C  D0 03 00 10 */	stfs f0, 0x10(r3)
-/* 8011D130 00119F30  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D130 00119F30  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D134 00119F34  4B FF 09 C9 */	bl hit_respond__17zNPCBossOmnidroidFv
 /* 8011D138 00119F38  38 60 00 01 */	li r3, 1
 /* 8011D13C 00119F3C  48 00 00 08 */	b lbl_8011D144
@@ -27020,19 +27020,19 @@ lbl_8011D144:
 start_firing__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 8011D154 00119F54  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011D158 00119F58  7C 08 02 A6 */	mflr r0
-/* 8011D15C 00119F5C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011D15C 00119F5C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011D160 00119F60  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011D164 00119F64  38 00 00 00 */	li r0, 0
 /* 8011D168 00119F68  BF C1 00 08 */	stmw r30, 8(r1)
 /* 8011D16C 00119F6C  7C 7E 1B 78 */	mr r30, r3
 /* 8011D170 00119F70  98 03 00 08 */	stb r0, 8(r3)
 /* 8011D174 00119F74  D0 03 00 10 */	stfs f0, 0x10(r3)
-/* 8011D178 00119F78  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D178 00119F78  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D17C 00119F7C  4B FE C2 05 */	bl get_bottom_head__17zNPCBossOmnidroidFv
 /* 8011D180 00119F80  4B FE C2 09 */	bl protruded__Q217zNPCBossOmnidroid9head_typeCFv
 /* 8011D184 00119F84  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011D188 00119F88  40 82 00 38 */	bne lbl_8011D1C0
-/* 8011D18C 00119F8C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D18C 00119F8C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D190 00119F90  4B FE C1 F1 */	bl get_bottom_head__17zNPCBossOmnidroidFv
 /* 8011D194 00119F94  3C 80 69 66 */	lis r4, 0x6966476B@ha
 /* 8011D198 00119F98  7C 7F 1B 78 */	mr r31, r3
@@ -27046,12 +27046,12 @@ start_firing__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 8011D1B8 00119FB8  39 20 00 00 */	li r9, 0
 /* 8011D1BC 00119FBC  4B F4 9A D1 */	bl xSndMgrPlay__F15iSndGroupHandleUiPC5xVec3PC5xVec3P4xEntPCfPCf
 lbl_8011D1C0:
-/* 8011D1C0 00119FC0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D1C0 00119FC0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D1C4 00119FC4  4B FE C1 D1 */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011D1C8 00119FC8  4B FE C1 C1 */	bl protruded__Q217zNPCBossOmnidroid9head_typeCFv
 /* 8011D1CC 00119FCC  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011D1D0 00119FD0  41 82 00 38 */	beq lbl_8011D208
-/* 8011D1D4 00119FD4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D1D4 00119FD4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D1D8 00119FD8  4B FE C1 BD */	bl get_top_head__17zNPCBossOmnidroidFv
 /* 8011D1DC 00119FDC  3C 80 73 51 */	lis r4, 0x73516578@ha
 /* 8011D1E0 00119FE0  7C 7F 1B 78 */	mr r31, r3
@@ -27065,34 +27065,34 @@ lbl_8011D1C0:
 /* 8011D200 0011A000  39 20 00 00 */	li r9, 0
 /* 8011D204 0011A004  4B F4 9A 89 */	bl xSndMgrPlay__F15iSndGroupHandleUiPC5xVec3PC5xVec3P4xEntPCfPCf
 lbl_8011D208:
-/* 8011D208 0011A008  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011D208 0011A008  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011D20C 0011A00C  38 7E 00 30 */	addi r3, r30, 0x30
 /* 8011D210 0011A010  4B F2 B3 15 */	bl xMat3x3RotX__FP7xMat3x3f
-/* 8011D214 0011A014  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D214 0011A014  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D218 0011A018  4B FE C1 7D */	bl get_top_head__17zNPCBossOmnidroidFv
-/* 8011D21C 0011A01C  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
-/* 8011D220 0011A020  C0 42 AC B8 */	lfs f2, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011D21C 0011A01C  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
+/* 8011D220 0011A020  C0 42 AC B8 */	lfs f2, _esc__2_2040_0@sda21(r2)
 /* 8011D224 0011A024  4B FF 28 41 */	bl set_height__Q217zNPCBossOmnidroid9head_typeFff
-/* 8011D228 0011A028  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D228 0011A028  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D22C 0011A02C  4B FE C1 55 */	bl get_bottom_head__17zNPCBossOmnidroidFv
-/* 8011D230 0011A030  C0 22 AC 80 */	lfs f1, _esc__2_1438_0-_SDA2_BASE_(r2)
-/* 8011D234 0011A034  C0 42 AC B8 */	lfs f2, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011D230 0011A030  C0 22 AC 80 */	lfs f1, _esc__2_1438_0@sda21(r2)
+/* 8011D234 0011A034  C0 42 AC B8 */	lfs f2, _esc__2_2040_0@sda21(r2)
 /* 8011D238 0011A038  4B FF 28 2D */	bl set_height__Q217zNPCBossOmnidroid9head_typeFff
-/* 8011D23C 0011A03C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D23C 0011A03C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D240 0011A040  4B FE C1 41 */	bl get_bottom_head__17zNPCBossOmnidroidFv
-/* 8011D244 0011A044  C0 22 AE 78 */	lfs f1, _esc__2_3978-_SDA2_BASE_(r2)
-/* 8011D248 0011A048  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
-/* 8011D24C 0011A04C  C0 62 AC CC */	lfs f3, _esc__2_2352_0-_SDA2_BASE_(r2)
-/* 8011D250 0011A050  C0 82 B0 78 */	lfs f4, _esc__2_6963-_SDA2_BASE_(r2)
+/* 8011D244 0011A044  C0 22 AE 78 */	lfs f1, _esc__2_3978@sda21(r2)
+/* 8011D248 0011A048  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
+/* 8011D24C 0011A04C  C0 62 AC CC */	lfs f3, _esc__2_2352_0@sda21(r2)
+/* 8011D250 0011A050  C0 82 B0 78 */	lfs f4, _esc__2_6963@sda21(r2)
 /* 8011D254 0011A054  4B FF 2B 15 */	bl set_turn_speed__Q217zNPCBossOmnidroid9head_typeFffff
-/* 8011D258 0011A058  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D258 0011A058  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D25C 0011A05C  38 80 00 00 */	li r4, 0
-/* 8011D260 0011A060  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011D260 0011A060  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011D264 0011A064  38 A0 00 00 */	li r5, 0
 /* 8011D268 0011A068  4B FE BF BD */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8011D26C 0011A06C  7F C3 F3 78 */	mr r3, r30
 /* 8011D270 0011A070  48 00 00 2D */	bl refresh_target__Q217zNPCBossOmnidroid15bolt_state_typeFv
-/* 8011D274 0011A074  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D274 0011A074  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D278 0011A078  4B FE C1 09 */	bl get_bottom_head__17zNPCBossOmnidroidFv
 /* 8011D27C 0011A07C  38 9E 00 64 */	addi r4, r30, 0x64
 /* 8011D280 0011A080  38 A0 00 00 */	li r5, 0
@@ -27114,24 +27114,24 @@ refresh_target__Q217zNPCBossOmnidroid15bolt_state_typeFv:
 /* 8011D2B4 0011A0B4  F3 C1 00 28 */	psq_st f30, 40(r1), 0, qr0
 /* 8011D2B8 0011A0B8  BF C1 00 18 */	stmw r30, 0x18(r1)
 /* 8011D2BC 0011A0BC  7C 7E 1B 78 */	mr r30, r3
-/* 8011D2C0 0011A0C0  C3 E2 A8 B0 */	lfs f31, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011D2C0 0011A0C0  C3 E2 A8 B0 */	lfs f31, _esc__2_1222@sda21(r2)
 /* 8011D2C4 0011A0C4  C0 03 00 10 */	lfs f0, 0x10(r3)
 /* 8011D2C8 0011A0C8  FC 00 F8 40 */	fcmpo cr0, f0, f31
 /* 8011D2CC 0011A0CC  40 81 00 08 */	ble lbl_8011D2D4
-/* 8011D2D0 0011A0D0  C3 E2 A8 B4 */	lfs f31, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011D2D0 0011A0D0  C3 E2 A8 B4 */	lfs f31, _esc__2_1223@sda21(r2)
 lbl_8011D2D4:
-/* 8011D2D4 0011A0D4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8011D2D4 0011A0D4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8011D2D8 0011A0D8  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8011D2DC 0011A0DC  4B F6 A3 3D */	bl xEntGetFrame__FPC4xEnt
-/* 8011D2E0 0011A0E0  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8011D2E0 0011A0E0  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 8011D2E4 0011A0E4  3B E3 00 30 */	addi r31, r3, 0x30
 /* 8011D2E8 0011A0E8  80 64 04 C4 */	lwz r3, 0x4c4(r4)
 /* 8011D2EC 0011A0EC  4B EE E1 3D */	bl xEntGetCenter__FPC4xEnt
 /* 8011D2F0 0011A0F0  C0 43 00 04 */	lfs f2, 4(r3)
 /* 8011D2F4 0011A0F4  C0 3F 00 04 */	lfs f1, 4(r31)
-/* 8011D2F8 0011A0F8  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011D2F8 0011A0F8  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011D2FC 0011A0FC  EC 42 08 28 */	fsubs f2, f2, f1
-/* 8011D300 0011A100  C0 22 B0 84 */	lfs f1, _esc__2_7002-_SDA2_BASE_(r2)
+/* 8011D300 0011A100  C0 22 B0 84 */	lfs f1, _esc__2_7002@sda21(r2)
 /* 8011D304 0011A104  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011D308 0011A108  EF C1 10 2A */	fadds f30, f1, f2
 /* 8011D30C 0011A10C  4C 40 13 82 */	cror 2, 0, 2
@@ -27141,7 +27141,7 @@ lbl_8011D2D4:
 /* 8011D31C 0011A11C  4B EE DD 8D */	bl __as__5xVec3FRC5xVec3
 /* 8011D320 0011A120  48 00 00 54 */	b lbl_8011D374
 lbl_8011D324:
-/* 8011D324 0011A124  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D324 0011A124  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D328 0011A128  4B FE C0 59 */	bl get_bottom_head__17zNPCBossOmnidroidFv
 /* 8011D32C 0011A12C  80 A3 02 00 */	lwz r5, 0x200(r3)
 /* 8011D330 0011A130  7F E4 FB 78 */	mr r4, r31
@@ -27154,7 +27154,7 @@ lbl_8011D324:
 /* 8011D34C 0011A14C  4B EE E6 09 */	bl __ami__5xVec3FRC5xVec3
 /* 8011D350 0011A150  38 61 00 08 */	addi r3, r1, 8
 /* 8011D354 0011A154  4B EE E1 01 */	bl length__5xVec3CFv
-/* 8011D358 0011A158  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D358 0011A158  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D35C 0011A15C  FC 40 F8 90 */	fmr f2, f31
 /* 8011D360 0011A160  38 7E 00 64 */	addi r3, r30, 0x64
 /* 8011D364 0011A164  38 80 00 01 */	li r4, 1
@@ -27182,7 +27182,7 @@ emit_bolts__Q217zNPCBossOmnidroid15bolt_state_typeFf:
 /* 8011D3AC 0011A1AC  21 6B FF 40 */	subfic r11, r11, -192
 /* 8011D3B0 0011A1B0  7C 21 59 6E */	stwux r1, r1, r11
 /* 8011D3B4 0011A1B4  7C 08 02 A6 */	mflr r0
-/* 8011D3B8 0011A1B8  C0 42 AC A0 */	lfs f2, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 8011D3B8 0011A1B8  C0 42 AC A0 */	lfs f2, _esc__2_1660_1@sda21(r2)
 /* 8011D3BC 0011A1BC  90 0C 00 04 */	stw r0, 4(r12)
 /* 8011D3C0 0011A1C0  BF CC FF F8 */	stmw r30, -8(r12)
 /* 8011D3C4 0011A1C4  7C 7E 1B 78 */	mr r30, r3
@@ -27198,9 +27198,9 @@ emit_bolts__Q217zNPCBossOmnidroid15bolt_state_typeFf:
 /* 8011D3EC 0011A1EC  6C 03 80 00 */	xoris r3, r0, 0x8000
 /* 8011D3F0 0011A1F0  3C 00 43 30 */	lis r0, 0x4330
 /* 8011D3F4 0011A1F4  90 61 00 A4 */	stw r3, 0xa4(r1)
-/* 8011D3F8 0011A1F8  C8 42 AC 90 */	lfd f2, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8011D3F8 0011A1F8  C8 42 AC 90 */	lfd f2, _esc__2_1488@sda21(r2)
 /* 8011D3FC 0011A1FC  90 01 00 A0 */	stw r0, 0xa0(r1)
-/* 8011D400 0011A200  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011D400 0011A200  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011D404 0011A204  C8 21 00 A0 */	lfd f1, 0xa0(r1)
 /* 8011D408 0011A208  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8011D40C 0011A20C  EC 23 08 28 */	fsubs f1, f3, f1
@@ -27210,7 +27210,7 @@ emit_bolts__Q217zNPCBossOmnidroid15bolt_state_typeFf:
 /* 8011D41C 0011A21C  40 81 00 08 */	ble lbl_8011D424
 /* 8011D420 0011A220  D0 1E 00 1C */	stfs f0, 0x1c(r30)
 lbl_8011D424:
-/* 8011D424 0011A224  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D424 0011A224  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D428 0011A228  4B FE BF 59 */	bl get_bottom_head__17zNPCBossOmnidroidFv
 /* 8011D42C 0011A22C  38 81 00 70 */	addi r4, r1, 0x70
 /* 8011D430 0011A230  7C 7F 1B 78 */	mr r31, r3
@@ -27224,14 +27224,14 @@ lbl_8011D424:
 /* 8011D450 0011A250  4B FE 97 D5 */	bl xMat3x3RMulVec__FP5xVec3PC7xMat3x3PC5xVec3_25
 /* 8011D454 0011A254  38 61 00 1C */	addi r3, r1, 0x1c
 /* 8011D458 0011A258  38 81 00 30 */	addi r4, r1, 0x30
-/* 8011D45C 0011A25C  38 A2 AC 54 */	addi r5, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4bolt-_SDA2_BASE_
+/* 8011D45C 0011A25C  38 A2 AC 54 */	addi r5, r2, offset__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4bolt@sda21
 /* 8011D460 0011A260  4B EF 01 45 */	bl xMat4x3Toworld__FP5xVec3PC7xMat4x3PC5xVec3
-/* 8011D464 0011A264  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D464 0011A264  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D468 0011A268  38 81 00 1C */	addi r4, r1, 0x1c
 /* 8011D46C 0011A26C  38 A1 00 10 */	addi r5, r1, 0x10
 /* 8011D470 0011A270  38 63 0E A8 */	addi r3, r3, 0xea8
 /* 8011D474 0011A274  4B F2 42 F9 */	bl emit__17xLaserBoltEmitterFRC5xVec3RC5xVec3
-/* 8011D478 0011A278  C0 02 AE AC */	lfs f0, _esc__2_4414-_SDA2_BASE_(r2)
+/* 8011D478 0011A278  C0 02 AE AC */	lfs f0, _esc__2_4414@sda21(r2)
 /* 8011D47C 0011A27C  D0 1E 00 60 */	stfs f0, 0x60(r30)
 lbl_8011D480:
 /* 8011D480 0011A280  81 41 00 00 */	lwz r10, 0(r1)
@@ -27256,16 +27256,16 @@ exit__Q217zNPCBossOmnidroid21claw_swing_state_typeFv:
 /* 8011D4B4 0011A2B4  38 00 00 01 */	li r0, 1
 /* 8011D4B8 0011A2B8  BF 61 00 0C */	stmw r27, 0xc(r1)
 /* 8011D4BC 0011A2BC  7C 7B 1B 78 */	mr r27, r3
-/* 8011D4C0 0011A2C0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D4C0 0011A2C0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D4C4 0011A2C4  98 05 01 F2 */	stb r0, 0x1f2(r5)
-/* 8011D4C8 0011A2C8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D4C8 0011A2C8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D4CC 0011A2CC  4B FE D3 99 */	bl get_leg_index__17zNPCBossOmnidroidCFi
 /* 8011D4D0 0011A2D0  7C 7E 1B 78 */	mr r30, r3
-/* 8011D4D4 0011A2D4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D4D4 0011A2D4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D4D8 0011A2D8  38 80 00 01 */	li r4, 1
 /* 8011D4DC 0011A2DC  4B FE D3 89 */	bl get_leg_index__17zNPCBossOmnidroidCFi
 /* 8011D4E0 0011A2E0  7C 7F 1B 78 */	mr r31, r3
-/* 8011D4E4 0011A2E4  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D4E4 0011A2E4  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D4E8 0011A2E8  1C 9E 14 D0 */	mulli r4, r30, 0x14d0
 /* 8011D4EC 0011A2EC  1C 7F 14 D0 */	mulli r3, r31, 0x14d0
 /* 8011D4F0 0011A2F0  3B A4 17 60 */	addi r29, r4, 0x1760
@@ -27281,7 +27281,7 @@ exit__Q217zNPCBossOmnidroid21claw_swing_state_typeFv:
 /* 8011D518 0011A318  1C 9E 05 20 */	mulli r4, r30, 0x520
 /* 8011D51C 0011A31C  98 1D 14 55 */	stb r0, 0x1455(r29)
 /* 8011D520 0011A320  1C 7F 05 20 */	mulli r3, r31, 0x520
-/* 8011D524 0011A324  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D524 0011A324  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D528 0011A328  3B 84 7F 70 */	addi r28, r4, 0x7f70
 /* 8011D52C 0011A32C  7F 80 E2 14 */	add r28, r0, r28
 /* 8011D530 0011A330  3B A3 7F 70 */	addi r29, r3, 0x7f70
@@ -27294,7 +27294,7 @@ exit__Q217zNPCBossOmnidroid21claw_swing_state_typeFv:
 /* 8011D54C 0011A34C  4B FF 4C C1 */	bl restore_claw__Q217zNPCBossOmnidroid13clawrang_typeFv
 /* 8011D550 0011A350  7F A3 EB 78 */	mr r3, r29
 /* 8011D554 0011A354  4B FF 4E 11 */	bl blur_end__Q217zNPCBossOmnidroid13clawrang_typeFv
-/* 8011D558 0011A358  C0 22 AC C8 */	lfs f1, _esc__2_2275-_SDA2_BASE_(r2)
+/* 8011D558 0011A358  C0 22 AC C8 */	lfs f1, _esc__2_2275@sda21(r2)
 /* 8011D55C 0011A35C  38 7B 00 0C */	addi r3, r27, 0xc
 /* 8011D560 0011A360  4B F4 A2 45 */	bl xSndMgrFadeOff__FR10iSndHandlef
 /* 8011D564 0011A364  BB 61 00 0C */	lmw r27, 0xc(r1)
@@ -27313,25 +27313,25 @@ update__Q217zNPCBossOmnidroid21claw_swing_state_typeFf:
 /* 8011D58C 0011A38C  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 8011D590 0011A390  FF E0 08 90 */	fmr f31, f1
 /* 8011D594 0011A394  7C 7C 1B 78 */	mr r28, r3
-/* 8011D598 0011A398  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D598 0011A398  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D59C 0011A39C  4B FF 08 C5 */	bl blending_facing__17zNPCBossOmnidroidCFv
 /* 8011D5A0 0011A3A0  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011D5A4 0011A3A4  40 82 02 8C */	bne lbl_8011D830
 /* 8011D5A8 0011A3A8  88 1C 00 08 */	lbz r0, 8(r28)
 /* 8011D5AC 0011A3AC  28 00 00 00 */	cmplwi r0, 0
 /* 8011D5B0 0011A3B0  40 82 00 9C */	bne lbl_8011D64C
-/* 8011D5B4 0011A3B4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D5B4 0011A3B4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D5B8 0011A3B8  38 00 00 00 */	li r0, 0
-/* 8011D5BC 0011A3BC  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011D5BC 0011A3BC  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011D5C0 0011A3C0  38 80 00 15 */	li r4, 0x15
 /* 8011D5C4 0011A3C4  98 03 01 F2 */	stb r0, 0x1f2(r3)
 /* 8011D5C8 0011A3C8  38 A0 00 01 */	li r5, 1
-/* 8011D5CC 0011A3CC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D5CC 0011A3CC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D5D0 0011A3D0  4B FE BC 55 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8011D5D4 0011A3D4  3C 60 6A F8 */	lis r3, 0x6AF7F524@ha
 /* 8011D5D8 0011A3D8  38 63 F5 24 */	addi r3, r3, 0x6AF7F524@l
 /* 8011D5DC 0011A3DC  4B F4 94 2D */	bl xSndMgrGetSoundGroup__FUi
-/* 8011D5E0 0011A3E0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D5E0 0011A3E0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D5E4 0011A3E4  38 80 00 00 */	li r4, 0
 /* 8011D5E8 0011A3E8  38 C0 00 00 */	li r6, 0
 /* 8011D5EC 0011A3EC  38 E0 00 00 */	li r7, 0
@@ -27341,14 +27341,14 @@ update__Q217zNPCBossOmnidroid21claw_swing_state_typeFf:
 /* 8011D5FC 0011A3FC  4B F4 96 91 */	bl xSndMgrPlay__F15iSndGroupHandleUiPC5xVec3PC5xVec3P4xEntPCfPCf
 /* 8011D600 0011A400  90 7C 00 0C */	stw r3, 0xc(r28)
 /* 8011D604 0011A404  38 80 00 00 */	li r4, 0
-/* 8011D608 0011A408  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D608 0011A408  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D60C 0011A40C  4B FE D2 59 */	bl get_leg_index__17zNPCBossOmnidroidCFi
 /* 8011D610 0011A410  7C 7E 1B 78 */	mr r30, r3
-/* 8011D614 0011A414  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D614 0011A414  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D618 0011A418  38 80 00 01 */	li r4, 1
 /* 8011D61C 0011A41C  4B FE D2 49 */	bl get_leg_index__17zNPCBossOmnidroidCFi
 /* 8011D620 0011A420  1C 63 14 D0 */	mulli r3, r3, 0x14d0
-/* 8011D624 0011A424  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D624 0011A424  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D628 0011A428  38 80 00 01 */	li r4, 1
 /* 8011D62C 0011A42C  1C BE 14 D0 */	mulli r5, r30, 0x14d0
 /* 8011D630 0011A430  38 03 2B B5 */	addi r0, r3, 0x2bb5
@@ -27359,31 +27359,31 @@ update__Q217zNPCBossOmnidroid21claw_swing_state_typeFf:
 /* 8011D644 0011A444  98 9C 00 08 */	stb r4, 8(r28)
 /* 8011D648 0011A448  48 00 01 E8 */	b lbl_8011D830
 lbl_8011D64C:
-/* 8011D64C 0011A44C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D64C 0011A44C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D650 0011A450  4B FF 07 89 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 8011D654 0011A454  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 8011D658 0011A458  4C 40 13 82 */	cror 2, 0, 2
 /* 8011D65C 0011A45C  40 82 00 20 */	bne lbl_8011D67C
-/* 8011D660 0011A460  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D660 0011A460  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D664 0011A464  4B FF 19 4D */	bl next_state__17zNPCBossOmnidroidFv
 /* 8011D668 0011A468  7C 64 1B 78 */	mr r4, r3
-/* 8011D66C 0011A46C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D66C 0011A46C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D670 0011A470  38 A0 00 01 */	li r5, 1
 /* 8011D674 0011A474  4B FE CA 71 */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 /* 8011D678 0011A478  48 00 01 B8 */	b lbl_8011D830
 lbl_8011D67C:
-/* 8011D67C 0011A47C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D67C 0011A47C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D680 0011A480  4B FF 07 A5 */	bl anim_time_current__17zNPCBossOmnidroidCFv
 /* 8011D684 0011A484  FF E0 08 90 */	fmr f31, f1
-/* 8011D688 0011A488  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D688 0011A488  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D68C 0011A48C  38 80 00 00 */	li r4, 0
 /* 8011D690 0011A490  4B FE D1 D5 */	bl get_leg_index__17zNPCBossOmnidroidCFi
 /* 8011D694 0011A494  7C 7E 1B 78 */	mr r30, r3
-/* 8011D698 0011A498  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D698 0011A498  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D69C 0011A49C  38 80 00 01 */	li r4, 1
 /* 8011D6A0 0011A4A0  4B FE D1 C5 */	bl get_leg_index__17zNPCBossOmnidroidCFi
 /* 8011D6A4 0011A4A4  7C 7F 1B 78 */	mr r31, r3
-/* 8011D6A8 0011A4A8  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D6A8 0011A4A8  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D6AC 0011A4AC  1C 9E 14 D0 */	mulli r4, r30, 0x14d0
 /* 8011D6B0 0011A4B0  1C 7F 14 D0 */	mulli r3, r31, 0x14d0
 /* 8011D6B4 0011A4B4  3B A4 17 60 */	addi r29, r4, 0x1760
@@ -27394,22 +27394,22 @@ lbl_8011D67C:
 /* 8011D6C8 0011A4C8  4B FF 96 49 */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 8011D6CC 0011A4CC  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011D6D0 0011A4D0  40 82 00 54 */	bne lbl_8011D724
-/* 8011D6D4 0011A4D4  C0 02 AC 80 */	lfs f0, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8011D6D4 0011A4D4  C0 02 AC 80 */	lfs f0, _esc__2_1438_0@sda21(r2)
 /* 8011D6D8 0011A4D8  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011D6DC 0011A4DC  4C 41 13 82 */	cror 2, 1, 2
 /* 8011D6E0 0011A4E0  40 82 00 44 */	bne lbl_8011D724
-/* 8011D6E4 0011A4E4  C0 02 B0 88 */	lfs f0, _esc__2_7054-_SDA2_BASE_(r2)
+/* 8011D6E4 0011A4E4  C0 02 B0 88 */	lfs f0, _esc__2_7054@sda21(r2)
 /* 8011D6E8 0011A4E8  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011D6EC 0011A4EC  40 80 00 38 */	bge lbl_8011D724
-/* 8011D6F0 0011A4F0  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 8011D6F0 0011A4F0  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 8011D6F4 0011A4F4  7F A3 EB 78 */	mr r3, r29
-/* 8011D6F8 0011A4F8  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011D6F8 0011A4F8  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011D6FC 0011A4FC  38 80 00 0A */	li r4, 0xa
 /* 8011D700 0011A500  38 A0 00 00 */	li r5, 0
 /* 8011D704 0011A504  4B FF 34 ED */	bl damage_enable__Q217zNPCBossOmnidroid8leg_typeFiffPC5xVec3
-/* 8011D708 0011A508  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 8011D708 0011A508  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 8011D70C 0011A50C  7F 83 E3 78 */	mr r3, r28
-/* 8011D710 0011A510  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011D710 0011A510  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011D714 0011A514  38 80 00 0A */	li r4, 0xa
 /* 8011D718 0011A518  38 A0 00 00 */	li r5, 0
 /* 8011D71C 0011A51C  4B FF 34 D5 */	bl damage_enable__Q217zNPCBossOmnidroid8leg_typeFiffPC5xVec3
@@ -27419,7 +27419,7 @@ lbl_8011D724:
 /* 8011D728 0011A528  4B FF 95 E9 */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 8011D72C 0011A52C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011D730 0011A530  41 82 00 24 */	beq lbl_8011D754
-/* 8011D734 0011A534  C0 02 B0 88 */	lfs f0, _esc__2_7054-_SDA2_BASE_(r2)
+/* 8011D734 0011A534  C0 02 B0 88 */	lfs f0, _esc__2_7054@sda21(r2)
 /* 8011D738 0011A538  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011D73C 0011A53C  4C 41 13 82 */	cror 2, 1, 2
 /* 8011D740 0011A540  40 82 00 14 */	bne lbl_8011D754
@@ -27429,7 +27429,7 @@ lbl_8011D724:
 /* 8011D750 0011A550  4B FF 34 BD */	bl damage_disable__Q217zNPCBossOmnidroid8leg_typeFv
 lbl_8011D754:
 /* 8011D754 0011A554  1C 9E 05 20 */	mulli r4, r30, 0x520
-/* 8011D758 0011A558  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D758 0011A558  80 0D CC 18 */	lwz r0, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D75C 0011A55C  1C 7F 05 20 */	mulli r3, r31, 0x520
 /* 8011D760 0011A560  3B 84 7F 70 */	addi r28, r4, 0x7f70
 /* 8011D764 0011A564  7F 80 E2 14 */	add r28, r0, r28
@@ -27439,20 +27439,20 @@ lbl_8011D754:
 /* 8011D774 0011A574  48 00 00 D9 */	bl visible__Q217zNPCBossOmnidroid13clawrang_typeCFv
 /* 8011D778 0011A578  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011D77C 0011A57C  40 82 00 74 */	bne lbl_8011D7F0
-/* 8011D780 0011A580  C0 02 B0 8C */	lfs f0, _esc__2_7055-_SDA2_BASE_(r2)
+/* 8011D780 0011A580  C0 02 B0 8C */	lfs f0, _esc__2_7055@sda21(r2)
 /* 8011D784 0011A584  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011D788 0011A588  4C 41 13 82 */	cror 2, 1, 2
 /* 8011D78C 0011A58C  40 82 00 64 */	bne lbl_8011D7F0
-/* 8011D790 0011A590  C0 02 B0 88 */	lfs f0, _esc__2_7054-_SDA2_BASE_(r2)
+/* 8011D790 0011A590  C0 02 B0 88 */	lfs f0, _esc__2_7054@sda21(r2)
 /* 8011D794 0011A594  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011D798 0011A598  40 80 00 58 */	bge lbl_8011D7F0
 /* 8011D79C 0011A59C  7F 83 E3 78 */	mr r3, r28
 /* 8011D7A0 0011A5A0  38 80 00 01 */	li r4, 1
 /* 8011D7A4 0011A5A4  38 A0 00 01 */	li r5, 1
 /* 8011D7A8 0011A5A8  4B FF 49 B9 */	bl replace_claw__Q217zNPCBossOmnidroid13clawrang_typeFbb
-/* 8011D7AC 0011A5AC  C0 22 AF 60 */	lfs f1, _esc__2_5321-_SDA2_BASE_(r2)
+/* 8011D7AC 0011A5AC  C0 22 AF 60 */	lfs f1, _esc__2_5321@sda21(r2)
 /* 8011D7B0 0011A5B0  7F 83 E3 78 */	mr r3, r28
-/* 8011D7B4 0011A5B4  38 8D 93 FC */	addi r4, r13, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10claw_swing4blur-_SDA_BASE_
+/* 8011D7B4 0011A5B4  38 8D 93 FC */	addi r4, r13, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10claw_swing4blur@sda21
 /* 8011D7B8 0011A5B8  4B FF 4A C1 */	bl set_blur_config__Q217zNPCBossOmnidroid13clawrang_typeFfRCQ210xModelBlur11config_data
 /* 8011D7BC 0011A5BC  7F 83 E3 78 */	mr r3, r28
 /* 8011D7C0 0011A5C0  4B FF 4B 59 */	bl blur_begin__Q217zNPCBossOmnidroid13clawrang_typeFv
@@ -27460,9 +27460,9 @@ lbl_8011D754:
 /* 8011D7C8 0011A5C8  38 80 00 01 */	li r4, 1
 /* 8011D7CC 0011A5CC  38 A0 00 01 */	li r5, 1
 /* 8011D7D0 0011A5D0  4B FF 49 91 */	bl replace_claw__Q217zNPCBossOmnidroid13clawrang_typeFbb
-/* 8011D7D4 0011A5D4  C0 22 AF 60 */	lfs f1, _esc__2_5321-_SDA2_BASE_(r2)
+/* 8011D7D4 0011A5D4  C0 22 AF 60 */	lfs f1, _esc__2_5321@sda21(r2)
 /* 8011D7D8 0011A5D8  7F A3 EB 78 */	mr r3, r29
-/* 8011D7DC 0011A5DC  38 8D 93 FC */	addi r4, r13, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10claw_swing4blur-_SDA_BASE_
+/* 8011D7DC 0011A5DC  38 8D 93 FC */	addi r4, r13, cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10claw_swing4blur@sda21
 /* 8011D7E0 0011A5E0  4B FF 4A 99 */	bl set_blur_config__Q217zNPCBossOmnidroid13clawrang_typeFfRCQ210xModelBlur11config_data
 /* 8011D7E4 0011A5E4  7F A3 EB 78 */	mr r3, r29
 /* 8011D7E8 0011A5E8  4B FF 4B 31 */	bl blur_begin__Q217zNPCBossOmnidroid13clawrang_typeFv
@@ -27472,7 +27472,7 @@ lbl_8011D7F0:
 /* 8011D7F4 0011A5F4  48 00 00 59 */	bl visible__Q217zNPCBossOmnidroid13clawrang_typeCFv
 /* 8011D7F8 0011A5F8  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011D7FC 0011A5FC  41 82 00 34 */	beq lbl_8011D830
-/* 8011D800 0011A600  C0 02 B0 88 */	lfs f0, _esc__2_7054-_SDA2_BASE_(r2)
+/* 8011D800 0011A600  C0 02 B0 88 */	lfs f0, _esc__2_7054@sda21(r2)
 /* 8011D804 0011A604  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011D808 0011A608  4C 41 13 82 */	cror 2, 1, 2
 /* 8011D80C 0011A60C  40 82 00 24 */	bne lbl_8011D830
@@ -27503,12 +27503,12 @@ visible__Q217zNPCBossOmnidroid13clawrang_typeCFv:
 detect_player__Q217zNPCBossOmnidroid21claw_swing_state_typeCFv:
 /* 8011D858 0011A658  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011D85C 0011A65C  7C 08 02 A6 */	mflr r0
-/* 8011D860 0011A660  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 8011D864 0011A664  C0 22 AF 48 */	lfs f1, _esc__2_5278-_SDA2_BASE_(r2)
+/* 8011D860 0011A660  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 8011D864 0011A664  C0 22 AF 48 */	lfs f1, _esc__2_5278@sda21(r2)
 /* 8011D868 0011A668  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011D86C 0011A66C  C0 02 B0 90 */	lfs f0, _esc__2_7065-_SDA2_BASE_(r2)
-/* 8011D870 0011A670  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8011D874 0011A674  C0 62 AC 80 */	lfs f3, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8011D86C 0011A66C  C0 02 B0 90 */	lfs f0, _esc__2_7065@sda21(r2)
+/* 8011D870 0011A670  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8011D874 0011A674  C0 62 AC 80 */	lfs f3, _esc__2_1438_0@sda21(r2)
 /* 8011D878 0011A678  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 8011D87C 0011A67C  54 00 10 3A */	slwi r0, r0, 2
 /* 8011D880 0011A680  7C 44 04 2E */	lfsx f2, r4, r0
@@ -27527,19 +27527,19 @@ setup__Q217zNPCBossOmnidroid15stab_state_typeFv:
 /* 8011D8A8 0011A6A8  21 6B FF 30 */	subfic r11, r11, -208
 /* 8011D8AC 0011A6AC  7C 21 59 6E */	stwux r1, r1, r11
 /* 8011D8B0 0011A6B0  7C 08 02 A6 */	mflr r0
-/* 8011D8B4 0011A6B4  C0 22 B0 94 */	lfs f1, _esc__2_7076-_SDA2_BASE_(r2)
+/* 8011D8B4 0011A6B4  C0 22 B0 94 */	lfs f1, _esc__2_7076@sda21(r2)
 /* 8011D8B8 0011A6B8  38 80 00 16 */	li r4, 0x16
 /* 8011D8BC 0011A6BC  90 0C 00 04 */	stw r0, 4(r12)
 /* 8011D8C0 0011A6C0  BF 4C FF E8 */	stmw r26, -0x18(r12)
 /* 8011D8C4 0011A6C4  7C 7A 1B 78 */	mr r26, r3
-/* 8011D8C8 0011A6C8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D8C8 0011A6C8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D8CC 0011A6CC  4B FF C1 3D */	bl anim_slam_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumf
-/* 8011D8D0 0011A6D0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D8D0 0011A6D0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D8D4 0011A6D4  38 9A 00 10 */	addi r4, r26, 0x10
 /* 8011D8D8 0011A6D8  38 A0 00 00 */	li r5, 0
 /* 8011D8DC 0011A6DC  38 C0 00 00 */	li r6, 0
 /* 8011D8E0 0011A6E0  4B FE CF C9 */	bl eval_leg_matrices__17zNPCBossOmnidroidFP7xMat4x3ii
-/* 8011D8E4 0011A6E4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D8E4 0011A6E4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D8E8 0011A6E8  38 81 00 70 */	addi r4, r1, 0x70
 /* 8011D8EC 0011A6EC  38 A0 00 00 */	li r5, 0
 /* 8011D8F0 0011A6F0  38 C0 00 06 */	li r6, 6
@@ -27590,16 +27590,16 @@ enter__Q217zNPCBossOmnidroid15stab_state_typeFv:
 /* 8011D994 0011A794  DB EC FF F0 */	stfd f31, -0x10(r12)
 /* 8011D998 0011A798  F3 EC 0F F8 */	psq_st f31, -8(r12), 0, qr0
 /* 8011D99C 0011A79C  BF 8C FF E0 */	stmw r28, -0x20(r12)
-/* 8011D9A0 0011A7A0  C0 22 B0 98 */	lfs f1, _esc__2_7096-_SDA2_BASE_(r2)
+/* 8011D9A0 0011A7A0  C0 22 B0 98 */	lfs f1, _esc__2_7096@sda21(r2)
 /* 8011D9A4 0011A7A4  7C 7C 1B 78 */	mr r28, r3
-/* 8011D9A8 0011A7A8  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011D9A8 0011A7A8  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011D9AC 0011A7AC  38 61 00 1C */	addi r3, r1, 0x1c
 /* 8011D9B0 0011A7B0  38 80 00 01 */	li r4, 1
 /* 8011D9B4 0011A7B4  4B FE DC 4D */	bl player_predict__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3ffb
-/* 8011D9B8 0011A7B8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011D9B8 0011A7B8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011D9BC 0011A7BC  38 81 00 30 */	addi r4, r1, 0x30
 /* 8011D9C0 0011A7C0  4B FF 04 F5 */	bl get_scaled_matrix__17zNPCBossOmnidroidCFR7xMat4x3
-/* 8011D9C4 0011A7C4  C3 E2 AD D0 */	lfs f31, _esc__2_3428-_SDA2_BASE_(r2)
+/* 8011D9C4 0011A7C4  C3 E2 AD D0 */	lfs f31, _esc__2_3428@sda21(r2)
 /* 8011D9C8 0011A7C8  3B A0 00 00 */	li r29, 0
 /* 8011D9CC 0011A7CC  3B E0 00 00 */	li r31, 0
 lbl_8011D9D0:
@@ -27622,12 +27622,12 @@ lbl_8011DA08:
 /* 8011DA0C 0011A80C  3B FF 00 40 */	addi r31, r31, 0x40
 /* 8011DA10 0011A810  2C 1D 00 05 */	cmpwi r29, 5
 /* 8011DA14 0011A814  41 80 FF BC */	blt lbl_8011D9D0
-/* 8011DA18 0011A818  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DA18 0011A818  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DA1C 0011A81C  38 00 00 00 */	li r0, 0
-/* 8011DA20 0011A820  C0 22 AD A4 */	lfs f1, _esc__2_3187-_SDA2_BASE_(r2)
+/* 8011DA20 0011A820  C0 22 AD A4 */	lfs f1, _esc__2_3187@sda21(r2)
 /* 8011DA24 0011A824  7F C4 F3 78 */	mr r4, r30
 /* 8011DA28 0011A828  98 03 01 F2 */	stb r0, 0x1f2(r3)
-/* 8011DA2C 0011A82C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DA2C 0011A82C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DA30 0011A830  4B FE DC F1 */	bl set_facing__17zNPCBossOmnidroidFif
 /* 8011DA34 0011A834  38 00 00 00 */	li r0, 0
 /* 8011DA38 0011A838  98 1C 01 A0 */	stb r0, 0x1a0(r28)
@@ -27650,14 +27650,14 @@ exit__Q217zNPCBossOmnidroid15stab_state_typeFv:
 /* 8011DA70 0011A870  38 61 00 08 */	addi r3, r1, 8
 /* 8011DA74 0011A874  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8011DA78 0011A878  4B FD D5 ED */	bl xQuatIdent__FP5xQuat
-/* 8011DA7C 0011A87C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DA7C 0011A87C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DA80 0011A880  38 80 00 00 */	li r4, 0
 /* 8011DA84 0011A884  4B FF 91 05 */	bl get_leg__17zNPCBossOmnidroidFi
-/* 8011DA88 0011A888  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011DA88 0011A888  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011DA8C 0011A88C  7C 7F 1B 78 */	mr r31, r3
 /* 8011DA90 0011A890  38 81 00 08 */	addi r4, r1, 8
 /* 8011DA94 0011A894  4B FF 30 4D */	bl set_hip_pivot__Q217zNPCBossOmnidroid8leg_typeFRC5xQuatf
-/* 8011DA98 0011A898  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DA98 0011A898  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DA9C 0011A89C  38 00 00 01 */	li r0, 1
 /* 8011DAA0 0011A8A0  7F E3 FB 78 */	mr r3, r31
 /* 8011DAA4 0011A8A4  98 04 01 F2 */	stb r0, 0x1f2(r4)
@@ -27683,16 +27683,16 @@ update__Q217zNPCBossOmnidroid15stab_state_typeFf:
 /* 8011DAE8 0011A8E8  88 03 01 A0 */	lbz r0, 0x1a0(r3)
 /* 8011DAEC 0011A8EC  28 00 00 00 */	cmplwi r0, 0
 /* 8011DAF0 0011A8F0  40 82 00 44 */	bne lbl_8011DB34
-/* 8011DAF4 0011A8F4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DAF4 0011A8F4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DAF8 0011A8F8  4B FF 03 69 */	bl blending_facing__17zNPCBossOmnidroidCFv
 /* 8011DAFC 0011A8FC  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011DB00 0011A900  40 82 00 34 */	bne lbl_8011DB34
-/* 8011DB04 0011A904  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DB04 0011A904  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DB08 0011A908  38 80 00 16 */	li r4, 0x16
-/* 8011DB0C 0011A90C  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011DB0C 0011A90C  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011DB10 0011A910  38 A0 00 01 */	li r5, 1
 /* 8011DB14 0011A914  4B FE B7 11 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
-/* 8011DB18 0011A918  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DB18 0011A918  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DB1C 0011A91C  3B E0 00 01 */	li r31, 1
 /* 8011DB20 0011A920  38 80 00 00 */	li r4, 0
 /* 8011DB24 0011A924  4B FF 90 65 */	bl get_leg__17zNPCBossOmnidroidFi
@@ -27703,41 +27703,41 @@ lbl_8011DB34:
 /* 8011DB34 0011A934  88 1E 01 A0 */	lbz r0, 0x1a0(r30)
 /* 8011DB38 0011A938  28 00 00 00 */	cmplwi r0, 0
 /* 8011DB3C 0011A93C  41 82 01 30 */	beq lbl_8011DC6C
-/* 8011DB40 0011A940  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DB40 0011A940  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DB44 0011A944  4B FF 02 95 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
-/* 8011DB48 0011A948  C0 02 AC AC */	lfs f0, _esc__2_2015_1-_SDA2_BASE_(r2)
+/* 8011DB48 0011A948  C0 02 AC AC */	lfs f0, _esc__2_2015_1@sda21(r2)
 /* 8011DB4C 0011A94C  EC 00 F8 2A */	fadds f0, f0, f31
 /* 8011DB50 0011A950  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011DB54 0011A954  4C 40 13 82 */	cror 2, 0, 2
 /* 8011DB58 0011A958  40 82 00 20 */	bne lbl_8011DB78
-/* 8011DB5C 0011A95C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DB5C 0011A95C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DB60 0011A960  4B FF 14 51 */	bl next_state__17zNPCBossOmnidroidFv
 /* 8011DB64 0011A964  7C 64 1B 78 */	mr r4, r3
-/* 8011DB68 0011A968  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DB68 0011A968  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DB6C 0011A96C  38 A0 00 01 */	li r5, 1
 /* 8011DB70 0011A970  4B FE C5 75 */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 /* 8011DB74 0011A974  48 00 00 F8 */	b lbl_8011DC6C
 lbl_8011DB78:
-/* 8011DB78 0011A978  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DB78 0011A978  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DB7C 0011A97C  4B FF 02 A9 */	bl anim_time_current__17zNPCBossOmnidroidCFv
 /* 8011DB80 0011A980  FF E0 08 90 */	fmr f31, f1
-/* 8011DB84 0011A984  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DB84 0011A984  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DB88 0011A988  38 80 00 00 */	li r4, 0
 /* 8011DB8C 0011A98C  4B FF 8F FD */	bl get_leg__17zNPCBossOmnidroidFi
 /* 8011DB90 0011A990  7C 7F 1B 78 */	mr r31, r3
 /* 8011DB94 0011A994  4B FF 91 7D */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 8011DB98 0011A998  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011DB9C 0011A99C  40 82 00 3C */	bne lbl_8011DBD8
-/* 8011DBA0 0011A9A0  C0 02 AD B0 */	lfs f0, _esc__2_3190-_SDA2_BASE_(r2)
+/* 8011DBA0 0011A9A0  C0 02 AD B0 */	lfs f0, _esc__2_3190@sda21(r2)
 /* 8011DBA4 0011A9A4  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011DBA8 0011A9A8  4C 41 13 82 */	cror 2, 1, 2
 /* 8011DBAC 0011A9AC  40 82 00 2C */	bne lbl_8011DBD8
-/* 8011DBB0 0011A9B0  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011DBB0 0011A9B0  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011DBB4 0011A9B4  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011DBB8 0011A9B8  40 80 00 20 */	bge lbl_8011DBD8
-/* 8011DBBC 0011A9BC  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 8011DBBC 0011A9BC  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 8011DBC0 0011A9C0  7F E3 FB 78 */	mr r3, r31
-/* 8011DBC4 0011A9C4  C0 42 AC 80 */	lfs f2, _esc__2_1438_0-_SDA2_BASE_(r2)
+/* 8011DBC4 0011A9C4  C0 42 AC 80 */	lfs f2, _esc__2_1438_0@sda21(r2)
 /* 8011DBC8 0011A9C8  38 80 00 06 */	li r4, 6
 /* 8011DBCC 0011A9CC  38 A0 00 00 */	li r5, 0
 /* 8011DBD0 0011A9D0  4B FF 30 21 */	bl damage_enable__Q217zNPCBossOmnidroid8leg_typeFiffPC5xVec3
@@ -27747,7 +27747,7 @@ lbl_8011DBD8:
 /* 8011DBDC 0011A9DC  4B FF 91 35 */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 8011DBE0 0011A9E0  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011DBE4 0011A9E4  41 82 00 1C */	beq lbl_8011DC00
-/* 8011DBE8 0011A9E8  C0 02 A8 B4 */	lfs f0, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011DBE8 0011A9E8  C0 02 A8 B4 */	lfs f0, _esc__2_1223@sda21(r2)
 /* 8011DBEC 0011A9EC  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011DBF0 0011A9F0  4C 41 13 82 */	cror 2, 1, 2
 /* 8011DBF4 0011A9F4  40 82 00 0C */	bne lbl_8011DC00
@@ -27757,7 +27757,7 @@ lbl_8011DC00:
 /* 8011DC00 0011AA00  88 1E 01 A1 */	lbz r0, 0x1a1(r30)
 /* 8011DC04 0011AA04  28 00 00 00 */	cmplwi r0, 0
 /* 8011DC08 0011AA08  40 82 00 1C */	bne lbl_8011DC24
-/* 8011DC0C 0011AA0C  C0 02 B0 9C */	lfs f0, _esc__2_7127-_SDA2_BASE_(r2)
+/* 8011DC0C 0011AA0C  C0 02 B0 9C */	lfs f0, _esc__2_7127@sda21(r2)
 /* 8011DC10 0011AA10  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011DC14 0011AA14  4C 41 13 82 */	cror 2, 1, 2
 /* 8011DC18 0011AA18  40 82 00 0C */	bne lbl_8011DC24
@@ -27767,7 +27767,7 @@ lbl_8011DC24:
 /* 8011DC24 0011AA24  88 1E 01 A2 */	lbz r0, 0x1a2(r30)
 /* 8011DC28 0011AA28  28 00 00 00 */	cmplwi r0, 0
 /* 8011DC2C 0011AA2C  40 82 00 40 */	bne lbl_8011DC6C
-/* 8011DC30 0011AA30  C0 02 B0 A0 */	lfs f0, _esc__2_7128-_SDA2_BASE_(r2)
+/* 8011DC30 0011AA30  C0 02 B0 A0 */	lfs f0, _esc__2_7128@sda21(r2)
 /* 8011DC34 0011AA34  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011DC38 0011AA38  4C 41 13 82 */	cror 2, 1, 2
 /* 8011DC3C 0011AA3C  40 82 00 30 */	bne lbl_8011DC6C
@@ -27775,10 +27775,10 @@ lbl_8011DC24:
 /* 8011DC44 0011AA44  38 61 00 08 */	addi r3, r1, 8
 /* 8011DC48 0011AA48  98 1E 01 A2 */	stb r0, 0x1a2(r30)
 /* 8011DC4C 0011AA4C  4B FD D4 19 */	bl xQuatIdent__FP5xQuat
-/* 8011DC50 0011AA50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DC50 0011AA50  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DC54 0011AA54  38 80 00 00 */	li r4, 0
 /* 8011DC58 0011AA58  4B FF 8F 31 */	bl get_leg__17zNPCBossOmnidroidFi
-/* 8011DC5C 0011AA5C  C0 02 B0 A4 */	lfs f0, _esc__2_7129-_SDA2_BASE_(r2)
+/* 8011DC5C 0011AA5C  C0 02 B0 A4 */	lfs f0, _esc__2_7129@sda21(r2)
 /* 8011DC60 0011AA60  38 81 00 08 */	addi r4, r1, 8
 /* 8011DC64 0011AA64  EC 20 F8 28 */	fsubs f1, f0, f31
 /* 8011DC68 0011AA68  4B FF 2E 79 */	bl set_hip_pivot__Q217zNPCBossOmnidroid8leg_typeFRC5xQuatf
@@ -27795,12 +27795,12 @@ lbl_8011DC6C:
 detect_player__Q217zNPCBossOmnidroid15stab_state_typeCFv:
 /* 8011DC88 0011AA88  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011DC8C 0011AA8C  7C 08 02 A6 */	mflr r0
-/* 8011DC90 0011AA90  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 8011DC94 0011AA94  C0 22 AD CC */	lfs f1, _esc__2_3364_0-_SDA2_BASE_(r2)
+/* 8011DC90 0011AA90  38 82 A8 B8 */	addi r4, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 8011DC94 0011AA94  C0 22 AD CC */	lfs f1, _esc__2_3364_0@sda21(r2)
 /* 8011DC98 0011AA98  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011DC9C 0011AA9C  C0 02 B0 90 */	lfs f0, _esc__2_7065-_SDA2_BASE_(r2)
-/* 8011DCA0 0011AAA0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8011DCA4 0011AAA4  C0 62 B0 98 */	lfs f3, _esc__2_7096-_SDA2_BASE_(r2)
+/* 8011DC9C 0011AA9C  C0 02 B0 90 */	lfs f0, _esc__2_7065@sda21(r2)
+/* 8011DCA0 0011AAA0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8011DCA4 0011AAA4  C0 62 B0 98 */	lfs f3, _esc__2_7096@sda21(r2)
 /* 8011DCA8 0011AAA8  80 03 03 4C */	lwz r0, 0x34c(r3)
 /* 8011DCAC 0011AAAC  54 00 10 3A */	slwi r0, r0, 2
 /* 8011DCB0 0011AAB0  7C 44 04 2E */	lfsx f2, r4, r0
@@ -27828,19 +27828,19 @@ start_aim__Q217zNPCBossOmnidroid15stab_state_typeFv:
 /* 8011DCFC 0011AAFC  7C 7D 1B 78 */	mr r29, r3
 /* 8011DD00 0011AB00  38 00 00 01 */	li r0, 1
 /* 8011DD04 0011AB04  98 03 01 A1 */	stb r0, 0x1a1(r3)
-/* 8011DD08 0011AB08  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DD08 0011AB08  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DD0C 0011AB0C  4B FF 01 19 */	bl anim_time_current__17zNPCBossOmnidroidCFv
 /* 8011DD10 0011AB10  FF E0 08 90 */	fmr f31, f1
-/* 8011DD14 0011AB14  C0 02 B0 94 */	lfs f0, _esc__2_7076-_SDA2_BASE_(r2)
-/* 8011DD18 0011AB18  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011DD14 0011AB14  C0 02 B0 94 */	lfs f0, _esc__2_7076@sda21(r2)
+/* 8011DD18 0011AB18  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011DD1C 0011AB1C  38 61 00 38 */	addi r3, r1, 0x38
 /* 8011DD20 0011AB20  38 80 00 01 */	li r4, 1
 /* 8011DD24 0011AB24  EC 20 F8 28 */	fsubs f1, f0, f31
 /* 8011DD28 0011AB28  4B FE D8 D9 */	bl player_predict__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FR5xVec3ffb
-/* 8011DD2C 0011AB2C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DD2C 0011AB2C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DD30 0011AB30  4B FE CB 71 */	bl get_facing__17zNPCBossOmnidroidCFv
 /* 8011DD34 0011AB34  7C 7F 1B 78 */	mr r31, r3
-/* 8011DD38 0011AB38  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DD38 0011AB38  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DD3C 0011AB3C  38 81 01 10 */	addi r4, r1, 0x110
 /* 8011DD40 0011AB40  4B FF 01 75 */	bl get_scaled_matrix__17zNPCBossOmnidroidCFR7xMat4x3
 /* 8011DD44 0011AB44  57 E0 30 32 */	slwi r0, r31, 6
@@ -27856,7 +27856,7 @@ start_aim__Q217zNPCBossOmnidroid15stab_state_typeFv:
 /* 8011DD6C 0011AB6C  38 61 00 B0 */	addi r3, r1, 0xb0
 /* 8011DD70 0011AB70  38 81 00 20 */	addi r4, r1, 0x20
 /* 8011DD74 0011AB74  4B F2 9C AD */	bl xMat3x3GetEuler__FPC7xMat3x3P5xVec3
-/* 8011DD78 0011AB78  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DD78 0011AB78  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DD7C 0011AB7C  C0 61 00 2C */	lfs f3, 0x2c(r1)
 /* 8011DD80 0011AB80  C0 23 02 30 */	lfs f1, 0x230(r3)
 /* 8011DD84 0011AB84  C0 41 00 34 */	lfs f2, 0x34(r1)
@@ -27866,40 +27866,40 @@ start_aim__Q217zNPCBossOmnidroid15stab_state_typeFv:
 /* 8011DD94 0011AB94  4B EF 21 7D */	bl xatan2__Fff
 /* 8011DD98 0011AB98  FF C0 08 90 */	fmr f30, f1
 /* 8011DD9C 0011AB9C  C0 01 00 20 */	lfs f0, 0x20(r1)
-/* 8011DDA0 0011ABA0  C0 22 AC E8 */	lfs f1, _esc__2_2843-_SDA2_BASE_(r2)
+/* 8011DDA0 0011ABA0  C0 22 AC E8 */	lfs f1, _esc__2_2843@sda21(r2)
 /* 8011DDA4 0011ABA4  EC 00 F0 28 */	fsubs f0, f0, f30
 /* 8011DDA8 0011ABA8  EC 21 00 2A */	fadds f1, f1, f0
 /* 8011DDAC 0011ABAC  4B EF 1F E9 */	bl xrmod__Ff
-/* 8011DDB0 0011ABB0  C0 42 AC E8 */	lfs f2, _esc__2_2843-_SDA2_BASE_(r2)
-/* 8011DDB4 0011ABB4  C0 02 AE C8 */	lfs f0, _esc__2_4661-_SDA2_BASE_(r2)
+/* 8011DDB0 0011ABB0  C0 42 AC E8 */	lfs f2, _esc__2_2843@sda21(r2)
+/* 8011DDB4 0011ABB4  C0 02 AE C8 */	lfs f0, _esc__2_4661@sda21(r2)
 /* 8011DDB8 0011ABB8  EC 81 10 28 */	fsubs f4, f1, f2
-/* 8011DDBC 0011ABBC  C0 22 B0 A8 */	lfs f1, _esc__2_7167-_SDA2_BASE_(r2)
+/* 8011DDBC 0011ABBC  C0 22 B0 A8 */	lfs f1, _esc__2_7167@sda21(r2)
 /* 8011DDC0 0011ABC0  FC 04 00 40 */	fcmpo cr0, f4, f0
 /* 8011DDC4 0011ABC4  40 80 00 08 */	bge lbl_8011DDCC
 /* 8011DDC8 0011ABC8  FC 00 20 90 */	fmr f0, f4
 lbl_8011DDCC:
 /* 8011DDCC 0011ABCC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011DDD0 0011ABD0  40 81 00 0C */	ble lbl_8011DDDC
-/* 8011DDD4 0011ABD4  C0 02 B0 A8 */	lfs f0, _esc__2_7167-_SDA2_BASE_(r2)
+/* 8011DDD4 0011ABD4  C0 02 B0 A8 */	lfs f0, _esc__2_7167@sda21(r2)
 /* 8011DDD8 0011ABD8  48 00 00 14 */	b lbl_8011DDEC
 lbl_8011DDDC:
-/* 8011DDDC 0011ABDC  C0 02 AE C8 */	lfs f0, _esc__2_4661-_SDA2_BASE_(r2)
+/* 8011DDDC 0011ABDC  C0 02 AE C8 */	lfs f0, _esc__2_4661@sda21(r2)
 /* 8011DDE0 0011ABE0  FC 04 00 40 */	fcmpo cr0, f4, f0
 /* 8011DDE4 0011ABE4  40 80 00 08 */	bge lbl_8011DDEC
 /* 8011DDE8 0011ABE8  FC 00 20 90 */	fmr f0, f4
 lbl_8011DDEC:
 /* 8011DDEC 0011ABEC  C0 61 00 24 */	lfs f3, 0x24(r1)
-/* 8011DDF0 0011ABF0  C0 22 AC BC */	lfs f1, _esc__2_2068-_SDA2_BASE_(r2)
+/* 8011DDF0 0011ABF0  C0 22 AC BC */	lfs f1, _esc__2_2068@sda21(r2)
 /* 8011DDF4 0011ABF4  FC 03 08 40 */	fcmpo cr0, f3, f1
 /* 8011DDF8 0011ABF8  40 80 00 08 */	bge lbl_8011DE00
 /* 8011DDFC 0011ABFC  FC 20 18 90 */	fmr f1, f3
 lbl_8011DE00:
-/* 8011DE00 0011AC00  C0 42 AC C0 */	lfs f2, _esc__2_2069-_SDA2_BASE_(r2)
+/* 8011DE00 0011AC00  C0 42 AC C0 */	lfs f2, _esc__2_2069@sda21(r2)
 /* 8011DE04 0011AC04  FC 02 08 40 */	fcmpo cr0, f2, f1
 /* 8011DE08 0011AC08  40 81 00 08 */	ble lbl_8011DE10
 /* 8011DE0C 0011AC0C  48 00 00 14 */	b lbl_8011DE20
 lbl_8011DE10:
-/* 8011DE10 0011AC10  C0 42 AC BC */	lfs f2, _esc__2_2068-_SDA2_BASE_(r2)
+/* 8011DE10 0011AC10  C0 42 AC BC */	lfs f2, _esc__2_2068@sda21(r2)
 /* 8011DE14 0011AC14  FC 03 10 40 */	fcmpo cr0, f3, f2
 /* 8011DE18 0011AC18  40 80 00 08 */	bge lbl_8011DE20
 /* 8011DE1C 0011AC1C  FC 40 18 90 */	fmr f2, f3
@@ -27910,11 +27910,11 @@ lbl_8011DE20:
 /* 8011DE2C 0011AC2C  41 82 00 14 */	beq lbl_8011DE40
 lbl_8011DE30:
 /* 8011DE30 0011AC30  EC 3E 00 2A */	fadds f1, f30, f0
-/* 8011DE34 0011AC34  C0 62 A8 B0 */	lfs f3, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011DE34 0011AC34  C0 62 A8 B0 */	lfs f3, _esc__2_1222@sda21(r2)
 /* 8011DE38 0011AC38  38 61 00 B0 */	addi r3, r1, 0xb0
 /* 8011DE3C 0011AC3C  4B F2 A4 81 */	bl xMat3x3Euler__FP7xMat3x3fff
 lbl_8011DE40:
-/* 8011DE40 0011AC40  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DE40 0011AC40  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DE44 0011AC44  38 61 00 80 */	addi r3, r1, 0x80
 /* 8011DE48 0011AC48  38 9E 00 10 */	addi r4, r30, 0x10
 /* 8011DE4C 0011AC4C  38 A5 02 00 */	addi r5, r5, 0x200
@@ -27935,10 +27935,10 @@ lbl_8011DE40:
 /* 8011DE88 0011AC88  7C 64 1B 78 */	mr r4, r3
 /* 8011DE8C 0011AC8C  7C BD 2A 14 */	add r5, r29, r5
 /* 8011DE90 0011AC90  4B F2 B7 59 */	bl xQuatDiff__FP5xQuatPC5xQuatPC5xQuat
-/* 8011DE94 0011AC94  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DE94 0011AC94  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DE98 0011AC98  38 80 00 00 */	li r4, 0
 /* 8011DE9C 0011AC9C  4B FF 8C ED */	bl get_leg__17zNPCBossOmnidroidFi
-/* 8011DEA0 0011ACA0  C0 02 AD B0 */	lfs f0, _esc__2_3190-_SDA2_BASE_(r2)
+/* 8011DEA0 0011ACA0  C0 02 AD B0 */	lfs f0, _esc__2_3190@sda21(r2)
 /* 8011DEA4 0011ACA4  38 81 00 10 */	addi r4, r1, 0x10
 /* 8011DEA8 0011ACA8  EC 20 F8 28 */	fsubs f1, f0, f31
 /* 8011DEAC 0011ACAC  4B FF 2C 35 */	bl set_hip_pivot__Q217zNPCBossOmnidroid8leg_typeFRC5xQuatf
@@ -27965,11 +27965,11 @@ enter__Q217zNPCBossOmnidroid17beatit_state_typeFv:
 /* 8011DEF4 0011ACF4  7C 7C 1B 78 */	mr r28, r3
 /* 8011DEF8 0011ACF8  80 64 2A 38 */	lwz r3, globals@l(r4)
 /* 8011DEFC 0011ACFC  3B A0 00 00 */	li r29, 0
-/* 8011DF00 0011AD00  C3 E2 AD 9C */	lfs f31, _esc__2_3117-_SDA2_BASE_(r2)
+/* 8011DF00 0011AD00  C3 E2 AD 9C */	lfs f31, _esc__2_3117@sda21(r2)
 /* 8011DF04 0011AD04  3B E3 00 20 */	addi r31, r3, 0x20
 lbl_8011DF08:
 /* 8011DF08 0011AD08  38 A0 00 05 */	li r5, 5
-/* 8011DF0C 0011AD0C  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DF0C 0011AD0C  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DF10 0011AD10  7C 1D 2B D6 */	divw r0, r29, r5
 /* 8011DF14 0011AD14  38 61 00 08 */	addi r3, r1, 8
 /* 8011DF18 0011AD18  38 86 02 00 */	addi r4, r6, 0x200
@@ -27998,12 +27998,12 @@ lbl_8011DF70:
 /* 8011DF70 0011AD70  3B BD 00 01 */	addi r29, r29, 1
 /* 8011DF74 0011AD74  2C 1D 00 05 */	cmpwi r29, 5
 /* 8011DF78 0011AD78  41 80 FF 90 */	blt lbl_8011DF08
-/* 8011DF7C 0011AD7C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DF7C 0011AD7C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DF80 0011AD80  38 00 00 00 */	li r0, 0
-/* 8011DF84 0011AD84  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011DF84 0011AD84  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011DF88 0011AD88  7F C4 F3 78 */	mr r4, r30
 /* 8011DF8C 0011AD8C  98 03 01 F2 */	stb r0, 0x1f2(r3)
-/* 8011DF90 0011AD90  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DF90 0011AD90  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DF94 0011AD94  4B FE D7 8D */	bl set_facing__17zNPCBossOmnidroidFif
 /* 8011DF98 0011AD98  38 00 00 00 */	li r0, 0
 /* 8011DF9C 0011AD9C  98 1C 00 08 */	stb r0, 8(r28)
@@ -28023,9 +28023,9 @@ exit__Q217zNPCBossOmnidroid17beatit_state_typeFv:
 /* 8011DFC8 0011ADC8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011DFCC 0011ADCC  38 00 00 01 */	li r0, 1
 /* 8011DFD0 0011ADD0  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 8011DFD4 0011ADD4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DFD4 0011ADD4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DFD8 0011ADD8  98 03 01 F2 */	stb r0, 0x1f2(r3)
-/* 8011DFDC 0011ADDC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011DFDC 0011ADDC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011DFE0 0011ADE0  4B FF 8B A9 */	bl get_leg__17zNPCBossOmnidroidFi
 /* 8011DFE4 0011ADE4  7C 7F 1B 78 */	mr r31, r3
 /* 8011DFE8 0011ADE8  4B FF 2C 25 */	bl damage_disable__Q217zNPCBossOmnidroid8leg_typeFv
@@ -28047,59 +28047,59 @@ update__Q217zNPCBossOmnidroid17beatit_state_typeFf:
 /* 8011E01C 0011AE1C  BF C1 00 08 */	stmw r30, 8(r1)
 /* 8011E020 0011AE20  FF E0 08 90 */	fmr f31, f1
 /* 8011E024 0011AE24  7C 7E 1B 78 */	mr r30, r3
-/* 8011E028 0011AE28  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E028 0011AE28  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E02C 0011AE2C  4B FE FE 35 */	bl blending_facing__17zNPCBossOmnidroidCFv
 /* 8011E030 0011AE30  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011E034 0011AE34  40 82 00 F8 */	bne lbl_8011E12C
 /* 8011E038 0011AE38  88 1E 00 08 */	lbz r0, 8(r30)
 /* 8011E03C 0011AE3C  28 00 00 00 */	cmplwi r0, 0
 /* 8011E040 0011AE40  40 82 00 34 */	bne lbl_8011E074
-/* 8011E044 0011AE44  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E044 0011AE44  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E048 0011AE48  38 80 00 17 */	li r4, 0x17
-/* 8011E04C 0011AE4C  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011E04C 0011AE4C  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011E050 0011AE50  38 A0 00 01 */	li r5, 1
 /* 8011E054 0011AE54  4B FE B1 D1 */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8011E058 0011AE58  3B E0 00 01 */	li r31, 1
 /* 8011E05C 0011AE5C  38 80 00 00 */	li r4, 0
 /* 8011E060 0011AE60  9B FE 00 08 */	stb r31, 8(r30)
-/* 8011E064 0011AE64  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E064 0011AE64  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E068 0011AE68  4B FF 8B 21 */	bl get_leg__17zNPCBossOmnidroidFi
 /* 8011E06C 0011AE6C  9B E3 14 55 */	stb r31, 0x1455(r3)
 /* 8011E070 0011AE70  48 00 00 BC */	b lbl_8011E12C
 lbl_8011E074:
-/* 8011E074 0011AE74  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E074 0011AE74  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E078 0011AE78  4B FE FD 61 */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 8011E07C 0011AE7C  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 8011E080 0011AE80  4C 40 13 82 */	cror 2, 0, 2
 /* 8011E084 0011AE84  40 82 00 20 */	bne lbl_8011E0A4
-/* 8011E088 0011AE88  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E088 0011AE88  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E08C 0011AE8C  4B FF 0F 25 */	bl next_state__17zNPCBossOmnidroidFv
 /* 8011E090 0011AE90  7C 64 1B 78 */	mr r4, r3
-/* 8011E094 0011AE94  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E094 0011AE94  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E098 0011AE98  38 A0 00 01 */	li r5, 1
 /* 8011E09C 0011AE9C  4B FE C0 49 */	bl set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid10state_enumb
 /* 8011E0A0 0011AEA0  48 00 00 8C */	b lbl_8011E12C
 lbl_8011E0A4:
-/* 8011E0A4 0011AEA4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E0A4 0011AEA4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E0A8 0011AEA8  4B FE FD 7D */	bl anim_time_current__17zNPCBossOmnidroidCFv
 /* 8011E0AC 0011AEAC  FF E0 08 90 */	fmr f31, f1
-/* 8011E0B0 0011AEB0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E0B0 0011AEB0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E0B4 0011AEB4  38 80 00 00 */	li r4, 0
 /* 8011E0B8 0011AEB8  4B FF 8A D1 */	bl get_leg__17zNPCBossOmnidroidFi
 /* 8011E0BC 0011AEBC  7C 7F 1B 78 */	mr r31, r3
 /* 8011E0C0 0011AEC0  4B FF 8C 51 */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 8011E0C4 0011AEC4  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011E0C8 0011AEC8  40 82 00 3C */	bne lbl_8011E104
-/* 8011E0CC 0011AECC  C0 02 AD 48 */	lfs f0, _esc__2_3022-_SDA2_BASE_(r2)
+/* 8011E0CC 0011AECC  C0 02 AD 48 */	lfs f0, _esc__2_3022@sda21(r2)
 /* 8011E0D0 0011AED0  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011E0D4 0011AED4  4C 41 13 82 */	cror 2, 1, 2
 /* 8011E0D8 0011AED8  40 82 00 2C */	bne lbl_8011E104
-/* 8011E0DC 0011AEDC  C0 02 AD 90 */	lfs f0, _esc__2_3053-_SDA2_BASE_(r2)
+/* 8011E0DC 0011AEDC  C0 02 AD 90 */	lfs f0, _esc__2_3053@sda21(r2)
 /* 8011E0E0 0011AEE0  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011E0E4 0011AEE4  40 80 00 20 */	bge lbl_8011E104
-/* 8011E0E8 0011AEE8  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 8011E0E8 0011AEE8  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 8011E0EC 0011AEEC  7F E3 FB 78 */	mr r3, r31
-/* 8011E0F0 0011AEF0  C0 42 A8 B4 */	lfs f2, _esc__2_1223-_SDA2_BASE_(r2)
+/* 8011E0F0 0011AEF0  C0 42 A8 B4 */	lfs f2, _esc__2_1223@sda21(r2)
 /* 8011E0F4 0011AEF4  38 BE 00 0C */	addi r5, r30, 0xc
 /* 8011E0F8 0011AEF8  38 80 00 06 */	li r4, 6
 /* 8011E0FC 0011AEFC  4B FF 2A F5 */	bl damage_enable__Q217zNPCBossOmnidroid8leg_typeFiffPC5xVec3
@@ -28109,7 +28109,7 @@ lbl_8011E104:
 /* 8011E108 0011AF08  4B FF 8C 09 */	bl damage_enabled__Q217zNPCBossOmnidroid8leg_typeCFv
 /* 8011E10C 0011AF0C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011E110 0011AF10  41 82 00 1C */	beq lbl_8011E12C
-/* 8011E114 0011AF14  C0 02 AD 90 */	lfs f0, _esc__2_3053-_SDA2_BASE_(r2)
+/* 8011E114 0011AF14  C0 02 AD 90 */	lfs f0, _esc__2_3053@sda21(r2)
 /* 8011E118 0011AF18  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 8011E11C 0011AF1C  4C 41 13 82 */	cror 2, 1, 2
 /* 8011E120 0011AF20  40 82 00 0C */	bne lbl_8011E12C
@@ -28129,20 +28129,20 @@ detect_player__Q217zNPCBossOmnidroid17beatit_state_typeCFv:
 /* 8011E148 0011AF48  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8011E14C 0011AF4C  7C 08 02 A6 */	mflr r0
 /* 8011E150 0011AF50  90 01 00 24 */	stw r0, 0x24(r1)
-/* 8011E154 0011AF54  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8011E154 0011AF54  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8011E158 0011AF58  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8011E15C 0011AF5C  4B EE D2 CD */	bl xEntGetCenter__FPC4xEnt
-/* 8011E160 0011AF60  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8011E164 0011AF64  80 A2 F1 34 */	lwz r5, _esc__2_7210-_SDA2_BASE_(r2)
+/* 8011E160 0011AF60  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
+/* 8011E164 0011AF64  80 A2 F1 34 */	lwz r5, _esc__2_7210@sda21(r2)
 /* 8011E168 0011AF68  C0 23 00 04 */	lfs f1, 4(r3)
 /* 8011E16C 0011AF6C  C0 06 00 90 */	lfs f0, 0x90(r6)
 /* 8011E170 0011AF70  C0 83 00 00 */	lfs f4, 0(r3)
 /* 8011E174 0011AF74  C0 66 00 8C */	lfs f3, 0x8c(r6)
 /* 8011E178 0011AF78  EC 41 00 28 */	fsubs f2, f1, f0
-/* 8011E17C 0011AF7C  80 82 F1 38 */	lwz r4, lbl_803D8E58-_SDA2_BASE_(r2)
-/* 8011E180 0011AF80  80 02 F1 3C */	lwz r0, lbl_803D8E5C-_SDA2_BASE_(r2)
+/* 8011E17C 0011AF7C  80 82 F1 38 */	lwz r4, lbl_803D8E58@sda21(r2)
+/* 8011E180 0011AF80  80 02 F1 3C */	lwz r0, lbl_803D8E5C@sda21(r2)
 /* 8011E184 0011AF84  EC 84 18 28 */	fsubs f4, f4, f3
-/* 8011E188 0011AF88  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011E188 0011AF88  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011E18C 0011AF8C  90 A1 00 08 */	stw r5, 8(r1)
 /* 8011E190 0011AF90  C0 23 00 08 */	lfs f1, 8(r3)
 /* 8011E194 0011AF94  FC 02 00 40 */	fcmpo cr0, f2, f0
@@ -28159,8 +28159,8 @@ detect_player__Q217zNPCBossOmnidroid17beatit_state_typeCFv:
 /* 8011E1C0 0011AFC0  48 00 00 3C */	b lbl_8011E1FC
 lbl_8011E1C4:
 /* 8011E1C4 0011AFC4  80 06 03 4C */	lwz r0, 0x34c(r6)
-/* 8011E1C8 0011AFC8  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
-/* 8011E1CC 0011AFCC  C0 62 AC 84 */	lfs f3, _esc__2_1439_0-_SDA2_BASE_(r2)
+/* 8011E1C8 0011AFC8  38 62 A8 B8 */	addi r3, r2, scale__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
+/* 8011E1CC 0011AFCC  C0 62 AC 84 */	lfs f3, _esc__2_1439_0@sda21(r2)
 /* 8011E1D0 0011AFD0  EC 24 01 32 */	fmuls f1, f4, f4
 /* 8011E1D4 0011AFD4  54 00 10 3A */	slwi r0, r0, 2
 /* 8011E1D8 0011AFD8  EC 00 00 32 */	fmuls f0, f0, f0
@@ -28180,14 +28180,14 @@ lbl_8011E1FC:
 
 .global enter__Q217zNPCBossOmnidroid16death_state_typeFv
 enter__Q217zNPCBossOmnidroid16death_state_typeFv:
-/* 8011E20C 0011B00C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E20C 0011B00C  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E210 0011B010  38 E0 00 00 */	li r7, 0
 /* 8011E214 0011B014  38 C0 00 01 */	li r6, 1
-/* 8011E218 0011B018  38 82 A8 CC */	addi r4, r2, play_death_animation__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak-_SDA2_BASE_
+/* 8011E218 0011B018  38 82 A8 CC */	addi r4, r2, play_death_animation__Q231_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak@sda21
 /* 8011E21C 0011B01C  98 E5 01 F2 */	stb r7, 0x1f2(r5)
-/* 8011E220 0011B020  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E220 0011B020  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E224 0011B024  98 C5 01 F3 */	stb r6, 0x1f3(r5)
-/* 8011E228 0011B028  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E228 0011B028  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E22C 0011B02C  80 05 03 4C */	lwz r0, 0x34c(r5)
 /* 8011E230 0011B030  7C 04 00 AE */	lbzx r0, r4, r0
 /* 8011E234 0011B034  28 00 00 00 */	cmplwi r0, 0
@@ -28196,17 +28196,17 @@ enter__Q217zNPCBossOmnidroid16death_state_typeFv:
 /* 8011E240 0011B040  4E 80 00 20 */	blr 
 lbl_8011E244:
 /* 8011E244 0011B044  98 C3 00 09 */	stb r6, 9(r3)
-/* 8011E248 0011B048  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E248 0011B048  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E24C 0011B04C  98 C3 01 F0 */	stb r6, 0x1f0(r3)
 /* 8011E250 0011B050  4E 80 00 20 */	blr 
 
 .global exit__Q217zNPCBossOmnidroid16death_state_typeFv
 exit__Q217zNPCBossOmnidroid16death_state_typeFv:
-/* 8011E254 0011B054  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E254 0011B054  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E258 0011B058  38 80 00 01 */	li r4, 1
 /* 8011E25C 0011B05C  38 00 00 00 */	li r0, 0
 /* 8011E260 0011B060  98 83 01 F2 */	stb r4, 0x1f2(r3)
-/* 8011E264 0011B064  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E264 0011B064  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E268 0011B068  98 03 01 F3 */	stb r0, 0x1f3(r3)
 /* 8011E26C 0011B06C  4E 80 00 20 */	blr 
 
@@ -28223,30 +28223,30 @@ update__Q217zNPCBossOmnidroid16death_state_typeFf:
 /* 8011E290 0011B090  88 03 00 09 */	lbz r0, 9(r3)
 /* 8011E294 0011B094  28 00 00 00 */	cmplwi r0, 0
 /* 8011E298 0011B098  40 82 00 64 */	bne lbl_8011E2FC
-/* 8011E29C 0011B09C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E29C 0011B09C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E2A0 0011B0A0  4B FE FB C1 */	bl blending_facing__17zNPCBossOmnidroidCFv
 /* 8011E2A4 0011B0A4  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011E2A8 0011B0A8  40 82 00 54 */	bne lbl_8011E2FC
 /* 8011E2AC 0011B0AC  88 1F 00 08 */	lbz r0, 8(r31)
 /* 8011E2B0 0011B0B0  28 00 00 00 */	cmplwi r0, 0
 /* 8011E2B4 0011B0B4  40 82 00 24 */	bne lbl_8011E2D8
-/* 8011E2B8 0011B0B8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E2B8 0011B0B8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E2BC 0011B0BC  38 80 00 1E */	li r4, 0x1e
-/* 8011E2C0 0011B0C0  C0 22 AC B8 */	lfs f1, _esc__2_2040_0-_SDA2_BASE_(r2)
+/* 8011E2C0 0011B0C0  C0 22 AC B8 */	lfs f1, _esc__2_2040_0@sda21(r2)
 /* 8011E2C4 0011B0C4  38 A0 00 01 */	li r5, 1
 /* 8011E2C8 0011B0C8  4B FE AF 5D */	bl anim_set_state__17zNPCBossOmnidroidFQ217zNPCBossOmnidroid15anim_state_enumfb
 /* 8011E2CC 0011B0CC  38 00 00 01 */	li r0, 1
 /* 8011E2D0 0011B0D0  98 1F 00 08 */	stb r0, 8(r31)
 /* 8011E2D4 0011B0D4  48 00 00 28 */	b lbl_8011E2FC
 lbl_8011E2D8:
-/* 8011E2D8 0011B0D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E2D8 0011B0D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E2DC 0011B0DC  4B FE FA FD */	bl anim_time_remaining__17zNPCBossOmnidroidCFv
 /* 8011E2E0 0011B0E0  FC 01 F8 40 */	fcmpo cr0, f1, f31
 /* 8011E2E4 0011B0E4  4C 40 13 82 */	cror 2, 0, 2
 /* 8011E2E8 0011B0E8  40 82 00 14 */	bne lbl_8011E2FC
 /* 8011E2EC 0011B0EC  38 00 00 01 */	li r0, 1
 /* 8011E2F0 0011B0F0  98 1F 00 09 */	stb r0, 9(r31)
-/* 8011E2F4 0011B0F4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E2F4 0011B0F4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E2F8 0011B0F8  98 03 01 F0 */	stb r0, 0x1f0(r3)
 lbl_8011E2FC:
 /* 8011E2FC 0011B0FC  E3 E1 00 18 */	psq_l f31, 24(r1), 0, qr0
@@ -28266,7 +28266,7 @@ adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf:
 /* 8011E328 0011B128  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 8011E32C 0011B12C  7C 64 1B 78 */	mr r4, r3
 /* 8011E330 0011B130  FF E0 08 90 */	fmr f31, f1
-/* 8011E334 0011B134  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E334 0011B134  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E338 0011B138  80 84 00 00 */	lwz r4, 0(r4)
 /* 8011E33C 0011B13C  4B FF 0D F9 */	bl get_historical_probability__17zNPCBossOmnidroidCFQ217zNPCBossOmnidroid11action_enum
 /* 8011E340 0011B140  EC 3F 00 72 */	fmuls f1, f31, f1
@@ -28297,7 +28297,7 @@ ready__Q217zNPCBossOmnidroid22bitch_slap_action_typeCFv:
 /* 8011E374 0011B174  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011E378 0011B178  7C 08 02 A6 */	mflr r0
 /* 8011E37C 0011B17C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011E380 0011B180  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E380 0011B180  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E384 0011B184  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E388 0011B188  38 63 99 60 */	addi r3, r3, -26272
 /* 8011E38C 0011B18C  4B FF 89 8D */	bl detect_player__Q217zNPCBossOmnidroid21bitch_slap_state_typeCFv
@@ -28316,7 +28316,7 @@ ready__Q217zNPCBossOmnidroid19dervish_action_typeCFv:
 /* 8011E3A8 0011B1A8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011E3AC 0011B1AC  7C 08 02 A6 */	mflr r0
 /* 8011E3B0 0011B1B0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011E3B4 0011B1B4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E3B4 0011B1B4  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E3B8 0011B1B8  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E3BC 0011B1BC  38 63 99 6C */	addi r3, r3, -26260
 /* 8011E3C0 0011B1C0  4B FF 9B 39 */	bl detect_player__Q217zNPCBossOmnidroid18dervish_state_typeCFv
@@ -28334,10 +28334,10 @@ adjust_probability__Q217zNPCBossOmnidroid19dervish_action_typeCFf:
 /* 8011E3E4 0011B1E4  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 8011E3E8 0011B1E8  7C 64 1B 78 */	mr r4, r3
 /* 8011E3EC 0011B1EC  FF E0 08 90 */	fmr f31, f1
-/* 8011E3F0 0011B1F0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E3F0 0011B1F0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E3F4 0011B1F4  80 84 00 00 */	lwz r4, 0(r4)
 /* 8011E3F8 0011B1F8  4B FF 0D 3D */	bl get_historical_probability__17zNPCBossOmnidroidCFQ217zNPCBossOmnidroid11action_enum
-/* 8011E3FC 0011B1FC  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E3FC 0011B1FC  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E400 0011B200  EF FF 00 72 */	fmuls f31, f31, f1
 /* 8011E404 0011B204  38 A0 00 00 */	li r5, 0
 /* 8011E408 0011B208  38 C0 00 00 */	li r6, 0
@@ -28369,9 +28369,9 @@ lbl_8011E450:
 /* 8011E464 0011B264  3C 00 43 30 */	lis r0, 0x4330
 /* 8011E468 0011B268  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 8011E46C 0011B26C  90 01 00 08 */	stw r0, 8(r1)
-/* 8011E470 0011B270  C8 22 AC 90 */	lfd f1, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8011E470 0011B270  C8 22 AC 90 */	lfd f1, _esc__2_1488@sda21(r2)
 /* 8011E474 0011B274  90 61 00 0C */	stw r3, 0xc(r1)
-/* 8011E478 0011B278  C0 42 AC B0 */	lfs f2, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 8011E478 0011B278  C0 42 AC B0 */	lfs f2, _esc__2_2016_0@sda21(r2)
 /* 8011E47C 0011B27C  C8 01 00 08 */	lfd f0, 8(r1)
 /* 8011E480 0011B280  EC 00 08 28 */	fsubs f0, f0, f1
 /* 8011E484 0011B284  EC 02 00 32 */	fmuls f0, f2, f0
@@ -28395,7 +28395,7 @@ ready__Q217zNPCBossOmnidroid16ball_action_typeCFv:
 /* 8011E4B0 0011B2B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011E4B4 0011B2B4  7C 08 02 A6 */	mflr r0
 /* 8011E4B8 0011B2B8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011E4BC 0011B2BC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E4BC 0011B2BC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E4C0 0011B2C0  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E4C4 0011B2C4  38 63 9A 88 */	addi r3, r3, -25976
 /* 8011E4C8 0011B2C8  4B FF B0 19 */	bl detect_player__Q217zNPCBossOmnidroid15ball_state_typeCFv
@@ -28416,29 +28416,29 @@ refresh__Q217zNPCBossOmnidroid22smash_rock_action_typeFv:
 /* 8011E4EC 0011B2EC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011E4F0 0011B2F0  BF C1 00 08 */	stmw r30, 8(r1)
 /* 8011E4F4 0011B2F4  7C 7E 1B 78 */	mr r30, r3
-/* 8011E4F8 0011B2F8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E4F8 0011B2F8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E4FC 0011B2FC  38 64 0D 60 */	addi r3, r4, 0xd60
 /* 8011E500 0011B300  4B F0 26 E1 */	bl size__14pool_list_baseCFv
 /* 8011E504 0011B304  38 00 00 00 */	li r0, 0
 /* 8011E508 0011B308  7C 7F 1B 78 */	mr r31, r3
 /* 8011E50C 0011B30C  90 1E 00 08 */	stw r0, 8(r30)
-/* 8011E510 0011B310  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E510 0011B310  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E514 0011B314  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E518 0011B318  38 63 9B 38 */	addi r3, r3, -25800
 /* 8011E51C 0011B31C  4B FF B7 F1 */	bl detect_player__Q217zNPCBossOmnidroid21smash_rock_state_typeCFv
 /* 8011E520 0011B320  98 7E 00 0C */	stb r3, 0xc(r30)
-/* 8011E524 0011B324  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011E524 0011B324  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011E528 0011B328  D0 1E 00 10 */	stfs f0, 0x10(r30)
-/* 8011E52C 0011B32C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E52C 0011B32C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E530 0011B330  80 9E 00 00 */	lwz r4, 0(r30)
 /* 8011E534 0011B334  4B FF 0C 01 */	bl get_historical_probability__17zNPCBossOmnidroidCFQ217zNPCBossOmnidroid11action_enum
 /* 8011E538 0011B338  2C 1F 00 05 */	cmpwi r31, 5
 /* 8011E53C 0011B33C  D0 3E 00 14 */	stfs f1, 0x14(r30)
 /* 8011E540 0011B340  40 80 00 24 */	bge lbl_8011E564
 /* 8011E544 0011B344  38 00 00 01 */	li r0, 1
-/* 8011E548 0011B348  C0 22 AD 70 */	lfs f1, _esc__2_3037-_SDA2_BASE_(r2)
+/* 8011E548 0011B348  C0 22 AD 70 */	lfs f1, _esc__2_3037@sda21(r2)
 /* 8011E54C 0011B34C  90 1E 00 08 */	stw r0, 8(r30)
-/* 8011E550 0011B350  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011E550 0011B350  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011E554 0011B354  98 1E 00 0C */	stb r0, 0xc(r30)
 /* 8011E558 0011B358  D0 3E 00 10 */	stfs f1, 0x10(r30)
 /* 8011E55C 0011B35C  D0 1E 00 14 */	stfs f0, 0x14(r30)
@@ -28446,8 +28446,8 @@ refresh__Q217zNPCBossOmnidroid22smash_rock_action_typeFv:
 lbl_8011E564:
 /* 8011E564 0011B364  2C 1F 00 0A */	cmpwi r31, 0xa
 /* 8011E568 0011B368  40 80 00 20 */	bge lbl_8011E588
-/* 8011E56C 0011B36C  C0 22 AC B0 */	lfs f1, _esc__2_2016_0-_SDA2_BASE_(r2)
-/* 8011E570 0011B370  C0 02 AC A0 */	lfs f0, _esc__2_1660_1-_SDA2_BASE_(r2)
+/* 8011E56C 0011B36C  C0 22 AC B0 */	lfs f1, _esc__2_2016_0@sda21(r2)
+/* 8011E570 0011B370  C0 02 AC A0 */	lfs f0, _esc__2_1660_1@sda21(r2)
 /* 8011E574 0011B374  D0 3E 00 10 */	stfs f1, 0x10(r30)
 /* 8011E578 0011B378  C0 3E 00 14 */	lfs f1, 0x14(r30)
 /* 8011E57C 0011B37C  EC 01 00 32 */	fmuls f0, f1, f0
@@ -28457,7 +28457,7 @@ lbl_8011E588:
 /* 8011E588 0011B388  2C 1F 00 3C */	cmpwi r31, 0x3c
 /* 8011E58C 0011B38C  41 80 00 14 */	blt lbl_8011E5A0
 /* 8011E590 0011B390  C0 3E 00 14 */	lfs f1, 0x14(r30)
-/* 8011E594 0011B394  C0 02 AD 44 */	lfs f0, _esc__2_3021-_SDA2_BASE_(r2)
+/* 8011E594 0011B394  C0 02 AD 44 */	lfs f0, _esc__2_3021@sda21(r2)
 /* 8011E598 0011B398  EC 01 00 32 */	fmuls f0, f1, f0
 /* 8011E59C 0011B39C  D0 1E 00 14 */	stfs f0, 0x14(r30)
 lbl_8011E5A0:
@@ -28493,11 +28493,11 @@ initiate__Q217zNPCBossOmnidroid21boomerang_action_typeFRQ217zNPCBossOmnidroid18a
 /* 8011E5E4 0011B3E4  BF C1 00 18 */	stmw r30, 0x18(r1)
 /* 8011E5E8 0011B3E8  7C 7E 1B 78 */	mr r30, r3
 /* 8011E5EC 0011B3EC  7C 9F 23 78 */	mr r31, r4
-/* 8011E5F0 0011B3F0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E5F0 0011B3F0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E5F4 0011B3F4  4B FF 02 A9 */	bl at_perch__17zNPCBossOmnidroidCFv
 /* 8011E5F8 0011B3F8  2C 03 00 00 */	cmpwi r3, 0
 /* 8011E5FC 0011B3FC  40 80 00 8C */	bge lbl_8011E688
-/* 8011E600 0011B400  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E600 0011B400  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E604 0011B404  80 03 03 5C */	lwz r0, 0x35c(r3)
 /* 8011E608 0011B408  2C 00 00 00 */	cmpwi r0, 0
 /* 8011E60C 0011B40C  41 81 00 0C */	bgt lbl_8011E618
@@ -28505,30 +28505,30 @@ initiate__Q217zNPCBossOmnidroid21boomerang_action_typeFRQ217zNPCBossOmnidroid18a
 /* 8011E614 0011B414  48 00 00 1C */	b lbl_8011E630
 lbl_8011E618:
 /* 8011E618 0011B418  4B EE 8D 4D */	bl xrand_RandomInt32__Fv
-/* 8011E61C 0011B41C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E61C 0011B41C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E620 0011B420  80 84 03 5C */	lwz r4, 0x35c(r4)
 /* 8011E624 0011B424  7C 03 23 96 */	divwu r0, r3, r4
 /* 8011E628 0011B428  7C 00 21 D6 */	mullw r0, r0, r4
 /* 8011E62C 0011B42C  7C 80 18 50 */	subf r4, r0, r3
 lbl_8011E630:
-/* 8011E630 0011B430  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E630 0011B430  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E634 0011B434  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E638 0011B438  38 63 99 1C */	addi r3, r3, -26340
 /* 8011E63C 0011B43C  4B FF 7A ED */	bl set_target_perch__Q217zNPCBossOmnidroid15jump_state_typeFi
 /* 8011E640 0011B440  38 00 00 01 */	li r0, 1
 /* 8011E644 0011B444  90 1E 00 08 */	stw r0, 8(r30)
 /* 8011E648 0011B448  98 1E 00 0C */	stb r0, 0xc(r30)
-/* 8011E64C 0011B44C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E64C 0011B44C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E650 0011B450  98 03 01 F7 */	stb r0, 0x1f7(r3)
 /* 8011E654 0011B454  C0 3F 00 0C */	lfs f1, 0xc(r31)
 /* 8011E658 0011B458  4B EF 17 C1 */	bl ceilf__3stdFf
 /* 8011E65C 0011B45C  FC 00 08 1E */	fctiwz f0, f1
-/* 8011E660 0011B460  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E660 0011B460  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E664 0011B464  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E668 0011B468  D8 01 00 08 */	stfd f0, 8(r1)
 /* 8011E66C 0011B46C  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 8011E670 0011B470  90 03 9C E4 */	stw r0, -0x631c(r3)
-/* 8011E674 0011B474  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E674 0011B474  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E678 0011B478  80 1F 00 10 */	lwz r0, 0x10(r31)
 /* 8011E67C 0011B47C  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E680 0011B480  90 03 9C E8 */	stw r0, -0x6318(r3)
@@ -28542,12 +28542,12 @@ lbl_8011E688:
 /* 8011E69C 0011B49C  C0 3F 00 0C */	lfs f1, 0xc(r31)
 /* 8011E6A0 0011B4A0  4B EF 17 79 */	bl ceilf__3stdFf
 /* 8011E6A4 0011B4A4  FC 00 08 1E */	fctiwz f0, f1
-/* 8011E6A8 0011B4A8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E6A8 0011B4A8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E6AC 0011B4AC  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E6B0 0011B4B0  D8 01 00 08 */	stfd f0, 8(r1)
 /* 8011E6B4 0011B4B4  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 8011E6B8 0011B4B8  90 03 9C E4 */	stw r0, -0x631c(r3)
-/* 8011E6BC 0011B4BC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E6BC 0011B4BC  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E6C0 0011B4C0  80 1F 00 10 */	lwz r0, 0x10(r31)
 /* 8011E6C4 0011B4C4  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E6C8 0011B4C8  90 03 9C E8 */	stw r0, -0x6318(r3)
@@ -28555,7 +28555,7 @@ lbl_8011E688:
 lbl_8011E6D0:
 /* 8011E6D0 0011B4D0  38 00 00 00 */	li r0, 0
 /* 8011E6D4 0011B4D4  98 1E 00 0C */	stb r0, 0xc(r30)
-/* 8011E6D8 0011B4D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E6D8 0011B4D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E6DC 0011B4DC  98 03 01 F7 */	stb r0, 0x1f7(r3)
 lbl_8011E6E0:
 /* 8011E6E0 0011B4E0  BB C1 00 18 */	lmw r30, 0x18(r1)
@@ -28583,7 +28583,7 @@ ready__Q217zNPCBossOmnidroid16beam_action_typeCFv:
 /* 8011E714 0011B514  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011E718 0011B518  7C 08 02 A6 */	mflr r0
 /* 8011E71C 0011B51C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011E720 0011B520  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E720 0011B520  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E724 0011B524  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E728 0011B528  38 63 9D 1C */	addi r3, r3, -25316
 /* 8011E72C 0011B52C  4B FF CD FD */	bl detect_player__Q217zNPCBossOmnidroid15beam_state_typeCFv
@@ -28607,7 +28607,7 @@ ready__Q217zNPCBossOmnidroid22claw_swing_action_typeCFv:
 /* 8011E750 0011B550  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011E754 0011B554  7C 08 02 A6 */	mflr r0
 /* 8011E758 0011B558  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011E75C 0011B55C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E75C 0011B55C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E760 0011B560  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E764 0011B564  38 63 A3 90 */	addi r3, r3, -23664
 /* 8011E768 0011B568  4B FF F0 F1 */	bl detect_player__Q217zNPCBossOmnidroid21claw_swing_state_typeCFv
@@ -28626,7 +28626,7 @@ ready__Q217zNPCBossOmnidroid16stab_action_typeCFv:
 /* 8011E784 0011B584  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011E788 0011B588  7C 08 02 A6 */	mflr r0
 /* 8011E78C 0011B58C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011E790 0011B590  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E790 0011B590  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E794 0011B594  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E798 0011B598  38 63 A3 A0 */	addi r3, r3, -23648
 /* 8011E79C 0011B59C  4B FF F4 ED */	bl detect_player__Q217zNPCBossOmnidroid15stab_state_typeCFv
@@ -28642,13 +28642,13 @@ adjust_probability__Q217zNPCBossOmnidroid16stab_action_typeCFf:
 /* 8011E7B8 0011B5B8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8011E7BC 0011B5BC  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 8011E7C0 0011B5C0  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
-/* 8011E7C4 0011B5C4  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E7C4 0011B5C4  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E7C8 0011B5C8  FF E0 08 90 */	fmr f31, f1
-/* 8011E7CC 0011B5CC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011E7CC 0011B5CC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011E7D0 0011B5D0  C0 25 0B 7C */	lfs f1, 0xb7c(r5)
 /* 8011E7D4 0011B5D4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011E7D8 0011B5D8  40 81 00 10 */	ble lbl_8011E7E8
-/* 8011E7DC 0011B5DC  C0 02 AD 34 */	lfs f0, _esc__2_3017-_SDA2_BASE_(r2)
+/* 8011E7DC 0011B5DC  C0 02 AD 34 */	lfs f0, _esc__2_3017@sda21(r2)
 /* 8011E7E0 0011B5E0  EC 3F 00 32 */	fmuls f1, f31, f0
 /* 8011E7E4 0011B5E4  48 00 00 14 */	b lbl_8011E7F8
 lbl_8011E7E8:
@@ -28676,7 +28676,7 @@ get_state__Q217zNPCBossOmnidroid18beatit_action_typeCFv:
 
 .global refresh__Q217zNPCBossOmnidroid20cooldown_action_typeFv
 refresh__Q217zNPCBossOmnidroid20cooldown_action_typeFv:
-/* 8011E820 0011B620  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E820 0011B620  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E824 0011B624  C0 04 05 60 */	lfs f0, 0x560(r4)
 /* 8011E828 0011B628  D0 03 00 08 */	stfs f0, 8(r3)
 /* 8011E82C 0011B62C  4E 80 00 20 */	blr 
@@ -28686,7 +28686,7 @@ initiate__Q217zNPCBossOmnidroid20cooldown_action_typeFRQ217zNPCBossOmnidroid18ac
 /* 8011E830 0011B630  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011E834 0011B634  7C 08 02 A6 */	mflr r0
 /* 8011E838 0011B638  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011E83C 0011B63C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E83C 0011B63C  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E840 0011B640  C0 23 00 08 */	lfs f1, 8(r3)
 /* 8011E844 0011B644  3C 64 00 01 */	addis r3, r4, 1
 /* 8011E848 0011B648  38 63 99 10 */	addi r3, r3, -26352
@@ -28706,7 +28706,7 @@ ready__Q217zNPCBossOmnidroid23near_beatit_action_typeCFv:
 /* 8011E868 0011B668  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011E86C 0011B66C  7C 08 02 A6 */	mflr r0
 /* 8011E870 0011B670  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011E874 0011B674  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E874 0011B674  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E878 0011B678  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E87C 0011B67C  38 63 A5 50 */	addi r3, r3, -23216
 /* 8011E880 0011B680  4B FF F8 C9 */	bl detect_player__Q217zNPCBossOmnidroid17beatit_state_typeCFv
@@ -28722,7 +28722,7 @@ get_state__Q217zNPCBossOmnidroid23near_beatit_action_typeCFv:
 
 .global reset__Q217zNPCBossOmnidroid21jump_near_action_typeFv
 reset__Q217zNPCBossOmnidroid21jump_near_action_typeFv:
-/* 8011E89C 0011B69C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011E89C 0011B69C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011E8A0 0011B6A0  D0 03 00 08 */	stfs f0, 8(r3)
 /* 8011E8A4 0011B6A4  4E 80 00 20 */	blr 
 
@@ -28739,11 +28739,11 @@ initiate__Q217zNPCBossOmnidroid21jump_near_action_typeFRQ217zNPCBossOmnidroid18a
 /* 8011E8BC 0011B6BC  7C 08 02 A6 */	mflr r0
 /* 8011E8C0 0011B6C0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011E8C4 0011B6C4  48 00 00 E1 */	bl delay_action__Q217zNPCBossOmnidroid21jump_near_action_typeFv
-/* 8011E8C8 0011B6C8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E8C8 0011B6C8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E8CC 0011B6CC  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E8D0 0011B6D0  38 63 A6 1C */	addi r3, r3, -23012
 /* 8011E8D4 0011B6D4  48 00 02 7D */	bl delay_action__Q217zNPCBossOmnidroid21jump_away_action_typeFv
-/* 8011E8D8 0011B6D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E8D8 0011B6D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E8DC 0011B6DC  3C 63 00 01 */	addis r3, r3, 1
 /* 8011E8E0 0011B6E0  38 63 99 1C */	addi r3, r3, -26340
 /* 8011E8E4 0011B6E4  4B FF 78 7D */	bl set_target_near__Q217zNPCBossOmnidroid15jump_state_typeFv
@@ -28757,7 +28757,7 @@ priority__Q217zNPCBossOmnidroid21jump_near_action_typeCFv:
 /* 8011E8F8 0011B6F8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011E8FC 0011B6FC  7C 08 02 A6 */	mflr r0
 /* 8011E900 0011B700  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011E904 0011B704  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E904 0011B704  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E908 0011B708  4B FE FF 95 */	bl at_perch__17zNPCBossOmnidroidCFv
 /* 8011E90C 0011B70C  38 63 00 01 */	addi r3, r3, 1
 /* 8011E910 0011B710  38 00 00 63 */	li r0, 0x63
@@ -28776,11 +28776,11 @@ ready__Q217zNPCBossOmnidroid21jump_near_action_typeCFv:
 /* 8011E938 0011B738  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011E93C 0011B73C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011E940 0011B740  3B E0 00 00 */	li r31, 0
-/* 8011E944 0011B744  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E944 0011B744  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E948 0011B748  4B FE FF FD */	bl near_player__17zNPCBossOmnidroidCFv
 /* 8011E94C 0011B74C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8011E950 0011B750  41 82 00 14 */	beq lbl_8011E964
-/* 8011E954 0011B754  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011E954 0011B754  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011E958 0011B758  4B FE FF 45 */	bl at_perch__17zNPCBossOmnidroidCFv
 /* 8011E95C 0011B75C  2C 03 FF FF */	cmpwi r3, -1
 /* 8011E960 0011B760  41 82 00 08 */	beq lbl_8011E968
@@ -28797,11 +28797,11 @@ lbl_8011E968:
 .global adjust_probability__Q217zNPCBossOmnidroid21jump_near_action_typeCFf
 adjust_probability__Q217zNPCBossOmnidroid21jump_near_action_typeCFf:
 /* 8011E980 0011B780  C0 43 00 08 */	lfs f2, 8(r3)
-/* 8011E984 0011B784  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011E984 0011B784  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011E988 0011B788  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 8011E98C 0011B78C  4C 40 13 82 */	cror 2, 0, 2
 /* 8011E990 0011B790  4D 82 00 20 */	beqlr 
-/* 8011E994 0011B794  C0 22 AD DC */	lfs f1, _esc__2_3580-_SDA2_BASE_(r2)
+/* 8011E994 0011B794  C0 22 AD DC */	lfs f1, _esc__2_3580@sda21(r2)
 /* 8011E998 0011B798  4E 80 00 20 */	blr 
 
 .global get_state__Q217zNPCBossOmnidroid21jump_near_action_typeCFv
@@ -28819,11 +28819,11 @@ delay_action__Q217zNPCBossOmnidroid21jump_near_action_typeFv:
 /* 8011E9B8 0011B7B8  4B EE 89 AD */	bl xrand_RandomInt32__Fv
 /* 8011E9BC 0011B7BC  3C 00 43 30 */	lis r0, 0x4330
 /* 8011E9C0 0011B7C0  90 61 00 0C */	stw r3, 0xc(r1)
-/* 8011E9C4 0011B7C4  C8 62 AC 78 */	lfd f3, _esc__2_1431-_SDA2_BASE_(r2)
+/* 8011E9C4 0011B7C4  C8 62 AC 78 */	lfd f3, _esc__2_1431@sda21(r2)
 /* 8011E9C8 0011B7C8  90 01 00 08 */	stw r0, 8(r1)
-/* 8011E9CC 0011B7CC  C0 22 AF 58 */	lfs f1, _esc__2_5319-_SDA2_BASE_(r2)
+/* 8011E9CC 0011B7CC  C0 22 AF 58 */	lfs f1, _esc__2_5319@sda21(r2)
 /* 8011E9D0 0011B7D0  C8 41 00 08 */	lfd f2, 8(r1)
-/* 8011E9D4 0011B7D4  C0 02 AD 28 */	lfs f0, _esc__2_3014-_SDA2_BASE_(r2)
+/* 8011E9D4 0011B7D4  C0 02 AD 28 */	lfs f0, _esc__2_3014@sda21(r2)
 /* 8011E9D8 0011B7D8  EC 42 18 28 */	fsubs f2, f2, f3
 /* 8011E9DC 0011B7DC  EC 01 00 BA */	fmadds f0, f1, f2, f0
 /* 8011E9E0 0011B7E0  D0 1F 00 08 */	stfs f0, 8(r31)
@@ -28857,11 +28857,11 @@ initiate__Q217zNPCBossOmnidroid21jump_away_action_typeFRQ217zNPCBossOmnidroid18a
 /* 8011EA2C 0011B82C  7C 08 02 A6 */	mflr r0
 /* 8011EA30 0011B830  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011EA34 0011B834  48 00 01 1D */	bl delay_action__Q217zNPCBossOmnidroid21jump_away_action_typeFv
-/* 8011EA38 0011B838  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EA38 0011B838  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EA3C 0011B83C  3C 63 00 01 */	addis r3, r3, 1
 /* 8011EA40 0011B840  38 63 A6 10 */	addi r3, r3, -23024
 /* 8011EA44 0011B844  4B FF FF 61 */	bl delay_action__Q217zNPCBossOmnidroid21jump_near_action_typeFv
-/* 8011EA48 0011B848  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EA48 0011B848  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EA4C 0011B84C  3C 63 00 01 */	addis r3, r3, 1
 /* 8011EA50 0011B850  38 63 99 1C */	addi r3, r3, -26340
 /* 8011EA54 0011B854  4B FF 78 75 */	bl set_target_away__Q217zNPCBossOmnidroid15jump_state_typeFv
@@ -28875,7 +28875,7 @@ ready__Q217zNPCBossOmnidroid21jump_away_action_typeCFv:
 /* 8011EA68 0011B868  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011EA6C 0011B86C  7C 08 02 A6 */	mflr r0
 /* 8011EA70 0011B870  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011EA74 0011B874  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EA74 0011B874  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EA78 0011B878  4B FE FE CD */	bl near_player__17zNPCBossOmnidroidCFv
 /* 8011EA7C 0011B87C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8011EA80 0011B880  7C 08 03 A6 */	mtlr r0
@@ -28890,9 +28890,9 @@ adjust_probability__Q217zNPCBossOmnidroid21jump_away_action_typeCFf:
 /* 8011EA98 0011B898  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 8011EA9C 0011B89C  F3 E1 00 28 */	psq_st f31, 40(r1), 0, qr0
 /* 8011EAA0 0011B8A0  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 8011EAA4 0011B8A4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EAA4 0011B8A4  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EAA8 0011B8A8  FF E0 08 90 */	fmr f31, f1
-/* 8011EAAC 0011B8AC  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011EAAC 0011B8AC  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011EAB0 0011B8B0  7C 7F 1B 78 */	mr r31, r3
 /* 8011EAB4 0011B8B4  C0 24 0B 7C */	lfs f1, 0xb7c(r4)
 /* 8011EAB8 0011B8B8  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -28903,14 +28903,14 @@ adjust_probability__Q217zNPCBossOmnidroid21jump_away_action_typeCFf:
 /* 8011EACC 0011B8CC  4B FF 07 49 */	bl get_last_usage__17zNPCBossOmnidroidCFQ217zNPCBossOmnidroid11action_enumi
 /* 8011EAD0 0011B8D0  2C 03 00 00 */	cmpwi r3, 0
 /* 8011EAD4 0011B8D4  40 82 00 38 */	bne lbl_8011EB0C
-/* 8011EAD8 0011B8D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EAD8 0011B8D8  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EADC 0011B8DC  3C 00 43 30 */	lis r0, 0x4330
-/* 8011EAE0 0011B8E0  C0 02 AC B0 */	lfs f0, _esc__2_2016_0-_SDA2_BASE_(r2)
+/* 8011EAE0 0011B8E0  C0 02 AC B0 */	lfs f0, _esc__2_2016_0@sda21(r2)
 /* 8011EAE4 0011B8E4  80 63 0B 80 */	lwz r3, 0xb80(r3)
 /* 8011EAE8 0011B8E8  90 01 00 08 */	stw r0, 8(r1)
 /* 8011EAEC 0011B8EC  EC 00 07 F2 */	fmuls f0, f0, f31
 /* 8011EAF0 0011B8F0  6C 60 80 00 */	xoris r0, r3, 0x8000
-/* 8011EAF4 0011B8F4  C8 42 AC 90 */	lfd f2, _esc__2_1488-_SDA2_BASE_(r2)
+/* 8011EAF4 0011B8F4  C8 42 AC 90 */	lfd f2, _esc__2_1488@sda21(r2)
 /* 8011EAF8 0011B8F8  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8011EAFC 0011B8FC  C8 21 00 08 */	lfd f1, 8(r1)
 /* 8011EB00 0011B900  EC 21 10 28 */	fsubs f1, f1, f2
@@ -28918,14 +28918,14 @@ adjust_probability__Q217zNPCBossOmnidroid21jump_away_action_typeCFf:
 /* 8011EB08 0011B908  48 00 00 24 */	b lbl_8011EB2C
 lbl_8011EB0C:
 /* 8011EB0C 0011B90C  C0 3F 00 08 */	lfs f1, 8(r31)
-/* 8011EB10 0011B910  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011EB10 0011B910  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011EB14 0011B914  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011EB18 0011B918  4C 40 13 82 */	cror 2, 0, 2
 /* 8011EB1C 0011B91C  40 82 00 0C */	bne lbl_8011EB28
 /* 8011EB20 0011B920  FC 20 F8 90 */	fmr f1, f31
 /* 8011EB24 0011B924  48 00 00 08 */	b lbl_8011EB2C
 lbl_8011EB28:
-/* 8011EB28 0011B928  C0 22 AD DC */	lfs f1, _esc__2_3580-_SDA2_BASE_(r2)
+/* 8011EB28 0011B928  C0 22 AD DC */	lfs f1, _esc__2_3580@sda21(r2)
 lbl_8011EB2C:
 /* 8011EB2C 0011B92C  E3 E1 00 28 */	psq_l f31, 40(r1), 0, qr0
 /* 8011EB30 0011B930  80 01 00 34 */	lwz r0, 0x34(r1)
@@ -28950,11 +28950,11 @@ delay_action__Q217zNPCBossOmnidroid21jump_away_action_typeFv:
 /* 8011EB64 0011B964  4B EE 88 01 */	bl xrand_RandomInt32__Fv
 /* 8011EB68 0011B968  3C 00 43 30 */	lis r0, 0x4330
 /* 8011EB6C 0011B96C  90 61 00 0C */	stw r3, 0xc(r1)
-/* 8011EB70 0011B970  C8 62 AC 78 */	lfd f3, _esc__2_1431-_SDA2_BASE_(r2)
+/* 8011EB70 0011B970  C8 62 AC 78 */	lfd f3, _esc__2_1431@sda21(r2)
 /* 8011EB74 0011B974  90 01 00 08 */	stw r0, 8(r1)
-/* 8011EB78 0011B978  C0 22 AF 58 */	lfs f1, _esc__2_5319-_SDA2_BASE_(r2)
+/* 8011EB78 0011B978  C0 22 AF 58 */	lfs f1, _esc__2_5319@sda21(r2)
 /* 8011EB7C 0011B97C  C8 41 00 08 */	lfd f2, 8(r1)
-/* 8011EB80 0011B980  C0 02 AD C0 */	lfs f0, _esc__2_3313_0-_SDA2_BASE_(r2)
+/* 8011EB80 0011B980  C0 02 AD C0 */	lfs f0, _esc__2_3313_0@sda21(r2)
 /* 8011EB84 0011B984  EC 42 18 28 */	fsubs f2, f2, f3
 /* 8011EB88 0011B988  EC 01 00 BA */	fmadds f0, f1, f2, f0
 /* 8011EB8C 0011B98C  D0 1F 00 08 */	stfs f0, 8(r31)
@@ -28977,14 +28977,14 @@ reset__Q217zNPCBossOmnidroid24intermission_action_typeFv:
 /* 8011EBC4 0011B9C4  90 03 00 10 */	stw r0, 0x10(r3)
 /* 8011EBC8 0011B9C8  90 03 00 14 */	stw r0, 0x14(r3)
 /* 8011EBCC 0011B9CC  90 03 00 08 */	stw r0, 8(r3)
-/* 8011EBD0 0011B9D0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EBD0 0011B9D0  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EBD4 0011B9D4  80 03 03 5C */	lwz r0, 0x35c(r3)
 /* 8011EBD8 0011B9D8  2C 00 00 00 */	cmpwi r0, 0
 /* 8011EBDC 0011B9DC  41 81 00 08 */	bgt lbl_8011EBE4
 /* 8011EBE0 0011B9E0  48 00 00 1C */	b lbl_8011EBFC
 lbl_8011EBE4:
 /* 8011EBE4 0011B9E4  4B EE 87 81 */	bl xrand_RandomInt32__Fv
-/* 8011EBE8 0011B9E8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EBE8 0011B9E8  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EBEC 0011B9EC  80 84 03 5C */	lwz r4, 0x35c(r4)
 /* 8011EBF0 0011B9F0  7C 03 23 96 */	divwu r0, r3, r4
 /* 8011EBF4 0011B9F4  7C 00 21 D6 */	mullw r0, r0, r4
@@ -29004,7 +29004,7 @@ refresh__Q217zNPCBossOmnidroid24intermission_action_typeFv:
 /* 8011EC1C 0011BA1C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011EC20 0011BA20  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8011EC24 0011BA24  7C 7F 1B 78 */	mr r31, r3
-/* 8011EC28 0011BA28  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EC28 0011BA28  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EC2C 0011BA2C  80 63 00 0C */	lwz r3, 0xc(r3)
 /* 8011EC30 0011BA30  80 04 03 60 */	lwz r0, 0x360(r4)
 /* 8011EC34 0011BA34  7C 03 00 00 */	cmpw r3, r0
@@ -29013,10 +29013,10 @@ refresh__Q217zNPCBossOmnidroid24intermission_action_typeFv:
 /* 8011EC40 0011BA40  90 1F 00 10 */	stw r0, 0x10(r31)
 /* 8011EC44 0011BA44  90 1F 00 14 */	stw r0, 0x14(r31)
 /* 8011EC48 0011BA48  90 1F 00 08 */	stw r0, 8(r31)
-/* 8011EC4C 0011BA4C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EC4C 0011BA4C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EC50 0011BA50  80 03 03 60 */	lwz r0, 0x360(r3)
 /* 8011EC54 0011BA54  90 1F 00 0C */	stw r0, 0xc(r31)
-/* 8011EC58 0011BA58  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EC58 0011BA58  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EC5C 0011BA5C  80 03 03 5C */	lwz r0, 0x35c(r3)
 /* 8011EC60 0011BA60  2C 00 00 00 */	cmpwi r0, 0
 /* 8011EC64 0011BA64  41 81 00 0C */	bgt lbl_8011EC70
@@ -29024,7 +29024,7 @@ refresh__Q217zNPCBossOmnidroid24intermission_action_typeFv:
 /* 8011EC6C 0011BA6C  48 00 00 1C */	b lbl_8011EC88
 lbl_8011EC70:
 /* 8011EC70 0011BA70  4B EE 86 F5 */	bl xrand_RandomInt32__Fv
-/* 8011EC74 0011BA74  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EC74 0011BA74  80 8D CC 18 */	lwz r4, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EC78 0011BA78  80 84 03 5C */	lwz r4, 0x35c(r4)
 /* 8011EC7C 0011BA7C  7C 03 23 96 */	divwu r0, r3, r4
 /* 8011EC80 0011BA80  7C 00 21 D6 */	mullw r0, r0, r4
@@ -29032,7 +29032,7 @@ lbl_8011EC70:
 lbl_8011EC88:
 /* 8011EC88 0011BA88  90 1F 00 18 */	stw r0, 0x18(r31)
 lbl_8011EC8C:
-/* 8011EC8C 0011BA8C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EC8C 0011BA8C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EC90 0011BA90  4B FE FC 0D */	bl at_perch__17zNPCBossOmnidroidCFv
 /* 8011EC94 0011BA94  2C 03 00 00 */	cmpwi r3, 0
 /* 8011EC98 0011BA98  40 80 00 10 */	bge lbl_8011ECA8
@@ -29047,7 +29047,7 @@ lbl_8011ECA8:
 /* 8011ECB8 0011BAB8  90 1F 00 08 */	stw r0, 8(r31)
 /* 8011ECBC 0011BABC  48 00 00 40 */	b lbl_8011ECFC
 lbl_8011ECC0:
-/* 8011ECC0 0011BAC0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ECC0 0011BAC0  80 AD CC 18 */	lwz r5, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ECC4 0011BAC4  3C 60 80 2E */	lis r3, intermission_sequence__17zNPCBossOmnidroid@ha
 /* 8011ECC8 0011BAC8  80 1F 00 10 */	lwz r0, 0x10(r31)
 /* 8011ECCC 0011BACC  38 83 1B 94 */	addi r4, r3, intermission_sequence__17zNPCBossOmnidroid@l
@@ -29077,11 +29077,11 @@ initiate__Q217zNPCBossOmnidroid24intermission_action_typeFRQ217zNPCBossOmnidroid
 /* 8011ED1C 0011BB1C  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 8011ED20 0011BB20  7C 7C 1B 78 */	mr r28, r3
 /* 8011ED24 0011BB24  7C 9D 23 78 */	mr r29, r4
-/* 8011ED28 0011BB28  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ED28 0011BB28  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ED2C 0011BB2C  4B FE FB 71 */	bl at_perch__17zNPCBossOmnidroidCFv
 /* 8011ED30 0011BB30  7C 7F 1B 79 */	or. r31, r3, r3
 /* 8011ED34 0011BB34  40 80 00 1C */	bge lbl_8011ED50
-/* 8011ED38 0011BB38  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ED38 0011BB38  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ED3C 0011BB3C  80 9C 00 18 */	lwz r4, 0x18(r28)
 /* 8011ED40 0011BB40  3C 63 00 01 */	addis r3, r3, 1
 /* 8011ED44 0011BB44  38 63 99 1C */	addi r3, r3, -26340
@@ -29095,7 +29095,7 @@ lbl_8011ED50:
 /* 8011ED60 0011BB60  90 1C 00 14 */	stw r0, 0x14(r28)
 /* 8011ED64 0011BB64  48 00 01 70 */	b lbl_8011EED4
 lbl_8011ED68:
-/* 8011ED68 0011BB68  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011ED68 0011BB68  80 CD CC 18 */	lwz r6, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011ED6C 0011BB6C  3C 60 80 2E */	lis r3, intermission_sequence__17zNPCBossOmnidroid@ha
 /* 8011ED70 0011BB70  80 1C 00 10 */	lwz r0, 0x10(r28)
 /* 8011ED74 0011BB74  38 83 1B 94 */	addi r4, r3, intermission_sequence__17zNPCBossOmnidroid@l
@@ -29138,20 +29138,20 @@ lbl_8011EDE8:
 /* 8011EDFC 0011BBFC  80 9C 00 18 */	lwz r4, 0x18(r28)
 /* 8011EE00 0011BC00  2C 04 00 00 */	cmpwi r4, 0
 /* 8011EE04 0011BC04  40 80 00 18 */	bge lbl_8011EE1C
-/* 8011EE08 0011BC08  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EE08 0011BC08  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EE0C 0011BC0C  80 63 03 5C */	lwz r3, 0x35c(r3)
 /* 8011EE10 0011BC10  38 03 FF FF */	addi r0, r3, -1
 /* 8011EE14 0011BC14  90 1C 00 18 */	stw r0, 0x18(r28)
 /* 8011EE18 0011BC18  48 00 00 1C */	b lbl_8011EE34
 lbl_8011EE1C:
-/* 8011EE1C 0011BC1C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EE1C 0011BC1C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EE20 0011BC20  80 03 03 5C */	lwz r0, 0x35c(r3)
 /* 8011EE24 0011BC24  7C 04 00 00 */	cmpw r4, r0
 /* 8011EE28 0011BC28  41 80 00 0C */	blt lbl_8011EE34
 /* 8011EE2C 0011BC2C  38 00 00 00 */	li r0, 0
 /* 8011EE30 0011BC30  90 1C 00 18 */	stw r0, 0x18(r28)
 lbl_8011EE34:
-/* 8011EE34 0011BC34  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EE34 0011BC34  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EE38 0011BC38  80 9C 00 18 */	lwz r4, 0x18(r28)
 /* 8011EE3C 0011BC3C  3C 63 00 01 */	addis r3, r3, 1
 /* 8011EE40 0011BC40  38 63 99 1C */	addi r3, r3, -26340
@@ -29174,12 +29174,12 @@ lbl_8011EE64:
 /* 8011EE7C 0011BC7C  C0 3D 00 0C */	lfs f1, 0xc(r29)
 /* 8011EE80 0011BC80  4B EF 0F 99 */	bl ceilf__3stdFf
 /* 8011EE84 0011BC84  FC 00 08 1E */	fctiwz f0, f1
-/* 8011EE88 0011BC88  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EE88 0011BC88  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EE8C 0011BC8C  3C 63 00 01 */	addis r3, r3, 1
 /* 8011EE90 0011BC90  D8 01 00 08 */	stfd f0, 8(r1)
 /* 8011EE94 0011BC94  80 01 00 0C */	lwz r0, 0xc(r1)
 /* 8011EE98 0011BC98  90 03 9C E4 */	stw r0, -0x631c(r3)
-/* 8011EE9C 0011BC9C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EE9C 0011BC9C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EEA0 0011BCA0  80 1D 00 10 */	lwz r0, 0x10(r29)
 /* 8011EEA4 0011BCA4  3C 63 00 01 */	addis r3, r3, 1
 /* 8011EEA8 0011BCA8  90 03 9C E8 */	stw r0, -0x6318(r3)
@@ -29212,13 +29212,13 @@ hack_nj03_lava_damage_player__FRC8xSurfaceRC17zCombatDamageInfo:
 /* 8011EEF4 0011BCF4  7C 08 02 A6 */	mflr r0
 /* 8011EEF8 0011BCF8  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8011EEFC 0011BCFC  BF C1 00 48 */	stmw r30, 0x48(r1)
-/* 8011EF00 0011BD00  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
-/* 8011EF04 0011BD04  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EF00 0011BD00  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
+/* 8011EF04 0011BD04  83 ED CC 18 */	lwz r31, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EF08 0011BD08  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8011EF0C 0011BD0C  80 83 00 48 */	lwz r4, 0x48(r3)
 /* 8011EF10 0011BD10  3B C4 00 30 */	addi r30, r4, 0x30
 /* 8011EF14 0011BD14  4B FB A1 15 */	bl Clear_floor_collision__7zPlayerFv
-/* 8011EF18 0011BD18  C0 82 B0 AC */	lfs f4, _esc__2_7564-_SDA2_BASE_(r2)
+/* 8011EF18 0011BD18  C0 82 B0 AC */	lfs f4, _esc__2_7564@sda21(r2)
 /* 8011EF1C 0011BD1C  38 80 00 0A */	li r4, 0xa
 /* 8011EF20 0011BD20  C0 7F 0D B4 */	lfs f3, 0xdb4(r31)
 /* 8011EF24 0011BD24  38 A0 00 06 */	li r5, 6
@@ -29227,9 +29227,9 @@ hack_nj03_lava_damage_player__FRC8xSurfaceRC17zCombatDamageInfo:
 /* 8011EF30 0011BD30  C0 3F 0D BC */	lfs f1, 0xdbc(r31)
 /* 8011EF34 0011BD34  C0 1E 00 08 */	lfs f0, 8(r30)
 /* 8011EF38 0011BD38  EC 43 10 28 */	fsubs f2, f3, f2
-/* 8011EF3C 0011BD3C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011EF3C 0011BD3C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011EF40 0011BD40  EC 61 00 28 */	fsubs f3, f1, f0
-/* 8011EF44 0011BD44  C0 22 AD 28 */	lfs f1, _esc__2_3014-_SDA2_BASE_(r2)
+/* 8011EF44 0011BD44  C0 22 AD 28 */	lfs f1, _esc__2_3014@sda21(r2)
 /* 8011EF48 0011BD48  4B FE BD A1 */	bl hurt_player__17zNPCBossOmnidroidFifff10zHitSourceff
 /* 8011EF4C 0011BD4C  38 00 02 61 */	li r0, 0x261
 /* 8011EF50 0011BD50  7F C4 F3 78 */	mr r4, r30
@@ -29237,13 +29237,13 @@ hack_nj03_lava_damage_player__FRC8xSurfaceRC17zCombatDamageInfo:
 /* 8011EF58 0011BD58  38 61 00 0C */	addi r3, r1, 0xc
 /* 8011EF5C 0011BD5C  4B EE C1 4D */	bl __as__5xVec3FRC5xVec3
 /* 8011EF60 0011BD60  38 61 00 18 */	addi r3, r1, 0x18
-/* 8011EF64 0011BD64  38 82 8A 08 */	addi r4, r2, g_Y3-_SDA2_BASE_
+/* 8011EF64 0011BD64  38 82 8A 08 */	addi r4, r2, g_Y3@sda21
 /* 8011EF68 0011BD68  4B EE C1 41 */	bl __as__5xVec3FRC5xVec3
-/* 8011EF6C 0011BD6C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011EF6C 0011BD6C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011EF70 0011BD70  38 80 00 00 */	li r4, 0
-/* 8011EF74 0011BD74  C0 42 AD 48 */	lfs f2, _esc__2_3022-_SDA2_BASE_(r2)
-/* 8011EF78 0011BD78  38 02 A8 D0 */	addi r0, r2, props__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4lava4burn-_SDA2_BASE_
-/* 8011EF7C 0011BD7C  C0 22 AD 80 */	lfs f1, _esc__2_3049-_SDA2_BASE_(r2)
+/* 8011EF74 0011BD74  C0 42 AD 48 */	lfs f2, _esc__2_3022@sda21(r2)
+/* 8011EF78 0011BD78  38 02 A8 D0 */	addi r0, r2, props__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak4lava4burn@sda21
+/* 8011EF7C 0011BD7C  C0 22 AD 80 */	lfs f1, _esc__2_3049@sda21(r2)
 /* 8011EF80 0011BD80  3C 60 21 64 */	lis r3, 0x2163A1BF@ha
 /* 8011EF84 0011BD84  D0 41 00 24 */	stfs f2, 0x24(r1)
 /* 8011EF88 0011BD88  38 63 A1 BF */	addi r3, r3, 0x2163A1BF@l
@@ -29278,13 +29278,13 @@ hack_nj03_lava_damage_player__FRC8xSurfaceRC17zCombatDamageInfo:
 hack_ni03_mine_damage_player__FRC5xVec3:
 /* 8011EFF4 0011BDF4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011EFF8 0011BDF8  7C 08 02 A6 */	mflr r0
-/* 8011EFFC 0011BDFC  C0 82 B0 AC */	lfs f4, _esc__2_7564-_SDA2_BASE_(r2)
+/* 8011EFFC 0011BDFC  C0 82 B0 AC */	lfs f4, _esc__2_7564@sda21(r2)
 /* 8011F000 0011BE00  38 80 00 0A */	li r4, 0xa
 /* 8011F004 0011BE04  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011F008 0011BE08  38 A0 00 03 */	li r5, 3
 /* 8011F00C 0011BE0C  FC A0 20 90 */	fmr f5, f4
-/* 8011F010 0011BE10  80 CD 91 D0 */	lwz r6, xglobals-_SDA_BASE_(r13)
-/* 8011F014 0011BE14  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011F010 0011BE10  80 CD 91 D0 */	lwz r6, xglobals@sda21(r13)
+/* 8011F014 0011BE14  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011F018 0011BE18  80 C6 04 C4 */	lwz r6, 0x4c4(r6)
 /* 8011F01C 0011BE1C  C0 43 0D B4 */	lfs f2, 0xdb4(r3)
 /* 8011F020 0011BE20  80 C6 00 48 */	lwz r6, 0x48(r6)
@@ -29292,7 +29292,7 @@ hack_ni03_mine_damage_player__FRC5xVec3:
 /* 8011F028 0011BE28  C0 26 00 30 */	lfs f1, 0x30(r6)
 /* 8011F02C 0011BE2C  C0 06 00 38 */	lfs f0, 0x38(r6)
 /* 8011F030 0011BE30  EC 42 08 28 */	fsubs f2, f2, f1
-/* 8011F034 0011BE34  C0 22 AD 3C */	lfs f1, _esc__2_3019-_SDA2_BASE_(r2)
+/* 8011F034 0011BE34  C0 22 AD 3C */	lfs f1, _esc__2_3019@sda21(r2)
 /* 8011F038 0011BE38  EC 63 00 28 */	fsubs f3, f3, f0
 /* 8011F03C 0011BE3C  4B FE BC AD */	bl hurt_player__17zNPCBossOmnidroidFifff10zHitSourceff
 /* 8011F040 0011BE40  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -29308,7 +29308,7 @@ hack_omnidroid_check_hit_connect__FR4xEntR17zCombatDamageInfo:
 /* 8011F05C 0011BE5C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011F060 0011BE60  7C 60 1B 78 */	mr r0, r3
 /* 8011F064 0011BE64  7C 04 03 78 */	mr r4, r0
-/* 8011F068 0011BE68  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011F068 0011BE68  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011F06C 0011BE6C  4B FE FC A9 */	bl check_hit_connect__17zNPCBossOmnidroidCFR4xEntR17zCombatDamageInfo
 /* 8011F070 0011BE70  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8011F074 0011BE74  7C 08 03 A6 */	mtlr r0
@@ -29333,7 +29333,7 @@ priority__Q217zNPCBossOmnidroid20cooldown_action_typeCFv:
 .global ready__Q217zNPCBossOmnidroid20cooldown_action_typeCFv
 ready__Q217zNPCBossOmnidroid20cooldown_action_typeCFv:
 /* 8011F098 0011BE98  C0 23 00 08 */	lfs f1, 8(r3)
-/* 8011F09C 0011BE9C  C0 02 A8 B0 */	lfs f0, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011F09C 0011BE9C  C0 02 A8 B0 */	lfs f0, _esc__2_1222@sda21(r2)
 /* 8011F0A0 0011BEA0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8011F0A4 0011BEA4  7C 00 00 26 */	mfcr r0
 /* 8011F0A8 0011BEA8  54 03 17 FE */	rlwinm r3, r0, 2, 0x1f, 0x1f
@@ -29426,47 +29426,47 @@ get_target_ent__17zNPCBossOmnidroidCFv:
 
 .global get_target_pos__17zNPCBossOmnidroidCFv
 get_target_pos__17zNPCBossOmnidroidCFv:
-/* 8011F138 0011BF38  38 62 90 18 */	addi r3, r2, m_Null__5xVec3-_SDA2_BASE_
+/* 8011F138 0011BF38  38 62 90 18 */	addi r3, r2, m_Null__5xVec3@sda21
 /* 8011F13C 0011BF3C  4E 80 00 20 */	blr 
 
 .global get_target_dir__17zNPCBossOmnidroidCFv
 get_target_dir__17zNPCBossOmnidroidCFv:
-/* 8011F140 0011BF40  38 62 90 18 */	addi r3, r2, m_Null__5xVec3-_SDA2_BASE_
+/* 8011F140 0011BF40  38 62 90 18 */	addi r3, r2, m_Null__5xVec3@sda21
 /* 8011F144 0011BF44  4E 80 00 20 */	blr 
 
 .global get_target_dist__17zNPCBossOmnidroidCFv
 get_target_dist__17zNPCBossOmnidroidCFv:
-/* 8011F148 0011BF48  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011F148 0011BF48  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011F14C 0011BF4C  4E 80 00 20 */	blr 
 
 .global get_target_dir_2d__17zNPCBossOmnidroidCFv
 get_target_dir_2d__17zNPCBossOmnidroidCFv:
-/* 8011F150 0011BF50  38 62 90 18 */	addi r3, r2, m_Null__5xVec3-_SDA2_BASE_
+/* 8011F150 0011BF50  38 62 90 18 */	addi r3, r2, m_Null__5xVec3@sda21
 /* 8011F154 0011BF54  4E 80 00 20 */	blr 
 
 .global get_target_dist_2d__17zNPCBossOmnidroidCFv
 get_target_dist_2d__17zNPCBossOmnidroidCFv:
-/* 8011F158 0011BF58  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011F158 0011BF58  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011F15C 0011BF5C  4E 80 00 20 */	blr 
 
 .global get_aim_pos__17zNPCBossOmnidroidCFv
 get_aim_pos__17zNPCBossOmnidroidCFv:
-/* 8011F160 0011BF60  38 62 90 18 */	addi r3, r2, m_Null__5xVec3-_SDA2_BASE_
+/* 8011F160 0011BF60  38 62 90 18 */	addi r3, r2, m_Null__5xVec3@sda21
 /* 8011F164 0011BF64  4E 80 00 20 */	blr 
 
 .global get_aim_dir__17zNPCBossOmnidroidCFv
 get_aim_dir__17zNPCBossOmnidroidCFv:
-/* 8011F168 0011BF68  38 62 90 18 */	addi r3, r2, m_Null__5xVec3-_SDA2_BASE_
+/* 8011F168 0011BF68  38 62 90 18 */	addi r3, r2, m_Null__5xVec3@sda21
 /* 8011F16C 0011BF6C  4E 80 00 20 */	blr 
 
 .global get_aim_dist__17zNPCBossOmnidroidCFv
 get_aim_dist__17zNPCBossOmnidroidCFv:
-/* 8011F170 0011BF70  C0 22 A8 B0 */	lfs f1, _esc__2_1222-_SDA2_BASE_(r2)
+/* 8011F170 0011BF70  C0 22 A8 B0 */	lfs f1, _esc__2_1222@sda21(r2)
 /* 8011F174 0011BF74  4E 80 00 20 */	blr 
 
 .global get_aim_offset__17zNPCBossOmnidroidCFv
 get_aim_offset__17zNPCBossOmnidroidCFv:
-/* 8011F178 0011BF78  38 62 90 18 */	addi r3, r2, m_Null__5xVec3-_SDA2_BASE_
+/* 8011F178 0011BF78  38 62 90 18 */	addi r3, r2, m_Null__5xVec3@sda21
 /* 8011F17C 0011BF7C  4E 80 00 20 */	blr 
 
 .global move__17zNPCBossOmnidroidFv
@@ -29750,7 +29750,7 @@ lbl_8011F4F4:
 /* 8011F500 0011C300  38 60 00 01 */	li r3, 1
 /* 8011F504 0011C304  48 00 00 A0 */	b lbl_8011F5A4
 lbl_8011F508:
-/* 8011F508 0011C308  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011F508 0011C308  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011F50C 0011C30C  7F E4 FB 78 */	mr r4, r31
 /* 8011F510 0011C310  48 00 00 A9 */	bl partofme__17zNPCBossOmnidroidCFRC4xEnt
 /* 8011F514 0011C314  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -29833,7 +29833,7 @@ lbl_8011F608:
 /* 8011F614 0011C414  38 60 00 01 */	li r3, 1
 /* 8011F618 0011C418  48 00 00 A0 */	b lbl_8011F6B8
 lbl_8011F61C:
-/* 8011F61C 0011C41C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011F61C 0011C41C  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011F620 0011C420  7F E4 FB 78 */	mr r4, r31
 /* 8011F624 0011C424  4B FF FF 95 */	bl partofme__17zNPCBossOmnidroidCFRC4xEnt
 /* 8011F628 0011C428  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -29904,7 +29904,7 @@ lbl_8011F6FC:
 /* 8011F708 0011C508  38 60 00 01 */	li r3, 1
 /* 8011F70C 0011C50C  48 00 00 A0 */	b lbl_8011F7AC
 lbl_8011F710:
-/* 8011F710 0011C510  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8011F710 0011C510  80 6D CC 18 */	lwz r3, boss__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_@sda21(r13)
 /* 8011F714 0011C514  7F E4 FB 78 */	mr r4, r31
 /* 8011F718 0011C518  4B FF FE A1 */	bl partofme__17zNPCBossOmnidroidCFRC4xEnt
 /* 8011F71C 0011C51C  54 60 06 3F */	clrlwi. r0, r3, 0x18

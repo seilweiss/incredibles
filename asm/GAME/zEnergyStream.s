@@ -18,7 +18,7 @@ _esc__2_stringBase0_140:
 cfg_esc__7_1011:
 	.skip 0x20
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global _esc__2_1149_4
 _esc__2_1149_4:
@@ -111,26 +111,26 @@ initRibbon__27_esc__2_unnamed_esc__2_zEnergyStream_cpp_esc__2_FP9xFXRibbon:
 /* 801D8A88 001D5888  38 60 00 00 */	li r3, 0
 /* 801D8A8C 001D588C  48 00 00 64 */	b lbl_801D8AF0
 lbl_801D8A90:
-/* 801D8A90 001D5890  C0 22 D2 30 */	lfs f1, _esc__2_1013_4-_SDA2_BASE_(r2)
+/* 801D8A90 001D5890  C0 22 D2 30 */	lfs f1, _esc__2_1013_4@sda21(r2)
 /* 801D8A94 001D5894  3C 60 80 2F */	lis r3, _esc__2_stringBase0_140@ha
-/* 801D8A98 001D5898  C0 02 D2 34 */	lfs f0, _esc__2_1014_1-_SDA2_BASE_(r2)
-/* 801D8A9C 001D589C  38 ED DB 40 */	addi r7, r13, cfg_esc__7_1011-_SDA_BASE_
+/* 801D8A98 001D5898  C0 02 D2 34 */	lfs f0, _esc__2_1014_1@sda21(r2)
+/* 801D8A9C 001D589C  38 ED DB 40 */	addi r7, r13, cfg_esc__7_1011@sda21
 /* 801D8AA0 001D58A0  39 00 00 07 */	li r8, 7
 /* 801D8AA4 001D58A4  38 C0 00 05 */	li r6, 5
 /* 801D8AA8 001D58A8  38 A0 00 06 */	li r5, 6
-/* 801D8AAC 001D58AC  38 82 D2 18 */	addi r4, r2, ribbon_curve__27_esc__2_unnamed_esc__2_zEnergyStream_cpp_esc__2_-_SDA2_BASE_
+/* 801D8AAC 001D58AC  38 82 D2 18 */	addi r4, r2, ribbon_curve__27_esc__2_unnamed_esc__2_zEnergyStream_cpp_esc__2_@sda21
 /* 801D8AB0 001D58B0  38 00 00 02 */	li r0, 2
 /* 801D8AB4 001D58B4  91 07 00 10 */	stw r8, 0x10(r7)
 /* 801D8AB8 001D58B8  38 63 98 70 */	addi r3, r3, _esc__2_stringBase0_140@l
 /* 801D8ABC 001D58BC  90 C7 00 04 */	stw r6, 4(r7)
 /* 801D8AC0 001D58C0  90 A7 00 08 */	stw r5, 8(r7)
-/* 801D8AC4 001D58C4  D0 2D DB 40 */	stfs f1, cfg_esc__7_1011-_SDA_BASE_(r13)
+/* 801D8AC4 001D58C4  D0 2D DB 40 */	stfs f1, cfg_esc__7_1011@sda21(r13)
 /* 801D8AC8 001D58C8  D0 07 00 0C */	stfs f0, 0xc(r7)
 /* 801D8ACC 001D58CC  90 87 00 14 */	stw r4, 0x14(r7)
 /* 801D8AD0 001D58D0  90 07 00 18 */	stw r0, 0x18(r7)
 /* 801D8AD4 001D58D4  4B E6 09 ED */	bl get_raster__9xFXRibbonFPCc
-/* 801D8AD8 001D58D8  38 AD DB 40 */	addi r5, r13, cfg_esc__7_1011-_SDA_BASE_
-/* 801D8ADC 001D58DC  38 8D DB 40 */	addi r4, r13, cfg_esc__7_1011-_SDA_BASE_
+/* 801D8AD8 001D58D8  38 AD DB 40 */	addi r5, r13, cfg_esc__7_1011@sda21
+/* 801D8ADC 001D58DC  38 8D DB 40 */	addi r4, r13, cfg_esc__7_1011@sda21
 /* 801D8AE0 001D58E0  90 65 00 1C */	stw r3, 0x1c(r5)
 /* 801D8AE4 001D58E4  7F E3 FB 78 */	mr r3, r31
 /* 801D8AE8 001D58E8  4B E5 FF 9D */	bl set_config__9xFXRibbonFPCQ29xFXRibbon11config_type
@@ -151,7 +151,7 @@ __ct__12EnergyStreamFv:
 /* 801D8B14 001D5914  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 801D8B18 001D5918  7C 7F 1B 78 */	mr r31, r3
 /* 801D8B1C 001D591C  48 00 0B C9 */	bl __ct__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_Fb
-/* 801D8B20 001D5920  38 0D AB 48 */	addi r0, r13, __vt__12EnergyStream-_SDA_BASE_
+/* 801D8B20 001D5920  38 0D AB 48 */	addi r0, r13, __vt__12EnergyStream@sda21
 /* 801D8B24 001D5924  38 60 00 3C */	li r3, 0x3c
 /* 801D8B28 001D5928  90 1F 00 08 */	stw r0, 8(r31)
 /* 801D8B2C 001D592C  38 80 00 00 */	li r4, 0
@@ -198,14 +198,14 @@ lbl_801D8BBC:
 /* 801D8BCC 001D59CC  4B E4 8E 05 */	bl __nwa__FUl14xMemStaticTypeUi
 /* 801D8BD0 001D59D0  90 7F 00 18 */	stw r3, 0x18(r31)
 /* 801D8BD4 001D59D4  38 00 00 04 */	li r0, 4
-/* 801D8BD8 001D59D8  C0 02 D2 38 */	lfs f0, _esc__2_1034_1-_SDA2_BASE_(r2)
+/* 801D8BD8 001D59D8  C0 02 D2 38 */	lfs f0, _esc__2_1034_1@sda21(r2)
 /* 801D8BDC 001D59DC  38 C0 00 02 */	li r6, 2
 /* 801D8BE0 001D59E0  80 9F 00 28 */	lwz r4, 0x28(r31)
 /* 801D8BE4 001D59E4  38 60 00 08 */	li r3, 8
-/* 801D8BE8 001D59E8  C8 42 D2 48 */	lfd f2, _esc__2_1038_3-_SDA2_BASE_(r2)
+/* 801D8BE8 001D59E8  C8 42 D2 48 */	lfd f2, _esc__2_1038_3@sda21(r2)
 /* 801D8BEC 001D59EC  3C A0 43 30 */	lis r5, 0x4330
 /* 801D8BF0 001D59F0  D0 04 00 00 */	stfs f0, 0(r4)
-/* 801D8BF4 001D59F4  C0 22 D2 3C */	lfs f1, _esc__2_1035_5-_SDA2_BASE_(r2)
+/* 801D8BF4 001D59F4  C0 22 D2 3C */	lfs f1, _esc__2_1035_5@sda21(r2)
 /* 801D8BF8 001D59F8  80 9F 00 28 */	lwz r4, 0x28(r31)
 /* 801D8BFC 001D59FC  D0 04 00 04 */	stfs f0, 4(r4)
 /* 801D8C00 001D5A00  7C 09 03 A6 */	mtctr r0
@@ -222,7 +222,7 @@ lbl_801D8C04:
 /* 801D8C28 001D5A28  7C 04 1D 2E */	stfsx f0, r4, r3
 /* 801D8C2C 001D5A2C  38 63 00 04 */	addi r3, r3, 4
 /* 801D8C30 001D5A30  42 00 FF D4 */	bdnz lbl_801D8C04
-/* 801D8C34 001D5A34  C0 02 D2 40 */	lfs f0, _esc__2_1036_6-_SDA2_BASE_(r2)
+/* 801D8C34 001D5A34  C0 02 D2 40 */	lfs f0, _esc__2_1036_6@sda21(r2)
 /* 801D8C38 001D5A38  7F E3 FB 78 */	mr r3, r31
 /* 801D8C3C 001D5A3C  80 9F 00 28 */	lwz r4, 0x28(r31)
 /* 801D8C40 001D5A40  D0 04 00 18 */	stfs f0, 0x18(r4)
@@ -246,8 +246,8 @@ __ct__12EnergyStreamFPC5xVec3PC5xVec3PQ212EnergyStream6config:
 /* 801D8C7C 001D5A7C  7C DF 33 78 */	mr r31, r6
 /* 801D8C80 001D5A80  38 80 00 01 */	li r4, 1
 /* 801D8C84 001D5A84  48 00 0A 61 */	bl __ct__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_Fb
-/* 801D8C88 001D5A88  38 0D AB 48 */	addi r0, r13, __vt__12EnergyStream-_SDA_BASE_
-/* 801D8C8C 001D5A8C  C0 02 D2 38 */	lfs f0, _esc__2_1034_1-_SDA2_BASE_(r2)
+/* 801D8C88 001D5A88  38 0D AB 48 */	addi r0, r13, __vt__12EnergyStream@sda21
+/* 801D8C8C 001D5A8C  C0 02 D2 38 */	lfs f0, _esc__2_1034_1@sda21(r2)
 /* 801D8C90 001D5A90  90 1C 00 08 */	stw r0, 8(r28)
 /* 801D8C94 001D5A94  7F C4 F3 78 */	mr r4, r30
 /* 801D8C98 001D5A98  7F A5 EB 78 */	mr r5, r29
@@ -309,7 +309,7 @@ __as__12EnergyStreamFRC12EnergyStream:
 /* 801D8D6C 001D5B6C  4B FF FD 05 */	bl initRibbon__27_esc__2_unnamed_esc__2_zEnergyStream_cpp_esc__2_FP9xFXRibbon
 /* 801D8D70 001D5B70  90 7F 00 80 */	stw r3, 0x80(r31)
 /* 801D8D74 001D5B74  3B A0 00 00 */	li r29, 0
-/* 801D8D78 001D5B78  CB E2 D2 48 */	lfd f31, _esc__2_1038_3-_SDA2_BASE_(r2)
+/* 801D8D78 001D5B78  CB E2 D2 48 */	lfd f31, _esc__2_1038_3@sda21(r2)
 /* 801D8D7C 001D5B7C  3B 60 00 00 */	li r27, 0
 /* 801D8D80 001D5B80  93 BF 00 1C */	stw r29, 0x1c(r31)
 /* 801D8D84 001D5B84  3F C0 43 30 */	lis r30, 0x4330
@@ -342,9 +342,9 @@ lbl_801D8D8C:
 /* 801D8DEC 001D5BEC  C0 1C 00 44 */	lfs f0, 0x44(r28)
 /* 801D8DF0 001D5BF0  38 81 00 20 */	addi r4, r1, 0x20
 /* 801D8DF4 001D5BF4  80 7F 00 18 */	lwz r3, 0x18(r31)
-/* 801D8DF8 001D5BF8  38 A2 89 FC */	addi r5, r2, g_X3-_SDA2_BASE_
+/* 801D8DF8 001D5BF8  38 A2 89 FC */	addi r5, r2, g_X3@sda21
 /* 801D8DFC 001D5BFC  EC 00 F0 28 */	fsubs f0, f0, f30
-/* 801D8E00 001D5C00  C0 42 D2 40 */	lfs f2, _esc__2_1036_6-_SDA2_BASE_(r2)
+/* 801D8E00 001D5C00  C0 42 D2 40 */	lfs f2, _esc__2_1036_6@sda21(r2)
 /* 801D8E04 001D5C04  38 C0 00 00 */	li r6, 0
 /* 801D8E08 001D5C08  EC 00 F0 7A */	fmadds f0, f0, f1, f30
 /* 801D8E0C 001D5C0C  7C 03 ED 2E */	stfsx f0, r3, r29
@@ -392,23 +392,23 @@ setup__12EnergyStreamFv:
 /* 801D8E98 001D5C98  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D8E9C 001D5C9C  7C 08 02 A6 */	mflr r0
 /* 801D8EA0 001D5CA0  3C 60 80 3A */	lis r3, default_config__12EnergyStream@ha
-/* 801D8EA4 001D5CA4  C1 22 D2 58 */	lfs f9, _esc__2_1107_3-_SDA2_BASE_(r2)
+/* 801D8EA4 001D5CA4  C1 22 D2 58 */	lfs f9, _esc__2_1107_3@sda21(r2)
 /* 801D8EA8 001D5CA8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801D8EAC 001D5CAC  38 83 F5 40 */	addi r4, r3, default_config__12EnergyStream@l
-/* 801D8EB0 001D5CB0  C0 E2 D2 40 */	lfs f7, _esc__2_1036_6-_SDA2_BASE_(r2)
+/* 801D8EB0 001D5CB0  C0 E2 D2 40 */	lfs f7, _esc__2_1036_6@sda21(r2)
 /* 801D8EB4 001D5CB4  38 00 00 0A */	li r0, 0xa
-/* 801D8EB8 001D5CB8  C0 82 D2 64 */	lfs f4, _esc__2_1110_1-_SDA2_BASE_(r2)
+/* 801D8EB8 001D5CB8  C0 82 D2 64 */	lfs f4, _esc__2_1110_1@sda21(r2)
 /* 801D8EBC 001D5CBC  3C 60 80 2F */	lis r3, _esc__2_stringBase0_140@ha
 /* 801D8EC0 001D5CC0  D1 24 00 00 */	stfs f9, 0(r4)
 /* 801D8EC4 001D5CC4  38 63 98 70 */	addi r3, r3, _esc__2_stringBase0_140@l
-/* 801D8EC8 001D5CC8  C1 02 D2 38 */	lfs f8, _esc__2_1034_1-_SDA2_BASE_(r2)
+/* 801D8EC8 001D5CC8  C1 02 D2 38 */	lfs f8, _esc__2_1034_1@sda21(r2)
 /* 801D8ECC 001D5CCC  38 63 00 13 */	addi r3, r3, 0x13
-/* 801D8ED0 001D5CD0  C0 C2 D2 5C */	lfs f6, _esc__2_1108_2-_SDA2_BASE_(r2)
-/* 801D8ED4 001D5CD4  C0 A2 D2 60 */	lfs f5, _esc__2_1109_2-_SDA2_BASE_(r2)
-/* 801D8ED8 001D5CD8  C0 62 D2 68 */	lfs f3, _esc__2_1111_1-_SDA2_BASE_(r2)
-/* 801D8EDC 001D5CDC  C0 42 D2 6C */	lfs f2, _esc__2_1112_1-_SDA2_BASE_(r2)
-/* 801D8EE0 001D5CE0  C0 22 D2 70 */	lfs f1, _esc__2_1113_3-_SDA2_BASE_(r2)
-/* 801D8EE4 001D5CE4  C0 02 D2 74 */	lfs f0, _esc__2_1114-_SDA2_BASE_(r2)
+/* 801D8ED0 001D5CD0  C0 C2 D2 5C */	lfs f6, _esc__2_1108_2@sda21(r2)
+/* 801D8ED4 001D5CD4  C0 A2 D2 60 */	lfs f5, _esc__2_1109_2@sda21(r2)
+/* 801D8ED8 001D5CD8  C0 62 D2 68 */	lfs f3, _esc__2_1111_1@sda21(r2)
+/* 801D8EDC 001D5CDC  C0 42 D2 6C */	lfs f2, _esc__2_1112_1@sda21(r2)
+/* 801D8EE0 001D5CE0  C0 22 D2 70 */	lfs f1, _esc__2_1113_3@sda21(r2)
+/* 801D8EE4 001D5CE4  C0 02 D2 74 */	lfs f0, _esc__2_1114@sda21(r2)
 /* 801D8EE8 001D5CE8  D1 04 00 04 */	stfs f8, 4(r4)
 /* 801D8EEC 001D5CEC  D0 E4 00 08 */	stfs f7, 8(r4)
 /* 801D8EF0 001D5CF0  D0 C4 00 0C */	stfs f6, 0xc(r4)
@@ -452,12 +452,12 @@ create_matrix__12EnergyStreamFv:
 /* 801D8F70 001D5D70  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801D8F74 001D5D74  40 81 00 14 */	ble lbl_801D8F88
 /* 801D8F78 001D5D78  38 7F 00 60 */	addi r3, r31, 0x60
-/* 801D8F7C 001D5D7C  38 82 8A 14 */	addi r4, r2, g_Z3-_SDA2_BASE_
+/* 801D8F7C 001D5D7C  38 82 8A 14 */	addi r4, r2, g_Z3@sda21
 /* 801D8F80 001D5D80  4B E3 21 29 */	bl __as__5xVec3FRC5xVec3
 /* 801D8F84 001D5D84  48 00 00 10 */	b lbl_801D8F94
 lbl_801D8F88:
 /* 801D8F88 001D5D88  38 7F 00 60 */	addi r3, r31, 0x60
-/* 801D8F8C 001D5D8C  38 82 8A 08 */	addi r4, r2, g_Y3-_SDA2_BASE_
+/* 801D8F8C 001D5D8C  38 82 8A 08 */	addi r4, r2, g_Y3@sda21
 /* 801D8F90 001D5D90  4B E3 21 19 */	bl __as__5xVec3FRC5xVec3
 lbl_801D8F94:
 /* 801D8F94 001D5D94  38 7F 00 70 */	addi r3, r31, 0x70
@@ -506,13 +506,13 @@ get_random_point__12EnergyStreamFi:
 /* 801D9034 001D5E34  EC 00 F8 28 */	fsubs f0, f0, f31
 /* 801D9038 001D5E38  EF E0 F8 7A */	fmadds f31, f0, f1, f31
 /* 801D903C 001D5E3C  4B E2 E2 E9 */	bl xurand__Fv
-/* 801D9040 001D5E40  C0 42 D2 60 */	lfs f2, _esc__2_1109_2-_SDA2_BASE_(r2)
-/* 801D9044 001D5E44  C0 02 D2 78 */	lfs f0, _esc__2_1157_5-_SDA2_BASE_(r2)
+/* 801D9040 001D5E40  C0 42 D2 60 */	lfs f2, _esc__2_1109_2@sda21(r2)
+/* 801D9044 001D5E44  C0 02 D2 78 */	lfs f0, _esc__2_1157_5@sda21(r2)
 /* 801D9048 001D5E48  EC 22 00 72 */	fmuls f1, f2, f1
 /* 801D904C 001D5E4C  EF C0 00 72 */	fmuls f30, f0, f1
 /* 801D9050 001D5E50  4B E2 E2 D5 */	bl xurand__Fv
 /* 801D9054 001D5E54  6F C3 80 00 */	xoris r3, r30, 0x8000
-/* 801D9058 001D5E58  C0 02 D2 34 */	lfs f0, _esc__2_1014_1-_SDA2_BASE_(r2)
+/* 801D9058 001D5E58  C0 02 D2 34 */	lfs f0, _esc__2_1014_1@sda21(r2)
 /* 801D905C 001D5E5C  3C 00 43 30 */	lis r0, 0x4330
 /* 801D9060 001D5E60  80 9D 00 20 */	lwz r4, 0x20(r29)
 /* 801D9064 001D5E64  EC 81 00 28 */	fsubs f4, f1, f0
@@ -520,14 +520,14 @@ get_random_point__12EnergyStreamFi:
 /* 801D906C 001D5E6C  C0 64 00 24 */	lfs f3, 0x24(r4)
 /* 801D9070 001D5E70  FC 20 F0 90 */	fmr f1, f30
 /* 801D9074 001D5E74  90 01 00 38 */	stw r0, 0x38(r1)
-/* 801D9078 001D5E78  C8 42 D2 48 */	lfd f2, _esc__2_1038_3-_SDA2_BASE_(r2)
+/* 801D9078 001D5E78  C8 42 D2 48 */	lfd f2, _esc__2_1038_3@sda21(r2)
 /* 801D907C 001D5E7C  C8 01 00 38 */	lfd f0, 0x38(r1)
 /* 801D9080 001D5E80  EC 63 01 32 */	fmuls f3, f3, f4
-/* 801D9084 001D5E84  80 82 F6 E0 */	lwz r4, _esc__2_1149_4-_SDA2_BASE_(r2)
-/* 801D9088 001D5E88  80 62 F6 E4 */	lwz r3, lbl_803D9404-_SDA2_BASE_(r2)
+/* 801D9084 001D5E84  80 82 F6 E0 */	lwz r4, _esc__2_1149_4@sda21(r2)
+/* 801D9088 001D5E88  80 62 F6 E4 */	lwz r3, lbl_803D9404@sda21(r2)
 /* 801D908C 001D5E8C  EC 40 10 28 */	fsubs f2, f0, f2
-/* 801D9090 001D5E90  C0 02 D2 7C */	lfs f0, _esc__2_1158_7-_SDA2_BASE_(r2)
-/* 801D9094 001D5E94  80 02 F6 E8 */	lwz r0, lbl_803D9408-_SDA2_BASE_(r2)
+/* 801D9090 001D5E90  C0 02 D2 7C */	lfs f0, _esc__2_1158_7@sda21(r2)
+/* 801D9094 001D5E94  80 02 F6 E8 */	lwz r0, lbl_803D9408@sda21(r2)
 /* 801D9098 001D5E98  EF A2 18 3A */	fmadds f29, f2, f0, f3
 /* 801D909C 001D5E9C  90 81 00 2C */	stw r4, 0x2c(r1)
 /* 801D90A0 001D5EA0  90 61 00 30 */	stw r3, 0x30(r1)
@@ -597,7 +597,7 @@ update__12EnergyStreamFf:
 /* 801D9194 001D5F94  38 7E 00 44 */	addi r3, r30, 0x44
 /* 801D9198 001D5F98  4B E3 22 BD */	bl length__5xVec3CFv
 /* 801D919C 001D5F9C  D0 3E 00 34 */	stfs f1, 0x34(r30)
-/* 801D91A0 001D5FA0  C0 02 D2 38 */	lfs f0, _esc__2_1034_1-_SDA2_BASE_(r2)
+/* 801D91A0 001D5FA0  C0 02 D2 38 */	lfs f0, _esc__2_1034_1@sda21(r2)
 /* 801D91A4 001D5FA4  C0 3E 00 34 */	lfs f1, 0x34(r30)
 /* 801D91A8 001D5FA8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801D91AC 001D5FAC  40 81 00 0C */	ble lbl_801D91B8
@@ -719,14 +719,14 @@ recalculate__12EnergyStreamFv:
 /* 801D9350 001D6150  38 7C 00 44 */	addi r3, r28, 0x44
 /* 801D9354 001D6154  4B E3 21 01 */	bl length__5xVec3CFv
 /* 801D9358 001D6158  D0 3C 00 34 */	stfs f1, 0x34(r28)
-/* 801D935C 001D615C  C0 02 D2 38 */	lfs f0, _esc__2_1034_1-_SDA2_BASE_(r2)
+/* 801D935C 001D615C  C0 02 D2 38 */	lfs f0, _esc__2_1034_1@sda21(r2)
 /* 801D9360 001D6160  C0 3C 00 34 */	lfs f1, 0x34(r28)
 /* 801D9364 001D6164  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801D9368 001D6168  40 81 00 0C */	ble lbl_801D9374
 /* 801D936C 001D616C  38 7C 00 44 */	addi r3, r28, 0x44
 /* 801D9370 001D6170  4B E3 59 8D */	bl __adv__5xVec3Ff
 lbl_801D9374:
-/* 801D9374 001D6174  C3 E2 D2 38 */	lfs f31, _esc__2_1034_1-_SDA2_BASE_(r2)
+/* 801D9374 001D6174  C3 E2 D2 38 */	lfs f31, _esc__2_1034_1@sda21(r2)
 /* 801D9378 001D6178  3B A0 00 01 */	li r29, 1
 /* 801D937C 001D617C  3B E0 00 04 */	li r31, 4
 /* 801D9380 001D6180  3B C0 00 0C */	li r30, 0xc
@@ -745,7 +745,7 @@ lbl_801D9384:
 /* 801D93B0 001D61B0  7C 80 F2 14 */	add r4, r0, r30
 /* 801D93B4 001D61B4  4B E3 1C F5 */	bl __as__5xVec3FRC5xVec3
 /* 801D93B8 001D61B8  80 1C 00 10 */	lwz r0, 0x10(r28)
-/* 801D93BC 001D61BC  38 82 89 F0 */	addi r4, r2, g_O3-_SDA2_BASE_
+/* 801D93BC 001D61BC  38 82 89 F0 */	addi r4, r2, g_O3@sda21
 /* 801D93C0 001D61C0  7C 60 F2 14 */	add r3, r0, r30
 /* 801D93C4 001D61C4  4B E3 1C E5 */	bl __as__5xVec3FRC5xVec3
 /* 801D93C8 001D61C8  80 7C 00 14 */	lwz r3, 0x14(r28)
@@ -805,14 +805,14 @@ update_ribbon__12EnergyStreamFf:
 /* 801D9484 001D6284  7C 7E 1B 78 */	mr r30, r3
 /* 801D9488 001D6288  FF C0 08 90 */	fmr f30, f1
 /* 801D948C 001D628C  C0 23 00 2C */	lfs f1, 0x2c(r3)
-/* 801D9490 001D6290  C0 02 D2 38 */	lfs f0, _esc__2_1034_1-_SDA2_BASE_(r2)
+/* 801D9490 001D6290  C0 02 D2 38 */	lfs f0, _esc__2_1034_1@sda21(r2)
 /* 801D9494 001D6294  EC 21 F0 28 */	fsubs f1, f1, f30
 /* 801D9498 001D6298  D0 23 00 2C */	stfs f1, 0x2c(r3)
 /* 801D949C 001D629C  C0 43 00 2C */	lfs f2, 0x2c(r3)
 /* 801D94A0 001D62A0  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801D94A4 001D62A4  40 80 00 6C */	bge lbl_801D9510
 /* 801D94A8 001D62A8  80 7E 00 20 */	lwz r3, 0x20(r30)
-/* 801D94AC 001D62AC  C0 22 D2 40 */	lfs f1, _esc__2_1036_6-_SDA2_BASE_(r2)
+/* 801D94AC 001D62AC  C0 22 D2 40 */	lfs f1, _esc__2_1036_6@sda21(r2)
 /* 801D94B0 001D62B0  C0 03 00 00 */	lfs f0, 0(r3)
 /* 801D94B4 001D62B4  EC 01 00 24 */	fdivs f0, f1, f0
 /* 801D94B8 001D62B8  EC 02 00 2A */	fadds f0, f2, f0
@@ -841,7 +841,7 @@ lbl_801D9510:
 /* 801D9510 001D6310  80 7E 00 20 */	lwz r3, 0x20(r30)
 /* 801D9514 001D6314  C0 1E 00 30 */	lfs f0, 0x30(r30)
 /* 801D9518 001D6318  C0 43 00 00 */	lfs f2, 0(r3)
-/* 801D951C 001D631C  C0 22 D2 40 */	lfs f1, _esc__2_1036_6-_SDA2_BASE_(r2)
+/* 801D951C 001D631C  C0 22 D2 40 */	lfs f1, _esc__2_1036_6@sda21(r2)
 /* 801D9520 001D6320  EC 02 07 BA */	fmadds f0, f2, f30, f0
 /* 801D9524 001D6324  D0 1E 00 30 */	stfs f0, 0x30(r30)
 /* 801D9528 001D6328  48 00 00 10 */	b lbl_801D9538
@@ -875,10 +875,10 @@ lbl_801D9574:
 /* 801D958C 001D638C  3C A0 43 30 */	lis r5, 0x4330
 /* 801D9590 001D6390  90 61 00 2C */	stw r3, 0x2c(r1)
 /* 801D9594 001D6394  6F E0 80 00 */	xoris r0, r31, 0x8000
-/* 801D9598 001D6398  C8 42 D2 50 */	lfd f2, _esc__2_1092_3-_SDA2_BASE_(r2)
+/* 801D9598 001D6398  C8 42 D2 50 */	lfd f2, _esc__2_1092_3@sda21(r2)
 /* 801D959C 001D639C  90 A1 00 28 */	stw r5, 0x28(r1)
 /* 801D95A0 001D63A0  38 61 00 18 */	addi r3, r1, 0x18
-/* 801D95A4 001D63A4  C8 22 D2 48 */	lfd f1, _esc__2_1038_3-_SDA2_BASE_(r2)
+/* 801D95A4 001D63A4  C8 22 D2 48 */	lfd f1, _esc__2_1038_3@sda21(r2)
 /* 801D95A8 001D63A8  C8 01 00 28 */	lfd f0, 0x28(r1)
 /* 801D95AC 001D63AC  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801D95B0 001D63B0  EC 40 10 28 */	fsubs f2, f0, f2
@@ -966,7 +966,7 @@ remove__12EnergyStreamFv:
 
 .global __ct__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_Fb
 __ct__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_Fb:
-/* 801D96E4 001D64E4  38 0D AB 68 */	addi r0, r13, __vt__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_-_SDA_BASE_
+/* 801D96E4 001D64E4  38 0D AB 68 */	addi r0, r13, __vt__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_@sda21
 /* 801D96E8 001D64E8  90 03 00 08 */	stw r0, 8(r3)
 /* 801D96EC 001D64EC  98 83 00 00 */	stb r4, 0(r3)
 /* 801D96F0 001D64F0  4E 80 00 20 */	blr 

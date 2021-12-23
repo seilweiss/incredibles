@@ -58,16 +58,16 @@ add_tweaks__Q228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_5tweakFv:
 
 .global alloc_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_Fv
 alloc_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_Fv:
-/* 80174C68 00171A68  80 6D D3 8C */	lwz r3, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80174C68 00171A68  80 6D D3 8C */	lwz r3, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 80174C6C 00171A6C  80 03 00 08 */	lwz r0, 8(r3)
-/* 80174C70 00171A70  90 0D D3 8C */	stw r0, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80174C70 00171A70  90 0D D3 8C */	stw r0, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 80174C74 00171A74  4E 80 00 20 */	blr 
 
 .global free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_10block_info
 free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_10block_info:
-/* 80174C78 00171A78  80 0D D3 8C */	lwz r0, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80174C78 00171A78  80 0D D3 8C */	lwz r0, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 80174C7C 00171A7C  90 03 00 08 */	stw r0, 8(r3)
-/* 80174C80 00171A80  90 6D D3 8C */	stw r3, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80174C80 00171A80  90 6D D3 8C */	stw r3, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 80174C84 00171A84  4E 80 00 20 */	blr 
 
 .global create_system__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FRQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_15internal_systemRC20xParticleBatchSystem
@@ -82,7 +82,7 @@ create_system__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FRQ228_esc__2_
 /* 80174CA4 00171AA4  90 9F 00 28 */	stw r4, 0x28(r31)
 /* 80174CA8 00171AA8  90 9F 00 2C */	stw r4, 0x2c(r31)
 /* 80174CAC 00171AAC  90 9F 00 30 */	stw r4, 0x30(r31)
-/* 80174CB0 00171AB0  80 6D A1 B8 */	lwz r3, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80174CB0 00171AB0  80 6D A1 B8 */	lwz r3, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 80174CB4 00171AB4  80 1F 00 1C */	lwz r0, 0x1c(r31)
 /* 80174CB8 00171AB8  7C 03 03 D6 */	divw r0, r3, r0
 /* 80174CBC 00171ABC  90 1F 00 34 */	stw r0, 0x34(r31)
@@ -133,11 +133,11 @@ add_to_bucket__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FRQ228_esc__2_
 /* 80174D54 00171B54  38 C1 00 0C */	addi r6, r1, 0xc
 /* 80174D58 00171B58  BF 41 00 28 */	stmw r26, 0x28(r1)
 /* 80174D5C 00171B5C  7C 7C 1B 78 */	mr r28, r3
-/* 80174D60 00171B60  3B CD D3 98 */	addi r30, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_
+/* 80174D60 00171B60  3B CD D3 98 */	addi r30, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21
 /* 80174D64 00171B64  80 A3 00 00 */	lwz r5, 0(r3)
 /* 80174D68 00171B68  80 63 00 04 */	lwz r3, 4(r3)
 /* 80174D6C 00171B6C  54 BF 10 3A */	slwi r31, r5, 2
-/* 80174D70 00171B70  88 0D D3 B0 */	lbz r0, _esc__2_1029-_SDA_BASE_(r13)
+/* 80174D70 00171B70  88 0D D3 B0 */	lbz r0, _esc__2_1029@sda21(r13)
 /* 80174D74 00171B74  90 61 00 10 */	stw r3, 0x10(r1)
 /* 80174D78 00171B78  1D 05 0A 00 */	mulli r8, r5, 0xa00
 /* 80174D7C 00171B7C  7C 9E F8 2E */	lwzx r4, r30, r31
@@ -175,7 +175,7 @@ lbl_80174DF0:
 /* 80174DF8 00171BF8  90 1C 00 3C */	stw r0, 0x3c(r28)
 /* 80174DFC 00171BFC  93 9B 00 10 */	stw r28, 0x10(r27)
 /* 80174E00 00171C00  40 82 00 20 */	bne lbl_80174E20
-/* 80174E04 00171C04  88 0D D3 B4 */	lbz r0, _esc__2_1035-_SDA_BASE_(r13)
+/* 80174E04 00171C04  88 0D D3 B4 */	lbz r0, _esc__2_1035@sda21(r13)
 /* 80174E08 00171C08  7F A3 EB 78 */	mr r3, r29
 /* 80174E0C 00171C0C  7C 9E F8 2E */	lwzx r4, r30, r31
 /* 80174E10 00171C10  38 C1 00 08 */	addi r6, r1, 8
@@ -213,11 +213,11 @@ remove_from_bucket__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FRQ228_es
 /* 80174E74 00171C74  38 C1 00 08 */	addi r6, r1, 8
 /* 80174E78 00171C78  BF 81 00 20 */	stmw r28, 0x20(r1)
 /* 80174E7C 00171C7C  7C 7D 1B 78 */	mr r29, r3
-/* 80174E80 00171C80  3B CD D3 98 */	addi r30, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_
+/* 80174E80 00171C80  3B CD D3 98 */	addi r30, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21
 /* 80174E84 00171C84  80 A3 00 00 */	lwz r5, 0(r3)
 /* 80174E88 00171C88  80 63 00 04 */	lwz r3, 4(r3)
 /* 80174E8C 00171C8C  54 BF 10 3A */	slwi r31, r5, 2
-/* 80174E90 00171C90  88 0D D3 B8 */	lbz r0, _esc__2_1054-_SDA_BASE_(r13)
+/* 80174E90 00171C90  88 0D D3 B8 */	lbz r0, _esc__2_1054@sda21(r13)
 /* 80174E94 00171C94  90 61 00 0C */	stw r3, 0xc(r1)
 /* 80174E98 00171C98  1C 65 0A 00 */	mulli r3, r5, 0xa00
 /* 80174E9C 00171C9C  7C FE F8 2E */	lwzx r7, r30, r31
@@ -464,15 +464,15 @@ lbl_801751C4:
 /* 801751E0 00171FE0  40 80 00 10 */	bge lbl_801751F0
 lbl_801751E4:
 /* 801751E4 00171FE4  38 00 14 00 */	li r0, 0x1400
-/* 801751E8 00171FE8  90 0D A1 B8 */	stw r0, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801751E8 00171FE8  90 0D A1 B8 */	stw r0, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 801751EC 00171FEC  48 00 00 0C */	b lbl_801751F8
 lbl_801751F0:
 /* 801751F0 00171FF0  38 00 05 00 */	li r0, 0x500
-/* 801751F4 00171FF4  90 0D A1 B8 */	stw r0, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801751F4 00171FF4  90 0D A1 B8 */	stw r0, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 lbl_801751F8:
-/* 801751F8 00171FF8  80 0D A1 B8 */	lwz r0, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801751F8 00171FF8  80 0D A1 B8 */	lwz r0, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 801751FC 00171FFC  54 00 28 34 */	slwi r0, r0, 5
-/* 80175200 00172000  90 0D D3 88 */	stw r0, BUFFER_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80175200 00172000  90 0D D3 88 */	stw r0, BUFFER_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 80175204 00172004  4E 80 00 20 */	blr 
 
 .global xParticleBatchSceneEnter__Fv
@@ -481,15 +481,15 @@ xParticleBatchSceneEnter__Fv:
 /* 8017520C 0017200C  7C 08 02 A6 */	mflr r0
 /* 80175210 00172010  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80175214 00172014  4B FF FF 11 */	bl adjust_batch_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_Fv
-/* 80175218 00172018  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80175218 00172018  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 8017521C 0017201C  38 A0 00 00 */	li r5, 0
-/* 80175220 00172020  80 8D D3 88 */	lwz r4, BUFFER_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80175220 00172020  80 8D D3 88 */	lwz r4, BUFFER_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 80175224 00172024  4B ED 49 3D */	bl xMemAlloc__FUiUii
 /* 80175228 00172028  38 00 00 00 */	li r0, 0
-/* 8017522C 0017202C  90 6D D3 90 */	stw r3, block_buffer__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80175230 00172030  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_
+/* 8017522C 0017202C  90 6D D3 90 */	stw r3, block_buffer__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
+/* 80175230 00172030  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21
 /* 80175234 00172034  38 80 00 00 */	li r4, 0
-/* 80175238 00172038  90 0D D3 94 */	stw r0, systems_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80175238 00172038  90 0D D3 94 */	stw r0, systems_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 8017523C 0017203C  38 A0 00 18 */	li r5, 0x18
 /* 80175240 00172040  4B E8 DE C1 */	bl memset
 /* 80175244 00172044  48 00 00 1D */	bl xParticleBatchReset__Fv
@@ -505,7 +505,7 @@ xParticleBatchSceneExit__Fv:
 
 .global xParticleBatchReset__Fv
 xParticleBatchReset__Fv:
-/* 80175260 00172060  80 6D D3 94 */	lwz r3, systems_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80175260 00172060  80 6D D3 94 */	lwz r3, systems_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 80175264 00172064  3C 80 80 39 */	lis r4, systems__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@ha
 /* 80175268 00172068  38 84 3A A0 */	addi r4, r4, systems__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@l
 /* 8017526C 0017206C  38 00 00 00 */	li r0, 0
@@ -522,10 +522,10 @@ lbl_80175290:
 /* 80175290 00172090  7C 04 18 40 */	cmplw r4, r3
 /* 80175294 00172094  40 82 FF E8 */	bne lbl_8017527C
 /* 80175298 00172098  3C 60 80 3A */	lis r3, block_info_buffer__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@ha
-/* 8017529C 0017209C  80 CD D3 90 */	lwz r6, block_buffer__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8017529C 0017209C  80 CD D3 90 */	lwz r6, block_buffer__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 801752A0 001720A0  38 63 96 A0 */	addi r3, r3, block_info_buffer__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@l
-/* 801752A4 001720A4  80 0D A1 B8 */	lwz r0, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801752A8 001720A8  90 6D D3 8C */	stw r3, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801752A4 001720A4  80 0D A1 B8 */	lwz r0, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
+/* 801752A8 001720A8  90 6D D3 8C */	stw r3, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 801752AC 001720AC  7C 64 1B 78 */	mr r4, r3
 /* 801752B0 001720B0  38 A3 01 74 */	addi r5, r3, 0x174
 /* 801752B4 001720B4  48 00 00 18 */	b lbl_801752CC
@@ -550,16 +550,16 @@ xParticleBatchPreRender__Fv:
 /* 801752EC 001720EC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801752F0 001720F0  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 801752F4 001720F4  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
-/* 801752F8 001720F8  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 801752F8 001720F8  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 801752FC 001720FC  3C 60 80 39 */	lis r3, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@ha
-/* 80175300 00172100  80 0D D3 98 */	lwz r0, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80175300 00172100  80 0D D3 98 */	lwz r0, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 80175304 00172104  38 63 5A A0 */	addi r3, r3, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@l
 /* 80175308 00172108  C3 E4 04 7C */	lfs f31, 0x47c(r4)
 /* 8017530C 0017210C  1C 00 00 14 */	mulli r0, r0, 0x14
 /* 80175310 00172110  FC 20 F8 90 */	fmr f1, f31
 /* 80175314 00172114  7C 83 02 14 */	add r4, r3, r0
 /* 80175318 00172118  48 00 06 25 */	bl pre_render_buckets_esc__0_21ptank_pool__color_mat_esc__1___28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_13system_bucketPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_13system_bucketf
-/* 8017531C 0017211C  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_
+/* 8017531C 0017211C  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21
 /* 80175320 00172120  3C 80 80 39 */	lis r4, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@ha
 /* 80175324 00172124  80 03 00 04 */	lwz r0, 4(r3)
 /* 80175328 00172128  38 84 5A A0 */	addi r4, r4, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@l
@@ -569,7 +569,7 @@ xParticleBatchPreRender__Fv:
 /* 80175338 00172138  7C 84 02 14 */	add r4, r4, r0
 /* 8017533C 0017213C  38 84 0A 00 */	addi r4, r4, 0xa00
 /* 80175340 00172140  48 00 07 15 */	bl pre_render_buckets_esc__0_25ptank_pool__color_mat_uv2_esc__1___28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_13system_bucketPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_13system_bucketf
-/* 80175344 00172144  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_
+/* 80175344 00172144  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21
 /* 80175348 00172148  3C 80 80 39 */	lis r4, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@ha
 /* 8017534C 0017214C  80 03 00 08 */	lwz r0, 8(r3)
 /* 80175350 00172150  38 84 5A A0 */	addi r4, r4, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@l
@@ -579,7 +579,7 @@ xParticleBatchPreRender__Fv:
 /* 80175360 00172160  7C 84 02 14 */	add r4, r4, r0
 /* 80175364 00172164  38 84 14 00 */	addi r4, r4, 0x1400
 /* 80175368 00172168  48 00 08 05 */	bl pre_render_buckets_esc__0_26ptank_pool__pos_color_size_esc__1___28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_13system_bucketPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_13system_bucketf
-/* 8017536C 0017216C  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_
+/* 8017536C 0017216C  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21
 /* 80175370 00172170  3C 80 80 39 */	lis r4, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@ha
 /* 80175374 00172174  80 03 00 0C */	lwz r0, 0xc(r3)
 /* 80175378 00172178  38 84 5A A0 */	addi r4, r4, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@l
@@ -589,7 +589,7 @@ xParticleBatchPreRender__Fv:
 /* 80175388 00172188  7C 84 02 14 */	add r4, r4, r0
 /* 8017538C 0017218C  38 84 1E 00 */	addi r4, r4, 0x1e00
 /* 80175390 00172190  48 00 08 F5 */	bl pre_render_buckets_esc__0_30ptank_pool__pos_color_size_uv2_esc__1___28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_13system_bucketPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_13system_bucketf
-/* 80175394 00172194  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_
+/* 80175394 00172194  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21
 /* 80175398 00172198  3C 80 80 39 */	lis r4, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@ha
 /* 8017539C 0017219C  80 03 00 10 */	lwz r0, 0x10(r3)
 /* 801753A0 001721A0  38 84 5A A0 */	addi r4, r4, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@l
@@ -599,7 +599,7 @@ xParticleBatchPreRender__Fv:
 /* 801753B0 001721B0  7C 84 02 14 */	add r4, r4, r0
 /* 801753B4 001721B4  38 84 28 00 */	addi r4, r4, 0x2800
 /* 801753B8 001721B8  48 00 09 E5 */	bl pre_render_buckets_esc__0_30ptank_pool__pos_color_size_rot_esc__1___28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_13system_bucketPQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_13system_bucketf
-/* 801753BC 001721BC  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_
+/* 801753BC 001721BC  38 6D D3 98 */	addi r3, r13, buckets_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21
 /* 801753C0 001721C0  3C 80 80 39 */	lis r4, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@ha
 /* 801753C4 001721C4  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 801753C8 001721C8  38 84 5A A0 */	addi r4, r4, buckets__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@l
@@ -625,11 +625,11 @@ xParticleBatchAddSystem__FRC20xParticleBatchSystem:
 /* 8017540C 0017220C  38 04 3A A0 */	addi r0, r4, systems__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@l
 /* 80175410 00172210  7C 64 1B 78 */	mr r4, r3
 /* 80175414 00172214  BF C1 00 08 */	stmw r30, 8(r1)
-/* 80175418 00172218  83 ED D3 94 */	lwz r31, systems_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80175418 00172218  83 ED D3 94 */	lwz r31, systems_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 8017541C 0017221C  38 DF 00 01 */	addi r6, r31, 1
 /* 80175420 00172220  57 E5 30 32 */	slwi r5, r31, 6
 /* 80175424 00172224  7F C0 2A 14 */	add r30, r0, r5
-/* 80175428 00172228  90 CD D3 94 */	stw r6, systems_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80175428 00172228  90 CD D3 94 */	stw r6, systems_size__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 8017542C 0017222C  7F C3 F3 78 */	mr r3, r30
 /* 80175430 00172230  4B FF F8 59 */	bl create_system__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FRQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_15internal_systemRC20xParticleBatchSystem
 /* 80175434 00172234  7F C3 F3 78 */	mr r3, r30
@@ -664,7 +664,7 @@ xParticleBatchReplaceSystem__FiRC20xParticleBatchSystem:
 /* 80175490 00172290  41 82 00 1C */	beq lbl_801754AC
 /* 80175494 00172294  7F E3 FB 78 */	mr r3, r31
 /* 80175498 00172298  4B FF FA A9 */	bl clear_system__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_FRQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_15internal_system
-/* 8017549C 0017229C  80 6D A1 B8 */	lwz r3, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8017549C 0017229C  80 6D A1 B8 */	lwz r3, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 801754A0 001722A0  80 1F 00 1C */	lwz r0, 0x1c(r31)
 /* 801754A4 001722A4  7C 03 03 D6 */	divw r0, r3, r0
 /* 801754A8 001722A8  90 1F 00 34 */	stw r0, 0x34(r31)
@@ -765,7 +765,7 @@ lbl_801755DC:
 /* 801755EC 001723EC  41 82 00 08 */	beq lbl_801755F4
 /* 801755F0 001723F0  48 00 00 50 */	b lbl_80175640
 lbl_801755F4:
-/* 801755F4 001723F4  80 0D D3 8C */	lwz r0, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801755F4 001723F4  80 0D D3 8C */	lwz r0, head_free_block__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 801755F8 001723F8  28 00 00 00 */	cmplwi r0, 0
 /* 801755FC 001723FC  40 82 00 0C */	bne lbl_80175608
 /* 80175600 00172400  38 60 00 00 */	li r3, 0
@@ -915,7 +915,7 @@ create_system__19xParticleBatchGroupFRC20xParticleBatchSystem:
 /* 801757E4 001725E4  7F C5 F3 78 */	mr r5, r30
 /* 801757E8 001725E8  80 83 00 00 */	lwz r4, 0(r3)
 /* 801757EC 001725EC  80 63 00 04 */	lwz r3, 4(r3)
-/* 801757F0 001725F0  88 0D D3 BC */	lbz r0, _esc__2_1295-_SDA_BASE_(r13)
+/* 801757F0 001725F0  88 0D D3 BC */	lbz r0, _esc__2_1295@sda21(r13)
 /* 801757F4 001725F4  7F E4 1A 14 */	add r31, r4, r3
 /* 801757F8 001725F8  98 01 00 08 */	stb r0, 8(r1)
 /* 801757FC 001725FC  7F E4 FB 78 */	mr r4, r31
@@ -1514,9 +1514,9 @@ lbl_80175FAC:
 
 .global __sinit_xParticleBatch_cpp
 __sinit_xParticleBatch_cpp:
-/* 80175FCC 00172DCC  80 0D A1 B8 */	lwz r0, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80175FCC 00172DCC  80 0D A1 B8 */	lwz r0, BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 80175FD0 00172DD0  54 00 28 34 */	slwi r0, r0, 5
-/* 80175FD4 00172DD4  90 0D D3 88 */	stw r0, BUFFER_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80175FD4 00172DD4  90 0D D3 88 */	stw r0, BUFFER_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_@sda21(r13)
 /* 80175FD8 00172DD8  4E 80 00 20 */	blr 
 
 .global quicksort_esc__0_Q228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_15compare_buckets_esc__1___FPvUlUlQ228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_15compare_buckets

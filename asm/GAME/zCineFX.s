@@ -120,16 +120,16 @@ zCineFXStartup__Fv:
 /* 801EA048 001E6E48  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801EA04C 001E6E4C  7C 08 02 A6 */	mflr r0
 /* 801EA050 001E6E50  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801EA054 001E6E54  88 0D DC 54 */	lbz r0, init_esc__7_1082-_SDA_BASE_(r13)
+/* 801EA054 001E6E54  88 0D DC 54 */	lbz r0, init_esc__7_1082@sda21(r13)
 /* 801EA058 001E6E58  7C 00 07 75 */	extsb. r0, r0
 /* 801EA05C 001E6E5C  40 82 00 14 */	bne lbl_801EA070
-/* 801EA060 001E6E60  38 6D DC 58 */	addi r3, r13, nozey_npc_cinematics_esc__7_1081-_SDA_BASE_
+/* 801EA060 001E6E60  38 6D DC 58 */	addi r3, r13, nozey_npc_cinematics_esc__7_1081@sda21
 /* 801EA064 001E6E64  48 00 00 29 */	bl __ct__11NCINBeNoseyFv
 /* 801EA068 001E6E68  38 00 00 01 */	li r0, 1
-/* 801EA06C 001E6E6C  98 0D DC 54 */	stb r0, init_esc__7_1082-_SDA_BASE_(r13)
+/* 801EA06C 001E6E6C  98 0D DC 54 */	stb r0, init_esc__7_1082@sda21(r13)
 lbl_801EA070:
-/* 801EA070 001E6E70  38 0D DC 58 */	addi r0, r13, nozey_npc_cinematics_esc__7_1081-_SDA_BASE_
-/* 801EA074 001E6E74  90 0D DC 50 */	stw r0, g_noz_ncin-_SDA_BASE_(r13)
+/* 801EA070 001E6E70  38 0D DC 58 */	addi r0, r13, nozey_npc_cinematics_esc__7_1081@sda21
+/* 801EA074 001E6E74  90 0D DC 50 */	stw r0, g_noz_ncin@sda21(r13)
 /* 801EA078 001E6E78  48 00 04 45 */	bl AddTables__Fv
 /* 801EA07C 001E6E7C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801EA080 001E6E80  7C 08 03 A6 */	mtlr r0
@@ -144,7 +144,7 @@ __ct__11NCINBeNoseyFv:
 /* 801EA098 001E6E98  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801EA09C 001E6E9C  7C 7F 1B 78 */	mr r31, r3
 /* 801EA0A0 001E6EA0  48 00 00 25 */	bl __ct__9XCSNNoseyFv
-/* 801EA0A4 001E6EA4  38 0D AD 20 */	addi r0, r13, __vt__11NCINBeNosey-_SDA_BASE_
+/* 801EA0A4 001E6EA4  38 0D AD 20 */	addi r0, r13, __vt__11NCINBeNosey@sda21
 /* 801EA0A8 001E6EA8  7F E3 FB 78 */	mr r3, r31
 /* 801EA0AC 001E6EAC  90 1F 00 00 */	stw r0, 0(r31)
 /* 801EA0B0 001E6EB0  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -155,7 +155,7 @@ __ct__11NCINBeNoseyFv:
 
 .global __ct__9XCSNNoseyFv
 __ct__9XCSNNoseyFv:
-/* 801EA0C4 001E6EC4  38 0D AD 10 */	addi r0, r13, __vt__9XCSNNosey-_SDA_BASE_
+/* 801EA0C4 001E6EC4  38 0D AD 10 */	addi r0, r13, __vt__9XCSNNosey@sda21
 /* 801EA0C8 001E6EC8  90 03 00 00 */	stw r0, 0(r3)
 /* 801EA0CC 001E6ECC  4E 80 00 20 */	blr 
 
@@ -253,7 +253,7 @@ lbl_801EA1D4:
 /* 801EA1E4 001E6FE4  41 82 00 08 */	beq lbl_801EA1EC
 /* 801EA1E8 001E6FE8  48 00 03 29 */	bl NoseyClear__9xCutsceneFv
 lbl_801EA1EC:
-/* 801EA1EC 001E6FEC  80 6D DC 50 */	lwz r3, g_noz_ncin-_SDA_BASE_(r13)
+/* 801EA1EC 001E6FEC  80 6D DC 50 */	lwz r3, g_noz_ncin@sda21(r13)
 /* 801EA1F0 001E6FF0  7F A4 EB 78 */	mr r4, r29
 /* 801EA1F4 001E6FF4  7F C5 F3 78 */	mr r5, r30
 /* 801EA1F8 001E6FF8  38 C0 00 03 */	li r6, 3
@@ -307,7 +307,7 @@ zCineFXCutsceneDone__FPC6xScenefPC12zCutsceneMgr:
 /* 801EA294 001E7094  41 82 00 08 */	beq lbl_801EA29C
 /* 801EA298 001E7098  48 00 02 79 */	bl NoseyClear__9xCutsceneFv
 lbl_801EA29C:
-/* 801EA29C 001E709C  80 6D DC 50 */	lwz r3, g_noz_ncin-_SDA_BASE_(r13)
+/* 801EA29C 001E709C  80 6D DC 50 */	lwz r3, g_noz_ncin@sda21(r13)
 /* 801EA2A0 001E70A0  48 00 00 69 */	bl Done__11NCINBeNoseyFv
 /* 801EA2A4 001E70A4  48 00 00 44 */	b lbl_801EA2E8
 lbl_801EA2A8:
@@ -448,10 +448,10 @@ lbl_801EA474:
 lbl_801EA480:
 /* 801EA480 001E7280  2C 00 00 00 */	cmpwi r0, 0
 /* 801EA484 001E7284  41 82 00 1C */	beq lbl_801EA4A0
-/* 801EA488 001E7288  80 8D DC 50 */	lwz r4, g_noz_ncin-_SDA_BASE_(r13)
+/* 801EA488 001E7288  80 8D DC 50 */	lwz r4, g_noz_ncin@sda21(r13)
 /* 801EA48C 001E728C  7F E3 FB 78 */	mr r3, r31
 /* 801EA490 001E7290  90 04 00 08 */	stw r0, 8(r4)
-/* 801EA494 001E7294  80 8D DC 50 */	lwz r4, g_noz_ncin-_SDA_BASE_(r13)
+/* 801EA494 001E7294  80 8D DC 50 */	lwz r4, g_noz_ncin@sda21(r13)
 /* 801EA498 001E7298  48 00 00 9D */	bl NoseySet__9xCutsceneFP9XCSNNosey
 /* 801EA49C 001E729C  48 00 00 0C */	b lbl_801EA4A8
 lbl_801EA4A0:

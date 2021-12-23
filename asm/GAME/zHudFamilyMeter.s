@@ -96,11 +96,11 @@ __ct__Q24zHud11FamilyMeterFv:
 /* 801F3914 001F0714  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801F3918 001F0718  7C 7F 1B 78 */	mr r31, r3
 /* 801F391C 001F071C  4B ED E2 9D */	bl __ct__Q24zHud11hud_elementFv
-/* 801F3920 001F0720  38 0D B3 64 */	addi r0, r13, __vt__Q24zHud11FamilyMeter-_SDA_BASE_
+/* 801F3920 001F0720  38 0D B3 64 */	addi r0, r13, __vt__Q24zHud11FamilyMeter@sda21
 /* 801F3924 001F0724  38 80 00 00 */	li r4, 0
 /* 801F3928 001F0728  90 1F 00 14 */	stw r0, 0x14(r31)
 /* 801F392C 001F072C  38 00 FF FF */	li r0, -1
-/* 801F3930 001F0730  C0 02 D8 48 */	lfs f0, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3930 001F0730  C0 02 D8 48 */	lfs f0, _esc__2_883_1@sda21(r2)
 /* 801F3934 001F0734  7F E3 FB 78 */	mr r3, r31
 /* 801F3938 001F0738  90 9F 00 18 */	stw r4, 0x18(r31)
 /* 801F393C 001F073C  90 9F 00 1C */	stw r4, 0x1c(r31)
@@ -159,13 +159,13 @@ setup__Q24zHud11FamilyMeterFv:
 /* 801F39F8 001F07F8  38 C0 00 0C */	li r6, 0xc
 /* 801F39FC 001F07FC  80 7E 00 18 */	lwz r3, 0x18(r30)
 /* 801F3A00 001F0800  4B FB 54 1D */	bl init_layers__Q24xhud12image_widgetFUsUsUs
-/* 801F3A04 001F0804  C0 62 D8 4C */	lfs f3, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3A04 001F0804  C0 62 D8 4C */	lfs f3, _esc__2_895_0@sda21(r2)
 /* 801F3A08 001F0808  38 A1 00 10 */	addi r5, r1, 0x10
-/* 801F3A0C 001F080C  C0 42 D8 50 */	lfs f2, _esc__2_896_0-_SDA2_BASE_(r2)
+/* 801F3A0C 001F080C  C0 42 D8 50 */	lfs f2, _esc__2_896_0@sda21(r2)
 /* 801F3A10 001F0810  38 C1 00 08 */	addi r6, r1, 8
-/* 801F3A14 001F0814  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3A14 001F0814  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3A18 001F0818  38 80 00 00 */	li r4, 0
-/* 801F3A1C 001F081C  C0 02 D8 54 */	lfs f0, _esc__2_897_0-_SDA2_BASE_(r2)
+/* 801F3A1C 001F081C  C0 02 D8 54 */	lfs f0, _esc__2_897_0@sda21(r2)
 /* 801F3A20 001F0820  D0 61 00 10 */	stfs f3, 0x10(r1)
 /* 801F3A24 001F0824  D0 41 00 14 */	stfs f2, 0x14(r1)
 /* 801F3A28 001F0828  D0 21 00 08 */	stfs f1, 8(r1)
@@ -179,19 +179,19 @@ setup__Q24zHud11FamilyMeterFv:
 /* 801F3A48 001F0848  4B FB 58 A9 */	bl set_layer_type__Q24xhud12image_widgetFUiQ34xhud12image_widget10RENDERTYPEQ34xhud12image_widget11LAYER_FLAGS
 /* 801F3A4C 001F084C  80 7E 00 18 */	lwz r3, 0x18(r30)
 /* 801F3A50 001F0850  38 80 00 00 */	li r4, 0
-/* 801F3A54 001F0854  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3A54 001F0854  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3A58 001F0858  4B FB 55 89 */	bl set_layer_value__Q24xhud12image_widgetFUif
 /* 801F3A5C 001F085C  80 7E 00 18 */	lwz r3, 0x18(r30)
 /* 801F3A60 001F0860  38 80 00 00 */	li r4, 0
-/* 801F3A64 001F0864  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3A64 001F0864  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3A68 001F0868  4B FB 57 7D */	bl set_layer_alpha__Q24xhud12image_widgetFUif
-/* 801F3A6C 001F086C  C0 62 D8 4C */	lfs f3, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3A6C 001F086C  C0 62 D8 4C */	lfs f3, _esc__2_895_0@sda21(r2)
 /* 801F3A70 001F0870  38 A1 00 10 */	addi r5, r1, 0x10
-/* 801F3A74 001F0874  C0 42 D8 58 */	lfs f2, _esc__2_898_0-_SDA2_BASE_(r2)
+/* 801F3A74 001F0874  C0 42 D8 58 */	lfs f2, _esc__2_898_0@sda21(r2)
 /* 801F3A78 001F0878  38 C1 00 08 */	addi r6, r1, 8
-/* 801F3A7C 001F087C  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3A7C 001F087C  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3A80 001F0880  38 80 00 01 */	li r4, 1
-/* 801F3A84 001F0884  C0 02 D8 5C */	lfs f0, _esc__2_899-_SDA2_BASE_(r2)
+/* 801F3A84 001F0884  C0 02 D8 5C */	lfs f0, _esc__2_899@sda21(r2)
 /* 801F3A88 001F0888  D0 61 00 10 */	stfs f3, 0x10(r1)
 /* 801F3A8C 001F088C  D0 41 00 14 */	stfs f2, 0x14(r1)
 /* 801F3A90 001F0890  D0 21 00 08 */	stfs f1, 8(r1)
@@ -205,29 +205,29 @@ setup__Q24zHud11FamilyMeterFv:
 /* 801F3AB0 001F08B0  4B FB 58 41 */	bl set_layer_type__Q24xhud12image_widgetFUiQ34xhud12image_widget10RENDERTYPEQ34xhud12image_widget11LAYER_FLAGS
 /* 801F3AB4 001F08B4  80 7E 00 18 */	lwz r3, 0x18(r30)
 /* 801F3AB8 001F08B8  38 80 00 01 */	li r4, 1
-/* 801F3ABC 001F08BC  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3ABC 001F08BC  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3AC0 001F08C0  4B FB 55 21 */	bl set_layer_value__Q24xhud12image_widgetFUif
 /* 801F3AC4 001F08C4  80 7E 00 18 */	lwz r3, 0x18(r30)
 /* 801F3AC8 001F08C8  38 80 00 01 */	li r4, 1
-/* 801F3ACC 001F08CC  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3ACC 001F08CC  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3AD0 001F08D0  4B FB 57 15 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 801F3AD4 001F08D4  80 7E 00 18 */	lwz r3, 0x18(r30)
 /* 801F3AD8 001F08D8  38 80 00 01 */	li r4, 1
-/* 801F3ADC 001F08DC  C0 2D DF 80 */	lfs f1, fMinHealthBar__4zHud-_SDA_BASE_(r13)
-/* 801F3AE0 001F08E0  C0 4D B3 60 */	lfs f2, fMaxHealthBar__4zHud-_SDA_BASE_(r13)
+/* 801F3ADC 001F08DC  C0 2D DF 80 */	lfs f1, fMinHealthBar__4zHud@sda21(r13)
+/* 801F3AE0 001F08E0  C0 4D B3 60 */	lfs f2, fMaxHealthBar__4zHud@sda21(r13)
 /* 801F3AE4 001F08E4  4B FB 54 4D */	bl set_layer_minmax__Q24xhud12image_widgetFUiff
 /* 801F3AE8 001F08E8  80 7E 00 1C */	lwz r3, 0x1c(r30)
 /* 801F3AEC 001F08EC  38 80 00 03 */	li r4, 3
 /* 801F3AF0 001F08F0  38 A0 00 0C */	li r5, 0xc
 /* 801F3AF4 001F08F4  38 C0 00 12 */	li r6, 0x12
 /* 801F3AF8 001F08F8  4B FB 53 25 */	bl init_layers__Q24xhud12image_widgetFUsUsUs
-/* 801F3AFC 001F08FC  C0 62 D8 60 */	lfs f3, _esc__2_900-_SDA2_BASE_(r2)
+/* 801F3AFC 001F08FC  C0 62 D8 60 */	lfs f3, _esc__2_900@sda21(r2)
 /* 801F3B00 001F0900  38 A1 00 10 */	addi r5, r1, 0x10
-/* 801F3B04 001F0904  C0 42 D8 64 */	lfs f2, _esc__2_901-_SDA2_BASE_(r2)
+/* 801F3B04 001F0904  C0 42 D8 64 */	lfs f2, _esc__2_901@sda21(r2)
 /* 801F3B08 001F0908  38 C1 00 08 */	addi r6, r1, 8
-/* 801F3B0C 001F090C  C0 22 D8 68 */	lfs f1, _esc__2_902_2-_SDA2_BASE_(r2)
+/* 801F3B0C 001F090C  C0 22 D8 68 */	lfs f1, _esc__2_902_2@sda21(r2)
 /* 801F3B10 001F0910  38 80 00 00 */	li r4, 0
-/* 801F3B14 001F0914  C0 02 D8 48 */	lfs f0, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3B14 001F0914  C0 02 D8 48 */	lfs f0, _esc__2_883_1@sda21(r2)
 /* 801F3B18 001F0918  D0 61 00 10 */	stfs f3, 0x10(r1)
 /* 801F3B1C 001F091C  D0 41 00 14 */	stfs f2, 0x14(r1)
 /* 801F3B20 001F0920  D0 21 00 08 */	stfs f1, 8(r1)
@@ -241,24 +241,24 @@ setup__Q24zHud11FamilyMeterFv:
 /* 801F3B40 001F0940  4B FB 57 B1 */	bl set_layer_type__Q24xhud12image_widgetFUiQ34xhud12image_widget10RENDERTYPEQ34xhud12image_widget11LAYER_FLAGS
 /* 801F3B44 001F0944  80 7E 00 1C */	lwz r3, 0x1c(r30)
 /* 801F3B48 001F0948  38 80 00 00 */	li r4, 0
-/* 801F3B4C 001F094C  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3B4C 001F094C  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3B50 001F0950  4B FB 54 91 */	bl set_layer_value__Q24xhud12image_widgetFUif
 /* 801F3B54 001F0954  80 7E 00 1C */	lwz r3, 0x1c(r30)
 /* 801F3B58 001F0958  38 80 00 00 */	li r4, 0
-/* 801F3B5C 001F095C  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3B5C 001F095C  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3B60 001F0960  4B FB 56 85 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
-/* 801F3B64 001F0964  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3B64 001F0964  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3B68 001F0968  38 80 00 00 */	li r4, 0
 /* 801F3B6C 001F096C  80 7E 00 1C */	lwz r3, 0x1c(r30)
 /* 801F3B70 001F0970  FC 40 08 90 */	fmr f2, f1
 /* 801F3B74 001F0974  4B FB 55 C9 */	bl set_layer_scale__Q24xhud12image_widgetFUiff
-/* 801F3B78 001F0978  C0 62 D8 6C */	lfs f3, _esc__2_903_2-_SDA2_BASE_(r2)
+/* 801F3B78 001F0978  C0 62 D8 6C */	lfs f3, _esc__2_903_2@sda21(r2)
 /* 801F3B7C 001F097C  38 A1 00 10 */	addi r5, r1, 0x10
-/* 801F3B80 001F0980  C0 42 D8 5C */	lfs f2, _esc__2_899-_SDA2_BASE_(r2)
+/* 801F3B80 001F0980  C0 42 D8 5C */	lfs f2, _esc__2_899@sda21(r2)
 /* 801F3B84 001F0984  38 C1 00 08 */	addi r6, r1, 8
-/* 801F3B88 001F0988  C0 22 D8 70 */	lfs f1, _esc__2_904_1-_SDA2_BASE_(r2)
+/* 801F3B88 001F0988  C0 22 D8 70 */	lfs f1, _esc__2_904_1@sda21(r2)
 /* 801F3B8C 001F098C  38 80 00 01 */	li r4, 1
-/* 801F3B90 001F0990  C0 02 D8 74 */	lfs f0, _esc__2_905_3-_SDA2_BASE_(r2)
+/* 801F3B90 001F0990  C0 02 D8 74 */	lfs f0, _esc__2_905_3@sda21(r2)
 /* 801F3B94 001F0994  D0 61 00 10 */	stfs f3, 0x10(r1)
 /* 801F3B98 001F0998  D0 41 00 14 */	stfs f2, 0x14(r1)
 /* 801F3B9C 001F099C  D0 21 00 08 */	stfs f1, 8(r1)
@@ -272,24 +272,24 @@ setup__Q24zHud11FamilyMeterFv:
 /* 801F3BBC 001F09BC  4B FB 57 35 */	bl set_layer_type__Q24xhud12image_widgetFUiQ34xhud12image_widget10RENDERTYPEQ34xhud12image_widget11LAYER_FLAGS
 /* 801F3BC0 001F09C0  80 7E 00 1C */	lwz r3, 0x1c(r30)
 /* 801F3BC4 001F09C4  38 80 00 01 */	li r4, 1
-/* 801F3BC8 001F09C8  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3BC8 001F09C8  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3BCC 001F09CC  4B FB 54 15 */	bl set_layer_value__Q24xhud12image_widgetFUif
 /* 801F3BD0 001F09D0  80 7E 00 1C */	lwz r3, 0x1c(r30)
 /* 801F3BD4 001F09D4  38 80 00 01 */	li r4, 1
-/* 801F3BD8 001F09D8  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3BD8 001F09D8  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3BDC 001F09DC  4B FB 56 09 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
-/* 801F3BE0 001F09E0  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3BE0 001F09E0  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3BE4 001F09E4  38 80 00 01 */	li r4, 1
 /* 801F3BE8 001F09E8  80 7E 00 1C */	lwz r3, 0x1c(r30)
 /* 801F3BEC 001F09EC  FC 40 08 90 */	fmr f2, f1
 /* 801F3BF0 001F09F0  4B FB 55 4D */	bl set_layer_scale__Q24xhud12image_widgetFUiff
-/* 801F3BF4 001F09F4  C0 62 D8 78 */	lfs f3, _esc__2_906_2-_SDA2_BASE_(r2)
+/* 801F3BF4 001F09F4  C0 62 D8 78 */	lfs f3, _esc__2_906_2@sda21(r2)
 /* 801F3BF8 001F09F8  38 A1 00 10 */	addi r5, r1, 0x10
-/* 801F3BFC 001F09FC  C0 42 D8 7C */	lfs f2, _esc__2_907_4-_SDA2_BASE_(r2)
+/* 801F3BFC 001F09FC  C0 42 D8 7C */	lfs f2, _esc__2_907_4@sda21(r2)
 /* 801F3C00 001F0A00  38 C1 00 08 */	addi r6, r1, 8
-/* 801F3C04 001F0A04  C0 22 D8 80 */	lfs f1, _esc__2_908_1-_SDA2_BASE_(r2)
+/* 801F3C04 001F0A04  C0 22 D8 80 */	lfs f1, _esc__2_908_1@sda21(r2)
 /* 801F3C08 001F0A08  38 80 00 02 */	li r4, 2
-/* 801F3C0C 001F0A0C  C0 02 D8 84 */	lfs f0, _esc__2_909_1-_SDA2_BASE_(r2)
+/* 801F3C0C 001F0A0C  C0 02 D8 84 */	lfs f0, _esc__2_909_1@sda21(r2)
 /* 801F3C10 001F0A10  D0 61 00 10 */	stfs f3, 0x10(r1)
 /* 801F3C14 001F0A14  D0 41 00 14 */	stfs f2, 0x14(r1)
 /* 801F3C18 001F0A18  D0 21 00 08 */	stfs f1, 8(r1)
@@ -303,13 +303,13 @@ setup__Q24zHud11FamilyMeterFv:
 /* 801F3C38 001F0A38  4B FB 56 B9 */	bl set_layer_type__Q24xhud12image_widgetFUiQ34xhud12image_widget10RENDERTYPEQ34xhud12image_widget11LAYER_FLAGS
 /* 801F3C3C 001F0A3C  80 7E 00 1C */	lwz r3, 0x1c(r30)
 /* 801F3C40 001F0A40  38 80 00 02 */	li r4, 2
-/* 801F3C44 001F0A44  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3C44 001F0A44  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3C48 001F0A48  4B FB 53 99 */	bl set_layer_value__Q24xhud12image_widgetFUif
 /* 801F3C4C 001F0A4C  80 7E 00 1C */	lwz r3, 0x1c(r30)
 /* 801F3C50 001F0A50  38 80 00 02 */	li r4, 2
-/* 801F3C54 001F0A54  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3C54 001F0A54  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3C58 001F0A58  4B FB 55 8D */	bl set_layer_alpha__Q24xhud12image_widgetFUif
-/* 801F3C5C 001F0A5C  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3C5C 001F0A5C  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3C60 001F0A60  38 80 00 02 */	li r4, 2
 /* 801F3C64 001F0A64  80 7E 00 1C */	lwz r3, 0x1c(r30)
 /* 801F3C68 001F0A68  FC 40 08 90 */	fmr f2, f1
@@ -332,7 +332,7 @@ setup__Q24zHud11FamilyMeterFv:
 /* 801F3CAC 001F0AAC  7F C3 F3 78 */	mr r3, r30
 /* 801F3CB0 001F0AB0  38 80 FF FF */	li r4, -1
 /* 801F3CB4 001F0AB4  48 00 01 49 */	bl set_head__Q24zHud11FamilyMeterFQ34zHud11FamilyMeter21eFamilyMeterHeadLayer
-/* 801F3CB8 001F0AB8  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3CB8 001F0AB8  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3CBC 001F0ABC  7F C3 F3 78 */	mr r3, r30
 /* 801F3CC0 001F0AC0  48 00 02 B5 */	bl set_health__Q24zHud11FamilyMeterFf
 /* 801F3CC4 001F0AC4  BB C1 00 18 */	lmw r30, 0x18(r1)
@@ -454,77 +454,77 @@ lbl_801F3E34:
 lbl_801F3E40:
 /* 801F3E40 001F0C40  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3E44 001F0C44  38 80 00 00 */	li r4, 0
-/* 801F3E48 001F0C48  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3E48 001F0C48  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3E4C 001F0C4C  4B FB 53 99 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 801F3E50 001F0C50  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3E54 001F0C54  38 80 00 01 */	li r4, 1
-/* 801F3E58 001F0C58  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3E58 001F0C58  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3E5C 001F0C5C  4B FB 53 89 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 801F3E60 001F0C60  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3E64 001F0C64  38 80 00 02 */	li r4, 2
-/* 801F3E68 001F0C68  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3E68 001F0C68  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3E6C 001F0C6C  4B FB 53 79 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 801F3E70 001F0C70  48 00 00 F0 */	b lbl_801F3F60
 lbl_801F3E74:
 /* 801F3E74 001F0C74  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3E78 001F0C78  38 80 00 00 */	li r4, 0
-/* 801F3E7C 001F0C7C  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3E7C 001F0C7C  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3E80 001F0C80  4B FB 53 65 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 801F3E84 001F0C84  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3E88 001F0C88  38 80 00 01 */	li r4, 1
-/* 801F3E8C 001F0C8C  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3E8C 001F0C8C  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3E90 001F0C90  4B FB 53 55 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 801F3E94 001F0C94  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3E98 001F0C98  38 80 00 02 */	li r4, 2
-/* 801F3E9C 001F0C9C  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3E9C 001F0C9C  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3EA0 001F0CA0  4B FB 53 45 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
-/* 801F3EA4 001F0CA4  C0 22 D8 88 */	lfs f1, _esc__2_954_5-_SDA2_BASE_(r2)
+/* 801F3EA4 001F0CA4  C0 22 D8 88 */	lfs f1, _esc__2_954_5@sda21(r2)
 /* 801F3EA8 001F0CA8  38 80 00 01 */	li r4, 1
-/* 801F3EAC 001F0CAC  C0 42 D8 8C */	lfs f2, _esc__2_955_3-_SDA2_BASE_(r2)
-/* 801F3EB0 001F0CB0  D0 2D DF 80 */	stfs f1, fMinHealthBar__4zHud-_SDA_BASE_(r13)
-/* 801F3EB4 001F0CB4  D0 4D B3 60 */	stfs f2, fMaxHealthBar__4zHud-_SDA_BASE_(r13)
+/* 801F3EAC 001F0CAC  C0 42 D8 8C */	lfs f2, _esc__2_955_3@sda21(r2)
+/* 801F3EB0 001F0CB0  D0 2D DF 80 */	stfs f1, fMinHealthBar__4zHud@sda21(r13)
+/* 801F3EB4 001F0CB4  D0 4D B3 60 */	stfs f2, fMaxHealthBar__4zHud@sda21(r13)
 /* 801F3EB8 001F0CB8  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801F3EBC 001F0CBC  4B FB 50 75 */	bl set_layer_minmax__Q24xhud12image_widgetFUiff
 /* 801F3EC0 001F0CC0  48 00 00 A0 */	b lbl_801F3F60
 lbl_801F3EC4:
 /* 801F3EC4 001F0CC4  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3EC8 001F0CC8  38 80 00 00 */	li r4, 0
-/* 801F3ECC 001F0CCC  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3ECC 001F0CCC  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3ED0 001F0CD0  4B FB 53 15 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 801F3ED4 001F0CD4  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3ED8 001F0CD8  38 80 00 01 */	li r4, 1
-/* 801F3EDC 001F0CDC  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3EDC 001F0CDC  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3EE0 001F0CE0  4B FB 53 05 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 801F3EE4 001F0CE4  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3EE8 001F0CE8  38 80 00 02 */	li r4, 2
-/* 801F3EEC 001F0CEC  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3EEC 001F0CEC  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3EF0 001F0CF0  4B FB 52 F5 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
-/* 801F3EF4 001F0CF4  C0 22 D8 90 */	lfs f1, _esc__2_956_3-_SDA2_BASE_(r2)
+/* 801F3EF4 001F0CF4  C0 22 D8 90 */	lfs f1, _esc__2_956_3@sda21(r2)
 /* 801F3EF8 001F0CF8  38 80 00 01 */	li r4, 1
-/* 801F3EFC 001F0CFC  C0 42 D8 8C */	lfs f2, _esc__2_955_3-_SDA2_BASE_(r2)
-/* 801F3F00 001F0D00  D0 2D DF 80 */	stfs f1, fMinHealthBar__4zHud-_SDA_BASE_(r13)
-/* 801F3F04 001F0D04  D0 4D B3 60 */	stfs f2, fMaxHealthBar__4zHud-_SDA_BASE_(r13)
+/* 801F3EFC 001F0CFC  C0 42 D8 8C */	lfs f2, _esc__2_955_3@sda21(r2)
+/* 801F3F00 001F0D00  D0 2D DF 80 */	stfs f1, fMinHealthBar__4zHud@sda21(r13)
+/* 801F3F04 001F0D04  D0 4D B3 60 */	stfs f2, fMaxHealthBar__4zHud@sda21(r13)
 /* 801F3F08 001F0D08  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801F3F0C 001F0D0C  4B FB 50 25 */	bl set_layer_minmax__Q24xhud12image_widgetFUiff
 /* 801F3F10 001F0D10  48 00 00 50 */	b lbl_801F3F60
 lbl_801F3F14:
 /* 801F3F14 001F0D14  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3F18 001F0D18  38 80 00 00 */	li r4, 0
-/* 801F3F1C 001F0D1C  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3F1C 001F0D1C  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3F20 001F0D20  4B FB 52 C5 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 801F3F24 001F0D24  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3F28 001F0D28  38 80 00 01 */	li r4, 1
-/* 801F3F2C 001F0D2C  C0 22 D8 4C */	lfs f1, _esc__2_895_0-_SDA2_BASE_(r2)
+/* 801F3F2C 001F0D2C  C0 22 D8 4C */	lfs f1, _esc__2_895_0@sda21(r2)
 /* 801F3F30 001F0D30  4B FB 52 B5 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
 /* 801F3F34 001F0D34  80 7F 00 1C */	lwz r3, 0x1c(r31)
 /* 801F3F38 001F0D38  38 80 00 02 */	li r4, 2
-/* 801F3F3C 001F0D3C  C0 22 D8 48 */	lfs f1, _esc__2_883_1-_SDA2_BASE_(r2)
+/* 801F3F3C 001F0D3C  C0 22 D8 48 */	lfs f1, _esc__2_883_1@sda21(r2)
 /* 801F3F40 001F0D40  4B FB 52 A5 */	bl set_layer_alpha__Q24xhud12image_widgetFUif
-/* 801F3F44 001F0D44  C0 22 D8 94 */	lfs f1, _esc__2_957_3-_SDA2_BASE_(r2)
+/* 801F3F44 001F0D44  C0 22 D8 94 */	lfs f1, _esc__2_957_3@sda21(r2)
 /* 801F3F48 001F0D48  38 80 00 01 */	li r4, 1
-/* 801F3F4C 001F0D4C  C0 42 D8 8C */	lfs f2, _esc__2_955_3-_SDA2_BASE_(r2)
-/* 801F3F50 001F0D50  D0 2D DF 80 */	stfs f1, fMinHealthBar__4zHud-_SDA_BASE_(r13)
-/* 801F3F54 001F0D54  D0 4D B3 60 */	stfs f2, fMaxHealthBar__4zHud-_SDA_BASE_(r13)
+/* 801F3F4C 001F0D4C  C0 42 D8 8C */	lfs f2, _esc__2_955_3@sda21(r2)
+/* 801F3F50 001F0D50  D0 2D DF 80 */	stfs f1, fMinHealthBar__4zHud@sda21(r13)
+/* 801F3F54 001F0D54  D0 4D B3 60 */	stfs f2, fMaxHealthBar__4zHud@sda21(r13)
 /* 801F3F58 001F0D58  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 801F3F5C 001F0D5C  4B FB 4F D5 */	bl set_layer_minmax__Q24xhud12image_widgetFUiff
 lbl_801F3F60:

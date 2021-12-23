@@ -50,10 +50,10 @@ xFFXPoolInit__FUi:
 /* 8002F548 0002C348  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8002F54C 0002C34C  7C 60 1B 78 */	mr r0, r3
 /* 8002F550 0002C350  54 04 20 36 */	slwi r4, r0, 4
-/* 8002F554 0002C354  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
-/* 8002F558 0002C358  90 0D B8 88 */	stw r0, psize-_SDA_BASE_(r13)
+/* 8002F554 0002C354  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
+/* 8002F558 0002C358  90 0D B8 88 */	stw r0, psize@sda21(r13)
 /* 8002F55C 0002C35C  48 01 A6 05 */	bl xMemAlloc__FUiUii
-/* 8002F560 0002C360  90 6D B8 8C */	stw r3, pool-_SDA_BASE_(r13)
+/* 8002F560 0002C360  90 6D B8 8C */	stw r3, pool@sda21(r13)
 /* 8002F564 0002C364  38 00 00 00 */	li r0, 0
 /* 8002F568 0002C368  38 C0 00 01 */	li r6, 1
 /* 8002F56C 0002C36C  38 80 00 10 */	li r4, 0x10
@@ -61,7 +61,7 @@ xFFXPoolInit__FUi:
 /* 8002F574 0002C374  48 00 00 24 */	b lbl_8002F598
 lbl_8002F578:
 /* 8002F578 0002C378  38 06 FF FF */	addi r0, r6, -1
-/* 8002F57C 0002C37C  80 AD B8 8C */	lwz r5, pool-_SDA_BASE_(r13)
+/* 8002F57C 0002C37C  80 AD B8 8C */	lwz r5, pool@sda21(r13)
 /* 8002F580 0002C380  54 03 20 36 */	slwi r3, r0, 4
 /* 8002F584 0002C384  38 C6 00 01 */	addi r6, r6, 1
 /* 8002F588 0002C388  38 04 00 0C */	addi r0, r4, 0xc
@@ -69,14 +69,14 @@ lbl_8002F578:
 /* 8002F590 0002C390  7C 65 1A 14 */	add r3, r5, r3
 /* 8002F594 0002C394  7C 65 01 2E */	stwx r3, r5, r0
 lbl_8002F598:
-/* 8002F598 0002C398  80 6D B8 88 */	lwz r3, psize-_SDA_BASE_(r13)
+/* 8002F598 0002C398  80 6D B8 88 */	lwz r3, psize@sda21(r13)
 /* 8002F59C 0002C39C  7C 06 18 40 */	cmplw r6, r3
 /* 8002F5A0 0002C3A0  41 80 FF D8 */	blt lbl_8002F578
 /* 8002F5A4 0002C3A4  38 03 FF FF */	addi r0, r3, -1
-/* 8002F5A8 0002C3A8  80 6D B8 8C */	lwz r3, pool-_SDA_BASE_(r13)
+/* 8002F5A8 0002C3A8  80 6D B8 8C */	lwz r3, pool@sda21(r13)
 /* 8002F5AC 0002C3AC  54 00 20 36 */	slwi r0, r0, 4
 /* 8002F5B0 0002C3B0  7C 03 02 14 */	add r0, r3, r0
-/* 8002F5B4 0002C3B4  90 0D B8 90 */	stw r0, alist-_SDA_BASE_(r13)
+/* 8002F5B4 0002C3B4  90 0D B8 90 */	stw r0, alist@sda21(r13)
 /* 8002F5B8 0002C3B8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8002F5BC 0002C3BC  7C 08 03 A6 */	mtlr r0
 /* 8002F5C0 0002C3C0  38 21 00 10 */	addi r1, r1, 0x10
@@ -84,21 +84,21 @@ lbl_8002F598:
 
 .global xFFXAlloc__Fv
 xFFXAlloc__Fv:
-/* 8002F5C8 0002C3C8  80 6D B8 90 */	lwz r3, alist-_SDA_BASE_(r13)
+/* 8002F5C8 0002C3C8  80 6D B8 90 */	lwz r3, alist@sda21(r13)
 /* 8002F5CC 0002C3CC  28 03 00 00 */	cmplwi r3, 0
 /* 8002F5D0 0002C3D0  40 82 00 0C */	bne lbl_8002F5DC
 /* 8002F5D4 0002C3D4  38 60 00 00 */	li r3, 0
 /* 8002F5D8 0002C3D8  4E 80 00 20 */	blr 
 lbl_8002F5DC:
 /* 8002F5DC 0002C3DC  80 03 00 0C */	lwz r0, 0xc(r3)
-/* 8002F5E0 0002C3E0  90 0D B8 90 */	stw r0, alist-_SDA_BASE_(r13)
+/* 8002F5E0 0002C3E0  90 0D B8 90 */	stw r0, alist@sda21(r13)
 /* 8002F5E4 0002C3E4  4E 80 00 20 */	blr 
 
 .global xFFXFree__FP4xFFX
 xFFXFree__FP4xFFX:
-/* 8002F5E8 0002C3E8  80 0D B8 90 */	lwz r0, alist-_SDA_BASE_(r13)
+/* 8002F5E8 0002C3E8  80 0D B8 90 */	lwz r0, alist@sda21(r13)
 /* 8002F5EC 0002C3EC  90 03 00 0C */	stw r0, 0xc(r3)
-/* 8002F5F0 0002C3F0  90 6D B8 90 */	stw r3, alist-_SDA_BASE_(r13)
+/* 8002F5F0 0002C3F0  90 6D B8 90 */	stw r3, alist@sda21(r13)
 /* 8002F5F4 0002C3F4  4E 80 00 20 */	blr 
 
 .global xFFXAddEffect__FP4xEntP4xFFX
@@ -223,7 +223,7 @@ xFFXShakeUpdateEnt__FP4xEntP6xScenefPv:
 /* 8002F780 0002C580  FF E0 08 90 */	fmr f31, f1
 /* 8002F784 0002C584  EC 20 07 B2 */	fmuls f1, f0, f30
 /* 8002F788 0002C588  48 04 70 61 */	bl isin__Ff
-/* 8002F78C 0002C58C  C0 42 84 98 */	lfs f2, _esc__2_802-_SDA2_BASE_(r2)
+/* 8002F78C 0002C58C  C0 42 84 98 */	lfs f2, _esc__2_802@sda21(r2)
 /* 8002F790 0002C590  EF E1 07 F2 */	fmuls f31, f1, f31
 /* 8002F794 0002C594  C0 3F 00 14 */	lfs f1, 0x14(r31)
 /* 8002F798 0002C598  FC 02 08 00 */	fcmpu cr0, f2, f1
@@ -276,10 +276,10 @@ xFFXShakePoolInit__FUi:
 /* 8002F83C 0002C63C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8002F840 0002C640  7C 60 1B 78 */	mr r0, r3
 /* 8002F844 0002C644  1C 80 00 24 */	mulli r4, r0, 0x24
-/* 8002F848 0002C648  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
-/* 8002F84C 0002C64C  90 0D B8 94 */	stw r0, shake_psize-_SDA_BASE_(r13)
+/* 8002F848 0002C648  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
+/* 8002F84C 0002C64C  90 0D B8 94 */	stw r0, shake_psize@sda21(r13)
 /* 8002F850 0002C650  48 01 A3 11 */	bl xMemAlloc__FUiUii
-/* 8002F854 0002C654  90 6D B8 98 */	stw r3, shake_pool-_SDA_BASE_(r13)
+/* 8002F854 0002C654  90 6D B8 98 */	stw r3, shake_pool@sda21(r13)
 /* 8002F858 0002C658  38 00 00 00 */	li r0, 0
 /* 8002F85C 0002C65C  38 C0 00 01 */	li r6, 1
 /* 8002F860 0002C660  38 80 00 24 */	li r4, 0x24
@@ -289,20 +289,20 @@ lbl_8002F86C:
 /* 8002F86C 0002C66C  38 66 FF FF */	addi r3, r6, -1
 /* 8002F870 0002C670  38 04 00 20 */	addi r0, r4, 0x20
 /* 8002F874 0002C674  1C 63 00 24 */	mulli r3, r3, 0x24
-/* 8002F878 0002C678  80 AD B8 98 */	lwz r5, shake_pool-_SDA_BASE_(r13)
+/* 8002F878 0002C678  80 AD B8 98 */	lwz r5, shake_pool@sda21(r13)
 /* 8002F87C 0002C67C  38 C6 00 01 */	addi r6, r6, 1
 /* 8002F880 0002C680  38 84 00 24 */	addi r4, r4, 0x24
 /* 8002F884 0002C684  7C 65 1A 14 */	add r3, r5, r3
 /* 8002F888 0002C688  7C 65 01 2E */	stwx r3, r5, r0
 lbl_8002F88C:
-/* 8002F88C 0002C68C  80 6D B8 94 */	lwz r3, shake_psize-_SDA_BASE_(r13)
+/* 8002F88C 0002C68C  80 6D B8 94 */	lwz r3, shake_psize@sda21(r13)
 /* 8002F890 0002C690  7C 06 18 40 */	cmplw r6, r3
 /* 8002F894 0002C694  41 80 FF D8 */	blt lbl_8002F86C
 /* 8002F898 0002C698  38 03 FF FF */	addi r0, r3, -1
-/* 8002F89C 0002C69C  80 6D B8 98 */	lwz r3, shake_pool-_SDA_BASE_(r13)
+/* 8002F89C 0002C69C  80 6D B8 98 */	lwz r3, shake_pool@sda21(r13)
 /* 8002F8A0 0002C6A0  1C 00 00 24 */	mulli r0, r0, 0x24
 /* 8002F8A4 0002C6A4  7C 03 02 14 */	add r0, r3, r0
-/* 8002F8A8 0002C6A8  90 0D B8 9C */	stw r0, shake_alist-_SDA_BASE_(r13)
+/* 8002F8A8 0002C6A8  90 0D B8 9C */	stw r0, shake_alist@sda21(r13)
 /* 8002F8AC 0002C6AC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8002F8B0 0002C6B0  7C 08 03 A6 */	mtlr r0
 /* 8002F8B4 0002C6B4  38 21 00 10 */	addi r1, r1, 0x10
@@ -310,21 +310,21 @@ lbl_8002F88C:
 
 .global xFFXShakeAlloc__Fv
 xFFXShakeAlloc__Fv:
-/* 8002F8BC 0002C6BC  80 6D B8 9C */	lwz r3, shake_alist-_SDA_BASE_(r13)
+/* 8002F8BC 0002C6BC  80 6D B8 9C */	lwz r3, shake_alist@sda21(r13)
 /* 8002F8C0 0002C6C0  28 03 00 00 */	cmplwi r3, 0
 /* 8002F8C4 0002C6C4  40 82 00 0C */	bne lbl_8002F8D0
 /* 8002F8C8 0002C6C8  38 60 00 00 */	li r3, 0
 /* 8002F8CC 0002C6CC  4E 80 00 20 */	blr 
 lbl_8002F8D0:
 /* 8002F8D0 0002C6D0  80 03 00 20 */	lwz r0, 0x20(r3)
-/* 8002F8D4 0002C6D4  90 0D B8 9C */	stw r0, shake_alist-_SDA_BASE_(r13)
+/* 8002F8D4 0002C6D4  90 0D B8 9C */	stw r0, shake_alist@sda21(r13)
 /* 8002F8D8 0002C6D8  4E 80 00 20 */	blr 
 
 .global xFFXShakeFree__FP14xFFXShakeState
 xFFXShakeFree__FP14xFFXShakeState:
-/* 8002F8DC 0002C6DC  80 0D B8 9C */	lwz r0, shake_alist-_SDA_BASE_(r13)
+/* 8002F8DC 0002C6DC  80 0D B8 9C */	lwz r0, shake_alist@sda21(r13)
 /* 8002F8E0 0002C6E0  90 03 00 20 */	stw r0, 0x20(r3)
-/* 8002F8E4 0002C6E4  90 6D B8 9C */	stw r3, shake_alist-_SDA_BASE_(r13)
+/* 8002F8E4 0002C6E4  90 6D B8 9C */	stw r3, shake_alist@sda21(r13)
 /* 8002F8E8 0002C6E8  4E 80 00 20 */	blr 
 
 .global xFFXRotMatchPoolInit__FUi
@@ -335,10 +335,10 @@ xFFXRotMatchPoolInit__FUi:
 /* 8002F8F8 0002C6F8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8002F8FC 0002C6FC  7C 60 1B 78 */	mr r0, r3
 /* 8002F900 0002C700  1C 80 00 44 */	mulli r4, r0, 0x44
-/* 8002F904 0002C704  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
-/* 8002F908 0002C708  90 0D B8 A0 */	stw r0, rot_match_psize-_SDA_BASE_(r13)
+/* 8002F904 0002C704  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
+/* 8002F908 0002C708  90 0D B8 A0 */	stw r0, rot_match_psize@sda21(r13)
 /* 8002F90C 0002C70C  48 01 A2 55 */	bl xMemAlloc__FUiUii
-/* 8002F910 0002C710  90 6D B8 A4 */	stw r3, rot_match_pool-_SDA_BASE_(r13)
+/* 8002F910 0002C710  90 6D B8 A4 */	stw r3, rot_match_pool@sda21(r13)
 /* 8002F914 0002C714  38 00 00 00 */	li r0, 0
 /* 8002F918 0002C718  38 C0 00 01 */	li r6, 1
 /* 8002F91C 0002C71C  38 80 00 44 */	li r4, 0x44
@@ -348,20 +348,20 @@ lbl_8002F928:
 /* 8002F928 0002C728  38 66 FF FF */	addi r3, r6, -1
 /* 8002F92C 0002C72C  38 04 00 40 */	addi r0, r4, 0x40
 /* 8002F930 0002C730  1C 63 00 44 */	mulli r3, r3, 0x44
-/* 8002F934 0002C734  80 AD B8 A4 */	lwz r5, rot_match_pool-_SDA_BASE_(r13)
+/* 8002F934 0002C734  80 AD B8 A4 */	lwz r5, rot_match_pool@sda21(r13)
 /* 8002F938 0002C738  38 C6 00 01 */	addi r6, r6, 1
 /* 8002F93C 0002C73C  38 84 00 44 */	addi r4, r4, 0x44
 /* 8002F940 0002C740  7C 65 1A 14 */	add r3, r5, r3
 /* 8002F944 0002C744  7C 65 01 2E */	stwx r3, r5, r0
 lbl_8002F948:
-/* 8002F948 0002C748  80 6D B8 A0 */	lwz r3, rot_match_psize-_SDA_BASE_(r13)
+/* 8002F948 0002C748  80 6D B8 A0 */	lwz r3, rot_match_psize@sda21(r13)
 /* 8002F94C 0002C74C  7C 06 18 40 */	cmplw r6, r3
 /* 8002F950 0002C750  41 80 FF D8 */	blt lbl_8002F928
 /* 8002F954 0002C754  38 03 FF FF */	addi r0, r3, -1
-/* 8002F958 0002C758  80 6D B8 A4 */	lwz r3, rot_match_pool-_SDA_BASE_(r13)
+/* 8002F958 0002C758  80 6D B8 A4 */	lwz r3, rot_match_pool@sda21(r13)
 /* 8002F95C 0002C75C  1C 00 00 44 */	mulli r0, r0, 0x44
 /* 8002F960 0002C760  7C 03 02 14 */	add r0, r3, r0
-/* 8002F964 0002C764  90 0D B8 A8 */	stw r0, rot_match_alist-_SDA_BASE_(r13)
+/* 8002F964 0002C764  90 0D B8 A8 */	stw r0, rot_match_alist@sda21(r13)
 /* 8002F968 0002C768  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8002F96C 0002C76C  7C 08 03 A6 */	mtlr r0
 /* 8002F970 0002C770  38 21 00 10 */	addi r1, r1, 0x10

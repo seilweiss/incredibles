@@ -139,10 +139,10 @@ unit_sphere_calc_vertices__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__
 /* 801F92A0 001F60A0  21 6B FF 40 */	subfic r11, r11, -192
 /* 801F92A4 001F60A4  7C 21 59 6E */	stwux r1, r1, r11
 /* 801F92A8 001F60A8  7C 08 02 A6 */	mflr r0
-/* 801F92AC 001F60AC  C8 22 D9 90 */	lfd f1, _esc__2_1000_9-_SDA2_BASE_(r2)
+/* 801F92AC 001F60AC  C8 22 D9 90 */	lfd f1, _esc__2_1000_9@sda21(r2)
 /* 801F92B0 001F60B0  90 0C 00 04 */	stw r0, 4(r12)
 /* 801F92B4 001F60B4  3C 00 43 30 */	lis r0, 0x4330
-/* 801F92B8 001F60B8  C0 42 D9 7C */	lfs f2, _esc__2_995_4-_SDA2_BASE_(r2)
+/* 801F92B8 001F60B8  C0 42 D9 7C */	lfs f2, _esc__2_995_4@sda21(r2)
 /* 801F92BC 001F60BC  BF 6C FF EC */	stmw r27, -0x14(r12)
 /* 801F92C0 001F60C0  7C 9B 23 78 */	mr r27, r4
 /* 801F92C4 001F60C4  6F 64 80 00 */	xoris r4, r27, 0x8000
@@ -159,18 +159,18 @@ unit_sphere_calc_vertices__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__
 /* 801F92F0 001F60F0  3C 00 43 30 */	lis r0, 0x4330
 /* 801F92F4 001F60F4  90 61 00 9C */	stw r3, 0x9c(r1)
 /* 801F92F8 001F60F8  38 61 00 30 */	addi r3, r1, 0x30
-/* 801F92FC 001F60FC  C8 22 D9 90 */	lfd f1, _esc__2_1000_9-_SDA2_BASE_(r2)
+/* 801F92FC 001F60FC  C8 22 D9 90 */	lfd f1, _esc__2_1000_9@sda21(r2)
 /* 801F9300 001F6100  90 01 00 98 */	stw r0, 0x98(r1)
-/* 801F9304 001F6104  C0 42 D9 80 */	lfs f2, _esc__2_996_5-_SDA2_BASE_(r2)
+/* 801F9304 001F6104  C0 42 D9 80 */	lfs f2, _esc__2_996_5@sda21(r2)
 /* 801F9308 001F6108  C8 01 00 98 */	lfd f0, 0x98(r1)
 /* 801F930C 001F610C  EC 00 08 28 */	fsubs f0, f0, f1
 /* 801F9310 001F6110  EC 22 00 24 */	fdivs f1, f2, f0
 /* 801F9314 001F6114  4B E4 F3 55 */	bl xMat3x3RotZ__FP7xMat3x3f
-/* 801F9318 001F6118  80 C2 D9 70 */	lwz r6, _esc__2_983_3-_SDA2_BASE_(r2)
+/* 801F9318 001F6118  80 C2 D9 70 */	lwz r6, _esc__2_983_3@sda21(r2)
 /* 801F931C 001F611C  7F A3 EB 78 */	mr r3, r29
-/* 801F9320 001F6120  80 A2 D9 74 */	lwz r5, lbl_803D7694-_SDA2_BASE_(r2)
+/* 801F9320 001F6120  80 A2 D9 74 */	lwz r5, lbl_803D7694@sda21(r2)
 /* 801F9324 001F6124  3B FD 00 0C */	addi r31, r29, 0xc
-/* 801F9328 001F6128  80 02 D9 78 */	lwz r0, lbl_803D7698-_SDA2_BASE_(r2)
+/* 801F9328 001F6128  80 02 D9 78 */	lwz r0, lbl_803D7698@sda21(r2)
 /* 801F932C 001F612C  38 81 00 1C */	addi r4, r1, 0x1c
 /* 801F9330 001F6130  90 C1 00 1C */	stw r6, 0x1c(r1)
 /* 801F9334 001F6134  90 A1 00 20 */	stw r5, 0x20(r1)
@@ -212,9 +212,9 @@ lbl_801F93AC:
 lbl_801F93B8:
 /* 801F93B8 001F61B8  7C 1E D8 00 */	cmpw r30, r27
 /* 801F93BC 001F61BC  41 80 FF 8C */	blt lbl_801F9348
-/* 801F93C0 001F61C0  C0 22 D9 84 */	lfs f1, _esc__2_997_4-_SDA2_BASE_(r2)
+/* 801F93C0 001F61C0  C0 22 D9 84 */	lfs f1, _esc__2_997_4@sda21(r2)
 /* 801F93C4 001F61C4  7F E3 FB 78 */	mr r3, r31
-/* 801F93C8 001F61C8  C0 62 D9 88 */	lfs f3, _esc__2_998_2-_SDA2_BASE_(r2)
+/* 801F93C8 001F61C8  C0 62 D9 88 */	lfs f3, _esc__2_998_2@sda21(r2)
 /* 801F93CC 001F61CC  FC 40 08 90 */	fmr f2, f1
 /* 801F93D0 001F61D0  4B E1 44 09 */	bl assign__5xVec3Ffff
 /* 801F93D4 001F61D4  81 41 00 00 */	lwz r10, 0(r1)
@@ -344,17 +344,17 @@ refresh_energy_uv__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_Fv:
 /* 801F9564 001F6364  7C 08 02 A6 */	mflr r0
 /* 801F9568 001F6368  90 0C 00 04 */	stw r0, 4(r12)
 /* 801F956C 001F636C  BF 8C FF F0 */	stmw r28, -0x10(r12)
-/* 801F9570 001F6370  3B ED DF C0 */	addi r31, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F9570 001F6370  3B ED DF C0 */	addi r31, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F9574 001F6374  80 1F 00 04 */	lwz r0, 4(r31)
 /* 801F9578 001F6378  54 03 18 38 */	slwi r3, r0, 3
 /* 801F957C 001F637C  4B E0 E3 65 */	bl xMemPushTemp__FUi
 /* 801F9580 001F6380  80 9F 00 04 */	lwz r4, 4(r31)
 /* 801F9584 001F6384  7C 7E 1B 78 */	mr r30, r3
-/* 801F9588 001F6388  80 AD DF C0 */	lwz r5, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F9588 001F6388  80 AD DF C0 */	lwz r5, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801F958C 001F638C  4B FE B8 75 */	bl xModelWarpSphereMapUVsByNormals__FP5xVec2iPC5xVec3
 /* 801F9590 001F6390  38 00 00 08 */	li r0, 8
 /* 801F9594 001F6394  38 A1 00 0C */	addi r5, r1, 0xc
-/* 801F9598 001F6398  38 8D BA 7C */	addi r4, r13, lbl_803CEEFC-_SDA_BASE_
+/* 801F9598 001F6398  38 8D BA 7C */	addi r4, r13, lbl_803CEEFC@sda21
 /* 801F959C 001F639C  7C 09 03 A6 */	mtctr r0
 lbl_801F95A0:
 /* 801F95A0 001F63A0  80 64 00 04 */	lwz r3, 4(r4)
@@ -362,16 +362,16 @@ lbl_801F95A0:
 /* 801F95A8 001F63A8  90 65 00 04 */	stw r3, 4(r5)
 /* 801F95AC 001F63AC  94 05 00 08 */	stwu r0, 8(r5)
 /* 801F95B0 001F63B0  42 00 FF F0 */	bdnz lbl_801F95A0
-/* 801F95B4 001F63B4  C0 22 D9 98 */	lfs f1, _esc__2_1075_0-_SDA2_BASE_(r2)
+/* 801F95B4 001F63B4  C0 22 D9 98 */	lfs f1, _esc__2_1075_0@sda21(r2)
 /* 801F95B8 001F63B8  7F C3 F3 78 */	mr r3, r30
-/* 801F95BC 001F63BC  C0 02 D9 9C */	lfs f0, _esc__2_1076_0-_SDA2_BASE_(r2)
+/* 801F95BC 001F63BC  C0 02 D9 9C */	lfs f0, _esc__2_1076_0@sda21(r2)
 /* 801F95C0 001F63C0  7F C4 F3 78 */	mr r4, r30
 /* 801F95C4 001F63C4  D0 21 00 10 */	stfs f1, 0x10(r1)
 /* 801F95C8 001F63C8  38 C1 00 10 */	addi r6, r1, 0x10
 /* 801F95CC 001F63CC  80 BF 00 04 */	lwz r5, 4(r31)
 /* 801F95D0 001F63D0  D0 01 00 24 */	stfs f0, 0x24(r1)
 /* 801F95D4 001F63D4  4B FF FE 19 */	bl apply_uv_matrix__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_FP5xVec2PC5xVec2iRC7xMat4x3
-/* 801F95D8 001F63D8  38 6D DF C0 */	addi r3, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F95D8 001F63D8  38 6D DF C0 */	addi r3, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F95DC 001F63DC  80 03 00 0C */	lwz r0, 0xc(r3)
 /* 801F95E0 001F63E0  83 E3 00 08 */	lwz r31, 8(r3)
 /* 801F95E4 001F63E4  54 00 08 3C */	slwi r0, r0, 1
@@ -402,7 +402,7 @@ lbl_801F9610:
 refresh_refract_color__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_Fv:
 /* 801F9638 001F6438  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F963C 001F643C  7C 08 02 A6 */	mflr r0
-/* 801F9640 001F6440  38 6D DF C0 */	addi r3, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F9640 001F6440  38 6D DF C0 */	addi r3, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F9644 001F6444  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F9648 001F6448  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801F964C 001F644C  80 03 00 0C */	lwz r0, 0xc(r3)
@@ -412,7 +412,7 @@ refresh_refract_color__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_Fv
 /* 801F965C 001F645C  48 00 00 14 */	b lbl_801F9670
 lbl_801F9660:
 /* 801F9660 001F6460  7F E3 FB 78 */	mr r3, r31
-/* 801F9664 001F6464  38 82 82 40 */	addi r4, r2, g_WHITE-_SDA2_BASE_
+/* 801F9664 001F6464  38 82 82 40 */	addi r4, r2, g_WHITE@sda21
 /* 801F9668 001F6468  4B E1 CB D5 */	bl __as__10xColor_tagFRC10xColor_tag
 /* 801F966C 001F646C  3B FF 00 04 */	addi r31, r31, 4
 lbl_801F9670:
@@ -440,14 +440,14 @@ refresh_cell_width_scale__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2
 /* 801F96B8 001F64B8  DB 61 00 10 */	stfd f27, 0x10(r1)
 /* 801F96BC 001F64BC  F3 61 00 18 */	psq_st f27, 24(r1), 0, qr0
 /* 801F96C0 001F64C0  BF C1 00 08 */	stmw r30, 8(r1)
-/* 801F96C4 001F64C4  C3 62 D9 A0 */	lfs f27, _esc__2_1101_2-_SDA2_BASE_(r2)
-/* 801F96C8 001F64C8  38 6D DF C0 */	addi r3, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F96C4 001F64C4  C3 62 D9 A0 */	lfs f27, _esc__2_1101_2@sda21(r2)
+/* 801F96C8 001F64C8  38 6D DF C0 */	addi r3, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F96CC 001F64CC  83 E3 00 2C */	lwz r31, 0x2c(r3)
 /* 801F96D0 001F64D0  FF E0 D8 90 */	fmr f31, f27
-/* 801F96D4 001F64D4  C3 82 D9 A4 */	lfs f28, _esc__2_1102_1-_SDA2_BASE_(r2)
-/* 801F96D8 001F64D8  C3 A2 D9 A8 */	lfs f29, _esc__2_1103_3-_SDA2_BASE_(r2)
+/* 801F96D4 001F64D4  C3 82 D9 A4 */	lfs f28, _esc__2_1102_1@sda21(r2)
+/* 801F96D8 001F64D8  C3 A2 D9 A8 */	lfs f29, _esc__2_1103_3@sda21(r2)
 /* 801F96DC 001F64DC  3B DF 00 38 */	addi r30, r31, 0x38
-/* 801F96E0 001F64E0  C3 C2 D9 80 */	lfs f30, _esc__2_996_5-_SDA2_BASE_(r2)
+/* 801F96E0 001F64E0  C3 C2 D9 80 */	lfs f30, _esc__2_996_5@sda21(r2)
 /* 801F96E4 001F64E4  48 00 00 24 */	b lbl_801F9708
 lbl_801F96E8:
 /* 801F96E8 001F64E8  FC 20 D8 90 */	fmr f1, f27
@@ -485,8 +485,8 @@ create_sphere_mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_Fv:
 /* 801F9758 001F6558  38 C0 00 1E */	li r6, 0x1e
 /* 801F975C 001F655C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801F9760 001F6560  BF 81 00 10 */	stmw r28, 0x10(r1)
-/* 801F9764 001F6564  3B ED DF C0 */	addi r31, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
-/* 801F9768 001F6568  3B CD DF C0 */	addi r30, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F9764 001F6564  3B ED DF C0 */	addi r31, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
+/* 801F9768 001F6568  3B CD DF C0 */	addi r30, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F976C 001F656C  3B FF 00 04 */	addi r31, r31, 4
 /* 801F9770 001F6570  3B DE 00 0C */	addi r30, r30, 0xc
 /* 801F9774 001F6574  7F E3 FB 78 */	mr r3, r31
@@ -494,52 +494,52 @@ create_sphere_mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_Fv:
 /* 801F977C 001F657C  4B FF FA F5 */	bl unit_sphere_size__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_FRiRiii
 /* 801F9780 001F6580  80 1F 00 00 */	lwz r0, 0(r31)
 /* 801F9784 001F6584  38 A0 00 00 */	li r5, 0
-/* 801F9788 001F6588  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801F9788 001F6588  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801F978C 001F658C  1C 80 00 0C */	mulli r4, r0, 0xc
 /* 801F9790 001F6590  4B E5 03 D1 */	bl xMemAlloc__FUiUii
 /* 801F9794 001F6594  80 1E 00 00 */	lwz r0, 0(r30)
 /* 801F9798 001F6598  38 A0 00 00 */	li r5, 0
-/* 801F979C 001F659C  90 6D DF C0 */	stw r3, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801F97A0 001F65A0  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801F979C 001F659C  90 6D DF C0 */	stw r3, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
+/* 801F97A0 001F65A0  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801F97A4 001F65A4  54 04 08 3C */	slwi r4, r0, 1
 /* 801F97A8 001F65A8  4B E5 03 B9 */	bl xMemAlloc__FUiUii
-/* 801F97AC 001F65AC  3B ED DF C0 */	addi r31, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F97AC 001F65AC  3B ED DF C0 */	addi r31, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F97B0 001F65B0  38 80 06 98 */	li r4, 0x698
 /* 801F97B4 001F65B4  90 7F 00 08 */	stw r3, 8(r31)
 /* 801F97B8 001F65B8  38 A0 00 00 */	li r5, 0
-/* 801F97BC 001F65BC  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801F97BC 001F65BC  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801F97C0 001F65C0  4B E5 03 A1 */	bl xMemAlloc__FUiUii
-/* 801F97C4 001F65C4  3B AD DF C0 */	addi r29, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F97C4 001F65C4  3B AD DF C0 */	addi r29, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F97C8 001F65C8  38 80 06 98 */	li r4, 0x698
 /* 801F97CC 001F65CC  90 7D 00 10 */	stw r3, 0x10(r29)
 /* 801F97D0 001F65D0  38 A0 00 00 */	li r5, 0
-/* 801F97D4 001F65D4  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801F97D4 001F65D4  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801F97D8 001F65D8  4B E5 03 89 */	bl xMemAlloc__FUiUii
 /* 801F97DC 001F65DC  80 1E 00 00 */	lwz r0, 0(r30)
-/* 801F97E0 001F65E0  3B 8D DF C0 */	addi r28, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F97E0 001F65E0  3B 8D DF C0 */	addi r28, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F97E4 001F65E4  90 7C 00 14 */	stw r3, 0x14(r28)
 /* 801F97E8 001F65E8  38 A0 00 00 */	li r5, 0
-/* 801F97EC 001F65EC  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801F97EC 001F65EC  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801F97F0 001F65F0  54 04 18 38 */	slwi r4, r0, 3
 /* 801F97F4 001F65F4  4B E5 03 6D */	bl xMemAlloc__FUiUii
 /* 801F97F8 001F65F8  80 1E 00 00 */	lwz r0, 0(r30)
-/* 801F97FC 001F65FC  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F97FC 001F65FC  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F9800 001F6600  90 64 00 24 */	stw r3, 0x24(r4)
 /* 801F9804 001F6604  38 A0 00 00 */	li r5, 0
-/* 801F9808 001F6608  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801F9808 001F6608  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801F980C 001F660C  54 04 10 3A */	slwi r4, r0, 2
 /* 801F9810 001F6610  4B E5 03 51 */	bl xMemAlloc__FUiUii
-/* 801F9814 001F6614  38 AD DF C0 */	addi r5, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F9814 001F6614  38 AD DF C0 */	addi r5, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F9818 001F6618  38 80 00 38 */	li r4, 0x38
 /* 801F981C 001F661C  90 65 00 28 */	stw r3, 0x28(r5)
 /* 801F9820 001F6620  38 A0 00 00 */	li r5, 0
-/* 801F9824 001F6624  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801F9824 001F6624  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801F9828 001F6628  4B E5 03 39 */	bl xMemAlloc__FUiUii
-/* 801F982C 001F662C  38 AD DF C0 */	addi r5, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F982C 001F662C  38 AD DF C0 */	addi r5, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F9830 001F6630  38 80 00 0F */	li r4, 0xf
 /* 801F9834 001F6634  90 65 00 2C */	stw r3, 0x2c(r5)
 /* 801F9838 001F6638  38 A0 00 1E */	li r5, 0x1e
-/* 801F983C 001F663C  80 6D DF C0 */	lwz r3, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F983C 001F663C  80 6D DF C0 */	lwz r3, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801F9840 001F6640  4B FF FA 59 */	bl unit_sphere_calc_vertices__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_FP5xVec3ii
 /* 801F9844 001F6644  80 7F 00 08 */	lwz r3, 8(r31)
 /* 801F9848 001F6648  38 80 00 0F */	li r4, 0xf
@@ -554,7 +554,7 @@ create_sphere_mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_Fv:
 /* 801F986C 001F666C  38 A0 06 98 */	li r5, 0x698
 /* 801F9870 001F6670  4B E0 98 91 */	bl memset
 /* 801F9874 001F6674  80 BD 00 10 */	lwz r5, 0x10(r29)
-/* 801F9878 001F6678  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F9878 001F6678  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F987C 001F667C  80 7C 00 14 */	lwz r3, 0x14(r28)
 /* 801F9880 001F6680  38 00 00 00 */	li r0, 0
 /* 801F9884 001F6684  38 A5 00 04 */	addi r5, r5, 4
@@ -587,7 +587,7 @@ load_energy_raster__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_Fv:
 lbl_801F98E4:
 /* 801F98E4 001F66E4  80 03 00 00 */	lwz r0, 0(r3)
 lbl_801F98E8:
-/* 801F98E8 001F66E8  90 0D E0 30 */	stw r0, energy_raster__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F98E8 001F66E8  90 0D E0 30 */	stw r0, energy_raster__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801F98EC 001F66EC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801F98F0 001F66F0  7C 08 03 A6 */	mtlr r0
 /* 801F98F4 001F66F4  38 21 00 10 */	addi r1, r1, 0x10
@@ -603,36 +603,36 @@ animate_heightmap__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_Ff:
 /* 801F9910 001F6710  DB C1 00 10 */	stfd f30, 0x10(r1)
 /* 801F9914 001F6714  F3 C1 00 18 */	psq_st f30, 24(r1), 0, qr0
 /* 801F9918 001F6718  FF C0 08 90 */	fmr f30, f1
-/* 801F991C 001F671C  C0 02 D9 AC */	lfs f0, _esc__2_1222_2-_SDA2_BASE_(r2)
+/* 801F991C 001F671C  C0 02 D9 AC */	lfs f0, _esc__2_1222_2@sda21(r2)
 /* 801F9920 001F6720  EC 20 07 B2 */	fmuls f1, f0, f30
 /* 801F9924 001F6724  4B E1 6C 81 */	bl xexp__Ff
-/* 801F9928 001F6728  C0 42 D9 B0 */	lfs f2, _esc__2_1223_2-_SDA2_BASE_(r2)
+/* 801F9928 001F6728  C0 42 D9 B0 */	lfs f2, _esc__2_1223_2@sda21(r2)
 /* 801F992C 001F672C  FF E0 08 90 */	fmr f31, f1
-/* 801F9930 001F6730  C0 0D E0 3C */	lfs f0, Aold__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F9930 001F6730  C0 0D E0 3C */	lfs f0, Aold__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801F9934 001F6734  FC 20 F0 90 */	fmr f1, f30
 /* 801F9938 001F6738  EC 62 07 B2 */	fmuls f3, f2, f30
-/* 801F993C 001F673C  C0 42 D9 B4 */	lfs f2, _esc__2_1224_0-_SDA2_BASE_(r2)
+/* 801F993C 001F673C  C0 42 D9 B4 */	lfs f2, _esc__2_1224_0@sda21(r2)
 /* 801F9940 001F6740  38 61 00 08 */	addi r3, r1, 8
-/* 801F9944 001F6744  38 8D E0 40 */	addi r4, r13, Avel__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F9944 001F6744  38 8D E0 40 */	addi r4, r13, Avel__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F9948 001F6748  EF C3 00 F2 */	fmuls f30, f3, f3
 /* 801F994C 001F674C  EC 00 F0 28 */	fsubs f0, f0, f30
 /* 801F9950 001F6750  D0 01 00 08 */	stfs f0, 8(r1)
 /* 801F9954 001F6754  4B E1 6B 39 */	bl xDampSpring__FRfRfff
 /* 801F9958 001F6758  C0 01 00 08 */	lfs f0, 8(r1)
-/* 801F995C 001F675C  C0 22 D9 B8 */	lfs f1, _esc__2_1225_0-_SDA2_BASE_(r2)
+/* 801F995C 001F675C  C0 22 D9 B8 */	lfs f1, _esc__2_1225_0@sda21(r2)
 /* 801F9960 001F6760  EC 00 F0 2A */	fadds f0, f0, f30
 /* 801F9964 001F6764  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 801F9968 001F6768  40 81 00 08 */	ble lbl_801F9970
 /* 801F996C 001F676C  FC 00 08 90 */	fmr f0, f1
 lbl_801F9970:
-/* 801F9970 001F6770  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
-/* 801F9974 001F6774  D0 0D E0 3C */	stfs f0, Aold__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F9970 001F6770  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
+/* 801F9974 001F6774  D0 0D E0 3C */	stfs f0, Aold__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801F9978 001F6778  80 64 00 20 */	lwz r3, 0x20(r4)
 /* 801F997C 001F677C  7C 85 23 78 */	mr r5, r4
 /* 801F9980 001F6780  38 84 00 18 */	addi r4, r4, 0x18
-/* 801F9984 001F6784  C0 42 D9 98 */	lfs f2, _esc__2_1075_0-_SDA2_BASE_(r2)
+/* 801F9984 001F6784  C0 42 D9 98 */	lfs f2, _esc__2_1075_0@sda21(r2)
 /* 801F9988 001F6788  54 60 10 3A */	slwi r0, r3, 2
-/* 801F998C 001F678C  C0 22 D9 BC */	lfs f1, _esc__2_1226_0-_SDA2_BASE_(r2)
+/* 801F998C 001F678C  C0 22 D9 BC */	lfs f1, _esc__2_1226_0@sda21(r2)
 /* 801F9990 001F6790  7C E4 00 2E */	lwzx r7, r4, r0
 /* 801F9994 001F6794  68 60 00 01 */	xori r0, r3, 1
 /* 801F9998 001F6798  EC 22 08 3C */	fnmsubs f1, f2, f0, f1
@@ -848,7 +848,7 @@ lbl_801F9C5C:
 copy_buffers__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_FR14xIMLockContextPC5xVec3PC10xColor_tag:
 /* 801F9CB8 001F6AB8  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801F9CBC 001F6ABC  7C 08 02 A6 */	mflr r0
-/* 801F9CC0 001F6AC0  38 CD DF C0 */	addi r6, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F9CC0 001F6AC0  38 CD DF C0 */	addi r6, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F9CC4 001F6AC4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801F9CC8 001F6AC8  BE E1 00 0C */	stmw r23, 0xc(r1)
 /* 801F9CCC 001F6ACC  7C 97 23 78 */	mr r23, r4
@@ -903,21 +903,21 @@ nearest_surface_point__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_FR
 /* 801F9D7C 001F6B7C  FC 20 F8 90 */	fmr f1, f31
 /* 801F9D80 001F6B80  FC 40 F0 50 */	fneg f2, f30
 /* 801F9D84 001F6B84  4B E1 61 8D */	bl xatan2__Fff
-/* 801F9D88 001F6B88  C0 42 D9 C0 */	lfs f2, _esc__2_1257_5-_SDA2_BASE_(r2)
-/* 801F9D8C 001F6B8C  C0 02 D9 84 */	lfs f0, _esc__2_997_4-_SDA2_BASE_(r2)
+/* 801F9D88 001F6B88  C0 42 D9 C0 */	lfs f2, _esc__2_1257_5@sda21(r2)
+/* 801F9D8C 001F6B8C  C0 02 D9 84 */	lfs f0, _esc__2_997_4@sda21(r2)
 /* 801F9D90 001F6B90  EC 22 00 72 */	fmuls f1, f2, f1
 /* 801F9D94 001F6B94  D0 3F 00 00 */	stfs f1, 0(r31)
 /* 801F9D98 001F6B98  C0 3F 00 00 */	lfs f1, 0(r31)
 /* 801F9D9C 001F6B9C  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F9DA0 001F6BA0  40 80 00 10 */	bge lbl_801F9DB0
-/* 801F9DA4 001F6BA4  C0 02 D9 C4 */	lfs f0, _esc__2_1258_3-_SDA2_BASE_(r2)
+/* 801F9DA4 001F6BA4  C0 02 D9 C4 */	lfs f0, _esc__2_1258_3@sda21(r2)
 /* 801F9DA8 001F6BA8  EC 01 00 2A */	fadds f0, f1, f0
 /* 801F9DAC 001F6BAC  D0 1F 00 00 */	stfs f0, 0(r31)
 lbl_801F9DB0:
-/* 801F9DB0 001F6BB0  C0 02 D9 C8 */	lfs f0, _esc__2_1259_1-_SDA2_BASE_(r2)
-/* 801F9DB4 001F6BB4  C0 42 D9 C0 */	lfs f2, _esc__2_1257_5-_SDA2_BASE_(r2)
+/* 801F9DB0 001F6BB0  C0 02 D9 C8 */	lfs f0, _esc__2_1259_1@sda21(r2)
+/* 801F9DB4 001F6BB4  C0 42 D9 C0 */	lfs f2, _esc__2_1257_5@sda21(r2)
 /* 801F9DB8 001F6BB8  EC 20 E8 2A */	fadds f1, f0, f29
-/* 801F9DBC 001F6BBC  C0 02 D9 A4 */	lfs f0, _esc__2_1102_1-_SDA2_BASE_(r2)
+/* 801F9DBC 001F6BBC  C0 02 D9 A4 */	lfs f0, _esc__2_1102_1@sda21(r2)
 /* 801F9DC0 001F6BC0  EC 02 00 78 */	fmsubs f0, f2, f1, f0
 /* 801F9DC4 001F6BC4  D0 1F 00 04 */	stfs f0, 4(r31)
 /* 801F9DC8 001F6BC8  E3 E1 00 38 */	psq_l f31, 56(r1), 0, qr0
@@ -1004,7 +1004,7 @@ lbl_801F9ED8:
 /* 801F9EDC 001F6CDC  38 C0 00 1D */	li r6, 0x1d
 /* 801F9EE0 001F6CE0  48 00 00 84 */	b lbl_801F9F64
 lbl_801F9EE4:
-/* 801F9EE4 001F6CE4  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801F9EE4 001F6CE4  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801F9EE8 001F6CE8  57 E3 10 3A */	slwi r3, r31, 2
 /* 801F9EEC 001F6CEC  80 84 00 2C */	lwz r4, 0x2c(r4)
 /* 801F9EF0 001F6CF0  57 C0 10 3A */	slwi r0, r30, 2
@@ -1040,9 +1040,9 @@ lbl_801F9F0C:
 /* 801F9F60 001F6D60  7C C6 02 14 */	add r6, r6, r0
 lbl_801F9F64:
 /* 801F9F64 001F6D64  EC BD 07 72 */	fmuls f5, f29, f29
-/* 801F9F68 001F6D68  C0 02 D9 A4 */	lfs f0, _esc__2_1102_1-_SDA2_BASE_(r2)
-/* 801F9F6C 001F6D6C  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
-/* 801F9F70 001F6D70  80 AD DF C0 */	lwz r5, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F9F68 001F6D68  C0 02 D9 A4 */	lfs f0, _esc__2_1102_1@sda21(r2)
+/* 801F9F6C 001F6D6C  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
+/* 801F9F70 001F6D70  80 AD DF C0 */	lwz r5, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801F9F74 001F6D74  80 04 00 20 */	lwz r0, 0x20(r4)
 /* 801F9F78 001F6D78  1C 7F 00 1E */	mulli r3, r31, 0x1e
 /* 801F9F7C 001F6D7C  EC C0 28 24 */	fdivs f6, f0, f5
@@ -1085,7 +1085,7 @@ lbl_801F9FCC:
 /* 801FA008 001F6E08  FC 01 28 40 */	fcmpo cr0, f1, f5
 /* 801FA00C 001F6E0C  4C 41 13 82 */	cror 2, 1, 2
 /* 801FA010 001F6E10  41 82 00 40 */	beq lbl_801FA050
-/* 801FA014 001F6E14  C0 02 D9 A4 */	lfs f0, _esc__2_1102_1-_SDA2_BASE_(r2)
+/* 801FA014 001F6E14  C0 02 D9 A4 */	lfs f0, _esc__2_1102_1@sda21(r2)
 /* 801FA018 001F6E18  57 80 06 3F */	clrlwi. r0, r28, 0x18
 /* 801FA01C 001F6E1C  EC 01 01 BC */	fnmsubs f0, f1, f6, f0
 /* 801FA020 001F6E20  EC 20 07 F2 */	fmuls f1, f0, f31
@@ -1134,12 +1134,12 @@ shade_sphere__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_FP5xVec3P10
 /* 801FA0B0 001F6EB0  DB A1 00 30 */	stfd f29, 0x30(r1)
 /* 801FA0B4 001F6EB4  F3 A1 00 38 */	psq_st f29, 56(r1), 0, qr0
 /* 801FA0B8 001F6EB8  BF C1 00 28 */	stmw r30, 0x28(r1)
-/* 801FA0BC 001F6EBC  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 801FA0BC 001F6EBC  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 801FA0C0 001F6EC0  7C 7F 1B 78 */	mr r31, r3
 /* 801FA0C4 001F6EC4  7C 9E 23 78 */	mr r30, r4
 /* 801FA0C8 001F6EC8  38 61 00 08 */	addi r3, r1, 8
 /* 801FA0CC 001F6ECC  80 A5 00 00 */	lwz r5, 0(r5)
-/* 801FA0D0 001F6ED0  38 8D DF F0 */	addi r4, r13, ball_mat__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801FA0D0 001F6ED0  38 8D DF F0 */	addi r4, r13, ball_mat__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801FA0D4 001F6ED4  80 A5 00 04 */	lwz r5, 4(r5)
 /* 801FA0D8 001F6ED8  38 A5 00 40 */	addi r5, r5, 0x40
 /* 801FA0DC 001F6EDC  4B E1 3E B9 */	bl xMat4x3Tolocal__FP5xVec3PC7xMat4x3PC5xVec3
@@ -1150,20 +1150,20 @@ shade_sphere__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_FP5xVec3P10
 /* 801FA0F0 001F6EF0  EC 1F 07 FA */	fmadds f0, f31, f31, f0
 /* 801FA0F4 001F6EF4  EC 3D 07 7A */	fmadds f1, f29, f29, f0
 /* 801FA0F8 001F6EF8  4B E1 54 89 */	bl xinvsqrt__Ff
-/* 801FA0FC 001F6EFC  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
-/* 801FA100 001F6F00  80 ED DF C0 */	lwz r7, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801FA0FC 001F6EFC  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
+/* 801FA100 001F6F00  80 ED DF C0 */	lwz r7, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801FA104 001F6F04  80 64 00 20 */	lwz r3, 0x20(r4)
 /* 801FA108 001F6F08  7F E8 FB 78 */	mr r8, r31
 /* 801FA10C 001F6F0C  80 04 00 04 */	lwz r0, 4(r4)
 /* 801FA110 001F6F10  7F CA F3 78 */	mr r10, r30
 /* 801FA114 001F6F14  54 63 10 3A */	slwi r3, r3, 2
-/* 801FA118 001F6F18  C0 C2 D9 A4 */	lfs f6, _esc__2_1102_1-_SDA2_BASE_(r2)
+/* 801FA118 001F6F18  C0 C2 D9 A4 */	lfs f6, _esc__2_1102_1@sda21(r2)
 /* 801FA11C 001F6F1C  1C 00 00 0C */	mulli r0, r0, 0xc
-/* 801FA120 001F6F20  C0 A2 D9 CC */	lfs f5, _esc__2_1349_1-_SDA2_BASE_(r2)
+/* 801FA120 001F6F20  C0 A2 D9 CC */	lfs f5, _esc__2_1349_1@sda21(r2)
 /* 801FA124 001F6F24  7C 64 1A 14 */	add r3, r4, r3
-/* 801FA128 001F6F28  C0 82 D9 84 */	lfs f4, _esc__2_997_4-_SDA2_BASE_(r2)
+/* 801FA128 001F6F28  C0 82 D9 84 */	lfs f4, _esc__2_997_4@sda21(r2)
 /* 801FA12C 001F6F2C  80 C3 00 10 */	lwz r6, 0x10(r3)
-/* 801FA130 001F6F30  C0 62 D9 D0 */	lfs f3, _esc__2_1350-_SDA2_BASE_(r2)
+/* 801FA130 001F6F30  C0 62 D9 D0 */	lfs f3, _esc__2_1350@sda21(r2)
 /* 801FA134 001F6F34  7D 3F 02 14 */	add r9, r31, r0
 /* 801FA138 001F6F38  48 00 00 F8 */	b lbl_801FA230
 lbl_801FA13C:
@@ -1204,10 +1204,10 @@ lbl_801FA1BC:
 lbl_801FA1C0:
 /* 801FA1C0 001F6FC0  FC 04 00 40 */	fcmpo cr0, f4, f0
 /* 801FA1C4 001F6FC4  40 81 00 0C */	ble lbl_801FA1D0
-/* 801FA1C8 001F6FC8  C0 02 D9 84 */	lfs f0, _esc__2_997_4-_SDA2_BASE_(r2)
+/* 801FA1C8 001F6FC8  C0 02 D9 84 */	lfs f0, _esc__2_997_4@sda21(r2)
 /* 801FA1CC 001F6FCC  48 00 00 14 */	b lbl_801FA1E0
 lbl_801FA1D0:
-/* 801FA1D0 001F6FD0  C0 02 D9 A4 */	lfs f0, _esc__2_1102_1-_SDA2_BASE_(r2)
+/* 801FA1D0 001F6FD0  C0 02 D9 A4 */	lfs f0, _esc__2_1102_1@sda21(r2)
 /* 801FA1D4 001F6FD4  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 801FA1D8 001F6FD8  40 80 00 08 */	bge lbl_801FA1E0
 /* 801FA1DC 001F6FDC  FC 00 10 90 */	fmr f0, f2
@@ -1251,16 +1251,16 @@ lbl_801FA230:
 zIncrediBallSetup__Fv:
 /* 801FA264 001F7064  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801FA268 001F7068  7C 08 02 A6 */	mflr r0
-/* 801FA26C 001F706C  C0 02 D9 84 */	lfs f0, _esc__2_997_4-_SDA2_BASE_(r2)
+/* 801FA26C 001F706C  C0 02 D9 84 */	lfs f0, _esc__2_997_4@sda21(r2)
 /* 801FA270 001F7070  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801FA274 001F7074  C0 22 D9 A4 */	lfs f1, _esc__2_1102_1-_SDA2_BASE_(r2)
-/* 801FA278 001F7078  D0 0D E0 3C */	stfs f0, Aold__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801FA27C 001F707C  D0 2D E0 38 */	stfs f1, damp_multiplier__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801FA280 001F7080  D0 0D E0 40 */	stfs f0, Avel__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801FA274 001F7074  C0 22 D9 A4 */	lfs f1, _esc__2_1102_1@sda21(r2)
+/* 801FA278 001F7078  D0 0D E0 3C */	stfs f0, Aold__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
+/* 801FA27C 001F707C  D0 2D E0 38 */	stfs f1, damp_multiplier__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
+/* 801FA280 001F7080  D0 0D E0 40 */	stfs f0, Avel__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801FA284 001F7084  4B FF F4 C9 */	bl create_sphere_mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_Fv
 /* 801FA288 001F7088  4B FF F6 31 */	bl load_energy_raster__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_Fv
-/* 801FA28C 001F708C  38 6D DF F0 */	addi r3, r13, ball_mat__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
-/* 801FA290 001F7090  38 8D BA 80 */	addi r4, r13, g_I3-_SDA_BASE_
+/* 801FA28C 001F708C  38 6D DF F0 */	addi r3, r13, ball_mat__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
+/* 801FA290 001F7090  38 8D BA 80 */	addi r4, r13, g_I3@sda21
 /* 801FA294 001F7094  4B E0 B9 AD */	bl __as__7xMat4x3FRC7xMat4x3
 /* 801FA298 001F7098  4B FF EF D5 */	bl add_tweaks__Q232_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_5tweakFv
 /* 801FA29C 001F709C  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1273,7 +1273,7 @@ zIncrediBallMove__FRC7xMat4x3:
 /* 801FA2AC 001F70AC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801FA2B0 001F70B0  7C 08 02 A6 */	mflr r0
 /* 801FA2B4 001F70B4  7C 64 1B 78 */	mr r4, r3
-/* 801FA2B8 001F70B8  38 6D DF F0 */	addi r3, r13, ball_mat__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801FA2B8 001F70B8  38 6D DF F0 */	addi r3, r13, ball_mat__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801FA2BC 001F70BC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801FA2C0 001F70C0  4B E0 B9 81 */	bl __as__7xMat4x3FRC7xMat4x3
 /* 801FA2C4 001F70C4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1290,13 +1290,13 @@ zIncrediBallUpdate__Ff:
 /* 801FA2E4 001F70E4  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 801FA2E8 001F70E8  FF E0 08 90 */	fmr f31, f1
 /* 801FA2EC 001F70EC  4B FF F6 11 */	bl animate_heightmap__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_Ff
-/* 801FA2F0 001F70F0  C0 22 D9 B8 */	lfs f1, _esc__2_1225_0-_SDA2_BASE_(r2)
-/* 801FA2F4 001F70F4  C0 0D E0 34 */	lfs f0, energy_spin__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
-/* 801FA2F8 001F70F8  C0 42 D9 A4 */	lfs f2, _esc__2_1102_1-_SDA2_BASE_(r2)
+/* 801FA2F0 001F70F0  C0 22 D9 B8 */	lfs f1, _esc__2_1225_0@sda21(r2)
+/* 801FA2F4 001F70F4  C0 0D E0 34 */	lfs f0, energy_spin__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
+/* 801FA2F8 001F70F8  C0 42 D9 A4 */	lfs f2, _esc__2_1102_1@sda21(r2)
 /* 801FA2FC 001F70FC  EC 21 07 FA */	fmadds f1, f1, f31, f0
-/* 801FA300 001F7100  D0 2D E0 34 */	stfs f1, energy_spin__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801FA300 001F7100  D0 2D E0 34 */	stfs f1, energy_spin__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801FA304 001F7104  4B E4 4D 49 */	bl xfmod__Fff
-/* 801FA308 001F7108  D0 2D E0 34 */	stfs f1, energy_spin__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801FA308 001F7108  D0 2D E0 34 */	stfs f1, energy_spin__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801FA30C 001F710C  E3 E1 00 18 */	psq_l f31, 24(r1), 0, qr0
 /* 801FA310 001F7110  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801FA314 001F7114  CB E1 00 10 */	lfd f31, 0x10(r1)
@@ -1315,23 +1315,23 @@ zIncrediBallRender__FPFPv_vPv:
 /* 801FA33C 001F713C  BF 4C FF E8 */	stmw r26, -0x18(r12)
 /* 801FA340 001F7140  7C 7E 1B 78 */	mr r30, r3
 /* 801FA344 001F7144  7C 9F 23 78 */	mr r31, r4
-/* 801FA348 001F7148  88 0D E0 48 */	lbz r0, init_esc__7_1381-_SDA_BASE_(r13)
+/* 801FA348 001F7148  88 0D E0 48 */	lbz r0, init_esc__7_1381@sda21(r13)
 /* 801FA34C 001F714C  7C 00 07 75 */	extsb. r0, r0
 /* 801FA350 001F7150  40 82 00 14 */	bne lbl_801FA364
 /* 801FA354 001F7154  38 60 00 0F */	li r3, 0xf
 /* 801FA358 001F7158  38 00 00 01 */	li r0, 1
-/* 801FA35C 001F715C  90 6D E0 44 */	stw r3, rows_esc__7_1380-_SDA_BASE_(r13)
-/* 801FA360 001F7160  98 0D E0 48 */	stb r0, init_esc__7_1381-_SDA_BASE_(r13)
+/* 801FA35C 001F715C  90 6D E0 44 */	stw r3, rows_esc__7_1380@sda21(r13)
+/* 801FA360 001F7160  98 0D E0 48 */	stb r0, init_esc__7_1381@sda21(r13)
 lbl_801FA364:
-/* 801FA364 001F7164  88 0D E0 50 */	lbz r0, init_esc__7_1384-_SDA_BASE_(r13)
+/* 801FA364 001F7164  88 0D E0 50 */	lbz r0, init_esc__7_1384@sda21(r13)
 /* 801FA368 001F7168  7C 00 07 75 */	extsb. r0, r0
 /* 801FA36C 001F716C  40 82 00 14 */	bne lbl_801FA380
 /* 801FA370 001F7170  38 60 00 1E */	li r3, 0x1e
 /* 801FA374 001F7174  38 00 00 01 */	li r0, 1
-/* 801FA378 001F7178  90 6D E0 4C */	stw r3, cols_esc__7_1383-_SDA_BASE_(r13)
-/* 801FA37C 001F717C  98 0D E0 50 */	stb r0, init_esc__7_1384-_SDA_BASE_(r13)
+/* 801FA378 001F7178  90 6D E0 4C */	stw r3, cols_esc__7_1383@sda21(r13)
+/* 801FA37C 001F717C  98 0D E0 50 */	stb r0, init_esc__7_1384@sda21(r13)
 lbl_801FA380:
-/* 801FA380 001F7180  38 CD DF C0 */	addi r6, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801FA380 001F7180  38 CD DF C0 */	addi r6, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801FA384 001F7184  38 61 00 10 */	addi r3, r1, 0x10
 /* 801FA388 001F7188  80 A6 00 0C */	lwz r5, 0xc(r6)
 /* 801FA38C 001F718C  38 80 00 04 */	li r4, 4
@@ -1364,11 +1364,11 @@ lbl_801FA380:
 /* 801FA3F8 001F71F8  4B E7 EB 59 */	bl iMemPopTemp__FPv
 /* 801FA3FC 001F71FC  7F 63 DB 78 */	mr r3, r27
 /* 801FA400 001F7200  4B E7 EB 51 */	bl iMemPopTemp__FPv
-/* 801FA404 001F7204  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801FA404 001F7204  38 8D DF C0 */	addi r4, r13, mesh__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801FA408 001F7208  80 61 00 18 */	lwz r3, 0x18(r1)
 /* 801FA40C 001F720C  80 84 00 24 */	lwz r4, 0x24(r4)
 /* 801FA410 001F7210  7F 85 E3 78 */	mr r5, r28
-/* 801FA414 001F7214  C0 2D E0 34 */	lfs f1, energy_spin__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801FA414 001F7214  C0 2D E0 34 */	lfs f1, energy_spin__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801FA418 001F7218  4B FF F0 35 */	bl scroll_u__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_FP5xVec2PC5xVec2if
 /* 801FA41C 001F721C  28 1E 00 00 */	cmplwi r30, 0
 /* 801FA420 001F7220  41 82 00 14 */	beq lbl_801FA434
@@ -1384,59 +1384,59 @@ lbl_801FA434:
 /* 801FA444 001F7244  4B E2 70 09 */	bl xFXHighDynamicRangeBrighten__Fbb
 /* 801FA448 001F7248  38 60 00 00 */	li r3, 0
 /* 801FA44C 001F724C  4B E5 AE 39 */	bl xRenderStateSetAlphaDiscard__Fi
-/* 801FA450 001F7250  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 801FA450 001F7250  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 801FA454 001F7254  38 60 00 02 */	li r3, 2
 /* 801FA458 001F7258  38 80 00 01 */	li r4, 1
 /* 801FA45C 001F725C  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 801FA460 001F7260  7D 89 03 A6 */	mtctr r12
 /* 801FA464 001F7264  4E 80 04 21 */	bctrl 
-/* 801FA468 001F7268  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 801FA468 001F7268  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 801FA46C 001F726C  38 60 00 08 */	li r3, 8
 /* 801FA470 001F7270  38 80 00 00 */	li r4, 0
 /* 801FA474 001F7274  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 801FA478 001F7278  7D 89 03 A6 */	mtctr r12
 /* 801FA47C 001F727C  4E 80 04 21 */	bctrl 
-/* 801FA480 001F7280  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 801FA480 001F7280  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 801FA484 001F7284  38 60 00 01 */	li r3, 1
-/* 801FA488 001F7288  80 8D E0 30 */	lwz r4, energy_raster__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801FA488 001F7288  80 8D E0 30 */	lwz r4, energy_raster__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21(r13)
 /* 801FA48C 001F728C  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 801FA490 001F7290  7D 89 03 A6 */	mtctr r12
 /* 801FA494 001F7294  4E 80 04 21 */	bctrl 
-/* 801FA498 001F7298  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 801FA498 001F7298  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 801FA49C 001F729C  38 60 00 0A */	li r3, 0xa
 /* 801FA4A0 001F72A0  38 80 00 02 */	li r4, 2
 /* 801FA4A4 001F72A4  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 801FA4A8 001F72A8  7D 89 03 A6 */	mtctr r12
 /* 801FA4AC 001F72AC  4E 80 04 21 */	bctrl 
-/* 801FA4B0 001F72B0  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 801FA4B0 001F72B0  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 801FA4B4 001F72B4  38 60 00 0B */	li r3, 0xb
 /* 801FA4B8 001F72B8  38 80 00 02 */	li r4, 2
 /* 801FA4BC 001F72BC  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 801FA4C0 001F72C0  7D 89 03 A6 */	mtctr r12
 /* 801FA4C4 001F72C4  4E 80 04 21 */	bctrl 
 /* 801FA4C8 001F72C8  38 61 00 10 */	addi r3, r1, 0x10
-/* 801FA4CC 001F72CC  38 8D DF F0 */	addi r4, r13, ball_mat__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801FA4CC 001F72CC  38 8D DF F0 */	addi r4, r13, ball_mat__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801FA4D0 001F72D0  4B FF 9C 89 */	bl xIMRender__FR14xIMLockContextPC7xMat4x3
-/* 801FA4D4 001F72D4  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 801FA4D4 001F72D4  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 801FA4D8 001F72D8  38 60 00 02 */	li r3, 2
 /* 801FA4DC 001F72DC  38 80 00 03 */	li r4, 3
 /* 801FA4E0 001F72E0  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 801FA4E4 001F72E4  7D 89 03 A6 */	mtctr r12
 /* 801FA4E8 001F72E8  4E 80 04 21 */	bctrl 
-/* 801FA4EC 001F72EC  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 801FA4EC 001F72EC  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 801FA4F0 001F72F0  38 60 00 08 */	li r3, 8
 /* 801FA4F4 001F72F4  38 80 00 01 */	li r4, 1
 /* 801FA4F8 001F72F8  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 801FA4FC 001F72FC  7D 89 03 A6 */	mtctr r12
 /* 801FA500 001F7300  4E 80 04 21 */	bctrl 
 /* 801FA504 001F7304  4B E5 AE 25 */	bl xRenderStateResetAlphaDiscard__Fv
-/* 801FA508 001F7308  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 801FA508 001F7308  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 801FA50C 001F730C  38 60 00 0A */	li r3, 0xa
 /* 801FA510 001F7310  38 80 00 05 */	li r4, 5
 /* 801FA514 001F7314  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 801FA518 001F7318  7D 89 03 A6 */	mtctr r12
 /* 801FA51C 001F731C  4E 80 04 21 */	bctrl 
-/* 801FA520 001F7320  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 801FA520 001F7320  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 801FA524 001F7324  38 60 00 0B */	li r3, 0xb
 /* 801FA528 001F7328  38 80 00 06 */	li r4, 6
 /* 801FA52C 001F732C  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -1469,11 +1469,11 @@ zIncrediBallImpact__FRC5xVec3ffb:
 /* 801FA58C 001F738C  FF E0 10 90 */	fmr f31, f2
 /* 801FA590 001F7390  7C 65 1B 78 */	mr r5, r3
 /* 801FA594 001F7394  38 61 00 10 */	addi r3, r1, 0x10
-/* 801FA598 001F7398  38 8D DF F0 */	addi r4, r13, ball_mat__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_-_SDA_BASE_
+/* 801FA598 001F7398  38 8D DF F0 */	addi r4, r13, ball_mat__32_esc__2_unnamed_esc__2_zIncrediBallEffect_cpp_esc__2_@sda21
 /* 801FA59C 001F739C  4B E1 39 F9 */	bl xMat4x3Tolocal__FP5xVec3PC7xMat4x3PC5xVec3
 /* 801FA5A0 001F73A0  38 61 00 10 */	addi r3, r1, 0x10
 /* 801FA5A4 001F73A4  4B E1 0F 81 */	bl length2__5xVec3CFv
-/* 801FA5A8 001F73A8  C0 02 D9 D4 */	lfs f0, _esc__2_1402_2-_SDA2_BASE_(r2)
+/* 801FA5A8 001F73A8  C0 02 D9 D4 */	lfs f0, _esc__2_1402_2@sda21(r2)
 /* 801FA5AC 001F73AC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801FA5B0 001F73B0  41 80 00 34 */	blt lbl_801FA5E4
 /* 801FA5B4 001F73B4  4B E1 4F CD */	bl xinvsqrt__Ff

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global _esc__2_991_6
 _esc__2_991_6:
@@ -159,45 +159,45 @@ lbl_80083EFC:
 load_cfg__11zZipLineCamFv:
 /* 80083F08 00080D08  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80083F0C 00080D0C  7C 08 02 A6 */	mflr r0
-/* 80083F10 00080D10  C0 22 92 D8 */	lfs f1, _esc__2_933-_SDA2_BASE_(r2)
+/* 80083F10 00080D10  C0 22 92 D8 */	lfs f1, _esc__2_933@sda21(r2)
 /* 80083F14 00080D14  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80083F18 00080D18  38 00 00 80 */	li r0, 0x80
-/* 80083F1C 00080D1C  C0 02 92 DC */	lfs f0, _esc__2_934-_SDA2_BASE_(r2)
+/* 80083F1C 00080D1C  C0 02 92 DC */	lfs f0, _esc__2_934@sda21(r2)
 /* 80083F20 00080D20  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80083F24 00080D24  7C 7F 1B 78 */	mr r31, r3
-/* 80083F28 00080D28  C0 42 92 E4 */	lfs f2, _esc__2_936_2-_SDA2_BASE_(r2)
+/* 80083F28 00080D28  C0 42 92 E4 */	lfs f2, _esc__2_936_2@sda21(r2)
 /* 80083F2C 00080D2C  98 03 00 A4 */	stb r0, 0xa4(r3)
 /* 80083F30 00080D30  38 7F 00 C0 */	addi r3, r31, 0xc0
-/* 80083F34 00080D34  C0 62 92 E8 */	lfs f3, _esc__2_937_1-_SDA2_BASE_(r2)
+/* 80083F34 00080D34  C0 62 92 E8 */	lfs f3, _esc__2_937_1@sda21(r2)
 /* 80083F38 00080D38  D0 3F 00 A8 */	stfs f1, 0xa8(r31)
-/* 80083F3C 00080D3C  C0 22 92 E0 */	lfs f1, _esc__2_935_1-_SDA2_BASE_(r2)
+/* 80083F3C 00080D3C  C0 22 92 E0 */	lfs f1, _esc__2_935_1@sda21(r2)
 /* 80083F40 00080D40  D0 1F 01 14 */	stfs f0, 0x114(r31)
 /* 80083F44 00080D44  D0 1F 01 18 */	stfs f0, 0x118(r31)
 /* 80083F48 00080D48  D0 1F 01 0C */	stfs f0, 0x10c(r31)
 /* 80083F4C 00080D4C  4B F8 98 8D */	bl assign__5xVec3Ffff
-/* 80083F50 00080D50  C0 22 92 E0 */	lfs f1, _esc__2_935_1-_SDA2_BASE_(r2)
+/* 80083F50 00080D50  C0 22 92 E0 */	lfs f1, _esc__2_935_1@sda21(r2)
 /* 80083F54 00080D54  38 7F 00 CC */	addi r3, r31, 0xcc
-/* 80083F58 00080D58  C0 42 92 EC */	lfs f2, _esc__2_938-_SDA2_BASE_(r2)
+/* 80083F58 00080D58  C0 42 92 EC */	lfs f2, _esc__2_938@sda21(r2)
 /* 80083F5C 00080D5C  FC 60 08 90 */	fmr f3, f1
 /* 80083F60 00080D60  4B F8 98 79 */	bl assign__5xVec3Ffff
-/* 80083F64 00080D64  C0 22 92 E0 */	lfs f1, _esc__2_935_1-_SDA2_BASE_(r2)
+/* 80083F64 00080D64  C0 22 92 E0 */	lfs f1, _esc__2_935_1@sda21(r2)
 /* 80083F68 00080D68  38 7F 00 D8 */	addi r3, r31, 0xd8
-/* 80083F6C 00080D6C  C0 42 92 F0 */	lfs f2, _esc__2_939_0-_SDA2_BASE_(r2)
-/* 80083F70 00080D70  C0 62 92 F4 */	lfs f3, _esc__2_940-_SDA2_BASE_(r2)
+/* 80083F6C 00080D6C  C0 42 92 F0 */	lfs f2, _esc__2_939_0@sda21(r2)
+/* 80083F70 00080D70  C0 62 92 F4 */	lfs f3, _esc__2_940@sda21(r2)
 /* 80083F74 00080D74  4B F8 98 65 */	bl assign__5xVec3Ffff
-/* 80083F78 00080D78  C0 22 92 E0 */	lfs f1, _esc__2_935_1-_SDA2_BASE_(r2)
+/* 80083F78 00080D78  C0 22 92 E0 */	lfs f1, _esc__2_935_1@sda21(r2)
 /* 80083F7C 00080D7C  38 7F 00 E4 */	addi r3, r31, 0xe4
-/* 80083F80 00080D80  C0 42 92 F8 */	lfs f2, _esc__2_941_1-_SDA2_BASE_(r2)
+/* 80083F80 00080D80  C0 42 92 F8 */	lfs f2, _esc__2_941_1@sda21(r2)
 /* 80083F84 00080D84  FC 60 08 90 */	fmr f3, f1
 /* 80083F88 00080D88  4B F8 98 51 */	bl assign__5xVec3Ffff
-/* 80083F8C 00080D8C  C0 22 92 E0 */	lfs f1, _esc__2_935_1-_SDA2_BASE_(r2)
+/* 80083F8C 00080D8C  C0 22 92 E0 */	lfs f1, _esc__2_935_1@sda21(r2)
 /* 80083F90 00080D90  38 7F 00 F0 */	addi r3, r31, 0xf0
-/* 80083F94 00080D94  C0 42 92 D8 */	lfs f2, _esc__2_933-_SDA2_BASE_(r2)
-/* 80083F98 00080D98  C0 62 92 F0 */	lfs f3, _esc__2_939_0-_SDA2_BASE_(r2)
+/* 80083F94 00080D94  C0 42 92 D8 */	lfs f2, _esc__2_933@sda21(r2)
+/* 80083F98 00080D98  C0 62 92 F0 */	lfs f3, _esc__2_939_0@sda21(r2)
 /* 80083F9C 00080D9C  4B F8 98 3D */	bl assign__5xVec3Ffff
-/* 80083FA0 00080DA0  C0 22 92 E0 */	lfs f1, _esc__2_935_1-_SDA2_BASE_(r2)
+/* 80083FA0 00080DA0  C0 22 92 E0 */	lfs f1, _esc__2_935_1@sda21(r2)
 /* 80083FA4 00080DA4  38 7F 00 FC */	addi r3, r31, 0xfc
-/* 80083FA8 00080DA8  C0 42 92 FC */	lfs f2, _esc__2_942-_SDA2_BASE_(r2)
+/* 80083FA8 00080DA8  C0 42 92 FC */	lfs f2, _esc__2_942@sda21(r2)
 /* 80083FAC 00080DAC  FC 60 08 90 */	fmr f3, f1
 /* 80083FB0 00080DB0  4B F8 98 29 */	bl assign__5xVec3Ffff
 /* 80083FB4 00080DB4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -243,7 +243,7 @@ start__11zZipLineCamFv:
 /* 8008403C 00080E3C  7C 64 1B 78 */	mr r4, r3
 /* 80084040 00080E40  38 7F 01 CC */	addi r3, r31, 0x1cc
 /* 80084044 00080E44  48 00 00 A9 */	bl __as__Q216xCamConfigFollow9zone_dataFRCQ216xCamConfigFollow9zone_data
-/* 80084048 00080E48  C0 22 92 E0 */	lfs f1, _esc__2_935_1-_SDA2_BASE_(r2)
+/* 80084048 00080E48  C0 22 92 E0 */	lfs f1, _esc__2_935_1@sda21(r2)
 /* 8008404C 00080E4C  38 7F 01 E4 */	addi r3, r31, 0x1e4
 /* 80084050 00080E50  4B F8 70 49 */	bl __as__5xVec3Ff
 /* 80084054 00080E54  7C 64 1B 78 */	mr r4, r3
@@ -254,7 +254,7 @@ start__11zZipLineCamFv:
 /* 80084068 00080E68  38 7F 00 74 */	addi r3, r31, 0x74
 /* 8008406C 00080E6C  38 9F 01 80 */	addi r4, r31, 0x180
 /* 80084070 00080E70  48 00 00 39 */	bl __as__15xCamCoordSphereFRC15xCamCoordSphere
-/* 80084074 00080E74  C0 02 92 E0 */	lfs f0, _esc__2_935_1-_SDA2_BASE_(r2)
+/* 80084074 00080E74  C0 02 92 E0 */	lfs f0, _esc__2_935_1@sda21(r2)
 /* 80084078 00080E78  38 7F 00 30 */	addi r3, r31, 0x30
 /* 8008407C 00080E7C  38 9F 00 74 */	addi r4, r31, 0x74
 /* 80084080 00080E80  D0 1F 01 B0 */	stfs f0, 0x1b0(r31)
@@ -392,9 +392,9 @@ refresh_end_coord__11zZipLineCamFv:
 /* 80084254 00081054  C0 3F 01 B8 */	lfs f1, 0x1b8(r31)
 /* 80084258 00081058  EC 02 00 78 */	fmsubs f0, f2, f1, f0
 /* 8008425C 0008105C  D0 1F 01 A8 */	stfs f0, 0x1a8(r31)
-/* 80084260 00081060  80 C2 EC D0 */	lwz r6, _esc__2_991_6-_SDA2_BASE_(r2)
-/* 80084264 00081064  80 A2 EC D4 */	lwz r5, lbl_803D89F4-_SDA2_BASE_(r2)
-/* 80084268 00081068  80 02 EC D8 */	lwz r0, lbl_803D89F8-_SDA2_BASE_(r2)
+/* 80084260 00081060  80 C2 EC D0 */	lwz r6, _esc__2_991_6@sda21(r2)
+/* 80084264 00081064  80 A2 EC D4 */	lwz r5, lbl_803D89F4@sda21(r2)
+/* 80084268 00081068  80 02 EC D8 */	lwz r0, lbl_803D89F8@sda21(r2)
 /* 8008426C 0008106C  90 C1 00 10 */	stw r6, 0x10(r1)
 /* 80084270 00081070  90 A1 00 14 */	stw r5, 0x14(r1)
 /* 80084274 00081074  90 01 00 18 */	stw r0, 0x18(r1)
@@ -465,9 +465,9 @@ face_target__11zZipLineCamFv:
 /* 80084360 00081160  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 80084364 00081164  7C 7F 1B 78 */	mr r31, r3
 /* 80084368 00081168  38 61 00 08 */	addi r3, r1, 8
-/* 8008436C 0008116C  80 A2 EC DC */	lwz r5, _esc__2_1001_3-_SDA2_BASE_(r2)
-/* 80084370 00081170  80 82 EC E0 */	lwz r4, lbl_803D8A00-_SDA2_BASE_(r2)
-/* 80084374 00081174  80 02 EC E4 */	lwz r0, lbl_803D8A04-_SDA2_BASE_(r2)
+/* 8008436C 0008116C  80 A2 EC DC */	lwz r5, _esc__2_1001_3@sda21(r2)
+/* 80084370 00081170  80 82 EC E0 */	lwz r4, lbl_803D8A00@sda21(r2)
+/* 80084374 00081174  80 02 EC E4 */	lwz r0, lbl_803D8A04@sda21(r2)
 /* 80084378 00081178  90 A1 00 08 */	stw r5, 8(r1)
 /* 8008437C 0008117C  90 81 00 0C */	stw r4, 0xc(r1)
 /* 80084380 00081180  90 01 00 10 */	stw r0, 0x10(r1)
@@ -498,7 +498,7 @@ face_target__11zZipLineCamFv:
 /* 800843E4 000811E4  EC 01 01 3C */	fnmsubs f0, f1, f4, f0
 /* 800843E8 000811E8  D0 01 00 10 */	stfs f0, 0x10(r1)
 /* 800843EC 000811EC  4B F8 71 39 */	bl length2__5xVec3CFv
-/* 800843F0 000811F0  C0 02 93 00 */	lfs f0, _esc__2_1006-_SDA2_BASE_(r2)
+/* 800843F0 000811F0  C0 02 93 00 */	lfs f0, _esc__2_1006@sda21(r2)
 /* 800843F4 000811F4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800843F8 000811F8  4C 41 13 82 */	cror 2, 1, 2
 /* 800843FC 000811FC  40 82 00 30 */	bne lbl_8008442C

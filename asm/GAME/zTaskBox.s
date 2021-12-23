@@ -141,7 +141,7 @@ lbl_80162EE4:
 /* 80162EF8 0015FCF8  40 82 00 08 */	bne lbl_80162F00
 /* 80162EFC 0015FCFC  48 00 00 74 */	b lbl_80162F70
 lbl_80162F00:
-/* 80162F00 0015FD00  80 6D CF BC */	lwz r3, shared__22_esc__2_unnamed_esc__2_zTaskBox_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80162F00 0015FD00  80 6D CF BC */	lwz r3, shared__22_esc__2_unnamed_esc__2_zTaskBox_cpp_esc__2_@sda21(r13)
 /* 80162F04 0015FD04  28 03 00 00 */	cmplwi r3, 0
 /* 80162F08 0015FD08  41 82 00 10 */	beq lbl_80162F18
 /* 80162F0C 0015FD0C  7C 03 E0 40 */	cmplw r3, r28
@@ -161,11 +161,11 @@ lbl_80162F18:
 /* 80162F40 0015FD40  48 00 05 B5 */	bl get_text__8ztaskboxFUi
 /* 80162F44 0015FD44  7C 7E 1B 79 */	or. r30, r3, r3
 /* 80162F48 0015FD48  41 82 00 28 */	beq lbl_80162F70
-/* 80162F4C 0015FD4C  93 8D CF BC */	stw r28, shared__22_esc__2_unnamed_esc__2_zTaskBox_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80162F4C 0015FD4C  93 8D CF BC */	stw r28, shared__22_esc__2_unnamed_esc__2_zTaskBox_cpp_esc__2_@sda21(r13)
 /* 80162F50 0015FD50  7F 84 E3 78 */	mr r4, r28
-/* 80162F54 0015FD54  80 6D CF B8 */	lwz r3, tcb__8ztaskbox-_SDA_BASE_(r13)
+/* 80162F54 0015FD54  80 6D CF B8 */	lwz r3, tcb__8ztaskbox@sda21(r13)
 /* 80162F58 0015FD58  48 00 00 2D */	bl reset__Q28ztaskbox13talk_callbackFR8ztaskbox
-/* 80162F5C 0015FD5C  80 AD CF B8 */	lwz r5, tcb__8ztaskbox-_SDA_BASE_(r13)
+/* 80162F5C 0015FD5C  80 AD CF B8 */	lwz r5, tcb__8ztaskbox@sda21(r13)
 /* 80162F60 0015FD60  7F E3 FB 78 */	mr r3, r31
 /* 80162F64 0015FD64  7F C4 F3 78 */	mr r4, r30
 /* 80162F68 0015FD68  7F A6 EB 78 */	mr r6, r29
@@ -206,7 +206,7 @@ lbl_80162FC0:
 /* 80162FD4 0015FDD4  40 82 00 08 */	bne lbl_80162FDC
 /* 80162FD8 0015FDD8  48 00 00 30 */	b lbl_80163008
 lbl_80162FDC:
-/* 80162FDC 0015FDDC  80 0D CF BC */	lwz r0, shared__22_esc__2_unnamed_esc__2_zTaskBox_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80162FDC 0015FDDC  80 0D CF BC */	lwz r0, shared__22_esc__2_unnamed_esc__2_zTaskBox_cpp_esc__2_@sda21(r13)
 /* 80162FE0 0015FDE0  7C 00 18 40 */	cmplw r0, r3
 /* 80162FE4 0015FDE4  40 82 00 24 */	bne lbl_80163008
 /* 80162FE8 0015FDE8  80 63 00 14 */	lwz r3, 0x14(r3)
@@ -216,7 +216,7 @@ lbl_80162FDC:
 /* 80162FF8 0015FDF8  41 82 00 10 */	beq lbl_80163008
 /* 80162FFC 0015FDFC  4B FF ED D9 */	bl stop_talk__8ztalkboxFv
 /* 80163000 0015FE00  38 00 00 00 */	li r0, 0
-/* 80163004 0015FE04  90 0D CF BC */	stw r0, shared__22_esc__2_unnamed_esc__2_zTaskBox_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80163004 0015FE04  90 0D CF BC */	stw r0, shared__22_esc__2_unnamed_esc__2_zTaskBox_cpp_esc__2_@sda21(r13)
 lbl_80163008:
 /* 80163008 0015FE08  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016300C 0015FE0C  7C 08 03 A6 */	mtlr r0
@@ -384,17 +384,17 @@ init__8ztaskboxFv:
 /* 80163204 00160004  7C 08 02 A6 */	mflr r0
 /* 80163208 00160008  38 60 00 00 */	li r3, 0
 /* 8016320C 0016000C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80163210 00160010  88 0D CF C0 */	lbz r0, init_esc__7_952-_SDA_BASE_(r13)
-/* 80163214 00160014  90 6D CF BC */	stw r3, shared__22_esc__2_unnamed_esc__2_zTaskBox_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80163210 00160010  88 0D CF C0 */	lbz r0, init_esc__7_952@sda21(r13)
+/* 80163214 00160014  90 6D CF BC */	stw r3, shared__22_esc__2_unnamed_esc__2_zTaskBox_cpp_esc__2_@sda21(r13)
 /* 80163218 00160018  7C 00 07 75 */	extsb. r0, r0
 /* 8016321C 0016001C  40 82 00 14 */	bne lbl_80163230
-/* 80163220 00160020  38 6D CF C4 */	addi r3, r13, tcb_esc__7_951-_SDA_BASE_
+/* 80163220 00160020  38 6D CF C4 */	addi r3, r13, tcb_esc__7_951@sda21
 /* 80163224 00160024  48 00 00 25 */	bl __ct__Q28ztaskbox13talk_callbackFv
 /* 80163228 00160028  38 00 00 01 */	li r0, 1
-/* 8016322C 0016002C  98 0D CF C0 */	stb r0, init_esc__7_952-_SDA_BASE_(r13)
+/* 8016322C 0016002C  98 0D CF C0 */	stb r0, init_esc__7_952@sda21(r13)
 lbl_80163230:
-/* 80163230 00160030  38 0D CF C4 */	addi r0, r13, tcb_esc__7_951-_SDA_BASE_
-/* 80163234 00160034  90 0D CF B8 */	stw r0, tcb__8ztaskbox-_SDA_BASE_(r13)
+/* 80163230 00160030  38 0D CF C4 */	addi r0, r13, tcb_esc__7_951@sda21
+/* 80163234 00160034  90 0D CF B8 */	stw r0, tcb__8ztaskbox@sda21(r13)
 /* 80163238 00160038  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8016323C 0016003C  7C 08 03 A6 */	mtlr r0
 /* 80163240 00160040  38 21 00 10 */	addi r1, r1, 0x10
@@ -408,7 +408,7 @@ __ct__Q28ztaskbox13talk_callbackFv:
 /* 80163254 00160054  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80163258 00160058  7C 7F 1B 78 */	mr r31, r3
 /* 8016325C 0016005C  48 00 00 25 */	bl __ct__Q28ztalkbox8callbackFv
-/* 80163260 00160060  38 0D A0 78 */	addi r0, r13, __vt__Q28ztaskbox13talk_callback-_SDA_BASE_
+/* 80163260 00160060  38 0D A0 78 */	addi r0, r13, __vt__Q28ztaskbox13talk_callback@sda21
 /* 80163264 00160064  7F E3 FB 78 */	mr r3, r31
 /* 80163268 00160068  90 1F 00 00 */	stw r0, 0(r31)
 /* 8016326C 0016006C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -419,7 +419,7 @@ __ct__Q28ztaskbox13talk_callbackFv:
 
 .global __ct__Q28ztalkbox8callbackFv
 __ct__Q28ztalkbox8callbackFv:
-/* 80163280 00160080  38 0D A0 60 */	addi r0, r13, __vt__Q28ztalkbox8callback-_SDA_BASE_
+/* 80163280 00160080  38 0D A0 60 */	addi r0, r13, __vt__Q28ztalkbox8callback@sda21
 /* 80163284 00160084  90 03 00 00 */	stw r0, 0(r3)
 /* 80163288 00160088  4E 80 00 20 */	blr 
 

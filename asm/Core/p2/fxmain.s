@@ -131,15 +131,15 @@ lbl_801D828C:
 FxOpen__Fv:
 /* 801D82A4 001D50A4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801D82A8 001D50A8  7C 08 02 A6 */	mflr r0
-/* 801D82AC 001D50AC  38 AD AB 30 */	addi r5, r13, FxFrameArray-_SDA_BASE_
-/* 801D82B0 001D50B0  38 6D AB 30 */	addi r3, r13, FxFrameArray-_SDA_BASE_
+/* 801D82AC 001D50AC  38 AD AB 30 */	addi r5, r13, FxFrameArray@sda21
+/* 801D82B0 001D50B0  38 6D AB 30 */	addi r3, r13, FxFrameArray@sda21
 /* 801D82B4 001D50B4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801D82B8 001D50B8  38 00 00 00 */	li r0, 0
 /* 801D82BC 001D50BC  BF A1 00 14 */	stmw r29, 0x14(r1)
-/* 801D82C0 001D50C0  80 8D DA 6C */	lwz r4, iWaterDirectionalLight-_SDA_BASE_(r13)
+/* 801D82C0 001D50C0  80 8D DA 6C */	lwz r4, iWaterDirectionalLight@sda21(r13)
 /* 801D82C4 001D50C4  80 C4 00 04 */	lwz r6, 4(r4)
 /* 801D82C8 001D50C8  38 80 00 02 */	li r4, 2
-/* 801D82CC 001D50CC  90 CD AB 30 */	stw r6, FxFrameArray-_SDA_BASE_(r13)
+/* 801D82CC 001D50CC  90 CD AB 30 */	stw r6, FxFrameArray@sda21(r13)
 /* 801D82D0 001D50D0  90 05 00 04 */	stw r0, 4(r5)
 /* 801D82D4 001D50D4  48 0F 62 71 */	bl RpGameCubeMTSetMiscFrameArray
 /* 801D82D8 001D50D8  48 00 06 B9 */	bl TexturesOpen__Fv
@@ -148,16 +148,16 @@ FxOpen__Fv:
 /* 801D82E4 001D50E4  38 60 00 00 */	li r3, 0
 /* 801D82E8 001D50E8  48 00 00 6C */	b lbl_801D8354
 lbl_801D82EC:
-/* 801D82EC 001D50EC  81 8D AB 38 */	lwz r12, EffectOpenFunctions-_SDA_BASE_(r13)
+/* 801D82EC 001D50EC  81 8D AB 38 */	lwz r12, EffectOpenFunctions@sda21(r13)
 /* 801D82F0 001D50F0  3B A0 00 00 */	li r29, 0
-/* 801D82F4 001D50F4  3B CD DA D4 */	addi r30, r13, Effects-_SDA_BASE_
-/* 801D82F8 001D50F8  3B ED DA D0 */	addi r31, r13, EffectNames-_SDA_BASE_
+/* 801D82F4 001D50F4  3B CD DA D4 */	addi r30, r13, Effects@sda21
+/* 801D82F8 001D50F8  3B ED DA D0 */	addi r31, r13, EffectNames@sda21
 /* 801D82FC 001D50FC  7D 89 03 A6 */	mtctr r12
 /* 801D8300 001D5100  4E 80 04 21 */	bctrl 
 /* 801D8304 001D5104  28 1D 00 00 */	cmplwi r29, 0
 /* 801D8308 001D5108  90 7E 00 00 */	stw r3, 0(r30)
 /* 801D830C 001D510C  40 82 00 08 */	bne lbl_801D8314
-/* 801D8310 001D5110  90 6D DA 70 */	stw r3, iWaterEMBM-_SDA_BASE_(r13)
+/* 801D8310 001D5110  90 6D DA 70 */	stw r3, iWaterEMBM@sda21(r13)
 lbl_801D8314:
 /* 801D8314 001D5114  80 7E 00 00 */	lwz r3, 0(r30)
 /* 801D8318 001D5118  28 03 00 00 */	cmplwi r3, 0
@@ -167,8 +167,8 @@ lbl_801D8314:
 lbl_801D8328:
 /* 801D8328 001D5128  80 63 00 04 */	lwz r3, 4(r3)
 /* 801D832C 001D512C  48 0F 93 0D */	bl RpMTEffectGetName
-/* 801D8330 001D5130  80 0D DA D8 */	lwz r0, EffectIndex-_SDA_BASE_(r13)
-/* 801D8334 001D5134  38 8D DA D4 */	addi r4, r13, Effects-_SDA_BASE_
+/* 801D8330 001D5130  80 0D DA D8 */	lwz r0, EffectIndex@sda21(r13)
+/* 801D8334 001D5134  38 8D DA D4 */	addi r4, r13, Effects@sda21
 /* 801D8338 001D5138  90 7F 00 00 */	stw r3, 0(r31)
 /* 801D833C 001D513C  54 00 10 3A */	slwi r0, r0, 2
 /* 801D8340 001D5140  7C 64 00 2E */	lwzx r3, r4, r0
@@ -187,9 +187,9 @@ lbl_801D8354:
 FxClose__Fv:
 /* 801D8368 001D5168  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D836C 001D516C  7C 08 02 A6 */	mflr r0
-/* 801D8370 001D5170  38 6D DA D4 */	addi r3, r13, Effects-_SDA_BASE_
+/* 801D8370 001D5170  38 6D DA D4 */	addi r3, r13, Effects@sda21
 /* 801D8374 001D5174  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801D8378 001D5178  80 6D DA D4 */	lwz r3, Effects-_SDA_BASE_(r13)
+/* 801D8378 001D5178  80 6D DA D4 */	lwz r3, Effects@sda21(r13)
 /* 801D837C 001D517C  81 83 00 10 */	lwz r12, 0x10(r3)
 /* 801D8380 001D5180  28 0C 00 00 */	cmplwi r12, 0
 /* 801D8384 001D5184  41 82 00 0C */	beq lbl_801D8390

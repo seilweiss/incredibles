@@ -11,7 +11,6 @@
 	.long __sinit_xParticleBatch_cpp
 	.long __sinit_zInteraction_cpp
 	.long __sinit_zParticleFXCommon_cpp
-	.skip 0x8
 
 .section .ctors$10
 .global __init_cpp_exceptions_reference

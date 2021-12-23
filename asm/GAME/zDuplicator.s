@@ -168,7 +168,7 @@ zEntEvent__FP5xBaseP5xBaseUiPCfP5xBaseUi:
 
 .global __ct__11zDuplicatorFv
 __ct__11zDuplicatorFv:
-/* 800AF11C 000ABF1C  38 0D 8C 98 */	addi r0, r13, __vt__11zDuplicator-_SDA_BASE_
+/* 800AF11C 000ABF1C  38 0D 8C 98 */	addi r0, r13, __vt__11zDuplicator@sda21
 /* 800AF120 000ABF20  90 03 00 D8 */	stw r0, 0xd8(r3)
 /* 800AF124 000ABF24  4E 80 00 20 */	blr 
 
@@ -193,7 +193,7 @@ init__11zDuplicatorFP6zSceneP16zDuplicatorAssetUi:
 /* 800AF168 000ABF68  90 7A 00 0C */	stw r3, 0xc(r26)
 /* 800AF16C 000ABF6C  98 1A 00 E0 */	stb r0, 0xe0(r26)
 /* 800AF170 000ABF70  A0 1C 00 0A */	lhz r0, 0xa(r28)
-/* 800AF174 000ABF74  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 800AF174 000ABF74  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 800AF178 000ABF78  54 04 10 3A */	slwi r4, r0, 2
 /* 800AF17C 000ABF7C  4B F9 A9 E5 */	bl xMemAlloc__FUiUii
 /* 800AF180 000ABF80  90 7A 00 F8 */	stw r3, 0xf8(r26)
@@ -224,7 +224,7 @@ init__11zDuplicatorFP6zSceneP16zDuplicatorAssetUi:
 /* 800AF1E4 000ABFE4  38 84 BB 70 */	addi r4, r4, _esc__2_stringBase0_48@l
 /* 800AF1E8 000ABFE8  4B FB DA C9 */	bl xStrHashCat__FUiPCc
 /* 800AF1EC 000ABFEC  7C 78 1B 78 */	mr r24, r3
-/* 800AF1F0 000ABFF0  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 800AF1F0 000ABFF0  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 800AF1F4 000ABFF4  38 80 00 70 */	li r4, 0x70
 /* 800AF1F8 000ABFF8  38 A0 00 00 */	li r5, 0
 /* 800AF1FC 000ABFFC  4B F9 A9 65 */	bl xMemAlloc__FUiUii
@@ -271,7 +271,7 @@ lbl_800AF280:
 /* 800AF298 000AC098  38 81 00 08 */	addi r4, r1, 8
 /* 800AF29C 000AC09C  4B FB DA 15 */	bl xStrHashCat__FUiPCc
 /* 800AF2A0 000AC0A0  7C 79 1B 78 */	mr r25, r3
-/* 800AF2A4 000AC0A4  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 800AF2A4 000AC0A4  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 800AF2A8 000AC0A8  38 80 00 70 */	li r4, 0x70
 /* 800AF2AC 000AC0AC  38 A0 00 00 */	li r5, 0
 /* 800AF2B0 000AC0B0  4B F9 A8 B1 */	bl xMemAlloc__FUiUii
@@ -344,7 +344,7 @@ reset__11zDuplicatorFv:
 /* 800AF39C 000AC19C  38 60 00 01 */	li r3, 1
 /* 800AF3A0 000AC1A0  38 00 00 00 */	li r0, 0
 /* 800AF3A4 000AC1A4  98 7F 00 E1 */	stb r3, 0xe1(r31)
-/* 800AF3A8 000AC1A8  C0 02 9A 70 */	lfs f0, _esc__2_1026_1-_SDA2_BASE_(r2)
+/* 800AF3A8 000AC1A8  C0 02 9A 70 */	lfs f0, _esc__2_1026_1@sda21(r2)
 /* 800AF3AC 000AC1AC  98 7F 00 E0 */	stb r3, 0xe0(r31)
 /* 800AF3B0 000AC1B0  90 1F 00 E4 */	stw r0, 0xe4(r31)
 /* 800AF3B4 000AC1B4  90 1F 00 E8 */	stw r0, 0xe8(r31)
@@ -509,7 +509,7 @@ lbl_800AF5C8:
 /* 800AF5DC 000AC3DC  40 82 00 50 */	bne lbl_800AF62C
 lbl_800AF5E0:
 /* 800AF5E0 000AC3E0  C0 3F 00 F4 */	lfs f1, 0xf4(r31)
-/* 800AF5E4 000AC3E4  C0 02 9A 70 */	lfs f0, _esc__2_1026_1-_SDA2_BASE_(r2)
+/* 800AF5E4 000AC3E4  C0 02 9A 70 */	lfs f0, _esc__2_1026_1@sda21(r2)
 /* 800AF5E8 000AC3E8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800AF5EC 000AC3EC  40 80 00 14 */	bge lbl_800AF600
 /* 800AF5F0 000AC3F0  C0 04 00 10 */	lfs f0, 0x10(r4)
@@ -692,7 +692,7 @@ lbl_800AF854:
 /* 800AF860 000AC660  28 03 00 05 */	cmplwi r3, 5
 /* 800AF864 000AC664  41 82 00 18 */	beq lbl_800AF87C
 /* 800AF868 000AC668  3C 60 80 2E */	lis r3, _esc__2_stringBase0_48@ha
-/* 800AF86C 000AC66C  C0 22 9A 74 */	lfs f1, _esc__2_1148_0-_SDA2_BASE_(r2)
+/* 800AF86C 000AC66C  C0 22 9A 74 */	lfs f1, _esc__2_1148_0@sda21(r2)
 /* 800AF870 000AC670  38 63 BB 70 */	addi r3, r3, _esc__2_stringBase0_48@l
 /* 800AF874 000AC674  38 63 00 0A */	addi r3, r3, 0xa
 /* 800AF878 000AC678  48 11 82 29 */	bl add__5statsFPCcf

@@ -60,7 +60,7 @@ sMaterialFlags:
 sLastMaterial:
 	.skip 0x8
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global _esc__2_1004_4
 _esc__2_1004_4:
@@ -180,12 +180,12 @@ iModelInit__Fv:
 /* 800790C0 00075EC0  7C 08 02 A6 */	mflr r0
 /* 800790C4 00075EC4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 800790C8 00075EC8  BF A1 00 24 */	stmw r29, 0x24(r1)
-/* 800790CC 00075ECC  80 0D C0 6C */	lwz r0, sEmptyDirectionalLight-_SDA_BASE_(r13)
-/* 800790D0 00075ED0  80 A2 EC 50 */	lwz r5, _esc__2_1004_4-_SDA2_BASE_(r2)
-/* 800790D4 00075ED4  80 82 EC 54 */	lwz r4, lbl_803D8974-_SDA2_BASE_(r2)
+/* 800790CC 00075ECC  80 0D C0 6C */	lwz r0, sEmptyDirectionalLight@sda21(r13)
+/* 800790D0 00075ED0  80 A2 EC 50 */	lwz r5, _esc__2_1004_4@sda21(r2)
+/* 800790D4 00075ED4  80 82 EC 54 */	lwz r4, lbl_803D8974@sda21(r2)
 /* 800790D8 00075ED8  28 00 00 00 */	cmplwi r0, 0
-/* 800790DC 00075EDC  80 62 EC 58 */	lwz r3, lbl_803D8978-_SDA2_BASE_(r2)
-/* 800790E0 00075EE0  80 02 EC 5C */	lwz r0, lbl_803D897C-_SDA2_BASE_(r2)
+/* 800790DC 00075EDC  80 62 EC 58 */	lwz r3, lbl_803D8978@sda21(r2)
+/* 800790E0 00075EE0  80 02 EC 5C */	lwz r0, lbl_803D897C@sda21(r2)
 /* 800790E4 00075EE4  90 A1 00 08 */	stw r5, 8(r1)
 /* 800790E8 00075EE8  90 81 00 0C */	stw r4, 0xc(r1)
 /* 800790EC 00075EEC  90 61 00 10 */	stw r3, 0x10(r1)
@@ -193,7 +193,7 @@ iModelInit__Fv:
 /* 800790F4 00075EF4  40 82 00 60 */	bne lbl_80079154
 /* 800790F8 00075EF8  3B A0 00 00 */	li r29, 0
 /* 800790FC 00075EFC  3B E0 00 00 */	li r31, 0
-/* 80079100 00075F00  3B CD C0 6C */	addi r30, r13, sEmptyDirectionalLight-_SDA_BASE_
+/* 80079100 00075F00  3B CD C0 6C */	addi r30, r13, sEmptyDirectionalLight@sda21
 lbl_80079104:
 /* 80079104 00075F04  38 60 00 01 */	li r3, 1
 /* 80079108 00075F08  48 1F 70 91 */	bl RpLightCreate
@@ -212,7 +212,7 @@ lbl_80079104:
 /* 8007913C 00075F3C  41 80 FF C8 */	blt lbl_80079104
 /* 80079140 00075F40  38 60 00 02 */	li r3, 2
 /* 80079144 00075F44  48 1F 70 55 */	bl RpLightCreate
-/* 80079148 00075F48  90 6D C0 7C */	stw r3, sEmptyAmbientLight-_SDA_BASE_(r13)
+/* 80079148 00075F48  90 6D C0 7C */	stw r3, sEmptyAmbientLight@sda21(r13)
 /* 8007914C 00075F4C  38 81 00 08 */	addi r4, r1, 8
 /* 80079150 00075F50  48 1F 69 7D */	bl RpLightSetColor
 lbl_80079154:
@@ -228,13 +228,13 @@ iModelDeInit__Fv:
 /* 8007916C 00075F6C  7C 08 02 A6 */	mflr r0
 /* 80079170 00075F70  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80079174 00075F74  BF 81 00 10 */	stmw r28, 0x10(r1)
-/* 80079178 00075F78  80 0D C0 6C */	lwz r0, sEmptyDirectionalLight-_SDA_BASE_(r13)
+/* 80079178 00075F78  80 0D C0 6C */	lwz r0, sEmptyDirectionalLight@sda21(r13)
 /* 8007917C 00075F7C  28 00 00 00 */	cmplwi r0, 0
 /* 80079180 00075F80  41 82 00 4C */	beq lbl_800791CC
 /* 80079184 00075F84  3B E0 00 00 */	li r31, 0
 /* 80079188 00075F88  3B 80 00 00 */	li r28, 0
 /* 8007918C 00075F8C  7F FE FB 78 */	mr r30, r31
-/* 80079190 00075F90  3B AD C0 6C */	addi r29, r13, sEmptyDirectionalLight-_SDA_BASE_
+/* 80079190 00075F90  3B AD C0 6C */	addi r29, r13, sEmptyDirectionalLight@sda21
 lbl_80079194:
 /* 80079194 00075F94  7C 7D F8 2E */	lwzx r3, r29, r31
 /* 80079198 00075F98  80 63 00 04 */	lwz r3, 4(r3)
@@ -246,10 +246,10 @@ lbl_80079194:
 /* 800791B0 00075FB0  2C 1C 00 04 */	cmpwi r28, 4
 /* 800791B4 00075FB4  3B FF 00 04 */	addi r31, r31, 4
 /* 800791B8 00075FB8  41 80 FF DC */	blt lbl_80079194
-/* 800791BC 00075FBC  80 6D C0 7C */	lwz r3, sEmptyAmbientLight-_SDA_BASE_(r13)
+/* 800791BC 00075FBC  80 6D C0 7C */	lwz r3, sEmptyAmbientLight@sda21(r13)
 /* 800791C0 00075FC0  48 1F 6F 79 */	bl RpLightDestroy
 /* 800791C4 00075FC4  38 00 00 00 */	li r0, 0
-/* 800791C8 00075FC8  90 0D C0 7C */	stw r0, sEmptyAmbientLight-_SDA_BASE_(r13)
+/* 800791C8 00075FC8  90 0D C0 7C */	stw r0, sEmptyAmbientLight@sda21(r13)
 lbl_800791CC:
 /* 800791CC 00075FCC  BB 81 00 10 */	lmw r28, 0x10(r1)
 /* 800791D0 00075FD0  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -307,13 +307,13 @@ lbl_80079270:
 lbl_80079288:
 /* 80079288 00076088  80 7D 00 04 */	lwz r3, 4(r29)
 /* 8007928C 0007608C  48 21 B8 39 */	bl RwFrameGetRoot
-/* 80079290 00076090  80 AD C0 68 */	lwz r5, gLastAtomicCount-_SDA_BASE_(r13)
+/* 80079290 00076090  80 AD C0 68 */	lwz r5, gLastAtomicCount@sda21(r13)
 /* 80079294 00076094  28 05 01 00 */	cmplwi r5, 0x100
 /* 80079298 00076098  40 80 00 1C */	bge lbl_800792B4
 /* 8007929C 0007609C  3C 60 80 35 */	lis r3, gLastAtomicList@ha
 /* 800792A0 000760A0  38 85 00 01 */	addi r4, r5, 1
 /* 800792A4 000760A4  54 A0 10 3A */	slwi r0, r5, 2
-/* 800792A8 000760A8  90 8D C0 68 */	stw r4, gLastAtomicCount-_SDA_BASE_(r13)
+/* 800792A8 000760A8  90 8D C0 68 */	stw r4, gLastAtomicCount@sda21(r13)
 /* 800792AC 000760AC  38 63 51 C0 */	addi r3, r3, gLastAtomicList@l
 /* 800792B0 000760B0  7F A3 01 2E */	stwx r29, r3, r0
 lbl_800792B4:
@@ -332,14 +332,14 @@ iModelStreamRead__FP8RwStream:
 /* 800792D8 000760D8  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 800792DC 000760DC  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
 /* 800792E0 000760E0  BF 21 00 24 */	stmw r25, 0x24(r1)
-/* 800792E4 000760E4  88 0D C0 84 */	lbz r0, init_esc__7_1048-_SDA_BASE_(r13)
+/* 800792E4 000760E4  88 0D C0 84 */	lbz r0, init_esc__7_1048@sda21(r13)
 /* 800792E8 000760E8  7C 79 1B 78 */	mr r25, r3
 /* 800792EC 000760EC  7C 00 07 75 */	extsb. r0, r0
 /* 800792F0 000760F0  40 82 00 14 */	bne lbl_80079304
 /* 800792F4 000760F4  38 60 00 00 */	li r3, 0
 /* 800792F8 000760F8  38 00 00 01 */	li r0, 1
-/* 800792FC 000760FC  90 6D C0 80 */	stw r3, num_models_esc__7_1047-_SDA_BASE_(r13)
-/* 80079300 00076100  98 0D C0 84 */	stb r0, init_esc__7_1048-_SDA_BASE_(r13)
+/* 800792FC 000760FC  90 6D C0 80 */	stw r3, num_models_esc__7_1047@sda21(r13)
+/* 80079300 00076100  98 0D C0 84 */	stb r0, init_esc__7_1048@sda21(r13)
 lbl_80079304:
 /* 80079304 00076104  28 19 00 00 */	cmplwi r25, 0
 /* 80079308 00076108  40 82 00 0C */	bne lbl_80079314
@@ -373,7 +373,7 @@ lbl_80079344:
 lbl_80079370:
 /* 80079370 00076170  38 00 00 03 */	li r0, 3
 /* 80079374 00076174  38 A1 00 04 */	addi r5, r1, 4
-/* 80079378 00076178  38 82 91 74 */	addi r4, r2, lbl_803D2E94-_SDA2_BASE_
+/* 80079378 00076178  38 82 91 74 */	addi r4, r2, lbl_803D2E94@sda21
 /* 8007937C 0007617C  7C 09 03 A6 */	mtctr r0
 lbl_80079380:
 /* 80079380 00076180  80 64 00 04 */	lwz r3, 4(r4)
@@ -383,34 +383,34 @@ lbl_80079380:
 /* 80079390 00076190  42 00 FF F0 */	bdnz lbl_80079380
 /* 80079394 00076194  38 61 00 08 */	addi r3, r1, 8
 /* 80079398 00076198  48 1F C9 B1 */	bl RpWorldCreate
-/* 8007939C 0007619C  90 6D C0 60 */	stw r3, instance_world-_SDA_BASE_(r13)
+/* 8007939C 0007619C  90 6D C0 60 */	stw r3, instance_world@sda21(r13)
 /* 800793A0 000761A0  38 A0 00 00 */	li r5, 0
-/* 800793A4 000761A4  80 6D 91 C4 */	lwz r3, FB_XRES-_SDA_BASE_(r13)
-/* 800793A8 000761A8  80 8D 91 C8 */	lwz r4, FB_YRES-_SDA_BASE_(r13)
+/* 800793A4 000761A4  80 6D 91 C4 */	lwz r3, FB_XRES@sda21(r13)
+/* 800793A8 000761A8  80 8D 91 C8 */	lwz r4, FB_YRES@sda21(r13)
 /* 800793AC 000761AC  4B F8 C4 C1 */	bl iCameraCreate__Fiii
 /* 800793B0 000761B0  7C 64 1B 78 */	mr r4, r3
-/* 800793B4 000761B4  80 6D C0 60 */	lwz r3, instance_world-_SDA_BASE_(r13)
-/* 800793B8 000761B8  90 8D C0 64 */	stw r4, instance_camera-_SDA_BASE_(r13)
+/* 800793B4 000761B4  80 6D C0 60 */	lwz r3, instance_world@sda21(r13)
+/* 800793B8 000761B8  90 8D C0 64 */	stw r4, instance_camera@sda21(r13)
 /* 800793BC 000761BC  48 1F E8 11 */	bl RpWorldAddCamera
 /* 800793C0 000761C0  38 00 00 00 */	li r0, 0
 /* 800793C4 000761C4  3C 60 80 08 */	lis r3, FindAndInstanceAtomicCallback__FP8RpAtomicPv@ha
-/* 800793C8 000761C8  90 0D C0 68 */	stw r0, gLastAtomicCount-_SDA_BASE_(r13)
+/* 800793C8 000761C8  90 0D C0 68 */	stw r0, gLastAtomicCount@sda21(r13)
 /* 800793CC 000761CC  38 83 91 E0 */	addi r4, r3, FindAndInstanceAtomicCallback__FP8RpAtomicPv@l
 /* 800793D0 000761D0  7F 43 D3 78 */	mr r3, r26
 /* 800793D4 000761D4  38 A0 00 00 */	li r5, 0
 /* 800793D8 000761D8  48 1F 1D 05 */	bl RpClumpForAllAtomics
-/* 800793DC 000761DC  80 6D C0 60 */	lwz r3, instance_world-_SDA_BASE_(r13)
-/* 800793E0 000761E0  80 8D C0 64 */	lwz r4, instance_camera-_SDA_BASE_(r13)
+/* 800793DC 000761DC  80 6D C0 60 */	lwz r3, instance_world@sda21(r13)
+/* 800793E0 000761E0  80 8D C0 64 */	lwz r4, instance_camera@sda21(r13)
 /* 800793E4 000761E4  48 1F E8 3D */	bl RpWorldRemoveCamera
-/* 800793E8 000761E8  80 6D C0 64 */	lwz r3, instance_camera-_SDA_BASE_(r13)
+/* 800793E8 000761E8  80 6D C0 64 */	lwz r3, instance_camera@sda21(r13)
 /* 800793EC 000761EC  4B F8 C6 31 */	bl iCameraDestroy__FP8RwCamera
-/* 800793F0 000761F0  80 6D C0 60 */	lwz r3, instance_world-_SDA_BASE_(r13)
+/* 800793F0 000761F0  80 6D C0 60 */	lwz r3, instance_world@sda21(r13)
 /* 800793F4 000761F4  48 1F C7 BD */	bl RpWorldDestroy
-/* 800793F8 000761F8  80 0D C0 68 */	lwz r0, gLastAtomicCount-_SDA_BASE_(r13)
+/* 800793F8 000761F8  80 0D C0 68 */	lwz r0, gLastAtomicCount@sda21(r13)
 /* 800793FC 000761FC  28 00 00 01 */	cmplwi r0, 1
 /* 80079400 00076200  40 81 01 10 */	ble lbl_80079510
 /* 80079404 00076204  3C 60 80 35 */	lis r3, gLastAtomicList@ha
-/* 80079408 00076208  C3 E2 91 90 */	lfs f31, _esc__2_1170-_SDA2_BASE_(r2)
+/* 80079408 00076208  C3 E2 91 90 */	lfs f31, _esc__2_1170@sda21(r2)
 /* 8007940C 0007620C  38 A3 51 C0 */	addi r5, r3, gLastAtomicList@l
 /* 80079410 00076210  3B C0 00 00 */	li r30, 0
 /* 80079414 00076214  38 C0 00 00 */	li r6, 0
@@ -454,10 +454,10 @@ lbl_80079498:
 /* 80079498 00076298  3B 5A 00 01 */	addi r26, r26, 1
 /* 8007949C 0007629C  3B BD 00 04 */	addi r29, r29, 4
 lbl_800794A0:
-/* 800794A0 000762A0  80 0D C0 68 */	lwz r0, gLastAtomicCount-_SDA_BASE_(r13)
+/* 800794A0 000762A0  80 0D C0 68 */	lwz r0, gLastAtomicCount@sda21(r13)
 /* 800794A4 000762A4  7C 1A 00 40 */	cmplw r26, r0
 /* 800794A8 000762A8  41 80 FF BC */	blt lbl_80079464
-/* 800794AC 000762AC  C0 02 91 94 */	lfs f0, _esc__2_1171-_SDA2_BASE_(r2)
+/* 800794AC 000762AC  C0 02 91 94 */	lfs f0, _esc__2_1171@sda21(r2)
 /* 800794B0 000762B0  3C 60 80 35 */	lis r3, gLastAtomicList@ha
 /* 800794B4 000762B4  3B 83 51 C0 */	addi r28, r3, gLastAtomicList@l
 /* 800794B8 000762B8  3B 40 00 00 */	li r26, 0
@@ -482,7 +482,7 @@ lbl_800794E4:
 /* 800794FC 000762FC  54 00 07 FA */	rlwinm r0, r0, 0, 0x1f, 0x1d
 /* 80079500 00076300  90 03 00 4C */	stw r0, 0x4c(r3)
 lbl_80079504:
-/* 80079504 00076304  80 0D C0 68 */	lwz r0, gLastAtomicCount-_SDA_BASE_(r13)
+/* 80079504 00076304  80 0D C0 68 */	lwz r0, gLastAtomicCount@sda21(r13)
 /* 80079508 00076308  7C 1A 00 40 */	cmplw r26, r0
 /* 8007950C 0007630C  41 80 FF BC */	blt lbl_800794C8
 lbl_80079510:
@@ -506,11 +506,11 @@ lbl_8007954C:
 /* 8007954C 0007634C  3B 5A 00 01 */	addi r26, r26, 1
 /* 80079550 00076350  3B DE 00 04 */	addi r30, r30, 4
 lbl_80079554:
-/* 80079554 00076354  80 0D C0 68 */	lwz r0, gLastAtomicCount-_SDA_BASE_(r13)
+/* 80079554 00076354  80 0D C0 68 */	lwz r0, gLastAtomicCount@sda21(r13)
 /* 80079558 00076358  7C 1A 00 40 */	cmplw r26, r0
 /* 8007955C 0007635C  41 80 FF C8 */	blt lbl_80079524
 /* 80079560 00076360  3C 60 80 35 */	lis r3, gLastAtomicList@ha
-/* 80079564 00076364  C3 E2 91 98 */	lfs f31, _esc__2_1172-_SDA2_BASE_(r2)
+/* 80079564 00076364  C3 E2 91 98 */	lfs f31, _esc__2_1172@sda21(r2)
 /* 80079568 00076368  3B A3 51 C0 */	addi r29, r3, gLastAtomicList@l
 /* 8007956C 0007636C  3B 40 00 00 */	li r26, 0
 /* 80079570 00076370  3B C0 00 00 */	li r30, 0
@@ -548,7 +548,7 @@ lbl_800795D0:
 /* 800795DC 000763DC  3B 5A 00 01 */	addi r26, r26, 1
 /* 800795E0 000763E0  3B DE 00 04 */	addi r30, r30, 4
 lbl_800795E4:
-/* 800795E4 000763E4  80 0D C0 68 */	lwz r0, gLastAtomicCount-_SDA_BASE_(r13)
+/* 800795E4 000763E4  80 0D C0 68 */	lwz r0, gLastAtomicCount@sda21(r13)
 /* 800795E8 000763E8  7C 1A 00 40 */	cmplw r26, r0
 /* 800795EC 000763EC  41 80 FF 8C */	blt lbl_80079578
 /* 800795F0 000763F0  3C 60 80 35 */	lis r3, gLastAtomicList@ha
@@ -711,9 +711,9 @@ iModelAnimMatrices__FP8RpAtomicP5xQuatP5xVec3P11RwMatrixTag:
 /* 800797EC 000765EC  41 82 00 F4 */	beq lbl_800798E0
 /* 800797F0 000765F0  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 800797F4 000765F4  3B C1 00 C8 */	addi r30, r1, 0xc8
-/* 800797F8 000765F8  C0 02 91 9C */	lfs f0, _esc__2_1183_0-_SDA2_BASE_(r2)
+/* 800797F8 000765F8  C0 02 91 9C */	lfs f0, _esc__2_1183_0@sda21(r2)
 /* 800797FC 000765FC  7F C3 F3 78 */	mr r3, r30
-/* 80079800 00076600  C0 22 91 A0 */	lfs f1, _esc__2_1184_0-_SDA2_BASE_(r2)
+/* 80079800 00076600  C0 22 91 A0 */	lfs f1, _esc__2_1184_0@sda21(r2)
 /* 80079804 00076604  64 00 00 02 */	oris r0, r0, 2
 /* 80079808 00076608  60 00 00 03 */	ori r0, r0, 3
 /* 8007980C 0007660C  D0 01 00 98 */	stfs f0, 0x98(r1)
@@ -794,13 +794,13 @@ iModelRender__FP8RpAtomicP11RwMatrixTag:
 /* 80079908 00076708  7C 7B 1B 78 */	mr r27, r3
 /* 8007990C 0007670C  7C 9C 23 78 */	mr r28, r4
 /* 80079910 00076710  4B FF F7 79 */	bl iModelGetHierarchy__FP8RpAtomic
-/* 80079914 00076714  88 0D C0 8C */	lbz r0, init_esc__7_1298-_SDA_BASE_(r13)
+/* 80079914 00076714  88 0D C0 8C */	lbz r0, init_esc__7_1298@sda21(r13)
 /* 80079918 00076718  7C 7E 1B 78 */	mr r30, r3
 /* 8007991C 0007671C  7C 00 07 75 */	extsb. r0, r0
 /* 80079920 00076720  40 82 00 10 */	bne lbl_80079930
 /* 80079924 00076724  38 00 00 01 */	li r0, 1
-/* 80079928 00076728  90 0D C0 88 */	stw r0, draw_all_esc__7_1297-_SDA_BASE_(r13)
-/* 8007992C 0007672C  98 0D C0 8C */	stb r0, init_esc__7_1298-_SDA_BASE_(r13)
+/* 80079928 00076728  90 0D C0 88 */	stw r0, draw_all_esc__7_1297@sda21(r13)
+/* 8007992C 0007672C  98 0D C0 8C */	stb r0, init_esc__7_1298@sda21(r13)
 lbl_80079930:
 /* 80079930 00076730  28 1E 00 00 */	cmplwi r30, 0
 /* 80079934 00076734  41 82 00 10 */	beq lbl_80079944
@@ -921,7 +921,7 @@ lbl_80079A9C:
 iModelSetWorldBoundFromBox__FP8RpAtomicP4xBox:
 /* 80079AC4 000768C4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80079AC8 000768C8  7C 08 02 A6 */	mflr r0
-/* 80079ACC 000768CC  C0 82 91 98 */	lfs f4, _esc__2_1172-_SDA2_BASE_(r2)
+/* 80079ACC 000768CC  C0 82 91 98 */	lfs f4, _esc__2_1172@sda21(r2)
 /* 80079AD0 000768D0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80079AD4 000768D4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80079AD8 000768D8  7C 7F 1B 78 */	mr r31, r3
@@ -1046,9 +1046,9 @@ SkinXform__FP5xVec3PC5xVec3P11RwMatrixTagPC11RwMatrixTagPCfPCUiUi:
 /* 80079C74 00076A74  DB E1 00 50 */	stfd f31, 0x50(r1)
 /* 80079C78 00076A78  F3 E1 00 58 */	psq_st f31, 88(r1), 0, qr0
 /* 80079C7C 00076A7C  BE 41 00 18 */	stmw r18, 0x18(r1)
-/* 80079C80 00076A80  81 42 EC 60 */	lwz r10, _esc__2_1344_1-_SDA2_BASE_(r2)
+/* 80079C80 00076A80  81 42 EC 60 */	lwz r10, _esc__2_1344_1@sda21(r2)
 /* 80079C84 00076A84  7C 74 1B 78 */	mr r20, r3
-/* 80079C88 00076A88  80 02 EC 64 */	lwz r0, lbl_803D8984-_SDA2_BASE_(r2)
+/* 80079C88 00076A88  80 02 EC 64 */	lwz r0, lbl_803D8984@sda21(r2)
 /* 80079C8C 00076A8C  7C 95 23 78 */	mr r21, r4
 /* 80079C90 00076A90  91 41 00 08 */	stw r10, 8(r1)
 /* 80079C94 00076A94  7C B6 2B 78 */	mr r22, r5
@@ -1060,7 +1060,7 @@ SkinXform__FP5xVec3PC5xVec3P11RwMatrixTagPC11RwMatrixTagPCfPCUiUi:
 /* 80079CAC 00076AAC  38 60 10 00 */	li r3, 0x1000
 /* 80079CB0 00076AB0  38 80 00 00 */	li r4, 0
 /* 80079CB4 00076AB4  4B FD 04 0D */	bl xMemScratchPush__FUiUi
-/* 80079CB8 00076AB8  C3 E2 91 9C */	lfs f31, _esc__2_1183_0-_SDA2_BASE_(r2)
+/* 80079CB8 00076AB8  C3 E2 91 9C */	lfs f31, _esc__2_1183_0@sda21(r2)
 /* 80079CBC 00076ABC  7C 7C 1B 78 */	mr r28, r3
 /* 80079CC0 00076AC0  3B A1 00 08 */	addi r29, r1, 8
 /* 80079CC4 00076AC4  48 00 01 A4 */	b lbl_80079E68
@@ -1092,7 +1092,7 @@ lbl_80079D1C:
 /* 80079D20 00076B20  3A 73 00 08 */	addi r19, r19, 8
 /* 80079D24 00076B24  28 1B 00 04 */	cmplwi r27, 4
 /* 80079D28 00076B28  41 80 FF AC */	blt lbl_80079CD4
-/* 80079D2C 00076B2C  C0 02 91 9C */	lfs f0, _esc__2_1183_0-_SDA2_BASE_(r2)
+/* 80079D2C 00076B2C  C0 02 91 9C */	lfs f0, _esc__2_1183_0@sda21(r2)
 /* 80079D30 00076B30  7F 04 C3 78 */	mr r4, r24
 /* 80079D34 00076B34  80 B9 00 00 */	lwz r5, 0(r25)
 /* 80079D38 00076B38  38 C0 00 04 */	li r6, 4
@@ -1242,7 +1242,7 @@ lbl_80079F2C:
 lbl_80079F4C:
 /* 80079F4C 00076D4C  80 7C 00 0C */	lwz r3, 0xc(r28)
 /* 80079F50 00076D50  2C 1A 00 00 */	cmpwi r26, 0
-/* 80079F54 00076D54  C0 82 91 A4 */	lfs f4, _esc__2_1523-_SDA2_BASE_(r2)
+/* 80079F54 00076D54  C0 82 91 A4 */	lfs f4, _esc__2_1523@sda21(r2)
 /* 80079F58 00076D58  80 03 00 00 */	lwz r0, 0(r3)
 /* 80079F5C 00076D5C  38 C3 00 04 */	addi r6, r3, 4
 /* 80079F60 00076D60  41 80 00 0C */	blt lbl_80079F6C
@@ -1344,7 +1344,7 @@ iModelTagInternal__FP9xModelTagPC8RpAtomicfffi:
 lbl_8007A0AC:
 /* 8007A0AC 00076EAC  2C 1D 00 00 */	cmpwi r29, 0
 /* 8007A0B0 00076EB0  80 07 00 14 */	lwz r0, 0x14(r7)
-/* 8007A0B4 00076EB4  C0 E2 91 A4 */	lfs f7, _esc__2_1523-_SDA2_BASE_(r2)
+/* 8007A0B4 00076EB4  C0 E2 91 A4 */	lfs f7, _esc__2_1523@sda21(r2)
 /* 8007A0B8 00076EB8  41 80 00 0C */	blt lbl_8007A0C4
 /* 8007A0BC 00076EBC  7C 1D 00 00 */	cmpw r29, r0
 /* 8007A0C0 00076EC0  40 81 00 80 */	ble lbl_8007A140
@@ -1420,7 +1420,7 @@ lbl_8007A168:
 /* 8007A1C0 00076FC0  48 00 00 20 */	b lbl_8007A1E0
 lbl_8007A1C4:
 /* 8007A1C4 00076FC4  38 00 00 00 */	li r0, 0
-/* 8007A1C8 00076FC8  C0 02 91 9C */	lfs f0, _esc__2_1183_0-_SDA2_BASE_(r2)
+/* 8007A1C8 00076FC8  C0 02 91 9C */	lfs f0, _esc__2_1183_0@sda21(r2)
 /* 8007A1CC 00076FCC  90 1C 00 0C */	stw r0, 0xc(r28)
 /* 8007A1D0 00076FD0  D0 1C 00 10 */	stfs f0, 0x10(r28)
 /* 8007A1D4 00076FD4  D0 1C 00 14 */	stfs f0, 0x14(r28)
@@ -1451,7 +1451,7 @@ iModelTagSetup__FP9xModelTagPC8RpAtomicfff:
 iModelTagEval__FP8RpAtomicPC9xModelTagP11RwMatrixTagP5xVec3:
 /* 8007A21C 0007701C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8007A220 00077020  7C 08 02 A6 */	mflr r0
-/* 8007A224 00077024  C0 02 91 9C */	lfs f0, _esc__2_1183_0-_SDA2_BASE_(r2)
+/* 8007A224 00077024  C0 02 91 9C */	lfs f0, _esc__2_1183_0@sda21(r2)
 /* 8007A228 00077028  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8007A22C 0007702C  C0 24 00 10 */	lfs f1, 0x10(r4)
 /* 8007A230 00077030  BF A1 00 14 */	stmw r29, 0x14(r1)
@@ -1493,25 +1493,25 @@ iModelSetMaterialAlpha__FP8RpAtomicUc:
 /* 8007A2AC 000770AC  BF 41 00 18 */	stmw r26, 0x18(r1)
 /* 8007A2B0 000770B0  7C 7E 1B 78 */	mr r30, r3
 /* 8007A2B4 000770B4  7C 9F 23 78 */	mr r31, r4
-/* 8007A2B8 000770B8  80 0D C0 B8 */	lwz r0, sLastMaterial-_SDA_BASE_(r13)
+/* 8007A2B8 000770B8  80 0D C0 B8 */	lwz r0, sLastMaterial@sda21(r13)
 /* 8007A2BC 000770BC  83 63 00 18 */	lwz r27, 0x18(r3)
 /* 8007A2C0 000770C0  7C 1E 00 40 */	cmplw r30, r0
 /* 8007A2C4 000770C4  41 82 00 0C */	beq lbl_8007A2D0
 /* 8007A2C8 000770C8  38 00 00 00 */	li r0, 0
-/* 8007A2CC 000770CC  90 0D C0 B4 */	stw r0, sMaterialFlags-_SDA_BASE_(r13)
+/* 8007A2CC 000770CC  90 0D C0 B4 */	stw r0, sMaterialFlags@sda21(r13)
 lbl_8007A2D0:
 /* 8007A2D0 000770D0  80 1B 00 08 */	lwz r0, 8(r27)
 /* 8007A2D4 000770D4  60 00 00 40 */	ori r0, r0, 0x40
 /* 8007A2D8 000770D8  90 1B 00 08 */	stw r0, 8(r27)
 /* 8007A2DC 000770DC  80 1B 00 24 */	lwz r0, 0x24(r27)
 /* 8007A2E0 000770E0  28 00 00 20 */	cmplwi r0, 0x20
-/* 8007A2E4 000770E4  90 0D C0 B0 */	stw r0, sMaterialIdx-_SDA_BASE_(r13)
+/* 8007A2E4 000770E4  90 0D C0 B0 */	stw r0, sMaterialIdx@sda21(r13)
 /* 8007A2E8 000770E8  40 81 00 0C */	ble lbl_8007A2F4
 /* 8007A2EC 000770EC  38 00 00 20 */	li r0, 0x20
-/* 8007A2F0 000770F0  90 0D C0 B0 */	stw r0, sMaterialIdx-_SDA_BASE_(r13)
+/* 8007A2F0 000770F0  90 0D C0 B0 */	stw r0, sMaterialIdx@sda21(r13)
 lbl_8007A2F4:
 /* 8007A2F4 000770F4  3B 40 00 00 */	li r26, 0
-/* 8007A2F8 000770F8  3B AD C0 90 */	addi r29, r13, sMaterialAlpha-_SDA_BASE_
+/* 8007A2F8 000770F8  3B AD C0 90 */	addi r29, r13, sMaterialAlpha@sda21
 /* 8007A2FC 000770FC  3B 80 00 00 */	li r28, 0
 /* 8007A300 00077100  48 00 00 38 */	b lbl_8007A338
 lbl_8007A304:
@@ -1532,10 +1532,10 @@ lbl_8007A338:
 /* 8007A338 00077138  80 1B 00 24 */	lwz r0, 0x24(r27)
 /* 8007A33C 0007713C  7C 1A 00 00 */	cmpw r26, r0
 /* 8007A340 00077140  41 80 FF C4 */	blt lbl_8007A304
-/* 8007A344 00077144  80 0D C0 B4 */	lwz r0, sMaterialFlags-_SDA_BASE_(r13)
-/* 8007A348 00077148  93 CD C0 B8 */	stw r30, sLastMaterial-_SDA_BASE_(r13)
+/* 8007A344 00077144  80 0D C0 B4 */	lwz r0, sMaterialFlags@sda21(r13)
+/* 8007A348 00077148  93 CD C0 B8 */	stw r30, sLastMaterial@sda21(r13)
 /* 8007A34C 0007714C  60 00 00 01 */	ori r0, r0, 1
-/* 8007A350 00077150  90 0D C0 B4 */	stw r0, sMaterialFlags-_SDA_BASE_(r13)
+/* 8007A350 00077150  90 0D C0 B4 */	stw r0, sMaterialFlags@sda21(r13)
 /* 8007A354 00077154  BB 41 00 18 */	lmw r26, 0x18(r1)
 /* 8007A358 00077158  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8007A35C 0007715C  7C 08 03 A6 */	mtlr r0
@@ -1548,25 +1548,25 @@ iModelResetMaterial__FP8RpAtomic:
 /* 8007A36C 0007716C  7C 08 02 A6 */	mflr r0
 /* 8007A370 00077170  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8007A374 00077174  BF 81 00 20 */	stmw r28, 0x20(r1)
-/* 8007A378 00077178  80 0D C0 B8 */	lwz r0, sLastMaterial-_SDA_BASE_(r13)
+/* 8007A378 00077178  80 0D C0 B8 */	lwz r0, sLastMaterial@sda21(r13)
 /* 8007A37C 0007717C  7C 03 00 40 */	cmplw r3, r0
 /* 8007A380 00077180  41 82 00 0C */	beq lbl_8007A38C
 /* 8007A384 00077184  38 00 00 00 */	li r0, 0
-/* 8007A388 00077188  90 0D C0 B4 */	stw r0, sMaterialFlags-_SDA_BASE_(r13)
+/* 8007A388 00077188  90 0D C0 B4 */	stw r0, sMaterialFlags@sda21(r13)
 lbl_8007A38C:
 /* 8007A38C 0007718C  83 E3 00 18 */	lwz r31, 0x18(r3)
 /* 8007A390 00077190  3B C0 00 00 */	li r30, 0
 /* 8007A394 00077194  3B 80 00 00 */	li r28, 0
 /* 8007A398 00077198  48 00 00 C8 */	b lbl_8007A460
 lbl_8007A39C:
-/* 8007A39C 0007719C  80 8D C0 B4 */	lwz r4, sMaterialFlags-_SDA_BASE_(r13)
+/* 8007A39C 0007719C  80 8D C0 B4 */	lwz r4, sMaterialFlags@sda21(r13)
 /* 8007A3A0 000771A0  80 7F 00 20 */	lwz r3, 0x20(r31)
 /* 8007A3A4 000771A4  54 80 07 BE */	clrlwi r0, r4, 0x1e
 /* 8007A3A8 000771A8  28 00 00 03 */	cmplwi r0, 3
 /* 8007A3AC 000771AC  7F A3 E0 2E */	lwzx r29, r3, r28
 /* 8007A3B0 000771B0  40 82 00 30 */	bne lbl_8007A3E0
 /* 8007A3B4 000771B4  3C 80 80 35 */	lis r4, sMaterialColor@ha
-/* 8007A3B8 000771B8  38 6D C0 90 */	addi r3, r13, sMaterialAlpha-_SDA_BASE_
+/* 8007A3B8 000771B8  38 6D C0 90 */	addi r3, r13, sMaterialAlpha@sda21
 /* 8007A3BC 000771BC  38 84 55 C0 */	addi r4, r4, sMaterialColor@l
 /* 8007A3C0 000771C0  7C 03 F0 AE */	lbzx r0, r3, r30
 /* 8007A3C4 000771C4  7C A4 E0 2E */	lwzx r5, r4, r28
@@ -1589,11 +1589,11 @@ lbl_8007A3E0:
 /* 8007A404 00077204  98 01 00 0F */	stb r0, 0xf(r1)
 /* 8007A408 00077208  4B F8 BF CD */	bl __as__6RwRGBAFRC6RwRGBA
 lbl_8007A40C:
-/* 8007A40C 0007720C  80 0D C0 B4 */	lwz r0, sMaterialFlags-_SDA_BASE_(r13)
+/* 8007A40C 0007720C  80 0D C0 B4 */	lwz r0, sMaterialFlags@sda21(r13)
 /* 8007A410 00077210  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 8007A414 00077214  41 82 00 24 */	beq lbl_8007A438
 /* 8007A418 00077218  80 9D 00 04 */	lwz r4, 4(r29)
-/* 8007A41C 0007721C  38 6D C0 90 */	addi r3, r13, sMaterialAlpha-_SDA_BASE_
+/* 8007A41C 0007721C  38 6D C0 90 */	addi r3, r13, sMaterialAlpha@sda21
 /* 8007A420 00077220  7C 03 F0 AE */	lbzx r0, r3, r30
 /* 8007A424 00077224  38 7D 00 04 */	addi r3, r29, 4
 /* 8007A428 00077228  90 81 00 08 */	stw r4, 8(r1)
@@ -1601,7 +1601,7 @@ lbl_8007A40C:
 /* 8007A430 00077230  98 01 00 0B */	stb r0, 0xb(r1)
 /* 8007A434 00077234  4B F8 BF A1 */	bl __as__6RwRGBAFRC6RwRGBA
 lbl_8007A438:
-/* 8007A438 00077238  80 0D C0 B4 */	lwz r0, sMaterialFlags-_SDA_BASE_(r13)
+/* 8007A438 00077238  80 0D C0 B4 */	lwz r0, sMaterialFlags@sda21(r13)
 /* 8007A43C 0007723C  54 00 07 7B */	rlwinm. r0, r0, 0, 0x1d, 0x1d
 /* 8007A440 00077240  41 82 00 18 */	beq lbl_8007A458
 /* 8007A444 00077244  3C 80 80 35 */	lis r4, sMaterialTexture@ha
@@ -1617,7 +1617,7 @@ lbl_8007A460:
 /* 8007A464 00077264  7C 1E 00 00 */	cmpw r30, r0
 /* 8007A468 00077268  41 80 FF 34 */	blt lbl_8007A39C
 /* 8007A46C 0007726C  38 00 00 00 */	li r0, 0
-/* 8007A470 00077270  90 0D C0 B4 */	stw r0, sMaterialFlags-_SDA_BASE_(r13)
+/* 8007A470 00077270  90 0D C0 B4 */	stw r0, sMaterialFlags@sda21(r13)
 /* 8007A474 00077274  BB 81 00 20 */	lmw r28, 0x20(r1)
 /* 8007A478 00077278  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8007A47C 0007727C  7C 08 03 A6 */	mtlr r0
@@ -1633,11 +1633,11 @@ iModelSetMaterialTextureCB__FP10RpMaterialPv:
 /* 8007A498 00077298  38 A5 56 40 */	addi r5, r5, sMaterialTexture@l
 /* 8007A49C 0007729C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8007A4A0 000772A0  7C 7F 1B 78 */	mr r31, r3
-/* 8007A4A4 000772A4  80 ED C0 B0 */	lwz r7, sMaterialIdx-_SDA_BASE_(r13)
+/* 8007A4A4 000772A4  80 ED C0 B0 */	lwz r7, sMaterialIdx@sda21(r13)
 /* 8007A4A8 000772A8  81 03 00 00 */	lwz r8, 0(r3)
 /* 8007A4AC 000772AC  38 C7 00 01 */	addi r6, r7, 1
 /* 8007A4B0 000772B0  54 E0 10 3A */	slwi r0, r7, 2
-/* 8007A4B4 000772B4  90 CD C0 B0 */	stw r6, sMaterialIdx-_SDA_BASE_(r13)
+/* 8007A4B4 000772B4  90 CD C0 B0 */	stw r6, sMaterialIdx@sda21(r13)
 /* 8007A4B8 000772B8  7D 05 01 2E */	stwx r8, r5, r0
 /* 8007A4BC 000772BC  48 1F 64 6D */	bl RpMaterialSetTexture
 /* 8007A4C0 000772C0  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1654,23 +1654,23 @@ iModelSetMaterialTexture__FP8RpAtomicPv:
 /* 8007A4E0 000772E0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8007A4E4 000772E4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8007A4E8 000772E8  7C 7F 1B 78 */	mr r31, r3
-/* 8007A4EC 000772EC  80 0D C0 B8 */	lwz r0, sLastMaterial-_SDA_BASE_(r13)
+/* 8007A4EC 000772EC  80 0D C0 B8 */	lwz r0, sLastMaterial@sda21(r13)
 /* 8007A4F0 000772F0  7C 1F 00 40 */	cmplw r31, r0
 /* 8007A4F4 000772F4  41 82 00 0C */	beq lbl_8007A500
 /* 8007A4F8 000772F8  38 00 00 00 */	li r0, 0
-/* 8007A4FC 000772FC  90 0D C0 B4 */	stw r0, sMaterialFlags-_SDA_BASE_(r13)
+/* 8007A4FC 000772FC  90 0D C0 B4 */	stw r0, sMaterialFlags@sda21(r13)
 lbl_8007A500:
 /* 8007A500 00077300  80 7F 00 18 */	lwz r3, 0x18(r31)
 /* 8007A504 00077304  38 00 00 00 */	li r0, 0
 /* 8007A508 00077308  3C C0 80 08 */	lis r6, iModelSetMaterialTextureCB__FP10RpMaterialPv@ha
 /* 8007A50C 0007730C  7C 85 23 78 */	mr r5, r4
-/* 8007A510 00077310  90 0D C0 B0 */	stw r0, sMaterialIdx-_SDA_BASE_(r13)
+/* 8007A510 00077310  90 0D C0 B0 */	stw r0, sMaterialIdx@sda21(r13)
 /* 8007A514 00077314  38 86 A4 88 */	addi r4, r6, iModelSetMaterialTextureCB__FP10RpMaterialPv@l
 /* 8007A518 00077318  48 1F 38 CD */	bl RpGeometryForAllMaterials
-/* 8007A51C 0007731C  80 0D C0 B4 */	lwz r0, sMaterialFlags-_SDA_BASE_(r13)
-/* 8007A520 00077320  93 ED C0 B8 */	stw r31, sLastMaterial-_SDA_BASE_(r13)
+/* 8007A51C 0007731C  80 0D C0 B4 */	lwz r0, sMaterialFlags@sda21(r13)
+/* 8007A520 00077320  93 ED C0 B8 */	stw r31, sLastMaterial@sda21(r13)
 /* 8007A524 00077324  60 00 00 04 */	ori r0, r0, 4
-/* 8007A528 00077328  90 0D C0 B4 */	stw r0, sMaterialFlags-_SDA_BASE_(r13)
+/* 8007A528 00077328  90 0D C0 B4 */	stw r0, sMaterialFlags@sda21(r13)
 /* 8007A52C 0007732C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8007A530 00077330  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8007A534 00077334  7C 08 03 A6 */	mtlr r0
@@ -1687,10 +1687,10 @@ iModelMaterialMulCB__FP10RpMaterialPv:
 /* 8007A554 00077354  BF C1 00 28 */	stmw r30, 0x28(r1)
 /* 8007A558 00077358  7C 9F 23 78 */	mr r31, r4
 /* 8007A55C 0007735C  7C 7E 1B 78 */	mr r30, r3
-/* 8007A560 00077360  80 CD C0 B0 */	lwz r6, sMaterialIdx-_SDA_BASE_(r13)
+/* 8007A560 00077360  80 CD C0 B0 */	lwz r6, sMaterialIdx@sda21(r13)
 /* 8007A564 00077364  38 86 00 01 */	addi r4, r6, 1
 /* 8007A568 00077368  54 C3 10 3A */	slwi r3, r6, 2
-/* 8007A56C 0007736C  90 8D C0 B0 */	stw r4, sMaterialIdx-_SDA_BASE_(r13)
+/* 8007A56C 0007736C  90 8D C0 B0 */	stw r4, sMaterialIdx@sda21(r13)
 /* 8007A570 00077370  7C 60 1A 14 */	add r3, r0, r3
 /* 8007A574 00077374  38 9E 00 04 */	addi r4, r30, 4
 /* 8007A578 00077378  4B F8 BE 5D */	bl __as__6RwRGBAFRC6RwRGBA
@@ -1698,7 +1698,7 @@ iModelMaterialMulCB__FP10RpMaterialPv:
 /* 8007A580 00077380  3C 00 43 30 */	lis r0, 0x4330
 /* 8007A584 00077384  90 01 00 10 */	stw r0, 0x10(r1)
 /* 8007A588 00077388  38 61 00 08 */	addi r3, r1, 8
-/* 8007A58C 0007738C  C8 42 91 A8 */	lfd f2, _esc__2_1678_0-_SDA2_BASE_(r2)
+/* 8007A58C 0007738C  C8 42 91 A8 */	lfd f2, _esc__2_1678_0@sda21(r2)
 /* 8007A590 00077390  90 81 00 08 */	stw r4, 8(r1)
 /* 8007A594 00077394  88 01 00 08 */	lbz r0, 8(r1)
 /* 8007A598 00077398  C0 1F 00 00 */	lfs f0, 0(r31)
@@ -1711,7 +1711,7 @@ iModelMaterialMulCB__FP10RpMaterialPv:
 /* 8007A5B4 000773B4  3C 00 43 30 */	lis r0, 0x4330
 /* 8007A5B8 000773B8  90 01 00 18 */	stw r0, 0x18(r1)
 /* 8007A5BC 000773BC  38 61 00 09 */	addi r3, r1, 9
-/* 8007A5C0 000773C0  C8 42 91 A8 */	lfd f2, _esc__2_1678_0-_SDA2_BASE_(r2)
+/* 8007A5C0 000773C0  C8 42 91 A8 */	lfd f2, _esc__2_1678_0@sda21(r2)
 /* 8007A5C4 000773C4  90 81 00 1C */	stw r4, 0x1c(r1)
 /* 8007A5C8 000773C8  C0 1F 00 04 */	lfs f0, 4(r31)
 /* 8007A5CC 000773CC  C8 21 00 18 */	lfd f1, 0x18(r1)
@@ -1722,7 +1722,7 @@ iModelMaterialMulCB__FP10RpMaterialPv:
 /* 8007A5E0 000773E0  3C 00 43 30 */	lis r0, 0x4330
 /* 8007A5E4 000773E4  90 01 00 20 */	stw r0, 0x20(r1)
 /* 8007A5E8 000773E8  38 61 00 0A */	addi r3, r1, 0xa
-/* 8007A5EC 000773EC  C8 42 91 A8 */	lfd f2, _esc__2_1678_0-_SDA2_BASE_(r2)
+/* 8007A5EC 000773EC  C8 42 91 A8 */	lfd f2, _esc__2_1678_0@sda21(r2)
 /* 8007A5F0 000773F0  90 81 00 24 */	stw r4, 0x24(r1)
 /* 8007A5F4 000773F4  C0 1F 00 08 */	lfs f0, 8(r31)
 /* 8007A5F8 000773F8  C8 21 00 20 */	lfd f1, 0x20(r1)
@@ -1741,14 +1741,14 @@ iModelMaterialMulCB__FP10RpMaterialPv:
 
 .global U8_COLOR_CLAMP__20_esc__2_unnamed_esc__2_iModel_cpp_esc__2_FRUcf
 U8_COLOR_CLAMP__20_esc__2_unnamed_esc__2_iModel_cpp_esc__2_FRUcf:
-/* 8007A62C 0007742C  C0 02 91 9C */	lfs f0, _esc__2_1183_0-_SDA2_BASE_(r2)
+/* 8007A62C 0007742C  C0 02 91 9C */	lfs f0, _esc__2_1183_0@sda21(r2)
 /* 8007A630 00077430  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8007A634 00077434  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8007A638 00077438  40 80 00 0C */	bge lbl_8007A644
 /* 8007A63C 0007743C  FC 20 00 90 */	fmr f1, f0
 /* 8007A640 00077440  48 00 00 14 */	b lbl_8007A654
 lbl_8007A644:
-/* 8007A644 00077444  C0 02 91 B0 */	lfs f0, _esc__2_1685_0-_SDA2_BASE_(r2)
+/* 8007A644 00077444  C0 02 91 B0 */	lfs f0, _esc__2_1685_0@sda21(r2)
 /* 8007A648 00077448  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8007A64C 0007744C  40 81 00 08 */	ble lbl_8007A654
 /* 8007A650 00077450  FC 20 00 90 */	fmr f1, f0
@@ -1767,12 +1767,12 @@ iModelMaterialMul__FP8RpAtomicfff:
 /* 8007A674 00077474  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8007A678 00077478  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8007A67C 0007747C  7C 7F 1B 78 */	mr r31, r3
-/* 8007A680 00077480  80 0D C0 B8 */	lwz r0, sLastMaterial-_SDA_BASE_(r13)
+/* 8007A680 00077480  80 0D C0 B8 */	lwz r0, sLastMaterial@sda21(r13)
 /* 8007A684 00077484  80 63 00 18 */	lwz r3, 0x18(r3)
 /* 8007A688 00077488  7C 1F 00 40 */	cmplw r31, r0
 /* 8007A68C 0007748C  41 82 00 0C */	beq lbl_8007A698
 /* 8007A690 00077490  38 00 00 00 */	li r0, 0
-/* 8007A694 00077494  90 0D C0 B4 */	stw r0, sMaterialFlags-_SDA_BASE_(r13)
+/* 8007A694 00077494  90 0D C0 B4 */	stw r0, sMaterialFlags@sda21(r13)
 lbl_8007A698:
 /* 8007A698 00077498  80 A3 00 08 */	lwz r5, 8(r3)
 /* 8007A69C 0007749C  3C 80 80 08 */	lis r4, iModelMaterialMulCB__FP10RpMaterialPv@ha
@@ -1784,12 +1784,12 @@ lbl_8007A698:
 /* 8007A6B4 000774B4  D0 21 00 08 */	stfs f1, 8(r1)
 /* 8007A6B8 000774B8  D0 41 00 0C */	stfs f2, 0xc(r1)
 /* 8007A6BC 000774BC  D0 61 00 10 */	stfs f3, 0x10(r1)
-/* 8007A6C0 000774C0  90 0D C0 B0 */	stw r0, sMaterialIdx-_SDA_BASE_(r13)
+/* 8007A6C0 000774C0  90 0D C0 B0 */	stw r0, sMaterialIdx@sda21(r13)
 /* 8007A6C4 000774C4  48 1F 37 21 */	bl RpGeometryForAllMaterials
-/* 8007A6C8 000774C8  80 0D C0 B4 */	lwz r0, sMaterialFlags-_SDA_BASE_(r13)
-/* 8007A6CC 000774CC  93 ED C0 B8 */	stw r31, sLastMaterial-_SDA_BASE_(r13)
+/* 8007A6C8 000774C8  80 0D C0 B4 */	lwz r0, sMaterialFlags@sda21(r13)
+/* 8007A6CC 000774CC  93 ED C0 B8 */	stw r31, sLastMaterial@sda21(r13)
 /* 8007A6D0 000774D0  60 00 00 02 */	ori r0, r0, 2
-/* 8007A6D4 000774D4  90 0D C0 B4 */	stw r0, sMaterialFlags-_SDA_BASE_(r13)
+/* 8007A6D4 000774D4  90 0D C0 B4 */	stw r0, sMaterialFlags@sda21(r13)
 /* 8007A6D8 000774D8  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 8007A6DC 000774DC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8007A6E0 000774E0  7C 08 03 A6 */	mtlr r0
@@ -1854,7 +1854,7 @@ lbl_8007A754:
 /* 8007A7B8 000775B8  48 1E 81 05 */	bl RpSkinGetVertexBoneWeights
 /* 8007A7BC 000775BC  80 9C 00 18 */	lwz r4, 0x18(r28)
 /* 8007A7C0 000775C0  7C 75 1B 78 */	mr r21, r3
-/* 8007A7C4 000775C4  C3 E2 91 9C */	lfs f31, _esc__2_1183_0-_SDA2_BASE_(r2)
+/* 8007A7C4 000775C4  C3 E2 91 9C */	lfs f31, _esc__2_1183_0@sda21(r2)
 /* 8007A7C8 000775C8  3B 40 00 00 */	li r26, 0
 /* 8007A7CC 000775CC  80 64 00 5C */	lwz r3, 0x5c(r4)
 /* 8007A7D0 000775D0  82 83 00 14 */	lwz r20, 0x14(r3)
@@ -1958,8 +1958,8 @@ lbl_8007A90C:
 /* 8007A90C 0007770C  7C 1A F8 00 */	cmpw r26, r31
 /* 8007A910 00077710  41 80 FE C8 */	blt lbl_8007A7D8
 /* 8007A914 00077714  38 C0 00 00 */	li r6, 0
-/* 8007A918 00077718  C0 62 91 98 */	lfs f3, _esc__2_1172-_SDA2_BASE_(r2)
-/* 8007A91C 0007771C  C0 02 91 9C */	lfs f0, _esc__2_1183_0-_SDA2_BASE_(r2)
+/* 8007A918 00077718  C0 62 91 98 */	lfs f3, _esc__2_1172@sda21(r2)
+/* 8007A91C 0007771C  C0 02 91 9C */	lfs f0, _esc__2_1183_0@sda21(r2)
 /* 8007A920 00077720  38 60 00 00 */	li r3, 0
 /* 8007A924 00077724  7F 29 03 A6 */	mtctr r25
 /* 8007A928 00077728  2C 19 00 00 */	cmpwi r25, 0
@@ -1993,7 +1993,7 @@ lbl_8007A984:
 /* 8007A990 00077790  7E E3 BB 78 */	mr r3, r23
 /* 8007A994 00077794  48 1E 7F 29 */	bl RpSkinGetVertexBoneWeights
 /* 8007A998 00077798  80 9C 00 18 */	lwz r4, 0x18(r28)
-/* 8007A99C 0007779C  C0 22 91 9C */	lfs f1, _esc__2_1183_0-_SDA2_BASE_(r2)
+/* 8007A99C 0007779C  C0 22 91 9C */	lfs f1, _esc__2_1183_0@sda21(r2)
 /* 8007A9A0 000777A0  80 84 00 5C */	lwz r4, 0x5c(r4)
 /* 8007A9A4 000777A4  80 A4 00 14 */	lwz r5, 0x14(r4)
 /* 8007A9A8 000777A8  7F E9 03 A6 */	mtctr r31
@@ -2074,9 +2074,9 @@ lbl_8007AAA0:
 lbl_8007AAB0:
 /* 8007AAB0 000778B0  7C 17 C8 00 */	cmpw r23, r25
 /* 8007AAB4 000778B4  41 80 FF BC */	blt lbl_8007AA70
-/* 8007AAB8 000778B8  80 A2 91 B4 */	lwz r5, _esc__2_1758_0-_SDA2_BASE_(r2)
+/* 8007AAB8 000778B8  80 A2 91 B4 */	lwz r5, _esc__2_1758_0@sda21(r2)
 /* 8007AABC 000778BC  1C 72 00 05 */	mulli r3, r18, 5
-/* 8007AAC0 000778C0  80 02 91 B8 */	lwz r0, lbl_803D2ED8-_SDA2_BASE_(r2)
+/* 8007AAC0 000778C0  80 02 91 B8 */	lwz r0, lbl_803D2ED8@sda21(r2)
 /* 8007AAC4 000778C4  38 81 00 08 */	addi r4, r1, 8
 /* 8007AAC8 000778C8  90 A1 00 08 */	stw r5, 8(r1)
 /* 8007AACC 000778CC  38 A0 00 01 */	li r5, 1
@@ -2255,9 +2255,9 @@ lbl_8007AD30:
 /* 8007AD30 00077B30  FC 20 10 90 */	fmr f1, f2
 lbl_8007AD34:
 /* 8007AD34 00077B34  4B F9 07 45 */	bl xsqrt__Ff
-/* 8007AD38 00077B38  C0 42 91 BC */	lfs f2, _esc__2_2060-_SDA2_BASE_(r2)
+/* 8007AD38 00077B38  C0 42 91 BC */	lfs f2, _esc__2_2060@sda21(r2)
 /* 8007AD3C 00077B3C  FF E0 08 90 */	fmr f31, f1
-/* 8007AD40 00077B40  C0 02 91 C0 */	lfs f0, _esc__2_2061-_SDA2_BASE_(r2)
+/* 8007AD40 00077B40  C0 02 91 C0 */	lfs f0, _esc__2_2061@sda21(r2)
 /* 8007AD44 00077B44  3B 60 00 00 */	li r27, 0
 /* 8007AD48 00077B48  D0 5C 00 00 */	stfs f2, 0(r28)
 /* 8007AD4C 00077B4C  D0 5C 00 04 */	stfs f2, 4(r28)
@@ -2347,7 +2347,7 @@ lbl_8007AE60:
 /* 8007AE64 00077C64  41 80 FF 00 */	blt lbl_8007AD64
 /* 8007AE68 00077C68  28 1D 00 00 */	cmplwi r29, 0
 /* 8007AE6C 00077C6C  41 82 00 C8 */	beq lbl_8007AF34
-/* 8007AE70 00077C70  C0 02 91 BC */	lfs f0, _esc__2_2060-_SDA2_BASE_(r2)
+/* 8007AE70 00077C70  C0 02 91 BC */	lfs f0, _esc__2_2060@sda21(r2)
 /* 8007AE74 00077C74  C0 3D 00 00 */	lfs f1, 0(r29)
 /* 8007AE78 00077C78  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 8007AE7C 00077C7C  40 82 00 14 */	bne lbl_8007AE90

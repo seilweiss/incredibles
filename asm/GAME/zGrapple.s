@@ -169,19 +169,19 @@ lbl_800CFE3C:
 /* 800CFE3C 000CCC3C  7C 1D E0 00 */	cmpw r29, r28
 /* 800CFE40 000CCC40  41 80 FF D4 */	blt lbl_800CFE14
 /* 800CFE44 000CCC44  1C 9B 00 14 */	mulli r4, r27, 0x14
-/* 800CFE48 000CCC48  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 800CFE48 000CCC48  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 800CFE4C 000CCC4C  38 A0 00 00 */	li r5, 0
 /* 800CFE50 000CCC50  4B F7 9D 11 */	bl xMemAlloc__FUiUii
 /* 800CFE54 000CCC54  3B C0 00 00 */	li r30, 0
-/* 800CFE58 000CCC58  90 6D C8 38 */	stw r3, sGrapplePoints-_SDA_BASE_(r13)
+/* 800CFE58 000CCC58  90 6D C8 38 */	stw r3, sGrapplePoints@sda21(r13)
 /* 800CFE5C 000CCC5C  7F DD F3 78 */	mr r29, r30
 /* 800CFE60 000CCC60  3B E0 00 00 */	li r31, 0
-/* 800CFE64 000CCC64  93 6D C8 3C */	stw r27, sNumGrapplePoints-_SDA_BASE_(r13)
+/* 800CFE64 000CCC64  93 6D C8 3C */	stw r27, sNumGrapplePoints@sda21(r13)
 /* 800CFE68 000CCC68  48 00 00 30 */	b lbl_800CFE98
 lbl_800CFE6C:
 /* 800CFE6C 000CCC6C  80 9A 03 EC */	lwz r4, 0x3ec(r26)
 /* 800CFE70 000CCC70  1C 1E 00 14 */	mulli r0, r30, 0x14
-/* 800CFE74 000CCC74  80 6D C8 38 */	lwz r3, sGrapplePoints-_SDA_BASE_(r13)
+/* 800CFE74 000CCC74  80 6D C8 38 */	lwz r3, sGrapplePoints@sda21(r13)
 /* 800CFE78 000CCC78  7C A4 FA 14 */	add r5, r4, r31
 /* 800CFE7C 000CCC7C  80 C5 00 10 */	lwz r6, 0x10(r5)
 /* 800CFE80 000CCC80  7C 83 02 14 */	add r4, r3, r0
@@ -197,7 +197,7 @@ lbl_800CFE98:
 /* 800CFEA4 000CCCA4  38 60 00 00 */	li r3, 0
 /* 800CFEA8 000CCCA8  48 00 00 20 */	b lbl_800CFEC8
 lbl_800CFEAC:
-/* 800CFEAC 000CCCAC  80 8D C8 38 */	lwz r4, sGrapplePoints-_SDA_BASE_(r13)
+/* 800CFEAC 000CCCAC  80 8D C8 38 */	lwz r4, sGrapplePoints@sda21(r13)
 /* 800CFEB0 000CCCB0  38 A5 00 01 */	addi r5, r5, 1
 /* 800CFEB4 000CCCB4  7C C4 18 2E */	lwzx r6, r4, r3
 /* 800CFEB8 000CCCB8  38 63 00 14 */	addi r3, r3, 0x14
@@ -205,7 +205,7 @@ lbl_800CFEAC:
 /* 800CFEC0 000CCCC0  80 04 00 20 */	lwz r0, 0x20(r4)
 /* 800CFEC4 000CCCC4  90 06 00 14 */	stw r0, 0x14(r6)
 lbl_800CFEC8:
-/* 800CFEC8 000CCCC8  80 0D C8 3C */	lwz r0, sNumGrapplePoints-_SDA_BASE_(r13)
+/* 800CFEC8 000CCCC8  80 0D C8 3C */	lwz r0, sNumGrapplePoints@sda21(r13)
 /* 800CFECC 000CCCCC  7C 05 00 00 */	cmpw r5, r0
 /* 800CFED0 000CCCD0  41 80 FF DC */	blt lbl_800CFEAC
 /* 800CFED4 000CCCD4  BB 41 00 08 */	lmw r26, 8(r1)
@@ -220,7 +220,7 @@ zGrapple_Reset__Fv:
 /* 800CFEEC 000CCCEC  38 60 00 00 */	li r3, 0
 /* 800CFEF0 000CCCF0  48 00 00 20 */	b lbl_800CFF10
 lbl_800CFEF4:
-/* 800CFEF4 000CCCF4  80 8D C8 38 */	lwz r4, sGrapplePoints-_SDA_BASE_(r13)
+/* 800CFEF4 000CCCF4  80 8D C8 38 */	lwz r4, sGrapplePoints@sda21(r13)
 /* 800CFEF8 000CCCF8  38 A5 00 01 */	addi r5, r5, 1
 /* 800CFEFC 000CCCFC  7C C4 18 2E */	lwzx r6, r4, r3
 /* 800CFF00 000CCD00  38 63 00 14 */	addi r3, r3, 0x14
@@ -228,7 +228,7 @@ lbl_800CFEF4:
 /* 800CFF08 000CCD08  80 04 00 20 */	lwz r0, 0x20(r4)
 /* 800CFF0C 000CCD0C  90 06 00 14 */	stw r0, 0x14(r6)
 lbl_800CFF10:
-/* 800CFF10 000CCD10  80 0D C8 3C */	lwz r0, sNumGrapplePoints-_SDA_BASE_(r13)
+/* 800CFF10 000CCD10  80 0D C8 3C */	lwz r0, sNumGrapplePoints@sda21(r13)
 /* 800CFF14 000CCD14  7C 05 00 00 */	cmpw r5, r0
 /* 800CFF18 000CCD18  41 80 FF DC */	blt lbl_800CFEF4
 /* 800CFF1C 000CCD1C  4E 80 00 20 */	blr 
@@ -252,13 +252,13 @@ lbl_800CFF44:
 
 .global zGrapple_NumGrapplePoints__Fv
 zGrapple_NumGrapplePoints__Fv:
-/* 800CFF54 000CCD54  80 6D C8 3C */	lwz r3, sNumGrapplePoints-_SDA_BASE_(r13)
+/* 800CFF54 000CCD54  80 6D C8 3C */	lwz r3, sNumGrapplePoints@sda21(r13)
 /* 800CFF58 000CCD58  4E 80 00 20 */	blr 
 
 .global zGrapple_GetGrapplePoint__Fi
 zGrapple_GetGrapplePoint__Fi:
 /* 800CFF5C 000CCD5C  1C 03 00 14 */	mulli r0, r3, 0x14
-/* 800CFF60 000CCD60  80 6D C8 38 */	lwz r3, sGrapplePoints-_SDA_BASE_(r13)
+/* 800CFF60 000CCD60  80 6D C8 38 */	lwz r3, sGrapplePoints@sda21(r13)
 /* 800CFF64 000CCD64  7C 63 02 14 */	add r3, r3, r0
 /* 800CFF68 000CCD68  4E 80 00 20 */	blr 
 

@@ -103,7 +103,7 @@ lbl_8003F3BC:
 /* 8003F3C0 0003C1C0  40 81 00 08 */	ble lbl_8003F3C8
 /* 8003F3C4 0003C1C4  7C BF 2B 78 */	mr r31, r5
 lbl_8003F3C8:
-/* 8003F3C8 0003C1C8  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 8003F3C8 0003C1C8  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 8003F3CC 0003C1CC  1C 1E 00 0C */	mulli r0, r30, 0xc
 /* 8003F3D0 0003C1D0  57 E4 18 38 */	slwi r4, r31, 3
 /* 8003F3D4 0003C1D4  81 83 01 08 */	lwz r12, 0x108(r3)
@@ -297,12 +297,12 @@ xIniDestroy__FP8xIniFile:
 /* 8003F68C 0003C48C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8003F690 0003C490  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8003F694 0003C494  7C 7F 1B 78 */	mr r31, r3
-/* 8003F698 0003C498  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 8003F698 0003C498  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 8003F69C 0003C49C  80 63 00 10 */	lwz r3, 0x10(r3)
 /* 8003F6A0 0003C4A0  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 8003F6A4 0003C4A4  7D 89 03 A6 */	mtctr r12
 /* 8003F6A8 0003C4A8  4E 80 04 21 */	bctrl 
-/* 8003F6AC 0003C4AC  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 8003F6AC 0003C4AC  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 8003F6B0 0003C4B0  7F E3 FB 78 */	mr r3, r31
 /* 8003F6B4 0003C4B4  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 8003F6B8 0003C4B8  7D 89 03 A6 */	mtctr r12

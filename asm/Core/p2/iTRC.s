@@ -120,7 +120,7 @@ mFModPriority__8iTRCDisk:
 mDiskErrorInHigherPriorityThread__8iTRCDisk:
 	.skip 0x8
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global _esc__2_726_0
 _esc__2_726_0:
@@ -226,7 +226,7 @@ lbl_80082438:
 .global Init__7ROMFontFv
 Init__7ROMFontFv:
 /* 80082448 0007F248  38 00 00 00 */	li r0, 0
-/* 8008244C 0007F24C  90 0D C2 48 */	stw r0, mFontData__7ROMFont-_SDA_BASE_(r13)
+/* 8008244C 0007F24C  90 0D C2 48 */	stw r0, mFontData__7ROMFont@sda21(r13)
 /* 80082450 0007F250  4E 80 00 20 */	blr 
 
 .global InitFont__7ROMFontFv
@@ -236,7 +236,7 @@ InitFont__7ROMFontFv:
 /* 8008245C 0007F25C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80082460 0007F260  38 00 00 00 */	li r0, 0
 /* 80082464 0007F264  BF C1 00 08 */	stmw r30, 8(r1)
-/* 80082468 0007F268  98 0D C2 5C */	stb r0, mFontMalloced__7ROMFont-_SDA_BASE_(r13)
+/* 80082468 0007F268  98 0D C2 5C */	stb r0, mFontMalloced__7ROMFont@sda21(r13)
 /* 8008246C 0007F26C  4B FF EF 69 */	bl iRwResourcesEmptyArena__Fv
 /* 80082470 0007F270  48 1B 18 3D */	bl OSGetFontEncode
 /* 80082474 0007F274  54 60 04 3E */	clrlwi r0, r3, 0x10
@@ -259,19 +259,19 @@ lbl_800824A0:
 /* 800824B0 0007F2B0  48 20 B1 F9 */	bl RwResourcesAllocateResEntry
 /* 800824B4 0007F2B4  28 03 00 00 */	cmplwi r3, 0
 /* 800824B8 0007F2B8  40 82 00 2C */	bne lbl_800824E4
-/* 800824BC 0007F2BC  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 800824BC 0007F2BC  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 800824C0 0007F2C0  7F C3 F3 78 */	mr r3, r30
 /* 800824C4 0007F2C4  38 80 00 00 */	li r4, 0
 /* 800824C8 0007F2C8  81 85 01 08 */	lwz r12, 0x108(r5)
 /* 800824CC 0007F2CC  7D 89 03 A6 */	mtctr r12
 /* 800824D0 0007F2D0  4E 80 04 21 */	bctrl 
 /* 800824D4 0007F2D4  38 00 00 01 */	li r0, 1
-/* 800824D8 0007F2D8  90 6D C2 48 */	stw r3, mFontData__7ROMFont-_SDA_BASE_(r13)
-/* 800824DC 0007F2DC  98 0D C2 5C */	stb r0, mFontMalloced__7ROMFont-_SDA_BASE_(r13)
+/* 800824D8 0007F2D8  90 6D C2 48 */	stw r3, mFontData__7ROMFont@sda21(r13)
+/* 800824DC 0007F2DC  98 0D C2 5C */	stb r0, mFontMalloced__7ROMFont@sda21(r13)
 /* 800824E0 0007F2E0  48 00 00 0C */	b lbl_800824EC
 lbl_800824E4:
 /* 800824E4 0007F2E4  38 03 00 18 */	addi r0, r3, 0x18
-/* 800824E8 0007F2E8  90 0D C2 48 */	stw r0, mFontData__7ROMFont-_SDA_BASE_(r13)
+/* 800824E8 0007F2E8  90 0D C2 48 */	stw r0, mFontData__7ROMFont@sda21(r13)
 lbl_800824EC:
 /* 800824EC 0007F2EC  7F E5 FB 78 */	mr r5, r31
 /* 800824F0 0007F2F0  38 60 00 00 */	li r3, 0
@@ -283,7 +283,7 @@ lbl_800824EC:
 /* 80082508 0007F308  3B FE 00 18 */	addi r31, r30, 0x18
 /* 8008250C 0007F30C  48 00 00 20 */	b lbl_8008252C
 lbl_80082510:
-/* 80082510 0007F310  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 80082510 0007F310  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 80082514 0007F314  7F E3 FB 78 */	mr r3, r31
 /* 80082518 0007F318  38 80 00 00 */	li r4, 0
 /* 8008251C 0007F31C  81 85 01 08 */	lwz r12, 0x108(r5)
@@ -292,7 +292,7 @@ lbl_80082510:
 /* 80082528 0007F328  7C 7F 1B 78 */	mr r31, r3
 lbl_8008252C:
 /* 8008252C 0007F32C  38 1F 00 1F */	addi r0, r31, 0x1f
-/* 80082530 0007F330  80 6D C2 48 */	lwz r3, mFontData__7ROMFont-_SDA_BASE_(r13)
+/* 80082530 0007F330  80 6D C2 48 */	lwz r3, mFontData__7ROMFont@sda21(r13)
 /* 80082534 0007F334  54 04 00 34 */	rlwinm r4, r0, 0, 0, 0x1a
 /* 80082538 0007F338  48 1B 18 59 */	bl OSLoadFont
 /* 8008253C 0007F33C  28 1E 00 00 */	cmplwi r30, 0
@@ -301,7 +301,7 @@ lbl_8008252C:
 /* 80082548 0007F348  48 20 B0 05 */	bl RwResourcesFreeResEntry
 /* 8008254C 0007F34C  48 00 00 18 */	b lbl_80082564
 lbl_80082550:
-/* 80082550 0007F350  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 80082550 0007F350  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 80082554 0007F354  7F E3 FB 78 */	mr r3, r31
 /* 80082558 0007F358  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 8008255C 0007F35C  7D 89 03 A6 */	mtctr r12
@@ -318,27 +318,27 @@ DestroyFont__7ROMFontFv:
 /* 80082578 0007F378  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8008257C 0007F37C  7C 08 02 A6 */	mflr r0
 /* 80082580 0007F380  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80082584 0007F384  88 0D C2 5C */	lbz r0, mFontMalloced__7ROMFont-_SDA_BASE_(r13)
+/* 80082584 0007F384  88 0D C2 5C */	lbz r0, mFontMalloced__7ROMFont@sda21(r13)
 /* 80082588 0007F388  28 00 00 00 */	cmplwi r0, 0
 /* 8008258C 0007F38C  41 82 00 30 */	beq lbl_800825BC
 /* 80082590 0007F390  3C 80 00 01 */	lis r4, 0x00010120@ha
-/* 80082594 0007F394  80 6D C2 48 */	lwz r3, mFontData__7ROMFont-_SDA_BASE_(r13)
+/* 80082594 0007F394  80 6D C2 48 */	lwz r3, mFontData__7ROMFont@sda21(r13)
 /* 80082598 0007F398  38 A4 01 20 */	addi r5, r4, 0x00010120@l
 /* 8008259C 0007F39C  38 80 00 00 */	li r4, 0
 /* 800825A0 0007F3A0  4B F8 0B 61 */	bl memset
-/* 800825A4 0007F3A4  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
-/* 800825A8 0007F3A8  80 6D C2 48 */	lwz r3, mFontData__7ROMFont-_SDA_BASE_(r13)
+/* 800825A4 0007F3A4  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
+/* 800825A8 0007F3A8  80 6D C2 48 */	lwz r3, mFontData__7ROMFont@sda21(r13)
 /* 800825AC 0007F3AC  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 800825B0 0007F3B0  7D 89 03 A6 */	mtctr r12
 /* 800825B4 0007F3B4  4E 80 04 21 */	bctrl 
 /* 800825B8 0007F3B8  48 00 00 10 */	b lbl_800825C8
 lbl_800825BC:
-/* 800825BC 0007F3BC  80 6D C2 48 */	lwz r3, mFontData__7ROMFont-_SDA_BASE_(r13)
+/* 800825BC 0007F3BC  80 6D C2 48 */	lwz r3, mFontData__7ROMFont@sda21(r13)
 /* 800825C0 0007F3C0  38 63 FF E8 */	addi r3, r3, -24
 /* 800825C4 0007F3C4  48 20 AF 89 */	bl RwResourcesFreeResEntry
 lbl_800825C8:
 /* 800825C8 0007F3C8  38 00 00 00 */	li r0, 0
-/* 800825CC 0007F3CC  90 0D C2 48 */	stw r0, mFontData__7ROMFont-_SDA_BASE_(r13)
+/* 800825CC 0007F3CC  90 0D C2 48 */	stw r0, mFontData__7ROMFont@sda21(r13)
 /* 800825D0 0007F3D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800825D4 0007F3D4  7C 08 03 A6 */	mtlr r0
 /* 800825D8 0007F3D8  38 21 00 10 */	addi r1, r1, 0x10
@@ -352,16 +352,16 @@ InitDisplay__7ROMFontFP16_GXRenderModeObj:
 /* 800825EC 0007F3EC  BF C1 00 98 */	stmw r30, 0x98(r1)
 /* 800825F0 0007F3F0  7C 7E 1B 78 */	mr r30, r3
 /* 800825F4 0007F3F4  4B FF FE 61 */	bl InitFont__7ROMFontFv
-/* 800825F8 0007F3F8  80 02 EC C8 */	lwz r0, _esc__2_726_0-_SDA2_BASE_(r2)
-/* 800825FC 0007F3FC  3B ED C2 4C */	addi r31, r13, mXFBs__7ROMFont-_SDA_BASE_
+/* 800825F8 0007F3F8  80 02 EC C8 */	lwz r0, _esc__2_726_0@sda21(r2)
+/* 800825FC 0007F3FC  3B ED C2 4C */	addi r31, r13, mXFBs__7ROMFont@sda21
 /* 80082600 0007F400  3B FF 00 04 */	addi r31, r31, 4
-/* 80082604 0007F404  93 CD C2 58 */	stw r30, mRenderMode__7ROMFont-_SDA_BASE_(r13)
+/* 80082604 0007F404  93 CD C2 58 */	stw r30, mRenderMode__7ROMFont@sda21(r13)
 /* 80082608 0007F408  7F E4 FB 78 */	mr r4, r31
-/* 8008260C 0007F40C  38 6D C2 4C */	addi r3, r13, mXFBs__7ROMFont-_SDA_BASE_
+/* 8008260C 0007F40C  38 6D C2 4C */	addi r3, r13, mXFBs__7ROMFont@sda21
 /* 80082610 0007F410  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80082614 0007F414  48 22 06 A1 */	bl RwGameCubeGetXFBs
 /* 80082618 0007F418  80 1F 00 00 */	lwz r0, 0(r31)
-/* 8008261C 0007F41C  90 0D C2 54 */	stw r0, mCurrentFrameBuffer__7ROMFont-_SDA_BASE_(r13)
+/* 8008261C 0007F41C  90 0D C2 54 */	stw r0, mCurrentFrameBuffer__7ROMFont@sda21(r13)
 /* 80082620 0007F420  48 00 01 69 */	bl InitGX__7ROMFontFv
 /* 80082624 0007F424  48 00 02 89 */	bl InitVI__7ROMFontFv
 /* 80082628 0007F428  80 01 00 0C */	lwz r0, 0xc(r1)
@@ -370,18 +370,18 @@ InitDisplay__7ROMFontFP16_GXRenderModeObj:
 /* 80082634 0007F434  90 01 00 08 */	stw r0, 8(r1)
 /* 80082638 0007F438  38 84 FF FF */	addi r4, r4, 0x00FFFFFF@l
 /* 8008263C 0007F43C  48 1A 83 15 */	bl GXSetCopyClear
-/* 80082640 0007F440  80 CD C2 58 */	lwz r6, mRenderMode__7ROMFont-_SDA_BASE_(r13)
+/* 80082640 0007F440  80 CD C2 58 */	lwz r6, mRenderMode__7ROMFont@sda21(r13)
 /* 80082644 0007F444  3C 80 43 30 */	lis r4, 0x4330
-/* 80082648 0007F448  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
+/* 80082648 0007F448  C0 22 92 78 */	lfs f1, _esc__2_733_0@sda21(r2)
 /* 8008264C 0007F44C  38 61 00 40 */	addi r3, r1, 0x40
 /* 80082650 0007F450  A0 A6 00 06 */	lhz r5, 6(r6)
 /* 80082654 0007F454  A0 06 00 04 */	lhz r0, 4(r6)
 /* 80082658 0007F458  FC 60 08 90 */	fmr f3, f1
 /* 8008265C 0007F45C  90 A1 00 84 */	stw r5, 0x84(r1)
 /* 80082660 0007F460  FC A0 08 90 */	fmr f5, f1
-/* 80082664 0007F464  C8 82 92 80 */	lfd f4, _esc__2_736_1-_SDA2_BASE_(r2)
+/* 80082664 0007F464  C8 82 92 80 */	lfd f4, _esc__2_736_1@sda21(r2)
 /* 80082668 0007F468  90 81 00 80 */	stw r4, 0x80(r1)
-/* 8008266C 0007F46C  C0 C2 92 7C */	lfs f6, _esc__2_734-_SDA2_BASE_(r2)
+/* 8008266C 0007F46C  C0 C2 92 7C */	lfs f6, _esc__2_734@sda21(r2)
 /* 80082670 0007F470  C8 01 00 80 */	lfd f0, 0x80(r1)
 /* 80082674 0007F474  90 01 00 8C */	stw r0, 0x8c(r1)
 /* 80082678 0007F478  EC 40 20 28 */	fsubs f2, f0, f4
@@ -461,14 +461,14 @@ InitGX__7ROMFontFv:
 /* 80082788 0007F588  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8008278C 0007F58C  7C 08 02 A6 */	mflr r0
 /* 80082790 0007F590  3C 60 43 30 */	lis r3, 0x4330
-/* 80082794 0007F594  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
+/* 80082794 0007F594  C0 22 92 78 */	lfs f1, _esc__2_733_0@sda21(r2)
 /* 80082798 0007F598  90 01 00 24 */	stw r0, 0x24(r1)
-/* 8008279C 0007F59C  C8 82 92 80 */	lfd f4, _esc__2_736_1-_SDA2_BASE_(r2)
+/* 8008279C 0007F59C  C8 82 92 80 */	lfd f4, _esc__2_736_1@sda21(r2)
 /* 800827A0 0007F5A0  FC 40 08 90 */	fmr f2, f1
 /* 800827A4 0007F5A4  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 800827A8 0007F5A8  FC A0 08 90 */	fmr f5, f1
-/* 800827AC 0007F5AC  C0 C2 92 88 */	lfs f6, _esc__2_754-_SDA2_BASE_(r2)
-/* 800827B0 0007F5B0  80 AD C2 58 */	lwz r5, mRenderMode__7ROMFont-_SDA_BASE_(r13)
+/* 800827AC 0007F5AC  C0 C2 92 88 */	lfs f6, _esc__2_754@sda21(r2)
+/* 800827B0 0007F5B0  80 AD C2 58 */	lwz r5, mRenderMode__7ROMFont@sda21(r13)
 /* 800827B4 0007F5B4  90 61 00 08 */	stw r3, 8(r1)
 /* 800827B8 0007F5B8  A0 85 00 04 */	lhz r4, 4(r5)
 /* 800827BC 0007F5BC  A0 05 00 06 */	lhz r0, 6(r5)
@@ -480,35 +480,35 @@ InitGX__7ROMFontFv:
 /* 800827D4 0007F5D4  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 800827D8 0007F5D8  EC 80 20 28 */	fsubs f4, f0, f4
 /* 800827DC 0007F5DC  48 1A B4 CD */	bl GXSetViewport
-/* 800827E0 0007F5E0  80 CD C2 58 */	lwz r6, mRenderMode__7ROMFont-_SDA_BASE_(r13)
+/* 800827E0 0007F5E0  80 CD C2 58 */	lwz r6, mRenderMode__7ROMFont@sda21(r13)
 /* 800827E4 0007F5E4  38 60 00 00 */	li r3, 0
 /* 800827E8 0007F5E8  38 80 00 00 */	li r4, 0
 /* 800827EC 0007F5EC  A0 A6 00 04 */	lhz r5, 4(r6)
 /* 800827F0 0007F5F0  A0 C6 00 06 */	lhz r6, 6(r6)
 /* 800827F4 0007F5F4  48 1A B4 FD */	bl GXSetScissor
-/* 800827F8 0007F5F8  80 8D C2 58 */	lwz r4, mRenderMode__7ROMFont-_SDA_BASE_(r13)
+/* 800827F8 0007F5F8  80 8D C2 58 */	lwz r4, mRenderMode__7ROMFont@sda21(r13)
 /* 800827FC 0007F5FC  A0 64 00 06 */	lhz r3, 6(r4)
 /* 80082800 0007F600  A0 84 00 08 */	lhz r4, 8(r4)
 /* 80082804 0007F604  48 1A 7E 49 */	bl GXGetYScaleFactor
 /* 80082808 0007F608  48 1A 80 7D */	bl GXSetDispCopyYScale
-/* 8008280C 0007F60C  80 CD C2 58 */	lwz r6, mRenderMode__7ROMFont-_SDA_BASE_(r13)
+/* 8008280C 0007F60C  80 CD C2 58 */	lwz r6, mRenderMode__7ROMFont@sda21(r13)
 /* 80082810 0007F610  54 7F 04 3E */	clrlwi r31, r3, 0x10
 /* 80082814 0007F614  38 60 00 00 */	li r3, 0
 /* 80082818 0007F618  38 80 00 00 */	li r4, 0
 /* 8008281C 0007F61C  A0 A6 00 04 */	lhz r5, 4(r6)
 /* 80082820 0007F620  A0 C6 00 06 */	lhz r6, 6(r6)
 /* 80082824 0007F624  48 1A 7B 51 */	bl GXSetDispCopySrc
-/* 80082828 0007F628  80 6D C2 58 */	lwz r3, mRenderMode__7ROMFont-_SDA_BASE_(r13)
+/* 80082828 0007F628  80 6D C2 58 */	lwz r3, mRenderMode__7ROMFont@sda21(r13)
 /* 8008282C 0007F62C  7F E4 FB 78 */	mr r4, r31
 /* 80082830 0007F630  A0 63 00 04 */	lhz r3, 4(r3)
 /* 80082834 0007F634  48 1A 7C 39 */	bl GXSetDispCopyDst
-/* 80082838 0007F638  80 CD C2 58 */	lwz r6, mRenderMode__7ROMFont-_SDA_BASE_(r13)
+/* 80082838 0007F638  80 CD C2 58 */	lwz r6, mRenderMode__7ROMFont@sda21(r13)
 /* 8008283C 0007F63C  38 A0 00 01 */	li r5, 1
 /* 80082840 0007F640  88 66 00 19 */	lbz r3, 0x19(r6)
 /* 80082844 0007F644  38 86 00 1A */	addi r4, r6, 0x1a
 /* 80082848 0007F648  38 C6 00 32 */	addi r6, r6, 0x32
 /* 8008284C 0007F64C  48 1A 81 7D */	bl GXSetCopyFilter
-/* 80082850 0007F650  80 6D C2 58 */	lwz r3, mRenderMode__7ROMFont-_SDA_BASE_(r13)
+/* 80082850 0007F650  80 6D C2 58 */	lwz r3, mRenderMode__7ROMFont@sda21(r13)
 /* 80082854 0007F654  88 03 00 19 */	lbz r0, 0x19(r3)
 /* 80082858 0007F658  28 00 00 00 */	cmplwi r0, 0
 /* 8008285C 0007F65C  41 82 00 14 */	beq lbl_80082870
@@ -521,7 +521,7 @@ lbl_80082870:
 /* 80082874 0007F674  38 80 00 00 */	li r4, 0
 /* 80082878 0007F678  48 1A AD ED */	bl GXSetPixelFmt
 lbl_8008287C:
-/* 8008287C 0007F67C  80 6D C2 54 */	lwz r3, mCurrentFrameBuffer__7ROMFont-_SDA_BASE_(r13)
+/* 8008287C 0007F67C  80 6D C2 54 */	lwz r3, mCurrentFrameBuffer__7ROMFont@sda21(r13)
 /* 80082880 0007F680  38 80 00 01 */	li r4, 1
 /* 80082884 0007F684  48 1A 83 61 */	bl GXCopyDisp
 /* 80082888 0007F688  38 60 00 00 */	li r3, 0
@@ -539,14 +539,14 @@ InitVI__7ROMFontFv:
 /* 800828AC 0007F6AC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800828B0 0007F6B0  7C 08 02 A6 */	mflr r0
 /* 800828B4 0007F6B4  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800828B8 0007F6B8  80 6D C2 4C */	lwz r3, mXFBs__7ROMFont-_SDA_BASE_(r13)
+/* 800828B8 0007F6B8  80 6D C2 4C */	lwz r3, mXFBs__7ROMFont@sda21(r13)
 /* 800828BC 0007F6BC  48 1B AD 91 */	bl VISetNextFrameBuffer
-/* 800828C0 0007F6C0  38 6D C2 4C */	addi r3, r13, mXFBs__7ROMFont-_SDA_BASE_
+/* 800828C0 0007F6C0  38 6D C2 4C */	addi r3, r13, mXFBs__7ROMFont@sda21
 /* 800828C4 0007F6C4  80 03 00 04 */	lwz r0, 4(r3)
-/* 800828C8 0007F6C8  90 0D C2 54 */	stw r0, mCurrentFrameBuffer__7ROMFont-_SDA_BASE_(r13)
+/* 800828C8 0007F6C8  90 0D C2 54 */	stw r0, mCurrentFrameBuffer__7ROMFont@sda21(r13)
 /* 800828CC 0007F6CC  48 1B AC 51 */	bl VIFlush
 /* 800828D0 0007F6D0  48 1B 9F 5D */	bl VIWaitForRetrace
-/* 800828D4 0007F6D4  80 6D C2 58 */	lwz r3, mRenderMode__7ROMFont-_SDA_BASE_(r13)
+/* 800828D4 0007F6D4  80 6D C2 58 */	lwz r3, mRenderMode__7ROMFont@sda21(r13)
 /* 800828D8 0007F6D8  80 03 00 00 */	lwz r0, 0(r3)
 /* 800828DC 0007F6DC  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 800828E0 0007F6E0  41 82 00 08 */	beq lbl_800828E8
@@ -563,7 +563,7 @@ RenderBegin__7ROMFontFv:
 /* 800828FC 0007F6FC  7C 08 02 A6 */	mflr r0
 /* 80082900 0007F700  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80082904 0007F704  93 E1 00 1C */	stw r31, 0x1c(r1)
-/* 80082908 0007F708  83 ED C2 58 */	lwz r31, mRenderMode__7ROMFont-_SDA_BASE_(r13)
+/* 80082908 0007F708  83 ED C2 58 */	lwz r31, mRenderMode__7ROMFont@sda21(r13)
 /* 8008290C 0007F70C  88 1F 00 18 */	lbz r0, 0x18(r31)
 /* 80082910 0007F710  28 00 00 00 */	cmplwi r0, 0
 /* 80082914 0007F714  41 82 00 50 */	beq lbl_80082964
@@ -572,15 +572,15 @@ RenderBegin__7ROMFontFv:
 /* 80082920 0007F720  3C 80 43 30 */	lis r4, 0x4330
 /* 80082924 0007F724  A0 1F 00 06 */	lhz r0, 6(r31)
 /* 80082928 0007F728  90 A1 00 0C */	stw r5, 0xc(r1)
-/* 8008292C 0007F72C  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
+/* 8008292C 0007F72C  C0 22 92 78 */	lfs f1, _esc__2_733_0@sda21(r2)
 /* 80082930 0007F730  90 81 00 08 */	stw r4, 8(r1)
-/* 80082934 0007F734  C8 82 92 80 */	lfd f4, _esc__2_736_1-_SDA2_BASE_(r2)
+/* 80082934 0007F734  C8 82 92 80 */	lfd f4, _esc__2_736_1@sda21(r2)
 /* 80082938 0007F738  FC 40 08 90 */	fmr f2, f1
 /* 8008293C 0007F73C  C8 01 00 08 */	lfd f0, 8(r1)
 /* 80082940 0007F740  FC A0 08 90 */	fmr f5, f1
 /* 80082944 0007F744  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80082948 0007F748  EC 60 20 28 */	fsubs f3, f0, f4
-/* 8008294C 0007F74C  C0 C2 92 88 */	lfs f6, _esc__2_754-_SDA2_BASE_(r2)
+/* 8008294C 0007F74C  C0 C2 92 88 */	lfs f6, _esc__2_754@sda21(r2)
 /* 80082950 0007F750  90 81 00 10 */	stw r4, 0x10(r1)
 /* 80082954 0007F754  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 80082958 0007F758  EC 80 20 28 */	fsubs f4, f0, f4
@@ -591,15 +591,15 @@ lbl_80082964:
 /* 80082968 0007F768  3C 60 43 30 */	lis r3, 0x4330
 /* 8008296C 0007F76C  A0 1F 00 06 */	lhz r0, 6(r31)
 /* 80082970 0007F770  90 81 00 14 */	stw r4, 0x14(r1)
-/* 80082974 0007F774  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
+/* 80082974 0007F774  C0 22 92 78 */	lfs f1, _esc__2_733_0@sda21(r2)
 /* 80082978 0007F778  90 61 00 10 */	stw r3, 0x10(r1)
-/* 8008297C 0007F77C  C8 82 92 80 */	lfd f4, _esc__2_736_1-_SDA2_BASE_(r2)
+/* 8008297C 0007F77C  C8 82 92 80 */	lfd f4, _esc__2_736_1@sda21(r2)
 /* 80082980 0007F780  FC 40 08 90 */	fmr f2, f1
 /* 80082984 0007F784  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 80082988 0007F788  FC A0 08 90 */	fmr f5, f1
 /* 8008298C 0007F78C  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80082990 0007F790  EC 60 20 28 */	fsubs f3, f0, f4
-/* 80082994 0007F794  C0 C2 92 88 */	lfs f6, _esc__2_754-_SDA2_BASE_(r2)
+/* 80082994 0007F794  C0 C2 92 88 */	lfs f6, _esc__2_754@sda21(r2)
 /* 80082998 0007F798  90 61 00 08 */	stw r3, 8(r1)
 /* 8008299C 0007F79C  C8 01 00 08 */	lfd f0, 8(r1)
 /* 800829A0 0007F7A0  EC 80 20 28 */	fsubs f4, f0, f4
@@ -624,7 +624,7 @@ RenderEnd__7ROMFontFv:
 /* 800829DC 0007F7DC  48 1A AC 21 */	bl GXSetZMode
 /* 800829E0 0007F7E0  38 60 00 01 */	li r3, 1
 /* 800829E4 0007F7E4  48 1A AB C1 */	bl GXSetColorUpdate
-/* 800829E8 0007F7E8  80 6D C2 54 */	lwz r3, mCurrentFrameBuffer__7ROMFont-_SDA_BASE_(r13)
+/* 800829E8 0007F7E8  80 6D C2 54 */	lwz r3, mCurrentFrameBuffer__7ROMFont@sda21(r13)
 /* 800829EC 0007F7EC  38 80 00 01 */	li r4, 1
 /* 800829F0 0007F7F0  48 1A 81 F5 */	bl GXCopyDisp
 /* 800829F4 0007F7F4  48 1A 72 35 */	bl GXDrawDone
@@ -639,15 +639,15 @@ SwapBuffers__7ROMFontFv:
 /* 80082A0C 0007F80C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80082A10 0007F810  7C 08 02 A6 */	mflr r0
 /* 80082A14 0007F814  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80082A18 0007F818  80 6D C2 54 */	lwz r3, mCurrentFrameBuffer__7ROMFont-_SDA_BASE_(r13)
+/* 80082A18 0007F818  80 6D C2 54 */	lwz r3, mCurrentFrameBuffer__7ROMFont@sda21(r13)
 /* 80082A1C 0007F81C  48 1B AC 31 */	bl VISetNextFrameBuffer
-/* 80082A20 0007F820  88 0D 87 A0 */	lbz r0, mFirstFrame__7ROMFont-_SDA_BASE_(r13)
+/* 80082A20 0007F820  88 0D 87 A0 */	lbz r0, mFirstFrame__7ROMFont@sda21(r13)
 /* 80082A24 0007F824  28 00 00 00 */	cmplwi r0, 0
 /* 80082A28 0007F828  41 82 00 18 */	beq lbl_80082A40
 /* 80082A2C 0007F82C  38 60 00 01 */	li r3, 1
 /* 80082A30 0007F830  48 1B AC 89 */	bl VISetBlack
 /* 80082A34 0007F834  38 00 00 00 */	li r0, 0
-/* 80082A38 0007F838  98 0D 87 A0 */	stb r0, mFirstFrame__7ROMFont-_SDA_BASE_(r13)
+/* 80082A38 0007F838  98 0D 87 A0 */	stb r0, mFirstFrame__7ROMFont@sda21(r13)
 /* 80082A3C 0007F83C  48 00 00 0C */	b lbl_80082A48
 lbl_80082A40:
 /* 80082A40 0007F840  38 60 00 00 */	li r3, 0
@@ -655,14 +655,14 @@ lbl_80082A40:
 lbl_80082A48:
 /* 80082A48 0007F848  48 1B AA D5 */	bl VIFlush
 /* 80082A4C 0007F84C  48 1B 9D E1 */	bl VIWaitForRetrace
-/* 80082A50 0007F850  80 0D C2 54 */	lwz r0, mCurrentFrameBuffer__7ROMFont-_SDA_BASE_(r13)
-/* 80082A54 0007F854  80 6D C2 4C */	lwz r3, mXFBs__7ROMFont-_SDA_BASE_(r13)
+/* 80082A50 0007F850  80 0D C2 54 */	lwz r0, mCurrentFrameBuffer__7ROMFont@sda21(r13)
+/* 80082A54 0007F854  80 6D C2 4C */	lwz r3, mXFBs__7ROMFont@sda21(r13)
 /* 80082A58 0007F858  7C 00 18 40 */	cmplw r0, r3
 /* 80082A5C 0007F85C  40 82 00 0C */	bne lbl_80082A68
-/* 80082A60 0007F860  38 6D C2 4C */	addi r3, r13, mXFBs__7ROMFont-_SDA_BASE_
+/* 80082A60 0007F860  38 6D C2 4C */	addi r3, r13, mXFBs__7ROMFont@sda21
 /* 80082A64 0007F864  80 63 00 04 */	lwz r3, 4(r3)
 lbl_80082A68:
-/* 80082A68 0007F868  90 6D C2 54 */	stw r3, mCurrentFrameBuffer__7ROMFont-_SDA_BASE_(r13)
+/* 80082A68 0007F868  90 6D C2 54 */	stw r3, mCurrentFrameBuffer__7ROMFont@sda21(r13)
 /* 80082A6C 0007F86C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80082A70 0007F870  7C 08 03 A6 */	mtlr r0
 /* 80082A74 0007F874  38 21 00 10 */	addi r1, r1, 0x10
@@ -678,7 +678,7 @@ DrawCell__7ROMFontFii:
 /* 80082A90 0007F890  7C 9D 07 34 */	extsh r29, r4
 /* 80082A94 0007F894  38 60 00 80 */	li r3, 0x80
 /* 80082A98 0007F898  38 80 00 00 */	li r4, 0
-/* 80082A9C 0007F89C  80 AD C2 48 */	lwz r5, mFontData__7ROMFont-_SDA_BASE_(r13)
+/* 80082A9C 0007F89C  80 AD C2 48 */	lwz r5, mFontData__7ROMFont@sda21(r13)
 /* 80082AA0 0007F8A0  A0 05 00 10 */	lhz r0, 0x10(r5)
 /* 80082AA4 0007F8A4  A0 E5 00 12 */	lhz r7, 0x12(r5)
 /* 80082AA8 0007F8A8  38 A0 00 04 */	li r5, 4
@@ -758,7 +758,7 @@ LoadTex__7ROMFontFPv:
 /* 80082BA0 0007F9A0  39 20 00 00 */	li r9, 0
 /* 80082BA4 0007F9A4  39 40 00 00 */	li r10, 0
 /* 80082BA8 0007F9A8  48 1A 8A 45 */	bl GXInitTexObj
-/* 80082BAC 0007F9AC  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
+/* 80082BAC 0007F9AC  C0 22 92 78 */	lfs f1, _esc__2_733_0@sda21(r2)
 /* 80082BB0 0007F9B0  38 61 00 08 */	addi r3, r1, 8
 /* 80082BB4 0007F9B4  38 80 00 01 */	li r4, 1
 /* 80082BB8 0007F9B8  38 A0 00 01 */	li r5, 1
@@ -772,9 +772,9 @@ LoadTex__7ROMFontFPv:
 /* 80082BD8 0007F9D8  38 61 00 08 */	addi r3, r1, 8
 /* 80082BDC 0007F9DC  38 80 00 00 */	li r4, 0
 /* 80082BE0 0007F9E0  48 1A 90 15 */	bl GXLoadTexObj
-/* 80082BE4 0007F9E4  C0 22 92 8C */	lfs f1, _esc__2_808-_SDA2_BASE_(r2)
+/* 80082BE4 0007F9E4  C0 22 92 8C */	lfs f1, _esc__2_808@sda21(r2)
 /* 80082BE8 0007F9E8  38 61 00 28 */	addi r3, r1, 0x28
-/* 80082BEC 0007F9EC  C0 62 92 88 */	lfs f3, _esc__2_754-_SDA2_BASE_(r2)
+/* 80082BEC 0007F9EC  C0 62 92 88 */	lfs f3, _esc__2_754@sda21(r2)
 /* 80082BF0 0007F9F0  FC 40 08 90 */	fmr f2, f1
 /* 80082BF4 0007F9F4  48 1A E0 4D */	bl PSMTXScale
 /* 80082BF8 0007F9F8  38 61 00 28 */	addi r3, r1, 0x28
@@ -815,7 +815,7 @@ DrawString__7ROMFontFiiPc:
 /* 80082C6C 0007FA6C  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
 /* 80082C70 0007FA70  BF 21 00 24 */	stmw r25, 0x24(r1)
 /* 80082C74 0007FA74  3C C0 80 37 */	lis r6, textureBuffer@ha
-/* 80082C78 0007FA78  CB E2 92 90 */	lfd f31, _esc__2_819_3-_SDA2_BASE_(r2)
+/* 80082C78 0007FA78  CB E2 92 90 */	lfd f31, _esc__2_819_3@sda21(r2)
 /* 80082C7C 0007FA7C  3B 86 99 C0 */	addi r28, r6, textureBuffer@l
 /* 80082C80 0007FA80  7C 99 23 78 */	mr r25, r4
 /* 80082C84 0007FA84  7C BA 2B 78 */	mr r26, r5
@@ -844,7 +844,7 @@ lbl_80082C9C:
 /* 80082CDC 0007FADC  7F E3 FB 78 */	mr r3, r31
 /* 80082CE0 0007FAE0  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 80082CE4 0007FAE4  6C 00 80 00 */	xoris r0, r0, 0x8000
-/* 80082CE8 0007FAE8  C0 0D 87 A4 */	lfs f0, mRomFontScale__7ROMFont-_SDA_BASE_(r13)
+/* 80082CE8 0007FAE8  C0 0D 87 A4 */	lfs f0, mRomFontScale__7ROMFont@sda21(r13)
 /* 80082CEC 0007FAEC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80082CF0 0007FAF0  C8 21 00 10 */	lfd f1, 0x10(r1)
 /* 80082CF4 0007FAF4  EC 21 F8 28 */	fsubs f1, f1, f31
@@ -881,7 +881,7 @@ GetWidth__7ROMFontFPc:
 /* 80082D60 0007FB60  F3 E1 00 38 */	psq_st f31, 56(r1), 0, qr0
 /* 80082D64 0007FB64  BF A1 00 24 */	stmw r29, 0x24(r1)
 /* 80082D68 0007FB68  3C 80 80 37 */	lis r4, textureBuffer@ha
-/* 80082D6C 0007FB6C  CB E2 92 90 */	lfd f31, _esc__2_819_3-_SDA2_BASE_(r2)
+/* 80082D6C 0007FB6C  CB E2 92 90 */	lfd f31, _esc__2_819_3@sda21(r2)
 /* 80082D70 0007FB70  3B A0 00 00 */	li r29, 0
 /* 80082D74 0007FB74  3F E0 43 30 */	lis r31, 0x4330
 /* 80082D78 0007FB78  3B C4 99 C0 */	addi r30, r4, textureBuffer@l
@@ -895,7 +895,7 @@ lbl_80082D80:
 /* 80082D94 0007FB94  80 01 00 08 */	lwz r0, 8(r1)
 /* 80082D98 0007FB98  93 E1 00 10 */	stw r31, 0x10(r1)
 /* 80082D9C 0007FB9C  6C 00 80 00 */	xoris r0, r0, 0x8000
-/* 80082DA0 0007FBA0  C0 0D 87 A4 */	lfs f0, mRomFontScale__7ROMFont-_SDA_BASE_(r13)
+/* 80082DA0 0007FBA0  C0 0D 87 A4 */	lfs f0, mRomFontScale__7ROMFont@sda21(r13)
 /* 80082DA4 0007FBA4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80082DA8 0007FBA8  C8 21 00 10 */	lfd f1, 0x10(r1)
 /* 80082DAC 0007FBAC  EC 21 F8 28 */	fsubs f1, f1, f31
@@ -959,7 +959,7 @@ lbl_80082E74:
 /* 80082E80 0007FC80  7C 1F E2 14 */	add r0, r31, r28
 /* 80082E84 0007FC84  7C 00 D0 00 */	cmpw r0, r26
 /* 80082E88 0007FC88  40 81 00 14 */	ble lbl_80082E9C
-/* 80082E8C 0007FC8C  80 6D C2 48 */	lwz r3, mFontData__7ROMFont-_SDA_BASE_(r13)
+/* 80082E8C 0007FC8C  80 6D C2 48 */	lwz r3, mFontData__7ROMFont@sda21(r13)
 /* 80082E90 0007FC90  7F 3F CB 78 */	mr r31, r25
 /* 80082E94 0007FC94  A0 03 00 12 */	lhz r0, 0x12(r3)
 /* 80082E98 0007FC98  7F DE 02 14 */	add r30, r30, r0
@@ -1000,24 +1000,24 @@ DrawBlackScreen__7ROMFontFv:
 /* 80082F08 0007FD08  48 1A A6 F5 */	bl GXSetZMode
 /* 80082F0C 0007FD0C  38 60 00 01 */	li r3, 1
 /* 80082F10 0007FD10  48 1A A6 95 */	bl GXSetColorUpdate
-/* 80082F14 0007FD14  80 6D C2 54 */	lwz r3, mCurrentFrameBuffer__7ROMFont-_SDA_BASE_(r13)
+/* 80082F14 0007FD14  80 6D C2 54 */	lwz r3, mCurrentFrameBuffer__7ROMFont@sda21(r13)
 /* 80082F18 0007FD18  38 80 00 01 */	li r4, 1
 /* 80082F1C 0007FD1C  48 1A 7C C9 */	bl GXCopyDisp
 /* 80082F20 0007FD20  48 1A 6D 09 */	bl GXDrawDone
-/* 80082F24 0007FD24  80 6D C2 54 */	lwz r3, mCurrentFrameBuffer__7ROMFont-_SDA_BASE_(r13)
+/* 80082F24 0007FD24  80 6D C2 54 */	lwz r3, mCurrentFrameBuffer__7ROMFont@sda21(r13)
 /* 80082F28 0007FD28  48 1B A7 25 */	bl VISetNextFrameBuffer
 /* 80082F2C 0007FD2C  38 60 00 01 */	li r3, 1
 /* 80082F30 0007FD30  48 1B A7 89 */	bl VISetBlack
 /* 80082F34 0007FD34  48 1B A5 E9 */	bl VIFlush
 /* 80082F38 0007FD38  48 1B 98 F5 */	bl VIWaitForRetrace
-/* 80082F3C 0007FD3C  80 0D C2 54 */	lwz r0, mCurrentFrameBuffer__7ROMFont-_SDA_BASE_(r13)
-/* 80082F40 0007FD40  80 6D C2 4C */	lwz r3, mXFBs__7ROMFont-_SDA_BASE_(r13)
+/* 80082F3C 0007FD3C  80 0D C2 54 */	lwz r0, mCurrentFrameBuffer__7ROMFont@sda21(r13)
+/* 80082F40 0007FD40  80 6D C2 4C */	lwz r3, mXFBs__7ROMFont@sda21(r13)
 /* 80082F44 0007FD44  7C 00 18 40 */	cmplw r0, r3
 /* 80082F48 0007FD48  40 82 00 0C */	bne lbl_80082F54
-/* 80082F4C 0007FD4C  38 6D C2 4C */	addi r3, r13, mXFBs__7ROMFont-_SDA_BASE_
+/* 80082F4C 0007FD4C  38 6D C2 4C */	addi r3, r13, mXFBs__7ROMFont@sda21
 /* 80082F50 0007FD50  80 63 00 04 */	lwz r3, 4(r3)
 lbl_80082F54:
-/* 80082F54 0007FD54  90 6D C2 54 */	stw r3, mCurrentFrameBuffer__7ROMFont-_SDA_BASE_(r13)
+/* 80082F54 0007FD54  90 6D C2 54 */	stw r3, mCurrentFrameBuffer__7ROMFont@sda21(r13)
 /* 80082F58 0007FD58  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80082F5C 0007FD5C  7C 08 03 A6 */	mtlr r0
 /* 80082F60 0007FD60  38 21 00 10 */	addi r1, r1, 0x10
@@ -1026,28 +1026,28 @@ lbl_80082F54:
 .global EnableReset__11ResetButtonFv
 EnableReset__11ResetButtonFv:
 /* 80082F68 0007FD68  38 00 00 01 */	li r0, 1
-/* 80082F6C 0007FD6C  98 0D 87 A8 */	stb r0, mResetEnabled__11ResetButton-_SDA_BASE_(r13)
+/* 80082F6C 0007FD6C  98 0D 87 A8 */	stb r0, mResetEnabled__11ResetButton@sda21(r13)
 /* 80082F70 0007FD70  4E 80 00 20 */	blr 
 
 .global DisableReset__11ResetButtonFv
 DisableReset__11ResetButtonFv:
 /* 80082F74 0007FD74  38 00 00 00 */	li r0, 0
-/* 80082F78 0007FD78  98 0D 87 A8 */	stb r0, mResetEnabled__11ResetButton-_SDA_BASE_(r13)
+/* 80082F78 0007FD78  98 0D 87 A8 */	stb r0, mResetEnabled__11ResetButton@sda21(r13)
 /* 80082F7C 0007FD7C  4E 80 00 20 */	blr 
 
 .global SetDiscIded__11ResetButtonFb
 SetDiscIded__11ResetButtonFb:
-/* 80082F80 0007FD80  98 6D C2 64 */	stb r3, mDiscIded__11ResetButton-_SDA_BASE_(r13)
+/* 80082F80 0007FD80  98 6D C2 64 */	stb r3, mDiscIded__11ResetButton@sda21(r13)
 /* 80082F84 0007FD84  4E 80 00 20 */	blr 
 
 .global SetSndKillFunction__11ResetButtonFPFv_v
 SetSndKillFunction__11ResetButtonFPFv_v:
-/* 80082F88 0007FD88  90 6D C2 68 */	stw r3, mSndKill__11ResetButton-_SDA_BASE_(r13)
+/* 80082F88 0007FD88  90 6D C2 68 */	stw r3, mSndKill__11ResetButton@sda21(r13)
 /* 80082F8C 0007FD8C  4E 80 00 20 */	blr 
 
 .global SetMovieKillFunction__11ResetButtonFPFv_v
 SetMovieKillFunction__11ResetButtonFPFv_v:
-/* 80082F90 0007FD90  90 6D C2 6C */	stw r3, mMovieKillFunction__11ResetButton-_SDA_BASE_(r13)
+/* 80082F90 0007FD90  90 6D C2 6C */	stw r3, mMovieKillFunction__11ResetButton@sda21(r13)
 /* 80082F94 0007FD94  4E 80 00 20 */	blr 
 
 .global CheckResetButton__11ResetButtonFv
@@ -1059,14 +1059,14 @@ CheckResetButton__11ResetButtonFv:
 /* 80082FA8 0007FDA8  48 1B 2A 79 */	bl OSGetResetButtonState
 /* 80082FAC 0007FDAC  7C 7F 1B 79 */	or. r31, r3, r3
 /* 80082FB0 0007FDB0  40 82 00 14 */	bne lbl_80082FC4
-/* 80082FB4 0007FDB4  80 0D C2 60 */	lwz r0, mWasResetButtonPressed__11ResetButton-_SDA_BASE_(r13)
+/* 80082FB4 0007FDB4  80 0D C2 60 */	lwz r0, mWasResetButtonPressed__11ResetButton@sda21(r13)
 /* 80082FB8 0007FDB8  2C 00 00 00 */	cmpwi r0, 0
 /* 80082FBC 0007FDBC  41 82 00 08 */	beq lbl_80082FC4
 /* 80082FC0 0007FDC0  48 00 00 25 */	bl ResetSystem__11ResetButtonFv
 lbl_80082FC4:
-/* 80082FC4 0007FDC4  80 0D C2 60 */	lwz r0, mWasResetButtonPressed__11ResetButton-_SDA_BASE_(r13)
+/* 80082FC4 0007FDC4  80 0D C2 60 */	lwz r0, mWasResetButtonPressed__11ResetButton@sda21(r13)
 /* 80082FC8 0007FDC8  7C 00 FB 78 */	or r0, r0, r31
-/* 80082FCC 0007FDCC  90 0D C2 60 */	stw r0, mWasResetButtonPressed__11ResetButton-_SDA_BASE_(r13)
+/* 80082FCC 0007FDCC  90 0D C2 60 */	stw r0, mWasResetButtonPressed__11ResetButton@sda21(r13)
 /* 80082FD0 0007FDD0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80082FD4 0007FDD4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80082FD8 0007FDD8  7C 08 03 A6 */	mtlr r0
@@ -1080,13 +1080,13 @@ ResetSystem__11ResetButtonFv:
 /* 80082FEC 0007FDEC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80082FF0 0007FDF0  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80082FF4 0007FDF4  48 1B 3B E9 */	bl OSGetCurrentThread
-/* 80082FF8 0007FDF8  88 0D 87 A8 */	lbz r0, mResetEnabled__11ResetButton-_SDA_BASE_(r13)
+/* 80082FF8 0007FDF8  88 0D 87 A8 */	lbz r0, mResetEnabled__11ResetButton@sda21(r13)
 /* 80082FFC 0007FDFC  28 00 00 00 */	cmplwi r0, 0
 /* 80083000 0007FE00  41 82 00 F0 */	beq lbl_800830F0
 /* 80083004 0007FE04  48 22 EA 35 */	bl DVDGetDriveStatus
 /* 80083008 0007FE08  7C 7E 1B 78 */	mr r30, r3
 /* 8008300C 0007FE0C  48 22 EF 79 */	bl DVDCheckDisk
-/* 80083010 0007FE10  88 0D C2 64 */	lbz r0, mDiscIded__11ResetButton-_SDA_BASE_(r13)
+/* 80083010 0007FE10  88 0D C2 64 */	lbz r0, mDiscIded__11ResetButton@sda21(r13)
 /* 80083014 0007FE14  30 83 FF FF */	addic r4, r3, -1
 /* 80083018 0007FE18  7C 84 19 10 */	subfe r4, r4, r3
 /* 8008301C 0007FE1C  38 60 00 00 */	li r3, 0
@@ -1100,7 +1100,7 @@ lbl_80083034:
 lbl_80083038:
 /* 80083038 0007FE38  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8008303C 0007FE3C  40 82 00 18 */	bne lbl_80083054
-/* 80083040 0007FE40  81 8D C2 6C */	lwz r12, mMovieKillFunction__11ResetButton-_SDA_BASE_(r13)
+/* 80083040 0007FE40  81 8D C2 6C */	lwz r12, mMovieKillFunction__11ResetButton@sda21(r13)
 /* 80083044 0007FE44  28 0C 00 00 */	cmplwi r12, 0
 /* 80083048 0007FE48  41 82 00 0C */	beq lbl_80083054
 /* 8008304C 0007FE4C  7D 89 03 A6 */	mtctr r12
@@ -1118,13 +1118,13 @@ lbl_80083054:
 /* 80083078 0007FE78  38 1E FF FB */	addi r0, r30, -5
 /* 8008307C 0007FE7C  28 00 00 01 */	cmplwi r0, 1
 /* 80083080 0007FE80  40 81 00 18 */	ble lbl_80083098
-/* 80083084 0007FE84  88 0D C2 64 */	lbz r0, mDiscIded__11ResetButton-_SDA_BASE_(r13)
+/* 80083084 0007FE84  88 0D C2 64 */	lbz r0, mDiscIded__11ResetButton@sda21(r13)
 /* 80083088 0007FE88  28 00 00 00 */	cmplwi r0, 0
 /* 8008308C 0007FE8C  41 82 00 0C */	beq lbl_80083098
 /* 80083090 0007FE90  28 1F 00 00 */	cmplwi r31, 0
 /* 80083094 0007FE94  40 82 00 38 */	bne lbl_800830CC
 lbl_80083098:
-/* 80083098 0007FE98  80 0D CB 04 */	lwz r0, GCN_DEMO_PARAM-_SDA_BASE_(r13)
+/* 80083098 0007FE98  80 0D CB 04 */	lwz r0, GCN_DEMO_PARAM@sda21(r13)
 /* 8008309C 0007FE9C  2C 00 00 00 */	cmpwi r0, 0
 /* 800830A0 0007FEA0  41 82 00 18 */	beq lbl_800830B8
 /* 800830A4 0007FEA4  38 60 00 00 */	li r3, 0
@@ -1139,7 +1139,7 @@ lbl_800830B8:
 /* 800830C4 0007FEC4  48 1B 25 05 */	bl OSResetSystem
 /* 800830C8 0007FEC8  48 00 00 28 */	b lbl_800830F0
 lbl_800830CC:
-/* 800830CC 0007FECC  81 8D C2 68 */	lwz r12, mSndKill__11ResetButton-_SDA_BASE_(r13)
+/* 800830CC 0007FECC  81 8D C2 68 */	lwz r12, mSndKill__11ResetButton@sda21(r13)
 /* 800830D0 0007FED0  28 0C 00 00 */	cmplwi r12, 0
 /* 800830D4 0007FED4  41 82 00 0C */	beq lbl_800830E0
 /* 800830D8 0007FED8  7D 89 03 A6 */	mtctr r12
@@ -1164,19 +1164,19 @@ Init__8iTRCDiskFv:
 /* 80083110 0007FF10  4B FF F3 39 */	bl Init__7ROMFontFv
 /* 80083114 0007FF14  38 00 00 00 */	li r0, 0
 /* 80083118 0007FF18  3C 60 80 08 */	lis r3, FMODCallBack__8iTRCDiskFi@ha
-/* 8008311C 0007FF1C  90 0D C2 90 */	stw r0, gWasDiskError-_SDA_BASE_(r13)
+/* 8008311C 0007FF1C  90 0D C2 90 */	stw r0, gWasDiskError@sda21(r13)
 /* 80083120 0007FF20  38 63 36 8C */	addi r3, r3, FMODCallBack__8iTRCDiskFi@l
-/* 80083124 0007FF24  98 0D C2 94 */	stb r0, mInCriticalSection__8iTRCDisk-_SDA_BASE_(r13)
-/* 80083128 0007FF28  98 0D C2 95 */	stb r0, mFModError__8iTRCDisk-_SDA_BASE_(r13)
-/* 8008312C 0007FF2C  98 0D C2 96 */	stb r0, mInFModLockingCode__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083124 0007FF24  98 0D C2 94 */	stb r0, mInCriticalSection__8iTRCDisk@sda21(r13)
+/* 80083128 0007FF28  98 0D C2 95 */	stb r0, mFModError__8iTRCDisk@sda21(r13)
+/* 8008312C 0007FF2C  98 0D C2 96 */	stb r0, mInFModLockingCode__8iTRCDisk@sda21(r13)
 /* 80083130 0007FF30  48 1D 4C 4D */	bl FSOUND_GC_SetDvdStatusCallback
 /* 80083134 0007FF34  3C 60 80 08 */	lis r3, FMODUpdateDiskError__8iTRCDiskFi@ha
 /* 80083138 0007FF38  38 63 37 20 */	addi r3, r3, FMODUpdateDiskError__8iTRCDiskFi@l
 /* 8008313C 0007FF3C  48 1D 4C 39 */	bl FSOUND_GC_SetUpdateDvdStatusCallback
 /* 80083140 0007FF40  48 1B 3A 9D */	bl OSGetCurrentThread
-/* 80083144 0007FF44  90 6D C2 98 */	stw r3, mMainThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083144 0007FF44  90 6D C2 98 */	stw r3, mMainThread__8iTRCDisk@sda21(r13)
 /* 80083148 0007FF48  48 1B 4B 65 */	bl OSGetThreadPriority
-/* 8008314C 0007FF4C  90 6D C2 9C */	stw r3, mMainPriority__8iTRCDisk-_SDA_BASE_(r13)
+/* 8008314C 0007FF4C  90 6D C2 9C */	stw r3, mMainPriority__8iTRCDisk@sda21(r13)
 /* 80083150 0007FF50  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80083154 0007FF54  7C 08 03 A6 */	mtlr r0
 /* 80083158 0007FF58  38 21 00 10 */	addi r1, r1, 0x10
@@ -1213,42 +1213,42 @@ ResetMessage__8iTRCDiskFv:
 
 .global SetPadStopRumblingFunction__8iTRCDiskFPFv_v
 SetPadStopRumblingFunction__8iTRCDiskFPFv_v:
-/* 800831BC 0007FFBC  90 6D C2 80 */	stw r3, mPadStopRumbling__8iTRCDisk-_SDA_BASE_(r13)
+/* 800831BC 0007FFBC  90 6D C2 80 */	stw r3, mPadStopRumbling__8iTRCDisk@sda21(r13)
 /* 800831C0 0007FFC0  4E 80 00 20 */	blr 
 
 .global SetSndSuspendFunction__8iTRCDiskFPFv_v
 SetSndSuspendFunction__8iTRCDiskFPFv_v:
-/* 800831C4 0007FFC4  90 6D C2 70 */	stw r3, mSndSuspend__8iTRCDisk-_SDA_BASE_(r13)
+/* 800831C4 0007FFC4  90 6D C2 70 */	stw r3, mSndSuspend__8iTRCDisk@sda21(r13)
 /* 800831C8 0007FFC8  4E 80 00 20 */	blr 
 
 .global SetSndResumeFunction__8iTRCDiskFPFv_v
 SetSndResumeFunction__8iTRCDiskFPFv_v:
-/* 800831CC 0007FFCC  90 6D C2 74 */	stw r3, mSndResume__8iTRCDisk-_SDA_BASE_(r13)
+/* 800831CC 0007FFCC  90 6D C2 74 */	stw r3, mSndResume__8iTRCDisk@sda21(r13)
 /* 800831D0 0007FFD0  4E 80 00 20 */	blr 
 
 .global SetAsyncLoadSuspendFunction__8iTRCDiskFPFv_v
 SetAsyncLoadSuspendFunction__8iTRCDiskFPFv_v:
-/* 800831D4 0007FFD4  90 6D C2 78 */	stw r3, mAsyncLoadSuspend__8iTRCDisk-_SDA_BASE_(r13)
+/* 800831D4 0007FFD4  90 6D C2 78 */	stw r3, mAsyncLoadSuspend__8iTRCDisk@sda21(r13)
 /* 800831D8 0007FFD8  4E 80 00 20 */	blr 
 
 .global SetAsyncLoadResumeFunction__8iTRCDiskFPFv_v
 SetAsyncLoadResumeFunction__8iTRCDiskFPFv_v:
-/* 800831DC 0007FFDC  90 6D C2 7C */	stw r3, mAsyncLoadResume__8iTRCDisk-_SDA_BASE_(r13)
+/* 800831DC 0007FFDC  90 6D C2 7C */	stw r3, mAsyncLoadResume__8iTRCDisk@sda21(r13)
 /* 800831E0 0007FFE0  4E 80 00 20 */	blr 
 
 .global SetMovieSuspendFunction__8iTRCDiskFPFv_v
 SetMovieSuspendFunction__8iTRCDiskFPFv_v:
-/* 800831E4 0007FFE4  90 6D C2 84 */	stw r3, mMovieSuspendFunction__8iTRCDisk-_SDA_BASE_(r13)
+/* 800831E4 0007FFE4  90 6D C2 84 */	stw r3, mMovieSuspendFunction__8iTRCDisk@sda21(r13)
 /* 800831E8 0007FFE8  4E 80 00 20 */	blr 
 
 .global SetMovieResumeFunction__8iTRCDiskFPFv_v
 SetMovieResumeFunction__8iTRCDiskFPFv_v:
-/* 800831EC 0007FFEC  90 6D C2 88 */	stw r3, mMovieResumeFunction__8iTRCDisk-_SDA_BASE_(r13)
+/* 800831EC 0007FFEC  90 6D C2 88 */	stw r3, mMovieResumeFunction__8iTRCDisk@sda21(r13)
 /* 800831F0 0007FFF0  4E 80 00 20 */	blr 
 
 .global SetMovieResetCallBack__8iTRCDiskFPFv_v
 SetMovieResetCallBack__8iTRCDiskFPFv_v:
-/* 800831F4 0007FFF4  90 6D C2 8C */	stw r3, mMovieResetCallBack__8iTRCDisk-_SDA_BASE_(r13)
+/* 800831F4 0007FFF4  90 6D C2 8C */	stw r3, mMovieResetCallBack__8iTRCDisk@sda21(r13)
 /* 800831F8 0007FFF8  4E 80 00 20 */	blr 
 
 .global IsDiskIDed__8iTRCDiskFv
@@ -1267,15 +1267,15 @@ IsDiskIDed__8iTRCDiskFv:
 
 .global SetInFModLockingCode__8iTRCDiskFb
 SetInFModLockingCode__8iTRCDiskFb:
-/* 80083228 00080028  98 6D C2 96 */	stb r3, mInFModLockingCode__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083228 00080028  98 6D C2 96 */	stb r3, mInFModLockingCode__8iTRCDisk@sda21(r13)
 /* 8008322C 0008002C  4E 80 00 20 */	blr 
 
 .global Shutdown__8iTRCDiskFv
 Shutdown__8iTRCDiskFv:
 /* 80083230 00080030  38 00 00 00 */	li r0, 0
-/* 80083234 00080034  98 0D C2 94 */	stb r0, mInCriticalSection__8iTRCDisk-_SDA_BASE_(r13)
-/* 80083238 00080038  98 0D C2 95 */	stb r0, mFModError__8iTRCDisk-_SDA_BASE_(r13)
-/* 8008323C 0008003C  98 0D C2 A8 */	stb r0, mDiskErrorInHigherPriorityThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083234 00080034  98 0D C2 94 */	stb r0, mInCriticalSection__8iTRCDisk@sda21(r13)
+/* 80083238 00080038  98 0D C2 95 */	stb r0, mFModError__8iTRCDisk@sda21(r13)
+/* 8008323C 0008003C  98 0D C2 A8 */	stb r0, mDiskErrorInHigherPriorityThread__8iTRCDisk@sda21(r13)
 /* 80083240 00080040  4E 80 00 20 */	blr 
 
 .global DisplayErrorMessage__8iTRCDiskFv
@@ -1294,14 +1294,14 @@ DisplayErrorMessage__8iTRCDiskFv:
 /* 80083270 00080070  41 82 00 C4 */	beq lbl_80083334
 /* 80083274 00080074  38 61 00 08 */	addi r3, r1, 8
 /* 80083278 00080078  48 1A 70 61 */	bl GXGetCullMode
-/* 8008327C 0008007C  80 0D E6 EC */	lwz r0, _RwDlRenderMode-_SDA_BASE_(r13)
+/* 8008327C 0008007C  80 0D E6 EC */	lwz r0, _RwDlRenderMode@sda21(r13)
 /* 80083280 00080080  3B C0 00 00 */	li r30, 0
 /* 80083284 00080084  28 00 00 00 */	cmplwi r0, 0
 /* 80083288 00080088  40 82 00 0C */	bne lbl_80083294
 /* 8008328C 0008008C  4B FF EE 29 */	bl iSystemInitRWFailSafe__Fv
 /* 80083290 00080090  3B C0 00 01 */	li r30, 1
 lbl_80083294:
-/* 80083294 00080094  80 6D E6 EC */	lwz r3, _RwDlRenderMode-_SDA_BASE_(r13)
+/* 80083294 00080094  80 6D E6 EC */	lwz r3, _RwDlRenderMode@sda21(r13)
 /* 80083298 00080098  4B FF F3 49 */	bl InitDisplay__7ROMFontFP16_GXRenderModeObj
 /* 8008329C 0008009C  48 00 00 AD */	bl SetDVDState__8iTRCDiskFv
 /* 800832A0 000800A0  3C 80 80 37 */	lis r4, mMessage__8iTRCDisk@ha
@@ -1319,7 +1319,7 @@ lbl_800832B0:
 /* 800832CC 000800CC  41 82 00 08 */	beq lbl_800832D4
 /* 800832D0 000800D0  4B FF FC C9 */	bl CheckResetButton__11ResetButtonFv
 lbl_800832D4:
-/* 800832D4 000800D4  C0 22 92 78 */	lfs f1, _esc__2_733_0-_SDA2_BASE_(r2)
+/* 800832D4 000800D4  C0 22 92 78 */	lfs f1, _esc__2_733_0@sda21(r2)
 /* 800832D8 000800D8  38 60 00 00 */	li r3, 0
 /* 800832DC 000800DC  4B FC C6 B9 */	bl xPadUpdate__Fif
 /* 800832E0 000800E0  48 00 00 69 */	bl SetDVDState__8iTRCDiskFv
@@ -1344,7 +1344,7 @@ lbl_80083310:
 /* 80083320 00080120  48 1B A1 FD */	bl VIFlush
 /* 80083324 00080124  48 1B 95 09 */	bl VIWaitForRetrace
 /* 80083328 00080128  38 00 00 01 */	li r0, 1
-/* 8008332C 0008012C  90 0D C2 90 */	stw r0, gWasDiskError-_SDA_BASE_(r13)
+/* 8008332C 0008012C  90 0D C2 90 */	stw r0, gWasDiskError@sda21(r13)
 /* 80083330 00080130  4B FF F4 39 */	bl DestroyDisplay__7ROMFontFv
 lbl_80083334:
 /* 80083334 00080134  BB A1 00 14 */	lmw r29, 0x14(r1)
@@ -1458,10 +1458,10 @@ CheckDVDAndResetState__8iTRCDiskFv:
 /* 800834C0 000802C0  2C 1F 00 01 */	cmpwi r31, 1
 /* 800834C4 000802C4  40 82 00 1C */	bne lbl_800834E0
 lbl_800834C8:
-/* 800834C8 000802C8  88 0D C2 95 */	lbz r0, mFModError__8iTRCDisk-_SDA_BASE_(r13)
+/* 800834C8 000802C8  88 0D C2 95 */	lbz r0, mFModError__8iTRCDisk@sda21(r13)
 /* 800834CC 000802CC  28 00 00 00 */	cmplwi r0, 0
 /* 800834D0 000802D0  40 82 00 10 */	bne lbl_800834E0
-/* 800834D4 000802D4  88 0D C2 A8 */	lbz r0, mDiskErrorInHigherPriorityThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 800834D4 000802D4  88 0D C2 A8 */	lbz r0, mDiskErrorInHigherPriorityThread__8iTRCDisk@sda21(r13)
 /* 800834D8 000802D8  28 00 00 00 */	cmplwi r0, 0
 /* 800834DC 000802DC  41 82 00 0C */	beq lbl_800834E8
 lbl_800834E0:
@@ -1484,12 +1484,12 @@ TRCCheck__8iTRCDiskFv:
 /* 8008350C 0008030C  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80083510 00080310  48 1B 48 41 */	bl OSCheckActiveThreads
 /* 80083514 00080314  48 1B 36 C9 */	bl OSGetCurrentThread
-/* 80083518 00080318  88 0D C2 94 */	lbz r0, mInCriticalSection__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083518 00080318  88 0D C2 94 */	lbz r0, mInCriticalSection__8iTRCDisk@sda21(r13)
 /* 8008351C 0008031C  28 00 00 00 */	cmplwi r0, 0
 /* 80083520 00080320  40 82 00 18 */	bne lbl_80083538
 /* 80083524 00080324  38 00 00 01 */	li r0, 1
 /* 80083528 00080328  38 60 00 00 */	li r3, 0
-/* 8008352C 0008032C  98 0D C2 94 */	stb r0, mInCriticalSection__8iTRCDisk-_SDA_BASE_(r13)
+/* 8008352C 0008032C  98 0D C2 94 */	stb r0, mInCriticalSection__8iTRCDisk@sda21(r13)
 /* 80083530 00080330  48 00 02 25 */	bl EnableMovieResetCallBack__8iTRCDiskFb
 /* 80083534 00080334  48 00 00 0C */	b lbl_80083540
 lbl_80083538:
@@ -1509,51 +1509,51 @@ lbl_8008355C:
 /* 80083564 00080364  2C 1F 00 01 */	cmpwi r31, 1
 /* 80083568 00080368  40 82 00 1C */	bne lbl_80083584
 lbl_8008356C:
-/* 8008356C 0008036C  88 0D C2 95 */	lbz r0, mFModError__8iTRCDisk-_SDA_BASE_(r13)
+/* 8008356C 0008036C  88 0D C2 95 */	lbz r0, mFModError__8iTRCDisk@sda21(r13)
 /* 80083570 00080370  28 00 00 00 */	cmplwi r0, 0
 /* 80083574 00080374  40 82 00 10 */	bne lbl_80083584
-/* 80083578 00080378  88 0D C2 A8 */	lbz r0, mDiskErrorInHigherPriorityThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083578 00080378  88 0D C2 A8 */	lbz r0, mDiskErrorInHigherPriorityThread__8iTRCDisk@sda21(r13)
 /* 8008357C 0008037C  28 00 00 00 */	cmplwi r0, 0
 /* 80083580 00080380  41 82 00 B0 */	beq lbl_80083630
 lbl_80083584:
-/* 80083584 00080384  81 8D C2 70 */	lwz r12, mSndSuspend__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083584 00080384  81 8D C2 70 */	lwz r12, mSndSuspend__8iTRCDisk@sda21(r13)
 /* 80083588 00080388  28 0C 00 00 */	cmplwi r12, 0
 /* 8008358C 0008038C  41 82 00 0C */	beq lbl_80083598
 /* 80083590 00080390  7D 89 03 A6 */	mtctr r12
 /* 80083594 00080394  4E 80 04 21 */	bctrl 
 lbl_80083598:
-/* 80083598 00080398  81 8D C2 80 */	lwz r12, mPadStopRumbling__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083598 00080398  81 8D C2 80 */	lwz r12, mPadStopRumbling__8iTRCDisk@sda21(r13)
 /* 8008359C 0008039C  28 0C 00 00 */	cmplwi r12, 0
 /* 800835A0 000803A0  41 82 00 0C */	beq lbl_800835AC
 /* 800835A4 000803A4  7D 89 03 A6 */	mtctr r12
 /* 800835A8 000803A8  4E 80 04 21 */	bctrl 
 lbl_800835AC:
-/* 800835AC 000803AC  81 8D C2 84 */	lwz r12, mMovieSuspendFunction__8iTRCDisk-_SDA_BASE_(r13)
+/* 800835AC 000803AC  81 8D C2 84 */	lwz r12, mMovieSuspendFunction__8iTRCDisk@sda21(r13)
 /* 800835B0 000803B0  28 0C 00 00 */	cmplwi r12, 0
 /* 800835B4 000803B4  41 82 00 0C */	beq lbl_800835C0
 /* 800835B8 000803B8  7D 89 03 A6 */	mtctr r12
 /* 800835BC 000803BC  4E 80 04 21 */	bctrl 
 lbl_800835C0:
-/* 800835C0 000803C0  81 8D C2 78 */	lwz r12, mAsyncLoadSuspend__8iTRCDisk-_SDA_BASE_(r13)
+/* 800835C0 000803C0  81 8D C2 78 */	lwz r12, mAsyncLoadSuspend__8iTRCDisk@sda21(r13)
 /* 800835C4 000803C4  28 0C 00 00 */	cmplwi r12, 0
 /* 800835C8 000803C8  41 82 00 0C */	beq lbl_800835D4
 /* 800835CC 000803CC  7D 89 03 A6 */	mtctr r12
 /* 800835D0 000803D0  4E 80 04 21 */	bctrl 
 lbl_800835D4:
 /* 800835D4 000803D4  4B FF FC 71 */	bl DisplayErrorMessage__8iTRCDiskFv
-/* 800835D8 000803D8  81 8D C2 88 */	lwz r12, mMovieResumeFunction__8iTRCDisk-_SDA_BASE_(r13)
+/* 800835D8 000803D8  81 8D C2 88 */	lwz r12, mMovieResumeFunction__8iTRCDisk@sda21(r13)
 /* 800835DC 000803DC  28 0C 00 00 */	cmplwi r12, 0
 /* 800835E0 000803E0  41 82 00 0C */	beq lbl_800835EC
 /* 800835E4 000803E4  7D 89 03 A6 */	mtctr r12
 /* 800835E8 000803E8  4E 80 04 21 */	bctrl 
 lbl_800835EC:
-/* 800835EC 000803EC  81 8D C2 7C */	lwz r12, mAsyncLoadResume__8iTRCDisk-_SDA_BASE_(r13)
+/* 800835EC 000803EC  81 8D C2 7C */	lwz r12, mAsyncLoadResume__8iTRCDisk@sda21(r13)
 /* 800835F0 000803F0  28 0C 00 00 */	cmplwi r12, 0
 /* 800835F4 000803F4  41 82 00 0C */	beq lbl_80083600
 /* 800835F8 000803F8  7D 89 03 A6 */	mtctr r12
 /* 800835FC 000803FC  4E 80 04 21 */	bctrl 
 lbl_80083600:
-/* 80083600 00080400  81 8D C2 74 */	lwz r12, mSndResume__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083600 00080400  81 8D C2 74 */	lwz r12, mSndResume__8iTRCDisk@sda21(r13)
 /* 80083604 00080404  28 0C 00 00 */	cmplwi r12, 0
 /* 80083608 00080408  41 82 00 0C */	beq lbl_80083614
 /* 8008360C 0008040C  7D 89 03 A6 */	mtctr r12
@@ -1567,23 +1567,23 @@ lbl_80083614:
 /* 80083628 00080428  48 1B 9E F5 */	bl VIFlush
 /* 8008362C 0008042C  48 1B 92 01 */	bl VIWaitForRetrace
 lbl_80083630:
-/* 80083630 00080430  80 6D C2 A0 */	lwz r3, mFModThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083630 00080430  80 6D C2 A0 */	lwz r3, mFModThread__8iTRCDisk@sda21(r13)
 /* 80083634 00080434  38 00 00 00 */	li r0, 0
-/* 80083638 00080438  98 0D C2 94 */	stb r0, mInCriticalSection__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083638 00080438  98 0D C2 94 */	stb r0, mInCriticalSection__8iTRCDisk@sda21(r13)
 /* 8008363C 0008043C  28 03 00 00 */	cmplwi r3, 0
-/* 80083640 00080440  98 0D C2 A8 */	stb r0, mDiskErrorInHigherPriorityThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083640 00080440  98 0D C2 A8 */	stb r0, mDiskErrorInHigherPriorityThread__8iTRCDisk@sda21(r13)
 /* 80083644 00080444  41 82 00 20 */	beq lbl_80083664
-/* 80083648 00080448  88 0D C2 95 */	lbz r0, mFModError__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083648 00080448  88 0D C2 95 */	lbz r0, mFModError__8iTRCDisk@sda21(r13)
 /* 8008364C 0008044C  28 00 00 00 */	cmplwi r0, 0
 /* 80083650 00080450  41 82 00 14 */	beq lbl_80083664
-/* 80083654 00080454  80 8D C2 A4 */	lwz r4, mFModPriority__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083654 00080454  80 8D C2 A4 */	lwz r4, mFModPriority__8iTRCDisk@sda21(r13)
 /* 80083658 00080458  48 1B 45 95 */	bl OSSetThreadPriority
 /* 8008365C 0008045C  38 00 00 00 */	li r0, 0
-/* 80083660 00080460  90 0D C2 A0 */	stw r0, mFModThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083660 00080460  90 0D C2 A0 */	stw r0, mFModThread__8iTRCDisk@sda21(r13)
 lbl_80083664:
 /* 80083664 00080464  38 00 00 00 */	li r0, 0
 /* 80083668 00080468  38 60 00 01 */	li r3, 1
-/* 8008366C 0008046C  98 0D C2 95 */	stb r0, mFModError__8iTRCDisk-_SDA_BASE_(r13)
+/* 8008366C 0008046C  98 0D C2 95 */	stb r0, mFModError__8iTRCDisk@sda21(r13)
 /* 80083670 00080470  48 00 00 E5 */	bl EnableMovieResetCallBack__8iTRCDiskFb
 /* 80083674 00080474  7F C3 F3 78 */	mr r3, r30
 /* 80083678 00080478  BB C1 00 08 */	lmw r30, 8(r1)
@@ -1597,22 +1597,22 @@ FMODCallBack__8iTRCDiskFi:
 /* 8008368C 0008048C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80083690 00080490  7C 08 02 A6 */	mflr r0
 /* 80083694 00080494  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80083698 00080498  88 0D C2 94 */	lbz r0, mInCriticalSection__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083698 00080498  88 0D C2 94 */	lbz r0, mInCriticalSection__8iTRCDisk@sda21(r13)
 /* 8008369C 0008049C  28 00 00 00 */	cmplwi r0, 0
 /* 800836A0 000804A0  40 82 00 3C */	bne lbl_800836DC
 /* 800836A4 000804A4  2C 03 00 00 */	cmpwi r3, 0
 /* 800836A8 000804A8  41 82 00 34 */	beq lbl_800836DC
-/* 800836AC 000804AC  88 0D C2 95 */	lbz r0, mFModError__8iTRCDisk-_SDA_BASE_(r13)
+/* 800836AC 000804AC  88 0D C2 95 */	lbz r0, mFModError__8iTRCDisk@sda21(r13)
 /* 800836B0 000804B0  28 00 00 00 */	cmplwi r0, 0
 /* 800836B4 000804B4  40 82 00 28 */	bne lbl_800836DC
 /* 800836B8 000804B8  38 00 00 01 */	li r0, 1
-/* 800836BC 000804BC  98 0D C2 95 */	stb r0, mFModError__8iTRCDisk-_SDA_BASE_(r13)
+/* 800836BC 000804BC  98 0D C2 95 */	stb r0, mFModError__8iTRCDisk@sda21(r13)
 /* 800836C0 000804C0  48 1B 35 1D */	bl OSGetCurrentThread
-/* 800836C4 000804C4  90 6D C2 A0 */	stw r3, mFModThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 800836C4 000804C4  90 6D C2 A0 */	stw r3, mFModThread__8iTRCDisk@sda21(r13)
 /* 800836C8 000804C8  48 1B 45 E5 */	bl OSGetThreadPriority
-/* 800836CC 000804CC  90 6D C2 A4 */	stw r3, mFModPriority__8iTRCDisk-_SDA_BASE_(r13)
+/* 800836CC 000804CC  90 6D C2 A4 */	stw r3, mFModPriority__8iTRCDisk@sda21(r13)
 /* 800836D0 000804D0  38 80 00 1F */	li r4, 0x1f
-/* 800836D4 000804D4  80 6D C2 A0 */	lwz r3, mFModThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 800836D4 000804D4  80 6D C2 A0 */	lwz r3, mFModThread__8iTRCDisk@sda21(r13)
 /* 800836D8 000804D8  48 1B 45 15 */	bl OSSetThreadPriority
 lbl_800836DC:
 /* 800836DC 000804DC  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1625,14 +1625,14 @@ CheckDiskErrorInHigherPriorityThread__8iTRCDiskFv:
 /* 800836EC 000804EC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800836F0 000804F0  7C 08 02 A6 */	mflr r0
 /* 800836F4 000804F4  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800836F8 000804F8  88 0D C2 A8 */	lbz r0, mDiskErrorInHigherPriorityThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 800836F8 000804F8  88 0D C2 A8 */	lbz r0, mDiskErrorInHigherPriorityThread__8iTRCDisk@sda21(r13)
 /* 800836FC 000804FC  28 00 00 00 */	cmplwi r0, 0
 /* 80083700 00080500  40 82 00 0C */	bne lbl_8008370C
 /* 80083704 00080504  4B FF FD 99 */	bl CheckDVDAndResetState__8iTRCDiskFv
-/* 80083708 00080508  98 6D C2 A8 */	stb r3, mDiskErrorInHigherPriorityThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083708 00080508  98 6D C2 A8 */	stb r3, mDiskErrorInHigherPriorityThread__8iTRCDisk@sda21(r13)
 lbl_8008370C:
 /* 8008370C 0008050C  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 80083710 00080510  88 6D C2 A8 */	lbz r3, mDiskErrorInHigherPriorityThread__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083710 00080510  88 6D C2 A8 */	lbz r3, mDiskErrorInHigherPriorityThread__8iTRCDisk@sda21(r13)
 /* 80083714 00080514  7C 08 03 A6 */	mtlr r0
 /* 80083718 00080518  38 21 00 10 */	addi r1, r1, 0x10
 /* 8008371C 0008051C  4E 80 00 20 */	blr 
@@ -1643,8 +1643,8 @@ FMODUpdateDiskError__8iTRCDiskFi:
 /* 80083724 00080524  7C 08 02 A6 */	mflr r0
 /* 80083728 00080528  38 60 00 01 */	li r3, 1
 /* 8008372C 0008052C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80083730 00080530  88 0D C2 96 */	lbz r0, mInFModLockingCode__8iTRCDisk-_SDA_BASE_(r13)
-/* 80083734 00080534  98 6D C2 95 */	stb r3, mFModError__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083730 00080530  88 0D C2 96 */	lbz r0, mInFModLockingCode__8iTRCDisk@sda21(r13)
+/* 80083734 00080534  98 6D C2 95 */	stb r3, mFModError__8iTRCDisk@sda21(r13)
 /* 80083738 00080538  28 00 00 00 */	cmplwi r0, 0
 /* 8008373C 0008053C  41 82 00 08 */	beq lbl_80083744
 /* 80083740 00080540  4B FF FD C1 */	bl TRCCheck__8iTRCDiskFv
@@ -1661,7 +1661,7 @@ EnableMovieResetCallBack__8iTRCDiskFb:
 /* 8008375C 0008055C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80083760 00080560  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80083764 00080564  41 82 00 10 */	beq lbl_80083774
-/* 80083768 00080568  80 6D C2 8C */	lwz r3, mMovieResetCallBack__8iTRCDisk-_SDA_BASE_(r13)
+/* 80083768 00080568  80 6D C2 8C */	lwz r3, mMovieResetCallBack__8iTRCDisk@sda21(r13)
 /* 8008376C 0008056C  48 1B 22 41 */	bl OSSetResetCallback
 /* 80083770 00080570  48 00 00 0C */	b lbl_8008377C
 lbl_80083774:

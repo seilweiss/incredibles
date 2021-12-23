@@ -162,7 +162,7 @@ lbl_8005359C:
 
 .global adjust_block_sizes__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_Fv
 adjust_block_sizes__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_Fv:
-/* 800535B8 000503B8  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 800535B8 000503B8  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 800535BC 000503BC  3C 60 4E 4A */	lis r3, 0x4E4A3032@ha
 /* 800535C0 000503C0  38 03 30 32 */	addi r0, r3, 0x4E4A3032@l
 /* 800535C4 000503C4  80 64 04 C8 */	lwz r3, 0x4c8(r4)
@@ -176,37 +176,37 @@ lbl_800535D8:
 /* 800535E0 000503E0  38 80 00 14 */	li r4, 0x14
 /* 800535E4 000503E4  38 60 00 10 */	li r3, 0x10
 /* 800535E8 000503E8  38 00 00 0C */	li r0, 0xc
-/* 800535EC 000503EC  90 CD 83 B0 */	stw r6, MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 800535F0 000503F0  90 AD 83 B4 */	stw r5, MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 800535F4 000503F4  90 8D 83 B8 */	stw r4, MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 800535F8 000503F8  90 6D 83 BC */	stw r3, MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 800535FC 000503FC  90 0D 83 C0 */	stw r0, MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80053600 00050400  90 AD 83 C4 */	stw r5, MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 800535EC 000503EC  90 CD 83 B0 */	stw r6, MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 800535F0 000503F0  90 AD 83 B4 */	stw r5, MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 800535F4 000503F4  90 8D 83 B8 */	stw r4, MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 800535F8 000503F8  90 6D 83 BC */	stw r3, MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 800535FC 000503FC  90 0D 83 C0 */	stw r0, MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 80053600 00050400  90 AD 83 C4 */	stw r5, MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053604 00050404  48 00 00 2C */	b lbl_80053630
 lbl_80053608:
 /* 80053608 00050408  38 80 00 08 */	li r4, 8
 /* 8005360C 0005040C  38 60 00 0C */	li r3, 0xc
 /* 80053610 00050410  38 A0 00 04 */	li r5, 4
 /* 80053614 00050414  38 00 00 10 */	li r0, 0x10
-/* 80053618 00050418  90 AD 83 B0 */	stw r5, MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8005361C 0005041C  90 8D 83 B4 */	stw r4, MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80053620 00050420  90 6D 83 B8 */	stw r3, MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80053624 00050424  90 0D 83 BC */	stw r0, MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80053628 00050428  90 6D 83 C0 */	stw r3, MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8005362C 0005042C  90 8D 83 C4 */	stw r4, MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053618 00050418  90 AD 83 B0 */	stw r5, MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 8005361C 0005041C  90 8D 83 B4 */	stw r4, MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 80053620 00050420  90 6D 83 B8 */	stw r3, MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 80053624 00050424  90 0D 83 BC */	stw r0, MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 80053628 00050428  90 6D 83 C0 */	stw r3, MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 8005362C 0005042C  90 8D 83 C4 */	stw r4, MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 lbl_80053630:
-/* 80053630 00050430  80 6D 83 B8 */	lwz r3, MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80053634 00050434  80 0D 83 B4 */	lwz r0, MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80053638 00050438  80 8D 83 BC */	lwz r4, MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053630 00050430  80 6D 83 B8 */	lwz r3, MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 80053634 00050434  80 0D 83 B4 */	lwz r0, MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 80053638 00050438  80 8D 83 BC */	lwz r4, MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 8005363C 0005043C  7C 00 1A 14 */	add r0, r0, r3
-/* 80053640 00050440  80 6D 83 C0 */	lwz r3, MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053640 00050440  80 6D 83 C0 */	lwz r3, MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053644 00050444  7C 00 22 14 */	add r0, r0, r4
-/* 80053648 00050448  80 8D 83 C4 */	lwz r4, MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053648 00050448  80 8D 83 C4 */	lwz r4, MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 8005364C 0005044C  7C 00 1A 14 */	add r0, r0, r3
-/* 80053650 00050450  80 6D 83 B0 */	lwz r3, MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053650 00050450  80 6D 83 B0 */	lwz r3, MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053654 00050454  7C 00 22 14 */	add r0, r0, r4
 /* 80053658 00050458  7C 03 02 14 */	add r0, r3, r0
-/* 8005365C 0005045C  90 0D BC 18 */	stw r0, MAX_PTANKS__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8005365C 0005045C  90 0D BC 18 */	stw r0, MAX_PTANKS__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053660 00050460  4E 80 00 20 */	blr 
 
 .global init_groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_Fv
@@ -217,15 +217,15 @@ init_groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_Fv:
 /* 80053670 00050470  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 80053674 00050474  4B FF FF 45 */	bl adjust_block_sizes__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_Fv
 /* 80053678 00050478  3C 60 80 30 */	lis r3, groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@ha
-/* 8005367C 0005047C  81 0D 83 B0 */	lwz r8, MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8005367C 0005047C  81 0D 83 B0 */	lwz r8, MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053680 00050480  38 E3 F8 68 */	addi r7, r3, groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@l
-/* 80053684 00050484  80 CD 83 B4 */	lwz r6, MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80053688 00050488  80 AD 83 B8 */	lwz r5, MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053684 00050484  80 CD 83 B4 */	lwz r6, MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 80053688 00050488  80 AD 83 B8 */	lwz r5, MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 8005368C 0005048C  3B E7 00 A8 */	addi r31, r7, 0xa8
-/* 80053690 00050490  80 8D 83 BC */	lwz r4, MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053690 00050490  80 8D 83 BC */	lwz r4, MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053694 00050494  39 20 00 00 */	li r9, 0
-/* 80053698 00050498  80 6D 83 C0 */	lwz r3, MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8005369C 0005049C  80 0D 83 C4 */	lwz r0, MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053698 00050498  80 6D 83 C0 */	lwz r3, MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 8005369C 0005049C  80 0D 83 C4 */	lwz r0, MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 800536A0 000504A0  91 07 00 00 */	stw r8, 0(r7)
 /* 800536A4 000504A4  90 C7 00 1C */	stw r6, 0x1c(r7)
 /* 800536A8 000504A8  90 A7 00 38 */	stw r5, 0x38(r7)
@@ -243,7 +243,7 @@ lbl_800536C8:
 /* 800536D0 000504D0  38 09 00 0C */	addi r0, r9, 0xc
 /* 800536D4 000504D4  55 24 28 34 */	slwi r4, r9, 5
 /* 800536D8 000504D8  54 00 10 3A */	slwi r0, r0, 2
-/* 800536DC 000504DC  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 800536DC 000504DC  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 800536E0 000504E0  7C 84 02 14 */	add r4, r4, r0
 /* 800536E4 000504E4  38 A0 00 00 */	li r5, 0
 /* 800536E8 000504E8  4B FF 64 79 */	bl xMemAlloc__FUiUii
@@ -313,9 +313,9 @@ lbl_800537B0:
 /* 800537D0 000505D0  38 60 00 00 */	li r3, 0
 /* 800537D4 000505D4  48 00 00 C8 */	b lbl_8005389C
 lbl_800537D8:
-/* 800537D8 000505D8  C0 22 8B 80 */	lfs f1, _esc__2_1089_0-_SDA2_BASE_(r2)
+/* 800537D8 000505D8  C0 22 8B 80 */	lfs f1, _esc__2_1089_0@sda21(r2)
 /* 800537DC 000505DC  7F E3 FB 78 */	mr r3, r31
-/* 800537E0 000505E0  C0 02 8B 84 */	lfs f0, _esc__2_1090_0-_SDA2_BASE_(r2)
+/* 800537E0 000505E0  C0 02 8B 84 */	lfs f0, _esc__2_1090_0@sda21(r2)
 /* 800537E4 000505E4  D0 24 00 38 */	stfs f1, 0x38(r4)
 /* 800537E8 000505E8  D0 24 00 24 */	stfs f1, 0x24(r4)
 /* 800537EC 000505EC  D0 24 00 10 */	stfs f1, 0x10(r4)
@@ -333,27 +333,27 @@ lbl_800537D8:
 /* 8005381C 0005061C  60 00 00 03 */	ori r0, r0, 3
 /* 80053820 00050620  90 04 00 1C */	stw r0, 0x1c(r4)
 /* 80053824 00050624  48 21 A0 4D */	bl RpAtomicSetFrame
-/* 80053828 00050628  80 6D E4 F8 */	lwz r3, _rpPTankAtomicDataOffset-_SDA_BASE_(r13)
+/* 80053828 00050628  80 6D E4 F8 */	lwz r3, _rpPTankAtomicDataOffset@sda21(r13)
 /* 8005382C 0005062C  57 C0 03 19 */	rlwinm. r0, r30, 0, 0xc, 0xc
 /* 80053830 00050630  38 00 00 01 */	li r0, 1
 /* 80053834 00050634  7C 7F 18 2E */	lwzx r3, r31, r3
 /* 80053838 00050638  90 03 00 AC */	stw r0, 0xac(r3)
 /* 8005383C 0005063C  41 82 00 50 */	beq lbl_8005388C
-/* 80053840 00050640  80 02 8B 70 */	lwz r0, _esc__2_1078-_SDA2_BASE_(r2)
+/* 80053840 00050640  80 02 8B 70 */	lwz r0, _esc__2_1078@sda21(r2)
 /* 80053844 00050644  38 81 00 0C */	addi r4, r1, 0xc
-/* 80053848 00050648  80 E2 8B 74 */	lwz r7, lbl_803D2894-_SDA2_BASE_(r2)
+/* 80053848 00050648  80 E2 8B 74 */	lwz r7, lbl_803D2894@sda21(r2)
 /* 8005384C 0005064C  38 A0 00 10 */	li r5, 0x10
-/* 80053850 00050650  80 C2 8B 78 */	lwz r6, lbl_803D2898-_SDA2_BASE_(r2)
-/* 80053854 00050654  80 62 8B 7C */	lwz r3, lbl_803D289C-_SDA2_BASE_(r2)
+/* 80053850 00050650  80 C2 8B 78 */	lwz r6, lbl_803D2898@sda21(r2)
+/* 80053854 00050654  80 62 8B 7C */	lwz r3, lbl_803D289C@sda21(r2)
 /* 80053858 00050658  90 01 00 0C */	stw r0, 0xc(r1)
-/* 8005385C 0005065C  80 0D E4 F8 */	lwz r0, _rpPTankAtomicDataOffset-_SDA_BASE_(r13)
+/* 8005385C 0005065C  80 0D E4 F8 */	lwz r0, _rpPTankAtomicDataOffset@sda21(r13)
 /* 80053860 00050660  90 E1 00 10 */	stw r7, 0x10(r1)
 /* 80053864 00050664  90 C1 00 14 */	stw r6, 0x14(r1)
 /* 80053868 00050668  90 61 00 18 */	stw r3, 0x18(r1)
 /* 8005386C 0005066C  7C 7F 00 2E */	lwzx r3, r31, r0
 /* 80053870 00050670  38 63 00 D8 */	addi r3, r3, 0xd8
 /* 80053874 00050674  4B FA F9 75 */	bl memcpy
-/* 80053878 00050678  80 0D E4 F8 */	lwz r0, _rpPTankAtomicDataOffset-_SDA_BASE_(r13)
+/* 80053878 00050678  80 0D E4 F8 */	lwz r0, _rpPTankAtomicDataOffset@sda21(r13)
 /* 8005387C 0005067C  7C 7F 00 2E */	lwzx r3, r31, r0
 /* 80053880 00050680  80 03 00 40 */	lwz r0, 0x40(r3)
 /* 80053884 00050684  64 00 00 08 */	oris r0, r0, 8
@@ -413,7 +413,7 @@ render_ptank__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_FRCQ224_esc__2_unna
 /* 80053934 00050734  90 9D 00 00 */	stw r4, 0(r29)
 /* 80053938 00050738  7C 00 00 34 */	cntlzw r0, r0
 /* 8005393C 0005073C  38 60 00 06 */	li r3, 6
-/* 80053940 00050740  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 80053940 00050740  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 80053944 00050744  54 04 DE 3E */	rlwinm r4, r0, 0x1b, 0x18, 0x1f
 /* 80053948 00050748  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 8005394C 0005074C  7D 89 03 A6 */	mtctr r12
@@ -427,14 +427,14 @@ lbl_80053954:
 /* 80053968 00050768  50 80 07 BC */	rlwimi r0, r4, 0, 0x1e, 0x1e
 /* 8005396C 0005076C  54 84 07 BC */	rlwinm r4, r4, 0, 0x1e, 0x1e
 /* 80053970 00050770  90 1D 00 00 */	stw r0, 0(r29)
-/* 80053974 00050774  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 80053974 00050774  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 80053978 00050778  81 85 00 20 */	lwz r12, 0x20(r5)
 /* 8005397C 0005077C  7D 89 03 A6 */	mtctr r12
 /* 80053980 00050780  4E 80 04 21 */	bctrl 
 lbl_80053984:
 /* 80053984 00050784  80 1F 00 08 */	lwz r0, 8(r31)
 /* 80053988 00050788  38 60 00 06 */	li r3, 6
-/* 8005398C 0005078C  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 8005398C 0005078C  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 80053990 00050790  54 00 07 FE */	clrlwi r0, r0, 0x1f
 /* 80053994 00050794  81 84 00 20 */	lwz r12, 0x20(r4)
 /* 80053998 00050798  7C 00 00 34 */	cntlzw r0, r0
@@ -523,13 +523,13 @@ xPTankPoolSceneEnter__Fv:
 /* 80053AB8 000508B8  BF A1 00 24 */	stmw r29, 0x24(r1)
 /* 80053ABC 000508BC  38 60 00 01 */	li r3, 1
 /* 80053AC0 000508C0  38 00 00 00 */	li r0, 0
-/* 80053AC4 000508C4  98 6D BC 1C */	stb r3, inited__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
-/* 80053AC8 000508C8  90 0D BC 20 */	stw r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053AC4 000508C4  98 6D BC 1C */	stb r3, inited__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
+/* 80053AC8 000508C8  90 0D BC 20 */	stw r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053ACC 000508CC  4B FF FB 99 */	bl init_groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_Fv
 /* 80053AD0 000508D0  3C 60 80 30 */	lis r3, groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@ha
-/* 80053AD4 000508D4  C3 C2 8B 88 */	lfs f30, _esc__2_1163-_SDA2_BASE_(r2)
+/* 80053AD4 000508D4  C3 C2 8B 88 */	lfs f30, _esc__2_1163@sda21(r2)
 /* 80053AD8 000508D8  38 63 F8 68 */	addi r3, r3, groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@l
-/* 80053ADC 000508DC  CB E2 8B 90 */	lfd f31, _esc__2_1165-_SDA2_BASE_(r2)
+/* 80053ADC 000508DC  CB E2 8B 90 */	lfd f31, _esc__2_1165@sda21(r2)
 /* 80053AE0 000508E0  7C 7E 1B 78 */	mr r30, r3
 /* 80053AE4 000508E4  3F E0 43 30 */	lis r31, 0x4330
 /* 80053AE8 000508E8  3B A3 00 A8 */	addi r29, r3, 0xa8
@@ -623,7 +623,7 @@ xPTankPoolSceneExit__Fv:
 /* 80053C18 00050A18  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 80053C1C 00050A1C  7C 7F 1B 78 */	mr r31, r3
 /* 80053C20 00050A20  3B C3 00 A8 */	addi r30, r3, 0xa8
-/* 80053C24 00050A24  98 0D BC 1C */	stb r0, inited__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053C24 00050A24  98 0D BC 1C */	stb r0, inited__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053C28 00050A28  48 00 00 30 */	b lbl_80053C58
 lbl_80053C2C:
 /* 80053C2C 00050A2C  80 1F 00 10 */	lwz r0, 0x10(r31)
@@ -659,7 +659,7 @@ xPTankPoolRender__Fv:
 /* 80053C8C 00050A8C  38 60 00 01 */	li r3, 1
 /* 80053C90 00050A90  38 80 00 00 */	li r4, 0
 /* 80053C94 00050A94  4B FC D7 B9 */	bl xFXHighDynamicRangeBrighten__Fbb
-/* 80053C98 00050A98  80 0D BC 18 */	lwz r0, MAX_PTANKS__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053C98 00050A98  80 0D BC 18 */	lwz r0, MAX_PTANKS__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053C9C 00050A9C  54 03 28 34 */	slwi r3, r0, 5
 /* 80053CA0 00050AA0  4B FB 3C 41 */	bl xMemPushTemp__FUi
 /* 80053CA4 00050AA4  3C 80 80 30 */	lis r4, groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@ha
@@ -744,7 +744,7 @@ lbl_80053DB0:
 /* 80053DB8 00050BB8  80 01 00 08 */	lwz r0, 8(r1)
 /* 80053DBC 00050BBC  54 00 07 FF */	clrlwi. r0, r0, 0x1f
 /* 80053DC0 00050BC0  41 82 00 1C */	beq lbl_80053DDC
-/* 80053DC4 00050BC4  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 80053DC4 00050BC4  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 80053DC8 00050BC8  38 60 00 06 */	li r3, 6
 /* 80053DCC 00050BCC  38 80 00 01 */	li r4, 1
 /* 80053DD0 00050BD0  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -754,7 +754,7 @@ lbl_80053DDC:
 /* 80053DDC 00050BDC  80 01 00 08 */	lwz r0, 8(r1)
 /* 80053DE0 00050BE0  54 00 07 BD */	rlwinm. r0, r0, 0, 0x1e, 0x1e
 /* 80053DE4 00050BE4  41 82 00 1C */	beq lbl_80053E00
-/* 80053DE8 00050BE8  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 80053DE8 00050BE8  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 80053DEC 00050BEC  38 60 00 08 */	li r3, 8
 /* 80053DF0 00050BF0  38 80 00 00 */	li r4, 0
 /* 80053DF4 00050BF4  81 85 00 20 */	lwz r12, 0x20(r5)
@@ -765,7 +765,7 @@ lbl_80053E00:
 /* 80053E04 00050C04  48 02 51 4D */	bl iMemPopTemp__FPv
 /* 80053E08 00050C08  38 00 00 00 */	li r0, 0
 /* 80053E0C 00050C0C  38 60 00 00 */	li r3, 0
-/* 80053E10 00050C10  90 0D BC 20 */	stw r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053E10 00050C10  90 0D BC 20 */	stw r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053E14 00050C14  38 80 00 00 */	li r4, 0
 /* 80053E18 00050C18  4B FC D6 35 */	bl xFXHighDynamicRangeBrighten__Fbb
 /* 80053E1C 00050C1C  BB 41 00 18 */	lmw r26, 0x18(r1)
@@ -847,12 +847,12 @@ lbl_80053F2C:
 /* 80053F34 00050D34  80 83 00 00 */	lwz r4, 0(r3)
 /* 80053F38 00050D38  90 04 00 18 */	stw r0, 0x18(r4)
 lbl_80053F3C:
-/* 80053F3C 00050D3C  80 0D BC 20 */	lwz r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053F3C 00050D3C  80 0D BC 20 */	lwz r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053F40 00050D40  80 83 00 00 */	lwz r4, 0(r3)
 /* 80053F44 00050D44  90 04 00 1C */	stw r0, 0x1c(r4)
-/* 80053F48 00050D48  80 8D BC 20 */	lwz r4, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053F48 00050D48  80 8D BC 20 */	lwz r4, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053F4C 00050D4C  38 04 00 01 */	addi r0, r4, 1
-/* 80053F50 00050D50  90 0D BC 20 */	stw r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80053F50 00050D50  90 0D BC 20 */	stw r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80053F54 00050D54  80 83 00 00 */	lwz r4, 0(r3)
 /* 80053F58 00050D58  80 04 00 04 */	lwz r0, 4(r4)
 /* 80053F5C 00050D5C  90 1D 00 1C */	stw r0, 0x1c(r29)
@@ -907,17 +907,17 @@ lbl_80053FF4:
 /* 80054010 00050E10  80 63 00 00 */	lwz r3, 0(r3)
 /* 80054014 00050E14  48 21 C9 15 */	bl RpMaterialSetTexture
 /* 80054018 00050E18  80 7D 00 1C */	lwz r3, 0x1c(r29)
-/* 8005401C 00050E1C  80 0D E4 F8 */	lwz r0, _rpPTankAtomicDataOffset-_SDA_BASE_(r13)
+/* 8005401C 00050E1C  80 0D E4 F8 */	lwz r0, _rpPTankAtomicDataOffset@sda21(r13)
 /* 80054020 00050E20  80 9D 00 04 */	lwz r4, 4(r29)
 /* 80054024 00050E24  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80054028 00050E28  90 83 00 A4 */	stw r4, 0xa4(r3)
 /* 8005402C 00050E2C  80 7D 00 1C */	lwz r3, 0x1c(r29)
-/* 80054030 00050E30  80 0D E4 F8 */	lwz r0, _rpPTankAtomicDataOffset-_SDA_BASE_(r13)
+/* 80054030 00050E30  80 0D E4 F8 */	lwz r0, _rpPTankAtomicDataOffset@sda21(r13)
 /* 80054034 00050E34  80 9D 00 08 */	lwz r4, 8(r29)
 /* 80054038 00050E38  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8005403C 00050E3C  90 83 00 A8 */	stw r4, 0xa8(r3)
 /* 80054040 00050E40  80 7D 00 1C */	lwz r3, 0x1c(r29)
-/* 80054044 00050E44  80 0D E4 F8 */	lwz r0, _rpPTankAtomicDataOffset-_SDA_BASE_(r13)
+/* 80054044 00050E44  80 0D E4 F8 */	lwz r0, _rpPTankAtomicDataOffset@sda21(r13)
 /* 80054048 00050E48  7C 63 00 2E */	lwzx r3, r3, r0
 /* 8005404C 00050E4C  80 03 00 40 */	lwz r0, 0x40(r3)
 /* 80054050 00050E50  64 00 10 00 */	oris r0, r0, 0x1000
@@ -945,12 +945,12 @@ lbl_80054098:
 /* 800540A4 00050EA4  80 7E 00 00 */	lwz r3, 0(r30)
 /* 800540A8 00050EA8  90 03 00 18 */	stw r0, 0x18(r3)
 lbl_800540AC:
-/* 800540AC 00050EAC  80 0D BC 20 */	lwz r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 800540AC 00050EAC  80 0D BC 20 */	lwz r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 800540B0 00050EB0  80 7E 00 00 */	lwz r3, 0(r30)
 /* 800540B4 00050EB4  90 03 00 1C */	stw r0, 0x1c(r3)
-/* 800540B8 00050EB8  80 6D BC 20 */	lwz r3, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 800540B8 00050EB8  80 6D BC 20 */	lwz r3, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 800540BC 00050EBC  38 03 00 01 */	addi r0, r3, 1
-/* 800540C0 00050EC0  90 0D BC 20 */	stw r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 800540C0 00050EC0  90 0D BC 20 */	stw r0, current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 800540C4 00050EC4  80 1D 00 0C */	lwz r0, 0xc(r29)
 /* 800540C8 00050EC8  80 7E 00 00 */	lwz r3, 0(r30)
 /* 800540CC 00050ECC  64 00 00 01 */	oris r0, r0, 1
@@ -974,21 +974,21 @@ lbl_800540F8:
 
 .global __sinit_xPtankPool_cpp
 __sinit_xPtankPool_cpp:
-/* 8005410C 00050F0C  80 CD 83 B8 */	lwz r6, MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8005410C 00050F0C  80 CD 83 B8 */	lwz r6, MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80054110 00050F10  3C 60 80 30 */	lis r3, groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@ha
-/* 80054114 00050F14  80 AD 83 B4 */	lwz r5, MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80054114 00050F14  80 AD 83 B4 */	lwz r5, MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80054118 00050F18  38 63 F8 68 */	addi r3, r3, groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@l
-/* 8005411C 00050F1C  80 ED 83 BC */	lwz r7, MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8005411C 00050F1C  80 ED 83 BC */	lwz r7, MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80054120 00050F20  7C 05 32 14 */	add r0, r5, r6
-/* 80054124 00050F24  81 0D 83 C0 */	lwz r8, MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80054124 00050F24  81 0D 83 C0 */	lwz r8, MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80054128 00050F28  7C 00 3A 14 */	add r0, r0, r7
-/* 8005412C 00050F2C  81 2D 83 C4 */	lwz r9, MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8005412C 00050F2C  81 2D 83 C4 */	lwz r9, MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80054130 00050F30  7C 00 42 14 */	add r0, r0, r8
-/* 80054134 00050F34  80 8D 83 B0 */	lwz r4, MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80054134 00050F34  80 8D 83 B0 */	lwz r4, MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80054138 00050F38  7C 00 4A 14 */	add r0, r0, r9
 /* 8005413C 00050F3C  90 A3 00 1C */	stw r5, 0x1c(r3)
 /* 80054140 00050F40  7C 04 02 14 */	add r0, r4, r0
-/* 80054144 00050F44  90 0D BC 18 */	stw r0, MAX_PTANKS__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_-_SDA_BASE_(r13)
+/* 80054144 00050F44  90 0D BC 18 */	stw r0, MAX_PTANKS__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_@sda21(r13)
 /* 80054148 00050F48  90 83 00 00 */	stw r4, 0(r3)
 /* 8005414C 00050F4C  90 C3 00 38 */	stw r6, 0x38(r3)
 /* 80054150 00050F50  90 E3 00 54 */	stw r7, 0x54(r3)

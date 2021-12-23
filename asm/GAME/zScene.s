@@ -99,7 +99,7 @@ zSceneSpecialRender_numFuncs:
 scobj_idbps:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global _esc__2_3484
 _esc__2_3484:
@@ -201,7 +201,7 @@ _esc__2_3177:
 
 .global zSceneIsLoadingPackFile__Fv
 zSceneIsLoadingPackFile__Fv:
-/* 80155BC4 001529C4  88 6D CE 34 */	lbz r3, sLoadingPackFile-_SDA_BASE_(r13)
+/* 80155BC4 001529C4  88 6D CE 34 */	lbz r3, sLoadingPackFile@sda21(r13)
 /* 80155BC8 001529C8  4E 80 00 20 */	blr 
 
 .global count_dynamic_types__20_esc__2_unnamed_esc__2_zScene_cpp_esc__2_FPCc
@@ -303,7 +303,7 @@ lbl_80155D10:
 /* 80155D14 00152B14  28 00 00 00 */	cmplwi r0, 0
 /* 80155D18 00152B18  41 82 00 24 */	beq lbl_80155D3C
 /* 80155D1C 00152B1C  7C 83 01 D6 */	mullw r4, r3, r0
-/* 80155D20 00152B20  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80155D20 00152B20  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80155D24 00152B24  38 A0 00 00 */	li r5, 0
 /* 80155D28 00152B28  4B EF 3E 39 */	bl xMemAlloc__FUiUii
 /* 80155D2C 00152B2C  80 19 00 04 */	lwz r0, 4(r25)
@@ -438,7 +438,7 @@ zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 80155EF0 00152CF0  2C 19 00 00 */	cmpwi r25, 0
 /* 80155EF4 00152CF4  41 82 00 28 */	beq lbl_80155F1C
 /* 80155EF8 00152CF8  7C 99 F9 D6 */	mullw r4, r25, r31
-/* 80155EFC 00152CFC  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80155EFC 00152CFC  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80155F00 00152D00  38 A0 00 00 */	li r5, 0
 /* 80155F04 00152D04  4B EF 3C 5D */	bl xMemAlloc__FUiUii
 /* 80155F08 00152D08  80 1D 00 04 */	lwz r0, 4(r29)
@@ -509,7 +509,7 @@ zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 80155FF0 00152DF0  2C 1C 00 00 */	cmpwi r28, 0
 /* 80155FF4 00152DF4  41 82 00 28 */	beq lbl_8015601C
 /* 80155FF8 00152DF8  7C 9C D9 D6 */	mullw r4, r28, r27
-/* 80155FFC 00152DFC  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80155FFC 00152DFC  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80156000 00152E00  38 A0 00 00 */	li r5, 0
 /* 80156004 00152E04  4B EF 3B 5D */	bl xMemAlloc__FUiUii
 /* 80156008 00152E08  80 1E 00 04 */	lwz r0, 4(r30)
@@ -570,7 +570,7 @@ zSceneInitFunc_Duplicator__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 801560C8 00152EC8  83 23 00 7C */	lwz r25, 0x7c(r3)
 /* 801560CC 00152ECC  2C 19 00 00 */	cmpwi r25, 0
 /* 801560D0 00152ED0  41 82 00 28 */	beq lbl_801560F8
-/* 801560D4 00152ED4  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801560D4 00152ED4  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801560D8 00152ED8  57 24 40 2E */	slwi r4, r25, 8
 /* 801560DC 00152EDC  38 A0 00 00 */	li r5, 0
 /* 801560E0 00152EE0  4B EF 3A 81 */	bl xMemAlloc__FUiUii
@@ -759,7 +759,7 @@ zSceneInitFunc_Player__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 8015636C 0015316C  2C 1A 00 00 */	cmpwi r26, 0
 /* 80156370 00153170  41 82 00 B0 */	beq lbl_80156420
 /* 80156374 00153174  1C 9A 00 DC */	mulli r4, r26, 0xdc
-/* 80156378 00153178  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80156378 00153178  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 8015637C 0015317C  38 A0 00 00 */	li r5, 0
 /* 80156380 00153180  4B EF 37 E1 */	bl xMemAlloc__FUiUii
 /* 80156384 00153184  80 18 00 04 */	lwz r0, 4(r24)
@@ -772,7 +772,7 @@ zSceneInitFunc_Player__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 801563A0 001531A0  90 64 02 B0 */	stw r3, 0x2b0(r4)
 /* 801563A4 001531A4  48 00 00 74 */	b lbl_80156418
 lbl_801563A8:
-/* 801563A8 001531A8  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801563A8 001531A8  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801563AC 001531AC  7F E4 FB 78 */	mr r4, r31
 /* 801563B0 001531B0  83 03 04 C4 */	lwz r24, 0x4c4(r3)
 /* 801563B4 001531B4  7F 03 C3 78 */	mr r3, r24
@@ -828,7 +828,7 @@ zSceneInitFunc_Camera__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 80156464 00153264  2C 1C 00 00 */	cmpwi r28, 0
 /* 80156468 00153268  41 82 00 8C */	beq lbl_801564F4
 /* 8015646C 0015326C  1C 9C 00 14 */	mulli r4, r28, 0x14
-/* 80156470 00153270  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80156470 00153270  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80156474 00153274  38 A0 00 00 */	li r5, 0
 /* 80156478 00153278  4B EF 36 E9 */	bl xMemAlloc__FUiUii
 /* 8015647C 0015327C  80 19 00 04 */	lwz r0, 4(r25)
@@ -1044,13 +1044,13 @@ PipeCountStuffCB__FP8RpAtomicR10xModelPipeUi:
 /* 8015674C 0015354C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80156750 00153550  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80156754 00153554  7C 9F 23 78 */	mr r31, r4
-/* 80156758 00153558  80 AD CE 3C */	lwz r5, sPipeSceneAssetID-_SDA_BASE_(r13)
+/* 80156758 00153558  80 AD CE 3C */	lwz r5, sPipeSceneAssetID@sda21(r13)
 /* 8015675C 0015355C  80 84 00 00 */	lwz r4, 0(r4)
 /* 80156760 00153560  48 00 00 29 */	bl xModelBucket_HackPipeFlags__FP8RpAtomicUiUi
 /* 80156764 00153564  90 7F 00 00 */	stw r3, 0(r31)
-/* 80156768 00153568  80 6D BB A0 */	lwz r3, xModelLookupCount-_SDA_BASE_(r13)
+/* 80156768 00153568  80 6D BB A0 */	lwz r3, xModelLookupCount@sda21(r13)
 /* 8015676C 0015356C  38 03 00 01 */	addi r0, r3, 1
-/* 80156770 00153570  90 0D BB A0 */	stw r0, xModelLookupCount-_SDA_BASE_(r13)
+/* 80156770 00153570  90 0D BB A0 */	stw r0, xModelLookupCount@sda21(r13)
 /* 80156774 00153574  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 80156778 00153578  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015677C 0015357C  7C 08 03 A6 */	mtlr r0
@@ -1067,19 +1067,19 @@ PipeAddStuffCB__FP8RpAtomicR10xModelPipeUi:
 /* 80156790 00153590  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80156794 00153594  7C 08 02 A6 */	mflr r0
 /* 80156798 00153598  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8015679C 0015359C  80 0D BB A0 */	lwz r0, xModelLookupCount-_SDA_BASE_(r13)
-/* 801567A0 001535A0  80 AD BB A4 */	lwz r5, xModelLookupList-_SDA_BASE_(r13)
+/* 8015679C 0015359C  80 0D BB A0 */	lwz r0, xModelLookupCount@sda21(r13)
+/* 801567A0 001535A0  80 AD BB A4 */	lwz r5, xModelLookupList@sda21(r13)
 /* 801567A4 001535A4  1C 00 00 0C */	mulli r0, r0, 0xc
 /* 801567A8 001535A8  7C 65 01 2E */	stwx r3, r5, r0
-/* 801567AC 001535AC  80 0D BB A0 */	lwz r0, xModelLookupCount-_SDA_BASE_(r13)
-/* 801567B0 001535B0  80 AD BB A4 */	lwz r5, xModelLookupList-_SDA_BASE_(r13)
+/* 801567AC 001535AC  80 0D BB A0 */	lwz r0, xModelLookupCount@sda21(r13)
+/* 801567B0 001535B0  80 AD BB A4 */	lwz r5, xModelLookupList@sda21(r13)
 /* 801567B4 001535B4  1C 60 00 0C */	mulli r3, r0, 0xc
 /* 801567B8 001535B8  38 63 00 04 */	addi r3, r3, 4
 /* 801567BC 001535BC  7C 65 1A 14 */	add r3, r5, r3
 /* 801567C0 001535C0  4B EC 79 E5 */	bl __as__10xModelPipeFRC10xModelPipe
-/* 801567C4 001535C4  80 6D BB A0 */	lwz r3, xModelLookupCount-_SDA_BASE_(r13)
+/* 801567C4 001535C4  80 6D BB A0 */	lwz r3, xModelLookupCount@sda21(r13)
 /* 801567C8 001535C8  38 03 00 01 */	addi r0, r3, 1
-/* 801567CC 001535CC  90 0D BB A0 */	stw r0, xModelLookupCount-_SDA_BASE_(r13)
+/* 801567CC 001535CC  90 0D BB A0 */	stw r0, xModelLookupCount@sda21(r13)
 /* 801567D0 001535D0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801567D4 001535D4  7C 08 03 A6 */	mtlr r0
 /* 801567D8 001535D8  38 21 00 10 */	addi r1, r1, 0x10
@@ -1114,7 +1114,7 @@ lbl_80156810:
 /* 8015683C 0015363C  80 01 00 08 */	lwz r0, 8(r1)
 /* 80156840 00153640  7F 03 C3 78 */	mr r3, r24
 /* 80156844 00153644  3A 60 00 00 */	li r19, 0
-/* 80156848 00153648  90 0D CE 3C */	stw r0, sPipeSceneAssetID-_SDA_BASE_(r13)
+/* 80156848 00153648  90 0D CE 3C */	stw r0, sPipeSceneAssetID@sda21(r13)
 lbl_8015684C:
 /* 8015684C 0015364C  3A 73 00 01 */	addi r19, r19, 1
 /* 80156850 00153650  4B F2 2E 91 */	bl iModelFile_RWMultiAtomic__FP8RpAtomic
@@ -1192,7 +1192,7 @@ lbl_8015694C:
 /* 80156958 00153758  3B 5A 00 01 */	addi r26, r26, 1
 /* 8015695C 0015375C  3A 94 00 04 */	addi r20, r20, 4
 lbl_80156960:
-/* 80156960 00153760  80 0D BB 1C */	lwz r0, xModelPipeNumTables-_SDA_BASE_(r13)
+/* 80156960 00153760  80 0D BB 1C */	lwz r0, xModelPipeNumTables@sda21(r13)
 /* 80156964 00153764  7C 1A 00 00 */	cmpw r26, r0
 /* 80156968 00153768  41 80 FF 1C */	blt lbl_80156884
 /* 8015696C 0015376C  28 17 00 00 */	cmplwi r23, 0
@@ -1200,7 +1200,7 @@ lbl_80156960:
 /* 80156974 00153774  7E AC AB 78 */	mr r12, r21
 /* 80156978 00153778  7F 03 C3 78 */	mr r3, r24
 /* 8015697C 0015377C  7E E5 BB 78 */	mr r5, r23
-/* 80156980 00153780  38 8D 83 18 */	addi r4, r13, modelDefaultPipe-_SDA_BASE_
+/* 80156980 00153780  38 8D 83 18 */	addi r4, r13, modelDefaultPipe@sda21
 /* 80156984 00153784  7D 89 03 A6 */	mtctr r12
 /* 80156988 00153788  4E 80 04 21 */	bctrl 
 lbl_8015698C:
@@ -1278,7 +1278,7 @@ zSceneInit__FUii:
 /* 80156A84 00153884  38 00 00 01 */	li r0, 1
 /* 80156A88 00153888  90 61 00 08 */	stw r3, 8(r1)
 /* 80156A8C 0015388C  7C 9D 23 78 */	mr r29, r4
-/* 80156A90 00153890  98 0D CE 44 */	stb r0, gInSceneResetOrInit-_SDA_BASE_(r13)
+/* 80156A90 00153890  98 0D CE 44 */	stb r0, gInSceneResetOrInit@sda21(r13)
 /* 80156A94 00153894  48 00 0B 31 */	bl xDebugGraphSceneEnter__Fv
 /* 80156A98 00153898  48 00 0B 29 */	bl IncrementTweakReloadIndex__Fv
 /* 80156A9C 0015389C  80 61 00 08 */	lwz r3, 8(r1)
@@ -1287,9 +1287,9 @@ zSceneInit__FUii:
 /* 80156AA8 001538A8  38 60 00 00 */	li r3, 0
 /* 80156AAC 001538AC  80 81 00 08 */	lwz r4, 8(r1)
 /* 80156AB0 001538B0  7C A0 07 74 */	extsb r0, r5
-/* 80156AB4 001538B4  90 6D D2 68 */	stw r3, gOccludeCount-_SDA_BASE_(r13)
+/* 80156AB4 001538B4  90 6D D2 68 */	stw r3, gOccludeCount@sda21(r13)
 /* 80156AB8 001538B8  2C 00 00 61 */	cmpwi r0, 0x61
-/* 80156ABC 001538BC  90 8D CE 40 */	stw r4, gTransitionSceneID-_SDA_BASE_(r13)
+/* 80156ABC 001538BC  90 8D CE 40 */	stw r4, gTransitionSceneID@sda21(r13)
 /* 80156AC0 001538C0  41 80 00 10 */	blt lbl_80156AD0
 /* 80156AC4 001538C4  2C 00 00 7A */	cmpwi r0, 0x7a
 /* 80156AC8 001538C8  41 81 00 08 */	bgt lbl_80156AD0
@@ -1353,7 +1353,7 @@ lbl_80156B7C:
 /* 80156B90 00153990  2C 1D 00 00 */	cmpwi r29, 0
 /* 80156B94 00153994  40 82 00 0C */	bne lbl_80156BA0
 /* 80156B98 00153998  4B EF 31 D1 */	bl xMemPushBase__Fv
-/* 80156B9C 0015399C  90 6D 9F 5C */	stw r3, sMemDepthSceneStart-_SDA_BASE_(r13)
+/* 80156B9C 0015399C  90 6D 9F 5C */	stw r3, sMemDepthSceneStart@sda21(r13)
 lbl_80156BA0:
 /* 80156BA0 001539A0  4B F7 79 19 */	bl zGameScreenTransitionBegin__Fv
 /* 80156BA4 001539A4  4B FD 60 41 */	bl zNPCMgr_sceneInit__Fv
@@ -1362,7 +1362,7 @@ lbl_80156BA0:
 /* 80156BB0 001539B0  48 00 F7 A1 */	bl Reset__18zTrainPathJunctionFv
 /* 80156BB4 001539B4  48 07 E8 59 */	bl scene_enter__10xModelBlurFv
 /* 80156BB8 001539B8  2C 1D 00 00 */	cmpwi r29, 0
-/* 80156BBC 001539BC  C3 E2 B7 E8 */	lfs f31, _esc__2_1714_0-_SDA2_BASE_(r2)
+/* 80156BBC 001539BC  C3 E2 B7 E8 */	lfs f31, _esc__2_1714_0@sda21(r2)
 /* 80156BC0 001539C0  40 82 00 2C */	bne lbl_80156BEC
 /* 80156BC4 001539C4  3C 60 80 2E */	lis r3, _esc__2_stringBase0_93@ha
 /* 80156BC8 001539C8  FC 20 F8 90 */	fmr f1, f31
@@ -1376,9 +1376,9 @@ lbl_80156BA0:
 /* 80156BE8 001539E8  48 00 40 35 */	bl zSceneLoadPackFile__FUiibPCc
 lbl_80156BEC:
 /* 80156BEC 001539EC  4B EF 31 7D */	bl xMemPushBase__Fv
-/* 80156BF0 001539F0  90 6D 9F 60 */	stw r3, sMemDepthJustHIPStart-_SDA_BASE_(r13)
+/* 80156BF0 001539F0  90 6D 9F 60 */	stw r3, sMemDepthJustHIPStart@sda21(r13)
 /* 80156BF4 001539F4  38 80 04 F0 */	li r4, 0x4f0
-/* 80156BF8 001539F8  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80156BF8 001539F8  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80156BFC 001539FC  38 A0 00 00 */	li r5, 0
 /* 80156C00 00153A00  4B EF 2F 61 */	bl xMemAlloc__FUiUii
 /* 80156C04 00153A04  3C 80 80 38 */	lis r4, globals@ha
@@ -1390,7 +1390,7 @@ lbl_80156BEC:
 /* 80156C1C 00153A1C  38 C0 08 14 */	li r6, 0x814
 /* 80156C20 00153A20  38 E0 01 80 */	li r7, 0x180
 /* 80156C24 00153A24  4B F0 1D 65 */	bl xSceneInit__FP6xSceneUsUsUsUs
-/* 80156C28 00153A28  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80156C28 00153A28  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80156C2C 00153A2C  38 80 00 40 */	li r4, 0x40
 /* 80156C30 00153A30  38 A0 00 00 */	li r5, 0
 /* 80156C34 00153A34  4B EF 2F 2D */	bl xMemAlloc__FUiUii
@@ -1412,7 +1412,7 @@ lbl_80156BEC:
 /* 80156C74 00153A74  38 A0 00 00 */	li r5, 0
 /* 80156C78 00153A78  38 C0 00 00 */	li r6, 0
 /* 80156C7C 00153A7C  48 00 3F A1 */	bl zSceneLoadPackFile__FUiibPCc
-/* 80156C80 00153A80  C0 02 B7 E8 */	lfs f0, _esc__2_1714_0-_SDA2_BASE_(r2)
+/* 80156C80 00153A80  C0 02 B7 E8 */	lfs f0, _esc__2_1714_0@sda21(r2)
 /* 80156C84 00153A84  3C 60 80 2E */	lis r3, _esc__2_stringBase0_93@ha
 /* 80156C88 00153A88  38 63 51 C0 */	addi r3, r3, _esc__2_stringBase0_93@l
 /* 80156C8C 00153A8C  EF FF 00 2A */	fadds f31, f31, f0
@@ -1448,7 +1448,7 @@ lbl_80156CF4:
 /* 80156CF4 00153AF4  80 1E 04 E8 */	lwz r0, 0x4e8(r30)
 /* 80156CF8 00153AF8  28 00 00 00 */	cmplwi r0, 0
 /* 80156CFC 00153AFC  40 82 00 78 */	bne lbl_80156D74
-/* 80156D00 00153B00  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80156D00 00153B00  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80156D04 00153B04  38 80 00 68 */	li r4, 0x68
 /* 80156D08 00153B08  38 A0 00 00 */	li r5, 0
 /* 80156D0C 00153B0C  4B EF 2E 55 */	bl xMemAlloc__FUiUii
@@ -1464,7 +1464,7 @@ lbl_80156CF4:
 /* 80156D34 00153B34  98 03 00 20 */	stb r0, 0x20(r3)
 /* 80156D38 00153B38  38 80 00 50 */	li r4, 0x50
 /* 80156D3C 00153B3C  38 00 00 00 */	li r0, 0
-/* 80156D40 00153B40  C0 02 B7 EC */	lfs f0, _esc__2_2240_0-_SDA2_BASE_(r2)
+/* 80156D40 00153B40  C0 02 B7 EC */	lfs f0, _esc__2_2240_0@sda21(r2)
 /* 80156D44 00153B44  80 7E 04 E8 */	lwz r3, 0x4e8(r30)
 /* 80156D48 00153B48  98 C3 00 21 */	stb r6, 0x21(r3)
 /* 80156D4C 00153B4C  80 7E 04 E8 */	lwz r3, 0x4e8(r30)
@@ -1582,11 +1582,11 @@ lbl_80156E70:
 /* 80156EF0 00153CF0  80 9F 04 C8 */	lwz r4, 0x4c8(r31)
 /* 80156EF4 00153CF4  90 04 00 60 */	stw r0, 0x60(r4)
 /* 80156EF8 00153CF8  80 1F 04 C8 */	lwz r0, 0x4c8(r31)
-/* 80156EFC 00153CFC  90 0D BC 98 */	stw r0, g_xSceneCur-_SDA_BASE_(r13)
+/* 80156EFC 00153CFC  90 0D BC 98 */	stw r0, g_xSceneCur@sda21(r13)
 /* 80156F00 00153D00  4B F1 54 4D */	bl xSTAssetCountByType__FUi
 /* 80156F04 00153D04  3C A0 80 3D */	lis r5, xModelPipeCount@ha
 /* 80156F08 00153D08  3C 80 80 3D */	lis r4, xModelPipeData@ha
-/* 80156F0C 00153D0C  90 6D BB 1C */	stw r3, xModelPipeNumTables-_SDA_BASE_(r13)
+/* 80156F0C 00153D0C  90 6D BB 1C */	stw r3, xModelPipeNumTables@sda21(r13)
 /* 80156F10 00153D10  3B A5 EF A0 */	addi r29, r5, xModelPipeCount@l
 /* 80156F14 00153D14  3B 84 EF E0 */	addi r28, r4, xModelPipeData@l
 /* 80156F18 00153D18  3B 20 00 00 */	li r25, 0
@@ -1605,26 +1605,26 @@ lbl_80156F28:
 /* 80156F48 00153D48  7C 1C D9 2E */	stwx r0, r28, r27
 /* 80156F4C 00153D4C  3B 7B 00 04 */	addi r27, r27, 4
 lbl_80156F50:
-/* 80156F50 00153D50  80 0D BB 1C */	lwz r0, xModelPipeNumTables-_SDA_BASE_(r13)
+/* 80156F50 00153D50  80 0D BB 1C */	lwz r0, xModelPipeNumTables@sda21(r13)
 /* 80156F54 00153D54  7C 19 00 00 */	cmpw r25, r0
 /* 80156F58 00153D58  41 80 FF D0 */	blt lbl_80156F28
 /* 80156F5C 00153D5C  38 00 00 00 */	li r0, 0
 /* 80156F60 00153D60  3C 60 80 15 */	lis r3, PipeCountStuffCB__FP8RpAtomicR10xModelPipeUi@ha
-/* 80156F64 00153D64  90 0D BB A0 */	stw r0, xModelLookupCount-_SDA_BASE_(r13)
+/* 80156F64 00153D64  90 0D BB A0 */	stw r0, xModelLookupCount@sda21(r13)
 /* 80156F68 00153D68  38 63 67 44 */	addi r3, r3, PipeCountStuffCB__FP8RpAtomicR10xModelPipeUi@l
 /* 80156F6C 00153D6C  4B FF F8 75 */	bl PipeForAllSceneModels__FPFP8RpAtomicR10xModelPipeUi_v
-/* 80156F70 00153D70  80 0D BB A0 */	lwz r0, xModelLookupCount-_SDA_BASE_(r13)
+/* 80156F70 00153D70  80 0D BB A0 */	lwz r0, xModelLookupCount@sda21(r13)
 /* 80156F74 00153D74  2C 00 00 00 */	cmpwi r0, 0
 /* 80156F78 00153D78  41 82 00 2C */	beq lbl_80156FA4
 /* 80156F7C 00153D7C  1C 80 00 0C */	mulli r4, r0, 0xc
-/* 80156F80 00153D80  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80156F80 00153D80  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80156F84 00153D84  38 A0 00 00 */	li r5, 0
 /* 80156F88 00153D88  4B EF 2B D9 */	bl xMemAlloc__FUiUii
 /* 80156F8C 00153D8C  38 00 00 00 */	li r0, 0
 /* 80156F90 00153D90  3C 80 80 15 */	lis r4, PipeAddStuffCB__FP8RpAtomicR10xModelPipeUi@ha
-/* 80156F94 00153D94  90 6D BB A4 */	stw r3, xModelLookupList-_SDA_BASE_(r13)
+/* 80156F94 00153D94  90 6D BB A4 */	stw r3, xModelLookupList@sda21(r13)
 /* 80156F98 00153D98  38 64 67 90 */	addi r3, r4, PipeAddStuffCB__FP8RpAtomicR10xModelPipeUi@l
-/* 80156F9C 00153D9C  90 0D BB A0 */	stw r0, xModelLookupCount-_SDA_BASE_(r13)
+/* 80156F9C 00153D9C  90 0D BB A0 */	stw r0, xModelLookupCount@sda21(r13)
 /* 80156FA0 00153DA0  4B FF F8 41 */	bl PipeForAllSceneModels__FPFP8RpAtomicR10xModelPipeUi_v
 lbl_80156FA4:
 /* 80156FA4 00153DA4  48 00 06 19 */	bl add_scene_tweaks__Fv
@@ -1655,7 +1655,7 @@ lbl_80156FA4:
 /* 80157008 00153E08  4B F2 D8 71 */	bl zAnimListInit__Fv
 /* 8015700C 00153E0C  48 08 DD 2D */	bl xModelWarpSceneEnter__Fv
 /* 80157010 00153E10  3C 60 80 2E */	lis r3, _esc__2_stringBase0_93@ha
-/* 80157014 00153E14  C0 22 B7 F0 */	lfs f1, _esc__2_2241-_SDA2_BASE_(r2)
+/* 80157014 00153E14  C0 22 B7 F0 */	lfs f1, _esc__2_2241@sda21(r2)
 /* 80157018 00153E18  38 63 51 C0 */	addi r3, r3, _esc__2_stringBase0_93@l
 /* 8015701C 00153E1C  38 63 05 5D */	addi r3, r3, 0x55d
 /* 80157020 00153E20  4B F7 75 81 */	bl zGameScreenTransitionUpdate__FfPc
@@ -1695,7 +1695,7 @@ lbl_80157034:
 /* 801570A4 00153EA4  4B F2 C4 5D */	bl TRCCheck__8iTRCDiskFv
 /* 801570A8 00153EA8  38 00 00 01 */	li r0, 1
 /* 801570AC 00153EAC  3C 60 80 31 */	lis r3, sInitTable@ha
-/* 801570B0 00153EB0  90 0D BB A8 */	stw r0, xModelInstStaticAlloc-_SDA_BASE_(r13)
+/* 801570B0 00153EB0  90 0D BB A8 */	stw r0, xModelInstStaticAlloc@sda21(r13)
 /* 801570B4 00153EB4  38 00 00 00 */	li r0, 0
 /* 801570B8 00153EB8  3B 83 F9 88 */	addi r28, r3, sInitTable@l
 /* 801570BC 00153EBC  3B 60 00 00 */	li r27, 0
@@ -1785,7 +1785,7 @@ lbl_801571C0:
 /* 801571EC 00153FEC  80 1E 00 6C */	lwz r0, 0x6c(r30)
 /* 801571F0 00153FF0  2C 00 00 00 */	cmpwi r0, 0
 /* 801571F4 00153FF4  41 82 00 1C */	beq lbl_80157210
-/* 801571F8 00153FF8  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801571F8 00153FF8  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801571FC 00153FFC  54 04 10 3A */	slwi r4, r0, 2
 /* 80157200 00154000  38 A0 00 00 */	li r5, 0
 /* 80157204 00154004  4B EF 29 5D */	bl xMemAlloc__FUiUii
@@ -1864,7 +1864,7 @@ lbl_80157300:
 /* 80157308 00154108  41 80 FF C4 */	blt lbl_801572CC
 /* 8015730C 0015410C  80 1E 00 74 */	lwz r0, 0x74(r30)
 /* 80157310 00154110  38 A0 00 00 */	li r5, 0
-/* 80157314 00154114  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80157314 00154114  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80157318 00154118  54 04 10 3A */	slwi r4, r0, 2
 /* 8015731C 0015411C  4B EF 28 45 */	bl xMemAlloc__FUiUii
 /* 80157320 00154120  90 7E 00 78 */	stw r3, 0x78(r30)
@@ -1894,7 +1894,7 @@ lbl_80157370:
 /* 80157374 00154174  7C 19 00 00 */	cmpw r25, r0
 /* 80157378 00154178  41 80 FF BC */	blt lbl_80157334
 /* 8015737C 0015417C  38 00 00 00 */	li r0, 0
-/* 80157380 00154180  90 0D BB A8 */	stw r0, xModelInstStaticAlloc-_SDA_BASE_(r13)
+/* 80157380 00154180  90 0D BB A8 */	stw r0, xModelInstStaticAlloc@sda21(r13)
 /* 80157384 00154184  4B F2 C1 7D */	bl TRCCheck__8iTRCDiskFv
 /* 80157388 00154188  4B F7 76 91 */	bl zGameScreenTransitionEnd__Fv
 /* 8015738C 0015418C  48 00 32 85 */	bl zSceneObjHashtableUsage__Fv
@@ -2006,12 +2006,12 @@ lbl_801574D4:
 /* 80157508 00154308  48 05 7F 0D */	bl __ct__Q24zHud13DiskIndicatorFv
 /* 8015750C 0015430C  7C 60 1B 78 */	mr r0, r3
 lbl_80157510:
-/* 80157510 00154310  90 0D CE 10 */	stw r0, pDiskIndicator-_SDA_BASE_(r13)
+/* 80157510 00154310  90 0D CE 10 */	stw r0, pDiskIndicator@sda21(r13)
 /* 80157514 00154314  4B F7 A4 91 */	bl instance__Q24zHud10hud_systemFv
-/* 80157518 00154318  80 8D CE 10 */	lwz r4, pDiskIndicator-_SDA_BASE_(r13)
+/* 80157518 00154318  80 8D CE 10 */	lwz r4, pDiskIndicator@sda21(r13)
 /* 8015751C 0015431C  4B F7 A3 D1 */	bl add__Q24zHud10hud_systemFPQ24zHud11hud_element
 /* 80157520 00154320  3C 60 80 38 */	lis r3, globals@ha
-/* 80157524 00154324  C0 02 B7 E4 */	lfs f0, _esc__2_1345_1-_SDA2_BASE_(r2)
+/* 80157524 00154324  C0 02 B7 E4 */	lfs f0, _esc__2_1345_1@sda21(r2)
 /* 80157528 00154328  38 63 2A 38 */	addi r3, r3, globals@l
 /* 8015752C 0015432C  3B 20 00 00 */	li r25, 0
 /* 80157530 00154330  D0 03 05 60 */	stfs f0, 0x560(r3)
@@ -2033,7 +2033,7 @@ lbl_80157548:
 /* 80157568 00154368  4B F2 9D 79 */	bl iSndSuspendCD__FUi
 /* 8015756C 0015436C  4B F2 BF 95 */	bl TRCCheck__8iTRCDiskFv
 /* 80157570 00154370  38 00 00 00 */	li r0, 0
-/* 80157574 00154374  98 0D CE 44 */	stb r0, gInSceneResetOrInit-_SDA_BASE_(r13)
+/* 80157574 00154374  98 0D CE 44 */	stb r0, gInSceneResetOrInit@sda21(r13)
 /* 80157578 00154378  E3 E1 00 38 */	psq_l f31, 56(r1), 0, qr0
 /* 8015757C 0015437C  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 80157580 00154380  BB 01 00 10 */	lmw r24, 0x10(r1)
@@ -2047,7 +2047,7 @@ xQuickCullInit__FPC4xBox:
 /* 80157594 00154394  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80157598 00154398  7C 08 02 A6 */	mflr r0
 /* 8015759C 0015439C  7C 64 1B 78 */	mr r4, r3
-/* 801575A0 001543A0  38 6D BC 28 */	addi r3, r13, xqc_def_ctrl-_SDA_BASE_
+/* 801575A0 001543A0  38 6D BC 28 */	addi r3, r13, xqc_def_ctrl@sda21
 /* 801575A4 001543A4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801575A8 001543A8  4B EF CC 99 */	bl xQuickCullInit__FP10xQCControlPC4xBox
 /* 801575AC 001543AC  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -2193,16 +2193,16 @@ zSceneExit__Fi:
 /* 80157778 00154578  41 82 00 08 */	beq lbl_80157780
 /* 8015777C 0015457C  4B F4 8D E1 */	bl zCutsceneMgrFinishExit__FP5xBase
 lbl_80157780:
-/* 80157780 00154580  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 80157780 00154580  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 80157784 00154584  38 60 00 00 */	li r3, 0
 /* 80157788 00154588  80 84 04 04 */	lwz r4, 0x404(r4)
 /* 8015778C 0015458C  4B EE BC 39 */	bl xLightKit_Enable__FP9xLightKitP7RpWorld
 /* 80157790 00154590  3C 60 80 38 */	lis r3, globals@ha
 /* 80157794 00154594  38 00 00 00 */	li r0, 0
 /* 80157798 00154598  3B E3 2A 38 */	addi r31, r3, globals@l
-/* 8015779C 0015459C  90 0D C9 B4 */	stw r0, additional_lasers__10zLaserBeam-_SDA_BASE_(r13)
+/* 8015779C 0015459C  90 0D C9 B4 */	stw r0, additional_lasers__10zLaserBeam@sda21(r13)
 /* 801577A0 001545A0  83 DF 04 C8 */	lwz r30, 0x4c8(r31)
-/* 801577A4 001545A4  90 0D D8 60 */	stw r0, pDashMeter__Q24zHud9DashMeter-_SDA_BASE_(r13)
+/* 801577A4 001545A4  90 0D D8 60 */	stw r0, pDashMeter__Q24zHud9DashMeter@sda21(r13)
 /* 801577A8 001545A8  7F C3 F3 78 */	mr r3, r30
 /* 801577AC 001545AC  4B F7 8E AD */	bl zGridExit__FP6zScene
 /* 801577B0 001545B0  3C 60 80 16 */	lis r3, zSceneExitSoundIteratorCB__FP5xBaseP6zScenePv@ha
@@ -2255,8 +2255,8 @@ lbl_80157780:
 lbl_8015786C:
 /* 8015786C 0015466C  38 00 00 00 */	li r0, 0
 /* 80157870 00154670  80 7F 04 C8 */	lwz r3, 0x4c8(r31)
-/* 80157874 00154674  90 0D D2 68 */	stw r0, gOccludeCount-_SDA_BASE_(r13)
-/* 80157878 00154678  80 0D CB 00 */	lwz r0, SCENE_ID_MNU_START-_SDA_BASE_(r13)
+/* 80157874 00154674  90 0D D2 68 */	stw r0, gOccludeCount@sda21(r13)
+/* 80157878 00154678  80 0D CB 00 */	lwz r0, SCENE_ID_MNU_START@sda21(r13)
 /* 8015787C 0015467C  80 63 00 00 */	lwz r3, 0(r3)
 /* 80157880 00154680  7C 03 00 40 */	cmplw r3, r0
 /* 80157884 00154684  41 82 00 0C */	beq lbl_80157890
@@ -2311,10 +2311,10 @@ lbl_80157890:
 /* 80157944 00154744  38 80 00 05 */	li r4, 5
 /* 80157948 00154748  80 63 00 00 */	lwz r3, 0(r3)
 /* 8015794C 0015474C  4B F1 46 01 */	bl xSTUnLoadSceneMany__FUii
-/* 80157950 00154750  80 6D 9F 60 */	lwz r3, sMemDepthJustHIPStart-_SDA_BASE_(r13)
+/* 80157950 00154750  80 6D 9F 60 */	lwz r3, sMemDepthJustHIPStart@sda21(r13)
 /* 80157954 00154754  4B EF 25 2D */	bl xMemPopBase__Fi
 /* 80157958 00154758  38 00 FF FF */	li r0, -1
-/* 8015795C 0015475C  90 0D 9F 60 */	stw r0, sMemDepthJustHIPStart-_SDA_BASE_(r13)
+/* 8015795C 0015475C  90 0D 9F 60 */	stw r0, sMemDepthJustHIPStart@sda21(r13)
 /* 80157960 00154760  48 00 00 38 */	b lbl_80157998
 lbl_80157964:
 /* 80157964 00154764  80 7F 04 C8 */	lwz r3, 0x4c8(r31)
@@ -2324,12 +2324,12 @@ lbl_80157964:
 /* 80157974 00154774  3C 60 80 38 */	lis r3, globals@ha
 /* 80157978 00154778  38 00 00 00 */	li r0, 0
 /* 8015797C 0015477C  38 83 2A 38 */	addi r4, r3, globals@l
-/* 80157980 00154780  80 6D 9F 5C */	lwz r3, sMemDepthSceneStart-_SDA_BASE_(r13)
+/* 80157980 00154780  80 6D 9F 5C */	lwz r3, sMemDepthSceneStart@sda21(r13)
 /* 80157984 00154784  90 04 00 04 */	stw r0, 4(r4)
 /* 80157988 00154788  4B EF 24 F9 */	bl xMemPopBase__Fi
 /* 8015798C 0015478C  38 00 FF FF */	li r0, -1
-/* 80157990 00154790  90 0D 9F 5C */	stw r0, sMemDepthSceneStart-_SDA_BASE_(r13)
-/* 80157994 00154794  90 0D 9F 60 */	stw r0, sMemDepthJustHIPStart-_SDA_BASE_(r13)
+/* 80157990 00154790  90 0D 9F 5C */	stw r0, sMemDepthSceneStart@sda21(r13)
+/* 80157994 00154794  90 0D 9F 60 */	stw r0, sMemDepthJustHIPStart@sda21(r13)
 lbl_80157998:
 /* 80157998 00154798  4B FF 8B A1 */	bl zPlayerUnloadHIP__Fv
 /* 8015799C 0015479C  4B F0 EA 9D */	bl xSndMgrSceneExit__Fv
@@ -2406,7 +2406,7 @@ lbl_80157A70:
 /* 80157A74 00154874  30 03 FF FF */	addic r0, r3, -1
 /* 80157A78 00154878  2C 1D 00 00 */	cmpwi r29, 0
 /* 80157A7C 0015487C  7C 00 19 10 */	subfe r0, r0, r3
-/* 80157A80 00154880  90 0D C7 10 */	stw r0, gLevelChanged-_SDA_BASE_(r13)
+/* 80157A80 00154880  90 0D C7 10 */	stw r0, gLevelChanged@sda21(r13)
 /* 80157A84 00154884  80 9E 00 14 */	lwz r4, 0x14(r30)
 /* 80157A88 00154888  40 82 02 10 */	bne lbl_80157C98
 /* 80157A8C 0015488C  80 7F 04 C8 */	lwz r3, 0x4c8(r31)
@@ -2415,7 +2415,7 @@ lbl_80157A70:
 /* 80157A98 00154898  40 82 02 00 */	bne lbl_80157C98
 /* 80157A9C 0015489C  C3 FE 00 10 */	lfs f31, 0x10(r30)
 /* 80157AA0 001548A0  3C 60 80 38 */	lis r3, globals@ha
-/* 80157AA4 001548A4  C0 02 B7 F4 */	lfs f0, _esc__2_2341-_SDA2_BASE_(r2)
+/* 80157AA4 001548A4  C0 02 B7 F4 */	lfs f0, _esc__2_2341@sda21(r2)
 /* 80157AA8 001548A8  38 63 2A 38 */	addi r3, r3, globals@l
 /* 80157AAC 001548AC  83 BE 00 0C */	lwz r29, 0xc(r30)
 /* 80157AB0 001548B0  80 1E 00 08 */	lwz r0, 8(r30)
@@ -2431,7 +2431,7 @@ lbl_80157A70:
 /* 80157AD8 001548D8  4B F5 72 65 */	bl valid__13pointer_assetCFv
 /* 80157ADC 001548DC  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80157AE0 001548E0  41 82 00 20 */	beq lbl_80157B00
-/* 80157AE4 001548E4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80157AE4 001548E4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80157AE8 001548E8  38 9E 00 10 */	addi r4, r30, 0x10
 /* 80157AEC 001548EC  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80157AF0 001548F0  80 63 00 48 */	lwz r3, 0x48(r3)
@@ -2444,7 +2444,7 @@ lbl_80157B00:
 /* 80157B08 00154908  4B F1 47 99 */	bl xSTFindAsset__FUiPUi
 /* 80157B0C 0015490C  28 03 00 00 */	cmplwi r3, 0
 /* 80157B10 00154910  41 82 01 7C */	beq lbl_80157C8C
-/* 80157B14 00154914  80 AD 91 D0 */	lwz r5, xglobals-_SDA_BASE_(r13)
+/* 80157B14 00154914  80 AD 91 D0 */	lwz r5, xglobals@sda21(r13)
 /* 80157B18 00154918  7C 64 1B 78 */	mr r4, r3
 /* 80157B1C 0015491C  80 65 04 C4 */	lwz r3, 0x4c4(r5)
 /* 80157B20 00154920  80 A3 00 28 */	lwz r5, 0x28(r3)
@@ -2466,27 +2466,27 @@ lbl_80157B48:
 /* 80157B5C 0015495C  4B F5 71 E1 */	bl valid__13pointer_assetCFv
 /* 80157B60 00154960  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80157B64 00154964  41 82 00 78 */	beq lbl_80157BDC
-/* 80157B68 00154968  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80157B68 00154968  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80157B6C 0015496C  38 9E 00 10 */	addi r4, r30, 0x10
 /* 80157B70 00154970  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80157B74 00154974  83 A3 00 48 */	lwz r29, 0x48(r3)
 /* 80157B78 00154978  38 7D 00 30 */	addi r3, r29, 0x30
 /* 80157B7C 0015497C  4B EB 35 2D */	bl __as__5xVec3FRC5xVec3
-/* 80157B80 00154980  C0 22 B7 F8 */	lfs f1, _esc__2_2342_2-_SDA2_BASE_(r2)
+/* 80157B80 00154980  C0 22 B7 F8 */	lfs f1, _esc__2_2342_2@sda21(r2)
 /* 80157B84 00154984  38 7D 00 AC */	addi r3, r29, 0xac
 /* 80157B88 00154988  C0 1E 00 1C */	lfs f0, 0x1c(r30)
-/* 80157B8C 0015498C  38 82 90 30 */	addi r4, r2, m_UnitAxisY__5xVec3-_SDA2_BASE_
+/* 80157B8C 0015498C  38 82 90 30 */	addi r4, r2, m_UnitAxisY__5xVec3@sda21
 /* 80157B90 00154990  EC 01 00 32 */	fmuls f0, f1, f0
 /* 80157B94 00154994  D0 1D 00 B8 */	stfs f0, 0xb8(r29)
 /* 80157B98 00154998  4B EB 35 11 */	bl __as__5xVec3FRC5xVec3
-/* 80157B9C 0015499C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
-/* 80157BA0 001549A0  C0 42 B7 E0 */	lfs f2, _esc__2_1344_0-_SDA2_BASE_(r2)
+/* 80157B9C 0015499C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
+/* 80157BA0 001549A0  C0 42 B7 E0 */	lfs f2, _esc__2_1344_0@sda21(r2)
 /* 80157BA4 001549A4  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80157BA8 001549A8  FC 60 10 90 */	fmr f3, f2
 /* 80157BAC 001549AC  C0 3D 00 B8 */	lfs f1, 0xb8(r29)
 /* 80157BB0 001549B0  80 63 00 48 */	lwz r3, 0x48(r3)
 /* 80157BB4 001549B4  4B EF 07 09 */	bl xMat3x3Euler__FP7xMat3x3fff
-/* 80157BB8 001549B8  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80157BB8 001549B8  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80157BBC 001549BC  7F A4 EB 78 */	mr r4, r29
 /* 80157BC0 001549C0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80157BC4 001549C4  80 63 00 28 */	lwz r3, 0x28(r3)
@@ -2501,39 +2501,39 @@ lbl_80157BDC:
 /* 80157BE4 001549E4  4B F1 46 BD */	bl xSTFindAsset__FUiPUi
 /* 80157BE8 001549E8  7C 7D 1B 79 */	or. r29, r3, r3
 /* 80157BEC 001549EC  41 82 00 48 */	beq lbl_80157C34
-/* 80157BF0 001549F0  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80157BF0 001549F0  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80157BF4 001549F4  7F A4 EB 78 */	mr r4, r29
 /* 80157BF8 001549F8  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80157BFC 001549FC  80 63 00 48 */	lwz r3, 0x48(r3)
 /* 80157C00 00154A00  38 63 00 30 */	addi r3, r3, 0x30
 /* 80157C04 00154A04  4B F1 9B 2D */	bl xVec3Copy__FP5xVec3PC5xVec3
-/* 80157C08 00154A08  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80157C08 00154A08  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80157C0C 00154A0C  7F A4 EB 78 */	mr r4, r29
 /* 80157C10 00154A10  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80157C14 00154A14  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 80157C18 00154A18  80 63 00 54 */	lwz r3, 0x54(r3)
 /* 80157C1C 00154A1C  38 63 00 30 */	addi r3, r3, 0x30
 /* 80157C20 00154A20  4B F1 9B 11 */	bl xVec3Copy__FP5xVec3PC5xVec3
-/* 80157C24 00154A24  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80157C24 00154A24  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80157C28 00154A28  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80157C2C 00154A2C  4B F2 F9 ED */	bl xEntGetFrame__FPC4xEnt
 /* 80157C30 00154A30  4B F2 FF 99 */	bl zCamReset__FRC7xMat4x3
 lbl_80157C34:
-/* 80157C34 00154A34  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
-/* 80157C38 00154A38  38 82 90 30 */	addi r4, r2, m_UnitAxisY__5xVec3-_SDA2_BASE_
-/* 80157C3C 00154A3C  C0 02 B7 F8 */	lfs f0, _esc__2_2342_2-_SDA2_BASE_(r2)
+/* 80157C34 00154A34  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
+/* 80157C38 00154A38  38 82 90 30 */	addi r4, r2, m_UnitAxisY__5xVec3@sda21
+/* 80157C3C 00154A3C  C0 02 B7 F8 */	lfs f0, _esc__2_2342_2@sda21(r2)
 /* 80157C40 00154A40  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80157C44 00154A44  EC 00 07 F2 */	fmuls f0, f0, f31
 /* 80157C48 00154A48  83 A3 00 48 */	lwz r29, 0x48(r3)
 /* 80157C4C 00154A4C  D0 1D 00 B8 */	stfs f0, 0xb8(r29)
 /* 80157C50 00154A50  38 7D 00 AC */	addi r3, r29, 0xac
 /* 80157C54 00154A54  4B EB 34 55 */	bl __as__5xVec3FRC5xVec3
-/* 80157C58 00154A58  C0 42 B7 E0 */	lfs f2, _esc__2_1344_0-_SDA2_BASE_(r2)
+/* 80157C58 00154A58  C0 42 B7 E0 */	lfs f2, _esc__2_1344_0@sda21(r2)
 /* 80157C5C 00154A5C  7F A3 EB 78 */	mr r3, r29
 /* 80157C60 00154A60  C0 3D 00 B8 */	lfs f1, 0xb8(r29)
 /* 80157C64 00154A64  FC 60 10 90 */	fmr f3, f2
 /* 80157C68 00154A68  4B EF 06 55 */	bl xMat3x3Euler__FP7xMat3x3fff
-/* 80157C6C 00154A6C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80157C6C 00154A6C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80157C70 00154A70  7F A4 EB 78 */	mr r4, r29
 /* 80157C74 00154A74  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80157C78 00154A78  80 63 00 28 */	lwz r3, 0x28(r3)
@@ -2595,10 +2595,10 @@ zSceneSave__FP6zScene:
 /* 80157D44 00154B44  7F 43 D3 78 */	mr r3, r26
 /* 80157D48 00154B48  7F A4 EB 78 */	mr r4, r29
 /* 80157D4C 00154B4C  4B F0 0D 6D */	bl xSceneSave__FP6xSceneP7xSerial
-/* 80157D50 00154B50  C0 2D CE 20 */	lfs f1, offsetx-_SDA_BASE_(r13)
+/* 80157D50 00154B50  C0 2D CE 20 */	lfs f1, offsetx@sda21(r13)
 /* 80157D54 00154B54  7F A3 EB 78 */	mr r3, r29
 /* 80157D58 00154B58  4B F0 7A D9 */	bl Write__7xSerialFf
-/* 80157D5C 00154B5C  C0 2D CE 24 */	lfs f1, offsety-_SDA_BASE_(r13)
+/* 80157D5C 00154B5C  C0 2D CE 24 */	lfs f1, offsety@sda21(r13)
 /* 80157D60 00154B60  7F A3 EB 78 */	mr r3, r29
 /* 80157D64 00154B64  4B F0 7A CD */	bl Write__7xSerialFf
 /* 80157D68 00154B68  3C 60 80 38 */	lis r3, globals@ha
@@ -2833,10 +2833,10 @@ lbl_80158068:
 /* 8015809C 00154E9C  7F E4 FB 78 */	mr r4, r31
 /* 801580A0 00154EA0  4B F0 0A 1D */	bl xSceneLoad__FP6xSceneP7xSerial
 /* 801580A4 00154EA4  7F E3 FB 78 */	mr r3, r31
-/* 801580A8 00154EA8  38 8D CE 20 */	addi r4, r13, offsetx-_SDA_BASE_
+/* 801580A8 00154EA8  38 8D CE 20 */	addi r4, r13, offsetx@sda21
 /* 801580AC 00154EAC  4B F0 79 CD */	bl Read__7xSerialFPf
 /* 801580B0 00154EB0  7F E3 FB 78 */	mr r3, r31
-/* 801580B4 00154EB4  38 8D CE 24 */	addi r4, r13, offsety-_SDA_BASE_
+/* 801580B4 00154EB4  38 8D CE 24 */	addi r4, r13, offsety@sda21
 /* 801580B8 00154EB8  4B F0 79 C1 */	bl Read__7xSerialFPf
 /* 801580BC 00154EBC  3C 60 80 38 */	lis r3, globals@ha
 /* 801580C0 00154EC0  3B 80 00 00 */	li r28, 0
@@ -2996,10 +2996,10 @@ zSceneReset__Fv:
 /* 80158308 00155108  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 8015830C 0015510C  3B A3 2A 38 */	addi r29, r3, globals@l
 /* 80158310 00155110  38 60 00 01 */	li r3, 1
-/* 80158314 00155114  98 6D CE 44 */	stb r3, gInSceneResetOrInit-_SDA_BASE_(r13)
+/* 80158314 00155114  98 6D CE 44 */	stb r3, gInSceneResetOrInit@sda21(r13)
 /* 80158318 00155118  83 FD 04 C8 */	lwz r31, 0x4c8(r29)
-/* 8015831C 0015511C  90 0D C9 B4 */	stw r0, additional_lasers__10zLaserBeam-_SDA_BASE_(r13)
-/* 80158320 00155120  90 0D D2 68 */	stw r0, gOccludeCount-_SDA_BASE_(r13)
+/* 8015831C 0015511C  90 0D C9 B4 */	stw r0, additional_lasers__10zLaserBeam@sda21(r13)
+/* 80158320 00155120  90 0D D2 68 */	stw r0, gOccludeCount@sda21(r13)
 /* 80158324 00155124  4B F7 96 81 */	bl instance__Q24zHud10hud_systemFv
 /* 80158328 00155128  48 00 03 3D */	bl is_shown__Q24zHud10hud_systemFv
 /* 8015832C 0015512C  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -3060,11 +3060,11 @@ lbl_801583BC:
 /* 80158400 00155200  4B F0 DB 61 */	bl xSndMgrUpdate__Fv
 /* 80158404 00155204  4B EF DE D5 */	bl Get__Q27xRumble7ManagerFv
 /* 80158408 00155208  4B EF DF 15 */	bl Reset__Q27xRumble7ManagerFv
-/* 8015840C 0015520C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8015840C 0015520C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80158410 00155210  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80158414 00155214  4B FF 80 21 */	bl zPlayerReset__FP4zEnt
 /* 80158418 00155218  4B FF 82 55 */	bl zPlayer_LoadCheckPoint__Fv
-/* 8015841C 0015521C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8015841C 0015521C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80158420 00155220  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80158424 00155224  4B F2 F1 F5 */	bl xEntGetFrame__FPC4xEnt
 /* 80158428 00155228  4B F2 F7 A1 */	bl zCamReset__FRC7xMat4x3
@@ -3218,7 +3218,7 @@ lbl_80158548:
 /* 80158640 00155440  4B ED 04 35 */	bl xEntLoadCheckPoint__Fv
 /* 80158644 00155444  48 09 83 F9 */	bl apply_on_reset__10zCamPresetFv
 /* 80158648 00155448  38 00 00 00 */	li r0, 0
-/* 8015864C 0015544C  98 0D CE 44 */	stb r0, gInSceneResetOrInit-_SDA_BASE_(r13)
+/* 8015864C 0015544C  98 0D CE 44 */	stb r0, gInSceneResetOrInit@sda21(r13)
 /* 80158650 00155450  BB 81 00 10 */	lmw r28, 0x10(r1)
 /* 80158654 00155454  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80158658 00155458  7C 08 03 A6 */	mtlr r0
@@ -3240,13 +3240,13 @@ zSceneStoreCheckPoint__FUi:
 /* 80158680 00155480  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80158684 00155484  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 80158688 00155488  7C 7F 1B 78 */	mr r31, r3
-/* 8015868C 0015548C  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
+/* 8015868C 0015548C  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
 /* 80158690 00155490  80 64 04 C4 */	lwz r3, 0x4c4(r4)
 /* 80158694 00155494  80 63 00 48 */	lwz r3, 0x48(r3)
 /* 80158698 00155498  C0 23 00 20 */	lfs f1, 0x20(r3)
 /* 8015869C 0015549C  C0 43 00 28 */	lfs f2, 0x28(r3)
 /* 801586A0 001554A0  4B EB 78 71 */	bl xatan2__Fff
-/* 801586A4 001554A4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801586A4 001554A4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801586A8 001554A8  7F E4 FB 78 */	mr r4, r31
 /* 801586AC 001554AC  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801586B0 001554B0  80 63 00 48 */	lwz r3, 0x48(r3)
@@ -3275,7 +3275,7 @@ zSceneDiskSpin__Ff:
 /* 801586F4 001554F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801586F8 001554F8  7C 08 02 A6 */	mflr r0
 /* 801586FC 001554FC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80158700 00155500  80 6D CE 10 */	lwz r3, pDiskIndicator-_SDA_BASE_(r13)
+/* 80158700 00155500  80 6D CE 10 */	lwz r3, pDiskIndicator@sda21(r13)
 /* 80158704 00155504  48 05 6F 55 */	bl spin__Q24zHud13DiskIndicatorFf
 /* 80158708 00155508  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015870C 0015550C  7C 08 03 A6 */	mtlr r0
@@ -3340,14 +3340,14 @@ zSceneSetup__Fv:
 /* 801587CC 001555CC  7F C3 F3 78 */	mr r3, r30
 /* 801587D0 001555D0  4B F0 02 F1 */	bl xSceneSetup__FP6xScene
 /* 801587D4 001555D4  38 00 00 01 */	li r0, 1
-/* 801587D8 001555D8  90 0D BB A8 */	stw r0, xModelInstStaticAlloc-_SDA_BASE_(r13)
+/* 801587D8 001555D8  90 0D BB A8 */	stw r0, xModelInstStaticAlloc@sda21(r13)
 /* 801587DC 001555DC  48 05 B5 C1 */	bl zThrowableSystemStartScenePrepare__Fv
 /* 801587E0 001555E0  4B F3 50 9D */	bl zCheatReset__Fv
 /* 801587E4 001555E4  7F C3 F3 78 */	mr r3, r30
 /* 801587E8 001555E8  48 01 37 61 */	bl zUIMgrInit__FP6zScene
-/* 801587EC 001555EC  C0 22 B7 FC */	lfs f1, _esc__2_2908-_SDA2_BASE_(r2)
+/* 801587EC 001555EC  C0 22 B7 FC */	lfs f1, _esc__2_2908@sda21(r2)
 /* 801587F0 001555F0  38 00 00 05 */	li r0, 5
-/* 801587F4 001555F4  C0 02 B8 00 */	lfs f0, _esc__2_2909-_SDA2_BASE_(r2)
+/* 801587F4 001555F4  C0 02 B8 00 */	lfs f0, _esc__2_2909@sda21(r2)
 /* 801587F8 001555F8  D0 3E 00 10 */	stfs f1, 0x10(r30)
 /* 801587FC 001555FC  D0 1E 00 14 */	stfs f0, 0x14(r30)
 /* 80158800 00155600  B0 1E 00 04 */	sth r0, 4(r30)
@@ -3379,7 +3379,7 @@ lbl_80158854:
 /* 8015885C 0015565C  4B EC 3F 41 */	bl xCutscene_InitEnd__Fv
 /* 80158860 00155660  3A 80 00 00 */	li r20, 0
 /* 80158864 00155664  3A A0 00 00 */	li r21, 0
-/* 80158868 00155668  92 8D CE 38 */	stw r20, gCurEnv-_SDA_BASE_(r13)
+/* 80158868 00155668  92 8D CE 38 */	stw r20, gCurEnv@sda21(r13)
 /* 8015886C 0015566C  48 00 01 70 */	b lbl_801589DC
 lbl_80158870:
 /* 80158870 00155670  80 7E 00 70 */	lwz r3, 0x70(r30)
@@ -3395,7 +3395,7 @@ lbl_80158870:
 /* 80158898 00155698  7C 03 00 2E */	lwzx r0, r3, r0
 /* 8015889C 0015569C  7C 09 03 A6 */	mtctr r0
 /* 801588A0 001556A0  4E 80 04 20 */	bctr 
-/* 801588A4 001556A4  92 CD CE 38 */	stw r22, gCurEnv-_SDA_BASE_(r13)
+/* 801588A4 001556A4  92 CD CE 38 */	stw r22, gCurEnv@sda21(r13)
 /* 801588A8 001556A8  7E C3 B3 78 */	mr r3, r22
 /* 801588AC 001556AC  4B F6 A3 D5 */	bl zEnvSetup__FP5_zEnv
 /* 801588B0 001556B0  48 00 01 24 */	b lbl_801589D4
@@ -3484,7 +3484,7 @@ lbl_801589DC:
 /* 801589F4 001557F4  4B F8 1C 5D */	bl setup_all__10zLaserBeamFv
 /* 801589F8 001557F8  48 03 B2 DD */	bl setup__6zGrassFv
 /* 801589FC 001557FC  4B F6 6F 15 */	bl zEntHangable_SetupFX__Fv
-/* 80158A00 00155800  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80158A00 00155800  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80158A04 00155804  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80158A08 00155808  81 83 00 DC */	lwz r12, 0xdc(r3)
 /* 80158A0C 0015580C  81 8C 00 0C */	lwz r12, 0xc(r12)
@@ -3534,7 +3534,7 @@ lbl_80158A70:
 /* 80158AA8 001558A8  4B F0 6A 85 */	bl xSerialTraverse__FPFUiP7xSerial_i
 /* 80158AAC 001558AC  48 07 45 49 */	bl zUIIncrediblesInit__Fv
 /* 80158AB0 001558B0  38 00 00 00 */	li r0, 0
-/* 80158AB4 001558B4  90 0D CE 28 */	stw r0, enableScreenAdj-_SDA_BASE_(r13)
+/* 80158AB4 001558B4  90 0D CE 28 */	stw r0, enableScreenAdj@sda21(r13)
 /* 80158AB8 001558B8  80 7E 04 E8 */	lwz r3, 0x4e8(r30)
 /* 80158ABC 001558BC  C0 23 00 30 */	lfs f1, 0x30(r3)
 /* 80158AC0 001558C0  4B F8 7B 59 */	bl zLOD_Setup__Ff
@@ -3791,7 +3791,7 @@ lbl_80158E1C:
 /* 80158E30 00155C30  41 82 01 98 */	beq lbl_80158FC8
 /* 80158E34 00155C34  1C 99 00 0C */	mulli r4, r25, 0xc
 /* 80158E38 00155C38  7C 19 C2 14 */	add r0, r25, r24
-/* 80158E3C 00155C3C  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 80158E3C 00155C3C  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 80158E40 00155C40  57 25 28 34 */	slwi r5, r25, 5
 /* 80158E44 00155C44  54 00 10 3A */	slwi r0, r0, 2
 /* 80158E48 00155C48  7E 84 02 14 */	add r20, r4, r0
@@ -3905,7 +3905,7 @@ lbl_80158FC8:
 /* 80158FC8 00155DC8  28 17 00 00 */	cmplwi r23, 0
 /* 80158FCC 00155DCC  3B 00 00 00 */	li r24, 0
 /* 80158FD0 00155DD0  41 82 00 D0 */	beq lbl_801590A0
-/* 80158FD4 00155DD4  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 80158FD4 00155DD4  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 80158FD8 00155DD8  56 E3 10 3A */	slwi r3, r23, 2
 /* 80158FDC 00155DDC  38 80 00 00 */	li r4, 0
 /* 80158FE0 00155DE0  81 85 01 08 */	lwz r12, 0x108(r5)
@@ -3973,10 +3973,10 @@ lbl_801590A0:
 /* 801590B4 00155EB4  3C A0 80 38 */	lis r5, globals@ha
 /* 801590B8 00155EB8  3C 80 80 16 */	lis r4, ActivateCB__FP5xBase@ha
 /* 801590BC 00155EBC  3B 25 2A 38 */	addi r25, r5, globals@l
-/* 801590C0 00155EC0  C0 22 B8 04 */	lfs f1, _esc__2_2910-_SDA2_BASE_(r2)
+/* 801590C0 00155EC0  C0 22 B8 04 */	lfs f1, _esc__2_2910@sda21(r2)
 /* 801590C4 00155EC4  90 79 03 DC */	stw r3, 0x3dc(r25)
 /* 801590C8 00155EC8  38 04 87 18 */	addi r0, r4, ActivateCB__FP5xBase@l
-/* 801590CC 00155ECC  C0 02 B7 E0 */	lfs f0, _esc__2_1344_0-_SDA2_BASE_(r2)
+/* 801590CC 00155ECC  C0 02 B7 E0 */	lfs f0, _esc__2_1344_0@sda21(r2)
 /* 801590D0 00155ED0  3C 80 80 16 */	lis r4, DeactivateCB__FP5xBase@ha
 /* 801590D4 00155ED4  90 03 00 24 */	stw r0, 0x24(r3)
 /* 801590D8 00155ED8  3C 60 80 07 */	lis r3, xUpdateCull_DistanceSquaredCB__FPvPv@ha
@@ -3994,7 +3994,7 @@ lbl_80159100:
 /* 80159104 00155F04  4B F8 79 65 */	bl zLOD_Get__FP4xEnt
 /* 80159108 00155F08  7C 7A 1B 79 */	or. r26, r3, r3
 /* 8015910C 00155F0C  41 82 00 40 */	beq lbl_8015914C
-/* 80159110 00155F10  C0 02 B7 E0 */	lfs f0, _esc__2_1344_0-_SDA2_BASE_(r2)
+/* 80159110 00155F10  C0 02 B7 E0 */	lfs f0, _esc__2_1344_0@sda21(r2)
 /* 80159114 00155F14  C0 3A 00 04 */	lfs f1, 4(r26)
 /* 80159118 00155F18  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 8015911C 00155F1C  40 82 00 0C */	bne lbl_80159128
@@ -4002,11 +4002,11 @@ lbl_80159100:
 /* 80159124 00155F24  48 00 00 28 */	b lbl_8015914C
 lbl_80159128:
 /* 80159128 00155F28  4B EB 23 51 */	bl xsqrt__Ff
-/* 8015912C 00155F2C  C0 02 B8 08 */	lfs f0, _esc__2_2911-_SDA2_BASE_(r2)
+/* 8015912C 00155F2C  C0 02 B8 08 */	lfs f0, _esc__2_2911@sda21(r2)
 /* 80159130 00155F30  EF E0 08 2A */	fadds f31, f0, f1
 /* 80159134 00155F34  C0 3A 00 04 */	lfs f1, 4(r26)
 /* 80159138 00155F38  4B EB 23 41 */	bl xsqrt__Ff
-/* 8015913C 00155F3C  C0 02 B8 08 */	lfs f0, _esc__2_2911-_SDA2_BASE_(r2)
+/* 8015913C 00155F3C  C0 02 B8 08 */	lfs f0, _esc__2_2911@sda21(r2)
 /* 80159140 00155F40  EC 00 08 2A */	fadds f0, f0, f1
 /* 80159144 00155F44  EC 00 07 F2 */	fmuls f0, f0, f31
 /* 80159148 00155F48  D0 01 00 08 */	stfs f0, 8(r1)
@@ -4027,7 +4027,7 @@ lbl_80159174:
 /* 80159178 00155F78  41 80 FF 88 */	blt lbl_80159100
 /* 8015917C 00155F7C  28 18 00 00 */	cmplwi r24, 0
 /* 80159180 00155F80  41 82 00 18 */	beq lbl_80159198
-/* 80159184 00155F84  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 80159184 00155F84  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 80159188 00155F88  7F 03 C3 78 */	mr r3, r24
 /* 8015918C 00155F8C  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 80159190 00155F90  7D 89 03 A6 */	mtctr r12
@@ -4035,7 +4035,7 @@ lbl_80159174:
 lbl_80159198:
 /* 80159198 00155F98  28 16 00 00 */	cmplwi r22, 0
 /* 8015919C 00155F9C  41 82 00 18 */	beq lbl_801591B4
-/* 801591A0 00155FA0  80 8D E6 54 */	lwz r4, RwEngineInstance-_SDA_BASE_(r13)
+/* 801591A0 00155FA0  80 8D E6 54 */	lwz r4, RwEngineInstance@sda21(r13)
 /* 801591A4 00155FA4  7E C3 B3 78 */	mr r3, r22
 /* 801591A8 00155FA8  81 84 01 0C */	lwz r12, 0x10c(r4)
 /* 801591AC 00155FAC  7D 89 03 A6 */	mtctr r12
@@ -4065,15 +4065,15 @@ lbl_801591F4:
 /* 801591FC 00155FFC  41 80 FF C8 */	blt lbl_801591C4
 /* 80159200 00156000  48 02 EE 3D */	bl set_update_cull__4zNPCFv
 /* 80159204 00156004  48 04 53 19 */	bl scene_setup__Q21z4bombFv
-/* 80159208 00156008  C0 22 B7 E4 */	lfs f1, _esc__2_1345_1-_SDA2_BASE_(r2)
-/* 8015920C 0015600C  38 62 82 3C */	addi r3, r2, g_BLACK-_SDA2_BASE_
-/* 80159210 00156010  38 82 82 44 */	addi r4, r2, g_CLEAR-_SDA2_BASE_
+/* 80159208 00156008  C0 22 B7 E4 */	lfs f1, _esc__2_1345_1@sda21(r2)
+/* 8015920C 0015600C  38 62 82 3C */	addi r3, r2, g_BLACK@sda21
+/* 80159210 00156010  38 82 82 44 */	addi r4, r2, g_CLEAR@sda21
 /* 80159214 00156014  38 A0 00 00 */	li r5, 0
 /* 80159218 00156018  4B F0 39 ED */	bl xScrFxFade__FPC10xColor_tagPC10xColor_tagfi
 /* 8015921C 0015601C  48 05 B1 19 */	bl zThrowableSystemFinishScenePrepare__Fv
 /* 80159220 00156020  38 00 00 00 */	li r0, 0
 /* 80159224 00156024  38 60 00 00 */	li r3, 0
-/* 80159228 00156028  90 0D BB A8 */	stw r0, xModelInstStaticAlloc-_SDA_BASE_(r13)
+/* 80159228 00156028  90 0D BB A8 */	stw r0, xModelInstStaticAlloc@sda21(r13)
 /* 8015922C 0015602C  48 01 34 C1 */	bl zUIMgrEnableHDR__Fb
 /* 80159230 00156030  E3 E1 00 58 */	psq_l f31, 88(r1), 0, qr0
 /* 80159234 00156034  CB E1 00 50 */	lfd f31, 0x50(r1)
@@ -4269,14 +4269,14 @@ zSceneUpdate__Ff:
 /* 801594C0 001562C0  F3 A1 00 68 */	psq_st f29, 104(r1), 0, qr0
 /* 801594C4 001562C4  BE C1 00 38 */	stmw r22, 0x38(r1)
 /* 801594C8 001562C8  FF A0 08 90 */	fmr f29, f1
-/* 801594CC 001562CC  C0 02 B7 E0 */	lfs f0, _esc__2_1344_0-_SDA2_BASE_(r2)
+/* 801594CC 001562CC  C0 02 B7 E0 */	lfs f0, _esc__2_1344_0@sda21(r2)
 /* 801594D0 001562D0  FC 00 E8 00 */	fcmpu cr0, f0, f29
 /* 801594D4 001562D4  41 82 08 64 */	beq lbl_80159D38
 /* 801594D8 001562D8  4B F7 4A A1 */	bl zGameIsPaused__Fv
-/* 801594DC 001562DC  D3 AD CE 48 */	stfs f29, gSceneUpdateTime-_SDA_BASE_(r13)
+/* 801594DC 001562DC  D3 AD CE 48 */	stfs f29, gSceneUpdateTime@sda21(r13)
 /* 801594E0 001562E0  7C 7F 1B 78 */	mr r31, r3
 /* 801594E4 001562E4  4B FF E0 E5 */	bl zScene_SetMinVSync__Fv
-/* 801594E8 001562E8  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801594E8 001562E8  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801594EC 001562EC  38 80 00 00 */	li r4, 0
 /* 801594F0 001562F0  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801594F4 001562F4  81 83 00 DC */	lwz r12, 0xdc(r3)
@@ -4309,8 +4309,8 @@ lbl_80159538:
 /* 80159558 00156358  38 00 00 00 */	li r0, 0
 /* 8015955C 0015635C  90 17 06 28 */	stw r0, 0x628(r23)
 lbl_80159560:
-/* 80159560 00156360  C3 E2 B7 E0 */	lfs f31, _esc__2_1344_0-_SDA2_BASE_(r2)
-/* 80159564 00156364  80 0D CE 28 */	lwz r0, enableScreenAdj-_SDA_BASE_(r13)
+/* 80159560 00156360  C3 E2 B7 E0 */	lfs f31, _esc__2_1344_0@sda21(r2)
+/* 80159564 00156364  80 0D CE 28 */	lwz r0, enableScreenAdj@sda21(r13)
 /* 80159568 00156368  FF C0 F8 90 */	fmr f30, f31
 /* 8015956C 0015636C  28 00 00 00 */	cmplwi r0, 0
 /* 80159570 00156370  41 82 02 B4 */	beq lbl_80159824
@@ -4320,32 +4320,32 @@ lbl_80159560:
 /* 80159580 00156380  80 04 00 30 */	lwz r0, 0x30(r4)
 /* 80159584 00156384  54 00 03 5B */	rlwinm. r0, r0, 0, 0xd, 0xd
 /* 80159588 00156388  41 82 00 14 */	beq lbl_8015959C
-/* 8015958C 0015638C  C0 2D CE 2C */	lfs f1, oldOffsetx-_SDA_BASE_(r13)
-/* 80159590 00156390  C0 0D CE 30 */	lfs f0, oldOffsety-_SDA_BASE_(r13)
-/* 80159594 00156394  D0 2D CE 20 */	stfs f1, offsetx-_SDA_BASE_(r13)
-/* 80159598 00156398  D0 0D CE 24 */	stfs f0, offsety-_SDA_BASE_(r13)
+/* 8015958C 0015638C  C0 2D CE 2C */	lfs f1, oldOffsetx@sda21(r13)
+/* 80159590 00156390  C0 0D CE 30 */	lfs f0, oldOffsety@sda21(r13)
+/* 80159594 00156394  D0 2D CE 20 */	stfs f1, offsetx@sda21(r13)
+/* 80159598 00156398  D0 0D CE 24 */	stfs f0, offsety@sda21(r13)
 lbl_8015959C:
 /* 8015959C 0015639C  80 04 00 30 */	lwz r0, 0x30(r4)
 /* 801595A0 001563A0  54 00 03 9D */	rlwinm. r0, r0, 0, 0xe, 0xe
 /* 801595A4 001563A4  41 82 00 10 */	beq lbl_801595B4
-/* 801595A8 001563A8  C0 02 B7 E0 */	lfs f0, _esc__2_1344_0-_SDA2_BASE_(r2)
-/* 801595AC 001563AC  D0 0D CE 20 */	stfs f0, offsetx-_SDA_BASE_(r13)
-/* 801595B0 001563B0  D0 0D CE 24 */	stfs f0, offsety-_SDA_BASE_(r13)
+/* 801595A8 001563A8  C0 02 B7 E0 */	lfs f0, _esc__2_1344_0@sda21(r2)
+/* 801595AC 001563AC  D0 0D CE 20 */	stfs f0, offsetx@sda21(r13)
+/* 801595B0 001563B0  D0 0D CE 24 */	stfs f0, offsety@sda21(r13)
 lbl_801595B4:
 /* 801595B4 001563B4  88 A4 00 38 */	lbz r5, 0x38(r4)
 /* 801595B8 001563B8  3C 00 43 30 */	lis r0, 0x4330
 /* 801595BC 001563BC  90 01 00 28 */	stw r0, 0x28(r1)
 /* 801595C0 001563C0  7C A3 07 74 */	extsb r3, r5
-/* 801595C4 001563C4  C8 42 B8 30 */	lfd f2, _esc__2_3177-_SDA2_BASE_(r2)
+/* 801595C4 001563C4  C8 42 B8 30 */	lfd f2, _esc__2_3177@sda21(r2)
 /* 801595C8 001563C8  6C 63 80 00 */	xoris r3, r3, 0x8000
-/* 801595CC 001563CC  C0 22 B8 0C */	lfs f1, _esc__2_3167-_SDA2_BASE_(r2)
+/* 801595CC 001563CC  C0 22 B8 0C */	lfs f1, _esc__2_3167@sda21(r2)
 /* 801595D0 001563D0  90 61 00 2C */	stw r3, 0x2c(r1)
 /* 801595D4 001563D4  C8 01 00 28 */	lfd f0, 0x28(r1)
 /* 801595D8 001563D8  EC 00 10 28 */	fsubs f0, f0, f2
 /* 801595DC 001563DC  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 801595E0 001563E0  40 81 00 2C */	ble lbl_8015960C
 /* 801595E4 001563E4  90 61 00 2C */	stw r3, 0x2c(r1)
-/* 801595E8 001563E8  C3 E2 B8 10 */	lfs f31, _esc__2_3168-_SDA2_BASE_(r2)
+/* 801595E8 001563E8  C3 E2 B8 10 */	lfs f31, _esc__2_3168@sda21(r2)
 /* 801595EC 001563EC  90 01 00 28 */	stw r0, 0x28(r1)
 /* 801595F0 001563F0  C8 01 00 28 */	lfd f0, 0x28(r1)
 /* 801595F4 001563F4  EC 00 10 28 */	fsubs f0, f0, f2
@@ -4360,17 +4360,17 @@ lbl_8015960C:
 /* 80159610 00156410  3C 00 43 30 */	lis r0, 0x4330
 /* 80159614 00156414  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 80159618 00156418  90 01 00 28 */	stw r0, 0x28(r1)
-/* 8015961C 0015641C  C8 42 B8 30 */	lfd f2, _esc__2_3177-_SDA2_BASE_(r2)
+/* 8015961C 0015641C  C8 42 B8 30 */	lfd f2, _esc__2_3177@sda21(r2)
 /* 80159620 00156420  90 61 00 2C */	stw r3, 0x2c(r1)
-/* 80159624 00156424  C0 02 B8 14 */	lfs f0, _esc__2_3169-_SDA2_BASE_(r2)
+/* 80159624 00156424  C0 02 B8 14 */	lfs f0, _esc__2_3169@sda21(r2)
 /* 80159628 00156428  C8 21 00 28 */	lfd f1, 0x28(r1)
 /* 8015962C 0015642C  EC 21 10 28 */	fsubs f1, f1, f2
 /* 80159630 00156430  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80159634 00156434  40 80 00 30 */	bge lbl_80159664
 /* 80159638 00156438  90 61 00 2C */	stw r3, 0x2c(r1)
-/* 8015963C 0015643C  C0 22 B8 0C */	lfs f1, _esc__2_3167-_SDA2_BASE_(r2)
+/* 8015963C 0015643C  C0 22 B8 0C */	lfs f1, _esc__2_3167@sda21(r2)
 /* 80159640 00156440  90 01 00 28 */	stw r0, 0x28(r1)
-/* 80159644 00156444  C3 E2 B8 18 */	lfs f31, _esc__2_3170-_SDA2_BASE_(r2)
+/* 80159644 00156444  C3 E2 B8 18 */	lfs f31, _esc__2_3170@sda21(r2)
 /* 80159648 00156448  C8 01 00 28 */	lfd f0, 0x28(r1)
 /* 8015964C 0015644C  EC 00 10 28 */	fsubs f0, f0, f2
 /* 80159650 00156450  EC 01 00 2A */	fadds f0, f1, f0
@@ -4384,16 +4384,16 @@ lbl_80159664:
 /* 80159668 00156468  3C 00 43 30 */	lis r0, 0x4330
 /* 8015966C 0015646C  90 01 00 28 */	stw r0, 0x28(r1)
 /* 80159670 00156470  7C A3 07 74 */	extsb r3, r5
-/* 80159674 00156474  C8 42 B8 30 */	lfd f2, _esc__2_3177-_SDA2_BASE_(r2)
+/* 80159674 00156474  C8 42 B8 30 */	lfd f2, _esc__2_3177@sda21(r2)
 /* 80159678 00156478  6C 63 80 00 */	xoris r3, r3, 0x8000
-/* 8015967C 0015647C  C0 22 B8 0C */	lfs f1, _esc__2_3167-_SDA2_BASE_(r2)
+/* 8015967C 0015647C  C0 22 B8 0C */	lfs f1, _esc__2_3167@sda21(r2)
 /* 80159680 00156480  90 61 00 2C */	stw r3, 0x2c(r1)
 /* 80159684 00156484  C8 01 00 28 */	lfd f0, 0x28(r1)
 /* 80159688 00156488  EC 00 10 28 */	fsubs f0, f0, f2
 /* 8015968C 0015648C  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 80159690 00156490  40 81 00 2C */	ble lbl_801596BC
 /* 80159694 00156494  90 61 00 2C */	stw r3, 0x2c(r1)
-/* 80159698 00156498  C3 C2 B8 10 */	lfs f30, _esc__2_3168-_SDA2_BASE_(r2)
+/* 80159698 00156498  C3 C2 B8 10 */	lfs f30, _esc__2_3168@sda21(r2)
 /* 8015969C 0015649C  90 01 00 28 */	stw r0, 0x28(r1)
 /* 801596A0 001564A0  C8 01 00 28 */	lfd f0, 0x28(r1)
 /* 801596A4 001564A4  EC 00 10 28 */	fsubs f0, f0, f2
@@ -4408,17 +4408,17 @@ lbl_801596BC:
 /* 801596C0 001564C0  3C 00 43 30 */	lis r0, 0x4330
 /* 801596C4 001564C4  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 801596C8 001564C8  90 01 00 28 */	stw r0, 0x28(r1)
-/* 801596CC 001564CC  C8 42 B8 30 */	lfd f2, _esc__2_3177-_SDA2_BASE_(r2)
+/* 801596CC 001564CC  C8 42 B8 30 */	lfd f2, _esc__2_3177@sda21(r2)
 /* 801596D0 001564D0  90 61 00 2C */	stw r3, 0x2c(r1)
-/* 801596D4 001564D4  C0 02 B8 14 */	lfs f0, _esc__2_3169-_SDA2_BASE_(r2)
+/* 801596D4 001564D4  C0 02 B8 14 */	lfs f0, _esc__2_3169@sda21(r2)
 /* 801596D8 001564D8  C8 21 00 28 */	lfd f1, 0x28(r1)
 /* 801596DC 001564DC  EC 21 10 28 */	fsubs f1, f1, f2
 /* 801596E0 001564E0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801596E4 001564E4  40 80 00 30 */	bge lbl_80159714
 /* 801596E8 001564E8  90 61 00 2C */	stw r3, 0x2c(r1)
-/* 801596EC 001564EC  C0 22 B8 0C */	lfs f1, _esc__2_3167-_SDA2_BASE_(r2)
+/* 801596EC 001564EC  C0 22 B8 0C */	lfs f1, _esc__2_3167@sda21(r2)
 /* 801596F0 001564F0  90 01 00 28 */	stw r0, 0x28(r1)
-/* 801596F4 001564F4  C3 C2 B8 18 */	lfs f30, _esc__2_3170-_SDA2_BASE_(r2)
+/* 801596F4 001564F4  C3 C2 B8 18 */	lfs f30, _esc__2_3170@sda21(r2)
 /* 801596F8 001564F8  C8 01 00 28 */	lfd f0, 0x28(r1)
 /* 801596FC 001564FC  EC 00 10 28 */	fsubs f0, f0, f2
 /* 80159700 00156500  EC 01 00 2A */	fadds f0, f1, f0
@@ -4431,34 +4431,34 @@ lbl_80159714:
 /* 80159714 00156514  80 64 00 2C */	lwz r3, 0x2c(r4)
 /* 80159718 00156518  54 60 06 F7 */	rlwinm. r0, r3, 0, 0x1b, 0x1b
 /* 8015971C 0015651C  41 82 00 18 */	beq lbl_80159734
-/* 80159720 00156520  C0 2D CE 24 */	lfs f1, offsety-_SDA_BASE_(r13)
-/* 80159724 00156524  C0 02 B8 1C */	lfs f0, _esc__2_3171-_SDA2_BASE_(r2)
+/* 80159720 00156520  C0 2D CE 24 */	lfs f1, offsety@sda21(r13)
+/* 80159724 00156524  C0 02 B8 1C */	lfs f0, _esc__2_3171@sda21(r2)
 /* 80159728 00156528  EC 01 00 28 */	fsubs f0, f1, f0
-/* 8015972C 0015652C  D0 0D CE 24 */	stfs f0, offsety-_SDA_BASE_(r13)
+/* 8015972C 0015652C  D0 0D CE 24 */	stfs f0, offsety@sda21(r13)
 /* 80159730 00156530  48 00 00 54 */	b lbl_80159784
 lbl_80159734:
 /* 80159734 00156534  54 60 06 73 */	rlwinm. r0, r3, 0, 0x19, 0x19
 /* 80159738 00156538  41 82 00 18 */	beq lbl_80159750
-/* 8015973C 0015653C  C0 2D CE 24 */	lfs f1, offsety-_SDA_BASE_(r13)
-/* 80159740 00156540  C0 02 B8 1C */	lfs f0, _esc__2_3171-_SDA2_BASE_(r2)
+/* 8015973C 0015653C  C0 2D CE 24 */	lfs f1, offsety@sda21(r13)
+/* 80159740 00156540  C0 02 B8 1C */	lfs f0, _esc__2_3171@sda21(r2)
 /* 80159744 00156544  EC 01 00 2A */	fadds f0, f1, f0
-/* 80159748 00156548  D0 0D CE 24 */	stfs f0, offsety-_SDA_BASE_(r13)
+/* 80159748 00156548  D0 0D CE 24 */	stfs f0, offsety@sda21(r13)
 /* 8015974C 0015654C  48 00 00 38 */	b lbl_80159784
 lbl_80159750:
 /* 80159750 00156550  54 60 06 31 */	rlwinm. r0, r3, 0, 0x18, 0x18
 /* 80159754 00156554  41 82 00 18 */	beq lbl_8015976C
-/* 80159758 00156558  C0 2D CE 20 */	lfs f1, offsetx-_SDA_BASE_(r13)
-/* 8015975C 0015655C  C0 02 B8 1C */	lfs f0, _esc__2_3171-_SDA2_BASE_(r2)
+/* 80159758 00156558  C0 2D CE 20 */	lfs f1, offsetx@sda21(r13)
+/* 8015975C 0015655C  C0 02 B8 1C */	lfs f0, _esc__2_3171@sda21(r2)
 /* 80159760 00156560  EC 01 00 28 */	fsubs f0, f1, f0
-/* 80159764 00156564  D0 0D CE 20 */	stfs f0, offsetx-_SDA_BASE_(r13)
+/* 80159764 00156564  D0 0D CE 20 */	stfs f0, offsetx@sda21(r13)
 /* 80159768 00156568  48 00 00 1C */	b lbl_80159784
 lbl_8015976C:
 /* 8015976C 0015656C  54 60 06 B5 */	rlwinm. r0, r3, 0, 0x1a, 0x1a
 /* 80159770 00156570  41 82 00 14 */	beq lbl_80159784
-/* 80159774 00156574  C0 2D CE 20 */	lfs f1, offsetx-_SDA_BASE_(r13)
-/* 80159778 00156578  C0 02 B8 1C */	lfs f0, _esc__2_3171-_SDA2_BASE_(r2)
+/* 80159774 00156574  C0 2D CE 20 */	lfs f1, offsetx@sda21(r13)
+/* 80159778 00156578  C0 02 B8 1C */	lfs f0, _esc__2_3171@sda21(r2)
 /* 8015977C 0015657C  EC 01 00 2A */	fadds f0, f1, f0
-/* 80159780 00156580  D0 0D CE 20 */	stfs f0, offsetx-_SDA_BASE_(r13)
+/* 80159780 00156580  D0 0D CE 20 */	stfs f0, offsetx@sda21(r13)
 lbl_80159784:
 /* 80159784 00156584  80 04 00 30 */	lwz r0, 0x30(r4)
 /* 80159788 00156588  54 00 06 37 */	rlwinm. r0, r0, 0, 0x18, 0x1b
@@ -4475,35 +4475,35 @@ lbl_80159784:
 /* 801597B4 001565B4  39 20 00 00 */	li r9, 0
 /* 801597B8 001565B8  4B F0 D4 D5 */	bl xSndMgrPlay__F15iSndGroupHandleUiPC5xVec3PC5xVec3P4xEntPCfPCf
 lbl_801597BC:
-/* 801597BC 001565BC  C0 62 B8 20 */	lfs f3, _esc__2_3172-_SDA2_BASE_(r2)
-/* 801597C0 001565C0  C0 0D CE 20 */	lfs f0, offsetx-_SDA_BASE_(r13)
-/* 801597C4 001565C4  C0 2D CE 24 */	lfs f1, offsety-_SDA_BASE_(r13)
+/* 801597BC 001565BC  C0 62 B8 20 */	lfs f3, _esc__2_3172@sda21(r2)
+/* 801597C0 001565C0  C0 0D CE 20 */	lfs f0, offsetx@sda21(r13)
+/* 801597C4 001565C4  C0 2D CE 24 */	lfs f1, offsety@sda21(r13)
 /* 801597C8 001565C8  EC 43 07 FA */	fmadds f2, f3, f31, f0
-/* 801597CC 001565CC  C0 02 B8 24 */	lfs f0, _esc__2_3173-_SDA2_BASE_(r2)
+/* 801597CC 001565CC  C0 02 B8 24 */	lfs f0, _esc__2_3173@sda21(r2)
 /* 801597D0 001565D0  EC 23 0F BA */	fmadds f1, f3, f30, f1
 /* 801597D4 001565D4  FC 02 00 40 */	fcmpo cr0, f2, f0
-/* 801597D8 001565D8  D0 4D CE 20 */	stfs f2, offsetx-_SDA_BASE_(r13)
-/* 801597DC 001565DC  D0 2D CE 24 */	stfs f1, offsety-_SDA_BASE_(r13)
+/* 801597D8 001565D8  D0 4D CE 20 */	stfs f2, offsetx@sda21(r13)
+/* 801597DC 001565DC  D0 2D CE 24 */	stfs f1, offsety@sda21(r13)
 /* 801597E0 001565E0  40 81 00 08 */	ble lbl_801597E8
-/* 801597E4 001565E4  D0 0D CE 20 */	stfs f0, offsetx-_SDA_BASE_(r13)
+/* 801597E4 001565E4  D0 0D CE 20 */	stfs f0, offsetx@sda21(r13)
 lbl_801597E8:
-/* 801597E8 001565E8  C0 2D CE 20 */	lfs f1, offsetx-_SDA_BASE_(r13)
-/* 801597EC 001565EC  C0 02 B8 28 */	lfs f0, _esc__2_3174-_SDA2_BASE_(r2)
+/* 801597E8 001565E8  C0 2D CE 20 */	lfs f1, offsetx@sda21(r13)
+/* 801597EC 001565EC  C0 02 B8 28 */	lfs f0, _esc__2_3174@sda21(r2)
 /* 801597F0 001565F0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801597F4 001565F4  40 80 00 08 */	bge lbl_801597FC
-/* 801597F8 001565F8  D0 0D CE 20 */	stfs f0, offsetx-_SDA_BASE_(r13)
+/* 801597F8 001565F8  D0 0D CE 20 */	stfs f0, offsetx@sda21(r13)
 lbl_801597FC:
-/* 801597FC 001565FC  C0 2D CE 24 */	lfs f1, offsety-_SDA_BASE_(r13)
-/* 80159800 00156600  C0 02 B8 24 */	lfs f0, _esc__2_3173-_SDA2_BASE_(r2)
+/* 801597FC 001565FC  C0 2D CE 24 */	lfs f1, offsety@sda21(r13)
+/* 80159800 00156600  C0 02 B8 24 */	lfs f0, _esc__2_3173@sda21(r2)
 /* 80159804 00156604  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80159808 00156608  40 81 00 08 */	ble lbl_80159810
-/* 8015980C 0015660C  D0 0D CE 24 */	stfs f0, offsety-_SDA_BASE_(r13)
+/* 8015980C 0015660C  D0 0D CE 24 */	stfs f0, offsety@sda21(r13)
 lbl_80159810:
-/* 80159810 00156610  C0 2D CE 24 */	lfs f1, offsety-_SDA_BASE_(r13)
-/* 80159814 00156614  C0 02 B8 28 */	lfs f0, _esc__2_3174-_SDA2_BASE_(r2)
+/* 80159810 00156610  C0 2D CE 24 */	lfs f1, offsety@sda21(r13)
+/* 80159814 00156614  C0 02 B8 28 */	lfs f0, _esc__2_3174@sda21(r2)
 /* 80159818 00156618  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8015981C 0015661C  40 80 00 08 */	bge lbl_80159824
-/* 80159820 00156620  D0 0D CE 24 */	stfs f0, offsety-_SDA_BASE_(r13)
+/* 80159820 00156620  D0 0D CE 24 */	stfs f0, offsety@sda21(r13)
 lbl_80159824:
 /* 80159824 00156624  3C 60 80 38 */	lis r3, globals@ha
 /* 80159828 00156628  FC 20 E8 90 */	fmr f1, f29
@@ -4534,49 +4534,49 @@ lbl_80159824:
 lbl_8015988C:
 /* 8015988C 0015668C  48 08 BC B1 */	bl zCombo_Paused__Fv
 lbl_80159890:
-/* 80159890 00156690  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80159890 00156690  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80159894 00156694  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80159898 00156698  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 8015989C 0015669C  28 03 00 00 */	cmplwi r3, 0
 /* 801598A0 001566A0  41 82 00 58 */	beq lbl_801598F8
 /* 801598A4 001566A4  80 83 00 54 */	lwz r4, 0x54(r3)
-/* 801598A8 001566A8  38 6D CE 4C */	addi r3, r13, sOldPosPlayer-_SDA_BASE_
+/* 801598A8 001566A8  38 6D CE 4C */	addi r3, r13, sOldPosPlayer@sda21
 /* 801598AC 001566AC  38 84 00 30 */	addi r4, r4, 0x30
 /* 801598B0 001566B0  4B EC 48 A5 */	bl xVec3Dist__FPC5xVec3PC5xVec3
-/* 801598B4 001566B4  C0 02 B8 2C */	lfs f0, _esc__2_3175-_SDA2_BASE_(r2)
+/* 801598B4 001566B4  C0 02 B8 2C */	lfs f0, _esc__2_3175@sda21(r2)
 /* 801598B8 001566B8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801598BC 001566BC  41 81 00 28 */	bgt lbl_801598E4
 /* 801598C0 001566C0  3C 80 80 38 */	lis r4, globals@ha
-/* 801598C4 001566C4  38 6D CE 58 */	addi r3, r13, sOldPosCamera-_SDA_BASE_
+/* 801598C4 001566C4  38 6D CE 58 */	addi r3, r13, sOldPosCamera@sda21
 /* 801598C8 001566C8  38 84 2A 38 */	addi r4, r4, globals@l
 /* 801598CC 001566CC  80 84 00 00 */	lwz r4, 0(r4)
 /* 801598D0 001566D0  38 84 00 30 */	addi r4, r4, 0x30
 /* 801598D4 001566D4  4B EC 48 81 */	bl xVec3Dist__FPC5xVec3PC5xVec3
-/* 801598D8 001566D8  C0 02 B8 2C */	lfs f0, _esc__2_3175-_SDA2_BASE_(r2)
+/* 801598D8 001566D8  C0 02 B8 2C */	lfs f0, _esc__2_3175@sda21(r2)
 /* 801598DC 001566DC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801598E0 001566E0  40 81 00 10 */	ble lbl_801598F0
 lbl_801598E4:
 /* 801598E4 001566E4  38 00 00 01 */	li r0, 1
-/* 801598E8 001566E8  90 0D CE 64 */	stw r0, sSuddenMove-_SDA_BASE_(r13)
+/* 801598E8 001566E8  90 0D CE 64 */	stw r0, sSuddenMove@sda21(r13)
 /* 801598EC 001566EC  48 00 00 0C */	b lbl_801598F8
 lbl_801598F0:
 /* 801598F0 001566F0  38 00 00 00 */	li r0, 0
-/* 801598F4 001566F4  90 0D CE 64 */	stw r0, sSuddenMove-_SDA_BASE_(r13)
+/* 801598F4 001566F4  90 0D CE 64 */	stw r0, sSuddenMove@sda21(r13)
 lbl_801598F8:
-/* 801598F8 001566F8  80 8D 91 D0 */	lwz r4, xglobals-_SDA_BASE_(r13)
-/* 801598FC 001566FC  38 6D CE 4C */	addi r3, r13, sOldPosPlayer-_SDA_BASE_
+/* 801598F8 001566F8  80 8D 91 D0 */	lwz r4, xglobals@sda21(r13)
+/* 801598FC 001566FC  38 6D CE 4C */	addi r3, r13, sOldPosPlayer@sda21
 /* 80159900 00156700  80 84 04 C4 */	lwz r4, 0x4c4(r4)
 /* 80159904 00156704  80 84 00 28 */	lwz r4, 0x28(r4)
 /* 80159908 00156708  80 84 00 54 */	lwz r4, 0x54(r4)
 /* 8015990C 0015670C  38 84 00 30 */	addi r4, r4, 0x30
 /* 80159910 00156710  4B EB 17 99 */	bl __as__5xVec3FRC5xVec3
 /* 80159914 00156714  3C 80 80 38 */	lis r4, globals@ha
-/* 80159918 00156718  38 6D CE 58 */	addi r3, r13, sOldPosCamera-_SDA_BASE_
+/* 80159918 00156718  38 6D CE 58 */	addi r3, r13, sOldPosCamera@sda21
 /* 8015991C 0015671C  38 84 2A 38 */	addi r4, r4, globals@l
 /* 80159920 00156720  80 84 00 00 */	lwz r4, 0(r4)
 /* 80159924 00156724  38 84 00 30 */	addi r4, r4, 0x30
 /* 80159928 00156728  4B EB 17 81 */	bl __as__5xVec3FRC5xVec3
-/* 8015992C 0015672C  80 0D CE 64 */	lwz r0, sSuddenMove-_SDA_BASE_(r13)
+/* 8015992C 0015672C  80 0D CE 64 */	lwz r0, sSuddenMove@sda21(r13)
 /* 80159930 00156730  3C 60 80 38 */	lis r3, globals@ha
 /* 80159934 00156734  38 63 2A 38 */	addi r3, r3, globals@l
 /* 80159938 00156738  38 80 00 05 */	li r4, 5
@@ -4638,22 +4638,22 @@ lbl_8015995C:
 /* 80159A10 00156810  48 00 01 80 */	b lbl_80159B90
 /* 80159A14 00156814  2C 1F 00 00 */	cmpwi r31, 0
 /* 80159A18 00156818  41 82 00 B8 */	beq lbl_80159AD0
-/* 80159A1C 0015681C  88 0D CE 94 */	lbz r0, init_esc__7_3078-_SDA_BASE_(r13)
+/* 80159A1C 0015681C  88 0D CE 94 */	lbz r0, init_esc__7_3078@sda21(r13)
 /* 80159A20 00156820  7C 00 07 75 */	extsb. r0, r0
 /* 80159A24 00156824  40 82 00 14 */	bne lbl_80159A38
 /* 80159A28 00156828  38 60 00 00 */	li r3, 0
 /* 80159A2C 0015682C  38 00 00 01 */	li r0, 1
-/* 80159A30 00156830  90 6D CE 90 */	stw r3, init_esc__7_3077-_SDA_BASE_(r13)
-/* 80159A34 00156834  98 0D CE 94 */	stb r0, init_esc__7_3078-_SDA_BASE_(r13)
+/* 80159A30 00156830  90 6D CE 90 */	stw r3, init_esc__7_3077@sda21(r13)
+/* 80159A34 00156834  98 0D CE 94 */	stb r0, init_esc__7_3078@sda21(r13)
 lbl_80159A38:
-/* 80159A38 00156838  80 0D CE 90 */	lwz r0, init_esc__7_3077-_SDA_BASE_(r13)
+/* 80159A38 00156838  80 0D CE 90 */	lwz r0, init_esc__7_3077@sda21(r13)
 /* 80159A3C 0015683C  28 00 00 00 */	cmplwi r0, 0
 /* 80159A40 00156840  40 82 00 50 */	bne lbl_80159A90
 /* 80159A44 00156844  3C 60 80 2E */	lis r3, _esc__2_stringBase0_93@ha
 /* 80159A48 00156848  3A C0 00 00 */	li r22, 0
 /* 80159A4C 0015684C  3A E3 51 C0 */	addi r23, r3, _esc__2_stringBase0_93@l
 /* 80159A50 00156850  3B 20 00 00 */	li r25, 0
-/* 80159A54 00156854  3B 0D CE 68 */	addi r24, r13, sUITimers_esc__7_3076-_SDA_BASE_
+/* 80159A54 00156854  3B 0D CE 68 */	addi r24, r13, sUITimers_esc__7_3076@sda21
 lbl_80159A58:
 /* 80159A58 00156858  7E C5 B3 78 */	mr r5, r22
 /* 80159A5C 0015685C  38 61 00 08 */	addi r3, r1, 8
@@ -4668,11 +4668,11 @@ lbl_80159A58:
 /* 80159A80 00156880  3B 39 00 04 */	addi r25, r25, 4
 /* 80159A84 00156884  41 80 FF D4 */	blt lbl_80159A58
 /* 80159A88 00156888  38 00 00 01 */	li r0, 1
-/* 80159A8C 0015688C  90 0D CE 90 */	stw r0, init_esc__7_3077-_SDA_BASE_(r13)
+/* 80159A8C 0015688C  90 0D CE 90 */	stw r0, init_esc__7_3077@sda21(r13)
 lbl_80159A90:
 /* 80159A90 00156890  38 00 00 0A */	li r0, 0xa
 /* 80159A94 00156894  38 60 00 00 */	li r3, 0
-/* 80159A98 00156898  38 8D CE 68 */	addi r4, r13, sUITimers_esc__7_3076-_SDA_BASE_
+/* 80159A98 00156898  38 8D CE 68 */	addi r4, r13, sUITimers_esc__7_3076@sda21
 /* 80159A9C 0015689C  7C 09 03 A6 */	mtctr r0
 lbl_80159AA0:
 /* 80159AA0 001568A0  80 BB 00 00 */	lwz r5, 0(r27)
@@ -4745,7 +4745,7 @@ lbl_80159B98:
 /* 80159B98 00156998  80 1D 00 74 */	lwz r0, 0x74(r29)
 /* 80159B9C 0015699C  7C 1E 00 40 */	cmplw r30, r0
 /* 80159BA0 001569A0  41 80 FD BC */	blt lbl_8015995C
-/* 80159BA4 001569A4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80159BA4 001569A4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80159BA8 001569A8  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80159BAC 001569AC  4B F3 DF 85 */	bl Get_nearEnemy__7zPlayerCFv
 /* 80159BB0 001569B0  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -4807,7 +4807,7 @@ lbl_80159BD0:
 /* 80159C88 00156A88  48 00 CA 59 */	bl update__10zTransientFf
 /* 80159C8C 00156A8C  FC 20 E8 90 */	fmr f1, f29
 /* 80159C90 00156A90  4B F7 2D F1 */	bl zFXUpdate__Ff
-/* 80159C94 00156A94  80 0D CE 64 */	lwz r0, sSuddenMove-_SDA_BASE_(r13)
+/* 80159C94 00156A94  80 0D CE 64 */	lwz r0, sSuddenMove@sda21(r13)
 /* 80159C98 00156A98  38 60 00 05 */	li r3, 5
 /* 80159C9C 00156A9C  28 00 00 00 */	cmplwi r0, 0
 /* 80159CA0 00156AA0  41 82 00 08 */	beq lbl_80159CA8
@@ -4840,7 +4840,7 @@ lbl_80159CA8:
 /* 80159D08 00156B08  28 03 00 00 */	cmplwi r3, 0
 /* 80159D0C 00156B0C  41 82 00 2C */	beq lbl_80159D38
 /* 80159D10 00156B10  80 63 00 10 */	lwz r3, 0x10(r3)
-/* 80159D14 00156B14  80 0D CB 00 */	lwz r0, SCENE_ID_MNU_START-_SDA_BASE_(r13)
+/* 80159D14 00156B14  80 0D CB 00 */	lwz r0, SCENE_ID_MNU_START@sda21(r13)
 /* 80159D18 00156B18  80 63 00 14 */	lwz r3, 0x14(r3)
 /* 80159D1C 00156B1C  7C 03 00 40 */	cmplw r3, r0
 /* 80159D20 00156B20  40 82 00 10 */	bne lbl_80159D30
@@ -4867,13 +4867,13 @@ lbl_80159D38:
 zSceneSpecialRenderSet__FPFv_v:
 /* 80159D64 00156B64  28 03 00 00 */	cmplwi r3, 0
 /* 80159D68 00156B68  4D 82 00 20 */	beqlr 
-/* 80159D6C 00156B6C  80 8D CE 98 */	lwz r4, zSceneSpecialRender_numFuncs-_SDA_BASE_(r13)
+/* 80159D6C 00156B6C  80 8D CE 98 */	lwz r4, zSceneSpecialRender_numFuncs@sda21(r13)
 /* 80159D70 00156B70  2C 04 00 02 */	cmpwi r4, 2
 /* 80159D74 00156B74  4C 80 00 20 */	bgelr 
 /* 80159D78 00156B78  38 04 00 01 */	addi r0, r4, 1
 /* 80159D7C 00156B7C  54 85 10 3A */	slwi r5, r4, 2
-/* 80159D80 00156B80  38 8D 9F 64 */	addi r4, r13, zSceneSpecialRender_curFunc-_SDA_BASE_
-/* 80159D84 00156B84  90 0D CE 98 */	stw r0, zSceneSpecialRender_numFuncs-_SDA_BASE_(r13)
+/* 80159D80 00156B80  38 8D 9F 64 */	addi r4, r13, zSceneSpecialRender_curFunc@sda21
+/* 80159D84 00156B84  90 0D CE 98 */	stw r0, zSceneSpecialRender_numFuncs@sda21(r13)
 /* 80159D88 00156B88  7C 64 29 2E */	stwx r3, r4, r5
 /* 80159D8C 00156B8C  4E 80 00 20 */	blr 
 
@@ -4883,12 +4883,12 @@ zSceneSpecialRenderGo__Fv:
 /* 80159D94 00156B94  7C 08 02 A6 */	mflr r0
 /* 80159D98 00156B98  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80159D9C 00156B9C  BF A1 00 14 */	stmw r29, 0x14(r1)
-/* 80159DA0 00156BA0  80 0D CE 98 */	lwz r0, zSceneSpecialRender_numFuncs-_SDA_BASE_(r13)
+/* 80159DA0 00156BA0  80 0D CE 98 */	lwz r0, zSceneSpecialRender_numFuncs@sda21(r13)
 /* 80159DA4 00156BA4  2C 00 00 01 */	cmpwi r0, 1
 /* 80159DA8 00156BA8  41 80 00 3C */	blt lbl_80159DE4
 /* 80159DAC 00156BAC  3B A0 00 00 */	li r29, 0
 /* 80159DB0 00156BB0  3B E0 00 00 */	li r31, 0
-/* 80159DB4 00156BB4  3B CD 9F 64 */	addi r30, r13, zSceneSpecialRender_curFunc-_SDA_BASE_
+/* 80159DB4 00156BB4  3B CD 9F 64 */	addi r30, r13, zSceneSpecialRender_curFunc@sda21
 /* 80159DB8 00156BB8  48 00 00 18 */	b lbl_80159DD0
 lbl_80159DBC:
 /* 80159DBC 00156BBC  7D 9E F8 2E */	lwzx r12, r30, r31
@@ -4897,11 +4897,11 @@ lbl_80159DBC:
 /* 80159DC8 00156BC8  3B BD 00 01 */	addi r29, r29, 1
 /* 80159DCC 00156BCC  3B FF 00 04 */	addi r31, r31, 4
 lbl_80159DD0:
-/* 80159DD0 00156BD0  80 0D CE 98 */	lwz r0, zSceneSpecialRender_numFuncs-_SDA_BASE_(r13)
+/* 80159DD0 00156BD0  80 0D CE 98 */	lwz r0, zSceneSpecialRender_numFuncs@sda21(r13)
 /* 80159DD4 00156BD4  7C 1D 00 00 */	cmpw r29, r0
 /* 80159DD8 00156BD8  41 80 FF E4 */	blt lbl_80159DBC
 /* 80159DDC 00156BDC  38 00 00 00 */	li r0, 0
-/* 80159DE0 00156BE0  90 0D CE 98 */	stw r0, zSceneSpecialRender_numFuncs-_SDA_BASE_(r13)
+/* 80159DE0 00156BE0  90 0D CE 98 */	stw r0, zSceneSpecialRender_numFuncs@sda21(r13)
 lbl_80159DE4:
 /* 80159DE4 00156BE4  BB A1 00 14 */	lmw r29, 0x14(r1)
 /* 80159DE8 00156BE8  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -4925,13 +4925,13 @@ zSceneRenderPreFX__Fv:
 /* 80159E24 00156C24  88 1E 04 EC */	lbz r0, 0x4ec(r30)
 /* 80159E28 00156C28  28 00 00 00 */	cmplwi r0, 0
 /* 80159E2C 00156C2C  41 82 04 24 */	beq lbl_8015A250
-/* 80159E30 00156C30  C0 2D CE 20 */	lfs f1, offsetx-_SDA_BASE_(r13)
-/* 80159E34 00156C34  C0 4D CE 24 */	lfs f2, offsety-_SDA_BASE_(r13)
+/* 80159E30 00156C30  C0 2D CE 20 */	lfs f1, offsetx@sda21(r13)
+/* 80159E34 00156C34  C0 4D CE 24 */	lfs f2, offsety@sda21(r13)
 /* 80159E38 00156C38  4B F1 9E B1 */	bl iDrawSetDisplayOffset__Fff
 /* 80159E3C 00156C3C  80 9F 04 04 */	lwz r4, 0x404(r31)
 /* 80159E40 00156C40  38 60 00 00 */	li r3, 0
 /* 80159E44 00156C44  4B EE 95 81 */	bl xLightKit_Enable__FP9xLightKitP7RpWorld
-/* 80159E48 00156C48  80 0D DA 68 */	lwz r0, gGCwaterDisable-_SDA_BASE_(r13)
+/* 80159E48 00156C48  80 0D DA 68 */	lwz r0, gGCwaterDisable@sda21(r13)
 /* 80159E4C 00156C4C  2C 00 00 00 */	cmpwi r0, 0
 /* 80159E50 00156C50  40 82 00 10 */	bne lbl_80159E60
 /* 80159E54 00156C54  38 60 00 31 */	li r3, 0x31
@@ -4964,7 +4964,7 @@ lbl_80159E60:
 /* 80159EBC 00156CBC  7F 65 02 14 */	add r27, r5, r0
 /* 80159EC0 00156CC0  4B EF 27 65 */	bl xModelBucket_Begin__Fv
 /* 80159EC4 00156CC4  80 7F 04 04 */	lwz r3, 0x404(r31)
-/* 80159EC8 00156CC8  C0 2D C6 F8 */	lfs f1, sTimeElapsed-_SDA_BASE_(r13)
+/* 80159EC8 00156CC8  C0 2D C6 F8 */	lfs f1, sTimeElapsed@sda21(r13)
 /* 80159ECC 00156CCC  4B F6 67 91 */	bl zEntSimpleObj_MgrUpdateRender__FP7RpWorldf
 /* 80159ED0 00156CD0  4B F6 6B 15 */	bl zEntSimpleObj_MgrCustomRender__Fv
 /* 80159ED4 00156CD4  48 05 37 C9 */	bl zReactiveRender__Fv
@@ -4996,7 +4996,7 @@ lbl_80159F14:
 /* 80159F2C 00156D2C  48 00 20 E9 */	bl zShrapnel_Render__Fv
 /* 80159F30 00156D30  28 1D 00 01 */	cmplwi r29, 1
 /* 80159F34 00156D34  40 82 00 24 */	bne lbl_80159F58
-/* 80159F38 00156D38  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 80159F38 00156D38  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 80159F3C 00156D3C  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 80159F40 00156D40  81 83 00 44 */	lwz r12, 0x44(r3)
 /* 80159F44 00156D44  7D 89 03 A6 */	mtctr r12
@@ -5193,7 +5193,7 @@ lbl_8015A1F8:
 /* 8015A204 00157004  48 07 B3 F9 */	bl render_all__10xModelBlurFv
 /* 8015A208 00157008  4B F8 61 1D */	bl post_render_3d__Q21z19lightweight_managerFv
 /* 8015A20C 0015700C  4B F8 60 BD */	bl post_render_2d__Q21z19lightweight_managerFv
-/* 8015A210 00157010  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8015A210 00157010  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8015A214 00157014  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8015A218 00157018  81 83 00 DC */	lwz r12, 0xdc(r3)
 /* 8015A21C 0015701C  81 8C 00 6C */	lwz r12, 0x6c(r12)
@@ -5231,13 +5231,13 @@ zSceneRenderPlayerAgain__Fv:
 /* 8015A27C 0015707C  88 03 06 20 */	lbz r0, 0x620(r3)
 /* 8015A280 00157080  28 00 00 00 */	cmplwi r0, 0
 /* 8015A284 00157084  41 82 00 48 */	beq lbl_8015A2CC
-/* 8015A288 00157088  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8015A288 00157088  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8015A28C 0015708C  38 80 00 01 */	li r4, 1
 /* 8015A290 00157090  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8015A294 00157094  4B FF 02 95 */	bl Set_wasUpdated__7zPlayerFb
 /* 8015A298 00157098  38 60 00 02 */	li r3, 2
 /* 8015A29C 0015709C  4B FF 68 79 */	bl zRenderState__F14_SDRenderState
-/* 8015A2A0 001570A0  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8015A2A0 001570A0  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8015A2A4 001570A4  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8015A2A8 001570A8  81 83 00 DC */	lwz r12, 0xdc(r3)
 /* 8015A2AC 001570AC  81 8C 00 2C */	lwz r12, 0x2c(r12)
@@ -5272,10 +5272,10 @@ zSceneRenderPostFX__Fv:
 lbl_8015A310:
 /* 8015A310 00157110  4B F7 54 C9 */	bl zGameStateGet__Fv
 /* 8015A314 00157114  7C 60 00 34 */	cntlzw r0, r3
-/* 8015A318 00157118  80 6D CE 14 */	lwz r3, bytesNeeded-_SDA_BASE_(r13)
-/* 8015A31C 0015711C  80 8D CE 18 */	lwz r4, availOnDisk-_SDA_BASE_(r13)
+/* 8015A318 00157118  80 6D CE 14 */	lwz r3, bytesNeeded@sda21(r13)
+/* 8015A31C 0015711C  80 8D CE 18 */	lwz r4, availOnDisk@sda21(r13)
 /* 8015A320 00157120  54 06 D9 7E */	srwi r6, r0, 5
-/* 8015A324 00157124  80 AD CE 1C */	lwz r5, neededFiles-_SDA_BASE_(r13)
+/* 8015A324 00157124  80 AD CE 1C */	lwz r5, neededFiles@sda21(r13)
 /* 8015A328 00157128  4B F1 54 C5 */	bl render_mem_card_no_space__Fiiib
 lbl_8015A32C:
 /* 8015A32C 0015712C  3C 60 80 38 */	lis r3, globals@ha
@@ -5304,7 +5304,7 @@ lbl_8015A368:
 /* 8015A384 00157184  80 7F 00 04 */	lwz r3, 4(r31)
 /* 8015A388 00157188  80 63 00 00 */	lwz r3, 0(r3)
 /* 8015A38C 0015718C  48 13 88 99 */	bl RwCameraEndUpdate
-/* 8015A390 00157190  80 0D C8 30 */	lwz r0, gGameMode-_SDA_BASE_(r13)
+/* 8015A390 00157190  80 0D C8 30 */	lwz r0, gGameMode@sda21(r13)
 /* 8015A394 00157194  2C 00 00 0B */	cmpwi r0, 0xb
 /* 8015A398 00157198  41 82 00 18 */	beq lbl_8015A3B0
 /* 8015A39C 0015719C  80 7F 00 04 */	lwz r3, 4(r31)
@@ -5321,14 +5321,14 @@ lbl_8015A3B0:
 /* 8015A3C4 001571C4  48 00 A2 91 */	bl render_all__8ztextboxFv
 /* 8015A3C8 001571C8  4B EC 43 21 */	bl xDrawTextRender__Fv
 /* 8015A3CC 001571CC  48 00 81 29 */	bl render_all__8ztalkboxFv
-/* 8015A3D0 001571D0  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8015A3D0 001571D0  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8015A3D4 001571D4  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8015A3D8 001571D8  81 83 00 DC */	lwz r12, 0xdc(r3)
 /* 8015A3DC 001571DC  81 8C 00 58 */	lwz r12, 0x58(r12)
 /* 8015A3E0 001571E0  7D 89 03 A6 */	mtctr r12
 /* 8015A3E4 001571E4  4E 80 04 21 */	bctrl 
 /* 8015A3E8 001571E8  48 01 20 DD */	bl zUIMgrRender__Fv
-/* 8015A3EC 001571EC  88 0D 9F 58 */	lbz r0, ENABLE_HUD__14zPlayerGlobals-_SDA_BASE_(r13)
+/* 8015A3EC 001571EC  88 0D 9F 58 */	lbz r0, ENABLE_HUD__14zPlayerGlobals@sda21(r13)
 /* 8015A3F0 001571F0  28 00 00 00 */	cmplwi r0, 0
 /* 8015A3F4 001571F4  41 82 00 48 */	beq lbl_8015A43C
 /* 8015A3F8 001571F8  4B F7 53 E9 */	bl zGameModeGet__Fv
@@ -5363,10 +5363,10 @@ lbl_8015A43C:
 lbl_8015A460:
 /* 8015A460 00157260  4B F7 53 79 */	bl zGameStateGet__Fv
 /* 8015A464 00157264  7C 60 00 34 */	cntlzw r0, r3
-/* 8015A468 00157268  80 6D CE 14 */	lwz r3, bytesNeeded-_SDA_BASE_(r13)
-/* 8015A46C 0015726C  80 8D CE 18 */	lwz r4, availOnDisk-_SDA_BASE_(r13)
+/* 8015A468 00157268  80 6D CE 14 */	lwz r3, bytesNeeded@sda21(r13)
+/* 8015A46C 0015726C  80 8D CE 18 */	lwz r4, availOnDisk@sda21(r13)
 /* 8015A470 00157270  54 06 D9 7E */	srwi r6, r0, 5
-/* 8015A474 00157274  80 AD CE 1C */	lwz r5, neededFiles-_SDA_BASE_(r13)
+/* 8015A474 00157274  80 AD CE 1C */	lwz r5, neededFiles@sda21(r13)
 /* 8015A478 00157278  4B F1 53 75 */	bl render_mem_card_no_space__Fiiib
 lbl_8015A47C:
 /* 8015A47C 0015727C  4B EB BE D9 */	bl xCMrender__Fv
@@ -5425,7 +5425,7 @@ lbl_8015A52C:
 /* 8015A530 00157330  88 03 04 EC */	lbz r0, 0x4ec(r3)
 /* 8015A534 00157334  28 00 00 00 */	cmplwi r0, 0
 /* 8015A538 00157338  41 82 00 1C */	beq lbl_8015A554
-/* 8015A53C 0015733C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8015A53C 0015733C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8015A540 00157340  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8015A544 00157344  4B F4 4F 5D */	bl Get_wasRendered__7zPlayerCFv
 /* 8015A548 00157348  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -5433,7 +5433,7 @@ lbl_8015A52C:
 /* 8015A550 00157350  4B FF FD 19 */	bl zSceneRenderPlayerAgain__Fv
 lbl_8015A554:
 /* 8015A554 00157354  4B FF FD 89 */	bl zSceneRenderPostFX__Fv
-/* 8015A558 00157358  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8015A558 00157358  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8015A55C 0015735C  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8015A560 00157360  81 83 00 DC */	lwz r12, 0xdc(r3)
 /* 8015A564 00157364  81 8C 00 30 */	lwz r12, 0x30(r12)
@@ -5441,7 +5441,7 @@ lbl_8015A554:
 /* 8015A56C 0015736C  4E 80 04 21 */	bctrl 
 /* 8015A570 00157370  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8015A574 00157374  41 82 00 1C */	beq lbl_8015A590
-/* 8015A578 00157378  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 8015A578 00157378  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 8015A57C 0015737C  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 8015A580 00157380  81 83 00 DC */	lwz r12, 0xdc(r3)
 /* 8015A584 00157384  81 8C 00 54 */	lwz r12, 0x54(r12)
@@ -5463,15 +5463,15 @@ zSceneObjHashtableInit__Fi:
 /* 8015A5B4 001573B4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8015A5B8 001573B8  7C 7F 1B 78 */	mr r31, r3
 /* 8015A5BC 001573BC  57 E4 18 38 */	slwi r4, r31, 3
-/* 8015A5C0 001573C0  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 8015A5C0 001573C0  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 8015A5C4 001573C4  4B EE F5 9D */	bl xMemAlloc__FUiUii
-/* 8015A5C8 001573C8  90 6D CE 9C */	stw r3, scobj_idbps-_SDA_BASE_(r13)
+/* 8015A5C8 001573C8  90 6D CE 9C */	stw r3, scobj_idbps@sda21(r13)
 /* 8015A5CC 001573CC  57 E5 18 38 */	slwi r5, r31, 3
 /* 8015A5D0 001573D0  38 80 00 00 */	li r4, 0
 /* 8015A5D4 001573D4  4B EA 8B 2D */	bl memset
 /* 8015A5D8 001573D8  38 00 00 00 */	li r0, 0
-/* 8015A5DC 001573DC  93 ED 9F 6C */	stw r31, scobj_size-_SDA_BASE_(r13)
-/* 8015A5E0 001573E0  90 0D 9F 70 */	stw r0, nidbps-_SDA_BASE_(r13)
+/* 8015A5DC 001573DC  93 ED 9F 6C */	stw r31, scobj_size@sda21(r13)
+/* 8015A5E0 001573E0  90 0D 9F 70 */	stw r0, nidbps@sda21(r13)
 /* 8015A5E4 001573E4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8015A5E8 001573E8  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 8015A5EC 001573EC  7C 08 03 A6 */	mtlr r0
@@ -5482,20 +5482,20 @@ zSceneObjHashtableInit__Fi:
 zSceneObjHashtableExit__Fv:
 /* 8015A5F8 001573F8  38 00 FF FF */	li r0, -1
 /* 8015A5FC 001573FC  38 60 00 00 */	li r3, 0
-/* 8015A600 00157400  90 6D CE 9C */	stw r3, scobj_idbps-_SDA_BASE_(r13)
-/* 8015A604 00157404  90 0D 9F 6C */	stw r0, scobj_size-_SDA_BASE_(r13)
-/* 8015A608 00157408  90 0D 9F 70 */	stw r0, nidbps-_SDA_BASE_(r13)
+/* 8015A600 00157400  90 6D CE 9C */	stw r3, scobj_idbps@sda21(r13)
+/* 8015A604 00157404  90 0D 9F 6C */	stw r0, scobj_size@sda21(r13)
+/* 8015A608 00157408  90 0D 9F 70 */	stw r0, nidbps@sda21(r13)
 /* 8015A60C 0015740C  4E 80 00 20 */	blr 
 
 .global zSceneObjHashtableUsage__Fv
 zSceneObjHashtableUsage__Fv:
-/* 8015A610 00157410  80 6D 9F 70 */	lwz r3, nidbps-_SDA_BASE_(r13)
+/* 8015A610 00157410  80 6D 9F 70 */	lwz r3, nidbps@sda21(r13)
 /* 8015A614 00157414  4E 80 00 20 */	blr 
 
 .global zSceneObjHashtableAdd__FUiP5xBase
 zSceneObjHashtableAdd__FUiP5xBase:
-/* 8015A618 00157418  80 CD 9F 6C */	lwz r6, scobj_size-_SDA_BASE_(r13)
-/* 8015A61C 0015741C  80 AD CE 9C */	lwz r5, scobj_idbps-_SDA_BASE_(r13)
+/* 8015A618 00157418  80 CD 9F 6C */	lwz r6, scobj_size@sda21(r13)
+/* 8015A61C 0015741C  80 AD CE 9C */	lwz r5, scobj_idbps@sda21(r13)
 /* 8015A620 00157420  38 06 FF FF */	addi r0, r6, -1
 /* 8015A624 00157424  7C 67 00 38 */	and r7, r3, r0
 /* 8015A628 00157428  7C C9 03 A6 */	mtctr r6
@@ -5509,9 +5509,9 @@ lbl_8015A634:
 /* 8015A644 00157444  40 82 00 1C */	bne lbl_8015A660
 /* 8015A648 00157448  90 68 00 00 */	stw r3, 0(r8)
 /* 8015A64C 0015744C  90 88 00 04 */	stw r4, 4(r8)
-/* 8015A650 00157450  80 6D 9F 70 */	lwz r3, nidbps-_SDA_BASE_(r13)
+/* 8015A650 00157450  80 6D 9F 70 */	lwz r3, nidbps@sda21(r13)
 /* 8015A654 00157454  38 03 00 01 */	addi r0, r3, 1
-/* 8015A658 00157458  90 0D 9F 70 */	stw r0, nidbps-_SDA_BASE_(r13)
+/* 8015A658 00157458  90 0D 9F 70 */	stw r0, nidbps@sda21(r13)
 /* 8015A65C 0015745C  4E 80 00 20 */	blr 
 lbl_8015A660:
 /* 8015A660 00157460  38 E7 00 01 */	addi r7, r7, 1
@@ -5524,8 +5524,8 @@ lbl_8015A670:
 
 .global zSceneObjHashtableGet__FUi
 zSceneObjHashtableGet__FUi:
-/* 8015A678 00157478  80 AD 9F 6C */	lwz r5, scobj_size-_SDA_BASE_(r13)
-/* 8015A67C 0015747C  80 8D CE 9C */	lwz r4, scobj_idbps-_SDA_BASE_(r13)
+/* 8015A678 00157478  80 AD 9F 6C */	lwz r5, scobj_size@sda21(r13)
+/* 8015A67C 0015747C  80 8D CE 9C */	lwz r4, scobj_idbps@sda21(r13)
 /* 8015A680 00157480  38 05 FF FF */	addi r0, r5, -1
 /* 8015A684 00157484  7C 66 00 38 */	and r6, r3, r0
 /* 8015A688 00157488  7C A9 03 A6 */	mtctr r5
@@ -5727,8 +5727,8 @@ zSceneLeavingLevel__Fv:
 /* 8015A8F4 001576F4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8015A8F8 001576F8  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8015A8FC 001576FC  3B E3 2A 38 */	addi r31, r3, globals@l
-/* 8015A900 00157700  80 82 F3 B8 */	lwz r4, _esc__2_3484-_SDA2_BASE_(r2)
-/* 8015A904 00157704  80 02 F3 BC */	lwz r0, _esc__2_3485-_SDA2_BASE_(r2)
+/* 8015A900 00157700  80 82 F3 B8 */	lwz r4, _esc__2_3484@sda21(r2)
+/* 8015A904 00157704  80 02 F3 BC */	lwz r0, _esc__2_3485@sda21(r2)
 /* 8015A908 00157708  90 81 00 0C */	stw r4, 0xc(r1)
 /* 8015A90C 0015770C  38 80 00 00 */	li r4, 0
 /* 8015A910 00157710  80 7F 04 C8 */	lwz r3, 0x4c8(r31)
@@ -5888,9 +5888,9 @@ zScene_UpdateFlyToInterface__Ff:
 
 .global zSceneCardCheckStartup_set__Fiii
 zSceneCardCheckStartup_set__Fiii:
-/* 8015AB2C 0015792C  90 6D CE 14 */	stw r3, bytesNeeded-_SDA_BASE_(r13)
-/* 8015AB30 00157930  90 8D CE 18 */	stw r4, availOnDisk-_SDA_BASE_(r13)
-/* 8015AB34 00157934  90 AD CE 1C */	stw r5, neededFiles-_SDA_BASE_(r13)
+/* 8015AB2C 0015792C  90 6D CE 14 */	stw r3, bytesNeeded@sda21(r13)
+/* 8015AB30 00157930  90 8D CE 18 */	stw r4, availOnDisk@sda21(r13)
+/* 8015AB34 00157934  90 AD CE 1C */	stw r5, neededFiles@sda21(r13)
 /* 8015AB38 00157938  4E 80 00 20 */	blr 
 
 .global zSceneEnableVisited__FP6zScene
@@ -5948,20 +5948,20 @@ lbl_8015ABD8:
 
 .global zSceneEnableScreenAdj__FUi
 zSceneEnableScreenAdj__FUi:
-/* 8015ABF8 001579F8  90 6D CE 28 */	stw r3, enableScreenAdj-_SDA_BASE_(r13)
+/* 8015ABF8 001579F8  90 6D CE 28 */	stw r3, enableScreenAdj@sda21(r13)
 /* 8015ABFC 001579FC  4E 80 00 20 */	blr 
 
 .global zSceneSetOldScreenAdj__Fv
 zSceneSetOldScreenAdj__Fv:
-/* 8015AC00 00157A00  C0 2D CE 20 */	lfs f1, offsetx-_SDA_BASE_(r13)
-/* 8015AC04 00157A04  C0 0D CE 24 */	lfs f0, offsety-_SDA_BASE_(r13)
-/* 8015AC08 00157A08  D0 2D CE 2C */	stfs f1, oldOffsetx-_SDA_BASE_(r13)
-/* 8015AC0C 00157A0C  D0 0D CE 30 */	stfs f0, oldOffsety-_SDA_BASE_(r13)
+/* 8015AC00 00157A00  C0 2D CE 20 */	lfs f1, offsetx@sda21(r13)
+/* 8015AC04 00157A04  C0 0D CE 24 */	lfs f0, offsety@sda21(r13)
+/* 8015AC08 00157A08  D0 2D CE 2C */	stfs f1, oldOffsetx@sda21(r13)
+/* 8015AC0C 00157A0C  D0 0D CE 30 */	stfs f0, oldOffsety@sda21(r13)
 /* 8015AC10 00157A10  4E 80 00 20 */	blr 
 
 .global zScene_ScreenAdjustMode__Fv
 zScene_ScreenAdjustMode__Fv:
-/* 8015AC14 00157A14  80 6D CE 28 */	lwz r3, enableScreenAdj-_SDA_BASE_(r13)
+/* 8015AC14 00157A14  80 6D CE 28 */	lwz r3, enableScreenAdj@sda21(r13)
 /* 8015AC18 00157A18  4E 80 00 20 */	blr 
 
 .global zSceneLoadPackFile__FUiibPCc
@@ -5974,7 +5974,7 @@ zSceneLoadPackFile__FUiibPCc:
 /* 8015AC30 00157A30  BF 81 01 10 */	stmw r28, 0x110(r1)
 /* 8015AC34 00157A34  38 00 00 01 */	li r0, 1
 /* 8015AC38 00157A38  7C DD 33 79 */	or. r29, r6, r6
-/* 8015AC3C 00157A3C  98 0D CE 34 */	stb r0, sLoadingPackFile-_SDA_BASE_(r13)
+/* 8015AC3C 00157A3C  98 0D CE 34 */	stb r0, sLoadingPackFile@sda21(r13)
 /* 8015AC40 00157A40  7C 7F 1B 78 */	mr r31, r3
 /* 8015AC44 00157A44  7C 9C 23 78 */	mr r28, r4
 /* 8015AC48 00157A48  7C BE 2B 78 */	mr r30, r5
@@ -5998,13 +5998,13 @@ lbl_8015AC7C:
 /* 8015AC88 00157A88  41 82 00 14 */	beq lbl_8015AC9C
 /* 8015AC8C 00157A8C  38 00 00 00 */	li r0, 0
 /* 8015AC90 00157A90  38 60 00 00 */	li r3, 0
-/* 8015AC94 00157A94  98 0D CE 34 */	stb r0, sLoadingPackFile-_SDA_BASE_(r13)
+/* 8015AC94 00157A94  98 0D CE 34 */	stb r0, sLoadingPackFile@sda21(r13)
 /* 8015AC98 00157A98  48 00 01 30 */	b lbl_8015ADC8
 lbl_8015AC9C:
 /* 8015AC9C 00157A9C  7F E3 FB 78 */	mr r3, r31
 /* 8015ACA0 00157AA0  7F 84 E3 78 */	mr r4, r28
 /* 8015ACA4 00157AA4  4B F1 11 91 */	bl xSTQueueSceneAssets__FUii
-/* 8015ACA8 00157AA8  C3 E2 B7 E4 */	lfs f31, _esc__2_1345_1-_SDA2_BASE_(r2)
+/* 8015ACA8 00157AA8  C3 E2 B7 E4 */	lfs f31, _esc__2_1345_1@sda21(r2)
 lbl_8015ACAC:
 /* 8015ACAC 00157AAC  7F E3 FB 78 */	mr r3, r31
 /* 8015ACB0 00157AB0  4B F1 13 9D */	bl xSTLoadStep__FUi
@@ -6070,7 +6070,7 @@ lbl_8015AD80:
 /* 8015AD90 00157B90  7F E3 FB 78 */	mr r3, r31
 /* 8015AD94 00157B94  38 80 00 03 */	li r4, 3
 /* 8015AD98 00157B98  4B F1 10 9D */	bl xSTQueueSceneAssets__FUii
-/* 8015AD9C 00157B9C  C3 E2 B7 E4 */	lfs f31, _esc__2_1345_1-_SDA2_BASE_(r2)
+/* 8015AD9C 00157B9C  C3 E2 B7 E4 */	lfs f31, _esc__2_1345_1@sda21(r2)
 lbl_8015ADA0:
 /* 8015ADA0 00157BA0  7F E3 FB 78 */	mr r3, r31
 /* 8015ADA4 00157BA4  4B F1 12 A9 */	bl xSTLoadStep__FUi
@@ -6082,7 +6082,7 @@ lbl_8015ADA0:
 lbl_8015ADBC:
 /* 8015ADBC 00157BBC  38 00 00 00 */	li r0, 0
 /* 8015ADC0 00157BC0  38 60 00 01 */	li r3, 1
-/* 8015ADC4 00157BC4  98 0D CE 34 */	stb r0, sLoadingPackFile-_SDA_BASE_(r13)
+/* 8015ADC4 00157BC4  98 0D CE 34 */	stb r0, sLoadingPackFile@sda21(r13)
 lbl_8015ADC8:
 /* 8015ADC8 00157BC8  E3 E1 01 28 */	psq_l f31, 296(r1), 0, qr0
 /* 8015ADCC 00157BCC  CB E1 01 20 */	lfd f31, 0x120(r1)

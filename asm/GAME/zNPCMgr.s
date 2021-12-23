@@ -15,7 +15,7 @@ g_npcmgr:
 
 .global zNPCMgrSelf__Fv
 zNPCMgrSelf__Fv:
-/* 8012CAAC 001298AC  80 6D CD 2C */	lwz r3, g_npcmgr-_SDA_BASE_(r13)
+/* 8012CAAC 001298AC  80 6D CD 2C */	lwz r3, g_npcmgr@sda21(r13)
 /* 8012CAB0 001298B0  4E 80 00 20 */	blr 
 
 .global zNPCMgr_Startup__Fv
@@ -23,10 +23,10 @@ zNPCMgr_Startup__Fv:
 /* 8012CAB4 001298B4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8012CAB8 001298B8  7C 08 02 A6 */	mflr r0
 /* 8012CABC 001298BC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8012CAC0 001298C0  80 6D CD 28 */	lwz r3, g_modinit_0-_SDA_BASE_(r13)
+/* 8012CAC0 001298C0  80 6D CD 28 */	lwz r3, g_modinit_0@sda21(r13)
 /* 8012CAC4 001298C4  38 03 00 01 */	addi r0, r3, 1
 /* 8012CAC8 001298C8  2C 03 00 00 */	cmpwi r3, 0
-/* 8012CACC 001298CC  90 0D CD 28 */	stw r0, g_modinit_0-_SDA_BASE_(r13)
+/* 8012CACC 001298CC  90 0D CD 28 */	stw r0, g_modinit_0@sda21(r13)
 /* 8012CAD0 001298D0  40 82 00 34 */	bne lbl_8012CB04
 /* 8012CAD4 001298D4  3C 80 4E 50 */	lis r4, 0x4E50434D@ha
 /* 8012CAD8 001298D8  38 60 01 C8 */	li r3, 0x1c8
@@ -38,7 +38,7 @@ zNPCMgr_Startup__Fv:
 /* 8012CAF0 001298F0  48 00 00 25 */	bl __ct__7zNPCMgrFv
 /* 8012CAF4 001298F4  7C 60 1B 78 */	mr r0, r3
 lbl_8012CAF8:
-/* 8012CAF8 001298F8  90 0D CD 2C */	stw r0, g_npcmgr-_SDA_BASE_(r13)
+/* 8012CAF8 001298F8  90 0D CD 2C */	stw r0, g_npcmgr@sda21(r13)
 /* 8012CAFC 001298FC  7C 03 03 78 */	mr r3, r0
 /* 8012CB00 00129900  48 00 01 CD */	bl Startup__7zNPCMgrFv
 lbl_8012CB04:
@@ -57,9 +57,9 @@ zNPCMgr_Shutdown__Fv:
 /* 8012CB1C 0012991C  7C 08 02 A6 */	mflr r0
 /* 8012CB20 00129920  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8012CB24 00129924  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 8012CB28 00129928  80 6D CD 28 */	lwz r3, g_modinit_0-_SDA_BASE_(r13)
+/* 8012CB28 00129928  80 6D CD 28 */	lwz r3, g_modinit_0@sda21(r13)
 /* 8012CB2C 0012992C  34 03 FF FF */	addic. r0, r3, -1
-/* 8012CB30 00129930  90 0D CD 28 */	stw r0, g_modinit_0-_SDA_BASE_(r13)
+/* 8012CB30 00129930  90 0D CD 28 */	stw r0, g_modinit_0@sda21(r13)
 /* 8012CB34 00129934  40 82 00 2C */	bne lbl_8012CB60
 /* 8012CB38 00129938  4B FF FF 75 */	bl zNPCMgrSelf__Fv
 /* 8012CB3C 0012993C  7C 7F 1B 79 */	or. r31, r3, r3
@@ -69,7 +69,7 @@ zNPCMgr_Shutdown__Fv:
 /* 8012CB4C 0012994C  38 80 00 01 */	li r4, 1
 /* 8012CB50 00129950  48 00 00 25 */	bl __dt__7zNPCMgrFv
 /* 8012CB54 00129954  38 00 00 00 */	li r0, 0
-/* 8012CB58 00129958  90 0D CD 2C */	stw r0, g_npcmgr-_SDA_BASE_(r13)
+/* 8012CB58 00129958  90 0D CD 2C */	stw r0, g_npcmgr@sda21(r13)
 lbl_8012CB5C:
 /* 8012CB5C 0012995C  4B FF FF BD */	bl zNPCMgr_Shutdown__Fv
 lbl_8012CB60:

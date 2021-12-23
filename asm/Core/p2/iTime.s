@@ -100,13 +100,13 @@ iGetCurrFormattedDate__FPc:
 /* 80081C20 0007EA20  38 A1 00 08 */	addi r5, r1, 8
 /* 80081C24 0007EA24  48 1B 6B A1 */	bl OSTicksToCalendarTime
 /* 80081C28 0007EA28  80 01 00 20 */	lwz r0, 0x20(r1)
-/* 80081C2C 0007EA2C  38 8D 87 80 */	addi r4, r13, dotw-_SDA_BASE_
+/* 80081C2C 0007EA2C  38 8D 87 80 */	addi r4, r13, dotw@sda21
 /* 80081C30 0007EA30  7F C3 F3 78 */	mr r3, r30
 /* 80081C34 0007EA34  54 00 10 3A */	slwi r0, r0, 2
 /* 80081C38 0007EA38  7C 84 00 2E */	lwzx r4, r4, r0
 /* 80081C3C 0007EA3C  48 23 A8 B9 */	bl strcpy
 /* 80081C40 0007EA40  80 01 00 18 */	lwz r0, 0x18(r1)
-/* 80081C44 0007EA44  38 8D 87 50 */	addi r4, r13, months-_SDA_BASE_
+/* 80081C44 0007EA44  38 8D 87 50 */	addi r4, r13, months@sda21
 /* 80081C48 0007EA48  7F C3 F3 78 */	mr r3, r30
 /* 80081C4C 0007EA4C  54 00 10 3A */	slwi r0, r0, 2
 /* 80081C50 0007EA50  7C 84 00 2E */	lwzx r4, r4, r0
@@ -384,7 +384,7 @@ iSystemARAMInit__Fv:
 /* 80082020 0007EE20  38 03 00 FF */	addi r0, r3, 0xff
 /* 80082024 0007EE24  3D 00 00 B0 */	lis r8, 0xb0
 /* 80082028 0007EE28  54 09 00 2E */	rlwinm r9, r0, 0, 0, 0x17
-/* 8008202C 0007EE2C  90 6D C2 2C */	stw r3, pARAMBaseAddressFMOD-_SDA_BASE_(r13)
+/* 8008202C 0007EE2C  90 6D C2 2C */	stw r3, pARAMBaseAddressFMOD@sda21(r13)
 /* 80082030 0007EE30  3C E9 00 B0 */	addis r7, r9, 0xb0
 /* 80082034 0007EE34  3C 00 01 00 */	lis r0, 0x100
 /* 80082038 0007EE38  7C C7 00 50 */	subf r6, r7, r0
@@ -393,13 +393,13 @@ iSystemARAMInit__Fv:
 /* 80082044 0007EE44  3C A0 80 37 */	lis r5, AramMgr@ha
 /* 80082048 0007EE48  38 00 00 20 */	li r0, 0x20
 /* 8008204C 0007EE4C  7C 64 1B 78 */	mr r4, r3
-/* 80082050 0007EE50  91 2D C2 2C */	stw r9, pARAMBaseAddressFMOD-_SDA_BASE_(r13)
+/* 80082050 0007EE50  91 2D C2 2C */	stw r9, pARAMBaseAddressFMOD@sda21(r13)
 /* 80082054 0007EE54  55 49 06 EE */	rlwinm r9, r10, 0, 0x1b, 0x17
 /* 80082058 0007EE58  38 A5 98 40 */	addi r5, r5, AramMgr@l
 /* 8008205C 0007EE5C  39 40 00 00 */	li r10, 0
-/* 80082060 0007EE60  91 0D C2 30 */	stw r8, ARAMBytesForFMOD-_SDA_BASE_(r13)
-/* 80082064 0007EE64  90 ED C2 24 */	stw r7, pARAMBaseAddressBink-_SDA_BASE_(r13)
-/* 80082068 0007EE68  90 CD C2 28 */	stw r6, ARAMBytesForBink-_SDA_BASE_(r13)
+/* 80082060 0007EE60  91 0D C2 30 */	stw r8, ARAMBytesForFMOD@sda21(r13)
+/* 80082064 0007EE64  90 ED C2 24 */	stw r7, pARAMBaseAddressBink@sda21(r13)
+/* 80082068 0007EE68  90 CD C2 28 */	stw r6, ARAMBytesForBink@sda21(r13)
 /* 8008206C 0007EE6C  7C 09 03 A6 */	mtctr r0
 lbl_80082070:
 /* 80082070 0007EE70  7C 0A 49 D6 */	mullw r0, r10, r9
@@ -418,12 +418,12 @@ lbl_80082070:
 
 .global iSystemARAMBasePtrForFMOD__Fv
 iSystemARAMBasePtrForFMOD__Fv:
-/* 800820A4 0007EEA4  80 6D C2 2C */	lwz r3, pARAMBaseAddressFMOD-_SDA_BASE_(r13)
+/* 800820A4 0007EEA4  80 6D C2 2C */	lwz r3, pARAMBaseAddressFMOD@sda21(r13)
 /* 800820A8 0007EEA8  4E 80 00 20 */	blr 
 
 .global iSystemARAMSizeForFMOD__Fv
 iSystemARAMSizeForFMOD__Fv:
-/* 800820AC 0007EEAC  80 6D C2 30 */	lwz r3, ARAMBytesForFMOD-_SDA_BASE_(r13)
+/* 800820AC 0007EEAC  80 6D C2 30 */	lwz r3, ARAMBytesForFMOD@sda21(r13)
 /* 800820B0 0007EEB0  4E 80 00 20 */	blr 
 
 .global iSystemInitRWFailSafe__Fv
@@ -445,55 +445,55 @@ lbl_800820E4:
 /* 800820E8 0007EEE8  41 82 00 48 */	beq lbl_80082130
 /* 800820EC 0007EEEC  48 00 00 84 */	b lbl_80082170
 lbl_800820F0:
-/* 800820F0 0007EEF0  38 6D C1 E8 */	addi r3, r13, renderObject-_SDA_BASE_
-/* 800820F4 0007EEF4  38 8D 86 D8 */	addi r4, r13, myGXNtsc480IntDf-_SDA_BASE_
+/* 800820F0 0007EEF0  38 6D C1 E8 */	addi r3, r13, renderObject@sda21
+/* 800820F4 0007EEF4  38 8D 86 D8 */	addi r4, r13, myGXNtsc480IntDf@sda21
 /* 800820F8 0007EEF8  4B FF F8 21 */	bl __as__16_GXRenderModeObjFRC16_GXRenderModeObj
-/* 800820FC 0007EEFC  38 6D 91 C4 */	addi r3, r13, FB_XRES-_SDA_BASE_
-/* 80082100 0007EF00  38 8D 91 C8 */	addi r4, r13, FB_YRES-_SDA_BASE_
+/* 800820FC 0007EEFC  38 6D 91 C4 */	addi r3, r13, FB_XRES@sda21
+/* 80082100 0007EF00  38 8D 91 C8 */	addi r4, r13, FB_YRES@sda21
 /* 80082104 0007EF04  38 A0 00 00 */	li r5, 0
 /* 80082108 0007EF08  4B FF F4 31 */	bl iSystemGetWidthHeight__FRUiRUib
 /* 8008210C 0007EF0C  48 00 00 80 */	b lbl_8008218C
 lbl_80082110:
-/* 80082110 0007EF10  38 6D C1 E8 */	addi r3, r13, renderObject-_SDA_BASE_
-/* 80082114 0007EF14  38 8D 87 14 */	addi r4, r13, myGXPal528IntDf-_SDA_BASE_
+/* 80082110 0007EF10  38 6D C1 E8 */	addi r3, r13, renderObject@sda21
+/* 80082114 0007EF14  38 8D 87 14 */	addi r4, r13, myGXPal528IntDf@sda21
 /* 80082118 0007EF18  4B FF F8 01 */	bl __as__16_GXRenderModeObjFRC16_GXRenderModeObj
-/* 8008211C 0007EF1C  38 6D 91 C4 */	addi r3, r13, FB_XRES-_SDA_BASE_
-/* 80082120 0007EF20  38 8D 91 C8 */	addi r4, r13, FB_YRES-_SDA_BASE_
+/* 8008211C 0007EF1C  38 6D 91 C4 */	addi r3, r13, FB_XRES@sda21
+/* 80082120 0007EF20  38 8D 91 C8 */	addi r4, r13, FB_YRES@sda21
 /* 80082124 0007EF24  38 A0 00 01 */	li r5, 1
 /* 80082128 0007EF28  4B FF F4 11 */	bl iSystemGetWidthHeight__FRUiRUib
 /* 8008212C 0007EF2C  48 00 00 60 */	b lbl_8008218C
 lbl_80082130:
-/* 80082130 0007EF30  38 6D C1 E8 */	addi r3, r13, renderObject-_SDA_BASE_
-/* 80082134 0007EF34  38 8D 87 14 */	addi r4, r13, myGXPal528IntDf-_SDA_BASE_
+/* 80082130 0007EF30  38 6D C1 E8 */	addi r3, r13, renderObject@sda21
+/* 80082134 0007EF34  38 8D 87 14 */	addi r4, r13, myGXPal528IntDf@sda21
 /* 80082138 0007EF38  4B FF F7 E1 */	bl __as__16_GXRenderModeObjFRC16_GXRenderModeObj
-/* 8008213C 0007EF3C  38 6D 91 C4 */	addi r3, r13, FB_XRES-_SDA_BASE_
-/* 80082140 0007EF40  38 8D 91 C8 */	addi r4, r13, FB_YRES-_SDA_BASE_
+/* 8008213C 0007EF3C  38 6D 91 C4 */	addi r3, r13, FB_XRES@sda21
+/* 80082140 0007EF40  38 8D 91 C8 */	addi r4, r13, FB_YRES@sda21
 /* 80082144 0007EF44  38 A0 00 01 */	li r5, 1
 /* 80082148 0007EF48  4B FF F3 F1 */	bl iSystemGetWidthHeight__FRUiRUib
 /* 8008214C 0007EF4C  48 00 00 40 */	b lbl_8008218C
 lbl_80082150:
-/* 80082150 0007EF50  38 6D C1 E8 */	addi r3, r13, renderObject-_SDA_BASE_
-/* 80082154 0007EF54  38 8D 86 D8 */	addi r4, r13, myGXNtsc480IntDf-_SDA_BASE_
+/* 80082150 0007EF50  38 6D C1 E8 */	addi r3, r13, renderObject@sda21
+/* 80082154 0007EF54  38 8D 86 D8 */	addi r4, r13, myGXNtsc480IntDf@sda21
 /* 80082158 0007EF58  4B FF F7 C1 */	bl __as__16_GXRenderModeObjFRC16_GXRenderModeObj
-/* 8008215C 0007EF5C  38 6D 91 C4 */	addi r3, r13, FB_XRES-_SDA_BASE_
-/* 80082160 0007EF60  38 8D 91 C8 */	addi r4, r13, FB_YRES-_SDA_BASE_
+/* 8008215C 0007EF5C  38 6D 91 C4 */	addi r3, r13, FB_XRES@sda21
+/* 80082160 0007EF60  38 8D 91 C8 */	addi r4, r13, FB_YRES@sda21
 /* 80082164 0007EF64  38 A0 00 00 */	li r5, 0
 /* 80082168 0007EF68  4B FF F3 D1 */	bl iSystemGetWidthHeight__FRUiRUib
 /* 8008216C 0007EF6C  48 00 00 20 */	b lbl_8008218C
 lbl_80082170:
-/* 80082170 0007EF70  38 6D C1 E8 */	addi r3, r13, renderObject-_SDA_BASE_
-/* 80082174 0007EF74  38 8D 86 D8 */	addi r4, r13, myGXNtsc480IntDf-_SDA_BASE_
+/* 80082170 0007EF70  38 6D C1 E8 */	addi r3, r13, renderObject@sda21
+/* 80082174 0007EF74  38 8D 86 D8 */	addi r4, r13, myGXNtsc480IntDf@sda21
 /* 80082178 0007EF78  4B FF F7 A1 */	bl __as__16_GXRenderModeObjFRC16_GXRenderModeObj
-/* 8008217C 0007EF7C  38 6D 91 C4 */	addi r3, r13, FB_XRES-_SDA_BASE_
-/* 80082180 0007EF80  38 8D 91 C8 */	addi r4, r13, FB_YRES-_SDA_BASE_
+/* 8008217C 0007EF7C  38 6D 91 C4 */	addi r3, r13, FB_XRES@sda21
+/* 80082180 0007EF80  38 8D 91 C8 */	addi r4, r13, FB_YRES@sda21
 /* 80082184 0007EF84  38 A0 00 00 */	li r5, 0
 /* 80082188 0007EF88  4B FF F3 B1 */	bl iSystemGetWidthHeight__FRUiRUib
 lbl_8008218C:
-/* 8008218C 0007EF8C  38 6D C1 E8 */	addi r3, r13, renderObject-_SDA_BASE_
-/* 80082190 0007EF90  38 8D C1 DC */	addi r4, r13, deviceConfig-_SDA_BASE_
+/* 8008218C 0007EF8C  38 6D C1 E8 */	addi r3, r13, renderObject@sda21
+/* 80082190 0007EF90  38 8D C1 DC */	addi r4, r13, deviceConfig@sda21
 /* 80082194 0007EF94  38 A0 00 01 */	li r5, 1
 /* 80082198 0007EF98  3C 00 00 02 */	lis r0, 2
-/* 8008219C 0007EF9C  90 6D C1 DC */	stw r3, deviceConfig-_SDA_BASE_(r13)
+/* 8008219C 0007EF9C  90 6D C1 DC */	stw r3, deviceConfig@sda21(r13)
 /* 800821A0 0007EFA0  38 61 00 08 */	addi r3, r1, 8
 /* 800821A4 0007EFA4  90 A4 00 04 */	stw r5, 4(r4)
 /* 800821A8 0007EFA8  90 04 00 08 */	stw r0, 8(r4)
@@ -505,7 +505,7 @@ lbl_8008218C:
 lbl_800821C0:
 /* 800821C0 0007EFC0  48 21 16 E9 */	bl RwEngineGetCurrentVideoMode
 /* 800821C4 0007EFC4  7C 60 1B 78 */	mr r0, r3
-/* 800821C8 0007EFC8  38 6D C1 C0 */	addi r3, r13, sVideoMode-_SDA_BASE_
+/* 800821C8 0007EFC8  38 6D C1 C0 */	addi r3, r13, sVideoMode@sda21
 /* 800821CC 0007EFCC  7C 04 03 78 */	mr r4, r0
 /* 800821D0 0007EFD0  48 21 16 4D */	bl RwEngineGetVideoModeInfo
 /* 800821D4 0007EFD4  48 21 18 45 */	bl RwEngineStart
@@ -571,8 +571,8 @@ iTimeInit__Fv:
 /* 8008229C 0007F09C  7C 08 02 A6 */	mflr r0
 /* 800822A0 0007F0A0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800822A4 0007F0A4  48 1B 62 A9 */	bl OSGetTime
-/* 800822A8 0007F0A8  90 8D C2 3C */	stw r4, lbl_803CF6BC-_SDA_BASE_(r13)
-/* 800822AC 0007F0AC  90 6D C2 38 */	stw r3, sStartupTime-_SDA_BASE_(r13)
+/* 800822A8 0007F0A8  90 8D C2 3C */	stw r4, lbl_803CF6BC@sda21(r13)
+/* 800822AC 0007F0AC  90 6D C2 38 */	stw r3, sStartupTime@sda21(r13)
 /* 800822B0 0007F0B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800822B4 0007F0B4  7C 08 03 A6 */	mtlr r0
 /* 800822B8 0007F0B8  38 21 00 10 */	addi r1, r1, 0x10
@@ -588,8 +588,8 @@ iTimeGet__Fv:
 /* 800822C8 0007F0C8  7C 08 02 A6 */	mflr r0
 /* 800822CC 0007F0CC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800822D0 0007F0D0  48 1B 62 7D */	bl OSGetTime
-/* 800822D4 0007F0D4  80 AD C2 3C */	lwz r5, lbl_803CF6BC-_SDA_BASE_(r13)
-/* 800822D8 0007F0D8  80 0D C2 38 */	lwz r0, sStartupTime-_SDA_BASE_(r13)
+/* 800822D4 0007F0D4  80 AD C2 3C */	lwz r5, lbl_803CF6BC@sda21(r13)
+/* 800822D8 0007F0D8  80 0D C2 38 */	lwz r0, sStartupTime@sda21(r13)
 /* 800822DC 0007F0DC  7C 85 20 10 */	subfc r4, r5, r4
 /* 800822E0 0007F0E0  7C 60 19 10 */	subfe r3, r0, r3
 /* 800822E4 0007F0E4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -608,7 +608,7 @@ iTimeDiffSec__Fx:
 /* 8008230C 0007F10C  80 63 00 F8 */	lwz r3, 0x800000F8@l(r3)
 /* 80082310 0007F110  90 01 00 08 */	stw r0, 8(r1)
 /* 80082314 0007F114  54 60 F0 BE */	srwi r0, r3, 2
-/* 80082318 0007F118  C8 42 92 70 */	lfd f2, _esc__2_607-_SDA2_BASE_(r2)
+/* 80082318 0007F118  C8 42 92 70 */	lfd f2, _esc__2_607@sda21(r2)
 /* 8008231C 0007F11C  90 01 00 0C */	stw r0, 0xc(r1)
 /* 80082320 0007F120  C8 01 00 08 */	lfd f0, 8(r1)
 /* 80082324 0007F124  EC 00 10 28 */	fsubs f0, f0, f2
@@ -633,19 +633,19 @@ iTimeDiffSec__Fxx:
 
 .global iTimeGetGame__Fv
 iTimeGetGame__Fv:
-/* 80082364 0007F164  C0 2D C2 40 */	lfs f1, sGameTime-_SDA_BASE_(r13)
+/* 80082364 0007F164  C0 2D C2 40 */	lfs f1, sGameTime@sda21(r13)
 /* 80082368 0007F168  4E 80 00 20 */	blr 
 
 .global iTimeGameAdvance__Ff
 iTimeGameAdvance__Ff:
-/* 8008236C 0007F16C  C0 0D C2 40 */	lfs f0, sGameTime-_SDA_BASE_(r13)
+/* 8008236C 0007F16C  C0 0D C2 40 */	lfs f0, sGameTime@sda21(r13)
 /* 80082370 0007F170  EC 00 08 2A */	fadds f0, f0, f1
-/* 80082374 0007F174  D0 0D C2 40 */	stfs f0, sGameTime-_SDA_BASE_(r13)
+/* 80082374 0007F174  D0 0D C2 40 */	stfs f0, sGameTime@sda21(r13)
 /* 80082378 0007F178  4E 80 00 20 */	blr 
 
 .global iTimeSetGame__Ff
 iTimeSetGame__Ff:
-/* 8008237C 0007F17C  D0 2D C2 40 */	stfs f1, sGameTime-_SDA_BASE_(r13)
+/* 8008237C 0007F17C  D0 2D C2 40 */	stfs f1, sGameTime@sda21(r13)
 /* 80082380 0007F180  4E 80 00 20 */	blr 
 
 .global iProfileClear__FUi

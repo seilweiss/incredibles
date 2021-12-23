@@ -43,7 +43,7 @@ iFileInit__Fv:
 /* 80074720 00071520  38 63 3E 08 */	addi r3, r3, tbuffer@l
 /* 80074724 00071524  38 03 00 1F */	addi r0, r3, 0x1f
 /* 80074728 00071528  54 00 00 34 */	rlwinm r0, r0, 0, 0, 0x1a
-/* 8007472C 0007152C  90 0D C0 08 */	stw r0, buffer32-_SDA_BASE_(r13)
+/* 8007472C 0007152C  90 0D C0 08 */	stw r0, buffer32@sda21(r13)
 /* 80074730 00071530  4E 80 00 20 */	blr 
 
 .global iFileExit__Fv
@@ -70,7 +70,7 @@ iFileLoad__FPCcPUiPUi:
 /* 80074774 00071574  28 1D 00 00 */	cmplwi r29, 0
 /* 80074778 00071578  7C 7F 1B 78 */	mr r31, r3
 /* 8007477C 0007157C  40 82 00 24 */	bne lbl_800747A0
-/* 80074780 00071580  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 80074780 00071580  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 80074784 00071584  38 1F 00 1F */	addi r0, r31, 0x1f
 /* 80074788 00071588  54 03 00 34 */	rlwinm r3, r0, 0, 0, 0x1a
 /* 8007478C 0007158C  38 80 00 00 */	li r4, 0
@@ -202,7 +202,7 @@ lbl_80074918:
 .global ifilereadCB__FP9tag_xFile
 ifilereadCB__FP9tag_xFile:
 /* 8007492C 0007172C  38 00 00 00 */	li r0, 0
-/* 80074930 00071730  90 0D C0 0C */	stw r0, iFileSyncAsyncReadActive-_SDA_BASE_(r13)
+/* 80074930 00071730  90 0D C0 0C */	stw r0, iFileSyncAsyncReadActive@sda21(r13)
 /* 80074934 00071734  4E 80 00 20 */	blr 
 
 .global iFileRead__FP9tag_xFilePvUi
@@ -219,7 +219,7 @@ iFileRead__FP9tag_xFilePvUi:
 /* 8007495C 0007175C  4B FF FF 35 */	bl iFileSeek__FP9tag_xFileii
 /* 80074960 00071760  38 00 00 01 */	li r0, 1
 /* 80074964 00071764  3C 60 80 07 */	lis r3, ifilereadCB__FP9tag_xFile@ha
-/* 80074968 00071768  90 0D C0 0C */	stw r0, iFileSyncAsyncReadActive-_SDA_BASE_(r13)
+/* 80074968 00071768  90 0D C0 0C */	stw r0, iFileSyncAsyncReadActive@sda21(r13)
 /* 8007496C 0007176C  3B E3 49 2C */	addi r31, r3, ifilereadCB__FP9tag_xFile@l
 lbl_80074970:
 /* 80074970 00071770  7F 83 E3 78 */	mr r3, r28
@@ -238,7 +238,7 @@ lbl_800749A0:
 /* 800749A0 000717A0  48 00 EB 61 */	bl TRCCheck__8iTRCDiskFv
 /* 800749A4 000717A4  48 00 01 79 */	bl iFileAsyncService__Fv
 lbl_800749A8:
-/* 800749A8 000717A8  80 0D C0 0C */	lwz r0, iFileSyncAsyncReadActive-_SDA_BASE_(r13)
+/* 800749A8 000717A8  80 0D C0 0C */	lwz r0, iFileSyncAsyncReadActive@sda21(r13)
 /* 800749AC 000717AC  28 00 00 00 */	cmplwi r0, 0
 /* 800749B0 000717B0  40 82 FF F0 */	bne lbl_800749A0
 /* 800749B4 000717B4  80 1C 01 0C */	lwz r0, 0x10c(r28)
@@ -392,12 +392,12 @@ iFileReadAsync__FP9tag_xFilePvUiPFP9tag_xFile_vi:
 /* 80074BAC 000719AC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80074BB0 000719B0  BF 81 00 10 */	stmw r28, 0x10(r1)
 /* 80074BB4 000719B4  7C 7F 1B 78 */	mr r31, r3
-/* 80074BB8 000719B8  88 0D C0 14 */	lbz r0, init_esc__7_705-_SDA_BASE_(r13)
+/* 80074BB8 000719B8  88 0D C0 14 */	lbz r0, init_esc__7_705@sda21(r13)
 /* 80074BBC 000719BC  7C 00 07 75 */	extsb. r0, r0
 /* 80074BC0 000719C0  40 82 00 10 */	bne lbl_80074BD0
 /* 80074BC4 000719C4  38 00 00 01 */	li r0, 1
-/* 80074BC8 000719C8  90 0D C0 10 */	stw r0, fopcount_esc__7_704-_SDA_BASE_(r13)
-/* 80074BCC 000719CC  98 0D C0 14 */	stb r0, init_esc__7_705-_SDA_BASE_(r13)
+/* 80074BC8 000719C8  90 0D C0 10 */	stw r0, fopcount_esc__7_704@sda21(r13)
+/* 80074BCC 000719CC  98 0D C0 14 */	stb r0, init_esc__7_705@sda21(r13)
 lbl_80074BD0:
 /* 80074BD0 000719D0  3C 60 80 35 */	lis r3, file_queue@ha
 /* 80074BD4 000719D4  38 00 00 04 */	li r0, 4
@@ -417,7 +417,7 @@ lbl_80074BE8:
 /* 80074C08 00071A08  41 82 00 7C */	beq lbl_80074C84
 /* 80074C0C 00071A0C  93 E8 00 00 */	stw r31, 0(r8)
 /* 80074C10 00071A10  38 60 00 00 */	li r3, 0
-/* 80074C14 00071A14  80 ED C0 10 */	lwz r7, fopcount_esc__7_704-_SDA_BASE_(r13)
+/* 80074C14 00071A14  80 ED C0 10 */	lwz r7, fopcount_esc__7_704@sda21(r13)
 /* 80074C18 00071A18  38 00 00 04 */	li r0, 4
 /* 80074C1C 00071A1C  90 88 00 04 */	stw r4, 4(r8)
 /* 80074C20 00071A20  28 05 00 20 */	cmplwi r5, 0x20
@@ -429,7 +429,7 @@ lbl_80074BE8:
 /* 80074C38 00071A38  90 68 00 0C */	stw r3, 0xc(r8)
 /* 80074C3C 00071A3C  90 08 00 10 */	stw r0, 0x10(r8)
 /* 80074C40 00071A40  90 C8 00 14 */	stw r6, 0x14(r8)
-/* 80074C44 00071A44  90 ED C0 10 */	stw r7, fopcount_esc__7_704-_SDA_BASE_(r13)
+/* 80074C44 00071A44  90 ED C0 10 */	stw r7, fopcount_esc__7_704@sda21(r13)
 /* 80074C48 00071A48  93 C8 00 18 */	stw r30, 0x18(r8)
 /* 80074C4C 00071A4C  40 80 00 0C */	bge lbl_80074C58
 /* 80074C50 00071A50  39 25 00 03 */	addi r9, r5, 3

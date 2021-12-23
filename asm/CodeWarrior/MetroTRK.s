@@ -6810,7 +6810,7 @@ ddh_cc_write:
 /* 802C7564 002C4364  7C 9E 23 78 */	mr r30, r4
 /* 802C7568 002C4368  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 802C756C 002C436C  7C 7D 1B 78 */	mr r29, r3
-/* 802C7570 002C4370  80 0D E8 48 */	lwz r0, gIsInitialized-_SDA_BASE_(r13)
+/* 802C7570 002C4370  80 0D E8 48 */	lwz r0, gIsInitialized@sda21(r13)
 /* 802C7574 002C4374  2C 00 00 00 */	cmpwi r0, 0
 /* 802C7578 002C4378  40 82 00 1C */	bne lbl_802C7594
 /* 802C757C 002C437C  38 9F 00 00 */	addi r4, r31, 0
@@ -6863,7 +6863,7 @@ ddh_cc_read:
 /* 802C7618 002C4418  7C 7B 1B 78 */	mr r27, r3
 /* 802C761C 002C441C  7C 9E 23 78 */	mr r30, r4
 /* 802C7620 002C4420  3B A0 00 00 */	li r29, 0
-/* 802C7624 002C4424  80 0D E8 48 */	lwz r0, gIsInitialized-_SDA_BASE_(r13)
+/* 802C7624 002C4424  80 0D E8 48 */	lwz r0, gIsInitialized@sda21(r13)
 /* 802C7628 002C4428  2C 00 00 00 */	cmpwi r0, 0
 /* 802C762C 002C442C  40 82 00 0C */	bne lbl_802C7638
 /* 802C7630 002C4430  38 60 D8 EF */	li r3, -10001
@@ -6929,7 +6929,7 @@ ddh_cc_close:
 
 .global ddh_cc_open
 ddh_cc_open:
-/* 802C76FC 002C44FC  80 0D E8 48 */	lwz r0, gIsInitialized-_SDA_BASE_(r13)
+/* 802C76FC 002C44FC  80 0D E8 48 */	lwz r0, gIsInitialized@sda21(r13)
 /* 802C7700 002C4500  2C 00 00 00 */	cmpwi r0, 0
 /* 802C7704 002C4504  41 82 00 0C */	beq lbl_802C7710
 /* 802C7708 002C4508  38 60 D8 EB */	li r3, -10005
@@ -6937,7 +6937,7 @@ ddh_cc_open:
 lbl_802C7710:
 /* 802C7710 002C4510  38 00 00 01 */	li r0, 1
 /* 802C7714 002C4514  38 60 00 00 */	li r3, 0
-/* 802C7718 002C4518  90 0D E8 48 */	stw r0, gIsInitialized-_SDA_BASE_(r13)
+/* 802C7718 002C4518  90 0D E8 48 */	stw r0, gIsInitialized@sda21(r13)
 /* 802C771C 002C451C  4E 80 00 20 */	blr 
 
 .global ddh_cc_shutdown
@@ -7241,7 +7241,7 @@ gdev_cc_write:
 /* 802C7B10 002C4910  7C 9E 23 78 */	mr r30, r4
 /* 802C7B14 002C4914  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 802C7B18 002C4918  7C 7D 1B 78 */	mr r29, r3
-/* 802C7B1C 002C491C  80 0D E8 50 */	lwz r0, gIsInitialized_0-_SDA_BASE_(r13)
+/* 802C7B1C 002C491C  80 0D E8 50 */	lwz r0, gIsInitialized_0@sda21(r13)
 /* 802C7B20 002C4920  2C 00 00 00 */	cmpwi r0, 0
 /* 802C7B24 002C4924  40 82 00 1C */	bne lbl_802C7B40
 /* 802C7B28 002C4928  38 9F 00 00 */	addi r4, r31, 0
@@ -7294,7 +7294,7 @@ gdev_cc_read:
 /* 802C7BC4 002C49C4  7C 7A 1B 78 */	mr r26, r3
 /* 802C7BC8 002C49C8  7C 9B 23 78 */	mr r27, r4
 /* 802C7BCC 002C49CC  3B 80 00 00 */	li r28, 0
-/* 802C7BD0 002C49D0  80 0D E8 50 */	lwz r0, gIsInitialized_0-_SDA_BASE_(r13)
+/* 802C7BD0 002C49D0  80 0D E8 50 */	lwz r0, gIsInitialized_0@sda21(r13)
 /* 802C7BD4 002C49D4  2C 00 00 00 */	cmpwi r0, 0
 /* 802C7BD8 002C49D8  40 82 00 0C */	bne lbl_802C7BE4
 /* 802C7BDC 002C49DC  38 60 D8 EF */	li r3, -10001
@@ -7362,7 +7362,7 @@ gdev_cc_close:
 
 .global gdev_cc_open
 gdev_cc_open:
-/* 802C7CB0 002C4AB0  80 0D E8 50 */	lwz r0, gIsInitialized_0-_SDA_BASE_(r13)
+/* 802C7CB0 002C4AB0  80 0D E8 50 */	lwz r0, gIsInitialized_0@sda21(r13)
 /* 802C7CB4 002C4AB4  2C 00 00 00 */	cmpwi r0, 0
 /* 802C7CB8 002C4AB8  41 82 00 0C */	beq lbl_802C7CC4
 /* 802C7CBC 002C4ABC  38 60 D8 EB */	li r3, -10005
@@ -7370,7 +7370,7 @@ gdev_cc_open:
 lbl_802C7CC4:
 /* 802C7CC4 002C4AC4  38 00 00 01 */	li r0, 1
 /* 802C7CC8 002C4AC8  38 60 00 00 */	li r3, 0
-/* 802C7CCC 002C4ACC  90 0D E8 50 */	stw r0, gIsInitialized_0-_SDA_BASE_(r13)
+/* 802C7CCC 002C4ACC  90 0D E8 50 */	stw r0, gIsInitialized_0@sda21(r13)
 /* 802C7CD0 002C4AD0  4E 80 00 20 */	blr 
 
 .global gdev_cc_shutdown

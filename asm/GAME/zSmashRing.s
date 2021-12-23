@@ -609,7 +609,7 @@ lbl_801F71A8:
 /* 801F71CC 001F3FCC  3B 9C 00 02 */	addi r28, r28, 2
 /* 801F71D0 001F3FD0  42 00 FF D8 */	bdnz lbl_801F71A8
 lbl_801F71D4:
-/* 801F71D4 001F3FD4  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 801F71D4 001F3FD4  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 801F71D8 001F3FD8  57 04 10 3A */	slwi r4, r24, 2
 /* 801F71DC 001F3FDC  38 04 00 10 */	addi r0, r4, 0x10
 /* 801F71E0 001F3FE0  7F 1B C3 78 */	mr r27, r24
@@ -640,8 +640,8 @@ lbl_801F7214:
 /* 801F7240 001F4040  C3 1A 00 48 */	lfs f24, 0x48(r26)
 /* 801F7244 001F4044  C2 FA 00 44 */	lfs f23, 0x44(r26)
 /* 801F7248 001F4048  C2 DA 00 3C */	lfs f22, 0x3c(r26)
-/* 801F724C 001F404C  C2 A2 D9 20 */	lfs f21, _esc__2_1141_1-_SDA2_BASE_(r2)
-/* 801F7250 001F4050  C2 82 D9 24 */	lfs f20, _esc__2_1142_2-_SDA2_BASE_(r2)
+/* 801F724C 001F404C  C2 A2 D9 20 */	lfs f21, _esc__2_1141_1@sda21(r2)
+/* 801F7250 001F4050  C2 82 D9 24 */	lfs f20, _esc__2_1142_2@sda21(r2)
 /* 801F7254 001F4054  41 82 00 24 */	beq lbl_801F7278
 /* 801F7258 001F4058  FC 20 F0 90 */	fmr f1, f30
 /* 801F725C 001F405C  7F E3 FB 78 */	mr r3, r31
@@ -663,7 +663,7 @@ lbl_801F7288:
 /* 801F7294 001F4094  EC 7B FD 3A */	fmadds f3, f27, f20, f31
 /* 801F7298 001F4098  4B E1 65 41 */	bl assign__5xVec3Ffff
 /* 801F729C 001F409C  FC 40 B0 90 */	fmr f2, f22
-/* 801F72A0 001F40A0  C0 22 D9 20 */	lfs f1, _esc__2_1141_1-_SDA2_BASE_(r2)
+/* 801F72A0 001F40A0  C0 22 D9 20 */	lfs f1, _esc__2_1141_1@sda21(r2)
 /* 801F72A4 001F40A4  7F C3 F3 78 */	mr r3, r30
 /* 801F72A8 001F40A8  4B E1 90 A1 */	bl assign__5xVec2Fff
 /* 801F72AC 001F40AC  FC 40 E0 90 */	fmr f2, f28
@@ -673,7 +673,7 @@ lbl_801F7288:
 /* 801F72BC 001F40BC  EC 7A FD 3A */	fmadds f3, f26, f20, f31
 /* 801F72C0 001F40C0  4B E1 65 19 */	bl assign__5xVec3Ffff
 /* 801F72C4 001F40C4  FC 40 B0 90 */	fmr f2, f22
-/* 801F72C8 001F40C8  C0 22 D9 24 */	lfs f1, _esc__2_1142_2-_SDA2_BASE_(r2)
+/* 801F72C8 001F40C8  C0 22 D9 24 */	lfs f1, _esc__2_1142_2@sda21(r2)
 /* 801F72CC 001F40CC  38 7E 00 08 */	addi r3, r30, 8
 /* 801F72D0 001F40D0  3B FF 00 18 */	addi r31, r31, 0x18
 /* 801F72D4 001F40D4  4B E1 90 75 */	bl assign__5xVec2Fff
@@ -695,7 +695,7 @@ lbl_801F72FC:
 /* 801F7310 001F4110  EC 7F D8 2A */	fadds f3, f31, f27
 /* 801F7314 001F4114  4B E1 64 C5 */	bl assign__5xVec3Ffff
 /* 801F7318 001F4118  FC 40 B0 90 */	fmr f2, f22
-/* 801F731C 001F411C  C0 22 D9 20 */	lfs f1, _esc__2_1141_1-_SDA2_BASE_(r2)
+/* 801F731C 001F411C  C0 22 D9 20 */	lfs f1, _esc__2_1141_1@sda21(r2)
 /* 801F7320 001F4120  7F C3 F3 78 */	mr r3, r30
 /* 801F7324 001F4124  4B E1 90 25 */	bl assign__5xVec2Fff
 /* 801F7328 001F4128  EF FF D0 2A */	fadds f31, f31, f26
@@ -706,7 +706,7 @@ lbl_801F72FC:
 /* 801F733C 001F413C  FC 60 F8 90 */	fmr f3, f31
 /* 801F7340 001F4140  4B E1 64 99 */	bl assign__5xVec3Ffff
 /* 801F7344 001F4144  FC 40 B0 90 */	fmr f2, f22
-/* 801F7348 001F4148  C0 22 D9 24 */	lfs f1, _esc__2_1142_2-_SDA2_BASE_(r2)
+/* 801F7348 001F4148  C0 22 D9 24 */	lfs f1, _esc__2_1142_2@sda21(r2)
 /* 801F734C 001F414C  38 7E 00 08 */	addi r3, r30, 8
 /* 801F7350 001F4150  3B FF 00 18 */	addi r31, r31, 0x18
 /* 801F7354 001F4154  4B E1 8F F5 */	bl assign__5xVec2Fff
@@ -795,7 +795,7 @@ zSmashRingSceneEnter__Fv:
 /* 801F7480 001F4280  2C 00 00 00 */	cmpwi r0, 0
 /* 801F7484 001F4284  41 81 00 10 */	bgt lbl_801F7494
 /* 801F7488 001F4288  38 00 00 00 */	li r0, 0
-/* 801F748C 001F428C  90 0D DF B0 */	stw r0, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F748C 001F428C  90 0D DF B0 */	stw r0, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F7490 001F4290  48 00 00 34 */	b lbl_801F74C4
 lbl_801F7494:
 /* 801F7494 001F4294  38 60 00 AC */	li r3, 0xac
@@ -810,9 +810,9 @@ lbl_801F7494:
 /* 801F74B8 001F42B8  4B FF F5 F5 */	bl __ct__Q224_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_11module_typeFiib
 /* 801F74BC 001F42BC  7C 60 1B 78 */	mr r0, r3
 lbl_801F74C0:
-/* 801F74C0 001F42C0  90 0D DF B0 */	stw r0, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F74C0 001F42C0  90 0D DF B0 */	stw r0, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 lbl_801F74C4:
-/* 801F74C4 001F42C4  80 0D DF B0 */	lwz r0, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F74C4 001F42C4  80 0D DF B0 */	lwz r0, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F74C8 001F42C8  28 00 00 00 */	cmplwi r0, 0
 /* 801F74CC 001F42CC  41 82 00 08 */	beq lbl_801F74D4
 /* 801F74D0 001F42D0  4B FF F5 7D */	bl add_tweaks__Q224_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_5tweakFv
@@ -824,7 +824,7 @@ lbl_801F74D4:
 
 .global zSmashRingSceneExit__Fv
 zSmashRingSceneExit__Fv:
-/* 801F74E4 001F42E4  80 0D DF B0 */	lwz r0, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F74E4 001F42E4  80 0D DF B0 */	lwz r0, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F74E8 001F42E8  28 00 00 00 */	cmplwi r0, 0
 /* 801F74EC 001F42EC  4E 80 00 20 */	blr 
 
@@ -833,7 +833,7 @@ zSmashRingReset__Fv:
 /* 801F74F0 001F42F0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F74F4 001F42F4  7C 08 02 A6 */	mflr r0
 /* 801F74F8 001F42F8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F74FC 001F42FC  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F74FC 001F42FC  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F7500 001F4300  28 03 00 00 */	cmplwi r3, 0
 /* 801F7504 001F4304  41 82 00 08 */	beq lbl_801F750C
 /* 801F7508 001F4308  4B FF F6 49 */	bl reset__Q224_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_11module_typeFv
@@ -848,7 +848,7 @@ zSmashRingUpdate__Ff:
 /* 801F751C 001F431C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F7520 001F4320  7C 08 02 A6 */	mflr r0
 /* 801F7524 001F4324  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F7528 001F4328  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F7528 001F4328  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F752C 001F432C  28 03 00 00 */	cmplwi r3, 0
 /* 801F7530 001F4330  41 82 00 08 */	beq lbl_801F7538
 /* 801F7534 001F4334  4B FF F6 A5 */	bl update__Q224_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_11module_typeFf
@@ -863,7 +863,7 @@ zSmashRingRender__Fv:
 /* 801F7548 001F4348  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F754C 001F434C  7C 08 02 A6 */	mflr r0
 /* 801F7550 001F4350  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F7554 001F4354  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F7554 001F4354  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F7558 001F4358  28 03 00 00 */	cmplwi r3, 0
 /* 801F755C 001F435C  41 82 00 08 */	beq lbl_801F7564
 /* 801F7560 001F4360  4B FF F7 01 */	bl render__Q224_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_11module_typeFv
@@ -892,12 +892,12 @@ start__17zSmashRingEmitterFRCQ217zSmashRingEmitter11config_typeRC5xVec3:
 /* 801F75A0 001F43A0  7C BD 2B 78 */	mr r29, r5
 /* 801F75A4 001F43A4  48 00 06 7D */	bl activate__17zSmashRingEmitterFv
 /* 801F75A8 001F43A8  80 7E 00 00 */	lwz r3, 0(r30)
-/* 801F75AC 001F43AC  C0 02 D9 20 */	lfs f0, _esc__2_1141_1-_SDA2_BASE_(r2)
+/* 801F75AC 001F43AC  C0 02 D9 20 */	lfs f0, _esc__2_1141_1@sda21(r2)
 /* 801F75B0 001F43B0  93 E3 00 04 */	stw r31, 4(r3)
 /* 801F75B4 001F43B4  80 9F 00 00 */	lwz r4, 0(r31)
 /* 801F75B8 001F43B8  80 7E 00 00 */	lwz r3, 0(r30)
 /* 801F75BC 001F43BC  D0 03 00 14 */	stfs f0, 0x14(r3)
-/* 801F75C0 001F43C0  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F75C0 001F43C0  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F75C4 001F43C4  4B FF F6 C9 */	bl get_raster_id__Q224_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_11module_typeFUi
 /* 801F75C8 001F43C8  80 BE 00 00 */	lwz r5, 0(r30)
 /* 801F75CC 001F43CC  7F A4 EB 78 */	mr r4, r29
@@ -905,12 +905,12 @@ start__17zSmashRingEmitterFRCQ217zSmashRingEmitter11config_typeRC5xVec3:
 /* 801F75D4 001F43D4  80 7E 00 00 */	lwz r3, 0(r30)
 /* 801F75D8 001F43D8  38 63 00 18 */	addi r3, r3, 0x18
 /* 801F75DC 001F43DC  4B E1 3A CD */	bl __as__5xVec3FRC5xVec3
-/* 801F75E0 001F43E0  C0 22 D9 24 */	lfs f1, _esc__2_1142_2-_SDA2_BASE_(r2)
+/* 801F75E0 001F43E0  C0 22 D9 24 */	lfs f1, _esc__2_1142_2@sda21(r2)
 /* 801F75E4 001F43E4  38 00 00 00 */	li r0, 0
 /* 801F75E8 001F43E8  C0 1F 00 10 */	lfs f0, 0x10(r31)
 /* 801F75EC 001F43EC  80 7E 00 00 */	lwz r3, 0(r30)
 /* 801F75F0 001F43F0  EC 61 00 24 */	fdivs f3, f1, f0
-/* 801F75F4 001F43F4  C0 22 D9 28 */	lfs f1, _esc__2_1196_1-_SDA2_BASE_(r2)
+/* 801F75F4 001F43F4  C0 22 D9 28 */	lfs f1, _esc__2_1196_1@sda21(r2)
 /* 801F75F8 001F43F8  90 03 00 10 */	stw r0, 0x10(r3)
 /* 801F75FC 001F43FC  C0 1F 00 18 */	lfs f0, 0x18(r31)
 /* 801F7600 001F4400  80 7E 00 00 */	lwz r3, 0(r30)
@@ -933,14 +933,14 @@ start__17zSmashRingEmitterFRCQ217zSmashRingEmitter11config_typeRC5xVec3:
 /* 801F7644 001F4444  90 01 00 1C */	stw r0, 0x1c(r1)
 /* 801F7648 001F4448  C0 1F 00 24 */	lfs f0, 0x24(r31)
 /* 801F764C 001F444C  90 61 00 18 */	stw r3, 0x18(r1)
-/* 801F7650 001F4450  C8 82 D9 38 */	lfd f4, _esc__2_1214_1-_SDA2_BASE_(r2)
+/* 801F7650 001F4450  C8 82 D9 38 */	lfd f4, _esc__2_1214_1@sda21(r2)
 /* 801F7654 001F4454  FC E0 00 50 */	fneg f7, f0
 /* 801F7658 001F4458  C8 01 00 18 */	lfd f0, 0x18(r1)
 /* 801F765C 001F445C  90 81 00 0C */	stw r4, 0xc(r1)
 /* 801F7660 001F4460  EC 00 20 28 */	fsubs f0, f0, f4
-/* 801F7664 001F4464  C0 42 D9 30 */	lfs f2, _esc__2_1210_0-_SDA2_BASE_(r2)
+/* 801F7664 001F4464  C0 42 D9 30 */	lfs f2, _esc__2_1210_0@sda21(r2)
 /* 801F7668 001F4468  90 61 00 08 */	stw r3, 8(r1)
-/* 801F766C 001F446C  C0 C2 D9 2C */	lfs f6, _esc__2_1209-_SDA2_BASE_(r2)
+/* 801F766C 001F446C  C0 C2 D9 2C */	lfs f6, _esc__2_1209@sda21(r2)
 /* 801F7670 001F4470  C8 61 00 08 */	lfd f3, 8(r1)
 /* 801F7674 001F4474  EF E2 00 24 */	fdivs f31, f2, f0
 /* 801F7678 001F4478  D0 25 00 2C */	stfs f1, 0x2c(r5)
@@ -968,11 +968,11 @@ start__17zSmashRingEmitterFRCQ217zSmashRingEmitter11config_typeRC5xVec3:
 /* 801F76D0 001F44D0  D0 23 00 40 */	stfs f1, 0x40(r3)
 /* 801F76D4 001F44D4  FC 20 F8 90 */	fmr f1, f31
 /* 801F76D8 001F44D8  4B E7 F1 11 */	bl isin__Ff
-/* 801F76DC 001F44DC  C0 42 D9 24 */	lfs f2, _esc__2_1142_2-_SDA2_BASE_(r2)
+/* 801F76DC 001F44DC  C0 42 D9 24 */	lfs f2, _esc__2_1142_2@sda21(r2)
 /* 801F76E0 001F44E0  C0 1F 00 18 */	lfs f0, 0x18(r31)
 /* 801F76E4 001F44E4  80 7E 00 00 */	lwz r3, 0(r30)
 /* 801F76E8 001F44E8  EC 02 00 24 */	fdivs f0, f2, f0
-/* 801F76EC 001F44EC  C0 42 D9 28 */	lfs f2, _esc__2_1196_1-_SDA2_BASE_(r2)
+/* 801F76EC 001F44EC  C0 42 D9 28 */	lfs f2, _esc__2_1196_1@sda21(r2)
 /* 801F76F0 001F44F0  D0 23 00 44 */	stfs f1, 0x44(r3)
 /* 801F76F4 001F44F4  80 7E 00 00 */	lwz r3, 0(r30)
 /* 801F76F8 001F44F8  D0 03 00 4C */	stfs f0, 0x4c(r3)
@@ -991,10 +991,10 @@ start__17zSmashRingEmitterFRCQ217zSmashRingEmitter11config_typeRC5xVec3:
 /* 801F772C 001F452C  EC 01 00 28 */	fsubs f0, f1, f0
 /* 801F7730 001F4530  88 1F 00 33 */	lbz r0, 0x33(r31)
 /* 801F7734 001F4534  C0 25 00 24 */	lfs f1, 0x24(r5)
-/* 801F7738 001F4538  C0 62 D9 24 */	lfs f3, _esc__2_1142_2-_SDA2_BASE_(r2)
+/* 801F7738 001F4538  C0 62 D9 24 */	lfs f3, _esc__2_1142_2@sda21(r2)
 /* 801F773C 001F453C  EC 01 00 32 */	fmuls f0, f1, f0
 /* 801F7740 001F4540  90 81 00 24 */	stw r4, 0x24(r1)
-/* 801F7744 001F4544  C8 42 D9 40 */	lfd f2, _esc__2_1218_1-_SDA2_BASE_(r2)
+/* 801F7744 001F4544  C8 42 D9 40 */	lfd f2, _esc__2_1218_1@sda21(r2)
 /* 801F7748 001F4548  90 61 00 20 */	stw r3, 0x20(r1)
 /* 801F774C 001F454C  EC 63 00 24 */	fdivs f3, f3, f0
 /* 801F7750 001F4550  C8 21 00 20 */	lfd f1, 0x20(r1)
@@ -1088,11 +1088,11 @@ lbl_801F789C:
 /* 801F789C 001F469C  EC 39 05 F2 */	fmuls f1, f25, f23
 /* 801F78A0 001F46A0  4B E1 8D 05 */	bl xexp__Ff
 /* 801F78A4 001F46A4  EE DA 00 72 */	fmuls f22, f26, f1
-/* 801F78A8 001F46A8  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F78A8 001F46A8  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F78AC 001F46AC  48 00 02 09 */	bl rings_full__Q224_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_11module_typeCFv
 /* 801F78B0 001F46B0  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801F78B4 001F46B4  40 82 01 60 */	bne lbl_801F7A14
-/* 801F78B8 001F46B8  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F78B8 001F46B8  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F78BC 001F46BC  4B FF F5 D9 */	bl alloc_ring__Q224_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_11module_typeFv
 /* 801F78C0 001F46C0  80 DE 00 00 */	lwz r6, 0(r30)
 /* 801F78C4 001F46C4  7C 7F 1B 78 */	mr r31, r3
@@ -1238,11 +1238,11 @@ rings_full__Q224_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_11module_typeCFv:
 
 .global alloc_activity__17zSmashRingEmitterFv
 alloc_activity__17zSmashRingEmitterFv:
-/* 801F7AD0 001F48D0  80 8D DF B0 */	lwz r4, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F7AD0 001F48D0  80 8D DF B0 */	lwz r4, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F7AD4 001F48D4  80 64 00 9C */	lwz r3, 0x9c(r4)
 /* 801F7AD8 001F48D8  38 03 00 01 */	addi r0, r3, 1
 /* 801F7ADC 001F48DC  90 04 00 9C */	stw r0, 0x9c(r4)
-/* 801F7AE0 001F48E0  80 8D DF B0 */	lwz r4, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F7AE0 001F48E0  80 8D DF B0 */	lwz r4, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F7AE4 001F48E4  80 64 00 9C */	lwz r3, 0x9c(r4)
 /* 801F7AE8 001F48E8  80 84 00 94 */	lwz r4, 0x94(r4)
 /* 801F7AEC 001F48EC  38 03 FF FF */	addi r0, r3, -1
@@ -1257,11 +1257,11 @@ free_activity__17zSmashRingEmitterFPQ217zSmashRingEmitter13activity_data:
 /* 801F7B04 001F4904  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801F7B08 001F4908  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801F7B0C 001F490C  7C 7F 1B 78 */	mr r31, r3
-/* 801F7B10 001F4910  80 AD DF B0 */	lwz r5, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F7B10 001F4910  80 AD DF B0 */	lwz r5, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F7B14 001F4914  80 85 00 9C */	lwz r4, 0x9c(r5)
 /* 801F7B18 001F4918  38 04 FF FF */	addi r0, r4, -1
 /* 801F7B1C 001F491C  90 05 00 9C */	stw r0, 0x9c(r5)
-/* 801F7B20 001F4920  80 8D DF B0 */	lwz r4, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F7B20 001F4920  80 8D DF B0 */	lwz r4, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F7B24 001F4924  80 04 00 9C */	lwz r0, 0x9c(r4)
 /* 801F7B28 001F4928  80 84 00 94 */	lwz r4, 0x94(r4)
 /* 801F7B2C 001F492C  1C 00 00 60 */	mulli r0, r0, 0x60
@@ -1340,7 +1340,7 @@ activate__17zSmashRingEmitterFv:
 /* 801F7C34 001F4A34  48 00 00 9D */	bl active__17zSmashRingEmitterCFv
 /* 801F7C38 001F4A38  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801F7C3C 001F4A3C  40 82 00 38 */	bne lbl_801F7C74
-/* 801F7C40 001F4A40  80 8D DF B0 */	lwz r4, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F7C40 001F4A40  80 8D DF B0 */	lwz r4, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F7C44 001F4A44  80 64 00 9C */	lwz r3, 0x9c(r4)
 /* 801F7C48 001F4A48  80 04 00 98 */	lwz r0, 0x98(r4)
 /* 801F7C4C 001F4A4C  7C 03 00 00 */	cmpw r3, r0
@@ -1349,7 +1349,7 @@ activate__17zSmashRingEmitterFv:
 /* 801F7C58 001F4A58  90 7F 00 00 */	stw r3, 0(r31)
 /* 801F7C5C 001F4A5C  80 7F 00 00 */	lwz r3, 0(r31)
 /* 801F7C60 001F4A60  93 E3 00 00 */	stw r31, 0(r3)
-/* 801F7C64 001F4A64  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F7C64 001F4A64  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F7C68 001F4A68  4B FF F1 4D */	bl alloc_emitter_id__Q224_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_11module_typeFv
 /* 801F7C6C 001F4A6C  80 9F 00 00 */	lwz r4, 0(r31)
 /* 801F7C70 001F4A70  90 64 00 0C */	stw r3, 0xc(r4)
@@ -1368,7 +1368,7 @@ deactivate__17zSmashRingEmitterFv:
 /* 801F7C94 001F4A94  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801F7C98 001F4A98  7C 7F 1B 78 */	mr r31, r3
 /* 801F7C9C 001F4A9C  80 9F 00 00 */	lwz r4, 0(r31)
-/* 801F7CA0 001F4AA0  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F7CA0 001F4AA0  80 6D DF B0 */	lwz r3, module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_@sda21(r13)
 /* 801F7CA4 001F4AA4  80 84 00 0C */	lwz r4, 0xc(r4)
 /* 801F7CA8 001F4AA8  4B FF F1 2D */	bl free_emitter_id__Q224_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_11module_typeFi
 /* 801F7CAC 001F4AAC  80 7F 00 00 */	lwz r3, 0(r31)

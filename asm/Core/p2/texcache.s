@@ -47,29 +47,29 @@ TexRegionCallback__FPC9_GXTexObj11_GXTexMapID:
 /* 801D83AC 001D51AC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801D83B0 001D51B0  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801D83B4 001D51B4  7C 7E 1B 78 */	mr r30, r3
-/* 801D83B8 001D51B8  88 0D DB 24 */	lbz r0, init_esc__7_280-_SDA_BASE_(r13)
+/* 801D83B8 001D51B8  88 0D DB 24 */	lbz r0, init_esc__7_280@sda21(r13)
 /* 801D83BC 001D51BC  7C 00 07 75 */	extsb. r0, r0
 /* 801D83C0 001D51C0  40 82 00 14 */	bne lbl_801D83D4
 /* 801D83C4 001D51C4  38 60 00 00 */	li r3, 0
 /* 801D83C8 001D51C8  38 00 00 01 */	li r0, 1
-/* 801D83CC 001D51CC  90 6D DB 20 */	stw r3, count_esc__7_279-_SDA_BASE_(r13)
-/* 801D83D0 001D51D0  98 0D DB 24 */	stb r0, init_esc__7_280-_SDA_BASE_(r13)
+/* 801D83CC 001D51CC  90 6D DB 20 */	stw r3, count_esc__7_279@sda21(r13)
+/* 801D83D0 001D51D0  98 0D DB 24 */	stb r0, init_esc__7_280@sda21(r13)
 lbl_801D83D4:
-/* 801D83D4 001D51D4  88 0D DB 2C */	lbz r0, init_esc__7_283-_SDA_BASE_(r13)
+/* 801D83D4 001D51D4  88 0D DB 2C */	lbz r0, init_esc__7_283@sda21(r13)
 /* 801D83D8 001D51D8  7C 00 07 75 */	extsb. r0, r0
 /* 801D83DC 001D51DC  40 82 00 14 */	bne lbl_801D83F0
 /* 801D83E0 001D51E0  38 60 00 00 */	li r3, 0
 /* 801D83E4 001D51E4  38 00 00 01 */	li r0, 1
-/* 801D83E8 001D51E8  90 6D DB 28 */	stw r3, countCI_esc__7_282-_SDA_BASE_(r13)
-/* 801D83EC 001D51EC  98 0D DB 2C */	stb r0, init_esc__7_283-_SDA_BASE_(r13)
+/* 801D83E8 001D51E8  90 6D DB 28 */	stw r3, countCI_esc__7_282@sda21(r13)
+/* 801D83EC 001D51EC  98 0D DB 2C */	stb r0, init_esc__7_283@sda21(r13)
 lbl_801D83F0:
-/* 801D83F0 001D51F0  88 0D DB 34 */	lbz r0, init_esc__7_286-_SDA_BASE_(r13)
+/* 801D83F0 001D51F0  88 0D DB 34 */	lbz r0, init_esc__7_286@sda21(r13)
 /* 801D83F4 001D51F4  7C 00 07 75 */	extsb. r0, r0
 /* 801D83F8 001D51F8  40 82 00 14 */	bne lbl_801D840C
 /* 801D83FC 001D51FC  38 60 00 00 */	li r3, 0
 /* 801D8400 001D5200  38 00 00 01 */	li r0, 1
-/* 801D8404 001D5204  90 6D DB 30 */	stw r3, count32B_esc__7_285-_SDA_BASE_(r13)
-/* 801D8408 001D5208  98 0D DB 34 */	stb r0, init_esc__7_286-_SDA_BASE_(r13)
+/* 801D8404 001D5204  90 6D DB 30 */	stw r3, count32B_esc__7_285@sda21(r13)
+/* 801D8408 001D5208  98 0D DB 34 */	stb r0, init_esc__7_286@sda21(r13)
 lbl_801D840C:
 /* 801D840C 001D520C  7F C3 F3 78 */	mr r3, r30
 /* 801D8410 001D5210  48 05 35 D5 */	bl GXGetTexObjFmt
@@ -80,11 +80,11 @@ lbl_801D840C:
 /* 801D8424 001D5224  48 05 35 C9 */	bl GXGetTexObjMipMap
 /* 801D8428 001D5228  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801D842C 001D522C  41 82 00 20 */	beq lbl_801D844C
-/* 801D8430 001D5230  80 AD DB 30 */	lwz r5, count32B_esc__7_285-_SDA_BASE_(r13)
-/* 801D8434 001D5234  38 6D DA E0 */	addi r3, r13, Mipmap32Regions-_SDA_BASE_
+/* 801D8430 001D5230  80 AD DB 30 */	lwz r5, count32B_esc__7_285@sda21(r13)
+/* 801D8434 001D5234  38 6D DA E0 */	addi r3, r13, Mipmap32Regions@sda21
 /* 801D8438 001D5238  38 85 00 01 */	addi r4, r5, 1
 /* 801D843C 001D523C  54 A0 26 F6 */	rlwinm r0, r5, 4, 0x1b, 0x1b
-/* 801D8440 001D5240  90 8D DB 30 */	stw r4, count32B_esc__7_285-_SDA_BASE_(r13)
+/* 801D8440 001D5240  90 8D DB 30 */	stw r4, count32B_esc__7_285@sda21(r13)
 /* 801D8444 001D5244  7C 63 02 14 */	add r3, r3, r0
 /* 801D8448 001D5248  48 00 00 54 */	b lbl_801D849C
 lbl_801D844C:
@@ -94,20 +94,20 @@ lbl_801D844C:
 /* 801D8458 001D5258  41 82 00 2C */	beq lbl_801D8484
 /* 801D845C 001D525C  2C 1F 00 0A */	cmpwi r31, 0xa
 /* 801D8460 001D5260  41 82 00 24 */	beq lbl_801D8484
-/* 801D8464 001D5264  80 AD DB 20 */	lwz r5, count_esc__7_279-_SDA_BASE_(r13)
+/* 801D8464 001D5264  80 AD DB 20 */	lwz r5, count_esc__7_279@sda21(r13)
 /* 801D8468 001D5268  3C 60 80 3A */	lis r3, StandardRegions@ha
 /* 801D846C 001D526C  38 03 F4 40 */	addi r0, r3, StandardRegions@l
 /* 801D8470 001D5270  38 85 00 01 */	addi r4, r5, 1
 /* 801D8474 001D5274  54 A3 26 76 */	rlwinm r3, r5, 4, 0x19, 0x1b
-/* 801D8478 001D5278  90 8D DB 20 */	stw r4, count_esc__7_279-_SDA_BASE_(r13)
+/* 801D8478 001D5278  90 8D DB 20 */	stw r4, count_esc__7_279@sda21(r13)
 /* 801D847C 001D527C  7C 60 1A 14 */	add r3, r0, r3
 /* 801D8480 001D5280  48 00 00 1C */	b lbl_801D849C
 lbl_801D8484:
-/* 801D8484 001D5284  80 AD DB 28 */	lwz r5, countCI_esc__7_282-_SDA_BASE_(r13)
-/* 801D8488 001D5288  38 6D DB 00 */	addi r3, r13, CIRegions-_SDA_BASE_
+/* 801D8484 001D5284  80 AD DB 28 */	lwz r5, countCI_esc__7_282@sda21(r13)
+/* 801D8488 001D5288  38 6D DB 00 */	addi r3, r13, CIRegions@sda21
 /* 801D848C 001D528C  38 85 00 01 */	addi r4, r5, 1
 /* 801D8490 001D5290  54 A0 26 F6 */	rlwinm r0, r5, 4, 0x1b, 0x1b
-/* 801D8494 001D5294  90 8D DB 28 */	stw r4, countCI_esc__7_282-_SDA_BASE_(r13)
+/* 801D8494 001D5294  90 8D DB 28 */	stw r4, countCI_esc__7_282@sda21(r13)
 /* 801D8498 001D5298  7C 63 02 14 */	add r3, r3, r0
 lbl_801D849C:
 /* 801D849C 001D529C  BB C1 00 08 */	lmw r30, 8(r1)
@@ -161,7 +161,7 @@ lbl_801D8504:
 /* 801D8540 001D5340  3B A0 00 00 */	li r29, 0
 /* 801D8544 001D5344  3B E0 00 00 */	li r31, 0
 lbl_801D8548:
-/* 801D8548 001D5348  38 6D DA E0 */	addi r3, r13, Mipmap32Regions-_SDA_BASE_
+/* 801D8548 001D5348  38 6D DA E0 */	addi r3, r13, Mipmap32Regions@sda21
 /* 801D854C 001D534C  7F 85 E3 78 */	mr r5, r28
 /* 801D8550 001D5350  7F 67 DB 78 */	mr r7, r27
 /* 801D8554 001D5354  38 80 00 01 */	li r4, 1
@@ -179,7 +179,7 @@ lbl_801D8548:
 /* 801D8584 001D5384  3B E0 00 00 */	li r31, 0
 lbl_801D8588:
 /* 801D8588 001D5388  3C FC 00 01 */	addis r7, r28, 1
-/* 801D858C 001D538C  38 6D DB 00 */	addi r3, r13, CIRegions-_SDA_BASE_
+/* 801D858C 001D538C  38 6D DB 00 */	addi r3, r13, CIRegions@sda21
 /* 801D8590 001D5390  7F 85 E3 78 */	mr r5, r28
 /* 801D8594 001D5394  38 80 00 00 */	li r4, 0
 /* 801D8598 001D5398  7C 63 FA 14 */	add r3, r3, r31

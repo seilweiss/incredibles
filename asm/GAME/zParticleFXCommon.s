@@ -148,12 +148,12 @@ zParticleFXCommon_EmitEnergyPulse__FfRC5xVec3RC5xVec3ffff:
 /* 801E08DC 001DD6DC  D0 A1 00 0C */	stfs f5, 0xc(r1)
 /* 801E08E0 001DD6E0  38 61 00 1C */	addi r3, r1, 0x1c
 /* 801E08E4 001DD6E4  4B E2 A7 C5 */	bl __as__5xVec3FRC5xVec3
-/* 801E08E8 001DD6E8  C0 02 D3 D0 */	lfs f0, _esc__2_977_2-_SDA2_BASE_(r2)
+/* 801E08E8 001DD6E8  C0 02 D3 D0 */	lfs f0, _esc__2_977_2@sda21(r2)
 /* 801E08EC 001DD6EC  7F E3 FB 78 */	mr r3, r31
-/* 801E08F0 001DD6F0  C0 22 D3 D4 */	lfs f1, _esc__2_978_2-_SDA2_BASE_(r2)
+/* 801E08F0 001DD6F0  C0 22 D3 D4 */	lfs f1, _esc__2_978_2@sda21(r2)
 /* 801E08F4 001DD6F4  38 81 00 44 */	addi r4, r1, 0x44
 /* 801E08F8 001DD6F8  EC 40 07 B2 */	fmuls f2, f0, f30
-/* 801E08FC 001DD6FC  C0 02 D3 C8 */	lfs f0, _esc__2_920_1-_SDA2_BASE_(r2)
+/* 801E08FC 001DD6FC  C0 02 D3 C8 */	lfs f0, _esc__2_920_1@sda21(r2)
 /* 801E0900 001DD700  EC 21 07 B2 */	fmuls f1, f1, f30
 /* 801E0904 001DD704  D3 A1 00 34 */	stfs f29, 0x34(r1)
 /* 801E0908 001DD708  38 A1 00 50 */	addi r5, r1, 0x50
@@ -164,12 +164,12 @@ zParticleFXCommon_EmitEnergyPulse__FfRC5xVec3RC5xVec3ffff:
 /* 801E091C 001DD71C  7F E4 FB 78 */	mr r4, r31
 /* 801E0920 001DD720  38 61 00 38 */	addi r3, r1, 0x38
 /* 801E0924 001DD724  4B E2 A7 85 */	bl __as__5xVec3FRC5xVec3
-/* 801E0928 001DD728  C0 22 D3 D0 */	lfs f1, _esc__2_977_2-_SDA2_BASE_(r2)
+/* 801E0928 001DD728  C0 22 D3 D0 */	lfs f1, _esc__2_977_2@sda21(r2)
 /* 801E092C 001DD72C  38 81 00 08 */	addi r4, r1, 8
-/* 801E0930 001DD730  C0 02 D3 D4 */	lfs f0, _esc__2_978_2-_SDA2_BASE_(r2)
+/* 801E0930 001DD730  C0 02 D3 D4 */	lfs f0, _esc__2_978_2@sda21(r2)
 /* 801E0934 001DD734  38 A1 00 0C */	addi r5, r1, 0xc
 /* 801E0938 001DD738  EC 21 07 F2 */	fmuls f1, f1, f31
-/* 801E093C 001DD73C  38 6D DB C8 */	addi r3, r13, energy_pulse_system-_SDA_BASE_
+/* 801E093C 001DD73C  38 6D DB C8 */	addi r3, r13, energy_pulse_system@sda21
 /* 801E0940 001DD740  EC 00 07 F2 */	fmuls f0, f0, f31
 /* 801E0944 001DD744  D0 21 00 5C */	stfs f1, 0x5c(r1)
 /* 801E0948 001DD748  D0 01 00 60 */	stfs f0, 0x60(r1)
@@ -198,9 +198,9 @@ zParticleFXCommon_EmitRubble__FfRC5xVec3RC5xVec3ffffff:
 /* 801E0998 001DD798  DB A1 00 80 */	stfd f29, 0x80(r1)
 /* 801E099C 001DD79C  F3 A1 00 88 */	psq_st f29, 136(r1), 0, qr0
 /* 801E09A0 001DD7A0  93 E1 00 7C */	stw r31, 0x7c(r1)
-/* 801E09A4 001DD7A4  C1 02 D3 D0 */	lfs f8, _esc__2_977_2-_SDA2_BASE_(r2)
+/* 801E09A4 001DD7A4  C1 02 D3 D0 */	lfs f8, _esc__2_977_2@sda21(r2)
 /* 801E09A8 001DD7A8  7C 9F 23 78 */	mr r31, r4
-/* 801E09AC 001DD7AC  C0 02 D3 D4 */	lfs f0, _esc__2_978_2-_SDA2_BASE_(r2)
+/* 801E09AC 001DD7AC  C0 02 D3 D4 */	lfs f0, _esc__2_978_2@sda21(r2)
 /* 801E09B0 001DD7B0  7C 64 1B 78 */	mr r4, r3
 /* 801E09B4 001DD7B4  ED 08 00 B2 */	fmuls f8, f8, f2
 /* 801E09B8 001DD7B8  D0 21 00 08 */	stfs f1, 8(r1)
@@ -214,7 +214,7 @@ zParticleFXCommon_EmitRubble__FfRC5xVec3RC5xVec3ffffff:
 /* 801E09D8 001DD7D8  D1 01 00 20 */	stfs f8, 0x20(r1)
 /* 801E09DC 001DD7DC  D0 01 00 24 */	stfs f0, 0x24(r1)
 /* 801E09E0 001DD7E0  4B E2 A6 C9 */	bl __as__5xVec3FRC5xVec3
-/* 801E09E4 001DD7E4  C0 02 D3 C8 */	lfs f0, _esc__2_920_1-_SDA2_BASE_(r2)
+/* 801E09E4 001DD7E4  C0 02 D3 C8 */	lfs f0, _esc__2_920_1@sda21(r2)
 /* 801E09E8 001DD7E8  7F E3 FB 78 */	mr r3, r31
 /* 801E09EC 001DD7EC  D3 E1 00 34 */	stfs f31, 0x34(r1)
 /* 801E09F0 001DD7F0  38 81 00 4C */	addi r4, r1, 0x4c
@@ -225,14 +225,14 @@ zParticleFXCommon_EmitRubble__FfRC5xVec3RC5xVec3ffffff:
 /* 801E0A04 001DD804  7F E4 FB 78 */	mr r4, r31
 /* 801E0A08 001DD808  38 61 00 40 */	addi r3, r1, 0x40
 /* 801E0A0C 001DD80C  4B E2 A6 9D */	bl __as__5xVec3FRC5xVec3
-/* 801E0A10 001DD810  C0 02 D3 C8 */	lfs f0, _esc__2_920_1-_SDA2_BASE_(r2)
+/* 801E0A10 001DD810  C0 02 D3 C8 */	lfs f0, _esc__2_920_1@sda21(r2)
 /* 801E0A14 001DD814  FC 20 F0 90 */	fmr f1, f30
 /* 801E0A18 001DD818  D0 01 00 64 */	stfs f0, 0x64(r1)
 /* 801E0A1C 001DD81C  4B E9 5E 11 */	bl icos__Ff
 /* 801E0A20 001DD820  D0 21 00 68 */	stfs f1, 0x68(r1)
 /* 801E0A24 001DD824  38 81 00 08 */	addi r4, r1, 8
 /* 801E0A28 001DD828  38 A1 00 0C */	addi r5, r1, 0xc
-/* 801E0A2C 001DD82C  38 6D DB D4 */	addi r3, r13, rubble_system-_SDA_BASE_
+/* 801E0A2C 001DD82C  38 6D DB D4 */	addi r3, r13, rubble_system@sda21
 /* 801E0A30 001DD830  48 00 07 11 */	bl Emit__221RegisterOnFirstEmitSystem_esc__0_176zParticleEmitterConeSurface_esc__0_144zParticleColorWhiteOpaque_esc__0_114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_12RubbleSystem_esc__1_FRfRQ2176zParticleEmitterConeSurface_esc__0_144zParticleColorWhiteOpaque_esc__0_114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState
 /* 801E0A34 001DD834  E3 E1 00 A8 */	psq_l f31, 168(r1), 0, qr0
 /* 801E0A38 001DD838  CB E1 00 A0 */	lfd f31, 0xa0(r1)
@@ -258,9 +258,9 @@ zParticleFXCommon_EmitFlameCone__FfRC5xVec3RC5xVec3fff:
 /* 801E0A7C 001DD87C  DB A1 00 60 */	stfd f29, 0x60(r1)
 /* 801E0A80 001DD880  F3 A1 00 68 */	psq_st f29, 104(r1), 0, qr0
 /* 801E0A84 001DD884  93 E1 00 5C */	stw r31, 0x5c(r1)
-/* 801E0A88 001DD888  C0 A2 D3 EC */	lfs f5, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E0A88 001DD888  C0 A2 D3 EC */	lfs f5, _esc__2_1006_6@sda21(r2)
 /* 801E0A8C 001DD88C  7C 9F 23 78 */	mr r31, r4
-/* 801E0A90 001DD890  C0 02 D3 F8 */	lfs f0, _esc__2_1012_7-_SDA2_BASE_(r2)
+/* 801E0A90 001DD890  C0 02 D3 F8 */	lfs f0, _esc__2_1012_7@sda21(r2)
 /* 801E0A94 001DD894  FF A0 10 90 */	fmr f29, f2
 /* 801E0A98 001DD898  FF C0 18 90 */	fmr f30, f3
 /* 801E0A9C 001DD89C  D0 21 00 08 */	stfs f1, 8(r1)
@@ -270,9 +270,9 @@ zParticleFXCommon_EmitFlameCone__FfRC5xVec3RC5xVec3fff:
 /* 801E0AAC 001DD8AC  38 61 00 20 */	addi r3, r1, 0x20
 /* 801E0AB0 001DD8B0  D0 01 00 10 */	stfs f0, 0x10(r1)
 /* 801E0AB4 001DD8B4  4B E2 A5 F5 */	bl __as__5xVec3FRC5xVec3
-/* 801E0AB8 001DD8B8  C0 22 D3 C8 */	lfs f1, _esc__2_920_1-_SDA2_BASE_(r2)
+/* 801E0AB8 001DD8B8  C0 22 D3 C8 */	lfs f1, _esc__2_920_1@sda21(r2)
 /* 801E0ABC 001DD8BC  7F E4 FB 78 */	mr r4, r31
-/* 801E0AC0 001DD8C0  C0 02 D3 FC */	lfs f0, _esc__2_1161_2-_SDA2_BASE_(r2)
+/* 801E0AC0 001DD8C0  C0 02 D3 FC */	lfs f0, _esc__2_1161_2@sda21(r2)
 /* 801E0AC4 001DD8C4  38 61 00 44 */	addi r3, r1, 0x44
 /* 801E0AC8 001DD8C8  D3 E1 00 2C */	stfs f31, 0x2c(r1)
 /* 801E0ACC 001DD8CC  D0 21 00 30 */	stfs f1, 0x30(r1)
@@ -292,7 +292,7 @@ zParticleFXCommon_EmitFlameCone__FfRC5xVec3RC5xVec3fff:
 /* 801E0B04 001DD904  EC 01 F8 24 */	fdivs f0, f1, f31
 /* 801E0B08 001DD908  38 81 00 08 */	addi r4, r1, 8
 /* 801E0B0C 001DD90C  38 A1 00 0C */	addi r5, r1, 0xc
-/* 801E0B10 001DD910  38 6D DB E0 */	addi r3, r13, flame_cone_system-_SDA_BASE_
+/* 801E0B10 001DD910  38 6D DB E0 */	addi r3, r13, flame_cone_system@sda21
 /* 801E0B14 001DD914  D0 01 00 50 */	stfs f0, 0x50(r1)
 /* 801E0B18 001DD918  48 00 07 B5 */	bl Emit__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15FlameConeSystem_esc__1_FRfRQ2180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState
 /* 801E0B1C 001DD91C  E3 E1 00 88 */	psq_l f31, 136(r1), 0, qr0
@@ -315,29 +315,29 @@ zParticleFXCommon_EmitLavaDrip__FRfRC5xVec3RC5xVec3f:
 /* 801E0B54 001DD954  DB E1 00 50 */	stfd f31, 0x50(r1)
 /* 801E0B58 001DD958  F3 E1 00 58 */	psq_st f31, 88(r1), 0, qr0
 /* 801E0B5C 001DD95C  93 E1 00 4C */	stw r31, 0x4c(r1)
-/* 801E0B60 001DD960  C0 42 D4 00 */	lfs f2, _esc__2_1184_5-_SDA2_BASE_(r2)
+/* 801E0B60 001DD960  C0 42 D4 00 */	lfs f2, _esc__2_1184_5@sda21(r2)
 /* 801E0B64 001DD964  FF E0 08 90 */	fmr f31, f1
-/* 801E0B68 001DD968  C0 02 D4 04 */	lfs f0, _esc__2_1232_2-_SDA2_BASE_(r2)
+/* 801E0B68 001DD968  C0 02 D4 04 */	lfs f0, _esc__2_1232_2@sda21(r2)
 /* 801E0B6C 001DD96C  7C 7F 1B 78 */	mr r31, r3
 /* 801E0B70 001DD970  D0 41 00 08 */	stfs f2, 8(r1)
 /* 801E0B74 001DD974  38 61 00 1C */	addi r3, r1, 0x1c
-/* 801E0B78 001DD978  C0 22 D4 08 */	lfs f1, _esc__2_1233_2-_SDA2_BASE_(r2)
+/* 801E0B78 001DD978  C0 22 D4 08 */	lfs f1, _esc__2_1233_2@sda21(r2)
 /* 801E0B7C 001DD97C  D0 01 00 0C */	stfs f0, 0xc(r1)
 /* 801E0B80 001DD980  4B E2 B7 25 */	bl xVec3AddScaled__FR5xVec3RC5xVec3RC5xVec3f
-/* 801E0B84 001DD984  C0 22 D3 C8 */	lfs f1, _esc__2_920_1-_SDA2_BASE_(r2)
+/* 801E0B84 001DD984  C0 22 D3 C8 */	lfs f1, _esc__2_920_1@sda21(r2)
 /* 801E0B88 001DD988  38 61 00 38 */	addi r3, r1, 0x38
-/* 801E0B8C 001DD98C  C0 02 D4 0C */	lfs f0, _esc__2_1234_4-_SDA2_BASE_(r2)
+/* 801E0B8C 001DD98C  C0 02 D4 0C */	lfs f0, _esc__2_1234_4@sda21(r2)
 /* 801E0B90 001DD990  FC 60 08 90 */	fmr f3, f1
 /* 801E0B94 001DD994  D3 E1 00 28 */	stfs f31, 0x28(r1)
-/* 801E0B98 001DD998  C0 42 D4 10 */	lfs f2, _esc__2_1235_2-_SDA2_BASE_(r2)
+/* 801E0B98 001DD998  C0 42 D4 10 */	lfs f2, _esc__2_1235_2@sda21(r2)
 /* 801E0B9C 001DD99C  D0 21 00 2C */	stfs f1, 0x2c(r1)
 /* 801E0BA0 001DD9A0  D0 01 00 30 */	stfs f0, 0x30(r1)
 /* 801E0BA4 001DD9A4  D0 21 00 34 */	stfs f1, 0x34(r1)
 /* 801E0BA8 001DD9A8  4B EB 53 39 */	bl xVec3Init__FR5xVec3fff
-/* 801E0BAC 001DD9AC  C0 02 D4 08 */	lfs f0, _esc__2_1233_2-_SDA2_BASE_(r2)
+/* 801E0BAC 001DD9AC  C0 02 D4 08 */	lfs f0, _esc__2_1233_2@sda21(r2)
 /* 801E0BB0 001DD9B0  7F E4 FB 78 */	mr r4, r31
 /* 801E0BB4 001DD9B4  38 A1 00 08 */	addi r5, r1, 8
-/* 801E0BB8 001DD9B8  38 6D DB F8 */	addi r3, r13, lava_drip_system-_SDA_BASE_
+/* 801E0BB8 001DD9B8  38 6D DB F8 */	addi r3, r13, lava_drip_system@sda21
 /* 801E0BBC 001DD9BC  D0 01 00 44 */	stfs f0, 0x44(r1)
 /* 801E0BC0 001DD9C0  48 00 08 99 */	bl Emit__225RegisterOnFirstEmitSystem_esc__0_178zParticleEmitterConeVolume_esc__0_147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_14LavaDripSystem_esc__1_FRfRQ2178zParticleEmitterConeVolume_esc__0_147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState
 /* 801E0BC4 001DD9C4  E3 E1 00 58 */	psq_l f31, 88(r1), 0, qr0
@@ -362,7 +362,7 @@ zParticleFXCommon_EmitSparks__FfRC5xVec3RC5xVec3ffffff:
 /* 801E0C04 001DDA04  DB 81 00 60 */	stfd f28, 0x60(r1)
 /* 801E0C08 001DDA08  F3 81 00 68 */	psq_st f28, 104(r1), 0, qr0
 /* 801E0C0C 001DDA0C  93 E1 00 5C */	stw r31, 0x5c(r1)
-/* 801E0C10 001DDA10  C0 02 D4 00 */	lfs f0, _esc__2_1184_5-_SDA2_BASE_(r2)
+/* 801E0C10 001DDA10  C0 02 D4 00 */	lfs f0, _esc__2_1184_5@sda21(r2)
 /* 801E0C14 001DDA14  7C 9F 23 78 */	mr r31, r4
 /* 801E0C18 001DDA18  FF 80 20 90 */	fmr f28, f4
 /* 801E0C1C 001DDA1C  7C 64 1B 78 */	mr r4, r3
@@ -392,7 +392,7 @@ zParticleFXCommon_EmitSparks__FfRC5xVec3RC5xVec3ffffff:
 /* 801E0C7C 001DDA7C  EC 01 F8 24 */	fdivs f0, f1, f31
 /* 801E0C80 001DDA80  38 81 00 08 */	addi r4, r1, 8
 /* 801E0C84 001DDA84  38 A1 00 0C */	addi r5, r1, 0xc
-/* 801E0C88 001DDA88  38 6D DC 04 */	addi r3, r13, spark_system-_SDA_BASE_
+/* 801E0C88 001DDA88  38 6D DC 04 */	addi r3, r13, spark_system@sda21
 /* 801E0C8C 001DDA8C  D0 01 00 48 */	stfs f0, 0x48(r1)
 /* 801E0C90 001DDA90  48 00 09 55 */	bl Emit__218RegisterOnFirstEmitSystem_esc__0_174zParticleEmitterConeVolume_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_11SparkSystem_esc__1_FRfRQ2174zParticleEmitterConeVolume_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1_9EmitState
 /* 801E0C94 001DDA94  E3 E1 00 98 */	psq_l f31, 152(r1), 0, qr0
@@ -414,7 +414,7 @@ zParticleFXCommon_SceneInit__Fv:
 /* 801E0CC8 001DDAC8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801E0CCC 001DDACC  7C 08 02 A6 */	mflr r0
 /* 801E0CD0 001DDAD0  38 60 00 0C */	li r3, 0xc
-/* 801E0CD4 001DDAD4  38 8D DB C8 */	addi r4, r13, energy_pulse_system-_SDA_BASE_
+/* 801E0CD4 001DDAD4  38 8D DB C8 */	addi r4, r13, energy_pulse_system@sda21
 /* 801E0CD8 001DDAD8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801E0CDC 001DDADC  4B E5 C9 09 */	bl __nw__FUlPv
 /* 801E0CE0 001DDAE0  28 03 00 00 */	cmplwi r3, 0
@@ -422,51 +422,51 @@ zParticleFXCommon_SceneInit__Fv:
 /* 801E0CE8 001DDAE8  48 00 0E E1 */	bl __ct__17EnergyPulseSystemFv
 lbl_801E0CEC:
 /* 801E0CEC 001DDAEC  38 60 00 0C */	li r3, 0xc
-/* 801E0CF0 001DDAF0  38 8D DB D4 */	addi r4, r13, rubble_system-_SDA_BASE_
+/* 801E0CF0 001DDAF0  38 8D DB D4 */	addi r4, r13, rubble_system@sda21
 /* 801E0CF4 001DDAF4  4B E5 C8 F1 */	bl __nw__FUlPv
 /* 801E0CF8 001DDAF8  28 03 00 00 */	cmplwi r3, 0
 /* 801E0CFC 001DDAFC  41 82 00 08 */	beq lbl_801E0D04
 /* 801E0D00 001DDB00  48 00 0E 29 */	bl __ct__12RubbleSystemFv
 lbl_801E0D04:
 /* 801E0D04 001DDB04  38 60 00 0C */	li r3, 0xc
-/* 801E0D08 001DDB08  38 8D DB E0 */	addi r4, r13, flame_cone_system-_SDA_BASE_
+/* 801E0D08 001DDB08  38 8D DB E0 */	addi r4, r13, flame_cone_system@sda21
 /* 801E0D0C 001DDB0C  4B E5 C8 D9 */	bl __nw__FUlPv
 /* 801E0D10 001DDB10  28 03 00 00 */	cmplwi r3, 0
 /* 801E0D14 001DDB14  41 82 00 08 */	beq lbl_801E0D1C
 /* 801E0D18 001DDB18  48 00 0D 71 */	bl __ct__15FlameConeSystemFv
 lbl_801E0D1C:
 /* 801E0D1C 001DDB1C  38 60 00 0C */	li r3, 0xc
-/* 801E0D20 001DDB20  38 8D DB EC */	addi r4, r13, smoke_puff_system-_SDA_BASE_
+/* 801E0D20 001DDB20  38 8D DB EC */	addi r4, r13, smoke_puff_system@sda21
 /* 801E0D24 001DDB24  4B E5 C8 C1 */	bl __nw__FUlPv
 /* 801E0D28 001DDB28  28 03 00 00 */	cmplwi r3, 0
 /* 801E0D2C 001DDB2C  41 82 00 08 */	beq lbl_801E0D34
 /* 801E0D30 001DDB30  48 00 0C B9 */	bl __ct__15SmokePuffSystemFv
 lbl_801E0D34:
 /* 801E0D34 001DDB34  38 60 00 0C */	li r3, 0xc
-/* 801E0D38 001DDB38  38 8D DB F8 */	addi r4, r13, lava_drip_system-_SDA_BASE_
+/* 801E0D38 001DDB38  38 8D DB F8 */	addi r4, r13, lava_drip_system@sda21
 /* 801E0D3C 001DDB3C  4B E5 C8 A9 */	bl __nw__FUlPv
 /* 801E0D40 001DDB40  28 03 00 00 */	cmplwi r3, 0
 /* 801E0D44 001DDB44  41 82 00 08 */	beq lbl_801E0D4C
 /* 801E0D48 001DDB48  48 00 0C 01 */	bl __ct__14LavaDripSystemFv
 lbl_801E0D4C:
 /* 801E0D4C 001DDB4C  38 60 00 0C */	li r3, 0xc
-/* 801E0D50 001DDB50  38 8D DC 04 */	addi r4, r13, spark_system-_SDA_BASE_
+/* 801E0D50 001DDB50  38 8D DC 04 */	addi r4, r13, spark_system@sda21
 /* 801E0D54 001DDB54  4B E5 C8 91 */	bl __nw__FUlPv
 /* 801E0D58 001DDB58  28 03 00 00 */	cmplwi r3, 0
 /* 801E0D5C 001DDB5C  41 82 00 08 */	beq lbl_801E0D64
 /* 801E0D60 001DDB60  48 00 0B 49 */	bl __ct__11SparkSystemFv
 lbl_801E0D64:
-/* 801E0D64 001DDB64  38 6D DB C8 */	addi r3, r13, energy_pulse_system-_SDA_BASE_
+/* 801E0D64 001DDB64  38 6D DB C8 */	addi r3, r13, energy_pulse_system@sda21
 /* 801E0D68 001DDB68  48 00 0B 0D */	bl SceneInit__263RegisterOnFirstEmitSystem_esc__0_213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitterConeSurface_esc__0_151zParticleColorWhiteFadeOut_esc__0_120zParticleMoverLinearDecel_esc__0_91zParticleRadiusConst_esc__0_67zParticlePoolType_esc__0_30ptank_pool__pos_color_size_uv2_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_17EnergyPulseSystem_esc__1_Fv
-/* 801E0D6C 001DDB6C  38 6D DB D4 */	addi r3, r13, rubble_system-_SDA_BASE_
+/* 801E0D6C 001DDB6C  38 6D DB D4 */	addi r3, r13, rubble_system@sda21
 /* 801E0D70 001DDB70  48 00 0A D1 */	bl SceneInit__221RegisterOnFirstEmitSystem_esc__0_176zParticleEmitterConeSurface_esc__0_144zParticleColorWhiteOpaque_esc__0_114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_12RubbleSystem_esc__1_Fv
-/* 801E0D74 001DDB74  38 6D DB E0 */	addi r3, r13, flame_cone_system-_SDA_BASE_
+/* 801E0D74 001DDB74  38 6D DB E0 */	addi r3, r13, flame_cone_system@sda21
 /* 801E0D78 001DDB78  48 00 0A 95 */	bl _SceneInit__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15FlameConeSystem_esc__1_Fv
-/* 801E0D7C 001DDB7C  38 6D DB EC */	addi r3, r13, smoke_puff_system-_SDA_BASE_
+/* 801E0D7C 001DDB7C  38 6D DB EC */	addi r3, r13, smoke_puff_system@sda21
 /* 801E0D80 001DDB80  48 00 0A 59 */	bl SceneInit__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15SmokePuffSystem_esc__1_Fv
-/* 801E0D84 001DDB84  38 6D DB F8 */	addi r3, r13, lava_drip_system-_SDA_BASE_
+/* 801E0D84 001DDB84  38 6D DB F8 */	addi r3, r13, lava_drip_system@sda21
 /* 801E0D88 001DDB88  48 00 0A 1D */	bl SceneInit__225RegisterOnFirstEmitSystem_esc__0_178zParticleEmitterConeVolume_esc__0_147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_14LavaDripSystem_esc__1_Fv
-/* 801E0D8C 001DDB8C  38 6D DC 04 */	addi r3, r13, spark_system-_SDA_BASE_
+/* 801E0D8C 001DDB8C  38 6D DC 04 */	addi r3, r13, spark_system@sda21
 /* 801E0D90 001DDB90  48 00 09 E1 */	bl SceneInit__218RegisterOnFirstEmitSystem_esc__0_174zParticleEmitterConeVolume_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_11SparkSystem_esc__1_Fv
 /* 801E0D94 001DDB94  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801E0D98 001DDB98  7C 08 03 A6 */	mtlr r0
@@ -677,9 +677,9 @@ Emit__246zParticleSystemHelperEmitter_esc__0_213zParticleUVStaticTile_esc__0_3_e
 /* 801E105C 001DDE5C  DB C1 00 40 */	stfd f30, 0x40(r1)
 /* 801E1060 001DDE60  F3 C1 00 48 */	psq_st f30, 72(r1), 0, qr0
 /* 801E1064 001DDE64  BF 01 00 20 */	stmw r24, 0x20(r1)
-/* 801E1068 001DDE68  CB C2 D3 D8 */	lfd f30, _esc__2_991_5-_SDA2_BASE_(r2)
+/* 801E1068 001DDE68  CB C2 D3 D8 */	lfd f30, _esc__2_991_5@sda21(r2)
 /* 801E106C 001DDE6C  7C 78 1B 78 */	mr r24, r3
-/* 801E1070 001DDE70  C3 E2 D3 CC */	lfs f31, _esc__2_921-_SDA2_BASE_(r2)
+/* 801E1070 001DDE70  C3 E2 D3 CC */	lfs f31, _esc__2_921@sda21(r2)
 /* 801E1074 001DDE74  7C 99 23 78 */	mr r25, r4
 /* 801E1078 001DDE78  7C BA 2B 78 */	mr r26, r5
 /* 801E107C 001DDE7C  3F C0 43 30 */	lis r30, 0x4330
@@ -791,9 +791,9 @@ Emit__209zParticleSystemHelperEmitter_esc__0_176zParticleEmitterConeSurface_esc_
 /* 801E11E8 001DDFE8  DB C1 00 40 */	stfd f30, 0x40(r1)
 /* 801E11EC 001DDFEC  F3 C1 00 48 */	psq_st f30, 72(r1), 0, qr0
 /* 801E11F0 001DDFF0  BF 01 00 20 */	stmw r24, 0x20(r1)
-/* 801E11F4 001DDFF4  CB C2 D3 D8 */	lfd f30, _esc__2_991_5-_SDA2_BASE_(r2)
+/* 801E11F4 001DDFF4  CB C2 D3 D8 */	lfd f30, _esc__2_991_5@sda21(r2)
 /* 801E11F8 001DDFF8  7C 78 1B 78 */	mr r24, r3
-/* 801E11FC 001DDFFC  C3 E2 D3 CC */	lfs f31, _esc__2_921-_SDA2_BASE_(r2)
+/* 801E11FC 001DDFFC  C3 E2 D3 CC */	lfs f31, _esc__2_921@sda21(r2)
 /* 801E1200 001DE000  7C 99 23 78 */	mr r25, r4
 /* 801E1204 001DE004  7C BA 2B 78 */	mr r26, r5
 /* 801E1208 001DE008  3F C0 43 30 */	lis r30, 0x4330
@@ -905,9 +905,9 @@ Emit__213zParticleSystemHelperEmitter_esc__0_180zParticleEmitterConeVolume_esc__
 /* 801E1374 001DE174  DB C1 00 40 */	stfd f30, 0x40(r1)
 /* 801E1378 001DE178  F3 C1 00 48 */	psq_st f30, 72(r1), 0, qr0
 /* 801E137C 001DE17C  BF 01 00 20 */	stmw r24, 0x20(r1)
-/* 801E1380 001DE180  CB C2 D3 D8 */	lfd f30, _esc__2_991_5-_SDA2_BASE_(r2)
+/* 801E1380 001DE180  CB C2 D3 D8 */	lfd f30, _esc__2_991_5@sda21(r2)
 /* 801E1384 001DE184  7C 78 1B 78 */	mr r24, r3
-/* 801E1388 001DE188  C3 E2 D3 CC */	lfs f31, _esc__2_921-_SDA2_BASE_(r2)
+/* 801E1388 001DE188  C3 E2 D3 CC */	lfs f31, _esc__2_921@sda21(r2)
 /* 801E138C 001DE18C  7C 99 23 78 */	mr r25, r4
 /* 801E1390 001DE190  7C BA 2B 78 */	mr r26, r5
 /* 801E1394 001DE194  3F C0 43 30 */	lis r30, 0x4330
@@ -1019,9 +1019,9 @@ Emit__211zParticleSystemHelperEmitter_esc__0_178zParticleEmitterConeVolume_esc__
 /* 801E1500 001DE300  DB C1 00 40 */	stfd f30, 0x40(r1)
 /* 801E1504 001DE304  F3 C1 00 48 */	psq_st f30, 72(r1), 0, qr0
 /* 801E1508 001DE308  BF 01 00 20 */	stmw r24, 0x20(r1)
-/* 801E150C 001DE30C  CB C2 D3 D8 */	lfd f30, _esc__2_991_5-_SDA2_BASE_(r2)
+/* 801E150C 001DE30C  CB C2 D3 D8 */	lfd f30, _esc__2_991_5@sda21(r2)
 /* 801E1510 001DE310  7C 78 1B 78 */	mr r24, r3
-/* 801E1514 001DE314  C3 E2 D3 CC */	lfs f31, _esc__2_921-_SDA2_BASE_(r2)
+/* 801E1514 001DE314  C3 E2 D3 CC */	lfs f31, _esc__2_921@sda21(r2)
 /* 801E1518 001DE318  7C 99 23 78 */	mr r25, r4
 /* 801E151C 001DE31C  7C BA 2B 78 */	mr r26, r5
 /* 801E1520 001DE320  3F C0 43 30 */	lis r30, 0x4330
@@ -1133,9 +1133,9 @@ Emit__207zParticleSystemHelperEmitter_esc__0_174zParticleEmitterConeVolume_esc__
 /* 801E168C 001DE48C  DB C1 00 40 */	stfd f30, 0x40(r1)
 /* 801E1690 001DE490  F3 C1 00 48 */	psq_st f30, 72(r1), 0, qr0
 /* 801E1694 001DE494  BF 01 00 20 */	stmw r24, 0x20(r1)
-/* 801E1698 001DE498  CB C2 D3 D8 */	lfd f30, _esc__2_991_5-_SDA2_BASE_(r2)
+/* 801E1698 001DE498  CB C2 D3 D8 */	lfd f30, _esc__2_991_5@sda21(r2)
 /* 801E169C 001DE49C  7C 78 1B 78 */	mr r24, r3
-/* 801E16A0 001DE4A0  C3 E2 D3 CC */	lfs f31, _esc__2_921-_SDA2_BASE_(r2)
+/* 801E16A0 001DE4A0  C3 E2 D3 CC */	lfs f31, _esc__2_921@sda21(r2)
 /* 801E16A4 001DE4A4  7C 99 23 78 */	mr r25, r4
 /* 801E16A8 001DE4A8  7C BA 2B 78 */	mr r26, r5
 /* 801E16AC 001DE4AC  3F C0 43 30 */	lis r30, 0x4330
@@ -1315,7 +1315,7 @@ __ct__11SparkSystemFv:
 /* 801E18B4 001DE6B4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E18B8 001DE6B8  7C 7F 1B 78 */	mr r31, r3
 /* 801E18BC 001DE6BC  48 00 00 25 */	bl __ct__218RegisterOnFirstEmitSystem_esc__0_174zParticleEmitterConeVolume_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_11SparkSystem_esc__1_Fv
-/* 801E18C0 001DE6C0  38 0D AC 74 */	addi r0, r13, __vt__11SparkSystem-_SDA_BASE_
+/* 801E18C0 001DE6C0  38 0D AC 74 */	addi r0, r13, __vt__11SparkSystem@sda21
 /* 801E18C4 001DE6C4  7F E3 FB 78 */	mr r3, r31
 /* 801E18C8 001DE6C8  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E18CC 001DE6CC  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1332,7 +1332,7 @@ __ct__218RegisterOnFirstEmitSystem_esc__0_174zParticleEmitterConeVolume_esc__0_1
 /* 801E18EC 001DE6EC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E18F0 001DE6F0  7C 7F 1B 78 */	mr r31, r3
 /* 801E18F4 001DE6F4  48 00 00 25 */	bl __ct__214zParticleSystemHelper_esc__0_174zParticleEmitterConeVolume_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_11SparkSystem_esc__1_Fv
-/* 801E18F8 001DE6F8  38 0D AC 68 */	addi r0, r13, __vt__218RegisterOnFirstEmitSystem_esc__0_174zParticleEmitterConeVolume_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_11SparkSystem_esc__1_-_SDA_BASE_
+/* 801E18F8 001DE6F8  38 0D AC 68 */	addi r0, r13, __vt__218RegisterOnFirstEmitSystem_esc__0_174zParticleEmitterConeVolume_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_11SparkSystem_esc__1_@sda21
 /* 801E18FC 001DE6FC  7F E3 FB 78 */	mr r3, r31
 /* 801E1900 001DE700  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E1904 001DE704  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1364,7 +1364,7 @@ __ct__14LavaDripSystemFv:
 /* 801E1954 001DE754  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E1958 001DE758  7C 7F 1B 78 */	mr r31, r3
 /* 801E195C 001DE75C  48 00 00 25 */	bl __ct__225RegisterOnFirstEmitSystem_esc__0_178zParticleEmitterConeVolume_esc__0_147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_14LavaDripSystem_esc__1_Fv
-/* 801E1960 001DE760  38 0D AC 5C */	addi r0, r13, __vt__14LavaDripSystem-_SDA_BASE_
+/* 801E1960 001DE760  38 0D AC 5C */	addi r0, r13, __vt__14LavaDripSystem@sda21
 /* 801E1964 001DE764  7F E3 FB 78 */	mr r3, r31
 /* 801E1968 001DE768  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E196C 001DE76C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1381,7 +1381,7 @@ __ct__225RegisterOnFirstEmitSystem_esc__0_178zParticleEmitterConeVolume_esc__0_1
 /* 801E198C 001DE78C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E1990 001DE790  7C 7F 1B 78 */	mr r31, r3
 /* 801E1994 001DE794  48 00 00 25 */	bl __ct__221zParticleSystemHelper_esc__0_178zParticleEmitterConeVolume_esc__0_147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_14LavaDripSystem_esc__1_Fv
-/* 801E1998 001DE798  38 0D AC 50 */	addi r0, r13, __vt__225RegisterOnFirstEmitSystem_esc__0_178zParticleEmitterConeVolume_esc__0_147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_14LavaDripSystem_esc__1_-_SDA_BASE_
+/* 801E1998 001DE798  38 0D AC 50 */	addi r0, r13, __vt__225RegisterOnFirstEmitSystem_esc__0_178zParticleEmitterConeVolume_esc__0_147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_14LavaDripSystem_esc__1_@sda21
 /* 801E199C 001DE79C  7F E3 FB 78 */	mr r3, r31
 /* 801E19A0 001DE7A0  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E19A4 001DE7A4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1413,7 +1413,7 @@ __ct__15SmokePuffSystemFv:
 /* 801E19F4 001DE7F4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E19F8 001DE7F8  7C 7F 1B 78 */	mr r31, r3
 /* 801E19FC 001DE7FC  48 00 00 25 */	bl __ct__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15SmokePuffSystem_esc__1_Fv
-/* 801E1A00 001DE800  38 0D AC 44 */	addi r0, r13, __vt__15SmokePuffSystem-_SDA_BASE_
+/* 801E1A00 001DE800  38 0D AC 44 */	addi r0, r13, __vt__15SmokePuffSystem@sda21
 /* 801E1A04 001DE804  7F E3 FB 78 */	mr r3, r31
 /* 801E1A08 001DE808  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E1A0C 001DE80C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1430,7 +1430,7 @@ __ct__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_1
 /* 801E1A2C 001DE82C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E1A30 001DE830  7C 7F 1B 78 */	mr r31, r3
 /* 801E1A34 001DE834  48 00 00 25 */	bl __ct__224zParticleSystemHelper_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15SmokePuffSystem_esc__1_Fv
-/* 801E1A38 001DE838  38 0D AC 38 */	addi r0, r13, __vt__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15SmokePuffSystem_esc__1_-_SDA_BASE_
+/* 801E1A38 001DE838  38 0D AC 38 */	addi r0, r13, __vt__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15SmokePuffSystem_esc__1_@sda21
 /* 801E1A3C 001DE83C  7F E3 FB 78 */	mr r3, r31
 /* 801E1A40 001DE840  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E1A44 001DE844  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1462,7 +1462,7 @@ __ct__15FlameConeSystemFv:
 /* 801E1A94 001DE894  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E1A98 001DE898  7C 7F 1B 78 */	mr r31, r3
 /* 801E1A9C 001DE89C  48 00 00 25 */	bl ___ct__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15FlameConeSystem_esc__1_Fv
-/* 801E1AA0 001DE8A0  38 0D AC 2C */	addi r0, r13, __vt__15FlameConeSystem-_SDA_BASE_
+/* 801E1AA0 001DE8A0  38 0D AC 2C */	addi r0, r13, __vt__15FlameConeSystem@sda21
 /* 801E1AA4 001DE8A4  7F E3 FB 78 */	mr r3, r31
 /* 801E1AA8 001DE8A8  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E1AAC 001DE8AC  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1479,7 +1479,7 @@ ___ct__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_
 /* 801E1ACC 001DE8CC  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E1AD0 001DE8D0  7C 7F 1B 78 */	mr r31, r3
 /* 801E1AD4 001DE8D4  48 00 00 25 */	bl ___ct__224zParticleSystemHelper_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15FlameConeSystem_esc__1_Fv
-/* 801E1AD8 001DE8D8  38 0D AC 20 */	addi r0, r13, __vt__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15FlameConeSystem_esc__1_-_SDA_BASE_
+/* 801E1AD8 001DE8D8  38 0D AC 20 */	addi r0, r13, __vt__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15FlameConeSystem_esc__1_@sda21
 /* 801E1ADC 001DE8DC  7F E3 FB 78 */	mr r3, r31
 /* 801E1AE0 001DE8E0  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E1AE4 001DE8E4  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1511,7 +1511,7 @@ __ct__12RubbleSystemFv:
 /* 801E1B34 001DE934  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E1B38 001DE938  7C 7F 1B 78 */	mr r31, r3
 /* 801E1B3C 001DE93C  48 00 00 25 */	bl __ct__221RegisterOnFirstEmitSystem_esc__0_176zParticleEmitterConeSurface_esc__0_144zParticleColorWhiteOpaque_esc__0_114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_12RubbleSystem_esc__1_Fv
-/* 801E1B40 001DE940  38 0D AC 14 */	addi r0, r13, __vt__12RubbleSystem-_SDA_BASE_
+/* 801E1B40 001DE940  38 0D AC 14 */	addi r0, r13, __vt__12RubbleSystem@sda21
 /* 801E1B44 001DE944  7F E3 FB 78 */	mr r3, r31
 /* 801E1B48 001DE948  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E1B4C 001DE94C  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1528,7 +1528,7 @@ __ct__221RegisterOnFirstEmitSystem_esc__0_176zParticleEmitterConeSurface_esc__0_
 /* 801E1B6C 001DE96C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E1B70 001DE970  7C 7F 1B 78 */	mr r31, r3
 /* 801E1B74 001DE974  48 00 00 25 */	bl __ct__217zParticleSystemHelper_esc__0_176zParticleEmitterConeSurface_esc__0_144zParticleColorWhiteOpaque_esc__0_114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_12RubbleSystem_esc__1_Fv
-/* 801E1B78 001DE978  38 0D AC 08 */	addi r0, r13, __vt__221RegisterOnFirstEmitSystem_esc__0_176zParticleEmitterConeSurface_esc__0_144zParticleColorWhiteOpaque_esc__0_114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_12RubbleSystem_esc__1_-_SDA_BASE_
+/* 801E1B78 001DE978  38 0D AC 08 */	addi r0, r13, __vt__221RegisterOnFirstEmitSystem_esc__0_176zParticleEmitterConeSurface_esc__0_144zParticleColorWhiteOpaque_esc__0_114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_12RubbleSystem_esc__1_@sda21
 /* 801E1B7C 001DE97C  7F E3 FB 78 */	mr r3, r31
 /* 801E1B80 001DE980  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E1B84 001DE984  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1560,7 +1560,7 @@ __ct__17EnergyPulseSystemFv:
 /* 801E1BD4 001DE9D4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E1BD8 001DE9D8  7C 7F 1B 78 */	mr r31, r3
 /* 801E1BDC 001DE9DC  48 00 00 25 */	bl __ct__263RegisterOnFirstEmitSystem_esc__0_213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitterConeSurface_esc__0_151zParticleColorWhiteFadeOut_esc__0_120zParticleMoverLinearDecel_esc__0_91zParticleRadiusConst_esc__0_67zParticlePoolType_esc__0_30ptank_pool__pos_color_size_uv2_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_17EnergyPulseSystem_esc__1_Fv
-/* 801E1BE0 001DE9E0  38 0D AB FC */	addi r0, r13, __vt__17EnergyPulseSystem-_SDA_BASE_
+/* 801E1BE0 001DE9E0  38 0D AB FC */	addi r0, r13, __vt__17EnergyPulseSystem@sda21
 /* 801E1BE4 001DE9E4  7F E3 FB 78 */	mr r3, r31
 /* 801E1BE8 001DE9E8  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E1BEC 001DE9EC  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1577,7 +1577,7 @@ __ct__263RegisterOnFirstEmitSystem_esc__0_213zParticleUVStaticTile_esc__0_3_esc_
 /* 801E1C0C 001DEA0C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801E1C10 001DEA10  7C 7F 1B 78 */	mr r31, r3
 /* 801E1C14 001DEA14  48 00 00 25 */	bl __ct__259zParticleSystemHelper_esc__0_213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitterConeSurface_esc__0_151zParticleColorWhiteFadeOut_esc__0_120zParticleMoverLinearDecel_esc__0_91zParticleRadiusConst_esc__0_67zParticlePoolType_esc__0_30ptank_pool__pos_color_size_uv2_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_17EnergyPulseSystem_esc__1_Fv
-/* 801E1C18 001DEA18  38 0D AB F0 */	addi r0, r13, __vt__263RegisterOnFirstEmitSystem_esc__0_213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitterConeSurface_esc__0_151zParticleColorWhiteFadeOut_esc__0_120zParticleMoverLinearDecel_esc__0_91zParticleRadiusConst_esc__0_67zParticlePoolType_esc__0_30ptank_pool__pos_color_size_uv2_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_17EnergyPulseSystem_esc__1_-_SDA_BASE_
+/* 801E1C18 001DEA18  38 0D AB F0 */	addi r0, r13, __vt__263RegisterOnFirstEmitSystem_esc__0_213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitterConeSurface_esc__0_151zParticleColorWhiteFadeOut_esc__0_120zParticleMoverLinearDecel_esc__0_91zParticleRadiusConst_esc__0_67zParticlePoolType_esc__0_30ptank_pool__pos_color_size_uv2_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_17EnergyPulseSystem_esc__1_@sda21
 /* 801E1C1C 001DEA1C  7F E3 FB 78 */	mr r3, r31
 /* 801E1C20 001DEA20  90 1F 00 08 */	stw r0, 8(r31)
 /* 801E1C24 001DEA24  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -1615,7 +1615,7 @@ Register__263RegisterOnFirstEmitSystem_esc__0_213zParticleUVStaticTile_esc__0_3_
 /* 801E1C8C 001DEA8C  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 801E1C90 001DEA90  90 E1 00 2C */	stw r7, 0x2c(r1)
 /* 801E1C94 001DEA94  48 00 00 5D */	bl Init__259zParticleSystemHelper_esc__0_213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitterConeSurface_esc__0_151zParticleColorWhiteFadeOut_esc__0_120zParticleMoverLinearDecel_esc__0_91zParticleRadiusConst_esc__0_67zParticlePoolType_esc__0_30ptank_pool__pos_color_size_uv2_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_17EnergyPulseSystem_esc__1_FR20xParticleBatchSystem
-/* 801E1C98 001DEA98  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801E1C98 001DEA98  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801E1C9C 001DEA9C  38 80 00 10 */	li r4, 0x10
 /* 801E1CA0 001DEAA0  38 A0 00 00 */	li r5, 0
 /* 801E1CA4 001DEAA4  4B E6 7E BD */	bl xMemAlloc__FUiUii
@@ -1706,7 +1706,7 @@ lbl_801E1DC0:
 /* 801E1DC8 001DEBC8  4B E3 22 15 */	bl __as__5RwV3dFRC5RwV3d
 /* 801E1DCC 001DEBCC  C0 1B 00 0C */	lfs f0, 0xc(r27)
 /* 801E1DD0 001DEBD0  38 81 00 08 */	addi r4, r1, 8
-/* 801E1DD4 001DEBD4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801E1DD4 001DEBD4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801E1DD8 001DEBD8  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 801E1DDC 001DEBDC  80 63 00 04 */	lwz r3, 4(r3)
 /* 801E1DE0 001DEBE0  80 63 00 00 */	lwz r3, 0(r3)
@@ -1760,7 +1760,7 @@ Register__221RegisterOnFirstEmitSystem_esc__0_176zParticleEmitterConeSurface_esc
 /* 801E1E84 001DEC84  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 801E1E88 001DEC88  90 E1 00 2C */	stw r7, 0x2c(r1)
 /* 801E1E8C 001DEC8C  48 00 00 5D */	bl Init__217zParticleSystemHelper_esc__0_176zParticleEmitterConeSurface_esc__0_144zParticleColorWhiteOpaque_esc__0_114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_12RubbleSystem_esc__1_FR20xParticleBatchSystem
-/* 801E1E90 001DEC90  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801E1E90 001DEC90  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801E1E94 001DEC94  38 80 00 10 */	li r4, 0x10
 /* 801E1E98 001DEC98  38 A0 00 00 */	li r5, 0
 /* 801E1E9C 001DEC9C  4B E6 7C C5 */	bl xMemAlloc__FUiUii
@@ -1851,7 +1851,7 @@ lbl_801E1FB8:
 /* 801E1FC0 001DEDC0  4B E3 20 1D */	bl __as__5RwV3dFRC5RwV3d
 /* 801E1FC4 001DEDC4  C0 1B 00 0C */	lfs f0, 0xc(r27)
 /* 801E1FC8 001DEDC8  38 81 00 08 */	addi r4, r1, 8
-/* 801E1FCC 001DEDCC  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801E1FCC 001DEDCC  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801E1FD0 001DEDD0  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 801E1FD4 001DEDD4  80 63 00 04 */	lwz r3, 4(r3)
 /* 801E1FD8 001DEDD8  80 63 00 00 */	lwz r3, 0(r3)
@@ -1905,7 +1905,7 @@ Register__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc_
 /* 801E207C 001DEE7C  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 801E2080 001DEE80  90 E1 00 2C */	stw r7, 0x2c(r1)
 /* 801E2084 001DEE84  48 00 00 5D */	bl Init__224zParticleSystemHelper_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15FlameConeSystem_esc__1_FR20xParticleBatchSystem
-/* 801E2088 001DEE88  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801E2088 001DEE88  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801E208C 001DEE8C  38 80 00 10 */	li r4, 0x10
 /* 801E2090 001DEE90  38 A0 00 00 */	li r5, 0
 /* 801E2094 001DEE94  4B E6 7A CD */	bl xMemAlloc__FUiUii
@@ -1996,7 +1996,7 @@ lbl_801E21B0:
 /* 801E21B8 001DEFB8  4B E3 1E 25 */	bl __as__5RwV3dFRC5RwV3d
 /* 801E21BC 001DEFBC  C0 1B 00 0C */	lfs f0, 0xc(r27)
 /* 801E21C0 001DEFC0  38 81 00 08 */	addi r4, r1, 8
-/* 801E21C4 001DEFC4  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801E21C4 001DEFC4  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801E21C8 001DEFC8  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 801E21CC 001DEFCC  80 63 00 04 */	lwz r3, 4(r3)
 /* 801E21D0 001DEFD0  80 63 00 00 */	lwz r3, 0(r3)
@@ -2050,7 +2050,7 @@ _Register__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc
 /* 801E2274 001DF074  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 801E2278 001DF078  90 E1 00 2C */	stw r7, 0x2c(r1)
 /* 801E227C 001DF07C  48 00 00 5D */	bl _Init__224zParticleSystemHelper_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15SmokePuffSystem_esc__1_FR20xParticleBatchSystem
-/* 801E2280 001DF080  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801E2280 001DF080  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801E2284 001DF084  38 80 00 10 */	li r4, 0x10
 /* 801E2288 001DF088  38 A0 00 00 */	li r5, 0
 /* 801E228C 001DF08C  4B E6 78 D5 */	bl xMemAlloc__FUiUii
@@ -2113,7 +2113,7 @@ Register__225RegisterOnFirstEmitSystem_esc__0_178zParticleEmitterConeVolume_esc_
 /* 801E234C 001DF14C  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 801E2350 001DF150  90 E1 00 2C */	stw r7, 0x2c(r1)
 /* 801E2354 001DF154  48 00 00 5D */	bl Init__221zParticleSystemHelper_esc__0_178zParticleEmitterConeVolume_esc__0_147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_14LavaDripSystem_esc__1_FR20xParticleBatchSystem
-/* 801E2358 001DF158  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801E2358 001DF158  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801E235C 001DF15C  38 80 00 10 */	li r4, 0x10
 /* 801E2360 001DF160  38 A0 00 00 */	li r5, 0
 /* 801E2364 001DF164  4B E6 77 FD */	bl xMemAlloc__FUiUii
@@ -2204,7 +2204,7 @@ lbl_801E2480:
 /* 801E2488 001DF288  4B E3 1B 55 */	bl __as__5RwV3dFRC5RwV3d
 /* 801E248C 001DF28C  C0 1B 00 0C */	lfs f0, 0xc(r27)
 /* 801E2490 001DF290  38 81 00 08 */	addi r4, r1, 8
-/* 801E2494 001DF294  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801E2494 001DF294  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801E2498 001DF298  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 801E249C 001DF29C  80 63 00 04 */	lwz r3, 4(r3)
 /* 801E24A0 001DF2A0  80 63 00 00 */	lwz r3, 0(r3)
@@ -2258,7 +2258,7 @@ Register__218RegisterOnFirstEmitSystem_esc__0_174zParticleEmitterConeVolume_esc_
 /* 801E2544 001DF344  90 C1 00 18 */	stw r6, 0x18(r1)
 /* 801E2548 001DF348  90 E1 00 2C */	stw r7, 0x2c(r1)
 /* 801E254C 001DF34C  48 00 00 5D */	bl Init__214zParticleSystemHelper_esc__0_174zParticleEmitterConeVolume_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_11SparkSystem_esc__1_FR20xParticleBatchSystem
-/* 801E2550 001DF350  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801E2550 001DF350  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801E2554 001DF354  38 80 00 10 */	li r4, 0x10
 /* 801E2558 001DF358  38 A0 00 00 */	li r5, 0
 /* 801E255C 001DF35C  4B E6 76 05 */	bl xMemAlloc__FUiUii
@@ -2349,7 +2349,7 @@ lbl_801E2678:
 /* 801E2680 001DF480  4B E3 19 5D */	bl __as__5RwV3dFRC5RwV3d
 /* 801E2684 001DF484  C0 1B 00 0C */	lfs f0, 0xc(r27)
 /* 801E2688 001DF488  38 81 00 08 */	addi r4, r1, 8
-/* 801E268C 001DF48C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801E268C 001DF48C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801E2690 001DF490  D0 01 00 14 */	stfs f0, 0x14(r1)
 /* 801E2694 001DF494  80 63 00 04 */	lwz r3, 4(r3)
 /* 801E2698 001DF498  80 63 00 00 */	lwz r3, 0(r3)
@@ -2397,12 +2397,12 @@ emit_uv__213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitterCo
 /* 801E2724 001DF524  93 E1 00 2C */	stw r31, 0x2c(r1)
 /* 801E2728 001DF528  7C 7F 1B 78 */	mr r31, r3
 /* 801E272C 001DF52C  4B E2 4B F9 */	bl xurand__Fv
-/* 801E2730 001DF530  C0 42 D3 E0 */	lfs f2, _esc__2_993_4-_SDA2_BASE_(r2)
+/* 801E2730 001DF530  C0 42 D3 E0 */	lfs f2, _esc__2_993_4@sda21(r2)
 /* 801E2734 001DF534  3C 00 43 30 */	lis r0, 0x4330
-/* 801E2738 001DF538  C0 02 D3 E4 */	lfs f0, _esc__2_994_2-_SDA2_BASE_(r2)
+/* 801E2738 001DF538  C0 02 D3 E4 */	lfs f0, _esc__2_994_2@sda21(r2)
 /* 801E273C 001DF53C  90 01 00 10 */	stw r0, 0x10(r1)
 /* 801E2740 001DF540  EC 02 00 78 */	fmsubs f0, f2, f1, f0
-/* 801E2744 001DF544  C8 22 D3 D8 */	lfd f1, _esc__2_991_5-_SDA2_BASE_(r2)
+/* 801E2744 001DF544  C8 22 D3 D8 */	lfd f1, _esc__2_991_5@sda21(r2)
 /* 801E2748 001DF548  FC 00 00 1E */	fctiwz f0, f0
 /* 801E274C 001DF54C  D8 01 00 08 */	stfd f0, 8(r1)
 /* 801E2750 001DF550  80 01 00 0C */	lwz r0, 0xc(r1)
@@ -2413,12 +2413,12 @@ emit_uv__213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitterCo
 /* 801E2764 001DF564  EC 00 10 24 */	fdivs f0, f0, f2
 /* 801E2768 001DF568  D0 1F 00 38 */	stfs f0, 0x38(r31)
 /* 801E276C 001DF56C  4B E2 4B B9 */	bl xurand__Fv
-/* 801E2770 001DF570  C0 42 D3 E0 */	lfs f2, _esc__2_993_4-_SDA2_BASE_(r2)
+/* 801E2770 001DF570  C0 42 D3 E0 */	lfs f2, _esc__2_993_4@sda21(r2)
 /* 801E2774 001DF574  3C 00 43 30 */	lis r0, 0x4330
-/* 801E2778 001DF578  C0 02 D3 E4 */	lfs f0, _esc__2_994_2-_SDA2_BASE_(r2)
+/* 801E2778 001DF578  C0 02 D3 E4 */	lfs f0, _esc__2_994_2@sda21(r2)
 /* 801E277C 001DF57C  90 01 00 20 */	stw r0, 0x20(r1)
 /* 801E2780 001DF580  EC 02 00 78 */	fmsubs f0, f2, f1, f0
-/* 801E2784 001DF584  C8 22 D3 D8 */	lfd f1, _esc__2_991_5-_SDA2_BASE_(r2)
+/* 801E2784 001DF584  C8 22 D3 D8 */	lfd f1, _esc__2_991_5@sda21(r2)
 /* 801E2788 001DF588  FC 00 00 1E */	fctiwz f0, f0
 /* 801E278C 001DF58C  D8 01 00 18 */	stfd f0, 0x18(r1)
 /* 801E2790 001DF590  80 01 00 1C */	lwz r0, 0x1c(r1)
@@ -2445,8 +2445,8 @@ emit__183zParticleEmitterConeSurface_esc__0_151zParticleColorWhiteFadeOut_esc__0
 /* 801E27D8 001DF5D8  7C 7E 1B 78 */	mr r30, r3
 /* 801E27DC 001DF5DC  7C 9F 23 78 */	mr r31, r4
 /* 801E27E0 001DF5E0  4B E2 4B 45 */	bl xurand__Fv
-/* 801E27E4 001DF5E4  C0 42 D3 EC */	lfs f2, _esc__2_1006_6-_SDA2_BASE_(r2)
-/* 801E27E8 001DF5E8  C0 02 D3 E8 */	lfs f0, _esc__2_1005_7-_SDA2_BASE_(r2)
+/* 801E27E4 001DF5E4  C0 42 D3 EC */	lfs f2, _esc__2_1006_6@sda21(r2)
+/* 801E27E8 001DF5E8  C0 02 D3 E8 */	lfs f0, _esc__2_1005_7@sda21(r2)
 /* 801E27EC 001DF5EC  EC 21 10 28 */	fsubs f1, f1, f2
 /* 801E27F0 001DF5F0  EF E0 00 72 */	fmuls f31, f0, f1
 /* 801E27F4 001DF5F4  FC 20 F8 90 */	fmr f1, f31
@@ -2494,7 +2494,7 @@ emit__120zParticleMoverLinearDecel_esc__0_91zParticleRadiusConst_esc__0_67zParti
 /* 801E2890 001DF690  4B E2 4A 95 */	bl xurand__Fv
 /* 801E2894 001DF694  C0 7F 00 20 */	lfs f3, 0x20(r31)
 /* 801E2898 001DF698  C0 5F 00 1C */	lfs f2, 0x1c(r31)
-/* 801E289C 001DF69C  C0 02 D3 F0 */	lfs f0, _esc__2_1010_4-_SDA2_BASE_(r2)
+/* 801E289C 001DF69C  C0 02 D3 F0 */	lfs f0, _esc__2_1010_4@sda21(r2)
 /* 801E28A0 001DF6A0  EC 23 10 7A */	fmadds f1, f3, f1, f2
 /* 801E28A4 001DF6A4  D0 3E 00 2C */	stfs f1, 0x2c(r30)
 /* 801E28A8 001DF6A8  C0 3E 00 2C */	lfs f1, 0x2c(r30)
@@ -2502,17 +2502,17 @@ emit__120zParticleMoverLinearDecel_esc__0_91zParticleRadiusConst_esc__0_67zParti
 /* 801E28B0 001DF6B0  40 80 00 08 */	bge lbl_801E28B8
 /* 801E28B4 001DF6B4  D0 1E 00 2C */	stfs f0, 0x2c(r30)
 lbl_801E28B8:
-/* 801E28B8 001DF6B8  C0 02 D3 C8 */	lfs f0, _esc__2_920_1-_SDA2_BASE_(r2)
+/* 801E28B8 001DF6B8  C0 02 D3 C8 */	lfs f0, _esc__2_920_1@sda21(r2)
 /* 801E28BC 001DF6BC  D0 1E 00 28 */	stfs f0, 0x28(r30)
 /* 801E28C0 001DF6C0  4B E2 4A 65 */	bl xurand__Fv
 /* 801E28C4 001DF6C4  C0 5F 00 28 */	lfs f2, 0x28(r31)
 /* 801E28C8 001DF6C8  7F C3 F3 78 */	mr r3, r30
 /* 801E28CC 001DF6CC  C0 1F 00 24 */	lfs f0, 0x24(r31)
 /* 801E28D0 001DF6D0  7F E4 FB 78 */	mr r4, r31
-/* 801E28D4 001DF6D4  C0 62 D3 F4 */	lfs f3, _esc__2_1011_6-_SDA2_BASE_(r2)
+/* 801E28D4 001DF6D4  C0 62 D3 F4 */	lfs f3, _esc__2_1011_6@sda21(r2)
 /* 801E28D8 001DF6D8  EC 22 00 7A */	fmadds f1, f2, f1, f0
 /* 801E28DC 001DF6DC  C0 5E 00 2C */	lfs f2, 0x2c(r30)
-/* 801E28E0 001DF6E0  C0 02 D3 F8 */	lfs f0, _esc__2_1012_7-_SDA2_BASE_(r2)
+/* 801E28E0 001DF6E0  C0 02 D3 F8 */	lfs f0, _esc__2_1012_7@sda21(r2)
 /* 801E28E4 001DF6E4  EC 63 00 72 */	fmuls f3, f3, f1
 /* 801E28E8 001DF6E8  FC 20 08 50 */	fneg f1, f1
 /* 801E28EC 001DF6EC  EC 43 10 24 */	fdivs f2, f3, f2
@@ -2554,8 +2554,8 @@ emit__176zParticleEmitterConeSurface_esc__0_144zParticleColorWhiteOpaque_esc__0_
 /* 801E2964 001DF764  7C 7E 1B 78 */	mr r30, r3
 /* 801E2968 001DF768  7C 9F 23 78 */	mr r31, r4
 /* 801E296C 001DF76C  4B E2 49 B9 */	bl xurand__Fv
-/* 801E2970 001DF770  C0 42 D3 EC */	lfs f2, _esc__2_1006_6-_SDA2_BASE_(r2)
-/* 801E2974 001DF774  C0 02 D3 E8 */	lfs f0, _esc__2_1005_7-_SDA2_BASE_(r2)
+/* 801E2970 001DF770  C0 42 D3 EC */	lfs f2, _esc__2_1006_6@sda21(r2)
+/* 801E2974 001DF774  C0 02 D3 E8 */	lfs f0, _esc__2_1005_7@sda21(r2)
 /* 801E2978 001DF778  EC 21 10 28 */	fsubs f1, f1, f2
 /* 801E297C 001DF77C  EF E0 00 72 */	fmuls f31, f0, f1
 /* 801E2980 001DF780  FC 20 F8 90 */	fmr f1, f31
@@ -2607,7 +2607,7 @@ emit__114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticl
 /* 801E2A2C 001DF82C  4B E2 48 F9 */	bl xurand__Fv
 /* 801E2A30 001DF830  C0 7F 00 2C */	lfs f3, 0x2c(r31)
 /* 801E2A34 001DF834  C0 5F 00 28 */	lfs f2, 0x28(r31)
-/* 801E2A38 001DF838  C0 02 D3 F0 */	lfs f0, _esc__2_1010_4-_SDA2_BASE_(r2)
+/* 801E2A38 001DF838  C0 02 D3 F0 */	lfs f0, _esc__2_1010_4@sda21(r2)
 /* 801E2A3C 001DF83C  EC 23 10 7A */	fmadds f1, f3, f1, f2
 /* 801E2A40 001DF840  D0 3E 00 34 */	stfs f1, 0x34(r30)
 /* 801E2A44 001DF844  C0 3E 00 34 */	lfs f1, 0x34(r30)
@@ -2615,9 +2615,9 @@ emit__114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticl
 /* 801E2A4C 001DF84C  40 80 00 08 */	bge lbl_801E2A54
 /* 801E2A50 001DF850  D0 1E 00 34 */	stfs f0, 0x34(r30)
 lbl_801E2A54:
-/* 801E2A54 001DF854  C0 02 D3 C8 */	lfs f0, _esc__2_920_1-_SDA2_BASE_(r2)
+/* 801E2A54 001DF854  C0 02 D3 C8 */	lfs f0, _esc__2_920_1@sda21(r2)
 /* 801E2A58 001DF858  7F C3 F3 78 */	mr r3, r30
-/* 801E2A5C 001DF85C  C0 22 D3 EC */	lfs f1, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E2A5C 001DF85C  C0 22 D3 EC */	lfs f1, _esc__2_1006_6@sda21(r2)
 /* 801E2A60 001DF860  7F E4 FB 78 */	mr r4, r31
 /* 801E2A64 001DF864  D0 1E 00 30 */	stfs f0, 0x30(r30)
 /* 801E2A68 001DF868  C0 1F 00 30 */	lfs f0, 0x30(r31)
@@ -2659,21 +2659,21 @@ emit__180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__
 /* 801E2AE0 001DF8E0  38 9F 00 38 */	addi r4, r31, 0x38
 /* 801E2AE4 001DF8E4  4B E2 85 C5 */	bl __as__5xVec3FRC5xVec3
 /* 801E2AE8 001DF8E8  4B E2 48 3D */	bl xurand__Fv
-/* 801E2AEC 001DF8EC  C0 02 D3 EC */	lfs f0, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E2AEC 001DF8EC  C0 02 D3 EC */	lfs f0, _esc__2_1006_6@sda21(r2)
 /* 801E2AF0 001DF8F0  C0 5F 00 44 */	lfs f2, 0x44(r31)
 /* 801E2AF4 001DF8F4  EC 21 00 28 */	fsubs f1, f1, f0
 /* 801E2AF8 001DF8F8  C0 1F 00 08 */	lfs f0, 8(r31)
 /* 801E2AFC 001DF8FC  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 801E2B00 001DF900  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 801E2B04 001DF904  4B E2 48 21 */	bl xurand__Fv
-/* 801E2B08 001DF908  C0 02 D3 EC */	lfs f0, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E2B08 001DF908  C0 02 D3 EC */	lfs f0, _esc__2_1006_6@sda21(r2)
 /* 801E2B0C 001DF90C  C0 5F 00 44 */	lfs f2, 0x44(r31)
 /* 801E2B10 001DF910  EC 21 00 28 */	fsubs f1, f1, f0
 /* 801E2B14 001DF914  C0 1F 00 0C */	lfs f0, 0xc(r31)
 /* 801E2B18 001DF918  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 801E2B1C 001DF91C  D0 1F 00 0C */	stfs f0, 0xc(r31)
 /* 801E2B20 001DF920  4B E2 48 05 */	bl xurand__Fv
-/* 801E2B24 001DF924  C0 02 D3 EC */	lfs f0, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E2B24 001DF924  C0 02 D3 EC */	lfs f0, _esc__2_1006_6@sda21(r2)
 /* 801E2B28 001DF928  7F C3 F3 78 */	mr r3, r30
 /* 801E2B2C 001DF92C  C0 5F 00 44 */	lfs f2, 0x44(r31)
 /* 801E2B30 001DF930  7F E4 FB 78 */	mr r4, r31
@@ -2724,7 +2724,7 @@ emit__116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParti
 /* 801E2BCC 001DF9CC  4B E2 47 59 */	bl xurand__Fv
 /* 801E2BD0 001DF9D0  C0 7F 00 24 */	lfs f3, 0x24(r31)
 /* 801E2BD4 001DF9D4  C0 5F 00 20 */	lfs f2, 0x20(r31)
-/* 801E2BD8 001DF9D8  C0 02 D3 F0 */	lfs f0, _esc__2_1010_4-_SDA2_BASE_(r2)
+/* 801E2BD8 001DF9D8  C0 02 D3 F0 */	lfs f0, _esc__2_1010_4@sda21(r2)
 /* 801E2BDC 001DF9DC  EC 23 10 7A */	fmadds f1, f3, f1, f2
 /* 801E2BE0 001DF9E0  D0 3E 00 34 */	stfs f1, 0x34(r30)
 /* 801E2BE4 001DF9E4  C0 3E 00 34 */	lfs f1, 0x34(r30)
@@ -2732,7 +2732,7 @@ emit__116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParti
 /* 801E2BEC 001DF9EC  40 80 00 08 */	bge lbl_801E2BF4
 /* 801E2BF0 001DF9F0  D0 1E 00 34 */	stfs f0, 0x34(r30)
 lbl_801E2BF4:
-/* 801E2BF4 001DF9F4  C0 02 D3 C8 */	lfs f0, _esc__2_920_1-_SDA2_BASE_(r2)
+/* 801E2BF4 001DF9F4  C0 02 D3 C8 */	lfs f0, _esc__2_920_1@sda21(r2)
 /* 801E2BF8 001DF9F8  7F C3 F3 78 */	mr r3, r30
 /* 801E2BFC 001DF9FC  7F E4 FB 78 */	mr r4, r31
 /* 801E2C00 001DFA00  D0 1E 00 30 */	stfs f0, 0x30(r30)
@@ -2755,21 +2755,21 @@ emit__178zParticleEmitterConeVolume_esc__0_147zParticleColorWhiteFadeOut_esc__0_
 /* 801E2C38 001DFA38  38 9F 00 30 */	addi r4, r31, 0x30
 /* 801E2C3C 001DFA3C  4B E2 84 6D */	bl __as__5xVec3FRC5xVec3
 /* 801E2C40 001DFA40  4B E2 46 E5 */	bl xurand__Fv
-/* 801E2C44 001DFA44  C0 02 D3 EC */	lfs f0, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E2C44 001DFA44  C0 02 D3 EC */	lfs f0, _esc__2_1006_6@sda21(r2)
 /* 801E2C48 001DFA48  C0 5F 00 3C */	lfs f2, 0x3c(r31)
 /* 801E2C4C 001DFA4C  EC 21 00 28 */	fsubs f1, f1, f0
 /* 801E2C50 001DFA50  C0 1F 00 08 */	lfs f0, 8(r31)
 /* 801E2C54 001DFA54  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 801E2C58 001DFA58  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 801E2C5C 001DFA5C  4B E2 46 C9 */	bl xurand__Fv
-/* 801E2C60 001DFA60  C0 02 D3 EC */	lfs f0, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E2C60 001DFA60  C0 02 D3 EC */	lfs f0, _esc__2_1006_6@sda21(r2)
 /* 801E2C64 001DFA64  C0 5F 00 3C */	lfs f2, 0x3c(r31)
 /* 801E2C68 001DFA68  EC 21 00 28 */	fsubs f1, f1, f0
 /* 801E2C6C 001DFA6C  C0 1F 00 0C */	lfs f0, 0xc(r31)
 /* 801E2C70 001DFA70  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 801E2C74 001DFA74  D0 1F 00 0C */	stfs f0, 0xc(r31)
 /* 801E2C78 001DFA78  4B E2 46 AD */	bl xurand__Fv
-/* 801E2C7C 001DFA7C  C0 02 D3 EC */	lfs f0, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E2C7C 001DFA7C  C0 02 D3 EC */	lfs f0, _esc__2_1006_6@sda21(r2)
 /* 801E2C80 001DFA80  7F C3 F3 78 */	mr r3, r30
 /* 801E2C84 001DFA84  C0 5F 00 3C */	lfs f2, 0x3c(r31)
 /* 801E2C88 001DFA88  7F E4 FB 78 */	mr r4, r31
@@ -2796,21 +2796,21 @@ emit__174zParticleEmitterConeVolume_esc__0_143zParticleColorWhiteFadeOut_esc__0_
 /* 801E2CD0 001DFAD0  38 9F 00 30 */	addi r4, r31, 0x30
 /* 801E2CD4 001DFAD4  4B E2 83 D5 */	bl __as__5xVec3FRC5xVec3
 /* 801E2CD8 001DFAD8  4B E2 46 4D */	bl xurand__Fv
-/* 801E2CDC 001DFADC  C0 02 D3 EC */	lfs f0, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E2CDC 001DFADC  C0 02 D3 EC */	lfs f0, _esc__2_1006_6@sda21(r2)
 /* 801E2CE0 001DFAE0  C0 5F 00 3C */	lfs f2, 0x3c(r31)
 /* 801E2CE4 001DFAE4  EC 21 00 28 */	fsubs f1, f1, f0
 /* 801E2CE8 001DFAE8  C0 1F 00 04 */	lfs f0, 4(r31)
 /* 801E2CEC 001DFAEC  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 801E2CF0 001DFAF0  D0 1F 00 04 */	stfs f0, 4(r31)
 /* 801E2CF4 001DFAF4  4B E2 46 31 */	bl xurand__Fv
-/* 801E2CF8 001DFAF8  C0 02 D3 EC */	lfs f0, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E2CF8 001DFAF8  C0 02 D3 EC */	lfs f0, _esc__2_1006_6@sda21(r2)
 /* 801E2CFC 001DFAFC  C0 5F 00 3C */	lfs f2, 0x3c(r31)
 /* 801E2D00 001DFB00  EC 21 00 28 */	fsubs f1, f1, f0
 /* 801E2D04 001DFB04  C0 1F 00 08 */	lfs f0, 8(r31)
 /* 801E2D08 001DFB08  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 801E2D0C 001DFB0C  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 801E2D10 001DFB10  4B E2 46 15 */	bl xurand__Fv
-/* 801E2D14 001DFB14  C0 02 D3 EC */	lfs f0, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E2D14 001DFB14  C0 02 D3 EC */	lfs f0, _esc__2_1006_6@sda21(r2)
 /* 801E2D18 001DFB18  7F C3 F3 78 */	mr r3, r30
 /* 801E2D1C 001DFB1C  C0 5F 00 3C */	lfs f2, 0x3c(r31)
 /* 801E2D20 001DFB20  7F E4 FB 78 */	mr r4, r31
@@ -2846,7 +2846,7 @@ emit__112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticleP
 /* 801E2D8C 001DFB8C  4B E2 45 99 */	bl xurand__Fv
 /* 801E2D90 001DFB90  C0 7F 00 28 */	lfs f3, 0x28(r31)
 /* 801E2D94 001DFB94  C0 5F 00 24 */	lfs f2, 0x24(r31)
-/* 801E2D98 001DFB98  C0 02 D3 F0 */	lfs f0, _esc__2_1010_4-_SDA2_BASE_(r2)
+/* 801E2D98 001DFB98  C0 02 D3 F0 */	lfs f0, _esc__2_1010_4@sda21(r2)
 /* 801E2D9C 001DFB9C  EC 23 10 7A */	fmadds f1, f3, f1, f2
 /* 801E2DA0 001DFBA0  D0 3E 00 2C */	stfs f1, 0x2c(r30)
 /* 801E2DA4 001DFBA4  C0 3E 00 2C */	lfs f1, 0x2c(r30)
@@ -2854,9 +2854,9 @@ emit__112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticleP
 /* 801E2DAC 001DFBAC  40 80 00 08 */	bge lbl_801E2DB4
 /* 801E2DB0 001DFBB0  D0 1E 00 2C */	stfs f0, 0x2c(r30)
 lbl_801E2DB4:
-/* 801E2DB4 001DFBB4  C0 02 D3 C8 */	lfs f0, _esc__2_920_1-_SDA2_BASE_(r2)
+/* 801E2DB4 001DFBB4  C0 02 D3 C8 */	lfs f0, _esc__2_920_1@sda21(r2)
 /* 801E2DB8 001DFBB8  7F C3 F3 78 */	mr r3, r30
-/* 801E2DBC 001DFBBC  C0 22 D3 EC */	lfs f1, _esc__2_1006_6-_SDA2_BASE_(r2)
+/* 801E2DBC 001DFBBC  C0 22 D3 EC */	lfs f1, _esc__2_1006_6@sda21(r2)
 /* 801E2DC0 001DFBC0  7F E4 FB 78 */	mr r4, r31
 /* 801E2DC4 001DFBC4  D0 1E 00 28 */	stfs f0, 0x28(r30)
 /* 801E2DC8 001DFBC8  C0 1F 00 2C */	lfs f0, 0x2c(r31)
@@ -2881,7 +2881,7 @@ update_uv__213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitter
 /* 801E2E08 001DFC08  C0 3E 00 38 */	lfs f1, 0x38(r30)
 /* 801E2E0C 001DFC0C  C0 5E 00 3C */	lfs f2, 0x3c(r30)
 /* 801E2E10 001DFC10  4B E2 D5 39 */	bl assign__5xVec2Fff
-/* 801E2E14 001DFC14  C0 42 D4 14 */	lfs f2, _esc__2_1394_5-_SDA2_BASE_(r2)
+/* 801E2E14 001DFC14  C0 42 D4 14 */	lfs f2, _esc__2_1394_5@sda21(r2)
 /* 801E2E18 001DFC18  C0 3E 00 38 */	lfs f1, 0x38(r30)
 /* 801E2E1C 001DFC1C  C0 1E 00 3C */	lfs f0, 0x3c(r30)
 /* 801E2E20 001DFC20  80 7F 00 2C */	lwz r3, 0x2c(r31)
@@ -2899,10 +2899,10 @@ update_uv__213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitter
 update_render__151zParticleColorWhiteFadeOut_esc__0_120zParticleMoverLinearDecel_esc__0_91zParticleRadiusConst_esc__0_67zParticlePoolType_esc__0_30ptank_pool__pos_color_size_uv2_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1_FP30ptank_pool__pos_color_size_uv2:
 /* 801E2E48 001DFC48  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801E2E4C 001DFC4C  7C 08 02 A6 */	mflr r0
-/* 801E2E50 001DFC50  C0 42 D3 CC */	lfs f2, _esc__2_921-_SDA2_BASE_(r2)
+/* 801E2E50 001DFC50  C0 42 D3 CC */	lfs f2, _esc__2_921@sda21(r2)
 /* 801E2E54 001DFC54  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801E2E58 001DFC58  38 00 00 FF */	li r0, 0xff
-/* 801E2E5C 001DFC5C  C0 62 D4 18 */	lfs f3, _esc__2_1397_2-_SDA2_BASE_(r2)
+/* 801E2E5C 001DFC5C  C0 62 D4 18 */	lfs f3, _esc__2_1397_2@sda21(r2)
 /* 801E2E60 001DFC60  80 A4 00 24 */	lwz r5, 0x24(r4)
 /* 801E2E64 001DFC64  98 05 00 00 */	stb r0, 0(r5)
 /* 801E2E68 001DFC68  80 A4 00 24 */	lwz r5, 0x24(r4)
@@ -3077,7 +3077,7 @@ update_radius__89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptan
 update_render__149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1_FP26ptank_pool__pos_color_size:
 /* 801E30B8 001DFEB8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801E30BC 001DFEBC  7C 08 02 A6 */	mflr r0
-/* 801E30C0 001DFEC0  C0 42 D3 CC */	lfs f2, _esc__2_921-_SDA2_BASE_(r2)
+/* 801E30C0 001DFEC0  C0 42 D3 CC */	lfs f2, _esc__2_921@sda21(r2)
 /* 801E30C4 001DFEC4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801E30C8 001DFEC8  C0 23 00 30 */	lfs f1, 0x30(r3)
 /* 801E30CC 001DFECC  C0 03 00 34 */	lfs f0, 0x34(r3)
@@ -3154,10 +3154,10 @@ lbl_801E31B0:
 update_render__147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1_FP26ptank_pool__pos_color_size:
 /* 801E31CC 001DFFCC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801E31D0 001DFFD0  7C 08 02 A6 */	mflr r0
-/* 801E31D4 001DFFD4  C0 42 D3 CC */	lfs f2, _esc__2_921-_SDA2_BASE_(r2)
+/* 801E31D4 001DFFD4  C0 42 D3 CC */	lfs f2, _esc__2_921@sda21(r2)
 /* 801E31D8 001DFFD8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801E31DC 001DFFDC  38 00 00 FF */	li r0, 0xff
-/* 801E31E0 001DFFE0  C0 62 D4 18 */	lfs f3, _esc__2_1397_2-_SDA2_BASE_(r2)
+/* 801E31E0 001DFFE0  C0 62 D4 18 */	lfs f3, _esc__2_1397_2@sda21(r2)
 /* 801E31E4 001DFFE4  80 A4 00 24 */	lwz r5, 0x24(r4)
 /* 801E31E8 001DFFE8  98 05 00 00 */	stb r0, 0(r5)
 /* 801E31EC 001DFFEC  80 A4 00 24 */	lwz r5, 0x24(r4)
@@ -3184,10 +3184,10 @@ update_render__147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_e
 update_render__143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1_FP26ptank_pool__pos_color_size:
 /* 801E3238 001E0038  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801E323C 001E003C  7C 08 02 A6 */	mflr r0
-/* 801E3240 001E0040  C0 42 D3 CC */	lfs f2, _esc__2_921-_SDA2_BASE_(r2)
+/* 801E3240 001E0040  C0 42 D3 CC */	lfs f2, _esc__2_921@sda21(r2)
 /* 801E3244 001E0044  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801E3248 001E0048  38 00 00 FF */	li r0, 0xff
-/* 801E324C 001E004C  C0 62 D4 18 */	lfs f3, _esc__2_1397_2-_SDA2_BASE_(r2)
+/* 801E324C 001E004C  C0 62 D4 18 */	lfs f3, _esc__2_1397_2@sda21(r2)
 /* 801E3250 001E0050  80 A4 00 24 */	lwz r5, 0x24(r4)
 /* 801E3254 001E0054  98 05 00 00 */	stb r0, 0(r5)
 /* 801E3258 001E0058  80 A4 00 24 */	lwz r5, 0x24(r4)
@@ -3268,18 +3268,18 @@ lbl_801E334C:
 __sinit_zParticleFXCommon_cpp:
 /* 801E3368 001E0168  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801E336C 001E016C  7C 08 02 A6 */	mflr r0
-/* 801E3370 001E0170  38 6D DB C8 */	addi r3, r13, energy_pulse_system-_SDA_BASE_
+/* 801E3370 001E0170  38 6D DB C8 */	addi r3, r13, energy_pulse_system@sda21
 /* 801E3374 001E0174  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801E3378 001E0178  4B FF E8 51 */	bl __ct__17EnergyPulseSystemFv
-/* 801E337C 001E017C  38 6D DB D4 */	addi r3, r13, rubble_system-_SDA_BASE_
+/* 801E337C 001E017C  38 6D DB D4 */	addi r3, r13, rubble_system@sda21
 /* 801E3380 001E0180  4B FF E7 A9 */	bl __ct__12RubbleSystemFv
-/* 801E3384 001E0184  38 6D DB E0 */	addi r3, r13, flame_cone_system-_SDA_BASE_
+/* 801E3384 001E0184  38 6D DB E0 */	addi r3, r13, flame_cone_system@sda21
 /* 801E3388 001E0188  4B FF E7 01 */	bl __ct__15FlameConeSystemFv
-/* 801E338C 001E018C  38 6D DB EC */	addi r3, r13, smoke_puff_system-_SDA_BASE_
+/* 801E338C 001E018C  38 6D DB EC */	addi r3, r13, smoke_puff_system@sda21
 /* 801E3390 001E0190  4B FF E6 59 */	bl __ct__15SmokePuffSystemFv
-/* 801E3394 001E0194  38 6D DB F8 */	addi r3, r13, lava_drip_system-_SDA_BASE_
+/* 801E3394 001E0194  38 6D DB F8 */	addi r3, r13, lava_drip_system@sda21
 /* 801E3398 001E0198  4B FF E5 B1 */	bl __ct__14LavaDripSystemFv
-/* 801E339C 001E019C  38 6D DC 04 */	addi r3, r13, spark_system-_SDA_BASE_
+/* 801E339C 001E019C  38 6D DC 04 */	addi r3, r13, spark_system@sda21
 /* 801E33A0 001E01A0  4B FF E5 09 */	bl __ct__11SparkSystemFv
 /* 801E33A4 001E01A4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801E33A8 001E01A8  7C 08 03 A6 */	mtlr r0

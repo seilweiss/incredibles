@@ -30,13 +30,13 @@ getEnabled__12zCombatComboFv:
 init__12zCombatComboFv:
 /* 80090478 0008D278  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8009047C 0008D27C  7C 08 02 A6 */	mflr r0
-/* 80090480 0008D280  C0 02 94 F8 */	lfs f0, _esc__2_905_0-_SDA2_BASE_(r2)
+/* 80090480 0008D280  C0 02 94 F8 */	lfs f0, _esc__2_905_0@sda21(r2)
 /* 80090484 0008D284  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80090488 0008D288  38 00 00 00 */	li r0, 0
 /* 8009048C 0008D28C  98 03 02 14 */	stb r0, 0x214(r3)
 /* 80090490 0008D290  D0 03 02 0C */	stfs f0, 0x20c(r3)
 /* 80090494 0008D294  D0 03 02 10 */	stfs f0, 0x210(r3)
-/* 80090498 0008D298  C0 0D 89 C0 */	lfs f0, zCOMBAT_COMBO_THRESHOLD-_SDA_BASE_(r13)
+/* 80090498 0008D298  C0 0D 89 C0 */	lfs f0, zCOMBAT_COMBO_THRESHOLD@sda21(r13)
 /* 8009049C 0008D29C  D0 03 02 08 */	stfs f0, 0x208(r3)
 /* 800904A0 0008D2A0  48 00 00 15 */	bl clear_queue__23zQueue_esc__0_10zHitStruct_esc__4_64_esc__1_Fv
 /* 800904A4 0008D2A4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -60,7 +60,7 @@ update__12zCombatComboFf:
 /* 800904D4 0008D2D4  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 800904D8 0008D2D8  BF C1 00 08 */	stmw r30, 8(r1)
 /* 800904DC 0008D2DC  7C 7E 1B 78 */	mr r30, r3
-/* 800904E0 0008D2E0  C0 42 94 F8 */	lfs f2, _esc__2_905_0-_SDA2_BASE_(r2)
+/* 800904E0 0008D2E0  C0 42 94 F8 */	lfs f2, _esc__2_905_0@sda21(r2)
 /* 800904E4 0008D2E4  C0 03 02 10 */	lfs f0, 0x210(r3)
 /* 800904E8 0008D2E8  FF E0 08 90 */	fmr f31, f1
 /* 800904EC 0008D2EC  FC 00 10 00 */	fcmpu cr0, f0, f2
@@ -85,7 +85,7 @@ lbl_8009051C:
 /* 80090530 0008D330  EC 00 F8 2A */	fadds f0, f0, f31
 /* 80090534 0008D334  D0 03 00 04 */	stfs f0, 4(r3)
 /* 80090538 0008D338  C0 23 00 04 */	lfs f1, 4(r3)
-/* 8009053C 0008D33C  C0 0D 89 C0 */	lfs f0, zCOMBAT_COMBO_THRESHOLD-_SDA_BASE_(r13)
+/* 8009053C 0008D33C  C0 0D 89 C0 */	lfs f0, zCOMBAT_COMBO_THRESHOLD@sda21(r13)
 /* 80090540 0008D340  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80090544 0008D344  40 81 00 0C */	ble lbl_80090550
 /* 80090548 0008D348  7F C3 F3 78 */	mr r3, r30
@@ -186,7 +186,7 @@ get_size_queue__23zQueue_esc__0_10zHitStruct_esc__4_64_esc__1_CFv:
 add__12zCombatComboF11en_HIT_TYPE:
 /* 80090668 0008D468  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8009066C 0008D46C  7C 08 02 A6 */	mflr r0
-/* 80090670 0008D470  C0 02 94 F8 */	lfs f0, _esc__2_905_0-_SDA2_BASE_(r2)
+/* 80090670 0008D470  C0 02 94 F8 */	lfs f0, _esc__2_905_0@sda21(r2)
 /* 80090674 0008D474  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80090678 0008D478  C0 23 02 08 */	lfs f1, 0x208(r3)
 /* 8009067C 0008D47C  D0 23 02 10 */	stfs f1, 0x210(r3)

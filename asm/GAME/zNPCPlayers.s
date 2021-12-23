@@ -30,7 +30,7 @@ _esc__2_stringBase0_149:
 the_ball__4zNPC:
 	.skip 0x8
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global _esc__2_1365_1
 _esc__2_1365_1:
@@ -99,11 +99,11 @@ damage__Q24zNPC10health_hudFR17zCombatDamageInfo:
 /* 801E9500 001E6300  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 801E9504 001E6304  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 801E9508 001E6308  90 61 00 0C */	stw r3, 0xc(r1)
-/* 801E950C 001E630C  C8 42 D5 78 */	lfd f2, _esc__2_1291_7-_SDA2_BASE_(r2)
+/* 801E950C 001E630C  C8 42 D5 78 */	lfd f2, _esc__2_1291_7@sda21(r2)
 /* 801E9510 001E6310  C8 01 00 08 */	lfd f0, 8(r1)
 /* 801E9514 001E6314  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801E9518 001E6318  EC 20 10 28 */	fsubs f1, f0, f2
-/* 801E951C 001E631C  80 AD 91 D0 */	lwz r5, xglobals-_SDA_BASE_(r13)
+/* 801E951C 001E631C  80 AD 91 D0 */	lwz r5, xglobals@sda21(r13)
 /* 801E9520 001E6320  90 81 00 10 */	stw r4, 0x10(r1)
 /* 801E9524 001E6324  80 65 04 C4 */	lwz r3, 0x4c4(r5)
 /* 801E9528 001E6328  C8 01 00 10 */	lfd f0, 0x10(r1)
@@ -178,7 +178,7 @@ setup__Q24zNPC11incrediballFv:
 /* 801E9618 001E6418  4B FF FF B9 */	bl regular_setup__Q24zNPC11incrediballFv
 /* 801E961C 001E641C  48 01 0C 49 */	bl zIncrediBallSetup__Fv
 /* 801E9620 001E6420  38 7F 02 C0 */	addi r3, r31, 0x2c0
-/* 801E9624 001E6424  38 8D BA 80 */	addi r4, r13, g_I3-_SDA_BASE_
+/* 801E9624 001E6424  38 8D BA 80 */	addi r4, r13, g_I3@sda21
 /* 801E9628 001E6428  4B E1 C6 19 */	bl __as__7xMat4x3FRC7xMat4x3
 /* 801E962C 001E642C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801E9630 001E6430  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -214,9 +214,9 @@ damage__Q24zNPC11incrediballFRC17zCombatDamageInfo:
 /* 801E969C 001E649C  80 06 00 38 */	lwz r0, 0x38(r6)
 /* 801E96A0 001E64A0  90 01 00 10 */	stw r0, 0x10(r1)
 /* 801E96A4 001E64A4  4B E2 22 B1 */	bl __ami__5xVec3FRC5xVec3
-/* 801E96A8 001E64A8  C0 22 D5 80 */	lfs f1, _esc__2_1341_2-_SDA2_BASE_(r2)
+/* 801E96A8 001E64A8  C0 22 D5 80 */	lfs f1, _esc__2_1341_2@sda21(r2)
 /* 801E96AC 001E64AC  38 61 00 08 */	addi r3, r1, 8
-/* 801E96B0 001E64B0  C0 42 D5 84 */	lfs f2, _esc__2_1342_1-_SDA2_BASE_(r2)
+/* 801E96B0 001E64B0  C0 42 D5 84 */	lfs f2, _esc__2_1342_1@sda21(r2)
 /* 801E96B4 001E64B4  38 80 00 00 */	li r4, 0
 /* 801E96B8 001E64B8  48 01 0E AD */	bl zIncrediBallImpact__FRC5xVec3ffb
 lbl_801E96BC:
@@ -246,12 +246,12 @@ render_inards__Q24zNPC11incrediballFv:
 /* 801E9700 001E6500  7C 7E 1B 78 */	mr r30, r3
 /* 801E9704 001E6504  38 60 00 03 */	li r3, 3
 /* 801E9708 001E6508  4B F6 74 0D */	bl zRenderState__F14_SDRenderState
-/* 801E970C 001E650C  83 ED BB AC */	lwz r31, xModelBucketEnabled-_SDA_BASE_(r13)
+/* 801E970C 001E650C  83 ED BB AC */	lwz r31, xModelBucketEnabled@sda21(r13)
 /* 801E9710 001E6510  38 00 00 00 */	li r0, 0
 /* 801E9714 001E6514  7F C3 F3 78 */	mr r3, r30
-/* 801E9718 001E6518  90 0D BB AC */	stw r0, xModelBucketEnabled-_SDA_BASE_(r13)
+/* 801E9718 001E6518  90 0D BB AC */	stw r0, xModelBucketEnabled@sda21(r13)
 /* 801E971C 001E651C  4B FA 05 4D */	bl render_npc__Q24zNPC6commonFv
-/* 801E9720 001E6520  93 ED BB AC */	stw r31, xModelBucketEnabled-_SDA_BASE_(r13)
+/* 801E9720 001E6520  93 ED BB AC */	stw r31, xModelBucketEnabled@sda21(r13)
 /* 801E9724 001E6524  BB C1 00 08 */	lmw r30, 8(r1)
 /* 801E9728 001E6528  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801E972C 001E652C  7C 08 03 A6 */	mtlr r0
@@ -286,25 +286,25 @@ update_effect__Q24zNPC11incrediballFf:
 /* 801E9794 001E6594  90 81 00 44 */	stw r4, 0x44(r1)
 /* 801E9798 001E6598  90 01 00 48 */	stw r0, 0x48(r1)
 /* 801E979C 001E659C  4B E2 1C B9 */	bl length__5xVec3CFv
-/* 801E97A0 001E65A0  C0 02 D5 88 */	lfs f0, _esc__2_1371_1-_SDA2_BASE_(r2)
+/* 801E97A0 001E65A0  C0 02 D5 88 */	lfs f0, _esc__2_1371_1@sda21(r2)
 /* 801E97A4 001E65A4  38 61 00 40 */	addi r3, r1, 0x40
-/* 801E97A8 001E65A8  38 82 89 F0 */	addi r4, r2, g_O3-_SDA2_BASE_
+/* 801E97A8 001E65A8  38 82 89 F0 */	addi r4, r2, g_O3@sda21
 /* 801E97AC 001E65AC  EF E0 00 72 */	fmuls f31, f0, f1
 /* 801E97B0 001E65B0  4B E2 20 7D */	bl safe_normalize__5xVec3FRC5xVec3
 /* 801E97B4 001E65B4  38 61 00 10 */	addi r3, r1, 0x10
 /* 801E97B8 001E65B8  38 A1 00 40 */	addi r5, r1, 0x40
-/* 801E97BC 001E65BC  38 82 8A 08 */	addi r4, r2, g_Y3-_SDA2_BASE_
+/* 801E97BC 001E65BC  38 82 8A 08 */	addi r4, r2, g_Y3@sda21
 /* 801E97C0 001E65C0  4B E2 1F C9 */	bl cross__5xVec3CFRC5xVec3
 /* 801E97C4 001E65C4  80 C1 00 10 */	lwz r6, 0x10(r1)
 /* 801E97C8 001E65C8  38 61 00 34 */	addi r3, r1, 0x34
 /* 801E97CC 001E65CC  80 A1 00 14 */	lwz r5, 0x14(r1)
-/* 801E97D0 001E65D0  38 82 8A 14 */	addi r4, r2, g_Z3-_SDA2_BASE_
+/* 801E97D0 001E65D0  38 82 8A 14 */	addi r4, r2, g_Z3@sda21
 /* 801E97D4 001E65D4  80 01 00 18 */	lwz r0, 0x18(r1)
 /* 801E97D8 001E65D8  90 C1 00 34 */	stw r6, 0x34(r1)
 /* 801E97DC 001E65DC  90 A1 00 38 */	stw r5, 0x38(r1)
 /* 801E97E0 001E65E0  90 01 00 3C */	stw r0, 0x3c(r1)
 /* 801E97E4 001E65E4  4B E2 20 49 */	bl safe_normalize__5xVec3FRC5xVec3
-/* 801E97E8 001E65E8  C0 02 D5 80 */	lfs f0, _esc__2_1341_2-_SDA2_BASE_(r2)
+/* 801E97E8 001E65E8  C0 02 D5 80 */	lfs f0, _esc__2_1341_2@sda21(r2)
 /* 801E97EC 001E65EC  38 61 00 50 */	addi r3, r1, 0x50
 /* 801E97F0 001E65F0  38 81 00 34 */	addi r4, r1, 0x34
 /* 801E97F4 001E65F4  EC 20 07 F2 */	fmuls f1, f0, f31
@@ -320,24 +320,24 @@ update_effect__Q24zNPC11incrediballFf:
 /* 801E981C 001E661C  38 7F 02 F0 */	addi r3, r31, 0x2f0
 /* 801E9820 001E6620  38 84 00 30 */	addi r4, r4, 0x30
 /* 801E9824 001E6624  4B E2 18 85 */	bl __as__5xVec3FRC5xVec3
-/* 801E9828 001E6628  C0 42 D5 8C */	lfs f2, _esc__2_1372_2-_SDA2_BASE_(r2)
+/* 801E9828 001E6628  C0 42 D5 8C */	lfs f2, _esc__2_1372_2@sda21(r2)
 /* 801E982C 001E662C  38 7F 02 C0 */	addi r3, r31, 0x2c0
 /* 801E9830 001E6630  C0 3F 00 98 */	lfs f1, 0x98(r31)
 /* 801E9834 001E6634  C0 1F 02 F4 */	lfs f0, 0x2f4(r31)
 /* 801E9838 001E6638  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 801E983C 001E663C  D0 1F 02 F4 */	stfs f0, 0x2f4(r31)
 /* 801E9840 001E6640  48 01 0A 6D */	bl zIncrediBallMove__FRC7xMat4x3
-/* 801E9844 001E6644  80 C2 F7 80 */	lwz r6, _esc__2_1365_1-_SDA2_BASE_(r2)
+/* 801E9844 001E6644  80 C2 F7 80 */	lwz r6, _esc__2_1365_1@sda21(r2)
 /* 801E9848 001E6648  38 61 00 28 */	addi r3, r1, 0x28
-/* 801E984C 001E664C  80 A2 F7 84 */	lwz r5, lbl_803D94A4-_SDA2_BASE_(r2)
+/* 801E984C 001E664C  80 A2 F7 84 */	lwz r5, lbl_803D94A4@sda21(r2)
 /* 801E9850 001E6650  38 80 00 01 */	li r4, 1
-/* 801E9854 001E6654  80 02 F7 88 */	lwz r0, lbl_803D94A8-_SDA2_BASE_(r2)
+/* 801E9854 001E6654  80 02 F7 88 */	lwz r0, lbl_803D94A8@sda21(r2)
 /* 801E9858 001E6658  90 C1 00 28 */	stw r6, 0x28(r1)
-/* 801E985C 001E665C  C0 02 D5 90 */	lfs f0, _esc__2_1373_1-_SDA2_BASE_(r2)
+/* 801E985C 001E665C  C0 02 D5 90 */	lfs f0, _esc__2_1373_1@sda21(r2)
 /* 801E9860 001E6660  90 A1 00 2C */	stw r5, 0x2c(r1)
-/* 801E9864 001E6664  C0 22 D5 94 */	lfs f1, _esc__2_1374_2-_SDA2_BASE_(r2)
+/* 801E9864 001E6664  C0 22 D5 94 */	lfs f1, _esc__2_1374_2@sda21(r2)
 /* 801E9868 001E6668  90 01 00 30 */	stw r0, 0x30(r1)
-/* 801E986C 001E666C  C0 42 D5 98 */	lfs f2, _esc__2_1375_1-_SDA2_BASE_(r2)
+/* 801E986C 001E666C  C0 42 D5 98 */	lfs f2, _esc__2_1375_1@sda21(r2)
 /* 801E9870 001E6670  C0 7F 02 F0 */	lfs f3, 0x2f0(r31)
 /* 801E9874 001E6674  D0 61 00 28 */	stfs f3, 0x28(r1)
 /* 801E9878 001E6678  C0 7F 02 F4 */	lfs f3, 0x2f4(r31)
@@ -366,7 +366,7 @@ delayed_render_npc__4zNPCFv:
 /* 801E98C8 001E66C8  3C 60 80 1F */	lis r3, render_inards_callback__Q24zNPC11incrediballFPv@ha
 /* 801E98CC 001E66CC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801E98D0 001E66D0  38 63 96 D0 */	addi r3, r3, render_inards_callback__Q24zNPC11incrediballFPv@l
-/* 801E98D4 001E66D4  80 8D DC 48 */	lwz r4, the_ball__4zNPC-_SDA_BASE_(r13)
+/* 801E98D4 001E66D4  80 8D DC 48 */	lwz r4, the_ball__4zNPC@sda21(r13)
 /* 801E98D8 001E66D8  48 01 0A 4D */	bl zIncrediBallRender__FPFPv_vPv
 /* 801E98DC 001E66DC  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801E98E0 001E66E0  7C 08 03 A6 */	mtlr r0
@@ -379,7 +379,7 @@ render_npc__Q24zNPC11incrediballFv:
 /* 801E98F0 001E66F0  7C 08 02 A6 */	mflr r0
 /* 801E98F4 001E66F4  3C 80 80 38 */	lis r4, globals@ha
 /* 801E98F8 001E66F8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801E98FC 001E66FC  90 6D DC 48 */	stw r3, the_ball__4zNPC-_SDA_BASE_(r13)
+/* 801E98FC 001E66FC  90 6D DC 48 */	stw r3, the_ball__4zNPC@sda21(r13)
 /* 801E9900 001E6700  38 64 2A 38 */	addi r3, r4, globals@l
 /* 801E9904 001E6704  80 63 05 F4 */	lwz r3, 0x5f4(r3)
 /* 801E9908 001E6708  48 00 05 C1 */	bl zCutsceneMgrRunning__FP12zCutsceneMgr
@@ -476,7 +476,7 @@ setup__Q24zNPC10ice_effectFv:
 /* 801E9A30 001E6830  3C 60 80 2F */	lis r3, _esc__2_stringBase0_149@ha
 /* 801E9A34 001E6834  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801E9A38 001E6838  38 83 9F 10 */	addi r4, r3, _esc__2_stringBase0_149@l
-/* 801E9A3C 001E683C  C0 22 D5 94 */	lfs f1, _esc__2_1374_2-_SDA2_BASE_(r2)
+/* 801E9A3C 001E683C  C0 22 D5 94 */	lfs f1, _esc__2_1374_2@sda21(r2)
 /* 801E9A40 001E6840  80 65 00 0C */	lwz r3, 0xc(r5)
 /* 801E9A44 001E6844  38 A5 00 10 */	addi r5, r5, 0x10
 /* 801E9A48 001E6848  4B F1 4E 45 */	bl get_parameter__Q24zNPC4baseFPCcPff

@@ -5,5 +5,3 @@ __fini_cpp_exceptions_reference:
 .global __destroy_global_chain_reference
 __destroy_global_chain_reference:
     .long lbl_801FB58C
-.section .dtors$15
-	.skip 0x10

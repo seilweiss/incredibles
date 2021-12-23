@@ -126,12 +126,12 @@ lbl_80003268:
 .global __set_debug_bba
 __set_debug_bba:
 /* 80003278 00000278  38 00 00 01 */	li r0, 1
-/* 8000327C 0000027C  98 0D E3 50 */	stb r0, Debug_BBA-_SDA_BASE_(r13)
+/* 8000327C 0000027C  98 0D E3 50 */	stb r0, Debug_BBA@sda21(r13)
 /* 80003280 00000280  4E 80 00 20 */	blr 
 
 .global __get_debug_bba
 __get_debug_bba:
-/* 80003284 00000284  88 6D E3 50 */	lbz r3, Debug_BBA-_SDA_BASE_(r13)
+/* 80003284 00000284  88 6D E3 50 */	lbz r3, Debug_BBA@sda21(r13)
 /* 80003288 00000288  4E 80 00 20 */	blr 
 
 .global __start
@@ -2420,14 +2420,14 @@ lbl_80005544:
 /* 80005568 00002568  80 00 58 00 */	lwz r0, 0x5800(0)
 /* 8000556C 0000256C  80 00 58 00 */	lwz r0, 0x5800(0)
 /* 80005570 00002570  00 2C BE 50 */	.4byte 0x002CBE50  /* unknown instruction */
-/* 80005574 00002574  80 2D 16 60 */	lwz r1, _esc__2_3313_0-_SDA_BASE_(r13)
-/* 80005578 00002578  80 2D 16 60 */	lwz r1, _esc__2_3313_0-_SDA_BASE_(r13)
+/* 80005574 00002574  80 2D 16 60 */	.long _f_ctors
+/* 80005578 00002578  80 2D 16 60 */	.long _f_ctors
 /* 8000557C 0000257C  00 00 00 38 */	.4byte 0x00000038  /* unknown instruction */
-/* 80005580 00002580  80 2D 16 A0 */	lwz r1, lbl_803D4B20-_SDA_BASE_(r13)
-/* 80005584 00002584  80 2D 16 A0 */	lwz r1, lbl_803D4B20-_SDA_BASE_(r13)
+/* 80005580 00002580  80 2D 16 A0 */	.long _f_dtors
+/* 80005584 00002584  80 2D 16 A0 */	.long _f_dtors
 /* 80005588 00002588  00 00 00 10 */	.4byte 0x00000010  /* unknown instruction */
-/* 8000558C 0000258C  80 2D 16 C0 */	lwz r1, lbl_803D4B40-_SDA_BASE_(r13)
-/* 80005590 00002590  80 2D 16 C0 */	lwz r1, lbl_803D4B40-_SDA_BASE_(r13)
+/* 8000558C 0000258C  80 2D 16 C0 */	.long _f_rodata
+/* 80005590 00002590  80 2D 16 C0 */	.long _f_rodata
 /* 80005594 00002594  00 01 FA 60 */	.4byte 0x0001FA60  /* unknown instruction */
 /* 80005598 00002598  80 2F 11 20 */	lwz r1, 0x1120(r15)
 /* 8000559C 0000259C  80 2F 11 20 */	lwz r1, 0x1120(r15)
@@ -2450,9 +2450,3 @@ lbl_800055C8:
 /* 800055DC 000025DC  00 00 10 A4 */	.4byte 0x000010A4  /* unknown instruction */
 /* 800055E0 000025E0  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
 /* 800055E4 000025E4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 800055E8 000025E8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 800055EC 000025EC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 800055F0 000025F0  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 800055F4 000025F4  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 800055F8 000025F8  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */
-/* 800055FC 000025FC  00 00 00 00 */	.4byte 0x00000000  /* unknown instruction */

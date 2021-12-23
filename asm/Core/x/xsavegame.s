@@ -44,7 +44,7 @@ g_xsginit:
 g_autodata:
 	.skip 0x14
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global lbl_803D87DC
 lbl_803D87DC:
@@ -89,10 +89,10 @@ xSGStartup__Fv:
 /* 80056414 00053214  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80056418 00053218  7C 08 02 A6 */	mflr r0
 /* 8005641C 0005321C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80056420 00053220  80 6D BC 80 */	lwz r3, g_xsginit-_SDA_BASE_(r13)
+/* 80056420 00053220  80 6D BC 80 */	lwz r3, g_xsginit@sda21(r13)
 /* 80056424 00053224  38 03 00 01 */	addi r0, r3, 1
 /* 80056428 00053228  2C 03 00 00 */	cmpwi r3, 0
-/* 8005642C 0005322C  90 0D BC 80 */	stw r0, g_xsginit-_SDA_BASE_(r13)
+/* 8005642C 0005322C  90 0D BC 80 */	stw r0, g_xsginit@sda21(r13)
 /* 80056430 00053230  40 82 00 20 */	bne lbl_80056450
 /* 80056434 00053234  48 01 9F 61 */	bl xUtilStartup__Fv
 /* 80056438 00053238  48 02 5C 35 */	bl iSGStartup__Fv
@@ -104,7 +104,7 @@ xSGStartup__Fv:
 lbl_80056450:
 /* 80056450 00053250  48 00 22 75 */	bl xSGAutoSave_Startup__Fv
 /* 80056454 00053254  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 80056458 00053258  80 6D BC 80 */	lwz r3, g_xsginit-_SDA_BASE_(r13)
+/* 80056458 00053258  80 6D BC 80 */	lwz r3, g_xsginit@sda21(r13)
 /* 8005645C 0005325C  7C 08 03 A6 */	mtlr r0
 /* 80056460 00053260  38 21 00 10 */	addi r1, r1, 0x10
 /* 80056464 00053264  4E 80 00 20 */	blr 
@@ -114,15 +114,15 @@ xSGShutdown__Fv:
 /* 80056468 00053268  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8005646C 0005326C  7C 08 02 A6 */	mflr r0
 /* 80056470 00053270  90 01 00 14 */	stw r0, 0x14(r1)
-/* 80056474 00053274  80 6D BC 80 */	lwz r3, g_xsginit-_SDA_BASE_(r13)
+/* 80056474 00053274  80 6D BC 80 */	lwz r3, g_xsginit@sda21(r13)
 /* 80056478 00053278  34 03 FF FF */	addic. r0, r3, -1
-/* 8005647C 0005327C  90 0D BC 80 */	stw r0, g_xsginit-_SDA_BASE_(r13)
+/* 8005647C 0005327C  90 0D BC 80 */	stw r0, g_xsginit@sda21(r13)
 /* 80056480 00053280  40 82 00 0C */	bne lbl_8005648C
 /* 80056484 00053284  48 02 5C 29 */	bl iSGShutdown__Fv
 /* 80056488 00053288  48 01 9F 45 */	bl xUtilShutdown__Fv
 lbl_8005648C:
 /* 8005648C 0005328C  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 80056490 00053290  80 6D BC 80 */	lwz r3, g_xsginit-_SDA_BASE_(r13)
+/* 80056490 00053290  80 6D BC 80 */	lwz r3, g_xsginit@sda21(r13)
 /* 80056494 00053294  7C 08 03 A6 */	mtlr r0
 /* 80056498 00053298  38 21 00 10 */	addi r1, r1, 0x10
 /* 8005649C 0005329C  4E 80 00 20 */	blr 
@@ -589,7 +589,7 @@ xSGGameModDate__FP17st_XSAVEGAME_DATAi:
 /* 80056ABC 000538BC  BF C1 00 08 */	stmw r30, 8(r1)
 /* 80056AC0 000538C0  7C 7E 1B 78 */	mr r30, r3
 /* 80056AC4 000538C4  7C 9F 23 78 */	mr r31, r4
-/* 80056AC8 000538C8  98 0D 84 20 */	stb r0, da_date_esc__7_764-_SDA_BASE_(r13)
+/* 80056AC8 000538C8  98 0D 84 20 */	stb r0, da_date_esc__7_764@sda21(r13)
 /* 80056ACC 000538CC  48 00 0E 41 */	bl xSG_chdir_gamedir__FP17st_XSAVEGAME_DATA
 /* 80056AD0 000538D0  2C 03 00 00 */	cmpwi r3, 0
 /* 80056AD4 000538D4  41 82 00 48 */	beq lbl_80056B1C
@@ -603,17 +603,17 @@ xSGGameModDate__FP17st_XSAVEGAME_DATAi:
 /* 80056AF4 000538F4  28 03 00 00 */	cmplwi r3, 0
 /* 80056AF8 000538F8  41 82 00 14 */	beq lbl_80056B0C
 /* 80056AFC 000538FC  7C 64 1B 78 */	mr r4, r3
-/* 80056B00 00053900  38 6D 84 20 */	addi r3, r13, da_date_esc__7_764-_SDA_BASE_
+/* 80056B00 00053900  38 6D 84 20 */	addi r3, r13, da_date_esc__7_764@sda21
 /* 80056B04 00053904  48 26 59 F1 */	bl strcpy
 /* 80056B08 00053908  48 00 00 14 */	b lbl_80056B1C
 lbl_80056B0C:
 /* 80056B0C 0005390C  3C 80 80 2D */	lis r4, _esc__2_stringBase0_20@ha
-/* 80056B10 00053910  38 6D 84 20 */	addi r3, r13, da_date_esc__7_764-_SDA_BASE_
+/* 80056B10 00053910  38 6D 84 20 */	addi r3, r13, da_date_esc__7_764@sda21
 /* 80056B14 00053914  38 84 26 DC */	addi r4, r4, _esc__2_stringBase0_20@l
 /* 80056B18 00053918  48 26 59 DD */	bl strcpy
 lbl_80056B1C:
 /* 80056B1C 0005391C  BB C1 00 08 */	lmw r30, 8(r1)
-/* 80056B20 00053920  38 6D 84 20 */	addi r3, r13, da_date_esc__7_764-_SDA_BASE_
+/* 80056B20 00053920  38 6D 84 20 */	addi r3, r13, da_date_esc__7_764@sda21
 /* 80056B24 00053924  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80056B28 00053928  7C 08 03 A6 */	mtlr r0
 /* 80056B2C 0005392C  38 21 00 10 */	addi r1, r1, 0x10
@@ -1226,7 +1226,7 @@ lbl_80057324:
 /* 80057334 00054134  42 00 FF F0 */	bdnz lbl_80057324
 /* 80057338 00054138  38 00 00 02 */	li r0, 2
 /* 8005733C 0005413C  38 E1 00 04 */	addi r7, r1, 4
-/* 80057340 00054140  38 C2 8C 24 */	addi r6, r2, _esc__2_1169-_SDA2_BASE_
+/* 80057340 00054140  38 C2 8C 24 */	addi r6, r2, _esc__2_1169@sda21
 /* 80057344 00054144  7C 09 03 A6 */	mtctr r0
 lbl_80057348:
 /* 80057348 00054148  80 66 00 04 */	lwz r3, 4(r6)
@@ -1281,7 +1281,7 @@ xSG_cb_leader_load__FPvP17st_XSAVEGAME_DATAP24st_XSAVEGAME_READCONTEXTUii:
 /* 80057400 00054200  7C 9E 23 78 */	mr r30, r4
 /* 80057404 00054204  7C BF 2B 78 */	mr r31, r5
 /* 80057408 00054208  38 A1 00 04 */	addi r5, r1, 4
-/* 8005740C 0005420C  38 82 EA BC */	addi r4, r2, lbl_803D87DC-_SDA2_BASE_
+/* 8005740C 0005420C  38 82 EA BC */	addi r4, r2, lbl_803D87DC@sda21
 /* 80057410 00054210  7C 09 03 A6 */	mtctr r0
 lbl_80057414:
 /* 80057414 00054214  80 64 00 04 */	lwz r3, 4(r4)
@@ -1695,7 +1695,7 @@ xSG_cm_slotname__FP17st_XSAVEGAME_DATAi:
 /* 80057970 00054770  2C 04 09 A5 */	cmpwi r4, 0x9a5
 /* 80057974 00054774  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80057978 00054778  38 00 00 00 */	li r0, 0
-/* 8005797C 0005477C  98 0D 84 40 */	stb r0, slotname_esc__7_1200-_SDA_BASE_(r13)
+/* 8005797C 0005477C  98 0D 84 40 */	stb r0, slotname_esc__7_1200@sda21(r13)
 /* 80057980 00054780  40 82 00 18 */	bne lbl_80057998
 /* 80057984 00054784  38 60 00 02 */	li r3, 2
 /* 80057988 00054788  38 80 00 00 */	li r4, 0
@@ -1709,10 +1709,10 @@ lbl_80057998:
 /* 800579A4 000547A4  48 02 47 2D */	bl iSGMakeName__F15en_NAMEGEN_TYPEPCci
 lbl_800579A8:
 /* 800579A8 000547A8  7C 64 1B 78 */	mr r4, r3
-/* 800579AC 000547AC  38 6D 84 40 */	addi r3, r13, slotname_esc__7_1200-_SDA_BASE_
+/* 800579AC 000547AC  38 6D 84 40 */	addi r3, r13, slotname_esc__7_1200@sda21
 /* 800579B0 000547B0  48 26 4B 45 */	bl strcpy
 /* 800579B4 000547B4  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800579B8 000547B8  38 6D 84 40 */	addi r3, r13, slotname_esc__7_1200-_SDA_BASE_
+/* 800579B8 000547B8  38 6D 84 40 */	addi r3, r13, slotname_esc__7_1200@sda21
 /* 800579BC 000547BC  7C 08 03 A6 */	mtlr r0
 /* 800579C0 000547C0  38 21 00 10 */	addi r1, r1, 0x10
 /* 800579C4 000547C4  4E 80 00 20 */	blr 
@@ -1721,7 +1721,7 @@ lbl_800579A8:
 xSG_areaComposeLabel__FPciPci:
 /* 800579C8 000547C8  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 800579CC 000547CC  7C 08 02 A6 */	mflr r0
-/* 800579D0 000547D0  38 82 EA DC */	addi r4, r2, lbl_803D87FC-_SDA2_BASE_
+/* 800579D0 000547D0  38 82 EA DC */	addi r4, r2, lbl_803D87FC@sda21
 /* 800579D4 000547D4  90 01 00 54 */	stw r0, 0x54(r1)
 /* 800579D8 000547D8  38 00 00 08 */	li r0, 8
 /* 800579DC 000547DC  38 A1 00 04 */	addi r5, r1, 4
@@ -2148,7 +2148,7 @@ lbl_80057F4C:
 xSG_sv_commit__FP17st_XSAVEGAME_DATA:
 /* 80057FBC 00054DBC  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 80057FC0 00054DC0  7C 08 02 A6 */	mflr r0
-/* 80057FC4 00054DC4  38 82 EB 1C */	addi r4, r2, lbl_803D883C-_SDA2_BASE_
+/* 80057FC4 00054DC4  38 82 EB 1C */	addi r4, r2, lbl_803D883C@sda21
 /* 80057FC8 00054DC8  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80057FCC 00054DCC  38 00 00 08 */	li r0, 8
 /* 80057FD0 00054DD0  38 A1 00 04 */	addi r5, r1, 4
@@ -2648,7 +2648,7 @@ lbl_800586A4:
 
 .global xSGAutoSave_GetCache__Fv
 xSGAutoSave_GetCache__Fv:
-/* 800586BC 000554BC  38 6D BC 84 */	addi r3, r13, g_autodata-_SDA_BASE_
+/* 800586BC 000554BC  38 6D BC 84 */	addi r3, r13, g_autodata@sda21
 /* 800586C0 000554C0  4E 80 00 20 */	blr 
 
 .global xSGAutoSave_Startup__Fv

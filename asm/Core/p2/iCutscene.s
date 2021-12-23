@@ -327,7 +327,7 @@ iCSFileAsyncRead__FP9xCutscenePvUi:
 /* 80073774 00070574  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80073778 00070578  38 00 00 01 */	li r0, 1
 /* 8007377C 0007057C  38 C6 36 5C */	addi r6, r6, iCSAsyncReadCB__FP9tag_xFile@l
-/* 80073780 00070580  90 AD BF D8 */	stw r5, read_sizzze-_SDA_BASE_(r13)
+/* 80073780 00070580  90 AD BF D8 */	stw r5, read_sizzze@sda21(r13)
 /* 80073784 00070584  90 03 00 1C */	stw r0, 0x1c(r3)
 /* 80073788 00070588  38 63 00 54 */	addi r3, r3, 0x54
 /* 8007378C 0007058C  48 00 14 19 */	bl iFileReadAsync__FP9tag_xFilePvUiPFP9tag_xFile_vi
@@ -443,7 +443,7 @@ lbl_800738E8:
 /* 80073904 00070704  80 06 00 00 */	lwz r0, 0(r6)
 /* 80073908 00070708  28 00 00 06 */	cmplwi r0, 6
 /* 8007390C 0007070C  40 82 00 54 */	bne lbl_80073960
-/* 80073910 00070710  80 AD E6 54 */	lwz r5, RwEngineInstance-_SDA_BASE_(r13)
+/* 80073910 00070710  80 AD E6 54 */	lwz r5, RwEngineInstance@sda21(r13)
 /* 80073914 00070714  38 80 00 00 */	li r4, 0
 /* 80073918 00070718  80 66 00 08 */	lwz r3, 8(r6)
 /* 8007391C 0007071C  81 85 01 08 */	lwz r12, 0x108(r5)

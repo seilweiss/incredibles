@@ -205,13 +205,13 @@ Signal__3zUIFP5xBaseUi:
 /* 80168424 00165224  7C 7D 1B 78 */	mr r29, r3
 /* 80168428 00165228  7C 9E 23 78 */	mr r30, r4
 /* 8016842C 0016522C  7C BF 2B 78 */	mr r31, r5
-/* 80168430 00165230  88 0D DC A1 */	lbz r0, gSysMessageManager_active-_SDA_BASE_(r13)
+/* 80168430 00165230  88 0D DC A1 */	lbz r0, gSysMessageManager_active@sda21(r13)
 /* 80168434 00165234  28 00 00 00 */	cmplwi r0, 0
 /* 80168438 00165238  41 82 00 60 */	beq lbl_80168498
-/* 8016843C 0016523C  80 0D DC A4 */	lwz r0, pSysMessageManager-_SDA_BASE_(r13)
+/* 8016843C 0016523C  80 0D DC A4 */	lwz r0, pSysMessageManager@sda21(r13)
 /* 80168440 00165240  7C 00 E8 40 */	cmplw r0, r29
 /* 80168444 00165244  41 82 00 24 */	beq lbl_80168468
-/* 80168448 00165248  80 6D DC A8 */	lwz r3, pSysMessageManager_Custom-_SDA_BASE_(r13)
+/* 80168448 00165248  80 6D DC A8 */	lwz r3, pSysMessageManager_Custom@sda21(r13)
 /* 8016844C 0016524C  7F A4 EB 78 */	mr r4, r29
 /* 80168450 00165250  81 83 00 00 */	lwz r12, 0(r3)
 /* 80168454 00165254  81 8C 00 44 */	lwz r12, 0x44(r12)
@@ -220,10 +220,10 @@ Signal__3zUIFP5xBaseUi:
 /* 80168460 00165260  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80168464 00165264  41 82 01 9C */	beq lbl_80168600
 lbl_80168468:
-/* 80168468 00165268  80 0D DC A4 */	lwz r0, pSysMessageManager-_SDA_BASE_(r13)
+/* 80168468 00165268  80 0D DC A4 */	lwz r0, pSysMessageManager@sda21(r13)
 /* 8016846C 0016526C  7C 00 E8 40 */	cmplw r0, r29
 /* 80168470 00165270  40 82 00 28 */	bne lbl_80168498
-/* 80168474 00165274  80 6D DC A8 */	lwz r3, pSysMessageManager_Custom-_SDA_BASE_(r13)
+/* 80168474 00165274  80 6D DC A8 */	lwz r3, pSysMessageManager_Custom@sda21(r13)
 /* 80168478 00165278  7F E4 FB 78 */	mr r4, r31
 /* 8016847C 0016527C  81 83 00 00 */	lwz r12, 0(r3)
 /* 80168480 00165280  81 8C 00 48 */	lwz r12, 0x48(r12)
@@ -248,7 +248,7 @@ lbl_80168498:
 /* 801684C8 001652C8  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 801684CC 001652CC  41 82 01 34 */	beq lbl_80168600
 lbl_801684D0:
-/* 801684D0 001652D0  80 0D D0 20 */	lwz r0, signalHandler__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801684D0 001652D0  80 0D D0 20 */	lwz r0, signalHandler__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_@sda21(r13)
 /* 801684D4 001652D4  28 00 00 00 */	cmplwi r0, 0
 /* 801684D8 001652D8  40 82 00 AC */	bne lbl_80168584
 /* 801684DC 001652DC  57 FB 04 3E */	clrlwi r27, r31, 0x10
@@ -317,9 +317,9 @@ lbl_80168590:
 lbl_801685C0:
 /* 801685C0 001653C0  80 1D 00 08 */	lwz r0, 8(r29)
 /* 801685C4 001653C4  7F C3 F3 78 */	mr r3, r30
-/* 801685C8 001653C8  81 8D D0 20 */	lwz r12, signalHandler__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801685C8 001653C8  81 8D D0 20 */	lwz r12, signalHandler__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_@sda21(r13)
 /* 801685CC 001653CC  7D 00 E2 14 */	add r8, r0, r28
-/* 801685D0 001653D0  81 2D D0 24 */	lwz r9, signalUser__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801685D0 001653D0  81 2D D0 24 */	lwz r9, signalUser__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_@sda21(r13)
 /* 801685D4 001653D4  38 C8 00 08 */	addi r6, r8, 8
 /* 801685D8 001653D8  80 88 00 04 */	lwz r4, 4(r8)
 /* 801685DC 001653DC  A0 A8 00 02 */	lhz r5, 2(r8)
@@ -487,7 +487,7 @@ DoResetMotion__3zUIFv:
 /* 801687F0 001655F0  4B EA DA 4D */	bl __as__10xColor_tagFRC10xColor_tag
 /* 801687F4 001655F4  80 7F 00 10 */	lwz r3, 0x10(r31)
 /* 801687F8 001655F8  38 00 00 00 */	li r0, 0
-/* 801687FC 001655FC  C0 02 BA 80 */	lfs f0, _esc__2_1134_2-_SDA2_BASE_(r2)
+/* 801687FC 001655FC  C0 02 BA 80 */	lfs f0, _esc__2_1134_2@sda21(r2)
 /* 80168800 00165600  88 63 00 34 */	lbz r3, 0x34(r3)
 /* 80168804 00165604  98 7F 00 28 */	stb r3, 0x28(r31)
 /* 80168808 00165608  90 1F 00 60 */	stw r0, 0x60(r31)
@@ -722,7 +722,7 @@ lbl_80168B24:
 /* 80168B30 00165930  7C E4 3B 78 */	mr r4, r7
 /* 80168B34 00165934  38 A0 00 00 */	li r5, 0
 /* 80168B38 00165938  41 82 00 18 */	beq lbl_80168B50
-/* 80168B3C 0016593C  C0 22 BA 80 */	lfs f1, _esc__2_1134_2-_SDA2_BASE_(r2)
+/* 80168B3C 0016593C  C0 22 BA 80 */	lfs f1, _esc__2_1134_2@sda21(r2)
 /* 80168B40 00165940  C0 06 00 00 */	lfs f0, 0(r6)
 /* 80168B44 00165944  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 80168B48 00165948  41 82 00 08 */	beq lbl_80168B50
@@ -731,7 +731,7 @@ lbl_80168B50:
 /* 80168B50 00165950  28 06 00 00 */	cmplwi r6, 0
 /* 80168B54 00165954  38 00 00 00 */	li r0, 0
 /* 80168B58 00165958  41 82 00 18 */	beq lbl_80168B70
-/* 80168B5C 0016595C  C0 22 BA 80 */	lfs f1, _esc__2_1134_2-_SDA2_BASE_(r2)
+/* 80168B5C 0016595C  C0 22 BA 80 */	lfs f1, _esc__2_1134_2@sda21(r2)
 /* 80168B60 00165960  C0 06 00 04 */	lfs f0, 4(r6)
 /* 80168B64 00165964  FC 01 00 00 */	fcmpu cr0, f1, f0
 /* 80168B68 00165968  41 82 00 08 */	beq lbl_80168B70
@@ -778,12 +778,12 @@ DoUpdate__3zUIFf:
 /* 80168BE0 001659E0  DB E1 00 10 */	stfd f31, 0x10(r1)
 /* 80168BE4 001659E4  F3 E1 00 18 */	psq_st f31, 24(r1), 0, qr0
 /* 80168BE8 001659E8  BF C1 00 08 */	stmw r30, 8(r1)
-/* 80168BEC 001659EC  88 0D A0 E8 */	lbz r0, bAllowInput__3zUI-_SDA_BASE_(r13)
+/* 80168BEC 001659EC  88 0D A0 E8 */	lbz r0, bAllowInput__3zUI@sda21(r13)
 /* 80168BF0 001659F0  FF E0 08 90 */	fmr f31, f1
 /* 80168BF4 001659F4  7C 7E 1B 78 */	mr r30, r3
 /* 80168BF8 001659F8  28 00 00 00 */	cmplwi r0, 0
 /* 80168BFC 001659FC  40 82 00 14 */	bne lbl_80168C10
-/* 80168C00 00165A00  38 6D BF 68 */	addi r3, r13, gTrcPad-_SDA_BASE_
+/* 80168C00 00165A00  38 6D BF 68 */	addi r3, r13, gTrcPad@sda21
 /* 80168C04 00165A04  80 03 00 08 */	lwz r0, 8(r3)
 /* 80168C08 00165A08  2C 00 00 02 */	cmpwi r0, 2
 /* 80168C0C 00165A0C  41 82 02 50 */	beq lbl_80168E5C
@@ -797,7 +797,7 @@ lbl_80168C10:
 /* 80168C28 00165A28  54 00 06 B5 */	rlwinm. r0, r0, 0, 0x1a, 0x1a
 /* 80168C2C 00165A2C  41 82 02 30 */	beq lbl_80168E5C
 lbl_80168C30:
-/* 80168C30 00165A30  38 6D BF 68 */	addi r3, r13, gTrcPad-_SDA_BASE_
+/* 80168C30 00165A30  38 6D BF 68 */	addi r3, r13, gTrcPad@sda21
 /* 80168C34 00165A34  3C 80 80 38 */	lis r4, globals@ha
 /* 80168C38 00165A38  80 03 00 08 */	lwz r0, 8(r3)
 /* 80168C3C 00165A3C  38 64 2A 38 */	addi r3, r4, globals@l
@@ -993,7 +993,7 @@ StopMotion__3zUIFv:
 /* 80168ECC 00165CCC  D0 1F 00 64 */	stfs f0, 0x64(r31)
 /* 80168ED0 00165CD0  48 00 01 A9 */	bl ApplyMotion__3zUIFv
 lbl_80168ED4:
-/* 80168ED4 00165CD4  C0 02 BA 80 */	lfs f0, _esc__2_1134_2-_SDA2_BASE_(r2)
+/* 80168ED4 00165CD4  C0 02 BA 80 */	lfs f0, _esc__2_1134_2@sda21(r2)
 /* 80168ED8 00165CD8  38 00 00 00 */	li r0, 0
 /* 80168EDC 00165CDC  D0 1F 00 64 */	stfs f0, 0x64(r31)
 /* 80168EE0 00165CE0  90 1F 00 60 */	stw r0, 0x60(r31)
@@ -1029,7 +1029,7 @@ lbl_80168F24:
 lbl_80168F48:
 /* 80168F48 00165D48  7F A3 EB 78 */	mr r3, r29
 /* 80168F4C 00165D4C  48 00 00 39 */	bl InitMotion__3zUIFv
-/* 80168F50 00165D50  C0 02 BA 80 */	lfs f0, _esc__2_1134_2-_SDA2_BASE_(r2)
+/* 80168F50 00165D50  C0 02 BA 80 */	lfs f0, _esc__2_1134_2@sda21(r2)
 /* 80168F54 00165D54  38 00 00 00 */	li r0, 0
 /* 80168F58 00165D58  7F A3 EB 78 */	mr r3, r29
 /* 80168F5C 00165D5C  D0 1D 00 64 */	stfs f0, 0x64(r29)
@@ -1082,7 +1082,7 @@ CalcAcceleratedDistance__3zUIFffffff:
 /* 80168FF8 00165DF8  ED 64 18 28 */	fsubs f11, f4, f3
 /* 80168FFC 00165DFC  C1 23 00 64 */	lfs f9, 0x64(r3)
 /* 80169000 00165E00  EC E5 30 2A */	fadds f7, f5, f6
-/* 80169004 00165E04  C1 02 BA 84 */	lfs f8, _esc__2_1289_3-_SDA2_BASE_(r2)
+/* 80169004 00165E04  C1 02 BA 84 */	lfs f8, _esc__2_1289_3@sda21(r2)
 /* 80169008 00165E08  EC 03 28 2A */	fadds f0, f3, f5
 /* 8016900C 00165E0C  ED 49 18 28 */	fsubs f10, f9, f3
 /* 80169010 00165E10  EC 68 59 FC */	fnmsubs f3, f8, f7, f11
@@ -1131,7 +1131,7 @@ ApplyMotion__3zUIFv:
 /* 801690A8 00165EA8  38 80 00 00 */	li r4, 0
 /* 801690AC 00165EAC  38 A0 00 34 */	li r5, 0x34
 /* 801690B0 00165EB0  4B ED 92 81 */	bl xMemorySetV32A32__FPvUiUi
-/* 801690B4 00165EB4  C0 02 BA 88 */	lfs f0, _esc__2_1458_0-_SDA2_BASE_(r2)
+/* 801690B4 00165EB4  C0 02 BA 88 */	lfs f0, _esc__2_1458_0@sda21(r2)
 /* 801690B8 00165EB8  38 61 00 44 */	addi r3, r1, 0x44
 /* 801690BC 00165EBC  38 9B 00 24 */	addi r4, r27, 0x24
 /* 801690C0 00165EC0  D0 01 00 20 */	stfs f0, 0x20(r1)
@@ -1143,7 +1143,7 @@ ApplyMotion__3zUIFv:
 /* 801690D8 00165ED8  4B EA D1 65 */	bl __as__10xColor_tagFRC10xColor_tag
 /* 801690DC 00165EDC  88 1B 00 28 */	lbz r0, 0x28(r27)
 /* 801690E0 00165EE0  3B E0 00 00 */	li r31, 0
-/* 801690E4 00165EE4  C3 E2 BA 80 */	lfs f31, _esc__2_1134_2-_SDA2_BASE_(r2)
+/* 801690E4 00165EE4  C3 E2 BA 80 */	lfs f31, _esc__2_1134_2@sda21(r2)
 /* 801690E8 00165EE8  98 01 00 48 */	stb r0, 0x48(r1)
 /* 801690EC 00165EEC  80 7B 00 60 */	lwz r3, 0x60(r27)
 /* 801690F0 00165EF0  C0 1B 00 64 */	lfs f0, 0x64(r27)
@@ -1159,7 +1159,7 @@ ApplyMotion__3zUIFv:
 /* 80169118 00165F18  EC 1F 10 24 */	fdivs f0, f31, f2
 /* 8016911C 00165F1C  3C 00 43 30 */	lis r0, 0x4330
 /* 80169120 00165F20  90 01 00 58 */	stw r0, 0x58(r1)
-/* 80169124 00165F24  C8 22 BA 98 */	lfd f1, _esc__2_1463_1-_SDA2_BASE_(r2)
+/* 80169124 00165F24  C8 22 BA 98 */	lfd f1, _esc__2_1463_1@sda21(r2)
 /* 80169128 00165F28  FC 00 00 1E */	fctiwz f0, f0
 /* 8016912C 00165F2C  D8 01 00 50 */	stfd f0, 0x50(r1)
 /* 80169130 00165F30  80 01 00 54 */	lwz r0, 0x54(r1)
@@ -1240,7 +1240,7 @@ lbl_801691E0:
 /* 8016924C 0016604C  4C 41 13 82 */	cror 2, 1, 2
 /* 80169250 00166050  40 82 06 88 */	bne lbl_801698D8
 /* 80169254 00166054  C0 9E 00 08 */	lfs f4, 8(r30)
-/* 80169258 00166058  C3 C2 BA 88 */	lfs f30, _esc__2_1458_0-_SDA2_BASE_(r2)
+/* 80169258 00166058  C3 C2 BA 88 */	lfs f30, _esc__2_1458_0@sda21(r2)
 /* 8016925C 0016605C  FC 01 20 40 */	fcmpo cr0, f1, f4
 /* 80169260 00166060  FF A0 F0 90 */	fmr f29, f30
 /* 80169264 00166064  4C 41 13 82 */	cror 2, 1, 2
@@ -1257,7 +1257,7 @@ lbl_80169280:
 /* 8016928C 0016608C  EC 40 F0 28 */	fsubs f2, f0, f30
 /* 80169290 00166090  C0 DE 00 10 */	lfs f6, 0x10(r30)
 /* 80169294 00166094  4B FF FD 65 */	bl CalcAcceleratedDistance__3zUIFffffff
-/* 80169298 00166098  C0 42 BA 88 */	lfs f2, _esc__2_1458_0-_SDA2_BASE_(r2)
+/* 80169298 00166098  C0 42 BA 88 */	lfs f2, _esc__2_1458_0@sda21(r2)
 /* 8016929C 0016609C  7F 63 DB 78 */	mr r3, r27
 /* 801692A0 001660A0  C0 1E 00 1C */	lfs f0, 0x1c(r30)
 /* 801692A4 001660A4  EC A2 08 2A */	fadds f5, f2, f1
@@ -1269,7 +1269,7 @@ lbl_80169280:
 /* 801692BC 001660BC  C0 BE 00 0C */	lfs f5, 0xc(r30)
 /* 801692C0 001660C0  C0 DE 00 10 */	lfs f6, 0x10(r30)
 /* 801692C4 001660C4  4B FF FD 35 */	bl CalcAcceleratedDistance__3zUIFffffff
-/* 801692C8 001660C8  C0 02 BA 88 */	lfs f0, _esc__2_1458_0-_SDA2_BASE_(r2)
+/* 801692C8 001660C8  C0 02 BA 88 */	lfs f0, _esc__2_1458_0@sda21(r2)
 /* 801692CC 001660CC  EC 00 08 2A */	fadds f0, f0, f1
 /* 801692D0 001660D0  EF BD 00 32 */	fmuls f29, f29, f0
 lbl_801692D4:
@@ -1277,14 +1277,14 @@ lbl_801692D4:
 /* 801692D8 001660D8  28 00 00 00 */	cmplwi r0, 0
 /* 801692DC 001660DC  41 82 00 54 */	beq lbl_80169330
 /* 801692E0 001660E0  C0 9E 00 24 */	lfs f4, 0x24(r30)
-/* 801692E4 001660E4  C0 22 BA 80 */	lfs f1, _esc__2_1134_2-_SDA2_BASE_(r2)
+/* 801692E4 001660E4  C0 22 BA 80 */	lfs f1, _esc__2_1134_2@sda21(r2)
 /* 801692E8 001660E8  FC 04 08 00 */	fcmpu cr0, f4, f1
 /* 801692EC 001660EC  40 82 00 10 */	bne lbl_801692FC
 /* 801692F0 001660F0  C0 1E 00 28 */	lfs f0, 0x28(r30)
 /* 801692F4 001660F4  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 801692F8 001660F8  41 82 00 2C */	beq lbl_80169324
 lbl_801692FC:
-/* 801692FC 001660FC  C0 42 BA 88 */	lfs f2, _esc__2_1458_0-_SDA2_BASE_(r2)
+/* 801692FC 001660FC  C0 42 BA 88 */	lfs f2, _esc__2_1458_0@sda21(r2)
 /* 80169300 00166100  C0 21 00 18 */	lfs f1, 0x18(r1)
 /* 80169304 00166104  EC 7E 10 28 */	fsubs f3, f30, f2
 /* 80169308 00166108  C0 01 00 1C */	lfs f0, 0x1c(r1)
@@ -1331,7 +1331,7 @@ lbl_80169384:
 /* 801693A0 001661A0  D0 01 00 38 */	stfs f0, 0x38(r1)
 lbl_801693A4:
 /* 801693A4 001661A4  C0 61 00 38 */	lfs f3, 0x38(r1)
-/* 801693A8 001661A8  C0 22 BA 80 */	lfs f1, _esc__2_1134_2-_SDA2_BASE_(r2)
+/* 801693A8 001661A8  C0 22 BA 80 */	lfs f1, _esc__2_1134_2@sda21(r2)
 /* 801693AC 001661AC  FC 03 08 00 */	fcmpu cr0, f3, f1
 /* 801693B0 001661B0  41 82 05 28 */	beq lbl_801698D8
 /* 801693B4 001661B4  C0 1E 00 1C */	lfs f0, 0x1c(r30)
@@ -1341,14 +1341,14 @@ lbl_801693A4:
 /* 801693C4 001661C4  FC 00 08 00 */	fcmpu cr0, f0, f1
 /* 801693C8 001661C8  41 82 05 10 */	beq lbl_801698D8
 lbl_801693CC:
-/* 801693CC 001661CC  C0 02 BA 80 */	lfs f0, _esc__2_1134_2-_SDA2_BASE_(r2)
+/* 801693CC 001661CC  C0 02 BA 80 */	lfs f0, _esc__2_1134_2@sda21(r2)
 /* 801693D0 001661D0  FC 03 00 40 */	fcmpo cr0, f3, f0
 /* 801693D4 001661D4  40 81 00 40 */	ble lbl_80169414
 /* 801693D8 001661D8  FC 00 18 1E */	fctiwz f0, f3
 /* 801693DC 001661DC  3C 00 43 30 */	lis r0, 0x4330
 /* 801693E0 001661E0  38 60 01 68 */	li r3, 0x168
 /* 801693E4 001661E4  90 01 00 50 */	stw r0, 0x50(r1)
-/* 801693E8 001661E8  C8 22 BA 98 */	lfd f1, _esc__2_1463_1-_SDA2_BASE_(r2)
+/* 801693E8 001661E8  C8 22 BA 98 */	lfd f1, _esc__2_1463_1@sda21(r2)
 /* 801693EC 001661EC  D8 01 00 58 */	stfd f0, 0x58(r1)
 /* 801693F0 001661F0  80 01 00 5C */	lwz r0, 0x5c(r1)
 /* 801693F4 001661F4  7C 00 1B D6 */	divw r0, r0, r3
@@ -1364,9 +1364,9 @@ lbl_80169414:
 /* 80169418 00166218  3C 00 43 30 */	lis r0, 0x4330
 /* 8016941C 0016621C  38 60 01 68 */	li r3, 0x168
 /* 80169420 00166220  90 01 00 68 */	stw r0, 0x68(r1)
-/* 80169424 00166224  C8 22 BA 98 */	lfd f1, _esc__2_1463_1-_SDA2_BASE_(r2)
+/* 80169424 00166224  C8 22 BA 98 */	lfd f1, _esc__2_1463_1@sda21(r2)
 /* 80169428 00166228  D8 01 00 60 */	stfd f0, 0x60(r1)
-/* 8016942C 0016622C  C0 42 BA 8C */	lfs f2, _esc__2_1459-_SDA2_BASE_(r2)
+/* 8016942C 0016622C  C0 42 BA 8C */	lfs f2, _esc__2_1459@sda21(r2)
 /* 80169430 00166230  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80169434 00166234  7C 00 1B D6 */	divw r0, r0, r3
 /* 80169438 00166238  1C 00 01 68 */	mulli r0, r0, 0x168
@@ -1377,8 +1377,8 @@ lbl_80169414:
 /* 8016944C 0016624C  EC 02 00 28 */	fsubs f0, f2, f0
 /* 80169450 00166250  EC 43 00 2A */	fadds f2, f3, f0
 lbl_80169454:
-/* 80169454 00166254  C0 02 BA 8C */	lfs f0, _esc__2_1459-_SDA2_BASE_(r2)
-/* 80169458 00166258  C0 22 BA 90 */	lfs f1, _esc__2_1460_0-_SDA2_BASE_(r2)
+/* 80169454 00166254  C0 02 BA 8C */	lfs f0, _esc__2_1459@sda21(r2)
+/* 80169458 00166258  C0 22 BA 90 */	lfs f1, _esc__2_1460_0@sda21(r2)
 /* 8016945C 0016625C  EC 00 10 28 */	fsubs f0, f0, f2
 /* 80169460 00166260  EF C1 00 32 */	fmuls f30, f1, f0
 /* 80169464 00166264  FC 20 F0 90 */	fmr f1, f30
@@ -1424,7 +1424,7 @@ lbl_801694F8:
 /* 80169500 00166300  88 7E 00 19 */	lbz r3, 0x19(r30)
 /* 80169504 00166304  90 01 00 68 */	stw r0, 0x68(r1)
 /* 80169508 00166308  7C 04 18 50 */	subf r0, r4, r3
-/* 8016950C 0016630C  C8 42 BA 98 */	lfd f2, _esc__2_1463_1-_SDA2_BASE_(r2)
+/* 8016950C 0016630C  C8 42 BA 98 */	lfd f2, _esc__2_1463_1@sda21(r2)
 /* 80169510 00166310  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 80169514 00166314  C0 BE 00 0C */	lfs f5, 0xc(r30)
 /* 80169518 00166318  90 01 00 6C */	stw r0, 0x6c(r1)
@@ -1436,7 +1436,7 @@ lbl_801694F8:
 /* 80169530 00166330  88 7E 00 18 */	lbz r3, 0x18(r30)
 /* 80169534 00166334  3C 00 43 30 */	lis r0, 0x4330
 /* 80169538 00166338  90 01 00 60 */	stw r0, 0x60(r1)
-/* 8016953C 0016633C  C8 42 BA A0 */	lfd f2, _esc__2_1467_4-_SDA2_BASE_(r2)
+/* 8016953C 0016633C  C8 42 BA A0 */	lfd f2, _esc__2_1467_4@sda21(r2)
 /* 80169540 00166340  90 61 00 64 */	stw r3, 0x64(r1)
 /* 80169544 00166344  C8 01 00 60 */	lfd f0, 0x60(r1)
 /* 80169548 00166348  EC 00 10 28 */	fsubs f0, f0, f2
@@ -1514,7 +1514,7 @@ lbl_8016964C:
 /* 80169654 00166454  88 7E 00 19 */	lbz r3, 0x19(r30)
 /* 80169658 00166458  90 01 00 68 */	stw r0, 0x68(r1)
 /* 8016965C 0016645C  7C 04 18 50 */	subf r0, r4, r3
-/* 80169660 00166460  C8 42 BA 98 */	lfd f2, _esc__2_1463_1-_SDA2_BASE_(r2)
+/* 80169660 00166460  C8 42 BA 98 */	lfd f2, _esc__2_1463_1@sda21(r2)
 /* 80169664 00166464  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 80169668 00166468  C0 BE 00 0C */	lfs f5, 0xc(r30)
 /* 8016966C 0016646C  90 01 00 6C */	stw r0, 0x6c(r1)
@@ -1526,7 +1526,7 @@ lbl_8016964C:
 /* 80169684 00166484  88 7E 00 18 */	lbz r3, 0x18(r30)
 /* 80169688 00166488  3C 00 43 30 */	lis r0, 0x4330
 /* 8016968C 0016648C  90 01 00 60 */	stw r0, 0x60(r1)
-/* 80169690 00166490  C8 42 BA A0 */	lfd f2, _esc__2_1467_4-_SDA2_BASE_(r2)
+/* 80169690 00166490  C8 42 BA A0 */	lfd f2, _esc__2_1467_4@sda21(r2)
 /* 80169694 00166494  90 61 00 64 */	stw r3, 0x64(r1)
 /* 80169698 00166498  C8 01 00 60 */	lfd f0, 0x60(r1)
 /* 8016969C 0016649C  EC 00 10 28 */	fsubs f0, f0, f2
@@ -1562,7 +1562,7 @@ lbl_80169708:
 /* 80169710 00166510  88 7E 00 1B */	lbz r3, 0x1b(r30)
 /* 80169714 00166514  90 01 00 68 */	stw r0, 0x68(r1)
 /* 80169718 00166518  7C 04 18 50 */	subf r0, r4, r3
-/* 8016971C 0016651C  C8 42 BA 98 */	lfd f2, _esc__2_1463_1-_SDA2_BASE_(r2)
+/* 8016971C 0016651C  C8 42 BA 98 */	lfd f2, _esc__2_1463_1@sda21(r2)
 /* 80169720 00166520  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 80169724 00166524  C0 BE 00 0C */	lfs f5, 0xc(r30)
 /* 80169728 00166528  90 01 00 6C */	stw r0, 0x6c(r1)
@@ -1578,7 +1578,7 @@ lbl_80169708:
 /* 80169750 00166550  90 01 00 60 */	stw r0, 0x60(r1)
 /* 80169754 00166554  7F 63 DB 78 */	mr r3, r27
 /* 80169758 00166558  7C 05 20 50 */	subf r0, r5, r4
-/* 8016975C 0016655C  C8 42 BA 98 */	lfd f2, _esc__2_1463_1-_SDA2_BASE_(r2)
+/* 8016975C 0016655C  C8 42 BA 98 */	lfd f2, _esc__2_1463_1@sda21(r2)
 /* 80169760 00166560  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 80169764 00166564  90 01 00 64 */	stw r0, 0x64(r1)
 /* 80169768 00166568  C0 3B 00 64 */	lfs f1, 0x64(r27)
@@ -1596,7 +1596,7 @@ lbl_80169708:
 /* 80169798 00166598  90 01 00 58 */	stw r0, 0x58(r1)
 /* 8016979C 0016659C  7F 63 DB 78 */	mr r3, r27
 /* 801697A0 001665A0  7C 05 20 50 */	subf r0, r5, r4
-/* 801697A4 001665A4  C8 42 BA 98 */	lfd f2, _esc__2_1463_1-_SDA2_BASE_(r2)
+/* 801697A4 001665A4  C8 42 BA 98 */	lfd f2, _esc__2_1463_1@sda21(r2)
 /* 801697A8 001665A8  6C 00 80 00 */	xoris r0, r0, 0x8000
 /* 801697AC 001665AC  90 01 00 5C */	stw r0, 0x5c(r1)
 /* 801697B0 001665B0  C0 3B 00 64 */	lfs f1, 0x64(r27)
@@ -1610,7 +1610,7 @@ lbl_80169708:
 /* 801697D0 001665D0  88 7E 00 18 */	lbz r3, 0x18(r30)
 /* 801697D4 001665D4  3C 00 43 30 */	lis r0, 0x4330
 /* 801697D8 001665D8  90 01 00 50 */	stw r0, 0x50(r1)
-/* 801697DC 001665DC  C8 42 BA A0 */	lfd f2, _esc__2_1467_4-_SDA2_BASE_(r2)
+/* 801697DC 001665DC  C8 42 BA A0 */	lfd f2, _esc__2_1467_4@sda21(r2)
 /* 801697E0 001665E0  90 61 00 54 */	stw r3, 0x54(r1)
 /* 801697E4 001665E4  C8 01 00 50 */	lfd f0, 0x50(r1)
 /* 801697E8 001665E8  90 01 00 78 */	stw r0, 0x78(r1)
@@ -1732,12 +1732,12 @@ lbl_80169988:
 /* 801699A4 001667A4  80 1B 00 60 */	lwz r0, 0x60(r27)
 /* 801699A8 001667A8  7C 1C 00 40 */	cmplw r28, r0
 /* 801699AC 001667AC  41 82 00 08 */	beq lbl_801699B4
-/* 801699B0 001667B0  C3 E2 BA 80 */	lfs f31, _esc__2_1134_2-_SDA2_BASE_(r2)
+/* 801699B0 001667B0  C3 E2 BA 80 */	lfs f31, _esc__2_1134_2@sda21(r2)
 lbl_801699B4:
 /* 801699B4 001667B4  80 7B 00 60 */	lwz r3, 0x60(r27)
 /* 801699B8 001667B8  28 03 00 00 */	cmplwi r3, 0
 /* 801699BC 001667BC  41 82 00 3C */	beq lbl_801699F8
-/* 801699C0 001667C0  C0 42 BA 80 */	lfs f2, _esc__2_1134_2-_SDA2_BASE_(r2)
+/* 801699C0 001667C0  C0 42 BA 80 */	lfs f2, _esc__2_1134_2@sda21(r2)
 /* 801699C4 001667C4  FC 1F 10 40 */	fcmpo cr0, f31, f2
 /* 801699C8 001667C8  40 81 00 30 */	ble lbl_801699F8
 /* 801699CC 001667CC  C0 03 00 14 */	lfs f0, 0x14(r3)
@@ -1882,11 +1882,11 @@ DoApplyMotionFrame__3zUIFPC14zUIMotionFrame:
 /* 80169BB4 001669B4  EC 01 00 2A */	fadds f0, f1, f0
 /* 80169BB8 001669B8  C0 3F 00 0C */	lfs f1, 0xc(r31)
 /* 80169BBC 001669BC  D0 1E 00 14 */	stfs f0, 0x14(r30)
-/* 80169BC0 001669C0  C0 02 BA 88 */	lfs f0, _esc__2_1458_0-_SDA2_BASE_(r2)
+/* 80169BC0 001669C0  C0 02 BA 88 */	lfs f0, _esc__2_1458_0@sda21(r2)
 /* 80169BC4 001669C4  C0 9E 00 30 */	lfs f4, 0x30(r30)
 /* 80169BC8 001669C8  EC A6 00 28 */	fsubs f5, f6, f0
 /* 80169BCC 001669CC  ED 04 10 2A */	fadds f8, f4, f2
-/* 80169BD0 001669D0  C0 82 BA 84 */	lfs f4, _esc__2_1289_3-_SDA2_BASE_(r2)
+/* 80169BD0 001669D0  C0 82 BA 84 */	lfs f4, _esc__2_1289_3@sda21(r2)
 /* 80169BD4 001669D4  EC 43 00 28 */	fsubs f2, f3, f0
 /* 80169BD8 001669D8  D1 1E 00 18 */	stfs f8, 0x18(r30)
 /* 80169BDC 001669DC  C0 1E 00 34 */	lfs f0, 0x34(r30)
@@ -1962,10 +1962,10 @@ lbl_80169CC4:
 /* 80169CE0 00166AE0  3B DE 00 01 */	addi r30, r30, 1
 /* 80169CE4 00166AE4  41 80 FF 9C */	blt lbl_80169C80
 lbl_80169CE8:
-/* 80169CE8 00166AE8  88 0D DC A1 */	lbz r0, gSysMessageManager_active-_SDA_BASE_(r13)
+/* 80169CE8 00166AE8  88 0D DC A1 */	lbz r0, gSysMessageManager_active@sda21(r13)
 /* 80169CEC 00166AEC  28 00 00 00 */	cmplwi r0, 0
 /* 80169CF0 00166AF0  41 82 00 34 */	beq lbl_80169D24
-/* 80169CF4 00166AF4  80 6D DC A8 */	lwz r3, pSysMessageManager_Custom-_SDA_BASE_(r13)
+/* 80169CF4 00166AF4  80 6D DC A8 */	lwz r3, pSysMessageManager_Custom@sda21(r13)
 /* 80169CF8 00166AF8  7F 44 D3 78 */	mr r4, r26
 /* 80169CFC 00166AFC  81 83 00 00 */	lwz r12, 0(r3)
 /* 80169D00 00166B00  81 8C 00 44 */	lwz r12, 0x44(r12)
@@ -1973,7 +1973,7 @@ lbl_80169CE8:
 /* 80169D08 00166B08  4E 80 04 21 */	bctrl 
 /* 80169D0C 00166B0C  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80169D10 00166B10  41 82 01 14 */	beq lbl_80169E24
-/* 80169D14 00166B14  88 0D DC A0 */	lbz r0, gDontAutoMenu-_SDA_BASE_(r13)
+/* 80169D14 00166B14  88 0D DC A0 */	lbz r0, gDontAutoMenu@sda21(r13)
 /* 80169D18 00166B18  28 00 00 00 */	cmplwi r0, 0
 /* 80169D1C 00166B1C  41 82 00 08 */	beq lbl_80169D24
 /* 80169D20 00166B20  48 00 01 04 */	b lbl_80169E24
@@ -2249,15 +2249,15 @@ zUIAllocStaticMemory__FUi:
 /* 8016A0CC 00166ECC  7C 08 02 A6 */	mflr r0
 /* 8016A0D0 00166ED0  7C 64 1B 78 */	mr r4, r3
 /* 8016A0D4 00166ED4  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8016A0D8 00166ED8  81 8D D0 18 */	lwz r12, staticAllocator__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8016A0D8 00166ED8  81 8D D0 18 */	lwz r12, staticAllocator__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_@sda21(r13)
 /* 8016A0DC 00166EDC  28 0C 00 00 */	cmplwi r12, 0
 /* 8016A0E0 00166EE0  41 82 00 14 */	beq lbl_8016A0F4
-/* 8016A0E4 00166EE4  80 8D D0 1C */	lwz r4, staticUser__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8016A0E4 00166EE4  80 8D D0 1C */	lwz r4, staticUser__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_@sda21(r13)
 /* 8016A0E8 00166EE8  7D 89 03 A6 */	mtctr r12
 /* 8016A0EC 00166EEC  4E 80 04 21 */	bctrl 
 /* 8016A0F0 00166EF0  48 00 00 10 */	b lbl_8016A100
 lbl_8016A0F4:
-/* 8016A0F4 00166EF4  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 8016A0F4 00166EF4  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 8016A0F8 00166EF8  38 A0 00 00 */	li r5, 0
 /* 8016A0FC 00166EFC  4B ED FA 65 */	bl xMemAlloc__FUiUii
 lbl_8016A100:
@@ -2268,14 +2268,14 @@ lbl_8016A100:
 
 .global zUISetCustomStaticAllocator__FPFUiPv_PvPv
 zUISetCustomStaticAllocator__FPFUiPv_PvPv:
-/* 8016A110 00166F10  90 6D D0 18 */	stw r3, staticAllocator__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8016A114 00166F14  90 8D D0 1C */	stw r4, staticUser__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8016A110 00166F10  90 6D D0 18 */	stw r3, staticAllocator__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_@sda21(r13)
+/* 8016A114 00166F14  90 8D D0 1C */	stw r4, staticUser__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_@sda21(r13)
 /* 8016A118 00166F18  4E 80 00 20 */	blr 
 
 .global zUISetCustomSignalHandler__FPFP3zUIUiUiPCfP5xBaseUiPv_vPv
 zUISetCustomSignalHandler__FPFP3zUIUiUiPCfP5xBaseUiPv_vPv:
-/* 8016A11C 00166F1C  90 6D D0 20 */	stw r3, signalHandler__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_-_SDA_BASE_(r13)
-/* 8016A120 00166F20  90 8D D0 24 */	stw r4, signalUser__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_-_SDA_BASE_(r13)
+/* 8016A11C 00166F1C  90 6D D0 20 */	stw r3, signalHandler__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_@sda21(r13)
+/* 8016A120 00166F20  90 8D D0 24 */	stw r4, signalUser__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_@sda21(r13)
 /* 8016A124 00166F24  4E 80 00 20 */	blr 
 
 .global IsUIText__3zUIFv

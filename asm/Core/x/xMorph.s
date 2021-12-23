@@ -160,7 +160,7 @@ lbl_8004D918:
 xMorphRender__FP13xMorphSeqFileP11RwMatrixTagf:
 /* 8004D92C 0004A72C  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 8004D930 0004A730  7C 08 02 A6 */	mflr r0
-/* 8004D934 0004A734  C0 02 8A D8 */	lfs f0, _esc__2_810-_SDA2_BASE_(r2)
+/* 8004D934 0004A734  C0 02 8A D8 */	lfs f0, _esc__2_810@sda21(r2)
 /* 8004D938 0004A738  38 E3 00 10 */	addi r7, r3, 0x10
 /* 8004D93C 0004A73C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8004D940 0004A740  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -212,7 +212,7 @@ lbl_8004D9D8:
 /* 8004D9D8 0004A7D8  54 C0 10 3A */	slwi r0, r6, 2
 /* 8004D9DC 0004A7DC  C0 65 00 04 */	lfs f3, 4(r5)
 /* 8004D9E0 0004A7E0  7C 47 04 2E */	lfsx f2, r7, r0
-/* 8004D9E4 0004A7E4  C0 02 8A D8 */	lfs f0, _esc__2_810-_SDA2_BASE_(r2)
+/* 8004D9E4 0004A7E4  C0 02 8A D8 */	lfs f0, _esc__2_810@sda21(r2)
 /* 8004D9E8 0004A7E8  EC 21 10 28 */	fsubs f1, f1, f2
 /* 8004D9EC 0004A7EC  EC 43 00 72 */	fmuls f2, f3, f1
 /* 8004D9F0 0004A7F0  FC 00 10 00 */	fcmpu cr0, f0, f2
@@ -226,7 +226,7 @@ lbl_8004DA00:
 /* 8004DA0C 0004A80C  38 C1 00 08 */	addi r6, r1, 8
 /* 8004DA10 0004A810  90 01 00 10 */	stw r0, 0x10(r1)
 /* 8004DA14 0004A814  7C 67 18 50 */	subf r3, r7, r3
-/* 8004DA18 0004A818  C8 22 8A E0 */	lfd f1, _esc__2_812_0-_SDA2_BASE_(r2)
+/* 8004DA18 0004A818  C8 22 8A E0 */	lfd f1, _esc__2_812_0@sda21(r2)
 /* 8004DA1C 0004A81C  6C 63 80 00 */	xoris r3, r3, 0x8000
 /* 8004DA20 0004A820  90 01 00 20 */	stw r0, 0x20(r1)
 /* 8004DA24 0004A824  90 61 00 14 */	stw r3, 0x14(r1)

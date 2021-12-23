@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .sbss2
+.section .sbss2, "", @nobits
 
 .global _esc__2_806_0
 _esc__2_806_0:
@@ -19,7 +19,7 @@ _iGCUVRenderCallback__FPvP18RxGameCubePipeData:
 /* 800761C4 00072FC4  7C 7C 1B 78 */	mr r28, r3
 /* 800761C8 00072FC8  7C 9D 23 78 */	mr r29, r4
 /* 800761CC 00072FCC  80 A4 00 00 */	lwz r5, 0(r4)
-/* 800761D0 00072FD0  A0 0D B6 50 */	lhz r0, _RwDlTokenCurrent-_SDA_BASE_(r13)
+/* 800761D0 00072FD0  A0 0D B6 50 */	lhz r0, _RwDlTokenCurrent@sda21(r13)
 /* 800761D4 00072FD4  80 65 00 20 */	lwz r3, 0x20(r5)
 /* 800761D8 00072FD8  3B 65 00 18 */	addi r27, r5, 0x18
 /* 800761DC 00072FDC  B0 05 00 18 */	sth r0, 0x18(r5)
@@ -34,15 +34,15 @@ _iGCUVRenderCallback__FPvP18RxGameCubePipeData:
 /* 80076200 00073000  48 21 E8 85 */	bl RwFrameGetLTM
 /* 80076204 00073004  80 BC 00 18 */	lwz r5, 0x18(r28)
 /* 80076208 00073008  7C 7A 1B 78 */	mr r26, r3
-/* 8007620C 0007300C  80 0D E5 C8 */	lwz r0, _rpDlGeomVtxFmtOffset-_SDA_BASE_(r13)
+/* 8007620C 0007300C  80 0D E5 C8 */	lwz r0, _rpDlGeomVtxFmtOffset@sda21(r13)
 /* 80076210 00073010  7F A4 EB 78 */	mr r4, r29
 /* 80076214 00073014  7C 65 00 2E */	lwzx r3, r5, r0
 /* 80076218 00073018  48 20 22 CD */	bl _rwDlVtxFmtSetup
 /* 8007621C 0007301C  48 00 00 1C */	b lbl_80076238
 lbl_80076220:
-/* 80076220 00073020  80 6D E6 54 */	lwz r3, RwEngineInstance-_SDA_BASE_(r13)
+/* 80076220 00073020  80 6D E6 54 */	lwz r3, RwEngineInstance@sda21(r13)
 /* 80076224 00073024  3B 40 00 00 */	li r26, 0
-/* 80076228 00073028  80 0D E5 CC */	lwz r0, _rpDlWorldVtxFmtOffset-_SDA_BASE_(r13)
+/* 80076228 00073028  80 0D E5 CC */	lwz r0, _rpDlWorldVtxFmtOffset@sda21(r13)
 /* 8007622C 0007302C  80 63 00 04 */	lwz r3, 4(r3)
 /* 80076230 00073030  7C 63 00 2E */	lwzx r3, r3, r0
 /* 80076234 00073034  48 20 22 B1 */	bl _rwDlVtxFmtSetup
@@ -68,7 +68,7 @@ lbl_80076260:
 /* 80076278 00073078  38 00 00 06 */	li r0, 6
 /* 8007627C 0007307C  7C 7E 1B 78 */	mr r30, r3
 /* 80076280 00073080  38 A1 00 04 */	addi r5, r1, 4
-/* 80076284 00073084  38 82 EC 1C */	addi r4, r2, lbl_803D893C-_SDA2_BASE_
+/* 80076284 00073084  38 82 EC 1C */	addi r4, r2, lbl_803D893C@sda21
 /* 80076288 00073088  7C 09 03 A6 */	mtctr r0
 lbl_8007628C:
 /* 8007628C 0007308C  80 64 00 04 */	lwz r3, 4(r4)
@@ -76,18 +76,18 @@ lbl_8007628C:
 /* 80076294 00073094  90 65 00 04 */	stw r3, 4(r5)
 /* 80076298 00073098  94 05 00 08 */	stwu r0, 8(r5)
 /* 8007629C 0007309C  42 00 FF F0 */	bdnz lbl_8007628C
-/* 800762A0 000730A0  38 8D 81 A8 */	addi r4, r13, xFXanimUVRotMat0-_SDA_BASE_
-/* 800762A4 000730A4  39 0D 81 B0 */	addi r8, r13, xFXanimUVRotMat1-_SDA_BASE_
-/* 800762A8 000730A8  38 ED 81 B8 */	addi r7, r13, xFXanimUVTrans-_SDA_BASE_
-/* 800762AC 000730AC  38 CD 81 C0 */	addi r6, r13, xFXanimUVScale-_SDA_BASE_
-/* 800762B0 000730B0  C0 ED 81 A8 */	lfs f7, xFXanimUVRotMat0-_SDA_BASE_(r13)
+/* 800762A0 000730A0  38 8D 81 A8 */	addi r4, r13, xFXanimUVRotMat0@sda21
+/* 800762A4 000730A4  39 0D 81 B0 */	addi r8, r13, xFXanimUVRotMat1@sda21
+/* 800762A8 000730A8  38 ED 81 B8 */	addi r7, r13, xFXanimUVTrans@sda21
+/* 800762AC 000730AC  38 CD 81 C0 */	addi r6, r13, xFXanimUVScale@sda21
+/* 800762B0 000730B0  C0 ED 81 A8 */	lfs f7, xFXanimUVRotMat0@sda21(r13)
 /* 800762B4 000730B4  38 61 00 08 */	addi r3, r1, 8
 /* 800762B8 000730B8  C0 C4 00 04 */	lfs f6, 4(r4)
 /* 800762BC 000730BC  38 80 00 1E */	li r4, 0x1e
-/* 800762C0 000730C0  C0 AD 81 B8 */	lfs f5, xFXanimUVTrans-_SDA_BASE_(r13)
+/* 800762C0 000730C0  C0 AD 81 B8 */	lfs f5, xFXanimUVTrans@sda21(r13)
 /* 800762C4 000730C4  38 A0 00 01 */	li r5, 1
-/* 800762C8 000730C8  C0 8D 81 C0 */	lfs f4, xFXanimUVScale-_SDA_BASE_(r13)
-/* 800762CC 000730CC  C0 6D 81 B0 */	lfs f3, xFXanimUVRotMat1-_SDA_BASE_(r13)
+/* 800762C8 000730C8  C0 8D 81 C0 */	lfs f4, xFXanimUVScale@sda21(r13)
+/* 800762CC 000730CC  C0 6D 81 B0 */	lfs f3, xFXanimUVRotMat1@sda21(r13)
 /* 800762D0 000730D0  C0 48 00 04 */	lfs f2, 4(r8)
 /* 800762D4 000730D4  C0 27 00 04 */	lfs f1, 4(r7)
 /* 800762D8 000730D8  C0 06 00 04 */	lfs f0, 4(r6)
@@ -123,7 +123,7 @@ lbl_80076330:
 /* 8007634C 0007314C  80 99 00 00 */	lwz r4, 0(r25)
 /* 80076350 00073150  28 04 00 00 */	cmplwi r4, 0
 /* 80076354 00073154  41 82 00 20 */	beq lbl_80076374
-/* 80076358 00073158  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset-_SDA_BASE_(r13)
+/* 80076358 00073158  80 6D E6 F8 */	lwz r3, _RwGameCubeRasterExtOffset@sda21(r13)
 /* 8007635C 0007315C  80 84 00 00 */	lwz r4, 0(r4)
 /* 80076360 00073160  38 03 00 14 */	addi r0, r3, 0x14
 /* 80076364 00073164  7C 04 00 2E */	lwzx r0, r4, r0

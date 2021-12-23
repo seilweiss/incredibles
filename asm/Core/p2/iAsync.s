@@ -41,22 +41,22 @@ _esc__2_675_0:
 iAsyncStart__FPFPv_Pv:
 /* 80073120 0006FF20  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80073124 0006FF24  7C 08 02 A6 */	mflr r0
-/* 80073128 0006FF28  38 AD BF C0 */	addi r5, r13, asyncDirtyFrameList-_SDA_BASE_
+/* 80073128 0006FF28  38 AD BF C0 */	addi r5, r13, asyncDirtyFrameList@sda21
 /* 8007312C 0006FF2C  38 80 00 01 */	li r4, 1
 /* 80073130 0006FF30  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80073134 0006FF34  38 00 00 00 */	li r0, 0
 /* 80073138 0006FF38  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8007313C 0006FF3C  7C 7F 1B 78 */	mr r31, r3
-/* 80073140 0006FF40  38 6D BF C8 */	addi r3, r13, asyncSema-_SDA_BASE_
-/* 80073144 0006FF44  90 AD BF C0 */	stw r5, asyncDirtyFrameList-_SDA_BASE_(r13)
+/* 80073140 0006FF40  38 6D BF C8 */	addi r3, r13, asyncSema@sda21
+/* 80073144 0006FF44  90 AD BF C0 */	stw r5, asyncDirtyFrameList@sda21(r13)
 /* 80073148 0006FF48  90 A5 00 04 */	stw r5, 4(r5)
-/* 8007314C 0006FF4C  98 0D 86 20 */	stb r0, asyncThreadDone-_SDA_BASE_(r13)
+/* 8007314C 0006FF4C  98 0D 86 20 */	stb r0, asyncThreadDone@sda21(r13)
 /* 80073150 0006FF50  48 1C 37 75 */	bl OSInitSemaphore
 /* 80073154 0006FF54  38 00 00 01 */	li r0, 1
 /* 80073158 0006FF58  3C A0 80 35 */	lis r5, ThreadStack@ha
 /* 8007315C 0006FF5C  38 C5 1E 08 */	addi r6, r5, ThreadStack@l
 /* 80073160 0006FF60  3C 60 80 35 */	lis r3, asyncThread@ha
-/* 80073164 0006FF64  98 0D BF D4 */	stb r0, needToLock-_SDA_BASE_(r13)
+/* 80073164 0006FF64  98 0D BF D4 */	stb r0, needToLock@sda21(r13)
 /* 80073168 0006FF68  38 63 1A F0 */	addi r3, r3, asyncThread@l
 /* 8007316C 0006FF6C  7F E4 FB 78 */	mr r4, r31
 /* 80073170 0006FF70  38 A0 00 00 */	li r5, 0
@@ -77,7 +77,7 @@ iAsyncStart__FPFPv_Pv:
 
 .global iAsyncIsDone__Fv
 iAsyncIsDone__Fv:
-/* 800731AC 0006FFAC  88 6D 86 20 */	lbz r3, asyncThreadDone-_SDA_BASE_(r13)
+/* 800731AC 0006FFAC  88 6D 86 20 */	lbz r3, asyncThreadDone@sda21(r13)
 /* 800731B0 0006FFB0  4E 80 00 20 */	blr 
 
 .global iAsyncTerminate__Fv
@@ -90,8 +90,8 @@ iAsyncTerminate__Fv:
 /* 800731C8 0006FFC8  48 1B ED 6D */	bl OSCancelAlarms
 /* 800731CC 0006FFCC  38 60 00 01 */	li r3, 1
 /* 800731D0 0006FFD0  38 00 00 00 */	li r0, 0
-/* 800731D4 0006FFD4  98 6D 86 20 */	stb r3, asyncThreadDone-_SDA_BASE_(r13)
-/* 800731D8 0006FFD8  98 0D BF D4 */	stb r0, needToLock-_SDA_BASE_(r13)
+/* 800731D4 0006FFD4  98 6D 86 20 */	stb r3, asyncThreadDone@sda21(r13)
+/* 800731D8 0006FFD8  98 0D BF D4 */	stb r0, needToLock@sda21(r13)
 /* 800731DC 0006FFDC  48 1C 4B 75 */	bl OSCheckActiveThreads
 /* 800731E0 0006FFE0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800731E4 0006FFE4  7C 08 03 A6 */	mtlr r0
@@ -106,7 +106,7 @@ iAsyncBeginUpdate__Fv:
 /* 800731FC 0006FFFC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80073200 00070000  38 63 59 4E */	addi r3, r3, 0x4153594E@l
 /* 80073204 00070004  48 1B ED 31 */	bl OSCancelAlarms
-/* 80073208 00070008  C0 22 90 D0 */	lfs f1, _esc__2_675_0-_SDA2_BASE_(r2)
+/* 80073208 00070008  C0 22 90 D0 */	lfs f1, _esc__2_675_0@sda21(r2)
 /* 8007320C 0007000C  38 60 00 00 */	li r3, 0
 /* 80073210 00070010  4B FD C7 85 */	bl xPadUpdate__Fif
 /* 80073214 00070014  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -136,7 +136,7 @@ iAsyncSuspend__Fv:
 /* 8007325C 0007005C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80073260 00070060  38 63 59 4E */	addi r3, r3, 0x4153594E@l
 /* 80073264 00070064  48 1B EC D1 */	bl OSCancelAlarms
-/* 80073268 00070068  88 0D 86 20 */	lbz r0, asyncThreadDone-_SDA_BASE_(r13)
+/* 80073268 00070068  88 0D 86 20 */	lbz r0, asyncThreadDone@sda21(r13)
 /* 8007326C 0007006C  28 00 00 00 */	cmplwi r0, 0
 /* 80073270 00070070  40 82 00 24 */	bne lbl_80073294
 /* 80073274 00070074  3C 60 80 35 */	lis r3, asyncThread@ha
@@ -158,7 +158,7 @@ iAsyncResume__Fv:
 /* 800732A4 000700A4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800732A8 000700A8  7C 08 02 A6 */	mflr r0
 /* 800732AC 000700AC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800732B0 000700B0  88 0D 86 20 */	lbz r0, asyncThreadDone-_SDA_BASE_(r13)
+/* 800732B0 000700B0  88 0D 86 20 */	lbz r0, asyncThreadDone@sda21(r13)
 /* 800732B4 000700B4  28 00 00 00 */	cmplwi r0, 0
 /* 800732B8 000700B8  40 82 00 24 */	bne lbl_800732DC
 /* 800732BC 000700BC  3C 60 80 35 */	lis r3, asyncThread@ha
@@ -183,7 +183,7 @@ iAsyncEnd__Fv:
 /* 800732F8 000700F8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800732FC 000700FC  38 63 59 4E */	addi r3, r3, 0x4153594E@l
 /* 80073300 00070100  48 1B EC 35 */	bl OSCancelAlarms
-/* 80073304 00070104  88 0D 86 20 */	lbz r0, asyncThreadDone-_SDA_BASE_(r13)
+/* 80073304 00070104  88 0D 86 20 */	lbz r0, asyncThreadDone@sda21(r13)
 /* 80073308 00070108  28 00 00 00 */	cmplwi r0, 0
 /* 8007330C 0007010C  41 82 00 24 */	beq lbl_80073330
 /* 80073310 00070110  3C 60 80 35 */	lis r3, asyncThread@ha

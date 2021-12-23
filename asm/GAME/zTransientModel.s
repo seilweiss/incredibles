@@ -172,7 +172,7 @@ lbl_801F7E90:
 /* 801F7E98 001F4C98  80 9D 00 30 */	lwz r4, 0x30(r29)
 /* 801F7E9C 001F4C9C  3B C0 00 00 */	li r30, 0
 /* 801F7EA0 001F4CA0  83 FD 00 34 */	lwz r31, 0x34(r29)
-/* 801F7EA4 001F4CA4  C3 E2 D9 48 */	lfs f31, _esc__2_829_1-_SDA2_BASE_(r2)
+/* 801F7EA4 001F4CA4  C3 E2 D9 48 */	lfs f31, _esc__2_829_1@sda21(r2)
 /* 801F7EA8 001F4CA8  48 00 00 58 */	b lbl_801F7F00
 lbl_801F7EAC:
 /* 801F7EAC 001F4CAC  C0 04 00 08 */	lfs f0, 8(r4)
@@ -364,7 +364,7 @@ lbl_801F8114:
 /* 801F8120 001F4F20  38 03 FF FF */	addi r0, r3, -1
 /* 801F8124 001F4F24  90 06 00 98 */	stw r0, 0x98(r6)
 /* 801F8128 001F4F28  80 A6 00 48 */	lwz r5, 0x48(r6)
-/* 801F812C 001F4F2C  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F812C 001F4F2C  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F8130 001F4F30  C0 25 00 14 */	lfs f1, 0x14(r5)
 /* 801F8134 001F4F34  C0 46 00 A8 */	lfs f2, 0xa8(r6)
 /* 801F8138 001F4F38  4B FF FE ED */	bl fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_typeff
@@ -387,7 +387,7 @@ zTransientModelSceneEnter__Fv:
 /* 801F8170 001F4F70  2C 00 00 00 */	cmpwi r0, 0
 /* 801F8174 001F4F74  41 81 00 10 */	bgt lbl_801F8184
 /* 801F8178 001F4F78  38 00 00 00 */	li r0, 0
-/* 801F817C 001F4F7C  90 0D DF B8 */	stw r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F817C 001F4F7C  90 0D DF B8 */	stw r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F8180 001F4F80  48 00 00 34 */	b lbl_801F81B4
 lbl_801F8184:
 /* 801F8184 001F4F84  38 60 00 38 */	li r3, 0x38
@@ -402,9 +402,9 @@ lbl_801F8184:
 /* 801F81A8 001F4FA8  4B FF FB 99 */	bl __ct__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFiib
 /* 801F81AC 001F4FAC  7C 60 1B 78 */	mr r0, r3
 lbl_801F81B0:
-/* 801F81B0 001F4FB0  90 0D DF B8 */	stw r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F81B0 001F4FB0  90 0D DF B8 */	stw r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 lbl_801F81B4:
-/* 801F81B4 001F4FB4  80 0D DF B8 */	lwz r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F81B4 001F4FB4  80 0D DF B8 */	lwz r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F81B8 001F4FB8  28 00 00 00 */	cmplwi r0, 0
 /* 801F81BC 001F4FBC  41 82 00 08 */	beq lbl_801F81C4
 /* 801F81C0 001F4FC0  4B FF FB 21 */	bl add_tweaks__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_5tweakFv
@@ -416,7 +416,7 @@ lbl_801F81C4:
 
 .global zTransientModelSceneExit__Fv
 zTransientModelSceneExit__Fv:
-/* 801F81D4 001F4FD4  80 0D DF B8 */	lwz r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F81D4 001F4FD4  80 0D DF B8 */	lwz r0, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F81D8 001F4FD8  28 00 00 00 */	cmplwi r0, 0
 /* 801F81DC 001F4FDC  4E 80 00 20 */	blr 
 
@@ -425,7 +425,7 @@ zTransientModelReset__Fv:
 /* 801F81E0 001F4FE0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F81E4 001F4FE4  7C 08 02 A6 */	mflr r0
 /* 801F81E8 001F4FE8  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F81EC 001F4FEC  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F81EC 001F4FEC  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F81F0 001F4FF0  28 03 00 00 */	cmplwi r3, 0
 /* 801F81F4 001F4FF4  41 82 00 08 */	beq lbl_801F81FC
 /* 801F81F8 001F4FF8  4B FF FB A5 */	bl reset__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv
@@ -440,7 +440,7 @@ zTransientModelUpdate__Ff:
 /* 801F820C 001F500C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F8210 001F5010  7C 08 02 A6 */	mflr r0
 /* 801F8214 001F5014  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F8218 001F5018  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F8218 001F5018  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F821C 001F501C  28 03 00 00 */	cmplwi r3, 0
 /* 801F8220 001F5020  41 82 00 08 */	beq lbl_801F8228
 /* 801F8224 001F5024  4B FF FC 15 */	bl update__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFf
@@ -455,7 +455,7 @@ zTransientModelRender__Fv:
 /* 801F8238 001F5038  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F823C 001F503C  7C 08 02 A6 */	mflr r0
 /* 801F8240 001F5040  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F8244 001F5044  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F8244 001F5044  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F8248 001F5048  28 03 00 00 */	cmplwi r3, 0
 /* 801F824C 001F504C  41 82 00 08 */	beq lbl_801F8254
 /* 801F8250 001F5050  4B FF FC ED */	bl render__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFv
@@ -485,7 +485,7 @@ activate__22zTransientModelEmitterFRCQ222zTransientModelEmitter11config_type:
 /* 801F8288 001F5088  BF C1 00 08 */	stmw r30, 8(r1)
 /* 801F828C 001F508C  7C 7E 1B 78 */	mr r30, r3
 /* 801F8290 001F5090  7C 9F 23 78 */	mr r31, r4
-/* 801F8294 001F5094  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F8294 001F5094  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F8298 001F5098  38 65 00 04 */	addi r3, r5, 4
 /* 801F829C 001F509C  48 00 0F 35 */	bl full__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_CFv
 /* 801F82A0 001F50A0  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -520,12 +520,12 @@ set_config__22zTransientModelEmitterFRCQ222zTransientModelEmitter11config_type:
 /* 801F8304 001F5104  BF 61 00 0C */	stmw r27, 0xc(r1)
 /* 801F8308 001F5108  7C 7E 1B 78 */	mr r30, r3
 /* 801F830C 001F510C  EC 41 00 28 */	fsubs f2, f1, f0
-/* 801F8310 001F5110  C0 62 D9 50 */	lfs f3, _esc__2_1283_2-_SDA2_BASE_(r2)
+/* 801F8310 001F5110  C0 62 D9 50 */	lfs f3, _esc__2_1283_2@sda21(r2)
 /* 801F8314 001F5114  C0 24 00 20 */	lfs f1, 0x20(r4)
 /* 801F8318 001F5118  C0 04 00 1C */	lfs f0, 0x1c(r4)
 /* 801F831C 001F511C  EC 43 00 B2 */	fmuls f2, f3, f2
 /* 801F8320 001F5120  EC 21 00 28 */	fsubs f1, f1, f0
-/* 801F8324 001F5124  C0 02 D9 48 */	lfs f0, _esc__2_829_1-_SDA2_BASE_(r2)
+/* 801F8324 001F5124  C0 02 D9 48 */	lfs f0, _esc__2_829_1@sda21(r2)
 /* 801F8328 001F5128  80 63 00 00 */	lwz r3, 0(r3)
 /* 801F832C 001F512C  EC 23 00 72 */	fmuls f1, f3, f1
 /* 801F8330 001F5130  90 83 00 48 */	stw r4, 0x48(r3)
@@ -539,29 +539,29 @@ set_config__22zTransientModelEmitterFRCQ222zTransientModelEmitter11config_type:
 /* 801F8350 001F5150  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F8354 001F5154  4C 40 13 82 */	cror 2, 0, 2
 /* 801F8358 001F5158  40 82 00 0C */	bne lbl_801F8364
-/* 801F835C 001F515C  C0 02 D9 54 */	lfs f0, _esc__2_1284_3-_SDA2_BASE_(r2)
+/* 801F835C 001F515C  C0 02 D9 54 */	lfs f0, _esc__2_1284_3@sda21(r2)
 /* 801F8360 001F5160  48 00 00 0C */	b lbl_801F836C
 lbl_801F8364:
-/* 801F8364 001F5164  C0 02 D9 4C */	lfs f0, _esc__2_830_0-_SDA2_BASE_(r2)
+/* 801F8364 001F5164  C0 02 D9 4C */	lfs f0, _esc__2_830_0@sda21(r2)
 /* 801F8368 001F5168  EC 00 08 24 */	fdivs f0, f0, f1
 lbl_801F836C:
 /* 801F836C 001F516C  D0 05 00 A4 */	stfs f0, 0xa4(r5)
-/* 801F8370 001F5170  C0 02 D9 48 */	lfs f0, _esc__2_829_1-_SDA2_BASE_(r2)
+/* 801F8370 001F5170  C0 02 D9 48 */	lfs f0, _esc__2_829_1@sda21(r2)
 /* 801F8374 001F5174  80 BE 00 00 */	lwz r5, 0(r30)
 /* 801F8378 001F5178  80 65 00 48 */	lwz r3, 0x48(r5)
 /* 801F837C 001F517C  C0 23 00 14 */	lfs f1, 0x14(r3)
 /* 801F8380 001F5180  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F8384 001F5184  4C 40 13 82 */	cror 2, 0, 2
 /* 801F8388 001F5188  40 82 00 0C */	bne lbl_801F8394
-/* 801F838C 001F518C  C0 42 D9 54 */	lfs f2, _esc__2_1284_3-_SDA2_BASE_(r2)
+/* 801F838C 001F518C  C0 42 D9 54 */	lfs f2, _esc__2_1284_3@sda21(r2)
 /* 801F8390 001F5190  48 00 00 0C */	b lbl_801F839C
 lbl_801F8394:
-/* 801F8394 001F5194  C0 02 D9 4C */	lfs f0, _esc__2_830_0-_SDA2_BASE_(r2)
+/* 801F8394 001F5194  C0 02 D9 4C */	lfs f0, _esc__2_830_0@sda21(r2)
 /* 801F8398 001F5198  EC 40 08 24 */	fdivs f2, f0, f1
 lbl_801F839C:
 /* 801F839C 001F519C  C0 04 00 24 */	lfs f0, 0x24(r4)
 /* 801F83A0 001F51A0  38 00 00 00 */	li r0, 0
-/* 801F83A4 001F51A4  C0 22 D9 4C */	lfs f1, _esc__2_830_0-_SDA2_BASE_(r2)
+/* 801F83A4 001F51A4  C0 22 D9 4C */	lfs f1, _esc__2_830_0@sda21(r2)
 /* 801F83A8 001F51A8  D0 45 00 A8 */	stfs f2, 0xa8(r5)
 /* 801F83AC 001F51AC  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 801F83B0 001F51B0  41 80 00 34 */	blt lbl_801F83E4
@@ -638,7 +638,7 @@ spawn__22zTransientModelEmitterFRC7xMat4x3f:
 /* 801F84A0 001F52A0  F3 E1 00 48 */	psq_st f31, 72(r1), 0, qr0
 /* 801F84A4 001F52A4  BF 41 00 28 */	stmw r26, 0x28(r1)
 /* 801F84A8 001F52A8  FF E0 08 90 */	fmr f31, f1
-/* 801F84AC 001F52AC  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F84AC 001F52AC  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F84B0 001F52B0  7C 7B 1B 78 */	mr r27, r3
 /* 801F84B4 001F52B4  7C 9C 23 78 */	mr r28, r4
 /* 801F84B8 001F52B8  38 65 00 10 */	addi r3, r5, 0x10
@@ -693,7 +693,7 @@ lbl_801F8550:
 /* 801F8570 001F5370  4B E2 DE F9 */	bl xModelInstanceAlloc__FP8RpAtomicPvUsUcPUc
 /* 801F8574 001F5374  7C 7E 1B 79 */	or. r30, r3, r3
 /* 801F8578 001F5378  41 82 02 5C */	beq lbl_801F87D4
-/* 801F857C 001F537C  80 6D 91 D0 */	lwz r3, xglobals-_SDA_BASE_(r13)
+/* 801F857C 001F537C  80 6D 91 D0 */	lwz r3, xglobals@sda21(r13)
 /* 801F8580 001F5380  80 63 04 C4 */	lwz r3, 0x4c4(r3)
 /* 801F8584 001F5384  80 63 00 28 */	lwz r3, 0x28(r3)
 /* 801F8588 001F5388  80 03 00 44 */	lwz r0, 0x44(r3)
@@ -706,7 +706,7 @@ lbl_801F8550:
 /* 801F85A4 001F53A4  80 04 00 98 */	lwz r0, 0x98(r4)
 /* 801F85A8 001F53A8  7C 00 18 00 */	cmpw r0, r3
 /* 801F85AC 001F53AC  41 80 00 10 */	blt lbl_801F85BC
-/* 801F85B0 001F53B0  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F85B0 001F53B0  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F85B4 001F53B4  80 A4 00 90 */	lwz r5, 0x90(r4)
 /* 801F85B8 001F53B8  4B FF FB 1D */	bl fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 lbl_801F85BC:
@@ -714,10 +714,10 @@ lbl_801F85BC:
 /* 801F85C0 001F53C0  80 03 00 98 */	lwz r0, 0x98(r3)
 /* 801F85C4 001F53C4  2C 00 00 00 */	cmpwi r0, 0
 /* 801F85C8 001F53C8  40 82 00 34 */	bne lbl_801F85FC
-/* 801F85CC 001F53CC  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F85CC 001F53CC  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F85D0 001F53D0  38 63 00 10 */	addi r3, r3, 0x10
 /* 801F85D4 001F53D4  48 00 0B F5 */	bl end__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_CFv
-/* 801F85D8 001F53D8  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F85D8 001F53D8  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F85DC 001F53DC  7C 64 1B 78 */	mr r4, r3
 /* 801F85E0 001F53E0  38 65 00 10 */	addi r3, r5, 0x10
 /* 801F85E4 001F53E4  48 00 0C 41 */	bl insert__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
@@ -728,7 +728,7 @@ lbl_801F85BC:
 /* 801F85F8 001F53F8  48 00 00 20 */	b lbl_801F8618
 lbl_801F85FC:
 /* 801F85FC 001F53FC  80 63 00 94 */	lwz r3, 0x94(r3)
-/* 801F8600 001F5400  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F8600 001F5400  80 AD DF B8 */	lwz r5, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F8604 001F5404  80 83 00 04 */	lwz r4, 4(r3)
 /* 801F8608 001F5408  38 65 00 10 */	addi r3, r5, 0x10
 /* 801F860C 001F540C  48 00 0C 19 */	bl insert__64pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_FPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
@@ -736,7 +736,7 @@ lbl_801F85FC:
 /* 801F8614 001F5414  90 64 00 94 */	stw r3, 0x94(r4)
 lbl_801F8618:
 /* 801F8618 001F5418  80 9B 00 00 */	lwz r4, 0(r27)
-/* 801F861C 001F541C  C0 02 D9 48 */	lfs f0, _esc__2_829_1-_SDA2_BASE_(r2)
+/* 801F861C 001F541C  C0 02 D9 48 */	lfs f0, _esc__2_829_1@sda21(r2)
 /* 801F8620 001F5420  80 64 00 98 */	lwz r3, 0x98(r4)
 /* 801F8624 001F5424  FC 00 F8 00 */	fcmpu cr0, f0, f31
 /* 801F8628 001F5428  38 03 00 01 */	addi r0, r3, 1
@@ -747,13 +747,13 @@ lbl_801F8618:
 /* 801F863C 001F543C  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 801F8640 001F5440  93 DF 00 10 */	stw r30, 0x10(r31)
 /* 801F8644 001F5444  40 82 00 10 */	bne lbl_801F8654
-/* 801F8648 001F5448  C0 02 D9 54 */	lfs f0, _esc__2_1284_3-_SDA2_BASE_(r2)
+/* 801F8648 001F5448  C0 02 D9 54 */	lfs f0, _esc__2_1284_3@sda21(r2)
 /* 801F864C 001F544C  D0 1F 00 0C */	stfs f0, 0xc(r31)
 /* 801F8650 001F5450  48 00 00 28 */	b lbl_801F8678
 lbl_801F8654:
 /* 801F8654 001F5454  FC 1F 00 40 */	fcmpo cr0, f31, f0
 /* 801F8658 001F5458  40 81 00 14 */	ble lbl_801F866C
-/* 801F865C 001F545C  C0 02 D9 4C */	lfs f0, _esc__2_830_0-_SDA2_BASE_(r2)
+/* 801F865C 001F545C  C0 02 D9 4C */	lfs f0, _esc__2_830_0@sda21(r2)
 /* 801F8660 001F5460  EC 00 F8 24 */	fdivs f0, f0, f31
 /* 801F8664 001F5464  D0 1F 00 0C */	stfs f0, 0xc(r31)
 /* 801F8668 001F5468  48 00 00 10 */	b lbl_801F8678
@@ -770,7 +770,7 @@ lbl_801F8678:
 /* 801F868C 001F548C  7F 84 E3 78 */	mr r4, r28
 /* 801F8690 001F5490  80 7F 00 10 */	lwz r3, 0x10(r31)
 /* 801F8694 001F5494  90 01 00 20 */	stw r0, 0x20(r1)
-/* 801F8698 001F5498  C8 42 D9 58 */	lfd f2, _esc__2_1362_1-_SDA2_BASE_(r2)
+/* 801F8698 001F5498  C8 42 D9 58 */	lfd f2, _esc__2_1362_1@sda21(r2)
 /* 801F869C 001F549C  C8 01 00 20 */	lfd f0, 0x20(r1)
 /* 801F86A0 001F54A0  C0 3D 00 A0 */	lfs f1, 0xa0(r29)
 /* 801F86A4 001F54A4  EC 40 10 28 */	fsubs f2, f0, f2
@@ -803,7 +803,7 @@ lbl_801F8678:
 /* 801F8710 001F5510  3C 00 43 30 */	lis r0, 0x4330
 /* 801F8714 001F5514  80 9A 00 48 */	lwz r4, 0x48(r26)
 /* 801F8718 001F5518  90 61 00 24 */	stw r3, 0x24(r1)
-/* 801F871C 001F551C  C8 62 D9 58 */	lfd f3, _esc__2_1362_1-_SDA2_BASE_(r2)
+/* 801F871C 001F551C  C8 62 D9 58 */	lfd f3, _esc__2_1362_1@sda21(r2)
 /* 801F8720 001F5520  90 01 00 20 */	stw r0, 0x20(r1)
 /* 801F8724 001F5524  C0 5A 00 9C */	lfs f2, 0x9c(r26)
 /* 801F8728 001F5528  C8 01 00 20 */	lfd f0, 0x20(r1)
@@ -885,7 +885,7 @@ update__22zTransientModelEmitterFf:
 /* 801F8834 001F5634  F3 C1 00 28 */	psq_st f30, 40(r1), 0, qr0
 /* 801F8838 001F5638  BF A1 00 14 */	stmw r29, 0x14(r1)
 /* 801F883C 001F563C  7C 7D 1B 78 */	mr r29, r3
-/* 801F8840 001F5640  C0 02 D9 48 */	lfs f0, _esc__2_829_1-_SDA2_BASE_(r2)
+/* 801F8840 001F5640  C0 02 D9 48 */	lfs f0, _esc__2_829_1@sda21(r2)
 /* 801F8844 001F5644  80 83 00 00 */	lwz r4, 0(r3)
 /* 801F8848 001F5648  FF C0 08 90 */	fmr f30, f1
 /* 801F884C 001F564C  3B E0 00 00 */	li r31, 0
@@ -904,7 +904,7 @@ lbl_801F886C:
 /* 801F887C 001F567C  FC 00 F8 40 */	fcmpo cr0, f0, f31
 /* 801F8880 001F5680  4C 41 13 82 */	cror 2, 1, 2
 /* 801F8884 001F5684  40 82 00 14 */	bne lbl_801F8898
-/* 801F8888 001F5688  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F8888 001F5688  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F888C 001F568C  80 9D 00 00 */	lwz r4, 0(r29)
 /* 801F8890 001F5690  4B FF F8 45 */	bl fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
 /* 801F8894 001F5694  48 00 00 08 */	b lbl_801F889C
@@ -980,7 +980,7 @@ lbl_801F895C:
 /* 801F8984 001F5784  EC 03 00 FA */	fmadds f0, f3, f3, f0
 /* 801F8988 001F5788  FC 00 E0 40 */	fcmpo cr0, f0, f28
 /* 801F898C 001F578C  40 81 00 1C */	ble lbl_801F89A8
-/* 801F8990 001F5790  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F8990 001F5790  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F8994 001F5794  7F E5 FB 78 */	mr r5, r31
 /* 801F8998 001F5798  80 9C 00 00 */	lwz r4, 0(r28)
 /* 801F899C 001F579C  4B FF F7 39 */	bl fade_away__Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_11module_typeFRQ222zTransientModelEmitter13activity_dataPQ264pool_list_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_18transient_instance_esc__1_9node_type
@@ -989,12 +989,12 @@ lbl_801F895C:
 lbl_801F89A8:
 /* 801F89A8 001F57A8  C0 5F 00 0C */	lfs f2, 0xc(r31)
 /* 801F89AC 001F57AC  C0 3F 00 08 */	lfs f1, 8(r31)
-/* 801F89B0 001F57B0  C0 02 D9 60 */	lfs f0, _esc__2_1435_1-_SDA2_BASE_(r2)
+/* 801F89B0 001F57B0  C0 02 D9 60 */	lfs f0, _esc__2_1435_1@sda21(r2)
 /* 801F89B4 001F57B4  EC 22 00 72 */	fmuls f1, f2, f1
 /* 801F89B8 001F57B8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F89BC 001F57BC  4C 41 13 82 */	cror 2, 1, 2
 /* 801F89C0 001F57C0  40 82 00 18 */	bne lbl_801F89D8
-/* 801F89C4 001F57C4  C0 02 D9 4C */	lfs f0, _esc__2_830_0-_SDA2_BASE_(r2)
+/* 801F89C4 001F57C4  C0 02 D9 4C */	lfs f0, _esc__2_830_0@sda21(r2)
 /* 801F89C8 001F57C8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801F89CC 001F57CC  40 81 00 08 */	ble lbl_801F89D4
 /* 801F89D0 001F57D0  FC 20 00 90 */	fmr f1, f0
@@ -1026,10 +1026,10 @@ alloc_activity__22zTransientModelEmitterFv:
 /* 801F8A1C 001F581C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F8A20 001F5820  7C 08 02 A6 */	mflr r0
 /* 801F8A24 001F5824  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801F8A28 001F5828  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F8A28 001F5828  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F8A2C 001F582C  38 63 00 04 */	addi r3, r3, 4
 /* 801F8A30 001F5830  48 00 08 2D */	bl push_back__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
-/* 801F8A34 001F5834  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_-_SDA_BASE_(r13)
+/* 801F8A34 001F5834  80 6D DF B8 */	lwz r3, module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_@sda21(r13)
 /* 801F8A38 001F5838  38 63 00 04 */	addi r3, r3, 4
 /* 801F8A3C 001F583C  48 00 08 09 */	bl back__54linear_pool_esc__0_Q222zTransientModelEmitter13activity_data_esc__1_Fv
 /* 801F8A40 001F5840  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -1219,7 +1219,7 @@ lbl_801F8CBC:
 /* 801F8CC0 001F5AC0  40 80 00 08 */	bge lbl_801F8CC8
 /* 801F8CC4 001F5AC4  7C 9D 23 78 */	mr r29, r4
 lbl_801F8CC8:
-/* 801F8CC8 001F5AC8  CB 62 D9 68 */	lfd f27, _esc__2_1532_2-_SDA2_BASE_(r2)
+/* 801F8CC8 001F5AC8  CB 62 D9 68 */	lfd f27, _esc__2_1532_2@sda21(r2)
 /* 801F8CCC 001F5ACC  7C 79 1B 78 */	mr r25, r3
 /* 801F8CD0 001F5AD0  3F 40 43 30 */	lis r26, 0x4330
 /* 801F8CD4 001F5AD4  48 00 00 A4 */	b lbl_801F8D78
@@ -1294,7 +1294,7 @@ lbl_801F8D78:
 intersect_rect_esc__0_Q229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap_esc__1___21xSpacePartitionTree2DFPQ221xSpacePartitionTree2D4cellffffRQ229_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_16cb_check_overlap:
 /* 801F8DCC 001F5BCC  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 801F8DD0 001F5BD0  7C 08 02 A6 */	mflr r0
-/* 801F8DD4 001F5BD4  C8 A2 D9 68 */	lfd f5, _esc__2_1532_2-_SDA2_BASE_(r2)
+/* 801F8DD4 001F5BD4  C8 A2 D9 68 */	lfd f5, _esc__2_1532_2@sda21(r2)
 /* 801F8DD8 001F5BD8  90 01 00 74 */	stw r0, 0x74(r1)
 /* 801F8DDC 001F5BDC  3C 00 43 30 */	lis r0, 0x4330
 /* 801F8DE0 001F5BE0  BE 41 00 38 */	stmw r18, 0x38(r1)

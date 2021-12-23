@@ -75,7 +75,7 @@ Alloc__Q211zFollowPath7segmentFRPQ211zFollowPath7segment:
 /* 801646B8 001614B8  90 03 00 00 */	stw r0, 0(r3)
 /* 801646BC 001614BC  48 00 00 18 */	b lbl_801646D4
 lbl_801646C0:
-/* 801646C0 001614C0  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801646C0 001614C0  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801646C4 001614C4  38 80 00 2C */	li r4, 0x2c
 /* 801646C8 001614C8  38 A0 00 00 */	li r5, 0
 /* 801646CC 001614CC  4B EE 54 95 */	bl xMemAlloc__FUiUii
@@ -225,14 +225,14 @@ normalize__FR5xVec3:
 /* 801648C0 001616C0  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801648C4 001616C4  7C 7F 1B 78 */	mr r31, r3
 /* 801648C8 001616C8  4B EA 6C 5D */	bl length2__5xVec3CFv
-/* 801648CC 001616CC  C0 02 B9 D4 */	lfs f0, _esc__2_1054_3-_SDA2_BASE_(r2)
+/* 801648CC 001616CC  C0 02 B9 D4 */	lfs f0, _esc__2_1054_3@sda21(r2)
 /* 801648D0 001616D0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801648D4 001616D4  40 80 00 08 */	bge lbl_801648DC
-/* 801648D8 001616D8  C0 22 B9 D0 */	lfs f1, _esc__2_1053_1-_SDA2_BASE_(r2)
+/* 801648D8 001616D8  C0 22 B9 D0 */	lfs f1, _esc__2_1053_1@sda21(r2)
 lbl_801648DC:
 /* 801648DC 001616DC  4B EA 6B 9D */	bl xsqrt__Ff
 /* 801648E0 001616E0  FF E0 08 90 */	fmr f31, f1
-/* 801648E4 001616E4  C0 02 B9 D0 */	lfs f0, _esc__2_1053_1-_SDA2_BASE_(r2)
+/* 801648E4 001616E4  C0 02 B9 D0 */	lfs f0, _esc__2_1053_1@sda21(r2)
 /* 801648E8 001616E8  7F E3 FB 78 */	mr r3, r31
 /* 801648EC 001616EC  EC 20 F8 24 */	fdivs f1, f0, f31
 /* 801648F0 001616F0  4B EA 6F B1 */	bl __amu__5xVec3Ff
@@ -342,7 +342,7 @@ lbl_80164A50:
 /* 80164A64 00161864  38 84 00 0C */	addi r4, r4, 0xc
 /* 80164A68 00161868  4B EA 66 41 */	bl __as__5xVec3FRC5xVec3
 /* 80164A6C 0016186C  80 7F 00 00 */	lwz r3, 0(r31)
-/* 80164A70 00161870  C0 02 B9 DC */	lfs f0, _esc__2_1096-_SDA2_BASE_(r2)
+/* 80164A70 00161870  C0 02 B9 DC */	lfs f0, _esc__2_1096@sda21(r2)
 /* 80164A74 00161874  C0 43 00 1C */	lfs f2, 0x1c(r3)
 /* 80164A78 00161878  C0 23 00 20 */	lfs f1, 0x20(r3)
 /* 80164A7C 0016187C  EC 22 08 28 */	fsubs f1, f2, f1
@@ -422,12 +422,12 @@ IntersectLineWithCircle__FRC5xVec3RC5xVec3RC5xVec3fR5xVec3Rf:
 /* 80164B7C 0016197C  7F A3 EB 78 */	mr r3, r29
 /* 80164B80 00161980  7F 84 E3 78 */	mr r4, r28
 /* 80164B84 00161984  4B EA 66 E1 */	bl dot__5xVec3CFRC5xVec3
-/* 80164B88 00161988  C0 02 B9 E0 */	lfs f0, _esc__2_1112-_SDA2_BASE_(r2)
+/* 80164B88 00161988  C0 02 B9 E0 */	lfs f0, _esc__2_1112@sda21(r2)
 /* 80164B8C 0016198C  7F 63 DB 78 */	mr r3, r27
 /* 80164B90 00161990  7F 84 E3 78 */	mr r4, r28
 /* 80164B94 00161994  EF E0 00 72 */	fmuls f31, f0, f1
 /* 80164B98 00161998  4B EA 66 CD */	bl dot__5xVec3CFRC5xVec3
-/* 80164B9C 0016199C  C0 02 B9 E0 */	lfs f0, _esc__2_1112-_SDA2_BASE_(r2)
+/* 80164B9C 0016199C  C0 02 B9 E0 */	lfs f0, _esc__2_1112@sda21(r2)
 /* 80164BA0 001619A0  7F 63 DB 78 */	mr r3, r27
 /* 80164BA4 001619A4  EF A0 F8 78 */	fmsubs f29, f0, f1, f31
 /* 80164BA8 001619A8  4B EA 69 7D */	bl length2__5xVec3CFv
@@ -435,20 +435,20 @@ IntersectLineWithCircle__FRC5xVec3RC5xVec3RC5xVec3fR5xVec3Rf:
 /* 80164BB0 001619B0  7F 63 DB 78 */	mr r3, r27
 /* 80164BB4 001619B4  7F A4 EB 78 */	mr r4, r29
 /* 80164BB8 001619B8  4B EA 66 AD */	bl dot__5xVec3CFRC5xVec3
-/* 80164BBC 001619BC  C0 02 B9 E0 */	lfs f0, _esc__2_1112-_SDA2_BASE_(r2)
+/* 80164BBC 001619BC  C0 02 B9 E0 */	lfs f0, _esc__2_1112@sda21(r2)
 /* 80164BC0 001619C0  7F A3 EB 78 */	mr r3, r29
 /* 80164BC4 001619C4  EF E0 F8 7C */	fnmsubs f31, f0, f1, f31
 /* 80164BC8 001619C8  4B EA 69 5D */	bl length2__5xVec3CFv
 /* 80164BCC 001619CC  EC 41 F8 2A */	fadds f2, f1, f31
-/* 80164BD0 001619D0  C0 22 B9 E4 */	lfs f1, _esc__2_1113_1-_SDA2_BASE_(r2)
-/* 80164BD4 001619D4  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3-_SDA2_BASE_(r2)
+/* 80164BD0 001619D0  C0 22 B9 E4 */	lfs f1, _esc__2_1113_1@sda21(r2)
+/* 80164BD4 001619D4  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3@sda21(r2)
 /* 80164BD8 001619D8  EC 21 07 B2 */	fmuls f1, f1, f30
 /* 80164BDC 001619DC  EC 42 E0 28 */	fsubs f2, f2, f28
 /* 80164BE0 001619E0  EC 21 00 B2 */	fmuls f1, f1, f2
 /* 80164BE4 001619E4  EC 3D 0F 78 */	fmsubs f1, f29, f29, f1
 /* 80164BE8 001619E8  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80164BEC 001619EC  40 80 00 1C */	bge lbl_80164C08
-/* 80164BF0 001619F0  C0 22 B9 D0 */	lfs f1, _esc__2_1053_1-_SDA2_BASE_(r2)
+/* 80164BF0 001619F0  C0 22 B9 D0 */	lfs f1, _esc__2_1053_1@sda21(r2)
 /* 80164BF4 001619F4  7F C3 F3 78 */	mr r3, r30
 /* 80164BF8 001619F8  7F 64 DB 78 */	mr r4, r27
 /* 80164BFC 001619FC  7F 85 E3 78 */	mr r5, r28
@@ -457,7 +457,7 @@ IntersectLineWithCircle__FRC5xVec3RC5xVec3RC5xVec3fR5xVec3Rf:
 lbl_80164C08:
 /* 80164C08 00161A08  4B EA 68 71 */	bl xsqrt__Ff
 /* 80164C0C 00161A0C  FC 60 E8 50 */	fneg f3, f29
-/* 80164C10 00161A10  C0 02 B9 E0 */	lfs f0, _esc__2_1112-_SDA2_BASE_(r2)
+/* 80164C10 00161A10  C0 02 B9 E0 */	lfs f0, _esc__2_1112@sda21(r2)
 /* 80164C14 00161A14  EC 80 07 B2 */	fmuls f4, f0, f30
 /* 80164C18 00161A18  EC 43 08 2A */	fadds f2, f3, f1
 /* 80164C1C 00161A1C  EC 03 08 28 */	fsubs f0, f3, f1
@@ -764,12 +764,12 @@ lbl_80164FC4:
 /* 80165040 00161E40  38 60 FF FF */	li r3, -1
 /* 80165044 00161E44  90 1F 00 40 */	stw r0, 0x40(r31)
 /* 80165048 00161E48  38 00 00 00 */	li r0, 0
-/* 8016504C 00161E4C  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3-_SDA2_BASE_(r2)
-/* 80165050 00161E50  80 AD CF DC */	lwz r5, first_train_car__9zTrainCar-_SDA_BASE_(r13)
+/* 8016504C 00161E4C  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3@sda21(r2)
+/* 80165050 00161E50  80 AD CF DC */	lwz r5, first_train_car__9zTrainCar@sda21(r13)
 /* 80165054 00161E54  90 BF 01 04 */	stw r5, 0x104(r31)
-/* 80165058 00161E58  93 ED CF DC */	stw r31, first_train_car__9zTrainCar-_SDA_BASE_(r13)
+/* 80165058 00161E58  93 ED CF DC */	stw r31, first_train_car__9zTrainCar@sda21(r13)
 /* 8016505C 00161E5C  90 9F 00 0C */	stw r4, 0xc(r31)
-/* 80165060 00161E60  90 6D A0 B8 */	stw r3, spark_particle_batch_id__9zTrainCar-_SDA_BASE_(r13)
+/* 80165060 00161E60  90 6D A0 B8 */	stw r3, spark_particle_batch_id__9zTrainCar@sda21(r13)
 /* 80165064 00161E64  98 1F 01 00 */	stb r0, 0x100(r31)
 /* 80165068 00161E68  D0 1F 01 1C */	stfs f0, 0x11c(r31)
 /* 8016506C 00161E6C  D0 1F 01 18 */	stfs f0, 0x118(r31)
@@ -778,13 +778,13 @@ lbl_80164FC4:
 /* 80165078 00161E78  80 1F 00 D8 */	lwz r0, 0xd8(r31)
 /* 8016507C 00161E7C  28 00 00 00 */	cmplwi r0, 0
 /* 80165080 00161E80  40 82 00 C4 */	bne lbl_80165144
-/* 80165084 00161E84  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80165084 00161E84  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80165088 00161E88  38 80 00 28 */	li r4, 0x28
 /* 8016508C 00161E8C  38 A0 00 00 */	li r5, 0
 /* 80165090 00161E90  4B EE 4A D1 */	bl xMemAlloc__FUiUii
 /* 80165094 00161E94  90 7F 00 D8 */	stw r3, 0xd8(r31)
 /* 80165098 00161E98  38 80 00 00 */	li r4, 0
-/* 8016509C 00161E9C  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3-_SDA2_BASE_(r2)
+/* 8016509C 00161E9C  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3@sda21(r2)
 /* 801650A0 00161EA0  80 7F 00 D8 */	lwz r3, 0xd8(r31)
 /* 801650A4 00161EA4  D0 03 00 1C */	stfs f0, 0x1c(r3)
 /* 801650A8 00161EA8  80 7F 00 DC */	lwz r3, 0xdc(r31)
@@ -798,7 +798,7 @@ lbl_80164FC4:
 /* 801650C8 00161EC8  80 7F 00 D8 */	lwz r3, 0xd8(r31)
 /* 801650CC 00161ECC  C0 06 00 68 */	lfs f0, 0x68(r6)
 /* 801650D0 00161ED0  D0 03 00 04 */	stfs f0, 4(r3)
-/* 801650D4 00161ED4  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 801650D4 00161ED4  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 801650D8 00161ED8  4B EE 4A 89 */	bl xMemAlloc__FUiUii
 /* 801650DC 00161EDC  80 9F 00 D8 */	lwz r4, 0xd8(r31)
 /* 801650E0 00161EE0  38 A0 00 01 */	li r5, 1
@@ -1009,7 +1009,7 @@ MapCarPointers__9zTrainCarFv:
 /* 801653A8 001621A8  7C 08 02 A6 */	mflr r0
 /* 801653AC 001621AC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801653B0 001621B0  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 801653B4 001621B4  83 ED CF DC */	lwz r31, first_train_car__9zTrainCar-_SDA_BASE_(r13)
+/* 801653B4 001621B4  83 ED CF DC */	lwz r31, first_train_car__9zTrainCar@sda21(r13)
 /* 801653B8 001621B8  48 00 00 5C */	b lbl_80165414
 lbl_801653BC:
 /* 801653BC 001621BC  80 7F 00 DC */	lwz r3, 0xdc(r31)
@@ -1018,7 +1018,7 @@ lbl_801653BC:
 /* 801653C8 001621C8  41 82 00 48 */	beq lbl_80165410
 /* 801653CC 001621CC  38 80 00 00 */	li r4, 0
 /* 801653D0 001621D0  4B F0 6E D1 */	bl xSTFindAsset__FUiPUi
-/* 801653D4 001621D4  80 8D CF DC */	lwz r4, first_train_car__9zTrainCar-_SDA_BASE_(r13)
+/* 801653D4 001621D4  80 8D CF DC */	lwz r4, first_train_car__9zTrainCar@sda21(r13)
 /* 801653D8 001621D8  48 00 00 08 */	b lbl_801653E0
 lbl_801653DC:
 /* 801653DC 001621DC  80 84 01 04 */	lwz r4, 0x104(r4)
@@ -1043,7 +1043,7 @@ lbl_80165414:
 /* 80165414 00162214  28 1F 00 00 */	cmplwi r31, 0
 /* 80165418 00162218  40 82 FF A4 */	bne lbl_801653BC
 /* 8016541C 0016221C  38 00 00 00 */	li r0, 0
-/* 80165420 00162220  90 0D CF DC */	stw r0, first_train_car__9zTrainCar-_SDA_BASE_(r13)
+/* 80165420 00162220  90 0D CF DC */	stw r0, first_train_car__9zTrainCar@sda21(r13)
 /* 80165424 00162224  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80165428 00162228  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 8016542C 0016222C  7C 08 03 A6 */	mtlr r0
@@ -1066,7 +1066,7 @@ Update__9zTrainCarFP4xEntP6xScenef:
 /* 80165464 00162264  7F C5 F3 78 */	mr r5, r30
 /* 80165468 00162268  4B F4 84 65 */	bl zDestructibleAsset_Update__FP4xEntP13zDestructibleP6xScenef
 lbl_8016546C:
-/* 8016546C 0016226C  80 0D CF DC */	lwz r0, first_train_car__9zTrainCar-_SDA_BASE_(r13)
+/* 8016546C 0016226C  80 0D CF DC */	lwz r0, first_train_car__9zTrainCar@sda21(r13)
 /* 80165470 00162270  28 00 00 00 */	cmplwi r0, 0
 /* 80165474 00162274  41 82 00 10 */	beq lbl_80165484
 /* 80165478 00162278  4B FF FF 2D */	bl MapCarPointers__9zTrainCarFv
@@ -1080,7 +1080,7 @@ lbl_80165484:
 /* 80165494 00162294  4B FF F6 71 */	bl __ct__11zPathWalkerFv
 /* 80165498 00162298  38 01 00 08 */	addi r0, r1, 8
 /* 8016549C 0016229C  FC 20 F8 90 */	fmr f1, f31
-/* 801654A0 001622A0  90 0D CF D8 */	stw r0, walker__9zTrainCar-_SDA_BASE_(r13)
+/* 801654A0 001622A0  90 0D CF D8 */	stw r0, walker__9zTrainCar@sda21(r13)
 /* 801654A4 001622A4  7F E3 FB 78 */	mr r3, r31
 /* 801654A8 001622A8  7F C4 F3 78 */	mr r4, r30
 /* 801654AC 001622AC  48 00 00 35 */	bl Update__9zTrainCarFP6xScenef
@@ -1089,7 +1089,7 @@ lbl_80165484:
 /* 801654B8 001622B8  80 84 00 18 */	lwz r4, 0x18(r4)
 /* 801654BC 001622BC  4B FF F8 ED */	bl FreeUnusedRearSegments__11zPathWalkerFP11zFollowPath
 /* 801654C0 001622C0  38 00 00 00 */	li r0, 0
-/* 801654C4 001622C4  90 0D CF D8 */	stw r0, walker__9zTrainCar-_SDA_BASE_(r13)
+/* 801654C4 001622C4  90 0D CF D8 */	stw r0, walker__9zTrainCar@sda21(r13)
 lbl_801654C8:
 /* 801654C8 001622C8  CB E1 00 18 */	lfd f31, 0x18(r1)
 /* 801654CC 001622CC  BB C1 00 10 */	lmw r30, 0x10(r1)
@@ -1229,7 +1229,7 @@ Move__9zTrainCarFP4xEntP6xScenefP9xEntFrame:
 Move__9zTrainCarFP6xScenefP9xEntFrame:
 /* 801656AC 001624AC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801656B0 001624B0  7C 08 02 A6 */	mflr r0
-/* 801656B4 001624B4  C0 02 B9 E8 */	lfs f0, _esc__2_1311-_SDA2_BASE_(r2)
+/* 801656B4 001624B4  C0 02 B9 E8 */	lfs f0, _esc__2_1311@sda21(r2)
 /* 801656B8 001624B8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801656BC 001624BC  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 801656C0 001624C0  41 80 00 1C */	blt lbl_801656DC
@@ -1263,7 +1263,7 @@ MoveAsFront__9zTrainCarFP6xScenefP9xEntFrame:
 /* 8016571C 0016251C  4C 40 13 82 */	cror 2, 0, 2
 /* 80165720 00162520  40 82 00 1C */	bne lbl_8016573C
 /* 80165724 00162524  C0 23 00 20 */	lfs f1, 0x20(r3)
-/* 80165728 00162528  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3-_SDA2_BASE_(r2)
+/* 80165728 00162528  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3@sda21(r2)
 /* 8016572C 0016252C  D0 23 00 1C */	stfs f1, 0x1c(r3)
 /* 80165730 00162530  80 7E 00 D8 */	lwz r3, 0xd8(r30)
 /* 80165734 00162534  D0 03 00 24 */	stfs f0, 0x24(r3)
@@ -1285,18 +1285,18 @@ lbl_80165764:
 /* 8016576C 0016256C  38 9E 00 E8 */	addi r4, r30, 0xe8
 /* 80165770 00162570  48 00 02 DD */	bl FrontCarUpdateFrontAxle__9zTrainCarFfR5xVec3
 /* 80165774 00162574  80 9E 00 D8 */	lwz r4, 0xd8(r30)
-/* 80165778 00162578  80 6D CF D8 */	lwz r3, walker__9zTrainCar-_SDA_BASE_(r13)
+/* 80165778 00162578  80 6D CF D8 */	lwz r3, walker__9zTrainCar@sda21(r13)
 /* 8016577C 0016257C  80 84 00 18 */	lwz r4, 0x18(r4)
 /* 80165780 00162580  4B FF F3 91 */	bl Start__11zPathWalkerFP11zFollowPath
 /* 80165784 00162584  80 DE 00 DC */	lwz r6, 0xdc(r30)
 /* 80165788 00162588  38 9E 00 E8 */	addi r4, r30, 0xe8
-/* 8016578C 0016258C  80 6D CF D8 */	lwz r3, walker__9zTrainCar-_SDA_BASE_(r13)
+/* 8016578C 0016258C  80 6D CF D8 */	lwz r3, walker__9zTrainCar@sda21(r13)
 /* 80165790 00162590  38 A1 00 20 */	addi r5, r1, 0x20
 /* 80165794 00162594  C0 26 00 6C */	lfs f1, 0x6c(r6)
 /* 80165798 00162598  4B FF F4 F1 */	bl FindPoint__11zPathWalkerFRC5xVec3fR5xVec3
 /* 8016579C 0016259C  80 DE 00 DC */	lwz r6, 0xdc(r30)
 /* 801657A0 001625A0  38 9E 00 E8 */	addi r4, r30, 0xe8
-/* 801657A4 001625A4  80 6D CF D8 */	lwz r3, walker__9zTrainCar-_SDA_BASE_(r13)
+/* 801657A4 001625A4  80 6D CF D8 */	lwz r3, walker__9zTrainCar@sda21(r13)
 /* 801657A8 001625A8  38 BE 00 F4 */	addi r5, r30, 0xf4
 /* 801657AC 001625AC  C0 26 00 6C */	lfs f1, 0x6c(r6)
 /* 801657B0 001625B0  C0 06 00 70 */	lfs f0, 0x70(r6)
@@ -1319,7 +1319,7 @@ lbl_80165764:
 /* 801657F4 001625F4  38 9F 00 30 */	addi r4, r31, 0x30
 /* 801657F8 001625F8  38 A1 00 14 */	addi r5, r1, 0x14
 /* 801657FC 001625FC  4B EA 6A DD */	bl xVec3Sub__FR5xVec3RC5xVec3RC5xVec3
-/* 80165800 00162600  C0 02 B9 D0 */	lfs f0, _esc__2_1053_1-_SDA2_BASE_(r2)
+/* 80165800 00162600  C0 02 B9 D0 */	lfs f0, _esc__2_1053_1@sda21(r2)
 /* 80165804 00162604  38 7F 00 C8 */	addi r3, r31, 0xc8
 /* 80165808 00162608  38 81 00 08 */	addi r4, r1, 8
 /* 8016580C 0016260C  EC 20 F8 24 */	fdivs f1, f0, f31
@@ -1350,18 +1350,18 @@ MoveFollowParent__9zTrainCarFP6xScenefP9xEntFrame:
 /* 80165864 00162664  38 84 00 F4 */	addi r4, r4, 0xf4
 /* 80165868 00162668  C0 03 00 74 */	lfs f0, 0x74(r3)
 /* 8016586C 0016266C  C0 26 00 78 */	lfs f1, 0x78(r6)
-/* 80165870 00162670  80 6D CF D8 */	lwz r3, walker__9zTrainCar-_SDA_BASE_(r13)
+/* 80165870 00162670  80 6D CF D8 */	lwz r3, walker__9zTrainCar@sda21(r13)
 /* 80165874 00162674  EC 21 00 2A */	fadds f1, f1, f0
 /* 80165878 00162678  4B FF F4 11 */	bl FindPoint__11zPathWalkerFRC5xVec3fR5xVec3
 /* 8016587C 0016267C  80 DE 00 DC */	lwz r6, 0xdc(r30)
 /* 80165880 00162680  38 9E 00 E8 */	addi r4, r30, 0xe8
-/* 80165884 00162684  80 6D CF D8 */	lwz r3, walker__9zTrainCar-_SDA_BASE_(r13)
+/* 80165884 00162684  80 6D CF D8 */	lwz r3, walker__9zTrainCar@sda21(r13)
 /* 80165888 00162688  38 A1 00 20 */	addi r5, r1, 0x20
 /* 8016588C 0016268C  C0 26 00 6C */	lfs f1, 0x6c(r6)
 /* 80165890 00162690  4B FF F3 F9 */	bl FindPoint__11zPathWalkerFRC5xVec3fR5xVec3
 /* 80165894 00162694  80 DE 00 DC */	lwz r6, 0xdc(r30)
 /* 80165898 00162698  38 9E 00 E8 */	addi r4, r30, 0xe8
-/* 8016589C 0016269C  80 6D CF D8 */	lwz r3, walker__9zTrainCar-_SDA_BASE_(r13)
+/* 8016589C 0016269C  80 6D CF D8 */	lwz r3, walker__9zTrainCar@sda21(r13)
 /* 801658A0 001626A0  38 BE 00 F4 */	addi r5, r30, 0xf4
 /* 801658A4 001626A4  C0 26 00 6C */	lfs f1, 0x6c(r6)
 /* 801658A8 001626A8  C0 06 00 70 */	lfs f0, 0x70(r6)
@@ -1384,7 +1384,7 @@ MoveFollowParent__9zTrainCarFP6xScenefP9xEntFrame:
 /* 801658EC 001626EC  38 9F 00 30 */	addi r4, r31, 0x30
 /* 801658F0 001626F0  38 A1 00 14 */	addi r5, r1, 0x14
 /* 801658F4 001626F4  4B EA 69 E5 */	bl xVec3Sub__FR5xVec3RC5xVec3RC5xVec3
-/* 801658F8 001626F8  C0 02 B9 D0 */	lfs f0, _esc__2_1053_1-_SDA2_BASE_(r2)
+/* 801658F8 001626F8  C0 02 B9 D0 */	lfs f0, _esc__2_1053_1@sda21(r2)
 /* 801658FC 001626FC  38 7F 00 C8 */	addi r3, r31, 0xc8
 /* 80165900 00162700  38 81 00 08 */	addi r4, r1, 8
 /* 80165904 00162704  EC 20 F8 24 */	fdivs f1, f0, f31
@@ -1409,7 +1409,7 @@ PositionCar__9zTrainCarFRC5xVec3RC5xVec3:
 /* 80165944 00162744  38 63 00 20 */	addi r3, r3, 0x20
 /* 80165948 00162748  4B EA 69 91 */	bl xVec3Sub__FR5xVec3RC5xVec3RC5xVec3
 /* 8016594C 0016274C  80 7E 00 48 */	lwz r3, 0x48(r30)
-/* 80165950 00162750  38 82 90 3C */	addi r4, r2, m_UnitAxisZ__5xVec3-_SDA2_BASE_
+/* 80165950 00162750  38 82 90 3C */	addi r4, r2, m_UnitAxisZ__5xVec3@sda21
 /* 80165954 00162754  38 63 00 20 */	addi r3, r3, 0x20
 /* 80165958 00162758  4B EA 5E D5 */	bl safe_normalize__5xVec3FRC5xVec3
 /* 8016595C 0016275C  80 7E 00 DC */	lwz r3, 0xdc(r30)
@@ -1420,13 +1420,13 @@ PositionCar__9zTrainCarFRC5xVec3RC5xVec3:
 /* 80165970 00162770  38 A5 00 20 */	addi r5, r5, 0x20
 /* 80165974 00162774  4B EA 69 31 */	bl xVec3AddScaled__FR5xVec3RC5xVec3RC5xVec3f
 /* 80165978 00162778  80 7E 00 48 */	lwz r3, 0x48(r30)
-/* 8016597C 0016277C  38 82 90 30 */	addi r4, r2, m_UnitAxisY__5xVec3-_SDA2_BASE_
+/* 8016597C 0016277C  38 82 90 30 */	addi r4, r2, m_UnitAxisY__5xVec3@sda21
 /* 80165980 00162780  C0 64 00 08 */	lfs f3, 8(r4)
 /* 80165984 00162784  C0 03 00 24 */	lfs f0, 0x24(r3)
 /* 80165988 00162788  C0 84 00 04 */	lfs f4, 4(r4)
 /* 8016598C 0016278C  EC 00 00 F2 */	fmuls f0, f0, f3
 /* 80165990 00162790  C0 23 00 28 */	lfs f1, 0x28(r3)
-/* 80165994 00162794  C0 42 90 30 */	lfs f2, m_UnitAxisY__5xVec3-_SDA2_BASE_(r2)
+/* 80165994 00162794  C0 42 90 30 */	lfs f2, m_UnitAxisY__5xVec3@sda21(r2)
 /* 80165998 00162798  EC 04 00 78 */	fmsubs f0, f4, f1, f0
 /* 8016599C 0016279C  D0 03 00 00 */	stfs f0, 0(r3)
 /* 801659A0 001627A0  80 7E 00 48 */	lwz r3, 0x48(r30)
@@ -1488,7 +1488,7 @@ FrontCarUpdateFrontAxle__9zTrainCarFfR5xVec3:
 /* 80165A74 00162874  F3 81 00 28 */	psq_st f28, 40(r1), 0, qr0
 /* 80165A78 00162878  BF C1 00 18 */	stmw r30, 0x18(r1)
 /* 80165A7C 0016287C  7C 7E 1B 78 */	mr r30, r3
-/* 80165A80 00162880  C3 C2 B9 D8 */	lfs f30, _esc__2_1062_3-_SDA2_BASE_(r2)
+/* 80165A80 00162880  C3 C2 B9 D8 */	lfs f30, _esc__2_1062_3@sda21(r2)
 /* 80165A84 00162884  80 63 00 D8 */	lwz r3, 0xd8(r3)
 /* 80165A88 00162888  7C 9F 23 78 */	mr r31, r4
 /* 80165A8C 0016288C  C0 03 00 1C */	lfs f0, 0x1c(r3)
@@ -1541,7 +1541,7 @@ lbl_80165AB4:
 /* 80165B44 00162944  48 00 00 B0 */	b lbl_80165BF4
 lbl_80165B48:
 /* 80165B48 00162948  80 7E 00 D8 */	lwz r3, 0xd8(r30)
-/* 80165B4C 0016294C  C3 A2 B9 D8 */	lfs f29, _esc__2_1062_3-_SDA2_BASE_(r2)
+/* 80165B4C 0016294C  C3 A2 B9 D8 */	lfs f29, _esc__2_1062_3@sda21(r2)
 /* 80165B50 00162950  D3 83 00 04 */	stfs f28, 4(r3)
 /* 80165B54 00162954  48 00 00 84 */	b lbl_80165BD8
 lbl_80165B58:
@@ -1576,7 +1576,7 @@ lbl_80165B58:
 /* 80165BC8 001629C8  48 00 00 2C */	b lbl_80165BF4
 lbl_80165BCC:
 /* 80165BCC 001629CC  80 7E 00 D8 */	lwz r3, 0xd8(r30)
-/* 80165BD0 001629D0  C3 A2 B9 D8 */	lfs f29, _esc__2_1062_3-_SDA2_BASE_(r2)
+/* 80165BD0 001629D0  C3 A2 B9 D8 */	lfs f29, _esc__2_1062_3@sda21(r2)
 /* 80165BD4 001629D4  D3 83 00 04 */	stfs f28, 4(r3)
 lbl_80165BD8:
 /* 80165BD8 001629D8  80 DE 00 D8 */	lwz r6, 0xd8(r30)
@@ -1665,28 +1665,28 @@ ChangeSpeed__9zTrainCarFff:
 /* 80165CF4 00162AF4  80 03 00 E0 */	lwz r0, 0xe0(r3)
 /* 80165CF8 00162AF8  28 00 00 00 */	cmplwi r0, 0
 /* 80165CFC 00162AFC  4C 82 00 20 */	bnelr 
-/* 80165D00 00162B00  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3-_SDA2_BASE_(r2)
+/* 80165D00 00162B00  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3@sda21(r2)
 /* 80165D04 00162B04  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80165D08 00162B08  40 80 00 08 */	bge lbl_80165D10
 /* 80165D0C 00162B0C  FC 20 00 90 */	fmr f1, f0
 lbl_80165D10:
-/* 80165D10 00162B10  C0 02 B9 EC */	lfs f0, _esc__2_1415_0-_SDA2_BASE_(r2)
+/* 80165D10 00162B10  C0 02 B9 EC */	lfs f0, _esc__2_1415_0@sda21(r2)
 /* 80165D14 00162B14  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80165D18 00162B18  40 81 00 08 */	ble lbl_80165D20
 /* 80165D1C 00162B1C  FC 20 00 90 */	fmr f1, f0
 lbl_80165D20:
-/* 80165D20 00162B20  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3-_SDA2_BASE_(r2)
+/* 80165D20 00162B20  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3@sda21(r2)
 /* 80165D24 00162B24  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 80165D28 00162B28  40 80 00 08 */	bge lbl_80165D30
 /* 80165D2C 00162B2C  FC 40 00 90 */	fmr f2, f0
 lbl_80165D30:
-/* 80165D30 00162B30  C0 02 B9 F0 */	lfs f0, _esc__2_1416_1-_SDA2_BASE_(r2)
+/* 80165D30 00162B30  C0 02 B9 F0 */	lfs f0, _esc__2_1416_1@sda21(r2)
 /* 80165D34 00162B34  FC 02 00 40 */	fcmpo cr0, f2, f0
 /* 80165D38 00162B38  40 81 00 08 */	ble lbl_80165D40
 /* 80165D3C 00162B3C  FC 40 00 90 */	fmr f2, f0
 lbl_80165D40:
 /* 80165D40 00162B40  80 83 00 D8 */	lwz r4, 0xd8(r3)
-/* 80165D44 00162B44  C0 62 B9 D8 */	lfs f3, _esc__2_1062_3-_SDA2_BASE_(r2)
+/* 80165D44 00162B44  C0 62 B9 D8 */	lfs f3, _esc__2_1062_3@sda21(r2)
 /* 80165D48 00162B48  D0 24 00 20 */	stfs f1, 0x20(r4)
 /* 80165D4C 00162B4C  80 83 00 D8 */	lwz r4, 0xd8(r3)
 /* 80165D50 00162B50  D0 44 00 24 */	stfs f2, 0x24(r4)
@@ -1762,14 +1762,14 @@ lbl_80165E0C:
 /* 80165E44 00162C44  4B FF EF B1 */	bl CanSplitPath__11zPathWalkerFv
 /* 80165E48 00162C48  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 80165E4C 00162C4C  41 82 00 D4 */	beq lbl_80165F20
-/* 80165E50 00162C50  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80165E50 00162C50  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80165E54 00162C54  38 80 00 28 */	li r4, 0x28
 /* 80165E58 00162C58  38 A0 00 00 */	li r5, 0
 /* 80165E5C 00162C5C  4B EE 3D 05 */	bl xMemAlloc__FUiUii
 /* 80165E60 00162C60  90 7C 00 D8 */	stw r3, 0xd8(r28)
 /* 80165E64 00162C64  38 80 00 08 */	li r4, 8
 /* 80165E68 00162C68  38 A0 00 00 */	li r5, 0
-/* 80165E6C 00162C6C  80 6D BA E4 */	lwz r3, gActiveHeap-_SDA_BASE_(r13)
+/* 80165E6C 00162C6C  80 6D BA E4 */	lwz r3, gActiveHeap@sda21(r13)
 /* 80165E70 00162C70  4B EE 3C F1 */	bl xMemAlloc__FUiUii
 /* 80165E74 00162C74  80 BC 00 D8 */	lwz r5, 0xd8(r28)
 /* 80165E78 00162C78  38 81 00 0C */	addi r4, r1, 0xc
@@ -1832,7 +1832,7 @@ Explode__9zTrainCarFv:
 /* 80165F48 00162D48  80 03 01 08 */	lwz r0, 0x108(r3)
 /* 80165F4C 00162D4C  28 00 00 00 */	cmplwi r0, 0
 /* 80165F50 00162D50  41 82 00 28 */	beq lbl_80165F78
-/* 80165F54 00162D54  C0 02 B9 F4 */	lfs f0, _esc__2_1465_1-_SDA2_BASE_(r2)
+/* 80165F54 00162D54  C0 02 B9 F4 */	lfs f0, _esc__2_1465_1@sda21(r2)
 /* 80165F58 00162D58  38 E1 00 08 */	addi r7, r1, 8
 /* 80165F5C 00162D5C  38 80 00 00 */	li r4, 0
 /* 80165F60 00162D60  38 C0 00 3A */	li r6, 0x3a
@@ -1857,7 +1857,7 @@ lbl_80165FA0:
 /* 80165FA0 00162DA0  80 7F 00 D8 */	lwz r3, 0xd8(r31)
 /* 80165FA4 00162DA4  28 03 00 00 */	cmplwi r3, 0
 /* 80165FA8 00162DA8  41 82 00 14 */	beq lbl_80165FBC
-/* 80165FAC 00162DAC  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3-_SDA2_BASE_(r2)
+/* 80165FAC 00162DAC  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3@sda21(r2)
 /* 80165FB0 00162DB0  D0 03 00 1C */	stfs f0, 0x1c(r3)
 /* 80165FB4 00162DB4  80 7F 00 D8 */	lwz r3, 0xd8(r31)
 /* 80165FB8 00162DB8  D0 03 00 20 */	stfs f0, 0x20(r3)
@@ -1911,7 +1911,7 @@ ComputeCurviness__9zTrainCarFRC5xVec3:
 /* 80166044 00162E44  4B EA 52 21 */	bl dot__5xVec3CFRC5xVec3
 /* 80166048 00162E48  80 7F 00 DC */	lwz r3, 0xdc(r31)
 /* 8016604C 00162E4C  FC 60 0A 10 */	fabs f3, f1
-/* 80166050 00162E50  C0 02 B9 E0 */	lfs f0, _esc__2_1112-_SDA2_BASE_(r2)
+/* 80166050 00162E50  C0 02 B9 E0 */	lfs f0, _esc__2_1112@sda21(r2)
 /* 80166054 00162E54  C0 43 00 6C */	lfs f2, 0x6c(r3)
 /* 80166058 00162E58  C0 23 00 70 */	lfs f1, 0x70(r3)
 /* 8016605C 00162E5C  FC 60 18 18 */	frsp f3, f3
@@ -1921,7 +1921,7 @@ ComputeCurviness__9zTrainCarFRC5xVec3:
 /* 8016606C 00162E6C  FC 20 00 90 */	fmr f1, f0
 lbl_80166070:
 /* 80166070 00162E70  EC 23 08 24 */	fdivs f1, f3, f1
-/* 80166074 00162E74  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3-_SDA2_BASE_(r2)
+/* 80166074 00162E74  C0 02 B9 D8 */	lfs f0, _esc__2_1062_3@sda21(r2)
 /* 80166078 00162E78  D0 3F 01 0C */	stfs f1, 0x10c(r31)
 /* 8016607C 00162E7C  C0 3F 01 0C */	lfs f1, 0x10c(r31)
 /* 80166080 00162E80  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -1929,7 +1929,7 @@ lbl_80166070:
 /* 80166088 00162E88  D0 1F 01 0C */	stfs f0, 0x10c(r31)
 /* 8016608C 00162E8C  48 00 00 14 */	b lbl_801660A0
 lbl_80166090:
-/* 80166090 00162E90  C0 02 B9 F8 */	lfs f0, _esc__2_1496_1-_SDA2_BASE_(r2)
+/* 80166090 00162E90  C0 02 B9 F8 */	lfs f0, _esc__2_1496_1@sda21(r2)
 /* 80166094 00162E94  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 80166098 00162E98  40 81 00 08 */	ble lbl_801660A0
 /* 8016609C 00162E9C  D0 1F 01 0C */	stfs f0, 0x10c(r31)
@@ -1944,9 +1944,9 @@ lbl_801660A0:
 Reset__9zTrainCarFv:
 /* 801660B4 00162EB4  38 60 00 00 */	li r3, 0
 /* 801660B8 00162EB8  38 00 FF FF */	li r0, -1
-/* 801660BC 00162EBC  90 6D CF DC */	stw r3, first_train_car__9zTrainCar-_SDA_BASE_(r13)
-/* 801660C0 00162EC0  90 6D CF D8 */	stw r3, walker__9zTrainCar-_SDA_BASE_(r13)
-/* 801660C4 00162EC4  90 0D A0 B8 */	stw r0, spark_particle_batch_id__9zTrainCar-_SDA_BASE_(r13)
+/* 801660BC 00162EBC  90 6D CF DC */	stw r3, first_train_car__9zTrainCar@sda21(r13)
+/* 801660C0 00162EC0  90 6D CF D8 */	stw r3, walker__9zTrainCar@sda21(r13)
+/* 801660C4 00162EC4  90 0D A0 B8 */	stw r0, spark_particle_batch_id__9zTrainCar@sda21(r13)
 /* 801660C8 00162EC8  4E 80 00 20 */	blr 
 
 .endif
