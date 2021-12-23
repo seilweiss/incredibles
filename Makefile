@@ -63,7 +63,6 @@ else
   WINE := wine
 endif
 AS      := $(DEVKITPPC)/bin/powerpc-eabi-as
-OBJCOPY := $(DEVKITPPC)/bin/powerpc-eabi-objcopy
 CC      := $(WINE) tools/mwcc_compiler/$(MWCC_VERSION)/mwcceppc.exe
 LD      := $(WINE) tools/mwcc_compiler/$(MWCC_VERSION)/mwldeppc.exe
 PPROC   := python3 tools/postprocess.py
@@ -123,8 +122,6 @@ tools:
 $(ELF): $(O_FILES) $(LDSCRIPT)
 	@echo " LINK    "$@
 	$S$(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) $(O_FILES) 1>&2
-# The Metrowerks linker doesn't generate physical addresses in the ELF program headers. This fixes it somehow.
-	$S$(OBJCOPY) $@ $@
 
 $(OBJ_DIR)/%.o: %.s
 	@echo " AS      "$<
