@@ -83,7 +83,7 @@ _esc__2_1997:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zCombatInit__Fv
 zCombatInit__Fv:

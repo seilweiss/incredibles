@@ -79,7 +79,7 @@ _esc__2_1231:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zCombo_ParseINI__FP8xIniFile
 zCombo_ParseINI__FP8xIniFile:

@@ -8,7 +8,7 @@ _esc__2_653_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global get_world_box__24_esc__2_unnamed_esc__2_zTransient_cpp_esc__2_FR4xBox
 get_world_box__24_esc__2_unnamed_esc__2_zTransient_cpp_esc__2_FR4xBox:

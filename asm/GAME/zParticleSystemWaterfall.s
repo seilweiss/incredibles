@@ -80,7 +80,7 @@ _esc__2_1520_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global create_generator__24zParticleSystemWaterfallFR14zParticleAsset
 create_generator__24zParticleSystemWaterfallFR14zParticleAsset:

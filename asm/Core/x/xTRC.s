@@ -91,7 +91,7 @@ _esc__2_1232:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xTRCInit__Fv
 xTRCInit__Fv:

@@ -59,7 +59,7 @@ _esc__2_1496_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Alloc__Q211zFollowPath7segmentFRPQ211zFollowPath7segment
 Alloc__Q211zFollowPath7segmentFRPQ211zFollowPath7segment:

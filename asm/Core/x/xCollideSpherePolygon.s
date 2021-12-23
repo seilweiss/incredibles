@@ -26,7 +26,7 @@ _esc__2_797:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xSweptSphereToPoint__FRC12xSweptSphereRC5xVec3R28xCollideSphereToPointResults
 xSweptSphereToPoint__FRC12xSweptSphereRC5xVec3R28xCollideSphereToPointResults:

@@ -8,7 +8,7 @@ _esc__2_762_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xFMVGetBinkCompliantVolume__Fv
 xFMVGetBinkCompliantVolume__Fv:

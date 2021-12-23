@@ -95,7 +95,7 @@ _esc__2_1664:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zDispatcherParseINI__FP8xIniFile
 zDispatcherParseINI__FP8xIniFile:

@@ -101,7 +101,7 @@ _esc__2_1679_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q24zNPC10activatingFv
 setup__Q24zNPC10activatingFv:

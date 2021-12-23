@@ -65,7 +65,7 @@ _esc__2_1675_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global init__17xLaserBoltEmitterFUlPCcb
 init__17xLaserBoltEmitterFUlPCcb:

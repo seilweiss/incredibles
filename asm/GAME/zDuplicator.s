@@ -23,7 +23,7 @@ _esc__2_1148_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global update_wrapper__FP4xEntP6xScenef
 update_wrapper__FP4xEntP6xScenef:

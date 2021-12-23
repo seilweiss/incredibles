@@ -273,7 +273,7 @@ _esc__2_42:
 _esc__2_43:
 	.incbin "baserom.dol", 0x32E660, 0x8
 
-.section .text
+.section .text, "ax"
 
 .global __DVDInitWA
 __DVDInitWA:

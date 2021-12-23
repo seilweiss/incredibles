@@ -89,7 +89,7 @@ _esc__2_1420_4:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q24zNPC17ElectricitySystemFv
 setup__Q24zNPC17ElectricitySystemFv:

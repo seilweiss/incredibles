@@ -10,7 +10,7 @@ __vt__21xMemoryManagerGeneral:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Init__21xMemoryManagerGeneralFPvUiQ221xMemoryManagerGeneral3DirQ221xMemoryManagerGeneral8Strategyb
 Init__21xMemoryManagerGeneralFPvUiQ221xMemoryManagerGeneral3DirQ221xMemoryManagerGeneral8Strategyb:

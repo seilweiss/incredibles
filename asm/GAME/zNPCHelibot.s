@@ -143,7 +143,7 @@ _esc__2_1771_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q24zNPC16energy_glow_boneFv
 setup__Q24zNPC16energy_glow_boneFv:

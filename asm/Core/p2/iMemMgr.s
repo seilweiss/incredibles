@@ -62,7 +62,7 @@ _esc__2_729:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iMemClearStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_Fv
 iMemClearStack__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_Fv:

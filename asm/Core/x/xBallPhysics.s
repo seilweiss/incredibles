@@ -80,7 +80,7 @@ _esc__2_1284:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global reset_physics__12xBallPhysicsFv
 reset_physics__12xBallPhysicsFv:

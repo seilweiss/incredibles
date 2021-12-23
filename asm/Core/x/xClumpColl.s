@@ -110,7 +110,7 @@ _esc__2_1291:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xClumpColl_SetFilterFlags__FUcUcUc
 xClumpColl_SetFilterFlags__FUcUcUc:

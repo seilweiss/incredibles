@@ -2,7 +2,7 @@
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xIMLock__FR14xIMLockContext9xIMFormati
 xIMLock__FR14xIMLockContext9xIMFormati:

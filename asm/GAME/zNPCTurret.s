@@ -131,7 +131,7 @@ _esc__2_1964_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global in_range__Q24zNPC7up_downFP15xAnimTransitionP11xAnimSingle
 in_range__Q24zNPC7up_downFP15xAnimTransitionP11xAnimSingle:

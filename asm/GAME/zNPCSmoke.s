@@ -86,7 +86,7 @@ _esc__2_1492:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q24zNPC16NPCSmokeBehaviorFv
 setup__Q24zNPC16NPCSmokeBehaviorFv:

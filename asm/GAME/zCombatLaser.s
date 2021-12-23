@@ -146,7 +146,7 @@ _esc__2_1474_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zLaserLavaEmit__1zFfP18zTimeHandlerStruct
 zLaserLavaEmit__1zFfP18zTimeHandlerStruct:

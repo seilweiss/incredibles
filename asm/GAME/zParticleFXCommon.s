@@ -125,7 +125,7 @@ _esc__2_1397_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zParticleFXCommon_EmitEnergyPulse__FfRC5xVec3RC5xVec3ffff
 zParticleFXCommon_EmitEnergyPulse__FfRC5xVec3RC5xVec3ffff:

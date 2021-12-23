@@ -110,7 +110,7 @@ _esc__2_1240:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global create__Q212zIncrediBall6cameraFv
 create__Q212zIncrediBall6cameraFv:

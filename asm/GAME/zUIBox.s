@@ -65,7 +65,7 @@ _esc__2_1185_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global DoInit__6zUIBoxFv
 DoInit__6zUIBoxFv:

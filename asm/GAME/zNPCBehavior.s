@@ -116,7 +116,7 @@ _esc__2_1589_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
 enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_:

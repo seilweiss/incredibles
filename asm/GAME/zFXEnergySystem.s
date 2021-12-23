@@ -116,7 +116,7 @@ _esc__2_1278_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global scene_setup__13energy_systemFv
 scene_setup__13energy_systemFv:

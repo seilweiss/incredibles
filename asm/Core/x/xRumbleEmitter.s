@@ -38,7 +38,7 @@ _esc__2_1083:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global emitter_EventCB__28_esc__2_unnamed_esc__2_xRumbleEmitter_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi
 emitter_EventCB__28_esc__2_unnamed_esc__2_xRumbleEmitter_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi:

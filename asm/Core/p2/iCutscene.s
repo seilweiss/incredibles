@@ -8,7 +8,7 @@ read_sizzze:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iCSSoundSetup__FP9xCutscene
 iCSSoundSetup__FP9xCutscene:

@@ -68,7 +68,7 @@ _esc__2_1065_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iPadInit__Fv
 iPadInit__Fv:

@@ -65,7 +65,7 @@ _esc__2_1006:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zZipLineInit__FPvPv
 zZipLineInit__FPvPv:

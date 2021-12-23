@@ -155,7 +155,7 @@ _esc__2_2491:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global reset__Q218_esc__2_unnamed_esc__2_xEnt_cpp_esc__2_9anim_collFR4xEnt
 reset__Q218_esc__2_unnamed_esc__2_xEnt_cpp_esc__2_9anim_collFR4xEnt:

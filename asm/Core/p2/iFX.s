@@ -8,7 +8,7 @@ _esc__2_806_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global _iGCUVRenderCallback__FPvP18RxGameCubePipeData
 _iGCUVRenderCallback__FPvP18RxGameCubePipeData:

@@ -200,7 +200,7 @@ _esc__2_2031_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global refresh_splash__21_esc__2_unnamed_esc__2_zSplash_cpp_esc__2_FRQ221_esc__2_unnamed_esc__2_zSplash_cpp_esc__2_13splash_config
 refresh_splash__21_esc__2_unnamed_esc__2_zSplash_cpp_esc__2_FRQ221_esc__2_unnamed_esc__2_zSplash_cpp_esc__2_13splash_config:

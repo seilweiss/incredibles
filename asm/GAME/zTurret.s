@@ -131,7 +131,7 @@ _esc__2_1878_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Set2DVertex__21_esc__2_unnamed_esc__2_zTurret_cpp_esc__2_FP18rwGameCube2DVertexffffff
 Set2DVertex__21_esc__2_unnamed_esc__2_zTurret_cpp_esc__2_FP18rwGameCube2DVertexffffff:

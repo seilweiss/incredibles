@@ -101,7 +101,7 @@ _esc__2_1392_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global shield_event_wrapper__31_esc__2_unnamed_esc__2_zNPCMeleeShielded_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi
 shield_event_wrapper__31_esc__2_unnamed_esc__2_zNPCMeleeShielded_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi:

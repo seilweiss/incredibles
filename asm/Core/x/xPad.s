@@ -26,7 +26,7 @@ _esc__2_1040_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xPadInit__Fv
 xPadInit__Fv:

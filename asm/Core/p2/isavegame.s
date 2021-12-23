@@ -122,7 +122,7 @@ datestr_esc__7_1352:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iSGStartup__Fv
 iSGStartup__Fv:

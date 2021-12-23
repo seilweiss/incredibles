@@ -137,7 +137,7 @@ _esc__2_2031:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xDebugAddTweak__FPCcPCiiiPC14tweak_callbackPvUi
 xDebugAddTweak__FPCcPCiiiPC14tweak_callbackPvUi:

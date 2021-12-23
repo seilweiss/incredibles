@@ -35,7 +35,7 @@ init_esc__7_705:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iFileInit__Fv
 iFileInit__Fv:

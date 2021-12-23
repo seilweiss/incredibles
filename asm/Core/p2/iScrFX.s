@@ -41,7 +41,7 @@ _esc__2_1047_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iScrFxInit__Fv
 iScrFxInit__Fv:

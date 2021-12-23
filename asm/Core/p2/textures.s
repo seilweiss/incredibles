@@ -20,7 +20,7 @@ iWaterEnvTexID:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global TexturesOpen__Fv
 TexturesOpen__Fv:

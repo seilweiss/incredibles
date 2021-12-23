@@ -89,7 +89,7 @@ _esc__2_1586:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xModelGetPipe__FP8RpAtomic
 xModelGetPipe__FP8RpAtomic:

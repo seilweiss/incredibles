@@ -428,7 +428,7 @@ _esc__2_3313:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global ParseIni__17zElastiGirlPlayerFv
 ParseIni__17zElastiGirlPlayerFv:

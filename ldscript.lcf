@@ -31,4 +31,5 @@ FORCEFILES
 {
     extab.o
     extabindex.o
+    fmod.o
 }

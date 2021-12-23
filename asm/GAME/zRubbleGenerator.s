@@ -75,7 +75,7 @@ _esc__2_1835_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global RubbleEventWrapper__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi
 RubbleEventWrapper__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi:

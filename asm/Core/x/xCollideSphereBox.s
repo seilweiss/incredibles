@@ -32,7 +32,7 @@ _esc__2_1101_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xSweptSphereToBox__FR12xSweptSphereRC4xBox
 xSweptSphereToBox__FR12xSweptSphereRC4xBox:

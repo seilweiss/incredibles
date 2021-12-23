@@ -131,7 +131,7 @@ _esc__2_1356_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_tweaks__Q219_esc__2_unnamed_esc__2_zDust_cpp_esc__2_5tweakFv
 add_tweaks__Q219_esc__2_unnamed_esc__2_zDust_cpp_esc__2_5tweakFv:

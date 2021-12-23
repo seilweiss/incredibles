@@ -35,7 +35,7 @@ _esc__2_675_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iAsyncStart__FPFPv_Pv
 iAsyncStart__FPFPv_Pv:

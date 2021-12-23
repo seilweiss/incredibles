@@ -17,7 +17,7 @@ _esc__2_1012_5:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zPendulum_Init__FPvPv
 zPendulum_Init__FPvPv:

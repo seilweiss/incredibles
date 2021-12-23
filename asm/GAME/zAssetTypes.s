@@ -80,7 +80,7 @@ _esc__2_2057:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global GetBrainID__FUiUi
 GetBrainID__FUiUi:

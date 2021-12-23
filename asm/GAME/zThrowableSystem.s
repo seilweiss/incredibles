@@ -173,7 +173,7 @@ lbl_803D6724:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global UintCompare__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUiUi
 UintCompare__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_FUiUi:

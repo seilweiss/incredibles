@@ -62,7 +62,7 @@ _esc__2_1522:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global CountAtomicCB__FP8RpAtomicPv
 CountAtomicCB__FP8RpAtomicPv:

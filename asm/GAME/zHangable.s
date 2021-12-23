@@ -47,7 +47,7 @@ _esc__2_1189_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zHangable_Init__FR5xBaseR9xDynAssetUl
 zHangable_Init__FR5xBaseR9xDynAssetUl:

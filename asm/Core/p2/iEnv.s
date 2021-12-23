@@ -26,7 +26,7 @@ _esc__2_989_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global SetPipelineCB__FP8RpAtomicPv
 SetPipelineCB__FP8RpAtomicPv:

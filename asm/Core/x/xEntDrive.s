@@ -20,7 +20,7 @@ _esc__2_881_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xEntDriveInit__FP9xEntDriveP4xEnt
 xEntDriveInit__FP9xEntDriveP4xEnt:

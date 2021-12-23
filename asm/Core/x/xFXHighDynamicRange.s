@@ -113,7 +113,7 @@ _esc__2_1207_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_tweaks__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweakFv
 add_tweaks__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweakFv:

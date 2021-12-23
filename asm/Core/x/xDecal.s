@@ -124,7 +124,7 @@ _esc__2_3328:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global __as__11RwMatrixTagFRC11RwMatrixTag
 __as__11RwMatrixTagFRC11RwMatrixTag:

@@ -272,7 +272,7 @@ _esc__2_2668:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q24zNPC9hover_bobFv
 setup__Q24zNPC9hover_bobFv:

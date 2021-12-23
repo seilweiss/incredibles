@@ -47,7 +47,7 @@ lbl_803D5580:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global find_model__1zFPCcRUi
 find_model__1zFPCcRUi:

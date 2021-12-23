@@ -300,7 +300,7 @@ gIsInitialized:
 gIsInitialized_0:
 	.skip 0x8
 
-.section .text
+.section .text, "ax"
 
 .global TRKNubMainLoop
 TRKNubMainLoop:

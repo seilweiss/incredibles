@@ -128,7 +128,7 @@ _esc__2_1623:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global create__15xCamSupportPathFii
 create__15xCamSupportPathFii:

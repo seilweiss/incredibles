@@ -128,7 +128,7 @@ _esc__2_2944:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xSphereHitsSphere__FPC7xSpherePC7xSphereP7xCollis
 xSphereHitsSphere__FPC7xSpherePC7xSphereP7xCollis:

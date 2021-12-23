@@ -50,7 +50,7 @@ _esc__2_1213_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Setup__Q24zNPC6SensesFPQ24zNPC6common
 Setup__Q24zNPC6SensesFPQ24zNPC6common:

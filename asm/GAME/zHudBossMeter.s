@@ -128,7 +128,7 @@ _esc__2_963_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global __ct__Q24zHud9BossMeterFv
 __ct__Q24zHud9BossMeterFv:

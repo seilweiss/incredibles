@@ -482,7 +482,7 @@ _esc__2_3983:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global SetupCollision__Q24zNPC10CollidableFRC4xBoxb
 SetupCollision__Q24zNPC10CollidableFRC4xBoxb:

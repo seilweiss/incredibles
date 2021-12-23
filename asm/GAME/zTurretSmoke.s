@@ -80,7 +80,7 @@ _esc__2_1453_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__18zTurretSmokeSystemFv
 setup__18zTurretSmokeSystemFv:

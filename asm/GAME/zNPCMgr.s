@@ -11,7 +11,7 @@ g_npcmgr:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zNPCMgrSelf__Fv
 zNPCMgrSelf__Fv:

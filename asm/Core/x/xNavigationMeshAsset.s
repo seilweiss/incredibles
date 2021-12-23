@@ -20,7 +20,7 @@ _esc__2_1037_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global get_triangle__Q36xAsset15navigation_mesh8sub_meshCFRC5xVec3i
 get_triangle__Q36xAsset15navigation_mesh8sub_meshCFRC5xVec3i:

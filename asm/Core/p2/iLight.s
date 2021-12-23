@@ -17,7 +17,7 @@ _esc__2_613_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iLightInit__FP7RpWorld
 iLightInit__FP7RpWorld:

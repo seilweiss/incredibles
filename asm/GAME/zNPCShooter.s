@@ -140,7 +140,7 @@ _esc__2_1901:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global MuzzleFlash_LevelInit__25_esc__2_unnamed_esc__2_zNPCShooter_cpp_esc__2_Fv
 MuzzleFlash_LevelInit__25_esc__2_unnamed_esc__2_zNPCShooter_cpp_esc__2_Fv:

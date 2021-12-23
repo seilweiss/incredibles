@@ -11,7 +11,7 @@ _esc__2_812_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xMorphSeqSetup__FPvPFUiPc_Pv
 xMorphSeqSetup__FPvPFUiPc_Pv:

@@ -68,7 +68,7 @@ _esc__2_1257_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global load__13zFlameEmitterFRCQ213zFlameEmitter10asset_type
 load__13zFlameEmitterFRCQ213zFlameEmitter10asset_type:

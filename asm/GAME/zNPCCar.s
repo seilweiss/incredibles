@@ -158,7 +158,7 @@ _esc__2_1930_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global __cl__Q24zNPC20car_collide_callbackFR4xEnt
 __cl__Q24zNPC20car_collide_callbackFR4xEnt:

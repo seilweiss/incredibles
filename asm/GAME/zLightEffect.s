@@ -50,7 +50,7 @@ _esc__2_1092_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zLightEffectSet__FP7_zLighti
 zLightEffectSet__FP7_zLighti:

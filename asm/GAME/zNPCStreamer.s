@@ -68,7 +68,7 @@ _esc__2_1413_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global attack__Q24zNPC10run_streamFP15xAnimTransitionP11xAnimSingle
 attack__Q24zNPC10run_streamFP15xAnimTransitionP11xAnimSingle:

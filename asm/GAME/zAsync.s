@@ -70,7 +70,7 @@ _esc__2_1006_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Init__6zAsyncFPQ26zAsync6Screen
 Init__6zAsyncFPQ26zAsync6Screen:

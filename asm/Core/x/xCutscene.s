@@ -131,7 +131,7 @@ _esc__2_1686:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xCutscene_InitBegin__Fv
 xCutscene_InitBegin__Fv:

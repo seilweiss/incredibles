@@ -251,7 +251,7 @@ _esc__2_1631_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q25zDash12track_systemFv
 setup__Q25zDash12track_systemFv:

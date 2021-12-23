@@ -257,7 +257,7 @@ _esc__2_3324_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global bound_update_wrapper__21_esc__2_unnamed_esc__2_zPlayer_cpp_esc__2_FP4xEntP5xVec3
 bound_update_wrapper__21_esc__2_unnamed_esc__2_zPlayer_cpp_esc__2_FP4xEntP5xVec3:

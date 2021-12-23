@@ -1172,7 +1172,7 @@ _esc__2_7564:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global shuffle_list__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FPUii
 shuffle_list__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_FPUii:

@@ -173,7 +173,7 @@ _esc__2_2562:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xScrFxInit__Fv
 xScrFxInit__Fv:

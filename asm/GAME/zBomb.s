@@ -149,7 +149,7 @@ _esc__2_1534_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global get_model__19_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_FPCc
 get_model__19_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_FPCc:

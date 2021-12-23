@@ -110,7 +110,7 @@ _esc__2_1567:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global create__Q24xhud15block_allocatorFii
 create__Q24xhud15block_allocatorFii:

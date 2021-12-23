@@ -167,7 +167,7 @@ _esc__2_1359_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global __ct__Q24zHud12IncredimeterFv
 __ct__Q24zHud12IncredimeterFv:

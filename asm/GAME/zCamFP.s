@@ -26,7 +26,7 @@ _esc__2_1059_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global CopyPosFromPlayer__6zCamFPFP4xEnt
 CopyPosFromPlayer__6zCamFPFP4xEnt:

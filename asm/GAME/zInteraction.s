@@ -167,7 +167,7 @@ _esc__2_2044:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zTurn_IntFloor__Ff
 zTurn_IntFloor__Ff:

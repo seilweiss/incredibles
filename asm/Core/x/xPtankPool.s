@@ -68,7 +68,7 @@ _esc__2_1165:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global sort_buckets__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_FRQ224_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_10group_data
 sort_buckets__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_FRQ224_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_10group_data:

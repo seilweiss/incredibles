@@ -49,7 +49,7 @@ _esc__2_1029_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global load__Q24xhud11text_widgetFR5xBaseR9xDynAssetUl
 load__Q24xhud11text_widgetFR5xBaseR9xDynAssetUl:

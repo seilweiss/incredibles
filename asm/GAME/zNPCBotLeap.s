@@ -236,7 +236,7 @@ _esc__2_2063:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q24zNPC10light_dustFv
 setup__Q24zNPC10light_dustFv:

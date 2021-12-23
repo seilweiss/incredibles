@@ -215,7 +215,7 @@ _esc__2_1931:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Init__16zLightningWidgetFR5xBaseR9xDynAssetUl
 Init__16zLightningWidgetFR5xBaseR9xDynAssetUl:

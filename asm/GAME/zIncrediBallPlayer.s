@@ -292,7 +292,7 @@ _esc__2_2632:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global choose_strength__Q212zIncrediBall20incrediball_behaviorFP9xAnimPlayP10xAnimState
 choose_strength__Q212zIncrediBall20incrediball_behaviorFP9xAnimPlayP10xAnimState:

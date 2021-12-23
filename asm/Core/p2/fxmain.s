@@ -23,7 +23,7 @@ EffectOpenFunctions:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global MaterialSetupEffect__FP10RpMaterialPv
 MaterialSetupEffect__FP10RpMaterialPv:

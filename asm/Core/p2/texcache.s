@@ -38,7 +38,7 @@ init_esc__7_286:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global TexRegionCallback__FPC9_GXTexObj11_GXTexMapID
 TexRegionCallback__FPC9_GXTexObj11_GXTexMapID:

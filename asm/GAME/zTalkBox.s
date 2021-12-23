@@ -140,7 +140,7 @@ _esc__2_1782:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global speak_stop__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_Fv
 speak_stop__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_Fv:

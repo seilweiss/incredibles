@@ -23,7 +23,7 @@ _esc__2_1245_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_tweaks__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_5tweakFv
 add_tweaks__Q230_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_5tweakFv:

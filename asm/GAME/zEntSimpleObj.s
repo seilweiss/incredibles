@@ -89,7 +89,7 @@ hidden_entities__27_esc__2_unnamed_esc__2_zEntSimpleObj_cpp_esc__2_:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global CmpSimpleMgr__FPCvPCv
 CmpSimpleMgr__FPCvPCv:

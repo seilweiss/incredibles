@@ -10,7 +10,7 @@ _esc__2_1346:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xStrHash__FPCc
 xStrHash__FPCc:

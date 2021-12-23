@@ -20,7 +20,7 @@ sCollisionGeomTableCount:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zCollGeom_EntSetup__FP4xEnt
 zCollGeom_EntSetup__FP4xEnt:

@@ -74,7 +74,7 @@ _esc__2_1380_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zGameExtras_SceneInit__Fv
 zGameExtras_SceneInit__Fv:

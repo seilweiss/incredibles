@@ -355,7 +355,7 @@ _esc__2_2202:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global PickNextSoak__Fv
 PickNextSoak__Fv:

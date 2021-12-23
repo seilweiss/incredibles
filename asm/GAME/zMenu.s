@@ -86,7 +86,7 @@ _esc__2_1334_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zMenuDecrementIdleTimer__Fv
 zMenuDecrementIdleTimer__Fv:

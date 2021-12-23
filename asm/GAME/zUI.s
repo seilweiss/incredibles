@@ -56,7 +56,7 @@ _esc__2_1467_4:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global UIEventHandler__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi
 UIEventHandler__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_FP5xBaseP5xBaseUiPCfP5xBaseUi:

@@ -98,7 +98,7 @@ _esc__2_1158_7:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global initRibbon__27_esc__2_unnamed_esc__2_zEnergyStream_cpp_esc__2_FP9xFXRibbon
 initRibbon__27_esc__2_unnamed_esc__2_zEnergyStream_cpp_esc__2_FP9xFXRibbon:

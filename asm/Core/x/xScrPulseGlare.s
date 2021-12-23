@@ -62,7 +62,7 @@ _esc__2_830:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global init_pulse__28_esc__2_unnamed_esc__2_xScrPulseGlare_cpp_esc__2_FRQ228_esc__2_unnamed_esc__2_xScrPulseGlare_cpp_esc__2_6xPulse
 init_pulse__28_esc__2_unnamed_esc__2_xScrPulseGlare_cpp_esc__2_FRQ228_esc__2_unnamed_esc__2_xScrPulseGlare_cpp_esc__2_6xPulse:

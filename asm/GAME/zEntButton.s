@@ -35,7 +35,7 @@ _esc__2_1149_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zEntButton_Init__FPvPv
 zEntButton_Init__FPvPv:

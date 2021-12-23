@@ -68,7 +68,7 @@ _esc__2_1323:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q24zNPC12initial_animFv
 setup__Q24zNPC12initial_animFv:

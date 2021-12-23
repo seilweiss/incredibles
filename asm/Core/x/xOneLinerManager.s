@@ -35,7 +35,7 @@ _esc__2_1109:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global compare__FPCvPCv
 compare__FPCvPCv:

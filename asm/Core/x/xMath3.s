@@ -92,7 +92,7 @@ _esc__2_2288:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xMath3Init__Fv
 xMath3Init__Fv:

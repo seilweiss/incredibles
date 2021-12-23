@@ -272,7 +272,7 @@ _esc__2_2438:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global find_decal_type__24_esc__2_unnamed_esc__2_zExplosion_cpp_esc__2_FUi
 find_decal_type__24_esc__2_unnamed_esc__2_zExplosion_cpp_esc__2_FUi:

@@ -41,7 +41,7 @@ _esc__2_728:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global MorphCommon__FP8RpAtomicP11RwMatrixTagPPsPsUifi
 MorphCommon__FP8RpAtomicP11RwMatrixTagPPsPsUifi:

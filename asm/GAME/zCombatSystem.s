@@ -14,7 +14,7 @@ currentCombat__27_esc__2_unnamed_esc__2_zCombatSystem_cpp_esc__2_:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zCombatSystemInit__Fv
 zCombatSystemInit__Fv:

@@ -29,7 +29,7 @@ __vt__11NCINBeNosey:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global CanRenderNow__11NCINBeNoseyFv
 CanRenderNow__11NCINBeNoseyFv:

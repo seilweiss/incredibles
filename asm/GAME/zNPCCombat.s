@@ -110,7 +110,7 @@ ZNPC_BombVoyageHeli__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zNPCCombatInit__Fv
 zNPCCombatInit__Fv:

@@ -29,7 +29,7 @@ _esc__2_822_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q21z4tossFv
 setup__Q21z4tossFv:

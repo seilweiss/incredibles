@@ -128,7 +128,7 @@ _esc__2_2061:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global GetChildFrameHierarchy__FP7RwFramePv
 GetChildFrameHierarchy__FP7RwFramePv:

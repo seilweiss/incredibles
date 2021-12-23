@@ -278,7 +278,7 @@ _esc__2_2014_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_tweaks__Q219_esc__2_unnamed_esc__2_zFire_cpp_esc__2_5tweakFPCc
 add_tweaks__Q219_esc__2_unnamed_esc__2_zFire_cpp_esc__2_5tweakFPCc:

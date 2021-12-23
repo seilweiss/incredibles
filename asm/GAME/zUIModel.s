@@ -53,7 +53,7 @@ _esc__2_1070_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global DoInit__8zUIModelFv
 DoInit__8zUIModelFv:

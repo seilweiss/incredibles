@@ -14,7 +14,7 @@ _esc__2_stringBase0_102:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global DoInit__13zUIUserStringFv
 DoInit__13zUIUserStringFv:

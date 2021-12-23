@@ -59,7 +59,7 @@ _esc__2_792:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global init_genrand__FUi
 init_genrand__FUi:

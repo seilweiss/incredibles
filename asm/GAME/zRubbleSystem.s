@@ -176,7 +176,7 @@ _esc__2_2516_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global load_model__27_esc__2_unnamed_esc__2_zRubbleSystem_cpp_esc__2_FUif
 load_model__27_esc__2_unnamed_esc__2_zRubbleSystem_cpp_esc__2_FUif:

@@ -245,7 +245,7 @@ _esc__2_2416:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q214zCombatEffects19SparkParticleSystemFv
 setup__Q214zCombatEffects19SparkParticleSystemFv:

@@ -63,7 +63,7 @@ _esc__2_828:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xSubTitlesInit__Fv
 xSubTitlesInit__Fv:

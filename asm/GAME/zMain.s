@@ -197,7 +197,7 @@ _esc__2_1865:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zMainSetPAL__Fv
 zMainSetPAL__Fv:

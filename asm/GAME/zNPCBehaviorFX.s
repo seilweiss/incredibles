@@ -290,7 +290,7 @@ _esc__2_2829:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q24zNPC14shrapnel_deathFv
 setup__Q24zNPC14shrapnel_deathFv:

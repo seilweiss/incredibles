@@ -56,7 +56,7 @@ _esc__2_1186_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zCutsceneMgrGetHackTableSize__Fv
 zCutsceneMgrGetHackTableSize__Fv:

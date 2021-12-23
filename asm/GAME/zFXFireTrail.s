@@ -71,7 +71,7 @@ _esc__2_1051_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__10fire_trailFv
 setup__10fire_trailFv:

@@ -35,7 +35,7 @@ g_loadlock:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xBinioLoadCreate__FPCci
 xBinioLoadCreate__FPCci:

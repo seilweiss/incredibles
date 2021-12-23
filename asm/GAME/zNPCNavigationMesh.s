@@ -215,7 +215,7 @@ _esc__2_1675_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global initialize__Q24zNPC6circleFPQ24zNPC6common
 initialize__Q24zNPC6circleFPQ24zNPC6common:

@@ -532,7 +532,7 @@ frotext_om03_opening1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zCinFX_LightDust_Twk__FPCcP9NCINEntry
 zCinFX_LightDust_Twk__FPCcP9NCINEntry:

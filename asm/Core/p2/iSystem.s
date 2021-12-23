@@ -71,7 +71,7 @@ lbl_803D2F8C:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iRwResourcesEmptyArena__Fv
 iRwResourcesEmptyArena__Fv:

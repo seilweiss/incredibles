@@ -71,7 +71,7 @@ _esc__2_2041:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global _xSingleCompare__Fcc
 _xSingleCompare__Fcc:

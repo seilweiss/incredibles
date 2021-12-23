@@ -44,7 +44,7 @@ _esc__2_1292_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global create__16xFXCameraTextureFiibii
 create__16xFXCameraTextureFiibii:

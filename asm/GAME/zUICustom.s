@@ -132,7 +132,7 @@ _esc__2_1413_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Init__9zUICustomFv
 Init__9zUICustomFv:

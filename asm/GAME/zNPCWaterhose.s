@@ -14,7 +14,7 @@ _esc__2_stringBase0_89:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q24zNPC10water_boneFv
 setup__Q24zNPC10water_boneFv:

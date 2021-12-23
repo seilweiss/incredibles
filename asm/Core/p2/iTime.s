@@ -29,7 +29,7 @@ _esc__2_607:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iGetMinute__Fv
 iGetMinute__Fv:

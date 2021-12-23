@@ -11,7 +11,7 @@ _esc__2_683_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global ImageForwardDiff__FP7RwImagef
 ImageForwardDiff__FP7RwImagef:

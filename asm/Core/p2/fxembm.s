@@ -62,7 +62,7 @@ _esc__2_289_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global CreateEMBMEffect__Fv
 CreateEMBMEffect__Fv:

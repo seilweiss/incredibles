@@ -125,7 +125,7 @@ _esc__2_1512:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global init__Q25zDash13camera_splineFR5xBaseR9xDynAssetUl
 init__Q25zDash13camera_splineFR5xBaseR9xDynAssetUl:

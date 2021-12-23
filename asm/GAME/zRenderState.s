@@ -22,7 +22,7 @@ sRSBits:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zRenderStateInit__Fv
 zRenderStateInit__Fv:

@@ -83,7 +83,7 @@ _esc__2_1907:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xEntMotionInit__FP10xEntMotionP4xEntP15xEntMotionAsset
 xEntMotionInit__FP10xEntMotionP4xEntP15xEntMotionAsset:

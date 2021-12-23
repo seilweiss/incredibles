@@ -29,7 +29,7 @@ _esc__2_889_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global fillInCache__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_FP15zAnimCacheEntryP8RpAtomicff
 fillInCache__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_FP15zAnimCacheEntryP8RpAtomicff:

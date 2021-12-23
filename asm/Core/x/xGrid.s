@@ -41,7 +41,7 @@ _esc__2_1051:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xGridBoundInit__FP10xGridBoundPv
 xGridBoundInit__FP10xGridBoundPv:

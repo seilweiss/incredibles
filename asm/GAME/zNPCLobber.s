@@ -140,7 +140,7 @@ _esc__2_1521_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global get_lob_velocity__4zNPCFRC5xVec3RC5xVec3RC5xVec3ff
 get_lob_velocity__4zNPCFRC5xVec3RC5xVec3RC5xVec3ff:

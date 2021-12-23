@@ -91,7 +91,7 @@ _esc__2_1400:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iAnimEvalSKB__FP14iAnimSKBHeaderfUiP5xVec3P5xQuat
 iAnimEvalSKB__FP14iAnimSKBHeaderfUiP5xVec3P5xQuat:

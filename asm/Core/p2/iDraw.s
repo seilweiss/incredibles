@@ -38,7 +38,7 @@ _esc__2_993_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iDrawSetFBMSK__FUiUib
 iDrawSetFBMSK__FUiUib:

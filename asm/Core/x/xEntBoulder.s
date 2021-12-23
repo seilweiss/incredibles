@@ -68,7 +68,7 @@ _esc__2_1758:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xEntBoulder_FitToModel__FP11xEntBoulder
 xEntBoulder_FitToModel__FP11xEntBoulder:

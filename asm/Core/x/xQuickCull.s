@@ -26,7 +26,7 @@ _esc__2_779:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xQuickCullInit__FP10xQCControlffffff
 xQuickCullInit__FP10xQCControlffffff:

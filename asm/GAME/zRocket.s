@@ -164,7 +164,7 @@ _esc__2_1748:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup__Q21z6rocketFv
 setup__Q21z6rocketFv:

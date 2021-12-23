@@ -41,7 +41,7 @@ _esc__2_1144_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global create__9zCamSwingFv
 create__9zCamSwingFv:

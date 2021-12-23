@@ -59,7 +59,7 @@ _esc__2_821_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global __ct__Q24xhud12meter_widgetFRCQ24xhud11meter_asset
 __ct__Q24xhud12meter_widgetFRCQ24xhud11meter_asset:

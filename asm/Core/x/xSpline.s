@@ -77,7 +77,7 @@ _esc__2_1058:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Tridiag_Solve__FPfPfPfP5xVec3P5xVec3i
 Tridiag_Solve__FPfPfPfP5xVec3P5xVec3i:

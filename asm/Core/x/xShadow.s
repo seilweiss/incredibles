@@ -172,7 +172,7 @@ _esc__2_2795:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xShadowInit__Fv
 xShadowInit__Fv:

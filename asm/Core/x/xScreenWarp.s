@@ -161,7 +161,7 @@ _esc__2_1519_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global alloc_warp__25_esc__2_unnamed_esc__2_xScreenWarp_cpp_esc__2_FQ211xScreenWarp9type_enum
 alloc_warp__25_esc__2_unnamed_esc__2_xScreenWarp_cpp_esc__2_FQ211xScreenWarp9type_enum:

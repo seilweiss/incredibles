@@ -20,7 +20,7 @@ __vt__14xMemoryManager:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Allocate__14xMemoryManagerFUiUi
 Allocate__14xMemoryManagerFUiUi:

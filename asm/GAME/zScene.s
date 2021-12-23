@@ -197,7 +197,7 @@ _esc__2_3177:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zSceneIsLoadingPackFile__Fv
 zSceneIsLoadingPackFile__Fv:

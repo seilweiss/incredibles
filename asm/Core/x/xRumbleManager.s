@@ -43,7 +43,7 @@ _esc__2_1169:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global store__Q27xRumble7ManagerFPQ27xRumble7padInfoPCQ27xRumble11emitterBasePQ27xRumble14effectInternalfb
 store__Q27xRumble7ManagerFPQ27xRumble7padInfoPCQ27xRumble11emitterBasePQ27xRumble14effectInternalfb:

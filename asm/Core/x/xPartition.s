@@ -8,7 +8,7 @@ _esc__2_637:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xPartitionGetTrueIdx__FP13_tagPartitioniii
 xPartitionGetTrueIdx__FP13_tagPartitioniii:

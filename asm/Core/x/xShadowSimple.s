@@ -65,7 +65,7 @@ _esc__2_1299_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global shadowRayCB__FP14RpIntersectionP13RpWorldSectorP19RpCollisionTrianglefPv
 shadowRayCB__FP14RpIntersectionP13RpWorldSectorP19RpCollisionTrianglefPv:

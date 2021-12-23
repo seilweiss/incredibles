@@ -122,7 +122,7 @@ _esc__2_2430:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setup_faders__21_esc__2_unnamed_esc__2_xSndMgr_cpp_esc__2_Fv
 setup_faders__21_esc__2_unnamed_esc__2_xSndMgr_cpp_esc__2_Fv:

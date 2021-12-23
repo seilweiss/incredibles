@@ -163,7 +163,7 @@ _esc__2_1992_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zFrag_Alloc__F9zFragType
 zFrag_Alloc__F9zFragType:

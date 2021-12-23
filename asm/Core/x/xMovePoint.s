@@ -20,7 +20,7 @@ _esc__2_709_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xMovePointInit__FP10xMovePointP15xMovePointAsset
 xMovePointInit__FP10xMovePointP15xMovePointAsset:

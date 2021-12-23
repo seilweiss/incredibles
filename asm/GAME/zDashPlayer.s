@@ -506,7 +506,7 @@ _esc__2_3676:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Init__12zTimedSplashFR5xBaseR9xDynAssetUl
 Init__12zTimedSplashFR5xBaseR9xDynAssetUl:

@@ -248,7 +248,7 @@ _esc__2_1866:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global __ct__Q24zNPC4jumpFv
 __ct__Q24zNPC4jumpFv:

@@ -53,7 +53,7 @@ _esc__2_1188_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global __ct__Q24zNPC8npc_moveFv
 __ct__Q24zNPC8npc_moveFv:

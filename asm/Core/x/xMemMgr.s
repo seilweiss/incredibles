@@ -38,7 +38,7 @@ scratch_allocations__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xMemDebug_SoakLog__FPCc
 xMemDebug_SoakLog__FPCc:

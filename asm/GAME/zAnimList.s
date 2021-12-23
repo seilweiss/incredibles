@@ -38,7 +38,7 @@ _esc__2_687:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global AlwaysConditional__FP15xAnimTransitionP11xAnimSinglePv
 AlwaysConditional__FP15xAnimTransitionP11xAnimSinglePv:

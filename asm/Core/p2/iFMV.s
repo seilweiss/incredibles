@@ -68,7 +68,7 @@ _esc__2_1167:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global BigMovieAlloc__FUi
 BigMovieAlloc__FUi:

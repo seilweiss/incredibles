@@ -64,7 +64,7 @@ _esc__2_1181_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global create_handler_sets__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv
 create_handler_sets__32_esc__2_unnamed_esc__2_zParticleGenerator_cpp_esc__2_Fv:

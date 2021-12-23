@@ -56,7 +56,7 @@ _esc__2_1167_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global SetTexture__8zUIImageFUib
 SetTexture__8zUIImageFUib:

@@ -122,7 +122,7 @@ _esc__2_1308_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global CreateDirectionalLight__Fv
 CreateDirectionalLight__Fv:

@@ -424,7 +424,7 @@ _esc__2_3778:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global find_bounds__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FPC10xColor_tagRC13basic_rect_esc__0_i_esc__1_i
 find_bounds__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FPC10xColor_tagRC13basic_rect_esc__0_i_esc__1_i:

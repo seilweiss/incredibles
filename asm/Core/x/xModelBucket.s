@@ -89,7 +89,7 @@ _esc__2_1158_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global compare_opaque_buckets__26_esc__2_unnamed_esc__2_xModelBucket_cpp_esc__2_FPCvPCv
 compare_opaque_buckets__26_esc__2_unnamed_esc__2_xModelBucket_cpp_esc__2_FPCvPCv:

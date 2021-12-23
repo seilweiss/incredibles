@@ -20,7 +20,7 @@ _esc__2_873:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global normalize__32xCollideSpherePolygonUnprocessedFR5xVec3
 normalize__32xCollideSpherePolygonUnprocessedFR5xVec3:

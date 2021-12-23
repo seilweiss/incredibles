@@ -278,7 +278,7 @@ _esc__2_2628:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_wheel_bones__Q24zNPC10wheel_boneFPQ24zNPC6common
 add_wheel_bones__Q24zNPC10wheel_boneFPQ24zNPC6common:

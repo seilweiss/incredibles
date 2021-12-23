@@ -170,7 +170,7 @@ _esc__2_2033_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_tweaks__Q226_esc__2_unnamed_esc__2_zNPCMeleeBot_cpp_esc__2_15melee_bot_tweakFv
 add_tweaks__Q226_esc__2_unnamed_esc__2_zNPCMeleeBot_cpp_esc__2_15melee_bot_tweakFv:

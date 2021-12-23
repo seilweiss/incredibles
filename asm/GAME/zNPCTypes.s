@@ -32,7 +32,7 @@ _esc__2_stringBase0_87:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zNPCTypes_StartupTypes__Fv
 zNPCTypes_StartupTypes__Fv:

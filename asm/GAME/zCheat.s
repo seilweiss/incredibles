@@ -109,7 +109,7 @@ _esc__2_1738:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zCheatRemoveTimed__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv
 zCheatRemoveTimed__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_Fv:

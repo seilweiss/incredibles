@@ -86,7 +86,7 @@ _esc__2_1556:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zEntInit__FP4zEntP9xEntAssetUi
 zEntInit__FP4zEntP9xEntAssetUi:

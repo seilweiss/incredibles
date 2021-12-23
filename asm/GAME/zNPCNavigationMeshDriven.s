@@ -23,7 +23,7 @@ _esc__2_918:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Init__Q24zNPC22navigation_mesh_drivenFPQ24zNPC15navigation_meshi
 Init__Q24zNPC22navigation_mesh_drivenFPQ24zNPC15navigation_meshi:

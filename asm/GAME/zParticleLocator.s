@@ -53,7 +53,7 @@ setup_volume_table_esc__7_1235:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global alloc_activity__30_esc__2_unnamed_esc__2_zParticleLocator_cpp_esc__2_Fv
 alloc_activity__30_esc__2_unnamed_esc__2_zParticleLocator_cpp_esc__2_Fv:

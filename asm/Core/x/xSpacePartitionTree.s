@@ -40,7 +40,7 @@ _esc__2_1011_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_tweaks__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_5tweakFv
 add_tweaks__Q233_esc__2_unnamed_esc__2_xSpacePartitionTree_cpp_esc__2_5tweakFv:

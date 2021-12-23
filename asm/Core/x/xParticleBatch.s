@@ -50,7 +50,7 @@ BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_tweaks__Q228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_5tweakFv
 add_tweaks__Q228_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_5tweakFv:

@@ -92,7 +92,7 @@ _esc__2_1247_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global GetHeadBones__13zVioletPlayerFv
 GetHeadBones__13zVioletPlayerFv:

@@ -32,7 +32,7 @@ _esc__2_820_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xUtilStartup__Fv
 xUtilStartup__Fv:

@@ -172,7 +172,7 @@ lbl_803D54F8:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global WaitForPreviousPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb
 WaitForPreviousPrompt__23_esc__2_unnamed_esc__2_zSaveLoad_cpp_esc__2_Fb:

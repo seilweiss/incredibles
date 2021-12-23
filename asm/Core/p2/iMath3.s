@@ -32,7 +32,7 @@ _esc__2_1093_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iMath3Init__Fv
 iMath3Init__Fv:

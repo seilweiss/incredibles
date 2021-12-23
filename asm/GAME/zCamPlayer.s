@@ -275,7 +275,7 @@ _esc__2_1714:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global bound_sphere_xz__24_esc__2_unnamed_esc__2_zCamPlayer_cpp_esc__2_FRfRfRfRfffffff
 bound_sphere_xz__24_esc__2_unnamed_esc__2_zCamPlayer_cpp_esc__2_FRfRfRfRfffffff:

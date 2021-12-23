@@ -80,7 +80,7 @@ _esc__2_1055_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global __ct__Q24zHud9DashMeterFv
 __ct__Q24zHud9DashMeterFv:

@@ -74,7 +74,7 @@ _esc__2_1537_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global AlwaysConditional__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FP15xAnimTransitionP11xAnimSinglePv
 AlwaysConditional__32_esc__2_unnamed_esc__2_zReactiveAnimation_cpp_esc__2_FP15xAnimTransitionP11xAnimSinglePv:

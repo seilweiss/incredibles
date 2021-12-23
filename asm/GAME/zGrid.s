@@ -56,7 +56,7 @@ _esc__2_953:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global hack_flag_shadows__FP6zScene
 hack_flag_shadows__FP6zScene:

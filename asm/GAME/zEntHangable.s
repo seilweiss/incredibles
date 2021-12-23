@@ -17,7 +17,7 @@ _esc__2_968:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zEntHangable_SetupFX__Fv
 zEntHangable_SetupFX__Fv:

@@ -89,7 +89,7 @@ _esc__2_1214:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global update_particles__20_esc__2_unnamed_esc__2_zSmoke_cpp_esc__2_FPUciR10ptank_poolfPv
 update_particles__20_esc__2_unnamed_esc__2_zSmoke_cpp_esc__2_FPUciR10ptank_poolfPv:

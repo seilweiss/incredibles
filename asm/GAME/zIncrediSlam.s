@@ -164,7 +164,7 @@ _esc__2_1770_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global __nw__12zIncrediSlamFUl
 __nw__12zIncrediSlamFUl:

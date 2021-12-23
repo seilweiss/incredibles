@@ -8,7 +8,7 @@ activeTransfers:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global transferDoneCB__FUl
 transferDoneCB__FUl:

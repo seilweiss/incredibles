@@ -53,7 +53,7 @@ _esc__2_1131_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global _zMusicStart__FUiUi
 _zMusicStart__FUiUi:

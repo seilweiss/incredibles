@@ -56,7 +56,7 @@ _esc__2_907_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global render_bk_fill__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox
 render_bk_fill__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox:

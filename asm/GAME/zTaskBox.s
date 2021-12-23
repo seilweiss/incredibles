@@ -23,7 +23,7 @@ __vt__Q28ztaskbox13talk_callback:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global load__8ztaskboxFRCQ28ztaskbox10asset_type
 load__8ztaskboxFRCQ28ztaskbox10asset_type:

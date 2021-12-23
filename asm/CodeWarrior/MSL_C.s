@@ -759,7 +759,7 @@ _esc__2_58:
 _esc__2_164:
 	.incbin "baserom.dol", 0x334DA8, 0x8
 
-.section .text
+.section .text, "ax"
 
 .global exit
 exit:

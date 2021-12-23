@@ -32,7 +32,7 @@ _esc__2_1018_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zSparkSceneEnter__Fv
 zSparkSceneEnter__Fv:

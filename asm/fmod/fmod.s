@@ -583,7 +583,7 @@ _esc__2_128_0:
 _esc__2_130:
 	.incbin "baserom.dol", 0x3343B0, 0x8
 
-.section .text
+.section .text, "ax"
 
 .global FMUSIC_GetOpenState
 FMUSIC_GetOpenState:

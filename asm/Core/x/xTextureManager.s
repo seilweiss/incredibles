@@ -14,7 +14,7 @@ init_esc__7_887:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global FreeMemory__20xInternalTextureNodeFv
 FreeMemory__20xInternalTextureNodeFv:

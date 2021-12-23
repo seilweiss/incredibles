@@ -40,7 +40,7 @@ _esc__2_802:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xFFXPoolInit__FUi
 xFFXPoolInit__FUi:

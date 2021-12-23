@@ -74,7 +74,7 @@ _esc__2_1587_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_tweaks__Q224_esc__2_unnamed_esc__2_zSpotlight_cpp_esc__2_5tweakFv
 add_tweaks__Q224_esc__2_unnamed_esc__2_zSpotlight_cpp_esc__2_5tweakFv:

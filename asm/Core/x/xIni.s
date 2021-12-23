@@ -8,7 +8,7 @@ _esc__2_stringBase0_13:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global TrimWhitespace__FPc
 TrimWhitespace__FPc:

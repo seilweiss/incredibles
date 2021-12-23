@@ -98,7 +98,7 @@ _esc__2_1596:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global PKRGetReadFuncs__Fi
 PKRGetReadFuncs__Fi:

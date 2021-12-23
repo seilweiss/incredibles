@@ -143,7 +143,7 @@ lbl_803D24F4:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xFXInit__Fv
 xFXInit__Fv:

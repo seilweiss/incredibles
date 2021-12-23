@@ -185,7 +185,7 @@ _esc__2_2280:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global get_default_light_kit__33_esc__2_unnamed_esc__2_zNPCBossBombChopper_cpp_esc__2_Fv
 get_default_light_kit__33_esc__2_unnamed_esc__2_zNPCBossBombChopper_cpp_esc__2_Fv:

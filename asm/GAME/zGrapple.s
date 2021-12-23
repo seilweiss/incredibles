@@ -11,7 +11,7 @@ sNumGrapplePoints:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zGrapple_Init__FR5xBaseR9xDynAssetUl
 zGrapple_Init__FR5xBaseR9xDynAssetUl:

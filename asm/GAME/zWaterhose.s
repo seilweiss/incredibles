@@ -314,7 +314,7 @@ _esc__2_1720_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Init__16zWaterhoseWidgetFR5xBaseR9xDynAssetUl
 Init__16zWaterhoseWidgetFR5xBaseR9xDynAssetUl:

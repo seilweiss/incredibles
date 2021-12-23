@@ -426,7 +426,7 @@ patternsalign:
 patterns:
 	.incbin "baserom.dol", 0x2EC600, 0x400
 
-.section .text
+.section .text, "ax"
 
 .global mult64anddiv
 mult64anddiv:

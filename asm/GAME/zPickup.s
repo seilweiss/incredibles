@@ -97,7 +97,7 @@ _esc__2_1603_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global SceneSetup__7zPickupFv
 SceneSetup__7zPickupFv:

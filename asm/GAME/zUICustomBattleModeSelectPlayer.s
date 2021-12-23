@@ -47,7 +47,7 @@ lbl_803D746C:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zSystemMsgUIEnterScene__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_FP3zUIP3zUIUi
 zSystemMsgUIEnterScene__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_FP3zUIP3zUIUi:

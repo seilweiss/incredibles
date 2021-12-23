@@ -50,7 +50,7 @@ _esc__2_1043_4:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zLightResetAll__FP4xEnv
 zLightResetAll__FP4xEnv:

@@ -47,7 +47,7 @@ _esc__2_1765:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Normalize__33_esc__2_unnamed_esc__2_xCollideSweptSphere_cpp_esc__2_FR5xVec3
 Normalize__33_esc__2_unnamed_esc__2_xCollideSweptSphere_cpp_esc__2_FR5xVec3:

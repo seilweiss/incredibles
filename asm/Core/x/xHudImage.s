@@ -134,7 +134,7 @@ _esc__2_1285_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global load__Q24xhud12image_widgetFR5xBaseR9xDynAssetUl
 load__Q24xhud12image_widgetFR5xBaseR9xDynAssetUl:

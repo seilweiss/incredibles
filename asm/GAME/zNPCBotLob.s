@@ -93,7 +93,7 @@ _esc__2_1536_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global runnable__Q24zNPC7bot_lobFf
 runnable__Q24zNPC7bot_lobFf:

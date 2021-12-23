@@ -43,7 +43,7 @@ _esc__2_1378_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global AddArmor__Q24zNPC5ArmorFPQ24zNPC6common
 AddArmor__Q24zNPC5ArmorFPQ24zNPC6common:

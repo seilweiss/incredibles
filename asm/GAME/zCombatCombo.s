@@ -14,7 +14,7 @@ _esc__2_905_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global setEnabled__12zCombatComboFb
 setEnabled__12zCombatComboFb:

@@ -62,7 +62,7 @@ _esc__2_1187_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zEGenerator_Init__FPvPv
 zEGenerator_Init__FPvPv:

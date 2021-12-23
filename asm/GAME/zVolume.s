@@ -32,7 +32,7 @@ _esc__2_1056_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zVolumeInit__FP7zVolumeP12xVolumeAsset
 zVolumeInit__FP7zVolumeP12xVolumeAsset:

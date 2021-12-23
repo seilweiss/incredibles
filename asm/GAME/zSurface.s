@@ -64,7 +64,7 @@ _esc__2_1601_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zSurfaceInit__Fv
 zSurfaceInit__Fv:

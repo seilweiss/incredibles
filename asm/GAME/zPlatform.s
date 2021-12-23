@@ -83,7 +83,7 @@ _esc__2_2222:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global genericPlatRender__FP4xEnt
 genericPlatRender__FP4xEnt:

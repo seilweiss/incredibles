@@ -131,7 +131,7 @@ _esc__2_1704_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global load__10zUberLaserFR5xBaseR9xDynAssetUl
 load__10zUberLaserFR5xBaseR9xDynAssetUl:

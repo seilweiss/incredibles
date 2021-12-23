@@ -170,7 +170,7 @@ _esc__2_1948:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Init__19zFlameThrowerWidgetFR5xBaseR9xDynAssetUl
 Init__19zFlameThrowerWidgetFR5xBaseR9xDynAssetUl:

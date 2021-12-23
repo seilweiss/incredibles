@@ -74,7 +74,7 @@ _esc__2_1070_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global find_span__Q21x5NURBSFf
 find_span__Q21x5NURBSFf:

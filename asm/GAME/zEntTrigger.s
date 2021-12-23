@@ -17,7 +17,7 @@ _esc__2_1074:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zEntTriggerInit__FPvPv
 zEntTriggerInit__FPvPv:

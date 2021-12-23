@@ -245,7 +245,7 @@ _esc__2_2415_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global RobotDestroyCB__4zNPCFP4xEntPvb
 RobotDestroyCB__4zNPCFP4xEntPvb:

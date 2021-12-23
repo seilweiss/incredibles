@@ -161,7 +161,7 @@ _esc__2_1521_4:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zVarEntryCB_IsSignedIn__FPv
 zVarEntryCB_IsSignedIn__FPv:

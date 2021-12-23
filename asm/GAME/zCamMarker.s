@@ -52,7 +52,7 @@ _esc__2_1119:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global activate_camera__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_FRC9xCamAssetP4xEnt
 activate_camera__24_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_FRC9xCamAssetP4xEnt:

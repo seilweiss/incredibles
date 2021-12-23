@@ -41,7 +41,7 @@ _esc__2_1308_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zUIMgrInit__FP6zScene
 zUIMgrInit__FP6zScene:

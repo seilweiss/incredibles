@@ -153,7 +153,7 @@ _esc__2_881_1:
 _esc__2_883_3:
 	.incbin "baserom.dol", 0x334E30, 0x8
 
-.section .text
+.section .text, "ax"
 
 .global MatFXClose
 MatFXClose:

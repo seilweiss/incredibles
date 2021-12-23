@@ -59,7 +59,7 @@ _esc__2_1000_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iAnimInit__Fv
 iAnimInit__Fv:

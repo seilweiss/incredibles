@@ -590,7 +590,7 @@ _esc__2_5164:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global StillCarried__33_esc__2_unnamed_esc__2_zMrIncrediblePlayer_cpp_esc__2_FP4xEnt
 StillCarried__33_esc__2_unnamed_esc__2_zMrIncrediblePlayer_cpp_esc__2_FP4xEnt:

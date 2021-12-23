@@ -77,7 +77,7 @@ _esc__2_1674_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xSceneInit__FP6xSceneUsUsUsUs
 xSceneInit__FP6xSceneUsUsUsUs:

@@ -137,7 +137,7 @@ _esc__2_1242:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Decrypt__FPvUiPCvUi
 Decrypt__FPvUiPCvUi:

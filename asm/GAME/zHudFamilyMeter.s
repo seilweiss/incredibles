@@ -86,7 +86,7 @@ _esc__2_957_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global __ct__Q24zHud11FamilyMeterFv
 __ct__Q24zHud11FamilyMeterFv:

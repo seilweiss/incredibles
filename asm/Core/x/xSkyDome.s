@@ -2,7 +2,7 @@
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xSkyDome_AddEntity__FP4xEntiii
 xSkyDome_AddEntity__FP4xEntiii:

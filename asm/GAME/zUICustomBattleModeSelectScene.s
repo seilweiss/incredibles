@@ -47,7 +47,7 @@ _esc__2_1288_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global __ct__37zUICustomBattleModeSelectSceneManagerFP3zUI
 __ct__37zUICustomBattleModeSelectSceneManagerFP3zUI:

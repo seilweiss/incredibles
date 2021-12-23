@@ -65,7 +65,7 @@ _esc__2_1595:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iSndInit__Fv
 iSndInit__Fv:

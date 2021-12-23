@@ -59,7 +59,7 @@ _esc__2_1184_2:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global DoInit__7zUITextFv
 DoInit__7zUITextFv:

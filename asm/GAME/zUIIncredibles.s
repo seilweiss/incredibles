@@ -332,7 +332,7 @@ _esc__2_3146:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global reset__5statsFv
 reset__5statsFv:

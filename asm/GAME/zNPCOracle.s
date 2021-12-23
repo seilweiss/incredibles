@@ -47,7 +47,7 @@ _esc__2_1316_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_states__Q24zNPC11oracle_idleFP10xAnimTable
 add_states__Q24zNPC11oracle_idleFP10xAnimTable:

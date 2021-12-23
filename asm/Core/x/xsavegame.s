@@ -82,7 +82,7 @@ _esc__2_1009_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xSGStartup__Fv
 xSGStartup__Fv:

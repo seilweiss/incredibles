@@ -66,7 +66,7 @@ _esc__2_1021_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global load__Q24xhud17unit_meter_widgetFR5xBaseR9xDynAssetUl
 load__Q24xhud17unit_meter_widgetFR5xBaseR9xDynAssetUl:

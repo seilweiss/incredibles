@@ -41,7 +41,7 @@ _esc__2_1212:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global Age__9xOneLinerFf
 Age__9xOneLinerFf:

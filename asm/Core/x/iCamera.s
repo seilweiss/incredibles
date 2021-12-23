@@ -50,7 +50,7 @@ _esc__2_1002:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global iCameraSetOrthoProjection__FP8RwCamerab
 iCameraSetOrthoProjection__FP8RwCamerab:

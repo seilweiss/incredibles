@@ -71,7 +71,7 @@ _esc__2_1375_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global reset__Q24zNPC10health_hudFv
 reset__Q24zNPC10health_hudFv:

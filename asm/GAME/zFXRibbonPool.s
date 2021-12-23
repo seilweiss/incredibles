@@ -16,7 +16,7 @@ ribbonInUse__27_esc__2_unnamed_esc__2_zFXRibbonPool_cpp_esc__2_:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zFXRibbonPoolInit__FUi
 zFXRibbonPoolInit__FUi:

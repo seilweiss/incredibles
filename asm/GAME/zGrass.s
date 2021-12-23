@@ -122,7 +122,7 @@ _esc__2_1943_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_tweaks__Q220_esc__2_unnamed_esc__2_zGrass_cpp_esc__2_5tweakFv
 add_tweaks__Q220_esc__2_unnamed_esc__2_zGrass_cpp_esc__2_5tweakFv:

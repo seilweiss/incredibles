@@ -1761,7 +1761,7 @@ _esc__2_153:
 lbl_803D7884:
 	.incbin "baserom.dol", 0x334244, 0x4
 
-.section .text
+.section .text, "ax"
 
 .global PPCMfmsr
 PPCMfmsr:

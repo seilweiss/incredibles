@@ -44,7 +44,7 @@ _esc__2_870:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global load__Q24xhud17font_meter_widgetFR5xBaseR9xDynAssetUl
 load__Q24xhud17font_meter_widgetFR5xBaseR9xDynAssetUl:

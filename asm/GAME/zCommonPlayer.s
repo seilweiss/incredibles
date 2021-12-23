@@ -350,7 +350,7 @@ _esc__2_3920:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global SetupRumbleEffects__27_esc__2_unnamed_esc__2_zCommonPlayer_cpp_esc__2_FPCQ227_esc__2_unnamed_esc__2_zCommonPlayer_cpp_esc__2_12RumbleParamsi
 SetupRumbleEffects__27_esc__2_unnamed_esc__2_zCommonPlayer_cpp_esc__2_FPCQ227_esc__2_unnamed_esc__2_zCommonPlayer_cpp_esc__2_12RumbleParamsi:

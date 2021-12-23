@@ -194,7 +194,7 @@ _esc__2_1762:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global add_tweaks__Q225_esc__2_unnamed_esc__2_zFrozoneIce_cpp_esc__2_5tweakFv
 add_tweaks__Q225_esc__2_unnamed_esc__2_zFrozoneIce_cpp_esc__2_5tweakFv:

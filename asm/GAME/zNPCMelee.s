@@ -320,7 +320,7 @@ _esc__2_3143:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zNPC_ForceEffect__23_esc__2_unnamed_esc__2_zNPCMelee_cpp_esc__2_FP9xAnimPlayPCc
 zNPC_ForceEffect__23_esc__2_unnamed_esc__2_zNPCMelee_cpp_esc__2_FP9xAnimPlayPCc:

@@ -93,7 +93,7 @@ __RTTI__Q23std9exception_0:
 __RTTI__Q23std13bad_exception:
 	.incbin "baserom.dol", 0x32E370, 0x8
 
-.section .text
+.section .text, "ax"
 
 .global __va_arg
 __va_arg:

@@ -110,7 +110,7 @@ _esc__2_1425_0:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zFilterAnglesSet__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_Ff
 zFilterAnglesSet__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_Ff:

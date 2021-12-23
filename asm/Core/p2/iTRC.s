@@ -161,7 +161,7 @@ _esc__2_819_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global GetRegion__Fv
 GetRegion__Fv:

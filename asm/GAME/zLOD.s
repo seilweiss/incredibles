@@ -46,7 +46,7 @@ _esc__2_1012_4:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global AddToLODList__FP4xEnt
 AddToLODList__FP4xEnt:

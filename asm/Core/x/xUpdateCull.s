@@ -8,7 +8,7 @@ _esc__2_893:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global xUpdateCull_Swap__FP14xUpdateCullMgrUiUi
 xUpdateCull_Swap__FP14xUpdateCullMgrUiUi:

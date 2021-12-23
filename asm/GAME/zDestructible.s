@@ -98,7 +98,7 @@ _esc__2_1582_1:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global UpdateModelBound__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_FP4xEntP14xModelInstanceb
 UpdateModelBound__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_FP4xEntP14xModelInstanceb:

@@ -161,7 +161,7 @@ _esc__2_1473_3:
 
 .if 0
 
-.section .text
+.section .text, "ax"
 
 .global zReticle_Init__Fv
 zReticle_Init__Fv:
