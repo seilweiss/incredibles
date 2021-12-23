@@ -1,4 +1,9 @@
-.section .dtors  # 0x802D16A0 - 0x802D16C0
-.global lbl_802D16A0
-lbl_802D16A0:
-	.incbin "baserom.dol", 0x2CE6A0, 0x20
+.section .dtors$10
+.global __fini_cpp_exceptions_reference
+__fini_cpp_exceptions_reference:
+    .long __destroy_global_chain
+.global __destroy_global_chain_reference
+__destroy_global_chain_reference:
+    .long lbl_801FB58C
+.section .dtors$15
+	.skip 0x10

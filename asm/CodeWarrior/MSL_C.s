@@ -774,9 +774,9 @@ exit:
 /* 802B28E8 002AF6E8  48 00 51 59 */	bl __begin_critical_region
 /* 802B28EC 002AF6EC  38 60 00 00 */	li r3, 0
 /* 802B28F0 002AF6F0  48 00 51 4D */	bl __end_critical_region
-/* 802B28F4 002AF6F4  4B F4 7E 41 */	bl lbl_801FA734
-/* 802B28F8 002AF6F8  3C 60 80 2D */	lis r3, lbl_802D16A0@ha
-/* 802B28FC 002AF6FC  38 03 16 A0 */	addi r0, r3, lbl_802D16A0@l
+/* 802B28F4 002AF6F4  4B F4 7E 41 */	bl __destroy_global_chain
+/* 802B28F8 002AF6F8  3C 60 80 2D */	lis r3, _dtors@ha
+/* 802B28FC 002AF6FC  38 03 16 A0 */	addi r0, r3, _dtors@l
 /* 802B2900 002AF700  7C 1F 03 78 */	mr r31, r0
 /* 802B2904 002AF704  48 00 00 10 */	b lbl_802B2914
 lbl_802B2908:

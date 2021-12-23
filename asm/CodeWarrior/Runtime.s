@@ -154,8 +154,8 @@ lbl_801FA72C:
 /* 801FA72C 001F752C  7C C3 33 78 */	mr r3, r6
 /* 801FA730 001F7530  4E 80 00 20 */	blr 
 
-.global lbl_801FA734
-lbl_801FA734:
+.global __destroy_global_chain
+__destroy_global_chain:
 /* 801FA734 001F7534  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801FA738 001F7538  7C 08 02 A6 */	mflr r0
 /* 801FA73C 001F753C  90 01 00 14 */	stw r0, 0x14(r1)
