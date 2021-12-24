@@ -46,9 +46,6 @@ g_autodata:
 
 .section .sbss2, "", @nobits
 
-.global lbl_803D87DC
-lbl_803D87DC:
-	.skip 0x4
 .global _esc__2_1015_3
 _esc__2_1015_3:
 	.skip 0x1C
@@ -1281,7 +1278,7 @@ xSG_cb_leader_load__FPvP17st_XSAVEGAME_DATAP24st_XSAVEGAME_READCONTEXTUii:
 /* 80057400 00054200  7C 9E 23 78 */	mr r30, r4
 /* 80057404 00054204  7C BF 2B 78 */	mr r31, r5
 /* 80057408 00054208  38 A1 00 04 */	addi r5, r1, 4
-/* 8005740C 0005420C  38 82 EA BC */	addi r4, r2, lbl_803D87DC@sda21
+/* 8005740C 0005420C  38 82 EA BC */	addi r4, r2, _esc__2_1015_3-4@sda21
 /* 80057410 00054210  7C 09 03 A6 */	mtctr r0
 lbl_80057414:
 /* 80057414 00054214  80 64 00 04 */	lwz r3, 4(r4)

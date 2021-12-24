@@ -30,6 +30,7 @@ void* xMemGrowAlloc(uint32 heapID, uint32 size);
 void* xMemPushTemp(uint32 size);
 int32 xMemPushBase();
 int32 xMemPopBase(int32 depth);
+int32 xMemGetBase();
 
 void* operator new(size_t, xMemStaticType, uint32);
 void* operator new[](size_t, xMemStaticType, uint32);

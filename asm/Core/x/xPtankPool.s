@@ -8,6 +8,8 @@ groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
 
 .section .sbss
 
+.balign 8
+
 .global MAX_PTANKS__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_
 MAX_PTANKS__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
 	.skip 0x4

@@ -1,5 +1,4 @@
 .section .ctors
-	.long __sinit_xpkrsvc_cpp
 	.long __sinit_xPtankPool_cpp
 	.long __sinit_xScrFx_cpp
 	.long __sinit_iMemMgr_cpp

@@ -111,7 +111,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xParSys.o\
 	$(OBJ_DIR)/asm/Core/x/xPartition.o\
 	$(OBJ_DIR)/src/Core/x/xPartition.o\
-	$(OBJ_DIR)/asm/Core/x/xpkrsvc.o\
 	$(OBJ_DIR)/src/Core/x/xpkrsvc.o\
 	$(OBJ_DIR)/asm/Core/x/xPtankPool.o\
 	$(OBJ_DIR)/src/Core/x/xPtankPool.o\
@@ -667,4 +666,5 @@ PREPROCESS_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xLightVolume.o\
 	$(OBJ_DIR)/src/Core/x/xSkyDome.o\
 	$(OBJ_DIR)/src/GAME/zCam.o\
-	$(OBJ_DIR)/src/GAME/zNPC.o
+	$(OBJ_DIR)/src/GAME/zNPC.o\
+	$(OBJ_DIR)/src/Core/x/xpkrsvc.o
