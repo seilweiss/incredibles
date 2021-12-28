@@ -44,7 +44,7 @@ static bool32 PKR_GetAssetInfoByType(PACKER_READ_DATA* pr, uint32 type, int32 id
 static bool32 PKR_PkgHasAsset(PACKER_READ_DATA* pr, uint32 aid);
 static bool32 PKR_FRIEND_assetIsGameDup(uint32 aid, const PACKER_READ_DATA* skippr, int32 oursize,
                                         uint32 ourtype, uint32 chksum, char*);
-static bool32 PKR_makepool_anode(PACKER_READ_DATA* pr, int32 asscnt);
+static int32 PKR_makepool_anode(PACKER_READ_DATA* pr, int32 asscnt);
 static void PKR_kiilpool_anode(PACKER_READ_DATA* pr);
 static PACKER_ATOC_NODE* PKR_newassnode(PACKER_READ_DATA* pr, uint32 aid);
 static PACKER_LTOC_NODE* PKR_newlaynode(LAYER_TYPE layer, int32 asscnt);
@@ -1188,7 +1188,7 @@ static bool32 PKR_FRIEND_assetIsGameDup(uint32 aid, const PACKER_READ_DATA* skip
     return is_dup;
 }
 
-static bool32 PKR_makepool_anode(PACKER_READ_DATA* pr, int32 asscnt)
+static int32 PKR_makepool_anode(PACKER_READ_DATA* pr, int32 asscnt)
 {
     PACKER_ATOC_NODE* pool;
     int32 size;
@@ -1207,7 +1207,7 @@ static bool32 PKR_makepool_anode(PACKER_READ_DATA* pr, int32 asscnt)
         pr->pool_nextaidx = 0;
     }
 
-    return size & -(pool != 0); // fake match?
+    return pool ? size : 0;
 }
 
 static void PKR_kiilpool_anode(PACKER_READ_DATA* pr)
