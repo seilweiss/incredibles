@@ -535,295 +535,295 @@ default_font_assets__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 	.4byte 0x00000000
 .global format_tags_buffer__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_
 format_tags_buffer__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
-	.4byte 0x802D1B5E
+	.4byte _esc__2_stringBase0_6+222
 	.4byte 0x00000000
-	.4byte 0x800365E0
+	.4byte parse_tag_open_curly__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1B5F
+	.4byte _esc__2_stringBase0_6+223
 	.4byte 0x00000001
-	.4byte 0x80034D5C
-	.4byte 0x80034E7C
+	.4byte parse_tag_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B61
+	.4byte _esc__2_stringBase0_6+225
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x80035FA4
+	.4byte reset_tag_all__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B65
+	.4byte _esc__2_stringBase0_6+229
 	.4byte 0x00000005
-	.4byte 0x80034D5C
-	.4byte 0x80034E7C
+	.4byte parse_tag_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B6B
+	.4byte _esc__2_stringBase0_6+235
 	.4byte 0x00000001
-	.4byte 0x80035188
-	.4byte 0x800352A8
+	.4byte parse_tag_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B6D
+	.4byte _esc__2_stringBase0_6+237
 	.4byte 0x00000004
-	.4byte 0x80035188
-	.4byte 0x800352A8
+	.4byte parse_tag_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B72
+	.4byte _esc__2_stringBase0_6+242
 	.4byte 0x00000001
-	.4byte 0x80035FF4
-	.4byte 0x8003619C
+	.4byte parse_tag_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B74
+	.4byte _esc__2_stringBase0_6+244
 	.4byte 0x00000005
-	.4byte 0x80035FF4
-	.4byte 0x8003619C
+	.4byte parse_tag_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B7A
+	.4byte _esc__2_stringBase0_6+250
 	.4byte 0x00000007
-	.4byte 0x800371AC
+	.4byte parse_tag_counter__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1B82
+	.4byte _esc__2_stringBase0_6+258
 	.4byte 0x00000001
-	.4byte 0x800361C0
-	.4byte 0x80036238
+	.4byte parse_tag_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1ACD
+	.4byte _esc__2_stringBase0_6+77
 	.4byte 0x00000004
-	.4byte 0x800361C0
-	.4byte 0x80036238
+	.4byte parse_tag_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B84
+	.4byte _esc__2_stringBase0_6+260
 	.4byte 0x00000001
-	.4byte 0x80035024
-	.4byte 0x80035144
+	.4byte parse_tag_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B86
+	.4byte _esc__2_stringBase0_6+262
 	.4byte 0x00000005
-	.4byte 0x80035024
-	.4byte 0x80035144
+	.4byte parse_tag_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B8C
+	.4byte _esc__2_stringBase0_6+268
 	.4byte 0x00000001
-	.4byte 0x80035964
-	.4byte 0x80035A48
+	.4byte parse_tag_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B8E
+	.4byte _esc__2_stringBase0_6+270
 	.4byte 0x00000006
-	.4byte 0x80035964
-	.4byte 0x80035A48
+	.4byte parse_tag_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1B95
+	.4byte _esc__2_stringBase0_6+277
 	.4byte 0x00000001
-	.4byte 0x80036EE4
+	.4byte parse_tag_insert__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1B97
+	.4byte _esc__2_stringBase0_6+279
 	.4byte 0x00000002
-	.4byte 0x80036F98
+	.4byte parse_tag_insert_hash__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1B9A
+	.4byte _esc__2_stringBase0_6+282
 	.4byte 0x00000006
-	.4byte 0x80036EE4
+	.4byte parse_tag_insert__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1BA1
+	.4byte _esc__2_stringBase0_6+289
 	.4byte 0x0000000B
-	.4byte 0x80035A6C
-	.4byte 0x80035B50
+	.4byte parse_tag_left_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_left_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1BAD
+	.4byte _esc__2_stringBase0_6+301
 	.4byte 0x00000002
-	.4byte 0x80035A6C
-	.4byte 0x80035B50
+	.4byte parse_tag_left_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_left_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1BB0
+	.4byte _esc__2_stringBase0_6+304
 	.4byte 0x00000005
-	.4byte 0x8003699C
-	.4byte 0x80036B3C
+	.4byte parse_tag_model__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_model__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1BB6
+	.4byte _esc__2_stringBase0_6+310
 	.4byte 0x00000001
-	.4byte 0x80036654
+	.4byte parse_tag_newline__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1BB8
+	.4byte _esc__2_stringBase0_6+312
 	.4byte 0x00000004
-	.4byte 0x800366B4
+	.4byte parse_tag_nbsp__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1BBD
+	.4byte _esc__2_stringBase0_6+317
 	.4byte 0x00000007
-	.4byte 0x80036654
+	.4byte parse_tag_newline__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1BC5
+	.4byte _esc__2_stringBase0_6+325
 	.4byte 0x0000000A
-	.4byte 0x80036774
+	.4byte parse_tag_page_break__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1BD0
+	.4byte _esc__2_stringBase0_6+336
 	.4byte 0x00000002
-	.4byte 0x80036774
+	.4byte parse_tag_page_break__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1BD3
+	.4byte _esc__2_stringBase0_6+339
 	.4byte 0x00000003
-	.4byte 0x8003704C
+	.4byte parse_tag_pop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1BD7
+	.4byte _esc__2_stringBase0_6+343
 	.4byte 0x00000001
-	.4byte 0x80034EC0
-	.4byte 0x80034FE0
+	.4byte parse_tag_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1BD9
+	.4byte _esc__2_stringBase0_6+345
 	.4byte 0x00000003
-	.4byte 0x80034EC0
-	.4byte 0x80034FE0
+	.4byte parse_tag_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1BDD
+	.4byte _esc__2_stringBase0_6+349
 	.4byte 0x00000002
-	.4byte 0x80035B74
-	.4byte 0x80035C58
+	.4byte parse_tag_right_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_right_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1BE0
+	.4byte _esc__2_stringBase0_6+352
 	.4byte 0x0000000C
-	.4byte 0x80035B74
-	.4byte 0x80035C58
+	.4byte parse_tag_right_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_right_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1BED
+	.4byte _esc__2_stringBase0_6+365
 	.4byte 0x00000002
-	.4byte 0x800352EC
-	.4byte 0x8003540C
+	.4byte parse_tag_salpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_salpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1BF0
+	.4byte _esc__2_stringBase0_6+368
 	.4byte 0x00000006
-	.4byte 0x800352EC
-	.4byte 0x8003540C
+	.4byte parse_tag_salpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_salpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1BF7
+	.4byte _esc__2_stringBase0_6+375
 	.4byte 0x00000002
-	.4byte 0x80035718
-	.4byte 0x80035838
+	.4byte parse_tag_sblue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_sblue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1BFA
+	.4byte _esc__2_stringBase0_6+378
 	.4byte 0x00000005
-	.4byte 0x80035718
-	.4byte 0x80035838
+	.4byte parse_tag_sblue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_sblue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C00
+	.4byte _esc__2_stringBase0_6+384
 	.4byte 0x00000002
-	.4byte 0x800355B4
-	.4byte 0x800356D4
+	.4byte parse_tag_sgreen__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_sgreen__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C03
+	.4byte _esc__2_stringBase0_6+387
 	.4byte 0x00000006
-	.4byte 0x800355B4
-	.4byte 0x800356D4
+	.4byte parse_tag_sgreen__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_sgreen__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C0A
+	.4byte _esc__2_stringBase0_6+394
 	.4byte 0x00000002
-	.4byte 0x80035450
-	.4byte 0x80035570
+	.4byte parse_tag_sred__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_sred__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C0D
+	.4byte _esc__2_stringBase0_6+397
 	.4byte 0x00000004
-	.4byte 0x80035450
-	.4byte 0x80035570
+	.4byte parse_tag_sred__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_sred__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C12
+	.4byte _esc__2_stringBase0_6+402
 	.4byte 0x00000001
-	.4byte 0x8003674C
+	.4byte parse_tag_tab__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1C14
+	.4byte _esc__2_stringBase0_6+404
 	.4byte 0x00000003
-	.4byte 0x8003674C
+	.4byte parse_tag_tab__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1C18
+	.4byte _esc__2_stringBase0_6+408
 	.4byte 0x00000008
-	.4byte 0x80035C7C
-	.4byte 0x80035D60
+	.4byte parse_tag_tab_stop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_tab_stop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C21
+	.4byte _esc__2_stringBase0_6+417
 	.4byte 0x00000003
-	.4byte 0x80036BF8
-	.4byte 0x80036EC0
+	.4byte parse_tag_tex__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_tex__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C25
+	.4byte _esc__2_stringBase0_6+421
 	.4byte 0x00000005
-	.4byte 0x80037074
+	.4byte parse_tag_timer__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1C2B
+	.4byte _esc__2_stringBase0_6+427
 	.4byte 0x00000002
-	.4byte 0x80035C7C
-	.4byte 0x80035D60
+	.4byte parse_tag_tab_stop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_tab_stop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C2E
+	.4byte _esc__2_stringBase0_6+430
 	.4byte 0x00000001
-	.4byte 0x8003585C
-	.4byte 0x80035940
+	.4byte parse_tag_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C30
+	.4byte _esc__2_stringBase0_6+432
 	.4byte 0x00000002
-	.4byte 0x80036760
+	.4byte parse_tag_word_break__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1C33
+	.4byte _esc__2_stringBase0_6+435
 	.4byte 0x00000005
-	.4byte 0x8003585C
-	.4byte 0x80035940
+	.4byte parse_tag_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C39
+	.4byte _esc__2_stringBase0_6+441
 	.4byte 0x0000000A
-	.4byte 0x80036760
+	.4byte parse_tag_word_break__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D1C44
+	.4byte _esc__2_stringBase0_6+452
 	.4byte 0x00000004
-	.4byte 0x8003626C
-	.4byte 0x80036354
+	.4byte parse_tag_wrap__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_wrap__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C49
+	.4byte _esc__2_stringBase0_6+457
 	.4byte 0x00000002
-	.4byte 0x80036388
-	.4byte 0x80036494
+	.4byte parse_tag_xjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_xjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C4C
+	.4byte _esc__2_stringBase0_6+460
 	.4byte 0x00000008
-	.4byte 0x80036388
-	.4byte 0x80036494
+	.4byte parse_tag_xjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_xjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C55
+	.4byte _esc__2_stringBase0_6+469
 	.4byte 0x00000002
-	.4byte 0x80035D84
-	.4byte 0x80035E68
+	.4byte parse_tag_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C58
+	.4byte _esc__2_stringBase0_6+472
 	.4byte 0x00000006
-	.4byte 0x80035D84
-	.4byte 0x80035E68
+	.4byte parse_tag_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C5F
+	.4byte _esc__2_stringBase0_6+479
 	.4byte 0x00000002
-	.4byte 0x800364C8
-	.4byte 0x800365D4
+	.4byte parse_tag_yjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_yjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C62
+	.4byte _esc__2_stringBase0_6+482
 	.4byte 0x00000008
-	.4byte 0x800364C8
-	.4byte 0x800365D4
+	.4byte parse_tag_yjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_yjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C6B
+	.4byte _esc__2_stringBase0_6+491
 	.4byte 0x00000002
-	.4byte 0x80035E8C
-	.4byte 0x80035F70
+	.4byte parse_tag_yspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_yspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x802D1C6E
+	.4byte _esc__2_stringBase0_6+494
 	.4byte 0x00000006
-	.4byte 0x80035E8C
-	.4byte 0x80035F70
+	.4byte parse_tag_yspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_yspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2099,16 +2099,16 @@ _esc__2_3779:
 
 .global default_font_texture__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_
 default_font_texture__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
-	.4byte 0x802D1A80
-	.4byte 0x802D1A88
+	.4byte _esc__2_stringBase0_6
+	.4byte _esc__2_stringBase0_6+8
 .global text_cb__8xtextbox
 text_cb__8xtextbox:
-	.4byte 0x8003324C
+	.4byte text_render__8xtextboxFRCQ28xtextbox3jotRC8xtextboxff
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global format_tags__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_
 format_tags__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
-	.4byte 0x802F29E0
+	.4byte format_tags_buffer__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_
 .global format_tags_size__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_
 format_tags_size__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 	.4byte 0x0000003A
@@ -2150,23 +2150,23 @@ _esc__2_1447:
 	.4byte 0x3DA80000
 .global text_delims__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_
 text_delims__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
-	.4byte 0x802D1AA0
+	.4byte _esc__2_stringBase0_6+32
 	.4byte 0x0000000B
 .global _esc__2_2014
 _esc__2_2014:
-	.4byte 0x802D1B10
+	.4byte _esc__2_stringBase0_6+144
 .global lbl_803D2214
 lbl_803D2214:
 	.4byte 0x00000006
 .global _esc__2_2015
 _esc__2_2015:
-	.4byte 0x802D1B17
+	.4byte _esc__2_stringBase0_6+151
 .global lbl_803D221C
 lbl_803D221C:
 	.4byte 0x00000003
 .global _esc__2_2041_0
 _esc__2_2041_0:
-	.4byte 0x8033F5E0
+	.4byte entry_buffer_esc__7_2011
 .global lbl_803D2224
 lbl_803D2224:
 	.4byte 0x00000000
@@ -2179,110 +2179,110 @@ _esc__2_2569:
 .global cb_esc__7_2580
 cb_esc__7_2580:
 	.4byte 0x00000000
-	.4byte 0x80034D24
-	.4byte 0x80034D24
+	.4byte update_tag_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global _esc__2_2596
 _esc__2_2596:
 	.4byte 0x3B808081
 .global cb_esc__7_2603
 cb_esc__7_2603:
 	.4byte 0x00000000
-	.4byte 0x80034D50
-	.4byte 0x80034D50
+	.4byte update_tag_reset_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2619
 cb_esc__7_2619:
 	.4byte 0x00000000
-	.4byte 0x80034E88
-	.4byte 0x80034E88
+	.4byte update_tag_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2641
 cb_esc__7_2641:
 	.4byte 0x00000000
-	.4byte 0x80034EB4
-	.4byte 0x80034EB4
+	.4byte update_tag_reset_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2657
 cb_esc__7_2657:
 	.4byte 0x00000000
-	.4byte 0x80034FEC
-	.4byte 0x80034FEC
+	.4byte update_tag_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2679
 cb_esc__7_2679:
 	.4byte 0x00000000
-	.4byte 0x80035018
-	.4byte 0x80035018
+	.4byte update_tag_reset_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2695
 cb_esc__7_2695:
 	.4byte 0x00000000
-	.4byte 0x80035150
-	.4byte 0x80035150
+	.4byte update_tag_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2717
 cb_esc__7_2717:
 	.4byte 0x00000000
-	.4byte 0x8003517C
-	.4byte 0x8003517C
+	.4byte update_tag_reset_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2733
 cb_esc__7_2733:
 	.4byte 0x00000000
-	.4byte 0x800352B4
-	.4byte 0x800352B4
+	.4byte update_tag_salpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_salpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2755
 cb_esc__7_2755:
 	.4byte 0x00000000
-	.4byte 0x800352E0
-	.4byte 0x800352E0
+	.4byte update_tag_reset_salpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_salpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2771
 cb_esc__7_2771:
 	.4byte 0x00000000
-	.4byte 0x80035418
-	.4byte 0x80035418
+	.4byte update_tag_sred__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_sred__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2793
 cb_esc__7_2793:
 	.4byte 0x00000000
-	.4byte 0x80035444
-	.4byte 0x80035444
+	.4byte update_tag_reset_sred__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_sred__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2809
 cb_esc__7_2809:
 	.4byte 0x00000000
-	.4byte 0x8003557C
-	.4byte 0x8003557C
+	.4byte update_tag_sgreen__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_sgreen__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2831
 cb_esc__7_2831:
 	.4byte 0x00000000
-	.4byte 0x800355A8
-	.4byte 0x800355A8
+	.4byte update_tag_reset_sgreen__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_sgreen__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2847
 cb_esc__7_2847:
 	.4byte 0x00000000
-	.4byte 0x800356E0
-	.4byte 0x800356E0
+	.4byte update_tag_sblue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_sblue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2869
 cb_esc__7_2869:
 	.4byte 0x00000000
-	.4byte 0x8003570C
-	.4byte 0x8003570C
+	.4byte update_tag_reset_sblue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_sblue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2884
 cb_esc__7_2884:
 	.4byte 0x00000000
-	.4byte 0x80035844
-	.4byte 0x80035844
+	.4byte update_tag_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2905
 cb_esc__7_2905:
 	.4byte 0x00000000
-	.4byte 0x80035850
-	.4byte 0x80035850
+	.4byte update_tag_reset_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2920
 cb_esc__7_2920:
 	.4byte 0x00000000
-	.4byte 0x8003594C
-	.4byte 0x8003594C
+	.4byte update_tag_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2941
 cb_esc__7_2941:
 	.4byte 0x00000000
-	.4byte 0x80035958
-	.4byte 0x80035958
+	.4byte update_tag_reset_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_2956
 cb_esc__7_2956:
 	.4byte 0x00000000
-	.4byte 0x80035A54
+	.4byte update_tag_left_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 	.4byte 0x00000000
 .global _esc__2_2972
 _esc__2_2972:
@@ -2290,103 +2290,103 @@ _esc__2_2972:
 .global cb_esc__7_2978
 cb_esc__7_2978:
 	.4byte 0x00000000
-	.4byte 0x80035A60
+	.4byte update_tag_reset_left_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 	.4byte 0x00000000
 .global cb_esc__7_2993
 cb_esc__7_2993:
 	.4byte 0x00000000
-	.4byte 0x80035B5C
+	.4byte update_tag_right_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 	.4byte 0x00000000
 .global cb_esc__7_3014
 cb_esc__7_3014:
 	.4byte 0x00000000
-	.4byte 0x80035B68
+	.4byte update_tag_reset_right_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 	.4byte 0x00000000
 .global cb_esc__7_3029
 cb_esc__7_3029:
 	.4byte 0x00000000
-	.4byte 0x80035C64
+	.4byte update_tag_tab_stop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 	.4byte 0x00000000
 .global cb_esc__7_3050
 cb_esc__7_3050:
 	.4byte 0x00000000
-	.4byte 0x80035C70
+	.4byte update_tag_reset_tab_stop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 	.4byte 0x00000000
 .global cb_esc__7_3065
 cb_esc__7_3065:
 	.4byte 0x00000000
-	.4byte 0x80035D6C
-	.4byte 0x80035D6C
+	.4byte update_tag_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_3086
 cb_esc__7_3086:
 	.4byte 0x00000000
-	.4byte 0x80035D78
-	.4byte 0x80035D78
+	.4byte update_tag_reset_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_3101
 cb_esc__7_3101:
 	.4byte 0x00000000
-	.4byte 0x80035E74
+	.4byte update_tag_yspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 	.4byte 0x00000000
 .global cb_esc__7_3122
 cb_esc__7_3122:
 	.4byte 0x00000000
-	.4byte 0x80035E80
+	.4byte update_tag_reset_yspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 	.4byte 0x00000000
 .global cb_esc__7_3132
 cb_esc__7_3132:
 	.4byte 0x00000000
-	.4byte 0x80035F7C
-	.4byte 0x80035F7C
+	.4byte update_tag_reset_all__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_all__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_3147
 cb_esc__7_3147:
 	.4byte 0x00000000
-	.4byte 0x80035FB0
-	.4byte 0x80035FB0
+	.4byte update_tag_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_3179
 cb_esc__7_3179:
 	.4byte 0x00000000
-	.4byte 0x80035FCC
-	.4byte 0x80035FCC
+	.4byte update_tag_reset_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_3194
 cb_esc__7_3194:
 	.4byte 0x00000000
-	.4byte 0x800361A8
-	.4byte 0x800361A8
+	.4byte update_tag_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_3206
 cb_esc__7_3206:
 	.4byte 0x00000000
-	.4byte 0x800361B4
-	.4byte 0x800361B4
+	.4byte update_tag_reset_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
+	.4byte update_tag_reset_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_3221
 cb_esc__7_3221:
 	.4byte 0x00000000
-	.4byte 0x80036244
+	.4byte update_tag_wrap__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 	.4byte 0x00000000
 .global cb_esc__7_3240
 cb_esc__7_3240:
 	.4byte 0x00000000
-	.4byte 0x80036258
+	.4byte update_tag_reset_wrap__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 	.4byte 0x00000000
 .global cb_esc__7_3255
 cb_esc__7_3255:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80036360
+	.4byte update_tag_xjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_3282
 cb_esc__7_3282:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80036374
+	.4byte update_tag_reset_xjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_3297
 cb_esc__7_3297:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800364A0
+	.4byte update_tag_yjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global cb_esc__7_3324
 cb_esc__7_3324:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800364B4
+	.4byte update_tag_reset_yjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotR8xtextboxRC8xtextbox
 .global _esc__2_3364
 _esc__2_3364:
 	.4byte 0x00000000
@@ -2410,7 +2410,7 @@ _esc__2_3371:
 	.4byte 0x3F8020C5
 .global cb_esc__7_3382
 cb_esc__7_3382:
-	.4byte 0x80036788
+	.4byte render_tag_model__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotRC8xtextboxff
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global _esc__2_3399
@@ -2418,7 +2418,7 @@ _esc__2_3399:
 	.4byte 0x3C8EFA35
 .global cb_esc__7_3434
 cb_esc__7_3434:
-	.4byte 0x80036B60
+	.4byte render_tag_tex__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRCQ28xtextbox3jotRC8xtextboxff
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global _esc__2_3473

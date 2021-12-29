@@ -19,7 +19,7 @@ debris_cfg__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubb
 	.4byte 0x3F800000
 	.4byte 0x3F800000
 	.4byte 0x3F800000
-	.4byte 0x803D4784
+	.4byte debris_models__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubble_bomb
 	.4byte 0x00000002
 .global randomly_hidden_entities__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_
 randomly_hidden_entities__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_:
@@ -164,62 +164,62 @@ randomly_hidden_entities__31_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_
 	.4byte 0xE7DF5BE1
 .global _esc__2_4521
 _esc__2_4521:
-	.4byte 0x80111D58
-	.4byte 0x80111D2C
-	.4byte 0x80111D34
-	.4byte 0x80111D3C
-	.4byte 0x80111D44
-	.4byte 0x80111D4C
-	.4byte 0x80111D54
+	.4byte update__Q217zNPCBossOmnidroid13clawrang_typeFf+124
+	.4byte update__Q217zNPCBossOmnidroid13clawrang_typeFf+80
+	.4byte update__Q217zNPCBossOmnidroid13clawrang_typeFf+88
+	.4byte update__Q217zNPCBossOmnidroid13clawrang_typeFf+96
+	.4byte update__Q217zNPCBossOmnidroid13clawrang_typeFf+104
+	.4byte update__Q217zNPCBossOmnidroid13clawrang_typeFf+112
+	.4byte update__Q217zNPCBossOmnidroid13clawrang_typeFf+120
 .global __vt__17zNPCBossOmnidroid
 __vt__17zNPCBossOmnidroid:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80108130
-	.4byte 0x80108C30
-	.4byte 0x8011F0EC
-	.4byte 0x8011F0F4
-	.4byte 0x80108E10
-	.4byte 0x80108DF0
-	.4byte 0x8010916C
-	.4byte 0x8011F194
-	.4byte 0x800FDEC8
-	.4byte 0x80108188
-	.4byte 0x800FEAC0
-	.4byte 0x8011F184
-	.4byte 0x801091D4
-	.4byte 0x80109250
-	.4byte 0x8011F0D8
-	.4byte 0x8011F0E8
-	.4byte 0x8011F1C8
-	.4byte 0x8010818C
-	.4byte 0x80108A70
-	.4byte 0x80108F54
-	.4byte 0x8011F0F8
-	.4byte 0x8011F0F0
-	.4byte 0x8011F100
-	.4byte 0x8011F108
-	.4byte 0x80109280
-	.4byte 0x8011F188
-	.4byte 0x8011F18C
-	.4byte 0x80188EC4
-	.4byte 0x8011F110
-	.4byte 0x8008F62C
-	.4byte 0x8011F118
-	.4byte 0x8011F120
-	.4byte 0x8011F130
-	.4byte 0x8011F138
-	.4byte 0x8011F140
-	.4byte 0x8011F148
-	.4byte 0x8011F150
-	.4byte 0x8011F158
-	.4byte 0x8011F160
-	.4byte 0x8011F168
-	.4byte 0x8011F170
-	.4byte 0x8011F1D0
-	.4byte 0x8011F1CC
-	.4byte 0x8011F180
-	.4byte 0x8011F178
+	.4byte __dt__17zNPCBossOmnidroidFv
+	.4byte init_npc__17zNPCBossOmnidroidFP9xEntAsset
+	.4byte update_npc__17zNPCBossOmnidroidFf
+	.4byte update_bounds__17zNPCBossOmnidroidFv
+	.4byte setup__17zNPCBossOmnidroidFv
+	.4byte scene_setup__17zNPCBossOmnidroidFv
+	.4byte render_extra__17zNPCBossOmnidroidFv
+	.4byte system_event__17zNPCBossOmnidroidFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte play_sound__Q24zNPC4baseFP17zAnimFxSoundGroup
+	.4byte destroy__17zNPCBossOmnidroidFv
+	.4byte CreateAnimTable__Q24zNPC4baseFP10xAnimTable
+	.4byte change_bounds__17zNPCBossOmnidroidFf5xVec3b
+	.4byte activate__17zNPCBossOmnidroidFv
+	.4byte deactivate__17zNPCBossOmnidroidFv
+	.4byte get_type_name__17zNPCBossOmnidroidCFv
+	.4byte BehaviorUpdate__17zNPCBossOmnidroidFf
+	.4byte before_anim_matrices__17zNPCBossOmnidroidFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte add_states__17zNPCBossOmnidroidFP10xAnimTable
+	.4byte add_transitions__17zNPCBossOmnidroidFP10xAnimTable
+	.4byte reset__17zNPCBossOmnidroidFv
+	.4byte get_throw_anim_code__17zNPCBossOmnidroidFv
+	.4byte render_npc__17zNPCBossOmnidroidFv
+	.4byte static_object_carry__17zNPCBossOmnidroidFv
+	.4byte player_orient_carry__17zNPCBossOmnidroidFv
+	.4byte damage__17zNPCBossOmnidroidFRC17zCombatDamageInfo
+	.4byte deliver_damage__17zNPCBossOmnidroidFRC17zCombatDamageInfo
+	.4byte valid_damage__17zNPCBossOmnidroidFRC17zCombatDamageInfo
+	.4byte kill__Q24zNPC6commonFb
+	.4byte grabbable__17zNPCBossOmnidroidF8GrabType
+	.4byte giveBonus__Q24zNPC6commonFv
+	.4byte punchable__17zNPCBossOmnidroidFv
+	.4byte culling_changed__17zNPCBossOmnidroidFv
+	.4byte get_target_ent__17zNPCBossOmnidroidCFv
+	.4byte get_target_pos__17zNPCBossOmnidroidCFv
+	.4byte get_target_dir__17zNPCBossOmnidroidCFv
+	.4byte get_target_dist__17zNPCBossOmnidroidCFv
+	.4byte get_target_dir_2d__17zNPCBossOmnidroidCFv
+	.4byte get_target_dist_2d__17zNPCBossOmnidroidCFv
+	.4byte get_aim_pos__17zNPCBossOmnidroidCFv
+	.4byte get_aim_dir__17zNPCBossOmnidroidCFv
+	.4byte get_aim_dist__17zNPCBossOmnidroidCFv
+	.4byte get_target_priority__Q24zNPC6commonCFv
+	.4byte debug_render__17zNPCBossOmnidroidFv
+	.4byte move__17zNPCBossOmnidroidFv
+	.4byte get_aim_offset__17zNPCBossOmnidroidCFv
 
 .section .rodata
 
@@ -250,7 +250,7 @@ shrap_cfg__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak12rubbl
 	.4byte 0x000003E8
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x803D4764
+	.4byte shrap_models__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak12rubble_chunk
 	.4byte 0x00000003
 .global shrap_cfg__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubble_bomb
 shrap_cfg__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubble_bomb:
@@ -279,7 +279,7 @@ shrap_cfg__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubbl
 	.4byte 0x000003E8
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x803D4778
+	.4byte shrap_models__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubble_bomb
 	.4byte 0x00000003
 .global cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubble_bomb4grab8shrapnel
 cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubble_bomb4grab8shrapnel:
@@ -308,7 +308,7 @@ cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubble_bomb
 	.4byte 0x000003E8
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x803D4778
+	.4byte shrap_models__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak11rubble_bomb
 	.4byte 0x00000003
 .global curve0__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak12impact_decal
 curve0__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak12impact_decal:
@@ -575,7 +575,7 @@ type0__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak13rubble_sy
 	.4byte 0x3F59999A
 	.4byte 0x41C80000
 	.4byte 0x3F800000
-	.4byte 0x802E2228
+	.4byte _esc__2_stringBase0_73
 	.4byte 0xA48D5684
 	.4byte 0xCE6A4712
 	.4byte 0x3F800000
@@ -607,7 +607,7 @@ type0__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak13rubble_sy
 	.4byte 0x3F59999A
 	.4byte 0x41C80000
 	.4byte 0x3F800000
-	.4byte 0x802E2228
+	.4byte _esc__2_stringBase0_73
 	.4byte 0xA48D5684
 	.4byte 0xCE6A4712
 	.4byte 0x3F800000
@@ -639,7 +639,7 @@ type0__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak13rubble_sy
 	.4byte 0x3F59999A
 	.4byte 0x41C80000
 	.4byte 0x3F800000
-	.4byte 0x802E2228
+	.4byte _esc__2_stringBase0_73
 	.4byte 0xA48D5684
 	.4byte 0xCE6A4712
 	.4byte 0x3F800000
@@ -673,7 +673,7 @@ type1__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak13rubble_sy
 	.4byte 0x3F59999A
 	.4byte 0x41C80000
 	.4byte 0x3F800000
-	.4byte 0x802E2228
+	.4byte _esc__2_stringBase0_73
 	.4byte 0xA48D5684
 	.4byte 0xCE6A4712
 	.4byte 0x3F800000
@@ -705,7 +705,7 @@ type1__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak13rubble_sy
 	.4byte 0x3F59999A
 	.4byte 0x41C80000
 	.4byte 0x3F800000
-	.4byte 0x802E2228
+	.4byte _esc__2_stringBase0_73
 	.4byte 0xA48D5684
 	.4byte 0xCE6A4712
 	.4byte 0x3F800000
@@ -737,7 +737,7 @@ type1__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak13rubble_sy
 	.4byte 0x3F59999A
 	.4byte 0x41C80000
 	.4byte 0x3F800000
-	.4byte 0x802E2228
+	.4byte _esc__2_stringBase0_73
 	.4byte 0xA48D5684
 	.4byte 0xCE6A4712
 	.4byte 0x3F800000
@@ -2521,7 +2521,7 @@ cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs13r
 	.4byte 0x00000002
 	.4byte 0x3F000000
 	.4byte 0x00000005
-	.4byte 0x803D4710
+	.4byte curve__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs13ribbon_center
 	.4byte 0x00000003
 	.4byte 0x00000000
 .global cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake
@@ -2531,7 +2531,7 @@ cfg__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11r
 	.4byte 0x00000006
 	.4byte 0x3F000000
 	.4byte 0x00000001
-	.4byte 0x803D4740
+	.4byte curve__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak9clawrangs11ribbon_wake
 	.4byte 0x00000003
 	.4byte 0x00000000
 .global cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state9boomerang4blur
@@ -2560,605 +2560,605 @@ cfg__Q531_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state10claw_
 __vt__Q217zNPCBossOmnidroid24intermission_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8011EBA4
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8011EC14
-	.4byte 0x8011ED10
-	.4byte 0x8011F080
-	.4byte 0x8010F3C0
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011EEE8
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid24intermission_action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid24intermission_action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid24intermission_action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid24intermission_action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid24intermission_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid21jump_away_action_type
 __vt__Q217zNPCBossOmnidroid21jump_away_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8011E9F8
-	.4byte 0x8010EAF0
-	.4byte 0x8011EA18
-	.4byte 0x8010F3D0
-	.4byte 0x8011EA28
-	.4byte 0x8010F3C8
-	.4byte 0x8011EA68
-	.4byte 0x8010F08C
-	.4byte 0x8011EA8C
-	.4byte 0x8011EB48
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid21jump_away_action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid21jump_away_action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid21jump_away_action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid21jump_away_action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid21jump_away_action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid21jump_away_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid21jump_near_action_type
 __vt__Q217zNPCBossOmnidroid21jump_near_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8011E89C
-	.4byte 0x8010EAF0
-	.4byte 0x8011E8A8
-	.4byte 0x8010F3D0
-	.4byte 0x8011E8B8
-	.4byte 0x8011E8F8
-	.4byte 0x8011E930
-	.4byte 0x8010F08C
-	.4byte 0x8011E980
-	.4byte 0x8011E99C
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid21jump_near_action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid21jump_near_action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid21jump_near_action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid21jump_near_action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid21jump_near_action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid21jump_near_action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid21jump_near_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid23near_beatit_action_type
 __vt__Q217zNPCBossOmnidroid23near_beatit_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8011F088
-	.4byte 0x8011E868
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E894
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid23near_beatit_action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid23near_beatit_action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid23near_beatit_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid20cooldown_action_type
 __vt__Q217zNPCBossOmnidroid20cooldown_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8011E820
-	.4byte 0x8011E830
-	.4byte 0x8011F090
-	.4byte 0x8011F098
-	.4byte 0x8011F0B0
-	.4byte 0x8011E318
-	.4byte 0x8011F0B8
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid20cooldown_action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid20cooldown_action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid20cooldown_action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid20cooldown_action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid20cooldown_action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid20cooldown_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid18beatit_action_type
 __vt__Q217zNPCBossOmnidroid18beatit_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8010F3C0
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E818
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid18beatit_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid16stab_action_type
 __vt__Q217zNPCBossOmnidroid16stab_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8011E784
-	.4byte 0x8010F08C
-	.4byte 0x8011E7B0
-	.4byte 0x8011E810
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid16stab_action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid16stab_action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid16stab_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid22claw_swing_action_type
 __vt__Q217zNPCBossOmnidroid22claw_swing_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8011E750
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E77C
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid22claw_swing_action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid22claw_swing_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid16bolt_action_type
 __vt__Q217zNPCBossOmnidroid16bolt_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8010F3C0
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E748
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid16bolt_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid16beam_action_type
 __vt__Q217zNPCBossOmnidroid16beam_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8011E714
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E740
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid16beam_action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid16beam_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid21boomerang_action_type
 __vt__Q217zNPCBossOmnidroid21boomerang_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8011E5CC
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8011E5D8
-	.4byte 0x8011E6F4
-	.4byte 0x8010F3C0
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E70C
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid21boomerang_action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid21boomerang_action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid21boomerang_action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid21boomerang_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid22throw_rock_action_type
 __vt__Q217zNPCBossOmnidroid22throw_rock_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8010F3C0
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E5C4
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid22throw_rock_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid22smash_rock_action_type
 __vt__Q217zNPCBossOmnidroid22smash_rock_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8011E4E4
-	.4byte 0x8010F094
-	.4byte 0x8011F0C0
-	.4byte 0x8011F0C8
-	.4byte 0x8010F08C
-	.4byte 0x8011E5B4
-	.4byte 0x8011F0D0
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid22smash_rock_action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid22smash_rock_action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid22smash_rock_action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid22smash_rock_action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid22smash_rock_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid16ball_action_type
 __vt__Q217zNPCBossOmnidroid16ball_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8011E4B0
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E4DC
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid16ball_action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid16ball_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid19dervish_action_type
 __vt__Q217zNPCBossOmnidroid19dervish_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8011E3A8
-	.4byte 0x8010F08C
-	.4byte 0x8011E3D4
-	.4byte 0x8011E4A8
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid19dervish_action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid19dervish_action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid19dervish_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid22bitch_slap_action_type
 __vt__Q217zNPCBossOmnidroid22bitch_slap_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8011E374
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E3A0
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid22bitch_slap_action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid22bitch_slap_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid15hit_action_type
 __vt__Q217zNPCBossOmnidroid15hit_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8010F3C0
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E36C
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid15hit_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid16jump_action_type
 __vt__Q217zNPCBossOmnidroid16jump_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8010F3C0
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E364
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid16jump_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid16idle_action_type
 __vt__Q217zNPCBossOmnidroid16idle_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8010F3C0
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011E35C
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid16idle_action_typeCFv
 .global __vt__Q217zNPCBossOmnidroid11action_type
 __vt__Q217zNPCBossOmnidroid11action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8010F3C8
-	.4byte 0x8010F3C0
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
 	.4byte 0x00000000
 .global __vt__Q217zNPCBossOmnidroid16death_state_type
 __vt__Q217zNPCBossOmnidroid16death_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BA98
-	.4byte 0x8010BB14
-	.4byte 0x8010EAF4
-	.4byte 0x8011E20C
-	.4byte 0x8011E254
-	.4byte 0x8011E270
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid16death_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid16death_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid16death_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid17beatit_state_type
 __vt__Q217zNPCBossOmnidroid17beatit_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BA98
-	.4byte 0x8010BB14
-	.4byte 0x8010EAF4
-	.4byte 0x8011DED8
-	.4byte 0x8011DFBC
-	.4byte 0x8011E008
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid17beatit_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid17beatit_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid17beatit_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid15stab_state_type
 __vt__Q217zNPCBossOmnidroid15stab_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8011D8A0
-	.4byte 0x8010BB14
-	.4byte 0x8010EAF4
-	.4byte 0x8011D97C
-	.4byte 0x8011DA64
-	.4byte 0x8011DAC8
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid15stab_state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid15stab_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid15stab_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid15stab_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid21claw_swing_state_type
 __vt__Q217zNPCBossOmnidroid21claw_swing_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BA98
-	.4byte 0x8010BB14
-	.4byte 0x8010EAF4
-	.4byte 0x8011D498
-	.4byte 0x8011D4A4
-	.4byte 0x8011D578
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid21claw_swing_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid21claw_swing_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid21claw_swing_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid15bolt_state_type
 __vt__Q217zNPCBossOmnidroid15bolt_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8011CCC0
-	.4byte 0x8010BB14
-	.4byte 0x8010EAF4
-	.4byte 0x8011CCF0
-	.4byte 0x8011CD7C
-	.4byte 0x8011CE74
-	.4byte 0x801098E0
-	.4byte 0x8011CFFC
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8011D0EC
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid15bolt_state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid15bolt_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid15bolt_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid15bolt_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid15bolt_state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid15bolt_state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid15beam_state_type
 __vt__Q217zNPCBossOmnidroid15beam_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8011B110
-	.4byte 0x8011B1DC
-	.4byte 0x8010EAF4
-	.4byte 0x8011B1F0
-	.4byte 0x8011B290
-	.4byte 0x8011B2F0
-	.4byte 0x801098E0
-	.4byte 0x8011B460
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid15beam_state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid15beam_state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid15beam_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid15beam_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid15beam_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid15beam_state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid20boomerang_state_type
 __vt__Q217zNPCBossOmnidroid20boomerang_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BA98
-	.4byte 0x8011A5B4
-	.4byte 0x8010EAF4
-	.4byte 0x8011A610
-	.4byte 0x8011A640
-	.4byte 0x8011A6A0
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8011A8A0
-	.4byte 0x8011A9D8
+	.4byte setup__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid20boomerang_state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid20boomerang_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid20boomerang_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid20boomerang_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid20boomerang_state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid20boomerang_state_typeFv
 .global __vt__Q217zNPCBossOmnidroid21throw_rock_state_type
 __vt__Q217zNPCBossOmnidroid21throw_rock_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8011A034
-	.4byte 0x8010BB14
-	.4byte 0x8010EAF4
-	.4byte 0x8011A0C4
-	.4byte 0x8011A124
-	.4byte 0x8011A1C0
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid21throw_rock_state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid21throw_rock_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid21throw_rock_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid21throw_rock_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid21smash_rock_state_type
 __vt__Q217zNPCBossOmnidroid21smash_rock_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80119954
-	.4byte 0x8010BB14
-	.4byte 0x8010EAF4
-	.4byte 0x80119A34
-	.4byte 0x80119A9C
-	.4byte 0x80119B3C
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid21smash_rock_state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid21smash_rock_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid21smash_rock_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid21smash_rock_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid15ball_state_type
 __vt__Q217zNPCBossOmnidroid15ball_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80117F3C
-	.4byte 0x80117F7C
-	.4byte 0x8010EAF4
-	.4byte 0x80118018
-	.4byte 0x801180A0
-	.4byte 0x80118134
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x801184EC
-	.4byte 0x8011943C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid15ball_state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid15ball_state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid15ball_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid15ball_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid15ball_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid15ball_state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid15ball_state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid18dervish_state_type
 __vt__Q217zNPCBossOmnidroid18dervish_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80116D60
-	.4byte 0x80116DA8
-	.4byte 0x8010EAF4
-	.4byte 0x80116DD0
-	.4byte 0x80116EB4
-	.4byte 0x80116F00
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x801170C4
-	.4byte 0x8010A458
-	.4byte 0x80117E30
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid18dervish_state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid18dervish_state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid18dervish_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid18dervish_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid18dervish_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid18dervish_state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid18dervish_state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid21bitch_slap_state_type
 __vt__Q217zNPCBossOmnidroid21bitch_slap_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BA98
-	.4byte 0x8010BB14
-	.4byte 0x8010EAF4
-	.4byte 0x80116B30
-	.4byte 0x80116B3C
-	.4byte 0x80116BC0
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid21bitch_slap_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid21bitch_slap_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid21bitch_slap_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid14hit_state_type
 __vt__Q217zNPCBossOmnidroid14hit_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BA98
-	.4byte 0x8010BB14
-	.4byte 0x8010EAF4
-	.4byte 0x80116AA4
-	.4byte 0x80116AC8
-	.4byte 0x80116AEC
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid14hit_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid14hit_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid14hit_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid15jump_state_type
 __vt__Q217zNPCBossOmnidroid15jump_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BA98
-	.4byte 0x80115B90
-	.4byte 0x8010EAF4
-	.4byte 0x80115BD0
-	.4byte 0x80115C64
-	.4byte 0x80115CD0
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid15jump_state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid15jump_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid15jump_state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid15jump_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid15idle_state_type
 __vt__Q217zNPCBossOmnidroid15idle_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BA98
-	.4byte 0x80115B00
-	.4byte 0x8010EAF4
-	.4byte 0x80115B0C
-	.4byte 0x8010A174
-	.4byte 0x80115B3C
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte setup__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid15idle_state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid15idle_state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte update__Q217zNPCBossOmnidroid15idle_state_typeFf
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid10state_type
 __vt__Q217zNPCBossOmnidroid10state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BA98
-	.4byte 0x8010BB14
-	.4byte 0x8010EAF4
-	.4byte 0x8010A170
-	.4byte 0x8010A174
+	.4byte setup__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte death__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte enter__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte exit__Q217zNPCBossOmnidroid10state_typeFv
 	.4byte 0x00000000
-	.4byte 0x801098E0
-	.4byte 0x801091D0
-	.4byte 0x8010A3F0
-	.4byte 0x8010A424
-	.4byte 0x8010A458
-	.4byte 0x8010A36C
-	.4byte 0x8010DA60
-	.4byte 0x8010D6C8
+	.4byte render__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte render_extra__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte pre_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_animate__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte post_move__Q217zNPCBossOmnidroid10state_typeFf
+	.4byte transform_anim__Q217zNPCBossOmnidroid10state_typeFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte override_hit__Q217zNPCBossOmnidroid10state_typeFv
+	.4byte phase_change__Q217zNPCBossOmnidroid10state_typeFv
 .global __vt__Q217zNPCBossOmnidroid17death_action_type
 __vt__Q217zNPCBossOmnidroid17death_action_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8010BC54
-	.4byte 0x8010BCC0
-	.4byte 0x8010EAF0
-	.4byte 0x801096CC
-	.4byte 0x8010F3D0
-	.4byte 0x8010F094
-	.4byte 0x8011F1D8
-	.4byte 0x8010F3C0
-	.4byte 0x8010F08C
-	.4byte 0x8011E318
-	.4byte 0x8011F1E0
+	.4byte setup__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte reset__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte death__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte update__Q217zNPCBossOmnidroid11action_typeFf
+	.4byte refresh__Q217zNPCBossOmnidroid11action_typeFv
+	.4byte initiate__Q217zNPCBossOmnidroid11action_typeFRQ217zNPCBossOmnidroid18action_choice_data
+	.4byte priority__Q217zNPCBossOmnidroid17death_action_typeCFv
+	.4byte ready__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte historically_significant__Q217zNPCBossOmnidroid11action_typeCFv
+	.4byte adjust_probability__Q217zNPCBossOmnidroid11action_typeCFf
+	.4byte get_state__Q217zNPCBossOmnidroid17death_action_typeCFv
 	.4byte 0x00000000
 
 .section .sdata2
@@ -3371,14 +3371,14 @@ cfg__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak12impact_deca
 	.4byte 0x3F800000
 	.4byte 0x3F800000
 	.4byte 0x00000002
-	.4byte 0x802E0594
+	.4byte curve0__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak12impact_decal
 	.4byte 0x00000003
 	.4byte 0x3F000000
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803D478C
+	.4byte curve1__Q331_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak12impact_decal
 	.4byte 0x00000002
 .global min_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4jump
 min_dist__Q431_esc__2_unnamed_esc__2_zNPCBossOmnidroid_cpp_esc__2_5tweak5state4jump:

@@ -6,14 +6,17 @@
 #pragma GLOBAL_ASM("asm/GAME/zBomb.s", "get_model__19_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_FPCc")
 
 // func_8019E430
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "free_model__19_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_FP14xModelInstance")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
+                   "free_model__19_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_FP14xModelInstance")
 
 // func_8019E458
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "DestroyCB__19_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_FP4xEntPvb")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
+                   "DestroyCB__19_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_FP4xEntPvb")
 
 // func_8019E47C
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
-                   "CollideCB__19_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_FP4xEntP4xEntPC5xVec3PC5xVec3Pv")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zBomb.s",                                                                            \
+    "CollideCB__19_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_FP4xEntP4xEntPC5xVec3PC5xVec3Pv")
 
 // func_8019E4AC
 #pragma GLOBAL_ASM(                                                                                \
@@ -83,12 +86,14 @@
 #pragma GLOBAL_ASM("asm/GAME/zBomb.s", "bound_damage__FR6xBoundP4xEntiiiff")
 
 // func_8019F5A8
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
-                   "boundHitsBound__19_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_FRC6xBoundRC6xBoundR5xVec3")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zBomb.s",                                                                            \
+    "boundHitsBound__19_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_FRC6xBoundRC6xBoundR5xVec3")
 
 // func_8019F63C
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
-                   "__ct__Q219_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_15damage_callbackFP4xEntP6xBoundiRCfRCf")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zBomb.s",                                                                            \
+    "__ct__Q219_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_15damage_callbackFP4xEntP6xBoundiRCfRCf")
 
 // func_8019F654
 #pragma GLOBAL_ASM("asm/GAME/zBomb.s", "cylinder_damage__FP4xEntRC5xVec3ffiiff")
@@ -101,41 +106,47 @@
                    "__cl__Q219_esc__2_unnamed_esc__2_zBomb_cpp_esc__2_15damage_callbackFR4xEnt")
 
 // func_8019F828
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "_esc__2_216_esc__2_collided__Q21z4bombFRC12xSweptSphere")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
+                   "_esc__2_216_esc__2_collided__Q21z4bombFRC12xSweptSphere__WEAK")
 
 // func_8019F830
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "_esc__2_304_esc__2_render__Q21z4bombCFv")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "_esc__2_304_esc__2_render__Q21z4bombCFv__WEAK")
 
 // func_8019F838
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "_esc__2_304_esc__2_post_render_3d__Q21z4bombCFv")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "_esc__2_304_esc__2_post_render_3d__Q21z4bombCFv__WEAK")
 
 // func_8019F840
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "_esc__2_304_esc__2_update__Q21z4bombFf")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "_esc__2_304_esc__2_update__Q21z4bombFf__WEAK")
 
 // func_8019F848
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "_esc__2_304_esc__2_destroy__Q21z4bombFv")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "_esc__2_304_esc__2_destroy__Q21z4bombFv__WEAK")
 
 // func_8019F850
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "_esc__2_304_esc__2_reset__Q21z4bombFv")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "_esc__2_304_esc__2_reset__Q21z4bombFv__WEAK")
 
 // func_8019F858
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "__ct__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_Fb")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
+                   "__ct__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_Fb")
 
 // func_8019F868
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "render__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_CFv")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
+                   "render__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_CFv")
 
 // func_8019F86C
 #pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
                    "post_render_3d__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_CFv")
 
 // func_8019F870
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "update__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_Ff")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
+                   "update__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_Ff")
 
 // func_8019F874
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "destroy__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_Fv")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
+                   "destroy__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_Fv")
 
 // func_8019F878
-#pragma GLOBAL_ASM("asm/GAME/zBomb.s", "reset__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_Fv")
+#pragma GLOBAL_ASM("asm/GAME/zBomb.s",                                                             \
+                   "reset__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_Fv")
 
 // func_8019F87C
 #pragma GLOBAL_ASM(                                                                                \

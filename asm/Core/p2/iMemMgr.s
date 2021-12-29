@@ -88,11 +88,11 @@ sMemMgrEnableRenderWareMemoryHack:
 __vt__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMulti:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80078360
-	.4byte 0x80078728
-	.4byte 0x800785B0
-	.4byte 0x80078804
-	.4byte 0x80078928
+	.4byte DoAllocate__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFUiUi
+	.4byte DoFree__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFPv
+	.4byte DoReallocate__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFPvUiUi
+	.4byte DoGetBlockSize__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFPv
+	.4byte HandleOutOfMemory__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiFUiUi
 	.4byte 0x00000000
 
 .section .sdata2

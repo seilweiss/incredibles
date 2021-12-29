@@ -15,12 +15,12 @@ lbl_803D950C:
 __vt__Q21z4toss:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800C1F7C
-	.4byte 0x800C1F80
-	.4byte 0x800C1F84
-	.4byte 0x801F37A4
-	.4byte 0x800C1F8C
-	.4byte 0x800C1F90
+	.4byte render__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_CFv
+	.4byte post_render_2d__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_CFv
+	.4byte post_render_3d__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_CFv
+	.4byte update__Q21z4tossFf
+	.4byte destroy__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_Fv
+	.4byte reset__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_Fv
 
 .section .sdata2
 

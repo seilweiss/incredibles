@@ -112,7 +112,7 @@ FSOUND_Listener_Right:
 	.4byte 0x00000000
 .global FSOUND_Device
 FSOUND_Device:
-	.4byte 0x8032BB48
+	.4byte FSOUND_Output_GC
 	.4byte 0x0000000B
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -271,8 +271,8 @@ FSOUND_Device:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8032B40C
-	.4byte 0x8032B40C
+	.4byte FSOUND_Device+636
+	.4byte FSOUND_Device+636
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -291,9 +291,9 @@ FSOUND_Device:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802570E0
-	.4byte 0x80257048
-	.4byte 0x80257020
+	.4byte F_Malloc
+	.4byte F_ReAlloc
+	.4byte F_Free
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global FSOUND_Output_GC_DbTable
@@ -556,7 +556,7 @@ FSOUND_Output_GC_DbTable:
 	.4byte 0x00000000
 .global FSOUND_MixerTable
 FSOUND_MixerTable:
-	.4byte 0x802EFBA0
+	.4byte _esc__2_1
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -569,7 +569,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFBB8
+	.4byte _esc__2_2
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -582,7 +582,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFBD0
+	.4byte _esc__2_3
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -595,7 +595,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFBE4
+	.4byte _esc__2_4
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -608,7 +608,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFBF8
+	.4byte _esc__2_5
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -621,7 +621,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFC18
+	.4byte _esc__2_6
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -634,7 +634,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFC34
+	.4byte _esc__2_7
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -647,7 +647,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFC50
+	.4byte _esc__2_8
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -660,7 +660,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFC6C
+	.4byte _esc__2_9
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -673,7 +673,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFC80
+	.4byte _esc__2_10
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -686,7 +686,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFC9C
+	.4byte _esc__2_11
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -699,7 +699,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFCAC
+	.4byte _esc__2_12
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -712,7 +712,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFCC4
+	.4byte _esc__2_13
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -725,7 +725,7 @@ FSOUND_MixerTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802EFCE4
+	.4byte _esc__2_14
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -743,28 +743,28 @@ FSOUND_Output_GC:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802518FC
-	.4byte 0x802515A0
-	.4byte 0x80251464
-	.4byte 0x80251424
-	.4byte 0x80251390
-	.4byte 0x802518EC
-	.4byte 0x802518E4
-	.4byte 0x8024E9DC
-	.4byte 0x802512B0
-	.4byte 0x80251DD4
-	.4byte 0x80251D60
-	.4byte 0x80251CEC
+	.4byte FSOUND_Output_GC_EnumerateDrivers
+	.4byte FSOUND_Output_GC_Initialize
+	.4byte FSOUND_Output_GC_Close
+	.4byte FSOUND_Output_GC_SetSampleFunctions
+	.4byte FSOUND_Output_GC_SetChannelFunctions
+	.4byte FSOUND_Output_GC_GetCaps
+	.4byte FSOUND_Output_GC_GetHandle
+	.4byte FSOUND_Output_GC_SetSpeakerMode
+	.4byte FSOUND_Output_GC_Update
+	.4byte FSOUND_Output_NoSound_Reverb_Initialize
+	.4byte FSOUND_Output_NoSound_Reverb_SetProperties
+	.4byte FSOUND_Output_NoSound_Reverb_GetProperties
 .global _esc__2_937
 _esc__2_937:
-	.4byte 0x8024EA38
-	.4byte 0x8024EA38
-	.4byte 0x8024EA44
-	.4byte 0x8024EA38
-	.4byte 0x8024EA60
-	.4byte 0x8024EA7C
-	.4byte 0x8024EA38
-	.4byte 0x8024EA98
+	.4byte FSOUND_Output_GC_SetSpeakerMode+92
+	.4byte FSOUND_Output_GC_SetSpeakerMode+92
+	.4byte FSOUND_Output_GC_SetSpeakerMode+104
+	.4byte FSOUND_Output_GC_SetSpeakerMode+92
+	.4byte FSOUND_Output_GC_SetSpeakerMode+132
+	.4byte FSOUND_Output_GC_SetSpeakerMode+160
+	.4byte FSOUND_Output_GC_SetSpeakerMode+92
+	.4byte FSOUND_Output_GC_SetSpeakerMode+188
 	.4byte 0x00000000
 .global FSOUND_3D_Reverb_Properties
 FSOUND_3D_Reverb_Properties:
@@ -803,18 +803,18 @@ FSOUND_Output_NoSound:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x802521C0
-	.4byte 0x80252144
-	.4byte 0x80252140
-	.4byte 0x80252104
-	.4byte 0x80251FCC
-	.4byte 0x802521BC
-	.4byte 0x802521B4
-	.4byte 0x80251E88
-	.4byte 0x80251DDC
-	.4byte 0x80251DD4
-	.4byte 0x80251D60
-	.4byte 0x80251CEC
+	.4byte FSOUND_Output_NoSound_EnumerateDrivers
+	.4byte FSOUND_Output_NoSound_Initialize
+	.4byte FSOUND_Output_NoSound_Close
+	.4byte FSOUND_Output_NoSound_SetSampleFunctions
+	.4byte FSOUND_Output_NoSound_SetChannelFunctions
+	.4byte FSOUND_Output_NoSound_GetCaps
+	.4byte FSOUND_Output_NoSound_GetHandle
+	.4byte FSOUND_Output_NoSound_SetSpeakerMode
+	.4byte FSOUND_Output_NoSound_Update
+	.4byte FSOUND_Output_NoSound_Reverb_Initialize
+	.4byte FSOUND_Output_NoSound_Reverb_SetProperties
+	.4byte FSOUND_Output_NoSound_Reverb_GetProperties
 	.4byte 0x00000000
 .global FSOUND_Software_PanTable
 FSOUND_Software_PanTable:
@@ -884,34 +884,34 @@ FSOUND_Software_PanTable:
 	.4byte 0xFDFEFEFF
 .global _esc__2_1027
 _esc__2_1027:
-	.4byte 0x80257754
-	.4byte 0x802577D8
-	.4byte 0x8025785C
-	.4byte 0x80257D3C
-	.4byte 0x80257CC0
-	.4byte 0x802578DC
-	.4byte 0x80257974
-	.4byte 0x80257A0C
-	.4byte 0x80257AA4
-	.4byte 0x80257CC0
-	.4byte 0x80257B24
-	.4byte 0x80257BA4
-	.4byte 0x80257C28
+	.4byte gcasyncread+936
+	.4byte gcasyncread+1068
+	.4byte gcasyncread+1200
+	.4byte gcasyncread+2448
+	.4byte gcasyncread+2324
+	.4byte gcasyncread+1328
+	.4byte gcasyncread+1480
+	.4byte gcasyncread+1632
+	.4byte gcasyncread+1784
+	.4byte gcasyncread+2324
+	.4byte gcasyncread+1912
+	.4byte gcasyncread+2040
+	.4byte gcasyncread+2172
 .global _esc__2_1026
 _esc__2_1026:
-	.4byte 0x80257430
-	.4byte 0x80257720
-	.4byte 0x80257720
-	.4byte 0x80257720
-	.4byte 0x80257720
-	.4byte 0x802574B4
-	.4byte 0x80257550
-	.4byte 0x802575EC
-	.4byte 0x80257720
-	.4byte 0x80257720
-	.4byte 0x80257720
-	.4byte 0x80257720
-	.4byte 0x80257688
+	.4byte gcasyncread+132
+	.4byte gcasyncread+884
+	.4byte gcasyncread+884
+	.4byte gcasyncread+884
+	.4byte gcasyncread+884
+	.4byte gcasyncread+264
+	.4byte gcasyncread+420
+	.4byte gcasyncread+576
+	.4byte gcasyncread+884
+	.4byte gcasyncread+884
+	.4byte gcasyncread+884
+	.4byte gcasyncread+884
+	.4byte gcasyncread+732
 
 .section .rodata
 
@@ -1452,7 +1452,7 @@ lbl_803D9514:
 
 .global FSOUND_CurrentDevice
 FSOUND_CurrentDevice:
-	.4byte 0x8032B190
+	.4byte FSOUND_Device
 	.4byte 0x00000000
 .global FSOUND_3D_DopplerScale
 FSOUND_3D_DopplerScale:
@@ -1484,7 +1484,7 @@ FSOUND_File_Thread:
 	.4byte 0x00000000
 .global FSOUND_Output_GC_DVDStatusCallback
 FSOUND_Output_GC_DVDStatusCallback:
-	.4byte 0x80257D70
+	.4byte FSOUND_Output_GC_DefaultDVDStatusCallback
 .global FSOUND_Output_GC_LastDVDStatus
 FSOUND_Output_GC_LastDVDStatus:
 	.4byte 0xFFFFFFFE

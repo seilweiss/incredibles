@@ -6,27 +6,27 @@
 __vt__Q27xRumble16sphericalEmitter:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80055940
-	.4byte 0x80055B20
-	.4byte 0x80055AF8
+	.4byte GetIntensity__Q27xRumble16sphericalEmitterCFRC5xVec3Rf
+	.4byte SetIntensity__Q27xRumble11emitterBaseCFf
+	.4byte UpdatePosition__Q27xRumble16sphericalEmitterCFRC5xVec3
 .global __vt__Q27xRumble10boxEmitter
 __vt__Q27xRumble10boxEmitter:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80055778
-	.4byte 0x80055B20
+	.4byte GetIntensity__Q27xRumble10boxEmitterCFRC5xVec3Rf
+	.4byte SetIntensity__Q27xRumble11emitterBaseCFf
 .global __vt__Q27xRumble11emitterBase
 __vt__Q27xRumble11emitterBase:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80055B20
+	.4byte SetIntensity__Q27xRumble11emitterBaseCFf
 .global __vt__Q27xRumble6effect
 __vt__Q27xRumble6effect:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80055B2C
-	.4byte 0x80055B20
+	.4byte GetIntensity__Q27xRumble6effectCFRC5xVec3Rf
+	.4byte SetIntensity__Q27xRumble11emitterBaseCFf
 	.4byte 0x00000000
 
 .section .sdata2

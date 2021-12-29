@@ -92,13 +92,13 @@ shadVec_esc__7_1472:
 __vt__Q223_esc__2_unnamed_esc__2_xCutscene_cpp_esc__2_12xCamCutscene:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8001E22C
-	.4byte 0x80010314
-	.4byte 0x8001E320
-	.4byte 0x8001E390
-	.4byte 0x8001E3C8
-	.4byte 0x8000EDCC
-	.4byte 0x80010318
+	.4byte create__Q223_esc__2_unnamed_esc__2_xCutscene_cpp_esc__2_12xCamCutsceneFv
+	.4byte destroy__4xCamFv
+	.4byte start__Q223_esc__2_unnamed_esc__2_xCutscene_cpp_esc__2_12xCamCutsceneFv
+	.4byte stop__Q223_esc__2_unnamed_esc__2_xCutscene_cpp_esc__2_12xCamCutsceneFv
+	.4byte update__Q223_esc__2_unnamed_esc__2_xCutscene_cpp_esc__2_12xCamCutsceneFR6xScenef
+	.4byte get_next__4xCamFv
+	.4byte config_follow__4xCamFv
 
 .section .sdata2
 

@@ -141,26 +141,33 @@
 #pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s", "getName__Q24zNPC6shieldFv")
 
 // func_8012CA6C
-#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s", "_esc__2_216_esc__2_runnable__Q24zNPC6shieldFf")
+#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s",                                                 \
+                   "_esc__2_216_esc__2_runnable__Q24zNPC6shieldFf__WEAK")
 
 // func_8012CA74
-#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s", "_esc__2_216_esc__2_exclusive__Q24zNPC6shieldFv")
+#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s",                                                 \
+                   "_esc__2_216_esc__2_exclusive__Q24zNPC6shieldFv__WEAK")
 
 // func_8012CA7C
-#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s", "_esc__2_216_esc__2_reset__Q24zNPC6shieldFv")
+#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s",                                                 \
+                   "_esc__2_216_esc__2_reset__Q24zNPC6shieldFv__WEAK")
 
 // func_8012CA84
-#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s", "_esc__2_216_esc__2_setup__Q24zNPC6shieldFv")
+#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s",                                                 \
+                   "_esc__2_216_esc__2_setup__Q24zNPC6shieldFv__WEAK")
 
 // func_8012CA8C
-#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s", "_esc__2_216_esc__2_update__Q24zNPC6shieldFf")
+#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s",                                                 \
+                   "_esc__2_216_esc__2_update__Q24zNPC6shieldFf__WEAK")
 
 // func_8012CA94
-#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s", "_esc__2_216_esc__2_kill__Q24zNPC6shieldFv")
+#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s",                                                 \
+                   "_esc__2_216_esc__2_kill__Q24zNPC6shieldFv__WEAK")
 
 // func_8012CA9C
 #pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s",                                                 \
-                   "_esc__2_216_esc__2_damage__Q24zNPC6shieldFR17zCombatDamageInfo")
+                   "_esc__2_216_esc__2_damage__Q24zNPC6shieldFR17zCombatDamageInfo__WEAK")
 
 // func_8012CAA4
-#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s", "_esc__2_216_esc__2_getName__Q24zNPC6shieldFv")
+#pragma GLOBAL_ASM("asm/GAME/zNPCMeleeShielded.s",                                                 \
+                   "_esc__2_216_esc__2_getName__Q24zNPC6shieldFv__WEAK")

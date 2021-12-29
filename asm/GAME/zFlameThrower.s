@@ -264,33 +264,33 @@ radius_modifier:
 __vt__12flamethrower:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801A328C
-	.4byte 0x801A3290
-	.4byte 0x801A3294
-	.4byte 0x801A0CD4
-	.4byte 0x801A329C
-	.4byte 0x801A32A0
+	.4byte render__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_CFv
+	.4byte post_render_2d__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_CFv
+	.4byte post_render_3d__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_CFv
+	.4byte update__12flamethrowerFf
+	.4byte destroy__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_Fv
+	.4byte reset__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_Fv
 .global __vt__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_
 __vt__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801A328C
-	.4byte 0x801A3290
-	.4byte 0x801A3294
-	.4byte 0x801A3298
-	.4byte 0x801A329C
-	.4byte 0x801A32A0
+	.4byte render__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_CFv
+	.4byte post_render_2d__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_CFv
+	.4byte post_render_3d__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_CFv
+	.4byte update__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_Ff
+	.4byte destroy__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_Fv
+	.4byte reset__Q21z30lightweight_esc__0_12flamethrower_esc__4_10_esc__1_Fv
 .global __vt__Q21z37lightweight_system_esc__0_12flamethrower_esc__4_10_esc__1_
 __vt__Q21z37lightweight_system_esc__0_12flamethrower_esc__4_10_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801A330C
-	.4byte 0x801A32A4
-	.4byte 0x801A349C
-	.4byte 0x801A3420
-	.4byte 0x801A33AC
-	.4byte 0x801A3330
-	.4byte 0x801A3520
+	.4byte scene_setup__Q21z37lightweight_system_esc__0_12flamethrower_esc__4_10_esc__1_Fv
+	.4byte reset__Q21z37lightweight_system_esc__0_12flamethrower_esc__4_10_esc__1_Fv
+	.4byte update__Q21z37lightweight_system_esc__0_12flamethrower_esc__4_10_esc__1_Ff
+	.4byte render__Q21z37lightweight_system_esc__0_12flamethrower_esc__4_10_esc__1_CFv
+	.4byte post_render_2d__Q21z37lightweight_system_esc__0_12flamethrower_esc__4_10_esc__1_CFv
+	.4byte post_render_3d__Q21z37lightweight_system_esc__0_12flamethrower_esc__4_10_esc__1_CFv
+	.4byte exit__Q21z37lightweight_system_esc__0_12flamethrower_esc__4_10_esc__1_Fv
 	.4byte 0x00000000
 
 .section .sdata2

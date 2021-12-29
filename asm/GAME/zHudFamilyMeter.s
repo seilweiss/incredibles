@@ -26,14 +26,14 @@ fMaxHealthBar__4zHud:
 __vt__Q24zHud11FamilyMeter:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800D1660
-	.4byte 0x801F3994
-	.4byte 0x801F3CDC
-	.4byte 0x801F3CD8
-	.4byte 0x801F3CE0
-	.4byte 0x801F3D30
-	.4byte 0x800D165C
-	.4byte 0x801F395C
+	.4byte init__Q24zHud11hud_elementFv
+	.4byte setup__Q24zHud11FamilyMeterFv
+	.4byte update__Q24zHud11FamilyMeterFf
+	.4byte destroy__Q24zHud11FamilyMeterFv
+	.4byte show__Q24zHud11FamilyMeterFv
+	.4byte hide__Q24zHud11FamilyMeterFv
+	.4byte handle_event__Q24zHud11hud_elementFP5xBaseUiPCfP5xBaseUi
+	.4byte reset__Q24zHud11FamilyMeterFv
 	.4byte 0x00000000
 
 .section .sdata2

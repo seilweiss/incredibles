@@ -153,13 +153,13 @@ lbl_803D8ADC:
 __vt__10zCamPlayer:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8008959C
-	.4byte 0x80010314
-	.4byte 0x80089660
-	.4byte 0x8000E648
-	.4byte 0x800896B8
-	.4byte 0x8000EDCC
-	.4byte 0x80010318
+	.4byte create__10zCamPlayerFv
+	.4byte destroy__4xCamFv
+	.4byte start__10zCamPlayerFv
+	.4byte stop__4xCamFv
+	.4byte update__10zCamPlayerFR6xScenef
+	.4byte get_next__4xCamFv
+	.4byte config_follow__4xCamFv
 	.4byte 0x00000000
 
 .section .sdata2

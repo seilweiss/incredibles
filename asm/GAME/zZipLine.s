@@ -27,13 +27,13 @@ lbl_803D8A04:
 __vt__11zZipLineCam:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80083FC8
-	.4byte 0x80010314
-	.4byte 0x80084018
-	.4byte 0x8000E648
-	.4byte 0x80084120
-	.4byte 0x8000EDCC
-	.4byte 0x80084440
+	.4byte create__11zZipLineCamFv
+	.4byte destroy__4xCamFv
+	.4byte start__11zZipLineCamFv
+	.4byte stop__4xCamFv
+	.4byte update__11zZipLineCamFR6xScenef
+	.4byte get_next__4xCamFv
+	.4byte config_follow__11zZipLineCamFv
 	.4byte 0x00000000
 
 .section .sdata2

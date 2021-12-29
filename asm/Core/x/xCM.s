@@ -105,7 +105,7 @@ lbl_803D85CC:
 
 .global KEY
 KEY:
-	.4byte 0x802D18C0
+	.4byte _esc__2_stringBase0_2
 .global destWidth
 destWidth:
 	.4byte 0x3F800000

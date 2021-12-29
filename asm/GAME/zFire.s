@@ -147,7 +147,7 @@ _esc__2_738_0:
 .global short_card_info__5zFire
 short_card_info__5zFire:
 	.4byte 0x00000001
-	.4byte 0x802DD398
+	.4byte _esc__2_stringBase0_55
 	.4byte 0x00000000
 	.4byte 0x00000008
 	.4byte 0x00000004
@@ -156,7 +156,7 @@ short_card_info__5zFire:
 .global tall_card_info__5zFire
 tall_card_info__5zFire:
 	.4byte 0x00000001
-	.4byte 0x802DD3AA
+	.4byte _esc__2_stringBase0_55+18
 	.4byte 0x00000000
 	.4byte 0x00000008
 	.4byte 0x00000004
@@ -212,7 +212,7 @@ _esc__2_1300:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803D3BB4
+	.4byte debug_props_esc__7_1299
 .global _esc__2_1386_1
 _esc__2_1386_1:
 	.4byte 0x437FFD71

@@ -30,7 +30,7 @@ _esc__2_231:
 	.4byte 0x00000010
 	.4byte 0x00000000
 	.4byte 0x82000008
-	.4byte 0x801FA974
+	.4byte __dt__26__partial_array_destructorFv
 .global _esc__2_239
 _esc__2_239:
 	.4byte 0x18080000
@@ -42,7 +42,7 @@ _esc__2_262:
 	.4byte 0x00000010
 	.4byte 0x00000000
 	.4byte 0x82000008
-	.4byte 0x801FA974
+	.4byte __dt__26__partial_array_destructorFv
 .global _esc__2_346
 _esc__2_346:
 	.4byte 0x00080000

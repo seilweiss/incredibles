@@ -12,133 +12,133 @@ electricity_config__4zNPC:
 __vt__Q24zNPC14melee_shielded:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8012C96C
-	.4byte 0x80188AB8
-	.4byte 0x8012B5D4
-	.4byte 0x800FE2FC
-	.4byte 0x8012C920
-	.4byte 0x8012B780
-	.4byte 0x801890BC
-	.4byte 0x8012B68C
-	.4byte 0x800FDEC8
-	.4byte 0x800FEABC
-	.4byte 0x800FEAC0
-	.4byte 0x800FE0A8
-	.4byte 0x80188D54
-	.4byte 0x80188DB0
-	.4byte 0x8012C9C4
-	.4byte 0x801210A4
-	.4byte 0x80188A88
-	.4byte 0x80188794
-	.4byte 0x801887C4
-	.4byte 0x8012C8D4
-	.4byte 0x8012B840
-	.4byte 0x80189C68
-	.4byte 0x80095948
-	.4byte 0x800FB080
-	.4byte 0x8018898C
-	.4byte 0x80188814
-	.4byte 0x80188928
-	.4byte 0x80188EC4
-	.4byte 0x80188FC4
-	.4byte 0x8012C9D4
-	.4byte 0x80189064
-	.4byte 0x8012B84C
-	.4byte 0x801210AC
-	.4byte 0x801210B4
-	.4byte 0x800FF4B4
-	.4byte 0x8011F9F8
-	.4byte 0x800FF3F0
-	.4byte 0x801210BC
-	.4byte 0x801210C4
-	.4byte 0x80100600
-	.4byte 0x801210CC
-	.4byte 0x8011F1D0
-	.4byte 0x80189118
-	.4byte 0x80121B70
+	.4byte __dt__Q24zNPC14melee_shieldedFv
+	.4byte init_npc__Q24zNPC6commonFP9xEntAsset
+	.4byte update_npc__Q24zNPC5meleeFf
+	.4byte update_bounds__Q24zNPC4baseFv
+	.4byte setup__Q24zNPC14melee_shieldedFv
+	.4byte scene_setup__Q24zNPC15human_throwableFv
+	.4byte render_extra__Q24zNPC6commonFv
+	.4byte system_event__Q24zNPC5meleeFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte play_sound__Q24zNPC4baseFP17zAnimFxSoundGroup
+	.4byte destroy__Q24zNPC4baseFv
+	.4byte CreateAnimTable__Q24zNPC4baseFP10xAnimTable
+	.4byte change_bounds__Q24zNPC4baseFf5xVec3b
+	.4byte activate__Q24zNPC6commonFv
+	.4byte deactivate__Q24zNPC6commonFv
+	.4byte get_type_name__Q24zNPC14melee_shieldedCFv
+	.4byte BehaviorUpdate__Q24zNPC6commonFf
+	.4byte before_anim_matrices__Q24zNPC6commonFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte add_states__Q24zNPC6commonFP10xAnimTable
+	.4byte add_transitions__Q24zNPC6commonFP10xAnimTable
+	.4byte reset__Q24zNPC14melee_shieldedFv
+	.4byte get_throw_anim_code__Q24zNPC15human_throwableFv
+	.4byte render_npc__Q24zNPC6commonFv
+	.4byte static_object_carry__Q24zNPC6commonFv
+	.4byte player_orient_carry__Q24zNPC6commonFv
+	.4byte damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte deliver_damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte valid_damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte kill__Q24zNPC6commonFb
+	.4byte grabbable__Q24zNPC6commonF8GrabType
+	.4byte giveBonus__Q24zNPC14melee_shieldedFv
+	.4byte punchable__Q24zNPC6commonFv
+	.4byte culling_changed__Q24zNPC15human_throwableFv
+	.4byte get_target_ent__Q24zNPC6commonCFv
+	.4byte get_target_pos__Q24zNPC6commonCFv
+	.4byte get_target_dir__Q24zNPC6commonCFv
+	.4byte get_target_dist__Q24zNPC6commonCFv
+	.4byte get_target_dir_2d__Q24zNPC6commonCFv
+	.4byte get_target_dist_2d__Q24zNPC6commonCFv
+	.4byte get_aim_pos__Q24zNPC6commonCFv
+	.4byte get_aim_dir__Q24zNPC6commonCFv
+	.4byte get_aim_dist__Q24zNPC6commonCFv
+	.4byte get_target_priority__Q24zNPC6commonCFv
+	.4byte debug_render__Q24zNPC6commonFv
+	.4byte move__Q24zNPC6commonFv
 .global __vt__Q24zNPC14shield_protect
 __vt__Q24zNPC14shield_protect:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x8012CA0C
-	.4byte 0x800FEDDC
-	.4byte 0x80130430
-	.4byte 0x800AB4CC
-	.4byte 0x800FF328
-	.4byte 0x8012C0F8
-	.4byte 0x8012C238
-	.4byte 0x800AB4DC
-	.4byte 0x800AB4E0
-	.4byte 0x8012C64C
-	.4byte 0x8012C6EC
-	.4byte 0x800AB4E8
-	.4byte 0x800AB4EC
-	.4byte 0x800AB4F0
-	.4byte 0x800FF924
-	.4byte 0x800AB4F4
-	.4byte 0x800AB4F8
-	.4byte 0x800AB4FC
-	.4byte 0x8012CA1C
-	.4byte 0x800AB504
-	.4byte 0x800AB508
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x800AB524
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x8012C4D4
-	.4byte 0x801305A0
-	.4byte 0x80130688
-	.4byte 0x80130B80
-	.4byte 0x8013089C
-	.4byte 0x80130A24
-	.4byte 0x80130DCC
-	.4byte 0x80130CC0
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte getName__Q24zNPC14shield_protectFv
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__Q24zNPC8npc_moveFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte damage__8behaviorFR17zCombatDamageInfo
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__Q24zNPC14shield_protectFP10xAnimTable
+	.4byte add_transitions__Q24zNPC14shield_protectFP10xAnimTable
+	.4byte exit_state__8behaviorFv
+	.4byte kill__8behaviorFv
+	.4byte update__Q24zNPC14shield_protectFf
+	.4byte setup__Q24zNPC14shield_protectFv
+	.4byte exit__8behaviorFv
+	.4byte init__8behaviorFv
+	.4byte scene_setup__8behaviorFv
+	.4byte reset__Q24zNPC4moveFv
+	.4byte render__8behaviorFv
+	.4byte render_extra__8behaviorFv
+	.4byte exclusive__8behaviorFv
+	.4byte runnable__Q24zNPC14shield_protectFf
+	.4byte before_anim_matrices__8behaviorFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__8behaviorF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__8behaviorFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__Q24zNPC14shield_protectFPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
+	.4byte jump_to__Q24zNPC8npc_moveFR5xVec3fb
+	.4byte move_to__Q24zNPC8npc_moveFRC5xVec3fbbb
+	.4byte move_away_from__Q24zNPC8npc_moveFRC5xVec3f
+	.4byte physics_move__Q24zNPC8npc_moveFf
+	.4byte jump_update__Q24zNPC8npc_moveFfb
+	.4byte step_move__Q24zNPC8npc_moveFRC5xVec3ff
+	.4byte have_arrived__Q24zNPC8npc_moveCFv
 .global __vt__Q24zNPC6shield
 __vt__Q24zNPC6shield:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x8012CAA4
-	.4byte 0x800FEDDC
-	.4byte 0x800AB4C4
-	.4byte 0x8012CA9C
-	.4byte 0x800FF328
-	.4byte 0x800AB4D4
-	.4byte 0x800AB4D8
-	.4byte 0x800AB4DC
-	.4byte 0x8012CA94
-	.4byte 0x8012CA8C
-	.4byte 0x8012CA84
-	.4byte 0x800AB4E8
-	.4byte 0x800AB4EC
-	.4byte 0x800AB4F0
-	.4byte 0x8012CA7C
-	.4byte 0x800AB4F4
-	.4byte 0x800AB4F8
-	.4byte 0x8012CA74
-	.4byte 0x8012CA6C
-	.4byte 0x800AB504
-	.4byte 0x800AB508
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x800AB524
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x800FF324
-	.4byte 0x8012CA5C
-	.4byte 0x8012CA54
-	.4byte 0x8012CA4C
-	.4byte 0x8012BC34
-	.4byte 0x8012BDF0
-	.4byte 0x8012BFD4
-	.4byte 0x8012BBE0
-	.4byte 0x8012BE4C
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte _esc__2_216_esc__2_getName__Q24zNPC6shieldFv__WEAK
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__8behaviorFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte _esc__2_216_esc__2_damage__Q24zNPC6shieldFR17zCombatDamageInfo__WEAK
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__8behaviorFP10xAnimTable
+	.4byte add_transitions__8behaviorFP10xAnimTable
+	.4byte exit_state__8behaviorFv
+	.4byte _esc__2_216_esc__2_kill__Q24zNPC6shieldFv__WEAK
+	.4byte _esc__2_216_esc__2_update__Q24zNPC6shieldFf__WEAK
+	.4byte _esc__2_216_esc__2_setup__Q24zNPC6shieldFv__WEAK
+	.4byte exit__8behaviorFv
+	.4byte init__8behaviorFv
+	.4byte scene_setup__8behaviorFv
+	.4byte _esc__2_216_esc__2_reset__Q24zNPC6shieldFv__WEAK
+	.4byte render__8behaviorFv
+	.4byte render_extra__8behaviorFv
+	.4byte _esc__2_216_esc__2_exclusive__Q24zNPC6shieldFv__WEAK
+	.4byte _esc__2_216_esc__2_runnable__Q24zNPC6shieldFf__WEAK
+	.4byte before_anim_matrices__8behaviorFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__8behaviorF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__8behaviorFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
+	.4byte getName__Q24zNPC6shieldFv
+	.4byte exclusive__Q24zNPC6shieldFv
+	.4byte runnable__Q24zNPC6shieldFf
+	.4byte setup__Q24zNPC6shieldFv
+	.4byte reset__Q24zNPC6shieldFv
+	.4byte update__Q24zNPC6shieldFf
+	.4byte damage__Q24zNPC6shieldFR17zCombatDamageInfo
+	.4byte kill__Q24zNPC6shieldFv
 	.4byte 0x00000000
 
 .section .rodata
@@ -1471,43 +1471,43 @@ getName__Q24zNPC6shieldFv:
 /* 8012CA64 00129864  38 63 01 41 */	addi r3, r3, 0x141
 /* 8012CA68 00129868  4E 80 00 20 */	blr 
 
-.global _esc__2_216_esc__2_runnable__Q24zNPC6shieldFf
-_esc__2_216_esc__2_runnable__Q24zNPC6shieldFf:
+.global _esc__2_216_esc__2_runnable__Q24zNPC6shieldFf__WEAK
+_esc__2_216_esc__2_runnable__Q24zNPC6shieldFf__WEAK:
 /* 8012CA6C 0012986C  38 63 FF 28 */	addi r3, r3, -216
 /* 8012CA70 00129870  4B FF FF DC */	b runnable__Q24zNPC6shieldFf
 
-.global _esc__2_216_esc__2_exclusive__Q24zNPC6shieldFv
-_esc__2_216_esc__2_exclusive__Q24zNPC6shieldFv:
+.global _esc__2_216_esc__2_exclusive__Q24zNPC6shieldFv__WEAK
+_esc__2_216_esc__2_exclusive__Q24zNPC6shieldFv__WEAK:
 /* 8012CA74 00129874  38 63 FF 28 */	addi r3, r3, -216
 /* 8012CA78 00129878  4B FF FF DC */	b exclusive__Q24zNPC6shieldFv
 
-.global _esc__2_216_esc__2_reset__Q24zNPC6shieldFv
-_esc__2_216_esc__2_reset__Q24zNPC6shieldFv:
+.global _esc__2_216_esc__2_reset__Q24zNPC6shieldFv__WEAK
+_esc__2_216_esc__2_reset__Q24zNPC6shieldFv__WEAK:
 /* 8012CA7C 0012987C  38 63 FF 28 */	addi r3, r3, -216
 /* 8012CA80 00129880  4B FF F3 70 */	b reset__Q24zNPC6shieldFv
 
-.global _esc__2_216_esc__2_setup__Q24zNPC6shieldFv
-_esc__2_216_esc__2_setup__Q24zNPC6shieldFv:
+.global _esc__2_216_esc__2_setup__Q24zNPC6shieldFv__WEAK
+_esc__2_216_esc__2_setup__Q24zNPC6shieldFv__WEAK:
 /* 8012CA84 00129884  38 63 FF 28 */	addi r3, r3, -216
 /* 8012CA88 00129888  4B FF F1 AC */	b setup__Q24zNPC6shieldFv
 
-.global _esc__2_216_esc__2_update__Q24zNPC6shieldFf
-_esc__2_216_esc__2_update__Q24zNPC6shieldFf:
+.global _esc__2_216_esc__2_update__Q24zNPC6shieldFf__WEAK
+_esc__2_216_esc__2_update__Q24zNPC6shieldFf__WEAK:
 /* 8012CA8C 0012988C  38 63 FF 28 */	addi r3, r3, -216
 /* 8012CA90 00129890  4B FF F5 44 */	b update__Q24zNPC6shieldFf
 
-.global _esc__2_216_esc__2_kill__Q24zNPC6shieldFv
-_esc__2_216_esc__2_kill__Q24zNPC6shieldFv:
+.global _esc__2_216_esc__2_kill__Q24zNPC6shieldFv__WEAK
+_esc__2_216_esc__2_kill__Q24zNPC6shieldFv__WEAK:
 /* 8012CA94 00129894  38 63 FF 28 */	addi r3, r3, -216
 /* 8012CA98 00129898  4B FF F3 B4 */	b kill__Q24zNPC6shieldFv
 
-.global _esc__2_216_esc__2_damage__Q24zNPC6shieldFR17zCombatDamageInfo
-_esc__2_216_esc__2_damage__Q24zNPC6shieldFR17zCombatDamageInfo:
+.global _esc__2_216_esc__2_damage__Q24zNPC6shieldFR17zCombatDamageInfo__WEAK
+_esc__2_216_esc__2_damage__Q24zNPC6shieldFR17zCombatDamageInfo__WEAK:
 /* 8012CA9C 0012989C  38 63 FF 28 */	addi r3, r3, -216
 /* 8012CAA0 001298A0  4B FF F1 40 */	b damage__Q24zNPC6shieldFR17zCombatDamageInfo
 
-.global _esc__2_216_esc__2_getName__Q24zNPC6shieldFv
-_esc__2_216_esc__2_getName__Q24zNPC6shieldFv:
+.global _esc__2_216_esc__2_getName__Q24zNPC6shieldFv__WEAK
+_esc__2_216_esc__2_getName__Q24zNPC6shieldFv__WEAK:
 /* 8012CAA4 001298A4  38 63 FF 28 */	addi r3, r3, -216
 /* 8012CAA8 001298A8  4B FF FF B4 */	b getName__Q24zNPC6shieldFv
 

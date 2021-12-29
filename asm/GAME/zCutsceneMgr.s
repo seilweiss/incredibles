@@ -4,8 +4,8 @@
 
 .global cutsceneHackTable
 cutsceneHackTable:
-	.4byte 0x802DAC88
-	.4byte 0x802DAC95
+	.4byte _esc__2_stringBase0_44
+	.4byte _esc__2_stringBase0_44+13
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -51,8 +51,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DACB0
-	.4byte 0x802DAC95
+	.4byte _esc__2_stringBase0_44+40
+	.4byte _esc__2_stringBase0_44+13
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -98,8 +98,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DACBD
-	.4byte 0x802DACD1
+	.4byte _esc__2_stringBase0_44+53
+	.4byte _esc__2_stringBase0_44+73
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -145,8 +145,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DACE6
-	.4byte 0x802DACD1
+	.4byte _esc__2_stringBase0_44+94
+	.4byte _esc__2_stringBase0_44+73
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -192,8 +192,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DACF9
-	.4byte 0x802DAD08
+	.4byte _esc__2_stringBase0_44+113
+	.4byte _esc__2_stringBase0_44+128
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -239,8 +239,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAD22
-	.4byte 0x802DAD31
+	.4byte _esc__2_stringBase0_44+154
+	.4byte _esc__2_stringBase0_44+169
 	.4byte 0x00000000
 	.4byte 0x00000006
 	.4byte 0x00000000
@@ -286,8 +286,8 @@ cutsceneHackTable:
 	.4byte 0x00000002
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAD42
-	.4byte 0x802DAD52
+	.4byte _esc__2_stringBase0_44+186
+	.4byte _esc__2_stringBase0_44+202
 	.4byte 0x00000000
 	.4byte 0x00000002
 	.4byte 0x00000000
@@ -333,8 +333,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAD42
-	.4byte 0x802DAD9E
+	.4byte _esc__2_stringBase0_44+186
+	.4byte _esc__2_stringBase0_44+278
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -380,8 +380,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAD22
-	.4byte 0x802DAD9E
+	.4byte _esc__2_stringBase0_44+154
+	.4byte _esc__2_stringBase0_44+278
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -427,8 +427,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DADB8
-	.4byte 0x802DADC5
+	.4byte _esc__2_stringBase0_44+304
+	.4byte _esc__2_stringBase0_44+317
 	.4byte 0x00000000
 	.4byte 0x00000002
 	.4byte 0x00000000
@@ -474,8 +474,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DADF5
-	.4byte 0x802DAD31
+	.4byte _esc__2_stringBase0_44+365
+	.4byte _esc__2_stringBase0_44+169
 	.4byte 0x00000000
 	.4byte 0x00000002
 	.4byte 0x00000000
@@ -521,8 +521,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAE09
-	.4byte 0x802DADC5
+	.4byte _esc__2_stringBase0_44+385
+	.4byte _esc__2_stringBase0_44+317
 	.4byte 0x00000000
 	.4byte 0x00000002
 	.4byte 0x00000000
@@ -568,8 +568,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAE1D
-	.4byte 0x802DAD31
+	.4byte _esc__2_stringBase0_44+405
+	.4byte _esc__2_stringBase0_44+169
 	.4byte 0x00000000
 	.4byte 0x00000002
 	.4byte 0x00000000
@@ -615,8 +615,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAE2A
-	.4byte 0x802DAD9E
+	.4byte _esc__2_stringBase0_44+418
+	.4byte _esc__2_stringBase0_44+278
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -662,8 +662,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAE1D
-	.4byte 0x802DAD9E
+	.4byte _esc__2_stringBase0_44+405
+	.4byte _esc__2_stringBase0_44+278
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -709,8 +709,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAE35
-	.4byte 0x802DAD31
+	.4byte _esc__2_stringBase0_44+429
+	.4byte _esc__2_stringBase0_44+169
 	.4byte 0x00000000
 	.4byte 0x00000002
 	.4byte 0x00000000
@@ -756,8 +756,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAE46
-	.4byte 0x802DAD31
+	.4byte _esc__2_stringBase0_44+446
+	.4byte _esc__2_stringBase0_44+169
 	.4byte 0x00000000
 	.4byte 0x00000002
 	.4byte 0x00000000
@@ -803,8 +803,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAE2A
-	.4byte 0x802DAD31
+	.4byte _esc__2_stringBase0_44+418
+	.4byte _esc__2_stringBase0_44+169
 	.4byte 0x00000000
 	.4byte 0x00000002
 	.4byte 0x00000000
@@ -850,8 +850,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAE59
-	.4byte 0x802DAC95
+	.4byte _esc__2_stringBase0_44+465
+	.4byte _esc__2_stringBase0_44+13
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -897,8 +897,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAE66
-	.4byte 0x802DAE78
+	.4byte _esc__2_stringBase0_44+478
+	.4byte _esc__2_stringBase0_44+496
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000000
@@ -944,8 +944,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAEA6
-	.4byte 0x802DAE78
+	.4byte _esc__2_stringBase0_44+542
+	.4byte _esc__2_stringBase0_44+496
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000000
@@ -991,8 +991,8 @@ cutsceneHackTable:
 	.4byte 0x00000005
 	.4byte 0x00000006
 	.4byte 0x00000007
-	.4byte 0x802DAEBE
-	.4byte 0x802DAED0
+	.4byte _esc__2_stringBase0_44+566
+	.4byte _esc__2_stringBase0_44+584
 	.4byte 0x00000001
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -1038,8 +1038,8 @@ cutsceneHackTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802DAED9
-	.4byte 0x802DAEF0
+	.4byte _esc__2_stringBase0_44+593
+	.4byte _esc__2_stringBase0_44+616
 	.4byte 0x00000001
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -1085,8 +1085,8 @@ cutsceneHackTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802DAEFE
-	.4byte 0x802DAEF0
+	.4byte _esc__2_stringBase0_44+630
+	.4byte _esc__2_stringBase0_44+616
 	.4byte 0x00000001
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -1132,8 +1132,8 @@ cutsceneHackTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802DAF16
-	.4byte 0x802DAF29
+	.4byte _esc__2_stringBase0_44+654
+	.4byte _esc__2_stringBase0_44+673
 	.4byte 0x00000001
 	.4byte 0x00000001
 	.4byte 0x00000000

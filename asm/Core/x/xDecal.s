@@ -79,12 +79,12 @@ active_emitters_size__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
 
 .global animix_labels__6xDecal
 animix_labels__6xDecal:
-	.4byte 0x802D1984
-	.4byte 0x802D198F
-	.4byte 0x802D199C
-	.4byte 0x802D19A8
-	.4byte 0x802D19B4
-	.4byte 0x802D19BC
+	.4byte _esc__2_stringBase0_4+36
+	.4byte _esc__2_stringBase0_4+47
+	.4byte _esc__2_stringBase0_4+60
+	.4byte _esc__2_stringBase0_4+72
+	.4byte _esc__2_stringBase0_4+84
+	.4byte _esc__2_stringBase0_4+92
 
 .section .sdata2
 

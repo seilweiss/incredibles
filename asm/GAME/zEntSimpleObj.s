@@ -300,23 +300,23 @@ lbl_803D8BC0:
 __vt__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800C1F7C
-	.4byte 0x800C1F80
-	.4byte 0x800C1F84
-	.4byte 0x800C1F88
-	.4byte 0x800C1F8C
-	.4byte 0x800C1F90
+	.4byte render__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_CFv
+	.4byte post_render_2d__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_CFv
+	.4byte post_render_3d__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_CFv
+	.4byte update__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_Ff
+	.4byte destroy__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_Fv
+	.4byte reset__Q21z25lightweight_esc__0_Q21z4toss_esc__4_10_esc__1_Fv
 .global __vt__Q21z32lightweight_system_esc__0_Q21z4toss_esc__4_10_esc__1_
 __vt__Q21z32lightweight_system_esc__0_Q21z4toss_esc__4_10_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800C1F94
-	.4byte 0x800C21A8
-	.4byte 0x800C2124
-	.4byte 0x800C20A8
-	.4byte 0x800C2034
-	.4byte 0x800C1FB8
-	.4byte 0x800C2218
+	.4byte scene_setup__Q21z32lightweight_system_esc__0_Q21z4toss_esc__4_10_esc__1_Fv
+	.4byte reset__Q21z32lightweight_system_esc__0_Q21z4toss_esc__4_10_esc__1_Fv
+	.4byte update__Q21z32lightweight_system_esc__0_Q21z4toss_esc__4_10_esc__1_Ff
+	.4byte render__Q21z32lightweight_system_esc__0_Q21z4toss_esc__4_10_esc__1_CFv
+	.4byte post_render_2d__Q21z32lightweight_system_esc__0_Q21z4toss_esc__4_10_esc__1_CFv
+	.4byte post_render_3d__Q21z32lightweight_system_esc__0_Q21z4toss_esc__4_10_esc__1_CFv
+	.4byte exit__Q21z32lightweight_system_esc__0_Q21z4toss_esc__4_10_esc__1_Fv
 	.4byte 0x00000000
 
 .section .sdata2
@@ -359,10 +359,10 @@ rs01_hidden_entities__27_esc__2_unnamed_esc__2_zEntSimpleObj_cpp_esc__2_:
 .global hidden_entities__27_esc__2_unnamed_esc__2_zEntSimpleObj_cpp_esc__2_
 hidden_entities__27_esc__2_unnamed_esc__2_zEntSimpleObj_cpp_esc__2_:
 	.4byte 0x48533031
-	.4byte 0x802DC9A0
+	.4byte hs01_hidden_entities__27_esc__2_unnamed_esc__2_zEntSimpleObj_cpp_esc__2_
 	.4byte 0x000000F6
 	.4byte 0x52533031
-	.4byte 0x803D39FC
+	.4byte rs01_hidden_entities__27_esc__2_unnamed_esc__2_zEntSimpleObj_cpp_esc__2_
 	.4byte 0x00000006
 	.4byte 0x00000000
 

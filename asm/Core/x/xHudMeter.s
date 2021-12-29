@@ -57,14 +57,14 @@ tweak_pitch_scale__Q24xhud23_esc__2_unnamed_esc__2_xHudMeter_cpp_esc__2_:
 __vt__Q24xhud12meter_widget:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8003DD14
-	.4byte 0x8003E4DC
-	.4byte 0x8003E52C
-	.4byte 0x8003DD18
-	.4byte 0x8003D2C8
-	.4byte 0x8003E848
-	.4byte 0x8003D330
-	.4byte 0x8003D77C
+	.4byte destroy__Q24xhud6widgetFv
+	.4byte type__Q24xhud12meter_widgetCFv
+	.4byte is__Q24xhud12meter_widgetCFUi
+	.4byte init__Q24xhud6widgetFv
+	.4byte setup__Q24xhud6widgetFv
+	.4byte update__Q24xhud12meter_widgetFf
+	.4byte render__Q24xhud6widgetFv
+	.4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBaseUi
 	.4byte 0x00000000
 
 .section .sdata2

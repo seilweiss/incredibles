@@ -20,9 +20,9 @@ __vt__14xMemoryManager:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801CDEDC
+	.4byte DoReallocate__14xMemoryManagerFPvUiUi
 	.4byte 0x00000000
-	.4byte 0x801CDED8
+	.4byte HandleOutOfMemory__14xMemoryManagerFUiUi
 	.4byte 0x00000000
 
 .if 0

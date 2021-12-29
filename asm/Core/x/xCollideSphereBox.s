@@ -295,40 +295,40 @@ box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_:
 .global box_edges__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_
 box_edges__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_:
 	.4byte 0x00000000
-	.4byte 0x803119B8
-	.4byte 0x8031198C
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+104
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+60
 	.4byte 0x00000000
-	.4byte 0x80311960
-	.4byte 0x803119E4
-	.4byte 0x80311A4C
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+16
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+148
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+252
 	.4byte 0x00000000
-	.4byte 0x80311A78
-	.4byte 0x80311AA4
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+296
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+340
 	.4byte 0x00000000
-	.4byte 0x80311A20
-	.4byte 0x80311B38
-	.4byte 0x80311B0C
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+208
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+488
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+444
 	.4byte 0x00000000
-	.4byte 0x80311AE0
-	.4byte 0x80311B64
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+400
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+532
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80311BCC
-	.4byte 0x80311BF8
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+636
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+680
 	.4byte 0x00000000
-	.4byte 0x80311C24
-	.4byte 0x80311BA0
-	.4byte 0x80311CB8
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+724
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+592
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+872
 	.4byte 0x00000000
-	.4byte 0x80311C8C
-	.4byte 0x80311C60
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+828
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+784
 	.4byte 0x00000000
-	.4byte 0x80311CE4
-	.4byte 0x80311D4C
-	.4byte 0x80311D78
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+916
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+1020
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+1064
 	.4byte 0x00000000
-	.4byte 0x80311DA4
-	.4byte 0x80311D20
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+1108
+	.4byte box_faces__31_esc__2_unnamed_esc__2_xCollideSphereBox_cpp_esc__2_+976
 	.4byte 0x00000000
 
 .section .sdata2

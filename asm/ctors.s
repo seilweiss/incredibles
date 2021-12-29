@@ -14,4 +14,4 @@
 .section .ctors$10
 .global __init_cpp_exceptions_reference
 __init_cpp_exceptions_reference:
-	.4byte 0x801FB5C0
+	.4byte lbl_801FB5C0

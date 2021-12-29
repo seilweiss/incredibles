@@ -64,52 +64,52 @@ gRecvCB_0:
 
 .global _esc__2_128
 _esc__2_128:
-	.4byte 0x802C2DF4
-	.4byte 0x802C2D18
-	.4byte 0x802C2D28
-	.4byte 0x802C2D38
-	.4byte 0x802C2D58
-	.4byte 0x802C2D68
-	.4byte 0x802C2DF4
-	.4byte 0x802C2D48
-	.4byte 0x802C2DF4
-	.4byte 0x802C2DF4
-	.4byte 0x802C2DF4
-	.4byte 0x802C2DF4
-	.4byte 0x802C2DF4
-	.4byte 0x802C2DF4
-	.4byte 0x802C2DF4
-	.4byte 0x802C2DF4
-	.4byte 0x802C2D78
-	.4byte 0x802C2D88
-	.4byte 0x802C2D98
-	.4byte 0x802C2DA8
-	.4byte 0x802C2DF4
-	.4byte 0x802C2DF4
-	.4byte 0x802C2DF4
-	.4byte 0x802C2DE8
-	.4byte 0x802C2DB8
-	.4byte 0x802C2DC8
-	.4byte 0x802C2DD8
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+96
+	.4byte TRKDispatchMessage+112
+	.4byte TRKDispatchMessage+128
+	.4byte TRKDispatchMessage+160
+	.4byte TRKDispatchMessage+176
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+144
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+192
+	.4byte TRKDispatchMessage+208
+	.4byte TRKDispatchMessage+224
+	.4byte TRKDispatchMessage+240
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+316
+	.4byte TRKDispatchMessage+304
+	.4byte TRKDispatchMessage+256
+	.4byte TRKDispatchMessage+272
+	.4byte TRKDispatchMessage+288
 	.4byte 0x00000000
 .global _esc__2_499
 _esc__2_499:
-	.4byte 0x802C3954
-	.4byte 0x802C3974
-	.4byte 0x802C394C
-	.4byte 0x802C3974
-	.4byte 0x802C395C
-	.4byte 0x802C3964
-	.4byte 0x802C396C
+	.4byte TRKDoWriteMemory+404
+	.4byte TRKDoWriteMemory+436
+	.4byte TRKDoWriteMemory+396
+	.4byte TRKDoWriteMemory+436
+	.4byte TRKDoWriteMemory+412
+	.4byte TRKDoWriteMemory+420
+	.4byte TRKDoWriteMemory+428
 .global _esc__2_536
 _esc__2_536:
-	.4byte 0x802C3B98
-	.4byte 0x802C3BB8
-	.4byte 0x802C3B90
-	.4byte 0x802C3BB8
-	.4byte 0x802C3BA0
-	.4byte 0x802C3BA8
-	.4byte 0x802C3BB0
+	.4byte TRKDoReadMemory+412
+	.4byte TRKDoReadMemory+444
+	.4byte TRKDoReadMemory+404
+	.4byte TRKDoReadMemory+444
+	.4byte TRKDoReadMemory+420
+	.4byte TRKDoReadMemory+428
+	.4byte TRKDoReadMemory+436
 .global gTRKRestoreFlags
 gTRKRestoreFlags:
 	.4byte 0x00000000

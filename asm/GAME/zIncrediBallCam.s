@@ -6,13 +6,13 @@
 __vt__Q212zIncrediBall6camera:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8018488C
-	.4byte 0x80010314
-	.4byte 0x80184A00
-	.4byte 0x8000E648
-	.4byte 0x801853F0
-	.4byte 0x8000EDCC
-	.4byte 0x80010318
+	.4byte create__Q212zIncrediBall6cameraFv
+	.4byte destroy__4xCamFv
+	.4byte start__Q212zIncrediBall6cameraFv
+	.4byte stop__4xCamFv
+	.4byte update__Q212zIncrediBall6cameraFR6xScenef
+	.4byte get_next__4xCamFv
+	.4byte config_follow__4xCamFv
 	.4byte 0x00000000
 
 .section .sdata2

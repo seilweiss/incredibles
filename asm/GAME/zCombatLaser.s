@@ -110,22 +110,22 @@ impact_laser_soundgroup__1z:
 __vt__Q21z5laser:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8008E060
-	.4byte 0x80094E00
-	.4byte 0x8008DFE4
-	.4byte 0x800945D0
-	.4byte 0x800945A4
-	.4byte 0x8008E15C
+	.4byte render__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_CFv
+	.4byte post_render_2d__Q21z5laserCFv
+	.4byte post_render_3d__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_CFv
+	.4byte update__Q21z5laserFf
+	.4byte destroy__Q21z5laserFv
+	.4byte reset__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv
 .global __vt__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_
 __vt__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8008E060
-	.4byte 0x800951F8
-	.4byte 0x8008DFE4
-	.4byte 0x800951FC
-	.4byte 0x80095200
-	.4byte 0x8008E15C
+	.4byte render__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_CFv
+	.4byte post_render_2d__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_CFv
+	.4byte post_render_3d__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_CFv
+	.4byte update__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Ff
+	.4byte destroy__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv
+	.4byte reset__Q21z26lightweight_esc__0_Q21z5laser_esc__4_40_esc__1_Fv
 	.4byte 0x00000000
 
 .section .sdata2

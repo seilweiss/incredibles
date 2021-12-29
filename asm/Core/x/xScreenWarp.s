@@ -79,21 +79,21 @@ render_this_frame__25_esc__2_unnamed_esc__2_xScreenWarp_cpp_esc__2_:
 
 .global common_warp_names__11xScreenWarp
 common_warp_names__11xScreenWarp:
-	.4byte 0x802D26E8
-	.4byte 0x802D26EF
-	.4byte 0x802D26F4
-	.4byte 0x802D26FB
-	.4byte 0x802D2705
-	.4byte 0x802D2712
-	.4byte 0x802D271E
+	.4byte _esc__2_stringBase0_21
+	.4byte _esc__2_stringBase0_21+7
+	.4byte _esc__2_stringBase0_21+12
+	.4byte _esc__2_stringBase0_21+19
+	.4byte _esc__2_stringBase0_21+29
+	.4byte _esc__2_stringBase0_21+42
+	.4byte _esc__2_stringBase0_21+54
 .global common_warp_animate__11xScreenWarp
 common_warp_animate__11xScreenWarp:
-	.4byte 0x8005B430
-	.4byte 0x8005B6CC
-	.4byte 0x8005B8B4
-	.4byte 0x8005BB90
-	.4byte 0x8005BED0
-	.4byte 0x8005C130
+	.4byte warp_animate_warble__25_esc__2_unnamed_esc__2_xScreenWarp_cpp_esc__2_FP5xVec2RQ211xScreenWarp6warperRC5xVec2ffff
+	.4byte warp_animate_lens__25_esc__2_unnamed_esc__2_xScreenWarp_cpp_esc__2_FP5xVec2RQ211xScreenWarp6warperRC5xVec2ffff
+	.4byte warp_animate_ripple__25_esc__2_unnamed_esc__2_xScreenWarp_cpp_esc__2_FP5xVec2RQ211xScreenWarp6warperRC5xVec2ffff
+	.4byte warp_animate_shockwave__25_esc__2_unnamed_esc__2_xScreenWarp_cpp_esc__2_FP5xVec2RQ211xScreenWarp6warperRC5xVec2ffff
+	.4byte warp_animate_heat_shimmer__25_esc__2_unnamed_esc__2_xScreenWarp_cpp_esc__2_FP5xVec2RQ211xScreenWarp6warperRC5xVec2ffff
+	.4byte warp_animate_static_lens__25_esc__2_unnamed_esc__2_xScreenWarp_cpp_esc__2_FP5xVec2RQ211xScreenWarp6warperRC5xVec2ffff
 	.4byte 0x00000000
 
 .section .sdata2

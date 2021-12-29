@@ -102,13 +102,13 @@ default_config__Q21z10uber_laser:
 	.4byte 0x40400000
 .global _esc__2_1634
 _esc__2_1634:
-	.4byte 0x801D4030
-	.4byte 0x801D4094
-	.4byte 0x801D4074
-	.4byte 0x801D40FC
-	.4byte 0x801D4114
-	.4byte 0x801D418C
-	.4byte 0x801D41D0
+	.4byte update__Q21z10uber_laserFf+704
+	.4byte update__Q21z10uber_laserFf+804
+	.4byte update__Q21z10uber_laserFf+772
+	.4byte update__Q21z10uber_laserFf+908
+	.4byte update__Q21z10uber_laserFf+932
+	.4byte update__Q21z10uber_laserFf+1052
+	.4byte update__Q21z10uber_laserFf+1120
 	.4byte 0x00000000
 
 .section .rodata
@@ -206,22 +206,22 @@ lbl_803D93D4:
 __vt__Q21z10uber_laser:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801D4534
-	.4byte 0x801D48A8
-	.4byte 0x801060D8
-	.4byte 0x801D3D70
-	.4byte 0x801D35C4
-	.4byte 0x8010624C
+	.4byte render__Q21z10uber_laserCFv
+	.4byte post_render_2d__Q21z10uber_laserCFv
+	.4byte post_render_3d__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_CFv
+	.4byte update__Q21z10uber_laserFf
+	.4byte destroy__Q21z10uber_laserFv
+	.4byte reset__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_Fv
 .global __vt__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_
 __vt__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801D4B84
-	.4byte 0x801D4B88
-	.4byte 0x801060D8
-	.4byte 0x801D4B8C
-	.4byte 0x801D4B90
-	.4byte 0x8010624C
+	.4byte render__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_CFv
+	.4byte post_render_2d__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_CFv
+	.4byte post_render_3d__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_CFv
+	.4byte update__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_Ff
+	.4byte destroy__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_Fv
+	.4byte reset__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_Fv
 
 .section .sdata2
 

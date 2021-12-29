@@ -16,27 +16,27 @@ sGameTime:
 
 .global months
 months:
-	.4byte 0x802D9079
-	.4byte 0x802D9082
-	.4byte 0x802D908C
-	.4byte 0x802D9093
-	.4byte 0x802D909A
-	.4byte 0x802D909F
-	.4byte 0x802D90A5
-	.4byte 0x802D90AB
-	.4byte 0x802D90B3
-	.4byte 0x802D90BE
-	.4byte 0x802D90C7
-	.4byte 0x802D90D1
+	.4byte _esc__2_stringBase0_32+849
+	.4byte _esc__2_stringBase0_32+858
+	.4byte _esc__2_stringBase0_32+868
+	.4byte _esc__2_stringBase0_32+875
+	.4byte _esc__2_stringBase0_32+882
+	.4byte _esc__2_stringBase0_32+887
+	.4byte _esc__2_stringBase0_32+893
+	.4byte _esc__2_stringBase0_32+899
+	.4byte _esc__2_stringBase0_32+907
+	.4byte _esc__2_stringBase0_32+918
+	.4byte _esc__2_stringBase0_32+927
+	.4byte _esc__2_stringBase0_32+937
 .global dotw
 dotw:
-	.4byte 0x802D90DB
-	.4byte 0x802D90E3
-	.4byte 0x802D90EB
-	.4byte 0x802D90F4
-	.4byte 0x802D90FF
-	.4byte 0x802D9109
-	.4byte 0x802D9111
+	.4byte _esc__2_stringBase0_32+947
+	.4byte _esc__2_stringBase0_32+955
+	.4byte _esc__2_stringBase0_32+963
+	.4byte _esc__2_stringBase0_32+972
+	.4byte _esc__2_stringBase0_32+983
+	.4byte _esc__2_stringBase0_32+993
+	.4byte _esc__2_stringBase0_32+1001
 	.4byte 0x00000000
 
 .section .sdata2

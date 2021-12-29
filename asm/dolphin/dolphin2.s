@@ -182,22 +182,22 @@ _esc__2_24:
 	.4byte 0x20202000
 .global _esc__2_344_0
 _esc__2_344_0:
-	.4byte 0x802B0E70
-	.4byte 0x802B0BE4
-	.4byte 0x802B0C84
-	.4byte 0x802B0CA8
-	.4byte 0x802B0BE4
-	.4byte 0x802B0BB8
-	.4byte 0x802B0CC8
-	.4byte 0x802B0D2C
-	.4byte 0x802B0D58
-	.4byte 0x802B0D8C
-	.4byte 0x802B0DB0
-	.4byte 0x802B0DD4
-	.4byte 0x802B0DF8
-	.4byte 0x802B0E1C
-	.4byte 0x802B0E44
-	.4byte 0x802B0CB8
+	.4byte stateBusy+760
+	.4byte stateBusy+108
+	.4byte stateBusy+268
+	.4byte stateBusy+304
+	.4byte stateBusy+108
+	.4byte stateBusy+64
+	.4byte stateBusy+336
+	.4byte stateBusy+436
+	.4byte stateBusy+480
+	.4byte stateBusy+532
+	.4byte stateBusy+568
+	.4byte stateBusy+604
+	.4byte stateBusy+640
+	.4byte stateBusy+676
+	.4byte stateBusy+716
+	.4byte stateBusy+320
 .global ImmCommand
 ImmCommand:
 	.4byte 0xFFFFFFFF
@@ -224,34 +224,34 @@ _esc__2_768:
 	.4byte 0x00000000
 .global _esc__2_907
 _esc__2_907:
-	.4byte 0x802B1B94
-	.4byte 0x802B1B94
-	.4byte 0x802B1BB4
-	.4byte 0x802B1BF8
-	.4byte 0x802B1C44
-	.4byte 0x802B1CC0
-	.4byte 0x802B1CC0
-	.4byte 0x802B1CC0
-	.4byte 0x802B1CC0
-	.4byte 0x802B1D98
-	.4byte 0x802B1D98
-	.4byte 0x802B1B94
-	.4byte 0x802B1CC0
+	.4byte DVDCancelAsync+80
+	.4byte DVDCancelAsync+80
+	.4byte DVDCancelAsync+112
+	.4byte DVDCancelAsync+180
+	.4byte DVDCancelAsync+256
+	.4byte DVDCancelAsync+380
+	.4byte DVDCancelAsync+380
+	.4byte DVDCancelAsync+380
+	.4byte DVDCancelAsync+380
+	.4byte DVDCancelAsync+596
+	.4byte DVDCancelAsync+596
+	.4byte DVDCancelAsync+80
+	.4byte DVDCancelAsync+380
 .global _esc__2_1011
 _esc__2_1011:
-	.4byte 0x802B201C
-	.4byte 0x802B2024
-	.4byte 0x802B2014
-	.4byte 0x802B2014
-	.4byte 0x802B201C
-	.4byte 0x802B201C
-	.4byte 0x802B201C
-	.4byte 0x802B201C
-	.4byte 0x802B201C
-	.4byte 0x802B2024
-	.4byte 0x802B2014
-	.4byte 0x802B2014
-	.4byte 0x802B201C
+	.4byte DVDCheckDisk+152
+	.4byte DVDCheckDisk+160
+	.4byte DVDCheckDisk+144
+	.4byte DVDCheckDisk+144
+	.4byte DVDCheckDisk+152
+	.4byte DVDCheckDisk+152
+	.4byte DVDCheckDisk+152
+	.4byte DVDCheckDisk+152
+	.4byte DVDCheckDisk+152
+	.4byte DVDCheckDisk+160
+	.4byte DVDCheckDisk+144
+	.4byte DVDCheckDisk+144
+	.4byte DVDCheckDisk+152
 .global ErrorTable
 ErrorTable:
 	.4byte 0x00000000
@@ -464,13 +464,13 @@ _esc__2_118:
 	.4byte 0x732E6300
 .global __DVDVersion
 __DVDVersion:
-	.4byte 0x8032D2B0
+	.4byte _esc__2_1_12
 .global autoInvalidation
 autoInvalidation:
 	.4byte 0x00000001
 .global checkOptionalCommand
 checkOptionalCommand:
-	.4byte 0x802AF8E4
+	.4byte defaultOptionalCommandChecker
 .global _esc__2_23
 _esc__2_23:
 	.4byte 0x6476642E

@@ -69,14 +69,14 @@ tweak_anim_time_delta__Q24xhud27_esc__2_unnamed_esc__2_xHudUnitMeter_cpp_esc__2_
 __vt__Q24xhud17unit_meter_widget:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8003ED04
-	.4byte 0x8003ED24
-	.4byte 0x8003ED74
-	.4byte 0x8003DD18
-	.4byte 0x8003EDCC
-	.4byte 0x8003EE90
-	.4byte 0x8003F090
-	.4byte 0x8003D77C
+	.4byte destroy__Q24xhud17unit_meter_widgetFv
+	.4byte type__Q24xhud17unit_meter_widgetCFv
+	.4byte is__Q24xhud17unit_meter_widgetCFUi
+	.4byte init__Q24xhud6widgetFv
+	.4byte setup__Q24xhud17unit_meter_widgetFv
+	.4byte update__Q24xhud17unit_meter_widgetFf
+	.4byte render__Q24xhud17unit_meter_widgetFv
+	.4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBaseUi
 	.4byte 0x00000000
 
 .section .sdata2
@@ -89,10 +89,10 @@ _esc__2_904_0:
 	.4byte 0x41200000
 .global _esc__2_941_0
 _esc__2_941_0:
-	.4byte 0x802D1D68
+	.4byte _esc__2_stringBase0_12+40
 .global lbl_803D25FC
 lbl_803D25FC:
-	.4byte 0x802D1D73
+	.4byte _esc__2_stringBase0_12+51
 .global _esc__2_978
 _esc__2_978:
 	.4byte 0x3B008081

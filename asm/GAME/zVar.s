@@ -31,231 +31,231 @@ buffer_esc__7_1069:
 
 .global vars__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_
 vars__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_:
-	.4byte 0x802E5D25
+	.4byte _esc__2_stringBase0_103+189
 	.4byte 0x00000009
-	.4byte 0x8016E884
-	.4byte 0x802E5D2F
+	.4byte var_text_ActivePad__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+199
 	.4byte 0x00000007
-	.4byte 0x8016DFF8
-	.4byte 0x802E5D37
+	.4byte var_text_BadCard__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+207
 	.4byte 0x00000010
-	.4byte 0x8016E078
-	.4byte 0x802E5D48
+	.4byte var_text_BadCardAvailable__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+224
 	.4byte 0x0000000D
-	.4byte 0x8016E0B4
-	.4byte 0x802E5D56
+	.4byte var_text_BadCardNeeded__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+238
 	.4byte 0x0000000B
-	.4byte 0x8016E8D0
-	.4byte 0x802E5D62
+	.4byte var_text_CurrentArea__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+250
 	.4byte 0x0000000B
-	.4byte 0x8016E900
-	.4byte 0x802E5D6E
+	.4byte var_text_CurrentDate__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+262
 	.4byte 0x0000000C
-	.4byte 0x8016E928
-	.4byte 0x802E5D7B
+	.4byte var_text_CurrentLevel__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+275
 	.4byte 0x0000000C
-	.4byte 0x8016E958
-	.4byte 0x802E5D88
+	.4byte var_text_CurrentScene__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+288
 	.4byte 0x0000000B
-	.4byte 0x8016E9AC
-	.4byte 0x802E5D94
+	.4byte var_text_CurrentTime__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+300
 	.4byte 0x00000009
-	.4byte 0x8016E3CC
-	.4byte 0x802E5D9E
+	.4byte var_text_GameSlot0__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+310
 	.4byte 0x00000009
-	.4byte 0x8016E3FC
-	.4byte 0x802E5DA8
+	.4byte var_text_GameSlot1__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+320
 	.4byte 0x00000009
-	.4byte 0x8016E42C
-	.4byte 0x802E5DB2
+	.4byte var_text_GameSlot2__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+330
 	.4byte 0x00000009
-	.4byte 0x8016E45C
-	.4byte 0x802E5DBC
+	.4byte var_text_GameSlot3__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+340
 	.4byte 0x00000009
-	.4byte 0x8016E48C
-	.4byte 0x802E5DC6
+	.4byte var_text_GameSlot4__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+350
 	.4byte 0x00000009
-	.4byte 0x8016E4BC
-	.4byte 0x802E5DD0
+	.4byte var_text_GameSlot5__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+360
 	.4byte 0x00000009
-	.4byte 0x8016E4EC
-	.4byte 0x802E5DDA
+	.4byte var_text_GameSlot6__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+370
 	.4byte 0x00000009
-	.4byte 0x8016E51C
-	.4byte 0x802E5DE4
+	.4byte var_text_GameSlot7__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+380
 	.4byte 0x0000000E
-	.4byte 0x8016EAF4
-	.4byte 0x802E5DF3
+	.4byte var_text_HitCheckpoints__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+395
 	.4byte 0x0000000C
-	.4byte 0x8016E54C
-	.4byte 0x802E5E00
+	.4byte var_text_MCAccessType__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+408
 	.4byte 0x0000000E
-	.4byte 0x8016E580
-	.4byte 0x802E5E0F
+	.4byte var_text_MCAutoSaveCard__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+423
 	.4byte 0x0000000A
-	.4byte 0x8016E80C
-	.4byte 0x802E5E1A
+	.4byte var_text_MCMaxSpace__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+434
 	.4byte 0x0000000A
-	.4byte 0x8016E848
-	.4byte 0x802E5E25
+	.4byte var_text_MCMinSpace__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+445
 	.4byte 0x00000006
-	.4byte 0x8016E78C
-	.4byte 0x802E5E2C
+	.4byte var_text_MCName__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+452
 	.4byte 0x0000000E
-	.4byte 0x8016E5C4
-	.4byte 0x802E5E3B
+	.4byte var_text_MCSelectedCard__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+467
 	.4byte 0x0000000E
-	.4byte 0x8016E63C
-	.4byte 0x802E5E4A
+	.4byte var_text_MCSelectedGame__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+482
 	.4byte 0x0000000E
-	.4byte 0x8016E9D4
-	.4byte 0x802E5E59
+	.4byte var_text_PlayerPosition__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+497
 	.4byte 0x0000000C
-	.4byte 0x8016EA48
-	.4byte 0x802E5E66
+	.4byte var_text_SelectedArea__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+510
 	.4byte 0x0000000D
-	.4byte 0x8016EA6C
-	.4byte 0x802E5E74
+	.4byte var_text_SoundFXVolume__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+524
 	.4byte 0x00000010
-	.4byte 0x8016EAB0
-	.4byte 0x802E5E85
+	.4byte var_text_SoundMusicVolume__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+541
 	.4byte 0x0000000E
-	.4byte 0x8016E680
-	.4byte 0x802E5E94
+	.4byte var_text_SpaceAvailable__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+556
 	.4byte 0x00000014
-	.4byte 0x8016E6C0
-	.4byte 0x802E5EA9
+	.4byte var_text_SpaceAvailableString__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+577
 	.4byte 0x0000000B
-	.4byte 0x8016E74C
-	.4byte 0x802E5EB5
+	.4byte var_text_SpaceNeeded__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
+	.4byte _esc__2_stringBase0_103+589
 	.4byte 0x00000010
-	.4byte 0x8016EB34
+	.4byte var_text_TotalCheckpoints__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
 .global zVarEntryTable
 zVarEntryTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802E5ECA
-	.4byte 0x8016ED54
+	.4byte _esc__2_stringBase0_103+610
+	.4byte zVarEntryCB_SndMode__FPv
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x802E5ED5
-	.4byte 0x8016ED6C
+	.4byte _esc__2_stringBase0_103+621
+	.4byte zVarEntryCB_SndMusicVol__FPv
 	.4byte 0x00000002
 	.4byte 0x00000000
-	.4byte 0x802E5EE2
-	.4byte 0x8016EDA4
+	.4byte _esc__2_stringBase0_103+634
+	.4byte zVarEntryCB_SndFXVol__FPv
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x802E5EED
-	.4byte 0x8016EDDC
+	.4byte _esc__2_stringBase0_103+645
+	.4byte zVarEntryCB_MCAvailable__FPv
 	.4byte 0x00000004
 	.4byte 0x00000000
-	.4byte 0x802E5F03
-	.4byte 0x8016EE94
+	.4byte _esc__2_stringBase0_103+667
+	.4byte zVarEntryCB_VibrationOn__FPv
 	.4byte 0x00000005
 	.4byte 0x00000000
-	.4byte 0x802E5F13
-	.4byte 0x8016EEA8
+	.4byte _esc__2_stringBase0_103+683
+	.4byte zVarEntryCB_SubtitlesOn__FPv
 	.4byte 0x00000006
 	.4byte 0x00000000
-	.4byte 0x802E5F29
-	.4byte 0x8016EEBC
+	.4byte _esc__2_stringBase0_103+705
+	.4byte zVarEntryCB_CurrentSceneLetter__FPv
 	.4byte 0x00000007
 	.4byte 0x00000000
-	.4byte 0x802E5F39
-	.4byte 0x8016EF40
+	.4byte _esc__2_stringBase0_103+721
+	.4byte zVarEntryCB_CurrentRoom__FPv
 	.4byte 0x00000008
 	.4byte 0x00000000
-	.4byte 0x802E5F3E
-	.4byte 0x8016EFEC
+	.4byte _esc__2_stringBase0_103+726
+	.4byte zVarEntryCB_Date__FPv
 	.4byte 0x00000009
 	.4byte 0x00000000
-	.4byte 0x802E5F4B
-	.4byte 0x8016F020
+	.4byte _esc__2_stringBase0_103+739
+	.4byte zVarEntryCB_Hour__FPv
 	.4byte 0x0000000A
 	.4byte 0x00000000
-	.4byte 0x802E5F58
-	.4byte 0x8016F040
+	.4byte _esc__2_stringBase0_103+752
+	.4byte zVarEntryCB_Minute__FPv
 	.4byte 0x0000000B
 	.4byte 0x00000000
-	.4byte 0x802E5F67
-	.4byte 0x8016F060
+	.4byte _esc__2_stringBase0_103+767
+	.4byte zVarEntryCB_CounterValue__FPv
 	.4byte 0x0000000C
 	.4byte 0x00000000
-	.4byte 0x802E5F75
-	.4byte 0x8016F068
+	.4byte _esc__2_stringBase0_103+781
+	.4byte zVarEntryCB_IsEnabled__FPv
 	.4byte 0x0000000D
 	.4byte 0x00000000
-	.4byte 0x802E5F8E
-	.4byte 0x8016F094
+	.4byte _esc__2_stringBase0_103+806
+	.4byte zVarEntryCB_IsVisible__FPv
 	.4byte 0x0000000E
 	.4byte 0x00000000
-	.4byte 0x802E5FA7
-	.4byte 0x8016F0BC
+	.4byte _esc__2_stringBase0_103+831
+	.4byte zVarEntryCB_TimerSecondsLeftValue__FPv
 	.4byte 0x0000000F
 	.4byte 0x00000000
-	.4byte 0x802E5FBA
-	.4byte 0x8016F0F4
+	.4byte _esc__2_stringBase0_103+850
+	.4byte zVarEntryCB_TimerMilliSecondsLeftValue__FPv
 	.4byte 0x00000010
 	.4byte 0x00000000
-	.4byte 0x802E5FD2
-	.4byte 0x8016F134
+	.4byte _esc__2_stringBase0_103+874
+	.4byte zVarEntryCB_IsMNUS__FPv
 	.4byte 0x00000011
 	.4byte 0x00000000
-	.4byte 0x802E5FDB
-	.4byte 0x8016F1E0
+	.4byte _esc__2_stringBase0_103+883
+	.4byte zVarEntryCB_DemoType__FPv
 	.4byte 0x00000012
 	.4byte 0x00000000
-	.4byte 0x802E5FE5
-	.4byte 0x8016F1F0
+	.4byte _esc__2_stringBase0_103+893
+	.4byte zVarEntryCB_IsReferenceNULL__FPv
 	.4byte 0x00000013
 	.4byte 0x00000000
-	.4byte 0x802E5FF8
-	.4byte 0x8016F218
+	.4byte _esc__2_stringBase0_103+912
+	.4byte zVarEntryCB_HitCheckpoints__FPv
 	.4byte 0x00000014
 	.4byte 0x00000000
-	.4byte 0x802E6008
-	.4byte 0x8016F238
+	.4byte _esc__2_stringBase0_103+928
+	.4byte zVarEntryCB_TotalCheckpoints__FPv
 	.4byte 0x00000015
 	.4byte 0x00000000
-	.4byte 0x802E601A
-	.4byte 0x8016F258
+	.4byte _esc__2_stringBase0_103+946
+	.4byte zVarEntryCB_PauseType__FPv
 	.4byte 0x00000016
 	.4byte 0x00000000
-	.4byte 0x802E602F
-	.4byte 0x8016F158
+	.4byte _esc__2_stringBase0_103+967
+	.4byte zVarEntryCB_UserSelectsYes__FPv
 	.4byte 0x00000017
 	.4byte 0x00000000
-	.4byte 0x802E6041
-	.4byte 0x8016F174
+	.4byte _esc__2_stringBase0_103+985
+	.4byte zVarEntryCB_UserSelectsNo__FPv
 	.4byte 0x00000018
 	.4byte 0x00000000
-	.4byte 0x802E604F
-	.4byte 0x8016F194
+	.4byte _esc__2_stringBase0_103+999
+	.4byte zVarEntryCB_UserSelectsBack__FPv
 	.4byte 0x0000001D
 	.4byte 0x00000000
-	.4byte 0x802E605F
-	.4byte 0x8016F200
+	.4byte _esc__2_stringBase0_103+1015
+	.4byte zVarEntryCB_StriaghtToMainMenuOnXbox__FPv
 	.4byte 0x00000019
 	.4byte 0x00000000
-	.4byte 0x802E6078
-	.4byte 0x8016F1B4
+	.4byte _esc__2_stringBase0_103+1040
+	.4byte zVarEntryCB_PlayerType__FPv
 	.4byte 0x0000001A
 	.4byte 0x00000000
-	.4byte 0x802E6084
-	.4byte 0x8016DFE0
+	.4byte _esc__2_stringBase0_103+1052
+	.4byte zVarEntryCB_IsSignedIn__FPv
 	.4byte 0x0000001B
 	.4byte 0x00000000
-	.4byte 0x802E609E
-	.4byte 0x8016DFE8
+	.4byte _esc__2_stringBase0_103+1078
+	.4byte zVarEntryCB_PendingFriendRequest__FPv
 	.4byte 0x0000001C
 	.4byte 0x00000000
-	.4byte 0x802E60B6
-	.4byte 0x8016DFF0
+	.4byte _esc__2_stringBase0_103+1102
+	.4byte zVarEntryCB_PendingGameInvite__FPv
 	.4byte 0x0000001E
 	.4byte 0x00000000
-	.4byte 0x802E60CB
-	.4byte 0x8016F278
+	.4byte _esc__2_stringBase0_103+1123
+	.4byte zVarEntryCB_ShowEnglishVideos__FPv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -732,9 +732,9 @@ _esc__2_1003_4:
 
 .global var_tag_esc__7_1220
 var_tag_esc__7_1220:
-	.4byte 0x802E5EC6
+	.4byte _esc__2_stringBase0_103+606
 	.4byte 0x00000003
-	.4byte 0x8016EBFC
+	.4byte parse_tag_var__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

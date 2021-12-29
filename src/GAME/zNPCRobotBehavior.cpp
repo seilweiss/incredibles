@@ -428,11 +428,12 @@
 
 // func_80180E68
 #pragma GLOBAL_ASM("asm/GAME/zNPCRobotBehavior.s",                                                 \
-                   "_esc__2_16_esc__2_collided__Q24zNPC12ball_physicsFRC12xSweptSphere")
+                   "_esc__2_16_esc__2_collided__Q24zNPC12ball_physicsFRC12xSweptSphere__WEAK")
 
 // func_80180E70
-#pragma GLOBAL_ASM("asm/GAME/zNPCRobotBehavior.s",                                                 \
-                   "_esc__2_16_esc__2_collided__Q24zNPC19auto_orient_physicsFRC12xSweptSphere")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCRobotBehavior.s",                                                                \
+    "_esc__2_16_esc__2_collided__Q24zNPC19auto_orient_physicsFRC12xSweptSphere__WEAK")
 
 // func_80180E78
 #pragma GLOBAL_ASM("asm/GAME/zNPCRobotBehavior.s", "get_normal__12xBallPhysicsFv")

@@ -4,38 +4,38 @@
 
 .global _esc__2_1464
 _esc__2_1464:
-	.4byte 0x80169188
-	.4byte 0x80169230
-	.4byte 0x8016933C
-	.4byte 0x801694B8
-	.4byte 0x80169564
-	.4byte 0x8016960C
-	.4byte 0x801696B8
-	.4byte 0x80169854
+	.4byte ApplyMotion__3zUIFv+272
+	.4byte ApplyMotion__3zUIFv+440
+	.4byte ApplyMotion__3zUIFv+708
+	.4byte ApplyMotion__3zUIFv+1088
+	.4byte ApplyMotion__3zUIFv+1260
+	.4byte ApplyMotion__3zUIFv+1428
+	.4byte ApplyMotion__3zUIFv+1600
+	.4byte ApplyMotion__3zUIFv+2012
 .global __vt__3zUI
 __vt__3zUI:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8016840C
-	.4byte 0x8016A128
-	.4byte 0x8016A130
-	.4byte 0x80168624
-	.4byte 0x801686C0
-	.4byte 0x801686C4
-	.4byte 0x801687A0
-	.4byte 0x80168828
+	.4byte Blends__3zUICFv
+	.4byte IsUIText__3zUIFv
+	.4byte IsForcePreUpdate__3zUIFv
+	.4byte DoInit__3zUIFv
+	.4byte DoSetup__3zUIFv
+	.4byte DoReset__3zUIFv
+	.4byte DoResetMotion__3zUIFv
+	.4byte DoHandleEvent__3zUIFP5xBaseUiPCfP5xBaseUi
 	.4byte 0x00000000
-	.4byte 0x80168BD4
-	.4byte 0x80168EA4
-	.4byte 0x80169AE0
-	.4byte 0x80169B7C
-	.4byte 0x80169E38
-	.4byte 0x80169E98
-	.4byte 0x80169F90
-	.4byte 0x8016A02C
-	.4byte 0x80169EF8
-	.4byte 0x80169F48
+	.4byte DoUpdate__3zUIFf
+	.4byte DoExit__3zUIFv
+	.4byte DoInitMotion__3zUIFv
+	.4byte DoApplyMotionFrame__3zUIFPC14zUIMotionFrame
+	.4byte FocusOn__3zUIFv
+	.4byte FocusOff__3zUIFv
+	.4byte Select__3zUIFv
+	.4byte Unselect__3zUIFv
+	.4byte Visible__3zUIFv
+	.4byte Invisible__3zUIFv
 
 .section .sbss
 

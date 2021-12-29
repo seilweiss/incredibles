@@ -238,57 +238,57 @@ rotatebuf_esc__7_964:
 	.4byte 0x00000000
 .global errmsgs_esc__7_1546
 errmsgs_esc__7_1546:
-	.4byte 0x802D89EC
-	.4byte 0x802D89FD
-	.4byte 0x802D8A19
-	.4byte 0x802D8A42
-	.4byte 0x802D8A4E
-	.4byte 0x802D8A73
-	.4byte 0x802D8A9E
-	.4byte 0x802D8ADC
-	.4byte 0x802D8B0C
-	.4byte 0x802D8B4D
-	.4byte 0x802D8B6C
-	.4byte 0x802D8B9C
-	.4byte 0x802D8BCC
-	.4byte 0x802D8BE6
-	.4byte 0x802D8C00
-	.4byte 0x802D8C30
-	.4byte 0x802D8C49
-	.4byte 0x802D8C63
-	.4byte 0x802D8C82
-	.4byte 0x802D8CAA
-	.4byte 0x802D8CDA
+	.4byte _esc__2_stringBase0_31+372
+	.4byte _esc__2_stringBase0_31+389
+	.4byte _esc__2_stringBase0_31+417
+	.4byte _esc__2_stringBase0_31+458
+	.4byte _esc__2_stringBase0_31+470
+	.4byte _esc__2_stringBase0_31+507
+	.4byte _esc__2_stringBase0_31+550
+	.4byte _esc__2_stringBase0_31+612
+	.4byte _esc__2_stringBase0_31+660
+	.4byte _esc__2_stringBase0_31+725
+	.4byte _esc__2_stringBase0_31+756
+	.4byte _esc__2_stringBase0_31+804
+	.4byte _esc__2_stringBase0_31+852
+	.4byte _esc__2_stringBase0_31+878
+	.4byte _esc__2_stringBase0_31+904
+	.4byte _esc__2_stringBase0_31+952
+	.4byte _esc__2_stringBase0_31+977
+	.4byte _esc__2_stringBase0_31+1003
+	.4byte _esc__2_stringBase0_31+1034
+	.4byte _esc__2_stringBase0_31+1074
+	.4byte _esc__2_stringBase0_31+1122
 	.4byte 0x00000000
 .global _esc__2_2211
 _esc__2_2211:
-	.4byte 0x8007E594
-	.4byte 0x8007E580
-	.4byte 0x8007E580
-	.4byte 0x8007E594
-	.4byte 0x8007E56C
-	.4byte 0x8007E56C
-	.4byte 0x8007E58C
-	.4byte 0x8007E560
-	.4byte 0x8007E560
-	.4byte 0x8007E594
-	.4byte 0x8007E594
+	.4byte iSG_mc_fopen__FP19st_ISG_MEMCARD_DATAPCci13en_ISG_IOMODEP14en_ASYNC_OPERR+284
+	.4byte iSG_mc_fopen__FP19st_ISG_MEMCARD_DATAPCci13en_ISG_IOMODEP14en_ASYNC_OPERR+264
+	.4byte iSG_mc_fopen__FP19st_ISG_MEMCARD_DATAPCci13en_ISG_IOMODEP14en_ASYNC_OPERR+264
+	.4byte iSG_mc_fopen__FP19st_ISG_MEMCARD_DATAPCci13en_ISG_IOMODEP14en_ASYNC_OPERR+284
+	.4byte iSG_mc_fopen__FP19st_ISG_MEMCARD_DATAPCci13en_ISG_IOMODEP14en_ASYNC_OPERR+244
+	.4byte iSG_mc_fopen__FP19st_ISG_MEMCARD_DATAPCci13en_ISG_IOMODEP14en_ASYNC_OPERR+244
+	.4byte iSG_mc_fopen__FP19st_ISG_MEMCARD_DATAPCci13en_ISG_IOMODEP14en_ASYNC_OPERR+276
+	.4byte iSG_mc_fopen__FP19st_ISG_MEMCARD_DATAPCci13en_ISG_IOMODEP14en_ASYNC_OPERR+232
+	.4byte iSG_mc_fopen__FP19st_ISG_MEMCARD_DATAPCci13en_ISG_IOMODEP14en_ASYNC_OPERR+232
+	.4byte iSG_mc_fopen__FP19st_ISG_MEMCARD_DATAPCci13en_ISG_IOMODEP14en_ASYNC_OPERR+284
+	.4byte iSG_mc_fopen__FP19st_ISG_MEMCARD_DATAPCci13en_ISG_IOMODEP14en_ASYNC_OPERR+284
 .global _esc__2_2533
 _esc__2_2533:
-	.4byte 0x8007EB08
-	.4byte 0x8007EB1C
-	.4byte 0x8007EB1C
-	.4byte 0x8007EB1C
-	.4byte 0x8007EB1C
-	.4byte 0x8007EB1C
-	.4byte 0x8007EB1C
-	.4byte 0x8007EB08
-	.4byte 0x8007EB1C
-	.4byte 0x8007EB1C
-	.4byte 0x8007EB1C
-	.4byte 0x8007EB14
-	.4byte 0x8007EB1C
-	.4byte 0x8007EB08
+	.4byte iSGCheckForWrongDevice__Fv+112
+	.4byte iSGCheckForWrongDevice__Fv+132
+	.4byte iSGCheckForWrongDevice__Fv+132
+	.4byte iSGCheckForWrongDevice__Fv+132
+	.4byte iSGCheckForWrongDevice__Fv+132
+	.4byte iSGCheckForWrongDevice__Fv+132
+	.4byte iSGCheckForWrongDevice__Fv+132
+	.4byte iSGCheckForWrongDevice__Fv+112
+	.4byte iSGCheckForWrongDevice__Fv+132
+	.4byte iSGCheckForWrongDevice__Fv+132
+	.4byte iSGCheckForWrongDevice__Fv+132
+	.4byte iSGCheckForWrongDevice__Fv+124
+	.4byte iSGCheckForWrongDevice__Fv+132
+	.4byte iSGCheckForWrongDevice__Fv+112
 	.4byte 0x00000000
 
 .section .rodata
@@ -6760,7 +6760,7 @@ _esc__2_1912_0:
 
 .global ISG_GC_GAMENAME
 ISG_GC_GAMENAME:
-	.4byte 0x802D8878
+	.4byte _esc__2_stringBase0_31
 .global g_legalSectSize
 g_legalSectSize:
 	.4byte 0x00002000

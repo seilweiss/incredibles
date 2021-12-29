@@ -12,42 +12,42 @@ record_esc__7_1148:
 __vt__Q24zNPC8npc_move:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x8012DF30
-	.4byte 0x800FEDDC
-	.4byte 0x80130430
-	.4byte 0x800AB4CC
-	.4byte 0x800FF328
-	.4byte 0x800AB4D4
-	.4byte 0x800AB4D8
-	.4byte 0x800AB4DC
-	.4byte 0x800AB4E0
-	.4byte 0x800AB4E4
-	.4byte 0x80130388
-	.4byte 0x800AB4E8
-	.4byte 0x800AB4EC
-	.4byte 0x800AB4F0
-	.4byte 0x800FF924
-	.4byte 0x800AB4F4
-	.4byte 0x800AB4F8
-	.4byte 0x800AB4FC
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte getName__Q24zNPC8npc_moveFv
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__Q24zNPC8npc_moveFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte damage__8behaviorFR17zCombatDamageInfo
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__8behaviorFP10xAnimTable
+	.4byte add_transitions__8behaviorFP10xAnimTable
+	.4byte exit_state__8behaviorFv
+	.4byte kill__8behaviorFv
+	.4byte update__8behaviorFf
+	.4byte setup__Q24zNPC8npc_moveFv
+	.4byte exit__8behaviorFv
+	.4byte init__8behaviorFv
+	.4byte scene_setup__8behaviorFv
+	.4byte reset__Q24zNPC4moveFv
+	.4byte render__8behaviorFv
+	.4byte render_extra__8behaviorFv
+	.4byte exclusive__8behaviorFv
 	.4byte 0x00000000
-	.4byte 0x800AB504
-	.4byte 0x800AB508
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x800AB524
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x800FF324
-	.4byte 0x801305A0
-	.4byte 0x80130688
-	.4byte 0x80130B80
-	.4byte 0x8013089C
-	.4byte 0x80130A24
-	.4byte 0x80130DCC
-	.4byte 0x80130CC0
+	.4byte before_anim_matrices__8behaviorFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__8behaviorF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__8behaviorFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
+	.4byte jump_to__Q24zNPC8npc_moveFR5xVec3fb
+	.4byte move_to__Q24zNPC8npc_moveFRC5xVec3fbbb
+	.4byte move_away_from__Q24zNPC8npc_moveFRC5xVec3f
+	.4byte physics_move__Q24zNPC8npc_moveFf
+	.4byte jump_update__Q24zNPC8npc_moveFfb
+	.4byte step_move__Q24zNPC8npc_moveFRC5xVec3ff
+	.4byte have_arrived__Q24zNPC8npc_moveCFv
 
 .section .rodata
 

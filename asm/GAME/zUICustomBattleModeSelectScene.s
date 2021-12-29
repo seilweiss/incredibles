@@ -6,46 +6,46 @@
 __vt__38zUICustomBattleModeDescriptionScroller:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801EF5AC
-	.4byte 0x801C5C78
-	.4byte 0x801EF764
-	.4byte 0x801EF60C
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__38zUICustomBattleModeDescriptionScrollerFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__38zUICustomBattleModeDescriptionScrollerFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__38zUICustomBattleModeDescriptionScrollerFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__37zUICustomBattleModeSelectSceneManager
 __vt__37zUICustomBattleModeSelectSceneManager:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801EE774
-	.4byte 0x801C5C70
-	.4byte 0x801C5C74
-	.4byte 0x801C5C78
-	.4byte 0x801EEBAC
-	.4byte 0x801EF494
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801EF84C
+	.4byte Init__37zUICustomBattleModeSelectSceneManagerFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__9zUICustomFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__37zUICustomBattleModeSelectSceneManagerFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__37zUICustomBattleModeSelectSceneManagerFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__37zUICustomBattleModeSelectSceneManagerFv
 
 .section .rodata
 

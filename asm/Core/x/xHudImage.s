@@ -4,45 +4,45 @@
 
 .global _esc__2_1007
 _esc__2_1007:
-	.4byte 0x801A6384
-	.4byte 0x801A6384
-	.4byte 0x801A6384
-	.4byte 0x801A6384
-	.4byte 0x801A6384
-	.4byte 0x801A6398
-	.4byte 0x801A63C8
-	.4byte 0x801A63A8
-	.4byte 0x801A63B8
-	.4byte 0x801A63E8
-	.4byte 0x801A63F8
-	.4byte 0x801A6408
-	.4byte 0x801A6418
-	.4byte 0x801A6428
-	.4byte 0x801A63D8
+	.4byte render__Q24xhud12image_widgetFv+904
+	.4byte render__Q24xhud12image_widgetFv+904
+	.4byte render__Q24xhud12image_widgetFv+904
+	.4byte render__Q24xhud12image_widgetFv+904
+	.4byte render__Q24xhud12image_widgetFv+904
+	.4byte render__Q24xhud12image_widgetFv+924
+	.4byte render__Q24xhud12image_widgetFv+972
+	.4byte render__Q24xhud12image_widgetFv+940
+	.4byte render__Q24xhud12image_widgetFv+956
+	.4byte render__Q24xhud12image_widgetFv+1004
+	.4byte render__Q24xhud12image_widgetFv+1020
+	.4byte render__Q24xhud12image_widgetFv+1036
+	.4byte render__Q24xhud12image_widgetFv+1052
+	.4byte render__Q24xhud12image_widgetFv+1068
+	.4byte render__Q24xhud12image_widgetFv+988
 .global _esc__2_1153
 _esc__2_1153:
-	.4byte 0x801A6EF4
-	.4byte 0x801A6E74
-	.4byte 0x801A6E48
-	.4byte 0x801A6E1C
-	.4byte 0x801A6DF0
-	.4byte 0x801A6DC4
-	.4byte 0x801A6D98
-	.4byte 0x801A6D6C
-	.4byte 0x801A6D40
-	.4byte 0x801A6D40
+	.4byte render_counter_clockwise__Q24xhud12image_widgetFUi+844
+	.4byte render_counter_clockwise__Q24xhud12image_widgetFUi+716
+	.4byte render_counter_clockwise__Q24xhud12image_widgetFUi+672
+	.4byte render_counter_clockwise__Q24xhud12image_widgetFUi+628
+	.4byte render_counter_clockwise__Q24xhud12image_widgetFUi+584
+	.4byte render_counter_clockwise__Q24xhud12image_widgetFUi+540
+	.4byte render_counter_clockwise__Q24xhud12image_widgetFUi+496
+	.4byte render_counter_clockwise__Q24xhud12image_widgetFUi+452
+	.4byte render_counter_clockwise__Q24xhud12image_widgetFUi+408
+	.4byte render_counter_clockwise__Q24xhud12image_widgetFUi+408
 .global _esc__2_1407
 _esc__2_1407:
-	.4byte 0x801A849C
-	.4byte 0x801A841C
-	.4byte 0x801A83F0
-	.4byte 0x801A83C4
-	.4byte 0x801A8398
-	.4byte 0x801A836C
-	.4byte 0x801A8340
-	.4byte 0x801A8314
-	.4byte 0x801A82E8
-	.4byte 0x801A82E8
+	.4byte render_offset_pie__Q24xhud12image_widgetFUi+964
+	.4byte render_offset_pie__Q24xhud12image_widgetFUi+836
+	.4byte render_offset_pie__Q24xhud12image_widgetFUi+792
+	.4byte render_offset_pie__Q24xhud12image_widgetFUi+748
+	.4byte render_offset_pie__Q24xhud12image_widgetFUi+704
+	.4byte render_offset_pie__Q24xhud12image_widgetFUi+660
+	.4byte render_offset_pie__Q24xhud12image_widgetFUi+616
+	.4byte render_offset_pie__Q24xhud12image_widgetFUi+572
+	.4byte render_offset_pie__Q24xhud12image_widgetFUi+528
+	.4byte render_offset_pie__Q24xhud12image_widgetFUi+528
 	.4byte 0x00000000
 
 .section .sbss
@@ -117,14 +117,14 @@ lbl_803D92F4:
 __vt__Q24xhud12image_widget:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801A5DE8
-	.4byte 0x801A5E08
-	.4byte 0x801A5E48
-	.4byte 0x8003DD18
-	.4byte 0x8003D2C8
-	.4byte 0x801A5EA0
-	.4byte 0x801A5FFC
-	.4byte 0x8003D77C
+	.4byte destroy__Q24xhud12image_widgetFv
+	.4byte type__Q24xhud12image_widgetCFv
+	.4byte is__Q24xhud12image_widgetCFUi
+	.4byte init__Q24xhud6widgetFv
+	.4byte setup__Q24xhud6widgetFv
+	.4byte update__Q24xhud12image_widgetFf
+	.4byte render__Q24xhud12image_widgetFv
+	.4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBaseUi
 
 .section .sdata2
 

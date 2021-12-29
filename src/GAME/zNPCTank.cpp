@@ -290,7 +290,8 @@
                    "done_lobbing__Q24zNPC8tank_lobFP15xAnimTransitionP11xAnimSingle")
 
 // func_8013978C
-#pragma GLOBAL_ASM("asm/GAME/zNPCTank.s", "get__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_FUi")
+#pragma GLOBAL_ASM("asm/GAME/zNPCTank.s",                                                          \
+                   "get__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_FUi")
 
 // func_801397C4
 #pragma GLOBAL_ASM("asm/GAME/zNPCTank.s",                                                          \
@@ -502,8 +503,9 @@
 #pragma GLOBAL_ASM("asm/GAME/zNPCTank.s", "__ct__Q24zNPC10tank_sleepFv")
 
 // func_8013B27C
-#pragma GLOBAL_ASM("asm/GAME/zNPCTank.s",                                                          \
-                   "__ct__Q24zNPC9tank_beamFRQ24zNPC32bone_container_esc__0_Q24zNPC8aim_bone_esc__1_")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCTank.s",                                                                         \
+    "__ct__Q24zNPC9tank_beamFRQ24zNPC32bone_container_esc__0_Q24zNPC8aim_bone_esc__1_")
 
 // func_8013B2C8
 #pragma GLOBAL_ASM("asm/GAME/zNPCTank.s", "__ct__Q24zNPC11tank_attackFv")
@@ -702,13 +704,17 @@
 #pragma GLOBAL_ASM("asm/GAME/zNPCTank.s", "is_valid_bone__Q24zNPC8aim_boneFPQ24zNPC6commoni")
 
 // func_8013C418
-#pragma GLOBAL_ASM("asm/GAME/zNPCTank.s", "_esc__2_88_esc__2_start_attack__Q24zNPC9tank_beamFf")
+#pragma GLOBAL_ASM("asm/GAME/zNPCTank.s",                                                          \
+                   "_esc__2_88_esc__2_start_attack__Q24zNPC9tank_beamFf__WEAK")
 
 // func_8013C420
-#pragma GLOBAL_ASM("asm/GAME/zNPCTank.s", "_esc__2_52_esc__2_start_attack__Q24zNPC17tank_flamethrowerFf")
+#pragma GLOBAL_ASM("asm/GAME/zNPCTank.s",                                                          \
+                   "_esc__2_52_esc__2_start_attack__Q24zNPC17tank_flamethrowerFf__WEAK")
 
 // func_8013C428
-#pragma GLOBAL_ASM("asm/GAME/zNPCTank.s", "_esc__2_156_esc__2_start_attack__Q24zNPC8tank_lobFf")
+#pragma GLOBAL_ASM("asm/GAME/zNPCTank.s",                                                          \
+                   "_esc__2_156_esc__2_start_attack__Q24zNPC8tank_lobFf__WEAK")
 
 // func_8013C430
-#pragma GLOBAL_ASM("asm/GAME/zNPCTank.s", "_esc__2_160_esc__2_start_attack__Q24zNPC17tank_laser_systemFf")
+#pragma GLOBAL_ASM("asm/GAME/zNPCTank.s",                                                          \
+                   "_esc__2_160_esc__2_start_attack__Q24zNPC17tank_laser_systemFf__WEAK")

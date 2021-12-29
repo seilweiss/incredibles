@@ -64,13 +64,13 @@ shootingStateAnims__7zTurret:
 __vt__13zTurretCamera:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8000E958
-	.4byte 0x80010314
-	.4byte 0x8000E638
-	.4byte 0x8000E648
-	.4byte 0x80168200
-	.4byte 0x8000EDCC
-	.4byte 0x80010318
+	.4byte create__4xCamFv
+	.4byte destroy__4xCamFv
+	.4byte start__4xCamFv
+	.4byte stop__4xCamFv
+	.4byte update__13zTurretCameraFR6xScenef
+	.4byte get_next__4xCamFv
+	.4byte config_follow__4xCamFv
 	.4byte 0x00000000
 
 .section .sdata2

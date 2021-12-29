@@ -108,59 +108,59 @@ zNPC_Omnidroid08_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.4byte 0x00000000
 .global initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x802E26D8
-	.4byte 0x803CD1C8
+	.4byte _esc__2_stringBase0_75
+	.4byte ZNPC_Default__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E26E5
-	.4byte 0x803CD1D0
+	.4byte _esc__2_stringBase0_75+13
+	.4byte ZNPC_BadGuyMedium__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E26F7
-	.4byte 0x803CD1D8
+	.4byte _esc__2_stringBase0_75+31
+	.4byte ZNPC_BadGuyShield__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E2709
-	.4byte 0x803CD1E0
+	.4byte _esc__2_stringBase0_75+49
+	.4byte ZNPC_BadGuyFat__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E2718
-	.4byte 0x803CD1E8
+	.4byte _esc__2_stringBase0_75+64
+	.4byte ZNPC_Mine__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E2722
-	.4byte 0x803CD1F0
+	.4byte _esc__2_stringBase0_75+74
+	.4byte ZNPC_Oracle__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E272E
-	.4byte 0x803CD1F8
+	.4byte _esc__2_stringBase0_75+86
+	.4byte ZNPC_Turret_Top__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E273E
-	.4byte 0x803CD200
+	.4byte _esc__2_stringBase0_75+102
+	.4byte ZNPC_Turret_Bunker__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E2751
-	.4byte 0x803CD208
+	.4byte _esc__2_stringBase0_75+121
+	.4byte ZNPC_Turret_Building__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E2766
-	.4byte 0x803CD210
+	.4byte _esc__2_stringBase0_75+142
+	.4byte ZNPC_Turret_Hoverpod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E277B
-	.4byte 0x803CD218
+	.4byte _esc__2_stringBase0_75+163
+	.4byte ZNPC_Turret_Tower__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E278D
-	.4byte 0x803CD220
+	.4byte _esc__2_stringBase0_75+181
+	.4byte ZNPC_Turret_Beach__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E279F
-	.4byte 0x803CD228
+	.4byte _esc__2_stringBase0_75+199
+	.4byte ZNPC_Car__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E27A8
-	.4byte 0x803CD230
+	.4byte _esc__2_stringBase0_75+208
+	.4byte ZNPC_Lobber__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E27B4
-	.4byte 0x803CD238
+	.4byte _esc__2_stringBase0_75+220
+	.4byte ZNPC_Velocipod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E27C3
-	.4byte 0x803CD240
+	.4byte _esc__2_stringBase0_75+235
+	.4byte ZNPC_Omnidroid08__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E27D4
-	.4byte 0x803CD248
+	.4byte _esc__2_stringBase0_75+252
+	.4byte ZNPC_BombVoyage__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
-	.4byte 0x802E27E4
-	.4byte 0x803CD250
+	.4byte _esc__2_stringBase0_75+268
+	.4byte ZNPC_BombVoyageHeli__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x00000000
 
 .section .rodata
@@ -320,11 +320,11 @@ ZNPC_Default__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.4byte 0x00000000
 .global ZNPC_BadGuyMedium__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_BadGuyMedium__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x8030B768
+	.4byte zNPC_BadGuyMedium_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x3FA66666
 .global ZNPC_BadGuyShield__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_BadGuyShield__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x8030B840
+	.4byte zNPC_BadGuyShield_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x3FA66666
 .global ZNPC_BadGuyFat__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_BadGuyFat__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
@@ -340,27 +340,27 @@ ZNPC_Oracle__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.4byte 0x3F800000
 .global ZNPC_Turret_Top__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Top__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x803CD0F0
+	.4byte zNPC_Turret_Top_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x3FD9999A
 .global ZNPC_Turret_Bunker__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Bunker__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x803CD108
+	.4byte zNPC_Turret_Bunker_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x40000000
 .global ZNPC_Turret_Building__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Building__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x803CD120
+	.4byte zNPC_Turret_Building_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x40000000
 .global ZNPC_Turret_Hoverpod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Hoverpod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x803CD138
+	.4byte zNPC_Turret_Hoverpod_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x40000000
 .global ZNPC_Turret_Tower__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Tower__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x803CD150
+	.4byte zNPC_Turret_Tower_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x40000000
 .global ZNPC_Turret_Beach__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Beach__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x803CD168
+	.4byte zNPC_Turret_Beach_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x40000000
 .global ZNPC_Car__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Car__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
@@ -368,23 +368,23 @@ ZNPC_Car__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
 	.4byte 0x3F800000
 .global ZNPC_Lobber__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Lobber__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x8030B7D4
+	.4byte zNPC_Hench_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x3FA66666
 .global ZNPC_Velocipod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Velocipod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x803CD180
+	.4byte zNPC_Velocipod_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x3FA66666
 .global ZNPC_Omnidroid08__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Omnidroid08__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x8030B894
+	.4byte zNPC_Omnidroid08_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x40A00000
 .global ZNPC_BombVoyage__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_BombVoyage__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x803CD198
+	.4byte zNPC_BombVoyage_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x3F800000
 .global ZNPC_BombVoyageHeli__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_BombVoyageHeli__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.4byte 0x803CD1B0
+	.4byte zNPC_BombVoyageHeli_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 	.4byte 0x40A00000
 
 .if 0

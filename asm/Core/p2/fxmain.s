@@ -20,7 +20,7 @@ FxFrameArray:
 	.4byte 0x00000000
 .global EffectOpenFunctions
 EffectOpenFunctions:
-	.4byte 0x801D8064
+	.4byte FxEMBMOpen__Fv
 	.4byte 0x00000000
 
 .if 0

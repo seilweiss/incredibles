@@ -4,36 +4,36 @@
 
 .global _esc__2_1230
 _esc__2_1230:
-	.4byte 0x80146B78
-	.4byte 0x80146C7C
-	.4byte 0x80146C7C
-	.4byte 0x80146C7C
-	.4byte 0x80146BCC
-	.4byte 0x80146C7C
-	.4byte 0x80146C7C
-	.4byte 0x80146C7C
-	.4byte 0x80146C7C
-	.4byte 0x80146B84
-	.4byte 0x80146BD8
-	.4byte 0x80146C7C
-	.4byte 0x80146BF0
-	.4byte 0x80146C10
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+420
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+680
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+680
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+680
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+504
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+680
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+680
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+680
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+680
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+432
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+516
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+680
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+540
+	.4byte zPlatform_Reset__FP9zPlatformP6xScene+572
 .global _esc__2_1912
 _esc__2_1912:
-	.4byte 0x80148660
-	.4byte 0x80148A84
-	.4byte 0x80148A84
-	.4byte 0x80148A84
-	.4byte 0x80148680
-	.4byte 0x80148A84
-	.4byte 0x80148700
-	.4byte 0x80148A84
-	.4byte 0x80148A84
-	.4byte 0x8014866C
-	.4byte 0x801486F0
-	.4byte 0x80148798
-	.4byte 0x801489A0
-	.4byte 0x80148A68
+	.4byte zPlatform_Update__FP4xEntP6xScenef+164
+	.4byte zPlatform_Update__FP4xEntP6xScenef+1224
+	.4byte zPlatform_Update__FP4xEntP6xScenef+1224
+	.4byte zPlatform_Update__FP4xEntP6xScenef+1224
+	.4byte zPlatform_Update__FP4xEntP6xScenef+196
+	.4byte zPlatform_Update__FP4xEntP6xScenef+1224
+	.4byte zPlatform_Update__FP4xEntP6xScenef+324
+	.4byte zPlatform_Update__FP4xEntP6xScenef+1224
+	.4byte zPlatform_Update__FP4xEntP6xScenef+1224
+	.4byte zPlatform_Update__FP4xEntP6xScenef+176
+	.4byte zPlatform_Update__FP4xEntP6xScenef+308
+	.4byte zPlatform_Update__FP4xEntP6xScenef+476
+	.4byte zPlatform_Update__FP4xEntP6xScenef+996
+	.4byte zPlatform_Update__FP4xEntP6xScenef+1196
 
 .section .rodata
 

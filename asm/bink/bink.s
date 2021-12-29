@@ -228,7 +228,7 @@ LogoData:
 	.4byte 0x4B4E803C
 	.4byte 0xF91B291C
 	.4byte 0xFDB3F200
-	.4byte 0x80139664
+	.4byte antime_up__Q24zNPC8tank_lobFP15xAnimTransitionP11xAnimSinglePv+68
 	.4byte 0x9CAE6F49
 	.4byte 0xD6030048
 	.4byte 0xEF1749F2
@@ -352,7 +352,7 @@ LogoData:
 	.4byte 0x1200C812
 	.4byte 0x880BF881
 	.4byte 0x5535ACB2
-	.4byte 0x80192001
+	.4byte swept_circle_collide_mesh__Q25zDash5trackFiRC5xVec2RC5xVec2fR5xVec2RfR5xVec2Ui+65
 	.4byte 0x32BA1C3D
 	.4byte 0x8095AAAB
 	.4byte 0xF9E0EDAA
@@ -378,7 +378,7 @@ LogoData:
 	.4byte 0x2E20B380
 	.4byte 0xAC799C65
 	.4byte 0x9DAEB266
-	.4byte 0x80044802
+	.4byte find_active_node__14xResponseCurveCFfUl+42
 	.4byte 0x003FF003
 	.4byte 0x9FAD1328
 	.4byte 0x022109A1
@@ -587,9 +587,9 @@ LogoData:
 	.4byte 0x5D3D7E9D
 	.4byte 0xCE394F35
 	.4byte 0xA57E7C49
-	.4byte 0x803CB644
+	.4byte xFXanimUVScale+4
 	.4byte 0x47AF1248
-	.4byte 0x80044820
+	.4byte find_active_node__14xResponseCurveCFfUl+72
 	.4byte 0x637727E3
 	.4byte 0x9DA935FF
 	.4byte 0x025E9F5E
@@ -890,7 +890,7 @@ LogoData:
 	.4byte 0x12708A36
 	.4byte 0x74C836AD
 	.4byte 0x5C4DB71D
-	.4byte 0x8030E3A3
+	.4byte __vt__Q24zNPC12up_down_spin+75
 	.4byte 0xFE3F6F66
 	.4byte 0xF31C6030
 	.4byte 0x838646CA
@@ -1389,7 +1389,7 @@ LogoData:
 	.4byte 0x1DBD7A56
 	.4byte 0xAB735896
 	.4byte 0xF3121BB8
-	.4byte 0x80244080
+	.4byte FSOUND_SetVolume+116
 	.4byte 0xA73C6577
 	.4byte 0xFA1A006F
 	.4byte 0x0135CBAA
@@ -1449,7 +1449,7 @@ LogoData:
 	.4byte 0x663A22D5
 	.4byte 0x0E8F3819
 	.4byte 0x5F7761C8
-	.4byte 0x8009C282
+	.4byte DampenControls__13zCommonPlayerFPfPffff+6
 	.4byte 0xCD181743
 	.4byte 0xD9D174F6
 	.4byte 0xBCA8CD3C
@@ -1489,7 +1489,7 @@ LogoData:
 	.4byte 0xB5EF0C7B
 	.4byte 0xFF9FFD7D
 	.4byte 0x831C96BE
-	.4byte 0x801E9844
+	.4byte update_effect__Q24zNPC11incrediballFf+268
 	.4byte 0xB51E29C1
 	.4byte 0x01D30E0D
 	.4byte 0xC73B42FD
@@ -1768,7 +1768,7 @@ LogoData:
 	.4byte 0xB0E6B09C
 	.4byte 0xC3A19D35
 	.4byte 0xD65BC078
-	.4byte 0x802440BA
+	.4byte FSOUND_SetVolume+174
 	.4byte 0xC6AEB28A
 	.4byte 0xD3559C35
 	.4byte 0x781A6655
@@ -1874,7 +1874,7 @@ LogoData:
 	.4byte 0xB90BBF6F
 	.4byte 0xA956F4E1
 	.4byte 0x83091300
-	.4byte 0x803D0076
+	.4byte curve_esc__7_2261+2
 	.4byte 0x6067165A
 	.4byte 0x62A678F1
 	.4byte 0x9C59DE45
@@ -1975,7 +1975,7 @@ LogoData:
 	.4byte 0x4340EF03
 	.4byte 0x00005498
 	.4byte 0x00000000
-	.4byte 0x801DC89B
+	.4byte update__Q24zNPC13chopper_laserFf+11
 	.4byte 0xEDFC8A2F
 	.4byte 0xB341E377
 	.4byte 0xE28EEFB9
@@ -2097,7 +2097,7 @@ LogoData:
 	.4byte 0x8A6C5BC8
 	.4byte 0xB64521DB
 	.4byte 0x16103F81
-	.4byte 0x80381047
+	.4byte sManagerList+39759
 	.4byte 0xFC208E20
 	.4byte 0xE2880802
 	.4byte 0x11C44144
@@ -2538,7 +2538,7 @@ LogoData:
 	.4byte 0xF08DAF16
 	.4byte 0x84400864
 	.4byte 0xBBF78038
-	.4byte 0x8017F81C
+	.4byte setup__Q24zNPC14engine_exhaustFv+212
 	.4byte 0x77D78685
 	.4byte 0xDD73C05A
 	.4byte 0x3DAF0103
@@ -3161,7 +3161,7 @@ LogoData:
 	.4byte 0xD029A25D
 	.4byte 0x1CE40E6C
 	.4byte 0x9505CA5C
-	.4byte 0x80321B22
+	.4byte LogoData+13178
 	.4byte 0x075530E0
 	.4byte 0x74E8D786
 	.4byte 0xECE0CB30
@@ -3728,7 +3728,7 @@ LogoData:
 	.4byte 0x37F159AF
 	.4byte 0xCE214EBF
 	.4byte 0x823145D6
-	.4byte 0x80036E00
+	.4byte parse_tag_tex__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag+520
 	.4byte 0x603D1BDA
 	.4byte 0x205BEC12
 	.4byte 0x9EC83DF1
@@ -4935,21 +4935,21 @@ donetables:
 blits32:
 	.4byte 0x00000004
 	.4byte 0x00000002
-	.4byte 0x8020CE00
+	.4byte YUV_32_4x2_even
 	.4byte 0x00000002
-	.4byte 0x8020ED20
+	.4byte YUV_32_4x2_odd
 	.4byte 0x00000002
-	.4byte 0x8020D0BC
+	.4byte YUV_32x2_4x2_even
 	.4byte 0x00000002
-	.4byte 0x8020ED2C
-	.4byte 0x80205508
-	.4byte 0x80205600
-	.4byte 0x80204DDC
-	.4byte 0x80204EDC
-	.4byte 0x80205020
-	.4byte 0x80205124
-	.4byte 0x80205270
-	.4byte 0x8020538C
+	.4byte YUV_32x2_4x2_odd
+	.4byte dounaligned32row
+	.4byte dounaligned32col
+	.4byte dounaligned32row2w
+	.4byte dounaligned32col2w
+	.4byte dounaligned32row2h
+	.4byte dounaligned32col2h
+	.4byte dounaligned32row2wh
+	.4byte dounaligned32col2wh
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4961,21 +4961,21 @@ blits32:
 blits32a:
 	.4byte 0x00000004
 	.4byte 0x00000002
-	.4byte 0x8020DB6C
+	.4byte YUV_32a_4x2_even
 	.4byte 0x00000002
-	.4byte 0x8020ED34
+	.4byte YUV_32a_4x2_odd
 	.4byte 0x00000002
-	.4byte 0x8020DEF8
+	.4byte YUV_32ax2_4x2_even
 	.4byte 0x00000002
-	.4byte 0x8020ED38
-	.4byte 0x80205F94
-	.4byte 0x802060A0
-	.4byte 0x80205790
-	.4byte 0x802058A8
-	.4byte 0x80205A1C
-	.4byte 0x80205B38
-	.4byte 0x80205CB4
-	.4byte 0x80205DE8
+	.4byte YUV_32ax2_4x2_odd
+	.4byte dounaligned32arow
+	.4byte dounaligned32acol
+	.4byte dounaligned32arow2w
+	.4byte dounaligned32acol2w
+	.4byte dounaligned32arow2h
+	.4byte dounaligned32acol2h
+	.4byte dounaligned32arow2wh
+	.4byte dounaligned32acol2wh
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4987,21 +4987,21 @@ blits32a:
 blits16:
 	.4byte 0x00000002
 	.4byte 0x00000002
-	.4byte 0x8020D418
+	.4byte YUV_16_4x2_even
 	.4byte 0x00000002
-	.4byte 0x8020ED1C
+	.4byte YUV_16_4x2_odd
 	.4byte 0x00000002
-	.4byte 0x8020D7A4
+	.4byte YUV_16x2_4x2_even
 	.4byte 0x00000002
-	.4byte 0x8020ED24
-	.4byte 0x80206B04
-	.4byte 0x80206C24
-	.4byte 0x80206530
-	.4byte 0x80206658
-	.4byte 0x80206264
-	.4byte 0x80206390
-	.4byte 0x802067F0
-	.4byte 0x80206934
+	.4byte YUV_16x2_4x2_odd
+	.4byte dounaligned16row
+	.4byte dounaligned16col
+	.4byte dounaligned16row2w
+	.4byte dounaligned16col2w
+	.4byte dounaligned16row2h
+	.4byte dounaligned16col2h
+	.4byte dounaligned16row2wh
+	.4byte dounaligned16col2wh
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5013,21 +5013,21 @@ blits16:
 blits16a4:
 	.4byte 0x00000002
 	.4byte 0x00000002
-	.4byte 0x8020E3DC
+	.4byte YUV_16a4_4x2_even
 	.4byte 0x00000002
-	.4byte 0x8020ED30
+	.4byte YUV_16a4_4x2_odd
 	.4byte 0x00000002
-	.4byte 0x8020E85C
+	.4byte YUV_16a4x2_4x2_even
 	.4byte 0x00000002
-	.4byte 0x8020ED28
-	.4byte 0x80207804
-	.4byte 0x8020794C
-	.4byte 0x80207148
-	.4byte 0x80207298
-	.4byte 0x80206E08
-	.4byte 0x80206F5C
-	.4byte 0x8020747C
-	.4byte 0x802075E8
+	.4byte YUV_16a4x2_4x2_odd
+	.4byte dounaligned16a4row
+	.4byte dounaligned16a4col
+	.4byte dounaligned16a4row2w
+	.4byte dounaligned16a4col2w
+	.4byte dounaligned16a4row2h
+	.4byte dounaligned16a4col2h
+	.4byte dounaligned16a4row2wh
+	.4byte dounaligned16a4col2wh
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5039,21 +5039,21 @@ blits16a4:
 blitsyuy2:
 	.4byte 0x00000002
 	.4byte 0x00000002
-	.4byte 0x8020ED80
+	.4byte YUY2_4x2
 	.4byte 0x00000002
-	.4byte 0x8020ED80
+	.4byte YUY2_4x2
 	.4byte 0x00000002
-	.4byte 0x8020F044
+	.4byte YUY2_x2_4x2
 	.4byte 0x00000002
-	.4byte 0x8020F044
-	.4byte 0x80208090
-	.4byte 0x8020810C
-	.4byte 0x80207D78
-	.4byte 0x80207E18
-	.4byte 0x80207F20
-	.4byte 0x80207FA8
-	.4byte 0x80207B7C
-	.4byte 0x80207C38
+	.4byte YUY2_x2_4x2
+	.4byte dounalignedYUY2row
+	.4byte dounalignedYUY2col
+	.4byte dounalignedYUY2row2w
+	.4byte dounalignedYUY2col2w
+	.4byte dounalignedYUY2row2h
+	.4byte dounalignedYUY2col2h
+	.4byte dounalignedYUY2row2wh
+	.4byte dounalignedYUY2col2wh
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5383,22 +5383,22 @@ invertbins:
 	.4byte 0x00000000
 .global huff4decodes
 huff4decodes:
-	.4byte 0x802ED040
-	.4byte 0x802ED050
-	.4byte 0x802ED070
-	.4byte 0x802ED090
-	.4byte 0x802ED0B0
-	.4byte 0x802ED0D0
-	.4byte 0x802ED0F0
-	.4byte 0x802ED110
-	.4byte 0x802ED150
-	.4byte 0x802ED190
-	.4byte 0x802ED1D0
-	.4byte 0x802ED210
-	.4byte 0x802ED250
-	.4byte 0x802ED290
-	.4byte 0x802ED310
-	.4byte 0x802ED390
+	.4byte huff4decode00
+	.4byte huff4decode01
+	.4byte huff4decode02
+	.4byte huff4decode03
+	.4byte huff4decode04
+	.4byte huff4decode05
+	.4byte huff4decode06
+	.4byte huff4decode07
+	.4byte huff4decode08
+	.4byte huff4decode09
+	.4byte huff4decode10
+	.4byte huff4decode11
+	.4byte huff4decode12
+	.4byte huff4decode13
+	.4byte huff4decode14
+	.4byte huff4decode15
 .global pushtot
 pushtot:
 	.4byte 0x00000000
@@ -5407,10 +5407,10 @@ pushcur:
 	.4byte 0x00000000
 .global pushptr
 pushptr:
-	.4byte 0x803A5C78
+	.4byte fragmentinfo+312
 .global pushamt
 pushamt:
-	.4byte 0x803A5CF8
+	.4byte fragmentinfo+440
 .global cursize
 cursize:
 	.4byte 0x00000020

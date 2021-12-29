@@ -54,14 +54,14 @@ purpleMeterDownRight__4zHud:
 __vt__Q24zHud12Incredimeter:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800D1660
-	.4byte 0x800D1BE8
-	.4byte 0x800D2DCC
-	.4byte 0x800D22E0
-	.4byte 0x800D32A8
-	.4byte 0x800D32EC
-	.4byte 0x800D165C
-	.4byte 0x800D1BC4
+	.4byte init__Q24zHud11hud_elementFv
+	.4byte setup__Q24zHud12IncredimeterFv
+	.4byte update__Q24zHud12IncredimeterFf
+	.4byte destroy__Q24zHud12IncredimeterFv
+	.4byte show__Q24zHud12IncredimeterFv
+	.4byte hide__Q24zHud12IncredimeterFv
+	.4byte handle_event__Q24zHud11hud_elementFP5xBaseUiPCfP5xBaseUi
+	.4byte reset__Q24zHud12IncredimeterFv
 
 .section .sdata2
 

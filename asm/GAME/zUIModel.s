@@ -6,26 +6,26 @@
 __vt__8zUIModel:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8016D33C
-	.4byte 0x8016840C
-	.4byte 0x8016A128
-	.4byte 0x8016A130
-	.4byte 0x8016CD4C
-	.4byte 0x801686C0
-	.4byte 0x8016CF2C
-	.4byte 0x801687A0
-	.4byte 0x8016D1FC
-	.4byte 0x8016CF4C
-	.4byte 0x8016D160
-	.4byte 0x8016D1B4
-	.4byte 0x80169AE0
-	.4byte 0x80169B7C
-	.4byte 0x80169E38
-	.4byte 0x80169E98
-	.4byte 0x80169F90
-	.4byte 0x8016A02C
-	.4byte 0x80169EF8
-	.4byte 0x80169F48
+	.4byte GetSortKey__8zUIModelCFv
+	.4byte Blends__3zUICFv
+	.4byte IsUIText__3zUIFv
+	.4byte IsForcePreUpdate__3zUIFv
+	.4byte DoInit__8zUIModelFv
+	.4byte DoSetup__3zUIFv
+	.4byte DoReset__8zUIModelFv
+	.4byte DoResetMotion__3zUIFv
+	.4byte DoHandleEvent__8zUIModelFP5xBaseUiPCfP5xBaseUi
+	.4byte DoRender__8zUIModelCFv
+	.4byte DoUpdate__8zUIModelFf
+	.4byte DoExit__8zUIModelFv
+	.4byte DoInitMotion__3zUIFv
+	.4byte DoApplyMotionFrame__3zUIFPC14zUIMotionFrame
+	.4byte FocusOn__3zUIFv
+	.4byte FocusOff__3zUIFv
+	.4byte Select__3zUIFv
+	.4byte Unselect__3zUIFv
+	.4byte Visible__3zUIFv
+	.4byte Invisible__3zUIFv
 
 .section .rodata
 

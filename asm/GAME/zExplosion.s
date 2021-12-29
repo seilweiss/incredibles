@@ -726,12 +726,12 @@ _esc__2_1824:
 	.4byte 0x40F00000
 .global default_types__24_esc__2_unnamed_esc__2_zExplosion_cpp_esc__2_
 default_types__24_esc__2_unnamed_esc__2_zExplosion_cpp_esc__2_:
-	.4byte 0x802DD2E7
-	.4byte 0x800C56D8
-	.4byte 0x802DD2F4
-	.4byte 0x800C5918
-	.4byte 0x802DD303
-	.4byte 0x800C5B24
+	.4byte _esc__2_stringBase0_54+995
+	.4byte load_default_config_fire__24_esc__2_unnamed_esc__2_zExplosion_cpp_esc__2_FRQ224_esc__2_unnamed_esc__2_zExplosion_cpp_esc__2_10ini_config
+	.4byte _esc__2_stringBase0_54+1008
+	.4byte load_default_config_plasma__24_esc__2_unnamed_esc__2_zExplosion_cpp_esc__2_FRQ224_esc__2_unnamed_esc__2_zExplosion_cpp_esc__2_10ini_config
+	.4byte _esc__2_stringBase0_54+1023
+	.4byte load_default_config_fire_trail__24_esc__2_unnamed_esc__2_zExplosion_cpp_esc__2_FRQ224_esc__2_unnamed_esc__2_zExplosion_cpp_esc__2_10ini_config
 .global _esc__2_2184_0
 _esc__2_2184_0:
 	.4byte 0x43300000

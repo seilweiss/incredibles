@@ -10,7 +10,7 @@ g_iAnim_workBufferData:
 
 .global g_iAnim_workBuffer
 g_iAnim_workBuffer:
-	.4byte 0x80369BE0
+	.4byte g_iAnim_workBufferData
 	.4byte 0x00000000
 
 .section .sdata2

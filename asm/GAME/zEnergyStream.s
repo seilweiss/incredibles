@@ -41,22 +41,22 @@ lbl_803D9408:
 __vt__12EnergyStream:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80105E78
-	.4byte 0x80105DFC
-	.4byte 0x80105D80
-	.4byte 0x801D913C
-	.4byte 0x801D8E60
-	.4byte 0x801D92EC
+	.4byte render__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_CFv
+	.4byte post_render_2d__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_CFv
+	.4byte post_render_3d__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_CFv
+	.4byte update__12EnergyStreamFf
+	.4byte destroy__12EnergyStreamFv
+	.4byte reset__12EnergyStreamFv
 .global __vt__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_
 __vt__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80105E78
-	.4byte 0x80105DFC
-	.4byte 0x80105D80
-	.4byte 0x801D96F4
-	.4byte 0x801D96F8
-	.4byte 0x801D96FC
+	.4byte render__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_CFv
+	.4byte post_render_2d__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_CFv
+	.4byte post_render_3d__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_CFv
+	.4byte update__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_Ff
+	.4byte destroy__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_Fv
+	.4byte reset__Q21z30lightweight_esc__0_12EnergyStream_esc__4_12_esc__1_Fv
 
 .section .sdata2
 

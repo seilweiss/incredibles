@@ -21,10 +21,10 @@ tcb_esc__7_951:
 __vt__Q28ztaskbox13talk_callback:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801603F4
-	.4byte 0x80163614
-	.4byte 0x80163638
-	.4byte 0x80163664
+	.4byte on_signal__Q28ztalkbox8callbackFUi
+	.4byte on_start__Q28ztaskbox13talk_callbackFv
+	.4byte on_stop__Q28ztaskbox13talk_callbackFv
+	.4byte on_answer__Q28ztaskbox13talk_callbackFQ28ztalkbox11answer_enum
 
 .if 0
 

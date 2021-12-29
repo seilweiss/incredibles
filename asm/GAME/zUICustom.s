@@ -12,17 +12,17 @@ line_size__16zUICustomStatBox:
 
 .global _esc__2_1101
 _esc__2_1101:
-	.4byte 0x801C5DA0
-	.4byte 0x801C5D4C
-	.4byte 0x801C5D74
-	.4byte 0x801C5DCC
-	.4byte 0x801C5DF8
-	.4byte 0x801C5E24
-	.4byte 0x801C5E50
-	.4byte 0x801C5E7C
-	.4byte 0x801C5EA8
-	.4byte 0x801C5ED4
-	.4byte 0x801C5F00
+	.4byte should_be_visible__18zUICustomStatImageFv+144
+	.4byte should_be_visible__18zUICustomStatImageFv+60
+	.4byte should_be_visible__18zUICustomStatImageFv+100
+	.4byte should_be_visible__18zUICustomStatImageFv+188
+	.4byte should_be_visible__18zUICustomStatImageFv+232
+	.4byte should_be_visible__18zUICustomStatImageFv+276
+	.4byte should_be_visible__18zUICustomStatImageFv+320
+	.4byte should_be_visible__18zUICustomStatImageFv+364
+	.4byte should_be_visible__18zUICustomStatImageFv+408
+	.4byte should_be_visible__18zUICustomStatImageFv+452
+	.4byte should_be_visible__18zUICustomStatImageFv+496
 .global stat_strings__16zUICustomStatBox
 stat_strings__16zUICustomStatBox:
 	.4byte 0x00000000
@@ -3227,152 +3227,152 @@ stat_strings__16zUICustomStatBox:
 	.4byte 0x00000000
 .global _esc__2_1370
 _esc__2_1370:
-	.4byte 0x801C6B84
-	.4byte 0x801C6BA0
-	.4byte 0x801C6BC4
-	.4byte 0x801C6BE8
-	.4byte 0x801C6C0C
-	.4byte 0x801C6C30
-	.4byte 0x801C6C54
+	.4byte create_mr_i_stat__16zUICustomStatBoxFif+56
+	.4byte create_mr_i_stat__16zUICustomStatBoxFif+84
+	.4byte create_mr_i_stat__16zUICustomStatBoxFif+120
+	.4byte create_mr_i_stat__16zUICustomStatBoxFif+156
+	.4byte create_mr_i_stat__16zUICustomStatBoxFif+192
+	.4byte create_mr_i_stat__16zUICustomStatBoxFif+228
+	.4byte create_mr_i_stat__16zUICustomStatBoxFif+264
 .global _esc__2_1398
 _esc__2_1398:
-	.4byte 0x801C6DB8
-	.4byte 0x801C6DD4
-	.4byte 0x801C6DF8
-	.4byte 0x801C6E1C
-	.4byte 0x801C6E40
-	.4byte 0x801C6E64
-	.4byte 0x801C6E80
-	.4byte 0x801C6ECC
+	.4byte create_dash_stat__16zUICustomStatBoxFif+76
+	.4byte create_dash_stat__16zUICustomStatBoxFif+104
+	.4byte create_dash_stat__16zUICustomStatBoxFif+140
+	.4byte create_dash_stat__16zUICustomStatBoxFif+176
+	.4byte create_dash_stat__16zUICustomStatBoxFif+212
+	.4byte create_dash_stat__16zUICustomStatBoxFif+248
+	.4byte create_dash_stat__16zUICustomStatBoxFif+276
+	.4byte create_dash_stat__16zUICustomStatBoxFif+352
 .global _esc__2_1414
 _esc__2_1414:
-	.4byte 0x801C6F58
-	.4byte 0x801C6F74
-	.4byte 0x801C6F90
-	.4byte 0x801C6FB4
-	.4byte 0x801C6FD0
-	.4byte 0x801C6FF4
-	.4byte 0x801C7010
+	.4byte create_violet_stat__16zUICustomStatBoxFif+56
+	.4byte create_violet_stat__16zUICustomStatBoxFif+84
+	.4byte create_violet_stat__16zUICustomStatBoxFif+112
+	.4byte create_violet_stat__16zUICustomStatBoxFif+148
+	.4byte create_violet_stat__16zUICustomStatBoxFif+176
+	.4byte create_violet_stat__16zUICustomStatBoxFif+212
+	.4byte create_violet_stat__16zUICustomStatBoxFif+240
 .global _esc__2_1429
 _esc__2_1429:
-	.4byte 0x801C708C
-	.4byte 0x801C70A8
-	.4byte 0x801C70CC
-	.4byte 0x801C70F0
-	.4byte 0x801C7114
-	.4byte 0x801C7138
-	.4byte 0x801C715C
-	.4byte 0x801C7180
+	.4byte create_incrediball_stat__16zUICustomStatBoxFif+56
+	.4byte create_incrediball_stat__16zUICustomStatBoxFif+84
+	.4byte create_incrediball_stat__16zUICustomStatBoxFif+120
+	.4byte create_incrediball_stat__16zUICustomStatBoxFif+156
+	.4byte create_incrediball_stat__16zUICustomStatBoxFif+192
+	.4byte create_incrediball_stat__16zUICustomStatBoxFif+228
+	.4byte create_incrediball_stat__16zUICustomStatBoxFif+264
+	.4byte create_incrediball_stat__16zUICustomStatBoxFif+300
 .global __vt__30zUICustomConditionallyDisabled
 __vt__30zUICustomConditionallyDisabled:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801C5C74
-	.4byte 0x801C5C78
-	.4byte 0x801C5C7C
-	.4byte 0x801C79E0
-	.4byte 0x801C5C88
-	.4byte 0x801C7A68
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C7A60
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__9zUICustomFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__9zUICustomFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__30zUICustomConditionallyDisabledFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__30zUICustomConditionallyDisabledFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__30zUICustomConditionallyDisabledFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__23zUICustomImageSlideshow
 __vt__23zUICustomImageSlideshow:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801C77CC
-	.4byte 0x801C5C78
-	.4byte 0x801C7800
-	.4byte 0x801C5C84
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__23zUICustomImageSlideshowFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__23zUICustomImageSlideshowFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__9zUICustomFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__16zUICustomStatBox
 __vt__16zUICustomStatBox:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C6040
-	.4byte 0x801C6000
-	.4byte 0x801C5C78
-	.4byte 0x801C63D8
-	.4byte 0x801C6088
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C6634
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__16zUICustomStatBoxFv
+	.4byte Reset__16zUICustomStatBoxFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__16zUICustomStatBoxFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__16zUICustomStatBoxFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__16zUICustomStatBoxFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__18zUICustomStatImage
 __vt__18zUICustomStatImage:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801C5C74
-	.4byte 0x801C5C78
-	.4byte 0x801C5F44
-	.4byte 0x801C5C84
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__9zUICustomFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__18zUICustomStatImageFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__9zUICustomFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__9zUICustom
 __vt__9zUICustom:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801C5C74
-	.4byte 0x801C5C78
-	.4byte 0x801C5C7C
-	.4byte 0x801C5C84
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__9zUICustomFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__9zUICustomFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__9zUICustomFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 	.4byte 0x00000000
 
 .section .rodata

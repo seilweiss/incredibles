@@ -7,22 +7,22 @@ assetTypeHandlers:
 	.4byte 0x42535020
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800853E4
+	.4byte BSP_Read__FPvUiPvUiPUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8008550C
+	.4byte BSP_Unload__FPvUi
 	.4byte 0x00000000
 	.4byte 0x4A535020
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8008553C
+	.4byte JSP_Read__FPvUiPvUiPUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800855B0
+	.4byte JSP_Unload__FPvUi
 	.4byte 0x00000000
 	.4byte 0x54584420
 	.4byte 0x00000000
@@ -37,12 +37,12 @@ assetTypeHandlers:
 	.4byte 0x4D4F444C
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80084D9C
+	.4byte Model_Read__FPvUiPvUiPUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800853BC
+	.4byte Model_Unload__FPvUi
 	.4byte 0x00000000
 	.4byte 0x414E494D
 	.4byte 0x00000000
@@ -52,17 +52,17 @@ assetTypeHandlers:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800862A0
+	.4byte Anim_Unload__FPvUi
 	.4byte 0x00000000
 	.4byte 0x52575458
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800855F0
+	.4byte RWTX_Read__FPvUiPvUiPUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80085750
+	.4byte TextureRW3_Unload__FPvUi
 	.4byte 0x00000000
 	.4byte 0x4C4B4954
 	.4byte 0x00000000
@@ -72,7 +72,7 @@ assetTypeHandlers:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800862A4
+	.4byte LightKit_Unload__FPvUi
 	.4byte 0x00000000
 	.4byte 0x43414D20
 	.4byte 0x00000000
@@ -177,7 +177,7 @@ assetTypeHandlers:
 	.4byte 0x4154424C
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800858C0
+	.4byte ATBL_Read__FPvUiPvUiPUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -242,7 +242,7 @@ assetTypeHandlers:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800862EC
+	.4byte MovePoint_Unload__FPvUi
 	.4byte 0x00000000
 	.4byte 0x54494D52
 	.4byte 0x00000000
@@ -727,7 +727,7 @@ assetTypeHandlers:
 	.4byte 0x43525620
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80084E04
+	.4byte Curve_Read__FPvUiPvUiPUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -767,7 +767,7 @@ assetTypeHandlers:
 	.4byte 0x4E474D53
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80084E44
+	.4byte Navigation_Mesh_Read__FPvUiPvUiPUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -777,7 +777,7 @@ assetTypeHandlers:
 	.4byte 0x4454524B
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80085204
+	.4byte Dash_Track_Read__FPvUiPvUiPUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -837,7 +837,7 @@ assetTypeHandlers:
 	.4byte 0x53504C4E
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80084E18
+	.4byte Spline_Read__1xFPvUiPvUiPUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -937,7 +937,7 @@ assetTypeHandlers:
 	.4byte 0x53504C50
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800852E8
+	.4byte init__Q26zAsset11spline_pathFPvUiPvUiPUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -947,12 +947,12 @@ assetTypeHandlers:
 	.4byte 0x53554254
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8006DDC4
+	.4byte xSubTitlesRead__FPvUiPvUiPUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8006DE1C
+	.4byte xSubTitlesUnloaded__FPvUi
 	.4byte 0x00000000
 	.4byte 0x4752534D
 	.4byte 0x00000000
@@ -1026,142 +1026,142 @@ assetTypeHandlers:
 	.4byte 0x00000000
 .global g_brainTable
 g_brainTable:
-	.4byte 0x802D9E30
+	.4byte _esc__2_stringBase0_35
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802D9E41
+	.4byte _esc__2_stringBase0_35+17
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x802D9E50
+	.4byte _esc__2_stringBase0_35+32
 	.4byte 0x00000002
 	.4byte 0x00000000
-	.4byte 0x802D9E60
+	.4byte _esc__2_stringBase0_35+48
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x802D9E6F
+	.4byte _esc__2_stringBase0_35+63
 	.4byte 0x00000004
 	.4byte 0x00000000
-	.4byte 0x802D9E82
+	.4byte _esc__2_stringBase0_35+82
 	.4byte 0x00000005
 	.4byte 0x00000000
-	.4byte 0x802D9E90
+	.4byte _esc__2_stringBase0_35+96
 	.4byte 0x00000006
 	.4byte 0x00000000
-	.4byte 0x802D9EA0
+	.4byte _esc__2_stringBase0_35+112
 	.4byte 0x00000007
 	.4byte 0x00000000
-	.4byte 0x802D9EB0
+	.4byte _esc__2_stringBase0_35+128
 	.4byte 0x00000008
 	.4byte 0x00000000
-	.4byte 0x802D9EC5
+	.4byte _esc__2_stringBase0_35+149
 	.4byte 0x00000013
 	.4byte 0x00000000
-	.4byte 0x802D9ED9
+	.4byte _esc__2_stringBase0_35+169
 	.4byte 0x00000014
 	.4byte 0x00000000
-	.4byte 0x802D9EEE
+	.4byte _esc__2_stringBase0_35+190
 	.4byte 0x00000015
 	.4byte 0x00000000
-	.4byte 0x802D9F02
+	.4byte _esc__2_stringBase0_35+210
 	.4byte 0x00000009
 	.4byte 0x00000000
-	.4byte 0x802D9F13
+	.4byte _esc__2_stringBase0_35+227
 	.4byte 0x0000000A
 	.4byte 0x00000000
-	.4byte 0x802D9F27
+	.4byte _esc__2_stringBase0_35+247
 	.4byte 0x0000000B
 	.4byte 0x00000000
-	.4byte 0x802D9F3E
+	.4byte _esc__2_stringBase0_35+270
 	.4byte 0x0000000C
 	.4byte 0x00000000
-	.4byte 0x802D9F50
+	.4byte _esc__2_stringBase0_35+288
 	.4byte 0x0000000D
 	.4byte 0x00000000
-	.4byte 0x802D9F68
+	.4byte _esc__2_stringBase0_35+312
 	.4byte 0x0000000E
 	.4byte 0x00000000
-	.4byte 0x802D9F75
+	.4byte _esc__2_stringBase0_35+325
 	.4byte 0x0000000F
 	.4byte 0x00000000
-	.4byte 0x802D9F87
+	.4byte _esc__2_stringBase0_35+343
 	.4byte 0x00000010
 	.4byte 0x00000000
-	.4byte 0x802D9F95
+	.4byte _esc__2_stringBase0_35+357
 	.4byte 0x00000011
 	.4byte 0x00000000
-	.4byte 0x802D9FAD
+	.4byte _esc__2_stringBase0_35+381
 	.4byte 0x00000012
 	.4byte 0x00000000
-	.4byte 0x802D9FBD
+	.4byte _esc__2_stringBase0_35+397
 	.4byte 0x00000016
 	.4byte 0x00000000
-	.4byte 0x802D9FD0
+	.4byte _esc__2_stringBase0_35+416
 	.4byte 0x00000017
 	.4byte 0x00000000
-	.4byte 0x802D9FE8
+	.4byte _esc__2_stringBase0_35+440
 	.4byte 0x0000001A
 	.4byte 0x00000000
-	.4byte 0x802D9FF7
+	.4byte _esc__2_stringBase0_35+455
 	.4byte 0x00000018
 	.4byte 0x00000000
-	.4byte 0x802DA007
+	.4byte _esc__2_stringBase0_35+471
 	.4byte 0x00000019
 	.4byte 0x00000000
-	.4byte 0x802DA018
+	.4byte _esc__2_stringBase0_35+488
 	.4byte 0x0000001B
 	.4byte 0x00000000
-	.4byte 0x802DA02F
+	.4byte _esc__2_stringBase0_35+511
 	.4byte 0x0000001C
 	.4byte 0x00000000
-	.4byte 0x802DA041
+	.4byte _esc__2_stringBase0_35+529
 	.4byte 0x00000020
 	.4byte 0x00000000
-	.4byte 0x802DA059
+	.4byte _esc__2_stringBase0_35+553
 	.4byte 0x00000021
 	.4byte 0x00000000
-	.4byte 0x802DA073
+	.4byte _esc__2_stringBase0_35+579
 	.4byte 0x00000022
 	.4byte 0x00000000
-	.4byte 0x802DA08E
+	.4byte _esc__2_stringBase0_35+606
 	.4byte 0x0000001D
 	.4byte 0x00000000
-	.4byte 0x802DA09F
+	.4byte _esc__2_stringBase0_35+623
 	.4byte 0x0000001E
 	.4byte 0x00000000
-	.4byte 0x802DA0B4
+	.4byte _esc__2_stringBase0_35+644
 	.4byte 0x0000001F
 	.4byte 0x00000000
-	.4byte 0x802DA0C5
+	.4byte _esc__2_stringBase0_35+661
 	.4byte 0x00000024
 	.4byte 0x00000000
-	.4byte 0x802DA0E9
+	.4byte _esc__2_stringBase0_35+697
 	.4byte 0x00000025
 	.4byte 0x00000000
-	.4byte 0x802DA110
+	.4byte _esc__2_stringBase0_35+736
 	.4byte 0x00000023
 	.4byte 0x00000000
-	.4byte 0x802DA130
+	.4byte _esc__2_stringBase0_35+768
 	.4byte 0x00000026
 	.4byte 0x00000000
-	.4byte 0x802DA156
+	.4byte _esc__2_stringBase0_35+806
 	.4byte 0x00000027
 	.4byte 0x00000000
-	.4byte 0x802DA178
+	.4byte _esc__2_stringBase0_35+840
 	.4byte 0x00000028
 	.4byte 0x00000000
-	.4byte 0x802DA196
+	.4byte _esc__2_stringBase0_35+870
 	.4byte 0x00000029
 	.4byte 0x00000000
-	.4byte 0x802DA1B2
+	.4byte _esc__2_stringBase0_35+898
 	.4byte 0x0000002A
 	.4byte 0x00000000
-	.4byte 0x802DA1CB
+	.4byte _esc__2_stringBase0_35+923
 	.4byte 0x0000002B
 	.4byte 0x00000000
-	.4byte 0x802DA1E5
+	.4byte _esc__2_stringBase0_35+949
 	.4byte 0x0000002C
 	.4byte 0x00000000
-	.4byte 0x802DA1FE
+	.4byte _esc__2_stringBase0_35+974
 	.4byte 0x0000002D
 	.4byte 0x00000000
 
@@ -1506,20 +1506,20 @@ lbl_803D8A0C:
 
 .global animTable
 animTable:
-	.4byte 0x802DA2A0
-	.4byte 0x80167FF4
+	.4byte _esc__2_stringBase0_35+1136
+	.4byte create_anim_table__7zTurretFv
 	.4byte 0x00000000
-	.4byte 0x802DA2B2
-	.4byte 0x8019C3B8
+	.4byte _esc__2_stringBase0_35+1154
+	.4byte zLaunch_CreateAnimTable__Fv
 	.4byte 0x00000000
 .global tableFuncList
 tableFuncList:
 	.4byte 0x00000000
 .global effectFuncList
 effectFuncList:
-	.4byte 0x800857D0
-	.4byte 0x800857D8
-	.4byte 0x800857D8
+	.4byte dummyEffectCB__FUiP17xAnimActiveEffectP11xAnimSinglePv
+	.4byte soundEffectCB__FUiP17xAnimActiveEffectP11xAnimSinglePv
+	.4byte soundEffectCB__FUiP17xAnimActiveEffectP11xAnimSinglePv
 .global _esc__2_839_0
 _esc__2_839_0:
 	.4byte 0x40000000

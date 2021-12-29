@@ -10,14 +10,14 @@ uiElements__20_esc__2_unnamed_esc__2_zUIMgr_cpp_esc__2_:
 
 .global _esc__2_1182
 _esc__2_1182:
-	.4byte 0x8016C130
-	.4byte 0x8016C13C
-	.4byte 0x8016C148
-	.4byte 0x8016C154
-	.4byte 0x8016C160
-	.4byte 0x8016C16C
-	.4byte 0x8016C178
-	.4byte 0x8016C1FC
+	.4byte zUIMgrInit__FP6zScene+488
+	.4byte zUIMgrInit__FP6zScene+500
+	.4byte zUIMgrInit__FP6zScene+512
+	.4byte zUIMgrInit__FP6zScene+524
+	.4byte zUIMgrInit__FP6zScene+536
+	.4byte zUIMgrInit__FP6zScene+548
+	.4byte zUIMgrInit__FP6zScene+560
+	.4byte zUIMgrInit__FP6zScene+692
 
 .section .sbss
 

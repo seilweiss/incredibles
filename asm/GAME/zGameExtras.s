@@ -4,19 +4,19 @@
 
 .global _esc__2_1237
 _esc__2_1237:
-	.4byte 0x800CF384
-	.4byte 0x800CF1E4
-	.4byte 0x800CF200
-	.4byte 0x800CF21C
-	.4byte 0x800CF288
-	.4byte 0x800CF384
-	.4byte 0x800CF2A4
-	.4byte 0x800CF2C0
-	.4byte 0x800CF2DC
-	.4byte 0x800CF2F8
-	.4byte 0x800CF314
-	.4byte 0x800CF36C
-	.4byte 0x800CF384
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+452
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+36
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+64
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+92
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+200
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+452
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+228
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+256
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+284
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+312
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+340
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+428
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem+452
 	.4byte 0x00000000
 
 .section .sbss
@@ -53,8 +53,8 @@ EGGEmpty:
 	.4byte 0x00000000
 .global g_eggBasket
 g_eggBasket:
-	.4byte 0x800CF1C0
-	.4byte 0x803CC2E0
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem
+	.4byte EGGEmpty
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -117,16 +117,16 @@ sCheatSwapCCUD:
 	.4byte 0x00040000
 .global cheatList
 cheatList:
-	.4byte 0x803CC310
-	.4byte 0x800CF778
+	.4byte sCheatTestCheats
+	.4byte GEC_cb_TestCheats__Fv
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x803CC350
-	.4byte 0x800CF798
+	.4byte sCheatSwapCCLR
+	.4byte GEC_cb_SwapCCLR__Fv
 	.4byte 0x00000200
 	.4byte 0x00000001
-	.4byte 0x803CC390
-	.4byte 0x800CF7B8
+	.4byte sCheatSwapCCUD
+	.4byte GEC_cb_SwapCCUD__Fv
 	.4byte 0x00000400
 	.4byte 0x00000001
 	.4byte 0x00000000

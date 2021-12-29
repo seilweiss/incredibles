@@ -8,11 +8,11 @@
 __vt__21xMemoryManagerGeneral:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801CE308
-	.4byte 0x801CE5C8
-	.4byte 0x801CE6CC
-	.4byte 0x801CEBB8
-	.4byte 0x801CDED8
+	.4byte DoAllocate__21xMemoryManagerGeneralFUiUi
+	.4byte DoFree__21xMemoryManagerGeneralFPv
+	.4byte DoReallocate__21xMemoryManagerGeneralFPvUiUi
+	.4byte DoGetBlockSize__21xMemoryManagerGeneralCFPv
+	.4byte HandleOutOfMemory__14xMemoryManagerFUiUi
 	.4byte 0x00000000
 
 .if 0

@@ -6,68 +6,68 @@
 __vt__33zParticleGeneratorWaterfallSplash:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801D2A50
-	.4byte 0x801D2AB0
-	.4byte 0x801D2AEC
+	.4byte reset__33zParticleGeneratorWaterfallSplashFv
+	.4byte activate__33zParticleGeneratorWaterfallSplashFv
+	.4byte deactivate__33zParticleGeneratorWaterfallSplashFv
 .global __vt__30zParticleSystemWaterfallSplash
 __vt__30zParticleSystemWaterfallSplash:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801D213C
-	.4byte 0x801CF8C0
-	.4byte 0x801D21D4
-	.4byte 0x801CF8BC
-	.4byte 0x801CF8C4
-	.4byte 0x801CF8C8
-	.4byte 0x801D21F8
-	.4byte 0x801CF8D0
-	.4byte 0x801CF8D4
-	.4byte 0x801D0E44
-	.4byte 0x801D2218
+	.4byte create_generator__30zParticleSystemWaterfallSplashFR14zParticleAsset
+	.4byte destroy_generator__15zParticleSystemFP18zParticleGenerator
+	.4byte scene_enter__30zParticleSystemWaterfallSplashFv
+	.4byte scene_exit__15zParticleSystemFv
+	.4byte setup__15zParticleSystemFv
+	.4byte reset__15zParticleSystemFv
+	.4byte update__30zParticleSystemWaterfallSplashFf
+	.4byte pre_render__15zParticleSystemFv
+	.4byte render__15zParticleSystemFv
+	.4byte get_ordering__15zParticleSystemFRii
+	.4byte get_asset_size__30zParticleSystemWaterfallSplashCFv
 .global __vt__31zParticleGeneratorWaterfallMist
 __vt__31zParticleGeneratorWaterfallMist:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801D206C
-	.4byte 0x801D20CC
-	.4byte 0x801D2108
+	.4byte reset__31zParticleGeneratorWaterfallMistFv
+	.4byte activate__31zParticleGeneratorWaterfallMistFv
+	.4byte deactivate__31zParticleGeneratorWaterfallMistFv
 .global __vt__28zParticleSystemWaterfallMist
 __vt__28zParticleSystemWaterfallMist:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801D177C
-	.4byte 0x801CF8C0
-	.4byte 0x801D1814
-	.4byte 0x801CF8BC
-	.4byte 0x801CF8C4
-	.4byte 0x801CF8C8
-	.4byte 0x801D1838
-	.4byte 0x801CF8D0
-	.4byte 0x801CF8D4
-	.4byte 0x801D0E44
-	.4byte 0x801D1858
+	.4byte create_generator__28zParticleSystemWaterfallMistFR14zParticleAsset
+	.4byte destroy_generator__15zParticleSystemFP18zParticleGenerator
+	.4byte scene_enter__28zParticleSystemWaterfallMistFv
+	.4byte scene_exit__15zParticleSystemFv
+	.4byte setup__15zParticleSystemFv
+	.4byte reset__15zParticleSystemFv
+	.4byte update__28zParticleSystemWaterfallMistFf
+	.4byte pre_render__15zParticleSystemFv
+	.4byte render__15zParticleSystemFv
+	.4byte get_ordering__15zParticleSystemFRii
+	.4byte get_asset_size__28zParticleSystemWaterfallMistCFv
 .global __vt__27zParticleGeneratorWaterfall
 __vt__27zParticleGeneratorWaterfall:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801D16AC
-	.4byte 0x801D170C
-	.4byte 0x801D1748
+	.4byte reset__27zParticleGeneratorWaterfallFv
+	.4byte activate__27zParticleGeneratorWaterfallFv
+	.4byte deactivate__27zParticleGeneratorWaterfallFv
 .global __vt__24zParticleSystemWaterfall
 __vt__24zParticleSystemWaterfall:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801D0E54
-	.4byte 0x801CF8C0
-	.4byte 0x801D0EF8
-	.4byte 0x801CF8BC
-	.4byte 0x801CF8C4
-	.4byte 0x801CF8C8
-	.4byte 0x801D0F1C
-	.4byte 0x801CF8D0
-	.4byte 0x801CF8D4
-	.4byte 0x801D0E44
-	.4byte 0x801D0F3C
+	.4byte create_generator__24zParticleSystemWaterfallFR14zParticleAsset
+	.4byte destroy_generator__15zParticleSystemFP18zParticleGenerator
+	.4byte scene_enter__24zParticleSystemWaterfallFv
+	.4byte scene_exit__15zParticleSystemFv
+	.4byte setup__15zParticleSystemFv
+	.4byte reset__15zParticleSystemFv
+	.4byte update__24zParticleSystemWaterfallFf
+	.4byte pre_render__15zParticleSystemFv
+	.4byte render__15zParticleSystemFv
+	.4byte get_ordering__15zParticleSystemFRii
+	.4byte get_asset_size__24zParticleSystemWaterfallCFv
 
 .section .sdata2
 

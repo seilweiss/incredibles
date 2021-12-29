@@ -115,10 +115,10 @@ sCameraFXTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8005DD98
+	.4byte xCameraFXZoomUpdate__FP8cameraFXfPC7xMat4x3P7xMat4x3
 	.4byte 0x00000000
 	.4byte 0x00000002
-	.4byte 0x8005E064
+	.4byte xCameraFXShakeUpdate__FP8cameraFXfPC7xMat4x3P7xMat4x3
 	.4byte 0x00000000
 .global sDefaultLensFlareParams
 sDefaultLensFlareParams:
@@ -128,7 +128,7 @@ sDefaultLensFlareParams:
 	.4byte 0x00000000
 .global sLensFlareParams
 sLensFlareParams:
-	.4byte 0x803CB960
+	.4byte sDefaultLensFlareParams
 	.4byte 0x00000000
 
 .section .sdata2

@@ -5,7 +5,7 @@
 .global bv_hench3_fly_blade
 bv_hench3_fly_blade:
 	.4byte 0x44B40000
-	.4byte 0x802EC6D8
+	.4byte _esc__2_stringBase0_156
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
@@ -31,7 +31,7 @@ bv_hench3_fly_blade:
 .global bv_hench4_fly_blade
 bv_hench4_fly_blade:
 	.4byte 0x44B40000
-	.4byte 0x802EC6D8
+	.4byte _esc__2_stringBase0_156
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
@@ -57,7 +57,7 @@ bv_hench4_fly_blade:
 .global bv_helicopter_main_blade
 bv_helicopter_main_blade:
 	.4byte 0x44B40000
-	.4byte 0x802EC6EA
+	.4byte _esc__2_stringBase0_156+18
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
@@ -83,7 +83,7 @@ bv_helicopter_main_blade:
 .global bv_helicopter_tail_blade
 bv_helicopter_tail_blade:
 	.4byte 0x44B40000
-	.4byte 0x802EC703
+	.4byte _esc__2_stringBase0_156+43
 	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -109,7 +109,7 @@ bv_helicopter_tail_blade:
 .global bv_helicopter_tail_blade_2
 bv_helicopter_tail_blade_2:
 	.4byte 0x44B40000
-	.4byte 0x802EC703
+	.4byte _esc__2_stringBase0_156+43
 	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -135,7 +135,7 @@ bv_helicopter_tail_blade_2:
 .global bv_boss_helicopter_main_blade
 bv_boss_helicopter_main_blade:
 	.4byte 0x44B40000
-	.4byte 0x802EC6EA
+	.4byte _esc__2_stringBase0_156+18
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
@@ -161,7 +161,7 @@ bv_boss_helicopter_main_blade:
 .global bv_boss_helicopter_tail_blade
 bv_boss_helicopter_tail_blade:
 	.4byte 0x44B40000
-	.4byte 0x802EC703
+	.4byte _esc__2_stringBase0_156+43
 	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -187,7 +187,7 @@ bv_boss_helicopter_tail_blade:
 .global bv_boss_helicopter_tail_blade_2
 bv_boss_helicopter_tail_blade_2:
 	.4byte 0x44B40000
-	.4byte 0x802EC703
+	.4byte _esc__2_stringBase0_156+43
 	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -213,7 +213,7 @@ bv_boss_helicopter_tail_blade_2:
 .global bv_police_helicopter_main_blade
 bv_police_helicopter_main_blade:
 	.4byte 0x44B40000
-	.4byte 0x802EC71C
+	.4byte _esc__2_stringBase0_156+68
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
@@ -239,7 +239,7 @@ bv_police_helicopter_main_blade:
 .global bv_police_helicopter_tail_blade
 bv_police_helicopter_tail_blade:
 	.4byte 0x44B40000
-	.4byte 0x802EC736
+	.4byte _esc__2_stringBase0_156+94
 	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -265,7 +265,7 @@ bv_police_helicopter_tail_blade:
 .global bv_police_helicopter_tail_blade_2
 bv_police_helicopter_tail_blade_2:
 	.4byte 0x44B40000
-	.4byte 0x802EC736
+	.4byte _esc__2_stringBase0_156+94
 	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -335,11 +335,11 @@ cinfx_om04_opening_bv:
 	.4byte 0x0000000A
 	.4byte 0x40900000
 	.4byte 0x447A0000
-	.4byte 0x802EC762
-	.4byte 0x801F1294
-	.4byte 0x801F139C
+	.4byte _esc__2_stringBase0_156+138
+	.4byte zCinFX_Bomb_Glow_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Bomb_Glow_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1290
+	.4byte zCinFX_Bomb_Glow_Twk__FPCcP9NCINEntry
 	.4byte 0x00000004
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -356,7 +356,7 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE230
+	.4byte cinfx_om04_bomb_glow
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -372,11 +372,11 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000001
 	.4byte 0x40566666
 	.4byte 0x40600000
-	.4byte 0x802EC76C
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+148
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -393,8 +393,8 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318570
-	.4byte 0x803D1194
+	.4byte cinfx_om04_opening_bv_dust
+	.4byte cinfx_om04_opening_bv_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -409,11 +409,11 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000001
 	.4byte 0x407D70A4
 	.4byte 0x408147AE
-	.4byte 0x802EC776
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+158
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -430,8 +430,8 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318570
-	.4byte 0x803D11E4
+	.4byte cinfx_om04_opening_bv_dust
+	.4byte cinfx_om04_opening_bv_bounce_2_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -446,11 +446,11 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000001
 	.4byte 0x408C28F6
 	.4byte 0x408EB852
-	.4byte 0x802EC784
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+172
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -467,8 +467,8 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803185BC
-	.4byte 0x803D11D0
+	.4byte cinfx_om04_opening_bv_bounce_dust
+	.4byte cinfx_om04_opening_bv_bounce_1_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -483,9 +483,9 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000002
 	.4byte 0x40E00000
 	.4byte 0x447A0000
-	.4byte 0x802EC792
-	.4byte 0x801E9EF8
-	.4byte 0x801F14BC
+	.4byte _esc__2_stringBase0_156+186
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Shrapnel_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000004
@@ -504,7 +504,7 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC79F
+	.4byte _esc__2_stringBase0_156+199
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -520,11 +520,11 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7B1
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+217
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -541,7 +541,7 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318330
+	.4byte bv_boss_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -557,11 +557,11 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7C7
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+239
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -578,7 +578,7 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318390
+	.4byte bv_boss_helicopter_tail_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -594,11 +594,11 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000003
 	.4byte 0x40E00000
 	.4byte 0x447A0000
-	.4byte 0x802EC7DD
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+261
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -615,8 +615,8 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE1C0
-	.4byte 0x803D11A8
+	.4byte cinfx_om04_opening_bv_smoke
+	.4byte cinfx_om04_opening_bv_smoke_1_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -631,11 +631,11 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000003
 	.4byte 0x40E00000
 	.4byte 0x447A0000
-	.4byte 0x802EC7EA
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+274
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -652,8 +652,8 @@ cinfx_om04_opening_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE1C0
-	.4byte 0x803D11BC
+	.4byte cinfx_om04_opening_bv_smoke
+	.4byte cinfx_om04_opening_bv_smoke_2_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -707,11 +707,11 @@ cinfx_om04_ending_bv:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7B1
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+217
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x0000000B
 	.4byte 0x00000000
@@ -728,7 +728,7 @@ cinfx_om04_ending_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318330
+	.4byte bv_boss_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -744,11 +744,11 @@ cinfx_om04_ending_bv:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7C7
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+239
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x0000000B
 	.4byte 0x00000000
@@ -765,7 +765,7 @@ cinfx_om04_ending_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318390
+	.4byte bv_boss_helicopter_tail_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -781,11 +781,11 @@ cinfx_om04_ending_bv:
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7F7
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+287
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x0000000B
 	.4byte 0x00000000
@@ -802,8 +802,8 @@ cinfx_om04_ending_bv:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE1F8
-	.4byte 0x803D11F8
+	.4byte cinfx_om04_ending_bv_helicopter_smoke
+	.4byte cinfx_om04_ending_bv_helicopter_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -878,11 +878,11 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7B1
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+217
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -899,7 +899,7 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318210
+	.4byte bv_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -915,11 +915,11 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7C7
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+239
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -936,7 +936,7 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803182D0
+	.4byte bv_helicopter_tail_blade_2
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -952,10 +952,10 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000007
 	.4byte 0x41273333
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
 	.4byte 0x00000000
-	.4byte 0x801F24C4
+	.4byte zCinFX_Rocket_Once__FPC12zCutsceneMgrP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -989,9 +989,9 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000008
 	.4byte 0x4131999A
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1010,7 +1010,7 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC82E
+	.4byte _esc__2_stringBase0_156+342
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1026,10 +1026,10 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000007
 	.4byte 0x412D999A
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
 	.4byte 0x00000000
-	.4byte 0x801F24C4
+	.4byte zCinFX_Rocket_Once__FPC12zCutsceneMgrP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1063,9 +1063,9 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000008
 	.4byte 0x413B3333
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1084,7 +1084,7 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC82E
+	.4byte _esc__2_stringBase0_156+342
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1100,11 +1100,11 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x40F66666
-	.4byte 0x802EC841
-	.4byte 0x801ECC14
-	.4byte 0x801ECC78
-	.4byte 0x801ECCEC
-	.4byte 0x801ECCF0
+	.4byte _esc__2_stringBase0_156+361
+	.4byte cinfx_frobridge_update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte cinfx_frobridge_animate__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte cinfx_frobridge_render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte cinfx_frobridge_add_tweaks__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000033
 	.4byte 0x00000000
@@ -1121,7 +1121,7 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803D74B4
+	.4byte frotext_om01_heli_escape1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1137,11 +1137,11 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000001
 	.4byte 0x41000000
 	.4byte 0x412428F6
-	.4byte 0x802EC858
-	.4byte 0x801ECC14
-	.4byte 0x801ECC78
-	.4byte 0x801ECCEC
-	.4byte 0x801ECCF0
+	.4byte _esc__2_stringBase0_156+384
+	.4byte cinfx_frobridge_update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte cinfx_frobridge_animate__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte cinfx_frobridge_render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte cinfx_frobridge_add_tweaks__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000033
 	.4byte 0x00000000
@@ -1158,7 +1158,7 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803D74C0
+	.4byte frotext_om01_heli_escape2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1174,11 +1174,11 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000001
 	.4byte 0x412B3333
 	.4byte 0x447A0000
-	.4byte 0x802EC86F
-	.4byte 0x801ECC14
-	.4byte 0x801ECC78
-	.4byte 0x801ECCEC
-	.4byte 0x801ECCF0
+	.4byte _esc__2_stringBase0_156+407
+	.4byte cinfx_frobridge_update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte cinfx_frobridge_animate__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte cinfx_frobridge_render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte cinfx_frobridge_add_tweaks__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000033
 	.4byte 0x00000000
@@ -1195,7 +1195,7 @@ cinfx_om01_heli_escape:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803D74CC
+	.4byte frotext_om01_heli_escape3__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1271,11 +1271,11 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7B1
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+217
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1292,7 +1292,7 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318210
+	.4byte bv_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1308,11 +1308,11 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7C7
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+239
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1329,7 +1329,7 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318270
+	.4byte bv_helicopter_tail_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1345,10 +1345,10 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000007
 	.4byte 0x40551EB8
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
 	.4byte 0x00000000
-	.4byte 0x801F24C4
+	.4byte zCinFX_Rocket_Once__FPC12zCutsceneMgrP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1382,9 +1382,9 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000008
 	.4byte 0x40800000
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1403,7 +1403,7 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC82E
+	.4byte _esc__2_stringBase0_156+342
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1419,10 +1419,10 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000007
 	.4byte 0x406AE148
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
 	.4byte 0x00000000
-	.4byte 0x801F24C4
+	.4byte zCinFX_Rocket_Once__FPC12zCutsceneMgrP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1456,9 +1456,9 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000008
 	.4byte 0x408A8F5C
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1477,7 +1477,7 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC82E
+	.4byte _esc__2_stringBase0_156+342
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1493,11 +1493,11 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x407B851F
-	.4byte 0x802EC886
-	.4byte 0x801ECC14
-	.4byte 0x801ECC78
-	.4byte 0x801ECCEC
-	.4byte 0x801ECCF0
+	.4byte _esc__2_stringBase0_156+430
+	.4byte cinfx_frobridge_update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte cinfx_frobridge_animate__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte cinfx_frobridge_render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte cinfx_frobridge_add_tweaks__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000033
 	.4byte 0x00000000
@@ -1514,7 +1514,7 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803D74D8
+	.4byte frotext_om01_frozone_chase1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1530,11 +1530,11 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000001
 	.4byte 0x408D70A4
 	.4byte 0x4E6E6B28
-	.4byte 0x802EC89F
-	.4byte 0x801ECC14
-	.4byte 0x801ECC78
-	.4byte 0x801ECCEC
-	.4byte 0x801ECCF0
+	.4byte _esc__2_stringBase0_156+455
+	.4byte cinfx_frobridge_update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte cinfx_frobridge_animate__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte cinfx_frobridge_render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte cinfx_frobridge_add_tweaks__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000033
 	.4byte 0x00000000
@@ -1551,7 +1551,7 @@ cinfx_om01_frozone_chase:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803D74E4
+	.4byte frotext_om01_frozone_chase2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1606,11 +1606,11 @@ cinfx_om01_opening:
 	.4byte 0x00000003
 	.4byte 0x418E6666
 	.4byte 0x447A0000
-	.4byte 0x802EC8B8
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+480
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1627,8 +1627,8 @@ cinfx_om01_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE280
-	.4byte 0x803D1248
+	.4byte cinfx_om01_opening_bv_rocket_smoke
+	.4byte cinfx_om01_opening_bv_rocket_1_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1643,11 +1643,11 @@ cinfx_om01_opening:
 	.4byte 0x00000003
 	.4byte 0x41900000
 	.4byte 0x447A0000
-	.4byte 0x802EC8C7
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+495
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000004
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1664,8 +1664,8 @@ cinfx_om01_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE280
-	.4byte 0x803D125C
+	.4byte cinfx_om01_opening_bv_rocket_smoke
+	.4byte cinfx_om01_opening_bv_rocket_2_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1680,9 +1680,9 @@ cinfx_om01_opening:
 	.4byte 0x00000008
 	.4byte 0x41A1999A
 	.4byte 0x447A0000
-	.4byte 0x802EC8D6
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+510
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1701,7 +1701,7 @@ cinfx_om01_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC8DD
+	.4byte _esc__2_stringBase0_156+517
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1717,9 +1717,9 @@ cinfx_om01_opening:
 	.4byte 0x00000008
 	.4byte 0x419C0000
 	.4byte 0x447A0000
-	.4byte 0x802EC8F1
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+537
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1738,7 +1738,7 @@ cinfx_om01_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC8DD
+	.4byte _esc__2_stringBase0_156+517
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1754,11 +1754,11 @@ cinfx_om01_opening:
 	.4byte 0x00000001
 	.4byte 0x41B80000
 	.4byte 0x41C80000
-	.4byte 0x802EC8F8
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+544
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -1775,8 +1775,8 @@ cinfx_om01_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318E20
-	.4byte 0x803D1234
+	.4byte cinfx_om01_opening_dust
+	.4byte cinfx_om01_opening_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1791,11 +1791,11 @@ cinfx_om01_opening:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7B1
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+217
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1812,7 +1812,7 @@ cinfx_om01_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318210
+	.4byte bv_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1828,11 +1828,11 @@ cinfx_om01_opening:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7C7
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+239
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1849,7 +1849,7 @@ cinfx_om01_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318270
+	.4byte bv_helicopter_tail_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1904,12 +1904,10 @@ cinfx_om01_towers:
 	.4byte 0x00000004
 	.4byte 0x3FD33333
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
 	.4byte 0x00000000
-	.4byte 0x801F23B8
-	.4byte 0x00000000
-	.4byte 0x00000000
+	.4byte zCinFX_Sparks_Once__FPC12zCutsceneMgrP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1926,7 +1924,9 @@ cinfx_om01_towers:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803CE364
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte om01_towers_sparks
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1941,11 +1941,11 @@ cinfx_om01_towers:
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x40133333
-	.4byte 0x802EC908
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+560
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1962,8 +1962,8 @@ cinfx_om01_towers:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE2F0
-	.4byte 0x803D120C
+	.4byte cinfx_om01_towers_smoke
+	.4byte cinfx_om01_towers_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1978,11 +1978,11 @@ cinfx_om01_towers:
 	.4byte 0x00000001
 	.4byte 0x3FCCCCCD
 	.4byte 0x3FD9999A
-	.4byte 0x802EC8F8
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+544
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1999,8 +1999,8 @@ cinfx_om01_towers:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80319434
-	.4byte 0x803D1220
+	.4byte cinfx_om01_towers_dust
+	.4byte cinfx_om01_towers_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2015,11 +2015,11 @@ cinfx_om01_towers:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7B1
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+217
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2036,7 +2036,7 @@ cinfx_om01_towers:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318210
+	.4byte bv_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2052,11 +2052,11 @@ cinfx_om01_towers:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7C7
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+239
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2073,7 +2073,7 @@ cinfx_om01_towers:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318270
+	.4byte bv_helicopter_tail_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2089,11 +2089,11 @@ cinfx_om01_towers:
 	.4byte 0x00000005
 	.4byte 0x40800000
 	.4byte 0x4098A3D7
-	.4byte 0x802EC919
-	.4byte 0x801F15B0
-	.4byte 0x801F1644
+	.4byte _esc__2_stringBase0_156+577
+	.4byte zCinFX_ModelBlur_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_ModelBlur_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1640
+	.4byte zCinFX_ModelBlur_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2110,7 +2110,7 @@ cinfx_om01_towers:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE328
+	.4byte cinfx_om01_towers_helicopter_blur
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2186,11 +2186,11 @@ cinfx_ld04_opening_dash:
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC96C
-	.4byte 0x801F15B0
-	.4byte 0x801F1644
+	.4byte _esc__2_stringBase0_156+660
+	.4byte zCinFX_ModelBlur_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_ModelBlur_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1640
+	.4byte zCinFX_ModelBlur_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2207,7 +2207,7 @@ cinfx_ld04_opening_dash:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE3CC
+	.4byte cinfx_ld04_opening_dash_blur
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2223,11 +2223,11 @@ cinfx_ld04_opening_dash:
 	.4byte 0x00000003
 	.4byte 0x41100000
 	.4byte 0x41300000
-	.4byte 0x802EC976
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+670
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2244,8 +2244,8 @@ cinfx_ld04_opening_dash:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE408
-	.4byte 0x803D1284
+	.4byte cinfx_ld04_opening_dash_smoke
+	.4byte cinfx_ld04_opening_dash_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2260,11 +2260,11 @@ cinfx_ld04_opening_dash:
 	.4byte 0x00000001
 	.4byte 0x41800000
 	.4byte 0x447A0000
-	.4byte 0x802EC982
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+682
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2281,8 +2281,8 @@ cinfx_ld04_opening_dash:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031A260
-	.4byte 0x803D1270
+	.4byte cinfx_ld04_opening_dash_dust
+	.4byte cinfx_ld04_opening_dash_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2336,11 +2336,11 @@ cinfx_ld04_ending_dash:
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC96C
-	.4byte 0x801F15B0
-	.4byte 0x801F1644
+	.4byte _esc__2_stringBase0_156+660
+	.4byte zCinFX_ModelBlur_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_ModelBlur_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1640
+	.4byte zCinFX_ModelBlur_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2357,7 +2357,7 @@ cinfx_ld04_ending_dash:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE3CC
+	.4byte cinfx_ld04_opening_dash_blur
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2373,11 +2373,11 @@ cinfx_ld04_ending_dash:
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC976
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+670
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2394,8 +2394,8 @@ cinfx_ld04_ending_dash:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE408
-	.4byte 0x803D1284
+	.4byte cinfx_ld04_opening_dash_smoke
+	.4byte cinfx_ld04_opening_dash_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2410,11 +2410,11 @@ cinfx_ld04_ending_dash:
 	.4byte 0x00000001
 	.4byte 0x3FF33333
 	.4byte 0x40266666
-	.4byte 0x802EC982
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+682
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2431,8 +2431,8 @@ cinfx_ld04_ending_dash:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031A260
-	.4byte 0x803D1270
+	.4byte cinfx_ld04_opening_dash_dust
+	.4byte cinfx_ld04_opening_dash_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2537,11 +2537,11 @@ cinfx_hs01_incrediball_intro:
 	.4byte 0x0000000D
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC9B3
-	.4byte 0x801F1CB8
-	.4byte 0x801F1D3C
-	.4byte 0x801F2140
-	.4byte 0x801F1A38
+	.4byte _esc__2_stringBase0_156+731
+	.4byte zCinFX_Incrediball_Update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Incrediball_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte zCinFX_Incrediball_Render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte zCinFX_IB_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2558,7 +2558,7 @@ cinfx_hs01_incrediball_intro:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8031A750
+	.4byte cinfx_hs01_incrediball_intro_ball
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2574,10 +2574,10 @@ cinfx_hs01_incrediball_intro:
 	.4byte 0x00000009
 	.4byte 0x400EE979
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
 	.4byte 0x00000000
-	.4byte 0x801F2548
+	.4byte zCinFX_Rubble_Once__FPC12zCutsceneMgrP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2596,7 +2596,7 @@ cinfx_hs01_incrediball_intro:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803CE464
+	.4byte cinfx_hs01_incrediball_intro_rubble
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2611,10 +2611,10 @@ cinfx_hs01_incrediball_intro:
 	.4byte 0x00000009
 	.4byte 0x404F2474
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
 	.4byte 0x00000000
-	.4byte 0x801F2548
+	.4byte zCinFX_Rubble_Once__FPC12zCutsceneMgrP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2633,7 +2633,7 @@ cinfx_hs01_incrediball_intro:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803CE464
+	.4byte cinfx_hs01_incrediball_intro_rubble
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2648,10 +2648,10 @@ cinfx_hs01_incrediball_intro:
 	.4byte 0x00000009
 	.4byte 0x406CCCCD
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
 	.4byte 0x00000000
-	.4byte 0x801F2548
+	.4byte zCinFX_Rubble_Once__FPC12zCutsceneMgrP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2670,7 +2670,7 @@ cinfx_hs01_incrediball_intro:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803CE464
+	.4byte cinfx_hs01_incrediball_intro_rubble
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2724,11 +2724,11 @@ cinfx_hs01_ending:
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC8B8
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+480
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2745,8 +2745,8 @@ cinfx_hs01_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE2B8
-	.4byte 0x803D1248
+	.4byte cinfx_hs01_ending_smoke
+	.4byte cinfx_om01_opening_bv_rocket_1_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2761,9 +2761,9 @@ cinfx_hs01_ending:
 	.4byte 0x00000008
 	.4byte 0x40400000
 	.4byte 0x447A0000
-	.4byte 0x802EC9C6
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+750
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2782,7 +2782,7 @@ cinfx_hs01_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC9D2
+	.4byte _esc__2_stringBase0_156+762
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2887,11 +2887,11 @@ cinfx_hs01_incrediball_ending:
 	.4byte 0x0000000D
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC9B3
-	.4byte 0x801F1CB8
-	.4byte 0x801F1D3C
-	.4byte 0x801F2140
-	.4byte 0x801F1A38
+	.4byte _esc__2_stringBase0_156+731
+	.4byte zCinFX_Incrediball_Update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Incrediball_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte zCinFX_Incrediball_Render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte zCinFX_IB_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2908,7 +2908,7 @@ cinfx_hs01_incrediball_ending:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8031ACB0
+	.4byte cinfx_hs01_incrediball_ending_ball
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2924,9 +2924,9 @@ cinfx_hs01_incrediball_ending:
 	.4byte 0x00000008
 	.4byte 0x40A00000
 	.4byte 0x447A0000
-	.4byte 0x802EC8D6
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+510
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2945,7 +2945,7 @@ cinfx_hs01_incrediball_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC82E
+	.4byte _esc__2_stringBase0_156+342
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2961,9 +2961,9 @@ cinfx_hs01_incrediball_ending:
 	.4byte 0x00000008
 	.4byte 0x40B66666
 	.4byte 0x447A0000
-	.4byte 0x802EC8F1
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+537
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2982,7 +2982,7 @@ cinfx_hs01_incrediball_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC82E
+	.4byte _esc__2_stringBase0_156+342
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2998,9 +2998,9 @@ cinfx_hs01_incrediball_ending:
 	.4byte 0x00000008
 	.4byte 0x40C66666
 	.4byte 0x447A0000
-	.4byte 0x802EC9E8
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+784
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3019,7 +3019,7 @@ cinfx_hs01_incrediball_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC82E
+	.4byte _esc__2_stringBase0_156+342
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3074,11 +3074,11 @@ cinfx_hs01_frozone:
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x3FA66666
-	.4byte 0x802EC9EF
-	.4byte 0x801ECC14
-	.4byte 0x801ECC78
-	.4byte 0x801ECCEC
-	.4byte 0x801ECCF0
+	.4byte _esc__2_stringBase0_156+791
+	.4byte cinfx_frobridge_update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte cinfx_frobridge_animate__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte cinfx_frobridge_render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte cinfx_frobridge_add_tweaks__FPCcP9NCINEntry
 	.4byte 0x00000006
 	.4byte 0x00000032
 	.4byte 0x00000000
@@ -3095,7 +3095,7 @@ cinfx_hs01_frozone:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803D74F0
+	.4byte frotext_hs01_frozone1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3111,11 +3111,11 @@ cinfx_hs01_frozone:
 	.4byte 0x00000001
 	.4byte 0x4039999A
 	.4byte 0x4E6E6B28
-	.4byte 0x802ECA02
-	.4byte 0x801ECC14
-	.4byte 0x801ECC78
-	.4byte 0x801ECCEC
-	.4byte 0x801ECCF0
+	.4byte _esc__2_stringBase0_156+810
+	.4byte cinfx_frobridge_update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte cinfx_frobridge_animate__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte cinfx_frobridge_render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte cinfx_frobridge_add_tweaks__FPCcP9NCINEntry
 	.4byte 0x00000006
 	.4byte 0x00000032
 	.4byte 0x00000000
@@ -3132,7 +3132,7 @@ cinfx_hs01_frozone:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803D74FC
+	.4byte frotext_hs01_frozone2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3208,11 +3208,11 @@ cinfx_hs01_elastigirl:
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x40A00000
-	.4byte 0x802ECA15
-	.4byte 0x801ECC14
-	.4byte 0x801ECC78
-	.4byte 0x801ECCEC
-	.4byte 0x801ECCF0
+	.4byte _esc__2_stringBase0_156+829
+	.4byte cinfx_frobridge_update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte cinfx_frobridge_animate__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte cinfx_frobridge_render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte cinfx_frobridge_add_tweaks__FPCcP9NCINEntry
 	.4byte 0x00000005
 	.4byte 0x00000032
 	.4byte 0x00000000
@@ -3229,7 +3229,7 @@ cinfx_hs01_elastigirl:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803D7508
+	.4byte frotext_hs01_elastigirl1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3245,11 +3245,11 @@ cinfx_hs01_elastigirl:
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x40A00000
-	.4byte 0x802ECA2B
-	.4byte 0x801ECC14
-	.4byte 0x801ECC78
-	.4byte 0x801ECCEC
-	.4byte 0x801ECCF0
+	.4byte _esc__2_stringBase0_156+851
+	.4byte cinfx_frobridge_update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte cinfx_frobridge_animate__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte cinfx_frobridge_render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte cinfx_frobridge_add_tweaks__FPCcP9NCINEntry
 	.4byte 0x00000005
 	.4byte 0x00000032
 	.4byte 0x00000000
@@ -3266,7 +3266,7 @@ cinfx_hs01_elastigirl:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803D7514
+	.4byte frotext_hs01_elastigirl2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3282,11 +3282,11 @@ cinfx_hs01_elastigirl:
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECA41
-	.4byte 0x801F15B0
-	.4byte 0x801F1644
+	.4byte _esc__2_stringBase0_156+873
+	.4byte zCinFX_ModelBlur_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_ModelBlur_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1640
+	.4byte zCinFX_ModelBlur_Twk__FPCcP9NCINEntry
 	.4byte 0x00000009
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3303,7 +3303,7 @@ cinfx_hs01_elastigirl:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE478
+	.4byte cinfx_hs01_car_blur
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3319,11 +3319,11 @@ cinfx_hs01_elastigirl:
 	.4byte 0x00000001
 	.4byte 0x40966666
 	.4byte 0x40A66666
-	.4byte 0x802ECA4A
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+882
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -3340,8 +3340,8 @@ cinfx_hs01_elastigirl:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031B210
-	.4byte 0x803D1298
+	.4byte cinfx_hs01_elastigirl_dust
+	.4byte cinfx_hs01_elastigirl_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3392,20 +3392,20 @@ cinfx_hs01_elastigirl:
 	.4byte 0x00000000
 .global cutmap_esc__7_2140
 cutmap_esc__7_2140:
-	.4byte 0x802ECA58
-	.4byte 0x8031A810
+	.4byte _esc__2_stringBase0_156+896
+	.4byte cinfx_hs01_incrediball_intro
 	.4byte 0x00000000
-	.4byte 0x802ECA6F
-	.4byte 0x8031AD70
+	.4byte _esc__2_stringBase0_156+919
+	.4byte cinfx_hs01_incrediball_ending
 	.4byte 0x00000000
-	.4byte 0x802ECA87
-	.4byte 0x8031B054
+	.4byte _esc__2_stringBase0_156+943
+	.4byte cinfx_hs01_frozone
 	.4byte 0x00000000
-	.4byte 0x802ECA94
-	.4byte 0x8031B25C
+	.4byte _esc__2_stringBase0_156+956
+	.4byte cinfx_hs01_elastigirl
 	.4byte 0x00000000
-	.4byte 0x802ECAA4
-	.4byte 0x8031AAF4
+	.4byte _esc__2_stringBase0_156+972
+	.4byte cinfx_hs01_ending
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3520,11 +3520,11 @@ cinfx_nj02_turret_pickup:
 	.4byte 0x00000001
 	.4byte 0x3ECCCCCD
 	.4byte 0x3F19999A
-	.4byte 0x802ECAB0
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+984
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3541,8 +3541,8 @@ cinfx_nj02_turret_pickup:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031B5D4
-	.4byte 0x803D12D4
+	.4byte cinfx_nj02_turret_pickup_dust
+	.4byte cinfx_nj02_turret_pickup_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3557,12 +3557,10 @@ cinfx_nj02_turret_pickup:
 	.4byte 0x00000004
 	.4byte 0x3FD33333
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
 	.4byte 0x00000000
-	.4byte 0x801F23B8
-	.4byte 0x00000000
-	.4byte 0x00000000
+	.4byte zCinFX_Sparks_Once__FPC12zCutsceneMgrP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3579,7 +3577,9 @@ cinfx_nj02_turret_pickup:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803CE4EC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte nj02_turret_pickup_sparks
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3633,11 +3633,11 @@ cinfx_nj02_turret_dropoff:
 	.4byte 0x00000001
 	.4byte 0x3FD9999A
 	.4byte 0x40000000
-	.4byte 0x802ECAB0
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+984
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3654,8 +3654,8 @@ cinfx_nj02_turret_dropoff:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031B5D4
-	.4byte 0x803D12D4
+	.4byte cinfx_nj02_turret_pickup_dust
+	.4byte cinfx_nj02_turret_pickup_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3709,11 +3709,11 @@ cinfx_nj02_ending:
 	.4byte 0x00000005
 	.4byte 0x40800000
 	.4byte 0x41A00000
-	.4byte 0x802ECABC
-	.4byte 0x801F15B0
-	.4byte 0x801F1644
+	.4byte _esc__2_stringBase0_156+996
+	.4byte zCinFX_ModelBlur_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_ModelBlur_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1640
+	.4byte zCinFX_ModelBlur_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3730,7 +3730,7 @@ cinfx_nj02_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE3CC
+	.4byte cinfx_ld04_opening_dash_blur
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3746,11 +3746,11 @@ cinfx_nj02_ending:
 	.4byte 0x00000001
 	.4byte 0x3FE66666
 	.4byte 0x40066666
-	.4byte 0x802ECAC6
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1006
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000019
 	.4byte 0x00000000
@@ -3767,8 +3767,8 @@ cinfx_nj02_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031B620
-	.4byte 0x803D12C0
+	.4byte cinfx_nj02_ending_dust
+	.4byte cinfx_nj02_ending_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3822,11 +3822,11 @@ cinfx_nj02_opening:
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x41200000
-	.4byte 0x802ECABC
-	.4byte 0x801F15B0
-	.4byte 0x801F1644
+	.4byte _esc__2_stringBase0_156+996
+	.4byte zCinFX_ModelBlur_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_ModelBlur_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1640
+	.4byte zCinFX_ModelBlur_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3843,7 +3843,7 @@ cinfx_nj02_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE3CC
+	.4byte cinfx_ld04_opening_dash_blur
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3859,11 +3859,11 @@ cinfx_nj02_opening:
 	.4byte 0x00000001
 	.4byte 0x3F19999A
 	.4byte 0x3F800000
-	.4byte 0x802ECAD7
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1023
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3880,8 +3880,8 @@ cinfx_nj02_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031B588
-	.4byte 0x803D12AC
+	.4byte cinfx_nj02_opening_dust
+	.4byte cinfx_nj02_opening_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3935,11 +3935,11 @@ cinfx_nj02_omni_trees:
 	.4byte 0x00000001
 	.4byte 0x3F4CCCCD
 	.4byte 0x3FB33333
-	.4byte 0x802ECAE3
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1035
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3956,8 +3956,8 @@ cinfx_nj02_omni_trees:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031B66C
-	.4byte 0x803D12E8
+	.4byte cinfx_nj02_rolling_omni_dust
+	.4byte cinfx_nj02_rolling_omni_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3972,11 +3972,11 @@ cinfx_nj02_omni_trees:
 	.4byte 0x00000001
 	.4byte 0x40066666
 	.4byte 0x40133333
-	.4byte 0x802ECAF0
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1048
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3993,8 +3993,8 @@ cinfx_nj02_omni_trees:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031B6B8
-	.4byte 0x803D12FC
+	.4byte cinfx_nj02_opening_omni_dust
+	.4byte cinfx_nj02_opening_omni_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4009,11 +4009,11 @@ cinfx_nj02_omni_trees:
 	.4byte 0x00000003
 	.4byte 0x3F800000
 	.4byte 0x447A0000
-	.4byte 0x802ECAFD
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+1061
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -4030,8 +4030,8 @@ cinfx_nj02_omni_trees:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE4B4
-	.4byte 0x803D1310
+	.4byte cinfx_nj02_omni_trees_smoke
+	.4byte cinfx_nj02_omni_trees_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4046,11 +4046,11 @@ cinfx_nj02_omni_trees:
 	.4byte 0x00000003
 	.4byte 0x3FB33333
 	.4byte 0x447A0000
-	.4byte 0x802ECAFD
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+1061
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -4067,8 +4067,8 @@ cinfx_nj02_omni_trees:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE4B4
-	.4byte 0x803D1310
+	.4byte cinfx_nj02_omni_trees_smoke
+	.4byte cinfx_nj02_omni_trees_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4083,11 +4083,11 @@ cinfx_nj02_omni_trees:
 	.4byte 0x00000003
 	.4byte 0x3FCCCCCD
 	.4byte 0x447A0000
-	.4byte 0x802ECAFD
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+1061
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -4104,8 +4104,8 @@ cinfx_nj02_omni_trees:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE4B4
-	.4byte 0x803D1310
+	.4byte cinfx_nj02_omni_trees_smoke
+	.4byte cinfx_nj02_omni_trees_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4156,20 +4156,20 @@ cinfx_nj02_omni_trees:
 	.4byte 0x00000000
 .global cutmap_esc__7_2145
 cutmap_esc__7_2145:
-	.4byte 0x802ECB0F
-	.4byte 0x8031BBA4
+	.4byte _esc__2_stringBase0_156+1079
+	.4byte cinfx_nj02_opening
 	.4byte 0x00000000
-	.4byte 0x802ECB1C
-	.4byte 0x8031B704
+	.4byte _esc__2_stringBase0_156+1092
+	.4byte cinfx_nj02_turret_pickup
 	.4byte 0x00000000
-	.4byte 0x802ECB2F
-	.4byte 0x8031B8C0
+	.4byte _esc__2_stringBase0_156+1111
+	.4byte cinfx_nj02_turret_dropoff
 	.4byte 0x00000000
-	.4byte 0x802ECB43
-	.4byte 0x8031B9E8
+	.4byte _esc__2_stringBase0_156+1131
+	.4byte cinfx_nj02_ending
 	.4byte 0x00000000
-	.4byte 0x802ECB4F
-	.4byte 0x8031BD60
+	.4byte _esc__2_stringBase0_156+1143
+	.4byte cinfx_nj02_omni_trees
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4200,11 +4200,11 @@ cinfx_ni03_opening_omni:
 	.4byte 0x00000001
 	.4byte 0x3F000000
 	.4byte 0x3F666666
-	.4byte 0x802ECB5F
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1159
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -4221,8 +4221,8 @@ cinfx_ni03_opening_omni:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031B620
-	.4byte 0x803D1324
+	.4byte cinfx_nj02_ending_dust
+	.4byte cinfx_ni03_opening_omni_dust1_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4237,11 +4237,11 @@ cinfx_ni03_opening_omni:
 	.4byte 0x00000001
 	.4byte 0x40000000
 	.4byte 0x4019999A
-	.4byte 0x802ECB70
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1176
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -4258,8 +4258,8 @@ cinfx_ni03_opening_omni:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031B620
-	.4byte 0x803D1338
+	.4byte cinfx_nj02_ending_dust
+	.4byte cinfx_ni03_opening_omni_dust2_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4274,11 +4274,11 @@ cinfx_ni03_opening_omni:
 	.4byte 0x00000001
 	.4byte 0x400CCCCD
 	.4byte 0x40200000
-	.4byte 0x802ECB81
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1193
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -4295,8 +4295,8 @@ cinfx_ni03_opening_omni:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031C120
-	.4byte 0x803D134C
+	.4byte cinfx_ni03_opening_omni_dust3
+	.4byte cinfx_ni03_opening_omni_dust3_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4311,11 +4311,11 @@ cinfx_ni03_opening_omni:
 	.4byte 0x0000000E
 	.4byte 0x40400000
 	.4byte 0x41200000
-	.4byte 0x802ECB95
-	.4byte 0x801F2590
-	.4byte 0x801F2614
+	.4byte _esc__2_stringBase0_156+1213
+	.4byte zCinFX_Model_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Model_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F2610
+	.4byte zCinFX_Model_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000005
 	.4byte 0x00000000
@@ -4387,11 +4387,11 @@ cinfx_ni03_ending:
 	.4byte 0x0000000E
 	.4byte 0x00000000
 	.4byte 0x40000000
-	.4byte 0x802ECB95
-	.4byte 0x801F2590
-	.4byte 0x801F2614
+	.4byte _esc__2_stringBase0_156+1213
+	.4byte zCinFX_Model_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Model_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F2610
+	.4byte zCinFX_Model_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000005
 	.4byte 0x00000000
@@ -4484,20 +4484,14 @@ cinfx_ft01_dash_vine:
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC96C
-	.4byte 0x801F15B0
-	.4byte 0x801F1644
+	.4byte _esc__2_stringBase0_156+660
+	.4byte zCinFX_ModelBlur_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_ModelBlur_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1640
-	.4byte 0x00000000
-	.4byte 0x00000000
+	.4byte zCinFX_ModelBlur_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4505,7 +4499,13 @@ cinfx_ft01_dash_vine:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE53C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte cinfx_ft01_dash_vine_blur
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4521,11 +4521,11 @@ cinfx_ft01_dash_vine:
 	.4byte 0x00000001
 	.4byte 0x4048F5C3
 	.4byte 0x447A0000
-	.4byte 0x802ECBC5
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1261
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4542,8 +4542,8 @@ cinfx_ft01_dash_vine:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031C578
-	.4byte 0x803D1360
+	.4byte cinfx_ft01_dash_vine_dust
+	.4byte cinfx_ft01_dash_vine_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4558,11 +4558,11 @@ cinfx_ft01_dash_vine:
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x3F000000
-	.4byte 0x802ECBC5
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1261
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4579,8 +4579,8 @@ cinfx_ft01_dash_vine:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031C578
-	.4byte 0x803D1360
+	.4byte cinfx_ft01_dash_vine_dust
+	.4byte cinfx_ft01_dash_vine_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4634,11 +4634,11 @@ cinfx_om03_opening:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7B1
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+217
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4655,7 +4655,7 @@ cinfx_om03_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318330
+	.4byte bv_boss_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4671,11 +4671,11 @@ cinfx_om03_opening:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7C7
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+239
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4692,7 +4692,7 @@ cinfx_om03_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803183F0
+	.4byte bv_boss_helicopter_tail_blade_2
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4708,11 +4708,11 @@ cinfx_om03_opening:
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x4BFE502C
-	.4byte 0x802ECBDD
-	.4byte 0x801ECC14
-	.4byte 0x801ECC78
-	.4byte 0x801ECCEC
-	.4byte 0x801ECCF0
+	.4byte _esc__2_stringBase0_156+1285
+	.4byte cinfx_frobridge_update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte cinfx_frobridge_animate__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte cinfx_frobridge_render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte cinfx_frobridge_add_tweaks__FPCcP9NCINEntry
 	.4byte 0x00000004
 	.4byte 0x00000033
 	.4byte 0x00000000
@@ -4729,7 +4729,7 @@ cinfx_om03_opening:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803D7520
+	.4byte frotext_om03_opening1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4784,11 +4784,11 @@ cinfx_om03_ending:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECBEE
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+1302
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4805,7 +4805,7 @@ cinfx_om03_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318450
+	.4byte bv_police_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4821,11 +4821,11 @@ cinfx_om03_ending:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECC0B
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+1331
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4842,7 +4842,7 @@ cinfx_om03_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803184B0
+	.4byte bv_police_helicopter_tail_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4858,11 +4858,11 @@ cinfx_om03_ending:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECC28
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+1360
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4879,7 +4879,7 @@ cinfx_om03_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803181B0
+	.4byte bv_hench4_fly_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4895,11 +4895,11 @@ cinfx_om03_ending:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECC36
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+1374
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4916,7 +4916,7 @@ cinfx_om03_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318150
+	.4byte bv_hench3_fly_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4971,11 +4971,11 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000003
 	.4byte 0x409CCCCD
 	.4byte 0x40E00000
-	.4byte 0x802EC8B8
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+480
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000004
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4992,8 +4992,8 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE280
-	.4byte 0x803D1248
+	.4byte cinfx_om01_opening_bv_rocket_smoke
+	.4byte cinfx_om01_opening_bv_rocket_1_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5008,11 +5008,11 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000003
 	.4byte 0x40A9999A
 	.4byte 0x40E00000
-	.4byte 0x802EC8C7
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+495
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5029,8 +5029,8 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE280
-	.4byte 0x803D125C
+	.4byte cinfx_om01_opening_bv_rocket_smoke
+	.4byte cinfx_om01_opening_bv_rocket_2_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5045,11 +5045,11 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000003
 	.4byte 0x40E00000
 	.4byte 0x447A0000
-	.4byte 0x802EC8B8
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+480
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000004
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5066,8 +5066,8 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE280
-	.4byte 0x803D1248
+	.4byte cinfx_om01_opening_bv_rocket_smoke
+	.4byte cinfx_om01_opening_bv_rocket_1_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5082,11 +5082,11 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000003
 	.4byte 0x40E00000
 	.4byte 0x447A0000
-	.4byte 0x802EC8C7
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+495
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5103,8 +5103,8 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE280
-	.4byte 0x803D125C
+	.4byte cinfx_om01_opening_bv_rocket_smoke
+	.4byte cinfx_om01_opening_bv_rocket_2_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5119,11 +5119,11 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECBEE
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+1302
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5140,7 +5140,7 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318450
+	.4byte bv_police_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5156,11 +5156,11 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7B1
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+217
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5177,7 +5177,7 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318330
+	.4byte bv_boss_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5193,11 +5193,11 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7C7
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+239
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5214,7 +5214,7 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318390
+	.4byte bv_boss_helicopter_tail_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5230,11 +5230,11 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECC0B
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+1331
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5251,7 +5251,7 @@ cinfx_om03_copter_ride_02:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318510
+	.4byte bv_police_helicopter_tail_blade_2
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5306,11 +5306,11 @@ cinfx_om03_copter_ride_01:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECBEE
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+1302
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5327,7 +5327,7 @@ cinfx_om03_copter_ride_01:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318450
+	.4byte bv_police_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5343,11 +5343,11 @@ cinfx_om03_copter_ride_01:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7B1
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+217
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5364,7 +5364,7 @@ cinfx_om03_copter_ride_01:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318330
+	.4byte bv_boss_helicopter_main_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5380,11 +5380,11 @@ cinfx_om03_copter_ride_01:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC7C7
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+239
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5401,7 +5401,7 @@ cinfx_om03_copter_ride_01:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318390
+	.4byte bv_boss_helicopter_tail_blade
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5417,11 +5417,11 @@ cinfx_om03_copter_ride_01:
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECC0B
-	.4byte 0x801F2168
-	.4byte 0x801F2290
+	.4byte _esc__2_stringBase0_156+1331
+	.4byte zCinFX_Blade_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Blade_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F228C
+	.4byte zCinFX_Blade_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5438,7 +5438,7 @@ cinfx_om03_copter_ride_01:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x80318510
+	.4byte bv_police_helicopter_tail_blade_2
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5564,9 +5564,9 @@ cinfx_ft03_tower_fall:
 	.4byte 0x00000008
 	.4byte 0x4099999A
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5585,7 +5585,7 @@ cinfx_ft03_tower_fall:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC9D2
+	.4byte _esc__2_stringBase0_156+762
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5601,11 +5601,11 @@ cinfx_ft03_tower_fall:
 	.4byte 0x00000001
 	.4byte 0x4099999A
 	.4byte 0x40A66666
-	.4byte 0x802EC8F8
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+544
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -5622,8 +5622,8 @@ cinfx_ft03_tower_fall:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031C120
-	.4byte 0x803D1388
+	.4byte cinfx_ni03_opening_omni_dust3
+	.4byte cinfx_ft03_tower_fall_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5677,11 +5677,11 @@ cinfx_ft04_ending:
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x3F19999A
-	.4byte 0x802ECBC5
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1261
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5698,8 +5698,8 @@ cinfx_ft04_ending:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031D620
-	.4byte 0x803D1374
+	.4byte cinfx_ft04_ending_dust
+	.4byte cinfx_ft04_ending_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5714,11 +5714,11 @@ cinfx_ft04_ending:
 	.4byte 0x0000000D
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC9B3
-	.4byte 0x801F1CB8
-	.4byte 0x801F1D3C
-	.4byte 0x801F2140
-	.4byte 0x801F1A38
+	.4byte _esc__2_stringBase0_156+731
+	.4byte zCinFX_Incrediball_Update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Incrediball_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
+	.4byte zCinFX_Incrediball_Render__FPC12zCutsceneMgrP9NCINEntry
+	.4byte zCinFX_IB_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5735,7 +5735,7 @@ cinfx_ft04_ending:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8031D560
+	.4byte cinfx_ft03_ending_ball
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5790,20 +5790,14 @@ cinfx_rs01_opening_mr_i:
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC96C
-	.4byte 0x801F15B0
-	.4byte 0x801F1644
+	.4byte _esc__2_stringBase0_156+660
+	.4byte zCinFX_ModelBlur_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_ModelBlur_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1640
-	.4byte 0x00000000
-	.4byte 0x00000000
+	.4byte zCinFX_ModelBlur_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5811,7 +5805,13 @@ cinfx_rs01_opening_mr_i:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE5F0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte cinfx_rs01_opening_mr_i_blur
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5827,9 +5827,9 @@ cinfx_rs01_opening_mr_i:
 	.4byte 0x0000000C
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801F1938
-	.4byte 0x801F1950
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_Violet_Update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Violet_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000003
@@ -5848,7 +5848,7 @@ cinfx_rs01_opening_mr_i:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803CE62C
+	.4byte cinfx_rs01_opening_mr_i_violet
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5903,20 +5903,14 @@ cinfx_rs01_opening_elastigirl:
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802EC96C
-	.4byte 0x801F15B0
-	.4byte 0x801F1644
+	.4byte _esc__2_stringBase0_156+660
+	.4byte zCinFX_ModelBlur_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_ModelBlur_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1640
-	.4byte 0x00000000
-	.4byte 0x00000000
+	.4byte zCinFX_ModelBlur_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5924,7 +5918,13 @@ cinfx_rs01_opening_elastigirl:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE5F0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte cinfx_rs01_opening_mr_i_blur
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5940,9 +5940,9 @@ cinfx_rs01_opening_elastigirl:
 	.4byte 0x0000000C
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECCBA
-	.4byte 0x801F1938
-	.4byte 0x801F1950
+	.4byte _esc__2_stringBase0_156+1506
+	.4byte zCinFX_Violet_Update__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Violet_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000003
@@ -5961,7 +5961,7 @@ cinfx_rs01_opening_elastigirl:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803CE62C
+	.4byte cinfx_rs01_opening_mr_i_violet
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6037,20 +6037,14 @@ cinfx_nj01_opening:
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECCE6
-	.4byte 0x801F15B0
-	.4byte 0x801F1644
+	.4byte _esc__2_stringBase0_156+1550
+	.4byte zCinFX_ModelBlur_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_ModelBlur_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1640
-	.4byte 0x00000000
-	.4byte 0x00000000
+	.4byte zCinFX_ModelBlur_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6058,7 +6052,13 @@ cinfx_nj01_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE66C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte cinfx_nj01_opening_blur
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6074,20 +6074,14 @@ cinfx_nj01_opening:
 	.4byte 0x00000001
 	.4byte 0x3FC00000
 	.4byte 0x3FF33333
-	.4byte 0x802ECCEF
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1559
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
-	.4byte 0x00000000
-	.4byte 0x00000000
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6095,8 +6089,14 @@ cinfx_nj01_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031DD5C
-	.4byte 0x803D139C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte cinfx_nj01_opening_dust
+	.4byte cinfx_nj01_opening_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6111,20 +6111,11 @@ cinfx_nj01_opening:
 	.4byte 0x00000003
 	.4byte 0x4114CCCD
 	.4byte 0x41180000
-	.4byte 0x802ECCFB
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+1571
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x3F800000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x3F800000
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6132,8 +6123,17 @@ cinfx_nj01_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE6A8
-	.4byte 0x803D13B0
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte cinfx_nj01_break_open_smoke
+	.4byte cinfx_nj01_break_open_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6229,11 +6229,11 @@ cinfx_nj03_opening:
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECABC
-	.4byte 0x801F15B0
-	.4byte 0x801F1644
+	.4byte _esc__2_stringBase0_156+996
+	.4byte zCinFX_ModelBlur_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_ModelBlur_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F1640
+	.4byte zCinFX_ModelBlur_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6250,7 +6250,7 @@ cinfx_nj03_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE6F8
+	.4byte cinfx_nj03_opening_blur
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6266,11 +6266,11 @@ cinfx_nj03_opening:
 	.4byte 0x00000001
 	.4byte 0x3FACCCCD
 	.4byte 0x3FD9999A
-	.4byte 0x802EC76C
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+148
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -6287,8 +6287,8 @@ cinfx_nj03_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031DFF8
-	.4byte 0x803D13C4
+	.4byte cinfx_nj03_opening_hard_landing_dust
+	.4byte cinfx_nj03_opening_hard_landing_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6303,11 +6303,11 @@ cinfx_nj03_opening:
 	.4byte 0x00000001
 	.4byte 0x40A1999A
 	.4byte 0x40A9999A
-	.4byte 0x802ECD20
-	.4byte 0x801F0F24
-	.4byte 0x801F0F9C
+	.4byte _esc__2_stringBase0_156+1608
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_LightDust_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F1C
+	.4byte zCinFX_LightDust_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
@@ -6324,8 +6324,8 @@ cinfx_nj03_opening:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x8031E044
-	.4byte 0x803D13D8
+	.4byte cinfx_nj03_opening_omni_landing_dust
+	.4byte cinfx_nj03_opening_omni_landing_dust_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6340,11 +6340,11 @@ cinfx_nj03_opening:
 	.4byte 0x0000000E
 	.4byte 0x00000000
 	.4byte 0x41200000
-	.4byte 0x802ECB95
-	.4byte 0x801F2590
-	.4byte 0x801F2614
+	.4byte _esc__2_stringBase0_156+1213
+	.4byte zCinFX_Model_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Model_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F2610
+	.4byte zCinFX_Model_Twk__FPCcP9NCINEntry
 	.4byte 0x00000000
 	.4byte 0x00000005
 	.4byte 0x00000000
@@ -6416,11 +6416,11 @@ cinfx_ni01_velocipodin:
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECAFD
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+1061
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6437,8 +6437,8 @@ cinfx_ni01_velocipodin:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE74C
-	.4byte 0x803D13EC
+	.4byte cinfx_ni01_damaged_velocipod_smoke
+	.4byte cinfx_ni01_damaged_velocipod_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6492,11 +6492,11 @@ cinfx_ni01_velocipodout:
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x447A0000
-	.4byte 0x802ECAFD
-	.4byte 0x801F0F24
-	.4byte 0x801F110C
+	.4byte _esc__2_stringBase0_156+1061
+	.4byte zCinFX_Particle_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Smoke_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
-	.4byte 0x801F0F20
+	.4byte zCinFX_Smoke_Twk__FPCcP9NCINEntry
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6513,8 +6513,8 @@ cinfx_ni01_velocipodout:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x803CE74C
-	.4byte 0x803D13EC
+	.4byte cinfx_ni01_damaged_velocipod_smoke
+	.4byte cinfx_ni01_damaged_velocipod_smoke_settings
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6529,9 +6529,9 @@ cinfx_ni01_velocipodout:
 	.4byte 0x00000008
 	.4byte 0x40400000
 	.4byte 0x447A0000
-	.4byte 0x802EC82D
-	.4byte 0x801E9EF8
-	.4byte 0x801F1518
+	.4byte _esc__2_stringBase0_156+341
+	.4byte zCinFX_CycleOnce_Upd__FPC12zCutsceneMgrP9NCINEntryi
+	.4byte zCinFX_Explosion_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUiRUi
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
@@ -6550,7 +6550,7 @@ cinfx_ni01_velocipodout:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
-	.4byte 0x802EC82E
+	.4byte _esc__2_stringBase0_156+342
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9546,7 +9546,7 @@ cinfx_om04_bomb_glow:
 	.4byte 0x3ECCCCCD
 	.4byte 0x3F4CCCCD
 	.4byte 0x3D4CCCCD
-	.4byte 0x802EC750
+	.4byte _esc__2_stringBase0_156+120
 	.4byte 0x401C7AE1
 	.4byte 0x401C7AE1
 	.4byte 0x401C7AE1
@@ -9556,11 +9556,11 @@ cinfx_om04_bomb_glow:
 	.4byte 0x00000000
 .global cutmap_esc__7_2094
 cutmap_esc__7_2094:
-	.4byte 0x802EC80E
-	.4byte 0x80318608
+	.4byte _esc__2_stringBase0_156+310
+	.4byte cinfx_om04_opening_bv
 	.4byte 0x00000000
-	.4byte 0x802EC81E
-	.4byte 0x80318BD0
+	.4byte _esc__2_stringBase0_156+326
+	.4byte cinfx_om04_ending_bv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9645,17 +9645,17 @@ om01_towers_sparks:
 	.4byte 0x40A00000
 .global cutmap_esc__7_2099
 cutmap_esc__7_2099:
-	.4byte 0x802EC930
-	.4byte 0x803199B4
+	.4byte _esc__2_stringBase0_156+600
+	.4byte cinfx_om01_opening
 	.4byte 0x00000000
-	.4byte 0x802EC93D
-	.4byte 0x80319E54
+	.4byte _esc__2_stringBase0_156+613
+	.4byte cinfx_om01_towers
 	.4byte 0x00000000
-	.4byte 0x802EC948
-	.4byte 0x80318E6C
+	.4byte _esc__2_stringBase0_156+624
+	.4byte cinfx_om01_heli_escape
 	.4byte 0x00000000
-	.4byte 0x802EC959
-	.4byte 0x80319480
+	.4byte _esc__2_stringBase0_156+641
+	.4byte cinfx_om01_frozone_chase
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9695,11 +9695,11 @@ cinfx_ld04_opening_dash_smoke:
 	.4byte 0x00000000
 .global cutmap_esc__7_2135
 cutmap_esc__7_2135:
-	.4byte 0x802EC990
-	.4byte 0x8031A2AC
+	.4byte _esc__2_stringBase0_156+696
+	.4byte cinfx_ld04_opening_dash
 	.4byte 0x00000000
-	.4byte 0x802EC9A2
-	.4byte 0x8031A4FC
+	.4byte _esc__2_stringBase0_156+714
+	.4byte cinfx_ld04_ending_dash
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9759,11 +9759,11 @@ nj02_turret_pickup_sparks:
 	.4byte 0x40A00000
 .global cutmap_esc__7_2150
 cutmap_esc__7_2150:
-	.4byte 0x802ECBA7
-	.4byte 0x8031C16C
+	.4byte _esc__2_stringBase0_156+1231
+	.4byte cinfx_ni03_opening_omni
 	.4byte 0x00000000
-	.4byte 0x802ECBB9
-	.4byte 0x8031C450
+	.4byte _esc__2_stringBase0_156+1249
+	.4byte cinfx_ni03_ending
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9787,36 +9787,36 @@ cinfx_ft01_dash_vine_blur:
 	.4byte 0x00000000
 .global cutmap_esc__7_2155
 cutmap_esc__7_2155:
-	.4byte 0x802ECBCE
-	.4byte 0x8031C5C4
+	.4byte _esc__2_stringBase0_156+1270
+	.4byte cinfx_ft01_dash_vine
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global cutmap_esc__7_2160
 cutmap_esc__7_2160:
-	.4byte 0x802ECC44
-	.4byte 0x8031C814
+	.4byte _esc__2_stringBase0_156+1388
+	.4byte cinfx_om03_opening
 	.4byte 0x00000000
-	.4byte 0x802ECC51
-	.4byte 0x8031CA64
+	.4byte _esc__2_stringBase0_156+1401
+	.4byte cinfx_om03_ending
 	.4byte 0x00000000
-	.4byte 0x802ECC5D
-	.4byte 0x8031D27C
+	.4byte _esc__2_stringBase0_156+1413
+	.4byte cinfx_om03_copter_ride_01
 	.4byte 0x00000000
-	.4byte 0x802ECC71
-	.4byte 0x8031CD48
+	.4byte _esc__2_stringBase0_156+1433
+	.4byte cinfx_om03_copter_ride_02
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global cutmap_esc__7_2165
 cutmap_esc__7_2165:
-	.4byte 0x802ECC85
-	.4byte 0x8031D66C
+	.4byte _esc__2_stringBase0_156+1453
+	.4byte cinfx_ft03_tower_fall
 	.4byte 0x00000000
-	.4byte 0x802ECC95
-	.4byte 0x8031D828
+	.4byte _esc__2_stringBase0_156+1469
+	.4byte cinfx_ft04_ending
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9846,16 +9846,16 @@ cinfx_rs01_opening_mr_i_violet:
 	.4byte 0x00000000
 .global cutmap_esc__7_2170
 cutmap_esc__7_2170:
-	.4byte 0x802ECCA8
-	.4byte 0x8031D9E4
+	.4byte _esc__2_stringBase0_156+1488
+	.4byte cinfx_rs01_opening_mr_i
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global cutmap_esc__7_2175
 cutmap_esc__7_2175:
-	.4byte 0x802ECCCE
-	.4byte 0x8031DBA0
+	.4byte _esc__2_stringBase0_156+1526
+	.4byte cinfx_rs01_opening_elastigirl
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9895,8 +9895,8 @@ cinfx_nj01_break_open_smoke:
 	.4byte 0x00000000
 .global cutmap_esc__7_2180
 cutmap_esc__7_2180:
-	.4byte 0x802ECD13
-	.4byte 0x8031DDA8
+	.4byte _esc__2_stringBase0_156+1595
+	.4byte cinfx_nj01_opening
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9920,8 +9920,8 @@ cinfx_nj03_opening_blur:
 	.4byte 0x00000000
 .global cutmap_esc__7_2185
 cutmap_esc__7_2185:
-	.4byte 0x802ECD32
-	.4byte 0x8031E090
+	.4byte _esc__2_stringBase0_156+1626
+	.4byte cinfx_nj03_opening
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9944,11 +9944,11 @@ cinfx_ni01_damaged_velocipod_smoke:
 	.4byte 0x00000000
 .global cutmap_esc__7_2190
 cutmap_esc__7_2190:
-	.4byte 0x802ECD3F
-	.4byte 0x8031E374
+	.4byte _esc__2_stringBase0_156+1639
+	.4byte cinfx_ni01_velocipodin
 	.4byte 0x00000000
-	.4byte 0x802ECD50
-	.4byte 0x8031E49C
+	.4byte _esc__2_stringBase0_156+1656
+	.4byte cinfx_ni01_velocipodout
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9962,7 +9962,7 @@ __vt__226RegisterOnFirstEmitSystem_esc__0_175zParticleEmitterConeSurface_esc__0_
 __vt__18CinSparkDiskSystem:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801F2A88
+	.4byte Register__18CinSparkDiskSystemFv
 
 .section .sdata2
 
@@ -10006,52 +10006,52 @@ _esc__2_1984:
 .global frotext_om01_heli_escape1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 frotext_om01_heli_escape1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.4byte 0x00000001
-	.4byte 0x802EA248
+	.4byte record_om01_heli_escape__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x000000D9
 .global frotext_om01_heli_escape2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 frotext_om01_heli_escape2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.4byte 0x00000001
-	.4byte 0x802EA248
+	.4byte record_om01_heli_escape__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x000000D9
 .global frotext_om01_heli_escape3__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 frotext_om01_heli_escape3__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.4byte 0x00000000
-	.4byte 0x802EA248
+	.4byte record_om01_heli_escape__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x000000D9
 .global frotext_om01_frozone_chase1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 frotext_om01_frozone_chase1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.4byte 0x00000001
-	.4byte 0x802EAFD8
+	.4byte record_om01_frozone_chase__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000042
 .global frotext_om01_frozone_chase2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 frotext_om01_frozone_chase2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.4byte 0x00000000
-	.4byte 0x802EAFD8
+	.4byte record_om01_frozone_chase__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000042
 .global frotext_hs01_frozone1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 frotext_hs01_frozone1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.4byte 0x00000001
-	.4byte 0x802EB3F8
+	.4byte record_hs01_frozone__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000065
 .global frotext_hs01_frozone2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 frotext_hs01_frozone2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.4byte 0x00000000
-	.4byte 0x802EB3F8
+	.4byte record_hs01_frozone__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000065
 .global frotext_hs01_elastigirl1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 frotext_hs01_elastigirl1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.4byte 0x00000001
-	.4byte 0x802EBA48
+	.4byte record_hs01_elastigirl__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000028
 .global frotext_hs01_elastigirl2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 frotext_hs01_elastigirl2__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.4byte 0x00000002
-	.4byte 0x802EBA48
+	.4byte record_hs01_elastigirl__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x00000028
 .global frotext_om03_opening1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 frotext_om03_opening1__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_:
 	.4byte 0x00000000
-	.4byte 0x802EBCC8
+	.4byte record_om03_opening__23_esc__2_unnamed_esc__2_zCineFXIN_cpp_esc__2_
 	.4byte 0x000000A1
 	.4byte 0x00000000
 

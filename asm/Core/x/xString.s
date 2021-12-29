@@ -6,18 +6,18 @@
 
 .global _esc__2_1346
 _esc__2_1346:
-	.4byte 0x8006DD50
-	.4byte 0x8006D6A0
-	.4byte 0x8006D6E4
-	.4byte 0x8006D738
-	.4byte 0x8006D79C
-	.4byte 0x8006D810
-	.4byte 0x8006D894
-	.4byte 0x8006D928
-	.4byte 0x8006D9CC
-	.4byte 0x8006DA80
-	.4byte 0x8006DB44
-	.4byte 0x8006DC18
+	.4byte find_char__FRC6substrRC6substr+1784
+	.4byte find_char__FRC6substrRC6substr+72
+	.4byte find_char__FRC6substrRC6substr+140
+	.4byte find_char__FRC6substrRC6substr+224
+	.4byte find_char__FRC6substrRC6substr+324
+	.4byte find_char__FRC6substrRC6substr+440
+	.4byte find_char__FRC6substrRC6substr+572
+	.4byte find_char__FRC6substrRC6substr+720
+	.4byte find_char__FRC6substrRC6substr+884
+	.4byte find_char__FRC6substrRC6substr+1064
+	.4byte find_char__FRC6substrRC6substr+1260
+	.4byte find_char__FRC6substrRC6substr+1472
 
 .if 0
 

@@ -4,26 +4,26 @@
 
 .global astnames
 astnames:
-	.4byte 0x802D9DB0
-	.4byte 0x802D9DB6
-	.4byte 0x802D9DBC
-	.4byte 0x802D9DC2
-	.4byte 0x802D9DC8
-	.4byte 0x802D9DCE
-	.4byte 0x802D9DD4
-	.4byte 0x802D9DDA
-	.4byte 0x802D9DE0
-	.4byte 0x802D9DE6
-	.4byte 0x802D9DEC
-	.4byte 0x802D9DF2
-	.4byte 0x802D9DF8
-	.4byte 0x802D9DFE
-	.4byte 0x802D9E04
-	.4byte 0x802D9E0A
-	.4byte 0x802D9E10
-	.4byte 0x802D9E16
-	.4byte 0x802D9E1C
-	.4byte 0x802D9E22
+	.4byte _esc__2_stringBase0_34
+	.4byte _esc__2_stringBase0_34+6
+	.4byte _esc__2_stringBase0_34+12
+	.4byte _esc__2_stringBase0_34+18
+	.4byte _esc__2_stringBase0_34+24
+	.4byte _esc__2_stringBase0_34+30
+	.4byte _esc__2_stringBase0_34+36
+	.4byte _esc__2_stringBase0_34+42
+	.4byte _esc__2_stringBase0_34+48
+	.4byte _esc__2_stringBase0_34+54
+	.4byte _esc__2_stringBase0_34+60
+	.4byte _esc__2_stringBase0_34+66
+	.4byte _esc__2_stringBase0_34+72
+	.4byte _esc__2_stringBase0_34+78
+	.4byte _esc__2_stringBase0_34+84
+	.4byte _esc__2_stringBase0_34+90
+	.4byte _esc__2_stringBase0_34+96
+	.4byte _esc__2_stringBase0_34+102
+	.4byte _esc__2_stringBase0_34+108
+	.4byte _esc__2_stringBase0_34+114
 
 .section .rodata
 

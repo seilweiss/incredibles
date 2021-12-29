@@ -6,22 +6,22 @@
 sEffectInitFuncs:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800DD930
-	.4byte 0x800DD930
-	.4byte 0x800DD930
-	.4byte 0x800DD920
-	.4byte 0x800DD920
-	.4byte 0x800DD920
-	.4byte 0x800DD924
-	.4byte 0x800DD924
-	.4byte 0x800DD924
-	.4byte 0x800DD928
-	.4byte 0x800DD928
-	.4byte 0x800DD928
-	.4byte 0x800DD92C
-	.4byte 0x800DD92C
-	.4byte 0x800DD92C
-	.4byte 0x800DDB7C
+	.4byte zLightEffectInitFlicker__FP7_zLight
+	.4byte zLightEffectInitFlicker__FP7_zLight
+	.4byte zLightEffectInitFlicker__FP7_zLight
+	.4byte zLightEffectInitStrobe__FP7_zLight
+	.4byte zLightEffectInitStrobe__FP7_zLight
+	.4byte zLightEffectInitStrobe__FP7_zLight
+	.4byte zLightEffectInitDim__FP7_zLight
+	.4byte zLightEffectInitDim__FP7_zLight
+	.4byte zLightEffectInitDim__FP7_zLight
+	.4byte zLightEffectInitHalfDim__FP7_zLight
+	.4byte zLightEffectInitHalfDim__FP7_zLight
+	.4byte zLightEffectInitHalfDim__FP7_zLight
+	.4byte zLightEffectInitRandomCol__FP7_zLight
+	.4byte zLightEffectInitRandomCol__FP7_zLight
+	.4byte zLightEffectInitRandomCol__FP7_zLight
+	.4byte zLightEffectInitCauldron__FP7_zLight
 
 .section .sdata2
 

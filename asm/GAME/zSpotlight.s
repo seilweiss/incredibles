@@ -33,8 +33,8 @@ aura_cone_atomics_size__24_esc__2_unnamed_esc__2_zSpotlight_cpp_esc__2_:
 __vt__Q210zSpotlight17light_volume_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801B1784
-	.4byte 0x801AC64C
+	.4byte render__Q210zSpotlight17light_volume_typeFv
+	.4byte render_immediate_pass__12xLightVolumeF10xColor_tagbb
 	.4byte 0x00000000
 	.4byte 0x00000000
 

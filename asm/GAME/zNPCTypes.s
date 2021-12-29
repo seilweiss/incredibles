@@ -6,215 +6,215 @@
 __vt__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x800AB4B4
-	.4byte 0x800FEDDC
-	.4byte 0x800AB4C4
-	.4byte 0x800AB4CC
-	.4byte 0x800FF328
-	.4byte 0x800AB4D4
-	.4byte 0x800AB4D8
-	.4byte 0x800AB4DC
-	.4byte 0x800AB4E0
-	.4byte 0x800AB4E4
-	.4byte 0x800A529C
-	.4byte 0x800AB4E8
-	.4byte 0x801400C8
-	.4byte 0x800AB4F0
-	.4byte 0x800A535C
-	.4byte 0x800AB4F4
-	.4byte 0x800AB4F8
-	.4byte 0x800AB4FC
-	.4byte 0x801400C0
-	.4byte 0x800AB504
-	.4byte 0x800AB508
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x800AB524
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x800FF324
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte getName__8behaviorFv
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__8behaviorFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte damage__8behaviorFR17zCombatDamageInfo
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__8behaviorFP10xAnimTable
+	.4byte add_transitions__8behaviorFP10xAnimTable
+	.4byte exit_state__8behaviorFv
+	.4byte kill__8behaviorFv
+	.4byte update__8behaviorFf
+	.4byte setup__8behaviorFv
+	.4byte exit__8behaviorFv
+	.4byte init__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Fv
+	.4byte scene_setup__8behaviorFv
+	.4byte reset__8behaviorFv
+	.4byte render__8behaviorFv
+	.4byte render_extra__8behaviorFv
+	.4byte exclusive__8behaviorFv
+	.4byte runnable__Q24zNPC35bone_container_esc__0_Q24zNPC10water_bone_esc__1_Ff
+	.4byte before_anim_matrices__8behaviorFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__8behaviorF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__8behaviorFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
 .global __vt__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_
 __vt__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x8013FF68
-	.4byte 0x800FEDDC
-	.4byte 0x80130430
-	.4byte 0x800AB4CC
-	.4byte 0x800FF328
-	.4byte 0x801DA3CC
-	.4byte 0x801DA508
-	.4byte 0x801DAA78
-	.4byte 0x800AB4E0
-	.4byte 0x801DAAC8
-	.4byte 0x801DA730
-	.4byte 0x800AB4E8
-	.4byte 0x80140240
-	.4byte 0x800AB4F0
-	.4byte 0x8013FF78
-	.4byte 0x800AB4F4
-	.4byte 0x800AB4F8
-	.4byte 0x800AB4FC
-	.4byte 0x801DA98C
-	.4byte 0x800AB504
-	.4byte 0x801DA2E8
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x8013FFA0
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x801DA894
-	.4byte 0x801305A0
-	.4byte 0x80130688
-	.4byte 0x80130B80
-	.4byte 0x8013089C
-	.4byte 0x80130A24
-	.4byte 0x80130DCC
-	.4byte 0x80130CC0
-	.4byte 0x801402F8
-	.4byte 0x80140294
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte getName__Q24zNPC10run_streamFv
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__Q24zNPC8npc_moveFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte damage__8behaviorFR17zCombatDamageInfo
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__Q24zNPC10run_streamFP10xAnimTable
+	.4byte add_transitions__Q24zNPC10run_streamFP10xAnimTable
+	.4byte exit_state__Q24zNPC10run_streamFv
+	.4byte kill__8behaviorFv
+	.4byte update__Q24zNPC10run_streamFf
+	.4byte setup__Q24zNPC10run_streamFv
+	.4byte exit__8behaviorFv
+	.4byte init__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv
+	.4byte scene_setup__8behaviorFv
+	.4byte reset__Q24zNPC10run_streamFv
+	.4byte render__8behaviorFv
+	.4byte render_extra__8behaviorFv
+	.4byte exclusive__8behaviorFv
+	.4byte runnable__Q24zNPC10run_streamFf
+	.4byte before_anim_matrices__8behaviorFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__Q24zNPC10run_streamF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__Q24zNPC10run_streamFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__Q24zNPC10run_streamFPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
+	.4byte jump_to__Q24zNPC8npc_moveFR5xVec3fb
+	.4byte move_to__Q24zNPC8npc_moveFRC5xVec3fbbb
+	.4byte move_away_from__Q24zNPC8npc_moveFRC5xVec3f
+	.4byte physics_move__Q24zNPC8npc_moveFf
+	.4byte jump_update__Q24zNPC8npc_moveFfb
+	.4byte step_move__Q24zNPC8npc_moveFRC5xVec3ff
+	.4byte have_arrived__Q24zNPC8npc_moveCFv
+	.4byte turn_on__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv
+	.4byte turn_off__Q24zNPC27stream_esc__0_Q24zNPC10water_bone_esc__1_Fv
 .global __vt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_
 __vt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8013FFA8
-	.4byte 0x80188AB8
-	.4byte 0x80188660
-	.4byte 0x800FE2FC
-	.4byte 0x80140058
-	.4byte 0x8012B780
-	.4byte 0x801890BC
-	.4byte 0x8018911C
-	.4byte 0x800FDEC8
-	.4byte 0x800FEABC
-	.4byte 0x800FEAC0
-	.4byte 0x800FE0A8
-	.4byte 0x80188D54
-	.4byte 0x80188DB0
-	.4byte 0x8012B8C8
-	.4byte 0x801210A4
-	.4byte 0x80188A88
-	.4byte 0x80188794
-	.4byte 0x801887C4
-	.4byte 0x80189AA0
-	.4byte 0x8012B840
-	.4byte 0x80189C68
-	.4byte 0x80095948
-	.4byte 0x800FB080
-	.4byte 0x8018898C
-	.4byte 0x80188814
-	.4byte 0x80188928
-	.4byte 0x80188EC4
-	.4byte 0x80188FC4
-	.4byte 0x8008F62C
-	.4byte 0x80189064
-	.4byte 0x8012B84C
-	.4byte 0x801210AC
-	.4byte 0x801210B4
-	.4byte 0x800FF4B4
-	.4byte 0x8011F9F8
-	.4byte 0x800FF3F0
-	.4byte 0x801210BC
-	.4byte 0x801210C4
-	.4byte 0x80100600
-	.4byte 0x801210CC
-	.4byte 0x8011F1D0
-	.4byte 0x80189118
-	.4byte 0x80121B70
+	.4byte __dt__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_Fv
+	.4byte init_npc__Q24zNPC6commonFP9xEntAsset
+	.4byte update_npc__Q24zNPC6commonFf
+	.4byte update_bounds__Q24zNPC4baseFv
+	.4byte setup__Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1_Fv
+	.4byte scene_setup__Q24zNPC15human_throwableFv
+	.4byte render_extra__Q24zNPC6commonFv
+	.4byte system_event__Q24zNPC6commonFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte play_sound__Q24zNPC4baseFP17zAnimFxSoundGroup
+	.4byte destroy__Q24zNPC4baseFv
+	.4byte CreateAnimTable__Q24zNPC4baseFP10xAnimTable
+	.4byte change_bounds__Q24zNPC4baseFf5xVec3b
+	.4byte activate__Q24zNPC6commonFv
+	.4byte deactivate__Q24zNPC6commonFv
+	.4byte get_type_name__Q24zNPC6commonCFv
+	.4byte BehaviorUpdate__Q24zNPC6commonFf
+	.4byte before_anim_matrices__Q24zNPC6commonFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte add_states__Q24zNPC6commonFP10xAnimTable
+	.4byte add_transitions__Q24zNPC6commonFP10xAnimTable
+	.4byte reset__Q24zNPC6commonFv
+	.4byte get_throw_anim_code__Q24zNPC15human_throwableFv
+	.4byte render_npc__Q24zNPC6commonFv
+	.4byte static_object_carry__Q24zNPC6commonFv
+	.4byte player_orient_carry__Q24zNPC6commonFv
+	.4byte damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte deliver_damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte valid_damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte kill__Q24zNPC6commonFb
+	.4byte grabbable__Q24zNPC6commonF8GrabType
+	.4byte giveBonus__Q24zNPC6commonFv
+	.4byte punchable__Q24zNPC6commonFv
+	.4byte culling_changed__Q24zNPC15human_throwableFv
+	.4byte get_target_ent__Q24zNPC6commonCFv
+	.4byte get_target_pos__Q24zNPC6commonCFv
+	.4byte get_target_dir__Q24zNPC6commonCFv
+	.4byte get_target_dist__Q24zNPC6commonCFv
+	.4byte get_target_dir_2d__Q24zNPC6commonCFv
+	.4byte get_target_dist_2d__Q24zNPC6commonCFv
+	.4byte get_aim_pos__Q24zNPC6commonCFv
+	.4byte get_aim_dir__Q24zNPC6commonCFv
+	.4byte get_aim_dist__Q24zNPC6commonCFv
+	.4byte get_target_priority__Q24zNPC6commonCFv
+	.4byte debug_render__Q24zNPC6commonFv
+	.4byte move__Q24zNPC6commonFv
 .global __vt__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_
 __vt__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x8013FF68
-	.4byte 0x800FEDDC
-	.4byte 0x80130430
-	.4byte 0x800AB4CC
-	.4byte 0x800FF328
-	.4byte 0x801DA3CC
-	.4byte 0x801DA508
-	.4byte 0x801DAA78
-	.4byte 0x800AB4E0
-	.4byte 0x801DAAC8
-	.4byte 0x801DA730
-	.4byte 0x800AB4E8
-	.4byte 0x8014034C
-	.4byte 0x800AB4F0
-	.4byte 0x8013FF78
-	.4byte 0x800AB4F4
-	.4byte 0x800AB4F8
-	.4byte 0x800AB4FC
-	.4byte 0x801DA98C
-	.4byte 0x800AB504
-	.4byte 0x801DA2E8
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x8013FFA0
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x801DA894
-	.4byte 0x801305A0
-	.4byte 0x80130688
-	.4byte 0x80130B80
-	.4byte 0x8013089C
-	.4byte 0x80130A24
-	.4byte 0x80130DCC
-	.4byte 0x80130CC0
-	.4byte 0x801403F4
-	.4byte 0x801403A0
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte getName__Q24zNPC10run_streamFv
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__Q24zNPC8npc_moveFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte damage__8behaviorFR17zCombatDamageInfo
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__Q24zNPC10run_streamFP10xAnimTable
+	.4byte add_transitions__Q24zNPC10run_streamFP10xAnimTable
+	.4byte exit_state__Q24zNPC10run_streamFv
+	.4byte kill__8behaviorFv
+	.4byte update__Q24zNPC10run_streamFf
+	.4byte setup__Q24zNPC10run_streamFv
+	.4byte exit__8behaviorFv
+	.4byte init__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv
+	.4byte scene_setup__8behaviorFv
+	.4byte reset__Q24zNPC10run_streamFv
+	.4byte render__8behaviorFv
+	.4byte render_extra__8behaviorFv
+	.4byte exclusive__8behaviorFv
+	.4byte runnable__Q24zNPC10run_streamFf
+	.4byte before_anim_matrices__8behaviorFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__Q24zNPC10run_streamF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__Q24zNPC10run_streamFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__Q24zNPC10run_streamFPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
+	.4byte jump_to__Q24zNPC8npc_moveFR5xVec3fb
+	.4byte move_to__Q24zNPC8npc_moveFRC5xVec3fbbb
+	.4byte move_away_from__Q24zNPC8npc_moveFRC5xVec3f
+	.4byte physics_move__Q24zNPC8npc_moveFf
+	.4byte jump_update__Q24zNPC8npc_moveFfb
+	.4byte step_move__Q24zNPC8npc_moveFRC5xVec3ff
+	.4byte have_arrived__Q24zNPC8npc_moveCFv
+	.4byte turn_on__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv
+	.4byte turn_off__Q24zNPC27stream_esc__0_Q24zNPC10flame_bone_esc__1_Fv
 .global __vt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_
 __vt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80140000
-	.4byte 0x80188AB8
-	.4byte 0x80188660
-	.4byte 0x800FE2FC
-	.4byte 0x8014008C
-	.4byte 0x8012B780
-	.4byte 0x801890BC
-	.4byte 0x8018911C
-	.4byte 0x800FDEC8
-	.4byte 0x800FEABC
-	.4byte 0x800FEAC0
-	.4byte 0x800FE0A8
-	.4byte 0x80188D54
-	.4byte 0x80188DB0
-	.4byte 0x8012B8C8
-	.4byte 0x801210A4
-	.4byte 0x80188A88
-	.4byte 0x80188794
-	.4byte 0x801887C4
-	.4byte 0x80189AA0
-	.4byte 0x8012B840
-	.4byte 0x80189C68
-	.4byte 0x80095948
-	.4byte 0x800FB080
-	.4byte 0x8018898C
-	.4byte 0x80188814
-	.4byte 0x80188928
-	.4byte 0x80188EC4
-	.4byte 0x80188FC4
-	.4byte 0x8008F62C
-	.4byte 0x80189064
-	.4byte 0x8012B84C
-	.4byte 0x801210AC
-	.4byte 0x801210B4
-	.4byte 0x800FF4B4
-	.4byte 0x8011F9F8
-	.4byte 0x800FF3F0
-	.4byte 0x801210BC
-	.4byte 0x801210C4
-	.4byte 0x80100600
-	.4byte 0x801210CC
-	.4byte 0x8011F1D0
-	.4byte 0x80189118
-	.4byte 0x80121B70
+	.4byte __dt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_Fv
+	.4byte init_npc__Q24zNPC6commonFP9xEntAsset
+	.4byte update_npc__Q24zNPC6commonFf
+	.4byte update_bounds__Q24zNPC4baseFv
+	.4byte setup__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_Fv
+	.4byte scene_setup__Q24zNPC15human_throwableFv
+	.4byte render_extra__Q24zNPC6commonFv
+	.4byte system_event__Q24zNPC6commonFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte play_sound__Q24zNPC4baseFP17zAnimFxSoundGroup
+	.4byte destroy__Q24zNPC4baseFv
+	.4byte CreateAnimTable__Q24zNPC4baseFP10xAnimTable
+	.4byte change_bounds__Q24zNPC4baseFf5xVec3b
+	.4byte activate__Q24zNPC6commonFv
+	.4byte deactivate__Q24zNPC6commonFv
+	.4byte get_type_name__Q24zNPC6commonCFv
+	.4byte BehaviorUpdate__Q24zNPC6commonFf
+	.4byte before_anim_matrices__Q24zNPC6commonFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte add_states__Q24zNPC6commonFP10xAnimTable
+	.4byte add_transitions__Q24zNPC6commonFP10xAnimTable
+	.4byte reset__Q24zNPC6commonFv
+	.4byte get_throw_anim_code__Q24zNPC15human_throwableFv
+	.4byte render_npc__Q24zNPC6commonFv
+	.4byte static_object_carry__Q24zNPC6commonFv
+	.4byte player_orient_carry__Q24zNPC6commonFv
+	.4byte damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte deliver_damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte valid_damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte kill__Q24zNPC6commonFb
+	.4byte grabbable__Q24zNPC6commonF8GrabType
+	.4byte giveBonus__Q24zNPC6commonFv
+	.4byte punchable__Q24zNPC6commonFv
+	.4byte culling_changed__Q24zNPC15human_throwableFv
+	.4byte get_target_ent__Q24zNPC6commonCFv
+	.4byte get_target_pos__Q24zNPC6commonCFv
+	.4byte get_target_dir__Q24zNPC6commonCFv
+	.4byte get_target_dist__Q24zNPC6commonCFv
+	.4byte get_target_dir_2d__Q24zNPC6commonCFv
+	.4byte get_target_dist_2d__Q24zNPC6commonCFv
+	.4byte get_aim_pos__Q24zNPC6commonCFv
+	.4byte get_aim_dir__Q24zNPC6commonCFv
+	.4byte get_aim_dist__Q24zNPC6commonCFv
+	.4byte get_target_priority__Q24zNPC6commonCFv
+	.4byte debug_render__Q24zNPC6commonFv
+	.4byte move__Q24zNPC6commonFv
 	.4byte 0x00000000
 
 .section .rodata
@@ -222,101 +222,101 @@ __vt__Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1_:
 .global _esc__2_1532
 _esc__2_1532:
 	.4byte 0x00000003
-	.4byte 0x8013F9E0
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC5melee_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000004
-	.4byte 0x8013F994
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC9melee_bot_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000007
-	.4byte 0x8013F948
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC6turret_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000008
-	.4byte 0x8013F8FC
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC11spin_turret_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000005
-	.4byte 0x8013F8B0
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC4mine_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000006
-	.4byte 0x8013F864
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC6oracle_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000013
-	.4byte 0x8013F818
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC13flying_rocket_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000014
-	.4byte 0x8013F7CC
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC14flying_shooter_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000015
-	.4byte 0x8013F780
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC13flying_lobber_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000009
-	.4byte 0x8013F734
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC7shooter_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000001D
-	.4byte 0x8013F6E8
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC7monopod_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000001E
-	.4byte 0x8013F69C
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC11incrediball_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000001F
-	.4byte 0x8013F650
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC7frozone_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000000A
-	.4byte 0x8013F604
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC10violet_gun_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000000B
-	.4byte 0x8013F5B8
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC13security_bird_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000000C
-	.4byte 0x8013FA2C
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC29streamer_esc__0_Q24zNPC10flame_bone_esc__1__esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000000D
-	.4byte 0x8013FD10
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC29streamer_esc__0_Q24zNPC10water_bone_esc__1__esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000000E
-	.4byte 0x8013F56C
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC3car_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000000F
-	.4byte 0x8013F520
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC8friendly_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000011
-	.4byte 0x8013F4D4
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC14melee_shielded_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000010
-	.4byte 0x8013F488
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC4tank_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000012
-	.4byte 0x8013F43C
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC6lobber_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000016
-	.4byte 0x8013F3F0
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC9velocipod_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000017
-	.4byte 0x8013F3A4
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC14dash_velocipod_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000018
-	.4byte 0x8013F358
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC7missile_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000001A
-	.4byte 0x8013F30C
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC5viper_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000019
-	.4byte 0x8013F2C0
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC7helibot_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000001B
-	.4byte 0x8013F274
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC13bot_lob_water_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x0000001C
-	.4byte 0x8013F228
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC8bot_leap_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000020
-	.4byte 0x8013F1D8
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_17zNPCBossOmnidroid_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000021
-	.4byte 0x8013F18C
-	.4byte 0x800FEA08
+	.4byte create_npc_esc__0_Q24zNPC4Om10_esc__1___4zNPCFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000022
-	.4byte 0x801DD41C
-	.4byte 0x800FEA08
+	.4byte create__Q24zNPC17boss_bomb_chopperFiP10RyzMemGrowPv
+	.4byte destroy_npc__4zNPCFP12xFactoryInst
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -324,33 +324,33 @@ _esc__2_1532:
 info_esc__7_1550:
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x8013F110
+	.4byte human_setup__Fv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000004
 	.4byte 0x00000000
-	.4byte 0x801AA474
-	.4byte 0x801AA488
-	.4byte 0x801AA4AC
+	.4byte type_scene_enter__Q24zNPC9melee_botFv
+	.4byte type_setup__Q24zNPC9melee_botFv
+	.4byte type_reset__Q24zNPC9melee_botFv
 	.4byte 0x00000007
 	.4byte 0x00000000
-	.4byte 0x8013EA34
+	.4byte static_scene_setup__Q24zNPC6turretFv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000008
 	.4byte 0x00000000
-	.4byte 0x8013EBE4
+	.4byte static_scene_setup__Q24zNPC11spin_turretFv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000018
 	.4byte 0x00000000
-	.4byte 0x801434E0
+	.4byte static_scene_setup__Q24zNPC7missileFv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8012D9D4
+	.4byte type_setup__Q24zNPC4mineFv
 	.4byte 0x00000000
 	.4byte 0x00000006
 	.4byte 0x00000000
@@ -359,12 +359,12 @@ info_esc__7_1550:
 	.4byte 0x00000000
 	.4byte 0x00000009
 	.4byte 0x00000000
-	.4byte 0x80135FF0
+	.4byte static_scene_setup__Q24zNPC7shooterFv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000000A
 	.4byte 0x00000000
-	.4byte 0x8018E564
+	.4byte static_scene_setup__Q24zNPC10violet_gunFv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000000B
@@ -374,12 +374,12 @@ info_esc__7_1550:
 	.4byte 0x00000000
 	.4byte 0x0000000C
 	.4byte 0x00000000
-	.4byte 0x8013F110
+	.4byte human_setup__Fv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000000D
 	.4byte 0x00000000
-	.4byte 0x8013F110
+	.4byte human_setup__Fv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000000E
@@ -399,26 +399,26 @@ info_esc__7_1550:
 	.4byte 0x00000000
 	.4byte 0x00000011
 	.4byte 0x00000000
-	.4byte 0x8013F134
+	.4byte shielded_setup__Fv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000010
 	.4byte 0x00000000
-	.4byte 0x8013B628
+	.4byte static_scene_setup__Q24zNPC4tankFv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000012
 	.4byte 0x00000000
-	.4byte 0x8013F158
+	.4byte lobber_setup__Fv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000015
 	.4byte 0x00000000
-	.4byte 0x8013F158
+	.4byte lobber_setup__Fv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000016
-	.4byte 0x80102458
+	.4byte setup__Q24zNPC12muzzel_flashFv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -429,12 +429,12 @@ info_esc__7_1550:
 	.4byte 0x00000000
 	.4byte 0x0000001C
 	.4byte 0x00000000
-	.4byte 0x801C4F18
+	.4byte static_scene_setup__Q24zNPC8bot_leapFv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000019
 	.4byte 0x00000000
-	.4byte 0x801B6ECC
+	.4byte static_scene_setup__Q24zNPC7helibotFv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000020
@@ -448,7 +448,7 @@ info_esc__7_1550:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000022
-	.4byte 0x801DD344
+	.4byte static_scene_init__Q24zNPC17boss_bomb_chopperFv
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

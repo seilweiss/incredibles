@@ -159,14 +159,14 @@ _esc__2_2211_0:
 
 .global ribbon_curves__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 ribbon_curves__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
-	.4byte 0x802DDC18
+	.4byte burn_ribbon_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 	.4byte 0x00000007
-	.4byte 0x803D3F78
+	.4byte fade_ribbon_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 	.4byte 0x00000002
 .global fade_value_labels__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 fade_value_labels__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
-	.4byte 0x802DDD9D
-	.4byte 0x802DDDA7
+	.4byte _esc__2_stringBase0_62+137
+	.4byte _esc__2_stringBase0_62+147
 
 .section .sdata2
 

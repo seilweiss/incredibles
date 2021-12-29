@@ -14,36 +14,36 @@ default_config__Q24zNPC17ElectricitySystem:
 __vt__Q24zNPC6Weapon:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x8018B020
-	.4byte 0x800FEDDC
-	.4byte 0x800AB4C4
-	.4byte 0x800AB4CC
-	.4byte 0x800FF328
-	.4byte 0x8018A98C
-	.4byte 0x8018A990
-	.4byte 0x8018AA98
-	.4byte 0x800AB4E0
-	.4byte 0x8018AB38
-	.4byte 0x8018A994
-	.4byte 0x8018A9A0
-	.4byte 0x8018A9F4
-	.4byte 0x800AB4F0
-	.4byte 0x8018AA00
-	.4byte 0x8018AD2C
-	.4byte 0x8018ADF0
-	.4byte 0x8018B030
-	.4byte 0x8018ADF4
-	.4byte 0x8018AB34
-	.4byte 0x800AB508
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x800AB524
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x800FF324
-	.4byte 0x8012BBD8
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte getName__Q24zNPC6WeaponFv
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__8behaviorFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte damage__8behaviorFR17zCombatDamageInfo
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__Q24zNPC6WeaponFP10xAnimTable
+	.4byte add_transitions__Q24zNPC6WeaponFP10xAnimTable
+	.4byte exit_state__Q24zNPC6WeaponFv
+	.4byte kill__8behaviorFv
+	.4byte update__Q24zNPC6WeaponFf
+	.4byte setup__Q24zNPC6WeaponFv
+	.4byte exit__Q24zNPC6WeaponFv
+	.4byte init__Q24zNPC6WeaponFv
+	.4byte scene_setup__8behaviorFv
+	.4byte reset__Q24zNPC6WeaponFv
+	.4byte render__Q24zNPC6WeaponFv
+	.4byte render_extra__Q24zNPC6WeaponFv
+	.4byte exclusive__Q24zNPC6WeaponFv
+	.4byte runnable__Q24zNPC6WeaponFf
+	.4byte before_anim_matrices__Q24zNPC6WeaponFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__8behaviorF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__8behaviorFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
+	.4byte enable__Q24zNPC6WeaponFb
 
 .section .rodata
 

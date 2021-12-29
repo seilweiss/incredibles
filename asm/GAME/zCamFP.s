@@ -6,13 +6,13 @@
 __vt__6zCamFP:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80088ADC
-	.4byte 0x80010314
-	.4byte 0x80088B20
-	.4byte 0x80088B7C
-	.4byte 0x80088BB8
-	.4byte 0x8000EDCC
-	.4byte 0x80010318
+	.4byte create__6zCamFPFv
+	.4byte destroy__4xCamFv
+	.4byte start__6zCamFPFv
+	.4byte stop__6zCamFPFv
+	.4byte update__6zCamFPFR6xScenef
+	.4byte get_next__4xCamFv
+	.4byte config_follow__4xCamFv
 	.4byte 0x00000000
 
 .section .sdata2

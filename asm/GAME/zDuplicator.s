@@ -17,9 +17,9 @@ _esc__2_stringBase0_48:
 __vt__11zDuplicator:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800AF438
-	.4byte 0x800AF340
-	.4byte 0x800AF380
+	.4byte update__11zDuplicatorFP6xScenef
+	.4byte setup__11zDuplicatorFv
+	.4byte reset__11zDuplicatorFv
 	.4byte 0x00000000
 
 .section .sdata2

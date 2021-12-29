@@ -15,7 +15,7 @@ body_pound_config__Q24zNPC4Om10:
 rubbleSystemConfig0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_:
 	.4byte 0xD6D65B05
 	.4byte 0x40400000
-	.4byte 0x802E8118
+	.4byte rubbleChunkTypes0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 	.4byte 0x00000003
 	.4byte 0x00000004
 	.4byte 0x00000006
@@ -44,7 +44,7 @@ rubbleSystemConfig0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc
 	.4byte 0x40A00000
 	.4byte 0x3ECCCCCD
 	.4byte 0x3F800000
-	.4byte 0x803D68B4
+	.4byte health_pickup_types__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 	.4byte 0x00000006
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -200,87 +200,87 @@ bomb_cfg__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_:
 __vt__Q24zNPC4Om10:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C0444
-	.4byte 0x801BB1D8
-	.4byte 0x801BBA94
-	.4byte 0x800FE2FC
-	.4byte 0x801BB3FC
-	.4byte 0x80188A0C
-	.4byte 0x801BCDDC
-	.4byte 0x801BC92C
-	.4byte 0x800FDEC8
-	.4byte 0x800FEABC
-	.4byte 0x800FEAC0
-	.4byte 0x800FE0A8
-	.4byte 0x80188D54
-	.4byte 0x80188DB0
-	.4byte 0x801C162C
-	.4byte 0x801BC3B8
-	.4byte 0x801BCC80
-	.4byte 0x80188794
-	.4byte 0x801887C4
-	.4byte 0x801BB8C4
-	.4byte 0x800FBD60
-	.4byte 0x801BCCA0
-	.4byte 0x80095948
-	.4byte 0x800FB080
-	.4byte 0x801BCE44
-	.4byte 0x80188814
-	.4byte 0x80188928
-	.4byte 0x801BD754
-	.4byte 0x80188FC4
-	.4byte 0x8008F62C
-	.4byte 0x80189064
-	.4byte 0x801210A8
-	.4byte 0x801210AC
-	.4byte 0x801210B4
-	.4byte 0x800FF4B4
-	.4byte 0x8011F9F8
-	.4byte 0x800FF3F0
-	.4byte 0x801210BC
-	.4byte 0x801210C4
-	.4byte 0x80100600
-	.4byte 0x801210CC
-	.4byte 0x8011F1D0
-	.4byte 0x80189118
-	.4byte 0x80121B70
+	.4byte __dt__Q24zNPC4Om10Fv
+	.4byte init_npc__Q24zNPC4Om10FP9xEntAsset
+	.4byte update_npc__Q24zNPC4Om10Ff
+	.4byte update_bounds__Q24zNPC4baseFv
+	.4byte setup__Q24zNPC4Om10Fv
+	.4byte scene_setup__Q24zNPC6commonFv
+	.4byte render_extra__Q24zNPC4Om10Fv
+	.4byte system_event__Q24zNPC4Om10FP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte play_sound__Q24zNPC4baseFP17zAnimFxSoundGroup
+	.4byte destroy__Q24zNPC4baseFv
+	.4byte CreateAnimTable__Q24zNPC4baseFP10xAnimTable
+	.4byte change_bounds__Q24zNPC4baseFf5xVec3b
+	.4byte activate__Q24zNPC6commonFv
+	.4byte deactivate__Q24zNPC6commonFv
+	.4byte get_type_name__Q24zNPC4Om10CFv
+	.4byte BehaviorUpdate__Q24zNPC4Om10Ff
+	.4byte before_anim_matrices__Q24zNPC4Om10FP9xAnimPlayP5xQuatP5xVec3i
+	.4byte add_states__Q24zNPC6commonFP10xAnimTable
+	.4byte add_transitions__Q24zNPC6commonFP10xAnimTable
+	.4byte reset__Q24zNPC4Om10Fv
+	.4byte get_throw_anim_code__Q24zNPC6commonFv
+	.4byte render_npc__Q24zNPC4Om10Fv
+	.4byte static_object_carry__Q24zNPC6commonFv
+	.4byte player_orient_carry__Q24zNPC6commonFv
+	.4byte damage__Q24zNPC4Om10FRC17zCombatDamageInfo
+	.4byte deliver_damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte valid_damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte kill__Q24zNPC4Om10Fb
+	.4byte grabbable__Q24zNPC6commonF8GrabType
+	.4byte giveBonus__Q24zNPC6commonFv
+	.4byte punchable__Q24zNPC6commonFv
+	.4byte culling_changed__Q24zNPC6commonFv
+	.4byte get_target_ent__Q24zNPC6commonCFv
+	.4byte get_target_pos__Q24zNPC6commonCFv
+	.4byte get_target_dir__Q24zNPC6commonCFv
+	.4byte get_target_dist__Q24zNPC6commonCFv
+	.4byte get_target_dir_2d__Q24zNPC6commonCFv
+	.4byte get_target_dist_2d__Q24zNPC6commonCFv
+	.4byte get_aim_pos__Q24zNPC6commonCFv
+	.4byte get_aim_dir__Q24zNPC6commonCFv
+	.4byte get_aim_dist__Q24zNPC6commonCFv
+	.4byte get_target_priority__Q24zNPC6commonCFv
+	.4byte debug_render__Q24zNPC6commonFv
+	.4byte move__Q24zNPC6commonFv
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C1774
-	.4byte 0x801BB230
+	.4byte _esc__2_496_esc__2___cl__Q24zNPC4Om10FR12xSweptSphere__WEAK
+	.4byte __cl__Q24zNPC4Om10FR12xSweptSphere
 .global __vt__Q24zNPC8Om10Anim
 __vt__Q24zNPC8Om10Anim:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x801C163C
-	.4byte 0x800FEDDC
-	.4byte 0x800AB4C4
-	.4byte 0x800AB4CC
-	.4byte 0x800FF328
-	.4byte 0x801BA524
-	.4byte 0x801BA838
-	.4byte 0x800AB4DC
-	.4byte 0x800AB4E0
-	.4byte 0x801BA520
-	.4byte 0x801BA490
-	.4byte 0x800AB4E8
-	.4byte 0x800AB4EC
-	.4byte 0x800AB4F0
-	.4byte 0x801BA4B0
-	.4byte 0x800AB4F4
-	.4byte 0x800AB4F8
-	.4byte 0x800AB4FC
-	.4byte 0x801BA4D8
-	.4byte 0x800AB504
-	.4byte 0x800AB508
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x800AB524
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x801BA4E0
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte getName__Q24zNPC8Om10AnimFv
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__8behaviorFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte damage__8behaviorFR17zCombatDamageInfo
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__Q24zNPC8Om10AnimFP10xAnimTable
+	.4byte add_transitions__Q24zNPC8Om10AnimFP10xAnimTable
+	.4byte exit_state__8behaviorFv
+	.4byte kill__8behaviorFv
+	.4byte update__Q24zNPC8Om10AnimFf
+	.4byte setup__Q24zNPC8Om10AnimFv
+	.4byte exit__8behaviorFv
+	.4byte init__8behaviorFv
+	.4byte scene_setup__8behaviorFv
+	.4byte reset__Q24zNPC8Om10AnimFv
+	.4byte render__8behaviorFv
+	.4byte render_extra__8behaviorFv
+	.4byte exclusive__8behaviorFv
+	.4byte runnable__Q24zNPC8Om10AnimFf
+	.4byte before_anim_matrices__8behaviorFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__8behaviorF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__8behaviorFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__Q24zNPC8Om10AnimFPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
 
 .section .rodata
 
@@ -311,7 +311,7 @@ bomb_shrap_cfg0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 	.4byte 0x000003E8
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x803D6890
+	.4byte bomb_shrap_models0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 	.4byte 0x00000006
 .global chunk_shrap_cfg0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 chunk_shrap_cfg0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_:
@@ -340,7 +340,7 @@ chunk_shrap_cfg0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2
 	.4byte 0x000003E8
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x803D68A8
+	.4byte chunk_shrap_models0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 	.4byte 0x00000003
 .global rubbleChunkTypes0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 rubbleChunkTypes0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_:
@@ -371,7 +371,7 @@ rubbleChunkTypes0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__
 	.4byte 0x3F59999A
 	.4byte 0x41C80000
 	.4byte 0x3F800000
-	.4byte 0x802E8448
+	.4byte _esc__2_stringBase0_130
 	.4byte 0xA48D5684
 	.4byte 0xCE6A4712
 	.4byte 0x40400000
@@ -403,7 +403,7 @@ rubbleChunkTypes0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__
 	.4byte 0x3F59999A
 	.4byte 0x41C80000
 	.4byte 0x3F800000
-	.4byte 0x802E8448
+	.4byte _esc__2_stringBase0_130
 	.4byte 0xA48D5684
 	.4byte 0xCE6A4712
 	.4byte 0x40400000
@@ -435,7 +435,7 @@ rubbleChunkTypes0__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__
 	.4byte 0x3F59999A
 	.4byte 0x41C80000
 	.4byte 0x3F800000
-	.4byte 0x802E8448
+	.4byte _esc__2_stringBase0_130
 	.4byte 0xA48D5684
 	.4byte 0xCE6A4712
 	.4byte 0x40400000
@@ -467,7 +467,7 @@ bomb_shrap_cfg1__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 	.4byte 0x000003E8
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x803D68CC
+	.4byte bomb_shrap_models1__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 	.4byte 0x0000000C
 .global chunk_shrap_cfg1__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 chunk_shrap_cfg1__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_:
@@ -496,7 +496,7 @@ chunk_shrap_cfg1__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2
 	.4byte 0x000003E8
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x803D68FC
+	.4byte chunk_shrap_models1__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 	.4byte 0x00000002
 .global bomb_shrap_cfg2__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 bomb_shrap_cfg2__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_:
@@ -525,7 +525,7 @@ bomb_shrap_cfg2__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 	.4byte 0x000003E8
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x803D6904
+	.4byte bomb_shrap_models2__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 	.4byte 0x0000000A
 .global chunk_shrap_cfg2__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 chunk_shrap_cfg2__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_:
@@ -554,7 +554,7 @@ chunk_shrap_cfg2__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2
 	.4byte 0x000003E8
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x803D692C
+	.4byte chunk_shrap_models2__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_
 	.4byte 0x00000002
 .global _esc__2_stringBase0_130
 _esc__2_stringBase0_130:
@@ -985,180 +985,180 @@ lbl_803D9350:
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage1:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BD960
-	.4byte 0x801C15E0
-	.4byte 0x801BE138
-	.4byte 0x801BE128
-	.4byte 0x801BDC44
-	.4byte 0x801BDDA8
-	.4byte 0x801BDBFC
-	.4byte 0x801BDAD4
-	.4byte 0x801BDB24
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage1FRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10f
+	.4byte UpdateUI__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10f
+	.4byte Render__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10
+	.4byte RenderExtra__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10
+	.4byte HandleEvent__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10P5xBaseUiPCfP5xBase
+	.4byte End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage1FRQ24zNPC4Om10
+	.4byte StartAttack__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage1FRQ24zNPC4Om10
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage2
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage2:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BE2FC
-	.4byte 0x801C15E0
-	.4byte 0x801BE428
-	.4byte 0x801C15A4
-	.4byte 0x801C15B0
-	.4byte 0x801C15B4
-	.4byte 0x801C15A8
-	.4byte 0x801BE3AC
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage2FRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16MultiTargetStageFRQ24zNPC4Om10f
+	.4byte UpdateUI__Q34zNPC4Om105StageFRQ24zNPC4Om10f
+	.4byte Render__Q34zNPC4Om105StageFRQ24zNPC4Om10
+	.4byte RenderExtra__Q34zNPC4Om105StageFRQ24zNPC4Om10
+	.4byte HandleEvent__Q34zNPC4Om105StageFRQ24zNPC4Om10P5xBaseUiPCfP5xBase
+	.4byte End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage2FRQ24zNPC4Om10
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStage
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStage:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BD9CC
-	.4byte 0x801C15E0
-	.4byte 0x801BE138
-	.4byte 0x801BE128
-	.4byte 0x801BDC44
-	.4byte 0x801BDDA8
-	.4byte 0x801BDBFC
-	.4byte 0x801BDB18
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10f
+	.4byte UpdateUI__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10f
+	.4byte Render__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10
+	.4byte RenderExtra__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10
+	.4byte HandleEvent__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10P5xBaseUiPCfP5xBase
+	.4byte End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10
 	.4byte 0x00000000
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BE6E4
-	.4byte 0x801C15E0
-	.4byte 0x801BE138
-	.4byte 0x801BE128
-	.4byte 0x801BDC44
-	.4byte 0x801BDDA8
-	.4byte 0x801BDBFC
-	.4byte 0x801BE734
-	.4byte 0x801BE784
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3FRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10f
+	.4byte UpdateUI__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10f
+	.4byte Render__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10
+	.4byte RenderExtra__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10
+	.4byte HandleEvent__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10P5xBaseUiPCfP5xBase
+	.4byte End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3FRQ24zNPC4Om10
+	.4byte StartAttack__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3FRQ24zNPC4Om10
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16MultiTargetStage
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16MultiTargetStage:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BE330
-	.4byte 0x801C15E0
-	.4byte 0x801BE428
-	.4byte 0x801C15A4
-	.4byte 0x801C15B0
-	.4byte 0x801C15B4
-	.4byte 0x801C15A8
-	.4byte 0x801BE3E0
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16MultiTargetStageFRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16MultiTargetStageFRQ24zNPC4Om10f
+	.4byte UpdateUI__Q34zNPC4Om105StageFRQ24zNPC4Om10f
+	.4byte Render__Q34zNPC4Om105StageFRQ24zNPC4Om10
+	.4byte RenderExtra__Q34zNPC4Om105StageFRQ24zNPC4Om10
+	.4byte HandleEvent__Q34zNPC4Om105StageFRQ24zNPC4Om10P5xBaseUiPCfP5xBase
+	.4byte End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16MultiTargetStageFRQ24zNPC4Om10
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage4
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage4:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BE864
-	.4byte 0x801C15E0
-	.4byte 0x801BE428
-	.4byte 0x801C15A4
-	.4byte 0x801C15B0
-	.4byte 0x801C15B4
-	.4byte 0x801C15A8
-	.4byte 0x801BE898
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage4FRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16MultiTargetStageFRQ24zNPC4Om10f
+	.4byte UpdateUI__Q34zNPC4Om105StageFRQ24zNPC4Om10f
+	.4byte Render__Q34zNPC4Om105StageFRQ24zNPC4Om10
+	.4byte RenderExtra__Q34zNPC4Om105StageFRQ24zNPC4Om10
+	.4byte HandleEvent__Q34zNPC4Om105StageFRQ24zNPC4Om10P5xBaseUiPCfP5xBase
+	.4byte End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage4FRQ24zNPC4Om10
 .global __vt__Q34zNPC4Om105Stage
 __vt__Q34zNPC4Om105Stage:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C15E0
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
 	.4byte 0x00000000
-	.4byte 0x801C15A4
-	.4byte 0x801C15B0
-	.4byte 0x801C15B4
-	.4byte 0x801C15A8
-	.4byte 0x801C15B8
+	.4byte UpdateUI__Q34zNPC4Om105StageFRQ24zNPC4Om10f
+	.4byte Render__Q34zNPC4Om105StageFRQ24zNPC4Om10
+	.4byte RenderExtra__Q34zNPC4Om105StageFRQ24zNPC4Om10
+	.4byte HandleEvent__Q34zNPC4Om105StageFRQ24zNPC4Om10P5xBaseUiPCfP5xBase
+	.4byte End__Q34zNPC4Om105StageFRQ24zNPC4Om10
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BE8CC
-	.4byte 0x801BF184
-	.4byte 0x801BEA20
-	.4byte 0x801C15A4
-	.4byte 0x801C15B0
-	.4byte 0x801C15B4
-	.4byte 0x801C15A8
-	.4byte 0x801BE9C0
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10f
+	.4byte UpdateUI__Q34zNPC4Om105StageFRQ24zNPC4Om10f
+	.4byte Render__Q34zNPC4Om105StageFRQ24zNPC4Om10
+	.4byte RenderExtra__Q34zNPC4Om105StageFRQ24zNPC4Om10
+	.4byte HandleEvent__Q34zNPC4Om105StageFRQ24zNPC4Om10P5xBaseUiPCfP5xBase
+	.4byte End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5Throw
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5Throw:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BF2A8
-	.4byte 0x801C15E0
-	.4byte 0x801BF330
-	.4byte 0x801BF1E0
-	.4byte 0x801BF2A0
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFRQ24zNPC4Om10f
+	.4byte IsRunnable__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowCFRCQ24zNPC4Om10P4xEnt
+	.4byte GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowCFv
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11LaserStrafe
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11LaserStrafe:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BF770
-	.4byte 0x801C15E0
-	.4byte 0x801BF7B4
-	.4byte 0x801BF6A4
-	.4byte 0x801BF69C
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11LaserStrafeFRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11LaserStrafeFRQ24zNPC4Om10f
+	.4byte IsRunnable__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11LaserStrafeCFRCQ24zNPC4Om10P4xEnt
+	.4byte GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11LaserStrafeCFv
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_9UberLaser
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_9UberLaser:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BFE74
-	.4byte 0x801C15E0
-	.4byte 0x801BFD30
-	.4byte 0x801C159C
-	.4byte 0x801BFD28
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_9UberLaserFRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_9UberLaserFRQ24zNPC4Om10f
+	.4byte IsRunnable__Q34zNPC4Om106ActionCFRCQ24zNPC4Om10P4xEnt
+	.4byte GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_9UberLaserCFv
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4Idle
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4Idle:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BFF78
-	.4byte 0x801C15E0
-	.4byte 0x801BFFA8
-	.4byte 0x801C159C
-	.4byte 0x801BFF70
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4IdleFRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4IdleFRQ24zNPC4Om10f
+	.4byte IsRunnable__Q34zNPC4Om106ActionCFRCQ24zNPC4Om10P4xEnt
+	.4byte GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4IdleCFv
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4Jump
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4Jump:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801BFFD4
-	.4byte 0x801C15E0
-	.4byte 0x801C0034
-	.4byte 0x801C159C
-	.4byte 0x801BFFCC
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4JumpFRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4JumpFRQ24zNPC4Om10f
+	.4byte IsRunnable__Q34zNPC4Om106ActionCFRCQ24zNPC4Om10P4xEnt
+	.4byte GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4JumpCFv
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_10BellySmash
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_10BellySmash:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C0224
-	.4byte 0x801C15E0
-	.4byte 0x801C0254
-	.4byte 0x801C0214
-	.4byte 0x801C021C
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_10BellySmashFRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_10BellySmashFRQ24zNPC4Om10f
+	.4byte IsRunnable__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_10BellySmashCFRCQ24zNPC4Om10P4xEnt
+	.4byte GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_10BellySmashCFv
 .global __vt__Q34zNPC4Om1010ActionBase
 __vt__Q34zNPC4Om1010ActionBase:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C15E0
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
 	.4byte 0x00000000
 .global __vt__Q34zNPC4Om106Action
 __vt__Q34zNPC4Om106Action:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C15E0
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
 	.4byte 0x00000000
-	.4byte 0x801C159C
+	.4byte IsRunnable__Q34zNPC4Om106ActionCFRCQ24zNPC4Om10P4xEnt
 	.4byte 0x00000000
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4Walk
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4Walk:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C0414
-	.4byte 0x801C15E0
-	.4byte 0x801C043C
-	.4byte 0x801C159C
-	.4byte 0x801C040C
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4WalkFRQ24zNPC4Om10
+	.4byte Reset__Q34zNPC4Om1010ActionBaseFRQ24zNPC4Om10
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4WalkFRQ24zNPC4Om10f
+	.4byte IsRunnable__Q34zNPC4Om106ActionCFRCQ24zNPC4Om10P4xEnt
+	.4byte GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4WalkCFv
 .global __vt__32zThrowableSystemCollisionHandler
 __vt__32zThrowableSystemCollisionHandler:
 	.4byte 0x00000000
@@ -1168,37 +1168,37 @@ __vt__32zThrowableSystemCollisionHandler:
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5Stomp:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C04A4
-	.4byte 0x801C052C
-	.4byte 0x801C05DC
+	.4byte IsRunnable__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5StompCFRCQ24zNPC7Om10ArmP4xEnt
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5StompFRQ24zNPC7Om10Arm
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5StompFRQ24zNPC7Om10Armf
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Pierce
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Pierce:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C0774
-	.4byte 0x801C0800
-	.4byte 0x801C0908
+	.4byte IsRunnable__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6PierceCFRCQ24zNPC7Om10ArmP4xEnt
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6PierceFRQ24zNPC7Om10Arm
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6PierceFRQ24zNPC7Om10Armf
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4Step
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4Step:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C1028
-	.4byte 0x801C0AF4
-	.4byte 0x801C0BBC
+	.4byte IsRunnable__Q34zNPC7Om10Arm6ActionCFRCQ24zNPC7Om10ArmP4xEnt
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4StepFRQ24zNPC7Om10Arm
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4StepFRQ24zNPC7Om10Armf
 .global __vt__Q34zNPC7Om10Arm6Action
 __vt__Q34zNPC7Om10Arm6Action:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C1028
+	.4byte IsRunnable__Q34zNPC7Om10Arm6ActionCFRCQ24zNPC7Om10ArmP4xEnt
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11GuardRemote
 __vt__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11GuardRemote:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C1028
-	.4byte 0x801C0C80
-	.4byte 0x801C0CE8
+	.4byte IsRunnable__Q34zNPC7Om10Arm6ActionCFRCQ24zNPC7Om10ArmP4xEnt
+	.4byte Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11GuardRemoteFRQ24zNPC7Om10Arm
+	.4byte Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11GuardRemoteFRQ24zNPC7Om10Armf
 
 .section .sdata2
 
@@ -11942,8 +11942,8 @@ get_laser_speed__Q24zNPC10laser_boneFv:
 /* 801C176C 001BE56C  C0 23 00 50 */	lfs f1, 0x50(r3)
 /* 801C1770 001BE570  4E 80 00 20 */	blr 
 
-.global _esc__2_496_esc__2___cl__Q24zNPC4Om10FR12xSweptSphere
-_esc__2_496_esc__2___cl__Q24zNPC4Om10FR12xSweptSphere:
+.global _esc__2_496_esc__2___cl__Q24zNPC4Om10FR12xSweptSphere__WEAK
+_esc__2_496_esc__2___cl__Q24zNPC4Om10FR12xSweptSphere__WEAK:
 /* 801C1774 001BE574  38 63 FE 10 */	addi r3, r3, -496
 /* 801C1778 001BE578  4B FF 9A B8 */	b __cl__Q24zNPC4Om10FR12xSweptSphere
 

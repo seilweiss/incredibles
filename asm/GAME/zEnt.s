@@ -4,24 +4,24 @@
 
 .global _esc__2_1299
 _esc__2_1299:
-	.4byte 0x800BE144
-	.4byte 0x800BE144
-	.4byte 0x800BE21C
-	.4byte 0x800BE250
-	.4byte 0x800BE25C
-	.4byte 0x800BE268
-	.4byte 0x800BE28C
-	.4byte 0x800BE34C
+	.4byte zEntAnimEventCore__FP14xModelInstanceP10xAnimTableUiPCfP4xEnt+92
+	.4byte zEntAnimEventCore__FP14xModelInstanceP10xAnimTableUiPCfP4xEnt+92
+	.4byte zEntAnimEventCore__FP14xModelInstanceP10xAnimTableUiPCfP4xEnt+308
+	.4byte zEntAnimEventCore__FP14xModelInstanceP10xAnimTableUiPCfP4xEnt+360
+	.4byte zEntAnimEventCore__FP14xModelInstanceP10xAnimTableUiPCfP4xEnt+372
+	.4byte zEntAnimEventCore__FP14xModelInstanceP10xAnimTableUiPCfP4xEnt+384
+	.4byte zEntAnimEventCore__FP14xModelInstanceP10xAnimTableUiPCfP4xEnt+420
+	.4byte zEntAnimEventCore__FP14xModelInstanceP10xAnimTableUiPCfP4xEnt+612
 .global _esc__2_1397
 _esc__2_1397:
-	.4byte 0x800BE4A0
-	.4byte 0x800BE4A0
-	.4byte 0x800BE55C
-	.4byte 0x800BE5A0
-	.4byte 0x800BE5AC
-	.4byte 0x800BE5B8
-	.4byte 0x800BE5DC
-	.4byte 0x800BE6C0
+	.4byte zEntAnimEvent_AutoAnim__FP4zEntUiPCf+80
+	.4byte zEntAnimEvent_AutoAnim__FP4zEntUiPCf+80
+	.4byte zEntAnimEvent_AutoAnim__FP4zEntUiPCf+268
+	.4byte zEntAnimEvent_AutoAnim__FP4zEntUiPCf+336
+	.4byte zEntAnimEvent_AutoAnim__FP4zEntUiPCf+348
+	.4byte zEntAnimEvent_AutoAnim__FP4zEntUiPCf+360
+	.4byte zEntAnimEvent_AutoAnim__FP4zEntUiPCf+396
+	.4byte zEntAnimEvent_AutoAnim__FP4zEntUiPCf+624
 
 .section .rodata
 

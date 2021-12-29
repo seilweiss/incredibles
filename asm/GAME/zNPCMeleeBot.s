@@ -6,130 +6,130 @@
 __vt__Q24zNPC9melee_bot:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801AC650
-	.4byte 0x80188AB8
-	.4byte 0x801AA7FC
-	.4byte 0x800FE2FC
-	.4byte 0x801AA738
-	.4byte 0x801AA930
-	.4byte 0x801AAA8C
-	.4byte 0x8018911C
-	.4byte 0x800FDEC8
-	.4byte 0x801AA7DC
-	.4byte 0x800FEAC0
-	.4byte 0x800FE0A8
-	.4byte 0x801AAAFC
-	.4byte 0x801AAB30
-	.4byte 0x801AC1FC
-	.4byte 0x801210A4
-	.4byte 0x801AA9D0
-	.4byte 0x80188794
-	.4byte 0x801887C4
-	.4byte 0x801AA704
-	.4byte 0x800FBD60
-	.4byte 0x801AAA0C
-	.4byte 0x801AC20C
-	.4byte 0x800FB080
-	.4byte 0x8018898C
-	.4byte 0x80188814
-	.4byte 0x80188928
-	.4byte 0x80188EC4
-	.4byte 0x801AA4CC
-	.4byte 0x8008F62C
-	.4byte 0x80189064
-	.4byte 0x801AAADC
-	.4byte 0x801210AC
-	.4byte 0x801210B4
-	.4byte 0x800FF4B4
-	.4byte 0x8011F9F8
-	.4byte 0x800FF3F0
-	.4byte 0x801210BC
-	.4byte 0x801210C4
-	.4byte 0x80100600
-	.4byte 0x801210CC
-	.4byte 0x8011F1D0
-	.4byte 0x80189118
-	.4byte 0x80121B70
+	.4byte __dt__Q24zNPC9melee_botFv
+	.4byte init_npc__Q24zNPC6commonFP9xEntAsset
+	.4byte update_npc__Q24zNPC9melee_botFf
+	.4byte update_bounds__Q24zNPC4baseFv
+	.4byte setup__Q24zNPC9melee_botFv
+	.4byte scene_setup__Q24zNPC9melee_botFv
+	.4byte render_extra__Q24zNPC9melee_botFv
+	.4byte system_event__Q24zNPC6commonFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte play_sound__Q24zNPC4baseFP17zAnimFxSoundGroup
+	.4byte destroy__Q24zNPC9melee_botFv
+	.4byte CreateAnimTable__Q24zNPC4baseFP10xAnimTable
+	.4byte change_bounds__Q24zNPC4baseFf5xVec3b
+	.4byte activate__Q24zNPC9melee_botFv
+	.4byte deactivate__Q24zNPC9melee_botFv
+	.4byte get_type_name__Q24zNPC9melee_botCFv
+	.4byte BehaviorUpdate__Q24zNPC6commonFf
+	.4byte before_anim_matrices__Q24zNPC9melee_botFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte add_states__Q24zNPC6commonFP10xAnimTable
+	.4byte add_transitions__Q24zNPC6commonFP10xAnimTable
+	.4byte reset__Q24zNPC9melee_botFv
+	.4byte get_throw_anim_code__Q24zNPC6commonFv
+	.4byte render_npc__Q24zNPC9melee_botFv
+	.4byte static_object_carry__Q24zNPC9melee_botFv
+	.4byte player_orient_carry__Q24zNPC6commonFv
+	.4byte damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte deliver_damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte valid_damage__Q24zNPC6commonFRC17zCombatDamageInfo
+	.4byte kill__Q24zNPC6commonFb
+	.4byte grabbable__Q24zNPC9melee_botF8GrabType
+	.4byte giveBonus__Q24zNPC6commonFv
+	.4byte punchable__Q24zNPC6commonFv
+	.4byte culling_changed__Q24zNPC9melee_botFv
+	.4byte get_target_ent__Q24zNPC6commonCFv
+	.4byte get_target_pos__Q24zNPC6commonCFv
+	.4byte get_target_dir__Q24zNPC6commonCFv
+	.4byte get_target_dist__Q24zNPC6commonCFv
+	.4byte get_target_dir_2d__Q24zNPC6commonCFv
+	.4byte get_target_dist_2d__Q24zNPC6commonCFv
+	.4byte get_aim_pos__Q24zNPC6commonCFv
+	.4byte get_aim_dir__Q24zNPC6commonCFv
+	.4byte get_aim_dist__Q24zNPC6commonCFv
+	.4byte get_target_priority__Q24zNPC6commonCFv
+	.4byte debug_render__Q24zNPC6commonFv
+	.4byte move__Q24zNPC6commonFv
 .global __vt__Q24zNPC12pickup_react
 __vt__Q24zNPC12pickup_react:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x801AC214
-	.4byte 0x800FEDDC
-	.4byte 0x80130430
-	.4byte 0x800AB4CC
-	.4byte 0x800FF328
-	.4byte 0x801AA018
-	.4byte 0x801AA0CC
-	.4byte 0x801AA314
-	.4byte 0x800AB4E0
-	.4byte 0x801AA340
-	.4byte 0x801AA3E8
-	.4byte 0x800AB4E8
-	.4byte 0x800AB4EC
-	.4byte 0x800AB4F0
-	.4byte 0x801AA3C0
-	.4byte 0x800AB4F4
-	.4byte 0x800AB4F8
-	.4byte 0x800AB4FC
-	.4byte 0x801AA328
-	.4byte 0x800AB504
-	.4byte 0x800AB508
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x800AB524
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x801AA1F4
-	.4byte 0x801305A0
-	.4byte 0x80130688
-	.4byte 0x80130B80
-	.4byte 0x8013089C
-	.4byte 0x80130A24
-	.4byte 0x80130DCC
-	.4byte 0x80130CC0
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte getName__Q24zNPC12pickup_reactFv
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__Q24zNPC8npc_moveFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte damage__8behaviorFR17zCombatDamageInfo
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__Q24zNPC12pickup_reactFP10xAnimTable
+	.4byte add_transitions__Q24zNPC12pickup_reactFP10xAnimTable
+	.4byte exit_state__Q24zNPC12pickup_reactFv
+	.4byte kill__8behaviorFv
+	.4byte update__Q24zNPC12pickup_reactFf
+	.4byte setup__Q24zNPC12pickup_reactFv
+	.4byte exit__8behaviorFv
+	.4byte init__8behaviorFv
+	.4byte scene_setup__8behaviorFv
+	.4byte reset__Q24zNPC12pickup_reactFv
+	.4byte render__8behaviorFv
+	.4byte render_extra__8behaviorFv
+	.4byte exclusive__8behaviorFv
+	.4byte runnable__Q24zNPC12pickup_reactFf
+	.4byte before_anim_matrices__8behaviorFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__8behaviorF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__8behaviorFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__Q24zNPC12pickup_reactFPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
+	.4byte jump_to__Q24zNPC8npc_moveFR5xVec3fb
+	.4byte move_to__Q24zNPC8npc_moveFRC5xVec3fbbb
+	.4byte move_away_from__Q24zNPC8npc_moveFRC5xVec3f
+	.4byte physics_move__Q24zNPC8npc_moveFf
+	.4byte jump_update__Q24zNPC8npc_moveFfb
+	.4byte step_move__Q24zNPC8npc_moveFRC5xVec3ff
+	.4byte have_arrived__Q24zNPC8npc_moveCFv
 .global __vt__Q24zNPC12melee_charge
 __vt__Q24zNPC12melee_charge:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x801AC224
-	.4byte 0x800FEDDC
-	.4byte 0x80130430
-	.4byte 0x800AB4CC
-	.4byte 0x800FF328
-	.4byte 0x801A9A54
-	.4byte 0x801A9BCC
-	.4byte 0x801A9E50
-	.4byte 0x800AB4E0
-	.4byte 0x801A9F20
-	.4byte 0x801A9FA8
-	.4byte 0x800AB4E8
-	.4byte 0x800AB4EC
-	.4byte 0x800AB4F0
-	.4byte 0x801AC260
-	.4byte 0x800AB4F4
-	.4byte 0x800AB4F8
-	.4byte 0x800AB4FC
-	.4byte 0x801AC234
-	.4byte 0x800AB504
-	.4byte 0x800AB508
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x800AB524
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x801A9DA0
-	.4byte 0x801305A0
-	.4byte 0x80130688
-	.4byte 0x80130B80
-	.4byte 0x8013089C
-	.4byte 0x80130A24
-	.4byte 0x80130DCC
-	.4byte 0x80130CC0
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte getName__Q24zNPC12melee_chargeFv
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__Q24zNPC8npc_moveFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte damage__8behaviorFR17zCombatDamageInfo
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__Q24zNPC12melee_chargeFP10xAnimTable
+	.4byte add_transitions__Q24zNPC12melee_chargeFP10xAnimTable
+	.4byte exit_state__Q24zNPC12melee_chargeFv
+	.4byte kill__8behaviorFv
+	.4byte update__Q24zNPC12melee_chargeFf
+	.4byte setup__Q24zNPC12melee_chargeFv
+	.4byte exit__8behaviorFv
+	.4byte init__8behaviorFv
+	.4byte scene_setup__8behaviorFv
+	.4byte reset__Q24zNPC12melee_chargeFv
+	.4byte render__8behaviorFv
+	.4byte render_extra__8behaviorFv
+	.4byte exclusive__8behaviorFv
+	.4byte runnable__Q24zNPC12melee_chargeFf
+	.4byte before_anim_matrices__8behaviorFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__8behaviorF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__8behaviorFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__Q24zNPC12melee_chargeFPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
+	.4byte jump_to__Q24zNPC8npc_moveFR5xVec3fb
+	.4byte move_to__Q24zNPC8npc_moveFRC5xVec3fbbb
+	.4byte move_away_from__Q24zNPC8npc_moveFRC5xVec3f
+	.4byte physics_move__Q24zNPC8npc_moveFf
+	.4byte jump_update__Q24zNPC8npc_moveFfb
+	.4byte step_move__Q24zNPC8npc_moveFRC5xVec3ff
+	.4byte have_arrived__Q24zNPC8npc_moveCFv
 
 .section .rodata
 
@@ -302,7 +302,7 @@ __vt__12xLightVolume:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801AC64C
+	.4byte render_immediate_pass__12xLightVolumeF10xColor_tagbb
 	.4byte 0x00000000
 
 .section .sdata2
@@ -348,7 +348,7 @@ physics_properties__Q24zNPC9melee_bot:
 	.4byte 0x3F59999A
 	.4byte 0x41C80000
 	.4byte 0x3F800000
-	.4byte 0x802E7CC9
+	.4byte _esc__2_stringBase0_123+201
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

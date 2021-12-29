@@ -35,13 +35,13 @@ lbl_803D8A18:
 __vt__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidget:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80089020
-	.4byte 0x80010314
-	.4byte 0x800892E4
-	.4byte 0x80089358
-	.4byte 0x800893AC
-	.4byte 0x8000EDCC
-	.4byte 0x80010318
+	.4byte create__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
+	.4byte destroy__4xCamFv
+	.4byte start__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
+	.4byte stop__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFv
+	.4byte update__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidgetFR6xScenef
+	.4byte get_next__4xCamFv
+	.4byte config_follow__4xCamFv
 	.4byte 0x00000000
 
 .section .sdata2

@@ -3988,7 +3988,7 @@ _esc__2_1_4:
 	.4byte 0x3E000000
 .global ResetFunctionInfo
 ResetFunctionInfo:
-	.4byte 0x8021E900
+	.4byte OnReset
 	.4byte 0x0000007F
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4501,109 +4501,109 @@ GXTexRegionAddrTable:
 	.4byte 0x00070000
 .global GXResetFuncInfo
 GXResetFuncInfo:
-	.4byte 0x8022715C
+	.4byte __GXShutdown
 	.4byte 0x0000007F
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global _esc__2_176
 _esc__2_176:
-	.4byte 0x80228BD8
-	.4byte 0x80228BEC
-	.4byte 0x80228C00
-	.4byte 0x80228C14
-	.4byte 0x80228C28
-	.4byte 0x80228C3C
-	.4byte 0x80228C50
-	.4byte 0x80228C64
-	.4byte 0x80228C78
-	.4byte 0x80228C8C
-	.4byte 0x80228CA0
-	.4byte 0x80228D08
-	.4byte 0x80228D1C
-	.4byte 0x80228D30
-	.4byte 0x80228D44
-	.4byte 0x80228D58
-	.4byte 0x80228D6C
-	.4byte 0x80228D80
-	.4byte 0x80228D94
-	.4byte 0x80228DA8
-	.4byte 0x80228DBC
-	.4byte 0x80228DCC
-	.4byte 0x80228DCC
-	.4byte 0x80228DCC
-	.4byte 0x80228DCC
-	.4byte 0x80228CD4
+	.4byte GXSetVtxDesc+32
+	.4byte GXSetVtxDesc+52
+	.4byte GXSetVtxDesc+72
+	.4byte GXSetVtxDesc+92
+	.4byte GXSetVtxDesc+112
+	.4byte GXSetVtxDesc+132
+	.4byte GXSetVtxDesc+152
+	.4byte GXSetVtxDesc+172
+	.4byte GXSetVtxDesc+192
+	.4byte GXSetVtxDesc+212
+	.4byte GXSetVtxDesc+232
+	.4byte GXSetVtxDesc+336
+	.4byte GXSetVtxDesc+356
+	.4byte GXSetVtxDesc+376
+	.4byte GXSetVtxDesc+396
+	.4byte GXSetVtxDesc+416
+	.4byte GXSetVtxDesc+436
+	.4byte GXSetVtxDesc+456
+	.4byte GXSetVtxDesc+476
+	.4byte GXSetVtxDesc+496
+	.4byte GXSetVtxDesc+516
+	.4byte GXSetVtxDesc+532
+	.4byte GXSetVtxDesc+532
+	.4byte GXSetVtxDesc+532
+	.4byte GXSetVtxDesc+532
+	.4byte GXSetVtxDesc+284
 .global _esc__2_498_0
 _esc__2_498_0:
-	.4byte 0x80229078
-	.4byte 0x802290A0
-	.4byte 0x802290F4
-	.4byte 0x80229110
-	.4byte 0x8022912C
-	.4byte 0x80229154
-	.4byte 0x8022917C
-	.4byte 0x802291A4
-	.4byte 0x802291CC
-	.4byte 0x802291F4
-	.4byte 0x8022921C
-	.4byte 0x80229244
-	.4byte 0x80229268
-	.4byte 0x80229268
-	.4byte 0x80229268
-	.4byte 0x80229268
-	.4byte 0x802290A0
+	.4byte GXSetVtxAttrFmt+60
+	.4byte GXSetVtxAttrFmt+100
+	.4byte GXSetVtxAttrFmt+184
+	.4byte GXSetVtxAttrFmt+212
+	.4byte GXSetVtxAttrFmt+240
+	.4byte GXSetVtxAttrFmt+280
+	.4byte GXSetVtxAttrFmt+320
+	.4byte GXSetVtxAttrFmt+360
+	.4byte GXSetVtxAttrFmt+400
+	.4byte GXSetVtxAttrFmt+440
+	.4byte GXSetVtxAttrFmt+480
+	.4byte GXSetVtxAttrFmt+520
+	.4byte GXSetVtxAttrFmt+556
+	.4byte GXSetVtxAttrFmt+556
+	.4byte GXSetVtxAttrFmt+556
+	.4byte GXSetVtxAttrFmt+556
+	.4byte GXSetVtxAttrFmt+100
 .global _esc__2_525
 _esc__2_525:
-	.4byte 0x802292E8
-	.4byte 0x80229310
-	.4byte 0x80229364
-	.4byte 0x80229380
-	.4byte 0x8022939C
-	.4byte 0x802293C4
-	.4byte 0x802293EC
-	.4byte 0x80229414
-	.4byte 0x8022943C
-	.4byte 0x80229464
-	.4byte 0x8022948C
-	.4byte 0x802294B4
-	.4byte 0x802294D8
-	.4byte 0x802294D8
-	.4byte 0x802294D8
-	.4byte 0x802294D8
-	.4byte 0x80229310
+	.4byte GXSetVtxAttrFmtv+80
+	.4byte GXSetVtxAttrFmtv+120
+	.4byte GXSetVtxAttrFmtv+204
+	.4byte GXSetVtxAttrFmtv+232
+	.4byte GXSetVtxAttrFmtv+260
+	.4byte GXSetVtxAttrFmtv+300
+	.4byte GXSetVtxAttrFmtv+340
+	.4byte GXSetVtxAttrFmtv+380
+	.4byte GXSetVtxAttrFmtv+420
+	.4byte GXSetVtxAttrFmtv+460
+	.4byte GXSetVtxAttrFmtv+500
+	.4byte GXSetVtxAttrFmtv+540
+	.4byte GXSetVtxAttrFmtv+576
+	.4byte GXSetVtxAttrFmtv+576
+	.4byte GXSetVtxAttrFmtv+576
+	.4byte GXSetVtxAttrFmtv+576
+	.4byte GXSetVtxAttrFmtv+120
 .global _esc__2_820
 _esc__2_820:
-	.4byte 0x8022981C
-	.4byte 0x80229830
-	.4byte 0x80229844
-	.4byte 0x80229858
-	.4byte 0x8022986C
-	.4byte 0x80229880
-	.4byte 0x80229894
+	.4byte GXSetTexCoordGen2+460
+	.4byte GXSetTexCoordGen2+480
+	.4byte GXSetTexCoordGen2+500
+	.4byte GXSetTexCoordGen2+520
+	.4byte GXSetTexCoordGen2+540
+	.4byte GXSetTexCoordGen2+560
+	.4byte GXSetTexCoordGen2+580
 .global _esc__2_819
 _esc__2_819:
-	.4byte 0x80229688
-	.4byte 0x80229694
-	.4byte 0x802296A0
-	.4byte 0x802296AC
-	.4byte 0x802296C8
-	.4byte 0x802296D0
-	.4byte 0x802296D8
-	.4byte 0x802296E0
-	.4byte 0x802296E8
-	.4byte 0x802296F0
-	.4byte 0x802296F8
-	.4byte 0x80229700
-	.4byte 0x80229704
-	.4byte 0x80229704
-	.4byte 0x80229704
-	.4byte 0x80229704
-	.4byte 0x80229704
-	.4byte 0x80229704
-	.4byte 0x80229704
-	.4byte 0x802296B8
-	.4byte 0x802296C0
+	.4byte GXSetTexCoordGen2+56
+	.4byte GXSetTexCoordGen2+68
+	.4byte GXSetTexCoordGen2+80
+	.4byte GXSetTexCoordGen2+92
+	.4byte GXSetTexCoordGen2+120
+	.4byte GXSetTexCoordGen2+128
+	.4byte GXSetTexCoordGen2+136
+	.4byte GXSetTexCoordGen2+144
+	.4byte GXSetTexCoordGen2+152
+	.4byte GXSetTexCoordGen2+160
+	.4byte GXSetTexCoordGen2+168
+	.4byte GXSetTexCoordGen2+176
+	.4byte GXSetTexCoordGen2+180
+	.4byte GXSetTexCoordGen2+180
+	.4byte GXSetTexCoordGen2+180
+	.4byte GXSetTexCoordGen2+180
+	.4byte GXSetTexCoordGen2+180
+	.4byte GXSetTexCoordGen2+180
+	.4byte GXSetTexCoordGen2+180
+	.4byte GXSetTexCoordGen2+104
+	.4byte GXSetTexCoordGen2+112
 .global GXNtsc480IntDf
 GXNtsc480IntDf:
 	.4byte 0x00000000
@@ -4674,94 +4674,94 @@ GXEurgb60Hz480IntDf:
 	.4byte 0x08000000
 .global _esc__2_145
 _esc__2_145:
-	.4byte 0x8022B09C
-	.4byte 0x8022AFAC
-	.4byte 0x8022AFC0
-	.4byte 0x8022AFE0
-	.4byte 0x8022B000
-	.4byte 0x8022B02C
-	.4byte 0x8022B060
+	.4byte GXInitLightSpot+352
+	.4byte GXInitLightSpot+112
+	.4byte GXInitLightSpot+132
+	.4byte GXInitLightSpot+164
+	.4byte GXInitLightSpot+196
+	.4byte GXInitLightSpot+240
+	.4byte GXInitLightSpot+292
 	.4byte 0x00000000
 .global _esc__2_145_0
 _esc__2_145_0:
-	.4byte 0x8022B544
-	.4byte 0x8022B550
-	.4byte 0x8022B550
-	.4byte 0x8022B55C
-	.4byte 0x8022B55C
-	.4byte 0x8022B55C
-	.4byte 0x8022B55C
-	.4byte 0x8022B568
-	.4byte 0x8022B544
-	.4byte 0x8022B550
-	.4byte 0x8022B55C
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B544
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B550
-	.4byte 0x8022B568
-	.4byte 0x8022B55C
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B55C
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B544
-	.4byte 0x8022B568
-	.4byte 0x8022B550
-	.4byte 0x8022B55C
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B550
-	.4byte 0x8022B550
-	.4byte 0x8022B550
-	.4byte 0x8022B550
-	.4byte 0x8022B55C
-	.4byte 0x8022B55C
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B544
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B568
-	.4byte 0x8022B550
-	.4byte 0x8022B550
-	.4byte 0x8022B568
-	.4byte 0x8022B55C
+	.4byte __GetImageTileCount+32
+	.4byte __GetImageTileCount+44
+	.4byte __GetImageTileCount+44
+	.4byte __GetImageTileCount+56
+	.4byte __GetImageTileCount+56
+	.4byte __GetImageTileCount+56
+	.4byte __GetImageTileCount+56
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+32
+	.4byte __GetImageTileCount+44
+	.4byte __GetImageTileCount+56
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+32
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+44
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+56
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+56
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+32
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+44
+	.4byte __GetImageTileCount+56
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+44
+	.4byte __GetImageTileCount+44
+	.4byte __GetImageTileCount+44
+	.4byte __GetImageTileCount+44
+	.4byte __GetImageTileCount+56
+	.4byte __GetImageTileCount+56
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+32
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+44
+	.4byte __GetImageTileCount+44
+	.4byte __GetImageTileCount+68
+	.4byte __GetImageTileCount+56
 .global _esc__2_224
 _esc__2_224:
-	.4byte 0x8022B76C
-	.4byte 0x8022B780
-	.4byte 0x8022B780
-	.4byte 0x8022B794
-	.4byte 0x8022B794
-	.4byte 0x8022B794
-	.4byte 0x8022B7A8
-	.4byte 0x8022B7D0
-	.4byte 0x8022B76C
-	.4byte 0x8022B780
-	.4byte 0x8022B794
-	.4byte 0x8022B7D0
-	.4byte 0x8022B7D0
-	.4byte 0x8022B7D0
-	.4byte 0x8022B7BC
+	.4byte GXInitTexObj+384
+	.4byte GXInitTexObj+404
+	.4byte GXInitTexObj+404
+	.4byte GXInitTexObj+424
+	.4byte GXInitTexObj+424
+	.4byte GXInitTexObj+424
+	.4byte GXInitTexObj+444
+	.4byte GXInitTexObj+484
+	.4byte GXInitTexObj+384
+	.4byte GXInitTexObj+404
+	.4byte GXInitTexObj+424
+	.4byte GXInitTexObj+484
+	.4byte GXInitTexObj+484
+	.4byte GXInitTexObj+484
+	.4byte GXInitTexObj+464
 .global TEVCOpTableST0
 TEVCOpTableST0:
 	.4byte 0xC008F8AF
@@ -4814,67 +4814,67 @@ p2f_esc__7_362:
 	.4byte 0x00000005
 .global _esc__2_281
 _esc__2_281:
-	.4byte 0x8022E3BC
-	.4byte 0x8022E3D8
-	.4byte 0x8022E3F4
-	.4byte 0x8022E410
-	.4byte 0x8022E464
-	.4byte 0x8022E480
-	.4byte 0x8022E49C
-	.4byte 0x8022E4B8
-	.4byte 0x8022E42C
-	.4byte 0x8022E4D4
-	.4byte 0x8022E504
-	.4byte 0x8022E534
-	.4byte 0x8022E564
-	.4byte 0x8022E594
-	.4byte 0x8022E5C4
-	.4byte 0x8022E5F4
-	.4byte 0x8022E624
-	.4byte 0x8022E650
-	.4byte 0x8022E660
-	.4byte 0x8022E670
-	.4byte 0x8022E680
-	.4byte 0x8022E448
-	.4byte 0x8022E68C
+	.4byte GXSetGPMetric+1384
+	.4byte GXSetGPMetric+1412
+	.4byte GXSetGPMetric+1440
+	.4byte GXSetGPMetric+1468
+	.4byte GXSetGPMetric+1552
+	.4byte GXSetGPMetric+1580
+	.4byte GXSetGPMetric+1608
+	.4byte GXSetGPMetric+1636
+	.4byte GXSetGPMetric+1496
+	.4byte GXSetGPMetric+1664
+	.4byte GXSetGPMetric+1712
+	.4byte GXSetGPMetric+1760
+	.4byte GXSetGPMetric+1808
+	.4byte GXSetGPMetric+1856
+	.4byte GXSetGPMetric+1904
+	.4byte GXSetGPMetric+1952
+	.4byte GXSetGPMetric+2000
+	.4byte GXSetGPMetric+2044
+	.4byte GXSetGPMetric+2060
+	.4byte GXSetGPMetric+2076
+	.4byte GXSetGPMetric+2092
+	.4byte GXSetGPMetric+1524
+	.4byte GXSetGPMetric+2104
 .global _esc__2_280
 _esc__2_280:
-	.4byte 0x8022DF90
-	.4byte 0x8022DFB0
-	.4byte 0x8022DFD0
-	.4byte 0x8022DFF0
-	.4byte 0x8022E010
-	.4byte 0x8022E030
-	.4byte 0x8022E050
-	.4byte 0x8022E070
-	.4byte 0x8022E090
-	.4byte 0x8022E0B0
-	.4byte 0x8022E0F0
-	.4byte 0x8022E110
-	.4byte 0x8022E12C
-	.4byte 0x8022E148
-	.4byte 0x8022E164
-	.4byte 0x8022E180
-	.4byte 0x8022E19C
-	.4byte 0x8022E1B8
-	.4byte 0x8022E1D4
-	.4byte 0x8022E1F0
-	.4byte 0x8022E20C
-	.4byte 0x8022E228
-	.4byte 0x8022E244
-	.4byte 0x8022E260
-	.4byte 0x8022E27C
-	.4byte 0x8022E298
-	.4byte 0x8022E2B4
-	.4byte 0x8022E2D0
-	.4byte 0x8022E2EC
-	.4byte 0x8022E308
-	.4byte 0x8022E324
-	.4byte 0x8022E340
-	.4byte 0x8022E35C
-	.4byte 0x8022E378
-	.4byte 0x8022E0D0
-	.4byte 0x8022E390
+	.4byte GXSetGPMetric+316
+	.4byte GXSetGPMetric+348
+	.4byte GXSetGPMetric+380
+	.4byte GXSetGPMetric+412
+	.4byte GXSetGPMetric+444
+	.4byte GXSetGPMetric+476
+	.4byte GXSetGPMetric+508
+	.4byte GXSetGPMetric+540
+	.4byte GXSetGPMetric+572
+	.4byte GXSetGPMetric+604
+	.4byte GXSetGPMetric+668
+	.4byte GXSetGPMetric+700
+	.4byte GXSetGPMetric+728
+	.4byte GXSetGPMetric+756
+	.4byte GXSetGPMetric+784
+	.4byte GXSetGPMetric+812
+	.4byte GXSetGPMetric+840
+	.4byte GXSetGPMetric+868
+	.4byte GXSetGPMetric+896
+	.4byte GXSetGPMetric+924
+	.4byte GXSetGPMetric+952
+	.4byte GXSetGPMetric+980
+	.4byte GXSetGPMetric+1008
+	.4byte GXSetGPMetric+1036
+	.4byte GXSetGPMetric+1064
+	.4byte GXSetGPMetric+1092
+	.4byte GXSetGPMetric+1120
+	.4byte GXSetGPMetric+1148
+	.4byte GXSetGPMetric+1176
+	.4byte GXSetGPMetric+1204
+	.4byte GXSetGPMetric+1232
+	.4byte GXSetGPMetric+1260
+	.4byte GXSetGPMetric+1288
+	.4byte GXSetGPMetric+1316
+	.4byte GXSetGPMetric+636
+	.4byte GXSetGPMetric+1340
 	.4byte 0x00000000
 .global __MIXVolumeTable
 __MIXVolumeTable:
@@ -5804,7 +5804,7 @@ _esc__2_136:
 	.4byte 0x2E0A0000
 .global ResetFunctionInfo_0
 ResetFunctionInfo_0:
-	.4byte 0x80231FE4
+	.4byte OnReset_0
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6369,22 +6369,22 @@ _esc__2_86_1:
 	.4byte 0x00000000
 .global _esc__2_87_1
 _esc__2_87_1:
-	.4byte 0x80233968
-	.4byte 0x80233968
-	.4byte 0x802338C0
-	.4byte 0x802338D8
-	.4byte 0x80233968
-	.4byte 0x802338EC
-	.4byte 0x80233904
-	.4byte 0x80233968
-	.4byte 0x80233968
-	.4byte 0x80233968
-	.4byte 0x80233968
-	.4byte 0x80233968
-	.4byte 0x80233968
-	.4byte 0x80233968
-	.4byte 0x80233968
-	.4byte 0x8023391C
+	.4byte __OSUnhandledException+692
+	.4byte __OSUnhandledException+692
+	.4byte __OSUnhandledException+524
+	.4byte __OSUnhandledException+548
+	.4byte __OSUnhandledException+692
+	.4byte __OSUnhandledException+568
+	.4byte __OSUnhandledException+592
+	.4byte __OSUnhandledException+692
+	.4byte __OSUnhandledException+692
+	.4byte __OSUnhandledException+692
+	.4byte __OSUnhandledException+692
+	.4byte __OSUnhandledException+692
+	.4byte __OSUnhandledException+692
+	.4byte __OSUnhandledException+692
+	.4byte __OSUnhandledException+692
+	.4byte __OSUnhandledException+616
 	.4byte 0x00000000
 .global HankakuToCode
 HankakuToCode:
@@ -7114,7 +7114,7 @@ InterruptPrioTable:
 	.4byte 0x00000000
 .global ResetFunctionInfo_1
 ResetFunctionInfo_1:
-	.4byte 0x80234C4C
+	.4byte OnReset_1
 	.4byte 0x0000007F
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -7734,7 +7734,7 @@ _esc__2_1_9:
 	.4byte 0x00000000
 .global ResetFunctionInfo_2
 ResetFunctionInfo_2:
-	.4byte 0x8023A3FC
+	.4byte OnReset_2
 	.4byte 0x0000007F
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -8013,33 +8013,33 @@ taps:
 	.4byte 0x00010000
 .global _esc__2_97
 _esc__2_97:
-	.4byte 0x8023C104
-	.4byte 0x8023C10C
-	.4byte 0x8023C144
-	.4byte 0x8023C14C
-	.4byte 0x8023C114
-	.4byte 0x8023C11C
-	.4byte 0x8023C174
-	.4byte 0x8023C174
-	.4byte 0x8023C134
-	.4byte 0x8023C13C
-	.4byte 0x8023C174
-	.4byte 0x8023C174
-	.4byte 0x8023C174
-	.4byte 0x8023C174
-	.4byte 0x8023C174
-	.4byte 0x8023C174
-	.4byte 0x8023C154
-	.4byte 0x8023C15C
-	.4byte 0x8023C174
-	.4byte 0x8023C174
-	.4byte 0x8023C124
-	.4byte 0x8023C12C
-	.4byte 0x8023C174
-	.4byte 0x8023C174
-	.4byte 0x8023C164
-	.4byte 0x8023C174
-	.4byte 0x8023C16C
+	.4byte getTiming+40
+	.4byte getTiming+48
+	.4byte getTiming+104
+	.4byte getTiming+112
+	.4byte getTiming+56
+	.4byte getTiming+64
+	.4byte getTiming+152
+	.4byte getTiming+152
+	.4byte getTiming+88
+	.4byte getTiming+96
+	.4byte getTiming+152
+	.4byte getTiming+152
+	.4byte getTiming+152
+	.4byte getTiming+152
+	.4byte getTiming+152
+	.4byte getTiming+152
+	.4byte getTiming+120
+	.4byte getTiming+128
+	.4byte getTiming+152
+	.4byte getTiming+152
+	.4byte getTiming+72
+	.4byte getTiming+80
+	.4byte getTiming+152
+	.4byte getTiming+152
+	.4byte getTiming+136
+	.4byte getTiming+152
+	.4byte getTiming+144
 .global _esc__2_347_0
 _esc__2_347_0:
 	.4byte 0x2A2A2A2A
@@ -8141,13 +8141,13 @@ _esc__2_535_0:
 	.4byte 0x6E0A0000
 .global _esc__2_736
 _esc__2_736:
-	.4byte 0x8023D944
-	.4byte 0x8023D94C
-	.4byte 0x8023D954
-	.4byte 0x8023D944
-	.4byte 0x8023D94C
-	.4byte 0x8023D954
-	.4byte 0x8023D944
+	.4byte VIGetTvFormat+56
+	.4byte VIGetTvFormat+64
+	.4byte VIGetTvFormat+72
+	.4byte VIGetTvFormat+56
+	.4byte VIGetTvFormat+64
+	.4byte VIGetTvFormat+72
+	.4byte VIGetTvFormat+56
 
 .section .rodata
 
@@ -8783,15 +8783,15 @@ EXIInputFlag:
 
 .global __ARVersion
 __ARVersion:
-	.4byte 0x80323998
+	.4byte _esc__2_1_0
 	.4byte 0x00000000
 .global __ARQVersion
 __ARQVersion:
-	.4byte 0x803239E0
+	.4byte _esc__2_1_1
 	.4byte 0x00000000
 .global __AXVersion
 __AXVersion:
-	.4byte 0x80323A28
+	.4byte _esc__2_1_2
 	.4byte 0x00000000
 .global axDspSlaveLength
 axDspSlaveLength:
@@ -8799,17 +8799,17 @@ axDspSlaveLength:
 	.4byte 0x00000000
 .global __AXFXAlloc
 __AXFXAlloc:
-	.4byte 0x8021BF4C
+	.4byte __AXFXAllocFunction
 .global __AXFXFree
 __AXFXFree:
-	.4byte 0x8021BF74
+	.4byte __AXFXFreeFunction
 .global __AIVersion
 __AIVersion:
-	.4byte 0x803274A8
+	.4byte _esc__2_1_3
 	.4byte 0x00000000
 .global __CARDVersion
 __CARDVersion:
-	.4byte 0x803274F0
+	.4byte _esc__2_1_4
 	.4byte 0x00000000
 .global next
 next:
@@ -8824,15 +8824,15 @@ __CARDPermMask:
 	.2byte 0x0000
 .global __DSPVersion
 __DSPVersion:
-	.4byte 0x80327718
+	.4byte _esc__2_1_5
 	.4byte 0x00000000
 .global __EXIVersion
 __EXIVersion:
-	.4byte 0x803278D8
+	.4byte _esc__2_1_6
 	.4byte 0x00000000
 .global __GXVersion
 __GXVersion:
-	.4byte 0x80327A00
+	.4byte _esc__2_1_7
 	.4byte 0x00000000
 .global tbl1_esc__7_263
 tbl1_esc__7_263:
@@ -8882,7 +8882,7 @@ Unit01:
 	.4byte 0x3F800000
 .global __OSVersion
 __OSVersion:
-	.4byte 0x80328D28
+	.4byte _esc__2_1_8
 .global _esc__2_97_0
 _esc__2_97_0:
 	.4byte 0x25303878
@@ -8910,13 +8910,13 @@ fontEncode_esc__7_80:
 	.4byte 0x00000000
 .global SwitchThreadCallback
 SwitchThreadCallback:
-	.4byte 0x80236A70
+	.4byte DefaultSwitchThreadCallback
 .global _esc__2_833
 _esc__2_833:
 	.4byte 0x00000000
 .global __PADVersion
 __PADVersion:
-	.4byte 0x8032AA98
+	.4byte _esc__2_1_9
 .global ResettingChan
 ResettingChan:
 	.4byte 0x00000020
@@ -8931,7 +8931,7 @@ Spec:
 	.4byte 0x00000005
 .global MakeStatus
 MakeStatus:
-	.4byte 0x80239F8C
+	.4byte SPEC2_MakeStatus
 .global CmdReadOrigin
 CmdReadOrigin:
 	.4byte 0x41000000
@@ -8940,11 +8940,11 @@ CmdCalibrate:
 	.4byte 0x42000000
 .global __SIVersion
 __SIVersion:
-	.4byte 0x8032AAF0
+	.4byte _esc__2_1_10
 	.4byte 0x00000000
 .global __VIVersion
 __VIVersion:
-	.4byte 0x8032ACA0
+	.4byte _esc__2_1_11
 .global _esc__2_534
 _esc__2_534:
 	.4byte 0x76692E63
@@ -9045,7 +9045,7 @@ i2fMagic_0:
 	.4byte 0x80000000
 .global __GXData
 __GXData:
-	.4byte 0x803BF7E0
+	.4byte gxData
 .global _esc__2_289_1
 _esc__2_289_1:
 	.4byte 0x4B800000

@@ -51,14 +51,14 @@ pDashMeter__Q24zHud9DashMeter:
 __vt__Q24zHud9DashMeter:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800D1660
-	.4byte 0x801B7B78
-	.4byte 0x801B8194
-	.4byte 0x801B8190
-	.4byte 0x801B82D0
-	.4byte 0x801B8324
-	.4byte 0x800D165C
-	.4byte 0x801B7B40
+	.4byte init__Q24zHud11hud_elementFv
+	.4byte setup__Q24zHud9DashMeterFv
+	.4byte update__Q24zHud9DashMeterFf
+	.4byte destroy__Q24zHud9DashMeterFv
+	.4byte show__Q24zHud9DashMeterFv
+	.4byte hide__Q24zHud9DashMeterFv
+	.4byte handle_event__Q24zHud11hud_elementFP5xBaseUiPCfP5xBaseUi
+	.4byte reset__Q24zHud9DashMeterFv
 
 .section .sdata2
 

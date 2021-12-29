@@ -17,21 +17,21 @@ __vt__Q21z4bomb:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8019F828
+	.4byte _esc__2_216_esc__2_collided__Q21z4bombFRC12xSweptSphere__WEAK
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8019F830
-	.4byte 0x801237C8
-	.4byte 0x8019F838
-	.4byte 0x8019F840
-	.4byte 0x8019F848
-	.4byte 0x8019F850
-	.4byte 0x8019E9D8
-	.4byte 0x8019EE1C
-	.4byte 0x8019EE5C
-	.4byte 0x8019E734
-	.4byte 0x8019E4EC
-	.4byte 0x8019E7E8
+	.4byte _esc__2_304_esc__2_render__Q21z4bombCFv__WEAK
+	.4byte post_render_2d__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_CFv
+	.4byte _esc__2_304_esc__2_post_render_3d__Q21z4bombCFv__WEAK
+	.4byte _esc__2_304_esc__2_update__Q21z4bombFf__WEAK
+	.4byte _esc__2_304_esc__2_destroy__Q21z4bombFv__WEAK
+	.4byte _esc__2_304_esc__2_reset__Q21z4bombFv__WEAK
+	.4byte update__Q21z4bombFf
+	.4byte render__Q21z4bombCFv
+	.4byte post_render_3d__Q21z4bombCFv
+	.4byte destroy__Q21z4bombFv
+	.4byte reset__Q21z4bombFv
+	.4byte collided__Q21z4bombFRC12xSweptSphere
 	.4byte 0x00000000
 
 .section .rodata
@@ -104,25 +104,25 @@ speed__Q21z4bomb:
 	.4byte 0x41700000
 .global bomb_model_name__1z
 bomb_model_name__1z:
-	.4byte 0x802E762E
+	.4byte _esc__2_stringBase0_118+62
 .global bomb_glow_name__1z
 bomb_glow_name__1z:
-	.4byte 0x802E7660
+	.4byte _esc__2_stringBase0_118+112
 .global __vt__12xBallPhysics
 __vt__12xBallPhysics:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8000C30C
+	.4byte collided__12xBallPhysicsFRC12xSweptSphere
 .global __vt__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_
 __vt__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8019F868
-	.4byte 0x801237C8
-	.4byte 0x8019F86C
-	.4byte 0x8019F870
-	.4byte 0x8019F874
-	.4byte 0x8019F878
+	.4byte render__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_CFv
+	.4byte post_render_2d__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_CFv
+	.4byte post_render_3d__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_CFv
+	.4byte update__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_Ff
+	.4byte destroy__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_Fv
+	.4byte reset__Q21z25lightweight_esc__0_Q21z4bomb_esc__4_20_esc__1_Fv
 
 .section .sdata2
 
@@ -134,7 +134,7 @@ default_physics_properties__Q21z4bomb:
 	.4byte 0x3F59999A
 	.4byte 0x420C0000
 	.4byte 0x3F800000
-	.4byte 0x802E75FB
+	.4byte _esc__2_stringBase0_118+11
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1677,33 +1677,33 @@ lbl_8019F810:
 /* 8019F820 0019C620  38 21 00 80 */	addi r1, r1, 0x80
 /* 8019F824 0019C624  4E 80 00 20 */	blr 
 
-.global _esc__2_216_esc__2_collided__Q21z4bombFRC12xSweptSphere
-_esc__2_216_esc__2_collided__Q21z4bombFRC12xSweptSphere:
+.global _esc__2_216_esc__2_collided__Q21z4bombFRC12xSweptSphere__WEAK
+_esc__2_216_esc__2_collided__Q21z4bombFRC12xSweptSphere__WEAK:
 /* 8019F828 0019C628  38 63 FF 28 */	addi r3, r3, -216
 /* 8019F82C 0019C62C  4B FF EF BC */	b collided__Q21z4bombFRC12xSweptSphere
 
-.global _esc__2_304_esc__2_render__Q21z4bombCFv
-_esc__2_304_esc__2_render__Q21z4bombCFv:
+.global _esc__2_304_esc__2_render__Q21z4bombCFv__WEAK
+_esc__2_304_esc__2_render__Q21z4bombCFv__WEAK:
 /* 8019F830 0019C630  38 63 FE D0 */	addi r3, r3, -304
 /* 8019F834 0019C634  4B FF F5 E8 */	b render__Q21z4bombCFv
 
-.global _esc__2_304_esc__2_post_render_3d__Q21z4bombCFv
-_esc__2_304_esc__2_post_render_3d__Q21z4bombCFv:
+.global _esc__2_304_esc__2_post_render_3d__Q21z4bombCFv__WEAK
+_esc__2_304_esc__2_post_render_3d__Q21z4bombCFv__WEAK:
 /* 8019F838 0019C638  38 63 FE D0 */	addi r3, r3, -304
 /* 8019F83C 0019C63C  4B FF F6 20 */	b post_render_3d__Q21z4bombCFv
 
-.global _esc__2_304_esc__2_update__Q21z4bombFf
-_esc__2_304_esc__2_update__Q21z4bombFf:
+.global _esc__2_304_esc__2_update__Q21z4bombFf__WEAK
+_esc__2_304_esc__2_update__Q21z4bombFf__WEAK:
 /* 8019F840 0019C640  38 63 FE D0 */	addi r3, r3, -304
 /* 8019F844 0019C644  4B FF F1 94 */	b update__Q21z4bombFf
 
-.global _esc__2_304_esc__2_destroy__Q21z4bombFv
-_esc__2_304_esc__2_destroy__Q21z4bombFv:
+.global _esc__2_304_esc__2_destroy__Q21z4bombFv__WEAK
+_esc__2_304_esc__2_destroy__Q21z4bombFv__WEAK:
 /* 8019F848 0019C648  38 63 FE D0 */	addi r3, r3, -304
 /* 8019F84C 0019C64C  4B FF EE E8 */	b destroy__Q21z4bombFv
 
-.global _esc__2_304_esc__2_reset__Q21z4bombFv
-_esc__2_304_esc__2_reset__Q21z4bombFv:
+.global _esc__2_304_esc__2_reset__Q21z4bombFv__WEAK
+_esc__2_304_esc__2_reset__Q21z4bombFv__WEAK:
 /* 8019F850 0019C650  38 63 FE D0 */	addi r3, r3, -304
 /* 8019F854 0019C654  4B FF EC 98 */	b reset__Q21z4bombFv
 

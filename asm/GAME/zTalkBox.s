@@ -13,66 +13,66 @@ v_esc__7_1236:
 
 .global new_tags__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_
 new_tags__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_:
-	.4byte 0x802E5903
+	.4byte _esc__2_stringBase0_96+147
 	.4byte 0x0000000A
-	.4byte 0x80160AC0
-	.4byte 0x80160B24
-	.4byte 0x80160B60
-	.4byte 0x802E590E
+	.4byte parse_tag_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte trigger_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
+	.4byte _esc__2_stringBase0_96+158
 	.4byte 0x00000002
-	.4byte 0x80160AC0
-	.4byte 0x80160B24
-	.4byte 0x80160B60
-	.4byte 0x802E5911
+	.4byte parse_tag_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte trigger_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
+	.4byte _esc__2_stringBase0_96+161
 	.4byte 0x00000009
-	.4byte 0x80160030
-	.4byte 0x8016013C
-	.4byte 0x801601AC
-	.4byte 0x802E591B
+	.4byte parse_tag_auto_wait__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_auto_wait__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte trigger_auto_wait__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
+	.4byte _esc__2_stringBase0_96+171
 	.4byte 0x00000005
-	.4byte 0x80160AB0
-	.4byte 0x80160AB4
-	.4byte 0x80160AB8
-	.4byte 0x802E5921
+	.4byte parse_tag_pause__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_pause__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte trigger_pause__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
+	.4byte _esc__2_stringBase0_96+177
 	.4byte 0x00000009
-	.4byte 0x8016120C
+	.4byte parseTagResetHide__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x801610A0
-	.4byte 0x802E592B
+	.4byte triggerTagResetHide__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
+	.4byte _esc__2_stringBase0_96+187
 	.4byte 0x00000004
-	.4byte 0x80160FE4
+	.4byte parseTagShow__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x80160FAC
-	.4byte 0x802E5930
+	.4byte triggerTagShow__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
+	.4byte _esc__2_stringBase0_96+192
 	.4byte 0x00000006
-	.4byte 0x801601E4
+	.4byte parse_tag_signal__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x80160330
-	.4byte 0x802E58A7
+	.4byte trigger_signal__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
+	.4byte _esc__2_stringBase0_96+55
 	.4byte 0x00000005
-	.4byte 0x801604A0
-	.4byte 0x80160768
-	.4byte 0x801607AC
-	.4byte 0x802E5937
+	.4byte parse_tag_sound__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_sound__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte trigger_sound__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
+	.4byte _esc__2_stringBase0_96+199
 	.4byte 0x00000008
-	.4byte 0x80160B84
+	.4byte parse_tag_teleport__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x80160D54
-	.4byte 0x802E5940
+	.4byte trigger_teleport__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
+	.4byte _esc__2_stringBase0_96+208
 	.4byte 0x00000004
-	.4byte 0x80160DBC
-	.4byte 0x80160E20
-	.4byte 0x80160E5C
-	.4byte 0x802E5945
+	.4byte parse_tag_trap__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte reset_tag_trap__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+	.4byte trigger_trap__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
+	.4byte _esc__2_stringBase0_96+213
 	.4byte 0x0000000B
-	.4byte 0x801610FC
+	.4byte parseTagTriggerPads__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x80161064
-	.4byte 0x802E5895
+	.4byte triggerTagTriggerPads__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
+	.4byte _esc__2_stringBase0_96+37
 	.4byte 0x00000004
-	.4byte 0x80160E9C
+	.4byte parse_tag_wait__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
-	.4byte 0x80160F3C
+	.4byte trigger_wait__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot
 
 .section .rodata
 
@@ -256,76 +256,76 @@ music_fade_delay__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_:
 __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801626B0
-	.4byte 0x80162720
-	.4byte 0x80162724
+	.4byte start__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_typeFv
+	.4byte stop__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_typeFv
+	.4byte update__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_typeFR6xScenef
 .global __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_type
 __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8016272C
-	.4byte 0x80162934
-	.4byte 0x80162938
+	.4byte start__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_typeFv
+	.4byte stop__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_typeFv
+	.4byte update__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_typeFR6xScenef
 .global __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_type
 __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80162960
-	.4byte 0x80162988
-	.4byte 0x80162A20
+	.4byte start__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_typeFv
+	.4byte stop__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_typeFv
+	.4byte update__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_typeFR6xScenef
 .global __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_type
 __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80161AEC
-	.4byte 0x80161AF0
+	.4byte start__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_typeFv
+	.4byte stop__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_typeFv
 	.4byte 0x00000000
 .global __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_type
 __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_type:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80162CFC
-	.4byte 0x80162D00
-	.4byte 0x80162D04
+	.4byte start__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_typeFv
+	.4byte stop__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_typeFv
+	.4byte update__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_typeFR6xScenef
 	.4byte 0x00000000
 .global __vt__Q28ztalkbox8callback
 __vt__Q28ztalkbox8callback:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801603F4
-	.4byte 0x80161D68
-	.4byte 0x80161EC4
-	.4byte 0x80163610
+	.4byte on_signal__Q28ztalkbox8callbackFUi
+	.4byte on_start__Q28ztalkbox8callbackFv
+	.4byte on_stop__Q28ztalkbox8callbackFv
+	.4byte on_answer__Q28ztalkbox8callbackFQ28ztalkbox11answer_enum
 
 .section .sdata2
 
 .global positive_esc__7_1183
 positive_esc__7_1183:
-	.4byte 0x802E5870
+	.4byte _esc__2_stringBase0_96
 	.4byte 0x00000003
-	.4byte 0x802E5874
+	.4byte _esc__2_stringBase0_96+4
 	.4byte 0x00000001
-	.4byte 0x802E5876
+	.4byte _esc__2_stringBase0_96+6
 	.4byte 0x00000001
-	.4byte 0x802E5878
+	.4byte _esc__2_stringBase0_96+8
 	.4byte 0x00000004
-	.4byte 0x802E587D
+	.4byte _esc__2_stringBase0_96+13
 	.4byte 0x00000001
-	.4byte 0x802E587F
+	.4byte _esc__2_stringBase0_96+15
 	.4byte 0x00000002
 .global negative_esc__7_1185
 negative_esc__7_1185:
-	.4byte 0x802E5882
+	.4byte _esc__2_stringBase0_96+18
 	.4byte 0x00000003
-	.4byte 0x802E5885
+	.4byte _esc__2_stringBase0_96+21
 	.4byte 0x00000001
-	.4byte 0x802E5887
+	.4byte _esc__2_stringBase0_96+23
 	.4byte 0x00000001
-	.4byte 0x802E5889
+	.4byte _esc__2_stringBase0_96+25
 	.4byte 0x00000005
-	.4byte 0x802E588F
+	.4byte _esc__2_stringBase0_96+31
 	.4byte 0x00000001
-	.4byte 0x802E5891
+	.4byte _esc__2_stringBase0_96+33
 	.4byte 0x00000003
 .global _esc__2_1264_1
 _esc__2_1264_1:

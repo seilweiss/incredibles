@@ -15,22 +15,22 @@ gTemporaryLights:
 sEffectFuncs:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800DDAFC
-	.4byte 0x800DDAD4
-	.4byte 0x800DDB24
-	.4byte 0x800DDB4C
-	.4byte 0x800DDB50
-	.4byte 0x800DDB54
-	.4byte 0x800DDB58
-	.4byte 0x800DDB5C
-	.4byte 0x800DDB60
-	.4byte 0x800DDB64
-	.4byte 0x800DDB68
-	.4byte 0x800DDB6C
-	.4byte 0x800DDB70
-	.4byte 0x800DDB74
-	.4byte 0x800DDB78
-	.4byte 0x800DDBE0
+	.4byte zLightEffectFlickerSlow__FP7_zLightf
+	.4byte zLightEffectFlicker__FP7_zLightf
+	.4byte zLightEffectFlickerErratic__FP7_zLightf
+	.4byte zLightEffectStrobeSlow__FP7_zLightf
+	.4byte zLightEffectStrobe__FP7_zLightf
+	.4byte zLightEffectStrobeFast__FP7_zLightf
+	.4byte zLightEffectDimSlow__FP7_zLightf
+	.4byte zLightEffectDim__FP7_zLightf
+	.4byte zLightEffectDimFast__FP7_zLightf
+	.4byte zLightEffectHalfDimSlow__FP7_zLightf
+	.4byte zLightEffectHalfDim__FP7_zLightf
+	.4byte zLightEffectHalfDimFast__FP7_zLightf
+	.4byte zLightEffectRandomColSlow__FP7_zLightf
+	.4byte zLightEffectRandomCol__FP7_zLightf
+	.4byte zLightEffectRandomColFast__FP7_zLightf
+	.4byte zLightEffectCauldron__FP7_zLightf
 
 .section .rodata
 

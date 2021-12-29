@@ -10,9 +10,9 @@ staticThrowableProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
 	.4byte 0x40400000
 	.4byte 0x4196CBE4
 	.4byte 0x41C80000
-	.4byte 0x801B5134
-	.4byte 0x801B52FC
-	.4byte 0x802E7DB0
+	.4byte zThrowableSystemSmallCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv
+	.4byte zThrowableSystemDefaultDestroyCB__FP4xEntPvb
+	.4byte _esc__2_stringBase0_127
 	.4byte 0x00000000
 	.4byte 0x6B2CBBF5
 	.4byte 0x41A00000
@@ -20,9 +20,9 @@ staticThrowableProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
 	.4byte 0x40400000
 	.4byte 0x41490FDB
 	.4byte 0x41C80000
-	.4byte 0x801B525C
-	.4byte 0x801B52FC
-	.4byte 0x802E7DCB
+	.4byte zThrowableSystemMediumCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv
+	.4byte zThrowableSystemDefaultDestroyCB__FP4xEntPvb
+	.4byte _esc__2_stringBase0_127+27
 	.4byte 0x00000000
 	.4byte 0x3EDD71E3
 	.4byte 0x41A00000
@@ -30,9 +30,9 @@ staticThrowableProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
 	.4byte 0x40400000
 	.4byte 0x41490FDB
 	.4byte 0x41C80000
-	.4byte 0x801B5284
-	.4byte 0x801B52FC
-	.4byte 0x802E7DE7
+	.4byte zThrowableSystemLargeCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv
+	.4byte zThrowableSystemDefaultDestroyCB__FP4xEntPvb
+	.4byte _esc__2_stringBase0_127+55
 	.4byte 0x00000000
 	.4byte 0x00117113
 	.4byte 0x41F00000
@@ -40,9 +40,9 @@ staticThrowableProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
 	.4byte 0x40400000
 	.4byte 0x4196CBE4
 	.4byte 0x41C80000
-	.4byte 0x801B52AC
-	.4byte 0x801B52FC
-	.4byte 0x802E7E02
+	.4byte zThrowableSystemBotCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv
+	.4byte zThrowableSystemDefaultDestroyCB__FP4xEntPvb
+	.4byte _esc__2_stringBase0_127+82
 	.4byte 0x00000000
 	.4byte 0x6B2CBBF5
 	.4byte 0x42480000
@@ -50,9 +50,9 @@ staticThrowableProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
 	.4byte 0x40400000
 	.4byte 0x41490FDB
 	.4byte 0x41C80000
-	.4byte 0x801B52D4
-	.4byte 0x801B52FC
-	.4byte 0x802E7E13
+	.4byte zThrowableSystemLongmediumCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv
+	.4byte zThrowableSystemDefaultDestroyCB__FP4xEntPvb
+	.4byte _esc__2_stringBase0_127+99
 	.4byte 0x00000000
 	.4byte 0x6B2CBBF5
 	.4byte 0x42480000
@@ -60,9 +60,9 @@ staticThrowableProperties__30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
 	.4byte 0x40400000
 	.4byte 0x41490FDB
 	.4byte 0x41C80000
-	.4byte 0x801B525C
-	.4byte 0x801B52FC
-	.4byte 0x802E7DCB
+	.4byte zThrowableSystemMediumCollideCB__FP4xEntP4xEntPC5xVec3PC5xVec3Pv
+	.4byte zThrowableSystemDefaultDestroyCB__FP4xEntPvb
+	.4byte _esc__2_stringBase0_127+27
 	.4byte 0x00000000
 
 .section .rodata
@@ -228,7 +228,7 @@ nj02_hacked_targets__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_e
 .global hacked_targets__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
 hacked_targets__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_:
 	.4byte 0x4E4A3032
-	.4byte 0x803D66D0
+	.4byte nj02_hacked_targets__Q230_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_30_esc__2_unnamed_esc__2_zThrowableSystem_cpp_esc__2_
 	.4byte 0x00000003
 	.4byte 0x41200000
 .global _esc__2_1645_0

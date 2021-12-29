@@ -60,14 +60,14 @@ lbl_803D86F8:
 __vt__Q24xhud6widget:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8003DD14
-	.4byte 0x8003CD74
-	.4byte 0x8003CDC4
-	.4byte 0x8003DD18
-	.4byte 0x8003D2C8
-	.4byte 0x8003D2A8
-	.4byte 0x8003D330
-	.4byte 0x8003D77C
+	.4byte destroy__Q24xhud6widgetFv
+	.4byte type__Q24xhud6widgetCFv
+	.4byte is__Q24xhud6widgetCFUi
+	.4byte init__Q24xhud6widgetFv
+	.4byte setup__Q24xhud6widgetFv
+	.4byte update__Q24xhud6widgetFf
+	.4byte render__Q24xhud6widgetFv
+	.4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBaseUi
 
 .section .sdata2
 

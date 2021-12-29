@@ -138,10 +138,10 @@ hit_effects__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
 	.4byte 0x03000000
 .global decal_emitters__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_
 decal_emitters__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
-	.4byte 0x802DA4C4
+	.4byte _esc__2_stringBase0_40
 	.4byte 0x00000020
-	.4byte 0x802DA4D2
-	.4byte 0x803D3228
+	.4byte _esc__2_stringBase0_40+14
+	.4byte splash_curve__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -171,32 +171,32 @@ decal_emitters__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
 	.4byte 0x00000000
 .global _esc__2_1775
 _esc__2_1775:
-	.4byte 0x8009148C
-	.4byte 0x80091484
-	.4byte 0x80091484
-	.4byte 0x80091484
-	.4byte 0x80091484
-	.4byte 0x80091484
-	.4byte 0x8009148C
-	.4byte 0x8009148C
-	.4byte 0x80091484
-	.4byte 0x8009148C
-	.4byte 0x8009148C
-	.4byte 0x80091484
-	.4byte 0x8009148C
-	.4byte 0x80091484
-	.4byte 0x8009148C
-	.4byte 0x8009148C
-	.4byte 0x8009148C
-	.4byte 0x80091484
-	.4byte 0x8009148C
-	.4byte 0x80091484
-	.4byte 0x80091484
-	.4byte 0x80091484
-	.4byte 0x80091484
-	.4byte 0x80091490
-	.4byte 0x80091484
-	.4byte 0x80091484
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+228
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+228
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+228
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+228
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+228
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+228
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+228
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+228
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+228
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+228
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+232
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
+	.4byte hit_effect__14zCombatEffectsFPC17zAttackTableStateP8xSurfacePC5xVec3PC5xVec3PC5xVec3PC4xEntb+220
 .global slam_land_cfg__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_
 slam_land_cfg__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
 	.4byte 0x00000000
@@ -407,17 +407,17 @@ punch_streak_ribbon_curve__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
 __vt__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18RockParticleSystem:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80092B68
-	.4byte 0x80093034
-	.4byte 0x800930C0
-	.4byte 0x800930BC
-	.4byte 0x80092B58
+	.4byte setup__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18RockParticleSystemFv
+	.4byte reset__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18RockParticleSystemFRC5xVec3RC5xVec3
+	.4byte emit__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18RockParticleSystemFf
+	.4byte add_tweaks__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18RockParticleSystemFPCc
+	.4byte tweak_name__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18RockParticleSystemFv
 .global __vt__Q214zCombatEffects14ParticleSystem
 __vt__Q214zCombatEffects14ParticleSystem:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80090888
+	.4byte reset__Q214zCombatEffects14ParticleSystemFRC5xVec3RC5xVec3
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -425,20 +425,20 @@ __vt__Q214zCombatEffects14ParticleSystem:
 __vt__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18BitsParticleSystem:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80093370
-	.4byte 0x80093888
-	.4byte 0x80093914
-	.4byte 0x80093910
-	.4byte 0x80093360
+	.4byte setup__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18BitsParticleSystemFv
+	.4byte reset__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18BitsParticleSystemFRC5xVec3RC5xVec3
+	.4byte emit__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18BitsParticleSystemFf
+	.4byte add_tweaks__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18BitsParticleSystemFPCc
+	.4byte tweak_name__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18BitsParticleSystemFv
 .global __vt__Q214zCombatEffects19SparkParticleSystem
 __vt__Q214zCombatEffects19SparkParticleSystem:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8009073C
-	.4byte 0x8009084C
-	.4byte 0x800908CC
-	.4byte 0x800908C8
-	.4byte 0x80093C70
+	.4byte setup__Q214zCombatEffects19SparkParticleSystemFv
+	.4byte reset__Q214zCombatEffects19SparkParticleSystemFRC5xVec3RC5xVec3
+	.4byte emit__Q214zCombatEffects19SparkParticleSystemFf
+	.4byte add_tweaks__Q214zCombatEffects19SparkParticleSystemFPCc
+	.4byte tweak_name__Q214zCombatEffects19SparkParticleSystemFv
 	.4byte 0x00000000
 
 .section .sdata2

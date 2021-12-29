@@ -37,22 +37,22 @@ _esc__2_stringBase0_94:
 __vt__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8015B900
-	.4byte 0x8015B904
-	.4byte 0x8015B908
-	.4byte 0x8015B90C
-	.4byte 0x8015B910
-	.4byte 0x8015B914
+	.4byte render__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_CFv
+	.4byte post_render_2d__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_CFv
+	.4byte post_render_3d__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_CFv
+	.4byte update__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_Ff
+	.4byte destroy__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_Fv
+	.4byte reset__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_Fv
 .global __vt__Q21z5shell
 __vt__Q21z5shell:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8015B7F0
-	.4byte 0x8015B904
-	.4byte 0x8015B908
-	.4byte 0x8015B514
-	.4byte 0x8015B4F0
-	.4byte 0x8015B914
+	.4byte render__Q21z5shellCFv
+	.4byte post_render_2d__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_CFv
+	.4byte post_render_3d__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_CFv
+	.4byte update__Q21z5shellFf
+	.4byte destroy__Q21z5shellFv
+	.4byte reset__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_Fv
 
 .section .sdata2
 

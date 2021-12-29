@@ -82,8 +82,9 @@
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s", "SetupActionTable__Q24zNPC7Om10ArmFv")
 
 // func_801B989C
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11GuardRemoteFv")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11GuardRemoteFv")
 
 // func_801B991C
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s", "__ct__Q34zNPC7Om10Arm6ActionFv")
@@ -93,12 +94,14 @@
                    "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4StepFv")
 
 // func_801B99A8
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6PierceFv")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6PierceFv")
 
 // func_801B9A28
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5StompFv")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5StompFv")
 
 // func_801B9AA8
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s", "StartAction__Q24zNPC7Om10ArmFUc")
@@ -107,8 +110,9 @@
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s", "Init__Q24zNPC7Om10ArmFPQ24zNPC4Om10i")
 
 // func_801B9BC4
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "get_default_light_kit__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_Fv")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "get_default_light_kit__Q24zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_Fv")
 
 // func_801B9C10
 #pragma GLOBAL_ASM(                                                                                \
@@ -292,8 +296,9 @@
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s", "__ct__Q34zNPC4Om1010ActionBaseFv")
 
 // func_801BBFA4
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_10BellySmashFv")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_10BellySmashFv")
 
 // func_801BBFDC
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
@@ -314,8 +319,9 @@
     "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_11LaserStrafeFRQ24zNPC4Om10")
 
 // func_801BC14C
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFRQ24zNPC4Om10")
 
 // func_801BC228
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
@@ -387,15 +393,17 @@
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s", "SetupStageTable__Q24zNPC4Om10Fv")
 
 // func_801BD0EC
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10")
 
 // func_801BD1F8
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s", "__ct__Q34zNPC4Om105StageFv")
 
 // func_801BD230
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage4FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage4FRQ24zNPC4Om10")
 
 // func_801BD2B0
 #pragma GLOBAL_ASM(                                                                                \
@@ -403,8 +411,9 @@
     "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16MultiTargetStageFP4xEntiii")
 
 // func_801BD308
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3FRQ24zNPC4Om10")
 
 // func_801BD418
 #pragma GLOBAL_ASM(                                                                                \
@@ -417,12 +426,14 @@
     "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10PQ44zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStage9GuardInfo")
 
 // func_801BD4B8
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage2FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage2FRQ24zNPC4Om10")
 
 // func_801BD554
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage1FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "__ct__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage1FRQ24zNPC4Om10")
 
 // func_801BD664
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s", "NextStage__Q24zNPC4Om10Fv")
@@ -444,8 +455,9 @@
                    "FindClosestAvailableArm__Q24zNPC4Om10CFRC5xVec3")
 
 // func_801BD960
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage1FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage1FRQ24zNPC4Om10")
 
 // func_801BD9CC
 #pragma GLOBAL_ASM(                                                                                \
@@ -458,8 +470,9 @@
     "SetSide__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10i")
 
 // func_801BDAD4
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage1FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage1FRQ24zNPC4Om10")
 
 // func_801BDB18
 #pragma GLOBAL_ASM(                                                                                \
@@ -507,8 +520,9 @@
     "StartArmGuardAction__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16GuardRemoteStageFRQ24zNPC4Om10")
 
 // func_801BE2FC
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage2FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage2FRQ24zNPC4Om10")
 
 // func_801BE330
 #pragma GLOBAL_ASM(                                                                                \
@@ -516,8 +530,9 @@
     "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16MultiTargetStageFRQ24zNPC4Om10")
 
 // func_801BE3AC
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage2FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage2FRQ24zNPC4Om10")
 
 // func_801BE3E0
 #pragma GLOBAL_ASM(                                                                                \
@@ -540,12 +555,14 @@
     "DoPlayerAttack__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_16MultiTargetStageFRQ24zNPC4Om10f")
 
 // func_801BE6E4
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3FRQ24zNPC4Om10")
 
 // func_801BE734
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3FRQ24zNPC4Om10")
 
 // func_801BE784
 #pragma GLOBAL_ASM(                                                                                \
@@ -553,20 +570,24 @@
     "StartAttack__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage3FRQ24zNPC4Om10")
 
 // func_801BE864
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage4FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage4FRQ24zNPC4Om10")
 
 // func_801BE898
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage4FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage4FRQ24zNPC4Om10")
 
 // func_801BE8CC
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10")
 
 // func_801BE9C0
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10")
 
 // func_801BEA20
 #pragma GLOBAL_ASM(                                                                                \
@@ -574,8 +595,9 @@
     "Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10f")
 
 // func_801BF184
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Reset__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Reset__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_6Stage5FRQ24zNPC4Om10")
 
 // func_801BF1E0
 #pragma GLOBAL_ASM(                                                                                \
@@ -583,12 +605,14 @@
     "IsRunnable__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowCFRCQ24zNPC4Om10P4xEnt")
 
 // func_801BF2A0
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowCFv")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowCFv")
 
 // func_801BF2A8
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFRQ24zNPC4Om10")
 
 // func_801BF330
 #pragma GLOBAL_ASM(                                                                                \
@@ -596,8 +620,9 @@
     "Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFRQ24zNPC4Om10f")
 
 // func_801BF474
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "End__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFRQ24zNPC4Om10")
 
 // func_801BF4E0
 #pragma GLOBAL_ASM(                                                                                \
@@ -605,8 +630,9 @@
     "StopFling__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFRQ24zNPC4Om10")
 
 // func_801BF588
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "StartFling__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFv")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "StartFling__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_5ThrowFv")
 
 // func_801BF5F0
 #pragma GLOBAL_ASM(                                                                                \
@@ -654,28 +680,34 @@
     "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_9UberLaserFRQ24zNPC4Om10")
 
 // func_801BFF70
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4IdleCFv")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4IdleCFv")
 
 // func_801BFF78
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4IdleFRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4IdleFRQ24zNPC4Om10")
 
 // func_801BFFA8
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4IdleFRQ24zNPC4Om10f")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4IdleFRQ24zNPC4Om10f")
 
 // func_801BFFCC
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4JumpCFv")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4JumpCFv")
 
 // func_801BFFD4
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4JumpFRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4JumpFRQ24zNPC4Om10")
 
 // func_801C0034
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4JumpFRQ24zNPC4Om10f")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4JumpFRQ24zNPC4Om10f")
 
 // func_801C0214
 #pragma GLOBAL_ASM(                                                                                \
@@ -703,16 +735,19 @@
     "DoSmashEffect__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_10BellySmashFRQ24zNPC4Om10")
 
 // func_801C040C
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4WalkCFv")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "GetBodyPartsUsed__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4WalkCFv")
 
 // func_801C0414
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4WalkFRQ24zNPC4Om10")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Begin__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4WalkFRQ24zNPC4Om10")
 
 // func_801C043C
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
-                   "Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4WalkFRQ24zNPC4Om10f")
+#pragma GLOBAL_ASM(                                                                                \
+    "asm/GAME/zNPCBossOmnidroid10.s",                                                              \
+    "Update__Q34zNPC33_esc__2_unnamed_esc__2_zNPCBossOmnidroid10_cpp_esc__2_4WalkFRQ24zNPC4Om10f")
 
 // func_801C0444
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s", "__dt__Q24zNPC4Om10Fv")
@@ -936,7 +971,8 @@
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s", "get_laser_speed__Q24zNPC10laser_boneFv")
 
 // func_801C1774
-#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s", "_esc__2_496_esc__2___cl__Q24zNPC4Om10FR12xSweptSphere")
+#pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \
+                   "_esc__2_496_esc__2___cl__Q24zNPC4Om10FR12xSweptSphere__WEAK")
 
 // func_801C177C
 #pragma GLOBAL_ASM("asm/GAME/zNPCBossOmnidroid10.s",                                               \

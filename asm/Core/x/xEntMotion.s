@@ -4,13 +4,13 @@
 
 .global _esc__2_1636
 _esc__2_1636:
-	.4byte 0x8002DD74
-	.4byte 0x8002DD98
-	.4byte 0x8002DDC0
-	.4byte 0x8002DDE8
-	.4byte 0x8002DE30
-	.4byte 0x8002DE78
-	.4byte 0x8002DEC4
+	.4byte xEntScale__FP10xEntMotionP6xScenefP9xEntFrame+192
+	.4byte xEntScale__FP10xEntMotionP6xScenefP9xEntFrame+228
+	.4byte xEntScale__FP10xEntMotionP6xScenefP9xEntFrame+268
+	.4byte xEntScale__FP10xEntMotionP6xScenefP9xEntFrame+308
+	.4byte xEntScale__FP10xEntMotionP6xScenefP9xEntFrame+380
+	.4byte xEntScale__FP10xEntMotionP6xScenefP9xEntFrame+452
+	.4byte xEntScale__FP10xEntMotionP6xScenefP9xEntFrame+528
 	.4byte 0x00000000
 
 .section .sbss2, "", @nobits

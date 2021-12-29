@@ -62,23 +62,23 @@ filter_angle__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_:
 __vt__17zBulletTimeCamera:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8008748C
-	.4byte 0x80010314
-	.4byte 0x800874DC
-	.4byte 0x8000E648
-	.4byte 0x800874FC
-	.4byte 0x8000EDCC
-	.4byte 0x80010318
+	.4byte create__17zBulletTimeCameraFv
+	.4byte destroy__4xCamFv
+	.4byte start__17zBulletTimeCameraFv
+	.4byte stop__4xCamFv
+	.4byte update__17zBulletTimeCameraFR6xScenef
+	.4byte get_next__4xCamFv
+	.4byte config_follow__4xCamFv
 .global __vt__13zLinearFilter
 __vt__13zLinearFilter:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x800871EC
+	.4byte interpolate__13zLinearFilterFP5xVec3
 .global __vt__17zQuaternionFilter
 __vt__17zQuaternionFilter:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80086DCC
+	.4byte interpolate__17zQuaternionFilterFP5zQuat
 .global __vt__23zFilterAbstract_esc__0_5zQuat_esc__1_
 __vt__23zFilterAbstract_esc__0_5zQuat_esc__1_:
 	.4byte 0x00000000

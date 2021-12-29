@@ -79,13 +79,13 @@ namespace zNPC
         bool get_parameter(const char* name, xVec3* value, const xVec3& default_value);
         bool get_parameter(const char* name, const char** value, const char* default_value);
 
-        static void destroy_npc(xFactoryInst* inst);
-
         uint32 get_type() const
         {
             return type;
         }
     };
+
+    void destroy_npc(xFactoryInst* inst);
 } // namespace zNPC
 
 #endif

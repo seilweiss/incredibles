@@ -29,24 +29,24 @@ lbl_803D84D0:
 __vt__9xCamBlend:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8000F68C
-	.4byte 0x8000F6D0
-	.4byte 0x8000F6D4
-	.4byte 0x8000F7F4
-	.4byte 0x8000F874
-	.4byte 0x8000F9D8
-	.4byte 0x80010318
+	.4byte create__9xCamBlendFv
+	.4byte destroy__9xCamBlendFv
+	.4byte start__9xCamBlendFv
+	.4byte stop__9xCamBlendFv
+	.4byte update__9xCamBlendFR6xScenef
+	.4byte get_next__9xCamBlendFv
+	.4byte config_follow__4xCamFv
 .global __vt__4xCam
 __vt__4xCam:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8000E958
-	.4byte 0x80010314
-	.4byte 0x8000E638
-	.4byte 0x8000E648
+	.4byte create__4xCamFv
+	.4byte destroy__4xCamFv
+	.4byte start__4xCamFv
+	.4byte stop__4xCamFv
 	.4byte 0x00000000
-	.4byte 0x8000EDCC
-	.4byte 0x80010318
+	.4byte get_next__4xCamFv
+	.4byte config_follow__4xCamFv
 
 .section .sdata2
 

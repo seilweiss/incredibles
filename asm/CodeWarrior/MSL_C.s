@@ -32,19 +32,19 @@ __files:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803C84E0
+	.4byte stdin_buff
 	.4byte 0x00000100
-	.4byte 0x803C84E0
+	.4byte stdin_buff
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802C7368
-	.4byte 0x802BDF34
-	.4byte 0x802BDF2C
+	.4byte __read_console
+	.4byte __write_console
+	.4byte __close_console
 	.4byte 0x00000000
-	.4byte 0x8032D538
+	.4byte __files+80
 	.4byte 0x00000001
 	.4byte 0x12800000
 	.4byte 0x00000000
@@ -52,19 +52,19 @@ __files:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803C83E0
+	.4byte stdout_buff
 	.4byte 0x00000100
-	.4byte 0x803C83E0
+	.4byte stdout_buff
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802C7368
-	.4byte 0x802BDF34
-	.4byte 0x802BDF2C
+	.4byte __read_console
+	.4byte __write_console
+	.4byte __close_console
 	.4byte 0x00000000
-	.4byte 0x8032D588
+	.4byte __files+160
 	.4byte 0x00000002
 	.4byte 0x10800000
 	.4byte 0x00000000
@@ -72,19 +72,19 @@ __files:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x803C82E0
+	.4byte stderr_buff
 	.4byte 0x00000100
-	.4byte 0x803C82E0
+	.4byte stderr_buff
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802C7368
-	.4byte 0x802BDF34
-	.4byte 0x802BDF2C
+	.4byte __read_console
+	.4byte __write_console
+	.4byte __close_console
 	.4byte 0x00000000
-	.4byte 0x8032D5D8
+	.4byte __files+240
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -125,79 +125,79 @@ pow_10_esc__7_416:
 	.4byte 0x00000000
 .global _esc__2_1710
 _esc__2_1710:
-	.4byte 0x802B5E8C
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B5F88
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B6084
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B6180
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B7328
-	.4byte 0x802B627C
-	.4byte 0x802B6378
-	.4byte 0x802B6474
-	.4byte 0x802B6570
-	.4byte 0x802B666C
-	.4byte 0x802B6768
-	.4byte 0x802B6864
-	.4byte 0x802B6960
-	.4byte 0x802B6A5C
-	.4byte 0x802B6B54
-	.4byte 0x802B6C4C
-	.4byte 0x802B6D44
-	.4byte 0x802B6E3C
-	.4byte 0x802B6F38
-	.4byte 0x802B7034
-	.4byte 0x802B7130
-	.4byte 0x802B722C
+	.4byte __two_exp+64
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+316
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+568
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+820
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+5340
+	.4byte __two_exp+1072
+	.4byte __two_exp+1324
+	.4byte __two_exp+1576
+	.4byte __two_exp+1828
+	.4byte __two_exp+2080
+	.4byte __two_exp+2332
+	.4byte __two_exp+2584
+	.4byte __two_exp+2836
+	.4byte __two_exp+3088
+	.4byte __two_exp+3336
+	.4byte __two_exp+3584
+	.4byte __two_exp+3832
+	.4byte __two_exp+4080
+	.4byte __two_exp+4332
+	.4byte __two_exp+4584
+	.4byte __two_exp+4836
+	.4byte __two_exp+5088
 	.4byte 0x00000000
 .global __ctype_map
 __ctype_map:
@@ -399,260 +399,260 @@ __upper_map:
 	.4byte 0xFCFDFEFF
 .global __lconv
 __lconv:
-	.4byte 0x802F0130
-	.4byte 0x802F0132
-	.4byte 0x802F0132
-	.4byte 0x802F0132
-	.4byte 0x802F0132
-	.4byte 0x802F0132
-	.4byte 0x802F0132
-	.4byte 0x802F0132
-	.4byte 0x802F0132
+	.4byte _esc__2_stringBase0_160
+	.4byte _esc__2_stringBase0_160+2
+	.4byte _esc__2_stringBase0_160+2
+	.4byte _esc__2_stringBase0_160+2
+	.4byte _esc__2_stringBase0_160+2
+	.4byte _esc__2_stringBase0_160+2
+	.4byte _esc__2_stringBase0_160+2
+	.4byte _esc__2_stringBase0_160+2
+	.4byte _esc__2_stringBase0_160+2
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
-	.4byte 0x802F0132
+	.4byte _esc__2_stringBase0_160+2
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
 .global _esc__2_1248
 _esc__2_1248:
-	.4byte 0x802BA4F0
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA490
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA490
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA4C8
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA4DC
-	.4byte 0x802BA500
-	.4byte 0x802BA500
-	.4byte 0x802BA4F0
+	.4byte longlong2str+248
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+152
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+152
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+208
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+228
+	.4byte longlong2str+264
+	.4byte longlong2str+264
+	.4byte longlong2str+248
 .global _esc__2_1307
 _esc__2_1307:
-	.4byte 0x802BA7B4
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA77C
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA77C
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA794
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7A4
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7C0
-	.4byte 0x802BA7B4
+	.4byte long2str+168
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+112
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+112
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+136
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+152
+	.4byte long2str+180
+	.4byte long2str+180
+	.4byte long2str+168
 .global _esc__2_1443
 _esc__2_1443:
-	.4byte 0x802BACF0
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAD40
-	.4byte 0x802BACB8
-	.4byte 0x802BAD2C
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAC70
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BACF0
-	.4byte 0x802BAE20
-	.4byte 0x802BADA4
-	.4byte 0x802BAC70
-	.4byte 0x802BAD40
-	.4byte 0x802BACB8
-	.4byte 0x802BAD2C
-	.4byte 0x802BAE20
-	.4byte 0x802BAC70
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAE08
-	.4byte 0x802BAC70
-	.4byte 0x802BAD80
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BADDC
-	.4byte 0x802BAE20
-	.4byte 0x802BAC70
-	.4byte 0x802BAE20
-	.4byte 0x802BAE20
-	.4byte 0x802BAC70
+	.4byte parse_format+908
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+988
+	.4byte parse_format+852
+	.4byte parse_format+968
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+780
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+908
+	.4byte parse_format+1212
+	.4byte parse_format+1088
+	.4byte parse_format+780
+	.4byte parse_format+988
+	.4byte parse_format+852
+	.4byte parse_format+968
+	.4byte parse_format+1212
+	.4byte parse_format+780
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1188
+	.4byte parse_format+780
+	.4byte parse_format+1052
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+1144
+	.4byte parse_format+1212
+	.4byte parse_format+780
+	.4byte parse_format+1212
+	.4byte parse_format+1212
+	.4byte parse_format+780
 .global _esc__2_1442
 _esc__2_1442:
-	.4byte 0x802BAA20
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA38
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA14
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA08
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA5C
-	.4byte 0x802BAA44
+	.4byte parse_format+188
+	.4byte parse_format+248
+	.4byte parse_format+248
+	.4byte parse_format+212
+	.4byte parse_format+248
+	.4byte parse_format+248
+	.4byte parse_format+248
+	.4byte parse_format+248
+	.4byte parse_format+248
+	.4byte parse_format+248
+	.4byte parse_format+248
+	.4byte parse_format+176
+	.4byte parse_format+248
+	.4byte parse_format+164
+	.4byte parse_format+248
+	.4byte parse_format+248
+	.4byte parse_format+224
 	.4byte 0x00000000
 .global _esc__2_721
 _esc__2_721:
-	.4byte 0x802BBD4C
-	.4byte 0x802BBFD0
-	.4byte 0x802BBD4C
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBD34
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBE3C
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBD4C
-	.4byte 0x802BBFD0
-	.4byte 0x802BBD9C
-	.4byte 0x802BBD34
-	.4byte 0x802BBD4C
-	.4byte 0x802BBD4C
-	.4byte 0x802BBD4C
-	.4byte 0x802BBFD0
-	.4byte 0x802BBD34
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD8
-	.4byte 0x802BBD34
-	.4byte 0x802BBD88
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBDC8
-	.4byte 0x802BBFD0
-	.4byte 0x802BBD34
-	.4byte 0x802BBFD0
-	.4byte 0x802BBFD0
-	.4byte 0x802BBD34
+	.4byte parse_format_0+600
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+600
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+576
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+840
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+600
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+680
+	.4byte parse_format_0+576
+	.4byte parse_format_0+600
+	.4byte parse_format_0+600
+	.4byte parse_format_0+600
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+576
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1252
+	.4byte parse_format_0+576
+	.4byte parse_format_0+660
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+724
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+576
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+1244
+	.4byte parse_format_0+576
 .global _esc__2_348_2
 _esc__2_348_2:
-	.4byte 0x802BDAB8
-	.4byte 0x802BD800
-	.4byte 0x802BD8A0
-	.4byte 0x802BDAB8
-	.4byte 0x802BD8E8
-	.4byte 0x802BDAB8
-	.4byte 0x802BDAB8
-	.4byte 0x802BDAB8
-	.4byte 0x802BD938
-	.4byte 0x802BDAB8
-	.4byte 0x802BDAB8
-	.4byte 0x802BDAB8
-	.4byte 0x802BDAB8
-	.4byte 0x802BDAB8
-	.4byte 0x802BDAB8
-	.4byte 0x802BDAB8
-	.4byte 0x802BD938
+	.4byte __strtoull+920
+	.4byte __strtoull+224
+	.4byte __strtoull+384
+	.4byte __strtoull+920
+	.4byte __strtoull+456
+	.4byte __strtoull+920
+	.4byte __strtoull+920
+	.4byte __strtoull+920
+	.4byte __strtoull+536
+	.4byte __strtoull+920
+	.4byte __strtoull+920
+	.4byte __strtoull+920
+	.4byte __strtoull+920
+	.4byte __strtoull+920
+	.4byte __strtoull+920
+	.4byte __strtoull+920
+	.4byte __strtoull+536
 .global _esc__2_431
 _esc__2_431:
-	.4byte 0x802BDE3C
-	.4byte 0x802BDBF0
-	.4byte 0x802BDC90
-	.4byte 0x802BDE3C
-	.4byte 0x802BDCD8
-	.4byte 0x802BDE3C
-	.4byte 0x802BDE3C
-	.4byte 0x802BDE3C
-	.4byte 0x802BDD28
-	.4byte 0x802BDE3C
-	.4byte 0x802BDE3C
-	.4byte 0x802BDE3C
-	.4byte 0x802BDE3C
-	.4byte 0x802BDE3C
-	.4byte 0x802BDE3C
-	.4byte 0x802BDE3C
-	.4byte 0x802BDD28
+	.4byte __strtoul+784
+	.4byte __strtoul+196
+	.4byte __strtoul+356
+	.4byte __strtoul+784
+	.4byte __strtoul+428
+	.4byte __strtoul+784
+	.4byte __strtoul+784
+	.4byte __strtoul+784
+	.4byte __strtoul+508
+	.4byte __strtoul+784
+	.4byte __strtoul+784
+	.4byte __strtoul+784
+	.4byte __strtoul+784
+	.4byte __strtoul+784
+	.4byte __strtoul+784
+	.4byte __strtoul+784
+	.4byte __strtoul+508
 
 .section .rodata
 
@@ -1280,10 +1280,10 @@ next_0:
 	.4byte 0x00000000
 .global n_esc__7_210
 n_esc__7_210:
-	.4byte 0x802F01A8
+	.4byte _esc__2_stringBase0_162
 .global s_esc__7_211
 s_esc__7_211:
-	.4byte 0x802F01A8
+	.4byte _esc__2_stringBase0_162
 .global __float_nan
 __float_nan:
 	.4byte 0x7FFFFFFF

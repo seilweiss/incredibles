@@ -24,15 +24,15 @@ init_esc__7_948:
 __vt__Q24xhud11text_widget:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801A0170
-	.4byte 0x801A0190
-	.4byte 0x801A01D0
-	.4byte 0x8003DD18
-	.4byte 0x8019FFA0
-	.4byte 0x801A0228
-	.4byte 0x801A0304
-	.4byte 0x8003D77C
-	.4byte 0x801A032C
+	.4byte destroy__Q24xhud11text_widgetFv
+	.4byte type__Q24xhud11text_widgetCFv
+	.4byte is__Q24xhud11text_widgetCFUi
+	.4byte init__Q24xhud6widgetFv
+	.4byte setup__Q24xhud11text_widgetFv
+	.4byte update__Q24xhud11text_widgetFf
+	.4byte render__Q24xhud11text_widgetFv
+	.4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBaseUi
+	.4byte set_text__Q24xhud11text_widgetFPCc
 	.4byte 0x00000000
 
 .section .sdata2

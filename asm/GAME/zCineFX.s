@@ -87,14 +87,14 @@ nozey_npc_cinematics_esc__7_1081:
 __vt__9XCSNNosey:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8001E150
-	.4byte 0x8001E1C8
+	.4byte CanRenderNow__9XCSNNoseyFv
+	.4byte UpdatedAnimated__9XCSNNoseyFP8RpAtomicP11RwMatrixTagUiUiRUi
 .global __vt__11NCINBeNosey
 __vt__11NCINBeNosey:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801E9F28
-	.4byte 0x801E9FA4
+	.4byte CanRenderNow__11NCINBeNoseyFv
+	.4byte UpdatedAnimated__11NCINBeNoseyFP8RpAtomicP11RwMatrixTagUiUiRUi
 
 .if 0
 

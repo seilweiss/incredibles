@@ -59,68 +59,68 @@ tankArmorTranslation__4zNPC:
 __vt__Q24zNPC5Armor:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x800FF30C
-	.4byte 0x800FEDDC
-	.4byte 0x800FEEFC
-	.4byte 0x800FEF30
-	.4byte 0x800FF328
-	.4byte 0x800FEE78
-	.4byte 0x800FEE80
-	.4byte 0x800AB4DC
-	.4byte 0x800AB4E0
-	.4byte 0x800FF120
-	.4byte 0x800FEE88
-	.4byte 0x800AB4E8
-	.4byte 0x800FEE8C
-	.4byte 0x800AB4F0
-	.4byte 0x800FEEA0
-	.4byte 0x800FF19C
-	.4byte 0x800FF300
-	.4byte 0x800FF31C
-	.4byte 0x800FF304
-	.4byte 0x800AB504
-	.4byte 0x800AB508
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x800AB524
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x800FF324
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte getName__Q24zNPC5ArmorFv
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__Q24zNPC5ArmorFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte damage__Q24zNPC5ArmorFR17zCombatDamageInfo
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__Q24zNPC5ArmorFP10xAnimTable
+	.4byte add_transitions__Q24zNPC5ArmorFP10xAnimTable
+	.4byte exit_state__8behaviorFv
+	.4byte kill__8behaviorFv
+	.4byte update__Q24zNPC5ArmorFf
+	.4byte setup__Q24zNPC5ArmorFv
+	.4byte exit__8behaviorFv
+	.4byte init__Q24zNPC5ArmorFv
+	.4byte scene_setup__8behaviorFv
+	.4byte reset__Q24zNPC5ArmorFv
+	.4byte render__Q24zNPC5ArmorFv
+	.4byte render_extra__Q24zNPC5ArmorFv
+	.4byte exclusive__Q24zNPC5ArmorFv
+	.4byte runnable__Q24zNPC5ArmorFf
+	.4byte before_anim_matrices__8behaviorFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__8behaviorF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__8behaviorFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
 .global __vt__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
 __vt__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80184548
-	.4byte 0x800AB4B4
-	.4byte 0x800FEDDC
-	.4byte 0x800AB4C4
-	.4byte 0x800AB4CC
-	.4byte 0x800FF328
-	.4byte 0x800AB4D4
-	.4byte 0x800AB4D8
-	.4byte 0x800AB4DC
-	.4byte 0x800AB4E0
-	.4byte 0x800AB4E4
-	.4byte 0x800A529C
-	.4byte 0x800AB4E8
-	.4byte 0x800AB4EC
-	.4byte 0x800AB4F0
-	.4byte 0x800A535C
-	.4byte 0x800AB4F4
-	.4byte 0x800AB4F8
-	.4byte 0x800AB4FC
+	.4byte in_state__8behaviorCFPCcfP14xModelInstance
+	.4byte getName__8behaviorFv
+	.4byte set_owner__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FP4xEnt
+	.4byte system_event__8behaviorFP5xBaseP5xBaseUiPCfP5xBaseUi
+	.4byte damage__8behaviorFR17zCombatDamageInfo
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC8behavior
+	.4byte add_states__8behaviorFP10xAnimTable
+	.4byte add_transitions__8behaviorFP10xAnimTable
+	.4byte exit_state__8behaviorFv
+	.4byte kill__8behaviorFv
+	.4byte update__8behaviorFf
+	.4byte setup__8behaviorFv
+	.4byte exit__8behaviorFv
+	.4byte init__8behaviorFv
+	.4byte scene_setup__8behaviorFv
+	.4byte reset__8behaviorFv
+	.4byte render__8behaviorFv
+	.4byte render_extra__8behaviorFv
+	.4byte exclusive__8behaviorFv
 	.4byte 0x00000000
-	.4byte 0x800AB504
-	.4byte 0x800AB508
-	.4byte 0x800AB510
-	.4byte 0x800AB518
-	.4byte 0x800AB520
-	.4byte 0x800AB524
-	.4byte 0x8018464C
-	.4byte 0x801846DC
-	.4byte 0x800FF324
+	.4byte before_anim_matrices__8behaviorFP9xAnimPlayP5xQuatP5xVec3i
+	.4byte grabbable__8behaviorF8GrabType
+	.4byte punchable__8behaviorFv
+	.4byte collision_response__8behaviorFRC5xVec3RC22SphereCollisionResultsR5xVec3b
+	.4byte register_collision__8behaviorFRC22SphereCollisionResults
+	.4byte delay__8behaviorFv
+	.4byte set_state__8behaviorFPCcfP14xModelInstance
+	.4byte set_state__8behaviorFPCcffP14xModelInstance
+	.4byte enter_state__39behavior_implementation_esc__0_Q24zNPC6common_esc__1_FPC39behavior_implementation_esc__0_Q24zNPC6common_esc__1_
 	.4byte 0x00000000
 
 .section .rodata

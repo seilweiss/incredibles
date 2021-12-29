@@ -347,16 +347,16 @@ myGXPal528IntDf:
 
 .global _esc__2_1035_0
 _esc__2_1035_0:
-	.4byte 0x80078C78
+	.4byte iMemMgrMalloc__FUlUi
 .global lbl_803D2F84
 lbl_803D2F84:
-	.4byte 0x80078D20
+	.4byte iMemMgrFree__FPv
 .global lbl_803D2F88
 lbl_803D2F88:
-	.4byte 0x80078CD8
+	.4byte iMemMgrRealloc__FPvUlUi
 .global lbl_803D2F8C
 lbl_803D2F8C:
-	.4byte 0x80078D4C
+	.4byte iMemMgrCalloc__FUlUlUi
 
 .if 0
 

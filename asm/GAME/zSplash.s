@@ -275,14 +275,14 @@ lbl_803D91B0:
 
 .global texture_key_names__21_esc__2_unnamed_esc__2_zSplash_cpp_esc__2_
 texture_key_names__21_esc__2_unnamed_esc__2_zSplash_cpp_esc__2_:
-	.4byte 0x802E63F8
-	.4byte 0x802E63FD
-	.4byte 0x802E6402
-	.4byte 0x802E6407
-	.4byte 0x802E640E
-	.4byte 0x802E6414
-	.4byte 0x802E641B
-	.4byte 0x802E6421
+	.4byte _esc__2_stringBase0_106
+	.4byte _esc__2_stringBase0_106+5
+	.4byte _esc__2_stringBase0_106+10
+	.4byte _esc__2_stringBase0_106+15
+	.4byte _esc__2_stringBase0_106+22
+	.4byte _esc__2_stringBase0_106+28
+	.4byte _esc__2_stringBase0_106+35
+	.4byte _esc__2_stringBase0_106+41
 .global cone_texture_repeats__21_esc__2_unnamed_esc__2_zSplash_cpp_esc__2_
 cone_texture_repeats__21_esc__2_unnamed_esc__2_zSplash_cpp_esc__2_:
 	.4byte 0x00000004

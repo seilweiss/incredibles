@@ -12,26 +12,26 @@ gSnd:
 
 .global _esc__2_2470
 _esc__2_2470:
-	.4byte 0x800678CC
-	.4byte 0x80067904
-	.4byte 0x80067A8C
-	.4byte 0x80067940
-	.4byte 0x80067978
-	.4byte 0x800679B0
-	.4byte 0x800679E8
-	.4byte 0x80067A20
-	.4byte 0x80067A58
+	.4byte xSndMgr_SetPaused__Fsb+40
+	.4byte xSndMgr_SetPaused__Fsb+96
+	.4byte xSndMgr_SetPaused__Fsb+488
+	.4byte xSndMgr_SetPaused__Fsb+156
+	.4byte xSndMgr_SetPaused__Fsb+212
+	.4byte xSndMgr_SetPaused__Fsb+268
+	.4byte xSndMgr_SetPaused__Fsb+324
+	.4byte xSndMgr_SetPaused__Fsb+380
+	.4byte xSndMgr_SetPaused__Fsb+436
 .global _esc__2_2485
 _esc__2_2485:
-	.4byte 0x80067AB8
-	.4byte 0x80067AD8
-	.4byte 0x80067B70
-	.4byte 0x80067AF8
-	.4byte 0x80067B0C
-	.4byte 0x80067B20
-	.4byte 0x80067B34
-	.4byte 0x80067B48
-	.4byte 0x80067B5C
+	.4byte xSndMgrIsPaused__Fs+40
+	.4byte xSndMgrIsPaused__Fs+72
+	.4byte xSndMgrIsPaused__Fs+224
+	.4byte xSndMgrIsPaused__Fs+104
+	.4byte xSndMgrIsPaused__Fs+124
+	.4byte xSndMgrIsPaused__Fs+144
+	.4byte xSndMgrIsPaused__Fs+164
+	.4byte xSndMgrIsPaused__Fs+184
+	.4byte xSndMgrIsPaused__Fs+204
 
 .section .rodata
 

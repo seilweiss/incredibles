@@ -57,9 +57,9 @@ lbl_803D93B8:
 __vt__18zParticleGenerator:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801CF640
-	.4byte 0x801CF670
-	.4byte 0x801CF680
+	.4byte reset__18zParticleGeneratorFv
+	.4byte activate__18zParticleGeneratorFv
+	.4byte deactivate__18zParticleGeneratorFv
 	.4byte 0x00000000
 
 .section .sdata2

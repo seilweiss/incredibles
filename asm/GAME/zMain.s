@@ -10,14 +10,14 @@ globals:
 
 .global _esc__2_1768
 _esc__2_1768:
-	.4byte 0x800E2D90
-	.4byte 0x800E2CC0
-	.4byte 0x800E2CE0
-	.4byte 0x800E2CF8
-	.4byte 0x800E2D10
-	.4byte 0x800E2D28
-	.4byte 0x800E2D40
-	.4byte 0x800E2D58
+	.4byte zMainMemCardSpaceQuery__Fv+956
+	.4byte zMainMemCardSpaceQuery__Fv+748
+	.4byte zMainMemCardSpaceQuery__Fv+780
+	.4byte zMainMemCardSpaceQuery__Fv+804
+	.4byte zMainMemCardSpaceQuery__Fv+828
+	.4byte zMainMemCardSpaceQuery__Fv+852
+	.4byte zMainMemCardSpaceQuery__Fv+876
+	.4byte zMainMemCardSpaceQuery__Fv+900
 .global backGroundTexture_esc__7_1866
 backGroundTexture_esc__7_1866:
 	.4byte 0x00000000
@@ -465,7 +465,7 @@ FB_DEPTH:
 	.4byte 0x00000018
 .global xglobals
 xglobals:
-	.4byte 0x80382A38
+	.4byte globals
 .global sShowMenuOnBoot
 sShowMenuOnBoot:
 	.4byte 0x00000001

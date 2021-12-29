@@ -28,22 +28,22 @@ systemID__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_:
 __vt__18zTurretSmokeSystem:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801064B0
-	.4byte 0x80106434
-	.4byte 0x801063B8
-	.4byte 0x801D2F48
-	.4byte 0x8010667C
-	.4byte 0x801065AC
+	.4byte render__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_CFv
+	.4byte post_render_2d__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_CFv
+	.4byte post_render_3d__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_CFv
+	.4byte update__18zTurretSmokeSystemFf
+	.4byte destroy__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Fv
+	.4byte reset__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Fv
 .global __vt__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_
 __vt__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801064B0
-	.4byte 0x80106434
-	.4byte 0x801063B8
-	.4byte 0x801D337C
-	.4byte 0x8010667C
-	.4byte 0x801065AC
+	.4byte render__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_CFv
+	.4byte post_render_2d__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_CFv
+	.4byte post_render_3d__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_CFv
+	.4byte update__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Ff
+	.4byte destroy__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Fv
+	.4byte reset__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_Fv
 
 .section .sdata2
 

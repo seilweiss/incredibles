@@ -24,13 +24,13 @@ MatFXInfo:
 	.4byte 0x00000000
 .global _esc__2_924
 _esc__2_924:
-	.4byte 0x802C9968
-	.4byte 0x802C98F4
-	.4byte 0x802C9900
-	.4byte 0x802C990C
-	.4byte 0x802C9920
-	.4byte 0x802C993C
-	.4byte 0x802C9948
+	.4byte RpMatFXMaterialSetEffects+504
+	.4byte RpMatFXMaterialSetEffects+388
+	.4byte RpMatFXMaterialSetEffects+400
+	.4byte RpMatFXMaterialSetEffects+412
+	.4byte RpMatFXMaterialSetEffects+432
+	.4byte RpMatFXMaterialSetEffects+460
+	.4byte RpMatFXMaterialSetEffects+472
 
 .section .rodata
 

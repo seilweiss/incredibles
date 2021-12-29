@@ -10,78 +10,78 @@ fragmentinfo:
 
 .global __vt__Q23std9exception
 __vt__Q23std9exception:
-	.4byte 0x803CE810
+	.4byte __RTTI__Q23std9exception
 	.4byte 0x00000000
-	.4byte 0x801FA7AC
-	.4byte 0x801FA86C
+	.4byte __dt__Q23std9exceptionFv
+	.4byte what__Q23std9exceptionCFv
 .global _esc__2_458
 _esc__2_458:
-	.4byte 0x801FBB48
-	.4byte 0x801FBB40
-	.4byte 0x801FBB48
-	.4byte 0x801FBB48
-	.4byte 0x801FBB48
-	.4byte 0x801FBB48
-	.4byte 0x801FBB48
-	.4byte 0x801FBB48
-	.4byte 0x801FBB48
-	.4byte 0x801FBB48
-	.4byte 0x801FBB48
-	.4byte 0x801FBB48
-	.4byte 0x801FBA74
-	.4byte 0x801FBB48
-	.4byte 0x801FBB40
-	.4byte 0x801FBA94
-	.4byte 0x801FBA54
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+692
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+488
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+700
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+692
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+520
+	.4byte ExPPC_ThrowHandler__FP12ThrowContext+456
 .global _esc__2_651
 _esc__2_651:
-	.4byte 0x801FC38C
-	.4byte 0x801FBF44
-	.4byte 0x801FBF58
-	.4byte 0x801FBF84
-	.4byte 0x801FBFE8
-	.4byte 0x801FC034
-	.4byte 0x801FC088
-	.4byte 0x801FC0DC
-	.4byte 0x801FC130
-	.4byte 0x801FC1B8
-	.4byte 0x801FC234
-	.4byte 0x801FC27C
-	.4byte 0x801FC2F8
-	.4byte 0x801FC320
-	.4byte 0x801FC38C
-	.4byte 0x801FC36C
-	.4byte 0x801FC30C
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+1248
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+152
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+172
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+216
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+316
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+392
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+476
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+560
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+644
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+780
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+904
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+976
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+1100
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+1140
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+1248
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+1216
+	.4byte ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv+1120
 .global _esc__2_814
 _esc__2_814:
-	.4byte 0x801FC774
-	.4byte 0x801FC774
-	.4byte 0x801FC6C8
-	.4byte 0x801FC6D4
-	.4byte 0x801FC6E0
-	.4byte 0x801FC6EC
-	.4byte 0x801FC6F8
-	.4byte 0x801FC6F8
-	.4byte 0x801FC708
-	.4byte 0x801FC714
-	.4byte 0x801FC720
-	.4byte 0x801FC72C
-	.4byte 0x801FC738
-	.4byte 0x801FC750
-	.4byte 0x801FC774
-	.4byte 0x801FC75C
-	.4byte 0x801FC744
+	.4byte ExPPC_NextAction__FP14ActionIterator+372
+	.4byte ExPPC_NextAction__FP14ActionIterator+372
+	.4byte ExPPC_NextAction__FP14ActionIterator+200
+	.4byte ExPPC_NextAction__FP14ActionIterator+212
+	.4byte ExPPC_NextAction__FP14ActionIterator+224
+	.4byte ExPPC_NextAction__FP14ActionIterator+236
+	.4byte ExPPC_NextAction__FP14ActionIterator+248
+	.4byte ExPPC_NextAction__FP14ActionIterator+248
+	.4byte ExPPC_NextAction__FP14ActionIterator+264
+	.4byte ExPPC_NextAction__FP14ActionIterator+276
+	.4byte ExPPC_NextAction__FP14ActionIterator+288
+	.4byte ExPPC_NextAction__FP14ActionIterator+300
+	.4byte ExPPC_NextAction__FP14ActionIterator+312
+	.4byte ExPPC_NextAction__FP14ActionIterator+336
+	.4byte ExPPC_NextAction__FP14ActionIterator+372
+	.4byte ExPPC_NextAction__FP14ActionIterator+348
+	.4byte ExPPC_NextAction__FP14ActionIterator+324
 .global _esc__2_903
 _esc__2_903:
-	.4byte 0x803CE828
+	.4byte __RTTI__Q23std9exception_0
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global __vt__Q23std13bad_exception
 __vt__Q23std13bad_exception:
-	.4byte 0x803CE830
+	.4byte __RTTI__Q23std13bad_exception
 	.4byte 0x00000000
-	.4byte 0x801FBE50
-	.4byte 0x801FCA2C
+	.4byte __dt__Q23std13bad_exceptionFv
+	.4byte what__Q23std13bad_exceptionCFv
 
 .section .rodata
 
@@ -202,26 +202,26 @@ lbl_803D14D8:
 
 .global __RTTI__Q23std9exception
 __RTTI__Q23std9exception:
-	.4byte 0x802ECDA8
+	.4byte _esc__2_223
 	.4byte 0x00000000
 .global thandler__3std
 thandler__3std:
-	.4byte 0x801FADD4
+	.4byte dthandler__3stdFv
 .global uhandler__3std
 uhandler__3std:
-	.4byte 0x801FADAC
+	.4byte duhandler__3stdFv
 .global fragmentID
 fragmentID:
 	.4byte 0xFFFFFFFE
 	.4byte 0x00000000
 .global __RTTI__Q23std9exception_0
 __RTTI__Q23std9exception_0:
-	.4byte 0x802ECE48
+	.4byte _esc__2_904
 	.4byte 0x00000000
 .global __RTTI__Q23std13bad_exception
 __RTTI__Q23std13bad_exception:
-	.4byte 0x802ECE34
-	.4byte 0x8031E734
+	.4byte _esc__2_902
+	.4byte _esc__2_903
 
 .section .text, "ax"
 

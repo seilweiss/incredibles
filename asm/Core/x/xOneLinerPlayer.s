@@ -4,56 +4,56 @@
 
 .global _esc__2_1144
 _esc__2_1144:
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED78
-	.4byte 0x8004ED78
-	.4byte 0x8004ED78
-	.4byte 0x8004ED78
-	.4byte 0x8004ED78
-	.4byte 0x8004ED78
-	.4byte 0x8004ED78
-	.4byte 0x8004ED78
-	.4byte 0x8004EDA4
-	.4byte 0x8004EDA4
-	.4byte 0x8004EDA4
-	.4byte 0x8004EDA4
-	.4byte 0x8004EDD0
-	.4byte 0x8004EDD0
-	.4byte 0x8004EDFC
-	.4byte 0x8004EDFC
-	.4byte 0x8004EDFC
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED78
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED78
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004ED4C
-	.4byte 0x8004EDA4
-	.4byte 0x8004EDA4
-	.4byte 0x8004EE28
-	.4byte 0x8004ED78
-	.4byte 0x8004EE28
-	.4byte 0x8004EE28
-	.4byte 0x8004EE28
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+100
+	.4byte Init__9xOneLinerFv+100
+	.4byte Init__9xOneLinerFv+100
+	.4byte Init__9xOneLinerFv+100
+	.4byte Init__9xOneLinerFv+100
+	.4byte Init__9xOneLinerFv+100
+	.4byte Init__9xOneLinerFv+100
+	.4byte Init__9xOneLinerFv+100
+	.4byte Init__9xOneLinerFv+144
+	.4byte Init__9xOneLinerFv+144
+	.4byte Init__9xOneLinerFv+144
+	.4byte Init__9xOneLinerFv+144
+	.4byte Init__9xOneLinerFv+188
+	.4byte Init__9xOneLinerFv+188
+	.4byte Init__9xOneLinerFv+232
+	.4byte Init__9xOneLinerFv+232
+	.4byte Init__9xOneLinerFv+232
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+100
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+100
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+56
+	.4byte Init__9xOneLinerFv+144
+	.4byte Init__9xOneLinerFv+144
+	.4byte Init__9xOneLinerFv+276
+	.4byte Init__9xOneLinerFv+100
+	.4byte Init__9xOneLinerFv+276
+	.4byte Init__9xOneLinerFv+276
+	.4byte Init__9xOneLinerFv+276
 
 .section .sdata
 
@@ -61,37 +61,37 @@ _esc__2_1144:
 __vt__12CActiveEvent:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8004F12C
-	.4byte 0x8004F134
-	.4byte 0x8004F174
+	.4byte Inform__12CActiveEventFR12testerPlayerfPv
+	.4byte Age__12CActiveEventFf
+	.4byte Test__12CActiveEventFR12testerPlayer
 .global __vt__13CTrueForYLong
 __vt__13CTrueForYLong:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8004F17C
-	.4byte 0x8004F1D8
-	.4byte 0x8004F1EC
+	.4byte Inform__13CTrueForYLongFR12testerPlayerfPv
+	.4byte Age__13CTrueForYLongFf
+	.4byte Test__13CTrueForYLongFR12testerPlayer
 .global __vt__22CUniqueAmountLessThanX
 __vt__22CUniqueAmountLessThanX:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8004F250
-	.4byte 0x8004F25C
-	.4byte 0x8004F29C
+	.4byte Inform__22CUniqueAmountLessThanXFR12testerPlayerfPv
+	.4byte Age__22CUniqueAmountLessThanXFf
+	.4byte Test__22CUniqueAmountLessThanXFR12testerPlayer
 .global __vt__18CXNumUniqueWithinY
 __vt__18CXNumUniqueWithinY:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8004F2BC
-	.4byte 0x8004F358
-	.4byte 0x8004F3C4
+	.4byte Inform__18CXNumUniqueWithinYFR12testerPlayerfPv
+	.4byte Age__18CXNumUniqueWithinYFf
+	.4byte Test__18CXNumUniqueWithinYFR12testerPlayer
 .global __vt__21CHappensXTimesWithinY
 __vt__21CHappensXTimesWithinY:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8004F3E4
-	.4byte 0x8004F454
-	.4byte 0x8004F4B8
+	.4byte Inform__21CHappensXTimesWithinYFR12testerPlayerfPv
+	.4byte Age__21CHappensXTimesWithinYFf
+	.4byte Test__21CHappensXTimesWithinYFR12testerPlayer
 .global __vt__11BasicInform
 __vt__11BasicInform:
 	.4byte 0x00000000
@@ -103,9 +103,9 @@ __vt__11BasicInform:
 __vt__25CUniqueAmountGreaterThanX:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8004F4D4
-	.4byte 0x8004F4E0
-	.4byte 0x8004F520
+	.4byte Inform__25CUniqueAmountGreaterThanXFR12testerPlayerfPv
+	.4byte Age__25CUniqueAmountGreaterThanXFf
+	.4byte Test__25CUniqueAmountGreaterThanXFR12testerPlayer
 	.4byte 0x00000000
 
 .section .sdata2

@@ -51,39 +51,39 @@ MOVIE_MANAGER_FMV_LIST__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
 	.4byte 0x0000001C
 .global newTags__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_
 newTags__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_:
-	.4byte 0x802E91E9
+	.4byte _esc__2_stringBase0_133+17
 	.4byte 0x00000010
-	.4byte 0x801C80CC
+	.4byte ParseTagLoadingSceneName__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802E91FA
+	.4byte _esc__2_stringBase0_133+34
 	.4byte 0x00000009
-	.4byte 0x801C7F08
+	.4byte ParseTagSceneDescription__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802E9204
+	.4byte _esc__2_stringBase0_133+44
 	.4byte 0x00000009
-	.4byte 0x801C7DE4
+	.4byte ParseTagSceneName__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802E920E
+	.4byte _esc__2_stringBase0_133+54
 	.4byte 0x0000000B
-	.4byte 0x801C7FBC
+	.4byte ParseTagSceneStatus__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802E921A
+	.4byte _esc__2_stringBase0_133+66
 	.4byte 0x00000003
-	.4byte 0x801C813C
+	.4byte ParseTagIgnore__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802E921E
+	.4byte _esc__2_stringBase0_133+70
 	.4byte 0x00000003
-	.4byte 0x801C813C
+	.4byte ParseTagIgnore__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802E9222
+	.4byte _esc__2_stringBase0_133+74
 	.4byte 0x00000003
-	.4byte 0x801C8188
+	.4byte ParseTagSpace__28_esc__2_unnamed_esc__2_zUIIncredibles_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global numbers_esc__7_1463
@@ -182,332 +182,332 @@ translationTable_esc__7_2798:
 __vt__23zUICustomArtworkManager:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801CC494
-	.4byte 0x801C5C70
-	.4byte 0x801C5C74
-	.4byte 0x801C5C78
-	.4byte 0x801CC5F4
-	.4byte 0x801CC9C4
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__23zUICustomArtworkManagerFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__9zUICustomFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__23zUICustomArtworkManagerFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__23zUICustomArtworkManagerFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__21zUICustomMovieManager
 __vt__21zUICustomMovieManager:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801CBE0C
-	.4byte 0x801C5C70
-	.4byte 0x801C5C74
-	.4byte 0x801C5C78
-	.4byte 0x801CBF54
-	.4byte 0x801C5C84
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__21zUICustomMovieManagerFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__9zUICustomFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__21zUICustomMovieManagerFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__9zUICustomFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__29zUICustomSecretsScreenControl
 __vt__29zUICustomSecretsScreenControl:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801CB590
-	.4byte 0x801CB594
-	.4byte 0x801CBA14
-	.4byte 0x801C5C78
-	.4byte 0x801CB890
-	.4byte 0x801C5C84
-	.4byte 0x801CB5D0
-	.4byte 0x801CB61C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__29zUICustomSecretsScreenControlFv
+	.4byte Setup__29zUICustomSecretsScreenControlFv
+	.4byte Reset__29zUICustomSecretsScreenControlFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__29zUICustomSecretsScreenControlFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__9zUICustomFf
+	.4byte PostUpdate__29zUICustomSecretsScreenControlFf
+	.4byte PreRender__29zUICustomSecretsScreenControlFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__23zUICustomControlOverlay
 __vt__23zUICustomControlOverlay:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801CAC00
-	.4byte 0x801C5C70
-	.4byte 0x801C5C74
-	.4byte 0x801C5C78
-	.4byte 0x801C5C7C
-	.4byte 0x801CAE90
-	.4byte 0x801C5C88
-	.4byte 0x801CAEDC
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__23zUICustomControlOverlayFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__9zUICustomFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__9zUICustomFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__23zUICustomControlOverlayFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__23zUICustomControlOverlayFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__18zUICustomWireframe
 __vt__18zUICustomWireframe:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801CA574
-	.4byte 0x801C5C70
-	.4byte 0x801C5C74
-	.4byte 0x801C5C78
-	.4byte 0x801C5C7C
-	.4byte 0x801CAB54
-	.4byte 0x801C5C88
-	.4byte 0x801CA7DC
-	.4byte 0x801C5C9C
-	.4byte 0x801CABC0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__18zUICustomWireframeFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__9zUICustomFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__9zUICustomFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__18zUICustomWireframeFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__18zUICustomWireframeFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__18zUICustomWireframeFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__20zUICustomPowerEffect
 __vt__20zUICustomPowerEffect:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801CA35C
-	.4byte 0x801C5C78
-	.4byte 0x801C5C7C
-	.4byte 0x801CA3AC
-	.4byte 0x801C5C88
-	.4byte 0x801CA448
-	.4byte 0x801CA498
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801CA49C
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__20zUICustomPowerEffectFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__9zUICustomFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__20zUICustomPowerEffectFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__20zUICustomPowerEffectFv
+	.4byte PostRender__20zUICustomPowerEffectFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__20zUICustomPowerEffectFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__15zUICustomStatic
 __vt__15zUICustomStatic:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801CA124
-	.4byte 0x801C5C78
-	.4byte 0x801C5C7C
-	.4byte 0x801CA164
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801CA234
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__15zUICustomStaticFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__9zUICustomFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__15zUICustomStaticFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__15zUICustomStaticFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__18zUICustomSoundMode
 __vt__18zUICustomSoundMode:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801C9EF4
-	.4byte 0x801C5C78
-	.4byte 0x801C9F94
-	.4byte 0x801C9F54
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__18zUICustomSoundModeFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__18zUICustomSoundModeFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__18zUICustomSoundModeFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__15zUICustomVolume
 __vt__15zUICustomVolume:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801C5C74
-	.4byte 0x801C5C78
-	.4byte 0x801C9D18
-	.4byte 0x801C5C84
-	.4byte 0x801C5C88
-	.4byte 0x801C9A30
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__9zUICustomFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__15zUICustomVolumeFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__9zUICustomFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__15zUICustomVolumeFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__28zUICustomDescriptionScroller
 __vt__28zUICustomDescriptionScroller:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801C95FC
-	.4byte 0x801C5C78
-	.4byte 0x801C9968
-	.4byte 0x801C97C4
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__28zUICustomDescriptionScrollerFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__28zUICustomDescriptionScrollerFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__28zUICustomDescriptionScrollerFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__20zUICustomMapScroller
 __vt__20zUICustomMapScroller:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801C921C
-	.4byte 0x801C5C78
-	.4byte 0x801C92A4
-	.4byte 0x801C92DC
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C9478
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__20zUICustomMapScrollerFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__20zUICustomMapScrollerFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__20zUICustomMapScrollerFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__20zUICustomMapScrollerFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__21zUICustomLevelManager
 __vt__21zUICustomLevelManager:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C8B30
-	.4byte 0x801C5C70
-	.4byte 0x801C5C74
-	.4byte 0x801C5C78
-	.4byte 0x801C8C40
-	.4byte 0x801C5C84
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__21zUICustomLevelManagerFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__9zUICustomFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__21zUICustomLevelManagerFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__9zUICustomFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__20zUICustomCheckpoints
 __vt__20zUICustomCheckpoints:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801C87C0
-	.4byte 0x801C5C78
-	.4byte 0x801C5C7C
-	.4byte 0x801C5C84
-	.4byte 0x801C5C88
-	.4byte 0x801C8800
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__20zUICustomCheckpointsFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__9zUICustomFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__9zUICustomFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__20zUICustomCheckpointsFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__19zUICustomSceneImage
 __vt__19zUICustomSceneImage:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801C8620
-	.4byte 0x801C5C78
-	.4byte 0x801C8680
-	.4byte 0x801C5C84
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__19zUICustomSceneImageFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__19zUICustomSceneImageFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__9zUICustomFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 .global __vt__23zUICustomNumberScroller
 __vt__23zUICustomNumberScroller:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801C5C6C
-	.4byte 0x801C5C70
-	.4byte 0x801C84D4
-	.4byte 0x801C5C78
-	.4byte 0x801C5C7C
-	.4byte 0x801C84E8
-	.4byte 0x801C5C88
-	.4byte 0x801C5C8C
-	.4byte 0x801C5C9C
-	.4byte 0x801C5CA0
-	.4byte 0x801C5C94
-	.4byte 0x801C5CA4
-	.4byte 0x801C5CA8
-	.4byte 0x801C5CAC
-	.4byte 0x801C5CB0
-	.4byte 0x8016861C
-	.4byte 0x80168614
-	.4byte 0x801C7A8C
+	.4byte Init__9zUICustomFv
+	.4byte Setup__9zUICustomFv
+	.4byte Reset__23zUICustomNumberScrollerFv
+	.4byte ResetMotion__9zUICustomFv
+	.4byte HandleEvent__9zUICustomFP5xBaseUiPCfP5xBaseUi
+	.4byte PreUpdate__23zUICustomNumberScrollerFf
+	.4byte PostUpdate__9zUICustomFf
+	.4byte PreRender__9zUICustomFv
+	.4byte PostRender__9zUICustomFv
+	.4byte Exit__9zUICustomFv
+	.4byte PreAutoMenu__9zUICustomFv
+	.4byte PreInitMotion__9zUICustomFv
+	.4byte PostInitMotion__9zUICustomFv
+	.4byte PreApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte PostApplyMotionFrame__9zUICustomFP14zUIMotionFrame
+	.4byte IsSystem__9zUICustomFP3zUI
+	.4byte IsSignalAllowed__9zUICustomFUi
+	.4byte IsForcePreUpdate__9zUICustomFv
 
 .section .rodata
 

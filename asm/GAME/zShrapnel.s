@@ -43,43 +43,43 @@ sCinProj:
 
 .global _esc__2_1196
 _esc__2_1196:
-	.4byte 0x8015BE24
-	.4byte 0x8015BE24
-	.4byte 0x8015BE18
-	.4byte 0x8015BDE0
-	.4byte 0x8015BDD0
-	.4byte 0x8015BDF8
-	.4byte 0x8015BDF0
-	.4byte 0x8015BE24
-	.4byte 0x8015BE00
-	.4byte 0x8015BE08
-	.4byte 0x8015BE10
+	.4byte zShrapnel_SceneInit__FP6zScene+416
+	.4byte zShrapnel_SceneInit__FP6zScene+416
+	.4byte zShrapnel_SceneInit__FP6zScene+404
+	.4byte zShrapnel_SceneInit__FP6zScene+348
+	.4byte zShrapnel_SceneInit__FP6zScene+332
+	.4byte zShrapnel_SceneInit__FP6zScene+372
+	.4byte zShrapnel_SceneInit__FP6zScene+364
+	.4byte zShrapnel_SceneInit__FP6zScene+416
+	.4byte zShrapnel_SceneInit__FP6zScene+380
+	.4byte zShrapnel_SceneInit__FP6zScene+388
+	.4byte zShrapnel_SceneInit__FP6zScene+396
 .global _esc__2_1303
 _esc__2_1303:
-	.4byte 0x8015C22C
-	.4byte 0x8015C22C
-	.4byte 0x8015C228
-	.4byte 0x8015C1F8
-	.4byte 0x8015C1F0
-	.4byte 0x8015C208
-	.4byte 0x8015C200
-	.4byte 0x8015C22C
-	.4byte 0x8015C210
-	.4byte 0x8015C218
-	.4byte 0x8015C220
+	.4byte zShrapnel_DefaultInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v+472
+	.4byte zShrapnel_DefaultInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v+472
+	.4byte zShrapnel_DefaultInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v+468
+	.4byte zShrapnel_DefaultInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v+420
+	.4byte zShrapnel_DefaultInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v+412
+	.4byte zShrapnel_DefaultInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v+436
+	.4byte zShrapnel_DefaultInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v+428
+	.4byte zShrapnel_DefaultInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v+472
+	.4byte zShrapnel_DefaultInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v+444
+	.4byte zShrapnel_DefaultInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v+452
+	.4byte zShrapnel_DefaultInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v+460
 .global _esc__2_1613
 _esc__2_1613:
-	.4byte 0x8015CD18
-	.4byte 0x8015CD18
-	.4byte 0x8015CD08
-	.4byte 0x8015CC3C
-	.4byte 0x8015CAE0
-	.4byte 0x8015CBFC
-	.4byte 0x8015CC7C
-	.4byte 0x8015CD18
-	.4byte 0x8015CCA4
-	.4byte 0x8015CCE0
-	.4byte 0x8015CCF4
+	.4byte zFrag_DefaultInit__FP5zFragP10zFragAsset+660
+	.4byte zFrag_DefaultInit__FP5zFragP10zFragAsset+660
+	.4byte zFrag_DefaultInit__FP5zFragP10zFragAsset+644
+	.4byte zFrag_DefaultInit__FP5zFragP10zFragAsset+440
+	.4byte zFrag_DefaultInit__FP5zFragP10zFragAsset+92
+	.4byte zFrag_DefaultInit__FP5zFragP10zFragAsset+376
+	.4byte zFrag_DefaultInit__FP5zFragP10zFragAsset+504
+	.4byte zFrag_DefaultInit__FP5zFragP10zFragAsset+660
+	.4byte zFrag_DefaultInit__FP5zFragP10zFragAsset+544
+	.4byte zFrag_DefaultInit__FP5zFragP10zFragAsset+604
+	.4byte zFrag_DefaultInit__FP5zFragP10zFragAsset+624
 	.4byte 0x00000000
 
 .section .rodata

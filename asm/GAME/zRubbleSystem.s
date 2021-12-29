@@ -80,19 +80,19 @@ cfg__Q427_esc__2_unnamed_esc__2_zRubbleSystem_cpp_esc__2_5tweak11rubble_bomb4blu
 __vt__Q31z12rubble_chunk12ball_physics:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801E7C48
+	.4byte collided__Q31z12rubble_chunk12ball_physicsFRC12xSweptSphere
 .global __vt__Q21z13rubble_system
 __vt__Q21z13rubble_system:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801E6314
-	.4byte 0x801E5F9C
-	.4byte 0x801E6108
-	.4byte 0x801E6210
-	.4byte 0x801E921C
-	.4byte 0x801E62AC
-	.4byte 0x801E9220
-	.4byte 0x801E8A2C
+	.4byte scene_setup__Q21z13rubble_systemFv
+	.4byte reset__Q21z13rubble_systemFv
+	.4byte update__Q21z13rubble_systemFf
+	.4byte render__Q21z13rubble_systemCFv
+	.4byte post_render_2d__Q21z13rubble_systemCFv
+	.4byte post_render_3d__Q21z13rubble_systemCFv
+	.4byte exit__Q21z13rubble_systemFv
+	.4byte get_light_kit__Q21z13rubble_systemFv
 
 .section .sdata2
 

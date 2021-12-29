@@ -10,85 +10,85 @@ chronos_effect_config:
 
 .global _esc__2_1529
 _esc__2_1529:
-	.4byte 0x8014A8EC
-	.4byte 0x8014A888
-	.4byte 0x8014A8EC
-	.4byte 0x8014A8C8
-	.4byte 0x8014A8B4
-	.4byte 0x8014A8EC
-	.4byte 0x8014A8DC
-	.4byte 0x8014A8EC
-	.4byte 0x8014A89C
-	.4byte 0x8014A89C
-	.4byte 0x8014A89C
-	.4byte 0x8014A8EC
-	.4byte 0x8014A8EC
-	.4byte 0x8014A8EC
-	.4byte 0x8014A8EC
-	.4byte 0x8014A8EC
-	.4byte 0x8014A8EC
-	.4byte 0x8014A8EC
-	.4byte 0x8014A888
-	.4byte 0x8014A8B4
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+348
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+248
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+348
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+312
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+292
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+348
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+332
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+348
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+268
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+268
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+268
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+348
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+348
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+348
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+348
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+348
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+348
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+348
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+248
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo+292
 .global __vt__7zPlayer
 __vt__7zPlayer:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8014A054
-	.4byte 0x80095C84
+	.4byte Init__7zPlayerFP9xEntAsset
+	.4byte SceneSetup__7zPlayerFv
 	.4byte 0x00000000
-	.4byte 0x800AB480
-	.4byte 0x8008FA28
-	.4byte 0x8014C9A4
-	.4byte 0x8014D92C
-	.4byte 0x8014CE80
-	.4byte 0x8014D52C
-	.4byte 0x8014C3F4
-	.4byte 0x8009F480
-	.4byte 0x8014D5F0
-	.4byte 0x8014C620
-	.4byte 0x8014C94C
-	.4byte 0x800AB488
-	.4byte 0x8014D588
-	.4byte 0x8014A790
-	.4byte 0x8009F4AC
-	.4byte 0x8009F4B4
-	.4byte 0x800AB490
-	.4byte 0x800AB494
-	.4byte 0x800A75F8
-	.4byte 0x80097A34
-	.4byte 0x800979F4
-	.4byte 0x80087C8C
-	.4byte 0x8009F4BC
-	.4byte 0x8014C050
-	.4byte 0x80150084
-	.4byte 0x800AB498
-	.4byte 0x80150088
-	.4byte 0x8009CE00
-	.4byte 0x8008A23C
-	.4byte 0x80099D68
-	.4byte 0x800AB49C
-	.4byte 0x8014C4C0
-	.4byte 0x800DA2D4
-	.4byte 0x8008F628
-	.4byte 0x8008F624
-	.4byte 0x800969CC
-	.4byte 0x8014C9A0
-	.4byte 0x8009D78C
-	.4byte 0x8009E3B8
-	.4byte 0x8014EF34
-	.4byte 0x8014FA50
-	.4byte 0x8014FA04
-	.4byte 0x8014FA00
-	.4byte 0x8014EBA0
-	.4byte 0x8014EC00
-	.4byte 0x8009F4C0
-	.4byte 0x800AB4A4
-	.4byte 0x8014D5A8
-	.4byte 0x8009F4C4
-	.4byte 0x8009F4CC
-	.4byte 0x800AB4AC
-	.4byte 0x8014A5F4
+	.4byte AllowInteraction__7zPlayerFP12zInteraction
+	.4byte AttackHit__7zPlayerFb
+	.4byte BeginUpdate__7zPlayerFf
+	.4byte Update__7zPlayerFf
+	.4byte EndUpdate__7zPlayerFf
+	.4byte Move__7zPlayerFP6xScenefP9xEntFrame
+	.4byte Render__7zPlayerFv
+	.4byte WasRendered__7zPlayerCFv
+	.4byte HandleEvent__7zPlayerFP5xBaseUiPCfP5xBaseUi
+	.4byte Reset__7zPlayerFv
+	.4byte IsDead__7zPlayerCFv
+	.4byte GetTurret__7zPlayerCFv
+	.4byte Exit__7zPlayerFv
+	.4byte Damage__7zPlayerFRC17zCombatDamageInfo
+	.4byte GetCarriedEntity__7zPlayerFv
+	.4byte GetHeadBones__7zPlayerFv
+	.4byte PostRenderCleanup__7zPlayerFv
+	.4byte RenderCustomUI__7zPlayerFv
+	.4byte CanTakeDamage__7zPlayerCFv
+	.4byte LoadCheckPoint__7zPlayerFv
+	.4byte StoreCheckPoint__7zPlayerFv
+	.4byte SetCamera__7zPlayerFv
+	.4byte RenderEffects__7zPlayerFv
+	.4byte SetJump__7zPlayerFP4jump
+	.4byte GiveHealth__7zPlayerFib
+	.4byte ResetHealth__7zPlayerFv
+	.4byte NeedsHealth__7zPlayerCFv
+	.4byte GetFloorNormal__7zPlayerCFv
+	.4byte GetFloorPosition__7zPlayerCFv
+	.4byte GetBoneNames__7zPlayerCFv
+	.4byte IsVisible__7zPlayerCFv
+	.4byte RenderTransparent__7zPlayerFf
+	.4byte NeedsIncrediPower__7zPlayerCFv
+	.4byte GiveIncrediPower__7zPlayerFsb
+	.4byte TakeIncrediPower__7zPlayerFf
+	.4byte IsSwimming__7zPlayerCFv
+	.4byte ParseIni__7zPlayerFv
+	.4byte AddStates__7zPlayerFP10xAnimTable
+	.4byte AddTransitions__7zPlayerFP10xAnimTable
+	.4byte FindShortestCollision__7zPlayerFR12xSweptSphereRUii
+	.4byte FindStaticCollisions__7zPlayerFRC7xSphere
+	.4byte CollisionResponse__7zPlayerFRC5xVec3RC22SphereCollisionResultsR5xVec3
+	.4byte RegisterCollision__7zPlayerFRC22SphereCollisionResults
+	.4byte StayOnGround__7zPlayerFv
+	.4byte InitialDepenetrationVelocity__7zPlayerFv
+	.4byte ReactiveAnimationCollided__7zPlayerFv
+	.4byte get_floor_entity__7zPlayerFv
+	.4byte get_target__7zPlayerFv
+	.4byte GetScreenFadeTime__7zPlayerFv
+	.4byte StartScreenFadeAt__7zPlayerFv
+	.4byte IsInteractioning__7zPlayerFv
+	.4byte SetEnemyIsNear__7zPlayerFb
 	.4byte 0x00000000
 
 .section .rodata
@@ -251,10 +251,10 @@ lbl_803D9094:
 __vt__4jump:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8014BD8C
-	.4byte 0x8014BDC4
-	.4byte 0x8014BA18
-	.4byte 0x8014BD48
+	.4byte Check__4jumpFv
+	.4byte Begin__4jumpFv
+	.4byte Update__4jumpFf
+	.4byte State__4jumpFv
 
 .section .sdata2
 

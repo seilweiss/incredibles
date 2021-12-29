@@ -26,14 +26,14 @@ init_esc__7_823:
 __vt__Q24xhud17font_meter_widget:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8003E054
-	.4byte 0x8003E074
-	.4byte 0x8003E0C0
-	.4byte 0x8003DD18
-	.4byte 0x8003D2C8
-	.4byte 0x8003E118
-	.4byte 0x8003E284
-	.4byte 0x8003D77C
+	.4byte destroy__Q24xhud17font_meter_widgetFv
+	.4byte type__Q24xhud17font_meter_widgetCFv
+	.4byte is__Q24xhud17font_meter_widgetCFUi
+	.4byte init__Q24xhud6widgetFv
+	.4byte setup__Q24xhud6widgetFv
+	.4byte update__Q24xhud17font_meter_widgetFf
+	.4byte render__Q24xhud17font_meter_widgetFv
+	.4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBaseUi
 
 .section .sdata2
 
