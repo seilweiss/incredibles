@@ -10,7 +10,12 @@ reticle:
 
 .global _esc__2_stringBase0_114
 _esc__2_stringBase0_114:
-	.incbin "baserom.dol", 0x2E44A0, 0x18
+	.4byte 0x75695F69
+	.4byte 0x6E5F7265
+	.4byte 0x7469636C
+	.4byte 0x655F6C6F
+	.4byte 0x676F0000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -34,130 +39,131 @@ sIconAngle:
 
 .global sAlpha
 sAlpha:
-	.incbin "baserom.dol", 0x32D238, 0x4
+	.4byte 0x3EE66666
 .global sFadeInSpeed
 sFadeInSpeed:
-	.incbin "baserom.dol", 0x32D23C, 0x4
+	.4byte 0x40C00000
 .global sFadeOutSpeed
 sFadeOutSpeed:
-	.incbin "baserom.dol", 0x32D240, 0x4
+	.4byte 0x40C00000
 .global sMinDist
 sMinDist:
-	.incbin "baserom.dol", 0x32D244, 0x4
+	.4byte 0x41F00000
 .global sPulseAmp
 sPulseAmp:
-	.incbin "baserom.dol", 0x32D248, 0x4
+	.4byte 0x3DCCCCCD
 .global sPulseSpeed
 sPulseSpeed:
-	.incbin "baserom.dol", 0x32D24C, 0x4
+	.4byte 0x41000000
 .global sRotSpeed
 sRotSpeed:
-	.incbin "baserom.dol", 0x32D250, 0x4
+	.4byte 0xC0C00000
 .global sSwirlMaxU
 sSwirlMaxU:
-	.incbin "baserom.dol", 0x32D254, 0x4
+	.4byte 0x3F63D70A
 .global sSwirlMinU
 sSwirlMinU:
-	.incbin "baserom.dol", 0x32D258, 0x4
+	.4byte 0x3DE147AE
 .global sSwirlMaxV
 sSwirlMaxV:
-	.incbin "baserom.dol", 0x32D25C, 0x4
+	.4byte 0x3F451EB8
 .global sSwirlMinV
 sSwirlMinV:
-	.incbin "baserom.dol", 0x32D260, 0x4
+	.4byte 0x3C23D70A
 .global sSwirlRed
 sSwirlRed:
-	.incbin "baserom.dol", 0x32D264, 0x1
+	.byte 0x43
 .global sSwirlGreen
 sSwirlGreen:
-	.incbin "baserom.dol", 0x32D265, 0x1
+	.byte 0xD8
 .global sSwirlBlue
 sSwirlBlue:
-	.incbin "baserom.dol", 0x32D266, 0x2
+	.2byte 0xFF00
 .global sLetterMaxU
 sLetterMaxU:
-	.incbin "baserom.dol", 0x32D268, 0x4
+	.4byte 0x3F547AE1
 .global sLetterMinU
 sLetterMinU:
-	.incbin "baserom.dol", 0x32D26C, 0x4
+	.4byte 0x3E2E147B
 .global sLetterMaxV
 sLetterMaxV:
-	.incbin "baserom.dol", 0x32D270, 0x4
+	.4byte 0x3F7AE148
 .global sLetterMinV
 sLetterMinV:
-	.incbin "baserom.dol", 0x32D274, 0x4
+	.4byte 0x3F47AE14
 .global sLetterRed
 sLetterRed:
-	.incbin "baserom.dol", 0x32D278, 0x1
+	.byte 0xB4
 .global sLetterGreen
 sLetterGreen:
-	.incbin "baserom.dol", 0x32D279, 0x1
+	.byte 0x1
 .global sLetterBlue
 sLetterBlue:
-	.incbin "baserom.dol", 0x32D27A, 0x2
+	.2byte 0x0100
 .global sXMult
 sXMult:
-	.incbin "baserom.dol", 0x32D27C, 0x4
+	.4byte 0x3FC00000
 .global activeReticle
 activeReticle:
-	.incbin "baserom.dol", 0x32D280, 0x4
+	.4byte 0xFFFFFFFF
 .global sAlphaUpRate
 sAlphaUpRate:
-	.incbin "baserom.dol", 0x32D284, 0x4
+	.4byte 0x3F800000
 .global sAlphaDownRate
 sAlphaDownRate:
-	.incbin "baserom.dol", 0x32D288, 0x4
+	.4byte 0x40000000
 .global sMinDrawDist2
 sMinDrawDist2:
-	.incbin "baserom.dol", 0x32D28C, 0x4
+	.4byte 0x3F800000
 .global sMaxDrawAlpha
 sMaxDrawAlpha:
-	.incbin "baserom.dol", 0x32D290, 0x8
+	.4byte 0x3F400000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_970_0
 _esc__2_970_0:
-	.incbin "baserom.dol", 0x332980, 0x4
+	.4byte 0x00000000
 .global _esc__2_971_3
 _esc__2_971_3:
-	.incbin "baserom.dol", 0x332984, 0x4
+	.4byte 0x3F666666
 .global _esc__2_972_3
 _esc__2_972_3:
-	.incbin "baserom.dol", 0x332988, 0x4
+	.4byte 0x3F8CCCCD
 .global _esc__2_973_0
 _esc__2_973_0:
-	.incbin "baserom.dol", 0x33298C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_974
 _esc__2_974:
-	.incbin "baserom.dol", 0x332990, 0x4
+	.4byte 0x40A00000
 .global _esc__2_983_1
 _esc__2_983_1:
-	.incbin "baserom.dol", 0x332994, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_984_2
 _esc__2_984_2:
-	.incbin "baserom.dol", 0x332998, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_985
 _esc__2_985:
-	.incbin "baserom.dol", 0x33299C, 0x4
+	.4byte 0xC0490FDB
 .global _esc__2_1141_0
 _esc__2_1141_0:
-	.incbin "baserom.dol", 0x3329A0, 0x4
+	.4byte 0x3F490FDB
 .global _esc__2_1142_1
 _esc__2_1142_1:
-	.incbin "baserom.dol", 0x3329A4, 0x4
+	.4byte 0x3FC90FDB
 .global _esc__2_1291_3
 _esc__2_1291_3:
-	.incbin "baserom.dol", 0x3329A8, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1292_1
 _esc__2_1292_1:
-	.incbin "baserom.dol", 0x3329AC, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1394_3
 _esc__2_1394_3:
-	.incbin "baserom.dol", 0x3329B0, 0x4
+	.4byte 0x3C8EFA35
 .global _esc__2_1473_3
 _esc__2_1473_3:
-	.incbin "baserom.dol", 0x3329B4, 0x4
+	.4byte 0xBC23D70A
 
 .if 0
 

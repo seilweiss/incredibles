@@ -27,22 +27,23 @@ sManagerCount:
 
 .global sLODFadeDistance
 sLODFadeDistance:
-	.incbin "baserom.dol", 0x32C178, 0x8
+	.4byte 0x40800000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1003_1
 _esc__2_1003_1:
-	.incbin "baserom.dol", 0x330AD0, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1004_0
 _esc__2_1004_0:
-	.incbin "baserom.dol", 0x330AD4, 0x4
+	.4byte 0x38D1B717
 .global _esc__2_1005_0
 _esc__2_1005_0:
-	.incbin "baserom.dol", 0x330AD8, 0x4
+	.4byte 0x41200000
 .global _esc__2_1012_4
 _esc__2_1012_4:
-	.incbin "baserom.dol", 0x330ADC, 0x4
+	.4byte 0x00000000
 
 .if 0
 

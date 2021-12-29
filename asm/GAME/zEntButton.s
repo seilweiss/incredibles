@@ -4,34 +4,46 @@
 
 .global _esc__2_stringBase0_52
 _esc__2_stringBase0_52:
-	.incbin "baserom.dol", 0x2D9970, 0x30
+	.4byte 0x62757474
+	.4byte 0x6F6E0070
+	.4byte 0x6C617465
+	.4byte 0x5F707265
+	.4byte 0x73737572
+	.4byte 0x65004275
+	.4byte 0x74746F6E
+	.4byte 0x5F757000
+	.4byte 0x42757474
+	.4byte 0x6F6E5F70
+	.4byte 0x72657373
+	.4byte 0x00000000
 
 .section .sdata
 
 .global sRedMultiplier
 sRedMultiplier:
-	.incbin "baserom.dol", 0x32BD90, 0x4
+	.4byte 0x3F800000
 .global sGreenMultiplier
 sGreenMultiplier:
-	.incbin "baserom.dol", 0x32BD94, 0x4
+	.4byte 0x3F800000
 .global sBlueMultiplier
 sBlueMultiplier:
-	.incbin "baserom.dol", 0x32BD98, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1039_0
 _esc__2_1039_0:
-	.incbin "baserom.dol", 0x330380, 0x4
+	.4byte 0x3EB851EC
 .global _esc__2_1040_3
 _esc__2_1040_3:
-	.incbin "baserom.dol", 0x330384, 0x4
+	.4byte 0x3EA685DB
 .global _esc__2_1041
 _esc__2_1041:
-	.incbin "baserom.dol", 0x330388, 0x4
+	.4byte 0x00000000
 .global _esc__2_1149_0
 _esc__2_1149_0:
-	.incbin "baserom.dol", 0x33038C, 0x4
+	.4byte 0x3F000000
 
 .if 0
 

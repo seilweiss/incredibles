@@ -25,25 +25,26 @@ sSweptSphereIgnoreMovers:
 
 .global _esc__2_969
 _esc__2_969:
-	.incbin "baserom.dol", 0x332830, 0x4
+	.4byte 0x38D1B717
 .global _esc__2_970
 _esc__2_970:
-	.incbin "baserom.dol", 0x332834, 0x4
+	.4byte 0x00000000
 .global _esc__2_971_2
 _esc__2_971_2:
-	.incbin "baserom.dol", 0x332838, 0x4
+	.4byte 0x3F800000
 .global _esc__2_982_3
 _esc__2_982_3:
-	.incbin "baserom.dol", 0x33283C, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1059_4
 _esc__2_1059_4:
-	.incbin "baserom.dol", 0x332840, 0x4
+	.4byte 0x33D6BF95
 .global _esc__2_1619_3
 _esc__2_1619_3:
-	.incbin "baserom.dol", 0x332844, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_1765
 _esc__2_1765:
-	.incbin "baserom.dol", 0x332848, 0x8
+	.4byte 0x41200000
+	.4byte 0x00000000
 
 .if 0
 

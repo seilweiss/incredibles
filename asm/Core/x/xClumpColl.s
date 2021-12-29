@@ -85,28 +85,31 @@ lbl_803D858C:
 
 .global xClumpColl_FilterFlags
 xClumpColl_FilterFlags:
-	.incbin "baserom.dol", 0x32B018, 0x1
+	.byte 0x4
 .global xClumpColl_FilterFlagsAllEqual
 xClumpColl_FilterFlagsAllEqual:
-	.incbin "baserom.dol", 0x32B019, 0x7
+	.4byte 0xFF000000
+	.byte 0x0
+	.2byte 0x0000
 
 .section .sdata2
 
 .global _esc__2_1153_0
 _esc__2_1153_0:
-	.incbin "baserom.dol", 0x32E860, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1288
 _esc__2_1288:
-	.incbin "baserom.dol", 0x32E864, 0x4
+	.4byte 0x00000000
 .global _esc__2_1289
 _esc__2_1289:
-	.incbin "baserom.dol", 0x32E868, 0x4
+	.4byte 0xB22BCC77
 .global _esc__2_1290
 _esc__2_1290:
-	.incbin "baserom.dol", 0x32E86C, 0x4
+	.4byte 0x322BCC77
 .global _esc__2_1291
 _esc__2_1291:
-	.incbin "baserom.dol", 0x32E870, 0x8
+	.4byte 0x3727C5AC
+	.4byte 0x00000000
 
 .if 0
 

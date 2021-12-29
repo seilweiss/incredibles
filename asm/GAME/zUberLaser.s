@@ -4,16 +4,147 @@
 
 .global default_config__Q21z10uber_laser
 default_config__Q21z10uber_laser:
-	.incbin "baserom.dol", 0x314500, 0x180
+	.4byte 0x41200000
+	.4byte 0x3F800000
+	.4byte 0x3FC00000
+	.4byte 0x00000028
+	.4byte 0x428C0000
+	.4byte 0xC0E00000
+	.4byte 0x3DF5C28F
+	.4byte 0x3F000000
+	.4byte 0x3DF5C28F
+	.4byte 0x3F000000
+	.4byte 0x3E800000
+	.4byte 0xBF800000
+	.4byte 0x41700000
+	.4byte 0xBF800000
+	.4byte 0x40A00000
+	.4byte 0x40E00000
+	.4byte 0x3F800000
+	.4byte 0x3EEB851F
+	.4byte 0x3EEB851F
+	.4byte 0xBF800000
+	.4byte 0x3F99999A
+	.4byte 0x3E99999A
+	.4byte 0x41A00000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x40800000
+	.4byte 0x42C80000
+	.4byte 0x40200000
+	.4byte 0x3E4CCCCD
+	.4byte 0x42340000
+	.4byte 0x3F800000
+	.4byte 0x42200000
+	.4byte 0x3F800000
+	.4byte 0x3FACCCCD
+	.4byte 0x42C80000
+	.4byte 0x00190019
+	.4byte 0x0019B4B4
+	.4byte 0xFFFF0000
+	.4byte 0x000000FF
+	.4byte 0xFFFF0000
+	.4byte 0x3F800000
+	.4byte 0xC0C00000
+	.4byte 0x40400000
+	.4byte 0x3B03126F
+	.4byte 0x40400000
+	.4byte 0x40400000
+	.4byte 0x3E99999A
+	.4byte 0x00000000
+	.4byte 0x406CCCCD
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3E4CCCCD
+	.4byte 0x3DCCCCCD
+	.4byte 0x41000000
+	.4byte 0x40800000
+	.4byte 0x3FC00000
+	.4byte 0x43480000
+	.4byte 0x40A00000
+	.4byte 0x40A00000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0x3E4CCCCD
+	.4byte 0x42DC0000
+	.4byte 0x40A00000
+	.4byte 0x40400000
+	.4byte 0x000000FF
+	.4byte 0xFFFF0000
+	.4byte 0x3F800000
+	.4byte 0xC0C00000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F333333
+	.4byte 0x3DCCCCCD
+	.4byte 0x3E99999A
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3ECCCCCD
+	.4byte 0x3E19999A
+	.4byte 0x42820000
+	.4byte 0x00000000
+	.4byte 0x3FC00000
+	.4byte 0x43480000
+	.4byte 0xC2C80000
+	.4byte 0x42C80000
+	.4byte 0x41700000
+	.4byte 0x42A00000
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0x3E4CCCCD
+	.4byte 0x3F800000
+	.4byte 0x40A00000
+	.4byte 0x40400000
 .global _esc__2_1634
 _esc__2_1634:
-	.incbin "baserom.dol", 0x314680, 0x20
+	.4byte 0x801D4030
+	.4byte 0x801D4094
+	.4byte 0x801D4074
+	.4byte 0x801D40FC
+	.4byte 0x801D4114
+	.4byte 0x801D418C
+	.4byte 0x801D41D0
+	.4byte 0x00000000
 
 .section .rodata
 
 .global _esc__2_stringBase0_137
 _esc__2_stringBase0_137:
-	.incbin "baserom.dol", 0x2E6540, 0x78
+	.4byte 0x52696E67
+	.4byte 0x20457870
+	.4byte 0x6C6F7369
+	.4byte 0x6F6E0042
+	.4byte 0x464C5F46
+	.4byte 0x4952455F
+	.4byte 0x53544152
+	.4byte 0x54004246
+	.4byte 0x4C5F4649
+	.4byte 0x52455F4C
+	.4byte 0x4F4F5000
+	.4byte 0x42464C5F
+	.4byte 0x46495245
+	.4byte 0x5F454E44
+	.4byte 0x0042464C
+	.4byte 0x5F455850
+	.4byte 0x4C4F5349
+	.4byte 0x4F4E0075
+	.4byte 0x6265725F
+	.4byte 0x6C617365
+	.4byte 0x72006F72
+	.4byte 0x625F7768
+	.4byte 0x69746500
+	.4byte 0x66785F62
+	.4byte 0x666C5F63
+	.4byte 0x796C696E
+	.4byte 0x64657200
+	.4byte 0x52696E67
+	.4byte 0x20547261
+	.4byte 0x696C0000
 
 .section .sbss
 
@@ -73,61 +204,79 @@ lbl_803D93D4:
 
 .global __vt__Q21z10uber_laser
 __vt__Q21z10uber_laser:
-	.incbin "baserom.dol", 0x32DA78, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801D4534
+	.4byte 0x801D48A8
+	.4byte 0x801060D8
+	.4byte 0x801D3D70
+	.4byte 0x801D35C4
+	.4byte 0x8010624C
 .global __vt__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_
 __vt__Q21z31lightweight_esc__0_Q21z10uber_laser_esc__4_5_esc__1_:
-	.incbin "baserom.dol", 0x32DA98, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801D4B84
+	.4byte 0x801D4B88
+	.4byte 0x801060D8
+	.4byte 0x801D4B8C
+	.4byte 0x801D4B90
+	.4byte 0x8010624C
 
 .section .sdata2
 
 .global _esc__2_1282_3
 _esc__2_1282_3:
-	.incbin "baserom.dol", 0x333728, 0x4
+	.4byte 0x00000000
 .global _esc__2_1370_1
 _esc__2_1370_1:
-	.incbin "baserom.dol", 0x33372C, 0x4
+	.4byte 0x3C23D70A
 .global _esc__2_1374_1
 _esc__2_1374_1:
-	.incbin "baserom.dol", 0x333730, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1381_1
 _esc__2_1381_1:
-	.incbin "baserom.dol", 0x333734, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1408_2
 _esc__2_1408_2:
-	.incbin "baserom.dol", 0x333738, 0x4
+	.4byte 0x3F7FBE77
 .global _esc__2_1416_3
 _esc__2_1416_3:
-	.incbin "baserom.dol", 0x33373C, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_1483_0
 _esc__2_1483_0:
-	.incbin "baserom.dol", 0x333740, 0x8
+	.4byte 0x40C90FDB
+	.4byte 0x00000000
 .global _esc__2_1485_0
 _esc__2_1485_0:
-	.incbin "baserom.dol", 0x333748, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1630_1
 _esc__2_1630_1:
-	.incbin "baserom.dol", 0x333750, 0x4
+	.4byte 0x3F19999A
 .global _esc__2_1631_1
 _esc__2_1631_1:
-	.incbin "baserom.dol", 0x333754, 0x4
+	.4byte 0x41A00000
 .global _esc__2_1632
 _esc__2_1632:
-	.incbin "baserom.dol", 0x333758, 0x4
+	.4byte 0x41200000
 .global _esc__2_1633_0
 _esc__2_1633_0:
-	.incbin "baserom.dol", 0x33375C, 0x4
+	.4byte 0x7E967699
 .global _esc__2_1699_1
 _esc__2_1699_1:
-	.incbin "baserom.dol", 0x333760, 0x4
+	.4byte 0x3FC90FDB
 .global _esc__2_1700_1
 _esc__2_1700_1:
-	.incbin "baserom.dol", 0x333764, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1701_1
 _esc__2_1701_1:
-	.incbin "baserom.dol", 0x333768, 0x8
+	.4byte 0x3F666666
+	.4byte 0x00000000
 .global _esc__2_1704_0
 _esc__2_1704_0:
-	.incbin "baserom.dol", 0x333770, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

@@ -4,16 +4,117 @@
 
 .global __vt__38zUICustomBattleModeDescriptionScroller
 __vt__38zUICustomBattleModeDescriptionScroller:
-	.incbin "baserom.dol", 0x315010, 0x50
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801C5C6C
+	.4byte 0x801C5C70
+	.4byte 0x801EF5AC
+	.4byte 0x801C5C78
+	.4byte 0x801EF764
+	.4byte 0x801EF60C
+	.4byte 0x801C5C88
+	.4byte 0x801C5C8C
+	.4byte 0x801C5C9C
+	.4byte 0x801C5CA0
+	.4byte 0x801C5C94
+	.4byte 0x801C5CA4
+	.4byte 0x801C5CA8
+	.4byte 0x801C5CAC
+	.4byte 0x801C5CB0
+	.4byte 0x8016861C
+	.4byte 0x80168614
+	.4byte 0x801C7A8C
 .global __vt__37zUICustomBattleModeSelectSceneManager
 __vt__37zUICustomBattleModeSelectSceneManager:
-	.incbin "baserom.dol", 0x315060, 0x50
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801EE774
+	.4byte 0x801C5C70
+	.4byte 0x801C5C74
+	.4byte 0x801C5C78
+	.4byte 0x801EEBAC
+	.4byte 0x801EF494
+	.4byte 0x801C5C88
+	.4byte 0x801C5C8C
+	.4byte 0x801C5C9C
+	.4byte 0x801C5CA0
+	.4byte 0x801C5C94
+	.4byte 0x801C5CA4
+	.4byte 0x801C5CA8
+	.4byte 0x801C5CAC
+	.4byte 0x801C5CB0
+	.4byte 0x8016861C
+	.4byte 0x80168614
+	.4byte 0x801EF84C
 
 .section .rodata
 
 .global _esc__2_stringBase0_152
 _esc__2_stringBase0_152:
-	.incbin "baserom.dol", 0x2E7018, 0x100
+	.4byte 0x00554920
+	.4byte 0x42415454
+	.4byte 0x4C45204D
+	.4byte 0x4F444520
+	.4byte 0x52454D4F
+	.4byte 0x56452054
+	.4byte 0x45585400
+	.4byte 0x55492042
+	.4byte 0x4154544C
+	.4byte 0x45204D4F
+	.4byte 0x44452053
+	.4byte 0x43454E45
+	.4byte 0x204E414D
+	.4byte 0x45205445
+	.4byte 0x58540055
+	.4byte 0x49204241
+	.4byte 0x54544C45
+	.4byte 0x204D4F44
+	.4byte 0x45205343
+	.4byte 0x454E4520
+	.4byte 0x44455343
+	.4byte 0x52495054
+	.4byte 0x494F4E20
+	.4byte 0x54455854
+	.4byte 0x00554920
+	.4byte 0x42415454
+	.4byte 0x4C45204D
+	.4byte 0x4F444520
+	.4byte 0x5343454E
+	.4byte 0x45205049
+	.4byte 0x4320494D
+	.4byte 0x41474500
+	.4byte 0x55492049
+	.4byte 0x4D414745
+	.4byte 0x20534345
+	.4byte 0x4E452025
+	.4byte 0x73004E49
+	.4byte 0x30330042
+	.4byte 0x4D002573
+	.4byte 0x20257300
+	.4byte 0x25730042
+	.4byte 0x6174746C
+	.4byte 0x65204D6F
+	.4byte 0x64652053
+	.4byte 0x63656E65
+	.4byte 0x25750042
+	.4byte 0x6174746C
+	.4byte 0x65204D6F
+	.4byte 0x64652053
+	.4byte 0x63656E65
+	.4byte 0x25752054
+	.4byte 0x656D706F
+	.4byte 0x72617279
+	.4byte 0x20446573
+	.4byte 0x63726970
+	.4byte 0x74696F6E
+	.4byte 0x007B613D
+	.4byte 0x252E3266
+	.4byte 0x7D7B7361
+	.4byte 0x3D252E32
+	.4byte 0x667D007B
+	.4byte 0x613D307D
+	.4byte 0x7B73613D
+	.4byte 0x307D0000
 
 .section .sbss
 
@@ -37,13 +138,14 @@ gBattleCheat:
 
 .global _esc__2_1265_3
 _esc__2_1265_3:
-	.incbin "baserom.dol", 0x333DE8, 0x4
+	.4byte 0x00000000
 .global _esc__2_1287_0
 _esc__2_1287_0:
-	.incbin "baserom.dol", 0x333DEC, 0x4
+	.4byte 0x43480000
 .global _esc__2_1288_3
 _esc__2_1288_3:
-	.incbin "baserom.dol", 0x333DF0, 0x8
+	.4byte 0x3FEAAAAA
+	.4byte 0xA0000000
 
 .if 0
 

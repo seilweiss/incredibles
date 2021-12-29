@@ -13,13 +13,14 @@ num_driven_meshes__4zNPC:
 
 .global _esc__2_916
 _esc__2_916:
-	.incbin "baserom.dol", 0x332508, 0x4
+	.4byte 0x38D1B717
 .global _esc__2_917
 _esc__2_917:
-	.incbin "baserom.dol", 0x33250C, 0x4
+	.4byte 0xB8D1B717
 .global _esc__2_918
 _esc__2_918:
-	.incbin "baserom.dol", 0x332510, 0x8
+	.4byte 0x3EAAA64C
+	.4byte 0x00000000
 
 .if 0
 

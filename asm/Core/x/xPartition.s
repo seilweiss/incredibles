@@ -4,7 +4,8 @@
 
 .global _esc__2_637
 _esc__2_637:
-	.incbin "baserom.dol", 0x32F248, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .if 0
 

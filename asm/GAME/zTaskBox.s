@@ -19,7 +19,12 @@ tcb_esc__7_951:
 
 .global __vt__Q28ztaskbox13talk_callback
 __vt__Q28ztaskbox13talk_callback:
-	.incbin "baserom.dol", 0x32D038, 0x18
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801603F4
+	.4byte 0x80163614
+	.4byte 0x80163638
+	.4byte 0x80163664
 
 .if 0
 

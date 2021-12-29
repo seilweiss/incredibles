@@ -10,16 +10,18 @@ module__30_esc__2_unnamed_esc__2_zShrapnelEmitter_cpp_esc__2_:
 
 .global _esc__2_1079_0
 _esc__2_1079_0:
-	.incbin "baserom.dol", 0x333FE8, 0x4
+	.4byte 0x00000000
 .global _esc__2_1080_1
 _esc__2_1080_1:
-	.incbin "baserom.dol", 0x333FEC, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1166_4
 _esc__2_1166_4:
-	.incbin "baserom.dol", 0x333FF0, 0x8
+	.4byte 0x2F800000
+	.4byte 0x00000000
 .global _esc__2_1245_1
 _esc__2_1245_1:
-	.incbin "baserom.dol", 0x333FF8, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

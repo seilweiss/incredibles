@@ -4,7 +4,56 @@
 
 .global _esc__2_709
 _esc__2_709:
-	.incbin "baserom.dol", 0x30C458, 0xC8
+	.4byte 0x80151854
+	.4byte 0x80151854
+	.4byte 0x80151854
+	.4byte 0x80151854
+	.4byte 0x80150E50
+	.4byte 0x80151854
+	.4byte 0x80150DB8
+	.4byte 0x80150E40
+	.4byte 0x80150BE8
+	.4byte 0x80150C28
+	.4byte 0x80150C60
+	.4byte 0x80150C60
+	.4byte 0x80150BC8
+	.4byte 0x80150E78
+	.4byte 0x80150BC8
+	.4byte 0x80150D98
+	.4byte 0x80150CD8
+	.4byte 0x80150D10
+	.4byte 0x80150EB8
+	.4byte 0x80150F58
+	.4byte 0x80150F98
+	.4byte 0x80151000
+	.4byte 0x80151038
+	.4byte 0x80150C80
+	.4byte 0x801510C0
+	.4byte 0x80151130
+	.4byte 0x80151170
+	.4byte 0x801511B0
+	.4byte 0x80151208
+	.4byte 0x80151260
+	.4byte 0x80151288
+	.4byte 0x801512B0
+	.4byte 0x80151338
+	.4byte 0x80151390
+	.4byte 0x80151400
+	.4byte 0x80151458
+	.4byte 0x80151480
+	.4byte 0x801514F0
+	.4byte 0x80151518
+	.4byte 0x80151558
+	.4byte 0x80151590
+	.4byte 0x80150B60
+	.4byte 0x801515C8
+	.4byte 0x80151600
+	.4byte 0x80151620
+	.4byte 0x80151658
+	.4byte 0x80151718
+	.4byte 0x80151680
+	.4byte 0x801517C8
+	.4byte 0x80151800
 
 .section .sbss
 
@@ -18,7 +67,8 @@ sRS:
 
 .global sRSBits
 sRSBits:
-	.incbin "baserom.dol", 0x32CEA8, 0x8
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000000
 
 .if 0
 

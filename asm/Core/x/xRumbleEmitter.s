@@ -4,37 +4,53 @@
 
 .global __vt__Q27xRumble16sphericalEmitter
 __vt__Q27xRumble16sphericalEmitter:
-	.incbin "baserom.dol", 0x32B398, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80055940
+	.4byte 0x80055B20
+	.4byte 0x80055AF8
 .global __vt__Q27xRumble10boxEmitter
 __vt__Q27xRumble10boxEmitter:
-	.incbin "baserom.dol", 0x32B3AC, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80055778
+	.4byte 0x80055B20
 .global __vt__Q27xRumble11emitterBase
 __vt__Q27xRumble11emitterBase:
-	.incbin "baserom.dol", 0x32B3BC, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80055B20
 .global __vt__Q27xRumble6effect
 __vt__Q27xRumble6effect:
-	.incbin "baserom.dol", 0x32B3CC, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80055B2C
+	.4byte 0x80055B20
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_996_0
 _esc__2_996_0:
-	.incbin "baserom.dol", 0x32F2D0, 0x4
+	.4byte 0x3F800000
 .global _esc__2_997_0
 _esc__2_997_0:
-	.incbin "baserom.dol", 0x32F2D4, 0x4
+	.4byte 0x00000000
 .global _esc__2_998
 _esc__2_998:
-	.incbin "baserom.dol", 0x32F2D8, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_999_0
 _esc__2_999_0:
-	.incbin "baserom.dol", 0x32F2DC, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1002_0
 _esc__2_1002_0:
-	.incbin "baserom.dol", 0x32F2E0, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1083
 _esc__2_1083:
-	.incbin "baserom.dol", 0x32F2E8, 0x8
+	.4byte 0x3DCCCCCD
+	.4byte 0x00000000
 
 .if 0
 

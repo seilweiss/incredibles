@@ -10,7 +10,12 @@ default_config__10fire_trail:
 
 .global _esc__2_stringBase0_150
 _esc__2_stringBase0_150:
-	.incbin "baserom.dol", 0x2E6FE8, 0x18
+	.4byte 0x4578706C
+	.4byte 0x6F73696F
+	.4byte 0x6E466C61
+	.4byte 0x73685F54
+	.4byte 0x616E5F36
+	.4byte 0x34000000
 
 .section .sbss
 
@@ -22,52 +27,57 @@ system_id__10fire_trail:
 
 .global need_setup__10fire_trail
 need_setup__10fire_trail:
-	.incbin "baserom.dol", 0x32DCF0, 0x8
+	.4byte 0x01000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_891_0
 _esc__2_891_0:
-	.incbin "baserom.dol", 0x333D40, 0x4
+	.4byte 0x43960000
 .global _esc__2_892_0
 _esc__2_892_0:
-	.incbin "baserom.dol", 0x333D44, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_893_0
 _esc__2_893_0:
-	.incbin "baserom.dol", 0x333D48, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_894
 _esc__2_894:
-	.incbin "baserom.dol", 0x333D4C, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_895
 _esc__2_895:
-	.incbin "baserom.dol", 0x333D50, 0x4
+	.4byte 0x40C00000
 .global _esc__2_896
 _esc__2_896:
-	.incbin "baserom.dol", 0x333D54, 0x4
+	.4byte 0x00000000
 .global _esc__2_897
 _esc__2_897:
-	.incbin "baserom.dol", 0x333D58, 0x4
+	.4byte 0x40000000
 .global _esc__2_898
 _esc__2_898:
-	.incbin "baserom.dol", 0x333D5C, 0x4
+	.4byte 0xC0000000
 .global _esc__2_954_2
 _esc__2_954_2:
-	.incbin "baserom.dol", 0x333D60, 0x4
+	.4byte 0x3F000000
 .global _esc__2_955_1
 _esc__2_955_1:
-	.incbin "baserom.dol", 0x333D64, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_956_1
 _esc__2_956_1:
-	.incbin "baserom.dol", 0x333D68, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 .global _esc__2_961_3
 _esc__2_961_3:
-	.incbin "baserom.dol", 0x333D70, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_994_3
 _esc__2_994_3:
-	.incbin "baserom.dol", 0x333D78, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1051_3
 _esc__2_1051_3:
-	.incbin "baserom.dol", 0x333D80, 0x8
+	.4byte 0x437F0000
+	.4byte 0x00000000
 
 .if 0
 

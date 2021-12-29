@@ -49,85 +49,129 @@ lbl_803D863C:
 
 .global sCutTocCount
 sCutTocCount:
-	.incbin "baserom.dol", 0x32B038, 0x40
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global sCutTocInfo
 sCutTocInfo:
-	.incbin "baserom.dol", 0x32B078, 0x40
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global shadVec_esc__7_1472
 shadVec_esc__7_1472:
-	.incbin "baserom.dol", 0x32B0B8, 0xC
+	.4byte 0x00000000
+	.4byte 0xBF800000
+	.4byte 0x00000000
 .global __vt__Q223_esc__2_unnamed_esc__2_xCutscene_cpp_esc__2_12xCamCutscene
 __vt__Q223_esc__2_unnamed_esc__2_xCutscene_cpp_esc__2_12xCamCutscene:
-	.incbin "baserom.dol", 0x32B0C4, 0x24
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8001E22C
+	.4byte 0x80010314
+	.4byte 0x8001E320
+	.4byte 0x8001E390
+	.4byte 0x8001E3C8
+	.4byte 0x8000EDCC
+	.4byte 0x80010318
 
 .section .sdata2
 
 .global _esc__2_910
 _esc__2_910:
-	.incbin "baserom.dol", 0x32E948, 0x4
+	.4byte 0x3F800000
 .global _esc__2_989
 _esc__2_989:
-	.incbin "baserom.dol", 0x32E94C, 0x4
+	.4byte 0x00000000
 .global _esc__2_990
 _esc__2_990:
-	.incbin "baserom.dol", 0x32E950, 0x4
+	.4byte 0x3D088889
 .global _esc__2_1025
 _esc__2_1025:
-	.incbin "baserom.dol", 0x32E954, 0x4
+	.4byte 0x40000000
 .global _esc__2_1036_0
 _esc__2_1036_0:
-	.incbin "baserom.dol", 0x32E958, 0x4
+	.4byte 0x40800000
 .global _esc__2_1037
 _esc__2_1037:
-	.incbin "baserom.dol", 0x32E95C, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_1095
 _esc__2_1095:
-	.incbin "baserom.dol", 0x32E960, 0x4
+	.4byte 0x41F00000
 .global _esc__2_1097
 _esc__2_1097:
-	.incbin "baserom.dol", 0x32E964, 0x4
+	.4byte 0x414B3333
 .global _esc__2_1135
 _esc__2_1135:
-	.incbin "baserom.dol", 0x32E968, 0x8
+	.4byte 0x3F7FF972
+	.4byte 0x00000000
 .global _esc__2_1309
 _esc__2_1309:
-	.incbin "baserom.dol", 0x32E970, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1674
 _esc__2_1674:
-	.incbin "baserom.dol", 0x32E978, 0x4
+	.4byte 0xFE967699
 .global _esc__2_1675
 _esc__2_1675:
-	.incbin "baserom.dol", 0x32E97C, 0x4
+	.4byte 0x46800000
 .global _esc__2_1676
 _esc__2_1676:
-	.incbin "baserom.dol", 0x32E980, 0x4
+	.4byte 0x38800000
 .global _esc__2_1677
 _esc__2_1677:
-	.incbin "baserom.dol", 0x32E984, 0x4
+	.4byte 0x42C80000
 .global _esc__2_1678
 _esc__2_1678:
-	.incbin "baserom.dol", 0x32E988, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1679
 _esc__2_1679:
-	.incbin "baserom.dol", 0x32E98C, 0x4
+	.4byte 0x447A0000
 .global _esc__2_1680
 _esc__2_1680:
-	.incbin "baserom.dol", 0x32E990, 0x4
+	.4byte 0x41C80000
 .global _esc__2_1681
 _esc__2_1681:
-	.incbin "baserom.dol", 0x32E994, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1682
 _esc__2_1682:
-	.incbin "baserom.dol", 0x32E998, 0x4
+	.4byte 0x40C00000
 .global _esc__2_1683
 _esc__2_1683:
-	.incbin "baserom.dol", 0x32E99C, 0x4
+	.4byte 0x3DB27EB0
 .global _esc__2_1684
 _esc__2_1684:
-	.incbin "baserom.dol", 0x32E9A0, 0x8
+	.4byte 0x3E99999A
+	.4byte 0x00000000
 .global _esc__2_1686
 _esc__2_1686:
-	.incbin "baserom.dol", 0x32E9A8, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

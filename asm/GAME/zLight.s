@@ -13,13 +13,33 @@ gTemporaryLights:
 
 .global sEffectFuncs
 sEffectFuncs:
-	.incbin "baserom.dol", 0x3075F0, 0x48
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x800DDAFC
+	.4byte 0x800DDAD4
+	.4byte 0x800DDB24
+	.4byte 0x800DDB4C
+	.4byte 0x800DDB50
+	.4byte 0x800DDB54
+	.4byte 0x800DDB58
+	.4byte 0x800DDB5C
+	.4byte 0x800DDB60
+	.4byte 0x800DDB64
+	.4byte 0x800DDB68
+	.4byte 0x800DDB6C
+	.4byte 0x800DDB70
+	.4byte 0x800DDB74
+	.4byte 0x800DDB78
+	.4byte 0x800DDBE0
 
 .section .rodata
 
 .global _esc__2_stringBase0_63
 _esc__2_stringBase0_63:
-	.incbin "baserom.dol", 0x2DADE0, 0x10
+	.4byte 0x4C494748
+	.4byte 0x545F5041
+	.4byte 0x52544954
+	.4byte 0x494F4E00
 
 .section .sbss
 
@@ -40,13 +60,17 @@ gNumTemporaryLights:
 
 .global sDefaultShadowVec
 sDefaultShadowVec:
-	.incbin "baserom.dol", 0x32C140, 0x10
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1043_4
 _esc__2_1043_4:
-	.incbin "baserom.dol", 0x330A00, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 
 .if 0
 

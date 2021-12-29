@@ -4,25 +4,35 @@
 
 .global __vt__6zCamFP
 __vt__6zCamFP:
-	.incbin "baserom.dol", 0x32B870, 0x28
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80088ADC
+	.4byte 0x80010314
+	.4byte 0x80088B20
+	.4byte 0x80088B7C
+	.4byte 0x80088BB8
+	.4byte 0x8000EDCC
+	.4byte 0x80010318
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1013
 _esc__2_1013:
-	.incbin "baserom.dol", 0x32FA78, 0x4
+	.4byte 0x00000000
 .global _esc__2_1014
 _esc__2_1014:
-	.incbin "baserom.dol", 0x32FA7C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1057_0
 _esc__2_1057_0:
-	.incbin "baserom.dol", 0x32FA80, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_1058_1
 _esc__2_1058_1:
-	.incbin "baserom.dol", 0x32FA84, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_1059_2
 _esc__2_1059_2:
-	.incbin "baserom.dol", 0x32FA88, 0x8
+	.4byte 0xC0490FDB
+	.4byte 0x00000000
 
 .if 0
 

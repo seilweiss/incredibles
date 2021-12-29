@@ -31,85 +31,111 @@ texData:
 
 .global overbrighten__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak
 overbrighten__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak:
-	.incbin "baserom.dol", 0x32D298, 0x4
+	.4byte 0x40400000
 .global overbrighten_decay__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak
 overbrighten_decay__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak:
-	.incbin "baserom.dol", 0x32D29C, 0x4
+	.4byte 0x3E99999A
 .global downsamples__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak
 downsamples__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak:
-	.incbin "baserom.dol", 0x32D2A0, 0x4
+	.4byte 0x00000004
 .global blur_faster__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak
 blur_faster__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak:
-	.incbin "baserom.dol", 0x32D2A4, 0x4
+	.4byte 0x01000000
 .global colorize_red__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak
 colorize_red__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak:
-	.incbin "baserom.dol", 0x32D2A8, 0x4
+	.4byte 0x3F800000
 .global colorize_green__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak
 colorize_green__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak:
-	.incbin "baserom.dol", 0x32D2AC, 0x4
+	.4byte 0x3F800000
 .global colorize_blue__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak
 colorize_blue__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak:
-	.incbin "baserom.dol", 0x32D2B0, 0x4
+	.4byte 0x3F800000
 .global colorize_alpha__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak
 colorize_alpha__Q233_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_5tweak:
-	.incbin "baserom.dol", 0x32D2B4, 0x4
+	.4byte 0x3F800000
 .global enabled__33_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_
 enabled__33_esc__2_unnamed_esc__2_xFXHighDynamicRange_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D2B8, 0x4
+	.4byte 0x01000000
 .global hdr_src
 hdr_src:
-	.incbin "baserom.dol", 0x32D2BC, 0x4
+	.4byte 0x00000004
 .global hdr_dst
 hdr_dst:
-	.incbin "baserom.dol", 0x32D2C0, 0x4
+	.4byte 0x00000001
 .global hdr_down_src
 hdr_down_src:
-	.incbin "baserom.dol", 0x32D2C4, 0x4
+	.4byte 0x00000004
 .global sizes
 sizes:
-	.incbin "baserom.dol", 0x32D2C8, 0x28
+	.4byte 0x010000F0
+	.4byte 0x00800080
+	.4byte 0x00400040
+	.4byte 0x00200020
+	.4byte 0x00100010
+	.4byte 0x00080008
+	.4byte 0x00040004
+	.4byte 0x00020002
+	.4byte 0x00010001
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1043_5
 _esc__2_1043_5:
-	.incbin "baserom.dol", 0x332A88, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_1045_1
 _esc__2_1045_1:
-	.incbin "baserom.dol", 0x332A90, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1069_5
 _esc__2_1069_5:
-	.incbin "baserom.dol", 0x332A98, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 .global _esc__2_1071_1
 _esc__2_1071_1:
-	.incbin "baserom.dol", 0x332AA0, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global offsets_esc__7_1115
 offsets_esc__7_1115:
-	.incbin "baserom.dol", 0x332AA8, 0x1C
+	.4byte 0xC0200000
+	.4byte 0xC0200000
+	.4byte 0x40200000
+	.4byte 0xC0200000
+	.4byte 0xC0200000
+	.4byte 0x40200000
+	.4byte 0x40200000
 .global lbl_803D6104
 lbl_803D6104:
-	.incbin "baserom.dol", 0x332AC4, 0x4
+	.4byte 0x40200000
 .global _esc__2_1116_1
 _esc__2_1116_1:
-	.incbin "baserom.dol", 0x332AC8, 0x20
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_1167_4
 _esc__2_1167_4:
-	.incbin "baserom.dol", 0x332AE8, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_1168_2
 _esc__2_1168_2:
-	.incbin "baserom.dol", 0x332AEC, 0x4
+	.4byte 0x3F4CCCCD
 .global _esc__2_1169_1
 _esc__2_1169_1:
-	.incbin "baserom.dol", 0x332AF0, 0x4
+	.4byte 0x40400000
 .global _esc__2_1170_1
 _esc__2_1170_1:
-	.incbin "baserom.dol", 0x332AF4, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1171_1
 _esc__2_1171_1:
-	.incbin "baserom.dol", 0x332AF8, 0x4
+	.4byte 0x43000000
 .global _esc__2_1207_0
 _esc__2_1207_0:
-	.incbin "baserom.dol", 0x332AFC, 0x4
+	.4byte 0x3F000000
 
 .if 0
 

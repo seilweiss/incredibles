@@ -31,37 +31,38 @@ sModelMat:
 
 .global _esc__2_751_0
 _esc__2_751_0:
-	.incbin "baserom.dol", 0x32F4C0, 0x4
+	.4byte 0x3DB27EB0
 .global _esc__2_805_0
 _esc__2_805_0:
-	.incbin "baserom.dol", 0x32F4C4, 0x4
+	.4byte 0x7E967699
 .global _esc__2_806
 _esc__2_806:
-	.incbin "baserom.dol", 0x32F4C8, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_835_0
 _esc__2_835_0:
-	.incbin "baserom.dol", 0x32F4CC, 0x4
+	.4byte 0x00000000
 .global _esc__2_836_0
 _esc__2_836_0:
-	.incbin "baserom.dol", 0x32F4D0, 0x4
+	.4byte 0x3CA3D70A
 .global _esc__2_1064
 _esc__2_1064:
-	.incbin "baserom.dol", 0x32F4D4, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1105
 _esc__2_1105:
-	.incbin "baserom.dol", 0x32F4D8, 0x4
+	.4byte 0x41200000
 .global _esc__2_1152
 _esc__2_1152:
-	.incbin "baserom.dol", 0x32F4DC, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1295_0
 _esc__2_1295_0:
-	.incbin "baserom.dol", 0x32F4E0, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1296
 _esc__2_1296:
-	.incbin "baserom.dol", 0x32F4E4, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_1299_0
 _esc__2_1299_0:
-	.incbin "baserom.dol", 0x32F4E8, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

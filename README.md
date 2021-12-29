@@ -11,13 +11,13 @@ This repo contains a WIP decompilation of The Incredibles (US) for Nintendo Game
 
 It builds the following DOL:
 
-main.dol: `sha1: c7413be2fba5b8cc47b7506ecb7785677a4a1c12`
+- main.dol (`sha1: c7413be2fba5b8cc47b7506ecb7785677a4a1c12`)
 
 ## Progress
 
 View our progress and answers to frequently asked questions on the [project tracking website](https://seilweiss.github.io/incredibles/progress).
 
-Join the discussion on the [Heavy Iron Modding Discord](https://discord.gg/dVbGFdYU6A).
+Join the discussion on the [Heavy Iron Modding Discord](https://discord.gg/dVbGFdYU6A) and [GC/Wii Decompilation Discord](https://discord.gg/hKx3FJJgrV).
 
 ## Building
 
@@ -27,17 +27,16 @@ Join the discussion on the [Heavy Iron Modding Discord](https://discord.gg/dVbGF
   - During installation, only the 'GameCube Development' component is required.
 - Python3 (`pacman -S msys/python3`)
 - gcc (`pacman -S gcc`)
-- Metrowerks CodeWarrior 2.7 compiler and linker for Embedded PowerPC (`mwcceppc.exe` and `mwldeppc.exe`)
-  - These can be installed with CodeWarrior 2.7 for GameCube. Please obtain access to these tools on your own, or if you are interested in contributing, please join the [Heavy Iron Modding Discord](https://discord.gg/dVbGFdYU6A) and DM either `Seil#3565` or `mp#8248` for access.
-- A clean DOL of The Incredibles
-  - This is usually named `main.dol` (or something similar) and must be extracted from the GameCube disc for the game. See [this guide](https://heavyironmodding.org/wiki/Setting_up_Dolphin_for_modding) for instructions.
+- Metrowerks CodeWarrior 2.7 compiler and linker for Embedded PowerPC: [GC_WII_COMPILERS.zip](https://cdn.discordapp.com/attachments/727918646525165659/917185027656286218/GC_WII_COMPILERS.zip)
+- Original `main.dol` for The Incredibles (optional)
+  - This is used to display a diff if the build doesn't OK.
+  - See [this guide](https://heavyironmodding.org/wiki/Setting_up_Dolphin_for_modding) for instructions on extracting the original GameCube disc. Once extracted, you can find `main.dol` in the `sys` folder.
 
 ### Instructions
 
-1. Copy your clean DOL of The Incredibles to the base working directory and rename it `baserom.dol`.
-2. Create a `2.7` folder in `tools/mwcc_compiler`.
-4. Copy the CW 2.7 `mwcceppc.exe` and `mwldeppc.exe` into the `2.7` folder.
-5. Run the `make` command.
+1. Extract [GC_WII_COMPILERS.zip](https://cdn.discordapp.com/attachments/727918646525165659/917185027656286218/GC_WII_COMPILERS.zip) to `tools/mwcc_compiler`.
+2. (Optional) Copy your original `main.dol` for The Incredibles to the base directory and rename it `baserom.dol`.
+3. Run the `make` command.
 
 ## Project Structure
 
@@ -69,7 +68,7 @@ Join the discussion on the [Heavy Iron Modding Discord](https://discord.gg/dVbGF
 
 Contributions and PRs are welcome.
 
-We recommend joining the [Heavy Iron Modding Discord](https://discord.gg/dVbGFdYU6A) as most of our discussion about this project occurs there. It's also the best place to get help if you need it.
+We recommend joining the [Heavy Iron Modding Discord](https://discord.gg/dVbGFdYU6A) as most of our discussion about this project occurs there. It's also the best place to get help if you need it. Also check out the [GC/Wii Decompilation Discord](https://discord.gg/hKx3FJJgrV) for more general discussion and help.
 
 The [BFBB Decompilation project](https://github.com/bfbbdecomp/bfbb) also has some helpful [documentation](https://github.com/bfbbdecomp/bfbb/blob/master/docs/WalkthroughAndTips.md).
 

@@ -4,13 +4,77 @@
 
 .global __vt__Q24zNPC16NPCSmokeBehavior
 __vt__Q24zNPC16NPCSmokeBehavior:
-	.incbin "baserom.dol", 0x3146A0, 0x80
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80184548
+	.4byte 0x801DA030
+	.4byte 0x800FEDDC
+	.4byte 0x800AB4C4
+	.4byte 0x800AB4CC
+	.4byte 0x801D98B0
+	.4byte 0x800AB4D4
+	.4byte 0x800AB4D8
+	.4byte 0x800AB4DC
+	.4byte 0x800AB4E0
+	.4byte 0x801D994C
+	.4byte 0x801D9764
+	.4byte 0x801D9914
+	.4byte 0x800AB4EC
+	.4byte 0x800AB4F0
+	.4byte 0x801D985C
+	.4byte 0x800AB4F4
+	.4byte 0x800AB4F8
+	.4byte 0x801D98A8
+	.4byte 0x801D9860
+	.4byte 0x800AB504
+	.4byte 0x800AB508
+	.4byte 0x800AB510
+	.4byte 0x800AB518
+	.4byte 0x800AB520
+	.4byte 0x800AB524
+	.4byte 0x8018464C
+	.4byte 0x801846DC
+	.4byte 0x800FF324
+	.4byte 0x00000000
 
 .section .rodata
 
 .global _esc__2_stringBase0_141
 _esc__2_stringBase0_141:
-	.incbin "baserom.dol", 0x2E6888, 0x88
+	.4byte 0x44616D61
+	.4byte 0x6765536D
+	.4byte 0x6F6B6542
+	.4byte 0x6F6E6500
+	.4byte 0x44616D61
+	.4byte 0x6765536D
+	.4byte 0x6F6B6553
+	.4byte 0x63616C65
+	.4byte 0x0044616D
+	.4byte 0x61676553
+	.4byte 0x6D6F6B65
+	.4byte 0x50617274
+	.4byte 0x69636C65
+	.4byte 0x4C696665
+	.4byte 0x74696D65
+	.4byte 0x0044616D
+	.4byte 0x61676553
+	.4byte 0x6D6F6B65
+	.4byte 0x50617274
+	.4byte 0x69636C65
+	.4byte 0x47726176
+	.4byte 0x69747900
+	.4byte 0x4578706C
+	.4byte 0x6F73696F
+	.4byte 0x6E466C61
+	.4byte 0x73685F53
+	.4byte 0x6D6F6B65
+	.4byte 0x5F74616E
+	.4byte 0x5F363400
+	.4byte 0x4E504353
+	.4byte 0x6D6F6B65
+	.4byte 0x42656861
+	.4byte 0x76696F72
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -22,67 +86,73 @@ texture__15zNPCSmokeSystem:
 
 .global __vt__15zNPCSmokeSystem
 __vt__15zNPCSmokeSystem:
-	.incbin "baserom.dol", 0x32DB48, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801D9BB0
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1304_4
 _esc__2_1304_4:
-	.incbin "baserom.dol", 0x333960, 0x4
+	.4byte 0x00000000
 .global _esc__2_1305_2
 _esc__2_1305_2:
-	.incbin "baserom.dol", 0x333964, 0x4
+	.4byte 0x3F800000
 .global NPCSmokeColor
 NPCSmokeColor:
-	.incbin "baserom.dol", 0x333968, 0x4
+	.4byte 0xFFFFFF28
 .global _esc__2_1325_2
 _esc__2_1325_2:
-	.incbin "baserom.dol", 0x33396C, 0x4
+	.4byte 0x40600000
 .global _esc__2_1326_1
 _esc__2_1326_1:
-	.incbin "baserom.dol", 0x333970, 0x4
+	.4byte 0x40A00000
 .global _esc__2_1327_0
 _esc__2_1327_0:
-	.incbin "baserom.dol", 0x333974, 0x4
+	.4byte 0x3ECCCCCD
 .global _esc__2_1356_3
 _esc__2_1356_3:
-	.incbin "baserom.dol", 0x333978, 0x4
+	.4byte 0x00000000
 .global lbl_803D6FBC
 lbl_803D6FBC:
-	.incbin "baserom.dol", 0x33397C, 0x4
+	.4byte 0x3F800000
 .global lbl_803D6FC0
 lbl_803D6FC0:
-	.incbin "baserom.dol", 0x333980, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_1360_0
 _esc__2_1360_0:
-	.incbin "baserom.dol", 0x333988, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1391_6
 _esc__2_1391_6:
-	.incbin "baserom.dol", 0x333990, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1425_2
 _esc__2_1425_2:
-	.incbin "baserom.dol", 0x333994, 0x4
+	.4byte 0x41200000
 .global _esc__2_1426_2
 _esc__2_1426_2:
-	.incbin "baserom.dol", 0x333998, 0x4
+	.4byte 0x42B40000
 .global _esc__2_1427_4
 _esc__2_1427_4:
-	.incbin "baserom.dol", 0x33399C, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1428_4
 _esc__2_1428_4:
-	.incbin "baserom.dol", 0x3339A0, 0x4
+	.4byte 0x40000000
 .global _esc__2_1429_3
 _esc__2_1429_3:
-	.incbin "baserom.dol", 0x3339A4, 0x4
+	.4byte 0x3FC00000
 .global _esc__2_1430_1
 _esc__2_1430_1:
-	.incbin "baserom.dol", 0x3339A8, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_1491
 _esc__2_1491:
-	.incbin "baserom.dol", 0x3339AC, 0x4
+	.4byte 0x3E4CCCCC
 .global _esc__2_1492
 _esc__2_1492:
-	.incbin "baserom.dol", 0x3339B0, 0x8
+	.4byte 0x42200000
+	.4byte 0x00000000
 
 .if 0
 

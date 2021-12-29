@@ -19,7 +19,14 @@ binom_triangle:
 
 .global _esc__2_stringBase0_7
 _esc__2_stringBase0_7:
-	.incbin "baserom.dol", 0x2CEC80, 0x20
+	.4byte 0x73706563
+	.4byte 0x33007570
+	.4byte 0x64617465
+	.4byte 0x20667261
+	.4byte 0x6D650A00
+	.4byte 0x66785F73
+	.4byte 0x74726561
+	.4byte 0x6B310000
 
 .section .sbss
 
@@ -58,88 +65,103 @@ need_sort__9xFXRibbon:
 
 .global xFXanimUVRotMat0
 xFXanimUVRotMat0:
-	.incbin "baserom.dol", 0x32B168, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 .global xFXanimUVRotMat1
 xFXanimUVRotMat1:
-	.incbin "baserom.dol", 0x32B170, 0x8
+	.4byte 0x00000000
+	.4byte 0x3F800000
 .global xFXanimUVTrans
 xFXanimUVTrans:
-	.incbin "baserom.dol", 0x32B178, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global xFXanimUVScale
 xFXanimUVScale:
-	.incbin "baserom.dol", 0x32B180, 0x8
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 .global xFXanimUV2PRotMat0
 xFXanimUV2PRotMat0:
-	.incbin "baserom.dol", 0x32B188, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 .global xFXanimUV2PRotMat1
 xFXanimUV2PRotMat1:
-	.incbin "baserom.dol", 0x32B190, 0x8
+	.4byte 0x00000000
+	.4byte 0x3F800000
 .global xFXanimUV2PTrans
 xFXanimUV2PTrans:
-	.incbin "baserom.dol", 0x32B198, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global xFXanimUV2PScale
 xFXanimUV2PScale:
-	.incbin "baserom.dol", 0x32B1A0, 0x8
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 
 .section .sdata2
 
 .global _esc__2_1016_1
 _esc__2_1016_1:
-	.incbin "baserom.dol", 0x32EE50, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1215_0
 _esc__2_1215_0:
-	.incbin "baserom.dol", 0x32EE54, 0x4
+	.4byte 0x00000000
 .global _esc__2_1216_0
 _esc__2_1216_0:
-	.incbin "baserom.dol", 0x32EE58, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 .global _esc__2_1220
 _esc__2_1220:
-	.incbin "baserom.dol", 0x32EE60, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1258
 _esc__2_1258:
-	.incbin "baserom.dol", 0x32EE68, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_1380
 _esc__2_1380:
-	.incbin "baserom.dol", 0x32EE6C, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1416
 _esc__2_1416:
-	.incbin "baserom.dol", 0x32EE70, 0x4
+	.4byte 0x3F800000
 .global lbl_803D24B4
 lbl_803D24B4:
-	.incbin "baserom.dol", 0x32EE74, 0x4
+	.4byte 0x00000000
 .global lbl_803D24B8
 lbl_803D24B8:
-	.incbin "baserom.dol", 0x32EE78, 0x4
+	.4byte 0x00000000
 .global _esc__2_1417
 _esc__2_1417:
-	.incbin "baserom.dol", 0x32EE7C, 0x4
+	.4byte 0x00000000
 .global lbl_803D24C0
 lbl_803D24C0:
-	.incbin "baserom.dol", 0x32EE80, 0x4
+	.4byte 0x3F800000
 .global lbl_803D24C4
 lbl_803D24C4:
-	.incbin "baserom.dol", 0x32EE84, 0x4
+	.4byte 0x00000000
 .global _esc__2_1419
 _esc__2_1419:
-	.incbin "baserom.dol", 0x32EE88, 0x4
+	.4byte 0x42340000
 .global default_curve_esc__7_1811
 default_curve_esc__7_1811:
-	.incbin "baserom.dol", 0x32EE8C, 0x18
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0xFFFFFFFF
+	.4byte 0x3F800000
 .global _esc__2_1820
 _esc__2_1820:
-	.incbin "baserom.dol", 0x32EEA4, 0x4
+	.4byte 0x447A0000
 .global _esc__2_2107
 _esc__2_2107:
-	.incbin "baserom.dol", 0x32EEA8, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_2159
 _esc__2_2159:
-	.incbin "baserom.dol", 0x32EEAC, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_2224
 _esc__2_2224:
-	.incbin "baserom.dol", 0x32EEB0, 0x4
+	.4byte 0x00000000
 .global lbl_803D24F4
 lbl_803D24F4:
-	.incbin "baserom.dol", 0x32EEB4, 0x4
+	.4byte 0x3F800000
 
 .if 0
 

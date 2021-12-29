@@ -4,13 +4,35 @@
 
 .global __vt__8zUIModel
 __vt__8zUIModel:
-	.incbin "baserom.dol", 0x30D7F8, 0x58
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8016D33C
+	.4byte 0x8016840C
+	.4byte 0x8016A128
+	.4byte 0x8016A130
+	.4byte 0x8016CD4C
+	.4byte 0x801686C0
+	.4byte 0x8016CF2C
+	.4byte 0x801687A0
+	.4byte 0x8016D1FC
+	.4byte 0x8016CF4C
+	.4byte 0x8016D160
+	.4byte 0x8016D1B4
+	.4byte 0x80169AE0
+	.4byte 0x80169B7C
+	.4byte 0x80169E38
+	.4byte 0x80169E98
+	.4byte 0x80169F90
+	.4byte 0x8016A02C
+	.4byte 0x80169EF8
+	.4byte 0x80169F48
 
 .section .rodata
 
 .global _esc__2_stringBase0_100
 _esc__2_stringBase0_100:
-	.incbin "baserom.dol", 0x2E2B40, 0x8
+	.4byte 0x69646C65
+	.4byte 0x00000000
 
 .section .sbss2, "", @nobits
 
@@ -31,25 +53,29 @@ lbl_803D9104:
 
 .global from_esc__7_1046
 from_esc__7_1046:
-	.incbin "baserom.dol", 0x32D0C8, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
 .global to_esc__7_1047
 to_esc__7_1047:
-	.incbin "baserom.dol", 0x32D0D4, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1035_3
 _esc__2_1035_3:
-	.incbin "baserom.dol", 0x332218, 0x4
+	.4byte 0x00000000
 .global _esc__2_1068_2
 _esc__2_1068_2:
-	.incbin "baserom.dol", 0x33221C, 0x4
+	.4byte 0x3ACCCCCD
 .global _esc__2_1069_3
 _esc__2_1069_3:
-	.incbin "baserom.dol", 0x332220, 0x4
+	.4byte 0x3B088889
 .global _esc__2_1070_2
 _esc__2_1070_2:
-	.incbin "baserom.dol", 0x332224, 0x4
+	.4byte 0x3F800000
 
 .if 0
 

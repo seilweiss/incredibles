@@ -19,10 +19,15 @@ lastEnv:
 
 .global lbl_803D2E14
 lbl_803D2E14:
-	.incbin "baserom.dol", 0x32F7D4, 0x4
+	.4byte 0x00000000
 .global _esc__2_989_2
 _esc__2_989_2:
-	.incbin "baserom.dol", 0x32F7D8, 0x18
+	.4byte 0x447A0000
+	.4byte 0x447A0000
+	.4byte 0x447A0000
+	.4byte 0xC47A0000
+	.4byte 0xC47A0000
+	.4byte 0xC47A0000
 
 .if 0
 

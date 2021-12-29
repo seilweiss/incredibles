@@ -16,16 +16,35 @@ sGameTime:
 
 .global months
 months:
-	.incbin "baserom.dol", 0x32B710, 0x30
+	.4byte 0x802D9079
+	.4byte 0x802D9082
+	.4byte 0x802D908C
+	.4byte 0x802D9093
+	.4byte 0x802D909A
+	.4byte 0x802D909F
+	.4byte 0x802D90A5
+	.4byte 0x802D90AB
+	.4byte 0x802D90B3
+	.4byte 0x802D90BE
+	.4byte 0x802D90C7
+	.4byte 0x802D90D1
 .global dotw
 dotw:
-	.incbin "baserom.dol", 0x32B740, 0x20
+	.4byte 0x802D90DB
+	.4byte 0x802D90E3
+	.4byte 0x802D90EB
+	.4byte 0x802D90F4
+	.4byte 0x802D90FF
+	.4byte 0x802D9109
+	.4byte 0x802D9111
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_607
 _esc__2_607:
-	.incbin "baserom.dol", 0x32F950, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

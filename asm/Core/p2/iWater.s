@@ -4,10 +4,44 @@
 
 .global bump_layers
 bump_layers:
-	.incbin "baserom.dol", 0x2E65B8, 0x60
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x60000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x40000000
+	.4byte 0x40000000
+	.4byte 0x3E800000
+	.4byte 0x3DCCCCCD
+	.4byte 0x3F800000
+	.4byte 0xBF800000
+	.4byte 0x40400000
+	.4byte 0x20000000
+	.4byte 0x3F30A3D7
+	.4byte 0x3EF0A3D7
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x40800000
+	.4byte 0x40000000
 .global _esc__2_stringBase0_138
 _esc__2_stringBase0_138:
-	.incbin "baserom.dol", 0x2E6618, 0x30
+	.4byte 0x69576174
+	.4byte 0x65725363
+	.4byte 0x656E6545
+	.4byte 0x6E746572
+	.4byte 0x3A202077
+	.4byte 0x61746572
+	.4byte 0x20626F64
+	.4byte 0x79202530
+	.4byte 0x38582028
+	.4byte 0x2573290A
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -52,73 +86,82 @@ defaultRenderCB:
 
 .global waterTexID
 waterTexID:
-	.incbin "baserom.dol", 0x32DAD8, 0x4
+	.4byte 0xA362C765
 .global enableWater
 enableWater:
-	.incbin "baserom.dol", 0x32DADC, 0x4
+	.4byte 0x00000001
 
 .section .sdata2
 
 .global _esc__2_961_1
 _esc__2_961_1:
-	.incbin "baserom.dol", 0x333838, 0x4
+	.4byte 0x3F800000
 .global _esc__2_986_0
 _esc__2_986_0:
-	.incbin "baserom.dol", 0x33383C, 0x4
+	.4byte 0x00000000
 .global _esc__2_988_2
 _esc__2_988_2:
-	.incbin "baserom.dol", 0x333840, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1013_3
 _esc__2_1013_3:
-	.incbin "baserom.dol", 0x333848, 0x4
+	.4byte 0x000000FF
 .global _esc__2_1029_5
 _esc__2_1029_5:
-	.incbin "baserom.dol", 0x33384C, 0x4
+	.4byte 0x3AC49BA6
 .global _esc__2_1031_2
 _esc__2_1031_2:
-	.incbin "baserom.dol", 0x333850, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global waterHackColor
 waterHackColor:
-	.incbin "baserom.dol", 0x333858, 0x10
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 .global _esc__2_1162_0
 _esc__2_1162_0:
-	.incbin "baserom.dol", 0x333868, 0x4
+	.4byte 0x3DD70A3D
 .global _esc__2_1163_1
 _esc__2_1163_1:
-	.incbin "baserom.dol", 0x33386C, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_1164_2
 _esc__2_1164_2:
-	.incbin "baserom.dol", 0x333870, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_1165_1
 _esc__2_1165_1:
-	.incbin "baserom.dol", 0x333874, 0x4
+	.4byte 0x3DF5C28F
 .global _esc__2_1166_3
 _esc__2_1166_3:
-	.incbin "baserom.dol", 0x333878, 0x4
+	.4byte 0x3D3851EC
 .global _esc__2_1167_6
 _esc__2_1167_6:
-	.incbin "baserom.dol", 0x33387C, 0x4
+	.4byte 0x3ECCCCCD
 .global _esc__2_1168_4
 _esc__2_1168_4:
-	.incbin "baserom.dol", 0x333880, 0x4
+	.4byte 0x3E19999A
 .global camscale
 camscale:
-	.incbin "baserom.dol", 0x333884, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_1261_3
 _esc__2_1261_3:
-	.incbin "baserom.dol", 0x333890, 0x4
+	.4byte 0x44A00000
 .global _esc__2_1262_3
 _esc__2_1262_3:
-	.incbin "baserom.dol", 0x333894, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1263_5
 _esc__2_1263_5:
-	.incbin "baserom.dol", 0x333898, 0x4
+	.4byte 0x437F0000
 .global NJ02start
 NJ02start:
-	.incbin "baserom.dol", 0x33389C, 0xC
+	.4byte 0xC3868000
+	.4byte 0x40D9999A
+	.4byte 0xC3220000
 .global _esc__2_1308_1
 _esc__2_1308_1:
-	.incbin "baserom.dol", 0x3338A8, 0x4
+	.4byte 0x441C4000
 
 .if 0
 

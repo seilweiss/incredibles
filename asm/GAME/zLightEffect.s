@@ -4,49 +4,69 @@
 
 .global sEffectInitFuncs
 sEffectInitFuncs:
-	.incbin "baserom.dol", 0x307638, 0x48
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x800DD930
+	.4byte 0x800DD930
+	.4byte 0x800DD930
+	.4byte 0x800DD920
+	.4byte 0x800DD920
+	.4byte 0x800DD920
+	.4byte 0x800DD924
+	.4byte 0x800DD924
+	.4byte 0x800DD924
+	.4byte 0x800DD928
+	.4byte 0x800DD928
+	.4byte 0x800DD928
+	.4byte 0x800DD92C
+	.4byte 0x800DD92C
+	.4byte 0x800DD92C
+	.4byte 0x800DDB7C
 
 .section .sdata2
 
 .global _esc__2_952_0
 _esc__2_952_0:
-	.incbin "baserom.dol", 0x330A08, 0x8
+	.4byte 0x477FFF00
+	.4byte 0x00000000
 .global _esc__2_954_0
 _esc__2_954_0:
-	.incbin "baserom.dol", 0x330A10, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_975_0
 _esc__2_975_0:
-	.incbin "baserom.dol", 0x330A18, 0x4
+	.4byte 0x00000000
 .global _esc__2_1000_4
 _esc__2_1000_4:
-	.incbin "baserom.dol", 0x330A1C, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1001
 _esc__2_1001:
-	.incbin "baserom.dol", 0x330A20, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_1002_2
 _esc__2_1002_2:
-	.incbin "baserom.dol", 0x330A24, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1007_0
 _esc__2_1007_0:
-	.incbin "baserom.dol", 0x330A28, 0x4
+	.4byte 0x3D4CCCCD
 .global _esc__2_1012_3
 _esc__2_1012_3:
-	.incbin "baserom.dol", 0x330A2C, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_1088_1
 _esc__2_1088_1:
-	.incbin "baserom.dol", 0x330A30, 0x4
+	.4byte 0x3E800000
 .global _esc__2_1089_1
 _esc__2_1089_1:
-	.incbin "baserom.dol", 0x330A34, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1090_1
 _esc__2_1090_1:
-	.incbin "baserom.dol", 0x330A38, 0x4
+	.4byte 0x3F19999A
 .global _esc__2_1091_1
 _esc__2_1091_1:
-	.incbin "baserom.dol", 0x330A3C, 0x4
+	.4byte 0x3ECCCCCD
 .global _esc__2_1092_1
 _esc__2_1092_1:
-	.incbin "baserom.dol", 0x330A40, 0x8
+	.4byte 0x40400000
+	.4byte 0x00000000
 
 .if 0
 

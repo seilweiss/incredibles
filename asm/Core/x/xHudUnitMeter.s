@@ -6,7 +6,42 @@
 
 .global _esc__2_stringBase0_12
 _esc__2_stringBase0_12:
-	.incbin "baserom.dol", 0x2CED40, 0x90
+	.4byte 0x54656D70
+	.4byte 0x7C485544
+	.4byte 0x20556E69
+	.4byte 0x7420416E
+	.4byte 0x696D2044
+	.4byte 0x656C7461
+	.4byte 0x00687564
+	.4byte 0x3A6D6574
+	.4byte 0x65723A75
+	.4byte 0x6E697400
+	.4byte 0x4D6F6465
+	.4byte 0x6C456D70
+	.4byte 0x7479004D
+	.4byte 0x6F64656C
+	.4byte 0x46756C6C
+	.4byte 0x0025737C
+	.4byte 0x4C6F6361
+	.4byte 0x74696F6E
+	.4byte 0x20015800
+	.4byte 0x25737C4C
+	.4byte 0x6F636174
+	.4byte 0x696F6E20
+	.4byte 0x01590025
+	.4byte 0x737C4C6F
+	.4byte 0x63617469
+	.4byte 0x6F6E2001
+	.4byte 0x5A002573
+	.4byte 0x7C53697A
+	.4byte 0x65200157
+	.4byte 0x69647468
+	.4byte 0x0025737C
+	.4byte 0x53697A65
+	.4byte 0x20014865
+	.4byte 0x69676874
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -29,40 +64,51 @@ init_esc__7_927:
 
 .global tweak_anim_time_delta__Q24xhud27_esc__2_unnamed_esc__2_xHudUnitMeter_cpp_esc__2_
 tweak_anim_time_delta__Q24xhud27_esc__2_unnamed_esc__2_xHudUnitMeter_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B298, 0x4
+	.4byte 0x3DCCCCCD
 .global __vt__Q24xhud17unit_meter_widget
 __vt__Q24xhud17unit_meter_widget:
-	.incbin "baserom.dol", 0x32B29C, 0x2C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8003ED04
+	.4byte 0x8003ED24
+	.4byte 0x8003ED74
+	.4byte 0x8003DD18
+	.4byte 0x8003EDCC
+	.4byte 0x8003EE90
+	.4byte 0x8003F090
+	.4byte 0x8003D77C
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_903_1
 _esc__2_903_1:
-	.incbin "baserom.dol", 0x32EFB0, 0x4
+	.4byte 0x00000000
 .global _esc__2_904_0
 _esc__2_904_0:
-	.incbin "baserom.dol", 0x32EFB4, 0x4
+	.4byte 0x41200000
 .global _esc__2_941_0
 _esc__2_941_0:
-	.incbin "baserom.dol", 0x32EFB8, 0x4
+	.4byte 0x802D1D68
 .global lbl_803D25FC
 lbl_803D25FC:
-	.incbin "baserom.dol", 0x32EFBC, 0x4
+	.4byte 0x802D1D73
 .global _esc__2_978
 _esc__2_978:
-	.incbin "baserom.dol", 0x32EFC0, 0x4
+	.4byte 0x3B008081
 .global _esc__2_979
 _esc__2_979:
-	.incbin "baserom.dol", 0x32EFC4, 0x4
+	.4byte 0x3F000000
 .global _esc__2_981
 _esc__2_981:
-	.incbin "baserom.dol", 0x32EFC8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1020
 _esc__2_1020:
-	.incbin "baserom.dol", 0x32EFD0, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_1021_0
 _esc__2_1021_0:
-	.incbin "baserom.dol", 0x32EFD4, 0x4
+	.4byte 0x3727C5AC
 
 .if 0
 

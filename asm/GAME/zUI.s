@@ -4,10 +4,38 @@
 
 .global _esc__2_1464
 _esc__2_1464:
-	.incbin "baserom.dol", 0x30D6B0, 0x20
+	.4byte 0x80169188
+	.4byte 0x80169230
+	.4byte 0x8016933C
+	.4byte 0x801694B8
+	.4byte 0x80169564
+	.4byte 0x8016960C
+	.4byte 0x801696B8
+	.4byte 0x80169854
 .global __vt__3zUI
 __vt__3zUI:
-	.incbin "baserom.dol", 0x30D6D0, 0x58
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8016840C
+	.4byte 0x8016A128
+	.4byte 0x8016A130
+	.4byte 0x80168624
+	.4byte 0x801686C0
+	.4byte 0x801686C4
+	.4byte 0x801687A0
+	.4byte 0x80168828
+	.4byte 0x00000000
+	.4byte 0x80168BD4
+	.4byte 0x80168EA4
+	.4byte 0x80169AE0
+	.4byte 0x80169B7C
+	.4byte 0x80169E38
+	.4byte 0x80169E98
+	.4byte 0x80169F90
+	.4byte 0x8016A02C
+	.4byte 0x80169EF8
+	.4byte 0x80169F48
 
 .section .sbss
 
@@ -28,31 +56,35 @@ signalUser__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_:
 
 .global bAllowInput__3zUI
 bAllowInput__3zUI:
-	.incbin "baserom.dol", 0x32D0A8, 0x8
+	.4byte 0x01000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1134_2
 _esc__2_1134_2:
-	.incbin "baserom.dol", 0x332160, 0x4
+	.4byte 0x00000000
 .global _esc__2_1289_3
 _esc__2_1289_3:
-	.incbin "baserom.dol", 0x332164, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1458_0
 _esc__2_1458_0:
-	.incbin "baserom.dol", 0x332168, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1459
 _esc__2_1459:
-	.incbin "baserom.dol", 0x33216C, 0x4
+	.4byte 0x43B40000
 .global _esc__2_1460_0
 _esc__2_1460_0:
-	.incbin "baserom.dol", 0x332170, 0x8
+	.4byte 0x3C8EFA35
+	.4byte 0x00000000
 .global _esc__2_1463_1
 _esc__2_1463_1:
-	.incbin "baserom.dol", 0x332178, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1467_4
 _esc__2_1467_4:
-	.incbin "baserom.dol", 0x332180, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

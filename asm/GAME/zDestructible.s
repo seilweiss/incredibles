@@ -4,10 +4,400 @@
 
 .global _esc__2_1190
 _esc__2_1190:
-	.incbin "baserom.dol", 0x2D8530, 0x5FC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_stringBase0_46
 _esc__2_stringBase0_46:
-	.incbin "baserom.dol", 0x2D8B2C, 0x24
+	.4byte 0x2E646666
+	.4byte 0x004F626A
+	.4byte 0x65637473
+	.4byte 0x20446573
+	.4byte 0x74726F79
+	.4byte 0x65640044
+	.4byte 0x616D6167
+	.4byte 0x65204465
+	.4byte 0x6C740000
 
 .section .sbss2, "", @nobits
 
@@ -25,76 +415,85 @@ lbl_803D8B70:
 
 .global DEG_TO_RAD__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_
 DEG_TO_RAD__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32BC28, 0x4
+	.4byte 0x3C8F08F0
 .global LAUNCH_ANGLE__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_
 LAUNCH_ANGLE__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32BC2C, 0x4
+	.4byte 0x428C0000
 .global LAUNCH_VEL__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_
 LAUNCH_VEL__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32BC30, 0x4
+	.4byte 0x41200000
 .global DAMAGE_RADIUS__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_
 DAMAGE_RADIUS__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32BC34, 0x4
+	.4byte 0x3F800000
 .global MAX_TIME_NO_COLLISIONS__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_
 MAX_TIME_NO_COLLISIONS__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32BC38, 0x4
+	.4byte 0x3F000000
 .global HIT_TO_DESTROY_TIME__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_
 HIT_TO_DESTROY_TIME__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32BC3C, 0x4
+	.4byte 0x3F000000
 .global Y_VELOCITY__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_
 Y_VELOCITY__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32BC40, 0x4
+	.4byte 0x42200000
 .global RESPAWN_THRESHOLD__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_
 RESPAWN_THRESHOLD__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32BC44, 0x4
+	.4byte 0x3727C5AC
 .global DOBJ_STD_BOUND_VAR__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_
 DOBJ_STD_BOUND_VAR__27_esc__2_unnamed_esc__2_zDestructible_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32BC48, 0x8
+	.4byte 0x3F000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1146_0
 _esc__2_1146_0:
-	.incbin "baserom.dol", 0x3300C0, 0x4
+	.4byte 0x00000000
 .global _esc__2_1147_0
 _esc__2_1147_0:
-	.incbin "baserom.dol", 0x3300C4, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1176_1
 _esc__2_1176_1:
-	.incbin "baserom.dol", 0x3300C8, 0x18
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_1180
 _esc__2_1180:
-	.incbin "baserom.dol", 0x3300E0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1227
 _esc__2_1227:
-	.incbin "baserom.dol", 0x3300E8, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1480
 _esc__2_1480:
-	.incbin "baserom.dol", 0x3300EC, 0x4
+	.4byte 0x42C80000
 .global _esc__2_1481
 _esc__2_1481:
-	.incbin "baserom.dol", 0x3300F0, 0x8
+	.4byte 0x3C23D70A
+	.4byte 0x00000000
 .global _esc__2_1484
 _esc__2_1484:
-	.incbin "baserom.dol", 0x3300F8, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1536
 _esc__2_1536:
-	.incbin "baserom.dol", 0x330100, 0x4
+	.4byte 0x00000000
 .global lbl_803D3744
 lbl_803D3744:
-	.incbin "baserom.dol", 0x330104, 0x4
+	.4byte 0x40400000
 .global lbl_803D3748
 lbl_803D3748:
-	.incbin "baserom.dol", 0x330108, 0x4
+	.4byte 0x00000000
 .global _esc__2_1553_0
 _esc__2_1553_0:
-	.incbin "baserom.dol", 0x33010C, 0x4
+	.4byte 0x358637BD
 .global _esc__2_1554
 _esc__2_1554:
-	.incbin "baserom.dol", 0x330110, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1582_1
 _esc__2_1582_1:
-	.incbin "baserom.dol", 0x330114, 0x4
+	.4byte 0x3E99999A
 
 .if 0
 

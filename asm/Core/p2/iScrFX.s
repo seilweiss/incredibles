@@ -4,7 +4,38 @@
 
 .global sMBD
 sMBD:
-	.incbin "baserom.dol", 0x300818, 0x80
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -16,28 +47,33 @@ sMotionBlurEnabled:
 
 .global FLARE_SIZE
 FLARE_SIZE:
-	.incbin "baserom.dol", 0x32B690, 0x8
+	.4byte 0x00000040
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_698
 _esc__2_698:
-	.incbin "baserom.dol", 0x32F8E8, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_700_0
 _esc__2_700_0:
-	.incbin "baserom.dol", 0x32F8F0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_724_0
 _esc__2_724_0:
-	.incbin "baserom.dol", 0x32F8F8, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 .global _esc__2_788_1
 _esc__2_788_1:
-	.incbin "baserom.dol", 0x32F900, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_829
 _esc__2_829:
-	.incbin "baserom.dol", 0x32F908, 0x4
+	.4byte 0xFFFFFF00
 .global _esc__2_1047_0
 _esc__2_1047_0:
-	.incbin "baserom.dol", 0x32F90C, 0x4
+	.4byte 0x40000000
 
 .if 0
 

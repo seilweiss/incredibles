@@ -4,7 +4,10 @@
 
 .global _esc__2_stringBase0_30
 _esc__2_stringBase0_30:
-	.incbin "baserom.dol", 0x2CF950, 0x10
+	.4byte 0x4D4F5250
+	.4byte 0x48535441
+	.4byte 0x54450000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -31,13 +34,14 @@ s_numV:
 
 .global _esc__2_725
 _esc__2_725:
-	.incbin "baserom.dol", 0x32F8A8, 0x4
+	.4byte 0x3F800000
 .global _esc__2_726
 _esc__2_726:
-	.incbin "baserom.dol", 0x32F8AC, 0x4
+	.4byte 0x46800000
 .global _esc__2_728
 _esc__2_728:
-	.incbin "baserom.dol", 0x32F8B0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .if 0
 

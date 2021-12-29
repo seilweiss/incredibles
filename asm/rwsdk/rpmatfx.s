@@ -19,19 +19,41 @@ EffectRegEntries:
 
 .global MatFXInfo
 MatFXInfo:
-	.incbin "baserom.dol", 0x32AF90, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_924
 _esc__2_924:
-	.incbin "baserom.dol", 0x32AF9C, 0x1C
+	.4byte 0x802C9968
+	.4byte 0x802C98F4
+	.4byte 0x802C9900
+	.4byte 0x802C990C
+	.4byte 0x802C9920
+	.4byte 0x802C993C
+	.4byte 0x802C9948
 
 .section .rodata
 
 .global _esc__2_795
 _esc__2_795:
-	.incbin "baserom.dol", 0x2EE0E0, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_976
 _esc__2_976:
-	.incbin "baserom.dol", 0x2EE100, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -64,94 +86,103 @@ DummyDict:
 
 .global _rpMatFXMaterialDataFreeListBlockSize
 _rpMatFXMaterialDataFreeListBlockSize:
-	.incbin "baserom.dol", 0x32E6B8, 0x4
+	.4byte 0x00000080
 .global _rpMatFXMaterialDataFreeListPreallocBlocks
 _rpMatFXMaterialDataFreeListPreallocBlocks:
-	.incbin "baserom.dol", 0x32E6BC, 0x4
+	.4byte 0x00000001
 .global _rpMultiTextureModule
 _rpMultiTextureModule:
-	.incbin "baserom.dol", 0x32E6C0, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_627_0
 _esc__2_627_0:
-	.incbin "baserom.dol", 0x334DB0, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 .global _esc__2_629
 _esc__2_629:
-	.incbin "baserom.dol", 0x334DB8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1017_2
 _esc__2_1017_2:
-	.incbin "baserom.dol", 0x334DC0, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global opaqueWhite_esc__7_272
 opaqueWhite_esc__7_272:
-	.incbin "baserom.dol", 0x334DC8, 0x4
+	.4byte 0xFFFFFFFF
 .global opaqueBlack_esc__7_273
 opaqueBlack_esc__7_273:
-	.incbin "baserom.dol", 0x334DCC, 0x4
+	.4byte 0x000000FF
 .global _esc__2_346_3
 _esc__2_346_3:
-	.incbin "baserom.dol", 0x334DD0, 0x8
+	.4byte 0x437F0000
+	.4byte 0x00000000
 .global _esc__2_350_5
 _esc__2_350_5:
-	.incbin "baserom.dol", 0x334DD8, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_394_0
 _esc__2_394_0:
-	.incbin "baserom.dol", 0x334DE0, 0x4
+	.4byte 0xBF000000
 .global _esc__2_395_0
 _esc__2_395_0:
-	.incbin "baserom.dol", 0x334DE4, 0x4
+	.4byte 0x3F000000
 .global _esc__2_523
 _esc__2_523:
-	.incbin "baserom.dol", 0x334DE8, 0x4
+	.4byte 0x00000000
 .global _esc__2_702
 _esc__2_702:
-	.incbin "baserom.dol", 0x334DEC, 0x4
+	.4byte 0xFFFFFFFF
 .global _esc__2_772
 _esc__2_772:
-	.incbin "baserom.dol", 0x334DF0, 0x4
+	.4byte 0x3F800000
 .global _esc__2_773
 _esc__2_773:
-	.incbin "baserom.dol", 0x334DF4, 0x4
+	.4byte 0x437FE666
 .global _esc__2_1097_0
 _esc__2_1097_0:
-	.incbin "baserom.dol", 0x334DF8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_325
 _esc__2_325:
-	.incbin "baserom.dol", 0x334E00, 0x4
+	.4byte 0x3F800000
 .global _esc__2_326
 _esc__2_326:
-	.incbin "baserom.dol", 0x334E04, 0x4
+	.4byte 0x00000000
 .global _esc__2_493
 _esc__2_493:
-	.incbin "baserom.dol", 0x334E08, 0x4
+	.4byte 0xBF000000
 .global _esc__2_494
 _esc__2_494:
-	.incbin "baserom.dol", 0x334E0C, 0x4
+	.4byte 0x3F000000
 .global _esc__2_274_0
 _esc__2_274_0:
-	.incbin "baserom.dol", 0x334E10, 0x4
+	.4byte 0x04060507
 .global lbl_803D8454
 lbl_803D8454:
-	.incbin "baserom.dol", 0x334E14, 0x4
+	.4byte 0x00000000
 .global _esc__2_275_0
 _esc__2_275_0:
-	.incbin "baserom.dol", 0x334E18, 0x4
+	.4byte 0x01010202
 .global lbl_803D845C
 lbl_803D845C:
-	.incbin "baserom.dol", 0x334E1C, 0x4
+	.4byte 0x04000000
 .global _esc__2_276_1
 _esc__2_276_1:
-	.incbin "baserom.dol", 0x334E20, 0x4
+	.4byte 0x0006000E
 .global lbl_803D8464
 lbl_803D8464:
-	.incbin "baserom.dol", 0x334E24, 0x4
+	.4byte 0x00000000
 .global _esc__2_881_1
 _esc__2_881_1:
-	.incbin "baserom.dol", 0x334E28, 0x8
+	.4byte 0x7F7FFFFF
+	.4byte 0x00000000
 .global _esc__2_883_3
 _esc__2_883_3:
-	.incbin "baserom.dol", 0x334E30, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .section .text, "ax"
 

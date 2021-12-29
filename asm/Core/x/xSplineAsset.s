@@ -34,43 +34,46 @@ lbl_803D8914:
 
 .global _esc__2_666
 _esc__2_666:
-	.incbin "baserom.dol", 0x32F5F0, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_668
 _esc__2_668:
-	.incbin "baserom.dol", 0x32F5F8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_677_1
 _esc__2_677_1:
-	.incbin "baserom.dol", 0x32F600, 0x4
+	.4byte 0x3F000000
 .global _esc__2_679_0
 _esc__2_679_0:
-	.incbin "baserom.dol", 0x32F604, 0x4
+	.4byte 0x3F800000
 .global _esc__2_956
 _esc__2_956:
-	.incbin "baserom.dol", 0x32F608, 0x4
+	.4byte 0x7E167699
 .global _esc__2_957
 _esc__2_957:
-	.incbin "baserom.dol", 0x32F60C, 0x4
+	.4byte 0x7E967699
 .global _esc__2_958
 _esc__2_958:
-	.incbin "baserom.dol", 0x32F610, 0x4
+	.4byte 0x40A00000
 .global _esc__2_959
 _esc__2_959:
-	.incbin "baserom.dol", 0x32F614, 0x4
+	.4byte 0x3C23D70A
 .global _esc__2_960
 _esc__2_960:
-	.incbin "baserom.dol", 0x32F618, 0x4
+	.4byte 0x3C80ACA2
 .global _esc__2_961_0
 _esc__2_961_0:
-	.incbin "baserom.dol", 0x32F61C, 0x4
+	.4byte 0x3E800000
 .global _esc__2_962
 _esc__2_962:
-	.incbin "baserom.dol", 0x32F620, 0x4
+	.4byte 0x3D4CCCCD
 .global _esc__2_1047
 _esc__2_1047:
-	.incbin "baserom.dol", 0x32F624, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_1070_0
 _esc__2_1070_0:
-	.incbin "baserom.dol", 0x32F628, 0x8
+	.4byte 0x2EDBE6FE
+	.4byte 0x00000000
 
 .if 0
 

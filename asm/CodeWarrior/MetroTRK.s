@@ -64,229 +64,765 @@ gRecvCB_0:
 
 .global _esc__2_128
 _esc__2_128:
-	.incbin "baserom.dol", 0x32AE50, 0x70
+	.4byte 0x802C2DF4
+	.4byte 0x802C2D18
+	.4byte 0x802C2D28
+	.4byte 0x802C2D38
+	.4byte 0x802C2D58
+	.4byte 0x802C2D68
+	.4byte 0x802C2DF4
+	.4byte 0x802C2D48
+	.4byte 0x802C2DF4
+	.4byte 0x802C2DF4
+	.4byte 0x802C2DF4
+	.4byte 0x802C2DF4
+	.4byte 0x802C2DF4
+	.4byte 0x802C2DF4
+	.4byte 0x802C2DF4
+	.4byte 0x802C2DF4
+	.4byte 0x802C2D78
+	.4byte 0x802C2D88
+	.4byte 0x802C2D98
+	.4byte 0x802C2DA8
+	.4byte 0x802C2DF4
+	.4byte 0x802C2DF4
+	.4byte 0x802C2DF4
+	.4byte 0x802C2DE8
+	.4byte 0x802C2DB8
+	.4byte 0x802C2DC8
+	.4byte 0x802C2DD8
+	.4byte 0x00000000
 .global _esc__2_499
 _esc__2_499:
-	.incbin "baserom.dol", 0x32AEC0, 0x1C
+	.4byte 0x802C3954
+	.4byte 0x802C3974
+	.4byte 0x802C394C
+	.4byte 0x802C3974
+	.4byte 0x802C395C
+	.4byte 0x802C3964
+	.4byte 0x802C396C
 .global _esc__2_536
 _esc__2_536:
-	.incbin "baserom.dol", 0x32AEDC, 0x1C
+	.4byte 0x802C3B98
+	.4byte 0x802C3BB8
+	.4byte 0x802C3B90
+	.4byte 0x802C3BB8
+	.4byte 0x802C3BA0
+	.4byte 0x802C3BA8
+	.4byte 0x802C3BB0
 .global gTRKRestoreFlags
 gTRKRestoreFlags:
-	.incbin "baserom.dol", 0x32AEF8, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global gTRKExceptionStatus
 gTRKExceptionStatus:
-	.incbin "baserom.dol", 0x32AF04, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x01000000
 .global gTRKStepStatus
 gTRKStepStatus:
-	.incbin "baserom.dol", 0x32AF14, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global TRK_ISR_OFFSETS
 TRK_ISR_OFFSETS:
-	.incbin "baserom.dol", 0x32AF28, 0x40
+	.4byte 0x00000100
+	.4byte 0x00000200
+	.4byte 0x00000300
+	.4byte 0x00000400
+	.4byte 0x00000500
+	.4byte 0x00000600
+	.4byte 0x00000700
+	.4byte 0x00000800
+	.4byte 0x00000900
+	.4byte 0x00000C00
+	.4byte 0x00000D00
+	.4byte 0x00000F00
+	.4byte 0x00001300
+	.4byte 0x00001400
+	.4byte 0x00001700
+	.4byte 0x00000000
 .global gDBCommTable
 gDBCommTable:
-	.incbin "baserom.dol", 0x32AF68, 0x28
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .rodata
 
 .global _esc__2_133
 _esc__2_133:
-	.incbin "baserom.dol", 0x2ED898, 0x1C
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x20666F72
+	.4byte 0x2047414D
+	.4byte 0x45435542
+	.4byte 0x45207632
+	.4byte 0x2E360000
 .global _esc__2_154
 _esc__2_154:
-	.incbin "baserom.dol", 0x2ED8B4, 0x14
+	.4byte 0x496E6974
+	.4byte 0x69616C69
+	.4byte 0x7A65204E
+	.4byte 0x55420A00
+	.4byte 0x00000000
 .global _esc__2_98
 _esc__2_98:
-	.incbin "baserom.dol", 0x2ED8C8, 0x28
+	.4byte 0x4D657373
+	.4byte 0x61676553
+	.4byte 0x656E6420
+	.4byte 0x3A206363
+	.4byte 0x5F777269
+	.4byte 0x74652072
+	.4byte 0x65747572
+	.4byte 0x6E656420
+	.4byte 0x256C640A
+	.4byte 0x00000000
 .global _esc__2_618
 _esc__2_618:
-	.incbin "baserom.dol", 0x2ED8F0, 0x20
+	.4byte 0x4552524F
+	.4byte 0x52203A20
+	.4byte 0x4E6F2062
+	.4byte 0x75666665
+	.4byte 0x72206176
+	.4byte 0x61696C61
+	.4byte 0x626C650A
+	.4byte 0x00000000
 .global _esc__2_121
 _esc__2_121:
-	.incbin "baserom.dol", 0x2ED910, 0x24
+	.4byte 0x54524B5F
+	.4byte 0x5061636B
+	.4byte 0x65745F48
+	.4byte 0x65616465
+	.4byte 0x72200920
+	.4byte 0x20202025
+	.4byte 0x6C642062
+	.4byte 0x79746573
+	.4byte 0x0A000000
 .global _esc__2_122
 _esc__2_122:
-	.incbin "baserom.dol", 0x2ED934, 0x24
+	.4byte 0x54524B5F
+	.4byte 0x434D445F
+	.4byte 0x52656164
+	.4byte 0x4D656D6F
+	.4byte 0x72792020
+	.4byte 0x20202025
+	.4byte 0x6C642062
+	.4byte 0x79746573
+	.4byte 0x0A000000
 .global _esc__2_123
 _esc__2_123:
-	.incbin "baserom.dol", 0x2ED958, 0x24
+	.4byte 0x54524B5F
+	.4byte 0x434D445F
+	.4byte 0x57726974
+	.4byte 0x654D656D
+	.4byte 0x6F727920
+	.4byte 0x20202025
+	.4byte 0x6C642062
+	.4byte 0x79746573
+	.4byte 0x0A000000
 .global _esc__2_124
 _esc__2_124:
-	.incbin "baserom.dol", 0x2ED97C, 0x20
+	.4byte 0x54524B5F
+	.4byte 0x434D445F
+	.4byte 0x436F6E6E
+	.4byte 0x65637420
+	.4byte 0x09202020
+	.4byte 0x20256C64
+	.4byte 0x20627974
+	.4byte 0x65730A00
 .global _esc__2_125
 _esc__2_125:
-	.incbin "baserom.dol", 0x2ED99C, 0x20
+	.4byte 0x54524B5F
+	.4byte 0x434D445F
+	.4byte 0x5265706C
+	.4byte 0x7941636B
+	.4byte 0x09202020
+	.4byte 0x20256C64
+	.4byte 0x20627974
+	.4byte 0x65730A00
 .global _esc__2_126
 _esc__2_126:
-	.incbin "baserom.dol", 0x2ED9BC, 0x24
+	.4byte 0x54524B5F
+	.4byte 0x434D445F
+	.4byte 0x52656164
+	.4byte 0x52656769
+	.4byte 0x73746572
+	.4byte 0x7309256C
+	.4byte 0x64206279
+	.4byte 0x7465730A
+	.4byte 0x00000000
 .global _esc__2_146
 _esc__2_146:
-	.incbin "baserom.dol", 0x2ED9E0, 0x24
+	.4byte 0x54657374
+	.4byte 0x466F7250
+	.4byte 0x61636B65
+	.4byte 0x74203A20
+	.4byte 0x46726565
+	.4byte 0x42756666
+	.4byte 0x65722069
+	.4byte 0x73202025
+	.4byte 0x6C640A00
 .global _esc__2_147
 _esc__2_147:
-	.incbin "baserom.dol", 0x2EDA04, 0x1C
+	.4byte 0x52656164
+	.4byte 0x696E6720
+	.4byte 0x7061796C
+	.4byte 0x6F616420
+	.4byte 0x256C6420
+	.4byte 0x62797465
+	.4byte 0x730A0000
 .global _esc__2_148
 _esc__2_148:
-	.incbin "baserom.dol", 0x2EDA20, 0x34
+	.4byte 0x54657374
+	.4byte 0x466F7250
+	.4byte 0x61636B65
+	.4byte 0x74203A20
+	.4byte 0x496E7661
+	.4byte 0x6C696420
+	.4byte 0x73697A65
+	.4byte 0x206F6620
+	.4byte 0x7061636B
+	.4byte 0x65742068
+	.4byte 0x64722E73
+	.4byte 0x697A650A
+	.4byte 0x00000000
 .global _esc__2_149
 _esc__2_149:
-	.incbin "baserom.dol", 0x2EDA54, 0x28
+	.4byte 0x54657374
+	.4byte 0x466F7250
+	.4byte 0x61636B65
+	.4byte 0x74203A20
+	.4byte 0x496E7661
+	.4byte 0x6C696420
+	.4byte 0x73697A65
+	.4byte 0x206F6620
+	.4byte 0x7061636B
+	.4byte 0x65740A00
 .global _esc__2_150
 _esc__2_150:
-	.incbin "baserom.dol", 0x2EDA7C, 0x24
+	.4byte 0x54657374
+	.4byte 0x466F7250
+	.4byte 0x61636B65
+	.4byte 0x74207265
+	.4byte 0x7475726E
+	.4byte 0x696E6720
+	.4byte 0x256C640A
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_126_0
 _esc__2_126_0:
-	.incbin "baserom.dol", 0x2EDAA0, 0x1C
+	.4byte 0x44697370
+	.4byte 0x61746368
+	.4byte 0x20636F6D
+	.4byte 0x6D616E64
+	.4byte 0x20307825
+	.4byte 0x3038780A
+	.4byte 0x00000000
 .global _esc__2_127
 _esc__2_127:
-	.incbin "baserom.dol", 0x2EDABC, 0x24
+	.4byte 0x44697370
+	.4byte 0x61746368
+	.4byte 0x20636F6D
+	.4byte 0x706C6574
+	.4byte 0x65206572
+	.4byte 0x72203D20
+	.4byte 0x256C640A
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_321
 _esc__2_321:
-	.incbin "baserom.dol", 0x2EDAE0, 0x20
+	.4byte 0x0A4D6574
+	.4byte 0x726F5452
+	.4byte 0x4B204F70
+	.4byte 0x74696F6E
+	.4byte 0x203A2053
+	.4byte 0x65726961
+	.4byte 0x6C494F20
+	.4byte 0x2D200000
 .global _esc__2_322
 _esc__2_322:
-	.incbin "baserom.dol", 0x2EDB00, 0x8
+	.4byte 0x456E6162
+	.4byte 0x6C650A00
 .global _esc__2_323
 _esc__2_323:
-	.incbin "baserom.dol", 0x2EDB08, 0xC
+	.4byte 0x44697361
+	.4byte 0x626C650A
+	.4byte 0x00000000
 .global _esc__2_370
 _esc__2_370:
-	.incbin "baserom.dol", 0x2EDB14, 0xC
+	.4byte 0x446F436F
+	.4byte 0x6E74696E
+	.4byte 0x75650A00
 .global _esc__2_402
 _esc__2_402:
-	.incbin "baserom.dol", 0x2EDB20, 0x20
+	.4byte 0x446F466C
+	.4byte 0x75736843
+	.4byte 0x61636865
+	.4byte 0x20756E69
+	.4byte 0x6D706C65
+	.4byte 0x6D656E74
+	.4byte 0x65642121
+	.4byte 0x210A0000
 .global _esc__2_403
 _esc__2_403:
-	.incbin "baserom.dol", 0x2EDB40, 0x20
+	.4byte 0x53656E64
+	.4byte 0x41434B20
+	.4byte 0x3A204361
+	.4byte 0x6C6C696E
+	.4byte 0x67204D65
+	.4byte 0x73736167
+	.4byte 0x6553656E
+	.4byte 0x640A0000
 .global _esc__2_404
 _esc__2_404:
-	.incbin "baserom.dol", 0x2EDB60, 0x18
+	.4byte 0x4D657373
+	.4byte 0x61676553
+	.4byte 0x656E6420
+	.4byte 0x65727220
+	.4byte 0x3A20256C
+	.4byte 0x640A0000
 .global _esc__2_462
 _esc__2_462:
-	.incbin "baserom.dol", 0x2EDB78, 0x28
+	.4byte 0x446F5265
+	.4byte 0x61645265
+	.4byte 0x67697374
+	.4byte 0x65727320
+	.4byte 0x3A204275
+	.4byte 0x66666572
+	.4byte 0x206C656E
+	.4byte 0x67746820
+	.4byte 0x30782530
+	.4byte 0x38780A00
 .global _esc__2_463_0
 _esc__2_463_0:
-	.incbin "baserom.dol", 0x2EDBA0, 0x38
+	.4byte 0x446F5265
+	.4byte 0x61645265
+	.4byte 0x67697374
+	.4byte 0x65727320
+	.4byte 0x3A204572
+	.4byte 0x726F7220
+	.4byte 0x72656164
+	.4byte 0x696E6720
+	.4byte 0x20646566
+	.4byte 0x61756C74
+	.4byte 0x20726567
+	.4byte 0x73203078
+	.4byte 0x25303878
+	.4byte 0x0A000000
 .global _esc__2_464
 _esc__2_464:
-	.incbin "baserom.dol", 0x2EDBD8, 0x28
+	.4byte 0x446F5265
+	.4byte 0x61645265
+	.4byte 0x67697374
+	.4byte 0x65727320
+	.4byte 0x3A204572
+	.4byte 0x726F7220
+	.4byte 0x46502072
+	.4byte 0x65677320
+	.4byte 0x30782530
+	.4byte 0x38780A00
 .global _esc__2_465
 _esc__2_465:
-	.incbin "baserom.dol", 0x2EDC00, 0x30
+	.4byte 0x446F5265
+	.4byte 0x61645265
+	.4byte 0x67697374
+	.4byte 0x65727320
+	.4byte 0x3A204572
+	.4byte 0x726F7220
+	.4byte 0x65787465
+	.4byte 0x6E646564
+	.4byte 0x31207265
+	.4byte 0x67732030
+	.4byte 0x78253038
+	.4byte 0x780A0000
 .global _esc__2_466
 _esc__2_466:
-	.incbin "baserom.dol", 0x2EDC30, 0x30
+	.4byte 0x446F5265
+	.4byte 0x61645265
+	.4byte 0x67697374
+	.4byte 0x65727320
+	.4byte 0x3A204572
+	.4byte 0x726F7220
+	.4byte 0x65787465
+	.4byte 0x6E646564
+	.4byte 0x32207265
+	.4byte 0x67732030
+	.4byte 0x78253038
+	.4byte 0x780A0000
 .global _esc__2_498
 _esc__2_498:
-	.incbin "baserom.dol", 0x2EDC60, 0x30
+	.4byte 0x57726974
+	.4byte 0x654D656D
+	.4byte 0x6F727920
+	.4byte 0x28307825
+	.4byte 0x30327829
+	.4byte 0x203A2030
+	.4byte 0x78253038
+	.4byte 0x78203078
+	.4byte 0x25303878
+	.4byte 0x20307825
+	.4byte 0x3038780A
+	.4byte 0x00000000
 .global _esc__2_535
 _esc__2_535:
-	.incbin "baserom.dol", 0x2EDC90, 0x2C
+	.4byte 0x52656164
+	.4byte 0x4D656D6F
+	.4byte 0x72792028
+	.4byte 0x30782530
+	.4byte 0x32782920
+	.4byte 0x3A203078
+	.4byte 0x25303878
+	.4byte 0x20307825
+	.4byte 0x30387820
+	.4byte 0x30782530
+	.4byte 0x38780A00
 .global _esc__2_573
 _esc__2_573:
-	.incbin "baserom.dol", 0x2EDCBC, 0x8
+	.4byte 0x25303278
+	.4byte 0x20000000
 .global _esc__2_574
 _esc__2_574:
-	.incbin "baserom.dol", 0x2EDCC4, 0x4
+	.4byte 0x0A000000
 .global _esc__2_274
 _esc__2_274:
-	.incbin "baserom.dol", 0x2EDCC8, 0x18
+	.4byte 0x43616C6C
+	.4byte 0x696E6720
+	.4byte 0x4D657373
+	.4byte 0x61676553
+	.4byte 0x656E640A
+	.4byte 0x00000000
 .global _esc__2_275
 _esc__2_275:
-	.incbin "baserom.dol", 0x2EDCE0, 0x28
+	.4byte 0x6D73675F
+	.4byte 0x636F6D6D
+	.4byte 0x616E6420
+	.4byte 0x3A203078
+	.4byte 0x25303278
+	.4byte 0x20686472
+	.4byte 0x2D3E636D
+	.4byte 0x64494420
+	.4byte 0x30782530
+	.4byte 0x32780A00
 .global _esc__2_276
 _esc__2_276:
-	.incbin "baserom.dol", 0x2EDD08, 0x14
+	.4byte 0x6D73675F
+	.4byte 0x6572726F
+	.4byte 0x72203A20
+	.4byte 0x30782530
+	.4byte 0x32780A00
 .global _esc__2_277
 _esc__2_277:
-	.incbin "baserom.dol", 0x2EDD1C, 0x54
+	.4byte 0x52657175
+	.4byte 0x65737453
+	.4byte 0x656E6420
+	.4byte 0x3A204261
+	.4byte 0x64206163
+	.4byte 0x6B206F72
+	.4byte 0x206E6F6E
+	.4byte 0x2061636B
+	.4byte 0x20726563
+	.4byte 0x65697665
+	.4byte 0x64206D73
+	.4byte 0x675F636F
+	.4byte 0x6D6D616E
+	.4byte 0x64203A20
+	.4byte 0x30782530
+	.4byte 0x3278206D
+	.4byte 0x73675F65
+	.4byte 0x72726F72
+	.4byte 0x20307825
+	.4byte 0x3032780A
+	.4byte 0x00000000
 .global gTRKMemMap
 gTRKMemMap:
-	.incbin "baserom.dol", 0x2EDD70, 0x10
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000001
+	.4byte 0x00000001
 .global _esc__2_276_0
 _esc__2_276_0:
-	.incbin "baserom.dol", 0x2EDD80, 0x28
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
 .global _esc__2_283_0
 _esc__2_283_0:
-	.incbin "baserom.dol", 0x2EDDA8, 0x28
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
 .global _esc__2_290_0
 _esc__2_290_0:
-	.incbin "baserom.dol", 0x2EDDD0, 0x28
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
 .global _esc__2_422
 _esc__2_422:
-	.incbin "baserom.dol", 0x2EDDF8, 0x10
+	.4byte 0x54617267
+	.4byte 0x6574446F
+	.4byte 0x53746570
+	.4byte 0x28290A00
 .global _esc__2_80
 _esc__2_80:
-	.incbin "baserom.dol", 0x2EDE08, 0x10
+	.4byte 0x54524B5F
+	.4byte 0x4D61696E
+	.4byte 0x200A0000
+	.4byte 0x00000000
 .global EndofProgramInstruction_esc__7_162
 EndofProgramInstruction_esc__7_162:
-	.incbin "baserom.dol", 0x2EDE18, 0x4
+	.4byte 0x00454E44
 .global _esc__2_165
 _esc__2_165:
-	.incbin "baserom.dol", 0x2EDE1C, 0x4
+	.4byte 0x25730A00
 .global _esc__2_215
 _esc__2_215:
-	.incbin "baserom.dol", 0x2EDE20, 0x18
+	.4byte 0x4465766B
+	.4byte 0x69742073
+	.4byte 0x65742074
+	.4byte 0x6F203A20
+	.4byte 0x256C640A
+	.4byte 0x00000000
 .global _esc__2_216
 _esc__2_216:
-	.incbin "baserom.dol", 0x2EDE38, 0x18
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x203A2053
+	.4byte 0x65742074
+	.4byte 0x6F204242
+	.4byte 0x410A0000
 .global _esc__2_217
 _esc__2_217:
-	.incbin "baserom.dol", 0x2EDE50, 0x24
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x203A2053
+	.4byte 0x65742074
+	.4byte 0x6F204744
+	.4byte 0x45562068
+	.4byte 0x61726477
+	.4byte 0x6172650A
+	.4byte 0x00000000
 .global _esc__2_218
 _esc__2_218:
-	.incbin "baserom.dol", 0x2EDE74, 0x24
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x203A2053
+	.4byte 0x65742074
+	.4byte 0x6F20414D
+	.4byte 0x43204444
+	.4byte 0x48206861
+	.4byte 0x72647761
+	.4byte 0x72650A00
 .global _esc__2_219
 _esc__2_219:
-	.incbin "baserom.dol", 0x2EDE98, 0x2C
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x203A2053
+	.4byte 0x65742074
+	.4byte 0x6F20554E
+	.4byte 0x4B4E4F57
+	.4byte 0x4E206861
+	.4byte 0x72647761
+	.4byte 0x72652E20
+	.4byte 0x28256C64
+	.4byte 0x290A0000
 .global _esc__2_220
 _esc__2_220:
-	.incbin "baserom.dol", 0x2EDEC4, 0x30
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x203A2049
+	.4byte 0x6E76616C
+	.4byte 0x69642068
+	.4byte 0x61726477
+	.4byte 0x61726520
+	.4byte 0x49442070
+	.4byte 0x61737365
+	.4byte 0x64206672
+	.4byte 0x6F6D204F
+	.4byte 0x530A0000
 .global _esc__2_221
 _esc__2_221:
-	.incbin "baserom.dol", 0x2EDEF4, 0x2C
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x203A2044
+	.4byte 0x65666175
+	.4byte 0x6C74696E
+	.4byte 0x6720746F
+	.4byte 0x20474445
+	.4byte 0x56204861
+	.4byte 0x72647761
+	.4byte 0x72650A00
+	.4byte 0x00000000
 .global _esc__2_318
 _esc__2_318:
-	.incbin "baserom.dol", 0x2EDF20, 0x14
+	.4byte 0x6363206E
+	.4byte 0x6F742069
+	.4byte 0x6E697469
+	.4byte 0x616C697A
+	.4byte 0x65640A00
 .global _esc__2_319
 _esc__2_319:
-	.incbin "baserom.dol", 0x2EDF34, 0x2C
+	.4byte 0x63635F77
+	.4byte 0x72697465
+	.4byte 0x203A204F
+	.4byte 0x75747075
+	.4byte 0x74206461
+	.4byte 0x74612030
+	.4byte 0x78253038
+	.4byte 0x7820256C
+	.4byte 0x64206279
+	.4byte 0x7465730A
+	.4byte 0x00000000
 .global _esc__2_320
 _esc__2_320:
-	.incbin "baserom.dol", 0x2EDF60, 0x1C
+	.4byte 0x63635F77
+	.4byte 0x72697465
+	.4byte 0x2073656E
+	.4byte 0x64696E67
+	.4byte 0x20256C64
+	.4byte 0x20627974
+	.4byte 0x65730A00
 .global _esc__2_342
 _esc__2_342:
-	.incbin "baserom.dol", 0x2EDF7C, 0x28
+	.4byte 0x45787065
+	.4byte 0x63746564
+	.4byte 0x20706163
+	.4byte 0x6B657420
+	.4byte 0x73697A65
+	.4byte 0x203A2030
+	.4byte 0x78253038
+	.4byte 0x78202825
+	.4byte 0x6C64290A
+	.4byte 0x00000000
 .global _esc__2_343
 _esc__2_343:
-	.incbin "baserom.dol", 0x2EDFA4, 0x30
+	.4byte 0x63635F72
+	.4byte 0x65616420
+	.4byte 0x3A206572
+	.4byte 0x726F7220
+	.4byte 0x72656164
+	.4byte 0x696E6720
+	.4byte 0x62797465
+	.4byte 0x73206672
+	.4byte 0x6F6D2045
+	.4byte 0x58493220
+	.4byte 0x256C640A
+	.4byte 0x00000000
 .global _esc__2_349_0
 _esc__2_349_0:
-	.incbin "baserom.dol", 0x2EDFD4, 0x14
+	.4byte 0x43414C4C
+	.4byte 0x494E4720
+	.4byte 0x45584932
+	.4byte 0x5F496E69
+	.4byte 0x740A0000
 .global _esc__2_350_0
 _esc__2_350_0:
-	.incbin "baserom.dol", 0x2EDFE8, 0x18
+	.4byte 0x444F4E45
+	.4byte 0x2043414C
+	.4byte 0x4C494E47
+	.4byte 0x20455849
+	.4byte 0x325F496E
+	.4byte 0x69740A00
 .global _esc__2_318_0
 _esc__2_318_0:
-	.incbin "baserom.dol", 0x2EE000, 0x14
+	.4byte 0x6363206E
+	.4byte 0x6F742069
+	.4byte 0x6E697469
+	.4byte 0x616C697A
+	.4byte 0x65640A00
 .global _esc__2_319_0
 _esc__2_319_0:
-	.incbin "baserom.dol", 0x2EE014, 0x2C
+	.4byte 0x63635F77
+	.4byte 0x72697465
+	.4byte 0x203A204F
+	.4byte 0x75747075
+	.4byte 0x74206461
+	.4byte 0x74612030
+	.4byte 0x78253038
+	.4byte 0x7820256C
+	.4byte 0x64206279
+	.4byte 0x7465730A
+	.4byte 0x00000000
 .global _esc__2_320_0
 _esc__2_320_0:
-	.incbin "baserom.dol", 0x2EE040, 0x1C
+	.4byte 0x63635F77
+	.4byte 0x72697465
+	.4byte 0x2073656E
+	.4byte 0x64696E67
+	.4byte 0x20256C64
+	.4byte 0x20627974
+	.4byte 0x65730A00
 .global _esc__2_341
 _esc__2_341:
-	.incbin "baserom.dol", 0x2EE05C, 0x28
+	.4byte 0x45787065
+	.4byte 0x63746564
+	.4byte 0x20706163
+	.4byte 0x6B657420
+	.4byte 0x73697A65
+	.4byte 0x203A2030
+	.4byte 0x78253038
+	.4byte 0x78202825
+	.4byte 0x6C64290A
+	.4byte 0x00000000
 .global _esc__2_342_0
 _esc__2_342_0:
-	.incbin "baserom.dol", 0x2EE084, 0x30
+	.4byte 0x63635F72
+	.4byte 0x65616420
+	.4byte 0x3A206572
+	.4byte 0x726F7220
+	.4byte 0x72656164
+	.4byte 0x696E6720
+	.4byte 0x62797465
+	.4byte 0x73206672
+	.4byte 0x6F6D2045
+	.4byte 0x58493220
+	.4byte 0x256C640A
+	.4byte 0x00000000
 .global _esc__2_348_0
 _esc__2_348_0:
-	.incbin "baserom.dol", 0x2EE0B4, 0x14
+	.4byte 0x43414C4C
+	.4byte 0x494E4720
+	.4byte 0x45584932
+	.4byte 0x5F496E69
+	.4byte 0x740A0000
 .global _esc__2_349_1
 _esc__2_349_1:
-	.incbin "baserom.dol", 0x2EE0C8, 0x18
+	.4byte 0x444F4E45
+	.4byte 0x2043414C
+	.4byte 0x4C494E47
+	.4byte 0x20455849
+	.4byte 0x325F496E
+	.4byte 0x69740A00
 
 .section .sbss
 

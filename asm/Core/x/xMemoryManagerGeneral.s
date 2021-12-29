@@ -6,7 +6,14 @@
 
 .global __vt__21xMemoryManagerGeneral
 __vt__21xMemoryManagerGeneral:
-	.incbin "baserom.dol", 0x32D8C0, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801CE308
+	.4byte 0x801CE5C8
+	.4byte 0x801CE6CC
+	.4byte 0x801CEBB8
+	.4byte 0x801CDED8
+	.4byte 0x00000000
 
 .if 0
 

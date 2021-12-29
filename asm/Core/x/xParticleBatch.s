@@ -46,7 +46,8 @@ _esc__2_1295:
 
 .global BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_
 BATCH_BLOCK_SIZE__28_esc__2_unnamed_esc__2_xParticleBatch_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D178, 0x8
+	.4byte 0x00000500
+	.4byte 0x00000000
 
 .if 0
 

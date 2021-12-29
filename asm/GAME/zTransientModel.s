@@ -10,25 +10,28 @@ module__29_esc__2_unnamed_esc__2_zTransientModel_cpp_esc__2_:
 
 .global _esc__2_829_1
 _esc__2_829_1:
-	.incbin "baserom.dol", 0x334028, 0x4
+	.4byte 0x00000000
 .global _esc__2_830_0
 _esc__2_830_0:
-	.incbin "baserom.dol", 0x33402C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1283_2
 _esc__2_1283_2:
-	.incbin "baserom.dol", 0x334030, 0x4
+	.4byte 0x2F800000
 .global _esc__2_1284_3
 _esc__2_1284_3:
-	.incbin "baserom.dol", 0x334034, 0x4
+	.4byte 0x7E967699
 .global _esc__2_1362_1
 _esc__2_1362_1:
-	.incbin "baserom.dol", 0x334038, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1435_1
 _esc__2_1435_1:
-	.incbin "baserom.dol", 0x334040, 0x8
+	.4byte 0x3B808081
+	.4byte 0x00000000
 .global _esc__2_1532_2
 _esc__2_1532_2:
-	.incbin "baserom.dol", 0x334048, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .if 0
 

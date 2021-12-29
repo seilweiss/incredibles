@@ -4,13 +4,35 @@
 
 .global __vt__7zUIText
 __vt__7zUIText:
-	.incbin "baserom.dol", 0x30D850, 0x58
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8016DB40
+	.4byte 0x8016840C
+	.4byte 0x8016DB64
+	.4byte 0x8016A130
+	.4byte 0x8016D360
+	.4byte 0x801686C0
+	.4byte 0x8016D3C0
+	.4byte 0x801687A0
+	.4byte 0x8016D918
+	.4byte 0x8016D624
+	.4byte 0x80168BD4
+	.4byte 0x80168EA4
+	.4byte 0x80169AE0
+	.4byte 0x8016D97C
+	.4byte 0x80169E38
+	.4byte 0x80169E98
+	.4byte 0x80169F90
+	.4byte 0x8016A02C
+	.4byte 0x80169EF8
+	.4byte 0x80169F48
 
 .section .rodata
 
 .global _esc__2_stringBase0_101
 _esc__2_stringBase0_101:
-	.incbin "baserom.dol", 0x2E2B48, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -28,34 +50,36 @@ VSCALE__21_esc__2_unnamed_esc__2_zUIText_cpp_esc__2_:
 
 .global _esc__2_1051_1
 _esc__2_1051_1:
-	.incbin "baserom.dol", 0x332228, 0x4
+	.4byte 0x00000000
 .global _esc__2_1052_0
 _esc__2_1052_0:
-	.incbin "baserom.dol", 0x33222C, 0x4
+	.4byte 0x3ACCCCCD
 .global _esc__2_1053_2
 _esc__2_1053_2:
-	.incbin "baserom.dol", 0x332230, 0x8
+	.4byte 0x3B088889
+	.4byte 0x00000000
 .global _esc__2_1057_2
 _esc__2_1057_2:
-	.incbin "baserom.dol", 0x332238, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1122_2
 _esc__2_1122_2:
-	.incbin "baserom.dol", 0x332240, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1123_0
 _esc__2_1123_0:
-	.incbin "baserom.dol", 0x332244, 0x4
+	.4byte 0x4CBEBC20
 .global _esc__2_1124
 _esc__2_1124:
-	.incbin "baserom.dol", 0x332248, 0x4
+	.4byte 0x3F733333
 .global _esc__2_1125_1
 _esc__2_1125_1:
-	.incbin "baserom.dol", 0x33224C, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1183_2
 _esc__2_1183_2:
-	.incbin "baserom.dol", 0x332250, 0x4
+	.4byte 0x3F99999A
 .global _esc__2_1184_2
 _esc__2_1184_2:
-	.incbin "baserom.dol", 0x332254, 0x4
+	.4byte 0x3F933333
 
 .if 0
 

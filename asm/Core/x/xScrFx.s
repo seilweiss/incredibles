@@ -22,7 +22,18 @@ sFlare:
 
 .global _esc__2_stringBase0_22
 _esc__2_stringBase0_22:
-	.incbin "baserom.dol", 0x2CF728, 0x30
+	.4byte 0x65666665
+	.4byte 0x63743A4C
+	.4byte 0x656E7320
+	.4byte 0x466C6172
+	.4byte 0x6520456C
+	.4byte 0x656D656E
+	.4byte 0x7400706F
+	.4byte 0x696E7465
+	.4byte 0x72006C6F
+	.4byte 0x63617469
+	.4byte 0x6F6E0000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -79,97 +90,119 @@ dumpFlares:
 
 .global sLetterBoxAlpha
 sLetterBoxAlpha:
-	.incbin "baserom.dol", 0x32B458, 0x4
+	.4byte 0xFF000000
 .global sFullScreenGlareDir
 sFullScreenGlareDir:
-	.incbin "baserom.dol", 0x32B45C, 0xC
+	.4byte 0xBE99999A
+	.4byte 0x3F800000
+	.4byte 0x3ECCCCCD
 .global sFullScreenGlareIntensity
 sFullScreenGlareIntensity:
-	.incbin "baserom.dol", 0x32B468, 0x4
+	.4byte 0x3F000000
 .global sFullScreenGlareColor
 sFullScreenGlareColor:
-	.incbin "baserom.dol", 0x32B46C, 0x4
+	.4byte 0xFFFFFF40
 .global sFullScreenGlareTextureID
 sFullScreenGlareTextureID:
-	.incbin "baserom.dol", 0x32B470, 0x4
+	.4byte 0x9F681A2B
 .global indices_esc__7_1568
 indices_esc__7_1568:
-	.incbin "baserom.dol", 0x32B474, 0x8
+	.4byte 0x00000002
+	.4byte 0x00010003
 .global sCameraFXTable
 sCameraFXTable:
-	.incbin "baserom.dol", 0x32B47C, 0x24
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000001
+	.4byte 0x8005DD98
+	.4byte 0x00000000
+	.4byte 0x00000002
+	.4byte 0x8005E064
+	.4byte 0x00000000
 .global sDefaultLensFlareParams
 sDefaultLensFlareParams:
-	.incbin "baserom.dol", 0x32B4A0, 0x10
+	.4byte 0x42200000
+	.4byte 0x42A00000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global sLensFlareParams
 sLensFlareParams:
-	.incbin "baserom.dol", 0x32B4B0, 0x8
+	.4byte 0x803CB960
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1020_1
 _esc__2_1020_1:
-	.incbin "baserom.dol", 0x32F3D0, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1021_2
 _esc__2_1021_2:
-	.incbin "baserom.dol", 0x32F3D4, 0x4
+	.4byte 0x00000000
 .global _esc__2_1043_1
 _esc__2_1043_1:
-	.incbin "baserom.dol", 0x32F3D8, 0x8
+	.4byte 0x40000000
+	.4byte 0x00000000
 .global _esc__2_1093
 _esc__2_1093:
-	.incbin "baserom.dol", 0x32F3E0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1098
 _esc__2_1098:
-	.incbin "baserom.dol", 0x32F3E8, 0x4
+	.4byte 0x00000001
 .global lbl_803D2A2C
 lbl_803D2A2C:
-	.incbin "baserom.dol", 0x32F3EC, 0x4
+	.4byte 0x00020003
 .global _esc__2_1132_0
 _esc__2_1132_0:
-	.incbin "baserom.dol", 0x32F3F0, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1203_0
 _esc__2_1203_0:
-	.incbin "baserom.dol", 0x32F3F8, 0x4
+	.4byte 0x43F00000
 .global _esc__2_1247
 _esc__2_1247:
-	.incbin "baserom.dol", 0x32F3FC, 0x4
+	.4byte 0x42C80000
 .global _esc__2_1268
 _esc__2_1268:
-	.incbin "baserom.dol", 0x32F400, 0x4
+	.4byte 0x3F59999A
 .global _esc__2_1269
 _esc__2_1269:
-	.incbin "baserom.dol", 0x32F404, 0x4
+	.4byte 0x3F666666
 .global _esc__2_1384
 _esc__2_1384:
-	.incbin "baserom.dol", 0x32F408, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1385
 _esc__2_1385:
-	.incbin "baserom.dol", 0x32F40C, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1726
 _esc__2_1726:
-	.incbin "baserom.dol", 0x32F410, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1727
 _esc__2_1727:
-	.incbin "baserom.dol", 0x32F414, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_1728
 _esc__2_1728:
-	.incbin "baserom.dol", 0x32F418, 0x4
+	.4byte 0x3F22F983
 .global _esc__2_1956
 _esc__2_1956:
-	.incbin "baserom.dol", 0x32F41C, 0x4
+	.4byte 0x00000001
 .global lbl_803D2A60
 lbl_803D2A60:
-	.incbin "baserom.dol", 0x32F420, 0x4
+	.4byte 0x00030002
 .global _esc__2_1957
 _esc__2_1957:
-	.incbin "baserom.dol", 0x32F424, 0x14
+	.4byte 0x00040000
+	.4byte 0x00010002
+	.4byte 0x00050008
+	.4byte 0x00070006
+	.4byte 0x00030000
 .global _esc__2_2561
 _esc__2_2561:
-	.incbin "baserom.dol", 0x32F438, 0x4
+	.4byte 0x43340000
 .global _esc__2_2562
 _esc__2_2562:
-	.incbin "baserom.dol", 0x32F43C, 0x4
+	.4byte 0x3FA00000
 
 .if 0
 

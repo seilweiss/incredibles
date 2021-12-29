@@ -4,7 +4,10 @@
 
 .global _esc__2_stringBase0_98
 _esc__2_stringBase0_98:
-	.incbin "baserom.dol", 0x2E2AE0, 0x10
+	.4byte 0x2E646666
+	.4byte 0x005F6465
+	.4byte 0x73747275
+	.4byte 0x63740000
 
 .section .sbss
 
@@ -19,43 +22,45 @@ first_train_car__9zTrainCar:
 
 .global spark_particle_batch_id__9zTrainCar
 spark_particle_batch_id__9zTrainCar:
-	.incbin "baserom.dol", 0x32D078, 0x8
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1053_1
 _esc__2_1053_1:
-	.incbin "baserom.dol", 0x3320B0, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1054_3
 _esc__2_1054_3:
-	.incbin "baserom.dol", 0x3320B4, 0x4
+	.4byte 0x358637BD
 .global _esc__2_1062_3
 _esc__2_1062_3:
-	.incbin "baserom.dol", 0x3320B8, 0x4
+	.4byte 0x00000000
 .global _esc__2_1096
 _esc__2_1096:
-	.incbin "baserom.dol", 0x3320BC, 0x4
+	.4byte 0x41200000
 .global _esc__2_1112
 _esc__2_1112:
-	.incbin "baserom.dol", 0x3320C0, 0x4
+	.4byte 0x40000000
 .global _esc__2_1113_1
 _esc__2_1113_1:
-	.incbin "baserom.dol", 0x3320C4, 0x4
+	.4byte 0x40800000
 .global _esc__2_1311
 _esc__2_1311:
-	.incbin "baserom.dol", 0x3320C8, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_1415_0
 _esc__2_1415_0:
-	.incbin "baserom.dol", 0x3320CC, 0x4
+	.4byte 0x43C80000
 .global _esc__2_1416_1
 _esc__2_1416_1:
-	.incbin "baserom.dol", 0x3320D0, 0x4
+	.4byte 0x461C4000
 .global _esc__2_1465_1
 _esc__2_1465_1:
-	.incbin "baserom.dol", 0x3320D4, 0x4
+	.4byte 0x447A0000
 .global _esc__2_1496_1
 _esc__2_1496_1:
-	.incbin "baserom.dol", 0x3320D8, 0x8
+	.4byte 0x3C23D70A
+	.4byte 0x00000000
 
 .if 0
 

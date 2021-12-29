@@ -16,10 +16,12 @@ EffectIndex:
 
 .global FxFrameArray
 FxFrameArray:
-	.incbin "baserom.dol", 0x32DAF0, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global EffectOpenFunctions
 EffectOpenFunctions:
-	.incbin "baserom.dol", 0x32DAF8, 0x8
+	.4byte 0x801D8064
+	.4byte 0x00000000
 
 .if 0
 

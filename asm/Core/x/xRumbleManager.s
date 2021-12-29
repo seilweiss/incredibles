@@ -12,7 +12,10 @@ rumbleManager_esc__7_1174:
 
 .global _esc__2_stringBase0_19
 _esc__2_stringBase0_19:
-	.incbin "baserom.dol", 0x2CF3A8, 0x10
+	.4byte 0x56696272
+	.4byte 0x6174696F
+	.4byte 0x6E536574
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -24,22 +27,22 @@ init_esc__7_1175:
 
 .global _esc__2_988
 _esc__2_988:
-	.incbin "baserom.dol", 0x32F2F0, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_989_0
 _esc__2_989_0:
-	.incbin "baserom.dol", 0x32F2F4, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_990_0
 _esc__2_990_0:
-	.incbin "baserom.dol", 0x32F2F8, 0x4
+	.4byte 0x41A00000
 .global _esc__2_991
 _esc__2_991:
-	.incbin "baserom.dol", 0x32F2FC, 0x4
+	.4byte 0x00000000
 .global _esc__2_996_1
 _esc__2_996_1:
-	.incbin "baserom.dol", 0x32F300, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_1169
 _esc__2_1169:
-	.incbin "baserom.dol", 0x32F304, 0x4
+	.4byte 0x3F800000
 
 .if 0
 

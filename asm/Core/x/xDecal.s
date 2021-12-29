@@ -12,7 +12,32 @@ active_emitters__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
 
 .global _esc__2_stringBase0_4
 _esc__2_stringBase0_4:
-	.incbin "baserom.dol", 0x2CE960, 0x68
+	.4byte 0x41766572
+	.4byte 0x61676500
+	.4byte 0x41646469
+	.4byte 0x74697665
+	.4byte 0x00427269
+	.4byte 0x67687420
+	.4byte 0x2853756E
+	.4byte 0x2D536869
+	.4byte 0x6E792900
+	.4byte 0x636F6C6F
+	.4byte 0x72200172
+	.4byte 0x65640063
+	.4byte 0x6F6C6F72
+	.4byte 0x20026772
+	.4byte 0x65656E00
+	.4byte 0x636F6C6F
+	.4byte 0x72200362
+	.4byte 0x6C756500
+	.4byte 0x636F6C6F
+	.4byte 0x7220616C
+	.4byte 0x70686100
+	.4byte 0x7363616C
+	.4byte 0x65207500
+	.4byte 0x7363616C
+	.4byte 0x65207600
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -54,73 +79,81 @@ active_emitters_size__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
 
 .global animix_labels__6xDecal
 animix_labels__6xDecal:
-	.incbin "baserom.dol", 0x32B0E8, 0x18
+	.4byte 0x802D1984
+	.4byte 0x802D198F
+	.4byte 0x802D199C
+	.4byte 0x802D19A8
+	.4byte 0x802D19B4
+	.4byte 0x802D19BC
 
 .section .sdata2
 
 .global _esc__2_1142
 _esc__2_1142:
-	.incbin "baserom.dol", 0x32E9B0, 0x4
+	.4byte 0x3F800000
 .global MAX_CLIPPED_VERTS__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_
 MAX_CLIPPED_VERTS__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32E9B4, 0x4
+	.4byte 0x00000009
 .global _esc__2_1378_0
 _esc__2_1378_0:
-	.incbin "baserom.dol", 0x32E9B8, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1386
 _esc__2_1386:
-	.incbin "baserom.dol", 0x32E9BC, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1388
 _esc__2_1388:
-	.incbin "baserom.dol", 0x32E9C0, 0x4
+	.4byte 0x00000000
 .global _esc__2_1892
 _esc__2_1892:
-	.incbin "baserom.dol", 0x32E9C4, 0x4
+	.4byte 0x358637BD
 .global _esc__2_2094
 _esc__2_2094:
-	.incbin "baserom.dol", 0x32E9C8, 0x4
+	.4byte 0x40000000
 .global _esc__2_2308
 _esc__2_2308:
-	.incbin "baserom.dol", 0x32E9CC, 0x4
+	.4byte 0x437F0000
 .global _esc__2_2309
 _esc__2_2309:
-	.incbin "baserom.dol", 0x32E9D0, 0x4
+	.4byte 0xB727C5AC
 .global rwmodes_esc__7_2325
 rwmodes_esc__7_2325:
-	.incbin "baserom.dol", 0x32E9D4, 0xC
+	.4byte 0x00050006
+	.4byte 0x00050002
+	.4byte 0x00020002
 .global CLIP_XLOWER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_
 CLIP_XLOWER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32E9E0, 0x4
+	.4byte 0x00000001
 .global CLIP_XUPPER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_
 CLIP_XUPPER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32E9E4, 0x4
+	.4byte 0x00000002
 .global CLIP_YLOWER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_
 CLIP_YLOWER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32E9E8, 0x4
+	.4byte 0x00000004
 .global CLIP_YUPPER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_
 CLIP_YUPPER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32E9EC, 0x4
+	.4byte 0x00000008
 .global CLIP_ZLOWER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_
 CLIP_ZLOWER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32E9F0, 0x4
+	.4byte 0x00000010
 .global CLIP_ZUPPER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_
 CLIP_ZUPPER__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32E9F4, 0x4
+	.4byte 0x00000020
 .global _esc__2_2881
 _esc__2_2881:
-	.incbin "baserom.dol", 0x32E9F8, 0x4
+	.4byte 0x7E967699
 .global _esc__2_3324
 _esc__2_3324:
-	.incbin "baserom.dol", 0x32E9FC, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_3325
 _esc__2_3325:
-	.incbin "baserom.dol", 0x32EA00, 0x4
+	.4byte 0x3F7D70A4
 .global _esc__2_3326
 _esc__2_3326:
-	.incbin "baserom.dol", 0x32EA04, 0x4
+	.4byte 0x3C23D70A
 .global _esc__2_3328
 _esc__2_3328:
-	.incbin "baserom.dol", 0x32EA08, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

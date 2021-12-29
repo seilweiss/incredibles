@@ -4,7 +4,12 @@
 
 .global _esc__2_stringBase0_56
 _esc__2_stringBase0_56:
-	.incbin "baserom.dol", 0x2DA3D0, 0x18
+	.4byte 0x57696467
+	.4byte 0x6574737C
+	.4byte 0x466C616D
+	.4byte 0x6520456D
+	.4byte 0x69747465
+	.4byte 0x72000000
 
 .section .sbss2, "", @nobits
 
@@ -46,25 +51,26 @@ lbl_803D8C84:
 
 .global _esc__2_737_1
 _esc__2_737_1:
-	.incbin "baserom.dol", 0x330640, 0x4
+	.4byte 0x00000000
 .global _esc__2_738_1
 _esc__2_738_1:
-	.incbin "baserom.dol", 0x330644, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1047_2
 _esc__2_1047_2:
-	.incbin "baserom.dol", 0x330648, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_1077
 _esc__2_1077:
-	.incbin "baserom.dol", 0x33064C, 0x4
+	.4byte 0xBF000000
 .global _esc__2_1078_0
 _esc__2_1078_0:
-	.incbin "baserom.dol", 0x330650, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1255_1
 _esc__2_1255_1:
-	.incbin "baserom.dol", 0x330654, 0x4
+	.4byte 0x40A00000
 .global _esc__2_1257_1
 _esc__2_1257_1:
-	.incbin "baserom.dol", 0x330658, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .if 0
 

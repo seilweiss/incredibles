@@ -13,40 +13,43 @@ sMainGameCamera:
 
 .global sCameraNearClip
 sCameraNearClip:
-	.incbin "baserom.dol", 0x32AFC0, 0x4
+	.4byte 0x3E4CCCCD
 .global sCameraFarClip
 sCameraFarClip:
-	.incbin "baserom.dol", 0x32AFC4, 0x4
+	.4byte 0x43C80000
 
 .section .sdata2
 
 .global _esc__2_814_0
 _esc__2_814_0:
-	.incbin "baserom.dol", 0x32E6E0, 0x4
+	.4byte 0x3F800000
 .global _esc__2_875_0
 _esc__2_875_0:
-	.incbin "baserom.dol", 0x32E6E4, 0x4
+	.4byte 0x3F400000
 .global _esc__2_880
 _esc__2_880:
-	.incbin "baserom.dol", 0x32E6E8, 0x4
+	.4byte 0x3C8EFA35
 .global _esc__2_881
 _esc__2_881:
-	.incbin "baserom.dol", 0x32E6EC, 0x4
+	.4byte 0x3F000000
 .global _esc__2_913
 _esc__2_913:
-	.incbin "baserom.dol", 0x32E6F0, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_914
 _esc__2_914:
-	.incbin "baserom.dol", 0x32E6F4, 0x4
+	.4byte 0x00000000
 .global _esc__2_915
 _esc__2_915:
-	.incbin "baserom.dol", 0x32E6F8, 0x8
+	.4byte 0x43C80000
+	.4byte 0x00000000
 .global _esc__2_945
 _esc__2_945:
-	.incbin "baserom.dol", 0x32E700, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1002
 _esc__2_1002:
-	.incbin "baserom.dol", 0x32E708, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .if 0
 

@@ -10,61 +10,187 @@ fragmentinfo:
 
 .global __vt__Q23std9exception
 __vt__Q23std9exception:
-	.incbin "baserom.dol", 0x31B658, 0x10
+	.4byte 0x803CE810
+	.4byte 0x00000000
+	.4byte 0x801FA7AC
+	.4byte 0x801FA86C
 .global _esc__2_458
 _esc__2_458:
-	.incbin "baserom.dol", 0x31B668, 0x44
+	.4byte 0x801FBB48
+	.4byte 0x801FBB40
+	.4byte 0x801FBB48
+	.4byte 0x801FBB48
+	.4byte 0x801FBB48
+	.4byte 0x801FBB48
+	.4byte 0x801FBB48
+	.4byte 0x801FBB48
+	.4byte 0x801FBB48
+	.4byte 0x801FBB48
+	.4byte 0x801FBB48
+	.4byte 0x801FBB48
+	.4byte 0x801FBA74
+	.4byte 0x801FBB48
+	.4byte 0x801FBB40
+	.4byte 0x801FBA94
+	.4byte 0x801FBA54
 .global _esc__2_651
 _esc__2_651:
-	.incbin "baserom.dol", 0x31B6AC, 0x44
+	.4byte 0x801FC38C
+	.4byte 0x801FBF44
+	.4byte 0x801FBF58
+	.4byte 0x801FBF84
+	.4byte 0x801FBFE8
+	.4byte 0x801FC034
+	.4byte 0x801FC088
+	.4byte 0x801FC0DC
+	.4byte 0x801FC130
+	.4byte 0x801FC1B8
+	.4byte 0x801FC234
+	.4byte 0x801FC27C
+	.4byte 0x801FC2F8
+	.4byte 0x801FC320
+	.4byte 0x801FC38C
+	.4byte 0x801FC36C
+	.4byte 0x801FC30C
 .global _esc__2_814
 _esc__2_814:
-	.incbin "baserom.dol", 0x31B6F0, 0x44
+	.4byte 0x801FC774
+	.4byte 0x801FC774
+	.4byte 0x801FC6C8
+	.4byte 0x801FC6D4
+	.4byte 0x801FC6E0
+	.4byte 0x801FC6EC
+	.4byte 0x801FC6F8
+	.4byte 0x801FC6F8
+	.4byte 0x801FC708
+	.4byte 0x801FC714
+	.4byte 0x801FC720
+	.4byte 0x801FC72C
+	.4byte 0x801FC738
+	.4byte 0x801FC750
+	.4byte 0x801FC774
+	.4byte 0x801FC75C
+	.4byte 0x801FC744
 .global _esc__2_903
 _esc__2_903:
-	.incbin "baserom.dol", 0x31B734, 0xC
+	.4byte 0x803CE828
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__Q23std13bad_exception
 __vt__Q23std13bad_exception:
-	.incbin "baserom.dol", 0x31B740, 0x10
+	.4byte 0x803CE830
+	.4byte 0x00000000
+	.4byte 0x801FBE50
+	.4byte 0x801FCA2C
 
 .section .rodata
 
 .global _esc__2_223
 _esc__2_223:
-	.incbin "baserom.dol", 0x2E9DA8, 0x10
+	.4byte 0x7374643A
+	.4byte 0x3A657863
+	.4byte 0x65707469
+	.4byte 0x6F6E0000
 .global _esc__2_227
 _esc__2_227:
-	.incbin "baserom.dol", 0x2E9DB8, 0x10
+	.4byte 0x65786365
+	.4byte 0x7074696F
+	.4byte 0x6E000000
+	.4byte 0x00000000
 .global __constants
 __constants:
-	.incbin "baserom.dol", 0x2E9DC8, 0x18
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x41F00000
+	.4byte 0x00000000
+	.4byte 0x41E00000
+	.4byte 0x00000000
 .global _esc__2_504
 _esc__2_504:
-	.incbin "baserom.dol", 0x2E9DE0, 0x14
+	.4byte 0x21626164
+	.4byte 0x5F657863
+	.4byte 0x65707469
+	.4byte 0x6F6E2121
+	.4byte 0x00000000
 .global _esc__2_505
 _esc__2_505:
-	.incbin "baserom.dol", 0x2E9DF4, 0x28
+	.4byte 0x21737464
+	.4byte 0x3A3A6578
+	.4byte 0x63657074
+	.4byte 0x696F6E21
+	.4byte 0x21737464
+	.4byte 0x3A3A6261
+	.4byte 0x645F6578
+	.4byte 0x63657074
+	.4byte 0x696F6E21
+	.4byte 0x21000000
 .global _esc__2_506
 _esc__2_506:
-	.incbin "baserom.dol", 0x2E9E1C, 0x18
+	.4byte 0x21737464
+	.4byte 0x3A3A6261
+	.4byte 0x645F6578
+	.4byte 0x63657074
+	.4byte 0x696F6E21
+	.4byte 0x21000000
 .global _esc__2_902
 _esc__2_902:
-	.incbin "baserom.dol", 0x2E9E34, 0x14
+	.4byte 0x7374643A
+	.4byte 0x3A626164
+	.4byte 0x5F657863
+	.4byte 0x65707469
+	.4byte 0x6F6E0000
 .global _esc__2_904
 _esc__2_904:
-	.incbin "baserom.dol", 0x2E9E48, 0x10
+	.4byte 0x7374643A
+	.4byte 0x3A657863
+	.4byte 0x65707469
+	.4byte 0x6F6E0000
 .global _esc__2_906
 _esc__2_906:
-	.incbin "baserom.dol", 0x2E9E58, 0x10
+	.4byte 0x6261645F
+	.4byte 0x65786365
+	.4byte 0x7074696F
+	.4byte 0x6E000000
 .global _esc__2_908
 _esc__2_908:
-	.incbin "baserom.dol", 0x2E9E68, 0x10
+	.4byte 0x65786365
+	.4byte 0x7074696F
+	.4byte 0x6E000000
+	.4byte 0x00000000
 .global _esc__2_55
 _esc__2_55:
-	.incbin "baserom.dol", 0x2E9E78, 0x38
+	.4byte 0x47434E5F
+	.4byte 0x4D656D5F
+	.4byte 0x416C6C6F
+	.4byte 0x632E6320
+	.4byte 0x3A20496E
+	.4byte 0x69744465
+	.4byte 0x6661756C
+	.4byte 0x74486561
+	.4byte 0x702E204E
+	.4byte 0x6F204865
+	.4byte 0x61702041
+	.4byte 0x7661696C
+	.4byte 0x61626C65
+	.4byte 0x0A000000
 .global _esc__2_56
 _esc__2_56:
-	.incbin "baserom.dol", 0x2E9EB0, 0x40
+	.4byte 0x4D657472
+	.4byte 0x6F776572
+	.4byte 0x6B732043
+	.4byte 0x57207275
+	.4byte 0x6E74696D
+	.4byte 0x65206C69
+	.4byte 0x62726172
+	.4byte 0x7920696E
+	.4byte 0x69746961
+	.4byte 0x6C697A69
+	.4byte 0x6E672064
+	.4byte 0x65666175
+	.4byte 0x6C742068
+	.4byte 0x6561700A
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -76,22 +202,26 @@ lbl_803D14D8:
 
 .global __RTTI__Q23std9exception
 __RTTI__Q23std9exception:
-	.incbin "baserom.dol", 0x32E350, 0x8
+	.4byte 0x802ECDA8
+	.4byte 0x00000000
 .global thandler__3std
 thandler__3std:
-	.incbin "baserom.dol", 0x32E358, 0x4
+	.4byte 0x801FADD4
 .global uhandler__3std
 uhandler__3std:
-	.incbin "baserom.dol", 0x32E35C, 0x4
+	.4byte 0x801FADAC
 .global fragmentID
 fragmentID:
-	.incbin "baserom.dol", 0x32E360, 0x8
+	.4byte 0xFFFFFFFE
+	.4byte 0x00000000
 .global __RTTI__Q23std9exception_0
 __RTTI__Q23std9exception_0:
-	.incbin "baserom.dol", 0x32E368, 0x8
+	.4byte 0x802ECE48
+	.4byte 0x00000000
 .global __RTTI__Q23std13bad_exception
 __RTTI__Q23std13bad_exception:
-	.incbin "baserom.dol", 0x32E370, 0x8
+	.4byte 0x802ECE34
+	.4byte 0x8031E734
 
 .section .text, "ax"
 

@@ -4,25 +4,25 @@
 
 .global _esc__2_662
 _esc__2_662:
-	.incbin "baserom.dol", 0x3323B8, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_663
 _esc__2_663:
-	.incbin "baserom.dol", 0x3323BC, 0x4
+	.4byte 0x00000000
 .global _esc__2_672
 _esc__2_672:
-	.incbin "baserom.dol", 0x3323C0, 0x4
+	.4byte 0x3F800000
 .global _esc__2_674_0
 _esc__2_674_0:
-	.incbin "baserom.dol", 0x3323C4, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_763
 _esc__2_763:
-	.incbin "baserom.dol", 0x3323C8, 0x4
+	.4byte 0x38D1B717
 .global _esc__2_764
 _esc__2_764:
-	.incbin "baserom.dol", 0x3323CC, 0x4
+	.4byte 0xB8D1B717
 .global _esc__2_797
 _esc__2_797:
-	.incbin "baserom.dol", 0x3323D0, 0x4
+	.4byte 0xBA83126F
 
 .if 0
 

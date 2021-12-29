@@ -4,7 +4,12 @@
 
 .global _esc__2_stringBase0_9
 _esc__2_stringBase0_9:
-	.incbin "baserom.dol", 0x2CECB8, 0x18
+	.4byte 0x6875643A
+	.4byte 0x6D657465
+	.4byte 0x723A666F
+	.4byte 0x6E740025
+	.4byte 0x64000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -19,28 +24,43 @@ init_esc__7_823:
 
 .global __vt__Q24xhud17font_meter_widget
 __vt__Q24xhud17font_meter_widget:
-	.incbin "baserom.dol", 0x32B208, 0x28
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8003E054
+	.4byte 0x8003E074
+	.4byte 0x8003E0C0
+	.4byte 0x8003DD18
+	.4byte 0x8003D2C8
+	.4byte 0x8003E118
+	.4byte 0x8003E284
+	.4byte 0x8003D77C
 
 .section .sdata2
 
 .global screen_bounds_1
 screen_bounds_1:
-	.incbin "baserom.dol", 0x32EF58, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 .global _esc__2_853_0
 _esc__2_853_0:
-	.incbin "baserom.dol", 0x32EF68, 0x4
+	.4byte 0x3F000000
 .global _esc__2_854_0
 _esc__2_854_0:
-	.incbin "baserom.dol", 0x32EF6C, 0x4
+	.4byte 0x437F0000
 .global _esc__2_855_1
 _esc__2_855_1:
-	.incbin "baserom.dol", 0x32EF70, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_857
 _esc__2_857:
-	.incbin "baserom.dol", 0x32EF78, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_870
 _esc__2_870:
-	.incbin "baserom.dol", 0x32EF80, 0x8
+	.4byte 0x40000000
+	.4byte 0x00000000
 
 .if 0
 

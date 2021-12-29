@@ -4,16 +4,126 @@
 
 .global burn_ribbon_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 burn_ribbon_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
-	.incbin "baserom.dol", 0x2DAC18, 0x54
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte 0x3ECCCCCD
+	.4byte 0x3D4CCCCD
+	.4byte 0xFFFF9BFF
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E19999A
+	.4byte 0xCD9B37FF
+	.4byte 0x3E4CCCCD
+	.4byte 0x3E99999A
+	.4byte 0x9B3700FF
+	.4byte 0x3E4CCCCD
+	.4byte 0x3EE66666
+	.4byte 0x370000FF
+	.4byte 0x3E4CCCCD
+	.4byte 0x3F266666
+	.4byte 0x000000FF
+	.4byte 0x3ECCCCCD
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x3F19999A
 .global _esc__2_1982
 _esc__2_1982:
-	.incbin "baserom.dol", 0x2DAC6C, 0x54
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_1996
 _esc__2_1996:
-	.incbin "baserom.dol", 0x2DACC0, 0x54
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_stringBase0_62
 _esc__2_stringBase0_62:
-	.incbin "baserom.dol", 0x2DAD14, 0xCC
+	.4byte 0x41766572
+	.4byte 0x61676500
+	.4byte 0x41646469
+	.4byte 0x74697665
+	.4byte 0x004F7061
+	.4byte 0x71756500
+	.4byte 0x4F6E652D
+	.4byte 0x4F6E6500
+	.4byte 0x4C6F6F70
+	.4byte 0x00526576
+	.4byte 0x65727365
+	.4byte 0x0053746F
+	.4byte 0x70004361
+	.4byte 0x72640043
+	.4byte 0x6F6E6500
+	.4byte 0x506C616E
+	.4byte 0x61720054
+	.4byte 0x616E6765
+	.4byte 0x6E740042
+	.4byte 0x75726E00
+	.4byte 0x46616465
+	.4byte 0x004E6F6E
+	.4byte 0x65005075
+	.4byte 0x6C736500
+	.4byte 0x466C6963
+	.4byte 0x6B657200
+	.4byte 0x496D6D65
+	.4byte 0x64696174
+	.4byte 0x65004C69
+	.4byte 0x6E656172
+	.4byte 0x004F7665
+	.4byte 0x7273686F
+	.4byte 0x6F740042
+	.4byte 0x6C696E6B
+	.4byte 0x00696E74
+	.4byte 0x656E7369
+	.4byte 0x74790067
+	.4byte 0x6C6F7700
+	.4byte 0x46587C4C
+	.4byte 0x61736572
+	.4byte 0x20426561
+	.4byte 0x6D7C0147
+	.4byte 0x6C6F6261
+	.4byte 0x6C737C46
+	.4byte 0x6164652D
+	.4byte 0x496E7C4F
+	.4byte 0x76657273
+	.4byte 0x686F6F74
+	.4byte 0x7C006C6F
+	.4byte 0x63617469
+	.4byte 0x6F6E0000
 
 .section .sbss
 
@@ -49,91 +159,127 @@ _esc__2_2211_0:
 
 .global ribbon_curves__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 ribbon_curves__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32C128, 0x10
+	.4byte 0x802DDC18
+	.4byte 0x00000007
+	.4byte 0x803D3F78
+	.4byte 0x00000002
 .global fade_value_labels__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 fade_value_labels__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32C138, 0x8
+	.4byte 0x802DDD9D
+	.4byte 0x802DDDA7
 
 .section .sdata2
 
 .global blend_modes__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 blend_modes__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
-	.incbin "baserom.dol", 0x330918, 0x20
+	.4byte 0x00000005
+	.4byte 0x00000006
+	.4byte 0x00000005
+	.4byte 0x00000002
+	.4byte 0x00000002
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000002
 .global fade_ribbon_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 fade_ribbon_curve__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
-	.incbin "baserom.dol", 0x330938, 0x18
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0xFFFFFF00
+	.4byte 0x3F800000
 .global fade_in_curve_immediate__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 fade_in_curve_immediate__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
-	.incbin "baserom.dol", 0x330950, 0x18
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 .global fade_in_curve_linear__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 fade_in_curve_linear__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
-	.incbin "baserom.dol", 0x330968, 0x18
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 .global fade_in_curve_overshoot__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_
 fade_in_curve_overshoot__24_esc__2_unnamed_esc__2_zLaserBeam_cpp_esc__2_:
-	.incbin "baserom.dol", 0x330980, 0x24
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3E4CCCCD
+	.4byte 0x40000000
+	.4byte 0x40000000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 .global _esc__2_1349
 _esc__2_1349:
-	.incbin "baserom.dol", 0x3309A4, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1408_0
 _esc__2_1408_0:
-	.incbin "baserom.dol", 0x3309A8, 0x4
+	.4byte 0x00000000
 .global _esc__2_1409_0
 _esc__2_1409_0:
-	.incbin "baserom.dol", 0x3309AC, 0x4
+	.4byte 0x3E000000
 .global _esc__2_1411
 _esc__2_1411:
-	.incbin "baserom.dol", 0x3309B0, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1418_0
 _esc__2_1418_0:
-	.incbin "baserom.dol", 0x3309B8, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_1419_1
 _esc__2_1419_1:
-	.incbin "baserom.dol", 0x3309BC, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1420_1
 _esc__2_1420_1:
-	.incbin "baserom.dol", 0x3309C0, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1451_0
 _esc__2_1451_0:
-	.incbin "baserom.dol", 0x3309C4, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1555_0
 _esc__2_1555_0:
-	.incbin "baserom.dol", 0x3309C8, 0x4
+	.4byte 0x3C23D70A
 .global _esc__2_1712_0
 _esc__2_1712_0:
-	.incbin "baserom.dol", 0x3309CC, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_1713_0
 _esc__2_1713_0:
-	.incbin "baserom.dol", 0x3309D0, 0x4
+	.4byte 0x3F7FBE77
 .global _esc__2_1787_0
 _esc__2_1787_0:
-	.incbin "baserom.dol", 0x3309D4, 0x4
+	.4byte 0x30C90FDB
 .global _esc__2_1801_0
 _esc__2_1801_0:
-	.incbin "baserom.dol", 0x3309D8, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_1802_1
 _esc__2_1802_1:
-	.incbin "baserom.dol", 0x3309DC, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_1875
 _esc__2_1875:
-	.incbin "baserom.dol", 0x3309E0, 0x4
+	.4byte 0x00000000
 .global lbl_803D4024
 lbl_803D4024:
-	.incbin "baserom.dol", 0x3309E4, 0x4
+	.4byte 0x3F800000
 .global lbl_803D4028
 lbl_803D4028:
-	.incbin "baserom.dol", 0x3309E8, 0x4
+	.4byte 0x00000000
 .global _esc__2_1881
 _esc__2_1881:
-	.incbin "baserom.dol", 0x3309EC, 0x4
+	.4byte 0x00000000
 .global lbl_803D4030
 lbl_803D4030:
-	.incbin "baserom.dol", 0x3309F0, 0x4
+	.4byte 0x3F800000
 .global lbl_803D4034
 lbl_803D4034:
-	.incbin "baserom.dol", 0x3309F4, 0x4
+	.4byte 0x00000000
 .global _esc__2_2031
 _esc__2_2031:
-	.incbin "baserom.dol", 0x3309F8, 0x8
+	.4byte 0x7E967699
+	.4byte 0x00000000
 
 .if 0
 

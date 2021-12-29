@@ -28,13 +28,189 @@ gLightningTweakAddInfo:
 
 .global defaultWeightParam_esc__7_1190
 defaultWeightParam_esc__7_1190:
-	.incbin "baserom.dol", 0x307680, 0xC0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0xC0200000
+	.4byte 0x40000000
+	.4byte 0x00000000
+	.4byte 0xBF800000
+	.4byte 0x3FC00000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0xBF800000
+	.4byte 0x40000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0xBFC00000
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0xBF800000
+	.4byte 0x3F000000
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0x00000000
+	.4byte 0xBF800000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x40800000
+	.4byte 0xC1000000
+	.4byte 0x40800000
+	.4byte 0x00000000
+	.4byte 0xC0800000
+	.4byte 0x40800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0xC0800000
+	.4byte 0x40800000
+	.4byte 0x00000000
 
 .section .rodata
 
 .global _esc__2_stringBase0_64
 _esc__2_stringBase0_64:
-	.incbin "baserom.dol", 0x2DADF0, 0x208
+	.4byte 0x46587C4C
+	.4byte 0x69676874
+	.4byte 0x6E696E67
+	.4byte 0x7C4E756D
+	.4byte 0x20537472
+	.4byte 0x69707300
+	.4byte 0x46587C4C
+	.4byte 0x69676874
+	.4byte 0x6E696E67
+	.4byte 0x7C436F6C
+	.4byte 0x6F727C52
+	.4byte 0x0046587C
+	.4byte 0x4C696768
+	.4byte 0x746E696E
+	.4byte 0x677C436F
+	.4byte 0x6C6F727C
+	.4byte 0x47004658
+	.4byte 0x7C4C6967
+	.4byte 0x68746E69
+	.4byte 0x6E677C43
+	.4byte 0x6F6C6F72
+	.4byte 0x7C420046
+	.4byte 0x587C4C69
+	.4byte 0x6768746E
+	.4byte 0x696E677C
+	.4byte 0x436F6C6F
+	.4byte 0x727C4100
+	.4byte 0x46587C4C
+	.4byte 0x69676874
+	.4byte 0x6E696E67
+	.4byte 0x7C537461
+	.4byte 0x72747C78
+	.4byte 0x0046587C
+	.4byte 0x4C696768
+	.4byte 0x746E696E
+	.4byte 0x677C5374
+	.4byte 0x6172747C
+	.4byte 0x79004658
+	.4byte 0x7C4C6967
+	.4byte 0x68746E69
+	.4byte 0x6E677C53
+	.4byte 0x74617274
+	.4byte 0x7C7A0046
+	.4byte 0x587C4C69
+	.4byte 0x6768746E
+	.4byte 0x696E677C
+	.4byte 0x456E647C
+	.4byte 0x78004658
+	.4byte 0x7C4C6967
+	.4byte 0x68746E69
+	.4byte 0x6E677C45
+	.4byte 0x6E647C79
+	.4byte 0x0046587C
+	.4byte 0x4C696768
+	.4byte 0x746E696E
+	.4byte 0x677C456E
+	.4byte 0x647C7A00
+	.4byte 0x46587C4C
+	.4byte 0x69676874
+	.4byte 0x6E696E67
+	.4byte 0x7C546869
+	.4byte 0x636B6E65
+	.4byte 0x73730046
+	.4byte 0x587C4C69
+	.4byte 0x6768746E
+	.4byte 0x696E677C
+	.4byte 0x5365676D
+	.4byte 0x656E7473
+	.4byte 0x5065724D
+	.4byte 0x65746572
+	.4byte 0x0046587C
+	.4byte 0x4C696768
+	.4byte 0x746E696E
+	.4byte 0x677C4272
+	.4byte 0x616E6368
+	.4byte 0x20537065
+	.4byte 0x65640046
+	.4byte 0x587C4C69
+	.4byte 0x6768746E
+	.4byte 0x696E677C
+	.4byte 0x4A65726B
+	.4byte 0x20467265
+	.4byte 0x7175656E
+	.4byte 0x63790046
+	.4byte 0x587C4C69
+	.4byte 0x6768746E
+	.4byte 0x696E677C
+	.4byte 0x53686966
+	.4byte 0x74004658
+	.4byte 0x7C4C6967
+	.4byte 0x68746E69
+	.4byte 0x6E677C4D
+	.4byte 0x696E5363
+	.4byte 0x616C6500
+	.4byte 0x46587C4C
+	.4byte 0x69676874
+	.4byte 0x6E696E67
+	.4byte 0x7C4D6178
+	.4byte 0x5363616C
+	.4byte 0x65004658
+	.4byte 0x7C4C6967
+	.4byte 0x68746E69
+	.4byte 0x6E677C53
+	.4byte 0x63616C65
+	.4byte 0x5065724C
+	.4byte 0x656E6774
+	.4byte 0x68004658
+	.4byte 0x7C4C6967
+	.4byte 0x68746E69
+	.4byte 0x6E677C4D
+	.4byte 0x696E5370
+	.4byte 0x616E0046
+	.4byte 0x587C4C69
+	.4byte 0x6768746E
+	.4byte 0x696E677C
+	.4byte 0x5370616E
+	.4byte 0x5065724C
+	.4byte 0x656E6774
+	.4byte 0x68005820
+	.4byte 0x746F2074
+	.4byte 0x65737420
+	.4byte 0x6C696768
+	.4byte 0x746E696E
+	.4byte 0x670A0020
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20202020
+	.4byte 0x20200031
+	.4byte 0x0030000A
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -91,127 +267,131 @@ posArray:
 
 .global sLFuncJerkFreq
 sLFuncJerkFreq:
-	.incbin "baserom.dol", 0x32C150, 0x4
+	.4byte 0x41A00000
 .global sLFuncShift
 sLFuncShift:
-	.incbin "baserom.dol", 0x32C154, 0x4
+	.4byte 0x40C00000
 .global sLFuncMinScale
 sLFuncMinScale:
-	.incbin "baserom.dol", 0x32C158, 0x4
+	.4byte 0x3DCCCCCD
 .global sLFuncMaxScale
 sLFuncMaxScale:
-	.incbin "baserom.dol", 0x32C15C, 0x4
+	.4byte 0x3ECCCCCD
 .global sLFuncScalePerLength
 sLFuncScalePerLength:
-	.incbin "baserom.dol", 0x32C160, 0x4
+	.4byte 0x3DCCCCCD
 .global sLFuncMinSpan
 sLFuncMinSpan:
-	.incbin "baserom.dol", 0x32C164, 0x4
+	.4byte 0x3FA66666
 .global sLFuncSpanPerLength
 sLFuncSpanPerLength:
-	.incbin "baserom.dol", 0x32C168, 0x4
+	.4byte 0x41180000
 .global sLFuncSlopeRange
 sLFuncSlopeRange:
-	.incbin "baserom.dol", 0x32C16C, 0x4
+	.4byte 0x40000000
 .global sLFuncUVSpeed
 sLFuncUVSpeed:
-	.incbin "baserom.dol", 0x32C170, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1035_2
 _esc__2_1035_2:
-	.incbin "baserom.dol", 0x330A48, 0x4
+	.4byte 0x40400000
 .global _esc__2_1036_2
 _esc__2_1036_2:
-	.incbin "baserom.dol", 0x330A4C, 0x4
+	.4byte 0x40000000
 .global _esc__2_1045_0
 _esc__2_1045_0:
-	.incbin "baserom.dol", 0x330A50, 0x4
+	.4byte 0x3F800000
 .global sNumStrips
 sNumStrips:
-	.incbin "baserom.dol", 0x330A54, 0x4
+	.4byte 0x00000002
 .global _esc__2_1057_1
 _esc__2_1057_1:
-	.incbin "baserom.dol", 0x330A58, 0x4
+	.4byte 0xC47A0000
 .global _esc__2_1058_2
 _esc__2_1058_2:
-	.incbin "baserom.dol", 0x330A5C, 0x4
+	.4byte 0x447A0000
 .global _esc__2_1059_3
 _esc__2_1059_3:
-	.incbin "baserom.dol", 0x330A60, 0x4
+	.4byte 0x00000000
 .global _esc__2_1100
 _esc__2_1100:
-	.incbin "baserom.dol", 0x330A64, 0x4
+	.4byte 0x43C80000
 .global _esc__2_1101_0
 _esc__2_1101_0:
-	.incbin "baserom.dol", 0x330A68, 0x4
+	.4byte 0x471C4000
 .global _esc__2_1102_0
 _esc__2_1102_0:
-	.incbin "baserom.dol", 0x330A6C, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1103_1
 _esc__2_1103_1:
-	.incbin "baserom.dol", 0x330A70, 0x4
+	.4byte 0x3E800000
 .global _esc__2_1104_0
 _esc__2_1104_0:
-	.incbin "baserom.dol", 0x330A74, 0x4
+	.4byte 0x41200000
 .global _esc__2_1105_0
 _esc__2_1105_0:
-	.incbin "baserom.dol", 0x330A78, 0x4
+	.4byte 0x49742400
 .global _esc__2_1106_0
 _esc__2_1106_0:
-	.incbin "baserom.dol", 0x330A7C, 0x4
+	.4byte 0x3E19999A
 .global _esc__2_1107_1
 _esc__2_1107_1:
-	.incbin "baserom.dol", 0x330A80, 0x4
+	.4byte 0x41000000
 .global _esc__2_1108_1
 _esc__2_1108_1:
-	.incbin "baserom.dol", 0x330A84, 0x4
+	.4byte 0xC51C4000
 .global _esc__2_1109_1
 _esc__2_1109_1:
-	.incbin "baserom.dol", 0x330A88, 0x4
+	.4byte 0x42840000
 .global _esc__2_1110
 _esc__2_1110:
-	.incbin "baserom.dol", 0x330A8C, 0x4
+	.4byte 0x3F400000
 .global _esc__2_1111_0
 _esc__2_1111_0:
-	.incbin "baserom.dol", 0x330A90, 0x8
+	.4byte 0x3E4CCCCD
+	.4byte 0x00000000
 .global _esc__2_1113_0
 _esc__2_1113_0:
-	.incbin "baserom.dol", 0x330A98, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1119_0
 _esc__2_1119_0:
-	.incbin "baserom.dol", 0x330AA0, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1200_0
 _esc__2_1200_0:
-	.incbin "baserom.dol", 0x330AA8, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1201_1
 _esc__2_1201_1:
-	.incbin "baserom.dol", 0x330AAC, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1340
 _esc__2_1340:
-	.incbin "baserom.dol", 0x330AB0, 0x4
+	.4byte 0x41100000
 .global _esc__2_1722_1
 _esc__2_1722_1:
-	.incbin "baserom.dol", 0x330AB4, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1723
 _esc__2_1723:
-	.incbin "baserom.dol", 0x330AB8, 0x4
+	.4byte 0x40C00000
 .global _esc__2_1724_0
 _esc__2_1724_0:
-	.incbin "baserom.dol", 0x330ABC, 0x4
+	.4byte 0x3EFAE148
 .global _esc__2_1725
 _esc__2_1725:
-	.incbin "baserom.dol", 0x330AC0, 0x4
+	.4byte 0x437FFD71
 .global _esc__2_1831
 _esc__2_1831:
-	.incbin "baserom.dol", 0x330AC4, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_1930
 _esc__2_1930:
-	.incbin "baserom.dol", 0x330AC8, 0x4
+	.4byte 0xBE800000
 .global _esc__2_1931
 _esc__2_1931:
-	.incbin "baserom.dol", 0x330ACC, 0x4
+	.4byte 0xBF400000
 
 .if 0
 

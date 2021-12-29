@@ -19,22 +19,23 @@ xfbCopy:
 
 .global _esc__2_987
 _esc__2_987:
-	.incbin "baserom.dol", 0x32F7B8, 0x4
+	.4byte 0x42200000
 .global _esc__2_988_0
 _esc__2_988_0:
-	.incbin "baserom.dol", 0x32F7BC, 0x4
+	.4byte 0x41B80000
 .global _esc__2_989_1
 _esc__2_989_1:
-	.incbin "baserom.dol", 0x32F7C0, 0x4
+	.4byte 0x00000000
 .global _esc__2_990_1
 _esc__2_990_1:
-	.incbin "baserom.dol", 0x32F7C4, 0x4
+	.4byte 0x42A00000
 .global _esc__2_991_0
 _esc__2_991_0:
-	.incbin "baserom.dol", 0x32F7C8, 0x8
+	.4byte 0x4409C000
+	.4byte 0x00000000
 .global _esc__2_993_0
 _esc__2_993_0:
-	.incbin "baserom.dol", 0x32F7D0, 0x4
+	.4byte 0x43300000
 
 .if 0
 

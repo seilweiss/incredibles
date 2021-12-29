@@ -4,13 +4,63 @@
 
 .global astnames
 astnames:
-	.incbin "baserom.dol", 0x300AC8, 0x50
+	.4byte 0x802D9DB0
+	.4byte 0x802D9DB6
+	.4byte 0x802D9DBC
+	.4byte 0x802D9DC2
+	.4byte 0x802D9DC8
+	.4byte 0x802D9DCE
+	.4byte 0x802D9DD4
+	.4byte 0x802D9DDA
+	.4byte 0x802D9DE0
+	.4byte 0x802D9DE6
+	.4byte 0x802D9DEC
+	.4byte 0x802D9DF2
+	.4byte 0x802D9DF8
+	.4byte 0x802D9DFE
+	.4byte 0x802D9E04
+	.4byte 0x802D9E0A
+	.4byte 0x802D9E10
+	.4byte 0x802D9E16
+	.4byte 0x802D9E1C
+	.4byte 0x802D9E22
 
 .section .rodata
 
 .global _esc__2_stringBase0_34
 _esc__2_stringBase0_34:
-	.incbin "baserom.dol", 0x2D6DB0, 0x80
+	.4byte 0x73746F70
+	.4byte 0x30007374
+	.4byte 0x6F703100
+	.4byte 0x73746F70
+	.4byte 0x32007374
+	.4byte 0x6F703300
+	.4byte 0x73746F70
+	.4byte 0x34007374
+	.4byte 0x6F703500
+	.4byte 0x73746F70
+	.4byte 0x36007374
+	.4byte 0x6F703700
+	.4byte 0x73746F70
+	.4byte 0x38007374
+	.4byte 0x6F703900
+	.4byte 0x6C6F6F70
+	.4byte 0x30006C6F
+	.4byte 0x6F703100
+	.4byte 0x6C6F6F70
+	.4byte 0x32006C6F
+	.4byte 0x6F703300
+	.4byte 0x6C6F6F70
+	.4byte 0x34006C6F
+	.4byte 0x6F703500
+	.4byte 0x6C6F6F70
+	.4byte 0x36006C6F
+	.4byte 0x6F703700
+	.4byte 0x6C6F6F70
+	.4byte 0x38006C6F
+	.4byte 0x6F703900
+	.4byte 0x0069646C
+	.4byte 0x65000000
 
 .section .sbss
 
@@ -31,10 +81,10 @@ anused:
 
 .global _esc__2_686
 _esc__2_686:
-	.incbin "baserom.dol", 0x32F9F0, 0x4
+	.4byte 0x3F800000
 .global _esc__2_687
 _esc__2_687:
-	.incbin "baserom.dol", 0x32F9F4, 0x4
+	.4byte 0x00000000
 
 .if 0
 

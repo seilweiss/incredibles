@@ -4,13 +4,49 @@
 
 .global __vt__Q24zNPC10water_bone
 __vt__Q24zNPC10water_bone:
-	.incbin "baserom.dol", 0x30C230, 0x80
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80184548
+	.4byte 0x80145E98
+	.4byte 0x800FEDDC
+	.4byte 0x800AB4C4
+	.4byte 0x800AB4CC
+	.4byte 0x800FF328
+	.4byte 0x800AB4D4
+	.4byte 0x800AB4D8
+	.4byte 0x800AB4DC
+	.4byte 0x800AB4E0
+	.4byte 0x80145DB4
+	.4byte 0x80145CB0
+	.4byte 0x800AB4E8
+	.4byte 0x800AB4EC
+	.4byte 0x800AB4F0
+	.4byte 0x80145CE0
+	.4byte 0x800AB4F4
+	.4byte 0x80145E6C
+	.4byte 0x80145EA8
+	.4byte 0x80145E5C
+	.4byte 0x800AB504
+	.4byte 0x800AB508
+	.4byte 0x800AB510
+	.4byte 0x800AB518
+	.4byte 0x800AB520
+	.4byte 0x800AB524
+	.4byte 0x8018464C
+	.4byte 0x801846DC
+	.4byte 0x800FF324
+	.4byte 0x00000000
 
 .section .rodata
 
 .global _esc__2_stringBase0_89
 _esc__2_stringBase0_89:
-	.incbin "baserom.dol", 0x2E1410, 0x18
+	.4byte 0x57617465
+	.4byte 0x72007761
+	.4byte 0x7465725F
+	.4byte 0x626F6E65
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .if 0
 

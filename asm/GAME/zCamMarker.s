@@ -33,22 +33,31 @@ lbl_803D8A18:
 
 .global __vt__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidget
 __vt__Q224_esc__2_unnamed_esc__2_zCamMarker_cpp_esc__2_10zCamWidget:
-	.incbin "baserom.dol", 0x32B898, 0x28
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80089020
+	.4byte 0x80010314
+	.4byte 0x800892E4
+	.4byte 0x80089358
+	.4byte 0x800893AC
+	.4byte 0x8000EDCC
+	.4byte 0x80010318
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_995_0
 _esc__2_995_0:
-	.incbin "baserom.dol", 0x32FA90, 0x4
+	.4byte 0x00000000
 .global _esc__2_1005
 _esc__2_1005:
-	.incbin "baserom.dol", 0x32FA94, 0x4
+	.4byte 0x3C8EFA35
 .global _esc__2_1107
 _esc__2_1107:
-	.incbin "baserom.dol", 0x32FA98, 0x4
+	.4byte 0x42960000
 .global _esc__2_1119
 _esc__2_1119:
-	.incbin "baserom.dol", 0x32FA9C, 0x4
+	.4byte 0x3F800000
 
 .if 0
 

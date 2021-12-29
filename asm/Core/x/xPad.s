@@ -10,19 +10,20 @@ mPad:
 
 .global _esc__2_936_1
 _esc__2_936_1:
-	.incbin "baserom.dol", 0x32F230, 0x4
+	.4byte 0x00000000
 .global _esc__2_937_0
 _esc__2_937_0:
-	.incbin "baserom.dol", 0x32F234, 0x4
+	.4byte 0x3EB33333
 .global _esc__2_1011_1
 _esc__2_1011_1:
-	.incbin "baserom.dol", 0x32F238, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1012_0
 _esc__2_1012_0:
-	.incbin "baserom.dol", 0x32F23C, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1040_1
 _esc__2_1040_1:
-	.incbin "baserom.dol", 0x32F240, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .if 0
 

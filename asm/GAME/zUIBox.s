@@ -10,58 +10,81 @@ vertex_esc__7_1100:
 
 .global __vt__6zUIBox
 __vt__6zUIBox:
-	.incbin "baserom.dol", 0x30D728, 0x58
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8016AFB8
+	.4byte 0x8016840C
+	.4byte 0x8016A128
+	.4byte 0x8016A130
+	.4byte 0x8016A138
+	.4byte 0x801686C0
+	.4byte 0x8016A1A8
+	.4byte 0x8016A1DC
+	.4byte 0x8016A210
+	.4byte 0x8016A370
+	.4byte 0x80168BD4
+	.4byte 0x80168EA4
+	.4byte 0x80169AE0
+	.4byte 0x8016A338
+	.4byte 0x80169E38
+	.4byte 0x80169E98
+	.4byte 0x80169F90
+	.4byte 0x8016A02C
+	.4byte 0x80169EF8
+	.4byte 0x80169F48
 
 .section .sdata2
 
 .global _esc__2_1002_3
 _esc__2_1002_3:
-	.incbin "baserom.dol", 0x332188, 0x4
+	.4byte 0x00000000
 .global _esc__2_1081_0
 _esc__2_1081_0:
-	.incbin "baserom.dol", 0x33218C, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1082_0
 _esc__2_1082_0:
-	.incbin "baserom.dol", 0x332190, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1083_1
 _esc__2_1083_1:
-	.incbin "baserom.dol", 0x332194, 0x4
+	.4byte 0x40000000
 .global _esc__2_1119_1
 _esc__2_1119_1:
-	.incbin "baserom.dol", 0x332198, 0x4
+	.4byte 0x00000002
 .global lbl_803D57DC
 lbl_803D57DC:
-	.incbin "baserom.dol", 0x33219C, 0x4
+	.4byte 0x00010003
 .global _esc__2_1172_0
 _esc__2_1172_0:
-	.incbin "baserom.dol", 0x3321A0, 0x4
+	.4byte 0x43B40000
 .global _esc__2_1173_0
 _esc__2_1173_0:
-	.incbin "baserom.dol", 0x3321A4, 0x4
+	.4byte 0x3C8EFA35
 .global _esc__2_1174_3
 _esc__2_1174_3:
-	.incbin "baserom.dol", 0x3321A8, 0x4
+	.4byte 0x3ACCCCCD
 .global _esc__2_1175_2
 _esc__2_1175_2:
-	.incbin "baserom.dol", 0x3321AC, 0x4
+	.4byte 0x3B088889
 .global _esc__2_1176_3
 _esc__2_1176_3:
-	.incbin "baserom.dol", 0x3321B0, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1177_4
 _esc__2_1177_4:
-	.incbin "baserom.dol", 0x3321B4, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_1178_1
 _esc__2_1178_1:
-	.incbin "baserom.dol", 0x3321B8, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1179_0
 _esc__2_1179_0:
-	.incbin "baserom.dol", 0x3321BC, 0x4
+	.4byte 0x447A0000
 .global _esc__2_1182_2
 _esc__2_1182_2:
-	.incbin "baserom.dol", 0x3321C0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1185_1
 _esc__2_1185_1:
-	.incbin "baserom.dol", 0x3321C8, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

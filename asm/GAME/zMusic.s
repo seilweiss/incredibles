@@ -10,7 +10,18 @@ sMusicTrack:
 
 .global _esc__2_stringBase0_68
 _esc__2_stringBase0_68:
-	.incbin "baserom.dol", 0x2DCC30, 0x30
+	.4byte 0x6D757369
+	.4byte 0x6300536F
+	.4byte 0x756E647C
+	.4byte 0x436F6E76
+	.4byte 0x65727361
+	.4byte 0x74696F6E
+	.4byte 0x204D7573
+	.4byte 0x69632044
+	.4byte 0x616D7065
+	.4byte 0x6E696E67
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -25,31 +36,33 @@ sMusic:
 
 .global gDialogueMusicLevel
 gDialogueMusicLevel:
-	.incbin "baserom.dol", 0x32C268, 0x8
+	.4byte 0x3EE66666
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_877_0
 _esc__2_877_0:
-	.incbin "baserom.dol", 0x330E08, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_878_0
 _esc__2_878_0:
-	.incbin "baserom.dol", 0x330E0C, 0x4
+	.4byte 0x3F4CCCCD
 .global _esc__2_981_2
 _esc__2_981_2:
-	.incbin "baserom.dol", 0x330E10, 0x4
+	.4byte 0x3F800000
 .global _esc__2_982_1
 _esc__2_982_1:
-	.incbin "baserom.dol", 0x330E14, 0x4
+	.4byte 0x00000000
 .global _esc__2_983_0
 _esc__2_983_0:
-	.incbin "baserom.dol", 0x330E18, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_984_1
 _esc__2_984_1:
-	.incbin "baserom.dol", 0x330E1C, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_1131_0
 _esc__2_1131_0:
-	.incbin "baserom.dol", 0x330E20, 0x8
+	.4byte 0xBF800000
+	.4byte 0x00000000
 
 .if 0
 

@@ -102,7 +102,7 @@ DUMMY != mkdir -p $(ALL_DIRS)
 $(DOL): $(ELF) | tools
 	@echo " ELF2DOL "$@
 	$S$(ELF2DOL) $< $@
-	$S$(SHA1SUM) -c in.sha1 || ( rm -f main.dump; $(ASMDIFF) )
+	$S$(SHA1SUM) -c in.sha1 || ( test -f baserom.dol && ( rm -f main.dump; $(ASMDIFF) ) || echo "Cannot display diff, baserom.dol not found." )
 
 clean:
 	rm -f $(DOL) $(ELF) $(MAP) baserom.dump main.dump

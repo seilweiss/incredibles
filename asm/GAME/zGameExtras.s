@@ -4,7 +4,20 @@
 
 .global _esc__2_1237
 _esc__2_1237:
-	.incbin "baserom.dol", 0x306C20, 0x38
+	.4byte 0x800CF384
+	.4byte 0x800CF1E4
+	.4byte 0x800CF200
+	.4byte 0x800CF21C
+	.4byte 0x800CF288
+	.4byte 0x800CF384
+	.4byte 0x800CF2A4
+	.4byte 0x800CF2C0
+	.4byte 0x800CF2DC
+	.4byte 0x800CF2F8
+	.4byte 0x800CF314
+	.4byte 0x800CF36C
+	.4byte 0x800CF384
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -34,43 +47,137 @@ sCheatInputCount:
 
 .global EGGEmpty
 EGGEmpty:
-	.incbin "baserom.dol", 0x32BE20, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global g_eggBasket
 g_eggBasket:
-	.incbin "baserom.dol", 0x32BE30, 0x20
+	.4byte 0x800CF1C0
+	.4byte 0x803CC2E0
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global sCheatTestCheats
 sCheatTestCheats:
-	.incbin "baserom.dol", 0x32BE50, 0x40
+	.4byte 0x00040000
+	.4byte 0x00020000
+	.4byte 0x00040000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00040000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00040000
+	.4byte 0x00040000
+	.4byte 0x00040000
+	.4byte 0x00040000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00040000
 .global sCheatSwapCCLR
 sCheatSwapCCLR:
-	.incbin "baserom.dol", 0x32BE90, 0x40
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00040000
+	.4byte 0x00040000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00040000
+	.4byte 0x00040000
 .global sCheatSwapCCUD
 sCheatSwapCCUD:
-	.incbin "baserom.dol", 0x32BED0, 0x40
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00040000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00020000
+	.4byte 0x00040000
 .global cheatList
 cheatList:
-	.incbin "baserom.dol", 0x32BF10, 0x40
+	.4byte 0x803CC310
+	.4byte 0x800CF778
+	.4byte 0x00000000
+	.4byte 0x00000001
+	.4byte 0x803CC350
+	.4byte 0x800CF798
+	.4byte 0x00000200
+	.4byte 0x00000001
+	.4byte 0x803CC390
+	.4byte 0x800CF7B8
+	.4byte 0x00000400
+	.4byte 0x00000001
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global sCheatPressed
 sCheatPressed:
-	.incbin "baserom.dol", 0x32BF50, 0x40
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global aid_sndList_esc__7_1342
 aid_sndList_esc__7_1342:
-	.incbin "baserom.dol", 0x32BF90, 0x20
+	.4byte 0x5EEA143C
+	.4byte 0x5EEA143C
+	.4byte 0x5EEA143C
+	.4byte 0x9943D503
+	.4byte 0x9943D504
+	.4byte 0x5EEA133E
+	.4byte 0x5EEA133C
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1162
 _esc__2_1162:
-	.incbin "baserom.dol", 0x3306F8, 0x4
+	.4byte 0x00000000
 .global _esc__2_1334_0
 _esc__2_1334_0:
-	.incbin "baserom.dol", 0x3306FC, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_1335_1
 _esc__2_1335_1:
-	.incbin "baserom.dol", 0x330700, 0x8
+	.4byte 0xBF800000
+	.4byte 0x00000000
 .global _esc__2_1380_0
 _esc__2_1380_0:
-	.incbin "baserom.dol", 0x330708, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .if 0
 

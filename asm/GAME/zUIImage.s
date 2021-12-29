@@ -4,55 +4,82 @@
 
 .global __vt__8zUIImage
 __vt__8zUIImage:
-	.incbin "baserom.dol", 0x30D780, 0x58
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8016BF24
+	.4byte 0x8016BE48
+	.4byte 0x8016A128
+	.4byte 0x8016A130
+	.4byte 0x8016B0B4
+	.4byte 0x801686C0
+	.4byte 0x8016B110
+	.4byte 0x8016B160
+	.4byte 0x8016B1A8
+	.4byte 0x8016B360
+	.4byte 0x80168BD4
+	.4byte 0x80168EA4
+	.4byte 0x8016BBE0
+	.4byte 0x8016BC34
+	.4byte 0x80169E38
+	.4byte 0x80169E98
+	.4byte 0x80169F90
+	.4byte 0x8016A02C
+	.4byte 0x8016BDD4
+	.4byte 0x8016BDF4
 
 .section .sdata
 
 .global modeTranslate_esc__7_1060
 modeTranslate_esc__7_1060:
-	.incbin "baserom.dol", 0x32D0B0, 0x10
+	.4byte 0x00000001
+	.4byte 0x00000003
+	.4byte 0x00000002
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1026_3
 _esc__2_1026_3:
-	.incbin "baserom.dol", 0x3321D0, 0x4
+	.4byte 0x00000000
 .global _esc__2_1152_3
 _esc__2_1152_3:
-	.incbin "baserom.dol", 0x3321D4, 0x4
+	.4byte 0x3C8EFA35
 .global _esc__2_1153_5
 _esc__2_1153_5:
-	.incbin "baserom.dol", 0x3321D8, 0x4
+	.4byte 0x43B40000
 .global _esc__2_1154_2
 _esc__2_1154_2:
-	.incbin "baserom.dol", 0x3321DC, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1155_1
 _esc__2_1155_1:
-	.incbin "baserom.dol", 0x3321E0, 0x4
+	.4byte 0x3ACCCCCD
 .global _esc__2_1156_1
 _esc__2_1156_1:
-	.incbin "baserom.dol", 0x3321E4, 0x4
+	.4byte 0x3B088889
 .global _esc__2_1157_2
 _esc__2_1157_2:
-	.incbin "baserom.dol", 0x3321E8, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1158_5
 _esc__2_1158_5:
-	.incbin "baserom.dol", 0x3321EC, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_1159_1
 _esc__2_1159_1:
-	.incbin "baserom.dol", 0x3321F0, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1160_2
 _esc__2_1160_2:
-	.incbin "baserom.dol", 0x3321F4, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1161_1
 _esc__2_1161_1:
-	.incbin "baserom.dol", 0x3321F8, 0x8
+	.4byte 0x447A0000
+	.4byte 0x00000000
 .global _esc__2_1164_1
 _esc__2_1164_1:
-	.incbin "baserom.dol", 0x332200, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1167_3
 _esc__2_1167_3:
-	.incbin "baserom.dol", 0x332208, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

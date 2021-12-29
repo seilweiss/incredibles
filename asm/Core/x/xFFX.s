@@ -36,7 +36,8 @@ rot_match_alist:
 
 .global _esc__2_802
 _esc__2_802:
-	.incbin "baserom.dol", 0x32EB78, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .if 0
 

@@ -4,7 +4,26 @@
 
 .global __vt__38zUICustomBattleModeSelectPlayerManager
 __vt__38zUICustomBattleModeSelectPlayerManager:
-	.incbin "baserom.dol", 0x315100, 0x50
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801EFD38
+	.4byte 0x801C5C70
+	.4byte 0x801C5C74
+	.4byte 0x801C5C78
+	.4byte 0x801EFE60
+	.4byte 0x801F0380
+	.4byte 0x801C5C88
+	.4byte 0x801C5C8C
+	.4byte 0x801C5C9C
+	.4byte 0x801C5CA0
+	.4byte 0x801C5C94
+	.4byte 0x801C5CA4
+	.4byte 0x801C5CA8
+	.4byte 0x801C5CAC
+	.4byte 0x801C5CB0
+	.4byte 0x8016861C
+	.4byte 0x80168614
+	.4byte 0x801F0458
 
 .section .rodata
 
@@ -12,7 +31,60 @@ __vt__38zUICustomBattleModeSelectPlayerManager:
 
 .global _esc__2_stringBase0_154
 _esc__2_stringBase0_154:
-	.incbin "baserom.dol", 0x2E7168, 0xD8
+	.4byte 0x55492050
+	.4byte 0x52455620
+	.4byte 0x53435245
+	.4byte 0x454E2048
+	.4byte 0x414E444C
+	.4byte 0x45520055
+	.4byte 0x49205458
+	.4byte 0x54205359
+	.4byte 0x53204D53
+	.4byte 0x47204348
+	.4byte 0x414E4745
+	.4byte 0x204D4953
+	.4byte 0x53494F4E
+	.4byte 0x00554920
+	.4byte 0x42415454
+	.4byte 0x4C45204D
+	.4byte 0x4F444520
+	.4byte 0x52454D4F
+	.4byte 0x56452054
+	.4byte 0x45585400
+	.4byte 0x55492042
+	.4byte 0x4154544C
+	.4byte 0x45204D4F
+	.4byte 0x44452050
+	.4byte 0x4C415945
+	.4byte 0x5220494D
+	.4byte 0x41474500
+	.4byte 0x55492042
+	.4byte 0x4154544C
+	.4byte 0x45204D4F
+	.4byte 0x44452050
+	.4byte 0x4C415945
+	.4byte 0x5220494D
+	.4byte 0x41474520
+	.4byte 0x4C454654
+	.4byte 0x00554920
+	.4byte 0x42415454
+	.4byte 0x4C45204D
+	.4byte 0x4F444520
+	.4byte 0x504C4159
+	.4byte 0x45522049
+	.4byte 0x4D414745
+	.4byte 0x20524947
+	.4byte 0x48540055
+	.4byte 0x49204241
+	.4byte 0x54544C45
+	.4byte 0x20504C41
+	.4byte 0x59455220
+	.4byte 0x44455343
+	.4byte 0x52495054
+	.4byte 0x494F4E20
+	.4byte 0x54455854
+	.4byte 0x00257300
+	.4byte 0x424D0000
 
 .section .sbss
 
@@ -31,19 +103,26 @@ texture_scene_loaded__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_c
 
 .global battle_player_default__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_
 battle_player_default__45_esc__2_unnamed_esc__2_zUICustomBattleModeSelectPlayer_cpp_esc__2_:
-	.incbin "baserom.dol", 0x333E00, 0x20
+	.4byte 0x504C5934
+	.4byte 0x504C5934
+	.4byte 0x00504C59
+	.4byte 0x34000000
+	.4byte 0x504C5936
+	.4byte 0x504C5936
+	.4byte 0x00504C59
+	.4byte 0x36000000
 .global _esc__2_1012_8
 _esc__2_1012_8:
-	.incbin "baserom.dol", 0x333E20, 0x4
+	.4byte 0x00000000
 .global lbl_803D7464
 lbl_803D7464:
-	.incbin "baserom.dol", 0x333E24, 0x4
+	.4byte 0x3F800000
 .global lbl_803D7468
 lbl_803D7468:
-	.incbin "baserom.dol", 0x333E28, 0x4
+	.4byte 0x00000000
 .global lbl_803D746C
 lbl_803D746C:
-	.incbin "baserom.dol", 0x333E2C, 0x4
+	.4byte 0x00000000
 
 .if 0
 

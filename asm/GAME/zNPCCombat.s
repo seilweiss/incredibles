@@ -4,109 +4,388 @@
 
 .global zNPC_BadGuyMedium_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_BadGuyMedium_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x308768, 0x6C
+	.4byte 0x12000000
+	.4byte 0x3F0CCCCD
+	.4byte 0x00030000
+	.4byte 0x09000000
+	.4byte 0x3F0CCCCD
+	.4byte 0x00040000
+	.4byte 0x05000000
+	.4byte 0x3EEB851F
+	.4byte 0x00010000
+	.4byte 0x1D000000
+	.4byte 0x3ECCCCCD
+	.4byte 0x00030000
+	.4byte 0x1E000000
+	.4byte 0x3E99999A
+	.4byte 0x00030000
+	.4byte 0x19000000
+	.4byte 0x3ECCCCCD
+	.4byte 0x00040000
+	.4byte 0x1A000000
+	.4byte 0x3E99999A
+	.4byte 0x00040000
+	.4byte 0x03000000
+	.4byte 0x3EF5C28F
+	.4byte 0x00010000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global zNPC_Hench_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_Hench_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x3087D4, 0x6C
+	.4byte 0x0A000000
+	.4byte 0x3F0CCCCD
+	.4byte 0x00030000
+	.4byte 0x05000000
+	.4byte 0x3F0CCCCD
+	.4byte 0x00040000
+	.4byte 0x0D000000
+	.4byte 0x3EEB851F
+	.4byte 0x00010000
+	.4byte 0x1C000000
+	.4byte 0x3ECCCCCD
+	.4byte 0x00030000
+	.4byte 0x1D000000
+	.4byte 0x3E99999A
+	.4byte 0x00030000
+	.4byte 0x10000000
+	.4byte 0x3ECCCCCD
+	.4byte 0x00040000
+	.4byte 0x11000000
+	.4byte 0x3E99999A
+	.4byte 0x00040000
+	.4byte 0x03000000
+	.4byte 0x3EF5C28F
+	.4byte 0x00010000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global zNPC_BadGuyShield_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_BadGuyShield_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x308840, 0x54
+	.4byte 0x0D000000
+	.4byte 0x3EB851EC
+	.4byte 0x00010000
+	.4byte 0x14000000
+	.4byte 0x3E99999A
+	.4byte 0x00030000
+	.4byte 0x15000000
+	.4byte 0x3E800000
+	.4byte 0x00030000
+	.4byte 0x10000000
+	.4byte 0x3E99999A
+	.4byte 0x00040000
+	.4byte 0x11000000
+	.4byte 0x3E800000
+	.4byte 0x00040000
+	.4byte 0x03000000
+	.4byte 0x3EF5C28F
+	.4byte 0x00010000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global zNPC_Omnidroid08_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_Omnidroid08_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x308894, 0x54
+	.4byte 0x01000000
+	.4byte 0x40A00000
+	.4byte 0x00000000
+	.4byte 0x11000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x1C000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x3D000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x27000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x32000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 initData__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x3088E8, 0xD8
+	.4byte 0x802E26D8
+	.4byte 0x803CD1C8
+	.4byte 0x00000000
+	.4byte 0x802E26E5
+	.4byte 0x803CD1D0
+	.4byte 0x00000000
+	.4byte 0x802E26F7
+	.4byte 0x803CD1D8
+	.4byte 0x00000000
+	.4byte 0x802E2709
+	.4byte 0x803CD1E0
+	.4byte 0x00000000
+	.4byte 0x802E2718
+	.4byte 0x803CD1E8
+	.4byte 0x00000000
+	.4byte 0x802E2722
+	.4byte 0x803CD1F0
+	.4byte 0x00000000
+	.4byte 0x802E272E
+	.4byte 0x803CD1F8
+	.4byte 0x00000000
+	.4byte 0x802E273E
+	.4byte 0x803CD200
+	.4byte 0x00000000
+	.4byte 0x802E2751
+	.4byte 0x803CD208
+	.4byte 0x00000000
+	.4byte 0x802E2766
+	.4byte 0x803CD210
+	.4byte 0x00000000
+	.4byte 0x802E277B
+	.4byte 0x803CD218
+	.4byte 0x00000000
+	.4byte 0x802E278D
+	.4byte 0x803CD220
+	.4byte 0x00000000
+	.4byte 0x802E279F
+	.4byte 0x803CD228
+	.4byte 0x00000000
+	.4byte 0x802E27A8
+	.4byte 0x803CD230
+	.4byte 0x00000000
+	.4byte 0x802E27B4
+	.4byte 0x803CD238
+	.4byte 0x00000000
+	.4byte 0x802E27C3
+	.4byte 0x803CD240
+	.4byte 0x00000000
+	.4byte 0x802E27D4
+	.4byte 0x803CD248
+	.4byte 0x00000000
+	.4byte 0x802E27E4
+	.4byte 0x803CD250
+	.4byte 0x00000000
 
 .section .rodata
 
 .global _esc__2_stringBase0_75
 _esc__2_stringBase0_75:
-	.incbin "baserom.dol", 0x2DF6D8, 0x120
+	.4byte 0x5A4E5043
+	.4byte 0x5F446566
+	.4byte 0x61756C74
+	.4byte 0x005A4E50
+	.4byte 0x435F4261
+	.4byte 0x64477579
+	.4byte 0x4D656469
+	.4byte 0x756D005A
+	.4byte 0x4E50435F
+	.4byte 0x42616447
+	.4byte 0x75795368
+	.4byte 0x69656C64
+	.4byte 0x005A4E50
+	.4byte 0x435F4261
+	.4byte 0x64477579
+	.4byte 0x46617400
+	.4byte 0x5A4E5043
+	.4byte 0x5F4D696E
+	.4byte 0x65005A4E
+	.4byte 0x50435F4F
+	.4byte 0x7261636C
+	.4byte 0x65005A4E
+	.4byte 0x50435F54
+	.4byte 0x75727265
+	.4byte 0x745F546F
+	.4byte 0x70005A4E
+	.4byte 0x50435F54
+	.4byte 0x75727265
+	.4byte 0x745F4275
+	.4byte 0x6E6B6572
+	.4byte 0x005A4E50
+	.4byte 0x435F5475
+	.4byte 0x72726574
+	.4byte 0x5F427569
+	.4byte 0x6C64696E
+	.4byte 0x67005A4E
+	.4byte 0x50435F54
+	.4byte 0x75727265
+	.4byte 0x745F486F
+	.4byte 0x76657270
+	.4byte 0x6F64005A
+	.4byte 0x4E50435F
+	.4byte 0x54757272
+	.4byte 0x65745F54
+	.4byte 0x6F776572
+	.4byte 0x005A4E50
+	.4byte 0x435F5475
+	.4byte 0x72726574
+	.4byte 0x5F426561
+	.4byte 0x6368005A
+	.4byte 0x4E50435F
+	.4byte 0x43617200
+	.4byte 0x5A4E5043
+	.4byte 0x5F4C6F62
+	.4byte 0x62657200
+	.4byte 0x5A4E5043
+	.4byte 0x5F56656C
+	.4byte 0x6F636970
+	.4byte 0x6F64005A
+	.4byte 0x4E50435F
+	.4byte 0x4F6D6E69
+	.4byte 0x64726F69
+	.4byte 0x64303800
+	.4byte 0x5A4E5043
+	.4byte 0x5F426F6D
+	.4byte 0x62566F79
+	.4byte 0x61676500
+	.4byte 0x5A4E5043
+	.4byte 0x5F426F6D
+	.4byte 0x62566F79
+	.4byte 0x61676548
+	.4byte 0x656C6900
 
 .section .sdata
 
 .global zNPC_Turret_Top_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_Turret_Top_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CC30, 0x18
+	.4byte 0x03000000
+	.4byte 0x40000000
+	.4byte 0x00000000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global zNPC_Turret_Bunker_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_Turret_Bunker_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CC48, 0x18
+	.4byte 0x20000000
+	.4byte 0x40000000
+	.4byte 0x00000000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global zNPC_Turret_Building_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_Turret_Building_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CC60, 0x18
+	.4byte 0x01000000
+	.4byte 0x40000000
+	.4byte 0x00000000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global zNPC_Turret_Hoverpod_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_Turret_Hoverpod_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CC78, 0x18
+	.4byte 0x00000000
+	.4byte 0x40000000
+	.4byte 0x00000000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global zNPC_Turret_Tower_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_Turret_Tower_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CC90, 0x18
+	.4byte 0x00000000
+	.4byte 0x40000000
+	.4byte 0x00000000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global zNPC_Turret_Beach_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_Turret_Beach_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CCA8, 0x18
+	.4byte 0x00000000
+	.4byte 0x40000000
+	.4byte 0x00000000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global zNPC_Velocipod_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_Velocipod_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CCC0, 0x18
+	.4byte 0x01000000
+	.4byte 0x3FA66666
+	.4byte 0x00000000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global zNPC_BombVoyage_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_BombVoyage_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CCD8, 0x18
+	.4byte 0x01000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global zNPC_BombVoyageHeli_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 zNPC_BombVoyageHeli_Bounds__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CCF0, 0x18
+	.4byte 0x01000000
+	.4byte 0x40A00000
+	.4byte 0x00000000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global ZNPC_Default__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Default__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD08, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global ZNPC_BadGuyMedium__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_BadGuyMedium__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD10, 0x8
+	.4byte 0x8030B768
+	.4byte 0x3FA66666
 .global ZNPC_BadGuyShield__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_BadGuyShield__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD18, 0x8
+	.4byte 0x8030B840
+	.4byte 0x3FA66666
 .global ZNPC_BadGuyFat__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_BadGuyFat__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD20, 0x8
+	.4byte 0x00000000
+	.4byte 0x3FA66666
 .global ZNPC_Mine__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Mine__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD28, 0x8
+	.4byte 0x00000000
+	.4byte 0x3F800000
 .global ZNPC_Oracle__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Oracle__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD30, 0x8
+	.4byte 0x00000000
+	.4byte 0x3F800000
 .global ZNPC_Turret_Top__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Top__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD38, 0x8
+	.4byte 0x803CD0F0
+	.4byte 0x3FD9999A
 .global ZNPC_Turret_Bunker__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Bunker__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD40, 0x8
+	.4byte 0x803CD108
+	.4byte 0x40000000
 .global ZNPC_Turret_Building__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Building__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD48, 0x8
+	.4byte 0x803CD120
+	.4byte 0x40000000
 .global ZNPC_Turret_Hoverpod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Hoverpod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD50, 0x8
+	.4byte 0x803CD138
+	.4byte 0x40000000
 .global ZNPC_Turret_Tower__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Tower__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD58, 0x8
+	.4byte 0x803CD150
+	.4byte 0x40000000
 .global ZNPC_Turret_Beach__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Turret_Beach__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD60, 0x8
+	.4byte 0x803CD168
+	.4byte 0x40000000
 .global ZNPC_Car__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Car__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD68, 0x8
+	.4byte 0x00000000
+	.4byte 0x3F800000
 .global ZNPC_Lobber__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Lobber__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD70, 0x8
+	.4byte 0x8030B7D4
+	.4byte 0x3FA66666
 .global ZNPC_Velocipod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Velocipod__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD78, 0x8
+	.4byte 0x803CD180
+	.4byte 0x3FA66666
 .global ZNPC_Omnidroid08__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_Omnidroid08__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD80, 0x8
+	.4byte 0x8030B894
+	.4byte 0x40A00000
 .global ZNPC_BombVoyage__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_BombVoyage__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD88, 0x8
+	.4byte 0x803CD198
+	.4byte 0x3F800000
 .global ZNPC_BombVoyageHeli__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_
 ZNPC_BombVoyageHeli__24_esc__2_unnamed_esc__2_zNPCCombat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32CD90, 0x8
+	.4byte 0x803CD1B0
+	.4byte 0x40A00000
 
 .if 0
 

@@ -4,22 +4,32 @@
 
 .global _esc__2_stringBase0_48
 _esc__2_stringBase0_48:
-	.incbin "baserom.dol", 0x2D8B70, 0x18
+	.4byte 0x41564154
+	.4byte 0x41520025
+	.4byte 0x64004372
+	.4byte 0x65617465
+	.4byte 0x64000000
+	.4byte 0x00000000
 
 .section .sdata
 
 .global __vt__11zDuplicator
 __vt__11zDuplicator:
-	.incbin "baserom.dol", 0x32BC58, 0x18
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x800AF438
+	.4byte 0x800AF340
+	.4byte 0x800AF380
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1026_1
 _esc__2_1026_1:
-	.incbin "baserom.dol", 0x330150, 0x4
+	.4byte 0x00000000
 .global _esc__2_1148_0
 _esc__2_1148_0:
-	.incbin "baserom.dol", 0x330154, 0x4
+	.4byte 0x3F800000
 
 .if 0
 

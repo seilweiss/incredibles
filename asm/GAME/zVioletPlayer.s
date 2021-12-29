@@ -4,91 +4,323 @@
 
 .global bounds_esc__7_1106
 bounds_esc__7_1106:
-	.incbin "baserom.dol", 0x30DC90, 0x48
+	.4byte 0x07000000
+	.4byte 0x3E4CCCCD
+	.4byte 0x00010000
+	.4byte 0x04000000
+	.4byte 0x3E99999A
+	.4byte 0x00010000
+	.4byte 0x01000000
+	.4byte 0x3E99999A
+	.4byte 0x00010000
+	.4byte 0x34000000
+	.4byte 0x3E99999A
+	.4byte 0x00010000
+	.4byte 0x38000000
+	.4byte 0x3E99999A
+	.4byte 0x00010000
+	.4byte 0xFE000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__13zVioletPlayer
 __vt__13zVioletPlayer:
-	.incbin "baserom.dol", 0x30DCD8, 0x120
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8016F2D0
+	.4byte 0x8016F304
+	.4byte 0x8016F49C
+	.4byte 0x80097314
+	.4byte 0x80095FD4
+	.4byte 0x80099200
+	.4byte 0x8016F530
+	.4byte 0x80096C6C
+	.4byte 0x8016F9E8
+	.4byte 0x8016F8BC
+	.4byte 0x8009F480
+	.4byte 0x80097798
+	.4byte 0x8016F418
+	.4byte 0x801700BC
+	.4byte 0x8009F468
+	.4byte 0x8016F3D0
+	.4byte 0x8016F984
+	.4byte 0x8009F4AC
+	.4byte 0x8016F2C4
+	.4byte 0x80096D68
+	.4byte 0x80096D28
+	.4byte 0x800969D4
+	.4byte 0x800979F8
+	.4byte 0x800979C0
+	.4byte 0x80087C8C
+	.4byte 0x8009F4BC
+	.4byte 0x8009E3BC
+	.4byte 0x800980B4
+	.4byte 0x80098160
+	.4byte 0x80098188
+	.4byte 0x8009CE00
+	.4byte 0x8008A23C
+	.4byte 0x80099D68
+	.4byte 0x8016F950
+	.4byte 0x8014C4C0
+	.4byte 0x80170178
+	.4byte 0x801700C4
+	.4byte 0x8009F44C
+	.4byte 0x800969CC
+	.4byte 0x8016F338
+	.4byte 0x8016FAA8
+	.4byte 0x8016FC04
+	.4byte 0x8014EF34
+	.4byte 0x8014FA50
+	.4byte 0x8014FA04
+	.4byte 0x8009A7B8
+	.4byte 0x8009A744
+	.4byte 0x8014EC00
+	.4byte 0x80170020
+	.4byte 0x8009BFB0
+	.4byte 0x800993DC
+	.4byte 0x8009F4C4
+	.4byte 0x8009F4CC
+	.4byte 0x8009F470
+	.4byte 0x8014A5F4
+	.4byte 0x8009D0D8
+	.4byte 0x80170190
+	.4byte 0x80095728
+	.4byte 0x80097A38
+	.4byte 0x8009F464
+	.4byte 0x8009C6FC
+	.4byte 0x80099D80
+	.4byte 0x8016F404
+	.4byte 0x8016F410
+	.4byte 0x8009AA84
+	.4byte 0x8009BEFC
+	.4byte 0x8009CE08
+	.4byte 0x80098F28
+	.4byte 0x8009A180
+	.4byte 0x00000000
 
 .section .rodata
 
 .global headBones__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_
 headBones__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_:
-	.incbin "baserom.dol", 0x2E3120, 0x74
+	.4byte 0x00000006
+	.4byte 0x00000007
+	.4byte 0x00000008
+	.4byte 0x00000009
+	.4byte 0x0000000A
+	.4byte 0x0000000B
+	.4byte 0x0000000C
+	.4byte 0x0000000D
+	.4byte 0x0000000E
+	.4byte 0x0000000F
+	.4byte 0x00000010
+	.4byte 0x00000011
+	.4byte 0x00000012
+	.4byte 0x00000013
+	.4byte 0x00000014
+	.4byte 0x00000015
+	.4byte 0x00000016
+	.4byte 0x00000017
+	.4byte 0x00000018
+	.4byte 0x00000019
+	.4byte 0x0000001A
+	.4byte 0x0000001B
+	.4byte 0x0000001C
+	.4byte 0x0000001D
+	.4byte 0x0000001E
+	.4byte 0x0000001F
+	.4byte 0x00000020
+	.4byte 0x00000021
+	.4byte 0xFFFFFFFF
 .global _esc__2_stringBase0_104
 _esc__2_stringBase0_104:
-	.incbin "baserom.dol", 0x2E3194, 0x1C4
+	.4byte 0x494E5649
+	.4byte 0x535F504F
+	.4byte 0x5745525F
+	.4byte 0x52455155
+	.4byte 0x49524544
+	.4byte 0x00494E56
+	.4byte 0x49535F50
+	.4byte 0x4F574552
+	.4byte 0x5F494E49
+	.4byte 0x5449414C
+	.4byte 0x00494E56
+	.4byte 0x49535F50
+	.4byte 0x4F574552
+	.4byte 0x5F4F4E47
+	.4byte 0x4F494E47
+	.4byte 0x00494E43
+	.4byte 0x52454449
+	.4byte 0x504F5745
+	.4byte 0x525F5245
+	.4byte 0x434F5645
+	.4byte 0x52590045
+	.4byte 0x6E656D69
+	.4byte 0x65732041
+	.4byte 0x766F6964
+	.4byte 0x65640049
+	.4byte 0x6E766973
+	.4byte 0x69626C65
+	.4byte 0x2054696D
+	.4byte 0x65005649
+	.4byte 0x4F4C4554
+	.4byte 0x5F545552
+	.4byte 0x4E5F5649
+	.4byte 0x5349424C
+	.4byte 0x455F5347
+	.4byte 0x5250004C
+	.4byte 0x75636B00
+	.4byte 0x56494F4C
+	.4byte 0x45545F54
+	.4byte 0x55524E5F
+	.4byte 0x494E5649
+	.4byte 0x5349424C
+	.4byte 0x455F5347
+	.4byte 0x52500053
+	.4byte 0x6E65616B
+	.4byte 0x696E6720
+	.4byte 0x54696D65
+	.4byte 0x00696E76
+	.4byte 0x69733D25
+	.4byte 0x642C2070
+	.4byte 0x6F776572
+	.4byte 0x3D252E33
+	.4byte 0x662C2061
+	.4byte 0x6C706861
+	.4byte 0x3D252E33
+	.4byte 0x660A004A
+	.4byte 0x756D7053
+	.4byte 0x74617274
+	.4byte 0x30310046
+	.4byte 0x616C6C30
+	.4byte 0x31004465
+	.4byte 0x61746830
+	.4byte 0x31004661
+	.4byte 0x6C6C4465
+	.4byte 0x61746830
+	.4byte 0x31004964
+	.4byte 0x6C652320
+	.4byte 0x57616C6B
+	.4byte 0x23204D6F
+	.4byte 0x76652320
+	.4byte 0x4C616E64
+	.4byte 0x3031204C
+	.4byte 0x616E6448
+	.4byte 0x69676830
+	.4byte 0x32005275
+	.4byte 0x6E23204C
+	.4byte 0x616E6430
+	.4byte 0x32004A75
+	.4byte 0x6D705374
+	.4byte 0x61727430
+	.4byte 0x32004A75
+	.4byte 0x6D705374
+	.4byte 0x6172747B
+	.4byte 0x237D0046
+	.4byte 0x616C6C7E
+	.4byte 0x004A756D
+	.4byte 0x702A2320
+	.4byte 0x46616C6C
+	.4byte 0x23004C61
+	.4byte 0x6E643031
+	.4byte 0x004C616E
+	.4byte 0x64303200
+	.4byte 0x57616C6B
+	.4byte 0x30310057
+	.4byte 0x616C6B30
+	.4byte 0x32004964
+	.4byte 0x6C653031
+	.4byte 0x0049646C
+	.4byte 0x65303200
+	.4byte 0x3C2A3B46
+	.4byte 0x616C6C44
+	.4byte 0x65617468
+	.4byte 0x233E0046
+	.4byte 0x616C6C2A
+	.4byte 0x0057616C
+	.4byte 0x6B23204D
+	.4byte 0x6F766523
+	.4byte 0x0052756E
+	.4byte 0x23004661
+	.4byte 0x6C6C3032
+	.4byte 0x00496E63
+	.4byte 0x72656469
+	.4byte 0x506F696E
+	.4byte 0x74730000
 
 .section .sdata
 
 .global INVIS_POWER_REQUIRED__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_
 INVIS_POWER_REQUIRED__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D0F8, 0x4
+	.4byte 0x3E99999A
 .global INVIS_POWER_INITIAL__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_
 INVIS_POWER_INITIAL__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D0FC, 0x4
+	.4byte 0x3DCCCCCD
 .global INVIS_POWER_ONGOING__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_
 INVIS_POWER_ONGOING__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D100, 0x4
+	.4byte 0x3C23D70A
 .global INCREDIPOWER_RECOVERY__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_
 INCREDIPOWER_RECOVERY__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D104, 0x4
+	.4byte 0x3E4CCCCD
 .global DEFAULT_INVISIBILITY_POWER__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_
 DEFAULT_INVISIBILITY_POWER__27_esc__2_unnamed_esc__2_zVioletPlayer_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D108, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1090_2
 _esc__2_1090_2:
-	.incbin "baserom.dol", 0x332278, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1112_0
 _esc__2_1112_0:
-	.incbin "baserom.dol", 0x33227C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1130_0
 _esc__2_1130_0:
-	.incbin "baserom.dol", 0x332280, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1131_1
 _esc__2_1131_1:
-	.incbin "baserom.dol", 0x332284, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_1178_2
 _esc__2_1178_2:
-	.incbin "baserom.dol", 0x332288, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1179_1
 _esc__2_1179_1:
-	.incbin "baserom.dol", 0x33228C, 0x4
+	.4byte 0x42C80000
 .global _esc__2_1180_1
 _esc__2_1180_1:
-	.incbin "baserom.dol", 0x332290, 0x4
+	.4byte 0x00000000
 .global _esc__2_1181_0
 _esc__2_1181_0:
-	.incbin "baserom.dol", 0x332294, 0x4
+	.4byte 0x40A00000
 .global _esc__2_1182_3
 _esc__2_1182_3:
-	.incbin "baserom.dol", 0x332298, 0x4
+	.4byte 0xBF400000
 .global _esc__2_1183_3
 _esc__2_1183_3:
-	.incbin "baserom.dol", 0x33229C, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_1184_3
 _esc__2_1184_3:
-	.incbin "baserom.dol", 0x3322A0, 0x4
+	.4byte 0x3D4CCCCD
 .global _esc__2_1185_2
 _esc__2_1185_2:
-	.incbin "baserom.dol", 0x3322A4, 0x4
+	.4byte 0x4096CBE4
 .global _esc__2_1186_4
 _esc__2_1186_4:
-	.incbin "baserom.dol", 0x3322A8, 0x4
+	.4byte 0x40800000
 .global _esc__2_1187_4
 _esc__2_1187_4:
-	.incbin "baserom.dol", 0x3322AC, 0x4
+	.4byte 0x41000000
 .global _esc__2_1188_1
 _esc__2_1188_1:
-	.incbin "baserom.dol", 0x3322B0, 0x8
+	.4byte 0x40400000
+	.4byte 0x00000000
 .global _esc__2_1237_1
 _esc__2_1237_1:
-	.incbin "baserom.dol", 0x3322B8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1247_0
 _esc__2_1247_0:
-	.incbin "baserom.dol", 0x3322C0, 0x8
+	.4byte 0x3E19999A
+	.4byte 0x00000000
 
 .if 0
 

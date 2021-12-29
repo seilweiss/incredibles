@@ -10,10 +10,10 @@ sChandelierHash:
 
 .global _esc__2_967
 _esc__2_967:
-	.incbin "baserom.dol", 0x330390, 0x4
+	.4byte 0x00000000
 .global _esc__2_968
 _esc__2_968:
-	.incbin "baserom.dol", 0x330394, 0x4
+	.4byte 0x40400000
 
 .if 0
 

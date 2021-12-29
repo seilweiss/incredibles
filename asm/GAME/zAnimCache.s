@@ -22,10 +22,10 @@ currentCacheIndex__24_esc__2_unnamed_esc__2_zAnimCache_cpp_esc__2_:
 
 .global _esc__2_888_0
 _esc__2_888_0:
-	.incbin "baserom.dol", 0x32F9E8, 0x4
+	.4byte 0x00000000
 .global _esc__2_889_0
 _esc__2_889_0:
-	.incbin "baserom.dol", 0x32F9EC, 0x4
+	.4byte 0x3B888889
 
 .if 0
 

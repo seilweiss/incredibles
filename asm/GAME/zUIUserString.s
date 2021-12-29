@@ -4,13 +4,39 @@
 
 .global __vt__13zUIUserString
 __vt__13zUIUserString:
-	.incbin "baserom.dol", 0x30D8A8, 0x58
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8016DF10
+	.4byte 0x8016840C
+	.4byte 0x8016DB64
+	.4byte 0x8016A130
+	.4byte 0x8016DB6C
+	.4byte 0x801686C0
+	.4byte 0x8016DBF8
+	.4byte 0x801687A0
+	.4byte 0x8016DC88
+	.4byte 0x8016D624
+	.4byte 0x80168BD4
+	.4byte 0x80168EA4
+	.4byte 0x80169AE0
+	.4byte 0x8016D97C
+	.4byte 0x80169E38
+	.4byte 0x80169E98
+	.4byte 0x80169F90
+	.4byte 0x8016A02C
+	.4byte 0x80169EF8
+	.4byte 0x80169F48
 
 .section .rodata
 
 .global _esc__2_stringBase0_102
 _esc__2_stringBase0_102:
-	.incbin "baserom.dol", 0x2E2B50, 0x18
+	.4byte 0x596F7572
+	.4byte 0x4E616D65
+	.4byte 0x496E4C69
+	.4byte 0x67687473
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .if 0
 

@@ -25,43 +25,53 @@ lbl_803D8A04:
 
 .global __vt__11zZipLineCam
 __vt__11zZipLineCam:
-	.incbin "baserom.dol", 0x32B778, 0x28
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80083FC8
+	.4byte 0x80010314
+	.4byte 0x80084018
+	.4byte 0x8000E648
+	.4byte 0x80084120
+	.4byte 0x8000EDCC
+	.4byte 0x80084440
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_933
 _esc__2_933:
-	.incbin "baserom.dol", 0x32F9B8, 0x4
+	.4byte 0x3F800000
 .global _esc__2_934
 _esc__2_934:
-	.incbin "baserom.dol", 0x32F9BC, 0x4
+	.4byte 0x41200000
 .global _esc__2_935_1
 _esc__2_935_1:
-	.incbin "baserom.dol", 0x32F9C0, 0x4
+	.4byte 0x00000000
 .global _esc__2_936_2
 _esc__2_936_2:
-	.incbin "baserom.dol", 0x32F9C4, 0x4
+	.4byte 0xBFC00000
 .global _esc__2_937_1
 _esc__2_937_1:
-	.incbin "baserom.dol", 0x32F9C8, 0x4
+	.4byte 0x40E00000
 .global _esc__2_938
 _esc__2_938:
-	.incbin "baserom.dol", 0x32F9CC, 0x4
+	.4byte 0x3F000000
 .global _esc__2_939_0
 _esc__2_939_0:
-	.incbin "baserom.dol", 0x32F9D0, 0x4
+	.4byte 0x40000000
 .global _esc__2_940
 _esc__2_940:
-	.incbin "baserom.dol", 0x32F9D4, 0x4
+	.4byte 0x40A00000
 .global _esc__2_941_1
 _esc__2_941_1:
-	.incbin "baserom.dol", 0x32F9D8, 0x4
+	.4byte 0xBF800000
 .global _esc__2_942
 _esc__2_942:
-	.incbin "baserom.dol", 0x32F9DC, 0x4
+	.4byte 0x40200000
 .global _esc__2_1006
 _esc__2_1006:
-	.incbin "baserom.dol", 0x32F9E0, 0x8
+	.4byte 0x3A83126F
+	.4byte 0x00000000
 
 .if 0
 

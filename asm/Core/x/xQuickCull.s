@@ -10,19 +10,20 @@ xqc_def_ctrl:
 
 .global _esc__2_603
 _esc__2_603:
-	.incbin "baserom.dol", 0x32F278, 0x4
+	.4byte 0x00000000
 .global _esc__2_604
 _esc__2_604:
-	.incbin "baserom.dol", 0x32F27C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_605
 _esc__2_605:
-	.incbin "baserom.dol", 0x32F280, 0x4
+	.4byte 0x42FE0000
 .global _esc__2_606
 _esc__2_606:
-	.incbin "baserom.dol", 0x32F284, 0x4
+	.4byte 0x3F000000
 .global _esc__2_779
 _esc__2_779:
-	.incbin "baserom.dol", 0x32F288, 0x8
+	.4byte 0x3D4CCCCD
+	.4byte 0x00000000
 
 .if 0
 

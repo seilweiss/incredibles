@@ -4,10 +4,84 @@
 
 .global _esc__2_818
 _esc__2_818:
-	.incbin "baserom.dol", 0x2E29B0, 0x120
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 .global _esc__2_stringBase0_97
 _esc__2_stringBase0_97:
-	.incbin "baserom.dol", 0x2E2AD0, 0x10
+	.4byte 0x626C6168
+	.4byte 0x626C6168
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -19,40 +93,53 @@ head_active__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_:
 
 .global render_bk_table__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_
 render_bk_table__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D050, 0x10
+	.4byte 0x8016366C
+	.4byte 0x801636E0
+	.4byte 0x801638F8
+	.4byte 0x801638FC
 .global new_tags__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_
 new_tags__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D060, 0x14
+	.4byte 0x802E5AD0
+	.4byte 0x00000008
+	.4byte 0x80163FDC
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global new_tags_size__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_
 new_tags_size__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D074, 0x4
+	.4byte 0x00000001
 
 .section .sdata2
 
 .global _esc__2_798
 _esc__2_798:
-	.incbin "baserom.dol", 0x332078, 0x4
+	.4byte 0x3F800000
 .global _esc__2_799
 _esc__2_799:
-	.incbin "baserom.dol", 0x33207C, 0x4
+	.4byte 0x00000000
 .global _esc__2_802_0
 _esc__2_802_0:
-	.incbin "baserom.dol", 0x332080, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_866_1
 _esc__2_866_1:
-	.incbin "baserom.dol", 0x332088, 0x4
+	.4byte 0x40000000
 .global xjlookup_esc__7_879
 xjlookup_esc__7_879:
-	.incbin "baserom.dol", 0x33208C, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000002
+	.4byte 0x00000001
 .global yjlookup_esc__7_880
 yjlookup_esc__7_880:
-	.incbin "baserom.dol", 0x332098, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000008
+	.4byte 0x00000004
 .global _esc__2_906_1
 _esc__2_906_1:
-	.incbin "baserom.dol", 0x3320A4, 0x4
+	.4byte 0x3FAA3D71
 .global _esc__2_907_1
 _esc__2_907_1:
-	.incbin "baserom.dol", 0x3320A8, 0x8
+	.4byte 0x3F000000
+	.4byte 0x00000000
 
 .if 0
 

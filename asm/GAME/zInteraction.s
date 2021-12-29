@@ -4,7 +4,46 @@
 
 .global _esc__2_stringBase0_116
 _esc__2_stringBase0_116:
-	.incbin "baserom.dol", 0x2E44C8, 0xA0
+	.4byte 0x6C6F6361
+	.4byte 0x74696F6E
+	.4byte 0x0070756C
+	.4byte 0x6C004163
+	.4byte 0x74696F6E
+	.4byte 0x4C61756E
+	.4byte 0x63684964
+	.4byte 0x6C653031
+	.4byte 0x00416374
+	.4byte 0x696F6E4C
+	.4byte 0x61756E63
+	.4byte 0x68477261
+	.4byte 0x62303100
+	.4byte 0x41637469
+	.4byte 0x6F6E4C61
+	.4byte 0x756E6368
+	.4byte 0x466C696E
+	.4byte 0x67426567
+	.4byte 0x696E3031
+	.4byte 0x004C6175
+	.4byte 0x6E636800
+	.4byte 0x49646C65
+	.4byte 0x30310047
+	.4byte 0x72616230
+	.4byte 0x31004772
+	.4byte 0x61624964
+	.4byte 0x6C653031
+	.4byte 0x004C6175
+	.4byte 0x6E636830
+	.4byte 0x31004661
+	.4byte 0x696C3031
+	.4byte 0x0049646C
+	.4byte 0x65303120
+	.4byte 0x4661696C
+	.4byte 0x30310047
+	.4byte 0x72616230
+	.4byte 0x31204772
+	.4byte 0x61624964
+	.4byte 0x6C653031
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -28,142 +67,147 @@ leaves_particle_system__26_esc__2_unnamed_esc__2_zInteraction_cpp_esc__2_:
 
 .global sAlphaUpRate_0
 sAlphaUpRate_0:
-	.incbin "baserom.dol", 0x32D2F0, 0x4
+	.4byte 0x3F800000
 .global sAlphaDownRate_0
 sAlphaDownRate_0:
-	.incbin "baserom.dol", 0x32D2F4, 0x4
+	.4byte 0x40000000
 .global sMaxDrawDist2
 sMaxDrawDist2:
-	.incbin "baserom.dol", 0x32D2F8, 0x4
+	.4byte 0x42C80000
 .global sMinDrawAlpha
 sMinDrawAlpha:
-	.incbin "baserom.dol", 0x32D2FC, 0x4
+	.4byte 0x3F000000
 .global sMaxDrawAlpha_0
 sMaxDrawAlpha_0:
-	.incbin "baserom.dol", 0x32D300, 0x4
+	.4byte 0x3F19999A
 .global sTurnStandDist
 sTurnStandDist:
-	.incbin "baserom.dol", 0x32D304, 0x4
+	.4byte 0x3FCCCCCD
 .global sTurnMinDot
 sTurnMinDot:
-	.incbin "baserom.dol", 0x32D308, 0x4
+	.4byte 0x3E4CCCCD
 .global sLaunchMaxDist2
 sLaunchMaxDist2:
-	.incbin "baserom.dol", 0x32D30C, 0x4
+	.4byte 0x40100000
 .global sLaunchHalfYawRange
 sLaunchHalfYawRange:
-	.incbin "baserom.dol", 0x32D310, 0x4
+	.4byte 0x405D2B0B
 .global sLaunchFlipLength
 sLaunchFlipLength:
-	.incbin "baserom.dol", 0x32D314, 0x4
+	.4byte 0x3F000000
 .global sLaunchReelInBeginPull
 sLaunchReelInBeginPull:
-	.incbin "baserom.dol", 0x32D318, 0x4
+	.4byte 0x3F800000
 .global sLiftBoneIndex
 sLiftBoneIndex:
-	.incbin "baserom.dol", 0x32D31C, 0x4
+	.4byte 0x00000020
 .global sLiftBoneOffset
 sLiftBoneOffset:
-	.incbin "baserom.dol", 0x32D320, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1042_0
 _esc__2_1042_0:
-	.incbin "baserom.dol", 0x332B18, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1043_6
 _esc__2_1043_6:
-	.incbin "baserom.dol", 0x332B1C, 0x4
+	.4byte 0x00000000
 .global _esc__2_1050_2
 _esc__2_1050_2:
-	.incbin "baserom.dol", 0x332B20, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1083_4
 _esc__2_1083_4:
-	.incbin "baserom.dol", 0x332B24, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1212_1
 _esc__2_1212_1:
-	.incbin "baserom.dol", 0x332B28, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_1213_0
 _esc__2_1213_0:
-	.incbin "baserom.dol", 0x332B2C, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1214_0
 _esc__2_1214_0:
-	.incbin "baserom.dol", 0x332B30, 0x4
+	.4byte 0x3FC00000
 .global _esc__2_1215_2
 _esc__2_1215_2:
-	.incbin "baserom.dol", 0x332B34, 0x4
+	.4byte 0x40000000
 .global _esc__2_1238_1
 _esc__2_1238_1:
-	.incbin "baserom.dol", 0x332B38, 0x4
+	.4byte 0x40800000
 .global _esc__2_1239_0
 _esc__2_1239_0:
-	.incbin "baserom.dol", 0x332B3C, 0x4
+	.4byte 0xC0800000
 .global _esc__2_1240_0
 _esc__2_1240_0:
-	.incbin "baserom.dol", 0x332B40, 0x4
+	.4byte 0x3F19999A
 .global _esc__2_1284_1
 _esc__2_1284_1:
-	.incbin "baserom.dol", 0x332B44, 0x4
+	.4byte 0x42652EE0
 .global _esc__2_1301_0
 _esc__2_1301_0:
-	.incbin "baserom.dol", 0x332B48, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1332_7
 _esc__2_1332_7:
-	.incbin "baserom.dol", 0x332B4C, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_1333_7
 _esc__2_1333_7:
-	.incbin "baserom.dol", 0x332B50, 0x4
+	.4byte 0x3C8EFA35
 .global _esc__2_1505_1
 _esc__2_1505_1:
-	.incbin "baserom.dol", 0x332B54, 0x4
+	.4byte 0x43340000
 .global _esc__2_1506_1
 _esc__2_1506_1:
-	.incbin "baserom.dol", 0x332B58, 0x4
+	.4byte 0x42C80000
 .global _esc__2_1507_0
 _esc__2_1507_0:
-	.incbin "baserom.dol", 0x332B5C, 0x4
+	.4byte 0x43B40000
 .global _esc__2_1508_1
 _esc__2_1508_1:
-	.incbin "baserom.dol", 0x332B60, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_1509_1
 _esc__2_1509_1:
-	.incbin "baserom.dol", 0x332B64, 0x4
+	.4byte 0xC0490FDB
 .global _esc__2_1511
 _esc__2_1511:
-	.incbin "baserom.dol", 0x332B68, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1513_3
 _esc__2_1513_3:
-	.incbin "baserom.dol", 0x332B70, 0x4
+	.4byte 0x42340000
 .global _esc__2_1528_2
 _esc__2_1528_2:
-	.incbin "baserom.dol", 0x332B74, 0x4
+	.4byte 0x3ECCCCCD
 .global _esc__2_1639
 _esc__2_1639:
-	.incbin "baserom.dol", 0x332B78, 0x4
+	.4byte 0xBECCCCCD
 .global _esc__2_1640_1
 _esc__2_1640_1:
-	.incbin "baserom.dol", 0x332B7C, 0x4
+	.4byte 0x3F4CCCCD
 .global _esc__2_1693_0
 _esc__2_1693_0:
-	.incbin "baserom.dol", 0x332B80, 0x4
+	.4byte 0x3F490FDB
 .global _esc__2_1738_2
 _esc__2_1738_2:
-	.incbin "baserom.dol", 0x332B84, 0x4
+	.4byte 0x3D99999A
 .global _esc__2_1739_1
 _esc__2_1739_1:
-	.incbin "baserom.dol", 0x332B88, 0x4
+	.4byte 0x43FA0000
 .global _esc__2_1740_1
 _esc__2_1740_1:
-	.incbin "baserom.dol", 0x332B8C, 0x4
+	.4byte 0x3D4CCCCD
 .global _esc__2_1741_0
 _esc__2_1741_0:
-	.incbin "baserom.dol", 0x332B90, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1951
 _esc__2_1951:
-	.incbin "baserom.dol", 0x332B94, 0x4
+	.4byte 0x3C23D70A
 .global _esc__2_2044
 _esc__2_2044:
-	.incbin "baserom.dol", 0x332B98, 0x8
+	.4byte 0x3E19999A
+	.4byte 0x00000000
 
 .if 0
 

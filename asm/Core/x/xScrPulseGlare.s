@@ -13,52 +13,54 @@ sStripVert_esc__7_715:
 
 .global _esc__2_654_0
 _esc__2_654_0:
-	.incbin "baserom.dol", 0x332750, 0x4
+	.4byte 0x43480000
 .global _esc__2_655_0
 _esc__2_655_0:
-	.incbin "baserom.dol", 0x332754, 0x4
+	.4byte 0x00000000
 .global _esc__2_656
 _esc__2_656:
-	.incbin "baserom.dol", 0x332758, 0x4
+	.4byte 0x40000000
 .global _esc__2_657_0
 _esc__2_657_0:
-	.incbin "baserom.dol", 0x33275C, 0x4
+	.4byte 0x41A00000
 .global _esc__2_662_0
 _esc__2_662_0:
-	.incbin "baserom.dol", 0x332760, 0x8
+	.4byte 0x457A0000
+	.4byte 0x00000000
 .global _esc__2_664_0
 _esc__2_664_0:
-	.incbin "baserom.dol", 0x332768, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_670
 _esc__2_670:
-	.incbin "baserom.dol", 0x332770, 0x4
+	.4byte 0x41F00000
 .global _esc__2_671
 _esc__2_671:
-	.incbin "baserom.dol", 0x332774, 0x4
+	.4byte 0x3F800000
 .global _esc__2_672_0
 _esc__2_672_0:
-	.incbin "baserom.dol", 0x332778, 0x4
+	.4byte 0x42B40000
 .global _esc__2_673
 _esc__2_673:
-	.incbin "baserom.dol", 0x33277C, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_674_1
 _esc__2_674_1:
-	.incbin "baserom.dol", 0x332780, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_687_0
 _esc__2_687_0:
-	.incbin "baserom.dol", 0x332784, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_827_0
 _esc__2_827_0:
-	.incbin "baserom.dol", 0x332788, 0x4
+	.4byte 0x3EA2E8BA
 .global _esc__2_828_0
 _esc__2_828_0:
-	.incbin "baserom.dol", 0x33278C, 0x4
+	.4byte 0x3F000000
 .global _esc__2_829_0
 _esc__2_829_0:
-	.incbin "baserom.dol", 0x332790, 0x4
+	.4byte 0x42340000
 .global _esc__2_830
 _esc__2_830:
-	.incbin "baserom.dol", 0x332794, 0x4
+	.4byte 0x437F0000
 
 .if 0
 

@@ -13,7 +13,44 @@ memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_:
 
 .global _esc__2_stringBase0_28
 _esc__2_stringBase0_28:
-	.incbin "baserom.dol", 0x2CF8B0, 0x98
+	.4byte 0x48656170
+	.4byte 0x206F7665
+	.4byte 0x726C6170
+	.4byte 0x73206D61
+	.4byte 0x6C6C6F63
+	.4byte 0x20706F6F
+	.4byte 0x6C0A546F
+	.4byte 0x703A2025
+	.4byte 0x3038583B
+	.4byte 0x20507472
+	.4byte 0x3A202530
+	.4byte 0x38580A4F
+	.4byte 0x7074696F
+	.4byte 0x6E733A20
+	.4byte 0x25303858
+	.4byte 0x004D656D
+	.4byte 0x6F72794D
+	.4byte 0x616E6167
+	.4byte 0x65724D75
+	.4byte 0x6C746900
+	.4byte 0x23232320
+	.4byte 0x4F766572
+	.4byte 0x20627920
+	.4byte 0x25642062
+	.4byte 0x79746573
+	.4byte 0x20282536
+	.4byte 0x2E326620
+	.4byte 0x4B42290A
+	.4byte 0x006F7074
+	.4byte 0x696F6E73
+	.4byte 0x3D253038
+	.4byte 0x5800784D
+	.4byte 0x656D6F72
+	.4byte 0x794D616E
+	.4byte 0x61676572
+	.4byte 0x3A3A416C
+	.4byte 0x6C6F6361
+	.4byte 0x74650000
 
 .section .sbss
 
@@ -49,16 +86,24 @@ sMemMgrEnableRenderWareMemoryHack:
 
 .global __vt__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMulti
 __vt__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMulti:
-	.incbin "baserom.dol", 0x32B5E8, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80078360
+	.4byte 0x80078728
+	.4byte 0x800785B0
+	.4byte 0x80078804
+	.4byte 0x80078928
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_727
 _esc__2_727:
-	.incbin "baserom.dol", 0x32F848, 0x8
+	.4byte 0x3A800000
+	.4byte 0x00000000
 .global _esc__2_729
 _esc__2_729:
-	.incbin "baserom.dol", 0x32F850, 0x4
+	.4byte 0x43300000
 
 .if 0
 

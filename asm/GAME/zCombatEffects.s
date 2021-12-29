@@ -16,25 +16,297 @@ bitsSystem_esc__7_1663:
 
 .global hit_effects__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_
 hit_effects__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
-	.incbin "baserom.dol", 0x301EF0, 0x1E0
+	.4byte 0x00000000
+	.4byte 0x01000000
+	.4byte 0x03000000
+	.4byte 0x03000000
+	.4byte 0x3E99999A
+	.4byte 0x0000FF00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0x0000FF00
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x3F266666
+	.4byte 0x0000FF00
+	.4byte 0x02000000
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0x0000FF00
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x0000FF00
+	.4byte 0x01000000
+	.4byte 0x00000000
+	.4byte 0x40000000
+	.4byte 0x0000FF00
+	.4byte 0x02000000
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0x0000FF00
+	.4byte 0x00000000
+	.4byte 0x03000000
+	.4byte 0x3F800000
+	.4byte 0x0000FF00
+	.4byte 0x01000000
+	.4byte 0x03000000
+	.4byte 0x40000000
+	.4byte 0x0000FF00
+	.4byte 0x02000000
+	.4byte 0x03000000
+	.4byte 0x00000000
+	.4byte 0x01000000
+	.4byte 0x03000000
+	.4byte 0x03000000
+	.4byte 0x3E99999A
+	.4byte 0x0000FF00
+	.4byte 0x00000000
+	.4byte 0x01000000
+	.4byte 0x3F000000
+	.4byte 0x0000FF00
+	.4byte 0x01000000
+	.4byte 0x01000000
+	.4byte 0x3F266666
+	.4byte 0x0000FF00
+	.4byte 0x02000000
+	.4byte 0x01000000
+	.4byte 0x3F000000
+	.4byte 0x0000FF00
+	.4byte 0x00000000
+	.4byte 0x01000000
+	.4byte 0x3F800000
+	.4byte 0x0000FF00
+	.4byte 0x01000000
+	.4byte 0x01000000
+	.4byte 0x40000000
+	.4byte 0x0000FF00
+	.4byte 0x02000000
+	.4byte 0x01000000
+	.4byte 0x3F000000
+	.4byte 0x0000FF00
+	.4byte 0x00000000
+	.4byte 0x03000000
+	.4byte 0x3F800000
+	.4byte 0x0000FF00
+	.4byte 0x01000000
+	.4byte 0x03000000
+	.4byte 0x40000000
+	.4byte 0x0000FF00
+	.4byte 0x02000000
+	.4byte 0x03000000
+	.4byte 0x00000000
+	.4byte 0x01000000
+	.4byte 0x03000000
+	.4byte 0x03000000
+	.4byte 0x3E99999A
+	.4byte 0x0000FF00
+	.4byte 0x00000000
+	.4byte 0x02000000
+	.4byte 0x3F000000
+	.4byte 0x0000FF00
+	.4byte 0x01000000
+	.4byte 0x02000000
+	.4byte 0x3F266666
+	.4byte 0x0000FF00
+	.4byte 0x02000000
+	.4byte 0x02000000
+	.4byte 0x3F000000
+	.4byte 0x0000FF00
+	.4byte 0x00000000
+	.4byte 0x02000000
+	.4byte 0x3F800000
+	.4byte 0x0000FF00
+	.4byte 0x01000000
+	.4byte 0x02000000
+	.4byte 0x40000000
+	.4byte 0x0000FF00
+	.4byte 0x02000000
+	.4byte 0x02000000
+	.4byte 0x3F000000
+	.4byte 0x0000FF00
+	.4byte 0x00000000
+	.4byte 0x03000000
+	.4byte 0x3F800000
+	.4byte 0x0000FF00
+	.4byte 0x01000000
+	.4byte 0x03000000
+	.4byte 0x40000000
+	.4byte 0x0000FF00
+	.4byte 0x02000000
+	.4byte 0x03000000
 .global decal_emitters__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_
 decal_emitters__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
-	.incbin "baserom.dol", 0x3020D0, 0x7C
+	.4byte 0x802DA4C4
+	.4byte 0x00000020
+	.4byte 0x802DA4D2
+	.4byte 0x803D3228
+	.4byte 0x00000003
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_1775
 _esc__2_1775:
-	.incbin "baserom.dol", 0x30214C, 0x68
+	.4byte 0x8009148C
+	.4byte 0x80091484
+	.4byte 0x80091484
+	.4byte 0x80091484
+	.4byte 0x80091484
+	.4byte 0x80091484
+	.4byte 0x8009148C
+	.4byte 0x8009148C
+	.4byte 0x80091484
+	.4byte 0x8009148C
+	.4byte 0x8009148C
+	.4byte 0x80091484
+	.4byte 0x8009148C
+	.4byte 0x80091484
+	.4byte 0x8009148C
+	.4byte 0x8009148C
+	.4byte 0x8009148C
+	.4byte 0x80091484
+	.4byte 0x8009148C
+	.4byte 0x80091484
+	.4byte 0x80091484
+	.4byte 0x80091484
+	.4byte 0x80091484
+	.4byte 0x80091490
+	.4byte 0x80091484
+	.4byte 0x80091484
 .global slam_land_cfg__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_
 slam_land_cfg__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
-	.incbin "baserom.dol", 0x3021B4, 0xAC
+	.4byte 0x00000000
+	.4byte 0x3E99999A
+	.4byte 0x3E99999A
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0x00000000
+	.4byte 0x40400000
+	.4byte 0x00000000
+	.4byte 0x40A00000
+	.4byte 0x3F9C61AA
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x3F400000
+	.4byte 0x43340000
+	.4byte 0x00000000
+	.4byte 0x3E99999A
+	.4byte 0x3ECCCCCD
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0x00000000
+	.4byte 0x40466666
+	.4byte 0x00000000
+	.4byte 0x40A00000
+	.4byte 0x3F9C61AA
+	.4byte 0x40060A92
+	.4byte 0x3F800000
+	.4byte 0x3F400000
+	.4byte 0x43340000
+	.4byte 0x00000000
+	.4byte 0x3E99999A
+	.4byte 0x3ECCCCCD
+	.4byte 0x00000000
+	.4byte 0x3F000000
+	.4byte 0x00000000
+	.4byte 0x40333333
+	.4byte 0x00000000
+	.4byte 0x40A00000
+	.4byte 0x3F9C61AA
+	.4byte 0x40860A92
+	.4byte 0x3F800000
+	.4byte 0x3F400000
+	.4byte 0x43340000
+	.4byte 0x00000000
 
 .section .rodata
 
 .global proj_decal_curve_esc__7_1613
 proj_decal_curve_esc__7_1613:
-	.incbin "baserom.dol", 0x2D7470, 0x54
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F666666
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 .global _esc__2_stringBase0_40
 _esc__2_stringBase0_40:
-	.incbin "baserom.dol", 0x2D74C4, 0x94
+	.4byte 0x41747461
+	.4byte 0x636B2053
+	.4byte 0x706C6173
+	.4byte 0x68004869
+	.4byte 0x745F466C
+	.4byte 0x61736800
+	.4byte 0x73706172
+	.4byte 0x6B5F7369
+	.4byte 0x6E676C65
+	.4byte 0x00436F6D
+	.4byte 0x6261747C
+	.4byte 0x45666665
+	.4byte 0x6374737C
+	.4byte 0x53706972
+	.4byte 0x616C2052
+	.4byte 0x6962626F
+	.4byte 0x6E00426F
+	.4byte 0x64792053
+	.4byte 0x6C616D20
+	.4byte 0x4C616E64
+	.4byte 0x20256400
+	.4byte 0x50756E63
+	.4byte 0x685F7374
+	.4byte 0x7265616B
+	.4byte 0x00726F63
+	.4byte 0x6B730063
+	.4byte 0x6F6D6261
+	.4byte 0x745F6869
+	.4byte 0x745F726F
+	.4byte 0x636B7300
+	.4byte 0x62697473
+	.4byte 0x00636F6D
+	.4byte 0x6261745F
+	.4byte 0x6869745F
+	.4byte 0x62697473
+	.4byte 0x006D6574
+	.4byte 0x616C0000
 
 .section .sbss
 
@@ -94,154 +366,221 @@ lbl_803D8B04:
 
 .global decal_config__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_
 decal_config__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B988, 0x28
+	.4byte 0x00000003
+	.4byte 0x3E19999A
+	.4byte 0x00000005
+	.4byte 0x00000002
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x01010000
+	.4byte 0x00000001
 .global slam_drop_cfg__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_
 slam_drop_cfg__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B9B0, 0x38
+	.4byte 0x00000003
+	.4byte 0x3F800000
+	.4byte 0x40800000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x41200000
+	.4byte 0x3E4CCCCD
+	.4byte 0x3F800000
+	.4byte 0x3F9C61AA
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x42700000
 .global punch_streak_ribbon_curve__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_
 punch_streak_ribbon_curve__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B9E8, 0x24
+	.4byte 0x00000000
+	.4byte 0xFFFFFF20
+	.4byte 0x3F800000
+	.4byte 0x3F19999A
+	.4byte 0xFFFFFF3C
+	.4byte 0x3ECCCCCD
+	.4byte 0x3F800000
+	.4byte 0xFFFFFF00
+	.4byte 0x00000000
 .global __vt__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18RockParticleSystem
 __vt__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18RockParticleSystem:
-	.incbin "baserom.dol", 0x32BA0C, 0x1C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80092B68
+	.4byte 0x80093034
+	.4byte 0x800930C0
+	.4byte 0x800930BC
+	.4byte 0x80092B58
 .global __vt__Q214zCombatEffects14ParticleSystem
 __vt__Q214zCombatEffects14ParticleSystem:
-	.incbin "baserom.dol", 0x32BA28, 0x1C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80090888
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18BitsParticleSystem
 __vt__Q228_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_18BitsParticleSystem:
-	.incbin "baserom.dol", 0x32BA44, 0x1C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80093370
+	.4byte 0x80093888
+	.4byte 0x80093914
+	.4byte 0x80093910
+	.4byte 0x80093360
 .global __vt__Q214zCombatEffects19SparkParticleSystem
 __vt__Q214zCombatEffects19SparkParticleSystem:
-	.incbin "baserom.dol", 0x32BA60, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8009073C
+	.4byte 0x8009084C
+	.4byte 0x800908CC
+	.4byte 0x800908C8
+	.4byte 0x80093C70
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1304
 _esc__2_1304:
-	.incbin "baserom.dol", 0x32FBE0, 0x4
+	.4byte 0x00000000
 .global _esc__2_1305
 _esc__2_1305:
-	.incbin "baserom.dol", 0x32FBE4, 0x4
+	.4byte 0x3F800000
 .global splash_curve__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_
 splash_curve__28_esc__2_unnamed_esc__2_zCombatEffects_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32FBE8, 0x24
+	.4byte 0x00000000
+	.4byte 0xFFFFFF80
+	.4byte 0x3DCCCCCD
+	.4byte 0x3F000000
+	.4byte 0xFFFFFF80
+	.4byte 0x40A00000
+	.4byte 0x3F800000
+	.4byte 0xFFFFFF00
+	.4byte 0x41200000
 .global _esc__2_1386_0
 _esc__2_1386_0:
-	.incbin "baserom.dol", 0x32FC0C, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1387
 _esc__2_1387:
-	.incbin "baserom.dol", 0x32FC10, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1388_1
 _esc__2_1388_1:
-	.incbin "baserom.dol", 0x32FC14, 0x4
+	.4byte 0x3CA3D70A
 .global _esc__2_1389_0
 _esc__2_1389_0:
-	.incbin "baserom.dol", 0x32FC18, 0x4
+	.4byte 0x3D4CCCCD
 .global _esc__2_1390_0
 _esc__2_1390_0:
-	.incbin "baserom.dol", 0x32FC1C, 0x4
+	.4byte 0x41200000
 .global _esc__2_1391_1
 _esc__2_1391_1:
-	.incbin "baserom.dol", 0x32FC20, 0x4
+	.4byte 0x43480000
 .global _esc__2_1392_1
 _esc__2_1392_1:
-	.incbin "baserom.dol", 0x32FC24, 0x4
+	.4byte 0x41A00000
 .global _esc__2_1441
 _esc__2_1441:
-	.incbin "baserom.dol", 0x32FC28, 0x8
+	.4byte 0x40000000
+	.4byte 0x00000000
 .global _esc__2_1443_0
 _esc__2_1443_0:
-	.incbin "baserom.dol", 0x32FC30, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1455
 _esc__2_1455:
-	.incbin "baserom.dol", 0x32FC38, 0x8
+	.4byte 0x3727C5AC
+	.4byte 0x00000000
 .global _esc__2_1472
 _esc__2_1472:
-	.incbin "baserom.dol", 0x32FC40, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1522_0
 _esc__2_1522_0:
-	.incbin "baserom.dol", 0x32FC48, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1650
 _esc__2_1650:
-	.incbin "baserom.dol", 0x32FC4C, 0x4
+	.4byte 0x42700000
 .global _esc__2_1750
 _esc__2_1750:
-	.incbin "baserom.dol", 0x32FC50, 0x4
+	.4byte 0xFFFFFF00
 .global _esc__2_1751
 _esc__2_1751:
-	.incbin "baserom.dol", 0x32FC54, 0x4
+	.4byte 0xFFFFFF00
 .global _esc__2_1756
 _esc__2_1756:
-	.incbin "baserom.dol", 0x32FC58, 0x4
+	.4byte 0xFFFFFF00
 .global _esc__2_1757_0
 _esc__2_1757_0:
-	.incbin "baserom.dol", 0x32FC5C, 0x4
+	.4byte 0xFFFFFF00
 .global _esc__2_1770
 _esc__2_1770:
-	.incbin "baserom.dol", 0x32FC60, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_1820_0
 _esc__2_1820_0:
-	.incbin "baserom.dol", 0x32FC64, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_1821
 _esc__2_1821:
-	.incbin "baserom.dol", 0x32FC68, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_2057_0
 _esc__2_2057_0:
-	.incbin "baserom.dol", 0x32FC6C, 0x4
+	.4byte 0x3E800000
 .global _esc__2_2066
 _esc__2_2066:
-	.incbin "baserom.dol", 0x32FC70, 0x4
+	.4byte 0xBF800000
 .global _esc__2_2121
 _esc__2_2121:
-	.incbin "baserom.dol", 0x32FC74, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_2165
 _esc__2_2165:
-	.incbin "baserom.dol", 0x32FC78, 0x4
+	.4byte 0x3B888889
 .global _esc__2_2235
 _esc__2_2235:
-	.incbin "baserom.dol", 0x32FC7C, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_2236
 _esc__2_2236:
-	.incbin "baserom.dol", 0x32FC80, 0x4
+	.4byte 0x3C23D70A
 .global _esc__2_2324
 _esc__2_2324:
-	.incbin "baserom.dol", 0x32FC84, 0x4
+	.4byte 0xFE967699
 .global _esc__2_2351
 _esc__2_2351:
-	.incbin "baserom.dol", 0x32FC88, 0x4
+	.4byte 0x42C80000
 .global _esc__2_2352
 _esc__2_2352:
-	.incbin "baserom.dol", 0x32FC8C, 0x4
+	.4byte 0x3E3851EC
 .global _esc__2_2353
 _esc__2_2353:
-	.incbin "baserom.dol", 0x32FC90, 0x4
+	.4byte 0x40800000
 .global _esc__2_2354
 _esc__2_2354:
-	.incbin "baserom.dol", 0x32FC94, 0x4
+	.4byte 0x3FC00000
 .global _esc__2_2355
 _esc__2_2355:
-	.incbin "baserom.dol", 0x32FC98, 0x4
+	.4byte 0x3FCCCCCD
 .global _esc__2_2371
 _esc__2_2371:
-	.incbin "baserom.dol", 0x32FC9C, 0x4
+	.4byte 0x41F00000
 .global _esc__2_2411
 _esc__2_2411:
-	.incbin "baserom.dol", 0x32FCA0, 0x4
+	.4byte 0x42480000
 .global _esc__2_2412
 _esc__2_2412:
-	.incbin "baserom.dol", 0x32FCA4, 0x4
+	.4byte 0xC2480000
 .global _esc__2_2413
 _esc__2_2413:
-	.incbin "baserom.dol", 0x32FCA8, 0x4
+	.4byte 0x3F333333
 .global _esc__2_2414
 _esc__2_2414:
-	.incbin "baserom.dol", 0x32FCAC, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_2415
 _esc__2_2415:
-	.incbin "baserom.dol", 0x32FCB0, 0x4
+	.4byte 0x40E00000
 .global _esc__2_2416
 _esc__2_2416:
-	.incbin "baserom.dol", 0x32FCB4, 0x4
+	.4byte 0x41700000
 
 .if 0
 

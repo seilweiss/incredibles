@@ -13,10 +13,10 @@ iWaterEnvTex:
 
 .global iWaterBumpTexID
 iWaterBumpTexID:
-	.incbin "baserom.dol", 0x32DB00, 0x4
+	.4byte 0xBE266DB6
 .global iWaterEnvTexID
 iWaterEnvTexID:
-	.incbin "baserom.dol", 0x32DB04, 0x4
+	.4byte 0x453C0740
 
 .if 0
 

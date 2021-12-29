@@ -10,13 +10,20 @@ zeroMemoryAddress__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_:
 
 .global MEM_CLEAR_VALUE__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_
 MEM_CLEAR_VALUE__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D878, 0x4
+	.4byte 0xD00D00D5
 .global MEM_DEALLOC_VALUE__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_
 MEM_DEALLOC_VALUE__28_esc__2_unnamed_esc__2_xMemoryManager_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D87C, 0x4
+	.4byte 0x1A13D00D
 .global __vt__14xMemoryManager
 __vt__14xMemoryManager:
-	.incbin "baserom.dol", 0x32D880, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801CDEDC
+	.4byte 0x00000000
+	.4byte 0x801CDED8
+	.4byte 0x00000000
 
 .if 0
 

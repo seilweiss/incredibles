@@ -10,7 +10,20 @@ corruptFiles:
 
 .global _esc__2_stringBase0_66
 _esc__2_stringBase0_66:
-	.incbin "baserom.dol", 0x2DB520, 0x38
+	.4byte 0x4D656E75
+	.4byte 0x30310055
+	.4byte 0x49204352
+	.4byte 0x45415445
+	.4byte 0x53415645
+	.4byte 0x20544558
+	.4byte 0x54004652
+	.4byte 0x4F5A4F4E
+	.4byte 0x455F5354
+	.4byte 0x4152545F
+	.4byte 0x4D454E55
+	.4byte 0x5F49444C
+	.4byte 0x455F4752
+	.4byte 0x50000000
 
 .section .sbss
 
@@ -43,46 +56,49 @@ sAllowAttract:
 
 .global sFirstBoot
 sFirstBoot:
-	.incbin "baserom.dol", 0x32C1A8, 0x4
+	.4byte 0x00000001
 .global time_elapsed
 time_elapsed:
-	.incbin "baserom.dol", 0x32C1AC, 0x4
+	.4byte 0x3C23D70A
 .global frozone_speaks
 frozone_speaks:
-	.incbin "baserom.dol", 0x32C1B0, 0x4
+	.4byte 0xFFFFFFFF
 .global ONELINER_WAITTIME
 ONELINER_WAITTIME:
-	.incbin "baserom.dol", 0x32C1B4, 0x4
+	.4byte 0x41200000
 .global holdTmr
 holdTmr:
-	.incbin "baserom.dol", 0x32C1B8, 0x8
+	.4byte 0x41200000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1083_0
 _esc__2_1083_0:
-	.incbin "baserom.dol", 0x330B60, 0x4
+	.4byte 0x42340000
 .global _esc__2_1110_0
 _esc__2_1110_0:
-	.incbin "baserom.dol", 0x330B64, 0x4
+	.4byte 0x00000000
 .global _esc__2_1328
 _esc__2_1328:
-	.incbin "baserom.dol", 0x330B68, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1329
 _esc__2_1329:
-	.incbin "baserom.dol", 0x330B6C, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1330
 _esc__2_1330:
-	.incbin "baserom.dol", 0x330B70, 0x4
+	.4byte 0x41200000
 .global _esc__2_1331
 _esc__2_1331:
-	.incbin "baserom.dol", 0x330B74, 0x4
+	.4byte 0x41B40000
 .global _esc__2_1332_3
 _esc__2_1332_3:
-	.incbin "baserom.dol", 0x330B78, 0x8
+	.4byte 0x42040000
+	.4byte 0x00000000
 .global _esc__2_1334_1
 _esc__2_1334_1:
-	.incbin "baserom.dol", 0x330B80, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

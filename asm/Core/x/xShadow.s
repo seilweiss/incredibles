@@ -70,22 +70,28 @@ _esc__2_1140:
 
 .global ShadowLightColor
 ShadowLightColor:
-	.incbin "baserom.dol", 0x32B4E0, 0x10
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 .global SHADOW_CACHE_POLY_MAX
 SHADOW_CACHE_POLY_MAX:
-	.incbin "baserom.dol", 0x32B4F0, 0x4
+	.4byte 0x00000100
 .global rscale
 rscale:
-	.incbin "baserom.dol", 0x32B4F4, 0x4
+	.4byte 0x3F800000
 .global gCamPos
 gCamPos:
-	.incbin "baserom.dol", 0x32B4F8, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global sCastEnvironment
 sCastEnvironment:
-	.incbin "baserom.dol", 0x32B504, 0x4
+	.4byte 0x01000000
 .global SHADOW_CACHE_MAX
 SHADOW_CACHE_MAX:
-	.incbin "baserom.dol", 0x32B508, 0x8
+	.4byte 0x00000006
+	.4byte 0x00000000
 
 .section .sdata2
 
@@ -93,82 +99,84 @@ SHADOW_CACHE_MAX:
 
 .global _esc__2_935_0
 _esc__2_935_0:
-	.incbin "baserom.dol", 0x32F450, 0x4
+	.4byte 0x40000000
 .global _esc__2_1068_0
 _esc__2_1068_0:
-	.incbin "baserom.dol", 0x32F454, 0x4
+	.4byte 0x00000000
 .global _esc__2_1118
 _esc__2_1118:
-	.incbin "baserom.dol", 0x32F458, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1120
 _esc__2_1120:
-	.incbin "baserom.dol", 0x32F45C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1122
 _esc__2_1122:
-	.incbin "baserom.dol", 0x32F460, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1515_1
 _esc__2_1515_1:
-	.incbin "baserom.dol", 0x32F464, 0x4
+	.4byte 0xBF000000
 .global _esc__2_1516_1
 _esc__2_1516_1:
-	.incbin "baserom.dol", 0x32F468, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1517_1
 _esc__2_1517_1:
-	.incbin "baserom.dol", 0x32F46C, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_1518_1
 _esc__2_1518_1:
-	.incbin "baserom.dol", 0x32F470, 0x4
+	.4byte 0x3C03126F
 .global _esc__2_1519_1
 _esc__2_1519_1:
-	.incbin "baserom.dol", 0x32F474, 0x4
+	.4byte 0xBA36C75D
 .global _esc__2_1545
 _esc__2_1545:
-	.incbin "baserom.dol", 0x32F478, 0x8
+	.4byte 0x41200000
+	.4byte 0x00000000
 .global _esc__2_1619
 _esc__2_1619:
-	.incbin "baserom.dol", 0x32F480, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1655_0
 _esc__2_1655_0:
-	.incbin "baserom.dol", 0x32F488, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_1671
 _esc__2_1671:
-	.incbin "baserom.dol", 0x32F48C, 0x4
+	.4byte 0xFFFFFF00
 .global _esc__2_1998
 _esc__2_1998:
-	.incbin "baserom.dol", 0x32F490, 0x4
+	.4byte 0x43000000
 .global _esc__2_1999
 _esc__2_1999:
-	.incbin "baserom.dol", 0x32F494, 0x4
+	.4byte 0x3B800000
 .global _esc__2_2012
 _esc__2_2012:
-	.incbin "baserom.dol", 0x32F498, 0x4
+	.4byte 0x3AE4C397
 .global _esc__2_2023
 _esc__2_2023:
-	.incbin "baserom.dol", 0x32F49C, 0x4
+	.4byte 0x440F3D51
 .global _esc__2_2342
 _esc__2_2342:
-	.incbin "baserom.dol", 0x32F4A0, 0x4
+	.4byte 0xFE967699
 .global _esc__2_2693
 _esc__2_2693:
-	.incbin "baserom.dol", 0x32F4A4, 0x4
+	.4byte 0x3DB27EB0
 .global _esc__2_2694
 _esc__2_2694:
-	.incbin "baserom.dol", 0x32F4A8, 0x4
+	.4byte 0xBF800000
 .global _esc__2_2695
 _esc__2_2695:
-	.incbin "baserom.dol", 0x32F4AC, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_2696
 _esc__2_2696:
-	.incbin "baserom.dol", 0x32F4B0, 0x4
+	.4byte 0x3F400000
 .global _esc__2_2697
 _esc__2_2697:
-	.incbin "baserom.dol", 0x32F4B4, 0x4
+	.4byte 0x3E2B020C
 .global _esc__2_2794
 _esc__2_2794:
-	.incbin "baserom.dol", 0x32F4B8, 0x4
+	.4byte 0x41280000
 .global _esc__2_2795
 _esc__2_2795:
-	.incbin "baserom.dol", 0x32F4BC, 0x4
+	.4byte 0x41AD999A
 
 .if 0
 

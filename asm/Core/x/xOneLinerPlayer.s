@@ -4,40 +4,118 @@
 
 .global _esc__2_1144
 _esc__2_1144:
-	.incbin "baserom.dol", 0x2F13F8, 0xC8
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED78
+	.4byte 0x8004ED78
+	.4byte 0x8004ED78
+	.4byte 0x8004ED78
+	.4byte 0x8004ED78
+	.4byte 0x8004ED78
+	.4byte 0x8004ED78
+	.4byte 0x8004ED78
+	.4byte 0x8004EDA4
+	.4byte 0x8004EDA4
+	.4byte 0x8004EDA4
+	.4byte 0x8004EDA4
+	.4byte 0x8004EDD0
+	.4byte 0x8004EDD0
+	.4byte 0x8004EDFC
+	.4byte 0x8004EDFC
+	.4byte 0x8004EDFC
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED78
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED78
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004ED4C
+	.4byte 0x8004EDA4
+	.4byte 0x8004EDA4
+	.4byte 0x8004EE28
+	.4byte 0x8004ED78
+	.4byte 0x8004EE28
+	.4byte 0x8004EE28
+	.4byte 0x8004EE28
 
 .section .sdata
 
 .global __vt__12CActiveEvent
 __vt__12CActiveEvent:
-	.incbin "baserom.dol", 0x32B2E0, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8004F12C
+	.4byte 0x8004F134
+	.4byte 0x8004F174
 .global __vt__13CTrueForYLong
 __vt__13CTrueForYLong:
-	.incbin "baserom.dol", 0x32B2F4, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8004F17C
+	.4byte 0x8004F1D8
+	.4byte 0x8004F1EC
 .global __vt__22CUniqueAmountLessThanX
 __vt__22CUniqueAmountLessThanX:
-	.incbin "baserom.dol", 0x32B308, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8004F250
+	.4byte 0x8004F25C
+	.4byte 0x8004F29C
 .global __vt__18CXNumUniqueWithinY
 __vt__18CXNumUniqueWithinY:
-	.incbin "baserom.dol", 0x32B31C, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8004F2BC
+	.4byte 0x8004F358
+	.4byte 0x8004F3C4
 .global __vt__21CHappensXTimesWithinY
 __vt__21CHappensXTimesWithinY:
-	.incbin "baserom.dol", 0x32B330, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8004F3E4
+	.4byte 0x8004F454
+	.4byte 0x8004F4B8
 .global __vt__11BasicInform
 __vt__11BasicInform:
-	.incbin "baserom.dol", 0x32B344, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__25CUniqueAmountGreaterThanX
 __vt__25CUniqueAmountGreaterThanX:
-	.incbin "baserom.dol", 0x32B358, 0x18
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8004F4D4
+	.4byte 0x8004F4E0
+	.4byte 0x8004F520
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1173
 _esc__2_1173:
-	.incbin "baserom.dol", 0x32F218, 0x4
+	.4byte 0x00000000
 .global _esc__2_1212
 _esc__2_1212:
-	.incbin "baserom.dol", 0x32F21C, 0x4
+	.4byte 0x4479C000
 
 .if 0
 

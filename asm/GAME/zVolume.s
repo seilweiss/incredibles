@@ -28,7 +28,8 @@ gOccludeCalcCount:
 
 .global _esc__2_1056_3
 _esc__2_1056_3:
-	.incbin "baserom.dol", 0x3322C8, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 
 .if 0
 

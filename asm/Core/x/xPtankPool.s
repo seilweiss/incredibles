@@ -4,7 +4,48 @@
 
 .global groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_
 groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
-	.incbin "baserom.dol", 0x2FC868, 0xA8
+	.4byte 0x00000000
+	.4byte 0x0008000A
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x0000008A
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00080007
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000087
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00080027
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x000000A7
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -24,49 +65,51 @@ current_sequence_index__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
 
 .global MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_
 MAX_PTANKS_COLOR_MAT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B370, 0x4
+	.4byte 0x00000004
 .global MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_
 MAX_PTANKS_COLOR_MAT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B374, 0x4
+	.4byte 0x00000008
 .global MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_
 MAX_PTANKS_POS_COLOR_SIZE__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B378, 0x4
+	.4byte 0x0000000C
 .global MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_
 MAX_PTANKS_POS_COLOR_SIZE_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B37C, 0x4
+	.4byte 0x00000010
 .global MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_
 MAX_PTANKS_POS_COLOR_SIZE_ROT__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B380, 0x4
+	.4byte 0x0000000C
 .global MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_
 MAX_PTANKS_POS_COLOR_SIZE_ROT_UV2__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B384, 0x4
+	.4byte 0x00000008
 
 .section .sdata2
 
 .global _esc__2_1078
 _esc__2_1078:
-	.incbin "baserom.dol", 0x32F250, 0x4
+	.4byte 0x00000000
 .global lbl_803D2894
 lbl_803D2894:
-	.incbin "baserom.dol", 0x32F254, 0x4
+	.4byte 0x00000000
 .global lbl_803D2898
 lbl_803D2898:
-	.incbin "baserom.dol", 0x32F258, 0x4
+	.4byte 0x3F800000
 .global lbl_803D289C
 lbl_803D289C:
-	.incbin "baserom.dol", 0x32F25C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1089_0
 _esc__2_1089_0:
-	.incbin "baserom.dol", 0x32F260, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1090_0
 _esc__2_1090_0:
-	.incbin "baserom.dol", 0x32F264, 0x4
+	.4byte 0x00000000
 .global _esc__2_1163
 _esc__2_1163:
-	.incbin "baserom.dol", 0x32F268, 0x8
+	.4byte 0x3F000000
+	.4byte 0x00000000
 .global _esc__2_1165
 _esc__2_1165:
-	.incbin "baserom.dol", 0x32F270, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .if 0
 

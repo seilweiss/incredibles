@@ -193,61 +193,63 @@ lbl_803D92A8:
 
 .global current_triangle__Q25zDash12track_system
 current_triangle__Q25zDash12track_system:
-	.incbin "baserom.dol", 0x32D230, 0x8
+	.4byte 0x0000FFFF
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_977_0
 _esc__2_977_0:
-	.incbin "baserom.dol", 0x332938, 0x4
+	.4byte 0x3F800000
 .global _esc__2_978_1
 _esc__2_978_1:
-	.incbin "baserom.dol", 0x33293C, 0x4
+	.4byte 0x00000000
 .global _esc__2_1067_0
 _esc__2_1067_0:
-	.incbin "baserom.dol", 0x332940, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1222_0
 _esc__2_1222_0:
-	.incbin "baserom.dol", 0x332944, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_1223_1
 _esc__2_1223_1:
-	.incbin "baserom.dol", 0x332948, 0x4
+	.4byte 0xBD4CCCCD
 .global _esc__2_1224
 _esc__2_1224:
-	.incbin "baserom.dol", 0x33294C, 0x4
+	.4byte 0x3F866666
 .global _esc__2_1225
 _esc__2_1225:
-	.incbin "baserom.dol", 0x332950, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_1294_0
 _esc__2_1294_0:
-	.incbin "baserom.dol", 0x332954, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1295_2
 _esc__2_1295_2:
-	.incbin "baserom.dol", 0x332958, 0x4
+	.4byte 0x3C23D70A
 .global _esc__2_1354_3
 _esc__2_1354_3:
-	.incbin "baserom.dol", 0x33295C, 0x4
+	.4byte 0x00000000
 .global lbl_803D5FA0
 lbl_803D5FA0:
-	.incbin "baserom.dol", 0x332960, 0x4
+	.4byte 0x00000001
 .global lbl_803D5FA4
 lbl_803D5FA4:
-	.incbin "baserom.dol", 0x332964, 0x4
+	.4byte 0x00000002
 .global _esc__2_1500_0
 _esc__2_1500_0:
-	.incbin "baserom.dol", 0x332968, 0x4
+	.4byte 0x38D1B717
 .global _esc__2_1607_2
 _esc__2_1607_2:
-	.incbin "baserom.dol", 0x33296C, 0x4
+	.4byte 0x3F800000
 .global lbl_803D5FB0
 lbl_803D5FB0:
-	.incbin "baserom.dol", 0x332970, 0x4
+	.4byte 0x00000000
 .global _esc__2_1630_0
 _esc__2_1630_0:
-	.incbin "baserom.dol", 0x332974, 0x4
+	.4byte 0x40000000
 .global _esc__2_1631_0
 _esc__2_1631_0:
-	.incbin "baserom.dol", 0x332978, 0x8
+	.4byte 0x40800000
+	.4byte 0x00000000
 
 .if 0
 

@@ -31,46 +31,53 @@ aura_cone_atomics_size__24_esc__2_unnamed_esc__2_zSpotlight_cpp_esc__2_:
 
 .global __vt__Q210zSpotlight17light_volume_type
 __vt__Q210zSpotlight17light_volume_type:
-	.incbin "baserom.dol", 0x32D4E8, 0x18
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801B1784
+	.4byte 0x801AC64C
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1059_6
 _esc__2_1059_6:
-	.incbin "baserom.dol", 0x332FC0, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1060_2
 _esc__2_1060_2:
-	.incbin "baserom.dol", 0x332FC4, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1156_2
 _esc__2_1156_2:
-	.incbin "baserom.dol", 0x332FC8, 0x4
+	.4byte 0x40E00000
 .global _esc__2_1157_4
 _esc__2_1157_4:
-	.incbin "baserom.dol", 0x332FCC, 0x4
+	.4byte 0x3E490FDB
 .global _esc__2_1158_6
 _esc__2_1158_6:
-	.incbin "baserom.dol", 0x332FD0, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1159_2
 _esc__2_1159_2:
-	.incbin "baserom.dol", 0x332FD4, 0x4
+	.4byte 0x00000000
 .global _esc__2_1249_2
 _esc__2_1249_2:
-	.incbin "baserom.dol", 0x332FD8, 0x8
+	.4byte 0x3E124925
+	.4byte 0x00000000
 .global _esc__2_1252_1
 _esc__2_1252_1:
-	.incbin "baserom.dol", 0x332FE0, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1483
 _esc__2_1483:
-	.incbin "baserom.dol", 0x332FE8, 0x4
+	.4byte 0x3D6147AE
 .global _esc__2_1484_0
 _esc__2_1484_0:
-	.incbin "baserom.dol", 0x332FEC, 0x4
+	.4byte 0x3C23D70A
 .global _esc__2_1485
 _esc__2_1485:
-	.incbin "baserom.dol", 0x332FF0, 0x4
+	.4byte 0x3DE147AE
 .global _esc__2_1587_0
 _esc__2_1587_0:
-	.incbin "baserom.dol", 0x332FF4, 0x4
+	.4byte 0x3E4CCCCD
 
 .if 0
 

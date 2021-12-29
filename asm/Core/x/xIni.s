@@ -4,7 +4,10 @@
 
 .global _esc__2_stringBase0_13
 _esc__2_stringBase0_13:
-	.incbin "baserom.dol", 0x2CEDD0, 0x10
+	.4byte 0x0A0D005D
+	.4byte 0x003D0023
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .if 0
 

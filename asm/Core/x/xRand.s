@@ -19,43 +19,47 @@ next_1:
 
 .global left
 left:
-	.incbin "baserom.dol", 0x32B388, 0x8
+	.4byte 0x00000001
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_641
 _esc__2_641:
-	.incbin "baserom.dol", 0x32F290, 0x4
+	.4byte 0x00000123
 .global lbl_803D28D4
 lbl_803D28D4:
-	.incbin "baserom.dol", 0x32F294, 0x4
+	.4byte 0x00000234
 .global lbl_803D28D8
 lbl_803D28D8:
-	.incbin "baserom.dol", 0x32F298, 0x4
+	.4byte 0x00000345
 .global lbl_803D28DC
 lbl_803D28DC:
-	.incbin "baserom.dol", 0x32F29C, 0x4
+	.4byte 0x00000456
 .global _esc__2_688
 _esc__2_688:
-	.incbin "baserom.dol", 0x32F2A0, 0x8
+	.4byte 0x2F800000
+	.4byte 0x00000000
 .global _esc__2_690
 _esc__2_690:
-	.incbin "baserom.dol", 0x32F2A8, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_787
 _esc__2_787:
-	.incbin "baserom.dol", 0x32F2B0, 0x4
+	.4byte 0x3F000000
 .global _esc__2_788_0
 _esc__2_788_0:
-	.incbin "baserom.dol", 0x32F2B4, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_789
 _esc__2_789:
-	.incbin "baserom.dol", 0x32F2B8, 0x4
+	.4byte 0x30C90FDB
 .global _esc__2_790
 _esc__2_790:
-	.incbin "baserom.dol", 0x32F2BC, 0x4
+	.4byte 0x3F800000
 .global _esc__2_792
 _esc__2_792:
-	.incbin "baserom.dol", 0x32F2C0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .if 0
 

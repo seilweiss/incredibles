@@ -13,7 +13,26 @@ sDefaultSurfaceAsset:
 
 .global sMapper
 sMapper:
-	.incbin "baserom.dol", 0x30D570, 0x50
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -36,31 +55,34 @@ pDefaultSurface:
 
 .global _esc__2_1000_6
 _esc__2_1000_6:
-	.incbin "baserom.dol", 0x331FD0, 0x4
+	.4byte 0x43B40000
 .global _esc__2_1001_0
 _esc__2_1001_0:
-	.incbin "baserom.dol", 0x331FD4, 0x4
+	.4byte 0x00000000
 .global _esc__2_1008_1
 _esc__2_1008_1:
-	.incbin "baserom.dol", 0x331FD8, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1009_2
 _esc__2_1009_2:
-	.incbin "baserom.dol", 0x331FDC, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1134_1
 _esc__2_1134_1:
-	.incbin "baserom.dol", 0x331FE0, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1233
 _esc__2_1233:
-	.incbin "baserom.dol", 0x331FE8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1599_2
 _esc__2_1599_2:
-	.incbin "baserom.dol", 0x331FF0, 0x4
+	.4byte 0x41000000
 .global _esc__2_1600_0
 _esc__2_1600_0:
-	.incbin "baserom.dol", 0x331FF4, 0x4
+	.4byte 0x40000000
 .global _esc__2_1601_0
 _esc__2_1601_0:
-	.incbin "baserom.dol", 0x331FF8, 0x8
+	.4byte 0x3FC90FDB
+	.4byte 0x00000000
 
 .if 0
 

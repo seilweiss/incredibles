@@ -6,7 +6,14 @@
 
 .global _esc__2_stringBase0_135
 _esc__2_stringBase0_135:
-	.incbin "baserom.dol", 0x2E6500, 0x20
+	.4byte 0x45666665
+	.4byte 0x63743A70
+	.4byte 0x61727469
+	.4byte 0x636C655F
+	.4byte 0x67656E65
+	.4byte 0x7261746F
+	.4byte 0x72000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -48,19 +55,25 @@ lbl_803D93B8:
 
 .global __vt__18zParticleGenerator
 __vt__18zParticleGenerator:
-	.incbin "baserom.dol", 0x32D8E0, 0x18
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801CF640
+	.4byte 0x801CF670
+	.4byte 0x801CF680
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1178_4
 _esc__2_1178_4:
-	.incbin "baserom.dol", 0x333620, 0x4
+	.4byte 0x2F800000
 .global _esc__2_1179_3
 _esc__2_1179_3:
-	.incbin "baserom.dol", 0x333624, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1181_3
 _esc__2_1181_3:
-	.incbin "baserom.dol", 0x333628, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

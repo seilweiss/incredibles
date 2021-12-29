@@ -10,7 +10,8 @@ sCollisionGeomTable:
 
 .global _esc__2_stringBase0_38
 _esc__2_stringBase0_38:
-	.incbin "baserom.dol", 0x2D7440, 0x8
+	.4byte 0x2E646666
+	.4byte 0x00000000
 
 .section .sbss
 

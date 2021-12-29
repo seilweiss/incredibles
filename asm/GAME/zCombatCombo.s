@@ -4,13 +4,15 @@
 
 .global zCOMBAT_COMBO_THRESHOLD
 zCOMBAT_COMBO_THRESHOLD:
-	.incbin "baserom.dol", 0x32B980, 0x8
+	.4byte 0x3E3851EC
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_905_0
 _esc__2_905_0:
-	.incbin "baserom.dol", 0x32FBD8, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .if 0
 

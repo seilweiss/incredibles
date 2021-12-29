@@ -4,7 +4,36 @@
 
 .global _esc__2_stringBase0_147
 _esc__2_stringBase0_147:
-	.incbin "baserom.dol", 0x2E6E88, 0x78
+	.4byte 0x4E756D43
+	.4byte 0x6F6D626F
+	.4byte 0x7300436F
+	.4byte 0x6D626F54
+	.4byte 0x696D6572
+	.4byte 0x00436F6D
+	.4byte 0x626F4469
+	.4byte 0x73706C61
+	.4byte 0x7954696D
+	.4byte 0x6500436F
+	.4byte 0x6D626F46
+	.4byte 0x61646544
+	.4byte 0x6972006C
+	.4byte 0x65667472
+	.4byte 0x69676874
+	.4byte 0x00757064
+	.4byte 0x6F776E00
+	.4byte 0x436F6D62
+	.4byte 0x6F253032
+	.4byte 0x64004855
+	.4byte 0x445F5445
+	.4byte 0x58545F43
+	.4byte 0x4F4D424F
+	.4byte 0x4D455353
+	.4byte 0x41474500
+	.4byte 0x00436F6D
+	.4byte 0x626F204C
+	.4byte 0x6576656C
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -48,34 +77,35 @@ sComboIsPaused:
 
 .global comboMaxTime
 comboMaxTime:
-	.incbin "baserom.dol", 0x32DC68, 0x4
+	.4byte 0x3FC00000
 .global comboInputMult
 comboInputMult:
-	.incbin "baserom.dol", 0x32DC6C, 0x4
+	.4byte 0x3F4CCCCD
 .global comboDisplayTime
 comboDisplayTime:
-	.incbin "baserom.dol", 0x32DC70, 0x4
+	.4byte 0x40000000
 .global comboFadeDir
 comboFadeDir:
-	.incbin "baserom.dol", 0x32DC74, 0x4
+	.4byte 0x00000003
 
 .section .sdata2
 
 .global _esc__2_1119_4
 _esc__2_1119_4:
-	.incbin "baserom.dol", 0x333BA8, 0x4
+	.4byte 0x00000000
 .global _esc__2_1120_3
 _esc__2_1120_3:
-	.incbin "baserom.dol", 0x333BAC, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1121_1
 _esc__2_1121_1:
-	.incbin "baserom.dol", 0x333BB0, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1143_0
 _esc__2_1143_0:
-	.incbin "baserom.dol", 0x333BB4, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1231
 _esc__2_1231:
-	.incbin "baserom.dol", 0x333BB8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .if 0
 

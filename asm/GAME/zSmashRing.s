@@ -10,25 +10,28 @@ module__24_esc__2_unnamed_esc__2_zSmashRing_cpp_esc__2_:
 
 .global _esc__2_1141_1
 _esc__2_1141_1:
-	.incbin "baserom.dol", 0x334000, 0x4
+	.4byte 0x00000000
 .global _esc__2_1142_2
 _esc__2_1142_2:
-	.incbin "baserom.dol", 0x334004, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1196_1
 _esc__2_1196_1:
-	.incbin "baserom.dol", 0x334008, 0x4
+	.4byte 0x40000000
 .global _esc__2_1209
 _esc__2_1209:
-	.incbin "baserom.dol", 0x33400C, 0x4
+	.4byte 0xBF000000
 .global _esc__2_1210_0
 _esc__2_1210_0:
-	.incbin "baserom.dol", 0x334010, 0x8
+	.4byte 0x40C90FDB
+	.4byte 0x00000000
 .global _esc__2_1214_1
 _esc__2_1214_1:
-	.incbin "baserom.dol", 0x334018, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1218_1
 _esc__2_1218_1:
-	.incbin "baserom.dol", 0x334020, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

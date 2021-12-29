@@ -4,16 +4,16 @@
 
 .global _esc__2_971_1
 _esc__2_971_1:
-	.incbin "baserom.dol", 0x3303F0, 0x4
+	.4byte 0x3F000000
 .global _esc__2_972_2
 _esc__2_972_2:
-	.incbin "baserom.dol", 0x3303F4, 0x4
+	.4byte 0xBF000000
 .global _esc__2_1049_0
 _esc__2_1049_0:
-	.incbin "baserom.dol", 0x3303F8, 0x4
+	.4byte 0x00000000
 .global _esc__2_1074
 _esc__2_1074:
-	.incbin "baserom.dol", 0x3303FC, 0x4
+	.4byte 0x3727C5AC
 
 .if 0
 

@@ -15,7 +15,10 @@ fakeAsset_esc__7_1311:
 
 .global _esc__2_stringBase0_145
 _esc__2_stringBase0_145:
-	.incbin "baserom.dol", 0x2E6E58, 0x10
+	.4byte 0x2E646666
+	.4byte 0x005F6465
+	.4byte 0x73747275
+	.4byte 0x63740000
 
 .section .sbss
 
@@ -38,40 +41,42 @@ rubbleCount__30_esc__2_unnamed_esc__2_zRubbleGenerator_cpp_esc__2_:
 
 .global _esc__2_1313_3
 _esc__2_1313_3:
-	.incbin "baserom.dol", 0x333A70, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1368_2
 _esc__2_1368_2:
-	.incbin "baserom.dol", 0x333A74, 0x4
+	.4byte 0x00000000
 .global _esc__2_1369_2
 _esc__2_1369_2:
-	.incbin "baserom.dol", 0x333A78, 0x4
+	.4byte 0x41C80000
 .global _esc__2_1370_2
 _esc__2_1370_2:
-	.incbin "baserom.dol", 0x333A7C, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_1371_0
 _esc__2_1371_0:
-	.incbin "baserom.dol", 0x333A80, 0x8
+	.4byte 0x3E4CCCCD
+	.4byte 0x00000000
 .global _esc__2_1376_1
 _esc__2_1376_1:
-	.incbin "baserom.dol", 0x333A88, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1393_2
 _esc__2_1393_2:
-	.incbin "baserom.dol", 0x333A90, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1463_3
 _esc__2_1463_3:
-	.incbin "baserom.dol", 0x333A94, 0x4
+	.4byte 0x41480000
 .global _esc__2_1464_2
 _esc__2_1464_2:
-	.incbin "baserom.dol", 0x333A98, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1833_0
 _esc__2_1833_0:
-	.incbin "baserom.dol", 0x333A9C, 0x4
+	.4byte 0x43960000
 .global _esc__2_1834_0
 _esc__2_1834_0:
-	.incbin "baserom.dol", 0x333AA0, 0x4
+	.4byte 0x428C0000
 .global _esc__2_1835_0
 _esc__2_1835_0:
-	.incbin "baserom.dol", 0x333AA4, 0x4
+	.4byte 0x41200000
 
 .if 0
 

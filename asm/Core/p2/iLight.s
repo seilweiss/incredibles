@@ -10,10 +10,10 @@ gLightWorld:
 
 .global _esc__2_612
 _esc__2_612:
-	.incbin "baserom.dol", 0x32F818, 0x4
+	.4byte 0x00000000
 .global _esc__2_613_1
 _esc__2_613_1:
-	.incbin "baserom.dol", 0x32F81C, 0x4
+	.4byte 0x3F800000
 
 .if 0
 

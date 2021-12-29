@@ -4,10 +4,12 @@
 
 .global _esc__2_810
 _esc__2_810:
-	.incbin "baserom.dol", 0x32F1B8, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global _esc__2_812_0
 _esc__2_812_0:
-	.incbin "baserom.dol", 0x32F1C0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 
 .if 0
 

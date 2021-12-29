@@ -16,7 +16,28 @@ scratch_buffer__21_esc__2_unnamed_esc__2_xMemMgr_cpp_esc__2_:
 
 .global _esc__2_stringBase0_15
 _esc__2_stringBase0_15:
-	.incbin "baserom.dol", 0x2CEDE8, 0x58
+	.4byte 0x4D454D20
+	.4byte 0x46524545
+	.4byte 0x203D2025
+	.4byte 0x64204B0A
+	.4byte 0x004F7574
+	.4byte 0x206F6620
+	.4byte 0x6D656D6F
+	.4byte 0x72792063
+	.4byte 0x72617368
+	.4byte 0x2C204C6F
+	.4byte 0x633D784D
+	.4byte 0x656D416C
+	.4byte 0x6C6F6320
+	.4byte 0x53697A65
+	.4byte 0x3D25642C
+	.4byte 0x20686561
+	.4byte 0x70206F76
+	.4byte 0x65726C61
+	.4byte 0x7073206D
+	.4byte 0x616C6C6F
+	.4byte 0x6320706F
+	.4byte 0x6F6C0A00
 
 .section .sbss
 

@@ -4,7 +4,10 @@
 
 .global _esc__2_stringBase0_16
 _esc__2_stringBase0_16:
-	.incbin "baserom.dol", 0x2CEE40, 0x10
+	.4byte 0x2E646666
+	.4byte 0x002E6D69
+	.4byte 0x6E660000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -49,43 +52,45 @@ lbl_803D873C:
 
 .global modelDefaultPipe
 modelDefaultPipe:
-	.incbin "baserom.dol", 0x32B2D8, 0x4
+	.4byte 0x00000000
 .global lbl_803CB79C
 lbl_803CB79C:
-	.incbin "baserom.dol", 0x32B2DC, 0x4
+	.4byte 0x00800000
 
 .section .sdata2
 
 .global _esc__2_1019
 _esc__2_1019:
-	.incbin "baserom.dol", 0x32F168, 0x4
+	.4byte 0x00000000
 .global _esc__2_1020_0
 _esc__2_1020_0:
-	.incbin "baserom.dol", 0x32F16C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1021_1
 _esc__2_1021_1:
-	.incbin "baserom.dol", 0x32F170, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1022
 _esc__2_1022:
-	.incbin "baserom.dol", 0x32F174, 0x4
+	.4byte 0x7E876ABD
 .global _esc__2_1023
 _esc__2_1023:
-	.incbin "baserom.dol", 0x32F178, 0x8
+	.4byte 0x7E967699
+	.4byte 0x00000000
 .global _esc__2_1025_0
 _esc__2_1025_0:
-	.incbin "baserom.dol", 0x32F180, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1174_2
 _esc__2_1174_2:
-	.incbin "baserom.dol", 0x32F188, 0x4
+	.4byte 0xFE967699
 .global _esc__2_1219_0
 _esc__2_1219_0:
-	.incbin "baserom.dol", 0x32F18C, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1309_0
 _esc__2_1309_0:
-	.incbin "baserom.dol", 0x32F190, 0x4
+	.4byte 0x40000000
 .global _esc__2_1586
 _esc__2_1586:
-	.incbin "baserom.dol", 0x32F194, 0x4
+	.4byte 0x41200000
 
 .if 0
 

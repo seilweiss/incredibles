@@ -31,40 +31,55 @@ init_esc__7_1018:
 
 .global g_rumblingThreshold
 g_rumblingThreshold:
-	.incbin "baserom.dol", 0x32B608, 0x4
+	.4byte 0x3F000000
 .global sPadData
 sPadData:
-	.incbin "baserom.dol", 0x32B60C, 0x34
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_980
 _esc__2_980:
-	.incbin "baserom.dol", 0x32F8B8, 0x4
+	.4byte 0x42200000
 .global _esc__2_981_0
 _esc__2_981_0:
-	.incbin "baserom.dol", 0x32F8BC, 0x4
+	.4byte 0xC2200000
 .global _esc__2_982
 _esc__2_982:
-	.incbin "baserom.dol", 0x32F8C0, 0x4
+	.4byte 0x404CCCCD
 .global _esc__2_983
 _esc__2_983:
-	.incbin "baserom.dol", 0x32F8C4, 0x4
+	.4byte 0x42FE0000
 .global _esc__2_984_0
 _esc__2_984_0:
-	.incbin "baserom.dol", 0x32F8C8, 0x4
+	.4byte 0xC2FE0000
 .global _esc__2_1038
 _esc__2_1038:
-	.incbin "baserom.dol", 0x32F8CC, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1040_2
 _esc__2_1040_2:
-	.incbin "baserom.dol", 0x32F8D0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1064_0
 _esc__2_1064_0:
-	.incbin "baserom.dol", 0x32F8D8, 0x8
+	.4byte 0x40AC2000
+	.4byte 0x00000000
 .global _esc__2_1065_0
 _esc__2_1065_0:
-	.incbin "baserom.dol", 0x32F8E0, 0x8
+	.4byte 0x3FA99999
+	.4byte 0x9999999A
 
 .if 0
 

@@ -19,31 +19,32 @@ sNumHangableObjects:
 
 .global _esc__2_967_0
 _esc__2_967_0:
-	.incbin "baserom.dol", 0x330738, 0x4
+	.4byte 0x3C8EFA35
 .global _esc__2_1022_1
 _esc__2_1022_1:
-	.incbin "baserom.dol", 0x33073C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1023_1
 _esc__2_1023_1:
-	.incbin "baserom.dol", 0x330740, 0x4
+	.4byte 0x00000000
 .global _esc__2_1024_0
 _esc__2_1024_0:
-	.incbin "baserom.dol", 0x330744, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_1050_0
 _esc__2_1050_0:
-	.incbin "baserom.dol", 0x330748, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1053
 _esc__2_1053:
-	.incbin "baserom.dol", 0x33074C, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1187_2
 _esc__2_1187_2:
-	.incbin "baserom.dol", 0x330750, 0x4
+	.4byte 0x3BA3D70A
 .global _esc__2_1188
 _esc__2_1188:
-	.incbin "baserom.dol", 0x330754, 0x4
+	.4byte 0xBDCCCCCD
 .global _esc__2_1189_2
 _esc__2_1189_2:
-	.incbin "baserom.dol", 0x330758, 0x8
+	.4byte 0x3DCCCCCD
+	.4byte 0x00000000
 
 .if 0
 

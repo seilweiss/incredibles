@@ -16,7 +16,12 @@ gHostPath:
 
 .global _esc__2_stringBase0_26
 _esc__2_stringBase0_26:
-	.incbin "baserom.dol", 0x2CF880, 0x18
+	.4byte 0x6946696C
+	.4byte 0x65536574
+	.4byte 0x50617468
+	.4byte 0x3A202022
+	.4byte 0x2573220A
+	.4byte 0x00000000
 
 .section .sbss
 

@@ -4,7 +4,12 @@
 
 .global _esc__2_stringBase0_157
 _esc__2_stringBase0_157:
-	.incbin "baserom.dol", 0x2E9D68, 0x18
+	.4byte 0x46414D49
+	.4byte 0x4C594845
+	.4byte 0x414C5448
+	.4byte 0x0046414D
+	.4byte 0x494C5948
+	.4byte 0x45414400
 
 .section .sbss
 
@@ -16,73 +21,83 @@ fMinHealthBar__4zHud:
 
 .global fMaxHealthBar__4zHud
 fMaxHealthBar__4zHud:
-	.incbin "baserom.dol", 0x32E320, 0x4
+	.4byte 0x3F800000
 .global __vt__Q24zHud11FamilyMeter
 __vt__Q24zHud11FamilyMeter:
-	.incbin "baserom.dol", 0x32E324, 0x2C
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x800D1660
+	.4byte 0x801F3994
+	.4byte 0x801F3CDC
+	.4byte 0x801F3CD8
+	.4byte 0x801F3CE0
+	.4byte 0x801F3D30
+	.4byte 0x800D165C
+	.4byte 0x801F395C
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_883_1
 _esc__2_883_1:
-	.incbin "baserom.dol", 0x333F28, 0x4
+	.4byte 0x3F800000
 .global _esc__2_895_0
 _esc__2_895_0:
-	.incbin "baserom.dol", 0x333F2C, 0x4
+	.4byte 0x00000000
 .global _esc__2_896_0
 _esc__2_896_0:
-	.incbin "baserom.dol", 0x333F30, 0x4
+	.4byte 0x3C400000
 .global _esc__2_897_0
 _esc__2_897_0:
-	.incbin "baserom.dol", 0x333F34, 0x4
+	.4byte 0x3DB00000
 .global _esc__2_898_0
 _esc__2_898_0:
-	.incbin "baserom.dol", 0x333F38, 0x4
+	.4byte 0x3E040000
 .global _esc__2_899
 _esc__2_899:
-	.incbin "baserom.dol", 0x333F3C, 0x4
+	.4byte 0x3E500000
 .global _esc__2_900
 _esc__2_900:
-	.incbin "baserom.dol", 0x333F40, 0x4
+	.4byte 0x3F060000
 .global _esc__2_901
 _esc__2_901:
-	.incbin "baserom.dol", 0x333F44, 0x4
+	.4byte 0x3F130000
 .global _esc__2_902_2
 _esc__2_902_2:
-	.incbin "baserom.dol", 0x333F48, 0x4
+	.4byte 0x3F3A0000
 .global _esc__2_903_2
 _esc__2_903_2:
-	.incbin "baserom.dol", 0x333F4C, 0x4
+	.4byte 0x3F220000
 .global _esc__2_904_1
 _esc__2_904_1:
-	.incbin "baserom.dol", 0x333F50, 0x4
+	.4byte 0x3F7E0000
 .global _esc__2_905_3
 _esc__2_905_3:
-	.incbin "baserom.dol", 0x333F54, 0x4
+	.4byte 0x3F100000
 .global _esc__2_906_2
 _esc__2_906_2:
-	.incbin "baserom.dol", 0x333F58, 0x4
+	.4byte 0x3D100000
 .global _esc__2_907_4
 _esc__2_907_4:
-	.incbin "baserom.dol", 0x333F5C, 0x4
+	.4byte 0x3E6C0000
 .global _esc__2_908_1
 _esc__2_908_1:
-	.incbin "baserom.dol", 0x333F60, 0x4
+	.4byte 0x3F010000
 .global _esc__2_909_1
 _esc__2_909_1:
-	.incbin "baserom.dol", 0x333F64, 0x4
+	.4byte 0x3F330000
 .global _esc__2_954_5
 _esc__2_954_5:
-	.incbin "baserom.dol", 0x333F68, 0x4
+	.4byte 0x3DA3D70A
 .global _esc__2_955_3
 _esc__2_955_3:
-	.incbin "baserom.dol", 0x333F6C, 0x4
+	.4byte 0x3F70A3D7
 .global _esc__2_956_3
 _esc__2_956_3:
-	.incbin "baserom.dol", 0x333F70, 0x4
+	.4byte 0x3E0F5C29
 .global _esc__2_957_3
 _esc__2_957_3:
-	.incbin "baserom.dol", 0x333F74, 0x4
+	.4byte 0x3E23D70A
 
 .if 0
 

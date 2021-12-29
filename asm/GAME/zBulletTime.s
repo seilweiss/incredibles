@@ -34,79 +34,99 @@ temp_count__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_:
 
 .global zBULLET_TIME_CAMERA_TIMER__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_
 zBULLET_TIME_CAMERA_TIMER__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B7D0, 0x4
+	.4byte 0x3F99999A
 .global zBULLET_TIME_CAMERA_ORIGIN_OFFSET__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_
 zBULLET_TIME_CAMERA_ORIGIN_OFFSET__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B7D4, 0x4
+	.4byte 0x400CCCCD
 .global CONST_DEG_TO_RAD__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_
 CONST_DEG_TO_RAD__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B7D8, 0x4
+	.4byte 0x3C8F08F0
 .global zSNAPSHOT_TIMER__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_
 zSNAPSHOT_TIMER__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B7DC, 0x4
+	.4byte 0x3F4CCCCD
 .global bt_was_active__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_
 bt_was_active__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B7E0, 0x1
+	.byte 0x1
 .global zBULLET_TIME_CAMERA
 zBULLET_TIME_CAMERA:
-	.incbin "baserom.dol", 0x32B7E1, 0x1
+	.byte 0x1
 .global zBULLET_TIME
 zBULLET_TIME:
-	.incbin "baserom.dol", 0x32B7E2, 0x2
+	.2byte 0x0100
 .global filter_angle__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_
 filter_angle__25_esc__2_unnamed_esc__2_zBulletTime_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B7E4, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__17zBulletTimeCamera
 __vt__17zBulletTimeCamera:
-	.incbin "baserom.dol", 0x32B7F0, 0x24
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8008748C
+	.4byte 0x80010314
+	.4byte 0x800874DC
+	.4byte 0x8000E648
+	.4byte 0x800874FC
+	.4byte 0x8000EDCC
+	.4byte 0x80010318
 .global __vt__13zLinearFilter
 __vt__13zLinearFilter:
-	.incbin "baserom.dol", 0x32B814, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x800871EC
 .global __vt__17zQuaternionFilter
 __vt__17zQuaternionFilter:
-	.incbin "baserom.dol", 0x32B820, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80086DCC
 .global __vt__23zFilterAbstract_esc__0_5zQuat_esc__1_
 __vt__23zFilterAbstract_esc__0_5zQuat_esc__1_:
-	.incbin "baserom.dol", 0x32B82C, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__23zFilterAbstract_esc__0_5xVec3_esc__1_
 __vt__23zFilterAbstract_esc__0_5xVec3_esc__1_:
-	.incbin "baserom.dol", 0x32B838, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_833_1
 _esc__2_833_1:
-	.incbin "baserom.dol", 0x32FA08, 0x4
+	.4byte 0x3F800000
 .global _esc__2_834_0
 _esc__2_834_0:
-	.incbin "baserom.dol", 0x32FA0C, 0x4
+	.4byte 0x00000000
 .global _esc__2_856_2
 _esc__2_856_2:
-	.incbin "baserom.dol", 0x32FA10, 0x4
+	.4byte 0x40000000
 .global _esc__2_1102
 _esc__2_1102:
-	.incbin "baserom.dol", 0x32FA14, 0x4
+	.4byte 0x44070000
 .global _esc__2_1103
 _esc__2_1103:
-	.incbin "baserom.dol", 0x32FA18, 0x4
+	.4byte 0x43B40000
 .global _esc__2_1104
 _esc__2_1104:
-	.incbin "baserom.dol", 0x32FA1C, 0x4
+	.4byte 0x43340000
 .global _esc__2_1160_1
 _esc__2_1160_1:
-	.incbin "baserom.dol", 0x32FA20, 0x4
+	.4byte 0x42700000
 .global _esc__2_1161_0
 _esc__2_1161_0:
-	.incbin "baserom.dol", 0x32FA24, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_1266
 _esc__2_1266:
-	.incbin "baserom.dol", 0x32FA28, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1335
 _esc__2_1335:
-	.incbin "baserom.dol", 0x32FA2C, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1425_0
 _esc__2_1425_0:
-	.incbin "baserom.dol", 0x32FA30, 0x8
+	.4byte 0x3F7FFF58
+	.4byte 0x00000000
 
 .if 0
 

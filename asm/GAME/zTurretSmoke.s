@@ -4,7 +4,14 @@
 
 .global _esc__2_stringBase0_136
 _esc__2_stringBase0_136:
-	.incbin "baserom.dol", 0x2E6520, 0x20
+	.4byte 0x4578706C
+	.4byte 0x6F73696F
+	.4byte 0x6E466C61
+	.4byte 0x73685F53
+	.4byte 0x6D6F6B65
+	.4byte 0x5F74616E
+	.4byte 0x5F363400
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -19,64 +26,79 @@ systemID__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_:
 
 .global __vt__18zTurretSmokeSystem
 __vt__18zTurretSmokeSystem:
-	.incbin "baserom.dol", 0x32DA38, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801064B0
+	.4byte 0x80106434
+	.4byte 0x801063B8
+	.4byte 0x801D2F48
+	.4byte 0x8010667C
+	.4byte 0x801065AC
 .global __vt__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_
 __vt__Q21z36lightweight_esc__0_18zTurretSmokeSystem_esc__4_10_esc__1_:
-	.incbin "baserom.dol", 0x32DA58, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801064B0
+	.4byte 0x80106434
+	.4byte 0x801063B8
+	.4byte 0x801D337C
+	.4byte 0x8010667C
+	.4byte 0x801065AC
 
 .section .sdata2
 
 .global _esc__2_1304_3
 _esc__2_1304_3:
-	.incbin "baserom.dol", 0x3336E0, 0x4
+	.4byte 0x00000000
 .global _esc__2_1305_1
 _esc__2_1305_1:
-	.incbin "baserom.dol", 0x3336E4, 0x4
+	.4byte 0x3F800000
 .global turretSmokeColor__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_
 turretSmokeColor__26_esc__2_unnamed_esc__2_zTurretSmoke_cpp_esc__2_:
-	.incbin "baserom.dol", 0x3336E8, 0x4
+	.4byte 0xFFFFFF28
 .global _esc__2_1329_5
 _esc__2_1329_5:
-	.incbin "baserom.dol", 0x3336EC, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1330_4
 _esc__2_1330_4:
-	.incbin "baserom.dol", 0x3336F0, 0x4
+	.4byte 0x41700000
 .global _esc__2_1381_0
 _esc__2_1381_0:
-	.incbin "baserom.dol", 0x3336F4, 0x4
+	.4byte 0x42C80000
 .global _esc__2_1382_1
 _esc__2_1382_1:
-	.incbin "baserom.dol", 0x3336F8, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1383_4
 _esc__2_1383_4:
-	.incbin "baserom.dol", 0x3336FC, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_1384_2
 _esc__2_1384_2:
-	.incbin "baserom.dol", 0x333700, 0x4
+	.4byte 0x40000000
 .global _esc__2_1385_2
 _esc__2_1385_2:
-	.incbin "baserom.dol", 0x333704, 0x4
+	.4byte 0x3FC00000
 .global _esc__2_1386_6
 _esc__2_1386_6:
-	.incbin "baserom.dol", 0x333708, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_1387_4
 _esc__2_1387_4:
-	.incbin "baserom.dol", 0x33370C, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_1388_4
 _esc__2_1388_4:
-	.incbin "baserom.dol", 0x333710, 0x4
+	.4byte 0x3FF33333
 .global _esc__2_1389_6
 _esc__2_1389_6:
-	.incbin "baserom.dol", 0x333714, 0x4
+	.4byte 0x3C23D70A
 .global _esc__2_1391_5
 _esc__2_1391_5:
-	.incbin "baserom.dol", 0x333718, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1452_0
 _esc__2_1452_0:
-	.incbin "baserom.dol", 0x333720, 0x4
+	.4byte 0x3EC28F5C
 .global _esc__2_1453_0
 _esc__2_1453_0:
-	.incbin "baserom.dol", 0x333724, 0x4
+	.4byte 0x42200000
 
 .if 0
 

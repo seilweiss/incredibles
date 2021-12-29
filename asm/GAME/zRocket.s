@@ -13,7 +13,38 @@ default_config__Q21z17JetParticleSystem:
 
 .global _esc__2_stringBase0_122
 _esc__2_stringBase0_122:
-	.incbin "baserom.dol", 0x2E4AD8, 0x80
+	.4byte 0x6D697373
+	.4byte 0x696C655F
+	.4byte 0x73687261
+	.4byte 0x706E656C
+	.4byte 0x00524F43
+	.4byte 0x4B45545F
+	.4byte 0x4C4F4F50
+	.4byte 0x00524F43
+	.4byte 0x4B45545F
+	.4byte 0x53504C41
+	.4byte 0x53485F53
+	.4byte 0x47525000
+	.4byte 0x506C6179
+	.4byte 0x65722046
+	.4byte 0x616C6C20
+	.4byte 0x53706C61
+	.4byte 0x73680068
+	.4byte 0x656C6963
+	.4byte 0x6F707465
+	.4byte 0x725F4256
+	.4byte 0x5F726F63
+	.4byte 0x6B657400
+	.4byte 0x4578706C
+	.4byte 0x6F73696F
+	.4byte 0x6E466C61
+	.4byte 0x73685F54
+	.4byte 0x616E5F36
+	.4byte 0x3400726F
+	.4byte 0x636B6574
+	.4byte 0x5F736D6F
+	.4byte 0x6B650000
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -31,136 +62,151 @@ default_config__Q21z11smoke_trail:
 
 .global ROCKET_BOUND_RADIUS__1z
 ROCKET_BOUND_RADIUS__1z:
-	.incbin "baserom.dol", 0x32D408, 0x4
+	.4byte 0x3E75C28F
 .global ROCKET_ACCELERATION__1z
 ROCKET_ACCELERATION__1z:
-	.incbin "baserom.dol", 0x32D40C, 0x4
+	.4byte 0x40000000
 .global flying_noise_group__Q21z6rocket
 flying_noise_group__Q21z6rocket:
-	.incbin "baserom.dol", 0x32D410, 0x4
+	.4byte 0xFFFFFFFF
 .global splash_soundgroup__Q21z6rocket
 splash_soundgroup__Q21z6rocket:
-	.incbin "baserom.dol", 0x32D414, 0x4
+	.4byte 0xFFFFFFFF
 .global splash__Q21z6rocket
 splash__Q21z6rocket:
-	.incbin "baserom.dol", 0x32D418, 0x4
+	.4byte 0xFFFFFFFF
 .global need_setup__Q21z17JetParticleSystem
 need_setup__Q21z17JetParticleSystem:
-	.incbin "baserom.dol", 0x32D41C, 0x4
+	.4byte 0x01000000
 .global system_id__Q21z11smoke_trail
 system_id__Q21z11smoke_trail:
-	.incbin "baserom.dol", 0x32D420, 0x4
+	.4byte 0xFFFFFFFF
 .global need_setup__1z
 need_setup__1z:
-	.incbin "baserom.dol", 0x32D424, 0x4
+	.4byte 0x01000000
 .global __vt__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_
 __vt__Q21z27lightweight_esc__0_Q21z6rocket_esc__4_20_esc__1_:
-	.incbin "baserom.dol", 0x32D428, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801A5C04
+	.4byte 0x801A5C08
+	.4byte 0x801A5C0C
+	.4byte 0x801A5C10
+	.4byte 0x801A5C14
+	.4byte 0x800ABB48
 .global __vt__Q21z6rocket
 __vt__Q21z6rocket:
-	.incbin "baserom.dol", 0x32D448, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801A4C4C
+	.4byte 0x801A4C8C
+	.4byte 0x801A4C90
+	.4byte 0x801A4610
+	.4byte 0x801A4474
+	.4byte 0x800ABB48
 
 .section .sdata2
 
 .global _esc__2_1273
 _esc__2_1273:
-	.incbin "baserom.dol", 0x332D38, 0x4
+	.4byte 0x00000000
 .global _esc__2_1274_0
 _esc__2_1274_0:
-	.incbin "baserom.dol", 0x332D3C, 0x4
+	.4byte 0x40A00000
 .global _esc__2_1300_0
 _esc__2_1300_0:
-	.incbin "baserom.dol", 0x332D40, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_1301_2
 _esc__2_1301_2:
-	.incbin "baserom.dol", 0x332D44, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1399_3
 _esc__2_1399_3:
-	.incbin "baserom.dol", 0x332D48, 0x4
+	.4byte 0x3C23D70A
 .global _esc__2_1400_1
 _esc__2_1400_1:
-	.incbin "baserom.dol", 0x332D4C, 0x4
+	.4byte 0x38D1B717
 .global _esc__2_1401_0
 _esc__2_1401_0:
-	.incbin "baserom.dol", 0x332D50, 0x4
+	.4byte 0x41A00000
 .global _esc__2_1402_0
 _esc__2_1402_0:
-	.incbin "baserom.dol", 0x332D54, 0x4
+	.4byte 0xBE99999A
 .global _esc__2_1415_4
 _esc__2_1415_4:
-	.incbin "baserom.dol", 0x332D58, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1427_1
 _esc__2_1427_1:
-	.incbin "baserom.dol", 0x332D5C, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1454
 _esc__2_1454:
-	.incbin "baserom.dol", 0x332D60, 0x4
+	.4byte 0x3FC00000
 .global _esc__2_1462_0
 _esc__2_1462_0:
-	.incbin "baserom.dol", 0x332D64, 0x4
+	.4byte 0x00000000
 .global lbl_803D63A8
 lbl_803D63A8:
-	.incbin "baserom.dol", 0x332D68, 0x4
+	.4byte 0x3F800000
 .global lbl_803D63AC
 lbl_803D63AC:
-	.incbin "baserom.dol", 0x332D6C, 0x4
+	.4byte 0x00000000
 .global _esc__2_1466_2
 _esc__2_1466_2:
-	.incbin "baserom.dol", 0x332D70, 0x4
+	.4byte 0x00000000
 .global lbl_803D63B4
 lbl_803D63B4:
-	.incbin "baserom.dol", 0x332D74, 0x4
+	.4byte 0x00000000
 .global lbl_803D63B8
 lbl_803D63B8:
-	.incbin "baserom.dol", 0x332D78, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1473_4
 _esc__2_1473_4:
-	.incbin "baserom.dol", 0x332D7C, 0x4
+	.4byte 0x3F666666
 .global _esc__2_1503_1
 _esc__2_1503_1:
-	.incbin "baserom.dol", 0x332D80, 0x4
+	.4byte 0x41200000
 .global _esc__2_1523_2
 _esc__2_1523_2:
-	.incbin "baserom.dol", 0x332D84, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1524_0
 _esc__2_1524_0:
-	.incbin "baserom.dol", 0x332D88, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_1525_3
 _esc__2_1525_3:
-	.incbin "baserom.dol", 0x332D8C, 0x4
+	.4byte 0x43480000
 .global _esc__2_1526_1
 _esc__2_1526_1:
-	.incbin "baserom.dol", 0x332D90, 0x4
+	.4byte 0xC0000000
 .global _esc__2_1527_2
 _esc__2_1527_2:
-	.incbin "baserom.dol", 0x332D94, 0x4
+	.4byte 0x40000000
 .global _esc__2_1528_3
 _esc__2_1528_3:
-	.incbin "baserom.dol", 0x332D98, 0x4
+	.4byte 0x41700000
 .global _esc__2_1580_1
 _esc__2_1580_1:
-	.incbin "baserom.dol", 0x332D9C, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_1585_0
 _esc__2_1585_0:
-	.incbin "baserom.dol", 0x332DA0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1659_3
 _esc__2_1659_3:
-	.incbin "baserom.dol", 0x332DA8, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1691_0
 _esc__2_1691_0:
-	.incbin "baserom.dol", 0x332DAC, 0x4
+	.4byte 0xFE967699
 .global _esc__2_1692_0
 _esc__2_1692_0:
-	.incbin "baserom.dol", 0x332DB0, 0x4
+	.4byte 0xBF000000
 .global _esc__2_1693_2
 _esc__2_1693_2:
-	.incbin "baserom.dol", 0x332DB4, 0x4
+	.4byte 0x3F333333
 .global _esc__2_1694_1
 _esc__2_1694_1:
-	.incbin "baserom.dol", 0x332DB8, 0x4
+	.4byte 0x40600000
 .global _esc__2_1748
 _esc__2_1748:
-	.incbin "baserom.dol", 0x332DBC, 0x4
+	.4byte 0x40C90FDB
 
 .if 0
 

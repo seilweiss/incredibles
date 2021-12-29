@@ -25,13 +25,15 @@ needToLock:
 
 .global asyncThreadDone
 asyncThreadDone:
-	.incbin "baserom.dol", 0x32B5E0, 0x8
+	.4byte 0x01000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_675_0
 _esc__2_675_0:
-	.incbin "baserom.dol", 0x32F7B0, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .if 0
 

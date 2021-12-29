@@ -10,52 +10,55 @@ g_iAnim_workBufferData:
 
 .global g_iAnim_workBuffer
 g_iAnim_workBuffer:
-	.incbin "baserom.dol", 0x32B770, 0x8
+	.4byte 0x80369BE0
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_693
 _esc__2_693:
-	.incbin "baserom.dol", 0x32F978, 0x4
+	.4byte 0x00000000
 .global lbl_803D2FBC
 lbl_803D2FBC:
-	.incbin "baserom.dol", 0x32F97C, 0x4
+	.4byte 0x00000000
 .global lbl_803D2FC0
 lbl_803D2FC0:
-	.incbin "baserom.dol", 0x32F980, 0x4
+	.4byte 0x00000000
 .global lbl_803D2FC4
 lbl_803D2FC4:
-	.incbin "baserom.dol", 0x32F984, 0x4
+	.4byte 0x3F800000
 .global _esc__2_990_2
 _esc__2_990_2:
-	.incbin "baserom.dol", 0x32F988, 0x4
+	.4byte 0x00000000
 .global _esc__2_991_1
 _esc__2_991_1:
-	.incbin "baserom.dol", 0x32F98C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_992
 _esc__2_992:
-	.incbin "baserom.dol", 0x32F990, 0x4
+	.4byte 0xBE2AAAAB
 .global _esc__2_993_1
 _esc__2_993_1:
-	.incbin "baserom.dol", 0x32F994, 0x4
+	.4byte 0x3C088889
 .global _esc__2_994
 _esc__2_994:
-	.incbin "baserom.dol", 0x32F998, 0x4
+	.4byte 0xB9500D01
 .global _esc__2_995
 _esc__2_995:
-	.incbin "baserom.dol", 0x32F99C, 0x4
+	.4byte 0x3638EF1B
 .global _esc__2_996_2
 _esc__2_996_2:
-	.incbin "baserom.dol", 0x32F9A0, 0x4
+	.4byte 0xB2D72F34
 .global _esc__2_997_1
 _esc__2_997_1:
-	.incbin "baserom.dol", 0x32F9A4, 0x4
+	.4byte 0x2F2EC9D3
 .global _esc__2_998_0
 _esc__2_998_0:
-	.incbin "baserom.dol", 0x32F9A8, 0x8
+	.4byte 0x3A800000
+	.4byte 0x00000000
 .global _esc__2_1000_3
 _esc__2_1000_3:
-	.incbin "baserom.dol", 0x32F9B0, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 
 .if 0
 

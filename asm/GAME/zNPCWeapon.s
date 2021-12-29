@@ -12,7 +12,38 @@ default_config__Q24zNPC17ElectricitySystem:
 
 .global __vt__Q24zNPC6Weapon
 __vt__Q24zNPC6Weapon:
-	.incbin "baserom.dol", 0x30E8D0, 0x80
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x80184548
+	.4byte 0x8018B020
+	.4byte 0x800FEDDC
+	.4byte 0x800AB4C4
+	.4byte 0x800AB4CC
+	.4byte 0x800FF328
+	.4byte 0x8018A98C
+	.4byte 0x8018A990
+	.4byte 0x8018AA98
+	.4byte 0x800AB4E0
+	.4byte 0x8018AB38
+	.4byte 0x8018A994
+	.4byte 0x8018A9A0
+	.4byte 0x8018A9F4
+	.4byte 0x800AB4F0
+	.4byte 0x8018AA00
+	.4byte 0x8018AD2C
+	.4byte 0x8018ADF0
+	.4byte 0x8018B030
+	.4byte 0x8018ADF4
+	.4byte 0x8018AB34
+	.4byte 0x800AB508
+	.4byte 0x800AB510
+	.4byte 0x800AB518
+	.4byte 0x800AB520
+	.4byte 0x800AB524
+	.4byte 0x8018464C
+	.4byte 0x801846DC
+	.4byte 0x800FF324
+	.4byte 0x8012BBD8
 
 .section .rodata
 
@@ -20,7 +51,68 @@ __vt__Q24zNPC6Weapon:
 
 .global _esc__2_stringBase0_111
 _esc__2_stringBase0_111:
-	.incbin "baserom.dol", 0x2E4030, 0xF8
+	.4byte 0x656C6563
+	.4byte 0x74726963
+	.4byte 0x69747900
+	.4byte 0x46587C65
+	.4byte 0x6C656374
+	.4byte 0x72696369
+	.4byte 0x74797C00
+	.4byte 0x57656170
+	.4byte 0x6F6E426F
+	.4byte 0x6E653100
+	.4byte 0x57656170
+	.4byte 0x6F6E4D6F
+	.4byte 0x64656C31
+	.4byte 0x00576561
+	.4byte 0x706F6E47
+	.4byte 0x6C6F7743
+	.4byte 0x6F6C6F72
+	.4byte 0x52005765
+	.4byte 0x61706F6E
+	.4byte 0x476C6F77
+	.4byte 0x436F6C6F
+	.4byte 0x72470057
+	.4byte 0x6561706F
+	.4byte 0x6E476C6F
+	.4byte 0x77436F6C
+	.4byte 0x6F724200
+	.4byte 0x2E006865
+	.4byte 0x6E63685F
+	.4byte 0x4E495F63
+	.4byte 0x6C75625F
+	.4byte 0x57656170
+	.4byte 0x6F6E0057
+	.4byte 0x6561706F
+	.4byte 0x6E4F6666
+	.4byte 0x73657425
+	.4byte 0x64005765
+	.4byte 0x61706F6E
+	.4byte 0x426F6E65
+	.4byte 0x25640057
+	.4byte 0x6561706F
+	.4byte 0x6E4D6F64
+	.4byte 0x656C2564
+	.4byte 0x0068656E
+	.4byte 0x63685F6E
+	.4byte 0x695F636C
+	.4byte 0x75625F65
+	.4byte 0x7870616E
+	.4byte 0x64696E67
+	.4byte 0x2E616E6D
+	.4byte 0x00006865
+	.4byte 0x6E63685F
+	.4byte 0x6E695F63
+	.4byte 0x6C75625F
+	.4byte 0x636F6E74
+	.4byte 0x72616374
+	.4byte 0x696E672E
+	.4byte 0x616E6D00
+	.4byte 0x57656170
+	.4byte 0x6F6E0062
+	.4byte 0x65686176
+	.4byte 0x696F7200
+	.4byte 0x00000000
 
 .section .sbss
 
@@ -46,46 +138,49 @@ counter_esc__7_1493:
 
 .global need_setup__Q24zNPC17ElectricitySystem
 need_setup__Q24zNPC17ElectricitySystem:
-	.incbin "baserom.dol", 0x32D1F8, 0x8
+	.4byte 0x01000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_934_0
 _esc__2_934_0:
-	.incbin "baserom.dol", 0x332880, 0x4
+	.4byte 0x00000000
 .global _esc__2_935_2
 _esc__2_935_2:
-	.incbin "baserom.dol", 0x332884, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1232_1
 _esc__2_1232_1:
-	.incbin "baserom.dol", 0x332888, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_1233_0
 _esc__2_1233_0:
-	.incbin "baserom.dol", 0x33288C, 0x4
+	.4byte 0x3FC00000
 .global _esc__2_1234_3
 _esc__2_1234_3:
-	.incbin "baserom.dol", 0x332890, 0x4
+	.4byte 0x40000000
 .global _esc__2_1235_1
 _esc__2_1235_1:
-	.incbin "baserom.dol", 0x332894, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1236_2
 _esc__2_1236_2:
-	.incbin "baserom.dol", 0x332898, 0x4
+	.4byte 0x42480000
 .global _esc__2_1237_2
 _esc__2_1237_2:
-	.incbin "baserom.dol", 0x33289C, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_1282_1
 _esc__2_1282_1:
-	.incbin "baserom.dol", 0x3328A0, 0x4
+	.4byte 0x437FE666
 .global _esc__2_1283_0
 _esc__2_1283_0:
-	.incbin "baserom.dol", 0x3328A4, 0x4
+	.4byte 0x3EAAAAAB
 .global _esc__2_1289_4
 _esc__2_1289_4:
-	.incbin "baserom.dol", 0x3328A8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1420_4
 _esc__2_1420_4:
-	.incbin "baserom.dol", 0x3328B0, 0x8
+	.4byte 0x3F7FBE77
+	.4byte 0x00000000
 
 .if 0
 

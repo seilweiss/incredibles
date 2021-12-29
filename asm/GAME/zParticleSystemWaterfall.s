@@ -4,79 +4,131 @@
 
 .global __vt__33zParticleGeneratorWaterfallSplash
 __vt__33zParticleGeneratorWaterfallSplash:
-	.incbin "baserom.dol", 0x32D960, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801D2A50
+	.4byte 0x801D2AB0
+	.4byte 0x801D2AEC
 .global __vt__30zParticleSystemWaterfallSplash
 __vt__30zParticleSystemWaterfallSplash:
-	.incbin "baserom.dol", 0x32D974, 0x34
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801D213C
+	.4byte 0x801CF8C0
+	.4byte 0x801D21D4
+	.4byte 0x801CF8BC
+	.4byte 0x801CF8C4
+	.4byte 0x801CF8C8
+	.4byte 0x801D21F8
+	.4byte 0x801CF8D0
+	.4byte 0x801CF8D4
+	.4byte 0x801D0E44
+	.4byte 0x801D2218
 .global __vt__31zParticleGeneratorWaterfallMist
 __vt__31zParticleGeneratorWaterfallMist:
-	.incbin "baserom.dol", 0x32D9A8, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801D206C
+	.4byte 0x801D20CC
+	.4byte 0x801D2108
 .global __vt__28zParticleSystemWaterfallMist
 __vt__28zParticleSystemWaterfallMist:
-	.incbin "baserom.dol", 0x32D9BC, 0x34
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801D177C
+	.4byte 0x801CF8C0
+	.4byte 0x801D1814
+	.4byte 0x801CF8BC
+	.4byte 0x801CF8C4
+	.4byte 0x801CF8C8
+	.4byte 0x801D1838
+	.4byte 0x801CF8D0
+	.4byte 0x801CF8D4
+	.4byte 0x801D0E44
+	.4byte 0x801D1858
 .global __vt__27zParticleGeneratorWaterfall
 __vt__27zParticleGeneratorWaterfall:
-	.incbin "baserom.dol", 0x32D9F0, 0x14
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801D16AC
+	.4byte 0x801D170C
+	.4byte 0x801D1748
 .global __vt__24zParticleSystemWaterfall
 __vt__24zParticleSystemWaterfall:
-	.incbin "baserom.dol", 0x32DA04, 0x34
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801D0E54
+	.4byte 0x801CF8C0
+	.4byte 0x801D0EF8
+	.4byte 0x801CF8BC
+	.4byte 0x801CF8C4
+	.4byte 0x801CF8C8
+	.4byte 0x801D0F1C
+	.4byte 0x801CF8D0
+	.4byte 0x801CF8D4
+	.4byte 0x801D0E44
+	.4byte 0x801D0F3C
 
 .section .sdata2
 
 .global _esc__2_999_3
 _esc__2_999_3:
-	.incbin "baserom.dol", 0x333688, 0x4
+	.4byte 0x00000000
 .global _esc__2_1000_8
 _esc__2_1000_8:
-	.incbin "baserom.dol", 0x33368C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1113_2
 _esc__2_1113_2:
-	.incbin "baserom.dol", 0x333690, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1175_3
 _esc__2_1175_3:
-	.incbin "baserom.dol", 0x333694, 0x4
+	.4byte 0x2F800000
 .global _esc__2_1176_4
 _esc__2_1176_4:
-	.incbin "baserom.dol", 0x333698, 0x8
+	.4byte 0x3F807F38
+	.4byte 0x00000000
 .global _esc__2_1178_5
 _esc__2_1178_5:
-	.incbin "baserom.dol", 0x3336A0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_1179_4
 _esc__2_1179_4:
-	.incbin "baserom.dol", 0x3336A8, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1328_2
 _esc__2_1328_2:
-	.incbin "baserom.dol", 0x3336B0, 0x4
+	.4byte 0x41480000
 .global _esc__2_1329_4
 _esc__2_1329_4:
-	.incbin "baserom.dol", 0x3336B4, 0x4
+	.4byte 0x415E38E5
 .global _esc__2_1330_3
 _esc__2_1330_3:
-	.incbin "baserom.dol", 0x3336B8, 0x4
+	.4byte 0xC1D31C72
 .global _esc__2_1331_4
 _esc__2_1331_4:
-	.incbin "baserom.dol", 0x3336BC, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_1332_9
 _esc__2_1332_9:
-	.incbin "baserom.dol", 0x3336C0, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_1333_9
 _esc__2_1333_9:
-	.incbin "baserom.dol", 0x3336C4, 0x4
+	.4byte 0xC0490FDB
 .global _esc__2_1370_0
 _esc__2_1370_0:
-	.incbin "baserom.dol", 0x3336C8, 0x4
+	.4byte 0x37800080
 .global _esc__2_1371
 _esc__2_1371:
-	.incbin "baserom.dol", 0x3336CC, 0x4
+	.4byte 0x3949116D
 .global _esc__2_1372_1
 _esc__2_1372_1:
-	.incbin "baserom.dol", 0x3336D0, 0x4
+	.4byte 0x38D1B717
 .global _esc__2_1519_4
 _esc__2_1519_4:
-	.incbin "baserom.dol", 0x3336D4, 0x4
+	.4byte 0xBF000000
 .global _esc__2_1520_3
 _esc__2_1520_3:
-	.incbin "baserom.dol", 0x3336D8, 0x8
+	.4byte 0x30C90FDB
+	.4byte 0x00000000
 
 .if 0
 

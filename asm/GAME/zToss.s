@@ -13,19 +13,27 @@ lbl_803D950C:
 
 .global __vt__Q21z4toss
 __vt__Q21z4toss:
-	.incbin "baserom.dol", 0x32E300, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x800C1F7C
+	.4byte 0x800C1F80
+	.4byte 0x800C1F84
+	.4byte 0x801F37A4
+	.4byte 0x800C1F8C
+	.4byte 0x800C1F90
 
 .section .sdata2
 
 .global _esc__2_820_3
 _esc__2_820_3:
-	.incbin "baserom.dol", 0x333F18, 0x4
+	.4byte 0xC0000000
 .global _esc__2_821_1
 _esc__2_821_1:
-	.incbin "baserom.dol", 0x333F1C, 0x4
+	.4byte 0x00000000
 .global _esc__2_822_1
 _esc__2_822_1:
-	.incbin "baserom.dol", 0x333F20, 0x8
+	.4byte 0x3C8EFA35
+	.4byte 0x00000000
 
 .if 0
 

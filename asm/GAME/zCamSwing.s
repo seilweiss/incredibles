@@ -4,40 +4,49 @@
 
 .global __vt__9zCamSwing
 __vt__9zCamSwing:
-	.incbin "baserom.dol", 0x32B8E8, 0x28
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8008C448
+	.4byte 0x80010314
+	.4byte 0x8008C8E8
+	.4byte 0x8000E648
+	.4byte 0x8008C964
+	.4byte 0x8000EDCC
+	.4byte 0x80010318
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_993_2
 _esc__2_993_2:
-	.incbin "baserom.dol", 0x32FB40, 0x4
+	.4byte 0x00000000
 .global _esc__2_994_0
 _esc__2_994_0:
-	.incbin "baserom.dol", 0x32FB44, 0x4
+	.4byte 0x3F000000
 .global _esc__2_995_1
 _esc__2_995_1:
-	.incbin "baserom.dol", 0x32FB48, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_996_3
 _esc__2_996_3:
-	.incbin "baserom.dol", 0x32FB4C, 0x4
+	.4byte 0x3EFD70A4
 .global _esc__2_997_2
 _esc__2_997_2:
-	.incbin "baserom.dol", 0x32FB50, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1011_3
 _esc__2_1011_3:
-	.incbin "baserom.dol", 0x32FB54, 0x4
+	.4byte 0x40400000
 .global _esc__2_1012_2
 _esc__2_1012_2:
-	.incbin "baserom.dol", 0x32FB58, 0x4
+	.4byte 0x40490FDB
 .global _esc__2_1013_0
 _esc__2_1013_0:
-	.incbin "baserom.dol", 0x32FB5C, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_1026_0
 _esc__2_1026_0:
-	.incbin "baserom.dol", 0x32FB60, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1144_0
 _esc__2_1144_0:
-	.incbin "baserom.dol", 0x32FB64, 0x4
+	.4byte 0xC0490FDB
 
 .if 0
 

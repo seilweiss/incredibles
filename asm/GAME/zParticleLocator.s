@@ -13,43 +13,52 @@ activities_used__30_esc__2_unnamed_esc__2_zParticleLocator_cpp_esc__2_:
 
 .global _esc__2_1037_5
 _esc__2_1037_5:
-	.incbin "baserom.dol", 0x333630, 0x4
+	.4byte 0x00000000
 .global _esc__2_1049_2
 _esc__2_1049_2:
-	.incbin "baserom.dol", 0x333634, 0x4
+	.4byte 0x30C90FDB
 .global _esc__2_1050_4
 _esc__2_1050_4:
-	.incbin "baserom.dol", 0x333638, 0x4
+	.4byte 0x30000000
 .global _esc__2_1051_2
 _esc__2_1051_2:
-	.incbin "baserom.dol", 0x33363C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1052_1
 _esc__2_1052_1:
-	.incbin "baserom.dol", 0x333640, 0x8
+	.4byte 0x2F800000
+	.4byte 0x00000000
 .global _esc__2_1054_5
 _esc__2_1054_5:
-	.incbin "baserom.dol", 0x333648, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1062_4
 _esc__2_1062_4:
-	.incbin "baserom.dol", 0x333650, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1104_2
 _esc__2_1104_2:
-	.incbin "baserom.dol", 0x333654, 0x4
+	.4byte 0x40C907AA
 .global _esc__2_1167_5
 _esc__2_1167_5:
-	.incbin "baserom.dol", 0x333658, 0x4
+	.4byte 0x40000000
 .global _esc__2_1168_3
 _esc__2_1168_3:
-	.incbin "baserom.dol", 0x33365C, 0x4
+	.4byte 0x3FAAAAAB
 .global _esc__2_1169_2
 _esc__2_1169_2:
-	.incbin "baserom.dol", 0x333660, 0x4
+	.4byte 0x4F800000
 .global setup_attach_table_esc__7_1234
 setup_attach_table_esc__7_1234:
-	.incbin "baserom.dol", 0x333664, 0xC
+	.4byte 0x801CFA6C
+	.4byte 0x801CFB60
+	.4byte 0x801CFC6C
 .global setup_volume_table_esc__7_1235
 setup_volume_table_esc__7_1235:
-	.incbin "baserom.dol", 0x333670, 0x18
+	.4byte 0x801CFC98
+	.4byte 0x801CFEE4
+	.4byte 0x801D0098
+	.4byte 0x801D0704
+	.4byte 0x801D0870
+	.4byte 0x00000000
 
 .if 0
 

@@ -4,7 +4,70 @@
 
 .global cheats__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_
 cheats__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x301D30, 0x100
+	.4byte 0x802DA2F8
+	.4byte 0x8008D600
+	.4byte 0x802DA305
+	.4byte 0x8008D058
+	.4byte 0x802DA30A
+	.4byte 0x8008D184
+	.4byte 0x802DA313
+	.4byte 0x8008D374
+	.4byte 0x802DA31E
+	.4byte 0x8008D32C
+	.4byte 0x802DA327
+	.4byte 0x8008CC88
+	.4byte 0x802DA336
+	.4byte 0x8008CF74
+	.4byte 0x802DA340
+	.4byte 0x8008D48C
+	.4byte 0x802DA349
+	.4byte 0x8008D4CC
+	.4byte 0x802DA354
+	.4byte 0x8008D468
+	.4byte 0x802DA360
+	.4byte 0x8008D65C
+	.4byte 0x802DA366
+	.4byte 0x8008D100
+	.4byte 0x802DA36F
+	.4byte 0x8008D3A4
+	.4byte 0x802DA379
+	.4byte 0x8008D740
+	.4byte 0x802DA37C
+	.4byte 0x8008CFEC
+	.4byte 0x802DA37D
+	.4byte 0x8008D1CC
+	.4byte 0x802DA38B
+	.4byte 0x8008D1AC
+	.4byte 0x802DA399
+	.4byte 0x8008D18C
+	.4byte 0x802DA3A6
+	.4byte 0x8008CE10
+	.4byte 0x802DA3AD
+	.4byte 0x8008CF64
+	.4byte 0x802DA3B5
+	.4byte 0x8008D070
+	.4byte 0x802DA3BE
+	.4byte 0x8008D4B0
+	.4byte 0x802DA3C7
+	.4byte 0x8008D748
+	.4byte 0x802DA3D1
+	.4byte 0x8008D344
+	.4byte 0x802DA3DA
+	.4byte 0x8008D0CC
+	.4byte 0x802DA3E3
+	.4byte 0x8008CE6C
+	.4byte 0x802DA3ED
+	.4byte 0x8008D314
+	.4byte 0x802DA3F9
+	.4byte 0x8008CD8C
+	.4byte 0x802DA407
+	.4byte 0x8008D134
+	.4byte 0x802DA410
+	.4byte 0x8008D014
+	.4byte 0x802DA417
+	.4byte 0x8008D1EC
+	.4byte 0x802DA423
+	.4byte 0x8008D758
 
 .section .rodata
 
@@ -12,7 +75,88 @@ cheats__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_:
 
 .global _esc__2_stringBase0_37
 _esc__2_stringBase0_37:
-	.incbin "baserom.dol", 0x2D72F8, 0x148
+	.4byte 0x4174686C
+	.4byte 0x65746573
+	.4byte 0x466F6F74
+	.4byte 0x00624855
+	.4byte 0x4400426F
+	.4byte 0x61506C61
+	.4byte 0x63650042
+	.4byte 0x57546865
+	.4byte 0x4D6F7669
+	.4byte 0x65004461
+	.4byte 0x6E647275
+	.4byte 0x66660044
+	.4byte 0x616E6965
+	.4byte 0x6C546865
+	.4byte 0x466C6173
+	.4byte 0x68004461
+	.4byte 0x73684C69
+	.4byte 0x6B657300
+	.4byte 0x44654576
+	.4byte 0x6F6C7665
+	.4byte 0x00446973
+	.4byte 0x636F5275
+	.4byte 0x6C657300
+	.4byte 0x45696E73
+	.4byte 0x7465696E
+	.4byte 0x69756D00
+	.4byte 0x454D6F64
+	.4byte 0x6500466C
+	.4byte 0x65786962
+	.4byte 0x6C650047
+	.4byte 0x617A6572
+	.4byte 0x4265616D
+	.4byte 0x00484900
+	.4byte 0x00496E76
+	.4byte 0x65727443
+	.4byte 0x616D6572
+	.4byte 0x61580049
+	.4byte 0x6E766572
+	.4byte 0x7443616D
+	.4byte 0x65726159
+	.4byte 0x00496E76
+	.4byte 0x65727454
+	.4byte 0x75727265
+	.4byte 0x74004B72
+	.4byte 0x6F6E6F73
+	.4byte 0x004C6162
+	.4byte 0x6F6D6265
+	.4byte 0x004D6354
+	.4byte 0x72617669
+	.4byte 0x73005069
+	.4byte 0x6E6B536C
+	.4byte 0x69700052
+	.4byte 0x6F744149
+	.4byte 0x44616C67
+	.4byte 0x00536173
+	.4byte 0x734D6F64
+	.4byte 0x65005368
+	.4byte 0x6F777469
+	.4byte 0x6D650053
+	.4byte 0x6D617274
+	.4byte 0x426F6D62
+	.4byte 0x00537072
+	.4byte 0x696E6742
+	.4byte 0x7265616B
+	.4byte 0x00546865
+	.4byte 0x44756465
+	.4byte 0x41626964
+	.4byte 0x65730054
+	.4byte 0x6F6E794C
+	.4byte 0x6F616600
+	.4byte 0x556E6C6F
+	.4byte 0x636B0055
+	.4byte 0x5544444C
+	.4byte 0x524C5242
+	.4byte 0x41530059
+	.4byte 0x6F75724E
+	.4byte 0x616D6549
+	.4byte 0x6E4C6967
+	.4byte 0x68747300
+	.4byte 0x7814141D
+	.4byte 0x1915191F
+	.4byte 0x09660000
 
 .section .sbss
 
@@ -45,67 +189,91 @@ init_esc__7_localstatic4_esc__7_get_system__Q21z26lightweight_esc__0_Q21z5laser_
 
 .global headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_
 headScale__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B910, 0x4
+	.4byte 0x3F800000
 .global targetHead__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_
 targetHead__20_esc__2_unnamed_esc__2_zCheat_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B914, 0x4
+	.4byte 0x3F800000
 .global unlock_clear_esc__7_1631
 unlock_clear_esc__7_1631:
-	.incbin "baserom.dol", 0x32B918, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__Q21z23lightweight_system_base
 __vt__Q21z23lightweight_system_base:
-	.incbin "baserom.dol", 0x32B938, 0x24
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__Q21z33lightweight_system_esc__0_Q21z5laser_esc__4_40_esc__1_
 __vt__Q21z33lightweight_system_esc__0_Q21z5laser_esc__4_40_esc__1_:
-	.incbin "baserom.dol", 0x32B95C, 0x24
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8008DF4C
+	.4byte 0x8008E0EC
+	.4byte 0x8008E068
+	.4byte 0x8008DFE8
+	.4byte 0x8008DED8
+	.4byte 0x8008DF70
+	.4byte 0x8008E160
 
 .section .sdata2
 
 .global _esc__2_1291_0
 _esc__2_1291_0:
-	.incbin "baserom.dol", 0x32FB68, 0x4
+	.4byte 0x00000000
 .global _esc__2_1319
 _esc__2_1319:
-	.incbin "baserom.dol", 0x32FB6C, 0x4
+	.4byte 0x41F00000
 .global _esc__2_1354_1
 _esc__2_1354_1:
-	.incbin "baserom.dol", 0x32FB70, 0x4
+	.4byte 0x43340000
 .global _esc__2_1372
 _esc__2_1372:
-	.incbin "baserom.dol", 0x32FB74, 0x4
+	.4byte 0x41C80000
 .global _esc__2_1373
 _esc__2_1373:
-	.incbin "baserom.dol", 0x32FB78, 0x4
+	.4byte 0x40A00000
 .global _esc__2_1374
 _esc__2_1374:
-	.incbin "baserom.dol", 0x32FB7C, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1498
 _esc__2_1498:
-	.incbin "baserom.dol", 0x32FB80, 0x4
+	.4byte 0x40000000
 .global _esc__2_1508
 _esc__2_1508:
-	.incbin "baserom.dol", 0x32FB84, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1531_0
 _esc__2_1531_0:
-	.incbin "baserom.dol", 0x32FB88, 0x4
+	.4byte 0x40400000
 .global _esc__2_1663
 _esc__2_1663:
-	.incbin "baserom.dol", 0x32FB8C, 0x4
+	.4byte 0xFFFFFF80
 .global _esc__2_1734
 _esc__2_1734:
-	.incbin "baserom.dol", 0x32FB90, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_1735
 _esc__2_1735:
-	.incbin "baserom.dol", 0x32FB94, 0x4
+	.4byte 0x41A00000
 .global _esc__2_1736
 _esc__2_1736:
-	.incbin "baserom.dol", 0x32FB98, 0x4
+	.4byte 0x3DCCCCCD
 .global _esc__2_1737
 _esc__2_1737:
-	.incbin "baserom.dol", 0x32FB9C, 0x4
+	.4byte 0x42480000
 .global _esc__2_1738
 _esc__2_1738:
-	.incbin "baserom.dol", 0x32FBA0, 0x8
+	.4byte 0x40E00000
+	.4byte 0x00000000
 
 .if 0
 

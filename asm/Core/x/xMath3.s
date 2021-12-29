@@ -10,85 +10,101 @@ g_I3:
 
 .global gs_fTolerance
 gs_fTolerance:
-	.incbin "baserom.dol", 0x32B2C8, 0x4
+	.4byte 0x3727C5AC
 .global nxt_esc__7_2145
 nxt_esc__7_2145:
-	.incbin "baserom.dol", 0x32B2CC, 0xC
+	.4byte 0x00000001
+	.4byte 0x00000002
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global g_O3
 g_O3:
-	.incbin "baserom.dol", 0x32F0D0, 0x4
+	.4byte 0x00000000
 .global lbl_803D2714
 lbl_803D2714:
-	.incbin "baserom.dol", 0x32F0D4, 0x4
+	.4byte 0x00000000
 .global lbl_803D2718
 lbl_803D2718:
-	.incbin "baserom.dol", 0x32F0D8, 0x4
+	.4byte 0x00000000
 .global g_X3
 g_X3:
-	.incbin "baserom.dol", 0x32F0DC, 0xC
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global g_Y3
 g_Y3:
-	.incbin "baserom.dol", 0x32F0E8, 0x4
+	.4byte 0x00000000
 .global lbl_803D272C
 lbl_803D272C:
-	.incbin "baserom.dol", 0x32F0EC, 0x4
+	.4byte 0x3F800000
 .global lbl_803D2730
 lbl_803D2730:
-	.incbin "baserom.dol", 0x32F0F0, 0x4
+	.4byte 0x00000000
 .global g_Z3
 g_Z3:
-	.incbin "baserom.dol", 0x32F0F4, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
 .global g_NX3
 g_NX3:
-	.incbin "baserom.dol", 0x32F100, 0xC
+	.4byte 0xBF800000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global g_NY3
 g_NY3:
-	.incbin "baserom.dol", 0x32F10C, 0xC
+	.4byte 0x00000000
+	.4byte 0xBF800000
+	.4byte 0x00000000
 .global g_NZ3
 g_NZ3:
-	.incbin "baserom.dol", 0x32F118, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0xBF800000
 .global g_IQ
 g_IQ:
-	.incbin "baserom.dol", 0x32F124, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
 .global _esc__2_618_0
 _esc__2_618_0:
-	.incbin "baserom.dol", 0x32F134, 0x4
+	.4byte 0x00000000
 .global _esc__2_784
 _esc__2_784:
-	.incbin "baserom.dol", 0x32F138, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1513
 _esc__2_1513:
-	.incbin "baserom.dol", 0x32F13C, 0x4
+	.4byte 0x40000000
 .global _esc__2_1553
 _esc__2_1553:
-	.incbin "baserom.dol", 0x32F140, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1656
 _esc__2_1656:
-	.incbin "baserom.dol", 0x32F144, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1721
 _esc__2_1721:
-	.incbin "baserom.dol", 0x32F148, 0x4
+	.4byte 0x3FC90FDB
 .global _esc__2_1722
 _esc__2_1722:
-	.incbin "baserom.dol", 0x32F14C, 0x4
+	.4byte 0xBFC90FDB
 .global _esc__2_1729
 _esc__2_1729:
-	.incbin "baserom.dol", 0x32F150, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1846
 _esc__2_1846:
-	.incbin "baserom.dol", 0x32F154, 0x4
+	.4byte 0x322BCC76
 .global _esc__2_1847
 _esc__2_1847:
-	.incbin "baserom.dol", 0x32F158, 0x4
+	.4byte 0x3F7FFF58
 .global _esc__2_2239
 _esc__2_2239:
-	.incbin "baserom.dol", 0x32F15C, 0x4
+	.4byte 0x3F7FBE77
 .global _esc__2_2288
 _esc__2_2288:
-	.incbin "baserom.dol", 0x32F160, 0x8
+	.4byte 0x3F7FF972
+	.4byte 0x00000000
 
 .if 0
 

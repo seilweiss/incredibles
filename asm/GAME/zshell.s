@@ -4,46 +4,86 @@
 
 .global _esc__2_stringBase0_94
 _esc__2_stringBase0_94:
-	.incbin "baserom.dol", 0x2E27A8, 0x68
+	.4byte 0x2E6D696E
+	.4byte 0x66002E64
+	.4byte 0x66660053
+	.4byte 0x68726170
+	.4byte 0x6E656C00
+	.4byte 0x4B6E6F63
+	.4byte 0x6B626163
+	.4byte 0x6B417761
+	.4byte 0x79537065
+	.4byte 0x6564004B
+	.4byte 0x6E6F636B
+	.4byte 0x6261636B
+	.4byte 0x55705370
+	.4byte 0x65656400
+	.4byte 0x44616D61
+	.4byte 0x6765004D
+	.4byte 0x61784469
+	.4byte 0x73740042
+	.4byte 0x6C617374
+	.4byte 0x52616469
+	.4byte 0x75730047
+	.4byte 0x72617669
+	.4byte 0x74794469
+	.4byte 0x72656374
+	.4byte 0x696F6E00
+	.4byte 0x00000000
 
 .section .sdata
 
 .global __vt__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_
 __vt__Q21z26lightweight_esc__0_Q21z5shell_esc__4_15_esc__1_:
-	.incbin "baserom.dol", 0x32CF38, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8015B900
+	.4byte 0x8015B904
+	.4byte 0x8015B908
+	.4byte 0x8015B90C
+	.4byte 0x8015B910
+	.4byte 0x8015B914
 .global __vt__Q21z5shell
 __vt__Q21z5shell:
-	.incbin "baserom.dol", 0x32CF58, 0x20
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8015B7F0
+	.4byte 0x8015B904
+	.4byte 0x8015B908
+	.4byte 0x8015B514
+	.4byte 0x8015B4F0
+	.4byte 0x8015B914
 
 .section .sdata2
 
 .global _esc__2_1282_0
 _esc__2_1282_0:
-	.incbin "baserom.dol", 0x331F20, 0x4
+	.4byte 0x00000000
 .global _esc__2_1283
 _esc__2_1283:
-	.incbin "baserom.dol", 0x331F24, 0x4
+	.4byte 0x42480000
 .global _esc__2_1284_0
 _esc__2_1284_0:
-	.incbin "baserom.dol", 0x331F28, 0x4
+	.4byte 0x40400000
 .global _esc__2_1329_1
 _esc__2_1329_1:
-	.incbin "baserom.dol", 0x331F2C, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1330_0
 _esc__2_1330_0:
-	.incbin "baserom.dol", 0x331F30, 0x4
+	.4byte 0xB727C5AC
 .global _esc__2_1331_1
 _esc__2_1331_1:
-	.incbin "baserom.dol", 0x331F34, 0x4
+	.4byte 0x3727C5AC
 .global _esc__2_1365_0
 _esc__2_1365_0:
-	.incbin "baserom.dol", 0x331F38, 0x4
+	.4byte 0x00000000
 .global lbl_803D557C
 lbl_803D557C:
-	.incbin "baserom.dol", 0x331F3C, 0x4
+	.4byte 0x3F800000
 .global lbl_803D5580
 lbl_803D5580:
-	.incbin "baserom.dol", 0x331F40, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .if 0
 

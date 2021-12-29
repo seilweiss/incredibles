@@ -18,10 +18,10 @@ m_uLastTimeKey__24_esc__2_unnamed_esc__2_xSubTitles_cpp_esc__2_:
 
 .global subtitleFontWidth__24_esc__2_unnamed_esc__2_xSubTitles_cpp_esc__2_
 subtitleFontWidth__24_esc__2_unnamed_esc__2_xSubTitles_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B598, 0x4
+	.4byte 0x41A00000
 .global subtitleFontHeight__24_esc__2_unnamed_esc__2_xSubTitles_cpp_esc__2_
 subtitleFontHeight__24_esc__2_unnamed_esc__2_xSubTitles_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32B59C, 0x4
+	.4byte 0x41A00000
 
 .section .sdata2
 
@@ -29,37 +29,40 @@ subtitleFontHeight__24_esc__2_unnamed_esc__2_xSubTitles_cpp_esc__2_:
 
 .global screen_bounds_2
 screen_bounds_2:
-	.incbin "baserom.dol", 0x32F650, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 .global _esc__2_757
 _esc__2_757:
-	.incbin "baserom.dol", 0x32F660, 0x4
+	.4byte 0x3E800000
 .global _esc__2_758
 _esc__2_758:
-	.incbin "baserom.dol", 0x32F664, 0x4
+	.4byte 0x41F00000
 .global _esc__2_759
 _esc__2_759:
-	.incbin "baserom.dol", 0x32F668, 0x4
+	.4byte 0x41C80000
 .global _esc__2_760_1
 _esc__2_760_1:
-	.incbin "baserom.dol", 0x32F66C, 0x4
+	.4byte 0x41A00000
 .global _esc__2_801
 _esc__2_801:
-	.incbin "baserom.dol", 0x32F670, 0x4
+	.4byte 0xB8C4C8FF
 .global _esc__2_824
 _esc__2_824:
-	.incbin "baserom.dol", 0x32F674, 0x4
+	.4byte 0x00000000
 .global _esc__2_825
 _esc__2_825:
-	.incbin "baserom.dol", 0x32F678, 0x4
+	.4byte 0x40000000
 .global _esc__2_826
 _esc__2_826:
-	.incbin "baserom.dol", 0x32F67C, 0x4
+	.4byte 0x3D4CCCCD
 .global _esc__2_827
 _esc__2_827:
-	.incbin "baserom.dol", 0x32F680, 0x4
+	.4byte 0x3F666666
 .global _esc__2_828
 _esc__2_828:
-	.incbin "baserom.dol", 0x32F684, 0x4
+	.4byte 0x3F800000
 
 .if 0
 

@@ -25,103 +25,129 @@ spark_system:
 
 .global __vt__263RegisterOnFirstEmitSystem_esc__0_213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitterConeSurface_esc__0_151zParticleColorWhiteFadeOut_esc__0_120zParticleMoverLinearDecel_esc__0_91zParticleRadiusConst_esc__0_67zParticlePoolType_esc__0_30ptank_pool__pos_color_size_uv2_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_17EnergyPulseSystem_esc__1_
 __vt__263RegisterOnFirstEmitSystem_esc__0_213zParticleUVStaticTile_esc__0_3_esc__4_3_esc__4_183zParticleEmitterConeSurface_esc__0_151zParticleColorWhiteFadeOut_esc__0_120zParticleMoverLinearDecel_esc__0_91zParticleRadiusConst_esc__0_67zParticlePoolType_esc__0_30ptank_pool__pos_color_size_uv2_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_17EnergyPulseSystem_esc__1_:
-	.incbin "baserom.dol", 0x32DBB0, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__17EnergyPulseSystem
 __vt__17EnergyPulseSystem:
-	.incbin "baserom.dol", 0x32DBBC, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801E0DA4
 .global __vt__221RegisterOnFirstEmitSystem_esc__0_176zParticleEmitterConeSurface_esc__0_144zParticleColorWhiteOpaque_esc__0_114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_12RubbleSystem_esc__1_
 __vt__221RegisterOnFirstEmitSystem_esc__0_176zParticleEmitterConeSurface_esc__0_144zParticleColorWhiteOpaque_esc__0_114zParticleMoverGravity_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_12RubbleSystem_esc__1_:
-	.incbin "baserom.dol", 0x32DBC8, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__12RubbleSystem
 __vt__12RubbleSystem:
-	.incbin "baserom.dol", 0x32DBD4, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801E0DFC
 .global __vt__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15FlameConeSystem_esc__1_
 __vt__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15FlameConeSystem_esc__1_:
-	.incbin "baserom.dol", 0x32DBE0, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__15FlameConeSystem
 __vt__15FlameConeSystem:
-	.incbin "baserom.dol", 0x32DBEC, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801E0E54
 .global __vt__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15SmokePuffSystem_esc__1_
 __vt__228RegisterOnFirstEmitSystem_esc__0_180zParticleEmitterConeVolume_esc__0_149zParticleColorToBlackFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_15SmokePuffSystem_esc__1_:
-	.incbin "baserom.dol", 0x32DBF8, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__15SmokePuffSystem
 __vt__15SmokePuffSystem:
-	.incbin "baserom.dol", 0x32DC04, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801E0EAC
 .global __vt__225RegisterOnFirstEmitSystem_esc__0_178zParticleEmitterConeVolume_esc__0_147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_14LavaDripSystem_esc__1_
 __vt__225RegisterOnFirstEmitSystem_esc__0_178zParticleEmitterConeVolume_esc__0_147zParticleColorWhiteFadeOut_esc__0_116zParticleMoverLinearVel_esc__0_89zParticleRadiusPercent_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_14LavaDripSystem_esc__1_:
-	.incbin "baserom.dol", 0x32DC10, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__14LavaDripSystem
 __vt__14LavaDripSystem:
-	.incbin "baserom.dol", 0x32DC1C, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801E0F04
 .global __vt__218RegisterOnFirstEmitSystem_esc__0_174zParticleEmitterConeVolume_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_11SparkSystem_esc__1_
 __vt__218RegisterOnFirstEmitSystem_esc__0_174zParticleEmitterConeVolume_esc__0_143zParticleColorWhiteFadeOut_esc__0_112zParticleMoverGravity_esc__0_87zParticleRadiusConst_esc__0_63zParticlePoolType_esc__0_26ptank_pool__pos_color_size_esc__4_13zParticleBase_esc__1__esc__1__esc__1__esc__1__esc__1__esc__4_11SparkSystem_esc__1_:
-	.incbin "baserom.dol", 0x32DC28, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global __vt__11SparkSystem
 __vt__11SparkSystem:
-	.incbin "baserom.dol", 0x32DC34, 0xC
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x801E0F5C
 
 .section .sdata2
 
 .global _esc__2_920_1
 _esc__2_920_1:
-	.incbin "baserom.dol", 0x333AA8, 0x4
+	.4byte 0x00000000
 .global _esc__2_921
 _esc__2_921:
-	.incbin "baserom.dol", 0x333AAC, 0x4
+	.4byte 0x3F800000
 .global _esc__2_977_2
 _esc__2_977_2:
-	.incbin "baserom.dol", 0x333AB0, 0x4
+	.4byte 0x3F333333
 .global _esc__2_978_2
 _esc__2_978_2:
-	.incbin "baserom.dol", 0x333AB4, 0x4
+	.4byte 0x3E99999A
 .global _esc__2_991_5
 _esc__2_991_5:
-	.incbin "baserom.dol", 0x333AB8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 .global _esc__2_993_4
 _esc__2_993_4:
-	.incbin "baserom.dol", 0x333AC0, 0x4
+	.4byte 0x40400000
 .global _esc__2_994_2
 _esc__2_994_2:
-	.incbin "baserom.dol", 0x333AC4, 0x4
+	.4byte 0x3A83126F
 .global _esc__2_1005_7
 _esc__2_1005_7:
-	.incbin "baserom.dol", 0x333AC8, 0x4
+	.4byte 0x40C90FDB
 .global _esc__2_1006_6
 _esc__2_1006_6:
-	.incbin "baserom.dol", 0x333ACC, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1010_4
 _esc__2_1010_4:
-	.incbin "baserom.dol", 0x333AD0, 0x4
+	.4byte 0x3C23D70A
 .global _esc__2_1011_6
 _esc__2_1011_6:
-	.incbin "baserom.dol", 0x333AD4, 0x4
+	.4byte 0x3FC00000
 .global _esc__2_1012_7
 _esc__2_1012_7:
-	.incbin "baserom.dol", 0x333AD8, 0x4
+	.4byte 0x40000000
 .global _esc__2_1161_2
 _esc__2_1161_2:
-	.incbin "baserom.dol", 0x333ADC, 0x4
+	.4byte 0x43480000
 .global _esc__2_1184_5
 _esc__2_1184_5:
-	.incbin "baserom.dol", 0x333AE0, 0x4
+	.4byte 0x3E19999A
 .global _esc__2_1232_2
 _esc__2_1232_2:
-	.incbin "baserom.dol", 0x333AE4, 0x4
+	.4byte 0x3E4CCCCD
 .global _esc__2_1233_2
 _esc__2_1233_2:
-	.incbin "baserom.dol", 0x333AE8, 0x4
+	.4byte 0x3CA3D70A
 .global _esc__2_1234_4
 _esc__2_1234_4:
-	.incbin "baserom.dol", 0x333AEC, 0x4
+	.4byte 0x3ECCCCCD
 .global _esc__2_1235_2
 _esc__2_1235_2:
-	.incbin "baserom.dol", 0x333AF0, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1394_5
 _esc__2_1394_5:
-	.incbin "baserom.dol", 0x333AF4, 0x4
+	.4byte 0x3EAAAAAB
 .global _esc__2_1397_2
 _esc__2_1397_2:
-	.incbin "baserom.dol", 0x333AF8, 0x8
+	.4byte 0x437F0000
+	.4byte 0x00000000
 
 .if 0
 

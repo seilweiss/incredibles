@@ -16,7 +16,8 @@ sMaterialTexture:
 
 .global _esc__2_stringBase0_29
 _esc__2_stringBase0_29:
-	.incbin "baserom.dol", 0x2CF948, 0x8
+	.4byte 0x48495F54
+	.4byte 0x61677300
 
 .section .sbss
 
@@ -85,46 +86,53 @@ lbl_803D8984:
 
 .global lbl_803D2E94
 lbl_803D2E94:
-	.incbin "baserom.dol", 0x32F854, 0x4
+	.4byte 0x00000000
 .global _esc__2_1056_1
 _esc__2_1056_1:
-	.incbin "baserom.dol", 0x32F858, 0x18
+	.4byte 0x447A0000
+	.4byte 0x447A0000
+	.4byte 0x447A0000
+	.4byte 0xC47A0000
+	.4byte 0xC47A0000
+	.4byte 0xC47A0000
 .global _esc__2_1170
 _esc__2_1170:
-	.incbin "baserom.dol", 0x32F870, 0x4
+	.4byte 0xBF800000
 .global _esc__2_1171
 _esc__2_1171:
-	.incbin "baserom.dol", 0x32F874, 0x4
+	.4byte 0x3F866666
 .global _esc__2_1172
 _esc__2_1172:
-	.incbin "baserom.dol", 0x32F878, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1183_0
 _esc__2_1183_0:
-	.incbin "baserom.dol", 0x32F87C, 0x4
+	.4byte 0x00000000
 .global _esc__2_1184_0
 _esc__2_1184_0:
-	.incbin "baserom.dol", 0x32F880, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1523
 _esc__2_1523:
-	.incbin "baserom.dol", 0x32F884, 0x4
+	.4byte 0x4E6E6B28
 .global _esc__2_1678_0
 _esc__2_1678_0:
-	.incbin "baserom.dol", 0x32F888, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1685_0
 _esc__2_1685_0:
-	.incbin "baserom.dol", 0x32F890, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1758_0
 _esc__2_1758_0:
-	.incbin "baserom.dol", 0x32F894, 0x4
+	.4byte 0x48494142
 .global lbl_803D2ED8
 lbl_803D2ED8:
-	.incbin "baserom.dol", 0x32F898, 0x4
+	.4byte 0x00000000
 .global _esc__2_2060
 _esc__2_2060:
-	.incbin "baserom.dol", 0x32F89C, 0x4
+	.4byte 0xFE967699
 .global _esc__2_2061
 _esc__2_2061:
-	.incbin "baserom.dol", 0x32F8A0, 0x8
+	.4byte 0x7E967699
+	.4byte 0x00000000
 
 .if 0
 

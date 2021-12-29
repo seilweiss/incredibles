@@ -31,37 +31,38 @@ sOldVolume:
 
 .global _esc__2_977
 _esc__2_977:
-	.incbin "baserom.dol", 0x32F910, 0x4
+	.4byte 0x406EB852
 .global _esc__2_978_0
 _esc__2_978_0:
-	.incbin "baserom.dol", 0x32F914, 0x4
+	.4byte 0x00000000
 .global _esc__2_1419_0
 _esc__2_1419_0:
-	.incbin "baserom.dol", 0x32F918, 0x4
+	.4byte 0x3FC00000
 .global _esc__2_1420
 _esc__2_1420:
-	.incbin "baserom.dol", 0x32F91C, 0x4
+	.4byte 0x3C03126F
 .global _esc__2_1421_1
 _esc__2_1421_1:
-	.incbin "baserom.dol", 0x32F920, 0x4
+	.4byte 0x3F800000
 .global _esc__2_1422_0
 _esc__2_1422_0:
-	.incbin "baserom.dol", 0x32F924, 0x4
+	.4byte 0x3F000000
 .global _esc__2_1542
 _esc__2_1542:
-	.incbin "baserom.dol", 0x32F928, 0x4
+	.4byte 0x40000000
 .global _esc__2_1543
 _esc__2_1543:
-	.incbin "baserom.dol", 0x32F92C, 0x4
+	.4byte 0x41400000
 .global _esc__2_1545_0
 _esc__2_1545_0:
-	.incbin "baserom.dol", 0x32F930, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 .global _esc__2_1594
 _esc__2_1594:
-	.incbin "baserom.dol", 0x32F938, 0x4
+	.4byte 0x437F0000
 .global _esc__2_1595
 _esc__2_1595:
-	.incbin "baserom.dol", 0x32F93C, 0x4
+	.4byte 0xBF800000
 
 .if 0
 

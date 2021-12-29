@@ -10,7 +10,14 @@ uiElements__20_esc__2_unnamed_esc__2_zUIMgr_cpp_esc__2_:
 
 .global _esc__2_1182
 _esc__2_1182:
-	.incbin "baserom.dol", 0x30D7D8, 0x20
+	.4byte 0x8016C130
+	.4byte 0x8016C13C
+	.4byte 0x8016C148
+	.4byte 0x8016C154
+	.4byte 0x8016C160
+	.4byte 0x8016C16C
+	.4byte 0x8016C178
+	.4byte 0x8016C1FC
 
 .section .sbss
 
@@ -31,13 +38,15 @@ _esc__2_1298:
 
 .global uiAnyActive__20_esc__2_unnamed_esc__2_zUIMgr_cpp_esc__2_
 uiAnyActive__20_esc__2_unnamed_esc__2_zUIMgr_cpp_esc__2_:
-	.incbin "baserom.dol", 0x32D0C0, 0x8
+	.4byte 0x01000000
+	.4byte 0x00000000
 
 .section .sdata2
 
 .global _esc__2_1308_0
 _esc__2_1308_0:
-	.incbin "baserom.dol", 0x332210, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 
 .if 0
 
