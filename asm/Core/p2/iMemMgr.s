@@ -799,11 +799,11 @@ lbl_80078A1C:
 /* 80078A8C 0007588C  7C 7F 1B 78 */	mr r31, r3
 /* 80078A90 00075890  38 64 50 98 */	addi r3, r4, memoryManager__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@l
 /* 80078A94 00075894  48 00 00 A5 */	bl GetHeapArenaStart__Q221_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_18MemoryManagerMultiCFv
-/* 80078A98 00075898  3C A0 80 3E */	lis r5, 0x803D9524@ha
-/* 80078A9C 0007589C  3C 80 80 3E */	lis r4, 0x803E1528@ha
-/* 80078AA0 000758A0  3B C5 95 24 */	addi r30, r5, 0x803D9524@l
+/* 80078A98 00075898  3C A0 80 3E */	lis r5, _stack_end@ha
+/* 80078A9C 0007589C  3C 80 80 3E */	lis r4, _stack_addr@ha
+/* 80078AA0 000758A0  3B C5 95 24 */	addi r30, r5, _stack_end@l
 /* 80078AA4 000758A4  7F 83 F8 50 */	subf r28, r3, r31
-/* 80078AA8 000758A8  3B E4 15 28 */	addi r31, r4, 0x803E1528@l
+/* 80078AA8 000758A8  3B E4 15 28 */	addi r31, r4, _stack_addr@l
 /* 80078AAC 000758AC  93 CD C0 3C */	stw r30, StackBase__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@sda21(r13)
 /* 80078AB0 000758B0  7C 1E F8 50 */	subf r0, r30, r31
 /* 80078AB4 000758B4  90 0D C0 40 */	stw r0, StackSize__21_esc__2_unnamed_esc__2_iMemMgr_cpp_esc__2_@sda21(r13)
