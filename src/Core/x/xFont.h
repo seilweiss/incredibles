@@ -1,8 +1,26 @@
 #ifndef XFONT_H
 #define XFONT_H
 
+#include "xColor.h"
 #include "xString.h"
 #include "xMath2.h"
+
+struct xfont
+{
+    uint32 id;
+    float32 width;
+    float32 height;
+    float32 space;
+    xColor color;
+    xColor shadowColor;
+    float32 shadowOffsetX;
+    float32 shadowOffsetY;
+    basic_rect<float32> clip;
+
+    static xfont create(uint32 id, float32 width, float32 height, float32 space, xColor color,
+                        const basic_rect<float32>& clip, xColor shadowColor, float32 shadowOffsetX,
+                        float32 shadowOffsetY);
+};
 
 struct xtextbox
 {
@@ -65,8 +83,40 @@ struct xtextbox
             *(uint16*)&flag = 0;
         }
     };
+
+    xfont font;
+    basic_rect<float32> bounds;
+    uint32 flags;
+    float32 line_space;
+    float32 tab_stop;
+    float32 left_indent;
+    float32 right_indent;
+    callback* cb;
+    void* context;
+    char** texts;
+    uint32* text_sizes;
+    uint32 texts_size;
+    substr text;
+    uint32 text_hash;
+
+    static xtextbox create(const xfont& font, const basic_rect<float32>& bounds, uint32 flags,
+                           float32 line_space, float32 tab_stop, float32 left_indent,
+                           float32 right_indent);
+
+    void set_text(const char* text);
+    void render(bool) const;
 };
 
+#ifndef NO_HACKS
+#pragma push
+#pragma force_active off
+static const basic_rect<float32> screen_bounds = { 0.0f, 0.0f, 1.0f, 1.0f };
+#pragma pop
+#endif
+
 void xFontPrintTopText();
+
+float32 NSCREENX(float32 x);
+float32 NSCREENY(float32 y);
 
 #endif

@@ -152,7 +152,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xstransvc.o\
 	$(OBJ_DIR)/asm/Core/x/xString.o\
 	$(OBJ_DIR)/src/Core/x/xString.o\
-	$(OBJ_DIR)/asm/Core/x/xSubTitles.o\
 	$(OBJ_DIR)/src/Core/x/xSubTitles.o\
 	$(OBJ_DIR)/src/Core/x/xSurface.o\
 	$(OBJ_DIR)/src/Core/x/xTextAsset.o\

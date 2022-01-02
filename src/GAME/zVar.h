@@ -53,4 +53,6 @@ enum zVarEntryID // helper enum, not present in dwarf
 
 extern zVarEntry zVarEntryTable[eVarEntryCount];
 
+uint32 zVarEntryCB_SubtitlesOn(void*);
+
 #endif
