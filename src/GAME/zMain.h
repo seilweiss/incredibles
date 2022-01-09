@@ -12,6 +12,7 @@ typedef enum _tagGameVidMode
 extern uint32 FB_XRES;
 extern uint32 FB_YRES;
 extern uint32 SCENE_ID_MNU_START;
+extern bool32 GCN_DEMO_PARAM;
 extern GameVidMode gVidMode;
 extern zGlobals globals;
 extern xGlobals* xglobals;

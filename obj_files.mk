@@ -286,7 +286,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zFXRibbonPool.o\
 	$(OBJ_DIR)/asm/GAME/zGame.o\
 	$(OBJ_DIR)/src/GAME/zGame.o\
-	$(OBJ_DIR)/asm/GAME/zGameExtras.o\
 	$(OBJ_DIR)/src/GAME/zGameExtras.o\
 	$(OBJ_DIR)/src/GAME/zGameState.o\
 	$(OBJ_DIR)/asm/GAME/zGrapple.o\
@@ -666,4 +665,5 @@ PREPROCESS_O_FILES :=\
 	$(OBJ_DIR)/src/Core/x/xSkyDome.o\
 	$(OBJ_DIR)/src/GAME/zCam.o\
 	$(OBJ_DIR)/src/GAME/zNPC.o\
-	$(OBJ_DIR)/src/Core/x/xpkrsvc.o
+	$(OBJ_DIR)/src/Core/x/xpkrsvc.o\
+	$(OBJ_DIR)/src/GAME/zGameExtras.o
