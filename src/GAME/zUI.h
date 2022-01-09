@@ -136,6 +136,7 @@ typedef void (*zUICustomSignalHandler)(zUI* from, uint32 dest, uint32 event, con
                                        xBase* paramWidget, uint32 paramWidgetID, void* user);
 
 void zUI_Init(zUI* text, zUIAsset* asset);
+void* zUIAllocStaticMemory(uint32 size);
 void zUISetCustomStaticAllocator(zUICustomStaticAllocator allocator, void* user);
 void zUISetCustomSignalHandler(zUICustomSignalHandler handler, void* user);
 

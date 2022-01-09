@@ -264,6 +264,8 @@ zVarEntryTable:
 
 .section .rodata
 
+.balign 8
+
 .global _esc__2_1004
 _esc__2_1004:
 	.4byte 0x00000000

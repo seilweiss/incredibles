@@ -413,7 +413,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zUIModel.o\
 	$(OBJ_DIR)/asm/GAME/zUIText.o\
 	$(OBJ_DIR)/src/GAME/zUIText.o\
-	$(OBJ_DIR)/asm/GAME/zUIUserString.o\
 	$(OBJ_DIR)/src/GAME/zUIUserString.o\
 	$(OBJ_DIR)/asm/GAME/zVar.o\
 	$(OBJ_DIR)/src/GAME/zVar.o\
@@ -664,4 +663,5 @@ PREPROCESS_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zCam.o\
 	$(OBJ_DIR)/src/GAME/zNPC.o\
 	$(OBJ_DIR)/src/Core/x/xpkrsvc.o\
-	$(OBJ_DIR)/src/GAME/zGameExtras.o
+	$(OBJ_DIR)/src/GAME/zGameExtras.o\
+	$(OBJ_DIR)/src/GAME/zUIUserString.o
