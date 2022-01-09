@@ -1,8 +1,8 @@
 #ifndef ZSURFACE_H
 #define ZSURFACE_H
 
-#include "../Core/x/xSurface.h"
-#include "../Core/x/xMath3.h"
+#include "xSurface.h"
+#include "xMath3.h"
 #include "zHitParameters.h"
 
 #include <rwcore.h>

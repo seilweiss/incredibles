@@ -1,7 +1,7 @@
 #ifndef ZNPCGROUP_H
 #define ZNPCGROUP_H
 
-#include "../Core/x/xDynAsset.h"
+#include "xDynAsset.h"
 
 namespace zNPC
 {

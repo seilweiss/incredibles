@@ -2,7 +2,7 @@
 #define ZPARTICLESYSTEMWATERFALL_H
 
 #include "zParticleSystems.h"
-#include "../Core/x/xParticleBatch.h"
+#include "xParticleBatch.h"
 
 class zParticleSystemWaterfall : public zParticleSystem
 {

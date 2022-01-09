@@ -1,8 +1,8 @@
 #ifndef ZUI_H
 #define ZUI_H
 
-#include "../Core/x/xDynAsset.h"
-#include "../Core/x/xColor.h"
+#include "xDynAsset.h"
+#include "xColor.h"
 
 struct zUICustom;
 

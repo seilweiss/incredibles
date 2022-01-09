@@ -4,11 +4,11 @@
 #include "xMath3.h"
 #include "xPad.h"
 #include "xUpdateCull.h"
-#include "../p2/iFog.h"
-#include "../p2/iTime.h"
+#include "iFog.h"
+#include "iTime.h"
 
-#include "../../GAME/zPlayer.h"
-#include "../../GAME/zScene.h"
+#include "zPlayer.h"
+#include "zScene.h"
 
 #include <types.h>
 #include <rwcore.h>

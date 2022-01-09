@@ -2,7 +2,7 @@
 #define ZUIIMAGE_H
 
 #include "zUI.h"
-#include "../Core/x/xTextureManager.h"
+#include "xTextureManager.h"
 
 class zUIImage : public zUI
 {

@@ -2,7 +2,7 @@
 #define ZTRANSIENT_H
 
 #include "zHitParameters.h"
-#include "../Core/x/xBound.h"
+#include "xBound.h"
 
 struct zFlame;
 

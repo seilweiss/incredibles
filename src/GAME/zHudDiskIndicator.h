@@ -2,7 +2,7 @@
 #define ZHUDDISKINDICATOR_H
 
 #include "zHud.h"
-#include "../Core/x/xHudImage.h"
+#include "xHudImage.h"
 
 namespace zHud
 {

@@ -4,7 +4,7 @@
 #include "xFile.h"
 #include "xCSNNosey.h"
 #include "xModel.h"
-#include "../p2/iSnd.h"
+#include "iSnd.h"
 
 struct xCutsceneAudioTrack
 {

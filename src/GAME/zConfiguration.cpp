@@ -1,6 +1,6 @@
 #include "zConfiguration.h"
 
-#include "../Core/x/xString.h"
+#include "xString.h"
 
 struct zConfig_ScenePlayer_MapEntry
 {

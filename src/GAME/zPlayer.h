@@ -3,9 +3,9 @@
 
 #include "zEnt.h"
 #include "zInteraction.h"
-#include "../Core/x/xShadowSimple.h"
-#include "../Core/x/xEntDrive.h"
-#include "../Core/x/xOneLinerManager.h"
+#include "xShadowSimple.h"
+#include "xEntDrive.h"
+#include "xOneLinerManager.h"
 
 struct jump;
 struct zSlideCam;

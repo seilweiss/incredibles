@@ -2,7 +2,7 @@
 #define IMATH3_H
 
 #include "iMath.h"
-#include "../x/xMath3.h"
+#include "xMath3.h"
 
 void iSphereIsectRay(const xSphere* s, const xRay3* r, xIsect* isx);
 void iCylinderIsectRay(const xCylinder* c, const xRay3* r, xIsect* isx);

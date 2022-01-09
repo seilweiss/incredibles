@@ -1,8 +1,8 @@
 #include "zScript.h"
 
 #include "zScene.h"
-#include "../Core/x/xEvent.h"
-#include "../Core/x/xstransvc.h"
+#include "xEvent.h"
+#include "xstransvc.h"
 
 namespace
 {

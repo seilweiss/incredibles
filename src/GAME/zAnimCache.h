@@ -1,7 +1,7 @@
 #ifndef ZANIMCACHE_H
 #define ZANIMCACHE_H
 
-#include "../Core/x/xAnim.h"
+#include "xAnim.h"
 
 struct zAnimCacheEntry
 {

@@ -1,7 +1,7 @@
 #include "zWater.h"
 
 #include "zBase.h"
-#include "../Core/x/xEvent.h"
+#include "xEvent.h"
 
 void zWaterBody::load(xBase& data, xDynAsset& asset, ulong32)
 {

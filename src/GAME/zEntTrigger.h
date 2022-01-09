@@ -2,7 +2,7 @@
 #define ZENTTRIGGER_H
 
 #include "zEnt.h"
-#include "../Core/x/xEntDrive.h"
+#include "xEntDrive.h"
 
 struct zEntTrigger : zEnt
 {

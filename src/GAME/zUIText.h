@@ -2,7 +2,7 @@
 #define ZUITEXT_H
 
 #include "zUI.h"
-#include "../Core/x/xColor.h"
+#include "xColor.h"
 
 class zUIText : public zUI
 {

@@ -3,7 +3,7 @@
 #include "xEnt.h"
 #include "xstransvc.h"
 #include "xString.h"
-#include "../../GAME/zScene.h"
+#include "zScene.h"
 
 void zEntEvent(char* to, uint32 toEvent)
 {

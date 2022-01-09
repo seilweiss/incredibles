@@ -1,7 +1,7 @@
 #ifndef ZCAMERARBAND_H
 #define ZCAMERARBAND_H
 
-#include "../Core/x/xDynAsset.h"
+#include "xDynAsset.h"
 #include "zSlideCamera.h"
 
 struct zCameraRBandAsset : xDynAsset

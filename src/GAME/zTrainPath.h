@@ -1,8 +1,8 @@
 #ifndef ZTRAINPATH_H
 #define ZTRAINPATH_H
 
-#include "../Core/x/xDynAsset.h"
-#include "../Core/x/xSplineAsset.h"
+#include "xDynAsset.h"
+#include "xSplineAsset.h"
 
 struct zTrainPathJunctionAsset : xDynAsset
 {

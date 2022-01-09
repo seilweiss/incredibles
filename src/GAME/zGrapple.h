@@ -1,8 +1,8 @@
 #ifndef ZGRAPPLE_H
 #define ZGRAPPLE_H
 
-#include "../Core/x/xDynAsset.h"
-#include "../Core/x/xMath3.h"
+#include "xDynAsset.h"
+#include "xMath3.h"
 
 struct zGrappleAsset : xDynAsset
 {

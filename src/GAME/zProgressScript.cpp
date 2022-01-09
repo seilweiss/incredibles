@@ -1,9 +1,9 @@
 #include "zProgressScript.h"
 
 #include "zScene.h"
-#include "../Core/x/xMemMgr.h"
-#include "../Core/x/xstransvc.h"
-#include "../Core/x/xEvent.h"
+#include "xMemMgr.h"
+#include "xstransvc.h"
+#include "xEvent.h"
 
 void zProgressScript_Init(void* b, void* sasset)
 {

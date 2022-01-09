@@ -1,9 +1,9 @@
 #ifndef ZNPC_H
 #define ZNPC_H
 
-#include "../Core/x/xEnt.h"
-#include "../Core/x/xFactory.h"
-#include "../Core/x/xMovePoint.h"
+#include "xEnt.h"
+#include "xFactory.h"
+#include "xMovePoint.h"
 
 struct xEntNPCAsset
 {

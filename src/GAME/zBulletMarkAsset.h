@@ -1,7 +1,7 @@
 #ifndef ZBULLETMARKASSET_H
 #define ZBULLETMARKASSET_H
 
-#include "../Core/x/xDynAsset.h"
+#include "xDynAsset.h"
 
 struct zBulletMarkAsset : xDynAsset
 {

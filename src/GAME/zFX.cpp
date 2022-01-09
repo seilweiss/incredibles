@@ -1,6 +1,6 @@
 #include "zFX.h"
 
-#include "../Core/x/xFX.h"
+#include "xFX.h"
 
 uint32 gFXSurfaceFlags = 0;
 

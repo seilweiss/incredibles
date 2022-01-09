@@ -1,7 +1,7 @@
 #include "xHierarchyBound.h"
 
 #include "xMemMgr.h"
-#include "../p2/iMath3.h"
+#include "iMath3.h"
 
 #include <hacks.h>
 #include <string.h>

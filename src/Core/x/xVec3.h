@@ -2,7 +2,7 @@
 #define XVEC3_H
 
 #include "xMath.h"
-#include "../p2/iMath.h"
+#include "iMath.h"
 
 #include <rwcore.h>
 #include <types.h>

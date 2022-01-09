@@ -1,6 +1,6 @@
 #include "zHitParameters.h"
 
-#include "../Core/x/xString.h"
+#include "xString.h"
 
 // clang-format off
 const zHitSourceMapEntry zHitSourceMap[] =

@@ -1,8 +1,8 @@
 #ifndef ZNPCNAVIGATIONMESH_H
 #define ZNPCNAVIGATIONMESH_H
 
-#include "../Core/x/xNavigationMeshAsset.h"
-#include "../Core/x/xEnt.h"
+#include "xNavigationMeshAsset.h"
+#include "xEnt.h"
 
 namespace zNPC
 {

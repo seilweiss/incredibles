@@ -1,7 +1,7 @@
 #include "zBehavior.h"
 
-#include "../Core/x/xString.h"
-#include "../Core/x/xRand.h"
+#include "xString.h"
+#include "xRand.h"
 
 #include <string.h>
 

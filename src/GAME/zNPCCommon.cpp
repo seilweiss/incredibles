@@ -4,14 +4,14 @@
 #include "zCombatSystem.h"
 #include "zMain.h"
 #include "zTransient.h"
-#include "../Core/x/xstransvc.h"
+#include "xstransvc.h"
 #include "zGrid.h"
 #include "zCombo.h"
 #include "zNPCTypes.h"
 #include "zUIIncredibles.h"
-#include "../Core/x/xEvent.h"
+#include "xEvent.h"
 #include "zDuplicator.h"
-#include "../Core/x/xString.h"
+#include "xString.h"
 #include "zNPCCombat.h"
 
 #include <string.h>

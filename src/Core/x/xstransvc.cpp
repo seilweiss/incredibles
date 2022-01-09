@@ -1,8 +1,8 @@
 #include "xstransvc.h"
 
-#include "../../GAME/zMain.h"
+#include "zMain.h"
 #include "xutil.h"
-#include "../p2/iTRC.h"
+#include "iTRC.h"
 
 #include <string.h>
 

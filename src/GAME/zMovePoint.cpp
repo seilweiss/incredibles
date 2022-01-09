@@ -1,8 +1,8 @@
 #include "zMovePoint.h"
 
 #include "zScene.h"
-#include "../Core/x/xMemMgr.h"
-#include "../Core/x/xEvent.h"
+#include "xMemMgr.h"
+#include "xEvent.h"
 
 static zMovePoint* g_mvpt_list = NULL;
 static int32 g_mvpt_cnt = 0;

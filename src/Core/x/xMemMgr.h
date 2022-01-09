@@ -1,7 +1,7 @@
 #ifndef XMEMMGR_H
 #define XMEMMGR_H
 
-#include "../p2/iMemMgr.h"
+#include "iMemMgr.h"
 
 #include <new>
 

@@ -1,7 +1,7 @@
 #ifndef ZCONDITIONAL_H
 #define ZCONDITIONAL_H
 
-#include "../Core/x/xBase.h"
+#include "xBase.h"
 
 struct zVarEntry;
 

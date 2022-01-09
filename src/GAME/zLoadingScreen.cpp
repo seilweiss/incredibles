@@ -5,10 +5,10 @@
 #include "zUIBox.h"
 #include "zUIText.h"
 #include "zUIController.h"
-#include "../Core/x/xGroup.h"
-#include "../Core/x/xstransvc.h"
-#include "../Core/x/xEvent.h"
-#include "../Core/x/xFont.h"
+#include "xGroup.h"
+#include "xstransvc.h"
+#include "xEvent.h"
+#include "xFont.h"
 
 #include <string.h>
 

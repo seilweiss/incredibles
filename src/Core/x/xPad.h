@@ -1,7 +1,7 @@
 #ifndef XPAD_H
 #define XPAD_H
 
-#include "../p2/iPad.h"
+#include "iPad.h"
 #include "xMath2.h"
 
 typedef struct _tagPadAnalog

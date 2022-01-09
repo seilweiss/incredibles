@@ -4,7 +4,7 @@
 #include "xEvent.h"
 #include "xFont.h"
 
-#include "../../GAME/zBase.h"
+#include "zBase.h"
 
 namespace
 {

@@ -1,11 +1,11 @@
 #include "zCam.h"
 
 #include "zMain.h"
-#include "../Core/x/xPointer.h"
-#include "../Core/x/xstransvc.h"
+#include "xPointer.h"
+#include "xstransvc.h"
 #include "zEntTrigger.h"
-#include "../Core/x/xEvent.h"
-#include "../Core/x/xDebug.h"
+#include "xEvent.h"
+#include "xDebug.h"
 
 namespace
 {

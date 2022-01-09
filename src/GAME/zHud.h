@@ -1,8 +1,8 @@
 #ifndef ZHUD_H
 #define ZHUD_H
 
-#include "../Core/x/xBase.h"
-#include "../Core/x/xHud.h"
+#include "xBase.h"
+#include "xHud.h"
 
 namespace zHud
 {

@@ -1,7 +1,7 @@
 #ifndef ZINTERACTION_H
 #define ZINTERACTION_H
 
-#include "../Core/x/xEnt.h"
+#include "xEnt.h"
 
 enum zInteractionType
 {

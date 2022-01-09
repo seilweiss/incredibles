@@ -1,8 +1,8 @@
 #ifndef ZEXPLOSION_H
 #define ZEXPLOSION_H
 
-#include "../Core/x/xMath3.h"
-#include "../Core/p2/iSnd.h"
+#include "xMath3.h"
+#include "iSnd.h"
 
 namespace zExplosion
 {

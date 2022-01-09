@@ -1,10 +1,10 @@
 #include "zNPC.h"
 
-#include "../Core/x/xRand.h"
-#include "../Core/x/xSndMgr.h"
+#include "xRand.h"
+#include "xSndMgr.h"
 #include "zGrid.h"
 #include "zMain.h"
-#include "../Core/x/xString.h"
+#include "xString.h"
 
 #include <string.h>
 #include <stdlib.h>

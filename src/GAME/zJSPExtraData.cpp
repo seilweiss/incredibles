@@ -1,7 +1,7 @@
 #include "zJSPExtraData.h"
 
 #include "zScene.h"
-#include "../Core/x/xEvent.h"
+#include "xEvent.h"
 
 zJSPExtraData::jspGroupPair zJSPExtraData::sJspGroupPairs[10];
 int32 zJSPExtraData::sNumPairs = 0;

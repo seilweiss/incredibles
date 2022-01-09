@@ -1,7 +1,7 @@
 #ifndef ZSLIDECAMERA_H
 #define ZSLIDECAMERA_H
 
-#include "../Core/x/xCam.h"
+#include "xCam.h"
 
 class zSlideCam : public xCam
 {

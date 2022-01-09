@@ -1,9 +1,9 @@
 #ifndef ZCAMPLAYER_H
 #define ZCAMPLAYER_H
 
-#include "../Core/x/xCam.h"
-#include "../Core/x/xCamSupport.h"
-#include "../Core/x/xEnt.h"
+#include "xCam.h"
+#include "xCamSupport.h"
+#include "xEnt.h"
 
 class zCamPlayer : public xCam
 {

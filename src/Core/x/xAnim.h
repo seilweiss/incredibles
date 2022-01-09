@@ -3,7 +3,7 @@
 
 #include "xMath3.h"
 #include "xMemMgr.h"
-#include "../p2/iSnd.h"
+#include "iSnd.h"
 
 struct xAnimPhysicsData
 {

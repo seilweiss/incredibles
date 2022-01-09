@@ -2,7 +2,7 @@
 
 #include "xEvent.h"
 
-#include "../../GAME/zBase.h"
+#include "zBase.h"
 
 #include <string.h>
 

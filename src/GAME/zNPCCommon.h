@@ -6,7 +6,7 @@
 #include "zNPCNavigation.h"
 #include "zBehavior.h"
 #include "zNPCSenses.h"
-#include "../Core/x/xShadowSimple.h"
+#include "xShadowSimple.h"
 
 struct zDuplicator;
 

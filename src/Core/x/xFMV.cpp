@@ -1,8 +1,8 @@
 #include "xFMV.h"
 
 #include "xSndMgr.h"
-#include "../../GAME/zGame.h"
-#include "../../GAME/zMenu.h"
+#include "zGame.h"
+#include "zMenu.h"
 
 #include <bink.h>
 

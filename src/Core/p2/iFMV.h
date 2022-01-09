@@ -1,7 +1,7 @@
 #ifndef IFMV_H
 #define IFMV_H
 
-#include "../x/xFile.h"
+#include "xFile.h"
 
 #include <rwcore.h>
 #include <bink.h>

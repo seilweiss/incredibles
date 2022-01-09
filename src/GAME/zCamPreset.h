@@ -1,8 +1,8 @@
 #ifndef ZCAMPRESET_H
 #define ZCAMPRESET_H
 
-#include "../Core/x/xDynAsset.h"
-#include "../Core/x/xMath3.h"
+#include "xDynAsset.h"
+#include "xMath3.h"
 
 struct zCamPreset : xBase
 {

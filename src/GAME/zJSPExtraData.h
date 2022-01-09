@@ -1,7 +1,7 @@
 #ifndef ZJSPEXTRADATA_H
 #define ZJSPEXTRADATA_H
 
-#include "../Core/x/xDynAsset.h"
+#include "xDynAsset.h"
 
 struct zJSPExtraData : xBase
 {

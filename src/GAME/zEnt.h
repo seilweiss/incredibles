@@ -1,7 +1,7 @@
 #ifndef ZENT_H
 #define ZENT_H
 
-#include "../Core/x/xEnt.h"
+#include "xEnt.h"
 
 struct zEnt : xEnt
 {

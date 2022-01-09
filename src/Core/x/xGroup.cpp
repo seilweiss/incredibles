@@ -5,7 +5,7 @@
 #include "xEvent.h"
 #include "xRand.h"
 #include "xEnt.h"
-#include "../../GAME/zScene.h"
+#include "zScene.h"
 
 void xGroupInit(void* b, void* asset)
 {

@@ -1,7 +1,7 @@
 #ifndef ZCAM_H
 #define ZCAM_H
 
-#include "../Core/x/xCam.h"
+#include "xCam.h"
 #include "zCamPlayer.h"
 
 enum zcam_mode_enum

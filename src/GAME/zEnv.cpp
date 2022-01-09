@@ -3,10 +3,10 @@
 #include "zMain.h"
 #include "zSurface.h"
 #include "zLight.h"
-#include "../Core/x/xstransvc.h"
-#include "../Core/x/xGroup.h"
-#include "../Core/x/xEvent.h"
-#include "../Core/p2/iLight.h"
+#include "xstransvc.h"
+#include "xGroup.h"
+#include "xEvent.h"
+#include "iLight.h"
 
 void zEnvInit(void* env, void* easset)
 {

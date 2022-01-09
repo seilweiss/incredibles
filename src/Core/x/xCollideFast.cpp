@@ -1,6 +1,6 @@
 #include "xCollideFast.h"
 
-#include "../p2/iMath3.h"
+#include "iMath3.h"
 
 uint32 xRayHitsSphereFast(const xRay3* r, const xSphere* s)
 {

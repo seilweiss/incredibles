@@ -1,8 +1,8 @@
 #ifndef ZNPCSENSES_H
 #define ZNPCSENSES_H
 
-#include "../Core/x/xEnt.h"
-#include "../Core/x/xMath2.h"
+#include "xEnt.h"
+#include "xMath2.h"
 
 namespace zNPC
 {

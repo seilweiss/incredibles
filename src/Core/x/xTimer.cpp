@@ -2,8 +2,8 @@
 
 #include "xEvent.h"
 #include "xRand.h"
-#include "../../GAME/zMain.h"
-#include "../../GAME/zTalkBox.h"
+#include "zMain.h"
+#include "zTalkBox.h"
 
 // clang-format off
 static uint32 sPauseTimerHash[] =

@@ -3,7 +3,7 @@
 #include "xutil.h"
 #include "xMemMgr.h"
 #include "xMath.h"
-#include "../../GAME/zMain.h"
+#include "zMain.h"
 
 #include <rwcore.h>
 

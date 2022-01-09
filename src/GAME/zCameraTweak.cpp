@@ -1,8 +1,8 @@
 #include "zCameraTweak.h"
 
-#include "../Core/x/xMath.h"
-#include "../Core/x/xEvent.h"
-#include "../Core/p2/iMath.h"
+#include "xMath.h"
+#include "xEvent.h"
+#include "iMath.h"
 
 #include <hacks.h>
 

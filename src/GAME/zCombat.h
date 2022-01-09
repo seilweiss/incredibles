@@ -1,14 +1,14 @@
 #ifndef ZCOMBAT_H
 #define ZCOMBAT_H
 
-#include "../Core/x/xBase.h"
-#include "../Core/x/xMath3.h"
+#include "xBase.h"
+#include "xMath3.h"
 #include "zHitParameters.h"
-#include "../Core/x/xHierarchyBound.h"
+#include "xHierarchyBound.h"
 #include "zShrapnel.h"
 #include "zAnimCache.h"
 #include "zCombatEffects.h"
-#include "../Core/x/xEnv.h"
+#include "xEnv.h"
 
 struct zAttackTableState
 {

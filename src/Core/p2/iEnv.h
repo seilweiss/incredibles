@@ -1,8 +1,8 @@
 #ifndef IENV_H
 #define IENV_H
 
-#include "../x/xJSP.h"
-#include "../x/xMath3.h"
+#include "xJSP.h"
+#include "xMath3.h"
 
 struct iEnvMatOrder
 {

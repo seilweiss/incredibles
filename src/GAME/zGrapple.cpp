@@ -1,10 +1,10 @@
 #include "zGrapple.h"
 
 #include "zScene.h"
-#include "../Core/x/xGroup.h"
-#include "../Core/x/xstransvc.h"
-#include "../Core/x/xMarkerAsset.h"
-#include "../Core/x/xEvent.h"
+#include "xGroup.h"
+#include "xstransvc.h"
+#include "xMarkerAsset.h"
+#include "xEvent.h"
 
 static zGrapplePoint* sGrapplePoints = NULL;
 static int32 sNumGrapplePoints = 0;

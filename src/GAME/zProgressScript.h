@@ -1,7 +1,7 @@
 #ifndef ZPROGRESSSCRIPT_H
 #define ZPROGRESSSCRIPT_H
 
-#include "../Core/x/xBase.h"
+#include "xBase.h"
 
 struct xProgressScriptAsset : xBaseAsset
 {

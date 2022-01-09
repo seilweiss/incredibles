@@ -2,7 +2,7 @@
 
 #include "xEvent.h"
 #include "iCamera.h"
-#include "../p2/iModel.h"
+#include "iModel.h"
 
 struct SkyDomeInfo
 {

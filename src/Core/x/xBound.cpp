@@ -1,7 +1,7 @@
 #include "xBound.h"
 
 #include "xCollide.h"
-#include "../p2/iMath3.h"
+#include "iMath3.h"
 
 #ifndef NO_HACKS
 #pragma push

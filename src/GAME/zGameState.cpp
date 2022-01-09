@@ -2,9 +2,9 @@
 
 #include "zGame.h"
 #include "zMain.h"
-#include "../Core/x/xEvent.h"
-#include "../Core/x/xserializer.h"
-#include "../Core/x/xTextureManager.h"
+#include "xEvent.h"
+#include "xserializer.h"
+#include "xTextureManager.h"
 
 int32 gGameState = eGameState_Dead;
 eGameMode gGameMode;

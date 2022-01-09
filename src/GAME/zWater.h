@@ -1,8 +1,8 @@
 #ifndef ZWATER_H
 #define ZWATER_H
 
-#include "../Core/x/xDynAsset.h"
-#include "../Core/x/xEnt.h"
+#include "xDynAsset.h"
+#include "xEnt.h"
 
 struct zWaterBody : xBase
 {

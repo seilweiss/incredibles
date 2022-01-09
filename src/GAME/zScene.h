@@ -4,8 +4,8 @@
 #include "zBase.h"
 #include "zPortal.h"
 #include "zEnv.h"
-#include "../Core/x/xScene.h"
-#include "../Core/x/xDynAsset.h"
+#include "xScene.h"
+#include "xDynAsset.h"
 
 struct zSceneParameters : xDynAsset
 {

@@ -1,7 +1,7 @@
 #ifndef XONELINERPLAYER_H
 #define XONELINERPLAYER_H
 
-#include "../p2/iSnd.h"
+#include "iSnd.h"
 
 class xOneLinerManager;
 

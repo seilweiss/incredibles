@@ -2,11 +2,11 @@
 
 #include "zCam.h"
 #include "zMain.h"
-#include "../Core/x/xEvent.h"
-#include "../Core/x/xpkrsvc.h"
-#include "../Core/x/xstransvc.h"
-#include "../Core/x/xString.h"
-#include "../Core/x/xPointer.h"
+#include "xEvent.h"
+#include "xpkrsvc.h"
+#include "xstransvc.h"
+#include "xString.h"
+#include "xPointer.h"
 
 void zCamPreset::load(xBase& data, xDynAsset& asset, ulong32)
 {

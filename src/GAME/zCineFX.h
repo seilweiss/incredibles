@@ -1,8 +1,8 @@
 #ifndef ZCINEFX_H
 #define ZCINEFX_H
 
-#include "../Core/x/xFX.h"
-#include "../Core/x/xMath3.h"
+#include "xFX.h"
+#include "xMath3.h"
 
 struct zCutsceneMgr;
 struct zLightning;

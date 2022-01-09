@@ -1,8 +1,8 @@
 #ifndef XSAVEGAME_H
 #define XSAVEGAME_H
 
-#include "../p2/iTime.h"
-#include "../p2/isavegame.h"
+#include "iTime.h"
+#include "isavegame.h"
 
 typedef enum en_SAVEGAME_MODE
 {

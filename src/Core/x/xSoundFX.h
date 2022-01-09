@@ -3,7 +3,7 @@
 
 #include "xBase.h"
 #include "xMath3.h"
-#include "../p2/iSnd.h"
+#include "iSnd.h"
 
 struct xSoundFXAsset : xBaseAsset
 {

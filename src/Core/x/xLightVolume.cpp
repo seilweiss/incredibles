@@ -1,7 +1,7 @@
 #include "xLightVolume.h"
 
 #include "xMemMgr.h"
-#include "../p2/iModel.h"
+#include "iModel.h"
 
 #define ACTIVITY_MAX 64
 

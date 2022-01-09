@@ -1,6 +1,6 @@
 #include "zCameraFly.h"
 
-#include "../Core/x/xEvent.h"
+#include "xEvent.h"
 
 void zCameraFly_Init(xBase& data, xDynAsset& asset, ulong32)
 {

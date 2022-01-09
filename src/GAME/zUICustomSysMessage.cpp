@@ -2,9 +2,9 @@
 
 #include "zScene.h"
 #include "zMain.h"
-#include "../Core/x/xString.h"
-#include "../Core/x/xEvent.h"
-#include "../Core/x/xTextAsset.h"
+#include "xString.h"
+#include "xEvent.h"
+#include "xTextAsset.h"
 
 bool gDontAutoMenu = false;
 bool gSysMessageManager_active = false;

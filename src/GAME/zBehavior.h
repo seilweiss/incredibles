@@ -1,9 +1,9 @@
 #ifndef ZBEHAVIOR_H
 #define ZBEHAVIOR_H
 
-#include "../Core/x/xEnt.h"
+#include "xEnt.h"
 #include "zCombat.h"
-#include "../Core/x/xJSP.h"
+#include "xJSP.h"
 
 enum GrabType
 {

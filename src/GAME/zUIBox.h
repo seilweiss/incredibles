@@ -2,7 +2,7 @@
 #define ZUIBOX_H
 
 #include "zUI.h"
-#include "../Core/x/xTextureManager.h"
+#include "xTextureManager.h"
 
 class zUIBox : public zUI
 {

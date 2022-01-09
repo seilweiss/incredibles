@@ -1,6 +1,6 @@
 #include "zActionLine.h"
 
-#include "../Core/x/xstransvc.h"
+#include "xstransvc.h"
 
 #include <rwcore.h>
 

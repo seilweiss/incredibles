@@ -1,8 +1,8 @@
 #ifndef ZGLOBALS_H
 #define ZGLOBALS_H
 
-#include "../Core/x/xGlobals.h"
-#include "../Core/x/xSndMgr.h"
+#include "xGlobals.h"
+#include "xSndMgr.h"
 #include "zCutsceneMgr.h"
 
 struct zGrapplePoint;

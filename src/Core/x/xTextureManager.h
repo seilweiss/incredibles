@@ -3,7 +3,7 @@
 
 #include "xpkrsvc.h"
 #include "xFile.h"
-#include "../p2/iFMV.h"
+#include "iFMV.h"
 #include <rwcore.h>
 
 struct xInternalMovieNode

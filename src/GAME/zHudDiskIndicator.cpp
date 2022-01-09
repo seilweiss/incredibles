@@ -1,7 +1,7 @@
 #include "zHudDiskIndicator.h"
 
 #include "zScene.h"
-#include "../Core/x/xString.h"
+#include "xString.h"
 
 namespace zHud
 {

@@ -1,7 +1,7 @@
 #include "zTrainPath.h"
 
-#include "../Core/x/xstransvc.h"
-#include "../Core/x/xEvent.h"
+#include "xstransvc.h"
+#include "xEvent.h"
 
 zTrainPathJunction* zTrainPathJunction::all_junctions = NULL;
 static bool init_done = false;

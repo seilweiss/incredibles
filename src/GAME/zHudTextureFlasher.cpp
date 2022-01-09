@@ -1,6 +1,6 @@
 #include "zHudTextureFlasher.h"
 
-#include "../Core/x/xMath.h"
+#include "xMath.h"
 
 namespace zHud
 {

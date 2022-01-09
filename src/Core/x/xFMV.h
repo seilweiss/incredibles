@@ -1,7 +1,7 @@
 #ifndef XFMV_H
 #define XFMV_H
 
-#include "../p2/iFMV.h"
+#include "iFMV.h"
 
 void xFMVPauseSound(bool doPause);
 int32 xFMVGetBinkCompliantVolume();

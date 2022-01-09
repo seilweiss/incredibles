@@ -1,7 +1,7 @@
 #ifndef XSNDMGR_H
 #define XSNDMGR_H
 
-#include "../p2/iSnd.h"
+#include "iSnd.h"
 #include "xEnt.h"
 
 enum xSndEffect

@@ -1,7 +1,7 @@
 #ifndef ZGAMEEXTRAS_H
 #define ZGAMEEXTRAS_H
 
-#include "../Core/x/xserializer.h"
+#include "xserializer.h"
 
 extern uint32 sCheatTestCheats[16];
 extern uint32 sCheatSwapCCLR[16];

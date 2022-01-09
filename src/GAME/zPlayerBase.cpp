@@ -3,10 +3,10 @@
 #include "zPlayer.h"
 #include "zMain.h"
 #include "zConfiguration.h"
-#include "../Core/x/xMemMgr.h"
-#include "../Core/x/xstransvc.h"
-#include "../Core/x/xutil.h"
-#include "../Core/p2/iSnd.h"
+#include "xMemMgr.h"
+#include "xstransvc.h"
+#include "xutil.h"
+#include "iSnd.h"
 
 static int32 sMemDepthJustHIPStartPlayer = -1;
 

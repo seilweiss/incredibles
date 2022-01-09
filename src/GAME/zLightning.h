@@ -1,10 +1,10 @@
 #ifndef ZLIGHTNING_H
 #define ZLIGHTNING_H
 
-#include "../Core/x/xMath3.h"
-#include "../Core/x/xColor.h"
-#include "../Core/p2/iSnd.h"
-#include "../Core/x/xEnt.h"
+#include "xMath3.h"
+#include "xColor.h"
+#include "iSnd.h"
+#include "xEnt.h"
 
 struct zLightningParticle
 {

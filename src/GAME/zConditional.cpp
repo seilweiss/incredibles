@@ -2,7 +2,7 @@
 
 #include "zVar.h"
 #include "zScene.h"
-#include "../Core/x/xEvent.h"
+#include "xEvent.h"
 
 void zConditionalInit(void* b, void* asset)
 {

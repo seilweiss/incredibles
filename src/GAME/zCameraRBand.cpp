@@ -2,8 +2,8 @@
 
 #include "zCam.h"
 #include "zMain.h"
-#include "../Core/x/xMemMgr.h"
-#include "../Core/x/xEvent.h"
+#include "xMemMgr.h"
+#include "xEvent.h"
 
 zSlideCam* rbCam = NULL;
 bool zRBAND_CAMERA_ACTIVE = false;

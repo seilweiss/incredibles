@@ -1,7 +1,7 @@
 #include "zReference.h"
 
 #include "zScene.h"
-#include "../Core/x/xEvent.h"
+#include "xEvent.h"
 
 void zReferenceInit(xBase& data, xDynAsset& asset, ulong32)
 {

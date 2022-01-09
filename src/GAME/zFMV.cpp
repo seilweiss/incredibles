@@ -2,10 +2,10 @@
 
 #include "zMain.h"
 #include "zMenu.h"
-#include "../Core/x/xSubTitles.h"
-#include "../Core/x/xSndMgr.h"
-#include "../Core/p2/iFMV.h"
-#include "../Core/x/xPad.h"
+#include "xSubTitles.h"
+#include "xSndMgr.h"
+#include "iFMV.h"
+#include "xPad.h"
 
 // clang-format off
 static zFMVFile zFMVFileTable[] =

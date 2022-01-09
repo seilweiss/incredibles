@@ -1,9 +1,9 @@
 #ifndef ZENV_H
 #define ZENV_H
 
-#include "../Core/x/xBase.h"
-#include "../Core/x/xEnv.h"
-#include "../Core/x/xMath3.h"
+#include "xBase.h"
+#include "xEnv.h"
+#include "xMath3.h"
 
 struct xEnvAsset : xBaseAsset
 {

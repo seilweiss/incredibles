@@ -1,7 +1,7 @@
 #ifndef ZACTIONLINE_H
 #define ZACTIONLINE_H
 
-#include "../Core/x/xMath3.h"
+#include "xMath3.h"
 
 typedef struct _tagActionLine
 {

@@ -1,7 +1,7 @@
 #ifndef ZSCRIPT_H
 #define ZSCRIPT_H
 
-#include "../Core/x/xBase.h"
+#include "xBase.h"
 
 struct xScriptAsset : xBaseAsset
 {

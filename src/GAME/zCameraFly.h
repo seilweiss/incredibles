@@ -1,7 +1,7 @@
 #ifndef ZCAMERAFLY_H
 #define ZCAMERAFLY_H
 
-#include "../Core/x/xDynAsset.h"
+#include "xDynAsset.h"
 
 struct CameraFly_asset : xDynAsset
 {

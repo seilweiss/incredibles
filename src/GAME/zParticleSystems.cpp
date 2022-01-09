@@ -2,7 +2,7 @@
 
 #include "zParticleSystemWaterfall.h"
 
-#include "../Core/x/xMemMgr.h"
+#include "xMemMgr.h"
 
 class zParticleSystemDummy : public zParticleSystem
 {

@@ -1,10 +1,10 @@
 #include "zGameExtras.h"
 
-#include "../Core/p2/iSystem.h"
+#include "iSystem.h"
 #include "zMain.h"
 #include "zGame.h"
 #include "zGameState.h"
-#include "../Core/x/xutil.h"
+#include "xutil.h"
 
 #include <string.h>
 

@@ -3,7 +3,7 @@
 
 #include "xLightKit.h"
 
-#include "../p2/iEnv.h"
+#include "iEnv.h"
 
 struct xEnv
 {

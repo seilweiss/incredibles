@@ -1,7 +1,7 @@
 #ifndef ZREFERENCE_H
 #define ZREFERENCE_H
 
-#include "../Core/x/xDynAsset.h"
+#include "xDynAsset.h"
 
 struct zReferenceAsset : xDynAsset
 {

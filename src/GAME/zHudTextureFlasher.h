@@ -1,7 +1,7 @@
 #ifndef ZHUDTEXTUREFLASHER_H
 #define ZHUDTEXTUREFLASHER_H
 
-#include "../Core/x/xHudImage.h"
+#include "xHudImage.h"
 
 namespace zHud
 {
