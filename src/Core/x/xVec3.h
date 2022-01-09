@@ -59,6 +59,7 @@ void xVec3AddScaled(xVec3* o, const xVec3* v, float32 s);
 void xVec3Init(xVec3* o, float32 x, float32 y, float32 z);
 void xVec3Init(xVec3& o, float32 x, float32 y, float32 z);
 void xVec3AddTo(xVec3& o, const xVec3& v);
+void xVec3Inv(xVec3* o, const xVec3* v);
 
 inline void xVec3Add(xVec3* o, const xVec3* a, const xVec3* b)
 {

@@ -43,6 +43,7 @@ extern xQCControl xqc_def_ctrl;
 bool32 xQuickCullIsects(const xQCData* a, const xQCData* b);
 void xQuickCullForBound(xQCControl* ctrl, xQCData* q, const xBound* b);
 void xQuickCullForSphere(xQCControl* ctrl, xQCData* q, const xSphere* s);
+void xQuickCullForEverything(xQCData* q);
 
 inline void xQuickCullForBound(xQCData* q, const xBound* b)
 {

@@ -204,6 +204,8 @@ cb_change_textureB_esc__7_1375:
 
 .section .sdata2
 
+.balign 8
+
 .global _esc__2_1119_2
 _esc__2_1119_2:
 	.4byte 0x40000000

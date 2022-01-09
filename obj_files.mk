@@ -419,7 +419,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zVar.o\
 	$(OBJ_DIR)/asm/GAME/zVioletPlayer.o\
 	$(OBJ_DIR)/src/GAME/zVioletPlayer.o\
-	$(OBJ_DIR)/asm/GAME/zVolume.o\
 	$(OBJ_DIR)/src/GAME/zVolume.o\
 	$(OBJ_DIR)/asm/GAME/zWaterhose.o\
 	$(OBJ_DIR)/src/GAME/zWaterhose.o\
