@@ -288,7 +288,6 @@ TEXT_O_FILES :=\
 	$(OBJ_DIR)/src/GAME/zGame.o\
 	$(OBJ_DIR)/src/GAME/zGameExtras.o\
 	$(OBJ_DIR)/src/GAME/zGameState.o\
-	$(OBJ_DIR)/asm/GAME/zGrapple.o\
 	$(OBJ_DIR)/src/GAME/zGrapple.o\
 	$(OBJ_DIR)/asm/GAME/zGrid.o\
 	$(OBJ_DIR)/src/GAME/zGrid.o\
