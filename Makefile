@@ -12,7 +12,7 @@ endif
 VERBOSE ?= 0
 
 # If MAPGENFLAG set to 1, tells LDFLAGS to generate a mapfile, which makes linking take several minutes.
-MAPGENFLAG ?= 0
+MAPGENFLAG ?= 1
 
 ifeq ($(VERBOSE),0)
   QUIET := @
@@ -38,6 +38,10 @@ LDSCRIPT := $(BUILD_DIR)/ldscript.lcf
 DOL     := $(BUILD_DIR)/main.dol
 ELF     := $(DOL:.dol=.elf)
 MAP     := $(BUILD_DIR)/in.map
+
+ifeq ($(MAPGENFLAG),1)
+  MAPGEN := -map $(MAP)
+endif
 
 include obj_files.mk
 
@@ -74,7 +78,7 @@ ASMDIFF := ./asmdiff.sh
 INCLUDES := -ir src -ir include -Iinclude -Iinclude/CodeWarrior -Iinclude/rwsdk
 
 ASFLAGS := -W -mgekko -I include
-LDFLAGS := -map $(MAP) -w off -maxerrors 1 -nostdlib
+LDFLAGS := $(MAPGEN) -w off -maxerrors 1 -nostdlib
 CFLAGS  := -g -O4,s -DGAMECUBE -DGEKKO -Cpp_exceptions off -proc gekko -fp hard -fp_contract on -RTTI off \
 		   -str reuse,pool,readonly -enum int -use_lmw_stmw on -inline off -sdata 64 -sdata2 64 \
 		   -pragma "check_header_flags off" -pragma "force_active on" -pragma "cpp_extensions on" \
