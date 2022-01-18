@@ -543,7 +543,6 @@ TEXT_O_FILES :=\
 	$(BUILD_DIR)/asm/Core/p2/fxembm.o\
 	$(BUILD_DIR)/src/Core/p2/fxembm.o\
 	$(BUILD_DIR)/asm/Core/p2/fxmain.o\
-	$(BUILD_DIR)/src/Core/p2/fxmain.o\
 	$(BUILD_DIR)/asm/Core/p2/texcache.o\
 	$(BUILD_DIR)/src/Core/p2/texcache.o\
 	$(BUILD_DIR)/asm/Core/p2/texconv.o\
