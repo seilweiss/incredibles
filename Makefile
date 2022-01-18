@@ -125,15 +125,24 @@ $(ELF): $(O_FILES) $(LDSCRIPT)
 	$(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) @build/o_files
 
 $(BUILD_DIR)/%.o: %.s
-	@echo "AS      "$<
+	@echo " AS      "$<
 	$(QUIET) $(AS) $(ASFLAGS) -o $@ $<
 	$(QUIET) $(PPROC) $(PPROCFLAGS) $@
 
 $(BUILD_DIR)/%.o: %.c
-	@echo "CC      "$<
-	$(QUIET) $(CC) $(CFLAGS) -c -o $@ $<
+	@echo " CC      "$<
+	$(QUIET) $(CC) $(CFLAGS) -c -o $@ $< 1>&2
 
 $(BUILD_DIR)/%.o: %.cpp
-	@echo "CXX     "$<
-	$(QUIET) $(CC) $(PREPROCESS) -o $(BUILD_DIR)/$*.cp $<
-	$(QUIET) $(CC) $(CFLAGS) -c -o $@ $(BUILD_DIR)/$*.cp
+	@echo " CXX     "$<
+	$(QUIET) $(GLBLASM) -s $< $(BUILD_DIR)/$*.cpp 1>&2
+	$(QUIET) $(CC) $(CFLAGS) -c -o $@ $(BUILD_DIR)/$*.cpp 1>&2
+	$(QUIET) $(PPROC) $(PPROCFLAGS) $@
+
+$(PREPROCESS_O_FILES): $(BUILD_DIR)/%.o: %.cpp
+	@echo " CXX     "$<
+	$(QUIET) $(GLBLASM) -s $< $(BUILD_DIR)/$*.cp 1>&2
+	$(QUIET) $(CC) $(CFLAGS) -E -o $(BUILD_DIR)/$*.cpp $(BUILD_DIR)/$*.cp 1>&2
+	$(QUIET) $(CC) $(CFLAGS) -c -o $@ $(BUILD_DIR)/$*.cpp 1>&2
+	$(QUIET) $(PPROC) $(PPROCFLAGS) $@
+	@rm -f $(BUILD_DIR)/$*.cp

@@ -23,6 +23,7 @@ obj-expected/*
 .vscode
 .pragma
 inspect.s
+build
 
 # Allow
 !tools/mwcc_compiler/README.md
