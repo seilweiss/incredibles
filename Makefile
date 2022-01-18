@@ -118,6 +118,7 @@ $(DOL): $(ELF) | tools
 clean:
 	@echo cleaning build dir
 	rm -f -d -r build
+	rm -f -d -r .pragma
 	$(QUIET) $(MAKE) -C tools clean
 
 tools:
